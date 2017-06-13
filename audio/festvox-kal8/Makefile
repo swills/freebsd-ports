@@ -1,0 +1,31 @@
+# Created by: trevor
+# $FreeBSD: head/audio/festvox-kal8/Makefile 425174 2016-11-02 22:45:14Z mat $
+
+PORTNAME=	festvox-kal8
+PORTVERSION=	1.4.0
+PORTREVISION=	1
+CATEGORIES=	audio accessibility
+MASTER_SITES=	FESTIVAL/1.4.1
+DISTNAME=	festvox_kallpc8k
+DIST_SUBDIR=	festival
+
+MAINTAINER=	ports@FreeBSD.org
+COMMENT=	American English male voice, sampled at 8 kHz, for Festival
+
+RUN_DEPENDS=	\
+${LOCALBASE}/share/festival/lib/dicts/wsj.wp39.poslexR:audio/festlex-poslex \
+${LOCALBASE}/share/festival/lib/dicts/cmu/cmulex.scm:audio/festlex-cmu
+
+WRKSRC=		${WRKDIR}/festival
+
+CONFLICTS=	festvox-kal16-*
+
+NO_BUILD=	yes
+
+FHOME=		${PREFIX}/share/festival
+
+do-install:
+	@${MKDIR} ${STAGEDIR}${FHOME}
+	cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${FHOME}
+
+.include <bsd.port.mk>

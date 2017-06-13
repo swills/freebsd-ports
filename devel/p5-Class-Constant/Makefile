@@ -1,0 +1,20 @@
+# Created by: Gea-Suan Lin <gslin@gslin.org>
+# $FreeBSD: head/devel/p5-Class-Constant/Makefile 418519 2016-07-14 07:29:27Z wen $
+
+PORTNAME=	Class-Constant
+PORTVERSION=	0.07
+CATEGORIES=	devel perl5
+MASTER_SITES=	CPAN
+MASTER_SITE_SUBDIR=	CPAN:ROBN
+PKGNAMEPREFIX=	p5-
+
+MAINTAINER=	perl@FreeBSD.org
+COMMENT=	Build constant classes
+
+LICENSE=	ART10 GPLv1
+LICENSE_COMB=	dual
+
+USES=		perl5
+USE_PERL5=	configure
+
+.include <bsd.port.mk>

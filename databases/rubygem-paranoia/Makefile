@@ -1,0 +1,21 @@
+# Created by: Torsten Zuhlsdorff <ports@toco-domains.de>
+# $FreeBSD: head/databases/rubygem-paranoia/Makefile 439640 2017-04-28 20:25:34Z sunpoet $
+
+PORTNAME=	paranoia
+PORTVERSION=	2.3.1
+CATEGORIES=	databases rubygems
+MASTER_SITES=	RG
+
+MAINTAINER=	ruby@FreeBSD.org
+COMMENT=	Soft deletion mapper for activerecord
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+RUN_DEPENDS=	rubygem-activerecord4>=4.0:databases/rubygem-activerecord4
+
+NO_ARCH=	yes
+USE_RUBY=	yes
+USES=		gem
+
+.include <bsd.port.mk>

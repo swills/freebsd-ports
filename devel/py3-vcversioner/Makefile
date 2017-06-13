@@ -1,0 +1,20 @@
+# Created by: Muhammad Moinur Rahman <bofh@FreeBSD.org>
+# $FreeBSD: head/devel/py3-vcversioner/Makefile 429404 2016-12-25 09:07:59Z antoine $
+
+PORTNAME=	vcversioner
+PORTVERSION=	2.16.0.0
+PORTREVISION=	1
+CATEGORIES=	devel python
+MASTER_SITES=	CHEESESHOP
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+
+MAINTAINER=	bofh@FreeBSD.org
+COMMENT=	Use version control tags to discover version numbers
+
+LICENSE=	ISCL
+
+USES=		python:3.3+
+USE_PYTHON=	distutils autoplist
+NO_ARCH=	yes
+
+.include <bsd.port.mk>

@@ -1,0 +1,22 @@
+# $FreeBSD: head/sysutils/sysadm/Makefile 438389 2017-04-12 17:14:01Z amdmi3 $
+
+PORTNAME=	sysadm
+PORTVERSION=	1.0
+DISTVERSIONPREFIX=	v
+CATEGORIES=	sysutils
+
+MAINTAINER=	kmoore@FreeBSD.org
+COMMENT=	SysAdm API server
+
+LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/../LICENSE
+
+WRKSRC_SUBDIR=	src
+USE_QT5=	concurrent core network buildtools qmake gui websockets sql
+USES=		pkgconfig tar:xz qmake ssl
+MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	trueos
+
+.include <bsd.port.mk>

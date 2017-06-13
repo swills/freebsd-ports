@@ -1,0 +1,21 @@
+# Created by: Kozlov Sergey <kozlov.sergey.404@gmail.com>
+# $FreeBSD: head/www/redmine-sidebar_hide/Makefile 431695 2017-01-16 19:22:51Z amdmi3 $
+
+PORTNAME=	sidebar_hide
+PORTVERSION=	0.0.8
+CATEGORIES=	www
+
+MAINTAINER=	kozlov.sergey.404@gmail.com
+COMMENT=	Adds simple hide button for sidebar of Redmine
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE.md
+
+NO_ARCH=	yes
+
+USE_GITHUB=	YES
+GH_ACCOUNT=	bdemirkir
+
+REDMINE_PLUGIN_NAME=	sidebar_hide
+
+.include "${.CURDIR}/../../www/redmine/bsd.redmine.mk"

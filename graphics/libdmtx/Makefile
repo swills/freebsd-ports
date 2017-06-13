@@ -1,0 +1,23 @@
+# Created by: johans
+# $FreeBSD: head/graphics/libdmtx/Makefile 441761 2017-05-26 08:20:18Z kwm $
+
+PORTNAME=	libdmtx
+PORTVERSION=	0.7.4
+PORTREVISION=	9
+CATEGORIES=	graphics
+MASTER_SITES=	SF
+
+MAINTAINER=	hrs@FreeBSD.org
+COMMENT=	Library for reading and writing Data Matrix barcodes
+
+LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick
+
+USES=		tar:bzip2 libtool
+GNU_CONFIGURE=	yes
+USE_LDCONFIG=	yes
+INSTALL_TARGET=	install-strip
+
+.include <bsd.port.mk>

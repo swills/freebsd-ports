@@ -1,0 +1,20 @@
+# Created by: Martin Wilke <miwi@FreeBSD.org>
+# $FreeBSD: head/textproc/py-texttable/Makefile 441278 2017-05-19 23:17:56Z dbaio $
+
+PORTNAME=	texttable
+PORTVERSION=	0.9.0
+CATEGORIES=	textproc python
+MASTER_SITES=	CHEESESHOP
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+
+MAINTAINER=	dbaio@FreeBSD.org
+COMMENT=	Module for creating simple ASCII tables
+
+LICENSE=	LGPL3+
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+USES?=	python
+USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
+
+.include <bsd.port.mk>

@@ -1,0 +1,18 @@
+# Created by: TAKATSU Tomonari <tota@FreeBSD.org>
+# $FreeBSD: head/math/R-cran-minqa/Makefile 412348 2016-04-01 14:16:16Z mat $
+
+PORTNAME=	minqa
+PORTVERSION=	1.2.4
+CATEGORIES=	math
+DISTNAME=	${PORTNAME}_${PORTVERSION}
+
+MAINTAINER=	tota@FreeBSD.org
+COMMENT=	Derivative-free optimization algorithms by quadratic approximation
+
+LICENSE=	GPLv2
+
+RUN_DEPENDS=	R-cran-Rcpp>=0.9.10:devel/R-cran-Rcpp
+
+USES=	cran:auto-plist
+
+.include <bsd.port.mk>

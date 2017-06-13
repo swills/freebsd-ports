@@ -1,0 +1,21 @@
+# $FreeBSD: head/devel/rubygem-cf-uaa-lib/Makefile 436743 2017-03-22 21:36:36Z sunpoet $
+
+PORTNAME=	cf-uaa-lib
+PORTVERSION=	3.9.0
+CATEGORIES=	devel rubygems
+MASTER_SITES=	RG
+
+MAINTAINER=	ruby@FreeBSD.org
+COMMENT=	Client library for CloudFoundry UAA
+
+LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
+
+RUN_DEPENDS=	rubygem-httpclient>=2.8.2.4:www/rubygem-httpclient \
+		rubygem-multi_json>=1.12.1:devel/rubygem-multi_json
+
+NO_ARCH=	yes
+USE_RUBY=	yes
+USES=		gem
+
+.include <bsd.port.mk>

@@ -1,0 +1,25 @@
+# $FreeBSD: head/devel/cjose/Makefile 430235 2017-01-01 03:45:12Z sunpoet $
+
+PORTNAME=	cjose
+PORTVERSION=	0.4.1
+CATEGORIES=	devel
+
+MAINTAINER=	jamie@chair6.net
+COMMENT=	C library implementing Javascript Object Signing & Encryption (JOSE)
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+LIB_DEPENDS=	libjansson.so:devel/jansson
+
+USES=		libtool pathfix pkgconfig ssl
+USE_LDCONFIG=	yes
+INSTALL_TARGET=	install-strip
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	cisco
+
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--with-jansson=${PREFIX} --with-openssl=${OPENSSLBASE}
+
+.include <bsd.port.mk>

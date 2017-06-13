@@ -1,0 +1,22 @@
+# $FreeBSD: head/www/py-django-bitfield/Makefile 440448 2017-05-08 19:14:59Z rm $
+
+PORTNAME=	django-bitfield
+PORTVERSION=	1.9.3
+CATEGORIES=	www python
+MASTER_SITES=	CHEESESHOP
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+
+MAINTAINER=	rm@FreeBSD.org
+COMMENT=	BitField in Django
+
+LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18 \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+
+NO_ARCH=	yes
+USES=		python:2.7+
+USE_PYTHON=	autoplist distutils
+
+.include <bsd.port.mk>

@@ -1,0 +1,16 @@
+# Created by: TAKATSU Tomonari <tota@FreeBSD.org>
+# $FreeBSD: head/science/R-cran-e1071/Makefile 440313 2017-05-07 07:46:15Z tota $
+
+PORTNAME=	e1071
+DISTVERSION=	1.6-8
+CATEGORIES=	science
+DISTNAME=	${PORTNAME}_${DISTVERSION}
+
+MAINTAINER=	tota@FreeBSD.org
+COMMENT=	Misc Functions of the Department of Statistics (e1071), TU Wien
+
+LICENSE=	GPLv2
+
+USES=	cran:auto-plist,compiles
+
+.include <bsd.port.mk>

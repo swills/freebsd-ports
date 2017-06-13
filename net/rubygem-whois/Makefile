@@ -1,0 +1,23 @@
+# Created by: Eric Freeman <freebsdports@chillibear.com>
+# $FreeBSD: head/net/rubygem-whois/Makefile 429831 2016-12-28 22:39:12Z swills $
+
+PORTNAME=	whois
+PORTVERSION=	4.0.1
+CATEGORIES=	net rubygems
+MASTER_SITES=	RG
+
+MAINTAINER=	ruby@FreeBSD.org
+COMMENT=	Ruby whois library
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+RUN_DEPENDS=	rubygem-activesupport4>=3:devel/rubygem-activesupport4
+
+NO_ARCH=	yes
+USE_RUBY=	yes
+USES=		gem
+
+PLIST_FILES=	bin/whoisrb
+
+.include <bsd.port.mk>

@@ -1,0 +1,27 @@
+# Created by: Christian Geier <geier@lostpackets.de>
+# $FreeBSD: head/devel/py-click-log/Makefile 440483 2017-05-09 12:55:22Z sunpoet $
+
+PORTNAME=	click-log
+PORTVERSION=	0.1.8
+CATEGORIES=	devel python
+MASTER_SITES=	CHEESESHOP
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+
+MAINTAINER=	geier@lostpackets.de
+COMMENT=	Logging integration for Click
+
+LICENSE=	MIT
+
+RUN_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click
+TEST_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click \
+		${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
+
+USES?=		python
+USE_PYTHON=	autoplist distutils
+
+NO_ARCH=	yes
+
+do-test:
+	@cd ${WRKSRC} && ${PYTHON_CMD} -m pytest -rs -v
+
+.include <bsd.port.mk>

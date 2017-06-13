@@ -1,0 +1,20 @@
+# Created by: William Grzybowski
+# $FreeBSD: head/devel/py-hgtools/Makefile 432225 2017-01-23 14:20:44Z amdmi3 $
+
+PORTNAME=	hgtools
+PORTVERSION=	6.3
+CATEGORIES=	devel python
+MASTER_SITES=	CHEESESHOP
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+
+MAINTAINER=	wg@FreeBSD.org
+COMMENT=	Classes and setuptools plugin for Mercurial repositories
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+USES?=		python zip
+USE_PYTHON=	distutils autoplist
+NO_ARCH=	yes
+
+.include <bsd.port.mk>

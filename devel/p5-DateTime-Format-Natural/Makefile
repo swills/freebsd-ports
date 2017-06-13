@@ -1,0 +1,30 @@
+# Created by: Timur I. Bakeyev <bat@cpan.org>
+# $FreeBSD: head/devel/p5-DateTime-Format-Natural/Makefile 441446 2017-05-22 11:15:50Z bofh $
+
+PORTNAME=	DateTime-Format-Natural
+PORTVERSION=	1.05
+CATEGORIES=	devel perl5
+MASTER_SITES=	CPAN
+PKGNAMEPREFIX=	p5-
+
+MAINTAINER=	bofh@FreeBSD.org
+COMMENT=	Create machine readable date/time with natural parsing logic
+
+LICENSE=	ART10 GPLv1
+LICENSE_COMB=	dual
+
+BUILD_DEPENDS=	p5-boolean>=0:devel/p5-boolean \
+		p5-Clone>=0:devel/p5-Clone \
+		p5-Date-Calc>=0:devel/p5-Date-Calc \
+		p5-DateTime>=0:devel/p5-DateTime \
+		p5-List-MoreUtils>=0:lang/p5-List-MoreUtils \
+		p5-Params-Validate>=0:devel/p5-Params-Validate \
+		p5-Module-Util>=0:devel/p5-Module-Util
+RUN_DEPENDS:=	${BUILD_DEPENDS}
+TEST_DEPENDS=	p5-Test-MockTime>=0:devel/p5-Test-MockTime
+
+USES=		perl5
+USE_PERL5=	modbuild
+NO_ARCH=	yes
+
+.include <bsd.port.mk>

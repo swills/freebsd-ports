@@ -1,0 +1,23 @@
+# $FreeBSD: head/www/py-rollbar/Makefile 437194 2017-03-29 12:57:31Z wg $
+
+PORTNAME=	rollbar
+PORTVERSION=	0.13.11
+DISTVERSIONPREFIX=	v
+CATEGORIES=	www python
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+
+MAINTAINER=	wg@FreeBSD.org
+COMMENT=	Easy and powerful exception tracking with Rollbar
+
+LICENSE=	MIT
+
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests \
+		${PYTHON_PKGNAMEPREFIX}six>=1.5.7:devel/py-six
+
+USES=		python
+USE_PYTHON=	autoplist distutils
+USE_GITHUB=	yes
+
+GH_PROJECT=	pyrollbar
+
+.include <bsd.port.mk>

@@ -1,0 +1,24 @@
+# $FreeBSD: head/devel/elixir-sorted_set/Makefile 418363 2016-07-11 10:47:50Z olgeni $
+
+PORTNAME=	sorted_set
+PORTVERSION=	1.1.0
+DISTVERSIONPREFIX=	v
+CATEGORIES=	devel
+PKGNAMEPREFIX=	elixir-
+
+MAINTAINER=	olgeni@FreeBSD.org
+COMMENT=	Sorted Set library for Elixir
+
+LICENSE=	MIT
+
+IGNORE=		does not build with Elixir 1.3
+
+USES=		elixir
+USE_GITHUB=	yes
+GH_ACCOUNT=	SenecaSystems
+
+MIX_BUILD_DEPS=	devel/elixir-red_black_tree
+MIX_RUN_DEPS:=	${MIX_BUILD_DEPS}
+MIX_REWRITE=	yes
+
+.include <bsd.port.mk>

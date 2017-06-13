@@ -1,0 +1,21 @@
+# Created by: Seamus Venasse <svenasse@polaris.ca>
+# $FreeBSD: head/textproc/p5-Lingua-EN-Inflect/Makefile 441889 2017-05-28 03:53:07Z sunpoet $
+
+PORTNAME=	Lingua-EN-Inflect
+PORTVERSION=	1.902
+CATEGORIES=	textproc perl5
+MASTER_SITES=	CPAN
+PKGNAMEPREFIX=	p5-
+
+MAINTAINER=	perl@FreeBSD.org
+COMMENT=	Convert singular words to their plural form
+
+LICENSE=	ART10 GPLv1
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+NO_ARCH=	yes
+USES=		perl5
+USE_PERL5=	configure
+
+.include <bsd.port.mk>

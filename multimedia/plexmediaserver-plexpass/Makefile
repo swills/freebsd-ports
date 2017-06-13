@@ -1,0 +1,24 @@
+# Created by: KalleDK <plexmaintainer@k-moeller.dk>
+# $FreeBSD: head/multimedia/plexmediaserver-plexpass/Makefile 442267 2017-05-31 22:00:18Z feld $
+
+PORTVERSION=	1.7.2.3878
+PORTREVISION=	0
+PKGNAMESUFFIX=	-plexpass
+
+MAINTAINER=	feld@FreeBSD.org
+
+PLEX_BUILD=	8088811b8
+
+USE_RC_SUBR=	${PORTNAME}_plexpass
+
+MASTERDIR=${.CURDIR}/../plexmediaserver
+
+DISTINFO_FILE=	${.CURDIR}/distinfo
+PLIST=	${.CURDIR}/pkg-plist
+FILESDIR=	${.CURDIR}/files
+DATADIR=	${PREFIX}/share/${PORTNAME}${PKGNAMESUFFIX}
+
+SUB_LIST=	PORTNAME=${PORTNAME}_plexpass DATADIR=${DATADIR} USERS=${USERS} GROUPS=${GROUPS}
+PLIST_SUB+=	PLEX_BUILD=${PLEX_BUILD}
+
+.include "${MASTERDIR}/Makefile"

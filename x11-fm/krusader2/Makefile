@@ -1,0 +1,20 @@
+# Created by: Heiner <h.eichmann@gmx.de>
+# $FreeBSD: head/x11-fm/krusader2/Makefile 439367 2017-04-25 08:20:30Z riggs $
+
+PORTNAME=	krusader
+DISTVERSION=	2.4.0-beta3
+PORTREVISION=	5
+CATEGORIES=	x11-fm kde
+MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${DISTVERSION}/
+
+MAINTAINER=	kde@FreeBSD.org
+COMMENT=	Twin panel file manager for KDE, like midnight or norton commander
+
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+USES=		cmake:outsource gettext kde:4 tar:bzip2
+USE_KDE=	kdelibs automoc4
+USE_QT4=	moc_build qmake_build rcc_build uic_build
+
+.include <bsd.port.mk>

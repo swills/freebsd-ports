@@ -1,0 +1,17 @@
+# $FreeBSD: head/math/p5-Math-SigFigs/Makefile 438267 2017-04-11 14:34:30Z swills $
+
+PORTNAME=	Math-SigFigs
+PORTVERSION=	1.20
+CATEGORIES=	math perl5
+MASTER_SITES=	CPAN
+PKGNAMEPREFIX=	p5-
+
+MAINTAINER=	swills@FreeBSD.org
+COMMENT=	Do math with correct handling of significant figures
+
+USES=		perl5
+USE_PERL5=	configure
+
+PLIST_FILES=	bin/count bin/format
+
+.include <bsd.port.mk>

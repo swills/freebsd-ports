@@ -1,0 +1,16 @@
+# $FreeBSD: head/x11/kgamma/Makefile 439367 2017-04-25 08:20:30Z riggs $
+
+PORTNAME=	kgamma
+PORTVERSION=	${KDE4_VERSION}
+PORTREVISION=	1
+CATEGORIES=	x11 kde kde-kde4
+
+MAINTAINER=	kde@FreeBSD.org
+COMMENT=	KDE 4 monitor calibration tool
+
+USES=		cmake:outsource kde:4 tar:xz
+USE_KDE=	kdelibs automoc4
+USE_QT4=	moc_build qmake_build rcc_build uic_build
+USE_XORG=	x11 xxf86vm
+
+.include <bsd.port.mk>

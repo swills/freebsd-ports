@@ -1,0 +1,24 @@
+# Created by: Gea-Suan Lin <gslin@gslin.org>
+# $FreeBSD: head/devel/pecl-zookeeper/Makefile 442922 2017-06-08 14:06:39Z sunpoet $
+
+PORTNAME=	zookeeper
+PORTVERSION=	0.4.0
+CATEGORIES=	devel
+
+MAINTAINER=	sunpoet@FreeBSD.org
+COMMENT=	PHP extension for interfacing with Apache ZooKeeper
+
+LICENSE=	PHP301
+
+LIB_DEPENDS=	libzookeeper_mt.so:devel/libzookeeper
+
+USE_PHP=	session:build
+USES=		php:pecl
+
+PLIST_FILES=	%%DATADIR%%/zookeeper-api.php
+
+post-install:
+	${MKDIR} ${STAGEDIR}${DATADIR}/
+	${INSTALL_DATA} ${WRKSRC}/zookeeper-api.php ${STAGEDIR}${DATADIR}/
+
+.include <bsd.port.mk>

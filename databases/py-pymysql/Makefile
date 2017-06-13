@@ -1,0 +1,21 @@
+# Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
+# $FreeBSD: head/databases/py-pymysql/Makefile 437859 2017-04-06 12:16:25Z lwhsu $
+
+PORTNAME=	pymysql
+PORTVERSION=	0.7.11
+CATEGORIES=	databases python
+MASTER_SITES=	CHEESESHOP
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+DISTNAME=	PyMySQL-${PORTVERSION}
+
+MAINTAINER=	lwhsu@FreeBSD.org
+COMMENT=	Pure Python MySQL Driver
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+NO_ARCH=	yes
+USES=		python
+USE_PYTHON=	autoplist distutils
+
+.include <bsd.port.mk>

@@ -1,0 +1,19 @@
+# Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
+# $FreeBSD: head/devel/nuitka/Makefile 442866 2017-06-07 19:10:55Z sunpoet $
+
+PORTNAME=	nuitka
+PORTVERSION=	0.5.26
+CATEGORIES=	devel python
+MASTER_SITES=	http://nuitka.net/releases/
+DISTNAME=	Nuitka-${PORTVERSION}
+
+MAINTAINER=	python@FreeBSD.org
+COMMENT=	Compatible and efficient Python compiler
+
+LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+USES=		python tar:bzip2
+USE_PYTHON=	autoplist concurrent distutils
+
+.include <bsd.port.mk>

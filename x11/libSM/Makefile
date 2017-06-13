@@ -1,0 +1,25 @@
+# Created by: Eric Anholt <anholt@FreeBSD.org>
+# $FreeBSD: head/x11/libSM/Makefile 424427 2016-10-21 15:21:13Z mat $
+
+PORTNAME=	libSM
+PORTVERSION=	1.2.2
+PORTREVISION=	3
+PORTEPOCH=	1
+CATEGORIES=	x11
+
+MAINTAINER=	x11@FreeBSD.org
+COMMENT=	Session Management library for X11
+
+LICENSE=	MIT
+
+USES=		pathfix
+XORG_CAT=	lib
+USE_XORG=	ice xproto:both xtrans
+
+CONFIGURE_ARGS+=--disable-docs --without-xmlto
+
+post-patch:
+	@${REINPLACE_CMD} '/^SUBDIRS/,/^$$/ \
+		s/doc//' ${WRKSRC}/Makefile.in
+
+.include <bsd.port.mk>

@@ -1,0 +1,7 @@
+# $FreeBSD: head/databases/apq/Makefile.version 414332 2016-04-30 06:44:27Z marino $
+
+APQ_VERSION=	3.2.0
+BASE_PORTREV=	1
+DRV_ODBC_PR=	1
+DRV_MYSQL_PR=	2
+DRV_PGSQL_PR=	1

@@ -1,0 +1,21 @@
+# $FreeBSD: head/net/py-rabbitpy/Makefile 424819 2016-10-28 09:41:05Z olgeni $
+
+PORTNAME=	rabbitpy
+PORTVERSION=	1.0.0
+CATEGORIES=	net python
+MASTER_SITES=	CHEESESHOP
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+
+MAINTAINER=	olgeni@FreeBSD.org
+COMMENT=	RabbitMQ client library for Python
+
+LICENSE=	BSD3CLAUSE
+
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pamqp>0:net/py-pamqp
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pamqp>0:net/py-pamqp
+
+NO_ARCH=	yes
+USES=		python
+USE_PYTHON=	autoplist distutils
+
+.include <bsd.port.mk>

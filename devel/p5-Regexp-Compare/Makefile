@@ -1,0 +1,22 @@
+# Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
+# $FreeBSD: head/devel/p5-Regexp-Compare/Makefile 443375 2017-06-11 08:18:18Z sunpoet $
+
+PORTNAME=	Regexp-Compare
+PORTVERSION=	0.28
+CATEGORIES=	devel perl5
+MASTER_SITES=	CPAN
+PKGNAMEPREFIX=	p5-
+
+MAINTAINER=	sunpoet@FreeBSD.org
+COMMENT=	Partial ordering for regular expressions
+
+LICENSE=	ART10 GPLv1
+LICENSE_COMB=	dual
+
+USE_PERL5=	configure
+USES=		perl5
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Regexp/Compare/Compare.so
+
+.include <bsd.port.mk>

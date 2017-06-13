@@ -1,0 +1,16 @@
+# $FreeBSD: head/databases/pecl-mongodb/Makefile 440326 2017-05-07 11:20:02Z pi $
+
+PORTNAME=	mongodb
+PORTVERSION=	1.2.9
+CATEGORIES=	databases pear
+
+MAINTAINER=	pi@FreeBSD.org
+COMMENT=	PECL classes for MongoDB
+
+LICENSE=	APACHE20
+
+USES=		php:pecl ssl
+USE_PHP=	spl:build
+CFLAGS+=	-I${LOCALBASE}/include
+
+.include <bsd.port.mk>

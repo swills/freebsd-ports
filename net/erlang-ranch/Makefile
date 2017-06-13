@@ -1,0 +1,22 @@
+# $FreeBSD: head/net/erlang-ranch/Makefile 435132 2017-03-01 11:15:40Z olgeni $
+
+PORTNAME=	ranch
+PORTVERSION=	1.3.2
+CATEGORIES=	net
+PKGNAMEPREFIX=	erlang-
+
+MAINTAINER=	olgeni@FreeBSD.org
+COMMENT=	Erlang socket acceptor pool for TCP protocols
+
+LICENSE=	ISCL
+
+USES=		erlang:rebar
+USE_GITHUB=	yes
+GH_ACCOUNT=	ninenines
+ERL_DOCS=	doc/src/guide/* doc/src/manual/*
+
+post-install:
+	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
+	cd ${WRKSRC}/examples && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR}
+
+.include <bsd.port.mk>

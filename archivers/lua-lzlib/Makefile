@@ -1,0 +1,27 @@
+# $FreeBSD: head/archivers/lua-lzlib/Makefile 418318 2016-07-10 13:56:01Z jbeich $
+
+PORTNAME=	lzlib
+PORTVERSION=	0.4.3
+CATEGORIES=	archivers
+PKGNAMEPREFIX=	${LUA_PKGNAMEPREFIX}
+
+MAINTAINER=	daniel@blodan.se
+COMMENT=	Lua bindings to the ZLib compression library
+
+LICENSE=	MIT
+
+USES=		cmake lua
+USE_GITHUB=	yes
+GH_ACCOUNT=	LuaDist
+CMAKE_ARGS=	-DINSTALL_LMOD="${LUA_MODSHAREDIR}" \
+		-DINSTALL_CMOD="${LUA_MODLIBDIR}" \
+		-DINSTALL_DOC="${DOCSDIR}" \
+		-DINSTALL_TEST="${EXAMPLESDIR}"
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
+
+post-patch:
+	@${REINPLACE_CMD} -e '/README/s/install_data/install_doc/' \
+		${WRKSRC}/CMakeLists.txt
+
+.include <bsd.port.mk>

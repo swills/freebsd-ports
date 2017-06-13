@@ -1,0 +1,38 @@
+# Created by: Damian Gerow <dgerow@afflictions.org>
+# $FreeBSD: head/net-p2p/mktorrent/Makefile 435987 2017-03-12 13:35:29Z danfe $
+
+PORTNAME=	mktorrent
+PORTVERSION=	1.0
+PORTREVISION=	1
+CATEGORIES=	net-p2p
+MASTER_SITES=	SF
+
+MAINTAINER=	dgerow@afflictions.org
+COMMENT=	Command-line utility for creating BitTorrent metainfo files
+
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+MAKEFILE=	BSDmakefile
+MAKE_ARGS=	USE_LONG_OPTIONS=1
+
+PLIST_FILES=	bin/mktorrent
+
+OPTIONS_DEFINE=	THREADS OPENSSL HASHCHECK
+OPTIONS_DEFAULT=	THREADS OPENSSL HASHCHECK
+
+OPENSSL_DESC=	Use OpenSSL for hashing
+HASHCHECK_DESC=	Verify file hashes
+
+OPENSSL_USES=		ssl
+OPENSSL_CFLAGS=		-I${OPENSSLINC}
+OPENSSL_LDFLAGS=	-L${OPENSSLLIB}
+
+THREADS_MAKE_ARGS=	USE_PTHREADS=1
+OPENSSL_MAKE_ARGS=	USE_OPENSSL=1
+HASHCHECK_MAKE_ARGS=	NO_HASH_CHECK=1
+
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
+
+.include <bsd.port.mk>

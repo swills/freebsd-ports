@@ -1,0 +1,16 @@
+# Created by: Thierry Thomas <thierry@pompo.net>
+# $FreeBSD: head/textproc/rw-aspell/Makefile 438338 2017-04-12 09:09:47Z mat $
+
+PORTNAME=	${DICT}-aspell
+SPELLVERSION=	-rw-0.50-0
+PORTREVISION=	1
+PORTEPOCH=	1
+CATEGORIES=	textproc
+
+MAINTAINER=	office@FreeBSD.org
+COMMENT=	Aspell Kinyarwanda dictionary
+
+DICT=	 	rw
+
+.include "${.CURDIR}/../../textproc/aspell/Makefile.inc"
+.include <bsd.port.post.mk>

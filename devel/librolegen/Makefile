@@ -1,0 +1,21 @@
+# $FreeBSD: head/devel/librolegen/Makefile 412346 2016-04-01 14:00:51Z mat $
+
+PORTNAME=	librolegen
+PORTVERSION=	1.0b
+CATEGORIES=	devel
+
+MAINTAINER=	penzin.dev@gmail.com
+COMMENT=	Library to dynamically generate webOS system bus role files
+
+LICENSE=	APACHE20
+
+BUILD_DEPENDS=	${LOCALBASE}/share/cmake/Modules/webOS/webOS.cmake:devel/cmake-modules-webos
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	FreeWebOS
+
+USES=		cmake:outsource
+
+USE_LDCONFIG=	yes
+
+.include <bsd.port.mk>

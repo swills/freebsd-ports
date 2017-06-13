@@ -1,0 +1,26 @@
+# $FreeBSD: head/x11-toolkits/p5-Gtk3/Makefile 438849 2017-04-19 14:38:54Z sunpoet $
+
+PORTNAME=	Gtk3
+PORTVERSION=	0.026
+PORTREVISION=	1
+CATEGORIES=	x11-toolkits lang perl5
+MASTER_SITES=	CPAN SF/${PORTNAME:tl}-perl/${PORTNAME}/${PORTVERSION}
+MASTER_SITE_SUBDIR=	CPAN:XAOC
+PKGNAMEPREFIX=	p5-
+
+MAINTAINER=	hiroto.kagotani@gmail.com
+COMMENT=	Perl module for Gtk+ 3.x graphical user interface library
+
+LICENSE=	LGPL21+
+LICENSE_FILE_LGPL21=	${WRKSRC}/LICENSE
+
+BUILD_DEPENDS=	p5-Cairo-GObject>=1:devel/p5-Cairo-GObject \
+		p5-Glib-Object-Introspection>=0.016:devel/p5-Glib-Object-Introspection
+RUN_DEPENDS:=	${BUILD_DEPENDS}
+
+NO_ARCH=	yes
+USES=		perl5
+USE_PERL5=	configure
+USE_GNOME=	gtk30
+
+.include <bsd.port.mk>

@@ -1,0 +1,20 @@
+# $FreeBSD: head/science/fisicalab/Makefile 439928 2017-05-02 05:26:40Z tcberner $
+
+PORTNAME=	fisicalab
+PORTVERSION=	0.3.3
+PORTREVISION=	4
+CATEGORIES=	science gnustep
+MASTER_SITES=	SAVANNAH
+
+MAINTAINER=	theraven@FreeBSD.org
+COMMENT=	Physics simulation program for educational use
+
+LICENSE=	GPLv3
+
+LIB_DEPENDS+=	libgsl.so:math/gsl
+
+USES=		gnustep
+GNU_CONFIGURE=	yes
+USE_GNUSTEP=	build gui
+
+.include <bsd.port.mk>

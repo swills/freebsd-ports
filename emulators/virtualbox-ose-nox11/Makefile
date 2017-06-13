@@ -1,0 +1,10 @@
+# $FreeBSD: head/emulators/virtualbox-ose-nox11/Makefile 423381 2016-10-05 19:55:24Z jkim $
+
+PKGNAMESUFFIX=	-nox11
+
+OPTIONS_EXCLUDE=	ALSA DBUS DEBUG GUESTADDITIONS MANUAL NLS PULSEAUDIO
+OPTIONS_EXCLUDE+=	QT4 QT5 VPX X11
+
+MASTERDIR=	${.CURDIR}/../virtualbox-ose
+
+.include "${MASTERDIR}/Makefile"

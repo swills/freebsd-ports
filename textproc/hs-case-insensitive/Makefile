@@ -1,0 +1,15 @@
+# $FreeBSD: head/textproc/hs-case-insensitive/Makefile 394918 2015-08-20 23:02:14Z pgj $
+
+PORTNAME=	case-insensitive
+PORTVERSION=	1.2.0.4
+CATEGORIES=	textproc haskell
+
+MAINTAINER=	haskell@FreeBSD.org
+COMMENT=	Case-insensitive string comparison
+
+LICENSE=	BSD3CLAUSE
+
+USE_CABAL=	hashable>=1.0 text>=0.3
+
+.include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
+.include <bsd.port.mk>

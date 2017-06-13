@@ -1,0 +1,28 @@
+# Created by: John Marino <marino@FreeBSD.org>
+# $FreeBSD: head/devel/aunit/Makefile 439129 2017-04-21 20:25:00Z rene $
+
+PORTNAME=	aunit
+PORTVERSION=	2016
+CATEGORIES=	devel
+MASTER_SITES=	http://downloads.dragonlace.net/src/
+DISTNAME=	aunit-gpl-${PORTVERSION}-src
+
+MAINTAINER=	ports@FreeBSD.org
+COMMENT=	Ada unit testing framework
+
+LICENSE=	GPLv3
+
+BUILD_DEPENDS=	gprbuild:devel/gprbuild
+
+USES=		ada gmake
+
+post-patch:
+	${REINPLACE_CMD} -e 's|LIBDIR|MYLIBDIR|' \
+		${WRKSRC}/lib/gnat/aunit_shared.gpr
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
+
+post-install:
+	${RM} -r ${STAGEDIR}${PREFIX}/lib/gnat/manifests
+
+.include <bsd.port.mk>

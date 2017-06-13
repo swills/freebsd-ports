@@ -1,0 +1,17 @@
+# $FreeBSD: head/x11-wm/rubygem-uh-layout/Makefile 432308 2017-01-24 00:08:33Z swills $
+
+PORTNAME=	uh-layout
+PORTVERSION=	0.4.3
+CATEGORIES=	x11-wm rubygems
+MASTER_SITES=	RG
+
+MAINTAINER=	tj+freebsd_ports@a13.fr
+COMMENT=	Tiling and stacking layout for uh-wm ruby gem
+
+LICENSE=	BSD3CLAUSE
+
+USE_RUBY=	yes
+USES=		gem
+NO_ARCH=	yes
+
+.include <bsd.port.mk>

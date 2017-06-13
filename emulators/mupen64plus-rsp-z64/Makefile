@@ -1,0 +1,26 @@
+# Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
+# $FreeBSD: head/emulators/mupen64plus-rsp-z64/Makefile 412346 2016-04-01 14:00:51Z mat $
+
+PKGNAMESUFFIX=	-rsp-z64
+DISTFILES=	${PORTNAME}${PKGNAMESUFFIX}-src-${PORTVERSION}${EXTRACT_SUFX}:plugin
+
+COMMENT=	Low-level RSP processor plugin for the Mupen64Plus
+
+LIB_DEPENDS=	libmupen64plus.so.2:emulators/mupen64plus-core
+
+USE_GL=		#
+USE_SDL=	#
+
+MASTERDIR=	${.CURDIR}/../mupen64plus-core
+
+OPTIONS_DEFINE=	#
+
+CFLAGS+=	-I${LOCALBASE}/include -I${LOCALBASE}/include/${PORTNAME}
+LDFLAGS+=	-L${LOCALBASE}/lib
+
+DISTINFO_FILE=		${.CURDIR}/distinfo
+EXTRACT_AFTER_ARGS=	#
+BUILD_WRKSRC=		${WRKSRC}/${PORTNAME}${PKGNAMESUFFIX}/projects/unix
+WRKSRC=			${WRKDIR}
+
+.include "${MASTERDIR}/Makefile"

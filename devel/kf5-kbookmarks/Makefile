@@ -1,0 +1,17 @@
+# Created by: tcberner
+# $FreeBSD: head/devel/kf5-kbookmarks/Makefile 438880 2017-04-19 14:59:40Z tcberner $
+
+PORTNAME=	kbookmarks
+PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
+CATEGORIES=	devel kde kde-frameworks
+
+MAINTAINER=	kde@FreeBSD.org
+COMMENT=	KF5 library for bookmarks and the XBEL format
+
+USES=		cmake:outsource compiler:c++11-lib kde:5 tar:xz
+USE_KDE=	auth codecs config configwidgets coreaddons ecm \
+		iconthemes widgetsaddons xmlgui
+USE_QT5=	buildtools_build core dbus gui linguisttools \
+		qmake_build widgets xml
+
+.include <bsd.port.mk>

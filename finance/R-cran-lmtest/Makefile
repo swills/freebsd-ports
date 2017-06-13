@@ -1,0 +1,20 @@
+# Created by: Wen Heping <wen@FreeBSD.org>
+# $FreeBSD: head/finance/R-cran-lmtest/Makefile 434273 2017-02-17 07:57:12Z wen $
+
+PORTNAME=	lmtest
+DISTVERSION=	0.9-35
+CATEGORIES=	finance
+DISTNAME=	${PORTNAME}_${DISTVERSION}
+
+MAINTAINER=	wen@FreeBSD.org
+COMMENT=	Testing Linear Regression Models
+
+LICENSE=	GPLv2
+
+RUN_DEPENDS=	R-cran-zoo>=0:math/R-cran-zoo \
+		R-cran-strucchange>0:finance/R-cran-strucchange \
+		R-cran-sandwich>=2.2.4:math/R-cran-sandwich
+
+USES=	cran:auto-plist
+
+.include <bsd.port.mk>

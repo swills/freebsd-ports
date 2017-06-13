@@ -1,0 +1,35 @@
+# $FreeBSD: head/net/py-gntp/Makefile 438888 2017-04-19 15:56:26Z miwi $
+
+PORTNAME=	gntp
+PORTVERSION=	0.8
+DISTVERSIONPREFIX=	v
+PORTREVISION=	3
+CATEGORIES=	net
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+
+MAINTAINER=	nivit@FreeBSD.org
+COMMENT=	Growl Notification Transport Protocol for Python
+
+LICENSE=	MIT
+
+GH_ACCOUNT=	kfdm
+
+OPTIONS_DEFINE=	DOCS
+
+USE_GITHUB=	yes
+USES=		python:2
+USE_PYTHON=	distutils autoplist
+
+.include <bsd.port.pre.mk>
+
+.if ${PORT_OPTIONS:MDOCS}
+BUILD_DEPENDS+=	sphinx-build:textproc/py-sphinx
+DOCSDIR=	${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME}
+PYDISTUTILS_BUILD_TARGET+=	build_sphinx
+
+post-install:
+	${MKDIR} ${STAGEDIR}${DOCSDIR}
+	cd ${WRKSRC}/build/sphinx/html && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR}
+.endif
+
+.include <bsd.port.post.mk>

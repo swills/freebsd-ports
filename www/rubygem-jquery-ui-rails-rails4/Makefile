@@ -1,0 +1,20 @@
+# $FreeBSD: head/www/rubygem-jquery-ui-rails-rails4/Makefile 430223 2017-01-01 01:43:57Z swills $
+
+PORTNAME=	jquery-ui-rails
+PORTVERSION=	6.0.1
+CATEGORIES=	www rubygems
+MASTER_SITES=	RG
+PKGNAMESUFFIX=	-rails4
+
+MAINTAINER=	ruby@FreeBSD.org
+COMMENT=	Packaged JavaScript, CSS and image files of jQuery UI for Rails
+
+LICENSE=	MIT
+
+RUN_DEPENDS=	rubygem-railties4>=4.1.4:www/rubygem-railties4
+
+NO_ARCH=	yes
+USE_RUBY=	yes
+USES=		gem
+
+.include <bsd.port.mk>

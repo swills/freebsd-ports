@@ -1,0 +1,20 @@
+# Created by: Lars Thegler <lars@thegler.dk>
+# $FreeBSD: head/devel/p5-Class-Base/Makefile 438002 2017-04-08 10:33:54Z sunpoet $
+
+PORTNAME=	Class-Base
+PORTVERSION=	0.08
+CATEGORIES=	devel perl5
+MASTER_SITES=	CPAN
+PKGNAMEPREFIX=	p5-
+
+MAINTAINER=	perl@FreeBSD.org
+COMMENT=	Useful base class for deriving other modules
+
+LICENSE=	ART10 GPLv1
+LICENSE_COMB=	dual
+
+NO_ARCH=	yes
+USES=		perl5
+USE_PERL5=	configure
+
+.include <bsd.port.mk>

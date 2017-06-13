@@ -1,0 +1,27 @@
+# $FreeBSD: head/sysutils/tmate-slave/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+
+PORTNAME=	tmate-slave
+PORTVERSION=	0.0.0.2016051901
+PORTREVISION=	2
+CATEGORIES=	sysutils
+
+MAINTAINER=	swills@FreeBSD.org
+COMMENT=	Instant terminal sharing server
+
+LIB_DEPENDS=	libevent.so:devel/libevent \
+		libmsgpackc.so:devel/msgpack \
+		libssh_threads.so:security/libssh
+
+USES=		autoreconf ncurses pkgconfig
+USE_GITHUB=	yes
+GH_ACCOUNT=	tmate-io
+GH_TAGNAME=	b3c85fa
+
+GNU_CONFIGURE=	yes
+INSTALL_ARGET=	install-strip
+USE_LDCONFIG=	yes
+LDFLAGS+=	-lexecinfo
+
+PLIST_FILES=	bin/tmate-slave
+
+.include <bsd.port.mk>

@@ -1,0 +1,31 @@
+# Created by: Adam Weinberger <adamw@FreeBSD.org>
+# $FreeBSD: head/sysutils/vimpager/Makefile 438923 2017-04-20 03:31:48Z adamw $
+
+PORTNAME=	vimpager
+DISTVERSION=	2.06
+CATEGORIES=	sysutils
+
+MAINTAINER=	ports@FreeBSD.org
+COMMENT=	Use ViM as a pager
+
+LICENSE=	BSD2CLAUSE
+
+RUN_DEPENDS=	vim:editors/vim
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	rkitover
+GH_TAGNAME=	d0bf869
+
+OPTIONS_DEFINE=	DOCS
+
+PLIST_FILES=	bin/vimcat bin/${PORTNAME} etc/${PORTNAME}rc
+PORTDOCS=	vimcat.md vimpager.md
+
+post-patch:
+	@${REINPLACE_CMD} -e 's|share/man|man|' ${WRKSRC}/Makefile
+
+post-install:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
+
+.include <bsd.port.mk>

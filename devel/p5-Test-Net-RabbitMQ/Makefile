@@ -1,0 +1,20 @@
+# $FreeBSD: head/devel/p5-Test-Net-RabbitMQ/Makefile 438301 2017-04-11 18:30:16Z swills $
+
+PORTNAME=	Test-Net-RabbitMQ
+PORTVERSION=	0.13
+CATEGORIES=	devel perl5
+MASTER_SITES=	CPAN
+PKGNAMEPREFIX=	p5-
+
+MAINTAINER=	swills@FreeBSD.org
+COMMENT=	Perl mock RabbitMQ implementation for use when testing
+
+BUILD_DEPENDS=	p5-Moose>=0:devel/p5-Moose
+RUN_DEPENDS:=	${BUILD_DEPENDS}
+
+TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
+
+USES=		perl5
+USE_PERL5=	configure
+
+.include <bsd.port.mk>

@@ -1,0 +1,29 @@
+# $FreeBSD: head/multimedia/py-moviepy/Makefile 439367 2017-04-25 08:20:30Z riggs $
+
+PORTNAME=	moviepy
+PORTVERSION=	0.2.2.13
+PORTREVISION=	2
+CATEGORIES=	multimedia python
+MASTER_SITES=	CHEESESHOP
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+
+MAINTAINER=	kevlo@FreeBSD.org
+COMMENT=	Video editing with Python
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENCE.txt
+
+RUN_DEPENDS=	convert:graphics/ImageMagick \
+		${PYTHON_PKGNAMEPREFIX}decorator>0:devel/py-decorator \
+		${PYTHON_PKGNAMEPREFIX}tqdm>0:misc/py-tqdm \
+		${PYTHON_PKGNAMEPREFIX}imageio>0:graphics/py-imageio \
+		${PYTHON_SITELIBDIR}/cv.py:graphics/py-opencv \
+		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow \
+		${PYTHON_PKGNAMEPREFIX}scipy>=0:science/py-scipy
+
+USES=		python
+USE_PYTHON=	distutils autoplist
+
+NO_ARCH=	yes
+
+.include <bsd.port.mk>

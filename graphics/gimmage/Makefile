@@ -1,0 +1,25 @@
+# Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
+# $FreeBSD: head/graphics/gimmage/Makefile 441395 2017-05-21 13:21:04Z linimon $
+
+PORTNAME=	gimmage
+PORTVERSION=	0.2.3
+PORTREVISION=	12
+CATEGORIES=	graphics
+MASTER_SITES=	BERLIOS
+
+MAINTAINER=	portmaster@bsdforge.com
+COMMENT=	Simple image viewer
+
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+LIB_DEPENDS=	libcurl.so:ftp/curl
+
+BROKEN=		fails to compile: ustring.h: expected ';' at end of declaration list
+
+USES=		desktop-file-utils gettext pkgconfig
+USE_GNOME=	gtkmm24
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--with-libintl-prefix=${LOCALBASE}
+
+.include <bsd.port.mk>

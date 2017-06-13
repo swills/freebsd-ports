@@ -1,0 +1,28 @@
+# $FreeBSD: head/games/lordsawar/Makefile 439206 2017-04-23 08:35:28Z kwm $
+
+PORTNAME=	lordsawar
+PORTVERSION=	0.3.1
+PORTREVISION=	1
+CATEGORIES=	games
+MASTER_SITES=	SAVANNAH
+
+MAINTAINER=	ports@FreeBSD.org
+COMMENT=	Warlords II clone
+
+LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		Doesn't build after cairomm was updated to 1.12.
+
+USES=		compiler:c++11-lib gettext gmake libarchive pkgconfig shebangfix
+USE_GNOME=	gtkmm30 intltool libxslt
+USE_GSTREAMER=	mm
+USE_CXXSTD=	c++11
+INSTALLS_ICONS=	yes
+GNU_CONFIGURE=	yes
+SHEBANG_FILES=	create-lw-file
+bash_CMD=	/bin/sh
+
+BROKEN_aarch64=	Fails to build: runaway process
+
+.include <bsd.port.mk>

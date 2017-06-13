@@ -1,0 +1,18 @@
+# $FreeBSD: head/devel/bugzilla50/Makefile.common 413850 2016-04-23 06:58:19Z sunpoet $
+
+DIST_SUBDIR=	${PORTNAME}
+PKGNAMESUFFIX=	50
+
+CONFLICTS_INSTALL=	\
+		bugzilla5[^0].* \
+		bugzilla4*
+
+PORTSCOUT=	limitw:1,even
+
+WWWDIR=		${PREFIX}/www/bugzilla
+
+BINMODE=	700
+
+NO_ARCH=	yes
+NO_BUILD=	yes
+

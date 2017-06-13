@@ -1,0 +1,25 @@
+# Created by: Piotr Kubaj <pkubaj@anongoth.pl>
+# $FreeBSD: head/x11-toolkits/linux-c7-openmotif/Makefile 441915 2017-05-28 16:49:23Z tijl $
+
+PORTNAME=	motif
+PORTVERSION=	2.3.4
+PORTREVISION=	3
+CATEGORIES=	x11-toolkits linux
+
+MAINTAINER=	emulation@FreeBSD.org
+COMMENT=	Motif toolkit libraries (Linux CentOS ${LINUX_DIST_VER})
+
+CONFLICTS=	linux-c6-${PORTNAME}-[0-9]*
+
+DESCR=		${.CURDIR}/../open-${PORTNAME}/pkg-descr
+RPMVERSION=	8.1.el7_3
+USES=		linux:c7
+USE_LDCONFIG=	yes
+USE_LINUX=	xorglibs
+USE_LINUX_RPM=	yes
+
+post-patch:
+	@${RM} -r ${WRKSRC}/etc ${WRKSRC}/usr/bin ${WRKSRC}/usr/include \
+		${WRKSRC}/usr/share/X11 ${WRKSRC}/usr/share/man
+
+.include <bsd.port.mk>

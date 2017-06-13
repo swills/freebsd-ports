@@ -1,0 +1,22 @@
+# $FreeBSD: head/devel/py-mailcap-fix/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+
+PORTNAME=	mailcap_fix
+PORTVERSION=	1.0.1
+DISTVERSIONPREFIX=	v
+CATEGORIES=	devel python
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+
+MAINTAINER=	dbaio@FreeBSD.org
+COMMENT=	Mailcap module that correctly handles windcard entries
+
+LICENSE=	PD
+LICENSE_FILE=	${WRKSRC}/UNLICENSE
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	michael-lazar
+
+NO_ARCH=	yes
+USES=		python
+USE_PYTHON=	distutils autoplist
+
+.include <bsd.port.mk>

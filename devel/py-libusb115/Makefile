@@ -1,0 +1,14 @@
+# $FreeBSD: head/devel/py-libusb115/Makefile 433292 2017-02-04 09:21:51Z jbeich $
+
+PORTVERSION=	1.5.3
+PKGNAMESUFFIX=	15
+
+MASTERDIR=	${.CURDIR}/../py-libusb1
+DISTINFO_FILE=	${.CURDIR}/distinfo
+PATCHDIR=	${.CURDIR}/files
+
+CONFLICTS_INSTALL=	${PKGNAMEPREFIX}${PORTNAME}
+
+PORTSCOUT=	limit:^1\.5\.
+
+.include "${MASTERDIR}/Makefile"

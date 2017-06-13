@@ -1,0 +1,16 @@
+# $FreeBSD: head/graphics/kdegraphics4-mobipocket/Makefile 439367 2017-04-25 08:20:30Z riggs $
+
+PORTNAME=	kdegraphics-mobipocket
+PORTVERSION=	${KDE4_VERSION}
+PORTREVISION=	2
+CATEGORIES=	graphics kde kde-kde4
+
+MAINTAINER=	kde@FreeBSD.org
+COMMENT=	Mobipocket plugins for Strigi indexing and thumbnails
+
+USES=		cmake:outsource kde:4 tar:xz
+USE_KDE=	kdelibs automoc4 strigi
+USE_QT4=	corelib gui qmake_build moc_build uic_build rcc_build
+USE_LDCONFIG=	yes
+
+.include <bsd.port.mk>

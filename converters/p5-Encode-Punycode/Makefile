@@ -1,0 +1,23 @@
+# Created by: Timur Bakeyev <timur@FreeBSD.org>
+# $FreeBSD: head/converters/p5-Encode-Punycode/Makefile 435423 2017-03-04 19:54:02Z bofh $
+
+PORTNAME=	Encode-Punycode
+PORTVERSION=	1.002
+CATEGORIES=	converters perl5
+MASTER_SITES=	CPAN
+PKGNAMEPREFIX=	p5-
+
+MAINTAINER=	bofh@FreeBSD.org
+COMMENT=	Encode plugin for Punycode
+
+LICENSE=	GPLv1
+
+RUN_DEPENDS=	p5-Net-IDN-Encode>=0:textproc/p5-Net-IDN-Encode
+BUILD_DEPENDS:=	${RUN_DEPENDS} \
+		p5-Test-NoWarnings>=0:devel/p5-Test-NoWarnings
+
+USES=		perl5
+USE_PERL5=	modbuild
+NO_ARCH=	yes
+
+.include <bsd.port.mk>
