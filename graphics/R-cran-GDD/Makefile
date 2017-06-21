@@ -1,9 +1,9 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/graphics/R-cran-GDD/Makefile 428132 2016-12-08 16:07:33Z tijl $
+# $FreeBSD: head/graphics/R-cran-GDD/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	GDD
 DISTVERSION=	0.1-13.1
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	graphics
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
@@ -17,6 +17,6 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-USES=	cran:auto-plist
+USES=		cran:auto-plist,compiles
 
 .include <bsd.port.mk>

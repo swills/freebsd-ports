@@ -1,8 +1,8 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/lang/php-mode.el/Makefile 393296 2015-07-31 10:50:30Z knu $
+# $FreeBSD: head/lang/php-mode.el/Makefile 443863 2017-06-19 08:12:27Z knu $
 
 PORTNAME=	php-mode.el
-PORTVERSION=	1.17.0
+PORTVERSION=	1.18.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	lang elisp
 

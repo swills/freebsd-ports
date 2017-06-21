@@ -1,8 +1,8 @@
 # Created by: Peter Schuller <peter.schuller@infidyne.com>
-# $FreeBSD: head/www/rubygem-jekyll/Makefile 436745 2017-03-22 21:36:45Z sunpoet $
+# $FreeBSD: head/www/rubygem-jekyll/Makefile 443891 2017-06-19 17:26:46Z sunpoet $
 
 PORTNAME=	jekyll
-PORTVERSION=	3.4.3
+PORTVERSION=	3.5.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -17,7 +17,7 @@ RUN_DEPENDS=	rubygem-addressable>=2.4:www/rubygem-addressable \
 		rubygem-jekyll-sass-converter>=1.0:textproc/rubygem-jekyll-sass-converter \
 		rubygem-jekyll-watch>=1.1:www/rubygem-jekyll-watch \
 		rubygem-kramdown>=1.3:textproc/rubygem-kramdown \
-		rubygem-liquid3>=3.0.0:textproc/rubygem-liquid3 \
+		rubygem-liquid>=4.0:textproc/rubygem-liquid \
 		rubygem-mercenary>=0.3.3:devel/rubygem-mercenary \
 		rubygem-pathutil>=0.9:devel/rubygem-pathutil \
 		rubygem-rouge1>=1.7:textproc/rubygem-rouge1 \

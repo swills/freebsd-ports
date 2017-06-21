@@ -1,9 +1,8 @@
 # Created by: tcberner
-# $FreeBSD: head/x11/kf5-plasma-framework/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11/kf5-plasma-framework/Makefile 443783 2017-06-17 18:42:42Z tcberner $
 
 PORTNAME=	plasma-framework
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	x11 kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org
@@ -14,7 +13,7 @@ USE_GL=		egl gl
 USE_KDE=	activities archive auth codecs completion config \
 		configwidgets coreaddons dbusaddons doctools globalaccel \
 		guiaddons i18n iconthemes jobwidgets kio package \
-		notifications service windowsystem xmlgui kdeclarative \
+		notifications service wayland windowsystem xmlgui kdeclarative \
 		widgetsaddons
 USE_QT5=	buildtools_build core dbus gui network qmake_build qml \
 		quick script sql svg widgets x11extras xml

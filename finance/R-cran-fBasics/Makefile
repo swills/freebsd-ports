@@ -1,8 +1,9 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/finance/R-cran-fBasics/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/R-cran-fBasics/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	fBasics
 PORTVERSION=	3011.87
+PORTREVISION=	1
 CATEGORIES=	finance
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
@@ -17,6 +18,6 @@ RUN_DEPENDS=	R-cran-timeDate>0:finance/R-cran-timeDate \
 		R-cran-stabledist>0:math/R-cran-stabledist \
 		R-cran-gss>0:math/R-cran-gss
 
-USES=	cran:auto-plist
+USES=		cran:auto-plist,compiles
 
 .include <bsd.port.mk>

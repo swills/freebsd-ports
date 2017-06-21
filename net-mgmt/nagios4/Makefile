@@ -1,8 +1,8 @@
 # Created by: Blaz Zupan <blaz@si.FreeBSD.org>
-# $FreeBSD: head/net-mgmt/nagios4/Makefile 439938 2017-05-02 10:46:37Z mat $
+# $FreeBSD: head/net-mgmt/nagios4/Makefile 443497 2017-06-13 10:38:23Z mat $
 
 PORTNAME=	nagios
-PORTVERSION=	4.3.1
+PORTVERSION=	4.3.2
 PORTEPOCH=	1
 CATEGORIES=	net-mgmt
 MASTER_SITES=	https://assets.nagios.com/downloads/nagioscore/releases/ \

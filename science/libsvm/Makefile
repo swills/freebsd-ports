@@ -1,13 +1,13 @@
 # Created by: Chia-Hsing Yu <me@davidyu.org>
-# $FreeBSD: head/science/libsvm/Makefile 438344 2017-04-12 09:56:35Z amdmi3 $
+# $FreeBSD: head/science/libsvm/Makefile 443898 2017-06-19 17:27:24Z ultima $
 
 PORTNAME=	libsvm
-PORTVERSION=	3.21
+PORTVERSION=	3.22
 CATEGORIES=	science math
 MASTER_SITES=	http://www.csie.ntu.edu.tw/~cjlin/libsvm/ \
 		http://www.csie.ntu.edu.tw/~cjlin/libsvm/oldfiles/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	amutu@amutu.com
 COMMENT=	Library for Support Vector Machines
 
 LICENSE=	BSD3CLAUSE

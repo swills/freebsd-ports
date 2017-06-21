@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/git-cinnabar/Makefile 442569 2017-06-04 16:08:10Z jbeich $
+# $FreeBSD: head/devel/git-cinnabar/Makefile 443765 2017-06-17 10:29:40Z jbeich $
 
 PORTNAME=	git-cinnabar
-DISTVERSION=	0.5.0b1
+DISTVERSION=	0.5.0b2
 CATEGORIES=	devel
 
 MAINTAINER=	jbeich@FreeBSD.org

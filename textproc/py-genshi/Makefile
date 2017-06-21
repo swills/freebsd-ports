@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@email.it>
-# $FreeBSD: head/textproc/py-genshi/Makefile 414006 2016-04-25 14:14:39Z nivit $
+# $FreeBSD: head/textproc/py-genshi/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	Genshi
 PORTVERSION=	0.7
-PORTREVISION=	1
+PORTREVISION=	2
 #PORTEPOCH=	0
 CATEGORIES=	textproc www python
 MASTER_SITES=	http://ftp.edgewall.com/pub/${PORTNAME:tl}/
@@ -13,8 +13,6 @@ MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Python toolkit for stream-based generation of output for the web
 
 LICENSE=	BSD3CLAUSE
-
-NO_ARCH=	yes
 
 OPTIONS_DEFINE=	BABEL
 BABEL_DESC=	I18n support through the Babel plugin

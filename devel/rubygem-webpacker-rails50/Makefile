@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-webpacker-rails50/Makefile 441646 2017-05-25 02:06:33Z jrm $
+# $FreeBSD: head/devel/rubygem-webpacker-rails50/Makefile 443664 2017-06-15 22:31:03Z jrm $
 
 PORTNAME=	webpacker
-PORTVERSION=	1.2
+PORTVERSION=	2.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50

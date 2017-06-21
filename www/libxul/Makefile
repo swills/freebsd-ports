@@ -1,9 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/www/libxul/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/www/libxul/Makefile 443684 2017-06-16 10:57:14Z cpm $
 
 PORTNAME=	libxul
 DISTVERSION=	45.9.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES?=	www devel
 MASTER_SITES=	MOZILLA/firefox/releases/${DISTVERSION}esr/source \
 		MOZILLA/firefox/candidates/${DISTVERSION}esr-candidates/build3/source
@@ -34,7 +34,9 @@ WRKSRC:=	${WRKDIR}/firefox-${DISTVERSION}esr
 CONFLICTS_INSTALL=	libxul-1.9.*
 
 USE_GL=		gl
-USES=		pathfix tar:xz
+USES=		pathfix shebangfix tar:xz
+SHEBANG_FILES=	xpcom/idl-parser/xpidl/xpidl.py \
+		xpcom/typelib/xpt/tools/xpt.py
 MAKE_ENV=	SKIP_GRE_REGISTRATION=1 mozappdir=${PREFIX}/lib/${MOZILLA}
 LDFLAGS+=	-Wl,-rpath,${PREFIX}/lib/${MOZ_RPATH}
 USE_LDCONFIG=	${PREFIX}/lib/${MOZILLA}

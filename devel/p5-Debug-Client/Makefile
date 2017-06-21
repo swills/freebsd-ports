@@ -1,9 +1,8 @@
 # Created by: ports@c0decafe.net
-# $FreeBSD: head/devel/p5-Debug-Client/Makefile 430780 2017-01-07 10:54:21Z sunpoet $
+# $FreeBSD: head/devel/p5-Debug-Client/Makefile 443954 2017-06-20 13:28:13Z sunpoet $
 
 PORTNAME=	Debug-Client
-PORTVERSION=	0.29
-PORTREVISION=	1
+PORTVERSION=	0.30
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,14 +13,13 @@ COMMENT=	Client for the standard Perl debugger
 LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-PadWalker>=1.96:devel/p5-PadWalker \
-		p5-Term-ReadLine-Gnu>=1.2:devel/p5-Term-ReadLine-Gnu
+BUILD_DEPENDS=	p5-PadWalker>=1.98:devel/p5-PadWalker \
+		p5-Term-ReadLine-Gnu>=1.20:devel/p5-Term-ReadLine-Gnu
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-File-HomeDir>=1:devel/p5-File-HomeDir \
-		p5-Term-ReadLine-Gnu>=1.20:devel/p5-Term-ReadLine-Gnu \
-		p5-Test-CheckDeps>=0.006:devel/p5-Test-CheckDeps \
-		p5-Test-Class>=0.39:devel/p5-Test-Class \
-		p5-Test-Deep>=0.110:devel/p5-Test-Deep \
+		p5-Test-CheckDeps>=0.010:devel/p5-Test-CheckDeps \
+		p5-Test-Class>=0.42:devel/p5-Test-Class \
+		p5-Test-Deep>=0.112:devel/p5-Test-Deep \
 		p5-Test-Requires>=0.07:devel/p5-Test-Requires
 
 NO_ARCH=	yes

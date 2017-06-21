@@ -1,8 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/openttd/Makefile 441455 2017-05-22 13:17:38Z linimon $
+# $FreeBSD: head/games/openttd/Makefile 443592 2017-06-14 17:14:19Z danfe $
 
 PORTNAME=	openttd
-DISTVERSION=	1.7.0
+DISTVERSION=	1.7.1
 CATEGORIES=	games
 MASTER_SITES=	http://ca.binaries.openttd.org/binaries/releases/${DISTVERSION}/ \
 		http://cz.binaries.openttd.org/binaries/releases/${DISTVERSION}/ \

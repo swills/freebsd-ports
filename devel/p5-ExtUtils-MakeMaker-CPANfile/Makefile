@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-ExtUtils-MakeMaker-CPANfile/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-ExtUtils-MakeMaker-CPANfile/Makefile 443835 2017-06-18 17:32:25Z sunpoet $
 
 PORTNAME=	ExtUtils-MakeMaker-CPANfile
-PORTVERSION=	0.07
+PORTVERSION=	0.08
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

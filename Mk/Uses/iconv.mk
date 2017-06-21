@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/iconv.mk 430441 2017-01-03 07:24:49Z rene $
+# $FreeBSD: head/Mk/Uses/iconv.mk 443499 2017-06-13 13:28:49Z tijl $
 #
 # handle dependency on the iconv port
 #
@@ -41,13 +41,12 @@ ICONV_CONFIGURE_BASE=
 ICONV_INCLUDE_PATH=	/usr/include
 ICONV_LIB_PATH=		/usr/lib/libc.so
 
-.if (${OPSYS} == FreeBSD && \
- (${OSVERSION} >= 1100000 && ${OSVERSION} < 1100069)) \
- || exists(${LOCALBASE}/include/iconv.h)
+.if exists(${LOCALBASE}/include/iconv.h)
+# Check that libiconv iconv.h is recent enough for LIBICONV_PLUG to work.
 BUILD_DEPENDS+=	libiconv>=1.14_9:converters/libiconv
-ICONV_INCLUDE_PATH=	${LOCALBASE}/include
 .endif
 
+# LIBICONV_PLUG makes libiconv iconv.h act like libc iconv.h.
 CPPFLAGS+=	-DLIBICONV_PLUG
 CFLAGS+=	-DLIBICONV_PLUG
 CXXFLAGS+=	-DLIBICONV_PLUG

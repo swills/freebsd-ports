@@ -1,18 +1,19 @@
-# $FreeBSD: head/sysutils/ndmpd/Makefile 442972 2017-06-09 07:04:06Z araujo $
+# $FreeBSD: head/sysutils/ndmpd/Makefile 443978 2017-06-20 14:36:49Z lifanov $
 
 PORTNAME=	ndmpd
 PORTVERSION=	1.0
+DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
-MASTER_SITES=	https://bitbucket.org/araujobsd/ndmp-freebsd/get/
 
 MAINTAINER=	lifanov@FreeBSD.org
 COMMENT=	Network Data Management Protocol daemon
 
 LICENSE=	BSD3CLAUSE
 
-WRKSRC=		${WRKDIR}/araujobsd-ndmp-freebsd-daa00f9dc732
+USE_GITHUB=	yes
+GH_ACCOUNT=	lifanov
 
-ONLY_FOR_ARCHS=	i386 amd64
+ONLY_FOR_ARCHS=	amd64 i386
 PLIST_FILES=	sbin/ndmpd etc/ndmpd.conf.example
 
 do-install:

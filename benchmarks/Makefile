@@ -1,4 +1,4 @@
-# $FreeBSD: head/benchmarks/Makefile 440339 2017-05-07 15:04:55Z rene $
+# $FreeBSD: head/benchmarks/Makefile 443638 2017-06-15 20:52:52Z brd $
 #
 
     COMMENT = Benchmarking tools
@@ -24,6 +24,7 @@
     SUBDIR += forkbomb
     SUBDIR += glmark2
     SUBDIR += gtkperf
+    SUBDIR += hey
     SUBDIR += himenobench
     SUBDIR += hpl
     SUBDIR += hs-criterion

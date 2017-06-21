@@ -1,5 +1,5 @@
 # Created by: tcberner
-# $FreeBSD: head/www/kf5-khtml/Makefile 438880 2017-04-19 14:59:40Z tcberner $
+# $FreeBSD: head/www/kf5-khtml/Makefile 443783 2017-06-17 18:42:42Z tcberner $
 
 PORTNAME=	khtml
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -11,7 +11,7 @@ COMMENT=	KF5 KTHML rendering engine
 LIB_DEPENDS=	libgif.so:graphics/giflib \
 		libpng16.so:graphics/png
 
-USES=		cmake:outsource compiler:c++11-lib gettext jpeg kde:5 \
+USES=		cmake:outsource compiler:c++11-lib gettext gperf jpeg kde:5 \
 		tar:xz
 USE_KDE=	archive auth bookmarks codecs completion config \
 		configwidgets coreaddons ecm globalaccel i18n iconthemes \

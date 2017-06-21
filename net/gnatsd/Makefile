@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/gnatsd/Makefile 428656 2016-12-16 08:50:56Z olgeni $
+# $FreeBSD: head/net/gnatsd/Makefile 443948 2017-06-20 10:52:53Z olgeni $
 
 PORTNAME=	gnatsd
 PORTVERSION=	0.9.6
@@ -12,7 +12,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		go
-GO_PKGNAME=	github.com/nats-io/gnatsd
+GO_PKGNAME=	github.com/${GH_ACCOUNT}/${PORTNAME}
 USE_GITHUB=	yes
 GH_ACCOUNT=	nats-io
 

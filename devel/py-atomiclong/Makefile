@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-atomiclong/Makefile 424792 2016-10-27 21:18:32Z jbeich $
+# $FreeBSD: head/devel/py-atomiclong/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	atomiclong
 PORTVERSION=	0.1.1
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +16,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>0:devel/py-cffi
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
 
-NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	autoplist distutils
 

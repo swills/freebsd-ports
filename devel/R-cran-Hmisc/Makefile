@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/R-cran-Hmisc/Makefile 367888 2014-09-10 20:50:31Z gerald $
+# $FreeBSD: head/devel/R-cran-Hmisc/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	Hmisc
 DISTVERSION=	3.10-1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
@@ -11,6 +11,6 @@ COMMENT=	Harrell Miscellaneous functions useful for data analysis
 
 LICENSE=	GPLv2
 
-USES=	cran:auto-plist
+USES=		cran:auto-plist,compiles
 
 .include <bsd.port.mk>

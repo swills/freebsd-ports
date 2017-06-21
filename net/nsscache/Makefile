@@ -1,12 +1,12 @@
 # Created by: Kevin Bowling <k@kev009.com>
-# $FreeBSD: head/net/nsscache/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/nsscache/Makefile 443666 2017-06-16 00:36:59Z swills $
 
 PORTNAME=	nsscache
 PORTVERSION=	0.32
 DISTVERSIONPREFIX=	version/
 CATEGORIES=	net python
 
-MAINTAINER=	k@kev009.com
+MAINTAINER=	kbowling@freebsd.org
 COMMENT=	Python utility to create a local cache of directory services
 
 LICENSE=	GPLv2

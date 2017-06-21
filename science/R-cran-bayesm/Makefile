@@ -1,7 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/R-cran-bayesm/Makefile 415870 2016-05-26 01:29:33Z wen $
+# $FreeBSD: head/science/R-cran-bayesm/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	bayesm
+PORTREVISION=	1
 DISTVERSION=	3.0-2
 CATEGORIES=	science
 DISTNAME=	${PORTNAME}_${DISTVERSION}
@@ -14,6 +15,6 @@ LICENSE_COMB=	dual
 
 RUN_DEPENDS=	R-cran-RcppArmadillo>=0:math/R-cran-RcppArmadillo
 
-USES=		cran:auto-plist
+USES=		cran:auto-plist,compiles
 
 .include <bsd.port.mk>

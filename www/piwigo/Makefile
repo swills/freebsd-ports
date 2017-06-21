@@ -1,9 +1,8 @@
 # Created by: Goran Lowkrantz <glz@hidden-powers.com>
-# $FreeBSD: head/www/piwigo/Makefile 440195 2017-05-05 16:06:00Z sunpoet $
+# $FreeBSD: head/www/piwigo/Makefile 443738 2017-06-17 09:35:35Z joneum $
 
 PORTNAME=	piwigo
-PORTVERSION=	2.8.6
-PORTREVISION=	1
+PORTVERSION=	2.9.0
 CATEGORIES=	www
 MASTER_SITES=	http://piwigo.org/download/dlcounter.php?code=${PORTVERSION}&/
 

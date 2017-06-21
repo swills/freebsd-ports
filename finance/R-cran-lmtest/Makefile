@@ -1,7 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/finance/R-cran-lmtest/Makefile 434273 2017-02-17 07:57:12Z wen $
+# $FreeBSD: head/finance/R-cran-lmtest/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	lmtest
+PORTREVISION=	1
 DISTVERSION=	0.9-35
 CATEGORIES=	finance
 DISTNAME=	${PORTNAME}_${DISTVERSION}
@@ -15,6 +16,6 @@ RUN_DEPENDS=	R-cran-zoo>=0:math/R-cran-zoo \
 		R-cran-strucchange>0:finance/R-cran-strucchange \
 		R-cran-sandwich>=2.2.4:math/R-cran-sandwich
 
-USES=	cran:auto-plist
+USES=		cran:auto-plist,compiles
 
 .include <bsd.port.mk>

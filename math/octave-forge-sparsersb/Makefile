@@ -1,9 +1,8 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-sparsersb/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/math/octave-forge-sparsersb/Makefile 443940 2017-06-20 04:18:11Z stephen $
 
 PORTNAME=	octave-forge-sparsersb
-PORTVERSION=	1.0.1
-PORTREVISION=	2
+PORTVERSION=	1.0.5
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org
@@ -12,7 +11,7 @@ COMMENT=	Octave-forge package ${OCTAVE_PKGNAME}
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKDIR}/${OCTSRC}/COPYING
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/librsb.a:math/librsb
+LIB_DEPENDS=	librsb.so:math/librsb
 
 # OCTSRC is the name of the directory of the package.
 # It is usually ${OCTAVE_PKGNAME} or ${DISTNAME}.

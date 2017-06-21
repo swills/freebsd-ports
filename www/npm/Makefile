@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/npm/Makefile 442307 2017-06-01 19:57:30Z sunpoet $
+# $FreeBSD: head/www/npm/Makefile 443804 2017-06-18 05:51:19Z sunpoet $
 
 PORTNAME=	npm
-PORTVERSION=	4.6.1
+PORTVERSION=	5.0.3
 CATEGORIES=	www
 MASTER_SITES=	LOCAL/sunpoet
 
@@ -14,7 +14,7 @@ LICENSE=	MIT
 RUN_DEPENDS=	gmake:devel/gmake \
 		node>=0.8.0:www/node
 
-CONFLICTS_INSTALL=	npm2 npm3
+CONFLICTS_INSTALL=	npm2 npm3 npm4
 
 NO_ARCH=	yes
 NO_BUILD=	yes

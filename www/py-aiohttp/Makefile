@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/www/py-aiohttp/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-aiohttp/Makefile 443883 2017-06-19 16:53:46Z wg $
 
 PORTNAME=	aiohttp
-PORTVERSION=	0.21.2
+PORTVERSION=	2.1.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,8 +13,13 @@ COMMENT=	HTTP client/server for asyncio
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}chardet>0:textproc/py3-chardet
+BUILD_DEPENDS=	cython:lang/cython
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}chardet>0:textproc/py3-chardet \
+		${PYTHON_PKGNAMEPREFIX}multidict>0:www/py-multidict \
+		${PYTHON_PKGNAMEPREFIX}yarl>0:www/py-yarl \
+		${PYTHON_PKGNAMEPREFIX}async_timeout>0:devel/py-async_timeout
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest \
+		${PYTHON_PKGNAMEPREFIX}pytest-timeout>0:devel/py-pytest-timeout \
 		${PYTHON_PKGNAMEPREFIX}gunicorn>0:www/py-gunicorn
 
 USES=		python:3.4+

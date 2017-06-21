@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/Makefile 437594 2017-04-03 07:14:33Z bapt $
+# $FreeBSD: head/x11-toolkits/Makefile 443772 2017-06-17 13:44:51Z rakuco $
 #
 
     COMMENT = X11 toolkits
@@ -93,6 +93,7 @@
     SUBDIR += kf5-kxmlgui
     SUBDIR += kirigami
     SUBDIR += kirigami2
+    SUBDIR += kproperty
     SUBDIR += lesstif
     SUBDIR += libXaw
     SUBDIR += libXmu

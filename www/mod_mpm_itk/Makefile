@@ -1,14 +1,14 @@
 # Created by: Lukasz Wasikowski <lukasz@wasikowski.net>
-# $FreeBSD: head/www/mod_mpm_itk/Makefile 397590 2015-09-22 20:17:03Z pi $
+# $FreeBSD: head/www/mod_mpm_itk/Makefile 443507 2017-06-13 15:53:01Z ultima $
 
 PORTNAME=	mod_mpm_itk
 PORTVERSION=	2.4.7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	http://mpm-itk.sesse.net/ \
 		http://lukasz.wasikowski.net/files/
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}
-DISTNAME=	mpm-itk-2.4.7-03
+DISTNAME=	mpm-itk-2.4.7-04
 
 MAINTAINER=	lukasz@wasikowski.net
 COMMENT=	This MPM allows you to run each vhost under a separate uid and gid
@@ -19,8 +19,14 @@ USE_APACHE=	24
 GNU_CONFIGURE=	yes
 
 AP_FAST_BUILD=	yes
-SRC_FILE=	mpm_itk.c
+SRC_FILE=	*.c
 
-PLIST_SUB=	SED=${SED}
+SUB_FILES+=	${APMOD_FILE}.sample
+APMOD_FILE=	200_${PORTNAME}.conf
+SUB_LIST+=	APMOD_FILE=${APMOD_FILE}
+
+post-install:
+	@${MKDIR} ${STAGEDIR}${PREFIX}/${APACHEETCDIR}/modules.d
+	${INSTALL_DATA} ${WRKDIR}/${APMOD_FILE}.sample ${STAGEDIR}${PREFIX}/${APACHEETCDIR}/modules.d
 
 .include <bsd.port.mk>

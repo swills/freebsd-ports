@@ -1,8 +1,8 @@
 # Created by: Sergey Matveychuk <sem@FreeBSD.org>
-# $FreeBSD: head/dns/unbound/Makefile 440077 2017-05-04 01:49:21Z ler $
+# $FreeBSD: head/dns/unbound/Makefile 443538 2017-06-13 20:37:06Z adamw $
 
 PORTNAME=	unbound
-PORTVERSION=	1.6.2
+PORTVERSION=	1.6.3
 CATEGORIES=	dns
 MASTER_SITES=	http://unbound.net/downloads/
 

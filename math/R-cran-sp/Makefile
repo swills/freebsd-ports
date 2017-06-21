@@ -1,7 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/R-cran-sp/Makefile 429715 2016-12-28 06:53:01Z wen $
+# $FreeBSD: head/math/R-cran-sp/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	sp
+PORTREVISION=	1
 DISTVERSION=	1.2-4
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
@@ -12,6 +13,6 @@ COMMENT=	R Classes and Methods for Spatial Data
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-USES=	cran:auto-plist
+USES=		cran:auto-plist,compiles
 
 .include <bsd.port.mk>

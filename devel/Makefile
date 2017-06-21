@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 443438 2017-06-12 10:39:27Z sunpoet $
+# $FreeBSD: head/devel/Makefile 443874 2017-06-19 13:43:36Z danfe $
 #
 
     COMMENT = Development utilities
@@ -15,6 +15,7 @@
     SUBDIR += R-cran-R6
     SUBDIR += R-cran-RUnit
     SUBDIR += R-cran-Rcpp
+    SUBDIR += R-cran-bindr
     SUBDIR += R-cran-bit
     SUBDIR += R-cran-bit64
     SUBDIR += R-cran-bitops
@@ -38,6 +39,7 @@
     SUBDIR += R-cran-memoise
     SUBDIR += R-cran-microbenchmark
     SUBDIR += R-cran-pkgmaker
+    SUBDIR += R-cran-plogr
     SUBDIR += R-cran-plyr
     SUBDIR += R-cran-praise
     SUBDIR += R-cran-proto
@@ -2681,6 +2683,7 @@
     SUBDIR += p5-List-Objects-WithUtils
     SUBDIR += p5-List-Permutor
     SUBDIR += p5-List-PowerSet
+    SUBDIR += p5-List-Regexp
     SUBDIR += p5-List-Rotation-Cycle
     SUBDIR += p5-List-SomeUtils
     SUBDIR += p5-List-SomeUtils-XS
@@ -4089,7 +4092,6 @@
     SUBDIR += py-Products.contentmigration
     SUBDIR += py-Products.statusmessages
     SUBDIR += py-Products.validation
-    SUBDIR += py-pydispatcher
     SUBDIR += py-PyExecJS
     SUBDIR += py-PyLD
     SUBDIR += py-RPyC
@@ -4149,6 +4151,7 @@
     SUBDIR += py-aspyct
     SUBDIR += py-astor
     SUBDIR += py-astroid
+    SUBDIR += py-async_timeout
     SUBDIR += py-asyncio
     SUBDIR += py-atomiclong
     SUBDIR += py-atomicwrites
@@ -4174,6 +4177,7 @@
     SUBDIR += py-bluelet
     SUBDIR += py-boto
     SUBDIR += py-botocore
+    SUBDIR += py-bsd
     SUBDIR += py-cached-property
     SUBDIR += py-cachetools
     SUBDIR += py-calendar
@@ -4572,6 +4576,7 @@
     SUBDIR += py-pycodestyle
     SUBDIR += py-pycparser
     SUBDIR += py-pydenticon
+    SUBDIR += py-pydispatcher
     SUBDIR += py-pydocstyle
     SUBDIR += py-pydoop
     SUBDIR += py-pydrive
@@ -5008,6 +5013,7 @@
     SUBDIR += py3-urwid
     SUBDIR += py3-vcversioner
     SUBDIR += py3-virtualenv
+    SUBDIR += py3-voluptuous
     SUBDIR += py3-wcwidth
     SUBDIR += py3-xdg
     SUBDIR += py3-yaml
@@ -5605,6 +5611,7 @@
     SUBDIR += rubygem-shoulda-context
     SUBDIR += rubygem-shoulda-matchers
     SUBDIR += rubygem-sidekiq
+    SUBDIR += rubygem-sidekiq-bulk-rails5
     SUBDIR += rubygem-sidekiq-cron
     SUBDIR += rubygem-sidekiq-cron04
     SUBDIR += rubygem-sidekiq-limit_fetch
@@ -5701,6 +5708,7 @@
     SUBDIR += rubygem-webby
     SUBDIR += rubygem-webpacker-rails5
     SUBDIR += rubygem-webpacker-rails50
+    SUBDIR += rubygem-webpacker1-rails5
     SUBDIR += rubygem-will_paginate
     SUBDIR += rubygem-windows_error
     SUBDIR += rubygem-wmi-lite

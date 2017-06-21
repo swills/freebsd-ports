@@ -1,8 +1,8 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/www/p5-RT-Authen-ExternalAuth/Makefile 419512 2016-08-03 12:44:08Z matthew $
+# $FreeBSD: head/www/p5-RT-Authen-ExternalAuth/Makefile 443662 2017-06-15 22:09:05Z matthew $
 
 PORTNAME=	RT-Authen-ExternalAuth
-DISTVERSION=	0.26
+DISTVERSION=	0.27
 CATEGORIES=	www net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

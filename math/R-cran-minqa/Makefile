@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-minqa/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/R-cran-minqa/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	minqa
 PORTVERSION=	1.2.4
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
@@ -13,6 +14,6 @@ LICENSE=	GPLv2
 
 RUN_DEPENDS=	R-cran-Rcpp>=0.9.10:devel/R-cran-Rcpp
 
-USES=	cran:auto-plist
+USES=		cran:auto-plist,compiles
 
 .include <bsd.port.mk>

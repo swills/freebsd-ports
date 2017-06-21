@@ -1,6 +1,6 @@
 #!/bin/sh
 # MAINTAINER: portmgr@FreeBSD.org
-# $FreeBSD: head/Mk/Scripts/qa.sh 440699 2017-05-12 18:46:53Z rezny $
+# $FreeBSD: head/Mk/Scripts/qa.sh 443845 2017-06-18 18:09:16Z dbn $
 
 if [ -z "${STAGEDIR}" -o -z "${PREFIX}" -o -z "${LOCALBASE}" ]; then
 	echo "STAGEDIR, PREFIX, LOCALBASE required in environment." >&2
@@ -797,9 +797,35 @@ perlcore() {
 	fi
 }
 
+no_arch() {
+	[ -z "$NO_ARCH" ] && return
+	rc=0
+	while read f; do
+		[ -z "$f" ] && continue
+		if [ -n "$NO_ARCH_IGNORE" ]; then
+			skip=
+			for blacklist in $NO_ARCH_IGNORE; do
+				case $f in
+					*$blacklist) skip=1; break;;
+				esac
+			done
+			[ "$skip" ] && continue
+		fi
+		err "'${f#.}' is a architecture specific binary file and you have set NO_ARCH.  Either remove NO_ARCH or add '$(basename $f)' to NO_ARCH_IGNORE."
+		rc=1
+	done <<-EOF
+	$(list_stagedir_elfs  \
+		| file -F $'\1' -f - -N \
+		| grep -aE 'ELF .* [LM]SB .*, .*, version [0-9]+ \(FreeBSD\)' \
+		| cut -f 1 -d $'\1')
+	EOF
+	return $rc
+}
+
+
 checks="shebang symlinks paths stripped desktopfileutils sharedmimeinfo"
 checks="$checks suidfiles libtool libperl prefixvar baselibs terminfo"
-checks="$checks proxydeps sonames perlcore"
+checks="$checks proxydeps sonames perlcore no_arch"
 
 ret=0
 cd ${STAGEDIR}

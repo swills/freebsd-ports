@@ -1,23 +1,22 @@
 # Created by: TAOKA Fumiyoshi <fmysh@iijmio-mail.jp>
-# $FreeBSD: head/japanese/p5-Text-MeCab/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/p5-Text-MeCab/Makefile 443809 2017-06-18 05:51:44Z sunpoet $
 
-PORTNAME=		Text-MeCab
-PORTVERSION=		0.20009
-PORTREVISION=	1
-CATEGORIES=		japanese textproc perl5
-MASTER_SITES=		CPAN
+PORTNAME=	Text-MeCab
+PORTVERSION=	0.20009
+PORTREVISION=	2
+CATEGORIES=	japanese textproc perl5
+MASTER_SITES=	CPAN
 
-MAINTAINER=		fmysh@iijmio-mail.jp
-COMMENT=		Alternate Interface To libmecab
+MAINTAINER=	fmysh@iijmio-mail.jp
+COMMENT=	Alternate Interface To libmecab
 
-BUILD_DEPENDS=		p5-Devel-PPPort>=3.19:devel/p5-Devel-PPPort \
-			p5-ExtUtils-ParseXS>=2.21:devel/p5-ExtUtils-ParseXS \
-			p5-Test-Simple>=0.84:devel/p5-Test-Simple \
-			p5-Test-Requires>0:devel/p5-Test-Requires
-RUN_DEPENDS=		p5-Class-Accessor>0:devel/p5-Class-Accessor \
-			p5-Encode>0:converters/p5-Encode\
-			p5-XSLoader>0.1:devel/p5-XSLoader
-LIB_DEPENDS=		libmecab.so:japanese/mecab
+LICENSE=	ART10 GPLv1
+LICENSE_COMB=	dual
+
+RUN_DEPENDS=	p5-Class-Accessor>0:devel/p5-Class-Accessor \
+		p5-XSLoader>0.1:devel/p5-XSLoader
+LIB_DEPENDS=	libmecab.so:japanese/mecab
+TEST_DEPENDS=	p5-Test-Requires>0:devel/p5-Test-Requires
 
 MAKE_JOBS_UNSAFE=	yes
 

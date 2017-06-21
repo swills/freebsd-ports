@@ -1,5 +1,5 @@
 # Created by: jrhett@netconsonance.com
-# $FreeBSD: head/sysutils/cfengine36/Makefile 429872 2016-12-29 07:11:50Z cy $
+# $FreeBSD: head/sysutils/cfengine36/Makefile 444013 2017-06-21 03:40:18Z cy $
 
 PORTNAME=	cfengine
 PORTVERSION=	3.6.6
@@ -30,11 +30,9 @@ USE_RC_SUBR=	cf-execd cf-serverd cf-monitord
 MAKE_JOBS_UNSAFE=	yes
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
-USES=		autoreconf cpe gmake libtool shebangfix ssl
+USES=		autoreconf cpe gmake libtool localbase shebangfix ssl
 SHEBANG_FILES=	examples/remake_outputs.pl
 CFLAGS+=	-Wno-return-type
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 # EXAMPLESDIR=	${PREFIX}/share/examples/cfengine3
 DOCSDIR=	${PREFIX}/share/doc/cfengine
 CONFIGURE_ARGS=	--docdir=${DOCSDIR} \

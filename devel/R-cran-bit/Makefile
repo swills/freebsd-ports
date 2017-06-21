@@ -1,7 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-bit/Makefile 393764 2015-08-09 07:33:33Z tota $
+# $FreeBSD: head/devel/R-cran-bit/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	bit
+PORTREVISION=	1
 DISTVERSION=	1.1-12
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
@@ -11,6 +12,6 @@ COMMENT=	Class for vectors of 1-bit booleans
 
 LICENSE=	GPLv2
 
-USES=	cran:auto-plist
+USES=		cran:auto-plist,compiles
 
 .include <bsd.port.mk>

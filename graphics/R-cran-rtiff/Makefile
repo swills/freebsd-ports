@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/R-cran-rtiff/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/R-cran-rtiff/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	rtiff
 PORTVERSION=	1.4.5
+PORTREVISION=	1
 CATEGORIES=	graphics
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
@@ -14,7 +15,7 @@ LICENSE=	GPLv3
 LIB_DEPENDS=	libtiff.so:graphics/tiff
 RUN_DEPENDS=	R-cran-pixmap>0:graphics/R-cran-pixmap
 
-USES=	cran:auto-plist
+USES=		cran:auto-plist,compiles
 
 LDFLAGS+=	-L${LOCALBASE}/lib
 

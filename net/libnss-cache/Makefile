@@ -1,12 +1,12 @@
 # Created by: Kevin Bowling <k@kev009.com>
-# $FreeBSD: head/net/libnss-cache/Makefile 416242 2016-06-01 13:15:36Z mat $
+# $FreeBSD: head/net/libnss-cache/Makefile 443666 2017-06-16 00:36:59Z swills $
 
 PORTNAME=	libnss-cache
 PORTVERSION=	0.15
 DISTVERSIONPREFIX=	version/
 CATEGORIES=	net
 
-MAINTAINER=	k@kev009.com
+MAINTAINER=	kbowling@freebsd.org
 COMMENT=	NSS module for directory services using an indexed, local disk cache
 
 LICENSE=	LGPL3

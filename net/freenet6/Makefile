@@ -1,9 +1,9 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/net/freenet6/Makefile 426997 2016-11-24 09:33:18Z amdmi3 $
+# $FreeBSD: head/net/freenet6/Makefile 443692 2017-06-16 13:49:28Z kevlo $
 
 PORTNAME=	freenet6
 DISTVERSION=	6_0_1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net ipv6
 MASTER_SITES=	http://go6.net/4105/file.asp?file_id=166&
 DISTNAME=	tspc-${PORTVERSION}-src

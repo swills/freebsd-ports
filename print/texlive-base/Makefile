@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/texlive-base/Makefile 441309 2017-05-20 12:02:07Z linimon $
+# $FreeBSD: head/print/texlive-base/Makefile 443786 2017-06-17 20:10:26Z jhibbits $
 
 PORTNAME=	texlive
 PORTVERSION=	20150521
@@ -26,12 +26,11 @@ LIB_DEPENDS=	libicuio.so:devel/icu \
 		libpoppler.so:graphics/poppler \
 		libpotrace.so:graphics/libpotrace
 
-BROKEN_powerpc64=	fails to configure: checking requested system `icu' library... failed
-
 CONFLICTS_INSTALL=	texlive-texmf-201[234]*
 
 USE_TEX=	web2c kpathsea ptexenc tlmgr texhash-bootstrap
-USES=		ghostscript pkgconfig perl5 python:run shebangfix tar:xz
+USES=		compiler:c++11-lib ghostscript pkgconfig perl5 \
+		python:run shebangfix tar:xz
 USE_PERL5=	run
 # during build phase gnu configure is run a lot
 MAKE_ENV+=	CONFIG_SITE=${CONFIG_SITE}

@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-caTools/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/R-cran-caTools/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	caTools
 PORTVERSION=	1.17.1
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
@@ -13,6 +14,6 @@ LICENSE=	GPLv3
 
 RUN_DEPENDS=	R-cran-bitops>0:devel/R-cran-bitops
 
-USES=	cran:auto-plist
+USES=		cran:auto-plist,compiles
 
 .include <bsd.port.mk>

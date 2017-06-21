@@ -1,5 +1,5 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/devel/libsigc++20/Makefile 440288 2017-05-06 20:13:10Z kwm $
+# $FreeBSD: head/devel/libsigc++20/Makefile 443577 2017-06-14 15:48:53Z kwm $
 #   $MCom: ports/trunk/devel/libsigc++20/Makefile 19952 2014-10-15 08:11:00Z gusi $
 
 PORTNAME=	libsigc++
@@ -12,6 +12,8 @@ COMMENT=	Callback Framework for C++
 
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+PORTSCOUT=	limit:^2\.10\.
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

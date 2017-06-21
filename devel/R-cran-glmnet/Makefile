@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/R-cran-glmnet/Makefile 367888 2014-09-10 20:50:31Z gerald $
+# $FreeBSD: head/devel/R-cran-glmnet/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	glmnet
 DISTVERSION=	1.8-5
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
@@ -11,6 +11,6 @@ COMMENT=	Lasso and elastic-net regularized generalized linear models
 
 LICENSE=	GPLv2
 
-USES=	cran:auto-plist
+USES=		cran:auto-plist,compiles
 
 .include <bsd.port.mk>

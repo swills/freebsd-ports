@@ -1,5 +1,5 @@
 # Created by: Stefan Esser <se@FreeBSD.org>
-# $FreeBSD: head/games/gogrepo/Makefile 440289 2017-05-06 20:33:40Z se $
+# $FreeBSD: head/games/gogrepo/Makefile 443558 2017-06-14 09:01:26Z amdmi3 $
 
 PORTNAME=	gogrepo
 PORTVERSION=	0.3a
@@ -30,7 +30,9 @@ PORTDOCS=	README.md
 
 do-install:
 		${INSTALL_SCRIPT} ${WRKSRC}/gogrepo.py ${STAGEDIR}${PREFIX}/bin/gogrepo
-		${MKDIR} ${STAGEDIR}${DOCSDIR}
+
+do-install-DOCS-on:
+		@${MKDIR} ${STAGEDIR}${DOCSDIR}
 		${INSTALL_DATA} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}/
 
 .include <bsd.port.mk>

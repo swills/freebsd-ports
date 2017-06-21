@@ -1,8 +1,8 @@
 # Created by: Chie Taguchi <taguchi.ch@gmail.com>
-# $FreeBSD: head/security/masscan/Makefile 397886 2015-09-25 21:38:54Z linimon $
+# $FreeBSD: head/security/masscan/Makefile 443915 2017-06-19 23:24:55Z dbaio $
 
 PORTNAME=	masscan
-PORTVERSION=	1.0.3
+PORTVERSION=	1.0.4
 CATEGORIES=	security
 
 MAINTAINER=	taguchi.ch@gmail.com
@@ -21,9 +21,12 @@ MAKE_ARGS=	SYS=freebsd CC="${CC}" CFLAGS="${CFLAGS}"
 
 PLIST_FILES=	bin/masscan man/man8/masscan.8.gz
 
-pre-build:
-	@${REINPLACE_CMD} -e "s|SYS :=|SYS ?=|"\
-	-e "s|describe --tags|describe --tags 2> /dev/null|" ${WRKSRC}/Makefile
+.include <bsd.port.pre.mk>
+
+.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100000
+BUILD_DEPENDS+=	clang38:lang/clang38
+CC=	clang38
+.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/masscan ${STAGEDIR}${PREFIX}/bin
@@ -32,4 +35,4 @@ do-install:
 regression-test: build
 	${WRKSRC}/bin/masscan --selftest
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

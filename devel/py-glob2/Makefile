@@ -1,9 +1,8 @@
 # Created by: Fukang Chen <loader@FreeBSD.org>
-# $FreeBSD: head/devel/py-glob2/Makefile 396502 2015-09-09 14:14:40Z loader $
+# $FreeBSD: head/devel/py-glob2/Makefile 444015 2017-06-21 07:18:02Z loader $
 
 PORTNAME=	glob2
-PORTVERSION=	0.4.1
-PORTREVISION=	1
+PORTVERSION=	0.5
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,8 +11,15 @@ MAINTAINER=	loader@FreeBSD.org
 COMMENT=	Glob that captures patterns and supports recursive wildcards
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		python
-USE_PYTHON=	distutils autoplist
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
+
+NO_ARCH=	yes
+USES=		python:2.7+
+USE_PYTHON=	distutils concurrent autoplist
+
+do-test:
+	@(cd ${TEST_WRKSRC} && ${SETENV} ${TEST_ENV} ${PYTHON_CMD} -m pytest test.py)
 
 .include <bsd.port.mk>

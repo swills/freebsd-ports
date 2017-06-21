@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-plyr/Makefile 427552 2016-12-02 11:58:21Z mat $
+# $FreeBSD: head/devel/R-cran-plyr/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	plyr
 PORTVERSION=	1.8.4
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
@@ -17,7 +18,7 @@ LICENSE_PERMS_HW=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 RUN_DEPENDS=	R-cran-Rcpp>=0.11.0:devel/R-cran-Rcpp
 
-USES=	cran:auto-plist
+USES=		cran:auto-plist,compiles
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/R/library/plyr/libs/plyr.so

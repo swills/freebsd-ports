@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/Makefile 439826 2017-04-30 15:47:51Z ler $
+# $FreeBSD: head/japanese/Makefile 443772 2017-06-17 13:44:51Z rakuco $
 #
 
     COMMENT = Japanese support
@@ -24,7 +24,6 @@
     SUBDIR += bookview
     SUBDIR += bugzilla44
     SUBDIR += bugzilla50
-    SUBDIR += calligra-l10n
     SUBDIR += canna-lib
     SUBDIR += canna-server
     SUBDIR += cannadic

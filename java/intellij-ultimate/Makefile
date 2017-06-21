@@ -1,5 +1,5 @@
 # Created by: Andrey Cherkashin <andoriyu@gmail.com>
-# $FreeBSD: head/java/intellij-ultimate/Makefile 424310 2016-10-20 08:37:41Z robak $
+# $FreeBSD: head/java/intellij-ultimate/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 # Based on the java/intellij port
 
@@ -25,6 +25,8 @@ USE_JAVA=	yes
 JAVA_VERSION=	1.8+
 
 NO_ARCH=	yes
+NO_ARCH_IGNORE=	libnative_auth.so libnative_console.so libnative_filesystem.so \
+		libnative_misc.so libnative_synchronization.so
 NO_BUILD=	yes
 USE_LDCONFIG=	${IDEA_HOME}/plugins/tfsIntegration/lib/native/freebsd/x86_64/
 USE_LDCONFIG32=	${IDEA_HOME}/plugins/tfsIntegration/lib/native/freebsd/x86/

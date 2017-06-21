@@ -1,4 +1,4 @@
-# $FreeBSD: head/chinese/Makefile 440339 2017-05-07 15:04:55Z rene $
+# $FreeBSD: head/chinese/Makefile 443772 2017-06-17 13:44:51Z rakuco $
 #
 
     COMMENT = Chinese support
@@ -19,8 +19,6 @@
     SUBDIR += bsdconv-opencc
     SUBDIR += bug5
     SUBDIR += c2t
-    SUBDIR += calligra-l10n-zh_CN
-    SUBDIR += calligra-l10n-zh_TW
     SUBDIR += cconv
     SUBDIR += celvis
     SUBDIR += chiconv

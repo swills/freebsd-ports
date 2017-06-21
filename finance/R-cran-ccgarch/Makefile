@@ -1,9 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/finance/R-cran-ccgarch/Makefile 367888 2014-09-10 20:50:31Z gerald $
+# $FreeBSD: head/finance/R-cran-ccgarch/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	ccgarch
 DISTVERSION=	0.2.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	finance
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
@@ -13,6 +13,6 @@ COMMENT=	Conditional Correlation GARCH models
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-USES=	cran:auto-plist
+USES=		cran:auto-plist,compiles
 
 .include <bsd.port.mk>

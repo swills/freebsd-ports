@@ -1,4 +1,4 @@
-# $FreeBSD: head/german/Makefile 434474 2017-02-20 16:39:05Z lme $
+# $FreeBSD: head/german/Makefile 443772 2017-06-17 13:44:51Z rakuco $
 #
 
     COMMENT = German support
@@ -7,7 +7,6 @@
     SUBDIR += alt-aspell
     SUBDIR += aspell
     SUBDIR += bugzilla44
-    SUBDIR += calligra-l10n
     SUBDIR += dict
     SUBDIR += ding
     SUBDIR += dtaus

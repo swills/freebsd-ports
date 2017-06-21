@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pytest/Makefile 443077 2017-06-10 09:28:47Z sunpoet $
+# $FreeBSD: head/devel/py-pytest/Makefile 443532 2017-06-13 19:54:18Z jbeich $
 
 PORTNAME=	pytest
 PORTVERSION=	3.1.2
@@ -12,7 +12,7 @@ COMMENT=	Simple powerful testing with Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=0:devel/py-setuptools_scm
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=0:devel/py${SLAVE_SUFFIX}-setuptools_scm
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}py>=1.4.33:devel/py${SLAVE_SUFFIX}-py
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}hypothesis>0:devel/py-hypothesis \
 		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock \

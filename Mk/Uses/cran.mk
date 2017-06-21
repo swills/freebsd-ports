@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/cran.mk 424635 2016-10-25 17:04:38Z jrm $
+# $FreeBSD: head/Mk/Uses/cran.mk 443845 2017-06-18 18:09:16Z dbn $
 #
 # Use the Comprehensive R Archive Network 
 #
@@ -71,6 +71,8 @@ cran-strip:
 	${FIND} ${STAGEDIR}${PREFIX}/${R_MOD_DIR} -name '*.so' -exec ${STRIP_CMD} {} +
 .include "${PORTSDIR}/math/R/compiler.mk"
 .include "${USESDIR}/fortran.mk"
+.else
+NO_ARCH=	yes
 .endif
 
 .endif #_INCLUDE_USES_CRAN_MK

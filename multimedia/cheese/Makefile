@@ -1,9 +1,9 @@
 # Created by: FreeBSD GNOME Team <gnome@freebsd.org>
-# $FreeBSD: head/multimedia/cheese/Makefile 441071 2017-05-17 09:45:20Z kwm $
+# $FreeBSD: head/multimedia/cheese/Makefile 443492 2017-06-13 08:14:34Z kwm $
 
 PORTNAME=	cheese
 PORTVERSION=	3.18.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

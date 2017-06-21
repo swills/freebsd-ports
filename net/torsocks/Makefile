@@ -1,8 +1,8 @@
 # Created by: Andrei Lavreniyuk <andy.lavr@gmail.com>
-# $FreeBSD: head/net/torsocks/Makefile 404743 2015-12-29 14:30:46Z mat $
+# $FreeBSD: head/net/torsocks/Makefile 443560 2017-06-14 09:48:00Z ehaupt $
 
 PORTNAME=	torsocks
-PORTVERSION=	2.1.0
+PORTVERSION=	2.2.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net security
 

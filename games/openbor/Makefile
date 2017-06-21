@@ -1,10 +1,10 @@
-# $FreeBSD: head/games/openbor/Makefile 440523 2017-05-10 02:32:29Z jbeich $
+# $FreeBSD: head/games/openbor/Makefile 443544 2017-06-13 22:48:58Z jbeich $
 
 PORTNAME=	openbor
 # Hint: svn revision is git rev-list --count ${GH_TAGNAME}
-PORTVERSION?=	4505
+PORTVERSION?=	4515
 .ifndef PKGNAMESUFFIX
-PORTREVISION=	1
+PORTREVISION=	0
 .endif
 CATEGORIES=	games
 
@@ -27,7 +27,7 @@ LIB_DEPENDS+=	libvpx.so:multimedia/libvpx
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	DCurrent
-GH_TAGNAME?=	c0037ec
+GH_TAGNAME?=	12fc70c
 
 USES+=		gmake pkgconfig
 .if ${PORTVERSION} < 4433

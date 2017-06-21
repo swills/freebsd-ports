@@ -1,12 +1,11 @@
 # Created by: Rainer Hurling <rhurlin@gwdg.de>
-# $FreeBSD: head/math/saga/Makefile 438490 2017-04-14 05:30:25Z jbeich $
+# $FreeBSD: head/math/saga/Makefile 444006 2017-06-21 01:58:26Z wen $
 
 PORTNAME=	saga
-PORTVERSION=	3.0.0
-PORTREVISION=	3
+PORTVERSION=	4.1.0
 CATEGORIES=	math
 MASTER_SITES=	SF/saga-gis/SAGA%20-%20${PORTVERSION:C/\.[[:digit:]]\.[[:digit:]]*$//}/SAGA%20-%20${PORTVERSION}
-DISTNAME=	${PORTNAME}_${PORTVERSION}
+#DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	rhurlin@gwdg.de
 COMMENT=	System for Automated Geoscientific Analyses

@@ -1,18 +1,18 @@
 # Created by: Michael L. Hostbaek <mich@freebsdcluster.org>
-# $FreeBSD: head/net/wping/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/wping/Makefile 443762 2017-06-17 10:02:42Z sunpoet $
 
 PORTNAME=	wping
 PORTVERSION=	0.1a
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net
 MASTER_SITES=	http://freebsdcluster.org/~mich/software/
 
 MAINTAINER=	mich@FreeBSD.org
 COMMENT=	Web-based graphical ping log
 
-RUN_DEPENDS=	p5-GD>=0:graphics/p5-GD \
-		p5-Time-HiRes>=0:devel/p5-Time-HiRes
+RUN_DEPENDS=	p5-GD>=0:graphics/p5-GD
 
+NO_ARCH=	yes
 USES=		perl5 tar:bzip2 shebangfix
 SHEBANG_FILES=	wping.pl
 NO_BUILD=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/ftp/Makefile 437072 2017-03-27 18:28:57Z rene $
+# $FreeBSD: head/ftp/Makefile 443511 2017-06-13 16:39:43Z markj $
 #
 
     COMMENT = FTP client and server utilities
@@ -47,6 +47,7 @@
     SUBDIR += ncftp3
     SUBDIR += ncftpd
     SUBDIR += net2ftp
+    SUBDIR += netdumpd
     SUBDIR += ocaml-ocurl
     SUBDIR += oftpd
     SUBDIR += omi

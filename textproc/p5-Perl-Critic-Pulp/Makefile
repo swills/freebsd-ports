@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/p5-Perl-Critic-Pulp/Makefile 438721 2017-04-17 16:06:21Z sunpoet $
+# $FreeBSD: head/textproc/p5-Perl-Critic-Pulp/Makefile 443840 2017-06-18 17:32:52Z sunpoet $
 
 PORTNAME=	Perl-Critic-Pulp
-PORTVERSION=	93
+PORTVERSION=	94
 CATEGORIES=	textproc devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

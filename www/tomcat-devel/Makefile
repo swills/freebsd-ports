@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/www/tomcat-devel/Makefile 440277 2017-05-06 15:28:11Z ler $
+# $FreeBSD: head/www/tomcat-devel/Makefile 444005 2017-06-21 01:44:06Z ler $
 
 PORTNAME=	tomcat
-PORTVERSION=	9.0.0.M20
+PORTVERSION=	9.0.0.M21
 CATEGORIES=	www java
 MASTER_SITES=	APACHE/${PORTNAME}/${PORTNAME}-${PORTVERSION:C/([0-9])(.*)/\1/}/v${PORTVERSION}/bin
 PKGNAMESUFFIX=	-devel
@@ -23,7 +23,7 @@ JAVA_VERSION=	1.8+
 NO_BUILD=	yes
 NO_ARCH=	yes
 
-USE_RC_SUBR=	${PKGBASE}
+USE_RC_SUBR=	${PKGBASE:C/-/_/}
 
 TOMCAT_SUBDIR?=	${DISTNAME:C/([0-9])\.([0-9])(.*)/\1.\2/}
 TOMCAT_HOME=	${PREFIX}/${TOMCAT_SUBDIR}

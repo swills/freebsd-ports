@@ -1,8 +1,8 @@
 # Created by: Yoshiaki Uchikawa
-# $FreeBSD: head/audio/mikmod/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/mikmod/Makefile 443559 2017-06-14 09:40:40Z ehaupt $
 
 PORTNAME=	mikmod
-PORTVERSION=	3.2.7
+PORTVERSION=	3.2.8
 CATEGORIES=	audio
 MASTER_SITES=	SF \
 		LOCAL/ehaupt

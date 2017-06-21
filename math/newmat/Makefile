@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/newmat/Makefile 374492 2014-12-10 22:29:14Z gahr $
+# $FreeBSD: head/math/newmat/Makefile 443854 2017-06-19 01:09:20Z stephen $
 
 PORTNAME=	newmat
 PORTVERSION=	1.1
@@ -8,7 +8,7 @@ CATEGORIES=	math
 MASTER_SITES=	http://www.robertnz.net/ftp/
 DISTNAME=	${PORTNAME}${PORTVERSION:S/.//}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	stephen@FreeBSD.org
 COMMENT=	C++ matrix library
 
 NO_WRKSUBDIR=	yes

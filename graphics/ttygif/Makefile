@@ -1,8 +1,7 @@
-# $FreeBSD: head/graphics/ttygif/Makefile 427107 2016-11-25 11:37:35Z amdmi3 $
+# $FreeBSD: head/graphics/ttygif/Makefile 443873 2017-06-19 13:42:21Z olivier $
 
 PORTNAME=	ttygif
-PORTVERSION=	1.2.1
-PORTREVISION=	1
+PORTVERSION=	1.4.0
 CATEGORIES=	graphics
 
 MAINTAINER=	olivier@FreeBSD.org

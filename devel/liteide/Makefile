@@ -1,8 +1,8 @@
 # Created by: Dmitri Goutnik <dg@syrec.org>
-# $FreeBSD: head/devel/liteide/Makefile 435465 2017-03-05 10:24:00Z olivierd $
+# $FreeBSD: head/devel/liteide/Makefile 443846 2017-06-18 18:50:44Z ultima $
 
 PORTNAME=	liteide
-PORTVERSION=	31
+PORTVERSION=	32
 DISTVERSIONPREFIX=	x
 CATEGORIES=	devel editors
 
@@ -28,7 +28,7 @@ ICON_SIZES=	16 24 32 48 64 128
 OPTIONS_DEFINE=		DEBUG DOCS
 OPTIONS_SINGLE=		QT
 OPTIONS_SINGLE_QT=	QT4 QT5
-OPTIONS_DEFAULT=	QT4
+OPTIONS_DEFAULT=	QT5
 OPTIONS_SUB=		yes
 
 DEBUG_CONFIGURE_ENABLE=	debug

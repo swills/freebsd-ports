@@ -1,10 +1,9 @@
-# $FreeBSD: head/ukrainian/Makefile 341681 2014-01-29 07:10:12Z bapt $
+# $FreeBSD: head/ukrainian/Makefile 443772 2017-06-17 13:44:51Z rakuco $
 #
 
     COMMENT = Ukrainian support
 
     SUBDIR += aspell
-    SUBDIR += calligra-l10n
     SUBDIR += emacs-koi8u
     SUBDIR += gd
     SUBDIR += hunspell

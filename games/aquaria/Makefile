@@ -1,9 +1,10 @@
-# $FreeBSD: head/games/aquaria/Makefile 424136 2016-10-17 17:58:32Z jbeich $
+# $FreeBSD: head/games/aquaria/Makefile 443975 2017-06-20 13:59:08Z sunpoet $
 
 PORTNAME=	aquaria
 DISTVERSIONPREFIX=	OSE-v
 DISTVERSION=	1.002-22
 DISTVERSIONSUFFIX=	-g84366ad
+PORTREVISION=	1
 CATEGORIES=	games
 
 MAINTAINER=	jbeich@FreeBSD.org

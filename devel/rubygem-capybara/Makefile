@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-capybara/Makefile 443081 2017-06-10 09:29:09Z sunpoet $
+# $FreeBSD: head/devel/rubygem-capybara/Makefile 443697 2017-06-16 13:56:59Z sunpoet $
 
 PORTNAME=	capybara
-PORTVERSION=	2.14.2
+PORTVERSION=	2.14.3
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

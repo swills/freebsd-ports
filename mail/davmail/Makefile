@@ -1,8 +1,9 @@
 # Created by: John Prather
-# $FreeBSD: head/mail/davmail/Makefile 440143 2017-05-05 03:22:05Z miwi $
+# $FreeBSD: head/mail/davmail/Makefile 443886 2017-06-19 17:25:57Z rodrigo $
 
 PORTNAME=	davmail
 PORTVERSION=	4.8.0
+PORTREVISION=	1
 CATEGORIES=	mail java
 MASTER_SITES=	SF/davmail/davmail/${PORTVERSION}
 DISTNAME=	${PORTNAME}-src-${PORTVERSION}-${REVISION}
@@ -30,7 +31,7 @@ GROUPS=		davmail
 DATADIR=	${JAVASHAREDIR}/${PORTNAME}
 
 USE_RC_SUBR=	davmail
-SUB_FILES=	davmail.sh
+SUB_FILES=	davmail.sh pkg-message
 
 post-patch:
 	@${REINPLACE_CMD} -e 's#exec=\"davmail\"#exec=\"${PREFIX}/bin/davmail\"#' \

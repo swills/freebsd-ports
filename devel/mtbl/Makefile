@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/mtbl/Makefile 434654 2017-02-23 01:54:12Z truckman $
+# $FreeBSD: head/devel/mtbl/Makefile 443597 2017-06-14 19:00:52Z truckman $
 
 PORTNAME=	mtbl
-PORTVERSION=	1.0.0
+PORTVERSION=	1.1.0
 CATEGORIES=	devel
 MASTER_SITES=	FARSIGHT LOCAL/truckman/farsight
 

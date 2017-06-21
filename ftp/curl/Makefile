@@ -1,14 +1,14 @@
 # Created by: Neil Blakey-Milner <nbm@rucus.ru.ac.za>
-# $FreeBSD: head/ftp/curl/Makefile 438953 2017-04-20 14:25:30Z sunpoet $
+# $FreeBSD: head/ftp/curl/Makefile 443661 2017-06-15 21:59:12Z sunpoet $
 
 PORTNAME=	curl
-PORTVERSION=	7.54.0
+PORTVERSION=	7.54.1
 CATEGORIES=	ftp net www
 MASTER_SITES=	http://curl.haxx.se/download/ \
 		LOCAL/sunpoet
 
 MAINTAINER=	sunpoet@FreeBSD.org
-COMMENT=	Non-interactive tool to get files from FTP, GOPHER, HTTP(S) servers
+COMMENT=	Command line tool and library for transferring data with URLs
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING

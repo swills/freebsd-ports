@@ -1,9 +1,8 @@
 # Created by: tcberner
-# $FreeBSD: head/x11/kf5-kdelibs4support/Makefile 438931 2017-04-20 08:11:27Z tcberner $
+# $FreeBSD: head/x11/kf5-kdelibs4support/Makefile 443783 2017-06-17 18:42:42Z tcberner $
 
 PORTNAME=	kdelibs4support
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	x11 kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

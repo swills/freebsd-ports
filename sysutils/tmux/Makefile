@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/sysutils/tmux/Makefile 439538 2017-04-27 10:42:15Z garga $
+# $FreeBSD: head/sysutils/tmux/Makefile 443566 2017-06-14 12:20:36Z mat $
 
 PORTNAME=	tmux
-PORTVERSION=	2.4
+PORTVERSION=	2.5
 CATEGORIES=	sysutils
 MASTER_SITES=	https://github.com/tmux/tmux/releases/download/${PORTVERSION}/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}

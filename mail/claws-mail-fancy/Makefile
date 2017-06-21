@@ -1,8 +1,8 @@
 # Created by: Pawel Pekala <c0rn@o2.pl>
-# $FreeBSD: head/mail/claws-mail-fancy/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/claws-mail-fancy/Makefile 443720 2017-06-16 18:46:44Z pawel $
 
 PORTNAME=	fancy
-PORTREVISION=	0
+PORTREVISION=	1
 
 COMMENT=	Webkit based HTML renderer plugin for Claws Mail
 

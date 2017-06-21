@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/x11-themes/gtk-aluminumalloy-smog-theme/Makefile 347726 2014-03-10 09:17:29Z danfe $
+# $FreeBSD: head/x11-themes/gtk-aluminumalloy-smog-theme/Makefile 443503 2017-06-13 14:40:17Z mat $
 
 PORTREVISION=	5
 
-FLAVOR=		smog
+THEME_FLAVOR=	smog
 
 MASTERDIR=	${.CURDIR}/../gtk-aluminumalloy-volcanic-theme
 

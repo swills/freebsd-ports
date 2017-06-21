@@ -1,9 +1,8 @@
 # Created by: Stephen Montgomery-Smith <stephen@FreeBSD.org>
-# $FreeBSD: head/math/octave-forge-ncarray/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/math/octave-forge-ncarray/Makefile 443930 2017-06-20 03:33:13Z stephen $
 
 PORTNAME=	octave-forge-ncarray
-PORTVERSION=	1.0.3
-PORTREVISION=	4
+PORTVERSION=	1.0.4
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org

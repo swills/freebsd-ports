@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/osiris/Makefile 443481 2017-06-12 22:25:44Z sunpoet $
+# $FreeBSD: head/security/osiris/Makefile 443587 2017-06-14 16:10:46Z sunpoet $
 
 PORTNAME=	osiris
 PORTVERSION=	4.2.3
@@ -11,7 +11,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Shmoo client/server host integrity checker
 
 GNU_CONFIGURE=	yes
-USES=		ssl
+USES=		readline ssl
 
 OPTIONS_DEFINE=	OSIRISMD OSIRISD PRINTDB CLI
 OPTIONS_DEFAULT=	OSIRISD
@@ -21,10 +21,6 @@ OSIRISMD_DESC=	Management daemon
 OSIRISD_DESC=	Scan agent
 PRINTDB_DESC=	Database print tool
 CLI_DESC=	Management CLI
-
-.if exists(${LOCALBASE}/lib/libreadline.so.6)
-USES+=		readline:port
-.endif
 
 post-build-PRINTDB-on:
 	cd ${WRKSRC}/src/tools && ${MAKE_CMD}

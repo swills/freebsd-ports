@@ -1,5 +1,5 @@
 # Created by: Alberto Villa <avilla@FreeBSD.org>
-# $FreeBSD: head/net-im/telepathy-qt4/Makefile 423337 2016-10-05 12:33:17Z tcberner $
+# $FreeBSD: head/net-im/telepathy-qt4/Makefile 443941 2017-06-20 04:41:27Z fluffy $
 
 PORTNAME=	telepathy-qt
 PORTVERSION=	0.9.7
@@ -22,7 +22,7 @@ OPTIONS_DEFINE=	DOCS
 
 USE_GNOME=	glib20 libxslt:build
 USE_GSTREAMER=	yes
-USES=		cmake:outsource gettext pathfix pkgconfig python:build
+USES=		cmake:outsource gettext pathfix pkgconfig python:2,build
 CMAKE_ARGS=	-DENABLE_EXAMPLES:BOOL=False \
 		-DENABLE_FARSIGHT:BOOL=False \
 		-DENABLE_FARSTREAM:BOOL=True \

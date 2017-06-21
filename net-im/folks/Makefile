@@ -1,9 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/net-im/folks/Makefile 441071 2017-05-17 09:45:20Z kwm $
+# $FreeBSD: head/net-im/folks/Makefile 443492 2017-06-13 08:14:34Z kwm $
 
 PORTNAME=	folks
 PORTVERSION=	0.11.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-im
 MASTER_SITES=	GNOME
 

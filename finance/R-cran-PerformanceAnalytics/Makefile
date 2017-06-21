@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/finance/R-cran-PerformanceAnalytics/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/R-cran-PerformanceAnalytics/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	PerformanceAnalytics
 PORTVERSION=	1.4.3541
+PORTREVISION=	1
 CATEGORIES=	finance
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
@@ -15,6 +16,6 @@ LICENSE_COMB=	dual
 RUN_DEPENDS=	R-cran-zoo>0:math/R-cran-zoo \
 		R-cran-xts>=0.9:math/R-cran-xts
 
-USES=	cran:auto-plist
+USES=		cran:auto-plist,compiles
 
 .include <bsd.port.mk>

@@ -1,12 +1,9 @@
 # Created by: Andreas Sommer <andreas.sommer87@googlemail.com>
-# $FreeBSD: head/devel/hhdate/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/devel/hhdate/Makefile 443897 2017-06-19 17:27:16Z sunpoet $
 
 PORTNAME=	hhdate
-# New versions aren't released often, so using the number of commits since
-# last release as a.b.c.NUMCOMMITS (see `git describe --tags ${GH_TAGNAME}`).
-# 35 = commit a little after 2.1.0 to have LICENSE file and fixed unit tests.
-PORTVERSION=	2.1.0.35
-PORTREVISION=	1
+PORTVERSION=	2.2
+DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
 MAINTAINER=	andreas.sommer87@googlemail.com
@@ -18,7 +15,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 USE_GITHUB=	yes
 GH_ACCOUNT=	HowardHinnant
 GH_PROJECT=	date
-GH_TAGNAME=	3ab6510cab764c1a20926b1e8442af4c9e8a16b2
 
 NO_ARCH=	yes
 NO_BUILD=	yes

@@ -1,5 +1,5 @@
 # Created by: SADA Kenji <sada@FreeBSD.org>
-# $FreeBSD: head/devel/cvsweb/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/devel/cvsweb/Makefile 443677 2017-06-16 09:19:34Z amdmi3 $
 
 PORTNAME=	cvsweb
 PORTVERSION=	2.0.6
@@ -68,6 +68,8 @@ do-install:
 .endfor
 	@${MKDIR} ${STAGEDIR}${PREFIX}/${ICONSDIR}/cvsweb
 	${INSTALL_DATA} ${WRKSRC}/icons/* ${STAGEDIR}${PREFIX}/${ICONSDIR}/cvsweb/
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for f in ChangeLog INSTALL README README.FreeBSD TODO TODO.FreeBSD
 	${INSTALL_DATA} ${WRKSRC}/${f} ${STAGEDIR}${DOCSDIR}/

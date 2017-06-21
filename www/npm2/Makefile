@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/npm2/Makefile 441868 2017-05-27 19:42:13Z sunpoet $
+# $FreeBSD: head/www/npm2/Makefile 443801 2017-06-18 05:51:03Z sunpoet $
 
 PORTNAME=	npm
 PORTVERSION=	2.15.12
@@ -14,7 +14,7 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	gmake:devel/gmake
 
-CONFLICTS_INSTALL=	npm npm3
+CONFLICTS_INSTALL=	npm npm3 npm4
 
 OPTIONS_SINGLE=	BACKEND
 OPTIONS_SINGLE_BACKEND=	NODE NODE4 NODE6

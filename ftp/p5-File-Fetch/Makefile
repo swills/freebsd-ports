@@ -1,8 +1,9 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/ftp/p5-File-Fetch/Makefile 423604 2016-10-09 15:42:12Z adamw $
+# $FreeBSD: head/ftp/p5-File-Fetch/Makefile 443808 2017-06-18 05:51:39Z sunpoet $
 
 PORTNAME=	File-Fetch
 PORTVERSION=	0.52
+PORTREVISION=	1
 CATEGORIES=	ftp www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,11 +14,15 @@ COMMENT=	Generic file fetching mechanism
 LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Module-Load-Conditional>=0.66:devel/p5-Module-Load-Conditional
-RUN_DEPENDS=	p5-Module-Load-Conditional>=0.66:devel/p5-Module-Load-Conditional
-
 USES=		perl5
 USE_PERL5=	configure
 NO_ARCH=	yes
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${PERL_LEVEL} < 502504
+BUILD_DEPENDS+=	p5-Module-Load-Conditional>=0.66:devel/p5-Module-Load-Conditional
+RUN_DEPENDS+=	p5-Module-Load-Conditional>=0.66:devel/p5-Module-Load-Conditional
+.endif
+
+.include <bsd.port.post.mk>

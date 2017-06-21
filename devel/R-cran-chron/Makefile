@@ -1,9 +1,9 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-chron/Makefile 367888 2014-09-10 20:50:31Z gerald $
+# $FreeBSD: head/devel/R-cran-chron/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	chron
 DISTVERSION=	2.3-43
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
@@ -12,6 +12,6 @@ COMMENT=	R package for creating objects which can handle dates and times
 
 LICENSE=	GPLv2
 
-USES=	cran:auto-plist
+USES=		cran:auto-plist,compiles
 
 .include <bsd.port.mk>

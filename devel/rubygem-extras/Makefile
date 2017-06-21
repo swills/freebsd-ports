@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-extras/Makefile 414301 2016-04-29 22:27:40Z sunpoet $
+# $FreeBSD: head/devel/rubygem-extras/Makefile 443957 2017-06-20 13:28:29Z sunpoet $
 
 PORTNAME=	extras
-PORTVERSION=	0.1.0
+PORTVERSION=	0.2.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

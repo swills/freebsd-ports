@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/python.mk 442730 2017-06-06 00:28:56Z bdrewery $
+# $FreeBSD: head/Mk/Uses/python.mk 443792 2017-06-17 23:26:58Z bdrewery $
 #
 # Provide support for Python related ports. This includes detecting Python
 # interpreters, ports providing package and modules for python as well as
@@ -354,7 +354,7 @@ _PYTHON_VERSION_NONSUPPORTED=	${_PYTHON_VERSION_MAXIMUM} at most
 .if defined(_PYTHON_VERSION_NONSUPPORTED)
 .if defined(PYTHON_VERSION) || defined(PYTHON_CMD)
 _PV:=		${_PYTHON_VERSION}	# preserve the specified python version
-WARNING+=	"needs Python ${_PYTHON_VERSION_NONSUPPORTED}. But a port depending on this one specified ${_PV}"
+IGNORE=		needs Python ${_PYTHON_VERSION_NONSUPPORTED}, but ${_PV} was specified
 .endif # defined(PYTHON_VERSION) || defined(PYTHON_CMD)
 .undef _PYTHON_VERSION
 .for ver in ${PYTHON2_DEFAULT} ${PYTHON3_DEFAULT} ${_PYTHON_VERSIONS}

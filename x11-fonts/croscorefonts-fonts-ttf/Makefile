@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/x11-fonts/croscorefonts-fonts-ttf/Makefile 402125 2015-11-21 02:10:52Z sunpoet $
+# $FreeBSD: head/x11-fonts/croscorefonts-fonts-ttf/Makefile 443895 2017-06-19 17:27:06Z sunpoet $
 
 PORTNAME=	croscorefonts
 PORTVERSION=	1.31.0
@@ -22,7 +22,7 @@ SUB_FILES=	pkg-message
 FONTNAME=	ChromeOS
 
 do-install:
-	@${MKDIR} ${STAGEDIR}${FONTSDIR}
-	cd ${WRKSRC} && ${INSTALL_DATA} *.ttf ${STAGEDIR}${FONTSDIR}
+	${MKDIR} ${STAGEDIR}${FONTSDIR}/
+	${INSTALL_DATA} ${WRKSRC}/*.ttf ${STAGEDIR}${FONTSDIR}/
 
 .include <bsd.port.mk>

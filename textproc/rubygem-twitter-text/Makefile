@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-twitter-text/Makefile 432854 2017-01-30 15:45:02Z tota $
+# $FreeBSD: head/textproc/rubygem-twitter-text/Makefile 443751 2017-06-17 10:01:49Z sunpoet $
 
 PORTNAME=	twitter-text
-PORTVERSION=	1.14.5
+PORTVERSION=	1.14.6
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

@@ -1,8 +1,9 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/devel/p5-Opcodes/Makefile 378833 2015-02-11 12:20:20Z bofh $
+# $FreeBSD: head/devel/p5-Opcodes/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	Opcodes
 PORTVERSION=	0.14
+PORTREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:RURBAN
@@ -16,7 +17,6 @@ LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	configure
-NO_ARCH=	yes
 
 #pre-install:	test
 

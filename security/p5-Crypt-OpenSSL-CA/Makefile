@@ -1,9 +1,9 @@
 # Created by: Mosconi <mosconi.rmg@gmail.com>
-# $FreeBSD: head/security/p5-Crypt-OpenSSL-CA/Makefile 438720 2017-04-17 16:06:16Z sunpoet $
+# $FreeBSD: head/security/p5-Crypt-OpenSSL-CA/Makefile 443904 2017-06-19 18:05:26Z pi $
 
 PORTNAME=	Crypt-OpenSSL-CA
 PORTVERSION=	0.24
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

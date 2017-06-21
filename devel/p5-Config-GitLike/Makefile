@@ -1,8 +1,9 @@
 # Created by: Baptiste Daroussin
-# $FreeBSD: head/devel/p5-Config-GitLike/Makefile 438560 2017-04-15 00:47:25Z sunpoet $
+# $FreeBSD: head/devel/p5-Config-GitLike/Makefile 443723 2017-06-17 02:58:21Z bdrewery $
 
 PORTNAME=	Config-GitLike
 PORTVERSION=	1.16
+PORTREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,8 +14,8 @@ COMMENT=	Simple git-compatible config file parser for Perl
 LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	devel/p5-Moo>=0:devel/p5-Moo \
-		devel/p5-MooX-Types-MooseLike>=0:devel/p5-MooX-Types-MooseLike
+BUILD_DEPENDS=	p5-Moo>=0:devel/p5-Moo \
+		p5-MooX-Types-MooseLike>=0:devel/p5-MooX-Types-MooseLike
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 

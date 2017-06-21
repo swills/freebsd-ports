@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/pydio/Makefile 441062 2017-05-16 23:49:03Z wen $
+# $FreeBSD: head/www/pydio/Makefile 443974 2017-06-20 13:36:50Z madpilot $
 
 PORTNAME=	pydio
-PORTVERSION=	8.0.0
+PORTVERSION=	8.0.1
 CATEGORIES=	www
 MASTER_SITES=	https://download.pydio.com/pub/core/archives/
 DISTNAME=	${PORTNAME}-core-${PORTVERSION}

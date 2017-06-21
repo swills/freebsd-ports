@@ -1,15 +1,16 @@
 # Created by: ultima <ultima1252@gmail.com>
-# $FreeBSD: head/www/plexwatchweb/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/www/plexwatchweb/Makefile 443727 2017-06-17 03:01:27Z bdrewery $
 
 PORTNAME=	plexWatchWeb
 PORTVERSION=	1.5.4.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 
 MAINTAINER=	ultima1252@gmail.com
 COMMENT=	Web front-end for plexWatch
 
-RUN_DEPENDS=	multimedia/plexwatch>=0.1.6:multimedia/plexwatch
+RUN_DEPENDS=	plexWatch>=0.1.6:multimedia/plexwatch
 
 USE_PHP=	curl json session simplexml sqlite3
 

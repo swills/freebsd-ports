@@ -1,8 +1,9 @@
 # Created by: erich@rrnet.com
-# $FreeBSD: head/security/sudo/Makefile 443091 2017-06-10 14:10:26Z garga $
+# $FreeBSD: head/security/sudo/Makefile 443616 2017-06-15 11:01:34Z mat $
 
 PORTNAME=	sudo
 PORTVERSION=	1.8.20p2
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	SUDO
 
@@ -88,7 +89,7 @@ post-patch:
 post-install:
 	${INSTALL_DATA} ${FILESDIR}/pam.conf ${STAGEDIR}${PREFIX}/etc/pam.d/sudo.default
 	${TOUCH} ${STAGEDIR}${PREFIX}/etc/sudoers.d/.keep-me
-	${MV} ${STAGEDIR}${PREFIX}/etc/sudoers ${STAGEDIR}${PREFIX}/etc/sudoers.sample
+	${RM} ${STAGEDIR}${PREFIX}/etc/sudoers
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/sudoreplay
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/sbin/visudo
 .for f in group_file.so libsudo_util.so sudoers.so system_group.so

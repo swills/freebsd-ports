@@ -1,12 +1,12 @@
 # Created by: gahr
-# $FreeBSD: head/math/mpir/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/mpir/Makefile 443674 2017-06-16 08:46:15Z wen $
 
 PORTNAME=	mpir
-PORTVERSION=	2.7.2
+PORTVERSION=	3.0.0
 CATEGORIES=	math
 MASTER_SITES=	http://mpir.org/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Multiprecision integer library
 
 LICENSE=	LGPL3
@@ -20,8 +20,8 @@ CONFIGURE_ARGS=	--enable-cxx --with-system-yasm
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
 
-MPIR_VERSION=	16.6.2
-MPIRXX_VERSION=	8.4.2
+MPIR_VERSION=	23.0.3
+MPIRXX_VERSION=	8.4.3
 
 INFO=		mpir
 

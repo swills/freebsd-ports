@@ -1,8 +1,7 @@
-# $FreeBSD: head/cad/freecad/Makefile 442050 2017-05-30 02:56:43Z sunpoet $
+# $FreeBSD: head/cad/freecad/Makefile 443851 2017-06-18 19:38:19Z ultima $
 
 PORTNAME=	FreeCAD
-DISTVERSION=	0.17.g20170310
-PORTREVISION=	4
+DISTVERSION=	0.17.g20170616
 CATEGORIES=	cad
 
 MAINTAINER=	tj+freebsd_ports@a13.fr
@@ -33,7 +32,7 @@ LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 RUN_DEPENDS=	pivy>0:graphics/py-pivy
 
 USE_GITHUB=	yes
-GH_TAGNAME=	91c59c7
+GH_TAGNAME=	d28bae3
 
 USES=		dos2unix compiler:c++11-lib cmake:outsource fortran jpeg \
 		python localbase

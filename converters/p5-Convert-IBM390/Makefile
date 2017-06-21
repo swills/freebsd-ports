@@ -1,8 +1,8 @@
 # Created by: Jason Burgess <dev@fenux.net>
-# $FreeBSD: head/converters/p5-Convert-IBM390/Makefile 436832 2017-03-24 17:47:17Z sunpoet $
+# $FreeBSD: head/converters/p5-Convert-IBM390/Makefile 443512 2017-06-13 16:54:19Z sunpoet $
 
 PORTNAME=	Convert-IBM390
-PORTVERSION=	0.29
+PORTVERSION=	0.30
 CATEGORIES=	converters perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

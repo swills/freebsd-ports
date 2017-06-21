@@ -1,5 +1,5 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/math/R-cran-car/Makefile 428984 2016-12-20 09:56:19Z dbn $
+# $FreeBSD: head/math/R-cran-car/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	car
 DISTVERSION=	2.1-4
@@ -22,7 +22,5 @@ TEST_DEPENDS=	R-cran-lmtest>0:finance/R-cran-lmtest \
 		R-cran-survey>0:math/R-cran-survey
 
 USES=		cran:auto-plist
-
-NO_ARCH=	yes
 
 .include <bsd.port.mk>

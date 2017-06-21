@@ -1,8 +1,8 @@
 # Created by: Torsten Zuehlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/devel/rubygem-sentry-raven/Makefile 442770 2017-06-06 13:51:20Z sunpoet $
+# $FreeBSD: head/devel/rubygem-sentry-raven/Makefile 443652 2017-06-15 21:51:51Z sunpoet $
 
 PORTNAME=	sentry-raven
-PORTVERSION=	2.5.2
+PORTVERSION=	2.5.3
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

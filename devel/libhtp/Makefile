@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/libhtp/Makefile 435392 2017-03-04 13:33:21Z mat $
+# $FreeBSD: head/devel/libhtp/Makefile 443671 2017-06-16 07:59:47Z koobs $
 
 PORTNAME=	libhtp
-PORTVERSION=	0.5.23
+PORTVERSION=	0.5.24
 CATEGORIES=	devel
 
 MAINTAINER=	koobs@FreeBSD.org

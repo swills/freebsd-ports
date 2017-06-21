@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: head/sysutils/nut/files/nut_upsmon.in 443446 2017-06-12 13:48:36Z cy $
+# $FreeBSD: head/sysutils/nut/files/nut_upsmon.in 443552 2017-06-14 02:08:56Z cy $
 #
 
 # PROVIDE: nut_upsmon
@@ -15,8 +15,8 @@
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
-nut_upsmon_enable=${nut_upsmon_enable-"NO"}
-nut_upsmon_prefix=${nut_upsmon_prefix-"%%PREFIX%%"}
+nut_upsmon_enable=${nut_upsmon_enable:-"NO"}
+nut_upsmon_prefix=${nut_upsmon_prefix:-"%%PREFIX%%"}
 
 . /etc/rc.subr
 

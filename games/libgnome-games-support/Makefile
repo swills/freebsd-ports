@@ -1,7 +1,7 @@
-# $FreeBSD: head/games/libgnome-games-support/Makefile 440686 2017-05-12 16:13:20Z rm $
+# $FreeBSD: head/games/libgnome-games-support/Makefile 443861 2017-06-19 05:24:35Z kwm $
 
 PORTNAME=	libgnome-games-support
-PORTVERSION=	1.2.1
+PORTVERSION=	1.2.2
 CATEGORIES=	games gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

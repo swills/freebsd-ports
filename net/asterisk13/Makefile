@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/asterisk13/Makefile 442141 2017-05-31 08:22:54Z madpilot $
+# $FreeBSD: head/net/asterisk13/Makefile 443951 2017-06-20 13:17:36Z madpilot $
 
 PORTNAME=	asterisk
 PORTVERSION=	13.16.0
@@ -250,6 +250,9 @@ post-extract-G729-on:
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/var/lib|${PREFIX}/share|g' ${WRKSRC}/configs/samples/musiconhold.conf.sample
+.if exists(${FILESDIR}/.asterisk.makeopts)
+	${CP} ${FILESDIR}/.asterisk.makeopts ${WRKSRC}/menuselect.makeopts
+.endif
 
 post-patch-SYSINFO-on:
 	@${REINPLACE_CMD} -e 's/%%LIBSYSINFO%%/-lsysinfo/' ${WRKSRC}/main/Makefile
@@ -257,9 +260,6 @@ post-patch-SYSINFO-on:
 post-patch-SYSINFO-off:
 	@${REINPLACE_CMD} -e '/#define HAVE_SYSINFO 1/d' ${WRKSRC}/configure
 	@${REINPLACE_CMD} -e '/%%LIBSYSINFO%%/d' ${WRKSRC}/main/Makefile
-.if exists(${FILESDIR}/.asterisk.makeopts)
-	${CP} ${USER_MAKEOPTS_FILE} ${WRKSRC}/menuselect.makeopts
-.endif
 
 post-configure:
 	@cd ${WRKSRC} && ${MAKE_CMD} menuselect.makeopts

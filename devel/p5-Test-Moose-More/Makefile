@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-Test-Moose-More/Makefile 439480 2017-04-26 18:46:15Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Moose-More/Makefile 443839 2017-06-18 17:32:46Z sunpoet $
 
 PORTNAME=	Test-Moose-More
-PORTVERSION=	0.047
+PORTVERSION=	0.048
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,6 +13,7 @@ LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-Data-OptList>=0:devel/p5-Data-OptList \
+		p5-List-MoreUtils>=0:lang/p5-List-MoreUtils \
 		p5-Moose>=0:devel/p5-Moose \
 		p5-Sub-Exporter-Progressive>=0:devel/p5-Sub-Exporter-Progressive \
 		p5-Syntax-Keyword-Junction>=0:devel/p5-Syntax-Keyword-Junction

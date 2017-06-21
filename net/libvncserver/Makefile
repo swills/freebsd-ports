@@ -1,12 +1,12 @@
 # Created by: ijliao
-# $FreeBSD: head/net/libvncserver/Makefile 432083 2017-01-21 21:47:21Z matthew $
+# $FreeBSD: head/net/libvncserver/Makefile 443942 2017-06-20 06:30:23Z araujo $
 
 PORTNAME=	libvncserver
 PORTVERSION=	0.9.11
 DISTVERSIONPREFIX=	LibVNCServer-
 CATEGORIES=	net devel
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	araujo@FreeBSD.org
 COMMENT=	Provide an easy API to a custom vnc server
 
 LICENSE=	GPLv2

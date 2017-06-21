@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/py-docutils/Makefile 442670 2017-06-05 15:40:59Z sunpoet $
+# $FreeBSD: head/textproc/py-docutils/Makefile 443799 2017-06-18 04:29:52Z sunpoet $
 
 PORTNAME=	docutils
 PORTVERSION=	0.13.1
@@ -13,7 +13,7 @@ COMMENT=	Python Documentation Utilities
 LICENSE=	BSD2CLAUSE GPLv3+ PD PSFL
 LICENSE_COMB=	multi
 
-PORTSCOUT=	limit:^[0-9.]*$
+PORTSCOUT=	limit:^[0-9\.]*$
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

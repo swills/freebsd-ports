@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: head/security/suricata/files/suricata.in 402907 2015-12-04 05:42:17Z koobs $
+# $FreeBSD: head/security/suricata/files/suricata.in 443829 2017-06-18 15:06:34Z ultima $
 
 # PROVIDE: suricata
 # REQUIRE: DAEMON
@@ -10,8 +10,8 @@
 # suricata_enable (bool):	Set to YES to enable suricata
 # 				Default: NO
 # suricata_flags (str):		Extra flags passed to suricata
-#				Default: -D -q
-# suricata_interface (str):	Network interface to sniff
+#				Default: -D
+# suricata_interface (str):	Network interface(s) to sniff
 #				Default: "" 
 # suricata_conf (str):		Suricata configuration file
 #				Default: ${PREFIX}/etc/suricata/suricata.yaml
@@ -37,7 +37,9 @@ load_rc_config $name
 [ -z "$suricata_netmap" ]	&& suricata_netmap="NO"
 
 if [ -n "$suricata_interface" ]; then
-	suricata_flags="$suricata_flags -i $suricata_interface"
+	for interface in $suricata_interface; do
+		suricata_flags="$suricata_flags --pcap=$interface"
+	done
 elif [ "$suricata_netmap" != "NO" ]; then
 	suricata_flags="$suricata_flags --netmap"
 else

@@ -1,8 +1,8 @@
 # Created by: tcberner
-# $FreeBSD: head/x11-toolkits/kirigami2/Makefile 440443 2017-05-08 17:47:49Z tcberner $
+# $FreeBSD: head/x11-toolkits/kirigami2/Makefile 443852 2017-06-18 21:04:13Z tcberner $
 
 PORTNAME=	kirigami2
-PORTVERSION=	2.1.1
+PORTVERSION=	2.2.0
 CATEGORIES=	x11-toolkits kde # kde-framework
 MASTER_SITES=	KDE/stable/${PORTNAME:C/2//}
 DIST_SUBDIR=	KDE/kirigami

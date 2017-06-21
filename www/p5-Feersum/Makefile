@@ -1,8 +1,8 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/www/p5-Feersum/Makefile 426514 2016-11-19 17:12:14Z sunpoet $
+# $FreeBSD: head/www/p5-Feersum/Makefile 443841 2017-06-18 17:32:56Z sunpoet $
 
 PORTNAME=	Feersum
-PORTVERSION=	1.404
+PORTVERSION=	1.405
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:AUDREYT

@@ -1,12 +1,10 @@
-# $FreeBSD: head/portuguese/Makefile 380766 2015-03-08 10:39:13Z bsam $
+# $FreeBSD: head/portuguese/Makefile 443772 2017-06-17 13:44:51Z rakuco $
 #
 
     COMMENT = Portuguese language support
 
     SUBDIR += aspell-pt_BR
     SUBDIR += aspell-pt_PT
-    SUBDIR += calligra-l10n
-    SUBDIR += calligra-l10n-pt_BR
     SUBDIR += eric6
     SUBDIR += gimp-help-pt_BR
     SUBDIR += hunspell

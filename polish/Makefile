@@ -1,10 +1,9 @@
-# $FreeBSD: head/polish/Makefile 359811 2014-06-30 08:37:49Z rene $
+# $FreeBSD: head/polish/Makefile 443772 2017-06-17 13:44:51Z rakuco $
 #
 
     COMMENT = Polish language support
 
     SUBDIR += aspell
-    SUBDIR += calligra-l10n
     SUBDIR += ekg
     SUBDIR += ekg2
     SUBDIR += fortunepl

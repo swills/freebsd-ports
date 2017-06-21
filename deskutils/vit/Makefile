@@ -1,8 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/deskutils/vit/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/deskutils/vit/Makefile 443754 2017-06-17 10:02:03Z sunpoet $
 
 PORTNAME=	vit
 PORTVERSION=	1.2
+PORTREVISION=	1
 CATEGORIES=	deskutils
 MASTER_SITES=	http://taskwarrior.org/download/
 
@@ -11,11 +12,11 @@ COMMENT=	Curses-based interface to taskwarrior
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	p5-Curses>=0:devel/p5-Curses \
-		p5-Time-HiRes>=0:devel/p5-Time-HiRes \
+BUILD_DEPENDS=	p5-Curses>=0:devel/p5-Curses \
 		task:deskutils/taskwarrior
-BUILD_DEPENDS:=	${RUN_DEPENDS}
+RUN_DEPENDS:=	${BUILD_DEPENDS}
 
+NO_ARCH=	yes
 USES=		perl5 shebangfix
 SHEBANG_FILES=	vit.pl
 GNU_CONFIGURE=	yes

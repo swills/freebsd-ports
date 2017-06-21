@@ -1,14 +1,15 @@
-# $FreeBSD: head/math/armadillo/Makefile 442814 2017-06-07 02:52:35Z danilo $
+# $FreeBSD: head/math/armadillo/Makefile 443527 2017-06-13 17:26:25Z danilo $
 
 PORTNAME=	armadillo
-PORTVERSION=	7.950.0
+PORTVERSION=	7.950.1
 CATEGORIES=	math
 MASTER_SITES=	SF/arma
 
 MAINTAINER=	danilo@FreeBSD.org
 COMMENT=	C++ linear algebra library
 
-LICENSE=	MPL
+LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 LIB_DEPENDS=	libboost_date_time.so:devel/boost-libs \
 		libopenblasp.so:math/openblas \

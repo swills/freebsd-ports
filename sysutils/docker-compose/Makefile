@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/docker-compose/Makefile 440021 2017-05-03 15:47:20Z lifanov $
+# $FreeBSD: head/sysutils/docker-compose/Makefile 443952 2017-06-20 13:19:55Z lifanov $
 
 PORTNAME=		docker-compose
-PORTVERSION=		1.13.0
+PORTVERSION=		1.14.0
 CATEGORIES=		sysutils python
 MASTER_SITES=		CHEESESHOP
 

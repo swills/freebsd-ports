@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 442987 2017-06-09 13:45:20Z tobik $
+# $FreeBSD: head/games/Makefile 443680 2017-06-16 09:20:07Z amdmi3 $
 #
 
     COMMENT = Games and related software
@@ -742,6 +742,7 @@
     SUBDIR += pengpong
     SUBDIR += penguin-command
     SUBDIR += pengupop
+    SUBDIR += pentobi
     SUBDIR += phalanx
     SUBDIR += phlipple
     SUBDIR += picmi

@@ -1,5 +1,5 @@
 # Created by: Yonatan <onatan@gmail.com>
-# $FreeBSD: head/security/metasploit/Makefile 443383 2017-06-11 12:07:13Z antoine $
+# $FreeBSD: head/security/metasploit/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	metasploit
 PORTVERSION=	4.14.25
@@ -80,6 +80,7 @@ GH_ACCOUNT=	rapid7
 GH_PROJECT=	metasploit-framework
 
 NO_ARCH=	yes
+NO_ARCH_IGNORE=	template_x64_bsd.bin template_x86_bsd.bin CVE-2013-2171.bin
 STRIP=
 
 USE_RUBY=	yes

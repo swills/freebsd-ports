@@ -1,8 +1,9 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/deskutils/california/Makefile 442369 2017-06-02 10:55:06Z kwm $
+# $FreeBSD: head/deskutils/california/Makefile 443492 2017-06-13 08:14:34Z kwm $
 
 PORTNAME=	california
 PORTVERSION=	0.4.0
+PORTREVISION=	1
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

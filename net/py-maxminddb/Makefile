@@ -1,8 +1,8 @@
 # Created by: Olivier Cochard-Labbé <olivier@FreeBSD.org>
-# $FreeBSD: head/net/py-maxminddb/Makefile 431406 2017-01-13 17:51:19Z olivier $
+# $FreeBSD: head/net/py-maxminddb/Makefile 443860 2017-06-19 05:09:02Z olivier $
 
 PORTNAME=	maxminddb
-PORTVERSION=	1.2.3
+PORTVERSION=	1.3.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net python geography
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

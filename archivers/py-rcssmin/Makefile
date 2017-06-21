@@ -1,8 +1,9 @@
 # Created by: Ultima <ultima1252@gmail.com>
-# $FreeBSD: head/archivers/py-rcssmin/Makefile 413464 2016-04-16 17:27:05Z pi $
+# $FreeBSD: head/archivers/py-rcssmin/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	rcssmin
 PORTVERSION=	1.0.6
+PORTREVISION=	1
 CATEGORIES=	archivers python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,6 +15,5 @@ LICENSE=	APACHE20
 
 USES=		python
 USE_PYTHON=	autoplist distutils
-NO_ARCH=	yes
 
 .include <bsd.port.mk>

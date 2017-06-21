@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/svnup/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/net/svnup/Makefile 443640 2017-06-15 20:55:54Z sobomax $
 
 PORTNAME=	svnup
 PORTVERSION=	1.07
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	http://jcm.dsl.visi.com/freebsd/svnup/ \
 		LOCAL/jgh/net/${PORTNAME}/

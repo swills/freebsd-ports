@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/py-psycopg2cffi/Makefile 425084 2016-11-01 20:22:58Z jrm $
+# $FreeBSD: head/databases/py-psycopg2cffi/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	psycopg2cffi
 PORTVERSION=	2.7.5
+PORTREVISION=	1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,8 +15,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${PYTHONPREFIX_SITELIBDIR}/_cffi_backend.so:devel/py-cffi
 RUN_DEPENDS=	${PYTHONPREFIX_SITELIBDIR}/_cffi_backend.so:devel/py-cffi
-
-NO_ARCH=	yes
 
 USE_PYTHON=	autoplist distutils
 USES=		pgsql python

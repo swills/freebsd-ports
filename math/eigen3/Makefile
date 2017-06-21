@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/eigen3/Makefile 423320 2016-10-05 06:18:09Z tcberner $
+# $FreeBSD: head/math/eigen3/Makefile 443663 2017-06-15 22:27:48Z pi $
 
 PORTNAME=	eigen
-PORTVERSION=	3.2.10
+PORTVERSION=	3.3.4
 CATEGORIES=	math
 MASTER_SITES=	https://bitbucket.org/${PORTNAME}/${PORTNAME}/get/
 DISTNAME=	${PORTVERSION}
@@ -17,6 +17,6 @@ CMAKE_ARGS=	-DPKGCONFIG_INSTALL_DIR:PATH="${PREFIX}/libdata/pkgconfig"
 USES=		cmake:outsource tar:bzip2
 NO_BUILD=	yes
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTNAME}-b9cd8366d4e8
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTNAME}-5a0156e40feb
 
 .include <bsd.port.mk>

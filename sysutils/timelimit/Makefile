@@ -1,8 +1,9 @@
 # Created by: roam@FreeBSD.org
-# $FreeBSD: head/sysutils/timelimit/Makefile 442693 2017-06-05 23:23:57Z sunpoet $
+# $FreeBSD: head/sysutils/timelimit/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	timelimit
 PORTVERSION=	1.8.1
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://devel.ringlet.net/files/sys/timelimit/ \
 		LOCAL/sunpoet
@@ -15,7 +16,6 @@ LICENSE=	BSD2CLAUSE
 # bin/timelimit man/man1/timelimit.1.gz
 CONFLICTS_INSTALL=	netpipes
 
-NO_ARCH=	yes
 USES=		tar:xz
 
 PLIST_FILES=	bin/timelimit man/man1/timelimit.1.gz

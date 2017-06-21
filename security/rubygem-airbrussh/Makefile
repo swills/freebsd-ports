@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/rubygem-airbrussh/Makefile 438630 2017-04-16 11:07:16Z sunpoet $
+# $FreeBSD: head/security/rubygem-airbrussh/Makefile 443743 2017-06-17 10:01:07Z sunpoet $
 
 PORTNAME=	airbrussh
-PORTVERSION=	1.2.0
+PORTVERSION=	1.3.0
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

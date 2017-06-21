@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-liquid3/Makefile 430725 2017-01-06 18:29:52Z kami $
+# $FreeBSD: head/textproc/rubygem-liquid3/Makefile 443890 2017-06-19 17:26:41Z sunpoet $
 
 PORTNAME=	liquid
 PORTVERSION=	3.0.6
@@ -12,8 +12,10 @@ COMMENT=	Library for rendering safe templates
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
-NO_ARCH=	yes
+DEPRECATED=	Use textproc/rubygem-liquid instead
+EXPIRATION_DATE=2017-07-31
 
+NO_ARCH=	yes
 USE_RUBY=	yes
 USES=		gem
 

@@ -1,9 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/npm3/Makefile 441868 2017-05-27 19:42:13Z sunpoet $
+# $FreeBSD: head/www/npm3/Makefile 443802 2017-06-18 05:51:08Z sunpoet $
 
 PORTNAME=	npm
 PORTVERSION=	3.10.10
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	LOCAL/sunpoet
 PKGNAMESUFFIX=	3
@@ -15,7 +15,7 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	gmake:devel/gmake
 
-CONFLICTS_INSTALL=	npm npm2
+CONFLICTS_INSTALL=	npm npm2 npm4
 
 OPTIONS_SINGLE=	BACKEND
 OPTIONS_SINGLE_BACKEND=	NODE NODE6
@@ -34,6 +34,7 @@ CPE_VENDOR=	npmjs
 CPE_PRODUCT=	node_packaged_modules
 
 SHEBANG_FILES=	lib/utils/completion.sh \
+		node_modules/lockfile/gen-changelog.sh \
 		node_modules/node-gyp/test/docker.sh \
 		node_modules/request/node_modules/node-uuid/benchmark/bench.sh \
 		scripts/clean-old.sh \

@@ -1,9 +1,8 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-hamlit/Makefile 438735 2017-04-17 16:50:32Z miwi $
+# $FreeBSD: head/www/rubygem-hamlit/Makefile 443973 2017-06-20 13:29:50Z sunpoet $
 
 PORTNAME=	hamlit
-PORTVERSION=	2.8.1
-PORTREVISION=	1
+PORTVERSION=	2.8.2
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -17,7 +16,6 @@ RUN_DEPENDS=	rubygem-temple>=0.8.0:devel/rubygem-temple \
 		rubygem-thor>=0:devel/rubygem-thor \
 		rubygem-tilt>=0:devel/rubygem-tilt
 
-NO_ARCH=	yes
 USE_RUBY=	yes
 USES=		gem shebangfix
 SHEBANG_FILES=	bin/setup bin/test bin/ruby

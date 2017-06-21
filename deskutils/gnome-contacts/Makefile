@@ -1,9 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/deskutils/gnome-contacts/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/deskutils/gnome-contacts/Makefile 443492 2017-06-13 08:14:34Z kwm $
 
 PORTNAME=	gnome-contacts
 PORTVERSION=	3.18.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	GNOME
 

@@ -1,9 +1,9 @@
 # Created by: Hye-Shik Chang <perky@fallin.lv>
-# $FreeBSD: head/textproc/py-rxp/Makefile 405414 2016-01-07 11:09:31Z miwi $
+# $FreeBSD: head/textproc/py-rxp/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	rxp
 PORTVERSION=	0.9
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc python
 MASTER_SITES=	http://www.reportlab.com/ftp/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,7 +17,6 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 NO_WRKSUBDIR=	yes
 USES=		python tar:tgz
 USE_PYTHON=	distutils autoplist
-NO_ARCH=	yes
 
 DOCSDIR=	${PREFIX}/share/doc/py-rxp
 EXAMPLESDIR=	${PREFIX}/share/examples/py-rxp

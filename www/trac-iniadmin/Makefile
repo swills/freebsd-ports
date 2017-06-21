@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine <gerrit.beine@gmx.de>
-# $FreeBSD: head/www/trac-iniadmin/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/www/trac-iniadmin/Makefile 443844 2017-06-18 17:58:40Z dbn $
 
 PORTNAME=	iniadmin
 PORTVERSION=	0.2.3915
@@ -17,6 +17,6 @@ RUN_DEPENDS=	tracd:www/trac
 WRKSRC=		${WRKDIR}/${PORTNAME}plugin/0.11
 USES=		python
 USE_PYTHON=	distutils autoplist
-NO_ARCH=	yes`
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

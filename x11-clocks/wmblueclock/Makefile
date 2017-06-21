@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@regency.nsu.ru>
-# $FreeBSD: head/x11-clocks/wmblueclock/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/x11-clocks/wmblueclock/Makefile 443822 2017-06-18 09:01:27Z amdmi3 $
 
 PORTNAME=	wmblueclock
 PORTVERSION=	0.0
@@ -10,13 +10,16 @@ MASTER_SITES=	SUNSITE/X11/xutils
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple dockable clock application
 
-USES=	tar:bzip2
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+USES=		tar:bzip2
 USE_XORG=	x11 xau xdmcp xext xpm
 
 PLIST_FILES=	bin/wmblueclock man/man1/${PORTNAME}.1.gz
 
 do-install:
-	@${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
-	@${INSTALL_MAN} ${WRKSRC}/${PORTNAME}.1 ${STAGEDIR}${MANPREFIX}/man/man1
+	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/${PORTNAME}.1 ${STAGEDIR}${MANPREFIX}/man/man1
 
 .include <bsd.port.mk>

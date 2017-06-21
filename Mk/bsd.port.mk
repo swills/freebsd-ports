@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.port.mk 442784 2017-06-06 16:38:00Z mat $
+# $FreeBSD: head/Mk/bsd.port.mk 443845 2017-06-18 18:09:16Z dbn $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -225,6 +225,10 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  Default: not set.
 #
 # NO_ARCH			- Set this if port is architecture neutral.
+#
+# NO_ARCH_IGNORE		- Set this to a list files to ignore when NO_ARCH is checked
+# 				  in stage-qa (i.e. architecture specific files that are
+# 				  'bundled' with the port).
 #
 # Set these if your port only makes sense to certain architectures.
 # They are lists containing names for them (e.g., "amd64 i386").
@@ -483,7 +487,7 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  going locally to each port).
 #				  Default: ${PORTSDIR}/packages
 # WRKDIRPREFIX	- The place to root the temporary working directory
-#				  hierarchy.
+#				  hierarchy. This path must *not* end in '/'.
 #				  Default: none
 # WRKDIR		- A temporary working directory that gets *clobbered* on clean
 #				  Default: ${WRKDIRPREFIX}${.CURDIR}/work
@@ -1527,7 +1531,9 @@ QA_ENV+=		STAGEDIR=${STAGEDIR} \
 				PKGORIGIN=${PKGORIGIN} \
 				LIB_RUN_DEPENDS='${_LIB_RUN_DEPENDS:C,[^:]*:([^:]*):?.*,\1,}' \
 				UNIFIED_DEPENDS=${_UNIFIED_DEPENDS:C,([^:]*:[^:]*):?.*,\1,:O:u:Q} \
-				PKGBASE=${PKGBASE}
+				PKGBASE=${PKGBASE} \
+				NO_ARCH=${NO_ARCH} \
+				"NO_ARCH_IGNORE=${NO_ARCH_IGNORE}"
 .if !empty(USES:Mssl)
 QA_ENV+=		USESSSL=yes
 .endif

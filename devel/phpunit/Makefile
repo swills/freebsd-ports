@@ -1,8 +1,7 @@
-# Created by: Torsten Zühlsdorff (<ports@toco-domains.de>)
-# $FreeBSD: head/devel/phpunit/Makefile 440920 2017-05-15 12:21:50Z tz $
+# $FreeBSD: head/devel/phpunit/Makefile 443562 2017-06-14 09:56:44Z tz $
 
 PORTNAME=	phpunit
-PORTVERSION=	5.7.19
+PORTVERSION=	5.7.20
 CATEGORIES=	devel www
 MASTER_SITES=	https://phar.phpunit.de/ \
 		http://ports.toco-domains.de/
@@ -14,6 +13,8 @@ COMMENT=	Testing framework for unit tests
 LICENSE=	BSD3CLAUSE
 
 CONFLICTS_INSTALL=	phpunit6
+
+PORTSCOUT=	limit:^5\.7\.[0-9]*
 
 USES=		cpe php
 CPE_VENDOR=	phpunit_project

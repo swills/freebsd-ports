@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/talloc/Makefile 440746 2017-05-13 03:35:51Z linimon $
+# $FreeBSD: head/devel/talloc/Makefile 443785 2017-06-17 19:59:31Z jhibbits $
 
 PORTNAME=		talloc
 PORTVERSION=		2.1.9
@@ -13,8 +13,6 @@ COMMENT=		Hierarchical pool based memory allocator
 LICENSE=		LGPL3
 
 CONFLICTS=		samba33-3.*
-
-BROKEN_powerpc64=	fails to compile: cc1: error: unrecognized command line option "-Wno-format-length"
 
 USES=			compiler pkgconfig waf
 USE_LDCONFIG=		yes
@@ -43,6 +41,10 @@ PLIST_FILES+=		include/pytalloc.h \
 			lib/libpytalloc-util.so.2 \
 			%%PYTHON_SITELIBDIR%%/talloc.so \
 			%%PKGCONFIGDIR%%/pytalloc-util.pc
+.endif
+
+.if ${ARCH} == powerpc64 || ${ARCH} == powerpc
+EXTRA_PATCHES+=		${FILESDIR}/powerpc-patch-lib_replace_wscript
 .endif
 
 .include <bsd.port.pre.mk>

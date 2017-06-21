@@ -1,8 +1,8 @@
 # Created by: Maxime Henrion <mux@FreeBSD.org>
-# $FreeBSD: head/games/wtf/Makefile 442180 2017-05-31 13:31:09Z lifanov $
+# $FreeBSD: head/games/wtf/Makefile 443620 2017-06-15 15:19:10Z lifanov $
 
 PORTNAME=	wtf
-PORTVERSION=	20170529
+PORTVERSION=	20170614
 CATEGORIES=	games
 MASTER_SITES=	SF/bsdwtf
 

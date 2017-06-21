@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/heirloom-mailx/Makefile 418052 2016-07-04 19:23:44Z cy $
+# $FreeBSD: head/mail/heirloom-mailx/Makefile 444007 2017-06-21 02:30:36Z cy $
 
 PORTNAME=	mailx
 PORTVERSION=	12.4
@@ -17,7 +17,7 @@ OPTIONS_DEFINE=	IPV6 DOCS
 CONFLICTS=	mailx-[0-9]*
 
 MAKE_JOBS_UNSAFE=	yes
-USES=		iconv ssl tar:bzip2
+USES=		iconv localbase ssl tar:bzip2
 MAKE_ARGS=	PREFIX="${PREFIX}" \
 		SYSCONFDIR="${PREFIX}/etc" \
 		SENDMAIL="/usr/sbin/sendmail" \
@@ -25,9 +25,6 @@ MAKE_ARGS=	PREFIX="${PREFIX}" \
 		LDFLAGS="${LDFLAGS}"
 
 PORTDOCS=	AUTHORS COPYING ChangeLog README TODO
-
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 .include <bsd.port.options.mk>
 

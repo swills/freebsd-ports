@@ -1,9 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-thin/Makefile 430588 2017-01-04 19:10:21Z swills $
+# $FreeBSD: head/www/rubygem-thin/Makefile 443518 2017-06-13 16:54:49Z sunpoet $
 
 PORTNAME=	thin
-PORTVERSION=	1.7.0
-PORTREVISION=	1
+PORTVERSION=	1.7.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

@@ -1,9 +1,8 @@
 # Created by: tcberner
-# $FreeBSD: head/x11/kf5-kwayland/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11/kf5-kwayland/Makefile 443783 2017-06-17 18:42:42Z tcberner $
 
 PORTNAME=	kwayland
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	x11 kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

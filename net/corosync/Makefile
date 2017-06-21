@@ -1,9 +1,8 @@
 # Created by: dpejesh@yahoo.com
-# $FreeBSD: head/net/corosync/Makefile 443394 2017-06-11 15:28:05Z antoine $
+# $FreeBSD: head/net/corosync/Makefile 443501 2017-06-13 13:39:31Z joneum $
 
 PORTNAME=	corosync
-PORTVERSION=	2.3.5
-PORTREVISION=	4
+PORTVERSION=	2.4.2
 CATEGORIES=	net
 MASTER_SITES=	http://build.clusterlabs.org/corosync/releases/
 
@@ -12,16 +11,15 @@ COMMENT=	Corosync Cluster Engine
 
 LICENSE=	BSD3CLAUSE
 
-BROKEN=		fails to build
-
-LIB_DEPENDS=	libnss3.so:security/nss \
+LIB_DEPENDS=	libnspr4.so:devel/nspr \
+		libnss3.so:security/nss \
 		libqb.so:devel/libqb
 
 USES=		gmake groff libtool pathfix pkgconfig
-USE_GCC=	yes	# segfaults when built with Clang
 USE_LDCONFIG=	yes
 USE_RC_SUBR=	${PORTNAME} ${PORTNAME}-notifyd
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--disable-secure-build
 INSTALL_TARGET=	install-strip
 
 OPTIONS_DEFINE=	DBUS SNMP

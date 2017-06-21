@@ -1,8 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc5-devel/Makefile 442910 2017-06-08 09:37:38Z gerald $
+# $FreeBSD: head/lang/gcc5-devel/Makefile 443605 2017-06-14 22:21:22Z gerald $
 
 PORTNAME=	gcc
-PORTVERSION=	5.4.1.s20170606
+PORTVERSION=	5.4.1.s20170613
 CATEGORIES=	lang java
 MASTER_SITES=	GCC/snapshots/${DIST_VERSION}
 PKGNAMESUFFIX=	${SUFFIX}-devel
@@ -75,9 +75,9 @@ CONFIGURE_ENV+=	UNAME_m="powerpc64"
 .if ${ARCH} == "armv6" || ${ARCH} == "aarch64"
 . if ${COMPILER_TYPE} == clang
 .  if empty(PORT_OPTIONS:MBOOTSTRAP)
-MAKE_ARGS+=CXXFLAGS=-fbracket-depth=512
+MAKE_ARGS+=CXXFLAGS+=-fbracket-depth=512
 .  else
-MAKE_ARGS+=STAGE1_CXXFLAGS=-fbracket-depth=512
+MAKE_ARGS+=STAGE1_CXXFLAGS+=-fbracket-depth=512
 .  endif
 . endif
 .endif

@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/python33/Makefile 442759 2017-06-06 12:56:47Z koobs $
+# $FreeBSD: head/lang/python33/Makefile 443795 2017-06-18 02:52:36Z sunpoet $
 
 PORTNAME=	python33
 PORTVERSION=	${PYTHON_PORTVERSION}
@@ -13,7 +13,7 @@ COMMENT=	Interpreted object-oriented programming language
 
 LICENSE=	PSFL
 
-DEPRECATED=	No longer receives bug fixes, only security updates. Please update to Python 3.5
+DEPRECATED=	No longer receives bug fixes, only security updates. Please update to Python 3.6
 EXPIRATION_DATE=	2017-09-01
 
 USES=		cpe ncurses pathfix pkgconfig readline ssl tar:xz shebangfix

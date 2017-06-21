@@ -1,10 +1,9 @@
-# $FreeBSD: head/hungarian/Makefile 341681 2014-01-29 07:10:12Z bapt $
+# $FreeBSD: head/hungarian/Makefile 443772 2017-06-17 13:44:51Z rakuco $
 #
 
     COMMENT = Hungarian language support
 
     SUBDIR += aspell
-    SUBDIR += calligra-l10n
     SUBDIR += hu-phone
     SUBDIR += hu-zipcodes
     SUBDIR += hunspell

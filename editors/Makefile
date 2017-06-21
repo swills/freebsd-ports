@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 442110 2017-05-30 18:20:17Z tobik $
+# $FreeBSD: head/editors/Makefile 443772 2017-06-17 13:44:51Z rakuco $
 #
 
     COMMENT = Editors
@@ -17,25 +17,6 @@
     SUBDIR += bpatch
     SUBDIR += bvi
     SUBDIR += calligra
-    SUBDIR += calligra-l10n
-    SUBDIR += calligra-l10n-bs
-    SUBDIR += calligra-l10n-ca
-    SUBDIR += calligra-l10n-ca_valencia
-    SUBDIR += calligra-l10n-cs
-    SUBDIR += calligra-l10n-da
-    SUBDIR += calligra-l10n-el
-    SUBDIR += calligra-l10n-en_GB
-    SUBDIR += calligra-l10n-es
-    SUBDIR += calligra-l10n-et
-    SUBDIR += calligra-l10n-fi
-    SUBDIR += calligra-l10n-gl
-    SUBDIR += calligra-l10n-it
-    SUBDIR += calligra-l10n-kk
-    SUBDIR += calligra-l10n-nb
-    SUBDIR += calligra-l10n-nl
-    SUBDIR += calligra-l10n-sk
-    SUBDIR += calligra-l10n-sv
-    SUBDIR += calligra-l10n-tr
     SUBDIR += chexedit
     SUBDIR += codelite
     SUBDIR += conglomerate

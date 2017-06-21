@@ -1,5 +1,5 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/security/krb5-114/Makefile 436129 2017-03-14 03:24:42Z cy $
+# $FreeBSD: head/security/krb5-114/Makefile 444011 2017-06-21 02:46:52Z cy $
 
 PORTNAME=		krb5
 PORTVERSION=		1.14.5
@@ -25,7 +25,7 @@ USE_PERL5=		build
 USE_LDCONFIG=		yes
 USE_CSTD=		gnu99
 GNU_CONFIGURE=		yes
-USES=			cpe gmake perl5 libtool:build \
+USES=			cpe gmake localbase perl5 libtool:build \
 			gssapi:bootstrap,mit pkgconfig:run ssl
 CONFIGURE_ARGS?=	--enable-shared --without-system-verto \
 			--disable-rpath --localstatedir="${PREFIX}/var"
@@ -58,8 +58,8 @@ LIBEDIT_CONFIGURE_WITH=	libedit
 .if defined(KRB5_HOME)
 PREFIX=			${KRB5_HOME}
 .endif
-CPPFLAGS+=		-I${LOCALBASE}/include -I${OPENSSLINC}
-LDFLAGS+=		-L${LOCALBASE}/lib -L${OPENSSLLIB}
+CPPFLAGS+=		-I${OPENSSLINC}
+LDFLAGS+=		-L${OPENSSLLIB}
 
 USE_RC_SUBR=		kpropd
 OPTIONS_SUB=		yes

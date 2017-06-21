@@ -1,19 +1,21 @@
 # Created by: Hye-Shik Chang <perky@FreeBSD.org>
-# $FreeBSD: head/archivers/dpkg/Makefile 436860 2017-03-24 23:12:17Z shaun $
+# $FreeBSD: head/archivers/dpkg/Makefile 443689 2017-06-16 12:19:29Z bhughes $
 
 PORTNAME=	dpkg
-PORTVERSION=	1.18.23
+PORTVERSION=	1.18.24
 CATEGORIES=	archivers sysutils
 MASTER_SITES=	DEBIAN_POOL
 DISTNAME=	dpkg_${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	amutu@amutu.com
 COMMENT=	Debian package maintenance system
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	po4a:textproc/po4a
+BUILD_DEPENDS=	po4a:textproc/po4a \
+		gtar:archivers/gtar \
+		gpatch:devel/patch
 RUN_DEPENDS=	gtar:archivers/gtar \
 		gpatch:devel/patch
 

@@ -1,9 +1,9 @@
-# $FreeBSD: head/sysutils/xen-tools/Makefile 437205 2017-03-29 15:10:15Z royger $
+# $FreeBSD: head/sysutils/xen-tools/Makefile 443875 2017-06-19 14:07:09Z royger $
 
 PORTNAME=	xen
 PKGNAMESUFFIX=	-tools
 PORTVERSION=	4.7.2
-PORTREVISION=   1
+PORTREVISION=   2
 CATEGORIES=	sysutils emulators
 MASTER_SITES=	http://downloads.xenproject.org/release/xen/${PORTVERSION}/
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-flask-restplus/Makefile 434007 2017-02-13 17:24:21Z krion $
+# $FreeBSD: head/www/py-flask-restplus/Makefile 444020 2017-06-21 09:24:09Z jbeich $
 
 PORTNAME=	flask-restplus
-PORTVERSION=	0.10.0
+PORTVERSION=	0.10.1
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

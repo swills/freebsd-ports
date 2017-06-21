@@ -1,10 +1,10 @@
 # Created by: Klaus Aehlig <aehlig@linta.de>
-# $FreeBSD: head/www/uzbl/Makefile 440091 2017-05-04 05:26:24Z tcberner $
+# $FreeBSD: head/www/uzbl/Makefile 443992 2017-06-20 16:29:06Z joneum $
 
 PORTNAME=	uzbl
 PORTVERSION=	0.9.1
-PORTREVISION=	1
 DISTVERSIONPREFIX=v
+PORTREVISION=	2
 CATEGORIES=	www
 
 MAINTAINER=	aehlig@linta.de

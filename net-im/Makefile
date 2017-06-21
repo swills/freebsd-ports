@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 441852 2017-05-27 16:24:46Z jrm $
+# $FreeBSD: head/net-im/Makefile 443529 2017-06-13 19:15:43Z danfe $
 #
 
     COMMENT = Instant messaging
@@ -72,6 +72,7 @@
     SUBDIR += licq-msn
     SUBDIR += licq-osd
     SUBDIR += licq-qt-gui
+    SUBDIR += linux-telegram-desktop
     SUBDIR += loudmouth
     SUBDIR += mastodon
     SUBDIR += mbpurple

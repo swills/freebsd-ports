@@ -1,8 +1,9 @@
 # Created by: Juergen Lock <nox@jelal.kn-bremen.de>
-# $FreeBSD: head/emulators/qemu-sbruno/Makefile 443450 2017-06-12 14:35:10Z sbruno $
+# $FreeBSD: head/emulators/qemu-sbruno/Makefile 443528 2017-06-13 17:45:02Z sbruno $
 
 PORTNAME=	qemu
 PORTVERSION=	2.9.50.g20170611
+PORTREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	GH \
 		LOCAL/nox:dtc \

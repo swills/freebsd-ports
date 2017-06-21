@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/meson.mk 442907 2017-06-08 06:50:00Z mat $
+# $FreeBSD: head/Mk/Uses/meson.mk 443540 2017-06-13 21:04:27Z kwm $
 #
 # Provide support for Meson based projects
 #
@@ -61,6 +61,8 @@ TEST_WRKSRC=		${WRKSRC}/${MESON_BUILD_DIR}
 TEST_TARGET=		test
 
 MESON_BUILD_DIR?=	_build
+
+CONFIGURE_LOG=		${MESON_BUILD_DIR}/meson-logs/meson-log.txt
 
 # Add meson build dir at the end.
 CONFIGURE_ARGS+=	${MESON_BUILD_DIR}

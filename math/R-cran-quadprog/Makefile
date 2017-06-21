@@ -1,9 +1,9 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/math/R-cran-quadprog/Makefile 367888 2014-09-10 20:50:31Z gerald $
+# $FreeBSD: head/math/R-cran-quadprog/Makefile 443845 2017-06-18 18:09:16Z dbn $
 
 PORTNAME=	quadprog
 DISTVERSION=	1.5-5
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
@@ -13,6 +13,6 @@ COMMENT=	Functions to solve Quadratic Programming Problems
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-USES=	cran:auto-plist
+USES=		cran:auto-plist,compiles
 
 .include <bsd.port.mk>

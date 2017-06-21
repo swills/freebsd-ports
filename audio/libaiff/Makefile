@@ -1,11 +1,11 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/audio/libaiff/Makefile 375006 2014-12-20 13:57:20Z bapt $
+# $FreeBSD: head/audio/libaiff/Makefile 443521 2017-06-13 16:55:04Z sunpoet $
 
 PORTNAME=	libaiff
 PORTVERSION=	5.0
+DISTVERSIONSUFFIX=	-release
 CATEGORIES=	audio
 MASTER_SITES=	SF/aifftools/${PORTNAME}/LibAiff%20${PORTVERSION}
-DISTNAME=	libaiff-5.0-release
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Read and write AIFF files

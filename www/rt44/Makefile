@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/rt44/Makefile 442727 2017-06-05 23:26:43Z sunpoet $
+# $FreeBSD: head/www/rt44/Makefile 443817 2017-06-18 05:52:24Z sunpoet $
 
 PORTNAME=	rt
 DISTVERSION=	4.4.1
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	www
 MASTER_SITES=	http://download.bestpractical.com/pub/rt/release/
 PKGNAMESUFFIX=	44
