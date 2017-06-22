@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 443823 2017-06-18 10:10:03Z danfe $
+# $FreeBSD: head/sysutils/Makefile 444046 2017-06-21 18:07:19Z tcberner $
 #
 
     COMMENT = System utilities
@@ -280,6 +280,7 @@
     SUBDIR += etcupdate
     SUBDIR += eventlog
     SUBDIR += evtviewer
+    SUBDIR += exa
     SUBDIR += exfat-utils
     SUBDIR += extipl
     SUBDIR += ezjail
@@ -311,6 +312,7 @@
     SUBDIR += flexbackup
     SUBDIR += flock
     SUBDIR += flog
+    SUBIDR += flowgger
     SUBDIR += fluent-bit
     SUBDIR += flyback
     SUBDIR += fonteditfs
@@ -912,7 +914,9 @@
     SUBDIR += qlogtools
     SUBDIR += qpxtool
     SUBDIR += qsynergy
+    SUBDIR += qt5-qtdiag
     SUBDIR += qt5-qtpaths
+    SUBDIR += qt5-qtplugininfo
     SUBDIR += qtpass
     SUBDIR += quicksynergy
     SUBDIR += qzeitgeist

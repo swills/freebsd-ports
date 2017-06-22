@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-unicode-display_width/Makefile 438279 2017-04-11 15:56:09Z sunpoet $
+# $FreeBSD: head/devel/rubygem-unicode-display_width/Makefile 444054 2017-06-21 18:52:25Z sunpoet $
 
 PORTNAME=	unicode-display_width
-PORTVERSION=	1.2.1
+PORTVERSION=	1.3.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

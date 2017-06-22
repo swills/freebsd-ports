@@ -1,5 +1,5 @@
 # Created by: Mark Pulford <mark@kyne.com.au>
-# $FreeBSD: head/graphics/ppmcaption/Makefile 422417 2016-09-19 08:49:32Z linimon $
+# $FreeBSD: head/graphics/ppmcaption/Makefile 444098 2017-06-22 05:54:37Z linimon $
 
 PORTNAME=	ppmcaption
 PORTVERSION=	1.1
@@ -17,7 +17,7 @@ MAKE_ARGS=	install_prefix=${STAGEDIR}
 PLIST_FILES=	bin/ppmcaption man/man1/ppmcaption.1.gz
 
 ONLY_FOR_ARCHS=	i386
-ONLY_FOR_ARCHS_REASON=	does not compile on ia64 or amd64; untested everywhere else
+ONLY_FOR_ARCHS_REASON=	does not compile on amd64; untested everywhere else
 
 post-patch:
 	${REINPLACE_CMD} -e "s,-lang-c89,," ${WRKSRC}/configure

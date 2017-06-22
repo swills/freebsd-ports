@@ -1,9 +1,8 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-nan/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/math/octave-forge-nan/Makefile 444096 2017-06-22 03:39:36Z stephen $
 
 PORTNAME=	octave-forge-nan
-PORTVERSION=	3.0
-PORTREVISION=	2
+PORTVERSION=	3.1.2
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org
@@ -16,7 +15,7 @@ MAKE_JOBS_UNSAFE=	yes
 
 # OCTSRC is the name of the directory of the package.
 # It is usually ${OCTAVE_PKGNAME} or ${DISTNAME}.
-OCTSRC=		NaN
+OCTSRC=		${DISTNAME}
 
 WRKSRC=		${WRKDIR}/${OCTSRC}/src
 

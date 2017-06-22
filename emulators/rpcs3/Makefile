@@ -1,9 +1,9 @@
-# $FreeBSD: head/emulators/rpcs3/Makefile 443983 2017-06-20 15:04:45Z jbeich $
+# $FreeBSD: head/emulators/rpcs3/Makefile 444030 2017-06-21 12:20:13Z jbeich $
 
 PORTNAME=	rpcs3
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.0.2-313
-DISTVERSIONSUFFIX=	-g7c99639f # tracking #2813
+DISTVERSIONSUFFIX=	-g3332c17a # tracking #2813
 CATEGORIES=	emulators
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -46,9 +46,7 @@ PLIST_FILES=	bin/${PORTNAME} \
 
 post-patch:
 	@${REINPLACE_CMD} -e 's/5\.8/5\.7/' ${WRKSRC}/${PORTNAME}/CMakeLists.txt
-	@${REINPLACE_CMD} \
-		-e 's/"unknown"/"${GH_TAGNAME}"/' \
-		-e 's/^\(VERSION =\).*/\1 ${GH_TAGNAME}/' \
+	@${REINPLACE_CMD} -e 's/"unknown"/"${GH_TAGNAME}"/' \
 		${WRKSRC}/${PORTNAME}/git-version.cmake
 
 .include <bsd.port.mk>

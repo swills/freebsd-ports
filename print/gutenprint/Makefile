@@ -1,10 +1,10 @@
 # Created by: dgilbert@velocet.ca
-# $FreeBSD: head/print/gutenprint/Makefile 442591 2017-06-04 21:12:42Z cmt $
+# $FreeBSD: head/print/gutenprint/Makefile 444102 2017-06-22 07:43:50Z tijl $
 #    $MCom: ports/print/gutenprint-base/Makefile,v 1.8 2007/03/30 16:45:02 ahze Exp $
 
 PORTNAME=	gutenprint
 PORTVERSION=	5.2.12
-PORTREVISION?=	1	# also print/gimp-gutenprint
+PORTREVISION?=	2	# also print/gimp-gutenprint
 CATEGORIES=	print
 MASTER_SITES=	SF/gimp-print/gutenprint-5.2/${PORTVERSION}
 
@@ -19,7 +19,7 @@ CONFLICTS=	gimp-print-[0-9]*
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-static --enable-simplified-cups-ppds DLOPEN_LIBS=" "
 INSTALL_TARGET=	install-strip
-USES=		gettext gmake libtool pathfix pkgconfig tar:bzip2
+USES=		gettext gmake libtool pathfix perl5 pkgconfig tar:bzip2
 
 .if !defined(GUT_SLAVE)
 LIB_DEPENDS+=	libcupsimage.so:print/cups

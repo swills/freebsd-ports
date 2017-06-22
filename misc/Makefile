@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 442944 2017-06-08 17:25:47Z des $
+# $FreeBSD: head/misc/Makefile 444032 2017-06-21 15:09:44Z matthew $
 #
 
     COMMENT = Miscellaneous utilities
@@ -476,6 +476,7 @@
     SUBDIR += uk-postcodes
     SUBDIR += umodunpack
     SUBDIR += unclutter
+    SUBDIR += unclutter-xfixes
     SUBDIR += upclient
     SUBDIR += us-zipcodes
     SUBDIR += usbids

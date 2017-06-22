@@ -1,8 +1,8 @@
 # Created by: Torsten Blum <torstenb@FreeBSD.org>
-# $FreeBSD: head/mail/postfix/Makefile 440583 2017-05-10 18:38:13Z adamw $
+# $FreeBSD: head/mail/postfix/Makefile 444073 2017-06-21 19:38:47Z ohauer $
 
 PORTNAME=	postfix
-PORTVERSION=	3.2.0
+PORTVERSION=	3.2.2
 PORTREVISION?=	0
 PORTEPOCH=	1
 CATEGORIES=	mail ipv6
@@ -25,7 +25,7 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 LIB_DEPENDS=	libicuuc.so:devel/icu
 
-PORTSCOUT=	limit:^3\.1\.
+PORTSCOUT=	limit:^3\.2\.
 
 CONFLICTS_INSTALL?=	courier-0.* opensmtpd-[0-9]* \
 		sendmail-8.* sendmail+*-8.* smail-3.* zmailer-2.* \

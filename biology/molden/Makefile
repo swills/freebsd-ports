@@ -1,5 +1,5 @@
 # Created by: Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
-# $FreeBSD: head/biology/molden/Makefile 442480 2017-06-03 12:48:35Z linimon $
+# $FreeBSD: head/biology/molden/Makefile 444104 2017-06-22 08:24:22Z mat $
 
 PORTNAME=	molden
 PORTVERSION=	5.7
@@ -18,6 +18,8 @@ LICENSE_FILE=	${WRKSRC}/CopyRight
 LICENSE_PERMS=	auto-accept
 
 RESTRICTED=	free for academic, non profit usage; do not re-distribute source and executable.
+
+BROKEN=		Fails to fetch
 
 WRKSRC=		${WRKDIR}/${PORTNAME}${PORTVERSION}
 

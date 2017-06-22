@@ -1,5 +1,5 @@
 # Created by: Kurt Jaeger <fbsd-ports@opsec.eu>
-# $FreeBSD: head/math/p5-Math-Int128/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/math/p5-Math-Int128/Makefile 444099 2017-06-22 06:03:21Z linimon $
 
 PORTNAME=	Math-Int128
 PORTVERSION=	0.22
@@ -19,7 +19,7 @@ RUN_DEPENDS=	p5-Math-Int64>=0.51:math/p5-Math-Int64
 USES=		perl5
 USE_PERL5=	configure
 
-NOT_FOR_ARCHS=	i386 armv6
+NOT_FOR_ARCHS=	armv6 i386
 
 .include <bsd.port.pre.mk>
 

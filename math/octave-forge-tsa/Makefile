@@ -1,9 +1,8 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-tsa/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/math/octave-forge-tsa/Makefile 444095 2017-06-22 03:39:06Z stephen $
 
 PORTNAME=	octave-forge-tsa
-PORTVERSION=	4.4.1
-PORTREVISION=	2
+PORTVERSION=	4.4.5
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org
@@ -14,9 +13,11 @@ LICENSE_FILE=	${WRKDIR}/${OCTSRC}/COPYING
 
 # OCTSRC is the name of the directory of the package.
 # It is usually ${OCTAVE_PKGNAME} or ${DISTNAME}.
-OCTSRC=		${OCTAVE_PKGNAME}
+OCTSRC=		${DISTNAME}
 
 WRKSRC=		${WRKDIR}/${OCTSRC}/src
+
+RUN_DEPENDS+=	${TARBALLS_DIR}/nan.tar.gz:math/octave-forge-nan
 
 .include "${.CURDIR}/../../Mk/bsd.octave.mk"
 

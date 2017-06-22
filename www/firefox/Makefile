@@ -1,5 +1,5 @@
 # Created by: Alan Eldridge <alane@FreeBSD.org>
-# $FreeBSD: head/www/firefox/Makefile 443536 2017-06-13 19:55:46Z jbeich $
+# $FreeBSD: head/www/firefox/Makefile 444090 2017-06-22 01:19:16Z jbeich $
 
 PORTNAME=	firefox
 DISTVERSION=	54.0
@@ -47,6 +47,7 @@ MOZ_OPTIONS=	--enable-application=browser \
 OPTIONS_DEFINE=		RUST
 OPTIONS_DEFAULT=	BUNDLED_CAIRO
 # XXX lang/rust and devel/cargo currently build only on these platforms
+OPTIONS_DEFAULT_aarch64=RUST
 OPTIONS_DEFAULT_amd64=	RUST
 OPTIONS_DEFAULT_i386=	RUST
 

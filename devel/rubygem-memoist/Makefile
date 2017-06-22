@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-memoist/Makefile 430087 2016-12-31 02:22:26Z swills $
+# $FreeBSD: head/devel/rubygem-memoist/Makefile 444059 2017-06-21 18:52:51Z sunpoet $
 
 PORTNAME=	memoist
-PORTVERSION=	0.15.0
+PORTVERSION=	0.16.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,7 +12,7 @@ COMMENT=	Memoize methods invocation
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-NO_ARCHI=	yes
+NO_ARCH=	yes
 USE_RUBY=	yes
 USES=		gem
 

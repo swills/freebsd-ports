@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb102-server/Makefile 442843 2017-06-07 14:38:17Z brnrd $
+# $FreeBSD: head/databases/mariadb102-server/Makefile 444085 2017-06-21 22:25:49Z linimon $
 
 PORTNAME?=	mariadb
 PORTVERSION=	10.2.6
@@ -21,6 +21,8 @@ LICENSE=	GPLv2
 LICENSE_NAME_PerconaFT=	PerconaFT patents license
 LICENSE_FILE_PerconaFT=	${WRKSRC}/storage/tokudb/PerconaFT/PATENTS
 LICENSE_PERMS_PerconaFT=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
+BROKEN_aarch64=		fails to link: stacktrace.c: undefined reference to 'sbrk'
 
 SUB_FILES=	pkg-message
 PKGMESSAGE=	${WRKDIR}/pkg-message

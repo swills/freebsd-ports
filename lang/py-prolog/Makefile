@@ -1,5 +1,5 @@
 # Created by: Gerhard Gonter <g.gonter@ieee.org>
-# $FreeBSD: head/lang/py-prolog/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/lang/py-prolog/Makefile 444098 2017-06-22 05:54:37Z linimon $
 
 PORTNAME=	prolog
 PORTVERSION=	0.1
@@ -15,13 +15,9 @@ COMMENT=	Python extension embedding SWI-Prolog
 BUILD_DEPENDS=	swipl:lang/swi-pl
 RUN_DEPENDS=	swipl:lang/swi-pl
 
+BROKEN_amd64=	fails to build: can't link shared libraries to static
+
 USES=		python
 USE_PYTHON=	distutils autoplist
 
-.include <bsd.port.pre.mk>
-
-.if ${ARCH} == "ia64" || ${ARCH} == "amd64"
-BROKEN=		Does not build on ia64 or amd64 (can't link shared libraries to static)
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

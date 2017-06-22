@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 443874 2017-06-19 13:43:36Z danfe $
+# $FreeBSD: head/devel/Makefile 444040 2017-06-21 16:39:39Z tobik $
 #
 
     COMMENT = Development utilities
@@ -182,6 +182,7 @@
     SUBDIR += bglibs
     SUBDIR += bicyclerepair
     SUBDIR += bin86
+    SUBDIR += bingrep
     SUBDIR += binutils
     SUBDIR += bison
     SUBDIR += bisoncpp

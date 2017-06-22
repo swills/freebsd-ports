@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/graphics/p5-Geo-Gpx/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/p5-Geo-Gpx/Makefile 444064 2017-06-21 18:53:16Z sunpoet $
 
 PORTNAME=	Geo-Gpx
 PORTVERSION=	0.26
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,14 +14,14 @@ COMMENT=	Perl Module to Create and Parse GPX Files
 LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-TimeDate>=0:devel/p5-TimeDate \
-		p5-HTML-Parser>=0:www/p5-HTML-Parser \
+BUILD_DEPENDS=	p5-DateTime-Format-ISO8601>=0:devel/p5-DateTime-Format-ISO8601 \
 		p5-ExtUtils-MakeMaker-Coverage>=0:devel/p5-ExtUtils-MakeMaker-Coverage \
-		p5-Time-Local>=0:devel/p5-Time-Local \
-		p5-XML-Descent>=0:textproc/p5-XML-Descent \
-		p5-DateTime-Format-ISO8601>=0:devel/p5-DateTime-Format-ISO8601
+		p5-HTML-Parser>=0:www/p5-HTML-Parser \
+		p5-TimeDate>=0:devel/p5-TimeDate \
+		p5-XML-Descent>=0:textproc/p5-XML-Descent
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

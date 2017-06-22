@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 443772 2017-06-17 13:44:51Z rakuco $
+# $FreeBSD: head/editors/Makefile 444039 2017-06-21 16:30:48Z tobik $
 #
 
     COMMENT = Editors
@@ -247,6 +247,7 @@
     SUBDIR += wordgrinder
     SUBDIR += xcoral
     SUBDIR += xed
+    SUBDIR += xi-core
     SUBDIR += xmlcopyeditor
     SUBDIR += xvile
     SUBDIR += yudit

@@ -1,5 +1,5 @@
 # Created by: Li-Lun Wang <llwang@infor.org>
-# $FreeBSD: head/lang/whitespace/Makefile 427547 2016-12-02 09:00:43Z amdmi3 $
+# $FreeBSD: head/lang/whitespace/Makefile 444033 2017-06-21 15:45:21Z linimon $
 
 PORTNAME=	whitespace
 PORTVERSION=	0.3
@@ -17,6 +17,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	ghc:lang/ghc
 LIB_DEPENDS=	libgmp.so:math/gmp \
 		libffi.so.6:devel/libffi
+
+DEPRECATED=	Mastersite disappeared
+EXPIRATION_DATE=	2017-08-21
 
 USES=		perl5 gmake tar:tgz
 USE_PERL5=	build

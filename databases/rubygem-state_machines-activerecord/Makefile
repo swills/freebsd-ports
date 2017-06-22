@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/rubygem-state_machines-activerecord/Makefile 439975 2017-05-02 21:52:22Z sunpoet $
+# $FreeBSD: head/databases/rubygem-state_machines-activerecord/Makefile 444051 2017-06-21 18:51:25Z sunpoet $
 
 PORTNAME=	state_machines-activerecord
-PORTVERSION=	0.4.1
+PORTVERSION=	0.5.0
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 
@@ -13,7 +13,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	rubygem-activerecord4>=4.1:databases/rubygem-activerecord4 \
-		rubygem-state_machines-activemodel>=0.3.0:databases/rubygem-state_machines-activemodel
+		rubygem-state_machines-activemodel>=0.5.0:databases/rubygem-state_machines-activemodel
 
 NO_ARCH=	yes
 USE_RUBY=	yes
