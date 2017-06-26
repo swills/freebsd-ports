@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 443040 2017-06-09 20:08:54Z kwm $
+# $FreeBSD: head/lang/Makefile 444168 2017-06-23 08:55:39Z olgeni $
 #
 
     COMMENT = Programming languages
@@ -68,6 +68,7 @@
     SUBDIR += erlang-runtime17
     SUBDIR += erlang-runtime18
     SUBDIR += erlang-runtime19
+    SUBDIR += erlang-runtime20
     SUBDIR += erlang-wx
     SUBDIR += execline
     SUBDIR += expect

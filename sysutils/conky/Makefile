@@ -1,5 +1,5 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/sysutils/conky/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/sysutils/conky/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	conky
 PORTVERSION=	1.10.6
@@ -19,7 +19,7 @@ BUILD_DEPENDS=	db2x_xsltproc:textproc/docbook2X \
 CONFLICTS?=	conky-awesome-[0-9]*
 SLAVEDIRS=	sysutils/conky-awesome
 
-USES=           cpe cmake compiler:c++11-lib gettext-runtime iconv \
+USES=           cpe cmake:noninja compiler:c++11-lib gettext-runtime iconv \
 		localbase lua:51 pkgconfig tar:bzip2
 CMAKE_ARGS+=	-DBUILD_PORT_MONITORS:BOOL=false \
 		-DBUILD_IBM:BOOL=false \

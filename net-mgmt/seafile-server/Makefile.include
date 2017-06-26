@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-mgmt/seafile-server/Makefile.include 439615 2017-04-28 15:09:08Z lifanov $
+# $FreeBSD: head/net-mgmt/seafile-server/Makefile.include 444232 2017-06-24 17:10:25Z ultima $
 
-SEAFILE_VER=6.0.10
-SEAHUB_VER=6.0.13
+SEAFILE_VER=6.1.1
+SEAHUB_VER=6.1.1
 
 
 # Various vars used in most/all the Makefiles

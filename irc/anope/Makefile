@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/irc/anope/Makefile 442989 2017-06-09 13:55:01Z feld $
+# $FreeBSD: head/irc/anope/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	anope
 PORTVERSION=	2.0.5
@@ -16,6 +16,8 @@ CMAKE_ARGS+=	-DINSTDIR:STRING="${LOCALBASE}/anope"
 CXXFLAGS+=	"-I${LOCALBASE}/include"
 LDFLAGS+=	"-L${LOCALBASE}/lib"
 SHEBANG_FILES=	${WRKSRC}/src/tools/*.sh
+
+CFLAGS_amd64=	-fPIC
 
 USE_GITHUB=	yes
 
@@ -53,11 +55,6 @@ TRE_LIB_DEPENDS=	libtre.so:textproc/libtre
 .include <bsd.port.options.mk>
 
 .include <bsd.port.pre.mk>
-
-# XXX Add here other arch which needs -fPIC :-)
-.if ${ARCH} == "amd64" || ${ARCH} == "ia64"
-CFLAGS+=	-fPIC
-.endif
 
 post-patch:
 .if ${PORT_OPTIONS:MGNUTLS}

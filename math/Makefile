@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 442495 2017-06-03 14:18:18Z cpm $
+# $FreeBSD: head/math/Makefile 444131 2017-06-22 21:53:06Z stephen $
 #
 
     COMMENT = Mathematics
@@ -317,6 +317,7 @@
     SUBDIR += octave-forge-base
     SUBDIR += octave-forge-bim
     SUBDIR += octave-forge-bioinfo
+    SUBDIR += octave-forge-bsltl
     SUBDIR += octave-forge-cgi
     SUBDIR += octave-forge-civil-engineering
     SUBDIR += octave-forge-communications

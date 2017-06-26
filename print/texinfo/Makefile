@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/print/texinfo/Makefile 441739 2017-05-25 21:05:08Z sunpoet $
+# $FreeBSD: head/print/texinfo/Makefile 444258 2017-06-25 09:50:54Z sunpoet $
 
 PORTNAME=	texinfo
 PORTVERSION=	6.3
@@ -8,7 +8,7 @@ PORTEPOCH=	1
 CATEGORIES=	print
 MASTER_SITES=	GNU \
 		LOCAL/sunpoet/${DIST_SUBDIR}:DEFAULT,local
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} htmlxref.cnf texinfo.tex:local texi2dvi
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} htmlxref.cnf texi2dvi:local texinfo.tex:local
 DIST_SUBDIR=	${PORTNAME}/${PORTVERSION}
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 

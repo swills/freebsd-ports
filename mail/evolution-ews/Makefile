@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/mail/evolution-ews/Makefile 443491 2017-06-13 08:13:28Z kwm $
+# $FreeBSD: head/mail/evolution-ews/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	evolution-ews
 PORTVERSION=	3.24.2
@@ -23,7 +23,7 @@ RUN_DEPENDS=	evolution>=3.0.0:mail/evolution
 
 PORTSCOUT=	limitw:1,even
 
-USES=		bdb:5 cmake ninja gettext gnome localbase pathfix \
+USES=		bdb:5 cmake gettext gnome localbase pathfix \
 		pkgconfig sqlite tar:xz
 USE_GNOME=	cairo gdkpixbuf2 evolutiondataserver3 intltool
 

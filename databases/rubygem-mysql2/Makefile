@@ -1,5 +1,5 @@
 # Created by: Kimo <kimor79@yahoo.com>
-# $FreeBSD: head/databases/rubygem-mysql2/Makefile 440178 2017-05-05 15:35:51Z sunpoet $
+# $FreeBSD: head/databases/rubygem-mysql2/Makefile 444338 2017-06-26 03:24:18Z sunpoet $
 
 PORTNAME=	mysql2
 PORTVERSION=	0.4.6
@@ -12,8 +12,7 @@ COMMENT=	Simple, fast MySQL library for Ruby, binding to libmysql
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USE_MYSQL=	yes
 USE_RUBY=	yes
-USES=		gem ssl
+USES=		gem mysql ssl
 
 .include <bsd.port.mk>

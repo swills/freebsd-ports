@@ -1,5 +1,5 @@
 # Created by: Dave Cottlehuber <dch@skunkwerks.at>
-# $FreeBSD: head/www/h2o/Makefile 440217 2017-05-06 05:46:14Z miwi $
+# $FreeBSD: head/www/h2o/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	h2o
 PORTVERSION=	2.2.2
@@ -13,7 +13,7 @@ LICENSE=	MIT
 
 USE_GITHUB=	yes
 
-USES=		cmake compiler:c11 cpe perl5 shebangfix ssl
+USES=		cmake:noninja compiler:c11 cpe perl5 shebangfix ssl
 CPE_VENDOR=	h2o_project
 USE_PERL5=	run
 SHEBANG_FILES=	share/h2o/start_server

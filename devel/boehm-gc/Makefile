@@ -1,5 +1,5 @@
 # Created by: Mike McGaughey <mmcg@cs.monash.edu.au>
-# $FreeBSD: head/devel/boehm-gc/Makefile 419897 2016-08-09 02:05:47Z cpm $
+# $FreeBSD: head/devel/boehm-gc/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	gc
 PORTVERSION=	7.6.0
@@ -54,8 +54,6 @@ CONFIGURE_ARGS+=--disable-threads --disable-redirect-malloc
 OPTIONS_DEFINE+=DOCS
 PORTDOCS=	*
 .endif
-
-NOT_FOR_ARCHS=	ia64
 
 .include <bsd.port.options.mk>
 

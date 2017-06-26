@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/digikam-kde4/Makefile.common 437106 2017-03-28 09:05:39Z rakuco $
+# $FreeBSD: head/graphics/digikam-kde4/Makefile.common 444324 2017-06-25 21:07:58Z tcberner $
 #
 # Make sure when DIGIKAM_VER is updated that the following ports are updated:
 #	graphics/digikam-kde4
@@ -118,7 +118,7 @@ LICENSE?=	GPLv2
 USES+=		tar:bzip2
 
 .if !defined(NO_BUILD)
-USES+=		cmake kde:4
+USES+=		cmake:noninja kde:4
 USE_KDE+=	automoc4 kdelibs
 USE_QT4+=	qmake_build moc_build rcc_build uic_build
 

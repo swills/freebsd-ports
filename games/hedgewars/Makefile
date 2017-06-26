@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/hedgewars/Makefile 434896 2017-02-26 17:43:39Z acm $
+# $FreeBSD: head/games/hedgewars/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	hedgewars
 PORTVERSION=	0.9.22
@@ -17,7 +17,7 @@ LICENSE_COMB=	multi
 
 LIB_DEPENDS=	libphysfs.so:devel/physfs
 
-USES=		cmake desktop-file-utils lua:51 tar:bzip2
+USES=		cmake:noninja desktop-file-utils lua:51 tar:bzip2
 USE_SDL=	sdl mixer image ttf net
 USE_FPC=	opengl libpng rtl-objpas
 USE_QT4=	corelib gui moc_build network \

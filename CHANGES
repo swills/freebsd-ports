@@ -10,6 +10,20 @@ in the release notes and/or placed into UPDATING.
 
 All ports committers are allowed to commit to this file.
 
+20170625:
+AUTHOR: kde@FreeBSD.org
+
+  The default generator for USES=cmake ports has been switched to ninja.
+
+  Previously it was possible to opt-in to using ninja instead of make(1)
+  by setting CMAKE_NINJA, now ports need to opt-out.
+
+  Ports that do not build with ninja must switch from
+      USES=cmake:<args>
+  to
+      USES=cmake:<args>,noninja
+
+
 20170417:
 AUTHOR:	kwm@FreeBSD.org
 
@@ -3340,4 +3354,4 @@ POSSIBILITY OF SUCH DAMAGE.
 Contact portmgr@FreeBSD.org if you have any questions about your use of
 this document.
 
-$FreeBSD: head/CHANGES 442529 2017-06-04 04:13:51Z miwi $
+$FreeBSD: head/CHANGES 444324 2017-06-25 21:07:58Z tcberner $

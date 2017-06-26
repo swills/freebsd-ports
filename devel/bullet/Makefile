@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/bullet/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/devel/bullet/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	bullet
 PORTVERSION=	2.83.7
@@ -22,6 +22,7 @@ USE_LDCONFIG=	yes
 USE_XORG=	x11
 
 CMAKE_ARGS=	-DBUILD_SHARED_LIBS:BOOL=ON \
+		-DINSTALL_LIBS:BOOL=ON \
 		-DBUILD_BULLET2_DEMOS:BOOL=OFF
 
 PORTDOCS=	*

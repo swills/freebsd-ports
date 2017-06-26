@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/databases/mysql55-server/Makefile 438388 2017-04-12 17:07:45Z ale $
+# $FreeBSD: head/databases/mysql55-server/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME?=	mysql
 PORTVERSION=	5.5.55
@@ -14,7 +14,7 @@ COMMENT?=	Multithreaded SQL database (server)
 LICENSE=	GPLv2
 
 SLAVEDIRS=	databases/mysql55-client
-USES=		cmake readline shebangfix
+USES=		cmake:noninja readline shebangfix
 CXXFLAGS+=	${CPPFLAGS}
 NO_OPTIONS_SORT=yes
 

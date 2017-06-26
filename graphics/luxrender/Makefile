@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/luxrender/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/luxrender/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	luxrender
 DISTVERSION?=	1.6
@@ -28,7 +28,7 @@ CONFLICTS_INSTALL?=	${PORTNAME}14-1.4*
 ONLY_FOR_ARCHS=	i386 amd64
 ONLY_FOR_ARCHS_REASON=	uses SSE instructions
 
-USES+=		bison cmake python:build tar:bzip2
+USES+=		bison cmake:noninja python:build tar:bzip2
 USE_GL=		glu
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-lux-${LUX_REV}

@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/math/stp/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/math/stp/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	stp
 PORTVERSION=	1436
@@ -15,7 +15,7 @@ LICENSE=	MIT
 LIB_DEPENDS=	libboost_program_options.so:devel/boost-libs \
 		libboost_system.so:devel/boost-libs
 
-USES=		bison:build cmake perl5 tar:xz
+USES=		bison:build cmake:noninja perl5 tar:xz
 USE_PERL5=	build
 CMAKE_ARGS=	-DFL_LIBRARY=/usr/lib/libfl.a
 

@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/security/iaikpkcs11wrapper/Makefile 417166 2016-06-20 16:23:28Z mat $
+# $FreeBSD: head/security/iaikpkcs11wrapper/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	iaikPkcs11Wrapper
 PORTVERSION=	1.2.18
@@ -27,7 +27,7 @@ PORTEXAMPLES=	*
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == "amd64" || ${ARCH} == "ia64"
+.if ${ARCH} == "amd64"
 WRKSRC=		${WRKDIR}/src/native/unix/linux-x86_64
 .else
 WRKSRC=		${WRKDIR}/src/native/unix/linux-x86

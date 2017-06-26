@@ -1,5 +1,5 @@
 # Created by: Philip Stoev <philip.stoev@galeracluster.com>
-# $FreeBSD: head/databases/mysqlwsrep56-server/Makefile 440001 2017-05-03 05:52:55Z linimon $
+# $FreeBSD: head/databases/mysqlwsrep56-server/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	mysqlwsrep
 PORTVERSION=	5.6.35
@@ -22,7 +22,7 @@ DATADIR=	${PREFIX}/share/mysql
 NOT_FOR_ARCHS=		aarch64 armv6 powerpc64
 NOT_FOR_ARCHS_REASON=	error: Unsupported platform
 
-USES=		cmake:outsource libedit shebangfix perl5
+USES=		cmake:outsource,noninja libedit shebangfix perl5
 USE_PERL5=	run
 USE_LDCONFIG=	yes
 

@@ -1,8 +1,8 @@
 # Created by: Marc Fonvieille <blackend@FreeBSD.org>
-# $FreeBSD: head/misc/freebsd-doc-en/Makefile 441694 2017-05-25 14:35:49Z bapt $
+# $FreeBSD: head/misc/freebsd-doc-en/Makefile 444264 2017-06-25 14:16:33Z blackend $
 
 PORTNAME=	freebsd-doc
-PORTVERSION=	50268
+PORTVERSION=	50402
 PORTEPOCH=	1
 CATEGORIES=	misc docs
 MASTER_SITES=	LOCAL/blackend
@@ -10,6 +10,8 @@ PKGNAMEPREFIX?=	en-
 
 MAINTAINER=	doceng@FreeBSD.org
 COMMENT?=	Documentation from the FreeBSD Documentation Project
+
+LICENSE=	BSD2CLAUSE
 
 BUILD_DEPENDS=	docproj>=2.0_6:textproc/docproj
 

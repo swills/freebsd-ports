@@ -1,3 +1,3 @@
-# $FreeBSD: head/net-mgmt/seafile-client/Makefile.include 441845 2017-05-27 14:55:52Z lifanov $
+# $FreeBSD: head/net-mgmt/seafile-client/Makefile.include 444233 2017-06-24 17:12:39Z ultima $
 
-SEAFILE_CLIENT_VER=6.0.6
+SEAFILE_CLIENT_VER=6.0.7

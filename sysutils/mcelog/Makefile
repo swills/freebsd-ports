@@ -1,5 +1,5 @@
 # Created by: Jeremy Chadwick <freebsd@jdc.parodius.com>
-# $FreeBSD: head/sysutils/mcelog/Makefile 443467 2017-06-12 20:27:42Z ultima $
+# $FreeBSD: head/sysutils/mcelog/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	mcelog
 PORTVERSION=	153
@@ -16,7 +16,7 @@ TEST_DEPENDS=	bash:shells/bash
 USE_GITHUB=	yes
 GH_ACCOUNT=	andikleen
 
-ONLY_FOR_ARCHS=	amd64 i386 ia64
+ONLY_FOR_ARCHS=		amd64 i386
 
 USES=		alias gmake shebangfix
 

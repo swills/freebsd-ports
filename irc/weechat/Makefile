@@ -1,5 +1,5 @@
 # Created by: clement
-# $FreeBSD: head/irc/weechat/Makefile 441468 2017-05-22 16:04:19Z linimon $
+# $FreeBSD: head/irc/weechat/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	weechat
 PORTVERSION=	1.8
@@ -16,7 +16,7 @@ LIB_DEPENDS+=	libcurl.so:ftp/curl \
 		libgcrypt.so:security/libgcrypt \
 		libgpg-error.so:security/libgpg-error
 
-USES=		cmake:outsource ncurses tar:xz
+USES=		cmake:outsource,noninja ncurses tar:xz
 USE_LDCONFIG=	yes
 
 CMAKE_ARGS+=	-DENABLE_GUILE=no \

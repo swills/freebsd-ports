@@ -1,5 +1,5 @@
 # Created by: Randall Hopper <aa8vb@nc.rr.com>
-# $FreeBSD: head/graphics/osg-devel/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/graphics/osg-devel/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	osg
 PORTVERSION=	3.5.1
@@ -131,12 +131,6 @@ FORCE_IGNORE+=	ITK						# ports version doesn't build on 10.x
 FORCE_REQUIRE=	Threads OpenGL X11 JPEG PNG TIFF ZLIB		# common & lightweight
 
 .include <bsd.port.options.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1000000 && ${OSVERSION} < 1100000
-# workaround for make (?) problem leading to cflags
-# lost in osgjs
-USES+=			gmake
-.endif
 
 .if ${PORT_OPTIONS:MQT4} || ${PORT_OPTIONS:MQT5}
 CMAKE_ARGS+=		-DOSG_USE_QT:BOOL=ON

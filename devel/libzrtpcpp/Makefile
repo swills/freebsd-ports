@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/libzrtpcpp/Makefile 421974 2016-09-13 03:30:13Z marino $
+# $FreeBSD: head/devel/libzrtpcpp/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	libzrtpcpp
 PORTVERSION=	2.3.4
@@ -13,7 +13,7 @@ COMMENT=	ZRTP extension for GNU ccRTP
 LIB_DEPENDS=	libccrtp.so:devel/ccrtp \
 		libgcrypt.so:security/libgcrypt
 
-USES=		cmake pkgconfig ssl
+USES=		cmake:noninja pkgconfig ssl
 
 CMAKE_ARGS+=	-DBUILD_SHARED_LIBS:BOOL=ON \
 		-DOPENSSL_INCLUDE_DIRS="${OPENSSLINC}" \

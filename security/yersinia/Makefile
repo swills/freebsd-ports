@@ -1,5 +1,5 @@
 # Created by: se
-# $FreeBSD: head/security/yersinia/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/yersinia/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	yersinia
 PORTVERSION=	0.7.1
@@ -28,7 +28,6 @@ CONFLICTS=	yersinia-gtk-[0-9]*
 .endif
 GNU_CONFIGURE=	yes
 
-#NOT_FOR_ARCHS=	ia64 sparc64
 PLIST_FILES=	sbin/yersinia \
 		man/man8/yersinia.8.gz
 

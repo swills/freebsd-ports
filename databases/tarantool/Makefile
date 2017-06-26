@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/databases/tarantool/Makefile 441847 2017-05-27 15:07:11Z linimon $
+# $FreeBSD: head/databases/tarantool/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	tarantool
 PORTVERSION=	1.7.4.0
@@ -15,7 +15,7 @@ NOT_FOR_ARCHS=		armv6 powerpc64 sparc64
 NOT_FOR_ARCHS_REASON=	fails to build: Unsupported architecture
 
 MAKE_JOBS_UNSAFE=yes
-USES=		cmake compiler:c++11-lang gettext gmake perl5 readline
+USES=		cmake:noninja compiler:c++11-lang gettext gmake perl5 readline
 USE_LDCONFIG=	yes
 USE_RC_SUBR=	${PORTNAME}
 SUB_FILES=	pkg-message

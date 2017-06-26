@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/ruby-sdl/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/ruby-sdl/Makefile 444275 2017-06-25 15:02:34Z sunpoet $
 
 PORTNAME=	sdl
 PORTVERSION=	2.1.3.1
@@ -51,13 +51,11 @@ DOC_FILESEN=	*.rsd *ref.en.html
 OPTIONS_DEFINE=	DOCS EXAMPLES
 OPTIONS_SUB=	yes
 
-.include <bsd.port.options.mk>
-
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/ruby/site_ruby/${RUBY_VER}/*/sdl_ext.so
 	@${REINPLACE_CMD} -e 's|ruby|${LOCALBASE}/bin/ruby|g' ${WRKSRC}/doc/rsd.rb
 
-.if ${PORT_OPTIONS:MDOCS}
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}/ja
 	${INSTALL_DATA} ${DOC_FILES_WRKSRC_JA:S|^|${DOCSRCDIR1}/|} ${STAGEDIR}${DOCSDIR}/ja/
 	${INSTALL_DATA} ${DOC_FILES_WRKSRC_EN:S|^|${DOCSRCDIR1}/|} ${STAGEDIR}${DOCSDIR}
@@ -65,11 +63,9 @@ post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}/doc/ja
 	${INSTALL_DATA} ${DOC_FILESJA:S|^|${DOCSRCDIRJA}/|} ${STAGEDIR}${DOCSDIR}/doc/ja/
 	${INSTALL_DATA} ${DOC_FILESEN:S|^|${DOCSRCDIREN}/|} ${STAGEDIR}${DOCSDIR}/doc/
-.endif
 
-.if ${PORT_OPTIONS:MEXAMPLES}
+post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${WRKSRC}/sample/* ${STAGEDIR}${EXAMPLESDIR}
-.endif
 
 .include <bsd.port.mk>

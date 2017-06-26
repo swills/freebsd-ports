@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 443680 2017-06-16 09:20:07Z amdmi3 $
+# $FreeBSD: head/games/Makefile 444313 2017-06-25 17:26:23Z rene $
 #
 
     COMMENT = Games and related software
@@ -525,7 +525,6 @@
     SUBDIR += lgeneral
     SUBDIR += lianliankan
     SUBDIR += libdungeonmaker
-    SUBDIR += libgames-support
     SUBDIR += libggz
     SUBDIR += libgnome-games-support
     SUBDIR += libkdegames

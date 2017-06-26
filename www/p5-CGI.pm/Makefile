@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-CGI.pm/Makefile 379682 2015-02-23 14:52:19Z adamw $
+# $FreeBSD: head/www/p5-CGI.pm/Makefile 444209 2017-06-24 09:00:09Z amdmi3 $
 
 PORTNAME=	CGI.pm
 PORTVERSION=	3.63
@@ -19,6 +19,7 @@ CONFLICTS=	p5-CGI-[4-9]* p5-CGI-Fast-[0-9]*
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 EXAMPLES=	examples/caution.xbm examples/clickable_image.cgi \
 		examples/cookie.cgi examples/crash.cgi examples/customize.cgi \
@@ -36,6 +37,6 @@ post-patch:
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
-	@${INSTALL_DATA} ${EXAMPLES:S|^|${WRKSRC}/|} ${STAGEDIR}${EXAMPLESDIR}
+	${INSTALL_DATA} ${EXAMPLES:S|^|${WRKSRC}/|} ${STAGEDIR}${EXAMPLESDIR}
 
 .include <bsd.port.mk>

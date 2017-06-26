@@ -1,5 +1,5 @@
 # Created by: ismail@enderunix.org
-# $FreeBSD: head/mail/eps/Makefile 345330 2014-02-21 08:43:22Z ehaupt $
+# $FreeBSD: head/mail/eps/Makefile 444252 2017-06-25 00:44:11Z linimon $
 
 PORTNAME=	eps
 PORTVERSION=	1.7
@@ -7,18 +7,14 @@ PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	SF/${PORTNAME}inter7/${PORTNAME}inter7/${PORTVERSION}
 
-MAINTAINER=	ismail@EnderUNIX.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	EPS is a Email Parsing System
 
 OPTIONS_DEFINE=	DOCS
 
 USE_CSTD=	gnu89
 
-.include <bsd.port.pre.mk>
-
-.if ${ARCH} == "amd64" || ${ARCH} == "ia64"
-CFLAGS+=	-fPIC
-.endif
+CFLAGS_amd64=	-fPIC
 
 PORTDOCS=	howto
 
@@ -36,4 +32,4 @@ do-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

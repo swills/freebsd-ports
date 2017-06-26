@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/databases/percona56-server/Makefile 441395 2017-05-21 13:21:04Z linimon $
+# $FreeBSD: head/databases/percona56-server/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME?=	percona
 DISTVERSION=	5.6.35-80.0
@@ -17,7 +17,7 @@ NOT_FOR_ARCHS_REASON=	unsupported platform
 
 SLAVEDIRS=	databases/percona56-client \
 		databases/percona-pam-for-mysql
-USES=		bison cmake perl5 shebangfix
+USES=		bison cmake:noninja perl5 shebangfix
 
 OPTIONS_DEFINE=	OPENSSL FASTMTX INNODBMEMCACHED TOKUDB
 OPTIONS_DEFAULT=	OPENSSL INNODBMEMCACHED

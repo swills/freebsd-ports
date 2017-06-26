@@ -1,5 +1,5 @@
 # Created by: Anton Tornqvist <antont@inbox.lv>
-# $FreeBSD: head/editors/neovim/Makefile 441505 2017-05-23 05:51:18Z miwi $
+# $FreeBSD: head/editors/neovim/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	neovim
 PORTVERSION=	0.2.0
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libunibilium.so:devel/unibilium \
 		libuv.so:devel/libuv \
 		libmsgpackc.so:devel/msgpack
 
-USES=		cmake:outsource gettext iconv ninja lua:build pathfix pkgconfig
+USES=		cmake:outsource gettext iconv lua:build pathfix pkgconfig
 USE_GITHUB=	yes
 GH_TUPLE=	libmpack:libmpack:1.0.5:libmpack \
 		libmpack:libmpack-lua:1.0.6:libmpack_lua

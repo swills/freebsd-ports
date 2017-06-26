@@ -1,7 +1,8 @@
-# $FreeBSD: head/lang/erlang-java/Makefile 442948 2017-06-08 18:24:13Z olgeni $
+# $FreeBSD: head/lang/erlang-java/Makefile 444236 2017-06-24 18:34:56Z olgeni $
 
 PORTNAME=	erlang
 PORTVERSION=	19.3.6
+PORTEPOCH=	1
 CATEGORIES=	lang parallel java
 MASTER_SITES=	http://www.erlang.org/download/:erlangorg		\
 		http://erlang.stacken.kth.se/download/:erlangorg	\

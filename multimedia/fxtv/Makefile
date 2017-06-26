@@ -1,5 +1,5 @@
 # Created by: Randall Hopper <aa8vb@nc.rr.com>
-# $FreeBSD: head/multimedia/fxtv/Makefile 434932 2017-02-27 12:51:52Z amdmi3 $
+# $FreeBSD: head/multimedia/fxtv/Makefile 444237 2017-06-24 18:36:19Z linimon $
 
 PORTNAME=	fxtv
 PORTVERSION=	1.03
@@ -15,7 +15,7 @@ LICENSE=	BSD2CLAUSE
 LIB_DEPENDS=	libtiff.so:graphics/tiff \
 		libXaw3d.so:x11-toolkits/Xaw3d
 
-ONLY_FOR_ARCHS=	i386 ia64 amd64
+ONLY_FOR_ARCHS=	amd64 i386
 
 USES=		gmake jpeg tar:tgz
 MAKE_ENV=	X11BASE=${LOCALBASE}

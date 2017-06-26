@@ -1,5 +1,5 @@
 # Created by: Garrett Rooney <rooneg@electricjellyfish.net>
-# $FreeBSD: head/devel/apr2/Makefile 423591 2016-10-09 12:10:02Z jbeich $
+# $FreeBSD: head/devel/apr2/Makefile 444221 2017-06-24 16:31:26Z linimon $
 
 PORTNAME=	apr
 PORTVERSION=	2.0.${SNAPDATE}
@@ -16,7 +16,7 @@ LICENSE=	APACHE20
 
 LIB_DEPENDS=	libexpat.so:textproc/expat2
 
-NO_PACKAGE=	Developper only package
+NO_PACKAGE=	Developer only package
 
 # r1676013
 SNAPDATE=	20150425134304

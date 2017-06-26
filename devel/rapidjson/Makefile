@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/rapidjson/Makefile 441826 2017-05-27 05:26:56Z danfe $
+# $FreeBSD: head/devel/rapidjson/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	rapidjson
 PORTVERSION=	1.1.0
@@ -36,7 +36,6 @@ EXAMPLES_CMAKE_ON=	-DRAPIDJSON_BUILD_EXAMPLES:BOOL=ON
 EXAMPLES_CMAKE_OFF=	-DRAPIDJSON_BUILD_EXAMPLES:BOOL=OFF
 
 CXXFLAGS+=	-Wno-c++98-compat # for EXAMPLES option, due to this bug: https://github.com/miloyip/rapidjson/issues/761
-MAKE_ARGS=	CXX="${CXX}" CXXFLAGS="${CXXFLAGS}"
 CMAKE_ARGS=	-DRAPIDJSON_BUILD_TESTS:BOOL=OFF
 
 DATADIR=	${PREFIX}/share/doc/RapidJSON

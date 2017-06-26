@@ -1,5 +1,5 @@
 # Created by: Brian Handy <handy@physics.montana.edu>
-# $FreeBSD: head/sysutils/xosview/Makefile 418227 2016-07-08 14:47:16Z amdmi3 $
+# $FreeBSD: head/sysutils/xosview/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	xosview
 PORTVERSION=	1.17
@@ -12,8 +12,8 @@ COMMENT=	Graphical performance meter
 LICENSE=	BSD4CLAUSE GPLv2
 LICENSE_COMB=	multi
 
-ONLY_FOR_ARCHS=	amd64 i386 ia64
-ONLY_FOR_ARCHS_REASON=	used i386-specific hardware resources
+ONLY_FOR_ARCHS=		amd64 i386
+ONLY_FOR_ARCHS_REASON=	uses x86-specific hardware resources
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	hills

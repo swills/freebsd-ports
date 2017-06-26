@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/textproc/zxing-cpp/Makefile 428794 2016-12-17 18:02:09Z riggs $
+# $FreeBSD: head/textproc/zxing-cpp/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	zxing-cpp
 PORTVERSION=	0.20161114
@@ -16,6 +16,6 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	glassechidna
 GH_TAGNAME=	97e9c5c
 
-USES=		cmake:outsource gmake iconv
+USES=		cmake:outsource iconv
 
 .include <bsd.port.mk>

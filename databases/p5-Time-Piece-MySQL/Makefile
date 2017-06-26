@@ -1,9 +1,9 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/databases/p5-Time-Piece-MySQL/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-Time-Piece-MySQL/Makefile 444149 2017-06-22 23:42:14Z sunpoet $
 
 PORTNAME=	Time-Piece-MySQL
 PORTVERSION=	0.06
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -11,9 +11,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Time::Piece::MySQL - Adds MySQL-specific methods to Time::Piece
 
-BUILD_DEPENDS=	p5-Time-Piece>=0:devel/p5-Time-Piece
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+LICENSE=	ART10 GPLv1
+LICENSE_COMB=	dual
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

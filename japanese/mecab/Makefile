@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/japanese/mecab/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/japanese/mecab/Makefile 444226 2017-06-24 16:31:50Z sunpoet $
 
 PORTNAME=	mecab
 PORTVERSION=	0.996
@@ -7,7 +7,7 @@ PORTREVISION=	3
 CATEGORIES=	japanese textproc
 MASTER_SITES=	https://drive.google.com/uc?export=download&id=0B4y35FiV1wh7cENtOXlicTFaRUE&dummy=/
 
-MAINTAINER=	yasu@utahime.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Yet Another Part-of-Speech and Morphological Analyzer
 
 LICENSE=	BSD3CLAUSE GPLv2 LGPL21

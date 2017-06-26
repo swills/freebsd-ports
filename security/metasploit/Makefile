@@ -1,8 +1,8 @@
 # Created by: Yonatan <onatan@gmail.com>
-# $FreeBSD: head/security/metasploit/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/security/metasploit/Makefile 444248 2017-06-24 21:29:35Z antoine $
 
 PORTNAME=	metasploit
-PORTVERSION=	4.14.25
+PORTVERSION=	4.14.28
 CATEGORIES=	security
 
 MAINTAINER=	tanawts@gmail.com
@@ -111,6 +111,7 @@ post-patch:
 		/rb-readline/d ; \
 		/metasploit-aggregator/d' \
 		${WRKSRC}/metasploit-framework.gemspec
+	${REINPLACE_CMD} "/pg/s|, '0.20.0'||" ${WRKSRC}/metasploit-framework.gemspec
 .if ${RUBY_VER} < 2.4
 	${REINPLACE_CMD} '/xmlrpc/d' ${WRKSRC}/metasploit-framework.gemspec
 .endif

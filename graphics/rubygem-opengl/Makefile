@@ -1,9 +1,8 @@
 # Created by: Steve Wills <steve@meatwad.mouf.net>
-# $FreeBSD: head/graphics/rubygem-opengl/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/rubygem-opengl/Makefile 444274 2017-06-25 15:02:29Z sunpoet $
 
 PORTNAME=	opengl
-PORTVERSION=	0.9.2
-PORTREVISION=	1
+PORTVERSION=	0.10.0
 PORTEPOCH=	1
 CATEGORIES=	graphics ruby
 MASTER_SITES=	RG
@@ -13,6 +12,7 @@ MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	OpenGL wrapper for Ruby
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
 USE_GL=		glut
 USE_RUBY=	yes

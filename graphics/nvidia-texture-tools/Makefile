@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/nvidia-texture-tools/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/nvidia-texture-tools/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	nvidia-texture-tools
 PORTVERSION=	2.0.8.1 # needed to not bump PORTEPOCH; remove on next update
@@ -16,7 +16,6 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 		libtiff.so:graphics/tiff \
 		libIlmImf.so:graphics/OpenEXR
 
-BROKEN_ia64=	does not build
 BROKEN_powerpc=	does not build
 BROKEN_sparc64=	does not build
 
@@ -32,7 +31,8 @@ CXXFLAGS+=	-fPIC
 
 PORTDOCS=	NVIDIA_Texture_Tools_README.txt ChangeLog
 
-ONLY_FOR_ARCHS=	i386 amd64 powerpc powerpc64 # see src/nvcore/nvcore.h
+# see src/nvcore/nvcore.h
+ONLY_FOR_ARCHS=	amd64 i386 powerpc powerpc64
 
 OPTIONS_DEFINE=	COMPRESSUI DOCS
 OPTIONS_SUB=	yes

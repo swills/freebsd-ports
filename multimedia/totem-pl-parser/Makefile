@@ -1,8 +1,8 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/multimedia/totem-pl-parser/Makefile 442379 2017-06-02 12:07:29Z kwm $
+# $FreeBSD: head/multimedia/totem-pl-parser/Makefile 444173 2017-06-23 09:44:32Z kwm $
 
 PORTNAME=	totem-pl-parser
-PORTVERSION=	3.10.7
+PORTVERSION=	3.10.8
 CATEGORIES=	multimedia gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2
@@ -31,5 +31,9 @@ OPTIONS_DEFAULT=QUVI
 QUVI_DESC=	Flash media stream URL support
 QUVI_CONFIGURE_ENABLE=	quvi
 QUVI_LIB_DEPENDS=	libquvi-0.9.so:multimedia/libquvi09
+
+post-patch:
+	@${REINPLACE_CMD} -e 's|gmime-3.0|disabled-gmime-3.0|g' \
+		${WRKSRC}/configure
 
 .include <bsd.port.mk>

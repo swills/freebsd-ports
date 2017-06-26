@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/net/py-libdnet/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/py-libdnet/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 CATEGORIES=	net python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -7,9 +7,6 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 COMMENT=	Python module for libdnet
 
 LIB_DEPENDS=	libdnet.so:net/libdnet
-
-NOT_FOR_ARCHS=	ia64
-NOT_FOR_ARCHS_REASON_ia64=	fails to build with internal compiler error
 
 MASTERDIR=	${.CURDIR}/../libdnet
 INSTALL_WRKSRC=	${WRKSRC}/python

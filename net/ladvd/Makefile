@@ -1,13 +1,12 @@
 # Created by: sten@blinkenlights.nl
-# $FreeBSD: head/net/ladvd/Makefile 437080 2017-03-27 19:28:54Z sunpoet $
+# $FreeBSD: head/net/ladvd/Makefile 444207 2017-06-24 02:09:29Z woodsb02 $
 
 PORTNAME=	ladvd
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 DISTVERSIONPREFIX=v
-PORTREVISION=	2
 CATEGORIES=	net
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	woodsb02@FreeBSD.org
 COMMENT=	Minimal LLDP/CDP/EDP/FDP/NDP sender daemon
 
 LICENSE=	MIT

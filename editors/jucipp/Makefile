@@ -1,5 +1,5 @@
 # Created by: Mohammad S. Babaei <info@babaei.net>
-# $FreeBSD: head/editors/jucipp/Makefile 443465 2017-06-12 20:21:12Z ultima $
+# $FreeBSD: head/editors/jucipp/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	jucipp
 PORTVERSION=	1.2.4
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libaspell.so:textproc/aspell \
 		libclang.so:devel/llvm40
 
 USE_GNOME=	gdkpixbuf2 gtkmm30 gtksourceviewmm3
-USES=		cmake:outsource desktop-file-utils ninja pkgconfig
+USES=		cmake:outsource desktop-file-utils pkgconfig
 INSTALLS_ICONS=	yes
 
 USE_GITHUB=	yes

@@ -1,5 +1,5 @@
 # Created by: Golyashov Sergei <svvord@mail.ru>
-# $FreeBSD: head/devel/kdevelop-kde4/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/devel/kdevelop-kde4/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	kdevelop
 DISTVERSION=	${KDEVELOP_VERSION}
@@ -14,7 +14,7 @@ COMMENT=	Plugin extensible IDE for KDE
 LIB_DEPENDS=	libkdevplatforminterfaces.so:devel/kdevplatform
 RUN_DEPENDS=	gmake:devel/gmake
 
-USES=		cmake:outsource compiler:c++11-lib gmake kde:4 \
+USES=		cmake:outsource compiler:c++11-lib kde:4 \
 		shared-mime-info tar:xz
 USE_KDE=	kdelibs workspace automoc4
 USE_QT4=	qmake_build moc_build uic_build rcc_build \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/uhd/Makefile 442624 2017-06-05 14:49:04Z rakuco $
+# $FreeBSD: head/comms/uhd/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	uhd
 PORTVERSION=	3.9.5
@@ -26,7 +26,7 @@ CONFLICTS=	usrp-[0-9]*
 
 BROKEN_powerpc64=	fails to link: undefined reference to boost function
 
-USES=		compiler:c++0x cmake:outsource gmake ncurses pkgconfig \
+USES=		compiler:c++0x cmake:outsource ncurses pkgconfig \
 		dos2unix python:2.7 shebangfix
 USE_LDCONFIG=		yes
 CMAKE_SOURCE_PATH=	${WRKSRC}/host

@@ -1,8 +1,8 @@
 # Created by: Iblis Lin <iblis@hs.ntnu.edu.tw>
-# $FreeBSD: head/net/libwebsockets/Makefile 427365 2016-11-29 07:37:49Z lwhsu $
+# $FreeBSD: head/net/libwebsockets/Makefile 444190 2017-06-23 20:53:11Z ultima $
 
 PORTNAME=	libwebsockets
-PORTVERSION=	2.1.0
+PORTVERSION=	2.1.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net devel
 MASTER_SITES=	GITHUB

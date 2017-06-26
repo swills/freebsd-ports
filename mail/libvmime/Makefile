@@ -1,5 +1,5 @@
 # Created by: delphij@FreeBSD.org
-# $FreeBSD: head/mail/libvmime/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/mail/libvmime/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	libvmime
 PORTVERSION=	0.9.2
@@ -20,7 +20,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	kisli
 GH_PROJECT=	vmime
 
-USES=		cmake:outsource compiler:c++11-lib iconv pkgconfig
+USES=		cmake:outsource,noninja compiler:c++11-lib iconv pkgconfig
 USE_LDCONFIG=	yes
 
 CMAKE_ARGS=	-DLIB_SUFFIX:STRING="" \

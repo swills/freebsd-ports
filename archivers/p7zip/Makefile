@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@jelal.kn-bremen.de>
-# $FreeBSD: head/archivers/p7zip/Makefile 427423 2016-11-30 12:44:03Z rakuco $
+# $FreeBSD: head/archivers/p7zip/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	p7zip
 PORTVERSION=	16.02
@@ -22,7 +22,6 @@ WRKSRC=		${WRKDIR}/${PORTNAME}_${PORTVERSION}
 
 CFLAGS_aarch64=	-fPIC
 CFLAGS_amd64=	-fPIC
-CFLAGS_ia64=	-fPIC
 CFLAGS_powerpc=	-fPIC
 CFLAGS_sparc64=	-fPIC
 

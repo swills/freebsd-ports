@@ -1,5 +1,5 @@
 # Created by: Serge Gagnon <serge.gagnon@b2b2c.ca>
-# $FreeBSD: head/devel/plan9port/Makefile 438455 2017-04-13 17:13:33Z ak $
+# $FreeBSD: head/devel/plan9port/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	plan9port
 PORTVERSION=	20170210
@@ -17,13 +17,11 @@ GH_ACCOUNT=	9fans
 GH_TAGNAME=	9f34853
 USE_GITHUB=	yes
 
-BROKEN_ia64=	does not install: cleanname not found
-BROKEN_sparc64=	does not install: cleanname not found
-
 LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 		libfontconfig.so:x11-fonts/fontconfig
-
 RUN_DEPENDS=	rc:shells/rc
+
+BROKEN_sparc64=	does not install: cleanname not found
 
 USES=		perl5 shebangfix tar:tgz
 SHEBANG_LANG=	rc

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/erlang-erlware_commons/Makefile 428279 2016-12-10 10:38:52Z olgeni $
+# $FreeBSD: head/devel/erlang-erlware_commons/Makefile 444180 2017-06-23 13:50:20Z olgeni $
 
 PORTNAME=	erlware_commons
 PORTVERSION=	0.22.0
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

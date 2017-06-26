@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/teeworlds/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/teeworlds/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	teeworlds
 PORTVERSION=	0.6.4
@@ -32,10 +32,6 @@ OPTIONS_DEFINE=	SERVER_ONLY
 SERVER_ONLY_DESC=Build dedicated server only
 
 .include <bsd.port.options.mk>
-
-.if ${ARCH} == "ia64"
-BROKEN=		Does not install on ia64: gets bus error
-.endif
 
 .if ${PORT_OPTIONS:MSERVER_ONLY}
 BAM_TARGET=	server_release

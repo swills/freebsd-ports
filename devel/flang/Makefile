@@ -1,5 +1,5 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/devel/flang/Makefile 441559 2017-05-24 03:21:57Z jmd $
+# $FreeBSD: head/devel/flang/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	flang
 DISTVERSION=	3.9-20170522
@@ -26,7 +26,7 @@ OPTIONS_DEFINE=	TESTS
 TESTS_DESC=	build unit tests for flang
 
 USE_LDCONFIG=	${PREFIX}/flang/lib
-USES=		cmake:outsource compiler:c++11-lib libedit perl5 tar:xz \
+USES=		cmake:outsource,noninja compiler:c++11-lib libedit perl5 tar:xz \
 		shebangfix
 _USES_PYTHON?=	python:build
 USES+=		${_USES_PYTHON}

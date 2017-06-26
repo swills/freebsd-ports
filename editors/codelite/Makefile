@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/editors/codelite/Makefile 441814 2017-05-26 20:02:44Z linimon $
+# $FreeBSD: head/editors/codelite/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	codelite
 PORTVERSION=	10.0
@@ -19,7 +19,7 @@ BROKEN_armv6=		fails to configure: has leading or trailing whitespace.  This is 
 USE_GITHUB=	yes
 GH_ACCOUNT=	eranif
 
-USES=		cmake:outsource compiler:c++11-lib dos2unix execinfo gettext \
+USES=		cmake:outsource,noninja compiler:c++11-lib dos2unix execinfo gettext \
 		pathfix shebangfix sqlite
 USE_GNOME+=	cairo gtk20
 DOS2UNIX_GLOB=	*.cpp *.txt

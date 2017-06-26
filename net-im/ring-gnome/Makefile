@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net-im/ring-gnome/Makefile 443492 2017-06-13 08:14:34Z kwm $
+# $FreeBSD: head/net-im/ring-gnome/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	ring-gnome
 PORTVERSION=	0.160516
@@ -30,7 +30,7 @@ GH_TUPLE+=	savoirfairelinux:ring-client-gnome:07107e9
 
 SUB_FILES=	pkg-message
 
-USES=		cmake compiler:c++14-lang gettext gmake pkgconfig shebangfix sqlite
+USES=		cmake compiler:c++14-lang gettext pkgconfig shebangfix sqlite
 USE_GNOME=	evolutiondataserver3 glib20 gtk20 cairo gdkpixbuf2 libxml2 gtk30
 USE_XORG=	x11 xcomposite xdamage xext xfixes xi xrandr xscrnsaver
 USE_GL=		gl egl

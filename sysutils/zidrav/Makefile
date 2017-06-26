@@ -1,5 +1,5 @@
 # Created by: Cosmin Stroe <cstroe1@uic.edu>
-# $FreeBSD: head/sysutils/zidrav/Makefile 362126 2014-07-17 08:57:51Z olgeni $
+# $FreeBSD: head/sysutils/zidrav/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	zidrav
 PORTVERSION=	1.2.0
@@ -28,9 +28,7 @@ CFLAGS+=	-Dcrc32_type=long
 CFLAGS+=	-Dcrc32_type=int
 .endif
 
-.if ${ARCH} == "amd64" || ${ARCH} == "arm" || ${ARCH} == "i386" || ${ARCH} == "ia64"
-.else
-# mips*eb, powerpc, powerpc64 and sparc
+.if ! empty(ARCH:Mmips*) || ! empty(ARCH:Mpowerpc*) || ${ARCH} == "sparc64"
 CFLAGS+=	-DCPU_BIGENDIAN
 .endif
 

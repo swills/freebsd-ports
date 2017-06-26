@@ -1,5 +1,5 @@
 # Created by: Igor Pokrovsky <tiamat@comset.net>
-# $FreeBSD: head/games/vavoom/Makefile 442564 2017-06-04 15:10:58Z bar $
+# $FreeBSD: head/games/vavoom/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	vavoom
 PORTVERSION=	1.33
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
-USES=		cmake dos2unix jpeg tar:bzip2
+USES=		cmake:noninja dos2unix jpeg tar:bzip2
 DOS2UNIX_REGEX=	((.*\.(c|cpp|h|s|asm|inc|vc|ls|acs|cfg|txt|vs|mak|mgw"))$$|\/(makefile\..*|makefile|Makefile)$$)
 
 OPTIONS_DEFINE=	FLAC LAUNCHER MAD MIKMOD OPENAL OPTIMIZED_CFLAGS VORBIS SDL DOCS

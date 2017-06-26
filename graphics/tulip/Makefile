@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/tulip/Makefile 441468 2017-05-22 16:04:19Z linimon $
+# $FreeBSD: head/graphics/tulip/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	tulip
 PORTVERSION=	4.10.0
@@ -22,7 +22,7 @@ BROKEN_powerpc64=	fails to link: libOGDF.so: undefined reference to CoinPackedVe
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
-USES=		cmake:outsource compiler:c++11-lib dos2unix execinfo jpeg python \
+USES=		cmake:outsource,noninja compiler:c++11-lib dos2unix execinfo jpeg python \
 		shebangfix
 SHEBANG_FILES=	tulip-config.in
 DOS2UNIX_FILES=	software/tulip/src/main.cpp

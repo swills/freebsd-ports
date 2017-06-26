@@ -1,5 +1,5 @@
 # Created by: Eric L. Camachat <eric@camachat.org>
-# $FreeBSD: head/chinese/ibus-chewing/Makefile 418436 2016-07-12 19:17:06Z pawel $
+# $FreeBSD: head/chinese/ibus-chewing/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	ibus-chewing
 PORTVERSION=	1.5.1
@@ -20,7 +20,7 @@ CMAKE_ARGS=	-DSYSCONF_INSTALL_DIR=${PREFIX}/etc \
 		-DLIB_DIR=${PREFIX}/lib
 LDFLAGS+=	-L${LOCALBASE}/lib
 GLIB_SCHEMAS=	org.freedesktop.IBus.Chewing.gschema.xml
-USES=		cmake gettext pkgconfig
+USES=		cmake:noninja gettext pkgconfig
 USE_GNOME=	gtk20
 USE_XORG=	xtst
 

@@ -1,5 +1,5 @@
 # Created by: gena
-# $FreeBSD: head/x11-toolkits/xforms/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11-toolkits/xforms/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	xforms
 DISTVERSION=	1.2.4
@@ -28,7 +28,5 @@ INSTALL_TARGET=	install-strip
 post-patch:
 	${REINPLACE_CMD} 's|#define fl_draw_box|#define fl_drw_box|'	\
 		${WRKSRC}/lib/include/Basic.h
-
-BROKEN_ia64=	Does not compile on ia64
 
 .include <bsd.port.mk>

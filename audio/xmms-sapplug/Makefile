@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/xmms-sapplug/Makefile 419819 2016-08-08 11:22:55Z ehaupt $
+# $FreeBSD: head/audio/xmms-sapplug/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	xmms-sapplug
 DISTVERSION=	0.3f
@@ -28,7 +28,6 @@ PLIST_FILES=	lib/xmms/Input/libsap.so
 OPTIONS_DEFINE=	OPTIMIZED_CFLAGS
 
 CFLAGS_amd64=	-fpic -DPIC
-CFLAGS_ia64=	-fpic -DPIC
 
 .include <bsd.port.pre.mk>
 

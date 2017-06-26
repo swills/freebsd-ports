@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/mitsuba/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/mitsuba/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	mitsuba
 PORTVERSION=	0.5.0
@@ -48,7 +48,6 @@ post-patch:
 
 post-install:
 # XXX: palliative; better fix installation routine not to pollute ${STAGEDIR}
-	@${RMDIR} ${STAGEDIR}${PREFIX}/share/mitsuba/data/ior/CMakeFiles/ior_database.dir
 	@${RMDIR} ${STAGEDIR}${PREFIX}/share/mitsuba/data/ior/CMakeFiles
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Tomoyuki Sakurai <cherry@trombik.org>
-# $FreeBSD: head/sysutils/rubygem-facter/Makefile 420338 2016-08-17 11:51:50Z robak $
+# $FreeBSD: head/sysutils/rubygem-facter/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	facter
 PORTVERSION=	2.4.6
@@ -25,8 +25,8 @@ OPTIONS_DEFAULT=	ZFS_FACTS
 
 .include <bsd.port.pre.mk>
 
-# Restrict dmidecode dependency to Intel based systems
-.if ${ARCH} == "amd64" || ${ARCH} == "i386" || ${ARCH} == "ia64"
+# Restrict dmidecode dependency to x86-based systems
+.if ${ARCH} == "amd64" || ${ARCH} == "i386"
 RUN_DEPENDS+=	dmidecode:sysutils/dmidecode
 .endif
 

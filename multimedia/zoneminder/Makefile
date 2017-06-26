@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/zoneminder/Makefile 442667 2017-06-05 15:26:50Z amdmi3 $
+# $FreeBSD: head/multimedia/zoneminder/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	zoneminder
 PORTVERSION=	1.30.4
@@ -34,7 +34,7 @@ USE_GITHUB=	yes
 GH_PROJECT=	ZoneMinder
 GH_TUPLE=	FriendsOfCake:crud:c3976f1:crud
 
-USES=		cmake jpeg mysql perl5 php shebangfix ssl
+USES=		cmake:noninja jpeg mysql perl5 php shebangfix ssl
 USE_RC_SUBR=	zoneminder
 USE_PHP=	json pdo_mysql session gd sockets ctype opcache
 

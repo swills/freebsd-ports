@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-jupyter_client/Makefile 437817 2017-04-05 19:58:04Z sunpoet $
+# $FreeBSD: head/devel/py-jupyter_client/Makefile 444229 2017-06-24 16:32:23Z sunpoet $
 
 PORTNAME=	jupyter_client
-PORTVERSION=	5.0.1
+PORTVERSION=	5.1.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

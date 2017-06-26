@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/rubygem-scrypt/Makefile 436639 2017-03-21 20:39:28Z sunpoet $
+# $FreeBSD: head/security/rubygem-scrypt/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	scrypt
 PORTVERSION=	3.0.5
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	rubygem-ffi-compiler>=1.0:devel/rubygem-ffi-compiler
 
-ONLY_FOR_ARCHS=	amd64 i386 ia64
+ONLY_FOR_ARCHS=		amd64 i386
 ONLY_FOR_ARCHS_REASON=	invokes SSE compiler flags
 
 NO_ARCH=	yes

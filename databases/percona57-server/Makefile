@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/databases/percona57-server/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/databases/percona57-server/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME?=	percona
 DISTVERSION=	5.7.16-10
@@ -24,7 +24,7 @@ BROKEN_powerpc64=	Does not build
 
 SLAVEDIRS=	databases/percona57-client \
 		databases/percona57-pam-for-mysql
-USES=		bison:build cmake compiler:c11 compiler:c++11-lib \
+USES=		bison:build cmake:noninja compiler:c11 compiler:c++11-lib \
 		cpe libedit localbase perl5 shebangfix
 
 MY_DBDIR=	/var/db/mysql

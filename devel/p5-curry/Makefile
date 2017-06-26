@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-curry/Makefile 393020 2015-07-27 19:25:20Z sunpoet $
+# $FreeBSD: head/devel/p5-curry/Makefile 444217 2017-06-24 16:31:09Z sunpoet $
 
 PORTNAME=	curry
-PORTVERSION=	1.000000
+PORTVERSION=	1.001000
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:MSTROUT

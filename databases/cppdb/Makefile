@@ -1,5 +1,5 @@
 # Created by: Mohammad S. Babaei <info@babaei.net>
-# $FreeBSD: head/databases/cppdb/Makefile 418664 2016-07-17 11:28:46Z riggs $
+# $FreeBSD: head/databases/cppdb/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	cppdb
 PORTVERSION=	0.3.1
@@ -41,7 +41,7 @@ SQLITE3_INTERNAL_DESC=	Link SQLite 3 backend into CppDB
 SQLITE3_MODULE_DESC=	Build SQLite 3 backend as a CppDB module
 
 USE_LDCONFIG=	yes
-USES=		cmake:outsource ninja tar:bzip2
+USES=		cmake:outsource tar:bzip2
 
 .include <bsd.port.options.mk>
 

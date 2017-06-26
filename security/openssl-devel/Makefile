@@ -1,5 +1,5 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/security/openssl-devel/Makefile 443880 2017-06-19 16:06:12Z mat $
+# $FreeBSD: head/security/openssl-devel/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	openssl
 PORTVERSION=	1.1.0f
@@ -33,9 +33,6 @@ OPTIONS_GROUP_PROTOCOLS=	NEXTPROTONEG SCTP SSL3
 OPTIONS_DEFINE=	MAN3 RFC3779 SHARED ZLIB
 
 .if ${MACHINE_ARCH} == "amd64"
-OPTIONS_GROUP_OPTIMIZE+=	EC
-OPTIONS_DEFAULT+=		EC
-.elif ${MACHINE_ARCH} == "ia64"
 OPTIONS_GROUP_OPTIMIZE+=	EC
 OPTIONS_DEFAULT+=		EC
 .elif ${MACHINE_ARCH} == "mips64el"

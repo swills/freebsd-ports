@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-humanfriendly/Makefile 442375 2017-06-02 11:05:54Z araujo $
+# $FreeBSD: head/textproc/py-humanfriendly/Makefile 444268 2017-06-25 15:01:57Z sunpoet $
 
 PORTNAME=	humanfriendly
-PORTVERSION=	3.2
+PORTVERSION=	3.3
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 NO_ARCH=	yes
 USES?=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.pre.mk>
 

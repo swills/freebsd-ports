@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/erlang-cuttlefish/Makefile 430592 2017-01-04 20:45:21Z olgeni $
+# $FreeBSD: head/devel/erlang-cuttlefish/Makefile 444180 2017-06-23 13:50:20Z olgeni $
 
 PORTNAME=	cuttlefish
 PORTVERSION=	2.0.11
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

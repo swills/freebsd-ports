@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/yasm/Makefile 416684 2016-06-10 17:05:07Z riggs $
+# $FreeBSD: head/devel/yasm/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	yasm
 PORTVERSION=	1.3.0
@@ -19,12 +19,6 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 NLS_USES=	gettext iconv
 NLS_CONFIGURE_OFF=--disable-nls --without-libiconv-prefix --without-libintl-prefix
 
-.include <bsd.port.pre.mk>
-
-.if ${ARCH} == "ia64"
-CFLAGS:=	${CFLAGS:C/-O[0-9]//g}
-.endif
-
 INSTALL_TARGET=	install install-man
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

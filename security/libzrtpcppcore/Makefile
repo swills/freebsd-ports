@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/libzrtpcppcore/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/security/libzrtpcppcore/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	libzrtpcppcore
 PORTVERSION=	4.6.4
@@ -16,7 +16,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	wernerd
 GH_PROJECT=	ZRTPCPP
 
-USES=		cmake:outsource compiler:c++11-lib
+USES=		cmake:outsource,noninja compiler:c++11-lib
 USE_CXXSTD=	c++11
 CMAKE_ARGS=	-DCORE_LIB:BOOL=ON
 USE_LDCONFIG=	yes

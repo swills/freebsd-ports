@@ -1,5 +1,5 @@
 # Created by: Alexander Best <arundel@gmx.net>
-# $FreeBSD: head/emulators/vba/Makefile 433097 2017-02-01 20:22:05Z jbeich $
+# $FreeBSD: head/emulators/vba/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	vba
 PORTVERSION=	1.7.2
@@ -15,6 +15,9 @@ LICENSE=	GPLv2
 
 BUILD_DEPENDS=	nasm:devel/nasm
 LIB_DEPENDS=	libpng.so:graphics/png
+
+BROKEN_powerpc=		Runaway cc1plus process
+BROKEN_sparc64=		Runaway cc1plus process
 
 USES=		gettext gmake
 GNU_CONFIGURE=	yes
@@ -38,10 +41,6 @@ GTK2_CONFIGURE_ON=	--enable-gtk=2.4
 GTK2_LIB_DEPENDS=	libglademm-2.4.so:devel/libglademm24
 GTK2_USES=		pkgconfig
 PROFILING_CONFIGURE_ENABLE=	profiling
-
-BROKEN_ia64=	Runaway cc1plus process
-BROKEN_powerpc=	Runaway cc1plus process
-BROKEN_sparc64=	Runaway cc1plus process
 
 .include <bsd.port.options.mk>
 

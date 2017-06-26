@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/pcre2/Makefile 411535 2016-03-21 02:47:59Z feld $
+# $FreeBSD: head/devel/pcre2/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	pcre2
 PORTVERSION=	10.21
@@ -38,7 +38,7 @@ READLINE_CONFIGURE_ENABLE=	pcre2test-libreadline
 
 .include <bsd.port.options.mk>
 
-.if ${ARCH} != "sparc64" && ${ARCH} != "ia64" && ${ARCH:Mmips64*} == ""
+.if ${ARCH} != "sparc64" && ${ARCH:Mmips64*} == ""
 CONFIGURE_ARGS+=	--enable-jit
 .else
 CONFIGURE_ARGS+=	--disable-jit

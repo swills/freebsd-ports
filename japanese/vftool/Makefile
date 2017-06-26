@@ -1,5 +1,5 @@
 # Created by: KIRIYAMA Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
-# $FreeBSD: head/japanese/vftool/Makefile 431402 2017-01-13 16:54:55Z mat $
+# $FreeBSD: head/japanese/vftool/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	vftool
 PORTVERSION=	1.2
@@ -25,8 +25,6 @@ AFMDIR=		${PREFIX}/share/fonts/afm
 FONTSDIR=	${PREFIX}/share/fonts
 JFMDIR=		${WRKDIR}/share/texmf/fonts/tfm/ptex
 TARGETDIRS=	vf-n2a vf-a2n vf-a2bk vf-p2pn
-
-BROKEN_ia64=	Coredump during build on ia64
 
 OPTIONS_DEFINE=	DOCS
 

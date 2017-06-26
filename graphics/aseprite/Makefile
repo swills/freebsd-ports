@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/aseprite/Makefile 441881 2017-05-27 22:16:50Z linimon $
+# $FreeBSD: head/graphics/aseprite/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=		aseprite
 PORTVERSION=		1.1.13
@@ -45,7 +45,7 @@ GH_TUPLE+=		aseprite:laf:e6d79aa:laf/laf
 GH_TUPLE+=		aseprite:stringencoders:f963507:stringencoders/laf/third_party/stringencoders
 GH_TUPLE+=		dacap:observable:27fa7f6:observable/src/observable
 
-USES=			cmake:outsource compiler:c++11-lib jpeg ninja pkgconfig
+USES=			cmake:outsource compiler:c++11-lib jpeg pkgconfig
 USE_XORG=		x11 xcursor xext xpm ice pixman sm xxf86dga xxf86vm
 USE_LDCONFIG=		yes
 

@@ -1,5 +1,5 @@
 # Created by: Oliver Breuninger <ob@seicom.NET>
-# $FreeBSD: head/lang/oo2c/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/lang/oo2c/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	oo2c
 PORTVERSION=	2.1.11
@@ -17,6 +17,8 @@ BUILD_DEPENDS=	xsltproc:textproc/libxslt
 RUN_DEPENDS=	libtool:devel/libtool
 LIB_DEPENDS=	libgc.so:devel/boehm-gc
 
+ONLY_FOR_ARCHS=		amd64 i386
+
 DOCSDIR=	lib/${PORTNAME}
 USES=		gmake libtool:build tar:bzip2
 GNU_CONFIGURE=	yes
@@ -25,8 +27,6 @@ USE_CSTD=	gnu89
 USE_GCC=	any
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-
-ONLY_FOR_ARCHS=	i386 amd64 ia64
 
 OPTIONS_DEFINE=	DOCS
 

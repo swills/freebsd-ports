@@ -1,5 +1,5 @@
 # Created by: Koichiro IWAO <meta+ports@vmeta.jp>
-# $FreeBSD: head/net/tigervnc/Makefile 441817 2017-05-26 22:59:52Z cpm $
+# $FreeBSD: head/net/tigervnc/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	tigervnc
 PORTVERSION=	1.8.0
@@ -28,7 +28,7 @@ CONFLICTS=	tigervnc-devel-[0-9]* \
 		tightvnc-[0-9]* \
 		tridiavnc-[0-9]*
 
-USES=		autoreconf:build cmake cpe iconv jpeg libtool pkgconfig \
+USES=		autoreconf:build cmake:noninja cpe iconv jpeg libtool pkgconfig \
 		python ssl
 USE_GL=		gl
 USE_LDCONFIG=	yes

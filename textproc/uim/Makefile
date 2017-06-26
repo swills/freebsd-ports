@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/textproc/uim/Makefile 425758 2016-11-08 19:29:56Z linimon $
+# $FreeBSD: head/textproc/uim/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	uim
 PORTVERSION=	1.8.6
@@ -59,11 +59,7 @@ PLIST_SUB+=	X11=""
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == "ia64"
-IGNORE=		not yet ported to ia64
-.endif
-
-.if ${ARCH} == "amd64" || ${ARCH} == "ia64" || ${ARCH} == "sparc64"
+.if ${ARCH} == "amd64" || ${ARCH} == "sparc64"
 CONFIGURE_ARGS+=	--enable-storage=fatty
 .endif
 

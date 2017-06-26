@@ -1,5 +1,5 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/sysutils/fluent-bit/Makefile 441900 2017-05-28 08:22:38Z girgen $
+# $FreeBSD: head/sysutils/fluent-bit/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	fluent-bit
 DISTVERSION=	0.11.6
@@ -17,7 +17,7 @@ BROKEN_mips=		fails to build: conflicting types for 'restrict'
 BROKEN_mips64=		fails to build: conflicting types for 'restrict'
 BROKEN_powerpc64=	fails to build: cast from pointer to integer of different size
 
-USES=		cmake
+USES=		cmake:noninja
 
 USE_RC_SUBR=	${PORTNAME}
 

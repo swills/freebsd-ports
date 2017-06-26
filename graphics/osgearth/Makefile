@@ -1,5 +1,5 @@
 # Created by: lbartoletti <coder@tuxfamily.org>
-# $FreeBSD: head/graphics/osgearth/Makefile 443096 2017-06-10 14:54:34Z dbaio $
+# $FreeBSD: head/graphics/osgearth/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	osgearth
 PORTVERSION=	2.7
@@ -21,7 +21,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	gwaldron
 
 USE_LDCONFIG=	yes
-USES=		cmake gmake pkgconfig sqlite
+USES=		cmake pkgconfig sqlite
 PLIST_SUB=	OSGVERSION=3.4.0
 
 CMAKE_ARGS+=	-DCMAKE_INCLUDE_PATH:PATH=${LOCALBASE}/include \

@@ -1,5 +1,5 @@
 # Created by: Anders Nordby <anders@FreeBSD.org>
-# $FreeBSD: head/sysutils/dmidecode/Makefile 441578 2017-05-24 13:02:43Z sunpoet $
+# $FreeBSD: head/sysutils/dmidecode/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	dmidecode
 PORTVERSION=	3.1
@@ -14,7 +14,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 OPTIONS_DEFINE=	DOCS
 
-ONLY_FOR_ARCHS=	i386 amd64 ia64
+ONLY_FOR_ARCHS=		amd64 i386
+
 MAKE_ENV=	DOCSDIR="${DOCSDIR}"
 USES=		tar:xz
 

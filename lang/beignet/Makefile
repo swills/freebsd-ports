@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/lang/beignet/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/lang/beignet/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	beignet
 PORTVERSION=	1.3.1
@@ -23,7 +23,7 @@ RUN_DEPENDS=	opencl>=0:devel/opencl \
 
 WRKSRC=		${WRKDIR}/Beignet-${PORTVERSION}-Source
 
-USES=		cmake gmake ncurses pkgconfig shebangfix
+USES=		cmake ncurses pkgconfig shebangfix
 USE_XORG=	sm ice x11 xext xfixes
 USE_GL=		gl egl
 USE_LDCONFIG=	${LOCALBASE}/lib/${PORTNAME}

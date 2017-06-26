@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv@kvedulv.de>
-# $FreeBSD: head/textproc/rubygem-jekyll-gist/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/textproc/rubygem-jekyll-gist/Makefile 444146 2017-06-22 23:41:26Z sunpoet $
 
 PORTNAME=	jekyll-gist
-PORTVERSION=	1.4.0
+PORTVERSION=	1.4.1
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

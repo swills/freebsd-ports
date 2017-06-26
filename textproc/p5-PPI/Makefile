@@ -1,8 +1,8 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-PPI/Makefile 443986 2017-06-20 15:51:03Z sunpoet $
+# $FreeBSD: head/textproc/p5-PPI/Makefile 444199 2017-06-23 21:19:17Z sunpoet $
 
 PORTNAME=	PPI
-PORTVERSION=	1.228
+PORTVERSION=	1.236
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:MITHALDU

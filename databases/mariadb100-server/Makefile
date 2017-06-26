@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb100-server/Makefile 441551 2017-05-23 20:10:27Z brnrd $
+# $FreeBSD: head/databases/mariadb100-server/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME?=	mariadb
 PORTVERSION=	10.0.31
@@ -29,7 +29,7 @@ SUB_FILES=	pkg-message
 PKGMESSAGE=	${WRKDIR}/pkg-message
 
 SLAVEDIRS=	databases/mariadb100-client
-USES=		bison:build cmake compiler:c++11-lib cpe execinfo \
+USES=		bison:build cmake:noninja compiler:c++11-lib cpe execinfo \
 		ncurses shebangfix ssl
 USE_LDCONFIG=	${PREFIX}/lib/mysql ${PREFIX}/lib/mysql/plugin
 SHEBANG_FILES=	scripts/*.sh

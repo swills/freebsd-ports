@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/archivers/par2cmdline-tbb/Makefile 435599 2017-03-07 12:44:41Z martymac $
+# $FreeBSD: head/archivers/par2cmdline-tbb/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	par2cmdline-tbb
 PORTVERSION=	20100203
@@ -15,7 +15,8 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libtbb.so:devel/tbb
 
-ONLY_FOR_ARCHS=	i386 amd64 ia64
+ONLY_FOR_ARCHS=		amd64 i386
+
 GNU_CONFIGURE=	yes
 USES=		autoreconf
 CPPFLAGS+=	-I${LOCALBASE}/include

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/baloo/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/sysutils/baloo/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	baloo
 PORTVERSION=	${KDE4_VERSION}
@@ -14,7 +14,7 @@ CONFLICTS_INSTALL=	kde-runtime-4.12.* \
 LIB_DEPENDS=	libxapian.so:databases/xapian-core \
 		libqjson.so:devel/qjson
 
-USES=		cmake:outsource gmake kde:4 tar:xz
+USES=		cmake:outsource kde:4 tar:xz
 USE_KDE=	akonadi automoc4 kdelibs kfilemetadata \
 		pimlibs
 USE_QT4=	corelib qmake_build moc_build rcc_build uic_build

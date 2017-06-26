@@ -1,5 +1,5 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/multimedia/plexhometheater/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/multimedia/plexhometheater/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	plexhometheater
 PORTVERSION=	1.4.1
@@ -67,7 +67,7 @@ GH_ACCOUNT=	plexinc
 GH_PROJECT=	plex-home-theater-public
 BUNDLE_LIBS=	yes
 
-USES=		cmake:outsource execinfo gmake iconv:wchar_t jpeg pkgconfig python:2
+USES=		cmake:outsource execinfo iconv:wchar_t jpeg pkgconfig python:2
 CMAKE_ARGS+=	-DENABLE_AUTOUPDATE:BOOL=false
 CMAKE_ARGS+=	-DENABLE_DUMP_SYMBOLS:BOOL=false
 CMAKE_ARGS+=	-DENABLE_PYTHON:BOOL=false

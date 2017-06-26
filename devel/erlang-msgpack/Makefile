@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/erlang-msgpack/Makefile 428381 2016-12-11 20:16:26Z olgeni $
+# $FreeBSD: head/devel/erlang-msgpack/Makefile 444180 2017-06-23 13:50:20Z olgeni $
 
 PORTNAME=	msgpack
 PORTVERSION=	0.7.0
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

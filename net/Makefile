@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 442932 2017-06-08 14:07:31Z sunpoet $
+# $FreeBSD: head/net/Makefile 444313 2017-06-25 17:26:23Z rene $
 #
 
     COMMENT = Networking tools
@@ -1279,7 +1279,6 @@
     SUBDIR += sippy_b2bua
     SUBDIR += siproxd
     SUBDIR += sipsak
-    SUBDIR += sixxs-aiccu
     SUBDIR += skstream
     SUBDIR += sl2tps
     SUBDIR += slurm

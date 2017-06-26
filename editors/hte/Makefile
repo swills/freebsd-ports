@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao
-# $FreeBSD: head/editors/hte/Makefile 436135 2017-03-14 09:01:53Z amdmi3 $
+# $FreeBSD: head/editors/hte/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	hte
 PORTVERSION=	2.1.0
@@ -12,8 +12,6 @@ COMMENT=	File editor/viewer/analyzer for executables
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_ia64=	does not build
 
 USES=		ncurses tar:bzip2
 GNU_CONFIGURE=	yes

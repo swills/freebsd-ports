@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/bitcoin-daemon/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/net-p2p/bitcoin-daemon/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 MASTERDIR=	${.CURDIR}/../bitcoin
 PORTREVISION=	6
@@ -8,7 +8,7 @@ COMMENT=	Virtual Peer-to-Peer Currency (Daemon)
 
 SLAVE_PORT=	yes
 
-ONLY_FOR_ARCHS=	amd64 i386 ia64
+ONLY_FOR_ARCHS=		amd64 i386
 ONLY_FOR_ARCHS_REASON=	does not support big-endian architectures
 
 OPTIONS_DEFINE=		DEBUG HARDENING TESTS UPNP WALLET ZMQ

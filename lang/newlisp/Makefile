@@ -1,5 +1,5 @@
 # Created by: Stanislav Sedov <ssedov@mbsd.msk.ru>
-# $FreeBSD: head/lang/newlisp/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/lang/newlisp/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	newlisp
 PORTVERSION=	10.6.2
@@ -41,7 +41,7 @@ GUISERV_DESC=	Install GUI server (in Java)
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
-.if ${ARCH} == "amd64" || ${ARCH} == "sparc64" || ${ARCH} == "ia64"
+.if ${ARCH} == "amd64" || ${ARCH} == "sparc64"
 CFLAGS+=	-DNEWLISP64
 .endif
 

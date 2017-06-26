@@ -1,5 +1,5 @@
 # Created by: Kevin Zheng <kevinz5000@gmail.com>
-# $FreeBSD: head/games/openclonk/Makefile 442405 2017-06-02 15:49:34Z linimon $
+# $FreeBSD: head/games/openclonk/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	openclonk
 PORTVERSION=	7.0
@@ -23,7 +23,7 @@ LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 
 BROKEN_powerpc64=	fails to compile: C4Texture.cpp:260:13: error: 'stoul' is not a member of 'std'
 
-USES=		compiler:c++14-lang cmake desktop-file-utils jpeg pkgconfig tar:bzip2
+USES=		compiler:c++14-lang cmake:noninja desktop-file-utils jpeg pkgconfig tar:bzip2
 USE_GL=		glew
 USE_GNOME=	gtk30
 USE_SDL=	sdl mixer

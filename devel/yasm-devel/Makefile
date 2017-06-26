@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/yasm-devel/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/devel/yasm-devel/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=		yasm
 PORTVERSION=		1.2.0.29
@@ -33,10 +33,6 @@ CONFLICTS_INSTALL=	yasm-[0-9]*
 
 .if ${PORT_OPTIONS:MDEBUG} || defined(WITH_DEBUG)
 CONFIGURE_ARGS+=	--enable-debug
-.endif
-
-.if ${ARCH} == "ia64"
-CFLAGS:=	${CFLAGS:C/-O[0-9]//g}
 .endif
 
 regression-test: build

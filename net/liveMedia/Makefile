@@ -1,5 +1,5 @@
 # Created by: nork@FreeBSD.org
-# $FreeBSD: head/net/liveMedia/Makefile 433525 2017-02-06 22:17:29Z bapt $
+# $FreeBSD: head/net/liveMedia/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	liveMedia
 PORTVERSION=	2017.01.26
@@ -16,6 +16,8 @@ LICENSE=	LGPL21
 
 NO_CDROM=	'dated material'
 
+BROKEN_sparc64=		Fails to compile
+
 WRKSRC=		${WRKDIR}/live
 
 HAS_CONFIGURE=	yes
@@ -28,14 +30,10 @@ USE_LDCONFIG=	yes
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == "amd64" || ${ARCH} == "ia64"
+.if ${ARCH} == "amd64"
 CFLAGS+=	-fPIC
 .else
 CFLAGS+=	-fpic
-.endif
-
-.if ${ARCH} == "sparc64"
-BROKEN=		Does not compile
 .endif
 
 post-extract:

@@ -1,7 +1,7 @@
-# $FreeBSD: head/hebrew/hunspell/Makefile 392422 2015-07-18 15:01:38Z sunpoet $
+# $FreeBSD: head/hebrew/hunspell/Makefile 444298 2017-06-25 15:04:25Z sunpoet $
 
 PORTNAME=	hunspell
-PORTVERSION=	1.3
+PORTVERSION=	1.4
 CATEGORIES=	hebrew textproc
 MASTER_SITES=	http://hspell.ivrix.org.il/ \
 		LOCAL/sunpoet/${PORTNAME}

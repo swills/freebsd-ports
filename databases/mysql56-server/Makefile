@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/databases/mysql56-server/Makefile 438698 2017-04-17 14:54:56Z mmokhi $
+# $FreeBSD: head/databases/mysql56-server/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME?=	mysql
 PORTVERSION=	5.6.36
@@ -13,7 +13,7 @@ COMMENT?=	Multithreaded SQL database (server)
 LICENSE=	GPLv2
 
 SLAVEDIRS=	databases/mysql56-client
-USES=		bison:build cmake:outsource compiler:c11 compiler:c++11-lib \
+USES=		bison:build cmake:outsource,noninja compiler:c11 compiler:c++11-lib \
 		cpe libedit localbase perl5 shebangfix ssl
 
 USE_PERL5=	run

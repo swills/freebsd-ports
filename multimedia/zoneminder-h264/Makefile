@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/zoneminder-h264/Makefile 442011 2017-05-29 15:27:50Z sunpoet $
+# $FreeBSD: head/multimedia/zoneminder-h264/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	zoneminder-h264
 PORTVERSION=	1.30.20170222
@@ -40,7 +40,7 @@ USE_GITHUB=	yes
 GH_TUPLE=	zoneminder:ZoneMinder:e723b6d \
 		FriendsOfCake:crud:c3976f1:crud
 
-USES=		cmake jpeg mysql perl5 php shebangfix ssl
+USES=		cmake:noninja jpeg mysql perl5 php shebangfix ssl
 USE_RC_SUBR=	zoneminder
 USE_PHP=	json pdo_mysql session gd sockets ctype
 

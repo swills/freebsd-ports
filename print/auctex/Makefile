@@ -1,5 +1,5 @@
 # Created by: Martin Kammerhofer
-# $FreeBSD: head/print/auctex/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/print/auctex/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	auctex
 PORTVERSION=	11.90
@@ -13,7 +13,6 @@ COMMENT=	Integrated environment for writing LaTeX using GNU Emacs
 
 LICENSE=	GPLv3
 
-NOT_FOR_ARCHS=	ia64
 USES=		ghostscript gmake
 USE_EMACS=	yes
 USE_TEX=	latex texhash

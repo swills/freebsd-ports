@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/x11-wm/pawm/Makefile 401798 2015-11-17 01:00:22Z amdmi3 $
+# $FreeBSD: head/x11-wm/pawm/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	pawm
 PORTVERSION=	2.3.0
@@ -14,7 +14,7 @@ LICENSE=	GPLv2 # only
 LICENSE_FILE=	${WRKSRC}/GPL
 
 USE_XORG=	x11 xft xrandr xrender xpm
-USES=		cmake pkgconfig ninja tar:bzip2
+USES=		cmake pkgconfig tar:bzip2
 CMAKE_ARGS=	-DCMAKE_CONFIG_PREFIX:STRING="${PREFIX}/etc" \
 		-DX11_LIBRARY_DIRS:STRING="${LOCALBASE}/lib"
 LDFLAGS+=	-L${LOCALBASE}/lib -lXext -lXrender

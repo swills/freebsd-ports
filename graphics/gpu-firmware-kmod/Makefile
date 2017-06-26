@@ -1,5 +1,5 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/graphics/gpu-firmware-kmod/Makefile 439923 2017-05-02 02:52:46Z jmd $
+# $FreeBSD: head/graphics/gpu-firmware-kmod/Makefile 444129 2017-06-22 21:00:16Z linimon $
 
 PORTNAME=	gpu-firmware-kmod
 PORTVERSION=	g20170403
@@ -12,7 +12,7 @@ COMMENT=	Firmware modules for the linuxkpi-based KMS components
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=	the new KMS components are only supported on amd64
 
-NO_PACKAGE=	yes
+NO_PACKAGE=	Distribution in binary form without license file not allowed
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	FreeBSDDesktop

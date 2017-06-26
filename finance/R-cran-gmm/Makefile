@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/finance/R-cran-gmm/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/R-cran-gmm/Makefile 444333 2017-06-26 01:26:35Z tota $
 
 PORTNAME=	gmm
-DISTVERSION=	1.5-2
+DISTVERSION=	1.6-1
 CATEGORIES=	finance
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
@@ -12,7 +12,9 @@ COMMENT=	Generalized Method of Moments and Generalized Empirical Likelihood
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-RUN_DEPENDS=	R-cran-sandwich>0:math/R-cran-sandwich
+CRAN_DEPENDS=	R-cran-sandwich>0:math/R-cran-sandwich
+BUILD_DEPENDS=	${CRAN_DEPENDS}
+RUN_DEPENDS=	${CRAN_DEPENDS}
 
 USES=	cran:auto-plist
 

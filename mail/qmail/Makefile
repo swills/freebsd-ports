@@ -1,5 +1,5 @@
 # Created by: Mario S F Ferreira <lioux@linf.unb.br>
-# $FreeBSD: head/mail/qmail/Makefile 438098 2017-04-09 10:52:37Z bapt $
+# $FreeBSD: head/mail/qmail/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	${QMAIL_PORTNAME}
 PORTVERSION?=	${QMAIL_VERSION}
@@ -386,7 +386,7 @@ NO_PREFIX_RMDIR=yes
 
 .include <bsd.port.options.mk>
 
-.if ( ${ARCH} == "amd64" || ${ARCH} == "ia64" ) && !defined(SLAVE_LDAP) \
+.if ${ARCH} == "amd64" && !defined(SLAVE_LDAP) \
     && !defined(SLAVE_SPAMCONTROL)
 EXTRA_PATCHES+=			${FILESDIR}/extra-patch-amd64
 .endif

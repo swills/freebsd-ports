@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 444091 2017-06-22 01:19:28Z jbeich $
+# $FreeBSD: head/Mk/bsd.gecko.mk 444163 2017-06-23 04:47:52Z jbeich $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -142,7 +142,11 @@ LDFLAGS+=		-Wl,--as-needed
 .if ${MOZILLA_VER:R:R} < 55 && ${OPSYS} == FreeBSD && ${OSVERSION} < 1200032
 # use jemalloc 3.0.0 (4.0 for firefox 43+) API for stats/tuning
 MOZ_EXPORT+=	MOZ_JEMALLOC4=1
+.if ${MOZILLA_VER:R:R} >= 48
 MOZ_OPTIONS+=	--enable-jemalloc=4
+.elif ${OSVERSION} < 1100079
+MOZ_OPTIONS+=	--enable-jemalloc
+.endif # Mozilla >= 48
 .endif # Mozilla < 55
 
 # Standard depends

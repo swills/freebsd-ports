@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/percona55-server/Makefile 436110 2017-03-13 21:32:03Z flo $
+# $FreeBSD: head/databases/percona55-server/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME?=	percona
 DISTVERSION=	5.5.54-38.6
@@ -12,7 +12,7 @@ MAINTAINER=	flo@FreeBSD.org
 COMMENT?=	Multithreaded SQL database (server)
 
 SLAVEDIRS=	databases/percona55-client
-USES=		bison cmake readline shebangfix
+USES=		bison cmake:noninja readline shebangfix
 
 CXXFLAGS+=	${CPPFLAGS}
 

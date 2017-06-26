@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-Class-DBI-Plugin-Senna/Makefile 413184 2016-04-13 10:36:15Z jbeich $
+# $FreeBSD: head/databases/p5-Class-DBI-Plugin-Senna/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	Class-DBI-Plugin-Senna
 PORTVERSION=	0.01
@@ -15,8 +15,6 @@ BUILD_DEPENDS=	p5-Class-DBI>=0:databases/p5-Class-DBI \
 
 USES=		perl5
 USE_PERL5=	configure
-
-BROKEN_ia64=	fails to configure with coredump
 
 # With $TRYBROKEN, do "perl Makefile.PL" in verbose mode.
 do-configure:

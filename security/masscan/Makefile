@@ -1,5 +1,5 @@
 # Created by: Chie Taguchi <taguchi.ch@gmail.com>
-# $FreeBSD: head/security/masscan/Makefile 443915 2017-06-19 23:24:55Z dbaio $
+# $FreeBSD: head/security/masscan/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	masscan
 PORTVERSION=	1.0.4
@@ -10,7 +10,7 @@ COMMENT=	Very fast port scanner
 
 LICENSE=	GPLv3
 
-ONLY_FOR_ARCHS=	amd64 i386 ia64
+ONLY_FOR_ARCHS=		amd64 i386
 ONLY_FOR_ARCHS_REASON=	uses i386 assembler
 
 USES=		gmake

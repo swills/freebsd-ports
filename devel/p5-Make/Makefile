@@ -1,8 +1,8 @@
 # Created by: will
-# $FreeBSD: head/devel/p5-Make/Makefile 432369 2017-01-24 17:41:38Z sunpoet $
+# $FreeBSD: head/devel/p5-Make/Makefile 444138 2017-06-22 23:40:45Z sunpoet $
 
 PORTNAME=	Make
-PORTVERSION=	1.1.3
+PORTVERSION=	1.1.4
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -19,10 +19,5 @@ TEST_DEPENDS=	p5-Test-Compile>=1.2.1:devel/p5-Test-Compile
 USES=		perl5
 USE_PERL5=	configure
 NO_ARCH=	yes
-WRKSRC=		${WRKDIR}/Make
-
-post-patch:
-	@${REINPLACE_CMD} -e 's|pmake|perlmake|' ${WRKSRC}/Makefile.PL
-	@${CP} ${WRKSRC}/pmake ${WRKSRC}/perlmake
 
 .include <bsd.port.mk>

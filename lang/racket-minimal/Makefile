@@ -1,5 +1,5 @@
 # Created by: Joseph Koshy <jkoshy@FreeBSD.org>
-# $FreeBSD: head/lang/racket-minimal/Makefile 441468 2017-05-22 16:04:19Z linimon $
+# $FreeBSD: head/lang/racket-minimal/Makefile 444237 2017-06-24 18:36:19Z linimon $
 
 PORTNAME=	racket
 PORTVERSION=	6.9
@@ -21,9 +21,9 @@ LICENSE=	LGPL3
 
 LIB_DEPENDS=	libffi.so:devel/libffi
 
-BROKEN_i386=		does not build on i386 (Seg fault (internal error) at 0x606060a)
-BROKEN_powerpc64=       fails to build: jit.c: 'JIT_LOCAL4' undeclared (first use in this function)
-NOT_FOR_ARCHS=		armv6 aarch64 sparc64
+BROKEN_i386=		fails to build: Seg fault (internal error) at 0x606060a
+BROKEN_powerpc64=	fails to build: jit.c: 'JIT_LOCAL4' undeclared (first use in this function)
+NOT_FOR_ARCHS=		aarch64 aarch64 sparc64
 NOT_FOR_ARCHS_REASON=	not yet ported to this arch
 
 MAKE_JOBS_UNSAFE=yes

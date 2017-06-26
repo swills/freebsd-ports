@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/net/foreman-proxy/Makefile 441245 2017-05-19 15:46:31Z sunpoet $
+# $FreeBSD: head/net/foreman-proxy/Makefile 444204 2017-06-23 21:19:43Z sunpoet $
 
 PORTNAME=	foreman-proxy
-PORTVERSION=	1.15.0
+PORTVERSION=	1.15.1
 CATEGORIES=	net
 MASTER_SITES=	http://downloads.theforeman.org/foreman-proxy/
 

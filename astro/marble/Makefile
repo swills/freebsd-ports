@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/marble/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/astro/marble/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	marble
 PORTVERSION=	${KDE4_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	Virtual globe and world atlas for KDE
 
 LIB_DEPENDS=	libquazip.so:archivers/quazip
 
-USES=		cmake:outsource gmake kde:4 shared-mime-info tar:xz
+USES=		cmake:outsource kde:4 shared-mime-info tar:xz
 USE_KDE=	kdelibs automoc4
 USE_QT4=	corelib dbus declarative designer_build gui network phonon \
 		qtestlib script sql svg webkit xml \

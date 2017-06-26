@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/cad/opencascade/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/cad/opencascade/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	opencascade
 PORTVERSION=	6.9.1
@@ -21,7 +21,7 @@ RUN_DEPENDS=	bash:shells/bash
 
 # Check ${WRKSRC}/dox/overview/Overview.md
 # and ${WRKSRC}/dox/dev_guides/building
-USES=		alias:10 bison cmake compiler:c++11-lib dos2unix gmake \
+USES=		alias:10 bison cmake compiler:c++11-lib dos2unix \
 		shebangfix tk tar:tgz
 USE_XORG=	xmu
 DOS2UNIX_FILES=	adm/templates/*

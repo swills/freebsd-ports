@@ -1,5 +1,5 @@
 # Created by: David Thiel <lx@redundancy.redundancy.org>
-# $FreeBSD: head/security/medusa/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/security/medusa/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	medusa
 PORTVERSION=	2.2
@@ -15,8 +15,6 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libssh2.so:security/libssh2
 
 USES=	ssl
-
-BROKEN_ia64=	Does not build on ia64
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-module-ncp=no --enable-module-afp=no

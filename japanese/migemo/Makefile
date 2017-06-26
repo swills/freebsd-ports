@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/japanese/migemo/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/migemo/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	migemo
 PORTVERSION=	0.40
@@ -52,8 +52,6 @@ EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-Makefile.am.ruby19 \
 		${PATCHDIR}/extra-patch-migemo-server \
 		${PATCHDIR}/extra-patch-migemo.rb.in \
 		${PATCHDIR}/extra-patch-tests_Makefile.am
-
-BROKEN_ia64=	Does not compile
 
 .include <bsd.port.options.mk>
 

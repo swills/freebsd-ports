@@ -1,5 +1,5 @@
 # Created by: Axel Steiner <ast@treibsand.com>
-# $FreeBSD: head/mail/spmfilter-clamav/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/spmfilter-clamav/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	spmfilter-clamav
 PORTVERSION=	0.2.3
@@ -12,7 +12,7 @@ COMMENT=	ClamAV plugin for spmfilter
 BUILD_DEPENDS=	spmfilter>=0.6:mail/spmfilter
 RUN_DEPENDS=	spmfilter>=0.6:mail/spmfilter
 
-USES=		cmake pkgconfig
+USES=		cmake:noninja pkgconfig
 CMAKE_ARGS+=	--no-warn-unused-cli \
 		-DCMAKE_INCLUDE_PATH="${LOCALBASE}/include" \
 		-DCMAKE_LIBRARY_PATH="${LOCALBASE}/lib"

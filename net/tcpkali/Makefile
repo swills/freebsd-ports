@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/tcpkali/Makefile 432434 2017-01-25 16:27:35Z amdmi3 $
+# $FreeBSD: head/net/tcpkali/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	tcpkali
 PORTVERSION=	1.1.1
@@ -11,7 +11,7 @@ COMMENT=	High performance load generator for TCP and WebSocket servers
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-ONLY_FOR_ARCHS=	amd64 i386 ia64
+ONLY_FOR_ARCHS=		amd64 i386
 ONLY_FOR_ARCHS_REASON=	uses i386 assembler
 
 GNU_CONFIGURE=	yes

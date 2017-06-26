@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/avidemux/Makefile.common 441388 2017-05-21 11:57:46Z riggs $
+# $FreeBSD: head/multimedia/avidemux/Makefile.common 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTREVISION?=	2
 AVIDEMUX_VERSION=	2.6.11
@@ -19,7 +19,7 @@ USE_QT4=	# empty
 
 OPTIONS_FILE=	${PORT_DBDIR}/${OPTIONS_NAME:C/-.*//}/options
 
-USES=		cmake:outsource pkgconfig iconv gmake compiler:features sqlite
+USES=		cmake:outsource,noninja pkgconfig iconv gmake compiler:features sqlite
 USES+=		dos2unix execinfo
 DOS2UNIX_FILES=	cmake/admCheckMiscLibs.cmake \
 		avidemux_core/ADM_coreVideoCodec/include/ADM_coreVideoCodec6_export.h \

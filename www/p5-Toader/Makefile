@@ -1,9 +1,9 @@
 # Created by: Zane C, Bowers-Hadley <vvelox@vvelox.net>
-# $FreeBSD: head/www/p5-Toader/Makefile 435089 2017-02-28 22:50:08Z sunpoet $
+# $FreeBSD: head/www/p5-Toader/Makefile 444347 2017-06-26 03:25:03Z sunpoet $
 
 PORTNAME=	Toader
 PORTVERSION=	1.2.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:VVELOX
@@ -22,12 +22,8 @@ BUILD_DEPENDS=	p5-Config-Tiny>=2.14:devel/p5-Config-Tiny \
 		p5-Module-List>=0.003:devel/p5-Module-List \
 		p5-Text-Template>=1.46:textproc/p5-Text-Template \
 		p5-Term-CallEditor>=0.61:devel/p5-Term-CallEditor \
-		p5-File-Path>=2.09:devel/p5-File-Path \
-		p5-Time-HiRes>=1.9725:devel/p5-Time-HiRes \
 		p5-TimeDate>=1.20:devel/p5-TimeDate \
 		p5-Email-Address>=1.897:mail/p5-Email-Address \
-		p5-Pod-Simple>=3.26:textproc/p5-Pod-Simple \
-		p5-File-Temp>=0.2200:devel/p5-File-Temp \
 		p5-Image-ExifTool>=9.04:graphics/p5-Image-ExifTool \
 		p5-GD-Thumbnail>=1.41:graphics/p5-GD-Thumbnail \
 		p5-Text-Tags>=0.04:textproc/p5-Text-Tags \
@@ -37,7 +33,8 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 OPTIONS_DEFINE=	DOCS
 
-USES=	perl5 shebangfix
+NO_ARCH=	yes
+USES=		perl5 shebangfix
 USE_PERL5=	configure
 SHEBANG_FILES=	bin/toader-autodoc bin/toader-css bin/toader-dir \
 		bin/toader-entry bin/toader-find bin/toader-gallery \

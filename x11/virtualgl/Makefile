@@ -1,5 +1,5 @@
 # Created by: David Mackay <davidjx8p@gmail.com>
-# $FreeBSD: head/x11/virtualgl/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11/virtualgl/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	virtualgl
 PORTVERSION=	2.4.1
@@ -20,7 +20,7 @@ ONLY_FOR_ARCHS=	amd64 i386
 CMAKE_INSTALL_PREFIX=	${LOCALBASE}/VirtualGL
 DOCSDIR=	${LOCALBASE}/VirtualGL/doc
 
-USES=		cmake compiler:c++11-lang
+USES=		cmake:noninja compiler:c++11-lang
 USE_GL=		gl glu
 USE_XORG=	x11 xcb xext
 CMAKE_ARGS=	-DTJPEG_INCLUDE_DIR=${LOCALBASE}/include\

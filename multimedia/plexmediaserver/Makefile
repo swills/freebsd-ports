@@ -1,8 +1,8 @@
 # Created by: KalleDK <plexmaintainer@k-moeller.dk>
-# $FreeBSD: head/multimedia/plexmediaserver/Makefile 442293 2017-06-01 15:07:53Z feld $
+# $FreeBSD: head/multimedia/plexmediaserver/Makefile 444117 2017-06-22 15:46:59Z feld $
 
 PORTNAME=	plexmediaserver
-PORTVERSION?=	1.5.6.3790
+PORTVERSION?=	1.5.7.4016
 PORTREVISION?=	0
 CATEGORIES=	multimedia
 MASTER_SITES=	https://downloads.plex.tv/plex-media-server/${PORTVERSION}-${PLEX_BUILD}/
@@ -12,7 +12,7 @@ MAINTAINER?=	feld@FreeBSD.org
 COMMENT=	Plex Media Server component
 
 USES=		cpe tar:bzip2
-PLEX_BUILD?=	4613ce077
+PLEX_BUILD?=	25d94bad9
 NO_BUILD=	yes
 WRKSRC=	${WRKDIR}/PlexMediaServer-${PORTVERSION}-${PLEX_BUILD}
 

@@ -1,9 +1,8 @@
-# $FreeBSD: head/sysutils/dtc/Makefile 433217 2017-02-03 09:49:32Z antoine $
+# $FreeBSD: head/sysutils/dtc/Makefile 444320 2017-06-25 19:29:03Z linimon $
 
 PORTNAME=	dtc
-PORTVERSION=	1.4.2
-DISTVERSIONPREFIX=	ports-v
-PORTREVISION=	1
+PORTVERSION=	1.4.4
+DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
 MAINTAINER=	imp@FreeBSD.org
@@ -16,7 +15,7 @@ USE_LDCONFIG=	yes
 SHEBANG_FILES=	dtdiff
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	bsdimp
+GH_ACCOUNT=	dgibson
 GH_PROJECT=	dtc
 
 MAKE_ARGS+=	PREFIX=${PREFIX}

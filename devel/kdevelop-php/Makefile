@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kdevelop-php/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/devel/kdevelop-php/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	kdevelop-php
 PORTVERSION=	${KDEVELOP_VERSION:S/4./1./}
@@ -13,7 +13,7 @@ COMMENT=	PHP support for KDevelop
 LIB_DEPENDS=	libkdevplatforminterfaces.so:devel/kdevplatform
 BUILD_DEPENDS=	${KDE_PREFIX}/bin/kdev-pg-qt:devel/kdevelop-pg-qt
 
-USES=		cmake:outsource compiler:c++11-lib gmake kde:4 tar:xz
+USES=		cmake:outsource compiler:c++11-lib kde:4 tar:xz
 USE_KDE=	kdelibs automoc4
 USE_QT4=	moc_build qmake_build rcc_build uic_build
 MAKE_JOBS_UNSAFE=	yes

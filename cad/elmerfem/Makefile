@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/cad/elmerfem/Makefile 441744 2017-05-25 21:33:19Z joneum $
+# $FreeBSD: head/cad/elmerfem/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	elmerfem
 PORTVERSION=	8.3.20170519
@@ -28,7 +28,7 @@ CMAKE_ARGS+=	-Wno-dev
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == "amd64" || ${ARCH} == "ia64"
+.if ${ARCH} == "amd64"
 CFLAGS_${ARCH}=	-fPIC
 CXXFLAGS_${ARCH}= -fPIC
 FCFLAGS+=	-fPIC

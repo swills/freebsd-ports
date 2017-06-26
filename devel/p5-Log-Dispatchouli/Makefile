@@ -1,8 +1,9 @@
 # Created by: Geraud CONTINSOUZAS <geraud@gcu.info>
-# $FreeBSD: head/devel/p5-Log-Dispatchouli/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Log-Dispatchouli/Makefile 444340 2017-06-26 03:24:28Z sunpoet $
 
 PORTNAME=	Log-Dispatchouli
 PORTVERSION=	2.012
+PORTREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:RJBS
@@ -21,7 +22,6 @@ BUILD_DEPENDS=	p5-Log-Dispatch>=0:devel/p5-Log-Dispatch \
 		p5-String-Flogger>=0:textproc/p5-String-Flogger \
 		p5-Sub-Exporter>=0:devel/p5-Sub-Exporter \
 		p5-Sub-Exporter-GlobExporter>=0.002:devel/p5-Sub-Exporter-GlobExporter \
-		p5-Sys-Syslog>=0.16:sysutils/p5-Sys-Syslog \
 		p5-Try-Tiny>=0.04:lang/p5-Try-Tiny
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Deep>=0:devel/p5-Test-Deep \

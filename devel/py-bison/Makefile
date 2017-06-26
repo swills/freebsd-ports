@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/py-bison/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-bison/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	bison
 PORTVERSION=	0.1.8
@@ -28,12 +28,6 @@ EXAMPLESDIR=	${PREFIX}/share/examples/py-${PORTNAME}
 PORTDOCS=	*
 PORTEXAMPLES=	*
 
-.include <bsd.port.pre.mk>
-
-.if ${ARCH} == "ia64"
-BROKEN=		Does not compile on ia64
-.endif
-
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/bison_.so
 ports-install-DOCS-on:
@@ -43,4 +37,4 @@ ports-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	@(cd ${WRKSRC}/examples && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR})
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Pavel I Volkov <pavelivolkov@googlemail.com>
-# $FreeBSD: head/emulators/dynamips-community/Makefile 439535 2017-04-27 09:43:41Z olivier $
+# $FreeBSD: head/emulators/dynamips-community/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	dynamips
 PORTVERSION=	0.2.16
@@ -13,6 +13,9 @@ COMMENT=	Cisco 1700/2600/3600/3700/7200 Simulator
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libelf.so:devel/libelf
+
+BROKEN_powerpc=		fails to compile: invokes x86 assembler
+BROKEN_sparc64=		fails to compile: invokes x86 assembler
 
 CFLAGS+=	-I${PREFIX}/include/libelf
 
@@ -41,10 +44,6 @@ DYNAMIPS_CODE=	stable
 .if ${OPSYS} == FreeBSD
 DYNAMIPS_ARCH=	nojit
 .endif
-
-BROKEN_ia64=	does not compile: invokes i386 assembler
-BROKEN_sparc64=	${BROKEN_ia64}
-BROKEN_powerpc=	${BROKEN_ia64}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${DYNAMIPS_CODE}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin

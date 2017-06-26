@@ -1,5 +1,5 @@
 # Created by: Alex Samorukov <samm@os2.kiev.ua>
-# $FreeBSD: head/sysutils/atop/Makefile 441494 2017-05-22 22:29:17Z linimon $
+# $FreeBSD: head/sysutils/atop/Makefile 444332 2017-06-26 00:42:53Z linimon $
 
 PORTNAME=	atop
 PORTVERSION=	2.0.2.b3
@@ -10,11 +10,6 @@ MAINTAINER=	samm@os2.kiev.ua
 COMMENT=	ASCII Monitor for system resources and process activity
 
 LICENSE=	GPLv2
-
-BROKEN_armv6=		fails to build: photosyst.c: 'struct xtcpcb' has no member named 'xt_tp'
-BROKEN_mips=		fails to build: photosyst.c: 'struct xtcpcb' has no member named 'xt_tp'
-BROKEN_mips64=		fails to build: photosyst.c: 'struct xtcpcb' has no member named 'xt_tp'
-BROKEN_powerpc64=	fails to build: photosyst.c: 'struct xtcpcb' has no member named 'xt_tp'
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	samm-git

@@ -1,5 +1,5 @@
 # Created by: Michael Vasilenko <acid@stu.cn.ua>
-# $FreeBSD: head/editors/biew/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/editors/biew/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	biew
 PORTVERSION=	6.1.0
@@ -13,7 +13,9 @@ COMMENT=	Binary file viewer and editor
 
 LICENSE=	GPLv2
 
-ONLY_FOR_ARCHS=	amd64 i386 ia64
+BROKEN_powerpc=		Does not compile
+BROKEN_sparc64=		Does not compile
+ONLY_FOR_ARCHS=		amd64 i386
 ONLY_FOR_ARCHS_REASON=	no targets defined in Makefile
 
 USES=		dos2unix gmake iconv ncurses tar:bzip2
@@ -33,9 +35,6 @@ OPTIONS_DEFINE=	SLANG DOCS
 OPTIONS_DEFAULT=	SLANG
 
 SLANG_DESC=	Use S-Lang based display renderer
-
-BROKEN_powerpc=		Does not compile
-BROKEN_sparc64=		Does not compile
 
 SLANG_LIB_DEPENDS=	libslang.so:devel/libslang2
 SLANG_CONFIGURE_ON=	--enable-slang

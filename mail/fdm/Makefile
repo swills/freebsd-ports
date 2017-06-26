@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/mail/fdm/Makefile 439280 2017-04-24 10:52:49Z dinoex $
+# $FreeBSD: head/mail/fdm/Makefile 444162 2017-06-23 00:05:56Z dinoex $
 
 PORTNAME=	fdm
 PORTVERSION=	1.9
@@ -12,6 +12,8 @@ COMMENT=	Fetches and delivers mail
 LICENSE=	ISCL
 
 LIB_DEPENDS=	libtdb.so:databases/tdb
+
+MAKE_JOBS_UNSAFE=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	nicm

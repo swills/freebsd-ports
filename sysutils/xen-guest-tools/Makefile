@@ -1,5 +1,5 @@
 # Created by: Evan Sarmiento <esarmiento@wayfair.com>
-# $FreeBSD: head/sysutils/xen-guest-tools/Makefile 416273 2016-06-02 08:12:47Z dinoex $
+# $FreeBSD: head/sysutils/xen-guest-tools/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	xen-guest-tools
 PORTVERSION=	4.6.1
@@ -15,8 +15,8 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/bash:shells/bash \
 		${LOCALBASE}/lib/libargp.so:devel/argp-standalone \
 		${LOCALBASE}/lib/libyajl.so:devel/yajl
 
-ONLY_FOR_ARCHS=		amd64 i386 ia64
-ONLY_FOR_ARCHS_REASON=	"not yet ported to anything other than amd64, i386, or ia64"
+ONLY_FOR_ARCHS=		amd64 i386
+ONLY_FOR_ARCHS_REASON=	not yet ported to anything other than amd64 or i386
 CONFLICTS=	xen-tools-[0-9]*
 
 USES=		gmake python:2.7:configure perl5 gettext-runtime:build gettext-tools:build pkgconfig

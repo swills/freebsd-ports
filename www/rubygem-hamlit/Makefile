@@ -1,8 +1,8 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-hamlit/Makefile 444062 2017-06-21 18:53:06Z sunpoet $
+# $FreeBSD: head/www/rubygem-hamlit/Makefile 444225 2017-06-24 16:31:45Z sunpoet $
 
 PORTNAME=	hamlit
-PORTVERSION=	2.8.3
+PORTVERSION=	2.8.4
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

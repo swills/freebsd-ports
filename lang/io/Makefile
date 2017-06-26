@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/lang/io/Makefile 441855 2017-05-27 16:48:41Z linimon $
+# $FreeBSD: head/lang/io/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	io
 PORTVERSION=	2015.11.11
@@ -17,7 +17,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	stevedekorte
 GH_TAGNAME=	23afbcc
 
-USES=		cmake:outsource compiler:c11
+USES=		cmake:outsource,noninja compiler:c11
 MAKE_JOBS_UNSAFE=yes
 USE_LDCONFIG=	yes
 

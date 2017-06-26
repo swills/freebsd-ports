@@ -1,5 +1,5 @@
 # Created by: Shigeyuki Fukushima <shige@FreeBSD.org>
-# $FreeBSD: head/editors/psgml/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/editors/psgml/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	psgml
 PORTVERSION=	1.4.0
@@ -18,7 +18,6 @@ COMMENT=	Major mode for editing SGML and XML documents for Emacs
 LICENSE=	GPLv2
 
 USE_EMACS=	yes
-NOT_FOR_ARCHS=	ia64
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS=	--lispdir=${PSGML_LISPDIR}
 CONFIGURE_ENV=	EMACS=${EMACS_CMD}

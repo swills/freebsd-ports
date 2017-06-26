@@ -1,5 +1,5 @@
 # Created by: Willem Jan Withagen <wjw@digiware.nl>
-# $FreeBSD: head/net/ceph-devel/Makefile 440007 2017-05-03 09:25:30Z mmokhi $
+# $FreeBSD: head/net/ceph-devel/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	ceph
 DISTVERSION=	wip.v2017-05-01
@@ -74,7 +74,7 @@ CMAKE_ARGS=	\
 	-D WITH_CEPHFS:BOOL=OFF \
 	-D WITH_EMBEDDED:BOOL=OFF
 
-USES=	gmake cmake:outsource python:2.7 fuse gettext-runtime shebangfix
+USES=	gmake cmake:outsource,noninja python:2.7 fuse gettext-runtime shebangfix
 SHEBANG_FILES=src/rbdmap src/ceph-post-file.in src/rbd-replay-many \
 	src/brag/client/ceph-brag src/ceph-rest-api \
 	src/tools/ceph-monstore-update-crush.sh src/mount.fuse.ceph \

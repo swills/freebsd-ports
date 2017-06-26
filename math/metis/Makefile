@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni <giffunip@asme.org>
-# $FreeBSD: head/math/metis/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/math/metis/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	metis
 PORTVERSION=	5.1.0
@@ -14,7 +14,7 @@ LICENSE=	APACHE20
 
 CONFLICTS=	metis4-4* metis-edf-[0-9]*
 
-USES=		cmake
+USES=		cmake:noninja
 
 OPTIONS_DEFINE=	OPENMP SHARED STATIC DOCS
 

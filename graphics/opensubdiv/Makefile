@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/opensubdiv/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/opensubdiv/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	opensubdiv
 DISTVERSIONPREFIX=	v
@@ -20,7 +20,7 @@ GH_PROJECT=	OpenSubdiv
 
 USE_LDCONFIG=	yes
 USE_GL=		glew
-USES=		cmake:outsource compiler pkgconfig
+USES=		cmake:outsource,noninja compiler pkgconfig
 USE_XORG=	x11 xi xcursor xrandr xxf86vm xinerama
 
 CMAKE_ARGS+=	-DNO_TUTORIALS:BOOL=ON -DNO_EXAMPLES:BOOL=ON \

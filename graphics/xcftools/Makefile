@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/xcftools/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/xcftools/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	xcftools
 PORTVERSION=	1.0.8.20130212
@@ -18,7 +18,7 @@ GH_ACCOUNT=	j-jorge
 GH_TAGNAME=	d72ba82
 
 # option NLS (for gettext) is wrong as this port allways needs NLS:
-USES=	libtool cmake gmake iconv pkgconfig perl5 gettext
+USES=	libtool cmake:noninja gmake iconv pkgconfig perl5 gettext
 USE_PERL5=	build run
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes

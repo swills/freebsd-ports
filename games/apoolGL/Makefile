@@ -1,5 +1,5 @@
 # Created by: Igor Pokrovsky <ip@doom.homeunix.org>
-# $FreeBSD: head/games/apoolGL/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/apoolGL/Makefile 444358 2017-06-26 09:00:14Z amdmi3 $
 
 PORTNAME=	apoolGL
 PORTVERSION=	0.99.22
@@ -18,9 +18,9 @@ USE_GL=		gl
 USES=		dos2unix
 DOS2UNIX_FILES=	ApoolGL.txt
 
-OPTIONS_DEFINE=	DOCS
-
 PORTDOCS=	ApoolGL.txt CHANGELOG OpenGL-Features
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|SDL/||' ${WRKSRC}/*.c
@@ -38,6 +38,8 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/textures-${i}/*.bmp ${STAGEDIR}${DATADIR}/textures-${i}
 .endfor
 	${INSTALL_DATA} ${WRKSRC}/*.dat ${STAGEDIR}${DATADIR}
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
 

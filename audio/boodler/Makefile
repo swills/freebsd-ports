@@ -1,5 +1,5 @@
 # Created by: Dan Pelleg <daniel+boodler@pelleg.org>
-# $FreeBSD: head/audio/boodler/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/boodler/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	boodler
 PORTVERSION=	1.5.3
@@ -45,7 +45,7 @@ OSS_CONFIGURE_ON=	--driver oss
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == "amd64" || ${ARCH} == "ia64" || ${ARCH} == "powerpc" || ${ARCH} == "sparc64"
+.if ${ARCH} == "amd64" || ${ARCH} == "powerpc" || ${ARCH} == "sparc64"
 CONFIGURE_ARGS+=	--PIC
 .endif
 

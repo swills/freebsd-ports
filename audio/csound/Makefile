@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/audio/csound/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/audio/csound/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	csound
 PORTVERSION=	5.19.01
@@ -20,6 +20,8 @@ BUILD_DEPENDS=	swig13>0:devel/swig13 \
 		eigen>0:math/eigen3 \
 		gmm++>0:math/gmm++
 LIB_DEPENDS=	libsndfile.so:audio/libsndfile
+
+BROKEN_powerpc64=	Does not build
 
 PORTSCOUT=	limit:^5\.
 
@@ -104,15 +106,13 @@ DOCS_DISTFILES=		Csound${PORTVERSION:R}_manual_html.zip:manual
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == amd64 || ${ARCH} == sparc64 || ${ARCH} == ia64
+.if ${ARCH} == amd64 || ${ARCH} == sparc64
 MAKE_ARGS+=	Word64=1
 .endif
 
 .if ${OPSYS} == FreeBSD
 CXXLIB=		c++
 .endif
-
-BROKEN_powerpc64=	Does not build
 
 post-patch:
 	@${SED} -e "s|%%LOCALBASE%%|${LOCALBASE}|g; \

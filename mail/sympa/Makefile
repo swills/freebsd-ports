@@ -1,8 +1,9 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/mail/sympa/Makefile 435644 2017-03-07 19:57:44Z rene $
+# $FreeBSD: head/mail/sympa/Makefile 444343 2017-06-26 03:24:43Z sunpoet $
 
 PORTNAME=	sympa
 PORTVERSION=	6.2.16
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.sympa.org/distribution/ \
 		http://www.sympa.org/distribution/old/
@@ -44,7 +45,6 @@ RUN_DEPENDS=	\
 	p5-MIME-Charset>=0:mail/p5-MIME-Charset	\
 	p5-Net-CIDR>=0:net-mgmt/p5-Net-CIDR	\
 	p5-Proc-ProcessTable>=0:devel/p5-Proc-ProcessTable	\
-	p5-Time-HiRes>=0:devel/p5-Time-HiRes	\
 	p5-Crypt-SMIME>=0:security/p5-Crypt-SMIME	\
 	p5-CGI>=0:www/p5-CGI \
 	p5-Data-Password>=0:security/p5-Data-Password

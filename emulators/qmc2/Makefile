@@ -1,9 +1,8 @@
 # Created by: alepulver
-# $FreeBSD: head/emulators/qmc2/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/emulators/qmc2/Makefile 444249 2017-06-24 22:32:27Z danilo $
 
 PORTNAME=	qmc2
-PORTVERSION=	0.183
-PORTREVISION=	1
+PORTVERSION=	0.186
 CATEGORIES=	emulators
 MASTER_SITES=	SF
 

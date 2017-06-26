@@ -1,5 +1,5 @@
 # Created by: Joseph Koshy <jkoshy@FreeBSD.org>
-# $FreeBSD: head/lang/racket/Makefile 441468 2017-05-22 16:04:19Z linimon $
+# $FreeBSD: head/lang/racket/Makefile 444237 2017-06-24 18:36:19Z linimon $
 
 PORTNAME=	racket
 PORTVERSION=	6.9
@@ -26,7 +26,7 @@ BROKEN_powerpc64=	fails to build: jit.c: 'JIT_LOCAL4' undeclared (first use in t
 BROKEN_FreeBSD_10_i386=	segfaults during build
 BROKEN_FreeBSD_11_i386=	segfaults during build
 BROKEN_FreeBSD_12_i386=	segfaults during build
-NOT_FOR_ARCHS=		armv6 aarch64 sparc64
+NOT_FOR_ARCHS=		aarch64 armv6 sparc64
 NOT_FOR_ARCHS_REASON=	not yet ported to this arch
 
 MAKE_JOBS_UNSAFE=yes

@@ -1,5 +1,5 @@
 # Created by: arved
-# $FreeBSD: head/security/matrixssl/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/security/matrixssl/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	matrixssl
 PORTVERSION=	3.3
@@ -24,7 +24,7 @@ USE_LDCONFIG=	yes
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == "amd64" || ${ARCH} == "ia64" || ${ARCH} == "sparc64"
+.if ${ARCH} == aarch64 || ${ARCH} == amd64 || ${ARCH} == mips64 || ${ARCH} == powerpc64 || ${ARCH} == sparc64
 CFLAGS+=	-DPSTM_64BIT
 .endif
 

@@ -1,8 +1,9 @@
-# $FreeBSD: head/archivers/erlang-snappy/Makefile 433708 2017-02-09 02:48:43Z vanilla $
+# $FreeBSD: head/archivers/erlang-snappy/Makefile 444180 2017-06-23 13:50:20Z olgeni $
 
 PORTNAME=	snappy
 PORTVERSION=	1.1.1
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	archivers
 PKGNAMEPREFIX=	erlang-
 

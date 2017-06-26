@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net-im/ring-libclient/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/net-im/ring-libclient/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	ring-libclient
 PORTVERSION=	0.160516
@@ -18,7 +18,7 @@ USE_GITHUB=	yes
 #GH_TUPLE+=	savoirfairelinux:ring-lrc:9eaac77
 GH_TUPLE+=	savoirfairelinux:ring-lrc:cb5ee04
 
-USES=		cmake compiler:c++14-lang gmake
+USES=		cmake compiler:c++14-lang
 USE_GNOME=	glib20 gtk20 cairo gdkpixbuf2
 USE_XORG=	x11 xscrnsaver
 USE_GL=		gl

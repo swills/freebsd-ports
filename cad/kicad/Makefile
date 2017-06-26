@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@FreeBSD.org>
-# $FreeBSD: head/cad/kicad/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/cad/kicad/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	kicad
 DISTVERSION=	20140622%2Bbzr4027
@@ -19,7 +19,7 @@ RUN_DEPENDS=	xpdf:graphics/xpdf
 
 CONFLICTS=	kicad-devel*
 
-USES=		cmake compiler:gcc-c++11-lib desktop-file-utils dos2unix \
+USES=		cmake:noninja compiler:gcc-c++11-lib desktop-file-utils dos2unix \
 		shared-mime-info tar:xz
 
 DOS2UNIX_GLOB=	*.cmake sch_bus_entry.h sch_line.h sch_no_connect.h

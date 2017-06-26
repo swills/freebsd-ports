@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm38/Makefile 442109 2017-05-30 18:14:45Z brooks $
+# $FreeBSD: head/devel/llvm38/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	llvm
 DISTVERSION=	3.8.1
@@ -24,7 +24,7 @@ LLVM_PREFIX=	${PREFIX}/llvm${LLVM_SUFFIX}
 DOCSDIR=	${PREFIX}/share/doc/${PORTNAME}${LLVM_SUFFIX}
 DATADIR=	${PREFIX}/share/${PORTNAME}${LLVM_SUFFIX}
 
-USES=		cmake:outsource compiler:c++11-lib libedit ninja perl5 tar:xz \
+USES=		cmake:outsource compiler:c++11-lib libedit perl5 tar:xz \
 		shebangfix
 USE_LDCONFIG=	${LLVM_PREFIX}/lib
 SHEBANG_FILES=	utils/lit/lit.py utils/llvm-lit/llvm-lit.in \

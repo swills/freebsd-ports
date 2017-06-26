@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/dparser/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/dparser/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	dparser
 PORTVERSION=	1.30
@@ -12,8 +12,6 @@ COMMENT=	Simple but powerful tool for parsing
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
-
-BROKEN_ia64=	does not build on ia64
 
 WRKSRC=		${WRKDIR}/d
 

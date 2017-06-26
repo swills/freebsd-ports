@@ -1,5 +1,5 @@
 # Created by: Brian Feldman & Matt Heckaman
-# $FreeBSD: head/net-im/licq/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/net-im/licq/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	base
 PORTVERSION=	${LICQ_VER}
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libboost_regex.so:devel/boost-libs
 
 BROKEN_sparc64=		Does not build: fails to link
 
-USES=		cmake iconv ssl
+USES=		cmake:noninja iconv ssl
 WRKSRC=		${WRKDIR}/${DISTNAME}
 LICQ_PORT?=	net-im/licq
 

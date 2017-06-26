@@ -1,5 +1,5 @@
 # Created by: Eoin Lawless (eoin@maths.tcd.ie)
-# $FreeBSD: head/math/parmetis/Makefile 434738 2017-02-24 17:57:08Z dim $
+# $FreeBSD: head/math/parmetis/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	ParMetis
 PORTVERSION=	4.0
@@ -20,7 +20,7 @@ LICENSE_PERMS=	auto-accept
 OPTIONS_DEFINE=	OPENMPI DOCS
 OPENMPI_DESC=	Use openmpi instead of mpich2
 
-USES=		cmake gmake
+USES=		cmake:noninja gmake
 
 PLIST_FILES=	include/parmetis/metis.h \
 		include/parmetis/parmetis.h \

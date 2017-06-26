@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/multimedia/recmpeg/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/recmpeg/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	recmpeg
 PORTVERSION=	1.0.5
@@ -19,7 +19,5 @@ PLIST_FILES=	bin/recmpeg \
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-
-BROKEN_ia64=	Fails to link on ia64
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/www/p5-Toadfarm/Makefile 434548 2017-02-21 16:37:00Z sunpoet $
+# $FreeBSD: head/www/p5-Toadfarm/Makefile 444220 2017-06-24 16:31:24Z sunpoet $
 
 PORTNAME=	Toadfarm
-PORTVERSION=	0.77
+PORTVERSION=	0.78
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:JHTHORSEN

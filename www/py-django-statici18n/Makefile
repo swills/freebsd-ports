@@ -1,8 +1,8 @@
 # Created by: Ultima
-# $FreeBSD: head/www/py-django-statici18n/Makefile 433326 2017-02-04 17:17:46Z riggs $
+# $FreeBSD: head/www/py-django-statici18n/Makefile 444231 2017-06-24 17:06:08Z ultima $
 
 PORTNAME=	django-statici18n
-PORTVERSION=	1.3.0
+PORTVERSION=	1.4.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,5 +18,6 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18 \
 
 USES=		python
 USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

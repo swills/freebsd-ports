@@ -1,5 +1,5 @@
 # Created by: Axel Steiner <ast@treibsand.com>
-# $FreeBSD: head/mail/libcmime/Makefile 439424 2017-04-26 00:42:44Z ler $
+# $FreeBSD: head/mail/libcmime/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	libcmime
 PORTVERSION=	0.1.15
@@ -12,7 +12,7 @@ COMMENT=	Lightweight C mime library
 
 LICENSE=	MIT
 
-USES=		bison cmake pkgconfig
+USES=		bison cmake:noninja pkgconfig
 USE_LDCONFIG=	yes
 CMAKE_ARGS=	--no-warn-unused-cli
 

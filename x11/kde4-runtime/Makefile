@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kde4-runtime/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11/kde4-runtime/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	kde-runtime
 PORTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -24,7 +24,7 @@ LIB_DEPENDS=	libIlmImf.so:graphics/OpenEXR \
 BUILD_DEPENDS=	${LOCALBASE}/lib/libssh.so:security/libssh
 RUN_DEPENDS=	cagibid:net/cagibi
 
-USES=		cmake:outsource gettext gmake jpeg kde:4 samba:lib shared-mime-info \
+USES=		cmake:outsource gettext jpeg kde:4 samba:lib shared-mime-info \
 		shebangfix tar:xz
 USE_KDE=	kactivities kdelibs oxygen-icons5 \
 		attica automoc4 pimlibs soprano strigi nepomuk-core

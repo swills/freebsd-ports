@@ -1,5 +1,5 @@
 # Created by: TAKATSU Tomonari <tota@rtfm.jp>
-# $FreeBSD: head/japanese/mecab-ipadic/Makefile 422602 2016-09-22 11:26:48Z amdmi3 $
+# $FreeBSD: head/japanese/mecab-ipadic/Makefile 444227 2017-06-24 16:31:55Z sunpoet $
 
 PORTNAME=	mecab-ipadic
 DISTVERSION=	2.7.0-20070801
@@ -7,10 +7,20 @@ PORTREVISION=	1
 CATEGORIES=	japanese textproc
 MASTER_SITES=	https://drive.google.com/uc?export=download&id=0B4y35FiV1wh7MWVlSDBCSXZMTXM&dummy=/
 
-MAINTAINER=	yasu@utahime.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT?=	MeCab IPA dictionary meta-port
 
+LICENSE=	NAIST ICOT
+LICENSE_COMB=	multi
+LICENSE_NAME_NAIST=	NAIST
+LICENSE_NAME_ICOT=	ICOT
+LICENSE_PERMS_NAIST=	${_LICENSE_PERMS_DEFAULT}
+LICENSE_PERMS_ICOT=	${_LICENSE_PERMS_DEFAULT}
+
 .if empty(PKGNAMESUFFIX)
+LICENSE_TEXT_NAIST=	See https://github.com/taku910/mecab/blob/master/mecab-ipadic/COPYING
+LICENSE_TEXT_ICOT=	See https://github.com/taku910/mecab/blob/master/mecab-ipadic/COPYING
+
 USES=	metaport
 OPTIONS_RADIO=	CHARSET
 OPTIONS_RADIO_CHARSET=	EUCJP SHIFTJIS UTF8
@@ -19,20 +29,14 @@ OPTIONS_DEFAULT=	UTF8
 EUCJP_DESC=	Use EUC-JP as dictionary charset.
 SHIFTJIS_DESC=	Use SHIFT-JIS as dictionary charset.
 UTF8_DESC=	Use UTF-8 as dictionary charset.
-EUCJP_RUN_DEPENDS=	${LOCALBASE}/lib/mecab/dic/ipadic/char.bin:japanese/mecab-ipadic-eucjp
-SHIFTJIS_RUN_DEPENDS=	${LOCALBASE}/lib/mecab/dic/ipadic/char.bin:japanese/mecab-ipadic-sjis
-UTF8_RUN_DEPENDS=	${LOCALBASE}/lib/mecab/dic/ipadic/char.bin:japanese/mecab-ipadic-utf8
+EUCJP_RUN_DEPENDS=	ja-mecab-ipadic-eucjp>0:japanese/mecab-ipadic-eucjp
+SHIFTJIS_RUN_DEPENDS=	ja-mecab-ipadic-sjis>0:japanese/mecab-ipadic-sjis
+UTF8_RUN_DEPENDS=	ja-mecab-ipadic-utf8>0:japanese/mecab-ipadic-utf8
 .endif
 
 .if !empty(PKGNAMESUFFIX)
-LICENSE=	NAIST ICOT
-LICENSE_COMB=	multi
-LICENSE_NAME_NAIST=	NAIST
-LICENSE_NAME_ICOT=	ICOT
 LICENSE_FILE_NAIST=	${WRKSRC}/COPYING
 LICENSE_FILE_ICOT=	${WRKSRC}/COPYING
-LICENSE_PERMS_NAIST=	${_LICENSE_PERMS_DEFAULT}
-LICENSE_PERMS_ICOT=	${_LICENSE_PERMS_DEFAULT}
 
 BUILD_DEPENDS=	ja-mecab>=0.94:japanese/mecab
 

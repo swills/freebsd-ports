@@ -1,5 +1,5 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/databases/mysql57-server/Makefile 438699 2017-04-17 14:58:06Z mmokhi $
+# $FreeBSD: head/databases/mysql57-server/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME?=	mysql
 PORTVERSION=	5.7.18
@@ -16,7 +16,7 @@ LICENSE=	GPLv2
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 SLAVEDIRS=	databases/mysql57-client
-USES=		bison:build cmake:outsource compiler:c11 compiler:c++11-lib \
+USES=		bison:build cmake:outsource,noninja compiler:c11 compiler:c++11-lib \
 		cpe libedit localbase perl5 shebangfix ssl
 
 USE_PERL5=	run

@@ -1,5 +1,5 @@
 # Created by: barnhart@genetics.wustl.edu
-# $FreeBSD: head/biology/hmmer/Makefile 403506 2015-12-11 08:48:56Z miwi $
+# $FreeBSD: head/biology/hmmer/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	hmmer
 PORTVERSION=	3.0
@@ -30,7 +30,7 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 # HMMER is useless without SSE and any PC in use today should support it
 # Should probably also do enable-vmx on Power processors to enable
 # Altivec/VMX, but I don't have a machine to test this.
-.if ${ARCH} == "amd64" || ${ARCH} == "ia64" || ${ARCH} == "i386"
+.if ${ARCH} == "amd64" || ${ARCH} == "i386"
 CONFIGURE_ARGS+=--enable-sse
 .endif
 

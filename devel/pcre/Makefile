@@ -1,5 +1,5 @@
 # Created by: dom
-# $FreeBSD: head/devel/pcre/Makefile 432864 2017-01-30 19:42:45Z adamw $
+# $FreeBSD: head/devel/pcre/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	pcre
 PORTVERSION=	8.40
@@ -80,7 +80,7 @@ CONFIGURE_ARGS+=	--with-parens-nest-limit=${WITH_PARENS_NEST_LIMIT}
 CONFIGURE_ARGS+=	--with-posix-malloc-threshold=${WITH_POSIX_MALLOC_THRESHOLD}
 .endif
 
-.if ${ARCH} != "sparc64" && ${ARCH} != "ia64" && empty(ARCH:Mmips64*)
+.if ${ARCH} != "sparc64" && empty(ARCH:Mmips64*)
 CONFIGURE_ARGS+=	--enable-jit
 .else
 CONFIGURE_ARGS+=	--disable-jit

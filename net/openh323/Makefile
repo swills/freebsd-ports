@@ -1,5 +1,5 @@
 # Created by: Roger Hardiman <roger@FreeBSD.org>
-# $FreeBSD: head/net/openh323/Makefile 439779 2017-04-30 01:12:10Z linimon $
+# $FreeBSD: head/net/openh323/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	openh323
 PORTVERSION=	1.19.0.1
@@ -27,6 +27,10 @@ USE_AUTOTOOLS=	autoconf
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 
+CFLAGS_amd64=	-fPIC
+CFLAGS_powerpc=	-fPIC
+CFLAGS_sparc64=	-fPIC
+
 ALL_TARGET=	optshared
 CONFIGURE_ENV+=	BUILDTIME="YES"
 CPPFLAGS+=	-I${LOCALBASE}/include -I${WRKSRC}/include
@@ -42,10 +46,6 @@ SPEEX_CONFIGURE_ON=	--enable-localspeex=no
 SPEEX_CONFIGURE_OFF=	--enable-localspeex=yes
 
 .include <bsd.port.pre.mk>
-
-.if (${ARCH} == "amd64") || (${ARCH} == "ia64") || (${ARCH} == "powerpc") || (${ARCH} == "sparc64")
-CFLAGS+=	-fPIC
-.endif
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|' \

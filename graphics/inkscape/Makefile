@@ -1,5 +1,5 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/graphics/inkscape/Makefile 441761 2017-05-26 08:20:18Z kwm $
+# $FreeBSD: head/graphics/inkscape/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	inkscape
 PORTVERSION=	0.92.1
@@ -32,7 +32,7 @@ LIB_DEPENDS=	libpopt.so:devel/popt \
 
 USE_GNOME=	gtkmm24 libxml2 libxslt
 USES=		compiler:c++11-lib cmake cpe desktop-file-utils gnome \
-		iconv:wchar_t ninja jpeg pathfix pkgconfig python:2,build \
+		iconv:wchar_t jpeg pathfix pkgconfig python:2,build \
 		shebangfix tar:bzip2
 USE_XORG=	x11
 INSTALLS_ICONS=	yes

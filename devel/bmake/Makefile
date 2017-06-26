@@ -1,11 +1,11 @@
 # Created by: Mikolaj Golub <to.my.trociny@gmail.com>
-# $FreeBSD: head/devel/bmake/Makefile 440470 2017-05-09 06:27:56Z trociny $
+# $FreeBSD: head/devel/bmake/Makefile 444323 2017-06-25 20:40:05Z trociny $
 
 PORTNAME=	bmake
-PORTVERSION=	20170505
+PORTVERSION=	20170510
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.netbsd.org/pub/NetBSD/misc/sjg/
-DISTFILES=	bmake-${PORTVERSION}.tar.gz mk-${PORTVERSION}.tar.gz
+DISTFILES=	bmake-${PORTVERSION}.tar.gz mk-20170505.tar.gz
 
 MAINTAINER=	trociny@FreeBSD.org
 COMMENT=	Portable version of NetBSD 'make' utility

@@ -1,5 +1,5 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/audio/spiralsynthmodular/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/spiralsynthmodular/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	spiralsynthmodular
 PORTVERSION=	0.2.2a
@@ -23,8 +23,6 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LIBS+=		-L${LOCALBASE}/lib
 
 WRKSRC=		${WRKDIR}/spiralmodular-0.2.2
-
-BROKEN_ia64=	Does not compile on ia64
 
 OPTIONS_DEFINE=	OPTIMIZED_CFLAGS
 

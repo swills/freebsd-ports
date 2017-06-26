@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <sysadmin@alexdupre.com>
-# $FreeBSD: head/print/pdflib/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/print/pdflib/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	pdflib
 PORTVERSION=	7.0.5
@@ -28,7 +28,7 @@ PERL_USES=	perl5
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == "amd64" || ${ARCH} == "ia64" || ${ARCH} == "sparc64"
+.if ${ARCH} == "amd64" || ${ARCH} == "sparc64"
 CONFIGURE_ARGS+=--enable-64bit
 .endif
 

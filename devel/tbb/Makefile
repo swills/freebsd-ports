@@ -1,5 +1,5 @@
 # Created by: Arun Sharma <arun@sharma-home.net>
-# $FreeBSD: head/devel/tbb/Makefile 435599 2017-03-07 12:44:41Z martymac $
+# $FreeBSD: head/devel/tbb/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	tbb
 PORTVERSION=	2017.5
@@ -23,7 +23,7 @@ SUB_LIST=	prefix="${PREFIX}" \
 OPTIONS_DEFINE=	DOCS
 PORTDOCS=	*
 
-ONLY_FOR_ARCHS=	amd64 i386 ia64
+ONLY_FOR_ARCHS=		amd64 i386
 ONLY_FOR_ARCHS_REASON=	has not been ported to this platform
 
 USE_LDCONFIG=	yes

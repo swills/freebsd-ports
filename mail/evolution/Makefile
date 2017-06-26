@@ -1,5 +1,5 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/mail/evolution/Makefile 443491 2017-06-13 08:13:28Z kwm $
+# $FreeBSD: head/mail/evolution/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	evolution
 PORTVERSION=	3.24.2
@@ -41,7 +41,7 @@ RUN_DEPENDS=	highlight:textproc/highlight \
 PORTSCOUT=	limitw:1,even
 
 USES=		desktop-file-utils cmake gettext gnome iconv:wchar_t \
-		sqlite libarchive ninja localbase pathfix pkgconfig tar:xz
+		sqlite libarchive localbase pathfix pkgconfig tar:xz
 USE_GNOME=	cairo evolutiondataserver3 gnomedesktop3 intltool
 GNU_CONFIGURE=	yes
 USE_XORG=	x11

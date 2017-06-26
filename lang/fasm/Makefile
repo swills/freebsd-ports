@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/lang/fasm/Makefile 429925 2016-12-29 15:49:18Z amdmi3 $
+# $FreeBSD: head/lang/fasm/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	fasm
 PORTVERSION=	1.71.58
@@ -12,7 +12,7 @@ COMMENT=	Flat, multiple-pass assembler for IA-32 & x86-64 architectures
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/license.txt
 
-ONLY_FOR_ARCHS=	i386 amd64 ia64
+ONLY_FOR_ARCHS=		amd64 i386
 IA32_BINARY_PORT=	yes
 
 PLIST_FILES=	bin/fasm

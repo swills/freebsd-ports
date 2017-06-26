@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/usrp/Makefile 441323 2017-05-20 17:29:24Z tcberner $
+# $FreeBSD: head/comms/usrp/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	usrp
 PORTVERSION=	3.4.3
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	${LOCALBASE}/include/boost/tuple/tuple.hpp:devel/boost-libs \
 		orcc:devel/orc \
 		sdcc:lang/sdcc
 
-USES=			compiler:c++0x cmake:outsource gmake pkgconfig python:run \
+USES=			compiler:c++0x cmake:outsource,noninja gmake pkgconfig python:run \
 			dos2unix shebangfix
 COMPILER_FEATURES=	libc++
 USE_LDCONFIG=		yes

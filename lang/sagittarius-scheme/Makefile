@@ -1,5 +1,5 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/lang/sagittarius-scheme/Makefile 442750 2017-06-06 08:46:40Z rakuco $
+# $FreeBSD: head/lang/sagittarius-scheme/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	sagittarius
 PORTVERSION=	0.8.0
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libffi.so:devel/libffi \
 		libgc-threaded.so:devel/boehm-gc-threaded
 
 USE_LDCONFIG=	yes
-USES=		cmake gmake pkgconfig
+USES=		cmake pkgconfig
 ONLY_FOR_ARCHS=	amd64 i386
 MAKE_JOBS_UNSAFE=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/libcfg/Makefile 405150 2016-01-03 14:24:09Z rakuco $
+# $FreeBSD: head/devel/libcfg/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	libcfg
 PORTVERSION=	0.6.2
@@ -26,7 +26,6 @@ OPTIONS_DEFINE=	EXAMPLES DOCS
 OPTIONS_SUB=	yes
 
 CFLAGS_amd64=	-fPIC
-CFLAGS_ia64=	-fPIC
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/gsculpt/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/gsculpt/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	gsculpt
 PORTVERSION=	0.99.47
@@ -18,6 +18,9 @@ LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PyOpenGL>0:graphics/py-PyOpenGL \
 		${PYTHON_PKGNAMEPREFIX}gtkglext>0:x11-toolkits/py-gtkglext
 
+BROKEN_powerpc=		fails to compile
+BROKEN_sparc64=		fails to compile
+
 WRKSRC=		${WRKDIR}/${DISTNAME:S,-src,,}
 
 USES=		pkgconfig python:2 scons
@@ -34,11 +37,7 @@ DESKTOP_ENTRIES="gSculpt" "" \
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == "ia64" || ${ARCH} == "powerpc" || ${ARCH} == "sparc64"
-BROKEN=		does not compile on ia64, powerpc, or sparc64
-.endif
-
-.if ${ARCH} == "i386"
+.if ${ARCH} == i386
 CFLAGS+=	-DGSCULPT_FPU_X86
 .endif
 

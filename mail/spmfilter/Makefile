@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/spmfilter/Makefile 441714 2017-05-25 20:12:32Z bapt $
+# $FreeBSD: head/mail/spmfilter/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	spmfilter
 PORTVERSION=	0.6.7
@@ -20,7 +20,7 @@ SMFUSER?=	nobody
 SMFGROUP?=	mail
 SMFDIR?=	/var/spool/spmfilter
 
-USES=		cmake pkgconfig
+USES=		cmake:noninja pkgconfig
 CMAKE_ARGS+=	--no-warn-unused-cli \
 		-DCMAKE_INCLUDE_PATH="${LOCALBASE}/include" \
 		-DCMAKE_LIBRARY_PATH="${LOCALBASE}/lib"

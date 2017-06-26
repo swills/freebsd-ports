@@ -1,11 +1,12 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/devel/efl/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/devel/efl/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	efl
 PORTVERSION=	1.18.4
 PORTREVISION=	6
 CATEGORIES=	devel enlightenment
 MASTER_SITES=	http://download.enlightenment.org/rel/libs/${PORTNAME}/
+DIST_SUBDIR=	enlightenment
 
 MAINTAINER=	enlightenment@FreeBSD.org
 COMMENT=	Enlightenment Foundation Libraries
@@ -21,7 +22,6 @@ LIB_DEPENDS=	libgif.so:graphics/giflib \
 		libdbus-1.so:devel/dbus \
 		libsndfile.so:audio/libsndfile
 
-DIST_SUBDIR=	enlightenment
 GNU_CONFIGURE=	yes
 USES=		autoreconf compiler:c++11-lib gettext-tools gmake iconv jpeg \
 		libtool pathfix pkgconfig shared-mime-info tar:xz
@@ -143,7 +143,7 @@ CONFIGURE_ARGS+=		--disable-ibus --with-glib=no
 CONFIGURE_ARGS+=		--with-opengl=none
 .endif
 
-.if ${ARCH} == "ia64" || ${ARCH} == "powerpc" || ${ARCH} == "sparc64"
+.if ${ARCH} == "powerpc" || ${ARCH} == "sparc64"
 USES+=				lua
 CONFIGURE_ARGS+=		--enable-lua-old
 PLIST_SUB+=			ELUA="@comment "

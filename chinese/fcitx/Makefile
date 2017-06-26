@@ -1,5 +1,5 @@
 # Created by: Shen Chuan-Hsing <statue@freebsd.sinica.edu.tw>
-# $FreeBSD: head/chinese/fcitx/Makefile 429655 2016-12-27 20:33:29Z pi $
+# $FreeBSD: head/chinese/fcitx/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	fcitx
 PORTVERSION=	4.2.9.1
@@ -39,7 +39,7 @@ USE_GNOME=	pango intltool libxml2 introspection
 USE_KDE=	ecm
 USE_XORG=	x11 xext xkbfile sm ice
 USE_LDCONFIG=	yes
-USES=		tar:xz cmake desktop-file-utils execinfo \
+USES=		tar:xz cmake:noninja desktop-file-utils execinfo \
 		gettext-tools:build,run gettext-runtime iconv:wchar_t \
 		kde:5 pkgconfig shared-mime-info
 INSTALLS_ICONS=	yes

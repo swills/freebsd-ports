@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/lang/gcc6-aux/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/lang/gcc6-aux/Makefile 444250 2017-06-24 23:41:02Z linimon $
 
 PORTNAME=	gcc6-aux
 PORTVERSION=	${SNAPSHOT}
@@ -49,7 +49,7 @@ BOOTSTRAP_DESC=		Create bootstrap compiler (overrides other options)
 .include <bsd.port.options.mk>
 
 .if ${OPSYS} == FreeBSD
-ONLY_FOR_ARCHS=		amd64 i386 aarch64
+ONLY_FOR_ARCHS=		aarch64 amd64 i386
 MODERN_BINUTILS=	yes
 .  if ${ARCH} == aarch64
 BOOTSTRAP_COMPILER=	ada-bootstrap.aarch64.freebsd.120.tar.bz2

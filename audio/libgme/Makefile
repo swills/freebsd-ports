@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/libgme/Makefile 428674 2016-12-16 12:46:01Z tijl $
+# $FreeBSD: head/audio/libgme/Makefile 444324 2017-06-25 21:07:58Z tcberner $
 
 PORTNAME=	libgme
 PORTVERSION=	0.6.1
@@ -11,7 +11,7 @@ COMMENT=	Collection of video game music emulators
 
 LICENSE=	LGPL21+
 
-USES=		cmake dos2unix ninja tar:bzip2
+USES=		cmake dos2unix tar:bzip2
 USE_LDCONFIG=	yes
 
 PORTDOCS=	changes.txt design.txt gme.txt readme.txt

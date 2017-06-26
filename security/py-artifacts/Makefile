@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-artifacts/Makefile 442681 2017-06-05 19:26:26Z antoine $
+# $FreeBSD: head/security/py-artifacts/Makefile 444260 2017-06-25 11:14:47Z antoine $
 
 PORTNAME=	artifacts
-PORTVERSION=	20170522
+PORTVERSION=	20170618
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP \
 		https://github.com/ForensicArtifacts/artifacts/releases/download/${PORTVERSION}/

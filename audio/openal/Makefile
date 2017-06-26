@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/audio/openal/Makefile 438272 2017-04-11 15:21:23Z mat $
+# $FreeBSD: head/audio/openal/Makefile 444251 2017-06-25 00:29:09Z linimon $
 
 PORTNAME=	openal
 PORTVERSION=	20060211
@@ -40,9 +40,6 @@ SMPEG_CONFIGURE_ENABLE=	mp3
 ALSA_LIB_DEPENDS=	libasound.so:audio/alsa-lib
 ALSA_CONFIGURE_ENABLE=	alsa
 ASM_BUILD_DEPENDS=	nasm:devel/nasm
-
-NOT_FOR_ARCHS=	ia64
-NOT_FOR_ARCHS_REASON_ia64=	does not compile
 
 post-patch:
 	@${REINPLACE_CMD} -e 's/x86_64\*/amd64\* | \*ia64\*/g; \

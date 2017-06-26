@@ -1,5 +1,5 @@
 # Created by: Sir l33tname <sirl33tname@gmail.com>
-# $FreeBSD: head/archivers/lua51-zlib/Makefile 434582 2017-02-22 12:59:28Z bapt $
+# $FreeBSD: head/archivers/lua51-zlib/Makefile 444276 2017-06-25 15:02:38Z sunpoet $
 
 PORTNAME=	lua51
 PORTVERSION=	1.1
@@ -19,7 +19,7 @@ GH_PROJECT=	lua-zlib
 USES=		lua:51
 
 ALL_TARGET=	bsd
-MAKE_ENV+=      LUAPATH="${LOCALBASE}"
+MAKE_ENV+=	LUAPATH="${LOCALBASE}"
 MAKE_ENV+=	LUACPATH="${STAGEDIR}${LUA_MODLIBDIR}"
 MAKE_ENV+=	INCDIR="-I${LUA_INCDIR}"
 MAKE_ENV+=	LUALIBDIR="-L${LUA_MODLIBDIR}"
