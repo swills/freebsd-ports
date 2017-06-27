@@ -1,5 +1,5 @@
 # Created by: Valery Komarov <komarov@valerka.net>
-# $FreeBSD: head/net/yate/Makefile 428318 2016-12-10 19:32:36Z brnrd $
+# $FreeBSD: head/net/yate/Makefile 444433 2017-06-26 23:44:13Z linimon $
 
 PORTNAME=	yate
 DISTVERSION=	5.5.0p1
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 		libspeex.so:audio/speex \
 		libgsm.so:audio/gsm
 
-ONLY_FOR_ARCHS=	i386 amd64 sparc64 armv6
+ONLY_FOR_ARCHS=		amd64 armv6 i386 sparc64
 
 USES=		autoreconf bison gmake shebangfix
 SHEBANG_FILES=	share/scripts/banbrutes.php \

@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/lang/seed7/Makefile 440107 2017-05-04 13:30:23Z gahr $
+# $FreeBSD: head/lang/seed7/Makefile 444437 2017-06-27 00:05:15Z linimon $
 
 PORTNAME=	seed7
 DISTVERSION=	05_20170501
@@ -19,13 +19,13 @@ LICENSE_COMB=	multi
 
 LIB_DEPENDS=	libodbc.so:databases/unixODBC
 
+ONLY_FOR_ARCHS=		amd64 i386 sparc64
+
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 USES=		mysql:client ncurses pgsql sqlite tar:tgz
 USE_XORG=	x11
 WANT_PGSQL=	client
-
-ONLY_FOR_ARCHS=	i386 amd64 sparc64
 
 WRKSRC=		${WRKDIR}/${PORTNAME}/src
 MAKE_ENV+=	S7_LIB_DIR=${S7_LIB_DIR} \

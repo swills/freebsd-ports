@@ -1,8 +1,9 @@
 # Created by: eivind
-# $FreeBSD: head/games/xscavenger/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/xscavenger/Makefile 444423 2017-06-26 22:49:53Z jbeich $
 
 PORTNAME=	xscavenger
 PORTVERSION=	1.4.5
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://www.linuxmotors.com/scavenger/downloads/
 

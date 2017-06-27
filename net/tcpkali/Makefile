@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/tcpkali/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/net/tcpkali/Makefile 444417 2017-06-26 22:26:55Z linimon $
 
 PORTNAME=	tcpkali
 PORTVERSION=	1.1.1
@@ -12,7 +12,7 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 ONLY_FOR_ARCHS=		amd64 i386
-ONLY_FOR_ARCHS_REASON=	uses i386 assembler
+ONLY_FOR_ARCHS_REASON=	uses x86 assembler
 
 GNU_CONFIGURE=	yes
 USES=		autoreconf libtool gmake ncurses

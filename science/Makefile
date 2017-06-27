@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 442906 2017-06-08 03:22:39Z jrm $
+# $FreeBSD: head/science/Makefile 444440 2017-06-27 03:36:03Z tota $
 #
 
     COMMENT = Scientific ports
@@ -16,6 +16,7 @@
     SUBDIR += R-cran-etm
     SUBDIR += R-cran-snow
     SUBDIR += R-cran-som
+    SUBDIR += R-cran-udunits2
     SUBDIR += afni
     SUBDIR += avogadro
     SUBDIR += bddsolve

@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net/cjdns/Makefile 435244 2017-03-02 15:43:36Z krion $
+# $FreeBSD: head/net/cjdns/Makefile 444361 2017-06-26 10:10:20Z bhughes $
 
 PORTNAME=	cjdns
-PORTVERSION=	19.1
+PORTVERSION=	20
 DISTVERSIONPREFIX=	cjdns-v
 CATEGORIES=	net security
 

@@ -1,5 +1,5 @@
 # Created by: Maxim Khon <fjoe@FreeBSD.org>
-# $FreeBSD: head/misc/dahdi-kmod/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/misc/dahdi-kmod/Makefile 444437 2017-06-27 00:05:15Z linimon $
 
 PORTNAME=	dahdi-kmod
 PORTVERSION=	${DAHDI_VERSION:S/-//g}
@@ -16,6 +16,8 @@ MAINTAINER=	fjoe@FreeBSD.org
 COMMENT=	Digium/Asterisk Hardware Device Interface
 
 RUN_DEPENDS=	${LOCALBASE}/sbin/dahdi_cfg:misc/dahdi
+
+ONLY_FOR_ARCHS=		amd64 i386 sparc64
 
 DAHDI_VERSION=		2.4.0-rc5
 DAHDI_TOOLS_VERSION=	2.4.0-rc1
@@ -39,7 +41,6 @@ USE_RC_SUBR=	dahdi
 MAKE_ARGS=	ADDITIONAL_DRIVERS="wcb1xxp" NO_FETCH=yes DEPEND_MP=
 GROUPS=		dahdi
 
-ONLY_FOR_ARCHS=	i386 amd64 sparc64
 CONFLICTS=	zaptel-[0-9]* dahdi-kmod26-*
 
 USES=		kmod uidfix
@@ -48,7 +49,7 @@ KMODDIR=	${PREFIX}/lib/dahdi
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == "i386" || ${ARCH} == "amd64"
+.if ${ARCH} == "amd64" || ${ARCH} == "i386"
 PLIST_SUB+=	X86=""
 _vpmadt032=	VPMADT032
 .else

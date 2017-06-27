@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/artifactory/Makefile 441415 2017-05-21 16:20:55Z joneum $
+# $FreeBSD: head/devel/artifactory/Makefile 444430 2017-06-26 23:28:35Z dbaio $
 
 PORTNAME=	artifactory
-PORTVERSION=	5.3.0
+PORTVERSION=	5.4.1
 CATEGORIES=	devel java
 MASTER_SITES=	https://bintray.com/artifact/download/jfrog/artifactory/
 DISTNAME=	jfrog-${PORTNAME}-oss-${PORTVERSION}

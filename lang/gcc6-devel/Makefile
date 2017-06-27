@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc6-devel/Makefile 443790 2017-06-17 22:31:36Z gerald $
+# $FreeBSD: head/lang/gcc6-devel/Makefile 444424 2017-06-26 22:50:12Z linimon $
 
 PORTNAME=	gcc
 PORTVERSION=	6.3.1.s20170614
@@ -75,7 +75,7 @@ CONFIGURE_ENV+=	UNAME_m="powerpc64"
 USE_GCC=	5	# Cannot require ourselves, needs to be at least 4.9.
 .endif
 
-.if ${ARCH} == "armv6" || ${ARCH} == "aarch64"
+.if ${ARCH} == "aarch64" || ${ARCH} == "armv6"
 . if ${COMPILER_TYPE} == clang
 .  if empty(PORT_OPTIONS:MBOOTSTRAP)
 MAKE_ARGS+=CXXFLAGS=-fbracket-depth=512
@@ -120,7 +120,7 @@ INFO=		gcc${SUFFIX}/cpp \
 		gcc${SUFFIX}/gccint \
 		gcc${SUFFIX}/gfortran \
 		gcc${SUFFIX}/libgomp
-.if ${ARCH} == "i386" || ${ARCH} == "amd64"
+.if ${ARCH} == "amd64" || ${ARCH} == "i386"
 INFO+=		gcc${SUFFIX}/libquadmath \
 		gcc${SUFFIX}/libitm
 .endif

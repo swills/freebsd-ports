@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/gdb/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/devel/gdb/Makefile 444433 2017-06-26 23:44:13Z linimon $
 
 PORTNAME=	gdb
 PORTVERSION=	7.12.1
@@ -38,7 +38,8 @@ LIB_DEPENDS+=	libexpat.so:textproc/expat2
 VER=		${PORTVERSION:S/.//g}
 PLIST_SUB=	VER=${VER}
 
-ONLY_FOR_ARCHS=		amd64 armv6 i386 mips powerpc powerpc64		# untested elsewhere, might work
+# untested elsewhere, might work
+ONLY_FOR_ARCHS=		amd64 armv6 i386 mips powerpc powerpc64	
 
 OPTIONS_DEFINE=	DEBUG GDB_LINK GUILE KGDB PYTHON TUI
 

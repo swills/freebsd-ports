@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/qsstv/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/comms/qsstv/Makefile 444376 2017-06-26 16:19:17Z adrian $
 
 PORTNAME=	qsstv
 PORTVERSION=	9.2.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	comms hamradio
 MASTER_SITES=	http://users.telenet.be/on4qz/qsstv/downloads/ \
 		LOCAL/db

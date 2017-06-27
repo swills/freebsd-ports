@@ -1,5 +1,5 @@
 # Created by: KIMURA Yasuhiro <yasu@utahime.org>
-# $FreeBSD: head/irc/riece/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/irc/riece/Makefile 444435 2017-06-27 00:01:38Z dbaio $
 
 PORTNAME=	riece
 PORTVERSION=	9.0.0
@@ -9,11 +9,13 @@ CATEGORIES=	irc elisp
 MASTER_SITES=	SAVANNAH
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
 
-MAINTAINER=	yasu@utahime.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	IRC client for Emacs
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
+NO_ARCH=	yes
 USES=		gmake
 USE_EMACS=	yes
 GNU_CONFIGURE=	yes

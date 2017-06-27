@@ -1,5 +1,5 @@
 # Created by: Foxfair Hu <foxfair@FreeBSD.org>
-# $FreeBSD: head/security/cryptlib/Makefile 431239 2017-01-12 09:16:11Z ale $
+# $FreeBSD: head/security/cryptlib/Makefile 444433 2017-06-26 23:44:13Z linimon $
 
 PORTNAME=		cryptlib
 PORTVERSION=		3.4.3
@@ -10,7 +10,7 @@ DISTNAME=		cl${PORTVERSION:S/.//g}
 MAINTAINER=		ale@FreeBSD.org
 COMMENT=		Powerful security programming toolkit
 
-ONLY_FOR_ARCHS=		i386 amd64 armv6
+ONLY_FOR_ARCHS=		amd64 armv6 i386
 
 OPTIONS_DEFINE=		DOCS
 

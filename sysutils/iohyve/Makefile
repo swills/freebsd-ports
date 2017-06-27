@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/iohyve/Makefile 435492 2017-03-05 17:19:50Z lme $
+# $FreeBSD: head/sysutils/iohyve/Makefile 444451 2017-06-27 10:54:50Z lme $
 
 PORTNAME=	iohyve
-PORTVERSION=	0.7.8
+PORTVERSION=	0.7.9
 CATEGORIES=	sysutils
 
 MAINTAINER=	lme@FreeBSD.org

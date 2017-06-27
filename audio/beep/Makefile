@@ -1,5 +1,5 @@
 # Created by: Tyler Spivey
-# $FreeBSD: head/audio/beep/Makefile 426950 2016-11-23 18:32:33Z amdmi3 $
+# $FreeBSD: head/audio/beep/Makefile 444417 2017-06-26 22:26:55Z linimon $
 
 PORTNAME=	beep
 PORTVERSION=	1.0
@@ -14,7 +14,7 @@ LICENSE=	BSD4CLAUSE
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-ONLY_FOR_ARCHS=	i386 amd64 pc98
+ONLY_FOR_ARCHS=	amd64 i386
 
 PLIST_FILES=	bin/beep man/man1/beep.1.gz
 

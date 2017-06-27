@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc8-devel/Makefile 443602 2017-06-14 21:30:03Z gerald $
+# $FreeBSD: head/lang/gcc8-devel/Makefile 444424 2017-06-26 22:50:12Z linimon $
 
 PORTNAME=	gcc
 PORTVERSION=	8.0.0.s20170611
@@ -110,7 +110,7 @@ INFO=		gcc${SUFFIX}/cpp \
 		gcc${SUFFIX}/gccint \
 		gcc${SUFFIX}/gfortran \
 		gcc${SUFFIX}/libgomp
-.if ${ARCH} == "i386" || ${ARCH} == "amd64"
+.if ${ARCH} == "amd64" || ${ARCH} == "i386"
 INFO+=		gcc${SUFFIX}/libquadmath \
 		gcc${SUFFIX}/libitm
 .endif

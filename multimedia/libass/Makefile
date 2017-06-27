@@ -1,8 +1,7 @@
-# $FreeBSD: head/multimedia/libass/Makefile 434477 2017-02-20 17:51:19Z riggs $
+# $FreeBSD: head/multimedia/libass/Makefile 444415 2017-06-26 22:13:08Z jbeich $
 
 PORTNAME=	libass
-PORTVERSION=	0.13.6
-PORTREVISION=	1
+PORTVERSION=	0.13.7
 CATEGORIES=	multimedia devel
 
 MAINTAINER=	multimedia@FreeBSD.org

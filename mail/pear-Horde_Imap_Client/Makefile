@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/pear-Horde_Imap_Client/Makefile 428797 2016-12-17 19:06:35Z mm $
+# $FreeBSD: head/mail/pear-Horde_Imap_Client/Makefile 444450 2017-06-27 10:02:04Z mm $
 
 PORTNAME=	Horde_Imap_Client
-PORTVERSION=	2.29.12
+PORTVERSION=	2.29.13
 CATEGORIES=	mail www pear
 PKGNAMEPREFIX=	pear-
 

@@ -1,5 +1,5 @@
 # Created by: mnag
-# $FreeBSD: head/misc/compat6x/Makefile 425253 2016-11-03 16:27:03Z linimon $
+# $FreeBSD: head/misc/compat6x/Makefile 444437 2017-06-27 00:05:15Z linimon $
 
 PORTNAME=	compat6x
 PORTVERSION=	6.4.604000.200810
@@ -13,9 +13,10 @@ DISTNAME=	${PORTNAME}-${ARCH}-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Convenience package to install the compat6x libraries
 
-USES=	tar:bzip2
+ONLY_FOR_ARCHS=		amd64 i386 sparc64
+
+USES=		tar:bzip2
 NO_BUILD=	yes
-ONLY_FOR_ARCHS=	i386 amd64 sparc64
 PLIST=		${PKGDIR}/pkg-plist.${ARCH}
 TARGET_DIR=	${PREFIX}/lib/compat
 TARGET32_DIR=	${PREFIX}/lib32/compat

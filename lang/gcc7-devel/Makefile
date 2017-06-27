@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc7-devel/Makefile 443793 2017-06-17 23:27:37Z gerald $
+# $FreeBSD: head/lang/gcc7-devel/Makefile 444424 2017-06-26 22:50:12Z linimon $
 
 PORTNAME=	gcc
 PORTVERSION=	7.1.1.s20170615
@@ -110,7 +110,7 @@ INFO=		gcc${SUFFIX}/cpp \
 		gcc${SUFFIX}/gccint \
 		gcc${SUFFIX}/gfortran \
 		gcc${SUFFIX}/libgomp
-.if ${ARCH} == "i386" || ${ARCH} == "amd64"
+.if ${ARCH} == "amd64" || ${ARCH} == "i386"
 INFO+=		gcc${SUFFIX}/libquadmath \
 		gcc${SUFFIX}/libitm
 .endif

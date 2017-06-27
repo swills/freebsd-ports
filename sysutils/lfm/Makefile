@@ -1,13 +1,14 @@
 # Created by: ijliao
-# $FreeBSD: head/sysutils/lfm/Makefile 436523 2017-03-20 00:28:42Z sunpoet $
+# $FreeBSD: head/sysutils/lfm/Makefile 444400 2017-06-26 19:37:03Z sunpoet $
 
 PORTNAME=	lfm
-PORTVERSION=	3.0
+PORTVERSION=	3.1
 CATEGORIES=	sysutils
-MASTER_SITES=	https://inigo.katxi.org/devel/lfm/
+MASTER_SITES=	https://inigo.katxi.org/devel/lfm/ \
+		LOCAL/sunpoet
 
-MAINTAINER=	ports@FreeBSD.org
-COMMENT=	Last File Manager, a simple 'commander'-type file manager
+MAINTAINER=	sunpoet@FreeBSD.org
+COMMENT=	Last File Manager, a powerful file manager for the UNIX console
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING

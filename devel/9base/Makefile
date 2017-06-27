@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/devel/9base/Makefile 340488 2014-01-20 23:17:11Z bapt $
+# $FreeBSD: head/devel/9base/Makefile 444437 2017-06-27 00:05:15Z linimon $
 
 PORTNAME=	9base
 DISTVERSION=	b20100604
@@ -11,6 +11,9 @@ MAINTAINER=	sbz@FreeBSD.org
 COMMENT=	Port of various original plan9 tools
 
 LICENSE=	MIT
+
+ONLY_FOR_ARCHS=		amd64 i386 sparc64
+ONLY_FOR_ARCHS_REASON=	has low-level code unavailable for ${ARCH}
 
 USES=		shebangfix
 SHEBANG_FILES=	troff/tmac/sendcover \
@@ -28,9 +31,6 @@ APPS=		ascii awk basename bc cal cat cleanname cmp date dc du dd diff echo ed \
 		factor fortune fmt freq getflags grep hoc join look ls mk mkdir mtime pbd \
 		primes rc read sam sha1sum sed seq sleep sort split strings tail tee test \
 		touch tr troff unicode uniq unutf yacc
-
-ONLY_FOR_ARCHS=	i386 amd64 sparc64
-ONLY_FOR_ARCHS_REASON=	has low-level code unavailable for ${ARCH}
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|PREFIX|"${PREFIX}/9"|' ${WRKSRC}/lib9/get9root.c

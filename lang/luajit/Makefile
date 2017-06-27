@@ -1,5 +1,5 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/lang/luajit/Makefile 440048 2017-05-03 21:37:40Z osa $
+# $FreeBSD: head/lang/luajit/Makefile 444433 2017-06-26 23:44:13Z linimon $
 
 PORTNAME=	luajit
 DISTVERSION=	2.0.5
@@ -16,7 +16,7 @@ USE_LDCONFIG=	yes
 
 PLIST_SUB+=	VERSION=${DISTVERSION}
 
-ONLY_FOR_ARCHS=	i386 amd64 armv6
+ONLY_FOR_ARCHS=		amd64 armv6 i386
 ONLY_FOR_ARCHS_REASON=	Requires newer gcc/clang to compile.
 
 post-install:

@@ -1,11 +1,11 @@
-# $FreeBSD: head/sysutils/vchanger/Makefile 444216 2017-06-24 16:23:49Z dbaio $
+# $FreeBSD: head/sysutils/vchanger/Makefile 444428 2017-06-26 23:17:20Z dbaio $
 
 PORTNAME=	vchanger
 PORTVERSION=	1.0.1
 CATEGORIES=	sysutils
 MASTER_SITES=	SF
 
-MAINTAINER=	freebsd@netfence.it
+MAINTAINER=	ml@netfence.it
 COMMENT=	Disk-based virtual autochanger for Bacula
 
 LICENSE=	GPLv2

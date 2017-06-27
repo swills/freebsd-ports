@@ -1,6 +1,6 @@
-# $FreeBSD: head/dns/pear-Horde_Idna/Makefile 436664 2017-03-21 23:38:47Z mm $
+# $FreeBSD: head/dns/pear-Horde_Idna/Makefile 444450 2017-06-27 10:02:04Z mm $
 PORTNAME=	Horde_Idna
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 CATEGORIES=	dns www pear
 
 MAINTAINER=	horde@FreeBSD.org

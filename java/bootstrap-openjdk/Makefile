@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/bootstrap-openjdk/Makefile 440858 2017-05-13 23:21:37Z linimon $
+# $FreeBSD: head/java/bootstrap-openjdk/Makefile 444416 2017-06-26 22:20:20Z linimon $
 
 PORTNAME=	${JDK_NAME}
 PORTVERSION=	${DISTVERSION_${JDK_ARCH}}
@@ -17,7 +17,7 @@ RUN_DEPENDS=	java-zoneinfo>0:java/java-zoneinfo
 
 BUNDLE_LIBS=	yes
 
-ONLY_FOR_ARCHS=	amd64 armv6 armv6hf i386 powerpc64
+ONLY_FOR_ARCHS=		amd64 armv6 i386 powerpc64
 BROKEN_powerpc64=	fails to build: pkg-static: Unable to access file jre/lib/powerpc64/jvm.cfg
 
 DISTINFO_FILE=	${.CURDIR}/distinfo.${JDK_ARCH}

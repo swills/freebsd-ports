@@ -1,8 +1,8 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/astro/stellarium-qt4/Makefile 412124 2016-03-29 16:17:59Z danfe $
+# $FreeBSD: head/astro/stellarium-qt4/Makefile 444374 2017-06-26 15:28:45Z danfe $
 
 PORTNAME=	stellarium
-PORTVERSION=	0.12.6
+PORTVERSION=	0.12.9
 CATEGORIES=	astro
 MASTER_SITES=	SF/${PORTNAME}/Stellarium-sources/${PORTVERSION}
 PKGNAMESUFFIX=	-qt4
@@ -25,6 +25,7 @@ PORTDOCS=	AUTHORS ChangeLog README
 
 OPTIONS_DEFINE=		DOCS MORE_STARS MULTIMEDIA SCRIPTING TEXTURES
 OPTIONS_DEFAULT=	MULTIMEDIA SCRIPTING TEXTURES
+
 MORE_STARS_DESC=	Install extra star catalogs (1.0GB)
 TEXTURES_DESC=		Install better quality textures
 MULTIMEDIA_DESC=	Sound and video support (via Phonon)

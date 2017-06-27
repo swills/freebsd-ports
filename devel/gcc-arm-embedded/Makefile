@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/gcc-arm-embedded/Makefile 441320 2017-05-20 16:58:10Z linimon $
+# $FreeBSD: head/devel/gcc-arm-embedded/Makefile 444416 2017-06-26 22:20:20Z linimon $
 
 PORTNAME=	gcc-arm-embedded
 PORTVERSION=	6.3.20170223
@@ -36,7 +36,7 @@ PYGDB_USES=		python:2
 
 OPTIONS_SUB=		yes
 
-NOT_FOR_ARCHS=		aarch64 arm armeb armv6 armv6hf \
+NOT_FOR_ARCHS=		aarch64 arm armeb armv6 \
 			mips mips64 mips64el mipsel mipsn32
 NOT_FOR_ARCHS_REASON=	Very slow to build on emulator
 

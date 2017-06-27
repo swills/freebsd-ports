@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/games/digger-vgl/Makefile 373944 2014-12-04 15:11:08Z sobomax $
+# $FreeBSD: head/games/digger-vgl/Makefile 444416 2017-06-26 22:20:20Z linimon $
 
 PORTNAME=	digger
 PORTVERSION=	20020314
@@ -10,7 +10,7 @@ MASTER_SITES=	http://www.digger.org/
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	FreeBSD graphics console (VGL) version of the famous Digger game
 
-ONLY_FOR_ARCHS=	i386 amd64	# Alphas don't have libvgl yet...
+ONLY_FOR_ARCHS=	amd64 i386
 
 MAKEFILE=	Makefile.fbsd
 

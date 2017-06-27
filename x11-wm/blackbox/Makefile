@@ -1,5 +1,5 @@
 # Created by: Brian Handy <handy@physics.montana.edu>
-# $FreeBSD: head/x11-wm/blackbox/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/x11-wm/blackbox/Makefile 444416 2017-06-26 22:20:20Z linimon $
 
 PORTNAME=	blackbox
 PORTVERSION=	0.70.1
@@ -24,7 +24,7 @@ TOOLS_ONLY_DESC=	Do not install window manager, only tools
 
 .include <bsd.port.options.mk>
 
-.if ${ARCH} == "armv6" || ${ARCH} == "armv6hf"
+.if ${ARCH} == "armv6"
 EXTRA_PATCHES+=	${FILESDIR}/extra-patch-src_Toolbar.cc
 .endif
 

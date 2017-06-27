@@ -1,9 +1,9 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/mail/sa-stats/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/sa-stats/Makefile 444409 2017-06-26 19:37:46Z sunpoet $
 
 PORTNAME=	sa-stats
 PORTVERSION=	1.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail
 MASTER_SITES=	http://www.rulesemporium.com/programs/ \
 		ftp://renatasystems.org/pub/FreeBSD/ports/distfiles/
@@ -13,12 +13,11 @@ EXTRACT_ONLY=
 MAINTAINER=	alexey@renatasystems.org
 COMMENT=	Generates top spam/ham rules fired for SpamAssassin installations
 
-RUN_DEPENDS=	p5-Getopt-Long>=0:devel/p5-Getopt-Long
-
 USES=		perl5 shebangfix
 SHEBANG_FILES=	sa-stats-1.0.txt
 
 NO_WRKSUBDIR=	yes
+NO_ARCH=	yes
 NO_BUILD=	yes
 
 PLIST_FILES=	bin/sa-stats

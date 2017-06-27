@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/miller/Makefile 431680 2017-01-16 16:47:00Z mat $
+# $FreeBSD: head/textproc/miller/Makefile 444368 2017-06-26 13:45:06Z olgeni $
 
 PORTNAME=	miller
-PORTVERSION=	3.3.2
+PORTVERSION=	5.2.1
 DISTVERSIONPREFIX=v
 CATEGORIES=	textproc
 
@@ -19,9 +19,5 @@ GNU_CONFIGURE=	yes
 PLIST_FILES=	bin/mlr man/man1/mlr.1.gz
 
 BROKEN_aarch64=		Fails to compile: undefined reference to .mcount
-
-post-configure:
-	${PATCH} -d ${PATCH_WRKSRC} ${PATCH_ARGS} < ${FILESDIR}/extra-patch-c_Makefile
-	${PATCH} -d ${PATCH_WRKSRC} ${PATCH_ARGS} < ${FILESDIR}/extra-patch-libtool
 
 .include <bsd.port.mk>

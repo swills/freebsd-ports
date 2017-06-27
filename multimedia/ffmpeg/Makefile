@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/multimedia/ffmpeg/Makefile 443112 2017-06-10 18:51:08Z riggs $
+# $FreeBSD: head/multimedia/ffmpeg/Makefile 444416 2017-06-26 22:20:20Z linimon $
 
 PORTNAME=	ffmpeg
 PORTVERSION=	3.3.2
@@ -48,7 +48,6 @@ OPTIONS_GROUP_LICENSE=	GPL3 NONFREE
 
 OPTIONS_DEFINE_amd64=	MMX SSE
 OPTIONS_DEFINE_armv6=	VFP NEON
-OPTIONS_DEFINE_armv6hf=	VFP NEON
 OPTIONS_DEFINE_i386=	MMX SSE
 OPTIONS_DEFAULT_amd64=	MMX SSE
 OPTIONS_DEFAULT_i386=	MMX SSE

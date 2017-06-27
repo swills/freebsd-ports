@@ -1,5 +1,6 @@
 # Created by: Kyle Martin <mkm@ieee.org>
-# $FreeBSD: head/devel/cmake/Makefile 443088 2017-06-10 13:33:52Z rakuco $
+# $FreeBSD: head/devel/cmake/Makefile 444366 2017-06-26 12:50:00Z danfe $
+
 PORTNAME=	cmake
 DISTVERSION=	3.8.2
 PORTREVISION?=	0

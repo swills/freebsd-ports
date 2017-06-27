@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/libpeak/Makefile 380822 2015-03-09 00:58:39Z amdmi3 $
+# $FreeBSD: head/devel/libpeak/Makefile 444437 2017-06-27 00:05:15Z linimon $
 
 PORTNAME=	libpeak
 PORTVERSION=	0.1.2
@@ -12,7 +12,7 @@ COMMENT=	Parallel Events and Asynchronous tasKing Library
 
 LICENSE=	BSD2CLAUSE
 
-ONLY_FOR_ARCHS=	i386 amd64 sparc64
+ONLY_FOR_ARCHS=		amd64 i386 sparc64
 
 USES=		gmake libtool
 GNU_CONFIGURE=	yes

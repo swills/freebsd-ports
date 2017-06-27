@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/darktable/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/graphics/darktable/Makefile 444420 2017-06-26 22:37:10Z linimon $
 
 PORTNAME=	darktable
 PORTVERSION=	2.2.5
@@ -23,7 +23,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libsoup-2.4.so:devel/libsoup \
 		libtiff.so:graphics/tiff
 
-ONLY_FOR_ARCHS=		amd64 arm64
+ONLY_FOR_ARCHS=		amd64
 ONLY_FOR_ARCHS_REASON=	uses SSE instructions and 64-bit address space
 
 USES=		cmake:outsource compiler:c++11-lib desktop-file-utils	\

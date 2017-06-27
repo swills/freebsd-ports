@@ -1,13 +1,12 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/dns/rpsl2acl/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/dns/rpsl2acl/Makefile 444443 2017-06-27 07:05:14Z danfe $
 
 PORTNAME=	rpsl2acl
-PORTVERSION=	1.00
+PORTVERSION=	1.01
 CATEGORIES=	dns perl5
-MASTER_SITES=	ftp://download.gnu.org.ua/pub/release/dnstools/ \
-		http://freebsd.nsu.ru/distfiles/
+MASTER_SITES=	http://download.gnu.org.ua/pub/release/dnstools/
 
-MAINTAINER=	danfe@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Query set of RPSL database objects and convert to BIND ACLs
 
 LICENSE=	GPLv3

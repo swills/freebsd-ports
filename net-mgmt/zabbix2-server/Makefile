@@ -1,5 +1,5 @@
 # Created by: Jim Riggs <ports@christianserving.org>
-# $FreeBSD: head/net-mgmt/zabbix2-server/Makefile 444026 2017-06-21 10:53:38Z tz $
+# $FreeBSD: head/net-mgmt/zabbix2-server/Makefile 444367 2017-06-26 13:20:57Z dbaio $
 
 PORTNAME=	zabbix2
 PORTVERSION=	2.0.20
@@ -17,7 +17,7 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libnetsnmp.so:net-mgmt/net-snmp \
 		libpkg.so:ports-mgmt/pkg
 
-CONFLICTS=	zabbix[0-9][0-9]${PKGNAMESUFFIX}-[0-9]* zabbix[0-13-9]${PKGNAMESUFFIX}-[0-9]*
+CONFLICTS=	zabbix[0-9][0-9]${PKGNAMESUFFIX} zabbix[0-13-9]${PKGNAMESUFFIX}
 
 ZABBIX_BUILD=	${PKGNAMESUFFIX:S/^-//}
 

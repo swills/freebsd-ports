@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 444131 2017-06-22 21:53:06Z stephen $
+# $FreeBSD: head/math/Makefile 444445 2017-06-27 08:03:09Z tota $
 #
 
     COMMENT = Mathematics
@@ -67,6 +67,7 @@
     SUBDIR += R-cran-quantreg
     SUBDIR += R-cran-rgenoud
     SUBDIR += R-cran-sandwich
+    SUBDIR += R-cran-sf
     SUBDIR += R-cran-sm
     SUBDIR += R-cran-sp
     SUBDIR += R-cran-spdep
@@ -74,6 +75,7 @@
     SUBDIR += R-cran-stabledist
     SUBDIR += R-cran-survey
     SUBDIR += R-cran-truncnorm
+    SUBDIR += R-cran-units
     SUBDIR += R-cran-xts
     SUBDIR += R-cran-zoo
     SUBDIR += aamath

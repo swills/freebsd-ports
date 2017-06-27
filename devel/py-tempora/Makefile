@@ -1,8 +1,8 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/devel/py-tempora/Makefile 442074 2017-05-30 15:21:30Z sunpoet $
+# $FreeBSD: head/devel/py-tempora/Makefile 444384 2017-06-26 19:35:42Z sunpoet $
 
 PORTNAME=	tempora
-PORTVERSION=	1.7
+PORTVERSION=	1.8
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

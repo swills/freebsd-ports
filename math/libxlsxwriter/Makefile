@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/libxlsxwriter/Makefile 438935 2017-04-20 09:16:41Z bapt $
+# $FreeBSD: head/math/libxlsxwriter/Makefile 444452 2017-06-27 11:28:07Z bapt $
 
 PORTNAME=	libxlsxwriter
-PORTVERSION=	0.6.9
+PORTVERSION=	0.7.0
 DISTVERSIONPREFIX=	RELEASE_
 CATEGORIES=	math devel
 
@@ -12,6 +12,7 @@ LICENSE=	BSD2CLAUSE
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	jmcnamara
+MAKE_ARGS=	INSTALL_DIR=${STAGEDIR}${PREFIX}
 
 USE_LDCONFIG=	yes
 USES=		gmake

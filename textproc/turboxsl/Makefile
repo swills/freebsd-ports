@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/turboxsl/Makefile 439789 2017-04-30 04:35:10Z linimon $
+# $FreeBSD: head/textproc/turboxsl/Makefile 444417 2017-06-26 22:26:55Z linimon $
 
 PORTNAME=	turboxsl
 DISTVERSION=	b03c2c9
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libck.so:devel/concurrencykit \
 		libmemcached.so:databases/libmemcached
 
 BROKEN_powerpc64=	Does not build: ld: skipping incompatible /usr/local/lib/libck.so when searching for -lck
-ONLY_FOR_ARCHS=	amd64 powerpc64 sparc64
+ONLY_FOR_ARCHS=		amd64 powerpc64 sparc64
 
 USES=		autoreconf libtool pathfix pkgconfig
 USE_LDCONFIG=	yes

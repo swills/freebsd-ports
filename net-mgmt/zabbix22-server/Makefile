@@ -1,5 +1,5 @@
 # Created by: Pakhom Golynga <pakhom@pakhom.spb.ru>
-# $FreeBSD: head/net-mgmt/zabbix22-server/Makefile 443044 2017-06-09 22:04:52Z feld $
+# $FreeBSD: head/net-mgmt/zabbix22-server/Makefile 444367 2017-06-26 13:20:57Z dbaio $
 
 PORTNAME=	zabbix22
 PORTVERSION=	2.2.18
@@ -15,7 +15,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libnetsnmp.so:net-mgmt/net-snmp
 
-CONFLICTS=	zabbix[0-13-9][0-13-9]${PKGNAMESUFFIX}-[0-9]* zabbix[0-9]${PKGNAMESUFFIX}-[0-9]*
+CONFLICTS=	zabbix[0-13-9][0-13-9]${PKGNAMESUFFIX} zabbix[0-9]${PKGNAMESUFFIX}
 
 ZABBIX_BUILD=	${PKGNAMESUFFIX:S/^-//}
 

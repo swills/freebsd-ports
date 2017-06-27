@@ -1,10 +1,10 @@
 # Created by: Yasuhiro KIMURA <yasu@utahime.org>
-# $FreeBSD: head/mail/py-authres/Makefile 443916 2017-06-19 23:37:56Z dbaio $
+# $FreeBSD: head/mail/py-authres/Makefile 444432 2017-06-26 23:38:41Z dbaio $
 
 PORTNAME=	authres
 PORTVERSION=	0.900
 CATEGORIES=	mail python
-MASTER_SITES=	http://launchpad.net/authentication-results-python/${PORTVERSION}/${PORTVERSION}/+download/
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	yasu@utahime.org

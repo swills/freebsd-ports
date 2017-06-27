@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/lang/cilkplus/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/lang/cilkplus/Makefile 444437 2017-06-27 00:05:15Z linimon $
 
 PORTNAME=	cilkplus
 PORTVERSION=	20160603
@@ -14,11 +14,11 @@ COMMENT=	Intel Cilk Runtime
 
 LICENSE=	BSD3CLAUSE
 
+ONLY_FOR_ARCHS=		amd64 i386 sparc64
+
 HG_REVISION=	004467
 
 USE_GCC=	yes
-
-ONLY_FOR_ARCHS=	i386 amd64 sparc64
 
 USE_LDCONFIG=	yes
 WRKSRC=	${WRKDIR}/${PORTNAME}${PKGNAMESUFFIX}-src-${HG_REVISION}

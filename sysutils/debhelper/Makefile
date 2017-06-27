@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/sysutils/debhelper/Makefile 441833 2017-05-27 10:25:18Z sunpoet $
+# $FreeBSD: head/sysutils/debhelper/Makefile 444381 2017-06-26 19:35:27Z sunpoet $
 
 PORTNAME=	debhelper
-PORTVERSION=	10.4
+PORTVERSION=	10.5
 CATEGORIES=	sysutils
 MASTER_SITES=	DEBIAN
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -19,7 +19,7 @@ MAKE_ARGS=	PREFIX=${PREFIX} SITE_PERL=${PREFIX}/${SITE_PERL_REL}
 NO_ARCH=	yes
 NO_BUILD=	yes
 USES=		gmake perl5 shebangfix tar:xz
-WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
+WRKSRC=		${WRKDIR}/${PORTNAME}
 
 SHEBANG_FILES=	dh*
 

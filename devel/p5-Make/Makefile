@@ -1,8 +1,8 @@
 # Created by: will
-# $FreeBSD: head/devel/p5-Make/Makefile 444138 2017-06-22 23:40:45Z sunpoet $
+# $FreeBSD: head/devel/p5-Make/Makefile 444385 2017-06-26 19:35:48Z sunpoet $
 
 PORTNAME=	Make
-PORTVERSION=	1.1.4
+PORTVERSION=	1.1.5
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

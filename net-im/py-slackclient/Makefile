@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/net-im/py-slackclient/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-im/py-slackclient/Makefile 444365 2017-06-26 12:40:20Z olgeni $
 
 PORTNAME=	slackclient
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.6
 CATEGORIES=	net-im python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -13,7 +13,8 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}websocket-client>0:www/py-websocket-client \
 		${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest \
+		${PYTHON_PKGNAMEPREFIX}pytest-mock>0:devel/py-pytest-mock
 
 USES=		python:-2.7
 USE_GITHUB=	yes

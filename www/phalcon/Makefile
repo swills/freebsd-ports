@@ -1,5 +1,5 @@
 # Created by: Jin-Sih Lin <linpct@gmail.com>
-# $FreeBSD: head/www/phalcon/Makefile 443944 2017-06-20 07:12:02Z vanilla $
+# $FreeBSD: head/www/phalcon/Makefile 444433 2017-06-26 23:44:13Z linimon $
 
 PORTNAME=	phalcon
 PORTVERSION=	3.2.0
@@ -14,7 +14,7 @@ LICENSE=	BSD3CLAUSE
 USES=		php:ext
 USE_PHP=	hash:build json:build pdo:build
 
-ONLY_FOR_ARCHS=	amd64 armv6 i386
+ONLY_FOR_ARCHS=		amd64 armv6 i386
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	phalcon

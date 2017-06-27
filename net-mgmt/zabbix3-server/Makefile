@@ -1,5 +1,5 @@
 # Created by: Pakhom Golynga <pg@pakhom.spb.ru>
-# $FreeBSD: head/net-mgmt/zabbix3-server/Makefile 443044 2017-06-09 22:04:52Z feld $
+# $FreeBSD: head/net-mgmt/zabbix3-server/Makefile 444367 2017-06-26 13:20:57Z dbaio $
 
 PORTNAME=	zabbix3
 PORTVERSION=	3.0.9
@@ -14,7 +14,7 @@ COMMENT=	Enterprise-class open source distributed monitoring (${PKGNAMESUFFIX:S/
 
 LICENSE=	GPLv2
 
-CONFLICTS=	zabbix[0-9][0-9]${PKGNAMESUFFIX}-[0-9]* zabbix[0-24-9]${PKGNAMESUFFIX}-[0-9]*
+CONFLICTS=	zabbix[0-9][0-9]${PKGNAMESUFFIX} zabbix[0-24-9]${PKGNAMESUFFIX}
 
 IGNORE_WITH_MYSQL=	41
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/pear-Horde_Cli/Makefile 443868 2017-06-19 10:01:23Z mm $
+# $FreeBSD: head/devel/pear-Horde_Cli/Makefile 444450 2017-06-27 10:02:04Z mm $
 
 PORTNAME=	Horde_Cli
-PORTVERSION=	2.2.3
+PORTVERSION=	2.2.4
 CATEGORIES=	devel www pear
 
 MAINTAINER=	horde@FreeBSD.org

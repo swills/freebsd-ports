@@ -1,5 +1,5 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/security/p5-PGP/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-PGP/Makefile 444437 2017-06-27 00:05:15Z linimon $
 
 PORTNAME=	PGP
 PORTVERSION=	0.3a
@@ -15,7 +15,7 @@ RUN_DEPENDS=	pgpin:security/pgpin
 
 PORTSCOUT=	skipv:1.0
 
-ONLY_FOR_ARCHS=	i386 amd64 sparc64
+ONLY_FOR_ARCHS=		amd64 i386 sparc64
 
 USES=		perl5
 USE_PERL5=	configure

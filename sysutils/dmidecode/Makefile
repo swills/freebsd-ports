@@ -1,8 +1,9 @@
 # Created by: Anders Nordby <anders@FreeBSD.org>
-# $FreeBSD: head/sysutils/dmidecode/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/sysutils/dmidecode/Makefile 444412 2017-06-26 19:48:11Z sunpoet $
 
 PORTNAME=	dmidecode
 PORTVERSION=	3.1
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	SAVANNAH
 

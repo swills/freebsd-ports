@@ -1,8 +1,8 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/astro/stellarium/Makefile 436870 2017-03-25 02:54:46Z danfe $
+# $FreeBSD: head/astro/stellarium/Makefile 444444 2017-06-27 07:18:02Z danfe $
 
 PORTNAME=	stellarium
-PORTVERSION=	0.15.2
+PORTVERSION=	0.16.0
 CATEGORIES=	astro
 MASTER_SITES=	SF/${PORTNAME}/Stellarium-sources/${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
@@ -18,6 +18,8 @@ CONFLICTS_INSTALL=	${PORTNAME}-qt4-0.12.*
 USES=		cmake gettext
 USE_QT5=	qmake_build buildtools_build linguisttools_build \
 		concurrent core gui network opengl printsupport widgets
+
+CMAKE_ARGS=	-DENABLE_GPS:BOOL=OFF	# XXX: requires Qt5Positioning
 
 GUIDE_VERSION=	${PORTVERSION}
 

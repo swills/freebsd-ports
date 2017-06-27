@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 444193 2017-06-23 21:18:28Z sunpoet $
+# $FreeBSD: head/devel/Makefile 444362 2017-06-26 10:32:24Z olgeni $
 #
 
     COMMENT = Development utilities
@@ -4620,6 +4620,7 @@
     SUBDIR += py-pytest-capturelog
     SUBDIR += py-pytest-django
     SUBDIR += py-pytest-localserver
+    SUBDIR += py-pytest-mock
     SUBDIR += py-pytest-runner
     SUBDIR += py-pytest-timeout
     SUBDIR += py-pytest-tornado

@@ -1,8 +1,9 @@
 # Created by: ecronin@gizmolabs.org
-# $FreeBSD: head/net-mgmt/nagios-certexp-plugin/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/nagios-certexp-plugin/Makefile 444411 2017-06-26 19:37:56Z sunpoet $
 
 PORTNAME=	nagios-certexp-plugin
 PORTVERSION=	1.1
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 MASTER_SITES=	ftp://ftp.jhweiss.de/pub/users/weiss/nagios/plugins/
 DISTNAME=	check_certexp.pl
@@ -12,11 +13,11 @@ MAINTAINER=	ecronin@gizmolabs.org
 COMMENT=	Nagios plugin for checking SSL server certificate expiration
 
 RUN_DEPENDS+=	p5-Net-SSLeay>=0:security/p5-Net-SSLeay \
-		p5-Date-Manip>=0:devel/p5-Date-Manip \
-		p5-Getopt-Long>=0:devel/p5-Getopt-Long
+		p5-Date-Manip>=0:devel/p5-Date-Manip
 
 USES=		perl5 shebangfix
 NO_WRKSUBDIR=	yes
+NO_ARCH=	yes
 NO_BUILD=	yes
 
 SHEBANG_FILES=	check_certexp.pl

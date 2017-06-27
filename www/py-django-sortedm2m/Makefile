@@ -1,8 +1,8 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-sortedm2m/Makefile 415846 2016-05-25 16:29:57Z amdmi3 $
+# $FreeBSD: head/www/py-django-sortedm2m/Makefile 444379 2017-06-26 17:38:54Z rene $
 
 PORTNAME=	django-sortedm2m
-PORTVERSION=	1.3.0
+PORTVERSION=	1.4.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
