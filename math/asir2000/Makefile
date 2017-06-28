@@ -1,8 +1,9 @@
 # Created by: Tomokatsu SAITO <saito@asir.org>
-# $FreeBSD: head/math/asir2000/Makefile 441395 2017-05-21 13:21:04Z linimon $
+# $FreeBSD: head/math/asir2000/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	asir
 PORTVERSION=	20140819
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp.jssac.org/pub/distfiles/asir/ \
 		ftp://ftp.asir.org/pub/asir/src/ \

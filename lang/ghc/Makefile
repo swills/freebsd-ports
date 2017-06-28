@@ -1,9 +1,9 @@
 # Created by: Simon Marlow <simonmar@microsoft.com>
-# $FreeBSD: head/lang/ghc/Makefile 441844 2017-05-27 12:09:22Z kib $
+# $FreeBSD: head/lang/ghc/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	ghc
 PORTVERSION=	7.10.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang haskell
 MASTER_SITES=	http://www.haskell.org/ghc/dist/${PORTVERSION}/:source \
 		LOCAL/pgj/:boot

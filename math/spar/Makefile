@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/math/spar/Makefile 417166 2016-06-20 16:23:28Z mat $
+# $FreeBSD: head/math/spar/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	spar
 PORTVERSION=	0.5.10
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	math devel
 MASTER_SITES=	SF/${PORTNAME}/Spar/${PORTVERSION}
 

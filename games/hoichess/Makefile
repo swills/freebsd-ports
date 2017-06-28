@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/hoichess/Makefile 365052 2014-08-15 21:12:02Z adamw $
+# $FreeBSD: head/games/hoichess/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	hoichess
 PORTVERSION=	0.12.1
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://www.hoicher.de/hoichess/download/ \
 		ftp://ftp.stack.nl/pub/users/johans/hoichess/

@@ -1,9 +1,9 @@
 # Created by: mzaki@biol.s.u-tokyo.ac.jp
-# $FreeBSD: head/biology/mrbayes/Makefile 364996 2014-08-15 16:37:37Z adamw $
+# $FreeBSD: head/biology/mrbayes/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	mrbayes
 PORTVERSION=	3.1.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	biology
 MASTER_SITES=	SF
 

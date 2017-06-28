@@ -1,8 +1,8 @@
 # Created by: b.f. <bf@FreeBSD.org>
-# $FreeBSD: head/textproc/tinyxml2/Makefile 443976 2017-06-20 14:10:25Z sunpoet $
+# $FreeBSD: head/textproc/tinyxml2/Makefile 444478 2017-06-27 16:13:39Z sunpoet $
 
 PORTNAME=	tinyxml2
-PORTVERSION=	5.0.0
+PORTVERSION=	5.0.1
 PORTEPOCH=	1
 CATEGORIES=	textproc
 

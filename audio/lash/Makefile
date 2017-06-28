@@ -1,9 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/lash/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/lash/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	lash
 PORTVERSION=	0.5.4
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	audio
 MASTER_SITES=	SAVANNAH
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/obexapp/Makefile 428144 2016-12-08 17:40:41Z tijl $
+# $FreeBSD: head/comms/obexapp/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	obexapp
 PORTVERSION=	1.4.15
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	comms net
 MASTER_SITES=	http://people.freebsd.org/~emax/obexapp/
 

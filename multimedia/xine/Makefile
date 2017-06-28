@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/xine/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/xine/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	xine
 PORTVERSION=	0.99.9
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-ui/${PORTVERSION}
 DISTNAME=	${PORTNAME}-ui-${PORTVERSION}

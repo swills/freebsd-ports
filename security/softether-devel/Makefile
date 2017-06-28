@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/softether-devel/Makefile 439785 2017-04-30 04:01:09Z pi $
+# $FreeBSD: head/security/softether-devel/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	softether-devel
 PORTVERSION=	4.21.9613
+PORTREVISION=	1
 CATEGORIES=	security
 
 MAINTAINER=	hrs@FreeBSD.org

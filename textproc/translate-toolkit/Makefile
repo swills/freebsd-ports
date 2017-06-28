@@ -1,8 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/textproc/translate-toolkit/Makefile 443568 2017-06-14 13:54:44Z jpaetzel $
+# $FreeBSD: head/textproc/translate-toolkit/Makefile 444524 2017-06-27 23:35:00Z jpaetzel $
 
 PORTNAME=	translate-toolkit
-PORTVERSION=	2.1.0
+PORTVERSION=	2.2.3
 CATEGORIES=	textproc
 MASTER_SITES=	CHEESESHOP
 
@@ -25,7 +25,7 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 # Can use psyco (on i386)
 
 NO_ARCH=	yes
-USES=		gettext python:2.7+ tar:bzip2
+USES=		gettext python:2.7+
 USE_PYTHON=	autoplist distutils
 
 # list of manual pages to generate

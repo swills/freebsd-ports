@@ -1,9 +1,9 @@
 # Created by: Janos Mohacsi <mohacsi@niif.hu>
-# $FreeBSD: head/net-mgmt/send/Makefile 428324 2016-12-10 21:03:31Z brnrd $
+# $FreeBSD: head/net-mgmt/send/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	send
 PORTVERSION=	0.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-mgmt ipv6
 MASTER_SITES=	LOCAL/hrs
 DISTNAME=	${PORTNAME}_${PORTVERSION}

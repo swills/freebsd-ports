@@ -1,9 +1,9 @@
 # Created by: Juha Nygard <juha.nygard1@netikka.fi>
-# $FreeBSD: head/audio/fluidsynth/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/audio/fluidsynth/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	fluidsynth
 PORTVERSION=	1.1.6
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

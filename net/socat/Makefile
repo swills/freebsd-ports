@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/net/socat/Makefile 438151 2017-04-10 11:45:39Z ehaupt $
+# $FreeBSD: head/net/socat/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	socat
 PORTVERSION=	1.7.3.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net ipv6
 MASTER_SITES=	http://www.dest-unreach.org/socat/download/ \
 		LOCAL/ehaupt

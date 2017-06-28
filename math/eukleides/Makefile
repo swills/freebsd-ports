@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/math/eukleides/Makefile 443480 2017-06-12 22:25:39Z sunpoet $
+# $FreeBSD: head/math/eukleides/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	eukleides
 PORTVERSION=	1.5.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	math
 MASTER_SITES=	http://www.eukleides.org/files/
 

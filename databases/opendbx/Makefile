@@ -1,9 +1,9 @@
 # Created by: tremere@cainites.net
-# $FreeBSD: head/databases/opendbx/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/databases/opendbx/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	opendbx
 PORTVERSION=	1.4.6
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	databases
 MASTER_SITES=	http://www.linuxnetworks.de/opendbx/download/
 

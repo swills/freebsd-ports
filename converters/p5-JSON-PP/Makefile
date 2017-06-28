@@ -1,12 +1,13 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/converters/p5-JSON-PP/Makefile 413973 2016-04-25 09:07:12Z sunpoet $
+# $FreeBSD: head/converters/p5-JSON-PP/Makefile 444479 2017-06-27 16:13:44Z sunpoet $
 
 PORTNAME=	JSON-PP
-PORTVERSION=	2.27400
+PORTVERSION=	2.94000
 CATEGORIES=	converters perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:MAKAMAKA
 PKGNAMEPREFIX=	p5-
+DISTNAME=	${PORTNAME}-${PORTVERSION:C|000$||}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	JSON::XS compatible pure-Perl module

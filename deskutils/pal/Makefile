@@ -1,9 +1,9 @@
 # Created by: Herbert J. Skuhra <h.skuhra@gmail.com>
-# $FreeBSD: head/deskutils/pal/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/deskutils/pal/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	pal
 PORTVERSION=	0.4.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils
 MASTER_SITES=	SF/${PORTNAME}cal/${PORTNAME}/${PORTVERSION}
 

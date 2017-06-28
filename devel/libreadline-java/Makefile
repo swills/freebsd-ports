@@ -1,10 +1,10 @@
 # Created by: Martin Kammerhofer <mkamm@gmx.net>
-# $FreeBSD: head/devel/libreadline-java/Makefile 437542 2017-04-02 09:54:38Z bapt $
+# $FreeBSD: head/devel/libreadline-java/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	libreadline-java
 PORTVERSION=	0.8.0
 DISTVERSIONSUFFIX=	-src
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel java
 MASTER_SITES=	SF/java-readline/java-readline/${PORTVERSION}
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/lang/algol68g/Makefile 439928 2017-05-02 05:26:40Z tcberner $
+# $FreeBSD: head/lang/algol68g/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	algol68g
 PORTVERSION=	2.8.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	http://jmvdveer.home.xs4all.nl/
 

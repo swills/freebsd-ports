@@ -1,9 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/databases/sqlite2/Makefile 429435 2016-12-25 15:01:33Z rakuco $
+# $FreeBSD: head/databases/sqlite2/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	sqlite
 PORTVERSION=	2.8.17
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	databases
 MASTER_SITES=	http://www.sqlite.org/
 

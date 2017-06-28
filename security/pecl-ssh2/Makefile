@@ -1,8 +1,8 @@
 # Created by: Alexander Leidinger <netchild@FreeBSD.org>
-# $FreeBSD: head/security/pecl-ssh2/Makefile 441122 2017-05-17 23:02:41Z dbaio $
+# $FreeBSD: head/security/pecl-ssh2/Makefile 444527 2017-06-27 23:45:51Z dbaio $
 
 PORTNAME=	ssh2
-PORTVERSION=	1.0
+PORTVERSION=	1.1.1
 CATEGORIES=	security pear
 
 MAINTAINER=	dbaio@FreeBSD.org

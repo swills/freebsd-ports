@@ -1,9 +1,9 @@
 # Created by: Dan Rench <citric@cubicone.tmetic.com>
-# $FreeBSD: head/lang/spidermonkey17/Makefile 441881 2017-05-27 22:16:50Z linimon $
+# $FreeBSD: head/lang/spidermonkey17/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	spidermonkey17
 DISTVERSION=	1.7.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang
 MASTER_SITES=	MOZILLA/js
 DISTNAME=	js-${DISTVERSION}

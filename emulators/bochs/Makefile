@@ -1,9 +1,9 @@
 # Created by: alex
-# $FreeBSD: head/emulators/bochs/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/emulators/bochs/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	bochs
 PORTVERSION=	2.6.8
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	2
 CATEGORIES=	emulators
 MASTER_SITES=	SF

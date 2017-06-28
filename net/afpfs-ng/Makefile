@@ -1,9 +1,9 @@
 # Created by: Manuel Creach <manuel.creach@icloud.com>
-# $FreeBSD: head/net/afpfs-ng/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/afpfs-ng/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	afpfs-ng
 PORTVERSION=	0.8.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net
 MASTER_SITES=	SF
 

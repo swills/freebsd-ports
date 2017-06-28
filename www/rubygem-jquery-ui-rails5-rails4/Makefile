@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-jquery-ui-rails5-rails4/Makefile 430711 2017-01-06 15:35:31Z swills $
+# $FreeBSD: head/www/rubygem-jquery-ui-rails5-rails4/Makefile 444557 2017-06-28 09:18:33Z tz $
 
 PORTNAME=	jquery-ui-rails
 PORTVERSION=	5.0.5
@@ -12,6 +12,9 @@ COMMENT=	Packaged JavaScript, CSS and image files of jQuery UI for Rails
 LICENSE=	MIT
 
 RUN_DEPENDS=	rubygem-railties4>=4.1.4:www/rubygem-railties4
+
+DEPRECATED=	Only created for www/gitlab; please use www/rubygem-jquery-ui-rails-rails4 instead
+EXPIRATION_DATE=	2017-07-31
 
 NO_ARCH=	yes
 USE_RUBY=	yes

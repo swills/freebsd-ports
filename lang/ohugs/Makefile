@@ -1,9 +1,9 @@
 # Created by: Steffen Mazanek <steffen.mazanek@unibw-muenchen.de>
-# $FreeBSD: head/lang/ohugs/Makefile 443477 2017-06-12 22:25:25Z sunpoet $
+# $FreeBSD: head/lang/ohugs/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	ohugs
 PORTVERSION=	0.5
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	lang haskell
 MASTER_SITES=	http://www.math.chalmers.se/~nordland/ohugs/
 DISTNAME=	${PORTNAME}-${PORTVERSION}.src

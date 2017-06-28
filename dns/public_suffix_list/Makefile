@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/dns/public_suffix_list/Makefile 439304 2017-04-24 15:16:08Z sunpoet $
+# $FreeBSD: head/dns/public_suffix_list/Makefile 444475 2017-06-27 16:13:23Z sunpoet $
 
 PORTNAME=	public_suffix_list
-PORTVERSION=	0.0.0.20170412
+PORTVERSION=	0.0.0.20170622
 CATEGORIES=	dns
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -21,7 +21,7 @@ PLIST_FILES=	%%DATADIR%%/public_suffix_list.dat \
 
 GH_ACCOUNT=	publicsuffix
 GH_PROJECT=	list
-GH_TAGNAME=	cae8dc7
+GH_TAGNAME=	d818677
 USE_GITHUB=	yes
 
 do-install:

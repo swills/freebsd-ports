@@ -1,8 +1,9 @@
 # Created by: Dmitry Sivachenko <mitya@yandex-team.ru>
-# $FreeBSD: head/math/sfst/Makefile 363405 2014-07-29 22:44:10Z adamw $
+# $FreeBSD: head/math/sfst/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	sfst
 PORTVERSION=	1.4.6h
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	http://www.cis.uni-muenchen.de/~schmid/tools/SFST/data/
 DISTNAME=	${PORTNAME:tu}-${PORTVERSION}

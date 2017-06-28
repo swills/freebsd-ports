@@ -1,9 +1,10 @@
 # Created by: Sergey Akifyev <asa@agava.com>
-# $FreeBSD: head/math/libqalculate/Makefile 424453 2016-10-22 08:24:53Z jhale $
+# $FreeBSD: head/math/libqalculate/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	libqalculate
 PORTVERSION=	0.9.10
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	jhale@FreeBSD.org

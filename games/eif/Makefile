@@ -1,9 +1,9 @@
 # Created by: johans
-# $FreeBSD: head/games/eif/Makefile 420701 2016-08-23 15:29:09Z marino $
+# $FreeBSD: head/games/eif/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	eif
 PORTVERSION=	1.3.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games ipv6
 MASTER_SITES=	http://www.stack.nl/~marcolz/empire/ \
 		ftp://ftp.stack.nl/pub/users/johans/eif/

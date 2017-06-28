@@ -1,8 +1,9 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/deskutils/genius/Makefile 429707 2016-12-28 04:43:33Z woodsb02 $
+# $FreeBSD: head/deskutils/genius/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	genius
 PORTVERSION=	1.0.22
+PORTREVISION=	1
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	GNOME \
 		http://ftp.5z.com/pub/genius/

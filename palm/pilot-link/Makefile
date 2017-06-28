@@ -1,9 +1,9 @@
 # Created by: Paul Traina <pst@FreeBSD.org>
-# $FreeBSD: head/palm/pilot-link/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/palm/pilot-link/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	pilot-link
 PORTVERSION=	0.12.5
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	palm comms
 MASTER_SITES=	http://downloads.pilot-link.org/ \

@@ -1,8 +1,9 @@
 # Created by: Patrick Alken <alken@colorado.edu>
-# $FreeBSD: head/devel/ald/Makefile 362514 2014-07-22 00:09:31Z adamw $
+# $FreeBSD: head/devel/ald/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=		ald
 PORTVERSION=		0.1.7
+PORTREVISION=	1
 CATEGORIES=		devel
 MASTER_SITES=		SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

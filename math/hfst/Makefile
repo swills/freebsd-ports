@@ -1,9 +1,9 @@
 # Created by: Dmitry Sivachenko <mitya@yandex-team.ru>
-# $FreeBSD: head/math/hfst/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/math/hfst/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	hfst
 PORTVERSION=	3.8.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/source
 

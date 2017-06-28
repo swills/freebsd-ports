@@ -1,9 +1,9 @@
 # Created by: Aleksander Fafula <alex@bsdguru.org>
-# $FreeBSD: head/polish/ekg2/Makefile 427185 2016-11-26 23:41:16Z jhale $
+# $FreeBSD: head/polish/ekg2/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	ekg2
 PORTVERSION=	0.3.1
-PORTREVISION=	9
+PORTREVISION=	10
 PORTEPOCH=	1
 CATEGORIES=	polish net-im
 MASTER_SITES=	http://pl.ekg2.org/

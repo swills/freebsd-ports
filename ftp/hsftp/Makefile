@@ -1,9 +1,9 @@
 # Created by: will
-# $FreeBSD: head/ftp/hsftp/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/ftp/hsftp/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	hsftp
 PORTVERSION=	1.15
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	ftp
 MASTER_SITES=	http://la-samhna.de/hsftp/ \
 		http://www.alaskaparadise.com/freebsd/

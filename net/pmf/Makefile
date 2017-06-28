@@ -1,8 +1,9 @@
 # Created by: adam
-# $FreeBSD: head/net/pmf/Makefile 441494 2017-05-22 22:29:17Z linimon $
+# $FreeBSD: head/net/pmf/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	pmf
 PORTVERSION=	1.13.1
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://ftp.ntua.gr/pub/net/mud/lpmud/clients/pmf/ \
 		LOCAL/glarkin

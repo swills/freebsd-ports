@@ -1,5 +1,6 @@
-# $FreeBSD: head/devel/php71-readline/Makefile 432324 2017-01-24 11:54:20Z tz $
+# $FreeBSD: head/devel/php71-readline/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MASTERDIR=	${.CURDIR}/../../lang/php71

@@ -1,9 +1,9 @@
 # Created by: donnex
-# $FreeBSD: head/sysutils/pwsafe/Makefile 426516 2016-11-19 17:18:03Z marino $
+# $FreeBSD: head/sysutils/pwsafe/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	pwsafe
 PORTVERSION=	0.2.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://nsd.dyndns.org/pwsafe/releases/
 

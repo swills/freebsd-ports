@@ -1,9 +1,9 @@
 # Created by: Vsevolod Stakhov <vsevolod@highsecure.ru>
-# $FreeBSD: head/math/aamath/Makefile 408372 2016-02-07 11:37:24Z marino $
+# $FreeBSD: head/math/aamath/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	aamath
 PORTVERSION=	0.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math textproc
 MASTER_SITES=	http://fuse.superglue.se/${PORTNAME}/ \
 		LOCAL/ehaupt

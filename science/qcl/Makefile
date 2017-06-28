@@ -1,8 +1,9 @@
 # Created by: Brad Huntting <huntting@glarp.com>
-# $FreeBSD: head/science/qcl/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/science/qcl/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	qcl
 PORTVERSION=	0.6.4
+PORTREVISION=	1
 CATEGORIES=	science math
 MASTER_SITES=	http://tph.tuwien.ac.at/~oemer/tgz/
 

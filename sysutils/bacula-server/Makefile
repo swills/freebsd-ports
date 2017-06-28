@@ -1,8 +1,9 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/sysutils/bacula-server/Makefile 442019 2017-05-29 15:28:27Z sunpoet $
+# $FreeBSD: head/sysutils/bacula-server/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	bacula
-DISTVERSION=	7.4.7
+PORTVERSION=	7.4.7
+PORTREVISION=	1
 CATEGORIES?=	sysutils
 MASTER_SITES=	SF/bacula/bacula/${PORTVERSION}
 PKGNAMEPREFIX?=	#
@@ -40,7 +41,7 @@ PYTHON_USES=		python
 PYTHON_CONFIGURE_ON=	--with-python=yes
 
 .if !defined(WITH_CLIENT_ONLY)
-LIB_DEPENDS+=	libbac-${DISTVERSION}.so:sysutils/bacula-client
+LIB_DEPENDS+=	libbac-${PORTVERSION}.so:sysutils/bacula-client
 USE_RC_SUBR?=	bacula-dir bacula-sd
 .endif
 

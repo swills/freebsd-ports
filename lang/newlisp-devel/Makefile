@@ -1,8 +1,9 @@
 # Created by: Stanislav Sedov <ssedov@mbsd.msk.ru>
-# $FreeBSD: head/lang/newlisp-devel/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/lang/newlisp-devel/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	newlisp
 PORTVERSION=	10.6.1
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://www.newlisp.org/downloads/development/
 PKGNAMESUFFIX=	-devel

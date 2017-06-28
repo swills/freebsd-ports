@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/devel/py-simplejson/Makefile 443969 2017-06-20 13:29:30Z sunpoet $
+# $FreeBSD: head/devel/py-simplejson/Makefile 444493 2017-06-27 16:14:56Z sunpoet $
 
 PORTNAME=	simplejson
 PORTVERSION=	3.11.1
@@ -14,9 +14,8 @@ COMMENT=	Simple, fast, extensible JSON encoder/decoder
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-# 2.5-2.7,3.3+
 USES?=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/simplejson/_speedups.so

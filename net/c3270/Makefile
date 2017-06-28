@@ -1,9 +1,9 @@
 # Created by: pdseniura@techie.com
-# $FreeBSD: head/net/c3270/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/net/c3270/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	c3270
 PORTVERSION=	3.3.14ga11
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	http://x3270.bgp.nu/download/03.03.14/
 MASTER_SITES_VER_PATH=	${PORTVERSION:C/(0[0-9]\.0[0-9])/}

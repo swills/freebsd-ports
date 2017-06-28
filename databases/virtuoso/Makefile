@@ -1,9 +1,9 @@
 # Created by: Max Khon <fjoe@FreeBSD.org>
-# $FreeBSD: head/databases/virtuoso/Makefile 439736 2017-04-29 07:04:49Z linimon $
+# $FreeBSD: head/databases/virtuoso/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	virtuoso
 PORTVERSION=	7.2.4.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}-opensource-${PORTVERSION}

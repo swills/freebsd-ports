@@ -1,8 +1,9 @@
 # Created by: Matthew Hunt <mph@pobox.com>
-# $FreeBSD: head/devel/p5-Term-ReadLine-Gnu/Makefile 426484 2016-11-19 17:09:58Z sunpoet $
+# $FreeBSD: head/devel/p5-Term-ReadLine-Gnu/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	Term-ReadLine-Gnu
 PORTVERSION=	1.35
+PORTREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

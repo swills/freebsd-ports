@@ -1,9 +1,9 @@
 # Created by: Stanislav Sedov <ssedov@mbsd.msk.ru>
-# $FreeBSD: head/devel/omake/Makefile 420390 2016-08-18 09:30:35Z amdmi3 $
+# $FreeBSD: head/devel/omake/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	omake
 DISTVERSION=	0.9.8.6-0.rc1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://pkgs.fedoraproject.org/repo/pkgs/ocaml-omake/omake-0.9.8.6-0.rc1.tar.gz/fe39a476ef4e33b7ba2ca77a6bcaded2/ \
 		http://download.camlcity.org/download/

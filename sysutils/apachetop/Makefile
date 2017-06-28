@@ -1,9 +1,9 @@
 # Created by: Sebastian Yepes F. <esn@x123.info>
-# $FreeBSD: head/sysutils/apachetop/Makefile 426384 2016-11-19 16:29:46Z marino $
+# $FreeBSD: head/sysutils/apachetop/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	apachetop
 PORTVERSION=	0.12.6
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	sysutils
 MASTER_SITES=	http://lukasz.wasikowski.net/files/
 

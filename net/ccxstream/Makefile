@@ -1,9 +1,9 @@
 # Created by: Michael Handler <handler@grendel.net>
-# $FreeBSD: head/net/ccxstream/Makefile 418126 2016-07-06 09:00:07Z amdmi3 $
+# $FreeBSD: head/net/ccxstream/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	ccxstream
 PORTVERSION=	1.0.15
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	SF/xbplayer/XStream%20Servers/ccXStream%20${PORTVERSION}%20for%20Linux
 

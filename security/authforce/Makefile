@@ -1,9 +1,9 @@
 # Created by: ache
-# $FreeBSD: head/security/authforce/Makefile 429767 2016-12-28 13:48:54Z amdmi3 $
+# $FreeBSD: head/security/authforce/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	authforce
 PORTVERSION=	0.9.9
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	security www
 MASTER_SITES=	GHC
 

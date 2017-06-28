@@ -1,8 +1,9 @@
 # Created by: Devin Teske <dteske@FreeBSD.org>
-# $FreeBSD: head/net-p2p/shx/Makefile 421961 2016-09-12 20:36:54Z marino $
+# $FreeBSD: head/net-p2p/shx/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	shx
 PORTVERSION=	0.2.4
+PORTREVISION=	1
 CATEGORIES=	net-p2p
 MASTER_SITES=	http://synhxd.sourceforge.net/releases/
 

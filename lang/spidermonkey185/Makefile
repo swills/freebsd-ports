@@ -1,9 +1,9 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/spidermonkey185/Makefile 442611 2017-06-05 12:36:13Z kwm $
+# $FreeBSD: head/lang/spidermonkey185/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=		spidermonkey185
 PORTVERSION=		1.8.5
-PORTREVISION=		3
+PORTREVISION=	4
 CATEGORIES=		lang
 MASTER_SITES=		MOZILLA/js
 DISTNAME=		js185-1.0.0

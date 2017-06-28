@@ -1,8 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/devel/gpsim/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/gpsim/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	gpsim
 PORTVERSION=	0.29.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	SF
 

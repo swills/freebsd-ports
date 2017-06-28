@@ -1,8 +1,8 @@
 # Created by: René Ladan <rene@freebsd.org>
-# $FreeBSD: head/www/py-django-contact-form/Makefile 442899 2017-06-08 01:28:06Z rene $
+# $FreeBSD: head/www/py-django-contact-form/Makefile 444513 2017-06-27 17:25:53Z rene $
 
 PORTNAME=	django-contact-form
-PORTVERSION=	1.4.1
+PORTVERSION=	1.4.2
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

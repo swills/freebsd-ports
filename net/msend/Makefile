@@ -1,9 +1,9 @@
 # Created by: Mark Pulford <mark@kyne.com.au>
-# $FreeBSD: head/net/msend/Makefile 397237 2015-09-18 14:00:18Z amdmi3 $
+# $FreeBSD: head/net/msend/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	msend
 PORTVERSION=	3.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	LOCAL/markp
 

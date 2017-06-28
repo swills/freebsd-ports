@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/net-im/telegram/Makefile 439779 2017-04-30 01:12:10Z linimon $
+# $FreeBSD: head/net-im/telegram/Makefile 444532 2017-06-28 00:51:05Z cpm $
 
 PORTNAME=	telegram
 PORTVERSION=	1.4.1.g20161227
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net-im
 
 MAINTAINER=	cpm@FreeBSD.org
@@ -34,7 +34,7 @@ PLIST_FILES=	bin/telegram-cli \
 PORTDOCS=	*
 
 do-install:
-	${MKDIR} ${STAGEDIR}${PREFIX}/etc/telegram-cli
+	@${MKDIR} ${STAGEDIR}${PREFIX}/etc/telegram-cli
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/telegram-cli ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_DATA} ${WRKSRC}/tg-server.pub ${STAGEDIR}${PREFIX}/etc/telegram-cli/server.pub
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

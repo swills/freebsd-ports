@@ -1,8 +1,9 @@
 # Created by: Denise H. G. <darcsis@gmail.com>
-# $FreeBSD: head/devel/tig/Makefile 428500 2016-12-13 15:28:24Z amdmi3 $
+# $FreeBSD: head/devel/tig/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	tig
 PORTVERSION=	2.2.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/jonas/tig/releases/download/${DISTNAME}/
 

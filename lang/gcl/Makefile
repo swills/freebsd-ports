@@ -1,9 +1,9 @@
 # Created by: hsu
-# $FreeBSD: head/lang/gcl/Makefile 440896 2017-05-14 18:54:15Z antoine $
+# $FreeBSD: head/lang/gcl/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	gcl
 PORTVERSION=	2.6.12
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	lang tcl tk
 MASTER_SITES=	GNU
 

@@ -1,9 +1,9 @@
 # Created by: Tim Robbins
-# $FreeBSD: head/net/coda6_server/Makefile 435883 2017-03-11 07:29:09Z araujo $
+# $FreeBSD: head/net/coda6_server/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	coda
 PORTVERSION=	6.9.4
-PORTREVISION?=	5
+PORTREVISION?=	6
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.coda.cs.cmu.edu/pub/coda/src/ \
 		ftp://ftp.planetmirror.com/pub/coda/src/ \

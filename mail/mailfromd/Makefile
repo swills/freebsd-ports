@@ -1,8 +1,9 @@
 # Created by: Zeus Panchenko <zeus@gnu.org.ua>
-# $FreeBSD: head/mail/mailfromd/Makefile 438363 2017-04-12 15:51:08Z danfe $
+# $FreeBSD: head/mail/mailfromd/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	mailfromd
 PORTVERSION=	8.1.90
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://download.gnu.org.ua/pub/release/${PORTNAME}/ \
 		http://download.gnu.org.ua/pub/alpha/${PORTNAME}/

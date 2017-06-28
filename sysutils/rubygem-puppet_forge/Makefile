@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/rubygem-puppet_forge/Makefile 441343 2017-05-20 21:50:26Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-puppet_forge/Makefile 444497 2017-06-27 16:15:16Z sunpoet $
 
 PORTNAME=	puppet_forge
-PORTVERSION=	2.2.4
-PORTREVISION=	1
+PORTVERSION=	2.2.5
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 

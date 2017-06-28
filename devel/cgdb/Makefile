@@ -1,8 +1,9 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/cgdb/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/cgdb/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	cgdb
 PORTVERSION=	0.6.8
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://cgdb.me/files/
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/libodbc++/Makefile 429232 2016-12-23 09:12:26Z antoine $
+# $FreeBSD: head/databases/libodbc++/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	libodbc++
 PORTVERSION=	0.2.5
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	databases devel
 MASTER_SITES=	SF/libodbcxx/libodbc%2B%2B/${PORTVERSION}
 

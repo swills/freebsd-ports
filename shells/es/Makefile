@@ -1,9 +1,9 @@
 # Created by: erich@rrnet.com
-# $FreeBSD: head/shells/es/Makefile 347283 2014-03-06 17:30:00Z bapt $
+# $FreeBSD: head/shells/es/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	es
 PORTVERSION=	0.9.b1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	shells
 MASTER_SITES=	ftp://ftp.sys.toronto.edu/pub/es/
 DISTNAME=	es-0.9-beta1

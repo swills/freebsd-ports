@@ -1,9 +1,9 @@
-# $FreeBSD: head/lang/micropython/Makefile 435116 2017-03-01 02:16:14Z linimon $
+# $FreeBSD: head/lang/micropython/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	micropython
 PORTVERSION=	1.5.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	lang python
 
 MAINTAINER=	ports@FreeBSD.org

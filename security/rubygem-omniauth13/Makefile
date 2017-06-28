@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-omniauth13/Makefile 440136 2017-05-04 23:48:03Z sunpoet $
+# $FreeBSD: head/security/rubygem-omniauth13/Makefile 444557 2017-06-28 09:18:33Z tz $
 
 PORTNAME=	omniauth
 PORTVERSION=	1.3.2
@@ -14,6 +14,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 RUN_DEPENDS=	rubygem-hashie>=1.2:devel/rubygem-hashie \
 		rubygem-rack>=1.0:www/rubygem-rack
+
+DEPRECATED=	Only created for www/gitlab; please use security/rubygem-omniauth instead
+EXPIRATION_DATE=	2017-07-31
 
 PORTSCOUT=	limit:^1\.3\.
 

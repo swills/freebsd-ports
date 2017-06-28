@@ -1,8 +1,9 @@
 # Created by: Jean Milanez Melo <jmelo@FreeBSD.org>
-# $FreeBSD: head/devel/libepp-nicbr/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/devel/libepp-nicbr/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	libepp-nicbr
 PORTVERSION=	1.15
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.registro.br/pub/libepp-nicbr/
 

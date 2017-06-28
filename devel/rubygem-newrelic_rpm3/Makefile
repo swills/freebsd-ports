@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-newrelic_rpm3/Makefile 440136 2017-05-04 23:48:03Z sunpoet $
+# $FreeBSD: head/devel/rubygem-newrelic_rpm3/Makefile 444557 2017-06-28 09:18:33Z tz $
 
 PORTNAME=	newrelic_rpm
 PORTVERSION=	3.18.1.330
@@ -15,6 +15,9 @@ LICENSE_COMB=	multi
 LICENSE_NAME_NEWRELIC=	New Relic License
 LICENSE_FILE_NEWRELIC=	${WRKSRC}/LICENSE
 LICENSE_PERMS_NEWRELIC=	dist-mirror no-dist-sell pkg-mirror no-pkg-sell auto-accept
+
+DEPRECATED=	Only created for www/gitlab; please use devel/rubygem-newrelic_rpm instead
+EXPIRATION_DATE=	2017-07-31
 
 PORTSCOUT=	limit:^3\.
 

@@ -1,8 +1,9 @@
 # Created by: Domas Mituzas <midom@dammit.lt>
-# $FreeBSD: head/databases/sqsh/Makefile 417376 2016-06-23 14:18:37Z amdmi3 $
+# $FreeBSD: head/databases/sqsh/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	sqsh
 PORTVERSION=	2.1.8
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

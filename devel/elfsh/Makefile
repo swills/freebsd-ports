@@ -1,9 +1,9 @@
 # Created by: Samy Al Bahra <samy@kerneled.com>
-# $FreeBSD: head/devel/elfsh/Makefile 420711 2016-08-23 16:49:47Z marino $
+# $FreeBSD: head/devel/elfsh/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	elfsh
 PORTVERSION=	0.51b3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	http://elfsh.asgardlabs.org/files/
 DISTNAME=	elfsh-0.51b3-portable

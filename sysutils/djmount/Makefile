@@ -1,9 +1,9 @@
 # Created by: Eric L. Camachat <eric@camachat.org>
-# $FreeBSD: head/sysutils/djmount/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/sysutils/djmount/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	djmount
 PORTVERSION=	0.71
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	sysutils
 MASTER_SITES=	SF
 

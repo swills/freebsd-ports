@@ -1,9 +1,9 @@
 # Created by: Pankov Pavel <pankov_p@mail.ru>
-# $FreeBSD: head/net-p2p/microdc2/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/net-p2p/microdc2/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	microdc2
 PORTVERSION=	0.15.6
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	net-p2p
 MASTER_SITES=	http://corsair626.no-ip.org/microdc/
 

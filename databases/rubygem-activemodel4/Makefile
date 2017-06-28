@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/databases/rubygem-activemodel4/Makefile 435282 2017-03-02 18:01:14Z sunpoet $
+# $FreeBSD: head/databases/rubygem-activemodel4/Makefile 444501 2017-06-27 16:15:37Z sunpoet $
 
 PORTNAME=	activemodel
-PORTVERSION=	4.2.8
+PORTVERSION=	4.2.9
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	4

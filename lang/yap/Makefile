@@ -1,9 +1,9 @@
 # Created by: Danilo Egea Gondolfo <danilogondolfo@gmail.com>
-# $FreeBSD: head/lang/yap/Makefile 443108 2017-06-10 17:48:23Z danilo $
+# $FreeBSD: head/lang/yap/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	yap
 PORTVERSION=	6.2.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	lang
 MASTER_SITES=	http://www.dcc.fc.up.pt/~vsc/Yap/
 

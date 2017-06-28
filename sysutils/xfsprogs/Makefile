@@ -1,8 +1,9 @@
 # Created by: Craig Rodrigues <rodrigc@FreeBSD.org>
-# $FreeBSD: head/sysutils/xfsprogs/Makefile 440701 2017-05-12 19:08:17Z danfe $
+# $FreeBSD: head/sysutils/xfsprogs/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	xfsprogs
 PORTVERSION=	3.2.4
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://oss.sgi.com/projects/xfs/cmd_tars/ \
 		ftp://oss.sgi.com/projects/xfs/previous/cmd_tars/

@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/varnish4/Makefile 436604 2017-03-21 13:33:24Z feld $
+# $FreeBSD: head/www/varnish4/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	varnish
 PORTVERSION=	4.1.5
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://repo.varnish-cache.org/source/
 PKGNAMESUFFIX=	4

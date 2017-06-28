@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/rubygem-dropzonejs-rails/Makefile 443656 2017-06-15 21:52:11Z sunpoet $
+# $FreeBSD: head/www/rubygem-dropzonejs-rails/Makefile 444499 2017-06-27 16:15:26Z sunpoet $
 
 PORTNAME=	dropzonejs-rails
-PORTVERSION=	0.8.0
+PORTVERSION=	0.8.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

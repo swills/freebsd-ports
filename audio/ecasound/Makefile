@@ -1,9 +1,9 @@
 # Created by: The Anarcat <anarcat@anarcat.dyndns.org>
-# $FreeBSD: head/audio/ecasound/Makefile 439077 2017-04-21 14:14:09Z amdmi3 $
+# $FreeBSD: head/audio/ecasound/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	ecasound
 PORTVERSION=	2.9.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	http://ecasound.seul.org/download/ \
 		http://nosignal.fi/download/ \

@@ -1,10 +1,10 @@
-# $FreeBSD: head/emulators/mupen64plus-qt/Makefile 443830 2017-06-18 15:09:12Z ultima $
+# $FreeBSD: head/emulators/mupen64plus-qt/Makefile 444518 2017-06-27 19:36:37Z ultima $
 
 PORTNAME=	mupen64plus-qt
 PORTVERSION=	1.10
 CATEGORIES=	emulators
 
-MAINTAINER=	dan@hasting.info
+MAINTAINER=	maintainer@hasting.email
 COMMENT=	Basic launcher for Mupen64Plus
 
 LICENSE=	BSD3CLAUSE

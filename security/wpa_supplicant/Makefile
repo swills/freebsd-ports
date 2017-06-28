@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/wpa_supplicant/Makefile 430235 2017-01-01 03:45:12Z sunpoet $
+# $FreeBSD: head/security/wpa_supplicant/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	wpa_supplicant
 PORTVERSION=	2.6
+PORTREVISION=	1
 CATEGORIES=	security net
 MASTER_SITES=	http://w1.fi/releases/
 

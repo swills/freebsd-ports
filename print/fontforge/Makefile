@@ -1,9 +1,9 @@
 # Created by: KANOU Hiroki <kanou@khdd.net>
-# $FreeBSD: head/print/fontforge/Makefile 439195 2017-04-23 03:28:15Z miwi $
+# $FreeBSD: head/print/fontforge/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	fontforge
 PORTVERSION=	20161005
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	print
 DISTFILES=	# Empty but needed because of the freetype distfile
 

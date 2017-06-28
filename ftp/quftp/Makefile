@@ -1,9 +1,9 @@
 # Created by: Frank Laszlo <laszlof@vonostingroup.com>
-# $FreeBSD: head/ftp/quftp/Makefile 382150 2015-03-24 18:19:23Z marino $
+# $FreeBSD: head/ftp/quftp/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	quftp
 PORTVERSION=	1.0.7
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	ftp
 MASTER_SITES=	SF
 

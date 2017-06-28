@@ -1,8 +1,9 @@
 # Created by: Issei Suzuki <issei@jp.FreeBSD.ORG>
-# $FreeBSD: head/math/topaz/Makefile 426518 2016-11-19 17:42:40Z marino $
+# $FreeBSD: head/math/topaz/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	topaz
 DISTVERSION=	3_41
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	http://hp.vector.co.jp/authors/VA007663/topaz/bin/
 DISTNAME=	${PORTNAME}-${DISTVERSION}-src

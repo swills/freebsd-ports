@@ -1,8 +1,9 @@
 # Created by: Chris Calvey <chris@securityforensics.co.uk>
-# $FreeBSD: head/sysutils/afflib/Makefile 434042 2017-02-13 19:06:09Z antoine $
+# $FreeBSD: head/sysutils/afflib/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	afflib
 PORTVERSION=	3.7.15
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	antoine@FreeBSD.org

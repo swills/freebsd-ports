@@ -1,8 +1,9 @@
 # Created by: jmz
-# $FreeBSD: head/math/calc/Makefile 408539 2016-02-09 07:11:45Z johans $
+# $FreeBSD: head/math/calc/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	calc
 PORTVERSION=	2.12.5.3
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	SF
 

@@ -1,9 +1,9 @@
 # Created by: Carlos J Puga Medina <cpm@fbsd.es>
-# $FreeBSD: head/net/ocserv/Makefile 441221 2017-05-19 12:11:55Z cpm $
+# $FreeBSD: head/net/ocserv/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	ocserv
 PORTVERSION=	0.11.8
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net security
 MASTER_SITES=	ftp://ftp.infradead.org/pub/ocserv/ \
 		LOCAL/cpm

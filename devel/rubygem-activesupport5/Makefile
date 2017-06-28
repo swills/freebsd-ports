@@ -1,8 +1,8 @@
 # Created by: Jonathan Weiss (<jw@innerewut.de>)
-# $FreeBSD: head/devel/rubygem-activesupport5/Makefile 440795 2017-05-13 12:11:34Z sunpoet $
+# $FreeBSD: head/devel/rubygem-activesupport5/Makefile 444482 2017-06-27 16:14:00Z sunpoet $
 
 PORTNAME=	activesupport
-PORTVERSION=	5.1.1
+PORTVERSION=	5.1.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	5

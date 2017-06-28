@@ -1,9 +1,9 @@
-# $FreeBSD: head/lang/lci/Makefile 387986 2015-05-30 21:25:06Z mat $
+# $FreeBSD: head/lang/lci/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	lci
 PORTVERSION=	0.11.2
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang
 
 MAINTAINER=	che@bein.link

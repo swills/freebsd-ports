@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/databases/libgda5/Makefile 439224 2017-04-23 14:53:02Z miwi $
+# $FreeBSD: head/databases/libgda5/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	libgda
 PORTVERSION?=	5.2.4
-PORTREVISION?=	1
+PORTREVISION?=	2
 CATEGORIES=	databases gnome
 MASTER_SITES=	GNOME
 PKGNAMESUFFIX?=	5

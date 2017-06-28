@@ -1,9 +1,9 @@
 # Created by: TAKAHASHI Kaoru <kaoru@kaisei.org>
-# $FreeBSD: head/games/gnubg/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/gnubg/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	gnubg
 PORTVERSION=	1.05.002
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games
 MASTER_SITES=	http://files.gnubg.org/media/sources/
 DISTFILES=	gnubg-release-${PORTVERSION}-sources.tar.gz

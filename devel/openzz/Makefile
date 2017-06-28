@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/openzz/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/devel/openzz/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	openzz
 DISTVERSION=	1.0.4-4
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-1.0.4-4
 

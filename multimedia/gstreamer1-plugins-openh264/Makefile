@@ -1,9 +1,13 @@
-# $FreeBSD: head/multimedia/gstreamer1-plugins-openh264/Makefile 418413 2016-07-12 04:30:32Z jbeich $
+# $FreeBSD: head/multimedia/gstreamer1-plugins-openh264/Makefile 444561 2017-06-28 09:58:27Z jbeich $
 
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia
 
 COMMENT=	GStreamer (openh264) plugin
+
+# https://cgit.freedesktop.org/gstreamer/gst-plugins-bad/commit/?id=9f2dfaaa7a97
+BROKEN=		gstopenh264enc.cpp:737:32: error: no member \
+		named 'sSliceCfg' in 'SSpatialLayerConfig'
 
 GST_PLUGIN=	openh264
 DIST=		bad

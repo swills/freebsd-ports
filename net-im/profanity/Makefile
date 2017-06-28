@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-im/profanity/Makefile 438754 2017-04-17 20:51:33Z arved $
+# $FreeBSD: head/net-im/profanity/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	profanity
 PORTVERSION=	0.5.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-im
 MASTER_SITES=	http://www.profanity.im/
 

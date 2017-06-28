@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/multimedia/plexpy/Makefile 442294 2017-06-01 15:21:30Z feld $
+# $FreeBSD: head/multimedia/plexpy/Makefile 444473 2017-06-27 16:08:09Z feld $
 
 PORTNAME=	plexpy
-PORTVERSION=	1.4.19
+PORTVERSION=	1.4.20
 PORTREVISION=	0
 CATEGORIES=	multimedia python
 DISTVERSIONPREFIX=v

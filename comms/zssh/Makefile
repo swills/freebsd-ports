@@ -1,8 +1,9 @@
 # Created by: Gea-Suan Lin (gslin@ccca.nctu.edu.tw)
-# $FreeBSD: head/comms/zssh/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/zssh/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	zssh
 PORTVERSION=	1.5c
+PORTREVISION=	1
 CATEGORIES=	comms security
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/1.5
 

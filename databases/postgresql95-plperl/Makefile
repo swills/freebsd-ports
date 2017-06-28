@@ -1,7 +1,8 @@
 # Created by: Palle Girgensohn <girgen@partitur.se>
-# $FreeBSD: head/databases/postgresql95-plperl/Makefile 417899 2016-07-01 17:45:51Z matthew $
+# $FreeBSD: head/databases/postgresql95-plperl/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	postgresql
+PORTREVISION=	1
 CATEGORIES=	databases perl5
 PKGNAMESUFFIX?=	${DISTVERSION:R:S/.//}${COMPONENT}
 

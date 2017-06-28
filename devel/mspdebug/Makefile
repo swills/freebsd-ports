@@ -1,8 +1,9 @@
 # Created by: Peter Jeremy <peterjeremy@acm.org>
-# $FreeBSD: head/devel/mspdebug/Makefile 426522 2016-11-19 18:19:29Z marino $
+# $FreeBSD: head/devel/mspdebug/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	mspdebug
 PORTVERSION=	0.23.20151024
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	peterjeremy@acm.org

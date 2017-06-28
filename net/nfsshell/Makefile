@@ -1,9 +1,9 @@
 # Created by: johans@stack.nl
-# $FreeBSD: head/net/nfsshell/Makefile 429970 2016-12-30 12:11:02Z hrs $
+# $FreeBSD: head/net/nfsshell/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	nfsshell
 PORTVERSION=	20130510
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 #MASTER_SITES=	http://www.cs.vu.nl/pub/leendert/
 

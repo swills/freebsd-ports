@@ -1,9 +1,9 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/textproc/sdcv/Makefile 430454 2017-01-03 11:01:05Z mat $
+# $FreeBSD: head/textproc/sdcv/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	sdcv
 PORTVERSION=	0.4.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	textproc
 MASTER_SITES=	SF
 

@@ -1,9 +1,9 @@
 # Created by: fernan@iib.unsam.edu.ar
-# $FreeBSD: head/mail/nmzmail/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/nmzmail/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	nmzmail
 PORTVERSION=	0.1.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	mail
 MASTER_SITES=	http://www.ecademix.com/JohannesHofmann/
 

@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/devel/rubygem-health_check22/Makefile 438492 2017-04-14 07:09:23Z miwi $
+# $FreeBSD: head/devel/rubygem-health_check22/Makefile 444557 2017-06-28 09:18:33Z tz $
 
 PORTNAME=	health_check
 PORTVERSION=	2.2.1
@@ -13,6 +13,9 @@ COMMENT=	Simple health check of Rails app for uptime monitoring
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
+
+DEPRECATED=	Only created for www/gitlab; please use devel/rubygem-health_check instead
+EXPIRATION_DATE=	2017-07-31
 
 PORTSCOUT=	limit:^2\.2\.
 

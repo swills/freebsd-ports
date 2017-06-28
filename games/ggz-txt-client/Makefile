@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/games/ggz-txt-client/Makefile 428144 2016-12-08 17:40:41Z tijl $
+# $FreeBSD: head/games/ggz-txt-client/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	ggz-txt-client
 PORTVERSION=	${GGZ_VERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 
 MAINTAINER=	ports@FreeBSD.org

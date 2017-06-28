@@ -1,9 +1,9 @@
 # Created by: AMAKAWA Shuhei <amakawa@jp.FreeBSD.org>
-# $FreeBSD: head/cad/ngspice_rework/Makefile 425823 2016-11-10 01:21:43Z linimon $
+# $FreeBSD: head/cad/ngspice_rework/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	ngspice_rework
 PORTVERSION=	26
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	cad
 MASTER_SITES=	SF/ngspice/ng-spice-rework/${PORTVERSION}
 DISTNAME=	ngspice-${PORTVERSION}

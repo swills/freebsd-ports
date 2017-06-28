@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/osiris/Makefile 443587 2017-06-14 16:10:46Z sunpoet $
+# $FreeBSD: head/security/osiris/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	osiris
 PORTVERSION=	4.2.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security
 MASTER_SITES=	http://osiris.shmoo.com/data/ \
 		http://redundancy.redundancy.org/mirror/

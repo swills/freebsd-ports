@@ -1,9 +1,9 @@
 # Created by: Bruce M. Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/devel/urjtag/Makefile 430927 2017-01-09 09:43:38Z amdmi3 $
+# $FreeBSD: head/devel/urjtag/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	urjtag
 PORTVERSION=	0.10
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel
 MASTER_SITES=	SF
 

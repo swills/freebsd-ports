@@ -1,9 +1,9 @@
 # Created by: David O'Brien <obrien@NUXI.com>
-# $FreeBSD: head/devel/gdb66/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/devel/gdb66/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	gdb
 PORTVERSION=	6.6
-PORTREVISION?=	5
+PORTREVISION?=	6
 CATEGORIES=	devel
 MASTER_SITES=   GNU/gdb/ \
 		http://aldan.algebra.com/~mi/:gdbtk

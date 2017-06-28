@@ -1,9 +1,10 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/databases/pg_citus/Makefile 442834 2017-06-07 12:35:47Z matthew $
+# $FreeBSD: head/databases/pg_citus/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	citus
 PORTVERSION=	6.2.2
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	databases
 PKGNAMEPREFIX=	pg_
 

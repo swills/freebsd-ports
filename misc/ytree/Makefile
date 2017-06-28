@@ -1,8 +1,9 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/misc/ytree/Makefile 426999 2016-11-24 10:17:36Z olgeni $
+# $FreeBSD: head/misc/ytree/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	ytree
 DISTVERSION=	1.99pl1
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://www.han.de/~werner/
 

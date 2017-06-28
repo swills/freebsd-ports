@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 442847 2017-06-07 15:28:48Z rene $
+# $FreeBSD: head/mail/Makefile 444553 2017-06-28 08:59:02Z loader $
 #
 
     COMMENT = Electronic mail utilities
@@ -431,6 +431,7 @@
     SUBDIR += p5-Net-IMAP-Server
     SUBDIR += p5-Net-IMAP-Simple
     SUBDIR += p5-Net-IMAP-Simple-SSL
+    SUBDIR += p5-Net-LMTP
     SUBDIR += p5-Net-ManageSieve
     SUBDIR += p5-Net-POP3-SSLWrapper
     SUBDIR += p5-Net-QMTP

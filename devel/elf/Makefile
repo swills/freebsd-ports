@@ -1,9 +1,9 @@
 # Created by: Samy Al Bahra <samy@kerneled.org>
-# $FreeBSD: head/devel/elf/Makefile 433834 2017-02-11 04:44:43Z mmokhi $
+# $FreeBSD: head/devel/elf/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	elf
 PORTVERSION=	0.5.4p1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	PACKETSTORM/linux/reverse-engineering
 

@@ -1,9 +1,9 @@
 # Created by: arved
-# $FreeBSD: head/devel/remake/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/devel/remake/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	remake
 PORTVERSION=	0.9
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	SF/bashdb/remake/3.82+dbg-${PORTVERSION}/
 DISTNAME=	remake-3.82+dbg${PORTVERSION}

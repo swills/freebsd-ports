@@ -1,9 +1,9 @@
 # Created by: Aaron VonderHaar <avh4@usa.net>
-# $FreeBSD: head/games/gnurobots/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/games/gnurobots/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	gnurobots
 PORTVERSION=	1.2.0
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	games
 MASTER_SITES=	GNU \
 		SF/nemysisfreebsdp/${CATEGORIES}/:icons

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 444313 2017-06-25 17:26:23Z rene $
+# $FreeBSD: head/net/Makefile 444552 2017-06-28 08:54:10Z tz $
 #
 
     COMMENT = Networking tools
@@ -1183,6 +1183,7 @@
     SUBDIR += rubygem-fog-vsphere
     SUBDIR += rubygem-fog-xenserver
     SUBDIR += rubygem-geoip
+    SUBDIR += rubygem-gitaly
     SUBDIR += rubygem-gitlab_omniauth-ldap
     SUBDIR += rubygem-gitlab_omniauth-ldap1
     SUBDIR += rubygem-http_parser.rb

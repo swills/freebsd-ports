@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/math/lambda/Makefile 408378 2016-02-07 11:44:47Z marino $
+# $FreeBSD: head/math/lambda/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	lambda
 PORTVERSION=	0.1.4
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	http://uniquesoftwaredesigns.com/${PORTNAME}/
 

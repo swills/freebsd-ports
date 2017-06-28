@@ -1,9 +1,9 @@
 # Created by: Marc G. Fournier <scrappy@FreeBSD.org>
-# $FreeBSD: head/devel/mico/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/devel/mico/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	mico
 PORTVERSION=	2.3.13
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20${PORTVERSION}/
 

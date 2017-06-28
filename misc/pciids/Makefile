@@ -1,8 +1,8 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/misc/pciids/Makefile 441802 2017-05-26 17:53:06Z sunpoet $
+# $FreeBSD: head/misc/pciids/Makefile 444476 2017-06-27 16:13:28Z sunpoet $
 
 PORTNAME=	pciids
-PORTVERSION=	20170525
+PORTVERSION=	20170622
 CATEGORIES=	misc
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -17,7 +17,7 @@ NO_BUILD=	yes
 PLIST_FILES=	%%DATADIR%%/pci.ids
 
 GH_ACCOUNT=	pciutils
-GH_TAGNAME=	7e5229e
+GH_TAGNAME=	21c653d
 USE_GITHUB=	yes
 
 do-install:

@@ -1,9 +1,10 @@
 # Created by: David O'Brien (obrien@NUXI.com)
-# $FreeBSD: head/devel/cdecl/Makefile 442855 2017-06-07 17:22:59Z ler $
+# $FreeBSD: head/devel/cdecl/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	cdecl
 PORTVERSION=	3.3
 DISTVERSIONPREFIX=	${PORTNAME}-
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	ler@FreeBSD.org

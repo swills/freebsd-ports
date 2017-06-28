@@ -1,9 +1,10 @@
 # Created by: darius@dons.net.au
-# $FreeBSD: head/devel/tclreadline/Makefile 437354 2017-03-31 13:14:36Z gahr $
+# $FreeBSD: head/devel/tclreadline/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	tclreadline
 PORTVERSION=	2.2.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	devel tcl
 
 MAINTAINER=	tcltk@FreeBSD.org

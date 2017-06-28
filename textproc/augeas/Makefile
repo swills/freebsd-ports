@@ -1,8 +1,9 @@
 # Created by: Russell Jackson <raj@csub.edu>
-# $FreeBSD: head/textproc/augeas/Makefile 432915 2017-01-31 13:33:02Z swills $
+# $FreeBSD: head/textproc/augeas/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	augeas
 PORTVERSION=	1.7.0
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.augeas.net/
 

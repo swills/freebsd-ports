@@ -1,9 +1,9 @@
 # Created by: John Reynolds <johnjen@reynoldsnet.org>
-# $FreeBSD: head/graphics/s10sh/Makefile 432897 2017-01-31 03:40:46Z linimon $
+# $FreeBSD: head/graphics/s10sh/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	s10sh
 PORTVERSION=	0.2.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.reynoldsnet.org/s10sh/ \
 		http://www.edwinh.org/s10sh/

@@ -1,9 +1,9 @@
 # Created by: Romain Tartiere <romain@blogreen.org>
-# $FreeBSD: head/devel/libnfc/Makefile 424004 2016-10-15 07:02:05Z romain $
+# $FreeBSD: head/devel/libnfc/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	libnfc
 PORTVERSION=	1.7.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://dl.bintray.com/nfc-tools/sources/ \
 		http://romain.blogreen.org/distfiles/

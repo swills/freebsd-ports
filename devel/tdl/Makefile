@@ -1,8 +1,9 @@
 # Created by: petef
-# $FreeBSD: head/devel/tdl/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/devel/tdl/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	tdl
 PORTVERSION=	1.5.2
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.rpcurnow.force9.co.uk/tdl/
 

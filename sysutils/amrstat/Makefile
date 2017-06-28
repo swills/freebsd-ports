@@ -1,5 +1,5 @@
 # Created by: Bjoern A. Zeeb <bzeeb+freebsd+ports@zabbadoz.net>
-# $FreeBSD: head/sysutils/amrstat/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/sysutils/amrstat/Makefile 444526 2017-06-27 23:45:12Z jkim $
 
 PORTNAME=	amrstat
 PORTVERSION=	20070216
@@ -17,17 +17,12 @@ PLIST_FILES=	etc/periodic/daily/407.status-amr-raid \
 OPTIONS_DEFINE=	MEGARC
 MEGARC_DESC=	Install LSI megarc binary port
 
-.include <bsd.port.options.mk>
-
 # We may want this for periodic script and to actually be able
 # to fix something in case amrstat reports degraded RAID.
-.if ${PORT_OPTIONS:MMEGARC}
-RUN_DEPENDS+=	${LOCALBASE}/sbin/megarc:sysutils/megarc
-.endif
+MEGARC_RUN_DEPENDS=	megarc:sysutils/megarc
 
 ALL_TARGET=	${PORTNAME}
 
-LOCALSRCDIR=	${.CURDIR}/files
 PERIODICSCRIPT=	407.status-amr-raid
 
 NO_WRKSUBDIR=	yes

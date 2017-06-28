@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/cad/gnucap/Makefile 394778 2015-08-19 13:29:59Z mat $
+# $FreeBSD: head/cad/gnucap/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	gnucap
 DISTVERSION=	2009-12-07
+PORTREVISION=	1
 CATEGORIES=	cad
 MASTER_SITES=	http://www.gnucap.org/devel/ \
 		http://www.gnucap.org/devel/archive/

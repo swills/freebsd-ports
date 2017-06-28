@@ -1,8 +1,9 @@
 # Created by: eserte
-# $FreeBSD: head/math/eval/Makefile 362689 2014-07-23 13:24:53Z adamw $
+# $FreeBSD: head/math/eval/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	eval
 PORTVERSION=	113
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	ftp://wuarchive.wustl.edu/pub/aminet/util/cli/ \
 		http://www.netsw.org/math/calc/ \

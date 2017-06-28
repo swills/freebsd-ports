@@ -1,8 +1,9 @@
 # Created by: Tilman Linneweh <arved@FreeBSD.org>
-# $FreeBSD: head/audio/jack/Makefile 440260 2017-05-06 12:58:55Z riggs $
+# $FreeBSD: head/audio/jack/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	jackit
 PORTVERSION=	0.125.0
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://jackaudio.org/downloads/
 DISTNAME=	jack-audio-connection-kit-${PORTVERSION}

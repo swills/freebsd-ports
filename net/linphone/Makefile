@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/linphone/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/net/linphone/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	linphone
 PORTVERSION=	3.10.2
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	net
 MASTER_SITES=	SAVANNAH/linphone/3.10.x/sources

@@ -1,9 +1,9 @@
 # Created by: Kevin Zheng <kevinz5000@gmail.com>
-# $FreeBSD: head/security/gnomint/Makefile 442784 2017-06-06 16:38:00Z mat $
+# $FreeBSD: head/security/gnomint/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	gnomint
 PORTVERSION=	1.2.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	security
 MASTER_SITES=	SF
 

@@ -1,8 +1,9 @@
 # Created by: Roman Neuhauser <neuhauser@sigpipe.cz>
-# $FreeBSD: head/math/mathomatic/Makefile 433007 2017-02-01 12:02:22Z ehaupt $
+# $FreeBSD: head/math/mathomatic/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	mathomatic
 PORTVERSION=	16.0.5
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	ehaupt@FreeBSD.org

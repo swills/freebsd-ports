@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/gnupg20/Makefile 431813 2017-01-18 15:44:28Z adamw $
+# $FreeBSD: head/security/gnupg20/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	gnupg
 PORTVERSION=	2.0.30
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	GNUPG
 PKGNAMESUFFIX=	20

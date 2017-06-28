@@ -1,8 +1,9 @@
 # Created by: Matteo Cypriani <mcy@lm7.fr>
-# $FreeBSD: head/sysutils/renameutils/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/renameutils/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	renameutils
 PORTVERSION=	0.12.0
+PORTREVISION=	1
 CATEGORIES=	sysutils converters
 MASTER_SITES=	SAVANNAH
 

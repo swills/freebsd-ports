@@ -1,9 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/audio/libsmf/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/audio/libsmf/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	libsmf
 PORTVERSION=	1.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	SF
 

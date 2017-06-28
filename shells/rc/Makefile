@@ -1,8 +1,9 @@
 # Created by: erich@rrnet.com
-# $FreeBSD: head/shells/rc/Makefile 443099 2017-06-10 15:13:34Z dbaio $
+# $FreeBSD: head/shells/rc/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	rc
 PORTVERSION=	1.7.4
+PORTREVISION=	1
 CATEGORIES=	shells plan9
 MASTER_SITES=	http://static.tobold.org/rc/
 

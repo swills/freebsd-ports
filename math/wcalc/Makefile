@@ -1,8 +1,9 @@
 # Created by: Amarendra Godbole <amarendra.godbole@gmail.com>
-# $FreeBSD: head/math/wcalc/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/wcalc/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	wcalc
 PORTVERSION=	2.5
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	SF/w-calc/Wcalc/${PORTVERSION}
 

@@ -1,8 +1,9 @@
 # Created by: ada@bsd.org
-# $FreeBSD: head/games/freeciv/Makefile 441957 2017-05-28 23:17:24Z sunpoet $
+# $FreeBSD: head/games/freeciv/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	freeciv
 PORTVERSION=	2.5.6
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	SF/freeciv/Freeciv%20${PORTVERSION:R}/${PORTVERSION} \
 		http://download.gna.org/freeciv/stable/

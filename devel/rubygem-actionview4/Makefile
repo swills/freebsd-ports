@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-actionview4/Makefile 435284 2017-03-02 18:01:23Z sunpoet $
+# $FreeBSD: head/devel/rubygem-actionview4/Makefile 444503 2017-06-27 16:15:47Z sunpoet $
 
 PORTNAME=	actionview
-PORTVERSION=	4.2.8
+PORTVERSION=	4.2.9
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	4

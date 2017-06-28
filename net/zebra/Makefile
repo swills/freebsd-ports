@@ -1,9 +1,9 @@
 # Created by: Andreas Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/net/zebra/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/net/zebra/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	zebra
 PORTVERSION=	0.95a
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net ipv6
 MASTER_SITES=	ftp://ftp.pop-pr.rnp.br/pub/GNU/ftp.zebra.org/zebra/ \
 		ftp://ftp.ripe.net/mirrors/sites/ftp.zebra.org/pub/zebra/ \

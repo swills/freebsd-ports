@@ -1,10 +1,10 @@
 # Created by: paulh@logicsquad.net
-# $FreeBSD: head/textproc/refdb/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/refdb/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	refdb
 PORTVERSION=	0.9.9
 DISTVERSIONSUFFIX=	-1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-src/${PORTNAME}-src-${PORTVERSION}-1
 

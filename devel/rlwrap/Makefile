@@ -1,9 +1,10 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/rlwrap/Makefile 404743 2015-12-29 14:30:46Z mat $
+# $FreeBSD: head/devel/rlwrap/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	rlwrap
 PORTVERSION=	0.42
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	gamato@users.sf.net

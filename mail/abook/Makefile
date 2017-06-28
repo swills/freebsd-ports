@@ -1,8 +1,9 @@
 # Created by: Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
-# $FreeBSD: head/mail/abook/Makefile 429460 2016-12-25 20:16:35Z bapt $
+# $FreeBSD: head/mail/abook/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	abook
 PORTVERSION=	0.6.1
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://abook.sourceforge.net/devel/
 

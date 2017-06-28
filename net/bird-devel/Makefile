@@ -1,8 +1,9 @@
 # Created by: Alexander V. Chernikov <melifaro@FreeBSD.org>
-# $FreeBSD: head/net/bird-devel/Makefile 362452 2014-07-21 17:15:14Z adamw $
+# $FreeBSD: head/net/bird-devel/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	bird
 PORTVERSION=	20130301
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://bird.mpls.in/distfiles/bird/
 PKGNAMESUFFIX=	-devel

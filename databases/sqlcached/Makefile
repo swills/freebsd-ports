@@ -1,9 +1,9 @@
 # Created by: ivoras
-# $FreeBSD: head/databases/sqlcached/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/sqlcached/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	sqlcached
 PORTVERSION=	r6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases net
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

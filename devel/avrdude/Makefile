@@ -1,8 +1,9 @@
 # Created by: Brian Dean <bsd@FreeBSD.org>
-# $FreeBSD: head/devel/avrdude/Makefile 427005 2016-11-24 11:22:44Z amdmi3 $
+# $FreeBSD: head/devel/avrdude/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	avrdude
 PORTVERSION=	6.3
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	SAVANNAH/avrdude
 

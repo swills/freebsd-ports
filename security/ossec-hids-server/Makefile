@@ -1,10 +1,10 @@
 # Created by: Valerio Daelli <valerio.daelli@gmail.com>
-# $FreeBSD: head/security/ossec-hids-server/Makefile 426684 2016-11-21 01:12:32Z marino $
+# $FreeBSD: head/security/ossec-hids-server/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	ossec-hids
 PORTVERSION=	2.8.3
 DISTVERSIONPREFIX=	v
-PORTREVISION?=	1
+PORTREVISION?=	2
 CATEGORIES=	security
 PKGNAMESUFFIX=	-server
 

@@ -1,8 +1,9 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/databases/gqlplus/Makefile 430404 2017-01-02 20:04:36Z rene $
+# $FreeBSD: head/databases/gqlplus/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	gqlplus
 PORTVERSION=	1.16
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	SF
 

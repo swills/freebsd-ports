@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/percona55-server/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/databases/percona55-server/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME?=	percona
 DISTVERSION=	5.5.54-38.6
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	databases ipv6
 MASTER_SITES=	http://www.percona.com/downloads/Percona-Server-5.5/Percona-Server-${DISTVERSION}/source/tarball/
 PKGNAMESUFFIX?=	55-server

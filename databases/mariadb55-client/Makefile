@@ -1,6 +1,7 @@
-# $FreeBSD: head/databases/mariadb55-client/Makefile 440095 2017-05-04 09:33:18Z brnrd $
+# $FreeBSD: head/databases/mariadb55-client/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	mariadb
+PORTREVISION=	1
 PKGNAMESUFFIX=	55-client
 
 COMMENT=	Multithreaded SQL database (client)
@@ -22,7 +23,6 @@ CMAKE_ARGS+=	-DWITHOUT_SERVER=1
 CLIENT_ONLY=	yes
 
 USES+=		ncurses readline
-
 
 post-install:
 	${RM} ${STAGEDIR}${PREFIX}/bin/mysqld_safe_helper

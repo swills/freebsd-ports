@@ -1,7 +1,8 @@
-# $FreeBSD: head/lang/picoc/Makefile 440009 2017-05-03 12:16:49Z mat $
+# $FreeBSD: head/lang/picoc/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	picoc
 PORTVERSION=	2.1
+PORTREVISION=	1
 CATEGORIES=	lang devel
 
 MAINTAINER=	portmaster@bsdforge.com

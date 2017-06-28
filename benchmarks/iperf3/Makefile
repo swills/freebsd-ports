@@ -1,8 +1,8 @@
 # Created by: Bruce A. Mah <bmah@FreeBSD.org>
-# $FreeBSD: head/benchmarks/iperf3/Makefile 435558 2017-03-06 17:31:09Z bmah $
+# $FreeBSD: head/benchmarks/iperf3/Makefile 444515 2017-06-27 18:42:00Z bmah $
 
 PORTNAME=	iperf
-PORTVERSION=	3.1.7
+PORTVERSION=	3.2
 CATEGORIES=	benchmarks ipv6
 MASTER_SITES=	http://downloads.es.net/pub/iperf/
 PKGNAMESUFFIX=	3
@@ -14,7 +14,7 @@ LICENSE=	BSD3CLAUSE MIT
 LICENSE_COMB=	multi
 
 GNU_CONFIGURE=	yes
-USES=		libtool
+USES=		libtool ssl
 USE_LDCONFIG=	yes
 
 PORTDOCS=	README.md RELEASE_NOTES

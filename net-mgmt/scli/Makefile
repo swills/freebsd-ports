@@ -1,9 +1,9 @@
 # Created by: Michael Lyngbøl <lyngbol@wheel.dk>
-# $FreeBSD: head/net-mgmt/scli/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/net-mgmt/scli/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	scli
 PORTVERSION=	0.3.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net-mgmt
 MASTER_SITES=	ftp://ftp.ibr.cs.tu-bs.de/local/${PORTNAME}/ \
 		http://matt.peterson.org/FreeBSD/ports/

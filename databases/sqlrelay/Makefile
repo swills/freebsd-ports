@@ -1,8 +1,9 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/databases/sqlrelay/Makefile 431909 2017-01-19 19:50:29Z pi $
+# $FreeBSD: head/databases/sqlrelay/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	${SQLRELAY_PORTNAME}
 PORTVERSION=	${SQLRELAY_PORTVERSION}
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	SF
 

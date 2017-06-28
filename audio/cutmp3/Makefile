@@ -1,8 +1,9 @@
 # Created by: Dennis Herrmann <adox@mcx2.org>
-# $FreeBSD: head/audio/cutmp3/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/audio/cutmp3/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	cutmp3
 PORTVERSION=	3.0.1
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.puchalla-online.de/ \
 		http://mirror.mcx2.org/

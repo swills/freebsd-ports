@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/rubygem-mail_room/Makefile 436071 2017-03-13 11:04:45Z tz $
+# $FreeBSD: head/mail/rubygem-mail_room/Makefile 444550 2017-06-28 08:48:06Z tz $
 
 PORTNAME=	mail_room
-PORTVERSION=	0.9.0
+PORTVERSION=	0.9.1
 CATEGORIES=	mail rubygems
 MASTER_SITES=	RG
 

@@ -1,8 +1,9 @@
 # Created by: Stefan Esser <se@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/argus3-clients/Makefile 416664 2016-06-10 09:13:01Z bofh $
+# $FreeBSD: head/net-mgmt/argus3-clients/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	argus-clients
 PORTVERSION=	3.0.8.2
+PORTREVISION=	1
 CATEGORIES=	net-mgmt security
 MASTER_SITES=	http://qosient.com/argus/src/ \
 		ftp://qosient.com/pub/argus/src/

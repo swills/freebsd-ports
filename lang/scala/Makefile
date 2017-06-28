@@ -1,8 +1,8 @@
 # Created by: Mitsuru YOSHIDA <mitsuru@riken.jp>
-# $FreeBSD: head/lang/scala/Makefile 438738 2017-04-17 18:00:17Z tobik $
+# $FreeBSD: head/lang/scala/Makefile 444472 2017-06-27 16:06:22Z madpilot $
 
 PORTNAME=	scala
-PORTVERSION=	2.12.1
+PORTVERSION=	2.12.2
 CATEGORIES=	lang java
 MASTER_SITES=	http://www.scala-lang.org/files/archive/
 

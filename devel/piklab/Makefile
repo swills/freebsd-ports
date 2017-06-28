@@ -1,9 +1,9 @@
 # Created by: Michael Nottebrock <lofi@kiste>
-# $FreeBSD: head/devel/piklab/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/devel/piklab/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	piklab
 PORTVERSION=	0.16.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel kde
 MASTER_SITES=	SF
 

@@ -1,9 +1,8 @@
 # Created by: Jon Nistor <nistor@snickers.org>
-# $FreeBSD: head/databases/p5-CDB_File/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/databases/p5-CDB_File/Makefile 444512 2017-06-27 17:06:04Z ultima $
 
 PORTNAME=	CDB_File
-PORTVERSION=	0.98
-PORTREVISION=	1
+PORTVERSION=	0.99
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -17,5 +16,8 @@ LICENSE_COMB=	dual
 USES=		perl5 shebangfix
 SHEBANG_FILES=	bun-x.pl
 USE_PERL5=	configure
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/CDB_File/CDB_File.so
 
 .include <bsd.port.mk>

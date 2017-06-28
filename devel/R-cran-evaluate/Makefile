@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-evaluate/Makefile 424037 2016-10-16 01:40:40Z tota $
+# $FreeBSD: head/devel/R-cran-evaluate/Makefile 444560 2017-06-28 09:51:41Z tota $
 
 PORTNAME=	evaluate
-PORTVERSION=	0.10
+PORTVERSION=	0.10.1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
@@ -11,7 +11,9 @@ COMMENT=	Parsing and Evaluation Tools
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	R-cran-stringr>=0.6.2:textproc/R-cran-stringr
+CRAN_DEPENDS=	R-cran-stringr>=0.6.2:textproc/R-cran-stringr
+BUILD_DEPENDS=	${CRAN_DEPENDS}
+RUN_DEPENDS=	${CRAN_DEPENDS}
 
 USES=	cran:auto-plist
 

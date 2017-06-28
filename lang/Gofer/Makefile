@@ -1,9 +1,9 @@
 # Created by: hsu
-# $FreeBSD: head/lang/Gofer/Makefile 364397 2014-08-09 04:02:59Z adamw $
+# $FreeBSD: head/lang/Gofer/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	gofer
 PORTVERSION=	2.30b
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	http://web.cecs.pdx.edu/~mpj/goferarc/
 DISTNAME=	${PORTNAME}${PORTVERSION:S/.//}

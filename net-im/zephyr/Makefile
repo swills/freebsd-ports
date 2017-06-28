@@ -1,9 +1,9 @@
 # Created by: Ben Kaduk <kaduk@mit.edu>
-# $FreeBSD: head/net-im/zephyr/Makefile 425823 2016-11-10 01:21:43Z linimon $
+# $FreeBSD: head/net-im/zephyr/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	zephyr
 DISTVERSION=	3.0.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net-im
 MASTER_SITES=	http://zephyr.1ts.org/export/2642/distribution/
 

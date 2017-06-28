@@ -1,8 +1,9 @@
 # Created by: Zach Garner <zach@neurosoft.org>
-# $FreeBSD: head/lang/kawa/Makefile 442455 2017-06-02 19:35:58Z danfe $
+# $FreeBSD: head/lang/kawa/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	kawa
 PORTVERSION=	2.4
+PORTREVISION=	1
 CATEGORIES=	lang scheme java
 MASTER_SITES=	GNU
 

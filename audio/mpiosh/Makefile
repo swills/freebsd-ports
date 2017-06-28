@@ -1,9 +1,9 @@
 # Created by: Sergey Akifyev <asa@gascom.ru>
-# $FreeBSD: head/audio/mpiosh/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/audio/mpiosh/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	mpiosh
 PORTVERSION=	0.7.1.p2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	SF/mpio/mpio%20pre-release/0.7.1-pre2
 DISTNAME=	mpio-${PORTVERSION:S|.p|_pre|}

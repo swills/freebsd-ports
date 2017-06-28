@@ -1,9 +1,9 @@
 # Created by: Chris Piazza <cpiazza@FreeBSD.org>
-# $FreeBSD: head/ftp/yafc/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/ftp/yafc/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	yafc
 PORTVERSION=	1.2.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	ftp ipv6
 MASTER_SITES=	http://www.yafc-ftp.com/downloads/
 

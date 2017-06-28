@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 444362 2017-06-26 10:32:24Z olgeni $
+# $FreeBSD: head/devel/Makefile 444523 2017-06-27 22:13:12Z cpm $
 #
 
     COMMENT = Development utilities
@@ -319,6 +319,7 @@
     SUBDIR += cobf
     SUBDIR += coccinelle
     SUBDIR += codeblocks
+    SUBDIR += codesearch-py
     SUBDIR += codeville
     SUBDIR += codeworker
     SUBDIR += colorgcc

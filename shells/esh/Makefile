@@ -1,8 +1,9 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/shells/esh/Makefile 407990 2016-02-03 21:48:52Z marino $
+# $FreeBSD: head/shells/esh/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	esh
 PORTVERSION=	0.8.5
+PORTREVISION=	1
 CATEGORIES=	shells
 MASTER_SITES=	GENTOO
 

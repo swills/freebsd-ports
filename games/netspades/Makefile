@@ -1,9 +1,9 @@
 # Created by: Frank Laszlo <laszlof@freebsdmatrix.net>
-# $FreeBSD: head/games/netspades/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/games/netspades/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	NetSpades
 PORTVERSION=	4.2.0
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	games
 MASTER_SITES=	TUCOWS/x11/entertain \
 		http://www.ece.rice.edu/~brentmh/spades/

@@ -1,9 +1,9 @@
 # Created by: Pete Fritchman <petef@databits.net>
-# $FreeBSD: head/devel/devtodo/Makefile 426518 2016-11-19 17:42:40Z marino $
+# $FreeBSD: head/devel/devtodo/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	devtodo
 PORTVERSION=	0.1.20
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://swapoff.org/files/devtodo/
 

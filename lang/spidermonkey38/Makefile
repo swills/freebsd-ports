@@ -1,8 +1,9 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/spidermonkey38/Makefile 443040 2017-06-09 20:08:54Z kwm $
+# $FreeBSD: head/lang/spidermonkey38/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	spidermonkey38
 PORTVERSION=	38.8.0
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	MOZILLA/firefox/releases/${PORTVERSION}esr/source
 DISTNAME=	firefox-${PORTVERSION}esr.source

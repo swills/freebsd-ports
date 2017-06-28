@@ -1,9 +1,9 @@
 # Created by: Anders Nordby <anders@fix.no>
-# $FreeBSD: head/databases/mdbtools/Makefile 428626 2016-12-15 16:42:41Z mat $
+# $FreeBSD: head/databases/mdbtools/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	mdbtools
 PORTVERSION=	0.7.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	databases
 
 MAINTAINER=	rhurlin@gwdg.de

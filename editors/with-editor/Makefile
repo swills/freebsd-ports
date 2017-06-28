@@ -1,8 +1,8 @@
 # Created by: KIMURA Yasuhiro <yasu@utahime.org>
-# $FreeBSD: head/editors/with-editor/Makefile 443590 2017-06-14 16:22:13Z ultima $
+# $FreeBSD: head/editors/with-editor/Makefile 444471 2017-06-27 16:05:53Z madpilot $
 
 PORTNAME=	with-editor
-PORTVERSION=	2.5.10
+PORTVERSION=	2.5.11
 DISTVERSIONPREFIX=	v
 CATEGORIES=	editors elisp
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}

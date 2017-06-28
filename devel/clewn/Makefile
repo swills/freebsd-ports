@@ -1,9 +1,9 @@
 # Created by: Giacomo Mariani <giacomomariani_at_yahoo_dot_it>
-# $FreeBSD: head/devel/clewn/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/clewn/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
 
 PORTNAME=	clewn
 PORTVERSION=	1.14
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel editors
 MASTER_SITES=	SF/${PORTNAME}/OldFiles/${PORTNAME}-${PORTVERSION}/
 
