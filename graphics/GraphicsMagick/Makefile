@@ -1,5 +1,5 @@
 # Created by: Ron van Daal
-# $FreeBSD: head/graphics/GraphicsMagick/Makefile 439814 2017-04-30 12:50:54Z sunpoet $
+# $FreeBSD: head/graphics/GraphicsMagick/Makefile 444611 2017-06-28 23:55:32Z sunpoet $
 
 PORTNAME=	GraphicsMagick
 PORTVERSION=	1.3.25
@@ -69,6 +69,7 @@ X11_CONFIGURE_WITH=	x
 X11_USE=		XORG=xext
 XML_CONFIGURE_WITH=	xml
 XML_USE=		GNOME=libxml2
+XML_USES=		gnome
 
 .include <bsd.port.options.mk>
 

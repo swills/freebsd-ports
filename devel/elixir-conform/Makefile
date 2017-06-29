@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-conform/Makefile 444180 2017-06-23 13:50:20Z olgeni $
+# $FreeBSD: head/devel/elixir-conform/Makefile 444635 2017-06-29 09:13:55Z olgeni $
 
 PORTNAME=	conform
-DISTVERSION=	2.3.4
+DISTVERSION=	2.3.6
 PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

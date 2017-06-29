@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 443432 2017-06-12 10:30:09Z tz $
+# $FreeBSD: head/security/Makefile 444652 2017-06-29 15:51:01Z swills $
 #
 
     COMMENT = Security tools
@@ -46,6 +46,7 @@
     SUBDIR += bfbtester
     SUBDIR += binwalk
     SUBDIR += blindelephant
+    SUBDIR += boringssl
     SUBDIR += botan110
     SUBDIR += bro
     SUBDIR += broccoli

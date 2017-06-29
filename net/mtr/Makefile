@@ -1,5 +1,5 @@
 # Created by: Bill Fumerola <billf@chc-chimes.com>
-# $FreeBSD: head/net/mtr/Makefile 442481 2017-06-03 13:16:28Z sunpoet $
+# $FreeBSD: head/net/mtr/Makefile 444613 2017-06-28 23:55:41Z sunpoet $
 
 PORTNAME=	mtr
 PORTVERSION=	0.92
@@ -27,6 +27,7 @@ IPV6_CATEGORIES=	ipv6
 IPV6_CONFIGURE_ENABLE=	ipv6
 X11_CONFIGURE_WITH=	gtk
 X11_USE=		GNOME=gtk20
+X11_USES=		gnome
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|getopt.*$$(OBJEXT)||g; s|getopt.*[ch]||g; /getopt.*Po/d' ${WRKSRC}/Makefile.in

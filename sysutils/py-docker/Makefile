@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-docker/Makefile 441087 2017-05-17 16:42:45Z lifanov $
+# $FreeBSD: head/sysutils/py-docker/Makefile 444650 2017-06-29 15:42:41Z lifanov $
 
 PORTNAME=	docker
-PORTVERSION=	2.3.0
+PORTVERSION=	2.4.2
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/cgit/Makefile 443020 2017-06-09 16:46:21Z adamw $
+# $FreeBSD: head/devel/cgit/Makefile 444570 2017-06-28 12:17:58Z adamw $
 
 PORTNAME=	cgit
 PORTVERSION=	1.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel www
 MASTER_SITES=	http://git.zx2c4.com/cgit/snapshot/:cgit \
 		https://www.kernel.org/pub/software/scm/git/:git
@@ -15,7 +15,7 @@ COMMENT=	Fast, lightweight web frontend for Git repositories
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-GIT_VERSION=	2.13.1
+GIT_VERSION=	2.13.2
 USES=		cpe gmake iconv shebangfix ssl tar:xz
 CPE_VENDOR=	lars_hjemli
 SHEBANG_FILES=	filters/html-converters/rst2html

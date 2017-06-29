@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/misc/libmetalink/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/misc/libmetalink/Makefile 444612 2017-06-28 23:55:37Z sunpoet $
 
 PORTNAME=	libmetalink
 PORTVERSION=	0.1.3
@@ -32,6 +32,7 @@ EXPAT_LIB_DEPENDS=	libexpat.so:textproc/expat2
 LIBXML2_CONFIGURE_WITH=	libxml2
 LIBXML2_CPPFLAGS=	-I${LOCALBASE}/include/libxml2
 LIBXML2_USE=		GNOME=libxml2
+LIBXML2_USES=		gnome
 TEST_BUILD_DEPENDS=	cunit>=2.1:devel/cunit
 
 post-install-EXAMPLES-on:

@@ -1,8 +1,8 @@
 # Created by: dmitry@karasik.eu.org
-# $FreeBSD: head/x11-toolkits/p5-Prima/Makefile 439516 2017-04-27 07:03:31Z sunpoet $
+# $FreeBSD: head/x11-toolkits/p5-Prima/Makefile 444591 2017-06-28 15:43:18Z sunpoet $
 
 PORTNAME=	Prima
-PORTVERSION=	1.51
+PORTVERSION=	1.52
 CATEGORIES=	x11-toolkits graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -24,7 +24,7 @@ OPTIONS_DEFAULT=ICONV XFT
 
 USES=		jpeg perl5 pkgconfig
 USE_PERL5=	configure
-USE_XORG=	x11 xext xpm xrender xrandr
+USE_XORG=	x11 xcursor xext xpm xrender xrandr
 MAKE_JOBS_UNSAFE=	yes
 
 GTK2_CONFIGURE_OFF=	WITH_GTK2=0

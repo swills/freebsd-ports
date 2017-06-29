@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-rbvmomi/Makefile 439740 2017-04-29 07:51:02Z sunpoet $
+# $FreeBSD: head/net/rubygem-rbvmomi/Makefile 444585 2017-06-28 15:42:47Z sunpoet $
 
 PORTNAME=	rbvmomi
-PORTVERSION=	1.11.2
+PORTVERSION=	1.11.3
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

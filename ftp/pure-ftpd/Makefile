@@ -1,5 +1,5 @@
 # Created by: Frank DENIS
-# $FreeBSD: head/ftp/pure-ftpd/Makefile 439385 2017-04-25 14:22:54Z sunpoet $
+# $FreeBSD: head/ftp/pure-ftpd/Makefile 444609 2017-06-28 23:55:22Z sunpoet $
 
 PORTNAME=	pure-ftpd
 PORTVERSION=	1.0.46
@@ -67,7 +67,7 @@ LARGEFILE_CONFIGURE_ENABLE=	largefile
 LDAP_CONFIGURE_WITH=	ldap
 LDAP_USE=		OPENLDAP=yes
 MYSQL_CONFIGURE_WITH=	mysql
-MYSQL_USE=		MYSQL=yes
+MYSQL_USES=		mysql
 PAM_CONFIGURE_WITH=	pam
 PERUSERLIMITS_CONFIGURE_WITH=	peruserlimits
 PGSQL_CONFIGURE_WITH=	pgsql

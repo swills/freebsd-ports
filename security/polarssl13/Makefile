@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/polarssl13/Makefile 436027 2017-03-12 21:02:37Z tijl $
+# $FreeBSD: head/security/polarssl13/Makefile 444627 2017-06-29 08:25:23Z tijl $
 
 PORTNAME=	polarssl
-PORTVERSION=	1.3.19
+PORTVERSION=	1.3.20
 DISTVERSIONSUFFIX=	-gpl
 CATEGORIES=	security devel
 MASTER_SITES=	https://polarssl.org/download/

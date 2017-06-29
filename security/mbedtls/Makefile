@@ -1,9 +1,8 @@
-# $FreeBSD: head/security/mbedtls/Makefile 436028 2017-03-12 21:30:15Z tijl $
+# $FreeBSD: head/security/mbedtls/Makefile 444627 2017-06-29 08:25:23Z tijl $
 
 PORTNAME=	mbedtls
-PORTVERSION=	2.4.2
+PORTVERSION=	2.5.1
 DISTVERSIONSUFFIX=	-apache
-PORTREVISION=	1
 CATEGORIES=	security devel
 MASTER_SITES=	https://tls.mbed.org/download/
 

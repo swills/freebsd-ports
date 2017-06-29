@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-erubi/Makefile 439679 2017-04-28 21:26:03Z sunpoet $
+# $FreeBSD: head/www/rubygem-erubi/Makefile 444587 2017-06-28 15:42:57Z sunpoet $
 
 PORTNAME=	erubi
-PORTVERSION=	1.6.0
+PORTVERSION=	1.6.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

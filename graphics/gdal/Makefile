@@ -1,5 +1,5 @@
 # Created by: Randall Hopper
-# $FreeBSD: head/graphics/gdal/Makefile 442050 2017-05-30 02:56:43Z sunpoet $
+# $FreeBSD: head/graphics/gdal/Makefile 444610 2017-06-28 23:55:27Z sunpoet $
 
 PORTNAME=	gdal
 PORTVERSION=	2.2.0
@@ -88,7 +88,7 @@ LIBXML2_CONFIGURE_ON=	--with-xml2=${LOCALBASE}/bin/xml2-config
 LIBXML2_LIB_DEPENDS=	libxml2.so:textproc/libxml2
 MYSQL_CONFIGURE_OFF=	--with-mysql=no
 MYSQL_CONFIGURE_ON=	--with-mysql=${LOCALBASE}/bin/mysql_config
-MYSQL_USE=		MYSQL=yes
+MYSQL_USES=		mysql
 NETCDF_CONFIGURE_WITH=	netcdf
 NETCDF_LIB_DEPENDS=	libnetcdf.so:science/netcdf
 ODBC_CONFIGURE_WITH=	odbc

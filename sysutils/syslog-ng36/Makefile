@@ -1,5 +1,5 @@
 # Created by: Ivan Lago <ivan.lago@ifom-ieo-campus.it>
-# $FreeBSD: head/sysutils/syslog-ng36/Makefile 440860 2017-05-13 23:50:49Z linimon $
+# $FreeBSD: head/sysutils/syslog-ng36/Makefile 444618 2017-06-29 01:11:52Z cy $
 
 PORTNAME=	syslog-ng
 DISTVERSION=	3.6.4
@@ -22,6 +22,7 @@ BROKEN_sparc64=		fails to compile: gcc core dump
 
 CONFLICTS?=	syslog-ng-[0-9]* syslog-ng[0-9]-[0-9]* \
 		syslog-ng[0-9][0-9]-[0-9]* \
+		syslog-ng[0-9][0-9][0-9]-[0-9]* \
 		syslog-ng-devel-[0-9]*
 WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSION}
 

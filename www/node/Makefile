@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/node/Makefile 444555 2017-06-28 09:00:24Z bhughes $
+# $FreeBSD: head/www/node/Makefile 444641 2017-06-29 10:42:52Z bhughes $
 
 PORTNAME=	node
-PORTVERSION=	8.1.2
+PORTVERSION=	8.1.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 MASTER_SITES=	http://nodejs.org/dist/v${PORTVERSION}/
@@ -90,7 +90,7 @@ CXXFLAGS+=	-D_GLIBCXX_USE_C99
 # https://bugs.llvm.org/show_bug.cgi?id=18853
 #
 # Upstream Node.js adds the define to all FreeBSD builds. This breaks
-# the build with clang 4.0, so we patch it out (files/patch-common.gypi) 
+# the build with clang 4.0, so we patch it out (files/patch-common.gypi)
 # and add it here instead.
 CXXFLAGS+=	-D_LIBCPP_TRIVIAL_PAIR_COPY_CTOR
 .endif

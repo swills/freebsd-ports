@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: head/MOVED 444313 2017-06-25 17:26:23Z rene $
+# $FreeBSD: head/MOVED 444618 2017-06-29 01:11:52Z cy $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -9445,3 +9445,4 @@ databases/pgpool-II-30|databases/pgpool|2017-06-25|Has expired: Deprecated by up
 games/libgames-support||2017-06-25|Has expired: Superseded by libgnome-games-support, no longer used by anything
 net/sixxs-aiccu||2017-06-25|Has expired: SixXS shutdown on 2017-06-06, https://www.sixxs.net/sunset/
 databases/pgpoolAdmin||2017-06-25|Removed, depended on expired databases/pgpool-II and only supported PostgreSQL 9.2 which is will EOL in September 2017
+sysutils/syslog-ng-devel|sysutils/syslog-ng310|2017-06-28|Balabit's syslog-ng team has switched to a rolling release model now

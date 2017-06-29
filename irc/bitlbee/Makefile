@@ -1,8 +1,8 @@
-# $FreeBSD: head/irc/bitlbee/Makefile 444465 2017-06-27 14:42:30Z garga $
+# $FreeBSD: head/irc/bitlbee/Makefile 444642 2017-06-29 10:55:30Z garga $
 
 PORTNAME=	bitlbee
 PORTVERSION=	3.5.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	irc
 MASTER_SITES=	http://get.bitlbee.org/src/ \
 		LOCAL/brix

@@ -1,9 +1,8 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/textproc/expat2/Makefile 428144 2016-12-08 17:40:41Z tijl $
+# $FreeBSD: head/textproc/expat2/Makefile 444629 2017-06-29 08:39:45Z tijl $
 
 PORTNAME=	expat
-PORTVERSION=	2.2.0
-PORTREVISION=	1
+PORTVERSION=	2.2.1
 CATEGORIES=	textproc
 MASTER_SITES=	SF
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/exaile-devel/Makefile 443086 2017-06-10 12:57:55Z rm $
+# $FreeBSD: head/audio/exaile-devel/Makefile 444639 2017-06-29 09:58:01Z rm $
 
 PORTNAME=	exaile
 PORTVERSION=	4.0.${COMMITDATE}
@@ -17,8 +17,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mutagen>0:audio/py-mutagen \
 		${PYTHON_PKGNAMEPREFIX}bsddb3>0:databases/py-bsddb3
 
 USE_GITHUB=	yes
-GH_TAGNAME=	4c2d671
-COMMITDATE=	20170610
+GH_TAGNAME=	cd1d092
+COMMITDATE=	20170629
 
 NO_ARCH=	yes
 USES=		desktop-file-utils gmake gnome python:2.7

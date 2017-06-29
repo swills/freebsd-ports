@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/net-mgmt/ettercap/Makefile 426414 2016-11-19 17:04:07Z sunpoet $
+# $FreeBSD: head/net-mgmt/ettercap/Makefile 444614 2017-06-28 23:55:46Z sunpoet $
 
 PORTNAME=	ettercap
 PORTVERSION=	0.8.2
@@ -54,6 +54,7 @@ NCURSES_USES=		ncurses
 GTK2_CMAKE_OFF=		-DENABLE_GTK=OFF
 GTK2_CMAKE_ON=		-DENABLE_GTK=ON
 GTK2_USE=		GNOME=gtk20
+GTK2_USES=		gnome
 IPV6_CMAKE_OFF=		-DENABLE_IPV6=OFF
 IPV6_CMAKE_ON=		-DENABLE_IPV6=ON
 PCRE_CMAKE_OFF=		-DHAVE_PCRE=OFF

@@ -1,8 +1,8 @@
 # Created by: Anders Troback
-# $FreeBSD: head/net-mgmt/nagios-check_ports/Makefile 438405 2017-04-12 19:06:38Z pi $
+# $FreeBSD: head/net-mgmt/nagios-check_ports/Makefile 444630 2017-06-29 08:53:07Z robak $
 
 PORTNAME=	check_ports
-PORTVERSION=	0.7.2
+PORTVERSION=	0.7.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-mgmt
 PKGNAMEPREFIX=	nagios-

@@ -1,8 +1,8 @@
 # Created by: David Kalliecharan <dave@dal.ca>
-# $FreeBSD: head/lang/py-hy/Makefile 433765 2017-02-09 18:22:28Z amdmi3 $
+# $FreeBSD: head/lang/py-hy/Makefile 444634 2017-06-29 09:13:46Z robak $
 
 PORTNAME=	hy
-PORTVERSION=	0.12.1
+PORTVERSION=	0.13.0
 CATEGORIES=	lang python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

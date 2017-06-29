@@ -1,5 +1,5 @@
 # Created by: Ivan Lago <ivan.lago@ifom-ieo-campus.it>
-# $FreeBSD: head/sysutils/syslog-ng37/Makefile 441494 2017-05-22 22:29:17Z linimon $
+# $FreeBSD: head/sysutils/syslog-ng37/Makefile 444618 2017-06-29 01:11:52Z cy $
 
 PORTNAME=	syslog-ng
 PORTVERSION=	3.7.3
@@ -25,6 +25,7 @@ BROKEN_sparc64=		fails to link: Internal error: Segmentation fault (program ld)
 
 CONFLICTS?=	syslog-ng-[0-9]* syslog-ng[0-9]-[0-9]* \
 		syslog-ng[0-9][0-9]-[0-9]* \
+		syslog-ng[0-9][0-9][0-9]-[0-9]* \
 		syslog-ng-devel-[0-9]*
 WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSION}
 

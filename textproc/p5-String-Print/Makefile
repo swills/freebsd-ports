@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-String-Print/Makefile 443643 2017-06-15 21:51:04Z sunpoet $
+# $FreeBSD: head/textproc/p5-String-Print/Makefile 444583 2017-06-28 15:42:37Z sunpoet $
 
 PORTNAME=	String-Print
-PORTVERSION=	0.90
+PORTVERSION=	0.91
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,6 +14,7 @@ LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
+		p5-TimeDate>=2.30:devel/p5-TimeDate \
 		p5-Unicode-LineBreak>=0:textproc/p5-Unicode-LineBreak
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 

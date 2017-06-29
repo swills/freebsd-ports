@@ -1,8 +1,8 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/devel/py-stackexchange/Makefile 435810 2017-03-09 23:38:36Z cpm $
+# $FreeBSD: head/devel/py-stackexchange/Makefile 444602 2017-06-28 17:02:46Z cpm $
 
 PORTNAME=	stackexchange
-PORTVERSION=	2.2.6
+PORTVERSION=	2.2.7
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
