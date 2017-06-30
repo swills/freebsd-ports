@@ -1,9 +1,9 @@
 # Created by: Vladimir Timofeev <vovkasm@gmail.com>
-# $FreeBSD: head/databases/p5-DBIx-Class-FrozenColumns/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Class-FrozenColumns/Makefile 444691 2017-06-30 01:48:47Z sunpoet $
 
 PORTNAME=	DBIx-Class-FrozenColumns
 PORTVERSION=	0.09
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -11,11 +11,14 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	vovkasm@gmail.com
 COMMENT=	Store virtual columns inside another column
 
+LICENSE=	ART10 GPLv1
+LICENSE_COMB=	dual
+
 RUN_DEPENDS=	p5-DBIx-Class>=0.07003:databases/p5-DBIx-Class \
-		p5-JSON-XS>=0:converters/p5-JSON-XS \
-		p5-Storable>=2.15:devel/p5-Storable
+		p5-JSON-XS>=0:converters/p5-JSON-XS
 BUILD_DEPENDS:=	${RUN_DEPENDS}
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

@@ -1,8 +1,9 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/science/metaf2xml/Makefile 444302 2017-06-25 16:19:05Z ultima $
+# $FreeBSD: head/science/metaf2xml/Makefile 444683 2017-06-29 19:22:05Z ultima $
 
 PORTNAME=	metaf2xml
 PORTVERSION=	2.2
+PORTREVISION=	1
 CATEGORIES=	science perl5
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 
@@ -40,8 +41,8 @@ APACHE_MAKE_ARGS=	CONF_DIR=${PREFIX}/${APACHEETCDIR}/Includes
 APACHE_USE=		APACHE_RUN=22+
 
 post-patch:
-	${REINPLACE_CMD} 's|%%METAF2XML_XSL%%|../../${DATADIR_REL}| ; \
-	       	s|%%METAF2XML_BIN%%|../${WWWDIR_REL}/cgi-bin|' \
+	${REINPLACE_CMD} 's|%%METAF2XML_XSL%%|../../../${DATADIR_REL}| ; \
+	       	s|%%METAF2XML_BIN%%|../../../bin|' \
 		${WRKSRC}/install.pl
 
 .include <bsd.port.mk>

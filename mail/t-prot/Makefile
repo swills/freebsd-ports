@@ -1,8 +1,9 @@
 # Created by: Sergei Kolobov <sergei@FreeBSD.org>
-# $FreeBSD: head/mail/t-prot/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/t-prot/Makefile 444674 2017-06-29 19:13:53Z sunpoet $
 
 PORTNAME=	t-prot
 PORTVERSION=	2.101
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.escape.de/~tolot/mutt/t-prot/downloads/ \
 		LOCAL/sergei
@@ -10,9 +11,9 @@ MASTER_SITES=	http://www.escape.de/~tolot/mutt/t-prot/downloads/ \
 MAINTAINER=	torres.g.alex@gmail.com
 COMMENT=	TOFU Protection - Display Filter for RFC822 messages
 
-RUN_DEPENDS=	p5-Getopt-Long>=0:devel/p5-Getopt-Long \
-		p5-Locale-gettext>=0:devel/p5-Locale-gettext
+RUN_DEPENDS=	p5-Locale-gettext>=0:devel/p5-Locale-gettext
 
+NO_ARCH=	yes
 USES=		perl5 shebangfix
 NO_BUILD=	yes
 
@@ -26,9 +27,13 @@ OPTIONS_DEFINE=	EXAMPLES DOCS
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/t-prot ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/t-prot.1 ${STAGEDIR}${MAN1PREFIX}/man/man1
-	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
-	${INSTALL_DATA} ${WRKSRC}/contrib/* ${STAGEDIR}${EXAMPLESDIR}
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
+
+do-install-EXAMPLES-on:
+	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
+	${INSTALL_DATA} ${WRKSRC}/contrib/* ${STAGEDIR}${EXAMPLESDIR}
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-sidekiq-scheduler/Makefile 444218 2017-06-24 16:31:14Z sunpoet $
+# $FreeBSD: head/devel/rubygem-sidekiq-scheduler/Makefile 444664 2017-06-29 19:13:03Z sunpoet $
 
 PORTNAME=	sidekiq-scheduler
-PORTVERSION=	2.1.6
+PORTVERSION=	2.1.7
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

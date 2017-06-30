@@ -1,7 +1,8 @@
 # Created by: KIKUCHI Koichiro <koichiro@rworks.jp>
-# $FreeBSD: head/net-mgmt/pandorafms_server/Makefile 435681 2017-03-08 12:20:18Z rene $
+# $FreeBSD: head/net-mgmt/pandorafms_server/Makefile 444678 2017-06-29 19:14:13Z sunpoet $
 
 PORTNAME=	pandora_server
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	koichiro@rworks.jp
@@ -22,9 +23,8 @@ PANDORA_DEPS=	p5-DBI>=0:databases/p5-DBI \
 BUILD_DEPENDS=	${PANDORA_DEPS}
 RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww \
 		p5-DBD-mysql>=4:databases/p5-DBD-mysql \
-		${LOCALBASE}/bin/wmic:net-mgmt/wmi-client \
-		${LOCALBASE}/bin/nmap:security/nmap \
-		p5-Storable>=0:devel/p5-Storable \
+		wmic:net-mgmt/wmi-client \
+		nmap:security/nmap \
 		p5-Encode-Locale>=0:converters/p5-Encode-Locale \
 		${PANDORA_DEPS}
 

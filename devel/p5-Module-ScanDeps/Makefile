@@ -1,8 +1,8 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/devel/p5-Module-ScanDeps/Makefile 426430 2016-11-19 17:05:29Z sunpoet $
+# $FreeBSD: head/devel/p5-Module-ScanDeps/Makefile 444663 2017-06-29 19:12:58Z sunpoet $
 
 PORTNAME=	Module-ScanDeps
-PORTVERSION=	1.23
+PORTVERSION=	1.24
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
