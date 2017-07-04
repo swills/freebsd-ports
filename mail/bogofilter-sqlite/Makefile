@@ -1,8 +1,8 @@
 # Created by: Matthias Andree <mandree@FreeBSD.org>
-# $FreeBSD: head/mail/bogofilter-sqlite/Makefile 405721 2016-01-10 16:44:24Z bapt $
+# $FreeBSD: head/mail/bogofilter-sqlite/Makefile 444988 2017-07-03 20:38:11Z tcberner $
 
 PORTNAME=	bogofilter
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail
 PKGNAMESUFFIX=	-sqlite
 

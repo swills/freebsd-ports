@@ -1,9 +1,9 @@
 # Created by: Yinghong Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/graphics/luminance-qt5/Makefile 440941 2017-05-15 15:52:22Z tcberner $
+# $FreeBSD: head/graphics/luminance-qt5/Makefile 444988 2017-07-03 20:38:11Z tcberner $
 
 PORTNAME=	luminance-hdr
 DISTVERSION=	2.4.0
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	graphics
 MASTER_SITES=	SF/qtpfsgui/luminance/${DISTVERSION}
 PKGNAMESUFFIX=	-qt5

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 444649 2017-06-29 15:38:19Z feld $
+# $FreeBSD: head/devel/Makefile 444971 2017-07-03 17:35:16Z jrm $
 #
 
     COMMENT = Development utilities
@@ -91,7 +91,6 @@
     SUBDIR += android-tools-fastboot-devel
     SUBDIR += android-tools-simpleperf
     SUBDIR += anjuta
-    SUBDIR += anjuta-extras
     SUBDIR += antlr
     SUBDIR += antlr3
     SUBDIR += antlr4
@@ -5220,6 +5219,7 @@
     SUBDIR += rubygem-blobstore_client
     SUBDIR += rubygem-blockenspiel
     SUBDIR += rubygem-bones
+    SUBDIR += rubygem-bootsnap
     SUBDIR += rubygem-bosh-template
     SUBDIR += rubygem-bosh_common
     SUBDIR += rubygem-bson

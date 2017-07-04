@@ -1,5 +1,5 @@
 # Created by: Ivan Lago <ivan.lago@ifom-ieo-campus.it>
-# $FreeBSD: head/sysutils/syslog-ng310/Makefile 444623 2017-06-29 06:10:35Z antoine $
+# $FreeBSD: head/sysutils/syslog-ng310/Makefile 444977 2017-07-03 18:33:48Z cy $
 
 PORTNAME=	syslog-ng
 DISTVERSION=	3.10.1
@@ -135,6 +135,7 @@ PYTHON_PLIST_FILES= 		lib/syslog-ng/libmod-python.so
 
 CURL_CONFIGURE_OFF=		--with-libcurl=off
 CURL_LIB_DEPENDS=		libcurl.so:ftp/curl
+CURL_PLIST_FILES= 		lib/syslog-ng/libhttp.so
 
 .include <bsd.port.pre.mk>
 

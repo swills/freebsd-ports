@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/py-pyotp/Makefile 431626 2017-01-16 11:46:50Z amdmi3 $
+# $FreeBSD: head/security/py-pyotp/Makefile 444826 2017-07-01 14:36:20Z dbaio $
 
 PORTNAME=	pyotp
-PORTVERSION=	2.2.4
+PORTVERSION=	2.2.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

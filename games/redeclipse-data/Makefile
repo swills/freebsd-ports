@@ -1,24 +1,22 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/redeclipse-data/Makefile 415728 2016-05-23 16:23:26Z mat $
+# $FreeBSD: head/games/redeclipse-data/Makefile 444890 2017-07-02 15:37:03Z amdmi3 $
 
 PORTNAME=	redeclipse-data
-PORTVERSION=	1.5.3
+PORTVERSION=	1.5.8
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Data files for Red Eclipse first-person shooter
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	red-eclipse
-# acerpyro is duplicated as there's no way to not use default GH group
-GH_PROJECT=	acerspyro ${DATAFILES:C/.*/&:&/}
+USE_GITHUB=	nodefault
+GH_TUPLE=	${DATAFILES:C/.*/red-eclipse:&:${DISTVERSIONPREFIX}${PORTVERSION}:&\/&/}
 
 DATAFILES=	acerspyro actors appleflap blendbrush caustics crosshairs \
-		elyvisions fonts freezurbern john jojo jwin luckystrike \
-		maps mayhem mikeplus64 misc nobiax particles philipk \
-		projectiles props skyboxes sounds textures torley trak \
-		ulukai unnamed vanities vegetation weapons wicked
+		dziq elyvisions fonts freezurbern john jojo jwin luckystrike \
+		maps mayhem mikeplus64 misc nieb nobiax particles philipk \
+		projectiles props skyboxes snipergoth sounds textures torley \
+		trak ulukai unnamed vanities vegetation weapons wicked
 
 NO_BUILD=	yes
 NO_ARCH=	yes
@@ -27,12 +25,7 @@ DATADIR=	${PREFIX}/share/redeclipse
 
 PORTDATA=	*
 
-post-extract:
-.for f in ${DATAFILES}
-	@${MV} ${WRKDIR}/${f}-${PORTVERSION} ${WRKDIR}/${f}
-.endfor
-
 do-install:
-	cd ${WRKDIR} && ${COPYTREE_SHARE} "${DATAFILES}" ${STAGEDIR}${DATADIR}
+	@cd ${WRKSRC} && ${COPYTREE_SHARE} "${DATAFILES}" ${STAGEDIR}${DATADIR}
 
 .include <bsd.port.mk>

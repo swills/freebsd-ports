@@ -1,9 +1,8 @@
 # Created by: Randall Hopper
-# $FreeBSD: head/graphics/gdal/Makefile 444610 2017-06-28 23:55:27Z sunpoet $
+# $FreeBSD: head/graphics/gdal/Makefile 444718 2017-06-30 13:05:14Z sunpoet $
 
 PORTNAME=	gdal
-PORTVERSION=	2.2.0
-PORTREVISION=	1
+PORTVERSION=	2.2.1
 CATEGORIES=	graphics geography
 MASTER_SITES=	http://download.osgeo.org/gdal/${PORTVERSION}/ \
 		ftp://ftp.remotesensing.org/pub/gdal/${PORTVERSION}/ \

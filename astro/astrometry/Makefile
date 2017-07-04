@@ -1,9 +1,9 @@
 # Created by: Sébastien Santoro <dereckson@gmail.com>
-# $FreeBSD: head/astro/astrometry/Makefile 439060 2017-04-21 11:15:49Z amdmi3 $
+# $FreeBSD: head/astro/astrometry/Makefile 444759 2017-06-30 15:05:05Z tobik $
 
 PORTNAME=	astrometry
 PORTVERSION=	0.65
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	astro
 MASTER_SITES=	http://www.astrometry.net/downloads/
 DISTNAME=	${PORTNAME}.net-${PORTVERSION}
@@ -18,10 +18,10 @@ LIB_DEPENDS=	libcairo.so:graphics/cairo \
 		libcfitsio.so:astro/cfitsio \
 		libpng.so:graphics/png \
 		libnetpbm.so:graphics/netpbm
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+RUN_DEPENDS=	${PYNUMPY}
 
 USES=		gmake jpeg pkgconfig python shebangfix tar:bzip2
-SHEBANG_FILES=	blind/*.py util/*.py sdss/*.py
+SHEBANG_FILES=	blind/*.py sdss/*.py util/[!c]*.py util/casjobs.py
 USE_LDCONFIG=	${PREFIX}/${PORTNAME}/lib
 ALL_TARGET=	all extra
 MAKE_ENV=	INSTALL_DIR=${STAGEDIR}${PREFIX}/${PORTNAME}

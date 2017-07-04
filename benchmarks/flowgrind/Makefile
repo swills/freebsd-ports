@@ -1,9 +1,9 @@
 # Created by: Lars Eggert <lars@eggert.org>
-# $FreeBSD: head/benchmarks/flowgrind/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/benchmarks/flowgrind/Makefile 444988 2017-07-03 20:38:11Z tcberner $
 
 PORTNAME=	flowgrind
 PORTVERSION=	0.8.0
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	benchmarks
 

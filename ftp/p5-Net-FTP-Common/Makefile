@@ -1,8 +1,8 @@
-# $FreeBSD: head/ftp/p5-Net-FTP-Common/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/ftp/p5-Net-FTP-Common/Makefile 444792 2017-06-30 22:13:50Z sunpoet $
 
 PORTNAME=	Net-FTP-Common
 PORTVERSION=	7.0.d
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	ftp perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -10,8 +10,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl module to provide simplify common usages of Net::FTP
 
-RUN_DEPENDS=	p5-Net>=0:net/p5-Net
+LICENSE=	MIT
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-wsgidav/Makefile 428397 2016-12-12 07:27:09Z pi $
+# $FreeBSD: head/www/py-wsgidav/Makefile 444980 2017-07-03 19:06:08Z ultima $
 
 PORTNAME=	WsgiDAV
 PORTVERSION=	2.1.0
@@ -6,7 +6,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ultima1252@gmail.com
+MAINTAINER=	ultima@FreeBSD.org
 COMMENT=	WSGI based WebDAV server for sharing resources
 
 LICENSE=	MIT

@@ -1,8 +1,8 @@
 # Created by: arved
-# $FreeBSD: head/net/x2goclient/Makefile 413420 2016-04-16 08:58:17Z danfe $
+# $FreeBSD: head/net/x2goclient/Makefile 444768 2017-06-30 15:26:03Z madpilot $
 
 PORTNAME=	x2goclient
-PORTVERSION=	4.0.5.1
+PORTVERSION=	4.1.0.0
 CATEGORIES=	net
 MASTER_SITES=	http://code.x2go.org/releases/source/x2goclient/
 

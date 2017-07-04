@@ -1,8 +1,9 @@
 # Created by: Dusan Vejnovic <freebsd@dussan.org>
-# $FreeBSD: head/devel/sonar-scanner-cli/Makefile 435247 2017-03-02 15:52:46Z girgen $
+# $FreeBSD: head/devel/sonar-scanner-cli/Makefile 444946 2017-07-03 12:59:04Z bhughes $
 
 PORTNAME=	sonar-scanner-cli
 PORTVERSION=	2.8
+PORTREVISION=	1
 CATEGORIES=	devel java
 MASTER_SITES=	https://sonarsource.bintray.com/Distribution/${PORTNAME}/
 DISTNAME=	sonar-scanner-${PORTVERSION}
@@ -38,7 +39,6 @@ do-install:
 	@(cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/${PORTNAME})
 	@${MV} -f ${STAGEDIR}${PREFIX}/${PORTNAME}/conf/${SQ_CLI}.properties \
 	 ${STAGEDIR}${PREFIX}/${PORTNAME}/conf/${SQ_CLI}.properties.sample
-	@${CHMOD} -R 644 ${STAGEDIR}${PREFIX}/${PORTNAME}
 
 post-install:
 	@${LN} -f ${STAGEDIR}${PREFIX}/${PORTNAME}/bin/${SR} \

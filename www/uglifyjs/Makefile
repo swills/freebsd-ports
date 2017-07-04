@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@freebsd.org>
-# $FreeBSD: head/www/uglifyjs/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/uglifyjs/Makefile 444756 2017-06-30 14:43:59Z antoine $
 
 PORTNAME=	uglifyjs
 PORTVERSION=	1.3.5
@@ -10,6 +10,8 @@ MAINTAINER=	swills@FreeBSD.org
 COMMENT=	JavaScript parser/compressor/beautifier
 
 LICENSE=	BSD2CLAUSE
+
+BROKEN=		fails to package
 
 BUILD_DEPENDS=	npm>=0:www/npm
 RUN_DEPENDS=	npm>=0:www/npm

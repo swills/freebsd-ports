@@ -1,11 +1,10 @@
 # Created by: Nikolai Lifanov <lifanov@mail.lifanov.com>
-# $FreeBSD: head/games/tome4/Makefile 441599 2017-05-24 13:58:33Z lifanov $
+# $FreeBSD: head/games/tome4/Makefile 444968 2017-07-03 17:21:20Z lifanov $
 
 PORTNAME=	tome4
 PORTVERSION=	1.5.5
 CATEGORIES=	games
 MASTER_SITES=	https://te4.org/dl/t-engine/ \
-		http://te4.org/dl/t-engine/ \
 		SF/lifanov-ports-distfiles/${PORTNAME}/:icons
 DISTFILES=	t-engine4-src-${PORTVERSION}${EXTRACT_SUFX} \
 		${PORTNAME}.png:icons

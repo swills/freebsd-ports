@@ -1,10 +1,10 @@
 # Created by: Honza Betik
-# $FreeBSD: head/net/radsecproxy/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/net/radsecproxy/Makefile 444948 2017-07-03 13:03:26Z bhughes $
 
 PORTNAME=	radsecproxy
-PORTVERSION=	1.6.6
+PORTVERSION=	1.6.8
 CATEGORIES=	net
-MASTER_SITES=	http://software.uninett.no/radsecproxy/
+MASTER_SITES=	https://software.nordu.net/radsecproxy/
 
 MAINTAINER=	m.tsatsenko@gmail.com
 COMMENT=	Radsecproxy is a generic RADIUS proxy
@@ -13,7 +13,7 @@ LICENSE=	GPLv2 BSD3CLAUSE
 LICENSE_COMB=	dual
 
 USES=		cpe tar:xz ssl
-CPE_VENDOR=	uninett
+CPE_VENDOR=	nordunet
 
 GNU_CONFIGURE=	yes
 USE_RC_SUBR=	${PORTNAME}

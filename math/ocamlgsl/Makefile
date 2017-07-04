@@ -1,10 +1,10 @@
 # Created by: Klaus T. Aehlig <aehlig@linta.de>
-# $FreeBSD: head/math/ocamlgsl/Makefile 439928 2017-05-02 05:26:40Z tcberner $
+# $FreeBSD: head/math/ocamlgsl/Makefile 444988 2017-07-03 20:38:11Z tcberner $
 
 PORTNAME=	ocaml-gsl
 DISTVERSIONPREFIX=v
 DISTVERSION=	1.19.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 
 MAINTAINER=	michipili@gmail.com

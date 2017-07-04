@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/android-tools-fastboot-devel/files/Makefile 444113 2017-06-22 13:04:35Z jbeich $
+# $FreeBSD: head/devel/android-tools-fastboot-devel/files/Makefile 444907 2017-07-02 23:22:56Z jbeich $
 
 PROG_CXX=fastboot
 BINDIR?=/usr/bin
@@ -18,7 +18,6 @@ SRCS+=	util.cpp
 
 .PATH: ${EXTRADIR}
 SRCS+=	usb_freebsd.cpp
-SRCS+=	util_freebsd.cpp
 
 # required by fastboot
 .PATH: ${.CURDIR}/../adb

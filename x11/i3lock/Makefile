@@ -1,8 +1,8 @@
 # Created by: Dennis Herrmann <dhn@FreeBSD.org>
-# $FreeBSD: head/x11/i3lock/Makefile 441854 2017-05-27 16:41:21Z bapt $
+# $FreeBSD: head/x11/i3lock/Makefile 444765 2017-06-30 15:24:15Z bapt $
 
 PORTNAME=	i3lock
-PORTVERSION=	2.9
+PORTVERSION=	2.9.1
 CATEGORIES=	x11
 MASTER_SITES=	http://i3wm.org/${PORTNAME}/
 

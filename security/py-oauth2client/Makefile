@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/py-oauth2client/Makefile 442863 2017-06-07 19:10:40Z sunpoet $
+# $FreeBSD: head/security/py-oauth2client/Makefile 444722 2017-06-30 13:05:34Z sunpoet $
 
 PORTNAME=	oauth2client
-PORTVERSION=	4.1.1
+PORTVERSION=	4.1.2
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

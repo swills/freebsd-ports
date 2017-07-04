@@ -1,8 +1,8 @@
 # Created by: sobomax
-# $FreeBSD: head/audio/bcg729/Makefile 400950 2015-11-06 17:57:41Z madpilot $
+# $FreeBSD: head/audio/bcg729/Makefile 444761 2017-06-30 15:10:26Z madpilot $
 
 PORTNAME=	bcg729
-PORTVERSION=	1.0.1
+PORTVERSION=	1.0.2
 CATEGORIES=	audio
 MASTER_SITES=	SAVANNAH/linphone/plugins/sources
 

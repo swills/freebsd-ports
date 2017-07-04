@@ -1,5 +1,5 @@
 # Created by: Jason W. Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/science/afni/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/science/afni/Makefile 444988 2017-07-03 20:38:11Z tcberner $
 
 ############################################################################
 # http://www.neuro.mcw.edu/Ports has the latest source distribution from
@@ -11,7 +11,7 @@
 
 PORTNAME=	afni
 PORTVERSION=	2015.11.13
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	science biology graphics
 MASTER_SITES=	http://www.acadix.biz/Ports/distfiles/
 

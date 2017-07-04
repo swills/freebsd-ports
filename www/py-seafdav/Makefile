@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-seafdav/Makefile 439615 2017-04-28 15:09:08Z lifanov $
+# $FreeBSD: head/www/py-seafdav/Makefile 444980 2017-07-03 19:06:08Z ultima $
 
 PORTNAME=	seafdav
 PORTVERSION=	${SEAHUB_VER}
@@ -7,7 +7,7 @@ DISTVERSIONSUFFIX=	-pro
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ultima1252@gmail.com
+MAINTAINER=	ultima@FreeBSD.org
 COMMENT=	Python library for accessing seafile data model
 
 LICENSE=	MIT

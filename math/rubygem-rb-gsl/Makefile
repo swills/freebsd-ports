@@ -1,8 +1,9 @@
 # Created by: Shin-ya MURAKAMI <murashin@gfd-dennou.org>
-# $FreeBSD: head/math/rubygem-rb-gsl/Makefile 439928 2017-05-02 05:26:40Z tcberner $
+# $FreeBSD: head/math/rubygem-rb-gsl/Makefile 444988 2017-07-03 20:38:11Z tcberner $
 
 PORTNAME=	gsl
 PORTVERSION=	2.1.0.2
+PORTREVISION=	1
 CATEGORIES=	math rubygems
 MASTER_SITES=	RG
 PKGNAMEPREFIX=	rubygem-rb-

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/pg_rman/Makefile 436260 2017-03-16 03:40:04Z pi $
+# $FreeBSD: head/databases/pg_rman/Makefile 444757 2017-06-30 14:45:52Z antoine $
 
 PORTNAME=	pg_rman
 PORTVERSION=	1.3.3
@@ -8,6 +8,8 @@ MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Online backup and restore tool for PostgreSQL
 
 LICENSE=	BSD3CLAUSE
+
+BROKEN=		checksum and size mismatch
 
 USES=		gettext-runtime gmake pgsql
 USE_GITHUB=	yes

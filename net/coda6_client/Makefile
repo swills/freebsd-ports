@@ -1,7 +1,7 @@
 # Created by: Tim Robbins <tim@robbins.dropbear.id.au>
-# $FreeBSD: head/net/coda6_client/Makefile 362028 2014-07-16 04:01:36Z vanilla $
+# $FreeBSD: head/net/coda6_client/Makefile 444771 2017-06-30 16:52:44Z trasz $
 
-PORTREVISION=	3
+PORTREVISION=	4
 
 COMMENT=	Client programs for a replicated high-performance network file system
 

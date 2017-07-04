@@ -1,5 +1,5 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/devel/dxa65/Makefile 434587 2017-02-22 15:02:18Z bapt $
+# $FreeBSD: head/devel/dxa65/Makefile 444874 2017-07-02 09:00:17Z amdmi3 $
 
 PORTNAME=	dxa
 PORTVERSION=	0.1.3
@@ -10,15 +10,20 @@ PKGNAMESUFFIX=	65
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Disassembler for MOS 6502 and compatible CPUs
 
-OPTIONS_DEFINE=	DOCS
+LICENSE=	GPLv2+
 
-PLIST_FILES=	bin/dxa65 man/man1/dxa.1.gz
-PORTDOCS=	INSTALL
 MAKE_ARGS=	CC="${CC}" CFLAGS="${CFLAGS}"
+
+PORTDOCS=	INSTALL
+PLIST_FILES=	bin/dxa65 man/man1/dxa.1.gz
+
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/dxa ${STAGEDIR}${PREFIX}/bin/dxa65
 	${INSTALL_MAN} ${WRKSRC}/dxa.1 ${STAGEDIR}${MANPREFIX}/man/man1
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/INSTALL ${STAGEDIR}${DOCSDIR}
 

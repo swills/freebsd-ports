@@ -1,11 +1,11 @@
-# $FreeBSD: head/net-mgmt/ccnet-client/Makefile 441845 2017-05-27 14:55:52Z lifanov $
+# $FreeBSD: head/net-mgmt/ccnet-client/Makefile 444980 2017-07-03 19:06:08Z ultima $
 
 PORTNAME=	ccnet-client
 PORTVERSION=	${SEAFILE_CLIENT_VER}
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-mgmt devel
 
-MAINTAINER=	ultima1252@gmail.com
+MAINTAINER=	ultima@FreeBSD.org
 COMMENT=	Framework for writing networked applications
 
 LICENSE=	GPLv3

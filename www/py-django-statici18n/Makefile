@@ -1,5 +1,5 @@
 # Created by: Ultima
-# $FreeBSD: head/www/py-django-statici18n/Makefile 444231 2017-06-24 17:06:08Z ultima $
+# $FreeBSD: head/www/py-django-statici18n/Makefile 444980 2017-07-03 19:06:08Z ultima $
 
 PORTNAME=	django-statici18n
 PORTVERSION=	1.4.0
@@ -7,7 +7,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ultima1252@gmail.com
+MAINTAINER=	ultima@FreeBSD.org
 COMMENT=	Helper for generating Javascript catalog to static files
 
 LICENSE=	MIT

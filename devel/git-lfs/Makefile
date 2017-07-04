@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/git-lfs/Makefile 441767 2017-05-26 09:14:28Z joneum $
+# $FreeBSD: head/devel/git-lfs/Makefile 444992 2017-07-03 23:27:34Z dbaio $
 
 PORTNAME=	git-lfs
-PORTVERSION=	2.1.1
+PORTVERSION=	2.2.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -9,6 +9,7 @@ MAINTAINER=	kenji@k2r.org
 COMMENT=	Git extension for versioning large files
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 BUILD_DEPENDS=	bash:shells/bash
 RUN_DEPENDS=	bash:shells/bash

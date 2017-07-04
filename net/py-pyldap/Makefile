@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/py-pyldap/Makefile 444256 2017-06-25 08:32:32Z rm $
+# $FreeBSD: head/net/py-pyldap/Makefile 444975 2017-07-03 17:45:25Z rm $
 
 PORTNAME=	pyldap
-PORTVERSION=	2.4.36
+PORTVERSION=	2.4.37
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

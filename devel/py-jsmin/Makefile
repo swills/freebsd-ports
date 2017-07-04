@@ -1,8 +1,8 @@
 # Created by: Po-Chien Lin <linpc@cs.nctu.edu.tw>
-# $FreeBSD: head/devel/py-jsmin/Makefile 431625 2017-01-16 11:45:41Z amdmi3 $
+# $FreeBSD: head/devel/py-jsmin/Makefile 444825 2017-07-01 14:30:34Z dbaio $
 
 PORTNAME=	jsmin
-PORTVERSION=	2.2.1
+PORTVERSION=	2.2.2
 CATEGORIES=	devel www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

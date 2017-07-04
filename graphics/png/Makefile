@@ -1,5 +1,5 @@
 # Created by: ache
-# $FreeBSD: head/graphics/png/Makefile 436720 2017-03-22 19:14:55Z antoine $
+# $FreeBSD: head/graphics/png/Makefile 444876 2017-07-02 11:24:35Z antoine $
 
 PORTNAME=	png
 PORTVERSION=	1.6.29
@@ -17,6 +17,8 @@ LICENSE_GROUPS=	FSF GPL OSI
 LICENSE_NAME=	libpng License
 LICENSE_FILE=	${WRKSRC}/LICENSE
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
+PORTSCOUT=	skipv:1.6.30
 
 USES=		cpe libtool tar:xz
 CPE_PRODUCT=	libpng

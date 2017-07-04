@@ -1,12 +1,12 @@
-# Created by: ultima <ultima1252@gmail.com>
-# $FreeBSD: head/multimedia/plexwatch/Makefile 412348 2016-04-01 14:16:16Z mat $
+# Created by: Richard Gallamore <ultima@FreeBSD.org>
+# $FreeBSD: head/multimedia/plexwatch/Makefile 444980 2017-07-03 19:06:08Z ultima $
 
 PORTNAME=	plexWatch
 PORTVERSION=	0.3.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	multimedia
 
-MAINTAINER=	ultima1252@gmail.com
+MAINTAINER=	ultima@FreeBSD.org
 COMMENT=	Notify, Log Now Playing and Watched content from a Plex Media Server
 
 RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 442733 2017-06-06 01:10:34Z dbaio $
+# $FreeBSD: head/net-mgmt/Makefile 444853 2017-07-01 22:09:34Z rene $
 #
 
     COMMENT = Network management tools
@@ -63,7 +63,6 @@
     SUBDIR += ehnt
     SUBDIR += etherape
     SUBDIR += ettercap
-    SUBDIR += ezradius
     SUBDIR += fastnetmon
     SUBDIR += fetchconfig
     SUBDIR += flow-extract

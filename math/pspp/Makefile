@@ -1,9 +1,9 @@
 # Created by: Andrew L. Neporada <andrew@chg.ru>
-# $FreeBSD: head/math/pspp/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/math/pspp/Makefile 444988 2017-07-03 20:38:11Z tcberner $
 
 PORTNAME=	pspp
 PORTVERSION=	0.10.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math
 MASTER_SITES=	GNU
 

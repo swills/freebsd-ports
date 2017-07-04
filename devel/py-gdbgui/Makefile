@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-gdbgui/Makefile 442067 2017-05-30 14:40:27Z mmokhi $
+# $FreeBSD: head/devel/py-gdbgui/Makefile 444880 2017-07-02 12:30:01Z mmokhi $
 
 PORTNAME=	gdbgui
-PORTVERSION=	0.7.6.2
+PORTVERSION=	0.7.7.0
 CATEGORIES=	devel lang python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/Makefile 443410 2017-06-11 21:03:58Z kwm $
+# $FreeBSD: head/archivers/Makefile 444969 2017-07-03 17:31:02Z jrm $
 #
 
     COMMENT = Archivers
@@ -198,6 +198,7 @@
     SUBDIR += rubygem-ruby-xz
     SUBDIR += rubygem-rubyzip
     SUBDIR += rubygem-rubyzip2
+    SUBDIR += rubygem-snappy
     SUBDIR += rvm
     SUBDIR += rzip
     SUBDIR += sectar

@@ -1,7 +1,7 @@
 # ex:ts=4 sw=4
 #
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/www/twiki/bsd.twiki.mk 431954 2017-01-20 13:02:33Z mat $
+# $FreeBSD: head/www/twiki/bsd.twiki.mk 444752 2017-06-30 13:45:11Z sunpoet $
 #
 # For more info, please go to http://wiki.FreeBSD.org/TWiki
 #
@@ -57,7 +57,6 @@ make-twdep: extract
 			n=p5-$${a%%,*}; v=$${a##*,}; \
 			o=\`echo ${PORTSDIR}/*/$$n\`; : $${o:=${PORTSDIR}/X/$$n}; \
 			echo $$n$$v:'$${PORTSDIR}'$${o##${PORTSDIR}}; done`"
-
 
 make-port:
 	@for n in ${name} ${names}; do\

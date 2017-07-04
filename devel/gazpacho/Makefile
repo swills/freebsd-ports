@@ -1,11 +1,11 @@
 # Created by: Gustavo Fukao <gustavofukao@gmail.com>
-# $FreeBSD: head/devel/gazpacho/Makefile 429349 2016-12-24 13:04:07Z sunpoet $
+# $FreeBSD: head/devel/gazpacho/Makefile 444837 2017-07-01 20:47:38Z antoine $
 
 PORTNAME=	gazpacho
 PORTVERSION=	0.7.2
 PORTREVISION=	5
 CATEGORIES=	devel python
-MASTER_SITES=	GNOME/sources/gazpacho/0.7
+MASTER_SITES=	GNOME/sources/gazpacho/${PORTVERSION:R}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GUI builder for the GTK+ toolkit
@@ -13,8 +13,8 @@ COMMENT=	GUI builder for the GTK+ toolkit
 LICENSE=	LGPL21+ # source mentions LGPL20+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	${LOCALBASE}/bin/kiwi-i18n:x11-toolkits/py-kiwi-gtk
-RUN_DEPENDS=	${LOCALBASE}/bin/kiwi-i18n:x11-toolkits/py-kiwi-gtk
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}kiwi-gtk>=0:x11-toolkits/py-kiwi-gtk
+RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		desktop-file-utils gettext python
 USE_GNOME=	pygtk2

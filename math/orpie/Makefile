@@ -1,9 +1,9 @@
 # Created by: Dylan Simon <dylan@dylex.net>
-# $FreeBSD: head/math/orpie/Makefile 439928 2017-05-02 05:26:40Z tcberner $
+# $FreeBSD: head/math/orpie/Makefile 444988 2017-07-03 20:38:11Z tcberner $
 
 PORTNAME=	orpie
 PORTVERSION=	1.5.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES+=	math
 MASTER_SITES=	http://pessimization.com/software/orpie/
 

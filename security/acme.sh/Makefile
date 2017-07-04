@@ -1,9 +1,9 @@
-# $FreeBSD: head/security/acme.sh/Makefile 442600 2017-06-05 00:47:13Z dvl $
+# $FreeBSD: head/security/acme.sh/Makefile 444990 2017-07-03 22:22:04Z dvl $
 
 PORTNAME=	acme.sh
 PORTVERSION=	2.6.9
-PORTREVISION=	2
 DISTVERSIONPREFIX=	v
+PORTREVISION=	3
 CATEGORIES=	security
 
 MAINTAINER=	dvl@FreeBSD.org
@@ -34,11 +34,14 @@ WGET_RUN_DEPENDS=	wget:ftp/wget
 
 PORTDOCS=	README.md
 
+SUB_FILES=	pkg-install pkg-message
+
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/sbin/${PORTNAME}
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/deploy ${STAGEDIR}${EXAMPLESDIR}/dnsapi
 	( cd ${WRKSRC} && ${COPYTREE_BIN} deploy ${STAGEDIR}${EXAMPLESDIR} )
 	( cd ${WRKSRC} && ${COPYTREE_BIN} dnsapi ${STAGEDIR}${EXAMPLESDIR} )
+	${INSTALL_DATA} ${FILESDIR}/acme.sh ${STAGEDIR}${EXAMPLESDIR}
 
 do-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

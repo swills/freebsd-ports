@@ -1,5 +1,5 @@
 # Created by: Elvis Chiang <elvis@sslab.cs.ccu.edu.tw>
-# $FreeBSD: head/french/wordpress/Makefile 443430 2017-06-12 10:28:51Z joneum $
+# $FreeBSD: head/french/wordpress/Makefile 444849 2017-07-01 21:02:23Z antoine $
 
 PORTNAME=	wordpress
 PORTVERSION=	4.8
@@ -12,6 +12,8 @@ MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	State-of-the-art semantic personal publishing platform
 
 LICENSE=	GPLv2
+
+BROKEN=		size and checksum mismatch
 
 CONFLICTS_INSTALL=	de-wordpress-[0-9].* ja-wordpress-[0-9].* ru-wordpress-[0-9].*
 

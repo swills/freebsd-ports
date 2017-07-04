@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/checkmate/Makefile 438138 2017-04-10 09:23:22Z ehaupt $
+# $FreeBSD: head/audio/checkmate/Makefile 444886 2017-07-02 14:11:39Z ehaupt $
 
 PORTNAME=	checkmate
-PORTVERSION=	0.20
+PORTVERSION=	0.21
 CATEGORIES=	audio
 MASTER_SITES=	http://checkmate.gissen.nl/ \
 		LOCAL/ehaupt

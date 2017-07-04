@@ -1,9 +1,9 @@
 # Created by: Brian Buchanan <brian@CSUA.Berkeley.EDU>
-# $FreeBSD: head/games/flightgear/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/flightgear/Makefile 444932 2017-07-03 10:19:20Z martymac $
 
 PORTNAME=	flightgear
 PORTVERSION=	2017.1.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	games
 MASTER_SITES=	SF/flightgear/release-${PORTVERSION:R}
 
@@ -19,7 +19,8 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 		libosg.so:graphics/osg \
 		libspeex.so:audio/speex \
 		libspeexdsp.so:audio/speexdsp \
-		libcurl.so:ftp/curl
+		libcurl.so:ftp/curl \
+		libudev.so:devel/libudev-devd
 BUILD_DEPENDS=	${LOCALBASE}/lib/libplibsl.a:x11-toolkits/plib \
 		${LOCALBASE}/lib/libSimGearCore.a:devel/simgear
 RUN_DEPENDS=	${LOCALBASE}/lib/libplibsl.a:x11-toolkits/plib \

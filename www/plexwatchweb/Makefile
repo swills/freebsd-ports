@@ -1,5 +1,5 @@
-# Created by: ultima <ultima1252@gmail.com>
-# $FreeBSD: head/www/plexwatchweb/Makefile 443727 2017-06-17 03:01:27Z bdrewery $
+# Created by: Richard Gallamore <ultima@FreeBSD.org>
+# $FreeBSD: head/www/plexwatchweb/Makefile 444980 2017-07-03 19:06:08Z ultima $
 
 PORTNAME=	plexWatchWeb
 PORTVERSION=	1.5.4.2
@@ -7,7 +7,7 @@ PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 
-MAINTAINER=	ultima1252@gmail.com
+MAINTAINER=	ultima@FreeBSD.org
 COMMENT=	Web front-end for plexWatch
 
 RUN_DEPENDS=	plexWatch>=0.1.6:multimedia/plexwatch

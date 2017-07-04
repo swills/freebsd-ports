@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/libsearpc/Makefile 441787 2017-05-26 15:02:08Z lifanov $
+# $FreeBSD: head/devel/libsearpc/Makefile 444980 2017-07-03 19:06:08Z ultima $
 
 PORTNAME=	libsearpc
 PORTVERSION=	3.0.8
 PORTEPOCH=	1
 CATEGORIES=	devel
 
-MAINTAINER=	ultima1252@gmail.com
+MAINTAINER=	ultima@FreeBSD.org
 COMMENT=	Simple RPC framework based on GObject System in C
 
 LICENSE=	APACHE20

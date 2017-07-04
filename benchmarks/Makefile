@@ -1,4 +1,4 @@
-# $FreeBSD: head/benchmarks/Makefile 443638 2017-06-15 20:52:52Z brd $
+# $FreeBSD: head/benchmarks/Makefile 444832 2017-07-01 18:30:30Z danfe $
 #
 
     COMMENT = Benchmarking tools
@@ -83,6 +83,7 @@
     SUBDIR += thrulay
     SUBDIR += tsung
     SUBDIR += ttcp
+    SUBDIR += typometer
     SUBDIR += ubench
     SUBDIR += unixbench
     SUBDIR += webbench

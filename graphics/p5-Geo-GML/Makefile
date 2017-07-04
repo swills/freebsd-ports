@@ -1,9 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/graphics/p5-Geo-GML/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/p5-Geo-GML/Makefile 444726 2017-06-30 13:05:54Z sunpoet $
 
 PORTNAME=	Geo-GML
-PORTVERSION=	0.16
-PORTREVISION=	1
+PORTVERSION=	0.17
 CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,11 +13,13 @@ COMMENT=	Perl Module to Process Geography Markup Language
 LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual
 
-RUN_DEPENDS=	p5-Log-Report>=0.18:devel/p5-Log-Report \
-		p5-Test-Pod>=1.26:devel/p5-Test-Pod \
-		p5-XML-Compile>=0.96:textproc/p5-XML-Compile \
-		p5-XML-Compile-Cache>=0.14:textproc/p5-XML-Compile-Cache
+BUILD_DEPENDS=	p5-Log-Report>=0.18:devel/p5-Log-Report \
+		p5-XML-Compile>=1.58:textproc/p5-XML-Compile \
+		p5-XML-Compile-Cache>=1.05:textproc/p5-XML-Compile-Cache
+RUN_DEPENDS:=	${BUILD_DEPENDS}
+TEST_DEPENDS=	p5-Test-Pod>=1:devel/p5-Test-Pod
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

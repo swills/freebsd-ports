@@ -1,5 +1,5 @@
 # Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/graphics/code-eli/Makefile 440858 2017-05-13 23:21:37Z linimon $
+# $FreeBSD: head/graphics/code-eli/Makefile 444962 2017-07-03 15:44:19Z ler $
 
 PORTNAME=	code-eli
 PORTVERSION=	0.3.6
@@ -11,6 +11,8 @@ COMMENT=	Library with functionalities for geometries
 
 LICENSE=	EPL
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+BROKEN=		Needs work to use math/eigen3 currently in ports
 
 BUILD_DEPENDS=	eigen>3:math/eigen3
 

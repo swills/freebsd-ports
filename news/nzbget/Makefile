@@ -1,10 +1,9 @@
 # Created by: Lewis Thompson <purple@lewiz.net>
-# $FreeBSD: head/news/nzbget/Makefile 440647 2017-05-11 19:20:51Z feld $
+# $FreeBSD: head/news/nzbget/Makefile 444947 2017-07-03 13:01:49Z bhughes $
 
 PORTNAME=	nzbget
-PORTVERSION=	18.1
+PORTVERSION=	19.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	0
 CATEGORIES=	news
 
 MAINTAINER=	toxic@doobie.com

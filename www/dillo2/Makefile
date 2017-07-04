@@ -1,5 +1,5 @@
 # Created by: bf <bf2006a@yahoo.com>
-# $FreeBSD: head/www/dillo2/Makefile 434300 2017-02-17 16:49:13Z mat $
+# $FreeBSD: head/www/dillo2/Makefile 444928 2017-07-03 09:00:16Z amdmi3 $
 
 PORTNAME=	dillo
 PORTVERSION=	3.0.5
@@ -13,7 +13,8 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fast, small graphical Web browser built upon fltk
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libfltk.so:x11-toolkits/fltk
 RUN_DEPENDS=	wget:ftp/wget
@@ -81,22 +82,22 @@ post-patch:
 		${WRKSRC}/dillo-install-hyphenation \
 		${WRKSRC}/doc/dillo.1.in \
 		${WRKSRC}/dpid/dpid.c
-.if ${PORT_OPTIONS:MDOCS}
+
+post-patch-DOCS-on:
 	@${REINPLACE_CMD} -e "\|install-data-am:|s|install-dist_docDATA||" \
 		${WRKSRC}/doc/Makefile.in
-.endif
 
 post-install:
-.if ${PORT_OPTIONS:MDOCS}
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/doc/* ${STAGEDIR}${DOCSDIR}
-.endif
 	@${MKDIR} ${STAGEDIR}${PREFIX}/libexec/dillo/hyphenation
-.if ${PORT_OPTIONS:MHYPHENATION}
+
+post-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/doc/* ${STAGEDIR}${DOCSDIR}
+
+post-install-HYPHENATION-on:
 .for _l in ${HYPHENATION_LANGS}
 	${INSTALL_DATA} ${DISTDIR}/${DIST_SUBDIR}/hyph-${_l}.pat.txt \
 	${STAGEDIR}${PREFIX}/libexec/dillo/hyphenation/${_l:C/-.*\$//}.pat
 .endfor
-.endif
 
 .include <bsd.port.post.mk>

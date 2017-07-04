@@ -1,9 +1,9 @@
 # Created by: bf <bf2006a@yahoo.com>
-# $FreeBSD: head/math/dieharder/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/math/dieharder/Makefile 444988 2017-07-03 20:38:11Z tcberner $
 
 PORTNAME=	dieharder
 PORTVERSION=	3.31.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math
 MASTER_SITES=	http://www.phy.duke.edu/~rgb/General/dieharder/ LOCAL/bf
 

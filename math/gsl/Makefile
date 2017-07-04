@@ -1,8 +1,8 @@
 # Created by: Andrew L. Neporada <andrew@chg.ru>
-# $FreeBSD: head/math/gsl/Makefile 439928 2017-05-02 05:26:40Z tcberner $
+# $FreeBSD: head/math/gsl/Makefile 444988 2017-07-03 20:38:11Z tcberner $
 
 PORTNAME=	gsl
-PORTVERSION=	2.3
+PORTVERSION=	2.4
 CATEGORIES=	math
 MASTER_SITES=	GNU
 
@@ -11,16 +11,12 @@ COMMENT=	The GNU Scientific Library - mathematical libs
 
 LICENSE=	GPLv3
 
-USES=		libtool makeinfo pathfix
+USES=		libtool pathfix
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV+=	MAKEINFO='makeinfo --no-split'
 INSTALL_TARGET=	install-strip
 
 INFO=		gsl-ref
-
-post-extract:
-	@${RM} ${WRKSRC}/doc/gsl-ref.info*
 
 #prevent regression test coredumps from causing failures on the
 #package-building cluster:

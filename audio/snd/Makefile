@@ -1,9 +1,9 @@
 # Created by: trevor
-# $FreeBSD: head/audio/snd/Makefile 439928 2017-05-02 05:26:40Z tcberner $
+# $FreeBSD: head/audio/snd/Makefile 444988 2017-07-03 20:38:11Z tcberner $
 
 PORTNAME=	snd
 PORTVERSION=	15.7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ccrma-ftp.stanford.edu/pub/Lisp/ \
 		SF

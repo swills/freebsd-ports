@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBD-mysql/Makefile 435768 2017-03-09 16:12:43Z sunpoet $
+# $FreeBSD: head/databases/p5-DBD-mysql/Makefile 444724 2017-06-30 13:05:44Z sunpoet $
 
 PORTNAME=	DBD-mysql
-PORTVERSION=	4.042
+PORTVERSION=	4.043
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -12,6 +12,7 @@ COMMENT?=	MySQL driver for the Perl5 Database Interface (DBI)
 
 LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-DBI>=1.08:databases/p5-DBI \
 		p5-Devel-CheckLib>=0:devel/p5-Devel-CheckLib

@@ -1,9 +1,9 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/ports-mgmt/fbsdmon/Makefile 434518 2017-02-21 11:12:34Z amdmi3 $
+# $FreeBSD: head/ports-mgmt/fbsdmon/Makefile 444956 2017-07-03 14:09:02Z amdmi3 $
 
 PORTNAME=	fbsdmon
 PORTVERSION=	1.01
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	ports-mgmt sysutils
 MASTER_SITES=	LOCAL/gblach/
 

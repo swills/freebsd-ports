@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/yarn/Makefile 442188 2017-05-31 14:41:22Z jrm $
+# $FreeBSD: head/www/yarn/Makefile 444916 2017-07-03 07:40:16Z demon $
 
 PORTNAME=	yarn
 DISTVERSIONPREFIX=	v
@@ -24,6 +24,8 @@ NODE4_DESC=	Use www/node4 as backend
 NODE_RUN_DEPENDS=	node>=0.8.0:www/node
 NODE6_RUN_DEPENDS=	node6>=0.8.0:www/node6
 NODE4_RUN_DEPENDS=	node4>=0.8.0:www/node4
+
+CONFLICTS_INSTALL=	hadoop-2*
 
 NO_ARCH=	yes
 NO_BUILD=	yes

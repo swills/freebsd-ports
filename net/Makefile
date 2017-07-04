@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 444689 2017-06-29 21:05:33Z olivier $
+# $FreeBSD: head/net/Makefile 444853 2017-07-01 22:09:34Z rene $
 #
 
     COMMENT = Networking tools
@@ -9,7 +9,6 @@
     SUBDIR += GeoIP
     SUBDIR += R-cran-twitteR
     SUBDIR += Sockets
-    SUBDIR += abills
     SUBDIR += activemq
     SUBDIR += adasockets
     SUBDIR += afpfs-ng
@@ -61,6 +60,7 @@
     SUBDIR += bounce
     SUBDIR += bsdec2-image-upload
     SUBDIR += bsdproxy
+    SUBDIR += bsdrcmds
     SUBDIR += bwi-firmware-kmod
     SUBDIR += bwn-firmware-kmod
     SUBDIR += bwping
@@ -145,7 +145,6 @@
     SUBDIR += freediameter
     SUBDIR += freenet6
     SUBDIR += freeradius-client
-    SUBDIR += freeradius2
     SUBDIR += freeradius3
     SUBDIR += freerdp
     SUBDIR += freerdp1

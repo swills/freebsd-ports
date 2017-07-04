@@ -1,8 +1,8 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/mail/bogofilter-tc/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/bogofilter-tc/Makefile 444988 2017-07-03 20:38:11Z tcberner $
 
 PORTNAME=	bogofilter
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail
 PKGNAMESUFFIX=	-tc
 

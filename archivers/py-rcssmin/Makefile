@@ -1,5 +1,5 @@
-# Created by: Ultima <ultima1252@gmail.com>
-# $FreeBSD: head/archivers/py-rcssmin/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# Created by: Richard Gallamore <ultima@FreeBSD.org>
+# $FreeBSD: head/archivers/py-rcssmin/Makefile 444980 2017-07-03 19:06:08Z ultima $
 
 PORTNAME=	rcssmin
 PORTVERSION=	1.0.6
@@ -8,7 +8,7 @@ CATEGORIES=	archivers python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ultima1252@gmail.com
+MAINTAINER=	ultima@FreeBSD.org
 COMMENT=	Fast CSS minifier for Python
 
 LICENSE=	APACHE20

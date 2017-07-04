@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/ccnet-server/Makefile 439615 2017-04-28 15:09:08Z lifanov $
+# $FreeBSD: head/net-mgmt/ccnet-server/Makefile 444980 2017-07-03 19:06:08Z ultima $
 
 PORTNAME=	ccnet-server
 PORTVERSION=	${SEAFILE_VER}
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	-server
 CATEGORIES=	net-mgmt devel
 
-MAINTAINER=	ultima1252@gmail.com
+MAINTAINER=	ultima@FreeBSD.org
 COMMENT=	Internal communication framework for Seafile server
 
 LICENSE=	GPLv3

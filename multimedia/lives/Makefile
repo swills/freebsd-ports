@@ -1,9 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/multimedia/lives/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/multimedia/lives/Makefile 444769 2017-06-30 15:44:08Z madpilot $
 
 PORTNAME=	lives
-PORTVERSION=	2.8.4
-PORTREVISION=	6
+PORTVERSION=	2.8.7
 CATEGORIES=	multimedia
 MASTER_SITES=	http://lives-video.com/releases/
 DISTNAME=	LiVES-${PORTVERSION}
@@ -56,8 +55,8 @@ SHEBANG_FILES=	build-lives-rfx-plugin build-lives-rfx-plugin-multi \
 		lives-plugins/plugins/encoders/multi_encoder3 \
 		lives-plugins/plugins/playback/audiostream/audiostreamer.pl
 GNU_CONFIGURE=	yes
-USE_XORG=	x11
-USE_GL=		gl
+USE_XORG=	x11 xrender
+USE_GL=		gl glu
 USE_SDL=	sdl
 USE_GNOME=	cairo gdkpixbuf2 gtk30 intltool
 USE_LDCONFIG=	yes

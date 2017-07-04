@@ -1,5 +1,5 @@
-# Created by: Ultima <ultima1252@gmail.com>
-# $FreeBSD: head/www/py-django-post_office/Makefile 421239 2016-09-01 17:02:23Z pi $
+# Created by: Richard Gallamore <ultima@FreeBSD.org>
+# $FreeBSD: head/www/py-django-post_office/Makefile 444980 2017-07-03 19:06:08Z ultima $
 
 PORTNAME=	django-post_office
 PORTVERSION=	2.0.8
@@ -8,7 +8,7 @@ CATEGORIES=	www python
 MASTER_SITES=	GH
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ultima1252@gmail.com
+MAINTAINER=	ultima@FreeBSD.org
 COMMENT=	Django app to monitor and send mail asynchronously
 
 LICENSE=	MIT

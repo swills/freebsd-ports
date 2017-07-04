@@ -1,9 +1,9 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/science/kst2/Makefile 439928 2017-05-02 05:26:40Z tcberner $
+# $FreeBSD: head/science/kst2/Makefile 444988 2017-07-03 20:38:11Z tcberner $
 
 PORTNAME=	kst
 DISTVERSION=	2.0.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science kde
 MASTER_SITES=	SF/${PORTNAME}/Kst%20${DISTVERSION:C/-r.*//}/
 DISTNAME=	Kst-${DISTVERSION}

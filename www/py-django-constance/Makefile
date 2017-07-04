@@ -1,5 +1,5 @@
-# Created by: Ultima <ultima1252@gmail.com>
-# $FreeBSD: head/www/py-django-constance/Makefile 438696 2017-04-17 14:35:00Z lifanov $
+# Created by: Richard Gallamore <ultima@FreeBSD.org>
+# $FreeBSD: head/www/py-django-constance/Makefile 444980 2017-07-03 19:06:08Z ultima $
 
 PORTNAME=	django-constance
 PORTVERSION=	2.0.0
@@ -7,7 +7,7 @@ CATEGORIES=	www python
 MASTER_SITES=	GH
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ultima1252@gmail.com
+MAINTAINER=	ultima@FreeBSD.org
 COMMENT=	Dynamic Django settings
 
 LICENSE=	BSD3CLAUSE

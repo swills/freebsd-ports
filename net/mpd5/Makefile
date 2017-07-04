@@ -1,9 +1,9 @@
 # Created by: Archie Cobbs
-# $FreeBSD: head/net/mpd5/Makefile 444511 2017-06-27 16:51:55Z eugen $
+# $FreeBSD: head/net/mpd5/Makefile 444889 2017-07-02 15:16:20Z eugen $
 
 PORTNAME=	mpd
 DISTVERSION=	5.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	SF/${PORTNAME}/Mpd5/Mpd-${PORTVERSION}
 PKGNAMESUFFIX=	5
@@ -23,6 +23,8 @@ CONFIGURE_WRKSRC=	"${WRKSRC}/src"
 USES=		ssl
 
 .include <bsd.port.options.mk>
+
+MAKE_ARGS+=	OSVERSION=${OSVERSION}
 
 .if ${PORT_OPTIONS:MNG_IPACCT}
 BUILD_DEPENDS+=	${LOCALBASE}/include/netgraph/ng_ipacct.h:net-mgmt/ng_ipacct

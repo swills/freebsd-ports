@@ -1,8 +1,8 @@
 # Created by: Patrick Li <pat@databits.net>
-# $FreeBSD: head/net/radvd/Makefile 441459 2017-05-22 13:48:50Z farrokhi $
+# $FreeBSD: head/net/radvd/Makefile 444996 2017-07-04 06:08:18Z farrokhi $
 
 PORTNAME=	radvd
-PORTVERSION=	2.16
+PORTVERSION=	2.17
 CATEGORIES=	net ipv6
 MASTER_SITES=	http://www.litech.org/radvd/dist/
 

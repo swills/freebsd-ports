@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/Makefile 442589 2017-06-04 21:00:48Z cmt $
+# $FreeBSD: head/print/Makefile 444809 2017-06-30 22:32:50Z sunpoet $
 #
 
     COMMENT = Desktop publishing
@@ -14,7 +14,6 @@
     SUBDIR += apsfilter
     SUBDIR += asprint
     SUBDIR += auctex
-    SUBDIR += axpoint
     SUBDIR += bibcursed
     SUBDIR += biblio-py
     SUBDIR += bibview
@@ -148,6 +147,7 @@
     SUBDIR += p5-PostScript-Simple
     SUBDIR += p5-Text-PDF
     SUBDIR += p5-XML-ApacheFOP
+    SUBDIR += p5-XML-Handler-AxPoint
     SUBDIR += p910nd
     SUBDIR += panda
     SUBDIR += papersize-default-a4

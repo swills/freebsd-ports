@@ -1,9 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/easyrpg-player/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/games/easyrpg-player/Makefile 444878 2017-07-02 12:24:35Z amdmi3 $
 
 PORTNAME=	easyrpg-player
-PORTVERSION=	0.5.1
-PORTREVISION=	1
+PORTVERSION=	0.5.2
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org
@@ -20,7 +19,8 @@ LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 		libvorbis.so:audio/libvorbis \
 		libsndfile.so:audio/libsndfile \
 		libxmp.so:audio/libxmp \
-		libspeexdsp.so:audio/speexdsp
+		libspeexdsp.so:audio/speexdsp \
+		libopusfile.so:audio/opusfile
 BUILD_DEPENDS=	asciidoc:textproc/asciidoc \
 		${LOCALBASE}/include/boost/shared_ptr.hpp:devel/boost-libs
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-semantic_puppet/Makefile 441345 2017-05-20 21:50:36Z sunpoet $
+# $FreeBSD: head/devel/rubygem-semantic_puppet/Makefile 444868 2017-07-02 06:47:36Z sunpoet $
 
 PORTNAME=	semantic_puppet
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

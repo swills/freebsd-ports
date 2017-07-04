@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/p5-Test-OpenLDAP/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Test-OpenLDAP/Makefile 444790 2017-06-30 22:13:40Z sunpoet $
 
 PORTNAME=	Test-OpenLDAP
 PORTVERSION=	0.05
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -16,10 +16,10 @@ LICENSE_COMB=	dual
 RUN_DEPENDS=	\
 	p5-Data-UUID>0:devel/p5-Data-UUID \
 	p5-perl-ldap>0:net/p5-perl-ldap \
-	${LOCALBASE}/libexec/slapd:net/openldap${OPENLDAP_VER}-server \
-	p5-Net>0:net/p5-Net
+	${LOCALBASE}/libexec/slapd:net/openldap${OPENLDAP_VER}-server
 BUILD_DEPENDS=	${RUN_DEPENDS}
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 USE_OPENLDAP=	yes

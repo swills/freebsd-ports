@@ -1,8 +1,8 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/devel/xa65/Makefile 435323 2017-03-03 09:01:44Z amdmi3 $
+# $FreeBSD: head/devel/xa65/Makefile 444875 2017-07-02 09:54:57Z pi $
 
 PORTNAME=	xa65
-PORTVERSION=	2.3.7
+PORTVERSION=	2.3.8
 CATEGORIES=	devel
 MASTER_SITES=	http://www.floodgap.com/retrotech/xa/dists/
 DISTNAME=	xa-${PORTVERSION}

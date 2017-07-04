@@ -1,8 +1,8 @@
 # Created by: Dennis Herrmann <dhn@FreeBSD.org>
-# $FreeBSD: head/net/p5-XML-Fast/Makefile 444491 2017-06-27 16:14:45Z sunpoet $
+# $FreeBSD: head/net/p5-XML-Fast/Makefile 444728 2017-06-30 13:06:04Z sunpoet $
 
 PORTNAME=	XML-Fast
-PORTVERSION=	0.16
+PORTVERSION=	0.17
 CATEGORIES=	net
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/rsyslog8/Makefile 444600 2017-06-28 15:57:11Z matthew $
+# $FreeBSD: head/sysutils/rsyslog8/Makefile 444784 2017-06-30 22:02:23Z matthew $
 
 PORTNAME=	rsyslog
 PORTVERSION=	8.28.0
@@ -21,6 +21,8 @@ BUILD_DEPENDS=	rst2man:textproc/py-docutils
 PORTSCOUT=	limit:^8\.
 
 USE_LDCONFIG=	yes
+
+CONFLICTS_BUILD=	libinotify-*
 
 OPTIONS_DEFINE=	DBI DOCS ELASTIC GCRYPT GNUTLS GSSAPI JSONPARSE  MYSQL PGSQL \
 		RELP SNMP NORMALIZE

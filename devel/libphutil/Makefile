@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/libphutil/Makefile 437829 2017-04-05 19:59:05Z sunpoet $
+# $FreeBSD: head/devel/libphutil/Makefile 444819 2017-07-01 12:11:17Z grembo $
 
 PORTNAME=	libphutil
-PORTVERSION=	20161003
-PORTREVISION=	1
+PORTVERSION=	20170630
 CATEGORIES=	devel
 PKGNAMEPREFIX=	php-
 
@@ -19,7 +18,7 @@ USE_GITHUB=	yes
 NO_BUILD=	yes
 NO_ARCH=	yes
 GH_ACCOUNT=	phacility
-GH_TAGNAME=	4b12a4f
+GH_TAGNAME=	0a4487d
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/${PHP_DESTDIR}

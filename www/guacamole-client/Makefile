@@ -1,5 +1,5 @@
-# Created by: Ultima <ultima1252@gmail.com>
-# $FreeBSD: head/www/guacamole-client/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# Created by: Richard Gallamore <ultima@FreeBSD.org>
+# $FreeBSD: head/www/guacamole-client/Makefile 444980 2017-07-03 19:06:08Z ultima $
 
 PORTNAME=	guacamole-client
 PORTVERSION=	0.9.12
@@ -11,7 +11,7 @@ MASTER_SITES+=	https://sourceforge.net/projects/distfiles/files/${PORTNAME}/:rep
 DISTFILES=	repository-${PORTVERSION}${EXTRACT_SUFX}:repo
 DIST_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	ultima1252@gmail.com
+MAINTAINER=	ultima@FreeBSD.org
 COMMENT=	HTML5 Clientless Remote Desktop
 
 LICENSE=	APACHE20

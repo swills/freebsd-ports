@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 441270 2017-05-19 20:43:09Z rene $
+# $FreeBSD: head/deskutils/Makefile 444883 2017-07-02 13:35:11Z rene $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -20,7 +20,6 @@
     SUBDIR += cal
     SUBDIR += calcurse
     SUBDIR += calibre
-    SUBDIR += california
     SUBDIR += cartotheque
     SUBDIR += cdcat
     SUBDIR += charmap

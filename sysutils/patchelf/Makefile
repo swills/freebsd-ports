@@ -1,16 +1,22 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/sysutils/patchelf/Makefile 362024 2014-07-16 03:18:26Z adamw $
+# $FreeBSD: head/sysutils/patchelf/Makefile 444978 2017-07-03 18:39:50Z wg $
 
 PORTNAME=	patchelf
-PORTVERSION=	0.6
+PORTVERSION=	0.9
 CATEGORIES=	sysutils
-MASTER_SITES=	http://hydra.nixos.org/build/1524660/download/3/
 
 MAINTAINER=	wg@FreeBSD.org
 COMMENT=	Utility to modify the dynamic linker
 
-USES=		gmake
-GNU_CONFIGURE=	yes
+LICENSE=       GPLv3+
+LICENSE_FILE=  ${WRKSRC}/COPYING
+
+USES=          autoreconf gmake
+GNU_CONFIGURE= yes
+
+USE_GITHUB=    yes
+GH_ACCOUNT=    NixOS
+GH_PROJECT=    patchelf
 
 OPTIONS_DEFINE=	DOCS
 

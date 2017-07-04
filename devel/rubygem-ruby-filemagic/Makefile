@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-ruby-filemagic/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-ruby-filemagic/Makefile 444926 2017-07-03 08:21:18Z sunpoet $
 
 PORTNAME=	ruby-filemagic
-PORTVERSION=	0.7.1
+PORTVERSION=	0.7.2
 CATEGORIES=	devel ruby
 MASTER_SITES=	RG
 
@@ -14,5 +14,7 @@ LICENSE_COMB=	dual
 
 USE_RUBY=	yes
 USES=		gem
+
+PLIST_FILES=	${GEM_LIB_DIR}/test/pylink
 
 .include <bsd.port.mk>

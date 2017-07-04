@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 444652 2017-06-29 15:51:01Z swills $
+# $FreeBSD: head/security/Makefile 444763 2017-06-30 15:15:59Z tobik $
 #
 
     COMMENT = Security tools
@@ -1178,6 +1178,7 @@
     SUBDIR += tclgpg
     SUBDIR += tclsasl
     SUBDIR += tcpcrypt
+    SUBDIR += testssl.sh
     SUBDIR += tinc
     SUBDIR += tinyca
     SUBDIR += titus

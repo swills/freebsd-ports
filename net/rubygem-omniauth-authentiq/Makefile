@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/rubygem-omniauth-authentiq/Makefile 436535 2017-03-20 09:57:41Z tz $
+# $FreeBSD: head/net/rubygem-omniauth-authentiq/Makefile 444731 2017-06-30 13:06:20Z sunpoet $
 
 PORTNAME=	omniauth-authentiq
-PORTVERSION=	0.3.0
+PORTVERSION=	0.3.1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

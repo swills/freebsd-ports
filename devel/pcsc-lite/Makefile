@@ -1,8 +1,8 @@
 # Created by: Toni Andjelkovic <toni@soth.at>
-# $FreeBSD: head/devel/pcsc-lite/Makefile 442064 2017-05-30 13:50:44Z mmokhi $
+# $FreeBSD: head/devel/pcsc-lite/Makefile 444955 2017-07-03 13:42:50Z mmokhi $
 
 PORTNAME=	pcsc-lite
-PORTVERSION=	1.8.21
+PORTVERSION=	1.8.22
 PORTEPOCH=	2
 CATEGORIES=	devel security
 MASTER_SITES=	https://alioth.debian.org/frs/download.php/latestfile/39/
@@ -23,7 +23,7 @@ SHEBANG_FILES=	src/spy/pcsc-spy
 USE_LDCONFIG=	yes
 CONFIGURE_ARGS=	--enable-usbdropdir=${PREFIX}/lib/pcsc/drivers/
 
-PKGMESSAGE=	${WRKDIR}/pkg-message
+SUB_FILES=	pkg-message
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 OPTIONS_GROUP=		FEATURES
@@ -46,8 +46,6 @@ post-patch-DOCS-off:
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/pcsc/drivers
 	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/pcsc/services
-	@${SED} 's,%%PREFIX%%,${PREFIX},g' < ${FILESDIR}/pkg-message.in > \
-		${WRKDIR}/pkg-message
 
 post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}

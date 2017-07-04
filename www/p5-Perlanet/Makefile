@@ -1,8 +1,9 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-Perlanet/Makefile 437312 2017-03-30 15:13:42Z sunpoet $
+# $FreeBSD: head/www/p5-Perlanet/Makefile 444927 2017-07-03 08:48:58Z sunpoet $
 
 PORTNAME=	Perlanet
-PORTVERSION=	0.58
+PORTVERSION=	1.1.0
+DISTVERSIONPREFIX=	v
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DAVECROSS
@@ -31,6 +32,6 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5
-USE_PERL5=	modbuild
+USE_PERL5=	configure
 
 .include <bsd.port.mk>

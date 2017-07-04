@@ -1,10 +1,9 @@
-# $FreeBSD: head/audio/opusfile/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/audio/opusfile/Makefile 444835 2017-07-01 20:27:05Z naddy $
 
 PORTNAME=	opusfile
 PORTVERSION=	0.8
 CATEGORIES=	audio
-MASTER_SITES=	http://downloads.xiph.org/releases/opus/ \
-		MOZILLA/opus
+MASTER_SITES=	MOZILLA/opus
 
 MAINTAINER=	liangtai.s16@gmail.com
 COMMENT=	Opus playback library

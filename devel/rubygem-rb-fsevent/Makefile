@@ -1,8 +1,8 @@
 # Created by: Joseph Benden <joe@thrallingpenguin.com>
-# $FreeBSD: head/devel/rubygem-rb-fsevent/Makefile 430189 2017-01-01 01:09:16Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rb-fsevent/Makefile 444898 2017-07-02 17:36:10Z sunpoet $
 
 PORTNAME=	rb-fsevent
-PORTVERSION=	0.9.8
+PORTVERSION=	0.10.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

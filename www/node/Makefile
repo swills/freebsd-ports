@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/node/Makefile 444641 2017-06-29 10:42:52Z bhughes $
+# $FreeBSD: head/www/node/Makefile 444704 2017-06-30 09:19:55Z andrew $
 
 PORTNAME=	node
 PORTVERSION=	8.1.3
@@ -24,6 +24,7 @@ OPTIONS_EXCLUDE+=	DTRACE
 .endif
 
 OPTIONS_EXCLUDE_FreeBSD_10=	DTRACE
+OPTIONS_EXCLUDE_aarch64=	DTRACE
 
 BUNDLED_SSL_DESC=		Use node.js's bundled OpenSSL implementation
 BUNDLED_SSL_USES_OFF=		ssl
@@ -41,7 +42,7 @@ USE_LDCONFIG=	yes
 
 CONFLICTS_INSTALL=	node[456]-[0-9]* node01[02]-[0-9]* node-devel-[0-9]* iojs-[0-9]*
 
-ONLY_FOR_ARCHS=		amd64 armv6 i386
+ONLY_FOR_ARCHS=		aarch64 amd64 armv6 i386
 
 CONFIGURE_ARGS=	--prefix=${PREFIX_RELDEST} \
 		--without-npm \

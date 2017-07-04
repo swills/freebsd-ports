@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/zeronet/Makefile 444378 2017-06-26 16:49:28Z ultima $
+# $FreeBSD: head/security/zeronet/Makefile 444912 2017-07-03 05:48:40Z koobs $
 
 PORTNAME=	zeronet
 PORTVERSION=	0.5.6
@@ -27,7 +27,9 @@ SUB_FILES=	zeronet-service zeronet-cmd pkg-message
 SUB_LIST=	LOCALBASE=${LOCALBASE} USER=${USER} GROUP=${GROUP}
 PLIST_SUB=	USER=${USER} GROUP=${GROUP}
 
-USES=		python
+# ZeroNet hasn't been ported to Python 3 yet
+# https://github.com/HelloZeroNet/ZeroNet/issues/149
+USES=		python:2.7
 NO_ARCH=	yes
 
 OPTIONS_DEFINE=	TOR DEBUG

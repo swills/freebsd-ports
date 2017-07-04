@@ -1,11 +1,11 @@
-# Created by: Ultima <ultima1252@gmail.com>
-# $FreeBSD: head/ports-mgmt/portest/Makefile 429269 2016-12-23 14:48:47Z lifanov $
+# Created by: Richard Gallamore <ultima@FreeBSD.org>
+# $FreeBSD: head/ports-mgmt/portest/Makefile 444980 2017-07-03 19:06:08Z ultima $
 
 PORTNAME=	portest
-PORTVERSION=	0.1.8
+PORTVERSION=	0.1.9
 CATEGORIES=	ports-mgmt
 
-MAINTAINER=	ultima1252@gmail.com
+MAINTAINER=	ultima@FreeBSD.org
 COMMENT=	Patch file automation for FreeBSD-ports
 
 LICENSE=	BSD2CLAUSE

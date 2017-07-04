@@ -1,8 +1,9 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/irc/konversation/Makefile 442126 2017-05-30 21:10:24Z rakuco $
+# $FreeBSD: head/irc/konversation/Makefile 444772 2017-06-30 17:36:30Z tcberner $
 
 PORTNAME=	konversation
 PORTVERSION=	1.7.2
+PORTREVISION=	1
 CATEGORIES=	irc kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${DISTVERSION}/src
 
@@ -19,7 +20,8 @@ USE_KDE=	archive auth bookmarks codecs completion config \
 		configwidgets coreaddons crash dbusaddons doctools ecm \
 		emoticons globalaccel i18n iconthemes idletime itemviews \
 		jobwidgets kio notifications notifyconfig parts service solid \
-		sonnet textwidgets wallet widgetsaddons windowsystem xmlgui
+		sonnet textwidgets wallet widgetsaddons windowsystem xmlgui \
+		init_run
 USE_QT5=	core dbus gui network phonon4 widgets xml \
 		buildtools_build qmake_build
 

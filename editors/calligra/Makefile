@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/calligra/Makefile 443772 2017-06-17 13:44:51Z rakuco $
+# $FreeBSD: head/editors/calligra/Makefile 444988 2017-07-03 20:38:11Z tcberner $
 
 # TODO (when these parts are available in KF5):
 #  - add calendarcore to USE_KDE when KDE PIM is available
@@ -6,6 +6,7 @@
 #
 PORTNAME=	calligra
 PORTVERSION=	3.0.1
+PORTREVISION=	1
 CATEGORIES=	editors kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}
 DIST_SUBDIR=	KDE/${PORTNAME}

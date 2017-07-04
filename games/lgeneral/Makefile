@@ -1,9 +1,8 @@
 # Created by: Filippo Natali <filippo@widestore.net>
-# $FreeBSD: head/games/lgeneral/Makefile 416469 2016-06-06 15:25:42Z mat $
+# $FreeBSD: head/games/lgeneral/Makefile 444764 2017-06-30 15:24:10Z madpilot $
 
 PORTNAME=	lgeneral
-PORTVERSION=	1.3.1
-PORTREVISION=	1
+PORTVERSION=	1.3.2
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME} \
 		SF/${PORTNAME}/${PORTNAME}-data:data
@@ -19,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BROKEN_powerpc=	does not install
 BROKEN_sparc64=	does not install
 
-USES=		gmake localbase
+USES=		autoreconf gettext-tools gmake localbase
 USE_CSTD=	gnu89
 USE_SDL=	sdl
 GNU_CONFIGURE=	yes
@@ -28,20 +27,18 @@ OPTIONS_DEFINE=		DOCS NLS SOUND
 OPTIONS_DEFAULT=	SOUND
 OPTIONS_SUB=		yes
 
-NLS_USES=		gettext
+NLS_USES=		gettext-runtime
 NLS_CONFIGURE_ENABLE=	nls
 NLS_CONFIGURE_ENV_OFF=	am_cv_func_iconv=no
 SOUND_USE=		sdl=mixer
 SOUND_CONFIGURE_OFF=	--disable-sound
 
 post-patch:
-	@${REINPLACE_CMD} -e 's|/icons.*|/pixmaps|' ${WRKSRC}/Makefile.in
-	@${REINPLACE_CMD} -e 's|^CFLAGS=|#CFLAGS=|' ${WRKSRC}/configure
+.for i in flags terrain units
+	@${REINPLACE_CMD} -e 's|$$(${i}dir)|$$(DESTDIR)/&|' ${WRKSRC}/src/gfx/${i}/Makefile.am
+.endfor
 
 post-install:
-.for i in flags terrain units
-	@${MKDIR} ${STAGEDIR}${DATADIR}/gfx/${i}
-.endfor
 	${SETENV} DISPLAY= \
 		${STAGEDIR}${PREFIX}/bin/lgc-pg --separate-bridges \
 		-s ${WRKDIR}/pg-data \

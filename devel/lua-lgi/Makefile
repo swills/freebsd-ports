@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/lua-lgi/Makefile 429732 2016-12-28 08:54:52Z vanilla $
+# $FreeBSD: head/devel/lua-lgi/Makefile 444953 2017-07-03 13:33:34Z amdmi3 $
 
 PORTNAME=	lgi
 PORTVERSION=	0.9.1
@@ -19,7 +19,8 @@ USE_GNOME=	introspection:build,run
 MAKE_ENV=	LUA_CFLAGS="-I${LUA_INCDIR}"
 MAKE_ARGS=	PREFIX="${PREFIX}" LUA_LIBDIR="${LUA_MODLIBDIR}" \
 		LUA_INCDIR="${LUA_INCDIR}" LUA_VERSION="${LUA_VER}" \
-		CORE="corelgilua${LUA_VER_STR}.so"
+		CORE="corelgilua${LUA_VER_STR}.so" LUA="${LUA_CMD}"
+TEST_TARGET=	check
 
 post-patch:
 	@${REINPLACE_CMD} -e 's/51/${LUA_VER_STR}/g' \

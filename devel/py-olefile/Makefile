@@ -1,5 +1,5 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/py-olefile/Makefile 431025 2017-01-09 19:38:28Z antoine $
+# $FreeBSD: head/devel/py-olefile/Makefile 444755 2017-06-30 14:13:17Z antoine $
 
 PORTNAME=	olefile
 PORTVERSION=	0.44
@@ -12,7 +12,8 @@ COMMENT=	Python module to read MS OLE2 files
 
 LICENSE=	BSD2CLAUSE MIT
 LICENSE_COMB=	multi
-LICENSE_FILE=	${WRKSRC}/olefile/LICENSE.txt
+LICENSE_FILE_BSD2CLAUSE=	${WRKSRC}/olefile/LICENSE.txt
+LICENSE_FILE_MIT=	${WRKSRC}/olefile/LICENSE.txt
 
 NO_ARCH=	yes
 USES=		dos2unix python zip

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 444023 2017-06-21 09:30:16Z jbeich $
+# $FreeBSD: head/www/Makefile 444851 2017-07-01 21:58:04Z rene $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -23,10 +23,6 @@
     SUBDIR += apache-forrest
     SUBDIR += apache-mode.el
     SUBDIR += apache22
-    SUBDIR += apache22-event-mpm
-    SUBDIR += apache22-itk-mpm
-    SUBDIR += apache22-peruser-mpm
-    SUBDIR += apache22-worker-mpm
     SUBDIR += apache24
     SUBDIR += apercu
     SUBDIR += aria2

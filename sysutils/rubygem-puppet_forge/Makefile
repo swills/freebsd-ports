@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/rubygem-puppet_forge/Makefile 444598 2017-06-28 15:43:55Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-puppet_forge/Makefile 444847 2017-07-01 20:57:51Z sunpoet $
 
 PORTNAME=	puppet_forge
-PORTVERSION=	2.2.6
+PORTVERSION=	2.2.7
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
@@ -15,7 +15,7 @@ RUN_DEPENDS=	rubygem-faraday>=0.9.0:www/rubygem-faraday \
 		rubygem-faraday_middleware>=0.9.0:www/rubygem-faraday_middleware \
 		rubygem-gettext-setup>=0.11:devel/rubygem-gettext-setup \
 		rubygem-minitar>=0:archivers/rubygem-minitar \
-		rubygem-semantic_puppet0>=0.1.0:devel/rubygem-semantic_puppet0
+		rubygem-semantic_puppet>=1.0:devel/rubygem-semantic_puppet
 
 NO_ARCH=	yes
 USE_RUBY=	yes

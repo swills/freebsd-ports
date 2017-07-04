@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Function-Parameters/Makefile 441014 2017-05-16 18:18:20Z sunpoet $
+# $FreeBSD: head/devel/p5-Function-Parameters/Makefile 444920 2017-07-03 08:20:43Z sunpoet $
 
 PORTNAME=	Function-Parameters
-PORTVERSION=	2.000007
+PORTVERSION=	2.001001
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:MAUKE

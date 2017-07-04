@@ -1,9 +1,9 @@
 # Created by: Lev Serebryakov <lev@FreeBSD.org>
-# $FreeBSD: head/graphics/nip2/Makefile 439928 2017-05-02 05:26:40Z tcberner $
+# $FreeBSD: head/graphics/nip2/Makefile 444988 2017-07-03 20:38:11Z tcberner $
 
 PORTNAME=	nip2
 PORTVERSION=	8.4.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.vips.ecs.soton.ac.uk/supported/${PORTVERSION:R}/
 

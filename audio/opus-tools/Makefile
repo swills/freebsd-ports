@@ -1,10 +1,9 @@
-# $FreeBSD: head/audio/opus-tools/Makefile 437876 2017-04-06 20:59:33Z naddy $
+# $FreeBSD: head/audio/opus-tools/Makefile 444835 2017-07-01 20:27:05Z naddy $
 
 PORTNAME=	opus-tools
 PORTVERSION=	0.1.10
 CATEGORIES=	audio
-MASTER_SITES=	http://downloads.xiph.org/releases/opus/ \
-		MOZILLA/opus
+MASTER_SITES=	MOZILLA/opus
 
 MAINTAINER=	naddy@FreeBSD.org
 COMMENT=	Encode, inspect, and decode Opus files

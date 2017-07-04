@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/fisicalab/Makefile 439928 2017-05-02 05:26:40Z tcberner $
+# $FreeBSD: head/science/fisicalab/Makefile 444988 2017-07-03 20:38:11Z tcberner $
 
 PORTNAME=	fisicalab
 PORTVERSION=	0.3.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	science gnustep
 MASTER_SITES=	SAVANNAH
 

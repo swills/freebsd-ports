@@ -1,5 +1,5 @@
 # Created by: Stefan `Sec` Zehl <sec@42.org>
-# $FreeBSD: head/www/mod_gzip2/Makefile 348295 2014-03-15 08:12:20Z miwi $
+# $FreeBSD: head/www/mod_gzip2/Makefile 444703 2017-06-30 09:00:14Z amdmi3 $
 
 PORTNAME=	mod_gzip2
 PORTVERSION=	2.1.0
@@ -27,8 +27,8 @@ post-patch:
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
-	@${INSTALL_DATA} ${WRKSRC}/my_cfg.txt ${STAGEDIR}${EXAMPLESDIR}/mod_gzip2.conf.sample
+	${INSTALL_DATA} ${WRKSRC}/my_cfg.txt ${STAGEDIR}${EXAMPLESDIR}/mod_gzip2.conf.sample
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	@${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

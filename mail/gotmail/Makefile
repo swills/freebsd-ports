@@ -1,9 +1,9 @@
 # Created by: Christopher Elkins <chrise@scardini.com>
-# $FreeBSD: head/mail/gotmail/Makefile 431351 2017-01-13 09:18:55Z amdmi3 $
+# $FreeBSD: head/mail/gotmail/Makefile 444794 2017-06-30 22:14:00Z sunpoet $
 
 PORTNAME=	gotmail
 PORTVERSION=	0.9.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail perl5
 MASTER_SITES=	SF
 
@@ -14,8 +14,7 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	curl:ftp/curl \
-		p5-URI>=0:net/p5-URI \
-		p5-Net>=0:net/p5-Net
+		p5-URI>=0:net/p5-URI
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	gotmail

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 443772 2017-06-17 13:44:51Z rakuco $
+# $FreeBSD: head/graphics/Makefile 444851 2017-07-01 21:58:04Z rene $
 #
 
     COMMENT = Graphics tools and libraries
@@ -249,7 +249,6 @@
     SUBDIR += gimp-app
     SUBDIR += gimp-beautify-plugin
     SUBDIR += gimp-data-extras
-    SUBDIR += gimp-elsamuko-script
     SUBDIR += gimp-ez-perspective-plugin
     SUBDIR += gimp-focusblur-plugin
     SUBDIR += gimp-gmic-plugin

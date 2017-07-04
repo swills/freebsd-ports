@@ -1,12 +1,12 @@
 # Created by: Jeremy Chadwick <freebsd@jdc.parodius.com>
-# $FreeBSD: head/sysutils/mcelog/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/sysutils/mcelog/Makefile 444980 2017-07-03 19:06:08Z ultima $
 
 PORTNAME=	mcelog
 PORTVERSION=	153
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
-MAINTAINER=	ultima1252@gmail.com
+MAINTAINER=	ultima@FreeBSD.org
 COMMENT=	Collects and decodes Machine Check Exception data
 
 LICENSE=	GPLv2

@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/p5-PDF-API2/Makefile 432581 2017-01-27 20:53:06Z sunpoet $
+# $FreeBSD: head/textproc/p5-PDF-API2/Makefile 444925 2017-07-03 08:21:12Z sunpoet $
 
 PORTNAME=	PDF-API2
-PORTVERSION=	2.031
+PORTVERSION=	2.032
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-Font-TTF>=0:x11-fonts/p5-Font-TTF
 RUN_DEPENDS:=	${BUILD_DEPENDS}
+TEST_DEPENDS=	p5-Test-Memory-Cycle>=0:devel/p5-Test-Memory-Cycle
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,11 +1,11 @@
-# $FreeBSD: head/www/libevhtp/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/www/libevhtp/Makefile 444980 2017-07-03 19:06:08Z ultima $
 
 PORTNAME=	libevhtp
 PORTVERSION=	1.2.11
 PORTREVISION=	4
 CATEGORIES=	www
 
-MAINTAINER=	ultima1252@gmail.com
+MAINTAINER=	ultima@FreeBSD.org
 COMMENT=	Flexible replacement for libevent httpd API
 
 LICENSE=	BSD3CLAUSE

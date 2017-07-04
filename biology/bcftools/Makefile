@@ -1,9 +1,9 @@
 # Created by: Reed A. Cartwright <cartwright@asu.edu>
-# $FreeBSD: head/biology/bcftools/Makefile 439928 2017-05-02 05:26:40Z tcberner $
+# $FreeBSD: head/biology/bcftools/Makefile 444988 2017-07-03 20:38:11Z tcberner $
 
 PORTNAME=	bcftools
 PORTVERSION=	1.3.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	biology
 
 MAINTAINER=	cartwright@asu.edu

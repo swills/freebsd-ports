@@ -1,9 +1,8 @@
 # Created by: Brian Handy <handy@physics.montana.edu>
-# $FreeBSD: head/sysutils/xosview/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/sysutils/xosview/Makefile 444892 2017-07-02 15:44:01Z riggs $
 
 PORTNAME=	xosview
-PORTVERSION=	1.17
-PORTREVISION=	1
+PORTVERSION=	1.19
 CATEGORIES=	sysutils
 
 MAINTAINER=	otacilio.neto@bsd.com.br

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-http_accept_language/Makefile 438211 2017-04-10 21:09:30Z jrm $
+# $FreeBSD: head/devel/rubygem-http_accept_language/Makefile 444982 2017-07-03 19:19:00Z jrm $
 
 PORTNAME=	http_accept_language
-PORTVERSION=	2.1.0
+PORTVERSION=	2.1.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

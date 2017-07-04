@@ -1,5 +1,5 @@
 # Created by: Yinghong.Liu <liu_yinghong@yahoo.com.cn>
-# $FreeBSD: head/devel/qdevelop/Makefile 424339 2016-10-20 15:58:12Z rakuco $
+# $FreeBSD: head/devel/qdevelop/Makefile 444945 2017-07-03 12:58:53Z amdmi3 $
 
 PORTNAME=	qdevelop
 PORTVERSION=	0.28
@@ -11,9 +11,12 @@ DISTNAME=	${PORTNAME}-v${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Development environment entirely dedicated to Qt 4
 
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/copying
+
 RUN_DEPENDS=	exctags:devel/ctags
 
-USE_QT4=	gui sql network xml designer sql-sqlite3_run \
+USE_QT4=	corelib gui sql network xml designer sql-sqlite3_run \
 		moc_build uic_build rcc_build
 USES=		qmake
 
@@ -42,9 +45,9 @@ post-patch:
 		-e "s|\"/usr/bin/make\"|\"${LOCALBASE}/bin/gmake\"|g" \
 		-e "s|\"/usr/bin/ctags\"|\"${LOCALBASE}/bin/exctags\"|g" \
 		${WRKSRC}/src/toolscontrolimpl.cpp
-	${REINPLACE_CMD} -e "/target.path/s|/usr/bin/|${PREFIX}/bin|g" \
+	@${REINPLACE_CMD} -e "/target.path/s|/usr/bin/|${PREFIX}/bin|g" \
 		${WRKSRC}/QDevelop.pro
-	${REINPLACE_CMD} -e "s,lib/qdevelop/translations,${DATADIR_REL}/translations,g" \
+	@${REINPLACE_CMD} -e "s,lib/qdevelop/translations,${DATADIR_REL}/translations,g" \
 		${WRKSRC}/src/main.cpp \
 		${WRKSRC}/plugins/tools-regexp-planner/replugin.cpp \
 		${WRKSRC}/plugins/formatting-astyle/astyleplugin.cpp

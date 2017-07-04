@@ -1,8 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc7-devel/Makefile 444424 2017-06-26 22:50:12Z linimon $
+# $FreeBSD: head/lang/gcc7-devel/Makefile 444861 2017-07-02 02:48:12Z gerald $
 
 PORTNAME=	gcc
-PORTVERSION=	7.1.1.s20170615
+PORTVERSION=	7.1.1.s20170629
 CATEGORIES=	lang
 MASTER_SITES=	GCC/snapshots/${DIST_VERSION}
 PKGNAMESUFFIX=	${SUFFIX}-devel
@@ -139,6 +139,7 @@ full-regression-test: build
 
 post-stage:
 	${RM} ${STAGEDIR}${PREFIX}/man/man7/*
+	${RM} -r ${STAGEDIR}${TARGLIB}/gcc/*/${GCC_VERSION}/include-fixed/
 	# Add target libraries and include files to packaging list.
 	${RM} ${WRKDIR}/PLIST.lib
 .for d in ${TARGLIB:S/^${PREFIX}\///} ${LIBEXEC:S/^${PREFIX}\///}

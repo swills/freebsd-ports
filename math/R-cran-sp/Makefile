@@ -1,9 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/R-cran-sp/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/math/R-cran-sp/Makefile 444873 2017-07-02 08:14:53Z wen $
 
 PORTNAME=	sp
-PORTREVISION=	1
-DISTVERSION=	1.2-4
+DISTVERSION=	1.2-5
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

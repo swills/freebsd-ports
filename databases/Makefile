@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 444327 2017-06-25 23:16:44Z amdmi3 $
+# $FreeBSD: head/databases/Makefile 444782 2017-06-30 21:08:46Z swills $
 #
 
     COMMENT = Databases and related software
@@ -994,6 +994,7 @@
     SUBDIR += tdb
     SUBDIR += tdbc
     SUBDIR += tile38
+    SUBDIR += timescaledb
     SUBDIR += tinycdb
     SUBDIR += tokyocabinet
     SUBDIR += tokyotyrant

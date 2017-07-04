@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/mcollective-puppet-common/Makefile 432347 2017-01-24 15:14:46Z romain $
+# $FreeBSD: head/sysutils/mcollective-puppet-common/Makefile 444713 2017-06-30 12:20:20Z romain $
 
 PORTNAME?=	mcollective-puppet-common
-PORTVERSION=	1.12.0
+PORTVERSION=	1.13.1
 CATEGORIES=	sysutils
 
 MAINTAINER=	romain@FreeBSD.org

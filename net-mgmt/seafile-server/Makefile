@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/seafile-server/Makefile 439615 2017-04-28 15:09:08Z lifanov $
+# $FreeBSD: head/net-mgmt/seafile-server/Makefile 444980 2017-07-03 19:06:08Z ultima $
 
 PORTNAME=	seafile-server
 PORTVERSION=	${SEAFILE_VER}
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	-server
 CATEGORIES=	net-mgmt
 
-MAINTAINER=	ultima1252@gmail.com
+MAINTAINER=	ultima@FreeBSD.org
 COMMENT=	Open Source Cloud Storage (Server)
 
 LICENSE=	GPLv3

@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/gnuradio/Makefile 440086 2017-05-04 05:22:01Z tcberner $
+# $FreeBSD: head/comms/gnuradio/Makefile 444988 2017-07-03 20:38:11Z tcberner $
 
 PORTNAME=	gnuradio
 PORTVERSION=	3.7.10.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	comms astro hamradio
 MASTER_SITES=	http://gnuradio.org/releases/gnuradio/ \
 		LOCAL/db

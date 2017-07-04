@@ -1,5 +1,5 @@
 # Created by: miwi
-# $FreeBSD: head/german/wordpress/Makefile 443430 2017-06-12 10:28:51Z joneum $
+# $FreeBSD: head/german/wordpress/Makefile 444780 2017-06-30 20:25:22Z antoine $
 
 PORTNAME=	wordpress
 PORTVERSION=	4.8
@@ -14,6 +14,8 @@ COMMENT=	State-of-the-art semantic personal publishing platform
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/license.txt
+
+BROKEN=		size and checksum mismatch
 
 CONFLICTS_INSTALL=	wordpress-[0-9].* ja-wordpress-[0-9].* ru-wordpress-[0-9].*
 

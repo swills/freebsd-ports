@@ -1,9 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-GSL/Makefile 439928 2017-05-02 05:26:40Z tcberner $
+# $FreeBSD: head/math/p5-Math-GSL/Makefile 444988 2017-07-03 20:38:11Z tcberner $
 
 PORTNAME=	Math-GSL
 PORTVERSION=	0.39
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

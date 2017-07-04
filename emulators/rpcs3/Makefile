@@ -1,9 +1,9 @@
-# $FreeBSD: head/emulators/rpcs3/Makefile 444540 2017-06-28 05:19:21Z jbeich $
+# $FreeBSD: head/emulators/rpcs3/Makefile 444979 2017-07-03 19:03:36Z jbeich $
 
 PORTNAME=	rpcs3
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.0.2-368
-DISTVERSIONSUFFIX=	-g89f676de
+DISTVERSION=	0.0.2-395
+DISTVERSIONSUFFIX=	-g37898d38
 CATEGORIES=	emulators
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -55,7 +55,6 @@ LLVM_LIB_DEPENDS=	libLLVM-4.0.so:devel/llvm40
 LLVM_CMAKE_BOOL_OFF=	WITHOUT_LLVM
 
 post-patch:
-	@${REINPLACE_CMD} -e 's/5\.8/5\.7/' ${WRKSRC}/${PORTNAME}/CMakeLists.txt
 	@${REINPLACE_CMD} -e 's/"unknown"/"${GH_TAGNAME}"/' \
 		${WRKSRC}/${PORTNAME}/git-version.cmake
 

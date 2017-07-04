@@ -1,8 +1,8 @@
 # Created by: Daniel Roethlisberger <daniel@roe.ch>
-# $FreeBSD: head/sysutils/pv/Makefile 438089 2017-04-09 09:04:22Z sunpoet $
+# $FreeBSD: head/sysutils/pv/Makefile 444931 2017-07-03 10:16:33Z martymac $
 
 PORTNAME=	pv
-PORTVERSION=	1.6.0
+PORTVERSION=	1.6.6
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.ivarch.com/programs/sources/
 

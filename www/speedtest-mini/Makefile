@@ -1,5 +1,5 @@
 # Created by: Anton Grytsuk <gx@bsdplanet.ru>
-# $FreeBSD: head/www/speedtest-mini/Makefile 438685 2017-04-17 10:52:34Z riggs $
+# $FreeBSD: head/www/speedtest-mini/Makefile 444910 2017-07-03 05:36:17Z koobs $
 
 PORTNAME=	speedtest-mini
 PORTVERSION=	2.1.8.20170224
@@ -10,6 +10,9 @@ DISTNAME=	mini
 
 MAINTAINER=	meta+ports@vmeta.jp
 COMMENT=	Mini bandwidth speed test on your own server
+
+DEPRECATED=	Discontinued upstream (on June 30, 2017)
+EXPIRATION_DATE=2017-08-30
 
 NO_BUILD=	yes
 PLIST_SUB=	WWWOWN="${WWWOWN}" WWWGRP="${WWWGRP}"

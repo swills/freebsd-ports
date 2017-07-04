@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: head/Mk/bsd.sites.mk 443400 2017-06-11 17:25:12Z rakuco $
+# $FreeBSD: head/Mk/bsd.sites.mk 444758 2017-06-30 14:55:05Z dbaio $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -101,12 +101,9 @@ MASTER_SITE_BERLIOS+= \
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_CHEESESHOP)
-# PEP-449 Compatible MASTER_SITES
-# Removal of the PyPI Mirror Auto Discovery and Naming Scheme
-# Reference: https://www.python.org/dev/peps/pep-0449/
 MASTER_SITE_CHEESESHOP+= \
-	https://pypi.python.org/packages/%SUBDIR%/ \
-	https://files.pythonhosted.org/packages/%SUBDIR%/
+	https://files.pythonhosted.org/packages/%SUBDIR%/ \
+	https://pypi.python.org/packages/%SUBDIR%/
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_COMP_SOURCES)

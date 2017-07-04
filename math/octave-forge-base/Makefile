@@ -1,8 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-base/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/octave-forge-base/Makefile 444743 2017-06-30 13:44:28Z sunpoet $
 
 PORTNAME=	octave-forge-base
 PORTVERSION=	1.4
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	#none
 DISTFILES=	#none
@@ -15,8 +16,6 @@ LICENSE=	BSD2CLAUSE
 
 RUN_DEPENDS=	octave:math/octave \
 		gmake:devel/gmake \
-		p5-Archive-Tar>=0:archivers/p5-Archive-Tar \
-		p5-IO-Zlib>=0:archivers/p5-IO-Zlib \
 		p5-File-Remove>=0:devel/p5-File-Remove
 
 USES=		perl5

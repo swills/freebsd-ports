@@ -1,5 +1,5 @@
 # Created by: Daniel O'Connor
-# $FreeBSD: head/audio/teamspeak3-server/Makefile 431501 2017-01-14 23:31:30Z lifanov $
+# $FreeBSD: head/audio/teamspeak3-server/Makefile 444980 2017-07-03 19:06:08Z ultima $
 
 PORTNAME=	teamspeak3-server
 PORTVERSION=	3.0.13.6
@@ -9,7 +9,7 @@ MASTER_SITES=	http://dl.4players.de/ts/releases/${PORTVERSION}/ \
 		http://teamspeak.gameserver.gamed.de/ts3/releases/${PORTVERSION}/
 DISTNAME=	${PORTNAME}_freebsd_${TEAMSPEAK_ARCH}-${PORTVERSION}
 
-MAINTAINER=	ultima1252@gmail.com
+MAINTAINER=	ultima@FreeBSD.org
 COMMENT=	Server side of the TeamSpeak group voice chat system
 
 LICENSE=	teamspeak
