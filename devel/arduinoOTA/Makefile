@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/arduinoOTA/Makefile 436513 2017-03-19 22:07:49Z bsam $
+# $FreeBSD: head/devel/arduinoOTA/Makefile 445117 2017-07-06 01:39:08Z ultima $
 
 PORTNAME=	arduinoOTA
 PORTVERSION=	1.2.0
 CATEGORIES=	devel
 
-MAINTAINER=	bsdports@kyle-evans.net
+MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	OTA upload tool for Arduino/ESP8266
 
 LICENSE=	GPLv3

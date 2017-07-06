@@ -1,12 +1,12 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/net/freerdp/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/net/freerdp/Makefile 445117 2017-07-06 01:39:08Z ultima $
 
 PORTNAME=	freerdp
 PORTVERSION=	2.0.0.g2016.11.24
 PORTREVISION=	4
 CATEGORIES=	net comms ipv6
 
-MAINTAINER=	bsdports@kyle-evans.net
+MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Free implementation of Remote Desktop Protocol
 
 LICENSE=	APACHE20

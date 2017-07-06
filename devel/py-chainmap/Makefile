@@ -1,5 +1,5 @@
-# Created by: Kyle Evans <bsdports@kyle-evans.net>
-# $FreeBSD: head/devel/py-chainmap/Makefile 424219 2016-10-18 21:19:02Z feld $
+# Created by: Kyle Evans <kevans@FreeBSD.org>
+# $FreeBSD: head/devel/py-chainmap/Makefile 445117 2017-07-06 01:39:08Z ultima $
 
 PORTNAME=	chainmap
 PORTVERSION=	1.0.2
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	bsdports@kyle-evans.net
+MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Backport/clone of chainmap for py26, py32, and pypy3
 
 LICENSE=	PSFL

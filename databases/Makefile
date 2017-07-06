@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 444782 2017-06-30 21:08:46Z swills $
+# $FreeBSD: head/databases/Makefile 445078 2017-07-05 13:08:12Z tz $
 #
 
     COMMENT = Databases and related software
@@ -579,6 +579,7 @@
     SUBDIR += pgbouncer
     SUBDIR += pgdbf
     SUBDIR += pgespresso
+    SUBDIR += pgFormatter
     SUBDIR += pgfouine
     SUBDIR += pgloader
     SUBDIR += pglogical
@@ -649,6 +650,7 @@
     SUBDIR += phpmyadmin
     SUBDIR += phppgadmin
     SUBDIR += pldebugger
+    SUBDIR += plpgsql_check
     SUBDIR += postgis-jdbc
     SUBDIR += postgis20
     SUBDIR += postgis21

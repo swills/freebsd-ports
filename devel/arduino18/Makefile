@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/arduino18/Makefile 438993 2017-04-20 19:58:08Z bsam $
+# $FreeBSD: head/devel/arduino18/Makefile 445117 2017-07-06 01:39:08Z ultima $
 
 PORTNAME=	arduino
 PORTVERSION=	1.8.2
@@ -7,7 +7,7 @@ CATEGORIES=	devel java
 PKGNAMESUFFIX=	18
 DIST_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	bsdports@kyle-evans.net
+MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Open-source electronics prototyping platform
 
 LICENSE=	GPLv2

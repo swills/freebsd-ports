@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 444763 2017-06-30 15:15:59Z tobik $
+# $FreeBSD: head/security/Makefile 445088 2017-07-05 18:02:02Z pi $
 #
 
     COMMENT = Security tools
@@ -201,6 +201,7 @@
     SUBDIR += gwee
     SUBDIR += hackbot
     SUBDIR += hamachi
+    SUBDIR += hardening-check
     SUBDIR += hashcat
     SUBDIR += hashcat-legacy
     SUBDIR += heimdal

@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-redmine_acts_as_taggable_on/Makefile 418132 2016-07-06 14:04:12Z feld $
+# $FreeBSD: head/www/rubygem-redmine_acts_as_taggable_on/Makefile 445022 2017-07-04 15:28:27Z sunpoet $
 
 PORTNAME=	redmine_acts_as_taggable_on
 PORTVERSION=	1.1.0
@@ -10,8 +10,9 @@ MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Allows multiple Redmine plugins to use tags safely
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	rubygem-acts-as-taggable-on3>0:www/rubygem-acts-as-taggable-on3
+RUN_DEPENDS=	rubygem-acts-as-taggable-on3>=3.4:www/rubygem-acts-as-taggable-on3
 
 NO_ARCH=	yes
 USE_RUBY=	yes

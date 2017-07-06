@@ -1,5 +1,5 @@
-# Created by: Kyle Evans <bsdports@kyle-evans.net>
-# $FreeBSD: head/devel/py-sarge/Makefile 424216 2016-10-18 21:12:44Z feld $
+# Created by: Kyle Evans <kevans@FreeBSD.org>
+# $FreeBSD: head/devel/py-sarge/Makefile 445117 2017-07-06 01:39:08Z ultima $
 
 PORTNAME=	sarge
 PORTVERSION=	0.1.4
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	bsdports@kyle-evans.net
+MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Wrapper for subprocess which provides command pipeline functionality
 
 LICENSE=	BSD2CLAUSE

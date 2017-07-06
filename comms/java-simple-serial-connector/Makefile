@@ -1,11 +1,11 @@
-# $FreeBSD: head/comms/java-simple-serial-connector/Makefile 428322 2016-12-10 20:18:38Z bsam $
+# $FreeBSD: head/comms/java-simple-serial-connector/Makefile 445117 2017-07-06 01:39:08Z ultima $
 
 PORTNAME=	java-simple-serial-connector
 PORTVERSION=	2.8.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	comms java
 
-MAINTAINER=	bsdports@kyle-evans.net
+MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Library for working with serial ports from Java
 
 LICENSE=	LGPL3

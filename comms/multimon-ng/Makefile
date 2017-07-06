@@ -1,10 +1,10 @@
-# $FreeBSD: head/comms/multimon-ng/Makefile 436246 2017-03-15 14:22:46Z danfe $
+# $FreeBSD: head/comms/multimon-ng/Makefile 445117 2017-07-06 01:39:08Z ultima $
 
 PORTNAME=	multimon-ng
 PORTVERSION=	1.1.0
 CATEGORIES=	comms hamradio
 
-MAINTAINER=	bsdports@kyle-evans.net
+MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Digital transmission decoder
 
 LICENSE=	GPLv2

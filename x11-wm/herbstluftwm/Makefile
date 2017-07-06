@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-wm/herbstluftwm/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/x11-wm/herbstluftwm/Makefile 445039 2017-07-04 19:41:21Z bhughes $
 
 PORTNAME=	herbstluftwm
 PORTVERSION=	0.7.0
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://herbstluftwm.org/tarballs/
 
-MAINTAINER=	udvzsolt@gmail.com
+MAINTAINER=	uzsolt@uzsolt.hu
 COMMENT=	Manual tiling window manager for X11
 
 LICENSE=	BSD2CLAUSE

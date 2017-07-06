@@ -1,5 +1,5 @@
 # Created by: Petteri Valkonen <petteri.valkonen@iki.fi>
-# $FreeBSD: head/textproc/ripgrep/Makefile 444035 2017-06-21 16:23:52Z tobik $
+# $FreeBSD: head/textproc/ripgrep/Makefile 445082 2017-07-05 14:58:11Z tobik $
 
 # vim: ts=8 noet
 
@@ -11,11 +11,9 @@ MAINTAINER=	petteri.valkonen@iki.fi
 COMMENT=	Command line search tool
 
 LICENSE=	MIT UNLICENSE
-LICENSE_FILE=	${WRKSRC}/COPYING
 LICENSE_COMB=	dual
-LICENSE_NAME_UNLICENSE=	The Unlicense
+LICENSE_FILE=	${WRKSRC}/COPYING
 LICENSE_FILE_UNLICENSE=	${WRKSRC}/UNLICENSE
-LICENSE_PERMS_UNLICENSE=dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 USES=		cargo
 USE_GITHUB=	yes

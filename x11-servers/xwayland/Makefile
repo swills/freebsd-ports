@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-servers/xwayland/Makefile 433900 2017-02-11 18:31:47Z bapt $
+# $FreeBSD: head/x11-servers/xwayland/Makefile 445075 2017-07-05 12:41:43Z jbeich $
 
 PORTNAME=	xwayland
 PORTVERSION=	1.19.1
@@ -7,7 +7,7 @@ COMMENT=	X Clients under Wayland
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	/usr/local/libdata/pkgconfig/wayland-protocols.pc:graphics/wayland-protocols
+BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/wayland-protocols.pc:graphics/wayland-protocols
 LIB_DEPENDS=	libwayland-client.so:graphics/wayland \
 		libinput.so:x11/libinput
 

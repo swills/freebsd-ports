@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/arduino-builder/Makefile 438909 2017-04-19 20:05:40Z bsam $
+# $FreeBSD: head/devel/arduino-builder/Makefile 445117 2017-07-06 01:39:08Z ultima $
 
 PORTNAME=	arduino-builder
 PORTVERSION=	1.3.25
 CATEGORIES=	devel
 
-MAINTAINER=	bsdports@kyle-evans.net
+MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Command line tool for building Arduino sketches
 
 LICENSE=	GPLv2

@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-rails-observers/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-rails-observers/Makefile 445034 2017-07-04 18:37:49Z sunpoet $
 
 PORTNAME=	rails-observers
-PORTVERSION=	0.1.2
+PORTVERSION=	0.1.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

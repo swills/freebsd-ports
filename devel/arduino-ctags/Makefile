@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/arduino-ctags/Makefile 438905 2017-04-19 19:30:05Z bsam $
+# $FreeBSD: head/devel/arduino-ctags/Makefile 445117 2017-07-06 01:39:08Z ultima $
 
 PORTNAME=	arduino-ctags
 PORTVERSION=	5.8
@@ -6,7 +6,7 @@ DISTVERSIONSUFFIX=	-arduino11
 PORTREVISION=	1
 CATEGORIES=	devel
 
-MAINTAINER=	bsdports@kyle-evans.net
+MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Feature-filled tagfile generator used by Arduino 1.6
 
 LICENSE=	GPLv2

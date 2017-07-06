@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/science/R-cran-Epi/Makefile 444914 2017-07-03 06:01:18Z tota $
+# $FreeBSD: head/science/R-cran-Epi/Makefile 445126 2017-07-06 03:09:35Z tota $
 
 PORTNAME=	Epi
 PORTVERSION=	2.16
+PORTREVISION=	1
 CATEGORIES=	science
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
@@ -15,7 +16,8 @@ CRAN_DEPENDS=	R-cran-cmprsk>0:science/R-cran-cmprsk \
 		R-cran-etm>0:science/R-cran-etm \
 		R-cran-plyr>0:devel/R-cran-plyr \
 		R-cran-numDeriv>0:math/R-cran-numDeriv \
-		R-cran-data.table>0:devel/R-cran-data.table
+		R-cran-data.table>0:devel/R-cran-data.table \
+		R-cran-zoo>0:math/R-cran-zoo
 BUILD_DEPENDS=	${CRAN_DEPENDS}
 RUN_DEPENDS=	${CRAN_DEPENDS}
 

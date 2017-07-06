@@ -1,12 +1,12 @@
 # Created by: Morten Slot Kristensen
-# $FreeBSD: head/x11/dzen2/Makefile 416242 2016-06-01 13:15:36Z mat $
+# $FreeBSD: head/x11/dzen2/Makefile 445039 2017-07-04 19:41:21Z bhughes $
 
 PORTNAME=	dzen
 PORTVERSION=	0.9.5
 CATEGORIES=	x11
 PKGNAMESUFFIX=	2
 
-MAINTAINER=	udvzsolt@gmail.com
+MAINTAINER=	uzsolt@uzsolt.hu
 COMMENT=	General purpose messaging, notification and menuing program for X11
 
 LICENSE=	MIT

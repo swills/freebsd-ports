@@ -1,9 +1,9 @@
 # Created by: Dominic Marks <d.marks@student.umist.ac.uk>
-# $FreeBSD: head/devel/ccache/Makefile 440469 2017-05-09 03:52:02Z bdrewery $
+# $FreeBSD: head/devel/ccache/Makefile 445062 2017-07-05 10:23:00Z amdmi3 $
 
 PORTNAME=	ccache
 PORTVERSION=	3.3.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	http://www.samba.org/ftp/ccache/ \
 		LOCAL/bdrewery
@@ -11,7 +11,8 @@ MASTER_SITES=	http://www.samba.org/ftp/ccache/ \
 MAINTAINER=	bdrewery@FreeBSD.org
 COMMENT=	Tool to minimize the compile time of C/C++ programs
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/GPL-3.0.txt
 
 CONFLICTS_INSTALL=	ccache-static-[0-9]* ccache-memcached-[0-9]* ccache-memcached-static-[0-9]*
 
@@ -75,7 +76,7 @@ PLIST_SUB+=	CCLINKDIR="${CCLINKDIR}"
 CCACHE_COMPILERS+=	icc icpc
 .endif
 
-GNU_COMPILERS+=		34 42 43 44 45 46 47 48 49 5 6 7
+GNU_COMPILERS+=		34 42 43 44 45 46 47 48 49 5 6 7 8
 CCACHE_COMPILERS+=	cc c++ CC gcc g++ ${GNU_COMPILERS:S|^|gcc|} ${GNU_COMPILERS:S|^|g++|}
 
 .if ${PORT_OPTIONS:MCLANGLINK}

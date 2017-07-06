@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/mariadb101-server/Makefile 444882 2017-07-02 13:32:15Z brnrd $
+# $FreeBSD: head/databases/mariadb101-server/Makefile 445089 2017-07-05 18:14:56Z brnrd $
 
 PORTNAME?=	mariadb
-PORTVERSION=	10.1.24
+PORTVERSION=	10.1.25
 PORTREVISION?=	0
 CATEGORIES=	databases ipv6
 MASTER_SITES=	http://ftp.osuosl.org/pub/${SITESDIR}/ \
@@ -153,7 +153,7 @@ TOKUDB_PORTDOCS=	README.md
 TOKUDB_VARS=		LICENSE+=PerconaFT LICENSE_COMB=multi
 ZMQ_LIB_DEPENDS=	libzmq.so:net/libzmq4
 
-NOT_FOR_ARCHS=		i386
+#NOT_FOR_ARCHS=		i386
 NOT_FOR_ARCHS_REASON=	currently does not compile on i386, see \
 			https://mariadb.atlassian.net/browse/MDEV-9627
 

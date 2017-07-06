@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-rufus-scheduler/Makefile 436788 2017-03-23 23:24:46Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rufus-scheduler/Makefile 445006 2017-07-04 08:08:28Z sunpoet $
 
 PORTNAME=	rufus-scheduler
-PORTVERSION=	3.4.0
+PORTVERSION=	3.4.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

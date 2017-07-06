@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/bossa/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/devel/bossa/Makefile 445117 2017-07-06 01:39:08Z ultima $
 
 PORTNAME=	bossa
 PORTVERSION=	1.7.0
 PORTREVISION=	3
 CATEGORIES=	devel
 
-MAINTAINER=	bsdports@kyle-evans.net
+MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Flash programmer for Atmel SAM microcontrollers
 
 LICENSE=	BSD3CLAUSE

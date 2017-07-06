@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/asterisk11/Makefile 444433 2017-06-26 23:44:13Z linimon $
+# $FreeBSD: head/net/asterisk11/Makefile 445081 2017-07-05 14:39:04Z madpilot $
 
 PORTNAME=	asterisk
 PORTVERSION=	11.25.1
@@ -16,6 +16,9 @@ COMMENT=	Open Source PBX and telephony toolkit
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	Asterisk 11.x will reach EOL on 2017-10-25. Please migrate to net/asterisk13
+EXPIRATION_DATE=2017-10-25
 
 EXTRACT_ONLY:=	${DISTNAME}${EXTRACT_SUFX}
 

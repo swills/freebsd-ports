@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/libxshmfence/Makefile 435962 2017-03-11 21:24:29Z rezny $
+# $FreeBSD: head/x11/libxshmfence/Makefile 445016 2017-07-04 13:47:46Z jbeich $
 
 PORTNAME=	libxshmfence
 PORTVERSION=	1.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org

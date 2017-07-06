@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/libmatemixer/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/libmatemixer/Makefile 445014 2017-07-04 11:44:30Z kwm $
 
 PORTNAME=	libmatemixer
-PORTVERSION=	1.12.1
+PORTVERSION=	1.18.0
 CATEGORIES=	audio mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

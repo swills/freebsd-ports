@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/liborigin/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/math/liborigin/Makefile 445070 2017-07-05 10:32:13Z amdmi3 $
 
 PORTNAME=	liborigin
 PORTVERSION=	2.0.0
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/2.0
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Library and utility for reading OriginLab project files
+
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING # GPLv3
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/algorithm/string.hpp:devel/boost-libs
 
@@ -24,6 +27,6 @@ OPTIONS_DEFINE=	DOXYGEN
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 
 post-patch-DOXYGEN-off:
-	${REINPLACE_CMD} -e '/find_package(Doxygen)/d' ${WRKSRC}/CMakeLists.txt
+	@${REINPLACE_CMD} -e '/find_package(Doxygen)/d' ${WRKSRC}/CMakeLists.txt
 
 .include <bsd.port.mk>

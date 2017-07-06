@@ -1,10 +1,12 @@
 # Created by: Garrett Rooney <rooneg@electricjellyfish.net>
-# $FreeBSD: head/textproc/diffutils/Makefile 421960 2016-09-12 20:34:01Z johans $
+# $FreeBSD: head/textproc/diffutils/Makefile 445098 2017-07-05 21:07:39Z johans $
 
 PORTNAME=	diffutils
-PORTVERSION=	3.5
+PORTVERSION=	3.6
 CATEGORIES=	textproc
 MASTER_SITES=	GNU
+
+LICENSE=	GPLv3+
 
 MAINTAINER=	johans@FreeBSD.org
 COMMENT=	The GNU diff utilities

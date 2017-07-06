@@ -1,8 +1,8 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/devel/p5-Log-Report/Makefile 444588 2017-06-28 15:43:02Z sunpoet $
+# $FreeBSD: head/devel/p5-Log-Report/Makefile 445107 2017-07-06 00:02:56Z sunpoet $
 
 PORTNAME=	Log-Report
-PORTVERSION=	1.20
+PORTVERSION=	1.21
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

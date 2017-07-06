@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Devel-PartialDump/Makefile 442344 2017-06-01 23:51:17Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-PartialDump/Makefile 445105 2017-07-06 00:02:44Z sunpoet $
 
 PORTNAME=	Devel-PartialDump
-PORTVERSION=	0.18
+PORTVERSION=	0.19
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	p5-Class-Tiny>=0:devel/p5-Class-Tiny \
 		p5-Sub-Exporter>=0:devel/p5-Sub-Exporter \
 		p5-namespace-clean>=0.20:devel/p5-namespace-clean
 RUN_DEPENDS:=	${BUILD_DEPENDS}
-TEST_DEPENDS=	p5-Test-Warn>=0:devel/p5-Test-Warn
+TEST_DEPENDS=	p5-Test-Warnings>=0.009:devel/p5-Test-Warnings
 
 NO_ARCH=	yes
 USES=		perl5

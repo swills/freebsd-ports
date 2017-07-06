@@ -1,8 +1,8 @@
 # Created by: ports@c0decafe.net
-# $FreeBSD: head/devel/p5-Debug-Client/Makefile 443954 2017-06-20 13:28:13Z sunpoet $
+# $FreeBSD: head/devel/p5-Debug-Client/Makefile 445102 2017-07-06 00:02:26Z sunpoet $
 
 PORTNAME=	Debug-Client
-PORTVERSION=	0.30
+PORTVERSION=	0.31
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

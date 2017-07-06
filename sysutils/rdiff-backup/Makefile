@@ -1,5 +1,5 @@
-# Created by: Gerhard Häring <gh@ghaering.de>
-# $FreeBSD: head/sysutils/rdiff-backup/Makefile 440218 2017-05-06 05:48:14Z miwi $
+# Created by: Gerhard HÃ¤ring <gh@ghaering.de>
+# $FreeBSD: head/sysutils/rdiff-backup/Makefile 445039 2017-07-04 19:41:21Z bhughes $
 
 PORTNAME=	rdiff-backup
 PORTVERSION=	1.2.8
@@ -9,7 +9,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	SAVANNAH \
 		LOCAL/vd/${PORTNAME}${PKGNAMESUFFIX}
 
-MAINTAINER=	udvzsolt@gmail.com
+MAINTAINER=	uzsolt@uzsolt.hu
 COMMENT=	Local/remote mirroring+incremental backup
 
 LICENSE=	GPLv2

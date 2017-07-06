@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@ccca.nctu.edu.tw>
-# $FreeBSD: head/benchmarks/sysbench/Makefile 441740 2017-05-25 21:13:29Z sunpoet $
+# $FreeBSD: head/benchmarks/sysbench/Makefile 445101 2017-07-06 00:02:21Z sunpoet $
 
 PORTNAME=	sysbench
-PORTVERSION=	1.0.7
+PORTVERSION=	1.0.8
 CATEGORIES=	benchmarks databases
 
 MAINTAINER=	sunpoet@FreeBSD.org

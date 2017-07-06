@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-themes/mate-icon-theme/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-themes/mate-icon-theme/Makefile 445014 2017-07-04 11:44:30Z kwm $
 
 PORTNAME=	mate-icon-theme
-PORTVERSION=	1.12.0
+PORTVERSION=	1.18.2
 CATEGORIES=	x11-themes mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -10,18 +10,20 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Collection of icons for the MATE desktop
 
+LICENSE=	LGPL3 CC-BY-SA-3.0
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 BUILD_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:misc/hicolor-icon-theme \
 		icon-naming-utils>=0.8.7:x11-themes/icon-naming-utils
 RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:misc/hicolor-icon-theme
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake pathfix pkgconfig tar:xz
-USE_GNOME=	intlhack
+USES=		gettext-tools gmake pkgconfig tar:xz
+USE_GNOME=	intltool
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 pre-install:
 	@${REINPLACE_CMD} -e 's|install: install-data|install:|g' \

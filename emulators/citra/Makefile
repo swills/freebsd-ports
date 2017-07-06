@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/citra/Makefile 444778 2017-06-30 19:43:30Z jbeich $
+# $FreeBSD: head/emulators/citra/Makefile 445082 2017-07-05 14:58:11Z tobik $
 
 PORTNAME=	citra
 PORTVERSION=	s20170629
@@ -15,10 +15,6 @@ LICENSE_FILE_BSD3CLAUSE=${WRKSRC}/externals/inih/inih/LICENSE.txt
 LICENSE_FILE_BSL=	${WRKSRC}/externals/catch/LICENSE.txt
 LICENSE_FILE_GPLv2+ =	${WRKSRC}/license.txt
 LICENSE_FILE_LGPL21+ =	${_LICENSE_STORE}/LGPL21 # soundtouch
-LICENSE_NAME_UNLICENSE=	The Unlicense
-LICENSE_TEXT_UNLICENSE=	See http://unlicense.org/
-LICENSE_PERMS_UNLICENSE=	${_LICENSE_PERMS_PD}
-LICENSE_GROUPS_UNLICENSE=	${_LICENSE_GROUPS_PD}
 
 BUILD_DEPENDS=	boost-libs>=1.57:devel/boost-libs
 LIB_DEPENDS=	libpng.so:graphics/png

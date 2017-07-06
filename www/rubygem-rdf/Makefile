@@ -1,5 +1,5 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-rdf/Makefile 438727 2017-04-17 16:06:51Z sunpoet $
+# $FreeBSD: head/www/rubygem-rdf/Makefile 445082 2017-07-05 14:58:11Z tobik $
 
 PORTNAME=	rdf
 PORTVERSION=	2.2.6
@@ -10,9 +10,7 @@ MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Pure-Ruby library for working with RDF data
 
 LICENSE=	UNLICENSE
-LICENSE_NAME=	Unlicense
 LICENSE_FILE=	${WRKSRC}/UNLICENSE
-LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 RUN_DEPENDS=	rubygem-hamster>=3.0:devel/rubygem-hamster \
 		rubygem-link_header>=0.0.8:www/rubygem-link_header

@@ -1,11 +1,11 @@
-# $FreeBSD: head/comms/direwolf/Makefile 441536 2017-05-23 16:00:45Z linimon $
+# $FreeBSD: head/comms/direwolf/Makefile 445117 2017-07-06 01:39:08Z ultima $
 
 PORTNAME=	direwolf
 PORTVERSION=	1.4
 PORTREVISION=	1
 CATEGORIES=	comms hamradio
 
-MAINTAINER=	bsdports@kyle-evans.net
+MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Software "soundcard" modem/TNC and APRS encoder/decoder
 
 LICENSE=	GPLv2

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/databases/adminer/Makefile 416501 2016-06-07 08:45:32Z wen $
+# $FreeBSD: head/databases/adminer/Makefile 445039 2017-07-04 19:41:21Z bhughes $
 
 PORTNAME=	adminer
 PORTVERSION=	4.2.5
@@ -10,7 +10,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${PORTNAME}-${PORTVERSION}-mysql.php ${PORTNAME}-${PORTVERSION}-mysql-en.php
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	udvzsolt@gmail.com
+MAINTAINER=	uzsolt@uzsolt.hu
 COMMENT=	Full-featured database management tool written in PHP
 
 LICENSE=	APACHE20

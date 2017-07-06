@@ -1,5 +1,5 @@
 # Created by: Ruben <chromium@hybridsource.org>
-# $FreeBSD: head/lang/dmd2/Makefile 441875 2017-05-27 21:16:51Z linimon $
+# $FreeBSD: head/lang/dmd2/Makefile 445044 2017-07-05 02:45:25Z cy $
 
 PORTNAME=	dmd
 PORTVERSION=	2.073.2
@@ -20,6 +20,7 @@ BROKEN_armv6=		dumps core: Assertion failed: (!signbit(Port::ldbl_nan)), functio
 BROKEN_mips64=		fails to compile: cc1: unrecognized command line option -m32
 BROKEN_powerpc64=	fails to build: can't mangle function with unknown linkage (void*())
 BROKEN_sparc64=		fails to install: divide-by-zero error
+BROKEN_FreeBSD_12=	stack corruption in generated dmd tool caused by inode64 resulting in segfault
 NOT_FOR_ARCHS=		aarch64
 NOT_FOR_ARCHS_REASON=	no cpu specified, assuming X86
 
@@ -52,8 +53,7 @@ MODEL=		32
 .endif
 
 .if defined(WITH_DEBUG)
-BUILD=		debug
-MAKE_ARGS+=	DEBUG_FLAGS=-g\ -DDEBUG=1\ -DUNITTEST
+MAKE_ARGS+=	DEBUG_FLAGS=-g\ -DDEBUG=1\ -DUNITTEST BUILD=debug
 .endif
 
 MODULEDIR=	${PREFIX}/include/d/phobos2

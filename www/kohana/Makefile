@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/kohana/Makefile 427548 2016-12-02 09:21:58Z mat $
+# $FreeBSD: head/www/kohana/Makefile 445039 2017-07-04 19:41:21Z bhughes $
 
 PORTNAME=	kohana
 PORTVERSION=	3.3.6
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 MASTER_SITES=	https://github.com/${PORTNAME}/${PORTNAME}/releases/download/${DISTVERSIONPREFIX}${DISTVERSION}/
 
-MAINTAINER=	udvzsolt@gmail.com
+MAINTAINER=	uzsolt@uzsolt.hu
 COMMENT=	Elegant HMVC PHP5 framework
 
 LICENSE=	BSD3CLAUSE

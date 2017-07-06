@@ -1,5 +1,5 @@
 # Created by: Helmut Ritter <freebsd-ports@charlieroot.de>
-# $FreeBSD: head/www/typo3-8/Makefile 444160 2017-06-22 23:43:08Z sunpoet $
+# $FreeBSD: head/www/typo3-8/Makefile 445114 2017-07-06 00:05:42Z sunpoet $
 
 PORTNAME=	typo3
 PORTVERSION=	${PORT_V_MAJOR}.${PORT_V_MINOR}.${PORT_V_PATCH}
@@ -18,7 +18,7 @@ IGNORE_WITH_PHP=	56
 PORTSCOUT=	limit:^${PORT_V_MAJOR}\.${PORT_V_MINOR}\.
 
 USES=		cpe php:web shebangfix
-SHEBANG_FILES=	vendor/doctrine/instantiator/.travis.install.sh
+SHEBANG_GLOB=	*.sh *.php
 NO_BUILD=	yes
 NO_ARCH=	yes
 USE_PHP=	ctype fileinfo filter hash json mysqli openssl pcre session soap xml zip simplexml
@@ -26,7 +26,7 @@ WRKSRC=		${WRKDIR}/${TYPO3SRC}
 
 PORT_V_MAJOR=	8
 PORT_V_MINOR=	7
-PORT_V_PATCH=	2
+PORT_V_PATCH=	3
 
 TYPO3WWW=	www
 TYPO3SRC=	${PORTNAME}_src-${PORTVERSION}

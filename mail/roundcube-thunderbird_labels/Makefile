@@ -1,5 +1,5 @@
 # Created by: Alexander Moisseev <moiseev@mezonplus.ru>
-# $FreeBSD: head/mail/roundcube-thunderbird_labels/Makefile 429918 2016-12-29 14:29:18Z amdmi3 $
+# $FreeBSD: head/mail/roundcube-thunderbird_labels/Makefile 445067 2017-07-05 10:26:50Z amdmi3 $
 
 PORTNAME=	thunderbird_labels
 PORTVERSION=	1.1.3
@@ -11,6 +11,7 @@ MAINTAINER=	moiseev@mezonplus.ru
 COMMENT=	Thunderbird Labels plugin for RoundCube webmail
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 RUN_DEPENDS=	roundcube>=0.5:mail/roundcube
 

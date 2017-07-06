@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Inline-Python/Makefile 443579 2017-06-14 16:10:06Z sunpoet $
+# $FreeBSD: head/devel/p5-Inline-Python/Makefile 445106 2017-07-06 00:02:49Z sunpoet $
 
 PORTNAME=	Inline-Python
-PORTVERSION=	0.54
+PORTVERSION=	0.55
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

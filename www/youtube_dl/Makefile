@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/youtube_dl/Makefile 442150 2017-05-31 11:32:10Z araujo $
+# $FreeBSD: head/www/youtube_dl/Makefile 445082 2017-07-05 14:58:11Z tobik $
 
 PORTNAME=	youtube_dl
 PORTVERSION=	2017.05.29
@@ -10,9 +10,7 @@ MAINTAINER=	araujo@FreeBSD.org
 COMMENT=	Program for downloading videos from YouTube.com
 
 LICENSE=	UNLICENSE
-LICENSE_NAME=	The Unlicense
 LICENSE_FILE=	${WRKSRC}/LICENSE
-LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 BUILD_DEPENDS=	zip:archivers/zip
 

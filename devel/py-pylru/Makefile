@@ -1,5 +1,5 @@
-# Created by: Kyle Evans <bsdports@kyle-evans.net>
-# $FreeBSD: head/devel/py-pylru/Makefile 424215 2016-10-18 21:09:58Z feld $
+# Created by: Kyle Evans <kevans@FreeBSD.org>
+# $FreeBSD: head/devel/py-pylru/Makefile 445117 2017-07-06 01:39:08Z ultima $
 
 PORTNAME=	pylru
 PORTVERSION=	1.0.9
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	bsdports@kyle-evans.net
+MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Least recently used (lru) cache implementation
 
 LICENSE=	GPLv2

@@ -1,5 +1,5 @@
-# Created by: Kyle Evans <bsdports@kyle-evans.net>
-# $FreeBSD: head/www/py-flask-principal/Makefile 424218 2016-10-18 21:16:08Z feld $
+# Created by: Kyle Evans <kevans@FreeBSD.org>
+# $FreeBSD: head/www/py-flask-principal/Makefile 445117 2017-07-06 01:39:08Z ultima $
 
 PORTNAME=	Flask-Principal
 PORTVERSION=	0.4.0
@@ -7,7 +7,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	bsdports@kyle-evans.net
+MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Identity management for flask
 
 LICENSE=	MIT

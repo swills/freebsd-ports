@@ -1,12 +1,12 @@
 # Created by: Josh Gilliam <josh@quick.net>
-# $FreeBSD: head/textproc/urlview/Makefile 423874 2016-10-12 16:47:13Z bapt $
+# $FreeBSD: head/textproc/urlview/Makefile 445039 2017-07-04 19:41:21Z bhughes $
 
 PORTNAME=	urlview
 PORTVERSION=	0.9.20131021
 PORTREVISION=	1
 CATEGORIES=	textproc www
 
-MAINTAINER=	udvzsolt@gmail.com
+MAINTAINER=	uzsolt@uzsolt.hu
 COMMENT=	URL extractor/launcher
 
 LICENSE=	GPLv2

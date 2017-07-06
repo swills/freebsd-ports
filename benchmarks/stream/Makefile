@@ -1,5 +1,5 @@
 # Created by: Scott Flatman <sf@dsinw.com>
-# $FreeBSD: head/benchmarks/stream/Makefile 400848 2015-11-05 12:36:25Z mat $
+# $FreeBSD: head/benchmarks/stream/Makefile 445065 2017-07-05 10:24:22Z amdmi3 $
 
 PORTNAME=	stream
 PORTVERSION=	5.10
@@ -11,8 +11,6 @@ DIST_SUBDIR=	${PORTNAME}-1.0/${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Synthetic benchmark program that measures sustainable memory bandwidth
 
-OPTIONS_DEFINE=	DOCS
-
 NO_WRKSUBDIR=	yes
 
 EXTRACT_CMD=	${CP}
@@ -22,11 +20,15 @@ EXTRACT_AFTER_ARGS=	${WRKSRC}
 PORTDOCS=	stream.c
 PLIST_FILES=	bin/stream_bench
 
+OPTIONS_DEFINE=	DOCS
+
 do-build:
 	(cd ${WRKSRC} && ${CC} ${CFLAGS} -o stream_bench stream.c -lm)
 
 do-install:
 	(cd ${WRKSRC} && ${INSTALL_PROGRAM} stream_bench ${STAGEDIR}${PREFIX}/bin)
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	(cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR})
 

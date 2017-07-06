@@ -1,5 +1,5 @@
 # Created by: Zsolt Udvari <udvzsolt@gmail.com>
-# $FreeBSD: head/graphics/zathura-pdf-mupdf/Makefile 439942 2017-05-02 12:22:21Z tobik $
+# $FreeBSD: head/graphics/zathura-pdf-mupdf/Makefile 445039 2017-07-04 19:41:21Z bhughes $
 
 PORTNAME=	zathura-pdf-mupdf
 PORTVERSION=	0.3.1
@@ -8,7 +8,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	https://pwmt.org/projects/zathura-pdf-mupdf/download/ \
 		http://www.madpilot.net/~mad/pwmt.org/
 
-MAINTAINER=	udvzsolt@gmail.com
+MAINTAINER=	uzsolt@uzsolt.hu
 COMMENT=	MuPDF render PDF plugin for Zathura PDF viewer
 
 LICENSE=	ZLIB

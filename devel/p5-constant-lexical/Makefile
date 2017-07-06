@@ -1,8 +1,9 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-constant-lexical/Makefile 442359 2017-06-01 23:52:34Z sunpoet $
+# $FreeBSD: head/devel/p5-constant-lexical/Makefile 445104 2017-07-06 00:02:38Z sunpoet $
 
 PORTNAME=	constant-lexical
 PORTVERSION=	2.0003
+PORTREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN/constant CPAN
 MASTER_SITE_SUBDIR=	CPAN:SPROUT
@@ -20,5 +21,8 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/constant/lexical/lexical.so
 
 .include <bsd.port.mk>

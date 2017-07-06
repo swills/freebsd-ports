@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-HexDifferences/Makefile 442423 2017-06-02 18:13:19Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-HexDifferences/Makefile 445103 2017-07-06 00:02:32Z sunpoet $
 
 PORTNAME=	Test-HexDifferences
-PORTVERSION=	1.000
+PORTVERSION=	1.001
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

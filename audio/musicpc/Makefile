@@ -1,5 +1,5 @@
 # Created by: Mark Reidel <ports@mark.reidle.info>
-# $FreeBSD: head/audio/musicpc/Makefile 420748 2016-08-23 21:06:20Z pawel $
+# $FreeBSD: head/audio/musicpc/Makefile 445039 2017-07-04 19:41:21Z bhughes $
 
 PORTNAME=	musicpc
 PORTVERSION=	0.28
@@ -7,7 +7,7 @@ CATEGORIES=	audio ipv6
 MASTER_SITES=	http://www.musicpd.org/download/mpc/0/
 DISTNAME=	mpc-${PORTVERSION}
 
-MAINTAINER=	udvzsolt@gmail.com
+MAINTAINER=	uzsolt@uzsolt.hu
 COMMENT=	Command line client for the musicpd
 
 LICENSE=	GPLv2+

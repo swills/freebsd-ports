@@ -1,5 +1,5 @@
 # Created by: Leinier Cruz Salfran <salfrancl@yahoo.es>
-# $FreeBSD: head/deskutils/fet/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/deskutils/fet/Makefile 445039 2017-07-04 19:41:21Z bhughes $
 
 PORTNAME=	fet
 PORTVERSION=	5.31.5
@@ -10,7 +10,7 @@ MASTER_SITES=	http://lalescu.ro/liviu/fet/download/ \
 		http://timetabling.de/download/ \
 		http://timetabling.de/download/old/
 
-MAINTAINER=	udvzsolt@gmail.com
+MAINTAINER=	uzsolt@uzsolt.hu
 COMMENT=	Free timetabling software
 
 LICENSE=	GPLv3+

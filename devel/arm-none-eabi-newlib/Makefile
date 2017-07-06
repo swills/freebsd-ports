@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/arm-none-eabi-newlib/Makefile 424145 2016-10-17 21:09:34Z bsam $
+# $FreeBSD: head/devel/arm-none-eabi-newlib/Makefile 445117 2017-07-06 01:39:08Z ultima $
 
 PORTNAME=	newlib
 PORTVERSION=	2.4.0
@@ -7,7 +7,7 @@ MASTER_SITES=	ftp://sources.redhat.com/pub/${PORTNAME}/ \
 		SOURCEWARE/${PORTNAME}
 PKGNAMEPREFIX=	${NEWLIB_TARGET}-
 
-MAINTAINER=	bsdports@kyle-evans.net
+MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Newlib distribution for ${NEWLIB_TARGET} targets
 
 BUILD_DEPENDS+=	${NEWLIB_TARGET}-ar:devel/${NEWLIB_TARGET}-binutils \

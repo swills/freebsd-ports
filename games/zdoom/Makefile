@@ -1,12 +1,12 @@
-# Created by: Kyle Evans <bsdports@kyle-evans.net>
-# $FreeBSD: head/games/zdoom/Makefile 441455 2017-05-22 13:17:38Z linimon $
+# Created by: Kyle Evans <kevans@FreeBSD.org>
+# $FreeBSD: head/games/zdoom/Makefile 445117 2017-07-06 01:39:08Z ultima $
 
 PORTNAME=	zdoom
 PORTVERSION=	2.8.1
 PORTREVISION=	2
 CATEGORIES=	games
 
-MAINTAINER=	bsdports@kyle-evans.net
+MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Source port for Doom-engine games
 
 LICENSE=	DOOM

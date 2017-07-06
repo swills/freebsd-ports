@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/timg/Makefile 441761 2017-05-26 08:20:18Z kwm $
+# $FreeBSD: head/graphics/timg/Makefile 445039 2017-07-04 19:41:21Z bhughes $
 
 PORTNAME=	timg
 PORTVERSION=	0.9.5
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 PORTREVISION=	1
 CATEGORIES=	graphics
 
-MAINTAINER=	udvzsolt@gmail.com
+MAINTAINER=	uzsolt@uzsolt.hu
 COMMENT=	Terminal Image Viewer
 
 LICENSE=	GPLv2

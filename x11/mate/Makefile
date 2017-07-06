@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/mate/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/mate/Makefile 445014 2017-07-04 11:44:30Z kwm $
 
 PORTNAME=	mate
-PORTVERSION=	1.12.0
+PORTVERSION=	1.18.0
 CATEGORIES=	x11 mate
 
 MAINTAINER=	gnome@FreeBSD.org
@@ -15,7 +15,7 @@ RUN_DEPENDS=	mate-base>=1.8.0:x11/mate-base \
 		mate-icon-theme-faenza>=1.8.0:x11-themes/mate-icon-theme-faenza \
 		mate-terminal:x11/mate-terminal \
 		mate-screensaver:x11/mate-screensaver \
-		galculator:math/galculator \
+		mate-calc:math/mate-calc \
 		mate-screenshot:deskutils/mate-utils \
 		mate-system-monitor:sysutils/mate-system-monitor \
 		eom:graphics/eom \

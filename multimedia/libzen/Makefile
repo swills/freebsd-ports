@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/multimedia/libzen/Makefile 442409 2017-06-02 18:11:55Z sunpoet $
+# $FreeBSD: head/multimedia/libzen/Makefile 445002 2017-07-04 08:08:06Z sunpoet $
 
 PORTNAME=	libzen
-PORTVERSION=	0.7.96
+PORTVERSION=	0.7.97
 CATEGORIES=	multimedia
 MASTER_SITES=	http://mediaarea.net/download/binary/mediainfo/${PORTVERSION}/ \
 		LOCAL/sunpoet

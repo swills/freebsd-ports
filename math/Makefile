@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 444445 2017-06-27 08:03:09Z tota $
+# $FreeBSD: head/math/Makefile 445014 2017-07-04 11:44:30Z kwm $
 #
 
     COMMENT = Mathematics
@@ -274,6 +274,7 @@
     SUBDIR += ltl
     SUBDIR += ltl2ba
     SUBDIR += lybniz
+    SUBDIR += mate-calc
     SUBDIR += math77
     SUBDIR += mathmod
     SUBDIR += mathomatic

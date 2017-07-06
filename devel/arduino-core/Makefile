@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/arduino-core/Makefile 438992 2017-04-20 19:55:58Z bsam $
+# $FreeBSD: head/devel/arduino-core/Makefile 445117 2017-07-06 01:39:08Z ultima $
 
 PORTNAME=	arduino-core
 PORTVERSION=	1.6.18
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	devel
 DIST_SUBDIR=	arduino
 
-MAINTAINER=	bsdports@kyle-evans.net
+MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Core board support for Arduino devices
 
 LICENSE=	LGPL21

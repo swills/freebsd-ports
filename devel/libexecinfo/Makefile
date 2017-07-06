@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/libexecinfo/Makefile 434992 2017-02-27 21:20:41Z rene $
+# $FreeBSD: head/devel/libexecinfo/Makefile 445058 2017-07-05 09:00:18Z amdmi3 $
 
 PORTNAME=	libexecinfo
 PORTVERSION=	1.1
@@ -10,19 +10,20 @@ MASTER_SITES=	LOCAL/itetcu
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Library for inspecting program's backtrace
 
-OPTIONS_DEFINE=	DOCS
+LICENSE=	BSD2CLAUSE
 
 USES=		tar:bzip2 uidfix
 USE_LDCONFIG=	yes
-CFLAGS=		-fno-omit-frame-pointer
 MAKE_FLAGS=	LIBDIR=${PREFIX}/lib \
 		INCLUDEDIR=${PREFIX}/include
 
+CFLAGS+=	-fno-omit-frame-pointer
+
 PORTDOCS=	README
 
-CFLAGS_amd64=	-fno-omit-frame-pointer
+OPTIONS_DEFINE=	DOCS
 
-post-install:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
 

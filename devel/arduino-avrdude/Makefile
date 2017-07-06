@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/arduino-avrdude/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/devel/arduino-avrdude/Makefile 445117 2017-07-06 01:39:08Z ultima $
 
 PORTNAME=	avrdude
 PORTVERSION=	6.3
@@ -7,7 +7,7 @@ CATEGORIES=	devel
 MASTER_SITES=	SAVANNAH/avrdude
 PKGNAMEPREFIX=	arduino-
 
-MAINTAINER=	bsdports@kyle-evans.net
+MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Program for programming the on-chip memory of Atmel AVR Arduino CPUs
 
 LICENSE=	GPLv2

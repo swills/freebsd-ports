@@ -1,5 +1,5 @@
 # Created by: Ilia Skalozubov <freebsd@skinc.ru>
-# $FreeBSD: head/www/py-urlobject/Makefile 441501 2017-05-23 03:07:43Z wen $
+# $FreeBSD: head/www/py-urlobject/Makefile 445082 2017-07-05 14:58:11Z tobik $
 
 PORTNAME=	urlobject
 PORTVERSION=	2.4.3
@@ -11,10 +11,8 @@ DISTNAME=	URLObject-${PORTVERSION}
 MAINTAINER=	freebsd@skinc.ru
 COMMENT=	Utility class for manipulating URLs
 
-LICENSE=	Unlicense
-LICENSE_NAME=	The Unlicense
+LICENSE=	UNLICENSE
 LICENSE_FILE=	${WRKSRC}/UNLICENSE
-LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 USES=		python:2.7+
 USE_PYTHON=	distutils autoplist

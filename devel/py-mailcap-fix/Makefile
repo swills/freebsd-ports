@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-mailcap-fix/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/devel/py-mailcap-fix/Makefile 445082 2017-07-05 14:58:11Z tobik $
 
 PORTNAME=	mailcap_fix
 PORTVERSION=	1.0.1
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	Mailcap module that correctly handles windcard entries
 
-LICENSE=	PD
+LICENSE=	UNLICENSE
 LICENSE_FILE=	${WRKSRC}/UNLICENSE
 
 USE_GITHUB=	yes

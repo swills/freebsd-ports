@@ -1,5 +1,5 @@
 # Created by: Martin Dieringer <martin.dieringer@gmx.de>
-# $FreeBSD: head/graphics/mupdf/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/mupdf/Makefile 445039 2017-07-04 19:41:21Z bhughes $
 
 PORTNAME=	mupdf
 PORTVERSION=	1.11
@@ -10,7 +10,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://www.mupdf.com/downloads/ \
 		http://www.mupdf.com/downloads/archive/
 
-MAINTAINER=	udvzsolt@gmail.com
+MAINTAINER=	uzsolt@uzsolt.hu
 COMMENT=	Lightweight PDF viewer and toolkit
 
 LICENSE=	AGPLv3

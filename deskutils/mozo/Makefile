@@ -1,8 +1,8 @@
 # Created by: FreeBSD GNOME Team
-# $FreeBSD: head/deskutils/mozo/Makefile 407209 2016-01-25 12:31:21Z kwm $
+# $FreeBSD: head/deskutils/mozo/Makefile 445014 2017-07-04 11:44:30Z kwm $
 
 PORTNAME=	mozo
-PORTVERSION=	1.12.0
+PORTVERSION=	1.18.0
 CATEGORIES=	deskutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -12,13 +12,12 @@ COMMENT=	Editor for the freedesktop.org menu specification
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake pathfix pkgconfig python:2 tar:xz
+USES=		gettext gmake localbase pathfix pkgconfig \
+		python:2 tar:xz
 USE_MATE=	menus
-USE_GNOME=	intltool pygobject pygtk2
+USE_GNOME=	gtk30 intltool pygobject3
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|' \

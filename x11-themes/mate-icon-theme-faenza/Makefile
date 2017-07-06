@@ -1,14 +1,17 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-themes/mate-icon-theme-faenza/Makefile 407209 2016-01-25 12:31:21Z kwm $
+# $FreeBSD: head/x11-themes/mate-icon-theme-faenza/Makefile 445014 2017-07-04 11:44:30Z kwm $
 
 PORTNAME=	mate-icon-theme-faenza
-PORTVERSION=	1.12.0
+PORTVERSION=	1.18.1
 CATEGORIES=	x11-themes mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Collection of Faenza and Faience icons for the MATE desktop
+
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 PORTSCOUT=	limitw:1,even
 

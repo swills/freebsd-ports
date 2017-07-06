@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-mgmt/cacti/Makefile 443733 2017-06-17 08:33:35Z joneum $
+# $FreeBSD: head/net-mgmt/cacti/Makefile 445115 2017-07-06 01:32:11Z dbaio $
 
 PORTNAME=	cacti
-PORTVERSION=	1.1.10
+PORTVERSION=	1.1.12
 CATEGORIES=	net-mgmt www
 MASTER_SITES=	http://www.cacti.net/downloads/ \
 		ftp://ftpmirror.uk/freebsd-ports/cacti/

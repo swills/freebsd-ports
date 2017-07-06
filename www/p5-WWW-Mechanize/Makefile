@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/www/p5-WWW-Mechanize/Makefile 444666 2017-06-29 19:13:14Z sunpoet $
+# $FreeBSD: head/www/p5-WWW-Mechanize/Makefile 445108 2017-07-06 00:03:02Z sunpoet $
 
 PORTNAME=	WWW-Mechanize
-PORTVERSION=	1.85
+PORTVERSION=	1.86
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

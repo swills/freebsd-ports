@@ -1,5 +1,5 @@
 # Created by: Kevin Bowling <kbowling@freebsd.org>
-# $FreeBSD: head/databases/timescaledb/Makefile 444782 2017-06-30 21:08:46Z swills $
+# $FreeBSD: head/databases/timescaledb/Makefile 445049 2017-07-05 06:33:05Z swills $
 
 PORTNAME=	timescaledb
 PORTVERSION=	0.1.0
@@ -16,7 +16,7 @@ GH_ACCOUNT=	timescale
 MAKE_ARGS=	PG_CONFIG=${LOCALBASE}/bin/pg_config USE_PGXS=1 \
 		install_bin=/usr/bin/install
 USE_LDCONFIG=	yes
-USES=		gmake pgsql:9.6
+USES=		compiler:c11 gmake pgsql:9.6
 
 PLIST_FILES=	lib/postgresql/timescaledb.so \
 		share/postgresql/extension/timescaledb--0.1.0.sql \

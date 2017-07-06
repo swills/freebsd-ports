@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/enchive/Makefile 442783 2017-06-06 16:18:16Z mat $
+# $FreeBSD: head/security/enchive/Makefile 445082 2017-07-05 14:58:11Z tobik $
 
 PORTNAME=	enchive
 PORTVERSION=	3.2
@@ -7,7 +7,7 @@ CATEGORIES=	security
 MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Tool to encrypt files to yourself for long-term archival
 
-LICENSE=	PD
+LICENSE=	UNLICENSE
 LICENSE_FILE=	${WRKSRC}/UNLICENSE
 
 USES=		gmake

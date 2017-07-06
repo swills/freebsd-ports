@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/mate-base/Makefile 420603 2016-08-22 12:14:40Z kwm $
+# $FreeBSD: head/x11/mate-base/Makefile 445014 2017-07-04 11:44:30Z kwm $
 
 PORTNAME=	mate-base
-PORTVERSION=	1.12.0
+PORTVERSION=	1.18.0
 CATEGORIES=	x11 mate
 
 MAINTAINER=	gnome@FreeBSD.org

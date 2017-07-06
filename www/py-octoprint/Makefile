@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-octoprint/Makefile 440776 2017-05-13 10:46:48Z miwi $
+# $FreeBSD: head/www/py-octoprint/Makefile 445117 2017-07-06 01:39:08Z ultima $
 
 PORTNAME=	octoprint
 PORTVERSION=	1.3.0.a
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	bsdports@kyle-evans.net
+MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Web interface for controlling a 3D printer
 
 LICENSE=	AGPLv3

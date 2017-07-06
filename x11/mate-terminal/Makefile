@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/mate-terminal/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/mate-terminal/Makefile 445014 2017-07-04 11:44:30Z kwm $
 
 PORTNAME=	mate-terminal
-PORTVERSION=	1.12.1
+PORTVERSION=	1.18.1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -10,19 +10,21 @@ DIST_SUBDIR=	mate
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Terminal component for the MATE Desktop
 
+LICENSE=	GPLv3
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 BUILD_DEPENDS=	itstool:textproc/itstool
+LIB_DEPENDS=	libgnutls.so:security/gnutls \
+		libpcre2-8.so:devel/pcre2
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake pathfix pkgconfig shebangfix tar:xz
-USE_MATE=	desktop
-USE_XORG=	sm x11
-USE_GNOME=	dconf gtk20 intlhack vte
+USES=		gettext gmake localbase pathfix perl5 pkgconfig \
+		shebangfix tar:xz
+USE_XORG=	ice sm x11
+USE_GNOME=	cairo dconf gdkpixbuf2 gtk30 intltool vte3
 SHEBANG_FILES=	mate-terminal.wrapper
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-gtk=2.0
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 GLIB_SCHEMAS=	org.mate.terminal.gschema.xml
 

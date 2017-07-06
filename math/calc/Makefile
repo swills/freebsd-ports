@@ -1,11 +1,12 @@
 # Created by: jmz
-# $FreeBSD: head/math/calc/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/math/calc/Makefile 445096 2017-07-05 20:10:23Z johans $
 
 PORTNAME=	calc
-PORTVERSION=	2.12.5.3
-PORTREVISION=	1
+PORTVERSION=	2.12.6.0
 CATEGORIES=	math
 MASTER_SITES=	SF
+
+LICENSE=	LGPL21
 
 MAINTAINER=	johans@FreeBSD.org
 COMMENT=	Arbitrary precision calculator

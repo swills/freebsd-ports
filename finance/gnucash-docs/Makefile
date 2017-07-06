@@ -1,9 +1,9 @@
 # Created by: Glenn Johnson <glennpj@charter.net>
-# $FreeBSD: head/finance/gnucash-docs/Makefile 437061 2017-03-27 16:59:23Z madpilot $
+# $FreeBSD: head/finance/gnucash-docs/Makefile 445055 2017-07-05 08:07:32Z madpilot $
 #   $MCom: ports/finance/gnucash-docs/Makefile,v 1.7 2007/08/04 03:51:29 marcus Exp $
 
 PORTNAME=	gnucash-docs
-PORTVERSION=	2.6.16
+PORTVERSION=	2.6.17
 CATEGORIES=	finance gnome
 MASTER_SITES=	SF/gnucash/${PORTNAME}/${PORTVERSION} \
 		http://www.gnucash.org/pub/gnucash/sources/stable/ \
@@ -17,11 +17,10 @@ LIB_DEPENDS=	librarian.so:textproc/rarian
 RUN_DEPENDS=	yelp:x11/yelp
 
 INSTALLS_OMF=	yes
-USES=		autoreconf gmake
+USES=		autoreconf localbase gmake
 USE_GNOME=	libxml2
 GNU_CONFIGURE=	yes
 NO_ARCH=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
 
 post-patch:
 	@${REINPLACE_CMD} -e '/scrollkeeper-preinstall/s|$$(docdir)|$$(gnomehelpdir)|' \

@@ -1,10 +1,10 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/mail/cleanup-maildir/Makefile 421683 2016-09-10 10:48:56Z ehaupt $
+# $FreeBSD: head/mail/cleanup-maildir/Makefile 445056 2017-07-05 08:12:20Z ehaupt $
 
 PORTNAME=	cleanup-maildir
-PORTVERSION=	0.1.0.2016010801
+PORTVERSION=	0.1.1
+DISTVERSIONPREFIX=	v
 CATEGORIES=	mail python
-MASTER_SITES=	LOCAL/ehaupt
 
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Script for cleaning up mails in Maildir folders based on arival date
@@ -12,8 +12,11 @@ COMMENT=	Script for cleaning up mails in Maildir folders based on arival date
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}graph-core>=${PORTVERSION}:graphics/py-graph-core
 
 USES=		python shebangfix
+USE_GITHUB=	yes
 NO_BUILD=	yes
 NO_ARCH=	yes
+
+GH_ACCOUNT=	ehaupt
 
 SHEBANG_FILES=	cleanup-maildir.py
 PLIST_FILES=	bin/cleanup-maildir
