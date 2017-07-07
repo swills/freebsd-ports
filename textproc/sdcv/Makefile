@@ -1,22 +1,24 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/textproc/sdcv/Makefile 444770 2017-06-30 16:42:47Z eugen $
+# $FreeBSD: head/textproc/sdcv/Makefile 445188 2017-07-06 20:58:29Z sunpoet $
 
 PORTNAME=	sdcv
-DISTVERSION=	0.5.0-beta2
-DISTVERSIONSUFFIX=	-Source
+PORTVERSION=	0.5.1
+DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
-MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/
 
 MAINTAINER=	citrin@citrin.ru
-COMMENT=	Text-based utility for work with dictionaries in StarDict's format
+COMMENT=	Text-based utility for work with dictionaries in StarDict's format #'
 
 LICENSE=	GPLv2+
-LICENSE_FILE=	${WRKSRC}/COPYING
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource pkgconfig readline tar:bzip2
+USES=		cmake:outsource pkgconfig readline
 USE_GNOME=	glib20
 
 SUB_FILES=	pkg-message
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	Dushistov
 
 OPTIONS_DEFINE=	NLS
 OPTIONS_SUB=	yes

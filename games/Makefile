@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 444313 2017-06-25 17:26:23Z rene $
+# $FreeBSD: head/games/Makefile 445211 2017-07-07 07:51:52Z ehaupt $
 #
 
     COMMENT = Games and related software
@@ -72,6 +72,7 @@
     SUBDIR += awele
     SUBDIR += balazar
     SUBDIR += balazarbrothers
+    SUBDIR += ballerburg
     SUBDIR += banihstypos
     SUBDIR += barbie_seahorse_adventures
     SUBDIR += barrage

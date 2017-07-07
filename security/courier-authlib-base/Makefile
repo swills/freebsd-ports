@@ -1,7 +1,7 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/security/courier-authlib-base/Makefile 396348 2015-09-07 21:29:19Z madpilot $
+# $FreeBSD: head/security/courier-authlib-base/Makefile 445136 2017-07-06 11:56:27Z madpilot $
 
-PORTREVISION=	2
+PORTREVISION=	0
 PKGNAMESUFFIX=	-base
 
 COMMENT=	Courier authentication library base

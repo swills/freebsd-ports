@@ -1,8 +1,8 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/devel/p5-File-DesktopEntry/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-File-DesktopEntry/Makefile 445201 2017-07-07 02:57:08Z acm $
 
 PORTNAME=	File-DesktopEntry
-PORTVERSION=	0.08
+PORTVERSION=	0.22
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

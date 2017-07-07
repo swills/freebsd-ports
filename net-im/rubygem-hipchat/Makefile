@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net-im/rubygem-hipchat/Makefile 427705 2016-12-03 19:34:26Z sunpoet $
+# $FreeBSD: head/net-im/rubygem-hipchat/Makefile 445178 2017-07-06 20:57:24Z sunpoet $
 
 PORTNAME=	hipchat
-PORTVERSION=	1.5.4
+PORTVERSION=	1.6.0
 CATEGORIES=	net-im rubygems
 MASTER_SITES=	RG
 

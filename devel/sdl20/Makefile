@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/sdl20/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/devel/sdl20/Makefile 445139 2017-07-06 12:07:23Z jbeich $
 
 PORTNAME=	sdl2
 PORTVERSION=	2.0.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.libsdl.org/release/
 DISTNAME=	SDL2-${PORTVERSION}

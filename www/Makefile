@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 444851 2017-07-01 21:58:04Z rene $
+# $FreeBSD: head/www/Makefile 445169 2017-07-06 20:40:51Z tcberner $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1860,6 +1860,7 @@
     SUBDIR += qt5-webchannel
     SUBDIR += qt5-webkit
     SUBDIR += qt5-websockets
+    SUBDIR += qt5-websockets-qml
     SUBDIR += quickie
     SUBDIR += qupzilla-qt4
     SUBDIR += qupzilla-qt5
@@ -2129,6 +2130,7 @@
     SUBDIR += rubygem-thin
     SUBDIR += rubygem-tinyatom
     SUBDIR += rubygem-tinymce-rails
+    SUBDIR += rubygem-toml-rb
     SUBDIR += rubygem-totoridipjp
     SUBDIR += rubygem-tumblr_client
     SUBDIR += rubygem-turbolinks

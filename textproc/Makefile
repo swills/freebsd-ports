@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 444035 2017-06-21 16:23:52Z tobik $
+# $FreeBSD: head/textproc/Makefile 445148 2017-07-06 13:49:54Z tz $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1452,6 +1452,7 @@
     SUBDIR += rubygem-babel-transpiler
     SUBDIR += rubygem-babosa
     SUBDIR += rubygem-charlock_holmes
+    SUBDIR += rubygem-citrus
     SUBDIR += rubygem-cld3
     SUBDIR += rubygem-coderay
     SUBDIR += rubygem-colorator

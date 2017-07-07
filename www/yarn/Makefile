@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/yarn/Makefile 444916 2017-07-03 07:40:16Z demon $
+# $FreeBSD: head/www/yarn/Makefile 445190 2017-07-06 20:58:40Z sunpoet $
 
 PORTNAME=	yarn
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.24.6
+DISTVERSION=	0.27.5
 CATEGORIES=	www
 MASTER_SITES=	https://yarnpkg.com/downloads/${PORTVERSION}/
 

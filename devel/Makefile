@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 445100 2017-07-05 23:55:05Z sunpoet $
+# $FreeBSD: head/devel/Makefile 445156 2017-07-06 14:17:31Z jbeich $
 #
 
     COMMENT = Development utilities
@@ -5114,6 +5114,7 @@
     SUBDIR += qtscriptgenerator
     SUBDIR += quickcheck++
     SUBDIR += quilt
+    SUBDIR += racer
     SUBDIR += radare2
     SUBDIR += ragel
     SUBDIR += raknet

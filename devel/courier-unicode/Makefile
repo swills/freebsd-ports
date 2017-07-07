@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/courier-unicode/Makefile 396348 2015-09-07 21:29:19Z madpilot $
+# $FreeBSD: head/devel/courier-unicode/Makefile 445136 2017-07-06 11:56:27Z madpilot $
 
 PORTNAME=	courier-unicode
-PORTVERSION=	1.4
+PORTVERSION=	2.0
 CATEGORIES=	devel mail
 MASTER_SITES=	SF/courier/${PORTNAME}/${PORTVERSION}
 

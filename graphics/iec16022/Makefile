@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/graphics/iec16022/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/graphics/iec16022/Makefile 445132 2017-07-06 09:56:13Z ehaupt $
 
 PORTNAME=	iec16022
-PORTVERSION=	0.2.7
+PORTVERSION=	0.3.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics
 

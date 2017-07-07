@@ -1,8 +1,8 @@
 # Created by: Oliver Lehmann
-# $FreeBSD: head/security/courier-authlib/Makefile 429892 2016-12-29 12:41:04Z mat $
+# $FreeBSD: head/security/courier-authlib/Makefile 445136 2017-07-06 11:56:27Z madpilot $
 
 PORTNAME=	courier-authlib
-PORTVERSION=	0.66.3
+PORTVERSION=	0.68.0
 PORTREVISION?=	0
 CATEGORIES?=	security mail
 .if defined(PKGNAMESUFFIX)
@@ -13,7 +13,7 @@ DISTFILES=	# empty
 EXTRACT_ONLY=	# empty
 .endif
 
-MAINTAINER=	oliver@FreeBSD.org
+MAINTAINER=	madpilot@FreeBSD.org
 COMMENT?=	Meta-port for the courier authentication library
 
 CONFLICTS=	courier-0.45*

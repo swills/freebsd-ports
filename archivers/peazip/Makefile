@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/archivers/peazip/Makefile 438271 2017-04-11 15:08:17Z acm $
+# $FreeBSD: head/archivers/peazip/Makefile 445205 2017-07-07 03:20:13Z acm $
 
 PORTNAME=	peazip
-PORTVERSION=	6.4.0
+PORTVERSION=	6.4.1
 CATEGORIES=	archivers
 MASTER_SITES=	https://github.com/giorgiotani/PeaZip/releases/download/${PORTVERSION}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}.src

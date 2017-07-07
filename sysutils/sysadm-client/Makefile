@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/sysadm-client/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/sysutils/sysadm-client/Makefile 445169 2017-07-06 20:40:51Z tcberner $
 
 PORTNAME=	sysadm-client
 PORTVERSION=	1.0
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

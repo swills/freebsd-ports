@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 445078 2017-07-05 13:08:12Z tz $
+# $FreeBSD: head/databases/Makefile 445133 2017-07-06 10:10:08Z tz $
 #
 
     COMMENT = Databases and related software
@@ -568,6 +568,7 @@
     SUBDIR += pg_citus
     SUBDIR += pg_qualstats
     SUBDIR += pg_reorg
+    SUBDIR += pg_repack
     SUBDIR += pg_rman
     SUBDIR += pg_stat_kcache
     SUBDIR += pg_statsinfo

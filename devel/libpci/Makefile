@@ -1,8 +1,8 @@
 # Created by: Samy Al Bahra <samy@kerneled.org>
-# $FreeBSD: head/devel/libpci/Makefile 434906 2017-02-26 18:30:21Z sunpoet $
+# $FreeBSD: head/devel/libpci/Makefile 445172 2017-07-06 20:55:38Z sunpoet $
 
 PORTNAME=	libpci
-PORTVERSION=	3.5.4
+PORTVERSION=	3.5.5
 CATEGORIES=	devel
 MASTER_SITES=	KERNEL_ORG/software/utils/pciutils \
 		ftp://atrey.karlin.mff.cuni.cz/pub/linux/pci/ \

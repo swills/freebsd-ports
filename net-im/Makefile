@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 443529 2017-06-13 19:15:43Z danfe $
+# $FreeBSD: head/net-im/Makefile 445159 2017-07-06 15:18:01Z tcberner $
 #
 
     COMMENT = Instant messaging
@@ -63,6 +63,7 @@
     SUBDIR += libnice-gst1
     SUBDIR += libpurple
     SUBDIR += libqtelegram-ae
+    SUBDIR += libsignon-glib
     SUBDIR += libstrophe
     SUBDIR += libtelepathy
     SUBDIR += libyahoo2
@@ -169,6 +170,7 @@
     SUBDIR += telegram
     SUBDIR += telegram-purple
     SUBDIR += telegramqml
+    SUBDIR += telepathy-accounts-signon
     SUBDIR += telepathy-butterfly
     SUBDIR += telepathy-farsight
     SUBDIR += telepathy-farstream

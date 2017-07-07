@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas <acm@FreeBSD.org>
-# $FreeBSD: head/sysutils/bareos-client-static/Makefile 439102 2017-04-21 17:47:38Z acm $
+# $FreeBSD: head/sysutils/bareos-client-static/Makefile 445197 2017-07-07 02:19:21Z acm $
 
 PORTNAME=	bareos
-PORTREVISION=	1
+PORTREVISION=	0
 PKGNAMESUFFIX=	-client-static
 
 COMMENT=	Backup archiving recovery open sourced (static client)

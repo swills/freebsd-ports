@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb101-server/Makefile 445089 2017-07-05 18:14:56Z brnrd $
+# $FreeBSD: head/databases/mariadb101-server/Makefile 445170 2017-07-06 20:50:39Z brnrd $
 
 PORTNAME?=	mariadb
 PORTVERSION=	10.1.25
@@ -153,7 +153,7 @@ TOKUDB_PORTDOCS=	README.md
 TOKUDB_VARS=		LICENSE+=PerconaFT LICENSE_COMB=multi
 ZMQ_LIB_DEPENDS=	libzmq.so:net/libzmq4
 
-#NOT_FOR_ARCHS=		i386
+NOT_FOR_ARCHS=		i386
 NOT_FOR_ARCHS_REASON=	currently does not compile on i386, see \
 			https://mariadb.atlassian.net/browse/MDEV-9627
 

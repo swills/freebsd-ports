@@ -1,9 +1,9 @@
 # Created by: Carlos Eduardo G. Carvalho <cartola@openit.com.br>
-# $FreeBSD: head/graphics/hugin/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/hugin/Makefile 445208 2017-07-07 07:16:26Z grog $
 
 PORTNAME=	hugin
-PORTVERSION=	2016.2.0
-PORTREVISION=	6
+PORTVERSION=	2017.0.0
+PORTREVISION=	0
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION:R}
 
@@ -38,7 +38,7 @@ SHEBANG_FILES=	src/hugin_script_interface/hpi.py \
 		src/hugin_script_interface/plugins-dev/*.py
 
 OPTIONS_DEFINE=		PANOMATIC AUTOPANOSIFTC PYTHON
-OPTIONS_DEFAULT=	PANOMATIC AUTOPANOSIFTC PYTHON
+OPTIONS_DEFAULT=	PANOMATIC PYTHON
 OPTIONS_SUB=		yes
 
 PANOMATIC_DESC=		Install graphics/panomatic

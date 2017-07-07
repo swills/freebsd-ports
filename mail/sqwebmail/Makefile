@@ -1,17 +1,18 @@
 # Created by: Neil Blakey-Milner
-# $FreeBSD: head/mail/sqwebmail/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/sqwebmail/Makefile 445136 2017-07-06 11:56:27Z madpilot $
 
 PORTNAME=	sqwebmail
-PORTVERSION=	5.8.3
-PORTREVISION=	1
+PORTVERSION=	5.9.0
 CATEGORIES=	mail www
 MASTER_SITES=	SF/courier/webmail/${PORTVERSION}
 
 MAINTAINER=	oliver@FreeBSD.org
 COMMENT=	CGI Webmail client for Maildirs
 
-BUILD_DEPENDS=	courierauthconfig:security/courier-authlib-base
-RUN_DEPENDS=	courierauthconfig:security/courier-authlib-base
+BUILD_DEPENDS=	courierauthconfig:security/courier-authlib-base \
+		gpg:security/gnupg
+RUN_DEPENDS=	courierauthconfig:security/courier-authlib-base \
+		gpg:security/gnupg
 LIB_DEPENDS=	libpcre.so:devel/pcre \
 		libcourier-unicode.so:devel/courier-unicode
 

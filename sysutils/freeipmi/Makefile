@@ -1,8 +1,9 @@
 # Created by: Dmitry Frolov <frol@nov.net>
-# $FreeBSD: head/sysutils/freeipmi/Makefile 426660 2016-11-20 23:54:57Z sunpoet $
+# $FreeBSD: head/sysutils/freeipmi/Makefile 445175 2017-07-06 20:55:54Z sunpoet $
 
 PORTNAME=	freeipmi
-PORTVERSION=	1.5.5
+PORTVERSION=	1.5.6
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	GNU \
 		http://ftp.gluster.com/pub/${PORTNAME}/${PORTVERSION}/
@@ -54,6 +55,7 @@ post-patch:
 		-e '/^FREEIPMI_SYSCONFDIR/ s|/freeipmi/$$||' \
 		-e '/FREEIPMI_CONFIG_FILE_DEFAULT_TMP1=/ s|freeipmi.conf|&.sample|' \
 			${WRKSRC}/configure
+	@${REINPLACE_CMD} -e 's|\($$(LN_S) -f \)$$(sbindir)/|\1|' ${WRKSRC}/*/Makefile.in
 
 post-install:
 	${MKDIR} -m 0700 -p ${STAGEDIR}${CACHE_DIR}/ipmimonitoringsdrcache/ ${STAGEDIR}${CACHE_DIR}/ipmiseld/ ${STAGEDIR}/var/lib/freeipmi/ ${STAGEDIR}/var/run/freeipmi/

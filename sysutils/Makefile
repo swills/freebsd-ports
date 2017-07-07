@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 444624 2017-06-29 06:13:57Z antoine $
+# $FreeBSD: head/sysutils/Makefile 445159 2017-07-06 15:18:01Z tcberner $
 #
 
     COMMENT = System utilities
@@ -1074,6 +1074,8 @@
     SUBDIR += shmcat
     SUBDIR += showbeastie
     SUBDIR += siegfried
+    SUBDIR += signon-qt5
+    SUBDIR += signon-ui
     SUBDIR += skill
     SUBDIR += slack
     SUBDIR += sleuthkit

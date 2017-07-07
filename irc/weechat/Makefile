@@ -1,8 +1,8 @@
 # Created by: clement
-# $FreeBSD: head/irc/weechat/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/irc/weechat/Makefile 445144 2017-07-06 12:39:59Z brnrd $
 
 PORTNAME=	weechat
-PORTVERSION=	1.8
+PORTVERSION=	1.9
 CATEGORIES=	irc
 MASTER_SITES=	https://weechat.org/files/src/
 

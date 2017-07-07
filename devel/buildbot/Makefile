@@ -1,8 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/devel/buildbot/Makefile 437171 2017-03-28 22:41:02Z grembo $
+# $FreeBSD: head/devel/buildbot/Makefile 445206 2017-07-07 03:47:38Z asomers $
 
 PORTNAME=	buildbot
 PORTVERSION=	0.9.5
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 
@@ -29,8 +30,11 @@ TEST_DEPENDS=	trial:devel/py-twisted \
 		${PYTHON_PKGNAMEPREFIX}boto3>0:www/py-boto3 \
 		${PYTHON_PKGNAMEPREFIX}txrequests>0:www/py-txrequests
 
+USE_RC_SUBR=	buildbot
 USES=		python:-2.7
 USE_PYTHON=	autoplist distutils
+
+SUB_LIST+=	PYTHON_CMD=${PYTHON_CMD}
 
 NO_ARCH=	yes
 

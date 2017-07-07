@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/shotcut/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/shotcut/Makefile 445169 2017-07-06 20:40:51Z tcberner $
 
 PORTNAME=	shotcut
 PORTVERSION=	${FULLVERSION:R}
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia
 
 MAINTAINER=	avilla@FreeBSD.org

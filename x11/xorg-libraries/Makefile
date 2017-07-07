@@ -1,5 +1,5 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/x11/xorg-libraries/Makefile 431433 2017-01-13 22:59:58Z bapt $
+# $FreeBSD: head/x11/xorg-libraries/Makefile 445146 2017-07-06 13:03:07Z amdmi3 $
 
 PORTNAME=	xorg-libraries
 PORTVERSION=	7.7
@@ -26,7 +26,6 @@ RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/dmx.pc:x11/libdmx \
 		${LOCALBASE}/libdata/pkgconfig/xevie.pc:x11/libXevie \
 		${LOCALBASE}/libdata/pkgconfig/xext.pc:x11/libXext \
 		${LOCALBASE}/libdata/pkgconfig/xfixes.pc:x11/libXfixes \
-		${LOCALBASE}/libdata/pkgconfig/xfont.pc:x11-fonts/libXfont \
 		${LOCALBASE}/libdata/pkgconfig/xfont.pc:x11-fonts/libXfont \
 		${LOCALBASE}/libdata/pkgconfig/xfontcache.pc:x11-fonts/libXfontcache \
 		${LOCALBASE}/libdata/pkgconfig/xft.pc:x11-fonts/libXft \

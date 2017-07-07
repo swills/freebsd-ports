@@ -1,12 +1,12 @@
-# $FreeBSD: head/mail/meta1/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/mail/meta1/Makefile 445138 2017-07-06 12:03:37Z dinoex $
 
 PORTNAME=	meta1
-PORTVERSION=	1.1.0a.7.0
+PORTVERSION=	1.1.0a.8.0
 PORTREVISION=	0
 CATEGORIES=	mail ipv6
-MASTER_SITES=	http://www.MeTA1.org/download/.alpha/ween/
+MASTER_SITES=	http://www.MeTA1.org/download/.alpha/dlck/
 PKGNAMESUFFIX?=	${TLS_SUFFIX}${SASL_SUFFIX}${BERKELEYDB_SUFFIX}${PMILTER_SUFFIX}${PKGNAMESUFFIX2}
-DISTNAME=	${PORTNAME}-1.1.Alpha7.0
+DISTNAME=	${PORTNAME}-1.1.Alpha8.0
 
 MAINTAINER=	dinoex@FreeBSD.org
 COMMENT=	Secure and efficient mail gateway

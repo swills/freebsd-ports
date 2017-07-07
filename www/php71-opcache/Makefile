@@ -1,6 +1,7 @@
-# $FreeBSD: head/www/php71-opcache/Makefile 432324 2017-01-24 11:54:20Z tz $
+# $FreeBSD: head/www/php71-opcache/Makefile 445145 2017-07-06 12:56:14Z tz $
 
 CATEGORIES=	www
+PORTREVISION=	1
 
 MASTERDIR=	${.CURDIR}/../../lang/php71
 

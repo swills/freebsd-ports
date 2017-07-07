@@ -1,5 +1,5 @@
 # Created by: Tom Hukins <tom@eborcom.com>
-# $FreeBSD: head/mail/maildrop/Makefile 431939 2017-01-20 09:15:19Z madpilot $
+# $FreeBSD: head/mail/maildrop/Makefile 445136 2017-07-06 11:56:27Z madpilot $
 
 # You can define the following to enable further compile time
 # customizations:
@@ -16,7 +16,7 @@
 # MAILDROP_MBOX_DIR=<dir>	Specify DEFAULT mailbox location
 
 PORTNAME=	maildrop
-PORTVERSION=	2.8.5
+PORTVERSION=	2.9.0
 CATEGORIES=	mail
 MASTER_SITES=	SF/courier/${PORTNAME}/${PORTVERSION}
 

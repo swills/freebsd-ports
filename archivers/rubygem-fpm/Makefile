@@ -1,8 +1,8 @@
-# $FreeBSD: head/archivers/rubygem-fpm/Makefile 436838 2017-03-24 17:47:44Z sunpoet $
+# $FreeBSD: head/archivers/rubygem-fpm/Makefile 445200 2017-07-07 02:42:23Z swills $
 
 PORTNAME=	fpm
 PORTVERSION=	1.8.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	archivers rubygems
 MASTER_SITES=	RG
 
@@ -31,5 +31,6 @@ PLIST_FILES=	bin/fpm
 
 post-patch:
 	@${REINPLACE_CMD} -e 's/1\.0\.0/1.0/' ${WRKSRC}/fpm.gemspec
+	@${REINPLACE_CMD} -e 's/= 0\.5\.2/>= 0.5.2/' ${WRKSRC}/fpm.gemspec
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/lang/ldc/Makefile 441320 2017-05-20 16:58:10Z linimon $
+# $FreeBSD: head/lang/ldc/Makefile 445203 2017-07-07 03:15:02Z acm $
 
 PORTNAME=	ldc
-PORTVERSION=	1.1.0
+PORTVERSION=	1.2.0
 CATEGORIES=	lang
 MASTER_SITES=	https://github.com/ldc-developers/ldc/releases/download/v${PORTVERSION}/:source \
 		https://github.com/ldc-developers/ldc/releases/download/v${BOOTVER}/:bootstrap

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-oauth212/Makefile 439632 2017-04-28 20:24:54Z sunpoet $
+# $FreeBSD: head/net/rubygem-oauth212/Makefile 445154 2017-07-06 14:14:21Z tz $
 
 PORTNAME=	oauth2
 PORTVERSION=	1.2.0
@@ -19,6 +19,9 @@ RUN_DEPENDS=	rubygem-faraday>=0.8:www/rubygem-faraday \
 		rubygem-multi_json>=1.3:devel/rubygem-multi_json \
 		rubygem-multi_xml>=0.5:textproc/rubygem-multi_xml \
 		rubygem-rack>=1.2:www/rubygem-rack
+
+DEPRECATED=	Only created for www/gitlab; please use net/rubygem-oauth2 instead
+EXPIRATION_DATE=	2017-07-31
 
 PORTSCOUT=	limit:^1\.2\.
 

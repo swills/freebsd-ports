@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas <acm@FreeBSD.org>
-# $FreeBSD: head/www/bareos-webui/Makefile 436157 2017-03-14 14:54:57Z acm $
+# $FreeBSD: head/www/bareos-webui/Makefile 445198 2017-07-07 02:27:26Z acm $
 
 PORTNAME=	bareos-webui
-PORTVERSION=	16.2.5
+PORTVERSION=	16.2.6
 DISTVERSIONPREFIX=	Release/
 CATEGORIES=	www sysutils
 
