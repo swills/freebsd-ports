@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/sysutils/vimpager/Makefile 438923 2017-04-20 03:31:48Z adamw $
+# $FreeBSD: head/sysutils/vimpager/Makefile 445396 2017-07-09 09:00:21Z amdmi3 $
 
 PORTNAME=	vimpager
 DISTVERSION=	2.06
@@ -9,6 +9,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Use ViM as a pager
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	vim:editors/vim
 
@@ -16,15 +17,16 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	rkitover
 GH_TAGNAME=	d0bf869
 
-OPTIONS_DEFINE=	DOCS
-
 PLIST_FILES=	bin/vimcat bin/${PORTNAME} etc/${PORTNAME}rc
 PORTDOCS=	vimcat.md vimpager.md
+NO_ARCH=	yes
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|share/man|man|' ${WRKSRC}/Makefile
 
-post-install:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 

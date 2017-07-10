@@ -1,9 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/x11/xpra/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/x11/xpra/Makefile 445416 2017-07-10 00:57:22Z rezny $
 
 PORTNAME=	xpra
-PORTVERSION=	2.0.2
-PORTREVISION=	1
+PORTVERSION=	2.0.3
 CATEGORIES=	x11
 MASTER_SITES=	http://xpra.org/src/
 

@@ -1,15 +1,15 @@
 # Created by: torstenb
-# $FreeBSD: head/x11-wm/ctwm/Makefile 441703 2017-05-25 17:03:05Z madpilot $
+# $FreeBSD: head/x11-wm/ctwm/Makefile 445226 2017-07-07 09:36:28Z bhughes $
 
 PORTNAME=	ctwm
-PORTVERSION=	4.0.0
+PORTVERSION=	4.0.1
 PORTEPOCH=	1
 CATEGORIES=	x11-wm
 MASTER_SITES=	https://www.ctwm.org/dist/ \
 		https://distfiles.over-yonder.net/ctwm/
 
 MAINTAINER=	fullermd@over-yonder.net
-COMMENT=	Extension to twm, with support for multiple virtual screens, etc
+COMMENT=	Extension to twm, with support for multiple virtual screens
 
 LICENSE=	MIT
 

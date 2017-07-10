@@ -1,8 +1,8 @@
 # Created by: Richard Gallamore <ultima@FreeBSD.org>
-# $FreeBSD: head/www/py-django-post_office/Makefile 445116 2017-07-06 01:36:47Z ultima $
+# $FreeBSD: head/www/py-django-post_office/Makefile 445284 2017-07-07 23:05:00Z ultima $
 
 PORTNAME=	django-post_office
-PORTVERSION=	3.0.0
+PORTVERSION=	3.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www python
 MASTER_SITES=	GH
@@ -22,6 +22,5 @@ USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	ui
-GH_TAGNAME=	v3.0
 
 .include <bsd.port.mk>

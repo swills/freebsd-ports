@@ -1,8 +1,9 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/security/linux-c7-gnutls/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/security/linux-c7-gnutls/Makefile 445245 2017-07-07 12:33:35Z tijl $
 
 PORTNAME=	gnutls
 PORTVERSION=	3.3.24
+PORTREVISION=	1
 CATEGORIES=	security linux
 
 MAINTAINER=	emulation@FreeBSD.org
@@ -14,7 +15,7 @@ DESCR=		${.CURDIR}/../${PORTNAME}/pkg-descr
 RPMVERSION=	1.el7
 USES=		linux:c7
 USE_LDCONFIG=	yes
-USE_LINUX=	libtasn1 libgcrypt libgpg-error
+USE_LINUX=	libtasn1 nettle p11-kit trousers
 USE_LINUX_RPM=	yes
 
 OPTIONS_DEFINE=	DOCS NLS

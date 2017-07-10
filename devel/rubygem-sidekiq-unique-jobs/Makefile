@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-sidekiq-unique-jobs/Makefile 440104 2017-05-04 13:06:57Z jrm $
+# $FreeBSD: head/devel/rubygem-sidekiq-unique-jobs/Makefile 445255 2017-07-07 15:01:03Z jrm $
 
 PORTNAME=	sidekiq-unique-jobs
-PORTVERSION=	5.0.8
+PORTVERSION=	5.0.9
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

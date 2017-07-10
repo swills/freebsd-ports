@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/scala-docs/Makefile 438765 2017-04-18 08:22:11Z ale $
+# $FreeBSD: head/lang/scala-docs/Makefile 445232 2017-07-07 09:59:28Z ale $
 
 PORTNAME=	scala-docs
-PORTVERSION=	2.12.1
+PORTVERSION=	2.12.2
 CATEGORIES=	lang java
 MASTER_SITES=	http://www.scala-lang.org/files/archive/
 
@@ -18,6 +18,8 @@ PORTDOCS=	*
 OPTIONS_DEFINE=	DOCS
 
 WRKSRC=		${WRKDIR}/scala-${PORTVERSION}
+
+PORTSCOUT=	limit:^2\.12\.
 
 .include <bsd.port.options.mk>
 

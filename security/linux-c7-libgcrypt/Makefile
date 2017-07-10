@@ -1,9 +1,9 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/security/linux-c7-libgcrypt/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/security/linux-c7-libgcrypt/Makefile 445237 2017-07-07 10:44:16Z tijl $
 
 PORTNAME=	libgcrypt
 PORTVERSION=	1.5.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security linux
 
 MAINTAINER=	emulation@FreeBSD.org
@@ -17,6 +17,7 @@ DESCR=		${.CURDIR}/../${PORTNAME}/pkg-descr
 RPMVERSION=	13.el7_3.1
 USES=		linux:c7
 USE_LDCONFIG=	yes
+USE_LINUX=	libgpg-error
 USE_LINUX_RPM=	yes
 
 .include <bsd.port.mk>

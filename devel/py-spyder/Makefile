@@ -1,5 +1,5 @@
 # Created by: Rod Person <rodperson@rodperson.com>
-# $FreeBSD: head/devel/py-spyder/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-spyder/Makefile 445279 2017-07-07 16:34:07Z sunpoet $
 
 PORTNAME=	spyder
 PORTVERSION=	2.3.7
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	rodperson@rodperson.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Scientific PYthon Development EnviRonment, an alternative to IDLE
 
 LICENSE=	MIT

@@ -1,9 +1,9 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/print/linux-c7-cups-libs/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/print/linux-c7-cups-libs/Makefile 445236 2017-07-07 10:42:11Z tijl $
 
 PORTNAME=	cups
 PORTVERSION=	1.6.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	print linux
 PKGNAMESUFFIX=	-libs
 LIB_DISTNAMES=	${LINUXNAME}-${DISTVERSIONFULL}
@@ -19,7 +19,7 @@ LINUXNAME=	${PORTNAME}${PKGNAMESUFFIX}
 RPMVERSION=	26.el7
 USES=		linux:c7
 USE_LDCONFIG=	yes
-USE_LINUX=	gnutls
+USE_LINUX=	avahi-libs openssl
 USE_LINUX_RPM=	yes
 
 .include <bsd.port.mk>

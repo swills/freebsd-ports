@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-dfwinreg/Makefile 445163 2017-07-06 19:03:54Z antoine $
+# $FreeBSD: head/security/py-dfwinreg/Makefile 445342 2017-07-08 16:59:07Z antoine $
 
 PORTNAME=	dfwinreg
-PORTVERSION=	20170703
+PORTVERSION=	20170706
 CATEGORIES=	security devel python
 MASTER_SITES=	CHEESESHOP \
 		https://github.com/log2timeline/dfwinreg/releases/download/${PORTVERSION}/

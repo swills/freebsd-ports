@@ -1,12 +1,12 @@
 # Created by: Rod Person <rodperson@rodperson.com>
-# $FreeBSD: head/sysutils/dunst/Makefile 425216 2016-11-03 14:17:30Z mat $
+# $FreeBSD: head/sysutils/dunst/Makefile 445280 2017-07-07 16:34:12Z sunpoet $
 
 PORTNAME=	dunst
 PORTVERSION=	1.1.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
-MAINTAINER=	rodperson@rodperson.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Lightweight notification daemon
 
 LICENSE=	BSD3CLAUSE

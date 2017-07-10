@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 445211 2017-07-07 07:51:52Z ehaupt $
+# $FreeBSD: head/games/Makefile 445298 2017-07-08 03:14:31Z swills $
 #
 
     COMMENT = Games and related software
@@ -624,6 +624,7 @@
     SUBDIR += mopesnake
     SUBDIR += moria
     SUBDIR += motogt
+    SUBDIR += mrboom
     SUBDIR += mt_dolphin_ia
     SUBDIR += mt_gtk_client
     SUBDIR += mtaserver
@@ -865,6 +866,7 @@
     SUBDIR += rtb
     SUBDIR += rubix
     SUBDIR += rubygem-fortune_gem
+    SUBDIR += rubygem-vimgolf
     SUBDIR += sampsvr
     SUBDIR += sarien
     SUBDIR += sauerbraten

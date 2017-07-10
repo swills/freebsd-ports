@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Minion/Makefile 445181 2017-07-06 20:57:52Z sunpoet $
+# $FreeBSD: head/devel/p5-Minion/Makefile 445270 2017-07-07 16:33:27Z sunpoet $
 
 PORTNAME=	Minion
-PORTVERSION=	7.02
+PORTVERSION=	7.03
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:SRI
@@ -23,7 +23,7 @@ USE_PERL5=	configure
 
 OPTIONS_DEFINE=	PGSQL
 
-PGSQL_BUILD_DEPENDS=	p5-Mojo-Pg>=2.18:databases/p5-Mojo-Pg
+PGSQL_BUILD_DEPENDS=	p5-Mojo-Pg>=4.0:databases/p5-Mojo-Pg
 PGSQL_RUN_DEPENDS=	${PGSQL_BUILD_DEPENDS}
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/oniguruma6/Makefile 440155 2017-05-05 13:52:21Z miwi $
+# $FreeBSD: head/devel/oniguruma6/Makefile 445350 2017-07-08 22:43:41Z brnrd $
 
 PORTNAME=	oniguruma
-PORTVERSION=	6.1.3
+PORTVERSION=	6.4.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel textproc
 PKGNAMESUFFIX=	6

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-python-engineio/Makefile 444879 2017-07-02 12:26:53Z mmokhi $
+# $FreeBSD: head/devel/py-python-engineio/Makefile 445319 2017-07-08 11:25:45Z mmokhi $
 
 PORTNAME=	python-engineio
-PORTVERSION=	1.6.0
+PORTVERSION=	1.7.0
 CATEGORIES=	devel python net
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

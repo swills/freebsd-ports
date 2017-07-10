@@ -1,8 +1,8 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/math/R-cran-car/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/math/R-cran-car/Makefile 445398 2017-07-09 10:07:34Z dbn $
 
 PORTNAME=	car
-DISTVERSION=	2.1-4
+DISTVERSION=	2.1-5
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

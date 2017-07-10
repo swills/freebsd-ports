@@ -1,11 +1,12 @@
 # Created by: ijliao
-# $FreeBSD: head/print/p5-XML-Handler-AxPoint/Makefile 444842 2017-07-01 20:57:26Z sunpoet $
+# $FreeBSD: head/print/p5-XML-Handler-AxPoint/Makefile 445329 2017-07-08 13:53:18Z sunpoet $
 
 PORTNAME=	XML-Handler-AxPoint
 PORTVERSION=	1.5
 CATEGORIES=	print perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:MSERGEANT
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	XML Based Presentations
@@ -20,7 +21,7 @@ BUILD_DEPENDS=	p5-PDFLib>=0.14:print/p5-PDFLib \
 		p5-XML-SAX-Writer>=0.39:textproc/p5-XML-SAX-Writer
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-PORTSCOUT=	skipv:1.30
+PORTSCOUT=	skipv:1.21,1.30
 
 NO_ARCH=	yes
 USES=		perl5

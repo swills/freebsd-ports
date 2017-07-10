@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-glib2/Makefile 442189 2017-05-31 14:54:00Z sunpoet $
+# $FreeBSD: head/devel/rubygem-glib2/Makefile 445369 2017-07-09 06:59:02Z sunpoet $
 
 PORTNAME=	glib2
-PORTVERSION=	3.1.4
+PORTVERSION=	3.1.6
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

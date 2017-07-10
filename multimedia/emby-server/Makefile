@@ -1,8 +1,8 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/multimedia/emby-server/Makefile 443483 2017-06-12 23:12:19Z woodsb02 $
+# $FreeBSD: head/multimedia/emby-server/Makefile 445399 2017-07-09 10:07:37Z woodsb02 $
 
 PORTNAME=	emby-server
-PORTVERSION=	3.2.20.0
+PORTVERSION=	3.2.24.0
 CATEGORIES=	multimedia
 
 MAINTAINER=	woodsb02@FreeBSD.org

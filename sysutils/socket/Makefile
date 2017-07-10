@@ -1,5 +1,5 @@
 # Created by: wosch
-# $FreeBSD: head/sysutils/socket/Makefile 358877 2014-06-23 00:21:54Z wg $
+# $FreeBSD: head/sysutils/socket/Makefile 445315 2017-07-08 10:32:22Z lme $
 
 PORTNAME=	socket
 PORTVERSION=	1.1
@@ -12,6 +12,9 @@ MAINTAINER=	wosch@FreeBSD.org
 COMMENT=	Create TCP socket and connect to stdin/out
 
 LICENSE=	GPLv1
+
+DEPRECATED=	Out of date
+EXPIRATION_DATE=	2017-09-01
 
 MAKE_ENV+=	SWITCHES="-DUSE_INET6 -DHAVE_SYS_PARAM_H -Wall"
 PLIST_FILES=	bin/socket man/man1/socket.1.gz

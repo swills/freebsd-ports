@@ -1,14 +1,14 @@
 # Created by: Neil Booth
-# $FreeBSD: head/finance/electrum/Makefile 436754 2017-03-23 03:02:28Z jrm $
+# $FreeBSD: head/finance/electrum/Makefile 445227 2017-07-07 09:42:54Z robak $
 
 PORTNAME=	electrum
-PORTVERSION=	2.8.2
+PORTVERSION=	2.8.3
 CATEGORIES=	finance python
 MASTER_SITES=	https://download.electrum.org/${PORTVERSION}/ \
 		http://download.electrum.org/${PORTVERSION}/
 DISTNAME=	Electrum-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	amutu@amutu.com
 COMMENT=	Easy to use Bitcoin client
 
 LICENSE=	MIT

@@ -1,8 +1,7 @@
-# $FreeBSD: head/net/openmpi2/Makefile 441819 2017-05-27 00:20:19Z linimon $
+# $FreeBSD: head/net/openmpi2/Makefile 445411 2017-07-09 21:03:58Z danilo $
 
 PORTNAME=	openmpi
-PORTVERSION=	2.0.2
-PORTREVISION=	4
+PORTVERSION=	2.1.1
 CATEGORIES=	net parallel
 MASTER_SITES=	http://www.open-mpi.org/software/ompi/v${PORTVERSION:R}/downloads/
 PKGNAMESUFFIX=	2
@@ -45,6 +44,7 @@ CONFIGURE_ARGS+=	--prefix=${PREFIX}/${MPIDIR} \
 			--enable-heterogeneous \
 			--enable-mpi-thread-multiple \
 			--with-libevent=external \
+			--with-wrapper-ldflags=-Wl,-rpath=-Wl,-rpath=${LOCALBASE}/lib/gcc${_GCC_VER} \
 			ompi_cv_fortran_ignore_tkr_data=0
 
 USE_LDCONFIG=	${PREFIX}/${MPIDIR}/lib \

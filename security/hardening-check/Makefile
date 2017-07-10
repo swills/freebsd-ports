@@ -1,10 +1,11 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/security/hardening-check/Makefile 445088 2017-07-05 18:02:02Z pi $
+# $FreeBSD: head/security/hardening-check/Makefile 445362 2017-07-09 02:48:21Z ultima $
 
 PORTNAME=	hardening-check
 PORTVERSION=	2.6
 CATEGORIES=	security
-MASTER_SITES=	http://http.debian.net/debian/pool/main/h/hardening-wrapper/
+MASTER_SITES=	DEBIAN
+MASTER_SITE_SUBDIR=	pool/main/h/hardening-wrapper
 DISTNAME=	hardening-wrapper_${PORTVERSION}
 
 MAINTAINER=	amutu@amutu.com
@@ -14,7 +15,6 @@ LICENSE=	GPLv2+
 
 USES=		tar:xz shebangfix perl5
 
-SHEBANG_LANG=	perl
 SHEBANG_FILES=	${PORTNAME}
 
 NO_BUILD=	yes

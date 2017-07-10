@@ -1,5 +1,5 @@
 # Created by: wosch
-# $FreeBSD: head/mail/movemail/Makefile 367569 2014-09-07 16:29:18Z antoine $
+# $FreeBSD: head/mail/movemail/Makefile 445312 2017-07-08 09:37:52Z lme $
 
 PORTNAME=	movemail
 PORTVERSION=	1.0
@@ -9,6 +9,9 @@ MASTER_SITES=	http://wolfram.schneider.org/src/
 
 MAINTAINER=	wosch@FreeBSD.org
 COMMENT=	Move your mail box to another location
+
+DEPRECATED=	Out of date
+EXPIRATION_DATE=	2017-09-01
 
 USES=		uidfix
 

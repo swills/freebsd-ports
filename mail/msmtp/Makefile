@@ -1,8 +1,9 @@
 # Created by: R.I.Pienaar <rip@devco.net>
-# $FreeBSD: head/mail/msmtp/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/mail/msmtp/Makefile 445367 2017-07-09 04:47:17Z novel $
 
 PORTNAME=	msmtp
 PORTVERSION=	1.6.6
+PORTREVISION=	1
 CATEGORIES=	mail ipv6
 MASTER_SITES=	SF
 
@@ -34,6 +35,7 @@ IDN_LIB_DEPENDS=	libidn.so:dns/libidn
 LIBSECRET_CONFIGURE_WITH=	libsecret
 LIBSECRET_LIB_DEPENDS=	libsecret-1.so:security/libsecret
 MSMTPQ_PORTDOCS=	README.msmtpq
+MSMTPQ_RUN_DEPENDS=	bash:shells/bash
 NLS_CONFIGURE_ENABLE=	nls
 NLS_USES=		gettext
 

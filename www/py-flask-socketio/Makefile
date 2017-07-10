@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-flask-socketio/Makefile 437555 2017-04-02 13:42:11Z mmokhi $
+# $FreeBSD: head/www/py-flask-socketio/Makefile 445320 2017-07-08 11:27:39Z mmokhi $
 
 PORTNAME=	Flask-SocketIO
-PORTVERSION=	2.8.6
+PORTVERSION=	2.9.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,8 @@
 # Created by: Thomas Sandford <freebsduser@paradisegreen.co.uk>
-# $FreeBSD: head/www/drush/Makefile 440219 2017-05-06 05:49:13Z miwi $
+# $FreeBSD: head/www/drush/Makefile 445314 2017-07-08 10:28:28Z pi $
 
 PORTNAME=	drush
-PORTVERSION=	8.1.11
+PORTVERSION=	8.1.12
 CATEGORIES=	www
 MASTER_SITES=	https://github.com/drush-ops/drush/releases/download/${DISTVERSION}/
 DISTNAME=	drush

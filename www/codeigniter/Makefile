@@ -1,8 +1,8 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/www/codeigniter/Makefile 439353 2017-04-25 02:34:54Z junovitch $
+# $FreeBSD: head/www/codeigniter/Makefile 445355 2017-07-08 23:44:57Z junovitch $
 
 PORTNAME=	codeigniter
-PORTVERSION=	3.1.4
+PORTVERSION=	3.1.5
 CATEGORIES=	www
 
 MAINTAINER=	junovitch@FreeBSD.org

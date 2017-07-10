@@ -1,5 +1,5 @@
 # Created by: wosch
-# $FreeBSD: head/german/phone/Makefile 345183 2014-02-20 08:23:14Z ehaupt $
+# $FreeBSD: head/german/phone/Makefile 445311 2017-07-08 09:25:58Z lme $
 
 PORTNAME=	phone
 PORTVERSION=	1.0
@@ -10,6 +10,9 @@ EXTRACT_SUFX=	.gz
 
 MAINTAINER=	wosch@FreeBSD.org
 COMMENT=	German phone code / Deutsche Telefonvorwahl (AVON)
+
+DEPRECATED=	Out of date
+EXPIRATION_DATE=	2017-09-01
 
 PLIST_FILES=	share/misc/de.phone
 NO_WRKSUBDIR=	YES

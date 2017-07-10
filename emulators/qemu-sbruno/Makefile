@@ -1,9 +1,8 @@
 # Created by: Juergen Lock <nox@jelal.kn-bremen.de>
-# $FreeBSD: head/emulators/qemu-sbruno/Makefile 443528 2017-06-13 17:45:02Z sbruno $
+# $FreeBSD: head/emulators/qemu-sbruno/Makefile 445283 2017-07-07 21:01:43Z sbruno $
 
 PORTNAME=	qemu
-PORTVERSION=	2.9.50.g20170611
-PORTREVISION=	1
+PORTVERSION=	2.9.50.g20170707
 CATEGORIES=	emulators
 MASTER_SITES=	GH \
 		LOCAL/nox:dtc \
@@ -20,7 +19,7 @@ LICENSE=	GPLv2
 USE_GITHUB=	yes
 GH_ACCOUNT=	seanbruno
 GH_PROJECT=	${PORTNAME}-bsd-user
-GH_TAGNAME=	43acb36
+GH_TAGNAME=	4be4b3a
 HAS_CONFIGURE=	yes
 USES=		gmake pkgconfig bison perl5 python:2,build
 USE_PERL5=	build

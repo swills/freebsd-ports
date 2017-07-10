@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 444883 2017-07-02 13:35:11Z rene $
+# $FreeBSD: head/deskutils/Makefile 445288 2017-07-08 00:12:53Z swills $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -225,10 +225,12 @@
     SUBDIR += tagutils
     SUBDIR += taskcoach
     SUBDIR += taskd
+    SUBDIR += tasksh
     SUBDIR += taskwarrior
     SUBDIR += teapot
     SUBDIR += tel
     SUBDIR += thinkingrock
+    SUBDIR += timewarrior
     SUBDIR += tine20
     SUBDIR += tnote
     SUBDIR += todo

@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/security/libp11/Makefile 438386 2017-04-12 16:41:24Z ale $
+# $FreeBSD: head/security/libp11/Makefile 445230 2017-07-07 09:56:06Z ale $
 
 PORTNAME=	libp11
-PORTVERSION=	0.4.5
+PORTVERSION=	0.4.7
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	security devel
 

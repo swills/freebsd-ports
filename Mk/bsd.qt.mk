@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.qt.mk 445169 2017-07-06 20:40:51Z tcberner $
+# $FreeBSD: head/Mk/bsd.qt.mk 445316 2017-07-08 10:44:13Z rakuco $
 #
 # Port variables:
 # USE_QT*			- List of Qt modules to depend on, with optional '_build'
@@ -596,7 +596,7 @@ websockets_PORT=	www/${_QT_RELNAME}-websockets
 websockets_LIB=	libQt${_QT_LIBVER}WebSockets.so
 
 websockets-qml_PORT=	www/${_QT_RELNAME}-websockets-qml
-websockets-qml_LIB=	${QT_QMLDIR}/QtWebSockets/libdeclarative_qmlwebsockets.so
+websockets-qml_PATH=	${QT_QMLDIR}/QtWebSockets/qmldir
 
 webkit_PORT=		www/${_QT_RELNAME}-webkit
 webkit_LIB=	libQt${_QT_LIBVER}WebKit.so

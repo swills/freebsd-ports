@@ -1,9 +1,9 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/sysutils/p5-BSD-Sysctl/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/sysutils/p5-BSD-Sysctl/Makefile 445326 2017-07-08 13:45:34Z swills $
 
 PORTNAME=	BSD-Sysctl
 PORTVERSION=	0.11
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

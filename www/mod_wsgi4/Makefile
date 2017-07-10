@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/mod_wsgi4/Makefile 436462 2017-03-19 01:46:28Z wen $
+# $FreeBSD: head/www/mod_wsgi4/Makefile 445348 2017-07-08 22:33:45Z lme $
 
 PORTNAME=	mod_wsgi
-PORTVERSION=	4.5.15
+PORTVERSION=	4.5.17
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}

@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/rubygem-gdk_pixbuf2/Makefile 442194 2017-05-31 14:54:26Z sunpoet $
+# $FreeBSD: head/graphics/rubygem-gdk_pixbuf2/Makefile 445374 2017-07-09 06:59:27Z sunpoet $
 
 PORTNAME=	gdk_pixbuf2
-PORTVERSION=	3.1.4
+PORTVERSION=	3.1.6
 CATEGORIES=	graphics rubygems
 MASTER_SITES=	RG
 

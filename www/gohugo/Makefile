@@ -1,14 +1,14 @@
-# $FreeBSD: head/www/gohugo/Makefile 445193 2017-07-07 00:57:15Z ultima $
+# $FreeBSD: head/www/gohugo/Makefile 445406 2017-07-09 13:38:01Z lme $
 
 PORTNAME=	hugo
-PORTVERSION=	0.24.1
+PORTVERSION=	0.25
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	go
 DIST_SUBDIR=	${PKGNAMEPREFIX}${PORTNAME}
 
 MAINTAINER=	ben.lavery@hashbang0.com
-COMMENT=	Fast and modern static website engine
+COMMENT=	Fast and flexible static site generator
 
 LICENSE=	APACHE20
 
@@ -56,6 +56,7 @@ GH_TUPLE=	BurntSushi:toml:8fb9fdc:toml/src/github.com/BurntSushi/toml \
 		stretchr:testify:f6abca5:testify/src/github.com/stretchr/testify \
 		yosssi:ace:ea038f4:ace/src/github.com/yosssi/ace \
 		golang:crypto:850760c:crypto/src/golang.org/x/crypto \
+		golang:image:426cfd8:image/src/golang.org/x/image \
 		golang:net:ddf80d0:net/src/golang.org/x/net \
 		golang:sys:fb4cac3:sys/src/golang.org/x/sys \
 		golang:text:9e2f80a:text/src/golang.org/x/text \

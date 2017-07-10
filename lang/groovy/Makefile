@@ -1,8 +1,8 @@
 # Created by: Herve Quiroz <hq@FreeBSD.org>
-# $FreeBSD: head/lang/groovy/Makefile 431568 2017-01-15 15:08:27Z junovitch $
+# $FreeBSD: head/lang/groovy/Makefile 445353 2017-07-08 23:34:34Z junovitch $
 
 PORTNAME=	groovy
-DISTVERSION=	2.4.8
+DISTVERSION=	2.4.12
 CATEGORIES=	lang java
 MASTER_SITES=	http://dl.bintray.com/groovy/maven/
 DISTFILES=	apache-groovy-binary-${PORTVERSION}${EXTRACT_SUFX}

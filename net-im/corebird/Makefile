@@ -1,9 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/net-im/corebird/Makefile 444002 2017-06-20 20:41:24Z cpm $
+# $FreeBSD: head/net-im/corebird/Makefile 445343 2017-07-08 17:00:41Z cpm $
 
 PORTNAME=	corebird
-PORTVERSION=	1.5
-PORTREVISION=	2
+PORTVERSION=	1.5.1
 CATEGORIES=	net-im
 
 MAINTAINER=	cpm@FreeBSD.org
@@ -43,8 +42,11 @@ NLS_CONFIGURE_OFF=		--disable-nls
 GLIB_SCHEMAS=	org.baedert.corebird.gschema.xml
 
 post-extract:
-	@(cd ${WRKSRC}/data && ${MV} org.baedert.corebird.desktop.in \
-		corebird.desktop.in)
+	@${REINPLACE_CMD} -e 's|tests||' ${WRKSRC}/Makefile.am
+	@${REINPLACE_CMD} -e 's|org.baedert.corebird.desktop.in|corebird.desktop.in|' \
+		${WRKSRC}/data/Makefile.am
+	@cd ${WRKSRC}/data && ${MV} org.baedert.corebird.desktop.in \
+		corebird.desktop.in
 
 # Replace locales files in right place
 post-configure:
