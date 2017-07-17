@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-recog/Makefile 444245 2017-06-24 21:24:29Z antoine $
+# $FreeBSD: head/security/rubygem-recog/Makefile 445704 2017-07-13 18:38:42Z antoine $
 
 PORTNAME=	recog
-PORTVERSION=	2.1.9
+PORTVERSION=	2.1.11
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

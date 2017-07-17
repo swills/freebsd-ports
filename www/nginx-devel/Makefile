@@ -1,8 +1,8 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/nginx-devel/Makefile 445025 2017-07-04 15:44:05Z osa $
+# $FreeBSD: head/www/nginx-devel/Makefile 445646 2017-07-13 11:17:36Z osa $
 
 PORTNAME=	nginx
-PORTVERSION=	1.13.2
+PORTVERSION=	1.13.3
 CATEGORIES=	www
 MASTER_SITES=	http://nginx.org/download/
 MASTER_SITES+=	LOCAL/osa
@@ -1138,9 +1138,8 @@ CONFIGURE_ARGS+=--add-module=${WRKSRC_arrayvar}
 .endif
 
 .if ${PORT_OPTIONS:MBROTLI}
-NGINX_BROTLI_VERSION=	ada972b
-LIB_DEPENDS+=	libbrotlidec.so:devel/libbrotli \
-		libbrotlienc.so:devel/libbrotli
+NGINX_BROTLI_VERSION=	12529813
+LIB_DEPENDS+=	libbrotlicommon.so:archivers/brotli
 GH_ACCOUNT+=	google:brotli
 GH_PROJECT+=	ngx_brotli:brotli
 GH_TAGNAME+=	${NGINX_BROTLI_VERSION}:brotli

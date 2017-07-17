@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-ref/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-ref/Makefile 445527 2017-07-11 17:03:04Z sunpoet $
 
 PORTNAME=	ref
 PORTVERSION=	2.0.0
@@ -9,9 +9,9 @@ MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Library with refs across runtimes (MRI, REE, YARV, ...)
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/MIT_LICENSE
 
 NO_ARCH=	yes
-
 USE_RUBY=	yes
 USES=		gem
 

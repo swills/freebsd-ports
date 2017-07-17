@@ -1,9 +1,9 @@
 # Created by: Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
-# $FreeBSD: head/biology/molden/Makefile 444104 2017-06-22 08:24:22Z mat $
+# $FreeBSD: head/biology/molden/Makefile 445717 2017-07-13 21:56:29Z jmd $
 
 PORTNAME=	molden
 PORTVERSION=	5.7
-PORTREVISION=	8
+PORTREVISION=	10
 PORTEPOCH=	1
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.cmbi.ru.nl/pub/molgraph/molden/
@@ -19,13 +19,11 @@ LICENSE_PERMS=	auto-accept
 
 RESTRICTED=	free for academic, non profit usage; do not re-distribute source and executable.
 
-BROKEN=		Fails to fetch
-
 WRKSRC=		${WRKDIR}/${PORTNAME}${PORTVERSION}
 
 USES=		fortran gmake
 USE_XORG=	x11
-USE_GL=		glu
+USE_GL=		gl glu
 MAKEFILE=	makefile
 MAKE_JOBS_UNSAFE=yes
 

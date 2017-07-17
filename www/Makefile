@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 445169 2017-07-06 20:40:51Z tcberner $
+# $FreeBSD: head/www/Makefile 446016 2017-07-16 16:09:41Z sunpoet $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -350,7 +350,6 @@
     SUBDIR += libevhtp
     SUBDIR += libgtkhtml
     SUBDIR += libhpack
-    SUBDIR += libhtp-suricata
     SUBDIR += libhubbub
     SUBDIR += libjwt
     SUBDIR += libmicrohttpd
@@ -392,7 +391,6 @@
     SUBDIR += mathjax
     SUBDIR += mathopd
     SUBDIR += mediawiki123
-    SUBDIR += mediawiki126
     SUBDIR += mediawiki127
     SUBDIR += mediawiki128
     SUBDIR += mergelog
@@ -1031,6 +1029,7 @@
     SUBDIR += p5-HTTP-Tiny
     SUBDIR += p5-HTTP-Tiny-SPDY
     SUBDIR += p5-HTTP-WebTest
+    SUBDIR += p5-HTTP-XSCookies
     SUBDIR += p5-HTTPD-Log-Filter
     SUBDIR += p5-HTTPD-User-Manage
     SUBDIR += p5-Hijk
@@ -1958,6 +1957,7 @@
     SUBDIR += rubygem-feed-normalizer
     SUBDIR += rubygem-feedjira
     SUBDIR += rubygem-flowdock
+    SUBDIR += rubygem-fuzzyurl
     SUBDIR += rubygem-geminabox
     SUBDIR += rubygem-gitlab-flowdock-git-hook
     SUBDIR += rubygem-gitlab-gollum-lib
@@ -2063,6 +2063,7 @@
     SUBDIR += rubygem-rack-cache
     SUBDIR += rubygem-rack-contrib
     SUBDIR += rubygem-rack-cors
+    SUBDIR += rubygem-rack-cors0
     SUBDIR += rubygem-rack-mount
     SUBDIR += rubygem-rack-openid
     SUBDIR += rubygem-rack-protection

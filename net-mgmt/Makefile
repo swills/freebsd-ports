@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 444853 2017-07-01 22:09:34Z rene $
+# $FreeBSD: head/net-mgmt/Makefile 445504 2017-07-11 16:50:03Z zeising $
 #
 
     COMMENT = Network management tools
@@ -188,6 +188,7 @@
     SUBDIR += ng_ipacct
     SUBDIR += nitpicker
     SUBDIR += nrpe
+    SUBDIR += nrpe3
     SUBDIR += nrpe-ssl
     SUBDIR += nsca
     SUBDIR += nsca-client

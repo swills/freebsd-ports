@@ -1,8 +1,8 @@
 # Created by: David Kalliecharan <dave@dal.ca>
-# $FreeBSD: head/devel/py-rply/Makefile 433761 2017-02-09 18:10:09Z amdmi3 $
+# $FreeBSD: head/devel/py-rply/Makefile 445721 2017-07-14 00:21:29Z dbaio $
 
 PORTNAME=	rply
-PORTVERSION=	0.7.4
+PORTVERSION=	0.7.5
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

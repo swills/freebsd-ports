@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-configparser/Makefile 420280 2016-08-16 11:33:08Z robak $
+# $FreeBSD: head/devel/py-configparser/Makefile 445861 2017-07-15 09:38:06Z koobs $
 
 PORTNAME=	configparser
 PORTVERSION=	3.5.0
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
@@ -12,7 +13,9 @@ COMMENT=	INI style configuration file parser
 
 LICENSE=	MIT
 
-USES=		python:2
+USES=		python
 USE_PYTHON=	distutils autoplist
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

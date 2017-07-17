@@ -1,4 +1,4 @@
-# $FreeBSD: head/UIDs 444689 2017-06-29 21:05:33Z olivier $
+# $FreeBSD: head/UIDs 445869 2017-07-15 11:02:43Z dvl $
 # Please keep this file sorted by UID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/master.passwd
@@ -163,7 +163,7 @@ drizzle:*:213:213::0:0:Drizzle daemon:/var/db/drizzle:/usr/sbin/nologin
 kyototycoon:*:214:214::0:0:kyototycoon user:/var/empty:/usr/sbin/nologin
 opendnssec:*:215:215::0:0:Opendnssec Pseudo User:/nonexistent:/usr/sbin/nologin
 nsd:*:216:216::0:0:NSD DNS Server:/nonexistent:/usr/sbin/nologin
-# free: 217
+anvil:*:217:217::0:0:anvil certificate dropper:/var/db/anvil:/bin/sh
 # free: 218
 # free: 219
 bs:*:220:220::0:0:Big Sister:/usr/local/bigsister:/bin/sh

@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-django-guardian/Makefile 439234 2017-04-23 16:14:44Z rm $
+# $FreeBSD: head/www/py-django-guardian/Makefile 445825 2017-07-14 20:17:03Z rm $
 
 PORTNAME=	django-guardian
-PORTVERSION=	1.4.8
+PORTVERSION=	1.4.9
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,8 @@
 # Created by: arved
-# $FreeBSD: head/textproc/py-chardet/Makefile 442803 2017-06-06 20:55:21Z rm $
+# $FreeBSD: head/textproc/py-chardet/Makefile 445822 2017-07-14 20:15:14Z rm $
 
 PORTNAME=	chardet
-PORTVERSION=	3.0.3
+PORTVERSION=	3.0.4
 CATEGORIES=	textproc python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MASTER_SITES=	CHEESESHOP

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-semantic_puppet0/Makefile 441342 2017-05-20 21:50:21Z sunpoet $
+# $FreeBSD: head/devel/rubygem-semantic_puppet0/Makefile 445542 2017-07-11 19:13:21Z sunpoet $
 
 PORTNAME=	semantic_puppet
 PORTVERSION=	0.1.4
@@ -13,6 +13,9 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-gettext-setup>=0.3:devel/rubygem-gettext-setup
+
+DEPRECATED=	Use devel/rubygem-semantic_puppet instead
+EXPIRATION_DATE=2017-07-31
 
 PORTSCOUT=	limit:^0\.
 

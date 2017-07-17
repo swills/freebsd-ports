@@ -1,8 +1,8 @@
 # Created by: scrappy
-# $FreeBSD: head/security/p5-IO-Socket-SSL/Makefile 444803 2017-06-30 22:14:44Z sunpoet $
+# $FreeBSD: head/security/p5-IO-Socket-SSL/Makefile 445805 2017-07-14 19:17:05Z brd $
 
 PORTNAME=	IO-Socket-SSL
-PORTVERSION=	2.044
+PORTVERSION=	2.049
 PORTREVISION=	1
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
@@ -22,7 +22,7 @@ NO_ARCH=	yes
 USES=		perl5 shebangfix
 USE_PERL5=	configure
 
-CONFIGURE_ARGS=	< /dev/null
+CONFIGURE_ENV=	NO_NETWORK_TESTING=yes
 
 OPTIONS_DEFINE=	EXAMPLES IDN
 

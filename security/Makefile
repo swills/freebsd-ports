@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 445344 2017-07-08 17:04:28Z antoine $
+# $FreeBSD: head/security/Makefile 445467 2017-07-11 04:13:11Z cy $
 #
 
     COMMENT = Security tools
@@ -299,6 +299,7 @@
     SUBDIR += krb5-114
     SUBDIR += krb5-115
     SUBDIR += krb5-appl
+    SUBDIR += krb5-devel
     SUBDIR += kripp
     SUBDIR += kstart
     SUBDIR += kwalletmanager
@@ -343,6 +344,7 @@
     SUBDIR += libssh2
     SUBDIR += libtasn1
     SUBDIR += libtomcrypt
+    SUBDIR += libu2f-host
     SUBDIR += libuecc
     SUBDIR += libwhisker
     SUBDIR += libyubikey

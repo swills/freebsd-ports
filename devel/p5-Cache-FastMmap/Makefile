@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Cache-FastMmap/Makefile 436297 2017-03-16 20:55:07Z sunpoet $
+# $FreeBSD: head/devel/p5-Cache-FastMmap/Makefile 445902 2017-07-15 17:23:38Z sunpoet $
 
 PORTNAME=	Cache-FastMmap
-PORTVERSION=	1.45
+PORTVERSION=	1.46
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN CPAN/Cache
 MASTER_SITE_SUBDIR=	CPAN:ROBM

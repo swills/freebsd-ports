@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/postgis21/Makefile 429621 2016-12-27 14:52:34Z pi $
+# $FreeBSD: head/databases/postgis21/Makefile 446033 2017-07-16 16:12:21Z sunpoet $
 
 PORTNAME=	postgis
 PORTVERSION=	2.1.8
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libproj.so:graphics/proj \
 		libgeos.so:graphics/geos \
 		libjson-c.so:devel/json-c
 
-CONFLICTS=	postgis20-2.0.* postgis22-*
+CONFLICTS_INSTALL=	postgis20 postgis22 postgis23
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	${ICONV_CONFIGURE_BASE}

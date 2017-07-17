@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/libhtp/Makefile 443671 2017-06-16 07:59:47Z koobs $
+# $FreeBSD: head/devel/libhtp/Makefile 446052 2017-07-17 05:52:20Z koobs $
 
 PORTNAME=	libhtp
-PORTVERSION=	0.5.24
+PORTVERSION=	0.5.25
 CATEGORIES=	devel
 
 MAINTAINER=	koobs@FreeBSD.org
@@ -22,11 +22,7 @@ CONFIGURE_ARGS=	${ICONV_CONFIGURE_ARG}
 MAKE_ARGS=	LIBS="-lz ${ICONV_LIB}"
 LDFLAGS+=	-L${LOCALBASE}/lib
 
-INSTALL_TARGET=		install-strip
-TEST_TARGET=		check
-
-CONFLICTS_INSTALL=	libhtp-suricata-*
-
-PLIST_SUB+=	PORTVERSION="${PORTVERSION}"
+INSTALL_TARGET=	install-strip
+TEST_TARGET=	check
 
 .include <bsd.port.mk>

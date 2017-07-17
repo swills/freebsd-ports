@@ -1,8 +1,8 @@
 # Created by: Peter Schuller <peter.schuller@infidyne.com>
-# $FreeBSD: head/devel/py-boto/Makefile 442797 2017-06-06 20:52:01Z rm $
+# $FreeBSD: head/devel/py-boto/Makefile 445827 2017-07-14 20:18:03Z rm $
 
 PORTNAME=	boto
-PORTVERSION=	2.47.0
+PORTVERSION=	2.48.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

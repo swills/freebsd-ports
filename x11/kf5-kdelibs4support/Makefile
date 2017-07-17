@@ -1,5 +1,5 @@
 # Created by: tcberner
-# $FreeBSD: head/x11/kf5-kdelibs4support/Makefile 443783 2017-06-17 18:42:42Z tcberner $
+# $FreeBSD: head/x11/kf5-kdelibs4support/Makefile 445579 2017-07-12 09:42:50Z tcberner $
 
 PORTNAME=	kdelibs4support
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -13,11 +13,11 @@ BUILD_DEPENDS=	p5-URI>=0:net/p5-URI
 USES=		cmake:outsource compiler:c++11-lib gettext kde:5 shebangfix \
 		tar:xz
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
-		coreaddons crash dbusaddons doctools globalaccel guiaddons \
+		coreaddons crash dbusaddons doctools emoticons globalaccel guiaddons \
 		i18n iconthemes itemviews jobwidgets kded kio notifications \
 		parts service solid sonnet textwidgets unitconversion \
 		widgetsaddons windowsystem xmlgui \
-		designerplugin_build designerplugin_run emoticons_run \
+		designerplugin_build designerplugin_run \
 		itemmodels_run
 USE_QT5=	buildtools_build core dbus designer gui network \
 		printsupport qmake_build svg testlib widgets \

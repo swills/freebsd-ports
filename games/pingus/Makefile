@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/games/pingus/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/pingus/Makefile 445758 2017-07-14 14:25:30Z amdmi3 $
 
 PORTNAME=	pingus
 PORTVERSION=	0.7.6
@@ -10,17 +10,17 @@ MASTER_SITES=	http://mirror.amdmi3.ru/distfiles/
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Free Lemmings-like game
 
-LIB_DEPENDS=	libpng.so:graphics/png \
-		libboost_signals.so:devel/boost-libs
-
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+LIB_DEPENDS=	libpng.so:graphics/png \
+		libboost_signals.so:devel/boost-libs
 
 USES=		compiler:c++11-lib iconv scons tar:bzip2
 USE_GL=		gl
 USE_SDL=	sdl image mixer
 LIBS+=		${ICONV_LIB}
-MAKE_ARGS+=	LIBS="${LIBS}"
+MAKE_ARGS=	LIBS="${LIBS}"
 
 PLIST_FILES=	bin/${PORTNAME} \
 		share/pixmaps/${PORTNAME}.png

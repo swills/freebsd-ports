@@ -1,5 +1,5 @@
 # Created by: rooneg@electricjellyfish.net
-# $FreeBSD: head/devel/subversion/Makefile 426260 2016-11-16 18:47:38Z jbeich $
+# $FreeBSD: head/devel/subversion/Makefile 445440 2017-07-10 15:59:30Z lev $
 
 #PORTREVISION=	0
 
@@ -40,6 +40,11 @@ TOOLS_DESC=		Install several tools
 # Patches required for use with the FreeBSD Project repository only
 FREEBSD_TEMPLATE_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-fbsd-template
 SVNSERVE_WRAPPER_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-svnserve-wrapper
+
+USES+=			shebangfix
+python_CMD=		${LOCALBASE}/bin/python2
+python_OLD_CMD+=	"/bin/env python"
+SHEBANG_REGEX=		./tools/.*
 
 .include "Makefile.common"
 

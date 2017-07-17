@@ -1,8 +1,8 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-uv/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/devel/pecl-uv/Makefile 445544 2017-07-11 19:13:34Z sunpoet $
 
 PORTNAME=	uv
-PORTVERSION=	0.1.2
+PORTVERSION=	0.2.2
 CATEGORIES=	devel
 
 MAINTAINER=	johnpupu@gmail.com

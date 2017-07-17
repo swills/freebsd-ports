@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/oniguruma5/Makefile 429166 2016-12-22 15:57:37Z lifanov $
+# $FreeBSD: head/devel/oniguruma5/Makefile 445714 2017-07-13 21:15:21Z pawel $
 
 PORTNAME=	oniguruma
 PORTVERSION=	5.9.6
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
-CONFLICTS_INSTALL=	oniguruma[46]-.*
+CONFLICTS_INSTALL=	oniguruma[46]
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	kkos

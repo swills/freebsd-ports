@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/npth/Makefile 441116 2017-05-17 19:46:25Z jhale $
+# $FreeBSD: head/devel/npth/Makefile 445580 2017-07-12 10:12:15Z jhale $
 
 PORTNAME=	npth
-PORTVERSION=	1.4
+PORTVERSION=	1.5
 CATEGORIES=	devel
 MASTER_SITES=	GNUPG
 

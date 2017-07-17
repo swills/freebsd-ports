@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/cyrus-imapd30/Makefile 444125 2017-06-22 17:39:03Z ume $
+# $FreeBSD: head/mail/cyrus-imapd30/Makefile 445799 2017-07-14 17:34:44Z ume $
 
 PORTNAME=	cyrus-imapd
 PORTVERSION=	3.0.2
@@ -61,12 +61,10 @@ DRAC_CONFIGURE_ON=	--with-drac=${LOCALBASE}
 DRAC_BUILD_DEPENDS=	${LOCALBASE}/lib/libdrac.a:mail/drac
 HTTP_DESC=		Enable HTTP support
 HTTP_CONFIGURE_ENABLE=	http
-#HTTP_BUILD_DEPENDS=	${LOCALBASE}/bin/xxd:editors/vim-lite
 HTTP_LIB_DEPENDS=	libical.so:devel/libical \
 			libnghttp2.so:www/libnghttp2 \
-			libshp.so:devel/shapelib
-# Our libbrotli is too old
-#HTTP_LIB_DEPENDS+=	libbrotlidec.so:devel/libbrotli
+			libshp.so:devel/shapelib \
+			libbrotlidec.so:archivers/brotli
 # Need additional patch to opendkim
 #HTTP_LIB_DEPENDS+=	libopendkim.so:mail/opendkim
 #HTTP_CPPFLAGS+=	-I${LOCALBASE}/include/opendkim

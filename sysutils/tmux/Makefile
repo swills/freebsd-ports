@@ -1,8 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/sysutils/tmux/Makefile 443566 2017-06-14 12:20:36Z mat $
+# $FreeBSD: head/sysutils/tmux/Makefile 445733 2017-07-14 07:58:08Z mat $
 
 PORTNAME=	tmux
 PORTVERSION=	2.5
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://github.com/tmux/tmux/releases/download/${PORTVERSION}/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
@@ -19,7 +20,7 @@ USE_GITHUB=	nodefault
 GH_TUPLE=	imomaliev:tmux-bash-completion:ef56d3e:bash
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=--sysconfdir=${PREFIX}/etc
+CONFIGURE_ARGS=	--sysconfdir=${PREFIX}/etc --enable-utempter
 
 PLIST_FILES=	bin/tmux \
 		man/man1/tmux.1.gz \

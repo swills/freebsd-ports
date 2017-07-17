@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/elixir-comeonin/Makefile 435140 2017-03-01 11:22:14Z olgeni $
+# $FreeBSD: head/security/elixir-comeonin/Makefile 445872 2017-07-15 13:04:34Z olgeni $
 
 PORTNAME=	comeonin
-PORTVERSION=	3.0
+PORTVERSION=	3.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 PKGNAMEPREFIX=	elixir-

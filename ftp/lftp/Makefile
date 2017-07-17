@@ -1,9 +1,8 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/ftp/lftp/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/ftp/lftp/Makefile 446001 2017-07-16 12:44:13Z martymac $
 
 PORTNAME=	lftp
-PORTVERSION=	4.7.7
-PORTREVISION=	1
+PORTVERSION=	4.8.0
 CATEGORIES=	ftp ipv6
 MASTER_SITES=	http://lftp.tech/ftp/ \
 		http://lftp.tech/ftp/old/ \
@@ -57,6 +56,10 @@ post-install-DOCS-on:
 	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.pre.mk>
+
+.if ${ARCH} == powerpc64
+USE_GCC=	yes
+.endif
 
 .if ${SSL_DEFAULT:Mopenssl-devel}
 BROKEN=		Does not build with openssl-devel

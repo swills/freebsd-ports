@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/neomutt/Makefile 443012 2017-06-09 15:17:11Z adamw $
+# $FreeBSD: head/mail/neomutt/Makefile 445804 2017-07-14 18:43:40Z ler $
 
 PORTNAME=	neomutt
-PORTVERSION=	20170609
+PORTVERSION=	20170714
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	mail
 
@@ -20,7 +20,7 @@ USES=		autoreconf iconv:translit localbase shebangfix ssl
 GNU_CONFIGURE=	yes
 
 OPTIONS_SUB=	yes
-SHEBANG_FILES=	smime_keys.pl
+SHEBANG_FILES=	contrib/smime_keys
 
 OPTIONS_DEFINE=	NLS DOCS SASL IDN FLOCK GPGME NOTMUCH
 OPTIONS_DEFAULT=SASL TOKYOCABINET NOTMUCH GPGME LMDB NCURSES

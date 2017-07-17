@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-rex-core/Makefile 441370 2017-05-21 10:54:54Z antoine $
+# $FreeBSD: head/security/rubygem-rex-core/Makefile 445702 2017-07-13 18:36:50Z antoine $
 
 PORTNAME=	rex-core
-PORTVERSION=	0.1.10
+PORTVERSION=	0.1.11
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

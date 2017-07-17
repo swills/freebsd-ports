@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/science/py-pysal/Makefile 428438 2016-12-12 20:58:04Z sunpoet $
+# $FreeBSD: head/science/py-pysal/Makefile 445810 2017-07-14 20:09:59Z sunpoet $
 
 PORTNAME=	pysal
-PORTVERSION=	1.13.0
+PORTVERSION=	1.14.0
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

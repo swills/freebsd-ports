@@ -1,5 +1,5 @@
 # Created by: Scott Sanders <scott@jssjr.com>
-# $FreeBSD: head/www/rubygem-merb-core/Makefile 427855 2016-12-05 07:19:45Z sunpoet $
+# $FreeBSD: head/www/rubygem-merb-core/Makefile 445531 2017-07-11 17:03:24Z sunpoet $
 
 PORTNAME=	merb-core
 PORTVERSION=	1.1.3
@@ -22,13 +22,12 @@ RUN_DEPENDS=	rubygem-bundler>=0:sysutils/rubygem-bundler \
 
 USE_RUBY=	yes
 USES=		gem shebangfix
-SHEBANG_FILES=	spec10/public/webrat/test_app/gems/gems/erubis-2.6.2/bin/erubis \
-		spec10/public/webrat/test_app/gems/gems/erubis-2.6.2/contrib/erubis
 
 PLIST_FILES=	bin/merb
 
-post-patch:
-	@${REINPLACE_CMD} -i '' -e '1s|/.*ruby|${ruby_CMD}|' \
-		${WRKSRC}/spec10/public/core_ext/fixtures/gems/bin/edit_json.rb
+SHEBANG_FILES=	spec10/public/core_ext/fixtures/gems/bin/edit_json.rb \
+		spec10/public/webrat/test_app/gems/gems/erubis-2.6.2/bin/erubis \
+		spec10/public/webrat/test_app/gems/gems/erubis-2.6.2/contrib/erubis
+ruby_OLD_CMD=	/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby
 
 .include <bsd.port.mk>

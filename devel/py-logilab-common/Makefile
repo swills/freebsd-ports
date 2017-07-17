@@ -1,9 +1,8 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/py-logilab-common/Makefile 438632 2017-04-16 11:07:26Z sunpoet $
+# $FreeBSD: head/devel/py-logilab-common/Makefile 445678 2017-07-13 18:10:50Z sunpoet $
 
 PORTNAME=	logilab-common
-PORTVERSION=	1.4.0
-PORTREVISION=	1
+PORTVERSION=	1.4.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

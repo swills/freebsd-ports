@@ -1,14 +1,14 @@
-# $FreeBSD: head/net-mgmt/nagnu/Makefile 428466 2016-12-13 05:45:36Z marino $
+# $FreeBSD: head/net-mgmt/nagnu/Makefile 445614 2017-07-12 23:20:59Z dbaio $
 
 PORTNAME=	nagnu
-PORTVERSION=	1.1.2
-PORTREVISION=	1
+PORTVERSION=	1.1.3
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	fredrik@min-hemsida.net
 COMMENT=	Nagios dashboard
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 

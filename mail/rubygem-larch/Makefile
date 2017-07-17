@@ -1,9 +1,9 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/mail/rubygem-larch/Makefile 432676 2017-01-28 20:53:45Z sunpoet $
+# $FreeBSD: head/mail/rubygem-larch/Makefile 445529 2017-07-11 17:03:13Z sunpoet $
 
 PORTNAME=	larch
 PORTVERSION=	1.1.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail rubygems
 MASTER_SITES=	RG
 
@@ -15,7 +15,7 @@ LICENSE=	GPLv2
 RUN_DEPENDS=	rubygem-highline>=1.5:devel/rubygem-highline \
 		rubygem-sequel3>=3.14:devel/rubygem-sequel3 \
 		rubygem-sqlite3>=1.3:databases/rubygem-sqlite3 \
-		rubygem-trollop>=1.13:devel/rubygem-trollop
+		rubygem-trollop1>=1.13:devel/rubygem-trollop1
 
 NO_ARCH=	yes
 USE_RUBY=	yes

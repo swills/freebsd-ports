@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/www/py-mt/Makefile 376109 2015-01-03 08:41:20Z mva $
+# $FreeBSD: head/www/py-mt/Makefile 445482 2017-07-11 09:00:23Z amdmi3 $
 
 PORTNAME=	mt
 PORTVERSION=	1.0
@@ -11,12 +11,16 @@ DISTNAME=	PyMT-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python module which provides Movable Type XML-RPC connectivity
 
+LICENSE=	PSFL  # says License: python
+
 USES=		python:2
 NO_BUILD=	yes
+NO_ARCH=	yes
+
 PLIST_FILES=	%%PYTHON_SITELIBDIR%%/PyMT.py
 
 do-install:
-	@${MKDIR} ${STAGEDIR}${PYTHON_SITELIBDIR}
-	@${INSTALL_DATA} ${WRKSRC}/PyMT.py ${STAGEDIR}${PYTHON_SITELIBDIR}
+	@${MKDIR} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}
+	${INSTALL_DATA} ${WRKSRC}/PyMT.py ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}
 
 .include <bsd.port.mk>

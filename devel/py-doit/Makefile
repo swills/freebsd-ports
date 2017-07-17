@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-doit/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-doit/Makefile 445868 2017-07-15 10:42:23Z koobs $
 
 PORTNAME=	doit
-PORTVERSION=	0.29.0
+PORTVERSION=	0.30.3
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,16 +18,12 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six \
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest \
 		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock
 
-USES=		python
+USES=		python:3.3+
 USE_PYTHON=	distutils autoplist
 
 NO_ARCH=	yes
 
 .include <bsd.port.pre.mk>
-
-.if ${PYTHON_REL} < 3000
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}configparser>0:devel/py-configparser
-.endif
 
 do-test:
 	@cd ${WRKSRC} && ${PYTHON_CMD} -m pytest

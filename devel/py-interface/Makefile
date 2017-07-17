@@ -1,8 +1,8 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/py-interface/Makefile 375793 2014-12-29 15:43:40Z olgeni $
+# $FreeBSD: head/devel/py-interface/Makefile 445486 2017-07-11 09:47:52Z olgeni $
 
 PORTNAME=	interface
-PORTVERSION=	1.3
+PORTVERSION=	2.2
 CATEGORIES=	devel python
 MASTER_SITES=	http://www.lysator.liu.se/~tab/erlang/py_interface/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,15 +17,14 @@ USES=			python
 USE_PYTHON=		distutils
 PYDISTUTILS_PKGNAME=	py_${PORTNAME}
 DOCSDIR=	${PREFIX}/share/doc/py_${PORTNAME}
-EXAMPLESDIR=	${PREFIX}/share/examples/py_${PORTNAME}
+# EXAMPLESDIR=	${PREFIX}/share/examples/py_${PORTNAME}
 
-OPTIONS_DEFINE=	DOCS EXAMPLES
+OPTIONS_DEFINE=	DOCS
 
 post-install:
-	@${TRUE}
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	cd ${WRKSRC} && ${INSTALL_DATA} README ${STAGEDIR}${DOCSDIR}
-	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
-	cd ${WRKSRC}/examples && ${INSTALL_DATA} * ${STAGEDIR}${EXAMPLESDIR}
+#	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
+#	cd ${WRKSRC}/examples && ${INSTALL_DATA} * ${STAGEDIR}${EXAMPLESDIR}
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Yuan-Chen Cheng <ycheng@sinica.edu.tw>
-# $FreeBSD: head/devel/popt/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/devel/popt/Makefile 445585 2017-07-12 14:42:19Z jpaetzel $
 
 PORTNAME=	popt
 PORTVERSION=	1.16
@@ -9,6 +9,8 @@ MASTER_SITES=	http://rpm5.org/files/popt/
 
 MAINTAINER=	jpaetzel@FreeBSD.org
 COMMENT=	Getopt(3) like library with a number of enhancements, from Redhat
+
+LICENSE=	MIT
 
 OPTIONS_DEFINE=	NLS
 

@@ -1,12 +1,13 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/simsu/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/simsu/Makefile 445746 2017-07-14 11:35:50Z amdmi3 $
 
 PORTNAME=	simsu
 PORTVERSION=	1.3.3
-PORTREVISION=	2
 DISTVERSIONSUFFIX=	-src
+PORTREVISION=	2
 CATEGORIES=	games
-MASTER_SITES=	http://gottcode.org/${PORTNAME}/
+MASTER_SITES=	https://gottcode.org/${PORTNAME}/ \
+		http://mirror.amdmi3.ru/distfiles/
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Basic Sudoku game

@@ -1,13 +1,12 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/misc/p5-Geo-GeoNames/Makefile 438714 2017-04-17 16:05:47Z sunpoet $
+# $FreeBSD: head/misc/p5-Geo-GeoNames/Makefile 445927 2017-07-15 19:08:59Z sunpoet $
 
 PORTNAME=	Geo-GeoNames
 PORTVERSION=	1.120
 CATEGORIES=	misc perl5
 MASTER_SITES=	CPAN
-#MASTER_SITE_SUBDIR=	CPAN:BDFOY
 PKGNAMEPREFIX=	p5-
-DISTNAME=	${PORTNAME}-${PORTVERSION:C|0$||}
+DISTNAME=	${PORTNAME}-${PORTVERSION:S|0$||}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Perform geographical queries using GeoNames Web Services

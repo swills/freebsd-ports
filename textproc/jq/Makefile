@@ -1,8 +1,9 @@
 # Created by: Jui-Nan Lin <jnlin@csie.nctu.edu.tw>
-# $FreeBSD: head/textproc/jq/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/jq/Makefile 445643 2017-07-13 10:52:33Z pi $
 
 PORTNAME=	jq
 PORTVERSION=	1.5
+PORTREVISION=	1
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	textproc
 
@@ -32,7 +33,7 @@ DOCS_MAKE_ARGS_OFF=	docdir=
 DOCS_CONFIGURE_ENABLE=	docs
 
 ONIGURUMA_DESC=		With oniguruma BSDL regular expression library
-ONIGURUMA_LIB_DEPENDS=	libonig.so:devel/oniguruma5
+ONIGURUMA_LIB_DEPENDS=	libonig.so:devel/oniguruma6
 #ONIGURUMA_CONFIGURE_WITH=oniguruma=${LOCALBASE} # pending resolution of https://github.com/stedolan/jq/issues/1021, next line is the workaround
 ONIGURUMA_CONFIGURE_ON=	--with-oniguruma=${LOCALBASE}
 

@@ -1,5 +1,5 @@
 # Created by: Eugene Grosbein <ports@grosbein.net>
-# $FreeBSD: head/java/bouncycastle15/Makefile 441324 2017-05-20 17:41:42Z eugen $
+# $FreeBSD: head/java/bouncycastle15/Makefile 445468 2017-07-11 05:38:31Z eugen $
 
 PORTNAME=	bouncycastle
 PORTVERSION=	1.57
@@ -46,6 +46,11 @@ JARS=		${JARS_DOCS} bcprov-ext
 PORTDOCS=	*
 
 .include <bsd.port.options.mk>
+
+# PR 220612: remove fork="true" in javac and fork="yes" in junit tasks
+.if ${ARCH}=="armv6"
+EXTRA_PATCHES+=	${FILESDIR}/armv6-patch-bc+-build.xml
+.endif
 
 do-install:
 .for jar in ${JARS}

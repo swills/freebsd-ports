@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/lang/ruby23/Makefile 443482 2017-06-12 22:36:38Z sunpoet $
+# $FreeBSD: head/lang/ruby23/Makefile 445549 2017-07-11 21:03:09Z swills $
 
 PORTNAME=	ruby
 PORTVERSION=	${RUBY_PORTVERSION}
@@ -91,6 +91,11 @@ CONFIGURE_ARGS+=--enable-dtrace
 .else
 CONFIGURE_ARGS+=--disable-dtrace
 .endif
+.endif
+
+# keep in sync with all platforms where libunwind is available
+.if (${ARCH} == "amd64" || ${ARCH} == "i386")
+LIB_DEPENDS+=	libunwind.so:devel/libunwind
 .endif
 
 .if ${ARCH} == "powerpc64"

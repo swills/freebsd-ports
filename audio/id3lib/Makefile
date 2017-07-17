@@ -1,9 +1,9 @@
 # Created by: Roman Shterenzon <roman@xpert.com>
-# $FreeBSD: head/audio/id3lib/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/audio/id3lib/Makefile 445652 2017-07-13 14:34:01Z novel $
 
 PORTNAME=	id3lib
 PORTVERSION=	3.8.3
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	audio
 MASTER_SITES=	SF
 

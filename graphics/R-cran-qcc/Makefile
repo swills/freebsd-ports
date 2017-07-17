@@ -1,8 +1,8 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/graphics/R-cran-qcc/Makefile 440269 2017-05-06 15:10:56Z miwi $
+# $FreeBSD: head/graphics/R-cran-qcc/Makefile 445981 2017-07-16 01:53:58Z dbaio $
 
 PORTNAME=	qcc
-DISTVERSION=	2.6
+DISTVERSION=	2.7
 CATEGORIES=	graphics
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

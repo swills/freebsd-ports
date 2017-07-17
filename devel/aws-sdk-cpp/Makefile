@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/aws-sdk-cpp/Makefile 444029 2017-06-21 11:45:43Z arved $
+# $FreeBSD: head/devel/aws-sdk-cpp/Makefile 445917 2017-07-15 17:24:52Z sunpoet $
 
 PORTNAME=	aws-sdk-cpp
-PORTVERSION=	1.0.158
+PORTVERSION=	1.1.12
 CATEGORIES=	devel
 
-MAINTAINER=	arved@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	C++11 interface for Amazon Web Services (AWS)
 
 LICENSE=	APACHE20
@@ -22,11 +22,9 @@ USES=		cmake pkgconfig compiler:c++11-lib ssl
 USE_LDCONFIG=	yes
 CXXFLAGS=	-Wno-error
 
-.include <bsd.port.pre.mk>
-
 post-patch:
 	${REINPLACE_CMD} -e "s,/pkgconfig,/../libdata/pkgconfig,g" \
 		${WRKSRC}/aws-cpp-sdk-core/CMakeLists.txt \
 		${WRKSRC}/cmake/utilities.cmake
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

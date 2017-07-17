@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/rubygem-puppet_forge1/Makefile 440136 2017-05-04 23:48:03Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-puppet_forge1/Makefile 445979 2017-07-16 00:58:37Z sunpoet $
 
 PORTNAME=	puppet_forge
 PORTVERSION=	1.0.6
@@ -14,6 +14,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	rubygem-activesupport4>=4.2:devel/rubygem-activesupport4 \
 		rubygem-her>=0.6.8:databases/rubygem-her
+
+DEPRECATED=	Use sysutils/rubygem-puppet_forge instead
+EXPIRATION_DATE=2017-07-31
 
 PORTSCOUT=	limit:^1\.
 

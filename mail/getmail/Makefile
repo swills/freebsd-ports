@@ -1,8 +1,8 @@
 # Created by: Yukihiro Nakai <nakai@FreeBSD.org>
-# $FreeBSD: head/mail/getmail/Makefile 434482 2017-02-20 18:23:16Z jrm $
+# $FreeBSD: head/mail/getmail/Makefile 446050 2017-07-17 02:50:48Z jrm $
 
 PORTNAME=	getmail
-PORTVERSION=	4.54.0
+PORTVERSION=	5.1
 CATEGORIES=	mail python
 MASTER_SITES=	http://pyropus.ca/software/getmail/old-versions/
 

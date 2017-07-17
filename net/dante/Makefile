@@ -1,20 +1,20 @@
 # Created by: Anders Nordby <anders@fix.no>
-# $FreeBSD: head/net/dante/Makefile 438345 2017-04-12 10:00:14Z amdmi3 $
+# $FreeBSD: head/net/dante/Makefile 445720 2017-07-13 23:53:44Z cpm $
 
 PORTNAME=	dante
-PORTVERSION=	1.4.1
-PORTREVISION=	1
+PORTVERSION=	1.4.2
 CATEGORIES=	net security ipv6
-MASTER_SITES=	ftp://ftp.inet.no/pub/socks/ \
-		ftp://ftp.nuug.no/pub/anders/distfiles/ \
-		http://atreides.freenix.no/~anders/ \
-		ftp://ftp.inet.no/pub/socks/old/
+MASTER_SITES=	http://www.inet.no/dante/files/ \
+		ftp://ftp.inet.no/pub/socks/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	cpm@FreeBSD.org
 COMMENT=	Circuit-level firewall/proxy
 
 LICENSE=	BSD4CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+LIB_DEPENDS=	libminiupnpc.so:net/miniupnpc \
+		libsasl2.so:security/cyrus-sasl2
 
 CONFLICTS=	socks5-[0-9]*
 

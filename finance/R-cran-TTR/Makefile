@@ -1,9 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/finance/R-cran-TTR/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/finance/R-cran-TTR/Makefile 445626 2017-07-13 00:04:30Z tota $
 
 PORTNAME=	TTR
-PORTREVISION=	1
-DISTVERSION=	0.23-1
+DISTVERSION=	0.23-2
 CATEGORIES=	finance
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
@@ -12,7 +11,11 @@ COMMENT=	Technical Trading Rules
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	R-cran-xts>=0.9.3:math/R-cran-xts
+CRAN_DEPENDS=	R-cran-xts>=0.10.0:math/R-cran-xts \
+		R-cran-zoo>0:math/R-cran-zoo \
+		R-cran-curl>0:ftp/R-cran-curl
+BUILD_DEPENDS=	${CRAN_DEPENDS}
+RUN_DEPENDS=	${CRAN_DEPENDS}
 
 USES=		cran:auto-plist,compiles
 

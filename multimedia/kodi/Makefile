@@ -1,8 +1,7 @@
-# $FreeBSD: head/multimedia/kodi/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/multimedia/kodi/Makefile 445487 2017-07-11 09:53:40Z cpm $
 
 PORTNAME=	kodi
-DISTVERSION=	17.1
-PORTREVISION=	2
+DISTVERSION=	17.3
 CATEGORIES=	multimedia java
 
 MAINTAINER=	mickael.maillot@gmail.com
@@ -58,8 +57,6 @@ LIB_DEPENDS=	libass.so:multimedia/libass \
 		libxslt.so:textproc/libxslt \
 		libyajl.so:devel/yajl
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3
-
-CONFLICTS_BUILD=compat9x
 
 USE_GITHUB=	yes
 GH_TUPLE=	xbmc:xbmc:fc1619b \

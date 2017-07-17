@@ -1,9 +1,8 @@
 # Created by: Yoshiaki UCHIKAWA <yoshiaki@kt.rim.or.jp>
-# $FreeBSD: head/math/pari/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/math/pari/Makefile 445998 2017-07-16 12:18:59Z cpm $
 
 PORTNAME=	pari
-PORTVERSION=	2.9.2
-PORTREVISION=	2
+PORTVERSION=	2.9.3
 PORTEPOCH=	2
 CATEGORIES=	math
 MASTER_SITES=	http://pari.math.u-bordeaux.fr/pub/pari/unix/ \
@@ -16,17 +15,16 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libgmp.so:math/gmp
 
-MAKE_JOBS_UNSAFE=	yes
-
-ALL_TARGET=	gp
+USES=		perl5 readline
+USE_LDCONFIG=	yes
+USE_PERL5=	build
+HAS_CONFIGURE=	yes
 CONFIGURE_SCRIPT=	Configure
 CONFIGURE_ARGS=	--mandir=${MANPREFIX}/man/man1 \
 		--prefix=${PREFIX} \
 		--with-readline
-HAS_CONFIGURE=	yes
-USE_LDCONFIG=	yes
-USE_PERL5=	build
-USES=		perl5 readline
+ALL_TARGET=	gp
+MAKE_JOBS_UNSAFE=	yes
 
 OPTIONS_DEFINE=		DOCS OPTIMIZED_CFLAGS X11
 OPTIONS_RADIO=		THREADS

@@ -1,8 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/databases/speedtables/Makefile 440474 2017-05-09 08:00:02Z gahr $
+# $FreeBSD: head/databases/speedtables/Makefile 445426 2017-07-10 11:10:54Z gahr $
 
 PORTNAME=	speedtables
-PORTVERSION=	1.12.2
+PORTVERSION=	1.13.1
 DISTVERSIONPREFIX=	v
 PORTREVISION=	0
 CATEGORIES=	databases

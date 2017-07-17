@@ -1,8 +1,8 @@
 # Created by: Shell Hung <shell@shellhung.org>
-# $FreeBSD: head/graphics/p5-Image-Info/Makefile 436738 2017-03-22 21:36:13Z sunpoet $
+# $FreeBSD: head/graphics/p5-Image-Info/Makefile 445685 2017-07-13 18:11:27Z sunpoet $
 
 PORTNAME=	Image-Info
-PORTVERSION=	1.40
+PORTVERSION=	1.41
 CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

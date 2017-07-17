@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-metasploit-concern/Makefile 441361 2017-05-21 10:20:29Z antoine $
+# $FreeBSD: head/security/rubygem-metasploit-concern/Makefile 445706 2017-07-13 18:41:58Z antoine $
 
 PORTNAME=	metasploit-concern
-PORTVERSION=	2.0.4
+PORTVERSION=	2.0.5
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

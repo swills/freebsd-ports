@@ -1,8 +1,8 @@
 # Created by: lth@FreeBSD.org
-# $FreeBSD: head/devel/p5-Test-Script/Makefile 438368 2017-04-12 16:24:14Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Script/Makefile 445813 2017-07-14 20:10:15Z sunpoet $
 
 PORTNAME=	Test-Script
-PORTVERSION=	1.18
+PORTVERSION=	1.20
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,7 +14,7 @@ LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-IPC-Run3>=0.034:devel/p5-IPC-Run3 \
+BUILD_DEPENDS=	p5-Capture-Tiny>=0:devel/p5-Capture-Tiny \
 		p5-Probe-Perl>=0.01:sysutils/p5-Probe-Perl
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 

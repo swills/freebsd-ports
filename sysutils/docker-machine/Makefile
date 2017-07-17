@@ -1,8 +1,8 @@
 # Created by: Nikolai Lifanov <lifanov@FreeBSD.org>
-# $FreeBSD: head/sysutils/docker-machine/Makefile 445092 2017-07-05 18:38:32Z lifanov $
+# $FreeBSD: head/sysutils/docker-machine/Makefile 445647 2017-07-13 13:07:42Z lifanov $
 
 PORTNAME=		docker-machine
-PORTVERSION=		0.12.1
+PORTVERSION=		0.12.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=		sysutils
 

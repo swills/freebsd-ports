@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/erlang-mimetypes/Makefile 418824 2016-07-20 08:33:24Z olgeni $
+# $FreeBSD: head/misc/erlang-mimetypes/Makefile 445801 2017-07-14 18:05:32Z olgeni $
 
 PORTNAME=	mimetypes
-PORTVERSION=	1.0
+PORTVERSION=	1.1.0
 CATEGORIES=	misc
 PKGNAMEPREFIX=	erlang-
 
@@ -10,7 +10,7 @@ COMMENT=	Erlang MIME types library
 
 LICENSE=	BSD3CLAUSE
 
-USES=		erlang:rebar
+USES=		erlang:rebar3
 USE_GITHUB=	yes
 GH_ACCOUNT=	spawngrid
 

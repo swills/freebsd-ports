@@ -1,5 +1,5 @@
 # Created by: Mikhail T. <m.tsatsenko@gmail.com>
-# $FreeBSD: head/devel/rubygem-sprockets/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-sprockets/Makefile 445962 2017-07-15 20:43:55Z sunpoet $
 
 PORTNAME=	sprockets
 PORTVERSION=	2.12.4
@@ -10,13 +10,12 @@ MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Ruby library that preprocesses and concatenates JavaScript files
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-hike>=1.2:devel/rubygem-hike \
 		rubygem-multi_json>=1.0:devel/rubygem-multi_json \
 		rubygem-rack16>=1.0:www/rubygem-rack16 \
 		rubygem-tilt1>=1.1:devel/rubygem-tilt1
-
-CONFLICTS_INSTALL=	rubygem-sprockets211-[0-9]*
 
 NO_ARCH=	yes
 USE_RUBY=	yes

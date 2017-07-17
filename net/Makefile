@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 445147 2017-07-06 13:47:14Z tz $
+# $FreeBSD: head/net/Makefile 445973 2017-07-16 00:46:18Z sunpoet $
 #
 
     COMMENT = Networking tools
@@ -1219,6 +1219,7 @@
     SUBDIR += rubygem-opennebula
     SUBDIR += rubygem-packetfu
     SUBDIR += rubygem-pcaprub
+    SUBDIR += rubygem-proxifier
     SUBDIR += rubygem-qiniu
     SUBDIR += rubygem-rabbiter
     SUBDIR += rubygem-rbvmomi

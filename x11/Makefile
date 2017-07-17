@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 444038 2017-06-21 16:28:50Z tobik $
+# $FreeBSD: head/x11/Makefile 445598 2017-07-12 18:40:59Z swills $
 #
 
     COMMENT = Ports to support the X window system
@@ -260,6 +260,7 @@
     SUBDIR += printproto
     SUBDIR += printscreen
     SUBDIR += props
+    SUBDIR += py-pyvirtualdisplay
     SUBDIR += py-qt4-opengl
     SUBDIR += py-qt5-opengl
     SUBDIR += py-xdot

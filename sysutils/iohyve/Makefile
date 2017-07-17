@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/iohyve/Makefile 444451 2017-06-27 10:54:50Z lme $
+# $FreeBSD: head/sysutils/iohyve/Makefile 445498 2017-07-11 14:04:56Z tobik $
 
 PORTNAME=	iohyve
 PORTVERSION=	0.7.9
@@ -13,7 +13,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USE_GITHUB=	yes
 GH_ACCOUNT=	pr1ntf
 
-NO_BUILD=	yes
 NO_ARCH=	yes
 
 do-patch:

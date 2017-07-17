@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/softether/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/security/softether/Makefile 445992 2017-07-16 10:00:42Z pi $
 
 PORTNAME=	softether
 PORTVERSION=	4.20.9608
@@ -11,6 +11,8 @@ MAINTAINER=	net@arrishq.net
 COMMENT=	Softether VPN solution
 
 LICENSE=	GPLv2
+
+CONFLICTS_INSTALL=	softether-devel
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib

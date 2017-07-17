@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alexbl@FreeBSD.org>
-# $FreeBSD: head/audio/esperanza/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/esperanza/Makefile 445858 2017-07-15 09:00:25Z amdmi3 $
 
 PORTNAME=	esperanza
 PORTVERSION=	0.4.0.20091017
@@ -12,6 +12,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Advanced Qt4 XMMS2 client
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING.GPL
 
 LIB_DEPENDS=	libxmmsclient++.so:audio/cpp-xmms2
 
@@ -29,10 +30,10 @@ PLIST_FILES=	bin/esperanza
 DESKTOP_ENTRIES="Esperanza" "" "" "${PORTNAME}" "Audio;Player;" false
 
 post-patch:
-	@${ECHO} "QMAKE_LFLAGS= -lX11"        >> ${WRKSRC}/src/ui/ui.pro
-	@${ECHO} "QMAKE_CC=${CC}"             >> ${WRKSRC}/config.pri
-	@${ECHO} "QMAKE_CXX=${CXX}"           >> ${WRKSRC}/config.pri
-	@${ECHO} "QMAKE_CFLAGS=${CFLAGS}"     >> ${WRKSRC}/config.pri
-	@${ECHO} "QMAKE_CXXFLAGS=${CXXFLAGS}" >> ${WRKSRC}/config.pri
+	@${ECHO_CMD} "QMAKE_LFLAGS= -lX11"        >> ${WRKSRC}/src/ui/ui.pro
+	@${ECHO_CMD} "QMAKE_CC=${CC}"             >> ${WRKSRC}/config.pri
+	@${ECHO_CMD} "QMAKE_CXX=${CXX}"           >> ${WRKSRC}/config.pri
+	@${ECHO_CMD} "QMAKE_CFLAGS=${CFLAGS}"     >> ${WRKSRC}/config.pri
+	@${ECHO_CMD} "QMAKE_CXXFLAGS=${CXXFLAGS}" >> ${WRKSRC}/config.pri
 
 .include <bsd.port.mk>

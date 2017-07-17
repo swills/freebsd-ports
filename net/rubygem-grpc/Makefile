@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/rubygem-grpc/Makefile 445147 2017-07-06 13:47:14Z tz $
+# $FreeBSD: head/net/rubygem-grpc/Makefile 445432 2017-07-10 12:08:24Z tz $
 
 PORTNAME=	grpc
 PORTVERSION=	1.4.0
+PORTREVISION=	1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -14,7 +15,11 @@ RUN_DEPENDS=	ca_root_nss>=0:security/ca_root_nss \
 		grpc>=0:devel/grpc \
 		rubygem-google-protobuf>=3.0:devel/rubygem-google-protobuf \
 		rubygem-googleauth>=0.5.1:security/rubygem-googleauth
+
 LIB_DEPENDS=	libcares.so:dns/c-ares
+
+BUILD_DEPENDS=	ca_root_nss>=0:security/ca_root_nss \
+		grpc>=0:devel/grpc
 
 MAKE_JOBS_UNSAFE=yes
 

@@ -1,5 +1,5 @@
 # Created by: Blaz Zupan <blaz@si.FreeBSD.org>
-# $FreeBSD: head/security/p5-Authen-SASL/Makefile 442233 2017-05-31 17:30:03Z sunpoet $
+# $FreeBSD: head/security/p5-Authen-SASL/Makefile 446026 2017-07-16 16:10:32Z sunpoet $
 
 PORTNAME=	Authen-SASL
 PORTVERSION=	2.16
@@ -13,7 +13,6 @@ COMMENT=	Perl5 module for SASL authentication
 
 LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual
-LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-Digest-HMAC>0:security/p5-Digest-HMAC
 RUN_DEPENDS:=	${BUILD_DEPENDS}

@@ -1,5 +1,5 @@
 # Created by: Seiichirou Hiraoka <flathill@flathill.gr.jp>
-# $FreeBSD: head/games/fkiss/Makefile 441847 2017-05-27 15:07:11Z linimon $
+# $FreeBSD: head/games/fkiss/Makefile 446037 2017-07-16 17:03:45Z pawel $
 
 PORTNAME=	fkiss
 PORTVERSION=	0.33a
@@ -13,7 +13,8 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Freely enjoy childlike KISS, French-KISS!
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	lha:archivers/lha
 
@@ -24,7 +25,6 @@ EXTRA_PATCHES=	${WRKDIR}/${PORTNAME}-${PORTVERSION}.diff
 
 USES=		gmake
 USE_XORG=	x11 xproto
-WANT_GNOME=	yes
 GNU_CONFIGURE=	yes
 MAKE_ARGS=	ACLOCAL="${TRUE}" AUTOCONF="${TRUE}" AUTOHEADER="${TRUE}" \
 		AUTOMAKE="${TRUE}"

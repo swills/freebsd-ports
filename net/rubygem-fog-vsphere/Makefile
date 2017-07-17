@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-vsphere/Makefile 445177 2017-07-06 20:56:04Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-vsphere/Makefile 445508 2017-07-11 16:59:30Z sunpoet $
 
 PORTNAME=	fog-vsphere
-PORTVERSION=	1.11.1
+PORTVERSION=	1.11.2
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

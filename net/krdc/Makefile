@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/krdc/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/net/krdc/Makefile 445565 2017-07-12 02:39:35Z araujo $
 
 PORTNAME=	krdc
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

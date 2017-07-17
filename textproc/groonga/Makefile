@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/groonga/Makefile 442572 2017-06-04 17:28:00Z bofh $
+# $FreeBSD: head/textproc/groonga/Makefile 445725 2017-07-14 05:04:02Z bofh $
 
 PORTNAME=	groonga
-PORTVERSION=	7.0.3
+PORTVERSION=	7.0.4
 CATEGORIES=	textproc
 MASTER_SITES=	http://packages.groonga.org/source/groonga/
 
@@ -57,7 +57,7 @@ post-patch:
 		'/NGX_PID_PATH/s|mkdir|${TRUE}| ; \
 		 /NGX_HTTP_LOG_PATH/s|mkdir|${TRUE}| ; \
 		 /NGX_ERROR_LOG_PATH/s|mkdir|${TRUE}|' \
-		${WRKSRC}/vendor/nginx-1.13.0/auto/install
+		${WRKSRC}/vendor/nginx-1.13.1/auto/install
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/sbin/groonga-httpd

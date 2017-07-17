@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-ploy/Makefile 436290 2017-03-16 19:23:48Z antoine $
+# $FreeBSD: head/sysutils/py-ploy/Makefile 445996 2017-07-16 11:28:01Z koobs $
 
 PORTNAME=	ploy
 PORTVERSION=	1.2.1
@@ -15,7 +15,7 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lazy>0:devel/py-lazy \
-		${PYTHON_PKGNAMEPREFIX}paramiko1>0:security/py-paramiko1 \
+		${PYTHON_PKGNAMEPREFIX}paramiko>0:security/py-paramiko \
 		${PYTHON_PKGNAMEPREFIX}setuptools>0:devel/${PYTHON_PKGNAMEPREFIX}setuptools
 
 USES=		python

@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/asteroid/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/asteroid/Makefile 445790 2017-07-14 17:20:11Z amdmi3 $
 
 PORTNAME=	asteroid
 PORTVERSION=	1.2.1
@@ -17,10 +17,10 @@ GH_ACCOUNT=	chazomaticus
 GH_TAGNAME=	64869df
 
 USES=		cmake
-USE_GL=		glut
+USE_GL=		gl glu glut
 USE_SDL=	mixer sdl
 USE_GNOME=	gtk30
-USE_XORG=	xmu
+USE_XORG=	xmu xi
 INSTALLS_ICONS=	yes
 LDFLAGS+=	-lm
 

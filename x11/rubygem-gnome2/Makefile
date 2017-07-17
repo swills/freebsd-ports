@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/rubygem-gnome2/Makefile 445392 2017-07-09 07:02:19Z sunpoet $
+# $FreeBSD: head/x11/rubygem-gnome2/Makefile 445956 2017-07-15 19:11:32Z sunpoet $
 
 PORTNAME=	gnome2
-PORTVERSION=	3.1.6
+PORTVERSION=	3.1.8
 CATEGORIES=	x11 gnome rubygems
 PKGNAMEPREFIX=	rubygem-
 

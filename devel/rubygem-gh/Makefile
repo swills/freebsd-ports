@@ -1,8 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-gh/Makefile 436191 2017-03-14 21:36:24Z sunpoet $
+# $FreeBSD: head/devel/rubygem-gh/Makefile 445520 2017-07-11 17:00:32Z sunpoet $
 
 PORTNAME=	gh
 PORTVERSION=	0.15.1
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,19 +1,19 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-pthreads/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/devel/pecl-pthreads/Makefile 445623 2017-07-13 00:00:30Z sunpoet $
 
 PORTNAME=	pthreads
-PORTVERSION=	2.0.10
-PORTREVISION=	1
+PORTVERSION=	3.1.6
 CATEGORIES=	devel
 
 MAINTAINER=	johnpupu@gmail.com
-COMMENT=	Compatible Threading API for PHP5.3+
+COMMENT=	Compatible Threading API for PHP7.0+
 
 LICENSE=	PHP301
 
 CFLAGS+=	-I${LOCALBASE}/include
 
 USES=		php:pecl
+IGNORE_WITH_PHP=56 71
 
 .include <bsd.port.options.mk>
 

@@ -1,5 +1,5 @@
 # Created by: Rihaz Jerrin <rihaz.jerrin@gmail.com>
-# $FreeBSD: head/net-mgmt/dnsmap/Makefile 430732 2017-01-06 19:56:11Z lifanov $
+# $FreeBSD: head/net-mgmt/dnsmap/Makefile 445638 2017-07-13 09:00:21Z amdmi3 $
 
 PORTNAME=	dnsmap
 PORTVERSION=	0.30
@@ -9,7 +9,8 @@ CATEGORIES=	net-mgmt
 MAINTAINER=	rihaz.jerrin@gmail.com
 COMMENT=	DNS domain name brute forcing tool
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/gpl-2.0.txt
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	lifanov

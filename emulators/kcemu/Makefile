@@ -1,9 +1,9 @@
 # Created by: Hardy Schumacher <hardy.schumacher@gmx.de>
-# $FreeBSD: head/emulators/kcemu/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/emulators/kcemu/Makefile 445565 2017-07-12 02:39:35Z araujo $
 
 PORTNAME=	kcemu
 PORTVERSION=	0.5.1
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	emulators
 MASTER_SITES=	SF/${PORTNAME}/KCemu/KCemu-${PORTVERSION}
 DISTNAME=	KCemu-${PORTVERSION}

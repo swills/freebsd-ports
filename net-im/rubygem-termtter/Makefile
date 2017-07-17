@@ -1,9 +1,8 @@
 # Created by: Dennis Herrmann <dhn@FreeBSD.org>
-# $FreeBSD: head/net-im/rubygem-termtter/Makefile 433374 2017-02-05 05:32:36Z sunpoet $
+# $FreeBSD: head/net-im/rubygem-termtter/Makefile 445932 2017-07-15 19:09:25Z sunpoet $
 
 PORTNAME=	termtter
-PORTVERSION=	2.2.6
-PORTREVISION=	2
+PORTVERSION=	2.2.8
 CATEGORIES=	net-im rubygems
 MASTER_SITES=	RG
 

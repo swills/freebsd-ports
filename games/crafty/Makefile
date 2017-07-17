@@ -1,10 +1,10 @@
 # Created by: Stefan Eggers <seggers@semyam.dinoco.de>
-# $FreeBSD: head/games/crafty/Makefile 440755 2017-05-13 07:24:08Z miwi $
+# $FreeBSD: head/games/crafty/Makefile 445966 2017-07-15 22:05:28Z johans $
 
 PORTNAME=	crafty
-PORTVERSION=	23.8
+PORTVERSION=	25.2
 CATEGORIES=	games
-MASTER_SITES=	http://www.craftychess.com/:src \
+MASTER_SITES=	http://www.craftychess.com/downloads/source/:src \
 		http://www.cis.uab.edu/hyatt/crafty/pgn/:data \
 		http://www.cis.uab.edu/hyatt/crafty/documentation/:doc \
 		http://www.cis.uab.edu/hyatt/crafty/source/:src \
@@ -18,14 +18,14 @@ EXTRACT_ONLY=	crafty-${PORTVERSION}.zip
 MAINTAINER=	johans@FreeBSD.org
 COMMENT=	Chess program for playing and analyzing games
 
-USES=		gmake zip
+WRKSRC=		${WRKDIR}
 
-BROKEN=		file not found
+USES=		gmake zip
 
 BOOKS=		books.bin
 DISTFILES+=	${BOOKS:S/$/:books/}
 
-ALL_TARGET=	freebsd
+ALL_TARGET=	unix-gcc
 
 WITH_BOOKDIR?=	${PREFIX}/lib/crafty
 WITH_LOGDIR?=	/tmp
@@ -59,7 +59,7 @@ OPT+=		-DCPUS=1 # disables x86 assembler
 .if ${PORT_OPTIONS:MBOOK}
 BOOKS+=		book.bin
 PKGNAMESUFFIX=	-open-default
-CONFLICTS+=	crafty-open-enormous-* crafty-open-large-* crafty-open-medium-*
+CONFLICTS+=	crafty-open-enormous-[0-9]* crafty-open-large-[0-9]* crafty-open-medium-[0-9]*
 .endif
 
 MAKE_ENV+=	opt="${OPT}" target=${OPSYS} CXFLAGS="${CXXFLAGS}"

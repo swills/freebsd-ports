@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/ImageMagick/Makefile 442858 2017-06-07 17:43:58Z kwm $
+# $FreeBSD: head/graphics/ImageMagick/Makefile 446034 2017-07-16 16:28:52Z pawel $
 
 PORTNAME=	ImageMagick
 DISTVERSION=	6.9.8-9
@@ -38,6 +38,7 @@ LIB_DEPENDS=	libltdl.so:devel/libltdl
 PORTSCOUT?=	limit:6.*$$
 
 CONFLICTS_INSTALL=	execline-[0-9]* # bin/import
+CONFLICTS_INSTALL+=	ImageMagick7 ImageMagick7-nox11 # bin/Magick++-config
 
 # This port uses .la files, keep libtool:keepla! (magick/module.c)
 USES=		cpe gettext-runtime gmake gnome libtool:keepla \

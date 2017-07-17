@@ -1,8 +1,8 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/databases/tarantool/Makefile 445017 2017-07-04 13:55:46Z vg $
+# $FreeBSD: head/databases/tarantool/Makefile 445439 2017-07-10 13:54:08Z vg $
 
 PORTNAME=	tarantool
-PORTVERSION=	1.7.4.99
+PORTVERSION=	1.7.4.260
 CATEGORIES=	databases
 MASTER_SITES=	http://download.tarantool.org/tarantool/1.7/src/
 

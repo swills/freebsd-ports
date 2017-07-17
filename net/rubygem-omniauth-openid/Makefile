@@ -1,8 +1,9 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-omniauth-openid/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/net/rubygem-omniauth-openid/Makefile 445530 2017-07-11 17:03:18Z sunpoet $
 
 PORTNAME=	omniauth-openid
 PORTVERSION=	1.0.1
+PORTREVISION=	1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/rubygem-smart_proxy_remote_execution_ssh/Makefile 430049 2016-12-30 19:22:26Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-smart_proxy_remote_execution_ssh/Makefile 445694 2017-07-13 18:12:14Z sunpoet $
 
 PORTNAME=	smart_proxy_remote_execution_ssh
-PORTVERSION=	0.1.4
+PORTVERSION=	0.1.5
 CATEGORIES=	sysutils ruby
 MASTER_SITES=	RG
 

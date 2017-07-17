@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/acoustid-fingerprinter/Makefile 441881 2017-05-27 22:16:50Z linimon $
+# $FreeBSD: head/audio/acoustid-fingerprinter/Makefile 445589 2017-07-12 15:07:45Z amdmi3 $
 
 PORTNAME=	acoustid-fingerprinter
 PORTVERSION=	0.6
@@ -9,6 +9,7 @@ MAINTAINER=	jhale@FreeBSD.org
 COMMENT=	AcoustID audio fingerprint submission tool
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
 LIB_DEPENDS=	libchromaprint.so:audio/chromaprint \
 		libtag.so:audio/taglib \

@@ -1,9 +1,8 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/www/cgicc/Makefile 428947 2016-12-19 16:10:12Z mat $
+# $FreeBSD: head/www/cgicc/Makefile 445641 2017-07-13 09:10:14Z bofh $
 
 PORTNAME=	cgicc
-PORTVERSION=	3.2.16
-PORTREVISION=	1
+PORTVERSION=	3.2.19
 CATEGORIES=	www devel
 MASTER_SITES=	GNU
 

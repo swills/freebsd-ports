@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/elixir-geo/Makefile 425378 2016-11-05 10:44:42Z olgeni $
+# $FreeBSD: head/databases/elixir-geo/Makefile 445986 2017-07-16 06:36:29Z olgeni $
 
 PORTNAME=	geo
-PORTVERSION=	1.2.1
+PORTVERSION=	2.0.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 PKGNAMEPREFIX=	elixir-

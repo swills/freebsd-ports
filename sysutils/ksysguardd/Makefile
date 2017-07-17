@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/ksysguardd/Makefile 437224 2017-03-29 19:18:34Z rezny $
+# $FreeBSD: head/sysutils/ksysguardd/Makefile 445865 2017-07-15 10:04:13Z rezny $
 
 PORTNAME=	ksysguardd
 PORTVERSION=	${KDE4_WORKSPACE_VERSION}
+PORTREVISION=	1
 CATEGORIES=	sysutils kde kde-applications
 DISTNAME=	kde-workspace-${PORTVERSION}
 

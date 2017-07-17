@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Lexical-SealRequireHints/Makefile 411386 2016-03-19 09:40:39Z wen $
+# $FreeBSD: head/devel/p5-Lexical-SealRequireHints/Makefile 446023 2017-07-16 16:10:17Z sunpoet $
 
 PORTNAME=	Lexical-SealRequireHints
-PORTVERSION=	0.010
+PORTVERSION=	0.011
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -15,5 +15,8 @@ LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	modbuild
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Lexical/SealRequireHints/SealRequireHints.so
 
 .include <bsd.port.mk>

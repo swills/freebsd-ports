@@ -1,5 +1,5 @@
 # Created by: Stephen Weeks <sweeks@sweeks.com>
-# $FreeBSD: head/lang/mlton/Makefile 445324 2017-07-08 13:09:49Z antoine $
+# $FreeBSD: head/lang/mlton/Makefile 445594 2017-07-12 18:11:54Z antoine $
 
 # Previouly maintained by Jesper Louis Andersen
 # (jesper.louis.andersen@gmail.com) and Geoffrey Mainland
@@ -36,10 +36,6 @@ USES=		gmake shebangfix
 USE_GCC=	any
 
 .include <bsd.port.options.mk>
-
-.if ${ARCH} == i386
-FORBIDDEN=	mlton-compile loops infinitely and is unkillable
-.endif
 
 .if ${PORT_OPTIONS:MDOCS}
 BUILD_DEPENDS+=	gsed:textproc/gsed \

@@ -1,8 +1,8 @@
 # Created by: Gleb Kurtsou <gleb@FreeBSD.org>
-# $FreeBSD: head/sysutils/pefs-kmod/Makefile 444433 2017-06-26 23:44:13Z linimon $
+# $FreeBSD: head/sysutils/pefs-kmod/Makefile 445555 2017-07-12 00:16:54Z kmoore $
 
 PORTNAME=	pefs
-DISTVERSION=	2017-02-19
+DISTVERSION=	2017-06-20
 CATEGORIES=	sysutils
 MASTER_SITES=	LOCAL/gleb
 PKGNAMESUFFIX=	-kmod

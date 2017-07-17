@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/Makefile 443422 2017-06-12 10:20:17Z tz $
+# $FreeBSD: head/converters/Makefile 445710 2017-07-13 18:55:27Z antoine $
 #
 
     COMMENT = Character code converters
@@ -161,6 +161,7 @@
     SUBDIR += rubygem-bsdconv
     SUBDIR += rubygem-po_to_json
     SUBDIR += rubygem-url_safe_base64
+    SUBDIR += rubygem-xdr
     SUBDIR += shftool
     SUBDIR += showkey
     SUBDIR += ta2as

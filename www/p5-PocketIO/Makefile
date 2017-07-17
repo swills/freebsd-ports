@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-PocketIO/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-PocketIO/Makefile 445929 2017-07-15 19:09:09Z sunpoet $
 
 PORTNAME=	PocketIO
 PORTVERSION=	0.17000
@@ -7,7 +7,7 @@ CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:VTI
 PKGNAMEPREFIX=	p5-
-DISTNAME=	${PORTNAME}-${PORTVERSION:C/000$//}
+DISTNAME=	${PORTNAME}-${PORTVERSION:S|000$||}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Socket.IO Plack application

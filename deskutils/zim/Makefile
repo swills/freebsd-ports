@@ -1,8 +1,8 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/deskutils/zim/Makefile 443448 2017-06-12 14:05:19Z rm $
+# $FreeBSD: head/deskutils/zim/Makefile 445635 2017-07-13 07:20:52Z rm $
 
 PORTNAME=	zim
-DISTVERSION=	0.67-rc2
+PORTVERSION=	0.67
 CATEGORIES=	deskutils python
 MASTER_SITES=	http://www.zim-wiki.org/downloads/
 

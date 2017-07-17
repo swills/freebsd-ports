@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-coverex/Makefile 418682 2016-07-18 02:10:34Z vanilla $
+# $FreeBSD: head/devel/elixir-coverex/Makefile 445420 2017-07-10 08:54:58Z vanilla $
 
 PORTNAME=	coverex
-PORTVERSION=	1.4.10
+PORTVERSION=	1.4.15
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

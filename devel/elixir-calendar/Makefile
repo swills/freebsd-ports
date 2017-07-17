@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-calendar/Makefile 434696 2017-02-24 08:00:16Z olgeni $
+# $FreeBSD: head/devel/elixir-calendar/Makefile 445640 2017-07-13 09:09:45Z olgeni $
 
 PORTNAME=	calendar
-PORTVERSION=	0.17.2
+PORTVERSION=	0.17.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

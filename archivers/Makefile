@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/Makefile 444969 2017-07-03 17:31:02Z jrm $
+# $FreeBSD: head/archivers/Makefile 445604 2017-07-12 19:44:56Z brnrd $
 #
 
     COMMENT = Archivers
@@ -11,6 +11,7 @@
     SUBDIR += ark
     SUBDIR += atool
     SUBDIR += bicom
+    SUBDIR += brotli
     SUBDIR += bzip
     SUBDIR += bzip2
     SUBDIR += cabextract

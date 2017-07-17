@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/rubygem-gemojione/Makefile 427888 2016-12-05 13:39:46Z sunpoet $
+# $FreeBSD: head/graphics/rubygem-gemojione/Makefile 446029 2017-07-16 16:10:48Z sunpoet $
 
 PORTNAME=	gemojione
-PORTVERSION=	3.2.0
+PORTVERSION=	3.3.0
 CATEGORIES=	graphics rubygems
 MASTER_SITES=	RG
 

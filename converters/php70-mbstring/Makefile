@@ -1,7 +1,9 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/converters/php70-mbstring/Makefile 422569 2016-09-21 15:43:47Z tz $
+# $FreeBSD: head/converters/php70-mbstring/Makefile 445429 2017-07-10 11:40:48Z tz $
 
 CATEGORIES=	converters
+
+PORTREVISION=	1
 
 MASTERDIR=	${.CURDIR}/../../lang/php70
 

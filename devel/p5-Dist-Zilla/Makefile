@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/p5-Dist-Zilla/Makefile 438229 2017-04-11 00:47:34Z sunpoet $
+# $FreeBSD: head/devel/p5-Dist-Zilla/Makefile 445511 2017-07-11 16:59:45Z sunpoet $
 
 PORTNAME=	Dist-Zilla
-PORTVERSION=	6.009
-PORTREVISION=	1
+PORTVERSION=	6.010
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

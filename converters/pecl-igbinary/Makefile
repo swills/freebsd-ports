@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/converters/pecl-igbinary/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/converters/pecl-igbinary/Makefile 445930 2017-07-15 19:09:15Z sunpoet $
 
 PORTNAME=	igbinary
 PORTVERSION=	2.0.1
@@ -13,15 +13,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		php:pecl
 
-.include <bsd.port.pre.mk>
-
 post-patch:
-.if ${PHP_VER} >= 70
-	${CP} ${WRKSRC}/src/php7/igbinary.h ${WRKSRC}/igbinary.h
-	${CP} ${WRKSRC}/src/php7/php_igbinary.h ${WRKSRC}/php_igbinary.h
-.else
-	${CP} ${WRKSRC}/src/php5/igbinary.h ${WRKSRC}/igbinary.h
-	${CP} ${WRKSRC}/src/php5/php_igbinary.h ${WRKSRC}/php_igbinary.h
-.endif
+	@${CP} ${WRKSRC}/src/php${PHP_VER:C|.$||}/igbinary.h ${WRKSRC}/igbinary.h
+	@${CP} ${WRKSRC}/src/php${PHP_VER:C|.$||}/php_igbinary.h ${WRKSRC}/php_igbinary.h
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

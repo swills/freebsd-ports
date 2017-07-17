@@ -1,3 +1,5 @@
+# $FreeBSD: head/lang/php70/Makefile.ext 445433 2017-07-10 12:11:44Z tz $
+
 COMMENT=	The ${PHP_MODNAME} shared extension for php
 
 USES+=	php:ext
@@ -532,7 +534,7 @@ LIB_DEPENDS+=	libc-client4.so.9:mail/cclient
 
 .if ${PHP_MODNAME} == "mbstring"
 .	if ${PORT_OPTIONS:MREGEX}
-LIB_DEPENDS+=	libonig.so:devel/oniguruma5
+LIB_DEPENDS+=	libonig.so:devel/oniguruma6
 CONFIGURE_ARGS+=--with-onig=${LOCALBASE}
 .	else
 CONFIGURE_ARGS+=--disable-mbregex

@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-aws-sigv4/Makefile 427913 2016-12-05 19:00:41Z sunpoet $
+# $FreeBSD: head/devel/rubygem-aws-sigv4/Makefile 445679 2017-07-13 18:10:55Z sunpoet $
 
 PORTNAME=	aws-sigv4
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -11,6 +11,7 @@ COMMENT=	Amazon Web Services Signature Version 4 signing library
 
 LICENSE=	APACHE20
 
+NO_ARCH=	yes
 USE_RUBY=	yes
 USES=		gem
 

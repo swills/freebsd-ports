@@ -1,8 +1,8 @@
 # Created by: Jeremy Norris <ishmael127@home.com>
-# $FreeBSD: head/graphics/feh/Makefile 428957 2016-12-19 19:42:18Z misha $
+# $FreeBSD: head/graphics/feh/Makefile 445599 2017-07-12 18:55:25Z zeising $
 
 PORTNAME=	feh
-PORTVERSION=	2.18
+PORTVERSION=	2.19
 CATEGORIES=	graphics
 MASTER_SITES=	http://feh.finalrewind.org/ \
 		LOCAL/uqs
@@ -26,20 +26,32 @@ CPPFLAGS+=	-I${LOCALBASE}/include -std=c99
 LDFLAGS+=	-L${LOCALBASE}/lib
 MAKE_ENV+=	LDFLAGS="${LDFLAGS}"
 
-OPTIONS_DEFINE=	CAM DOCS
+OPTIONS_DEFINE=	CAM DOCS EXAMPLES EXIF
 CAM_DESC=	Install feh-cam and related tools
-OPTIONS_DEFAULT=CAM
+EXIF_DESC=	Support EXIF tags
+OPTIONS_DEFAULT=CAM EXIF
+OPTIONS_SUB=	yes
+
+EXIF_LIB_DEPENDS=	libexif.so:graphics/libexif
 
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MCAM}
 MAKE_ENV+=	cam=1
 SHEBANG_FILES=	${WRKSRC}/cam/feh-cam
-PLIST_SUB=	CAM=""
-.else
-MAKE_ENV+=	cam=0
-PLIST_SUB=	CAM="@comment "
 .endif
+
+.if ${PORT_OPTIONS:MEXIF}
+MAKE_ENV+=	exif=1
+.endif
+
+post-patch-DOCS-off:
+	@${REINPLACE_CMD} -e 's|install-doc||' \
+		${WRKSRC}/Makefile
+
+post-patch-EXAMPLES-off:
+	@${REINPLACE_CMD} -e 's|install-examples||' \
+		${WRKSRC}/Makefile
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/feh

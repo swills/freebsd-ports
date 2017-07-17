@@ -1,9 +1,8 @@
 # Created by: Thomas Zander <riggs@FreeBSD.org>
-# $FreeBSD: head/devel/embb/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/devel/embb/Makefile 446042 2017-07-16 18:15:47Z riggs $
 
 PORTNAME=	embb
-PORTVERSION=	0.5.0
-PORTREVISION=	1
+PORTVERSION=	1.0.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -16,9 +15,10 @@ LICENSE_COMB=	multi
 USE_GITHUB=	yes
 GH_ACCOUNT=	siemens
 
-USES=		cmake:outsource compiler:c11
+USES=		cmake:outsource compiler:c++11-lib
 
-CMAKE_ARGS=	-DINSTALL_PREFIX=${PREFIX}
+CMAKE_ARGS=	-DINSTALL_PREFIX=${PREFIX} \
+		-DUSE_C11_AND_CXX11:BOOL=true
 
 OPTIONS_DEFINE=	DOCS EXAMPLES TESTS
 
@@ -30,7 +30,7 @@ TESTS_CMAKE_OFF=-DBUILD_TESTS=OFF
 
 OPTIONS_SUB=	yes
 
-ONLY_FOR_ARCHS=	i386 amd64
+ONLY_FOR_ARCHS=	amd64 i386
 
 .include <bsd.port.options.mk>
 

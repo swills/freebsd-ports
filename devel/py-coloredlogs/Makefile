@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-coloredlogs/Makefile 442370 2017-06-02 11:01:16Z araujo $
+# $FreeBSD: head/devel/py-coloredlogs/Makefile 446027 2017-07-16 16:10:37Z sunpoet $
 
 PORTNAME=	coloredlogs
-PORTVERSION=	7.0
+PORTVERSION=	7.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,6 +16,6 @@ RUN_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}humanfriendly>=2.1:textproc/py-humanfriendl
 
 NO_ARCH=	yes
 USES?=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

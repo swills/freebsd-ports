@@ -1,8 +1,8 @@
 # Created by: uffe@uffe.org
-# $FreeBSD: head/sysutils/cpuid/Makefile 427752 2016-12-04 01:56:50Z jhale $
+# $FreeBSD: head/sysutils/cpuid/Makefile 445983 2017-07-16 03:14:53Z vanilla $
 
 PORTNAME=	cpuid
-PORTVERSION=	20161201
+PORTVERSION=	20170122
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.etallen.com/cpuid/
 PKGNAMESUFFIX=	${CPUID_SUFFIX}
@@ -14,7 +14,7 @@ COMMENT=	Tool to dump x86 CPUID information about the CPU(s)
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-ONLY_FOR_ARCHS=	i386 amd64
+ONLY_FOR_ARCHS=	amd64 i386
 ONLY_FOR_ARCHS_REASON=	only works with x86 CPUs
 
 USES=		gmake perl5

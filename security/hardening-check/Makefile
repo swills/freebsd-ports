@@ -1,11 +1,10 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/security/hardening-check/Makefile 445362 2017-07-09 02:48:21Z ultima $
+# $FreeBSD: head/security/hardening-check/Makefile 445734 2017-07-14 08:17:54Z ultima $
 
 PORTNAME=	hardening-check
 PORTVERSION=	2.6
 CATEGORIES=	security
-MASTER_SITES=	DEBIAN
-MASTER_SITE_SUBDIR=	pool/main/h/hardening-wrapper
+MASTER_SITES=	DEBIAN/pool/main/h/hardening-wrapper
 DISTNAME=	hardening-wrapper_${PORTVERSION}
 
 MAINTAINER=	amutu@amutu.com

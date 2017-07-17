@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-freezegun/Makefile 443057 2017-06-10 02:07:56Z woodsb02 $
+# $FreeBSD: head/devel/py-freezegun/Makefile 445867 2017-07-15 10:15:35Z koobs $
 
 PORTNAME=	freezegun
-PORTVERSION=	0.3.6
+PORTVERSION=	0.3.9
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -23,9 +23,6 @@ USES?=		python
 USE_PYTHON=	autoplist distutils
 
 NO_ARCH=	yes
-
-post-extract:
-	${FIND} ${WRKSRC} -type d -name __pycache__ -or -type f -name '*.py[co]' -exec ${RM} -r {} +
 
 do-test:
 	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYDISTUTILS_SETUP} test

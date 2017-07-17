@@ -1,8 +1,8 @@
 # Created by: Gleb Smirnoff <glebius@FreeBSD.org>
-# $FreeBSD: head/astro/osmosis/Makefile 410207 2016-03-05 20:01:03Z amdmi3 $
+# $FreeBSD: head/astro/osmosis/Makefile 445446 2017-07-10 17:56:03Z amdmi3 $
 
 PORTNAME=	osmosis
-PORTVERSION=	0.43.1
+PORTVERSION=	0.45
 CATEGORIES=	astro java
 MASTER_SITES=	http://bretth.dev.openstreetmap.org/osmosis-build/ \
 		http://mirror.amdmi3.ru/distfiles/
@@ -10,23 +10,31 @@ MASTER_SITES=	http://bretth.dev.openstreetmap.org/osmosis-build/ \
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Command line Java app for processing OpenStreetMap data
 
-USES=		tar:tgz
-NO_BUILD=	yes
-NO_ARCH=	yes
-WRKSRC=		${WRKDIR}
+LICENSE=	PD
 
+NO_WRKSUBDIR=	yes
+USES=		tar:tgz
 USE_JAVA=	yes
 JAVA_VERSION=	1.6+
+NO_BUILD=	yes
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/${PORTNAME}
 PORTDATA=	*
+PORTDOCS=	*
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|^\(MYAPP_HOME=\).*|\1${DATADIR}|' ${WRKSRC}/bin/osmosis
 
 do-install:
-	${MKDIR} ${STAGEDIR}${DATADIR}
-	cd ${WRKSRC} && ${COPYTREE_SHARE} "script config lib" ${STAGEDIR}${DATADIR}/
+	@${MKDIR} ${STAGEDIR}${DATADIR}
+	@cd ${WRKSRC} && ${COPYTREE_SHARE} "script config lib" ${STAGEDIR}${DATADIR}/
 	${INSTALL_SCRIPT} ${WRKSRC}/bin/osmosis ${STAGEDIR}${PREFIX}/bin/
+
+do-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/changes.txt ${WRKSRC}/readme.txt ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

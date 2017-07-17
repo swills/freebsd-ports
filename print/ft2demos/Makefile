@@ -1,8 +1,8 @@
 # Created by: KANOU Hiroki <kanou@khdd.net>
-# $FreeBSD: head/print/ft2demos/Makefile 438065 2017-04-08 20:16:43Z bofh $
+# $FreeBSD: head/print/ft2demos/Makefile 445744 2017-07-14 11:20:07Z bofh $
 
 PORTNAME=	ft2demos
-PORTVERSION=	2.7.1
+PORTVERSION=	2.8
 CATEGORIES=	print
 MASTER_SITES=	http://savannah.nongnu.org/download/freetype/ \
 		SF/freetype/freetype-demos/${PORTVERSION}

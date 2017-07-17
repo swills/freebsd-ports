@@ -1,9 +1,9 @@
 # Created by: Gustavo Fukao <gustavofukao@gmail.com>
-# $FreeBSD: head/devel/gazpacho/Makefile 444837 2017-07-01 20:47:38Z antoine $
+# $FreeBSD: head/devel/gazpacho/Makefile 445922 2017-07-15 17:30:42Z sunpoet $
 
 PORTNAME=	gazpacho
 PORTVERSION=	0.7.2
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel python
 MASTER_SITES=	GNOME/sources/gazpacho/${PORTVERSION:R}
 
@@ -22,7 +22,7 @@ USE_PYTHON=	distutils
 NO_BUILD=	yes
 NO_ARCH=	yes
 
-PORTDOCS=	AUTHORS ChangeLog CONTRIBUTORS COPYING README NEWS
+PORTDOCS=	AUTHORS ChangeLog CONTRIBUTORS README NEWS
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 442852 2017-06-07 16:34:44Z rene $
+# $FreeBSD: head/dns/Makefile 445716 2017-07-13 21:54:22Z rene $
 #
 
     COMMENT = Domain Name Service tools
@@ -110,7 +110,6 @@
     SUBDIR += nss_resinit
     SUBDIR += opendd
     SUBDIR += opendnssec
-    SUBDIR += opendnssec13
     SUBDIR += opendnssec2
     SUBDIR += openmdns
     SUBDIR += openresolv

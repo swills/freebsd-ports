@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/libcutl/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/devel/libcutl/Makefile 445873 2017-07-15 13:08:41Z rakuco $
 
 PORTNAME=	libcutl
 PORTVERSION=	1.10.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	http://www.codesynthesis.com/download/${PORTNAME}/${PORTVERSION:R}/
 
@@ -19,7 +19,7 @@ BROKEN_sparc64=	Does not build: cannot configure with boost
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
-USES=		libtool
+USES=		compiler:c++11-lib libtool
 
 # The checks for external boost and external expat are quite limited and do not
 # add the ${LOCALBASE} paths correctly (libboost.m4 uses wrong paths and

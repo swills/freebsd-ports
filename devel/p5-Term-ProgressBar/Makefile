@@ -1,8 +1,8 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/devel/p5-Term-ProgressBar/Makefile 428071 2016-12-07 16:19:26Z sunpoet $
+# $FreeBSD: head/devel/p5-Term-ProgressBar/Makefile 445621 2017-07-13 00:00:20Z sunpoet $
 
 PORTNAME=	Term-ProgressBar
-PORTVERSION=	2.18
+PORTVERSION=	2.20
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -27,7 +27,7 @@ USE_PERL5=	configure
 
 PORTEXAMPLES=	*
 
-post-install:
+post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/
 	${INSTALL_DATA} ${WRKSRC}/examples/* ${STAGEDIR}${EXAMPLESDIR}/
 

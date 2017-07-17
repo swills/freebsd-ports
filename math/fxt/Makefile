@@ -1,12 +1,12 @@
 # Created by: ijliao
-# $FreeBSD: head/math/fxt/Makefile 416925 2016-06-15 13:17:47Z wen $
+# $FreeBSD: head/math/fxt/Makefile 445464 2017-07-10 23:05:43Z jrm $
 
 PORTNAME=	fxt
-PORTVERSION=	2016.06.02
+DISTVERSION=	2017.06.27
 CATEGORIES=	math
 MASTER_SITES=	http://www.jjj.de/fxt/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	amutu@amutu.com
 COMMENT=	FFT code and related stuff
 
 LICENSE=	GPLv3+

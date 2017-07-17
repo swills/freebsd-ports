@@ -1,5 +1,5 @@
 # Created by: Nikolai Lifanov <lifanov@mail.lifanov.com>
-# $FreeBSD: head/sysutils/ansible1/Makefile 438419 2017-04-13 03:55:56Z lifanov $
+# $FreeBSD: head/sysutils/ansible1/Makefile 446054 2017-07-17 06:27:45Z koobs $
 
 PKGNAMESUFFIX=	1
 PORTVERSION=	1.9.6
@@ -12,7 +12,7 @@ DISTINFO_FILE=	${.CURDIR}/distinfo
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml \
 		${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto \
-		${PYTHON_PKGNAMEPREFIX}paramiko1>0:security/py-paramiko1 \
+		${PYTHON_PKGNAMEPREFIX}paramiko>0:security/py-paramiko \
 		${PYTHON_PKGNAMEPREFIX}Jinja2>0:devel/py-Jinja2
 
 USES=	cpe python:2 shebangfix

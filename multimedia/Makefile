@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 442586 2017-06-04 20:29:37Z sunpoet $
+# $FreeBSD: head/multimedia/Makefile 445716 2017-07-13 21:54:22Z rene $
 #
 
     COMMENT = Multimedia software
@@ -24,7 +24,6 @@
     SUBDIR += avidemux-qt4
     SUBDIR += avinfo
     SUBDIR += baka-mplayer
-    SUBDIR += banshee
     SUBDIR += bino
     SUBDIR += bitstream
     SUBDIR += bombono

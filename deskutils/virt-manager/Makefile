@@ -1,8 +1,7 @@
-# $FreeBSD: head/deskutils/virt-manager/Makefile 426603 2016-11-20 16:10:19Z novel $
+# $FreeBSD: head/deskutils/virt-manager/Makefile 445763 2017-07-14 15:05:45Z novel $
 
 PORTNAME=	virt-manager
-PORTVERSION=	1.4.0
-PORTREVISION=	1
+PORTVERSION=	1.4.1
 CATEGORIES=	deskutils net-mgmt
 MASTER_SITES=	http://virt-manager.org/download/sources/${PORTNAME}/ \
 		LOCAL/jgh/deskutils/${PORTNAME}/

@@ -1,5 +1,5 @@
 # Created by: Arjan van Leeuwen <avleeuwen@piwebs.com>
-# $FreeBSD: head/graphics/dcraw/Makefile 426740 2016-11-21 17:35:55Z sunpoet $
+# $FreeBSD: head/graphics/dcraw/Makefile 445884 2017-07-15 17:22:08Z sunpoet $
 
 PORTNAME=	dcraw
 PORTVERSION=	9.27
@@ -8,6 +8,8 @@ MASTER_SITES=	LOCAL/sunpoet
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Decoder for RAW files from digital cameras
+
+LICENSE=	GPLv2+
 
 LIB_DEPENDS=	libjasper.so:graphics/jasper \
 		liblcms2.so:graphics/lcms2

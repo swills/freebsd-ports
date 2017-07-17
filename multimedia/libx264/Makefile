@@ -1,8 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/multimedia/libx264/Makefile 422675 2016-09-23 13:15:06Z jbeich $
+# $FreeBSD: head/multimedia/libx264/Makefile 445840 2017-07-14 23:58:25Z jbeich $
 #
 # Updating notes: see multimedia/x264/Makefile.
 
+PORTREVISION=	0
 PKGNAMEPREFIX=	lib
 COMMENT=	H.264/MPEG-4 AVC Video Encoding (Library)
 MASTERDIR=	${.CURDIR}/../x264
@@ -13,9 +14,14 @@ LIB_DEPENDS=	#
 
 USES=		pathfix
 
-OPTIONS_DEFINE=		HI10P OPENCL
-OPTIONS_DEFAULT=	OPENCL
+OPTIONS_DEFINE=		ASM HI10P OPENCL
+OPTIONS_DEFAULT=	ASM OPENCL
 OPTIONS_EXCLUDE=	FFMS GPAC LAVF LSMASH SWSCALE
+
+ASM_BUILD_DEPENDS=	${ASM_BUILD_DEPENDS_${ARCH}}
+ASM_BUILD_DEPENDS_amd64=${ASM_BUILD_DEPENDS_i386}
+ASM_BUILD_DEPENDS_i386=	yasm>=1.2.0:devel/yasm
+ASM_CONFIGURE_ENABLE=	asm
 
 HI10P_DESC=		Enable High 10 Profile 10-bit encoding
 HI10P_CONFIGURE_ON=	--bit-depth=10

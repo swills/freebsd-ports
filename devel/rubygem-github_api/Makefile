@@ -1,8 +1,9 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-github_api/Makefile 438873 2017-04-19 14:41:02Z sunpoet $
+# $FreeBSD: head/devel/rubygem-github_api/Makefile 445521 2017-07-11 17:00:37Z sunpoet $
 
 PORTNAME=	github_api
 PORTVERSION=	0.17.0
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

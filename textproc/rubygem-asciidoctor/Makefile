@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-asciidoctor/Makefile 429840 2016-12-28 23:30:20Z swills $
+# $FreeBSD: head/textproc/rubygem-asciidoctor/Makefile 445695 2017-07-13 18:12:19Z sunpoet $
 
 PORTNAME=	asciidoctor
-PORTVERSION=	1.5.5
+PORTVERSION=	1.5.6
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

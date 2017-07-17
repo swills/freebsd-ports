@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-qiniu/Makefile 438863 2017-04-19 14:40:08Z sunpoet $
+# $FreeBSD: head/net/rubygem-qiniu/Makefile 445509 2017-07-11 16:59:35Z sunpoet $
 
 PORTNAME=	qiniu
 PORTVERSION=	6.8.1
+PORTREVISION=	1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -13,7 +14,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-json1>=1.8:devel/rubygem-json1 \
-		rubygem-mime-types>=2.4.0:misc/rubygem-mime-types \
+		rubygem-mime-types29>=2.4.0:misc/rubygem-mime-types29 \
 		rubygem-rest-client>=2.0.0:www/rubygem-rest-client \
 		rubygem-ruby-hmac>=0.4:security/rubygem-ruby-hmac
 

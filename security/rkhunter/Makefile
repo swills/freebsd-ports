@@ -1,16 +1,16 @@
 # Created by: Radim Kolar
-# $FreeBSD: head/security/rkhunter/Makefile 443547 2017-06-14 00:14:21Z ultima $
+# $FreeBSD: head/security/rkhunter/Makefile 446048 2017-07-16 22:39:04Z dbaio $
 
 PORTNAME=	rkhunter
-PORTVERSION=	1.4.2
-PORTREVISION=	4
+PORTVERSION=	1.4.4
 CATEGORIES=	security
 MASTER_SITES=	SF
 
 MAINTAINER=	lukasz@wasikowski.net
 COMMENT=	Rootkit detection tool
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/files/LICENSE
 
 OPTIONS_DEFINE=	LSOF NMAP DOCS
 OPTIONS_DEFAULT=LSOF

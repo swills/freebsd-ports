@@ -1,9 +1,8 @@
 # Created by: Anes Mukhametov <anes@anes.su>
-# $FreeBSD: head/devel/p5-Lingua-Translit/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-Lingua-Translit/Makefile 445880 2017-07-15 17:11:05Z dbaio $
 
 PORTNAME=	Lingua-Translit
-PORTVERSION=	0.19
-PORTREVISION=	1
+PORTVERSION=	0.27
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -11,10 +10,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	anes@anes.su
 COMMENT=	Transliterates text between writing systems
 
-LICENSE=	GPLv2 ART20
-LICENSE_COMB=	dual
+LICENSE=	ARTPERL10
 
 USES=	perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

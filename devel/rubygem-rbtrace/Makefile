@@ -1,9 +1,9 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-rbtrace/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-rbtrace/Makefile 445525 2017-07-11 17:02:53Z sunpoet $
 
 PORTNAME=	rbtrace
 PORTVERSION=	0.4.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -13,7 +13,7 @@ COMMENT=	Shows method calls inside another ruby process in real time
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-xRUN_DEPENDS=	rubygem-ffi>=1.0.6:devel/rubygem-ffi \
+RUN_DEPENDS=	rubygem-ffi>=1.0.6:devel/rubygem-ffi \
 		rubygem-msgpack>=0.4.3:devel/rubygem-msgpack \
 		rubygem-trollop>=1.16.2:devel/rubygem-trollop
 

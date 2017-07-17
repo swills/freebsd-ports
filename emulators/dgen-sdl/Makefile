@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/emulators/dgen-sdl/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/emulators/dgen-sdl/Makefile 445611 2017-07-12 21:56:58Z ak $
 
 PORTNAME=	dgen-sdl
 PORTVERSION=	1.33
@@ -28,5 +28,11 @@ BUILD_DEPENDS+=	nasm:devel/nasm
 .else
 CONFIGURE_ARGS+=	--disable-asm
 .endif
+
+post-patch:
+	@${REINPLACE_CMD} -e '/@NASM@/s/--//' \
+		${WRKSRC}/Makefile.in \
+		${WRKSRC}/mz80/Makefile.in \
+		${WRKSRC}/star/Makefile.in
 
 .include <bsd.port.post.mk>

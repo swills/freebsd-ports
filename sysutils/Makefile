@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 445346 2017-07-08 22:24:33Z lme $
+# $FreeBSD: head/sysutils/Makefile 445978 2017-07-16 00:47:40Z sunpoet $
 #
 
     COMMENT = System utilities
@@ -39,6 +39,7 @@
     SUBDIR += android-file-transfer-qt5
     SUBDIR += ansible
     SUBDIR += ansible1
+    SUBDIR += anvil
     SUBDIR += apachetop
     SUBDIR += apcpwr
     SUBDIR += apcupsd
@@ -875,7 +876,6 @@
     SUBDIR += py-gmailfs-fuse
     SUBDIR += py-halite
     SUBDIR += py-honcho
-    SUBDIR += py-iocage
     SUBDIR += py-iowait
     SUBDIR += py-nagiosplugin
     SUBDIR += py-nomad
@@ -1026,6 +1026,7 @@
     SUBDIR += rubygem-sys-proctable
     SUBDIR += rubygem-sys-uname
     SUBDIR += rubygem-sys-uptime
+    SUBDIR += rubygem-syslog-logger
     SUBDIR += rubygem-teamocil
     SUBDIR += rubygem-tmuxinator
     SUBDIR += rubygem-vagrant-bhyve

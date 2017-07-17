@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/exabgp/Makefile 440923 2017-05-15 13:18:51Z zi $
+# $FreeBSD: head/net/exabgp/Makefile 445649 2017-07-13 13:43:52Z zi $
 
 PORTNAME=	exabgp
-PORTVERSION=	3.4.19
+PORTVERSION=	3.4.20
 CATEGORIES=	net
 MASTER_SITES=	GH \
 		http://mirrors.rit.edu/zi/
@@ -42,6 +42,6 @@ do-install:
 
 do-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
-	(cd ${WRKSRC}/etc && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR})
+	(cd ${WRKSRC}/etc/exabgp && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR})
 
 .include <bsd.port.mk>

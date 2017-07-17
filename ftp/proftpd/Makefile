@@ -1,5 +1,5 @@
 # Created by: Stephane Legrand
-# $FreeBSD: head/ftp/proftpd/Makefile 440871 2017-05-14 10:04:27Z brnrd $
+# $FreeBSD: head/ftp/proftpd/Makefile 445718 2017-07-13 22:23:23Z mm $
 
 PORTNAME?=	proftpd
 .if !defined(DISTVERSION)
@@ -26,7 +26,7 @@ BUILD_DEPENDS+=	${LOCALBASE}/sbin/proftpd:ftp/proftpd
 RUN_DEPENDS+=	${LOCALBASE}/sbin/proftpd:ftp/proftpd
 .endif
 
-PROFTPD_VERSION=	1.3.5d
+PROFTPD_VERSION=	1.3.5e
 
 .if defined(_BUILDING_PROFTPD_MODULE)
 DISTFILES+=	${DISTNAME}${EXTRACT_SUFX}

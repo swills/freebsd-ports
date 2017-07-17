@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/dns/getdns/Makefile 444617 2017-06-29 01:08:35Z zi $
+# $FreeBSD: head/dns/getdns/Makefile 445648 2017-07-13 13:07:58Z zi $
 
 PORTNAME=	getdns
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	dns ipv6
 MASTER_SITES=	https://getdnsapi.net/dist/ \
 		https://mirrors.rit.edu/zi/ \

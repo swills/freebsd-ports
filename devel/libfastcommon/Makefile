@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/libfastcommon/Makefile 440011 2017-05-03 12:47:59Z miwi $
+# $FreeBSD: head/devel/libfastcommon/Makefile 445533 2017-07-11 17:03:34Z sunpoet $
 
 PORTNAME=	libfastcommon
 PORTVERSION=	1.0.36
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	daniel@blodan.se
@@ -11,11 +12,11 @@ LICENSE=	GPLv3
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	happyfish100
-GH_TAGNAME=	aa4f5b29c76b3a87b54ca177808afc7f103f0b2b
+GH_TAGNAME=	aa4f5b2
 
 USE_LDCONFIG=	yes
 
-MAKE_ENV +=	DESTDIR=${STAGEDIR}
+MAKE_ENV=	DESTDIR=${STAGEDIR}
 
 do-build:
 	cd ${BUILD_WRKSRC} && ${SETENV} ${MAKE_ENV} ${SH} make.sh

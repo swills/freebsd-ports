@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/sdl2pp/Makefile 444626 2017-06-29 07:57:42Z amdmi3 $
+# $FreeBSD: head/devel/sdl2pp/Makefile 445584 2017-07-12 12:29:37Z amdmi3 $
 
 PORTNAME=	sdl2pp
-PORTVERSION=	0.14.1
+PORTVERSION=	0.15.0
 CATEGORIES=	devel
 
 MAINTAINER=	amdmi3@FreeBSD.org

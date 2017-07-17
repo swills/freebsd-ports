@@ -1,9 +1,8 @@
 # Created by: Gerhard Häring <gh@ghaering.de>
-# $FreeBSD: head/sysutils/duplicity/Makefile 442068 2017-05-30 15:20:57Z sunpoet $
+# $FreeBSD: head/sysutils/duplicity/Makefile 445559 2017-07-12 01:20:53Z dbaio $
 
 PORTNAME=	duplicity
-PORTVERSION=	0.7.12
-PORTREVISION=	1
+PORTVERSION=	0.7.13.1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://launchpad.net/duplicity/0.7-series/${PORTVERSION}/+download/
 
@@ -14,7 +13,7 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	librsync.so:net/librsync2
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lockfile>=0:devel/py-lockfile
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}fasteners>=0:devel/py-fasteners
 
 USES=		python:2
 USE_PYTHON=	autoplist distutils

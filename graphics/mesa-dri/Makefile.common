@@ -9,12 +9,12 @@
 #    - graphics/mesa-libs
 #    - lang/clover
 #
-# $FreeBSD: head/graphics/mesa-dri/Makefile.common 444827 2017-07-01 14:39:27Z jbeich $
+# $FreeBSD: head/graphics/mesa-dri/Makefile.common 446036 2017-07-16 16:35:17Z rezny $
 
 MESAVERSION=	${MESABASEVERSION}${MESASUBVERSION:C/^(.)/.\1/}
 MESADISTVERSION=${MESABASEVERSION}${MESASUBVERSION:C/^(.)/-\1/}
 
-MESABASEVERSION=	17.1.4
+MESABASEVERSION=	17.1.5
 # if there is a subversion, don't include the '-' between 7.11-rc2.
 MESASUBVERSION=
 

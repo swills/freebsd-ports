@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-toolkits/rubygem-gdk3/Makefile 445376 2017-07-09 06:59:37Z sunpoet $
+# $FreeBSD: head/x11-toolkits/rubygem-gdk3/Makefile 445940 2017-07-15 19:10:07Z sunpoet $
 
 PORTNAME=	gdk3
-PORTVERSION=	3.1.6
+PORTVERSION=	3.1.8
 CATEGORIES=	x11-toolkits rubygems
 MASTER_SITES=	RG
 

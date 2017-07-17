@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau <duchateau.olivier@gmail.com>
-# $FreeBSD: head/www/py-requests/Makefile 443065 2017-06-10 02:57:54Z woodsb02 $
+# $FreeBSD: head/www/py-requests/Makefile 445845 2017-07-15 05:00:28Z koobs $
 
 PORTNAME=	requests
-PORTVERSION=	2.17.3
+PORTVERSION=	2.18.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -22,6 +22,7 @@ TEST_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}pytest>=2.8.1:devel/py-pytest \
 		${PYTHON_PKGNAMEPREFIX}execnet>=1.1:sysutils/py-execnet \
 		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock
 
+# Actually 2.6-2.7,3.3+
 USES?=		python
 USE_PYTHON=	autoplist concurrent distutils
 

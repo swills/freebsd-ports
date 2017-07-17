@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/rubygem-r10k/Makefile 442492 2017-06-03 13:17:25Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-r10k/Makefile 445537 2017-07-11 17:07:44Z sunpoet $
 
 PORTNAME=	r10k
 PORTVERSION=	2.5.5
+PORTREVISION=	1
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
@@ -17,7 +18,7 @@ RUN_DEPENDS=	rubygem-colored>=1.2:textproc/rubygem-colored \
 		rubygem-log4r>=1.1.10:sysutils/rubygem-log4r \
 		rubygem-multi_json>=1.10:devel/rubygem-multi_json \
 		rubygem-puppet_forge>=2.1.5:sysutils/rubygem-puppet_forge \
-		rubygem-semantic_puppet0>=0.1.0:devel/rubygem-semantic_puppet0
+		rubygem-semantic_puppet>=1.0:devel/rubygem-semantic_puppet
 
 NO_ARCH=	yes
 USE_RUBY=	yes

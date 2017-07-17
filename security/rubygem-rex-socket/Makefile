@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-rex-socket/Makefile 441382 2017-05-21 11:24:30Z antoine $
+# $FreeBSD: head/security/rubygem-rex-socket/Makefile 445703 2017-07-13 18:37:56Z antoine $
 
 PORTNAME=	rex-socket
-PORTVERSION=	0.1.6
+PORTVERSION=	0.1.8
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

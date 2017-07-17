@@ -1,8 +1,8 @@
 # Created by: ache
-# $FreeBSD: head/www/lynx-current/Makefile 426240 2016-11-16 13:23:57Z johans $
+# $FreeBSD: head/www/lynx-current/Makefile 445991 2017-07-16 09:31:09Z johans $
 
 PORTNAME=	lynx
-PORTVERSION=	2.8.9d11
+PORTVERSION=	2.8.9d16
 CATEGORIES=	www ipv6
 MASTER_SITES=	http://invisible-mirror.net/archives/lynx/tarballs/ \
 		ftp://invisible-island.net/lynx/tarballs/

@@ -1,9 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/devel/py-dateutil/Makefile 442936 2017-06-08 14:28:21Z woodsb02 $
+# $FreeBSD: head/devel/py-dateutil/Makefile 445492 2017-07-11 11:06:02Z koobs $
 
 PORTNAME=	dateutil
-PORTVERSION=	2.6.0
-PORTREVISION=	1
+PORTVERSION=	2.6.1
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

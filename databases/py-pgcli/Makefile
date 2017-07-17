@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/py-pgcli/Makefile 441929 2017-05-28 23:15:02Z sunpoet $
+# $FreeBSD: head/databases/py-pgcli/Makefile 446019 2017-07-16 16:09:56Z sunpoet $
 
 PORTNAME=	pgcli
-PORTVERSION=	1.6.0
+PORTVERSION=	1.7.0
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,8 +11,10 @@ MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	CLI for Postgres Database with auto-completion and syntax highlighting
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=4.1:devel/py-click \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cli-helpers>=0.2.0:devel/py-cli-helpers \
+		${PYTHON_PKGNAMEPREFIX}click>=4.1:devel/py-click \
 		${PYTHON_PKGNAMEPREFIX}configobj>=5.0.6:devel/py-configobj \
 		${PYTHON_PKGNAMEPREFIX}humanize>=0.5.1:devel/py-humanize \
 		${PYTHON_PKGNAMEPREFIX}pgspecial>=1.8.0:databases/py-pgspecial \

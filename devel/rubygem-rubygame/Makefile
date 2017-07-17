@@ -1,9 +1,9 @@
 # Created by: ws	Christoph Kick
-# $FreeBSD: head/devel/rubygem-rubygame/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-rubygame/Makefile 445528 2017-07-11 17:03:09Z sunpoet $
 
 PORTNAME=	rubygame
 PORTVERSION=	2.6.4
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,12 +12,12 @@ COMMENT=	Game-development extension and library for the ruby language
 
 LICENSE=	LGPL21
 
-RUN_DEPENDS=	rubygem-ruby-sdl-ffi>=0.1.0:devel/rubygem-ruby-sdl-ffi
+RUN_DEPENDS=	rubygem-rake>=0.7.0:devel/rubygem-rake \
+		rubygem-ruby-sdl-ffi>=0.1.0:devel/rubygem-ruby-sdl-ffi
 
 NO_ARCH=	yes
-
 USE_RUBY=	yes
-USES=		gem
 USE_SDL=	gfx image mixer ttf
+USES=		gem
 
 .include <bsd.port.mk>

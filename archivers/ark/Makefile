@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/archivers/ark/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/archivers/ark/Makefile 445791 2017-07-14 17:20:13Z amdmi3 $
 
 PORTNAME=	ark
 PORTVERSION=	${KDE4_VERSION}
@@ -10,6 +10,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Archiving tool for KDE
 
 LIB_DEPENDS=	libqjson.so:devel/qjson
+
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		cmake:outsource kde:4 libarchive cpe tar:xz
 USE_KDE=	automoc4 kdelibs libkonq

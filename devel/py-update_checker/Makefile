@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-update_checker/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-update_checker/Makefile 446013 2017-07-16 15:20:03Z koobs $
 
 PORTNAME=	update_checker
-PORTVERSION=	0.11
+PORTVERSION=	0.16
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

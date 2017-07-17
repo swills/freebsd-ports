@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-mousetrap-rails/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/www/rubygem-mousetrap-rails/Makefile 445916 2017-07-15 17:24:47Z sunpoet $
 
 PORTNAME=	mousetrap-rails
 PORTVERSION=	1.4.6
@@ -10,10 +10,9 @@ COMMENT=	Javascript library for handling keyboard shortcuts
 
 LICENSE=	MIT APACHE20
 LICENSE_COMB=	multi
-LICENSE_FILE=	LICENSE.md
+LICENSE_FILE_MIT=	${WRKSRC}/LICENSE.md
 
 NO_ARCH=	yes
-
 USE_RUBY=	yes
 USES=		gem
 

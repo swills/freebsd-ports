@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/oniguruma4/Makefile 429166 2016-12-22 15:57:37Z lifanov $
+# $FreeBSD: head/devel/oniguruma4/Makefile 445714 2017-07-13 21:15:21Z pawel $
 
 PORTNAME=	oniguruma
 PORTVERSION=	4.7.1
@@ -16,7 +16,7 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		libtool
-CONFLICTS_INSTALL=	oniguruma[56]-.*
+CONFLICTS_INSTALL=	oniguruma[56]
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip

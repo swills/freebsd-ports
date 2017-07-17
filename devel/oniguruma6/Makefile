@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/oniguruma6/Makefile 445350 2017-07-08 22:43:41Z brnrd $
+# $FreeBSD: head/devel/oniguruma6/Makefile 445714 2017-07-13 21:15:21Z pawel $
 
 PORTNAME=	oniguruma
 PORTVERSION=	6.4.0
@@ -18,7 +18,7 @@ GH_ACCOUNT=	kkos
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
-CONFLICTS_INSTALL=	oniguruma[45]-.*
+CONFLICTS_INSTALL=	oniguruma[45]
 
 USES=		pathfix autoreconf libtool
 PATHFIX_MAKEFILEIN=	Makefile.am

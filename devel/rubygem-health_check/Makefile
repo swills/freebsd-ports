@@ -1,9 +1,9 @@
 # Created by: Torsten Zuehlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/devel/rubygem-health_check/Makefile 439170 2017-04-22 12:45:43Z miwi $
+# $FreeBSD: head/devel/rubygem-health_check/Makefile 445522 2017-07-11 17:00:42Z sunpoet $
 
 PORTNAME=	health_check
 PORTVERSION=	2.6.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,6 +12,8 @@ COMMENT=	Simple health check of Rails app for uptime monitoring
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
+
+RUN_DEPENDS=	rubygem-rails4>=4.0:www/rubygem-rails4
 
 NO_ARCH=	yes
 USE_RUBY=	yes

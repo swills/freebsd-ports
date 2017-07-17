@@ -1,9 +1,9 @@
 # Created by: Anton Karpov <toxa@toxahost.ru>
-# $FreeBSD: head/mail/simscan/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/simscan/Makefile 445501 2017-07-11 15:47:44Z garga $
 
 PORTNAME=	simscan
 PORTVERSION=	1.4.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	mail security
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
@@ -51,6 +51,7 @@ CLAMAV_BUILD_DEPENDS=	clamdscan:security/clamav
 
 RIPMIME_CONFIGURE_OFF=	--disable-ripmime
 RIPMIME_BUILD_DEPENDS=	ripmime:mail/ripmime
+RIPMIME_RUN_DEPENDS=	ripmime:mail/ripmime
 
 SPAMD_BUILD_DEPENDS=	spamassassin:mail/spamassassin
 SPAMD_CONFIGURE_ON=	--enable-spam=y \
