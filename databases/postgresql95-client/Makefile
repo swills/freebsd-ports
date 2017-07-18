@@ -1,7 +1,8 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/databases/postgresql95-client/Makefile 406034 2016-01-13 10:36:22Z girgen $
+# $FreeBSD: head/databases/postgresql95-client/Makefile 446065 2017-07-17 11:15:50Z amdmi3 $
 
 PORTNAME=	postgresql
+PORTREVISION=	2
 
 COMMENT=	PostgreSQL database (client)
 
@@ -9,7 +10,7 @@ MASTERDIR=	${.CURDIR}/../postgresql95-server
 
 BUILD_DIRS=	config src/include src/interfaces src/port \
 		src/bin/pg_dump src/bin/psql src/bin/scripts src/bin/pg_config \
-		src/bin/pgbench doc src/makefiles
+		src/bin/pgbench doc src/makefiles src/test/regress
 INSTALL_DIRS=	${BUILD_DIRS}
 
 CLIENT_ONLY=	yes

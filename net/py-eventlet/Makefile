@@ -1,14 +1,13 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/py-eventlet/Makefile 437242 2017-03-29 21:07:54Z cs $
+# $FreeBSD: head/net/py-eventlet/Makefile 446111 2017-07-17 20:10:47Z mmokhi $
 
 PORTNAME=	eventlet
-PORTVERSION=	0.20.1
-PORTREVISION=	1
+PORTVERSION=	0.21.0
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	cs@FreeBSD.org
+MAINTAINER=	mmokhi@FreeBSD.org
 COMMENT=	Concurrent networking library for Python
 
 LICENSE=	MIT

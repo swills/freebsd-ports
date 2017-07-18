@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/Makefile 439964 2017-05-02 18:50:35Z danfe $
+# $FreeBSD: head/cad/Makefile 446086 2017-07-17 17:55:41Z thierry $
 #
 
     COMMENT = CAD tools
@@ -45,6 +45,7 @@
     SUBDIR += jspice3
     SUBDIR += kicad
     SUBDIR += kicad-devel
+    SUBDIR += kicad-library
     SUBDIR += klayout
     SUBDIR += layouteditor
     SUBDIR += ldraw

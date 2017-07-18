@@ -1,9 +1,8 @@
 # Created by: Matt Peterson <matt@peterson.org>
-# $FreeBSD: head/net-mgmt/collectd5/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/net-mgmt/collectd5/Makefile 446072 2017-07-17 13:38:04Z olivier $
 
 PORTNAME=	collectd
-PORTVERSION=	5.7.1
-PORTREVISION=	2
+PORTVERSION=	5.7.2
 CATEGORIES=	net-mgmt
 MASTER_SITES=	https://collectd.org/files/ \
 		http://collectd.org/files/

@@ -1,9 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-pbr/Makefile 443062 2017-06-10 02:43:14Z woodsb02 $
+# $FreeBSD: head/devel/py-pbr/Makefile 446136 2017-07-18 11:32:56Z koobs $
 
 PORTNAME=	pbr
-PORTVERSION=	1.8.1
-PORTREVISION=	1
+PORTVERSION=	3.1.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

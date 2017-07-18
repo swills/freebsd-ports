@@ -1,8 +1,9 @@
 # Created by: Allan Jude <allanjude@freebsd.org>
-# $FreeBSD: head/dns/gdnsd2/Makefile 421883 2016-09-11 23:01:34Z zi $
+# $FreeBSD: head/dns/gdnsd2/Makefile 446075 2017-07-17 14:44:39Z mmokhi $
 
 PORTNAME=	gdnsd
 PORTVERSION=	2.2.4
+PORTREVISION=	1
 CATEGORIES=	dns
 MASTER_SITES=	https://github.com/gdnsd/gdnsd/releases/download/v${PORTVERSION}/ \
 		http://mirrors.rit.edu/zi/ \

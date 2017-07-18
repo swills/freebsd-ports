@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 445148 2017-07-06 13:49:54Z tz $
+# $FreeBSD: head/textproc/Makefile 446058 2017-07-17 10:16:04Z tz $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1605,6 +1605,7 @@
     SUBDIR += scr2txt
     SUBDIR += scrollkeeper
     SUBDIR += scss
+    SUBDIR += scws
     SUBDIR += sdcv
     SUBDIR += sdf
     SUBDIR += sdif

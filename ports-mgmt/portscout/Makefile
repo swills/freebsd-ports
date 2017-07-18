@@ -1,9 +1,9 @@
 # Created by: Shaun Amott <shaun@inerd.com>
-# $FreeBSD: head/ports-mgmt/portscout/Makefile 444801 2017-06-30 22:14:34Z sunpoet $
+# $FreeBSD: head/ports-mgmt/portscout/Makefile 446122 2017-07-17 22:54:17Z zi $
 
 PORTNAME=	portscout
 PORTVERSION=	0.8.1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	ports-mgmt
 MASTER_SITES=	http://mirror.inerd.com/FreeBSD/distfiles/${PORTNAME}/ \
 		http://www.atarininja.org/~wxs/distfiles/ \
@@ -15,6 +15,7 @@ COMMENT=	Tool to scan for new versions of FreeBSD ports
 LICENSE=	BSD2CLAUSE
 
 RUN_DEPENDS=	p5-DBI>=0:databases/p5-DBI \
+		p5-CGI>=0:www/p5-CGI \
 		p5-Proc-Queue>=0:devel/p5-Proc-Queue \
 		p5-URI>=0:net/p5-URI \
 		p5-XML-XPath>=0:textproc/p5-XML-XPath \

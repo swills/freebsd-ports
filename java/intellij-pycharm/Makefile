@@ -1,8 +1,8 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/java/intellij-pycharm/Makefile 443563 2017-06-14 10:06:44Z bsam $
+# $FreeBSD: head/java/intellij-pycharm/Makefile 446131 2017-07-18 09:20:26Z bsam $
 
 PORTNAME=	pycharm
-PORTVERSION=	2017.1.4
+PORTVERSION=	2017.1.5
 CATEGORIES=	java devel python
 MASTER_SITES=	https://download.jetbrains.com/python/ \
 		http://download.jetbrains.com/python/

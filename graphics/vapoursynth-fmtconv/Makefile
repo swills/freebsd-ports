@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/vapoursynth-fmtconv/Makefile 443665 2017-06-16 00:31:52Z jbeich $
+# $FreeBSD: head/graphics/vapoursynth-fmtconv/Makefile 446139 2017-07-18 11:47:09Z jbeich $
 
 PORTNAME=	fmtconv
 PORTVERSION=	r20
@@ -11,6 +11,9 @@ COMMENT=	Format conversion tools for Vapoursynth
 LICENSE=	WTFPL
 
 BUILD_DEPENDS=	${LOCALBASE}/include/vapoursynth/VapourSynth.h:multimedia/vapoursynth
+
+ONLY_FOR_ARCHS=	amd64 i386
+ONLY_FOR_ARCHS_REASON=	https://github.com/EleonoreMizo/fmtconv/issues/8
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	EleonoreMizo

@@ -1,9 +1,9 @@
 # Created by: Allan Jude <allanjude@freebsd.org>
-# $FreeBSD: head/dns/gdnsd/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/dns/gdnsd/Makefile 446075 2017-07-17 14:44:39Z mmokhi $
 
 PORTNAME=	gdnsd
 PORTVERSION=	1.11.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	dns
 MASTER_SITES=	https://github.com/blblack/gdnsd/releases/download/v${PORTVERSION}/ \
 		http://gdnsd.scaleengine.net/gdnsd/

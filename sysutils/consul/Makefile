@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/consul/Makefile 440698 2017-05-12 18:43:37Z swills $
+# $FreeBSD: head/sysutils/consul/Makefile 446103 2017-07-17 18:44:38Z swills $
 
 PORTNAME=	consul
-PORTVERSION=	0.8.3
+PORTVERSION=	0.8.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
@@ -28,14 +28,10 @@ GROUPS=		consul
 post-extract:
 	@${MV} ${WRKSRC}/vendor/ ${WRKSRC}/src/
 
-post-patch:
-	@${REINPLACE_CMD} \
-		-e "s!%%VERSION%%!${PORTVERSION}!g" \
-		${WRKSRC}/version/version.go
-
 do-build:
 	@cd ${WRKSRC}/src/github.com/hashicorp/consul; ${SETENV} CGO_ENABLED=0 ${BUILD_ENV} GOPATH=${WRKSRC} go build \
 		-ldflags "\
+		-X github.com/hashicorp/consul/version.Version=${PORTVERSION}  \
 		-X github.com/hashicorp/consul/version.VersionPrerelease=  \
 		-X github.com/hashicorp/consul/version.GitDescribe=v${PORTVERSION} \
 		" \

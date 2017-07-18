@@ -1,12 +1,11 @@
 # Created by: Yi-Jheng Lin <yzlin@FreeBSD.org>
-# $FreeBSD: head/devel/bpython/Makefile 427601 2016-12-03 08:31:46Z sunpoet $
+# $FreeBSD: head/devel/bpython/Makefile 446088 2017-07-17 18:41:42Z sunpoet $
 
 PORTNAME=	bpython
-PORTVERSION=	0.16
-PORTREVISION=	1
+PORTVERSION=	0.17
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP \
-		http://bpython-interpreter.org/releases/
+		https://bpython-interpreter.org/releases/
 PKGNAMESUFFIX=	${PYTHON_PKGNAMESUFFIX}
 
 MAINTAINER=	sunpoet@FreeBSD.org

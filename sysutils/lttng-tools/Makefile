@@ -1,8 +1,9 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/sysutils/lttng-tools/Makefile 440860 2017-05-13 23:50:49Z linimon $
+# $FreeBSD: head/sysutils/lttng-tools/Makefile 446075 2017-07-17 14:44:39Z mmokhi $
 
 PORTNAME=	lttng-tools
 PORTVERSION=	2.9.3
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://lttng.org/files/${PORTNAME}/
 

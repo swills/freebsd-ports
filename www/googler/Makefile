@@ -1,8 +1,8 @@
 # Created by: Nicola Stanislao Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/www/googler/Makefile 424181 2016-10-18 17:00:27Z nivit $
+# $FreeBSD: head/www/googler/Makefile 446126 2017-07-18 06:55:14Z nivit $
 
 PORTNAME=	googler
-PORTVERSION=	2.8
+PORTVERSION=	3.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 
@@ -10,6 +10,7 @@ MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Google Search, Google Site Search, Google News from the terminal
 
 LICENSE=	GPLv3
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 GH_ACCOUNT=	jarun
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/GIDs 446043 2017-07-16 18:57:32Z cpm $
+# $FreeBSD: head/GIDs 446115 2017-07-17 21:11:55Z bsam $
 # Please keep this file sorted by GID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/group
@@ -420,7 +420,7 @@ gitlab-runner:*:474:
 # free: 476
 # free: 477
 prometheus:*:478:
-# free: 479
+alertmanager:*:479:
 # free: 480
 # free: 481
 # free: 482

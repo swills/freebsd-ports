@@ -1,8 +1,9 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/sysutils/lttng-ust/Makefile 434002 2017-02-13 16:49:42Z mmokhi $
+# $FreeBSD: head/sysutils/lttng-ust/Makefile 446075 2017-07-17 14:44:39Z mmokhi $
 
 PORTNAME=	lttng-ust
 PORTVERSION=	2.9.0
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://lttng.org/files/${PORTNAME}/
 

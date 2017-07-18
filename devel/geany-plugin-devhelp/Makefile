@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/geany-plugin-devhelp/Makefile 430508 2017-01-03 18:43:02Z jbeich $
+# $FreeBSD: head/devel/geany-plugin-devhelp/Makefile 446127 2017-07-18 07:18:28Z madpilot $
 
 PORTNAME=	geany-plugin-devhelp
 PORTVERSION=	${GEANY_VER}
@@ -8,7 +8,8 @@ MAINTAINER=	madpilot@FreeBSD.org
 COMMENT=	Geany plugin: ${${GEANY_PLUGIN}_DESC}
 
 LIB_DEPENDS=	libwnck-1.so:x11-toolkits/libwnck \
-		libwebkitgtk-1.0.so:www/webkit-gtk2
+		libwebkitgtk-1.0.so:www/webkit-gtk2 \
+		libsoup-2.4.so:devel/libsoup
 
 USE_GNOME=	gconf2
 

@@ -1,5 +1,5 @@
 # Created by: pgf
-# $FreeBSD: head/editors/vile/Makefile 428846 2016-12-18 11:47:09Z olivierd $
+# $FreeBSD: head/editors/vile/Makefile 446109 2017-07-17 19:41:10Z cpm $
 
 PORTNAME=	vile
 PORTVERSION=	9.8s
@@ -11,7 +11,7 @@ MASTER_SITES=	ftp://dickey.his.com/vile/current/ \
 PATCH_SITES=	${MASTER_SITES:S,vile/current/,vile/patches/,g}
 #PATCHFILES=
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dickey@invisible-island.net
 COMMENT=	VI Like Emacs -- console version
 
 LICENSE=	GPLv2

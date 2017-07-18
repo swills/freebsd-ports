@@ -1,6 +1,6 @@
-# $FreeBSD: head/devel/geany-plugins/files/bsd.geany-plugins.mk 435587 2017-03-07 09:29:06Z madpilot $
+# $FreeBSD: head/devel/geany-plugins/files/bsd.geany-plugins.mk 446127 2017-07-18 07:18:28Z madpilot $
 
-GEANY_VER=	1.30
+GEANY_VER=	1.31
 GEANY_PLUGINS_ALL=	addons \
 			autoclose \
 			automark \
