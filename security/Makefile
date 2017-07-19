@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 445467 2017-07-11 04:13:11Z cy $
+# $FreeBSD: head/security/Makefile 446184 2017-07-19 05:40:13Z acm $
 #
 
     COMMENT = Security tools
@@ -1209,6 +1209,7 @@
     SUBDIR += unicornscan
     SUBDIR += unssh
     SUBDIR += vault
+    SUBDIR += veracrypt
     SUBDIR += vinetto
     SUBDIR += vlock
     SUBDIR += vm-to-tor

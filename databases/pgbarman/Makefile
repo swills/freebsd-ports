@@ -1,8 +1,8 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/databases/pgbarman/Makefile 430863 2017-01-08 12:09:10Z matthew $
+# $FreeBSD: head/databases/pgbarman/Makefile 446150 2017-07-18 17:34:29Z matthew $
 
 PORTNAME=	barman
-DISTVERSION=	2.1
+DISTVERSION=	2.2
 CATEGORIES=	databases
 MASTER_SITES=	SF/${PKGNAMEPREFIX}${PORTNAME}/${DISTVERSION}
 PKGNAMEPREFIX=	pg

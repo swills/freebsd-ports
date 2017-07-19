@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/libcouchbase/Makefile 440145 2017-05-05 03:23:44Z miwi $
+# $FreeBSD: head/databases/libcouchbase/Makefile 446170 2017-07-18 18:08:34Z sunpoet $
 
 PORTNAME=	libcouchbase
-DISTVERSION=	2.7.4
+DISTVERSION=	2.7.6
 CATEGORIES=	databases
 MASTER_SITES=	http://packages.couchbase.com/clients/c/
 

@@ -1,5 +1,5 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/postgresql-orafce/Makefile 446066 2017-07-17 11:15:51Z tz $
+# $FreeBSD: head/databases/postgresql-orafce/Makefile 446189 2017-07-19 09:09:18Z tz $
 
 PORTNAME=	orafce
 PORTVERSION=	3.4.0
@@ -18,11 +18,12 @@ GH_TAGNAME=	ffea9cc
 WANT_PGSQL=	server
 
 PLIST_FILES=	lib/postgresql/orafce.so \
-		%%PORTDOCS%%%%DOCSDIR%%/README.asciidoc \
 		share/postgresql/extension/orafce--3.2--3.3.sql \
 		share/postgresql/extension/orafce--3.3--3.4.sql \
 		share/postgresql/extension/orafce--3.4.sql \
 		share/postgresql/extension/orafce.control
+
+PORTDOCS=	README.asciidoc
 
 OPTIONS_DEFINE=	DOCS
 

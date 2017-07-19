@@ -1,8 +1,8 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/finance/p5-Finance-QuoteHist/Makefile 444589 2017-06-28 15:43:07Z sunpoet $
+# $FreeBSD: head/finance/p5-Finance-QuoteHist/Makefile 446159 2017-07-18 17:55:35Z sunpoet $
 
 PORTNAME=	Finance-QuoteHist
-PORTVERSION=	1.26
+PORTVERSION=	1.27
 CATEGORIES=	finance perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

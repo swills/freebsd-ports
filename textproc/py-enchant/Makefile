@@ -1,8 +1,8 @@
 # Created by: Nicola Vitale	<nivit@email.it>
-# $FreeBSD: head/textproc/py-enchant/Makefile 443098 2017-06-10 15:06:40Z thierry $
+# $FreeBSD: head/textproc/py-enchant/Makefile 446174 2017-07-18 19:21:13Z thierry $
 
 PORTNAME=	enchant
-PORTVERSION=	1.6.8
+PORTVERSION=	1.6.9
 CATEGORIES=	textproc devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -25,7 +25,9 @@ USES=		python
 USE_PYTHON=	distutils
 
 WX_USE=		WX=3.0+
-WX_VARS=WX_COMPS=	python:run
+WX_VARS=	WX_COMPS=python:run
+
+PLIST_SUB+=	VER=${PORTVERSION}
 
 LDFLAGS+=	-L${LOCALBASE}/lib
 

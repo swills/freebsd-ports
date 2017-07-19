@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/cad/opencascade/Makefile 445905 2017-07-15 17:23:50Z thierry $
+# $FreeBSD: head/cad/opencascade/Makefile 446173 2017-07-18 19:21:11Z thierry $
 
 PORTNAME=	opencascade
 PORTVERSION=	7.1.0
@@ -76,6 +76,12 @@ DOXYGEN_BUILD_DEPENDS=	bash:shells/bash		\
 DOXYGEN_RUN_DEPENDS=	${LOCALBASE}/www/MathJax/MathJax.js:www/mathjax
 
 .include <bsd.port.options.mk>
+
+.if ${ARCH} == "i386"
+BITS=	32
+.else
+BITS=	64
+.endif
 
 pre-everything::
 	@${ECHO_MSG}

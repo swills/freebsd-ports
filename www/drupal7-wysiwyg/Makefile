@@ -1,9 +1,8 @@
 # Created by: Nick Hilliard <nick@foobar.org>
-# $FreeBSD: head/www/drupal7-wysiwyg/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/www/drupal7-wysiwyg/Makefile 446151 2017-07-18 17:38:54Z joneum $
 
 PORTNAME=	wysiwyg
-DISTVERSION=	7.x-2.3
-PORTREVISION=	1
+DISTVERSION=	7.x-2.4
 CATEGORIES=	www
 
 MAINTAINER=	joneum@FreeBSD.org

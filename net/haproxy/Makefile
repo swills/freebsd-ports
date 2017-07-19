@@ -1,5 +1,5 @@
 # Created by: Clement Laforet
-# $FreeBSD: head/net/haproxy/Makefile 445240 2017-07-07 12:15:21Z demon $
+# $FreeBSD: head/net/haproxy/Makefile 446176 2017-07-18 20:20:43Z garga $
 
 PORTNAME=	haproxy
 PORTVERSION=	1.7.8
@@ -23,7 +23,7 @@ DEVICEATLAS_DISTFILE=	deviceatlas-enterprise-c-${DEVICEATLAS_VERSION}
 DEVICEATLAS_REGISTRATION_URL=	https://deviceatlas.com/deviceatlas-haproxy-module
 
 MAKE_ARGS=	TARGET=freebsd DEFINE=-DFREEBSD_PORTS USE_GETADDRINFO=1 \
-		USE_ZLIB=1 USE_CPU_AFFINITY=1 USE_REGPARM=1 USE_ACCEPT4=1 \
+		USE_ZLIB=1 USE_CPU_AFFINITY=1 USE_ACCEPT4=1 \
 		CC="${CC}" DEBUG_CFLAGS="" CPU_CFLAGS="${CFLAGS}"
 
 OPTIONS_DEFINE=		DOCS EXAMPLES LUA OPENSSL DEVICEATLAS
@@ -82,6 +82,10 @@ do-install:
 	(cd ${WRKSRC}/examples/ && ${COPYTREE_SHARE} \* ${STAGEDIR}${EXAMPLESDIR})
 
 .include <bsd.port.pre.mk>
+
+.if ${ARCH} == "amd64" || ${ARCH} == "i386"
+MAKE_ARGS+=	USE_REGPARM=1
+.endif
 
 .if ${PORT_OPTIONS:MOPENSSL} && ${SSL_DEFAULT:Mopenssl-devel}
 BROKEN=		Does not build with openssl-devel
