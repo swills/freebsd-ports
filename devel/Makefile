@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 445972 2017-07-16 00:45:56Z sunpoet $
+# $FreeBSD: head/devel/Makefile 446249 2017-07-20 09:13:28Z tz $
 #
 
     COMMENT = Development utilities
@@ -5569,6 +5569,7 @@
     SUBDIR += rubygem-rb-kqueue
     SUBDIR += rubygem-rbtrace
     SUBDIR += rubygem-rdoc
+    SUBDIR += rubygem-re2
     SUBDIR += rubygem-react-rails
     SUBDIR += rubygem-react-rails-rails5
     SUBDIR += rubygem-readwritesettings

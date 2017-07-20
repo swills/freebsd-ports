@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/cpp-hocon/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/devel/cpp-hocon/Makefile 446262 2017-07-20 15:30:52Z romain $
 
 PORTNAME=	cpp-hocon
 PORTVERSION=	0.1.4
 PORTREVISION=	1
 CATEGORIES=	devel
 
-MAINTAINER=	jslagle@gmail.com
+MAINTAINER=	puppet@FreeBSD.org
 COMMENT=	C++ configuration library
 
 LICENSE=	APACHE20

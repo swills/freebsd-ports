@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/puppetdb3/Makefile 416593 2016-06-09 11:19:58Z romain $
+# $FreeBSD: head/databases/puppetdb3/Makefile 446262 2017-07-20 15:30:52Z romain $
 
 PORTNAME=	puppetdb
 PORTVERSION=	3.2.4
@@ -6,7 +6,7 @@ CATEGORIES=	databases java
 MASTER_SITES=	http://downloads.puppetlabs.com/puppetdb/
 PKGNAMESUFFIX=	3
 
-MAINTAINER=	freebsd@zleslie.info
+MAINTAINER=	puppet@FreeBSD.org
 COMMENT=	PuppetDB storeconfigs backend
 
 LICENSE=	APACHE20

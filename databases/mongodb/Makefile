@@ -1,11 +1,14 @@
 # Created by: Mirko Zinn <mail@derzinn.de>
-# $FreeBSD: head/databases/mongodb/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/databases/mongodb/Makefile 446250 2017-07-20 09:14:16Z jbeich $
 
 PORTNAME=	mongodb
 PORTVERSION=	2.6.12
 CATEGORIES=	databases net
 MASTER_SITES=	http://downloads.mongodb.org/src/
 DISTNAME=	${PORTNAME}-src-r${PORTVERSION}
+
+PATCH_SITES=	https://github.com/${PORTNAME}/${PORTNAME:S|db$||}/commit/
+PATCHFILES=	0ee4735ab8fb.patch:-p1
 
 MAINTAINER=	ale@FreeBSD.org
 COMMENT=	NOSQL distributed document-oriented database

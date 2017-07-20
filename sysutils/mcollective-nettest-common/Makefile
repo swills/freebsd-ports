@@ -1,10 +1,10 @@
-# $FreeBSD: head/sysutils/mcollective-nettest-common/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/mcollective-nettest-common/Makefile 446262 2017-07-20 15:30:52Z romain $
 
 PORTNAME?=	mcollective-nettest-common
 PORTVERSION=	3.0.4
 CATEGORIES=	sysutils
 
-MAINTAINER=	romain@FreeBSD.org
+MAINTAINER=	puppet@FreeBSD.org
 COMMENT?=	MCollective common files to test ICMP and TCP connectivity
 
 LICENSE=	APACHE20

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-simple_bayes/Makefile 420781 2016-08-24 09:39:45Z olgeni $
+# $FreeBSD: head/devel/elixir-simple_bayes/Makefile 446245 2017-07-20 08:48:01Z olgeni $
 
 PORTNAME=	simple_bayes
-DISTVERSION=	0.11.0
+DISTVERSION=	0.12.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

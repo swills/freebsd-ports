@@ -1,10 +1,10 @@
-# $FreeBSD: head/sysutils/mcollective-puppet-common/Makefile 444713 2017-06-30 12:20:20Z romain $
+# $FreeBSD: head/sysutils/mcollective-puppet-common/Makefile 446262 2017-07-20 15:30:52Z romain $
 
 PORTNAME?=	mcollective-puppet-common
 PORTVERSION=	1.13.1
 CATEGORIES=	sysutils
 
-MAINTAINER=	romain@FreeBSD.org
+MAINTAINER=	puppet@FreeBSD.org
 COMMENT?=	MCollective common files to manage the Puppet Agent
 
 LICENSE=	APACHE20

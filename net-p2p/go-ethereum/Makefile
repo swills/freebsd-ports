@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-p2p/go-ethereum/Makefile 442613 2017-06-05 12:54:27Z amdmi3 $
+# $FreeBSD: head/net-p2p/go-ethereum/Makefile 446256 2017-07-20 10:14:36Z bsam $
 
 PORTNAME=	go-ethereum
-PORTVERSION=	1.6.5
+PORTVERSION=	1.6.7
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-p2p
 

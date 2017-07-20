@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 444851 2017-07-01 21:58:04Z rene $
+# $FreeBSD: head/graphics/Makefile 446258 2017-07-20 11:53:59Z ehaupt $
 #
 
     COMMENT = Graphics tools and libraries
@@ -177,6 +177,7 @@
     SUBDIR += exiftran
     SUBDIR += exiv2
     SUBDIR += exrtools
+    SUBDIR += facedetect
     SUBDIR += farbfeld
     SUBDIR += feh
     SUBDIR += fig2sxd

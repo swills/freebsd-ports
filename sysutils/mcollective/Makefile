@@ -1,12 +1,12 @@
 # Created by: Russell Jackson <raj@csub.edu>
-# $FreeBSD: head/sysutils/mcollective/Makefile 420173 2016-08-14 02:03:39Z swills $
+# $FreeBSD: head/sysutils/mcollective/Makefile 446262 2017-07-20 15:30:52Z romain $
 
 PORTNAME=	mcollective
 PORTVERSION=	2.9.0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://downloads.puppetlabs.com/${PORTNAME}/
 
-MAINTAINER=	swills@FreeBSD.org
+MAINTAINER=	puppet@FreeBSD.org
 COMMENT=	Modern scalable datacenter orchestration framework
 
 LICENSE=	APACHE20

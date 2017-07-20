@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/gnupg1/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/security/gnupg1/Makefile 446260 2017-07-20 12:20:18Z adamw $
 
 PORTNAME=	gnupg
-PORTVERSION=	1.4.21
-PORTREVISION=	4
+PORTVERSION=	1.4.22
 CATEGORIES=	security
 MASTER_SITES=	GNUPG
 PKGNAMESUFFIX=	1

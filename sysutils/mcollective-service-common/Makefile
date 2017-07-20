@@ -1,10 +1,10 @@
-# $FreeBSD: head/sysutils/mcollective-service-common/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/mcollective-service-common/Makefile 446262 2017-07-20 15:30:52Z romain $
 
 PORTNAME?=	mcollective-service-common
 PORTVERSION=	3.1.3
 CATEGORIES=	sysutils
 
-MAINTAINER=	romain@FreeBSD.org
+MAINTAINER=	puppet@FreeBSD.org
 COMMENT?=	MCollective common files to manage the OS Services
 
 LICENSE=	APACHE20

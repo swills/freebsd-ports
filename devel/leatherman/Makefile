@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/leatherman/Makefile 441320 2017-05-20 16:58:10Z linimon $
+# $FreeBSD: head/devel/leatherman/Makefile 446262 2017-07-20 15:30:52Z romain $
 
 PORTNAME=	leatherman
 PORTVERSION=	0.10.1
 PORTREVISION=	1
 CATEGORIES=	devel
 
-MAINTAINER=	jslagle@gmail.com
+MAINTAINER=	puppet@FreeBSD.org
 COMMENT=	Leatherman C++ Tool library
 
 LICENSE=	APACHE20

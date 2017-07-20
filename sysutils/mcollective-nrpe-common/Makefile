@@ -1,10 +1,10 @@
-# $FreeBSD: head/sysutils/mcollective-nrpe-common/Makefile 416578 2016-06-09 02:50:02Z mat $
+# $FreeBSD: head/sysutils/mcollective-nrpe-common/Makefile 446262 2017-07-20 15:30:52Z romain $
 
 PORTNAME?=	mcollective-nrpe-common
 PORTVERSION=	3.1.0
 CATEGORIES=	sysutils
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	puppet@FreeBSD.org
 COMMENT?=	MCollective common files to interact with the NRPE monitoring system
 
 LICENSE=	APACHE20

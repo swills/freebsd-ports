@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/facter/Makefile 441494 2017-05-22 22:29:17Z linimon $
+# $FreeBSD: head/sysutils/facter/Makefile 446262 2017-07-20 15:30:52Z romain $
 
 PORTNAME=	facter
 PORTVERSION=	3.1.3
@@ -6,7 +6,7 @@ PORTREVISION=	6
 CATEGORIES=	sysutils
 MASTER_SITES=	http://downloads.puppetlabs.com/facter/
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	puppet@FreeBSD.org
 COMMENT=	Cross-platform library for retrieving facts from OS
 
 LICENSE=	APACHE20

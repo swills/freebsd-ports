@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-nimble_csv/Makefile 431749 2017-01-17 15:55:43Z olgeni $
+# $FreeBSD: head/devel/elixir-nimble_csv/Makefile 446254 2017-07-20 09:39:07Z olgeni $
 
 PORTNAME=	nimble_csv
-PORTVERSION=	0.1.1
+PORTVERSION=	0.2.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

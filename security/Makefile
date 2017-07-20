@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 446209 2017-07-19 17:20:36Z zeising $
+# $FreeBSD: head/security/Makefile 446263 2017-07-20 15:34:08Z feld $
 #
 
     COMMENT = Security tools
@@ -1153,9 +1153,6 @@
     SUBDIR += ssh_askpass_gtk2
     SUBDIR += sshblock
     SUBDIR += sshguard
-    SUBDIR += sshguard-ipfw
-    SUBDIR += sshguard-null
-    SUBDIR += sshguard-pf
     SUBDIR += sshpass
     SUBDIR += ssl-admin
     SUBDIR += sslscan

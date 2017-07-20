@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 446016 2017-07-16 16:09:41Z sunpoet $
+# $FreeBSD: head/www/Makefile 446259 2017-07-20 11:54:28Z ehaupt $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -157,6 +157,7 @@
     SUBDIR += fcgiwrap
     SUBDIR += feedjack
     SUBDIR += ffproxy
+    SUBDIR += fgallery
     SUBDIR += fira-webfont
     SUBDIR += firefox
     SUBDIR += firefox-esr
