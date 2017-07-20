@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-Class-Load/Makefile 437784 2017-04-05 13:35:40Z sunpoet $
+# $FreeBSD: head/devel/p5-Class-Load/Makefile 446234 2017-07-19 21:14:39Z az $
 
 PORTNAME=	Class-Load
-PORTVERSION=	0.23
+PORTVERSION=	0.24
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

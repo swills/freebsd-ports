@@ -1,6 +1,6 @@
 #!/bin/sh
 # ports/Mk/Scripts/check-stagedir.sh - called from ports/Mk/bsd.stage.mk
-# $FreeBSD: head/Mk/Scripts/check-stagedir.sh 431796 2017-01-18 13:20:31Z tijl $
+# $FreeBSD: head/Mk/Scripts/check-stagedir.sh 446238 2017-07-19 22:29:54Z gerald $
 #
 # MAINTAINER: portmgr@FreeBSD.org
 #
@@ -152,7 +152,7 @@ check_orphans_from_plist() {
 		*/.svn/*|'@dir '*/.svn) ;;
 		*/.svnignore) ;;
 		*/CVS/*|'@dir '*/CVS) ;;
-		*/info/dir|info/dir) ;;
+		*/info/dir|info/dir|info/*/dir) ;;
 		share/fonts/*/fonts.dir) ;;
 		share/fonts/*/fonts.scale) ;;
 		share/applications/mimeinfo.cache) ;;

@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/gnatsd/Makefile 445596 2017-07-12 18:13:01Z olgeni $
+# $FreeBSD: head/net/gnatsd/Makefile 446231 2017-07-19 19:59:50Z olgeni $
 
 PORTNAME=	gnatsd
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 446184 2017-07-19 05:40:13Z acm $
+# $FreeBSD: head/security/Makefile 446209 2017-07-19 17:20:36Z zeising $
 #
 
     COMMENT = Security tools
@@ -1113,6 +1113,7 @@
     SUBDIR += sguil
     SUBDIR += sha
     SUBDIR += sha1collisiondetection
+    SUBIDR += sha2wordlist
     SUBDIR += shibboleth2-sp
     SUBDIR += shimmer
     SUBDIR += shishi

@@ -1,5 +1,5 @@
 # Created by: "Mahdi Mokhtari <mokhi64@gmail.com>"
-# $FreeBSD: head/databases/mysql57-client/Makefile 441320 2017-05-20 16:58:10Z linimon $
+# $FreeBSD: head/databases/mysql57-client/Makefile 446203 2017-07-19 15:15:42Z mmokhi $
 
 PORTNAME=	mysql
 PKGNAMESUFFIX=	57-client
@@ -22,7 +22,8 @@ CONFLICTS_INSTALL=	mysql5[0-68-9]-client-* \
 			mariadb[0-9][0-9]-client-* \
 			percona[0-9][0-9]-client-*
 
-CMAKE_ARGS+=	-DWITHOUT_SERVER=1
+CMAKE_ARGS+=	-DWITHOUT_SERVER=1 \
+		-DWITH_NDBCLUSTER=1
 
 USE_LDCONFIG+=	${PREFIX}/lib/mysql
 

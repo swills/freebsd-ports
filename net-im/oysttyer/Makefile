@@ -1,8 +1,7 @@
-# $FreeBSD: head/net-im/oysttyer/Makefile 437831 2017-04-05 19:59:15Z sunpoet $
+# $FreeBSD: head/net-im/oysttyer/Makefile 446225 2017-07-19 19:02:00Z pi $
 
 PORTNAME=	oysttyer
-PORTVERSION=	2.8.1
-PORTREVISION=	1
+PORTVERSION=	2.9.0
 CATEGORIES=	net-im
 
 MAINTAINER=	pi@FreeBSD.org

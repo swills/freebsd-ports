@@ -1,5 +1,5 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/net-mgmt/netdata/Makefile 446144 2017-07-18 14:43:22Z mmokhi $
+# $FreeBSD: head/net-mgmt/netdata/Makefile 446204 2017-07-19 15:18:55Z mmokhi $
 
 PORTNAME=	netdata
 PORTVERSION=	1.7.0
@@ -25,7 +25,7 @@ USES=		autoreconf pathfix pkgconfig:both python shebangfix
 USE_LDCONFIG=	yes
 
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
+CPPFLAGS+=	-D_WANT_VMMETER -I${LOCALBASE}/include
 LIBS+=		-L${LOCALBASE}/lib
 INSTALL_TARGET=	install-strip
 

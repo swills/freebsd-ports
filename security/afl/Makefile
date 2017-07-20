@@ -1,8 +1,8 @@
 # Created by: Fabian Keil <fk@fabiankeil.de>
-# $FreeBSD: head/security/afl/Makefile 445740 2017-07-14 09:38:15Z tobik $
+# $FreeBSD: head/security/afl/Makefile 446206 2017-07-19 16:18:47Z tobik $
 
 PORTNAME=	afl
-PORTVERSION=	2.47
+PORTVERSION=	2.49
 DISTVERSIONSUFFIX=	b
 CATEGORIES=	security
 MASTER_SITES=	http://lcamtuf.coredump.cx/afl/releases/

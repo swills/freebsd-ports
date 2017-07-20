@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-combine/Makefile 431178 2017-01-11 13:30:16Z olgeni $
+# $FreeBSD: head/devel/elixir-combine/Makefile 446227 2017-07-19 19:15:55Z olgeni $
 
 PORTNAME=	combine
-PORTVERSION=	0.9.6
+PORTVERSION=	0.9.7
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 

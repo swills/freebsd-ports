@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-timex/Makefile 446113 2017-07-17 20:25:49Z olgeni $
+# $FreeBSD: head/devel/elixir-timex/Makefile 446205 2017-07-19 15:44:34Z olgeni $
 
 PORTNAME=	timex
-PORTVERSION=	3.1.23
+PORTVERSION=	3.1.24
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 

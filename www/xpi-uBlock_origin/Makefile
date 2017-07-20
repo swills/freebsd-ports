@@ -1,8 +1,8 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/www/xpi-uBlock_origin/Makefile 444514 2017-06-27 17:45:48Z thierry $
+# $FreeBSD: head/www/xpi-uBlock_origin/Makefile 446233 2017-07-19 20:57:44Z thierry $
 
 PORTNAME=	ublock_origin
-PORTVERSION=	1.13.4
+PORTVERSION=	1.13.8
 DISTVERSIONSUFFIX=	-an+fx+sm+tb
 CATEGORIES=	www
 

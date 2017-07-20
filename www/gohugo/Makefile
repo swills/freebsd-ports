@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/gohugo/Makefile 445406 2017-07-09 13:38:01Z lme $
+# $FreeBSD: head/www/gohugo/Makefile 446221 2017-07-19 18:05:51Z ultima $
 
 PORTNAME=	hugo
-PORTVERSION=	0.25
+PORTVERSION=	0.25.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	go

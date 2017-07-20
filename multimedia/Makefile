@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 445716 2017-07-13 21:54:22Z rene $
+# $FreeBSD: head/multimedia/Makefile 446243 2017-07-20 04:15:24Z jbeich $
 #
 
     COMMENT = Multimedia software
@@ -81,6 +81,7 @@
     SUBDIR += gmp-api
     SUBDIR += gmtk
     SUBDIR += gnome-mplayer
+    SUBDIR += gnome-mpv
     SUBDIR += gnome-subtitles
     SUBDIR += gpac-libgpac
     SUBDIR += gpac-mp4box

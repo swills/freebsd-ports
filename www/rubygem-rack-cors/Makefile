@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv at kvedulv.de>
-# $FreeBSD: head/www/rubygem-rack-cors/Makefile 446030 2017-07-16 16:10:53Z sunpoet $
+# $FreeBSD: head/www/rubygem-rack-cors/Makefile 446219 2017-07-19 18:05:28Z sunpoet $
 
 PORTNAME=	rack-cors
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

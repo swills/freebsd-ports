@@ -1,7 +1,7 @@
-# $FreeBSD: head/dns/dnsviz/Makefile 430235 2017-01-01 03:45:12Z sunpoet $
+# $FreeBSD: head/dns/dnsviz/Makefile 446223 2017-07-19 18:32:48Z pi $
 
 PORTNAME=	dnsviz
-PORTVERSION=	0.6.5
+PORTVERSION=	0.6.6
 DISTVERSIONPREFIX=v
 CATEGORIES=	dns
 

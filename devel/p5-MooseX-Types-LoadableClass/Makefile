@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-MooseX-Types-LoadableClass/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Types-LoadableClass/Makefile 446235 2017-07-19 21:18:56Z az $
 
 PORTNAME=	MooseX-Types-LoadableClass
-PORTVERSION=	0.013
+PORTVERSION=	0.015
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:ETHER

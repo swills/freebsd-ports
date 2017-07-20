@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-rack-contrib/Makefile 427860 2016-12-05 07:20:06Z sunpoet $
+# $FreeBSD: head/www/rubygem-rack-contrib/Makefile 446218 2017-07-19 18:05:22Z sunpoet $
 
 PORTNAME=	rack-contrib
-PORTVERSION=	1.4.0
+PORTVERSION=	1.5.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -12,8 +12,7 @@ COMMENT=	Contributed Rack Middleware and Utilities
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	rubygem-git-version-bump>=0.15:devel/rubygem-git-version-bump \
-		rubygem-rack16>=1.4:www/rubygem-rack16
+RUN_DEPENDS=	rubygem-rack16>=1.4:www/rubygem-rack16
 
 NO_ARCH=	yes
 USE_RUBY=	yes

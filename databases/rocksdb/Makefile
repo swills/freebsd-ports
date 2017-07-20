@@ -1,16 +1,18 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/rocksdb/Makefile 446154 2017-07-18 17:54:55Z sunpoet $
+# $FreeBSD: head/databases/rocksdb/Makefile 446211 2017-07-19 18:04:46Z sunpoet $
 
 PORTNAME=	rocksdb
-PORTVERSION=	5.5.3
+PORTVERSION=	5.5.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 
 MAINTAINER?=	sunpoet@FreeBSD.org
 COMMENT?=	Persistent key-value store for fast storage environments
 
-LICENSE=	BSD3CLAUSE
-LICENSE_FILE=	${WRKSRC}/LICENSE
+LICENSE=	APACHE20 GPLv2
+LICENSE_COMB=	dual
+LICENSE_FILE_APACHE20=	${WRKSRC}/LICENSE.Apache
+LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	bash:shells/bash
 LIB_DEPENDS=	libgflags.so:devel/gflags \

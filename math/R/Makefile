@@ -1,9 +1,9 @@
 # Created by: Maurice Castro <maurice@serc.rmit.edu.au>
-# $FreeBSD: head/math/R/Makefile 445079 2017-07-05 13:47:22Z jrm $
+# $FreeBSD: head/math/R/Makefile 446199 2017-07-19 14:19:47Z jrm $
 
 PORTNAME=		R
 PORTVERSION=		3.4.1
-PORTREVISION=		1
+PORTREVISION=		2
 CATEGORIES=		math lang
 MASTER_SITES=		CRAN/src/base/R-${PORTVERSION:C|\..*||}
 
@@ -27,6 +27,7 @@ USES=			gmake iconv libtool localbase objc:compiler \
 			pathfix perl5 readline:port
 
 USE_PERL5=		build
+USE_LDCONFIG=		${PREFIX}/lib/R/lib
 
 OPTIONS_DEFINE=		ICU INFO LDOUBLE LETTER LIBR MEMPROF NLS RPROF X11
 OPTIONS_GROUP=		NEEDGCC NEEDX11
@@ -135,8 +136,15 @@ TIFF_CONFIGURE_WITH=	libtiff
 X11_CONFIGURE_WITH=	x
 X11_USE=		xorg=ice,sm,x11,xext,xmu,xscrnsaver,xt
 
+LIBVER=		${PORTVERSION:R}
+PLIST_SUB=	LIBVER=${LIBVER}
+
 post-patch:
 	@${REINPLACE_CMD} -e "s|/usr/local|${LOCALBASE}|g" ${WRKSRC}/configure
+	@${REINPLACE_CMD} "s|%%LIBVER%%|${LIBVER}|" \
+		${WRKSRC}/src/main/Makefile.in \
+		${WRKSRC}/src/extra/blas/Makefile.in \
+		${WRKSRC}/src/modules/lapack/Makefile.in
 
 .include <bsd.port.pre.mk>
 .include "compiler.mk"

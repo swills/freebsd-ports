@@ -1,8 +1,8 @@
 # Created by: Goran Mekić <meka@tilda.center>
-# $FreeBSD: head/dns/py-dns-lexicon/Makefile 444657 2017-06-29 18:16:25Z ultima $
+# $FreeBSD: head/dns/py-dns-lexicon/Makefile 446241 2017-07-19 23:23:11Z dbaio $
 
 PORTNAME=	dns-lexicon
-PORTVERSION=	2.1.8
+PORTVERSION=	2.1.10
 CATEGORIES=	dns python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

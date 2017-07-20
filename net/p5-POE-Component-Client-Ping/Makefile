@@ -1,9 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/net/p5-POE-Component-Client-Ping/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-POE-Component-Client-Ping/Makefile 446215 2017-07-19 18:05:07Z sunpoet $
 
 PORTNAME=	POE-Component-Client-Ping
-PORTVERSION=	1.174
-PORTREVISION=	1
+PORTVERSION=	1.175
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -17,6 +16,7 @@ LICENSE_COMB=	dual
 BUILD_DEPENDS=	p5-POE>=1.0070:devel/p5-POE
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

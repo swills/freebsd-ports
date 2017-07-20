@@ -1,9 +1,8 @@
 # Created by: Zhen REN <bg1tpt@gmail.com>
-# $FreeBSD: head/www/phpbb3/Makefile 441134 2017-05-18 09:29:55Z joneum $
+# $FreeBSD: head/www/phpbb3/Makefile 446224 2017-07-19 18:35:50Z joneum $
 
 PORTNAME=	phpbb
-PORTVERSION=	3.2.0
-PORTREVISION=	1
+PORTVERSION=	3.2.1
 CATEGORIES=	www
 MASTER_SITES=	https://www.phpbb.com/files/release/
 PKGNAMESUFFIX=	3
