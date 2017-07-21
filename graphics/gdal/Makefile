@@ -1,5 +1,5 @@
 # Created by: Randall Hopper
-# $FreeBSD: head/graphics/gdal/Makefile 444718 2017-06-30 13:05:14Z sunpoet $
+# $FreeBSD: head/graphics/gdal/Makefile 446282 2017-07-20 17:57:01Z sunpoet $
 
 PORTNAME=	gdal
 PORTVERSION=	2.2.1
@@ -22,8 +22,8 @@ LIB_DEPENDS=	libgeotiff.so:graphics/libgeotiff \
 		libtiff.so:graphics/tiff
 
 OPTIONS_DEFINE=	ARMADILLO CFITSIO CURL ECW EXPAT FREEXL GEOS GTA HDF5 JASPER \
-		KML LIBXML2 MYSQL NETCDF ODBC OPENJPEG PCRE PGSQL SPATIALITE \
-		SQLITE WEBP XERCES
+		KML LIBXML2 MYSQL NETCDF ODBC OPENJPEG PCRE PGSQL SFCGAL \
+		SPATIALITE SQLITE WEBP XERCES
 OPTIONS_DEFAULT=JASPER
 OPTIONS_RADIO=	PDF
 OPTIONS_RADIO_PDF=	PODOFO POPPLER
@@ -103,6 +103,9 @@ PODOFO_CONFIGURE_WITH=	podofo
 PODOFO_LIB_DEPENDS=	libpodofo.so:graphics/podofo
 POPPLER_CONFIGURE_WITH=	poppler=${LOCALBASE}
 POPPLER_LIB_DEPENDS=	libpoppler.so:graphics/poppler
+SFCGAL_CONFIGURE_OFF=	--with-sfcgal=no
+SFCGAL_CONFIGURE_ON=	--with-sfcgal=${LOCALBASE}/bin/sfcgal-config
+SFCGAL_LIB_DEPENDS=	libSFCGAL.so:databases/sfcgal
 SPATIALITE_CONFIGURE_WITH=	spatialite
 SPATIALITE_LIB_DEPENDS=	libspatialite.so:databases/spatialite
 SQLITE_CONFIGURE_WITH=	sqlite3

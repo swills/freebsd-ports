@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/arcanist/Makefile 444819 2017-07-01 12:11:17Z grembo $
+# $FreeBSD: head/devel/arcanist/Makefile 446298 2017-07-20 22:44:02Z lwhsu $
 
 PORTNAME=	arcanist
 PORTVERSION=	20170630
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	php-
 
@@ -16,7 +17,7 @@ CONFLICTS=	arc-*
 PHP_DESTDIR=	lib/php/arcanist
 RUN_DEPENDS=	php-libphutil>0:devel/libphutil
 USES=		php
-USE_PHP=	curl dom json simplexml
+USE_PHP=	curl dom hash json simplexml
 USE_GITHUB=	yes
 NO_BUILD=	yes
 NO_ARCH=	yes

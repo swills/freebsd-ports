@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-hyperlink/Makefile 443956 2017-06-20 13:28:23Z sunpoet $
+# $FreeBSD: head/www/py-hyperlink/Makefile 446270 2017-07-20 17:54:03Z sunpoet $
 
 PORTNAME=	hyperlink
-PORTVERSION=	17.2.1
+PORTVERSION=	17.3.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +13,7 @@ COMMENT=	Featureful, correct URL for Python
 LICENSE=	MIT
 
 NO_ARCH=	yes
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 USES=		python
 
 .include <bsd.port.mk>

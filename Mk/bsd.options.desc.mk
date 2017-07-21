@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.options.desc.mk 439454 2017-04-26 14:14:44Z danfe $
+# $FreeBSD: head/Mk/bsd.options.desc.mk 446281 2017-07-20 17:56:55Z sunpoet $
 #
 # READ BEFORE EDITING:
 # - Please keep descriptions sorted alphabetically by variable name.
@@ -432,6 +432,7 @@ SCHROEDINGER_DESC?=	Dirac video codec support via libschroedinger
 SCIPY_DESC?=		SciPy scientific computing support
 SDL_DESC?=		Simple Direct Media Layer support
 SEM_DESC?=		POSIX semaphores support
+SFCGAL_DESC?=		3D operations support via SFCGAL
 SHOUTCAST_DESC?=	SHOUTcast and Ogg Icecast support
 SIMD_DESC?=		Use CPU-specific optimizations
 SLANG_DESC?=		S-Lang console graphics library support

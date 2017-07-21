@@ -1,5 +1,5 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/mail/rubygem-larch/Makefile 445529 2017-07-11 17:03:13Z sunpoet $
+# $FreeBSD: head/mail/rubygem-larch/Makefile 446279 2017-07-20 17:54:49Z sunpoet $
 
 PORTNAME=	larch
 PORTVERSION=	1.1.2
@@ -16,6 +16,9 @@ RUN_DEPENDS=	rubygem-highline>=1.5:devel/rubygem-highline \
 		rubygem-sequel3>=3.14:devel/rubygem-sequel3 \
 		rubygem-sqlite3>=1.3:databases/rubygem-sqlite3 \
 		rubygem-trollop1>=1.13:devel/rubygem-trollop1
+
+DEPRECATED=	Unmaintained by upstream, no changes since 2013
+EXPIRATION_DATE=2017-08-31
 
 NO_ARCH=	yes
 USE_RUBY=	yes

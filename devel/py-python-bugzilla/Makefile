@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-python-bugzilla/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-python-bugzilla/Makefile 446301 2017-07-21 03:39:30Z swills $
 
 PORTNAME=	python-bugzilla
-PORTVERSION=	1.2.1
+PORTVERSION=	2.1.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests
 
-USES=		python zip
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 regression-test: build

@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/audio/aqualung/Makefile 441429 2017-05-21 21:55:08Z linimon $
+# $FreeBSD: head/audio/aqualung/Makefile 446284 2017-07-20 18:08:55Z tobik $
 
 PORTNAME=	aqualung
 PORTVERSION=	1.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio
 MASTER_SITES=	SF
 
@@ -40,7 +40,7 @@ CONFIGURE_ARGS=	--with-ifp=no
 DESKTOP_ENTRIES="Aqualung" "" "${DATADIR}/general.png" "aqualung" \
 		"Audio;AudioVideo;GTK;" ""
 
-OPTIONS_DEFINE=		ALSA DOCS JACK PULSEAUDIO
+OPTIONS_DEFINE=		ALSA DOCS JACK PULSEAUDIO SNDIO
 
 ALSA_LIB_DEPENDS=	libasound.so:audio/alsa-lib
 ALSA_CONFIGURE_ON=	--with-alsa=yes
@@ -51,5 +51,8 @@ JACK_CONFIGURE_OFF=	--with-jack=no
 PULSEAUDIO_LIB_DEPENDS=	libpulse.so:audio/pulseaudio
 PULSEAUDIO_CONFIGURE_ON=	--with-pulse=yes
 PULSEAUDIO_CONFIGURE_OFF=	--with-pulse=no
+SNDIO_LIB_DEPENDS=	libsndio.so:audio/sndio
+SNDIO_CONFIGURE_ON=	--with-sndio=yes
+SNDIO_CONFIGURE_OFF=	--with-sndio=no
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/emulators/virtualbox-ose/Makefile 446181 2017-07-19 00:03:15Z jkim $
+# $FreeBSD: head/emulators/virtualbox-ose/Makefile 446286 2017-07-20 19:05:49Z jkim $
 
 PORTNAME=	virtualbox-ose
 PORTVERSION=	5.1.24
@@ -106,6 +106,10 @@ SUB_LIST=	VBOXDIR=${VBOX_DIR} \
 USE_RC_SUBR=	vboxheadless vboxwatchdog
 
 .include <bsd.port.options.mk>
+
+.if ${OPSYS}${OSREL:R} == FreeBSD12
+BUILD_DEPENDS+=	${LOCALBASE}/bin/ar:devel/binutils
+.endif
 
 .if ${SLAVE_PORT} == no
 CONFLICTS_INSTALL+=	virtualbox-ose-nox11-[0-9]*
@@ -315,6 +319,10 @@ post-patch:
 	@${SED} -e 's|GXX3|VBoxGccFreeBSD|g' \
 	    ${LOCALBASE}/share/kBuild/tools/GXX3.kmk > \
 	    ${WRKSRC}/tools/kBuildTools/VBoxGccFreeBSD.kmk
+.endif
+.if ${OPSYS}${OSREL:R} == FreeBSD12
+	@${ECHO} 'TOOL_GXX3_AR = ${LOCALBASE}/bin/ar' >> \
+	    ${WRKSRC}/LocalConfig.kmk
 .endif
 	@${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|g' \
 	    ${WRKSRC}/Config.kmk ${WRKSRC}/configure \

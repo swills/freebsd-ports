@@ -1,26 +1,19 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/security/py-bcrypt/Makefile 437328 2017-03-30 21:12:43Z mat $
+# $FreeBSD: head/security/py-bcrypt/Makefile 446302 2017-07-21 04:38:03Z swills $
 
 PORTNAME=	bcrypt
-PORTVERSION=	0.4
-PORTREVISION=	2
+PORTVERSION=	3.1.3
 CATEGORIES=	security python
-MASTER_SITES=	http://www.mindrot.org/files/py-bcrypt/
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	py-${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
-COMMENT=	Python bcrypt module
+COMMENT=	Modern password hashing for your software and your servers
 
-LICENSE=	MIT BSD3CLAUSE BSD4CLAUSE
-LICENSE_COMB=	multi
-LICENSE_FILE=	${WRKSRC}/LICENSE
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.1.0:devel/py-cffi
 
 USES=		python
 USE_PYTHON=	distutils autoplist
-
-CFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/bcrypt/_bcrypt.so

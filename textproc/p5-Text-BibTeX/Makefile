@@ -1,8 +1,8 @@
 # Created by: David Bremner <bremner@unb.ca>
-# $FreeBSD: head/textproc/p5-Text-BibTeX/Makefile 436964 2017-03-26 14:57:48Z wen $
+# $FreeBSD: head/textproc/p5-Text-BibTeX/Makefile 446273 2017-07-20 17:54:18Z sunpoet $
 
 PORTNAME=	Text-BibTeX
-PORTVERSION=	0.80
+PORTVERSION=	0.81
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

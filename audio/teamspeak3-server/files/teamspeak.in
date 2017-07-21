@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: head/audio/teamspeak3-server/files/teamspeak.in 409698 2016-02-27 23:29:40Z rakuco $
+# $FreeBSD: head/audio/teamspeak3-server/files/teamspeak.in 446291 2017-07-20 20:33:11Z ultima $
 #
 # PROVIDE: teamspeak
 # REQUIRE: LOGIN
@@ -28,6 +28,7 @@ command_args="-fp $pidfile -u teamspeak %%PREFIX%%/libexec/ts3server dbsqlpath=%
 teamspeak_chdir=$db_dir
 required_dirs="$db_dir $log_dir"
 
+%%CD%%
 load_rc_config $name
 
 : ${teamspeak_enable="NO"}

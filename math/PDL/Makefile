@@ -1,9 +1,8 @@
 # Created by: Anton Berezin <tobez@plab.ku.dk>
-# $FreeBSD: head/math/PDL/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/math/PDL/Makefile 446283 2017-07-20 17:57:06Z sunpoet $
 
 PORTNAME=	PDL
-PORTVERSION=	2.017
-PORTREVISION=	1
+PORTVERSION=	2.018
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 
@@ -18,6 +17,7 @@ BUILD_DEPENDS=	p5-Astro-FITS-Header>=0:astro/p5-Astro-FITS-Header \
 		p5-File-Map>=0.57:devel/p5-File-Map \
 		p5-Inline>=0.68:devel/p5-Inline \
 		p5-Inline-C>=0.62:devel/p5-Inline-C \
+		p5-List-MoreUtils>=0:lang/p5-List-MoreUtils \
 		p5-Module-Compile>=0.23:devel/p5-Module-Compile
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 BUILD_DEPENDS+=	p5-Devel-CheckLib>=1.01:devel/p5-Devel-CheckLib
