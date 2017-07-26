@@ -1,5 +1,5 @@
 # Created by: bf <bf@FreeBSD.org>
-# $FreeBSD: head/devel/api-sanity-autotest/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/devel/api-sanity-autotest/Makefile 446382 2017-07-22 09:50:03Z antoine $
 
 PORTNAME=	api-sanity-checker
 PORTVERSION=	1.98.4
@@ -25,7 +25,7 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/abi-compliance-checker.pl:devel/abi-compliance-c
 .else
 USE_PERL5=	run
 .endif
-USE_GCC=	any
+USE_GCC=	4.8 # same as devel/elfutils
 
 NO_BUILD=	yes
 PLIST_FILES=	bin/${PORTNAME}.pl

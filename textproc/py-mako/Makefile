@@ -1,9 +1,8 @@
 # Created by: Dryice Liu <dryice@dryice.name>
-# $FreeBSD: head/textproc/py-mako/Makefile 437390 2017-04-01 00:31:09Z wen $
+# $FreeBSD: head/textproc/py-mako/Makefile 446454 2017-07-23 07:01:25Z wen $
 
 PORTNAME=	mako
-PORTVERSION=	1.0.6
-PORTREVISION=	1
+PORTVERSION=	1.0.7
 CATEGORIES=	textproc www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

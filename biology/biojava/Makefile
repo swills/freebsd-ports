@@ -1,5 +1,5 @@
 # Created by: FreeBSD Bio porters (bio@freebsd.net)
-# $FreeBSD: head/biology/biojava/Makefile 424800 2016-10-28 01:49:40Z wen $
+# $FreeBSD: head/biology/biojava/Makefile 446387 2017-07-22 11:01:38Z antoine $
 
 PORTNAME=	biojava
 DISTVERSION=	1.7
@@ -13,6 +13,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Open-source Java tools for processing biological data
 
 BROKEN=		Does not build
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-08-23
 
 USE_JAVA=	yes
 JAVA_VERSION=	1.6+

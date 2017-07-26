@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer1-plugins-good/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/gstreamer1-plugins-good/Makefile 446388 2017-07-22 11:35:44Z kwm $
 
 PORTREVISION=	0
 CATEGORIES=	multimedia
@@ -30,7 +30,6 @@ do-build:
 do-install:
 .for dir in ${GOOD_GST_DIRS}
 	@(cd ${INSTALL_WRKSRC}/${dir} && ${SETENV} ${MAKE_ENV} ${MAKE_CMD} ${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} ${INSTALL_TARGET})
-
 .endfor
 
 .include "${MASTERDIR}/Makefile"

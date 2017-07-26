@@ -1,5 +1,5 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/nginx/Makefile 446008 2017-07-16 14:44:15Z joneum $
+# $FreeBSD: head/www/nginx/Makefile 446626 2017-07-25 20:51:09Z joneum $
 
 PORTNAME=	nginx
 PORTVERSION=	1.12.1
@@ -134,6 +134,11 @@ OPTIONS_DEFAULT?=DSO FILE_AIO HTTP HTTP_ADDITION HTTP_AUTH_REQ HTTP_CACHE \
 		HTTP_SLICE HTTP_REWRITE HTTP_SSL HTTP_STATUS HTTP_SUB \
 		HTTPV2 MAIL MAIL_SSL STREAM STREAM_SSL STREAM_SSL_PREREAD \
 		THREADS WWW
+
+# If the target is makesum, make sure that every distfile is fetched.
+.if ${.TARGETS:Mmakesum}
+OPTIONS_DEFAULT=		${OPTIONS_DEFINE}
+.endif
 
 DSO_DESC=			Enable dynamic modules support
 DEBUG_DESC=			Build with debugging support

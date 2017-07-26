@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-pytools/Makefile 442548 2017-06-04 11:47:47Z sunpoet $
+# $FreeBSD: head/devel/py-pytools/Makefile 446337 2017-07-21 17:30:16Z sunpoet $
 
 PORTNAME=	pytools
-PORTVERSION=	2017.3
+PORTVERSION=	2017.4
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

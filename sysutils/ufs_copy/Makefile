@@ -1,26 +1,28 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/sysutils/ufs_copy/Makefile 394437 2015-08-17 06:48:02Z nobutaka $
+# $FreeBSD: head/sysutils/ufs_copy/Makefile 446562 2017-07-25 09:01:05Z amdmi3 $
 
 PORTNAME=	ufs_copy
 PORTVERSION=	20060921
 PORTREVISION=	2
 CATEGORIES=	sysutils
-MASTER_SITES=	http://people.freebsd.org/~simokawa/ufs/
+MASTER_SITES=	https://people.freebsd.org/~simokawa/ufs/
 DISTNAME=	ufs-${PORTVERSION}
 
 MAINTAINER=	nobutaka@FreeBSD.org
 COMMENT=	Fast copy utility for UFS filesystem
 
+LICENSE=	BSD4CLAUSE
+
 USES=		uidfix
 WRKSRC=		${WRKDIR}/ufs
 MAKE_ARGS=	BINDIR=${PREFIX}/sbin
 
-PORTDOCS=		README
+PORTDOCS=	README
 
-OPTIONS_DEFINE=		DOCS
+OPTIONS_DEFINE=	DOCS
 
-post-install:
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
+post-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA}	${WRKSRC}/${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

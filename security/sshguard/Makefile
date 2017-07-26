@@ -1,8 +1,9 @@
 # Created by: Mij <mij@bitchx.it>
-# $FreeBSD: head/security/sshguard/Makefile 446263 2017-07-20 15:34:08Z feld $
+# $FreeBSD: head/security/sshguard/Makefile 446517 2017-07-24 10:56:16Z woodsb02 $
 
 PORTNAME=	sshguard
 PORTVERSION=	2.0.0
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	SF/sshguard/sshguard/${PORTVERSION}
 
@@ -21,6 +22,7 @@ SUB_FILES=	pkg-message
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|%PREFIX%|${PREFIX}|' ${WRKSRC}/doc/sshguard.8.rst
+	@${REINPLACE_CMD} -e 's|/usr/local|${PREFIX}|' ${WRKSRC}/examples/sshguard.conf.sample
 
 post-install:
 	${INSTALL} -d ${STAGEDIR}${PREFIX}/etc

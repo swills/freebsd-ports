@@ -1,8 +1,8 @@
 # Created by: Dmitri Goutnik <dg@syrec.org>
-# $FreeBSD: head/devel/liteide/Makefile 445879 2017-07-15 17:07:07Z dbaio $
+# $FreeBSD: head/devel/liteide/Makefile 446613 2017-07-25 17:34:47Z bsam $
 
 PORTNAME=	liteide
-PORTVERSION=	32.1
+PORTVERSION=	32.2
 DISTVERSIONPREFIX=	x
 CATEGORIES=	devel editors
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/Makefile 445755 2017-07-14 14:15:11Z tijl $
+# $FreeBSD: head/print/Makefile 446440 2017-07-23 02:43:37Z acm $
 #
 
     COMMENT = Desktop publishing
@@ -31,6 +31,7 @@
     SUBDIR += cups-pk-helper
     SUBDIR += cups-smb-backend
     SUBDIR += deforaos-pdfviewer
+    SUBDIR += derelict-ft
     SUBDIR += detex
     SUBDIR += dot2tex
     SUBDIR += dvi2tty

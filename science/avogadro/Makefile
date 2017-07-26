@@ -1,5 +1,5 @@
 # Created by: Troels Kofoed Jacobsen <tkjacobsen@gmail.com>
-# $FreeBSD: head/science/avogadro/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/science/avogadro/Makefile 446582 2017-07-25 13:21:55Z tcberner $
 
 PORTNAME=	avogadro
 PORTVERSION=	1.1.1
@@ -7,7 +7,7 @@ PORTREVISION=	7
 CATEGORIES=	science
 MASTER_SITES=	SF
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Advanced molecular editor and viewer
 
 LICENSE=	GPLv2+

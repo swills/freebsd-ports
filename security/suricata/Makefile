@@ -1,9 +1,8 @@
 # Created by: Patrick Tracanelli <eksffa@freebsdbrasil.com.br>
-# $FreeBSD: head/security/suricata/Makefile 446053 2017-07-17 05:58:04Z koobs $
+# $FreeBSD: head/security/suricata/Makefile 446403 2017-07-22 14:50:22Z joneum $
 
 PORTNAME=	suricata
-PORTVERSION=	3.2.2
-PORTREVISION=	1
+PORTVERSION=	3.2.3
 CATEGORIES=	security
 MASTER_SITES=	http://www.openinfosecfoundation.org/download/
 
@@ -61,7 +60,7 @@ HTP_PORT_BUILD_DEPENDS=		libhtp>=0.5.24:devel/libhtp
 HTP_PORT_LIB_DEPENDS=		libhtp.so:devel/libhtp
 HTP_PORT_CONFIGURE_ON=		--enable-non-bundled-htp
 HTP_PORT_CONFIGURE_OFF=		--enable-bundled-htp
-HTP_PORT_CONFLICTS_INSTALL_OFF=	libhtp-[0-9]* libhtp-suricata
+HTP_PORT_CONFLICTS_INSTALL_OFF=	libhtp
 HTP_PORT_USES_OFF=		iconv:translit
 
 HYPERSCAN_LIB_DEPENDS=		libhs.so:devel/hyperscan

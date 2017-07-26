@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/rubygem-re2/Makefile 446249 2017-07-20 09:13:28Z tz $
+# $FreeBSD: head/devel/rubygem-re2/Makefile 446386 2017-07-22 10:43:00Z antoine $
 
 PORTNAME=	re2
 PORTVERSION=	1.0.0
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -14,7 +15,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 BUILD_DEPENDS=	re2>=0:devel/re2
 RUN_DEPENDS=	re2>=0:devel/re2
 
-NO_ARCH=	yes
 USE_RUBY=	yes
 USES=		gem
 

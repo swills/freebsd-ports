@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-rr/Makefile 430192 2017-01-01 01:09:30Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rr/Makefile 446472 2017-07-23 13:13:05Z sunpoet $
 
 PORTNAME=	rr
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

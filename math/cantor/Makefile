@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/cantor/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/math/cantor/Makefile 446540 2017-07-24 18:26:39Z pawel $
 
 PORTNAME=	cantor
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	math kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
@@ -32,8 +32,7 @@ OCTAVE_DESC=	Install Octave
 OCTAVE_RUN_DEPENDS=	octave:math/octave
 
 R_DESC=		Build R backend and install R
-R_BUILD_DEPENDS=	R:math/R
-R_RUN_DEPENDS=		R:math/R
+R_LIB_DEPENDS=	libR.so:math/R
 # Required to set CFLAGS for -lgfortran.
 R_USES=		fortran
 R_CMAKE_OFF=	-DWITH_R:BOOL=FALSE

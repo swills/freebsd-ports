@@ -1,5 +1,5 @@
 # Created by: Martin Blapp
-# $FreeBSD: head/editors/openoffice-4/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/editors/openoffice-4/Makefile 446366 2017-07-22 03:50:12Z truckman $
 
 PORTNAME=	apache-openoffice
 PORTVERSION=	${AOOVERSION}
@@ -115,7 +115,7 @@ XDGDIR=			${OOPATH}/share/xdg
 XDGREL=			../../${INSTALLATION_BASEDIR}/openoffice${AOOVERSION1}/share/xdg
 EXECBASE?=		openoffice-${AOOSUFFIX}
 
-ONLY_FOR_ARCHS=	i386 amd64 powerpc64
+ONLY_FOR_ARCHS=	amd64 i386 powerpc64
 
 USE_GL=		gl glu
 USE_GNOME=	gtk20 libxslt libidl glib20

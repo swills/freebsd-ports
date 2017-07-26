@@ -1,10 +1,9 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/sysutils/screenfetch/Makefile 425906 2016-11-11 19:40:49Z amdmi3 $
+# $FreeBSD: head/sysutils/screenfetch/Makefile 446637 2017-07-25 23:57:39Z jgh $
 
 PORTNAME=	screenFetch
-PORTVERSION=	3.7.0
+PORTVERSION=	3.8.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	LOCAL/jgh/sysutils/${PORTNAME:tl}/
 

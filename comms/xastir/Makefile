@@ -1,9 +1,9 @@
 # Created by: Carl Makin <carl@stagecraft.cx>
-# $FreeBSD: head/comms/xastir/Makefile 428432 2016-12-12 20:57:37Z sunpoet $
+# $FreeBSD: head/comms/xastir/Makefile 446573 2017-07-25 12:16:49Z amdmi3 $
 
 PORTNAME=	xastir
 PORTVERSION=	2.0.6
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	comms hamradio
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-stable/${PORTNAME}-${PORTVERSION}
 
@@ -16,9 +16,10 @@ LIB_DEPENDS=	libtiff.so:graphics/tiff \
 		libpng.so:graphics/png
 
 GNU_CONFIGURE=	yes
-USES=		gettext gmake jpeg motif shebangfix
+USES=		gettext gmake jpeg motif python:run shebangfix
 SHEBANG_FILES=	scripts/*.pl scripts/get-maptools.sh \
-		scripts/gpx2shape scripts/values.pl.in
+		scripts/gpx2shape scripts/values.pl.in \
+		scripts/Xastir_tigerpoly.py
 
 SUB_FILES=	pkg-message
 

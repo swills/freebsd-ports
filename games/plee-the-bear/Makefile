@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/plee-the-bear/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/plee-the-bear/Makefile 446387 2017-07-22 11:01:38Z antoine $
 
 PORTNAME=	plee-the-bear
 PORTVERSION=	0.6.0
@@ -19,6 +19,8 @@ LIB_DEPENDS=	libboost_filesystem.so:devel/boost-libs \
 		libclaw_application.so:devel/libclaw
 
 BROKEN=		does not build with boost 1.62
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-08-23
 
 # gettext dep is unconditional; NLS option just disables translations install
 USES=		cmake gettext

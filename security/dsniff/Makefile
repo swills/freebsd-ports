@@ -1,5 +1,5 @@
 # Created by: Kris Kennaway <kris@FreeBSD.org>
-# $FreeBSD: head/security/dsniff/Makefile 441494 2017-05-22 22:29:17Z linimon $
+# $FreeBSD: head/security/dsniff/Makefile 446460 2017-07-23 09:01:03Z amdmi3 $
 
 PORTNAME=	dsniff
 DISTVERSION=	2.4b1
@@ -12,6 +12,7 @@ MAINTAINER=	sbz@FreeBSD.org
 COMMENT=	Various sniffing utilities for penetration testing
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libnet.so:net/libnet
 BUILD_DEPENDS=	${LOCALBASE}/lib/libnids.a:net/libnids

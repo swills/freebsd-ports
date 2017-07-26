@@ -1,5 +1,5 @@
 # Created by: Adi Pircalabu <apircalabu@bitdefender.com>
-# $FreeBSD: head/security/bdc/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/security/bdc/Makefile 446387 2017-07-22 11:01:38Z antoine $
 
 PORTNAME=	bdc
 PORTVERSION=	7.0.1
@@ -14,6 +14,8 @@ COMMENT=	BitDefender Console Antivirus for FreeBSD
 LIB_DEPENDS=	libc.so.5:misc/compat5x
 
 BROKEN=		download link is dead: 404
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-08-23
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 NO_BUILD=	yes

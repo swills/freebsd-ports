@@ -1,9 +1,9 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/www/iridium/Makefile 444776 2017-06-30 19:13:44Z cpm $
+# $FreeBSD: head/www/iridium/Makefile 446308 2017-07-21 11:27:14Z cpm $
 
 PORTNAME=	iridium
 PORTVERSION=	58.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	www
 MASTER_SITES=	https://downloads.iridiumbrowser.de/source/
 PKGNAMESUFFIX=	-browser
@@ -61,7 +61,7 @@ RUN_DEPENDS=	xdg-open:devel/xdg-utils \
 		droid-fonts-ttf>0:x11-fonts/droid-fonts-ttf
 
 ONLY_FOR_ARCHS=	amd64 i386
-USES=		bison cpe desktop-file-utils execinfo jpeg ninja perl5 \
+USES=		bison desktop-file-utils execinfo jpeg ninja perl5 \
 		pkgconfig python:2,build shebangfix tar:xz
 
 USE_PERL5=	build
@@ -94,6 +94,7 @@ GN_ARGS+=	clang_use_chrome_plugins=false \
 		use_aura=true \
 		use_cups=true \
 		use_experimental_allocator_shim=false \
+		use_gtk3=true \
 		use_lld=true \
 		use_sysroot=false \
 		use_system_libjpeg=true \

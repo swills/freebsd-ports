@@ -1,5 +1,5 @@
 # Created by: Jov amutu@amutu.com
-# $FreeBSD: head/databases/postgresql-tds_fdw/Makefile 445739 2017-07-14 09:14:11Z tz $
+# $FreeBSD: head/databases/postgresql-tds_fdw/Makefile 446379 2017-07-22 09:32:59Z antoine $
 
 PORTNAME=	tds_fdw
 PORTVERSION=	1.0.8
@@ -11,6 +11,8 @@ MAINTAINER=	amutu@amutu.com
 COMMENT=	PostgreSQL foreign data wrapper to connect to TDS databases
 
 LICENSE=	PostgreSQL
+
+BROKEN=		wrong dependencies, libodbc.so is not provided by freetds
 
 LIB_DEPENDS=	libodbc.so:databases/freetds
 

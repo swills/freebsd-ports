@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/u-boot-master/Makefile 432609 2017-01-28 01:04:17Z imp $
+# $FreeBSD: head/sysutils/u-boot-master/Makefile 446556 2017-07-25 06:03:54Z imp $
 #
 # Common infrastructure for u-boot ports
 #
@@ -16,22 +16,23 @@ LICENSE=	GPLv2
 
 BUILD_DEPENDS=	arm-none-eabi-gcc:devel/arm-none-eabi-gcc \
 		gsed:textproc/gsed \
-		swig3.0:devel/swig30 \
-		${LOCALBASE}/bin/dtc:sysutils/dtc
+		swig:devel/swig13 \
+		dtc>=1.4.1:sysutils/dtc
 
 USES=		gmake python:build shebangfix
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	bsdimp
+GH_ACCOUNT=	freebsd
 GH_PROJECT=	u-boot
 
-SHEBANG_FILES=	tools/binman/binman.py
+SHEBANG_FILES=	lib/libfdt/pylibfdt/setup.py
 SSP_UNSAFE=	yes
 UBOOT_DIR=	share/u-boot/${PORTNAME}${PKGNAMESUFFIX}
 INST=		${PREFIX}/${UBOOT_DIR}
 DESCR?=		${.CURDIR}/pkg-descr
 
-MAKE_ARGS+=	V=1 ARCH=${UBOOT_ARCH} CROSS_COMPILE=${UBOOT_ARCH}-none-eabi-
+MAKE_ARGS+=	V=1 ARCH=${UBOOT_ARCH} CROSS_COMPILE=${UBOOT_ARCH}-none-eabi- \
+		DTC=${LOCALBASE}/bin/dtc
 
 NO_ARCH=	yes
 
@@ -56,7 +57,7 @@ UBOOT_PLIST_ALLWINNER=u-boot.img u-boot-sunxi-with-spl.bin
 .if !defined(UBOOT_VERSION) && defined(UBOOT_VERSION_${FAMILY:tu})
 UBOOT_VERSION=${UBOOT_VERSION_${FAMILY:tu}}
 .endif
-UBOOT_VERSION?=	2017.01.00.2
+UBOOT_VERSION?=	2017.07.00
 
 .if !defined(UBOOT_PLIST) && defined(UBOOT_PLIST_${FAMILY:tu})
 UBOOT_PLIST=${UBOOT_PLIST_${FAMILY:tu}}

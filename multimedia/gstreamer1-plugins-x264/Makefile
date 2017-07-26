@@ -1,6 +1,6 @@
-# $FreeBSD: head/multimedia/gstreamer1-plugins-x264/Makefile 422672 2016-09-23 13:14:29Z jbeich $
+# $FreeBSD: head/multimedia/gstreamer1-plugins-x264/Makefile 446388 2017-07-22 11:35:44Z kwm $
 
-PORTREVISION=	1
+PORTREVISION=	0
 CATEGORIES=	multimedia
 
 COMMENT=	GStreamer libx264 based H264 plugin

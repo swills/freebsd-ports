@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/x11-themes/kde-icons-umicons/Makefile 426165 2016-11-15 12:14:41Z amdmi3 $
+# $FreeBSD: head/x11-themes/kde-icons-umicons/Makefile 446387 2017-07-22 11:01:38Z antoine $
 
 PORTNAME=	umicons
 PORTVERSION=	2.0
@@ -12,6 +12,8 @@ EXTRACT_SUFX=	.gz
 COMMENT=	KDE Umicons iconset
 
 BROKEN=		does not fetch
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-08-23
 
 WRKSRC=		${WRKDIR}/Umicons_${PORTVERSION}
 PORT_SHAREDIR?=	"${PORTNAME}-${PORTVERSION}"

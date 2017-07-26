@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/misc/xyzcmd/Makefile 421933 2016-09-12 16:02:19Z marino $
+# $FreeBSD: head/misc/xyzcmd/Makefile 446387 2017-07-22 11:01:38Z antoine $
 
 PORTNAME=	xyzcmd
 PORTVERSION=	0.0.5
@@ -12,6 +12,8 @@ COMMENT=	Pure console visual file manager
 LICENSE=	LGPL3
 
 BROKEN=		unfetchable (project moved to github)
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-08-23
 
 BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/urwid/raw_display.py:devel/py-urwid
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/urwid/raw_display.py:devel/py-urwid

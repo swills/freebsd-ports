@@ -1,4 +1,4 @@
-# $FreeBSD: head/ports-mgmt/pkg_jail/Makefile 411390 2016-03-19 11:00:57Z dinoex $
+# $FreeBSD: head/ports-mgmt/pkg_jail/Makefile 446586 2017-07-25 14:37:37Z amdmi3 $
 
 PORTNAME=	pkg_jail
 PORTVERSION=	1.89
@@ -8,6 +8,9 @@ DISTFILES=	# empty
 
 MAINTAINER=	dinoex@FreeBSD.org
 COMMENT=	Manage your own package jail
+
+LICENSE=	BSD3CLAUSE NONE
+LICENSE_COMB=	multi
 
 NO_BUILD=	yes
 NO_ARCH=	yes

@@ -1,8 +1,8 @@
 # Created by: René Ladan <rene@freebsd.org>
-# $FreeBSD: head/devel/py-django-rq/Makefile 436492 2017-03-19 13:05:06Z rene $
+# $FreeBSD: head/devel/py-django-rq/Makefile 446616 2017-07-25 17:52:35Z rene $
 
 PORTNAME=	django-rq
-PORTVERSION=	0.9.5
+PORTVERSION=	0.9.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,13 +16,13 @@ TEST_DEPENDS=	redis-server:databases/redis
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=1.5:www/py-django18 \
 		${PYTHON_PKGNAMEPREFIX}rq>=0.5.5:devel/py-rq
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	ui
-
 NO_ARCH=	yes
 
 USES=		python
 USE_PYTHON=	autoplist distutils
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	ui
 
 TEST_TARGET=	test
 

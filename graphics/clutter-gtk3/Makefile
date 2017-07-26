@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/graphics/clutter-gtk3/Makefile 442976 2017-06-09 09:29:16Z kwm $
+# $FreeBSD: head/graphics/clutter-gtk3/Makefile 446561 2017-07-25 09:01:05Z amdmi3 $
 
 PORTNAME=	clutter-gtk
 PORTVERSION=	1.8.2
@@ -9,6 +9,9 @@ PKGNAMESUFFIX=	3
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	GTK+ Integration library for Clutter
+
+LICENSE=	LGPL20+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libcogl.so:graphics/cogl \
 		libclutter-1.0.so:graphics/clutter \

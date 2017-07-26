@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/dub/Makefile 445989 2017-07-16 08:50:26Z acm $
+# $FreeBSD: head/devel/dub/Makefile 446354 2017-07-22 03:02:26Z acm $
 
 PORTNAME=	dub
-PORTVERSION=	1.3.0
-PORTREVISION=	2
+PORTVERSION=	1.4.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

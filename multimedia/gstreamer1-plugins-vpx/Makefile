@@ -1,6 +1,6 @@
-# $FreeBSD: head/multimedia/gstreamer1-plugins-vpx/Makefile 422956 2016-09-30 01:15:10Z jbeich $
+# $FreeBSD: head/multimedia/gstreamer1-plugins-vpx/Makefile 446388 2017-07-22 11:35:44Z kwm $
 
-PORTREVISION=	1
+PORTREVISION=	0
 CATEGORIES=	multimedia
 
 COMMENT=	GStreamer vp8 codec plugin

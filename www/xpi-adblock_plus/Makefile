@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/www/xpi-adblock_plus/Makefile 427234 2016-11-27 14:23:08Z bar $
+# $FreeBSD: head/www/xpi-adblock_plus/Makefile 446557 2017-07-25 06:33:27Z bar $
 
 PORTNAME=	adblock_plus
-PORTVERSION=	2.8.2
+PORTVERSION=	2.9.1
 DISTVERSIONSUFFIX=	-an+fx+sm+tb
 CATEGORIES=	www
 

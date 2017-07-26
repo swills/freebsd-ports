@@ -1,9 +1,9 @@
 # Created by: Leo Vandewoestijne <freebsd@dns-lab.com>
-# $FreeBSD: head/dns/dnscrypt-proxy/Makefile 440746 2017-05-13 03:35:51Z linimon $
+# $FreeBSD: head/dns/dnscrypt-proxy/Makefile 446482 2017-07-23 14:25:29Z feld $
 
 PORTNAME=	dnscrypt-proxy
-PORTVERSION=	1.9.1
-PORTREVISION=	2
+PORTVERSION=	1.9.5
+PORTREVISION=	0
 CATEGORIES=	dns
 MASTER_SITES=	https://download.dnscrypt.org/dnscrypt-proxy/ \
 		http://download.dnscrypt.org/dnscrypt-proxy/ \
@@ -56,5 +56,6 @@ post-install:
 	${INSTALL_DATA} ${PORTDOCS:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_MAN} ${WRKSRC}/man/dnscrypt-proxy.8 ${STAGEDIR}${MAN8PREFIX}/man/man8
 	${INSTALL_MAN} ${WRKSRC}/man/hostip.8 ${STAGEDIR}${MAN8PREFIX}/man/man8
+	${MV} ${STAGEDIR}${PREFIX}/etc/dnscrypt-proxy.conf ${STAGEDIR}${PREFIX}/etc/dnscrypt-proxy.conf.sample
 
 .include <bsd.port.mk>

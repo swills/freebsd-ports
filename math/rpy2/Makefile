@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/rpy2/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/math/rpy2/Makefile 446540 2017-07-24 18:26:39Z pawel $
 
 PORTNAME=	rpy2
 PORTVERSION=	2.7.8
@@ -12,10 +12,9 @@ COMMENT=	Python interface to the R Programming Language
 
 LICENSE=	GPLv2+
 
-BUILD_DEPENDS=	${PYNUMPY} \
-		R:math/R
-RUN_DEPENDS=	${PYNUMPY} \
-		R:math/R
+BUILD_DEPENDS=	${PYNUMPY}
+LIB_DEPENDS=	libR.so:math/R
+RUN_DEPENDS=	${PYNUMPY}
 
 USES=		fortran python readline
 USE_PYTHON=	distutils autoplist

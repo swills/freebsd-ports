@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 446058 2017-07-17 10:16:04Z tz $
+# $FreeBSD: head/textproc/Makefile 446623 2017-07-25 20:25:35Z jrm $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1451,6 +1451,7 @@
     SUBDIR += rubygem-babel-source
     SUBDIR += rubygem-babel-transpiler
     SUBDIR += rubygem-babosa
+    SUBDIR += rubygem-case_transform
     SUBDIR += rubygem-charlock_holmes
     SUBDIR += rubygem-citrus
     SUBDIR += rubygem-cld3

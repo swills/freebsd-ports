@@ -1,5 +1,5 @@
 # Created by: Jimmy Olgeni <olgeni@uli.it>
-# $FreeBSD: head/graphics/blender/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/blender/Makefile 446512 2017-07-24 09:01:04Z amdmi3 $
 
 PORTNAME=	blender
 PORTVERSION=	2.78c
@@ -221,11 +221,9 @@ USE_GCC=	yes
 .endif
 .endif
 
-post-patch:
-.if ${PORT_OPTIONS:MOPENCOLORIO}
+post-patch-OPENCOLORIO-on:
 	@${REINPLACE_CMD} -e 's|yaml-cpp|&03|' \
 		${PATCH_WRKSRC}/build_files/cmake/Modules/FindOpenColorIO.cmake
-.endif
 
 post-build:
 	@(cd ${WRKSRC}/doc/manpage && \

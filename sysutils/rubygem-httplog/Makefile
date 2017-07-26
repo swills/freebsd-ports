@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/rubygem-httplog/Makefile 445608 2017-07-12 19:54:10Z jrm $
+# $FreeBSD: head/sysutils/rubygem-httplog/Makefile 446633 2017-07-25 22:06:39Z jrm $
 
 PORTNAME=	httplog
-PORTVERSION=	0.99.6
+PORTVERSION=	0.99.7
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
@@ -16,7 +16,7 @@ RUN_DEPENDS=	rubygem-colorize>=0:devel/rubygem-colorize \
 
 NO_ARCH=	yes
 
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 .include <bsd.port.mk>

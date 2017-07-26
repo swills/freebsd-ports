@@ -1,9 +1,8 @@
 # Created by: Scott Mace <smace@FreeBSD.org>
-# $FreeBSD: head/x11/xlockmore/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11/xlockmore/Makefile 446631 2017-07-25 21:44:22Z jgh $
 
 PORTNAME=	xlockmore
-PORTVERSION=	5.51
-PORTREVISION=	1
+PORTVERSION=	5.54
 CATEGORIES?=	x11
 MASTER_SITES=	http://www.sillycycle.com/xlock/ \
 		LOCAL/jgh/x11/${PORTNAME}/

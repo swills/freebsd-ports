@@ -1,13 +1,13 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/deskutils/tpb/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/deskutils/tpb/Makefile 446371 2017-07-22 08:04:10Z eugen $
 
 PORTNAME=	tpb
 PORTVERSION=	0.6.4
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	deskutils
 MASTER_SITES=	SAVANNAH
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dmitryluhtionov@gmail.com
 COMMENT=	On-Screen-Display for hotkeys of IBM ThinkPads
 
 LICENSE=	GPLv2+

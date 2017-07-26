@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/anvil/Makefile 446005 2017-07-16 14:08:51Z dvl $
+# $FreeBSD: head/sysutils/anvil/Makefile 446347 2017-07-21 20:11:07Z dvl $
 
 PORTNAME=	anvil
-PORTVERSION=	0.0.8
-PORTREVISION=	1
+PORTVERSION=	0.0.9
 CATEGORIES=	sysutils
 
 MAINTAINER=	dvl@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/net/py-libcloud/Makefile 439767 2017-04-29 17:51:47Z novel $
+# $FreeBSD: head/net/py-libcloud/Makefile 446445 2017-07-23 04:31:54Z novel $
 
 PORTNAME=	libcloud
-PORTVERSION=	2.0.0
+PORTVERSION=	2.1.0
 CATEGORIES=	net python
 MASTER_SITES=	APACHE/${PORTNAME}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,6 +13,8 @@ COMMENT=	Standard client library for many popular cloud providers
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-runner>=0:devel/py-pytest-runner
 
 NO_ARCH=	yes
 

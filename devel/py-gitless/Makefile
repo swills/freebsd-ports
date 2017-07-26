@@ -1,9 +1,10 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/devel/py-gitless/Makefile 429297 2016-12-24 00:07:37Z cpm $
+# $FreeBSD: head/devel/py-gitless/Makefile 446410 2017-07-22 16:32:19Z cpm $
 
 PORTNAME=	gitless
 PORTVERSION=	0.8.5
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -19,11 +20,16 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}clint>=0.3.6:devel/py-clint \
 		git:devel/git
 
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
+USE_LOCALE=	en_US.UTF-8
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	sdg-mit
 
 NO_ARCH=	yes
+
+do-test:
+	@cd ${WRKSRC} && \
+		${SETENV} ${MAKE_ENV} ${PYTHON_CMD} ${PYDISTUTILS_SETUP} test
 
 .include <bsd.port.mk>

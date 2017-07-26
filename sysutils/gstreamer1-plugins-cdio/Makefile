@@ -1,6 +1,6 @@
-# $FreeBSD: head/sysutils/gstreamer1-plugins-cdio/Makefile 414276 2016-04-29 15:20:28Z arved $
+# $FreeBSD: head/sysutils/gstreamer1-plugins-cdio/Makefile 446388 2017-07-22 11:35:44Z kwm $
 
-PORTREVISION=	1
+PORTREVISION=	0
 CATEGORIES=	sysutils
 
 COMMENT=	GStreamer compact disc input and control library

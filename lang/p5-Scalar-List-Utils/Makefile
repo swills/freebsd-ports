@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/lang/p5-Scalar-List-Utils/Makefile 412812 2016-04-09 12:29:52Z sunpoet $
+# $FreeBSD: head/lang/p5-Scalar-List-Utils/Makefile 446326 2017-07-21 17:29:20Z sunpoet $
 
 PORTNAME=	Scalar-List-Utils
-PORTVERSION=	1.45
+PORTVERSION=	1.48
 PORTEPOCH=	1
 CATEGORIES=	lang perl5
 MASTER_SITES=	CPAN

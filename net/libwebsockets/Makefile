@@ -1,8 +1,8 @@
 # Created by: Iblis Lin <iblis@hs.ntnu.edu.tw>
-# $FreeBSD: head/net/libwebsockets/Makefile 444190 2017-06-23 20:53:11Z ultima $
+# $FreeBSD: head/net/libwebsockets/Makefile 446392 2017-07-22 12:02:56Z jbeich $
 
 PORTNAME=	libwebsockets
-PORTVERSION=	2.1.1
+PORTVERSION=	2.2.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net devel
 MASTER_SITES=	GITHUB
@@ -38,7 +38,8 @@ UNIX_SOCK_DESC=	Unix domain socket support
 
 HTTP2_CMAKE_ON=	-DLWS_WITH_HTTP2=ON
 
-HTTP_PROXY_CMAKE_ON=	-DLWS_WITH_HTTP_PROXY=ON -DLIBHUBBUB_LIBRARIES=${PREFIX}/lib/libhubbub.so
+HTTP_PROXY_CMAKE_ON=	-DLWS_WITH_HTTP_PROXY=ON \
+			-DLIBHUBBUB_LIBRARIES=${LOCALBASE}/lib/libhubbub.so
 HTTP_PROXY_LIB_DEPENDS=	libhubbub.so:www/libhubbub
 
 IPV6_CMAKE_ON=	-DLWS_IPV6=ON

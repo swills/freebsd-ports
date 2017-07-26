@@ -1,5 +1,5 @@
 # Created by: markm
-# $FreeBSD: head/games/xroach/Makefile 429499 2016-12-26 11:59:12Z rene $
+# $FreeBSD: head/games/xroach/Makefile 446387 2017-07-22 11:01:38Z antoine $
 
 PORTNAME=	xroach
 PORTVERSION=	4.4
@@ -12,6 +12,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Cockroaches hide under your windows
 
 BROKEN=		unfetchable (apparently abandoned upstream)
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-08-23
 
 USE_XORG=	x11
 PLIST_FILES=	bin/xroach man/man6/xroach.6.gz

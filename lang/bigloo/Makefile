@@ -1,5 +1,5 @@
 # Created by: Stanislav Grozev <tacho@daemonz.org>
-# $FreeBSD: head/lang/bigloo/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/lang/bigloo/Makefile 446387 2017-07-22 11:01:38Z antoine $
 
 PORTNAME=	bigloo
 PORTVERSION=	4.1a.2
@@ -16,6 +16,8 @@ LICENSE=	GPLv2 LGPL20
 LICENSE_COMB=	multi
 
 BROKEN=		fails to package
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-08-23
 
 LIB_DEPENDS=	libpcre.so:devel/pcre \
 		libgmp.so:math/gmp

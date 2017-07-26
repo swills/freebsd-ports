@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-XSCookies/Makefile 446212 2017-07-19 18:04:51Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-XSCookies/Makefile 446424 2017-07-22 18:40:42Z sunpoet $
 
 PORTNAME=	HTTP-XSCookies
-PORTVERSION=	0.000011
+PORTVERSION=	0.000013
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -12,6 +12,8 @@ COMMENT=	Fast XS cookie mangling for Perl
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+TEST_DEPENDS=	p5-TimeDate>=0:devel/p5-TimeDate
 
 USE_PERL5=	configure
 USES=		perl5

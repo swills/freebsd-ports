@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/math/rkward-kde4/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/math/rkward-kde4/Makefile 446540 2017-07-24 18:26:39Z pawel $
 
 PORTNAME=	rkward
 PORTVERSION=	0.6.5
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src
 PKGNAMESUFFIX=	-kde4
@@ -13,10 +13,9 @@ COMMENT=	IDE/GUI for the R-project
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	${LOCALBASE}/bin/R:math/R
-LIB_DEPENDS=	libsoprano.so:textproc/soprano
-RUN_DEPENDS=	${LOCALBASE}/bin/R:math/R \
-		${KDE_PREFIX}/lib/kde4/katepart.so:editors/kate
+LIB_DEPENDS=	libR.so:math/R \
+		libsoprano.so:textproc/soprano
+RUN_DEPENDS=	${KDE_PREFIX}/lib/kde4/katepart.so:editors/kate
 
 USES=		cmake gettext fortran kde:4 php:cli shared-mime-info
 USE_QT4=	corelib dbus gui qmake_build moc_build network phonon rcc_build	\

@@ -1,5 +1,5 @@
 # Created by: David O'Brien <obrien@NUXI.com>
-# $FreeBSD: head/devel/gdb66/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/devel/gdb66/Makefile 446387 2017-07-22 11:01:38Z antoine $
 
 PORTNAME=	gdb
 PORTVERSION=	6.6
@@ -13,6 +13,8 @@ MAINTAINER=	mi@aldan.algebra.com
 COMMENT?=	GNU GDB of newer version than comes with the system
 
 BROKEN=		unfetchable
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-08-23
 BROKEN_powerpc=		Does not configure
 BROKEN_powerpc64=	Does not build
 

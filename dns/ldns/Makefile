@@ -1,8 +1,9 @@
 # Created by: Konstantin Saurbier <saurbier@math.uni-bielefeld.de>
-# $FreeBSD: head/dns/ldns/Makefile 436666 2017-03-21 23:47:24Z mat $
+# $FreeBSD: head/dns/ldns/Makefile 446473 2017-07-23 13:13:11Z sunpoet $
 
 PORTNAME=	ldns
 PORTVERSION=	1.7.0
+PORTREVISION=	1
 CATEGORIES=	dns
 MASTER_SITES=	http://www.nlnetlabs.nl/downloads/ldns/ \
 		LOCAL/ehaupt
@@ -15,6 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 GNU_CONFIGURE=	yes
 USES=		cpe gmake libtool ssl perl5
+USE_PERL5=	build
 CPE_VENDOR=	nlnetlabs
 USE_LDCONFIG=	yes
 

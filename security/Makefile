@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 446263 2017-07-20 15:34:08Z feld $
+# $FreeBSD: head/security/Makefile 446621 2017-07-25 20:08:07Z jrm $
 #
 
     COMMENT = Security tools
@@ -95,6 +95,7 @@
     SUBDIR += courieruserinfo
     SUBDIR += cp2fwb
     SUBDIR += cracklib
+    SUBDIR += crackpkcs12
     SUBDIR += crank
     SUBDIR += create-cert
     SUBDIR += cryptlib
@@ -1092,6 +1093,7 @@
     SUBDIR += rubygem-sshkit
     SUBDIR += rubygem-timfel-krb5
     SUBDIR += rubygem-twitter_oauth
+    SUBDIR += rubygem-webpush
     SUBDIR += s2n
     SUBDIR += safesh
     SUBDIR += samba-virusfilter
@@ -1113,7 +1115,7 @@
     SUBDIR += sguil
     SUBDIR += sha
     SUBDIR += sha1collisiondetection
-    SUBIDR += sha2wordlist
+    SUBDIR += sha2wordlist
     SUBDIR += shibboleth2-sp
     SUBDIR += shimmer
     SUBDIR += shishi

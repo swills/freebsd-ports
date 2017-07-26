@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 445298 2017-07-08 03:14:31Z swills $
+# $FreeBSD: head/games/Makefile 446569 2017-07-25 10:22:17Z amdmi3 $
 #
 
     COMMENT = Games and related software
@@ -939,6 +939,7 @@
     SUBDIR += stormbaancoureur
     SUBDIR += stransball2
     SUBDIR += stratagus
+    SUBDIR += stuntrally
     SUBDIR += sudoku-sensei
     SUBDIR += sudoku_solver
     SUBDIR += sudsol

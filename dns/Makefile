@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 445716 2017-07-13 21:54:22Z rene $
+# $FreeBSD: head/dns/Makefile 446619 2017-07-25 19:46:46Z jrm $
 #
 
     COMMENT = Domain Name Service tools
@@ -192,6 +192,7 @@
     SUBDIR += renewck
     SUBDIR += rpsl2acl
     SUBDIR += rubygem-dnsruby
+    SUBDIR += rubygem-idn-ruby
     SUBDIR += rubygem-net-dns
     SUBDIR += rubygem-public_suffix
     SUBDIR += rubygem-public_suffix_service

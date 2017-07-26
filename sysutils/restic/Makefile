@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/restic/Makefile 436274 2017-03-16 12:00:47Z wg $
+# $FreeBSD: head/sysutils/restic/Makefile 446541 2017-07-24 18:27:43Z olgeni $
 
 PORTNAME=	restic
-PORTVERSION=	0.4.0
+PORTVERSION=	0.7.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

@@ -1,8 +1,10 @@
-# $FreeBSD: head/x11-themes/Makefile 440480 2017-05-09 11:03:21Z woodsb02 $
+# $FreeBSD: head/x11-themes/Makefile 446316 2017-07-21 13:37:51Z nivit $
 #
 
     COMMENT = X11 themes
 
+    SUBDIR += adapta-backgrounds
+    SUBDIR += adapta-gtk-theme
     SUBDIR += adwaita-common
     SUBDIR += adwaita-icon-theme
     SUBDIR += adwaita-qt4

@@ -1,8 +1,8 @@
 # Created by: mm@FreeBSD.org
-# $FreeBSD: head/databases/adodb5/Makefile 426110 2016-11-14 15:10:06Z robak $
+# $FreeBSD: head/databases/adodb5/Makefile 446508 2017-07-24 00:43:39Z dbaio $
 
 PORTNAME=	adodb
-DISTVERSION=	5.20.7
+DISTVERSION=	5.20.9
 CATEGORIES=	databases www
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-php5-only/${PORTNAME}-520-for-php5
 PKGNAMESUFFIX=	5
@@ -10,7 +10,7 @@ PKGNAMESUFFIX=	5
 MAINTAINER=	dem.procopiou@gmail.com
 COMMENT=	Database library for PHP
 
-LICENSE=	BSD4CLAUSE LGPL21
+LICENSE=	BSD3CLAUSE LGPL21+
 LICENSE_COMB=	dual
 
 CONFLICTS=	adodb-4.*

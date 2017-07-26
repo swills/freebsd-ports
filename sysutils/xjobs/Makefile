@@ -1,8 +1,8 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/sysutils/xjobs/Makefile 422830 2016-09-27 20:56:34Z jgh $
+# $FreeBSD: head/sysutils/xjobs/Makefile 446630 2017-07-25 21:43:40Z jgh $
 
 PORTNAME=	xjobs
-PORTVERSION=	20151012
+PORTVERSION=	20170630
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.maier-komor.de/xjobs/
 

@@ -1,9 +1,9 @@
-# $FreeBSD: head/audio/gstreamer1-plugins-chromaprint/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/audio/gstreamer1-plugins-chromaprint/Makefile 446388 2017-07-22 11:35:44Z kwm $
 
-PORTREVISION=	2
+PORTREVISION=	0
 CATEGORIES=	audio
 
-COMMENT=	GStreamer fingerprint audio plugin
+COMMENT=	GStreamer audio fingerprint extracting plugin
 
 GST_PLUGIN=	chromaprint
 DIST=		bad

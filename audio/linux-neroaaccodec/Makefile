@@ -1,5 +1,5 @@
 # Created by: Yuichiro AIZAWA <yaizawa@2004.jukuin.keio.ac.jp>
-# $FreeBSD: head/audio/linux-neroaaccodec/Makefile 427088 2016-11-25 09:20:45Z amdmi3 $
+# $FreeBSD: head/audio/linux-neroaaccodec/Makefile 446387 2017-07-22 11:01:38Z antoine $
 
 PORTNAME=	neroaaccodec
 PORTVERSION=	1.5.1
@@ -12,6 +12,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Nero AAC reference quality MPEG-4 and 3GPP audio codec
 
 BROKEN=		does not fetch (no such directory 'tools')
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-08-23
 
 USES=		dos2unix linux zip
 DOS2UNIX_REGEX=	.*\.txt

@@ -1,5 +1,5 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/security/openssl/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/security/openssl/Makefile 446538 2017-07-24 17:51:15Z brnrd $
 
 PORTNAME=	openssl
 PORTVERSION=	1.0.2l
@@ -7,7 +7,7 @@ PORTEPOCH=	1
 CATEGORIES=	security devel
 MASTER_SITES=	http://www.openssl.org/source/ \
 		ftp://ftp.cert.dfn.de/pub/tools/net/openssl/source/
-DIST_SUBDIR=	${DISTNAME:C/[a-z]$//}
+DIST_SUBDIR=	${PORTNAME}-${DISTVERSION:C/[a-z]$//}
 
 MAINTAINER=	brnrd@FreeBSD.org
 COMMENT=	SSL and crypto library

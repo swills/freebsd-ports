@@ -1,28 +1,21 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-Locale-Maketext-Lexicon/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Locale-Maketext-Lexicon/Makefile 446328 2017-07-21 17:29:30Z sunpoet $
 
 PORTNAME=	Locale-Maketext-Lexicon
 PORTVERSION=	1.00
+PORTREVISION=	1
 CATEGORIES=	devel perl5
-MASTER_SITES=	CPAN/Locale/DRTECH
+MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Use other catalog formats in Locale::Maketext
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	p5-Locale-Maketext>=1.17:devel/p5-Locale-Maketext
-
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
-
-OPTIONS_DEFINE=	DOCS
-
-PORTDOCS=	AUTHORS Changes README
-
-post-install:
-	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

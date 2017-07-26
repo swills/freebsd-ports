@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-List-SomeUtils/Makefile 442415 2017-06-02 18:12:28Z sunpoet $
+# $FreeBSD: head/devel/p5-List-SomeUtils/Makefile 446467 2017-07-23 13:12:30Z sunpoet $
 
 PORTNAME=	List-SomeUtils
-PORTVERSION=	0.54
+PORTVERSION=	0.56
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

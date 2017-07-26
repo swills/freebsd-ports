@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 446259 2017-07-20 11:54:28Z ehaupt $
+# $FreeBSD: head/www/Makefile 446554 2017-07-25 02:16:05Z tj $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -394,6 +394,7 @@
     SUBDIR += mediawiki123
     SUBDIR += mediawiki127
     SUBDIR += mediawiki128
+    SUBDIR += mediawiki129
     SUBDIR += mergelog
     SUBDIR += mgstat
     SUBDIR += mhonarc
@@ -1101,6 +1102,7 @@
     SUBDIR += p5-Net-Plurk
     SUBDIR += p5-Net-STF-Client
     SUBDIR += p5-Net-Trac
+    SUBDIR += p5-Net-UPS
     SUBDIR += p5-Net-YAP
     SUBDIR += p5-Net-eBay
     SUBDIR += p5-Newsletter

@@ -1,7 +1,6 @@
-# $FreeBSD: head/databases/mariadb55-client/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/databases/mariadb55-client/Makefile 446433 2017-07-22 22:28:13Z brnrd $
 
 PORTNAME=	mariadb
-PORTREVISION=	1
 PKGNAMESUFFIX=	55-client
 
 COMMENT=	Multithreaded SQL database (client)

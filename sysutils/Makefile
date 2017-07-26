@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 445978 2017-07-16 00:47:40Z sunpoet $
+# $FreeBSD: head/sysutils/Makefile 446527 2017-07-24 15:26:58Z swills $
 #
 
     COMMENT = System utilities
@@ -407,6 +407,7 @@
     SUBDIR += gnome-system-monitor
     SUBDIR += gnome_subr
     SUBDIR += goaccess
+    SUBDIR += goss
     SUBDIR += gpart
     SUBDIR += gpte
     SUBDIR += graffer

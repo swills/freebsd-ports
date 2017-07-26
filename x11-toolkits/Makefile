@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/Makefile 445300 2017-07-08 06:17:46Z acm $
+# $FreeBSD: head/x11-toolkits/Makefile 446388 2017-07-22 11:35:44Z kwm $
 #
 
     COMMENT = X11 toolkits
@@ -32,7 +32,7 @@
     SUBDIR += gnustep-gui
     SUBDIR += granite
     SUBDIR += gstreamer-plugins-pango
-    SUBDIR += gstreamer1-plugins-gtksink
+    SUBDIR += gstreamer1-plugins-gtk
     SUBDIR += gstreamer1-plugins-pango
     SUBDIR += gtk-sharp-beans
     SUBDIR += gtk-sharp20

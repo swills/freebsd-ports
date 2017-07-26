@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/libgcrypt/Makefile 445028 2017-07-04 17:38:30Z cpm $
+# $FreeBSD: head/security/libgcrypt/Makefile 446350 2017-07-22 01:05:15Z cpm $
 
 PORTNAME=	libgcrypt
-PORTVERSION=	1.7.8
+PORTVERSION=	1.8.0
 CATEGORIES=	security
 MASTER_SITES=	GNUPG
 
@@ -11,8 +11,8 @@ COMMENT=	General purpose crypto library based on code used in GnuPG
 LICENSE=	GPLv2+ LGPL21+
 LICENSE_COMB=	multi
 
-BUILD_DEPENDS=	libgpg-error>=1.8:security/libgpg-error
-RUN_DEPENDS=	libgpg-error>=1.8:security/libgpg-error
+BUILD_DEPENDS=	libgpg-error>=1.25:security/libgpg-error
+RUN_DEPENDS=	libgpg-error>=1.25:security/libgpg-error
 
 USES=		cpe libtool makeinfo tar:bzip2
 CPE_VENDOR=	gnupg
@@ -32,10 +32,6 @@ PORTDOCS=	*
 OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.options.mk>
-
-.if ${ARCH} == "aarch64"
-EXTRA_PATCHES+=		${FILESDIR}/extra-patch-aarch64
-.endif
 
 .if ${ARCH} == "powerpc"
 CONFIGURE_ARGS+=	--disable-asm

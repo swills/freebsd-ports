@@ -1,5 +1,5 @@
 # Created by: bestia@iptcom.net
-# $FreeBSD: head/russian/fortuneru/Makefile 422456 2016-09-19 18:57:36Z marino $
+# $FreeBSD: head/russian/fortuneru/Makefile 446387 2017-07-22 11:01:38Z antoine $
 
 PORTNAME=	fortuneru
 PORTVERSION=	20090524
@@ -12,6 +12,8 @@ MAINTAINER=	obezpalko@gmail.com
 COMMENT=	Fortunes in Russian
 
 BROKEN=		unfetchable
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-08-23
 
 PKGMESSAGE=	${WRKDIR}/pkg-message
 

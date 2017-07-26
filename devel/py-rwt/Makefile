@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-rwt/Makefile 441158 2017-05-18 16:02:38Z sunpoet $
+# $FreeBSD: head/devel/py-rwt/Makefile 446600 2017-07-25 16:21:45Z sunpoet $
 
 PORTNAME=	rwt
-PORTVERSION=	2.15.1
+PORTVERSION=	3.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,7 +16,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.15.0:devel/py-setuptools
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pip>=0:devel/py-pip
 
 NO_ARCH=	yes
-USE_PYTHON=	distutils
+USE_PYTHON=	concurrent distutils
 USES=		python
 
 .include <bsd.port.mk>

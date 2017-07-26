@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/rubygem-gitlab_omniauth-ldap/Makefile 443585 2017-06-14 16:10:36Z sunpoet $
+# $FreeBSD: head/net/rubygem-gitlab_omniauth-ldap/Makefile 446344 2017-07-21 17:30:51Z sunpoet $
 
 PORTNAME=	gitlab_omniauth-ldap
-PORTVERSION=	2.0.2
+PORTVERSION=	2.0.3
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

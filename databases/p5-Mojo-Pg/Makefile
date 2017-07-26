@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Mojo-Pg/Makefile 445269 2017-07-07 16:33:22Z sunpoet $
+# $FreeBSD: head/databases/p5-Mojo-Pg/Makefile 446324 2017-07-21 17:29:09Z sunpoet $
 
 PORTNAME=	Mojo-Pg
-PORTVERSION=	4.0
+PORTVERSION=	4.01
 CATEGORIES=	databases www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:SRI

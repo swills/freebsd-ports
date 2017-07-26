@@ -1,9 +1,9 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/audio/xmms2-scrobbler/Makefile 412463 2016-04-03 12:01:54Z amdmi3 $
+# $FreeBSD: head/audio/xmms2-scrobbler/Makefile 446563 2017-07-25 09:08:31Z eugen $
 
 PORTNAME=	xmms2-scrobbler
 PORTVERSION=	0.4.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.code-monkey.de/pub/${PORTNAME}/
 
@@ -24,7 +24,11 @@ PORTDOCS=	README
 
 SUB_FILES=	pkg-message
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=		APIFIX DOCS
+OPTIONS_DEFAULT=	APIFIX DOCS
+
+APIFIX_DESC=	Apply fix for Last.fm API 1.x
+APIFIX_EXTRA_PATCHES_ON=	${FILESDIR}/extra-patch-xmms2-scrobbler.c
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/xmms2-scrobbler

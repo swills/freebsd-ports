@@ -1,9 +1,9 @@
 # Created by: Dominic Marks <d.marks@student.umist.ac.uk>
-# $FreeBSD: head/devel/ccache/Makefile 445062 2017-07-05 10:23:00Z amdmi3 $
+# $FreeBSD: head/devel/ccache/Makefile 446550 2017-07-25 00:38:06Z bdrewery $
 
 PORTNAME=	ccache
 PORTVERSION=	3.3.4
-PORTREVISION=	4
+PORTREVISION=	6
 CATEGORIES=	devel
 MASTER_SITES=	http://www.samba.org/ftp/ccache/ \
 		LOCAL/bdrewery
@@ -61,6 +61,8 @@ MEMCACHED_IGNORE=		MEMCACHED cannot be combined with WITH_CCACHE_BUILD.  Use dev
 NO_CCACHE_DEPEND=	yes
 
 OPTIONS_SUB=	yes
+
+STATIC_LDFLAGS=	-static
 
 .include <bsd.port.pre.mk>
 

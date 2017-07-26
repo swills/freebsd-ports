@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/net-im/corebird/Makefile 445343 2017-07-08 17:00:41Z cpm $
+# $FreeBSD: head/net-im/corebird/Makefile 446388 2017-07-22 11:35:44Z kwm $
 
 PORTNAME=	corebird
 PORTVERSION=	1.5.1
@@ -33,7 +33,7 @@ OPTIONS_SUB=		yes
 
 GSTREAMER_LIB_DEPENDS=		libgstbase-1.0.so:multimedia/gstreamer1 \
 				libgstreamer-1.0.so:multimedia/gstreamer1
-GSTREAMER_USE=			gstreamer1=yes,bad,good,gtksink,hls,libav,soup,x,ximagesrc
+GSTREAMER_USE=			gstreamer1=yes,bad,good,gtk,hls,libav,soup,x,ximagesrc
 GSTREAMER_CONFIGURE_OFF=	--disable-video
 
 NLS_USES=			gettext

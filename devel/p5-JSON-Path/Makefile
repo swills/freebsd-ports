@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/p5-JSON-Path/Makefile 446157 2017-07-18 17:55:25Z sunpoet $
+# $FreeBSD: head/devel/p5-JSON-Path/Makefile 446327 2017-07-21 17:29:25Z sunpoet $
 
 PORTNAME=	JSON-Path
-PORTVERSION=	0.400
+PORTVERSION=	0.401
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -20,6 +20,7 @@ BUILD_DEPENDS=	p5-Carp-Assert>=0:devel/p5-Carp-Assert \
 		p5-JSON-MaybeXS>=0:converters/p5-JSON-MaybeXS \
 		p5-LV>=0:devel/p5-LV \
 		p5-Readonly>=0:devel/p5-Readonly \
+		p5-Scalar-List-Utils>=1.48:lang/p5-Scalar-List-Utils \
 		p5-Try-Tiny>=0:lang/p5-Try-Tiny
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-JSON>=0:converters/p5-JSON \

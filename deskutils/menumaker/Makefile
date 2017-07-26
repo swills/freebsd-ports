@@ -1,8 +1,8 @@
 # Created by: alepulver@FreeBSD.org
-# $FreeBSD: head/deskutils/menumaker/Makefile 397018 2015-09-15 19:23:40Z jgh $
+# $FreeBSD: head/deskutils/menumaker/Makefile 446635 2017-07-25 23:28:01Z jgh $
 
 PORTNAME=	menumaker
-PORTVERSION=	0.99.9
+PORTVERSION=	0.99.10
 CATEGORIES=	deskutils
 MASTER_SITES=	SF/${PORTNAME}
 

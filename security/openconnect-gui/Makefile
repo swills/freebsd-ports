@@ -1,8 +1,9 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/security/openconnect-gui/Makefile 432072 2017-01-21 18:56:58Z lifanov $
+# $FreeBSD: head/security/openconnect-gui/Makefile 446534 2017-07-24 16:02:15Z swills $
 
 PORTNAME=	openconnect-gui
 PORTVERSION=	1.4.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=v
 CATEGORIES=	security
 
@@ -14,7 +15,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 BUILD_DEPENDS=	openconnect:security/openconnect
 LIB_DEPENDS=	libgnutls.so:security/gnutls
-RUN_DEPENDS=	openconnect:security/openconnect
+RUN_DEPENDS=	openconnect:security/openconnect \
+		vpnc-scripts>=0:sysutils/vpnc-scripts
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	${PORTNAME:C/-gui//}

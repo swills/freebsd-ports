@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/finance/prestashop/Makefile 443058 2017-06-10 02:15:33Z wen $
+# $FreeBSD: head/finance/prestashop/Makefile 446456 2017-07-23 07:29:06Z wen $
 
 PORTNAME=	prestashop
-PORTVERSION=	1.7.1.2
+PORTVERSION=	1.7.2.0
 CATEGORIES=	finance www
 MASTER_SITES=	http://www.prestashop.com/download/old/
 DISTNAME=	${PORTNAME}_${PORTVERSION}

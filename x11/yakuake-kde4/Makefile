@@ -1,9 +1,9 @@
 # Created by: Shane Bell <decept0@gmail.com>
-# $FreeBSD: head/x11/yakuake-kde4/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/x11/yakuake-kde4/Makefile 446522 2017-07-24 12:11:29Z tcberner $
 
 PORTNAME=	yakuake
 PORTVERSION=	2.9.9
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	x11 kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src
 PKGNAMESUFFIX=	-kde4
@@ -13,6 +13,8 @@ COMMENT=	Drop-down terminal emulator for KDE
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+RUN_DEPENDS=	konsole:x11/konsole
 
 USES=		cmake gettext kde:4 shebangfix tar:xz
 SHEBANG_FILES=	data/updaters/yakuake-${PORTVERSION}-startupnotification.pl

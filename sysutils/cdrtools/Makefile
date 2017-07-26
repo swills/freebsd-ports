@@ -1,5 +1,5 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/sysutils/cdrtools/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/cdrtools/Makefile 446622 2017-07-25 20:11:28Z marius $
 
 ###########################################################################
 # This makefile was contributed by Marius Strobl.
@@ -20,8 +20,13 @@
 
 PORTNAME=	cdrtools
 PORTVERSION=	3.01
+PORTREVISION=	1
 CATEGORIES=	sysutils audio
 MASTER_SITES=	SF/${PORTNAME}
+
+PATCH_SITES=	${MASTER_SITES}
+PATCHFILES=	cdrtools-3.01-fix-20151126-mkisofs-isoinfo.patch
+PATCH_DIST_STRIP= -p1
 
 MAINTAINER=	marius@FreeBSD.org
 COMMENT=	CD/DVD/BluRay and ISO-9660 image creation and extraction tools

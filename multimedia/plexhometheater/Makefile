@@ -1,5 +1,5 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/multimedia/plexhometheater/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/multimedia/plexhometheater/Makefile 446387 2017-07-22 11:01:38Z antoine $
 
 PORTNAME=	plexhometheater
 PORTVERSION=	1.4.1
@@ -61,6 +61,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3 \
 		xdpyinfo:x11/xdpyinfo
 
 BROKEN=		Fails to build against libsamplerate-0.1.9
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-08-23
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	plexinc

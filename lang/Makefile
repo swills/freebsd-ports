@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 444168 2017-06-23 08:55:39Z olgeni $
+# $FreeBSD: head/lang/Makefile 446449 2017-07-23 05:25:09Z acm $
 #
 
     COMMENT = Programming languages
@@ -50,6 +50,7 @@
     SUBDIR += cython
     SUBDIR += cython3
     SUBDIR += diveintopython
+    SUBDIR += dlang-tools
     SUBDIR += dlv
     SUBDIR += dmd1
     SUBDIR += dmd2

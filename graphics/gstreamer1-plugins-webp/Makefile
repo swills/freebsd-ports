@@ -1,6 +1,6 @@
-# $FreeBSD: head/graphics/gstreamer1-plugins-webp/Makefile 439814 2017-04-30 12:50:54Z sunpoet $
+# $FreeBSD: head/graphics/gstreamer1-plugins-webp/Makefile 446388 2017-07-22 11:35:44Z kwm $
 
-PORTREVISION=	2
+PORTREVISION=	0
 CATEGORIES=	graphics
 
 COMMENT=	GStreamer webp image decoder plugin

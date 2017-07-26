@@ -1,5 +1,5 @@
 # Created by: Shane Ambler <FreeBSD@Shaneware.biz>
-# $FreeBSD: head/graphics/openimageio/Makefile 445627 2017-07-13 00:06:30Z swills $
+# $FreeBSD: head/graphics/openimageio/Makefile 446539 2017-07-24 18:20:27Z swills $
 
 PORTNAME=	openimageio
 PORTVERSION=	1.7.10
@@ -69,7 +69,7 @@ OCIO_LIB_DEPENDS=	libOpenColorIO.so:graphics/opencolorio
 OPENCV_CMAKE_ON=	-DUSE_OPENCV:BOOL=ON
 OPENCV_CMAKE_OFF=	-DUSE_OPENCV:BOOL=OFF
 OPENCV_LIB_DEPENDS=	libopencv_highgui.so:graphics/opencv \
-			libopencv_core.so:graphics/opencv2-core \
+			libopencv_core.so:graphics/opencv-core \
 			libopenjpeg.so:graphics/openjpeg15
 
 OPENJPEG_CMAKE_ON=	-DUSE_OPENJPEG:BOOL=ON

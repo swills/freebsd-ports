@@ -1,10 +1,13 @@
 # Created by: lightside <lightside@gmx.com>
-# $FreeBSD: head/games/pioneer/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/pioneer/Makefile 446395 2017-07-22 12:22:32Z jbeich $
 
 PORTNAME=	pioneer
 PORTVERSION=	0.0.${GH_TAGNAME}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	a53fdbe8b046.patch:-p1
 
 MAINTAINER=	lightside@gmx.com
 COMMENT=	Space adventure game set in the Milky Way galaxy

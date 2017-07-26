@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/Makefile 439826 2017-04-30 15:47:51Z ler $
+# $FreeBSD: head/comms/Makefile 446592 2017-07-25 15:53:12Z amdmi3 $
 #
 
     COMMENT = Communication utilities
@@ -168,6 +168,7 @@
     SUBDIR += spandsp
     SUBDIR += splat
     SUBDIR += sredird
+    SUBDIR += sunxi-tools
     SUBDIR += svxlink
     SUBDIR += syncterm
     SUBDIR += tcpser

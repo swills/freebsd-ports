@@ -1,9 +1,8 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer1-plugins-core/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/gstreamer1-plugins-core/Makefile 446388 2017-07-22 11:35:44Z kwm $
 
 PORTNAME=	gstreamer1-plugins-core
-PORTVERSION=	${GST1_VERSION}${GST1_MINIMAL_VERSION}
-PORTREVISION=	1
+PORTVERSION=	1.12
 CATEGORIES=	multimedia audio
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -25,7 +24,7 @@ DVD_DESC=	Include DVD related plugins
 .include <bsd.port.options.mk>
 
 # Audio plugins
-USE_GSTREAMER1+=	mad ogg vorbis
+USE_GSTREAMER1+=	mpg123 ogg vorbis
 
 # Graphics plugins
 USE_GSTREAMER1+=	png

@@ -1,5 +1,5 @@
 # Created by: Jason W. Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/science/afni/Makefile 444988 2017-07-03 20:38:11Z tcberner $
+# $FreeBSD: head/science/afni/Makefile 446540 2017-07-24 18:26:39Z pawel $
 
 ############################################################################
 # http://www.neuro.mcw.edu/Ports has the latest source distribution from
@@ -20,10 +20,10 @@ COMMENT=	Advanced Functional Neuro Imaging
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	gm4:devel/m4 \
-		R:math/R
+BUILD_DEPENDS=	gm4:devel/m4
 LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libf2c.so:lang/f2c \
+		libR.so:math/R \
 		libgsl.so:math/gsl \
 		libnetcdff.so:science/netcdf-fortran \
 		libxml2.so:textproc/libxml2 \
@@ -31,8 +31,7 @@ LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 RUN_DEPENDS=	endian:sysutils/endian \
 		mpeg_encode:multimedia/mpeg_encode \
 		ppmtogif:graphics/netpbm \
-		qhull:math/qhull5 \
-		R:math/R
+		qhull:math/qhull5
 
 CONFLICTS=	im-[0-9]* \
 		nifticlib-[0-9]* \

@@ -1,5 +1,5 @@
 # Created by: Oleg Mamontov <oleg@mamontov.net>
-# $FreeBSD: head/www/p5-HTML-FormFu-Model-DBIC/Makefile 418222 2016-07-08 13:55:52Z amdmi3 $
+# $FreeBSD: head/www/p5-HTML-FormFu-Model-DBIC/Makefile 446336 2017-07-21 17:30:10Z sunpoet $
 
 PORTNAME=	HTML-FormFu-Model-DBIC
 PORTVERSION=	2.02
@@ -20,7 +20,6 @@ BUILD_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite \
 		p5-Task-Weaken>=0:devel/p5-Task-Weaken
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-DateTime-Format-SQLite>=0:devel/p5-DateTime-Format-SQLite \
-		p5-Locale-Maketext>=0:devel/p5-Locale-Maketext \
 		p5-SQL-Translator>=0.11016:databases/p5-SQL-Translator
 
 USES=		perl5

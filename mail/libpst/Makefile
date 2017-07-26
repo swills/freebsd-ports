@@ -1,8 +1,8 @@
 # Created by: Nate Underwood <natey@natey.com>
-# $FreeBSD: head/mail/libpst/Makefile 433796 2017-02-10 15:17:41Z sunpoet $
+# $FreeBSD: head/mail/libpst/Makefile 446484 2017-07-23 14:37:24Z sunpoet $
 
 PORTNAME=	libpst
-PORTVERSION=	0.6.70
+PORTVERSION=	0.6.71
 CATEGORIES=	mail converters
 MASTER_SITES=	http://www.five-ten-sg.com/libpst/packages/ \
 		http://fossies.org/unix/privat/ \

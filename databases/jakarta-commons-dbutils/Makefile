@@ -1,8 +1,8 @@
 # Created by: Michael Winking <mwfp@foldl.net>
-# $FreeBSD: head/databases/jakarta-commons-dbutils/Makefile 423330 2016-10-05 09:01:49Z amdmi3 $
+# $FreeBSD: head/databases/jakarta-commons-dbutils/Makefile 446526 2017-07-24 13:42:40Z vanilla $
 
 PORTNAME=	commons-dbutils
-PORTVERSION=	1.6
+PORTVERSION=	1.7
 CATEGORIES=	databases java
 MASTER_SITES=	APACHE_COMMONS_BINARIES
 PKGNAMEPREFIX=	jakarta-
@@ -27,7 +27,7 @@ PORTDOCS=	*
 OPTIONS_DEFINE=	DOCS
 
 do-install:
-	${INSTALL_DATA} ${WRKSRC}/commons-dbutils-1.6.jar \
+	${INSTALL_DATA} ${WRKSRC}/commons-dbutils-1.7.jar \
 		${STAGEDIR}${JAVAJARDIR}/${PORTNAME}.jar
 
 do-install-DOCS-on:

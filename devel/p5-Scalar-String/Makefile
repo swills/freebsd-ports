@@ -1,9 +1,8 @@
 # Created by: brix@FreeBSD.org
-# $FreeBSD: head/devel/p5-Scalar-String/Makefile 395212 2015-08-25 03:09:46Z sunpoet $
+# $FreeBSD: head/devel/p5-Scalar-String/Makefile 446530 2017-07-24 15:59:36Z sunpoet $
 
 PORTNAME=	Scalar-String
-PORTVERSION=	0.002
-PORTREVISION=	1
+PORTVERSION=	0.003
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

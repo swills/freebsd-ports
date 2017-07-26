@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 445973 2017-07-16 00:46:18Z sunpoet $
+# $FreeBSD: head/net/Makefile 446388 2017-07-22 11:35:44Z kwm $
 #
 
     COMMENT = Networking tools
@@ -204,6 +204,7 @@
     SUBDIR += gssdp
     SUBDIR += gstreamer-plugins-libmms
     SUBDIR += gstreamer1-plugins-libmms
+    SUBDIR += gstreamer1-plugins-srtp
     SUBDIR += gtic
     SUBDIR += gtk-vnc
     SUBDIR += gtknetcat

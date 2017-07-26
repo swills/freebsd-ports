@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/graphics/openjump/Makefile 435513 2017-03-06 05:58:09Z wen $
+# $FreeBSD: head/graphics/openjump/Makefile 446428 2017-07-22 19:26:37Z ultima $
 
 PORTNAME=	OpenJUMP
-PORTVERSION=	1.10
+PORTVERSION=	1.11
 CATEGORIES=	graphics java geography
 MASTER_SITES=	SF/jump-pilot/OpenJUMP/${PORTVERSION}
 DISTNAME=	${PORTNAME}-Portable-${PORTVERSION}-r${PLUS_REV}-PLUS
@@ -39,14 +39,14 @@ LICENSE_PERMS_JYTHON=	auto-accept
 
 ### Desktop Entries ???
 
-TARGET_DIR=	${STAGEDIR}${PREFIX}/${PORTNAME}
+USES=		zip
 USE_JAVA=	yes
 JAVA_VERSION=	1.7+
-USES=		zip
 NO_BUILD=	yes
 NO_ARCH=	yes
+TARGET_DIR=	${STAGEDIR}${PREFIX}/${PORTNAME}
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}-r${PLUS_REV}-PLUS
-PLUS_REV=	5336
+PLUS_REV=	5434
 
 do-install:
 	@${ECHO_CMD} "--->  Installing JAR files"

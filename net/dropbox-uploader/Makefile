@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/net/dropbox-uploader/Makefile 421418 2016-09-06 11:03:23Z mat $
+# $FreeBSD: head/net/dropbox-uploader/Makefile 446431 2017-07-22 21:01:14Z nivit $
 
 PORTNAME=	dropbox-uploader
-PORTVERSION=	0.2
-PORTREVISION=	1
+PORTVERSION=	1.0
+PORTREVISION=	0
 PORTEPOCH=	1
 CATEGORIES=	net
 
@@ -11,6 +11,7 @@ MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	BASH script for the Dropbox backup service
 
 LICENSE=	GPLv3
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	bash:shells/bash \
 		curl:ftp/curl \
@@ -19,7 +20,6 @@ RUN_DEPENDS=	bash:shells/bash \
 USE_GITHUB=	yes
 GH_ACCOUNT=	andreafabrizi
 GH_PROJECT=	Dropbox-Uploader
-GH_TAGNAME=	856c10a
 
 NO_BUILD=	yes
 

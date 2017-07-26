@@ -1,9 +1,8 @@
 # Created by: Axel Steiner <ast@treibsand.com>
-# $FreeBSD: head/mail/libcmime/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/mail/libcmime/Makefile 446401 2017-07-22 14:11:24Z dbaio $
 
 PORTNAME=	libcmime
-PORTVERSION=	0.1.15
-PORTREVISION=	3
+PORTVERSION=	0.2.1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.libcmime.org/files/
 
@@ -11,6 +10,7 @@ MAINTAINER=	ast@treibsand.com
 COMMENT=	Lightweight C mime library
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		bison cmake:noninja pkgconfig
 USE_LDCONFIG=	yes

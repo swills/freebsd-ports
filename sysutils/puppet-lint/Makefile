@@ -1,8 +1,8 @@
 # Created by: Tim Bishop <tdb@FreeBSD.org>
-# $FreeBSD: head/sysutils/puppet-lint/Makefile 417645 2016-06-27 10:00:44Z tdb $
+# $FreeBSD: head/sysutils/puppet-lint/Makefile 446514 2017-07-24 09:30:40Z tdb $
 
 PORTNAME=	puppet-lint
-PORTVERSION=	2.0.0
+PORTVERSION=	2.3.0
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 

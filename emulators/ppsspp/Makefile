@@ -1,9 +1,9 @@
-# $FreeBSD: head/emulators/ppsspp/Makefile 444027 2017-06-21 11:39:50Z jbeich $
+# $FreeBSD: head/emulators/ppsspp/Makefile 446352 2017-07-22 02:28:26Z jbeich $
 
 PORTNAME=	ppsspp
 DISTVERSIONPREFIX=	v
 DISTVERSION?=	1.4.2
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	emulators
 # XXX Get from Debian once #697821 lands
 MASTER_SITES=	https://bazaar.launchpad.net/~sergio-br2/${PORTNAME}/debian-sdl/download/5/${PORTNAME}.1-20140802045408-dd26dik367ztj5xg-8/:manpage

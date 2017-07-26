@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/libudev-devd/Makefile 432806 2017-01-29 23:14:23Z bapt $
+# $FreeBSD: head/devel/libudev-devd/Makefile 446463 2017-07-23 11:41:13Z kwm $
 
 PORTNAME=	libudev-devd
-PORTVERSION=	0.2
+PORTVERSION=	0.3
 CATEGORIES=	devel
 
 MAINTAINER=	x11@FreeBSD.org
@@ -14,7 +14,7 @@ LIB_DEPENDS=	libevdev.so:devel/libevdev
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	FreeBSDDesktop
-GH_TAGNAME=	5a9d2b9
+GH_TAGNAME=	b7aa09f
 
 USES=		dos2unix autoreconf gmake libtool localbase pathfix pkgconfig
 USE_LDCONFIG=	yes

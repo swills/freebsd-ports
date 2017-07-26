@@ -1,8 +1,8 @@
 # Created by: will
-# $FreeBSD: head/astro/p5-Astro-SunTime/Makefile 432139 2017-01-22 14:37:55Z sunpoet $
+# $FreeBSD: head/astro/p5-Astro-SunTime/Makefile 446602 2017-07-25 16:21:56Z sunpoet $
 
 PORTNAME=	Astro-SunTime
-PORTVERSION=	0.05
+PORTVERSION=	0.06
 CATEGORIES=	astro perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -11,9 +11,7 @@ MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interface to calculate sunrise/sunset times
 
 LICENSE=	GPLv3
-
-BUILD_DEPENDS=	p5-Time-modules>=0:devel/p5-Time-modules
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_ARCH=	yes
 USES=		perl5

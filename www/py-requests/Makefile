@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau <duchateau.olivier@gmail.com>
-# $FreeBSD: head/www/py-requests/Makefile 445845 2017-07-15 05:00:28Z koobs $
+# $FreeBSD: head/www/py-requests/Makefile 446461 2017-07-23 09:20:08Z cpm $
 
 PORTNAME=	requests
 PORTVERSION=	2.18.1
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

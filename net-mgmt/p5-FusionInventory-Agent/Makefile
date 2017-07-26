@@ -1,11 +1,11 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/p5-FusionInventory-Agent/Makefile 441976 2017-05-29 08:46:29Z vg $
+# $FreeBSD: head/net-mgmt/p5-FusionInventory-Agent/Makefile 446591 2017-07-25 15:30:17Z vg $
 
 PORTNAME=	FusionInventory-Agent
-PORTVERSION=	2.3.19
+PORTVERSION=	2.3.20
 CATEGORIES=	net-mgmt
 MASTER_SITES=	CPAN
-MASTER_SITE_SUBDIR=	CPAN:GBOUGARD
+MASTER_SITE_SUBDIR=	CPAN:GBOUGARD/${PORTNAME}-2320targz
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	vg@FreeBSD.org

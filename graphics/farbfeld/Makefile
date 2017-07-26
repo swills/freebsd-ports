@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/farbfeld/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/farbfeld/Makefile 446499 2017-07-23 17:10:39Z tobik $
 
 PORTNAME=	farbfeld
-PORTVERSION=	2
+PORTVERSION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	http://dl.suckless.org/farbfeld/
 

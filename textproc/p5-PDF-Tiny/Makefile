@@ -1,8 +1,8 @@
 # Created by: wen@FreeBSD.org
-# $FreeBSD: head/textproc/p5-PDF-Tiny/Makefile 438611 2017-04-16 01:53:55Z wen $
+# $FreeBSD: head/textproc/p5-PDF-Tiny/Makefile 446453 2017-07-23 06:46:04Z wen $
 
 PORTNAME=	PDF-Tiny
-DISTVERSION=	0.08
+DISTVERSION=	0.09
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

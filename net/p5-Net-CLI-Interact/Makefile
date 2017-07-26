@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-CLI-Interact/Makefile 425541 2016-11-06 16:49:45Z sunpoet $
+# $FreeBSD: head/net/p5-Net-CLI-Interact/Makefile 446596 2017-07-25 16:21:25Z sunpoet $
 
 PORTNAME=	Net-CLI-Interact
-PORTVERSION=	2.200006
+PORTVERSION=	2.200009
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

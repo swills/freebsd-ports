@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/fossil/Makefile 438341 2017-04-12 09:13:29Z gahr $
+# $FreeBSD: head/devel/fossil/Makefile 446511 2017-07-24 08:16:01Z gahr $
 
 PORTNAME=	fossil
-PORTVERSION=	2.2
+PORTVERSION=	2.3
 DISTVERSIONPREFIX=	src-
 PORTEPOCH=	2
 CATEGORIES=	devel www
@@ -34,7 +34,7 @@ JSON_CONFIGURE_ON=	--json
 STATIC_CONFIGURE_ON=	--static
 FUSE_CONFIGURE_OFF=	--disable-fusefs
 TH1HOOKS_CONFIGURE_ON=	--with-th1-hooks
-TCL_CONFIGURE_ON=	--with-tcl-stubs=${TCL_LIBDIR} --with-tcl=${LOCALBASE}
+TCL_CONFIGURE_ON=	--with-tcl-stubs --with-tcl=${TCL_LIBDIR}
 TCL_USES=		tcl
 FUSE_LIB_DEPENDS=	libfuse.so:sysutils/fusefs-libs
 FUSE_USES=		localbase:ldflags

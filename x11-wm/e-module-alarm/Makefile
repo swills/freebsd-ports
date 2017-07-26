@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/x11-wm/e-module-alarm/Makefile 441875 2017-05-27 21:16:51Z linimon $
+# $FreeBSD: head/x11-wm/e-module-alarm/Makefile 446375 2017-07-22 09:01:02Z amdmi3 $
 
 PORTNAME=	e-module-alarm
 PORTVERSION=	20140911
@@ -12,6 +12,7 @@ MAINTAINER=	enlightenment@FreeBSD.org
 COMMENT=	Module to set Alarms in Enlightenment
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	enlightenment:x11-wm/enlightenment
 RUN_DEPENDS=	enlightenment:x11-wm/enlightenment
@@ -25,16 +26,8 @@ INSTALL_TARGET=	install-strip
 .include "../enlightenment/Makefile.plist"
 
 OPTIONS_DEFINE=	NLS
-
-.include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MNLS}
-USES+=		gettext
-CONFIGURE_ARGS+=--enable-nls
-PLIST_SUB+=	NLS=""
-.else
-CONFIGURE_ARGS+=--disable-nls
-PLIST_SUB+=	NLS="@comment "
-.endif
+OPTIONS_SUB=	yes
+NLS_USES=	gettext
+NLS_CONFIGURE_ENABLE=	nls
 
 .include <bsd.port.mk>

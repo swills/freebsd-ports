@@ -1,6 +1,6 @@
-# $FreeBSD: head/multimedia/gstreamer1-plugins-assrender/Makefile 434479 2017-02-20 18:00:05Z riggs $
+# $FreeBSD: head/multimedia/gstreamer1-plugins-assrender/Makefile 446388 2017-07-22 11:35:44Z kwm $
 
-PORTREVISION=	3
+PORTREVISION=	0
 CATEGORIES=	multimedia
 
 COMMENT=	GStreamer ASS/SSA text renderer plugin

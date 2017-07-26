@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/miller/Makefile 444368 2017-06-26 13:45:06Z olgeni $
+# $FreeBSD: head/textproc/miller/Makefile 446422 2017-07-22 17:40:25Z olgeni $
 
 PORTNAME=	miller
-PORTVERSION=	5.2.1
+PORTVERSION=	5.2.2
 DISTVERSIONPREFIX=v
 CATEGORIES=	textproc
 

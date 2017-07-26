@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/dns/libidn2/Makefile 439737 2017-04-29 07:50:44Z sunpoet $
+# $FreeBSD: head/dns/libidn2/Makefile 446595 2017-07-25 16:21:20Z sunpoet $
 
 PORTNAME=	libidn2
-PORTVERSION=	2.0.2
+PORTVERSION=	2.0.3
 CATEGORIES=	dns
 MASTER_SITES=	GNU/libidn
 
@@ -12,6 +12,7 @@ COMMENT=	Implementation of IDNA2008 internationalized domain names
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+BUILD_DEPENDS=	ronn:textproc/rubygem-ronn
 LIB_DEPENDS=	libunistring.so:devel/libunistring
 
 CONFIGURE_ARGS=	--disable-nls \

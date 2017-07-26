@@ -1,11 +1,15 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/multimedia/mpv/Makefile 446240 2017-07-19 23:06:04Z cpm $
+# $FreeBSD: head/multimedia/mpv/Makefile 446396 2017-07-22 12:48:07Z cpm $
 
 PORTNAME=	mpv
 PORTVERSION=	0.26.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	multimedia audio
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	8c82555e41a6.patch:-p1
 
 MAINTAINER=	cpm@FreeBSD.org
 COMMENT=	Free and open-source general-purpose video player
@@ -16,16 +20,16 @@ LICENSE_COMB=	multi
 BUILD_DEPENDS=	ffmpeg>=3.3,1:multimedia/ffmpeg
 LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg
 
+USES=		compiler:c11 desktop-file-utils iconv jpeg localbase:ldflags \
+		pkgconfig python:build waf
+USE_LDCONFIG=	yes
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	mpv-player
 # Keep in sync with bootstrap.py to avoid regressions
 GH_TUPLE=	waf-project:waf:waf-1.9.8:waf
 
 WAF_CMD=	${WRKSRC_waf}/waf-light
-
-USES=		compiler:c11 desktop-file-utils iconv jpeg localbase:ldflags \
-		pkgconfig python:build waf
-USE_LDCONFIG=	yes
 
 CONFIGURE_ENV=	BIN_PYTHON="${PYTHON_CMD}"
 CONFIGURE_ARGS=	--docdir="${EXAMPLESDIR}" \
