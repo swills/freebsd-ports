@@ -1,11 +1,11 @@
 # Created by: Ryan Steinmetz <rpsfa@rit.edu>
-# $FreeBSD: head/net-mgmt/nagtail/Makefile 363374 2014-07-29 19:11:51Z adamw $
+# $FreeBSD: head/net-mgmt/nagtail/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	nagtail
 PORTVERSION=	0.0.31
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://www.vanheusden.com/nagtail/ \
-		http://mirrors.rit.edu/zi/
+		ZI
 
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Tail for the nagios status.dat file

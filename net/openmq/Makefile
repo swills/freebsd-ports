@@ -1,5 +1,5 @@
 # Created by: Radim Kolar <hsn@sendmail.cz>
-# $FreeBSD: head/net/openmq/Makefile 412342 2016-04-01 13:18:17Z mat $
+# $FreeBSD: head/net/openmq/Makefile 446723 2017-07-27 09:09:38Z amdmi3 $
 
 PORTNAME=	openmq
 PORTVERSION=	4.5.2.p.1
@@ -89,11 +89,11 @@ do-install:
 			${CPIO} --quiet -pdmu -R ${BINOWN}:${BINGRP} ${STAGEDIR}${PREFIX}/etc/mq
 		@${CHMOD} 640 ${STAGEDIR}${PREFIX}/etc/mq/*.sample
 .else
-		@${INSTALL_DATA} ${WRKSRC}/dist/mq/lib/imq.jar ${STAGEDIR}${JAVAJARDIR}
-		@${INSTALL_DATA} ${WRKSRC}/dist/mq/lib/jms.jar ${STAGEDIR}${JAVAJARDIR}
-		@${INSTALL_DATA} ${WRKSRC}/dist/mq/lib/fscontext.jar ${STAGEDIR}${JAVAJARDIR}
-		@${INSTALL_DATA} ${WRKSRC}/dist/mq/lib/jaxm-api.jar ${STAGEDIR}${JAVAJARDIR}
-		@${INSTALL_DATA} ${WRKSRC}/dist/mq/lib/imqxm.jar ${STAGEDIR}${JAVAJARDIR}
+		${INSTALL_DATA} ${WRKSRC}/dist/mq/lib/imq.jar ${STAGEDIR}${JAVAJARDIR}
+		${INSTALL_DATA} ${WRKSRC}/dist/mq/lib/jms.jar ${STAGEDIR}${JAVAJARDIR}
+		${INSTALL_DATA} ${WRKSRC}/dist/mq/lib/fscontext.jar ${STAGEDIR}${JAVAJARDIR}
+		${INSTALL_DATA} ${WRKSRC}/dist/mq/lib/jaxm-api.jar ${STAGEDIR}${JAVAJARDIR}
+		${INSTALL_DATA} ${WRKSRC}/dist/mq/lib/imqxm.jar ${STAGEDIR}${JAVAJARDIR}
 .endif
 
 do-install-DOCS-on:

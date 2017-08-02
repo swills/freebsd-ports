@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@f2o.org>
-# $FreeBSD: head/math/moo/Makefile 442835 2017-06-07 13:01:36Z skreuzer $
+# $FreeBSD: head/math/moo/Makefile 446741 2017-07-27 13:57:30Z mat $
 
 PORTNAME=	moo
 PORTVERSION=	1.5
@@ -13,7 +13,6 @@ LICENSE=	PD
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	raylai
-GH_TAGNAME=	${PORTVERSION}
 
 PLIST_FILES=	bin/moo man/man1/moo.1.gz
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/rubygem-fluentd/Makefile 430755 2017-01-06 22:50:43Z swills $
+# $FreeBSD: head/sysutils/rubygem-fluentd/Makefile 446927 2017-07-30 13:13:20Z sunpoet $
 
 PORTNAME=	fluentd
 PORTVERSION=	0.12.14
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
@@ -18,7 +18,8 @@ RUN_DEPENDS=	\
 	rubygem-cool.io>=1.2.2:devel/rubygem-cool.io \
 	rubygem-http_parser.rb>=0.5.1:net/rubygem-http_parser.rb \
 	rubygem-sigdump>=0.2.2:devel/rubygem-sigdump \
-	rubygem-tzinfo>=1.0.0:devel/rubygem-tzinfo
+	rubygem-tzinfo>=1.0.0:devel/rubygem-tzinfo \
+	rubygem-tzinfo-data>=1.0.0:devel/rubygem-tzinfo-data
 
 USE_RUBY=	yes
 PLIST_FILES=	bin/fluent-cat bin/fluent-debug bin/fluent-gem bin/fluentd \

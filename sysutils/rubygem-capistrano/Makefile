@@ -1,8 +1,8 @@
 # Created by: Roderick van Domburg <r.s.a.vandomburg@student.utwente.nl>
-# $FreeBSD: head/sysutils/rubygem-capistrano/Makefile 443750 2017-06-17 10:01:44Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-capistrano/Makefile 446901 2017-07-29 19:26:56Z sunpoet $
 
 PORTNAME=	capistrano
-PORTVERSION=	3.8.2
+PORTVERSION=	3.9.0
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 

@@ -1,9 +1,8 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/net-im/jabberd/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/net-im/jabberd/Makefile 446659 2017-07-26 14:46:40Z mm $
 
 PORTNAME=	jabberd
-PORTVERSION=	2.5.0
-PORTREVISION=	1
+PORTVERSION=	2.6.1
 CATEGORIES=	net-im
 MASTER_SITES=	https://github.com/jabberd2/jabberd2/releases/download/${PORTNAME}-${DISTVERSION}/ \
 		LOCAL/matthew/${PORTNAME}

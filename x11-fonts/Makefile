@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 438542 2017-04-14 19:03:23Z swills $
+# $FreeBSD: head/x11-fonts/Makefile 447027 2017-08-01 16:39:29Z tcberner $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -146,6 +146,7 @@
     SUBDIR += noto
     SUBDIR += noto-lite
     SUBDIR += nucleus
+    SUBDIR += ohsnap
     SUBDIR += oldschool-pc-fonts
     SUBDIR += p5-Font-AFM
     SUBDIR += p5-Font-TTF

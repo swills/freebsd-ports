@@ -1,5 +1,5 @@
 # Created by: roam@FreeBSD.org
-# $FreeBSD: head/dns/c-ares/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/dns/c-ares/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	c-ares
 PORTVERSION=	1.12.0
@@ -7,12 +7,13 @@ PORTREVISION=	1
 CATEGORIES=	dns
 MASTER_SITES=	http://c-ares.haxx.se/download/ \
 		http://obsd.isc.org/pub/OpenBSD/distfiles/ \
-		http://mirrors.rit.edu/zi/
+		ZI
 
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Asynchronous DNS resolver library
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-werror

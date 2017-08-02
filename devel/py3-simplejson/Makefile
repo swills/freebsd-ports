@@ -1,7 +1,11 @@
-# $FreeBSD: head/devel/py3-simplejson/Makefile 431631 2017-01-16 11:59:57Z amdmi3 $
+# $FreeBSD: head/devel/py3-simplejson/Makefile 446894 2017-07-29 19:26:21Z sunpoet $
+
+PORTREVISION=	1
 
 MASTERDIR=	${.CURDIR}/../py-simplejson
 
-USES=		python:3
+PORTSCOUT=	ignore:1
+
+USES=		python:3.3+
 
 .include "${MASTERDIR}/Makefile"

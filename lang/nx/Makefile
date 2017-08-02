@@ -1,8 +1,9 @@
 # Created by: gahr@FreeBSD.org
-# $FreeBSD: head/lang/nx/Makefile 431087 2017-01-10 14:44:13Z gahr $
+# $FreeBSD: head/lang/nx/Makefile 446739 2017-07-27 13:00:35Z olgeni $
 
 PORTNAME=	nx
 DISTVERSION=	2.1.0
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	SF/next-scripting/${DISTVERSION}/
 DISTNAME=	nsf${DISTVERSION}
@@ -14,13 +15,15 @@ LICENSE=	MIT
 
 OPTIONS_DEFINE=	DOCS
 
-CONFLICTS=	xotcl-1.*
-
 USES+=		gmake tcl:85+,tea
 USE_LDCONFIG=	yes
 TEST_TARGET=	test
 PLIST_SUB+=	PKGNAME=${DISTNAME}
 PORTDOCS=	*
+
+post-patch:
+	cd ${WRKSRC}/doc && for f in *.1; do mv $$f $${f%.1}.nx.1; done
+	cd ${WRKSRC}/doc && for f in *.3; do mv $$f $${f%.3}.nx.3; done
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

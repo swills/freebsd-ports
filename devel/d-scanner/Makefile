@@ -1,12 +1,10 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/d-scanner/Makefile 446362 2017-07-22 03:31:33Z acm $
+# $FreeBSD: head/devel/d-scanner/Makefile 446655 2017-07-26 13:16:39Z mat $
 
 PORTNAME=	d-scanner
 PORTVERSION=	0.4.0
+DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
-MASTER_SITES=	https://github.com/dlang-community/D-Scanner/archive/
-DISTNAME=	${DISTVERSION:S/^/v/}
-DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Swiss-army knife for D source code
@@ -21,8 +19,11 @@ BUILD_DEPENDS=	ldmd2:lang/ldc \
 		${LOCALBASE}/lib/d/libddoc.a:devel/libddoc \
 		${LOCALBASE}/lib/d/libdparse.a:devel/libdparse
 
+USE_GITHUB=	yes
+GH_ACCOUNT=	dlang-community
+GH_PROJECT=	D-Scanner
+
 PLIST_FILES=	bin/dscanner
-WRKSRC=		${WRKDIR}/${PORTNAME:S/d/D/:S/s/S/}-${PORTVERSION}
 DUB_CMD=	${LOCALBASE}/bin/dub build --build=release
 
 do-build:

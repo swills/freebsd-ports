@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-positional/Makefile 417852 2016-06-30 22:51:21Z novel $
+# $FreeBSD: head/devel/py-positional/Makefile 446907 2017-07-30 05:15:09Z novel $
 
 PORTNAME=	positional
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

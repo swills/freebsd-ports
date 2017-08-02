@@ -1,8 +1,8 @@
 # Created by: Alexey V. Antipovsky <kemm@in-line.ru>
-# $FreeBSD: head/emulators/libspectrum/Makefile 442897 2017-06-08 01:00:34Z rene $
+# $FreeBSD: head/emulators/libspectrum/Makefile 446658 2017-07-26 14:13:52Z rene $
 
 PORTNAME=	libspectrum
-PORTVERSION=	1.3.4
+PORTVERSION=	1.3.5
 CATEGORIES=	emulators devel
 MASTER_SITES=	SF/fuse-emulator/${PORTNAME}/${PORTVERSION}
 
@@ -15,9 +15,9 @@ LIB_DEPENDS=	libaudiofile.so:audio/libaudiofile \
 		libgcrypt.so:security/libgcrypt
 
 GNU_CONFIGURE=	yes
+USES=		gettext gmake libtool pkgconfig
 USE_GNOME=	glib20
 USE_LDCONFIG=	yes
-USES=		gettext gmake libtool pkgconfig
 
 INSTALL_TARGET=	install-strip
 

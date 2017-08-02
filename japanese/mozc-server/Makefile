@@ -1,5 +1,5 @@
 # Created by: Daichi GOTO <daichi@FreeBSD.org>
-# $FreeBSD: head/japanese/mozc-server/Makefile 441468 2017-05-22 16:04:19Z linimon $
+# $FreeBSD: head/japanese/mozc-server/Makefile 446741 2017-07-27 13:57:30Z mat $
 
 PORTNAME=	mozc
 PORTVERSION=	2.20.2677.102.02
@@ -25,8 +25,8 @@ BROKEN_powerpc64=	fails to install: gyp: Call to 'which clang' returned exit sta
 BROKEN_sparc64=		fails to compile: segfault
 
 USE_GITHUB=	yes
-GH_TUPLE=	hrs-allbsd:${PORTNAME}:${DISTVERSIONPREFIX}${DISTVERSION} \
-		hiroyuki-komatsu:japanese-usage-dictionary:e5b3425:udic
+GH_ACCOUNT=	hrs-allbsd
+GH_TUPLE=	hiroyuki-komatsu:japanese-usage-dictionary:e5b3425:udic
 
 USES=		compiler:c++11-lang pkgconfig gmake \
 		tar:bzip2 python:2.7,build shebangfix

@@ -1,10 +1,11 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/security/kstart/Makefile 407440 2016-01-29 03:11:35Z zi $
+# $FreeBSD: head/security/kstart/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	kstart
 DISTVERSION=	4.2
 CATEGORIES=	security
-MASTER_SITES=	http://archives.eyrie.org/software/kerberos/
+MASTER_SITES=	http://archives.eyrie.org/software/kerberos/ \
+		ZI
 
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Automated Kerberos ticket cache and keytab management utilities

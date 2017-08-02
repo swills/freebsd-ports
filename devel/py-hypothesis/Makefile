@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/devel/py-hypothesis/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-hypothesis/Makefile 446793 2017-07-28 01:23:44Z dbaio $
 
 PORTNAME=	hypothesis
 PORTVERSION=	1.18.1
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	brendan+freebsd@bbqsrc.net
 COMMENT=	Library for property based testing
 
-LICENSE=	MPL
+LICENSE=	MPL20
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3
 

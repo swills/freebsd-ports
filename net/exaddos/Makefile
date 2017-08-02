@@ -1,10 +1,10 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/exaddos/Makefile 429612 2016-12-27 12:20:41Z amdmi3 $
+# $FreeBSD: head/net/exaddos/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	exaddos
 PORTVERSION=	0.4.0
 CATEGORIES=	net
-MASTER_SITES=	http://mirrors.rit.edu/zi/
+MASTER_SITES=	ZI
 
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Monitor your network for DDoS

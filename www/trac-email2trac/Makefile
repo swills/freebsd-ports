@@ -1,8 +1,8 @@
 # Created by: Gerrit Beine <gerrit.beine@gmx.de>
-# $FreeBSD: head/www/trac-email2trac/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/www/trac-email2trac/Makefile 447000 2017-07-31 21:48:45Z joneum $
 
 PORTNAME=	email2trac
-PORTVERSION=	2.10.0
+PORTVERSION=	2.11.0
 CATEGORIES=	www devel python
 MASTER_SITES=	ftp://ftp.sara.nl/pub/outgoing/
 PKGNAMEPREFIX=	trac-

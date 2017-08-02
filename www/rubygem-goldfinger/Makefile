@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-goldfinger/Makefile 439697 2017-04-28 21:53:14Z jrm $
+# $FreeBSD: head/www/rubygem-goldfinger/Makefile 446862 2017-07-29 00:00:56Z jrm $
 
 PORTNAME=	goldfinger
-PORTVERSION=	1.2.0
+DISTVERSION=	2.0.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -13,11 +13,12 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-addressable>=2.4:www/rubygem-addressable \
 		rubygem-http>=2.0:www/rubygem-http \
-		rubygem-nokogiri>=1.6:textproc/rubygem-nokogiri
+		rubygem-nokogiri>=1.6:textproc/rubygem-nokogiri \
+		rubygem-oj>=3.0:devel/rubygem-oj
 
 NO_ARCH=	yes
 
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Frederic Culot <frederic@culot.org>
-# $FreeBSD: head/devel/p5-Package-DeprecationManager/Makefile 430155 2016-12-31 19:51:34Z adamw $
+# $FreeBSD: head/devel/p5-Package-DeprecationManager/Makefile 447070 2017-08-01 18:44:50Z culot $
 
 PORTNAME=	Package-DeprecationManager
-PORTVERSION=	0.15
+PORTVERSION=	0.17
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

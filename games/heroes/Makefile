@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/games/heroes/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/games/heroes/Makefile 446854 2017-07-28 21:45:20Z jkim $
 
 PORTNAME=	heroes
 PORTVERSION=	0.21
@@ -33,7 +33,7 @@ MUSICSRC=	${WRKDIR}/${MUSICDISTNAME}
 USE_SDL=	mixer sdl
 USES=		gettext gmake iconv makeinfo
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	MAKEINFO="makeinfo --no-split"
+CONFIGURE_ENV=	MAKEINFO="${MAKEINFO} --no-split"
 CONFIGURE_ARGS=	--with-sdl_mixer=${LOCALBASE} --without-gii --without-ggi
 
 OPTIONS_DEFINE=	OPTIMIZED_CFLAGS

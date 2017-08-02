@@ -1,9 +1,9 @@
 # Created by: Brad Davis <brd@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/rubygem-visage-app/Makefile 441038 2017-05-16 18:22:09Z sunpoet $
+# $FreeBSD: head/net-mgmt/rubygem-visage-app/Makefile 446931 2017-07-30 13:16:40Z sunpoet $
 
 PORTNAME=	visage-app
 PORTVERSION=	2.1.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net-mgmt rubygems
 MASTER_SITES=	RG
 
@@ -20,7 +20,6 @@ RUN_DEPENDS=	rubygem-errand>=0.7.3:devel/rubygem-errand \
 		rubygem-yajl-ruby>=1.1.0:devel/rubygem-yajl-ruby
 
 NO_ARCH=	yes
-
 USE_RUBY=	yes
 USES=		gem
 

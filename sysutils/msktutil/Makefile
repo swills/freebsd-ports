@@ -1,10 +1,11 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/sysutils/msktutil/Makefile 424417 2016-10-21 14:02:14Z zi $
+# $FreeBSD: head/sysutils/msktutil/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	msktutil
 PORTVERSION=	1.0
 CATEGORIES=	sysutils
-MASTER_SITES=	SF/${PORTNAME}
+MASTER_SITES=	SF/${PORTNAME} \
+		ZI
 
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Utility to manage Active Directory interoperability

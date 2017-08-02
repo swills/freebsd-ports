@@ -1,12 +1,10 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/derelict-sdl2/Makefile 446438 2017-07-23 02:34:07Z acm $
+# $FreeBSD: head/devel/derelict-sdl2/Makefile 446655 2017-07-26 13:16:39Z mat $
 
 PORTNAME=	derelict-sdl2
 PORTVERSION=	2.1.4
+DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
-MASTER_SITES=	https://github.com/DerelictOrg/DerelictSDL2/archive/
-DISTNAME=	${PORTVERSION:S/^/v/}
-DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Dynamic bindings to SDL2 and its libraries for the D lang
@@ -18,7 +16,10 @@ BUILD_DEPENDS=	ldmd2:lang/ldc \
 		${LOCALBASE}/lib/d/libDerelictUtil.a:devel/derelict-util
 
 USES=		dos2unix
-WRKSRC=		${WRKDIR}/DerelictSDL2-${PORTVERSION}
+USE_GITHUB=	yes
+GH_ACCOUNT=	DerelictOrg
+GH_PROJECT=	DerelictSDL2
+
 DUB_CMD=	${LOCALBASE}/bin/dub build --build=release
 D_INCLUDE_DIR=	${PREFIX}/include/d
 D_LIB_DIR=	${PREFIX}/lib/d

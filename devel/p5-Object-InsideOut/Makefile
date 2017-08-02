@@ -1,8 +1,8 @@
 # Created by: Geraud Continsouzas <geraud@gcu.info>
-# $FreeBSD: head/devel/p5-Object-InsideOut/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Object-InsideOut/Makefile 446969 2017-07-31 15:49:45Z culot $
 
 PORTNAME=	Object-InsideOut
-PORTVERSION=	4.02
+PORTVERSION=	4.04
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:JDHEDDEN

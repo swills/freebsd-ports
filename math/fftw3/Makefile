@@ -1,5 +1,5 @@
 # Created by: Lars Koeller <Lars.Koeller@Uni-Bielefeld.DE>
-# $FreeBSD: head/math/fftw3/Makefile 437871 2017-04-06 17:25:29Z jhale $
+# $FreeBSD: head/math/fftw3/Makefile 446955 2017-07-31 11:58:27Z jhale $
 
 PORTNAME=	fftw3
 DISTVERSION=	3.3.6-pl2
@@ -123,6 +123,9 @@ CFLAGS+=	-fomit-frame-pointer
 .  endif
 .  if ${ARCH} == "i386" && (${COMPILER_TYPE} == "gcc" || !empty(USE_GCC)) && !${PORT_OPTIONS:MOPENMPI}
 CFLAGS+=	-malign-double
+.  endif
+.  if ${ARCH} == "armv6" && ${OPSYS} == FreeBSD && ${OSVERSION} < 1200032
+CFLAGS+=	-fno-unsafe-math-optimizations
 .  endif
 WITHOUT_NO_STRICT_ALIASING=	yes
 .endif # end OPTIMIZED_CFLAGS

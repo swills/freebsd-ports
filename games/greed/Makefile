@@ -1,8 +1,8 @@
 # Created by: Mark Pulford <mark@kyne.com.au>
-# $FreeBSD: head/games/greed/Makefile 408099 2016-02-04 21:27:38Z marino $
+# $FreeBSD: head/games/greed/Makefile 446832 2017-07-28 13:31:49Z culot $
 
 PORTNAME=	greed
-PORTVERSION=	4.1
+PORTVERSION=	4.2
 CATEGORIES=	games
 MASTER_SITES=	http://catb.org/~esr/greed/
 PKGNAMESUFFIX=	-game
@@ -10,7 +10,7 @@ PKGNAMESUFFIX=	-game
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Text puzzle game with the aim of clearing the game field
 
-LICENSE=	BSD3CLAUSE
+LICENSE=	BSD2CLAUSE
 
 USES=		ncurses
 SCOREFILE?=	/var/games/greed.hs

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/animorph/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/graphics/animorph/Makefile 447032 2017-08-01 16:58:58Z rakuco $
 
 PORTNAME=	animorph
 PORTVERSION=	0.3
@@ -17,6 +17,7 @@ USES=		pkgconfig gmake libtool
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 USE_GCC=	any # otherwise graphics/makehuman won't link
+USE_CXXSTD=	gnu++03  # The port is not compatible with C++11 and later.
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib

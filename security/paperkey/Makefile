@@ -1,11 +1,11 @@
 # Created by: Peter Pentchev <roam@FreeBSD.org>
-# $FreeBSD: head/security/paperkey/Makefile 424371 2016-10-21 02:21:33Z zi $
+# $FreeBSD: head/security/paperkey/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	paperkey
 PORTVERSION=	1.4
 CATEGORIES=	security
 MASTER_SITES=	http://www.jabberwocky.com/software/paperkey/ \
-		http://mirrors.rit.edu/zi/
+		ZI
 
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Extract just the secret information out of OpenPGP secret keys

@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/mcollective-service-common/Makefile 446262 2017-07-20 15:30:52Z romain $
+# $FreeBSD: head/sysutils/mcollective-service-common/Makefile 446811 2017-07-28 08:41:43Z romain $
 
 PORTNAME?=	mcollective-service-common
-PORTVERSION=	3.1.3
+PORTVERSION=	3.1.5
 CATEGORIES=	sysutils
 
 MAINTAINER=	puppet@FreeBSD.org

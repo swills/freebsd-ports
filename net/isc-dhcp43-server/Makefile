@@ -1,11 +1,12 @@
 # Created by: Ryan Steinmetz <rpsfa@rit.edu>
-# $FreeBSD: head/net/isc-dhcp43-server/Makefile 423825 2016-10-12 04:00:51Z zi $
+# $FreeBSD: head/net/isc-dhcp43-server/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	dhcp
-PORTVERSION=	4.3.5
+PORTVERSION=	4.3.6
 PORTREVISION=	${DHCP_PORTREVISION}
 CATEGORIES=	net
-MASTER_SITES=	ISC/${PORTNAME}/${PORTVERSION:S/P/-P/g}
+MASTER_SITES=	ISC/${PORTNAME}/${PORTVERSION:S/P/-P/g} \
+		ZI
 PKGNAMEPREFIX=	isc-
 PKGNAMESUFFIX=	43-${SUBSYS}
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/P/-P/g}

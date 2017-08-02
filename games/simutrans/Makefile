@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/simutrans/Makefile 441004 2017-05-16 15:28:53Z tijl $
+# $FreeBSD: head/games/simutrans/Makefile 446851 2017-07-28 21:14:57Z tijl $
 
 PORTNAME=	simutrans
 DISTVERSION=	120-2-2
@@ -9,7 +9,7 @@ MASTER_SITES=	SF/simutrans/simutrans/${DISTVERSION} \
 DISTFILES=	simutrans-src-${DISTVERSION}.zip \
 		simulinux-${DISTVERSION}.zip
 
-MAINTAINER=	tijl@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Transport Simulator
 
 LICENSE=	ART10

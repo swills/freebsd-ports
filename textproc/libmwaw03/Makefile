@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/libmwaw03/Makefile 443635 2017-06-15 20:21:15Z jkim $
+# $FreeBSD: head/textproc/libmwaw03/Makefile 447057 2017-08-01 17:43:43Z jkim $
 
 PORTNAME=	libmwaw
-PORTVERSION=	0.3.11
+PORTVERSION=	0.3.12
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 PKGNAMESUFFIX=	03

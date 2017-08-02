@@ -1,5 +1,5 @@
 # Created by: Cyrille Lefevre <clefevre@citeweb.net>
-# $FreeBSD: head/lang/gforth/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/lang/gforth/Makefile 446847 2017-07-28 18:58:24Z ultima $
 
 PORTNAME=	gforth
 PORTVERSION=	0.7.3
@@ -13,7 +13,7 @@ COMMENT=	Fast and portable Forth system
 
 LIB_DEPENDS=	libffi.so.6:devel/libffi \
 		libltdl.so:devel/libltdl
-BUILD_DEPENDS=	${LOCALBASE}/include/avcall.h:devel/ffcall
+BUILD_DEPENDS=	${LOCALBASE}/include/avcall.h:devel/libffcall
 
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include

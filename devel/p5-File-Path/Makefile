@@ -1,8 +1,8 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/p5-File-Path/Makefile 442925 2017-06-08 14:06:55Z sunpoet $
+# $FreeBSD: head/devel/p5-File-Path/Makefile 446917 2017-07-30 13:12:29Z sunpoet $
 
 PORTNAME=	File-Path
-PORTVERSION=	2.14
+PORTVERSION=	2.15
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

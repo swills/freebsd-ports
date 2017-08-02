@@ -1,9 +1,9 @@
 # Created by: Dominic Marks <d.marks@student.umist.ac.uk>
-# $FreeBSD: head/devel/ccache/Makefile 446550 2017-07-25 00:38:06Z bdrewery $
+# $FreeBSD: head/devel/ccache/Makefile 446777 2017-07-27 20:43:21Z bdrewery $
 
 PORTNAME=	ccache
 PORTVERSION=	3.3.4
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel
 MASTER_SITES=	http://www.samba.org/ftp/ccache/ \
 		LOCAL/bdrewery

@@ -1,5 +1,5 @@
 # Created by: David O'Brien <obrien@FreeBSD.org>
-# $FreeBSD: head/sysutils/lsof/Makefile 443404 2017-06-11 18:43:49Z ler $
+# $FreeBSD: head/sysutils/lsof/Makefile 446908 2017-07-30 09:01:10Z amdmi3 $
 
 PORTNAME=	lsof
 DISTVERSION=	4.90M
@@ -24,10 +24,10 @@ DISTNAME=	${PORTNAME}_${DISTVERSION}${DISTNAME_SUFFIX}
 MAINTAINER=	ler@FreeBSD.org
 COMMENT=	Lists information about open files (similar to fstat(1))
 
-LICENSE=lsof
-LICENSE_NAME=lsof
-LICENSE_FILE=${FILESDIR}/LICENSE
-LICENSE_PERMS=	 dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+LICENSE=	lsof
+LICENSE_NAME=	lsof
+LICENSE_FILE=	${FILESDIR}/LICENSE
+LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 BROKEN_powerpc64=	fails to compile: sys/pcpu.h: error: size of array '__assert_0' is negative
 

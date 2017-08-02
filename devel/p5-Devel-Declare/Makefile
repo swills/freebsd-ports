@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Devel-Declare/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Devel-Declare/Makefile 446816 2017-07-28 10:46:29Z culot $
 
 PORTNAME=	Devel-Declare
-PORTVERSION=	0.006018
+PORTVERSION=	0.006019
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

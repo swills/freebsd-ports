@@ -1,11 +1,11 @@
 # Created by: melifaro@ipfw.ru
-# $FreeBSD: head/net/nss-pam-ldapd/Makefile 444615 2017-06-29 00:12:12Z zi $
+# $FreeBSD: head/net/nss-pam-ldapd/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=		nss-pam-ldapd
 PORTVERSION=		0.9.8
 CATEGORIES=		net
 MASTER_SITES=		http://arthurdejong.org/nss-pam-ldapd/ \
-			http://mirrors.rit.edu/zi/
+			ZI
 
 MAINTAINER?=		zi@FreeBSD.org
 COMMENT?=		Advanced fork of nss_ldap

@@ -1,5 +1,5 @@
 # Created by: Ron van Daal
-# $FreeBSD: head/graphics/GraphicsMagick/Makefile 445173 2017-07-06 20:55:44Z sunpoet $
+# $FreeBSD: head/graphics/GraphicsMagick/Makefile 446932 2017-07-30 13:16:45Z sunpoet $
 
 PORTNAME=	GraphicsMagick
 PORTVERSION=	1.3.26
@@ -52,6 +52,7 @@ LCMS2_CONFIGURE=	lcms2
 LCMS2_LIB_DEPENDS=	liblcms2.so:graphics/lcms2
 OPENMP_CONFIGURE_OFF=	--disable-openmp --without-threads
 OPENMP_CONFIGURE_ON=	--disable-openmp-slow --enable-openmp --with-threads
+OPENMP_USE=		CXXSTD=c++03	# See PR/221065 for detail
 OPENMP_USES=		compiler:gcc-c++11-lib
 PNG_CONFIGURE_WITH=	png
 PNG_LIB_DEPENDS=	libpng.so:graphics/png

@@ -1,9 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Devel-CallChecker/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Devel-CallChecker/Makefile 446748 2017-07-27 15:47:37Z sunpoet $
 
 PORTNAME=	Devel-CallChecker
-PORTVERSION=	0.007
-PORTREVISION=	1
+PORTVERSION=	0.008
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

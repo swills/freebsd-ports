@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 446388 2017-07-22 11:35:44Z kwm $
+# $FreeBSD: head/net/Makefile 446988 2017-07-31 17:42:33Z rene $
 #
 
     COMMENT = Networking tools
@@ -114,6 +114,7 @@
     SUBDIR += dpdk
     SUBDIR += dpinger
     SUBDIR += drawterm
+    SUBDIR += drive
     SUBDIR += dropbox-api-command
     SUBDIR += dropbox-uploader
     SUBDIR += dshell
@@ -1201,7 +1202,6 @@
     SUBDIR += rubygem-network_interface
     SUBDIR += rubygem-oauth
     SUBDIR += rubygem-oauth2
-    SUBDIR += rubygem-oauth212
     SUBDIR += rubygem-octokit
     SUBDIR += rubygem-octopress-deploy
     SUBDIR += rubygem-omniauth-auth0

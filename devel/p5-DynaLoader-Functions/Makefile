@@ -1,9 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-DynaLoader-Functions/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-DynaLoader-Functions/Makefile 447039 2017-08-01 17:10:11Z sunpoet $
 
 PORTNAME=	DynaLoader-Functions
-PORTVERSION=	0.002
-PORTREVISION=	1
+PORTVERSION=	0.003
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

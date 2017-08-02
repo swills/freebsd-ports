@@ -1,11 +1,12 @@
 # Created by: Russell A. Jackson <rjackson@cserv62.csub.edu>
-# $FreeBSD: head/net-mgmt/sdig/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/sdig/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	sdig
 PORTVERSION=	0.45
 PORTREVISION=	1
 CATEGORIES=	net-mgmt
-MASTER_SITES=	SF
+MASTER_SITES=	SF \
+		ZI
 
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Translate IP/DNS/WINS/MAC address into port description

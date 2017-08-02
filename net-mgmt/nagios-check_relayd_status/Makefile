@@ -1,5 +1,5 @@
 # Created by: Douglas K. Rand <rand@iteris.com>
-# $FreeBSD: head/net-mgmt/nagios-check_relayd_status/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/nagios-check_relayd_status/Makefile 446789 2017-07-28 01:19:10Z dbaio $
 
 PORTNAME=	check_relayd_status
 PORTVERSION=	1.1
@@ -11,7 +11,7 @@ DISTFILES=	# none
 MAINTAINER=	rand@iteris.com
 COMMENT=	Nagios plug-in to check on the status of relayd
 
-LICENSE=	MPL
+LICENSE=	MPL11
 
 RUN_DEPENDS=	${LOCALBASE}/sbin/relayctl:net/relayd
 

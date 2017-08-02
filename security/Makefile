@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 446621 2017-07-25 20:08:07Z jrm $
+# $FreeBSD: head/security/Makefile 446988 2017-07-31 17:42:33Z rene $
 #
 
     COMMENT = Security tools
@@ -181,6 +181,7 @@
     SUBDIR += gnupg20
     SUBDIR += gnutls
     SUBDIR += go.crypto
+    SUBDIR += go-cve-dictionary
     SUBDIR += goptlib
     SUBDIR += gorilla
     SUBDIR += govpn
@@ -868,6 +869,7 @@
     SUBDIR += py-ed25519ll
     SUBDIR += py-fail2ban
     SUBDIR += py-fchksum
+    SUBDIR += py-first-server
     SUBDIR += py-flask-httpauth
     SUBDIR += py-gixy
     SUBDIR += py-gnupg
@@ -1027,6 +1029,7 @@
     SUBDIR += rubygem-googleauth
     SUBDIR += rubygem-gpgr
     SUBDIR += rubygem-gssapi
+    SUBDIR += rubygem-hkdf
     SUBDIR += rubygem-jugyo-twitter_oauth
     SUBDIR += rubygem-metasploit-aggregator
     SUBDIR += rubygem-metasploit-concern
@@ -1053,7 +1056,6 @@
     SUBDIR += rubygem-omniauth-oauth2-generic
     SUBDIR += rubygem-omniauth-saml
     SUBDIR += rubygem-omniauth-shibboleth
-    SUBDIR += rubygem-omniauth13
     SUBDIR += rubygem-openssl
     SUBDIR += rubygem-openssl-ccm
     SUBDIR += rubygem-openvas-omp
@@ -1215,6 +1217,7 @@
     SUBDIR += vm-to-tor
     SUBDIR += vnccrack
     SUBDIR += vpnc
+    SUBDIR += vuls
     SUBDIR += vuxml
     SUBDIR += vxquery
     SUBDIR += w3af

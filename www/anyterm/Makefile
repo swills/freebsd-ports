@@ -1,5 +1,5 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/www/anyterm/Makefile 439999 2017-05-03 01:14:05Z linimon $
+# $FreeBSD: head/www/anyterm/Makefile 446699 2017-07-26 21:44:37Z rakuco $
 
 PORTNAME=	anyterm
 PORTVERSION=	1.1.29
@@ -27,6 +27,10 @@ USE_GCC=	any
 ALL_TARGET=	default_target
 PLIST_FILES=	man/man1/anytermd.1.gz \
 		sbin/anytermd
+
+# Force the use of an older C++ standard; anyterm 1.1.29 is not compatible with
+# C++11.
+USE_CXXSTD=	gnu++03
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/private/etc/apache2|${FILESDIR}|' \

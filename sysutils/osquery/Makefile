@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/sysutils/osquery/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/sysutils/osquery/Makefile 446904 2017-07-29 21:28:20Z zi $
 
 PORTNAME=	osquery
-PORTVERSION=	2.5.1
+PORTVERSION=	2.6.0
 CATEGORIES=	sysutils
 
 MAINTAINER=	zi@FreeBSD.org
@@ -41,7 +41,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	facebook ${PORTNAME}:tp
 GH_PROJECT=	third-party:tp
 GH_SUBDIR=	third-party:tp
-GH_TAGNAME=	${PORTVERSION}:tp
+GH_TAGNAME=	2.5.2:tp
 
 # Some options for things that bring in many dependencies
 OPTIONS_DEFINE=	TSK AWS YARA LLDPD

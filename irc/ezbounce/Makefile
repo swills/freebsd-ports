@@ -1,5 +1,5 @@
 # Created by: Chris Piazza <cpiazza@FreeBSD.org>
-# $FreeBSD: head/irc/ezbounce/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/irc/ezbounce/Makefile 447014 2017-08-01 09:01:14Z rakuco $
 
 PORTNAME=	ezbounce
 PORTVERSION=	1.99.15
@@ -23,6 +23,10 @@ COMPRESS_DESC=		Chat log compression (requires boost)
 GNU_CONFIGURE=	yes
 USES=		gmake
 USE_GCC=	any
+
+# ezbounce 1.99.15 isn't compatible with C++11 and later, which some compilers
+# such as GCC 6 default to.
+USE_CXXSTD=	gnu++03
 
 SUB_FILES=	pkg-message
 

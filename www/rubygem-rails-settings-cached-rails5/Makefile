@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-rails-settings-cached-rails5/Makefile 439626 2017-04-28 19:40:28Z jrm $
+# $FreeBSD: head/www/rubygem-rails-settings-cached-rails5/Makefile 447022 2017-08-01 15:51:54Z jrm $
 
 PORTNAME=	rails-settings-cached
-PORTVERSION=	0.6.5
+PORTVERSION=	0.6.6
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5

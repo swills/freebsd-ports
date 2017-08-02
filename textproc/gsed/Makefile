@@ -1,5 +1,5 @@
 # Created by: Cyrille Lefevre <clefevre@citeweb.net>
-# $FreeBSD: head/textproc/gsed/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/textproc/gsed/Makefile 446854 2017-07-28 21:45:20Z jkim $
 
 PORTNAME=	sed
 PORTVERSION=	4.2.2
@@ -12,7 +12,7 @@ MAINTAINER=	johans@FreeBSD.org
 COMMENT=	The GNU stream editor
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV+=	MAKEINFO="makeinfo --no-split"
+CONFIGURE_ENV+=	MAKEINFO="${MAKEINFO} --no-split"
 
 USES=		charsetfix makeinfo gmake
 PATCH_SUBDIRS=	. doc lib sed

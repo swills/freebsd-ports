@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/erlang-java/Makefile 444516 2017-06-27 19:09:57Z olgeni $
+# $FreeBSD: head/lang/erlang-java/Makefile 446848 2017-07-28 19:16:25Z olgeni $
 
 PORTNAME=	erlang
 PORTVERSION=	19.3.6.1
@@ -17,7 +17,7 @@ PATCH_SITES=	http://olgeni.olgeni.com/~olgeni/distfiles/ \
 		LOCAL/olgeni
 PATCHFILES=	patch-otp-19.3.1 patch-otp-19.3.2 patch-otp-19.3.3 \
 		patch-otp-19.3.4 patch-otp-19.3.5 patch-otp-19.3.6 \
-		patch-otp-19.3.6.1
+		patch-otp-19.3.6.1 patch-otp-19.3.6.2
 
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Erlang interface for Java

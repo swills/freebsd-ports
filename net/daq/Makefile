@@ -1,12 +1,12 @@
 # Created by: Dean Freeman (wfreeman@sourcefire.com)
-# $FreeBSD: head/net/daq/Makefile 419724 2016-08-06 01:02:27Z marino $
+# $FreeBSD: head/net/daq/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	daq
 PORTVERSION=	2.0.6
 PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	https://snort.org/downloads/snort/ \
-		http://mirrors.rit.edu/zi/
+		ZI
 
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Data Acquisition abstraction library for snort 2.9+

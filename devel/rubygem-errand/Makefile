@@ -1,9 +1,9 @@
 # Created by: Brad Davis <brd@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-errand/Makefile 445535 2017-07-11 17:03:44Z sunpoet $
+# $FreeBSD: head/devel/rubygem-errand/Makefile 446934 2017-07-30 13:23:00Z sunpoet $
 
 PORTNAME=	errand
 PORTVERSION=	0.8.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/graphics/giflib/Makefile 424274 2016-10-19 17:36:54Z antoine $
+# $FreeBSD: head/graphics/giflib/Makefile 447092 2017-08-02 09:01:11Z amdmi3 $
 
 PORTNAME=	giflib
 PORTVERSION=	5.1.4
@@ -45,7 +45,7 @@ EXTRA_PATCHES=	${FILESDIR}/extra-patch-hide-reallocarray-dfly
 .endif
 
 post-install:
-	@${INSTALL_MAN} ${WRKSRC}/doc/*.1 ${STAGEDIR}${PREFIX}/man/man1/
+	${INSTALL_MAN} ${WRKSRC}/doc/*.1 ${STAGEDIR}${PREFIX}/man/man1/
 .if ${PORT_OPTIONS:MDOCBOOK} && ${PORT_OPTIONS:MDOCS}
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/*.html ${STAGEDIR}${DOCSDIR}/

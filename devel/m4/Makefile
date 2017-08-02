@@ -1,5 +1,5 @@
 # Created by: mr
-# $FreeBSD: head/devel/m4/Makefile 431344 2017-01-13 07:20:56Z sunpoet $
+# $FreeBSD: head/devel/m4/Makefile 446854 2017-07-28 21:45:20Z jkim $
 
 PORTNAME=	m4
 PORTVERSION=	1.4.18
@@ -17,7 +17,7 @@ OPTIONS_DEFINE=	LIBSIGSEGV EXAMPLES
 LIBSIGSEGV_DESC=Use alternative page fault handler (GNU libsigsegv)
 
 CONFIGURE_ARGS=	--program-prefix=g
-CONFIGURE_ENV=	MAKEINFO="makeinfo --no-split"
+CONFIGURE_ENV=	MAKEINFO="${MAKEINFO} --no-split"
 GNU_CONFIGURE=	yes
 USES=		makeinfo tar:xz
 

@@ -1,8 +1,9 @@
 # Created by: Paul Dlug<paul@nerdlabs.com>
-# $FreeBSD: head/net-mgmt/nrpe3/Makefile 445550 2017-07-11 21:43:28Z mat $
+# $FreeBSD: head/net-mgmt/nrpe3/Makefile 446741 2017-07-27 13:57:30Z mat $
 
 PORTNAME=	nrpe
 PORTVERSION=	3.2.0
+DISTVERSIONPREFIX=	nrpe-
 PORTREVISION?=	0
 CATEGORIES=	net-mgmt
 PKGNAMESUFFIX=	3
@@ -16,7 +17,6 @@ CONFLICTS=	nrpe nrpe-ssl
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	NagiosEnterprises
-GH_TAGNAME=	nrpe-${DISTVERSION}
 
 USES=		perl5
 USE_PERL5=	build

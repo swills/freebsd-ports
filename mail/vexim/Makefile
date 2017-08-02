@@ -1,5 +1,5 @@
 # Created by: John Oxley <john@yoafrica.com>
-# $FreeBSD: head/mail/vexim/Makefile 435583 2017-03-07 08:04:16Z fluffy $
+# $FreeBSD: head/mail/vexim/Makefile 446741 2017-07-27 13:57:30Z mat $
 
 PORTNAME=	vexim
 DISTVERSIONPREFIX=	v
@@ -13,7 +13,6 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	${PORTNAME}
 GH_PROJECT=	${PORTNAME}2
 
 SUB_FILES=	pkg-message

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 446388 2017-07-22 11:35:44Z kwm $
+# $FreeBSD: head/audio/Makefile 446756 2017-07-27 16:19:16Z amdmi3 $
 #
 
     COMMENT = Audio tools
@@ -109,6 +109,7 @@
     SUBDIR += dir2ogg
     SUBDIR += discid
     SUBDIR += dream
+    SUBDIR += drumgizmo
     SUBDIR += drumpiler
     SUBDIR += dsbmixer
     SUBDIR += dssi

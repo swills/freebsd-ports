@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/mate-desktop/Makefile 445014 2017-07-04 11:44:30Z kwm $
+# $FreeBSD: head/x11/mate-desktop/Makefile 446942 2017-07-30 20:44:23Z kwm $
 
 PORTNAME=	mate-desktop
 PORTVERSION=	1.18.0
+PORTREVISION=	1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -28,6 +29,7 @@ USE_GNOME=	cairo dconf gdkpixbuf2 gnomeprefix gtk30 \
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
+INSTALLS_ICONS=	yes
 
 GLIB_SCHEMAS=	org.mate.accessibility-keyboard.gschema.xml \
 		org.mate.accessibility-startup.gschema.xml \

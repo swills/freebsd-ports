@@ -1,4 +1,4 @@
-# $FreeBSD: head/UIDs 446208 2017-07-19 16:58:14Z swills $
+# $FreeBSD: head/UIDs 446843 2017-07-28 18:22:22Z ultima $
 # Please keep this file sorted by UID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/master.passwd
@@ -834,7 +834,7 @@ chronyd:*:849:849::0:0:chronyd user:/nonexistent:/usr/sbin/nologin
 # free: 885
 # free: 886
 # free: 887
-# free: 888
+vuls:*:888:888::0:0:VULnerability Scanner:/var/db/vuls:/usr/sbin/nologin
 # free: 889
 # free: 890
 # free: 891

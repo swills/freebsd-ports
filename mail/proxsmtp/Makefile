@@ -1,11 +1,12 @@
 # Created by: Dario Freni <saturnero@gufi.org>
-# $FreeBSD: head/mail/proxsmtp/Makefile 382203 2015-03-25 11:41:17Z marino $
+# $FreeBSD: head/mail/proxsmtp/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	proxsmtp
 PORTVERSION=	1.10
 PORTREVISION=	1
 CATEGORIES=	mail security
-MASTER_SITES=	http://thewalter.net/stef/software/proxsmtp/
+MASTER_SITES=	http://thewalter.net/stef/software/proxsmtp/ \
+		ZI
 
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Flexible SMTP filter which can act also as transparent proxy

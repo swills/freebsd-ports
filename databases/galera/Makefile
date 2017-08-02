@@ -1,8 +1,9 @@
 # Created by: Horia Racoviceanu <horia@racoviceanu.com>
-# $FreeBSD: head/databases/galera/Makefile 444983 2017-07-03 19:24:25Z vd $
+# $FreeBSD: head/databases/galera/Makefile 446741 2017-07-27 13:57:30Z mat $
 
 PORTNAME=	galera
 PORTVERSION?=	25.3.21
+DISTVERSIONPREFIX?=	release_
 CATEGORIES=	databases
 
 MAINTAINER=	devel@galeracluster.com
@@ -33,7 +34,6 @@ USE_LDCONFIG=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	codership
-GH_TAGNAME?=	release_${DISTVERSION}
 
 LDFLAGS+=	-lboost_program_options -lboost_system
 MAKE_ARGS+=	revno=${GH_TAGNAME} system_asio=0 tests=0

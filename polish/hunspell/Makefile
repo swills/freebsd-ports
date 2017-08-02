@@ -1,21 +1,22 @@
-# $FreeBSD: head/polish/hunspell/Makefile 446100 2017-07-17 18:42:43Z sunpoet $
+# $FreeBSD: head/polish/hunspell/Makefile 446968 2017-07-31 15:49:41Z sunpoet $
 
 PORTNAME=	hunspell
-PORTVERSION=	20170716
+PORTVERSION=	20170729
 CATEGORIES=	polish textproc
-MASTER_SITES=	LOCAL/sunpoet/${PORTNAME}
+MASTER_SITES=	https://sjp.pl/slownik/ort/ \
+		LOCAL/sunpoet/${PORTNAME}
 DISTNAME=	sjp-myspell-pl-${PORTVERSION}
 DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Polish hunspell dictionaries
 
-LICENSE=	LGPL21 GPLv2 MPL
+LICENSE=	APACHE20 CC-BY-NC-SA-1.0 GPLv3 LGPL3 MPL11
 LICENSE_COMB=	dual
 
-USES=		zip
 NO_ARCH=	yes
 NO_BUILD=	yes
+USES=		zip
 
 PLIST_FILES=	%%DATADIR%%/pl_PL.aff \
 		%%DATADIR%%/pl_PL.dic

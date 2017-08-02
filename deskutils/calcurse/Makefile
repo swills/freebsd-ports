@@ -1,8 +1,8 @@
 # Created by: Herbert J. Skuhra <h.skuhra@gmail.com>
-# $FreeBSD: head/deskutils/calcurse/Makefile 408362 2016-02-07 10:33:19Z marino $
+# $FreeBSD: head/deskutils/calcurse/Makefile 446757 2017-07-27 16:25:11Z culot $
 
 PORTNAME=	calcurse
-PORTVERSION=	4.0.0
+PORTVERSION=	4.2.2
 CATEGORIES=	deskutils
 MASTER_SITES=	http://calcurse.org/files/
 
@@ -14,7 +14,9 @@ LICENSE=	BSD2CLAUSE
 OPTIONS_DEFINE=	DOCS NLS
 OPTIONS_SUB=	yes
 
-USES=		gmake ncurses
+USES=		gmake ncurses shebangfix
+SHEBANG_LANG=	python3
+SHEBANG_FILES=	contrib/caldav/calcurse-caldav.py
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-asciidoc
 

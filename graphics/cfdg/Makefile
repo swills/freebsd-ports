@@ -1,5 +1,5 @@
 # Created by: Anatoly Borodin <anatoly.borodin@gmail.com>
-# $FreeBSD: head/graphics/cfdg/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/cfdg/Makefile 446909 2017-07-30 09:01:10Z amdmi3 $
 
 PORTNAME=	cfdg
 PORTVERSION=	2.2.2
@@ -12,10 +12,10 @@ DISTNAME=	ContextFreeSource${PORTVERSION}
 MAINTAINER=	anatoly.borodin@gmail.com
 COMMENT=	Context Free Design Grammar compiler
 
-LIB_DEPENDS=	libpng.so:graphics/png
-
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+LIB_DEPENDS=	libpng.so:graphics/png
 
 WRKSRC=		${WRKDIR}/${DISTNAME}${EXTRACT_SUFX}
 
@@ -28,7 +28,9 @@ OPTIONS_DEFINE=	EXAMPLES
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/cfdg ${STAGEDIR}${PREFIX}/bin
-	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
+
+do-install-EXAMPLES-on:
+	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${WRKSRC}/input/* ${STAGEDIR}${EXAMPLESDIR}
 
 .include <bsd.port.mk>

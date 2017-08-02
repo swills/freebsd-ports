@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 446625 2017-07-25 20:42:02Z jrm $
+# $FreeBSD: head/devel/Makefile 447007 2017-08-01 05:09:51Z araujo $
 #
 
     COMMENT = Development utilities
@@ -171,6 +171,7 @@
     SUBDIR += babeltrace
     SUBDIR += bam
     SUBDIR += bazel
+    SUBDIR += bazel-clang38
     SUBDIR += bbfreeze
     SUBDIR += bbfreeze-loader
     SUBDIR += bcc
@@ -304,8 +305,6 @@
     SUBDIR += clisp-hyperspec
     SUBDIR += clojure-cider
     SUBDIR += cloudabi
-    SUBDIR += cloudabi-binutils-aarch64
-    SUBDIR += cloudabi-binutils-x86_64
     SUBDIR += cloudabi-toolchain
     SUBDIR += cltune
     SUBDIR += cmake
@@ -592,7 +591,6 @@
     SUBDIR += fb-adb
     SUBDIR += fb303
     SUBDIR += fc++
-    SUBDIR += ffcall
     SUBDIR += fga
     SUBDIR += fhist
     SUBDIR += fib
@@ -1333,6 +1331,7 @@
     SUBDIR += libfaketime
     SUBDIR += libfastcommon
     SUBDIR += libfastjson
+    SUBDIR += libffcall
     SUBDIR += libffi
     SUBDIR += libfirm
     SUBDIR += libflatarray
@@ -1370,6 +1369,7 @@
     SUBDIR += libhid
     SUBDIR += libhoard
     SUBDIR += libhtp
+    SUBDIR += libhyve-remote
     SUBDIR += libical
     SUBDIR += libical-glib
     SUBDIR += libinotify
@@ -1636,6 +1636,7 @@
     SUBDIR += maven31
     SUBDIR += maven33
     SUBDIR += mcpp
+    SUBDIR += mdb
     SUBDIR += mdds
     SUBDIR += memleax
     SUBDIR += menhir
@@ -4857,6 +4858,7 @@
     SUBDIR += py-vcversioner
     SUBDIR += py-venusian
     SUBDIR += py-versiontools
+    SUBDIR += py-verboselogs
     SUBDIR += py-virtualenv
     SUBDIR += py-virtualenv-clone
     SUBDIR += py-virtualenvwrapper
@@ -5042,6 +5044,7 @@
     SUBDIR += py3-tzlocal
     SUBDIR += py3-urwid
     SUBDIR += py3-vcversioner
+    SUBDIR += py3-verboselogs
     SUBDIR += py3-virtualenv
     SUBDIR += py3-voluptuous
     SUBDIR += py3-wcwidth
@@ -5415,7 +5418,6 @@
     SUBDIR += rubygem-hashie-forbidden_attributes
     SUBDIR += rubygem-hashie2
     SUBDIR += rubygem-health_check
-    SUBDIR += rubygem-health_check22
     SUBDIR += rubygem-highline
     SUBDIR += rubygem-hike
     SUBDIR += rubygem-hitimes
@@ -5517,7 +5519,6 @@
     SUBDIR += rubygem-netaddr
     SUBDIR += rubygem-newrelic-grape
     SUBDIR += rubygem-newrelic_rpm
-    SUBDIR += rubygem-newrelic_rpm3
     SUBDIR += rubygem-nice-ffi
     SUBDIR += rubygem-nio4r
     SUBDIR += rubygem-nori
@@ -5649,7 +5650,6 @@
     SUBDIR += rubygem-schash
     SUBDIR += rubygem-sdoc
     SUBDIR += rubygem-semantic_puppet
-    SUBDIR += rubygem-semantic_puppet0
     SUBDIR += rubygem-semi_semantic
     SUBDIR += rubygem-sentry-raven
     SUBDIR += rubygem-sequel

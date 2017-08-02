@@ -1,10 +1,10 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/hsflowd/Makefile 441819 2017-05-27 00:20:19Z linimon $
+# $FreeBSD: head/net/hsflowd/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	hsflowd
 PORTVERSION=	1.24.1
 CATEGORIES=	net
-MASTER_SITES=	http://mirrors.rit.edu/zi/
+MASTER_SITES=	ZI
 
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Agent that exports metrics using the sFlow protocol

@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/bind910/Makefile 445456 2017-07-10 18:48:00Z mat $
+# $FreeBSD: head/dns/bind910/Makefile 446860 2017-07-28 22:57:26Z mat $
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
@@ -16,7 +16,7 @@ LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
 # ISC releases things like 9.8.0-P1, which our versioning doesn't like
-ISCVERSION=	9.10.5-P3
+ISCVERSION=	9.10.6
 
 USES=	cpe libedit
 
@@ -228,8 +228,8 @@ post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}/arm
 	${INSTALL_DATA} ${WRKSRC}/doc/arm/*.html ${STAGEDIR}${DOCSDIR}/arm
 	${INSTALL_DATA} ${WRKSRC}/doc/arm/Bv9ARM.pdf ${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${WRKSRC}/CHANGES ${WRKSRC}/FAQ \
-		${WRKSRC}/HISTORY ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/CHANGES ${WRKSRC}/FAQ* \
+		${WRKSRC}/HISTORY* ${WRKSRC}/README* ${STAGEDIR}${DOCSDIR}
 
 # Can't use USE_PYTHON=autoplist
 post-install-PYTHON-on:

@@ -1,8 +1,8 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/py-prompt_toolkit/Makefile 437024 2017-03-27 11:11:51Z sunpoet $
+# $FreeBSD: head/devel/py-prompt_toolkit/Makefile 446820 2017-07-28 13:07:05Z sunpoet $
 
 PORTNAME=	prompt_toolkit
-PORTVERSION=	1.0.14
+PORTVERSION=	1.0.15
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

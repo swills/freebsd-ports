@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-nanoc/Makefile 445700 2017-07-13 18:12:45Z sunpoet $
+# $FreeBSD: head/www/rubygem-nanoc/Makefile 447006 2017-08-01 02:10:10Z zi $
 
 PORTNAME=	nanoc
-PORTVERSION=	4.7.12
+PORTVERSION=	4.7.14
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

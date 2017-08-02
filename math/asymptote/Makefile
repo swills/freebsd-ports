@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@email.it>
-# $FreeBSD: head/math/asymptote/Makefile 446571 2017-07-25 11:55:14Z nivit $
+# $FreeBSD: head/math/asymptote/Makefile 446949 2017-07-31 08:56:40Z nivit $
 
 PORTNAME=	asymptote
 PORTVERSION=	2.41
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 DISTNAME=	${PORTNAME}-${PORTVERSION}.src

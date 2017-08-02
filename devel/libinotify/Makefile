@@ -1,8 +1,9 @@
 # Created by: stas
-# $FreeBSD: head/devel/libinotify/Makefile 446411 2017-07-22 17:07:25Z sunpoet $
+# $FreeBSD: head/devel/libinotify/Makefile 447073 2017-08-01 19:18:13Z sunpoet $
 
 PORTNAME=	libinotify
-PORTVERSION=	20170201
+PORTVERSION=	20170711
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -18,7 +19,6 @@ USES=		autoreconf libtool
 
 GH_ACCOUNT=	${PORTNAME}-kqueue
 GH_PROJECT=	${PORTNAME}-kqueue
-GH_TAGNAME=	84d0ed0
 USE_GITHUB=	yes
 
 .include <bsd.port.mk>

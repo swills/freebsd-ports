@@ -1,14 +1,14 @@
 # Created by: estith
-# $FreeBSD: head/devel/p5-Geo-ShapeFile/Makefile 417166 2016-06-20 16:23:28Z mat $
+# $FreeBSD: head/devel/p5-Geo-ShapeFile/Makefile 446830 2017-07-28 13:08:17Z culot $
 
 PORTNAME=	Geo-ShapeFile
-PORTVERSION=	2.61
+PORTVERSION=	2.64
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	culot@FreeBSD.org
-COMMENT=	Perl extension for handling ESRI GIS Shapefiles
+COMMENT=	Extension for handling ESRI GIS Shapefiles
 
 LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual

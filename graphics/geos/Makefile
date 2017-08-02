@@ -1,8 +1,8 @@
 # Created by: Leonardo Martins <lmartins@nepe.eee.ufg.br>
-# $FreeBSD: head/graphics/geos/Makefile 429541 2016-12-26 16:43:32Z sunpoet $
+# $FreeBSD: head/graphics/geos/Makefile 446677 2017-07-26 18:20:20Z sunpoet $
 
 PORTNAME=	geos
-PORTVERSION=	3.6.1
+PORTVERSION=	3.6.2
 CATEGORIES=	graphics geography
 MASTER_SITES=	http://download.osgeo.org/geos/ \
 		LOCAL/sunpoet
@@ -27,7 +27,7 @@ PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
 PYTHON_BUILD_DEPENDS=	swig3.0:devel/swig30
 PYTHON_CONFIGURE_ENABLE=python
-PYTHON_USES=		python:2
+PYTHON_USES=		python
 RUBY_BUILD_DEPENDS=	swig3.0:devel/swig30
 RUBY_CONFIGURE_ENABLE=	ruby
 RUBY_CONFIGURE_ENV=	RUBY="${RUBY}"

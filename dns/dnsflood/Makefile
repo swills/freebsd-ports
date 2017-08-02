@@ -1,11 +1,11 @@
 # Created by: krion
-# $FreeBSD: head/dns/dnsflood/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/dns/dnsflood/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	dnsflood
 PORTVERSION=	1.20
 CATEGORIES=	dns
 MASTER_SITES=	http://www.adotout.com/ \
-		http://mirrors.rit.edu/zi/
+		ZI
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	zi@FreeBSD.org

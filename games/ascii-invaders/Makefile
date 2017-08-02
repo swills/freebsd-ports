@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/ascii-invaders/Makefile 428404 2016-12-12 10:03:34Z amdmi3 $
+# $FreeBSD: head/games/ascii-invaders/Makefile 446722 2017-07-27 09:08:14Z amdmi3 $
 
 PORTNAME=	ascii-invaders
 PORTVERSION=	1.0.1
@@ -14,8 +14,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	macdice
-
-USES=		ncurses
 
 PLIST_FILES=	bin/ascii_invaders
 

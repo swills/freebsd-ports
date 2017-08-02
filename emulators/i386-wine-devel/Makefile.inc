@@ -1,8 +1,8 @@
 # Created by: David Naylor <dbn@FreeBSD.org>
-# $FreeBSD: head/emulators/i386-wine-devel/Makefile.inc 445633 2017-07-13 05:52:09Z dbn $
+# $FreeBSD: head/emulators/i386-wine-devel/Makefile.inc 446962 2017-07-31 15:09:44Z dbn $
 
 PORTNAME=	wine
-PORTVERSION=	2.11
+PORTVERSION=	2.13
 PORTEPOCH=	1
 CATEGORIES=	emulators
 MASTER_SITES=	LOCAL/dbn/repos/wine/${DIST_SUBDIR}/

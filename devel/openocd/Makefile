@@ -1,21 +1,19 @@
 # Created by: Tomasz "CeDeROM" CEDRO (http://www.tomek.cedro.info)
-# $FreeBSD: head/devel/openocd/Makefile 440746 2017-05-13 03:35:51Z linimon $
+# $FreeBSD: head/devel/openocd/Makefile 446854 2017-07-28 21:45:20Z jkim $
 
 PORTNAME=	openocd
 PORTVERSION=	0.10.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	SF
 
 MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	Open On-Chip Debugger
 
-BUILD_DEPENDS=	${LOCALBASE}/bin/makeinfo:print/texinfo
-
 BROKEN_powerpc64=	fails to configure: error: C compiler cannot create executables
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--disable-werror
-CONFIGURE_ENV=	MAKEINFO=${LOCALBASE}/bin/makeinfo
 
 OPTIONS_DEFINE=	DOXYGEN JIMTCL VERBOSE JTAG_IO USB_IO PARPORT DUMMY FT2232 FTDI \
 	USBBLASTER EP93XX AT91RM9200 PRESTO USBPROG JLINK VSLLINK RLINK ULINK \
@@ -56,7 +54,7 @@ CMSISDAP_DESC=	Support for CMSIS-DAP Compliant Debugger
 TIICDI_DESC=	Support for the TI ICDI JTAG Programmer
 USB_COMMS_DESC=	Enable verbose USB communication messages
 
-USES=		gmake libtool pkgconfig tar:bzip2
+USES=		gmake libtool makeinfo pkgconfig tar:bzip2
 CFLAGS+=	-I${LOCALBASE}/include -L${LOCALBASE}/lib -Wno-error=unused-command-line-argument
 INFO=		openocd
 

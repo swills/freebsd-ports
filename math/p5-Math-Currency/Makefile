@@ -1,8 +1,8 @@
 # Created by: will
-# $FreeBSD: head/math/p5-Math-Currency/Makefile 435030 2017-02-28 09:47:28Z sunpoet $
+# $FreeBSD: head/math/p5-Math-Currency/Makefile 446922 2017-07-30 13:12:55Z sunpoet $
 
 PORTNAME=	Math-Currency
-PORTVERSION=	0.51
+PORTVERSION=	0.52
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -21,13 +21,5 @@ TEST_DEPENDS=	p5-Test-More-UTF8>=0:devel/p5-Test-More-UTF8
 NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
-
-OPTIONS_DEFINE=	DOCS
-
-PORTDOCS=	Changes
-
-post-install-DOCS-on:
-	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

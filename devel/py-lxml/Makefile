@@ -1,8 +1,8 @@
 # Created by: Robert Gogolok <gogo@cs.uni-sb.de>
-# $FreeBSD: head/devel/py-lxml/Makefile 427279 2016-11-28 01:12:32Z jbeich $
+# $FreeBSD: head/devel/py-lxml/Makefile 446983 2017-07-31 16:02:03Z madpilot $
 
 PORTNAME=	lxml
-PORTVERSION=	3.6.0
+PORTVERSION=	3.8.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

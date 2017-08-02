@@ -1,12 +1,12 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/editors/le/Makefile 407610 2016-01-31 11:39:58Z marino $
+# $FreeBSD: head/editors/le/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	le
 PORTVERSION=	1.14.9
 PORTREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.yar.ru/pub/source/le/%SUBDIR%/ \
-		http://mirrors.rit.edu/zi/
+		ZI
 MASTER_SITE_SUBDIR=	. old
 
 MAINTAINER=	zi@FreeBSD.org

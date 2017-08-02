@@ -1,5 +1,5 @@
 # Created by: Herve Quiroz <herve.quiroz@esil.univ-mrs.fr>
-# $FreeBSD: head/textproc/saxon-he/Makefile 425127 2016-11-02 09:05:57Z makc $
+# $FreeBSD: head/textproc/saxon-he/Makefile 446791 2017-07-28 01:21:44Z dbaio $
 
 PORTNAME=	saxon-he
 PORTVERSION=	9.5.1.5
@@ -10,7 +10,8 @@ DISTNAME=	SaxonHE${PORTVERSION:S,.,-,g}J
 MAINTAINER=	makc@FreeBSD.org
 COMMENT=	XSLT 2.0 / XPath 2.0 / XQuery 1.0 processor for Java
 
-LICENSE=	MPL
+LICENSE=	MPL20
+LICENSE_FILE=	${WRKSRC}/notices/LICENSE.txt
 
 USES=		zip
 USE_JAVA=	yes

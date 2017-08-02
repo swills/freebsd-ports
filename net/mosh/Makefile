@@ -1,11 +1,11 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/mosh/Makefile 446509 2017-07-24 01:14:25Z zi $
+# $FreeBSD: head/net/mosh/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	mosh
 PORTVERSION=	1.3.2
 CATEGORIES=	net
 MASTER_SITES=	http://mosh.mit.edu/ \
-		http://mirrors.rit.edu/zi/
+		ZI
 
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Mobile terminal that supports intermittent connectivity

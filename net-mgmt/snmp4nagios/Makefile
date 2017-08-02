@@ -1,11 +1,12 @@
 # Created by: Ryan Steinmetz
-# $FreeBSD: head/net-mgmt/snmp4nagios/Makefile 414458 2016-05-02 16:08:56Z zeising $
+# $FreeBSD: head/net-mgmt/snmp4nagios/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	SNMP4Nagios
 PORTVERSION=	0.4
 PORTREVISION=	4
 CATEGORIES=	net-mgmt
-MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME}/${PORTVERSION}
+MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME}/${PORTVERSION} \
+		ZI
 
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Vendor specific SNMP plugins for Nagios

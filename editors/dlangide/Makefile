@@ -1,12 +1,10 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/editors/dlangide/Makefile 446444 2017-07-23 03:21:15Z acm $
+# $FreeBSD: head/editors/dlangide/Makefile 446655 2017-07-26 13:16:39Z mat $
 
 PORTNAME=	dlangide
 PORTVERSION=	0.7.30
+DISTVERSIONPREFIX=	v
 CATEGORIES=	editors
-MASTER_SITES=	https://github.com/buggins/dlangide/archive/
-DISTNAME=	${PORTVERSION:S/^/v/}
-DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	acm@FreeBSD.org
 COMMENT=	D language IDE based on DlangUI
@@ -27,8 +25,10 @@ BUILD_DEPENDS=	ldmd2:lang/ldc \
 		${LOCALBASE}/lib/d/libDerelictFT.a:print/derelict-ft \
 		dcd-server:devel/dcd-server
 
+USE_GITHUB=	yes
+GH_ACCOUNT=	buggins
+
 PLIST_FILES=	bin/${PORTNAME}
-WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 DUB_CMD=	${LOCALBASE}/bin/dub build --build=release
 
 do-build:

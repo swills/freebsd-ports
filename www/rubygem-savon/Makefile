@@ -1,24 +1,24 @@
 # Created by: Joseph Benden <joe@thrallingpenguin.com>
-# $FreeBSD: head/www/rubygem-savon/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/www/rubygem-savon/Makefile 446803 2017-07-28 02:41:42Z sunpoet $
 
 PORTNAME=	savon
-PORTVERSION=	0.9.5
+PORTVERSION=	2.11.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
 MAINTAINER=	joe@thrallingpenguin.com
 COMMENT=	Library for SOAP communications
 
-LICENSE=	BSD2CLAUSE
+LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	rubygem-builder>=2.1.2:devel/rubygem-builder \
-		rubygem-nori>=1.0.3:devel/rubygem-nori \
-		rubygem-httpi>=0.9.0:www/rubygem-httpi \
-		rubygem-wasabi>=1.0.0:www/rubygem-wasabi \
-		rubygem-akami>=1.0.0:www/rubygem-akami \
-		rubygem-gyoku>=0.4.6:devel/rubygem-gyoku \
-		rubygem-nokogiri>=1.6.1:textproc/rubygem-nokogiri
+RUN_DEPENDS=	rubygem-akami>=1.2:www/rubygem-akami \
+		rubygem-builder>=2.1.2:devel/rubygem-builder \
+		rubygem-gyoku>=1.2:devel/rubygem-gyoku \
+		rubygem-httpi>=2.3:www/rubygem-httpi \
+		rubygem-nokogiri>=1.4.0:textproc/rubygem-nokogiri \
+		rubygem-nori>=2.4:devel/rubygem-nori \
+		rubygem-wasabi>=3.4:www/rubygem-wasabi
 
 NO_ARCH=	yes
 USE_RUBY=	yes

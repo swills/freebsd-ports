@@ -1,5 +1,5 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/devel/py3-pip/Makefile 443059 2017-06-10 02:19:04Z woodsb02 $
+# $FreeBSD: head/devel/py3-pip/Makefile 446893 2017-07-29 19:26:16Z sunpoet $
 
 MASTERDIR=	${.CURDIR}/../py-pip
 
@@ -16,6 +16,8 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py3-pytest \
 		bzr>0:devel/bzr
 
 DOCS_BUILD_DEPENDS=	sphinx-build:textproc/py3-sphinx
+
+PORTSCOUT=	ignore:1
 
 USES=		python:3.3+ shebangfix
 

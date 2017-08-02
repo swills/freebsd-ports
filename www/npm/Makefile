@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/npm/Makefile 445925 2017-07-15 19:08:50Z sunpoet $
+# $FreeBSD: head/www/npm/Makefile 446807 2017-07-28 07:02:04Z sunpoet $
 
 PORTNAME=	npm
 PORTVERSION=	5.3.0
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	LOCAL/sunpoet
 
@@ -19,10 +20,13 @@ CONFLICTS_INSTALL=	npm2 npm3 npm4
 NO_ARCH=	yes
 NO_BUILD=	yes
 REINPLACE_ARGS=	-i ''
-USES=		cpe python:2,run tar:xz
+USES=		cpe python:2,run shebangfix tar:xz
 
 CPE_VENDOR=	npmjs
 CPE_PRODUCT=	node_packaged_modules
+
+SHEBANG_GLOB=	*.py
+SHEBANG_FILES=	lib/node_modules/npm/node_modules/node-gyp/gyp/samples/samples
 
 .include <bsd.port.pre.mk>
 

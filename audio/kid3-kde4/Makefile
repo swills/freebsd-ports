@@ -1,15 +1,15 @@
-# $FreeBSD: head/audio/kid3-kde4/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/audio/kid3-kde4/Makefile 447020 2017-08-01 12:36:20Z jhale $
 
 PORTNAME=	kid3
-PORTVERSION=	3.4.5
-PORTREVISION?=	2
+PORTVERSION=	3.5.0
+PORTREVISION?=	0
 CATEGORIES=	audio kde
 MASTER_SITES=	SF
 
 MAINTAINER=	jhale@FreeBSD.org
 COMMENT?=	MP3/Ogg/FLAC tag editor for KDE
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 
 USES=		cmake:outsource kde:4 pkgconfig
 USE_LDCONFIG=	yes

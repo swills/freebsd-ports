@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/vault/Makefile 440588 2017-05-10 21:22:03Z swills $
+# $FreeBSD: head/security/vault/Makefile 446790 2017-07-28 01:20:42Z dbaio $
 
 PORTNAME=	vault
 PORTVERSION=	0.7.2
@@ -8,7 +8,8 @@ CATEGORIES=	security
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Tool for securely accessing secrets
 
-LICENSE=	MPL
+LICENSE=	MPL20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	go>=1.7.1:lang/go
 

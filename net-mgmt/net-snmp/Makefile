@@ -1,11 +1,12 @@
 # Created by: gpalmer
-# $FreeBSD: head/net-mgmt/net-snmp/Makefile 443466 2017-06-12 20:27:31Z feld $
+# $FreeBSD: head/net-mgmt/net-snmp/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	snmp
 PORTVERSION=	5.7.3
 PORTREVISION=	17
 CATEGORIES=	net-mgmt ipv6
-MASTER_SITES=	SF/net-${PORTNAME}/net-${PORTNAME}/${PORTVERSION}
+MASTER_SITES=	SF/net-${PORTNAME}/net-${PORTNAME}/${PORTVERSION} \
+		ZI
 PKGNAMEPREFIX=	net-
 DISTNAME=	${PKGNAMEPREFIX}${PORTNAME}-${PORTVERSION}
 

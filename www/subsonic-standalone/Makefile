@@ -1,6 +1,6 @@
 # Created by: Jeremie Le Hen <jlh@FreeBSD.org>
 # Based on www/subsonic from Nicole Reid <root@cooltrainer.org>
-# $FreeBSD: head/www/subsonic-standalone/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/www/subsonic-standalone/Makefile 446695 2017-07-26 20:18:20Z jlh $
 
 PORTNAME=	subsonic-standalone
 PORTVERSION=	6.0
@@ -12,7 +12,9 @@ DISTNAME=	subsonic-${PORTVERSION}-standalone
 MAINTAINER=	jlh@FreeBSD.org
 COMMENT=	Subsonic streaming media server, standalone version
 
-LICENSE=	GPLv3
+# Subsonic 6 onwards has become proprietary.  License is unclear.
+# http://forum.subsonic.org/forum/viewtopic.php?f=4&t=16604#p71128
+LICENSE=	NONE
 
 OPTIONS_GROUP=	TRANSCODING
 TRANSCODING_DESC=	Transcoding support

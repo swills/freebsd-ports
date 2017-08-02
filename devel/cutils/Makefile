@@ -1,5 +1,5 @@
 # Created by: Sandro Sigala
-# $FreeBSD: head/devel/cutils/Makefile 359209 2014-06-25 08:58:09Z bapt $
+# $FreeBSD: head/devel/cutils/Makefile 446854 2017-07-28 21:45:20Z jkim $
 
 PORTNAME=	cutils
 PORTVERSION=	1.6
@@ -11,7 +11,7 @@ COMMENT=	Miscellaneous C programmer's utilities
 
 USES=		makeinfo
 GNU_CONFIGURE=	yes
-MAKE_ENV=	MAKEINFO=makeinfo
+MAKE_ENV=	MAKEINFO="${MAKEINFO}"
 INFO=		cutils
 MAKE_JOBS_UNSAFE=	yes
 

@@ -1,8 +1,9 @@
 # Created by: mbr@FreeBSD.org
-# $FreeBSD: head/emulators/open-vm-tools/Makefile 444773 2017-06-30 18:37:49Z swills $
+# $FreeBSD: head/emulators/open-vm-tools/Makefile 446741 2017-07-27 13:57:30Z mat $
 
 PORTNAME=		open-vm-tools
 PORTVERSION=		${RELEASE_VER}
+DISTVERSIONPREFIX=	stable-
 PORTEPOCH=		2
 CATEGORIES=		emulators
 
@@ -47,7 +48,6 @@ USES=			autoreconf:-iv fuse gettext-runtime kmod libtool localbase pathfix pkgco
 
 USE_GITHUB=		yes
 GH_ACCOUNT=		vmware
-GH_TAGNAME=		stable-${RELEASE_VER}
 
 USE_LDCONFIG=		yes
 CPPFLAGS+=		-Wno-deprecated-declarations

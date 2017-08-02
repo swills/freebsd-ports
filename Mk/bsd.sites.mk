@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: head/Mk/bsd.sites.mk 444758 2017-06-30 14:55:05Z dbaio $
+# $FreeBSD: head/Mk/bsd.sites.mk 447090 2017-08-02 08:59:21Z mat $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1234,6 +1234,13 @@ MASTER_SITE_KERNEL_ORG+= \
 	http://ftp.yandex.ru/pub/%SUBDIR%/ \
 	http://ftp.heanet.ie/pub/%SUBDIR%/ \
 	http://slackware.cs.utah.edu/pub/kernel.org/pub/%SUBDIR%/
+.endif
+
+.if !defined(IGNORE_MASTER_SITE_ZI)
+MASTER_SITE_ZI+= \
+	https://mirrors.rit.edu/zi/ \
+	https://blackened.zi0r.com/mirrors/ \
+	${MASTER_SITE_LOCAL:S/%SUBDIR%/zi/}
 .endif
 
 # Macro magic

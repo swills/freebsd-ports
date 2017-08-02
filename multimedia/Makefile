@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 446388 2017-07-22 11:35:44Z kwm $
+# $FreeBSD: head/multimedia/Makefile 446994 2017-07-31 19:39:07Z rene $
 #
 
     COMMENT = Multimedia software
@@ -17,7 +17,6 @@
     SUBDIR += audacious-plugins
     SUBDIR += audacious-plugins-gtk3
     SUBDIR += audiopreview
-    SUBDIR += avbin
     SUBDIR += avidemux
     SUBDIR += avidemux-cli
     SUBDIR += avidemux-plugins
@@ -322,7 +321,6 @@
     SUBDIR += pwcview
     SUBDIR += py-cec
     SUBDIR += py-enzyme
-    SUBDIR += py-ffmpeg
     SUBDIR += py-flvlib
     SUBDIR += py-gstreamer
     SUBDIR += py-gstreamer1

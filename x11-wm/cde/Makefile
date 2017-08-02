@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-wm/cde/Makefile 443411 2017-06-11 21:39:53Z crees $
+# $FreeBSD: head/x11-wm/cde/Makefile 447001 2017-07-31 22:03:45Z crees $
 
 PORTNAME=	cde
 DISTVERSION=	2.2.3
+PORTREVISION=	1
 CATEGORIES=	x11-wm
 MASTER_SITES=	SF/cdesktopenv/src/
 DISTNAME=	${PORTNAME}-src-${DISTVERSION}

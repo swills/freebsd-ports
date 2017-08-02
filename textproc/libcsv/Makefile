@@ -1,9 +1,9 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/libcsv/Makefile 430461 2017-01-03 12:27:55Z matthew $
+# $FreeBSD: head/textproc/libcsv/Makefile 447031 2017-08-01 16:48:08Z tcberner $
 
 PORTNAME=	libcsv
 PORTVERSION=	3.0.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

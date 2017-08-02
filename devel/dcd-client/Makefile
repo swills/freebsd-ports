@@ -1,7 +1,7 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/dcd-client/Makefile 446442 2017-07-23 02:53:47Z acm $
+# $FreeBSD: head/devel/dcd-client/Makefile 446656 2017-07-26 13:16:58Z mat $
 
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMESUFFIX=	-client
 

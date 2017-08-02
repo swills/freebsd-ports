@@ -1,12 +1,10 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/derelict-util/Makefile 446437 2017-07-23 02:33:04Z acm $
+# $FreeBSD: head/devel/derelict-util/Makefile 446655 2017-07-26 13:16:39Z mat $
 
 PORTNAME=	derelict-util
 PORTVERSION=	2.1.0
+DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
-MASTER_SITES=	https://github.com/DerelictOrg/DerelictUtil/archive/
-DISTNAME=	${PORTVERSION:S/^/v/}
-DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	acm@FreeBSD.org
 COMMENT=	The base library for all Derelict packages
@@ -16,7 +14,10 @@ LICENSE=	BSL
 BUILD_DEPENDS=	ldmd2:lang/ldc \
 		dub:devel/dub
 
-WRKSRC=		${WRKDIR}/DerelictUtil-${PORTVERSION}
+USE_GITHUB=	yes
+GH_ACCOUNT=	DerelictOrg
+GH_PROJECT=	DerelictUtil
+
 DUB_CMD=	${LOCALBASE}/bin/dub build --build=release
 D_INCLUDE_DIR=	${PREFIX}/include/d
 D_LIB_DIR=	${PREFIX}/lib/d

@@ -1,5 +1,5 @@
 # Created by: Cyrille Lefevre <clefevre@citeweb.net>
-# $FreeBSD: head/deskutils/gcal/Makefile 440622 2017-05-11 10:26:38Z johans $
+# $FreeBSD: head/deskutils/gcal/Makefile 446854 2017-07-28 21:45:20Z jkim $
 
 PORTNAME=	gcal
 PORTVERSION=	4.1
@@ -12,7 +12,7 @@ COMMENT=	GNU Gregorian calendar program
 LICENSE=	GPLv3+
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	MAKEINFO="makeinfo --no-split"
+CONFIGURE_ENV=	MAKEINFO="${MAKEINFO} --no-split"
 USES=		charsetfix shebangfix makeinfo tar:xz
 SHEBANG_FILES=	misc/gcalltx/gcalltxp.in misc/gcalltx/gcalltx.pl
 

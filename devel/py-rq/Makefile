@@ -1,8 +1,8 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/py-rq/Makefile 444370 2017-06-26 14:16:33Z skreuzer $
+# $FreeBSD: head/devel/py-rq/Makefile 447084 2017-08-02 01:32:29Z skreuzer $
 
 PORTNAME=	rq
-PORTVERSION=	0.7.1
+PORTVERSION=	0.8.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

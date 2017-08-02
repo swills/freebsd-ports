@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/devel/itext/Makefile 424682 2016-10-26 08:51:54Z ale $
+# $FreeBSD: head/devel/itext/Makefile 446707 2017-07-27 00:47:08Z dbaio $
 
 PORTNAME=	itext
 PORTVERSION=	4.2.0
@@ -11,7 +11,7 @@ MASTER_SITES=	LOCAL/ale
 MAINTAINER=	ale@FreeBSD.org
 COMMENT=	Java-PDF Library
 
-LICENSE=	MPL LGPL20
+LICENSE=	LGPL20+ MPL11
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	${JAVALIBDIR}/bcmail.jar:java/bouncycastle \

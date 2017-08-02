@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/freeradius3/Makefile 446076 2017-07-17 14:53:00Z zi $
+# $FreeBSD: head/net/freeradius3/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	freeradius
 DISTVERSION=	3.0.15
@@ -7,7 +7,7 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.freeradius.org/pub/freeradius/%SUBDIR%/ \
 		ftp://ftp.ntua.gr/pub/net/radius/freeradius/%SUBDIR%/ \
 		http://ftp.cc.uoc.gr/mirrors/ftp.freeradius.org/%SUBDIR%/ \
-		http://mirrors.rit.edu/zi/
+		ZI
 MASTER_SITE_SUBDIR=	. old
 PKGNAMESUFFIX=	3
 DISTNAME=	freeradius-server-${DISTVERSION}

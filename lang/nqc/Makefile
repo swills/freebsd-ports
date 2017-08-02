@@ -1,5 +1,5 @@
 # Created by: kbyanc
-# $FreeBSD: head/lang/nqc/Makefile 402480 2015-11-27 11:25:56Z amdmi3 $
+# $FreeBSD: head/lang/nqc/Makefile 446706 2017-07-27 00:43:32Z dbaio $
 
 PORTNAME=	nqc
 PORTVERSION=	3.1.r6
@@ -10,7 +10,7 @@ MASTER_SITES=	http://bricxcc.sourceforge.net/nqc/release/ \
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Compiler for writing programs for the Lego RCX
 
-LICENSE=	MPL
+LICENSE=	MPL10
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		gmake dos2unix tar:tgz

@@ -1,8 +1,8 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/net-im/py-python-telegram-bot/Makefile 443833 2017-06-18 16:48:25Z olgeni $
+# $FreeBSD: head/net-im/py-python-telegram-bot/Makefile 446881 2017-07-29 15:42:38Z olgeni $
 
 PORTNAME=	python-telegram-bot
-PORTVERSION=	6.1.0
+PORTVERSION=	7.0.1
 CATEGORIES=	net-im devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,14 +1,15 @@
 # Created by: Stefan Grundmann
-# $FreeBSD: head/security/pam_ocra/Makefile 430235 2017-01-01 03:45:12Z sunpoet $
+# $FreeBSD: head/security/pam_ocra/Makefile 446887 2017-07-29 18:28:08Z dbaio $
 
 PORTNAME=	pam_ocra
-PORTVERSION=	1.2
+PORTVERSION=	1.3
 CATEGORIES=	security
 
 MAINTAINER=	sg2342@googlemail.com
 COMMENT=	RFC6287 (OCRA) PAM module
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		ssl uidfix
 USE_GITHUB=	yes

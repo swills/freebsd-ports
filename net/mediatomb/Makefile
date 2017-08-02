@@ -1,5 +1,5 @@
 # Created by: Leonhard Wimmer <leo@mediatomb.cc>
-# $FreeBSD: head/net/mediatomb/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/net/mediatomb/Makefile 446936 2017-07-30 14:34:27Z kwm $
 
 PORTNAME=	mediatomb
 PORTVERSION=	0.12.1
@@ -66,7 +66,7 @@ MYSQL_CONFIGURE_ENABLE=		mysql
 MYSQL_CONFIGURE_ON= 		--with-mysql-cfg="${LOCALBASE}/bin/mysql_config"
 
 JS_CONFIGURE_ENABLE=		libjs
-JS_CONFIGURE_ON=		--with-js-h="${LOCALBASE}/include" \
+JS_CONFIGURE_ON=		--with-js-h="${LOCALBASE}/include/js-1.7" \
 				--with-js-libs="${LOCALBASE}/lib"
 JS_LIB_DEPENDS=			libjs.so:lang/spidermonkey17
 

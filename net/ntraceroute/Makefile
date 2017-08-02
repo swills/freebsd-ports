@@ -1,12 +1,12 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/net/ntraceroute/Makefile 431286 2017-01-12 17:04:56Z amdmi3 $
+# $FreeBSD: head/net/ntraceroute/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	ntraceroute
 PORTVERSION=	6.4.2
 PORTREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	NETBSD/traceroute-nanog \
-		http://mirrors.rit.edu/zi/
+		ZI
 DISTNAME=	traceroute.c
 EXTRACT_SUFX=
 DIST_SUBDIR=	${PORTNAME}

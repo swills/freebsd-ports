@@ -1,11 +1,11 @@
 # Created by: Ryan Steinmetz
-# $FreeBSD: head/net-mgmt/nagios-check_hp_bladechassis/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/nagios-check_hp_bladechassis/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	check_hp_bladechassis
 PORTVERSION=	1.0.1
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://folk.uio.no/trondham/software/files/ \
-		http://mirrors.rit.edu/zi/
+		ZI
 PKGNAMEPREFIX=	nagios-
 
 MAINTAINER=	zi@FreeBSD.org

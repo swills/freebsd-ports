@@ -1,8 +1,8 @@
 # Created by: ache
-# $FreeBSD: head/net/p5-URI/Makefile 405959 2016-01-12 21:40:55Z sunpoet $
+# $FreeBSD: head/net/p5-URI/Makefile 446681 2017-07-26 18:20:41Z sunpoet $
 
 PORTNAME=	URI
-PORTVERSION=	1.71
+PORTVERSION=	1.72
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -12,6 +12,8 @@ COMMENT=	Perl5 interface to Uniform Resource Identifier (URI) references
 
 LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual
+
+TEST_DEPENDS=	p5-Test-Needs>=0:devel/p5-Test-Needs
 
 NO_ARCH=	yes
 USES=		perl5

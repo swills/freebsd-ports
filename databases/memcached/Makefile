@@ -1,9 +1,8 @@
 # Created by: Sean Chittenden <seanc@FreeBSD.org>
-# $FreeBSD: head/databases/memcached/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/databases/memcached/Makefile 446713 2017-07-27 05:18:03Z swills $
 
 PORTNAME=	memcached
-PORTVERSION=	1.4.34
-PORTREVISION=	2
+PORTVERSION=	1.5.0
 CATEGORIES=	databases
 MASTER_SITES=	http://www.memcached.org/files/ \
 		GENTOO

@@ -1,12 +1,10 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/graphics/derelict-gl3/Makefile 446439 2017-07-23 02:42:03Z acm $
+# $FreeBSD: head/graphics/derelict-gl3/Makefile 446655 2017-07-26 13:16:39Z mat $
 
 PORTNAME=	derelict-gl3
 PORTVERSION=	1.0.23
+DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics
-MASTER_SITES=	https://github.com/DerelictOrg/DerelictGL3/archive/
-DISTNAME=	${PORTVERSION:S/^/v/}
-DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Dynamic binding to OpenGL for the D Programming Language
@@ -17,7 +15,10 @@ BUILD_DEPENDS=	ldmd2:lang/ldc \
 		dub:devel/dub \
 		${LOCALBASE}/lib/d/libDerelictUtil.a:devel/derelict-util
 
-WRKSRC=		${WRKDIR}/DerelictGL3-${PORTVERSION}
+USE_GITHUB=	yes
+GH_ACCOUNT=	DerelictOrg
+GH_PROJECT=	DerelictGL3
+
 DUB_CMD=	${LOCALBASE}/bin/dub build --build=release
 D_INCLUDE_DIR=	${PREFIX}/include/d
 D_LIB_DIR=	${PREFIX}/lib/d

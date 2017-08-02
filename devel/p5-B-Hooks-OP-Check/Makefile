@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-B-Hooks-OP-Check/Makefile 440719 2017-05-12 21:50:47Z sunpoet $
+# $FreeBSD: head/devel/p5-B-Hooks-OP-Check/Makefile 447038 2017-08-01 17:10:06Z sunpoet $
 
 PORTNAME=	B-Hooks-OP-Check
-PORTVERSION=	0.21
+PORTVERSION=	0.22
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

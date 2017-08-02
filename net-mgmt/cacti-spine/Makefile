@@ -1,5 +1,5 @@
 # Created by: clement@FreeBSD.org
-# $FreeBSD: head/net-mgmt/cacti-spine/Makefile 443466 2017-06-12 20:27:31Z feld $
+# $FreeBSD: head/net-mgmt/cacti-spine/Makefile 446649 2017-07-26 09:01:06Z amdmi3 $
 
 PORTNAME=	spine
 PORTVERSION=	1.1.10
@@ -28,9 +28,6 @@ CONFLICTS_INSTALL=	cacti88
 
 post-patch:
 	@${REINPLACE_CMD} 's,#define\ *DEFAULT_CONF_FILE .*,#define DEFAULT_CONF_FILE "${PREFIX}/etc/spine.conf",' ${WRKSRC}/spine.h
-
-do-build:
-	@cd ${WRKSRC}; ${MAKE}
 
 post-install:
 	${MV} ${STAGEDIR}${PREFIX}/etc/spine.conf.dist ${STAGEDIR}${PREFIX}/etc/spine.conf.sample

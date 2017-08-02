@@ -1,8 +1,8 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/cutemaze/Makefile 433995 2017-02-13 14:32:28Z vanilla $
+# $FreeBSD: head/games/cutemaze/Makefile 446954 2017-07-31 11:07:50Z riggs $
 
 PORTNAME=	cutemaze
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.1
 CATEGORIES=	games
 MASTER_SITES=	http://gottcode.org/${PORTNAME}/
 DISTNAME=	${PORTNAME}-${DISTVERSION}-src

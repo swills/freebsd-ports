@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/madonctl/Makefile 441927 2017-05-28 23:14:51Z sunpoet $
+# $FreeBSD: head/net/madonctl/Makefile 446741 2017-07-27 13:57:30Z mat $
 
 PORTNAME=	madonctl
 PORTVERSION=	1.2.0
@@ -18,8 +18,8 @@ USES=		go
 
 PLIST_FILES=	bin/madonctl
 
-GH_TUPLE=	McKael:${PORTNAME}:${DISTVERSIONFULL} \
-		McKael:madon:v1.6.0:madon/../src/github.com/McKael/madon \
+GH_ACCOUNT=	McKael
+GH_TUPLE=	McKael:madon:v1.6.0:madon/../src/github.com/McKael/madon \
 		fsnotify:fsnotify:v1.4.2:fsnotify/../src/github.com/fsnotify/fsnotify \
 		ghodss:yaml:v1.0.0:yaml/../src/github.com/ghodss/yaml \
 		go-yaml:yaml:cd8b52f:yaml2/../src/gopkg.in/yaml.v2 \

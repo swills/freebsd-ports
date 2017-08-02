@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/elixir-stemmer/Makefile 420782 2016-08-24 09:49:04Z olgeni $
+# $FreeBSD: head/devel/elixir-stemmer/Makefile 446930 2017-07-30 13:13:44Z olgeni $
 
 PORTNAME=	stemmer
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.0.1
+DISTVERSION=	1.0.2
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 

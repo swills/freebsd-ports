@@ -1,8 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/devel/py-colorlog/Makefile 428023 2016-12-07 01:18:16Z wen $
+# $FreeBSD: head/devel/py-colorlog/Makefile 446892 2017-07-29 19:26:11Z sunpoet $
 
 PORTNAME=	colorlog
-PORTVERSION=	2.10.0
+PORTVERSION=	3.0.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

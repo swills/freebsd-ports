@@ -1,11 +1,11 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/exabgp/Makefile 445649 2017-07-13 13:43:52Z zi $
+# $FreeBSD: head/net/exabgp/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	exabgp
 PORTVERSION=	3.4.20
 CATEGORIES=	net
 MASTER_SITES=	GH \
-		http://mirrors.rit.edu/zi/
+		ZI
 
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	BGP engine and route injector

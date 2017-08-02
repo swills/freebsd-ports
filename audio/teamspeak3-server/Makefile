@@ -1,8 +1,9 @@
 # Created by: Daniel O'Connor
-# $FreeBSD: head/audio/teamspeak3-server/Makefile 446291 2017-07-20 20:33:11Z ultima $
+# $FreeBSD: head/audio/teamspeak3-server/Makefile 446701 2017-07-26 23:02:06Z ultima $
 
 PORTNAME=	teamspeak3-server
 PORTVERSION=	3.0.13.8
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	audio net
 MASTER_SITES=	http://dl.4players.de/ts/releases/${PORTVERSION}/ \
@@ -46,7 +47,11 @@ PORTDOCS=	permissiondoc.txt \
 		server_upgrade.txt \
 		update_mysql_to_mariadb.txt
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS MYSQL
+
+MYSQL_USES=	mysql:server
+MYSQL_VARS=	SUB_LIST+=MYSQL=mysql
+MYSQL_VARS_OFF=	SUB_LIST+=MYSQL=
 
 .include <bsd.port.options.mk>
 

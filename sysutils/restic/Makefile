@@ -1,8 +1,9 @@
-# $FreeBSD: head/sysutils/restic/Makefile 446541 2017-07-24 18:27:43Z olgeni $
+# $FreeBSD: head/sysutils/restic/Makefile 446743 2017-07-27 14:30:20Z olgeni $
 
 PORTNAME=	restic
 PORTVERSION=	0.7.1
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	wg@FreeBSD.org
@@ -15,6 +16,9 @@ USE_GITHUB=	yes
 
 STRIP=		# stripping can break go binaries
 PLIST_FILES=	bin/restic
+
+post-patch:
+	@${REINPLACE_CMD} -e "s@%%PREFIX%%@${PREFIX}@g" ${WRKSRC}/src/cmds/restic/cmd_autocomplete.go
 
 do-build:
 	@(cd ${GO_WRKSRC}; ${SETENV} ${MAKE_ENV} ${GO_ENV} ${GO_CMD} run build.go)

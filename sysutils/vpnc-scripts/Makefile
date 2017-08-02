@@ -1,11 +1,11 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/sysutils/vpnc-scripts/Makefile 431874 2017-01-19 13:54:20Z zi $
+# $FreeBSD: head/sysutils/vpnc-scripts/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	vpnc-scripts
 PORTVERSION=	20161215
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.infradead.org/pub/${PORTNAME}/ \
-		http://mirrors.rit.edu/zi/
+		ZI
 
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Collection of scripts to setup routes and other changes for a VPN

@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/clanlib1/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/devel/clanlib1/Makefile 446664 2017-07-26 17:02:09Z jbeich $
 
 PORTNAME=	clanlib
 PORTVERSION=	1.0.0
@@ -18,14 +18,13 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 		libmikmod.so:audio/libmikmod \
 		libvorbis.so:audio/libvorbis
 
-USES=		alias gmake jpeg libtool pathfix pkgconfig tar:tgz
+USES=		alias gmake jpeg libtool localbase:ldflags pathfix \
+		pkgconfig tar:tgz
 USE_XORG=	x11 xi
 USE_LDCONFIG=	yes
 USE_SDL=	gfx
 USE_GL=		yes
 
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-docs \
 		--enable-clanDisplay \

@@ -1,8 +1,9 @@
 # Created by: Nicola Vitale <nivit@email.it>
-# $FreeBSD: head/math/wxMaxima/Makefile 446565 2017-07-25 09:45:00Z nivit $
+# $FreeBSD: head/math/wxMaxima/Makefile 446741 2017-07-27 13:57:30Z mat $
 
 PORTNAME=	wxMaxima
 PORTVERSION=	17.05.1
+DISTVERSIONPREFIX=	Version-
 PORTREVISION=	0
 CATEGORIES=	math
 
@@ -13,7 +14,8 @@ LICENSE=	GPLv2
 
 RUN_DEPENDS=	maxima:math/maxima
 
-GH_TUPLE=	andrejv:${PORTNAME:tl}:Version-${DISTVERSION}
+GH_ACCOUNT=	andrejv
+GH_PROJECT=	${PORTNAME:tl}
 
 PLIST_SUB=	DESKTOPDIR=${DESKTOPDIR:S,${PREFIX}/,,}
 

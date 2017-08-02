@@ -1,9 +1,11 @@
 # Created by: Neil Booth
-# $FreeBSD: head/net/py3-pysocks/Makefile 442828 2017-06-07 11:01:05Z koobs $
+# $FreeBSD: head/net/py3-pysocks/Makefile 446898 2017-07-29 19:26:41Z sunpoet $
 
-MASTERDIR=      ${.CURDIR}/../py-pysocks
+MASTERDIR=	${.CURDIR}/../py-pysocks
 
-USES=   python:3.3+
+PORTSCOUT=	ignore:1
+
+USES=		python:3.3+
 
 .include "${MASTERDIR}/Makefile"
 

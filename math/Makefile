@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 445014 2017-07-04 11:44:30Z kwm $
+# $FreeBSD: head/math/Makefile 446648 2017-07-26 08:44:49Z wen $
 #
 
     COMMENT = Mathematics
@@ -31,6 +31,7 @@
     SUBDIR += R-cran-bdsmatrix
     SUBDIR += R-cran-car
     SUBDIR += R-cran-coda
+    SUBDIR += R-cran-combinat
     SUBDIR += R-cran-deldir
     SUBDIR += R-cran-dlmodeler
     SUBDIR += R-cran-dplyr

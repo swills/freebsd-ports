@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/audio/milkytracker/Makefile 436779 2017-03-23 19:29:31Z ehaupt $
+# $FreeBSD: head/audio/milkytracker/Makefile 446948 2017-07-31 08:20:58Z ehaupt $
 
 PORTNAME=	milkytracker
-PORTVERSION=	1.0.0
+PORTVERSION=	1.01.00
 DISTVERSIONPREFIX=	v
 CATEGORIES=	audio
 

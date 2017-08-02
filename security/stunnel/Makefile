@@ -1,5 +1,5 @@
 # Created by: Martti Kuparinen <martti.kuparinen@ericsson.com>
-# $FreeBSD: head/security/stunnel/Makefile 446046 2017-07-16 20:20:23Z zi $
+# $FreeBSD: head/security/stunnel/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	stunnel
 PORTVERSION=	5.42
@@ -18,7 +18,7 @@ MASTER_SITES=	https://www.stunnel.org/downloads/%SUBDIR%/ \
 		http://www.namesdir.com/mirrors/stunnel/%SUBDIR%/ \
 		http://stunnel.cybermirror.org/%SUBDIR%/ \
 		http://mirrors.zerg.biz/stunnel/%SUBDIR%/ \
-		http://mirrors.rit.edu/zi/
+		ZI
 
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	SSL encryption wrapper for standard network daemons

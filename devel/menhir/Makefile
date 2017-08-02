@@ -1,8 +1,8 @@
 # Created by: Jaap Boender <jaapb@kerguelen.org>
-# $FreeBSD: head/devel/menhir/Makefile 446039 2017-07-16 17:27:00Z ultima $
+# $FreeBSD: head/devel/menhir/Makefile 446987 2017-07-31 16:43:44Z ultima $
 
 PORTNAME=	menhir
-PORTVERSION=	20170607
+PORTVERSION=	20170712
 CATEGORIES=	devel
 MASTER_SITES=	http://cristal.inria.fr/~fpottier/menhir/
 

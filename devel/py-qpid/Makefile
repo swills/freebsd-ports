@@ -1,10 +1,11 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/py-qpid/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/devel/py-qpid/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=		qpid
 PORTVERSION=		0.32
 CATEGORIES=		devel python
-MASTER_SITES=		APACHE/${PORTNAME}/${PORTVERSION}
+MASTER_SITES=		APACHE/${PORTNAME}/${PORTVERSION} \
+			ZI
 PKGNAMEPREFIX=		${PYTHON_PKGNAMEPREFIX}
 DISTNAME=		${PORTNAME}-python-${PORTVERSION}
 

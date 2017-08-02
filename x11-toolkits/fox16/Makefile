@@ -1,9 +1,8 @@
 # Created by: Alexander Novitsky <alecn2002@yandex.ru>
-# $FreeBSD: head/x11-toolkits/fox16/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11-toolkits/fox16/Makefile 447009 2017-08-01 07:34:50Z jhale $
 
 PORTNAME=	fox
-PORTVERSION=	1.6.52
-PORTREVISION=	2
+PORTVERSION=	1.6.55
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.fox-toolkit.org/pub/ \
 		http://ftp.fox-toolkit.org/pub/
@@ -12,7 +11,8 @@ PKGNAMESUFFIX=	${PORTVERSION:R:S/.//}
 MAINTAINER=	jhale@FreeBSD.org
 COMMENT=	Fast and extensive C++ GUI toolkit -- ver.1.6
 
-LICENSE=	LGPL3+
+LICENSE=	LGPL21+
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libtiff.so:graphics/tiff

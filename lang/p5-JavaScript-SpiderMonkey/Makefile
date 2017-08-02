@@ -1,5 +1,5 @@
 # Created by: kappa@FreeBSD.org.ua
-# $FreeBSD: head/lang/p5-JavaScript-SpiderMonkey/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/lang/p5-JavaScript-SpiderMonkey/Makefile 446936 2017-07-30 14:34:27Z kwm $
 
 PORTNAME=	JavaScript-SpiderMonkey
 PORTVERSION=	0.21
@@ -19,6 +19,7 @@ TEST_DEPENDS=	p5-Log-Log4perl>=0:devel/p5-Log-Log4perl
 
 USE_PERL5=	configure
 USES=		perl5
+CFLAGS+=	-I${LOCALBASE}/include/js-1.7/
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|libjs.a|libjs.so|' ${WRKSRC}/Makefile.PL

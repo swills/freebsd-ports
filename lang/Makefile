@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 446449 2017-07-23 05:25:09Z acm $
+# $FreeBSD: head/lang/Makefile 446988 2017-07-31 17:42:33Z rene $
 #
 
     COMMENT = Programming languages
@@ -225,7 +225,6 @@
     SUBDIR += p5-Marpa-PP
     SUBDIR += p5-Marpa-XS
     SUBDIR += p5-Modern-Perl
-    SUBDIR += p5-Parse-Perl
     SUBDIR += p5-Perl6-Subs
     SUBDIR += p5-Promises
     SUBDIR += p5-Pugs-Compiler-Rule

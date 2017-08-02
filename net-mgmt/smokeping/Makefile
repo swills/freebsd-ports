@@ -1,9 +1,9 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/net-mgmt/smokeping/Makefile 442711 2017-06-05 23:25:26Z sunpoet $
+# $FreeBSD: head/net-mgmt/smokeping/Makefile 447003 2017-07-31 22:15:03Z rodrigo $
 
 PORTNAME=	smokeping
 PORTVERSION=	2.6.11
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	net-mgmt www
 MASTER_SITES=	http://oss.oetiker.ch/smokeping/pub/ \
 		http://smokeping.cs.pu.edu.tw/pub/

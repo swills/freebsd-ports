@@ -1,8 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/mail/roundcube-markasjunk2/Makefile 445425 2017-07-10 11:06:38Z gahr $
+# $FreeBSD: head/mail/roundcube-markasjunk2/Makefile 447089 2017-08-02 08:50:35Z gahr $
 
 PORTNAME=	markasjunk2
-PORTVERSION=	1.11
+PORTVERSION=	1.11.1
 CATEGORIES=	mail
 PKGNAMEPREFIX=	roundcube-
 

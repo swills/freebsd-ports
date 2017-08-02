@@ -1,5 +1,5 @@
 # Created by: adam
-# $FreeBSD: head/news/cnews/Makefile 431796 2017-01-18 13:20:31Z tijl $
+# $FreeBSD: head/news/cnews/Makefile 447097 2017-08-02 09:56:40Z dinoex $
 
 PORTNAME=	cnews
 PORTVERSION=	cr.g
@@ -71,9 +71,8 @@ PLIST_SUB+=	NEWSCTL_FILES="${NEWSCTL_FILES}"
 OPTIONS_DEFINE=	SENDMAIL EXAMPLES
 OPTIONS_DEFAULT=PGPGPG
 OPTIONS_SINGLE=	VERIFY
-OPTIONS_SINGLE_VERIFY=	PGP2 PGPIN PGPGPG
+OPTIONS_SINGLE_VERIFY=	PGPIN PGPGPG
 SENDMAIL_DESC=	use sendmail instead of /bin/mail
-PGP2_DESC=	use pgp-2.6.3ia for control messages
 PGPIN_DESC=	use pgp-2.6.3in for control messages
 PGPGPG_DESC=	use pgpgpg for control messages
 

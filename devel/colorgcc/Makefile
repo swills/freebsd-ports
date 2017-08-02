@@ -1,5 +1,5 @@
 # Created by: Sofian Brabez <sbrabez@gmail.com>
-# $FreeBSD: head/devel/colorgcc/Makefile 446407 2017-07-22 15:26:13Z sbz $
+# $FreeBSD: head/devel/colorgcc/Makefile 446741 2017-07-27 13:57:30Z mat $
 
 PORTNAME=	colorgcc
 PORTVERSION=	1.4.4
@@ -16,7 +16,6 @@ SHEBANG_FILES=	colorgcc.pl
 USE_GITHUB=	yes
 
 GH_ACCOUNT=	olibre
-GH_PROJECT=	${PORTNAME}
 GH_TAGNAME=	d844212
 
 PLIST_FILES=	bin/${PORTNAME} \

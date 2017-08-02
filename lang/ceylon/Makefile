@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/lang/ceylon/Makefile 437107 2017-03-28 09:27:46Z lwhsu $
+# $FreeBSD: head/lang/ceylon/Makefile 447012 2017-08-01 09:01:11Z amdmi3 $
 
 PORTNAME=	ceylon
 PORTVERSION=	1.3.2
@@ -12,8 +12,8 @@ COMMENT=	Ceylon is a language for writing large programs in teams
 LICENSE=	APACHE20 GPLv2
 LICENSE_COMB=	multi
 
+USES=		zip
 NO_BUILD=	yes
-USES=	zip
 
 USE_JAVA=	yes
 JAVA_VERSION=	1.7+
@@ -23,8 +23,6 @@ PORTDATA=	*
 
 CEYLON_SCRIPTS=	ceylon ceylon-sh-setup
 CEYLON_DIRS=	contrib lib repo samples templates
-
-.include <bsd.port.pre.mk>
 
 do-install:
 	${RM} ${WRKSRC}/bin/*.bat
@@ -41,4 +39,4 @@ do-install:
 	${LN} -s ${DATADIR}/bin/${s} ${STAGEDIR}/${PREFIX}/bin/${s}
 .endfor
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

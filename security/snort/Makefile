@@ -1,13 +1,12 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/security/snort/Makefile 441484 2017-05-22 18:03:04Z dvl $
+# $FreeBSD: head/security/snort/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	snort
 PORTVERSION=	2.9.9.0
 PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	https://snort.org/downloads/snort/ \
-		http://www.talosintel.com/downloads/ \
-		http://mirrors.rit.edu/zi/
+		ZI
 
 PATCH_DIST_STRIP=	-p1
 

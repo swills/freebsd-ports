@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/jo/Makefile 427548 2016-12-02 09:21:58Z mat $
+# $FreeBSD: head/textproc/jo/Makefile 446710 2017-07-27 01:38:21Z swills $
 
 PORTNAME=	jo
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	textproc
 MASTER_SITES=	https://github.com/jpmens/${PORTNAME}/releases/download/v${PORTVERSION}/
 

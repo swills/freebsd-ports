@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/varnish-libvmod-awsrest/Makefile 444710 2017-06-30 11:44:10Z vanilla $
+# $FreeBSD: head/www/varnish-libvmod-awsrest/Makefile 447087 2017-08-02 05:12:07Z vanilla $
 
 PORTNAME=	libvmod-awsrest
 DISTVERSIONPREFIX=	v
-DISTVERSION=	51.7
+DISTVERSION=	51.8
 #DISTVERSIONSUFFIX=	-varnish40
 CATEGORIES=	www
 PKGNAMEPREFIX=	varnish-

@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/ftp/wget/Makefile 446641 2017-07-26 07:12:57Z vd $
+# $FreeBSD: head/ftp/wget/Makefile 446854 2017-07-28 21:45:20Z jkim $
 
 PORTNAME=	wget
 DISTVERSION=	1.19.1
@@ -27,6 +27,7 @@ OPTIONS_DEFINE=	DOCS IDN IPV6 MANPAGES METALINK NLS PCRE PSL
 OPTIONS_DEFAULT=DOCS IDN IPV6 MANPAGES NLS OPENSSL
 
 DOCS_DESC=	Install info page
+DOCS_CONFIGURE_ENV=	MAKEINFO="${MAKEINFO}"
 DOCS_INFO=	wget
 DOCS_USES=	makeinfo
 

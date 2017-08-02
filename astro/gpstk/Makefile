@@ -1,12 +1,10 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/astro/gpstk/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/astro/gpstk/Makefile 447064 2017-08-01 18:03:36Z tcberner $
 
 PORTNAME=	gpstk
-PORTVERSION=	2.5
-PORTREVISION=	2
+PORTVERSION=	2.9
+DISTVERSIONPREFIX=	v
 CATEGORIES=	astro devel
-MASTER_SITES=	SF
-DISTNAME=	${PORTNAME}-${PORTVERSION}.src
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Toolkit for developing GPS applications
@@ -17,8 +15,8 @@ USES=		cmake:outsource python:run
 USE_GCC=	yes
 USE_LDCONFIG=	yes
 
-CMAKE_SOURCE_PATH=	${WRKSRC}/dev
-
-EXTRACT_AFTER_ARGS=	--exclude .git
+USE_GITHUB=	yes
+GH_ACCOUNT=	SGL-UT
+GH_PROJECT=	GPSTk
 
 .include <bsd.port.mk>

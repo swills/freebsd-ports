@@ -1,5 +1,5 @@
 # Created by: erik@smluc.org
-# $FreeBSD: head/lang/qscheme/Makefile 444469 2017-06-27 15:34:17Z tobik $
+# $FreeBSD: head/lang/qscheme/Makefile 446847 2017-07-28 18:58:24Z ultima $
 
 PORTNAME=	qscheme
 PORTVERSION=	0.5.1
@@ -12,7 +12,7 @@ COMMENT=	Small and fast Scheme interpreter
 
 LICENSE=	GPLv2
 
-LIB_DEPENDS=	libavcall.so:devel/ffcall \
+LIB_DEPENDS=	libavcall.so:devel/libffcall \
 		libgmp.so:math/gmp \
 		libpcre.so:devel/pcre
 

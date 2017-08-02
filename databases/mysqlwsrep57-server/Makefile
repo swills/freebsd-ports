@@ -1,8 +1,9 @@
 # Created by: Vasil Dimov <vd@FreeBSD.org>
-# $FreeBSD: head/databases/mysqlwsrep57-server/Makefile 446133 2017-07-18 10:15:59Z vd $
+# $FreeBSD: head/databases/mysqlwsrep57-server/Makefile 446741 2017-07-27 13:57:30Z mat $
 
 PORTNAME=	mysqlwsrep
 PORTVERSION?=	5.7.18
+DISTVERSIONPREFIX?=	wsrep_
 DISTVERSIONSUFFIX?=	-25.12
 PORTREVISION?=	1
 CATEGORIES=	databases ipv6
@@ -41,7 +42,6 @@ MY_TMPDIR=	/var/db/mysql_tmpdir
 USE_GITHUB=	yes
 GH_ACCOUNT=	codership
 GH_PROJECT?=	mysql-wsrep
-GH_TAGNAME?=	wsrep_${DISTVERSION}${DISTVERSIONSUFFIX}
 
 DATADIR=	${PREFIX}/share/mysql
 ETCDIR=		${PREFIX}/etc/mysql

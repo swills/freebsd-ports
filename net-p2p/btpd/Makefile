@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/btpd/Makefile 421756 2016-09-10 23:28:48Z marino $
+# $FreeBSD: head/net-p2p/btpd/Makefile 446741 2017-07-27 13:57:30Z mat $
 
 PORTNAME=	btpd
 PORTVERSION=	0.16
@@ -13,7 +13,6 @@ LICENSE=	BSD2CLAUSE BSD3CLAUSE
 LICENSE_COMB=	multi
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	${PORTNAME}
 
 USES=		autoreconf ssl
 GNU_CONFIGURE=	yes

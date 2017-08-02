@@ -1,8 +1,8 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/sysutils/cloudabi-utils/Makefile 444111 2017-06-22 12:37:35Z ed $
+# $FreeBSD: head/sysutils/cloudabi-utils/Makefile 446996 2017-07-31 19:57:58Z ed $
 
 PORTNAME=	cloudabi-utils
-PORTVERSION=	0.25
+PORTVERSION=	0.26
 DISTVERSIONPREFIX=v
 CATEGORIES=	sysutils
 

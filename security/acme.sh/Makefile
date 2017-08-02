@@ -1,9 +1,7 @@
-# $FreeBSD: head/security/acme.sh/Makefile 444990 2017-07-03 22:22:04Z dvl $
+# $FreeBSD: head/security/acme.sh/Makefile 446668 2017-07-26 17:18:57Z dvl $
 
 PORTNAME=	acme.sh
-PORTVERSION=	2.6.9
-DISTVERSIONPREFIX=	v
-PORTREVISION=	3
+PORTVERSION=	2.7.2
 CATEGORIES=	security
 
 MAINTAINER=	dvl@FreeBSD.org

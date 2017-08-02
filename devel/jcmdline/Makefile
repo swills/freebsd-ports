@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/devel/jcmdline/Makefile 406502 2016-01-17 14:04:20Z amdmi3 $
+# $FreeBSD: head/devel/jcmdline/Makefile 446794 2017-07-28 01:24:22Z dbaio $
 
 PORTNAME=	jcmdline
 PORTVERSION=	2.0.0
@@ -9,7 +9,7 @@ MASTER_SITES=	SF
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Java command line processor
 
-LICENSE=	MPL
+LICENSE=	MPL11
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_JAVA=	yes

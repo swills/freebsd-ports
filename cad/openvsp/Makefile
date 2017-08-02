@@ -1,8 +1,8 @@
 # Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/cad/openvsp/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/cad/openvsp/Makefile 446855 2017-07-28 21:45:44Z rakuco $
 
 PORTNAME=	openvsp
-PORTVERSION=	3.12.1
+PORTVERSION=	3.13.0
 DISTVERSIONPREFIX=	${GH_PROJECT}_
 CATEGORIES=	cad
 
@@ -33,6 +33,13 @@ GH_ACCOUNT=	${GH_PROJECT}
 CMAKE_SOURCE_PATH=	${WRKSRC}/SuperProject
 CMAKE_INSTALL_PREFIX=	${STAGEDIR}${PREFIX}
 USES=		cmake:outsource,noninja compiler:gcc-c++11-lib jpeg
+
+# On FreeBSD < 11 libc++ lacks support for sized delete operators.
+# GCC dropped the builtin version of these operators in 6+ by
+# defaulting to gnu++14. Force c++11 instead.
+# For a more detailed discussion see:
+# https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=219484
+USE_CXXSTD=	gnu++11
 
 CMAKE_ARGS=	-DVSP_USE_SYSTEM_CMINPACK:BOOLEAN=yes \
 		-DVSP_USE_SYSTEM_CPPTEST:BOOLEAN=yes \

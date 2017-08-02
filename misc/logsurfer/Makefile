@@ -1,11 +1,11 @@
 # Created by: shanee@augusta.de
-# $FreeBSD: head/misc/logsurfer/Makefile 395483 2015-08-28 13:39:56Z amdmi3 $
+# $FreeBSD: head/misc/logsurfer/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	logsurfer
 PORTVERSION=	1.8
 CATEGORIES=	misc
 MASTER_SITES=	http://www.crypt.gen.nz/logsurfer/ \
-		http://mirrors.rit.edu/zi/
+		ZI
 
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Process logfiles and conditionally perform certain actions

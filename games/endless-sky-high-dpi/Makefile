@@ -1,11 +1,10 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/endless-sky-high-dpi/Makefile 435158 2017-03-01 14:50:13Z amdmi3 $
+# $FreeBSD: head/games/endless-sky-high-dpi/Makefile 446741 2017-07-27 13:57:30Z mat $
 
-PORTNAME=	high-dpi
+PORTNAME=	endless-sky-high-dpi
 PORTVERSION=	0.9.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
-PKGNAMEPREFIX=	endless-sky-
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	High-DPI graphics for Endless Sky
@@ -17,7 +16,6 @@ RUN_DEPENDS=	endless-sky:games/endless-sky
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	endless-sky
-GH_PROJECT=	endless-sky-${PORTNAME}
 
 DATADIR=	${PREFIX}/share/endless-sky/plugins/${PORTNAME}
 

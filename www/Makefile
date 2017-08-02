@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 446554 2017-07-25 02:16:05Z tj $
+# $FreeBSD: head/www/Makefile 446988 2017-07-31 17:42:33Z rene $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -486,6 +486,7 @@
     SUBDIR += mod_rpaf2
     SUBDIR += mod_scgi
     SUBDIR += mod_security
+    SUBDIR += mod_security-devel
     SUBDIR += mod_setenvifplus
     SUBDIR += mod_spdy
     SUBDIR += mod_tidy
@@ -1667,6 +1668,7 @@
     SUBDIR += py-horizon
     SUBDIR += py-hpack
     SUBDIR += py-html
+    SUBDIR += py-html5-parser
     SUBDIR += py-html5lib
     SUBDIR += py-http-parser
     SUBDIR += py-httpie
@@ -2009,7 +2011,6 @@
     SUBDIR += rubygem-jquery-scrollto-rails
     SUBDIR += rubygem-jquery-turbolinks
     SUBDIR += rubygem-jquery-ui-rails-rails4
-    SUBDIR += rubygem-jquery-ui-rails5-rails4
     SUBDIR += rubygem-jruby-rack
     SUBDIR += rubygem-jsobfu
     SUBDIR += rubygem-json-jwt

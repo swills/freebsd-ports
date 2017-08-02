@@ -1,7 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/security/proftpd-mod_clamav/Makefile 413683 2016-04-20 12:18:21Z mm $
+# $FreeBSD: head/security/proftpd-mod_clamav/Makefile 446741 2017-07-27 13:57:30Z mat $
 
 PORTNAME=	mod_clamav
+DISTVERSIONPREFIX=	v
 DISTVERSION=	0.14rc2
 PORTREVISION=	0
 CATEGORIES=	security ftp
@@ -16,7 +17,6 @@ DESCR=		${.CURDIR}/pkg-descr
 
 MASTERDIR=	${.CURDIR}/../../ftp/proftpd
 
-GH_TAGNAME=	v${DISTVERSION}
 GIT_REVISION=	c8586c7
 
 RUN_DEPENDS+=	clamd:security/clamav

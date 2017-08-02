@@ -1,9 +1,8 @@
 # Created by: brix@FreeBSD.org
-# $FreeBSD: head/devel/p5-Class-Mix/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Class-Mix/Makefile 446964 2017-07-31 15:49:20Z sunpoet $
 
 PORTNAME=	Class-Mix
-PORTVERSION=	0.005
-PORTREVISION=	3
+PORTVERSION=	0.006
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

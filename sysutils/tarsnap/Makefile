@@ -1,8 +1,8 @@
 # Created by: Colin Percival
-# $FreeBSD: head/sysutils/tarsnap/Makefile 445984 2017-07-16 04:08:52Z cperciva $
+# $FreeBSD: head/sysutils/tarsnap/Makefile 446863 2017-07-29 04:00:56Z cperciva $
 
 PORTNAME=	tarsnap
-PORTVERSION=	1.0.38
+PORTVERSION=	1.0.39
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.tarsnap.com/download-http/
 DISTNAME=	${PORTNAME}-autoconf-${PORTVERSION}

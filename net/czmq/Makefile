@@ -1,5 +1,5 @@
 # Created by: Andrew Thompson <thompsa@FreeBSD.org>
-# $FreeBSD: head/net/czmq/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/czmq/Makefile 446788 2017-07-28 01:17:23Z dbaio $
 
 PORTNAME=	czmq
 PORTVERSION=	3.0.2
@@ -10,7 +10,7 @@ MASTER_SITES=	http://download.zeromq.org/
 MAINTAINER=	koobs@FreeBSD.org
 COMMENT=	High-level C Binding for ZeroMQ
 
-LICENSE=	MPL
+LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libzmq.so:net/libzmq4

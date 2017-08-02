@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 444553 2017-06-28 08:59:02Z loader $
+# $FreeBSD: head/mail/Makefile 446994 2017-07-31 19:39:07Z rene $
 #
 
     COMMENT = Electronic mail utilities
@@ -96,12 +96,7 @@
     SUBDIR += dkimproxy
     SUBDIR += dma
     SUBDIR += dot-forward
-    SUBDIR += dovecot
-    SUBDIR += dovecot-antispam
-    SUBDIR += dovecot-managesieve
-    SUBDIR += dovecot-sieve
     SUBDIR += dovecot2
-    SUBDIR += dovecot2-antispam-plugin
     SUBDIR += dovecot2-pigeonhole
     SUBDIR += drac
     SUBDIR += dracmail
@@ -325,6 +320,7 @@
     SUBDIR += p5-Email-Address
     SUBDIR += p5-Email-Address-List
     SUBDIR += p5-Email-Address-Loose
+    SUBDIR += p5-Email-Address-XS
     SUBDIR += p5-Email-AddressParser
     SUBDIR += p5-Email-Date
     SUBDIR += p5-Email-Date-Format

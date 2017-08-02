@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/bugzilla50/Makefile 415462 2016-05-18 19:12:04Z ohauer $
+# $FreeBSD: head/devel/bugzilla50/Makefile 446705 2017-07-27 00:22:25Z dbaio $
 
 PORTNAME=	bugzilla
 PORTVERSION=	5.0.3
@@ -8,7 +8,8 @@ MASTER_SITES=	MOZILLA/webtools MOZILLA/webtools/archived
 MAINTAINER=	bz-ports@FreeBSD.org
 COMMENT=	Bug-tracking system developed by Mozilla Project
 
-LICENSE=	MPL
+LICENSE=	MPL20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 # see Bugzilla/Install/Requirements.pm
 # PR 194782: silence Module::Pluggable deprecated warnings

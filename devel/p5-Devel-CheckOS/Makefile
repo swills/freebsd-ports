@@ -1,8 +1,8 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/devel/p5-Devel-CheckOS/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Devel-CheckOS/Makefile 446764 2017-07-27 16:48:52Z culot $
 
 PORTNAME=	Devel-CheckOS
-PORTVERSION=	1.76
+PORTVERSION=	1.80
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

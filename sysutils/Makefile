@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 446527 2017-07-24 15:26:58Z swills $
+# $FreeBSD: head/sysutils/Makefile 446994 2017-07-31 19:39:07Z rene $
 #
 
     COMMENT = System utilities
@@ -52,6 +52,7 @@
     SUBDIR += asmon
     SUBDIR += asusoled
     SUBDIR += ataidle
+    SUBDIR += atf-allwinner
     SUBDIR += atitvout
     SUBDIR += atop
     SUBDIR += auto-admin
@@ -316,7 +317,6 @@
     SUBDIR += flog
     SUBDIR += flowgger
     SUBDIR += fluent-bit
-    SUBDIR += flyback
     SUBDIR += fonteditfs
     SUBDIR += foremost
     SUBDIR += fortunelock
@@ -962,7 +962,6 @@
     SUBDIR += rsyncrypto
     SUBDIR += rsyslog8
     SUBDIR += rtty
-    SUBDIR += rubygem-SyslogLogger
     SUBDIR += rubygem-backup
     SUBDIR += rubygem-bosh-gen
     SUBDIR += rubygem-bosh_cli
@@ -973,6 +972,7 @@
     SUBDIR += rubygem-capistrano-harrow
     SUBDIR += rubygem-chef
     SUBDIR += rubygem-chef-api
+    SUBDIR += rubygem-chef-config
     SUBDIR += rubygem-chef-zero
     SUBDIR += rubygem-facter
     SUBDIR += rubygem-fluent-mixin-plaintextformatter
@@ -1010,7 +1010,6 @@
     SUBDIR += rubygem-ohai
     SUBDIR += rubygem-parallel
     SUBDIR += rubygem-puppet_forge
-    SUBDIR += rubygem-puppet_forge1
     SUBDIR += rubygem-r10k
     SUBDIR += rubygem-rubyipmi
     SUBDIR += rubygem-serverspec

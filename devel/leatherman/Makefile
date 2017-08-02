@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/leatherman/Makefile 446262 2017-07-20 15:30:52Z romain $
+# $FreeBSD: head/devel/leatherman/Makefile 446768 2017-07-27 17:41:30Z romain $
 
 PORTNAME=	leatherman
-PORTVERSION=	0.10.1
+PORTVERSION=	1.0.0
 PORTREVISION=	1
 CATEGORIES=	devel
 
@@ -19,10 +19,11 @@ BROKEN_powerpc64=	fails to compile: cc1plus: error: unrecognized command line op
 USE_GITHUB=	yes
 GH_ACCOUNT=	puppetlabs
 
-USES=		cmake
+USES=		cmake gettext
 USE_RUBY=	yes
 CMAKE_ARGS=	-DLEATHERMAN_SHARED:BOOL=ON
 USE_LDCONFIG=	yes
+TEST_TARGET=	test
 
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
 

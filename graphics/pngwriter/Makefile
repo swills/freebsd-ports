@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/pngwriter/Makefile 441468 2017-05-22 16:04:19Z linimon $
+# $FreeBSD: head/graphics/pngwriter/Makefile 446741 2017-07-27 13:57:30Z mat $
 
 PORTNAME=	pngwriter
 PORTVERSION=	0.6.0
@@ -21,7 +21,6 @@ BROKEN_powerpc64=	fails to build: ios_base.h: 'std::ios_base::ios_base(const std
 USES=		cmake:outsource
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
-GH_ACCOUNT=	${PORTNAME}
 
 PLIST_FILES=	include/pngwriter.h \
 		lib/libpngwriter.a \

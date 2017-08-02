@@ -1,8 +1,9 @@
 # Created by: Glenn Johnson <glennpj@charter.net>
-# $FreeBSD: head/finance/libofx/Makefile 437539 2017-04-02 09:42:48Z bapt $
+# $FreeBSD: head/finance/libofx/Makefile 446957 2017-07-31 13:07:22Z jhale $
 
 PORTNAME=	libofx
 PORTVERSION=	0.9.11
+PORTREVISION=	1
 CATEGORIES=	finance
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}
 

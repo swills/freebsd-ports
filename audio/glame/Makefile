@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/audio/glame/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/audio/glame/Makefile 446854 2017-07-28 21:45:20Z jkim $
 
 PORTNAME=	glame
 PORTVERSION=	2.0.1
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libmp3lame.so:audio/lame \
 		libguile.so:lang/guile
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	MAKEINFO="makeinfo --no-split"
+CONFIGURE_ENV=	MAKEINFO="${MAKEINFO} --no-split"
 USES=		gettext gmake pathfix pkgconfig libtool makeinfo
 USE_GNOME=	gnomeprefix libgnomeui
 USE_XORG=	xbitmaps x11

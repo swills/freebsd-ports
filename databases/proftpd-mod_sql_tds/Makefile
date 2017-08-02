@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/databases/proftpd-mod_sql_tds/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/proftpd-mod_sql_tds/Makefile 446747 2017-07-27 15:25:30Z mm $
 
 PORTNAME=	mod_sql_tds
 DISTVERSION=	4.13
@@ -29,5 +29,10 @@ _BUILDING_PROFTPD_MODULE=	${PORTNAME}
 
 post-extract:
 	@${MV} ${WRKDIR}/mod_sql_tds.c ${WRKSRC}/contrib
+
+post-patch:
+	@${REINPLACE_CMD} -e 's| ERROR_MSG| PR_ERROR_MSG|g' \
+		-e 's| HANDLED| PR_HANDLED|g' \
+		${WRKSRC}/contrib/mod_sql_tds.c
 
 .include "${MASTERDIR}/Makefile"

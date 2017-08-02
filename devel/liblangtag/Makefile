@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/liblangtag/Makefile 434587 2017-02-22 15:02:18Z bapt $
+# $FreeBSD: head/devel/liblangtag/Makefile 446787 2017-07-28 01:16:15Z dbaio $
 
 PORTNAME=	liblangtag
 PORTVERSION=	0.6.2
@@ -9,7 +9,7 @@ MASTER_SITES=	https://bitbucket.org/tagoh/liblangtag/downloads/ \
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Interface library to access tags for identifying languages
 
-LICENSE=	LGPL3 MPL
+LICENSE=	LGPL3 MPL20
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libxml2.so:textproc/libxml2

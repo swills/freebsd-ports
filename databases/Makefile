@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 446629 2017-07-25 21:11:02Z jrm $
+# $FreeBSD: head/databases/Makefile 446935 2017-07-30 14:18:29Z pi $
 #
 
     COMMENT = Databases and related software
@@ -97,7 +97,8 @@
     SUBDIR += gomdb
     SUBDIR += gosqlite3
     SUBDIR += gqlplus
-    SUBDIR += grass
+    SUBDIR += grass6
+    SUBDIR += grass7
     SUBDIR += gtksql
     SUBDIR += hamsterdb
     SUBDIR += hashtypes
@@ -567,6 +568,7 @@
     SUBDIR += percona57-server
     SUBDIR += pg_activity
     SUBDIR += pg_citus
+    SUBDIR += pg_dirtyread
     SUBDIR += pg_qualstats
     SUBDIR += pg_reorg
     SUBDIR += pg_repack

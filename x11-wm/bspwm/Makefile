@@ -1,8 +1,8 @@
-# Created by: Anton Törnqvist <antont@inbox.lv>
-# $FreeBSD: head/x11-wm/bspwm/Makefile 425130 2016-11-02 10:03:34Z jbeich $
+# Created by: Anton Tornqvist <antont@inbox.lv>
+# $FreeBSD: head/x11-wm/bspwm/Makefile 446845 2017-07-28 18:39:26Z ultima $
 
 PORTNAME=	bspwm
-PORTVERSION=	0.9.2
+PORTVERSION=	0.9.3
 CATEGORIES=	x11-wm
 
 MAINTAINER=	gor@clogic.com.ua
@@ -11,14 +11,17 @@ COMMENT=	Tiling window manager based on binary space partitioning
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	libxcb-icccm.so:x11/xcb-util-wm \
+LIB_DEPENDS=	libxcb-util.so:x11/xcb-util \
+		libxcb-icccm.so:x11/xcb-util-wm \
 		libxcb-keysyms.so:x11/xcb-util-keysyms
 RUN_DEPENDS=	sxhkd:x11/sxhkd
 
+USES=		gmake pkgconfig
+
+USE_XORG=	xcb
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	baskerville
-
-USES=		gmake pkgconfig
 
 SUB_FILES=	pkg-message
 

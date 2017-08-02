@@ -1,11 +1,11 @@
 # Created by: Peter Pentchev <roam@FreeBSD.org>
-# $FreeBSD: head/security/apg/Makefile 425174 2016-11-02 22:45:14Z mat $
+# $FreeBSD: head/security/apg/Makefile 447026 2017-08-01 16:09:06Z matthew $
 
 PORTNAME=	apg
 PORTVERSION=	2.3.0b
 PORTREVISION=	5
 CATEGORIES=	security
-MASTER_SITES=	http://www.adel.nursat.kz/apg/download/
+MASTER_SITES=	LOCAL/matthew
 
 MAINTAINER=	matthew@FreeBSD.org
 COMMENT=	Automated password generator

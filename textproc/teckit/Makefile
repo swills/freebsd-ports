@@ -1,20 +1,22 @@
 # Created by: Nikola Lecic <nikola.lecic@anthesphoria.net>
-# $FreeBSD: head/textproc/teckit/Makefile 428144 2016-12-08 17:40:41Z tijl $
+# $FreeBSD: head/textproc/teckit/Makefile 446809 2017-07-28 07:02:16Z sunpoet $
 
 PORTNAME=	teckit
-PORTVERSION=	2.5.1
-PORTREVISION=	2
+PORTVERSION=	2.5.7
+DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc converters
-MASTER_SITES=	http://scripts.sil.org/svn-view/teckit/TAGS/ \
-		http://anthesphoria.net/FreeBSD/ports/distfiles/
-DISTNAME=	TECkit_${PORTVERSION:S|.|_|g}
 
 MAINTAINER=	nikola.lecic@anthesphoria.net
 COMMENT=	Toolkit for converting data between 8-bit legacy encodings and Unicode
 
+LICENSE=	LGPL21+
+LICENSE_FILE=	${WRKSRC}/license/LICENSING.txt
+
 LIB_DEPENDS=	libexpat.so:textproc/expat2
 
-USES=		libtool
+USES=		autoreconf libtool pkgconfig
+USE_GITHUB=	yes
+GH_ACCOUNT=	silnrsi
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
@@ -25,10 +27,7 @@ DOCS=		AUTHORS README NEWS docs/*.pdf license/LICENSING.txt
 
 OPTIONS_DEFINE=	DOCS
 
-post-patch:
-	${CHMOD} ${BINMODE} ${WRKSRC}/configure ${WRKSRC}/install-sh
-
-post-install:
+post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${DOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 

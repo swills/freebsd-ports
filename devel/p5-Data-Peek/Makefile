@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Data-Peek/Makefile 427552 2016-12-02 11:58:21Z mat $
+# $FreeBSD: head/devel/p5-Data-Peek/Makefile 446679 2017-07-26 18:20:30Z sunpoet $
 
 PORTNAME=	Data-Peek
-PORTVERSION=	0.46
+PORTVERSION=	0.47
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

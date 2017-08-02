@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/libmatheval/Makefile 430235 2017-01-01 03:45:12Z sunpoet $
+# $FreeBSD: head/devel/libmatheval/Makefile 446854 2017-07-28 21:45:20Z jkim $
 
 PORTNAME=	libmatheval
 PORTVERSION=	1.1.11
@@ -14,7 +14,7 @@ BUILD_DEPENDS=	flex>=2.5.39_1:textproc/flex
 LIB_DEPENDS=	libguile.so:lang/guile
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	LEXLIB=-lfl_pic MAKEINFO="makeinfo --no-split"
+CONFIGURE_ENV=	LEXLIB=-lfl_pic MAKEINFO="${MAKEINFO} --no-split"
 USE_LDCONFIG=	yes
 USES=		libtool localbase makeinfo pathfix
 INSTALL_TARGET=	install-strip

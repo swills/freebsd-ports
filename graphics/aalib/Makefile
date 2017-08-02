@@ -1,5 +1,5 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/graphics/aalib/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/graphics/aalib/Makefile 446854 2017-07-28 21:45:20Z jkim $
 
 PORTNAME=	aalib
 DISTVERSION=	1.4rc5
@@ -38,7 +38,7 @@ post-extract:
 post-patch:
 	@${RM} ${WRKSRC}/config.cache
 	@${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|g; \
-		s|MAKEINFO=makeinfo|MAKEINFO="makeinfo --no-split"|g' \
+		s|MAKEINFO=makeinfo|MAKEINFO="${MAKEINFO} --no-split"|g' \
 		${WRKSRC}/configure
 	@${REINPLACE_CMD} \
 		-e 's|AC_DEFUN(AM_PATH_AALIB|AC_DEFUN([AM_PATH_AALIB]|g' \

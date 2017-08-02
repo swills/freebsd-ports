@@ -1,5 +1,5 @@
 # Created by: Mark A. Wicks <mwicks@kettering.edu>
-# $FreeBSD: head/devel/monotone/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/devel/monotone/Makefile 446854 2017-07-28 21:45:20Z jkim $
 
 PORTNAME=	monotone
 PORTVERSION=	1.1
@@ -25,7 +25,7 @@ USES=		cpe gmake iconv localbase lua:51 makeinfo perl5 \
 USE_PERL5=	build
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	MAKEINFO="makeinfo --no-split"
+CONFIGURE_ENV=	MAKEINFO="${MAKEINFO} --no-split"
 
 INFO=		monotone
 PORTDOCS=	*

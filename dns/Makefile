@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 446619 2017-07-25 19:46:46Z jrm $
+# $FreeBSD: head/dns/Makefile 446662 2017-07-26 16:44:40Z dvl $
 #
 
     COMMENT = Domain Name Service tools
@@ -105,6 +105,7 @@
     SUBDIR += noip
     SUBDIR += nsd
     SUBDIR += nslint
+    SUBDIR += nsnotifyd
     SUBDIR += nsping
     SUBDIR += nss_mdns
     SUBDIR += nss_resinit

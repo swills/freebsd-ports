@@ -1,5 +1,5 @@
 # Created by: Yoichi NAKAYAMA <yoichi@FreeBSD.org>
-# $FreeBSD: head/databases/bbdb/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/databases/bbdb/Makefile 446854 2017-07-28 21:45:20Z jkim $
 
 PORTNAME=	bbdb
 PORTVERSION=	2.35
@@ -15,7 +15,7 @@ USE_EMACS=	yes
 
 USES=		makeinfo
 ALL_TARGET=	bbdb info
-MAKE_ARGS=	MAKE="${MAKE} clean MAKEINFO=\"makeinfo --no-split\""
+MAKE_ARGS=	MAKE="${MAKE} clean MAKEINFO=\"${MAKEINFO} --no-split\""
 BBDB_LISPDIR=	${EMACS_VERSION_SITE_LISPDIR}/${PORTNAME}
 PLIST_SUB+=	BBDB_LISPDIR=${BBDB_LISPDIR}
 MAKE_JOBS_UNSAFE=	yes

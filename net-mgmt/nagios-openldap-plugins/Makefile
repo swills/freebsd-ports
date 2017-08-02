@@ -1,12 +1,12 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/nagios-openldap-plugins/Makefile 443763 2017-06-17 10:02:47Z sunpoet $
+# $FreeBSD: head/net-mgmt/nagios-openldap-plugins/Makefile 447034 2017-08-01 17:07:58Z zi $
 
 PORTNAME=	openldap-plugins
 PORTVERSION=	0.5
 PORTREVISION=	1
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://tools.ltb-project.org/attachments/download/629/ \
-		http://mirrors.rit.edu/zi/
+		ZI
 PKGNAMEPREFIX=	nagios-
 DISTNAME=	ltb-project-nagios-plugins-${PORTVERSION}
 

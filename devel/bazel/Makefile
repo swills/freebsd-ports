@@ -1,13 +1,13 @@
 # Created by: Klaus Aehlig <aehlig@linta.de>
-# $FreeBSD: head/devel/bazel/Makefile 445987 2017-07-16 07:15:43Z vanilla $
+# $FreeBSD: head/devel/bazel/Makefile 446868 2017-07-29 06:38:32Z lwhsu $
 
 PORTNAME=		bazel
-PORTVERSION=		0.5.2
+PORTVERSION=		0.5.3
 CATEGORIES=		devel java
 MASTER_SITES=		https://storage.googleapis.com/bazel/${PORTVERSION}/rc${FINALRC}/
 DISTNAME=		bazel-${PORTVERSION}rc${FINALRC}-dist
 
-MAINTAINER=		aehlig@linta.de
+MAINTAINER?=		aehlig@linta.de
 COMMENT=		Fast and correct build system
 
 LICENSE=		APACHE20
@@ -32,6 +32,13 @@ JAVA_VERSION=		1.8
 JAVA_BUILD=		yes
 JAVA_RUN=		yes
 
+CONFLICTS_INSTALL?=	bazel-clang38
+
+OPTIONS_DEFINE=	CLANG38
+CLANG38_DESC=	Use clang38 as default crosstool
+CLANG38_BUILD_DEPENDS=	clang38:devel/llvm38
+CLANG38_RUN_DEPENDS=	clang38:devel/llvm38
+
 # Have the location of the system-wide rc file reside ${ETCDIR}.
 # Also adapt the sample file to disable persistent java workers as they
 # do not work reliably on FreeBSD.
@@ -40,6 +47,10 @@ post-patch:
 	-e "s|\"/etc/bazel.bazelrc\"|\"${ETCDIR}/bazel.bazelrc\"|" \
 	${WRKSRC}/src/main/cpp/blaze_util_posix.cc
 	@${ECHO_CMD} build --strategy=Javac=standalone >> ${WRKSRC}/scripts/packages/debian/bazel.bazelrc
+
+post-patch-CLANG38-on:
+	@${REINPLACE_CMD} -e 's=/usr/lib/clang=${LOCALBASE}/llvm38/lib/clang=' \
+	-e 's=/usr/bin/clang=${LOCALBASE}/bin/clang38=' ${WRKSRC}/tools/cpp/CROSSTOOL
 
 do-build:
 	@${MKDIR} ${WRKDIR}/bazel_tmp

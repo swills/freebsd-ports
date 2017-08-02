@@ -1,8 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/cad/linuxcnc-devel/Makefile 446574 2017-07-25 12:21:44Z trasz $
+# $FreeBSD: head/cad/linuxcnc-devel/Makefile 446776 2017-07-27 19:58:48Z trasz $
 
 PORTNAME=	linuxcnc
 PORTVERSION=	20170708
+PORTREVISION=	1
 CATEGORIES=	cad
 PKGNAMESUFFIX=	-devel
 
@@ -59,7 +60,8 @@ post-patch:
 			-e 's|#!.*/bin/bash|#!${LOCALBASE}/bin/bash|' \
 			-e 's|#!.*/usr/bin/tclsh|#!${LOCALBASE}/bin/tclsh8.6|' \
 			-e 's|#!.*/usr/bin/wish|#!${LOCALBASE}/bin/wish8.6|' \
-			-e 's|#!.*/usr/bin/python|#!${LOCALBASE}/bin/env python2|' \
-			-e 's|#!.*/usr/bin/env python|#!/usr/bin/env python2|'
+			-e 's|#!.*/usr/bin/env python|#!/usr/bin/env python2|' \
+			-e 's|#!.*/usr/bin/python|#!/usr/bin/env python2|' \
+			-e 's|lib/tcltk|lib/tcllib|'
 
 .include <bsd.port.mk>

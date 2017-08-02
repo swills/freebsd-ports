@@ -1,8 +1,8 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Devel-GlobalDestruction-XS/Makefile 399892 2015-10-21 08:17:38Z culot $
+# $FreeBSD: head/devel/p5-Devel-GlobalDestruction-XS/Makefile 446817 2017-07-28 11:03:12Z culot $
 
 PORTNAME=	Devel-GlobalDestruction-XS
-PORTVERSION=	0.02
+PORTVERSION=	0.03
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -15,5 +15,8 @@ LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	configure
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Devel/GlobalDestruction/XS/XS.so
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 446569 2017-07-25 10:22:17Z amdmi3 $
+# $FreeBSD: head/games/Makefile 446994 2017-07-31 19:39:07Z rene $
 #
 
     COMMENT = Games and related software
@@ -385,7 +385,6 @@
     SUBDIR += goldencheetah
     SUBDIR += golly
     SUBDIR += gomoku
-    SUBDIR += gondola
     SUBDIR += goonies
     SUBDIR += gottet
     SUBDIR += gracer

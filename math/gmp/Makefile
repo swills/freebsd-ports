@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/math/gmp/Makefile 434009 2017-02-13 17:39:41Z ale $
+# $FreeBSD: head/math/gmp/Makefile 446854 2017-07-28 21:45:20Z jkim $
 
 PORTNAME=	gmp
 PORTVERSION=	6.1.2
@@ -16,7 +16,7 @@ CPU_OPTS_DESC=	Enable assembly optimizations for your CPU
 
 USES=		libtool makeinfo tar:xz
 HAS_CONFIGURE=	yes
-CONFIGURE_ENV=	MAKEINFO="makeinfo --no-split"
+CONFIGURE_ENV=	MAKEINFO="${MAKEINFO} --no-split"
 CONFIGURE_ARGS=	--prefix=${PREFIX} \
 		--infodir=${PREFIX}/info \
 		--mandir=${PREFIX}/man \
