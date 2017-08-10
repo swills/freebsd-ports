@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-base64-bytestring/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/devel/hs-base64-bytestring/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	base64-bytestring
 PORTVERSION=	1.0.0.1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

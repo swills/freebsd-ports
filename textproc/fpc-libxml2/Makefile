@@ -1,10 +1,9 @@
 # Created by: Christoper Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/textproc/fpc-libxml2/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/fpc-libxml2/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	textproc lang
 PKGNAMESUFFIX=	-libxml2
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Interface to xml2 library
 
 USE_FPC=	rtl-objpas

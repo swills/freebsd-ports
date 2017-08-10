@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/devel/rubygem-coffee-rails-rails50/Makefile 441633 2017-05-25 01:36:28Z jrm $
+# $FreeBSD: head/devel/rubygem-coffee-rails-rails50/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	coffee-rails
 PORTVERSION=	4.2.2
@@ -7,7 +7,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Coffee Script adapter for the Rails asset pipeline
 
 LICENSE=	MIT

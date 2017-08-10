@@ -1,8 +1,8 @@
 # Created by: Nikolai Lifanov <lifanov@mail.lifanov.com>
-# $FreeBSD: head/games/hs-scroll/Makefile 415501 2016-05-19 10:57:35Z amdmi3 $
+# $FreeBSD: head/games/hs-scroll/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	scroll
-PORTVERSION=	1.20151219
+PORTVERSION=	1.20170122
 CATEGORIES=	games haskell
 
 MAINTAINER=	haskell@FreeBSD.org

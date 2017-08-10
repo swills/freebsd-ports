@@ -1,13 +1,13 @@
 # Created by: Joris Vandalon
-# $FreeBSD: head/sysutils/fusefs-rar2fs/Makefile 437908 2017-04-06 23:54:37Z jhale $
+# $FreeBSD: head/sysutils/fusefs-rar2fs/Makefile 447278 2017-08-03 19:39:46Z jhale $
 
 PORTNAME=	rar2fs
-PORTVERSION=	1.24.0
+PORTVERSION=	1.25.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 PKGNAMEPREFIX=	fusefs-
 
-MAINTAINER=	jhale@FreeBSD.org
+MAINTAINER=	n_carlsson@outlook.com
 COMMENT=	Mount rar archives as filesystem
 
 LICENSE=	GPLv3+
@@ -22,7 +22,8 @@ GH_ACCOUNT=	hasse69
 USES=		autoreconf execinfo gmake fuse
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-fuse-lib=${LOCALBASE}/lib \
+CONFIGURE_ARGS=	--disable-static-unrar \
+		--with-fuse-lib=${LOCALBASE}/lib \
 		--with-fuse=${LOCALBASE}/include/fuse \
 		--with-unrar=`${MAKE} -C ${PORTSDIR}/${LIBUNRAR_PORT} -VWRKSRC` \
 		--with-unrar-lib=${LOCALBASE}/lib

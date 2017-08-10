@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-html5-parser/Makefile 446984 2017-07-31 16:22:20Z madpilot $
+# $FreeBSD: head/www/py-html5-parser/Makefile 447294 2017-08-03 22:32:53Z madpilot $
 
 PORTNAME=	html5-parser
-PORTVERSION=	0.4.3
+PORTVERSION=	0.4.4
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

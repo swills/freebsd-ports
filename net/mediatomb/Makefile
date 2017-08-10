@@ -1,5 +1,5 @@
 # Created by: Leonhard Wimmer <leo@mediatomb.cc>
-# $FreeBSD: head/net/mediatomb/Makefile 446936 2017-07-30 14:34:27Z kwm $
+# $FreeBSD: head/net/mediatomb/Makefile 447398 2017-08-05 10:56:37Z rakuco $
 
 PORTNAME=	mediatomb
 PORTVERSION=	0.12.1
@@ -22,6 +22,12 @@ CONFIGURE_ARGS=	--with-search="${LOCALBASE}" \
 CONFIGURE_ENV=	PTHREAD_LIBS="-lpthread"
 USES=		compiler:gcc-c++11-lib iconv localbase:ldflags
 USE_RC_SUBR=	mediatomb
+
+# Workaround for FreeBSD 10, whose libc++ does not have an overload for C++14's
+# `operator delete(void*, size_t)'. Since GCC 6 uses -std=gnu++14 by default,
+# linking fails when a dependency (such as taglib) is built with clang and
+# lacking the overload. FreeBSD >= 11 is fine.
+USE_CXXSTD=	gnu++11
 
 USERS=		mediatomb
 GROUPS=		${USERS}

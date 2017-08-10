@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-ReadArgs/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/devel/hs-ReadArgs/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	ReadArgs
-PORTVERSION=	1.2.2
+PORTVERSION=	1.2.3
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

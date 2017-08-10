@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-pandocfilters/Makefile 431020 2017-01-09 19:12:51Z antoine $
+# $FreeBSD: head/textproc/py-pandocfilters/Makefile 447566 2017-08-08 18:58:01Z sunpoet $
 
 PORTNAME=	pandocfilters
-PORTVERSION=	1.4.1
+PORTVERSION=	1.4.2
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,8 +12,8 @@ COMMENT=	Utilities for writing pandoc filters in python
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		python
-USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
+USES=		python
+USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

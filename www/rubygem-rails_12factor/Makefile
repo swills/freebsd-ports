@@ -1,11 +1,11 @@
-# $FreeBSD: head/www/rubygem-rails_12factor/Makefile 438524 2017-04-14 15:48:56Z jrm $
+# $FreeBSD: head/www/rubygem-rails_12factor/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	rails_12factor
 PORTVERSION=	0.0.3
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Run Rails the 12factor way
 
 LICENSE=	MIT

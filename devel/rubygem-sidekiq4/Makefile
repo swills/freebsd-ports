@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-sidekiq4/Makefile 441029 2017-05-16 18:19:37Z sunpoet $
+# $FreeBSD: head/devel/rubygem-sidekiq4/Makefile 447646 2017-08-09 19:35:40Z sunpoet $
 
 PORTNAME=	sidekiq
 PORTVERSION=	4.2.10
@@ -17,6 +17,9 @@ RUN_DEPENDS=	rubygem-concurrent-ruby>=1.0.0:devel/rubygem-concurrent-ruby \
 		rubygem-connection_pool>=2.2:net/rubygem-connection_pool \
 		rubygem-rack-protection>=1.5.0:www/rubygem-rack-protection \
 		rubygem-redis>=3.2.1:databases/rubygem-redis
+
+DEPRECATED=	Use devel/rubygem-sidekiq instead
+EXPIRATION_DATE=2017-08-31
 
 PORTSCOUT=	limit:^4\.
 

@@ -1,5 +1,5 @@
 # Created by: Torsten Zuhlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/security/rubygem-devise-two-factor-rails5/Makefile 439626 2017-04-28 19:40:28Z jrm $
+# $FreeBSD: head/security/rubygem-devise-two-factor-rails5/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	devise-two-factor
 PORTVERSION=	3.0.0
@@ -7,7 +7,7 @@ CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Barebones two-factor authentication with Devise
 
 LICENSE=	MIT

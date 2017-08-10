@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/hs-pandoc-citeproc/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/textproc/hs-pandoc-citeproc/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	pandoc-citeproc
-PORTVERSION=	0.7.3.1
+PORTVERSION=	0.10.5.1
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

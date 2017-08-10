@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-redis-activesupport-rails50/Makefile 445605 2017-07-12 19:48:18Z jrm $
+# $FreeBSD: head/devel/rubygem-redis-activesupport-rails50/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	redis-activesupport
 PORTVERSION=	5.0.3
@@ -6,7 +6,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Redis store for ActiveSupport::Cache
 
 LICENSE=	MIT

@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/wesnoth/Makefile 442408 2017-06-02 17:43:16Z tcberner $
+# $FreeBSD: head/games/wesnoth/Makefile 447354 2017-08-04 18:56:08Z rakuco $
 
 PORTNAME=	wesnoth
 PORTVERSION=	1.12.6
@@ -78,6 +78,10 @@ NOTIFY_DESC=	Desktop notifications
 NOTIFY_LIB_DEPENDS=libdbus-1.so:devel/dbus
 NOTIFY_CMAKE_OFF=-DENABLE_NOTIFICATIONS=off
 OPENMP_DESC=	OpenMP support
+# -std=gnu++11 is necessary on FreeBSD 10, whose libc++ does not have the
+# `operator delete(void*, size_t)' overload from C++14. GCC 6 defaults to
+# --std=gnu++14, which then breaks the build (bug 219485).
+OPENMP_USE=	CXXSTD=gnu++11
 OPENMP_USES=	compiler:gcc-c++11-lib
 OPENMP_CMAKE_ON=-DENABLE_OMP=on
 RAWSOCKETS_DESC=	Use raw receiving sockets in multiplayer

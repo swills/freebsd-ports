@@ -1,8 +1,8 @@
 # Created by: Koen Martens <gmc@sonologic.nl>
-# $FreeBSD: head/dns/p5-Net-DNS-Resolver-Programmable/Makefile 445919 2017-07-15 17:25:03Z sunpoet $
+# $FreeBSD: head/dns/p5-Net-DNS-Resolver-Programmable/Makefile 447231 2017-08-03 15:31:29Z culot $
 
 PORTNAME=	Net-DNS-Resolver-Programmable
-PORTVERSION=	0.005
+PORTVERSION=	0.009
 CATEGORIES=	dns net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,7 +14,7 @@ LICENSE=	ART10 GPLv2+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Net-DNS>=0:dns/p5-Net-DNS
+BUILD_DEPENDS=	p5-Net-DNS>=0.69:dns/p5-Net-DNS
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes

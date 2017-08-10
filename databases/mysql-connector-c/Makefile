@@ -1,8 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/databases/mysql-connector-c/Makefile 440970 2017-05-15 20:04:50Z bofh $
+# $FreeBSD: head/databases/mysql-connector-c/Makefile 447378 2017-08-04 20:35:33Z bofh $
 
 PORTNAME=	mysql-connector-c
-PORTVERSION=	6.1.10
+PORTVERSION=	6.1.11
 CATEGORIES=	databases
 MASTER_SITES=	MYSQL/Connector-C
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

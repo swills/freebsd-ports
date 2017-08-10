@@ -1,9 +1,9 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-sdoc/Makefile 430396 2017-01-02 19:15:52Z swills $
+# $FreeBSD: head/devel/rubygem-sdoc/Makefile 447375 2017-08-04 20:09:12Z sunpoet $
 
 PORTNAME=	sdoc
 PORTVERSION=	0.4.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,10 +12,10 @@ COMMENT=	Create rdoc html with javascript search index
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	rubygem-json1>=1.7.7:devel/rubygem-json1
+RUN_DEPENDS=	rubygem-json1>=1.7.7:devel/rubygem-json1 \
+		rubygem-rdoc>=4.0:devel/rubygem-rdoc
 
 NO_ARCH=	yes
-
 USE_RUBY=	yes
 USES=		gem
 

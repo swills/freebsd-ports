@@ -1,10 +1,9 @@
 # Created by: John Merryweather Cooper
-# $FreeBSD: head/databases/fpc-odbc/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/fpc-odbc/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	databases lang
 PKGNAMESUFFIX=	-odbc
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal interface to ODBC
 
 USE_FPC=	yes

@@ -1,8 +1,8 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/sysutils/beats/Makefile 445410 2017-07-09 20:56:25Z girgen $
+# $FreeBSD: head/sysutils/beats/Makefile 447434 2017-08-05 23:13:41Z sunpoet $
 
 PORTNAME=	beats
-PORTVERSION=	5.5.0
+PORTVERSION=	5.5.1
 DISTVERSIONPREFIX=v
 CATEGORIES=	sysutils
 
@@ -42,11 +42,6 @@ do-build:
 		cd ${GO_WRKSRC}; ${SETENV} ${MAKE_ENV} ${GO_ENV} ${GMAKE} -C $${GO_TARGET} ;\
 	done
 
-post-stage:
-	for GO_TARGET in ${GO_TARGETS}; do \
-		${MKDIR} ${STAGEDIR}/var/db/beats/$${GO_TARGET} ;\
-	done
-
 do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}
 	${INSTALL_PROGRAM} \
@@ -61,6 +56,7 @@ do-install:
 			${STAGEDIR}${PREFIX}/etc/$${GO_TARGET}.template.json.sample ;\
 		${INSTALL_DATA} ${WRKSRC}/$${GO_TARGET}/$${GO_TARGET}.template-es2x.json \
 			${STAGEDIR}${PREFIX}/etc/$${GO_TARGET}.template-es2x.json.sample ;\
+		${MKDIR} ${STAGEDIR}/var/db/beats/$${GO_TARGET} ;\
 	done
 
 .include <bsd.port.mk>

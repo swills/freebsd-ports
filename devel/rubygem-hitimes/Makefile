@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv at kvedulv.de>
-# $FreeBSD: head/devel/rubygem-hitimes/Makefile 441804 2017-05-26 17:53:16Z sunpoet $
+# $FreeBSD: head/devel/rubygem-hitimes/Makefile 447423 2017-08-05 23:11:23Z sunpoet $
 
 PORTNAME=	hitimes
-PORTVERSION=	1.2.5
+PORTVERSION=	1.2.6
 CATEGORIES=	devel ruby
 MASTER_SITES=	RG
 

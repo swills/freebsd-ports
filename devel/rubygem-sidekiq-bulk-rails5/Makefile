@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-sidekiq-bulk-rails5/Makefile 443627 2017-06-15 19:37:40Z jrm $
+# $FreeBSD: head/devel/rubygem-sidekiq-bulk-rails5/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	sidekiq-bulk
 PORTVERSION=	0.1.1
@@ -6,7 +6,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Augment Sidekiq job classes with a push_bulk method
 
 LICENSE=	MIT

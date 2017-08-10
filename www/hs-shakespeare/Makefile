@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/hs-shakespeare/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/www/hs-shakespeare/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	shakespeare
-PORTVERSION=	2.0.5
+PORTVERSION=	2.0.13
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -9,8 +9,7 @@ COMMENT=	Toolkit for making compile-time interpolated templates
 
 LICENSE=	MIT
 
-USE_CABAL=	aeson blaze-html blaze-markup exceptions parsec>=2 \
-		text>=0.7
+USE_CABAL=	aeson blaze-html blaze-markup exceptions parsec text
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

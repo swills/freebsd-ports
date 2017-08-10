@@ -1,10 +1,9 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/audio/fpc-a52/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/fpc-a52/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	audio lang
 PKGNAMESUFFIX=	-a52
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal interface to a52 library
 
 USE_FPC=	yes

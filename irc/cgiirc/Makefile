@@ -1,8 +1,8 @@
 # Created by: Vsevolod Stakhov <vsevolod@highsecure.ru>
-# $FreeBSD: head/irc/cgiirc/Makefile 393750 2015-08-08 23:29:13Z rodrigo $
+# $FreeBSD: head/irc/cgiirc/Makefile 447182 2017-08-02 22:44:41Z rodrigo $
 
 PORTNAME=	cgiirc
-PORTVERSION=	0.5.11
+PORTVERSION=	0.5.12
 CATEGORIES=	irc www perl5
 MASTER_SITES=	http://cgiirc.org/releases/ \
 		SF/${PORTNAME}/cgi-irc/${PORTVERSION}

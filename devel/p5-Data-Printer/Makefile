@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Data-Printer/Makefile 438711 2017-04-17 16:05:32Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-Printer/Makefile 447149 2017-08-02 18:35:23Z sunpoet $
 
 PORTNAME=	Data-Printer
-PORTVERSION=	0.39
+PORTVERSION=	0.40
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

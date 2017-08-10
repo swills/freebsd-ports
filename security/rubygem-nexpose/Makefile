@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-nexpose/Makefile 445705 2017-07-13 18:40:12Z antoine $
+# $FreeBSD: head/security/rubygem-nexpose/Makefile 447621 2017-08-09 11:47:22Z antoine $
 
 PORTNAME=	nexpose
-PORTVERSION=	6.1.0
+PORTVERSION=	6.1.1
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
@@ -12,8 +12,7 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 NO_ARCH=	yes
-
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 .include <bsd.port.mk>

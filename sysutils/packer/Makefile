@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/packer/Makefile 446149 2017-07-18 17:07:12Z lifanov $
+# $FreeBSD: head/sysutils/packer/Makefile 447213 2017-08-03 13:48:07Z lifanov $
 
 PORTNAME=	packer
 PORTVERSION=	1.0.3
@@ -8,7 +8,7 @@ CATEGORIES=	sysutils
 MAINTAINER=	lifanov@FreeBSD.org
 COMMENT=	Tool for creating machine images
 
-LICENSE=	MPL
+LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 PLIST_FILES=	bin/${PORTNAME}

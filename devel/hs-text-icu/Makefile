@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-text-icu/Makefile 426525 2016-11-19 18:21:20Z jbeich $
+# $FreeBSD: head/devel/hs-text-icu/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	text-icu
 PORTVERSION=	0.7.0.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

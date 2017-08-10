@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-temporary/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/devel/hs-temporary/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	temporary
-PORTVERSION=	1.2.0.3
-PORTREVISION=	2
+PORTVERSION=	1.2.1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

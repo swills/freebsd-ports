@@ -1,5 +1,5 @@
 # Created by: John Merryweather Cooper et al
-# $FreeBSD: head/lang/fpc/Makefile 434894 2017-02-26 17:38:04Z acm $
+# $FreeBSD: head/lang/fpc/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 PORTNAME=	fpc
 PORTVERSION=	3.0.2
@@ -18,7 +18,7 @@ MASTER_SITES=	ftp://ftp.freepascal.org/pub/fpc/dist/${PORTVERSION}/source/:sourc
 DISTFILES=	${DISTNAME:S/$/.source/}${EXTRACT_SUFX}:source
 DIST_SUBDIR=	freepascal
 
-MAINTAINER?=	freebsd-fpc@FreeBSD.org
+MAINTAINER?=	acm@FreeBSD.org
 COMMENT?=	Free Pascal compiler with Turbo and Delphi
 
 USES=		gmake iconv

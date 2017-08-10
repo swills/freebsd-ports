@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/horde-trean/Makefile 428699 2016-12-17 01:23:07Z mm $
+# $FreeBSD: head/www/horde-trean/Makefile 447173 2017-08-02 19:23:51Z mm $
 
 PORTNAME=	trean
-PORTVERSION=	1.1.7
+PORTVERSION=	1.1.8
 CATEGORIES=	www pear
 PKGNAMEPREFIX=	horde-
 

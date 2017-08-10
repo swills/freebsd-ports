@@ -1,9 +1,9 @@
 # Created by: Anthony Kim
-# $FreeBSD: head/mail/spamassassin/Makefile 441670 2017-05-25 09:56:55Z zeising $
+# $FreeBSD: head/mail/spamassassin/Makefile 447641 2017-08-09 19:30:58Z zeising $
 
 PORTNAME=	spamassassin
 PORTVERSION=	3.4.1
-PORTREVISION?=	10	# also bump japanese/spamassassin
+PORTREVISION?=	11	# also bump japanese/spamassassin
 CATEGORIES?=	mail perl5
 MASTER_SITES=	APACHE/spamassassin/source CPAN/Mail
 DISTNAME=	Mail-SpamAssassin-${PORTVERSION}
@@ -55,7 +55,7 @@ OPTIONS_GROUP_DATABASE=	MYSQL PGSQL
 OPTIONS_GROUP_PLUGINS=	DCC DKIM PYZOR RAZOR RELAY_COUNTRY SPF_QUERY
 OPTIONS_SINGLE=		GPG
 OPTIONS_SINGLE_GPG=	GNUPG_NONE GNUPG GNUPG2
-OPTIONS_DEFAULT=	AS_ROOT GNUPG SSL UPDATE_AND_COMPILE
+OPTIONS_DEFAULT=	AS_ROOT DKIM GNUPG SSL UPDATE_AND_COMPILE SPF_QUERY
 
 AS_ROOT_DESC=		Run spamd as root (recommended)
 

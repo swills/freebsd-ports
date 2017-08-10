@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/qt4pas/Makefile 376279 2015-01-05 00:16:00Z marino $
+# $FreeBSD: head/x11-toolkits/qt4pas/Makefile 447305 2017-08-03 23:46:07Z acm $
 
 PORTNAME=	qt4pas
 PORTVERSION=	2.5
@@ -8,7 +8,7 @@ CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://users.telenet.be/Jan.Van.hijfte/qtforfpc/V${PORTVERSION}/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/^/V/}_Qt${QT4_VER_MIN}
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
+MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Qt4 binding for FreePascal
 
 USE_LDCONFIG=	yes

@@ -1,9 +1,8 @@
-# $FreeBSD: head/devel/fpc-fcl-sdo/Makefile 403082 2015-12-05 23:29:36Z marino $
+# $FreeBSD: head/devel/fpc-fcl-sdo/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-fcl-sdo
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal Service Data Objects implementation (FCL)
 
 USE_FPC=	dblib fcl-base fcl-db fcl-json fcl-xml ibase mysql odbc \

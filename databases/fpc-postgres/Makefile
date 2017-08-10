@@ -1,10 +1,9 @@
 # Created by: John Merryweather Cooper et al
-# $FreeBSD: head/databases/fpc-postgres/Makefile 403082 2015-12-05 23:29:36Z marino $
+# $FreeBSD: head/databases/fpc-postgres/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	databases lang
 PKGNAMESUFFIX=	-postgres
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal interface to PostGreSQL
 
 USE_FPC=	yes

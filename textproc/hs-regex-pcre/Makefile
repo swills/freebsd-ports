@@ -1,0 +1,17 @@
+# $FreeBSD: head/textproc/hs-regex-pcre/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+
+PORTNAME=	regex-pcre
+PORTVERSION=	0.94.4
+CATEGORIES=	textproc haskell
+
+MAINTAINER=	haskell@FreeBSD.org
+COMMENT=	The PCRE backend to accompany regex-base
+
+LICENSE=	BSD3CLAUSE
+
+LIB_DEPENDS=	libpcre.so:devel/pcre
+
+USE_CABAL=	regex-base
+
+.include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
+.include <bsd.port.mk>

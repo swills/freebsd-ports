@@ -1,9 +1,9 @@
 # Created by: Sergey Kozlov <kozlov.sergey.404@gmail.com>
-# $FreeBSD: head/devel/staf/Makefile 442708 2017-06-05 23:25:11Z sunpoet $
+# $FreeBSD: head/devel/staf/Makefile 447227 2017-08-03 15:20:17Z asomers $
 
 PORTNAME=	staf
 PORTVERSION=	3.4.23
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel net
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/V${PORTVERSION}
 DISTNAME=	STAF${PORTVERSION:S/.//g}-src

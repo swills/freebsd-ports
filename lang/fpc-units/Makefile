@@ -1,12 +1,12 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/lang/fpc-units/Makefile 434894 2017-02-26 17:38:04Z acm $
+# $FreeBSD: head/lang/fpc-units/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 PORTNAME=	units
 PORTVERSION=	3.0.2
 CATEGORIES=	lang
 PKGNAMEPREFIX=	fpc-
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
+MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Meta port to install Free Pascal units
 
 ONLY_FOR_ARCHS=	i386 amd64

@@ -1,11 +1,10 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/graphics/fpc-imagemagick/Makefile 441761 2017-05-26 08:20:18Z kwm $
+# $FreeBSD: head/graphics/fpc-imagemagick/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 PORTREVISION=	1
 CATEGORIES=	graphics lang
 PKGNAMESUFFIX=	-imagemagick
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal interface to ImageMagick
 
 USE_FPC=	yes

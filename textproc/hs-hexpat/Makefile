@@ -1,13 +1,15 @@
-# $FreeBSD: head/textproc/hs-hexpat/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/textproc/hs-hexpat/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	hexpat
-PORTVERSION=	0.20.9
+PORTVERSION=	0.20.13
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	XML parser/formatter based on expat
 
 LICENSE=	BSD3CLAUSE
+
+LIB_DEPENDS=	libexpat.so:textproc/expat2
 
 USE_CABAL=	List>=0.4.2 text>=0.5.0.0 utf8-string>=0.3
 

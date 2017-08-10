@@ -1,10 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/graphics/fpc-graph/Makefile 403082 2015-12-05 23:29:36Z marino $
+# $FreeBSD: head/graphics/fpc-graph/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	graphics lang
 PKGNAMESUFFIX=	-graph
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal interface to graphical applications
 
 USE_FPC=	sdl x11 ${ARCH:Mi386:S/i386/pthreads/}

@@ -1,11 +1,10 @@
 # Created by: Jose Marques
-# $FreeBSD: head/java/javamail/Makefile 386052 2015-05-11 06:09:15Z amdmi3 $
+# $FreeBSD: head/java/javamail/Makefile 447632 2017-08-09 16:10:56Z mat $
 
 PORTNAME=	javamail
-PORTVERSION=	1.5.1
+DISTVERSIONPREFIX=	${PORTNAME:tu}-
+DISTVERSION=	1_5_6
 CATEGORIES=	java mail
-MASTER_SITES=	https://java.net/projects/javamail/downloads/download/source/
-DISTNAME=	javaxmail-${PORTVERSION}-src
 
 MAINTAINER=	ale@FreeBSD.org
 COMMENT=	Reference Implementation of JSR 919
@@ -15,13 +14,15 @@ LICENSE_COMB=	dual
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
-USES=		cpe zip
+USES=		cpe
+USE_GITHUB=	yes
+GH_ACCOUNT=	javaee
+
 CPE_VENDOR=	sun
 USE_JAVA=	YES
 JAVA_VERSION=	1.6+
 USE_ANT=	YES
-
-WRKSRC=		${WRKDIR}
+NO_ARCH=	yes
 
 PLIST_FILES=	%%JAVAJARDIR%%/mail.jar
 

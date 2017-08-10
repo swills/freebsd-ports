@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Class-Inspector/Makefile 427143 2016-11-26 10:33:56Z sunpoet $
+# $FreeBSD: head/devel/p5-Class-Inspector/Makefile 447647 2017-08-09 19:35:45Z sunpoet $
 
 PORTNAME=	Class-Inspector
-PORTVERSION=	1.31
+PORTVERSION=	1.32
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,8 +14,8 @@ LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
-NO_ARCH=	yes
 
 .include <bsd.port.mk>

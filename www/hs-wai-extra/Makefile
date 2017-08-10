@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/hs-wai-extra/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/www/hs-wai-extra/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	wai-extra
-PORTVERSION=	3.0.10
+PORTVERSION=	3.0.20.0
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -9,12 +9,12 @@ COMMENT=	Provides some basic WAI handlers and middleware
 
 LICENSE=	MIT
 
-USE_CABAL=	ansi-terminal base64-bytestring blaze-builder>=0.2.1.4 \
-		case-insensitive>=0.2 cookie data-default-class \
-		fast-logger>=2.1 http-types>=0.7 lifted-base>=0.1.2 \
-		network>=2.2.1.5 resourcet>=0.4.6 streaming-commons \
-		stringsearch>=0.3 text>=0.7 unix-compat vault void>=0.5 \
-		wai>=3.0.3.0 wai-logger>=2.0 word8
+USE_CABAL=	aeson ansi-terminal base64-bytestring blaze-builder \
+		case-insensitive cookie data-default-class \
+		fast-logger http-types iproute lifted-base \
+		network old-locale resourcet streaming-commons \
+		stringsearch text unix-compat vault void \
+		wai wai-logger word8 zlib
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

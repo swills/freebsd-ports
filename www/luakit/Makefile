@@ -1,5 +1,5 @@
 # Created by: Stefan Hagen <ports@textmail.me>
-# $FreeBSD: head/www/luakit/Makefile 446806 2017-07-28 06:29:20Z pi $
+# $FreeBSD: head/www/luakit/Makefile 447632 2017-08-09 16:10:56Z mat $
 
 PORTNAME=	luakit
 PORTVERSION=	2017.07.26
@@ -22,7 +22,6 @@ RUN_DEPENDS=	${LUA_PKGNAMEPREFIX}luafilesystem>=0:devel/luafilesystem-51
 
 USES=		desktop-file-utils gettext-runtime gmake lua:51 pkgconfig sqlite
 USE_GITHUB=	yes
-GH_TAGNAME=	${PORTVERSION}
 USE_GNOME=	cairo gdkpixbuf2 glib20 gtk30
 
 NOT_FOR_ARCHS=	sparc64

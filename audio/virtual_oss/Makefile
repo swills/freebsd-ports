@@ -1,14 +1,14 @@
 # Created by: Hans Petter Selasky <hselasky@FreeBSD.org>
-# $FreeBSD: head/audio/virtual_oss/Makefile 425581 2016-11-06 20:58:30Z kwm $
+# $FreeBSD: head/audio/virtual_oss/Makefile 447350 2017-08-04 18:15:29Z kwm $
 
 PORTNAME=	virtual_oss
-PORTVERSION=	1.1.2
+PORTVERSION=	1.1.3
 CATEGORIES=	audio
 MASTER_SITES=	http://www.selasky.org/hans_petter/distfiles/ \
 		http://home.selasky.org:8192/distfiles/
 
 MAINTAINER=	hselasky@FreeBSD.org
-COMMENT=	Virtual OSS multi-device mixer application
+COMMENT=	Virtual OSS multi device mixer application
 
 LICENSE=	BSD2CLAUSE
 

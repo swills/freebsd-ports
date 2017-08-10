@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-language-c/Makefile 436451 2017-03-18 22:37:45Z tcberner $
+# $FreeBSD: head/devel/hs-language-c/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	language-c
-PORTVERSION=	0.5.0
+PORTVERSION=	0.6.1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

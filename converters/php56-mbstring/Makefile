@@ -1,7 +1,9 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/converters/php56-mbstring/Makefile 422652 2016-09-23 08:26:44Z tz $
+# $FreeBSD: head/converters/php56-mbstring/Makefile 447107 2017-08-02 14:24:30Z tz $
 
 CATEGORIES=	converters
+
+PORTREVISION=	1
 
 MASTERDIR=	${.CURDIR}/../../lang/php56
 

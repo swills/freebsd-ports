@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/roundcube-automatic_addressbook/Makefile 433403 2017-02-05 13:21:25Z lme $
+# $FreeBSD: head/mail/roundcube-automatic_addressbook/Makefile 447576 2017-08-08 21:57:12Z ultima $
 
 PORTNAME=	automatic_addressbook
-PORTVERSION=	0.4.2
+PORTVERSION=	0.4.3
 CATEGORIES=	mail
 PKGNAMEPREFIX=	roundcube-
 
@@ -12,11 +12,11 @@ LICENSE=	GPLv3
 
 RUN_DEPENDS=	roundcube>=0.8:mail/roundcube
 
-NO_BUILD=	yes
-NO_ARCH=	yes
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	sblaisot
+
+NO_BUILD=	yes
+NO_ARCH=	yes
 
 RCDIR=		${PREFIX}/www/roundcube
 WWWDIR=		${RCDIR}/plugins/automatic_addressbook

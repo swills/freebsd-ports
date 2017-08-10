@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/hs-test-framework/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/devel/hs-test-framework/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	test-framework
 PORTVERSION=	0.8.1.1
+PORTREVISION=	1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/rubygem-redis-actionpack-rails50/Makefile 441665 2017-05-25 03:45:45Z jrm $
+# $FreeBSD: head/databases/rubygem-redis-actionpack-rails50/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	redis-actionpack
 PORTVERSION=	5.0.1
@@ -6,7 +6,7 @@ CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Redis session store for ActionPack
 
 LICENSE=	MIT

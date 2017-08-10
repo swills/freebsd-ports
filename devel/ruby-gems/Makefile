@@ -1,8 +1,8 @@
 # Created by: Alexander Novitsky <alecn2002@yandex.ru>
-# $FreeBSD: head/devel/ruby-gems/Makefile 441019 2017-05-16 18:18:46Z sunpoet $
+# $FreeBSD: head/devel/ruby-gems/Makefile 447260 2017-08-03 17:26:48Z sunpoet $
 #
 # Do not forget to update the following gemspec patches:
-# - security/rubygem-ezcrypto/files/patch-ezcrypto.gemspec
+# - security/rubygem-ezcrypto/files/patch-gemspec
 # - www/rubygem-gitlab-grack/files/patch-gemspec
 
 PORTNAME=	gems

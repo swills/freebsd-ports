@@ -1,10 +1,9 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/archivers/fpc-bzip2/Makefile 403082 2015-12-05 23:29:36Z marino $
+# $FreeBSD: head/archivers/fpc-bzip2/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	archivers lang
 PKGNAMESUFFIX=	-bzip2
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal bzip2 unit
 
 USE_FPC=	rtl-extra

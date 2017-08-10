@@ -1,8 +1,8 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/databases/pgbadger/Makefile 432408 2017-01-24 23:53:52Z girgen $
+# $FreeBSD: head/databases/pgbadger/Makefile 447571 2017-08-08 19:54:35Z girgen $
 
 PORTNAME=	pgbadger
-PORTVERSION=	9.1
+PORTVERSION=	9.2
 DISTVERSIONPREFIX=v
 CATEGORIES=	databases
 

@@ -1,0 +1,13 @@
+# $FreeBSD: head/devel/hs-clock/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+
+PORTNAME=	clock
+PORTVERSION=	0.7.2
+CATEGORIES=	devel haskell
+
+MAINTAINER=	haskell@FreeBSD.org
+COMMENT=	A package for convenient access to high-resolution clock and timer functions
+
+LICENSE=	BSD3CLAUSE
+
+.include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
+.include <bsd.port.mk>

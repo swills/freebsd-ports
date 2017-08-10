@@ -1,11 +1,11 @@
-# $FreeBSD: head/www/rubygem-rack-timeout/Makefile 438505 2017-04-14 12:18:18Z jrm $
+# $FreeBSD: head/www/rubygem-rack-timeout/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	rack-timeout
 PORTVERSION=	0.4.2
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Abort requests that are taking too long
 
 LICENSE=	MIT

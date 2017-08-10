@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 446935 2017-07-30 14:18:29Z pi $
+# $FreeBSD: head/databases/Makefile 447494 2017-08-07 13:46:50Z tz $
 #
 
     COMMENT = Databases and related software
@@ -586,6 +586,7 @@
     SUBDIR += pgFormatter
     SUBDIR += pgfouine
     SUBDIR += pgloader
+    SUBDIR += pgloader3
     SUBDIR += pglogical
     SUBDIR += pgmodeler
     SUBDIR += pgpool

@@ -1,8 +1,8 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab-workhorse/Makefile 445152 2017-07-06 14:05:40Z tz $
+# $FreeBSD: head/www/gitlab-workhorse/Makefile 447611 2017-08-09 09:13:43Z tz $
 
 PORTNAME=	gitlab-workhorse
-PORTVERSION=	1.4.3
+PORTVERSION=	2.0.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 MASTER_SITES=	https://gitlab.com/gitlab-org/${PORTNAME}/repository/archive.tar.gz?ref=${DISTVERSIONPREFIX}${PORTVERSION}&dummy=/

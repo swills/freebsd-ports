@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-cld3/Makefile 443726 2017-06-17 03:00:59Z bdrewery $
+# $FreeBSD: head/textproc/rubygem-cld3/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	cld3
 DISTVERSION=	3.1.3
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Compact Language Detection for Ruby
 
 LICENSE=	APACHE20

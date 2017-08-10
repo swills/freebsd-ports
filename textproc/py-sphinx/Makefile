@@ -1,9 +1,9 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/textproc/py-sphinx/Makefile 442935 2017-06-08 14:11:43Z woodsb02 $
+# $FreeBSD: head/textproc/py-sphinx/Makefile 447275 2017-08-03 18:49:46Z pgj $
 
 PORTNAME=	sphinx
 PORTVERSION=	1.4.8
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	Sphinx-${PORTVERSION}
 DIST_SUBDIR=	python
 
-MAINTAINER=	kmoore@FreeBSD.org
+MAINTAINER=	araujo@FreeBSD.org
 COMMENT=	Python documentation generator
 
 LICENSE=	BSD2CLAUSE

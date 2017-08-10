@@ -1,9 +1,8 @@
-# $FreeBSD: head/lang/fpc-rtl-unicode/Makefile 403082 2015-12-05 23:29:36Z marino $
+# $FreeBSD: head/lang/fpc-rtl-unicode/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	lang
 PKGNAMESUFFIX=	-rtl-unicode
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal compatibility unit with Delphi
 
 USE_FPC=	yes

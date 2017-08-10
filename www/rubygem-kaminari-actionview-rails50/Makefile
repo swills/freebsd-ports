@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-kaminari-actionview-rails50/Makefile 441655 2017-05-25 02:29:08Z jrm $
+# $FreeBSD: head/www/rubygem-kaminari-actionview-rails50/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	kaminari-actionview
 PORTVERSION=	1.0.1
@@ -7,7 +7,7 @@ CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Kaminari Action View adapter
 
 LICENSE=	MIT

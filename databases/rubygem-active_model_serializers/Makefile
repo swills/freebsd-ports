@@ -1,11 +1,11 @@
-# $FreeBSD: head/databases/rubygem-active_model_serializers/Makefile 446629 2017-07-25 21:11:02Z jrm $
+# $FreeBSD: head/databases/rubygem-active_model_serializers/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	active_model_serializers
 PORTVERSION=	0.10.6
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Conventions-based JSON generation for Rails
 
 LICENSE=	MIT

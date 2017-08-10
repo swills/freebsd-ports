@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/hs-data-lens-template/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/math/hs-data-lens-template/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	data-lens-template
-PORTVERSION=	2.1.9
+PORTVERSION=	2.2
 CATEGORIES=	math haskell
 
 MAINTAINER=	haskell@FreeBSD.org

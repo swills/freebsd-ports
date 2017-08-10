@@ -1,10 +1,9 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/lang/fpc-rexx/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/lang/fpc-rexx/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	lang
 PKGNAMESUFFIX=	-rexx
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal interface to the rexx-regina library
 
 USE_FPC=	yes

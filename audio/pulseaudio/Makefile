@@ -1,12 +1,12 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/audio/pulseaudio/Makefile 440100 2017-05-04 12:08:12Z tijl $
+# $FreeBSD: head/audio/pulseaudio/Makefile 447399 2017-08-05 10:58:48Z kwm $
 #
 # !!!NOTE!!! Any PORTVERSION update to this port must be accompanied by
 # PORTREVISION bumps of depending ports.
 
 PORTNAME=	pulseaudio
 PORTVERSION=	10.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	http://freedesktop.org/software/pulseaudio/releases/
 
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libsndfile.so:audio/libsndfile \
 		libfftw3f.so:math/fftw3-float \
 		libdbus-1.so:devel/dbus \
 		libltdl.so:devel/libltdl \
-		libck-connector.so:sysutils/consolekit
+		libck-connector.so:sysutils/consolekit2
 
 USE_GNOME=	glib20 intltool
 USE_XORG=	ice sm x11 xcb xtst

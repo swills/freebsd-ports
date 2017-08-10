@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-hspec-core/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/devel/hs-hspec-core/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	hspec-core
-PORTVERSION=	2.1.10
+PORTVERSION=	2.4.4
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

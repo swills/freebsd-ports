@@ -1,8 +1,8 @@
 # Created by: Carlos J Puga Medina <cpm@fbsd.es>
-# $FreeBSD: head/security/py-acme/Makefile 445423 2017-07-10 09:00:40Z cpm $
+# $FreeBSD: head/security/py-acme/Makefile 447536 2017-08-08 09:12:27Z cpm $
 
 PORTNAME=	acme
-PORTVERSION=	0.16.0
+PORTVERSION=	0.17.0
 PORTEPOCH=	1
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP

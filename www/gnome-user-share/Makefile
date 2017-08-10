@@ -1,10 +1,10 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/www/gnome-user-share/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/gnome-user-share/Makefile 447399 2017-08-05 10:58:48Z kwm $
 #   $MCom: ports/trunk/www/gnome-user-share/Makefile 19970 2014-10-16 08:47:02Z gusi $
 
 PORTNAME=	gnome-user-share
 PORTVERSION=	3.14.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www deskutils gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libavahi-client.so:net/avahi-app \
 		libcanberra-gtk3.so:audio/libcanberra-gtk3 \
 		libunique-1.0.so:x11-toolkits/unique
 RUN_DEPENDS=	ap*-mod_dnssd>=0:www/mod_dnssd \
-		console-kit-daemon:sysutils/consolekit
+		console-kit-daemon:sysutils/consolekit2
 
 USES=		gettext gmake libtool pkgconfig tar:xz
 USE_APACHE=	22+

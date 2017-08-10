@@ -1,8 +1,8 @@
 # Created by: Vanilla I. Shu <vanilla@FreeBSD.org>
-# $FreeBSD: head/archivers/snappy/Makefile 432629 2017-01-28 15:30:53Z vanilla $
+# $FreeBSD: head/archivers/snappy/Makefile 447321 2017-08-04 07:10:59Z vanilla $
 
 PORTNAME=	snappy
-PORTVERSION=	1.1.4
+PORTVERSION=	1.1.6
 CATEGORIES=	archivers
 
 MAINTAINER=	vanilla@FreeBSD.org
@@ -23,6 +23,6 @@ GH_ACCOUNT=	google
 BROKEN_sparc64=	Does not compile on sparc64
 
 post-install:
-	@${STRIP_CMD} ${STAGEDIR}${LOCALBASE}/lib/libsnappy.so.1.3.1
+	@${STRIP_CMD} ${STAGEDIR}${LOCALBASE}/lib/libsnappy.so.1.1.6
 
 .include <bsd.port.mk>

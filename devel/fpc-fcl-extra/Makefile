@@ -1,9 +1,8 @@
-# $FreeBSD: head/devel/fpc-fcl-extra/Makefile 403082 2015-12-05 23:29:36Z marino $
+# $FreeBSD: head/devel/fpc-fcl-extra/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-fcl-extra
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal extra libraries (FCL)
 
 USE_FPC=	fcl-base fcl-res rtl-objpas

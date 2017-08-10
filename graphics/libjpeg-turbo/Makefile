@@ -1,8 +1,8 @@
 # Created by: Denis Podolskiy <bytestore@yandex.ru>
-# $FreeBSD: head/graphics/libjpeg-turbo/Makefile 436721 2017-03-22 19:16:36Z antoine $
+# $FreeBSD: head/graphics/libjpeg-turbo/Makefile 447451 2017-08-06 08:07:54Z antoine $
 
 PKGNAMEPREFIX=	lib
-PORTREVISION=	1
+PORTREVISION=	0
 
 COMMENT=	SIMD-accelerated JPEG codec library, provides libTurboJPEG
 

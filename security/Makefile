@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 446988 2017-07-31 17:42:33Z rene $
+# $FreeBSD: head/security/Makefile 447640 2017-08-09 18:58:59Z sbz $
 #
 
     COMMENT = Security tools
@@ -193,7 +193,8 @@
     SUBDIR += gpgme-cpp
     SUBDIR += gpgme-qt5
     SUBDIR += gputty
-    SUBDIR += greenbone-security-assistant
+    SUBDIR += greenbone-security-assistant8
+    SUBDIR += greenbone-security-assistant9
     SUBDIR += gringotts
     SUBDIR += gsasl
     SUBDIR += gss
@@ -240,10 +241,15 @@
     SUBDIR += hs-cryptohash
     SUBDIR += hs-cryptohash-conduit
     SUBDIR += hs-cryptohash-cryptoapi
+    SUBDIR += hs-cryptohash-md5
+    SUBDIR += hs-cryptohash-sha1
+    SUBDIR += hs-cryptohash-sha256
     SUBDIR += hs-cryptonite
     SUBDIR += hs-digest
+    SUBDIR += hs-ed25519
     SUBDIR += hs-entropy
     SUBDIR += hs-gnutls
+    SUBDIR += hs-hackage-security
     SUBDIR += hs-monadcryptorandom
     SUBDIR += hs-nonce
     SUBDIR += hs-pem
@@ -251,6 +257,7 @@
     SUBDIR += hs-pwstore-fast
     SUBDIR += hs-skein
     SUBDIR += hs-tls
+    SUBDIR += hs-tls-session-manager
     SUBDIR += hs-x509
     SUBDIR += hs-x509-store
     SUBDIR += hs-x509-system
@@ -434,10 +441,16 @@
     SUBDIR += openssl
     SUBDIR += openssl-devel
     SUBDIR += openssl_tpm_engine
-    SUBDIR += openvas-cli
-    SUBDIR += openvas-libraries
-    SUBDIR += openvas-manager
-    SUBDIR += openvas-scanner
+    SUBDIR += openvas8
+    SUBDIR += openvas8-cli
+    SUBDIR += openvas8-libraries
+    SUBDIR += openvas8-manager
+    SUBDIR += openvas8-scanner
+    SUBDIR += openvas9
+    SUBDIR += openvas9-cli
+    SUBDIR += openvas9-libraries
+    SUBDIR += openvas9-manager
+    SUBDIR += openvas9-scanner
     SUBDIR += openvpn
     SUBDIR += openvpn-admin
     SUBDIR += openvpn-auth-ldap
@@ -973,6 +986,7 @@
     SUBDIR += py-zxcvbn-python
     SUBDIR += py3-certifi
     SUBDIR += py3-cryptography
+    SUBDIR += py3-ecdsa
     SUBDIR += py3-libnacl
     SUBDIR += py3-openssl
     SUBDIR += py3-pycrypto

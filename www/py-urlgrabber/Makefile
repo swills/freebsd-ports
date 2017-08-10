@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/www/py-urlgrabber/Makefile 446464 2017-07-23 11:42:10Z nivit $
+# $FreeBSD: head/www/py-urlgrabber/Makefile 447391 2017-08-05 07:07:01Z tcberner $
 
 PORTNAME=	urlgrabber
 PORTVERSION=	3.10.2
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	http://urlgrabber.baseurl.org/download/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,6 +13,8 @@ COMMENT=	High-level cross-protocol url-grabber
 
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycurl>=7.19.0_1:ftp/py-pycurl
 
 DOCS_MAKE_ENV=	INSTALL_DOCS=yes
 DOCSDIR=	${PREFIX}/share/doc/${PYTHON_PKGNAMEPREFIX}${PORTNAME}

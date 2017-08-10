@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-dfvfs/Makefile 438036 2017-04-08 11:15:44Z antoine $
+# $FreeBSD: head/security/py-dfvfs/Makefile 447471 2017-08-06 16:36:35Z antoine $
 
 PORTNAME=	dfvfs
-PORTVERSION=	20170406
+PORTVERSION=	20170723
 CATEGORIES=	security devel python
 MASTER_SITES=	https://github.com/log2timeline/dfvfs/releases/download/${PORTVERSION}/ \
 		LOCAL/antoine
@@ -32,6 +32,7 @@ RUN_DEPENDS=	libbde>=a:devel/libbde \
 		${PYTHON_PKGNAMEPREFIX}pycrypto>=0:security/py-pycrypto \
 		${PYTHON_PKGNAMEPREFIX}pytsk>=0:sysutils/py-pytsk \
 		${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock
 
 NO_ARCH=	yes
 USES=		python:2.7
@@ -48,6 +49,7 @@ TEST_DEPENDS+=	ca_root_nss>=0:security/ca_root_nss
 .endif
 
 do-test:
+	@${TOUCH} ${TEST_WRKSRC}/utils/__init__.py
 	@(cd ${TEST_WRKSRC} && ${SETENV} ${TEST_ENV} ${PYTHON_CMD} run_tests.py)
 
 .include <bsd.port.post.mk>

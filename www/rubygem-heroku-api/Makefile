@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-heroku-api/Makefile 430218 2017-01-01 01:11:34Z sunpoet $
+# $FreeBSD: head/www/rubygem-heroku-api/Makefile 447426 2017-08-05 23:11:37Z sunpoet $
 
 PORTNAME=	heroku-api
-PORTVERSION=	0.4.2
+PORTVERSION=	0.4.3
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

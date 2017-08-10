@@ -1,8 +1,8 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/devel/hs-utility-ht/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/devel/hs-utility-ht/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	utility-ht
-PORTVERSION=	0.0.10
+PORTVERSION=	0.0.14
 PORTREVISION=	2
 CATEGORIES=	devel haskell
 

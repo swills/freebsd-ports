@@ -1,10 +1,9 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/audio/fpc-openal/Makefile 403082 2015-12-05 23:29:36Z marino $
+# $FreeBSD: head/audio/fpc-openal/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	audio lang
 PKGNAMESUFFIX=	-openal
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal interface to openal library
 
 USE_FPC=	yes

@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/hs-libxml-sax/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/hs-libxml-sax/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	libxml-sax
 PORTVERSION=	0.7.5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,10 +1,9 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/audio/fpc-oggvorbis/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/fpc-oggvorbis/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	audio lang
 PKGNAMESUFFIX=	-oggvorbis
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal interface to ogg & vorbis libraries
 
 USE_FPC=	yes

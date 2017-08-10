@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/hs-ekg/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/sysutils/hs-ekg/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	ekg
-PORTVERSION=	0.4.0.8
+PORTVERSION=	0.4.0.13
 CATEGORIES=	sysutils haskell
 
 MAINTAINER=	haskell@FreeBSD.org

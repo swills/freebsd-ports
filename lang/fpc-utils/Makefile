@@ -1,10 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/lang/fpc-utils/Makefile 403082 2015-12-05 23:29:36Z marino $
+# $FreeBSD: head/lang/fpc-utils/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	lang
 PKGNAMESUFFIX=	-utils
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal Compiler utilities
 
 USE_FPC=	chm fcl-base fcl-net fcl-passrc fcl-res fcl-xml fppkg \

@@ -1,10 +1,9 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/graphics/fpc-rsvg/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/fpc-rsvg/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	graphics lang
 PKGNAMESUFFIX=	-rsvg
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal interface to librsvg2 library
 
 USE_FPC=	cairo fcl-base fcl-image fcl-res gtk2 pasjpeg rtl-objpas x11

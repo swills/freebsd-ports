@@ -1,8 +1,9 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-capybara/Makefile 444529 2017-06-28 00:21:06Z jrm $
+# $FreeBSD: head/devel/rubygem-capybara/Makefile 447526 2017-08-08 00:35:56Z jrm $
 
 PORTNAME=	capybara
-PORTVERSION=	2.14.4
+PORTVERSION=	2.15.1
+PORTREVISION=	2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -13,7 +14,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/License.txt
 
 RUN_DEPENDS=	rubygem-addressable>=0:www/rubygem-addressable \
-		rubygem-mime-types>=1.16:misc/rubygem-mime-types \
+		rubygem-mini_mime>=0.1.3:mail/rubygem-mini_mime \
 		rubygem-nokogiri>=1.3.3:textproc/rubygem-nokogiri \
 		rubygem-rack>=1.0.0:www/rubygem-rack \
 		rubygem-rack-test>=0.5.4:www/rubygem-rack-test \

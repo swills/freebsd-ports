@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/rubygem-rails50/Makefile 447063 2017-08-01 18:03:09Z jrm $
+# $FreeBSD: head/www/rubygem-rails50/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	rails
 PORTVERSION=	5.0.5
@@ -7,7 +7,7 @@ CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	50
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Full-stack web application framework
 
 LICENSE=	MIT

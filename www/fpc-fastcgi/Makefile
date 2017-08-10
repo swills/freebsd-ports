@@ -1,10 +1,9 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/www/fpc-fastcgi/Makefile 403082 2015-12-05 23:29:36Z marino $
+# $FreeBSD: head/www/fpc-fastcgi/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	www lang
 PKGNAMESUFFIX=	-fastcgi
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal fastcgi unit
 
 USE_FPC=	yes

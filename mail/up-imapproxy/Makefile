@@ -1,9 +1,9 @@
 # Created by: Martin Blapp
-# $FreeBSD: head/mail/up-imapproxy/Makefile 417964 2016-07-03 10:01:53Z brnrd $
+# $FreeBSD: head/mail/up-imapproxy/Makefile 447519 2017-08-07 21:44:00Z adamw $
 
 PORTNAME=	imapproxy
 PORTVERSION=	1.2.7
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	mail
 MASTER_SITES=	SF/squirrelmail/imap_proxy/${PORTVERSION}
 PKGNAMEPREFIX=	up-
@@ -33,7 +33,7 @@ SBIN=		in.imapproxyd pimpstat
 
 .if ${PORT_OPTIONS:MDOVECOT}
 SUB_LIST+=	DOVECOT="dovecot"
-RUN_DEPENDS+=	dovecot:mail/dovecot2
+RUN_DEPENDS+=	dovecot:mail/dovecot
 .else
 SUB_LIST+=	DOVECOT=""
 .endif

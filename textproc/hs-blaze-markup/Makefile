@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/hs-blaze-markup/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/textproc/hs-blaze-markup/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	blaze-markup
-PORTVERSION=	0.7.0.2
+PORTVERSION=	0.8.0.0
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/mtbl/Makefile 443597 2017-06-14 19:00:52Z truckman $
+# $FreeBSD: head/devel/mtbl/Makefile 447306 2017-08-04 00:13:38Z truckman $
 
 PORTNAME=	mtbl
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 CATEGORIES=	devel
 MASTER_SITES=	FARSIGHT LOCAL/truckman/farsight
 
@@ -16,8 +16,8 @@ LIB_DEPENDS=	liblz4.so:archivers/liblz4 \
 		libzstd.so:archivers/zstd
 
 GNU_CONFIGURE=	yes
-USE_LDCONFIG=	yes
 USES=		gmake libtool pathfix pkgconfig
+USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 
 CPPFLAGS+=	-I${LOCALBASE}/include

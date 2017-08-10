@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-atomic-primops/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/devel/hs-atomic-primops/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	atomic-primops
-PORTVERSION=	0.8
+PORTVERSION=	0.8.0.4
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-mutable-containers/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/devel/hs-mutable-containers/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	mutable-containers
-PORTVERSION=	0.3.2
+PORTVERSION=	0.3.3
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

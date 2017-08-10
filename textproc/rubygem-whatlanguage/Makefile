@@ -1,11 +1,11 @@
-# $FreeBSD: head/textproc/rubygem-whatlanguage/Makefile 439488 2017-04-26 19:33:45Z jrm $
+# $FreeBSD: head/textproc/rubygem-whatlanguage/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	whatlanguage
 PORTVERSION=	1.0.6
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Natural language detection for text samples
 
 LICENSE=	MIT

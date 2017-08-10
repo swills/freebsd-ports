@@ -1,8 +1,8 @@
 # Created by: Khairil Yusof <kaeru@inigo-tech.com>
-# $FreeBSD: head/devel/py-pytz/Makefile 428037 2016-12-07 07:37:10Z lwhsu $
+# $FreeBSD: head/devel/py-pytz/Makefile 447187 2017-08-03 00:52:03Z lwhsu $
 
 PORTNAME=	pytz
-PORTVERSION=	2016.10
+PORTVERSION=	2017.2
 PORTEPOCH=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
@@ -13,7 +13,7 @@ COMMENT=	World Timezone Definitions for Python
 
 LICENSE=	MIT
 
-USES=		python tar:bzip2
+USES=		python zip
 USE_PYTHON=	autoplist distutils
 
 post-patch:

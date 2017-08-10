@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/hs-data-lens/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/math/hs-data-lens/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	data-lens
-PORTVERSION=	2.10.7
+PORTVERSION=	2.11.1
 CATEGORIES=	math haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -9,7 +9,7 @@ COMMENT=	Used to be Haskell 98 Lenses
 
 LICENSE=	BSD3CLAUSE
 
-USE_CABAL=	comonad>=4.0 semigroupoids>=4.0
+USE_CABAL=	comonad semigroupoids
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

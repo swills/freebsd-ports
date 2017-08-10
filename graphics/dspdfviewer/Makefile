@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/dspdfviewer/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/graphics/dspdfviewer/Makefile 447460 2017-08-06 12:17:52Z philip $
 
 PORTNAME=	dspdfviewer
 PORTVERSION=	1.15.1
@@ -37,6 +37,10 @@ PLIST_FILES=	bin/dspdfviewer \
 # https://github.com/dannyedel/dspdfviewer/issues/191
 .if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200023
 CFLAGS+=	-Wno-error=undefined-func-template
+.endif
+
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200039
+CFLAGS+=	-Wno-error=zero-as-null-pointer-constant
 .endif
 
 .include <bsd.port.post.mk>

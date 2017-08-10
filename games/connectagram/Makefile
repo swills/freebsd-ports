@@ -1,9 +1,8 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/connectagram/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/games/connectagram/Makefile 447314 2017-08-04 01:33:16Z jhale $
 
 PORTNAME=	connectagram
-PORTVERSION=	1.2.4
-PORTREVISION=	1
+PORTVERSION=	1.2.5
 DISTVERSIONSUFFIX=	-src
 CATEGORIES=	games
 MASTER_SITES=	http://gottcode.org/connectagram/
@@ -24,7 +23,7 @@ OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e \
-		's|share/man|man|' ${WRKSRC}/connectagram.pro
+		's|share/man|man|;s|metainfo|appdata|' ${WRKSRC}/connectagram.pro
 	@${REINPLACE_CMD} -e \
 		's|std::lround|lround|' ${WRKSRC}/src/*.cpp
 

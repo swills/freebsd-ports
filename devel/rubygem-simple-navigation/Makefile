@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-simple-navigation/Makefile 439691 2017-04-28 21:40:51Z jrm $
+# $FreeBSD: head/devel/rubygem-simple-navigation/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	simple-navigation
 PORTVERSION=	4.0.5
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Create navigations for Rails, Sinatra or Padrino applications
 
 LICENSE=	MIT

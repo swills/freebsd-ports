@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-sidekiq-cron04/Makefile 441030 2017-05-16 18:19:42Z sunpoet $
+# $FreeBSD: head/devel/rubygem-sidekiq-cron04/Makefile 447645 2017-08-09 19:35:35Z sunpoet $
 
 PORTNAME=	sidekiq-cron
 PORTVERSION=	0.4.5
@@ -17,6 +17,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 RUN_DEPENDS=	rubygem-redis-namespace>=1.5.2:databases/rubygem-redis-namespace \
 		rubygem-rufus-scheduler>=2.0.24:devel/rubygem-rufus-scheduler \
 		rubygem-sidekiq4>=4.2.1:devel/rubygem-sidekiq4
+
+DEPRECATED=	Use devel/rubygem-sidekiq-cron instead
+EXPIRATION_DATE=2017-08-31
 
 PORTSCOUT=	limit:^0\.4\.
 

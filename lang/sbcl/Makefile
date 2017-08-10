@@ -1,8 +1,7 @@
-# $FreeBSD: head/lang/sbcl/Makefile 433334 2017-02-04 18:12:26Z krion $
+# $FreeBSD: head/lang/sbcl/Makefile 447343 2017-08-04 14:56:17Z krion $
 
 PORTNAME=	sbcl
-PORTVERSION=	1.3.13
-PORTREVISION=	1
+PORTVERSION=	1.3.20
 DISTVERSIONSUFFIX=	-source
 PORTEPOCH=	1
 CATEGORIES=	lang lisp

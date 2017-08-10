@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-webpush/Makefile 446763 2017-07-27 16:48:52Z jrm $
+# $FreeBSD: head/security/rubygem-webpush/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	webpush
 PORTVERSION=	0.3.2
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Encryption utilities for Web Push payload
 
 LICENSE=	MIT

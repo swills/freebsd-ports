@@ -1,8 +1,8 @@
 # Created by: Oliver Braun <obraun@FreeBSD.org>
-# $FreeBSD: head/devel/hs-c2hs/Makefile 436914 2017-03-25 20:29:13Z tcberner $
+# $FreeBSD: head/devel/hs-c2hs/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	c2hs
-PORTVERSION=	0.28.1
+PORTVERSION=	0.28.2
 PORTREVISION=	1
 CATEGORIES=	devel haskell
 

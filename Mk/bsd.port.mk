@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.port.mk 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/Mk/bsd.port.mk 447515 2017-08-07 19:09:41Z lifanov $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1532,6 +1532,7 @@ QA_ENV+=		STAGEDIR=${STAGEDIR} \
 				LIB_RUN_DEPENDS='${_LIB_RUN_DEPENDS:C,[^:]*:([^:]*):?.*,\1,}' \
 				UNIFIED_DEPENDS=${_UNIFIED_DEPENDS:C,([^:]*:[^:]*):?.*,\1,:O:u:Q} \
 				PKGBASE=${PKGBASE} \
+				PORTNAME=${PORTNAME} \
 				NO_ARCH=${NO_ARCH} \
 				"NO_ARCH_IGNORE=${NO_ARCH_IGNORE}"
 .if !empty(USES:Mssl)

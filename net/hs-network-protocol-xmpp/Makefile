@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/hs-network-protocol-xmpp/Makefile 411990 2016-03-27 14:57:59Z tijl $
+# $FreeBSD: head/net/hs-network-protocol-xmpp/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	network-protocol-xmpp
 PORTVERSION=	0.4.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net haskell
 
 MAINTAINER=	haskell@FreeBSD.org

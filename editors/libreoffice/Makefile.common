@@ -1,7 +1,7 @@
-# $FreeBSD: head/editors/libreoffice/Makefile.common 444114 2017-06-22 13:14:37Z jkim $
+# $FreeBSD: head/editors/libreoffice/Makefile.common 447247 2017-08-03 16:32:13Z jkim $
 
 PORTNAME=	libreoffice
-PORTVERSION=	5.3.4
+PORTVERSION=	5.3.5
 CATEGORIES+=	editors
 
 MAINTAINER=	office@FreeBSD.org

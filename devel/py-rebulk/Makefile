@@ -1,8 +1,8 @@
 # Created by: Andrej Ebert <andrej@ebert.su>
-# $FreeBSD: head/devel/py-rebulk/Makefile 434008 2017-02-13 17:25:00Z krion $
+# $FreeBSD: head/devel/py-rebulk/Makefile 447553 2017-08-08 17:57:15Z ultima $
 
 PORTNAME=	rebulk
-PORTVERSION=	0.8.2
+PORTVERSION=	0.9.0
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -18,10 +18,10 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
 USES=		python
 USE_PYTHON=	autoplist distutils
 
-NO_ARCH=	yes
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	Toilal
+
+NO_ARCH=	yes
 
 post-patch:
 	@${REINPLACE_CMD} -e '/setup_requires/d' ${WRKSRC}/${PYSETUP}

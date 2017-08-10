@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-asn1-data/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/devel/hs-asn1-data/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	asn1-data
-PORTVERSION=	0.7.1
-PORTREVISION=	9
+PORTVERSION=	0.7.2
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,22 +1,21 @@
 # Created by: Sergey Akifyev <asa@agava.com>
-# $FreeBSD: head/math/libqalculate/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/math/libqalculate/Makefile 447195 2017-08-03 07:13:39Z jhale $
 
 PORTNAME=	libqalculate
-PORTVERSION=	0.9.10
+DISTVERSION=	1.0.0a
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	jhale@FreeBSD.org
 COMMENT=	Multi-purpose desktop calculator (backend library)
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libcln.so:math/cln
 
-USES=		autoreconf gmake gettext libtool \
-		localbase pathfix pkgconfig readline:port
+USES=		autoreconf gmake gettext libtool localbase \
+		ncurses pathfix pkgconfig readline:port
 USE_GNOME=	glib20 intltool libxml2
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
@@ -27,8 +26,6 @@ GH_ACCOUNT=	Qalculate
 
 OPTIONS_DEFINE=	NLS
 OPTIONS_SUB=	yes
-
-.include <bsd.port.options.mk>
 
 post-patch-NLS-off:
 	@${REINPLACE_CMD} -e '/^SUBDIRS =/s|po ||g' ${WRKSRC}/Makefile.am

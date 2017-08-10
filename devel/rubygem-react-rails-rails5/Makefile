@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-react-rails-rails5/Makefile 444986 2017-07-03 19:30:34Z jrm $
+# $FreeBSD: head/devel/rubygem-react-rails-rails5/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	react-rails
 PORTVERSION=	2.2.1
@@ -6,7 +6,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	React/JSX adapter for the Ruby on Rails asset pipeline
 
 LICENSE=	APACHE20

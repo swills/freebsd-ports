@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-cli-helpers/Makefile 446089 2017-07-17 18:41:47Z sunpoet $
+# $FreeBSD: head/devel/py-cli-helpers/Makefile 447151 2017-08-02 18:35:33Z sunpoet $
 
 PORTNAME=	cli-helpers
-PORTVERSION=	0.2.2
+PORTVERSION=	0.2.3
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

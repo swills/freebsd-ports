@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/rubygem-pghero-rails5/Makefile 440102 2017-05-04 12:52:35Z jrm $
+# $FreeBSD: head/databases/rubygem-pghero-rails5/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	pghero
 PORTVERSION=	1.7.0
@@ -6,7 +6,7 @@ CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Performance dashboard for Postgres
 
 LICENSE=	MIT

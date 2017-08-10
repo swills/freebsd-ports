@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-doorkeeper-rails50/Makefile 441871 2017-05-27 20:05:06Z jrm $
+# $FreeBSD: head/security/rubygem-doorkeeper-rails50/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	doorkeeper
 PORTVERSION=	4.2.6
@@ -6,7 +6,7 @@ CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Doorkeeper is an OAuth 2 provider for Rails and Grape
 
 LICENSE=	MIT

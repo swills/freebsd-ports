@@ -1,9 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-pytsk/Makefile 444647 2017-06-29 14:30:20Z antoine $
+# $FreeBSD: head/sysutils/py-pytsk/Makefile 447476 2017-08-06 17:32:17Z antoine $
 
 PORTNAME=	pytsk
-PORTVERSION=	20170508
-PORTREVISION=	1
+PORTVERSION=	20170802
 CATEGORIES=	sysutils security devel python
 MASTER_SITES=	CHEESESHOP \
 		https://github.com/py4n6/pytsk/releases/download/${PORTVERSION}/
@@ -14,6 +13,7 @@ MAINTAINER=	antoine@FreeBSD.org
 COMMENT=	Python bindings for the Sleuthkit
 
 LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libtalloc.so:devel/talloc \
 		libtsk.so:sysutils/sleuthkit

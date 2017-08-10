@@ -1,8 +1,8 @@
 # Created by: Thomas Quinot <thomas@cuivre.fr.eu.org>
-# $FreeBSD: head/security/calife/Makefile 418840 2016-07-20 15:33:20Z mat $
+# $FreeBSD: head/security/calife/Makefile 447635 2017-08-09 18:23:48Z roberto $
 
 PORTNAME=	calife
-PORTVERSION=	3.0.5
+PORTVERSION=	3.0.6
 PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://assets.keltia.net/calife/

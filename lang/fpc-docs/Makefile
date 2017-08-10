@@ -1,5 +1,5 @@
 # Created by: John Merryweather Cooper
-# $FreeBSD: head/lang/fpc-docs/Makefile 434894 2017-02-26 17:38:04Z acm $
+# $FreeBSD: head/lang/fpc-docs/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 PORTNAME=	docs
 PORTVERSION=	3.0.2
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	fpc-
 DISTNAME=	${PORTNAME:S/s//}-pdf
 DIST_SUBDIR=	freepascal/${PORTVERSION}
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
+MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Free Pascal compiler Adobe Acrobat(tm) documentation
 
 ONLY_FOR_ARCHS=	i386 amd64

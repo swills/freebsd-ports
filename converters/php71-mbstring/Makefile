@@ -1,8 +1,6 @@
-# $FreeBSD: head/converters/php71-mbstring/Makefile 445429 2017-07-10 11:40:48Z tz $
+# $FreeBSD: head/converters/php71-mbstring/Makefile 447218 2017-08-03 14:54:24Z tz $
 
 CATEGORIES=	converters
-
-PORTREVISION=	1
 
 MASTERDIR=	${.CURDIR}/../../lang/php71
 

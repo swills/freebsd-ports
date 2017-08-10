@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-directory-tree/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/devel/hs-directory-tree/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	directory-tree
-PORTVERSION=	0.12.0
-PORTREVISION=	2
+PORTVERSION=	0.12.1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

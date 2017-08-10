@@ -1,10 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/textproc/fpc-aspell/Makefile 403082 2015-12-05 23:29:36Z marino $
+# $FreeBSD: head/textproc/fpc-aspell/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	textproc lang
 PKGNAMESUFFIX=	-aspell
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Interface to aspell spelling checker
 
 USE_FPC=	yes

@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-paperclip-rails5/Makefile 440928 2017-05-15 14:07:31Z jrm $
+# $FreeBSD: head/devel/rubygem-paperclip-rails5/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	paperclip
 PORTVERSION=	5.1.0
@@ -7,7 +7,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Easy upload management for ActiveRecord
 
 LICENSE=	MIT

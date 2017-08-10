@@ -1,10 +1,10 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/devel/pear/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/devel/pear/Makefile 447331 2017-08-04 14:05:11Z joneum $
 
 PORTNAME=	pear
-PORTVERSION=	1.10.3
+PORTVERSION=	1.10.5
 CATEGORIES=	devel
-MASTER_SITES=	http://mirror.miwibox.org/
+MASTER_SITES=	http://mirror.bsdproject.de/
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PEAR framework for PHP

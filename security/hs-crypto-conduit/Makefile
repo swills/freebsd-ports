@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/hs-crypto-conduit/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/security/hs-crypto-conduit/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	crypto-conduit
 PORTVERSION=	0.5.5
+PORTREVISION=	1
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -9,8 +10,7 @@ COMMENT=	Conduit interface for cryptographic operations (from crypto-api)
 
 LICENSE=	BSD3CLAUSE
 
-USE_CABAL=	cereal>=0.3 conduit>=1.0 conduit-extra>=1.1 crypto-api>=0.8 \
-		resourcet
+USE_CABAL=	cereal conduit conduit-extra crypto-api resourcet
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

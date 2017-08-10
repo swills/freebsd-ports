@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-sprockets-rails-rails5/Makefile 439897 2017-05-01 13:42:41Z jrm $
+# $FreeBSD: head/devel/rubygem-sprockets-rails-rails5/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	sprockets-rails
 PORTVERSION=	3.2.0
@@ -7,7 +7,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Sprockets Rails integration
 
 LICENSE=	MIT

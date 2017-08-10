@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-p2p/hs-torrent/Makefile 442133 2017-05-31 02:23:36Z danfe $
+# $FreeBSD: head/net-p2p/hs-torrent/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	torrent
-PORTVERSION=	10000.0.0
+PORTVERSION=	10000.1.1
 CATEGORIES=	net-p2p haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,10 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/fpc-xforms/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-toolkits/fpc-xforms/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	x11-toolkits lang
 PKGNAMESUFFIX=	-xforms
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	X-Forms interface for Free Pascal
 
 USE_FPC=	x11

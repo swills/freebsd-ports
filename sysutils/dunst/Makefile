@@ -1,41 +1,37 @@
 # Created by: Rod Person <rodperson@rodperson.com>
-# $FreeBSD: head/sysutils/dunst/Makefile 445280 2017-07-07 16:34:12Z sunpoet $
+# $FreeBSD: head/sysutils/dunst/Makefile 447590 2017-08-09 03:09:26Z tobik $
 
 PORTNAME=	dunst
-PORTVERSION=	1.1.0
+PORTVERSION=	1.2.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dg@syrec.org
 COMMENT=	Lightweight notification daemon
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	libcairo.so:graphics/cairo \
-		libdbus-1.so:devel/dbus \
-		libfreetype.so:print/freetype2 \
-		libnotify.so:devel/libnotify \
-		libpango-1.0.so:x11-toolkits/pango \
+LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 		libxdg-basedir.so:x11/libxdg-basedir
 
+USES=		gmake perl5 pkgconfig
 USE_GITHUB=	yes
-GH_ACCOUNT=	knopwob
-USES=		execinfo gmake pkgconfig:build perl5
-USE_GNOME=	glib20
-USE_XORG=	xext xft xinerama xscrnsaver
-MAKE_ARGS+=	MANPREFIX="${PREFIX}/man"
+GH_ACCOUNT=	dunst-project
+USE_GNOME=	gtk20 gdkpixbuf2 cairo
+USE_PERL5=	build
+USE_XORG=	x11 xrandr xinerama xscrnsaver
 
-ALL_TARGET=	dunst dunstify dunst.1
-INSTALL_TARGET=	install
-
-LDFLAGS+=	-Wall -rdynamic -lexecinfo
+MAKE_ARGS=	MANPREFIX="${PREFIX}/man"
+TEST_TARGET=	test
 
 PLIST_FILES=	bin/dunst \
 		share/dunst/dunstrc \
 		man/man1/dunst.1.gz \
 		share/dbus-1/services/org.knopwob.dunst.service
 
-post-extract:
+post-patch:
+	@${REINPLACE_CMD} -e '/dunst\.systemd\.service/d' ${WRKSRC}/Makefile
 	@${ECHO_CMD} ${PORTVERSION} > ${WRKSRC}/VERSION
 
 post-install:

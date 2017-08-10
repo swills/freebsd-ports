@@ -1,8 +1,9 @@
 # Created by: Lupe Christoph <lupe@lupe-christoph.de>
-# $FreeBSD: head/sysutils/munin-node/Makefile 438352 2017-04-12 12:39:56Z mat $
+# $FreeBSD: head/sysutils/munin-node/Makefile 447210 2017-08-03 13:34:57Z mat $
 
 PORTNAME=	munin
 PORTVERSION=	${MUNIN_VERSION}
+PORTREVISION=	1
 CATEGORIES=	sysutils perl5
 MASTER_SITES=	${MUNIN_SITES}
 PKGNAMESUFFIX=	-node
@@ -73,6 +74,7 @@ post-patch:
 	@${FIND} ${WRKSRC}/node/sbin -type f -name "*.orig" -delete
 
 post-install:
+	${REINPLACE_CMD} -i '' -e '1s,${PERL5},${PERL},' ${STAGEDIR}${PREFIX}/bin/munindoc
 	${MKDIR} ${STAGEDIR}${DBDIR}/plugin-state ${STAGEDIR}${SPOOLDIR}/async
 	${INSTALL_SCRIPT} ${.CURDIR}/plugins/* ${STAGEDIR}${DATADIR}/plugins/
 	${INSTALL_DATA} ${WRKSRC}/build/node/munin-node.conf \

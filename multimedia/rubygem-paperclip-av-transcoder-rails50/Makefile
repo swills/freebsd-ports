@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/rubygem-paperclip-av-transcoder-rails50/Makefile 441649 2017-05-25 02:15:51Z jrm $
+# $FreeBSD: head/multimedia/rubygem-paperclip-av-transcoder-rails50/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	paperclip-av-transcoder
 PORTVERSION=	0.6.4
@@ -6,7 +6,7 @@ CATEGORIES=	multimedia rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Audio/Video transcoder for Paperclip using FFMPEG/Avconv
 
 LICENSE=	MIT

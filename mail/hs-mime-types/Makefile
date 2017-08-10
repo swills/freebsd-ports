@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/hs-mime-types/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/mail/hs-mime-types/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	mime-types
-PORTVERSION=	0.1.0.6
+PORTVERSION=	0.1.0.7
 CATEGORIES=	mail haskell
 
 MAINTAINER=	haskell@FreeBSD.org

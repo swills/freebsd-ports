@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/rubygem-fast_blank/Makefile 438209 2017-04-10 20:43:01Z jrm $
+# $FreeBSD: head/devel/rubygem-fast_blank/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	fast_blank
 PORTVERSION=	1.0.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Fast String blank implementation
 
 LICENSE=	MIT

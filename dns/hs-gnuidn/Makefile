@@ -1,8 +1,7 @@
-# $FreeBSD: head/dns/hs-gnuidn/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/dns/hs-gnuidn/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	gnuidn
-PORTVERSION=	0.2.1
-PORTREVISION=	3
+PORTVERSION=	0.2.2
 CATEGORIES=	dns haskell
 
 MAINTAINER=	haskell@FreeBSD.org

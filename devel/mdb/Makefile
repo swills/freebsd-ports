@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/mdb/Makefile 446775 2017-07-27 19:52:03Z jhb $
+# $FreeBSD: head/devel/mdb/Makefile 447184 2017-08-02 23:58:03Z jhb $
 
 PORTNAME=	mdb
 PORTVERSION=	0.1
@@ -25,6 +25,12 @@ WRKSRC_SUBDIR=	freebsd/cddl/usr.bin/mdb
 CFLAGS+=	-DMDB_PREFIX=\\\"${PREFIX}\\\" -g
 
 .include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 1100021
+# This port uses CWARNFLAGS.clang to silence warnings which only works
+# in 11.0 and later.
+MAKE_ARGS+=	NO_WERROR=yes
+.endif
 
 .if !exists(${SRC_BASE}/cddl/compat) || !exists(${SRC_BASE}/sys/cddl/compat)
 IGNORE=		requires full source tree with CDDL sources

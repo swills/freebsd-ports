@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/hs-cairo/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/hs-cairo/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	cairo
-PORTVERSION=	0.13.1.0
+PORTVERSION=	0.13.3.1
 CATEGORIES=	graphics haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -10,7 +10,7 @@ COMMENT=	Binding to the Cairo library
 LICENSE=	BSD3CLAUSE
 
 USES=		pkgconfig
-USE_CABAL=	gtk2hs-buildtools mtl text>=1.0.0.0 utf8-string>=0.2
+USE_CABAL=	gtk2hs-buildtools mtl text utf8-string
 
 BUILD_DEPENDS+=	${LOCALBASE}/libdata/pkgconfig/cairo-pdf.pc:graphics/cairo
 

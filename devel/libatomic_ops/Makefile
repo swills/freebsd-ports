@@ -1,8 +1,8 @@
 # Created by: Stanislav Sedov <stas@FreeBSD.org>
-# $FreeBSD: head/devel/libatomic_ops/Makefile 443901 2017-06-19 17:50:06Z rodrigo $
+# $FreeBSD: head/devel/libatomic_ops/Makefile 447431 2017-08-05 23:12:02Z sunpoet $
 
 PORTNAME=	libatomic_ops
-PORTVERSION=	7.4.6
+PORTVERSION=	7.6.0
 PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
@@ -12,6 +12,7 @@ COMMENT=	Atomic operations access library
 
 LICENSE=	BSD2CLAUSE GPLv2
 LICENSE_COMB=	multi
+LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libltdl.so:devel/libltdl
 

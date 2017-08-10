@@ -1,5 +1,5 @@
 # Created by: Johan van Selst <johans@stack.nl>
-# $FreeBSD: head/security/py-pyme/Makefile 428596 2016-12-14 21:48:10Z johans $
+# $FreeBSD: head/security/py-pyme/Makefile 447285 2017-08-03 21:45:23Z jhale $
 
 PORTNAME=	pyme
 PORTVERSION=	0.8.1
@@ -16,6 +16,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	swig1.3:devel/swig13
 LIB_DEPENDS=	libgpgme.so:security/gpgme
+
+DEPRECATED=	Merged with GPGme project. Please use security/py-gpgme instead
+EXPIRATION_DATE=	2017-09-03
 
 USES=		gmake python:2
 USE_PYTHON=	distutils

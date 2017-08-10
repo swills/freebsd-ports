@@ -1,20 +1,24 @@
 # Created by: ats (original)
-# $FreeBSD: head/net/gopher/Makefile 422656 2016-09-23 08:41:28Z rene $
+# $FreeBSD: head/net/gopher/Makefile 447579 2017-08-08 22:15:24Z ultima $
 
 PORTNAME=	gopher
 PORTVERSION=	3.0.6
 PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://gopher.quux.org:70/give-me-gopher/ \
-		http://dl.droso.net/FreeBSD/distfiles/
-DISTFILES=	${PORTNAME}_${PORTVERSION}${EXTRACT_SUFX}
-WRKSRC=		${WRKDIR}/${PORTNAME}
+		http://aaron.baugher.biz/files/FreeBSD/ports/
+DISTNAME=	${PORTNAME}_${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	aaron@baugher.biz
 COMMENT=	Gopher client for access to a distributed document service
 
-GNU_CONFIGURE=	yes
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 USES=		gmake
+GNU_CONFIGURE=	yes
+
+WRKSRC=		${WRKDIR}/${PORTNAME}
 
 pre-patch:
 	@${FIND} ${WRKSRC} -name '*.[ch]' | ${XARGS} ${REINPLACE_CMD} -e \

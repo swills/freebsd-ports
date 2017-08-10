@@ -1,8 +1,7 @@
-# $FreeBSD: head/editors/p5-Proc-InvokeEditor/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/editors/p5-Proc-InvokeEditor/Makefile 447368 2017-08-04 20:08:36Z sunpoet $
 
 PORTNAME=	Proc-InvokeEditor
-PORTVERSION=	1.07
-PORTREVISION=	1
+PORTVERSION=	1.09
 CATEGORIES=	editors perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:MSTEVENS
@@ -17,6 +16,7 @@ LICENSE_COMB=	dual
 BUILD_DEPENDS=	p5-Carp-Assert>=0:devel/p5-Carp-Assert
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

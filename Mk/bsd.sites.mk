@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: head/Mk/bsd.sites.mk 447090 2017-08-02 08:59:21Z mat $
+# $FreeBSD: head/Mk/bsd.sites.mk 447633 2017-08-09 16:39:56Z pi $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -825,7 +825,6 @@ MASTER_SITE_MYSQL+= \
 	ftp://mirror.widexs.nl/pub/mysql/Downloads/%SUBDIR%/ \
 	ftp://mirror.switch.ch/mirror/mysql/Downloads/%SUBDIR%/ \
 	http://mysql.dp.ua/Downloads/%SUBDIR%/ \
-	http://mysql.mirrored.ca/Downloads/%SUBDIR%/ \
 	ftp://mirror.services.wisc.edu/mirrors/mysql/Downloads/%SUBDIR%/ \
 	http://mysql.mirrors.pair.com/Downloads/%SUBDIR%/ \
 	ftp://ftp.linorg.usp.br/mysql/Downloads/%SUBDIR%/ \

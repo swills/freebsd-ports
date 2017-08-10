@@ -1,9 +1,9 @@
 # Created by: Tobias Roth <ports@fsck.ch>
-# $FreeBSD: head/x11/slim/Makefile 437182 2017-03-29 06:50:28Z ashish $
+# $FreeBSD: head/x11/slim/Makefile 447399 2017-08-05 10:58:48Z kwm $
 
 PORTNAME=	slim
 PORTVERSION=	1.3.6
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.berlios.de/pub/slim/ \
 		SF/slim.berlios
@@ -45,7 +45,7 @@ PAM_CMAKE_OFF=	-DUSE_PAM=no
 UTF8_EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-utf8
 
 CONSOLEKIT_CMAKE_ON=	-DUSE_CONSOLEKIT=yes
-CONSOLEKIT_LIB_DEPENDS=	libck-connector.so:sysutils/consolekit
+CONSOLEKIT_LIB_DEPENDS=	libck-connector.so:sysutils/consolekit2
 CONSOLEKIT_CMAKE_OFF=	-DUSE_CONSOLEKIT=no
 
 post-patch:

@@ -1,8 +1,8 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/databases/py-PyGreSQL/Makefile 428394 2016-12-12 03:27:07Z wen $
+# $FreeBSD: head/databases/py-PyGreSQL/Makefile 447531 2017-08-08 02:01:27Z wen $
 
 PORTNAME=	PyGreSQL
-PORTVERSION=	5.0.3
+PORTVERSION=	5.0.4
 PORTEPOCH=	1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP

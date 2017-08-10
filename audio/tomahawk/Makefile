@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/audio/tomahawk/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/audio/tomahawk/Makefile 447453 2017-08-06 09:11:45Z tcberner $
 
 PORTNAME=	tomahawk
 PORTVERSION=	0.8.4
@@ -30,6 +30,11 @@ LIB_DEPENDS=	libattica.so:x11-toolkits/attica \
 CMAKE_ARGS=	-DBUILD_RELEASE="ON"
 CXXFLAGS+=	-Wno-cast-align -I${LOCALBASE}/include
 LDFLAGS+=	-lz
+
+BROKEN=		Does not build against new qtkeychain-0.80.0
+# https://github.com/tomahawk-player/tomahawk/commit/c8389592488c07079f40e7edb9195cfabbc58740
+DEPRECATED=	Project is dead upstream.
+EXPIRATION_DATE=2017-08-31
 
 GH_ACCOUNT=	tomahawk-player
 

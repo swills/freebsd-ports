@@ -1,10 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/net/fpc-pcap/Makefile 434894 2017-02-26 17:38:04Z acm $
+# $FreeBSD: head/net/fpc-pcap/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	net lang
 PKGNAMESUFFIX=	-pcap
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal unit for libpcap library
 
 USE_FPC=	rtl-extra

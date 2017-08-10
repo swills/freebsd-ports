@@ -1,10 +1,9 @@
 # Created by: John Merryweather Cooper
-# $FreeBSD: head/databases/fpc-mysql/Makefile 403082 2015-12-05 23:29:36Z marino $
+# $FreeBSD: head/databases/fpc-mysql/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	databases lang
 PKGNAMESUFFIX=	-mysql
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal interface to MySQL
 
 USE_FPC=	yes

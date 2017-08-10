@@ -1,11 +1,11 @@
-# $FreeBSD: head/www/rubygem-ostatus2/Makefile 443447 2017-06-12 13:54:18Z jrm $
+# $FreeBSD: head/www/rubygem-ostatus2/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	ostatus2
 PORTVERSION=	2.0.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Toolset for interacting with the OStatus2 suite of protocols
 
 LICENSE=	MIT
@@ -15,9 +15,9 @@ RUN_DEPENDS=	rubygem-addressable>=2.4:www/rubygem-addressable \
 		rubygem-openssl>=2.0:security/rubygem-openssl \
 		rubygem-http>=2.0:www/rubygem-http
 
-NO_ARCHE=	yes
+NO_ARCH=	yes
 
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 .include <bsd.port.mk>

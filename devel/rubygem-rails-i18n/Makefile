@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/rubygem-rails-i18n/Makefile 440408 2017-05-08 10:07:34Z jrm $
+# $FreeBSD: head/devel/rubygem-rails-i18n/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	rails-i18n
 PORTVERSION=	5.0.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Common locale data and translations for Rails i18n
 
 LICENSE=	MIT

@@ -1,10 +1,9 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/multimedia/fpc-dts/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/fpc-dts/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	multimedia lang
 PKGNAMESUFFIX=	-dts
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal interface to the dts library
 
 USE_FPC=	yes

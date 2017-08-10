@@ -1,11 +1,11 @@
-# $FreeBSD: head/textproc/rubygem-sass-listen/Makefile 447062 2017-08-01 17:57:54Z jrm $
+# $FreeBSD: head/textproc/rubygem-sass-listen/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	sass-listen
 PORTVERSION=	4.0.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Listens to file modifications
 
 LICENSE=	MIT

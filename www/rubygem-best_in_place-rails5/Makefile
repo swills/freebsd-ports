@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-best_in_place-rails5/Makefile 441217 2017-05-19 10:55:58Z jrm $
+# $FreeBSD: head/www/rubygem-best_in_place-rails5/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	best_in_place
 PORTVERSION=	3.1.1
@@ -6,7 +6,7 @@ CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	jQuery script to edit fields by clicking on them
 
 LICENSE=	MIT

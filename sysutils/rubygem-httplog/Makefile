@@ -1,11 +1,11 @@
-# $FreeBSD: head/sysutils/rubygem-httplog/Makefile 446633 2017-07-25 22:06:39Z jrm $
+# $FreeBSD: head/sysutils/rubygem-httplog/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	httplog
 PORTVERSION=	0.99.7
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Log outgoing HTTP requests
 
 LICENSE=	MIT

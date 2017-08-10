@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/www/gotty/Makefile 441420 2017-05-21 18:49:00Z ehaupt $
+# $FreeBSD: head/www/gotty/Makefile 447668 2017-08-10 09:33:51Z ehaupt $
 
 PORTNAME=	gotty
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www net ipv6
 
@@ -12,10 +12,10 @@ COMMENT=	Command line tool that turns your CLI tools into web applications
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+USES=		go
 USE_GITHUB=	yes
 GH_ACCOUNT=	yudai
 
-USES=		go
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${PORTNAME}
 
 PLIST_FILES=	bin/gotty

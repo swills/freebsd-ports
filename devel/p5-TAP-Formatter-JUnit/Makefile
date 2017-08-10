@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/p5-TAP-Formatter-JUnit/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/devel/p5-TAP-Formatter-JUnit/Makefile 447108 2017-08-02 14:29:47Z lwhsu $
 
 PORTNAME=	TAP-Formatter-JUnit
 PORTVERSION=	0.11
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -18,7 +18,8 @@ RUN_DEPENDS=	\
 	p5-MooseX-NonMoose>0:devel/p5-MooseX-NonMoose \
 	p5-File-Slurp>0:devel/p5-File-Slurp \
 	p5-XML-Generator>0:textproc/p5-XML-Generator \
-	p5-Test-Harness>3.12:devel/p5-Test-Harness
+	p5-Test-Harness>3.12:devel/p5-Test-Harness \
+	p5-List-MoreUtils>0:lang/p5-List-MoreUtils
 BUILD_DEPENDS:=	${RUN_DEPENDS}
 TEST_DEPENDS=	p5-IO-stringy>=0:devel/p5-IO-stringy
 

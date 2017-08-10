@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/p5-Email-MIME-ContentType/Makefile 446825 2017-07-28 13:07:30Z sunpoet $
+# $FreeBSD: head/mail/p5-Email-MIME-ContentType/Makefile 447369 2017-08-04 20:08:41Z sunpoet $
 
 PORTNAME=	Email-MIME-ContentType
-PORTVERSION=	1.020
+PORTVERSION=	1.021
 CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

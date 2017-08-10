@@ -1,5 +1,5 @@
 #! /bin/sh
-# $FreeBSD: head/Mk/Scripts/check_leftovers.sh 415573 2016-05-20 19:01:59Z mat $
+# $FreeBSD: head/Mk/Scripts/check_leftovers.sh 447548 2017-08-08 17:21:45Z tcberner $
 #
 # MAINTAINER: portmgr@FreeBSD.org
 #
@@ -150,6 +150,12 @@ while read modtype path extra; do
 			# xmlcatmgr is constantly updating catalog.ports ignore
 			# modification to that file
 			share/xml/catalog.ports) ;;
+			# Ignore ghc's doc index
+			share/doc/ghc-%%GHC_VERSION%%/*) ;;
+			share/doc/ghc-%%GHC_VERSION%%/html/libraries/%%PORTNAME%%-%%PORTVERSION%%/html) ;;
+			# Ignore ghc's package conf
+			lib/ghc-%%GHC_VERSION%%/package.conf.d/*) ;;
+			lib/ghc-%%GHC_VERSION%%/package.conf.d/%%PORTNAME%%-%%PORTVERSION%%.conf) ;;
 			# Ignore common system config files
 			/etc/group|\
 			/etc/make.conf|\

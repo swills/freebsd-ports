@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-pytest/Makefile 445110 2017-07-06 00:03:15Z sunpoet $
+# $FreeBSD: head/devel/py-pytest/Makefile 447158 2017-08-02 18:36:09Z sunpoet $
 
 PORTNAME=	pytest
-PORTVERSION=	3.1.3
+PORTVERSION=	3.2.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

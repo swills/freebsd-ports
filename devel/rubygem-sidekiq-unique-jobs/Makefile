@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/rubygem-sidekiq-unique-jobs/Makefile 445255 2017-07-07 15:01:03Z jrm $
+# $FreeBSD: head/devel/rubygem-sidekiq-unique-jobs/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	sidekiq-unique-jobs
 PORTVERSION=	5.0.9
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Ensure only a single copy of a job is in Redis
 
 LICENSE=	MIT

@@ -1,10 +1,9 @@
 # Created by: lbartoletti <coder@tuxfamily.org>
-# $FreeBSD: head/databases/pgrouting/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/databases/pgrouting/Makefile 447552 2017-08-08 17:55:01Z ultima $
 
 PORTNAME=	pgrouting
-PORTVERSION=	2.3.2
+PORTVERSION=	2.4.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
 CATEGORIES=	databases geography
 
 MAINTAINER=	lbartoletti@tuxfamily.org
@@ -17,7 +16,7 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs\
 		libgmp.so:math/gmp
 RUN_DEPENDS=	${LOCALBASE}/share/postgresql/contrib/postgis-2.1/postgis.sql:databases/postgis21
 
-USES=		compiler:c++11-lib cmake localbase pgsql:9.1+ pkgconfig
+USES=		compiler:c++11-lib cmake:outsource localbase pgsql:9.1+ pkgconfig
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	pgRouting

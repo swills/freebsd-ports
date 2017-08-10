@@ -1,8 +1,9 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/www/hs-http-server/Makefile 415742 2016-05-23 20:35:01Z amdmi3 $
+# $FreeBSD: head/www/hs-http-server/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	http-server
 PORTVERSION=	1.0.6
+PORTREVISION=	1
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,9 +1,8 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/databases/powa-archivist/Makefile 424658 2016-10-25 22:28:22Z mat $
+# $FreeBSD: head/databases/powa-archivist/Makefile 447667 2017-08-10 08:24:05Z girgen $
 
 PORTNAME=	powa-archivist
-DISTVERSIONPREFIX=	REL_
-DISTVERSION=	3_1_0
+PORTVERSION=	3.1.1.a.20161106
 CATEGORIES=	databases
 
 MAINTAINER=	girgen@FreeBSD.org
@@ -16,6 +15,7 @@ RUN_DEPENDS=	${LOCALBASE}/lib/postgresql/pg_stat_kcache.so:databases/pg_stat_kca
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	dalibo
+GH_TAGNAME=	521fdf
 
 USES=		gmake pgsql:9.4+
 WANT_PGSQL=	server contrib

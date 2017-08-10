@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-kaminari-activerecord-rails5/Makefile 439897 2017-05-01 13:42:41Z jrm $
+# $FreeBSD: head/www/rubygem-kaminari-activerecord-rails5/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	kaminari-activerecord
 PORTVERSION=	1.0.1
@@ -7,7 +7,7 @@ CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Kaminari Active Record adapter
 
 LICENSE=	MIT

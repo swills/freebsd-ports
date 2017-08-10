@@ -1,11 +1,11 @@
 # Created by: Iouri V. Ivliev
-# $FreeBSD: head/graphics/pfstmo/Makefile 444988 2017-07-03 20:38:11Z tcberner $
+# $FreeBSD: head/graphics/pfstmo/Makefile 447397 2017-08-05 10:36:04Z rakuco $
 
 PORTNAME=	pfstmo
 PORTVERSION=	1.5
 PORTREVISION=	6
 CATEGORIES=	graphics
-MASTER_SITES=	SF/pfstools/${PORTNAME}/${PORTVERSION}
+MASTER_SITES=	SF/pfstools/${PORTNAME}_depreciated/${PORTVERSION}
 
 MAINTAINER=	ii@any.com.ru
 COMMENT=	Tone mapping operators
@@ -26,5 +26,8 @@ CONFIGURE_ENV+=	CPPFLAGS="${PFS_CPPFLAGS} ${DEBUG_FLAGS}" \
 		LDFLAGS="${PFS_LDFLAGS}"
 
 USES=		gmake pkgconfig compiler:openmp
+# GCC 6 defaults to -std=gnu++14, and the port does not build with C++11 or
+# later (bug 219299).
+USE_CXXSTD=	gnu++03
 
 .include <bsd.port.mk>

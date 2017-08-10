@@ -1,8 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/grpc/Makefile 446741 2017-07-27 13:57:30Z mat $
+# $FreeBSD: head/devel/grpc/Makefile 447539 2017-08-08 13:09:57Z vanilla $
 
 PORTNAME=	grpc
-PORTVERSION=	1.4.2
+PORTVERSION=	1.4.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -18,8 +18,8 @@ LIB_DEPENDS=	libgflags.so:devel/gflags \
 		libcares.so:dns/c-ares
 
 USE_GITHUB=	yes
-GH_TUPLE=	google:boringssl:a93bc11:boringssl/third_party/boringssl \
-		google:benchmark:v1.1.0:benchmark/third_party/benchmark
+GH_TUPLE=	google:boringssl:ba2d3df:boringssl/third_party/boringssl \
+		google:benchmark:v1.2.0:benchmark/third_party/benchmark
 
 USES=		cmake perl5 pkgconfig
 USE_LDCONFIG=	yes

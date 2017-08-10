@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Inline-Python/Makefile 445106 2017-07-06 00:02:49Z sunpoet $
+# $FreeBSD: head/devel/p5-Inline-Python/Makefile 447418 2017-08-05 23:10:58Z sunpoet $
 
 PORTNAME=	Inline-Python
-PORTVERSION=	0.55
+PORTVERSION=	0.56
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -16,7 +16,8 @@ LICENSE_COMB=	dual
 BUILD_DEPENDS=	p5-Inline>=0.46:devel/p5-Inline
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Proc-ProcessTable>=0.53:devel/p5-Proc-ProcessTable \
-		p5-Test-Deep>=0:devel/p5-Test-Deep
+		p5-Test-Deep>=0:devel/p5-Test-Deep \
+		p5-Test-Number-Delta>=0:devel/p5-Test-Number-Delta
 
 USE_PERL5=	configure
 USES=		perl5 python

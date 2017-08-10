@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/pear-Horde_Form/Makefile 437682 2017-04-04 06:41:38Z mm $
+# $FreeBSD: head/www/pear-Horde_Form/Makefile 447173 2017-08-02 19:23:51Z mm $
 
 PORTNAME=	Horde_Form
-PORTVERSION=	2.0.17
+PORTVERSION=	2.0.18
 CATEGORIES=	www pear
 
 MAINTAINER=	horde@FreeBSD.org

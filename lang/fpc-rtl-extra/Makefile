@@ -1,9 +1,8 @@
-# $FreeBSD: head/lang/fpc-rtl-extra/Makefile 434894 2017-02-26 17:38:04Z acm $
+# $FreeBSD: head/lang/fpc-rtl-extra/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	lang
 PKGNAMESUFFIX=	-rtl-extra
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal rtl-extra unit
 
 USE_FPC=	yes

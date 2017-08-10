@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 445288 2017-07-08 00:12:53Z swills $
+# $FreeBSD: head/deskutils/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -114,6 +114,7 @@
     SUBDIR += horde-nag
     SUBDIR += hot-babe
     SUBDIR += howm
+    SUBDIR += hs-fdo-notify
     SUBDIR += ical
     SUBDIR += ithought
     SUBDIR += jjclient

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 446988 2017-07-31 17:42:33Z rene $
+# $FreeBSD: head/www/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -257,6 +257,7 @@
     SUBDIR += hs-happstack-server
     SUBDIR += hs-heist
     SUBDIR += hs-hjsmin
+    SUBDIR += hs-http-api-data
     SUBDIR += hs-http-client
     SUBDIR += hs-http-client-tls
     SUBDIR += hs-http-conduit

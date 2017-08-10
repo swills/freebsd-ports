@@ -1,10 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/graphics/fpc-cairo/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/fpc-cairo/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	graphics lang
 PKGNAMESUFFIX=	-cairo
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal interface to cairo library
 
 USE_FPC=	fcl-base fcl-image fcl-res pasjpeg rtl-objpas x11

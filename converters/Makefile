@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/Makefile 445710 2017-07-13 18:55:27Z antoine $
+# $FreeBSD: head/converters/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 #
 
     COMMENT = Character code converters
@@ -33,6 +33,7 @@
     SUBDIR += gbase
     SUBDIR += gbsdconv
     SUBDIR += hs-aeson
+    SUBDIR += hs-aeson-compat
     SUBDIR += hs-aeson-pretty
     SUBDIR += hs-dataenc
     SUBDIR += hs-json

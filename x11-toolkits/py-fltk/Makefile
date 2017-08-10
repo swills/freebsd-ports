@@ -1,9 +1,8 @@
 # Created by: Radim Kolar
-# $FreeBSD: head/x11-toolkits/py-fltk/Makefile 431314 2017-01-12 20:03:22Z sunpoet $
+# $FreeBSD: head/x11-toolkits/py-fltk/Makefile 447422 2017-08-05 23:11:17Z sunpoet $
 
 PORTNAME=	fltk
-PORTVERSION=	1.3.3.1
-PORTREVISION=	1
+PORTVERSION=	1.3.4.1
 CATEGORIES=	x11-toolkits python
 MASTER_SITES=	SF/py${PORTNAME}/py${PORTNAME}/pyFltk-${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

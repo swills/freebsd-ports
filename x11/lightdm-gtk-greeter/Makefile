@@ -1,9 +1,9 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/x11/lightdm-gtk-greeter/Makefile 446523 2017-07-24 12:47:45Z woodsb02 $
+# $FreeBSD: head/x11/lightdm-gtk-greeter/Makefile 447392 2017-08-05 08:17:54Z woodsb02 $
 
 PORTNAME=	lightdm-gtk-greeter
 PORTVERSION=	2.0.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	https://launchpad.net/${PORTNAME}/${PORTVERSION:R}/${PORTVERSION}/+download/
 

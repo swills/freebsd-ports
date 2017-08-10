@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/rubygem-statsd-instrument/Makefile 446734 2017-07-27 11:20:03Z jrm $
+# $FreeBSD: head/devel/rubygem-statsd-instrument/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	statsd-instrument
 PORTVERSION=	2.1.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	StatsD client for Ruby applications
 
 LICENSE=	MIT

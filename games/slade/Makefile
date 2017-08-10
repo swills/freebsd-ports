@@ -1,9 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/slade/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/slade/Makefile 447230 2017-08-03 15:23:44Z danfe $
 
 PORTNAME=	slade
-PORTVERSION=	3.1.1.4
-PORTREVISION=	2
+PORTVERSION=	3.1.1.5
 CATEGORIES=	games
 
 MAINTAINER=	danfe@FreeBSD.org

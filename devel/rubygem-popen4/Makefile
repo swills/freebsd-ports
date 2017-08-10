@@ -1,5 +1,5 @@
 # Created by: rpsfa@rit.edu
-# $FreeBSD: head/devel/rubygem-popen4/Makefile 432064 2017-01-21 17:29:23Z sunpoet $
+# $FreeBSD: head/devel/rubygem-popen4/Makefile 447263 2017-08-03 17:27:03Z sunpoet $
 
 PORTNAME=	popen4
 PORTVERSION=	0.1.4
@@ -12,6 +12,7 @@ COMMENT=	Cross platform API for managing child processes
 
 LICENSE=	GPLv2 RUBY
 LICENSE_COMB=	dual
+LICENSE_FILE_RUBY=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-open4>=0.4.0:devel/rubygem-open4 \
 		rubygem-platform>=0.4.0:devel/rubygem-platform

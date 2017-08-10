@@ -1,9 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/www/py-django19/Makefile 445502 2017-07-11 16:24:00Z rene $
+# $FreeBSD: head/www/py-django19/Makefile 447190 2017-08-03 00:58:59Z feld $
 
 PORTNAME=	django
 PORTVERSION=	1.9.13
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP \
 		https://www.djangoproject.com/m/releases/${PORTVERSION:R}/
@@ -17,6 +17,8 @@ COMMENT=	High-level Python Web Framework
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz
 
 DEPRECATED=	Unsupported upstream
 EXPIRATION_DATE=2017-09-01

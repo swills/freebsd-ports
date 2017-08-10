@@ -1,8 +1,8 @@
 # Created by: Massimiliano Stucchi <mstucchi@ripe.net>
-# $FreeBSD: head/net/py-ripe.atlas.cousteau/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/py-ripe.atlas.cousteau/Makefile 447475 2017-08-06 16:53:14Z sunpoet $
 
 PORTNAME=	ripe.atlas.cousteau
-PORTVERSION=	1.0.6
+PORTVERSION=	1.4
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=${PYTHON_PKGNAMEPREFIX}
@@ -11,12 +11,15 @@ MAINTAINER=	mstucchi@ripe.net
 COMMENT=	Python wrapper around the RIPE Atlas API
 
 LICENSE=	GPLv3
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil \
 		${PYTHON_PKGNAMEPREFIX}socketio-client>=0.6.5:net/py-socketio-client \
-		${PYTHON_PKGNAMEPREFIX}requests>=2.7.0:www/py-requests
+		${PYTHON_PKGNAMEPREFIX}requests>=2.7.0:www/py-requests \
+		${PYTHON_PKGNAMEPREFIX}websocket-client<0.39:www/py-websocket-client
 
-USES=	python
+NO_ARCH=	yes
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

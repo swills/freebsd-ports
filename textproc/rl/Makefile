@@ -1,15 +1,16 @@
 # Created by: David Sze <dsze@alumni.uwaterloo.ca>
-# $FreeBSD: head/textproc/rl/Makefile 343401 2014-02-08 22:14:29Z ehaupt $
+# $FreeBSD: head/textproc/rl/Makefile 447122 2017-08-02 16:20:01Z amdmi3 $
 
 PORTNAME=	rl
 PORTVERSION=	0.2.7
 CATEGORIES=	textproc
-MASTER_SITES=	http://arthurdejong.org/rl/
+MASTER_SITES=	https://arthurdejong.org/rl/
 
 MAINTAINER=	jharris@widomaker.com
 COMMENT=	Randomizes lines from a specified input file
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
 

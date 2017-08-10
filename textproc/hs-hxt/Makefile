@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/hs-hxt/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/textproc/hs-hxt/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	hxt
-PORTVERSION=	9.3.1.15
+PORTVERSION=	9.3.1.16
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

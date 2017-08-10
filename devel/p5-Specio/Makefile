@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Specio/Makefile 444896 2017-07-02 17:36:00Z sunpoet $
+# $FreeBSD: head/devel/p5-Specio/Makefile 447355 2017-08-04 20:07:29Z sunpoet $
 
 PORTNAME=	Specio
-PORTVERSION=	0.38
+PORTVERSION=	0.40
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DROLSKY
@@ -18,7 +18,9 @@ BUILD_DEPENDS=	p5-Devel-StackTrace>=0:devel/p5-Devel-StackTrace \
 		p5-Eval-Closure>=0:devel/p5-Eval-Closure \
 		p5-MRO-Compat>=0:devel/p5-MRO-Compat \
 		p5-Module-Runtime>=0:devel/p5-Module-Runtime \
-		p5-Role-Tiny>=1.003003:devel/p5-Role-Tiny
+		p5-Role-Tiny>=1.003003:devel/p5-Role-Tiny \
+		p5-Sub-Quote>=0:devel/p5-Sub-Quote \
+		p5-Try-Tiny>=0:lang/p5-Try-Tiny
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal \
 		p5-Test-Needs>=0:devel/p5-Test-Needs \

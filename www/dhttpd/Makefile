@@ -1,8 +1,9 @@
 # Created by: Gea-Suan Lin <gslin@ccca.nctu.edu.tw>
-# $FreeBSD: head/www/dhttpd/Makefile 341088 2014-01-25 20:30:10Z lme $
+# $FreeBSD: head/www/dhttpd/Makefile 447117 2017-08-02 16:09:43Z lme $
 
 PORTNAME=	dhttpd
 PORTVERSION=	1.02a
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://bsd-geek.de/FreeBSD/distfiles/
 EXTRACT_SUFX=	.tgz

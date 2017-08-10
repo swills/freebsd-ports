@@ -1,5 +1,5 @@
 # Created by: rpsfa@rit.edu
-# $FreeBSD: head/devel/rubygem-devise-rails50/Makefile 441635 2017-05-25 01:43:37Z jrm $
+# $FreeBSD: head/devel/rubygem-devise-rails50/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	devise
 PORTVERSION=	4.3.0
@@ -7,7 +7,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Flexible authentication solution for Rails with Warden
 
 LICENSE=	MIT

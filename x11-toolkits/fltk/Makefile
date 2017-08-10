@@ -1,9 +1,8 @@
 # Created by: Dima Sivachenko <dima@Chg.RU>
-# $FreeBSD: head/x11-toolkits/fltk/Makefile 441907 2017-05-28 10:58:00Z antoine $
+# $FreeBSD: head/x11-toolkits/fltk/Makefile 447379 2017-08-04 20:48:24Z danfe $
 
 PORTNAME=	fltk
-PORTVERSION=	1.3.3
-PORTREVISION=	5
+PORTVERSION=	1.3.4
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://fltk.org/pub/${PORTNAME}/${PORTVERSION}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-source
@@ -12,6 +11,7 @@ MAINTAINER=	danfe@FreeBSD.org
 COMMENT=	Cross-platform C++ graphical user interface toolkit
 
 LICENSE=	LGPL20
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
@@ -39,9 +39,11 @@ post-patch: .SILENT
 	${REINPLACE_CMD} -E \
 		's,(.*)LDFLAGS(.*)LINKSHARED(.*),\1LINKSHARED\2LDFLAGS\3,' \
 			${WRKSRC}/fluid/Makefile
-	${REINPLACE_CMD} -e '/Fl_XFont_On_Demand/s,class,& FL_EXPORT,' \
-		${WRKSRC}/FL/x.H
-	${REINPLACE_CMD} -e 's,result = 0;,fl_open_display(); &,' \
-		${WRKSRC}/src/Fl_x.cxx
+
+post-install:
+.for x in fltk fltk_forms fltk_gl fltk_images
+	${LN} -sf lib${x}.so.${PORTVERSION:R} \
+		${STAGEDIR}${PREFIX}/lib/lib${x}.so.1
+.endfor
 
 .include <bsd.port.mk>

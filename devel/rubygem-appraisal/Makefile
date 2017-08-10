@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-appraisal/Makefile 442364 2017-06-02 09:01:13Z amdmi3 $
+# $FreeBSD: head/devel/rubygem-appraisal/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	appraisal
 PORTVERSION=	2.2.0
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Integrates with bundler and rake to test library dependencies
 
 LICENSE=	MIT

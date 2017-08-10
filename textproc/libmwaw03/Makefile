@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/libmwaw03/Makefile 447057 2017-08-01 17:43:43Z jkim $
+# $FreeBSD: head/textproc/libmwaw03/Makefile 447137 2017-08-02 18:14:20Z jkim $
 
 PORTNAME=	libmwaw
 PORTVERSION=	0.3.12
@@ -9,7 +9,7 @@ PKGNAMESUFFIX=	03
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Import library for some old mac text documents
 
-LICENSE=	LGPL21 MPL
+LICENSE=	LGPL21+ MPL20
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	librevenge-0.0.so:textproc/librevenge

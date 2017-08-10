@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 446662 2017-07-26 16:44:40Z dvl $
+# $FreeBSD: head/dns/Makefile 447414 2017-08-05 23:10:37Z sunpoet $
 #
 
     COMMENT = Domain Name Service tools
@@ -196,6 +196,7 @@
     SUBDIR += rubygem-idn-ruby
     SUBDIR += rubygem-net-dns
     SUBDIR += rubygem-public_suffix
+    SUBDIR += rubygem-public_suffix2
     SUBDIR += rubygem-public_suffix_service
     SUBDIR += rubygem-simpleidn
     SUBDIR += rubygem-validates_hostname

@@ -1,12 +1,12 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/games/naev-data/Makefile 422006 2016-09-13 14:07:21Z amdmi3 $
+# $FreeBSD: head/games/naev-data/Makefile 447302 2017-08-03 23:21:18Z acm $
 
 PORTNAME=	naev
-PORTVERSION=	0.6.1
+PORTVERSION=	0.7.0
+DISTVERSIONSUFFIX=	-ndata
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION}/
 PKGNAMESUFFIX=	-data
-DISTNAME=	ndata-${PORTVERSION}
 EXTRACT_ONLY=	# empty
 
 MAINTAINER=	acm@FreeBSD.org

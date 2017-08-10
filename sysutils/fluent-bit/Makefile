@@ -1,5 +1,5 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/sysutils/fluent-bit/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/sysutils/fluent-bit/Makefile 447435 2017-08-05 23:13:45Z sunpoet $
 
 PORTNAME=	fluent-bit
 DISTVERSION=	0.11.6
@@ -21,8 +21,8 @@ USES=		cmake:noninja
 
 USE_RC_SUBR=	${PORTNAME}
 
-post-stage:
-		@${MV} ${STAGEDIR}${ETCDIR}/${PORTNAME}.conf ${STAGEDIR}${ETCDIR}/${PORTNAME}.conf.sample
-		@${MV} ${STAGEDIR}${ETCDIR}/parsers.conf ${STAGEDIR}${ETCDIR}/parsers.conf.sample
+post-install:
+	${MV} ${STAGEDIR}${ETCDIR}/${PORTNAME}.conf ${STAGEDIR}${ETCDIR}/${PORTNAME}.conf.sample
+	${MV} ${STAGEDIR}${ETCDIR}/parsers.conf ${STAGEDIR}${ETCDIR}/parsers.conf.sample
 
 .include <bsd.port.mk>

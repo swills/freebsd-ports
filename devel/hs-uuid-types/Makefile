@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-uuid-types/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/devel/hs-uuid-types/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	uuid-types
-PORTVERSION=	1.0.2
+PORTVERSION=	1.0.3
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

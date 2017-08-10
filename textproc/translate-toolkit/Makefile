@@ -1,8 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/textproc/translate-toolkit/Makefile 444524 2017-06-27 23:35:00Z jpaetzel $
+# $FreeBSD: head/textproc/translate-toolkit/Makefile 447126 2017-08-02 17:40:39Z jpaetzel $
 
 PORTNAME=	translate-toolkit
-PORTVERSION=	2.2.3
+PORTVERSION=	2.2.4
 CATEGORIES=	textproc
 MASTER_SITES=	CHEESESHOP
 

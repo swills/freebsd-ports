@@ -1,5 +1,5 @@
 # Created by: Johannes Jost Meixner <xmj@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-rails-dom-testing-rails50/Makefile 441647 2017-05-25 02:11:02Z jrm $
+# $FreeBSD: head/textproc/rubygem-rails-dom-testing-rails50/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	rails-dom-testing
 PORTVERSION=	2.0.3
@@ -7,7 +7,7 @@ CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Analyse and compare DOMs using Nokogiri
 
 LICENSE=	MIT

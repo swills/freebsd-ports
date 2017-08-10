@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-streaming-commons/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/devel/hs-streaming-commons/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	streaming-commons
-PORTVERSION=	0.1.12.1
+PORTVERSION=	0.1.18
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -9,7 +9,7 @@ COMMENT=	Common lower-level functions needed by various streaming data libraries
 
 LICENSE=	MIT
 
-USE_CABAL=	blaze-builder>=0.3 network random stm text zlib
+USE_CABAL=	async blaze-builder network random stm text zlib
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

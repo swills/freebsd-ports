@@ -1,5 +1,5 @@
 # Created by: rpsfa@rit.edu
-# $FreeBSD: head/devel/rubygem-simple_form-rails50/Makefile 441643 2017-05-25 01:58:46Z jrm $
+# $FreeBSD: head/devel/rubygem-simple_form-rails50/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	simple_form
 PORTVERSION=	3.5.0
@@ -7,7 +7,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Forms made easy
 
 LICENSE=	MIT

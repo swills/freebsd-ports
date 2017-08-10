@@ -1,8 +1,9 @@
 # Created by: Chin-San Huang <chinsan@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/icinga-core/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/net-mgmt/icinga-core/Makefile 447117 2017-08-02 16:09:43Z lme $
 
 PORTNAME=	icinga-core
 DISTNAME=	icinga-${PORTVERSION}
+PORTREVISION=	1
 
 COMMENT=	Enterprise grade open source monitoring system based on Nagios
 

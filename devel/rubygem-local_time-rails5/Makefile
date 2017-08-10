@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-local_time-rails5/Makefile 439908 2017-05-01 19:25:45Z sunpoet $
+# $FreeBSD: head/devel/rubygem-local_time-rails5/Makefile 447562 2017-08-08 18:57:41Z sunpoet $
 
 PORTNAME=	local_time
-PORTVERSION=	1.0.3
+PORTVERSION=	2.0.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5

@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/net/vinagre/Makefile 428330 2016-12-11 04:36:57Z woodsb02 $
+# $FreeBSD: head/net/vinagre/Makefile 447436 2017-08-06 00:31:24Z woodsb02 $
 
 PORTNAME=	vinagre
 PORTVERSION=	3.18.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

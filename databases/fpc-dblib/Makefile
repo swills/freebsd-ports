@@ -1,10 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/databases/fpc-dblib/Makefile 403082 2015-12-05 23:29:36Z marino $
+# $FreeBSD: head/databases/fpc-dblib/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	databases lang
 PKGNAMESUFFIX=	-dblib
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal DB-Library and FreeTDS unit
 
 USE_FPC=	yes

@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/step/Makefile 444988 2017-07-03 20:38:11Z tcberner $
+# $FreeBSD: head/science/step/Makefile 447195 2017-08-03 07:13:39Z jhale $
 
 PORTNAME=	step
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	science kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

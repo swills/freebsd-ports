@@ -1,12 +1,12 @@
 # Created by: Wen heping <wenheping@gmail.com>
-# $FreeBSD: head/www/piwik/Makefile 440157 2017-05-05 13:56:14Z miwi $
+# $FreeBSD: head/www/piwik/Makefile 447615 2017-08-09 09:33:48Z tz $
 
 PORTNAME=	piwik
-PORTVERSION=	3.0.3
+PORTVERSION=	3.0.4
 CATEGORIES=	www
 MASTER_SITES=	http://builds.piwik.org/
 
-MAINTAINER=	hans@nordhaug.priv.no
+MAINTAINER=	tz@FreeBSD.org
 COMMENT=	Open Source Web Analytics Software Program
 
 LICENSE=	GPLv3

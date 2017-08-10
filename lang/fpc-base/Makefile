@@ -1,12 +1,12 @@
 # Created by: John Merryweather Cooper <coop9211@uidaho.edu>
-# $FreeBSD: head/lang/fpc-base/Makefile 434894 2017-02-26 17:38:04Z acm $
+# $FreeBSD: head/lang/fpc-base/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 PORTNAME=	base
 PORTVERSION=	3.0.2
 CATEGORIES=	lang
 PKGNAMEPREFIX=	fpc-
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
+MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Meta package to install all of the Free Pascal base
 
 USES=		metaport

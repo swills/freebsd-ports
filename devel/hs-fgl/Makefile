@@ -1,8 +1,8 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/devel/hs-fgl/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/devel/hs-fgl/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	fgl
-PORTVERSION=	5.5.2.1
+PORTVERSION=	5.5.3.1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

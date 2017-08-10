@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-toolkits/hs-vte/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/x11-toolkits/hs-vte/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	vte
-PORTVERSION=	0.13.0.2
+PORTVERSION=	0.13.1.1
 CATEGORIES=	x11-toolkits haskell
 
 MAINTAINER=	haskell@FreeBSD.org

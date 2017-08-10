@@ -1,10 +1,9 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/devel/fpc-fcl-res/Makefile 403082 2015-12-05 23:29:36Z marino $
+# $FreeBSD: head/devel/fpc-fcl-res/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-fcl-res
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal resource handlers (FCL)
 
 USE_FPC=	yes

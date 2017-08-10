@@ -1,8 +1,8 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-Cookies/Makefile 437696 2017-04-04 07:38:18Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-Cookies/Makefile 447371 2017-08-04 20:08:51Z sunpoet $
 
 PORTNAME=	HTTP-Cookies
-PORTVERSION=	6.03
+PORTVERSION=	6.04
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,8 +1,8 @@
 # Created by: Aron Schlesinger <as@bsdgroup.de>
-# $FreeBSD: head/www/groupoffice/Makefile 446627 2017-07-25 20:52:06Z joneum $
+# $FreeBSD: head/www/groupoffice/Makefile 447613 2017-08-09 09:17:27Z joneum $
 
 PORTNAME=	groupoffice
-PORTVERSION=	6.2.51
+PORTVERSION=	6.2.53
 DISTVERSIONPREFIX=	com-
 CATEGORIES=	www
 MASTER_SITES=	SF/group-office/${DISTVERSION:R}
@@ -17,8 +17,8 @@ RESTRICTED=	Free for personal use only
 
 NO_ARCH=	yes
 NO_BUILD=	yes
-USE_PHP=	mysqli session mbstring pcre xml
 USES=		mysql shebangfix php:web python
+USE_PHP=	mysqli session mbstring pcre xml
 SHEBANG_FILES=	go/vendor/tcpdf/tools/tcpdf_addfont.php \
 		groupoffice \
 		groupofficecli.php \

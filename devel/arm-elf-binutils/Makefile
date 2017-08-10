@@ -1,8 +1,8 @@
 # Created by: Espen Skoglund <esk@ira.uka.de>
-# $FreeBSD: head/devel/arm-elf-binutils/Makefile 435364 2017-03-03 20:44:20Z danilo $
+# $FreeBSD: head/devel/arm-elf-binutils/Makefile 447584 2017-08-09 00:43:50Z danilo $
 
 PORTNAME=	binutils
-PORTVERSION=	2.28
+PORTVERSION=	2.29
 CATEGORIES=	devel
 MASTER_SITES=	SOURCEWARE/binutils/releases
 PKGNAMEPREFIX=	arm-elf-

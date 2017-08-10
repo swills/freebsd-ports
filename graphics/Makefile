@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 446439 2017-07-23 02:42:03Z acm $
+# $FreeBSD: head/graphics/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 #
 
     COMMENT = Graphics tools and libraries
@@ -350,6 +350,7 @@
     SUBDIR += hs-cairo
     SUBDIR += hs-dia-base
     SUBDIR += hs-dia-functions
+    SUBDIR += hs-graphviz
     SUBDIR += hs-svgcairo
     SUBDIR += hugin
     SUBDIR += icat
@@ -633,6 +634,7 @@
     SUBDIR += opencv-java
     SUBDIR += opendx
     SUBDIR += opengl-man
+    SUBDIR += openicc-config
     SUBDIR += openimageio
     SUBDIR += openjpeg
     SUBDIR += openjpeg15
@@ -925,6 +927,7 @@
     SUBDIR += qt5-opengl
     SUBDIR += qt5-pixeltool
     SUBDIR += qt5-svg
+    SUBDIR += qt5-wayland
     SUBDIR += qtawesome
     SUBDIR += quat
     SUBDIR += quat-gui

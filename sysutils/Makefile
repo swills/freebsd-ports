@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 446994 2017-07-31 19:39:07Z rene $
+# $FreeBSD: head/sysutils/Makefile 447658 2017-08-09 23:11:58Z woodsb02 $
 #
 
     COMMENT = System utilities
@@ -181,7 +181,7 @@
     SUBDIR += conky
     SUBDIR += conky-awesome
     SUBDIR += consolehm
-    SUBDIR += consolekit
+    SUBDIR += consolekit2
     SUBDIR += consul
     SUBDIR += consul-alerts
     SUBDIR += contractor
@@ -248,6 +248,7 @@
     SUBDIR += downtimed
     SUBDIR += dsbbatmon
     SUBDIR += dsbdriverd
+    SUBDIR += dsblogoutmgr
     SUBDIR += dsbmc
     SUBDIR += dsbmc-cli
     SUBDIR += dsbmd
@@ -452,9 +453,11 @@
     SUBDIR += hptcli
     SUBDIR += hs-angel
     SUBDIR += hs-cpu
+    SUBDIR += hs-disk-free-space
     SUBDIR += hs-ekg
     SUBDIR += hs-ekg-core
     SUBDIR += hs-ekg-json
+    SUBDIR += hs-mountpoints
     SUBDIR += htop
     SUBDIR += httplog
     SUBDIR += hwstat
@@ -1183,6 +1186,9 @@
     SUBDIR += u-boot-duovero
     SUBDIR += u-boot-imx-serial-loader
     SUBDIR += u-boot-master
+    SUBDIR += u-boot-nanopi-m1plus
+    SUBDIR += u-boot-nanopi-neo
+    SUBDIR += u-boot-nanopi-neo-air
     SUBDIR += u-boot-olimex-a20-som-evb
     SUBDIR += u-boot-olinuxino-lime
     SUBDIR += u-boot-orangepi-one
@@ -1196,6 +1202,8 @@
     SUBDIR += u-boot-sinovoip-bpi-m3
     SUBDIR += u-boot-utilite
     SUBDIR += u-boot-wandboard
+    SUBDIR += u-boot-zedboard
+    SUBDIR += u-boot-zybo
     SUBDIR += ua
     SUBDIR += ucspi-ipc
     SUBDIR += ucspi-proxy

@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/gnome-session/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11/gnome-session/Makefile 447399 2017-08-05 10:58:48Z kwm $
 
 PORTNAME=	gnome-session
 PORTVERSION=	3.18.1.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11 gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -14,7 +14,7 @@ COMMENT=	Session component for the GNOME 3 desktop
 LIB_DEPENDS=	libdbus-glib-1.so:devel/dbus-glib \
 		libjson-glib-1.0.so:devel/json-glib \
 		libupower-glib.so:sysutils/upower
-RUN_DEPENDS=	${LOCALBASE}/sbin/console-kit-daemon:sysutils/consolekit \
+RUN_DEPENDS=	${LOCALBASE}/sbin/console-kit-daemon:sysutils/consolekit2 \
 		${LOCALBASE}/bin/xdpyinfo:x11/xdpyinfo
 
 PORTSCOUT=	limitw:1,even

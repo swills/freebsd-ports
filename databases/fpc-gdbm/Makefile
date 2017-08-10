@@ -1,10 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/databases/fpc-gdbm/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/fpc-gdbm/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	databases lang
 PKGNAMESUFFIX=	-gdbm
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal interface to the GNU database system
 
 USE_FPC=	yes

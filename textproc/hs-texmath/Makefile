@@ -1,8 +1,8 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/textproc/hs-texmath/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/textproc/hs-texmath/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	texmath
-PORTVERSION=	0.8.3
+PORTVERSION=	0.9.4.1
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -10,8 +10,8 @@ COMMENT=	Conversion between formats used to represent mathematics
 
 LICENSE=	GPLv2
 
-USE_CABAL=	aeson mtl network>=2.6 network-uri>=2.6 \
-		pandoc-types>=1.12.3.3 parsec>=3 syb text xml
+USE_CABAL=	aeson mtl network network-uri pandoc-types parsec split \
+		syb text xml
 
 FLAGS_ENABLE=	network-uri
 FLAGS_DISABLE=	executable

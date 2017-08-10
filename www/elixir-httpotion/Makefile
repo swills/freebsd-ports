@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/elixir-httpotion/Makefile 423176 2016-10-03 08:31:43Z olgeni $
+# $FreeBSD: head/www/elixir-httpotion/Makefile 447596 2017-08-09 08:03:26Z olgeni $
 
 PORTNAME=	httpotion
-PORTVERSION=	3.0.2
+PORTVERSION=	3.0.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	elixir-

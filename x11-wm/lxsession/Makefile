@@ -1,8 +1,9 @@
 # Created by: chinsan
-# $FreeBSD: head/x11-wm/lxsession/Makefile 432738 2017-01-29 13:04:00Z amdmi3 $
+# $FreeBSD: head/x11-wm/lxsession/Makefile 447399 2017-08-05 10:58:48Z kwm $
 
 PORTNAME=	lxsession
 PORTVERSION=	0.5.3
+PORTREVISION=	1
 CATEGORIES=	x11-wm
 MASTER_SITES=	SF/lxde/LXSession%20%28session%20manager%29/LXSession%200.5.x/
 
@@ -18,7 +19,7 @@ LIB_DEPENDS=	libdbus-glib-1.so:devel/dbus-glib \
 		libfreetype.so:print/freetype2 \
 		libunique-1.0.so:x11-toolkits/unique \
 		libpolkit-agent-1.so:sysutils/polkit \
-		libck-connector.so:sysutils/consolekit
+		libck-connector.so:sysutils/consolekit2
 
 USES=		autoreconf gmake localbase pkgconfig tar:xz
 USE_GNOME=	glib20 gtk20 intltool cairo gdkpixbuf2 libxslt

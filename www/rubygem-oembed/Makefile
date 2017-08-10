@@ -1,11 +1,11 @@
-# $FreeBSD: head/www/rubygem-oembed/Makefile 438512 2017-04-14 13:22:04Z jrm $
+# $FreeBSD: head/www/rubygem-oembed/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	oembed
 PORTVERSION=	0.2.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Slim library to work with oEmbed format
 
 LICENSE=	MIT

@@ -1,9 +1,8 @@
 # Created by: Hans Petter Selasky <hselasky@FreeBSD.org>
-# $FreeBSD: head/audio/midipp/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/audio/midipp/Makefile 447351 2017-08-04 18:15:57Z kwm $
 
 PORTNAME=	midipp
-PORTVERSION=	1.3.3
-PORTREVISION=	1
+PORTVERSION=	1.3.4
 CATEGORIES=	audio
 MASTER_SITES=	http://www.selasky.org/hans_petter/distfiles/ \
 		http://home.selasky.org:8192/distfiles/
@@ -13,14 +12,13 @@ COMMENT=	MIDI playback, recording, and live performance tool
 
 LICENSE=	BSD2CLAUSE
 
-BUILD_DEPENDS=	libumidi>=2.0.13:audio/libumidi
+BUILD_DEPENDS=	libumidi>=2.0.14:audio/libumidi
 LIB_DEPENDS=	libumidi20.so:audio/libumidi
 
 USES=		qmake tar:bzip2
 
-_USE_QT4=	corelib gui moc_build rcc_build network
-_USE_QT5=	core gui network widgets \
-                printsupport buildtools_build
+_USE_QT4=	corelib gui moc_build network rcc_build
+_USE_QT5=	buildtools_build core gui network printsupport widgets
 
 OPTIONS_SINGLE=		TOOLKIT
 OPTIONS_SINGLE_TOOLKIT=	QT4 QT5

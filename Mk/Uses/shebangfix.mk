@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/shebangfix.mk 445751 2017-07-14 12:47:55Z amdmi3 $
+# $FreeBSD: head/Mk/Uses/shebangfix.mk 447527 2017-08-08 01:10:57Z feld $
 #
 # Replace #! interpreters in scripts by what we actually have.
 #
@@ -94,7 +94,8 @@ fix-shebang:
 .endif
 .if defined(SHEBANG_FILES)
 	@cd ${WRKSRC}; \
-		${ECHO_CMD} ${SHEBANG_FILES} | ${XARGS} ${SED} -i '' ${_SHEBANG_REINPLACE_ARGS}
+		${FIND} ${SHEBANG_FILES} -type f \
+		-exec ${SED} -i '' ${_SHEBANG_REINPLACE_ARGS} {} +
 .endif
 
 .endif

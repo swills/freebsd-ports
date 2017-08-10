@@ -1,10 +1,10 @@
-# $FreeBSD: head/www/varnish5/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/www/varnish5/Makefile 447632 2017-08-09 16:10:56Z mat $
 
 PORTNAME=	varnish
-PORTVERSION=	5.1.1
-PORTREVISION=	2
+PORTVERSION=	5.1.3
+DISTVERSIONPREFIX=	varnish-
+PORTREVISION=	0
 CATEGORIES=	www
-MASTER_SITES=	http://repo.varnish-cache.org/source/
 PKGNAMESUFFIX=	5
 
 MAINTAINER=	feld@FreeBSD.org
@@ -12,20 +12,24 @@ COMMENT=	High-performance HTTP accelerator
 
 LICENSE=	BSD2CLAUSE
 
+BUILD_DEPENDS=	rst2man:textproc/py-docutils
 LIB_DEPENDS=	libpcre.so:devel/pcre
 
 CONFLICTS=	varnish-2.* varnish-3.* varnish4-4.*
 
-USES=		cpe gmake libedit libtool ncurses pathfix \
+USES=		autoreconf cpe gmake libedit libtool ncurses pathfix \
 		pkgconfig python:2,build readline shebangfix
 SHEBANG_FILES=	lib/libvcc/vmodtool.py
 CPE_VENDOR=	varnish-cache
 CFLAGS+=	-I${LOCALBASE}/include
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--localstatedir=${PREFIX} --enable-tests
-CONFIGURE_ENV=	RST2MAN=true
+CONFIGURE_ARGS=	--localstatedir=${PREFIX} --without-dot
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	varnishcache
+GH_PROJECT=	varnish-cache
 
 USERS=		varnish varnishlog
 GROUPS=		varnish

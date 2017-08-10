@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/erlang-unicode_util_compat/Makefile 444238 2017-06-24 19:10:06Z olgeni $
+# $FreeBSD: head/devel/erlang-unicode_util_compat/Makefile 447617 2017-08-09 10:25:07Z olgeni $
 
 PORTNAME=	unicode_util_compat
-PORTVERSION=	0.2.0
-PORTREVISION=	2
+PORTVERSION=	0.3.1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

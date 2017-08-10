@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/textproc/pear-Text_Template/Makefile 443143 2017-06-11 02:28:44Z sunpoet $
+# $FreeBSD: head/textproc/pear-Text_Template/Makefile 447338 2017-08-04 14:31:45Z joneum $
 
 PORTNAME=	Text_Template
 PORTVERSION=	1.2.0
@@ -12,8 +12,6 @@ COMMENT=	Simple template engine
 
 BUILD_DEPENDS=	${PEARDIR}/.channels/pear.phpunit.de.reg:devel/pear-channel-phpunit
 RUN_DEPENDS=	${PEARDIR}/.channels/pear.phpunit.de.reg:devel/pear-channel-phpunit
-
-BROKEN=		unfetchable, redirects to https://phpunit.de/
 
 USES=	pear
 PEAR_CHANNEL=	phpunit

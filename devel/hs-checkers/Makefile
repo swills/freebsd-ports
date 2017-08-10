@@ -1,8 +1,8 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/devel/hs-checkers/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/devel/hs-checkers/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	checkers
-PORTVERSION=	0.4.3
+PORTVERSION=	0.4.7
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

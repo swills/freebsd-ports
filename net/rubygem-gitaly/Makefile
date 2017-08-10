@@ -1,18 +1,23 @@
-# $FreeBSD: head/net/rubygem-gitaly/Makefile 445151 2017-07-06 14:03:59Z tz $
+# $FreeBSD: head/net/rubygem-gitaly/Makefile 447610 2017-08-09 09:12:13Z tz $
 
 PORTNAME=	gitaly
-PORTVERSION=	0.5.0
+PORTVERSION=	0.6.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
 MAINTAINER=	tz@FreeBSD.org
 COMMENT=	Auto-generated gRPC client for gitaly
 
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/ruby/LICENSE.txt
+
+BUILD_DEPENDS=	rubygem-bundler>=1.12:sysutils/rubygem-bundler \
+		rubygem-rake>=10.0:devel/rubygem-rake
 RUN_DEPENDS=	rubygem-google-protobuf>=3.1:devel/rubygem-google-protobuf \
-		rubygem-grpc>=1.4.0:net/rubygem-grpc
+		rubygem-grpc>=1.0:net/rubygem-grpc
 
 NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 .include <bsd.port.mk>

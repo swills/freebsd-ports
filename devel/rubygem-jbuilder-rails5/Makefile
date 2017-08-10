@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-jbuilder-rails5/Makefile 443119 2017-06-10 21:12:57Z jrm $
+# $FreeBSD: head/devel/rubygem-jbuilder-rails5/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	jbuilder
 PORTVERSION=	2.7.0
@@ -7,7 +7,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Create JSON structures via a Builder-style DSL
 
 LICENSE=	MIT

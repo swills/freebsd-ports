@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-spring-rails5/Makefile 441514 2017-05-23 11:09:53Z jrm $
+# $FreeBSD: head/devel/rubygem-spring-rails5/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	spring
 PORTVERSION=	2.0.2
@@ -7,7 +7,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Rails application preloader
 
 LICENSE=	MIT

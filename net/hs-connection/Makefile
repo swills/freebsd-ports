@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/hs-connection/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/net/hs-connection/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	connection
-PORTVERSION=	0.2.5
+PORTVERSION=	0.2.8
 CATEGORIES=	net haskell
 
 MAINTAINER=	haskell@FreeBSD.org

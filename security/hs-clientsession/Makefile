@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/hs-clientsession/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/security/hs-clientsession/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	clientsession
-PORTVERSION=	0.9.1.1
+PORTVERSION=	0.9.1.2
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

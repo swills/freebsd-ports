@@ -1,13 +1,8 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/sysutils/u-boot-orangepi-plus-2e/Makefile 444329 2017-06-25 23:47:24Z linimon $
+# $FreeBSD: head/sysutils/u-boot-orangepi-plus-2e/Makefile 447121 2017-08-02 16:17:19Z imp $
 
 MAINTAINER=	amutu@amutu.com
-COMMENT=	Cross-build U-Boot loader for OrangePi Plus 2E
-
-LICENSE=	GPLv2
-
 MASTERDIR=	${.CURDIR}/../u-boot-master
-DESCR=		${.CURDIR}/pkg-descr
 
 MODEL=		orangepi-plus-2e
 BOARD_CONFIG=	orangepi_plus2e_defconfig

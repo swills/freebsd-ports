@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/Makefile 442260 2017-05-31 19:25:55Z danfe $
+# $FreeBSD: head/net-p2p/Makefile 447385 2017-08-05 03:15:32Z feld $
 #
 
     COMMENT = Peer-to-peer network applications
@@ -37,6 +37,7 @@
     SUBDIR += gtk-gnutella
     SUBDIR += gtorrentviewer
     SUBDIR += hs-torrent
+    SUBDIR += jackett
     SUBDIR += jigdo
     SUBDIR += ktorrent
     SUBDIR += libbt

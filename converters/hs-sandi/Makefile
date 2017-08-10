@@ -1,7 +1,7 @@
-# $FreeBSD: head/converters/hs-sandi/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/converters/hs-sandi/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	sandi
-PORTVERSION=	0.3.5
+PORTVERSION=	0.4.0
 CATEGORIES=	converters haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -9,7 +9,7 @@ COMMENT=	Data encoding library
 
 LICENSE=	BSD3CLAUSE
 
-USE_CABAL=	conduit exceptions>=0.6
+USE_CABAL=	conduit exceptions stringsearch
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

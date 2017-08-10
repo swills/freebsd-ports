@@ -1,8 +1,8 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/www/hs-cgi/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/www/hs-cgi/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	cgi
-PORTVERSION=	3001.2.2.2
+PORTVERSION=	3001.3.0.2
 PORTEPOCH=	1
 CATEGORIES=	www haskell
 

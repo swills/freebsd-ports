@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 446994 2017-07-31 19:39:07Z rene $
+# $FreeBSD: head/games/Makefile 447284 2017-08-03 21:44:51Z tobik $
 #
 
     COMMENT = Games and related software
@@ -620,6 +620,7 @@
     SUBDIR += monsterz
     SUBDIR += moon-buggy
     SUBDIR += moonlander
+    SUBDIR += moonlight-embedded
     SUBDIR += mopesnake
     SUBDIR += moria
     SUBDIR += motogt

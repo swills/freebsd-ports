@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv@kvedulv.de>
-# $FreeBSD: head/sysutils/rubygem-hammer_cli_foreman/Makefile 440378 2017-05-07 21:27:04Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-hammer_cli_foreman/Makefile 447168 2017-08-02 18:37:03Z sunpoet $
 
 PORTNAME=	hammer_cli_foreman
-PORTVERSION=	0.10.2
+PORTVERSION=	0.11.0
 CATEGORIES=	sysutils ruby
 MASTER_SITES=	RG
 
@@ -23,7 +23,6 @@ PLIST_FILES=	"@sample etc/hammer/cli.modules.d/foreman.yml.sample"
 
 post-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/etc/hammer/cli.modules.d
-	${INSTALL_DATA} ${WRKSRC}/config/foreman.yml \
-		${STAGEDIR}${PREFIX}/etc/hammer/cli.modules.d/foreman.yml.sample
+	${INSTALL_DATA} ${WRKSRC}/config/foreman.yml ${STAGEDIR}${PREFIX}/etc/hammer/cli.modules.d/foreman.yml.sample
 
 .include <bsd.port.mk>

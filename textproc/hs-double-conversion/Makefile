@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/hs-double-conversion/Makefile 434738 2017-02-24 17:57:08Z dim $
+# $FreeBSD: head/textproc/hs-double-conversion/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	double-conversion
-PORTVERSION=	2.0.1.0
+PORTVERSION=	2.0.2.0
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/hs-persistent/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/databases/hs-persistent/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	persistent
-PORTVERSION=	2.2
+PORTVERSION=	2.7.0
 CATEGORIES=	databases haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -11,8 +11,8 @@ LICENSE=	MIT
 
 USE_CABAL=	aeson>=0.5 attoparsec base64-bytestring blaze-html>=0.5 \
 		blaze-markup>=0.5.1 conduit>=1.0 exceptions>=0.6 \
-		fast-logger>=2.1 lifted-base>=0.1 monad-control>=0.3 \
-		monad-logger>=0.3 mtl path-pieces>=0.1 resource-pool \
+		fast-logger>=2.1 http-api-data lifted-base>=0.1 monad-control>=0.3 \
+		monad-logger>=0.3 mtl old-locale path-pieces>=0.1 resource-pool \
 		resourcet>=1.1 scientific silently tagged text>=0.8 \
 		transformers-base unordered-containers vector
 

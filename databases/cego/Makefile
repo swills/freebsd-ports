@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/cego/Makefile 446869 2017-07-29 07:01:49Z pi $
+# $FreeBSD: head/databases/cego/Makefile 447401 2017-08-05 12:12:35Z pi $
 
 PORTNAME=	cego
-PORTVERSION=	2.33.21
+PORTVERSION=	2.33.22
 CATEGORIES=	databases
 MASTER_SITES=	http://www.lemke-it.com/
 
@@ -16,14 +16,12 @@ LIB_DEPENDS=	liblfcbase.so:devel/lfcbase \
 RUN_DEPENDS=	${LOCALBASE}/bin/sudo:security/sudo \
 		bash:shells/bash
 
-GNU_CONFIGURE=	yes
-TEST_TARGET=	check
-
-USE_LDCONFIG=	yes
-
 USES=		libtool localbase ncurses readline shebangfix
 SHEBANG_FILES=	tools/cgbackup tools/cgrecover tools/cgsimload \
 		tools/logManager tools/backupManager
+USE_LDCONFIG=	yes
+GNU_CONFIGURE=	yes
+TEST_TARGET=	check
 
 USERS=		cego
 GROUPS=		cego

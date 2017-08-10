@@ -1,11 +1,11 @@
-# $FreeBSD: head/multimedia/rubygem-av/Makefile 438204 2017-04-10 19:40:29Z jrm $
+# $FreeBSD: head/multimedia/rubygem-av/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	av
 PORTVERSION=	0.9.0
 CATEGORIES=	multimedia rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Programmable Ruby interface for FFMPEG/Libav
 
 LICENSE=	MIT

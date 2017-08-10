@@ -1,9 +1,8 @@
 # Created by: Babak Farrokhi <farrokhi@FreeBSD.org>
-# $FreeBSD: head/sysutils/istatserver/Makefile 441456 2017-05-22 13:30:13Z farrokhi $
+# $FreeBSD: head/sysutils/istatserver/Makefile 447402 2017-08-05 12:13:37Z farrokhi $
 
 PORTNAME=	istatserver
-PORTVERSION=	3.01
-PORTREVISION=	2
+PORTVERSION=	3.02
 CATEGORIES=	sysutils
 MASTER_SITES=	https://s3.amazonaws.com/bjango/files/istatserverlinux/
 

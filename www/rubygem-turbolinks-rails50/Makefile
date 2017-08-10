@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-turbolinks-rails50/Makefile 441662 2017-05-25 02:41:52Z jrm $
+# $FreeBSD: head/www/rubygem-turbolinks-rails50/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	turbolinks
 PORTVERSION=	5.0.1
@@ -6,7 +6,7 @@ CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Turbolinks makes following links in your web application faster
 
 LICENSE=	MIT

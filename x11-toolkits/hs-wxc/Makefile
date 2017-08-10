@@ -1,19 +1,19 @@
-# $FreeBSD: head/x11-toolkits/hs-wxc/Makefile 443053 2017-06-10 01:51:02Z sunpoet $
+# $FreeBSD: head/x11-toolkits/hs-wxc/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	wxc
-PORTVERSION=	0.91.0.0
+PORTVERSION=	0.92.3.0
 CATEGORIES=	x11-toolkits haskell
 
 MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	wxHaskell C++ wrapper
 
-USE_CABAL=	wxdirect>=0.91
+USE_CABAL=	split wxdirect
 
-USES=		dos2unix
+USES=		dos2unix pkgconfig
 USE_WX=		3.0
 WX_COMPS=	wx
 
-OPTIONS_EXCLUDE=DOCS
+IGNORE_DOCS=	yes
 
 post-patch::
 	@${REINPLACE_CMD} 's|"wx-config"|"wxgtk2u-3.0-config"| ; \

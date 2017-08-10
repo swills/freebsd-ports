@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/mate-session-manager/Makefile 445014 2017-07-04 11:44:30Z kwm $
+# $FreeBSD: head/x11/mate-session-manager/Makefile 447399 2017-08-05 10:58:48Z kwm $
 
 PORTNAME=	mate-session-manager
 PORTVERSION=	1.18.0
+PORTREVISION=	1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -13,7 +14,7 @@ COMMENT=	Session component for the MATE desktop
 LIB_DEPENDS=	libdbus-glib-1.so:devel/dbus-glib \
 		libdbus-1.so:devel/dbus \
 		libupower-glib.so:sysutils/upower
-RUN_DEPENDS=	${LOCALBASE}/sbin/console-kit-daemon:sysutils/consolekit \
+RUN_DEPENDS=	${LOCALBASE}/sbin/console-kit-daemon:sysutils/consolekit2 \
 		${LOCALBASE}/bin/xdpyinfo:x11/xdpyinfo
 
 PORTSCOUT=	limitw:1,even

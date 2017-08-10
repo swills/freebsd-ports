@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-p2p/radarr/Makefile 444319 2017-06-25 18:38:38Z feld $
+# $FreeBSD: head/net-p2p/radarr/Makefile 447236 2017-08-03 16:04:58Z feld $
 
 PORTNAME=	radarr
 PORTVERSION=	0.2.0.778
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	net-p2p
 MASTER_SITES=	https://github.com/Radarr/Radarr/releases/download/v${PORTVERSION}/
 DISTNAME=	Radarr.develop.${PORTVERSION}.linux
@@ -23,6 +23,7 @@ NO_BUILD=	YES
 WRKSRC=	${WRKDIR}/Radarr
 
 USERS=	radarr
+GROUPS=	radarr
 
 OPTIONS_DEFINE=	X11
 

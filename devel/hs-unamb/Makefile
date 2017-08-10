@@ -1,9 +1,9 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/devel/hs-unamb/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/devel/hs-unamb/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	unamb
 PORTVERSION=	0.2.5
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

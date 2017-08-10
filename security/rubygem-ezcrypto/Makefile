@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer
-# $FreeBSD: head/security/rubygem-ezcrypto/Makefile 440344 2017-05-07 15:52:12Z miwi $
+# $FreeBSD: head/security/rubygem-ezcrypto/Makefile 447266 2017-08-03 17:27:19Z sunpoet $
 
 PORTNAME=	ezcrypto
 PORTVERSION=	0.7.2
@@ -13,7 +13,6 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
 NO_ARCH=	yes
-
 USE_RUBY=	yes
 USES=		gem
 

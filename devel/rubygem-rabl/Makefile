@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-rabl/Makefile 439710 2017-04-28 23:42:23Z jrm $
+# $FreeBSD: head/devel/rubygem-rabl/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	rabl
 PORTVERSION=	0.13.1
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	General ruby templating with json, bson, xml and msgpack support
 
 LICENSE=	MIT

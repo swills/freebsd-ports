@@ -1,8 +1,9 @@
 # Created by: Volker Stolz <vs@FreeBSD.org>
-# $FreeBSD: head/x11/hs-X11/Makefile 435289 2017-03-02 18:02:57Z tcberner $
+# $FreeBSD: head/x11/hs-X11/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	X11
 PORTVERSION=	1.8
+PORTREVISION=	1
 CATEGORIES=	x11 haskell
 
 MAINTAINER=	haskell@FreeBSD.org

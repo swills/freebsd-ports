@@ -1,5 +1,5 @@
 # Created by: IWATSUKI Hiroyuki <don@na.rim.or.jp>
-# $FreeBSD: head/textproc/rubygem-tidy/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/textproc/rubygem-tidy/Makefile 447267 2017-08-03 17:27:24Z sunpoet $
 
 PORTNAME=	tidy
 PORTVERSION=	1.1.2
@@ -9,8 +9,10 @@ MASTER_SITES=	RG
 MAINTAINER=	don@na.rim.or.jp
 COMMENT=	Ruby interface to HTML Tidy Library Project
 
-NO_ARCH=	yes
+LICENSE=	BSD2CLAUSE RUBY
+LICENSE_COMB=	dual
 
+NO_ARCH=	yes
 USE_RUBY=	yes
 USES=		gem
 

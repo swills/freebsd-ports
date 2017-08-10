@@ -1,11 +1,10 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/graphics/fpc-opengl/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/fpc-opengl/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 PORTREVISION=	1
 CATEGORIES=	graphics lang
 PKGNAMESUFFIX=	-opengl
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal interface to the OpenGL library
 
 USE_FPC=	x11

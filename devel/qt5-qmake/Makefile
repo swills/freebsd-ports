@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/qt5-qmake/Makefile 442460 2017-06-02 20:03:12Z tcberner $
+# $FreeBSD: head/devel/qt5-qmake/Makefile 447127 2017-08-02 17:47:11Z tcberner $
 
 PORTNAME=	qmake
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 PKGNAMEPREFIX=	qt5-
 

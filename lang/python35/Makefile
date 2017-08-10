@@ -1,9 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/python35/Makefile 444534 2017-06-28 02:37:53Z dbaio $
+# $FreeBSD: head/lang/python35/Makefile 447651 2017-08-09 19:36:07Z sunpoet $
 
 PORTNAME=	python
 PORTVERSION=	${PYTHON_PORTVERSION}
-PORTREVISION=	4
 CATEGORIES=	lang python ipv6
 MASTER_SITES=	PYTHON/ftp/python/${PYTHON_PORTVERSION}
 PKGNAMESUFFIX=	${PYTHON_SUFFIX}
@@ -143,6 +142,17 @@ post-install:
 .endif
 	for i in ${STAGEDIR}${PREFIX}/lib/python${PYTHON_VER}/lib-dynload/*.so; do \
 		${STRIP_CMD} $$i; done								# Strip shared extensions
+# This code block exists for the qemu-user enabled cross build environment.
+# When using this environment in poudriere, CC is not set to the default
+# of /usr/bin/cc and a cross-compile toolchain is used.  We need to hand
+# edit this so that the run time configuration for python matches what the
+# FreeBSD base system provides.  sbruno 02Aug2017
+.if ${CC} == /nxb-bin/usr/bin/cc
+	@${REINPLACE_CMD} -e 's=/nxb-bin==' \
+		${STAGEDIR}${PREFIX}/lib/python3.5/_sysconfigdata.py
+	@${REINPLACE_CMD} -e 's=/nxb-bin==' \
+		${STAGEDIR}${PREFIX}/lib/python3.5/config-3.5m/Makefile
+.endif
 	${INSTALL_DATA} ${WRKSRC}/Tools/gdb/libpython.py \
 		${STAGEDIR}${PREFIX}/lib/libpython${PYTHON_VER}${ABIFLAGS}.so.1.0-gdb.py
 

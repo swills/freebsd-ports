@@ -1,9 +1,9 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/science/hs-bio/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/science/hs-bio/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	bio
 PORTVERSION=	0.5.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	science haskell
 
 MAINTAINER=	haskell@FreeBSD.org

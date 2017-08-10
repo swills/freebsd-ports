@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/py-django-devel/Makefile 441894 2017-05-28 03:53:31Z sunpoet $
+# $FreeBSD: head/www/py-django-devel/Makefile 447188 2017-08-03 00:55:48Z feld $
 
 PORTNAME=	django
 PORTVERSION=	${SNAPSHOTDATE}
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,6 +13,8 @@ MAINTAINER=	python@FreeBSD.org
 COMMENT=	High-level Python Web framework
 
 LICENSE=	BSD3CLAUSE
+
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz
 
 SNAPSHOTDATE=	20150709
 

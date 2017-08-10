@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <xmj@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-rails-deprecated_sanitizer-rails5/Makefile 439897 2017-05-01 13:42:41Z jrm $
+# $FreeBSD: head/devel/rubygem-rails-deprecated_sanitizer-rails5/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	rails-deprecated_sanitizer
 PORTVERSION=	1.0.3
@@ -7,7 +7,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Deprecated sanitizer API extracted from Action View
 
 LICENSE=	MIT

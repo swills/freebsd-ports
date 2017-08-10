@@ -1,10 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.rog>
-# $FreeBSD: head/databases/fpc-sqlite/Makefile 414014 2016-04-25 16:13:38Z mat $
+# $FreeBSD: head/databases/fpc-sqlite/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	databases lang
 PKGNAMESUFFIX=	-sqlite
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal interface to SQLite
 
 USE_FPC=	yes

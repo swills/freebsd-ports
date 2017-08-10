@@ -1,9 +1,9 @@
 # Created by: Maurice Castro <maurice@serc.rmit.edu.au>
-# $FreeBSD: head/math/R/Makefile 446636 2017-07-25 23:28:26Z jrm $
+# $FreeBSD: head/math/R/Makefile 447178 2017-08-02 21:27:43Z jrm $
 
 PORTNAME=		R
 PORTVERSION=		3.4.1
-PORTREVISION=		3
+PORTREVISION=		4
 CATEGORIES=		math lang
 MASTER_SITES=		CRAN/src/base/R-${PORTVERSION:C|\..*||}
 
@@ -84,6 +84,7 @@ FLANG_LDFLAGS=		-L${LOCALBASE}/flang/lib -lflang -lexecinfo
 FLANG_CONFIGURE_ENV=	F77="${F77}" FC="${FC}" FFLAGS="${FFLAGS}"
 FLANG_MAKE_ENV=		F77="${F77}" FC="${FC}" FFLAGS="${FFLAGS}"
 GFORTRAN_USES=		fortran
+GFORTRAN_RUN_DEPENDS=	wget:ftp/wget
 GHOSTSCRIPT_IMPLIES=	X11
 GHOSTSCRIPT_USES=	ghostscript
 ICU_CONFIGURE_WITH=	ICU

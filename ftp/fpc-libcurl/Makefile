@@ -1,10 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/ftp/fpc-libcurl/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/ftp/fpc-libcurl/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	ftp lang
 PKGNAMESUFFIX=	-libcurl
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal interface to libcurl
 
 USE_FPC=	yes

@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/rubygem-bootsnap/Makefile 446051 2017-07-17 03:02:05Z jrm $
+# $FreeBSD: head/devel/rubygem-bootsnap/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	bootsnap
 PORTVERSION=	1.1.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Boot large ruby/rails apps faster
 
 LICENSE=	MIT

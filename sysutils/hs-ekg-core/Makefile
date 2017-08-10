@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/hs-ekg-core/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/sysutils/hs-ekg-core/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	ekg-core
-PORTVERSION=	0.1.1.0
+PORTVERSION=	0.1.1.1
 CATEGORIES=	sysutils haskell
 
 MAINTAINER=	haskell@FreeBSD.org

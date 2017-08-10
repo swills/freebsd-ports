@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/py-docutils/Makefile 444494 2017-06-27 16:15:01Z sunpoet $
+# $FreeBSD: head/textproc/py-docutils/Makefile 447372 2017-08-04 20:08:57Z sunpoet $
 
 PORTNAME=	docutils
-PORTVERSION=	0.13.1
+PORTVERSION=	0.14
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +13,7 @@ COMMENT=	Python Documentation Utilities
 LICENSE=	BSD2CLAUSE GPLv3+ PD PSFL
 LICENSE_COMB=	multi
 
-PORTSCOUT=	limit:^[0-9\.]*$$
+PORTSCOUT?=	limit:^[0-9\.]*$$
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

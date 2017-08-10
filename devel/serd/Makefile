@@ -1,8 +1,8 @@
 # Created by: meka
-# $FreeBSD: head/devel/serd/Makefile 442784 2017-06-06 16:38:00Z mat $
+# $FreeBSD: head/devel/serd/Makefile 447197 2017-08-03 08:28:36Z wen $
 
 PORTNAME=	serd
-PORTVERSION=	0.26.0
+PORTVERSION=	0.28.0
 CATEGORIES=	devel
 MASTER_SITES=	http://download.drobilla.net/
 

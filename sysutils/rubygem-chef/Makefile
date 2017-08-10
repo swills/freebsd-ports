@@ -1,8 +1,9 @@
 # Created by: Renaud Chaput <renchap@cocoa-x.com>
-# $FreeBSD: head/sysutils/rubygem-chef/Makefile 446982 2017-07-31 15:50:51Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-chef/Makefile 447513 2017-08-07 18:52:09Z sunpoet $
 
 PORTNAME=	chef
 PORTVERSION=	13.2.20
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	RG
 
@@ -36,7 +37,7 @@ RUN_DEPENDS=	rubygem-addressable>=0:www/rubygem-addressable \
 		rubygem-rspec-core>=3.5:devel/rubygem-rspec-core \
 		rubygem-rspec-expectations>=3.5:devel/rubygem-rspec-expectations \
 		rubygem-rspec-mocks>=3.5:devel/rubygem-rspec-mocks \
-		rubygem-rspec_junit_formatter>=:devel/rubygem-rspec_junit_formatter \
+		rubygem-rspec_junit_formatter>=0.2.0:devel/rubygem-rspec_junit_formatter \
 		rubygem-serverspec>=2.7:sysutils/rubygem-serverspec \
 		rubygem-specinfra>=2.10:sysutils/rubygem-specinfra \
 		rubygem-syslog-logger>=1.6:sysutils/rubygem-syslog-logger \

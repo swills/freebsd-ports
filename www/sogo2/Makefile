@@ -1,8 +1,8 @@
 # Created by: Euan Thoms <euan@potensol.com>
-# $FreeBSD: head/www/sogo2/Makefile 436381 2017-03-18 05:04:48Z acm $
+# $FreeBSD: head/www/sogo2/Makefile 447319 2017-08-04 04:27:59Z acm $
 
 PORTNAME=		sogo2
-PORTVERSION=		2.3.20
+PORTVERSION=		2.3.22
 CATEGORIES=		www gnustep
 MASTER_SITES=		http://www.sogo.nu/files/downloads/SOGo/Sources/
 DISTNAME=		SOGo-${PORTVERSION}

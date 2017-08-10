@@ -1,8 +1,7 @@
-# $FreeBSD: head/math/hs-Agda-stdlib/Makefile 409208 2016-02-19 20:51:27Z pgj $
+# $FreeBSD: head/math/hs-Agda-stdlib/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	Agda-stdlib
-PORTVERSION=	0.9
-PORTREVISION=	1
+PORTVERSION=	0.13
 
 DISTVERSIONPREFIX=	v
 CATEGORIES=	math haskell

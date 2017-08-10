@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/horde-turba/Makefile 436664 2017-03-21 23:38:47Z mm $
+# $FreeBSD: head/mail/horde-turba/Makefile 447173 2017-08-02 19:23:51Z mm $
 
 PORTNAME=	turba
-PORTVERSION=	4.2.19
+PORTVERSION=	4.2.20
 PKGNAMEPREFIX=	horde-
 CATEGORIES=	mail www pear
 

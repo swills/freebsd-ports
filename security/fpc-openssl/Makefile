@@ -1,10 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/security/fpc-openssl/Makefile 436248 2017-03-15 14:45:54Z mat $
+# $FreeBSD: head/security/fpc-openssl/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	security lang
 PKGNAMESUFFIX=	-openssl
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal unit for OpenSSL
 
 USE_FPC=	rtl-extra

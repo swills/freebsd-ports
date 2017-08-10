@@ -1,9 +1,9 @@
 # Created by: Janky Jay <ek@purplehat.org>
-# $FreeBSD: head/security/maia/Makefile 446993 2017-07-31 19:17:10Z rene $
+# $FreeBSD: head/security/maia/Makefile 447519 2017-08-07 21:44:00Z adamw $
 
 PORTNAME=	maia
 DISTVERSION=	1.0.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	http://www.purplehat.org/downloads/maia/
 
@@ -168,7 +168,7 @@ WANT_PGSQL=	server
 .endif
 
 .if ${PORT_OPTIONS:MDOVECOT2}
-RUN_DEPENDS+=	dovecot:mail/dovecot2
+RUN_DEPENDS+=	dovecot:mail/dovecot
 .endif
 
 .if ${PORT_OPTIONS:MPOSTFIX}

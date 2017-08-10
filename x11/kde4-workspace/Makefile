@@ -1,15 +1,15 @@
-# $FreeBSD: head/x11/kde4-workspace/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/x11/kde4-workspace/Makefile 447399 2017-08-05 10:58:48Z kwm $
 
 PORTNAME=	kde-workspace
 PORTVERSION=	${KDE4_WORKSPACE_VERSION}
-PORTREVISION=	6
+PORTREVISION=	8
 CATEGORIES=	x11 kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE Plasma Desktop
 
 LIB_DEPENDS=	libdbus-1.so:devel/dbus \
-		libck-connector.so:sysutils/consolekit \
+		libck-connector.so:sysutils/consolekit2 \
 		libpci.so:devel/libpci \
 		libhal.so:sysutils/hal \
 		libqjson.so:devel/qjson \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 446756 2017-07-27 16:19:16Z amdmi3 $
+# $FreeBSD: head/audio/Makefile 447496 2017-08-07 15:33:51Z jhale $
 #
 
     COMMENT = Audio tools
@@ -628,6 +628,7 @@
     SUBDIR += py-al
     SUBDIR += py-ao
     SUBDIR += py-apetag
+    SUBDIR += py-aubio
     SUBDIR += py-cddb
     SUBDIR += py-discid
     SUBDIR += py-discogs-client

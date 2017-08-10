@@ -1,10 +1,10 @@
 # Created by: Anders F Bjorklund <afb@users.sourceforge.net>
-# $FreeBSD: head/ports-mgmt/packagekit/Makefile 414014 2016-04-25 16:13:38Z mat $
+# $FreeBSD: head/ports-mgmt/packagekit/Makefile 447403 2017-08-05 13:15:09Z koobs $
 #   $MCom: ports/ports-mgmt/packagekit/Makefile,v 1.26 2010/10/10 15:49:51 marcus Exp $
 
 PORTNAME=	PackageKit
 PORTVERSION=	0.6.11
-PORTREVISION?=	8
+PORTREVISION?=	9
 CATEGORIES=	ports-mgmt sysutils
 MASTER_SITES=	http://www.packagekit.org/releases/
 
@@ -14,7 +14,7 @@ COMMENT?=	DBUS packaging abstraction layer
 BUILD_DEPENDS=	${LOCALBASE}/bin/docbook2man:textproc/docbook-utils
 LIB_DEPENDS=	libdbus-glib-1.so:devel/dbus-glib \
 		libpolkit-gobject-1.so:sysutils/polkit \
-		libck-connector.so:sysutils/consolekit
+		libck-connector.so:sysutils/consolekit2
 RUN_DEPENDS=	lsof:sysutils/lsof \
 		bash:shells/bash
 

@@ -1,11 +1,11 @@
-# $FreeBSD: head/textproc/rubygem-case_transform/Makefile 446623 2017-07-25 20:25:35Z jrm $
+# $FreeBSD: head/textproc/rubygem-case_transform/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	case_transform
 PORTVERSION=	0.2
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Extraction of the key_transform abilities of ActiveModelSerializers
 
 LICENSE=	MIT

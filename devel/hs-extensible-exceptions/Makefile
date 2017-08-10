@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-extensible-exceptions/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/devel/hs-extensible-exceptions/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	extensible-exceptions
 PORTVERSION=	0.1.1.4
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

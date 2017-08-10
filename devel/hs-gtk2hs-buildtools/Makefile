@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-gtk2hs-buildtools/Makefile 436914 2017-03-25 20:29:13Z tcberner $
+# $FreeBSD: head/devel/hs-gtk2hs-buildtools/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	gtk2hs-buildtools
-PORTVERSION=	0.13.0.4
-PORTREVISION=	1
+PORTVERSION=	0.13.2.2
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -15,8 +14,6 @@ USE_ALEX=	yes
 USE_HAPPY=	yes
 
 EXECUTABLE=	gtk2hsC2hs gtk2hsHookGenerator gtk2hsTypeGen
-
-STANDALONE=	yes
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/p5-App-Nopaste/Makefile 438562 2017-04-15 00:47:34Z sunpoet $
+# $FreeBSD: head/www/p5-App-Nopaste/Makefile 447256 2017-08-03 17:26:28Z sunpoet $
 
 PORTNAME=	App-Nopaste
-PORTVERSION=	1.009
+PORTVERSION=	1.010
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

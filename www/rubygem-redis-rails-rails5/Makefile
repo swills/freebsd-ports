@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-redis-rails-rails5/Makefile 439897 2017-05-01 13:42:41Z jrm $
+# $FreeBSD: head/www/rubygem-redis-rails-rails5/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	redis-rails
 PORTVERSION=	5.0.2
@@ -6,7 +6,7 @@ CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Redis for Ruby on Rails
 
 LICENSE=	MIT

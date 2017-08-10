@@ -1,5 +1,5 @@
 # Created by: Ulrich Spoerlein <uqs@FreeBSD.org>
-# $FreeBSD: head/textproc/groff/Makefile 441879 2017-05-27 21:43:26Z linimon $
+# $FreeBSD: head/textproc/groff/Makefile 447170 2017-08-02 18:49:39Z jbeich $
 
 PORTNAME=	groff
 PORTVERSION=	1.22.3
@@ -13,8 +13,6 @@ LICENSE=	GPLv3
 
 BUILD_DEPENDS=	psselect:print/psutils
 RUN_DEPENDS:=	psselect:print/psutils
-
-BROKEN_armv6=		fails to package: pkg-static: Unable to access file func.pl: No such file or directory
 
 MAKE_JOBS_UNSAFE=	yes
 

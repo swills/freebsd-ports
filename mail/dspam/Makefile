@@ -1,5 +1,5 @@
 # Created by: Dominic Marks <dom@wirespeed.org.uk>
-# $FreeBSD: head/mail/dspam/Makefile 446993 2017-07-31 19:17:10Z rene $
+# $FreeBSD: head/mail/dspam/Makefile 447519 2017-08-07 21:44:00Z adamw $
 
 # Note to committers: If don't commit a maintainer patch and as a result PKGNAME
 # or user variables (WITH*) changes please add an entry in ${FILESDIR}/UPDATING
@@ -7,7 +7,7 @@
 
 PORTNAME=	dspam
 PORTVERSION=	3.10.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	mail
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
@@ -340,7 +340,7 @@ CONFIGURE_ARGS+=	--with-delivery-agent='${LOCALBASE}/cyrus/bin/deliver'
 .endif
 
 .if ${PORT_OPTIONS:MDOVECOT2}
-RUN_DEPENDS+=	${LOCALBASE}/libexec/dovecot/dovecot-lda:mail/dovecot2
+RUN_DEPENDS+=	${LOCALBASE}/libexec/dovecot/dovecot-lda:mail/dovecot
 CONFIGURE_ARGS+=	--with-delivery-agent='${LOCALBASE}/libexec/dovecot/dovecot-lda'
 .endif
 

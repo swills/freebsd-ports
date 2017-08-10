@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 446988 2017-07-31 17:42:33Z rene $
+# $FreeBSD: head/net/Makefile 447578 2017-08-08 22:06:40Z ultima $
 #
 
     COMMENT = Networking tools
@@ -446,6 +446,7 @@
     SUBDIR += ncp
     SUBDIR += ndisc6
     SUBDIR += ndpi
+    SUBDIR += ndproxy
     SUBDIR += nepenthes
     SUBDIR += nepim
     SUBDIR += net6
@@ -1168,6 +1169,8 @@
     SUBDIR += rubygem-fog-dynect
     SUBDIR += rubygem-fog-ecloud
     SUBDIR += rubygem-fog-google
+    SUBDIR += rubygem-fog-internet-archive
+    SUBDIR += rubygem-fog-joyent
     SUBDIR += rubygem-fog-local
     SUBDIR += rubygem-fog-openstack
     SUBDIR += rubygem-fog-powerdns

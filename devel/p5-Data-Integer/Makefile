@@ -1,8 +1,8 @@
 # Created by: brix@FreeBSD.org
-# $FreeBSD: head/devel/p5-Data-Integer/Makefile 395210 2015-08-25 03:09:35Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-Integer/Makefile 447643 2017-08-09 19:35:25Z sunpoet $
 
 PORTNAME=	Data-Integer
-PORTVERSION=	0.005
+PORTVERSION=	0.006
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

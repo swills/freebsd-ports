@@ -1,10 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/graphics/fpc-libgd/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/fpc-libgd/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	graphics lang
 PKGNAMESUFFIX=	-libgd
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal interface to libgd for producing graphics files
 
 USE_FPC=	yes

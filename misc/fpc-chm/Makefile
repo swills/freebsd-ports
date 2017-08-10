@@ -1,10 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/misc/fpc-chm/Makefile 403082 2015-12-05 23:29:36Z marino $
+# $FreeBSD: head/misc/fpc-chm/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	misc lang
 PKGNAMESUFFIX=	-chm
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal unit to manipulate chm files
 
 USE_FPC=	fcl-base fcl-xml

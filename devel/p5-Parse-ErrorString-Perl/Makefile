@@ -1,9 +1,10 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/devel/p5-Parse-ErrorString-Perl/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Parse-ErrorString-Perl/Makefile 447196 2017-08-03 08:00:46Z culot $
 
 PORTNAME=	Parse-ErrorString-Perl
-PORTVERSION=	0.22
+PORTVERSION=	0.27
 CATEGORIES=	devel perl5
+MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	culot@FreeBSD.org
@@ -12,15 +13,14 @@ COMMENT=	Parse error messages from the Perl interpreter
 LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Class-XSAccessor>=0:devel/p5-Class-XSAccessor \
+BUILD_DEPENDS=	p5-Class-XSAccessor>0:devel/p5-Class-XSAccessor \
 		p5-Module-Install>0:devel/p5-Module-Install \
 		p5-Pod-POM>=0.27:textproc/p5-Pod-POM
 RUN_DEPENDS:=	${BUILD_DEPENDS}
-TEST_DEPENDS=	p5-Test-Differences>=0:devel/p5-Test-Differences
+TEST_DEPENDS=	p5-Test-Differences>0:devel/p5-Test-Differences
 
+NO_ARCH=	YES
 USES=		perl5
 USE_PERL5=	configure
-USE_GITHUB=	yes
-GH_ACCOUNT=	PadreIDE
 
 .include <bsd.port.mk>

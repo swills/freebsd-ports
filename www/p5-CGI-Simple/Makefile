@@ -1,11 +1,10 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/www/p5-CGI-Simple/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/www/p5-CGI-Simple/Makefile 447258 2017-08-03 17:26:37Z sunpoet $
 
 PORTNAME=	CGI-Simple
 PORTVERSION=	1.115
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
-MASTER_SITE_SUBDIR=	CPAN:SZABGAB
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org

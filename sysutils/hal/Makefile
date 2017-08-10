@@ -1,10 +1,10 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/hal/Makefile 422642 2016-09-23 00:21:04Z swills $
+# $FreeBSD: head/sysutils/hal/Makefile 447399 2017-08-05 10:58:48Z kwm $
 #   $MCom: ports/sysutils/hal/Makefile,v 1.81 2010/04/13 02:49:07 mezz Exp $
 
 PORTNAME=	hal
 DISTVERSION=	0.5.14
-PORTREVISION=	31
+PORTREVISION=	32
 CATEGORIES=	sysutils
 MASTER_SITES=	http://hal.freedesktop.org/releases/
 
@@ -15,7 +15,7 @@ BUILD_DEPENDS=	${LOCALBASE}/include/linux/videodev2.h:multimedia/v4l_compat
 # keep shlib version, to prevent confusion with polkit-* from sysutils/polkit
 LIB_DEPENDS=	libpolkit.so.2:sysutils/policykit \
 		libvolume_id.so:devel/libvolume_id \
-		libck-connector.so:sysutils/consolekit
+		libck-connector.so:sysutils/consolekit2
 RUN_DEPENDS=	${LOCALBASE}/share/pciids/pci.ids:misc/pciids
 
 USES=		gettext gmake libtool:keepla pathfix pkgconfig python shebangfix

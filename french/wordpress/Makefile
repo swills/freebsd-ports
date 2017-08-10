@@ -1,10 +1,10 @@
 # Created by: Elvis Chiang <elvis@sslab.cs.ccu.edu.tw>
-# $FreeBSD: head/french/wordpress/Makefile 444849 2017-07-01 21:02:23Z antoine $
+# $FreeBSD: head/french/wordpress/Makefile 447335 2017-08-04 14:20:12Z joneum $
 
 PORTNAME=	wordpress
-PORTVERSION=	4.8
-PORTEPOCH=	1
+PORTVERSION=	4.8.1
 DISTVERSIONSUFFIX=	-fr_FR
+PORTEPOCH=	1
 CATEGORIES=	french www
 MASTER_SITES=	http://fr.wordpress.org/
 
@@ -12,8 +12,6 @@ MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	State-of-the-art semantic personal publishing platform
 
 LICENSE=	GPLv2
-
-BROKEN=		size and checksum mismatch
 
 CONFLICTS_INSTALL=	de-wordpress-[0-9].* ja-wordpress-[0-9].* ru-wordpress-[0-9].*
 

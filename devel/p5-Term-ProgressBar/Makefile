@@ -1,8 +1,8 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/devel/p5-Term-ProgressBar/Makefile 445621 2017-07-13 00:00:20Z sunpoet $
+# $FreeBSD: head/devel/p5-Term-ProgressBar/Makefile 447255 2017-08-03 17:26:23Z sunpoet $
 
 PORTNAME=	Term-ProgressBar
-PORTVERSION=	2.20
+PORTVERSION=	2.21
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

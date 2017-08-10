@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-webpacker1-rails5/Makefile 443709 2017-06-16 14:59:39Z jrm $
+# $FreeBSD: head/devel/rubygem-webpacker1-rails5/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	webpacker
 PORTVERSION=	1.2
@@ -6,7 +6,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	1-rails5
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Use Webpack to manage app-like JavaScript modules in Rails
 
 LICENSE=	MIT

@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/databases/rubygem-activerecord5/Makefile 444484 2017-06-27 16:14:10Z sunpoet $
+# $FreeBSD: head/databases/rubygem-activerecord5/Makefile 447359 2017-08-04 20:07:50Z sunpoet $
 
 PORTNAME=	activerecord
-PORTVERSION=	5.1.2
+PORTVERSION=	5.1.3
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	5

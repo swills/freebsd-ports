@@ -1,10 +1,9 @@
 # Created by: John Merryweather Cooper
-# $FreeBSD: head/devel/fpc-fv/Makefile 403082 2015-12-05 23:29:36Z marino $
+# $FreeBSD: head/devel/fpc-fv/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-fv
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	FreeVision is a Free Pascal unit for Delphi support
 
 USE_FPC=	rtl-console rtl-extra

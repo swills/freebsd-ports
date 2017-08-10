@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/elixir-httpoison/Makefile 439218 2017-04-23 10:42:26Z olgeni $
+# $FreeBSD: head/www/elixir-httpoison/Makefile 447329 2017-08-04 13:20:39Z olgeni $
 
 PORTNAME=	httpoison
-PORTVERSION=	0.11.2
+PORTVERSION=	0.13.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	elixir-

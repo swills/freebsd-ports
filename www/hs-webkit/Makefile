@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/hs-webkit/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/hs-webkit/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	webkit
-PORTVERSION=	0.13.1.3
+PORTVERSION=	0.14.2.1
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

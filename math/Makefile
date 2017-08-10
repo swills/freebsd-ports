@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 446648 2017-07-26 08:44:49Z wen $
+# $FreeBSD: head/math/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 #
 
     COMMENT = Mathematics
@@ -166,6 +166,7 @@
     SUBDIR += fftw3-long
     SUBDIR += fftw3-quad
     SUBDIR += fityk
+    SUBDIR += form
     SUBDIR += fpc-fftw
     SUBDIR += fpc-gmp
     SUBDIR += fpc-numlib
@@ -217,7 +218,10 @@
     SUBDIR += hs-data-lens-template
     SUBDIR += hs-distributive
     SUBDIR += hs-erf
+    SUBDIR += hs-fixed
+    SUBDIR += hs-half
     SUBDIR += hs-ieee754
+    SUBDIR += hs-integer-logarithms
     SUBDIR += hs-kan-extensions
     SUBDIR += hs-math-functions
     SUBDIR += hs-mwc-random

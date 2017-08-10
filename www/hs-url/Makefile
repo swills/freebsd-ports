@@ -1,9 +1,9 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/www/hs-url/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/www/hs-url/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	url
 PORTVERSION=	2.1.3
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

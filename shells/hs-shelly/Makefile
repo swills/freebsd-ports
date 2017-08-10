@@ -1,7 +1,7 @@
-# $FreeBSD: head/shells/hs-shelly/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/shells/hs-shelly/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	shelly
-PORTVERSION=	1.6.3.3
+PORTVERSION=	1.6.8.3
 CATEGORIES=	shells haskell
 
 MAINTAINER=	haskell@FreeBSD.org

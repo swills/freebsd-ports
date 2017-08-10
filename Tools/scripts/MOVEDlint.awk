@@ -25,7 +25,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 #
-# $FreeBSD: head/Tools/scripts/MOVEDlint.awk 374220 2014-12-07 17:51:12Z ak $
+# $FreeBSD: head/Tools/scripts/MOVEDlint.awk 447499 2017-08-07 17:32:31Z bdrewery $
 #
 # MOVEDlint - check MOVED for consistency
 #
@@ -77,11 +77,12 @@ $3 !~ /^20[0-3][0-9]-[01][0-9]-[0-3][0-9]$/ {
     else
         resurrected[$1] = NR
 
-    if ($2)
+    if ($2) {
         if (system("test -f " portsdir "/" $2 "/Makefile"))
             missing[$2] = NR
-        else
-            delete resurrected[$2]
+#        else
+#            delete resurrected[$2]
+    }
 
 #    Produces too many false positives
 #    if ($4 ~ /^[a-z].*/)

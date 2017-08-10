@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-web-console-rails50/Makefile 441645 2017-05-25 02:05:17Z jrm $
+# $FreeBSD: head/devel/rubygem-web-console-rails50/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	web-console
 PORTVERSION=	3.5.1
@@ -6,7 +6,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Debugging tool for your Ruby on Rails applications
 
 LICENSE=	MIT

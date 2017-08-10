@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/bolt/Makefile 443005 2017-06-09 15:06:38Z feld $
+# $FreeBSD: head/www/bolt/Makefile 447485 2017-08-07 09:01:16Z amdmi3 $
 
 PORTNAME=	bolt
 PORTVERSION=	2.2.24
@@ -11,8 +11,9 @@ MAINTAINER=	feld@FreeBSD.org
 COMMENT=	Sophisticated, lightweight & simple CMS
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-USES=	php:web
+USES=		php:web
 
 NO_ARCH=	yes
 NO_BUILD=	yes
@@ -28,7 +29,7 @@ PGSQL_USE=	PHP=pdo_pgsql
 SQLITE_USE=	PHP=pdo_sqlite
 
 do-install:
-	${INSTALL} -d -m 755 ${STAGEDIR}${WWWDIR}
+	${MKDIR} ${STAGEDIR}${WWWDIR}
 	(cd ${WRKSRC} && ${COPYTREE_SHARE} \* ${STAGEDIR}${WWWDIR})
 
 .include <bsd.port.mk>

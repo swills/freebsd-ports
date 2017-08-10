@@ -1,10 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/fpc-gtk2/Makefile 403082 2015-12-05 23:29:36Z marino $
+# $FreeBSD: head/x11-toolkits/fpc-gtk2/Makefile 447304 2017-08-03 23:40:28Z acm $
 
 CATEGORIES=	x11-toolkits lang
 PKGNAMESUFFIX=	-gtk2
 
-MAINTAINER=	freebsd-fpc@FreeBSD.org
 COMMENT=	Free Pascal interface to the GTK2 libraries
 
 USE_FPC=	cairo fcl-base fcl-image fcl-res pasjpeg rtl-objpas x11

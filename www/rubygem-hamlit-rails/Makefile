@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-hamlit-rails/Makefile 439492 2017-04-26 20:23:48Z jrm $
+# $FreeBSD: head/www/rubygem-hamlit-rails/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	hamlit-rails
 PORTVERSION=	0.2.0
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Hamlit (haml) generators for Rails 4
 
 LICENSE=	MIT

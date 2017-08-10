@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-font-awesome-rails-rails5/Makefile 440103 2017-05-04 12:58:27Z jrm $
+# $FreeBSD: head/devel/rubygem-font-awesome-rails-rails5/Makefile 447386 2017-08-05 03:25:17Z jrm $
 
 PORTNAME=	font-awesome-rails
 PORTVERSION=	4.7.0.2
@@ -6,7 +6,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5
 
-MAINTAINER=	jrm@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Provides the Font-Awesome web fonts and stylesheets as a Rails engine
 
 LICENSE=	MIT OFL11

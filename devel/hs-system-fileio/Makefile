@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/hs-system-fileio/Makefile 394918 2015-08-20 23:02:14Z pgj $
+# $FreeBSD: head/devel/hs-system-fileio/Makefile 447548 2017-08-08 17:21:45Z tcberner $
 
 PORTNAME=	system-fileio
 PORTVERSION=	0.3.16.3
+PORTREVISION=	1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

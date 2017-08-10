@@ -1,8 +1,8 @@
 # Created by: Mathieu Arnold
-# $FreeBSD: head/devel/p5-DateTime-Format-Strptime/Makefile 433079 2017-02-01 19:44:38Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime-Format-Strptime/Makefile 447366 2017-08-04 20:08:26Z sunpoet $
 
 PORTNAME=	DateTime-Format-Strptime
-PORTVERSION=	1.73
+PORTVERSION=	1.74
 PORTEPOCH=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 445598 2017-07-12 18:40:59Z swills $
+# $FreeBSD: head/x11/Makefile 447586 2017-08-09 00:46:32Z ultima $
 #
 
     COMMENT = Ports to support the X window system
@@ -52,12 +52,14 @@
     SUBDIR += docker-tray
     SUBDIR += dri2proto
     SUBDIR += dri3proto
+    SUBDIR += dsbautostart
     SUBDIR += dxpc
     SUBDIR += dynamag
     SUBDIR += dzen2
     SUBDIR += eaglemode
     SUBDIR += editres
     SUBDIR += emprint
+    SUBDIR += enventor
     SUBDIR += erun
     SUBDIR += eterm
     SUBDIR += evieext
