@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/py-sqlalchemy11/Makefile 447356 2017-08-04 20:07:34Z sunpoet $
+# $FreeBSD: head/databases/py-sqlalchemy11/Makefile 447709 2017-08-10 18:24:15Z sunpoet $
 
 PORTNAME=	sqlalchemy
 PORTVERSION=	1.1.13
+PORTREVISION=	1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -31,7 +32,7 @@ USES=		python
 PORTDOCS=	*
 PORTEXAMPLES=	*
 
-MSSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mssql>=0:databases/py-mssql
+MSSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mssql>=0:databases/py-pymssql
 MYSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pymysql>=0:databases/py-pymysql
 PGSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>=2.5.0:databases/py-psycopg2
 SQLITE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3

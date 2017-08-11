@@ -1,9 +1,8 @@
 # Created by: torstenb
-# $FreeBSD: head/shells/zsh/Makefile 437285 2017-03-30 12:41:08Z des $
+# $FreeBSD: head/shells/zsh/Makefile 447674 2017-08-10 12:59:04Z bapt $
 
 PORTNAME=	zsh
-DISTVERSION=	5.3.1
-PORTREVISION=	1
+DISTVERSION=	5.4.1
 CATEGORIES=	shells
 MASTER_SITES=	http://www.zsh.org/pub/ \
 		SF \
@@ -21,7 +20,7 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 MAKE_JOBS_UNSAFE=	yes
 
-USES=		iconv ncurses shebangfix tar:xz
+USES=		autoreconf iconv ncurses shebangfix tar:xz
 
 SHEBANG_LANG=	zsh
 zsh_OLD_CMD=	zsh	# shebang appears as /bin/zsh and just zsh

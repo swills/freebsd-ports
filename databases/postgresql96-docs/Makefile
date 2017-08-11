@@ -1,5 +1,5 @@
 # Created by: Palle Girgensohn <girgen@pingpong.net>
-# $FreeBSD: head/databases/postgresql96-docs/Makefile 423058 2016-10-01 13:16:04Z antoine $
+# $FreeBSD: head/databases/postgresql96-docs/Makefile 447678 2017-08-10 14:21:20Z girgen $
 
 PORTNAME=	postgresql
 PKGNAMESUFFIX?=	${DISTV:S/.//}-docs
@@ -9,8 +9,6 @@ MAINTAINER=	pgsql@FreeBSD.org
 COMMENT=	The PostgreSQL documentation set
 
 MASTERDIR=	${.CURDIR}/../../databases/postgresql${WANT_PGSQL_VER:S/.//}-server
-
-USES+=		pgsql:${WANT_PGSQL_VER}
 WANT_PGSQL_VER?=9.6
 
 SLAVE_ONLY=	YES
@@ -27,6 +25,8 @@ BUILD_DEPENDS+=	onsgmls:textproc/opensp			\
 		${sgmldir}/iso8879/catalog:textproc/iso8879	\
 		${dbdir}/dsssl/modular/catalog:textproc/dsssl-docbook-modular \
 		docbook-sgml>0:textproc/docbook-sgml
+CONFIGURE_ARGS= --without-readline
+NO_ARCH=	yes
 
 do-build:
 	${MAKE_CMD} -C ${WRKSRC} html

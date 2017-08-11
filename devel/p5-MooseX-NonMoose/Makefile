@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-NonMoose/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-MooseX-NonMoose/Makefile 447704 2017-08-10 18:23:50Z sunpoet $
 
 PORTNAME=	MooseX-NonMoose
 PORTVERSION=	0.26
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,14 +13,17 @@ COMMENT=	Easy subclassing of non-Moose classes
 
 LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Module-Runtime>=0:devel/p5-Module-Runtime \
+BUILD_DEPENDS=	p5-List-MoreUtils>=0:lang/p5-List-MoreUtils \
+		p5-Module-Runtime>=0:devel/p5-Module-Runtime \
 		p5-Moose>=2:devel/p5-Moose \
 		p5-Try-Tiny>=0:lang/p5-Try-Tiny
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-MooseX-InsideOut>=0:devel/p5-MooseX-InsideOut \
 		p5-Test-Fatal>=0:devel/p5-Test-Fatal
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

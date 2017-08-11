@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-UNIVERSAL-ref/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-UNIVERSAL-ref/Makefile 447684 2017-08-10 15:19:06Z mat $
 
 PORTNAME=	UNIVERSAL-ref
 PORTVERSION=	0.14
@@ -17,4 +17,10 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 USES=		perl5
 USE_PERL5=	configure
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${PERL_LEVEL} >= 502501
+BROKEN=		Does not build, op_sibling usage. https://rt.cpan.org/Public/Bug/Display.html?id=118008
+.endif
+
+.include <bsd.port.post.mk>

@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Data-Alias/Makefile 400277 2015-10-27 15:51:00Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-Alias/Makefile 447684 2017-08-10 15:19:06Z mat $
 
 PORTNAME=	Data-Alias
 PORTVERSION=	1.20
@@ -19,4 +19,10 @@ USE_PERL5=	configure
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Data/Alias/Alias.so
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${PERL_LEVEL} >= 502501
+BROKEN=		Does not build, op_sibling usage. https://rt.cpan.org/Public/Bug/Display.html?id=114544
+.endif
+
+.include <bsd.port.post.mk>

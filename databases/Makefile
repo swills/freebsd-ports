@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 447494 2017-08-07 13:46:50Z tz $
+# $FreeBSD: head/databases/Makefile 447720 2017-08-10 20:25:17Z girgen $
 #
 
     COMMENT = Databases and related software
@@ -677,6 +677,14 @@
     SUBDIR += postgresql-repmgr2
     SUBDIR += postgresql-tds_fdw
     SUBDIR += postgresql-zhparser
+    SUBDIR += postgresql10-client
+    SUBDIR += postgresql10-contrib
+    SUBDIR += postgresql10-docs
+    SUBDIR += postgresql10-pgtcl
+    SUBDIR += postgresql10-plperl
+    SUBDIR += postgresql10-plpython
+    SUBDIR += postgresql10-pltcl
+    SUBDIR += postgresql10-server
     SUBDIR += postgresql92-client
     SUBDIR += postgresql92-contrib
     SUBDIR += postgresql92-docs

@@ -1,5 +1,5 @@
 # Created by: Daniel Roethlisberger <daniel@roe.ch>
-# $FreeBSD: head/x11/swarp/Makefile 426939 2016-11-23 15:33:32Z tz $
+# $FreeBSD: head/x11/swarp/Makefile 447717 2017-08-10 19:17:14Z tobik $
 
 PORTNAME=	swarp
 PORTVERSION=	0.1
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://dl.suckless.org/tools/
 
-MAINTAINER=	mason@blisses.org
+MAINTAINER=	dg@syrec.org
 COMMENT=	X11 generic pointer warping utility
 
 LICENSE=	MIT

@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/security/duo/Makefile 447034 2017-08-01 17:07:58Z zi $
+# $FreeBSD: head/security/duo/Makefile 447679 2017-08-10 14:22:51Z zi $
 
 PORTNAME=	duo
-PORTVERSION=	1.9.21
+PORTVERSION=	1.10.0
 CATEGORIES=	security
 MASTER_SITES=	https://dl.duosecurity.com/ \
 		ZI

@@ -1,8 +1,9 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/textproc/cgrep/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/cgrep/Makefile 447722 2017-08-10 20:50:41Z tcberner $
 
 PORTNAME=	cgrep
 PORTVERSION=	6.4.3
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
 

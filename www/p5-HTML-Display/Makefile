@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTML-Display/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-Display/Makefile 447703 2017-08-10 18:23:45Z sunpoet $
 
 PORTNAME=	HTML-Display
 PORTVERSION=	0.40
@@ -18,7 +18,6 @@ BUILD_DEPENDS=	p5-HTML-TokeParser-Simple>=2:www/p5-HTML-TokeParser-Simple \
 		p5-URI>=0:net/p5-URI \
 		p5-libwww>=5.69:www/p5-libwww
 RUN_DEPENDS:=	${BUILD_DEPENDS}
-TEST_DEPENDS=	p5-Test-Harness>=2.30:devel/p5-Test-Harness
 
 NO_ARCH=	yes
 USE_PERL5=	configure

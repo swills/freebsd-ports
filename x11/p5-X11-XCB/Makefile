@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/p5-X11-XCB/Makefile 425494 2016-11-06 14:53:46Z pi $
+# $FreeBSD: head/x11/p5-X11-XCB/Makefile 447683 2017-08-10 15:19:01Z mat $
 
 PORTNAME=	X11-XCB
 PORTVERSION=	0.16
@@ -30,12 +30,10 @@ BUILD_DEPENDS=	\
 		p5-XS-Object-Magic>=0:devel/p5-XS-Object-Magic
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=		perl5
+USES=		localbase perl5
+USE_PERL5=	configure
 USE_XORG=	x11 xcb xproto xinerama
 MAKE_JOBS_UNSAFE=	yes
-
-pre-configure:
-	cd ${WRKSRC} && ${PERL} Makefile.PL
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/X11/XCB/XCB.so

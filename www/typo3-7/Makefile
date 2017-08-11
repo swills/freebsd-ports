@@ -1,10 +1,10 @@
 # Created by: Helmut Ritter <freebsd-ports@charlieroot.de>
-# $FreeBSD: head/www/typo3-7/Makefile 445113 2017-07-06 00:05:11Z sunpoet $
+# $FreeBSD: head/www/typo3-7/Makefile 447698 2017-08-10 15:47:21Z joneum $
 
 PORTNAME=	typo3
 PORTVERSION=	${PORT_V_MAJOR}.${PORT_V_MINOR}.${PORT_V_PATCH}
 CATEGORIES=	www
-MASTER_SITES=	SF/${PORTNAME}/TYPO3%20Source%20and%20Dummy/TYPO3%20${PORTVERSION}
+MASTER_SITES=	https://typo3.azureedge.net/typo3/${PORTVERSION}/
 PKGNAMESUFFIX=	-${PORT_V_MAJOR}
 
 MAINTAINER=	freebsd-ports@charlieroot.de
@@ -24,7 +24,7 @@ WRKSRC=		${WRKDIR}/${TYPO3SRC}
 
 PORT_V_MAJOR=	7
 PORT_V_MINOR=	6
-PORT_V_PATCH=	20
+PORT_V_PATCH=	21
 
 TYPO3WWW=	www
 TYPO3SRC=	${PORTNAME}_src-${PORTVERSION}

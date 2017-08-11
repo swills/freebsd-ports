@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-rpm-build-perl/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-rpm-build-perl/Makefile 447684 2017-08-10 15:19:06Z mat $
 
 PORTNAME=	rpm-build-perl
 PORTVERSION=	0.82
@@ -19,4 +19,10 @@ USE_PERL5=	configure
 post-patch:
 	@${REINPLACE_CMD} -e 's| perl.clean||' ${WRKSRC}/Makefile.PL
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${PERL_LEVEL} >= 502501
+BROKEN=		Does not build, op_sibling usage. https://rt.cpan.org/Public/Bug/Display.html?id=117350
+.endif
+
+.include <bsd.port.post.mk>

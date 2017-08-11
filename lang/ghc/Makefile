@@ -1,8 +1,9 @@
 # Created by: Simon Marlow <simonmar@microsoft.com>
-# $FreeBSD: head/lang/ghc/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/lang/ghc/Makefile 447723 2017-08-10 20:55:04Z tcberner $
 
 PORTNAME=	ghc
 PORTVERSION=	${GHC_VERSION}
+PORTREVISION=	1
 CATEGORIES=	lang haskell
 MASTER_SITES=	http://www.haskell.org/ghc/dist/${PORTVERSION}/:source \
 		LOCAL/pgj/:boot
@@ -190,7 +191,7 @@ post-install-script:
 .endif
 
 post-patch:
-	${REINPLACE_CMD} -e 's|%%CC%%|${CC}|; \
+	@${REINPLACE_CMD} -e 's|%%CC%%|${CC}|; \
 		s|%%AR%%|${AR}|; \
 		s|%%LD%%|${LD}|' \
 		${WRKSRC}/libraries/Cabal/Cabal/Distribution/Simple/Program/Builtin.hs
