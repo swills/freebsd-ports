@@ -1,8 +1,8 @@
 # Created by: Torsten Blum <torstenb@FreeBSD.org>
-# $FreeBSD: head/mail/postfix211/Makefile 427552 2016-12-02 11:58:21Z mat $
+# $FreeBSD: head/mail/postfix211/Makefile 447911 2017-08-13 19:19:16Z ohauer $
 
 PORTNAME=	postfix
-PORTVERSION=	2.11.8
+PORTVERSION=	2.11.10
 PORTEPOCH=	1
 CATEGORIES=	mail ipv6
 MASTER_SITES=	ftp://ftp.porcupine.org/mirrors/postfix-release/ \
@@ -25,7 +25,6 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 PORTSCOUT=	limit:^2\.11\.
 
-VDAVERSION=	2.10.0
 CONFLICTS_INSTALL?=	courier-0.* opensmtpd-[0-9]* \
 		sendmail-8.* sendmail+*-8.* smail-3.* zmailer-2.* \
 		postfix2?-* postfix-3.* postfix-current-*
@@ -239,8 +238,7 @@ _REQUIRE+=		ypserv
 .endif
 
 .if ${PORT_OPTIONS:MVDA}
-PATCH_SITES+=		http://vda.sourceforge.net/VDA/:vda
-PATCHFILES+=		postfix-vda-v13-${VDAVERSION}.patch:-p1:vda
+EXTRA_PATCHES+=		${FILESDIR}/extra-patch-postfix-vda-v13-2.11.x
 .endif
 
 .if ${PORT_OPTIONS:MTEST}
@@ -318,6 +316,9 @@ do-configure:
 	${MAKEFILEFLAGS} CCARGS="${POSTFIX_CCARGS}" \
 	AUXLIBS="${POSTFIX_AUXLIBS}" && \
 	${ECHO} "all: default" >> Makefile)
+
+post-stage-VDA-on:
+	${HEAD} -n 17 ${FILESDIR}/extra-patch-postfix-vda-v13-2.11.x >> ${WRKDIR}/pkg-message
 
 pre-install-INST_BASE-on:
 	${MKDIR} ${STAGEDIR}/etc/rc.d

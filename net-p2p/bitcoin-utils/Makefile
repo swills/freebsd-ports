@@ -1,7 +1,6 @@
-# $FreeBSD: head/net-p2p/bitcoin-utils/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/net-p2p/bitcoin-utils/Makefile 447813 2017-08-12 03:43:31Z swills $
 
 MASTERDIR=	${.CURDIR}/../bitcoin
-PORTREVISION=	6
 PKGNAMESUFFIX=	-utils
 
 COMMENT=	Virtual Peer-to-Peer Currency (CLI and Utilities)
@@ -17,9 +16,11 @@ CONFIGURE_ARGS=	--without-daemon \
 		--without-gui \
 		--without-libs \
 		--without-qrencode \
+		--without-miniupnpc \
 		--with-utils \
 		--disable-wallet
 
-PLIST_FILES=	bin/bitcoin-cli bin/bitcoin-tx
+PLIST_FILES=	bin/bitcoin-cli bin/bitcoin-tx \
+		man/man1/bitcoin-cli.1.gz man/man1/bitcoin-tx.1.gz
 
 .include "${MASTERDIR}/Makefile"

@@ -1,5 +1,5 @@
 # Created by: Thomas Zander <riggs@FreeBSD.org>
-# $FreeBSD: head/audio/py-gmusicapi/Makefile 439165 2017-04-22 11:45:34Z riggs $
+# $FreeBSD: head/audio/py-gmusicapi/Makefile 447842 2017-08-12 16:02:13Z riggs $
 
 PORTNAME=	gmusicapi
 PORTVERSION=	10.1.2
@@ -28,11 +28,11 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}appdirs>=1.3.0:devel/py-appdirs \
 		${PYTHON_PKGNAMEPREFIX}openssl>0:security/py-openssl \
 		${PYTHON_PKGNAMEPREFIX}pyasn1>0:devel/py-pyasn1
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	simon-weber
-
 USES=		python
 USE_PYTHON=	distutils autoplist
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	simon-weber
 
 NO_ARCH=	yes
 

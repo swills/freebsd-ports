@@ -1,16 +1,16 @@
 # Created by: ijliao
-# $FreeBSD: head/astro/match/Makefile 351283 2014-04-14 20:01:18Z cs $
+# $FreeBSD: head/astro/match/Makefile 447883 2017-08-13 12:58:43Z dbaio $
 
 PORTNAME=	match
-PORTVERSION=	0.16
+PORTVERSION=	1.0
 CATEGORIES=	astro
-MASTER_SITES=	http://spiff.rit.edu/match/ \
-		http://www.c-s.li/ports/
+MASTER_SITES=	http://spiff.rit.edu/match/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	a.andersson.thn@gmail.com
 COMMENT=	Program for matching star lists
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 CONFLICTS=	avenger-[0-9]*
 GNU_CONFIGURE=	yes

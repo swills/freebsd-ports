@@ -1,9 +1,8 @@
-# $FreeBSD: head/multimedia/mpc-qt/Makefile 447731 2017-08-11 04:41:44Z jbeich $
+# $FreeBSD: head/multimedia/mpc-qt/Makefile 447880 2017-08-13 11:24:42Z jbeich $
 
 PORTNAME=	mpc-qt
 DISTVERSIONPREFIX=	v
-DISTVERSION=	17.07-34
-DISTVERSIONSUFFIX=	-gec7ef77
+DISTVERSION=	17.08
 CATEGORIES=	multimedia audio
 MASTER_SITES=	https://aur.archlinux.org/cgit/aur.git/plain/${PORTNAME}.desktop?h=${PORTNAME}-git&id=b1a6b91&dummy=/:desktop
 DISTFILES=	${PORTNAME}.desktop:desktop

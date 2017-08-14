@@ -1,5 +1,5 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/databases/mysql57-server/Makefile 446496 2017-07-23 16:45:07Z mmokhi $
+# $FreeBSD: head/databases/mysql57-server/Makefile 447926 2017-08-14 05:37:21Z vd $
 
 PORTNAME?=	mysql
 PORTVERSION=	5.7.19
@@ -81,6 +81,7 @@ USES+=		mysql:57
 
 CONFLICTS_INSTALL=	mysql5[0-68-9]-server-* \
 			mysql[0-46-9][0-9]-server-* \
+			mysqlwsrep* \
 			mariadb[0-9][0-9]-server-* \
 			percona[0-9][0-9]-server-*
 

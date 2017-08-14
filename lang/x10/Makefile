@@ -1,5 +1,5 @@
 # Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/lang/x10/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/lang/x10/Makefile 447914 2017-08-13 20:37:40Z gerald $
 
 PORTNAME=	x10
 PORTVERSION=	2.2.1
@@ -24,6 +24,8 @@ MAINTAINER=	bacon4000@gmail.com
 COMMENT=	Object-oriented parallel programming language
 
 LICENSE=	EPL
+
+BROKEN=		Fails to build with modern compilers (cf. PR 219282)
 
 USES=	tar:bzip2
 USE_JAVA=	yes

@@ -1,9 +1,9 @@
 # Created by: johan
-# $FreeBSD: head/graphics/flphoto/Makefile 442300 2017-06-01 16:05:18Z woodsb02 $
+# $FreeBSD: head/graphics/flphoto/Makefile 447935 2017-08-14 12:56:23Z woodsb02 $
 
 PORTNAME=	flphoto
 PORTVERSION=	1.3.1
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	graphics
 MASTER_SITES=	SF/fltk/${PORTNAME}/${PORTVERSION}
 DISTNAME=	${PORTNAME}-${PORTVERSION}-source

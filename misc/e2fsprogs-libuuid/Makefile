@@ -1,11 +1,14 @@
 # Created by: Matthias Andree <matthias.andree@gmx.de>
-# $FreeBSD: head/misc/e2fsprogs-libuuid/Makefile 433466 2017-02-05 23:39:14Z mandree $
+# $FreeBSD: head/misc/e2fsprogs-libuuid/Makefile 447819 2017-08-12 10:12:47Z mandree $
 
 PORTREVISION=	0
 CATEGORIES=	misc devel
 PKGNAMESUFFIX=	-libuuid
 
 COMMENT=	UUID library from e2fsprogs package
+
+LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${INSTALL_WRKSRC}/COPYING
 
 CONFIGURE_ARGS=	--enable-elf-shlibs
 

@@ -1,8 +1,8 @@
 # Created by: Andreas Fehlner <fehlner@gmx.de>
-# $FreeBSD: head/science/gramps/Makefile 428927 2016-12-19 12:52:40Z woodsb02 $
+# $FreeBSD: head/science/gramps/Makefile 447930 2017-08-14 11:57:05Z woodsb02 $
 
 PORTNAME=	gramps
-PORTVERSION=	4.2.5
+PORTVERSION=	4.2.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	science gnome python
 

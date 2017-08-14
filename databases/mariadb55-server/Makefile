@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb55-server/Makefile 446433 2017-07-22 22:28:13Z brnrd $
+# $FreeBSD: head/databases/mariadb55-server/Makefile 447926 2017-08-14 05:37:21Z vd $
 
 PORTNAME?=	mariadb
 PORTVERSION=	5.5.57
@@ -75,6 +75,7 @@ USE_LDCONFIG|=	${PREFIX}/lib/mysql/plugin
 CONFLICTS_INSTALL=	mariadb5[0-46-9]-server-* \
 			mariadb1*-server-* \
 			mysql[0-9]*-server-* \
+			mysqlwsrep* \
 			percona[0-9]*-server-*
 
 USE_RC_SUBR=	mysql-server

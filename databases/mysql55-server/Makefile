@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/databases/mysql55-server/Makefile 447491 2017-08-07 12:00:39Z ale $
+# $FreeBSD: head/databases/mysql55-server/Makefile 447926 2017-08-14 05:37:21Z vd $
 
 PORTNAME?=	mysql
 PORTVERSION=	5.5.57
@@ -63,6 +63,7 @@ USE_MYSQL=	yes
 WANT_MYSQL_VER=	55
 
 CONFLICTS_INSTALL=	mysql5[0-46-9]-server-* \
+			mysqlwsrep* \
 			mariadb*-server-* \
 			percona*-server-*
 

@@ -1,8 +1,8 @@
 # Created by: Steffen Fritz <steffen@fritz.wtf>
-# $FreeBSD: head/sysutils/siegfried/Makefile 446226 2017-07-19 19:11:00Z tobik $
+# $FreeBSD: head/sysutils/siegfried/Makefile 447840 2017-08-12 15:46:56Z tobik $
 
 PORTNAME=		siegfried
-PORTVERSION=		1.7.4
+PORTVERSION=		1.7.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=		sysutils
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/percona55-server/Makefile 446475 2017-07-23 13:58:45Z feld $
+# $FreeBSD: head/databases/percona55-server/Makefile 447926 2017-08-14 05:37:21Z vd $
 
 PORTNAME?=	percona
 DISTVERSION=	5.5.54-38.6
@@ -60,6 +60,7 @@ CMAKE_ARGS+=	-DWITH_FAST_MUTEXES=1
 USES+=mysql:55p
 
 CONFLICTS_INSTALL=	mysql*-server-* \
+			mysqlwsrep* \
 			mariadb*-server-* \
 			percona5[0-46-9]-server-*
 

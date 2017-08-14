@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: head/MOVED 447658 2017-08-09 23:11:58Z woodsb02 $
+# $FreeBSD: head/MOVED 447821 2017-08-12 10:23:06Z mandree $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -9503,3 +9503,4 @@ devel/hs-directory||2017-08-08|Part of the bundled packages in ghc
 devel/hs-syb-with-class-instances-text||2017-08-08|Upstream is unmaintained
 textproc/hs-citeproc-hs||2017-08-08|Upstream is unmaintained, use pandoc-citeproc instead
 sysutils/chvt||2017-08-10|Functionality available in base, using vidcontrol(1)
+graphics/rawtherapee-devel|graphics/rawtherapee|2017-08-12|Removed test release in favor of the newer stable release

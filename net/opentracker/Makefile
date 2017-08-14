@@ -1,11 +1,9 @@
-# $FreeBSD: head/net/opentracker/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/opentracker/Makefile 447894 2017-08-13 14:27:27Z crees $
 
 PORTNAME=	opentracker
-PORTVERSION=	0.2010.05.30
-PORTREVISION=	1
+PORTVERSION=	0.2017.08.13
 CATEGORIES=	net
 MASTER_SITES=	http://www.bayofrum.net/dist/${PORTNAME}/ \
-		https://www.glenbarber.us/ports/net/${PORTNAME}/
 
 MAINTAINER=	crees@FreeBSD.org
 COMMENT=	Free lightweight bittorrent tracker using libowfat

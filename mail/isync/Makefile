@@ -1,9 +1,8 @@
 # Created by: eivind
-# $FreeBSD: head/mail/isync/Makefile 419843 2016-08-08 13:46:50Z mat $
+# $FreeBSD: head/mail/isync/Makefile 447913 2017-08-13 20:34:57Z ehaupt $
 
 PORTNAME=	isync
-PORTVERSION=	1.2.1
-PORTREVISION=	1
+PORTVERSION=	1.2.2
 CATEGORIES=	mail
 MASTER_SITES=	SF
 

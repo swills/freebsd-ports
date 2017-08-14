@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/Makefile 446440 2017-07-23 02:43:37Z acm $
+# $FreeBSD: head/print/Makefile 447816 2017-08-12 05:43:46Z woodsb02 $
 #
 
     COMMENT = Desktop publishing
@@ -201,6 +201,7 @@
     SUBDIR += py-reportlab
     SUBDIR += py-reportlab1
     SUBDIR += py-rtf
+    SUBDIR += py-stapler
     SUBDIR += py-trml2pdf
     SUBDIR += py3-fonttools
     SUBDIR += py3-pycups

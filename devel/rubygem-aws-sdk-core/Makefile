@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-aws-sdk-core/Makefile 447710 2017-08-10 18:24:20Z sunpoet $
+# $FreeBSD: head/devel/rubygem-aws-sdk-core/Makefile 447855 2017-08-12 18:59:09Z sunpoet $
 
 PORTNAME=	aws-sdk-core
-PORTVERSION=	2.10.23
+PORTVERSION=	2.10.25
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +14,8 @@ RUN_DEPENDS=	rubygem-aws-sigv4>=1.0:devel/rubygem-aws-sigv4 \
 		rubygem-jmespath>=1.0:devel/rubygem-jmespath
 
 NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 PLIST_FILES=	bin/aws.rb
 

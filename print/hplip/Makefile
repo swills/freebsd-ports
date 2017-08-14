@@ -1,8 +1,8 @@
 # Created by: amistry@am-productions.biz
-# $FreeBSD: head/print/hplip/Makefile 441061 2017-05-16 23:05:45Z woodsb02 $
+# $FreeBSD: head/print/hplip/Makefile 447928 2017-08-14 11:36:57Z woodsb02 $
 
 PORTNAME=	hplip
-PORTVERSION=	3.17.4
+PORTVERSION=	3.17.7
 CATEGORIES=	print
 MASTER_SITES=	SF
 

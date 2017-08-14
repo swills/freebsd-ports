@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 447640 2017-08-09 18:58:59Z sbz $
+# $FreeBSD: head/security/Makefile 447922 2017-08-13 22:35:18Z ultima $
 #
 
     COMMENT = Security tools
@@ -107,6 +107,7 @@
     SUBDIR += cyrus-sasl2-gssapi
     SUBDIR += cyrus-sasl2-ldapdb
     SUBDIR += cyrus-sasl2-saslauthd
+    SUBDIR += cyrus-sasl2-sql
     SUBDIR += cyrus-sasl2-srp
     SUBDIR += d0_blind_id
     SUBDIR += dcetest
@@ -208,6 +209,7 @@
     SUBDIR += hashcat
     SUBDIR += hashcat-legacy
     SUBDIR += heimdal
+    SUBDIR += highwayhash
     SUBDIR += hitch
     SUBDIR += hlfl
     SUBDIR += hmap

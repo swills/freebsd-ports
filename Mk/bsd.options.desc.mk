@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.options.desc.mk 446281 2017-07-20 17:56:55Z sunpoet $
+# $FreeBSD: head/Mk/bsd.options.desc.mk 447745 2017-08-11 08:33:19Z mandree $
 #
 # READ BEFORE EDITING:
 # - Please keep descriptions sorted alphabetically by variable name.
@@ -135,7 +135,7 @@ GRAPHVIZ_DESC?=		Graphviz graph drawing support
 GRIB_API_DESC?=		ECMWF GRIB API support
 GRASS_DESC?=		Geographic Information System (GIS) support
 GSM_DESC?=		GSM codec support
-GSSAPI_BASE_DESC?=	GSSAPI support via base system (Kerberos required)
+GSSAPI_BASE_DESC?=	GSSAPI support via base system (needs Kerberos)
 GSSAPI_DESC?=		GSSAPI Security API support
 GSSAPI_HEIMDAL_DESC?=	GSSAPI support via security/heimdal
 GSSAPI_MIT_DESC?=	GSSAPI support via security/krb5

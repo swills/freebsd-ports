@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/graphics/Makefile 447821 2017-08-12 10:23:06Z mandree $
 #
 
     COMMENT = Graphics tools and libraries
@@ -938,7 +938,6 @@
     SUBDIR += raster3d
     SUBDIR += rawstudio
     SUBDIR += rawtherapee
-    SUBDIR += rawtherapee-devel
     SUBDIR += rayshade
     SUBDIR += reallyslick
     SUBDIR += recoverjpeg

@@ -1,9 +1,8 @@
 # Created by: Jesse McConnell <jesse@gallup.com>
-# $FreeBSD: head/net/p5-Net-Server/Makefile 427117 2016-11-25 16:25:42Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Server/Makefile 447800 2017-08-11 21:38:46Z sunpoet $
 
 PORTNAME=	Net-Server
-PORTVERSION=	2.008
-PORTREVISION=	3
+PORTVERSION=	2.009
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,12 +12,14 @@ COMMENT=	Configurable base class for writing internet servers in Perl
 
 LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-IO-Multiplex>=1.01:devel/p5-IO-Multiplex
+BUILD_DEPENDS=	p5-IO-Multiplex>=1.05:devel/p5-IO-Multiplex
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 OPTIONS_DEFINE=	IPV6
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

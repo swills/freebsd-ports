@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/www/Makefile 447884 2017-08-13 13:15:10Z brnrd $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -463,6 +463,7 @@
     SUBDIR += mod_log_sql2
     SUBDIR += mod_log_sql2-dtc
     SUBDIR += mod_macro22
+    SUBDIR += mod_md-devel
     SUBDIR += mod_memcache
     SUBDIR += mod_memcache_block
     SUBDIR += mod_mono

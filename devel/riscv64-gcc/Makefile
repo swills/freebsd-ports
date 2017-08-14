@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/riscv64-gcc/Makefile 439595 2017-04-28 04:36:40Z linimon $
+# $FreeBSD: head/devel/riscv64-gcc/Makefile 447780 2017-08-11 17:35:36Z lwhsu $
 
 PORTNAME=	gcc
-PORTVERSION=	6.1.0
+PORTVERSION=	7.1.1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	riscv64-
 
@@ -17,12 +17,14 @@ LIB_DEPENDS=	libgmp.so:math/gmp \
 		libmpfr.so:math/mpfr \
 		libmpc.so:math/mpc
 
+USES=	iconv gmake libtool makeinfo
+
+USE_LDCONFIG=	yes
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	freebsd-riscv
 GH_PROJECT=	riscv-gcc
-GH_TAGNAME=	095b1d6
-
-USES=	iconv gmake libtool makeinfo
+GH_TAGNAME=	b2cdb72
 
 GCC_TARGET=	${PKGNAMEPREFIX}unknown-${OPSYS:tl}${OSREL}
 

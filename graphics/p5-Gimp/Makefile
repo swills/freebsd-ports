@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold
-# $FreeBSD: head/graphics/p5-Gimp/Makefile 438284 2017-04-11 15:56:34Z sunpoet $
+# $FreeBSD: head/graphics/p5-Gimp/Makefile 447771 2017-08-11 15:24:21Z mat $
 
 PORTNAME=	Gimp
 PORTVERSION=	2.32
@@ -27,5 +27,7 @@ BUILD_DEPENDS+=	p5-Alien-Gimp>=0.01:graphics/p5-Alien-Gimp
 
 USES=		perl5
 USE_PERL5=	configure
+
+MAKE_JOBS_UNSAFE=	yes
 
 .include <bsd.port.mk>

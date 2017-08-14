@@ -1,5 +1,5 @@
 # Created by: rooneg@electricjellyfish.net
-# $FreeBSD: head/devel/subversion18/Makefile 414181 2016-04-28 15:15:54Z lev $
+# $FreeBSD: head/devel/subversion18/Makefile 447767 2017-08-11 14:30:24Z lev $
 
 #PORTREVISION=	4
 
@@ -44,6 +44,11 @@ TOOLS_DESC=		Install several tools
 P4_STYLE_MARKERS_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-3way-conflict-markers
 FREEBSD_TEMPLATE_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-fbsd-template
 SVNSERVE_WRAPPER_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-svnserve-wrapper
+
+USES+=			shebangfix
+python_CMD=		${LOCALBASE}/bin/python2
+python_OLD_CMD+=	"/bin/env python"
+SHEBANG_REGEX=		./tools/.*
 
 .include "Makefile.common"
 

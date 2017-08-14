@@ -1,9 +1,9 @@
 # Created by: Max Khon <fjoe@FreeBSD.org>
-# $FreeBSD: head/lang/cint/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/lang/cint/Makefile 447877 2017-08-13 11:12:59Z rakuco $
 
 PORTNAME=	cint
 PORTVERSION=	5.18.00
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	lang
 MASTER_SITES=	http://root.cern.ch/drupal/sites/default/files/
 
@@ -15,11 +15,16 @@ BROKEN_powerpc64=	does not build: cint/include/iosenum.h: segmentation fault (co
 BUILD_DEPENDS=	bash:shells/bash
 
 HAS_CONFIGURE=	yes
-CONFIGURE_ENV=	CC="${CC}" CXX="${CXX}" LDFLAGS="${LDFLAGS}"
+CONFIGURE_ENV=	CC="${CC}" CXX="${CXX}" LDFLAGS="${LDFLAGS}" \
+		CFLAGS="${CFLAGS}" CXXFLAGS="${CXXFLAGS}"
 USE_GCC=	yes
 USES=		gmake readline tar:tgz
 USE_LDCONFIG=	${PREFIX}/lib/cint
 ALL_TARGET=
+
+# The port does not build with C++11/C++14, so explicitly use an older
+# standard.
+USE_CXXSTD=	gnu++03
 
 INSTALL_ARGS=	--bindir=${STAGEDIR}${PREFIX}/bin\
 		--libdir=${STAGEDIR}${PREFIX}/lib/cint\

@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/databases/mysql56-server/Makefile 446148 2017-07-18 16:59:30Z mmokhi $
+# $FreeBSD: head/databases/mysql56-server/Makefile 447926 2017-08-14 05:37:21Z vd $
 
 PORTNAME?=	mysql
 PORTVERSION=	5.6.37
@@ -78,6 +78,7 @@ USES+=		mysql:56
 
 CONFLICTS_INSTALL=	mysql5[0-57-9]-server-* \
 			mysql[0-46-9][0-9]-server-* \
+			mysqlwsrep* \
 			mariadb[0-9][0-9]-server-* \
 			percona[0-9][0-9]-server-*
 

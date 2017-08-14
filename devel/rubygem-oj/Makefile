@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-oj/Makefile 447374 2017-08-04 20:09:06Z sunpoet $
+# $FreeBSD: head/devel/rubygem-oj/Makefile 447858 2017-08-12 18:59:25Z sunpoet $
 
 PORTNAME=	oj
-PORTVERSION=	3.3.4
+PORTVERSION=	3.3.5
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

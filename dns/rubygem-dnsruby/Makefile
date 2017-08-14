@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/dns/rubygem-dnsruby/Makefile 439397 2017-04-25 14:24:56Z sunpoet $
+# $FreeBSD: head/dns/rubygem-dnsruby/Makefile 447804 2017-08-11 21:39:07Z sunpoet $
 
 PORTNAME=	dnsruby
-PORTVERSION=	1.60.1
+PORTVERSION=	1.60.2
 CATEGORIES=	dns rubygems
 MASTER_SITES=	RG
 

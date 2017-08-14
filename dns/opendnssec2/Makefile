@@ -1,9 +1,8 @@
 # Created by: Jaap Akkerhuis <jaap@NLnetLabs.nl>
-# $FreeBSD: head/dns/opendnssec2/Makefile 447554 2017-08-08 18:02:53Z ultima $
+# $FreeBSD: head/dns/opendnssec2/Makefile 447941 2017-08-14 14:46:31Z matthew $
 
 PORTNAME=	opendnssec
-PORTVERSION=	2.1.1
-PORTREVISION=	1
+PORTVERSION=	2.1.3
 CATEGORIES=	dns
 MASTER_SITES=	http://dist.opendnssec.org/source/
 PKGNAMESUFFIX=	2

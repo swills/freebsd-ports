@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 447720 2017-08-10 20:25:17Z girgen $
+# $FreeBSD: head/databases/Makefile 447833 2017-08-12 14:19:04Z romain $
 #
 
     COMMENT = Databases and related software
@@ -569,6 +569,7 @@
     SUBDIR += pg_activity
     SUBDIR += pg_citus
     SUBDIR += pg_dirtyread
+    SUBDIR += pg_partman
     SUBDIR += pg_qualstats
     SUBDIR += pg_reorg
     SUBDIR += pg_repack
@@ -735,8 +736,10 @@
     SUBDIR += proftpd-mod_sql_tds
     SUBDIR += puppetdb-terminus3
     SUBDIR += puppetdb-terminus4
+    SUBDIR += puppetdb-terminus5
     SUBDIR += puppetdb3
     SUBDIR += puppetdb4
+    SUBDIR += puppetdb5
     SUBDIR += pure-sql3
     SUBDIR += puredb
     SUBDIR += pxlib

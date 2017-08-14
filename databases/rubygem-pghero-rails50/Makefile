@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/rubygem-pghero-rails50/Makefile 447653 2017-08-09 19:36:17Z sunpoet $
+# $FreeBSD: head/databases/rubygem-pghero-rails50/Makefile 447768 2017-08-11 14:30:38Z jrm $
 
 PORTNAME=	pghero
-PORTVERSION=	2.0.0
+PORTVERSION=	2.0.2
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 RUN_DEPENDS=	rubygem-activerecord50>=0:databases/rubygem-activerecord50
 
 NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 .include <bsd.port.mk>

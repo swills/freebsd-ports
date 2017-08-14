@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/py-gphoto2/Makefile 442300 2017-06-01 16:05:18Z woodsb02 $
+# $FreeBSD: head/graphics/py-gphoto2/Makefile 447935 2017-08-14 12:56:23Z woodsb02 $
 
 PORTNAME=	gphoto2
-PORTVERSION=	1.6.0
+PORTVERSION=	1.7.0
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

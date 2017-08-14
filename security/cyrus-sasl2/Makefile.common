@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/cyrus-sasl2/Makefile.common 436257 2017-03-15 20:28:53Z antoine $
+# $FreeBSD: head/security/cyrus-sasl2/Makefile.common 447787 2017-08-11 18:47:20Z mmokhi $
 
 PORTNAME=	cyrus-sasl
 PORTVERSION=	2.1.26
@@ -96,20 +96,12 @@ SASLDB_NAME=	sasldb2
 SASLDB=	"@comment "
 .endif
 
-.if ${PORT_OPTIONS:MMYSQL} || ${PORT_OPTIONS:MPGSQL} || \
-    ${PORT_OPTIONS:MSQLITE2} || ${PORT_OPTIONS:MSQLITE3}
-CONFIGURE_ARGS+=--enable-sql
-.else
-SQL=	"@comment "
-.endif
-
 SUB_FILES=	pkg-deinstall pkg-install pkg-message
 SUB_LIST=	CYRUS_USER=${CYRUS_USER} CYRUS_GROUP=${CYRUS_GROUP} \
 		SASLDB_NAME=${SASLDB_NAME}
 
 PLIST_SUB+=	PREFIX=${PREFIX} \
 		SASLDB=${SASLDB} \
-		SQL=${SQL} \
 		DOCSDIR=${DOCSDIR:S/^${PREFIX}\///}
 
 post-patch:

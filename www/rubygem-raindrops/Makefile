@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-raindrops/Makefile 436796 2017-03-23 23:25:24Z sunpoet $
+# $FreeBSD: head/www/rubygem-raindrops/Makefile 447807 2017-08-11 21:39:22Z sunpoet $
 
 PORTNAME=	raindrops
-PORTVERSION=	0.18.0
+PORTVERSION=	0.19.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

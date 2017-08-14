@@ -1,8 +1,8 @@
 # Created by: olevole@olevole.ru
-# $FreeBSD: head/databases/tile38/Makefile 426058 2016-11-13 15:52:30Z riggs $
+# $FreeBSD: head/databases/tile38/Makefile 447752 2017-08-11 10:21:44Z tz $
 
 PORTNAME=	tile38
-PORTVERSION=	1.5.2
+PORTVERSION=	1.9.0
 CATEGORIES=	databases
 
 MAINTAINER=	olevole@olevole.ru

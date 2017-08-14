@@ -1,22 +1,23 @@
 # Created by: clsung@FreeBSD.org
-# $FreeBSD: head/devel/py-jcc/Makefile 441881 2017-05-27 22:16:50Z linimon $
+# $FreeBSD: head/devel/py-jcc/Makefile 447881 2017-08-13 12:52:37Z dbaio $
 
 PORTNAME=	jcc
-PORTVERSION=	2.23
+PORTVERSION=	3.0
 CATEGORIES=	devel java python
 MASTER_SITES=	CHEESESHOP/source/J/JCC
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	JCC-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	C++ code generator for calling Java from C++/Python
 
 LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_armv6=		fails to link: /nxb-bin/usr/bin/ld: cannot find -ljava
 
 USES=		python
-USE_PYTHON=	distutils
+USE_PYTHON=	distutils autoplist
 PYDISTUTILS_PKGNAME=	JCC
 USE_JAVA=	yes
 JAVA_VERSION=	1.6+
@@ -35,6 +36,6 @@ MAKE_ENV+=	JCC_INCLUDES=${JCC_INCLUDES} JCC_CFLAGS=${JCC_CFLAGS} \
 		JCC_JAVAC=javac JCC_ARGSEP=";"
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/jcc/_jcc.so
+	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/jcc/_jcc${PYTHON_MAJOR_VER}.so
 
 .include <bsd.port.mk>

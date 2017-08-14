@@ -1,8 +1,8 @@
 # Created by: rooneg@electricjellyfish.net
-# $FreeBSD: head/devel/subversion18/Makefile.common 433059 2017-02-01 17:42:40Z lev $
+# $FreeBSD: head/devel/subversion18/Makefile.common 447767 2017-08-11 14:30:24Z lev $
 
 PORTNAME?=	subversion
-PORTVERSION=	1.8.17
+PORTVERSION=	1.8.19
 PORTREVISION?=	0
 CATEGORIES+=	devel
 MASTER_SITES=	APACHE/subversion
@@ -56,6 +56,8 @@ SERF_CONFIGURE_ON=		--with-serf
 SERF_LIB_DEPENDS=		libserf-1.so:www/serf
 
 STATIC_CONFIGURE_ON=		--enable-all-static PKG_CONFIG="${LOCALBASE}/bin/pkg-config --static"
+
+LD_FLAGS+=			-lm
 
 # ===============================================================
 .include <bsd.port.options.mk>

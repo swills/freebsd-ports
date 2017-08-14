@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/devel/catch/Makefile 445427 2017-07-10 11:14:15Z gahr $
+# $FreeBSD: head/devel/catch/Makefile 447945 2017-08-14 15:51:18Z gahr $
 
 PORTNAME=	catch
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.9.6
+DISTVERSION=	1.9.7
 CATEGORIES=	devel
 
 MAINTAINER=	gahr@FreeBSD.org
@@ -13,6 +13,7 @@ LICENSE=	BSL
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 TEST_DEPENDS=	cmake:devel/cmake
+
 TEST_TARGET=	do-test
 
 USE_GITHUB=	yes

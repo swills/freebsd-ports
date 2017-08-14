@@ -1,8 +1,8 @@
 # Created by: Russell Jackson <raj@csub.edu>
-# $FreeBSD: head/sysutils/mcollective/Makefile 446262 2017-07-20 15:30:52Z romain $
+# $FreeBSD: head/sysutils/mcollective/Makefile 447834 2017-08-12 14:21:30Z romain $
 
 PORTNAME=	mcollective
-PORTVERSION=	2.9.0
+PORTVERSION=	2.11.1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://downloads.puppetlabs.com/${PORTNAME}/
 
@@ -47,7 +47,7 @@ do-patch:
 do-install:
 	cd ${WRKSRC} ; ${RUBY} install.rb --destdir=${STAGEDIR} --configdir=${ETCDIR} --plugindir=${DATADIR}
 .for cfg in ${CFG_FILES}
-	mv ${STAGEDIR}${ETCDIR}/${cfg} ${STAGEDIR}${ETCDIR}/${cfg}.sample
+	${MV} ${STAGEDIR}${ETCDIR}/${cfg} ${STAGEDIR}${ETCDIR}/${cfg}.sample
 .endfor
 
 .include <bsd.port.mk>

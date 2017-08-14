@@ -1,8 +1,8 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/textproc/icdiff/Makefile 428929 2016-12-19 13:10:11Z woodsb02 $
+# $FreeBSD: head/textproc/icdiff/Makefile 447931 2017-08-14 12:01:08Z woodsb02 $
 
 PORTNAME=	icdiff
-PORTVERSION=	1.8.6
+PORTVERSION=	1.9.1
 CATEGORIES=	textproc
 MASTER_SITES=	CHEESESHOP
 

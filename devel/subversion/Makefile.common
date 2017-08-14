@@ -1,8 +1,8 @@
 # Created by: rooneg@electricjellyfish.net
-# $FreeBSD: head/devel/subversion/Makefile.common 445440 2017-07-10 15:59:30Z lev $
+# $FreeBSD: head/devel/subversion/Makefile.common 447762 2017-08-11 14:02:22Z lev $
 
 PORTNAME?=	subversion
-PORTVERSION=	1.9.6
+PORTVERSION=	1.9.7
 PORTREVISION?=	0
 CATEGORIES+=	devel
 MASTER_SITES=	APACHE/subversion

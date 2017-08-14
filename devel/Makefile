@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 447657 2017-08-09 21:00:12Z wulf $
+# $FreeBSD: head/devel/Makefile 447944 2017-08-14 15:47:55Z tz $
 #
 
     COMMENT = Development utilities
@@ -750,6 +750,7 @@
     SUBDIR += git-modes
     SUBDIR += git-review
     SUBDIR += git-subversion
+    SUBDIR += gitaly
     SUBDIR += gitblit
     SUBDIR += gitflow
     SUBDIR += gitg
@@ -5464,6 +5465,7 @@
     SUBDIR += rubygem-hike
     SUBDIR += rubygem-hike1
     SUBDIR += rubygem-hitimes
+    SUBDIR += rubygem-hocon
     SUBDIR += rubygem-hoe
     SUBDIR += rubygem-holidays
     SUBDIR += rubygem-http_accept_language

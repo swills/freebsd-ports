@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 447658 2017-08-09 23:11:58Z woodsb02 $
+# $FreeBSD: head/sysutils/Makefile 447831 2017-08-12 13:53:05Z romain $
 #
 
     COMMENT = System utilities
@@ -139,12 +139,14 @@
     SUBDIR += cfengine
     SUBDIR += cfengine-masterfiles
     SUBDIR += cfengine-masterfiles310
+    SUBDIR += cfengine-masterfiles311
     SUBDIR += cfengine-masterfiles36
     SUBDIR += cfengine-masterfiles37
     SUBDIR += cfengine-masterfiles38
     SUBDIR += cfengine-masterfiles39
     SUBDIR += cfengine22
     SUBDIR += cfengine310
+    SUBDIR += cfengine311
     SUBDIR += cfengine32
     SUBDIR += cfengine33
     SUBDIR += cfengine34
@@ -854,6 +856,7 @@
     SUBDIR += puppet-lint
     SUBDIR += puppet-mode.el
     SUBDIR += puppet4
+    SUBDIR += puppet5
     SUBDIR += puppetserver
     SUBDIR += pv
     SUBDIR += pwd_unmkdb

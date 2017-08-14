@@ -1,5 +1,5 @@
 # Created by: Khairil Yusof <kaeru@inigo-tech.com>
-# $FreeBSD: head/devel/py-pytz/Makefile 447187 2017-08-03 00:52:03Z lwhsu $
+# $FreeBSD: head/devel/py-pytz/Makefile 447934 2017-08-14 12:56:18Z lwhsu $
 
 PORTNAME=	pytz
 PORTVERSION=	2017.2
@@ -13,8 +13,10 @@ COMMENT=	World Timezone Definitions for Python
 
 LICENSE=	MIT
 
-USES=		python zip
+USES?=		python zip
 USE_PYTHON=	autoplist distutils
+
+NO_ARCH=	yes
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|=True|=False|' ${WRKSRC}/${PYSETUP}

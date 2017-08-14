@@ -1,8 +1,8 @@
-# $FreeBSD: head/emulators/riscv-isa-sim/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/emulators/riscv-isa-sim/Makefile 447782 2017-08-11 17:50:49Z lwhsu $
 
 PORTNAME=	riscv-isa-sim
 DISTVERSION=	git
-PORTREVISION=	20170207
+PORTREVISION=	20170809
 CATEGORIES=	emulators
 
 MAINTAINER=	lwhsu@FreeBSD.org
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libfesvr.so:emulators/riscv-fesvr
 ONLY_FOR_ARCHS=	amd64
 
 GH_ACCOUNT=	freebsd-riscv
-GH_TAGNAME=	11ec3a3
+GH_TAGNAME=	54ae820
 
 USES=	compiler:c++11-lang gmake shebangfix
 
@@ -25,7 +25,8 @@ USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 
 LDFLAGS+=	-L${LOCALBASE}/lib
-CFLAGS+=	-I${LOCALBASE}/include
+CFLAGS+=	-I${LOCALBASE}/include \
+		-DRISCV_ENABLE_DIRTY=1
 
 STRIP_FILES=	bin/spike \
 		bin/spike-dasm \

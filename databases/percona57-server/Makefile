@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/databases/percona57-server/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/databases/percona57-server/Makefile 447926 2017-08-14 05:37:21Z vd $
 
 PORTNAME?=	percona
 DISTVERSION=	5.7.16-10
@@ -101,6 +101,7 @@ TOKUDB_EXTRA_PATCHES=${PATCHDIR}/extrapatch-tokudb
 USES+=mysql:57p
 
 CONFLICTS_INSTALL=	mysql*-server-* \
+			mysqlwsrep* \
 			mariadb*-server-* \
 			percona5[0-68-9]-server-*
 

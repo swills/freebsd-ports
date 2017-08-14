@@ -1,5 +1,5 @@
 # Created by: Ben Kaduk <kaduk@mit.edu>
-# $FreeBSD: head/devel/e2fsprogs-libss/Makefile 439720 2017-04-29 06:32:03Z linimon $
+# $FreeBSD: head/devel/e2fsprogs-libss/Makefile 447819 2017-08-12 10:12:47Z mandree $
 
 PORTREVISION=	0
 CATEGORIES=	devel
@@ -7,6 +7,9 @@ PKGNAMESUFFIX=	-libss
 
 MAINTAINER=	kaduk-fbsd@mit.edu
 COMMENT=	Command-line interface parsing library from e2fsprogs
+
+LICENSE=	MIT
+LICENSE_FILE=	${INSTALL_WRKSRC}/ss.h
 
 CONFLICTS=	heimdal-[0-9]*
 CONFLICTS+=	krb4-[0-9]*

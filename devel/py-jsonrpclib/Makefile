@@ -1,9 +1,8 @@
 # Created by: Attila Nagy <bra@fsn.hu>
-# $FreeBSD: head/devel/py-jsonrpclib/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-jsonrpclib/Makefile 447861 2017-08-12 20:31:29Z swills $
 
 PORTNAME=	jsonrpclib
-PORTVERSION=	0.1.3
-PORTREVISION=	2
+PORTVERSION=	0.1.7
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

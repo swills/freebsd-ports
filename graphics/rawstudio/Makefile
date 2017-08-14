@@ -1,9 +1,9 @@
 # Created by: Alex Samorukov <samm@os2.kiev.ua>
-# $FreeBSD: head/graphics/rawstudio/Makefile 442300 2017-06-01 16:05:18Z woodsb02 $
+# $FreeBSD: head/graphics/rawstudio/Makefile 447935 2017-08-14 12:56:23Z woodsb02 $
 
 PORTNAME=	rawstudio
 PORTVERSION=	2.0
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	graphics
 MASTER_SITES=	http://rawstudio.org/files/release/
 

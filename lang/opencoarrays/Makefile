@@ -1,11 +1,11 @@
 # Created by: Anton Shterenlikht
-# $FreeBSD: head/lang/opencoarrays/Makefile 442057 2017-05-30 10:51:40Z tijl $
+# $FreeBSD: head/lang/opencoarrays/Makefile 447776 2017-08-11 16:58:13Z pi $
 
 PORTNAME=	opencoarrays
-PORTVERSION=	1.9.0
+PORTVERSION=	1.9.1
 CATEGORIES=	lang parallel
 
-MAINTAINER=	mexas@bris.ac.uk
+MAINTAINER=	as@cmplx.uk
 COMMENT=	Transport layer for coarray Fortran compilers
 
 LICENSE=	BSD3CLAUSE

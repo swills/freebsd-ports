@@ -1,8 +1,8 @@
 # Created by: Carlo Strub <cs@FreeBSD.org>
-# $FreeBSD: head/www/py-django-otp-yubikey/Makefile 428243 2016-12-09 21:24:28Z cs $
+# $FreeBSD: head/www/py-django-otp-yubikey/Makefile 447910 2017-08-13 19:11:15Z cs $
 
 PORTNAME=	django-otp-yubikey
-PORTVERSION=	0.3.5
+PORTVERSION=	0.4.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,8 +12,8 @@ COMMENT=	Plugin that verifies YubiKey OTP tokens
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}YubiOTP>0:security/py-YubiOTP \
-		${PYTHON_PKGNAMEPREFIX}django-otp>0:www/py-django-otp
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}YubiOTP>=0.2.1:security/py-YubiOTP \
+		${PYTHON_PKGNAMEPREFIX}django-otp>0.4.0:www/py-django-otp
 
 USES=		python
 USE_PYTHON=	autoplist distutils

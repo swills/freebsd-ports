@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/math/drgeo/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/math/drgeo/Makefile 447829 2017-08-12 13:21:07Z rakuco $
 
 PORTNAME=	drgeo
 PORTVERSION=	1.1.0
-PORTREVISION=	19
+PORTREVISION=	20
 CATEGORIES=	math
 MASTER_SITES=	SF/ofset/${PORTNAME}/${PORTVERSION}
 
@@ -17,7 +17,6 @@ USES=		gettext gmake pkgconfig pathfix
 USE_GNOME=	gnomeprefix intlhack libglade2
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-USE_GCC=	yes # segfaults when built with clang
 
 PORTDATA=	*
 

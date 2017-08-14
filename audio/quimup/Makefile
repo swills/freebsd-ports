@@ -1,12 +1,11 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/audio/quimup/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/audio/quimup/Makefile 447791 2017-08-11 21:32:06Z tobik $
 
 PORTNAME=	quimup
-PORTVERSION=	1.4.1
-PORTREVISION=	1
+PORTVERSION=	1.4.2
 CATEGORIES=	audio
 MASTER_SITES=	SF/${PORTNAME}
-DISTNAME=	${PORTNAME}_${PORTVERSION}_source
+DISTNAME=	${PORTNAME}%20${PORTVERSION}_source
 
 MAINTAINER=	cmangin@arobas.net
 COMMENT=	Qt5 client for MPD (the Music Player Daemon)

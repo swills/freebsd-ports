@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 447586 2017-08-09 00:46:32Z ultima $
+# $FreeBSD: head/x11/Makefile 447925 2017-08-14 02:46:31Z swills $
 #
 
     COMMENT = Ports to support the X window system
@@ -291,6 +291,7 @@
     SUBDIR += rxvt-unicode
     SUBDIR += sakura
     SUBDIR += sbxkb
+    SUBDIR += screen-message
     SUBDIR += scripts
     SUBDIR += scrnsaverproto
     SUBDIR += sessreg

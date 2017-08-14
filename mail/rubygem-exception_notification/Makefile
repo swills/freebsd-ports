@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/mail/rubygem-exception_notification/Makefile 429790 2016-12-28 16:05:02Z swills $
+# $FreeBSD: head/mail/rubygem-exception_notification/Makefile 447903 2017-08-13 16:40:24Z sunpoet $
 
 PORTNAME=	exception_notification
-PORTVERSION=	4.2.1
+PORTVERSION=	4.2.2
 CATEGORIES=	mail rubygems
 MASTER_SITES=	RG
 

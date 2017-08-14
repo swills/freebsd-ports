@@ -1,9 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/databases/sqlite3/Makefile 447626 2017-08-09 14:04:03Z madpilot $
+# $FreeBSD: head/databases/sqlite3/Makefile 447763 2017-08-11 14:12:44Z lev $
 
 PORTNAME=	sqlite3
 PORTVERSION=	3.20.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases
 MASTER_SITES=	https://www.sqlite.org/2017/ http://www2.sqlite.org/2017/ http://www3.sqlite.org/2017/
 DISTNAME=	sqlite-autoconf-${PORTVERSION:C/\.([[:digit:]])[[:>:]]/0\1/g:S/.//g}00
@@ -143,6 +143,7 @@ RTREE_INT_CPPFLAGS=	-DSQLITE_RTREE_INT_ONLY=1
 
 FTS4_CPPFLAGS=	-DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS=1 -DSQLITE_ENABLE_FTS4=1
 FTS5_CONFIGURE_ENABLE=	fts5
+FTS5_LIBS=		-lm
 FTS3_TOKEN_CPPFLAGS=	-DSQLITE_ENABLE_FTS3_TOKENIZER=1
 
 SOUNDEX_CPPFLAGS=	-DSQLITE_SOUNDEX=1

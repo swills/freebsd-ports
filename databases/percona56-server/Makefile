@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/databases/percona56-server/Makefile 447072 2017-08-01 19:14:54Z flo $
+# $FreeBSD: head/databases/percona56-server/Makefile 447926 2017-08-14 05:37:21Z vd $
 
 PORTNAME?=	percona
 DISTVERSION=	5.6.36-82.0
@@ -71,6 +71,7 @@ USES+=		libedit
 USES+=mysql:56p
 
 CONFLICTS_INSTALL=	mysql*-server-* \
+			mysqlwsrep* \
 			mariadb*-server-* \
 			percona5[0-57-9]-server-*
 

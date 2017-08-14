@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/science/massxpert/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/science/massxpert/Makefile 447879 2017-08-13 11:20:36Z rakuco $
 
 PORTNAME=	massxpert
 PORTVERSION=	3.4.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	science
 MASTER_SITES=	http://download.tuxfamily.org/massxpert/source/
 
@@ -26,6 +26,5 @@ USE_GNOME=	glib20
 USE_QT4=	corelib gui xml rcc_build qmake_build uic_build moc_build \
 		svg
 USE_LDCONFIG=	yes
-MAKE_JOBS_UNSAFE=	yes
 
 .include <bsd.port.mk>

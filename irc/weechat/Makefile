@@ -1,5 +1,5 @@
 # Created by: clement
-# $FreeBSD: head/irc/weechat/Makefile 445144 2017-07-06 12:39:59Z brnrd $
+# $FreeBSD: head/irc/weechat/Makefile 447942 2017-08-14 15:24:59Z brnrd $
 
 PORTNAME=	weechat
 PORTVERSION=	1.9
@@ -95,6 +95,10 @@ TCL_USES=		tcl:85+
 WARNING=	"Using Python 3.x is NOT recommended because many \"official\" scripts won\'t work"
 CMAKE_ARGS+=	-DENABLE_PYTHON3:BOOL=true \
 		-DPYTHON_LIBRARY:FILEPATH=${LOCALBASE}/lib/libpython${PYTHON_VER}m.so
+.endif
+
+.if !empty(PORT_OPTIONS:MRUBY) && (${ARCH} == "amd64" || ${ARCH} == "i386")
+LIB_DEPENDS+=   libunwind.so:devel/libunwind
 .endif
 
 post-patch:

@@ -1,9 +1,9 @@
 # Created by: Pav Lucistnik <pav@FreeBSD.org>
-# $FreeBSD: head/graphics/fusefs-gphotofs/Makefile 442300 2017-06-01 16:05:18Z woodsb02 $
+# $FreeBSD: head/graphics/fusefs-gphotofs/Makefile 447935 2017-08-14 12:56:23Z woodsb02 $
 
 PORTNAME=	gphotofs
 PORTVERSION=	0.5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics sysutils
 MASTER_SITES=	SF/gphoto/${PORTNAME}/${PORTVERSION}.0
 PKGNAMEPREFIX=	fusefs-

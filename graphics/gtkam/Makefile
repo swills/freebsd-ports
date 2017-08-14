@@ -1,13 +1,13 @@
 # Created by: ports@FreeBSD.org
-# $FreeBSD: head/graphics/gtkam/Makefile 442300 2017-06-01 16:05:18Z woodsb02 $
+# $FreeBSD: head/graphics/gtkam/Makefile 447935 2017-08-14 12:56:23Z woodsb02 $
 
 PORTNAME=	gtkam
 PORTVERSION=	1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	SF/gphoto/${PORTNAME}/${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	woodsb02@FreeBSD.org
 COMMENT=	Download and view files from various digital cameras
 
 LICENSE=	GPLv2+

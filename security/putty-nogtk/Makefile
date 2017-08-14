@@ -1,9 +1,9 @@
 # Created by: Matthias Andree <mandree@FreeBSD.org>
-# $FreeBSD: head/security/putty-nogtk/Makefile 428696 2016-12-16 20:30:31Z mandree $
+# $FreeBSD: head/security/putty-nogtk/Makefile 447748 2017-08-11 08:45:02Z mandree $
 
 PKGNAMESUFFIX=		-nogtk
 
-OPTIONS_EXCLUDE=	GTK2
+OPTIONS_EXCLUDE=	GTK3
 
 CONFLICTS_INSTALL=	pssh-[0-9]* putty-[0-9]*
 

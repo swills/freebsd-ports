@@ -1,9 +1,8 @@
 # Created by: n_hibma@qubesoft.com
-# $FreeBSD: head/mail/mailman/Makefile 438999 2017-04-21 03:11:17Z miwi $
+# $FreeBSD: head/mail/mailman/Makefile 447764 2017-08-11 14:24:10Z mandree $
 
 PORTNAME=	mailman
-DISTVERSION=	2.1.23
-PORTREVISION=	1
+DISTVERSION=	2.1.24
 CATEGORIES=	mail
 MASTER_SITES=	GNU \
 		SF/${PORTNAME}/Mailman%202.1%20%28stable%29/${PORTVERSION} \
@@ -115,11 +114,12 @@ MAIL_GID?=	_smtpd
 .if ${PORT_OPTIONS:MHTDIG}
 PKGNAMESUFFIX+=	-with-htdig
 # how to create PATCHFILES:
-#X fetch http://bazaar.launchpad.net/~msapiro/mailman/htdig/tarball/1668
+#X identify what is the version of msapiro's patches corresponding to the release.
+#X fetch http://bazaar.launchpad.net/~msapiro/mailman/htdig/tarball/1702
 #X unpack this tarball, and the original distfile
-#X diff -NEur original-unpack bazaar-unpack | xz --best -c >msapiro-htdig-1668.patch.xz
+#X diff -NEur original-unpack bazaar-unpack | xz --best -c >msapiro-htdig-1702.patch.xz
 #X upload the latter with mode 0644 or similar to freefall's public_distfiles/ directory
-PATCHFILES+=	msapiro-htdig-1668.patch.xz
+PATCHFILES+=	msapiro-htdig-1702.patch.xz
 RUN_DEPENDS+=	htdig:textproc/htdig
 PLIST_SUB+=	SUB_HTDIG=""
 .else

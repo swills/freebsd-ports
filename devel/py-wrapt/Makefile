@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-wrapt/Makefile 438634 2017-04-16 11:07:36Z sunpoet $
+# $FreeBSD: head/devel/py-wrapt/Makefile 447852 2017-08-12 18:58:53Z sunpoet $
 
 PORTNAME=	wrapt
-PORTVERSION=	1.10.10
+PORTVERSION=	1.10.11
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

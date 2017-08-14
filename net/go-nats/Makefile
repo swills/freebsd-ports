@@ -1,10 +1,9 @@
-# $FreeBSD: head/net/go-nats/Makefile 424745 2016-10-27 06:15:43Z olgeni $
+# $FreeBSD: head/net/go-nats/Makefile 447755 2017-08-11 11:52:46Z olgeni $
 
-PORTNAME=	nats
+PORTNAME=	go-nats
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.2.2
+DISTVERSION=	1.3.0
 CATEGORIES=	net
-PKGNAMEPREFIX=	go-
 
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Go client for NATS

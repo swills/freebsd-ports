@@ -1,8 +1,8 @@
 # Created by: Kimo <kimor79@yahoo.com>
-# $FreeBSD: head/databases/rubygem-mysql2/Makefile 445517 2017-07-11 17:00:16Z sunpoet $
+# $FreeBSD: head/databases/rubygem-mysql2/Makefile 447802 2017-08-11 21:38:56Z sunpoet $
 
 PORTNAME=	mysql2
-PORTVERSION=	0.4.8
+PORTVERSION=	0.4.9
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

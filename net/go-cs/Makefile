@@ -1,8 +1,8 @@
 # Created by: Andy Kosela <akosela@andykosela.com>
-# $FreeBSD: head/net/go-cs/Makefile 447082 2017-08-01 22:33:36Z ultima $
+# $FreeBSD: head/net/go-cs/Makefile 447868 2017-08-12 23:26:50Z swills $
 
 PORTNAME=	go-cs
-PORTVERSION=	0.8
+PORTVERSION=	0.9
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 

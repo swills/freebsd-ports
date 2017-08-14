@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/math77/Makefile 439991 2017-05-02 22:23:52Z linimon $
+# $FreeBSD: head/math/math77/Makefile 447777 2017-08-11 17:01:13Z pi $
 
 PORTNAME=	math77
 PORTVERSION=	6.0
@@ -8,7 +8,7 @@ MASTER_SITES=	NL/math
 DISTNAME=	${PORTNAME}
 DIST_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	mexas@bris.ac.uk
+MAINTAINER=	as@cmplx.uk
 COMMENT=	CalTech mathematical subprogram libraries for Fortran 77
 
 LICENSE=	BSD3CLAUSE

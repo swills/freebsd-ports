@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/puppetdb-terminus3/Makefile 446262 2017-07-20 15:30:52Z romain $
+# $FreeBSD: head/databases/puppetdb-terminus3/Makefile 447833 2017-08-12 14:19:04Z romain $
 
 PORTNAME=	puppetdb-terminus3
 PORTVERSION=	3.2.4
@@ -13,7 +13,7 @@ LICENSE=	APACHE20
 
 BUILD_DEPENDS=	puppet:sysutils/puppet4
 
-CONFLICTS_INSTALL=	puppetdb-terminus-* puppetdb-terminus4-*
+CONFLICTS_INSTALL=	puppetdb-terminus4-* puppetdb-terminus5-*
 USE_RUBY=	yes
 NO_BUILD=	yes
 

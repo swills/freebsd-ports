@@ -1,9 +1,8 @@
 # Created by: Anders Nordby <anders@fix.no>
-# $FreeBSD: head/graphics/gphoto2/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/graphics/gphoto2/Makefile 447935 2017-08-14 12:56:23Z woodsb02 $
 
 PORTNAME=	gphoto2
-PORTVERSION=	2.5.11
-PORTREVISION=	2
+PORTVERSION=	2.5.14
 CATEGORIES=	graphics
 MASTER_SITES=	SF/gphoto/gphoto/${PORTVERSION}
 

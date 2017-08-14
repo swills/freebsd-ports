@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/elixir-mariaex/Makefile 437092 2017-03-28 01:09:58Z olgeni $
+# $FreeBSD: head/databases/elixir-mariaex/Makefile 447758 2017-08-11 13:20:45Z olgeni $
 
 PORTNAME=	mariaex
-PORTVERSION=	0.8.2
+PORTVERSION=	0.8.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 PKGNAMEPREFIX=	elixir-

@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/camerakit/Makefile 442300 2017-06-01 16:05:18Z woodsb02 $
+# $FreeBSD: head/graphics/camerakit/Makefile 447935 2017-08-14 12:56:23Z woodsb02 $
 
 PORTNAME=	camerakit
 PORTVERSION=	0.0.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	graphics gnustep
 MASTER_SITES=	http://download.gna.org/gsimageapps/
 DISTNAME=	CameraKit-20041011

@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/sysutils/rubygem-sys-proctable/Makefile 437383 2017-03-31 20:39:41Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-sys-proctable/Makefile 447806 2017-08-11 21:39:17Z sunpoet $
 
 PORTNAME=	sys-proctable
-PORTVERSION=	1.1.4
+PORTVERSION=	1.1.5
 DISTVERSIONSUFFIX=	-universal-freebsd
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG

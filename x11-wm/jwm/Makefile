@@ -1,8 +1,8 @@
 # Created by: Babak Farrokhi <babak@farrokhi.net>
-# $FreeBSD: head/x11-wm/jwm/Makefile 420619 2016-08-22 16:03:17Z woodsb02 $
+# $FreeBSD: head/x11-wm/jwm/Makefile 447932 2017-08-14 12:03:59Z woodsb02 $
 
 PORTNAME=	jwm
-PORTVERSION=	2.3.6
+PORTVERSION=	2.3.7
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://joewing.net/projects/jwm/releases/
 

@@ -1,8 +1,8 @@
 # Created by: stas
-# $FreeBSD: head/graphics/rawtherapee/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/graphics/rawtherapee/Makefile 447812 2017-08-11 23:16:56Z mandree $
 
 PORTNAME=	rawtherapee
-PORTVERSION=	5.1
+PORTVERSION=	5.2
 #DISTNAME=	${PORTNAME}-${PORTVERSION:R}-r${PORTVERSION:E}${DISTVERSIONSUFFIX}
 CATEGORIES=	graphics
 MASTER_SITES=	http://rawtherapee.com/shared/source/

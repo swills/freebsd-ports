@@ -1,8 +1,8 @@
 # Created by: Pete Fritchman <petef@databits.net>
-# $FreeBSD: head/benchmarks/iperf/Makefile 426847 2016-11-22 18:43:04Z sunpoet $
+# $FreeBSD: head/benchmarks/iperf/Makefile 447849 2017-08-12 18:58:37Z sunpoet $
 
 PORTNAME=	iperf
-PORTVERSION=	2.0.9
+PORTVERSION=	2.0.10
 CATEGORIES=	benchmarks
 MASTER_SITES=	SF/${PORTNAME}2
 

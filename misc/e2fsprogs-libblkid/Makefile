@@ -1,11 +1,14 @@
 # Created by: Matthias Andree <matthias.andree@gmx.de>
-# $FreeBSD: head/misc/e2fsprogs-libblkid/Makefile 433466 2017-02-05 23:39:14Z mandree $
+# $FreeBSD: head/misc/e2fsprogs-libblkid/Makefile 447819 2017-08-12 10:12:47Z mandree $
 
 PORTREVISION=	0
 CATEGORIES=	misc devel
 PKGNAMESUFFIX=	-libblkid
 
 COMMENT=	Blkid library from e2fsprogs package
+
+LICENSE=	LGPL20+
+_no_license_file=	sorry
 
 LIB_DEPENDS=	libuuid.so:misc/e2fsprogs-libuuid
 
