@@ -1,8 +1,8 @@
 # Created by: Murilo Opsfelder <mopsfelder@gmail.com>
-# $FreeBSD: head/www/p5-Mojolicious/Makefile 447315 2017-08-04 02:19:14Z adamw $
+# $FreeBSD: head/www/p5-Mojolicious/Makefile 447949 2017-08-14 16:07:50Z adamw $
 
 PORTNAME=	Mojolicious
-PORTVERSION=	7.39
+PORTVERSION=	7.40
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,12 +13,14 @@ COMMENT=	High-level MVC web framework written in Perl
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+TEST_DEPENDS=	p5-Role-Tiny>=2.000001:devel/p5-Role-Tiny
+
 OPTIONS_DEFINE=	EV IPV6 TLS
 OPTIONS_DEFAULT=EV TLS
 
 NO_ARCH=	yes
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
 
 EV_DESC=		High-performance event loop via devel/p5-EV
 EV_BUILD_DEPENDS=	p5-EV>=4:devel/p5-EV

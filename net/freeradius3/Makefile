@@ -1,8 +1,9 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/freeradius3/Makefile 447034 2017-08-01 17:07:58Z zi $
+# $FreeBSD: head/net/freeradius3/Makefile 447967 2017-08-14 22:32:53Z feld $
 
 PORTNAME=	freeradius
 DISTVERSION=	3.0.15
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.freeradius.org/pub/freeradius/%SUBDIR%/ \
 		ftp://ftp.ntua.gr/pub/net/radius/freeradius/%SUBDIR%/ \
@@ -321,7 +322,8 @@ CONFIGURE_ARGS+=--with-logdir=${LOGDIR} \
 		--without-rlm_securid \
 		--without-rlm_cache_memcached \
 		--with-vmps \
-		--with-collectdclient-lib-dir=/dev/null
+		--with-collectdclient-lib-dir=/dev/null \
+		--disable-openssl-version-check
 
 .if ${ARCH} == amd64
 CONFIGURE_ARGS+=--with-pic

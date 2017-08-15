@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 447921 2017-08-13 22:34:00Z ultima $
+# $FreeBSD: head/audio/Makefile 447972 2017-08-15 00:13:32Z ultima $
 #
 
     COMMENT = Audio tools
@@ -560,6 +560,7 @@
     SUBDIR += opus
     SUBDIR += opus-tools
     SUBDIR += opusfile
+    SUBDIR += orbit-lv2
     SUBDIR += osalp
     SUBDIR += osd-lyrics
     SUBDIR += osdmixer

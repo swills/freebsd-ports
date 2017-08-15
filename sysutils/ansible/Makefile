@@ -1,8 +1,8 @@
 # Created by: Nikolai Lifanov <lifanov@mail.lifanov.com>
-# $FreeBSD: head/sysutils/ansible/Makefile 442458 2017-06-02 19:47:53Z lifanov $
+# $FreeBSD: head/sysutils/ansible/Makefile 447948 2017-08-14 16:00:19Z lifanov $
 
 PORTNAME=	ansible
-PORTVERSION?=	2.3.1.0
+PORTVERSION?=	2.3.2.0
 PORTREVISION?=	0
 CATEGORIES=	sysutils python
 MASTER_SITES=	http://releases.ansible.com/ansible/

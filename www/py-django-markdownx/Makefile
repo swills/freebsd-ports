@@ -1,9 +1,9 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/www/py-django-markdownx/Makefile 432291 2017-01-23 21:13:44Z cs $
+# $FreeBSD: head/www/py-django-markdownx/Makefile 447956 2017-08-14 18:50:15Z cs $
 
 PORTNAME=	django-markdownx
-PORTVERSION=	1.7.2
-DISTVERSIONPREFIX=	v.
+PORTVERSION=	2.0.21
+DISTVERSIONPREFIX=	v
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -17,7 +17,7 @@ RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18 \
 
 USE_GITHUB=	yes
 
-GH_ACCOUNT=	adi-
+GH_ACCOUNT=	neutronX
 USES=		python
 USE_PYTHON=	autoplist distutils
 

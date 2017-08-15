@@ -1,8 +1,8 @@
 # Created by: Neil Blakey-Milner <nbm@rucus.ru.ac.za>
-# $FreeBSD: head/ftp/curl/Makefile 447642 2017-08-09 19:35:19Z sunpoet $
+# $FreeBSD: head/ftp/curl/Makefile 447959 2017-08-14 19:11:14Z sunpoet $
 
 PORTNAME=	curl
-PORTVERSION=	7.55.0
+PORTVERSION=	7.55.1
 CATEGORIES=	ftp net www
 MASTER_SITES=	http://curl.haxx.se/download/ \
 		LOCAL/sunpoet
@@ -143,8 +143,6 @@ post-patch:
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/docs/libcurl/libcurl.m4 ${STAGEDIR}${PREFIX}/share/aclocal/
-	make -C${WRKSRC}/docs/libcurl install-man DESTDIR=${STAGEDIR}
-	make -C${WRKSRC}/docs/libcurl/opts install-man DESTDIR=${STAGEDIR}
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}/ ${STAGEDIR}${DOCSDIR}/libcurl/

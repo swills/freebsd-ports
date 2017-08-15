@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/Makefile 446086 2017-07-17 17:55:41Z thierry $
+# $FreeBSD: head/cad/Makefile 447973 2017-08-15 00:18:22Z pfg $
 #
 
     COMMENT = CAD tools
@@ -14,6 +14,7 @@
     SUBDIR += brickutils
     SUBDIR += brlcad
     SUBDIR += calculix
+    SUBDIR += calculix-ccx
     SUBDIR += cascade
     SUBDIR += chipvault
     SUBDIR += cider

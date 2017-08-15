@@ -1,6 +1,6 @@
-# $FreeBSD: head/net-p2p/transmission-gtk/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/net-p2p/transmission-gtk/Makefile 447965 2017-08-14 19:21:04Z crees $
 
-PORTREVISION=	3
+PORTREVISION=	4
 PKGNAMESUFFIX=	-gtk
 
 MAINTAINER=	crees@FreeBSD.org
@@ -18,7 +18,7 @@ MASTERDIR=	${.CURDIR}/../transmission-cli
 PLIST=		${.CURDIR}/pkg-plist
 SLAVEPORT=	gtk
 
-USE_GNOME=	gtk30 intlhack
+USE_GNOME=	cairo gtk30 intlhack
 USES=		gettext pathfix desktop-file-utils
 INSTALLS_ICONS=	yes
 

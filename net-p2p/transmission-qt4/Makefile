@@ -1,13 +1,17 @@
-# $FreeBSD: head/net-p2p/transmission-qt4/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/net-p2p/transmission-qt4/Makefile 447965 2017-08-14 19:21:04Z crees $
 
-PORTREVISION=	4
+PORTREVISION=	5
 PKGNAMESUFFIX=	-qt4
 
 MAINTAINER=	crees@FreeBSD.org
-COMMENT=	Fast and lightweight QT4 BitTorrent client
+COMMENT=	Fast and lightweight Qt4 BitTorrent client
 
-LIB_DEPENDS=	${GEN_LIB_DEPENDS}
+LIB_DEPENDS=	${GEN_LIB_DEPENDS} \
+		libfontconfig.so:x11-fonts/fontconfig \
+		libfreetype.so:print/freetype2
 RUN_DEPENDS=	${GEN_RUN_DEPENDS}
+
+CONFLICTS_INSTALL=	transmission-qt5-[0-9]*
 
 DESCR=		${.CURDIR}/pkg-descr
 MASTERDIR=	${.CURDIR}/../transmission-cli
@@ -15,7 +19,8 @@ PLIST=		${.CURDIR}/pkg-plist
 SLAVEPORT=	qt4
 
 QT_NONSTANDARD=	yes
-USE_QT4=	moc_build qmake_build rcc_build uic_build gui dbus network
+USE_QT4=	moc_build qmake_build uic_build rcc_build \
+		corelib gui dbus network xml
 USES=		compiler:c++11-lib desktop-file-utils
 
 EXTRA_CONF_ARGS=--disable-cli \

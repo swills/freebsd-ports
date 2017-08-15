@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/libslang2/Makefile 428204 2016-12-09 13:32:15Z garga $
+# $FreeBSD: head/devel/libslang2/Makefile 447955 2017-08-14 18:31:41Z pi $
 
 PORTNAME=	libslang2
 PORTVERSION=	2.3.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.jedsoft.org/releases/slang/
 DISTNAME=	slang-${PORTVERSION}
@@ -41,7 +42,7 @@ PNG_CONFIGURE_WITH=	png
 PNG_LIB_DEPENDS=	libpng.so:graphics/png
 ICONV_USES=		iconv
 ONIG_CONFIGURE_WITH=	onig
-ONIG_LIB_DEPENDS=	libonig.so:devel/oniguruma5
+ONIG_LIB_DEPENDS=	libonig.so:devel/oniguruma6
 
 .include <bsd.port.pre.mk>
 
