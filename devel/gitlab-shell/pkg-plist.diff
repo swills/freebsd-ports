@@ -1,0 +1,267 @@
+diff --git a/devel/gitlab-shell/pkg-plist b/devel/gitlab-shell/pkg-plist
+index 2db863804..016fbace1 100644
+--- a/devel/gitlab-shell/pkg-plist
++++ b/devel/gitlab-shell/pkg-plist
+@@ -1,8 +1,11 @@
++/you/have/to/check/what/makeplist/gives/you
++%%DATADIR%%/.codeclimate.yml
+ %%DATADIR%%/.gitignore
+ %%DATADIR%%/.gitlab-ci.yml
+ %%DATADIR%%/.rspec
+ %%DATADIR%%/.rubocop.yml
+ %%DATADIR%%/CHANGELOG
++%%DATADIR%%/CONTRIBUTING.md
+ %%DATADIR%%/Gemfile
+ %%DATADIR%%/Gemfile.lock
+ %%DATADIR%%/Guardfile
+@@ -10,20 +13,207 @@
+ %%DATADIR%%/Makefile
+ %%DATADIR%%/README.md
+ %%DATADIR%%/VERSION
+-@(,,555) %%DATADIR%%/bin/authorized_keys
+-@(,,555) %%DATADIR%%/bin/check
+-@(,,555) %%DATADIR%%/bin/create-hooks
+-@(,,555) %%DATADIR%%/bin/gitlab-keys
+-@(,,555) %%DATADIR%%/bin/gitlab-projects
+-@(,,555) %%DATADIR%%/bin/gitlab-shell
+-@(,,555) %%DATADIR%%/bin/install
+-@sample %%DATADIR%%/config.yml.sample
+-@(,,555) %%DATADIR%%/hooks/post-receive
+-@(,,555) %%DATADIR%%/hooks/pre-receive
+-@(,,555) %%DATADIR%%/hooks/update
++%%DATADIR%%/bin/authorized_keys
++%%DATADIR%%/bin/check
++%%DATADIR%%/bin/compile
++%%DATADIR%%/bin/create-hooks
++%%DATADIR%%/bin/gitlab-keys
++%%DATADIR%%/bin/gitlab-projects
++%%DATADIR%%/bin/gitlab-shell
++%%DATADIR%%/bin/install
++%%DATADIR%%/config.yml.example.orig
++%%DATADIR%%/config.yml.sample
++%%DATADIR%%/go/README.md
++%%DATADIR%%/go/cmd/gitaly-receive-pack/main.go
++%%DATADIR%%/go/cmd/gitaly-upload-pack/main.go
++%%DATADIR%%/go/internal/config/config.go
++%%DATADIR%%/go/internal/config/config_test.go
++%%DATADIR%%/go/internal/handler/handler.go
++%%DATADIR%%/go/internal/handler/receive_pack.go
++%%DATADIR%%/go/internal/handler/upload_pack.go
++%%DATADIR%%/go/internal/logger/logger.go
++%%DATADIR%%/go/vendor/github.com/golang/protobuf/LICENSE
++%%DATADIR%%/go/vendor/github.com/golang/protobuf/proto/Makefile
++%%DATADIR%%/go/vendor/github.com/golang/protobuf/proto/clone.go
++%%DATADIR%%/go/vendor/github.com/golang/protobuf/proto/decode.go
++%%DATADIR%%/go/vendor/github.com/golang/protobuf/proto/encode.go
++%%DATADIR%%/go/vendor/github.com/golang/protobuf/proto/equal.go
++%%DATADIR%%/go/vendor/github.com/golang/protobuf/proto/extensions.go
++%%DATADIR%%/go/vendor/github.com/golang/protobuf/proto/lib.go
++%%DATADIR%%/go/vendor/github.com/golang/protobuf/proto/message_set.go
++%%DATADIR%%/go/vendor/github.com/golang/protobuf/proto/pointer_reflect.go
++%%DATADIR%%/go/vendor/github.com/golang/protobuf/proto/pointer_unsafe.go
++%%DATADIR%%/go/vendor/github.com/golang/protobuf/proto/properties.go
++%%DATADIR%%/go/vendor/github.com/golang/protobuf/proto/text.go
++%%DATADIR%%/go/vendor/github.com/golang/protobuf/proto/text_parser.go
++%%DATADIR%%/go/vendor/github.com/golang/protobuf/ptypes/any/any.pb.go
++%%DATADIR%%/go/vendor/github.com/golang/protobuf/ptypes/any/any.proto
++%%DATADIR%%/go/vendor/github.com/golang/protobuf/ptypes/timestamp/timestamp.pb.go
++%%DATADIR%%/go/vendor/github.com/golang/protobuf/ptypes/timestamp/timestamp.proto
++%%DATADIR%%/go/vendor/gitlab.com/gitlab-org/gitaly-proto/LICENSE
++%%DATADIR%%/go/vendor/gitlab.com/gitlab-org/gitaly-proto/go/README.md
++%%DATADIR%%/go/vendor/gitlab.com/gitlab-org/gitaly-proto/go/VERSION
++%%DATADIR%%/go/vendor/gitlab.com/gitlab-org/gitaly-proto/go/commit.pb.go
++%%DATADIR%%/go/vendor/gitlab.com/gitlab-org/gitaly-proto/go/diff.pb.go
++%%DATADIR%%/go/vendor/gitlab.com/gitlab-org/gitaly-proto/go/helper/inforefs.go
++%%DATADIR%%/go/vendor/gitlab.com/gitlab-org/gitaly-proto/go/notifications.pb.go
++%%DATADIR%%/go/vendor/gitlab.com/gitlab-org/gitaly-proto/go/ref.pb.go
++%%DATADIR%%/go/vendor/gitlab.com/gitlab-org/gitaly-proto/go/shared.pb.go
++%%DATADIR%%/go/vendor/gitlab.com/gitlab-org/gitaly-proto/go/smarthttp.pb.go
++%%DATADIR%%/go/vendor/gitlab.com/gitlab-org/gitaly-proto/go/ssh.pb.go
++%%DATADIR%%/go/vendor/golang.org/x/net/LICENSE
++%%DATADIR%%/go/vendor/golang.org/x/net/PATENTS
++%%DATADIR%%/go/vendor/golang.org/x/net/context/context.go
++%%DATADIR%%/go/vendor/golang.org/x/net/context/go17.go
++%%DATADIR%%/go/vendor/golang.org/x/net/context/pre_go17.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/Dockerfile
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/Makefile
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/README
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/client_conn_pool.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/configure_transport.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/databuffer.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/errors.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/flow.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/frame.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/go16.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/go17.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/go17_not18.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/go18.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/gotrack.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/headermap.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/hpack/encode.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/hpack/hpack.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/hpack/huffman.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/hpack/tables.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/http2.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/not_go16.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/not_go17.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/not_go18.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/pipe.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/server.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/transport.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/write.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/writesched.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/writesched_priority.go
++%%DATADIR%%/go/vendor/golang.org/x/net/http2/writesched_random.go
++%%DATADIR%%/go/vendor/golang.org/x/net/idna/idna.go
++%%DATADIR%%/go/vendor/golang.org/x/net/idna/punycode.go
++%%DATADIR%%/go/vendor/golang.org/x/net/idna/tables.go
++%%DATADIR%%/go/vendor/golang.org/x/net/idna/trie.go
++%%DATADIR%%/go/vendor/golang.org/x/net/idna/trieval.go
++%%DATADIR%%/go/vendor/golang.org/x/net/internal/timeseries/timeseries.go
++%%DATADIR%%/go/vendor/golang.org/x/net/lex/httplex/httplex.go
++%%DATADIR%%/go/vendor/golang.org/x/net/trace/events.go
++%%DATADIR%%/go/vendor/golang.org/x/net/trace/histogram.go
++%%DATADIR%%/go/vendor/golang.org/x/net/trace/trace.go
++%%DATADIR%%/go/vendor/golang.org/x/text/LICENSE
++%%DATADIR%%/go/vendor/golang.org/x/text/PATENTS
++%%DATADIR%%/go/vendor/golang.org/x/text/internal/gen/code.go
++%%DATADIR%%/go/vendor/golang.org/x/text/internal/gen/gen.go
++%%DATADIR%%/go/vendor/golang.org/x/text/internal/triegen/compact.go
++%%DATADIR%%/go/vendor/golang.org/x/text/internal/triegen/print.go
++%%DATADIR%%/go/vendor/golang.org/x/text/internal/triegen/triegen.go
++%%DATADIR%%/go/vendor/golang.org/x/text/internal/ucd/ucd.go
++%%DATADIR%%/go/vendor/golang.org/x/text/secure/bidirule/bidirule.go
++%%DATADIR%%/go/vendor/golang.org/x/text/transform/transform.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/bidi/bidi.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/bidi/bracket.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/bidi/core.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/bidi/gen.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/bidi/gen_ranges.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/bidi/gen_trieval.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/bidi/prop.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/bidi/tables.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/bidi/trieval.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/cldr/base.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/cldr/cldr.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/cldr/collate.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/cldr/decode.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/cldr/makexml.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/cldr/resolve.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/cldr/slice.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/cldr/xml.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/norm/composition.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/norm/forminfo.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/norm/input.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/norm/iter.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/norm/maketables.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/norm/normalize.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/norm/readwriter.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/norm/tables.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/norm/transform.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/norm/trie.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/norm/triegen.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/rangetable/gen.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/rangetable/merge.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/rangetable/rangetable.go
++%%DATADIR%%/go/vendor/golang.org/x/text/unicode/rangetable/tables.go
++%%DATADIR%%/go/vendor/google.golang.org/genproto/LICENSE
++%%DATADIR%%/go/vendor/google.golang.org/genproto/googleapis/rpc/status/status.pb.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/CONTRIBUTING.md
++%%DATADIR%%/go/vendor/google.golang.org/grpc/LICENSE
++%%DATADIR%%/go/vendor/google.golang.org/grpc/Makefile
++%%DATADIR%%/go/vendor/google.golang.org/grpc/PATENTS
++%%DATADIR%%/go/vendor/google.golang.org/grpc/README.md
++%%DATADIR%%/go/vendor/google.golang.org/grpc/backoff.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/balancer.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/call.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/clientconn.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/codegen.sh
++%%DATADIR%%/go/vendor/google.golang.org/grpc/codes/code_string.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/codes/codes.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/coverage.sh
++%%DATADIR%%/go/vendor/google.golang.org/grpc/credentials/credentials.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/credentials/credentials_util_go17.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/credentials/credentials_util_go18.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/credentials/credentials_util_pre_go17.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/doc.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/grpclog/logger.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/interceptor.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/internal/internal.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/keepalive/keepalive.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/metadata/metadata.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/naming/naming.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/peer/peer.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/rpc_util.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/server.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/stats/handlers.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/stats/stats.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/status/status.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/stream.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/tap/tap.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/trace.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/transport/control.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/transport/go16.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/transport/go17.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/transport/handler_server.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/transport/http2_client.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/transport/http2_server.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/transport/http_util.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/transport/pre_go16.go
++%%DATADIR%%/go/vendor/google.golang.org/grpc/transport/transport.go
++%%DATADIR%%/go/vendor/gopkg.in/yaml.v2/LICENSE
++%%DATADIR%%/go/vendor/gopkg.in/yaml.v2/LICENSE.libyaml
++%%DATADIR%%/go/vendor/gopkg.in/yaml.v2/README.md
++%%DATADIR%%/go/vendor/gopkg.in/yaml.v2/apic.go
++%%DATADIR%%/go/vendor/gopkg.in/yaml.v2/decode.go
++%%DATADIR%%/go/vendor/gopkg.in/yaml.v2/emitterc.go
++%%DATADIR%%/go/vendor/gopkg.in/yaml.v2/encode.go
++%%DATADIR%%/go/vendor/gopkg.in/yaml.v2/parserc.go
++%%DATADIR%%/go/vendor/gopkg.in/yaml.v2/readerc.go
++%%DATADIR%%/go/vendor/gopkg.in/yaml.v2/resolve.go
++%%DATADIR%%/go/vendor/gopkg.in/yaml.v2/scannerc.go
++%%DATADIR%%/go/vendor/gopkg.in/yaml.v2/sorter.go
++%%DATADIR%%/go/vendor/gopkg.in/yaml.v2/writerc.go
++%%DATADIR%%/go/vendor/gopkg.in/yaml.v2/yaml.go
++%%DATADIR%%/go/vendor/gopkg.in/yaml.v2/yamlh.go
++%%DATADIR%%/go/vendor/gopkg.in/yaml.v2/yamlprivateh.go
++%%DATADIR%%/go/vendor/vendor.json
++%%DATADIR%%/hooks/post-receive
++%%DATADIR%%/hooks/pre-receive
++%%DATADIR%%/hooks/update
+ %%DATADIR%%/lib/gitlab_access.rb
+ %%DATADIR%%/lib/gitlab_access_status.rb
+-%%DATADIR%%/lib/gitlab_authorized_keys.rb
+ %%DATADIR%%/lib/gitlab_config.rb
+ %%DATADIR%%/lib/gitlab_custom_hook.rb
+ %%DATADIR%%/lib/gitlab_init.rb
+@@ -77,19 +267,24 @@
+ %%DATADIR%%/spec/vcr_cassettes/broadcast_message-none.yml
+ %%DATADIR%%/spec/vcr_cassettes/broadcast_message-ok.yml
+ %%DATADIR%%/spec/vcr_cassettes/check-ok.yml
+-%%DATADIR%%/spec/vcr_cassettes/denied-pull.yml
+-%%DATADIR%%/spec/vcr_cassettes/denied-push-with-user.yml
+-%%DATADIR%%/spec/vcr_cassettes/denied-push.yml
+ %%DATADIR%%/spec/vcr_cassettes/discover-ok.yml
+-%%DATADIR%%/spec/vcr_cassettes/http-access-disabled.yml
++%%DATADIR%%/spec/vcr_cassettes/http-pull-disabled.yml
++%%DATADIR%%/spec/vcr_cassettes/http-push-disabled.yml
+ %%DATADIR%%/spec/vcr_cassettes/lfs-authenticate-ok.yml
+ %%DATADIR%%/spec/vcr_cassettes/notify-post-receive.yml
+-%%DATADIR%%/spec/vcr_cassettes/ssh-access-disabled.yml
+ %%DATADIR%%/spec/vcr_cassettes/ssh-key-not-found.yml
+ %%DATADIR%%/spec/vcr_cassettes/ssh-key-not-implemented.yml
+ %%DATADIR%%/spec/vcr_cassettes/ssh-key-ok.yml
++%%DATADIR%%/spec/vcr_cassettes/ssh-pull-disabled.yml
++%%DATADIR%%/spec/vcr_cassettes/ssh-pull-project-denied.yml
++%%DATADIR%%/spec/vcr_cassettes/ssh-push-disabled.yml
++%%DATADIR%%/spec/vcr_cassettes/ssh-push-project-denied-with-user.yml
++%%DATADIR%%/spec/vcr_cassettes/ssh-push-project-denied.yml
+ %%DATADIR%%/spec/vcr_cassettes/two-factor-recovery-codes-fail.yml
+ %%DATADIR%%/spec/vcr_cassettes/two-factor-recovery-codes.yml
++%%DATADIR%%/support/go-format
++%%DATADIR%%/support/go-test
++%%DATADIR%%/support/go_build.rb
+ %%DATADIR%%/support/rewrite-hooks.sh
+ %%DATADIR%%/support/truncate_repositories.sh
+-@dir(git,,755) /var/log/gitlab-shell
++@dir /var/log/gitlab-shell

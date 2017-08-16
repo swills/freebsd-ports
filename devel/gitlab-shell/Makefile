@@ -2,7 +2,7 @@
 # $FreeBSD: head/devel/gitlab-shell/Makefile 447603 2017-08-09 08:57:32Z tz $
 
 PORTNAME=	gitlab-shell
-PORTVERSION=	5.0.4
+PORTVERSION=	5.1.1
 CATEGORIES=	devel
 MASTER_SITES=	https://gitlab.com/gitlab-org/${PORTNAME}/repository/archive.tar.gz?ref=v${PORTVERSION}&dummy=/
 DISTNAME=	${PORTNAME}-v${PORTVERSION}
