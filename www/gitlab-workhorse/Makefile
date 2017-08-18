@@ -2,7 +2,7 @@
 # $FreeBSD: head/www/gitlab-workhorse/Makefile 447611 2017-08-09 09:13:43Z tz $
 
 PORTNAME=	gitlab-workhorse
-PORTVERSION=	2.0.0
+PORTVERSION=	2.1.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 MASTER_SITES=	https://gitlab.com/gitlab-org/${PORTNAME}/repository/archive.tar.gz?ref=${DISTVERSIONPREFIX}${PORTVERSION}&dummy=/
