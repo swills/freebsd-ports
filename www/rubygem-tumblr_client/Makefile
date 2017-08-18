@@ -1,9 +1,9 @@
 # Created by: Michael Moll <kvedulv@kvedulv.de>
-# $FreeBSD: head/www/rubygem-tumblr_client/Makefile 431536 2017-01-15 04:18:45Z sunpoet $
+# $FreeBSD: head/www/rubygem-tumblr_client/Makefile 448050 2017-08-16 15:45:38Z sunpoet $
 
 PORTNAME=	tumblr_client
 PORTVERSION=	0.8.5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

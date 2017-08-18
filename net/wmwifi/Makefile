@@ -1,10 +1,10 @@
 # Created by: Ulrich Spoerlein <uspoerlein@gmail.com>
-# $FreeBSD: head/net/wmwifi/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/net/wmwifi/Makefile 448001 2017-08-15 19:09:51Z tobik $
 
 PORTNAME=	wmwifi
 PORTVERSION=	0.4
 DISTVERSIONSUFFIX=-bsd
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net
 MASTER_SITES=	http://digitalssg.net/debian/ \
 		LOCAL/uqs
@@ -12,11 +12,14 @@ MASTER_SITES=	http://digitalssg.net/debian/ \
 MAINTAINER=	uqs@FreeBSD.org
 COMMENT=	Dockapp displaying the signal strength of WiFi connection
 
-GNU_CONFIGURE=	yes
-USE_XORG=	x11 xpm
-USES=		gmake
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-CPPFLAGS+=	-I${LOCALBASE}/include
+USES=		gmake localbase
+USE_XORG=	x11 xext xpm
+
+CONFIGURE_ENV=	X_CFLAGS="${CFLAGS}"
+GNU_CONFIGURE=	yes
 
 PLIST_FILES=	bin/wmwifi
 

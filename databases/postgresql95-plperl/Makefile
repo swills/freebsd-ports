@@ -1,10 +1,10 @@
 # Created by: Palle Girgensohn <girgen@partitur.se>
-# $FreeBSD: head/databases/postgresql95-plperl/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/databases/postgresql95-plperl/Makefile 448138 2017-08-17 16:19:01Z mat $
 
 PORTNAME=	postgresql
 PORTREVISION=	1
 CATEGORIES=	databases perl5
-PKGNAMESUFFIX?=	${DISTVERSION:R:S/.//}${COMPONENT}
+PKGNAMESUFFIX?=	${WANT_PGSQL_VER:S/.//}${COMPONENT}
 
 MAINTAINER=	pgsql@FreeBSD.org
 COMMENT=	Write SQL functions for PostgreSQL using Perl5

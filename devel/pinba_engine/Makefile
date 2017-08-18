@@ -1,9 +1,9 @@
 # Created by: raven428 <raven428@gmail.com>
-# $FreeBSD: head/devel/pinba_engine/Makefile 439753 2017-04-29 15:43:46Z sunpoet $
+# $FreeBSD: head/devel/pinba_engine/Makefile 448041 2017-08-16 15:44:48Z sunpoet $
 
 PORTNAME=	pinba_engine
 PORTVERSION=	2011.08.18
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	devel
 
 MAINTAINER=	raven428@gmail.com

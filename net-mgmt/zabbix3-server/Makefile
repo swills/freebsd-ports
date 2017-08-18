@@ -1,8 +1,8 @@
 # Created by: Pakhom Golynga <pg@pakhom.spb.ru>
-# $FreeBSD: head/net-mgmt/zabbix3-server/Makefile 444367 2017-06-26 13:20:57Z dbaio $
+# $FreeBSD: head/net-mgmt/zabbix3-server/Makefile 448071 2017-08-16 23:34:52Z dbaio $
 
 PORTNAME=	zabbix3
-PORTVERSION=	3.0.9
+PORTVERSION=	3.0.10
 PORTREVISION?=	0
 CATEGORIES=	net-mgmt
 MASTER_SITES=	SF/zabbix/ZABBIX%20Latest%20Stable/${PORTVERSION}

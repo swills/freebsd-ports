@@ -1,9 +1,9 @@
 # Created by: Palle Girgensohn <girgen@partitur.se>
-# $FreeBSD: head/databases/postgresql96-pltcl/Makefile 423057 2016-10-01 13:05:01Z antoine $
+# $FreeBSD: head/databases/postgresql96-pltcl/Makefile 448138 2017-08-17 16:19:01Z mat $
 
 PORTNAME=	postgresql
 CATEGORIES=	databases tcl
-PKGNAMESUFFIX?=	${DISTVERSION:R:S/.//}${COMPONENT}
+PKGNAMESUFFIX?=	${WANT_PGSQL_VER:S/.//}${COMPONENT}
 
 MAINTAINER=	pgsql@FreeBSD.org
 COMMENT=	Module for using Tcl to write SQL functions

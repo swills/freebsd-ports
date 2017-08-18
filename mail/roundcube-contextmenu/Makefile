@@ -1,8 +1,8 @@
 # Created by: Alexander Moisseev <moiseev@mezonplus.ru>
-# $FreeBSD: head/mail/roundcube-contextmenu/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/roundcube-contextmenu/Makefile 448148 2017-08-17 16:39:21Z swills $
 
 PORTNAME=	contextmenu
-PORTVERSION=	2.1.2
+PORTVERSION=	2.3
 CATEGORIES=	mail
 PKGNAMEPREFIX=	roundcube-
 
@@ -11,7 +11,7 @@ COMMENT=	RoundCube webmail contextmenu plugin
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	roundcube>=1.1:mail/roundcube
+RUN_DEPENDS=	roundcube>=1.3:mail/roundcube
 
 NO_BUILD=	yes
 NO_ARCH=	yes

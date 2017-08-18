@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/www/mod_md-devel/Makefile 447886 2017-08-13 13:49:00Z brnrd $
+# $FreeBSD: head/www/mod_md-devel/Makefile 447977 2017-08-15 09:57:14Z brnrd $
 
 PORTNAME=	mod_md-devel
 PORTVERSION=	0.0.20170809
@@ -31,10 +31,15 @@ MODULENAME=	${GH_PROJECT}
 CFLAGS+=	-I${LOCALBASE}/include
 CPPFLAGS+=	-I${LOCALBASE}/include
 
-#DOCSDIR=	share/docs/mod_md
 PORTDOCS=	README README.md
 PLIST_FILES=	${APACHEMODDIR}/mod_md.so.0.0.0 \
 		${APACHEMODDIR}/mod_md.so
+
+.include <bsd.port.pre.mk>
+
+.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100085 && ${SSL_DEFAULT} == base
+IGNORE=		This port requires OpenSSL 1.0.2 or later, set DEFAULT_VERSIONS+= ssl=openssl
+.endif
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${APACHEMODDIR}/${MODULENAME}.so
@@ -42,4 +47,4 @@ post-install:
 	${RM} ${STAGEDIR}${PREFIX}/share/doc/mod_md-devel/LICENSE
 	${RM} ${STAGEDIR}${PREFIX}/bin/ext-a2md
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

@@ -1,8 +1,7 @@
 # Created by: Pakhom Golynga <pakhom@pakhom.spb.ru>
-# $FreeBSD: head/net-mgmt/zabbix22-agent/Makefile 415742 2016-05-23 20:35:01Z amdmi3 $
+# $FreeBSD: head/net-mgmt/zabbix22-agent/Makefile 448070 2017-08-16 23:28:38Z dbaio $
 
 PORTNAME=	zabbix22
-PORTREVISION=	1
 CATEGORIES=	net-mgmt
 PKGNAMESUFFIX=	-agent
 

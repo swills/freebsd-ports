@@ -1,8 +1,8 @@
 # Created by: Scott Flatman <sf@dsinw.com>
-# $FreeBSD: head/math/maxima/Makefile 438391 2017-04-12 17:14:30Z amdmi3 $
+# $FreeBSD: head/math/maxima/Makefile 448172 2017-08-17 18:46:18Z swills $
 
 PORTNAME=	maxima
-PORTVERSION=	5.39.0
+PORTVERSION=	5.40.0
 CATEGORIES=	math lisp tk
 MASTER_SITES=	SF/maxima/Maxima-source/${PORTVERSION}-source
 

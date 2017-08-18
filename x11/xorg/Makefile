@@ -1,5 +1,5 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/x11/xorg/Makefile 440699 2017-05-12 18:46:53Z rezny $
+# $FreeBSD: head/x11/xorg/Makefile 448082 2017-08-17 08:26:25Z bapt $
 
 PORTNAME=	xorg
 PORTVERSION=	7.7
@@ -15,7 +15,7 @@ RUN_DEPENDS+=	${LOCALBASE}/libdata/pkgconfig/dri.pc:graphics/mesa-dri
 
 # data
 RUN_DEPENDS+=	${LOCALBASE}/libdata/pkgconfig/xbitmaps.pc:x11/xbitmaps \
-		${LOCALBASE}/lib/X11/icons/handhelds/cursors/X_cursor:x11-themes/xcursor-themes
+		${LOCALBASE}/share/icons/handhelds/cursors/X_cursor:x11-themes/xcursor-themes
 
 OPTIONS_DEFINE=	DOCS
 

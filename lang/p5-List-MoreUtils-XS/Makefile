@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/lang/p5-List-MoreUtils-XS/Makefile 437351 2017-03-31 12:32:17Z sunpoet $
+# $FreeBSD: head/lang/p5-List-MoreUtils-XS/Makefile 448043 2017-08-16 15:45:02Z sunpoet $
 
 PORTNAME=	List-MoreUtils-XS
-PORTVERSION=	0.418
+PORTVERSION=	0.422
 CATEGORIES=	lang perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -12,9 +12,6 @@ COMMENT=	Provide compiled List::MoreUtils functions
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BUILD_DEPENDS=	p5-List-MoreUtils>=${PORTVERSION}:lang/p5-List-MoreUtils
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_PERL5=	configure
 USES=		perl5

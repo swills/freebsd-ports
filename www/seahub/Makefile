@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/seahub/Makefile 444980 2017-07-03 19:06:08Z ultima $
+# $FreeBSD: head/www/seahub/Makefile 448210 2017-08-18 06:39:47Z ultima $
 
 PORTNAME=	seahub
-PORTVERSION=	${SEAHUB_VER}
 DISTVERSIONPREFIX=	v
+DISTVERSION=	${SEAHUB_VER}
 DISTVERSIONSUFFIX=	-pro
 CATEGORIES=	www
 
@@ -31,14 +31,13 @@ RUN_DEPENDS=	bash:shells/bash \
 		${PYTHON_PKGNAMEPREFIX}pillow>=0:graphics/py-pillow \
 		${PYTHON_PKGNAMEPREFIX}MySQLdb>0:databases/py-MySQLdb
 
+USES=		python:-2.7 shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	haiwen
-
-USES=		python:-2.7 shebangfix
 SHEBANG_FILES=	*.sh tests/*.sh *.template *.py tools/*.py seahub/*.py
 
-NO_BUILD=	yes
 NO_ARCH=	yes
+NO_BUILD=	yes
 
 OPTIONS_DEFINE=		SEAFOBJ SEAFDAV NLS
 OPTIONS_DEFAULT=	SEAFOBJ SEAFDAV

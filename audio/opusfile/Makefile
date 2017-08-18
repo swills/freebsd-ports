@@ -1,9 +1,10 @@
-# $FreeBSD: head/audio/opusfile/Makefile 444835 2017-07-01 20:27:05Z naddy $
+# $FreeBSD: head/audio/opusfile/Makefile 448151 2017-08-17 16:59:03Z swills $
 
 PORTNAME=	opusfile
-PORTVERSION=	0.8
+PORTVERSION=	0.9
 CATEGORIES=	audio
-MASTER_SITES=	MOZILLA/opus
+MASTER_SITES=	http://downloads.xiph.org/releases/opus/ \
+		MOZILLA/opus
 
 MAINTAINER=	liangtai.s16@gmail.com
 COMMENT=	Opus playback library
@@ -18,8 +19,9 @@ USES=		autoreconf gmake libtool pathfix pkgconfig ssl
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 MAKE_JOBS_UNSAFE=	yes
+PATHFIX_MAKEFILEIN=	Makefile.am
 
-PORTDOCS=	AUTHORS README.txt
+PORTDOCS=	AUTHORS README.md
 
 OPTIONS_DEFINE=	DOXYGEN DOCS
 OPTIONS_DEFAULT=	# empty

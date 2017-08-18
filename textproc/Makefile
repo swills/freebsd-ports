@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/textproc/Makefile 448083 2017-08-17 09:45:13Z ed $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1305,6 +1305,7 @@
     SUBDIR += py-parsimonious
     SUBDIR += py-pdfminer
     SUBDIR += py-pss
+    SUBDIR += py-pyPEG2
     SUBDIR += py-pyctpp2
     SUBDIR += py-pyelasticsearch
     SUBDIR += py-pyes

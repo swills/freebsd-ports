@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 447884 2017-08-13 13:15:10Z brnrd $
+# $FreeBSD: head/www/Makefile 448132 2017-08-17 15:56:11Z rakuco $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1864,6 +1864,7 @@
     SUBDIR += qooxdoo
     SUBDIR += qt4-webkit
     SUBDIR += qt5-webchannel
+    SUBDIR += qt5-webengine
     SUBDIR += qt5-webkit
     SUBDIR += qt5-websockets
     SUBDIR += qt5-websockets-qml

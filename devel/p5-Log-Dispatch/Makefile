@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-Log-Dispatch/Makefile 443425 2017-06-12 10:21:48Z sunpoet $
+# $FreeBSD: head/devel/p5-Log-Dispatch/Makefile 447992 2017-08-15 18:58:16Z sunpoet $
 
 PORTNAME=	Log-Dispatch
-PORTVERSION=	2.65
+PORTVERSION=	2.66
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

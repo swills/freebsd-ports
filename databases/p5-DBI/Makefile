@@ -1,9 +1,8 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBI/Makefile 430959 2017-01-09 14:42:02Z sunpoet $
+# $FreeBSD: head/databases/p5-DBI/Makefile 448117 2017-08-17 15:04:31Z sunpoet $
 
 PORTNAME=	DBI
-PORTVERSION=	1.636
-PORTREVISION=	1
+PORTVERSION=	1.637
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,11 +12,10 @@ COMMENT=	Perl5 Database Interface, required for DBD::* modules
 
 LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 OPTIONS_DEFINE=	PROXY
 PROXY_DESC=	Build DBI::Proxy
-
-CONFLICTS=	p5-DBI-1.3*
 
 USES=		perl5 shebangfix
 USE_PERL5=	configure

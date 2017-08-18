@@ -1,8 +1,8 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/math/clblast/Makefile 442907 2017-06-08 06:50:00Z mat $
+# $FreeBSD: head/math/clblast/Makefile 448022 2017-08-16 02:14:34Z jmd $
 
 PORTNAME=	clblast
-PORTVERSION=	0.11.0
+PORTVERSION=	1.0.0
 CATEGORIES=	math
 
 MAINTAINER=	jmd@FreeBSD.org

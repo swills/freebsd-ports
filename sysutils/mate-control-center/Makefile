@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/mate-control-center/Makefile 445014 2017-07-04 11:44:30Z kwm $
+# $FreeBSD: head/sysutils/mate-control-center/Makefile 448082 2017-08-17 08:26:25Z bapt $
 
 PORTNAME=	mate-control-center
 PORTVERSION=	1.18.1
+PORTREVISION=	1
 CATEGORIES=	sysutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

@@ -1,5 +1,5 @@
 # Created by: markun@onohara.to
-# $FreeBSD: head/security/clamav/Makefile 439947 2017-05-02 14:26:06Z miwi $
+# $FreeBSD: head/security/clamav/Makefile 448002 2017-08-15 19:11:29Z ler $
 
 PORTNAME=	clamav
 PORTVERSION=	0.99.2
@@ -7,7 +7,7 @@ PORTREVISION=	4
 CATEGORIES=	security
 MASTER_SITES=	http://www.clamav.net/downloads/production/
 
-MAINTAINER=	garga@FreeBSD.org
+MAINTAINER=	ler@FreeBSD.org
 COMMENT=	Command line virus scanner written entirely in C
 
 LICENSE=	GPLv2

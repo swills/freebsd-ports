@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 447833 2017-08-12 14:19:04Z romain $
+# $FreeBSD: head/databases/Makefile 448066 2017-08-16 21:41:39Z antoine $
 #
 
     COMMENT = Databases and related software
@@ -662,6 +662,7 @@
     SUBDIR += postgis21
     SUBDIR += postgis22
     SUBDIR += postgis23
+    SUBDIR += postgres-xl
     SUBDIR += postgresql-cstore_fdw
     SUBDIR += postgresql-jdbc
     SUBDIR += postgresql-libpgeasy

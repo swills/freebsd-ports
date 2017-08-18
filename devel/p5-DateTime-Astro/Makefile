@@ -1,9 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-DateTime-Astro/Makefile 434688 2017-02-23 20:49:57Z mat $
+# $FreeBSD: head/devel/p5-DateTime-Astro/Makefile 448111 2017-08-17 15:04:00Z sunpoet $
 
 PORTNAME=	DateTime-Astro
-PORTVERSION=	1.00
-PORTREVISION=	2
+PORTVERSION=	1.01
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DMAKI
@@ -16,7 +15,8 @@ LICENSE=	ART20
 
 BUILD_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \
 		p5-DateTime-Set>=0:devel/p5-DateTime-Set
-LIB_DEPENDS=	libmpfr.so:math/mpfr
+LIB_DEPENDS=	libgmp.so:math/gmp \
+		libmpfr.so:math/mpfr
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 

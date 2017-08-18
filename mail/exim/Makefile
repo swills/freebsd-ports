@@ -1,5 +1,5 @@
 # Created by: markm@FreeBSD.org
-# $FreeBSD: head/mail/exim/Makefile 444082 2017-06-21 22:17:34Z vsevolod $
+# $FreeBSD: head/mail/exim/Makefile 448008 2017-08-15 20:42:40Z vsevolod $
 
 PORTNAME=	exim
 PORTVERSION?=	${EXIM_VERSION}
@@ -325,7 +325,7 @@ SEDLIST+=	-e 's,XX_LMDB_LIBS_XX,${LMDB_LIBS:S/,/\\,/g},' \
 		-e 's,XX_LMDB_INCLUDES_XX,${LMDB_INCLUDES:S/,/\\,/g},'
 
 .if ${PORT_OPTIONS:MMYSQL}
-SEDLIST+=	-e 's,XX_MYSQL_LIBS_XX,-L${LOCALBASE:S/,/\\,/g}/lib/mysql -lmysqlclient,' \
+SEDLIST+=	-e 's,XX_MYSQL_LIBS_XX,-L${LOCALBASE:S/,/\\,/g}/lib/mysql -l${_MYSQL_SHLIB:S/lib//},' \
 		-e 's,XX_MYSQL_INCLUDE_XX,-I${LOCALBASE:S/,/\\,/g}/include/mysql,' \
 		-e 's,^\# (LOOKUP_MYSQL=),\1,'
 .else

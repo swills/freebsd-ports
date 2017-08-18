@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/orbit-lv2/Makefile 447972 2017-08-15 00:13:32Z ultima $
+# $FreeBSD: head/audio/orbit-lv2/Makefile 448188 2017-08-17 20:37:09Z ultima $
 
 PORTNAME=	orbit
 PORTVERSION=	0.1.431
@@ -16,7 +16,6 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	lv2>0:audio/lv2
 
 USES=		cmake pkgconfig
-CMAKE_ARGS=	-DCMAKE_BUILD_TYPE="Release"
 PLIST_FILES=	lib/lv2/orbit.lv2/manifest.ttl \
 		lib/lv2/orbit.lv2/orbit.so \
 		lib/lv2/orbit.lv2/orbit.ttl

@@ -1,8 +1,8 @@
 # Created by: Alban MAIRE <a.maire@s2mi.fr>
-# $FreeBSD: head/net-mgmt/unifi5/Makefile 445610 2017-07-12 21:09:41Z feld $
+# $FreeBSD: head/net-mgmt/unifi5/Makefile 448069 2017-08-16 22:57:36Z feld $
 
 PORTNAME=	unifi5
-PORTVERSION=	5.5.19
+PORTVERSION=	5.5.20
 PORTREVISION=	0
 CATEGORIES=	net-mgmt java
 MASTER_SITES=	https://www.ubnt.com/downloads/unifi/${PORTVERSION}/ \
@@ -18,7 +18,7 @@ RUN_DEPENDS=	mongodb>0:databases/mongodb \
 
 BUILD=		0
 BUNDLEDFW=	3.8.3.6587
-TOMCATVER=	7.0.78
+TOMCATVER=	7.0.79
 #UNIFI_TAG=	6cbeae59e7
 
 SUB_LIST+=	USERS=${USERS} GROUPS=${GROUPS} JAVASHAREDIR=${JAVASHAREDIR} \

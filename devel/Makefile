@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 447944 2017-08-14 15:47:55Z tz $
+# $FreeBSD: head/devel/Makefile 448212 2017-08-18 08:14:40Z tz $
 #
 
     COMMENT = Development utilities
@@ -4678,6 +4678,7 @@
     SUBDIR += py-pyperclip
     SUBDIR += py-pypugjs
     SUBDIR += py-pyqi
+    SUBDIR += py-pyral
     SUBDIR += py-pyrfc3339
     SUBDIR += py-pyro
     SUBDIR += py-pyshapelib
@@ -4858,6 +4859,7 @@
     SUBDIR += py-tinyrpc
     SUBDIR += py-tipper
     SUBDIR += py-tooz
+    SUBDIR += py-toposort
     SUBDIR += py-total-ordering
     SUBDIR += py-tox
     SUBDIR += py-trace2html
@@ -5588,6 +5590,7 @@
     SUBDIR += rubygem-patch_finder
     SUBDIR += rubygem-pathutil
     SUBDIR += rubygem-peek
+    SUBDIR += rubygem-peek-gc
     SUBDIR += rubygem-piston
     SUBDIR += rubygem-pkg-config
     SUBDIR += rubygem-platform

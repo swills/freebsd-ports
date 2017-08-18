@@ -1,9 +1,9 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/x11-themes/cursor-crystal-theme/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-themes/cursor-crystal-theme/Makefile 448082 2017-08-17 08:26:25Z bapt $
 
 PORTNAME=	cursor-crystal-theme
 DISTVERSION=	1.1.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	x11-themes
 MASTER_SITES=	http://www.notmart.org/files/ \
 		http://pinguin.stttelkom.ac.id/gentoo/distfiles/
@@ -36,9 +36,9 @@ pre-build:
 
 pre-install:
 	@${REINPLACE_CMD} \
-		-e 's|$$(HOME)/.icons/|${STAGEDIR}${PREFIX}/lib/X11/icons|' \
-		-e 's|$$(MAKE) .*install|$$(MAKE) PREFIX=${STAGEDIR}${PREFIX}/lib/X11/icons install|g' \
-		-e 's|theme.default .*/default/index.theme|theme.default ${STAGEDIR}${PREFIX}/lib/X11/icons/default/index.theme|' \
+		-e 's|$$(HOME)/.icons/|${STAGEDIR}${PREFIX}/share/icons|' \
+		-e 's|$$(MAKE) .*install|$$(MAKE) PREFIX=${STAGEDIR}${PREFIX}/share/icons install|g' \
+		-e 's|theme.default .*/default/index.theme|theme.default ${STAGEDIR}${PREFIX}/share/icons/default/index.theme|' \
 		${WRKSRC}/Makefile
 
 .include <bsd.port.mk>

@@ -1,9 +1,8 @@
 # Created by: Vivek Khera <vivek@khera.org>
-# $FreeBSD: head/mail/p5-Mail-OpenDKIM/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Mail-OpenDKIM/Makefile 448106 2017-08-17 14:37:18Z matthew $
 
 PORTNAME=	Mail-OpenDKIM
-PORTVERSION=	4203
-PORTREVISION=	1
+PORTVERSION=	4204
 CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

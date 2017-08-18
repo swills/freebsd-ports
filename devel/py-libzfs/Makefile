@@ -1,8 +1,8 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/devel/py-libzfs/Makefile 442781 2017-06-06 16:13:21Z wg $
+# $FreeBSD: head/devel/py-libzfs/Makefile 448020 2017-08-16 01:38:07Z araujo $
 
 PORTNAME=	libzfs
-PORTVERSION=	1.0.20170606
+PORTVERSION=	1.0.20170814
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -16,7 +16,7 @@ BROKEN_powerpc64=	fails to build: libzfs.c: error: convert_for_assignment: incom
 USE_GITHUB=     yes
 GH_ACCOUNT=	freenas
 GH_PROJECT=	py-libzfs
-GH_TAGNAME=	3ad48dc
+GH_TAGNAME=	7e65770	
 
 USES?=		python
 USE_PYTHON=	autoplist distutils

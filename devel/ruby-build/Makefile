@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/ruby-build/Makefile 441798 2017-05-26 16:49:48Z sunpoet $
+# $FreeBSD: head/devel/ruby-build/Makefile 448128 2017-08-17 15:05:29Z sunpoet $
 
 PORTNAME=	ruby-build
-PORTVERSION=	20170523
+PORTVERSION=	20170726
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel ruby
 

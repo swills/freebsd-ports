@@ -1,9 +1,9 @@
 # Created by: Piotr Smyrak <smyru@heron.pl>
-# $FreeBSD: head/x11-themes/cursor-jimmac-theme/Makefile 343242 2014-02-07 13:43:01Z ehaupt $
+# $FreeBSD: head/x11-themes/cursor-jimmac-theme/Makefile 448082 2017-08-17 08:26:25Z bapt $
 
 PORTNAME=	cursor-jimmac-theme
 PORTVERSION=	0.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-themes
 MASTER_SITES=	http://www.gnome-look.org/CONTENT/content-files/
 DISTNAME=	6550-Jimmac
@@ -16,8 +16,8 @@ NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/Jimmac
 
 do-install:
-	${MKDIR} ${STAGEDIR}${PREFIX}/lib/X11/icons/Jimmac/cursors
+	${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/Jimmac/cursors
 	cd ${WRKSRC}/jimmac/cursors \
-		&& ${INSTALL_DATA} * ${STAGEDIR}${PREFIX}/lib/X11/icons/Jimmac/cursors
+		&& ${INSTALL_DATA} * ${STAGEDIR}${PREFIX}/share/icons/Jimmac/cursors
 
 .include <bsd.port.mk>

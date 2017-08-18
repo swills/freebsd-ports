@@ -1,7 +1,9 @@
-# $FreeBSD: head/sysutils/synergy/Makefile 432310 2017-01-24 02:21:19Z kevlo $
+# $FreeBSD: head/sysutils/synergy/Makefile 448209 2017-08-18 05:19:39Z kevlo $
 
 PORTNAME=	synergy
-PORTVERSION=	1.8.7
+PORTVERSION=	1.8.8
+DISTVERSIONPREFIX=	v
+DISTVERSIONSUFFIX=	-stable
 CATEGORIES=	sysutils
 
 MAINTAINER=	kevlo@FreeBSD.org
@@ -10,22 +12,20 @@ COMMENT=	Mouse and keyboard sharing utility
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake cpe
-CPE_VENDOR=	synergy-foss
-USE_XORG=	ice xtst x11 sm xext xinerama xrandr xi
-USE_GITHUB=	yes
-GH_ACCOUNT=     symless
-
-DISTVERSIONPREFIX=	v
-DISTVERSIONSUFFIX=	-stable
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
-MAKE_JOBS_UNSAFE=yes
+USES=		cmake cpe ssl
+CPE_VENDOR=	synergy-foss
+USE_XORG=	ice xtst x11 sm xext xinerama xrandr xi
+USE_GITHUB=	yes
+GH_ACCOUNT=	symless
 
 CFLAGS+=	-I${LOCALBASE}/include -L${LOCALBASE}/lib
 
-PLIST_FILES=    bin/synergyc bin/synergyd bin/synergys \
+MAKE_JOBS_UNSAFE=yes
+
+PLIST_FILES=	bin/synergyc bin/synergyd bin/synergys \
 		man/man1/synergyc.1.gz man/man1/synergys.1.gz
 PORTEXAMPLES=	synergy.conf.example synergy.conf.example-basic \
 		synergy.conf.example-advanced

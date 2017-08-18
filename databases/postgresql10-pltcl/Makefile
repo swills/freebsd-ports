@@ -1,30 +1,6 @@
 # Created by: Palle Girgensohn <girgen@partitur.se>
-# $FreeBSD: head/databases/postgresql10-pltcl/Makefile 447680 2017-08-10 14:23:31Z girgen $
+# $FreeBSD: head/databases/postgresql10-pltcl/Makefile 448139 2017-08-17 16:19:35Z mat $
 
-PORTNAME=	postgresql
-CATEGORIES=	databases tcl
-PKGNAMESUFFIX?=	${DISTVERSION:R:S/.//}${COMPONENT}
+WANT_PGSQL_VER=	10
 
-MAINTAINER=	pgsql@FreeBSD.org
-COMMENT=	Module for using Tcl to write SQL functions
-
-MASTERDIR=	${.CURDIR}/../../databases/postgresql${WANT_PGSQL_VER:S/.//}-server
-
-WANT_PGSQL_VER?=10
-
-USES+=		tcl pgsql:${WANT_PGSQL_VER}
-WANT_PGSQL=	server
-
-CONFIGURE_ARGS=	--with-tcl --without-tk \
-		--with-tclconfig="${TCL_LIBDIR}" \
-		--with-includes="${TCL_INCLUDEDIR}"
-
-CONFIGURE_ENV+=	TCLSH="${TCLSH}"
-MAKE_ENV+=	TCL_INCDIR="${TCL_INCLUDEDIR}"
-
-BUILD_DIRS=	src/backend src/pl/tcl
-INSTALL_DIRS=	src/pl/tcl
-SLAVE_ONLY=	yes
-COMPONENT=	-pltcl
-
-.include "${MASTERDIR}/Makefile"
+.include "${.CURDIR}/../postgresql96-pltcl/Makefile"

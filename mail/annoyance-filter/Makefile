@@ -1,5 +1,5 @@
 # Created by: Sergei Kolobov <sergei@FreeBSD.org>
-# $FreeBSD: head/mail/annoyance-filter/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/mail/annoyance-filter/Makefile 448199 2017-08-17 21:59:39Z rakuco $
 
 PORTNAME=	annoyance-filter
 PORTVERSION=	1.0d
@@ -18,6 +18,9 @@ LICENSE_FILE_GPLv2+ =	${WRKSRC}/COPYING.GNU
 
 USE_GCC=	yes
 GNU_CONFIGURE=	yes
+
+# The port does not build with C++11 or later (GCC 6 defaults to -std=gnu++14).
+USE_CXXSTD=	gnu++03
 
 PORTDOCS=	INSTALL README *.pdf
 

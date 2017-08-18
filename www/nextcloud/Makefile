@@ -1,9 +1,9 @@
-# $FreeBSD: head/www/nextcloud/Makefile 441570 2017-05-24 10:11:09Z brnrd $
+# $FreeBSD: head/www/nextcloud/Makefile 448158 2017-08-17 17:46:28Z brnrd $
 
 PORTNAME=	nextcloud
-PORTVERSION=	12.0.0
+PORTVERSION=	12.0.2
 CATEGORIES=	www
-MASTER_SITES=	https://download.nextcloud.com/server/releases/
+MASTER_SITES=	https://download.nextcloud.com/server/prereleases/
 
 MAINTAINER=	loic.blot@unix-experience.fr
 COMMENT=	Personal cloud which runs on your own server

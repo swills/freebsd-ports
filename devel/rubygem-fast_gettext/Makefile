@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv at kvedulv.de>
-# $FreeBSD: head/devel/rubygem-fast_gettext/Makefile 444058 2017-06-21 18:52:46Z sunpoet $
+# $FreeBSD: head/devel/rubygem-fast_gettext/Makefile 448056 2017-08-16 15:46:09Z sunpoet $
 
 PORTNAME=	fast_gettext
-PORTVERSION=	1.4.1
+PORTVERSION=	1.5.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

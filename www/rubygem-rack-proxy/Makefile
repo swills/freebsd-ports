@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-rack-proxy/Makefile 437813 2017-04-05 19:57:43Z sunpoet $
+# $FreeBSD: head/www/rubygem-rack-proxy/Makefile 448116 2017-08-17 15:04:26Z sunpoet $
 
 PORTNAME=	rack-proxy
-PORTVERSION=	0.6.1
+PORTVERSION=	0.6.2
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

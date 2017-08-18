@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/py3-iocage/Makefile 447086 2017-08-02 02:41:41Z araujo $
+# $FreeBSD: head/sysutils/py3-iocage/Makefile 448021 2017-08-16 01:38:55Z araujo $
 
 PORTNAME=	iocage
 PORTVERSION=	0.9.9.1
+PORTREVISION=   1
 CATEGORIES=	sysutils python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

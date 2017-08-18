@@ -1,9 +1,9 @@
 # Created by: Babak Farrokhi <babak@farrokhi.net>
-# $FreeBSD: head/x11-themes/cursor-neutral-theme/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/x11-themes/cursor-neutral-theme/Makefile 448082 2017-08-17 08:26:25Z bapt $
 
 PORTNAME=	cursor-neutral-theme
 DISTVERSION=	1.13a
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-themes
 MASTER_SITES=	http://www.gnome-look.org/CONTENT/content-files/
 DISTNAME=	28310-neutral-${DISTVERSION}
@@ -16,8 +16,8 @@ NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/neutral
 
 do-install:
-	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/X11/icons/neutral/cursors
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/neutral/cursors
 	${INSTALL_DATA} ${WRKSRC}/cursors/* \
-		${STAGEDIR}${PREFIX}/lib/X11/icons/neutral/cursors
+		${STAGEDIR}${PREFIX}/share/icons/neutral/cursors
 
 .include <bsd.port.mk>

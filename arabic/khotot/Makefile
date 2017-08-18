@@ -1,9 +1,9 @@
 # Created by: Samy Al Bahra <samy@kerneled.com>
-# $FreeBSD: head/arabic/khotot/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/arabic/khotot/Makefile 448081 2017-08-17 08:17:52Z bapt $
 
 PORTNAME=	khotot
 PORTVERSION=	1.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	arabic x11-fonts
 
 MAINTAINER=	ports@FreeBSD.org

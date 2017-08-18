@@ -1,9 +1,8 @@
 # Created by: rene
-# $FreeBSD: head/emulators/fuse-utils/Makefile 428352 2016-12-11 15:22:47Z jbeich $
+# $FreeBSD: head/emulators/fuse-utils/Makefile 448189 2017-08-17 20:38:08Z rene $
 
 PORTNAME=	fuse-utils
-PORTVERSION=	1.3.1
-PORTREVISION=	1
+PORTVERSION=	1.3.2
 CATEGORIES=	emulators
 MASTER_SITES=	SF/fuse-emulator/${PORTNAME}/${PORTVERSION}
 
@@ -15,18 +14,15 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libaudiofile.so:audio/libaudiofile \
 		libgcrypt.so:security/libgcrypt \
+		libpng16.so:graphics/png \
 		libspectrum.so:emulators/libspectrum
 
-USES=		gettext iconv pkgconfig
+USES=		gettext iconv jpeg pkgconfig
 USE_GNOME=	glib20
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-libspectrum-prefix=${LOCALBASE} \
 		--with-local-prefix=${LOCALBASE}
-
-# FIXME no way to specify ffmpeg1 paths to configure script
-#FFMPEG_LIB_DEPENDS=	libavformat1.so:multimedia/ffmpeg1
-#FFMPEG_CONFIGURE_WITH=	ffmpeg
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

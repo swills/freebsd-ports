@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-themes/xcursor-themes/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-themes/xcursor-themes/Makefile 448082 2017-08-17 08:26:25Z bapt $
 
 PORTNAME=	xcursor-themes
 PORTVERSION=	1.0.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-themes
 
 MAINTAINER=	x11@FreeBSD.org

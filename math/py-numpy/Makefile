@@ -1,9 +1,8 @@
 # Created by: Tony Maher
-# $FreeBSD: head/math/py-numpy/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/math/py-numpy/Makefile 448024 2017-08-16 06:17:47Z wen $
 
 PORTNAME=	numpy
-PORTVERSION=	1.11.2
-PORTREVISION=	3
+PORTVERSION=	1.13.1
 PORTEPOCH=	1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP:source \
@@ -22,7 +21,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 PYDISTUTILS_BUILDARGS=		--fcompiler=gnu95
 PYDISTUTILS_CONFIGUREARGS=	--fcompiler=gnu95
-USES=		fortran python
+USES=		fortran python zip
 USE_PYTHON=	concurrent distutils py3kplist
 LDFLAGS+=	-shared
 

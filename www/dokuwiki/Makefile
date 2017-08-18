@@ -1,5 +1,5 @@
 # Created by: Chin-San Huang <chinsan@mail2000.com.tw>
-# $FreeBSD: head/www/dokuwiki/Makefile 435661 2017-03-08 08:03:48Z delphij $
+# $FreeBSD: head/www/dokuwiki/Makefile 448078 2017-08-17 05:04:16Z delphij $
 
 PORTNAME=	dokuwiki
 PORTVERSION=	${DIST_VER:S/${PORTNAME}//:S/-//g}
@@ -12,7 +12,7 @@ COMMENT=	Simple and easy to use wiki, no database required
 
 LICENSE=	GPLv2
 
-DIST_VER=	${PORTNAME}-2017-02-19b
+DIST_VER=	${PORTNAME}-2017-02-19c
 USE_PHP=	gd mbstring openssl pcre session xml zlib
 NO_ARCH=	YES
 NO_BUILD=	YES

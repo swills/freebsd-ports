@@ -1,7 +1,7 @@
-# $FreeBSD: head/games/moonlight-embedded/Makefile 447284 2017-08-03 21:44:51Z tobik $
+# $FreeBSD: head/games/moonlight-embedded/Makefile 448197 2017-08-17 21:49:12Z tobik $
 
 PORTNAME=	moonlight-embedded
-PORTVERSION=	2.4.2
+PORTVERSION=	2.4.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 

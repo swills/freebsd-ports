@@ -1,8 +1,9 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/x11-themes/cursor-ecliz/Makefile 343243 2014-02-07 13:44:44Z ehaupt $
+# $FreeBSD: head/x11-themes/cursor-ecliz/Makefile 448082 2017-08-17 08:26:25Z bapt $
 
 PORTNAME=	ecliz
 PORTVERSION=	0.1
+PORTREVISION=	1
 CATEGORIES=	x11-themes
 MASTER_SITES=	http://kde-look.org/CONTENT/content-files/
 PKGNAMEPREFIX=	cursor-
@@ -16,10 +17,10 @@ NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/Ecliz
 
 do-install:
-	${MKDIR} ${STAGEDIR}${PREFIX}/lib/X11/icons/${PORTNAME}
+	${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/${PORTNAME}
 	cd ${WRKSRC} && ${COPYTREE_SHARE} cursors \
-		${STAGEDIR}${PREFIX}/lib/X11/icons/${PORTNAME}
+		${STAGEDIR}${PREFIX}/share/icons/${PORTNAME}
 	${INSTALL_DATA} ${WRKSRC}/index.theme \
-		${STAGEDIR}${PREFIX}/lib/X11/icons/${PORTNAME}
+		${STAGEDIR}${PREFIX}/share/icons/${PORTNAME}
 
 .include <bsd.port.mk>

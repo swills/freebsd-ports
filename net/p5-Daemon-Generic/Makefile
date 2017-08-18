@@ -1,9 +1,8 @@
 # Created by: BluePex Security Solutions <freebsd-ports@bluepex.com>
-# $FreeBSD: head/net/p5-Daemon-Generic/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Daemon-Generic/Makefile 448074 2017-08-17 01:15:25Z danilo $
 
 PORTNAME=	Daemon-Generic
-PORTVERSION=	0.84
-PORTREVISION=	1
+PORTVERSION=	0.85
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

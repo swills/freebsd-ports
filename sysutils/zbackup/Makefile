@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/zbackup/Makefile 442783 2017-06-06 16:18:16Z mat $
+# $FreeBSD: head/sysutils/zbackup/Makefile 448041 2017-08-16 15:44:48Z sunpoet $
 
 PORTNAME=	zbackup
 PORTVERSION=	1.4.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	sysutils
 
 MAINTAINER=	kevlo@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/print/harfbuzz/Makefile 447538 2017-08-08 13:00:08Z jbeich $
+# $FreeBSD: head/print/harfbuzz/Makefile 448170 2017-08-17 18:38:08Z jbeich $
 
 PORTNAME=	harfbuzz
-PORTVERSION=	1.4.7
+PORTVERSION=	1.4.8
 CATEGORIES=	print
 MASTER_SITES=	http://www.freedesktop.org/software/harfbuzz/release/
 
@@ -21,7 +21,7 @@ CONFIGURE_ARGS=	--with-graphite2 --with-gobject=yes
 INSTALL_TARGET=	install-strip
 TEST_TARGET=	check
 
-PLIST_SUB+=	LIBVER=0.10400.7
+PLIST_SUB+=	LIBVER=0.10400.8
 
 HARFBUZZ_SLAVE?=	no
 

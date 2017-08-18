@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/libxlsxwriter/Makefile 446947 2017-07-31 07:34:52Z bapt $
+# $FreeBSD: head/math/libxlsxwriter/Makefile 448028 2017-08-16 08:26:55Z bapt $
 
 PORTNAME=	libxlsxwriter
-PORTVERSION=	0.7.2
+PORTVERSION=	0.7.3
 DISTVERSIONPREFIX=	RELEASE_
 CATEGORIES=	math devel
 

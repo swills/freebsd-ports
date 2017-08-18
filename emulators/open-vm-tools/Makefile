@@ -1,13 +1,14 @@
 # Created by: mbr@FreeBSD.org
-# $FreeBSD: head/emulators/open-vm-tools/Makefile 446741 2017-07-27 13:57:30Z mat $
+# $FreeBSD: head/emulators/open-vm-tools/Makefile 448160 2017-08-17 18:00:36Z jpaetzel $
 
 PORTNAME=		open-vm-tools
 PORTVERSION=		${RELEASE_VER}
 DISTVERSIONPREFIX=	stable-
 PORTEPOCH=		2
+PORTREVISION=		1
 CATEGORIES=		emulators
 
-MAINTAINER=		swills@FreeBSD.org
+MAINTAINER=		jpaetzel@FreeBSD.org
 COMMENT?=		Open VMware tools for FreeBSD VMware guests
 
 LICENSE=		LGPL21

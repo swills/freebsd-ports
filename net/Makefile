@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 447578 2017-08-08 22:06:40Z ultima $
+# $FreeBSD: head/net/Makefile 448035 2017-08-16 13:23:12Z ehaupt $
 #
 
     COMMENT = Networking tools
@@ -1312,6 +1312,7 @@
     SUBDIR += sqtop
     SUBDIR += srelay
     SUBDIR += ss5
+    SUBDIR += sshping
     SUBDIR += ssldump
     SUBDIR += sslh
     SUBDIR += ssltunnel-client

@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/math/fxt/Makefile 445464 2017-07-10 23:05:43Z jrm $
+# $FreeBSD: head/math/fxt/Makefile 448206 2017-08-18 03:35:33Z swills $
 
 PORTNAME=	fxt
-DISTVERSION=	2017.06.27
+DISTVERSION=	2017.07.25
 CATEGORIES=	math
 MASTER_SITES=	http://www.jjj.de/fxt/
 

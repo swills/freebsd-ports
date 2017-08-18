@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 447831 2017-08-12 13:53:05Z romain $
+# $FreeBSD: head/sysutils/Makefile 447985 2017-08-15 14:17:54Z jrm $
 #
 
     COMMENT = System utilities
@@ -244,6 +244,7 @@
     SUBDIR += docker-compose
     SUBDIR += docker-freebsd
     SUBDIR += docker-machine
+    SUBDIR += doctl
     SUBDIR += doinkd
     SUBDIR += dolly
     SUBDIR += downtime

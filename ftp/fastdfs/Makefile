@@ -1,13 +1,14 @@
-# $FreeBSD: head/ftp/fastdfs/Makefile 440011 2017-05-03 12:47:59Z miwi $
+# $FreeBSD: head/ftp/fastdfs/Makefile 448000 2017-08-15 19:01:24Z dbaio $
 
 PORTNAME=	fastdfs
-PORTVERSION=	5.0.10
+PORTVERSION=	5.0.11
 CATEGORIES=	ftp
 
 MAINTAINER=	daniel@blodan.se
 COMMENT=	High performance distributed file system (DFS)
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/COPYING-3_0.txt
 
 LIB_DEPENDS=	libfastcommon.so:devel/libfastcommon
 
@@ -20,9 +21,9 @@ GROUPS=		_fastdfs
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	happyfish100
-GH_TAGNAME=	bcb7c56
+GH_TAGNAME=	1e50b4f
 
-MAKE_ENV+= 	DESTDIR=${STAGEDIR}
+MAKE_ENV+=	DESTDIR=${STAGEDIR}
 
 do-build:
 	cd ${BUILD_WRKSRC} && ${SETENV} ${MAKE_ENV} ${SH} make.sh

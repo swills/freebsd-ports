@@ -1,9 +1,9 @@
 # Created by: Akito FUJITA <fujita@zoo.ncl.omron.co.jp>
-# $FreeBSD: head/japanese/mh/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/mh/Makefile 448088 2017-08-17 12:16:43Z robak $
 
 PORTNAME=	mh
 PORTVERSION=	${VERSION}.j${JP_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	japanese mail
 MASTER_SITES=	ftp://ftp.laic.u-hyogo.ac.jp/pub/net/mh/ \
 		http://mirror.amdmi3.ru/distfiles/

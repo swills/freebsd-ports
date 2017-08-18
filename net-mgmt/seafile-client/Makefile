@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-mgmt/seafile-client/Makefile 444980 2017-07-03 19:06:08Z ultima $
+# $FreeBSD: head/net-mgmt/seafile-client/Makefile 448017 2017-08-15 23:43:24Z ultima $
 
 PORTNAME=	seafile-client
-PORTVERSION=	${SEAFILE_CLIENT_VER}
 DISTVERSIONPREFIX=	v
+DISTVERSION=	${SEAFILE_CLIENT_VER}
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	ultima@FreeBSD.org
@@ -25,23 +25,28 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3 \
 		${PYTHON_PKGNAMEPREFIX}urllib3>0:net/py-urllib3 \
 		bash:shells/bash
 
-CONFLICTS=	seafile-server-[0-9]*
-
+USES=		autoreconf iconv libarchive libtool localbase mysql \
+		pathfix pkgconfig python:-2.7 shebangfix sqlite ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	haiwen
 GH_PROJECT=	seafile
 
-USES=		autoreconf gettext iconv libarchive libtool mysql pathfix \
-		pkgconfig python:-2.7 shebangfix sqlite ssl
 USE_GNOME=	glib20
-SHEBANG_FILES=	*.sh scripts/*.sh app/seaf-cli integration-tests/*.sh
-GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
+
+CONFLICTS=	seafile-server-[0-9]*
+
+SHEBANG_FILES=	*.sh scripts/*.sh app/seaf-cli integration-tests/*.sh
+
+GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	SSL_CFLAGS="${OPENSSLINC}" SSL_LIBS="-L${OPENSSLLIB} -lssl -lcrypto"
+CPPFLAGS+=	-I${LOCALBASE}/include/evhtp
 
 INSTALL_TARGET=	install-strip
-CPPFLAGS+=	-I${LOCALBASE}/include -I${LOCALBASE}/include/evhtp
-LDFLAGS+=	-L${LOCALBASE}/lib
+
+OPTIONS_DEFINE=	NLS
+
+NLS_USES=	gettext
 
 .include <bsd.port.options.mk>
 

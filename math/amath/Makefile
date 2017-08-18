@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/amath/Makefile 446289 2017-07-20 20:23:47Z ultima $
+# $FreeBSD: head/math/amath/Makefile 448207 2017-08-18 03:40:30Z swills $
 
 PORTNAME=	amath
-PORTVERSION=	1.8.2
+PORTVERSION=	1.8.3
 CATEGORIES=	math
 MASTER_SITES=	http://dist1.innolan.net/ \
 		http://dist2.innolan.net/ \

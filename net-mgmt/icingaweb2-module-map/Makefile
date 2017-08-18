@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-mgmt/icingaweb2-module-map/Makefile 447599 2017-08-09 08:19:11Z lme $
+# $FreeBSD: head/net-mgmt/icingaweb2-module-map/Makefile 448032 2017-08-16 12:23:27Z lme $
 
 PORTNAME=	icingaweb2-module-map
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.0.2
+DISTVERSION=	1.0.3
 CATEGORIES=	net-mgmt www
 
 MAINTAINER=	lme@FreeBSD.org
@@ -22,6 +22,7 @@ NO_ARCH=	yes
 WWWDIR?=	${PREFIX}/www/icingaweb2/modules/${PORTNAME:C/^.*-//}
 
 do-install:
+	@${RM} -r ${WRKSRC}/.github
 	@${MKDIR} ${STAGEDIR}${WWWDIR}
 	(cd ${WRKSRC} && \
 		${COPYTREE_SHARE} . ${STAGEDIR}${WWWDIR})

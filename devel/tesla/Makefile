@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/tesla/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/devel/tesla/Makefile 448041 2017-08-16 15:44:48Z sunpoet $
 
 PORTNAME=	tesla
 DISTVERSION=	0.0.20140425
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel lang
 
 MAINTAINER=	brooks@FreeBSD.org

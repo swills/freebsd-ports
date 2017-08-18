@@ -1,7 +1,7 @@
-# $FreeBSD: head/portuguese/hunspell/Makefile 443705 2017-06-16 14:40:30Z sunpoet $
+# $FreeBSD: head/portuguese/hunspell/Makefile 448051 2017-08-16 15:45:43Z sunpoet $
 
 PORTNAME=	hunspell
-PORTVERSION=	20170615
+PORTVERSION=	20170814
 CATEGORIES=	portuguese textproc
 MASTER_SITES=	http://natura.di.uminho.pt/download/sources/Dictionaries/hunspell/:PT \
 		http://www.broffice.org/files/:BR \
@@ -14,7 +14,7 @@ MAINTAINER=	office@FreeBSD.org
 COMMENT=	Portuguese hunspell dictionaries
 
 # We pick the common one among:
-# - pt_PT is licensed under GPLv2, LGPL21 and MPL.
+# - pt_PT is licensed under GPLv2, LGPL21 and MPL11.
 # - pt_BR is licensed under LGPL3 and MPL.
 LICENSE=	MPL
 

@@ -1,8 +1,8 @@
 # Created by: trasz
-# $FreeBSD: head/net-im/gloox/Makefile 433483 2017-02-06 10:53:25Z cpm $
+# $FreeBSD: head/net-im/gloox/Makefile 448205 2017-08-18 03:33:24Z swills $
 
 PORTNAME=	gloox
-PORTVERSION=	1.0.18
+PORTVERSION=	1.0.20
 CATEGORIES=	net-im
 MASTER_SITES=	http://camaya.net/download/
 

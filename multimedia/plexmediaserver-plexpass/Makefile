@@ -1,13 +1,13 @@
 # Created by: KalleDK <plexmaintainer@k-moeller.dk>
-# $FreeBSD: head/multimedia/plexmediaserver-plexpass/Makefile 447004 2017-07-31 23:50:19Z feld $
+# $FreeBSD: head/multimedia/plexmediaserver-plexpass/Makefile 447983 2017-08-15 12:56:29Z feld $
 
-PORTVERSION=	1.8.0.4109
+PORTVERSION=	1.8.1.4139
 PORTREVISION=	0
 PKGNAMESUFFIX=	-plexpass
 
 MAINTAINER=	feld@FreeBSD.org
 
-PLEX_BUILD=	42bd8c63f
+PLEX_BUILD=	c789b3fbb
 
 USE_RC_SUBR=	${PORTNAME}_plexpass
 

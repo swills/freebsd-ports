@@ -1,8 +1,9 @@
 # Created by: lightside <lightside@gmx.com>
-# $FreeBSD: head/x11-themes/cursor-ardoise-theme/Makefile 422850 2016-09-28 06:38:00Z jbeich $
+# $FreeBSD: head/x11-themes/cursor-ardoise-theme/Makefile 448082 2017-08-17 08:26:25Z bapt $
 
 PORTNAME=	ardoise
 PORTVERSION=	3.5
+PORTREVISION=	1
 CATEGORIES=	x11-themes
 MASTER_SITES=	https://github.com/obnosim/ardoise/releases/download/v${PORTVERSION}/
 PKGNAMEPREFIX=	cursor-
@@ -21,7 +22,7 @@ NO_ARCH=	yes
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
 
-DATADIR=	${PREFIX}/lib/X11/icons
+DATADIR=	${PREFIX}/share/icons
 PORTDATA=	*
 
 do-install:
