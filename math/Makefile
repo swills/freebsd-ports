@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/math/Makefile 448448 2017-08-21 02:27:27Z wen $
 #
 
     COMMENT = Mathematics
@@ -86,6 +86,7 @@
     SUBDIR += acalc
     SUBDIR += add
     SUBDIR += algae
+    SUBDIR += alglib
     SUBDIR += algotutor
     SUBDIR += alt-ergo
     SUBDIR += amath

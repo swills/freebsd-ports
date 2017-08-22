@@ -1,10 +1,10 @@
 # Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/devel/visualparadigm/Makefile 441704 2017-05-25 17:13:58Z cpm $
+# $FreeBSD: head/devel/visualparadigm/Makefile 448505 2017-08-22 02:05:53Z swills $
 
 PORTNAME=	visualparadigm
-PORTVERSION=	14.1.20170519
+PORTVERSION=	14.1.20170802
 CATEGORIES=	devel java
-MASTER_SITES=	http://eu6.visual-paradigm.com/visual-paradigm/vpce${PORTVERSION:R}/${PORTVERSION:E}/
+MASTER_SITES=	https://eu5.visual-paradigm.com/visual-paradigm/vpce${PORTVERSION:R}/${PORTVERSION:E}/
 DISTNAME=	Visual_Paradigm_CE_${PORTVERSION:C/\./_/g}_Unix_InstallFree
 
 MAINTAINER=	fernando.apesteguia@gmail.com

@@ -1,7 +1,7 @@
-# $FreeBSD: head/deskutils/gworkspace-gwmetadata/Makefile 414014 2016-04-25 16:13:38Z mat $
+# $FreeBSD: head/deskutils/gworkspace-gwmetadata/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	gworkspace
-PORTVERSION=	0.9.3
+PORTVERSION=	0.9.4
 CATEGORIES=	deskutils gnustep
 #MASTER_SITES=	http://www.gnustep.it/enrico/gworkspace/
 MASTER_SITES=	GNUSTEP/usr-apps

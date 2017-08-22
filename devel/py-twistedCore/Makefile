@@ -1,5 +1,5 @@
 # Created by: Neal Nelson <neal@nelson.name>
-# $FreeBSD: head/devel/py-twistedCore/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-twistedCore/Makefile 448397 2017-08-20 12:27:36Z sunpoet $
 
 PORTNAME=	twistedCore
 PORTVERSION=	15.2.1
@@ -17,6 +17,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=3.6.0:devel/py-zope.interface
 RUN_DEPENDS:=	${BUILD_DEPENDS}
+
+DEPRECATED=	Use devel/py-twisted instead
+EXPIRATION_DATE=2017-09-30
 
 OPTIONS_DEFINE=	VERIFY
 OPTIONS_DEFAULT=VERIFY

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 448132 2017-08-17 15:56:11Z rakuco $
+# $FreeBSD: head/www/Makefile 448374 2017-08-20 11:49:06Z rene $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1543,6 +1543,7 @@
     SUBDIR += py-django-babel
     SUBDIR += py-django-bitfield
     SUBDIR += py-django-bootstrap-form
+    SUBDIR += py-django-bulk-update
     SUBDIR += py-django-caching-app-plugins
     SUBDIR += py-django-classy-tags
     SUBDIR += py-django-cms
@@ -1680,6 +1681,7 @@
     SUBDIR += py-hyperlink
     SUBDIR += py-imdbpy
     SUBDIR += py-jonpy
+    SUBDIR += py-jsonfield
     SUBDIR += py-jswebkit
     SUBDIR += py-kallithea
     SUBDIR += py-libsass

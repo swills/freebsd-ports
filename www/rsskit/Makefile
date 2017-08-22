@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/rsskit/Makefile 397315 2015-09-19 10:33:34Z theraven $
+# $FreeBSD: head/www/rsskit/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	rsskit
 PORTVERSION=	0.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	www gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	RSSKit-${PORTVERSION}

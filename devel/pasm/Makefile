@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/pasm/Makefile 401491 2015-11-13 09:11:38Z marino $
+# $FreeBSD: head/devel/pasm/Makefile 448365 2017-08-20 10:42:45Z rene $
 
 PORTNAME=	pasm
 PORTVERSION=	0.84
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	devel
 
-MAINTAINER=	rpaulo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	TI PRU Assembler
 
 LICENSE=	BSD3CLAUSE

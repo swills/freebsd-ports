@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/aws-sdk-cpp/Makefile 445917 2017-07-15 17:24:52Z sunpoet $
+# $FreeBSD: head/devel/aws-sdk-cpp/Makefile 448284 2017-08-19 06:15:13Z vanilla $
 
 PORTNAME=	aws-sdk-cpp
-PORTVERSION=	1.1.12
+PORTVERSION=	1.1.31
 CATEGORIES=	devel
 
 MAINTAINER=	ports@FreeBSD.org

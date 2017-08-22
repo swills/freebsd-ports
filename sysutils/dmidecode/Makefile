@@ -1,5 +1,5 @@
 # Created by: Anders Nordby <anders@FreeBSD.org>
-# $FreeBSD: head/sysutils/dmidecode/Makefile 444412 2017-06-26 19:48:11Z sunpoet $
+# $FreeBSD: head/sysutils/dmidecode/Makefile 448391 2017-08-20 12:27:07Z sunpoet $
 
 PORTNAME=	dmidecode
 PORTVERSION=	3.1
@@ -13,9 +13,9 @@ COMMENT=	Tool for dumping DMI (SMBIOS) contents in human-readable format
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-OPTIONS_DEFINE=	DOCS
+ONLY_FOR_ARCHS=	amd64 i386
 
-ONLY_FOR_ARCHS=		amd64 i386
+OPTIONS_DEFINE=	DOCS
 
 MAKE_ENV=	DOCSDIR="${DOCSDIR}"
 USES=		tar:xz

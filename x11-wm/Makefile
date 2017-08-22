@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-wm/Makefile 442580 2017-06-04 20:02:48Z sunpoet $
+# $FreeBSD: head/x11-wm/Makefile 448234 2017-08-18 14:27:26Z jrm $
 #
 
     COMMENT = X11 window managers
@@ -111,6 +111,7 @@
     SUBDIR += selectwm
     SUBDIR += simple-ccsm
     SUBDIR += spectrwm
+    SUBDIR += stumpwm
     SUBDIR += subtle
     SUBDIR += swm
     SUBDIR += tinywm

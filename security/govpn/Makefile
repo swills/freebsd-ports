@@ -1,11 +1,11 @@
 # Created by: Sergey Matveev <stargrave@stargrave.org>
-# $FreeBSD: head/security/govpn/Makefile 437861 2017-04-06 12:47:36Z robak $
+# $FreeBSD: head/security/govpn/Makefile 448242 2017-08-18 15:53:33Z swills $
 
 PORTNAME=	govpn
 PORTVERSION=	7.3
+PORTREVISION=	1
 CATEGORIES=	security
-MASTER_SITES=	http://www.govpn.info/download/ \
-		http://sourceforge.net/projects/govpn/files/
+MASTER_SITES=	http://www.govpn.info/download/
 
 MAINTAINER=	stargrave@stargrave.org
 COMMENT=	Simple secure, DPI-resistant VPN daemon
@@ -18,7 +18,7 @@ BUILD_DEPENDS=	go:lang/go
 USES=		tar:xz
 MAKEFILE=	BSDmakefile
 
-PORTDOCS=	AUTHORS INSTALL NEWS README THANKS README.RU
+PORTDOCS=	AUTHORS INSTALL NEWS NEWS.RU README README.RU THANKS
 INFO=		govpn
 INSTALL_TARGET=	install-strip
 

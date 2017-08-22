@@ -1,5 +1,5 @@
 # Created by: Cyril Guibourg
-# $FreeBSD: head/mail/milter-greylist-devel/Makefile 429623 2016-12-27 15:08:33Z amdmi3 $
+# $FreeBSD: head/mail/milter-greylist-devel/Makefile 448509 2017-08-22 02:50:41Z swills $
 
 PORTNAME=	milter-greylist
 PORTVERSION=	4.6.2
@@ -16,6 +16,9 @@ LICENSE=	BSD3CLAUSE
 
 CONFLICTS=	milter-greylist-[0-9]*.*
 PKGMESSAGE=	${WRKDIR}/pkg-message
+
+DEPRECATED=     mail/milter-greylist provides same version and options
+EXPIRATION_DATE=	2017-09-21
 
 USES=		tar:tgz
 

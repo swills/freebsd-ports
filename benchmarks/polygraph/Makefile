@@ -1,5 +1,5 @@
 # Created by: Dima Sivachenko <dima@chg.ru>
-# $FreeBSD: head/benchmarks/polygraph/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/benchmarks/polygraph/Makefile 448219 2017-08-18 12:05:39Z rakuco $
 
 PORTNAME=	polygraph
 PORTVERSION=	4.9.0
@@ -20,6 +20,9 @@ USES=		gmake ncurses shebangfix tar:tgz
 SHEBANG_FILES=	tools/*.pl
 USE_GCC=	any
 GNU_CONFIGURE=	yes
+
+# The port does not build with C++11 or later (bug 219275).
+USE_CXXSTD=	gnu++03
 
 CONFLICTS=	ltrace-0*
 

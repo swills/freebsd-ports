@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/arduino-avrdude/Makefile 445117 2017-07-06 01:39:08Z ultima $
+# $FreeBSD: head/devel/arduino-avrdude/Makefile 448307 2017-08-19 13:05:17Z bsam $
 
 PORTNAME=	avrdude
 PORTVERSION=	6.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	SAVANNAH/avrdude
 PKGNAMEPREFIX=	arduino-

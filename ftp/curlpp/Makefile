@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/ftp/curlpp/Makefile 440858 2017-05-13 23:21:37Z linimon $
+# $FreeBSD: head/ftp/curlpp/Makefile 448385 2017-08-20 12:26:39Z sunpoet $
 
 PORTNAME=	curlpp
 PORTVERSION=	0.8.1
@@ -12,9 +12,9 @@ COMMENT=	C++ wrapper for libcurl
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/doc/LICENSE
 
-LIB_DEPENDS=	libcurl.so:ftp/curl
-
 BROKEN_powerpc64=	fails to configure: error: A compiler with support for C++11 language features is required
+
+LIB_DEPENDS=	libcurl.so:ftp/curl
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 

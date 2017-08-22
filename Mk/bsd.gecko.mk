@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 447870 2017-08-13 01:53:45Z jbeich $
+# $FreeBSD: head/Mk/bsd.gecko.mk 448278 2017-08-18 21:39:46Z jbeich $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -252,6 +252,7 @@ MOZ_OPTIONS+=	\
 		--enable-chrome-format=${MOZ_CHROME} \
 		--enable-default-toolkit=${MOZ_TOOLKIT} \
 		--enable-update-channel=${MOZ_CHANNEL} \
+		--disable-updater \
 		--enable-pie \
 		--with-pthreads
 # Configure options for install

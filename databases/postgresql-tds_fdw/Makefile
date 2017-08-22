@@ -1,5 +1,5 @@
 # Created by: Jov amutu@amutu.com
-# $FreeBSD: head/databases/postgresql-tds_fdw/Makefile 446379 2017-07-22 09:32:59Z antoine $
+# $FreeBSD: head/databases/postgresql-tds_fdw/Makefile 448241 2017-08-18 15:36:38Z swills $
 
 PORTNAME=	tds_fdw
 PORTVERSION=	1.0.8
@@ -12,9 +12,7 @@ COMMENT=	PostgreSQL foreign data wrapper to connect to TDS databases
 
 LICENSE=	PostgreSQL
 
-BROKEN=		wrong dependencies, libodbc.so is not provided by freetds
-
-LIB_DEPENDS=	libodbc.so:databases/freetds
+LIB_DEPENDS=	libsybdb.so:databases/freetds
 
 USES=		gmake pgsql:9.2+
 USE_GITHUB=	yes

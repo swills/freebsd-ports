@@ -1,5 +1,5 @@
 # Created by: Roger Hardiman <roger@FreeBSD.org>
-# $FreeBSD: head/devel/pwlib/Makefile 440001 2017-05-03 05:52:55Z linimon $
+# $FreeBSD: head/devel/pwlib/Makefile 448224 2017-08-18 12:34:07Z rakuco $
 
 PORTNAME=	pwlib
 PORTVERSION=	1.12.0
@@ -38,6 +38,11 @@ CFLAGS+=		-O1
 MAKE_ENV=	STDCCFLAGS+="-I${LOCALBASE}"
 CPPFLAGS+=	-O1 -I${WRKSRC}/include -I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+
+# The port does not build with C++11 or later (bug 219275), and it also uses
+# CFLAGS instead of CXXFLAGS in parts of the build system, so we cannot just
+# use USE_CXXSTD.
+CFLAGS+=	-std=gnu++03
 
 CONFIGURE_ENV+=	ATOMICITY_H="<ext/atomicity.h>"
 

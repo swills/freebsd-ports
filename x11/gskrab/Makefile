@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/gskrab/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/x11/gskrab/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	gskrab
 PORTVERSION=	0.0.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	x11 gnustep
 MASTER_SITES=	http://organact.mine.nu/~wolfgang/gskrab/
 DISTNAME=	GSKrab-${PORTVERSION}

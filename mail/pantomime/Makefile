@@ -1,8 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/mail/pantomime/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/mail/pantomime/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	pantomime
 PORTVERSION=	1.2.2
+PORTREVISION=	1
 CATEGORIES=	mail gnustep
 MASTER_SITES=	http://download.gna.org/gnustep-nonfsf/
 DISTNAME=	Pantomime-${PORTVERSION}

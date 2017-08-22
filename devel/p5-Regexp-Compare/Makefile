@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Regexp-Compare/Makefile 447684 2017-08-10 15:19:06Z mat $
+# $FreeBSD: head/devel/p5-Regexp-Compare/Makefile 448383 2017-08-20 12:26:29Z sunpoet $
 
 PORTNAME=	Regexp-Compare
 PORTVERSION=	0.28
@@ -22,7 +22,7 @@ post-install:
 .include <bsd.port.pre.mk>
 
 .if ${PERL_LEVEL} >= 502700
-BROKEN=		Does not support 5.27+
+BROKEN=		does not support 5.27+
 .endif
 
 .include <bsd.port.post.mk>

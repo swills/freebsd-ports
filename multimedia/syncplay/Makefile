@@ -1,8 +1,9 @@
-# $FreeBSD: head/multimedia/syncplay/Makefile 433766 2017-02-09 18:35:48Z amdmi3 $
+# $FreeBSD: head/multimedia/syncplay/Makefile 448499 2017-08-21 20:44:37Z sunpoet $
 
 PORTNAME=	syncplay
 PORTVERSION=	1.4.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	multimedia
 
 MAINTAINER=	heckendorfc@gmail.com
@@ -10,11 +11,12 @@ COMMENT=	Synchronize video playback over networks
 
 LICENSE=	APACHE20
 
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	Syncplay
 
-USES=		desktop-file-utils gmake python:2 twisted
-USE_TWISTED=	run
+USES=		desktop-file-utils gmake python:2
 NO_ARCH=	yes
 
 INSTALLS_ICONS=	yes

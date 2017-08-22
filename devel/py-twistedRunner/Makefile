@@ -1,5 +1,5 @@
 # Created by: Neal Nelson <neal@nelson.name>
-# $FreeBSD: head/devel/py-twistedRunner/Makefile 394704 2015-08-19 05:07:12Z sunpoet $
+# $FreeBSD: head/devel/py-twistedRunner/Makefile 448399 2017-08-20 12:29:07Z sunpoet $
 
 PORTNAME=	twistedRunner
 PORTVERSION=	15.2.1
@@ -14,6 +14,9 @@ MAINTAINER=	python@FreeBSD.org
 COMMENT=	Runner has process management, including an inetd replacement
 
 LICENSE=	MIT
+
+DEPRECATED=	Use devel/py-twisted instead
+EXPIRATION_DATE=2017-09-30
 
 USE_PYTHON=	autoplist distutils
 USES=		python:2 tar:bzip2 twisted

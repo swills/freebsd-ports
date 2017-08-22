@@ -1,10 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/simsu/Makefile 445746 2017-07-14 11:35:50Z amdmi3 $
+# $FreeBSD: head/games/simsu/Makefile 448464 2017-08-21 11:45:11Z amdmi3 $
 
 PORTNAME=	simsu
-PORTVERSION=	1.3.3
+PORTVERSION=	1.3.4
 DISTVERSIONSUFFIX=	-src
-PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	https://gottcode.org/${PORTNAME}/ \
 		http://mirror.amdmi3.ru/distfiles/
@@ -21,6 +20,8 @@ USES=		compiler:c++11-lib qmake tar:bzip2
 USE_GL=		gl
 USE_QT5=	core gui widgets \
 		buildtools_build linguisttools_build
+
+PORTDOCS=	*
 
 OPTIONS_DEFINE=	DOCS NLS
 OPTIONS_SUB=	yes

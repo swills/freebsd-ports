@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/popup/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/textproc/popup/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	popup
 PORTVERSION=	0.5
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	textproc gnustep
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/Popup-${PORTVERSION}pre1
 DISTNAME=	Popup-${PORTVERSION}pre1

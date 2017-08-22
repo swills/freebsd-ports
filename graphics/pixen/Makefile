@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/pixen/Makefile 397315 2015-09-19 10:33:34Z theraven $
+# $FreeBSD: head/graphics/pixen/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	pixen
 PORTVERSION=	0.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics gnustep
 MASTER_SITES=	http://download.gna.org/gsimageapps/
 DISTNAME=	Pixen-${PORTVERSION}

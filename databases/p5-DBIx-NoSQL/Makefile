@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-NoSQL/Makefile 439149 2017-04-22 10:56:55Z sunpoet $
+# $FreeBSD: head/databases/p5-DBIx-NoSQL/Makefile 448327 2017-08-19 16:05:09Z sunpoet $
 
 PORTNAME=	DBIx-NoSQL
 PORTVERSION=	0.0021
@@ -31,6 +31,7 @@ TEST_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \
 		p5-Test-Deep>=0:devel/p5-Test-Deep \
 		p5-Test-Most>=0:devel/p5-Test-Most
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

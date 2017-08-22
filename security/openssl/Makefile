@@ -1,5 +1,5 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/security/openssl/Makefile 446538 2017-07-24 17:51:15Z brnrd $
+# $FreeBSD: head/security/openssl/Makefile 448318 2017-08-19 15:11:03Z brnrd $
 
 PORTNAME=	openssl
 PORTVERSION=	1.0.2l
@@ -57,7 +57,7 @@ SSL2_DESC=	SSLv2 protocol support
 SSL3_DESC=	SSLv3 protocol support
 ZLIB_DESC=	zlib compression support
 
-USES=		cpe perl5
+USES=		compiler cpe perl5
 USE_PERL5=	build
 MAKE_ARGS+=	WHOLE_ARCHIVE_FLAG=--whole-archive
 MAKE_ENV+=	LIBRPATH="${PREFIX}/lib" GREP_OPTIONS=
@@ -100,9 +100,11 @@ THREADS_CONFIGURE_OFF=	no-threads
 ZLIB_CONFIGURE_ON=	zlib zlib-dynamic
 ZLIB_CONFIGURE_OFF=	no-zlib no-zlib-dynamic
 
-CFLAGS+= -Werror -Qunused-arguments
-
 .include <bsd.port.pre.mk>
+
+.if ${CHOSEN_COMPILER_TYPE} != gcc && ${COMPILER_VERSION} != 42
+CFLAGS+= -Werror -Qunused-arguments
+.endif
 
 .if ${PREFIX} == /usr
 IGNORE=	the OpenSSL port can not be installed over the base version

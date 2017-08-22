@@ -1,8 +1,8 @@
-# $FreeBSD: head/lang/gscheme/Makefile 425174 2016-11-02 22:45:14Z mat $
+# $FreeBSD: head/lang/gscheme/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	gscheme
 PORTVERSION=	0.6
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	lang gnustep
 MASTER_SITES=	http://www.gnustep.it/marko/GScheme/ \
 		LOCAL/dinoex

@@ -1,8 +1,8 @@
-# $FreeBSD: head/mail/addresses-goodies/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/addresses-goodies/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	addresses
 PORTVERSION=	0.4.8
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	mail gnustep
 MASTER_SITES=	SAVANNAH/gap
 PKGNAMESUFFIX=	-goodies${PKGNAMESUFFIX2}

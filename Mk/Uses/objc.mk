@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/objc.mk 439485 2017-04-26 19:04:30Z ak $
+# $FreeBSD: head/Mk/Uses/objc.mk 448472 2017-08-21 13:26:28Z theraven $
 #
 # Objective C support
 #
@@ -9,6 +9,8 @@
 
 .if !defined(_INCLUDE_USES_OBJC_MK)
 _INCLUDE_USES_OBJC_MK=	yes
+
+OBJC_CLANG_VERSION=40
 
 objc_ARGS?=
 .if !empty(objc_ARGS) && ! ${objc_ARGS:Mcompiler}
@@ -39,17 +41,17 @@ ALT_COMPILER_TYPE=	clang
 ALT_COMPILER_TYPE=	gcc
 .endif
 
-# We do always need clang
-.if ${COMPILER_TYPE} != clang
-.if ${ALT_COMPILER_TYPE} == clang
+# We do always need clang and prefer a recent version
+.if (${COMPILER_TYPE} == clang && ${COMPILER_VERSION} < ${OBJC_CLANG_VERSION}) || ${COMPILER_TYPE} != clang
+.if ${ALT_COMPILER_TYPE} == clang && ${ALT_COMPILER_VERSION} >= ${OJBC_CLANG_VERSION}
 CC=	/usr/bin/clang
 CPP=	/usr/bin/clang-cpp
 CXX=	/usr/bin/clang++
 .else
-BUILD_DEPENDS+=	${LOCALBASE}/bin/clang34:lang/clang34
-CPP=	${LOCALBASE}/bin/clang-cpp34
-CC=	${LOCALBASE}/bin/clang34
-CXX=	${LOCALBASE}/bin/clang++34
+BUILD_DEPENDS+=	${LOCALBASE}/bin/clang${OBJC_CLANG_VERSION}:devel/llvm${OBJC_CLANG_VERSION}
+CPP=	${LOCALBASE}/bin/clang-cpp${OBJC_CLANG_VERSION}
+CC=	${LOCALBASE}/bin/clang${OBJC_CLANG_VERSION}
+CXX=	${LOCALBASE}/bin/clang++${OBJC_CLANG_VERSION}
 .endif
 .endif
 

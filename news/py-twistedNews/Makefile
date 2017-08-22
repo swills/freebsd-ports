@@ -1,5 +1,5 @@
 # Created by: Neal Nelson <neal@nelson.name>
-# $FreeBSD: head/news/py-twistedNews/Makefile 389047 2015-06-10 16:45:37Z sunpoet $
+# $FreeBSD: head/news/py-twistedNews/Makefile 448402 2017-08-20 12:29:21Z sunpoet $
 
 PORTNAME=	twistedNews
 PORTVERSION=	15.2.1
@@ -13,6 +13,9 @@ MAINTAINER=	python@FreeBSD.org
 COMMENT=	NNTP protocol implementation with client and server
 
 LICENSE=	MIT
+
+DEPRECATED=	Use devel/py-twisted instead
+EXPIRATION_DATE=2017-09-30
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils

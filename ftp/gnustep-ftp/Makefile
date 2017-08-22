@@ -1,8 +1,8 @@
-# $FreeBSD: head/ftp/gnustep-ftp/Makefile 397315 2015-09-19 10:33:34Z theraven $
+# $FreeBSD: head/ftp/gnustep-ftp/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	ftp
 PORTVERSION=	0.5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	ftp gnustep
 MASTER_SITES=	SAVANNAH/gap
 PKGNAMEPREFIX=	gnustep-

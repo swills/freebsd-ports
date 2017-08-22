@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/gretl/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/math/gretl/Makefile 448261 2017-08-18 17:25:14Z swills $
 
 PORTNAME=	gretl
 PORTVERSION=	1.9.13
@@ -63,7 +63,7 @@ OPENMP_CONFIGURE_ON=	--enable-openmp
 
 R_DESC=			libR support
 R_CONFIGURE_WITH=	libR
-R_LIB_DEPENDS=		libR.so:math/R
+R_LIB_DEPENDS=          ${CRAN_DEPENDS}
 
 UNZIP_DESC=		UnZip compression support via libgsf
 UNZIP_CONFIGURE_WITH=	gsf

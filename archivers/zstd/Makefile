@@ -1,17 +1,18 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/archivers/zstd/Makefile 445368 2017-07-09 06:58:57Z sunpoet $
+# $FreeBSD: head/archivers/zstd/Makefile 448492 2017-08-21 20:44:02Z sunpoet $
 
 PORTNAME=	zstd
-PORTVERSION=	1.3.0
+PORTVERSION=	1.3.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	archivers
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Zstandard - Fast real-time compression algorithm
 
-LICENSE=	BSD2CLAUSE
-LICENSE_FILE=	${WRKSRC}/LICENSE
+LICENSE=	BSD3CLAUSE GPLv2
+LICENSE_COMB=	dual
+LICENSE_FILE_BSD3CLAUSE=${WRKSRC}/LICENSE
+LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING
 
 ALL_TARGET=	default
 MAKE_ARGS=	INCLUDEDIR="${PREFIX}/include" LIBDIR="${PREFIX}/lib" MANDIR="${PREFIX}/man/man1"

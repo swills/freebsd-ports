@@ -1,8 +1,8 @@
 # Created by: Stefan Walter <swalter@lettermax.de>
-# $FreeBSD: head/misc/vifm/Makefile 418784 2016-07-19 13:30:55Z amdmi3 $
+# $FreeBSD: head/misc/vifm/Makefile 448287 2017-08-19 08:17:43Z misha $
 
 PORTNAME=	vifm
-PORTVERSION=	0.8.2
+PORTVERSION=	0.9
 DISTVERSIONPREFIX=	v
 CATEGORIES=	misc
 

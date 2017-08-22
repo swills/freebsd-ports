@@ -1,5 +1,5 @@
 # Created by: mbr@FreeBSD.org
-# $FreeBSD: head/emulators/open-vm-tools/Makefile 448160 2017-08-17 18:00:36Z jpaetzel $
+# $FreeBSD: head/emulators/open-vm-tools/Makefile 448471 2017-08-21 13:14:02Z mat $
 
 PORTNAME=		open-vm-tools
 PORTVERSION=		${RELEASE_VER}
@@ -41,7 +41,7 @@ ICU_CONFIGURE_WITH=	icu
 ICU_LIB_DEPENDS=	libicuuc.so:devel/icu
 OPENSSL_CONFIGURE_WITH=	ssl
 
-WRKSRC=			${WRKDIR}/${PORTNAME}-stable-${RELEASE_VER}/open-vm-tools/
+WRKSRC_SUBDIR=		open-vm-tools
 
 GNU_CONFIGURE=		yes
 USE_GNOME=		glib20

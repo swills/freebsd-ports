@@ -1,9 +1,10 @@
 # Created by: Joseph Koshy <jkoshy@FreeBSD.org>
-# $FreeBSD: head/print/py-fonttools/Makefile 447065 2017-08-01 18:03:52Z sunpoet $
+# $FreeBSD: head/print/py-fonttools/Makefile 448333 2017-08-19 16:05:38Z sunpoet $
 
 PORTNAME=	fonttools
-PORTVERSION=	3.14.0
+PORTVERSION=	3.15.1
 CATEGORIES=	print python
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	python@FreeBSD.org
@@ -12,10 +13,7 @@ COMMENT=	Open source library for manipulating fonts, written in Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	behdad
-
-USES?=		python
+USES?=		python zip
 USE_PYTHON=	autoplist concurrent distutils
 NO_ARCH=	yes
 

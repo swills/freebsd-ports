@@ -1,5 +1,5 @@
 # Created by: Sergey Kozlov <kozlov.sergey.404@gmail.com>
-# $FreeBSD: head/textproc/kibana45/Makefile 419775 2016-08-07 12:14:30Z olgeni $
+# $FreeBSD: head/textproc/kibana45/Makefile 448535 2017-08-22 14:48:14Z swills $
 
 PORTNAME=	kibana
 PORTVERSION?=	4.5.4
@@ -14,7 +14,7 @@ COMMENT=	Browser based analytics and search interface to ElasticSearch
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	node4>=4.3.2:www/node4
+RUN_DEPENDS?=	node4>=4.3.2:www/node4
 
 NO_BUILD=	yes
 NO_ARCH=	yes

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/stlink/Makefile 440009 2017-05-03 12:16:49Z mat $
+# $FreeBSD: head/devel/stlink/Makefile 448478 2017-08-21 15:32:07Z lev $
 
 PORTNAME=	stlink
-PORTVERSION=	1.3.1
+PORTVERSION=	1.4.0
 PORTREVISION=	0
 CATEGORIES=	devel
 

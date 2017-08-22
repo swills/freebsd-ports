@@ -1,5 +1,5 @@
 # Created by: Martin Kammerhofer
-# $FreeBSD: head/devel/autoconf-archive/Makefile 423465 2016-10-07 14:55:45Z kwm $
+# $FreeBSD: head/devel/autoconf-archive/Makefile 448226 2017-08-18 12:45:46Z kwm $
 
 PORTNAME=	autoconf-archive
 PORTVERSION=	0.${DISTDATE:C/-/./g}
@@ -11,7 +11,7 @@ MAINTAINER=	kwm@FreeBSD.org
 COMMENT=	Set of useful GNU Autoconf macros
 
 USES=		makeinfo tar:xz
-DISTDATE=	2016.09.16
+DISTDATE=	2017.03.21
 GNU_CONFIGURE=	yes
 INFO=		${PORTNAME}
 

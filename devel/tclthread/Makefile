@@ -1,10 +1,10 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/tclthread/Makefile 419213 2016-07-28 11:37:00Z gahr $
+# $FreeBSD: head/devel/tclthread/Makefile 448456 2017-08-21 07:24:52Z gahr $
 
 PORTNAME=	thread
-PORTVERSION=	2.8.0
+PORTVERSION=	2.8.1
 CATEGORIES=	devel
-MASTER_SITES=	SF/tcl/Tcl/8.6.6/
+MASTER_SITES=	SF/tcl/Tcl/8.6.7/
 PKGNAMEPREFIX=	tcl
 DISTNAME=	${PORTNAME}${PORTVERSION}
 

@@ -1,8 +1,8 @@
 # Created by: mp39590@gmail.com
-# $FreeBSD: head/misc/tudu/Makefile 399971 2015-10-22 13:05:55Z danfe $
+# $FreeBSD: head/misc/tudu/Makefile 448289 2017-08-19 08:40:26Z misha $
 
 PORTNAME=	tudu
-PORTVERSION=	0.10
+PORTVERSION=	0.10.2
 CATEGORIES=	misc
 MASTER_SITES=	http://code.meskio.net/tudu/
 

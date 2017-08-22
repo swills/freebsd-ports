@@ -1,9 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/tetzle/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/tetzle/Makefile 448370 2017-08-20 11:19:32Z amdmi3 $
 
 PORTNAME=	tetzle
-PORTVERSION=	2.1.0
-PORTREVISION=	2
+PORTVERSION=	2.1.1
 CATEGORIES=	games
 MASTER_SITES=	http://gottcode.org/tetzle/ \
 		http://mirror.amdmi3.ru/distfiles/

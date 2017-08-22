@@ -1,8 +1,8 @@
 # Created by: adamw
-# $FreeBSD: head/archivers/liblz4/Makefile 433202 2017-02-03 08:31:36Z matthew $
+# $FreeBSD: head/archivers/liblz4/Makefile 448415 2017-08-20 12:30:25Z sunpoet $
 
 PORTNAME=	lz4
-PORTVERSION=	1.7.5
+PORTVERSION=	1.8.0
 DISTVERSIONPREFIX=	v
 PORTEPOCH=	1
 CATEGORIES=	archivers
@@ -14,8 +14,8 @@ COMMENT=	LZ4 compression library, lossless and very fast
 LICENSE=	BSD2CLAUSE GPLv2
 LICENSE_COMB=	multi
 
-USE_GITHUB=	yes
 USES=		gmake pathfix pkgconfig
+USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 #PATHFIX_MAKEFILEIN=	Makefile
 

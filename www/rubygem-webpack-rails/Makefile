@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-webpack-rails/Makefile 436731 2017-03-22 21:04:08Z sunpoet $
+# $FreeBSD: head/www/rubygem-webpack-rails/Makefile 448244 2017-08-18 15:57:28Z sunpoet $
 
 PORTNAME=	webpack-rails
-PORTVERSION=	0.9.10
+PORTVERSION=	0.9.11
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -13,6 +13,10 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
 RUN_DEPENDS=	rubygem-railties4>=3.2.0:www/rubygem-railties4
+
+# www/gitlab still depends on this port
+DEPRECATED=	Upstream no longer maintained, use devel/rubygem-webpacker-rails* instead
+EXPIRATION_DATE=2017-12-31
 
 NO_ARCH=	yes
 USE_RUBY=	yes

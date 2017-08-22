@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/easydiff/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/textproc/easydiff/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	easydiff
 PORTVERSION=	0.4.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	textproc gnustep
 MASTER_SITES=	GNUSTEP/usr-apps
 DISTNAME=	EasyDiff-${PORTVERSION}

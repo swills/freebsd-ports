@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-nbformat/Makefile 435937 2017-03-11 16:00:09Z sunpoet $
+# $FreeBSD: head/devel/py-nbformat/Makefile 448497 2017-08-21 20:44:28Z sunpoet $
 
 PORTNAME=	nbformat
-PORTVERSION=	4.3.0
+PORTVERSION=	4.4.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

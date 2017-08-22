@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/tk86/Makefile 419215 2016-07-28 12:08:57Z gahr $
+# $FreeBSD: head/x11-toolkits/tk86/Makefile 448344 2017-08-19 17:15:40Z gahr $
 
 PORTNAME=	tk
-PORTVERSION=	8.6.6
+PORTVERSION=	8.6.7
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	SF/tcl/Tcl/${PORTVERSION} TCLTK/tcl8_6
 PKGNAMESUFFIX=	${PORTVERSION:R:S/.//}
@@ -16,6 +16,9 @@ LICENSE_NAME=	Tcl/Tk License
 LICENSE_FILE=	${WRKSRC}/../license.terms
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
+LIB_DEPENDS=	libfreetype.so:print/freetype2 \
+		libfontconfig.so:x11-fonts/fontconfig
+
 OPTIONS_DEFINE=	TKMAN DEMOS THREADS
 OPTIONS_DEFAULT=THREADS
 OPTIONS_SUB=	yes
@@ -28,9 +31,9 @@ WRKSRC=		${WRKDIR}/${PORTNAME}${PORTVERSION}/unix
 ALL_TARGET=	all
 INSTALL_TARGET=	install-strip
 
-USE_LDCONFIG=	yes
 USES+=		tcl:${SHORT_TK_VER},tea
-USE_XORG=	x11 xft xscrnsaver
+USE_LDCONFIG=	yes
+USE_XORG=	x11 xext xft xrender xscrnsaver
 CONFIGURE_ARGS=	--enable-xss \
 		--enable-xft \
 		--enable-man-suffix=.${MAN_SUFFIX} \

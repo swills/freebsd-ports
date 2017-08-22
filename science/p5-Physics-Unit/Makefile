@@ -1,9 +1,8 @@
 # Created by: Frederic Culot <frederic@culot.org>
-# $FreeBSD: head/science/p5-Physics-Unit/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/science/p5-Physics-Unit/Makefile 448540 2017-08-22 15:11:58Z culot $
 
 PORTNAME=	Physics-Unit
-PORTVERSION=	0.53
-PORTREVISION=	2
+PORTVERSION=	0.54
 CATEGORIES=	science perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,6 +13,7 @@ COMMENT=	Manipulate Physics units and dimensions
 LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual
 
+NO_ARCH=	YES
 USES=		perl5
 USE_PERL5=	modbuild
 

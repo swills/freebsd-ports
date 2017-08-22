@@ -1,5 +1,5 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/security/krb5-devel/Makefile 446690 2017-07-26 18:26:50Z cy $
+# $FreeBSD: head/security/krb5-devel/Makefile 448471 2017-08-21 13:14:02Z mat $
 
 PORTNAME=		krb5
 PORTVERSION=		1.16.${MIT_COMMIT_DATE}
@@ -64,7 +64,6 @@ LDFLAGS+=		-L${OPENSSLLIB}
 
 USE_RC_SUBR=		kpropd
 OPTIONS_SUB=		yes
-WRKSRC=			${WRKDIR}/${PORTNAME}-${HASH}
 WRKSRC_SUBDIR=		src
 PORTEXAMPLES=		kdc.conf krb5.conf services.append
 

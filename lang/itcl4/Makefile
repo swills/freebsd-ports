@@ -1,20 +1,23 @@
 # Created by: gahr
-# $FreeBSD: head/lang/itcl4/Makefile 416498 2016-06-07 07:48:03Z gahr $
+# $FreeBSD: head/lang/itcl4/Makefile 448458 2017-08-21 07:49:12Z gahr $
 
 PORTNAME=	itcl4
-PORTVERSION=	4.0.4
-PORTREVISION=	1
+PORTVERSION=	4.1.0
+PORTREVISION=	0
 CATEGORIES=	lang
-MASTER_SITES=	TCLTK/itcl \
-		SF/incrtcl/%5Bincr%20Tcl_Tk%5D-4-source/itcl%20${PORTVERSION}/
+MASTER_SITES=	SF/incrtcl/%5Bincr%20Tcl_Tk%5D-4-source/itcl%20${PORTVERSION}/
 DISTNAME=	itcl${PORTVERSION}
 
 MAINTAINER=	tcltk@FreeBSD.org
 COMMENT=	Object-oriented extension to Tcl [incr Tcl]
 
+LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/license.terms
+
 USES+=		tcl:86,tea
 CONFIGURE_ARGS+=--includedir=${PREFIX}/include/itcl${PORTVERSION:R}
-PLIST_SUB+=	PKGVER=${PORTVERSION}
+PLIST_SUB+=	PKGVER=${PORTVERSION} \
+		SHORT_PKGVER=${PORTVERSION:R}
 TEST_TARGET=	test
 
 post-install:

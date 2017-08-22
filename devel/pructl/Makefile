@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/pructl/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/pructl/Makefile 448365 2017-08-20 10:42:45Z rene $
 
 PORTNAME=	pructl
 PORTVERSION=	0.2
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://bitbucket.org/rpaulo/pructl/get/
 
-MAINTAINER=	rpaulo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Utilities to interface with PRUs
 
 LICENSE=	BSD2CLAUSE

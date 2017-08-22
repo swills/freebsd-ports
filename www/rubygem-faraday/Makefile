@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-faraday/Makefile 448046 2017-08-16 15:45:17Z sunpoet $
+# $FreeBSD: head/www/rubygem-faraday/Makefile 448326 2017-08-19 16:05:04Z sunpoet $
 
 PORTNAME=	faraday
-PORTVERSION=	0.13.0
+PORTVERSION=	0.13.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

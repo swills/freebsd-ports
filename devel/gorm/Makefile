@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/gorm/Makefile 397315 2015-09-19 10:33:34Z theraven $
+# $FreeBSD: head/devel/gorm/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	gorm
-PORTVERSION=	1.2.22
+PORTVERSION=	1.2.23
 CATEGORIES=	devel gnustep
 MASTER_SITES=	GNUSTEP/dev-apps
 

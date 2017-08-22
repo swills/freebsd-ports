@@ -1,9 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/www/libxul/Makefile 443684 2017-06-16 10:57:14Z cpm $
+# $FreeBSD: head/www/libxul/Makefile 448278 2017-08-18 21:39:46Z jbeich $
 
 PORTNAME=	libxul
 DISTVERSION=	45.9.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES?=	www devel
 MASTER_SITES=	MOZILLA/firefox/releases/${DISTVERSION}esr/source \
 		MOZILLA/firefox/candidates/${DISTVERSION}esr-candidates/build3/source

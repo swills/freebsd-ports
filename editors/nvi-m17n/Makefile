@@ -1,9 +1,9 @@
 # Created by: Jun-ichiro itojun Itoh <itojun@itojun.org>
-# $FreeBSD: head/editors/nvi-m17n/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/editors/nvi-m17n/Makefile 448538 2017-08-22 14:57:02Z swills $
 
 PORTNAME=	nvi
 PORTVERSION=	1.79.20040608
-PORTREVISION=	3
+PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES?=	editors
 MASTER_SITES=	ftp://ftp.mk.bsdclub.org/pub/FreeBSD/distfiles/	\

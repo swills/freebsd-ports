@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/simpleagenda/Makefile 440024 2017-05-03 17:09:38Z pawel $
+# $FreeBSD: head/deskutils/simpleagenda/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	simpleagenda
 PORTVERSION=	0.43
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	deskutils gnustep
 MASTER_SITES=	http://coyote.octets.fr/pub/gnustep/
 DISTNAME=	SimpleAgenda-${PORTVERSION}

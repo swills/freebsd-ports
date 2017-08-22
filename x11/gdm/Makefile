@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/gdm/Makefile 447399 2017-08-05 10:58:48Z kwm $
+# $FreeBSD: head/x11/gdm/Makefile 448481 2017-08-21 16:55:01Z mat $
 
 PORTNAME=	gdm
 PORTVERSION=	3.16.4
@@ -92,7 +92,7 @@ PKGMESSAGE=	${WRKDIR}/pkg-message
 GNOME_LOCALSTATEDIR=	/var
 
 OPTIONS_DEFINE=	IPV6
-KEYRING_RUN_DEPENDS=	${LOCALBASE}/lib/pam_gnome_keyring.so:${PORTSDIR}/security/gnome-keyring
+KEYRING_RUN_DEPENDS=	${LOCALBASE}/lib/pam_gnome_keyring.so:security/gnome-keyring
 
 IPV6_CONFIGURE_ENABLE=	ipv6
 

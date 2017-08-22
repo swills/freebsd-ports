@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/sqlclient/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/sqlclient/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	sqlclient
 PORTVERSION=	1.8.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	databases gnustep
 MASTER_SITES=	GNUSTEP/libs
 DISTNAME=	SQLClient-${PORTVERSION}

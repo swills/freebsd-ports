@@ -1,12 +1,10 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/mda-lv2/Makefile 448013 2017-08-15 21:21:47Z ultima $
+# $FreeBSD: head/audio/mda-lv2/Makefile 448435 2017-08-20 17:27:18Z ultima $
 
-PORTNAME=	mda
+PORTNAME=	mda-lv2
 PORTVERSION=	1.2.2
 CATEGORIES=	audio
 MASTER_SITES=	http://download.drobilla.net/
-PKGNAMESUFFIX=	-lv2
-DISTNAME=	${PKGNAME}
 
 MAINTAINER=	yuri@rawbw.com
 COMMENT=	LV2 port of the MDA plugins by Paul Kellett

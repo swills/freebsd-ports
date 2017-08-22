@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/libxkbcommon/Makefile 432645 2017-01-28 19:19:12Z bapt $
+# $FreeBSD: head/x11/libxkbcommon/Makefile 448434 2017-08-20 16:31:39Z rezny $
 
 PORTNAME=	libxkbcommon
 PORTVERSION=	0.7.1
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://xkbcommon.org/download/
 
@@ -14,15 +15,10 @@ XORG_CAT=	lib
 USES=		gmake bison tar:xz
 
 USE_XORG=	xcb
-MAKE_JOBS_UNSAFE=	yes
 INSTALL_TARGET=	install-strip
 
-CONFIGURE_ARGS=	--without-default-layout \
-		--without-default-model \
-		--without-default-options \
-		--without-default-rules \
-		--without-default-variant \
-		--without-doxygen \
+CONFIGURE_ARGS=	--without-doxygen \
+		--with-default-rules="xorg" \
 		--with-x-locale-root=${PREFIX}/lib/X11/locale
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/gstreamer1-plugins-openjpeg/Makefile 405242 2016-01-04 14:21:56Z kwm $
+# $FreeBSD: head/graphics/gstreamer1-plugins-openjpeg/Makefile 448363 2017-08-20 09:48:39Z sunpoet $
 
 PORTREVISION=	0
 CATEGORIES=	graphics
@@ -9,5 +9,7 @@ GST_PLUGIN=	openjpeg
 DIST=		bad
 
 MASTERDIR=	${.CURDIR}/../../multimedia/gstreamer1-plugins
+
+EXTRA_PATCHES=	${.CURDIR}/files/patch-openjpeg22
 
 .include "${MASTERDIR}/Makefile"

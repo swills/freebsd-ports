@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/devel/protobuf/Makefile 448041 2017-08-16 15:44:48Z sunpoet $
+# $FreeBSD: head/devel/protobuf/Makefile 448384 2017-08-20 12:26:34Z sunpoet $
 
 PORTNAME=	protobuf
 PORTVERSION=	3.4.0
@@ -12,10 +12,10 @@ COMMENT=	Data interchange format library
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BROKEN_sparc64=	fails to compile: no atomic ops available
+
 TEST_DEPENDS=	googlemock>=0:devel/googlemock \
 		googletest>=0:devel/googletest
-
-BROKEN_sparc64=	fails to compile: no atomic ops available
 
 CFLAGS+=	-DGOOGLE_PROTOBUF_NO_RTTI -I${WRKSRC}/src
 CONFIGURE_ENV=	CXX_FOR_BUILD=c++

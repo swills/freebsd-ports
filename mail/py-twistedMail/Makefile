@@ -1,5 +1,5 @@
 # Created by: Neal Nelson <neal@nelson.name>
-# $FreeBSD: head/mail/py-twistedMail/Makefile 389044 2015-06-10 16:45:25Z sunpoet $
+# $FreeBSD: head/mail/py-twistedMail/Makefile 448401 2017-08-20 12:29:17Z sunpoet $
 
 PORTNAME=	twistedMail
 PORTVERSION=	15.2.1
@@ -13,6 +13,9 @@ MAINTAINER=	python@FreeBSD.org
 COMMENT=	SMTP, IMAP, and POP protocol implementation with clients and servers
 
 LICENSE=	MIT
+
+DEPRECATED=	Use devel/py-twisted instead
+EXPIRATION_DATE=2017-09-30
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils

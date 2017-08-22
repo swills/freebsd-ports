@@ -1,5 +1,5 @@
 # Created by: Andrew Hsu <ahsu@users.sf.net>
-# $FreeBSD: head/deskutils/rolo/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/deskutils/rolo/Makefile 448477 2017-08-21 15:10:42Z amdmi3 $
 
 PORTNAME=	rolo
 PORTVERSION=	011
@@ -9,16 +9,17 @@ MASTER_SITES=	SF
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Text-based contact management software
 
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 LIB_DEPENDS=	libvc.so:devel/libvc
 
-USES=		ncurses tar:bzip2
+USES=		localbase ncurses tar:bzip2
 GNU_CONFIGURE=	yes
-CFLAGS+=	-I${PREFIX}/include \
-		-L${PREFIX}/lib
 
 OPTIONS_DEFINE=	DOCS
 
-post-install:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for DOC in AUTHORS ChangeLog NEWS README THANKS
 	${INSTALL_DATA} ${WRKSRC}/${DOC} ${STAGEDIR}${DOCSDIR}

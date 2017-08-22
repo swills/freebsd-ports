@@ -1,12 +1,12 @@
 # Created by: Stefan Hagen <ports@textmail.me>
-# $FreeBSD: head/www/luakit/Makefile 447986 2017-08-15 14:21:36Z joneum $
+# $FreeBSD: head/www/luakit/Makefile 448292 2017-08-19 09:25:30Z joneum $
 
 PORTNAME=	luakit
 PORTVERSION=	2017.08.10
 CATEGORIES=	www
 
 MAINTAINER=	ports@textmail.me
-COMMENT=	Fast, small, webkit2 based browser framework extensible by Lua
+COMMENT=	Fast, small, webkit2 based browser framework extensible with Lua
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING.GPLv3
@@ -38,7 +38,7 @@ LUAJIT_MAKE_ARGS_OFF=	USE_LUAJIT=0
 post-patch:
 	@${REINPLACE_CMD} -e \
 		's|share/man|man| ; s|luakit/doc|doc/luakit| ; \
-		s|/etc/xdg|$(PREFIX)/etc/xdg| ; /MANPREFIX */s|?=|=|' \
+		s|/etc/xdg|${PREFIX}/etc/xdg| ; /MANPREFIX */s|?=|=|' \
 		${WRKSRC}/config.mk
 	@${REINPLACE_CMD} -e 's|bin/env lua|&${LUA_VER_STR}|' \
 		${WRKSRC}/build-utils/gentokens.lua

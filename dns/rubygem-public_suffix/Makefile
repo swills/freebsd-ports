@@ -1,8 +1,9 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/dns/rubygem-public_suffix/Makefile 447424 2017-08-05 23:11:28Z sunpoet $
+# $FreeBSD: head/dns/rubygem-public_suffix/Makefile 448322 2017-08-19 16:04:42Z sunpoet $
 
 PORTNAME=	public_suffix
 PORTVERSION=	3.0.0
+PORTREVISION=	1
 CATEGORIES=	dns rubygems
 MASTER_SITES=	RG
 

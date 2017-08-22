@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/databases/fastdb/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/databases/fastdb/Makefile 448222 2017-08-18 12:25:30Z rakuco $
 
 PORTNAME=	fastdb
 PORTVERSION=	3.75
@@ -24,6 +24,9 @@ USE_LDCONFIG=	yes
 DOS2UNIX_FILES=	${MAKEFILE}
 
 PORTDOCS=	FastDB.htm
+
+# The port does not build with C++11 or later (bug 219275).
+USE_CXXSTD=	gnu++03
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

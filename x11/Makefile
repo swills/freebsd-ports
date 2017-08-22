@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 447925 2017-08-14 02:46:31Z swills $
+# $FreeBSD: head/x11/Makefile 448443 2017-08-20 23:21:18Z ultima $
 #
 
     COMMENT = Ports to support the X window system
@@ -8,6 +8,7 @@
     SUBDIR += 9menu
     SUBDIR += alacritty
     SUBDIR += alltray
+    SUBDIR += alttab
     SUBDIR += altyo
     SUBDIR += antimicro
     SUBDIR += appres
@@ -33,6 +34,7 @@
     SUBDIR += cinnamon-screensaver
     SUBDIR += cinnamon-session
     SUBDIR += cl-clx
+    SUBDIR += cl-clx-sbcl
     SUBDIR += compositeproto
     SUBDIR += controllermap
     SUBDIR += cool-retro-term

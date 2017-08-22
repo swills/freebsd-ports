@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/plopfolio/Makefile 397315 2015-09-19 10:33:34Z theraven $
+# $FreeBSD: head/deskutils/plopfolio/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	plopfolio
 PORTVERSION=	0.1.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	deskutils gnustep
 MASTER_SITES=	GNUSTEP/usr-apps
 

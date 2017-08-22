@@ -1,5 +1,5 @@
 # Created by: Neal Nelson <neal@nelson.name>
-# $FreeBSD: head/dns/py-twistedNames/Makefile 389043 2015-06-10 16:45:21Z sunpoet $
+# $FreeBSD: head/dns/py-twistedNames/Makefile 448400 2017-08-20 12:29:12Z sunpoet $
 
 PORTNAME=	twistedNames
 PORTVERSION=	15.2.1
@@ -13,6 +13,9 @@ MAINTAINER=	python@FreeBSD.org
 COMMENT=	DNS protocol implementation with client and server
 
 LICENSE=	MIT
+
+DEPRECATED=	Use devel/py-twisted instead
+EXPIRATION_DATE=2017-09-30
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils

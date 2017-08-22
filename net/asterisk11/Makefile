@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/asterisk11/Makefile 445081 2017-07-05 14:39:04Z madpilot $
+# $FreeBSD: head/net/asterisk11/Makefile 448520 2017-08-22 12:59:53Z madpilot $
 
 PORTNAME=	asterisk
 PORTVERSION=	11.25.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	http://downloads.asterisk.org/pub/telephony/%SUBDIR%/:DEFAULT,g729
 MASTER_SITE_SUBDIR=	asterisk/ \

@@ -1,9 +1,9 @@
 # Created by: gurkan@phys.ethz.ch
-# $FreeBSD: head/archivers/zipper/Makefile 427491 2016-12-01 11:18:03Z mat $
+# $FreeBSD: head/archivers/zipper/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	zipper
 PORTVERSION=	1.5
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	archivers gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	Zipper-${PORTVERSION}

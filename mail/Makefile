@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 447520 2017-08-07 21:57:57Z adamw $
+# $FreeBSD: head/mail/Makefile 448436 2017-08-20 17:35:18Z ultima $
 #
 
     COMMENT = Electronic mail utilities
@@ -213,6 +213,7 @@
     SUBDIR += mailfromd
     SUBDIR += mailfront
     SUBDIR += mailgraph
+    SUBDIR += mailhog
     SUBDIR += mailman
     SUBDIR += mailmgr
     SUBDIR += mailpile

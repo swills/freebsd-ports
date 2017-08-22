@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/mpdcon/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/mpdcon/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	mpdcon
 PORTVERSION=	1.5.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	MPDCon-${PORTVERSION}

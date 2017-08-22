@@ -1,5 +1,5 @@
 # Created by: Neal Nelson <neal@nelson.name>
-# $FreeBSD: head/devel/py-twistedFlow/Makefile 366094 2014-08-25 16:44:07Z antoine $
+# $FreeBSD: head/devel/py-twistedFlow/Makefile 448398 2017-08-20 12:29:02Z sunpoet $
 
 PORTNAME=	twistedFlow
 PORTVERSION=	8.2.0
@@ -13,6 +13,9 @@ MAINTAINER=	neal@nelson.name
 COMMENT=	Generator based asynchronous result flows
 
 LICENSE=	MIT
+
+DEPRECATED=	Use devel/py-twisted instead
+EXPIRATION_DATE=2017-09-30
 
 WRKSRC=		${WRKDIR}/TwistedFlow-${PORTVERSION}
 

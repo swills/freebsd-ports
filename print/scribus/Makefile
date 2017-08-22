@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/print/scribus/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/print/scribus/Makefile 448295 2017-08-19 10:28:29Z bsam $
 
 PORTNAME=	scribus
 PORTVERSION=	1.4.6
@@ -10,6 +10,8 @@ MASTER_SITES=	SF \
 
 MAINTAINER=	bsam@FreeBSD.org
 COMMENT=	Comprehensive desktop publishing program
+
+LICENSE=	GPLv2+
 
 LIB_DEPENDS=	liblcms.so:graphics/lcms \
 		libpng.so:graphics/png \
@@ -25,7 +27,7 @@ LIB_DEPENDS=	liblcms.so:graphics/lcms \
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter \
 		${PYTHON_SITELIBDIR}/PIL/_imaging.so:graphics/py-pillow
 
-USE_QT4=	gui linguist_build moc_build qmake_build rcc_build uic_build xml network
+USE_QT4=	corelib gui linguist_build moc_build qmake_build rcc_build uic_build xml network
 USE_GNOME=	libartlgpl2 libxml2
 USES=		cmake:outsource desktop-file-utils execinfo ghostscript:run jpeg \
 		pkgconfig python shared-mime-info tar:xz

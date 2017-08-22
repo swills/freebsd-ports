@@ -1,5 +1,5 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/emulators/pearpc/Makefile 439905 2017-05-01 19:24:00Z linimon $
+# $FreeBSD: head/emulators/pearpc/Makefile 448225 2017-08-18 12:44:13Z rakuco $
 
 PORTNAME=	pearpc
 PORTVERSION=	0.5
@@ -32,6 +32,8 @@ SDL_CONFIGURE_OFF=	--enable-ui=x11
 
 .if ${ARCH} == "amd64" || ${ARCH} == "i386"
 USE_GCC=	yes
+# The port does not build with C++11 or later (bug 219275).
+USE_CXXSTD=	gnu++03
 .else
 CONFIGURE_ARGS+=	--enable-cpu=generic
 .endif

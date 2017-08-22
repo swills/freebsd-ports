@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/grr/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/grr/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	grr
 PORTVERSION=	1.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	www gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	Grr-${PORTVERSION}

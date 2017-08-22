@@ -1,8 +1,8 @@
 # Created by: Yi-Jheng Lin <yzlin@FreeBSD.org>
-# $FreeBSD: head/devel/shflags/Makefile 406143 2016-01-15 07:00:21Z miwi $
+# $FreeBSD: head/devel/shflags/Makefile 448285 2017-08-19 07:21:50Z vanilla $
 
 PORTNAME=	shflags
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

@@ -1,10 +1,10 @@
 # Created by: Landon Fuller <landonf@opendarwin.org>
-# $FreeBSD: head/net/splatd/Makefile 437090 2017-03-27 23:07:20Z rodrigo $
+# $FreeBSD: head/net/splatd/Makefile 448428 2017-08-20 15:10:25Z rodrigo $
 
 PORTNAME=	splatd
 PORTVERSION=	1.2
 DISTVERSIONPREFIX=	${PORTNAME}-
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	net
 
 MAINTAINER=	rodrigo@FreeBSD.org
@@ -16,9 +16,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 BUILD_DEPENDS=	${LOCALBASE}/bin/zconfig:devel/py-zconfig \
 		${PYTHON_PKGNAMEPREFIX}ldap>=2.3.1:net/py-ldap
 RUN_DEPENDS=	${LOCALBASE}/bin/zconfig:devel/py-zconfig \
-		${PYTHON_PKGNAMEPREFIX}ldap>=2.3.1:net/py-ldap
+		${PYTHON_PKGNAMEPREFIX}ldap>=2.3.1:net/py-ldap \
+		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
 
-USES=		python twisted
+USES=		python
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGNAME=	splat
 USE_RC_SUBR=	splatd

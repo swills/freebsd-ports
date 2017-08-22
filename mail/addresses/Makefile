@@ -1,9 +1,9 @@
 # Created by: Miguel Mendez <flynn@energyhq.es.eu.org>
-# $FreeBSD: head/mail/addresses/Makefile 397315 2015-09-19 10:33:34Z theraven $
+# $FreeBSD: head/mail/addresses/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	addresses
 PORTVERSION=	0.4.8
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	mail gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	Addresses-${PORTVERSION}

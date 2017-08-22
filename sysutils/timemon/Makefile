@@ -1,8 +1,9 @@
 # Created by: gurkan@phys.ethz.ch
-# $FreeBSD: head/sysutils/timemon/Makefile 403390 2015-12-09 14:09:33Z vanilla $
+# $FreeBSD: head/sysutils/timemon/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	timemon
 PORTVERSION=	4.2
+PORTREVISION=	1
 CATEGORIES=	sysutils gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	TimeMon-${PORTVERSION}

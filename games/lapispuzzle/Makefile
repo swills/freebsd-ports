@@ -1,9 +1,9 @@
 # Created by: gurkan@phys.ethz.ch
-# $FreeBSD: head/games/lapispuzzle/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/games/lapispuzzle/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	lapispuzzle
 PORTVERSION=	1.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	LapisPuzzle-${PORTVERSION}

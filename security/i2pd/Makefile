@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/security/i2pd/Makefile 442774 2017-06-06 13:53:18Z amdmi3 $
+# $FreeBSD: head/security/i2pd/Makefile 448463 2017-08-21 11:11:52Z amdmi3 $
 
 PORTNAME=	i2pd
-PORTVERSION=	2.14.0
+PORTVERSION=	2.15.0
 CATEGORIES=	security net-p2p
 
 MAINTAINER=	amdmi3@FreeBSD.org

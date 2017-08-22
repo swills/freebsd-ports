@@ -1,8 +1,8 @@
-# $FreeBSD: head/print/gspdf/Makefile 411798 2016-03-24 15:47:50Z tijl $
+# $FreeBSD: head/print/gspdf/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	gspdf
 PORTVERSION=	0.5
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	print gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	GSPdf-${PORTVERSION}

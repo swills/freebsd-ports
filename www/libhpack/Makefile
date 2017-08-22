@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/libhpack/Makefile 441819 2017-05-27 00:20:19Z linimon $
+# $FreeBSD: head/www/libhpack/Makefile 448393 2017-08-20 12:27:17Z sunpoet $
 
 PORTNAME=	libhpack
 PORTVERSION=	0.0.20140710
@@ -15,9 +15,9 @@ COMMENT=	Implementation of HPACK (Header compression for HTTP/2.0)
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	libcheck.so:devel/check
+BROKEN_armv6=	fails to compile: Can't define TIME_MAX #'
 
-BROKEN_armv6=		fails to compile: Can't define TIME_MAX
+LIB_DEPENDS=	libcheck.so:devel/check
 
 CMAKE_ARGS=	-DBUILD_DOCS=OFF \
 		-DBUILD_TESTS=OFF \

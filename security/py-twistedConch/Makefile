@@ -1,5 +1,5 @@
 # Created by: Neal Nelson <neal@nelson.name>
-# $FreeBSD: head/security/py-twistedConch/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/py-twistedConch/Makefile 448405 2017-08-20 12:29:35Z sunpoet $
 
 PORTNAME=	twistedConch
 PORTVERSION=	15.2.1
@@ -16,6 +16,9 @@ COMMENT=	SSH and SFTP protocol implementation with clients and servers
 LICENSE=	MIT
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1>=0.0.9a:devel/py-pyasn1
+
+DEPRECATED=	Use devel/py-twisted instead
+EXPIRATION_DATE=2017-09-30
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils

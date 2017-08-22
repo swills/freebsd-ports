@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/babeltrace/Makefile 438155 2017-04-10 12:06:56Z olivier $
+# $FreeBSD: head/devel/babeltrace/Makefile 448291 2017-08-19 09:03:22Z joneum $
 
 PORTNAME=	babeltrace
-PORTVERSION=	1.5.2
+PORTVERSION=	1.5.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

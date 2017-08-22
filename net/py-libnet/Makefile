@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/net/py-libnet/Makefile 441879 2017-05-27 21:43:26Z linimon $
+# $FreeBSD: head/net/py-libnet/Makefile 448299 2017-08-19 11:21:59Z koobs $
 
 PORTNAME=	libnet
 PORTVERSION=	1.1
@@ -20,7 +20,7 @@ BROKEN_aarch64=		fails to package: lib.freebsd-11.0-RELEASE-p1-aarch64-2.7/libne
 BROKEN_mips64=		fails to package: lib.freebsd-11.0-RELEASE-p1-mips64-2.7/libnet.so: No such file or directory
 BROKEN_powerpc64=	fails to package: lib.freebsd-11.0-RELEASE-p1-powerpc64-2.7/libnet.so: No such file or directory
 
-USES=		python
+USES=		python:-2.7
 USE_PYTHON=	distutils pythonprefix
 
 USE_GITHUB=	yes

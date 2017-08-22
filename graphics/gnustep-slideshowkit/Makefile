@@ -1,12 +1,12 @@
-# $FreeBSD: head/graphics/gnustep-slideshowkit/Makefile 397315 2015-09-19 10:33:34Z theraven $
+# $FreeBSD: head/graphics/gnustep-slideshowkit/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	slideshowkit
 PORTVERSION=	0.0.1
-PORTREVISION=	20050212
+PORTREVISION=	20050213
 CATEGORIES=	graphics gnustep
 MASTER_SITES=	http://download.gna.org/gsimageapps/
 PKGNAMEPREFIX=	gnustep-
-DISTNAME=	SlideShowKit-${PORTVERSION}
+DISTNAME=	SlideShowKit-20050212
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SlideShow Framework

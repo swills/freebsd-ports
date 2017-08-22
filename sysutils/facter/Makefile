@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/facter/Makefile 447826 2017-08-12 13:09:34Z romain $
+# $FreeBSD: head/sysutils/facter/Makefile 448483 2017-08-21 18:47:52Z romain $
 
 PORTNAME=	facter
-PORTVERSION=	3.7.1
+PORTVERSION=	3.8.0
 PORTREVISION?=	0
 CATEGORIES?=	sysutils
 MASTER_SITES=	http://downloads.puppetlabs.com/facter/
@@ -32,6 +32,11 @@ USE_LDCONFIG=	yes
 USE_RUBY=	yes
 USES+=		compiler:c++11-lib ssl
 CMAKE_ARGS+=	-DMAN_PATH=${MANPREFIX}/man
+
+post-patch:
+	${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|g' \
+		${WRKSRC}/lib/src/facts/posix/collection.cc \
+		${WRKSRC}/lib/src/util/config/posix/config.cc
 
 test: build
 	cd ${WRKSRC}/lib && bundle install --path vendor

@@ -1,9 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/x11/pantheon-terminal/Makefile 444573 2017-06-28 12:35:26Z amdmi3 $
+# $FreeBSD: head/x11/pantheon-terminal/Makefile 448465 2017-08-21 11:48:33Z amdmi3 $
 
 PORTNAME=	pantheon-terminal
-PORTVERSION=	0.4.2
-PORTREVISION=	1
+PORTVERSION=	0.4.3
 CATEGORIES=	x11
 
 MAINTAINER=	amdmi3@FreeBSD.org

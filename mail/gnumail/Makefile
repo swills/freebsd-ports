@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/mail/gnumail/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/gnumail/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	gnumail
 PORTVERSION=	1.2.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail gnustep
 MASTER_SITES=	http://download.gna.org/gnustep-nonfsf/
 DISTNAME=	GNUMail-${PORTVERSION}

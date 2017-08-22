@@ -1,5 +1,5 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/x11/nvidia-settings/Makefile 448102 2017-08-17 14:08:26Z swills $
+# $FreeBSD: head/x11/nvidia-settings/Makefile 448353 2017-08-19 23:29:58Z swills $
 
 PORTNAME=	nvidia-settings
 PORTVERSION=	384.59
@@ -10,6 +10,8 @@ MAINTAINER=	bland@FreeBSD.org
 COMMENT=	Display Control Panel for X NVidia driver
 
 LICENSE=	GPLv2
+
+BUILD_DEPENDS=	${LOCALBASE}/include/dbus-1.0/dbus/dbus.h:devel/dbus
 
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \

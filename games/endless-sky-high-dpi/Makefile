@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/endless-sky-high-dpi/Makefile 446741 2017-07-27 13:57:30Z mat $
+# $FreeBSD: head/games/endless-sky-high-dpi/Makefile 448469 2017-08-21 12:44:52Z amdmi3 $
 
 PORTNAME=	endless-sky-high-dpi
-PORTVERSION=	0.9.6
+PORTVERSION=	0.9.8
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 

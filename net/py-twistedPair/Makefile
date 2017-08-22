@@ -1,5 +1,5 @@
 # Created by: Neal Nelson <neal@nelson.name>
-# $FreeBSD: head/net/py-twistedPair/Makefile 389045 2015-06-10 16:45:29Z sunpoet $
+# $FreeBSD: head/net/py-twistedPair/Makefile 448403 2017-08-20 12:29:26Z sunpoet $
 
 PORTNAME=	twistedPair
 PORTVERSION=	15.2.1
@@ -13,6 +13,9 @@ MAINTAINER=	python@FreeBSD.org
 COMMENT=	Twisted Pair can do low level TCP work
 
 LICENSE=	MIT
+
+DEPRECATED=	Use devel/py-twisted instead
+EXPIRATION_DATE=2017-09-30
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils

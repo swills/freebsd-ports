@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 447922 2017-08-13 22:35:18Z ultima $
+# $FreeBSD: head/security/Makefile 448491 2017-08-21 20:43:57Z sunpoet $
 #
 
     COMMENT = Security tools
@@ -1043,6 +1043,7 @@
     SUBDIR += rubygem-encryptor
     SUBDIR += rubygem-ezcrypto
     SUBDIR += rubygem-googleauth
+    SUBDIR += rubygem-gpgme
     SUBDIR += rubygem-gpgr
     SUBDIR += rubygem-gssapi
     SUBDIR += rubygem-hkdf

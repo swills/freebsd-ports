@@ -1,5 +1,5 @@
 # Created by: Neal Nelson <neal@nelson.name>
-# $FreeBSD: head/net-im/py-twistedWords/Makefile 389046 2015-06-10 16:45:33Z sunpoet $
+# $FreeBSD: head/net-im/py-twistedWords/Makefile 448404 2017-08-20 12:29:30Z sunpoet $
 
 PORTNAME=	twistedWords
 PORTVERSION=	15.2.1
@@ -13,6 +13,9 @@ MAINTAINER=	python@FreeBSD.org
 COMMENT=	Twisted Words has more chat than you can handle
 
 LICENSE=	MIT
+
+DEPRECATED=	Use devel/py-twisted instead
+EXPIRATION_DATE=2017-09-30
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils

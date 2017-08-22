@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 448083 2017-08-17 09:45:13Z ed $
+# $FreeBSD: head/textproc/Makefile 448535 2017-08-22 14:48:14Z swills $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -377,6 +377,7 @@
     SUBDIR += kibana43
     SUBDIR += kibana44
     SUBDIR += kibana45
+    SUBDIR += kibana46
     SUBDIR += kibana5
     SUBDIR += kibana5-search-guard
     SUBDIR += kibana5-x-pack

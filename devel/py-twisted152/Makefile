@@ -1,5 +1,5 @@
 # Created by: Johann Visagie <wjv@FreeBSD.org>
-# $FreeBSD: head/devel/py-twisted152/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-twisted152/Makefile 448396 2017-08-20 12:27:31Z sunpoet $
 
 PORTNAME=	twisted
 PORTVERSION=	15.2.1
@@ -13,6 +13,9 @@ COMMENT=	Metaport of Twisted, an event-driven networking engine
 LICENSE=	MIT
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twistedCore>=${PORTVERSION}:devel/py-twistedCore
+
+DEPRECATED=	Use devel/py-twisted instead
+EXPIRATION_DATE=2017-09-30
 
 USES=		metaport python:2
 

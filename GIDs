@@ -1,4 +1,4 @@
-# $FreeBSD: head/GIDs 448077 2017-08-17 02:59:33Z pi $
+# $FreeBSD: head/GIDs 448474 2017-08-21 14:11:33Z krion $
 # Please keep this file sorted by GID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/group
@@ -712,7 +712,7 @@ bopm:*:717:
 # free: 768
 # free: 769
 postgres:*:770:
-# free: 771
+cockroach:*:771:
 # free: 772
 # free: 773
 # free: 774

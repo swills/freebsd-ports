@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-webpacker1-rails5/Makefile 447386 2017-08-05 03:25:17Z jrm $
+# $FreeBSD: head/devel/rubygem-webpacker1-rails5/Makefile 448248 2017-08-18 15:57:48Z sunpoet $
 
 PORTNAME=	webpacker
 PORTVERSION=	1.2
@@ -16,6 +16,9 @@ RUN_DEPENDS=	rubygem-activesupport5>0:devel/rubygem-activesupport5 \
 		rubygem-multi_json>=1.2:devel/rubygem-multi_json \
 		rubygem-railties5>0:www/rubygem-railties5 \
 		yarn>0:www/yarn
+
+DEPRECATED=	Use devel/rubygem-webpacker-rails5 instead
+EXPIRATION_DATE=2017-08-31
 
 PORTSCOUT=	limit:^1\.
 

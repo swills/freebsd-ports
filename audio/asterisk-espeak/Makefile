@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/asterisk-espeak/Makefile 430490 2017-01-03 18:12:13Z mat $
+# $FreeBSD: head/audio/asterisk-espeak/Makefile 448521 2017-08-22 13:01:11Z madpilot $
 
 PORTNAME=	asterisk-espeak
-PORTVERSION=	3.0
+PORTVERSION=	4.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	audio
 
@@ -13,12 +13,12 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libespeak.so:audio/espeak \
 		libsamplerate.so:audio/libsamplerate
 
+USES=		compiler gmake localbase
+INSTALL_TARGET=	install samples
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	zaf
 GH_PROJECT=	Asterisk-eSpeak
-
-USES=		compiler gmake localbase
-INSTALL_TARGET=	install samples
 
 OPTIONS_SINGLE=		ASTVER
 OPTIONS_SINGLE_ASTVER=	ASTERISK11 ASTERISK13

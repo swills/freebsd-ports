@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/libpru/Makefile 439720 2017-04-29 06:32:03Z linimon $
+# $FreeBSD: head/devel/libpru/Makefile 448365 2017-08-20 10:42:45Z rene $
 
 PORTNAME=	libpru
 PORTVERSION=	0.4
 CATEGORIES=	devel
 MASTER_SITES=	https://bitbucket.org/rpaulo/libpru/get/
 
-MAINTAINER=	rpaulo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Library to interface with PRUs
 
 LICENSE=	BSD2CLAUSE

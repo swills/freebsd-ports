@@ -1,5 +1,5 @@
 # Created by: Landon Fuller <landonf@opendarwin.org>
-# $FreeBSD: head/www/py-twistedWeb2/Makefile 389051 2015-06-10 16:45:53Z sunpoet $
+# $FreeBSD: head/www/py-twistedWeb2/Makefile 448408 2017-08-20 12:29:50Z sunpoet $
 
 PORTNAME=	twistedWeb2
 PORTVERSION=	8.1.0
@@ -13,6 +13,9 @@ MAINTAINER=	python@FreeBSD.org
 COMMENT=	Next generation Web Server Framework built with Twisted
 
 LICENSE=	MIT
+
+DEPRECATED=	Use devel/py-twisted instead
+EXPIRATION_DATE=2017-09-30
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils

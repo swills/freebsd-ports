@@ -1,5 +1,5 @@
 # Created by: hrs
-# $FreeBSD: head/cad/alliance/Makefile 439905 2017-05-01 19:24:00Z linimon $
+# $FreeBSD: head/cad/alliance/Makefile 448221 2017-08-18 12:21:43Z rakuco $
 
 PORTNAME=	alliance
 DISTVERSION=	5.0-20120515
@@ -32,6 +32,9 @@ ALLIANCE_TOP=	${PREFIX}/alliance
 CONFIGURE_ENV+=	ALLIANCE_TOP=${ALLIANCE_TOP}
 CONFIGURE_ARGS+=--mandir=${MANPREFIX}/man \
 		--prefix=${ALLIANCE_TOP}
+
+# The port does not build with C++11 or later (bug 219275).
+USE_CXXSTD=	gnu++03
 
 MAKE_JOBS_UNSAFE=	yes
 

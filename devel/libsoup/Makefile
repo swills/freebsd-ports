@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/devel/libsoup/Makefile 414014 2016-04-25 16:13:38Z mat $
+# $FreeBSD: head/devel/libsoup/Makefile 448358 2017-08-20 07:53:28Z kwm $
 
 PORTNAME=	libsoup
 PORTVERSION=	2.52.2
+PORTREVISION=	1
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

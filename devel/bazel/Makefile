@@ -1,5 +1,5 @@
 # Created by: Klaus Aehlig <aehlig@linta.de>
-# $FreeBSD: head/devel/bazel/Makefile 447714 2017-08-10 18:35:46Z ultima $
+# $FreeBSD: head/devel/bazel/Makefile 448218 2017-08-18 10:53:56Z mat $
 
 PORTNAME=		bazel
 PORTVERSION=		0.5.3
@@ -40,6 +40,8 @@ CLANG38_DESC=	Use clang38 as default crosstool
 CLANG38_BUILD_DEPENDS=	clang38:devel/llvm38
 CLANG38_RUN_DEPENDS=	clang38:devel/llvm38
 
+STRIP=	# The bazel binary is also a zip archive (extracted by the elf part), it must not be stripped
+
 .include <bsd.port.pre.mk>
 
 .if ${ARCH} == "i386"
@@ -73,8 +75,7 @@ do-build:
 	${LOCALBASE}/bin/bash ./compile.sh)
 
 do-install:
-	# The bazel binary is also a zip archive (extracted by the elf part), hence cannot be stripped
-	${CP} ${WRKSRC}/output/bazel ${STAGEDIR}${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/output/bazel ${STAGEDIR}${PREFIX}/bin
 	@${MKDIR} ${STAGEDIR}${ETCDIR}
 	${INSTALL_DATA} ${WRKSRC}/scripts/packages/debian/bazel.bazelrc ${STAGEDIR}${ETCDIR}/bazel.bazelrc.sample
 

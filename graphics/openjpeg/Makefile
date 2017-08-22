@@ -1,10 +1,9 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/graphics/openjpeg/Makefile 425064 2016-11-01 17:52:00Z sunpoet $
+# $FreeBSD: head/graphics/openjpeg/Makefile 448363 2017-08-20 09:48:39Z sunpoet $
 
 PORTNAME=	openjpeg
-PORTVERSION=	2.1.2
+PORTVERSION=	2.2.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -21,7 +20,7 @@ LIB_DEPENDS=	liblcms2.so:graphics/lcms2 \
 USE_LDCONFIG=	yes
 USES=		cmake cpe pkgconfig
 
-PLIST_SUB=	VER=${PORTVERSION:R}
+PLIST_SUB=	PORTVERSION=${PORTVERSION} VER=${PORTVERSION:R}
 
 GH_ACCOUNT=	uclouvain
 USE_GITHUB=	yes

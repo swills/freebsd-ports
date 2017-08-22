@@ -1,8 +1,8 @@
 # Created by: lbartoletti <coder@tuxfamily.org>
-# $FreeBSD: head/archivers/minizip/Makefile 430642 2017-01-05 15:32:31Z riggs $
+# $FreeBSD: head/archivers/minizip/Makefile 448251 2017-08-18 15:58:03Z sunpoet $
 
 PORTNAME=	minizip
-PORTVERSION=	1.2.10
+PORTVERSION=	1.2.11
 CATEGORIES=	archivers
 MASTER_SITES=	SF/libpng/zlib/${PORTVERSION}
 DISTNAME=	zlib-${PORTVERSION}

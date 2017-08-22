@@ -1,10 +1,10 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/powder-toy/Makefile 446731 2017-07-27 09:58:57Z amdmi3 $
+# $FreeBSD: head/games/powder-toy/Makefile 448366 2017-08-20 10:46:41Z amdmi3 $
 
 PORTNAME=	powder-toy
-PORTVERSION=	92.0
+PORTVERSION=	92.1
 DISTVERSIONPREFIX=	v
-DISTVERSIONSUFFIX=	.331 # build number, not part of official version
+DISTVERSIONSUFFIX=	.332 # build number, not part of official version
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org

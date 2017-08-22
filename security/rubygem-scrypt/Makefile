@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/rubygem-scrypt/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/security/rubygem-scrypt/Makefile 448390 2017-08-20 12:27:02Z sunpoet $
 
 PORTNAME=	scrypt
 PORTVERSION=	3.0.5
@@ -12,10 +12,10 @@ COMMENT=	Scrypt key derivation function
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	rubygem-ffi-compiler>=1.0:devel/rubygem-ffi-compiler
-
 ONLY_FOR_ARCHS=		amd64 i386
 ONLY_FOR_ARCHS_REASON=	invokes SSE compiler flags
+
+RUN_DEPENDS=	rubygem-ffi-compiler>=1.0:devel/rubygem-ffi-compiler
 
 NO_ARCH=	yes
 USE_RUBY=	yes

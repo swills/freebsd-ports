@@ -1,9 +1,9 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/sysutils/flashrom/Makefile 434487 2017-02-20 20:24:12Z tobik $
+# $FreeBSD: head/sysutils/flashrom/Makefile 448307 2017-08-19 13:05:17Z bsam $
 
 PORTNAME=	flashrom
 PORTVERSION=	0.9.9
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://download.flashrom.org/releases/
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 448066 2017-08-16 21:41:39Z antoine $
+# $FreeBSD: head/databases/Makefile 448488 2017-08-21 20:22:25Z swills $
 #
 
     COMMENT = Databases and related software
@@ -33,6 +33,7 @@
     SUBDIR += cego
     SUBDIR += cegobridge
     SUBDIR += clickhouse
+    SUBDIR += cockroach
     SUBDIR += couchdb
     SUBDIR += courier-authlib-mysql
     SUBDIR += courier-authlib-pgsql
@@ -1000,7 +1001,6 @@
     SUBDIR += sqlite2
     SUBDIR += sqlite3
     SUBDIR += sqlitebrowser
-    SUBDIR += sqlitebrowser-qt5
     SUBDIR += sqliteconvert
     SUBDIR += sqliteman
     SUBDIR += sqlitemanager

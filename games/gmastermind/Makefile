@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/gmastermind/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/games/gmastermind/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	gmastermind
 PORTVERSION=	0.6
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	GMastermind-${PORTVERSION}

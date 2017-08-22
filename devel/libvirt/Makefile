@@ -1,5 +1,5 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/devel/libvirt/Makefile 448098 2017-08-17 13:24:45Z novel $
+# $FreeBSD: head/devel/libvirt/Makefile 448357 2017-08-20 05:05:05Z novel $
 
 PORTNAME=	libvirt
 PORTVERSION=	3.6.0
@@ -58,7 +58,7 @@ NSS_CONFIGURE_WITH=	nss-plugin
 READLINE_CONFIGURE_WITH=	readline
 READLINE_USES=		readline
 
-SASL_CONFIGURE_WITH=	sasl
+SASL_CONFIGURE_WITH=	sasl=${LOCALBASE}
 SASL_LIB_DEPENDS=	libsasl2.so:security/cyrus-sasl2
 
 XEN_CONFIGURE_WITH=	libxl

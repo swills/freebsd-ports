@@ -1,8 +1,8 @@
 # Created by: David O'Brien <obrien@cs.ucdavis.edu>
-# $FreeBSD: head/editors/vim/Makefile 447839 2017-08-12 15:46:16Z adamw $
+# $FreeBSD: head/editors/vim/Makefile 448308 2017-08-19 13:39:25Z adamw $
 
 PORTNAME=	vim
-PORTVERSION=	8.0.0917
+PORTVERSION=	8.0.0962
 DISTVERSIONPREFIX=	v
 CATEGORIES=	editors
 

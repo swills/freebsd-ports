@@ -1,8 +1,8 @@
-# $FreeBSD: head/news/lusernet/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/news/lusernet/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	lusernet
 PORTVERSION=	0.4.2
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	news gnustep
 MASTER_SITES=	LOCAL/dinoex
 DISTNAME=	LuserNET-${PORTVERSION}

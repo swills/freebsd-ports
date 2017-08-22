@@ -1,8 +1,8 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/dns/p5-Net-DNS/Makefile 444388 2017-06-26 19:36:03Z sunpoet $
+# $FreeBSD: head/dns/p5-Net-DNS/Makefile 448331 2017-08-19 16:05:28Z sunpoet $
 
 PORTNAME=	Net-DNS
-PORTVERSION=	1.11
+PORTVERSION=	1.12
 PORTEPOCH=	1
 CATEGORIES=	dns net perl5 ipv6
 MASTER_SITES=	CPAN
@@ -36,4 +36,11 @@ SSHFP_RUN_DEPENDS=	p5-Digest-BubbleBabble>=0.01:security/p5-Digest-BubbleBabble
 TSIG_BUILD_DEPENDS=	p5-Digest-HMAC>=1.03:security/p5-Digest-HMAC
 TSIG_RUN_DEPENDS=	p5-Digest-HMAC>=1.03:security/p5-Digest-HMAC
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${PORT_OPTIONS:MIPV6} && ${PERL_LEVEL} < 502504
+BUILD_DEPENDS+=	p5-IO-Socket-IP>=0.38:net/p5-IO-Socket-IP
+RUN_DEPENDS+=	p5-IO-Socket-IP>=0.38:net/p5-IO-Socket-IP
+.endif
+
+.include <bsd.port.post.mk>

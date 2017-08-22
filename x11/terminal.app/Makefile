@@ -1,14 +1,13 @@
 # Created by: gurkan@phys.ethz.ch
-# $FreeBSD: head/x11/terminal.app/Makefile 397315 2015-09-19 10:33:34Z theraven $
+# $FreeBSD: head/x11/terminal.app/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	terminal.app
-PORTVERSION=	0.9.8
-PORTREVISION=	3
+PORTVERSION=	0.9.9
 CATEGORIES=	x11 gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	Terminal-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	theraven@FreeBSD.org
 COMMENT=	Terminal Emulator for GNUstep
 
 LICENSE=	GPLv2 # only

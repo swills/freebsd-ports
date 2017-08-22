@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/localize/Makefile 397315 2015-09-19 10:33:34Z theraven $
+# $FreeBSD: head/textproc/localize/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	localize
 PORTVERSION=	0.0.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	textproc gnustep
 MASTER_SITES=	http://www.eskimo.com/~pburns/Localize/files/
 DISTNAME=	Localize-20040424

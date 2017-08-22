@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/toolboxkit/Makefile 397315 2015-09-19 10:33:34Z theraven $
+# $FreeBSD: head/deskutils/toolboxkit/Makefile 448472 2017-08-21 13:26:28Z theraven $
 
 PORTNAME=	toolbox
 PORTVERSION=	0.8
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	deskutils gnustep
 MASTER_SITES=	http://ftp.azc.uam.mx/mirrors/gnu/savannah/files/toolbox/Release.pkg/0.8/ \
 		LOCAL/dinoex

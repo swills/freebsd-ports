@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/phantomjs/Makefile 441821 2017-05-27 00:25:52Z linimon $
+# $FreeBSD: head/lang/phantomjs/Makefile 448471 2017-08-21 13:14:02Z mat $
 
 PORTNAME=	phantomjs
 PORTVERSION=	2.1.1
@@ -32,7 +32,6 @@ GH_TUPLE=	Vitallium:phantomjs-3rdparty-win:19051aa:msvc2013/src/qt/3rdparty \
 		Vitallium:qtbase:b5cc008:qtbase/src/qt/qtbase \
 		Vitallium:qtwebkit:e7b7433:qtwebkit/src/qt/qtwebkit
 RUBY_NO_RUN_DEPENDS=	yes
-WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 PLIST_FILES=	bin/phantomjs
 NO_CCACHE=	yes
 

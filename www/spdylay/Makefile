@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/spdylay/Makefile 439886 2017-05-01 12:47:05Z sunpoet $
+# $FreeBSD: head/www/spdylay/Makefile 448394 2017-08-20 12:27:21Z sunpoet $
 
 PORTNAME=	spdylay
 PORTVERSION=	1.4.0
@@ -14,12 +14,12 @@ COMMENT=	SPDY protocol version 2, 3 and 3.1 implementation in C
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	libevent>=2.0.8:devel/libevent
-LIB_DEPENDS=	libevent_openssl.so:devel/libevent
-
 BROKEN_SSL=	openssl-devel
 BROKEN_powerpc64=	does not link: undefined reference to 'std::ctype<char>::_M_widen_init()'
 BROKEN_sparc64=	does not build: fails to link
+
+BUILD_DEPENDS=	libevent>=2.0.8:devel/libevent
+LIB_DEPENDS=	libevent_openssl.so:devel/libevent
 
 CONFIGURE_ARGS=	--enable-examples \
 		--enable-src
