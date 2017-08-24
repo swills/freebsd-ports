@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 448662 2017-08-24 09:40:36Z tz $
+# $FreeBSD: head/devel/Makefile 448666 2017-08-24 13:05:43Z tz $
 #
 
     COMMENT = Development utilities
@@ -5597,6 +5597,7 @@
     SUBDIR += rubygem-peek-gc
     SUBDIR += rubygem-peek-host
     SUBDIR += rubygem-peek-performance_bar
+    SUBDIR += rubygem-peek-rails4
     SUBDIR += rubygem-peek-rblineprof
     SUBDIR += rubygem-peek-redis
     SUBDIR += rubygem-peek-sidekiq
