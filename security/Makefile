@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 448491 2017-08-21 20:43:57Z sunpoet $
+# $FreeBSD: head/security/Makefile 448603 2017-08-23 11:33:26Z rene $
 #
 
     COMMENT = Security tools
@@ -38,7 +38,6 @@
     SUBDIR += base
     SUBDIR += bcrypt
     SUBDIR += bcwipe
-    SUBDIR += bdc
     SUBDIR += bdes
     SUBDIR += bearssl
     SUBDIR += beecrypt

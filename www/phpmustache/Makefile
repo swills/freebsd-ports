@@ -1,8 +1,8 @@
 # Created by: Steve Polyack <spolyack@collaborativefusion.com>
-# $FreeBSD: head/www/phpmustache/Makefile 420299 2016-08-16 19:32:57Z pawel $
+# $FreeBSD: head/www/phpmustache/Makefile 448650 2017-08-24 05:28:27Z vanilla $
 
 PORTNAME=	phpmustache
-PORTVERSION=	2.11.1
+PORTVERSION=	2.12.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 

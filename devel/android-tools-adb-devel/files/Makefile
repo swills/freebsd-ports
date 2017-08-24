@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/android-tools-adb-devel/files/Makefile 444004 2017-06-20 21:50:30Z jbeich $
+# $FreeBSD: head/devel/android-tools-adb-devel/files/Makefile 448543 2017-08-22 16:09:28Z jbeich $
 
 PROG_CXX=adb
 NO_MAN=
@@ -109,6 +109,7 @@ CPPFLAGS+= -DHAVE_TERMIO_H
 CPPFLAGS+= -DHAVE_SYS_SOCKET_H
 CPPFLAGS+= -D_FILE_OFFSET_BITS=64
 CPPFLAGS+= -DFAKE_LOG_DEVICE=1
+CPPFLAGS+= -Doff64_t=off_t
 CPPFLAGS+= -I${.CURDIR}
 CPPFLAGS+= -I${.CURDIR}/../include
 CPPFLAGS+= -I${.CURDIR}/../base/include

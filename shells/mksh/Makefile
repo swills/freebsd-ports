@@ -1,8 +1,9 @@
 # Created by: Andreas Kohn <andreas@syndrom23.de>
-# $FreeBSD: head/shells/mksh/Makefile 448156 2017-08-17 17:13:54Z swills $
+# $FreeBSD: head/shells/mksh/Makefile 448574 2017-08-22 17:42:39Z amdmi3 $
 
 PORTNAME=	mksh
 PORTVERSION=	56
+PORTREVISION=	1
 DISTVERSIONPREFIX=	R
 CATEGORIES=	shells
 MASTER_SITES=	http://www.mirbsd.org/MirOS/dist/mir/mksh/ \
@@ -16,7 +17,7 @@ LICENSE_COMB=	multi
 LICENSE_GROUPS_ML=	OSI
 LICENSE_NAME_ML=	MirOS
 LICENSE_TEXT_ML=	Please, read its contents from http://www.mirbsd.org/TaC-mksh.txt
-LICENSE_PERMS_ML=	${_LICENSE_LIST_PERMS}
+LICENSE_PERMS_ML=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 USES=		tar:tgz
 WRKSRC=		${WRKDIR}/${PORTNAME}

@@ -1,14 +1,15 @@
 # Created by: Pav Lucistnik <pav@FreeBSD.org>
-# $FreeBSD: head/net/boinc_curses/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/boinc_curses/Makefile 448591 2017-08-23 06:30:12Z vanilla $
 
 PORTNAME=	boinc_curses
-PORTVERSION=	0.2.2
-PORTREVISION=	1
+PORTVERSION=	0.2.3
 CATEGORIES=	net
-MASTER_SITES=	LOCAL/rene http://www.oook.cz/bsd/boinc_curses/
+MASTER_SITES=	http://www.oook.cz/bsd/boinc_curses/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Console, ncurses based monitor and manager for BOINC
+
+LICENSE=	LGPL21+
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libboinc.a:net/boinc-client
 

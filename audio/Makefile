@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 448455 2017-08-21 07:05:51Z ultima $
+# $FreeBSD: head/audio/Makefile 448603 2017-08-23 11:33:26Z rene $
 #
 
     COMMENT = Audio tools
@@ -460,7 +460,6 @@
     SUBDIR += linux-genpuid
     SUBDIR += linux-laudio
     SUBDIR += linux-mbrola
-    SUBDIR += linux-neroaaccodec
     SUBDIR += linux-skype_oss_wrapper
     SUBDIR += linuxsampler
     SUBDIR += listener

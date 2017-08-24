@@ -1,9 +1,8 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Unicode-CaseFold/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/textproc/p5-Unicode-CaseFold/Makefile 448623 2017-08-23 14:30:02Z culot $
 
 PORTNAME=	Unicode-CaseFold
-PORTVERSION=	1.00
-PORTREVISION=	1
+PORTVERSION=	1.01
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:ARODLAND

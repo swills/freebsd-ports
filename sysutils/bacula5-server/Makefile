@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/sysutils/bacula5-server/Makefile 442020 2017-05-29 15:28:32Z sunpoet $
+# $FreeBSD: head/sysutils/bacula5-server/Makefile 448584 2017-08-22 21:59:48Z dvl $
 
 PORTNAME=	bacula
 DISTVERSION=	5.2.12
@@ -11,6 +11,9 @@ PKGNAMESUFFIX?=	5-server
 
 MAINTAINER=	dan@langille.org
 COMMENT?=	Network backup solution (server)
+
+DEPRECATED=	No upstream commits since 2013. Use sysutils/bacula-server
+EXPIRATION_DATE=	2017-10-04
 
 USES+=		libtool:keepla shebangfix
 SHEBANG_FILES=	scripts/dvd-handler.in

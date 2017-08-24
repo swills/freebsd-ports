@@ -1,5 +1,5 @@
 # Created by: Bruce Simpson
-# $FreeBSD: head/net/py-txamqp/Makefile 448498 2017-08-21 20:44:32Z sunpoet $
+# $FreeBSD: head/net/py-txamqp/Makefile 448560 2017-08-22 16:41:09Z sunpoet $
 
 PORTNAME=	txamqp
 PORTVERSION=	0.3
@@ -10,24 +10,18 @@ MASTER_SITES=	http://launchpadlibrarian.net/30388120/ \
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	python-${PORTNAME}_${PORTVERSION}.orig
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	python@FreeBSD.org
 COMMENT=	Twisted Python library for the AMQP messaging protocol
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}thrift>0:devel/py-thrift \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}thrift>=0:devel/py-thrift \
 		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
 
 NO_ARCH=	yes
 USES=		python:2
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	autoplist distutils
 
 WRKSRC=		${WRKDIR}/python-${PORTNAME}-${PORTVERSION}
 
-PLIST_SUB=		PORTNAME="${PORTNAME}"
-
 # TODO: Install txAMQP examples.
-
-# Don't try to install Twisted yourself, txAMQP. thx!
-post-patch:
-	@${REINPLACE_CMD} -e '/install_requires/s/^/#/' ${WRKSRC}/setup.py
 
 .include <bsd.port.mk>

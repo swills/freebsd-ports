@@ -1,9 +1,9 @@
 # Created by: Igor Pokrovsky <tiamat@comset.net>
-# $FreeBSD: head/print/gl2ps/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/print/gl2ps/Makefile 448652 2017-08-24 09:01:11Z araujo $
 
 PORTNAME=	gl2ps
 PORTVERSION=	1.3.9
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	print graphics
 MASTER_SITES=	http://www.geuz.org/gl2ps/src/
 EXTRACT_SUFX=	.tgz

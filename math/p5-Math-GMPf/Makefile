@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-GMPf/Makefile 429119 2016-12-21 20:46:35Z sunpoet $
+# $FreeBSD: head/math/p5-Math-GMPf/Makefile 448622 2017-08-23 14:26:45Z sunpoet $
 
 PORTNAME=	Math-GMPf
-PORTVERSION=	0.42
+PORTVERSION=	0.43
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

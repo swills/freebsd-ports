@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/opensurge/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/games/opensurge/Makefile 448602 2017-08-23 11:32:37Z rene $
 
 PORTNAME=	opensurge
 PORTVERSION=	0.1.r${SVN_REV}
@@ -12,6 +12,9 @@ DISTFILES=	${PORTNAME}-src-build${SVN_REV}${EXTRACT_SUFX} \
 
 MAINTAINER=	nemysis@FreeBSD.org
 COMMENT=	Game based on the Sonic the Hedgehog universe
+
+DEPRECATED=	Depends on expired and unfetchable x11-fonts/alfont
+EXPIRATION_DATE=2017-11-01
 
 LICENSE=	GPLv2+ CC-BY-SA-3.0
 LICENSE_COMB=	multi

@@ -1,10 +1,11 @@
 # Created by: Masaki TAGAWA <masaki@club.kyutech.ac.jp>
-# $FreeBSD: head/x11-fonts/sourcecodepro-ttf/Makefile 427149 2016-11-26 10:34:23Z sunpoet $
+# $FreeBSD: head/x11-fonts/sourcecodepro-ttf/Makefile 448548 2017-08-22 16:40:08Z sunpoet $
 
-PORTNAME=	sourcecodepro-ttf
+PORTNAME=	sourcecodepro
 PORTVERSION=	2.030
 DISTVERSIONSUFFIX=	R-ro/1.050R-it
 CATEGORIES=	x11-fonts
+PKGNAMESUFFIX=	-ttf
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Set of fonts by Adobe designed for coders

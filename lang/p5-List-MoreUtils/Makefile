@@ -1,8 +1,8 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/lang/p5-List-MoreUtils/Makefile 437891 2017-04-06 21:56:47Z sunpoet $
+# $FreeBSD: head/lang/p5-List-MoreUtils/Makefile 448614 2017-08-23 14:02:38Z sunpoet $
 
 PORTNAME=	List-MoreUtils
-PORTVERSION=	0.419
+PORTVERSION=	0.423
 CATEGORIES=	lang perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,7 +13,8 @@ COMMENT=	Provide the stuff missing in List::Util
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Exporter-Tiny>=0.038:devel/p5-Exporter-Tiny
+BUILD_DEPENDS=	p5-Exporter-Tiny>=0.038:devel/p5-Exporter-Tiny \
+		p5-List-MoreUtils-XS>=${PORTVERSION}:lang/p5-List-MoreUtils-XS
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes

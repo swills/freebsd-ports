@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 444851 2017-07-01 21:58:04Z rene $
+# $FreeBSD: head/misc/Makefile 448603 2017-08-23 11:33:26Z rene $
 #
 
     COMMENT = Miscellaneous utilities
@@ -95,9 +95,7 @@
     SUBDIR += floatator
     SUBDIR += fortune-mod-bible
     SUBDIR += fortune-mod-bofh
-    SUBDIR += fortune-mod-culmea-culmilor
     SUBDIR += fortune-mod-epictetus
-    SUBDIR += fortune-mod-ferengi_rules_of_acquisition
     SUBDIR += fortune-mod-futurama
     SUBDIR += fortune-mod-psalms
     SUBDIR += fortuneit
@@ -241,6 +239,7 @@
     SUBDIR += ktouch
     SUBDIR += kwordquiz
     SUBDIR += latex-mk
+    SUBDIR += lazyread
     SUBDIR += lc
     SUBDIR += lesspipe
     SUBDIR += libeatmydata
@@ -256,7 +255,6 @@
     SUBDIR += localedata
     SUBDIR += logsurfer
     SUBDIR += loop
-    SUBDIR += lr
     SUBDIR += lv
     SUBDIR += lxde-common
     SUBDIR += magicpoint
@@ -511,7 +509,6 @@
     SUBDIR += xtail
     SUBDIR += xtar
     SUBDIR += xtypo
-    SUBDIR += xyzcmd
     SUBDIR += yaunc
     SUBDIR += ytree
     SUBDIR += zoneinfo

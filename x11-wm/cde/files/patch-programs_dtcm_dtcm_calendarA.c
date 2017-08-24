@@ -1,5 +1,3 @@
-$FreeBSD: head/x11-wm/cde/files/patch-programs_dtcm_dtcm_calendarA.c 442032 2017-05-29 20:05:21Z crees $
-
 We don't use inetd-- that involves messing with inetd.conf.  May as well
 just launch as a daemon, which also deals with rpcbind dependency.
 

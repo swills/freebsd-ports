@@ -1,8 +1,8 @@
 # Created by: Eugene Grosbein <ports@grosbein.net>
-# $FreeBSD: head/java/bouncycastle15/Makefile 445468 2017-07-11 05:38:31Z eugen $
+# $FreeBSD: head/java/bouncycastle15/Makefile 448566 2017-08-22 16:51:42Z eugen $
 
 PORTNAME=	bouncycastle
-PORTVERSION=	1.57
+PORTVERSION=	1.58
 CATEGORIES=	java security
 MASTER_SITES=	http://www.bouncycastle.org/download/ \
 		http://polydistortion.net/bc/download/

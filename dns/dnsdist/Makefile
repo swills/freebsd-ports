@@ -1,9 +1,8 @@
 # Created by: Carlos J Puga Medina <cpm@fbsd.es>
-# $FreeBSD: head/dns/dnsdist/Makefile 448041 2017-08-16 15:44:48Z sunpoet $
+# $FreeBSD: head/dns/dnsdist/Makefile 448580 2017-08-22 20:38:35Z cpm $
 
 PORTNAME=	dnsdist
-DISTVERSION=	1.1.0
-PORTREVISION=	7
+DISTVERSION=	1.2.0
 CATEGORIES=	dns net
 MASTER_SITES=	https://downloads.powerdns.com/releases/ \
 		LOCAL/cpm
@@ -40,9 +39,9 @@ USE_RC_SUBR=	dnsdist
 
 # Fix dnsdist binaries when building on FreeBSD 10.3
 .if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100000
-BUILD_DEPENDS+=	clang39:devel/llvm39
-CC=		clang39
-CXX=		clang++39
+BUILD_DEPENDS+=	clang40:devel/llvm40
+CC=		clang40
+CXX=		clang++40
 .endif
 
 post-install:

@@ -1,8 +1,9 @@
 # Created by: jamrich.majo@gmail.com
-# $FreeBSD: head/net-mgmt/nagios-check_cpu_usage/Makefile 404857 2015-12-30 14:07:42Z ak $
+# $FreeBSD: head/net-mgmt/nagios-check_cpu_usage/Makefile 448562 2017-08-22 16:41:17Z swills $
 
 PORTNAME=	nagios-check_cpu_usage
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 MASTER_SITES=	# none
 DISTFILES=	# none

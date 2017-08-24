@@ -1,9 +1,8 @@
 # Created by: Alex Deiter <tiamat@komi.mts.ru>
-# $FreeBSD: head/sysutils/p5-Filesys-DiskUsage/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/p5-Filesys-DiskUsage/Makefile 448597 2017-08-23 11:03:06Z culot $
 
 PORTNAME=	Filesys-DiskUsage
-PORTVERSION=	0.08
-PORTREVISION=	1
+PORTVERSION=	0.10
 CATEGORIES=	sysutils perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -16,6 +15,7 @@ LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Warn>0:devel/p5-Test-Warn
 
+NO_ARCH=	YES
 USES=		perl5
 USE_PERL5=	configure
 

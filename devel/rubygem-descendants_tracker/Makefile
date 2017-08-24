@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-descendants_tracker/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-descendants_tracker/Makefile 448563 2017-08-22 16:41:19Z sunpoet $
 
 PORTNAME=	descendants_tracker
 PORTVERSION=	0.0.4
@@ -9,11 +9,11 @@ MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Module that adds descendant tracking to a class
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-thread_safe>=0.3.1:devel/rubygem-thread_safe
 
 NO_ARCH=	yes
-
 USE_RUBY=	yes
 USES=		gem
 

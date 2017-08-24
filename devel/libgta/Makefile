@@ -1,22 +1,22 @@
 # Created by: lbartoletti <coder@tuxfamily.org>
-# $FreeBSD: head/devel/libgta/Makefile 443096 2017-06-10 14:54:34Z dbaio $
+# $FreeBSD: head/devel/libgta/Makefile 448589 2017-08-23 01:25:18Z dbaio $
 
 PORTNAME=	libgta
-PORTVERSION=	1.0.5
+PORTVERSION=	1.0.8
 CATEGORIES=	devel
 MASTER_SITES=	SAVANNAH/gta
 
 MAINTAINER=	lbartoletti@tuxfamily.org
 COMMENT=	Portable library that implements the GTA file format
 
+LICENSE=	LGPL21+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 OPTIONS_DEFINE=	DOCS
 
 GNU_CONFIGURE=	yes
 USES=		pathfix gmake tar:xz
 USE_LDCONFIG=	yes
-
-regression-test test: build
-	cd ${WRKSR}/ && ${SETENV} ${MAKE_ENV} ${MAKE} check
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libgta.so

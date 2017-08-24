@@ -1,10 +1,11 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/sourceserifpro-ttf/Makefile 435763 2017-03-09 16:12:20Z sunpoet $
+# $FreeBSD: head/x11-fonts/sourceserifpro-ttf/Makefile 448549 2017-08-22 16:40:12Z sunpoet $
 
-PORTNAME=	sourceserifpro-ttf
+PORTNAME=	sourceserifpro
 PORTVERSION=	2.000
 DISTVERSIONSUFFIX=	R
 CATEGORIES=	x11-fonts
+PKGNAMESUFFIX=	-ttf
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Set of fonts by Adobe designed for UI

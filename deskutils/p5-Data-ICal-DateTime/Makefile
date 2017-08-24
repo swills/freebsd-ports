@@ -1,8 +1,8 @@
 # Created by: Matthew Seaman <matthew@FreeBSD.org>
-# $FreeBSD: head/deskutils/p5-Data-ICal-DateTime/Makefile 429278 2016-12-23 17:35:50Z matthew $
+# $FreeBSD: head/deskutils/p5-Data-ICal-DateTime/Makefile 448577 2017-08-22 20:00:22Z matthew $
 
 PORTNAME=	Data-ICal-DateTime
-PORTVERSION=	0.81
+PORTVERSION=	0.82
 CATEGORIES=	deskutils perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

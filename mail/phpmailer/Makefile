@@ -1,8 +1,8 @@
 # Created by: Zhen REN <bg1tpt@gmail.com>
-# $FreeBSD: head/mail/phpmailer/Makefile 438131 2017-04-10 08:14:00Z tz $
+# $FreeBSD: head/mail/phpmailer/Makefile 448607 2017-08-23 12:50:31Z tz $
 
 PORTNAME=	phpmailer
-PORTVERSION=	5.2.23
+PORTVERSION=	5.2.24
 DISTVERSIONPREFIX=	v
 CATEGORIES=	mail
 

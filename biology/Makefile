@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 440232 2017-05-06 06:07:03Z miwi $
+# $FreeBSD: head/biology/Makefile 448603 2017-08-23 11:33:26Z rene $
 #
 
     COMMENT = Biology
@@ -10,7 +10,6 @@
     SUBDIR += bcftools
     SUBDIR += bedtools
     SUBDIR += biococoa
-    SUBDIR += biojava
     SUBDIR += blat
     SUBDIR += bowtie
     SUBDIR += bowtie2

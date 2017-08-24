@@ -1,4 +1,4 @@
-# $FreeBSD: head/russian/Makefile 443772 2017-06-17 13:44:51Z rakuco $
+# $FreeBSD: head/russian/Makefile 448603 2017-08-23 11:33:26Z rene $
 #
 
     COMMENT = Russian support
@@ -9,7 +9,6 @@
     SUBDIR += d1489
     SUBDIR += emkatic
     SUBDIR += eric6
-    SUBDIR += fortuneru
     SUBDIR += gd
     SUBDIR += gimp-help
     SUBDIR += hunspell

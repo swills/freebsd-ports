@@ -14,7 +14,7 @@
 # Maxim Sobolev
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: head/Tools/scripts/patchtool.py 340851 2014-01-23 19:55:14Z mat $
+# $FreeBSD: head/Tools/scripts/patchtool.py 448612 2017-08-23 13:59:41Z mat $
 #
 # MAINTAINER= sobomax@FreeBSD.org <- any unapproved commits to this file are
 #				     highly discouraged!!!
@@ -210,9 +210,6 @@ def gendiff(path, wrksrc, outfile = ''):
 		if (outfile != ''):
 			outbuf[0] = '--- %s\n' % path_orig
 			outbuf[1] = '+++ %s\n' % path
-			outbuf.insert(0, '\n')
-			outbuf.insert(0, '$%s$\n' % Vars.CVS_ID)
-			outbuf.insert(0, '\n')
 			open(outfile, 'w').writelines(outbuf)
 		else:
 			sys.stdout.writelines(outbuf)

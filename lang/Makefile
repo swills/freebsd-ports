@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 448459 2017-08-21 09:51:29Z rene $
+# $FreeBSD: head/lang/Makefile 448603 2017-08-23 11:33:26Z rene $
 #
 
     COMMENT = Programming languages
@@ -20,7 +20,6 @@
     SUBDIR += basic256
     SUBDIR += beignet
     SUBDIR += bf2c
-    SUBDIR += bigloo
     SUBDIR += bsh
     SUBDIR += bwbasic
     SUBDIR += c

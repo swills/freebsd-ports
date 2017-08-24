@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.port.mk 447515 2017-08-07 19:09:41Z lifanov $
+# $FreeBSD: head/Mk/bsd.port.mk 448576 2017-08-22 18:55:00Z emaste $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1735,6 +1735,20 @@ PKG_DEPENDS+=	${LOCALBASE}/sbin/pkg:${PKG_ORIGIN}
 
 .if defined(USE_GCC)
 .include "${PORTSDIR}/Mk/bsd.gcc.mk"
+.endif
+
+_TEST_LD=/usr/bin/ld
+.if defined(LLD_UNSAFE) && ${_TEST_LD:tA} == "/usr/bin/ld.lld"
+LDFLAGS+=	-fuse-ld=bfd
+.  if !defined(USE_BINUTILS)
+.    if exists(/usr/bin/ld.bfd)
+LD=	/usr/bin/ld.bfd
+CONFIGURE_ENV+=	LD=${LD}
+MAKE_ENV+=	LD=${LD}
+.    else
+USE_BINUTILS=	yes
+.    endif
+.  endif
 .endif
 
 .if defined(USE_BINUTILS) && !defined(DISABLE_BINUTILS)

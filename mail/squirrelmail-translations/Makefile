@@ -1,14 +1,15 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/mail/squirrelmail-translations/Makefile 431043 2017-01-10 00:09:38Z adamw $
+# $FreeBSD: head/mail/squirrelmail-translations/Makefile 448571 2017-08-22 17:26:08Z swills $
 
 PORTNAME=	squirrelmail-translations
-PORTVERSION=	20161030
+PORTVERSION=	20170705
 CATEGORIES=	mail www
-MASTER_SITES=	LOCAL/adamw/squirrelmail
+MASTER_SITES=	http://snapshots.squirrelmail.org/ \
+	http://freebsd.uzsolt.hu/src/
 DISTNAME=	squirrelmail-${PORTVERSION}_0200-SVN.locales
 DIST_SUBDIR=	squirrelmail
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	uzsolt@uzsolt.hu
 COMMENT=	NLS translations for Squirrelmail (mail/squirrelmail)
 
 LICENSE=	GPLv2

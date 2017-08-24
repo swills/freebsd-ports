@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/Makefile 446316 2017-07-21 13:37:51Z nivit $
+# $FreeBSD: head/x11-themes/Makefile 448603 2017-08-23 11:33:26Z rene $
 #
 
     COMMENT = X11 themes
@@ -100,18 +100,15 @@
     SUBDIR += irssi-themes
     SUBDIR += kde-gtk-config
     SUBDIR += kde-icons-black-and-white
-    SUBDIR += kde-icons-dark-glass
     SUBDIR += kde-icons-gartoon-blue-svg
     SUBDIR += kde-icons-gartoon-svg
     SUBDIR += kde-icons-graphite-rade8
-    SUBDIR += kde-icons-icosx
     SUBDIR += kde-icons-kool-gorilla
     SUBDIR += kde-icons-lime-rade8
     SUBDIR += kde-icons-lush
     SUBDIR += kde-icons-noia
     SUBDIR += kde-icons-nuovext2
     SUBDIR += kde-icons-nuvola
-    SUBDIR += kde-icons-umicons
     SUBDIR += kde4-base-artwork
     SUBDIR += kde4-style-bespin
     SUBDIR += kde4-style-nitrogen

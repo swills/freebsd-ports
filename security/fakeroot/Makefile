@@ -1,9 +1,8 @@
 # Created by: Meno Abels <meno.abels@adviser.com>
-# $FreeBSD: head/security/fakeroot/Makefile 417344 2016-06-23 06:36:18Z bapt $
+# $FreeBSD: head/security/fakeroot/Makefile 448601 2017-08-23 11:32:28Z martymac $
 
 PORTNAME=	fakeroot
-PORTVERSION=	1.20.2
-PORTREVISION=	1
+PORTVERSION=	1.22
 CATEGORIES=	security
 MASTER_SITES=	DEBIAN
 DISTNAME=	${PORTNAME}_${PORTVERSION}.orig

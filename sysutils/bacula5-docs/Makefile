@@ -1,5 +1,5 @@
 # Created by: Dan Langille <dan@langille.org>
-# $FreeBSD: head/sysutils/bacula5-docs/Makefile 424556 2016-10-24 09:57:36Z mat $
+# $FreeBSD: head/sysutils/bacula5-docs/Makefile 448584 2017-08-22 21:59:48Z dvl $
 
 PORTNAME=	bacula
 PORTVERSION=	5.2.12
@@ -12,6 +12,9 @@ CONFLICTS=	bacula-*
 
 MAINTAINER=	dan@langille.org
 COMMENT=	Bacula document set
+
+DEPRECATED=	No upstream commits since 2013. Use sysutils/bacula-docs
+EXPIRATION_DATE=	2017-10-04
 
 USES=		tar:bz2
 NO_BUILD=	yes

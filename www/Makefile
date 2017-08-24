@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 448374 2017-08-20 11:49:06Z rene $
+# $FreeBSD: head/www/Makefile 448644 2017-08-24 01:39:16Z jkim $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -450,6 +450,7 @@
     SUBDIR += mod_fileiri
     SUBDIR += mod_flickr
     SUBDIR += mod_geoip2
+    SUBDIR += mod_gnutls
     SUBDIR += mod_gzip2
     SUBDIR += mod_h264_streaming
     SUBDIR += mod_hosts_access

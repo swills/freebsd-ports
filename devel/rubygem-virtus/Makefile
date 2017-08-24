@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-virtus/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-virtus/Makefile 448564 2017-08-22 16:41:24Z sunpoet $
 
 PORTNAME=	virtus
 PORTVERSION=	1.0.5
@@ -9,6 +9,7 @@ MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Attributes on Steroids for Plain Old Ruby Objects
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-axiom-types>=0.1:devel/rubygem-axiom-types \
 		rubygem-coercible>=1.0:devel/rubygem-coercible \
@@ -16,7 +17,6 @@ RUN_DEPENDS=	rubygem-axiom-types>=0.1:devel/rubygem-axiom-types \
 		rubygem-equalizer>=0.0.9:devel/rubygem-equalizer
 
 NO_ARCH=	yes
-
 USE_RUBY=	yes
 USES=		gem
 

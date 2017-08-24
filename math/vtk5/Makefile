@@ -1,9 +1,9 @@
 # Created by: Mykola Khotyaintsev <ko@irfu.se>
-# $FreeBSD: head/math/vtk5/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/math/vtk5/Makefile 448656 2017-08-24 09:13:09Z araujo $
 
 PORTNAME=	vtk
 PORTVERSION=	5.10.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	math graphics
 MASTER_SITES=	http://www.vtk.org/files/release/${PORTVERSION:R}/
 PKGNAMESUFFIX=	5

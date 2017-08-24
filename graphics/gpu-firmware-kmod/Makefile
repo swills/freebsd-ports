@@ -1,8 +1,8 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/graphics/gpu-firmware-kmod/Makefile 444129 2017-06-22 21:00:16Z linimon $
+# $FreeBSD: head/graphics/gpu-firmware-kmod/Makefile 448649 2017-08-24 05:23:44Z jmd $
 
 PORTNAME=	gpu-firmware-kmod
-PORTVERSION=	g20170403
+PORTVERSION=	g20170822
 PORTREVISION=	1
 CATEGORIES=	graphics
 
@@ -17,7 +17,7 @@ NO_PACKAGE=	Distribution in binary form without license file not allowed
 USE_GITHUB=	yes
 GH_ACCOUNT=	FreeBSDDesktop
 GH_PROJECT=	kms-firmware
-GH_TAGNAME=	b4b4257
+GH_TAGNAME=	39de0f1
 
 USES=		kmod
 

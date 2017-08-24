@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 447284 2017-08-03 21:44:51Z tobik $
+# $FreeBSD: head/games/Makefile 448603 2017-08-23 11:33:26Z rene $
 #
 
     COMMENT = Games and related software
@@ -755,7 +755,6 @@
     SUBDIR += pipenightdreams
     SUBDIR += pipepanic
     SUBDIR += pipewalker
-    SUBDIR += plee-the-bear
     SUBDIR += plutocracy
     SUBDIR += pmars
     SUBDIR += pmars-sdl
@@ -1157,7 +1156,6 @@
     SUBDIR += xrally
     SUBDIR += xrick
     SUBDIR += xrisk
-    SUBDIR += xroach
     SUBDIR += xrobots
     SUBDIR += xrot
     SUBDIR += xrubik

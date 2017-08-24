@@ -1,9 +1,12 @@
-# $FreeBSD: head/sysutils/bacula5-client-static/Makefile 442913 2017-06-08 10:36:40Z mat $
+# $FreeBSD: head/sysutils/bacula5-client-static/Makefile 448584 2017-08-22 21:59:48Z dvl $
 
 PORTNAME=	bacula
 PKGNAMESUFFIX=	5-client-static
 
 COMMENT=	Network backup solution (static client)
+
+DEPRECATED=	No upstream commits since 2013. Use sysutils/bacula-client-static
+EXPIRATION_DATE=	2017-10-04
 
 CONFLICTS=	bacula-client-static-*
 

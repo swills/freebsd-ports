@@ -1,9 +1,9 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/gdb/Makefile 447377 2017-08-04 20:16:33Z jhb $
+# $FreeBSD: head/devel/gdb/Makefile 448627 2017-08-23 16:07:42Z jhb $
 
 PORTNAME=	gdb
 PORTVERSION=	8.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 
@@ -55,7 +55,7 @@ VER=		${PORTVERSION:S/.//g}
 PLIST_SUB=	VER=${VER}
 
 # untested elsewhere, might work
-ONLY_FOR_ARCHS=		amd64 armv6 i386 mips powerpc powerpc64	
+ONLY_FOR_ARCHS=	aarch64 amd64 armv6 i386 mips powerpc powerpc64	
 
 OPTIONS_DEFINE=	DEBUG GDB_LINK GUILE KGDB PYTHON TUI
 

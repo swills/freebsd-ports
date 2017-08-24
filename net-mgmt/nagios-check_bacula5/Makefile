@@ -1,5 +1,5 @@
 # Created by: Anders Troback
-# $FreeBSD: head/net-mgmt/nagios-check_bacula5/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/nagios-check_bacula5/Makefile 448584 2017-08-22 21:59:48Z dvl $
 
 PORTNAME=	bacula
 CATEGORIES=	net-mgmt
@@ -8,6 +8,9 @@ PKGNAMESUFFIX=	5
 
 MAINTAINER=	freebsd@troback.com
 COMMENT=	Nagios plugin for Bacula
+
+DEPRECATED=	No upstream commits since 2013. Use net-mgmt/nagios-check_bacula
+EXPIRATION_DATE=	2017-10-04
 
 LIB_DEPENDS+=	libbac.so:sysutils/bacula5-client
 

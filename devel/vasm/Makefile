@@ -1,11 +1,11 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/devel/vasm/Makefile 443408 2017-06-11 19:25:07Z sunpoet $
+# $FreeBSD: head/devel/vasm/Makefile 448647 2017-08-24 05:17:49Z vanilla $
 
 PORTNAME=	vasm
-PORTVERSION=	1.8
+PORTVERSION=	1.8a
 CATEGORIES=	devel
 MASTER_SITES=	http://server.owl.de/~frank/tags/
-DISTNAME=	vasm1_8
+DISTNAME=	vasm1_8a
 
 MAINTAINER=	cs@innolan.dk
 COMMENT=	Portable 6502 6800 arm c16x jagrisc m68k ppc vidcore x86 z80 assembler

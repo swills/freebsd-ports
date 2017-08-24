@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/devel/libclaw/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/devel/libclaw/Makefile 448604 2017-08-23 11:53:04Z amdmi3 $
 
 PORTNAME=	libclaw
 PORTVERSION=	1.7.4
@@ -12,6 +12,9 @@ COMMENT=	C++ Library Absolutely Wonderful
 
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	useless for anything apart from removed games/plee-the-bear
+EXPIRATION_DATE=2017-09-30
 
 LIB_DEPENDS=	libpng.so:graphics/png
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/bind.hpp:devel/boost-libs

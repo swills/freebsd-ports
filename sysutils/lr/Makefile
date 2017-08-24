@@ -1,11 +1,10 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/sysutils/lr/Makefile 439472 2017-04-26 18:44:55Z tobik $
+# $FreeBSD: head/sysutils/lr/Makefile 448568 2017-08-22 17:21:58Z amdmi3 $
 
 PORTNAME=	lr
 PORTVERSION=	0.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
-PKGNAMESUFFIX=	files
 
 MAINTAINER=	tobik@FreeBSD.org
 COMMENT=	List files, recursively
@@ -15,8 +14,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	chneukirchen
-
-CONFLICTS_INSTALL=	lr-[0-9]*
 
 MAKE_ARGS=	CFLAGS="${CFLAGS}" \
 		MANDIR="${PREFIX}/man"

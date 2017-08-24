@@ -1,0 +1,17 @@
+# $FreeBSD: head/devel/rubygem-debugger-ruby_core_source/Makefile 448659 2017-08-24 09:25:06Z tz $
+
+PORTNAME=	debugger-ruby_core_source
+PORTVERSION=	1.3.8
+CATEGORIES=	devel rubygems
+MASTER_SITES=	RG
+
+MAINTAINER=	tz@FreeBSD.org
+COMMENT=	Provide Ruby core source files for C extensions that need them
+
+LICENSE=	MIT
+
+NO_ARCH=	yes
+USES=		gem
+USE_RUBY=	yes
+
+.include <bsd.port.mk>
