@@ -1,9 +1,9 @@
 # Created by: Denise H. G. <darcsis@gmail.com>
-# $FreeBSD: head/converters/pdf2djvu/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/converters/pdf2djvu/Makefile 448669 2017-08-24 13:45:13Z swills $
 
 PORTNAME=	pdf2djvu
 PORTVERSION=	0.7.21
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	converters
 MASTER_SITES=	https://bitbucket.org/jwilk/pdf2djvu/downloads/
 

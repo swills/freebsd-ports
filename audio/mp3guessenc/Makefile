@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/mp3guessenc/Makefile 440023 2017-05-03 16:51:06Z ehaupt $
+# $FreeBSD: head/audio/mp3guessenc/Makefile 448776 2017-08-26 15:52:37Z ehaupt $
 
 PORTNAME=	mp3guessenc
-PORTVERSION=	0.27.1
+PORTVERSION=	0.27.2
 CATEGORIES=	audio
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION:C/\.[0-9]*$//}
 

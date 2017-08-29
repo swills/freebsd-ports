@@ -1,8 +1,8 @@
 # Created by: lesi@FreeBSD.org
-# $FreeBSD: head/graphics/libdrm/Makefile 446715 2017-07-27 05:56:08Z rezny $
+# $FreeBSD: head/graphics/libdrm/Makefile 448836 2017-08-27 18:33:02Z rezny $
 
 PORTNAME=	libdrm
-PORTVERSION=	2.4.82
+PORTVERSION=	2.4.83
 PORTEPOCH=	1
 CATEGORIES=	graphics x11
 MASTER_SITES=	http://dri.freedesktop.org/libdrm/

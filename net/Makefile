@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 448035 2017-08-16 13:23:12Z ehaupt $
+# $FreeBSD: head/net/Makefile 448752 2017-08-26 07:39:53Z shurd $
 #
 
     COMMENT = Networking tools
@@ -946,6 +946,7 @@
     SUBDIR += pipsecd
     SUBDIR += pjsip
     SUBDIR += pjsip-extsrtp
+    SUBDIR += pkt-gen
     SUBDIR += pktanon
     SUBDIR += pload
     SUBDIR += plugdaemon

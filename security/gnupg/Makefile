@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/gnupg/Makefile 447661 2017-08-10 01:31:49Z adamw $
+# $FreeBSD: head/security/gnupg/Makefile 448867 2017-08-28 13:02:24Z adamw $
 
 PORTNAME=	gnupg
 PORTVERSION=	2.1.23
@@ -22,7 +22,7 @@ BUILD_DEPENDS=	libassuan>=2.4.3:security/libassuan \
 		libgpg-error>=1.16:security/libgpg-error
 RUN_DEPENDS=	pinentry:security/pinentry
 
-CONFLICTS=	gnupg-2.0.* dirmngr-[0-9]*
+CONFLICTS=	gnupg-2.0.* gnupg-2.2.* dirmngr-[0-9]*
 CPE_VENDOR=	gnupg
 
 USES=		compiler:c11 cpe gmake iconv pkgconfig readline sqlite tar:bzip2

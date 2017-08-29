@@ -1,9 +1,9 @@
 # Created by: Daniel Gerzo <danger@rulez.sk>
-# $FreeBSD: head/security/bruteforceblocker/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/bruteforceblocker/Makefile 448741 2017-08-25 21:08:52Z fjoe $
 
 PORTNAME=	bruteforceblocker
 PORTVERSION=	1.2.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	http://danger.rulez.sk/projects/bruteforceblocker/ \
 		LOCAL/pav

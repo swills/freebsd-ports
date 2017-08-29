@@ -1,8 +1,9 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/devel/py-foolscap/Makefile 442881 2017-06-07 19:12:17Z sunpoet $
+# $FreeBSD: head/devel/py-foolscap/Makefile 448886 2017-08-28 19:18:56Z sunpoet $
 
 PORTNAME=	foolscap
 PORTVERSION=	0.12.4
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=   http://foolscap.lothar.com/releases/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,11 +14,12 @@ COMMENT=	RPC protocol for Twisted Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>=0.13:security/py-openssl
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>=0.13:security/py-openssl \
+		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
-USES=		python twisted
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 regression-test: build

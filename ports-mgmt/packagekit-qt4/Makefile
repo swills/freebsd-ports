@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/ports-mgmt/packagekit-qt4/Makefile 428132 2016-12-08 16:07:33Z tijl $
+# $FreeBSD: head/ports-mgmt/packagekit-qt4/Makefile 448756 2017-08-26 09:40:15Z antoine $
 #   $MCom: ports/ports-mgmt/packagekit-qt4/Makefile,v 1.1 2010/01/08 02:16:38 kwm Exp $
 
 PORTREVISION=	2
@@ -8,6 +8,8 @@ PKGNAMESUFFIX=	-qt4
 COMMENT=	Qt4 bindings to packagekit
 
 IGNORE=		does not build with Qt 4.8
+DEPRECATED=	Ignored for more than 5 years
+EXPIRATION_DATE=	2017-09-27
 
 MASTERDIR=	${.CURDIR}/../../ports-mgmt/packagekit
 BUILD_WRKSRC=	${WRKSRC}/lib/packagekit-qt

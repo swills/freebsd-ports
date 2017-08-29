@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-rex-arch/Makefile 444246 2017-06-24 21:25:28Z antoine $
+# $FreeBSD: head/security/rubygem-rex-arch/Makefile 448808 2017-08-27 08:42:40Z antoine $
 
 PORTNAME=	rex-arch
-PORTVERSION=	0.1.9
+PORTVERSION=	0.1.11
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	rubygem-rex-text>=0:security/rubygem-rex-text
 
 NO_ARCH=	yes
-
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 .include <bsd.port.mk>

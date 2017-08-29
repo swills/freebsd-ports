@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/gnupg20/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/security/gnupg20/Makefile 448867 2017-08-28 13:02:24Z adamw $
 
 PORTNAME=	gnupg
 PORTVERSION=	2.0.30
@@ -23,8 +23,11 @@ LIB_DEPENDS=	libassuan.so:security/libassuan \
 BUILD_DEPENDS=	libgpg-error>=1.11:security/libgpg-error
 RUN_DEPENDS=	pinentry:security/pinentry
 
-CONFLICTS=	gnupg-2.1.*
+CONFLICTS=	gnupg-2.1.* gnupg-2.2.*
 CPE_VENDOR=	gnupg
+
+DEPRECATED=	Will reach EOL upstream on 2017-12-31
+EXPIRATION_DATE=2017-12-31
 
 USES=		cpe gmake iconv readline tar:bzip2
 USE_LDCONFIG=	yes

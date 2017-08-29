@@ -1,5 +1,7 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/www/py-django111/Makefile 447190 2017-08-03 00:58:59Z feld $
+# $FreeBSD: head/www/py-django111/Makefile 448679 2017-08-24 14:20:07Z sunpoet $
+#
+# Remember to update www/py-django along with this port.
 
 PORTNAME=	django
 PORTVERSION=	1.11.4

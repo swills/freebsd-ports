@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 448432 2017-08-20 15:23:11Z swills $
+# $FreeBSD: head/sysutils/Makefile 448888 2017-08-28 21:28:17Z romain $
 #
 
     COMMENT = System utilities
@@ -43,6 +43,7 @@
     SUBDIR += apachetop
     SUBDIR += apcpwr
     SUBDIR += apcupsd
+    SUBDIR += aptly
     SUBDIR += arcconf
     SUBDIR += archivemount
     SUBDIR += areca-cli

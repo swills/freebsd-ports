@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/okular/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/graphics/okular/Makefile 448690 2017-08-24 15:49:34Z swills $
 
 PORTNAME=	okular
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	graphics kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

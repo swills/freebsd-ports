@@ -1,8 +1,8 @@
-# $FreeBSD: head/print/tex-luatex/Makefile 430778 2017-01-07 10:42:51Z olivierd $
+# $FreeBSD: head/print/tex-luatex/Makefile 448690 2017-08-24 15:49:34Z swills $
 
 PORTNAME=	luatex
 PORTVERSION=	0.80.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	print
 MASTER_SITES=	ftp://tug.org/historic/systems/texlive/2015/
 PKGNAMEPREFIX=	tex-

@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/x11/leechcraft/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/x11/leechcraft/Makefile 448690 2017-08-24 15:49:34Z swills $
 
 PORTNAME=	leechcraft
 PORTVERSION=	0.6.70
-PORTREVISION=	21
+PORTREVISION=	22
 CATEGORIES=	x11
 MASTER_SITES=	http://dist.leechcraft.org/LeechCraft/0.6.70/
 

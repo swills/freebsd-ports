@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/pdfpc/Makefile 444369 2017-06-26 14:14:56Z bapt $
+# $FreeBSD: head/graphics/pdfpc/Makefile 448690 2017-08-24 15:49:34Z swills $
 
 PORTNAME=	pdfpc
 PORTVERSION=	4.0.7
+PORTREVISION=	1
 CATEGORIES=	graphics
 DISTVERSIONPREFIX=	v
 

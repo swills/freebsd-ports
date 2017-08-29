@@ -1,9 +1,8 @@
 # Created by: Eijiro Shibusawa <ej-sib@ice.uec.ac.jp>
-# $FreeBSD: head/math/openblas/Makefile 447249 2017-08-03 17:22:18Z amdmi3 $
+# $FreeBSD: head/math/openblas/Makefile 448738 2017-08-25 19:58:51Z truckman $
 
 PORTNAME=	openblas
-PORTVERSION=	0.2.19
-PORTREVISION=	1
+PORTVERSION=	0.2.20
 DISTVERSIONPREFIX=	v
 PORTEPOCH=	1
 CATEGORIES=	math
@@ -17,13 +16,14 @@ COMMENT=	Optimized BLAS library based on GotoBLAS2
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+USES=		fortran gmake perl5
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	xianyi
 GH_PROJECT=	OpenBLAS
 LARGE_FILE=	large.tgz
 TIMING_FILE=	timing.tgz
 
-USES=		fortran gmake perl5
 USE_LDCONFIG=	yes
 USE_PERL5=	build
 

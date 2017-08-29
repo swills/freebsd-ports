@@ -1,8 +1,8 @@
 # Created by: Devon H. O'Dell <devon.odell@gmail.com>
-# $FreeBSD: head/lang/go/Makefile 441745 2017-05-25 21:53:14Z jlaffaye $
+# $FreeBSD: head/lang/go/Makefile 448714 2017-08-25 09:55:55Z jlaffaye $
 
 PORTNAME=	go
-PORTVERSION=	1.8.3
+PORTVERSION=	1.9
 PORTEPOCH=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://golang.org/dl/
@@ -74,5 +74,16 @@ do-install:
 
 regression-test: build
 	cd ${WRKSRC}/src && GOROOT=${WRKSRC} PATH=${WRKSRC}/bin:${PATH} ${SH} run.bash --no-rebuild --banner
+
+pkg-plist: stage
+	${RM} ${WRKDIR}/pkg-plist
+.for command in go gofmt
+	${ECHO_CMD} bin/${command} >> ${WRKDIR}/pkg-plist
+.endfor
+	cd ${WRKDIR} && ${FIND} go -type f | \
+		${SED} -e "s/\/${OPSYS:tl}_${GOARCH}\//\/%%opsys_ARCH%%\//g" | \
+		${SORT} >> ${WRKDIR}/pkg-plist
+	${ECHO_CMD} "@dir go/pkg/obj/%%opsys_ARCH%%" >> ${WRKDIR}/pkg-plist
+	${CP} ${WRKDIR}/pkg-plist ${.CURDIR}/pkg-plist
 
 .include <bsd.port.post.mk>

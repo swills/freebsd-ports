@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/ftp/R-cran-curl/Makefile 444559 2017-06-28 09:47:23Z tota $
+# $FreeBSD: head/ftp/R-cran-curl/Makefile 448848 2017-08-28 06:05:06Z tota $
 
 PORTNAME=	curl
-PORTVERSION=	2.7
+PORTVERSION=	2.8.1
 CATEGORIES=	ftp
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

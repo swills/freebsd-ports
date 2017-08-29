@@ -1,8 +1,9 @@
 # Created by: Jan Henrik Sylvester <me@janh.de>
-# $FreeBSD: head/graphics/xournal/Makefile 448180 2017-08-17 19:34:33Z swills $
+# $FreeBSD: head/graphics/xournal/Makefile 448669 2017-08-24 13:45:13Z swills $
 
 PORTNAME=	xournal
 PORTVERSION=	0.4.8.2016
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 

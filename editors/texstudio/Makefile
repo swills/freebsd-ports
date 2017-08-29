@@ -1,8 +1,8 @@
-# $FreeBSD: head/editors/texstudio/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/editors/texstudio/Makefile 448669 2017-08-24 13:45:13Z swills $
 
 PORTNAME=	texstudio
 PORTVERSION=	2.11.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	editors
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/TeXstudio%20${PORTVERSION}
 

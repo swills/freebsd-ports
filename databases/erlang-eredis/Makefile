@@ -1,9 +1,8 @@
-# $FreeBSD: head/databases/erlang-eredis/Makefile 391484 2015-07-06 22:34:11Z olgeni $
+# $FreeBSD: head/databases/erlang-eredis/Makefile 448894 2017-08-29 08:25:50Z olgeni $
 
 PORTNAME=	eredis
-PORTVERSION=	1.0.8
+PORTVERSION=	1.1.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
 CATEGORIES=	databases
 PKGNAMEPREFIX=	erlang-
 

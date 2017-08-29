@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-rex-sslscan/Makefile 441383 2017-05-21 11:26:49Z antoine $
+# $FreeBSD: head/security/rubygem-rex-sslscan/Makefile 448806 2017-08-27 08:37:06Z antoine $
 
 PORTNAME=	rex-sslscan
-PORTVERSION=	0.1.4
+PORTVERSION=	0.1.5
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
@@ -11,12 +11,12 @@ COMMENT=	Ruby Exploitation(Rex) library for scanning SSL/TLS capabilities
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	rubygem-rex-socket>=0:security/rubygem-rex-socket \
+RUN_DEPENDS=	rubygem-rex-core>=0:security/rubygem-rex-core \
+		rubygem-rex-socket>=0:security/rubygem-rex-socket \
 		rubygem-rex-text>=0:security/rubygem-rex-text
 
 NO_ARCH=	yes
-
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 .include <bsd.port.mk>

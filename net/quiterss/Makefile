@@ -1,8 +1,8 @@
 # Created by: lbartoletti <coder@tuxfamily.org>
-# $FreeBSD: head/net/quiterss/Makefile 444447 2017-06-27 08:31:00Z tobik $
+# $FreeBSD: head/net/quiterss/Makefile 448740 2017-08-25 20:10:55Z tobik $
 
 PORTNAME=	quiterss
-PORTVERSION=	0.18.6
+PORTVERSION=	0.18.8
 CATEGORIES=	net
 MASTER_SITES=	http://quiterss.org/files/${PORTVERSION}/
 DISTNAME=	QuiteRSS-${PORTVERSION}-src

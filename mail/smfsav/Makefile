@@ -1,5 +1,5 @@
 # Created by: Anton Lysenok <bart@tapolsky.net.ua>
-# $FreeBSD: head/mail/smfsav/Makefile 431152 2017-01-11 01:53:11Z ler $
+# $FreeBSD: head/mail/smfsav/Makefile 448747 2017-08-26 01:18:16Z dbaio $
 
 PORTNAME=	smfsav
 PORTVERSION=	1.4.0
@@ -28,6 +28,8 @@ LDFLAGS+=	-lmilter -lpthread
 SMFSAV_RUN_DIR?=/var/run/smfs
 PLIST_SUB=	SMFSAV_RUN_DIR=${SMFSAV_RUN_DIR}
 SUB_FILES+=	pkg-message
+
+CONFLICTS=	smfsav-devel
 
 .include <bsd.port.pre.mk>
 .include "${PORTSDIR}/mail/sendmail/bsd.milter.mk"

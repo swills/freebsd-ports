@@ -1,9 +1,8 @@
 # Created by: JJ Behrens <jj@nttmcl.com>
-# $FreeBSD: head/net-mgmt/p5-Net-IPv6Addr/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/p5-Net-IPv6Addr/Makefile 448801 2017-08-27 04:00:32Z wen $
 
 PORTNAME=	Net-IPv6Addr
-PORTVERSION=	0.2
-PORTREVISION=	1
+PORTVERSION=	0.7
 CATEGORIES=	net-mgmt perl5 ipv6
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,10 +13,11 @@ COMMENT=	Perl extension for manipulating IPv6 addresses
 LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Net-IPv4Addr>=0:net-mgmt/p5-Net-IPv4Addr \
-		p5-Math-Base85>=0:math/p5-Math-Base85
+BUILD_DEPENDS=	p5-Math-Base85>=0.2:math/p5-Math-Base85 \
+		p5-Net-IPv4Addr>=0.10:net-mgmt/p5-Net-IPv4Addr
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

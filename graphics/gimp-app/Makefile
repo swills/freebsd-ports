@@ -1,8 +1,9 @@
 # Created by: erich@FreeBSD.org
-# $FreeBSD: head/graphics/gimp-app/Makefile 441550 2017-05-23 19:36:56Z kwm $
+# $FreeBSD: head/graphics/gimp-app/Makefile 448669 2017-08-24 13:45:13Z swills $
 
 PORTNAME?=	gimp-app
 PORTVERSION=	2.8.22
+PORTREVISION=	1
 PORTEPOCH?=	1
 CATEGORIES?=	graphics gnome
 MASTER_SITES=	GIMP/gimp/v${PORTVERSION:R}

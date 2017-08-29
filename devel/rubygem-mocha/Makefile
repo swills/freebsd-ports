@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-mocha/Makefile 433843 2017-02-11 08:37:59Z sunpoet $
+# $FreeBSD: head/devel/rubygem-mocha/Makefile 448734 2017-08-25 18:21:38Z sunpoet $
 
 PORTNAME=	mocha
-PORTVERSION=	1.2.1
+PORTVERSION=	1.3.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

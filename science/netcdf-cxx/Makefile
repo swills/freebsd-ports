@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/science/netcdf-cxx/Makefile 415240 2016-05-15 16:12:00Z sunpoet $
+# $FreeBSD: head/science/netcdf-cxx/Makefile 448727 2017-08-25 18:21:02Z sunpoet $
 
 PORTNAME=	netcdf-cxx
 PORTVERSION=	4.3.0
@@ -8,6 +8,11 @@ CATEGORIES=	science
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	C++ library for machine-independent, array-oriented data access
+
+LICENSE=	UCAR_UNIDATA
+LICENSE_FILE=	${WRKSRC}/COPYRIGHT
+LICENSE_NAME=	University Corporation for Atmospheric Research/Unidata
+LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 LIB_DEPENDS=	libnetcdf.so:science/netcdf
 

@@ -1,8 +1,8 @@
 # Created by: Kevin Bowling <kbowling@freebsd.org>
-# $FreeBSD: head/databases/timescaledb/Makefile 447952 2017-08-14 17:02:33Z joneum $
+# $FreeBSD: head/databases/timescaledb/Makefile 448814 2017-08-27 09:06:22Z tobik $
 
 PORTNAME=	timescaledb
-PORTVERSION=	0.3.0
+PORTVERSION=	0.4.0
 CATEGORIES=	databases
 
 MAINTAINER=	kbowling@FreeBSD.org
@@ -24,7 +24,8 @@ WANT_PGSQL=	server
 PLIST_FILES=	lib/postgresql/timescaledb.so \
 		share/postgresql/extension/timescaledb--0.1.0--0.2.0.sql \
 		share/postgresql/extension/timescaledb--0.2.0--0.3.0.sql \
-		share/postgresql/extension/timescaledb--0.3.0.sql \
+		share/postgresql/extension/timescaledb--0.3.0--0.4.0.sql \
+		share/postgresql/extension/timescaledb--0.4.0.sql \
 		share/postgresql/extension/timescaledb.control
 
 post-install:

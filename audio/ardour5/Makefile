@@ -1,9 +1,8 @@
 # Created by: Michael Beer <beerml@sigma6audio.de>
-# $FreeBSD: head/audio/ardour5/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/audio/ardour5/Makefile 448785 2017-08-26 21:18:16Z madpilot $
 
 PORTNAME=	ardour5
-PORTVERSION=	5.10.0
-PORTREVISION=	1
+PORTVERSION=	5.11.0
 CATEGORIES=	audio
 MASTER_SITES=	https://github.com/beerml/ardour_releases/raw/master/
 # The original master side points to the latest release only:

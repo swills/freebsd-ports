@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/kanboard/Makefile 442510 2017-06-03 17:57:37Z joneum $
+# $FreeBSD: head/www/kanboard/Makefile 448769 2017-08-26 13:03:03Z tobik $
 
 PORTNAME=	kanboard
-PORTVERSION=	1.0.44
+PORTVERSION=	1.0.46
 CATEGORIES=	www
 MASTER_SITES=	http://kanboard.net/ \
 		https://bitbucket.org/if0/kanboard-archives/downloads/ \

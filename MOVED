@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: head/MOVED 448644 2017-08-24 01:39:16Z jkim $
+# $FreeBSD: head/MOVED 448892 2017-08-29 05:40:51Z tcberner $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -9522,3 +9522,7 @@ devel/gdb66||2017-08-23|Has expired: Broken for more than 6 months
 biology/biojava||2017-08-23|Has expired: Broken for more than 6 months
 games/xroach||2017-08-23|Has expired: Broken for more than 6 months
 java/intellij-pycharm|devel/pycharm-ce|2017-08-23|Renamed to reflect upstream name. Use a more appropriate origin (devel for development tools, IDE)
+www/pyweblib|www/py-pyweblib|2017-08-25|Rename to comply with PyPI scheme
+databases/libzbxpgsql|databases/zabbix3-libzbxpgsql|2017-08-26|Rename to allow multiple versions of libzbxpgsql to coexist
+x11-toolkits/kirigami||2017-08-28|Not needed by anything
+x11-toolkits/kirigami2|x11-toolkits/kf5-kirigami2|2017-08-28|Became an official framework

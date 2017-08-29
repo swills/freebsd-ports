@@ -1,5 +1,5 @@
 # Created by: Aldis Berjoza <graudeejs@gmail.com>
-# $FreeBSD: head/audio/shairport/Makefile 443390 2017-06-11 14:33:44Z wen $
+# $FreeBSD: head/audio/shairport/Makefile 448850 2017-08-28 07:57:30Z ehaupt $
 
 PORTNAME=	shairport
 PORTVERSION=	1.1.1
@@ -10,6 +10,9 @@ COMMENT=	Airtunes emulator
 
 LIB_DEPENDS=	libao.so:audio/libao
 RUN_DEPENDS=	avahi-publish-service:net/avahi-app
+
+DEPRECATED=	Officially unmaintained upstream. Use audio/shairport-sync instead
+EXPIRATION_DATE=2017-11-28
 
 USES=		gmake pkgconfig ssl
 USE_GITHUB=	yes

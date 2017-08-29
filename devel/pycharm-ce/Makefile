@@ -1,8 +1,8 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/devel/pycharm-ce/Makefile 448634 2017-08-23 18:42:19Z bsam $
+# $FreeBSD: head/devel/pycharm-ce/Makefile 448721 2017-08-25 17:18:20Z bsam $
 
 PORTNAME=	pycharm-ce
-PORTVERSION=	2017.2.1
+PORTVERSION=	2017.2.2
 CATEGORIES=	devel java python
 MASTER_SITES=	https://download.jetbrains.com/python/ \
 		http://download.jetbrains.com/python/
@@ -16,10 +16,10 @@ LICENSE=	APACHE20
 RUN_DEPENDS=	intellij-fsnotifier>0:java/intellij-fsnotifier \
 		intellij-pty4j>0:java/intellij-pty4j
 
-USE_JAVA=	yes
-JAVA_VERSION=	1.7+
 USES=		python:run shebangfix
 SHEBANG_FILES=	bin/printenv.py bin/restart.py
+USE_JAVA=	yes
+JAVA_VERSION=	1.7+
 
 NO_ARCH=	yes
 NO_BUILD=	yes

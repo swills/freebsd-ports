@@ -1,12 +1,12 @@
 # Created by: Jun Kuriyama <kuriyama@FreeBSD.org>
-# $FreeBSD: head/devel/magit/Makefile 447076 2017-08-01 20:45:57Z matthew $
+# $FreeBSD: head/devel/magit/Makefile 448891 2017-08-29 05:23:23Z pi $
 
 PORTNAME=	magit
 PORTVERSION=	2.10.3
 CATEGORIES=	devel elisp
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
 
-MAINTAINER=	kuriyama@FreeBSD.org
+MAINTAINER=	yasu@utahime.org
 COMMENT=	Interface to Git for Emacs
 
 LICENSE=	GPLv3
@@ -16,10 +16,9 @@ BUILD_DEPENDS=	dash.el>=2.12.1:devel/dash.el \
 RUN_DEPENDS=	dash.el>=2.12.1:devel/dash.el \
 		with-editor-${EMACS_PORT_NAME}>=2.5.0:editors/with-editor
 
-USE_GITHUB=	yes
-
 USES=		gmake makeinfo
 USE_EMACS=	yes
+USE_GITHUB=	yes
 INFO=		magit magit-popup
 PORTDOCS=	AUTHORS.md
 NO_ARCH=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/openjdk8/Makefile 444448 2017-06-27 08:35:24Z tobik $
+# $FreeBSD: head/java/openjdk8/Makefile 448833 2017-08-27 17:48:46Z glewis $
 
 PORTNAME=	openjdk
 PORTVERSION=	${JDK_MAJOR_VERSION}.${JDK_UPDATE_VERSION}.${JDK_BUILD_NUMBER:S/^0//}
@@ -28,7 +28,8 @@ PATCHFILES=	patch-8u05-b13.xz \
 		patch-8u102-b14.xz \
 		patch-8u112-b16.xz \
 		patch-8u121-b13.xz \
-		patch-8u131-b11.xz
+		patch-8u131-b11.xz \
+		patch-8u144-b01.xz
 
 MAINTAINER=	java@FreeBSD.org
 COMMENT?=	Java Development Kit ${JDK_MAJOR_VERSION}
@@ -221,8 +222,8 @@ NO_CCACHE=		yes
 NOPRECIOUSMAKEVARS=	yes
 
 JDK_MAJOR_VERSION=	8
-JDK_UPDATE_VERSION=	131
-JDK_BUILD_NUMBER=	11
+JDK_UPDATE_VERSION=	144
+JDK_BUILD_NUMBER=	01
 DIST_BUILD_NUMBER=	132
 JTREG_VERSION=		4.1
 JTREG_BUILD_NUMBER=	b08

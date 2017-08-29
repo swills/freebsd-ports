@@ -1,8 +1,9 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/java/openjfx8-devel/Makefile 446432 2017-07-22 22:05:21Z tobik $
+# $FreeBSD: head/java/openjfx8-devel/Makefile 448772 2017-08-26 14:42:54Z tobik $
 
 PORTNAME=	openjfx8
 PORTVERSION=	20170722
+PORTREVISION=	1
 CATEGORIES=	java x11-toolkits devel
 MASTER_SITES=	https://bitbucket.org/tobik/openjfx-rt/get/freebsd${PORTVERSION}${EXTRACT_SUFX}?dummy=/
 PKGNAMESUFFIX=	-devel
@@ -17,7 +18,7 @@ ONLY_FOR_ARCHS=	amd64 i386
 
 BUILD_DEPENDS=	apache-ant>0:devel/apache-ant \
 		antlr3>0:devel/antlr3 \
-		gradle:devel/gradle \
+		gradle>=4.0:devel/gradle \
 		${JAVALIBDIR}/junit.jar:java/junit \
 		swt-devel>0:x11-toolkits/swt-devel
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \

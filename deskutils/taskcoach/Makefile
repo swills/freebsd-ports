@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/taskcoach/Makefile 443053 2017-06-10 01:51:02Z sunpoet $
+# $FreeBSD: head/deskutils/taskcoach/Makefile 448885 2017-08-28 19:18:51Z sunpoet $
 
 PORTNAME=	taskcoach
 PORTVERSION=	1.4.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	deskutils python
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/Release-${PORTVERSION}
 DISTNAME=	TaskCoach-${PORTVERSION}
@@ -13,8 +13,10 @@ COMMENT=	Friendly task manager
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
+
 NO_ARCH=	yes
-USES=		python shebangfix twisted
+USES=		python shebangfix
 USE_PYTHON=	distutils
 PYDISTUTILS_EGGINFO=${DISTNAME}-py${PYTHON_VER}.egg-info
 USE_WX=		3.0+

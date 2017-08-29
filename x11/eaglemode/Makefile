@@ -1,8 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/x11/eaglemode/Makefile 441520 2017-05-23 13:12:14Z amdmi3 $
+# $FreeBSD: head/x11/eaglemode/Makefile 448669 2017-08-24 13:45:13Z swills $
 
 PORTNAME=	eaglemode
 PORTVERSION=	0.93.0
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

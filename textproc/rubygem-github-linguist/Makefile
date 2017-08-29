@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-github-linguist/Makefile 441797 2017-05-26 16:49:41Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-github-linguist/Makefile 448794 2017-08-27 00:36:43Z sunpoet $
 
 PORTNAME=	github-linguist
 PORTVERSION=	5.0.11
@@ -15,6 +15,9 @@ RUN_DEPENDS=	rubygem-charlock_holmes>=0.7.3:textproc/rubygem-charlock_holmes \
 		rubygem-escape_utils>=1.1.0:textproc/rubygem-escape_utils \
 		rubygem-mime-types>=1.19:misc/rubygem-mime-types \
 		rubygem-rugged>=0.25.1:devel/rubygem-rugged
+
+# bin/linguist
+CONFLICTS_INSTALL=	rubygem-gitlab-linguist
 
 NO_ARCH=	yes
 USE_RUBY=	yes

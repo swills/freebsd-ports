@@ -1,8 +1,9 @@
 # Created by: Michael Ranner <michael@ranner.eu>
-# $FreeBSD: head/textproc/pdfgrep/Makefile 447724 2017-08-10 22:49:04Z dbaio $
+# $FreeBSD: head/textproc/pdfgrep/Makefile 448690 2017-08-24 15:49:34Z swills $
 
 PORTNAME=	pdfgrep
 PORTVERSION=	2.0.1
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	https://pdfgrep.org/download/
 

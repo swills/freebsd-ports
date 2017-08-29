@@ -1,9 +1,8 @@
 # Created by: Nils Vogels <nivo+kw+ports.bfa274@is-root.com>
-# $FreeBSD: head/mail/dovecot-pigeonhole/Makefile 447519 2017-08-07 21:44:00Z adamw $
+# $FreeBSD: head/mail/dovecot-pigeonhole/Makefile 448822 2017-08-27 14:34:22Z ler $
 
 PORTNAME=	dovecot-pigeonhole
-PORTVERSION=	0.4.19
-PORTREVISION=	1
+PORTVERSION=	0.4.20
 CATEGORIES=	mail
 MASTER_SITES=	http://pigeonhole.dovecot.org/releases/${DOVECOTVERSION}/
 DISTNAME=	${PORTNAME:C/-/-${DOVECOTVERSION}-/}-${PORTVERSION}

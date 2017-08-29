@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/dns/rubygem-public_suffix2/Makefile 448322 2017-08-19 16:04:42Z sunpoet $
+# $FreeBSD: head/dns/rubygem-public_suffix2/Makefile 448728 2017-08-25 18:21:06Z sunpoet $
 
 PORTNAME=	public_suffix
 PORTVERSION=	2.0.5
@@ -13,6 +13,9 @@ COMMENT=	Ruby domain name parser based on the Public Suffix List
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+DEPRECATED=	Use dns/rubygem-public_suffix instead
+EXPIRATION_DATE=2017-09-30
 
 PATCH_DEPENDS=	public_suffix_list>=0:dns/public_suffix_list
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-google-api-client010/Makefile 441455 2017-05-22 13:17:38Z linimon $
+# $FreeBSD: head/devel/rubygem-google-api-client010/Makefile 448882 2017-08-28 19:18:36Z sunpoet $
 
 PORTNAME=	google-api-client
 PORTVERSION=	0.10.3
@@ -22,6 +22,9 @@ RUN_DEPENDS=	rubygem-addressable>=2.3:www/rubygem-addressable \
 		rubygem-retriable>=2.0:devel/rubygem-retriable
 
 BROKEN_powerpc64=	fails to package: call-i.ri: No such file or directory
+
+# bin/generate-api
+CONFLICTS_INSTALL=	rubygem-google-api-client
 
 PORTSCOUT=	limit:^0\.10\.
 

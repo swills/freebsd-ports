@@ -1,4 +1,4 @@
-# $FreeBSD: head/ports-mgmt/kpackagekit/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/ports-mgmt/kpackagekit/Makefile 448756 2017-08-26 09:40:15Z antoine $
 
 PORTNAME=	KPackageKit
 PORTVERSION=	0.6.3.3
@@ -12,6 +12,9 @@ COMMENT=	KDE interface for PackageKit
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	Skipped for more than 5 years
+EXPIRATION_DATE=	2017-09-27
 
 LIB_DEPENDS=	libpackagekit-qt.so:ports-mgmt/packagekit-qt4
 

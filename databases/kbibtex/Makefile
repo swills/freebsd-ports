@@ -1,9 +1,9 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/databases/kbibtex/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/databases/kbibtex/Makefile 448669 2017-08-24 13:45:13Z swills $
 
 PORTNAME=	kbibtex
 DISTVERSION=	0.6.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases kde
 MASTER_SITES=	http://download.gna.org/${PORTNAME}/${PORTVERSION:R}/
 

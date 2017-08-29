@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/redis-devel/Makefile 448487 2017-08-21 20:06:35Z osa $
+# $FreeBSD: head/databases/redis-devel/Makefile 448866 2017-08-28 12:57:31Z mat $
 
 PORTNAME=	redis
 DISTVERSION=	4.0.1
@@ -11,6 +11,8 @@ MAINTAINER=	osa@FreeBSD.org
 COMMENT=	Persistent key-value database with built-in net interface
 
 LICENSE=	BSD3CLAUSE
+
+BROKEN_FreeBSD_10_i386=	undefined reference to __atomic_fetch_add_8
 
 USES=		execinfo
 

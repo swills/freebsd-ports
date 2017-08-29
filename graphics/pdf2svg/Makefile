@@ -1,9 +1,9 @@
 # Created by: Martin Dieringer <martin.dieringe@gmx.de>
-# $FreeBSD: head/graphics/pdf2svg/Makefile 430778 2017-01-07 10:42:51Z olivierd $
+# $FreeBSD: head/graphics/pdf2svg/Makefile 448669 2017-08-24 13:45:13Z swills $
 
 PORTNAME=	pdf2svg
 PORTVERSION=	0.2.3
-PORTREVISION=	4
+PORTREVISION=	5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics
 

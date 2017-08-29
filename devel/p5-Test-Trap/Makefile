@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-Trap/Makefile 442424 2017-06-02 18:13:24Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Trap/Makefile 448673 2017-08-24 14:19:35Z sunpoet $
 
 PORTNAME=	Test-Trap
-PORTVERSION=	0.3.2
+PORTVERSION=	0.3.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN

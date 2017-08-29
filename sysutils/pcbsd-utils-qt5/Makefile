@@ -1,9 +1,9 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/sysutils/pcbsd-utils-qt5/Makefile 430778 2017-01-07 10:42:51Z olivierd $
+# $FreeBSD: head/sysutils/pcbsd-utils-qt5/Makefile 448690 2017-08-24 15:49:34Z swills $
 
 PORTNAME=	pcbsd-utils-qt5
 PORTVERSION=	1444236547
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	sysutils
 
 MAINTAINER=	kmoore@FreeBSD.org

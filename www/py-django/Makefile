@@ -1,9 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/www/py-django/Makefile 445516 2017-07-11 17:00:11Z sunpoet $
+# $FreeBSD: head/www/py-django/Makefile 448688 2017-08-24 14:24:48Z sunpoet $
 
 PORTNAME=	django
 CATEGORIES=	www python
-PORTVERSION=	1.11.1
+PORTVERSION=	1.11.4
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	python@FreeBSD.org
@@ -13,10 +13,10 @@ LICENSE=	BSD3CLAUSE
 
 OPTIONS_SINGLE=	DJANGO
 OPTIONS_SINGLE_DJANGO=	DJANGO111 DJANGO110 DJANGO18
-OPTIONS_DEFAULT=	DJANGO111
-DJANGO18_DESC=		Use Django 1.8.x
-DJANGO110_DESC=		Use Django 1.10.x
-DJANGO111_DESC=		Use Django 1.11.x
+OPTIONS_DEFAULT=DJANGO111
+DJANGO18_DESC=	Use Django 1.8.x
+DJANGO110_DESC=	Use Django 1.10.x
+DJANGO111_DESC=	Use Django 1.11.x
 
 PORTSCOUT=	ignore:1
 

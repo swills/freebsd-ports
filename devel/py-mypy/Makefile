@@ -1,9 +1,8 @@
 # Created by: Florian Limberger <flo@snakeoilproductions.net>
-# $FreeBSD: head/devel/py-mypy/Makefile 438732 2017-04-17 16:17:55Z miwi $
+# $FreeBSD: head/devel/py-mypy/Makefile 448773 2017-08-26 15:13:36Z dbn $
 
 PORTNAME=	mypy
-PORTVERSION=	0.501
-PORTREVISION=	1
+PORTVERSION=	0.521
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

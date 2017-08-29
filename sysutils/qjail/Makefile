@@ -1,8 +1,8 @@
 # Created by: Joe Barbish
-# $FreeBSD: head/sysutils/qjail/Makefile 443856 2017-06-19 02:04:25Z adamw $
+# $FreeBSD: head/sysutils/qjail/Makefile 448797 2017-08-27 01:14:01Z adamw $
 
 PORTNAME=	qjail
-PORTVERSION=	5.3
+PORTVERSION=	5.4
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/${PORTNAME}
 

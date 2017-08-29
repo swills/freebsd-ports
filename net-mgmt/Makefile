@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 446773 2017-07-27 18:24:15Z lme $
+# $FreeBSD: head/net-mgmt/Makefile 448743 2017-08-25 23:25:42Z dbaio $
 #
 
     COMMENT = Network management tools
@@ -381,5 +381,9 @@
     SUBDIR += zabbix32-frontend
     SUBDIR += zabbix32-proxy
     SUBDIR += zabbix32-server
+    SUBDIR += zabbix34-agent
+    SUBDIR += zabbix34-frontend
+    SUBDIR += zabbix34-proxy
+    SUBDIR += zabbix34-server
 
 .include <bsd.port.subdir.mk>

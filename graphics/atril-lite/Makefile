@@ -1,7 +1,7 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/graphics/atril-lite/Makefile 445014 2017-07-04 11:44:30Z kwm $
+# $FreeBSD: head/graphics/atril-lite/Makefile 448690 2017-08-24 15:49:34Z swills $
 
-PORTREVISION=	0
+PORTREVISION=	1
 PKGNAMESUFFIX=	-lite
 
 COMMENT=	MATE multi-format document viewer

@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/thundercache/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/www/thundercache/Makefile 448710 2017-08-25 06:17:53Z antoine $
 
 PORTNAME=	thundercache
 PORTVERSION=	6.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	www
 MASTER_SITES=	http://www.thundercache.com.br/dist/ \
 		http://www.bmsoftware.org/packs/ \
@@ -30,6 +30,7 @@ PGSQL_DESC=	Install PostgreSQL (report data storing)
 
 USES=		shebangfix tar:bzip2 ssl
 SHEBANG_FILES=	sbin/thunderlog.php
+USE_GCC=	any
 
 ONLY_FOR_ARCHS=	i386 amd64
 
@@ -59,7 +60,6 @@ USE_PHP+=	pdo_pgsql pgsql
 .endif
 
 LIB_DEPENDS+=	libcurl.so:ftp/curl \
-		libstdc++.so:lang/gcc \
 		libutil.so:misc/compat8x
 
 SUB_FILES=	pkg-message log.sh test-deps.sh

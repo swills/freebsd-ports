@@ -1,8 +1,9 @@
 # Created by: Olivier Cochard-Labbe <olivier@FreeBSD.org>
-# $FreeBSD: head/print/deforaos-pdfviewer/Makefile 431403 2017-01-13 17:30:23Z olivier $
+# $FreeBSD: head/print/deforaos-pdfviewer/Makefile 448690 2017-08-24 15:49:34Z swills $
 
 PORTNAME=	pdfviewer
 PORTVERSION=	0.0.2
+PORTREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	http://www.defora.org/os/download/download/4431/
 PKGNAMEPREFIX=	deforaos-

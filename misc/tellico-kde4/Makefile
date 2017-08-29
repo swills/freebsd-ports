@@ -1,9 +1,9 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/misc/tellico-kde4/Makefile 440438 2017-05-08 16:11:52Z tcberner $
+# $FreeBSD: head/misc/tellico-kde4/Makefile 448690 2017-08-24 15:49:34Z swills $
 
 PORTNAME=	tellico
 PORTVERSION=	2.3.12
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	misc kde
 MASTER_SITES=	http://tellico-project.org/files/
 

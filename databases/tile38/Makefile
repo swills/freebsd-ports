@@ -1,8 +1,8 @@
 # Created by: olevole@olevole.ru
-# $FreeBSD: head/databases/tile38/Makefile 447752 2017-08-11 10:21:44Z tz $
+# $FreeBSD: head/databases/tile38/Makefile 448700 2017-08-24 18:20:58Z ultima $
 
 PORTNAME=	tile38
-PORTVERSION=	1.9.0
+PORTVERSION=	1.9.1
 CATEGORIES=	databases
 
 MAINTAINER=	olevole@olevole.ru
@@ -16,19 +16,19 @@ BUILD_DEPENDS=	go>=1.4:lang/go \
 RUN_DEPENDS=	go>=1.4:lang/go \
 		bash:shells/bash
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	tidwall
-
 USES=		shebangfix
 SHEBANG_FILES=	build.sh
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	tidwall
 
 USE_RC_SUBR=	tile38
 
 USERS=		${PORTNAME}
 GROUPS=		${PORTNAME}
 
-TILE38_DBDIR?=	/var/db/tile38
-TILE38_RUNDIR?=	/var/run/tile38
+TILE38_DBDIR=	/var/db/tile38
+TILE38_RUNDIR=	/var/run/tile38
 
 SUB_LIST=	PORTNAME=${PORTNAME} \
 		TILE38_USER=${USERS} \

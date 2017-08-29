@@ -1,5 +1,5 @@
 # Created by: Wen Heping<wenheping@gmail.com>
-# $FreeBSD: head/devel/rubygem-sequel3/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-sequel3/Makefile 448884 2017-08-28 19:18:46Z sunpoet $
 
 # legacy for rubygem-larch
 
@@ -13,6 +13,9 @@ MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	The Database Toolkit for Ruby
 
 LICENSE=	MIT
+
+DEPRECATED=	Use devel/rubygem-sequel instead
+EXPIRATION_DATE=2017-08-31
 
 PORTSCOUT=	limit:^3
 

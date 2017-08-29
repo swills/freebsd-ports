@@ -1,8 +1,10 @@
-# $FreeBSD: head/devel/rubygem-peek-rails4/Makefile 448666 2017-08-24 13:05:43Z tz $
+# $FreeBSD: head/devel/rubygem-peek-rails4/Makefile 448668 2017-08-24 13:28:08Z tz $
 
 CATEGORIES=	devel
 
 MASTERDIR=	${.CURDIR}/../rubygem-peek
+
+PKGNAMESUFFIX=	-rails4
 
 RUN_DEPENDS=	rubygem-concurrent-ruby>=0.9.0:devel/rubygem-concurrent-ruby \
 		rubygem-concurrent-ruby-ext>=0.9.0:devel/rubygem-concurrent-ruby-ext \

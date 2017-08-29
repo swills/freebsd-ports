@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 448666 2017-08-24 13:05:43Z tz $
+# $FreeBSD: head/devel/Makefile 448855 2017-08-28 09:17:13Z tota $
 #
 
     COMMENT = Development utilities
@@ -47,6 +47,7 @@
     SUBDIR += R-cran-proto
     SUBDIR += R-cran-randomForest
     SUBDIR += R-cran-registry
+    SUBDIR += R-cran-repr
     SUBDIR += R-cran-reshape
     SUBDIR += R-cran-reshape2
     SUBDIR += R-cran-rgexf
@@ -207,6 +208,7 @@
     SUBDIR += bossa
     SUBDIR += bouml-doc
     SUBDIR += bpython
+    SUBDIR += breakpad
     SUBDIR += bsdbuild
     SUBDIR += bsdcflow
     SUBDIR += bsdowl

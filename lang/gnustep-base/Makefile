@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/lang/gnustep-base/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/lang/gnustep-base/Makefile 448759 2017-08-26 10:24:56Z theraven $
 
 PORTNAME=	gnustep-base
 PORTVERSION=	1.25.0
@@ -34,9 +34,8 @@ STAGEHEADER=	${STAGEDIR}${PREFIX}/GNUstep/System/Library/Headers
 
 PLIST_SUB+=	BASEVERSION=${PORTVERSION:R}
 
-OPTIONS_DEFINE=		ICU
-OPTIONS_RADIO=		SSL ZEROCONF
-OPTIONS_RADIO_SSL=	GNUTLS OPENSSL
+OPTIONS_DEFINE=		ICU GNUTLS
+OPTIONS_RADIO=		ZEROCONF
 OPTIONS_RADIO_ZEROCONF=	AVAHI MDNS
 OPTIONS_DEFAULT=	ICU GNUTLS AVAHI
 OPTIONS_SUB=		yes
@@ -49,10 +48,7 @@ ICU_LIB_DEPENDS=	libicuuc.so:devel/icu
 ICU_CONFIGURE_OFF=	--disable-icu
 
 GNUTLS_LIB_DEPENDS=	libgnutls.so:security/gnutls
-GNUTLS_CONFIGURE_ENABLE=tls
-
-OPENSSL_USES=		ssl
-OPENSSL_CONFIGURE_OFF=	--disable-openssl
+GNUTLS_CONFIGURE_OFF=	--disable-tls
 
 .include <bsd.port.options.mk>
 

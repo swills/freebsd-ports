@@ -1,9 +1,9 @@
 # Created by: Edgardo Garcia Hoeffler <edybsd@yahoo.com.ar>
-# $FreeBSD: head/x11-fm/gnome-commander2/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/x11-fm/gnome-commander2/Makefile 448669 2017-08-24 13:45:13Z swills $
 
 PORTNAME=	gnome-commander
 PORTVERSION=	1.6.3
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	x11-fm gnome
 MASTER_SITES=	GNOME/sources/gnome-commander/${PORTVERSION:R}

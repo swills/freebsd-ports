@@ -1,10 +1,11 @@
 # Created by: George Neville-Neil gnn@freebsd.org
-# $FreeBSD: head/sysutils/mbgtools/Makefile 441849 2017-05-27 15:33:43Z linimon $
+# $FreeBSD: head/sysutils/mbgtools/Makefile 448871 2017-08-28 15:16:50Z gnn $
 
 PORTNAME=	mbgtools
-DISTVERSION=	fbsd-dev-2013-06-26
+DISTVERSION=	fbsd-1.0.0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.meinberg.de/download/drivers/
+
 
 MAINTAINER=	gnn@FreeBSD.org
 COMMENT=	Drivers and tools for Meinberg PTP/GPS cards

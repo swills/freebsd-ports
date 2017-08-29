@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 448594 2017-08-23 09:29:54Z rene $
+# $FreeBSD: head/mail/Makefile 448747 2017-08-26 01:18:16Z dbaio $
 #
 
     COMMENT = Electronic mail utilities
@@ -643,6 +643,7 @@
     SUBDIR += slapd-cyrus
     SUBDIR += sma
     SUBDIR += smfsav
+    SUBDIR += smfsav-devel
     SUBDIR += smtp-cli
     SUBDIR += smtp-gated
     SUBDIR += smtpfeed

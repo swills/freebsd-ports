@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/qt5-webkit/Makefile 448361 2017-08-20 08:45:48Z tcberner $
+# $FreeBSD: head/www/qt5-webkit/Makefile 448821 2017-08-27 14:06:05Z rakuco $
 
 PORTNAME=		webkit
 DISTVERSION=		5.212.0-alpha2
+PORTREVISION=		1
 CATEGORIES=		www
 MASTER_SITES=		https://github.com/annulen/${PORTNAME}/releases/download/${DISTNAME}/
 PKGNAMEPREFIX=		qt5-
@@ -45,5 +46,8 @@ CMAKE_ARGS=		-DPORT:STRING="Qt" \
 CXXFLAGS+=		-DNDEBUG
 
 PLIST_SUB=		FULLVER="${PORTVERSION:R}"
+
+SUB_FILES=		pkg-install
+SUB_LIST=		QT_INCDIR="${QT_INCDIR}"
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Pawel Pekala <c0rn@o2.pl>
-# $FreeBSD: head/mail/claws-mail-pdf_viewer/Makefile 438695 2017-04-17 14:07:47Z pawel $
+# $FreeBSD: head/mail/claws-mail-pdf_viewer/Makefile 448669 2017-08-24 13:45:13Z swills $
 
 PORTNAME=	pdf_viewer
-PORTREVISION=	0
+PORTREVISION=	1
 
 COMMENT=	PDF and PostScript viewer plugin for Claws Mail
 

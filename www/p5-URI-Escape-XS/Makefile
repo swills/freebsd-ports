@@ -1,8 +1,8 @@
 # Created by: Denis Pokataev <catone@cpan.org>
-# $FreeBSD: head/www/p5-URI-Escape-XS/Makefile 390885 2015-06-29 08:15:11Z culot $
+# $FreeBSD: head/www/p5-URI-Escape-XS/Makefile 448670 2017-08-24 14:06:44Z culot $
 
 PORTNAME=	URI-Escape-XS
-PORTVERSION=	0.13
+PORTVERSION=	0.14
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -15,5 +15,8 @@ LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	configure
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/URI/Escape/XS/XS.so
 
 .include <bsd.port.mk>

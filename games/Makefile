@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 448603 2017-08-23 11:33:26Z rene $
+# $FreeBSD: head/games/Makefile 448887 2017-08-28 19:27:28Z amdmi3 $
 #
 
     COMMENT = Games and related software
@@ -32,6 +32,7 @@
     SUBDIR += agame
     SUBDIR += ags
     SUBDIR += aisleriot
+    SUBDIR += aklabeth
     SUBDIR += alephone
     SUBDIR += alephone-data
     SUBDIR += alephone-scenarios
@@ -702,6 +703,7 @@
     SUBDIR += openomf
     SUBDIR += openpref
     SUBDIR += openra
+    SUBDIR += openrct2
     SUBDIR += opensfx
     SUBDIR += opensonic
     SUBDIR += openspades

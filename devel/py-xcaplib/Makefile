@@ -1,20 +1,17 @@
 # Created by: Eugene Grosbein <ports@grosbein.net>
-# $FreeBSD: head/devel/py-xcaplib/Makefile 448558 2017-08-22 16:40:58Z sunpoet $
+# $FreeBSD: head/devel/py-xcaplib/Makefile 448678 2017-08-24 14:20:02Z sunpoet $
 
 PORTNAME=	xcaplib
-PORTVERSION=	1.0.16
-PORTREVISION=	2
+PORTVERSION=	1.2.0
 CATEGORIES=	devel python
-MASTER_SITES=	http://download.ag-projects.com/XCAP/ \
-		http://grosbein.net/python/
+MASTER_SITES=	http://download.ag-projects.com/XCAP/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	python-${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	python@FreeBSD.org
 COMMENT=	Python XCAP client library
 
-LICENSE=	LGPL20 LGPL21 LGPL3
-LICENSE_COMB=	dual
+LICENSE=	LGPL20+
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}application>=1.1.5:devel/py-application \
 		${PYTHON_PKGNAMEPREFIX}lxml>=2.1.2:devel/py-lxml \

@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-rinku/Makefile 430056 2016-12-30 19:22:57Z sunpoet $
+# $FreeBSD: head/www/rubygem-rinku/Makefile 448685 2017-08-24 14:20:40Z sunpoet $
 
 PORTNAME=	rinku
-PORTVERSION=	2.0.2
+PORTVERSION=	2.0.3
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

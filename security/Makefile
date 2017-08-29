@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 448603 2017-08-23 11:33:26Z rene $
+# $FreeBSD: head/security/Makefile 448867 2017-08-28 13:02:24Z adamw $
 #
 
     COMMENT = Security tools
@@ -179,6 +179,7 @@
     SUBDIR += gnupg
     SUBDIR += gnupg1
     SUBDIR += gnupg20
+    SUBDIR += gnupg22
     SUBDIR += gnutls
     SUBDIR += go.crypto
     SUBDIR += go-cve-dictionary

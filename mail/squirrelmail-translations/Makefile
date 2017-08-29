@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/mail/squirrelmail-translations/Makefile 448571 2017-08-22 17:26:08Z swills $
+# $FreeBSD: head/mail/squirrelmail-translations/Makefile 448804 2017-08-27 06:27:51Z riggs $
 
 PORTNAME=	squirrelmail-translations
 PORTVERSION=	20170705
@@ -19,6 +19,7 @@ RUN_DEPENDS=	squirrelmail>=${PORTVERSION}:mail/squirrelmail
 USES=		tar:bzip2 gettext
 WRKSRC=		${WRKDIR}/squirrelmail.locales
 NO_ARCH=	yes
+PORTSCOUT=	ignore
 
 # if you were using WITHOUT_WWWDIR, use SQUIRRELDIR=${PREFIX}/squirrelmail
 SQUIRRELDIR?=	${PREFIX}/www/squirrelmail

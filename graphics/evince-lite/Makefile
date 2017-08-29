@@ -1,7 +1,7 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/graphics/evince-lite/Makefile 430778 2017-01-07 10:42:51Z olivierd $
+# $FreeBSD: head/graphics/evince-lite/Makefile 448690 2017-08-24 15:49:34Z swills $
 
-PORTREVISION=	1
+PORTREVISION=	2
 PKGNAMESUFFIX=	-lite
 
 COMMENT=	GNOME 3 multi-format document viewer without the GNOME dependancies

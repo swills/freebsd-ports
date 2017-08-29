@@ -1,12 +1,11 @@
 # Created by: msmith
-# $FreeBSD: head/net/citrix_ica/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/net/citrix_ica/Makefile 448696 2017-08-24 16:41:35Z ehaupt $
 
 PORTNAME=	citrix_ica
-PORTVERSION=	13.4.0
-PORTREVISION=	1
+PORTVERSION=	13.6.0
 CATEGORIES=	net comms linux
 MASTER_SITES=	#
-DISTNAME=	linuxx86-${PORTVERSION}.10109380
+DISTNAME=	linuxx86-${PORTVERSION}.10243651
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Citrix(R) Presentation Server(TM) client

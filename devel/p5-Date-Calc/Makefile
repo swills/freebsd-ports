@@ -1,5 +1,5 @@
 # Created by: Brad Hendrickse <bradh@uunet.co.za>
-# $FreeBSD: head/devel/p5-Date-Calc/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Date-Calc/Makefile 448793 2017-08-27 00:36:38Z sunpoet $
 
 PORTNAME=	Date-Calc
 PORTVERSION=	6.4
@@ -13,10 +13,11 @@ COMMENT=	Gregorian calendar date calculations
 LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual
 
-RUN_DEPENDS=	p5-Bit-Vector>=7.4:math/p5-Bit-Vector \
+BUILD_DEPENDS=	p5-Bit-Vector>=7.4:math/p5-Bit-Vector \
 		p5-Carp-Clan>=6.04:devel/p5-Carp-Clan
-BUILD_DEPENDS:=	${RUN_DEPENDS}
+RUN_DEPENDS:=	${BUILD_DEPENDS}
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

@@ -1,8 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/x11/gxkb/Makefile 441824 2017-05-27 03:16:40Z danfe $
+# $FreeBSD: head/x11/gxkb/Makefile 448720 2017-08-25 15:33:47Z danfe $
 
 PORTNAME=	gxkb
-PORTVERSION=	0.7.9
+PORTVERSION=	0.8.0
 CATEGORIES=	x11
 MASTER_SITES=	SF/${PORTNAME}
 

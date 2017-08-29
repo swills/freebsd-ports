@@ -1,8 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/audio/flacon/Makefile 444118 2017-06-22 16:15:21Z danfe $
+# $FreeBSD: head/audio/flacon/Makefile 448724 2017-08-25 18:14:00Z danfe $
 
 PORTNAME=	flacon
-PORTVERSION=	3.0.0
+PORTVERSION=	3.1.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	audio
 

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/swh-lv2/Makefile 448345 2017-08-19 17:48:03Z ultima $
+# $FreeBSD: head/audio/swh-lv2/Makefile 448703 2017-08-24 19:08:20Z ultima $
 
 PORTNAME=	swh
 DISTVERSION=	1.0.16-4
@@ -20,7 +20,6 @@ LIB_DEPENDS=	libfftw3f.so:math/fftw3-float
 
 USES=		gmake pkgconfig localbase
 USE_GITHUB=	yes
-GH_ACCOUNT=	swh
 GH_PROJECT=	lv2
 
 post-install:

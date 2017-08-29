@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/electrix/Makefile 436494 2017-03-19 14:02:23Z rene $
+# $FreeBSD: head/graphics/electrix/Makefile 448669 2017-08-24 13:45:13Z swills $
 
 PORTNAME=	electrix
 PORTVERSION=	0.2.0
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	graphics print
 MASTER_SITES=	SF/${PORTNAME:tl}/${PORTVERSION}
 

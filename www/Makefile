@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 448644 2017-08-24 01:39:16Z jkim $
+# $FreeBSD: head/www/Makefile 448723 2017-08-25 17:56:42Z bsam $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1791,6 +1791,7 @@
     SUBDIR += py-pysearch
     SUBDIR += py-python-digitalocean
     SUBDIR += py-pywebdav
+    SUBDIR += py-pyweblib
     SUBDIR += py-pywikibot
     SUBDIR += py-qp
     SUBDIR += py-qpy
@@ -1862,7 +1863,6 @@
     SUBDIR += pycarddav
     SUBDIR += pydio
     SUBDIR += pyjamas
-    SUBDIR += pyweblib
     SUBDIR += qdecoder
     SUBDIR += qooxdoo
     SUBDIR += qt4-webkit

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 448654 2017-08-24 09:06:59Z tz $
+# $FreeBSD: head/databases/Makefile 448782 2017-08-26 19:06:01Z dbaio $
 #
 
     COMMENT = Databases and related software
@@ -159,7 +159,6 @@
     SUBDIR += libpbl
     SUBDIR += libpqtypes
     SUBDIR += libsdb
-    SUBDIR += libzbxpgsql
     SUBDIR += libzdb
     SUBDIR += linux-c6-sqlite3
     SUBDIR += linux-c7-sqlite3
@@ -1043,6 +1042,9 @@
     SUBDIR += xapian-core10
     SUBDIR += xapian-core12
     SUBDIR += xtrabackup
+    SUBDIR += zabbix22-libzbxpgsql
+    SUBDIR += zabbix3-libzbxpgsql
+    SUBDIR += zabbix32-libzbxpgsql
     SUBDIR += zodb3
 
 .include <bsd.port.subdir.mk>
