@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/security/parano/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/security/parano/Makefile 448922 2017-08-29 14:43:03Z amdmi3 $
 
 PORTNAME=	parano
 PORTVERSION=	0.3.5
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	security
 MASTER_SITES=	BERLIOS
 
@@ -14,11 +14,10 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USE_GNOME=	pygnome2 intltool
-USES=		desktop-file-utils gettext gmake python shared-mime-info
+USES=		desktop-file-utils gettext gmake localbase python shared-mime-info shebangfix
+SHEBANG_FILES=	src/parano.py
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-update-mime-database
-
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

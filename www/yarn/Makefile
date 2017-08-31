@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/yarn/Makefile 445190 2017-07-06 20:58:40Z sunpoet $
+# $FreeBSD: head/www/yarn/Makefile 448911 2017-08-29 13:05:21Z pizzamig $
 
 PORTNAME=	yarn
 DISTVERSIONPREFIX=	v
@@ -6,7 +6,7 @@ DISTVERSION=	0.27.5
 CATEGORIES=	www
 MASTER_SITES=	https://yarnpkg.com/downloads/${PORTVERSION}/
 
-MAINTAINER=	luca.pizzamiglio@gmail.com
+MAINTAINER=	pizzamig@FreeBSD.org
 COMMENT=	Package manager for node, alternative to npm
 
 LICENSE=	BSD2CLAUSE

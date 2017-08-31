@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/www/R-cran-shiny/Makefile 440030 2017-05-03 18:57:56Z tota $
+# $FreeBSD: head/www/R-cran-shiny/Makefile 448969 2017-08-30 10:56:20Z tota $
 
 PORTNAME=	shiny
-PORTVERSION=	1.0.3
+PORTVERSION=	1.0.5
 CATEGORIES=	www
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
@@ -12,7 +12,7 @@ COMMENT=	Web Application Framework for R
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-CRAN_DEPENDS=	R-cran-httpuv>=1.3.3:www/R-cran-httpuv \
+CRAN_DEPENDS=	R-cran-httpuv>=1.3.5:www/R-cran-httpuv \
 		R-cran-mime>=0.3:misc/R-cran-mime \
 		R-cran-jsonlite>=0.9.16:converters/R-cran-jsonlite \
 		R-cran-xtable>0:textproc/R-cran-xtable \

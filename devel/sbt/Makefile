@@ -1,10 +1,10 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/devel/sbt/Makefile 438333 2017-04-12 07:39:32Z ale $
+# $FreeBSD: head/devel/sbt/Makefile 448975 2017-08-30 12:19:45Z ale $
 
 PORTNAME=	sbt
-PORTVERSION=	0.13.15
+PORTVERSION=	1.0.0
 CATEGORIES=	devel java
-MASTER_SITES=	http://dl.bintray.com/sbt/native-packages/sbt/${PORTVERSION}/
+MASTER_SITES=	https://github.com/sbt/sbt/releases/download/v${PORTVERSION}/
 
 MAINTAINER=	ale@FreeBSD.org
 COMMENT=	Build tool for Scala projects

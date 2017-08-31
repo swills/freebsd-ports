@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/lang/perl5-devel/Makefile 448863 2017-08-28 12:41:55Z mat $
+# $FreeBSD: head/lang/perl5-devel/Makefile 448910 2017-08-29 12:45:42Z mat $
 
 PORTNAME=	perl
 # XXX Remove second line, uncomment first
@@ -45,7 +45,7 @@ OPTIONS_EXCLUDE_FreeBSD_10=	DTRACE
 .if !exists(/usr/sbin/dtrace)
 OPTIONS_EXCLUDE+=	DTRACE
 .endif
-.for a in aarch64 arm armeb armv6 mips mips64 mips64el mipsel mipsn32 powerpc \
+.for a in aarch64 arm armeb armv6 armv7 mips mips64 mips64el mipsel mipsn32 powerpc \
 	powerpc64 sparc64
 OPTIONS_EXCLUDE_${a}=	DTRACE
 .endfor

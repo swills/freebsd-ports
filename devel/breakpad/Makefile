@@ -1,11 +1,11 @@
 # Created by: Luca Pizzamiglio <luca.pizzamiglio@gmail.com>
-# $FreeBSD: head/devel/breakpad/Makefile 448689 2017-08-24 15:04:51Z mmokhi $
+# $FreeBSD: head/devel/breakpad/Makefile 448911 2017-08-29 13:05:21Z pizzamig $
 
 PORTNAME=	breakpad
 DISTVERSION=	g20170811
 CATEGORIES=	devel
 
-MAINTAINER=	luca.pizzamiglio@gmail.com
+MAINTAINER=	pizzamig@FreeBSD.org
 COMMENT=	Client/server based crash-reporting system
 
 LICENSE=	BSD3CLAUSE

@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/grpc/Makefile 448041 2017-08-16 15:44:48Z sunpoet $
+# $FreeBSD: head/devel/grpc/Makefile 448898 2017-08-29 09:31:08Z vanilla $
 
 PORTNAME=	grpc
 PORTVERSION=	1.4.5
@@ -22,12 +22,11 @@ USE_GITHUB=	yes
 GH_TUPLE=	google:boringssl:ba2d3df:boringssl/third_party/boringssl \
 		google:benchmark:v1.2.0:benchmark/third_party/benchmark
 
-USES=		cmake perl5 pkgconfig
+USES=		cmake localbase:ldflags perl5 pkgconfig
 USE_LDCONFIG=	yes
 USE_PERL5=	build
 PLIST_SUB+=	SOVERSION=${PORTVERSION}
-CFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib -lpthread -lcares -lm
+LDFLAGS+=	-lcares
 CMAKE_ARGS=	-DgRPC_ZLIB_PROVIDER:STRING="package" \
 		-DgRPC_PROTOBUF_PROVIDER:STRING="package" \
 		-DgRPC_GFLAGS_PROVIDER:STRING="package" \

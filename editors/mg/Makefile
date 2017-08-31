@@ -1,8 +1,8 @@
 # Created by: Dima Dorfman <dima@unixfreak.org>
-# $FreeBSD: head/editors/mg/Makefile 437687 2017-04-04 07:33:01Z tobik $
+# $FreeBSD: head/editors/mg/Makefile 448897 2017-08-29 09:04:40Z tobik $
 
 PORTNAME=	mg
-PORTVERSION=	20170401
+PORTVERSION=	20170828
 CATEGORIES=	editors
 MASTER_SITES=	http://homepage.boetes.org/software/mg/
 

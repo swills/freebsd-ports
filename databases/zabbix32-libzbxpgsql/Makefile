@@ -1,5 +1,5 @@
 # Created by: Martin Waschbuesch <martin@waschbuesch.de>
-# $FreeBSD: head/databases/zabbix32-libzbxpgsql/Makefile 448782 2017-08-26 19:06:01Z dbaio $
+# $FreeBSD: head/databases/zabbix32-libzbxpgsql/Makefile 448940 2017-08-29 23:43:05Z dbaio $
 
 PORTNAME=	libzbxpgsql
 PORTVERSION=	1.1.0
@@ -31,6 +31,8 @@ CONFIGURE_ARGS=	--with-zabbix=$$(${GET_ZBX_WRKSRC})
 USE_LDCONFIG=	yes
 
 OPTIONS_DEFINE=	EXAMPLES
+
+PORTSCOUT=	skipv:latest,gh-pages
 
 do-install:
 		${INSTALL_LIB} ${WRKSRC}/src/.libs/libzbxpgsql.so ${STAGEDIR}${PREFIX}/lib/libzbxpgsql.so

@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gnustep-gui/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/x11-toolkits/gnustep-gui/Makefile 448921 2017-08-29 14:42:44Z amdmi3 $
 
 PORTNAME=	gnustep-gui
 PORTVERSION=	0.25.1
@@ -64,5 +64,8 @@ pre-configure:
 .for file in config.guess config.sub install-sh
 	@${CP} ${GNUSTEP_PREFIX}/System/Library/Makefiles/${file} ${WRKSRC}
 .endfor
+
+post-install-DOCS-off:
+	@${FIND} -d ${STAGEDIR}${PREFIX}/GNUstep/System/Library/Documentation -type d -empty -delete
 
 .include <bsd.port.mk>

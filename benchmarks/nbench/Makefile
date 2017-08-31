@@ -1,13 +1,13 @@
 # Created by: Andrey Zakhvatov <andy@FreeBSD.org>
-# $FreeBSD: head/benchmarks/nbench/Makefile 390097 2015-06-19 00:42:51Z amdmi3 $
+# $FreeBSD: head/benchmarks/nbench/Makefile 449002 2017-08-30 20:17:30Z pizzamig $
 
 PORTNAME=	nbench
 PORTVERSION=	2.2.3
 CATEGORIES=	benchmarks
-MASTER_SITES=	http://www.tux.org/~mayer/linux/
+MASTER_SITES=	http://www.math.utah.edu/~mayer/linux/
 DISTNAME=	${PORTNAME}-byte-${PORTVERSION}
 
-MAINTAINER=	luca.pizzamiglio@gmail.com
+MAINTAINER=	pizzamig@FreeBSD.org
 COMMENT=	BYTE Magazine's native benchmarks
 
 ALL_TARGET=	# empty

@@ -1,5 +1,5 @@
 # Created by: Stefan A. Deutscher (sad@mailaps.org)
-# $FreeBSD: head/math/ndiff/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/ndiff/Makefile 448911 2017-08-29 13:05:21Z pizzamig $
 
 PORTNAME=	ndiff
 PORTVERSION=	2.00
@@ -7,7 +7,7 @@ PORTREVISION=	4
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp.math.utah.edu/pub/misc/
 
-MAINTAINER=	luca.pizzamiglio@gmail.com
+MAINTAINER=	pizzamig@FreeBSD.org
 COMMENT=	Compare files, ignoring numeric differences
 
 LICENSE=	GPLv2

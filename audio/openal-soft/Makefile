@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/openal-soft/Makefile 448269 2017-08-18 19:34:29Z swills $
+# $FreeBSD: head/audio/openal-soft/Makefile 448999 2017-08-30 19:40:14Z emaste $
 
 PORTNAME=	openal-soft
 PORTVERSION=	1.18.0
@@ -16,6 +16,7 @@ CONFLICTS=	openal-200[0-9]*
 
 USES=		tar:bzip2 cmake compiler:c11
 USE_LDCONFIG=	yes
+LLD_UNSAFE=	yes
 CMAKE_ARGS=	-DSHARE_INSTALL_DIR:STRING=${ETCDIR} \
 		-DALSOFT_REQUIRE_OSS:BOOL=OFF \
 		-DALSOFT_REQUIRE_JACK:BOOL=OFF \

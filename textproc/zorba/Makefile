@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/textproc/zorba/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/textproc/zorba/Makefile 448904 2017-08-29 11:15:24Z amdmi3 $
 
 PORTNAME=	zorba
 PORTVERSION=	2.7.0
@@ -103,7 +103,7 @@ post-patch:
 post-install:
 	${LN} -sf libzorba_simplestore.so.${PORTVERSION} ${STAGEDIR}${PREFIX}/lib/libzorba_simplestore.so.${PORTVERSION:R:R}
 .if ${PORT_OPTIONS:MDOCS} && !${PORT_OPTIONS:MDOXYGEN}
-	cd ${STAGEDIR}${DOCSDIR} && rmdir c/html code/html code cxx/html zorba/html
+	cd ${STAGEDIR}${DOCSDIR} && ${RMDIR} c/html code/html code cxx/html zorba/html zorba/xqdoc zorba
 .endif
 
 test:	build

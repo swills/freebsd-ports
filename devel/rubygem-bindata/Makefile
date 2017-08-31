@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv at kvedulv.de>
-# $FreeBSD: head/devel/rubygem-bindata/Makefile 438244 2017-04-11 00:48:42Z sunpoet $
+# $FreeBSD: head/devel/rubygem-bindata/Makefile 449013 2017-08-31 06:50:35Z sunpoet $
 
 PORTNAME=	bindata
-PORTVERSION=	2.4.0
+PORTVERSION=	2.4.1
 CATEGORIES=	devel ruby
 MASTER_SITES=	RG
 

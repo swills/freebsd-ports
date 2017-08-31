@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/erlang-mochiweb/Makefile 430593 2017-01-04 20:46:17Z olgeni $
+# $FreeBSD: head/www/erlang-mochiweb/Makefile 448918 2017-08-29 14:11:55Z olgeni $
 
 PORTNAME=	mochiweb
-PORTVERSION=	2.16.0
+PORTVERSION=	2.17.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www devel
 PKGNAMEPREFIX=	erlang-

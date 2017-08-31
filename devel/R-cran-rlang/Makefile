@@ -1,10 +1,10 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-rlang/Makefile 441206 2017-05-19 01:34:59Z tota $
+# $FreeBSD: head/devel/R-cran-rlang/Makefile 448960 2017-08-30 05:28:01Z tota $
 
 PORTNAME=	rlang
-PORTVERSION=	0.1.1
+PORTVERSION=	0.1.2
 CATEGORIES=	devel
-DISTNAME=	${PORTNAME}_${DISTVERSION}
+DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	tota@FreeBSD.org
 COMMENT=	Functions for Base Types and Core R and 'Tidyverse' Features

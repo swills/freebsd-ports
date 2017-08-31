@@ -1,8 +1,9 @@
 # Created by: Juergen Lock <nox@jelal.kn-bremen.de>
-# $FreeBSD: head/emulators/qemu-sbruno/Makefile 448742 2017-08-25 22:53:16Z sbruno $
+# $FreeBSD: head/emulators/qemu-sbruno/Makefile 448935 2017-08-29 18:22:54Z sbruno $
 
 PORTNAME=	qemu
 PORTVERSION=	2.9.94.g20170825
+PORTREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	GH
 PKGNAMESUFFIX?=	-sbruno

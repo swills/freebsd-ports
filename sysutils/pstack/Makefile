@@ -1,11 +1,11 @@
 # Created by: Peter Edwards <pmedwards@eircom.net>
-# $FreeBSD: head/sysutils/pstack/Makefile 414880 2016-05-09 18:41:02Z pi $
+# $FreeBSD: head/sysutils/pstack/Makefile 448911 2017-08-29 13:05:21Z pizzamig $
 
 PORTNAME=	pstack
 PORTVERSION=	1.3
 CATEGORIES=	sysutils
 
-MAINTAINER=	luca.pizzamiglio@gmail.com
+MAINTAINER=	pizzamig@FreeBSD.org
 COMMENT=	Retrieve process/core file stack traces
 
 LICENSE=	BSD2CLAUSE

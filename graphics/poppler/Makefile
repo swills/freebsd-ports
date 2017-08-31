@@ -1,5 +1,5 @@
 # Created by: marcus@FreeBSD.org
-# $FreeBSD: head/graphics/poppler/Makefile 448642 2017-08-24 01:02:59Z swills $
+# $FreeBSD: head/graphics/poppler/Makefile 449018 2017-08-31 09:14:40Z kwm $
 
 PORTNAME=	poppler
 PORTVERSION=	0.57.0
@@ -118,7 +118,7 @@ PLIST_SUB+=	CURL="@comment "
 CONFIGURE_ARGS+=--enable-libopenjpeg=openjpeg2
 LIB_DEPENDS+=	libopenjp2.so:graphics/openjpeg
 .else
-CONFIGURE_ARGS+=--disable-libopenjpeg
+CONFIGURE_ARGS+=--enable-libopenjpeg=none
 .endif
 .endif # end of options
 

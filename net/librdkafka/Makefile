@@ -1,12 +1,12 @@
 # Created by: Victor Yagofarov <xnasx@yandex.ru>
-# $FreeBSD: head/net/librdkafka/Makefile 448220 2017-08-18 12:19:27Z swills $
+# $FreeBSD: head/net/librdkafka/Makefile 448911 2017-08-29 13:05:21Z pizzamig $
 
 PORTNAME=	librdkafka
 PORTVERSION=	0.11.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 
-MAINTAINER=	luca.pizzamiglio@gmail.com
+MAINTAINER=	pizzamig@FreeBSD.org
 COMMENT=	Apache Kafka C/C++ library
 
 LICENSE=	BSD2CLAUSE

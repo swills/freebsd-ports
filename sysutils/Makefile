@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 448888 2017-08-28 21:28:17Z romain $
+# $FreeBSD: head/sysutils/Makefile 448995 2017-08-30 18:11:06Z dvl $
 #
 
     COMMENT = System utilities
@@ -79,6 +79,11 @@
     SUBDIR += bacula5-client-static
     SUBDIR += bacula5-docs
     SUBDIR += bacula5-server
+    SUBDIR += bacula9-bat
+    SUBDIR += bacula9-client
+    SUBDIR += bacula9-client-static
+    SUBDIR += bacula9-docs
+    SUBDIR += bacula9-server
     SUBDIR += baloo
     SUBDIR += baloo-widgets
     SUBDIR += bamf

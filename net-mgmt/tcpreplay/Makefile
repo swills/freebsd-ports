@@ -1,9 +1,10 @@
 # Created by: cnh@ivmg.net
-# $FreeBSD: head/net-mgmt/tcpreplay/Makefile 441114 2017-05-17 18:48:09Z ehaupt $
+# $FreeBSD: head/net-mgmt/tcpreplay/Makefile 449020 2017-08-31 09:55:58Z ehaupt $
 
 PORTNAME=	tcpreplay
 PORTVERSION=	4.2.6
 DISTVERSIONPREFIX=	v
+PORTREVISION=	3
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	ehaupt@FreeBSD.org
@@ -26,6 +27,17 @@ CONFIGURE_ARGS=	--program-transform-name='s|.*\(tcp.*\)|\1|' \
 
 # required when using autogen
 CONFIGURE_ARGS+=	--disable-local-libopts --disable-libopts-install
+
+LIBPCAP_BASE_DESC=	Build with libpcap from the base OS
+LIBPCAP_PORTS_DESC=	Build with net/libpcap
+
+OPTIONS_SINGLE=		LIBPCAP
+OPTIONS_SINGLE_LIBPCAP=	LIBPCAP_BASE LIBPCAP_PORTS
+
+OPTIONS_DEFAULT=	LIBPCAP_BASE
+
+LIBPCAP_BASE_CONFIGURE_ON=	--with-libpcap=/usr/lib
+LIBPCAP_PORTS_LIB_DEPENDS=	libpcap.so:net/libpcap
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|-Wall -O3||' ${WRKSRC}/${CONFIGURE_SCRIPT}.ac

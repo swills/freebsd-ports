@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-mize/Makefile 445100 2017-07-05 23:55:05Z sunpoet $
+# $FreeBSD: head/devel/rubygem-mize/Makefile 448932 2017-08-29 17:25:56Z sunpoet $
 
 PORTNAME=	mize
-PORTVERSION=	0.3.2
+PORTVERSION=	0.3.3
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

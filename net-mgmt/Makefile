@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 448743 2017-08-25 23:25:42Z dbaio $
+# $FreeBSD: head/net-mgmt/Makefile 448995 2017-08-30 18:11:06Z dvl $
 #
 
     COMMENT = Network management tools
@@ -131,6 +131,7 @@
     SUBDIR += nagios-certexp-plugin
     SUBDIR += nagios-check_bacula
     SUBDIR += nagios-check_bacula5
+    SUBDIR += nagios-check_bacula9
     SUBDIR += nagios-check_clamav
     SUBDIR += nagios-check_cpu_usage
     SUBDIR += nagios-check_dhcp.pl

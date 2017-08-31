@@ -1,5 +1,5 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/devel/cccc/Makefile 414149 2016-04-28 00:36:35Z wen $
+# $FreeBSD: head/devel/cccc/Makefile 448911 2017-08-29 13:05:21Z pizzamig $
 
 PORTNAME=	cccc
 PORTVERSION=	3.1.4
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	devel textproc www
 MASTER_SITES=	SF
 
-MAINTAINER=	luca.pizzamiglio@gmail.com
+MAINTAINER=	pizzamig@FreeBSD.org
 COMMENT=	C and C++ Code Counter
 
 LICENSE=	GPLv2+

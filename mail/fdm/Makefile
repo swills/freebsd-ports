@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/mail/fdm/Makefile 444162 2017-06-23 00:05:56Z dinoex $
+# $FreeBSD: head/mail/fdm/Makefile 448968 2017-08-30 10:33:51Z danfe $
 
 PORTNAME=	fdm
 PORTVERSION=	1.9
@@ -12,8 +12,6 @@ COMMENT=	Fetches and delivers mail
 LICENSE=	ISCL
 
 LIB_DEPENDS=	libtdb.so:databases/tdb
-
-MAKE_JOBS_UNSAFE=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	nicm
@@ -34,6 +32,7 @@ PCRE_LIB_DEPENDS=libpcre.so:devel/pcre
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/etc|${PREFIX}/etc|g' ${WRKSRC}/*.[15] ${WRKSRC}/MANUAL
+	@${ECHO_CMD} 'lex.c: parse.h' >> ${WRKSRC}/Makefile.am
 
 pre-configure:
 	@cd ${WRKSRC} && sh autogen.sh

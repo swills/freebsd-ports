@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/schiff/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/games/schiff/Makefile 448992 2017-08-30 16:25:09Z amdmi3 $
 
 PORTNAME=	schiff
 PORTVERSION=	16
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games python
 MASTER_SITES=	SF/pygamebook/${PORTNAME:S/s/S/}/${PORTNAME}${PORTVERSION}.py/ \
 		SF/nemysisfreebsdp/games/:icons
@@ -19,8 +19,11 @@ LICENSE=	GPLv2+
 
 RUN_DEPENDS=	${PYGAME}
 
-USES=		python:2,run
+USES=		python:2,run shebangfix
+SHEBANG_FILES=	schiff.py
 NO_BUILD=	yes
+NO_WRKSUBDIR=	yes
+NO_ARCH=	yes
 
 SUB_FILES=	${PORTNAME}
 
@@ -31,14 +34,14 @@ PLIST_FILES=	bin/${PORTNAME} \
 DESKTOP_ENTRIES="Schiff" "" ${PORTNAME} \
 		"${PORTNAME}" "Game;LogicGame;" ""
 
+do-extract:
+	@${CP} ${_DISTDIR}/schiff${PORTVERSION}.py ${WRKSRC}/${PORTNAME}.py
+
 do-install:
-	@${REINPLACE_CMD} -e 's|%%PYTHON_CMD%%|${PYTHON_CMD}|' \
-		${WRKDIR}/${PORTNAME}
 	${INSTALL_SCRIPT} ${WRKDIR}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin/
 	@${MKDIR} ${STAGEDIR}${DATADIR}
-	${INSTALL_SCRIPT} ${_DISTDIR}/schiff${PORTVERSION}.py \
-		${STAGEDIR}${DATADIR}/${PORTNAME}.py
-
+	${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME}.py \
+		${STAGEDIR}${DATADIR}
 	${INSTALL_DATA} ${_DISTDIR}/${PORTNAME}.png \
 		${STAGEDIR}${PREFIX}/share/pixmaps/
 

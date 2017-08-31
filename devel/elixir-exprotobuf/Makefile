@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-exprotobuf/Makefile 444935 2017-07-03 10:43:11Z olgeni $
+# $FreeBSD: head/devel/elixir-exprotobuf/Makefile 448953 2017-08-30 01:54:21Z olgeni $
 
 PORTNAME=	exprotobuf
-DISTVERSION=	1.2.8
+DISTVERSION=	1.2.9
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/elixir-estree/Makefile 439359 2017-04-25 06:01:14Z olgeni $
+# $FreeBSD: head/devel/elixir-estree/Makefile 448916 2017-08-29 13:31:46Z olgeni $
 
 PORTNAME=	elixir-estree
-PORTVERSION=	2.6.0
+PORTVERSION=	2.6.1
+DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
 MAINTAINER=	olgeni@FreeBSD.org

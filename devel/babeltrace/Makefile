@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/babeltrace/Makefile 448291 2017-08-19 09:03:22Z joneum $
+# $FreeBSD: head/devel/babeltrace/Makefile 448911 2017-08-29 13:05:21Z pizzamig $
 
 PORTNAME=	babeltrace
 PORTVERSION=	1.5.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
-MAINTAINER=	luca.pizzamiglio@gmail.com
+MAINTAINER=	pizzamig@FreeBSD.org
 COMMENT=	Tool and library to read, write and convert execution traces
 
 # license is complicated

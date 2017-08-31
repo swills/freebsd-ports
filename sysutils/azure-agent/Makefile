@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/azure-agent/Makefile 445748 2017-07-14 12:30:49Z garga $
+# $FreeBSD: head/sysutils/azure-agent/Makefile 448962 2017-08-30 08:05:21Z bapt $
 
 PORTNAME=	azure-agent
-PORTVERSION=	2.2.13
+PORTVERSION=	2.2.14
 DISTVERSIONPREFIX=	v
 PORTREVISION=	1
 CATEGORIES=	sysutils
@@ -15,6 +15,7 @@ RUN_DEPENDS=	python:lang/python \
 		sudo:security/sudo \
 		bash:shells/bash \
 		base64:converters/base64 \
+		dmidecode:sysutils/dmidecode \
 		${PYTHON_PKGNAMEPREFIX}pyasn1>=0:devel/py-pyasn1 \
 		${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 448535 2017-08-22 14:48:14Z swills $
+# $FreeBSD: head/textproc/Makefile 448958 2017-08-30 03:40:04Z araujo $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1352,6 +1352,7 @@
     SUBDIR += py-sphinxcontrib-fulltoc
     SUBDIR += py-sphinxcontrib-httpdomain
     SUBDIR += py-sphinxcontrib-programoutput
+    SUBDIR += py-sphinxcontrib-websupport
     SUBDIR += py-stemming
     SUBDIR += py-syck
     SUBDIR += py-tabletext

@@ -1,5 +1,5 @@
 # Created by: Heiner Eichmann <h.eichmann@gmx.de>
-# $FreeBSD: head/textproc/kdiff3/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/textproc/kdiff3/Makefile 448911 2017-08-29 13:05:21Z pizzamig $
 
 PORTNAME=	kdiff3
 PORTVERSION=	0.9.98
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	textproc kde
 MASTER_SITES=	SF
 
-MAINTAINER=	luca.pizzamiglio@gmail.com
+MAINTAINER=	pizzamig@FreeBSD.org
 COMMENT=	KDE4 graphical frontend for diff
 
 LICENSE=	GPLv2

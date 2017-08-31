@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/elixir-maru/Makefile 436440 2017-03-18 18:24:53Z olgeni $
+# $FreeBSD: head/www/elixir-maru/Makefile 448919 2017-08-29 14:32:48Z olgeni $
 
 PORTNAME=	maru
-PORTVERSION=	0.11.4
+PORTVERSION=	0.12.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	elixir-

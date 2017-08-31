@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/x11-fonts/code2000/Makefile 386097 2015-05-11 18:34:57Z mat $
+# $FreeBSD: head/x11-fonts/code2000/Makefile 448966 2017-08-30 09:01:37Z amdmi3 $
 
 PORTNAME=	code2000
 PORTVERSION=	1.171
@@ -17,6 +17,7 @@ USES=		fonts zip
 SUB_FILES=	pkg-message
 
 NO_BUILD=	yes
+NO_ARCH=	yes
 
 post-extract:
 	${MKDIR} ${WRKSRC}

@@ -1,8 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/irc/bitlbee-facebook/Makefile 440101 2017-05-04 12:33:03Z gahr $
+# $FreeBSD: head/irc/bitlbee-facebook/Makefile 449019 2017-08-31 09:49:36Z gahr $
 
 PORTNAME=	bitlbee-facebook
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 DISTVERSIONPREFIX=v
 PORTEPOCH=	1
 CATEGORIES=	irc
@@ -19,6 +19,7 @@ BUILD_DEPENDS=	bitlbee:irc/bitlbee
 USES=		autoreconf gettext-runtime libtool pkgconfig
 USE_GNOME=	glib20
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS+=--with-plugindir=${PREFIX}/lib/bitlbee
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	bitlbee

@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/net/spideroak/Makefile 421387 2016-09-05 19:23:42Z tijl $
+# $FreeBSD: head/net/spideroak/Makefile 449026 2017-08-31 11:59:08Z amdmi3 $
 
 PORTNAME=	spideroak
 PORTVERSION=	6.0
@@ -35,8 +35,6 @@ SUB_FILES=	pkg-message
 USES=		desktop-file-utils linux python:2 tar:tgz
 USE_LINUX=	xorglibs
 
-.include <bsd.port.options.mk>
-
 post-patch:
 	${REINPLACE_CMD} -e 's,%%PREFIX%%,${PREFIX},1' \
 		-e 's,%%DATADIR%%,${DATADIR},1' \
@@ -55,11 +53,13 @@ do-install:
 	${LOCALBASE}/bin/desktop-file-install \
 		--mode=${SHAREMODE} --dir=${STAGEDIR}${DESKTOPDIR} \
 		${WRKSRC}/usr/share/applications/SpiderOakONE.desktop
+	${INSTALL_DATA} ${WRKSRC}/usr/share/pixmaps/*.png ${STAGEDIR}${PREFIX}/share/pixmaps/
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/usr/share/doc/SpiderOakONE/Getting\ Started\ Guide.pdf ${STAGEDIR}${DOCSDIR}
-.if ${PORT_OPTIONS:MMANPAGES}
+
+do-install-MANPAGES-on:
 	${INSTALL_MAN} ${WRKSRC}/usr/share/man/man1/SpiderOakONE.1.gz ${STAGEDIR}${MANPREFIX}/man/man1/
-.endif
-	${INSTALL_DATA} ${WRKSRC}/usr/share/pixmaps/*.png ${STAGEDIR}${PREFIX}/share/pixmaps/
 
 .include <bsd.port.mk>

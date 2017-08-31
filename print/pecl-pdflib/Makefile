@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/print/pecl-pdflib/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/print/pecl-pdflib/Makefile 448974 2017-08-30 12:18:53Z ale $
 
 PORTNAME=	pdflib
-PORTVERSION=	4.1.1
+PORTVERSION=	4.1.2
 CATEGORIES=	print pear
 
 MAINTAINER=	ale@FreeBSD.org

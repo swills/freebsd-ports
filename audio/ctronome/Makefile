@@ -1,12 +1,12 @@
 # Created by: Charles Mercadal <mercadal@diablonet.net>
-# $FreeBSD: head/audio/ctronome/Makefile 370385 2014-10-07 18:06:27Z amdmi3 $
+# $FreeBSD: head/audio/ctronome/Makefile 448911 2017-08-29 13:05:21Z pizzamig $
 
 PORTNAME=	ctronome
 PORTVERSION=	0.5.6
 CATEGORIES=	audio
 MASTER_SITES=	http://ctronome.kign.org/source/
 
-MAINTAINER=	luca.pizzamiglio@gmail.com
+MAINTAINER=	pizzamig@FreeBSD.org
 COMMENT=	Programmable console-based metronome
 
 LICENSE=	GPLv2

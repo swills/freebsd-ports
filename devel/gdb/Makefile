@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/gdb/Makefile 448627 2017-08-23 16:07:42Z jhb $
+# $FreeBSD: head/devel/gdb/Makefile 448911 2017-08-29 13:05:21Z pizzamig $
 
 PORTNAME=	gdb
 PORTVERSION=	8.0
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 
-MAINTAINER=	luca.pizzamiglio@gmail.com
+MAINTAINER=	pizzamig@FreeBSD.org
 COMMENT=	GNU GDB of newer version than comes with the system
 
 LICENSE=	GPLv3

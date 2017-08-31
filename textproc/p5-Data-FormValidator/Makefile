@@ -1,8 +1,8 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/textproc/p5-Data-FormValidator/Makefile 437030 2017-03-27 11:12:19Z sunpoet $
+# $FreeBSD: head/textproc/p5-Data-FormValidator/Makefile 448980 2017-08-30 13:29:36Z sunpoet $
 
 PORTNAME=	Data-FormValidator
-PORTVERSION=	4.86
+PORTVERSION=	4.88
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,9 +1,8 @@
 # Created by: Denis Pokataev <catone@cpan.org>
-# $FreeBSD: head/www/p5-Catalyst-Authentication-Credential-HTTP/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Authentication-Credential-HTTP/Makefile 448970 2017-08-30 11:23:59Z culot $
 
 PORTNAME=	Catalyst-Authentication-Credential-HTTP
-PORTVERSION=	1.016
-PORTREVISION=	1
+PORTVERSION=	1.018
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -21,9 +20,12 @@ BUILD_DEPENDS=	p5-Catalyst-Plugin-Authentication>=0.10005:www/p5-Catalyst-Plugin
 		p5-String-Escape>0:textproc/p5-String-Escape \
 		p5-URI>0:net/p5-URI
 RUN_DEPENDS:=	${BUILD_DEPENDS}
-TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception \
-		p5-Test-MockObject>=0:devel/p5-Test-MockObject
+TEST_DEPENDS=	p5-HTTP-Message>0:www/p5-HTTP-Message \
+		p5-Test-Exception>0:devel/p5-Test-Exception \
+		p5-Test-MockObject>0:devel/p5-Test-MockObject \
+		p5-Test-Needs>0:devel/p5-Test-Needs
 
+NO_ARCH=	YES
 USES=		perl5
 USE_PERL5=	configure
 

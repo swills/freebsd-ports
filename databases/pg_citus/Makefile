@@ -1,8 +1,8 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/databases/pg_citus/Makefile 446141 2017-07-18 13:01:26Z matthew $
+# $FreeBSD: head/databases/pg_citus/Makefile 448909 2017-08-29 12:43:06Z matthew $
 
 PORTNAME=	citus
-PORTVERSION=	6.2.3
+PORTVERSION=	7.0.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 PKGNAMEPREFIX=	pg_
@@ -12,12 +12,12 @@ COMMENT=	Horizontally scale Postgresql using sharding and replication
 
 LICENSE=	AGPLv3
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	citusdata
-
-USES=		gmake pgsql:9.5+ autoreconf readline
+USES=		gmake pgsql:9.6+ autoreconf readline
 WANT_PGSQL=	lib server
 GNU_CONFIGURE=	yes
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	citusdata
 
 INSTALL_TARGET=	install-strip
 MAKE_ARGS=	INSTALL="${INSTALL} -c"

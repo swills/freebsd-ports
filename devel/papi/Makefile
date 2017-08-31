@@ -1,5 +1,5 @@
 # Created by: redcrash@gmail.com
-# $FreeBSD: head/devel/papi/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/devel/papi/Makefile 448911 2017-08-29 13:05:21Z pizzamig $
 
 PORTNAME=	papi
 PORTVERSION=	5.4.3
@@ -7,7 +7,7 @@ PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://icl.cs.utk.edu/projects/papi/downloads/
 
-MAINTAINER=	luca.pizzamiglio@gmail.com
+MAINTAINER=	pizzamig@FreeBSD.org
 COMMENT=	API to access the performance counter hw in the microprocessor
 
 LICENSE=	BSD3CLAUSE

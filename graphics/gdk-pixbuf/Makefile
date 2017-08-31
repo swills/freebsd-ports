@@ -1,5 +1,5 @@
 # Created by: Ade Lovett <ade@lovett.com>
-# $FreeBSD: head/graphics/gdk-pixbuf/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/gdk-pixbuf/Makefile 448906 2017-08-29 11:26:40Z amdmi3 $
 #    $MCom: ports/graphics/gdk-pixbuf/Makefile,v 1.2 2006/09/10 00:51:10 mezz Exp $
 
 PORTNAME=	gdk-pixbuf
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 
 PORTSCOUT=	ignore:1
 
-USES=		cpe gmake jpeg libtool pathfix tar:bzip2
+USES=		cpe gmake jpeg libtool localbase pathfix tar:bzip2
 CPE_VENDOR=	gnome
 USE_XORG=	xt xi x11
 USE_GNOME=	gtk12
@@ -29,8 +29,6 @@ USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-html-dir=${PREFIX}/share/doc \
 		--disable-gtk-doc
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${STAGEDIR}${PREFIX}/lib -L${LOCALBASE}/lib
 
 post-patch:
 	@${REINPLACE_CMD} '/confexecdir =/s/=.*/= $$(sysconfdir)/' \

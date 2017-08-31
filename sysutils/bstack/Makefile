@@ -1,11 +1,11 @@
-# $FreeBSD: head/sysutils/bstack/Makefile 419564 2016-08-04 00:05:05Z marino $
+# $FreeBSD: head/sysutils/bstack/Makefile 448911 2017-08-29 13:05:21Z pizzamig $
 
 PORTNAME=	bstack
 PORTVERSION=	0.1
 PORTREVISION=	1
 CATEGORIES=	sysutils
 
-MAINTAINER=	luca.pizzamiglio@gmail.com
+MAINTAINER=	pizzamig@FreeBSD.org
 COMMENT=	Debug tool that shows the stack trace of a running process
 
 LICENSE=	BSD3CLAUSE

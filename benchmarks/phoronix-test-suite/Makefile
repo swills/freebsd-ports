@@ -1,12 +1,12 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/benchmarks/phoronix-test-suite/Makefile 444000 2017-06-20 20:25:21Z joneum $
+# $FreeBSD: head/benchmarks/phoronix-test-suite/Makefile 448911 2017-08-29 13:05:21Z pizzamig $
 
 PORTNAME=	phoronix-test-suite
 PORTVERSION=	7.0.1
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://www.phoronix-test-suite.com/releases/
 
-MAINTAINER=	luca.pizzamiglio@gmail.com
+MAINTAINER=	pizzamig@FreeBSD.org
 COMMENT=	Phoronix Benchmarking Suite
 
 LICENSE=	GPLv3
