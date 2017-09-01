@@ -1,8 +1,8 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/lang/php71/Makefile 447218 2017-08-03 14:54:24Z tz $
+# $FreeBSD: head/lang/php71/Makefile 449034 2017-08-31 13:59:50Z tz $
 
 PORTNAME=	php71
-PORTVERSION=	7.1.8
+PORTVERSION=	7.1.9
 PORTREVISION?=	0
 CATEGORIES?=	lang devel www
 MASTER_SITES=	PHP/distributions

@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 448887 2017-08-28 19:27:28Z amdmi3 $
+# $FreeBSD: head/games/Makefile 449028 2017-08-31 12:33:46Z amdmi3 $
 #
 
     COMMENT = Games and related software
@@ -255,6 +255,7 @@
     SUBDIR += entombed
     SUBDIR += enygma
     SUBDIR += epiar
+    SUBDIR += epiphany-game
     SUBDIR += etracer
     SUBDIR += euchre
     SUBDIR += evilfinder

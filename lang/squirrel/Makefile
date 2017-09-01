@@ -1,8 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/lang/squirrel/Makefile 440858 2017-05-13 23:21:37Z linimon $
+# $FreeBSD: head/lang/squirrel/Makefile 449029 2017-08-31 12:36:12Z tcberner $
 
 PORTNAME=	squirrel
 DISTVERSION=	3_1
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}3/${PORTNAME}%20${PORTVERSION}%20stable
 DISTNAME=	${PORTNAME}_${DISTVERSION}_stable

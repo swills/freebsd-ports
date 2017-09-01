@@ -1,9 +1,9 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/mail/archiveopteryx-devel/Makefile 439779 2017-04-30 01:12:10Z linimon $
+# $FreeBSD: head/mail/archiveopteryx-devel/Makefile 449038 2017-08-31 15:31:15Z feld $
 
 PORTNAME=	archiveopteryx
-PORTVERSION=	3.2.99.20160129
-PORTREVISION=	3
+PORTVERSION=	3.2.99.20170718
+PORTREVISION=	0
 CATEGORIES=	mail
 PKGNAMESUFFIX=	-devel
 
@@ -19,7 +19,7 @@ BROKEN_powerpc64=	Does not build: /bin/sh: clang: not found
 USE_GITHUB=	yes
 GH_ACCOUNT=	aox
 GH_PROJECT=	aox
-GH_TAGNAME=	e10c73a
+GH_TAGNAME=	f9c2e40
 
 USES=		perl5 ssl
 USE_PERL5=	build

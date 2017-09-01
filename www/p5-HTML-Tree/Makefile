@@ -1,8 +1,8 @@
 # Created by: Dmitry Sivachenko <dima@Chg.RU>
-# $FreeBSD: head/www/p5-HTML-Tree/Makefile 439639 2017-04-28 20:25:29Z sunpoet $
+# $FreeBSD: head/www/p5-HTML-Tree/Makefile 449044 2017-08-31 15:32:18Z sunpoet $
 
 PORTNAME=	HTML-Tree
-PORTVERSION=	5.06
+PORTVERSION=	5.07
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,5 +1,5 @@
 # Created by: Hugo Saro <hugo@barafranca.com>
-# $FreeBSD: head/net/haproxy-devel/Makefile 448027 2017-08-16 08:11:47Z demon $
+# $FreeBSD: head/net/haproxy-devel/Makefile 449050 2017-08-31 18:26:32Z demon $
 
 PORTNAME=	haproxy
 DISTVERSION=	1.8-dev2
@@ -20,7 +20,7 @@ CONFLICTS_INSTALL=	haproxy-[1234567890]\*
 USES=		cpe gmake
 USE_RC_SUBR=	haproxy
 
-DEVICEATLAS_VERSION=	2.1.2_1
+DEVICEATLAS_VERSION=	2.1.2_2
 DEVICEATLAS_DISTFILE=	deviceatlas-enterprise-c-${DEVICEATLAS_VERSION}
 DEVICEATLAS_REGISTRATION_URL=	https://deviceatlas.com/deviceatlas-haproxy-module
 
