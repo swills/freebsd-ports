@@ -1,9 +1,10 @@
-# $FreeBSD: head/security/Makefile 448867 2017-08-28 13:02:24Z adamw $
+# $FreeBSD: head/security/Makefile 449379 2017-09-06 22:50:07Z adamw $
 #
 
     COMMENT = Security tools
 
     SUBDIR += 0d1n
+    SUBDIR += 1password-client
     SUBDIR += ADMsmb
     SUBDIR += ADMsnmp
     SUBDIR += R-cran-ROAuth
@@ -934,7 +935,6 @@
     SUBDIR += py-pyelliptic
     SUBDIR += py-pylibacl
     SUBDIR += py-pymacaroons-pynacl
-    SUBDIR += py-pyme
     SUBDIR += py-pynacl
     SUBDIR += py-pyotp
     SUBDIR += py-pyptlib

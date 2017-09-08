@@ -1,14 +1,14 @@
-# $FreeBSD: head/www/selenium/Makefile 447957 2017-08-14 18:53:51Z pi $
+# $FreeBSD: head/www/selenium/Makefile 449262 2017-09-04 21:29:00Z cpm $
 
 PORTNAME=	selenium
-PORTVERSION=	3.4.0
+PORTVERSION=	3.5.3
 CATEGORIES=	www devel java
-MASTER_SITES=	http://selenium-release.storage.googleapis.com/3.4/
+MASTER_SITES=	http://selenium-release.storage.googleapis.com/3.5/
 DISTNAME=	selenium-server-standalone-${PORTVERSION}
 EXTRACT_SUFX=	.jar
 EXTRACT_ONLY=
 
-MAINTAINER=	kaworu@users.sourceforge.jp
+MAINTAINER=	daniel@blodan.se
 COMMENT=	Selenium Standalone Server, allows browser testing
 
 LICENSE=	APACHE20

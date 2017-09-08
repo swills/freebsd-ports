@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/puppetdb3/Makefile 447832 2017-08-12 14:14:12Z romain $
+# $FreeBSD: head/databases/puppetdb3/Makefile 449314 2017-09-05 22:41:33Z zleslie $
 
 PORTNAME=	puppetdb
 PORTVERSION=	3.2.4
@@ -8,6 +8,9 @@ PKGNAMESUFFIX=	3
 
 MAINTAINER=	puppet@FreeBSD.org
 COMMENT=	PuppetDB storeconfigs backend
+
+DEPRECATED=	End of life upstream
+EXPIRATION_DATE=	2017-11-01
 
 LICENSE=	APACHE20
 

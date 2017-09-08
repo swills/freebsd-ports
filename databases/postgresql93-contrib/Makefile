@@ -1,7 +1,9 @@
 # Created by: Palle Girgensohn <girgen@pingpong.net>
-# $FreeBSD: head/databases/postgresql93-contrib/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/postgresql93-contrib/Makefile 449278 2017-09-05 09:27:11Z girgen $
 
 PORTNAME=	postgresql
+PORTREVISION=	0
+
 CATEGORIES=	databases
 PKGNAMESUFFIX?=	${DISTVERSION:R:S/.//}${COMPONENT}
 

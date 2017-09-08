@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/pixman/Makefile 413732 2016-04-21 14:01:05Z swills $
+# $FreeBSD: head/x11/pixman/Makefile 449285 2017-09-05 14:04:10Z swills $
 
 PORTNAME=	pixman
 PORTVERSION=	0.34.0
@@ -24,6 +24,11 @@ INSTALL_TARGET=	install-strip
 MAKE_ARGS=      SUBDIRS=pixman
 
 .include <bsd.port.pre.mk>
+
+.if ${ARCH} == "armv6"
+BUILD_DEPENDS+=	${LOCALBASE}/bin/as:devel/binutils
+CONFIGURE_ENV+=	CCASFLAGS="${CFLAGS} -no-integrated-as"
+.endif
 
 .if ${ARCH} == "powerpc64" || ${ARCH} == "powerpc"
 CONFIGURE_ARGS+=	--disable-vmx

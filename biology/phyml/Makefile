@@ -1,9 +1,9 @@
 # Created by: ballen
-# $FreeBSD: head/biology/phyml/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/biology/phyml/Makefile 449234 2017-09-04 00:01:36Z sunpoet $
 
 PORTNAME=	phyml
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.2.0
+DISTVERSION=	3.3.20170530
 PORTEPOCH=	1
 CATEGORIES=	biology
 
@@ -46,6 +46,7 @@ BIN_SUFFIX=		# none
 post-patch:
 	@${REINPLACE_CMD} -e \
 		's|-O2 .* $${ARCH_flag}|$${CFLAGS}|' ${WRKSRC}/configure.ac
+	@${REINPLACE_CMD} -e 's|malloc.h|stdlib.h|' ${WRKSRC}/src/utilities.h
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

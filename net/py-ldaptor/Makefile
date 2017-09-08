@@ -1,9 +1,9 @@
 # Created by: bra@fsn.hu
-# $FreeBSD: head/net/py-ldaptor/Makefile 448296 2017-08-19 10:43:06Z koobs $
+# $FreeBSD: head/net/py-ldaptor/Makefile 449226 2017-09-04 00:00:57Z sunpoet $
 
 PORTNAME=	ldaptor
 PORTVERSION=	0.0.43
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net python
 MASTER_SITES=	http://ftp.fsn.hu/contrib/bra/ldaptor/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,12 +16,13 @@ LICENSE=	MIT LGPL21+
 LICENSE_COMB=	multi
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyparsing>=0:devel/py-pyparsing \
-		${PYTHON_PKGNAMEPREFIX}openssl>=0:security/py-openssl
+		${PYTHON_PKGNAMEPREFIX}openssl>=0:security/py-openssl \
+		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
 
 GITVERSION=	aad8ded658b36337a08aeb7402b6b67eb8771bea
 
 NO_ARCH=	yes
-USES=		gettext python:2.7 twisted
+USES=		gettext python:2.7
 USE_PYTHON=	distutils autoplist
 
 PYDISTUTILS_INSTALL_TARGET=	install_locale install

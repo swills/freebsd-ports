@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-stemmer/Makefile 446930 2017-07-30 13:13:44Z olgeni $
+# $FreeBSD: head/devel/elixir-stemmer/Makefile 449095 2017-09-01 18:23:11Z antoine $
 
 PORTNAME=	stemmer
 DISTVERSIONPREFIX=	v
@@ -10,6 +10,8 @@ MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	English stemming implementation in Elixir
 
 LICENSE=	MIT
+
+BROKEN=		fails to build
 
 USES=		elixir
 USE_GITHUB=	yes

@@ -1,8 +1,8 @@
 # Created by: rene
-# $FreeBSD: head/emulators/fuse-utils/Makefile 448189 2017-08-17 20:38:08Z rene $
+# $FreeBSD: head/emulators/fuse-utils/Makefile 449360 2017-09-06 20:00:04Z rene $
 
 PORTNAME=	fuse-utils
-PORTVERSION=	1.3.2
+PORTVERSION=	1.3.4
 CATEGORIES=	emulators
 MASTER_SITES=	SF/fuse-emulator/${PORTNAME}/${PORTVERSION}
 

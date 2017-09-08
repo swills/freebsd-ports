@@ -1,10 +1,10 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-tibble/Makefile 442738 2017-06-06 03:06:05Z tota $
+# $FreeBSD: head/devel/R-cran-tibble/Makefile 449293 2017-09-05 16:02:21Z tota $
 
 PORTNAME=	tibble
-PORTVERSION=	1.3.3
+PORTVERSION=	1.3.4
 CATEGORIES=	devel
-DISTNAME=	${PORTNAME}_${DISTVERSION}
+DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	tota@FreeBSD.org
 COMMENT=	Simple Data Frames

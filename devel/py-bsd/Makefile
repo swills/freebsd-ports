@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-bsd/Makefile 443849 2017-06-18 19:35:26Z wg $
+# $FreeBSD: head/devel/py-bsd/Makefile 449197 2017-09-03 10:35:09Z antoine $
 
 PORTNAME=	bsd
 PORTVERSION=	1.0.20170329
@@ -9,6 +9,8 @@ MAINTAINER=	wg@FreeBSD.org
 COMMENT=	Python wrappers for various BSD libc and system calls
 
 LICENSE=	BSD3CLAUSE
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	cython>0:lang/cython \
 		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six

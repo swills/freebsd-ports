@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/editors/vanubi/Makefile 437577 2017-04-02 20:44:49Z bapt $
+# $FreeBSD: head/editors/vanubi/Makefile 449337 2017-09-06 11:21:07Z cpm $
 
 PORTNAME=	vanubi
 PORTVERSION=	0.0.16
@@ -12,6 +12,9 @@ COMMENT=	Programming editor written in Vala
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	Vanubi is no longer actively maintained
+EXPIRATION_DATE=	2017-10-06
 
 BUILD_DEPENDS=	valac:lang/vala
 

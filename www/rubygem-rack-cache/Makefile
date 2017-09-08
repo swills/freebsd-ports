@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/www/rubygem-rack-cache/Makefile 432371 2017-01-24 17:41:47Z sunpoet $
+# $FreeBSD: head/www/rubygem-rack-cache/Makefile 449423 2017-09-07 20:13:01Z sunpoet $
 
 PORTNAME=	rack-cache
-PORTVERSION=	1.7.0
+PORTVERSION=	1.7.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

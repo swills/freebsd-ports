@@ -1,8 +1,9 @@
 # Created by: chuckr
-# $FreeBSD: head/lang/itcl/Makefile 413727 2016-04-21 11:33:16Z gahr $
+# $FreeBSD: head/lang/itcl/Makefile 449392 2017-09-07 10:56:40Z gahr $
 
 PORTNAME=	itcl
 PORTVERSION=	3.4.1
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	lang tcl
 MASTER_SITES=	SF/incrtcl/%5BIncr%20Tcl_Tk%5D-source/3.4.1
@@ -11,7 +12,7 @@ DISTNAME=	itcl${PORTVERSION}
 MAINTAINER=	erik@bz.bzflag.bz
 COMMENT=	Object-oriented extension to Tcl [incr Tcl]
 
-USES+=		tcl:84+,tea
+USES+=		tcl:85+,tea
 
 USE_LDCONFIG=	${PREFIX}/lib/itcl${PORTVERSION:R}
 

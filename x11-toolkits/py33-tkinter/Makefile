@@ -1,7 +1,0 @@
-# $FreeBSD: head/x11-toolkits/py33-tkinter/Makefile 401909 2015-11-19 01:28:38Z lwhsu $
-
-MASTERDIR=	${.CURDIR}/../py-tkinter
-
-PYTHON_VERSION=	python3.3
-
-.include "${MASTERDIR}/Makefile"

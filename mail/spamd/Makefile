@@ -1,9 +1,9 @@
 # Created by: Max Laier <max@love2party.net>
-# $FreeBSD: head/mail/spamd/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/mail/spamd/Makefile 449108 2017-09-01 22:03:04Z adamw $
 
 PORTNAME=	spamd
 PORTVERSION=	4.9.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	mail
 MASTER_SITES=	SF/freebsdspamd/spamd
 

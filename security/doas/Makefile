@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/doas/Makefile 434585 2017-02-22 14:52:56Z jrm $
+# $FreeBSD: head/security/doas/Makefile 449334 2017-09-06 10:03:52Z tobik $
 
 PORTNAME=	doas
-PORTVERSION=	6.0p0
+PORTVERSION=	6.0p1
 CATEGORIES=	security
 
 MAINTAINER=	jsmith@resonatingmedia.com

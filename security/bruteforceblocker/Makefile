@@ -1,12 +1,12 @@
 # Created by: Daniel Gerzo <danger@rulez.sk>
-# $FreeBSD: head/security/bruteforceblocker/Makefile 448741 2017-08-25 21:08:52Z fjoe $
+# $FreeBSD: head/security/bruteforceblocker/Makefile 449177 2017-09-03 08:31:45Z pi $
 
 PORTNAME=	bruteforceblocker
-PORTVERSION=	1.2.3
-PORTREVISION=	2
+PORTVERSION=	1.2.4
 CATEGORIES=	security
-MASTER_SITES=	http://danger.rulez.sk/projects/bruteforceblocker/ \
-		LOCAL/pav
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	dgerzo
 
 MAINTAINER=	danger@FreeBSD.org
 COMMENT=	Checks for SSH bruteforce and blocks given IPs
@@ -22,7 +22,7 @@ USE_PERL5=	run
 
 OPTIONS_DEFINE=	DOCS
 
-WRKSRC=		${WRKDIR}/${PORTNAME}
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 SUB_FILES=	pkg-message
 SHEBANG_FILES=	${PORTNAME}.pl
 

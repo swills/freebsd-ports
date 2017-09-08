@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/security/py-cryptography/Makefile 443067 2017-06-10 03:16:44Z woodsb02 $
+# $FreeBSD: head/security/py-cryptography/Makefile 449195 2017-09-03 10:28:00Z rene $
 
 PORTNAME=	cryptography
 PORTVERSION=	1.7.2
@@ -35,8 +35,6 @@ RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}ipaddress>0:net/py-ipaddress
 
 .if ${PYTHON_REL} < 3300
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}enum34>0:devel/py-enum34
-.elif ${PYTHON_REL} < 3400
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}enum34>0:devel/py3-enum34
 .endif
 
 post-install:

@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-django-allauth/Makefile 440079 2017-05-04 01:51:58Z wen $
+# $FreeBSD: head/www/py-django-allauth/Makefile 449134 2017-09-02 12:40:00Z dbaio $
 
 PORTNAME=	django-allauth
-PORTVERSION=	0.32.0
+PORTVERSION=	0.33.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -10,6 +10,7 @@ MAINTAINER=	Vladimir.Chukharev@gmail.com
 COMMENT=	User registration with social account authentication
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=1.6:www/py-django18
 

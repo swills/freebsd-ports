@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 448943 2017-08-30 00:06:39Z acm $
+# $FreeBSD: head/mail/Makefile 449193 2017-09-03 09:51:31Z rene $
 #
 
     COMMENT = Electronic mail utilities
@@ -251,7 +251,6 @@
     SUBDIR += mlmmj
     SUBDIR += mls
     SUBDIR += mmr
-    SUBDIR += movemail
     SUBDIR += mpop
     SUBDIR += mreport
     SUBDIR += msgconvert
@@ -615,7 +614,6 @@
     SUBDIR += rubygem-email_reply_parser-discourse
     SUBDIR += rubygem-email_reply_trimmer
     SUBDIR += rubygem-exception_notification
-    SUBDIR += rubygem-larch
     SUBDIR += rubygem-mail
     SUBDIR += rubygem-mail_room
     SUBDIR += rubygem-mailboxer

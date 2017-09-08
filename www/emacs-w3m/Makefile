@@ -1,13 +1,13 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/www/emacs-w3m/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/www/emacs-w3m/Makefile 449202 2017-09-03 13:27:39Z nobutaka $
 
 PORTNAME=	emacs-w3m
-PORTVERSION=	1.4.567.b.${SNAPDATE}
+PORTVERSION=	1.4.598.b.${SNAPDATE}
 PORTREVISION=	1
 CATEGORIES=	www elisp
 MASTER_SITES=	LOCAL/nobutaka
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
-DISTNAME=	${PORTNAME}-1.4.567-${SNAPDATE}
+DISTNAME=	${PORTNAME}-1.4.598-${SNAPDATE}
 
 MAINTAINER=	nobutaka@FreeBSD.org
 COMMENT?=	Simple front-end to w3m for emacs
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 USES=		autoreconf tar:bzip2
 USE_EMACS=	yes
 
-SNAPDATE=	20160924
+SNAPDATE=	20170903
 
 MAKE_JOBS_UNSAFE=	yes
 

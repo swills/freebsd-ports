@@ -1,13 +1,12 @@
 # Created by: Peter Schuller <peter.schuller@infidyne.com>
-# $FreeBSD: head/lang/clojure-mode.el/Makefile 385637 2015-05-07 16:32:43Z mat $
+# $FreeBSD: head/lang/clojure-mode.el/Makefile 449199 2017-09-03 11:11:58Z tobik $
 
 PORTNAME=	clojure-mode.el
-PORTVERSION=	2.1.1
-PORTREVISION=	2
+PORTVERSION=	5.6.1
 PORTEPOCH=	1
 CATEGORIES=	lang elisp
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	harrigan-s@outlook.com
 COMMENT=	Emacs lisp module for the Clojure language
 
 LICENSE=	GPLv3
@@ -18,12 +17,15 @@ GH_PROJECT=	clojure-mode
 
 USE_EMACS=	yes
 
+NO_ARCH=	yes
 NO_BUILD=	yes
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/clojure-mode.el \
 		${STAGEDIR}${PREFIX}/${EMACS_SITE_LISPDIR}
-	${INSTALL_DATA} ${WRKSRC}/clojure-test-mode.el \
+	${INSTALL_DATA} ${WRKSRC}/clojure-mode-extra-font-locking.el \
+		${STAGEDIR}${PREFIX}/${EMACS_SITE_LISPDIR}
+	${INSTALL_DATA} ${WRKSRC}/test.clj \
 		${STAGEDIR}${PREFIX}/${EMACS_SITE_LISPDIR}
 
 .include <bsd.port.mk>

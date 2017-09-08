@@ -1,5 +1,5 @@
 # Created by: David Naylor <dbn@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/py-kivy/Makefile 446990 2017-07-31 18:20:47Z rene $
+# $FreeBSD: head/x11-toolkits/py-kivy/Makefile 449106 2017-09-01 21:45:20Z antoine $
 
 PORTNAME=	kivy
 PORTVERSION=	1.9.1
@@ -13,6 +13,8 @@ COMMENT=	Python NUI library for rapid application development
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	cython:lang/cython
 LIB_DEPENDS=	libmtdev.so:devel/libmtdev

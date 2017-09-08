@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/dns/p5-POE-Component-Client-DNS/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/dns/p5-POE-Component-Client-DNS/Makefile 449366 2017-09-06 20:06:19Z sunpoet $
 
 PORTNAME=	POE-Component-Client-DNS
 PORTVERSION=	1.054
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 BUILD_DEPENDS=	p5-Net-DNS>=0.65:dns/p5-Net-DNS \
 		p5-POE>=1.249:devel/p5-POE
 RUN_DEPENDS:=	${BUILD_DEPENDS}
-TEST_DEPENDS=	p5-Test-NoWarnings>=0:devel/p5-Test-NoWarnings
+TEST_DEPENDS=	p5-Test-NoWarnings>=1.02:devel/p5-Test-NoWarnings
 
 NO_ARCH=	yes
 USES=		perl5

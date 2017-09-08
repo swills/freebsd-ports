@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-tirexs/Makefile 439341 2017-04-24 18:16:40Z olgeni $
+# $FreeBSD: head/devel/elixir-tirexs/Makefile 449216 2017-09-03 21:17:59Z olgeni $
 
 PORTNAME=	tirexs
 PORTVERSION=	0.8.15
@@ -10,6 +10,8 @@ MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	ElasticSearch client library for Elixir
 
 LICENSE=	APACHE20
+
+IGNORE=		does not build with Elixir 1.5
 
 USES=		elixir
 USE_GITHUB=	yes

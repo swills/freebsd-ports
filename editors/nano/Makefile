@@ -1,8 +1,8 @@
 # Created by: Philippe Lefebvre <nemesis@balistik.net>
-# $FreeBSD: head/editors/nano/Makefile 446941 2017-07-30 19:34:10Z danilo $
+# $FreeBSD: head/editors/nano/Makefile 449248 2017-09-04 13:52:49Z danilo $
 
 PORTNAME=	nano
-PORTVERSION=	2.8.6
+PORTVERSION=	2.8.7
 CATEGORIES=	editors
 MASTER_SITES=	http://www.nano-editor.org/dist/v${PORTVERSION:R}/ GNU
 

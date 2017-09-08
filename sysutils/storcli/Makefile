@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/storcli/Makefile 430460 2017-01-03 12:24:43Z tz $
+# $FreeBSD: head/sysutils/storcli/Makefile 449126 2017-09-02 11:36:52Z riggs $
 
 PORTNAME=	storcli
-PORTVERSION=	1.20.15
+PORTVERSION=	1.23.02
 CATEGORIES=	sysutils
 MASTER_SITES=	https://docs.broadcom.com/docs-and-downloads/raid-controllers/raid-controllers-common-files/
 DISTNAME=	${PORTVERSION}_StorCLI
@@ -25,9 +25,10 @@ NO_WRKSUBDIR=	yes
 
 PLIST_FILES=	sbin/storcli
 PKGMESSAGE=	${WRKDIR}/pkg-message
-BINSRC=		${WRKSRC}/storcli_All_OS/storcli_All_OS/FreeBSD
+BINSRC=		${WRKSRC}/storcli_All_OS/FreeBSD
 
 post-extract:
+	@${TAR} xf ${WRKSRC}/storcli_All_OS.zip -C${WRKSRC}
 	@${TAR} xf ${BINSRC}/storcli${ARCH:S/i386//:S/amd64/64/}.tar -C${WRKSRC}
 	@${REINPLACE_CMD} 's#\(StorCli\).*StorCli64#\1#'\
 		${BINSRC}/FreeBSD_readme.txt

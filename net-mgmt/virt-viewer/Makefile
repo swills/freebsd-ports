@@ -1,9 +1,8 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/virt-viewer/Makefile 433456 2017-02-05 21:20:24Z tijl $
+# $FreeBSD: head/net-mgmt/virt-viewer/Makefile 449190 2017-09-03 09:30:24Z novel $
 
 PORTNAME=	virt-viewer
-PORTVERSION=	4.0
-PORTREVISION=	1
+PORTVERSION=	6.0
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://virt-manager.org/download/sources/${PORTNAME}/
 

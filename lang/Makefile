@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 448603 2017-08-23 11:33:26Z rene $
+# $FreeBSD: head/lang/Makefile 449196 2017-09-03 10:33:56Z rene $
 #
 
     COMMENT = Programming languages
@@ -284,7 +284,6 @@
     SUBDIR += python2
     SUBDIR += python27
     SUBDIR += python3
-    SUBDIR += python33
     SUBDIR += python34
     SUBDIR += python35
     SUBDIR += python36

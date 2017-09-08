@@ -1,5 +1,5 @@
 # Created by: nox@FreeBSD.org
-# $FreeBSD: head/multimedia/linux_dvbwrapper-kmod/Makefile 403704 2015-12-14 02:52:14Z eadler $
+# $FreeBSD: head/multimedia/linux_dvbwrapper-kmod/Makefile 449330 2017-09-06 09:01:42Z amdmi3 $
 
 PORTNAME=	linux_dvbwrapper-kmod
 PORTVERSION=	1.0
@@ -19,7 +19,7 @@ PLIST_FILES=	${KMODDIR}/linux_dvbwrapper.ko
 CFLAGS+=	${DEBUG_FLAGS}
 
 do-extract:
-	${MKDIR} ${WRKSRC}
-	${CP} ${FILESDIR}/Makefile ${FILESDIR}/*.[ch] ${WRKSRC}
+	@${MKDIR} ${WRKSRC}
+	@${CP} ${FILESDIR}/Makefile ${FILESDIR}/*.[ch] ${WRKSRC}
 
 .include <bsd.port.mk>

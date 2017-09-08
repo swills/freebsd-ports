@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/passwordsafe/Makefile 444080 2017-06-21 21:46:10Z linimon $
+# $FreeBSD: head/sysutils/passwordsafe/Makefile 449138 2017-09-02 14:23:38Z sunpoet $
 
 PORTNAME=	passwordsafe
 DISTVERSION=	1.02BETA
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	brnrd@FreeBSD.org
@@ -10,7 +11,7 @@ COMMENT=	Popular secure and convenient password manager
 LICENSE=	ART20
 
 LIB_DEPENDS=	libuuid.so:misc/e2fsprogs-libuuid \
-		libxerces-c-3.1.so:textproc/xerces-c3
+		libxerces-c.so:textproc/xerces-c3
 BUILD_DEPENDS=	zip:archivers/zip
 
 NOT_FOR_ARCHS=		aarch64 armv6

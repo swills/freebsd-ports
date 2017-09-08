@@ -1,13 +1,15 @@
-# $FreeBSD: head/net/p5-ldap2pw/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-ldap2pw/Makefile 449328 2017-09-06 08:28:56Z des $
 
 PORTNAME=	ldap2pw
-PORTVERSION=	20151106
+PORTVERSION=	20170906
 CATEGORIES=	net
 MASTER_SITES=	GH
 PKGNAMEPREFIX=  p5-
 
 MAINTAINER=	des@FreeBSD.org
 COMMENT=	Synchronize local user database with LDAP directory
+
+LICENSE=	BSD3CLAUSE
 
 RUN_DEPENDS=	p5-Authen-SASL>=0:security/p5-Authen-SASL \
 		p5-Net-DNS>=0:dns/p5-Net-DNS \
@@ -16,11 +18,11 @@ RUN_DEPENDS=	p5-Authen-SASL>=0:security/p5-Authen-SASL \
 		p5-perl-ldap>=0:net/p5-perl-ldap
 BUILD_DEPENDS=	${RUN_DEPENDS}
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	dag-erling
-
 USES=		perl5
 USE_PERL5=	configure run
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	dag-erling
 
 PLIST_FILES=	bin/${PORTNAME} ${SITE_MAN1_REL}/${PORTNAME}.1.gz
 

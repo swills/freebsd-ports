@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-sass/Makefile 447387 2017-08-05 03:33:30Z jrm $
+# $FreeBSD: head/textproc/rubygem-sass/Makefile 449147 2017-09-02 14:24:26Z sunpoet $
 
 PORTNAME=	sass
 PORTVERSION=	3.5.1
@@ -13,6 +13,9 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
 RUN_DEPENDS=	rubygem-sass-listen>=4.0.0:textproc/rubygem-sass-listen
+
+# bin/sass bin/sass-convert bin/scss
+CONFLICTS_INSTALL=	rubygem-sass34
 
 NO_ARCH=	yes
 USES=		gem shebangfix

@@ -1,5 +1,5 @@
 # Created by: Euan Thoms <euan@potensol.com>
-# $FreeBSD: head/www/sogo2/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/www/sogo2/Makefile 449101 2017-09-01 18:39:15Z antoine $
 
 PORTNAME=		sogo2
 PORTVERSION=		2.3.22
@@ -12,6 +12,8 @@ MAINTAINER=		euan@potensol.com
 COMMENT=		Groupware server with a focus on scalability and open standards
 
 LICENSE=		GPLv2
+
+BROKEN=			fails to package
 
 LIB_DEPENDS=		libmemcached.so:databases/libmemcached \
 			libcurl.so:ftp/curl \

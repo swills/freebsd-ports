@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/gnatsd/Makefile 446231 2017-07-19 19:59:50Z olgeni $
+# $FreeBSD: head/net/gnatsd/Makefile 449345 2017-09-06 14:05:07Z olgeni $
 
 PORTNAME=	gnatsd
 PORTVERSION=	1.0.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 
@@ -20,7 +21,7 @@ USE_RC_SUBR=	gnatsd.sh
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/etc
-	${INSTALL_SCRIPT} ${FILESDIR}/gnatsd.conf ${STAGEDIR}${PREFIX}/etc/gnatsd.conf.sample
+	${INSTALL_DATA} ${FILESDIR}/gnatsd.conf ${STAGEDIR}${PREFIX}/etc/gnatsd.conf.sample
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
 	cd ${WRKSRC}/server && ${COPYTREE_SHARE} configs ${STAGEDIR}${DOCSDIR}

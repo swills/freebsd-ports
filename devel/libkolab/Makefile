@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/libkolab/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/devel/libkolab/Makefile 449138 2017-09-02 14:23:38Z sunpoet $
 
 PORTNAME=	libkolab
 PORTVERSION=	0.6.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel kde
 MASTER_SITES=	http://mirror.kolabsys.com/pub/releases/
 
@@ -18,7 +18,7 @@ PORTSCOUT=	limit:^0\.
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libcurl.so:ftp/curl \
 		libkolabxml.so:textproc/libkolabxml \
-		libxerces-c-3.1.so:textproc/xerces-c3
+		libxerces-c.so:textproc/xerces-c3
 
 # TODO: Conditionally enable the bindings based on OPTIONs.
 CMAKE_ARGS=	-DBUILD_TESTS:BOOL=OFF \

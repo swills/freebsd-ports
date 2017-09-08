@@ -1,12 +1,10 @@
 # Created by: Kris Kennaway <kris@FreeBSD.org>
-# $FreeBSD: head/security/rats/Makefile 428144 2016-12-08 17:40:41Z tijl $
+# $FreeBSD: head/security/rats/Makefile 449079 2017-09-01 13:41:09Z ehaupt $
 
 PORTNAME=	rats
-PORTVERSION=	2.3
-PORTREVISION=	1
+PORTVERSION=	2.4
 CATEGORIES=	security devel
-MASTER_SITES=	https://www.fortify.com/downloads2/public/ \
-		http://redundancy.redundancy.org/mirror/
+MASTER_SITES=	https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/rough-auditing-tool-for-security/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Source code auditing tool
@@ -17,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libexpat.so:textproc/expat2
 
 GNU_CONFIGURE=	yes
-USES=		gmake
+USES=		gmake tar:tgz
 CONFIGURE_ARGS=	--with-expat-lib=${LOCALBASE}/lib \
 		--with-expat-include=${LOCALBASE}/include/xml \
 		--datadir=${DATADIR}

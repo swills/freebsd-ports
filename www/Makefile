@@ -1,10 +1,11 @@
-# $FreeBSD: head/www/Makefile 448723 2017-08-25 17:56:42Z bsam $
+# $FreeBSD: head/www/Makefile 449341 2017-09-06 11:49:43Z araujo $
 #
 
     COMMENT = Ports related to the World Wide Web
 
     SUBDIR += R-cran-RgoogleMaps
     SUBDIR += R-cran-Rook
+    SUBDIR += R-cran-downloader
     SUBDIR += R-cran-htmlwidgets
     SUBDIR += R-cran-httpuv
     SUBDIR += R-cran-httr
@@ -542,6 +543,8 @@
     SUBDIR += node4
     SUBDIR += node6
     SUBDIR += nostromo
+    SUBDIR += novnc
+    SUBDIR += novnc-websockify
     SUBDIR += npapi-vlc
     SUBDIR += npapi-xine
     SUBDIR += npc
@@ -1618,7 +1621,6 @@
     SUBDIR += py-django110
     SUBDIR += py-django111
     SUBDIR += py-django18
-    SUBDIR += py-django19
     SUBDIR += py-django_compressor
     SUBDIR += py-django_openstack_auth
     SUBDIR += py-django_polymorphic
@@ -2199,7 +2201,6 @@
     SUBDIR += sogo3-activesync
     SUBDIR += spawn-fcgi
     SUBDIR += spdylay
-    SUBDIR += speedtest-mini
     SUBDIR += spreadlogd
     SUBDIR += sqstat
     SUBDIR += squid

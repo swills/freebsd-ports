@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/py-pyembree/Makefile 440242 2017-05-06 07:43:45Z miwi $
+# $FreeBSD: head/graphics/py-pyembree/Makefile 449096 2017-09-01 18:25:20Z antoine $
 
 PORTNAME=	pyembree
 PORTVERSION=	0.1.0
@@ -11,6 +11,8 @@ COMMENT=	Python wrapper for Embree
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		fails to configure
 
 BUILD_DEPENDS=	cython:lang/cython \
 		${PYNUMPY}

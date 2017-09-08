@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/mail/wanderlust-devel/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/mail/wanderlust-devel/Makefile 449185 2017-09-03 09:07:25Z nobutaka $
 
 PORTNAME=	wanderlust
 PORTVERSION=	2.15.9.b.${SNAPDATE}
@@ -16,9 +16,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 USE_EMACS=	yes
 USE_GITHUB=	yes
 
-GH_TAGNAME=	f7bb1a6
+GH_TAGNAME=	770d54f
 
-SNAPDATE=	20160912
+SNAPDATE=	20170628
 
 CONFLICTS=	wanderlust-*-2.14.*
 

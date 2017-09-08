@@ -1,7 +1,8 @@
 # Created by: Marc G. Fournier <scrappy@FreeBSD.org>
-# $FreeBSD: head/databases/postgresql93-server/Makefile 447678 2017-08-10 14:21:20Z girgen $
+# $FreeBSD: head/databases/postgresql93-server/Makefile 449278 2017-09-05 09:27:11Z girgen $
 
-DISTVERSION?=	9.3.18
+DISTVERSION?=	9.3.19
+PORTREVISION=	0
 PKGNAMESUFFIX?=	${DISTVERSION:R:S/.//}${COMPONENT}
 
 MAINTAINER?=	pgsql@FreeBSD.org

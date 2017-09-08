@@ -1,8 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/net/py-tofu/Makefile 442992 2017-06-09 14:09:04Z sunpoet $
+# $FreeBSD: head/net/py-tofu/Makefile 449227 2017-09-04 00:01:02Z sunpoet $
 
 PORTNAME=	tofu
 PORTVERSION=	0.5
+PORTREVISION=	1
 CATEGORIES=	net python
 MASTER_SITES=	http://download.gna.org/soya/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,10 +15,12 @@ COMMENT=	Practical high-level network game engine
 
 LICENSE=	GPLv2+
 
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
+
 OPTIONS_DEFINE=	EXAMPLES
 
 NO_ARCH=	yes
-USES=		python twisted tar:bzip2
+USES=		python tar:bzip2
 USE_PYTHON=	autoplist distutils
 EXAMPLESDIR=	${PREFIX}/share/examples/py-tofu
 PORTEXAMPLES=	*

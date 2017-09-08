@@ -1,20 +1,22 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/graphics/atril/Makefile 448669 2017-08-24 13:45:13Z swills $
+# $FreeBSD: head/graphics/atril/Makefile 449354 2017-09-06 18:34:45Z truckman $
 #
 # Please update update atril-lite also
 
 PORTNAME=	atril
-PORTVERSION=	1.18.0
-PORTREVISION?=	1
+PORTVERSION=	1.18.1
+PORTREVISION?=	0
 CATEGORIES=	graphics print mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
 
 MAINTAINER=	gnome@FreeBSD.org
-COMMENT?=	MATE multi-format document viewer
+COMMENT=	MATE multi-format document viewer
+
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	itstool:textproc/itstool
-
 LIB_DEPENDS=	libpoppler-glib.so:graphics/poppler-glib \
 		libsoup-2.4.so:devel/libsoup \
 		libfontconfig.so:x11-fonts/fontconfig \

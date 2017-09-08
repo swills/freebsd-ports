@@ -1,8 +1,8 @@
 # Created by: Tobias Gion
-# $FreeBSD: head/games/manaplus/Makefile 447582 2017-08-08 23:58:58Z jbeich $
+# $FreeBSD: head/games/manaplus/Makefile 449211 2017-09-03 17:37:28Z jbeich $
 
 PORTNAME=	manaplus
-PORTVERSION=	1.7.8.5
+PORTVERSION=	1.7.9.2
 CATEGORIES=	games
 MASTER_SITES=	http://download.evolonline.org/manaplus/download/${PORTVERSION}/
 
@@ -11,8 +11,6 @@ COMMENT=	Free open source 2D MMORPG client for athena and evol servers
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_powerpc64=	fails to install: zip.cpp: 'bswap_16' was not declared in this scope
 
 LIB_DEPENDS=	libxml2.so:textproc/libxml2 \
 		libpng.so:graphics/png \

@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-local/Makefile 427648 2016-12-03 19:29:15Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-local/Makefile 449294 2017-09-05 16:11:01Z sunpoet $
 
 PORTNAME=	fog-local
-PORTVERSION=	0.3.1
+PORTVERSION=	0.4.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

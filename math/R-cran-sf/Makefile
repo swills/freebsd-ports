@@ -1,19 +1,20 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-sf/Makefile 447595 2017-08-09 07:54:57Z tota $
+# $FreeBSD: head/math/R-cran-sf/Makefile 449315 2017-09-05 22:52:02Z tota $
 
 PORTNAME=	sf
-DISTVERSION=	0.5-3
+DISTVERSION=	0.5-4
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
 MAINTAINER=	tota@FreeBSD.org
 COMMENT=	Simple Features for R
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2 MIT
+LICENSE_COMB=	dual
 
 CRAN_DEPENDS=	R-cran-Rcpp>0:devel/R-cran-Rcpp \
 		R-cran-DBI>=0.5:databases/R-cran-DBI \
-		R-cran-units>=0.4:math/R-cran-units \
+		R-cran-units>=0.4.6:math/R-cran-units \
 		R-cran-magrittr>0:devel/R-cran-magrittr
 LIB_DEPENDS=	libgdal.so:graphics/gdal \
 		libgeos.so:graphics/geos \

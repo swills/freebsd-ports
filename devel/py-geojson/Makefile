@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-geojson/Makefile 448444 2017-08-21 00:49:29Z wen $
+# $FreeBSD: head/devel/py-geojson/Makefile 449171 2017-09-03 06:44:31Z wen $
 
 PORTNAME=	geojson
-PORTVERSION=	2.0.0
+PORTVERSION=	2.1.0
 PORTEPOCH=	1
 CATEGORIES=	devel geography python
 MASTER_SITES=	CHEESESHOP

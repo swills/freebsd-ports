@@ -1,18 +1,19 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/R-cran-diagram/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/R-cran-diagram/Makefile 449265 2017-09-05 02:18:54Z tota $
 
 PORTNAME=	diagram
-PORTVERSION=	1.6.3
+PORTVERSION=	1.6.4
 CATEGORIES=	graphics
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	tota@FreeBSD.org
 COMMENT=	Functions for visualising simple graphs, plotting flow diagrams
 
-LICENSE=	GPLv2 GPLv3
-LICENSE_COMB=	dual
+LICENSE=	GPLv2+
 
-RUN_DEPENDS=	R-cran-shape>0:graphics/R-cran-shape
+CRAN_DEPENDS=	R-cran-shape>0:graphics/R-cran-shape
+BUILD_DEPENDS=	${CRAN_DEPENDS}
+RUN_DEPENDS=	${CRAN_DEPENDS}
 
 USES=	cran:auto-plist
 

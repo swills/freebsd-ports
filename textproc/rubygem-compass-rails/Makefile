@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-compass-rails/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/textproc/rubygem-compass-rails/Makefile 449099 2017-09-01 18:33:51Z antoine $
 
 PORTNAME=	compass-rails
 PORTVERSION=	3.0.2
@@ -10,6 +10,8 @@ COMMENT=	Integrate Compass into Rails 2.3 and up
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		conflicting run depends
 
 RUN_DEPENDS=	rubygem-compass>=1.0.0:textproc/rubygem-compass \
 		rubygem-sass-rails5>=0:textproc/rubygem-sass-rails5 \

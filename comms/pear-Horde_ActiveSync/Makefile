@@ -1,7 +1,7 @@
-# $FreeBSD: head/comms/pear-Horde_ActiveSync/Makefile 447173 2017-08-02 19:23:51Z mm $
+# $FreeBSD: head/comms/pear-Horde_ActiveSync/Makefile 449165 2017-09-02 22:37:05Z mm $
 
 PORTNAME=	Horde_ActiveSync
-PORTVERSION=	2.38.7
+PORTVERSION=	2.38.8
 CATEGORIES=	comms www pear
 
 MAINTAINER=	horde@FreeBSD.org

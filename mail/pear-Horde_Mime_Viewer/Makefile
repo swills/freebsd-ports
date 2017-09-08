@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/mail/pear-Horde_Mime_Viewer/Makefile 421524 2016-09-07 22:54:27Z mm $
+# $FreeBSD: head/mail/pear-Horde_Mime_Viewer/Makefile 449165 2017-09-02 22:37:05Z mm $
 
 PORTNAME=	Horde_Mime_Viewer
-PORTVERSION=	2.2.1
+PORTVERSION=	2.2.2
 CATEGORIES=	mail www pear
 
 MAINTAINER=	horde@FreeBSD.org

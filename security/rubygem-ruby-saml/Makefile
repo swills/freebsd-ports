@@ -1,8 +1,8 @@
 # Created by: Torsten Zuhlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/security/rubygem-ruby-saml/Makefile 441251 2017-05-19 16:29:24Z sunpoet $
+# $FreeBSD: head/security/rubygem-ruby-saml/Makefile 449075 2017-09-01 10:51:29Z sunpoet $
 
 PORTNAME=	ruby-saml
-PORTVERSION=	1.4.3
+PORTVERSION=	1.5.0
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

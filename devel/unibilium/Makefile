@@ -1,8 +1,8 @@
 # Created by: Anton Tornqvist <antont@inbox.lv>
-# $FreeBSD: head/devel/unibilium/Makefile 436501 2017-03-19 14:47:21Z tobik $
+# $FreeBSD: head/devel/unibilium/Makefile 449319 2017-09-05 23:11:01Z cpm $
 
 PORTNAME=	unibilium
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -12,10 +12,11 @@ COMMENT=	Unibilium is a very basic terminfo library
 LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/LGPLv3
 
+USES=		gmake libtool:build pathfix perl5 pkgconfig
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	mauke
 
-USES=		gmake libtool:build pathfix perl5 pkgconfig
 PATHFIX_MAKEFILEIN=	Makefile
 USE_PERL5=	build
 USE_LDCONFIG=	yes

@@ -1,5 +1,5 @@
 # Created by: Kenneth Vestergaard Schmidt <kvs@pil.dk>
-# $FreeBSD: head/editors/emacs-devel/Makefile 445665 2017-07-13 16:59:31Z ashish $
+# $FreeBSD: head/editors/emacs-devel/Makefile 449247 2017-09-04 13:42:18Z ashish $
 
 PORTNAME=	emacs
 DISTVERSION=	${EMACS_VER}.${EMACS_REV}
@@ -15,14 +15,14 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 CONFLICTS=	emacs25-[0-9]* emacs-nox11-[0-9]*
 
-BROKEN_aarch64=		Fails to link: missing sbrk
+BROKEN_aarch64=		Segfaults during build
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	emacs-mirror
-GH_TAGNAME=	01a98e9
+GH_TAGNAME=	1b492fa
 
 EMACS_VER=	26.0.50
-EMACS_REV=	20170712
+EMACS_REV=	20170903
 GNU_CONFIGURE=	yes
 USES=		autoreconf:build cpe gmake makeinfo ncurses pkgconfig
 INFO_PATH=	${DATADIR_REL}/info

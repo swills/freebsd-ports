@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-rack-contrib/Makefile 446218 2017-07-19 18:05:22Z sunpoet $
+# $FreeBSD: head/www/rubygem-rack-contrib/Makefile 449077 2017-09-01 10:51:39Z sunpoet $
 
 PORTNAME=	rack-contrib
-PORTVERSION=	1.5.0
+PORTVERSION=	1.6.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

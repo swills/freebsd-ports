@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 448443 2017-08-20 23:21:18Z ultima $
+# $FreeBSD: head/x11/Makefile 449358 2017-09-06 19:32:40Z tcberner $
 #
 
     COMMENT = Ports to support the X window system
@@ -296,6 +296,7 @@
     SUBDIR += screen-message
     SUBDIR += scripts
     SUBDIR += scrnsaverproto
+    SUBDIR += sddm
     SUBDIR += sessreg
     SUBDIR += setlayout
     SUBDIR += setxkbmap

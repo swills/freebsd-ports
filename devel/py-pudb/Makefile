@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/py-pudb/Makefile 447901 2017-08-13 16:40:14Z sunpoet $
+# $FreeBSD: head/devel/py-pudb/Makefile 449221 2017-09-04 00:00:33Z sunpoet $
 
 PORTNAME=	pudb
-PORTVERSION=	2017.1.3
+PORTVERSION=	2017.1.4
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

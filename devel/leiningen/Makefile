@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/leiningen/Makefile 444653 2017-06-29 16:44:01Z tobik $
+# $FreeBSD: head/devel/leiningen/Makefile 449340 2017-09-06 11:39:36Z tobik $
 
 PORTNAME=	leiningen
 PORTVERSION=	2.7.1
@@ -33,7 +33,7 @@ SHEBANG_FILES=	bin/lein-pkg
 bash_CMD=	/bin/sh
 
 post-patch:
-	@${REINPLACE_CMD} -E -e 's|function (.*) {|\1() {|' \
+	@${REINPLACE_CMD} -E -e 's|function (.*) \{|\1() {|' \
 		-e 's|(local )-i |\1|' \
 		-e 's|^if \[\[ (.*) \]\];|if [ \1 ];|' \
 		-e 's|(BOOTCLASSPATH)\[@\]|\1|' \

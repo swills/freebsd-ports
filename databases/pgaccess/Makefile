@@ -1,8 +1,9 @@
 # Created by: Palle Girgensohn <girgen@pingpong.net>
-# $FreeBSD: head/databases/pgaccess/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/pgaccess/Makefile 449392 2017-09-07 10:56:40Z gahr $
 
 PORTNAME=	pgaccess
 PORTVERSION=	1.00.20140902
+PORTREVISION=	1
 CATEGORIES=	databases tcl tk
 MASTER_SITES=	http://bsdforge.com/projects/source/databases/pgaccess/
 
@@ -13,7 +14,7 @@ LICENSE=	BSD4CLAUSE
 
 RUN_DEPENDS=	${LOCALBASE}/lib/pgtcl/pkgIndex.tcl:databases/pgtcl
 
-USES=		pgsql tk:84+ tar:xz
+USES=		pgsql tk:85+ tar:xz
 
 NO_ARCH=	yes
 

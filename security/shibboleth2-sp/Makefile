@@ -1,9 +1,9 @@
 # Created by: Janos Mohacsi <janos.mohacsi@bsd.hu>
-# $FreeBSD: head/security/shibboleth2-sp/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/security/shibboleth2-sp/Makefile 449138 2017-09-02 14:23:38Z sunpoet $
 
 PORTNAME=	shibboleth-sp
 PORTVERSION=	2.6.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	security www
 MASTER_SITES=	http://shibboleth.net/downloads/service-provider/${PORTVERSION}/
 
@@ -16,7 +16,7 @@ BUILD_DEPENDS=	boost-libs>=0:devel/boost-libs
 LIB_DEPENDS=	libsaml.so:security/opensaml2 \
 		libxmltooling-lite.so:devel/xmltooling \
 		liblog4shib.so:devel/log4shib \
-		libxerces-c-3.1.so:textproc/xerces-c3 \
+		libxerces-c.so:textproc/xerces-c3 \
 		libxml-security-c.so:security/apache-xml-security-c
 
 USES=		gmake tar:bzip2 ssl

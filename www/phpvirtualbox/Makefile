@@ -1,8 +1,9 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/www/phpvirtualbox/Makefile 446746 2017-07-27 15:21:31Z decke $
+# $FreeBSD: head/www/phpvirtualbox/Makefile 449338 2017-09-06 11:28:28Z decke $
 
 PORTNAME=	phpvirtualbox
 DISTVERSION=	5.1-1
+PORTREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	vbox@FreeBSD.org

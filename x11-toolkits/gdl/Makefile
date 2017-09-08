@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gdl/Makefile 442676 2017-06-05 16:27:56Z kwm $
+# $FreeBSD: head/x11-toolkits/gdl/Makefile 449184 2017-09-03 09:01:42Z amdmi3 $
 
 PORTNAME=	gdl
 PORTVERSION=	3.22.0
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 PORTSCOUT=	limitw:1,even
 
-USE_GNOME=	cairo gdkpixbuf2 gtk30 intltool introspection:build libxml2 
+USE_GNOME=	cairo gdkpixbuf2 gtk30 intltool introspection:build libxml2
 USES=		gettext gmake gnome libtool localbase pathfix pkgconfig tar:xz
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes

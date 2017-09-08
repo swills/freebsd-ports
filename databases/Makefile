@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 448782 2017-08-26 19:06:01Z dbaio $
+# $FreeBSD: head/databases/Makefile 449400 2017-09-07 14:32:28Z jrm $
 #
 
     COMMENT = Databases and related software
@@ -555,6 +555,7 @@
     SUBDIR += pecl-mongodb
     SUBDIR += pecl-pdo_user
     SUBDIR += pecl-redis
+    SUBDIR += pecl-rrd1
     SUBDIR += pecl-rrd
     SUBDIR += pecl-tokyo_tyrant
     SUBDIR += percona-pam-for-mysql
@@ -840,8 +841,6 @@
     SUBDIR += py3-bsddb3
     SUBDIR += py3-mysqlclient
     SUBDIR += py3-psycopg2
-    SUBDIR += py33-gdbm
-    SUBDIR += py33-sqlite3
     SUBDIR += py34-gdbm
     SUBDIR += py34-sqlite3
     SUBDIR += py35-gdbm

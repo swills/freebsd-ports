@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/erlang-sbroker/Makefile 420856 2016-08-25 14:15:41Z olgeni $
+# $FreeBSD: head/devel/erlang-sbroker/Makefile 449182 2017-09-03 09:01:13Z olgeni $
 
 PORTNAME=	sbroker
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.0.0-beta.3
+DISTVERSION=	1.0.0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

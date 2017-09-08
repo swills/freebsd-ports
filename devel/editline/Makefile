@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/editline/Makefile 428732 2016-12-17 12:57:03Z sunpoet $
+# $FreeBSD: head/devel/editline/Makefile 449416 2017-09-07 20:12:26Z sunpoet $
 
 PORTNAME=	editline
-PORTVERSION=	1.15.2
+PORTVERSION=	1.15.3
 CATEGORIES=	devel
 
 MAINTAINER=	sunpoet@FreeBSD.org

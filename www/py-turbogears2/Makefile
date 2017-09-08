@@ -1,8 +1,8 @@
 # Created by: Wen Heping	<wenheping@gmail.com>
-# $FreeBSD: head/www/py-turbogears2/Makefile 428454 2016-12-12 23:44:00Z wen $
+# $FreeBSD: head/www/py-turbogears2/Makefile 449178 2017-09-03 08:46:31Z wen $
 
 PORTNAME=	TurboGears2
-PORTVERSION=	2.3.10
+PORTVERSION=	2.3.11
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

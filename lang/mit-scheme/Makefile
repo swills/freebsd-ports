@@ -1,9 +1,9 @@
 # Created by: jmacd@FreeBSD.org
-# $FreeBSD: head/lang/mit-scheme/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/lang/mit-scheme/Makefile 449180 2017-09-03 08:48:24Z olgeni $
 
 PORTNAME=	mit-scheme
 PORTVERSION=	9.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	lang scheme
 MASTER_SITES=	GNU/mit-scheme/stable.pkg/${PORTVERSION}
 DISTNAME=	${PORTNAME}-${PORTVERSION}-${MIT_SCHEME_ARCH}
@@ -87,6 +87,9 @@ MIT_SCHEME_ARCH=${ARCH}
 .endif
 
 PLIST_SUB+=	MIT_SCHEME_ARCH=${MIT_SCHEME_ARCH}
+
+post-patch:
+	@${REINPLACE_CMD} -e 's|-export-dynamic|-rdynamic|g' ${WRKSRC}/microcode/configure ${WRKSRC}/microcode/configure.ac
 
 post-build:
 	@${FIND} ${WRKDIR} -type d -empty -delete

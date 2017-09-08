@@ -1,8 +1,8 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/www/mod_md-devel/Makefile 448352 2017-08-19 21:04:19Z brnrd $
+# $FreeBSD: head/www/mod_md-devel/Makefile 449388 2017-09-07 08:30:19Z brnrd $
 
 PORTNAME=	mod_md-devel
-PORTVERSION=	0.7.0
+PORTVERSION=	0.9.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 
@@ -34,7 +34,8 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 DOCSDIR=	share/doc/mod_md
 PORTDOCS=	README README.md
 PLIST_FILES=	${APACHEMODDIR}/mod_md.so.0.0.0 \
-		${APACHEMODDIR}/mod_md.so
+		${APACHEMODDIR}/mod_md.so \
+		bin/a2md
 
 .include <bsd.port.pre.mk>
 
@@ -44,6 +45,7 @@ IGNORE=		port requires OpenSSL 1.0.2 or later, set DEFAULT_VERSIONS+= ssl=openss
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${APACHEMODDIR}/${MODULENAME}.so
+	${INSTALL} ${WRKSRC}/src/a2md ${STAGEDIR}${PREFIX}/bin/a2md
 	${RM} ${STAGEDIR}${PREFIX}/share/doc/mod_md/LICENSE
 	${RM} ${STAGEDIR}${PREFIX}/bin/ext-a2md
 

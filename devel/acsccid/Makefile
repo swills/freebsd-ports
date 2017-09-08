@@ -1,5 +1,5 @@
 # Created by: mp39590@gmail.com
-# $FreeBSD: head/devel/acsccid/Makefile 430669 2017-01-05 22:58:02Z jbeich $
+# $FreeBSD: head/devel/acsccid/Makefile 449391 2017-09-07 09:01:46Z amdmi3 $
 
 PORTNAME=	acsccid
 PORTVERSION=	1.1.4
@@ -9,7 +9,8 @@ MASTER_SITES=	SF
 MAINTAINER=	mp39590@gmail.com
 COMMENT=	PC/SC driver for CS CCID smart card readers
 
-LICENSE=	GPLv2
+LICENSE=	LGPL21+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpcsclite.so:devel/pcsc-lite
 

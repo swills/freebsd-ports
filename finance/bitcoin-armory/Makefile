@@ -1,10 +1,10 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/finance/bitcoin-armory/Makefile 442994 2017-06-09 14:18:09Z sunpoet $
+# $FreeBSD: head/finance/bitcoin-armory/Makefile 449224 2017-09-04 00:00:48Z sunpoet $
 
 PORTNAME=	BitcoinArmory
 PORTVERSION=	0.93.3
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	finance
 
 MAINTAINER=	yuri@rawbw.com
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 BUILD_DEPENDS=	${LOCALBASE}/bin/swig3.0:devel/swig30 \
 		${LOCALBASE}/bin/pyrcc4:textproc/py-qt4-xml \
 		${LOCALBASE}/bin/rsync:net/rsync
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twistedCore>=14.0.0:devel/py-twistedCore \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=14.0.0:devel/py-twisted \
 		${PYTHON_PKGNAMEPREFIX}psutil>1.2.1:sysutils/py-psutil \
 		${LOCALBASE}/bin/bitcoind:net-p2p/bitcoin-daemon
 

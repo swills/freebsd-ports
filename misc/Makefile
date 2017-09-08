@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 448603 2017-08-23 11:33:26Z rene $
+# $FreeBSD: head/misc/Makefile 449259 2017-09-04 19:32:33Z des $
 #
 
     COMMENT = Miscellaneous utilities
@@ -369,6 +369,7 @@
     SUBDIR += posixtestsuite
     SUBDIR += proxyper
     SUBDIR += pspresent
+    SUBDIR += ptsort
     SUBDIR += py-YABT
     SUBDIR += py-cinder
     SUBDIR += py-crudini

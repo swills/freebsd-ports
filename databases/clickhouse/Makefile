@@ -1,5 +1,5 @@
 # Created by: proler@gmail.com
-# $FreeBSD: head/databases/clickhouse/Makefile 445864 2017-07-15 09:51:09Z eugen $
+# $FreeBSD: head/databases/clickhouse/Makefile 449100 2017-09-01 18:36:48Z antoine $
 
 PORTNAME=	clickhouse
 PORTVERSION=	1.1.54245
@@ -12,6 +12,8 @@ MAINTAINER=	proler@gmail.com
 COMMENT=	ClickHouse is an column-oriented database management system
 
 LICENSE=	APACHE20
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	bash:shells/bash \
 				sparsehash>=0:devel/sparsehash

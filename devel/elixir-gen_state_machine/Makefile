@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-gen_state_machine/Makefile 425600 2016-11-07 10:16:55Z olgeni $
+# $FreeBSD: head/devel/elixir-gen_state_machine/Makefile 449335 2017-09-06 10:22:17Z olgeni $
 
 PORTNAME=	gen_state_machine
-PORTVERSION=	2.0.0
+PORTVERSION=	2.0.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

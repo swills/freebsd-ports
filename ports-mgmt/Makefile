@@ -1,4 +1,4 @@
-# $FreeBSD: head/ports-mgmt/Makefile 441068 2017-05-17 09:24:24Z kami $
+# $FreeBSD: head/ports-mgmt/Makefile 449193 2017-09-03 09:51:31Z rene $
 #
 
     COMMENT = Ports for managing, installing, and developing FreeBSD ports and packages
@@ -11,7 +11,6 @@
     SUBDIR += dialog4ports-static
     SUBDIR += distilator
     SUBDIR += fastest_sites
-    SUBDIR += fbsdmon
     SUBDIR += freebsd-bugzilla-cli
     SUBDIR += genpatch
     SUBDIR += genplist

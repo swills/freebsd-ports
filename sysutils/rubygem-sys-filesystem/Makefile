@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/sysutils/rubygem-sys-filesystem/Makefile 427965 2016-12-06 14:53:14Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-sys-filesystem/Makefile 449223 2017-09-04 00:00:43Z sunpoet $
 
 PORTNAME=	sys-filesystem
-PORTVERSION=	1.1.7
+PORTVERSION=	1.1.8
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 

@@ -1,8 +1,8 @@
 # Created by: Rob Evers <rob@debank.tv>
-# $FreeBSD: head/mail/postfixadmin/Makefile 433819 2017-02-10 17:33:53Z krion $
+# $FreeBSD: head/mail/postfixadmin/Makefile 449322 2017-09-06 02:51:58Z dbaio $
 
 PORTNAME=	postfixadmin
-PORTVERSION=	3.0.2
+PORTVERSION=	3.1
 CATEGORIES=	mail www
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
@@ -44,14 +44,15 @@ SQLITE_USE=	php=sqlite3
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${WWWDIR}
-.for i in *.php calendar.js
+	@${MKDIR} ${STAGEDIR}${WWWDIR}/templates_c
+.for i in *.php calendar.js favicon.ico
 	${INSTALL_DATA} ${WRKSRC}/${i} ${STAGEDIR}${WWWDIR}
 .endfor
-.for i in configs css images languages model scripts smarty templates templates_c tests users
+.for i in configs css images languages model scripts smarty templates tests users
 	@cd ${WRKSRC}/${i} && ${COPYTREE_SHARE} . ${STAGEDIR}${WWWDIR}/${i}
 .endfor
 	@${MKDIR} ${STAGEDIR}${DATADIR}
-	${INSTALL_DATA} ${WRKSRC}/*.TXT ${STAGEDIR}${DATADIR}
+	${INSTALL_DATA} ${WRKSRC}/*.TXT ${WRKSRC}/README.md ${STAGEDIR}${DATADIR}
 .for i in ADDITIONS VIRTUAL_VACATION
 	@cd ${WRKSRC}/${i} && ${COPYTREE_SHARE} . ${STAGEDIR}${DATADIR}/${i}
 .endfor

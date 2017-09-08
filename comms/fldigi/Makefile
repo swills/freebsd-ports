@@ -1,7 +1,7 @@
-# $FreeBSD: head/comms/fldigi/Makefile 446349 2017-07-21 21:33:13Z db $
+# $FreeBSD: head/comms/fldigi/Makefile 449317 2017-09-05 23:05:29Z db $
 
 PORTNAME=	fldigi
-PORTVERSION=	4.0.8
+PORTVERSION=	4.0.9
 CATEGORIES=	comms hamradio
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}
 

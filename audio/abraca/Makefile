@@ -1,14 +1,17 @@
 # Created by: Olivier Smedts <olivier@gid0.org>
-# $FreeBSD: head/audio/abraca/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/audio/abraca/Makefile 449397 2017-09-07 13:23:26Z madpilot $
 
 PORTNAME=	abraca
 PORTVERSION=	0.8.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	SF/${PORTNAME}
 
 MAINTAINER=	madpilot@FreeBSD.org
 COMMENT=	GTK2 client for the XMMS2 music player
+
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING.GPL
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/valac:lang/vala
 LIB_DEPENDS=	libxmmsclient.so:audio/xmms2 \

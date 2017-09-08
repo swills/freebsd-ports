@@ -1,8 +1,8 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/www/mod_http2-devel/Makefile 447099 2017-08-02 09:58:24Z brnrd $
+# $FreeBSD: head/www/mod_http2-devel/Makefile 449257 2017-09-04 19:08:18Z brnrd $
 
 PORTNAME=	mod_http2-devel
-PORTVERSION=	1.10.10
+PORTVERSION=	1.10.11
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 

@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-BH/Makefile 428621 2016-12-15 15:14:50Z tota $
+# $FreeBSD: head/devel/R-cran-BH/Makefile 449301 2017-09-05 16:49:22Z tota $
 
 PORTNAME=	BH
-DISTVERSION=	1.62.0-1
+DISTVERSION=	1.65.0-1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

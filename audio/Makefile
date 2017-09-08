@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 448603 2017-08-23 11:33:26Z rene $
+# $FreeBSD: head/audio/Makefile 449193 2017-09-03 09:51:31Z rene $
 #
 
     COMMENT = Audio tools
@@ -796,7 +796,6 @@
     SUBDIR += timidity++-xaw
     SUBDIR += timidity++-xskin
     SUBDIR += tkeca
-    SUBDIR += tomahawk
     SUBDIR += toolame
     SUBDIR += tosha
     SUBDIR += trommler

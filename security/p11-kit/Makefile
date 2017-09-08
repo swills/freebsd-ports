@@ -1,8 +1,8 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/security/p11-kit/Makefile 442555 2017-06-04 11:48:23Z sunpoet $
+# $FreeBSD: head/security/p11-kit/Makefile 449174 2017-09-03 07:21:13Z novel $
 
 PORTNAME=	p11-kit
-PORTVERSION=	0.23.7
+PORTVERSION=	0.23.8
 CATEGORIES=	security devel
 MASTER_SITES=	https://github.com/p11-glue/p11-kit/releases/download/${PORTVERSION}/
 

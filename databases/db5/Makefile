@@ -1,5 +1,5 @@
 # Created by: Matthias Andree <mandree@FreeBSD.org>
-# $FreeBSD: head/databases/db5/Makefile 425813 2016-11-09 22:31:48Z mandree $
+# $FreeBSD: head/databases/db5/Makefile 449083 2017-09-01 14:49:09Z linimon $
 
 PORTNAME=	db5
 PORTVERSION=	5.3.28
@@ -69,7 +69,7 @@ DOCS_INSTALL_TARGET=	install_docs
 
 .include <bsd.port.options.mk>
 
-.if ${ARCH} == "aarch64" || ${ARCH:Marmv6*}
+.if ${ARCH} == aarch64 || ${ARCH:Marmv*}
 # db5 uses a deprecated instruction for mutexes on ARM, fbsd bug#197227
 # and also bug#205001
 CONFIGURE_ARGS+=	--enable-posixmutexes

@@ -1,17 +1,20 @@
 # Created by: Damian Gerow <dgerow@afflictions.org>
-# $FreeBSD: head/net-p2p/mktorrent/Makefile 435987 2017-03-12 13:35:29Z danfe $
+# $FreeBSD: head/net-p2p/mktorrent/Makefile 449403 2017-09-07 15:19:51Z naddy $
 
 PORTNAME=	mktorrent
-PORTVERSION=	1.0
+PORTVERSION=	1.1
+DISTVERSIONPREFIX=	v
 PORTREVISION=	1
 CATEGORIES=	net-p2p
-MASTER_SITES=	SF
 
-MAINTAINER=	dgerow@afflictions.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Command-line utility for creating BitTorrent metainfo files
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	Rudde
 
 MAKEFILE=	BSDmakefile
 MAKE_ARGS=	USE_LONG_OPTIONS=1

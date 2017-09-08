@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/net/py-ndg_httpsclient/Makefile 426451 2016-11-19 17:07:06Z sunpoet $
+# $FreeBSD: head/net/py-ndg_httpsclient/Makefile 449139 2017-09-02 14:23:44Z sunpoet $
 
 PORTNAME=	ndg_httpsclient
-PORTVERSION=	0.4.2
+PORTVERSION=	0.4.3
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP/source/n/ndg-httpsclient
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

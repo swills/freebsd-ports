@@ -1,7 +1,8 @@
-# $FreeBSD: head/net-im/proxy65/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-im/proxy65/Makefile 449225 2017-09-04 00:00:52Z sunpoet $
 
 PORTNAME=	proxy65
 PORTVERSION=	1.2.0.20150210
+PORTREVISION=	1
 CATEGORIES=	net-im
 
 MAINTAINER=	mm@FreeBSD.org
@@ -9,7 +10,9 @@ COMMENT=	XEP-0065 SOCKS5 Bytestreams external component for Jabber
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/OpenSSL/__init__.py:security/py-openssl
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/OpenSSL/__init__.py:security/py-openssl \
+		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	mmatuska
@@ -25,7 +28,7 @@ JABBERD_DESC=   Use with jabberd 2.x (net-im/jabberd)
 EJABBERD_DESC=  Use with ejabberd (net-im/ejabberd)
 
 USE_PYTHON=	distutils autoplist
-USES=		python:2 twisted:words
+USES=		python:2
 USE_RC_SUBR=	proxy65
 
 PORTDOCS=	README

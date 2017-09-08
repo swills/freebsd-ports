@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/security/op/Makefile 428721 2016-12-17 12:16:28Z ehaupt $
+# $FreeBSD: head/security/op/Makefile 449379 2017-09-06 22:50:07Z adamw $
 
 PORTNAME=	op
 PORTVERSION=	1.32
@@ -15,6 +15,7 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
+CONFLICTS_INSTALL=	security/1password-client
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/etc/op.d

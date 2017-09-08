@@ -1,8 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/graphics/icoutils/Makefile 436131 2017-03-14 07:57:19Z vanilla $
+# $FreeBSD: head/graphics/icoutils/Makefile 449179 2017-09-03 08:46:32Z pi $
 
 PORTNAME=	icoutils
-PORTVERSION=	0.31.3
+PORTVERSION=	0.32.0
 CATEGORIES=	graphics
 MASTER_SITES=	SAVANNAH
 

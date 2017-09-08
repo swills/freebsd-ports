@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net-im/ring-daemon/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/net-im/ring-daemon/Makefile 449118 2017-09-02 10:17:13Z antoine $
 
 PORTNAME=	ring-daemon
 PORTVERSION=	0.160516
@@ -11,6 +11,8 @@ MAINTAINER=	yuri@rawbw.com
 COMMENT=	Daemon part of the Ring VoIP SIP phone and IM
 
 LICENSE=	GPLv3
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	${LOCALBASE}/include/linux/videodev2.h:multimedia/v4l_compat
 LIB_DEPENDS=	libyaml-cpp.so:devel/yaml-cpp \

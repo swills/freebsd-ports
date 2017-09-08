@@ -1,9 +1,9 @@
 # Created by: Philip Jenvey <pjenvey@groovie.org>
-# $FreeBSD: head/news/hellanzb/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/news/hellanzb/Makefile 449229 2017-09-04 00:01:11Z sunpoet $
 
 PORTNAME=	hellanzb
 PORTVERSION=	0.13
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	news
 MASTER_SITES=	http://www.hellanzb.com/distfiles/
 
@@ -15,11 +15,12 @@ LICENSE=	BSD3CLAUSE
 RUN_DEPENDS=	par2:archivers/par2cmdline \
 		flac:audio/flac \
 		shorten:audio/shorten \
+		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted \
 		${PYTHON_PKGNAMEPREFIX}yenc>=0:news/py-yenc \
 		mac:audio/mac
 
 USE_PYTHON=	distutils
-USES=		python:2 twisted:run,web
+USES=		python:2
 PORTDOCS=	CHANGELOG CREDITS README
 NO_ARCH=	yes
 

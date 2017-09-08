@@ -1,12 +1,11 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/audio/pulseaudio/Makefile 447399 2017-08-05 10:58:48Z kwm $
+# $FreeBSD: head/audio/pulseaudio/Makefile 449350 2017-09-06 17:46:55Z jbeich $
 #
 # !!!NOTE!!! Any PORTVERSION update to this port must be accompanied by
 # PORTREVISION bumps of depending ports.
 
 PORTNAME=	pulseaudio
-PORTVERSION=	10.0
-PORTREVISION=	4
+PORTVERSION=	11.0
 CATEGORIES=	audio
 MASTER_SITES=	http://freedesktop.org/software/pulseaudio/releases/
 
@@ -51,7 +50,6 @@ CONFIGURE_ARGS=	--localstatedir=/var \
 		--disable-systemd-journal \
 		--disable-systemd-login \
 		--disable-neon-opt \
-		--disable-xen \
 		--disable-lirc # untested
 
 USERS=		pulse

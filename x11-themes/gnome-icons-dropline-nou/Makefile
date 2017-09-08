@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/gnome-icons-dropline-nou/Makefile 400848 2015-11-05 12:36:25Z mat $
+# $FreeBSD: head/x11-themes/gnome-icons-dropline-nou/Makefile 449331 2017-09-06 09:01:45Z amdmi3 $
 
 PORTNAME=	dropline-nou
 PORTVERSION=	090208
@@ -8,6 +8,9 @@ DISTNAME=	Nou-${PORTVERSION}
 
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Dropline Nou Icons for Gnome
+
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/Nou/COPYING
 
 USES=		tar:bzip2
 NO_WRKSUBDIR=	yes

@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/dsbmixer/Makefile 446634 2017-07-25 23:25:29Z wen $
+# $FreeBSD: head/audio/dsbmixer/Makefile 449375 2017-09-06 20:56:48Z pizzamig $
 
 PORTNAME=	dsbmixer
-PORTVERSION=	1.1
+PORTVERSION=	1.2
 CATEGORIES=	audio
 MASTER_SITES=	http://freeshell.de/~mk/download/
 
@@ -16,7 +16,7 @@ RUN_DEPENDS=	dsbwrtsysctl:sysutils/dsbwrtsysctl
 USES=		tar:tgz qmake
 
 USE_GL=		gl
-USE_QT5=	buildtools core gui linguisttools widgets
+USE_QT5=	buildtools_build core gui linguisttools_build widgets
 
 QMAKE_ARGS=	PORTS=1
 

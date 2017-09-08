@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-sprockets-rails/Makefile 430181 2017-01-01 00:09:55Z swills $
+# $FreeBSD: head/devel/rubygem-sprockets-rails/Makefile 449072 2017-09-01 10:51:13Z sunpoet $
 
 PORTNAME=	sprockets-rails
-PORTVERSION=	3.2.0
+PORTVERSION=	3.2.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

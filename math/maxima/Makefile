@@ -1,8 +1,9 @@
 # Created by: Scott Flatman <sf@dsinw.com>
-# $FreeBSD: head/math/maxima/Makefile 448172 2017-08-17 18:46:18Z swills $
+# $FreeBSD: head/math/maxima/Makefile 449392 2017-09-07 10:56:40Z gahr $
 
 PORTNAME=	maxima
 PORTVERSION=	5.40.0
+PORTREVISION=	1
 CATEGORIES=	math lisp tk
 MASTER_SITES=	SF/maxima/Maxima-source/${PORTVERSION}-source
 
@@ -16,7 +17,7 @@ PATCH_DEPENDS=	${LOCALBASE}/bin/bash:shells/bash
 RUN_DEPENDS=	${LOCALBASE}/bin/${LISPPORT} \
 		${LOCALBASE}/bin/gnuplot:math/gnuplot
 
-USES=			gmake makeinfo perl5 python:build tk:84+ shared-mime-info
+USES=			gmake makeinfo perl5 python:build tk:85+ shared-mime-info
 USE_PERL5=		build
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--prefix=${PREFIX} \

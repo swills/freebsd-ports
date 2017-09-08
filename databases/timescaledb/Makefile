@@ -1,14 +1,15 @@
 # Created by: Kevin Bowling <kbowling@freebsd.org>
-# $FreeBSD: head/databases/timescaledb/Makefile 448814 2017-08-27 09:06:22Z tobik $
+# $FreeBSD: head/databases/timescaledb/Makefile 449389 2017-09-07 08:49:10Z pizzamig $
 
 PORTNAME=	timescaledb
-PORTVERSION=	0.4.0
+PORTVERSION=	0.4.1
 CATEGORIES=	databases
 
 MAINTAINER=	kbowling@FreeBSD.org
 COMMENT=	Time-series database built on PostgreSQL
 
 LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		compiler:c11 gmake pgsql:9.6
 USE_LDCONFIG=	yes
@@ -25,7 +26,8 @@ PLIST_FILES=	lib/postgresql/timescaledb.so \
 		share/postgresql/extension/timescaledb--0.1.0--0.2.0.sql \
 		share/postgresql/extension/timescaledb--0.2.0--0.3.0.sql \
 		share/postgresql/extension/timescaledb--0.3.0--0.4.0.sql \
-		share/postgresql/extension/timescaledb--0.4.0.sql \
+		share/postgresql/extension/timescaledb--0.4.0--0.4.1.sql \
+		share/postgresql/extension/timescaledb--0.4.1.sql \
 		share/postgresql/extension/timescaledb.control
 
 post-install:

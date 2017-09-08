@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/terraform/Makefile 449032 2017-08-31 13:47:10Z lifanov $
+# $FreeBSD: head/sysutils/terraform/Makefile 449396 2017-09-07 13:23:04Z lifanov $
 
 PORTNAME=	terraform
-PORTVERSION=	0.10.3
+PORTVERSION=	0.10.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

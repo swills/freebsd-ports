@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/Makefile 447816 2017-08-12 05:43:46Z woodsb02 $
+# $FreeBSD: head/print/Makefile 449135 2017-09-02 12:57:20Z tobik $
 #
 
     COMMENT = Desktop publishing
@@ -162,6 +162,7 @@
     SUBDIR += pdfcube
     SUBDIR += pdflib
     SUBDIR += pdflib-perl
+    SUBDIR += pdfstitch
     SUBDIR += pdftk
     SUBDIR += pear-File_PDF
     SUBDIR += pecl-haru
