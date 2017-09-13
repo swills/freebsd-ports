@@ -1,5 +1,5 @@
 # Created by: Bernhard Froehlich <decke@FreeBSD.org>
-# $FreeBSD: head/ports-mgmt/redports-node/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/ports-mgmt/redports-node/Makefile 449623 2017-09-11 09:42:51Z decke $
 
 PORTNAME=	redports-node
 PORTVERSION=	0.1.2
@@ -7,7 +7,7 @@ CATEGORIES=	ports-mgmt
 MASTER_SITES=	https://api.redports.org/downloads/
 DISTFILES=	${PORTNAME}-${DISTVERSION}.phar ${PORTNAME}-${DISTVERSION}.phar.pubkey
 
-MAINTAINER=	decke@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Redports building node
 
 LICENSE=	BSD2CLAUSE
@@ -15,6 +15,9 @@ LICENSE=	BSD2CLAUSE
 RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss \
 		poudriere:ports-mgmt/poudriere \
 		${LOCALBASE}/bin/ccache:devel/ccache
+
+DEPRECATED=	Upstream is dead so port is not useable anymore.
+EXPIRATION_DATE=	2017-09-30
 
 NO_BUILD=	yes
 USE_PHP=	curl hash json openssl pcntl phar

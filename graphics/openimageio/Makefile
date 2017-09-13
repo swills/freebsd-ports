@@ -1,8 +1,9 @@
 # Created by: Shane Ambler <FreeBSD@Shaneware.biz>
-# $FreeBSD: head/graphics/openimageio/Makefile 446539 2017-07-24 18:20:27Z swills $
+# $FreeBSD: head/graphics/openimageio/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	openimageio
-PORTVERSION=	1.7.10
+PORTVERSION=	1.7.17
+PORTREVISION=	1
 DISTVERSIONPREFIX=	Release-
 CATEGORIES?=	graphics multimedia
 
@@ -107,9 +108,9 @@ post-patch:
 
 post-install:
 .if ${SLAVE_PORT} == no
-	${LN} -sf libOpenImageIO.so.1.6 \
+	${LN} -sf libOpenImageIO.so.1.7 \
 		${STAGEDIR}${PREFIX}/lib/libOpenImageIO.so.1
-	${LN} -sf libOpenImageIO_Util.so.1.6 \
+	${LN} -sf libOpenImageIO_Util.so.1.7 \
 		${STAGEDIR}${PREFIX}/lib/libOpenImageIO_Util.so.1
 .endif
 

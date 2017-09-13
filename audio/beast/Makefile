@@ -1,9 +1,9 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/audio/beast/Makefile 441823 2017-05-27 00:43:10Z linimon $
+# $FreeBSD: head/audio/beast/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	beast
 PORTVERSION=	0.7.8
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	audio
 MASTER_SITES=	http://testbit.eu/pub/dists/beast/v${PORTVERSION:R}/
 

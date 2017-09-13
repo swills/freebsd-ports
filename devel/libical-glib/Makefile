@@ -1,9 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/devel/libical-glib/Makefile 440024 2017-05-03 17:09:38Z pawel $
+# $FreeBSD: head/devel/libical-glib/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	libical-glib
 PORTVERSION=	1.0.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	GNOME
 

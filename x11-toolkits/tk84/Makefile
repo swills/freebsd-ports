@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/tk84/Makefile 413747 2016-04-21 16:48:50Z gahr $
+# $FreeBSD: head/x11-toolkits/tk84/Makefile 449657 2017-09-11 15:23:16Z gahr $
 
 PORTNAME=	tk
 PORTVERSION=	8.4.20
@@ -10,6 +10,9 @@ DISTNAME=	${PORTNAME}${PORTVERSION}-src
 
 MAINTAINER=	tcltk@FreeBSD.org
 COMMENT=	Graphical toolkit for Tcl
+
+DEPRECATED=		Tcl/Tk 8.4 is no longer maintained, please use 8.5+
+EXPIRATION_DATE=	2017-10-15
 
 LICENSE=	TclTk
 LICENSE_NAME=	Tcl/Tk License

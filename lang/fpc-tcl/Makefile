@@ -1,10 +1,14 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/lang/fpc-tcl/Makefile 447304 2017-08-03 23:40:28Z acm $
+# $FreeBSD: head/lang/fpc-tcl/Makefile 449657 2017-09-11 15:23:16Z gahr $
 
 CATEGORIES=	lang
 PKGNAMESUFFIX=	-tcl
 
 COMMENT=	Free Pascal interface to the tcl/tk interpreter
+
+DEPRECATED=		This port depends on Tcl/Tk 8.4 , which is no longer\
+			maintained. Please port it to 8.5+
+EXPIRATION_DATE=	2017-10-15
 
 USE_FPC=	fcl-base
 

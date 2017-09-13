@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/dbus-c++/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/devel/dbus-c++/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	dbus-c++
 PORTVERSION=	0.9.1
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	pw
 CATEGORIES=	devel gnome

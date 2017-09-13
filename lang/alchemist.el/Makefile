@@ -1,7 +1,8 @@
-# $FreeBSD: head/lang/alchemist.el/Makefile 437278 2017-03-30 10:21:54Z olgeni $
+# $FreeBSD: head/lang/alchemist.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	alchemist.el
 PORTVERSION=	1.8.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	lang
 

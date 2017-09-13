@@ -1,10 +1,10 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/multimedia/libzen/Makefile 447793 2017-08-11 21:38:10Z sunpoet $
+# $FreeBSD: head/multimedia/libzen/Makefile 449757 2017-09-13 08:48:32Z sunpoet $
 
 PORTNAME=	libzen
-PORTVERSION=	0.7.98
+PORTVERSION=	0.7.99
 CATEGORIES=	multimedia
-MASTER_SITES=	http://mediaarea.net/download/binary/mediainfo/${PORTVERSION}/ \
+MASTER_SITES=	https://mediaarea.net/download/binary/mediainfo/${PORTVERSION}/ \
 		LOCAL/sunpoet
 DISTNAME=	MediaInfo_CLI_${PORTVERSION}_GNU_FromSource
 

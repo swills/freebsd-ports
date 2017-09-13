@@ -1,10 +1,10 @@
 # Created by: Yukihiro Nakai <nakai@FreeBSD.org>
-# $FreeBSD: head/lang/mono/Makefile 446741 2017-07-27 13:57:30Z mat $
+# $FreeBSD: head/lang/mono/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	mono
 PORTVERSION=	4.8.1.0
 DISTVERSIONPREFIX=	mono-
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	lang
 
 MAINTAINER=	mono@FreeBSD.org

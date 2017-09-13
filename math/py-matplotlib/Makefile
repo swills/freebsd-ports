@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/math/py-matplotlib/Makefile 443133 2017-06-11 01:56:56Z sunpoet $
+# $FreeBSD: head/math/py-matplotlib/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	matplotlib
 PORTVERSION=	1.5.3
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	math python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

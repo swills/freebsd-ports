@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/android-tools-fastboot-devel/files/Makefile 444907 2017-07-02 23:22:56Z jbeich $
+# $FreeBSD: head/devel/android-tools-fastboot-devel/files/Makefile 449604 2017-09-11 04:58:14Z jbeich $
 
 PROG_CXX=fastboot
 BINDIR?=/usr/bin
@@ -101,7 +101,7 @@ SRCS+=	zip_archive.cc
 
 REVISION?=	$$(${GIT} rev-parse --short=12 HEAD 2>/dev/null || echo unknown)
 
-CPPFLAGS+=	-DFASTBOOT_VERSION="\"0.0.0-${REVISION}-android\""
+CPPFLAGS+=	-DFASTBOOT_VERSION="\"26.0.0 rc1-${REVISION}-android\""
 CPPFLAGS+=	-Doff64_t=off_t
 CPPFLAGS+=	-Dftruncate64=ftruncate
 CPPFLAGS+=	-Dlseek64=lseek

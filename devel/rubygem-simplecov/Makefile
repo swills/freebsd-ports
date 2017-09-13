@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-simplecov/Makefile 447998 2017-08-15 18:58:49Z sunpoet $
+# $FreeBSD: head/devel/rubygem-simplecov/Makefile 449731 2017-09-12 20:57:13Z sunpoet $
 
 PORTNAME=	simplecov
-PORTVERSION=	0.15.0
+PORTVERSION=	0.15.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

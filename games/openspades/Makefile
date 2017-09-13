@@ -1,10 +1,10 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/openspades/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/openspades/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	openspades
 PORTVERSION=	0.0.12
 DISTVERSIONPREFIX=	v
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	games
 MASTER_SITES=	http://yvt.jp/files/programs/osppaks/:data
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} DevPaks27.zip:data

@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/google-perftools/Makefile 445561 2017-07-12 01:56:50Z dbaio $
+# $FreeBSD: head/devel/google-perftools/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	google-perftools
 PORTVERSION=	2.6.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/gperftools/gperftools/releases/download/gperftools-${PORTVERSION}/
 DISTNAME=	gperftools-${PORTVERSION}

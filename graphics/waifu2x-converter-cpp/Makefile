@@ -1,9 +1,9 @@
-# $FreeBSD: head/graphics/waifu2x-converter-cpp/Makefile 438490 2017-04-14 05:30:25Z jbeich $
+# $FreeBSD: head/graphics/waifu2x-converter-cpp/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	waifu2x-converter-cpp
 DISTVERSION=	1.0.0-410
 DISTVERSIONSUFFIX=	-g5e5ac35
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics
 MASTER_SITES=	https://aur.archlinux.org/cgit/aur.git/plain/${PORTNAME:C/-.*//}.1.gz?h=${PORTNAME:C/-.*//}-git&id=5c150a5&/:manpage
 DISTFILES=	${PORTNAME:C/-.*//}.1.gz:manpage

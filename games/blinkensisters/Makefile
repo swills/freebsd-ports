@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/blinkensisters/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/games/blinkensisters/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	blinkensisters
 PORTVERSION=	0.5.3
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/Blinkensisters%20-%20Lost%20Pixels/LostPixels%20${PORTVERSION}
 

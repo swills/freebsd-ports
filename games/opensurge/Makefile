@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/opensurge/Makefile 448602 2017-08-23 11:32:37Z rene $
+# $FreeBSD: head/games/opensurge/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	opensurge
 PORTVERSION=	0.1.r${SVN_REV}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 MASTER_SITES=	http://www.ime.usp.br/~alemart/opensurge_nightly/ \
 		SF/nemysisfreebsdp/${CATEGORIES}/${PORTNAME}/

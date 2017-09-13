@@ -1,8 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/accessibility/atkmm/Makefile 440288 2017-05-06 20:13:10Z kwm $
+# $FreeBSD: head/accessibility/atkmm/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	atkmm
 PORTVERSION=	2.24.2
+PORTREVISION=	1
 CATEGORIES=	accessibility gnome
 MASTER_SITES=	GNOME
 

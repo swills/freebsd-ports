@@ -1,9 +1,9 @@
 # Created by: Muhammad Moinur Rahman <bofh@FreeBSD.org>
-# $FreeBSD: head/devel/dia2code+/Makefile 441429 2017-05-21 21:55:08Z linimon $
+# $FreeBSD: head/devel/dia2code+/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	dia2code+
 PORTVERSION=	1.0.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	SF/dia2code/dia2code+/${PORTVERSION}
 DISTNAME=	dia2code-${PORTVERSION}

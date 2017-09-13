@@ -1,9 +1,9 @@
 # Created by: Torsten Teg Grust (Torsten.Grust@uni-konstanz.de)
-# $FreeBSD: head/lang/hugs/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/lang/hugs/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	hugs98
 PORTVERSION=	200609
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	lang haskell
 MASTER_SITES=	http://cvs.haskell.org/Hugs/downloads/2006-09/
 DISTNAME=	${PORTNAME}-plus-${HUGS_DATE}

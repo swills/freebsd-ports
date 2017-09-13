@@ -1,8 +1,8 @@
 # Created by: Dreamcat4 <dreamcat4@gmail.com>
-# $FreeBSD: head/multimedia/dtv-scan-tables/Makefile 446129 2017-07-18 09:01:00Z amdmi3 $
+# $FreeBSD: head/multimedia/dtv-scan-tables/Makefile 449616 2017-09-11 08:56:58Z decke $
 
 PORTNAME=	dtv-scan-tables
-PORTVERSION=	20140612
+PORTVERSION=	20170530
 CATEGORIES=	multimedia
 
 MAINTAINER=	dreamcat4@gmail.com
@@ -15,7 +15,7 @@ LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LGPL
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	oliv3r
-GH_TAGNAME=	14bd6c7
+GH_TAGNAME=	fb5fe05
 
 NO_BUILD=	yes
 NO_ARCH=	yes

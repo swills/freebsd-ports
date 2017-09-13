@@ -1,8 +1,9 @@
 # Created by: Jun Kuriyama <kuriyama@FreeBSD.org>
-# $FreeBSD: head/devel/magit/Makefile 448891 2017-08-29 05:23:23Z pi $
+# $FreeBSD: head/devel/magit/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	magit
 PORTVERSION=	2.10.3
+PORTREVISION=	1
 CATEGORIES=	devel elisp
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
 

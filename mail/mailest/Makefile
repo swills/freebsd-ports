@@ -1,9 +1,9 @@
-# $FreeBSD: head/mail/mailest/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/mail/mailest/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	mailest
 PORTVERSION=	0.9.22
 DISTVERSIONPREFIX=	${PORTNAME}-
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail
 
 MAINTAINER=	hrs@FreeBSD.org

@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/gnome-system-monitor/Makefile 437574 2017-04-02 18:02:00Z antoine $
+# $FreeBSD: head/sysutils/gnome-system-monitor/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	gnome-system-monitor
 PORTVERSION=	3.16.0
+PORTREVISION=	1
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

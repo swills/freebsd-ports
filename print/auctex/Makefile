@@ -1,9 +1,9 @@
 # Created by: Martin Kammerhofer
-# $FreeBSD: head/print/auctex/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/print/auctex/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	auctex
 PORTVERSION=	11.90
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	print elisp
 MASTER_SITES=	GNU
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}

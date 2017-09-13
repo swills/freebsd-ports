@@ -1,9 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11-themes/adwaita-common/Makefile 442026 2017-05-29 16:30:38Z tcberner $
+# $FreeBSD: head/x11-themes/adwaita-common/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	adwaita
 PORTVERSION=	1.0
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	x11-themes
 PKGNAMESUFFIX=	-${OPTIONS_SLAVE:tl}
 

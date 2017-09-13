@@ -1,8 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/tiled/Makefile 449025 2017-08-31 11:58:40Z amdmi3 $
+# $FreeBSD: head/graphics/tiled/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	tiled
 PORTVERSION=	1.0.3
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics editors games
 

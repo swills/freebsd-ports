@@ -1,9 +1,9 @@
 # Created by: Florent Thoumie <flz@xbsd.org>
-# $FreeBSD: head/emulators/raine/Makefile 440886 2017-05-14 18:47:36Z antoine $
+# $FreeBSD: head/emulators/raine/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	raine
 PORTVERSION=	0.51.9
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	emulators games
 MASTER_SITES=	GENTOO
 DISTNAME=	${PORTNAME}s-${PORTVERSION}

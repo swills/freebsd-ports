@@ -1,8 +1,8 @@
-# $FreeBSD: head/ftp/filezilla/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/ftp/filezilla/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	filezilla
 PORTVERSION=	3.24.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	ftp
 MASTER_SITES=	SF/${PORTNAME}/FileZilla_Client/${PORTVERSION}
 DISTNAME=	FileZilla_${PORTVERSION}_src

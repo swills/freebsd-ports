@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/sharpconstruct/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/sharpconstruct/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	sharpconstruct
 PORTVERSION=	0.11
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	graphics
 MASTER_SITES=	SF/sharp3d/SharpConstruct/${PORTVERSION}
 

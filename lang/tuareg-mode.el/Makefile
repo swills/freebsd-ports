@@ -1,9 +1,9 @@
 # Created by: dd
-# $FreeBSD: head/lang/tuareg-mode.el/Makefile 385637 2015-05-07 16:32:43Z mat $
+# $FreeBSD: head/lang/tuareg-mode.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	tuareg-mode
 PORTVERSION=	2.0.8
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	lang elisp
 

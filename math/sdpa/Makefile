@@ -1,9 +1,9 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/math/sdpa/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/math/sdpa/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	sdpa
 PORTVERSION=	7.3.8
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME} \
 		DEBIAN/pool/main/m/mumps:mumps

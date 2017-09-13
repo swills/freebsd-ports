@@ -1,9 +1,9 @@
 # Created by: FUJISHIMA Satsuki <sf@FreeBSD.org>
-# $FreeBSD: head/japanese/navi2ch/Makefile 441960 2017-05-28 23:17:38Z sunpoet $
+# $FreeBSD: head/japanese/navi2ch/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	navi2ch
 PORTVERSION=	2.0.0.d
-PORTREVISION=	4
+PORTREVISION=	5
 PORTEPOCH=	1
 CATEGORIES=	japanese www elisp
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}

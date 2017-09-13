@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/devel/linux-kernel/Makefile 434159 2017-02-15 12:28:29Z tobik $
+# $FreeBSD: head/devel/linux-kernel/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 # To configure the Linux kernel yourself run
 #
@@ -30,6 +30,7 @@
 
 PORTNAME=	linux-kernel
 PORTVERSION=	4.9.5
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	KERNEL_ORG/linux/kernel/v4.x
 DISTNAME=	linux-${DISTVERSION}

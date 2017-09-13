@@ -1,8 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-nurbs/Makefile 443937 2017-06-20 03:39:59Z stephen $
+# $FreeBSD: head/math/octave-forge-nurbs/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	octave-forge-nurbs
 PORTVERSION=	1.3.13
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org

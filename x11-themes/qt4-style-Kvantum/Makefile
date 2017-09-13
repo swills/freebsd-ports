@@ -1,9 +1,9 @@
-# $FreeBSD: head/x11-themes/qt4-style-Kvantum/Makefile 442740 2017-06-06 05:00:56Z tcberner $
+# $FreeBSD: head/x11-themes/qt4-style-Kvantum/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	Kvantum
 PORTVERSION=	0.10.4
 DISTVERSIONPREFIX=	V
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-themes
 PKGNAMEPREFIX=	qt4-style-
 

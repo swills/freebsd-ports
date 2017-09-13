@@ -1,8 +1,8 @@
-# $FreeBSD: head/emulators/citra/Makefile 449212 2017-09-03 17:37:52Z jbeich $
+# $FreeBSD: head/emulators/citra/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	citra
 PORTVERSION=	s20170809
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	emulators
 
 MAINTAINER=	jbeich@FreeBSD.org

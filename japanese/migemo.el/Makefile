@@ -1,8 +1,9 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/japanese/migemo.el/Makefile 416242 2016-06-01 13:15:36Z mat $
+# $FreeBSD: head/japanese/migemo.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	migemo.el
 PORTVERSION=	1.9.1
+PORTREVISION=	1
 CATEGORIES=	japanese elisp
 
 MAINTAINER=	nobutaka@FreeBSD.org

@@ -1,13 +1,14 @@
-# $FreeBSD: head/sysutils/cbsd/Makefile 449376 2017-09-06 20:57:34Z rm $
+# $FreeBSD: head/sysutils/cbsd/Makefile 449594 2017-09-10 22:16:46Z dbaio $
 
 PORTNAME=	cbsd
-PORTVERSION=	11.1.4
+PORTVERSION=	11.1.5
 CATEGORIES=	sysutils
 
 MAINTAINER=	olevole@olevole.ru
 COMMENT=	Yet another FreeBSD Jail and Bhyve Management Utility
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rsync:net/rsync \
 		sudo:security/sudo \

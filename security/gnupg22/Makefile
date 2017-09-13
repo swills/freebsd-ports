@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/gnupg22/Makefile 448868 2017-08-28 13:53:12Z adamw $
+# $FreeBSD: head/security/gnupg22/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	gnupg
 PORTVERSION=	2.2.0
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	GNUPG
 PKGNAMESUFFIX=	22

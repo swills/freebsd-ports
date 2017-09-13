@@ -1,9 +1,9 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/mail/wanderlust-devel/Makefile 449185 2017-09-03 09:07:25Z nobutaka $
+# $FreeBSD: head/mail/wanderlust-devel/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	wanderlust
 PORTVERSION=	2.15.9.b.${SNAPDATE}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail elisp
 PKGNAMESUFFIX=	-devel-${EMACS_PORT_NAME}
 

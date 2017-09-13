@@ -1,9 +1,9 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/www/gecko-mediaplayer/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/www/gecko-mediaplayer/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	gecko-mediaplayer
 PORTVERSION=	1.0.9
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	www multimedia gnome
 MASTER_SITES=	https://pkgs.rpmfusion.org/repo/pkgs/free/gecko-mediaplayer/gecko-mediaplayer-1.0.9.tar.gz/69b50ecbbbf34ca6d980a477345dbd40/
 

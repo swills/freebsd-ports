@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/pecl-intl/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/devel/pecl-intl/Makefile 449685 2017-09-12 13:01:22Z jbeich $
 
 PORTNAME=	intl
 PORTVERSION=	3.0.0
-PORTREVISION=	7
+PORTREVISION=	9
 CATEGORIES=	devel pear
 
 MAINTAINER=	sunpoet@FreeBSD.org

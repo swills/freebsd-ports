@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net-im/ring-libclient/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/net-im/ring-libclient/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	ring-libclient
 PORTVERSION=	0.160516
-PORTREVISION=	3
+PORTREVISION=	4
 #DISTVERSIONPREFIX=	v
 CATEGORIES=	net-im net-p2p
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/bzflag/Makefile 441416 2017-05-21 16:25:43Z joneum $
+# $FreeBSD: head/games/bzflag/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	bzflag
 PORTVERSION=	2.4.10
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	https://download.bzflag.org/bzflag/source/${PORTVERSION}/
 

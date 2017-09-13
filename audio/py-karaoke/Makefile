@@ -1,9 +1,9 @@
 # Created by: Elias Mandouvalos <ocean@mail.gr>
-# $FreeBSD: head/audio/py-karaoke/Makefile 438771 2017-04-18 10:25:59Z amdmi3 $
+# $FreeBSD: head/audio/py-karaoke/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	karaoke
 PORTVERSION=	0.7.5
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	audio python
 MASTER_SITES=	SF/py${PORTNAME}/py${PORTNAME}/${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

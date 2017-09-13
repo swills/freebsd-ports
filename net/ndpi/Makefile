@@ -1,8 +1,9 @@
 # Created by: Muhammad Moinur Rahman <5u623l20@gmail.com>
-# $FreeBSD: head/net/ndpi/Makefile 442671 2017-06-05 15:43:45Z madpilot $
+# $FreeBSD: head/net/ndpi/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	ndpi
 PORTVERSION=	2.0.2017.05.23
+PORTREVISION=	1
 CATEGORIES=	net
 
 MAINTAINER=	madpilot@FreeBSD.org

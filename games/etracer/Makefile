@@ -1,9 +1,9 @@
 # Created by: Peter Dunning
-# $FreeBSD: head/games/etracer/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/etracer/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	etracer
 PORTVERSION=	0.6.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 MASTER_SITES=	SF/extremetuxracer/releases/${PORTVERSION}
 DISTNAME=	etr-${PORTVERSION}

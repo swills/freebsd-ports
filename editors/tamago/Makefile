@@ -1,9 +1,9 @@
 # Created by: tetsushi NAKAI <nakai@tsl.pe.u-tokyo.ac.jp>
-# $FreeBSD: head/editors/tamago/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/editors/tamago/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	tamago
 PORTVERSION=	4.0.6.0.20041122.19.14
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	editors elisp
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}

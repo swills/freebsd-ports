@@ -1,9 +1,9 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/www/emacs-w3m/Makefile 449202 2017-09-03 13:27:39Z nobutaka $
+# $FreeBSD: head/www/emacs-w3m/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	emacs-w3m
 PORTVERSION=	1.4.598.b.${SNAPDATE}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www elisp
 MASTER_SITES=	LOCAL/nobutaka
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}

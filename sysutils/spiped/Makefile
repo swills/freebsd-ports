@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/spiped/Makefile 441192 2017-05-18 19:03:23Z cperciva $
+# $FreeBSD: head/sysutils/spiped/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	spiped
 PORTVERSION=	1.6.0
+PORTREVISION=	1
 CATEGORIES=	sysutils security
 MASTER_SITES=	http://www.tarsnap.com/spiped/
 

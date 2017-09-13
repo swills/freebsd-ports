@@ -1,10 +1,10 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gtksourceviewmm3/Makefile 437582 2017-04-02 22:14:12Z bapt $
+# $FreeBSD: head/x11-toolkits/gtksourceviewmm3/Makefile 449591 2017-09-10 20:55:38Z gerald $
 #    $MCom: ports/x11-toolkits/gtksourceviewmm3/Makefile,v 1.1 2011/10/16 22:00:24 kwm Exp $
 
 PORTNAME=	gtksourceviewmm
 PORTVERSION=	3.2.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-toolkits gnome
 MASTER_SITES=	GNOME
 PKGNAMESUFFIX=	3

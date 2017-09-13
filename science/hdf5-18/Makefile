@@ -1,8 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/hdf5-18/Makefile 443741 2017-06-17 09:48:47Z thierry $
+# $FreeBSD: head/science/hdf5-18/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	hdf5
 PORTVERSION=	1.8.19
+PORTREVISION=	1
 CATEGORIES=	science archivers graphics
 MASTER_SITES=	https://support.hdfgroup.org/ftp/HDF5/current18/src/	\
 		http://support.hdfgroup.org/ftp/HDF5/current18/src/	\

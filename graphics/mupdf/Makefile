@@ -1,9 +1,9 @@
 # Created by: Martin Dieringer <martin.dieringer@gmx.de>
-# $FreeBSD: head/graphics/mupdf/Makefile 445039 2017-07-04 19:41:21Z bhughes $
+# $FreeBSD: head/graphics/mupdf/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	mupdf
 PORTVERSION=	1.11
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONSUFFIX=	-source
 PORTEPOCH=	1
 CATEGORIES=	graphics

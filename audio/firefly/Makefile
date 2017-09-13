@@ -1,9 +1,9 @@
 # Created by: Mark Foster <mark@foster.cc>
-# $FreeBSD: head/audio/firefly/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/audio/firefly/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	firefly
 PORTVERSION=	1696
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	audio
 MASTER_SITES=	SF/fireflyserver-server/Sources/mt-daapd/svn-${PORTVERSION}
 DISTNAME=	mt-daapd-svn-${PORTVERSION}

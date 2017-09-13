@@ -1,9 +1,9 @@
 # Created by: Sarod Yatawatta <sarod@cs.pdn.ac.lk>
-# $FreeBSD: head/cad/pdnmesh/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/cad/pdnmesh/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	pdnmesh
 PORTVERSION=	0.2.2
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	cad
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-source/${PORTVERSION}
 

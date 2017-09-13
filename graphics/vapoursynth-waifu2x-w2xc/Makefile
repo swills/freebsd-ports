@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/vapoursynth-waifu2x-w2xc/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/graphics/vapoursynth-waifu2x-w2xc/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	waifu2x-w2xc
 DISTVERSION=	r6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	vapoursynth-
 

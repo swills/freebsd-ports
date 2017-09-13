@@ -1,9 +1,9 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/deskutils/bijiben/Makefile 443492 2017-06-13 08:14:34Z kwm $
+# $FreeBSD: head/deskutils/bijiben/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	bijiben
 PORTVERSION=	3.18.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

@@ -1,8 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/net-p2p/cpuminer/Makefile 449414 2017-09-07 18:31:48Z ehaupt $
+# $FreeBSD: head/net-p2p/cpuminer/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	cpuminer
 PORTVERSION=	2.5.0
+PORTREVISION=	1
 CATEGORIES=	net-p2p math
 MASTER_SITES=	SF/cpuminer
 DISTNAME=	pooler-${PORTNAME}-${PORTVERSION}

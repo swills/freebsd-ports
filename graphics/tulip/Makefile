@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/tulip/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/graphics/tulip/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	tulip
 PORTVERSION=	4.10.0
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONSUFFIX=	_src
 CATEGORIES=	graphics
 MASTER_SITES=	SF/auber/${PORTNAME}/${PORTNAME}-${PORTVERSION}

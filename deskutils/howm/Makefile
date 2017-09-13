@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/howm/Makefile 427359 2016-11-29 06:59:36Z kuriyama $
+# $FreeBSD: head/deskutils/howm/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	howm
 PORTVERSION=	1.4.3
+PORTREVISION=	1
 CATEGORIES=	deskutils
 MASTER_SITES=	http://howm.sourceforge.jp/a/
 

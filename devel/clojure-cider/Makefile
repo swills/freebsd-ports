@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/clojure-cider/Makefile 446385 2017-07-22 10:19:20Z pi $
+# $FreeBSD: head/devel/clojure-cider/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	clojure-cider
 PORTVERSION=	0.15.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel elisp
 

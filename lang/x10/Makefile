@@ -1,9 +1,9 @@
 # Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/lang/x10/Makefile 447914 2017-08-13 20:37:40Z gerald $
+# $FreeBSD: head/lang/x10/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	x10
 PORTVERSION=	2.2.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	lang devel java
 MASTER_SITES=	http://dist.codehaus.org/x10/dependencies/ \
 		SF

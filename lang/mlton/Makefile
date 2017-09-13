@@ -1,5 +1,5 @@
 # Created by: Stephen Weeks <sweeks@sweeks.com>
-# $FreeBSD: head/lang/mlton/Makefile 445594 2017-07-12 18:11:54Z antoine $
+# $FreeBSD: head/lang/mlton/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 # Previouly maintained by Jesper Louis Andersen
 # (jesper.louis.andersen@gmail.com) and Geoffrey Mainland
@@ -12,7 +12,7 @@
 
 PORTNAME=	mlton
 PORTVERSION=	20100608
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	lang
 MASTER_SITES=	SF http://www.tbrk.org/distfiles/
 DISTFILES=	${SRC_DIST} ${BOOT_DIST}

@@ -1,8 +1,9 @@
 # Created by: lbartoletti <coder@tuxfamily.org>
-# $FreeBSD: head/databases/pgrouting/Makefile 448089 2017-08-17 12:16:54Z matthew $
+# $FreeBSD: head/databases/pgrouting/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	pgrouting
 PORTVERSION=	2.4.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases geography
 

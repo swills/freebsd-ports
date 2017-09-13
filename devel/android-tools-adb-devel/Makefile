@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/android-tools-adb-devel/Makefile 448542 2017-08-22 15:56:36Z jbeich $
+# $FreeBSD: head/devel/android-tools-adb-devel/Makefile 449602 2017-09-11 04:38:59Z jbeich $
 
 # Hint: git describe --abbrev=12 --match android-o-preview-4
-DISTVERSION=	o-preview-4-185
-DISTVERSIONSUFFIX=	-g2066e0585e9d
+DISTVERSION=	o-preview-4-4407
+DISTVERSIONSUFFIX=	-gcfadedb1391f
 PKGNAMESUFFIX=	-devel
 
 CONFLICTS_INSTALL=	${PORTNAME}-[0-9]*

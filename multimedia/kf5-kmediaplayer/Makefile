@@ -1,8 +1,9 @@
 # Created by: tcberner
-# $FreeBSD: head/multimedia/kf5-kmediaplayer/Makefile 438880 2017-04-19 14:59:40Z tcberner $
+# $FreeBSD: head/multimedia/kf5-kmediaplayer/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	kmediaplayer
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	multimedia kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

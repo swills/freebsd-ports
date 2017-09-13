@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/net/spoofer/Makefile 448041 2017-08-16 15:44:48Z sunpoet $
+# $FreeBSD: head/net/spoofer/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	spoofer
 PORTVERSION=	1.2.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	http://www.caida.org/projects/spoofer/downloads/
 

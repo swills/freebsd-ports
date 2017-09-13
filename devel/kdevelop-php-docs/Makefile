@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/kdevelop-php-docs/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/devel/kdevelop-php-docs/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	kdevelop-php-docs
 PORTVERSION=	${KDEVELOP_VERSION:S/4./1./}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel kde
 MASTER_SITES=	KDE/${KDEVELOP_BRANCH}/kdevelop/${KDEVELOP_VERSION}
 DIST_SUBDIR=	KDE/kdevelop/${KDEVELOP_VERSION}

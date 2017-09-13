@@ -1,9 +1,9 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/mail/wanderlust/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/mail/wanderlust/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	wanderlust
 PORTVERSION=	2.14.0
-PORTREVISION=	18
+PORTREVISION=	19
 CATEGORIES=	mail elisp
 MASTER_SITES=	ftp://ftp.gohome.org/wl/stable/ \
 		http://www.jpl.org/elips/wl/

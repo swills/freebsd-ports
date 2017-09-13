@@ -1,9 +1,9 @@
 # Created by: Hajimu UMEMOTO <ume@FreeBSD.org>
-# $FreeBSD: head/japanese/egg-canna/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/japanese/egg-canna/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	egg-canna
 PORTVERSION=	20011110
-PORTREVISION=	17
+PORTREVISION=	18
 CATEGORIES=	japanese editors elisp
 MASTER_SITES=	http://cgi18.plala.or.jp/nyy/canna/
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}

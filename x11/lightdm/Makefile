@@ -1,9 +1,9 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/x11/lightdm/Makefile 447399 2017-08-05 10:58:48Z kwm $
+# $FreeBSD: head/x11/lightdm/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	lightdm
 PORTVERSION=	1.22.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	https://launchpad.net/${PORTNAME}/${PORTVERSION:R}/${PORTVERSION}/+download/
 

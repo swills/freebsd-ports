@@ -1,7 +1,7 @@
-# $FreeBSD: head/archivers/rubygem-fpm/Makefile 447373 2017-08-04 20:09:01Z sunpoet $
+# $FreeBSD: head/archivers/rubygem-fpm/Makefile 449726 2017-09-12 20:56:47Z sunpoet $
 
 PORTNAME=	fpm
-PORTVERSION=	1.9.2
+PORTVERSION=	1.9.3
 CATEGORIES=	archivers rubygems
 MASTER_SITES=	RG
 

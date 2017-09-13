@@ -1,9 +1,9 @@
 # Created by: arved
-# $FreeBSD: head/www/newsbeuter/Makefile 448611 2017-08-23 13:42:03Z arved $
+# $FreeBSD: head/www/newsbeuter/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	newsbeuter
 PORTVERSION=	2.9
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	www
 MASTER_SITES=	https://newsbeuter.org/downloads/ \
 		http://newsbeuter.org/downloads/

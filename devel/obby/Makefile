@@ -1,9 +1,9 @@
 # Created by: Andreas Kohn <andreas@syndrom23.de>
-# $FreeBSD: head/devel/obby/Makefile 441847 2017-05-27 15:07:11Z linimon $
+# $FreeBSD: head/devel/obby/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	obby
 PORTVERSION=	0.4.8
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://releases.0x539.de/obby/
 

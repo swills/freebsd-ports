@@ -1,8 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@FreeBSD.edu>
-# $FreeBSD: head/math/octave-forge-queueing/Makefile 443932 2017-06-20 03:34:15Z stephen $
+# $FreeBSD: head/math/octave-forge-queueing/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	octave-forge-queueing
 PORTVERSION=	1.2.5
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org

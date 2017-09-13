@@ -1,9 +1,9 @@
 # Created by: Kimura Fuyuki <fuyuki@hadaly.org>
-# $FreeBSD: head/devel/psvn/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/devel/psvn/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	psvn
 PORTVERSION=	20120326.212349
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel elisp
 MASTER_SITES=	http://www.xsteve.at/prg/emacs/
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}

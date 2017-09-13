@@ -1,5 +1,5 @@
 #
-#	$FreeBSD: head/Mk/bsd.emacs.mk 439212 2017-04-23 09:17:09Z ume $
+#	$FreeBSD: head/Mk/bsd.emacs.mk 449696 2017-09-12 15:34:32Z ashish $
 #
 #	bsd.emacs.mk - 19990829 Shigeyuki Fukushima.
 #
@@ -66,7 +66,7 @@ EMACS_MASTERDIR_PKGFILES?=	NO
 # Emacs-25.x
 .if (${EMACS_PORT_NAME} == "emacs25")
 EMACS_NAME=		emacs
-EMACS_VER=		25.2
+EMACS_VER=		25.3
 EMACS_MAJOR_VER=	25
 EMACS_LIBDIR?=		share/${EMACS_NAME}
 EMACS_LIBDIR_WITH_VER?=	share/${EMACS_NAME}/${EMACS_VER}
@@ -99,7 +99,7 @@ PLIST?=			${PKGDIR}/pkg-plist.${EMACS_PORT_NAME}
 
 .elif (${EMACS_PORT_NAME} == "emacs-nox11")
 EMACS_NAME=		emacs
-EMACS_VER=		25.2
+EMACS_VER=		25.3
 EMACS_MAJOR_VER=	25
 EMACS_LIBDIR=		share/${EMACS_NAME}
 EMACS_LIBDIR_WITH_VER?= share/${EMACS_NAME}/${EMACS_VER}

@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/coq/Makefile 441819 2017-05-27 00:20:19Z linimon $
+# $FreeBSD: head/math/coq/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	coq
 PORTVERSION=	8.6
+PORTREVISION=	1
 PORTEPOCH=	3
 CATEGORIES=	math
 MASTER_SITES=	http://coq.inria.fr/distrib/V${PORTVERSION}/files/ \

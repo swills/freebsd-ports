@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-rex-random_identifier/Makefile 449187 2017-09-03 09:19:18Z antoine $
+# $FreeBSD: head/security/rubygem-rex-random_identifier/Makefile 449518 2017-09-10 07:28:28Z antoine $
 
 PORTNAME=	rex-random_identifier
-PORTVERSION=	0.1.3
+PORTVERSION=	0.1.4
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

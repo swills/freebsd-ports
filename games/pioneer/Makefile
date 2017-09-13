@@ -1,9 +1,9 @@
 # Created by: lightside <lightside@gmx.com>
-# $FreeBSD: head/games/pioneer/Makefile 446395 2017-07-22 12:22:32Z jbeich $
+# $FreeBSD: head/games/pioneer/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	pioneer
 PORTVERSION=	0.0.${GH_TAGNAME}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

@@ -1,11 +1,11 @@
 # Created by: Philip M. Gollucci <pgollucci@p6m7g8.com>
-# $FreeBSD: head/ports-mgmt/freebsd-bugzilla-cli/Makefile 437233 2017-03-29 20:33:05Z rene $
+# $FreeBSD: head/ports-mgmt/freebsd-bugzilla-cli/Makefile 449448 2017-09-08 11:01:15Z olgeni $
 
 PORTNAME=	freebsd-bugzilla-cli
-PORTVERSION=	0.15.0
+PORTVERSION=	0.15.1
 CATEGORIES=	ports-mgmt
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Interact with the FreeBSD bugzilla instance
 
 LICENSE=	APACHE20

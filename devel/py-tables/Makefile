@@ -1,9 +1,9 @@
 # Created by: ijliao@FreeBSD.org
-# $FreeBSD: head/devel/py-tables/Makefile 442050 2017-05-30 02:56:43Z sunpoet $
+# $FreeBSD: head/devel/py-tables/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	tables
 PORTVERSION=	3.4.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

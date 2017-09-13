@@ -1,9 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc/Makefile 441901 2017-05-28 08:28:36Z gerald $
+# $FreeBSD: head/lang/gcc/Makefile 449652 2017-09-11 14:54:12Z gerald $
 
 PORTNAME=	gcc
-PORTVERSION=	5.4.0
-PORTREVISION=	2
+PORTVERSION=	${GCC_DEFAULT}
 CATEGORIES=	lang java
 MASTER_SITES=	# not applicable
 DISTFILES=	# not applicable

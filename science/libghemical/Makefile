@@ -1,9 +1,9 @@
 # Created by: Nakata Maho <maho@FreeBSD.org>
-# $FreeBSD: head/science/libghemical/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/science/libghemical/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	libghemical
 PORTVERSION=	3.0.0
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	science
 MASTER_SITES=	http://bioinformatics.org/ghemical/download/release20111012/	\
 		http://bioinformatics.org/ghemical/download/current/

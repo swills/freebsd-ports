@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/Makefile 449196 2017-09-03 10:33:56Z rene $
+# $FreeBSD: head/x11-toolkits/Makefile 449606 2017-09-11 06:30:53Z gahr $
 #
 
     COMMENT = X11 toolkits
@@ -269,6 +269,7 @@
     SUBDIR += tk84
     SUBDIR += tk85
     SUBDIR += tk86
+    SUBDIR += tk87
     SUBDIR += tkdnd
     SUBDIR += tkshape
     SUBDIR += tktable

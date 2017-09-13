@@ -1,9 +1,9 @@
 # Created by: okeeblow <root@cooltrainer.org>
-# $FreeBSD: head/emulators/snes9x-gtk/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/emulators/snes9x-gtk/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	snes9x
 PORTVERSION=	1.54.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	emulators
 PKGNAMESUFFIX=	-gtk
 

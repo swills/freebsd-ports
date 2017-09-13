@@ -1,9 +1,9 @@
 # Created by: Dmitry Sivachenko <mitya@yandex-team.ru>
-# $FreeBSD: head/textproc/opengrm-ngram/Makefile 441494 2017-05-22 22:29:17Z linimon $
+# $FreeBSD: head/textproc/opengrm-ngram/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	opengrm-ngram
 PORTVERSION=	1.3.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	http://openfst.cs.nyu.edu/twiki/pub/GRM/NGramDownload/
 

@@ -1,9 +1,9 @@
 # Created by: George Sorsby <george@crackpipe.net>
-# $FreeBSD: head/news/nget/Makefile 408076 2016-02-04 18:50:44Z amdmi3 $
+# $FreeBSD: head/news/nget/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	nget
 PORTVERSION=	0.27.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	news
 MASTER_SITES=	SF
 DISTNAME=	nget-${PORTVERSION}+uulib

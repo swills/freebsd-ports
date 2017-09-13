@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-bsd/Makefile 449197 2017-09-03 10:35:09Z antoine $
+# $FreeBSD: head/devel/py-bsd/Makefile 449601 2017-09-11 04:03:42Z timur $
 
 PORTNAME=	bsd
 PORTVERSION=	1.0.20170329
@@ -10,19 +10,17 @@ COMMENT=	Python wrappers for various BSD libc and system calls
 
 LICENSE=	BSD3CLAUSE
 
-BROKEN=		fails to build
-
 BUILD_DEPENDS=	cython>0:lang/cython \
 		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+
+USES=		python
+USE_PYTHON=	autoplist distutils
 
 USE_GITHUB=     yes
 GH_ACCOUNT=	freenas
 GH_PROJECT=	py-bsd
 GH_TAGNAME=	6d148fa
-
-USES=		python
-USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.pre.mk>
 

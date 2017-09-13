@@ -1,10 +1,10 @@
 # Created by: Yuri <yuri@tsoft.com>
-# $FreeBSD: head/multimedia/assimp/Makefile 446581 2017-07-25 13:00:13Z jbeich $
+# $FreeBSD: head/multimedia/assimp/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	assimp
 PORTVERSION=	4.0.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia
 
 MAINTAINER=	yuri@rawbw.com

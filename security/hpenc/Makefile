@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hpenc/Makefile 441819 2017-05-27 00:20:19Z linimon $
+# $FreeBSD: head/security/hpenc/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	hpenc
 PORTVERSION=	2.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	security
 MASTER_SITES=	http://highsecure.ru/distfiles/
 

@@ -1,8 +1,9 @@
 # Created by: Michael Reifenberger <mr@FreeBSD.org>
-# $FreeBSD: head/cad/kicad-devel/Makefile 446084 2017-07-17 17:43:23Z thierry $
+# $FreeBSD: head/cad/kicad-devel/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	kicad
 DISTVERSION=	r${GIT_SRC_DATE}
+PORTREVISION=	1
 #PORTREVISION=	1
 CATEGORIES=	cad
 MASTER_SITES=	LOCAL/mr

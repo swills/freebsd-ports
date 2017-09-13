@@ -1,9 +1,9 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/security/clambc/Makefile 447836 2017-08-12 14:51:38Z gerald $
+# $FreeBSD: head/security/clambc/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	clambc
 DISTVERSION=	0.98.5rc1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	security
 MASTER_SITES=	SF/clamav/${PORTNAME:tl}
 

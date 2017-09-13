@@ -1,8 +1,9 @@
 # Created by: iblis <iblis@hs.ntnu.edu.tw>
-# $FreeBSD: head/archivers/c-blosc/Makefile 447585 2017-08-09 00:44:05Z ultima $
+# $FreeBSD: head/archivers/c-blosc/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	c-blosc
 PORTVERSION=	1.12.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	archivers devel
 

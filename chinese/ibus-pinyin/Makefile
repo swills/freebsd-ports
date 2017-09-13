@@ -1,9 +1,9 @@
 # Created by: Henry Hu <henry.hu.sh@gmail.com>
-# $FreeBSD: head/chinese/ibus-pinyin/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/chinese/ibus-pinyin/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	ibus-pinyin
 PORTVERSION=	1.5.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	chinese
 
 MAINTAINER=	henry.hu.sh@gmail.com

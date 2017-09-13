@@ -1,9 +1,9 @@
 # Created by: Janni
-# $FreeBSD: head/net/skstream/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/net/skstream/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	skstream
 PORTVERSION=	0.3.9
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net
 MASTER_SITES=	SF/worldforge/${PORTNAME}%20%28network%20lib%29/${PORTVERSION}
 

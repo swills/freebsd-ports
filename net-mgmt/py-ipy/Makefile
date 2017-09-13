@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/net-mgmt/py-ipy/Makefile 405425 2016-01-07 11:16:14Z miwi $
+# $FreeBSD: head/net-mgmt/py-ipy/Makefile 449724 2017-09-12 20:56:38Z sunpoet $
 
 PORTNAME=	ipy
 PORTVERSION=	0.83
@@ -8,12 +8,15 @@ MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	IPy-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Python module for handling IPv4 and IPv6 Addresses and Networks
 
-USES=		python
-USE_PYTHON=	distutils autoplist
+LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 NO_ARCH=	yes
+USE_PYTHON=	autoplist concurrent distutils
+USES=		python
 
 do-test:
 	${PYTHON_CMD} ${WRKSRC}/test/test_IPy.py

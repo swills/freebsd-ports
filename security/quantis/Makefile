@@ -1,9 +1,9 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/security/quantis/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/security/quantis/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	quantis
 DISTVERSION=	v13.11.08
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	security devel java
 MASTER_SITES=	http://www.idquantique.com/~download/Quantis/ \
 		LOCAL/ale

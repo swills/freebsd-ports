@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/editors/latexila/Makefile 440705 2017-05-12 19:15:24Z kwm $
+# $FreeBSD: head/editors/latexila/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	latexila
 PORTVERSION=	3.22.1
+PORTREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

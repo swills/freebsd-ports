@@ -1,5 +1,5 @@
 # Created by: David Kalliecharan <dave@dal.ca>
-# $FreeBSD: head/lang/py-hy/Makefile 444634 2017-06-29 09:13:46Z robak $
+# $FreeBSD: head/lang/py-hy/Makefile 449692 2017-09-12 14:49:45Z olgeni $
 
 PORTNAME=	hy
 PORTVERSION=	0.13.0
@@ -8,7 +8,7 @@ MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	dave@dal.ca
-COMMENT=	Hy is a dialect of lisp that's is embedded in Python
+COMMENT=	Hy is a dialect of Lisp that is embedded in Python
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE

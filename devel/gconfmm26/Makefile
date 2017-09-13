@@ -1,10 +1,10 @@
 # Created by: Alexander Nedotsukov <bland@mail.ru>
-# $FreeBSD: head/devel/gconfmm26/Makefile 437582 2017-04-02 22:14:12Z bapt $
+# $FreeBSD: head/devel/gconfmm26/Makefile 449591 2017-09-10 20:55:38Z gerald $
 #   $MCom: ports-stable/devel/gconfmm26/Makefile,v 1.1 2010/06/24 07:51:01 kwm Exp $
 
 PORTNAME=	gconfmm
 PORTVERSION=	2.28.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

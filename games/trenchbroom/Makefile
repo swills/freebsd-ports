@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/trenchbroom/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/trenchbroom/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	trenchbroom
 PORTVERSION=	2.0.0.b
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games cad
 
 MAINTAINER=	danfe@FreeBSD.org

@@ -1,8 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/games/freecell-solver/Makefile 443789 2017-06-17 22:30:42Z danilo $
+# $FreeBSD: head/games/freecell-solver/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	freecell-solver
 PORTVERSION=	4.12.1
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://fc-solve.shlomifish.org/downloads/fc-solve/
 

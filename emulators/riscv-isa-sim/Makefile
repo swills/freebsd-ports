@@ -1,8 +1,8 @@
-# $FreeBSD: head/emulators/riscv-isa-sim/Makefile 447782 2017-08-11 17:50:49Z lwhsu $
+# $FreeBSD: head/emulators/riscv-isa-sim/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	riscv-isa-sim
 DISTVERSION=	git
-PORTREVISION=	20170809
+PORTREVISION=	20170810
 CATEGORIES=	emulators
 
 MAINTAINER=	lwhsu@FreeBSD.org

@@ -1,9 +1,9 @@
 # Created by: Donald Burr <dburr@FreeBSD.org>
-# $FreeBSD: head/devel/sourcenav/Makefile 440001 2017-05-03 05:52:55Z linimon $
+# $FreeBSD: head/devel/sourcenav/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	sourcenav
 PORTVERSION=	4.5
-PORTREVISION=	5
+PORTREVISION=	6
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/NG${PORTVERSION}

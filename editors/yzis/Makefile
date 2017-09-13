@@ -1,9 +1,9 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/editors/yzis/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/editors/yzis/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	yzis
 PORTVERSION=	1.0.a.1
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	editors
 MASTER_SITES=	http://labs.freehackers.org/attachments/download/45/ \
 		http://contribs.martymac.org/FreeBSD-ports/distfiles/

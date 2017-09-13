@@ -1,9 +1,9 @@
 # Created by: Cyrille Lefevre <clefevre@citeweb.net>
-# $FreeBSD: head/lang/gforth/Makefile 448179 2017-08-17 19:34:21Z ultima $
+# $FreeBSD: head/lang/gforth/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	gforth
 PORTVERSION=	0.7.3
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	lang
 MASTER_SITES=	http://www.complang.tuwien.ac.at/forth/gforth/ \
 		GNU

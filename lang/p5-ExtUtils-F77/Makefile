@@ -1,9 +1,9 @@
 # Created by: jmz
-# $FreeBSD: head/lang/p5-ExtUtils-F77/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/lang/p5-ExtUtils-F77/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	ExtUtils-F77
 PORTVERSION=	1.20
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

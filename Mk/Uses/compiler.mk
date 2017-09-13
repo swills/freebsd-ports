@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/compiler.mk 439804 2017-04-30 11:57:46Z bapt $
+# $FreeBSD: head/Mk/Uses/compiler.mk 449716 2017-09-12 20:43:58Z gerald $
 #
 # Allows to determine the compiler being used
 #
@@ -144,7 +144,7 @@ CHOSEN_COMPILER_TYPE=	gcc
 .if ${_COMPILER_ARGS:Mc++14-lang}
 .if !${COMPILER_FEATURES:Mc++14}
 .if (defined(FAVORITE_COMPILER) && ${FAVORITE_COMPILER} == gcc) || (${ARCH} != amd64 && ${ARCH} != i386) # clang not always supported on Tier-2
-USE_GCC=	5+
+USE_GCC=	yes
 CHOSEN_COMPILER_TYPE=	gcc
 .elif (${COMPILER_TYPE} == clang && ${COMPILER_VERSION} < 35) || ${COMPILER_TYPE} == gcc
 .if ${ALT_COMPILER_TYPE} == clang && ${ALT_COMPILER_VERSION} >= 35

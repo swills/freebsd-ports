@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/wspr/Makefile 442592 2017-06-04 21:49:48Z bdrewery $
+# $FreeBSD: head/comms/wspr/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	wspr
 DISTVERSION=	${VERSION}.r${SVN_REV}
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	comms hamradio
 MASTER_SITES=	LOCAL/db
 DISTNAME=	wspr-r${SVN_REV}

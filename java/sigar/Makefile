@@ -1,9 +1,9 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/java/sigar/Makefile 441814 2017-05-26 20:02:44Z linimon $
+# $FreeBSD: head/java/sigar/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	sigar
 PORTVERSION=	1.7.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	java devel
 PKGNAMEPREFIX=	java-
 

@@ -1,9 +1,9 @@
 # Created by: Shaun Amott <shaun@inerd.com>
-# $FreeBSD: head/graphics/raster3d/Makefile 444169 2017-06-23 09:00:07Z amdmi3 $
+# $FreeBSD: head/graphics/raster3d/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	raster3d
 PORTVERSION=	3.0.2
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	graphics biology
 MASTER_SITES=	http://skuld.bmsc.washington.edu/${PORTNAME}/
 DISTNAME=	Raster3D_${PORTVERSION:R}-${PORTVERSION:E}

@@ -1,9 +1,9 @@
 # Created by: Janni <jannisan@t-online.de>
-# $FreeBSD: head/devel/atlas-devel/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/devel/atlas-devel/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	Atlas
 PORTVERSION=	0.6.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel
 MASTER_SITES=	SF/worldforge/${PORTNAME}-C%2B%2B%20%28protocol%20lib%29/${PORTVERSION}
 DISTNAME=	${PORTNAME}-C++-${PORTVERSION:S/.r/rc/}

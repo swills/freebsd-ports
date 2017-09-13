@@ -1,19 +1,28 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/deskutils/py-vobject/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/deskutils/py-vobject/Makefile 449487 2017-09-09 11:49:34Z dbaio $
 
 PORTNAME=	vobject
-PORTVERSION=	0.8.1c
-PORTREVISION=	2
+PORTVERSION=	0.9.5
 CATEGORIES=	deskutils python
-MASTER_SITES=	http://vobject.skyhouseconsulting.com/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	jun-g@daemonfreaks.com
 COMMENT=	ICalendar library
 
-RUN_DEPENDS=	py*-dateutil>=1.1:devel/py-dateutil
+LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE-2.0.txt
 
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=2.4.0:devel/py-dateutil \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+
+NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	distutils autoplist
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	eventable
+
+do-test:
+	@cd ${WRKSRC} && ${PYTHON_CMD} tests.py
 
 .include <bsd.port.mk>

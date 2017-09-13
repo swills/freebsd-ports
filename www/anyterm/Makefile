@@ -1,9 +1,9 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/www/anyterm/Makefile 446699 2017-07-26 21:44:37Z rakuco $
+# $FreeBSD: head/www/anyterm/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	anyterm
 PORTVERSION=	1.1.29
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	www
 MASTER_SITES=	http://anyterm.org/download/ \
 		http://dl1.douglasthrift.net/${PORTNAME}/ \

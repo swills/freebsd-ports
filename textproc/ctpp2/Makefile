@@ -1,9 +1,9 @@
 # Created by: Andrei V. Shetuhin <reki@reki.ru>
-# $FreeBSD: head/textproc/ctpp2/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/textproc/ctpp2/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	ctpp2
 PORTVERSION=	2.8.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	textproc devel
 MASTER_SITES=	http://ctpp.havoc.ru/download/
 

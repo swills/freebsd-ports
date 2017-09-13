@@ -1,9 +1,9 @@
 # Created by: Kris Kennaway <kris@FreeBSD.org>
-# $FreeBSD: head/games/gnomebreakout/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/games/gnomebreakout/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	gnomebreakout
 PORTVERSION=	0.5.3
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	games gnome
 MASTER_SITES=	SF/${PORTNAME:S/eb/e-b/}/${PORTNAME:S/eb/e-b/}/${PORTVERSION}/ \
 		http://www.users.on.net/~mipearson/

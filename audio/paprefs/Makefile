@@ -1,8 +1,9 @@
 # Created by: Romain Tartière <romain@blogreen.org>
-# $FreeBSD: head/audio/paprefs/Makefile 437615 2017-04-03 11:37:39Z bapt $
+# $FreeBSD: head/audio/paprefs/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	paprefs
 PORTVERSION=	0.9.10
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://freedesktop.org/software/pulseaudio/${PORTNAME}/
 

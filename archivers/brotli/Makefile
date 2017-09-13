@@ -1,8 +1,9 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/archivers/brotli/Makefile 445604 2017-07-12 19:44:56Z brnrd $
+# $FreeBSD: head/archivers/brotli/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	brotli
 PORTVERSION=	0.6.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 PORTEPOCH=	1
 CATEGORIES=	archivers devel

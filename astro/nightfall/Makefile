@@ -1,9 +1,9 @@
 # Created by: Christian Brueffer <chris@unixpages.org>
-# $FreeBSD: head/astro/nightfall/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/astro/nightfall/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	nightfall
 PORTVERSION=	1.86
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	astro
 MASTER_SITES=	http://www.la-samhna.de/nightfall/
 

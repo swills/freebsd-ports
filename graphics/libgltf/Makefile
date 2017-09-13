@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/libgltf/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/libgltf/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	libgltf
 PORTVERSION=	0.0.2
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	graphics devel
 MASTER_SITES=	LODEV
 

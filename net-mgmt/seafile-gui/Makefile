@@ -1,8 +1,9 @@
-# $FreeBSD: head/net-mgmt/seafile-gui/Makefile 448017 2017-08-15 23:43:24Z ultima $
+# $FreeBSD: head/net-mgmt/seafile-gui/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	seafile-gui
 DISTVERSIONPREFIX=	v
 DISTVERSION=	${SEAFILE_CLIENT_VER}
+PORTREVISION=	1
 CATEGORIES=	net-mgmt devel
 
 MAINTAINER=	ultima@FreeBSD.org

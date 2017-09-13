@@ -1,9 +1,9 @@
 # Created by: Roger Hardiman <roger@FreeBSD.org>
-# $FreeBSD: head/net/openh323/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/net/openh323/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	openh323
 PORTVERSION=	1.19.0.1
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	net
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}-v${PORTVERSION:S/./_/g}-src

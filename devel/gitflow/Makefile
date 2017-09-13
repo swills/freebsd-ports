@@ -1,11 +1,11 @@
 # Created by: Nicolas Embriz <nbari@dalmp.com>
-# $FreeBSD: head/devel/gitflow/Makefile 421169 2016-08-31 15:40:45Z amdmi3 $
+# $FreeBSD: head/devel/gitflow/Makefile 449512 2017-09-09 21:29:50Z dbaio $
 
 PORTNAME=	gitflow
 PORTVERSION=	1.8.0
 CATEGORIES=	devel
 
-MAINTAINER=	nbari@dalmp.com
+MAINTAINER=	nbari@tequila.io
 COMMENT=	Git extensions to provide high-level repository operations
 
 LICENSE=	BSD2CLAUSE

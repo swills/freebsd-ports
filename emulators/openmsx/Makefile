@@ -1,8 +1,8 @@
-# $FreeBSD: head/emulators/openmsx/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/emulators/openmsx/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	openmsx
 PORTVERSION=	0.13.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	emulators
 MASTER_SITES=	https://github.com/openMSX/openMSX/releases/download/RELEASE_${PORTVERSION:S/./_/g}/
 

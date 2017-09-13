@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/rubygem-railties5/Makefile 447365 2017-08-04 20:08:21Z sunpoet $
+# $FreeBSD: head/www/rubygem-railties5/Makefile 449555 2017-09-10 13:09:55Z sunpoet $
 
 PORTNAME=	railties
-PORTVERSION=	5.1.3
+PORTVERSION=	5.1.4
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	5

@@ -1,5 +1,5 @@
 # Created by: jkh
-# $FreeBSD: head/lang/tcl84/Makefile 431796 2017-01-18 13:20:31Z tijl $
+# $FreeBSD: head/lang/tcl84/Makefile 449657 2017-09-11 15:23:16Z gahr $
 
 PORTNAME=	tcl
 PORTVERSION=	8.4.20
@@ -13,6 +13,9 @@ DISTNAME=	${PORTNAME}${PORTVERSION}-src
 
 MAINTAINER=	tcltk@FreeBSD.org
 COMMENT=	Tool Command Language
+
+DEPRECATED=		Tcl/Tk 8.4 is no longer maintained, please use 8.5+
+EXPIRATION_DATE=	2017-10-15
 
 LICENSE=	TclTk
 LICENSE_NAME=	Tcl/Tk License

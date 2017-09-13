@@ -1,9 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/emulators/wxmupen64plus/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/emulators/wxmupen64plus/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	wxmupen64plus
 PORTVERSION=	0.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	emulators
 MASTER_SITES=	https://bitbucket.org/auria/wxmupen64plus/get/
 DISTNAME=	${PORTVERSION}

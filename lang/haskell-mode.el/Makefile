@@ -1,8 +1,9 @@
 # Created by: Josh Elsasser <jre@vineyard.net>
-# $FreeBSD: head/lang/haskell-mode.el/Makefile 423011 2016-09-30 18:59:46Z pawel $
+# $FreeBSD: head/lang/haskell-mode.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	haskell-mode
 PORTVERSION=	16.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=v
 CATEGORIES=	lang elisp
 

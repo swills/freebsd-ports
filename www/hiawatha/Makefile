@@ -1,9 +1,9 @@
 # Created by: Hugo Leisink
-# $FreeBSD: head/www/hiawatha/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/www/hiawatha/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	hiawatha
 PORTVERSION=	10.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	https://www.hiawatha-webserver.org/files/
 

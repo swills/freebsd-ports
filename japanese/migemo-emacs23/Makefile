@@ -1,6 +1,7 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/japanese/migemo-emacs23/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/migemo-emacs23/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
+PORTREVISION=	1
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
 COMMENT=	Japanese incremental search tool for emacs
 MASTERDIR=	${.CURDIR}/../../japanese/migemo

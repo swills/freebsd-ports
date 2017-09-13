@@ -1,9 +1,9 @@
 # Created by: Andreas Kohn <andreas@syndrom23.de>
-# $FreeBSD: head/x11-toolkits/libsexymm/Makefile 437776 2017-04-05 11:28:15Z bapt $
+# $FreeBSD: head/x11-toolkits/libsexymm/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	libsexymm
 PORTVERSION=	0.1.9
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	x11-toolkits devel
 MASTER_SITES=	http://releases.chipx86.com/libsexy/libsexymm/
 

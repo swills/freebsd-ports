@@ -1,7 +1,8 @@
-# $FreeBSD: head/mail/mu4e/Makefile 433681 2017-02-08 23:26:23Z marino $
+# $FreeBSD: head/mail/mu4e/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	mu4e
 PORTVERSION=	0.9.16
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	mail
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}

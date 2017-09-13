@@ -1,9 +1,9 @@
 # Created by: Andrew Baznikin <dikiy@scn.ru>
-# $FreeBSD: head/devel/raknet/Makefile 440001 2017-05-03 05:52:55Z linimon $
+# $FreeBSD: head/devel/raknet/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	raknet
 PORTVERSION=	3.9.2
-PORTREVISION=	5
+PORTREVISION=	6
 PORTEPOCH=	1
 CATEGORIES=	devel net
 MASTER_SITES=	http://www.jenkinssoftware.com/raknet/downloads/ \

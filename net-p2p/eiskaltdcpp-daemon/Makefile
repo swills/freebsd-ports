@@ -1,8 +1,8 @@
 # Created by: Stas Timokhin <stast@bsdportal.ru>
-# $FreeBSD: head/net-p2p/eiskaltdcpp-daemon/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/net-p2p/eiskaltdcpp-daemon/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	eiskaltdcpp
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net-p2p
 PKGNAMESUFFIX=	-daemon
 

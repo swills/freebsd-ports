@@ -1,8 +1,9 @@
 # Created by: Fumihiko Kimura <jfkimura@yahoo.co.jp>
-# $FreeBSD: head/www/tdiary/Makefile 445445 2017-07-10 17:35:15Z ultima $
+# $FreeBSD: head/www/tdiary/Makefile 449671 2017-09-12 05:21:09Z pi $
 
 PORTNAME=	tdiary
 PORTVERSION=	5.0.5
+PORTREVISION=	1
 CATEGORIES?=	www ruby
 MASTER_SITES=	https://github.com/tdiary/tdiary-core/releases/download/v${PORTVERSION}/
 DISTNAME=	${PORTNAME}-full-v${PORTVERSION}

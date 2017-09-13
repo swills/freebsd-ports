@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/rlvm/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/devel/rlvm/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	rlvm
 DISTVERSIONPREFIX=	release-
 DISTVERSION=	0.14-67
 DISTVERSIONSUFFIX=	-g9350209
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	devel games
 
 MAINTAINER=	jbeich@FreeBSD.org

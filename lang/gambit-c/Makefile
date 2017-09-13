@@ -1,9 +1,9 @@
 # Created by: Rob Zinkov
-# $FreeBSD: head/lang/gambit-c/Makefile 438031 2017-04-08 11:05:08Z amdmi3 $
+# $FreeBSD: head/lang/gambit-c/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	gambit-c
 PORTVERSION=	4.8.8
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 PORTEPOCH=	1
 CATEGORIES=	lang

@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/llvm34/Makefile 441483 2017-05-22 17:39:26Z bdrewery $
+# $FreeBSD: head/devel/llvm34/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	llvm
 PORTVERSION=	3.4.2
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel lang
 MASTER_SITES=	http://llvm.org/releases/${PORTVERSION}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}.src

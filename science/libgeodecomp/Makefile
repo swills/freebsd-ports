@@ -1,9 +1,9 @@
 # Created by: Kurt Kanzenbach <kurt@kmk-computers.de>
-# $FreeBSD: head/science/libgeodecomp/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/science/libgeodecomp/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=		libgeodecomp
 PORTVERSION=		0.4.0
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=		science devel
 MASTER_SITES=		http://www.libgeodecomp.org/archive/
 

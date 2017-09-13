@@ -1,9 +1,9 @@
 # Created by: Will Andrews <andrews@technologist.com>
-# $FreeBSD: head/games/rubix/Makefile 440858 2017-05-13 23:21:37Z linimon $
+# $FreeBSD: head/games/rubix/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	rubix
 PORTVERSION=	1.0.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games
 MASTER_SITES=	http://sed.free.fr/rubix/ \
 		http://mirror.mcx2.org/

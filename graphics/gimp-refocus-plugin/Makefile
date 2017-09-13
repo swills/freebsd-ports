@@ -1,9 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/graphics/gimp-refocus-plugin/Makefile 446696 2017-07-26 20:32:05Z pawel $
+# $FreeBSD: head/graphics/gimp-refocus-plugin/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	refocus
 PORTVERSION=	0.9.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 PKGNAMEPREFIX=	gimp-

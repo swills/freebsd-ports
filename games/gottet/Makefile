@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/gottet/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/gottet/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	gottet
 PORTVERSION=	1.1.3
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONSUFFIX=	-src
 CATEGORIES=	games
 MASTER_SITES=	http://gottcode.org/gottet/

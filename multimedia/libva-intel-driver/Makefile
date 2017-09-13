@@ -1,8 +1,9 @@
 # Created by: Manuel Creach <manuel.creach@me.com>
-# $FreeBSD: head/multimedia/libva-intel-driver/Makefile 444654 2017-06-29 17:55:22Z madpilot $
+# $FreeBSD: head/multimedia/libva-intel-driver/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	libva-intel-driver
 PORTVERSION=	1.8.3
+PORTREVISION=	1
 CATEGORIES=	multimedia
 
 MAINTAINER=	madpilot@FreeBSD.org

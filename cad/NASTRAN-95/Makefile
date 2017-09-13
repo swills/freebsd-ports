@@ -1,8 +1,9 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/cad/NASTRAN-95/Makefile 448086 2017-08-17 11:15:05Z robak $
+# $FreeBSD: head/cad/NASTRAN-95/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	NASTRAN-95
 PORTVERSION=	20160908
+PORTREVISION=	1
 CATEGORIES=	cad science
 
 MAINTAINER=	pfg@FreeBSD.org

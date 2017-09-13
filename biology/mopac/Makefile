@@ -1,9 +1,9 @@
 # Created by: Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
-# $FreeBSD: head/biology/mopac/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/biology/mopac/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	mopac
 PORTVERSION=	7.${MOPAC_SUBVERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	biology
 MASTER_SITES=	http://bioinformatics.org/ghemical/download/%SUBDIR%/

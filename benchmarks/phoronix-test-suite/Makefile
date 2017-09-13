@@ -1,8 +1,9 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/benchmarks/phoronix-test-suite/Makefile 448911 2017-08-29 13:05:21Z pizzamig $
+# $FreeBSD: head/benchmarks/phoronix-test-suite/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	phoronix-test-suite
-PORTVERSION=	7.0.1
+PORTVERSION=	7.2.1
+PORTREVISION=	1
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://www.phoronix-test-suite.com/releases/
 

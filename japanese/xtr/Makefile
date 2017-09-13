@@ -1,9 +1,9 @@
 # Created by: TANAKA Hiroyuki <kattyo@abk.nu>
-# $FreeBSD: head/japanese/xtr/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/japanese/xtr/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	xtr
 PORTVERSION=	1.50e.0.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	japanese textproc
 MASTER_SITES=	ftp://ftp.abk.nu/pub/redist/xtr/
 DISTNAME=	${PORTNAME}1.50e-0.2

@@ -1,8 +1,9 @@
-# $FreeBSD: head/devel/android-tools-simpleperf/Makefile 443543 2017-06-13 22:48:45Z jbeich $
+# $FreeBSD: head/devel/android-tools-simpleperf/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	android-tools-simpleperf
 DISTVERSIONPREFIX=	android-
 DISTVERSION=	7.1.2_r17
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	jbeich@FreeBSD.org

@@ -1,9 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/sysutils/shim/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/sysutils/shim/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	shim
 PORTVERSION=	0.8
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	sysutils
 
 MAINTAINER=	ports@FreeBSD.org

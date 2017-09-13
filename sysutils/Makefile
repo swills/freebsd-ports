@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 449326 2017-09-06 06:29:52Z cy $
+# $FreeBSD: head/sysutils/Makefile 449665 2017-09-11 20:13:18Z swills $
 #
 
     COMMENT = System utilities
@@ -191,6 +191,7 @@
     SUBDIR += consolehm
     SUBDIR += consolekit2
     SUBDIR += consul
+    SUBDIR += consul_exporter
     SUBDIR += consul-alerts
     SUBDIR += contractor
     SUBDIR += copytape
@@ -1140,11 +1141,11 @@
     SUBDIR += syslinux
     SUBDIR += syslog-ng
     SUBDIR += syslog-ng-incubator
+    SUBDIR += syslog-ng310
+    SUBDIR += syslog-ng311
     SUBDIR += syslog-ng36
     SUBDIR += syslog-ng37
     SUBDIR += syslog-ng39
-    SUBDIR += syslog-ng310
-    SUBDIR += syslog-ng311
     SUBDIR += syslogger
     SUBDIR += sysrc
     SUBDIR += system-tools-backends

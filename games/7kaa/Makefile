@@ -1,8 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/7kaa/Makefile 443633 2017-06-15 20:14:28Z amdmi3 $
+# $FreeBSD: head/games/7kaa/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	7kaa
 PORTVERSION=	2.14.7
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	SF/skfans/7KAA%20${PORTVERSION}
 

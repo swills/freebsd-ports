@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/flatbuffers/Makefile 444655 2017-06-29 18:11:34Z ultima $
+# $FreeBSD: head/devel/flatbuffers/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	flatbuffers
 PORTVERSION=	1.7.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

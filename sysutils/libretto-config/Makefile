@@ -1,9 +1,9 @@
 # Created by: Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
-# $FreeBSD: head/sysutils/libretto-config/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/sysutils/libretto-config/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	libretto-config
 PORTVERSION=	1.0.b5
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	sysutils
 MASTER_SITES=	http://club.pep.ne.jp/~ishioka/Software/Linux/libapm/
 DISTNAME=	libapm-linux-1.0beta5

@@ -1,9 +1,9 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/emulators/dolphin-emu/Makefile 444567 2017-06-28 11:19:34Z martymac $
+# $FreeBSD: head/emulators/dolphin-emu/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	dolphin-emu
 PORTVERSION=	5.0
-PORTREVISION=	8
+PORTREVISION=	10
 CATEGORIES=	emulators
 
 MAINTAINER=	martymac@FreeBSD.org

@@ -1,10 +1,10 @@
 # Created by: Alexander Nedotsukov <bland@mail.ru>
-# $FreeBSD: head/devel/libglademm24/Makefile 437583 2017-04-02 22:16:37Z bapt $
+# $FreeBSD: head/devel/libglademm24/Makefile 449591 2017-09-10 20:55:38Z gerald $
 #   $MCom: ports/devel/libglademm24/Makefile,v 1.10 2008/09/22 11:42:53 kwm Exp $
 
 PORTNAME=	libglademm
 PORTVERSION=	2.6.7
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

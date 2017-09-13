@@ -1,9 +1,9 @@
 # Created by: b.f. <bf@FreeBSD.org>
-# $FreeBSD: head/math/fflas-ffpack/Makefile 444988 2017-07-03 20:38:11Z tcberner $
+# $FreeBSD: head/math/fflas-ffpack/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	fflas-ffpack
 PORTVERSION=	1.4.3
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	math
 MASTER_SITES=	http://linalg.org/ LOCAL/bf
 

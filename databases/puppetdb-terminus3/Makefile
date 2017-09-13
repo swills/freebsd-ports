@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/puppetdb-terminus3/Makefile 447833 2017-08-12 14:19:04Z romain $
+# $FreeBSD: head/databases/puppetdb-terminus3/Makefile 449469 2017-09-08 23:46:40Z zleslie $
 
 PORTNAME=	puppetdb-terminus3
 PORTVERSION=	3.2.4
@@ -10,6 +10,9 @@ MAINTAINER=	puppet@FreeBSD.org
 COMMENT=	PuppetDB storeconfigs backend terminus module
 
 LICENSE=	APACHE20
+
+DEPRECATED=	End of life upstream
+EXPIRATION_DATE=	2017-11-01
 
 BUILD_DEPENDS=	puppet:sysutils/puppet4
 

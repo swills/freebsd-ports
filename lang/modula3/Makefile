@@ -1,9 +1,9 @@
 # Created by: marino@FreeBSD.org
-# $FreeBSD: head/lang/modula3/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/lang/modula3/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	modula3
 PORTVERSION=	5.10.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	lang
 MASTER_SITES=	http://downloads.dragonlace.net/m3/:boot
 DISTFILES=	${SRCDISTFILE} ${BOOTDIST}

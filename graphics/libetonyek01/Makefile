@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/libetonyek01/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/graphics/libetonyek01/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	libetonyek
 PORTVERSION=	0.1.6
-PORTREVISION=	5
+PORTREVISION=	6
 PORTEPOCH=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://dev-www.libreoffice.org/src/${PORTNAME}/

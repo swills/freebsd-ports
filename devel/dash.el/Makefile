@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/dash.el/Makefile 430183 2017-01-01 00:24:38Z hrs $
+# $FreeBSD: head/devel/dash.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	dash.el
 PORTVERSION=	2.13.0
+PORTREVISION=	1
 CATEGORIES=	devel elisp
 
 MAINTAINER=	hrs@FreeBSD.org

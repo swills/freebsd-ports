@@ -1,8 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/peg-e/Makefile 448371 2017-08-20 11:19:44Z amdmi3 $
+# $FreeBSD: head/games/peg-e/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	peg-e
 PORTVERSION=	1.2.3
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://gottcode.org/peg-e/ \
 		http://mirror.amdmi3.ru/distfiles/

@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/php.mk 438174 2017-04-10 15:08:12Z mat $
+# $FreeBSD: head/Mk/Uses/php.mk 449499 2017-09-09 16:49:29Z joneum $
 #
 # Support for PHP-based ports.
 #
@@ -275,13 +275,13 @@ add-plist-phpext:
 		>> ${TMPPLIST}
 	@${FIND} -P ${STAGEDIR}${PREFIX}/include/php/ext/${PHP_MODNAME} ! -type d 2>/dev/null | \
 		${SED} -ne 's,^${STAGEDIR}${PREFIX}/,,p' >> ${TMPPLIST}
-	@${ECHO_CMD} "@exec echo \#include \\\"ext/${PHP_MODNAME}/config.h\\\" >> %D/include/php/ext/php_config.h" \
+	@${ECHO_CMD} "@postexec echo \#include \\\"ext/${PHP_MODNAME}/config.h\\\" >> %D/include/php/ext/php_config.h" \
 		>> ${TMPPLIST}
-	@${ECHO_CMD} "@unexec cp %D/include/php/ext/php_config.h %D/include/php/ext/php_config.h.orig" \
+	@${ECHO_CMD} "@preunexec cp %D/include/php/ext/php_config.h %D/include/php/ext/php_config.h.orig" \
 		>> ${TMPPLIST}
-	@${ECHO_CMD} "@unexec grep -v ext/${PHP_MODNAME}/config.h %D/include/php/ext/php_config.h.orig > %D/include/php/ext/php_config.h || true" \
+	@${ECHO_CMD} "@preunexec grep -v ext/${PHP_MODNAME}/config.h %D/include/php/ext/php_config.h.orig > %D/include/php/ext/php_config.h || true" \
 		>> ${TMPPLIST}
-	@${ECHO_CMD} "@unexec ${RM} %D/include/php/ext/php_config.h.orig" \
+	@${ECHO_CMD} "@preunexec ${RM} %D/include/php/ext/php_config.h.orig" \
 		>> ${TMPPLIST}
 	@${ECHO_CMD} "${PHP_EXT_INI_FILE}" \
 		>> ${TMPPLIST}

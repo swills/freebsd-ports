@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/pugixml/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/textproc/pugixml/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	pugixml
 PORTVERSION=	1.7
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc
 MASTER_SITES=	https://github.com/zeux/pugixml/releases/download/v${PORTVERSION}/
 

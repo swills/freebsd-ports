@@ -1,8 +1,9 @@
 # Created by: tcberner
-# $FreeBSD: head/devel/kf5-kauth/Makefile 441306 2017-05-20 10:24:35Z tcberner $
+# $FreeBSD: head/devel/kf5-kauth/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	kauth
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

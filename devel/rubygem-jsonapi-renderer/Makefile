@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-jsonapi-renderer/Makefile 447386 2017-08-05 03:25:17Z jrm $
+# $FreeBSD: head/devel/rubygem-jsonapi-renderer/Makefile 449642 2017-09-11 13:16:31Z sunpoet $
 
 PORTNAME=	jsonapi-renderer
-PORTVERSION=	0.1.3
+PORTVERSION=	0.2.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -10,9 +10,8 @@ COMMENT=	Render JSONAPI documents
 
 LICENSE=	MIT
 
+NO_ARCH=	yes
 USES=		gem
 USE_RUBY=	yes
-
-NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,9 +1,9 @@
 # Created by: Iouri V. Ivliev
-# $FreeBSD: head/graphics/pfstmo/Makefile 447397 2017-08-05 10:36:04Z rakuco $
+# $FreeBSD: head/graphics/pfstmo/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	pfstmo
 PORTVERSION=	1.5
-PORTREVISION=	6
+PORTREVISION=	8
 CATEGORIES=	graphics
 MASTER_SITES=	SF/pfstools/${PORTNAME}_depreciated/${PORTVERSION}
 

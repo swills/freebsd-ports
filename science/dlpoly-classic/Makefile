@@ -1,9 +1,9 @@
 # Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/science/dlpoly-classic/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/science/dlpoly-classic/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	dlpoly
 PORTVERSION=	1.8
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	science java
 MASTER_SITES=	http://ccpforge.cse.rl.ac.uk/gf/download/frsrelease/238/2028/
 PKGNAMESUFFIX=	classic

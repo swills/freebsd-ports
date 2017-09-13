@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/riak2/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/databases/riak2/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	riak2
 PORTVERSION=	2.1.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	databases
 MASTER_SITES=	http://s3.amazonaws.com/downloads.basho.com/riak/${PORTVERSION:R}/${PORTVERSION}/ \
 	http://downloads.basho.com.s3.amazonaws.com/riak/${PORTVERSION:R}/${PORTVERSION}/ \

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/pkg-info.el/Makefile 430176 2016-12-31 23:29:06Z hrs $
+# $FreeBSD: head/devel/pkg-info.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	pkg-info.el
 PORTVERSION=	0.6
+PORTREVISION=	1
 CATEGORIES=	devel elisp
 
 MAINTAINER=	hrs@FreeBSD.org

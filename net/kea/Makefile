@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/kea/Makefile 442836 2017-06-07 13:12:54Z amdmi3 $
+# $FreeBSD: head/net/kea/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	kea
 PORTVERSION=	1.2.0
+PORTREVISION=	1
 CATEGORIES=	net ipv6
 MASTER_SITES=	ISC/kea/${PORTVERSION}
 

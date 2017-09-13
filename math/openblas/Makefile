@@ -1,8 +1,9 @@
 # Created by: Eijiro Shibusawa <ej-sib@ice.uec.ac.jp>
-# $FreeBSD: head/math/openblas/Makefile 448738 2017-08-25 19:58:51Z truckman $
+# $FreeBSD: head/math/openblas/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	openblas
 PORTVERSION=	0.2.20
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 PORTEPOCH=	1
 CATEGORIES=	math

@@ -1,9 +1,9 @@
 # Created by: Janni
-# $FreeBSD: head/games/el/Makefile 442783 2017-06-06 16:18:16Z mat $
+# $FreeBSD: head/games/el/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	el
 PORTVERSION=	1.9.4.3
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	games
 

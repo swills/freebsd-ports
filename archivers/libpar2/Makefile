@@ -1,9 +1,9 @@
 # Created by: Jeff Burchell <toxic@doobie.com>
-# $FreeBSD: head/archivers/libpar2/Makefile 437539 2017-04-02 09:42:48Z bapt $
+# $FreeBSD: head/archivers/libpar2/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	libpar2
 PORTVERSION=	0.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	archivers
 MASTER_SITES=	http://launchpad.net/${PORTNAME}/trunk/${PORTVERSION}/+download/
 

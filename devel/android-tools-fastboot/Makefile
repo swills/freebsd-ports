@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/android-tools-fastboot/Makefile 448531 2017-08-22 13:30:04Z jbeich $
+# $FreeBSD: head/devel/android-tools-fastboot/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	android-tools-fastboot
 DISTVERSIONPREFIX=	android-
 DISTVERSION?=	8.0.0_r4
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	devel sysutils
 MASTER_SITES=	https://anonscm.debian.org/cgit/android-tools/android-tools.git/plain/debian/:manpage
 DISTFILES=	fastboot.1?id=706e754:manpage

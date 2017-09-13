@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/french/aster/Makefile 443741 2017-06-17 09:48:47Z thierry $
+# $FreeBSD: head/french/aster/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	aster
 DISTVERSION=	${ASTER_DISTVERSION}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	french cad
 CATEGORIES=	french cad
 

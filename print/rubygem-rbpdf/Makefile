@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv at kvedulv.de>
-# $FreeBSD: head/print/rubygem-rbpdf/Makefile 438087 2017-04-09 09:04:12Z sunpoet $
+# $FreeBSD: head/print/rubygem-rbpdf/Makefile 449644 2017-09-11 13:16:44Z sunpoet $
 
 PORTNAME=	rbpdf
-PORTVERSION=	1.19.2
+PORTVERSION=	1.19.3
 CATEGORIES=	print rubygems
 MASTER_SITES=	RG
 

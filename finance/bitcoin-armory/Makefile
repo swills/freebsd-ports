@@ -1,10 +1,10 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/finance/bitcoin-armory/Makefile 449224 2017-09-04 00:00:48Z sunpoet $
+# $FreeBSD: head/finance/bitcoin-armory/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	BitcoinArmory
 PORTVERSION=	0.93.3
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	finance
 
 MAINTAINER=	yuri@rawbw.com

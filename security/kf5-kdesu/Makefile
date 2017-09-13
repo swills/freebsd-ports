@@ -1,8 +1,9 @@
 # Created by: tcberner
-# $FreeBSD: head/security/kf5-kdesu/Makefile 438880 2017-04-19 14:59:40Z tcberner $
+# $FreeBSD: head/security/kf5-kdesu/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	kdesu
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	security kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

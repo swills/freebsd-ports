@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/rocksdb/Makefile 449039 2017-08-31 15:31:29Z sunpoet $
+# $FreeBSD: head/databases/rocksdb/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	rocksdb
 PORTVERSION=	5.7.3
+PORTREVISION=	1
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	databases
 

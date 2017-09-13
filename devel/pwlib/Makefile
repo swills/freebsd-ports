@@ -1,9 +1,9 @@
 # Created by: Roger Hardiman <roger@FreeBSD.org>
-# $FreeBSD: head/devel/pwlib/Makefile 448224 2017-08-18 12:34:07Z rakuco $
+# $FreeBSD: head/devel/pwlib/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	pwlib
 PORTVERSION=	1.12.0
-PORTREVISION=	12
+PORTREVISION=	13
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	SF/openh323/${PORTNAME}/${PORTVERSION}

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-paratize/Makefile 430972 2017-01-09 15:59:59Z olgeni $
+# $FreeBSD: head/devel/elixir-paratize/Makefile 449571 2017-09-10 13:19:34Z olgeni $
 
 PORTNAME=	elixir-paratize
-PORTVERSION=	2.1.4
+PORTVERSION=	2.1.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

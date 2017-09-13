@@ -1,9 +1,9 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/multimedia/vdr/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	vdr
 PORTVERSION=	1.7.29
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	multimedia
 MASTER_SITES=	ftp://ftp.tvdr.de/vdr/Developer/
 DIST_SUBDIR=	vdr

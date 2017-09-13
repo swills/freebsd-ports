@@ -1,10 +1,10 @@
 # Created by: Kevin Zheng <kevinz5000@gmail.com>
-# $FreeBSD: head/games/openclonk/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/games/openclonk/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	openclonk
 PORTVERSION=	7.0
 DISTVERSIONSUFFIX=	-src
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games
 MASTER_SITES=	http://www.openclonk.org/builds/release/${DISTVERSION}/
 

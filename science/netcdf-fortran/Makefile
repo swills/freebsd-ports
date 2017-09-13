@@ -1,9 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/science/netcdf-fortran/Makefile 443132 2017-06-11 01:53:49Z sunpoet $
+# $FreeBSD: head/science/netcdf-fortran/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	netcdf-fortran
 PORTVERSION=	4.4.4
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	science
 

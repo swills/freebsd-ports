@@ -1,8 +1,9 @@
 # Created by: Viacheslav Mikerov <SlavaMikerov@gmail.com>
-# $FreeBSD: head/devel/nlohmann-json/Makefile 437949 2017-04-07 18:01:06Z grembo $
+# $FreeBSD: head/devel/nlohmann-json/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	json
 PORTVERSION=	2.1.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	nlohmann-

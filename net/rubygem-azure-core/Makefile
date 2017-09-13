@@ -1,8 +1,8 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-azure-core/Makefile 448621 2017-08-23 14:03:09Z sunpoet $
+# $FreeBSD: head/net/rubygem-azure-core/Makefile 449733 2017-09-12 20:57:23Z sunpoet $
 
 PORTNAME=	azure-core
-PORTVERSION=	0.1.11
+PORTVERSION=	0.1.12
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

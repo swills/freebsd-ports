@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/audio/py-tagpy/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/audio/py-tagpy/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	tagpy
 PORTVERSION=	2013.1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	audio python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

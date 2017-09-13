@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-excoveralls/Makefile 447085 2017-08-02 02:29:27Z vanilla $
+# $FreeBSD: head/devel/elixir-excoveralls/Makefile 449751 2017-09-13 02:48:57Z vanilla $
 
 PORTNAME=	excoveralls
-PORTVERSION=	0.7.2
+PORTVERSION=	0.7.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

@@ -1,9 +1,9 @@
 # Created by: Pietro Cerutti <gahr@FreeBSD.org>
-# $FreeBSD: head/x11/thingylaunch/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/x11/thingylaunch/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	thingylaunch
 PORTVERSION=	2.0.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11
 MASTER_SITES=	http://gahr.ch/thingylaunch/
 

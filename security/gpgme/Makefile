@@ -1,9 +1,9 @@
 # Created by: teramoto@comm.eng.osaka-u.ac.jp
-# $FreeBSD: head/security/gpgme/Makefile 437834 2017-04-05 20:13:00Z jhale $
+# $FreeBSD: head/security/gpgme/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	gpgme
 PORTVERSION=	1.9.0
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES?=	security
 MASTER_SITES=	GNUPG/gpgme
 

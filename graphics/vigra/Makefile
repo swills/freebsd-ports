@@ -1,9 +1,9 @@
 # Created by: cartola (Carlos E. G. Carvalho)
-# $FreeBSD: head/graphics/vigra/Makefile 449001 2017-08-30 20:14:35Z tcberner $
+# $FreeBSD: head/graphics/vigra/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	vigra
 DISTVERSION=	1.11.0
-PORTREVISION=	11
+PORTREVISION=	13
 CATEGORIES=	graphics
 
 MAINTAINER=	ports@FreeBSD.org

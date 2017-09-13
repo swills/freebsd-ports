@@ -1,9 +1,9 @@
 # Created by: Masanori OZAWA <ozawa@ongs.co.jp>
-# $FreeBSD: head/japanese/xdtp/Makefile 439448 2017-04-26 13:01:48Z ler $
+# $FreeBSD: head/japanese/xdtp/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	xdtp
 PORTVERSION=	1.5.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	japanese
 MASTER_SITES=	http://www.ongs.co.jp/software/xdtp/
 

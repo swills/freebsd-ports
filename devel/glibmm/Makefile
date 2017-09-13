@@ -1,8 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/glibmm/Makefile 440288 2017-05-06 20:13:10Z kwm $
+# $FreeBSD: head/devel/glibmm/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	glibmm
 PORTVERSION=	2.50.1
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	GNOME

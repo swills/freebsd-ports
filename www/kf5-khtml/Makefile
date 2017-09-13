@@ -1,8 +1,9 @@
 # Created by: tcberner
-# $FreeBSD: head/www/kf5-khtml/Makefile 443783 2017-06-17 18:42:42Z tcberner $
+# $FreeBSD: head/www/kf5-khtml/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	khtml
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	www kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

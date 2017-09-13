@@ -1,9 +1,9 @@
 # Created by: Jille Timmermans (jille@quis.cx)
-# $FreeBSD: head/multimedia/oggvideotools/Makefile 441468 2017-05-22 16:04:19Z linimon $
+# $FreeBSD: head/multimedia/oggvideotools/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	oggvideotools
 PORTVERSION=	0.9.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${DISTNAME}
 

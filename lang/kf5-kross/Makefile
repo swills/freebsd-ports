@@ -1,8 +1,9 @@
 # Created by: tcberner
-# $FreeBSD: head/lang/kf5-kross/Makefile 438880 2017-04-19 14:59:40Z tcberner $
+# $FreeBSD: head/lang/kf5-kross/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	kross
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	lang kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

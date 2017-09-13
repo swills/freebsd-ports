@@ -1,9 +1,9 @@
 # Created by: Jason Bacon
-# $FreeBSD: head/science/openkim/Makefile 441819 2017-05-27 00:20:19Z linimon $
+# $FreeBSD: head/science/openkim/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	openkim
 PORTVERSION=	1.1.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	science
 MASTER_SITES=	http://s3.openkim.org/openkim-api/
 DISTNAME=	${PORTNAME}-api-v${PORTVERSION}

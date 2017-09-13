@@ -1,10 +1,10 @@
 # Created by: mwm@mired.org
-# $FreeBSD: head/devel/pymacs/Makefile 385521 2015-05-06 15:16:53Z mat $
+# $FreeBSD: head/devel/pymacs/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	Pymacs
 PORTVERSION=	0.25
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel editors python elisp
 
 MAINTAINER=	ports@FreeBSD.org

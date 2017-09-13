@@ -1,9 +1,9 @@
 # Created by: Zane C, Bowers-Hadley <vvelox@vvelox.net>
-# $FreeBSD: head/www/p5-Gtk2-WebKit/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/www/p5-Gtk2-WebKit/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	Gtk2-WebKit
 PORTVERSION=	0.09
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:FLORA

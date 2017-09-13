@@ -1,9 +1,9 @@
 # Created by: Jason Evans <jasone@FreeBSD.org>
-# $FreeBSD: head/biology/crux/Makefile 441814 2017-05-26 20:02:44Z linimon $
+# $FreeBSD: head/biology/crux/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	crux
 PORTVERSION=	1.2.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	biology python
 MASTER_SITES=	http://www.canonware.com/download/Crux/
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-nexpose/Makefile 447621 2017-08-09 11:47:22Z antoine $
+# $FreeBSD: head/security/rubygem-nexpose/Makefile 449517 2017-09-10 07:22:59Z antoine $
 
 PORTNAME=	nexpose
-PORTVERSION=	6.1.1
+PORTVERSION=	7.0.0
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

@@ -1,8 +1,9 @@
 # Created by: tcberner
-# $FreeBSD: head/x11-toolkits/kf5-kirigami2/Makefile 448892 2017-08-29 05:40:51Z tcberner $
+# $FreeBSD: head/x11-toolkits/kf5-kirigami2/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	kirigami2
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

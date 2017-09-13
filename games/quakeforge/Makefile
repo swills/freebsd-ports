@@ -1,9 +1,9 @@
 # Created by: Daniel J. O'Connor <darius@dons.net.au>
-# $FreeBSD: head/games/quakeforge/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/quakeforge/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	quakeforge
 PORTVERSION=	0.7.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	games
 MASTER_SITES=	SF/quake/quake/${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}

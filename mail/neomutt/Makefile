@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/neomutt/Makefile 445804 2017-07-14 18:43:40Z ler $
+# $FreeBSD: head/mail/neomutt/Makefile 449699 2017-09-12 16:40:45Z ler $
 
 PORTNAME=	neomutt
-PORTVERSION=	20170714
+PORTVERSION=	20170912
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	mail
 
@@ -14,9 +14,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 RUN_DEPENDS=	${LOCALBASE}/etc/mime.types:misc/mime-support \
 		urlview:textproc/urlview
 
+USES=		autoreconf iconv:translit localbase shebangfix ssl
+
 USE_GITHUB=	yes
 
-USES=		autoreconf iconv:translit localbase shebangfix ssl
 GNU_CONFIGURE=	yes
 
 OPTIONS_SUB=	yes

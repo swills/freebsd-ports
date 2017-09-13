@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/starttls/Makefile 421942 2016-09-12 17:48:59Z marino $
+# $FreeBSD: head/security/starttls/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	starttls
 PORTVERSION=	0.10
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.opaopa.org/pub/elisp/
 

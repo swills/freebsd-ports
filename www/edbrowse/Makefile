@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/edbrowse/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/www/edbrowse/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	edbrowse
 PORTVERSION=	3.5.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	www editors
 MASTER_SITES=	http://the-brannons.com/edbrowse/ \
 		http://rithmomachia.org/edbrowse/

@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-im/uTox/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/net-im/uTox/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	uTox
 PORTVERSION=	0.11.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net-im net-p2p
 
 MAINTAINER=	portmaster@BSDforge.com

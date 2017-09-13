@@ -1,8 +1,8 @@
 # Created by: stas
-# $FreeBSD: head/graphics/rubygem-exifr/Makefile 445335 2017-07-08 13:53:49Z sunpoet $
+# $FreeBSD: head/graphics/rubygem-exifr/Makefile 449732 2017-09-12 20:57:18Z sunpoet $
 
 PORTNAME=	exifr
-PORTVERSION=	1.3.1
+PORTVERSION=	1.3.2
 CATEGORIES=	graphics rubygems
 MASTER_SITES=	RG
 

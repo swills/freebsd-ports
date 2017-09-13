@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/sfml/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/devel/sfml/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	sfml
 PORTVERSION=	2.4.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://www.sfml-dev.org/download/sfml/${PORTVERSION}/
 DISTNAME=	SFML-${PORTVERSION}-sources

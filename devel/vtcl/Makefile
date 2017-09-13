@@ -1,5 +1,5 @@
 # Created by: Vanilla I. Shu <vanilla@MinJe.com.TW>
-# $FreeBSD: head/devel/vtcl/Makefile 417306 2016-06-22 13:40:14Z amdmi3 $
+# $FreeBSD: head/devel/vtcl/Makefile 449657 2017-09-11 15:23:16Z gahr $
 
 PORTNAME=	vtcl
 PORTVERSION=	1.6.1a1
@@ -9,6 +9,10 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/1.6.1.a1
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Application Development Environment for Tcl/Tk
+
+DEPRECATED=		This port depends on Tcl/Tk 8.4 , which is no longer\
+			maintained. Please port it to 8.5+
+EXPIRATION_DATE=	2017-10-15
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE

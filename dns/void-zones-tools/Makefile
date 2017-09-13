@@ -1,9 +1,9 @@
-# $FreeBSD: head/dns/void-zones-tools/Makefile 448825 2017-08-27 15:08:57Z matthew $
+# $FreeBSD: head/dns/void-zones-tools/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	void-zones-tools
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.0.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	dns
 
 MAINTAINER=	vidar@karlsen.tech

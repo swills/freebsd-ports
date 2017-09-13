@@ -1,9 +1,9 @@
 # Created by: Yoichi NAKAYAMA <yoichi@FreeBSD.org>
-# $FreeBSD: head/graphics/xface.el/Makefile 444175 2017-06-23 11:24:26Z matthew $
+# $FreeBSD: head/graphics/xface.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	xface.el
 PORTVERSION=	1.3.6.24
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	graphics elisp
 MASTER_SITES=	http://www.jpl.org/ftp/pub/elisp/ \
 		ftp://ftp.jpl.org/pub/elisp/

@@ -1,9 +1,9 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/textproc/uim-el/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/textproc/uim-el/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	uim-el
 PORTVERSION=	1.8.6
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	textproc
 MASTER_SITES=	https://github.com/uim/uim/releases/download/uim-${PORTVERSION}/
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}

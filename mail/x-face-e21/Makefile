@@ -1,9 +1,9 @@
 # Created by: Hajimu UMEMOTO <ume@FreeBSD.org>
-# $FreeBSD: head/mail/x-face-e21/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/mail/x-face-e21/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	x-face-e21
 PORTVERSION=	20070306
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	mail elisp
 MASTER_SITES=	http://www.jpl.org/elips/
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}

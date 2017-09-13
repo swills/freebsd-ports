@@ -1,9 +1,9 @@
 # Created by: Dryice Liu <dryice@liu.com.cn>
-# $FreeBSD: head/editors/tree-widget/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/editors/tree-widget/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	tree-widget
 PORTVERSION=	2.0
-PORTREVISION=	17
+PORTREVISION=	18
 CATEGORIES=	editors elisp
 MASTER_SITES=	SF/emhacks/${PORTNAME}/${PORTVERSION} \
 		http://dryice.name/computer/FreeBSD/distfiles/

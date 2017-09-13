@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/vapoursynth-fmtconv/Makefile 446139 2017-07-18 11:47:09Z jbeich $
+# $FreeBSD: head/graphics/vapoursynth-fmtconv/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	fmtconv
 PORTVERSION=	r20
+PORTREVISION=	1
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	vapoursynth-
 

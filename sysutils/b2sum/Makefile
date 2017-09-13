@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/b2sum/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/sysutils/b2sum/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	b2sum
 PORTVERSION=	0.0.d${B2VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils security
 MASTER_SITES=	http://blake2.net/
 DISTNAME=	blake2_code_${B2VERSION}${EXTRACT_SUFFX}

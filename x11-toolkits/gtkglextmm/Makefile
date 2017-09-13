@@ -1,9 +1,9 @@
 # Created by: Kimura Fuyuki <fuyuki@hadaly.org>
-# $FreeBSD: head/x11-toolkits/gtkglextmm/Makefile 437579 2017-04-02 22:03:57Z bapt $
+# $FreeBSD: head/x11-toolkits/gtkglextmm/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	gtkglextmm
 PORTVERSION=	1.2.0
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	SF/gtkglext/${PORTNAME}/${PORTVERSION}
 

@@ -1,8 +1,8 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/mail/p5-Email-Simple/Makefile 431380 2017-01-13 14:43:58Z sunpoet $
+# $FreeBSD: head/mail/p5-Email-Simple/Makefile 449482 2017-09-09 09:21:49Z sunpoet $
 
 PORTNAME=	Email-Simple
-PORTVERSION=	2.213
+PORTVERSION=	2.214
 CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

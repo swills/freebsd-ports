@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/gimp-resynthesizer/Makefile 438476 2017-04-13 19:47:41Z amdmi3 $
+# $FreeBSD: head/graphics/gimp-resynthesizer/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	resynthesizer
 PORTVERSION=	2.0.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	gimp-
 

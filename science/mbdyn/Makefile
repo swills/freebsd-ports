@@ -1,8 +1,9 @@
 # Created by: Kay Lehmann <kay_lehmann@web.de>
-# $FreeBSD: head/science/mbdyn/Makefile 445084 2017-07-05 15:50:43Z ultima $
+# $FreeBSD: head/science/mbdyn/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	mbdyn
 PORTVERSION=	1.7.2
+PORTREVISION=	1
 CATEGORIES=	science
 MASTER_SITES=	https://www.mbdyn.org/userfiles/downloads/
 

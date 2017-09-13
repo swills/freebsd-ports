@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/rapidjson/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/devel/rapidjson/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	rapidjson
 PORTVERSION=	1.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel textproc
 

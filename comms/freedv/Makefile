@@ -1,7 +1,8 @@
-# $FreeBSD: head/comms/freedv/Makefile 441228 2017-05-19 15:01:07Z db $
+# $FreeBSD: head/comms/freedv/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	freedv
 PORTVERSION=	1.2
+PORTREVISION=	1
 CATEGORIES=	comms hamradio
 MASTER_SITES=	http://files.freedv.org/freedv/ \
 		LOCAL/db

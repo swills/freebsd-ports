@@ -1,9 +1,9 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/sysutils/puppet-mode.el/Makefile 387528 2015-05-27 00:09:55Z amdmi3 $
+# $FreeBSD: head/sysutils/puppet-mode.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	puppet-mode.el
 PORTVERSION=	0.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils elisp
 
 MAINTAINER=	demon@FreeBSD.org

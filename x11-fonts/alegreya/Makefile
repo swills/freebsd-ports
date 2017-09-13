@@ -1,26 +1,27 @@
-# $FreeBSD: head/x11-fonts/alegreya/Makefile 404280 2015-12-23 10:46:23Z rakuco $
+# $FreeBSD: head/x11-fonts/alegreya/Makefile 449532 2017-09-10 10:33:56Z rakuco $
 
 PORTNAME=	alegreya
-PORTVERSION=	1.004.20150827
+PORTVERSION=	2.001
+DISTVERSIONPREFIX=	v
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	rakuco@FreeBSD.org
 COMMENT=	Serif typeface originally intended for literature
 
 LICENSE=	OFL11
+LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 USES=		fonts
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	huertatipografica
-GH_PROJECT=	Alegreya-libre
-GH_TAGNAME=	8f40fc1
+GH_PROJECT=	Alegreya
 
 NO_BUILD=	yes
 
 do-install:
 	${MKDIR} ${STAGEDIR}${FONTSDIR}
-	cd ${WRKSRC}/otf && \
+	cd ${WRKSRC}/fonts/otf && \
 		${INSTALL_DATA} *.otf ${STAGEDIR}${FONTSDIR}
 
 .include <bsd.port.mk>

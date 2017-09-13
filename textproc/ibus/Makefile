@@ -1,9 +1,9 @@
 # Created by: Henry Hu <henry.hu.sh@gmail.com>
-# $FreeBSD: head/textproc/ibus/Makefile 439799 2017-04-30 10:58:17Z rakuco $
+# $FreeBSD: head/textproc/ibus/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	ibus
 PORTVERSION=	1.5.14
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc
 MASTER_SITES=	https://github.com/${PORTNAME}/${PORTNAME}/releases/download/${PORTVERSION}/:DEFAULT \
 		https://raw.githubusercontent.com/Ranks/emojione/${EMOJIONE_TAG}/:emojione

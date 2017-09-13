@@ -1,9 +1,9 @@
 # Created by: Max N. Boyarov <m.boyarov@gmail.com>
-# $FreeBSD: head/textproc/dictem/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/textproc/dictem/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	dictem
 PORTVERSION=	1.0.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	textproc net elisp
 MASTER_SITES=	SF/dictem/dictem/dictem-${PORTVERSION}
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}

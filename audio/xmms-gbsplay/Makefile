@@ -1,9 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/xmms-gbsplay/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/audio/xmms-gbsplay/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	gbsplay
 PORTVERSION=	0.0.8
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	audio
 MASTER_SITES=	LOCAL/ehaupt
 PKGNAMEPREFIX=	xmms-

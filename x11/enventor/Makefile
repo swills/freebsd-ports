@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/enventor/Makefile 447556 2017-08-08 18:07:56Z ultima $
+# $FreeBSD: head/x11/enventor/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	enventor
 PORTVERSION=	1.0.0
+PORTREVISION=	1
 CATEGORIES=	x11 enlightenment
 MASTER_SITES=	http://download.enlightenment.org/rel/apps/${PORTNAME}/
 DIST_SUBDIR=	enlightenment

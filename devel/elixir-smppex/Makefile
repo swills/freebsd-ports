@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-smppex/Makefile 449156 2017-09-02 17:36:41Z olgeni $
+# $FreeBSD: head/devel/elixir-smppex/Makefile 449737 2017-09-12 21:11:01Z olgeni $
 
 PORTNAME=	smppex
-PORTVERSION=	2.0.1
+PORTVERSION=	2.2.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

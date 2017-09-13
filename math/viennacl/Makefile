@@ -1,8 +1,9 @@
 # Created by: Pedro Giffuni <pfg@FreeBSD.org>
-# $FreeBSD: head/math/viennacl/Makefile 442503 2017-06-03 15:07:09Z cpm $
+# $FreeBSD: head/math/viennacl/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	viennacl
 PORTVERSION=	1.7.1
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	SF/${PORTNAME}/1.7.x/
 DISTNAME=	ViennaCL-${PORTVERSION}

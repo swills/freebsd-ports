@@ -1,8 +1,9 @@
 # Created by: tcberner
-# $FreeBSD: head/textproc/kf5-kcodecs/Makefile 443783 2017-06-17 18:42:42Z tcberner $
+# $FreeBSD: head/textproc/kf5-kcodecs/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	kcodecs
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	textproc kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

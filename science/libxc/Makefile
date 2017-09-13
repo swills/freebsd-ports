@@ -1,9 +1,9 @@
 # Created by: Johannes Dieterich <dieterich@ogolem.org>
-# $FreeBSD: head/science/libxc/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/science/libxc/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	libxc
 PORTVERSION=	3.0.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	science
 MASTER_SITES=	http://www.tddft.org/programs/octopus/download/libxc/
 

@@ -1,8 +1,8 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/devel/libvirt/Makefile 448357 2017-08-20 05:05:05Z novel $
+# $FreeBSD: head/devel/libvirt/Makefile 449495 2017-09-09 16:00:52Z novel $
 
 PORTNAME=	libvirt
-PORTVERSION=	3.6.0
+PORTVERSION=	3.7.0
 CATEGORIES=	devel
 MASTER_SITES=	http://libvirt.org/sources/ \
 		ftp://libvirt.org/libvirt/

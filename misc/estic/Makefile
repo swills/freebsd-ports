@@ -1,9 +1,9 @@
 # Created by: Julian Stacey <jhs@FreeBSD.org>
-# $FreeBSD: head/misc/estic/Makefile 441823 2017-05-27 00:43:10Z linimon $
+# $FreeBSD: head/misc/estic/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=		estic
 PORTVERSION=		1.61
-PORTREVISION=		4
+PORTREVISION=		5
 CATEGORIES=		misc comms
 MASTER_SITES=		LOCAL/dinoex
 PKGNAMESUFFIX?=		${NOX11_SUFFIX}${PKGNAMESUFFIX2}

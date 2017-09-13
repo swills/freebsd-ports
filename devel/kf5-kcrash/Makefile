@@ -1,8 +1,9 @@
 # Created by: tcberner
-# $FreeBSD: head/devel/kf5-kcrash/Makefile 438880 2017-04-19 14:59:40Z tcberner $
+# $FreeBSD: head/devel/kf5-kcrash/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	kcrash
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

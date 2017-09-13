@@ -1,10 +1,10 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/multimedia/mpv/Makefile 446396 2017-07-22 12:48:07Z cpm $
+# $FreeBSD: head/multimedia/mpv/Makefile 449700 2017-09-12 17:36:27Z cpm $
 
 PORTNAME=	mpv
 PORTVERSION=	0.26.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	multimedia audio
 
@@ -132,7 +132,7 @@ UCHARDET_CONFIGURE_OFF=		--disable-uchardet
 
 V4L_BUILD_DEPENDS=		${LOCALBASE}/include/linux/videodev2.h:multimedia/v4l_compat
 V4L_LIB_DEPENDS=		libv4l2.so:multimedia/libv4l
-V4L_CONFIGURE_ON=		--enable-tv
+V4L_CONFIGURE_ON=		--enable-tv --enable-dvbin
 
 VAAPI_LIB_DEPENDS=		libva.so:multimedia/libva
 VAAPI_CONFIGURE_OFF=		--disable-vaapi

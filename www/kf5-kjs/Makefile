@@ -1,8 +1,9 @@
 # Created by: tcberner
-# $FreeBSD: head/www/kf5-kjs/Makefile 438880 2017-04-19 14:59:40Z tcberner $
+# $FreeBSD: head/www/kf5-kjs/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	kjs
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	www kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

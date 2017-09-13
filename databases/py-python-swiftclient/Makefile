@@ -1,8 +1,8 @@
 # Created by: Mikolaj Golub <trociny@FreeBSD.org>
-# $FreeBSD: head/databases/py-python-swiftclient/Makefile 432623 2017-01-28 13:18:37Z trociny $
+# $FreeBSD: head/databases/py-python-swiftclient/Makefile 449585 2017-09-10 17:54:04Z trociny $
 
 PORTNAME=	python-swiftclient
-PORTVERSION=	3.3.0
+PORTVERSION=	3.4.0
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

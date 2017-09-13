@@ -1,9 +1,9 @@
 # Created by: Shane Ambler <FreeBSD@Shaneware.biz>
-# $FreeBSD: head/graphics/opencolorio/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/opencolorio/Makefile 449506 2017-09-09 19:39:48Z jbeich $
 
 PORTNAME=	opencolorio
 PORTVERSION=	1.0.9
-PORTREVISION?=	1
+PORTREVISION?=	2
 CATEGORIES=	graphics multimedia
 
 MAINTAINER?=	FreeBSD@Shaneware.biz

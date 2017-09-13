@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/vm-lv2/Makefile 448442 2017-08-20 23:00:26Z ultima $
+# $FreeBSD: head/audio/vm-lv2/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	vm
 PORTVERSION=	0.4.0
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	https://gitlab.com/OpenMusicKontrollers/vm.lv2/repository/archive.tar.gz?ref=${PORTVERSION}&dummy=/
 PKGNAMESUFFIX=	-lv2

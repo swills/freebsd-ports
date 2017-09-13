@@ -1,9 +1,9 @@
 # Created by: Beech Rintoul <beech@FreeBSD.org>
-# $FreeBSD: head/games/py-mnemosyne/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/games/py-mnemosyne/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	mnemosyne
 PORTVERSION=	2.3.6
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	games python
 MASTER_SITES=	SF/mnemosyne-proj/${PORTNAME}/${PORTNAME}-${DISTVERSION}

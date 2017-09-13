@@ -1,15 +1,18 @@
-# $FreeBSD: head/devel/fb-adb/Makefile 436291 2017-03-16 20:49:25Z jbeich $
+# $FreeBSD: head/devel/fb-adb/Makefile 449658 2017-09-11 15:56:39Z jbeich $
 
 PORTNAME=	fb-adb
 DISTVERSION=	1.4.4-126
 DISTVERSIONSUFFIX=	-g6fd78ae
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel comms
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
 PATCHFILES=	1b5524282981.patch:-p1 \
 		8f532a9ee3a3.patch:-p1 \
 		a25602788c1b.patch:-p1 \
+		3a3a52355a39.patch:-p1 \
+		281df4766b82.patch:-p1 \
+		723148059ce2.patch:-p1 \
 		${NULL}
 
 MAINTAINER=	jbeich@FreeBSD.org

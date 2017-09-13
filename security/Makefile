@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 449379 2017-09-06 22:50:07Z adamw $
+# $FreeBSD: head/security/Makefile 449667 2017-09-11 21:13:54Z ultima $
 #
 
     COMMENT = Security tools
@@ -182,8 +182,8 @@
     SUBDIR += gnupg20
     SUBDIR += gnupg22
     SUBDIR += gnutls
-    SUBDIR += go.crypto
     SUBDIR += go-cve-dictionary
+    SUBDIR += go.crypto
     SUBDIR += goptlib
     SUBDIR += gorilla
     SUBDIR += govpn
@@ -927,6 +927,7 @@
     SUBDIR += py-pow
     SUBDIR += py-pyaes
     SUBDIR += py-pyaff4
+    SUBDIR += py-pyaxo
     SUBDIR += py-pyclamd
     SUBDIR += py-pycrypto
     SUBDIR += py-pycryptodome
@@ -965,6 +966,7 @@
     SUBDIR += py-tuf
     SUBDIR += py-twistedConch
     SUBDIR += py-twofish
+    SUBDIR += py-txtorcon
     SUBDIR += py-virustotal-api
     SUBDIR += py-volatility
     SUBDIR += py-vulndb

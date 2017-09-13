@@ -1,10 +1,10 @@
 # Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/cad/stepcode/Makefile 448936 2017-08-29 19:36:16Z pi $
+# $FreeBSD: head/cad/stepcode/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	stepcode
 PORTVERSION=	0.8
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	cad
 
 MAINTAINER=	fernando.apesteguia@gmail.com

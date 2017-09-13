@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/delaboratory/Makefile 438199 2017-04-10 19:16:30Z lifanov $
+# $FreeBSD: head/graphics/delaboratory/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	delaboratory
 PORTVERSION=	0.8
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	http://BSDforge.com/projects/source/graphics/delaboratory/
 

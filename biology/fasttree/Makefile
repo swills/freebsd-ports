@@ -1,9 +1,9 @@
 # Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/biology/fasttree/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/biology/fasttree/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	FastTree
 PORTVERSION=	2.1.8
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	biology
 MASTER_SITES=	http://www.microbesonline.org/fasttree/
 EXTRACT_SUFX=	.c

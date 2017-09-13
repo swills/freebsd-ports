@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/kvazaar/Makefile 437904 2017-04-06 22:16:14Z jbeich $
+# $FreeBSD: head/multimedia/kvazaar/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	kvazaar
 DISTVERSIONPREFIX=	v
 DISTVERSION?=	1.1.0
-PORTREVISION?=	1
+PORTREVISION?=	2
 CATEGORIES=	multimedia
 
 MAINTAINER=	jbeich@FreeBSD.org

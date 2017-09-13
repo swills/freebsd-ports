@@ -1,9 +1,10 @@
 # Created by: Koop Mast <einekoai@chello.nl>
-# $FreeBSD: head/x11/workrave/Makefile 437612 2017-04-03 10:29:45Z bapt $
+# $FreeBSD: head/x11/workrave/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	workrave
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1_10_16
+PORTREVISION=	1
 CATEGORIES=	x11
 
 MAINTAINER=	tobik@FreeBSD.org

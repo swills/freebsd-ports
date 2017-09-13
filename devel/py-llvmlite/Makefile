@@ -1,8 +1,9 @@
 # Created by: David Kalliecharan <dave@dal.ca>
-# $FreeBSD: head/devel/py-llvmlite/Makefile 441455 2017-05-22 13:17:38Z linimon $
+# $FreeBSD: head/devel/py-llvmlite/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	llvmlite
 PORTVERSION=	0.16.0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

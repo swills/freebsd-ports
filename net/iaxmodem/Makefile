@@ -1,9 +1,9 @@
 # Created by: Filippo Natali <filippo.natali@gmail.com>
-# $FreeBSD: head/net/iaxmodem/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/net/iaxmodem/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	iaxmodem
 PORTVERSION=	1.2.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net comms
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

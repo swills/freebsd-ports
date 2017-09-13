@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/databases/evolution-data-server/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/databases/evolution-data-server/Makefile 449685 2017-09-12 13:01:22Z jbeich $
 
 PORTNAME=	evolution-data-server
 PORTVERSION=	3.24.2
+PORTREVISION=	3
 CATEGORIES=	databases gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

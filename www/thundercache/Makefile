@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/thundercache/Makefile 448710 2017-08-25 06:17:53Z antoine $
+# $FreeBSD: head/www/thundercache/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	thundercache
 PORTVERSION=	6.1
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	www
 MASTER_SITES=	http://www.thundercache.com.br/dist/ \
 		http://www.bmsoftware.org/packs/ \

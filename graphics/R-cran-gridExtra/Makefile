@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/R-cran-gridExtra/Makefile 440401 2017-05-08 08:38:27Z tota $
+# $FreeBSD: head/graphics/R-cran-gridExtra/Makefile 449598 2017-09-11 01:03:53Z tota $
 
 PORTNAME=	gridExtra
-PORTVERSION=	2.2.1
+PORTVERSION=	2.3
 CATEGORIES=	graphics
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/lang/tcbasic/Makefile 386785 2015-05-19 15:38:50Z robak $
+# $FreeBSD: head/lang/tcbasic/Makefile 449572 2017-09-10 13:43:09Z tobik $
 
 PORTNAME=	tcbasic
-PORTVERSION=	2.1.0
+PORTVERSION=	2.2.0
 CATEGORIES=	lang
 MASTER_SITES=	https://github.com/tcort/${PORTNAME}/releases/download/v${PORTVERSION}/
 

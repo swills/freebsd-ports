@@ -1,10 +1,10 @@
 # Created by: Alexander Nedotsukov <bland@mail.ru>
-# $FreeBSD: head/x11-toolkits/libgnomeuimm26/Makefile 437685 2017-04-04 07:02:08Z bapt $
+# $FreeBSD: head/x11-toolkits/libgnomeuimm26/Makefile 449591 2017-09-10 20:55:38Z gerald $
 #   $MCom: ports/x11-toolkits/libgnomeuimm26/Makefile,v 1.20 2009/09/22 21:23:48 kwm Exp $
 
 PORTNAME=	libgnomeuimm
 PORTVERSION=	2.28.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	x11-toolkits gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

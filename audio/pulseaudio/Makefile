@@ -1,11 +1,12 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/audio/pulseaudio/Makefile 449350 2017-09-06 17:46:55Z jbeich $
+# $FreeBSD: head/audio/pulseaudio/Makefile 449591 2017-09-10 20:55:38Z gerald $
 #
 # !!!NOTE!!! Any PORTVERSION update to this port must be accompanied by
 # PORTREVISION bumps of depending ports.
 
 PORTNAME=	pulseaudio
 PORTVERSION=	11.0
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://freedesktop.org/software/pulseaudio/releases/
 

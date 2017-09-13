@@ -1,8 +1,7 @@
-# $FreeBSD: head/www/rubygem-websocket-driver/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/www/rubygem-websocket-driver/Makefile 449734 2017-09-12 20:57:28Z sunpoet $
 
 PORTNAME=	websocket-driver
-PORTVERSION=	0.6.5
-PORTREVISION=	1
+PORTVERSION=	0.7.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

@@ -1,9 +1,9 @@
 # Created by: Stanislav Sedov <ssedov@mbsd.msk.ru>
-# $FreeBSD: head/devel/ocaml-lacaml/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/devel/ocaml-lacaml/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	lacaml
 PORTVERSION=	8.0.7
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/mmottl/lacaml/releases/download/v${PORTVERSION}/
 PKGNAMEPREFIX=	ocaml-

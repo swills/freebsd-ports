@@ -1,9 +1,9 @@
 # Created by: Shigeyuki FUKUSHIMA <shige@kuis.kyoto-u.ac.jp>
-# $FreeBSD: head/japanese/ddskk/Makefile 444106 2017-06-22 09:01:29Z amdmi3 $
+# $FreeBSD: head/japanese/ddskk/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	ddskk
 PORTVERSION=	15.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	japanese elisp
 MASTER_SITES=	http://openlab.ring.gr.jp/skk/maintrunk/ \
 		ftp://ftp.ring.gr.jp/pub/elisp/skk/maintrunk/ \

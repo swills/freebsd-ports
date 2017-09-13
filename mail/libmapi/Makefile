@@ -1,11 +1,11 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/mail/libmapi/Makefile 442783 2017-06-06 16:18:16Z mat $
+# $FreeBSD: head/mail/libmapi/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	libmapi
 PORTVERSION=	2.3
 DISTVERSIONPREFIX=	openchange-
 DISTVERSIONSUFFIX=	-VULCAN
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	mail
 
 MAINTAINER=	kwm@FreeBSD.org

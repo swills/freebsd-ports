@@ -1,9 +1,9 @@
 # Created by: Fernan Aguero <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/biology/ssaha/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/biology/ssaha/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	ssaha
 PORTVERSION=	3.1c
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.sanger.ac.uk/pub4/resources/software/ssaha/
 DISTNAME=	${PORTNAME}_v${PORTVERSION:S/.//}

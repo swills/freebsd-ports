@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 449341 2017-09-06 11:49:43Z araujo $
+# $FreeBSD: head/www/Makefile 449748 2017-09-13 02:04:45Z zi $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -424,6 +424,7 @@
     SUBDIR += mod_auth_mysql2
     SUBDIR += mod_auth_mysql_another
     SUBDIR += mod_auth_openid
+    SUBDIR += mod_auth_openidc
     SUBDIR += mod_auth_pam2
     SUBDIR += mod_auth_pgsql2
     SUBDIR += mod_auth_pubtkt
@@ -1082,6 +1083,7 @@
     SUBDIR += p5-MediaWiki-API
     SUBDIR += p5-Mobile-UserAgent
     SUBDIR += p5-ModPerl-VersionUtil
+    SUBDIR += p5-Mojo-IOLoop-ForkCall
     SUBDIR += p5-Mojo-Server-FastCGI
     SUBDIR += p5-MojoMojo
     SUBDIR += p5-MojoX-Log-Dispatch-Simple

@@ -1,9 +1,9 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/games/ember/Makefile 441395 2017-05-21 13:21:04Z linimon $
+# $FreeBSD: head/games/ember/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	ember
 PORTVERSION=	0.7.2
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	games
 MASTER_SITES=	SF/worldforge/Ember%20%28OGRE%20client%29/${PORTVERSION} \
 		http://amber.worldforge.org/ember/releases/stable/

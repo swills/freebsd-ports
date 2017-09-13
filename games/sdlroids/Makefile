@@ -1,9 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/games/sdlroids/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/games/sdlroids/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	sdlroids
 PORTVERSION=	1.3.4
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	games
 MASTER_SITES=	SF \
 		SF/nemysisfreebsdp/${CATEGORIES}/:icons

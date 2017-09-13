@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/powerdxx/Makefile 437671 2017-04-03 19:09:34Z kami $
+# $FreeBSD: head/sysutils/powerdxx/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	powerdxx
 PORTVERSION=	0.2.5
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	kami@FreeBSD.org

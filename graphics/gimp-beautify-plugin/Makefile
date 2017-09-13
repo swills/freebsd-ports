@@ -1,9 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/graphics/gimp-beautify-plugin/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/graphics/gimp-beautify-plugin/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	beautify
 PORTVERSION=	2012.08.12.00
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	gimp-
 PKGNAMESUFFIX=	-plugin

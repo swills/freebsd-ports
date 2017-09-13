@@ -1,9 +1,9 @@
 # Created by: Pedro Giffuni <giffunip@asme.org>
-# $FreeBSD: head/math/taucs/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/math/taucs/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	taucs
 PORTVERSION=	2.2
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	math
 MASTER_SITES=	http://www.tau.ac.il/~stoledo/taucs/${PORTVERSION}/ \
 		LOCAL/bf

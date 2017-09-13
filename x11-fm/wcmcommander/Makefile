@@ -1,10 +1,10 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/x11-fm/wcmcommander/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/x11-fm/wcmcommander/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	wcmcommander
 PORTVERSION=	0.20.0
 DISTVERSIONPREFIX=	release-
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-fm
 
 MAINTAINER=	amdmi3@FreeBSD.org

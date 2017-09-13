@@ -1,8 +1,9 @@
 # Created by: Sergey Akifyev <asa@gascom.ru>
-# $FreeBSD: head/math/qalculate/Makefile 447195 2017-08-03 07:13:39Z jhale $
+# $FreeBSD: head/math/qalculate/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	qalculate
 PORTVERSION=	1.0.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	math
 

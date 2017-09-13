@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/net-im/py-slackclient/Makefile 444365 2017-06-26 12:40:20Z olgeni $
+# $FreeBSD: head/net-im/py-slackclient/Makefile 449447 2017-09-08 10:43:59Z olgeni $
 
 PORTNAME=	slackclient
-PORTVERSION=	1.0.6
+PORTVERSION=	1.0.9
 CATEGORIES=	net-im python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

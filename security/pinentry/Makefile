@@ -1,9 +1,9 @@
 # Created by: Michael Nottebrock <lofi@FreeBSD.org>
-# $FreeBSD: head/security/pinentry/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/security/pinentry/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	pinentry
 PORTVERSION=	1.0.0
-PORTREVISION?=	2
+PORTREVISION?=	3
 CATEGORIES=	security
 MASTER_SITES=	GNUPG/pinentry
 

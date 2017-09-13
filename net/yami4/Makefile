@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/yami4/Makefile 439779 2017-04-30 01:12:10Z linimon $
+# $FreeBSD: head/net/yami4/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	yami4
 PORTVERSION=	1.10.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	http://www.inspirel.com/yami4/files/
 DISTNAME=	yami4-gpl-1.10.0

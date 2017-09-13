@@ -1,9 +1,9 @@
 # Created by: chris@officialunix.com
-# $FreeBSD: head/audio/smasher/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/audio/smasher/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	smasher
 PORTVERSION=	1.1.7
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio
 MASTER_SITES=	SF
 

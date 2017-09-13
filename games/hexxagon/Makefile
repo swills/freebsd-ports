@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/hexxagon/Makefile 437777 2017-04-05 11:36:31Z bapt $
+# $FreeBSD: head/games/hexxagon/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	hexxagon
 PORTVERSION=	1.0.2
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://www.nesqi.se/download/
 

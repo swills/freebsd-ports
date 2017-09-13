@@ -1,9 +1,9 @@
 # Created by: Robert Withrow <witr@rwwa.com>
-# $FreeBSD: head/print/hyperlatex/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/hyperlatex/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	Hyperlatex
 DISTVERSION=	2.9a
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	print
 MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME:tl}/2.9a
 

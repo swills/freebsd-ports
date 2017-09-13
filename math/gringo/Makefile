@@ -1,9 +1,9 @@
 # Created by: Vsevolod Stakhov <vsevolod@FreeBSD.org>
-# $FreeBSD: head/math/gringo/Makefile 440858 2017-05-13 23:21:37Z linimon $
+# $FreeBSD: head/math/gringo/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	gringo
 PORTVERSION=	4.5.2
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONSUFFIX=	-source
 CATEGORIES=	math devel
 MASTER_SITES=	SOURCEFORGE/potassco/${PORTNAME}/${PORTVERSION}

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/epl.el/Makefile 430175 2016-12-31 23:23:15Z hrs $
+# $FreeBSD: head/devel/epl.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	epl.el
 PORTVERSION=	0.8
+PORTREVISION=	1
 CATEGORIES=	devel elisp
 
 MAINTAINER=	hrs@FreeBSD.org

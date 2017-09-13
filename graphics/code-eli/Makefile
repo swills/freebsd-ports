@@ -1,9 +1,9 @@
 # Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/graphics/code-eli/Makefile 444962 2017-07-03 15:44:19Z ler $
+# $FreeBSD: head/graphics/code-eli/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	code-eli
 PORTVERSION=	0.3.6
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics
 
 MAINTAINER=	fernando.apesteguia@gmail.com

@@ -1,9 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/java/classpath/Makefile 441320 2017-05-20 16:58:10Z linimon $
+# $FreeBSD: head/java/classpath/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	classpath
 PORTVERSION=	0.99
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	java devel
 MASTER_SITES=	GNU \
 		SAVANNAH

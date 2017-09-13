@@ -1,9 +1,9 @@
 # Created by: Sergei Kolobov <sergei@FreeBSD.org>
-# $FreeBSD: head/mail/annoyance-filter/Makefile 448199 2017-08-17 21:59:39Z rakuco $
+# $FreeBSD: head/mail/annoyance-filter/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	annoyance-filter
 PORTVERSION=	1.0d
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	mail
 MASTER_SITES=	SF/annoyancefilter/annoyancefilter/${PORTVERSION} \
 		http://www.fourmilab.ch/annoyance-filter/

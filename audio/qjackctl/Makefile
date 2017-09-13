@@ -1,8 +1,9 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/qjackctl/Makefile 446288 2017-07-20 20:16:11Z ultima $
+# $FreeBSD: head/audio/qjackctl/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	qjackctl
 PORTVERSION=	0.4.5
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	SF
 

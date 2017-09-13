@@ -1,9 +1,9 @@
 # Created by: Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
-# $FreeBSD: head/games/xbat/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/games/xbat/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	xbat
 PORTVERSION=	1.11
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games
 MASTER_SITES=	LOCAL/hrs
 DISTNAME=	xev111

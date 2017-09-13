@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/dsbautostart/Makefile 447586 2017-08-09 00:46:32Z ultima $
+# $FreeBSD: head/x11/dsbautostart/Makefile 449498 2017-09-09 16:48:31Z tobik $
 
 PORTNAME=	dsbautostart
-PORTVERSION=	1.0.2
+PORTVERSION=	1.1
 CATEGORIES=	x11
 MASTER_SITES=	http://freeshell.de/~mk/download/
 
@@ -14,6 +14,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USES=		tar:tgz qmake
 
 USE_GL=		gl
-USE_QT5=	buildtools_build core gui linguisttools widgets
+USE_QT5=	buildtools_build core gui linguisttools_build widgets
 
 .include <bsd.port.mk>

@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/elasticsearch2-plugin-sql/Makefile 431081 2017-01-10 12:30:02Z olgeni $
+# $FreeBSD: head/textproc/elasticsearch2-plugin-sql/Makefile 449454 2017-09-08 13:48:38Z olgeni $
 
 PORTNAME=	sql
-PORTVERSION=	2.4.2.1
+PORTVERSION=	2.4.4.0
 CATEGORIES=	textproc
 MASTER_SITES=	https://github.com/NLPchina/elasticsearch-sql/releases/download/${PORTVERSION}/
 PKGNAMEPREFIX=	elasticsearch2-plugin-
@@ -12,7 +12,7 @@ COMMENT=	ElasticSearch SQL plugin
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	elasticsearch2>=2.4.2:textproc/elasticsearch2
+RUN_DEPENDS=	elasticsearch2>=2.4.4:textproc/elasticsearch2
 
 CONFLICTS=      elasticsearch-plugin-sql-1.*
 

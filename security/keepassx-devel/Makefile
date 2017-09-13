@@ -1,8 +1,9 @@
 # Created by: Eric Camachat <eric@camachat.org>
-# $FreeBSD: head/security/keepassx-devel/Makefile 441967 2017-05-29 05:11:45Z joneum $
+# $FreeBSD: head/security/keepassx-devel/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	keepassx
 PORTVERSION=	2.0.3
+PORTREVISION=	1
 CATEGORIES=	security
 PKGNAMESUFFIX=	-devel
 

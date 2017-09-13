@@ -1,5 +1,5 @@
 # Created by: Nicolas de Bari Embriz <nbari@dalmp.com>
-# $FreeBSD: head/databases/dalmp/Makefile 427487 2016-12-01 10:38:25Z amdmi3 $
+# $FreeBSD: head/databases/dalmp/Makefile 449512 2017-09-09 21:29:50Z dbaio $
 
 PORTNAME=	dalmp
 PORTVERSION=	3.0.3
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=	v
 PORTREVISION=	1
 CATEGORIES=	databases
 
-MAINTAINER=	nbari@dalmp.com
+MAINTAINER=	nbari@tequila.io
 COMMENT=	Database Abstraction Layer for MySQL using PHP
 
 LICENSE=	BSD3CLAUSE

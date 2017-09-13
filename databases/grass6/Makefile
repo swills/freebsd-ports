@@ -1,9 +1,9 @@
 # Created by: reg
-# $FreeBSD: head/databases/grass6/Makefile 446935 2017-07-30 14:18:29Z pi $
+# $FreeBSD: head/databases/grass6/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	grass
 PORTVERSION=	6.4.6
-PORTREVISION=	8
+PORTREVISION=	10
 PORTEPOCH=	2
 CATEGORIES=	databases geography
 MASTER_SITES=	http://grass.osgeo.org/%SUBDIR%/ \

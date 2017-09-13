@@ -1,9 +1,9 @@
 # Created by: Kimura Fuyuki <fuyuki@mj.0038.net>
-# $FreeBSD: head/textproc/xml-lite.el/Makefile 384819 2015-04-27 10:29:27Z ashish $
+# $FreeBSD: head/textproc/xml-lite.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	xml-lite.el
 PORTVERSION=	1.1
-PORTREVISION=	8
+PORTREVISION=	9
 PORTEPOCH=	1
 CATEGORIES=	textproc elisp
 MASTER_SITES=	http://dogbiscuit.org/mdub/software/

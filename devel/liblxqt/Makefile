@@ -1,9 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/devel/liblxqt/Makefile 441215 2017-05-19 10:09:57Z joneum $
+# $FreeBSD: head/devel/liblxqt/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	liblxqt
 PORTVERSION=	0.11.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	LXQT
 

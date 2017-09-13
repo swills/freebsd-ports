@@ -1,9 +1,9 @@
 # Created by: Max N. Boyarov <m.boyarov@bsd.by>
-# $FreeBSD: head/net-im/jabber.el/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/net-im/jabber.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	jabber.el
 PORTVERSION=	0.8.92
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net-im elisp
 MASTER_SITES=	SF/emacs-jabber/emacs-jabber%20beta%20versions/${PORTVERSION}
 DISTNAME=		emacs-jabber-${PORTVERSION}

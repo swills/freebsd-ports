@@ -1,9 +1,9 @@
 # Created by: Donald Burr <dburr@FreeBSD.org>
-# $FreeBSD: head/textproc/yodl/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/textproc/yodl/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	yodl
 PORTVERSION=	3.05.01
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}_${PORTVERSION}

@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-css_parser/Makefile 439308 2017-04-24 15:17:08Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-css_parser/Makefile 449546 2017-09-10 13:09:09Z sunpoet $
 
 PORTNAME=	css_parser
-PORTVERSION=	1.5.0
+PORTVERSION=	1.6.0
 CATEGORIES=	textproc www rubygems
 MASTER_SITES=	RG
 

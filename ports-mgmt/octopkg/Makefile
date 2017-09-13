@@ -1,9 +1,9 @@
 # Created by: kmoore@FreeBSD.org
-# $FreeBSD: head/ports-mgmt/octopkg/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/ports-mgmt/octopkg/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	octopkg
 PORTVERSION=	0.2.0
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	ports-mgmt
 

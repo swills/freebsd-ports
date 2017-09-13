@@ -1,9 +1,10 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/games/openrct2/Makefile 448704 2017-08-24 19:22:07Z amdmi3 $
+# $FreeBSD: head/games/openrct2/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	openrct2
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.1.1
+PORTREVISION=	1
 CATEGORIES=	games
 EXTRACT_ONLY=	${PORTNAME}-${PORTNAME}-${DISTVERSIONPREFIX}${DISTVERSION}_GH0${EXTRACT_SUFX}
 

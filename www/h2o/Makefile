@@ -1,8 +1,9 @@
 # Created by: Dave Cottlehuber <dch@skunkwerks.at>
-# $FreeBSD: head/www/h2o/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/www/h2o/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	h2o
 PORTVERSION=	2.2.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 

@@ -1,9 +1,9 @@
 # Created by: bland@FreeBSD.org
-# $FreeBSD: head/print/gribouy/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/print/gribouy/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	gribouy
 PORTVERSION=	0.0.8
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	print gnome
 MASTER_SITES=	LOCAL/bland
 

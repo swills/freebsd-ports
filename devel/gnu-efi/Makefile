@@ -1,9 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/devel/gnu-efi/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/devel/gnu-efi/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	gnu-efi
 PORTVERSION=	3.0.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	SF/gnu-efi
 

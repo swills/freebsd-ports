@@ -1,8 +1,9 @@
 # Created by: Andreas Sommer <andreas.sommer87@googlemail.com>
-# $FreeBSD: head/devel/hhdate/Makefile 443897 2017-06-19 17:27:16Z sunpoet $
+# $FreeBSD: head/devel/hhdate/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	hhdate
 PORTVERSION=	2.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

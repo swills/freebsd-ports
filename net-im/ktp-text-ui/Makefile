@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-im/ktp-text-ui/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/net-im/ktp-text-ui/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	ktp-text-ui
 PORTVERSION=	${KTP_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net-im kde
 MASTER_SITES=	KDE/${KTP_BRANCH}/kde-telepathy/${PORTVERSION}/src
 

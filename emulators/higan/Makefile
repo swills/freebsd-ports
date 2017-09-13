@@ -1,8 +1,9 @@
 # Created by: elbarto
-# $FreeBSD: head/emulators/higan/Makefile 447593 2017-08-09 07:41:23Z ultima $
+# $FreeBSD: head/emulators/higan/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	higan
 PORTVERSION=	103
+PORTREVISION=	2
 CATEGORIES=	emulators
 MASTER_SITES=	http://download.byuu.org/ \
 		http://www.cyberbotx.com/higan/

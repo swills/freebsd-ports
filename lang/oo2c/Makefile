@@ -1,9 +1,9 @@
 # Created by: Oliver Breuninger <ob@seicom.NET>
-# $FreeBSD: head/lang/oo2c/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/lang/oo2c/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	oo2c
 PORTVERSION=	2.1.11
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	lang
 MASTER_SITES=	SF/ooc/ooc2/${PORTVERSION}
 DISTNAME=	${PORTNAME}_${BITS}-${PORTVERSION}

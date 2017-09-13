@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/link-grammar/Makefile 445403 2017-07-09 12:42:55Z swills $
+# $FreeBSD: head/textproc/link-grammar/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	link-grammar
 PORTVERSION=	5.3.16
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.abisource.com/downloads/${PORTNAME}/${PORTVERSION}/
 

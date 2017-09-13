@@ -1,8 +1,9 @@
 # Created by: tcberner
-# $FreeBSD: head/x11-themes/kf5-kemoticons/Makefile 438880 2017-04-19 14:59:40Z tcberner $
+# $FreeBSD: head/x11-themes/kf5-kemoticons/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	kemoticons
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11-themes kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

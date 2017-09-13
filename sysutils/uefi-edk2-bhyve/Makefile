@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/uefi-edk2-bhyve/Makefile 418285 2016-07-09 16:10:08Z novel $
+# $FreeBSD: head/sysutils/uefi-edk2-bhyve/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	uefi-edk2-bhyve
 PORTVERSION=	20160704
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 
 MAINTAINER=	fabian.freyer@physik.tu-berlin.de

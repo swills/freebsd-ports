@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/distel/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/distel/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	distel
 PORTVERSION=	4.1.1
+PORTREVISION=	1
 CATEGORIES=	devel elisp
 
 MAINTAINER=	olgeni@FreeBSD.org

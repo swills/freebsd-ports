@@ -1,8 +1,9 @@
 # Created by: Manuel Creach <manuel.creach@icloud.com>
-# $FreeBSD: head/multimedia/libcec/Makefile 441309 2017-05-20 12:02:07Z linimon $
+# $FreeBSD: head/multimedia/libcec/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	libcec
 PORTVERSION=	4.0.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	multimedia
 

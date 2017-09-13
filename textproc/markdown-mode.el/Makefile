@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/markdown-mode.el/Makefile 449209 2017-09-03 16:27:12Z olgeni $
+# $FreeBSD: head/textproc/markdown-mode.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	markdown-mode.el
 PORTVERSION=	2.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc
 MASTER_SITES=	http://jblevins.org/projects/markdown-mode/
 DISTNAME=	markdown-mode.el

@@ -1,5 +1,5 @@
 # Created by: Antonio Bonifati <ant@monitor.deis.unical.it>
-# $FreeBSD: head/editors/tpad/Makefile 416109 2016-05-29 14:26:57Z amdmi3 $
+# $FreeBSD: head/editors/tpad/Makefile 449657 2017-09-11 15:23:16Z gahr $
 
 PORTNAME=	tpad
 PORTVERSION=	1.3
@@ -12,6 +12,10 @@ MASTER_SITES=	SF/tclpad/tclpad/${PORTVERSION} \
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Windows XP (TM) enhanced Notepad clone written in Tcl/Tk
+
+DEPRECATED=		This port depends on Tcl/Tk 8.4 , which is no longer\
+			maintained. Please port it to 8.5+
+EXPIRATION_DATE=	2017-10-15
 
 LICENSE=	GPLv2+
 

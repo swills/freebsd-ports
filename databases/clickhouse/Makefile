@@ -1,8 +1,9 @@
 # Created by: proler@gmail.com
-# $FreeBSD: head/databases/clickhouse/Makefile 449100 2017-09-01 18:36:48Z antoine $
+# $FreeBSD: head/databases/clickhouse/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	clickhouse
 PORTVERSION=	1.1.54245
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	-stable
 #PORTREVISION=	1

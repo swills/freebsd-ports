@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/sdl_scavenger/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/games/sdl_scavenger/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	sdl_scavenger
 PORTVERSION=	145.2015.01.05
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	games
 MASTER_SITES=	SF/sdlscavenger/

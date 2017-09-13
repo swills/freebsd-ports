@@ -1,8 +1,9 @@
 # Created by: David O'Brien <obrien@FreeBSD.org>
-# $FreeBSD: head/security/bro/Makefile 448446 2017-08-21 02:12:48Z swills $
+# $FreeBSD: head/security/bro/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	bro
 PORTVERSION=	2.5.1
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	https://www.bro.org/downloads/:source1 \
 		https://codeload.github.com/${GH_ACCOUNT}/${GH_PROJECT}/tar.gz/${PORTVERSION2}?dummy=/:source2

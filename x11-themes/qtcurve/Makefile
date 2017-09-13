@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-themes/qtcurve/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/x11-themes/qtcurve/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	qtcurve
 PORTVERSION=	1.8.18
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-themes
 
 MAINTAINER=	jhale@FreeBSD.org

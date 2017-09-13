@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/www/epiphany/Makefile 440763 2017-05-13 08:58:18Z kwm $
+# $FreeBSD: head/www/epiphany/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	epiphany
 PORTVERSION=	3.24.2
+PORTREVISION=	1
 CATEGORIES=	www gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

@@ -1,5 +1,5 @@
 # Created by: Simon Dick <simond@irrelevant.org>
-# $FreeBSD: head/mail/squirrelmail/Makefile 448804 2017-08-27 06:27:51Z riggs $
+# $FreeBSD: head/mail/squirrelmail/Makefile 449492 2017-09-09 14:24:21Z riggs $
 
 PORTNAME=	squirrelmail
 PORTVERSION=	20170705
@@ -19,7 +19,7 @@ USES=		cpe gettext perl5 php:web tar:bzip2
 USE_PHP=	session hash gettext mbstring pcre openssl xml
 USE_PERL5=	run
 NO_ARCH=	yes
-PORTSCOUT=	ignore
+PORTSCOUT=	ignore:1
 
 WRKSRC=		${WRKDIR}/${PORTNAME}.stable/${PORTNAME}
 

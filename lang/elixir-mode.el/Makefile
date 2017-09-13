@@ -1,7 +1,8 @@
-# $FreeBSD: head/lang/elixir-mode.el/Makefile 413634 2016-04-19 12:26:58Z olgeni $
+# $FreeBSD: head/lang/elixir-mode.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	elixir-mode.el
 PORTVERSION=	2.3.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	lang
 

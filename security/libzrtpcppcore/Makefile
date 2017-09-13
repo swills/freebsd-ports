@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/libzrtpcppcore/Makefile 447966 2017-08-14 20:48:24Z cs $
+# $FreeBSD: head/security/libzrtpcppcore/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	libzrtpcppcore
 PORTVERSION=	4.6.6
+PORTREVISION=	1
 DISTVERSIONPREFIX=	V
 CATEGORIES=	security
 

@@ -1,9 +1,9 @@
 # Created by: Masaki TAGAWA
-# $FreeBSD: head/www/mod_spdy/Makefile 440867 2017-05-14 07:06:11Z linimon $
+# $FreeBSD: head/www/mod_spdy/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	mod_spdy
 PORTVERSION=	0.9.4.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	www
 MASTER_SITES=	http://www.club.kyutech.ac.jp/~masaki/ports/:mod_spdy \
 		APACHE_HTTPD:apache22

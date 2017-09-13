@@ -1,9 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/devel/libqtxdg/Makefile 441215 2017-05-19 10:09:57Z joneum $
+# $FreeBSD: head/devel/libqtxdg/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	libqtxdg
 PORTVERSION=	2.0.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	LXQT/${PORTNAME}
 

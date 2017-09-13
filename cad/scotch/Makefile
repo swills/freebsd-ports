@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/cad/scotch/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/cad/scotch/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	scotch
 DISTVERSION=	5.1.12b_esmumps
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	cad science
 MASTER_SITES=	https://gforge.inria.fr/frs/download.php/28978/
 DISTNAME=	${PORTNAME}_${DISTVERSION}

@@ -1,9 +1,9 @@
 # Created by: Dominic Mitchell
-# $FreeBSD: head/editors/slime/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/editors/slime/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	slime
 PORTVERSION=	2.15
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=v
 CATEGORIES=	editors elisp
 

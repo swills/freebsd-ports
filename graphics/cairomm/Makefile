@@ -1,8 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/graphics/cairomm/Makefile 439206 2017-04-23 08:35:28Z kwm $
+# $FreeBSD: head/graphics/cairomm/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	cairomm
 PORTVERSION=	1.12.2
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://cairographics.org/releases/
 

@@ -1,8 +1,9 @@
 # Created by: Corey Smith <corsmith@gmail.com>
-# $FreeBSD: head/net/zerotier/Makefile 441494 2017-05-22 22:29:17Z linimon $
+# $FreeBSD: head/net/zerotier/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	zerotier
 PORTVERSION=	1.2.4
+PORTREVISION=	1
 CATEGORIES=	net
 
 MAINTAINER=	dch@skunkwerks.at

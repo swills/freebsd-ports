@@ -1,9 +1,9 @@
 # Created by: Kimura Fuyuki <fuyuki@mj.0038.net>
-# $FreeBSD: head/textproc/dictionary/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/textproc/dictionary/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	dictionary
 PORTVERSION=	1.8.7
-PORTREVISION=	18
+PORTREVISION=	19
 CATEGORIES=	textproc net elisp
 MASTER_SITES=	http://me.in-berlin.de/~myrkr/dictionary/ \
 		http://bsdchat.com/dist/dryice/

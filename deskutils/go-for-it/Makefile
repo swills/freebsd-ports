@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/go-for-it/Makefile 429259 2016-12-23 13:19:25Z ehaupt $
+# $FreeBSD: head/deskutils/go-for-it/Makefile 449749 2017-09-13 02:27:36Z cpm $
 
 PORTNAME=	go-for-it
 PORTVERSION=	1.5
@@ -14,14 +14,14 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	valac:lang/vala
 LIB_DEPENDS=	libnotify.so:devel/libnotify
 
+USES=		cmake gettext pkgconfig
+USE_GNOME=	cairo glib20 gtk30
+GNU_CONFIGURE=	yes
+INSTALLS_ICONS=	yes
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	mank319
 GH_PROJECT=	Go-For-It
-
-GNU_CONFIGURE=	yes
-USES=		cmake gettext pkgconfig
-USE_GNOME=	cairo glib20 gtk30
-INSTALLS_ICONS=	yes
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/data/go-for-it.desktop \

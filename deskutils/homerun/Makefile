@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/homerun/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/deskutils/homerun/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	homerun
 PORTVERSION=	0.2.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	deskutils
 MASTER_SITES=	KDE/unstable/${PORTNAME}/src/
 

@@ -1,10 +1,10 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/audio/gtkguitune/Makefile 437585 2017-04-02 22:30:05Z bapt $
+# $FreeBSD: head/audio/gtkguitune/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	gtkguitune
 PORTVERSION=	0.8
 DISTVERSIONPREFIX=	gtk2-
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	audio
 MASTER_SITES=	GENTOO \
 		http://www.oocities.org/harpin_floh/mysoft/

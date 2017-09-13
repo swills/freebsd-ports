@@ -1,8 +1,9 @@
 # Created by: Andriy Gapon <avg@icyb.net.ua>
-# $FreeBSD: head/sysutils/memtest86+/Makefile 422980 2016-09-30 11:40:44Z tz $
+# $FreeBSD: head/sysutils/memtest86+/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	memtest86+
 PORTVERSION=	5.01
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.memtest.org/download/${PORTVERSION}/
 

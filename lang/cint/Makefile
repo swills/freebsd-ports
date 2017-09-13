@@ -1,9 +1,9 @@
 # Created by: Max Khon <fjoe@FreeBSD.org>
-# $FreeBSD: head/lang/cint/Makefile 447877 2017-08-13 11:12:59Z rakuco $
+# $FreeBSD: head/lang/cint/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	cint
 PORTVERSION=	5.18.00
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	lang
 MASTER_SITES=	http://root.cern.ch/drupal/sites/default/files/
 

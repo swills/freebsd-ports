@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/pangomm/Makefile 439206 2017-04-23 08:35:28Z kwm $
+# $FreeBSD: head/x11-toolkits/pangomm/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	pangomm
 PORTVERSION=	2.40.1
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

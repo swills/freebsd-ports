@@ -1,9 +1,9 @@
 # Created by: Anton Shterenlikht
-# $FreeBSD: head/math/slatec/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/math/slatec/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	slatec
 PORTVERSION=	4.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	math
 MASTER_SITES=	NL/slatec/:slatec NL/blas/:blas
 # Get d1mach.f, i1mach.f, r1mach.f from BLAS, rather than from Slatec:

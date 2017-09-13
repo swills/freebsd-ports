@@ -1,9 +1,9 @@
 # Created by: Stanislav Sedov <ssedov@mbsd.msk.ru>
-# $FreeBSD: head/cad/gspiceui/Makefile 443053 2017-06-10 01:51:02Z sunpoet $
+# $FreeBSD: head/cad/gspiceui/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	gspiceui
 PORTVERSION=	1.1.00
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	cad
 MASTER_SITES=	SF/${PORTNAME}/gSpiceUI/${PORTNAME}-v${PORTVERSION}
 DISTNAME=	${PORTNAME}-v${PORTVERSION}

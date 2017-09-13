@@ -1,8 +1,8 @@
-# $FreeBSD: head/mail/mu4e-maildirs/Makefile 425349 2016-11-04 19:02:52Z hrs $
+# $FreeBSD: head/mail/mu4e-maildirs/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	mu4e-maildirs
 PORTVERSION=	0.8.20160126
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
 

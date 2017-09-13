@@ -1,11 +1,11 @@
 # Created by: Alex Varju <varju@webct.com>
-# $FreeBSD: head/palm/jpilot/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/palm/jpilot/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 # "?=" and "+=" are for including this Makefile from japanese/jpilot"
 
 PORTNAME=	jpilot
 PORTVERSION=	1.8.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES+=	palm comms
 MASTER_SITES=	http://www.mirrorservice.org/sites/master.us.finkmirrors.net/distfiles/ \
 		http://jpilot.org/

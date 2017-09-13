@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/android-tools-adb/Makefile 448531 2017-08-22 13:30:04Z jbeich $
+# $FreeBSD: head/devel/android-tools-adb/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	android-tools-adb
 DISTVERSIONPREFIX=	android-
 DISTVERSION?=	8.0.0_r4
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	devel comms
 
 .ifndef EXTRA_PATCHES

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 448928 2017-08-29 16:32:19Z jmd $
+# $FreeBSD: head/graphics/Makefile 449705 2017-09-12 19:22:01Z cy $
 #
 
     COMMENT = Graphics tools and libraries
@@ -1095,6 +1095,8 @@
     SUBDIR += xournal
     SUBDIR += xpaint
     SUBDIR += xpdf
+    SUBDIR += xpdf3
+    SUBDIR += xpdf4
     SUBDIR += xpeps
     SUBDIR += xpx
     SUBDIR += xsane

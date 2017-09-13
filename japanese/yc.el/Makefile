@@ -1,9 +1,9 @@
 # Created by: HONDA Yasuhiro <honda@kashio.info.mie-u.ac.jp>
-# $FreeBSD: head/japanese/yc.el/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/japanese/yc.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	yc.el
 PORTVERSION=	5.2.1
-PORTREVISION=	11
+PORTREVISION=	12
 PORTEPOCH=	1
 CATEGORIES=	japanese elisp
 MASTER_SITES=	http://www.ceres.dti.ne.jp/~knak/

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-pytest-asyncio/Makefile 443533 2017-06-13 19:54:35Z jbeich $
+# $FreeBSD: head/devel/py-pytest-asyncio/Makefile 449654 2017-09-11 15:08:09Z jbeich $
 
 PORTNAME=	pytest-asyncio
-PORTVERSION=	0.6.0
+PORTVERSION=	0.7.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,10 +11,10 @@ COMMENT=	Py.test plugin providing fixtures and markers for asyncio
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=3.0.2:devel/py3-pytest
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=3.0.6:devel/py3-pytest
 
 NO_ARCH=	yes
-USES=		python:3.3+
+USES=		python:3.5+
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.pre.mk>

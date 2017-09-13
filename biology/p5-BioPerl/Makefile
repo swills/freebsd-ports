@@ -1,9 +1,8 @@
 # Created by: Johann Visagie <johann@egenetics.com>
-# $FreeBSD: head/biology/p5-BioPerl/Makefile 442335 2017-06-01 23:50:33Z sunpoet $
+# $FreeBSD: head/biology/p5-BioPerl/Makefile 449746 2017-09-13 01:45:35Z wen $
 
 PORTNAME=	BioPerl
-PORTVERSION=	1.007001
-PORTREVISION=	2
+PORTVERSION=	1.007002
 CATEGORIES=	biology perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:CJFIELDS

@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/mod_security-devel/Makefile 447326 2017-08-04 11:17:54Z joneum $
+# $FreeBSD: head/www/mod_security-devel/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	mod_security-devel
 PORTVERSION=	3.0.0.g2017080200
+PORTREVISION=	1
 CATEGORIES=	www security
 
 MAINTAINER=	marius.halden@modirum.com

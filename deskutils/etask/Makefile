@@ -1,9 +1,9 @@
 # Created by: Dryice Liu <dryice@liu.com.cn>
-# $FreeBSD: head/deskutils/etask/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/deskutils/etask/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	etask
 PORTVERSION=	0.3.91
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	deskutils elisp
 MASTER_SITES=	http://members.chello.at/rene.weichselbaum/ \
 		http://dryice.name/computer/FreeBSD/distfiles/

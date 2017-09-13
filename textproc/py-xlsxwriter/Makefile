@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/textproc/py-xlsxwriter/Makefile 445341 2017-07-08 16:57:36Z antoine $
+# $FreeBSD: head/textproc/py-xlsxwriter/Makefile 449524 2017-09-10 08:19:51Z antoine $
 
 PORTNAME=	XlsxWriter
-PORTVERSION=	0.9.8
+PORTVERSION=	0.9.9
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

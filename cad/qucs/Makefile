@@ -1,7 +1,8 @@
-# $FreeBSD: head/cad/qucs/Makefile 443015 2017-06-09 15:50:39Z amdmi3 $
+# $FreeBSD: head/cad/qucs/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	qucs
 PORTVERSION=	0.0.19
+PORTREVISION=	1
 CATEGORIES=	cad science
 MASTER_SITES=	SF
 

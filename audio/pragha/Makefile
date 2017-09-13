@@ -1,9 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/audio/pragha/Makefile 446388 2017-07-22 11:35:44Z kwm $
+# $FreeBSD: head/audio/pragha/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	pragha
 PORTVERSION=	1.3.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	https://github.com/pragha-music-player/${PORTNAME}/releases/download/v${PORTVERSION}/
 

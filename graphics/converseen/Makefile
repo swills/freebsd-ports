@@ -1,9 +1,9 @@
 # Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/graphics/converseen/Makefile 441761 2017-05-26 08:20:18Z kwm $
+# $FreeBSD: head/graphics/converseen/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	converseen
 PORTVERSION=	0.9.6.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/Converseen/Converseen%20${PORTVERSION:R:R}/
 

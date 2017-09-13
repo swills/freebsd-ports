@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/py-notmuch/Makefile 426152 2016-11-15 09:14:11Z wen $
+# $FreeBSD: head/mail/py-notmuch/Makefile 449503 2017-09-09 19:14:24Z dbaio $
 
 PORTNAME=	notmuch
-PORTVERSION=	0.23.1
+PORTVERSION=	0.25
 CATEGORIES=	mail python
 MASTER_SITES=	http://notmuchmail.org/releases/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

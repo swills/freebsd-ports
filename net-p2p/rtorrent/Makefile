@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-p2p/rtorrent/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/net-p2p/rtorrent/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	rtorrent
 PORTVERSION=	0.9.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net-p2p
 MASTER_SITES=	http://rtorrent.net/downloads/
 

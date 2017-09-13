@@ -1,10 +1,10 @@
 # Created by: Alexander Nedotsukov <bland@mail.ru>
-# $FreeBSD: head/graphics/libgnomecanvasmm26/Makefile 437608 2017-04-03 09:43:00Z bapt $
+# $FreeBSD: head/graphics/libgnomecanvasmm26/Makefile 449591 2017-09-10 20:55:38Z gerald $
 #   $MCom: ports/graphics/libgnomecanvasmm26/Makefile,v 1.22 2009/03/17 15:05:06 kwm Exp $
 
 PORTNAME=	libgnomecanvasmm
 PORTVERSION=	2.26.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	graphics gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

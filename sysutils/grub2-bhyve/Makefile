@@ -1,10 +1,10 @@
 # Created by: kmoore@FreeBSD.org
-# $FreeBSD: head/sysutils/grub2-bhyve/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/sysutils/grub2-bhyve/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	grub2-bhyve
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.40
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils
 
 MAINTAINER=	kmoore@FreeBSD.org

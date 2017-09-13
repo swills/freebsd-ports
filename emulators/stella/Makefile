@@ -1,9 +1,9 @@
 # Created by: Jacques Vidrine <nectar@FreeBSD.org>
-# $FreeBSD: head/emulators/stella/Makefile 441455 2017-05-22 13:17:38Z linimon $
+# $FreeBSD: head/emulators/stella/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	stella
 PORTVERSION=	4.7.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	emulators
 MASTER_SITES=	https://github.com/stella-emu/stella/releases/download/release-${PORTVERSION}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

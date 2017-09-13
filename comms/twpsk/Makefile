@@ -1,7 +1,7 @@
-# $FreeBSD: head/comms/twpsk/Makefile 433380 2017-02-05 07:40:07Z krion $
+# $FreeBSD: head/comms/twpsk/Makefile 449646 2017-09-11 14:09:56Z db $
 
 PORTNAME=	twpsk
-PORTVERSION=	4.2
+PORTVERSION=	4.3
 CATEGORIES=	comms hamradio
 MASTER_SITES=	http://wa0eir.bcts.info/src/
 DISTNAME=	${PORTNAME}-${PORTVERSION}.src

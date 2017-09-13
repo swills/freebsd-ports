@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: head/databases/tarantool/files/tarantool.in 432416 2017-01-25 14:17:12Z vg $
+# $FreeBSD: head/databases/tarantool/files/tarantool.in 449479 2017-09-09 07:59:39Z olgeni $
 
 # PROVIDE: tarantool
 # REQUIRE: LOGIN
@@ -24,7 +24,7 @@ start_cmd="${name}_start"
 stop_cmd="${name}_stop"
 restart_cmd="${name}_restart"
 
-INSTANCES=$(find ${tarantool_instances} -type l -name '*.lua')
+INSTANCES=$(find ${tarantool_instances} -type l -name '*.lua' 2>/dev/null)
 TDAEMON=%%PREFIX%%/bin/tarantool
 TCTL=%%PREFIX%%/bin/tarantoolctl
 

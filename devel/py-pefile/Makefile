@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/py-pefile/Makefile 447469 2017-08-06 16:15:24Z antoine $
+# $FreeBSD: head/devel/py-pefile/Makefile 449523 2017-09-10 07:58:58Z antoine $
 
 PORTNAME=	pefile
-PORTVERSION=	2017.8.1
+PORTVERSION=	2017.9.3
 CATEGORIES=	devel python
 MASTER_SITES=	https://github.com/erocarrera/pefile/releases/download/v${PORTVERSION}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

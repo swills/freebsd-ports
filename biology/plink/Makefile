@@ -1,9 +1,9 @@
 # Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/biology/plink/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/biology/plink/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	plink
 PORTVERSION=	1.07
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	biology science
 MASTER_SITES=	http://pngu.mgh.harvard.edu/~purcell/plink/dist/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

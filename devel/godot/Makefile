@@ -1,9 +1,9 @@
 # Created by: Shane Ambler <FreeBSD@Shaneware.biz>
-# $FreeBSD: head/devel/godot/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/devel/godot/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	godot
 PORTVERSION=	2.1.2
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONSUFFIX=	-stable
 CATEGORIES=	devel games
 

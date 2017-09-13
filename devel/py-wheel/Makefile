@@ -1,8 +1,8 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/py-wheel/Makefile 414038 2016-04-26 08:29:42Z nivit $
+# $FreeBSD: head/devel/py-wheel/Makefile 449676 2017-09-12 08:24:02Z nivit $
 
 PORTNAME=	wheel
-PORTVERSION=	0.29.0
+PORTVERSION=	0.30.0
 PORTREVISION=	0
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP

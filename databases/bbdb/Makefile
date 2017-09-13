@@ -1,9 +1,9 @@
 # Created by: Yoichi NAKAYAMA <yoichi@FreeBSD.org>
-# $FreeBSD: head/databases/bbdb/Makefile 446854 2017-07-28 21:45:20Z jkim $
+# $FreeBSD: head/databases/bbdb/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	bbdb
 PORTVERSION=	2.35
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	databases elisp
 MASTER_SITES=	SF
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}

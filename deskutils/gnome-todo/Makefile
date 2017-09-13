@@ -1,9 +1,9 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/deskutils/gnome-todo/Makefile 443492 2017-06-13 08:14:34Z kwm $
+# $FreeBSD: head/deskutils/gnome-todo/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	gnome-todo
 PORTVERSION=	3.18.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

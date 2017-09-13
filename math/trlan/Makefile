@@ -1,9 +1,9 @@
 # Created by: b.f. <bf@FreeBSD.org>
-# $FreeBSD: head/math/trlan/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/math/trlan/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	trlan
 PORTVERSION=	201009
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	math
 MASTER_SITES=	https://codeforge.lbl.gov/frs/download.php/210/:1 \
 		http://crd.lbl.gov/~kewu/ps/:2 \

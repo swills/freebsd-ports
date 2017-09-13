@@ -1,8 +1,9 @@
 # Created by: stephen@FreeBSD.org
-# $FreeBSD: head/math/librsb/Makefile 443939 2017-06-20 04:17:31Z stephen $
+# $FreeBSD: head/math/librsb/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	librsb
 PORTVERSION=	1.2.0r7
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	SF/librsb
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/r/-rc/}

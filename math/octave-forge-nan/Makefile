@@ -1,8 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-nan/Makefile 444096 2017-06-22 03:39:36Z stephen $
+# $FreeBSD: head/math/octave-forge-nan/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	octave-forge-nan
-PORTVERSION=	3.1.2
+PORTVERSION=	3.1.4
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org

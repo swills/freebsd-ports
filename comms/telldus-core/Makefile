@@ -1,9 +1,9 @@
 # Created by: Johan Strom <johna@stromnet.se>
-# $FreeBSD: head/comms/telldus-core/Makefile 440863 2017-05-14 06:33:57Z linimon $
+# $FreeBSD: head/comms/telldus-core/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	telldus-core
 PORTVERSION=	2.1.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	comms
 MASTER_SITES=	http://download.telldus.se/TellStick/Software/telldus-core/
 

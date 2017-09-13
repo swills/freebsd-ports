@@ -1,10 +1,10 @@
 # Created by: alepulver
-# $FreeBSD: head/devel/aegis/Makefile 447407 2017-08-05 16:56:11Z rakuco $
+# $FreeBSD: head/devel/aegis/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	aegis
 PORTVERSION=	4.25
 DISTVERSIONSUFFIX=	.D510
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel
 MASTER_SITES=	SF
 

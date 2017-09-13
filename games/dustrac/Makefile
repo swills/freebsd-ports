@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/dustrac/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/dustrac/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	dustrac
 PORTVERSION=	1.11.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games
 
 MAINTAINER=	ports@FreeBSD.org

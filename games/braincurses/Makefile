@@ -1,9 +1,9 @@
 # Created by: Michael L. Hostbaek (mich@freebsdcluster.org)
-# $FreeBSD: head/games/braincurses/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/games/braincurses/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	braincurses
 PORTVERSION=	1.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 

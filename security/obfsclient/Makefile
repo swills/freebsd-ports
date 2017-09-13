@@ -1,10 +1,10 @@
 # Created by: Fabian Keil <fk@fabiankeil.de>
-# $FreeBSD: head/security/obfsclient/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/security/obfsclient/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	obfsclient
 PORTVERSION=	0.0.2
 DISTVERSIONPREFIX=	v
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	security
 
 MAINTAINER=	ports@FreeBSD.org

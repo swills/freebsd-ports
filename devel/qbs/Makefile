@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/qbs/Makefile 445753 2017-07-14 13:42:39Z tcberner $
+# $FreeBSD: head/devel/qbs/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	qbs
 PORTVERSION=	1.8.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	src-
 CATEGORIES=	devel
 MASTER_SITES=	QT/official_releases/${PORTNAME}/${PORTVERSION}

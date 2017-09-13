@@ -1,8 +1,8 @@
-# $FreeBSD: head/editors/web-mode/Makefile 439752 2017-04-29 14:50:53Z jrm $
+# $FreeBSD: head/editors/web-mode/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	web-mode
 PORTVERSION=	14
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	editors elisp
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}

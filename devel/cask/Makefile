@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/cask/Makefile 430174 2016-12-31 23:19:43Z hrs $
+# $FreeBSD: head/devel/cask/Makefile 449697 2017-09-12 15:38:56Z ashish $
 
 PORTNAME=	cask
 PORTVERSION=	0.8.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel elisp
 

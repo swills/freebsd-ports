@@ -1,9 +1,9 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/mumps/Makefile 443600 2017-06-14 21:10:00Z thierry $
+# $FreeBSD: head/math/mumps/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	mumps
 PORTVERSION=	4.10.0	# Please do not upgrade to 5+: if needed repocopy to math/mumps5
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	math
 MASTER_SITES=	http://mumps.enseeiht.fr/		\
 		http://graal.ens-lyon.fr/MUMPS/		\

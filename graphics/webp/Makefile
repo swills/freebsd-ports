@@ -1,9 +1,9 @@
 # Created by: johans
-# $FreeBSD: head/graphics/webp/Makefile 441834 2017-05-27 10:25:23Z sunpoet $
+# $FreeBSD: head/graphics/webp/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	webp
 PORTVERSION=	0.6.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics
 MASTER_SITES=	http://downloads.webmproject.org/releases/webp/
 DISTNAME=	lib${PORTNAME}-${PORTVERSION}

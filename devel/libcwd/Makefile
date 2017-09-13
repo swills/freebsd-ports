@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/libcwd/Makefile 439457 2017-04-26 14:39:34Z cpm $
+# $FreeBSD: head/devel/libcwd/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	libcwd
 PORTVERSION=	1.0.6
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	SF
 

@@ -1,9 +1,9 @@
 # Created by: David Kalliecharan <dave@dal.ca>
-# $FreeBSD: head/devel/py-numba/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/devel/py-numba/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	numba
 PORTVERSION=	0.29.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,9 +1,9 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/lang/cling/Makefile 441468 2017-05-22 16:04:19Z linimon $
+# $FreeBSD: head/lang/cling/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=		cling
 PORTVERSION=		0.4
-PORTREVISION?=		2
+PORTREVISION?=		3
 CATEGORIES=		lang devel
 MASTER_SITES=		https://root.cern.ch/download/cling/
 DISTNAME=		${PORTNAME}_2016-12-29_sources

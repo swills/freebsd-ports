@@ -1,8 +1,8 @@
 # Created by: Jonathan Weiss (<jw@innerewut.de>)
-# $FreeBSD: head/www/rubygem-actionpack50/Makefile 447046 2017-08-01 17:10:47Z sunpoet $
+# $FreeBSD: head/www/rubygem-actionpack50/Makefile 449562 2017-09-10 13:10:31Z sunpoet $
 
 PORTNAME=	actionpack
-PORTVERSION=	5.0.5
+PORTVERSION=	5.0.6
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	50

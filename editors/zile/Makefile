@@ -1,8 +1,9 @@
 # Created by: Jason Evans <jasone@FreeBSD.org>
-# $FreeBSD: head/editors/zile/Makefile 448978 2017-08-30 13:15:13Z culot $
+# $FreeBSD: head/editors/zile/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	zile
 PORTVERSION=	2.4.13
+PORTREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	GNU
 

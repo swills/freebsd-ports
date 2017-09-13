@@ -1,9 +1,9 @@
 # Created by: lightside <lightside@gmx.com>
-# $FreeBSD: head/games/wxlauncher/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/games/wxlauncher/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	wxlauncher
 PORTVERSION=	0.10.0
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	release-
 CATEGORIES=	games
 

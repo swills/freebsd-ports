@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/science/mpb/Makefile 442050 2017-05-30 02:56:43Z sunpoet $
+# $FreeBSD: head/science/mpb/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	mpb
 PORTVERSION=	1.5
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	science
 MASTER_SITES=	http://ab-initio.mit.edu/mpb/
 

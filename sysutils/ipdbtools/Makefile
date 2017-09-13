@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/ipdbtools/Makefile 441494 2017-05-22 22:29:17Z linimon $
+# $FreeBSD: head/sysutils/ipdbtools/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	ipdbtools
 PORTVERSION=	1.1.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://cyclaero.com/public/ipdbtools/
 

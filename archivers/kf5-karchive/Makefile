@@ -1,8 +1,9 @@
 # Created by: tcberner
-# $FreeBSD: head/archivers/kf5-karchive/Makefile 438880 2017-04-19 14:59:40Z tcberner $
+# $FreeBSD: head/archivers/kf5-karchive/Makefile 449591 2017-09-10 20:55:38Z gerald $
 
 PORTNAME=	karchive
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	archivers kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org
