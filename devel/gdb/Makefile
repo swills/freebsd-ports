@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/gdb/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/gdb/Makefile 449795 2017-09-13 14:27:14Z pizzamig $
 
 PORTNAME=	gdb
 PORTVERSION=	8.0
@@ -48,7 +48,8 @@ EXTRA_PATCHES=	${FILESDIR}/commit-45eba0ab7d \
 		${FILESDIR}/commit-4b654465bf \
 		${FILESDIR}/commit-b30ff123fb \
 		${FILESDIR}/commit-48aeef91c2 \
-		${FILESDIR}/commit-0aa37b654c
+		${FILESDIR}/commit-0aa37b654c \
+		${FILESDIR}/commit-0335ac6d12
 LIB_DEPENDS+=	libexpat.so:textproc/expat2
 
 VER=		${PORTVERSION:S/.//g}

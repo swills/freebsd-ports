@@ -1,25 +1,21 @@
 # Created by: Ion-Mihai "IOnut" Tetcu <itetcu@FreeBSD.org>
-# $FreeBSD: head/devel/qgit/Makefile 435291 2017-03-02 18:12:37Z tcberner $
+# $FreeBSD: head/devel/qgit/Makefile 449786 2017-09-13 13:41:22Z adridg $
 
 PORTNAME=	qgit
-PORTVERSION=	2.3
-PORTREVISION=	2
+DISTVERSIONPREFIX=	${PORTNAME}-
+DISTVERSION=	2.7
 CATEGORIES=	devel
-MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}4/${PORTVERSION}
-PKGNAMESUFFIX=	-qt4
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	adridg@FreeBSD.org
 COMMENT=	Graphical interface to git repositories
 
-USES=		qmake tar:bzip2
-USE_QT4=	corelib gui moc_build rcc_build uic_build
-MAKE_JOBS_UNSAFE=	yes
+LICENSE=	GPLv2
 
-WRKSRC=		${WRKDIR}/${PORTNAME}
+USES=		cmake:outsource
+USE_QT5=	core gui widgets \
+		buildtools_build qmake_build
 
-PLIST_FILES=	bin/${PORTNAME}
-
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/bin/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
+USE_GITHUB=	yes
+GH_ACCOUNT=	tibirna
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: peter.thoenen@yahoo.com
-# $FreeBSD: head/security/tor-devel/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/security/tor-devel/Makefile 449805 2017-09-13 16:50:37Z joneum $
 
 PORTNAME=	tor
-DISTVERSION=	0.3.1.5-alpha
+DISTVERSION=	0.3.1.6-rc
 PORTREVISION=	1
 CATEGORIES=	security net ipv6
 MASTER_SITES=	TOR
@@ -44,7 +44,7 @@ PLIST_SUB=	USER="${USERS}" GROUP="${GROUPS}"
 GROUPS=		_tor
 USERS=		_tor
 
-CONFLICTS=	tor-[0-9]*
+CONFLICTS_INSTALL=	tor-[0-9]*
 
 STATIC_TOR_USES=	ssl:build
 STATIC_TOR_USES_OFF=	ssl

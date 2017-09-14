@@ -1,5 +1,5 @@
 # Created by: crwhipp@gmail.com
-# $FreeBSD: head/astro/foxtrotgps/Makefile 439287 2017-04-24 12:58:02Z miwi $
+# $FreeBSD: head/astro/foxtrotgps/Makefile 449824 2017-09-14 09:01:50Z amdmi3 $
 
 PORTNAME=	foxtrotgps
 PORTVERSION=	1.2.0
@@ -11,6 +11,7 @@ MAINTAINER=	crwhipp@gmail.com
 COMMENT=	Lightweight opensource gps moving map application
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libexif.so:graphics/libexif \

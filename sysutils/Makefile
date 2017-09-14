@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 449665 2017-09-11 20:13:18Z swills $
+# $FreeBSD: head/sysutils/Makefile 449808 2017-09-13 17:48:05Z jlaffaye $
 #
 
     COMMENT = System utilities
@@ -1351,6 +1351,7 @@
     SUBDIR += zfstools
     SUBDIR += zidrav
     SUBDIR += zisofs-tools
+    SUBDIR += znapzend
     SUBDIR += zogftw
     SUBDIR += zrep
     SUBDIR += zsd

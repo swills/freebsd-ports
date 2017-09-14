@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-deckar01-task_list1/Makefile 441347 2017-05-20 21:50:46Z sunpoet $
+# $FreeBSD: head/www/rubygem-deckar01-task_list1/Makefile 449794 2017-09-13 14:20:38Z sunpoet $
 
 PORTNAME=	deckar01-task_list
 PORTVERSION=	1.0.6
@@ -11,6 +11,9 @@ COMMENT=	Markdown TaskList components
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	Use www/rubygem-deckar01-task_list instead
+EXPIRATION_DATE=2017-09-30
 
 RUN_DEPENDS=	rubygem-activesupport4>=4.0:devel/rubygem-activesupport4 \
 		rubygem-html-pipeline1>=0:textproc/rubygem-html-pipeline1 \

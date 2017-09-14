@@ -1,5 +1,5 @@
 # Created by: Sutra Zhou <zhoushuqun@gmail.com>
-# $FreeBSD: head/www/mod_auth_openid/Makefile 413746 2016-04-21 16:43:14Z swills $
+# $FreeBSD: head/www/mod_auth_openid/Makefile 449779 2017-09-13 12:39:10Z zi $
 
 PORTNAME=	mod_auth_openid
 PORTVERSION=	0.8
@@ -19,19 +19,17 @@ BROKEN_powerpc64=	Does not build
 LIB_DEPENDS=	libopkele.so:devel/libopkele \
 		libsqlite3.so:databases/sqlite3
 
+USES=		autoreconf cpe gmake libtool pkgconfig
+USE_APACHE=	22+
 USE_GITHUB=	yes
 GH_ACCOUNT=	bmuller
 
 PLIST_FILES=	${APACHEMODDIR}/mod_auth_openid.so
-
-USE_APACHE=	22+
-USES=		autoreconf cpe gmake libtool pkgconfig
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-pcre=${LOCALBASE}
+CFLAGS+=	-I${LOCALBASE}/include -I/usr/include/openssl
 
 CPE_VENDOR=	findingscience
-
-CFLAGS+=	-I${LOCALBASE}/include -I/usr/include/openssl
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|$${APXS} -i|$${APXS} -S LIBEXECDIR=${STAGEDIR}${PREFIX}/${APACHEMODDIR} -i|' \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 449193 2017-09-03 09:51:31Z rene $
+# $FreeBSD: head/audio/Makefile 449820 2017-09-14 03:01:52Z ultima $
 #
 
     COMMENT = Audio tools
@@ -657,6 +657,7 @@
     SUBDIR += py-mutagen
     SUBDIR += py-ogg
     SUBDIR += py-openal
+    SUBDIR += py-opuslib
     SUBDIR += py-py-jack
     SUBDIR += py-pyacoustid
     SUBDIR += py-pyaudio

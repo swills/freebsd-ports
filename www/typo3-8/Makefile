@@ -1,5 +1,5 @@
 # Created by: Helmut Ritter <freebsd-ports@charlieroot.de>
-# $FreeBSD: head/www/typo3-8/Makefile 449299 2017-09-05 16:11:27Z sunpoet $
+# $FreeBSD: head/www/typo3-8/Makefile 449791 2017-09-13 14:07:59Z sunpoet $
 
 PORTNAME=	typo3
 PORTVERSION=	${PORT_V_MAJOR}.${PORT_V_MINOR}.${PORT_V_PATCH}
@@ -26,7 +26,7 @@ WRKSRC=		${WRKDIR}/${TYPO3SRC}
 
 PORT_V_MAJOR=	8
 PORT_V_MINOR=	7
-PORT_V_PATCH=	5
+PORT_V_PATCH=	6
 
 TYPO3WWW=	www
 TYPO3SRC=	${PORTNAME}_src-${PORTVERSION}
@@ -81,6 +81,5 @@ post-install:
 	@${ECHO} "@dir ${TYPO3WWW}/${TYPO3SRC}/vendor/doctrine/dbal/lib/vendor/Symfony/Component/Console" >> ${TMPPLIST}
 	@${ECHO} "@dir ${TYPO3WWW}/${TYPO3SRC}/vendor/doctrine/dbal/lib/vendor/doctrine-build-common" >> ${TMPPLIST}
 	@${ECHO} "@dir ${TYPO3WWW}/${TYPO3SRC}/vendor/doctrine/dbal/lib/vendor/doctrine-common" >> ${TMPPLIST}
-	@${ECHO} "@dir ${TYPO3WWW}/${TYPO3SRC}/vendor/guzzlehttp/guzzle/build" >> ${TMPPLIST}
 
 .include <bsd.port.mk>

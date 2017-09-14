@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 445159 2017-07-06 15:18:01Z tcberner $
+# $FreeBSD: head/net-im/Makefile 449821 2017-09-14 03:05:09Z ultima $
 #
 
     COMMENT = Instant messaging
@@ -144,6 +144,7 @@
     SUBDIR += py-telepot
     SUBDIR += py-toxcore-c
     SUBDIR += py-twistedWords
+    SUBDIR += py-unmessage
     SUBDIR += py-xmpppy
     SUBDIR += py-xmpppy-irc
     SUBDIR += py-xmpppy-yahoo

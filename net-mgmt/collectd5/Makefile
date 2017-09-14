@@ -1,8 +1,9 @@
 # Created by: Matt Peterson <matt@peterson.org>
-# $FreeBSD: head/net-mgmt/collectd5/Makefile 446072 2017-07-17 13:38:04Z olivier $
+# $FreeBSD: head/net-mgmt/collectd5/Makefile 449798 2017-09-13 14:55:45Z des $
 
 PORTNAME=	collectd
 PORTVERSION=	5.7.2
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 MASTER_SITES=	https://collectd.org/files/ \
 		http://collectd.org/files/
@@ -26,6 +27,8 @@ OPTIONS_GROUP_INPUT=	CHRONY CURL CURL_JSON CURL_XML DBI IPMI JSON \
 			PERL PGSQL PINBA PING PYTHON RABBITMQ REDIS ROUTEROS \
 			SIGROK SNMP STATSD TOKYOTYRANT VARNISH XML \
 			XMMS ZOOKEEPER
+
+OPTIONS_DEFAULT=	DEBUG GCRYPT PING
 
 CGI_DESC=		Install collection.cgi (requires rrdtool)
 CHRONY_DESC=		Enable chronyd plugin

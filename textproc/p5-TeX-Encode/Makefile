@@ -1,8 +1,8 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-TeX-Encode/Makefile 435924 2017-03-11 15:59:09Z sunpoet $
+# $FreeBSD: head/textproc/p5-TeX-Encode/Makefile 449767 2017-09-13 09:36:20Z sunpoet $
 
 PORTNAME=	TeX-Encode
-PORTVERSION=	2.001
+PORTVERSION=	2.003
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:ATHREEF
@@ -18,7 +18,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 BUILD_DEPENDS=	p5-HTML-Parser>=3.35:www/p5-HTML-Parser \
 		p5-Pod-LaTeX>=0.56:textproc/p5-Pod-LaTeX
 RUN_DEPENDS:=	${BUILD_DEPENDS}
-TEST_DEPENDS=	p5-Test-Pod-Coverage>=0:devel/p5-Test-Pod-Coverage
 
 NO_ARCH=	yes
 USES=		perl5

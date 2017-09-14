@@ -1,8 +1,8 @@
 # Created by: Joseph Koshy <jkoshy@FreeBSD.org>
-# $FreeBSD: head/lang/racket-minimal/Makefile 447115 2017-08-02 15:55:23Z olgeni $
+# $FreeBSD: head/lang/racket-minimal/Makefile 449802 2017-09-13 16:10:33Z olgeni $
 
 PORTNAME=	racket
-PORTVERSION=	6.10
+PORTVERSION=	6.10.1
 CATEGORIES=	lang scheme
 MASTER_SITES=	http://mirror.racket-lang.org/installers/${PORTVERSION}/ \
 		http://www.cs.utah.edu/plt/installers/${PORTVERSION}/ \

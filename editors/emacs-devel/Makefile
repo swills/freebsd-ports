@@ -1,5 +1,5 @@
 # Created by: Kenneth Vestergaard Schmidt <kvs@pil.dk>
-# $FreeBSD: head/editors/emacs-devel/Makefile 449247 2017-09-04 13:42:18Z ashish $
+# $FreeBSD: head/editors/emacs-devel/Makefile 449781 2017-09-13 13:15:55Z ashish $
 
 PORTNAME=	emacs
 DISTVERSION=	${EMACS_VER}.${EMACS_REV}
@@ -19,10 +19,10 @@ BROKEN_aarch64=		Segfaults during build
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	emacs-mirror
-GH_TAGNAME=	1b492fa
+GH_TAGNAME=	49a42fb
 
 EMACS_VER=	26.0.50
-EMACS_REV=	20170903
+EMACS_REV=	20170912
 GNU_CONFIGURE=	yes
 USES=		autoreconf:build cpe gmake makeinfo ncurses pkgconfig
 INFO_PATH=	${DATADIR_REL}/info

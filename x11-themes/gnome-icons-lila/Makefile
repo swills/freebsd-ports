@@ -1,5 +1,5 @@
 # Created by: Filippo Natali <filippo@widestore.net>
-# $FreeBSD: head/x11-themes/gnome-icons-lila/Makefile 428132 2016-12-08 16:07:33Z tijl $
+# $FreeBSD: head/x11-themes/gnome-icons-lila/Makefile 449763 2017-09-13 09:02:49Z amdmi3 $
 
 # Port logic gratuitously stolen from x11-themes/kde-icons-noia by
 # lioux@.  If it's not defined here and you think it should be, check
@@ -15,11 +15,14 @@ DISTNAME=	${PORTNAME}-gnome_${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Lila Icons for Gnome
 
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/Lila/LICENSE
+
 RESTRICTED=	${REASON}
 
 NO_WRKSUBDIR=	yes
 
-USES=	tar:bzip2
+USES=		tar:bzip2
 
 .include "${.CURDIR}/../gnome-icons/bsd.gnome-icons.mk"
 .include <bsd.port.mk>

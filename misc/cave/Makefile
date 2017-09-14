@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/misc/cave/Makefile 426610 2016-11-20 18:13:34Z marino $
+# $FreeBSD: head/misc/cave/Makefile 449762 2017-09-13 09:01:51Z amdmi3 $
 
 PORTNAME=	cave
 PORTVERSION=	1.0b
@@ -8,6 +8,8 @@ MASTER_SITES=	SF/bjk/${PORTNAME}/${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Character Animation Viewer for Everyone
+
+LICENSE=	GPLv2+
 
 USES=		ncurses
 GNU_CONFIGURE=	yes

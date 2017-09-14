@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/py-first-server/Makefile 449655 2017-09-11 15:20:06Z dvl $
+# $FreeBSD: head/security/py-first-server/Makefile 449811 2017-09-13 20:29:48Z dvl $
 
 PORTNAME=	first-server
-PORTVERSION=	0.0.2
+PORTVERSION=	0.0.3
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTVERSIONPREFIX=	v
 

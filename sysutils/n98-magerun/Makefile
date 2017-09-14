@@ -1,26 +1,32 @@
 # Created by: Melvyn Sopacua <melvyn@magemana.nl>
-# $FreeBSD: head/sysutils/n98-magerun/Makefile 415820 2016-05-25 01:41:39Z zi $
+# $FreeBSD: head/sysutils/n98-magerun/Makefile 449800 2017-09-13 15:18:16Z pi $
 
 PORTNAME=	n98-magerun
-PORTVERSION=	1.97.12
+PORTVERSION=	1.98.0
 CATEGORIES=	sysutils www
+MASTER_SITES=	https://files.magerun.net/ \
+		https://www.freebsd.systems/files/
+EXTRACT_SUFX=	.phar
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	lukasz@wasikowski.net
 COMMENT=	CLI tool for inspection and control of Magento installations
 
 LICENSE=	MIT
 
+USES=		mysql:client php:cli
 USE_PHP=	phar bz2 simplexml pdo_mysql json zlib ctype dom posix
-USE_MYSQL=	client
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	netz98
+NO_ARCH=	yes
 NO_BUILD=	yes
 
 PLIST_FILES=	sbin/n98-magerun
 
+do-extract:
+	@${MKDIR} ${WRKSRC}/
+	${CP} ${_DISTDIR}/${PORTNAME}-${PORTVERSION}.phar ${WRKSRC}/
+
 do-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME}.phar \
+	${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME}-${PORTVERSION}.phar \
 		${STAGEDIR}${PREFIX}/sbin/${PORTNAME}
 
 .include <bsd.port.mk>

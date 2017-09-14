@@ -1,8 +1,8 @@
 # Created by: Axel Rau <axel.rau@chaos1.de>
-# $FreeBSD: head/security/py-service_identity/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/py-service_identity/Makefile 449816 2017-09-13 23:45:06Z asomers $
 
 PORTNAME=	service_identity
-PORTVERSION=	16.0.0
+PORTVERSION=	17.0.0
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

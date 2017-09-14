@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-declarative/Makefile 436582 2017-03-21 11:00:00Z tz $
+# $FreeBSD: head/devel/rubygem-declarative/Makefile 449772 2017-09-13 09:36:51Z sunpoet $
 
 PORTNAME=	declarative
-PORTVERSION=	0.0.9
+PORTVERSION=	0.0.10
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

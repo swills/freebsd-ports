@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/lowdown/Makefile 449014 2017-08-31 08:57:46Z bapt $
+# $FreeBSD: head/textproc/lowdown/Makefile 449776 2017-09-13 12:08:31Z bapt $
 
 PORTNAME=	lowdown
-PORTVERSION=	0.2.0
+PORTVERSION=	0.2.4
 CATEGORIES=	textproc
 MASTER_SITES=	http://kristaps.bsd.lv/lowdown/snapshots/
 
@@ -12,10 +12,7 @@ LICENSE=	ISCL
 
 HAS_CONFIGURE=	yes
 
-PLIST_FILES=	bin/lowdown \
-		include/lowdown.h \
-		lib/liblowdown.a \
-		man/man1/lowdown.1.gz \
-		man/man3/lowdown.3.gz
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 
 .include <bsd.port.mk>

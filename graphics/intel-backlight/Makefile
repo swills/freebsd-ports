@@ -1,20 +1,20 @@
 # Created by: Michael Gmelin <freebsd@grem.de>
-# $FreeBSD: head/graphics/intel-backlight/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/intel-backlight/Makefile 449818 2017-09-14 01:58:31Z jmd $
 
 PORTNAME=		intel-backlight
-PORTVERSION=		20150706
+PORTVERSION=		20170831
 CATEGORIES=		graphics
 
-MAINTAINER=		freebsd@grem.de
+MAINTAINER=		jmd@freebsd.org
 COMMENT=		Control backlight on various modern Intel(R) GPUs
 
 LIB_DEPENDS=		libdrm.so:graphics/libdrm \
 			libpciaccess.so:devel/libpciaccess
 
 USE_GITHUB=		yes
-GH_ACCOUNT=		grembo
+GH_ACCOUNT=		FreeBSDDesktop
 GH_PROJECT=		intel_backlight_fbsd
-GH_TAGNAME=		93e1fe4
+GH_TAGNAME=		baba3e6
 
 PLIST_FILES=		bin/intel_backlight
 PORTEXAMPLES=		isl_backlight.sh
