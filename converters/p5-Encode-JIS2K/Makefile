@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@infor.org>
-# $FreeBSD: head/converters/p5-Encode-JIS2K/Makefile 390918 2015-06-29 15:47:44Z adamw $
+# $FreeBSD: head/converters/p5-Encode-JIS2K/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Encode-JIS2K
 PORTVERSION=	0.03
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	JIS X 0212 (aka JIS 2000) Encodings
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

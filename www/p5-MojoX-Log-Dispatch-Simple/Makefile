@@ -1,5 +1,5 @@
 # Created by: Tomohiro Hosaka <bokutin@bokut.in>
-# $FreeBSD: head/www/p5-MojoX-Log-Dispatch-Simple/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-MojoX-Log-Dispatch-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MojoX-Log-Dispatch-Simple
 PORTVERSION=	1.03
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bokutin@bokut.in
 COMMENT=	Simple Log::Dispatch replacement of Mojo::Log
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Log-Dispatch>=0:devel/p5-Log-Dispatch \

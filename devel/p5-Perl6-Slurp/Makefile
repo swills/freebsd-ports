@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Perl6-Slurp/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Perl6-Slurp/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Perl6-Slurp
 PORTVERSION=	0.051005
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Implements the Perl6 'slurp' built-in
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Perl6-Export>=0.07:devel/p5-Perl6-Export

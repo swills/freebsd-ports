@@ -1,5 +1,5 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/devel/p5-POSIX-strptime/Makefile 401742 2015-11-16 02:15:23Z amdmi3 $
+# $FreeBSD: head/devel/p5-POSIX-strptime/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POSIX-strptime
 PORTVERSION=	0.13
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	douglas@douglasthrift.net
 COMMENT=	Perl interface to strptime(3)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

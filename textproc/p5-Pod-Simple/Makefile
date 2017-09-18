@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/textproc/p5-Pod-Simple/Makefile 427579 2016-12-02 16:51:33Z sunpoet $
+# $FreeBSD: head/textproc/p5-Pod-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Pod-Simple
 PORTVERSION=	3.35
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Framework for parsing Pod
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 PORTSCOUT=	limit:^[0-9\.]*$$

@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-Appliance-Session/Makefile 435400 2017-03-04 13:48:44Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Appliance-Session/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Appliance-Session
 PORTVERSION=	4.200003
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Run command-line sessions to network appliances
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-IO-Prompt-Tiny>=0:devel/p5-IO-Prompt-Tiny \

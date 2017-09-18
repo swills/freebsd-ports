@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/p5-aliased/Makefile 432909 2017-01-31 10:42:24Z des $
+# $FreeBSD: head/devel/p5-aliased/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	aliased
 PORTVERSION=	0.34
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	des@FreeBSD.org
 COMMENT=	Use shorter versions of class names
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

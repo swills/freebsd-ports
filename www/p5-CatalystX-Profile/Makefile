@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/p5-CatalystX-Profile/Makefile 435040 2017-02-28 09:48:16Z sunpoet $
+# $FreeBSD: head/www/p5-CatalystX-Profile/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CatalystX-Profile
 PORTVERSION=	0.02
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Profile your Catalyst application with Devel::NYTProf
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

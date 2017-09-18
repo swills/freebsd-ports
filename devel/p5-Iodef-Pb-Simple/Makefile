@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Iodef-Pb-Simple/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Iodef-Pb-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Iodef-Pb-Simple
 PORTVERSION=	0.21
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl extension providing high level API access to Iodef-Pb
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Accessor>=0.34:devel/p5-Class-Accessor \

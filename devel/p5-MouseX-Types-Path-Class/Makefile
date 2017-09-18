@@ -1,5 +1,5 @@
 # Created by: TERAMOTO Masahiro <markun@onohara.to>
-# $FreeBSD: head/devel/p5-MouseX-Types-Path-Class/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-MouseX-Types-Path-Class/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MouseX-Types-Path-Class
 PORTVERSION=	0.07
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	markun@onohara.to
 COMMENT=	Path::Class type library for Mouse
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Mouse>=0.39:devel/p5-Mouse \

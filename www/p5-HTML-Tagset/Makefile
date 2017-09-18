@@ -1,5 +1,5 @@
 # Created by: Vanilla I. Shu <vanilla@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTML-Tagset/Makefile 442238 2017-05-31 17:30:28Z sunpoet $
+# $FreeBSD: head/www/p5-HTML-Tagset/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-Tagset
 PORTVERSION=	3.20
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Some useful data table in parsing HTML
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

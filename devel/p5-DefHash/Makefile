@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-DefHash/Makefile 395974 2015-09-03 16:22:12Z sunpoet $
+# $FreeBSD: head/devel/p5-DefHash/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DefHash
 PORTVERSION=	1.0.11
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Define things according to a specification, using hashes
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

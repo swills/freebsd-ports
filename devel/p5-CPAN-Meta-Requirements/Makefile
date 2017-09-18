@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-CPAN-Meta-Requirements/Makefile 413820 2016-04-23 06:47:31Z sunpoet $
+# $FreeBSD: head/devel/p5-CPAN-Meta-Requirements/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CPAN-Meta-Requirements
 PORTVERSION=	2.140
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Set of version requirements for a CPAN distribution
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

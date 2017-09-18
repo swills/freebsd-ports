@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Text-Unaccent-PurePerl/Makefile 436912 2017-03-25 18:08:50Z mat $
+# $FreeBSD: head/textproc/p5-Text-Unaccent-PurePerl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-Unaccent-PurePerl
 PORTVERSION=	0.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Remove accents from characters
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

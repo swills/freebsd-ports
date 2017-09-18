@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/x11-toolkits/p5-Tk-Getopt/Makefile 439246 2017-04-23 17:09:56Z sunpoet $
+# $FreeBSD: head/x11-toolkits/p5-Tk-Getopt/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Tk-Getopt
 PORTVERSION=	0.51
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	User configuration window for Tk with interface to Getopt::Long
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Tk>=804:x11-toolkits/p5-Tk \

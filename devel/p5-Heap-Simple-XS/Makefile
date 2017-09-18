@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@daltons.ca>
-# $FreeBSD: head/devel/p5-Heap-Simple-XS/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Heap-Simple-XS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Heap-Simple-XS
 PORTVERSION=	0.10
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	XS implementation of the Heap::Simple interface
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Heap-Simple>=0:devel/p5-Heap-Simple

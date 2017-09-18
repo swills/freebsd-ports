@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-IPC-Mmap-Share/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-IPC-Mmap-Share/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IPC-Mmap-Share
 PORTVERSION=	0.03
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Safely share structures among processes using anonymous mmap
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-IPC-Mmap>=0:devel/p5-IPC-Mmap

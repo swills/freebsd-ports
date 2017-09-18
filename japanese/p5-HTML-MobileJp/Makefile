@@ -1,5 +1,5 @@
 # Created by: Masahiro Teramoto <markun@onohara.to>
-# $FreeBSD: head/japanese/p5-HTML-MobileJp/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/p5-HTML-MobileJp/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-MobileJp
 PORTVERSION=	0.08
@@ -10,7 +10,7 @@ MASTER_SITES=	CPAN
 MAINTAINER=	markun@onohara.to
 COMMENT=	Generate mobile-jp html tags
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \

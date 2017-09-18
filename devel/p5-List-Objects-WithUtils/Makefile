@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-List-Objects-WithUtils/Makefile 434871 2017-02-26 13:56:57Z sunpoet $
+# $FreeBSD: head/devel/p5-List-Objects-WithUtils/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	List-Objects-WithUtils
 PORTVERSION=	2.028003
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	List objects, kitchen sink included
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

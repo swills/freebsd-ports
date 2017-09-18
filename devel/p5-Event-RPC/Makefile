@@ -1,5 +1,5 @@
 # Created by: Vivek Khera <vivek@khera.org>
-# $FreeBSD: head/devel/p5-Event-RPC/Makefile 444671 2017-06-29 19:13:39Z sunpoet $
+# $FreeBSD: head/devel/p5-Event-RPC/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Event-RPC
 PORTVERSION=	1.03
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	vivek@khera.org
 COMMENT=	Event based transparent Client/Server RPC framework
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: Eivind Eklund <eivind@FreeBSD.org>
-# $FreeBSD: head/mail/p5-MIME-Tools/Makefile 437892 2017-04-06 21:56:52Z sunpoet $
+# $FreeBSD: head/mail/p5-MIME-Tools/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MIME-Tools
 PORTVERSION=	5.509
@@ -13,7 +13,7 @@ DISTNAME=	MIME-tools-${PORTVERSION}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Set of perl5 modules for MIME
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Convert-BinHex>=0:converters/p5-Convert-BinHex \

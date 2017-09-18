@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Role-Tiny/Makefile 425550 2016-11-06 16:50:27Z sunpoet $
+# $FreeBSD: head/devel/p5-Role-Tiny/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Role-Tiny
 PORTVERSION=	2.000005
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Roles, like a nouvelle cusine portion size slice of Moose
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Method-Modifiers>=1.05:devel/p5-Class-Method-Modifiers

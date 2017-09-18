@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-Runnable/Makefile 442315 2017-06-01 19:58:11Z sunpoet $
+# $FreeBSD: head/devel/p5-MooseX-Runnable/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooseX-Runnable
 PORTVERSION=	0.10
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Tag a class as a runnable application
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

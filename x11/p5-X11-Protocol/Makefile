@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/x11/p5-X11-Protocol/Makefile 375378 2014-12-24 00:14:11Z bofh $
+# $FreeBSD: head/x11/p5-X11-Protocol/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	X11-Protocol
 PORTVERSION=	0.56
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl module that provides an interface roughly equivalent to Xlib
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

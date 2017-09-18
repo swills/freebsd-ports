@@ -1,5 +1,5 @@
 # Created by: Yukihiro Nakai <Nacai@iname.com>
-# $FreeBSD: head/net/p5-Socks/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/net/p5-Socks/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	SOCKS
 PORTVERSION=	0.03
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl5 module to communicate with socks v4 and v5 servers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

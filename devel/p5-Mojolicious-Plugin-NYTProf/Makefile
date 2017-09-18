@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Mojolicious-Plugin-NYTProf/Makefile 423693 2016-10-10 20:01:29Z adamw $
+# $FreeBSD: head/devel/p5-Mojolicious-Plugin-NYTProf/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Mojolicious-Plugin-NYTProf
 PORTVERSION=	0.20
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Auto handling of Devel::NYTProf in your Mojolicious app
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Devel-NYTProf>=5.07:devel/p5-Devel-NYTProf \

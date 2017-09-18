@@ -1,5 +1,5 @@
 # Created by: brix@FreeBSD.org
-# $FreeBSD: head/devel/p5-Module-Runtime/Makefile 446017 2017-07-16 16:09:46Z sunpoet $
+# $FreeBSD: head/devel/p5-Module-Runtime/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Module-Runtime
 PORTVERSION=	0.015
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Runtime module handling
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

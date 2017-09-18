@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/www/p5-Rose-HTML-Objects/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Rose-HTML-Objects/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Rose-HTML-Objects
 PORTVERSION=	0.623
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Object-oriented interfaces for HTML
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Clone-PP>=0:devel/p5-Clone-PP \

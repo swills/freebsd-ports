@@ -1,5 +1,5 @@
 # Created by: Mahlon E. Smith <mahlon@martini.nu>
-# $FreeBSD: head/sysutils/p5-BSD-Jail-Object/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/p5-BSD-Jail-Object/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	BSD-Jail-Object
 PORTVERSION=	0.02
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	mahlon@martini.nu
 COMMENT=	Object oriented perl interface to jail(2)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Inline>=0.44:devel/p5-Inline \

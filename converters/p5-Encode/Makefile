@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@infor.org>
-# $FreeBSD: head/converters/p5-Encode/Makefile 446155 2017-07-18 17:55:15Z sunpoet $
+# $FreeBSD: head/converters/p5-Encode/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Encode
 PORTVERSION=	2.92
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Provides interfaces between strings and the rest of the system
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USE_PERL5=	configure

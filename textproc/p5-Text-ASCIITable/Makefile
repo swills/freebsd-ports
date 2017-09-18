@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Text-ASCIITable/Makefile 438017 2017-04-08 10:35:10Z sunpoet $
+# $FreeBSD: head/textproc/p5-Text-ASCIITable/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-ASCIITable
 PORTVERSION=	0.22
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Create a nice formatted table using ASCII characters
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5 shebangfix

@@ -1,5 +1,5 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/net/p5-IO-Socket-Multicast6/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-IO-Socket-Multicast6/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IO-Socket-Multicast6
 PORTVERSION=	0.03
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Send and receive IPv4 and IPv6 multicast messages
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-IO-Interface>=1.01:net/p5-IO-Interface \

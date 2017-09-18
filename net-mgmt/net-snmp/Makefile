@@ -1,5 +1,5 @@
 # Created by: gpalmer
-# $FreeBSD: head/net-mgmt/net-snmp/Makefile 447034 2017-08-01 17:07:58Z zi $
+# $FreeBSD: head/net-mgmt/net-snmp/Makefile 449855 2017-09-14 21:23:14Z zi $
 
 PORTNAME=	snmp
 PORTVERSION=	5.7.3
@@ -24,7 +24,7 @@ OPTIONS_DEFINE=	IPV6 MFD_REWRITES PERL PERL_EMBEDDED PYTHON DUMMY TKMIB \
 OPTIONS_DEFAULT=PERL PERL_EMBEDDED DUMMY SMUX
 OPTIONS_SUB=	yes
 
-MFD_REWRITES_DESC=	Build with 64-bit Interface Counters
+MFD_REWRITES_DESC=	Use new MFD rewrites of mib modules
 PERL_EMBEDDED_DESC=	Build embedded perl
 DUMMY_DESC=		Enable dummy values as placeholders
 TKMIB_DESC=		Install graphical MIB browser

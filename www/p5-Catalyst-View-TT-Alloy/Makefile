@@ -1,5 +1,5 @@
 # Created by: Danny Warren <danny@dannywarren.com>
-# $FreeBSD: head/www/p5-Catalyst-View-TT-Alloy/Makefile 421058 2016-08-29 12:54:50Z mat $
+# $FreeBSD: head/www/p5-Catalyst-View-TT-Alloy/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Catalyst-View-TT-Alloy
 PORTVERSION=	0.00007
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	danny@dannywarren.com
 COMMENT=	Template::Alloy views for Catalyst
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.7:www/p5-Catalyst-Runtime \

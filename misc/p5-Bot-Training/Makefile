@@ -1,5 +1,5 @@
 # Created by: milki <milki@rescomp.berkeley.edu>
-# $FreeBSD: head/misc/p5-Bot-Training/Makefile 435031 2017-02-28 09:47:32Z sunpoet $
+# $FreeBSD: head/misc/p5-Bot-Training/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Bot-Training
 PORTVERSION=	0.06
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Plain text training material for bots like Hailo and MegaHAL
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

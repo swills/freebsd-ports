@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Role-REST-Client/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Role-REST-Client/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Role-REST-Client
 PORTVERSION=	0.18
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	amontalban@gmail.com
 COMMENT=	Perl extension for Rest Client Role
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Data-Serializer>=0.60:devel/p5-Data-Serializer \

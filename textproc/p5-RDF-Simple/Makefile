@@ -1,5 +1,5 @@
 # Created by: Aaron Straup Cope <ascope@cpan.org>
-# $FreeBSD: head/textproc/p5-RDF-Simple/Makefile 435865 2017-03-10 22:46:06Z sunpoet $
+# $FreeBSD: head/textproc/p5-RDF-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	RDF-Simple
 PORTVERSION=	0.415
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Read and write RDF without complication
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-MakeMethods>=0:devel/p5-Class-MakeMethods \

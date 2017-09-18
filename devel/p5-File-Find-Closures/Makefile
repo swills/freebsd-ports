@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-File-Find-Closures/Makefile 399774 2015-10-19 20:21:47Z sunpoet $
+# $FreeBSD: head/devel/p5-File-Find-Closures/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Find-Closures
 PORTVERSION=	1.11
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Functions you can use with File::Find
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

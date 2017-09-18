@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/astro/p5-Astro-Flux/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/astro/p5-Astro-Flux/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Astro-Flux
 PORTVERSION=	0.01
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Class for handling astronomical flux quantities
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Astro-WaveBand>=0:astro/p5-Astro-WaveBand \

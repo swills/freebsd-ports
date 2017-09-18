@@ -1,5 +1,5 @@
 # Created by: clive
-# $FreeBSD: head/www/p5-Template-Toolkit/Makefile 438603 2017-04-15 21:48:48Z adamw $
+# $FreeBSD: head/www/p5-Template-Toolkit/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Template-Toolkit
 PORTVERSION=	2.27
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Extensive Toolkit for template processing
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-AppConfig>=1.56:devel/p5-AppConfig

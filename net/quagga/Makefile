@@ -1,5 +1,5 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/net/quagga/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net/quagga/Makefile 449967 2017-09-16 16:31:15Z pi $
 
 PORTNAME=	quagga
 PORTVERSION=	1.2.1
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 
 BUILD_DEPENDS=	gawk:lang/gawk
 
-CONFLICTS=	openbgpd-[0-9]* openospfd-[0-9]* zebra-0* quagga-re-[0-9]*
+CONFLICTS=	openbgpd openospfd zebra quagga-re frr
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-exampledir=${PREFIX}/share/examples/quagga

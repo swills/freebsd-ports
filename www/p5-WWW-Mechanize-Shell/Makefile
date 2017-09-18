@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/www/p5-WWW-Mechanize-Shell/Makefile 439515 2017-04-27 07:03:24Z sunpoet $
+# $FreeBSD: head/www/p5-WWW-Mechanize-Shell/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WWW-Mechanize-Shell
 PORTVERSION=	0.56
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Interactive shell for www/p5-WWW-Mechanize
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTML-Display>=0:www/p5-HTML-Display \

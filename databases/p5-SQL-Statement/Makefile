@@ -1,5 +1,5 @@
 # Created by: wolman@cs.washington.edu
-# $FreeBSD: head/databases/p5-SQL-Statement/Makefile 437966 2017-04-07 23:16:30Z sunpoet $
+# $FreeBSD: head/databases/p5-SQL-Statement/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	SQL-Statement
 PORTVERSION=	1.412
@@ -10,10 +10,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 module for SQL parsing and processing
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/ARTISTIC-1.0
-LICENSE_FILE_GPLv1=	${WRKSRC}/GPL-1
+LICENSE_FILE_GPLv1+ =	${WRKSRC}/GPL-1
 
 BUILD_DEPENDS=	p5-Clone>=0.30:devel/p5-Clone \
 		p5-Module-Runtime>=0:devel/p5-Module-Runtime \

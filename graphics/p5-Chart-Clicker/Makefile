@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/graphics/p5-Chart-Clicker/Makefile 428744 2016-12-17 12:58:00Z sunpoet $
+# $FreeBSD: head/graphics/p5-Chart-Clicker/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Chart-Clicker
 PORTVERSION=	2.90
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Powerful, extensible charting
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

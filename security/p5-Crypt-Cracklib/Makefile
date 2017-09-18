@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/security/p5-Crypt-Cracklib/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-Crypt-Cracklib/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-Cracklib
 PORTVERSION=	1.7
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interface to Alec Muffet's cracklib library
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libcrack.so:security/cracklib

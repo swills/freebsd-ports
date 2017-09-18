@@ -1,5 +1,5 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/www/p5-WebService-MoviePosterDB/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WebService-MoviePosterDB/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WebService-MoviePosterDB
 PORTVERSION=	0.18
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl interface to MoviePosterDB
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Cache-Cache>=0:devel/p5-Cache-Cache \

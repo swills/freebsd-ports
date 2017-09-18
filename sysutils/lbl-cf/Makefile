@@ -1,5 +1,5 @@
-# Created by: Craig Leres <leres@ee.lbl.gov>
-# $FreeBSD: head/sysutils/lbl-cf/Makefile 348267 2014-03-14 16:59:32Z pawel $
+# Created by: Craig Leres <leres@FreeBSD.org>
+# $FreeBSD: head/sysutils/lbl-cf/Makefile 449916 2017-09-15 18:18:26Z leres $
 
 PORTNAME=	cf
 PORTVERSION=	1.2.5
@@ -10,7 +10,7 @@ MASTER_SITES=	ftp://ee.lbl.gov/ \
 		http://www.ftpdir.hu/ftp.ee.lbl.gov/
 PKGNAMEPREFIX=	lbl-
 
-MAINTAINER=	leres@ee.lbl.gov
+MAINTAINER=	leres@FreeBSD.org
 COMMENT=	Unix time to formated time and date filter
 
 LICENSE=	BSD3CLAUSE

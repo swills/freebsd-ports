@@ -1,5 +1,5 @@
 # Created by: Stephon Chen <stephon@gmail.com>
-# $FreeBSD: head/security/p5-Net-SSL-ExpireDate/Makefile 433686 2017-02-08 23:45:54Z sunpoet $
+# $FreeBSD: head/security/p5-Net-SSL-ExpireDate/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-SSL-ExpireDate
 PORTVERSION=	1.20
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Obtain expiration date of certificate
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \

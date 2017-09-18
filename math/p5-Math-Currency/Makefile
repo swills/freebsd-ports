@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/math/p5-Math-Currency/Makefile 446922 2017-07-30 13:12:55Z sunpoet $
+# $FreeBSD: head/math/p5-Math-Currency/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-Currency
 PORTVERSION=	0.52
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for exact currency math with formatting and rounding
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

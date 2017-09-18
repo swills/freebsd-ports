@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Games-Dissociate/Makefile 435102 2017-02-28 22:51:08Z sunpoet $
+# $FreeBSD: head/textproc/p5-Games-Dissociate/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Games-Dissociate
 PORTVERSION=	1
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Dissociated Press algorithm and filter
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Pod>=1.00:devel/p5-Test-Pod \

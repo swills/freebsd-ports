@@ -1,5 +1,5 @@
 # Created by: <ports@c0decafe.net>
-# $FreeBSD: head/net-im/p5-Net-Async-XMPP/Makefile 438238 2017-04-11 00:48:17Z sunpoet $
+# $FreeBSD: head/net-im/p5-Net-Async-XMPP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Async-XMPP
 PORTVERSION=	0.003
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Asynchronous XMPP client and server
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

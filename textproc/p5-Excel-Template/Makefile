@@ -1,5 +1,5 @@
 # Created by: Espen Tagestad <espen@tagestad.no>
-# $FreeBSD: head/textproc/p5-Excel-Template/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Excel-Template/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Excel-Template
 PORTVERSION=	0.34
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Perl module for templating Excel files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-IO-stringy>=0:devel/p5-IO-stringy \

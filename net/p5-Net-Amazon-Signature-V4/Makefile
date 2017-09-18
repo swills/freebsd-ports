@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-Net-Amazon-Signature-V4/Makefile 444797 2017-06-30 22:14:15Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Amazon-Signature-V4/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Amazon-Signature-V4
 PORTVERSION=	0.14
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for AWS signature V4, AWS4-HMAC-SHA256
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

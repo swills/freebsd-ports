@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/chinese/p5-Encode-CNMap/Makefile 394463 2015-08-17 13:03:45Z sunpoet $
+# $FreeBSD: head/chinese/p5-Encode-CNMap/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Encode-CNMap
 PORTVERSION=	0.32
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Enhanced Chinese encodings with Simplified-Traditional auto-mapping
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USE_PERL5=	configure

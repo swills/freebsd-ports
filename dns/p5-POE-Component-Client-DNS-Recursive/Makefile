@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/dns/p5-POE-Component-Client-DNS-Recursive/Makefile 435261 2017-03-02 17:59:37Z sunpoet $
+# $FreeBSD: head/dns/p5-POE-Component-Client-DNS-Recursive/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Component-Client-DNS-Recursive
 PORTVERSION=	1.12
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Recursive DNS client for POE
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

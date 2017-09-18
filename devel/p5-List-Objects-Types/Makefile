@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-List-Objects-Types/Makefile 425525 2016-11-06 16:47:49Z sunpoet $
+# $FreeBSD: head/devel/p5-List-Objects-Types/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	List-Objects-Types
 PORTVERSION=	2.001001
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Type::Tiny-based types for List::Objects::WithUtils
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

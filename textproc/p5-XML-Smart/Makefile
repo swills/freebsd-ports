@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/textproc/p5-XML-Smart/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-XML-Smart/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-Smart
 PORTVERSION=	1.79
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Smart, easy and powerful way to access/create XML files/data
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Object-MultiType>=0.03:devel/p5-Object-MultiType \

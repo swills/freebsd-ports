@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Petal-Mail/Makefile 443812 2017-06-18 05:51:58Z sunpoet $
+# $FreeBSD: head/textproc/p5-Petal-Mail/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Petal-Mail
 PORTVERSION=	0.31
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Format text e-mail using Petal
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Petal>=0:textproc/p5-Petal

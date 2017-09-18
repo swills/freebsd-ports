@@ -1,5 +1,5 @@
 # Created by: Dan Langille <dan@freebsddiary.org>
-# $FreeBSD: head/security/logcheck/Makefile 449672 2017-09-12 05:44:36Z pi $
+# $FreeBSD: head/security/logcheck/Makefile 449886 2017-09-15 05:52:19Z sunpoet $
 
 PORTNAME=	logcheck
 PORTVERSION=	1.3.18
@@ -11,7 +11,7 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 MAINTAINER=	yasu@utahime.org
 COMMENT=	Auditing tool for system logs on Unix boxes
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	docbook-to-man>0:textproc/docbook-to-man

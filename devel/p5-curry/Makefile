@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-curry/Makefile 444217 2017-06-24 16:31:09Z sunpoet $
+# $FreeBSD: head/devel/p5-curry/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	curry
 PORTVERSION=	1.001000
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Create automatic curried method call closures for any class or object
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

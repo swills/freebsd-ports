@@ -1,5 +1,5 @@
 # Created by: Andrey Chernov <ache@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Cache-LRU/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Cache-LRU/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Cache-LRU
 PORTVERSION=	0.04
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple, fast implementation of an in-memory LRU cache
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Requires>=0:devel/p5-Test-Requires

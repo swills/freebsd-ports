@@ -1,5 +1,5 @@
 # Created by: Dmitry Yashin <dmitry@yashin.su>
-# $FreeBSD: head/sysutils/p5-Ubic/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/p5-Ubic/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Ubic
 PORTVERSION=	1.58
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	dmitry@yashin.su
 COMMENT=	Flexible perl-based service manager
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \

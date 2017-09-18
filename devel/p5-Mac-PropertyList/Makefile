@@ -1,5 +1,5 @@
 # Created by: Nobutaka Mantani <nobutaka@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Mac-PropertyList/Makefile 413853 2016-04-23 06:58:32Z sunpoet $
+# $FreeBSD: head/devel/p5-Mac-PropertyList/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Mac-PropertyList
 PORTVERSION=	1.41
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	nobutaka@FreeBSD.org
 COMMENT=	Perl extension for parsing Mac OS X property lists
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-XML-Entities>=0:textproc/p5-XML-Entities

@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/p5-CatalystX-SimpleLogin/Makefile 443660 2017-06-15 21:58:47Z sunpoet $
+# $FreeBSD: head/www/p5-CatalystX-SimpleLogin/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CatalystX-SimpleLogin
 PORTVERSION=	0.20
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Provide a simple Login controller which can be reused
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Catalyst-Action-REST>=0.74:www/p5-Catalyst-Action-REST \

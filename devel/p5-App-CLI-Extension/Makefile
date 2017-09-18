@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-App-CLI-Extension/Makefile 441932 2017-05-28 23:15:17Z sunpoet $
+# $FreeBSD: head/devel/p5-App-CLI-Extension/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	App-CLI-Extension
 PORTVERSION=	1.42.1
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:R}${PORTVERSION:E}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Extension for App::CLI extension module
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-App-CLI>=0.313:devel/p5-App-CLI \

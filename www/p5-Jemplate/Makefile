@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/www/p5-Jemplate/Makefile 439328 2017-04-24 15:21:24Z sunpoet $
+# $FreeBSD: head/www/p5-Jemplate/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Jemplate
 PORTVERSION=	0.300
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:C|0$||}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	JavaScript Templating with Template Toolkit
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

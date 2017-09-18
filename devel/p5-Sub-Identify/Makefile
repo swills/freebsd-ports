@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Sub-Identify/Makefile 438369 2017-04-12 16:24:19Z sunpoet $
+# $FreeBSD: head/devel/p5-Sub-Identify/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Sub-Identify
 PORTVERSION=	0.14
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Retrieve names of code references
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Class-C3/Makefile 439269 2017-04-24 08:45:35Z wen $
+# $FreeBSD: head/devel/p5-Class-C3/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Class-C3
 PORTVERSION=	0.33
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Pragma to use the C3 method resolution order algorithm
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 OPTIONS_DEFINE=	XS

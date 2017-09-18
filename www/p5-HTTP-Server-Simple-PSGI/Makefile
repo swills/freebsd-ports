@@ -1,5 +1,5 @@
 # Created by: ports@c0decafe.net
-# $FreeBSD: head/www/p5-HTTP-Server-Simple-PSGI/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/www/p5-HTTP-Server-Simple-PSGI/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTTP-Server-Simple-PSGI
 PORTVERSION=	0.16
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	PSGI handler for HTTP::Server::Simple
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTTP-Server-Simple>=0.42:www/p5-HTTP-Server-Simple

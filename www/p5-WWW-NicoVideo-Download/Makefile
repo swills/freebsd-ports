@@ -1,5 +1,5 @@
 # Created by: TAKAHASHI Kaoru <kaoru@kaisei.org>
-# $FreeBSD: head/www/p5-WWW-NicoVideo-Download/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-NicoVideo-Download/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WWW-NicoVideo-Download
 PORTVERSION=	0.06
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Download FLV/MP4/SWF files from nicovideo.jp
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Any-Moose>=0:devel/p5-Any-Moose \

@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org
-# $FreeBSD: head/irc/p5-POE-Component-IRC-Plugin-CoreList/Makefile 434951 2017-02-27 14:14:52Z sunpoet $
+# $FreeBSD: head/irc/p5-POE-Component-IRC-Plugin-CoreList/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Component-IRC-Plugin-CoreList
 PORTVERSION=	1.06
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	IRC plugin that provides CoreList goodness
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

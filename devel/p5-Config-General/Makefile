@@ -1,5 +1,5 @@
 # Created by: Sheldon Hearn <sheldonh@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Config-General/Makefile 419501 2016-08-03 09:18:10Z jadawin $
+# $FreeBSD: head/devel/p5-Config-General/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Config-General
 PORTVERSION=	2.63
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	jadawin@FreeBSD.org
 COMMENT=	Perl5 module for handling Apache-style configuration files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

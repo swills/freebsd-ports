@@ -1,5 +1,5 @@
 # Created by: Maxime Henrion <mux@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-BigInt-GMP/Makefile 443757 2017-06-17 10:02:18Z sunpoet $
+# $FreeBSD: head/math/p5-Math-BigInt-GMP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-BigInt-GMP
 PORTVERSION=	1.6004
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Math::BigInt::GMP - Use the GMP library for Math::BigInt routines
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libgmp.so:math/gmp

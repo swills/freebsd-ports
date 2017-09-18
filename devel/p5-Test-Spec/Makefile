@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-Spec/Makefile 448112 2017-08-17 15:04:05Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Spec/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Spec
 PORTVERSION=	0.53
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Write tests in a declarative specification style
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Package-Stash>=0.23:devel/p5-Package-Stash \

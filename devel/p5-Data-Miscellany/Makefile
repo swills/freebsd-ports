@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Data-Miscellany/Makefile 399733 2015-10-19 20:18:40Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-Miscellany/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Miscellany
 PORTVERSION=	1.100850
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Collection of miscellaneous subroutines
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

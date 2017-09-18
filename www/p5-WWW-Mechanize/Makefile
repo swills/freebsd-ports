@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/www/p5-WWW-Mechanize/Makefile 445108 2017-07-06 00:03:02Z sunpoet $
+# $FreeBSD: head/www/p5-WWW-Mechanize/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WWW-Mechanize
 PORTVERSION=	1.86
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	This module is to help you automate interaction with a website
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-CGI>=4.08:www/p5-CGI \

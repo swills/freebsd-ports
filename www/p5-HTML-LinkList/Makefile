@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTML-LinkList/Makefile 405968 2016-01-12 21:41:40Z sunpoet $
+# $FreeBSD: head/www/p5-HTML-LinkList/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-LinkList
 PORTVERSION=	0.1701
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Create a 'smart' list of HTML links
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

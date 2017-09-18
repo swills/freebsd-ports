@@ -1,5 +1,5 @@
 # Created by: Christopher Boumenot <boumenot@gmail.com>
-# $FreeBSD: head/sysutils/p5-Sysadm-Install/Makefile 444747 2017-06-30 13:44:47Z sunpoet $
+# $FreeBSD: head/sysutils/p5-Sysadm-Install/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Sysadm-Install
 PORTVERSION=	0.48
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Typical installation tasks for system administrators
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Expect>=0:lang/p5-Expect \

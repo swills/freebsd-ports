@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Pod-Elemental/Makefile 430155 2016-12-31 19:51:34Z adamw $
+# $FreeBSD: head/textproc/p5-Pod-Elemental/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Pod-Elemental
 PORTVERSION=	0.103004
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Treating a Pod document as a tree of elements
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Load>=0:devel/p5-Class-Load \

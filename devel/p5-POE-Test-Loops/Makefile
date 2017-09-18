@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/devel/p5-POE-Test-Loops/Makefile 448330 2017-08-19 16:05:23Z sunpoet $
+# $FreeBSD: head/devel/p5-POE-Test-Loops/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Test-Loops
 PORTVERSION=	1.360
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Reusable tests for POE Loop authors
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

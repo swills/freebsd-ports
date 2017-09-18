@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Format-Pg/Makefile 440249 2017-05-06 11:14:22Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime-Format-Pg/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DateTime-Format-Pg
 PORTVERSION=	0.16013
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Parse and format PostgreSQL dates and times
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Pod-Parser/Makefile 378985 2015-02-14 18:16:49Z adamw $
+# $FreeBSD: head/textproc/p5-Pod-Parser/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Pod-Parser
 PORTVERSION=	1.63
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Modules to work with POD (Plain Old Documentation)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5 dos2unix

@@ -1,5 +1,5 @@
 # Created by: Mons Anderson <mons@cpan.org>
-# $FreeBSD: head/devel/p5-common-sense/Makefile 410927 2016-03-12 19:04:34Z adamw $
+# $FreeBSD: head/devel/p5-common-sense/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	common-sense
 PORTVERSION=	3.74
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	mons@cpan.org
 COMMENT=	Perl common defaults with lower memory usage
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

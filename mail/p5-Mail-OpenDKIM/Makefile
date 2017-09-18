@@ -1,5 +1,5 @@
 # Created by: Vivek Khera <vivek@khera.org>
-# $FreeBSD: head/mail/p5-Mail-OpenDKIM/Makefile 448106 2017-08-17 14:37:18Z matthew $
+# $FreeBSD: head/mail/p5-Mail-OpenDKIM/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Mail-OpenDKIM
 PORTVERSION=	4204
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	matthew@FreeBSD.org
 COMMENT=	Perl interface to OpenDKIM C library
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	opendkim>=2.10.0:mail/opendkim

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net-mgmt/p5-Xymon-Server/Makefile 397404 2015-09-20 20:16:29Z sunpoet $
+# $FreeBSD: head/net-mgmt/p5-Xymon-Server/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Xymon-Server
 PORTVERSION=	0.02
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Xymon Server Interface
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

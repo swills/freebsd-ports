@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
-# $FreeBSD: head/devel/p5-Term-Screen/Makefile 428072 2016-12-07 16:19:31Z sunpoet $
+# $FreeBSD: head/devel/p5-Term-Screen/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Term-Screen
 PORTVERSION=	1.06
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Basic screen + input class
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

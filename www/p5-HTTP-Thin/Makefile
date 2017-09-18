@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-HTTP-Thin/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTTP-Thin/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTTP-Thin
 PORTVERSION=	0.006
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	amontalban@gmail.com
 COMMENT=	Thin Wrapper around HTTP::Tiny to play nice with HTTP::Message
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Class-Method-Modifiers>0:devel/p5-Class-Method-Modifiers \

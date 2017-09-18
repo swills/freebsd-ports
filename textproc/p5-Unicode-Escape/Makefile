@@ -1,5 +1,5 @@
 # Created by: Vadim Vatlin
-# $FreeBSD: head/textproc/p5-Unicode-Escape/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Unicode-Escape/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Unicode-Escape
 PORTVERSION=	0.0.2
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Escape and unescape Unicode characters other than ASCII
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Unicode-String>=0:converters/p5-Unicode-String

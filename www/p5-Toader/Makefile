@@ -1,5 +1,5 @@
 # Created by: Zane C, Bowers-Hadley <vvelox@vvelox.net>
-# $FreeBSD: head/www/p5-Toader/Makefile 444347 2017-06-26 03:25:03Z sunpoet $
+# $FreeBSD: head/www/p5-Toader/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Toader
 PORTVERSION=	1.2.1
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	vvelox@vvelox.net
 COMMENT=	CMS meant to be used from the terminal and integrated into a VCS for rendering static pages
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Config-Tiny>=2.14:devel/p5-Config-Tiny \

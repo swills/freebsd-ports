@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Pod-HtmlEasy/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Pod-HtmlEasy/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Pod-HtmlEasy
 PORTVERSION=	1.0108
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Generate personalized HTML from PODs
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-Slurp>=9999.13:devel/p5-File-Slurp \

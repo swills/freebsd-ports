@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Lexical-SealRequireHints/Makefile 446023 2017-07-16 16:10:17Z sunpoet $
+# $FreeBSD: head/devel/p5-Lexical-SealRequireHints/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Lexical-SealRequireHints
 PORTVERSION=	0.011
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module to prevent leakage of lexical hints
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

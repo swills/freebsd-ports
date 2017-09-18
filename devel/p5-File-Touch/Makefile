@@ -1,5 +1,5 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/devel/p5-File-Touch/Makefile 412987 2016-04-10 22:11:36Z bofh $
+# $FreeBSD: head/devel/p5-File-Touch/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Touch
 PORTVERSION=	0.11
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Module to 'touch' files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

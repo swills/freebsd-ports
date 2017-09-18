@@ -1,5 +1,5 @@
 # Created by: Vivek Khera <vivek@khera.org>
-# $FreeBSD: head/www/p5-CSS-Inliner/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-CSS-Inliner/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CSS-Inliner
 PORTVERSION=	4003
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	vivek@khera.org
 COMMENT=	Library for converting CSS blocks and files to inline styles
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTML-Query>=0.09:www/p5-HTML-Query \

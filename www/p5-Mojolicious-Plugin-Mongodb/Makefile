@@ -1,5 +1,5 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/www/p5-Mojolicious-Plugin-Mongodb/Makefile 427453 2016-11-30 18:00:33Z sunpoet $
+# $FreeBSD: head/www/p5-Mojolicious-Plugin-Mongodb/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Mojolicious-Plugin-Mongodb
 PORTVERSION=	1.16
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Use MongoDB in Mojolicious
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

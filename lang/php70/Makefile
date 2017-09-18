@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/php70/Makefile 449033 2017-08-31 13:56:20Z tz $
+# $FreeBSD: head/lang/php70/Makefile 449898 2017-09-15 10:26:14Z tz $
 
 PORTNAME=	php70
 PORTVERSION=	7.0.23
@@ -46,6 +46,7 @@ OPTIONS_SUB=	yes
 OPTIONS_EXCLUDE_DragonFly=	DTRACE
 # ld(1) fails to link probes: Relocations in generic ELF (EM: 0)
 OPTIONS_EXCLUDE_aarch64=	DTRACE
+OPTIONS_EXCLUDE_sparc64=	DTRACE
 
 CLI_DESC=	Build CLI version
 CGI_DESC=	Build CGI version

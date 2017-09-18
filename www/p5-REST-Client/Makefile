@@ -1,5 +1,5 @@
 # Created by: Paul Schmehl <pauls@utdallas.edu>
-# $FreeBSD: head/www/p5-REST-Client/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-REST-Client/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	REST-Client
 PORTVERSION=	272
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	michelle@sorbs.net
 COMMENT=	Simple client for interacting with RESTful http/https resources
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Crypt-SSLeay>0:security/p5-Crypt-SSLeay \

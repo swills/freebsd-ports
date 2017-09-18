@@ -1,5 +1,5 @@
 # Created by: Lars Eggert <lars.eggert@gmx.net>
-# $FreeBSD: head/devel/p5-Sub-Override/Makefile 439513 2017-04-27 07:03:11Z sunpoet $
+# $FreeBSD: head/devel/p5-Sub-Override/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Sub-Override
 PORTVERSION=	0.09
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for easily overriding subroutines
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Fatal>=0.010:devel/p5-Test-Fatal

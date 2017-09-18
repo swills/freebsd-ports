@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Readonly/Makefile 416736 2016-06-11 17:55:06Z adamw $
+# $FreeBSD: head/devel/p5-Readonly/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Readonly
 PORTVERSION=	2.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Facility for creating read-only scalars, arrays, hashes
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

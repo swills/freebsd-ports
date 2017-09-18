@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Module-Starter-PBP/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/devel/p5-Module-Starter-PBP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Module-Starter-PBP
 PORTVERSION=	0.0.3
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Create a module as recommended in "Perl Best Practices"
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Module-Starter>=0:devel/p5-Module-Starter

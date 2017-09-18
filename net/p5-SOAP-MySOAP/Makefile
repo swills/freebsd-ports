@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/p5-SOAP-MySOAP/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-SOAP-MySOAP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	SOAP-MySOAP
 PORTVERSION=	0.023
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Extremely basic SOAP client module
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww

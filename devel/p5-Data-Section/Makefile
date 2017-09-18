@@ -1,5 +1,5 @@
 # Created by: Andrey Kostenko <andrey@kostenko.name>
-# $FreeBSD: head/devel/p5-Data-Section/Makefile 445453 2017-07-10 18:25:25Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-Section/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Section
 PORTVERSION=	0.200007
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Read multiple hunks of data out of your DATA section
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

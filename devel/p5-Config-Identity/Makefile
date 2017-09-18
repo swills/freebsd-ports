@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Config-Identity/Makefile 426665 2016-11-20 23:55:20Z sunpoet $
+# $FreeBSD: head/devel/p5-Config-Identity/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Config-Identity
 PORTVERSION=	0.0019
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Load (and optionally decrypt via GnuPG) user/pass identity information
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-HomeDir>=0:devel/p5-File-HomeDir \

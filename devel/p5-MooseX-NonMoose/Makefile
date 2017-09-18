@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-NonMoose/Makefile 447704 2017-08-10 18:23:50Z sunpoet $
+# $FreeBSD: head/devel/p5-MooseX-NonMoose/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooseX-NonMoose
 PORTVERSION=	0.26
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Easy subclassing of non-Moose classes
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

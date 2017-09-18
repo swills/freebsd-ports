@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Data-Serializer/Makefile 403628 2015-12-12 18:58:00Z adamw $
+# $FreeBSD: head/devel/p5-Data-Serializer/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Serializer
 PORTVERSION=	0.60
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Modules that serialize data structures
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

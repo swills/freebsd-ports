@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/p5-App-Genpass/Makefile 425504 2016-11-06 16:46:10Z sunpoet $
+# $FreeBSD: head/security/p5-App-Genpass/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	App-Genpass
 PORTVERSION=	2.401
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Quickly and easily create secure passwords
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

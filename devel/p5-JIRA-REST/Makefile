@@ -1,5 +1,5 @@
 # Created by: Brad Davis <brd@FreeBSD.org>
-# $FreeBSD: head/devel/p5-JIRA-REST/Makefile 442166 2017-05-31 13:09:57Z sunpoet $
+# $FreeBSD: head/devel/p5-JIRA-REST/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	JIRA-REST
 PORTVERSION=	0.018
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Extended interface to JIRA REST API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

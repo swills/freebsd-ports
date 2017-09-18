@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Perl-Critic-Swift/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Perl-Critic-Swift/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Perl-Critic-Swift
 PORTVERSION=	1.0.3
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	A set of additional policies for Perl::Critic
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Perl-Critic>=0:textproc/p5-Perl-Critic

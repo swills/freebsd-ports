@@ -1,5 +1,5 @@
 # Created by: Daniel B. Hemmerich
-# $FreeBSD: head/www/p5-CGI-Upload/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-CGI-Upload/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CGI-Upload
 PORTVERSION=	1.11
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	CGI class for handling browser file uploads
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTTP-BrowserDetect>=0:www/p5-HTTP-BrowserDetect \

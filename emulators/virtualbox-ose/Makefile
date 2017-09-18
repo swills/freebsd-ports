@@ -1,9 +1,8 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/emulators/virtualbox-ose/Makefile 449436 2017-09-08 01:12:56Z jkim $
+# $FreeBSD: head/emulators/virtualbox-ose/Makefile 449889 2017-09-15 06:34:50Z jkim $
 
 PORTNAME=	virtualbox-ose
-PORTVERSION=	5.1.26
-PORTREVISION=	1
+PORTVERSION=	5.1.28
 CATEGORIES=	emulators
 MASTER_SITES=	http://download.virtualbox.org/virtualbox/${PORTVERSION}/
 DISTFILES=	VirtualBox-${PORTVERSION}${EXTRACT_SUFX} ${GUESTADDITIONS}

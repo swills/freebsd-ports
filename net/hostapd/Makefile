@@ -1,12 +1,12 @@
-# Created by: Craig Leres <leres@ee.lbl.gov>
-# $FreeBSD: head/net/hostapd/Makefile 436625 2017-03-21 17:50:35Z krion $
+# Created by: Craig Leres <leres@FreeBSD.org>
+# $FreeBSD: head/net/hostapd/Makefile 449916 2017-09-15 18:18:26Z leres $
 
 PORTNAME=	hostapd
 PORTVERSION=	2.6
 CATEGORIES=	net
 MASTER_SITES=	http://w1.fi/releases/
 
-MAINTAINER=	leres@ee.lbl.gov
+MAINTAINER=	leres@FreeBSD.org
 COMMENT=	IEEE 802.11 AP, IEEE 802.1X/WPA/WPA2/EAP/RADIUS Authenticator
 
 LICENSE=	BSD3CLAUSE

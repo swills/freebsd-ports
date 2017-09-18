@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-corefines/Makefile 446687 2017-07-26 18:21:13Z sunpoet $
+# $FreeBSD: head/devel/rubygem-corefines/Makefile 449955 2017-09-16 09:00:05Z sunpoet $
 
 PORTNAME=	corefines
-PORTVERSION=	1.10.0
+PORTVERSION=	1.11.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

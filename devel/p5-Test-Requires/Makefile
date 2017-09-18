@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Test-Requires/Makefile 394936 2015-08-21 11:39:26Z kuriyama $
+# $FreeBSD: head/devel/p5-Test-Requires/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Requires
 PORTVERSION=	0.10
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for checking to see if the module can be loaded
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=	perl5

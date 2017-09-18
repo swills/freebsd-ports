@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/p5-Chart-Gnuplot/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/p5-Chart-Gnuplot/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Chart-Gnuplot
 PORTVERSION=	0.23
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	koue@chaosophia.net
 COMMENT=	Perl module to plot graphs using GNUPLOT on the fly
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	gnuplot:math/gnuplot

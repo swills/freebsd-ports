@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/devel/p5-Parse-ErrorString-Perl/Makefile 447196 2017-08-03 08:00:46Z culot $
+# $FreeBSD: head/devel/p5-Parse-ErrorString-Perl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Parse-ErrorString-Perl
 PORTVERSION=	0.27
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Parse error messages from the Perl interpreter
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-XSAccessor>0:devel/p5-Class-XSAccessor \

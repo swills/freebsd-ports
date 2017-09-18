@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Any-Moose/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Any-Moose/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Any-Moose
 PORTVERSION=	0.26
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for/to use Moose or Mouse modules
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 #TEST_DEPENDS=	p5-Moose>0:devel/p5-Moose

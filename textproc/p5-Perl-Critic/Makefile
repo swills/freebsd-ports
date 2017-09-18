@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/p5-Perl-Critic/Makefile 446333 2017-07-21 17:29:55Z sunpoet $
+# $FreeBSD: head/textproc/p5-Perl-Critic/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Perl-Critic
 PORTVERSION=	1.130
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Critique Perl source for style and standards
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-B-Keywords>=1.05:devel/p5-B-Keywords \

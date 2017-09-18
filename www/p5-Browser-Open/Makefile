@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-Browser-Open/Makefile 398309 2015-10-01 15:56:43Z sunpoet $
+# $FreeBSD: head/www/p5-Browser-Open/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Browser-Open
 PORTVERSION=	0.04
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Open a browser in a given URL
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <mat@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Mojolicious-Plugin-Mail/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Mojolicious-Plugin-Mail/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Mojolicious-Plugin-Mail
 PORTVERSION=	1.5
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Mojolicious plugin to send email
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	${RUN_DEPENDS}

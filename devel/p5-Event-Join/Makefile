@@ -1,5 +1,5 @@
 # Created by: Denis Pokataev <catone@cpan.org>
-# $FreeBSD: head/devel/p5-Event-Join/Makefile 442697 2017-06-05 23:24:17Z sunpoet $
+# $FreeBSD: head/devel/p5-Event-Join/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Event-Join
 PORTVERSION=	0.06
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Join multiple "events" into one
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Moose>=0.94:devel/p5-Moose

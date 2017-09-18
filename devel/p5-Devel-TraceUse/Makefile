@@ -1,5 +1,5 @@
 # Created by: Mauricio Herrera Cuadra <mauricio@arareko.net>
-# $FreeBSD: head/devel/p5-Devel-TraceUse/Makefile 414433 2016-05-02 05:32:39Z pi $
+# $FreeBSD: head/devel/p5-Devel-TraceUse/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Devel-TraceUse
 PORTVERSION=	2.094
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	mauricio@arareko.net
 COMMENT=	This module shows the modules your program loads, recursively
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

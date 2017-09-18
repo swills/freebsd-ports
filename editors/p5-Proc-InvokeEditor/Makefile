@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/p5-Proc-InvokeEditor/Makefile 448118 2017-08-17 15:04:36Z sunpoet $
+# $FreeBSD: head/editors/p5-Proc-InvokeEditor/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Proc-InvokeEditor
 PORTVERSION=	1.13
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for starting a text editor
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/devel/p5-Module-Extract-Use/Makefile 430527 2017-01-04 01:45:07Z wen $
+# $FreeBSD: head/devel/p5-Module-Extract-Use/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Module-Extract-Use
 PORTVERSION=	1.04
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	svysh.fbsd@gmail.com
 COMMENT=	Pull out the modules a module explicitly uses
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Test-Output>0:devel/p5-Test-Output \

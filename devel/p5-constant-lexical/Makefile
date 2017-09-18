@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-constant-lexical/Makefile 445104 2017-07-06 00:02:38Z sunpoet $
+# $FreeBSD: head/devel/p5-constant-lexical/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	constant-lexical
 PORTVERSION=	2.0003
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl pragma to declare lexical compile-time constants
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Lexical-Var>=0:devel/p5-Lexical-Var \

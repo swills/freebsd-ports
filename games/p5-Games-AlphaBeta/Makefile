@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@daltons.ca>
-# $FreeBSD: head/games/p5-Games-AlphaBeta/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/games/p5-Games-AlphaBeta/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Games-AlphaBeta
 PORTVERSION=	0.4.7
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}-v${PORTVERSION}
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Game-tree search with object oriented interface
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

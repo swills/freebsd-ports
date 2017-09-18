@@ -1,5 +1,5 @@
 # Created by: Elvis Chiang <elvis@sslab.cs.ccu.edu.tw>
-# $FreeBSD: head/textproc/p5-Text-VimColor/Makefile 412418 2016-04-02 16:30:12Z adamw $
+# $FreeBSD: head/textproc/p5-Text-VimColor/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-VimColor
 PORTVERSION=	0.26
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ychsiao@ychsiao.org
 COMMENT=	Syntax color text in HTML or XML using Vim
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-ShareDir>=0:devel/p5-File-ShareDir \

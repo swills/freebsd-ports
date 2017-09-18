@@ -1,5 +1,5 @@
 # Created by: nork@FreeBSD.org
-# $FreeBSD: head/textproc/p5-WWW-Google-SiteMap/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-WWW-Google-SiteMap/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WWW-Google-SiteMap
 PORTVERSION=	1.10
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for managing Google SiteMaps
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-XML-Twig>=0:textproc/p5-XML-Twig \

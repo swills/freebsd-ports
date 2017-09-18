@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-Admin-TableInfo/Makefile 428773 2016-12-17 16:11:01Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Admin-TableInfo/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBIx-Admin-TableInfo
 PORTVERSION=	3.03
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Wrapper for all of table_info(), column_info(), *_key_info()
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

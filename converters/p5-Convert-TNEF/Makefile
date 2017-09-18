@@ -1,5 +1,5 @@
 # Created by: roman@xpert.com
-# $FreeBSD: head/converters/p5-Convert-TNEF/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/converters/p5-Convert-TNEF/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Convert-TNEF
 PORTVERSION=	0.18
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module to read TNEF files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-IO-stringy>=0:devel/p5-IO-stringy \

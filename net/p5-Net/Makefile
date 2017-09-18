@@ -1,5 +1,5 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net/Makefile 442385 2017-06-02 15:38:54Z sunpoet $
+# $FreeBSD: head/net/p5-Net/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net
 PORTVERSION=	3.10
@@ -13,10 +13,10 @@ DISTNAME=	libnet-${PORTVERSION}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 modules to access and use network protocols
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/Artistic
-LICENSE_FILE_GPLv1=	${WRKSRC}/Copying
+LICENSE_FILE_GPLv1+ =	${WRKSRC}/Copying
 
 OPTIONS_DEFINE=	SASL SSL
 OPTIONS_DEFAULT=SASL SSL

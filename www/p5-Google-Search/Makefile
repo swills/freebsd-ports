@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/www/p5-Google-Search/Makefile 421693 2016-09-10 14:14:08Z ehaupt $
+# $FreeBSD: head/www/p5-Google-Search/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Google-Search
 PORTVERSION=	0.028
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Interface to the Google AJAX Search API and suggestion API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Any-Moose>=0:devel/p5-Any-Moose \

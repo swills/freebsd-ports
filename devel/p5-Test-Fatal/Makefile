@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-Fatal/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Test-Fatal/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Fatal
 PORTVERSION=	0.014
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Incredibly simple helpers for testing code with exceptions
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Try-Tiny>=0.07:lang/p5-Try-Tiny

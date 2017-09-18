@@ -1,5 +1,5 @@
 # Created by: perlguy@perlguy.com
-# $FreeBSD: head/irc/infobot/Makefile 408381 2016-02-07 11:52:58Z amdmi3 $
+# $FreeBSD: head/irc/infobot/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	infobot
 PORTVERSION=	0.45.3
@@ -11,7 +11,7 @@ MASTER_SITES=	http://www.infobot.org/src/ \
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Bot written in Perl with a rabid AI
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5 shebangfix

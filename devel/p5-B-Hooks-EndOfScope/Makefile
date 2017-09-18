@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-B-Hooks-EndOfScope/Makefile 417217 2016-06-21 15:06:34Z mat $
+# $FreeBSD: head/devel/p5-B-Hooks-EndOfScope/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	B-Hooks-EndOfScope
 PORTVERSION=	0.21
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Execute code after a scope finished compilation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Module-Implementation>=0.05:devel/p5-Module-Implementation \

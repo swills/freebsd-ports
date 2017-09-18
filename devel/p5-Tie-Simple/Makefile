@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Tie-Simple/Makefile 415501 2016-05-19 10:57:35Z amdmi3 $
+# $FreeBSD: head/devel/p5-Tie-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Tie-Simple
 PORTVERSION=	1.04
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Variable ties made easier: much, much, much easier
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

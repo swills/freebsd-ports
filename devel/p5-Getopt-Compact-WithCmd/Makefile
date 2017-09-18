@@ -1,5 +1,5 @@
 # Created by: Kan Sasaki <sasaki@fcc.ad.jp>
-# $FreeBSD: head/devel/p5-Getopt-Compact-WithCmd/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Getopt-Compact-WithCmd/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Getopt-Compact-WithCmd
 PORTVERSION=	0.22
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Sub-command friendly, like Getopt::Compact
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Text-Table>=0:textproc/p5-Text-Table

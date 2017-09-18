@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/security/p5-Authen-Simple-SSH/Makefile 413985 2016-04-25 09:11:36Z sunpoet $
+# $FreeBSD: head/security/p5-Authen-Simple-SSH/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Authen-Simple-SSH
 PORTVERSION=	0.1
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple SSH authentication
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Authen-Simple>=0:security/p5-Authen-Simple \

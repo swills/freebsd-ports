@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/devel/p5-ExtUtils-XSpp/Makefile 435087 2017-02-28 22:49:58Z sunpoet $
+# $FreeBSD: head/devel/p5-ExtUtils-XSpp/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	ExtUtils-XSpp
 PORTVERSION=	0.18
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	XS for C++ in Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Base>=0:devel/p5-Test-Base \

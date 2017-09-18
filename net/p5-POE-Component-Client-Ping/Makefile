@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/net/p5-POE-Component-Client-Ping/Makefile 446215 2017-07-19 18:05:07Z sunpoet $
+# $FreeBSD: head/net/p5-POE-Component-Client-Ping/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Component-Client-Ping
 PORTVERSION=	1.175
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	POE component for non-blocking/concurrent ICMP ping
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-POE>=1.0070:devel/p5-POE

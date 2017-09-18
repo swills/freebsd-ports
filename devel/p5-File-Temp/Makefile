@@ -1,5 +1,5 @@
 # Created by: Johann Visagie <johann@egenetics.com>
-# $FreeBSD: head/devel/p5-File-Temp/Makefile 435089 2017-02-28 22:50:08Z sunpoet $
+# $FreeBSD: head/devel/p5-File-Temp/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Temp
 PORTVERSION=	0.2304
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 module to generate temporary files or directories safely
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

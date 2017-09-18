@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-UNIVERSAL-require/Makefile 389579 2015-06-14 04:35:08Z kuriyama $
+# $FreeBSD: head/devel/p5-UNIVERSAL-require/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	UNIVERSAL-require
 PORTVERSION=	0.18
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl module to require() from a variable
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

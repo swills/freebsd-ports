@@ -1,5 +1,5 @@
 # Created by: Vivek Khera <vivek@khera.org>
-# $FreeBSD: head/textproc/p5-Template-Plugin-Autoformat/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Template-Plugin-Autoformat/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Template-Plugin-Autoformat
 PORTVERSION=	2.77
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	vivek@khera.org
 COMMENT=	Template Toolkit interface to Text::Autoformat module
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Template-Toolkit>=2.22:www/p5-Template-Toolkit \

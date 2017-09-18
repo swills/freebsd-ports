@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/archivers/p5-Archive-Zip/Makefile 420656 2016-08-23 10:23:45Z jadawin $
+# $FreeBSD: head/archivers/p5-Archive-Zip/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Archive-Zip
 PORTVERSION=	1.59
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Create, manipulate, read, and write Zip archive files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-MockModule>=0:devel/p5-Test-MockModule

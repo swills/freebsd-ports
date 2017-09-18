@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-POSIX-strftime-Compiler/Makefile 381447 2015-03-16 21:01:17Z adamw $
+# $FreeBSD: head/devel/p5-POSIX-strftime-Compiler/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POSIX-strftime-Compiler
 PORTVERSION=	0.41
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for glibc compatible strftime for loggers/servers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

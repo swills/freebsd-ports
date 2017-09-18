@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Lingua-EN-Number-IsOrdinal/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Lingua-EN-Number-IsOrdinal/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Lingua-EN-Number-IsOrdinal
 PORTVERSION=	0.05
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to detect if English number is ordinal or cardinal
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

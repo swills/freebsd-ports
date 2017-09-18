@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-ExtUtils-Config/Makefile 444865 2017-07-02 06:47:20Z sunpoet $
+# $FreeBSD: head/devel/p5-ExtUtils-Config/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	ExtUtils-Config
 PORTVERSION=	0.008
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Wrapper for perl configuration
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

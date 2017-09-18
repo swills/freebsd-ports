@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/devel/p5-Test-Strict/Makefile 427789 2016-12-04 14:24:10Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Strict/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Strict
 PORTVERSION=	0.39
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Test and report on use strict/warnings coverage
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

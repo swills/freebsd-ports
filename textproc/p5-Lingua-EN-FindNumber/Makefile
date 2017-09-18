@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Lingua-EN-FindNumber/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Lingua-EN-FindNumber/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Lingua-EN-FindNumber
 PORTVERSION=	1.32
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Locate (written) numbers in English text
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Lingua-EN-Words2Nums>=0:textproc/p5-Lingua-EN-Words2Nums

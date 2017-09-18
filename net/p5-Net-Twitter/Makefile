@@ -1,5 +1,5 @@
 # Created by: clsung
-# $FreeBSD: head/net/p5-Net-Twitter/Makefile 433848 2017-02-11 08:57:25Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Twitter/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Twitter
 PORTVERSION=	4.01042
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interface to twitter.com
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

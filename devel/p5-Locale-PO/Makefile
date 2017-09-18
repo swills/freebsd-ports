@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Locale-PO/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Locale-PO/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Locale-PO
 PORTVERSION=	0.27
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tabthorpe@FreeBSD.org
 COMMENT=	Perl module for manipulating .po entries from GNU gettext
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-File-Slurp>=0:devel/p5-File-Slurp

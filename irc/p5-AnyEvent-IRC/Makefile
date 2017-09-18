@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/irc/p5-AnyEvent-IRC/Makefile 446753 2017-07-27 15:48:03Z sunpoet $
+# $FreeBSD: head/irc/p5-AnyEvent-IRC/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	AnyEvent-IRC
 PORTVERSION=	0.97
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Event system independent IRC protocol module
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-AnyEvent>=0:devel/p5-AnyEvent \

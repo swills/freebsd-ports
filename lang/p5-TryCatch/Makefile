@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/p5-TryCatch/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/lang/p5-TryCatch/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	TryCatch
 PORTVERSION=	1.003002
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	First class try catch semantics for Perl, without source filters
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-ExtUtils-Depends>=0.302:devel/p5-ExtUtils-Depends

@@ -1,5 +1,5 @@
 # Created by: Nicolas Jombart <Nicolas.Jombart@hsc-labs.com>
-# $FreeBSD: head/devel/p5-Parallel-ForkManager/Makefile 430155 2016-12-31 19:51:34Z adamw $
+# $FreeBSD: head/devel/p5-Parallel-ForkManager/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Parallel-ForkManager
 PORTVERSION=	1.19
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple parallel processing fork manager
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Warn>=0:devel/p5-Test-Warn

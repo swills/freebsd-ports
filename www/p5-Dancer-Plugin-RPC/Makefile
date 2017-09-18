@@ -1,5 +1,5 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/www/p5-Dancer-Plugin-RPC/Makefile 420192 2016-08-14 16:16:54Z pi $
+# $FreeBSD: head/www/p5-Dancer-Plugin-RPC/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Dancer-Plugin-RPC
 PORTVERSION=	1.01
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	hvo.pm@xs4all.nl
 COMMENT=	Configure endpoints for XMLRPC and JSONRPC procedures
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

@@ -1,5 +1,5 @@
 # Created by: Donald Burr <dburr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-PathTools/Makefile 405974 2016-01-12 21:42:11Z sunpoet $
+# $FreeBSD: head/devel/p5-PathTools/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	PathTools
 PORTVERSION=	3.6200
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:C|00$||}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for portably manipulating file specifications
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

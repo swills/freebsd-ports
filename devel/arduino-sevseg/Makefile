@@ -1,12 +1,12 @@
-# Created by: Craig Leres <leres@ee.lbl.gov>
-# $FreeBSD: head/devel/arduino-sevseg/Makefile 440159 2017-05-05 13:58:34Z miwi $
+# Created by: Craig Leres <leres@FreeBSD.org>
+# $FreeBSD: head/devel/arduino-sevseg/Makefile 449916 2017-09-15 18:18:26Z leres $
 
 PORTNAME=	arduino-sevseg
 PORTVERSION=	3.3.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
-MAINTAINER=	leres@ee.lbl.gov
+MAINTAINER=	leres@FreeBSD.org
 COMMENT=	Arduino seven segment display library
 
 LICENSE=	APACHE20

@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/textproc/p5-Lingua-Ident/Makefile 397154 2015-09-17 17:11:30Z sunpoet $
+# $FreeBSD: head/textproc/p5-Lingua-Ident/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Lingua-Ident
 PORTVERSION=	1.7
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Statistical language identification
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

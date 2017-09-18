@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-Acme-HTTP/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Acme-HTTP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Acme-HTTP
 PORTVERSION=	0.10
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	High-level access to Net::HTTP::NB and Net::HTTPS::NB
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Net-HTTP>=0:net/p5-Net-HTTP \

@@ -1,5 +1,5 @@
 # Created by: Shaun Amott <shaun@FreeBSD.org>
-# $FreeBSD: head/mail/p5-LMAP-CID2SPF/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-LMAP-CID2SPF/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	LMAP-CID2SPF
 PORTVERSION=	0.9
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Module to convert between Microsoft's Caller-ID and SPF		#'
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser

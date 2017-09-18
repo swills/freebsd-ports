@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-TOML-Parser/Makefile 440423 2017-05-08 12:44:08Z sunpoet $
+# $FreeBSD: head/textproc/p5-TOML-Parser/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	TOML-Parser
 PORTVERSION=	0.10
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Simple toml parser
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Email-Folder-POP3/Makefile 439332 2017-04-24 15:35:43Z sunpoet $
+# $FreeBSD: head/mail/p5-Email-Folder-POP3/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Email-Folder-POP3
 PORTVERSION=	1.015
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Email::Folder access to POP3 folders
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

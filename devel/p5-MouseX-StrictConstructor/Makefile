@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MouseX-StrictConstructor/Makefile 434945 2017-02-27 14:14:23Z sunpoet $
+# $FreeBSD: head/devel/p5-MouseX-StrictConstructor/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MouseX-StrictConstructor
 PORTVERSION=	0.02
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Make your object constructors blow up on unknown attributes
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Mouse>=0.62:devel/p5-Mouse

@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/devel/p5-Memoize-ExpireLRU/Makefile 425536 2016-11-06 16:49:22Z sunpoet $
+# $FreeBSD: head/devel/p5-Memoize-ExpireLRU/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Memoize-ExpireLRU
 PORTVERSION=	0.56
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Expiry plug-in for Memoize that adds LRU cache expiration
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

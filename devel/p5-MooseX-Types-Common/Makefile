@@ -1,5 +1,5 @@
 # Created by: Sahil Tandon <sahil@tandon.net>
-# $FreeBSD: head/devel/p5-MooseX-Types-Common/Makefile 431902 2017-01-19 19:26:26Z sunpoet $
+# $FreeBSD: head/devel/p5-MooseX-Types-Common/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooseX-Types-Common
 PORTVERSION=	0.001014
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Set of commonly-used type constraints that do not ship with p5-Moose
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

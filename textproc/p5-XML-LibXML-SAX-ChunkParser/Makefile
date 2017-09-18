@@ -1,5 +1,5 @@
 # Created by: ports@c0decafe.net
-# $FreeBSD: head/textproc/p5-XML-LibXML-SAX-ChunkParser/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-XML-LibXML-SAX-ChunkParser/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-LibXML-SAX-ChunkParser
 PORTVERSION=	0.00008
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Parse XML chunks via LibXML SAX
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-XML-LibXML>=1.66:textproc/p5-XML-LibXML \

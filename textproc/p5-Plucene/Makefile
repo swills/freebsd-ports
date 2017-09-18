@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Plucene/Makefile 444748 2017-06-30 13:44:52Z sunpoet $
+# $FreeBSD: head/textproc/p5-Plucene/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Plucene
 PORTVERSION=	1.25
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tobez@FreeBSD.org
 COMMENT=	Perl port of the Java Lucene search engine
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Tie-Array-Sorted>=0:devel/p5-Tie-Array-Sorted \

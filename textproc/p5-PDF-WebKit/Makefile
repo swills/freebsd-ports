@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/p5-PDF-WebKit/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-PDF-WebKit/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	PDF-WebKit
 PORTVERSION=	1.0
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Use WebKit to Generate PDFs from HTML
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-IPC-Run>=0:devel/p5-IPC-Run \

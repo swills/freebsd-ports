@@ -1,11 +1,11 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/net/trickle/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/net/trickle/Makefile 449996 2017-09-17 11:59:12Z dbaio $
 
 PORTNAME=	trickle
 PORTVERSION=	1.07
 PORTREVISION=	6
 CATEGORIES=	net
-MASTER_SITES=	http://monkey.org/~marius/trickle/
+MASTER_SITES=	https://monkey.org/~marius/trickle/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Lightweight, portable bandwidth shaper

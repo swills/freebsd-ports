@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/www/p5-Reddit-Client/Makefile 448451 2017-08-21 06:53:26Z ehaupt $
+# $FreeBSD: head/www/p5-Reddit-Client/Makefile 450000 2017-09-17 13:29:42Z ehaupt $
 
 PORTNAME=	Reddit-Client
-PORTVERSION=	1.093
+PORTVERSION=	1.094
 PORTEPOCH=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Methods and object wrappers for objects exposed by the Reddit API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-IO-Capture>=0:devel/p5-IO-Capture \

@@ -1,5 +1,5 @@
 # Created by: Jan-Peter Koopmann <Jan-Peter.Koopmann@seceidos.de>
-# $FreeBSD: head/security/p5-File-Scan-ClamAV/Makefile 435101 2017-02-28 22:51:03Z sunpoet $
+# $FreeBSD: head/security/p5-File-Scan-ClamAV/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Scan-ClamAV
 PORTVERSION=	1.95
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for the clamav virus scanner
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

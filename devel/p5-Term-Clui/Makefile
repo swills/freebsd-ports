@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Term-Clui/Makefile 417207 2016-06-21 13:24:53Z mat $
+# $FreeBSD: head/devel/p5-Term-Clui/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Term-Clui
 PORTVERSION=	1.70
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tj@FreeBSD.org
 COMMENT=	Perl module offering a Command-Line User Interface
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Term-Size>=0:devel/p5-Term-Size \

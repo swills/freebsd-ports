@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Perl-Critic-Moose/Makefile 423613 2016-10-09 16:10:58Z adamw $
+# $FreeBSD: head/textproc/p5-Perl-Critic-Moose/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Perl-Critic-Moose
 PORTVERSION=	1.05
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Policies for Perl::Critic concerned with using Moose
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-namespace-autoclean>=0:devel/p5-namespace-autoclean \

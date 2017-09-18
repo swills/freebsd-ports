@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-IO-File-AtomicChange/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-IO-File-AtomicChange/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IO-File-AtomicChange
 PORTVERSION=	0.05
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to change content of a file atomically
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

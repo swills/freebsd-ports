@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Cwd-Guard/Makefile 413276 2016-04-14 16:38:53Z sunpoet $
+# $FreeBSD: head/devel/p5-Cwd-Guard/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Cwd-Guard
 PORTVERSION=	0.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Temporary changing working directory (chdir)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Requires>=0:devel/p5-Test-Requires

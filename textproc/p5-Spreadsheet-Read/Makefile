@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Spreadsheet-Read/Makefile 438296 2017-04-11 17:42:32Z swills $
+# $FreeBSD: head/textproc/p5-Spreadsheet-Read/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Spreadsheet-Read
 PORTVERSION=	0.70
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Read the data from a spreadsheet
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Text-CSV_XS>=0.71:textproc/p5-Text-CSV_XS \

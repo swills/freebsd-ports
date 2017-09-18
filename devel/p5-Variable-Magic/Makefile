@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/p5-Variable-Magic/Makefile 432443 2017-01-25 16:31:56Z sunpoet $
+# $FreeBSD: head/devel/p5-Variable-Magic/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Variable-Magic
 PORTVERSION=	0.61
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Associate user-defined magic to variables from Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Aaron Straup Cope <ascope@cpan.org>
-# $FreeBSD: head/net/p5-Net-Delicious/Makefile 435854 2017-03-10 22:45:15Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Delicious/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Delicious
 PORTVERSION=	1.14
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	OOP for managing posts on del.icio.us
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Config-Simple>=2:devel/p5-Config-Simple \

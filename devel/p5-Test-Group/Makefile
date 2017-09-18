@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Test-Group/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/devel/p5-Test-Group/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Group
 PORTVERSION=	0.20
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Group together related tests in a test suite
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-Slurp>0:devel/p5-File-Slurp \

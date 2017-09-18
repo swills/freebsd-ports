@@ -1,5 +1,5 @@
 # Created by: Chris Larsen <darth@vader.dk>
-# $FreeBSD: head/databases/p5-SQLite-Work/Makefile 435912 2017-03-11 15:58:13Z sunpoet $
+# $FreeBSD: head/databases/p5-SQLite-Work/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	SQLite-Work
 PORTVERSION=	0.16.01
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:R}${PORTVERSION:E}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Report on and update an SQLite database
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

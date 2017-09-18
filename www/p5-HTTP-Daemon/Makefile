@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-Daemon/Makefile 442239 2017-05-31 17:30:33Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-Daemon/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTTP-Daemon
 PORTVERSION=	6.01
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple HTTP server class
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTTP-Date>=6:www/p5-HTTP-Date \

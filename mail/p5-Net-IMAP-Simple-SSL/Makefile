@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Net-IMAP-Simple-SSL/Makefile 443459 2017-06-12 19:02:12Z sunpoet $
+# $FreeBSD: head/mail/p5-Net-IMAP-Simple-SSL/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-IMAP-Simple-SSL
 PORTVERSION=	1.3
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	SSL support for Net::IMAP::Simple
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-IO-Socket-SSL>=0:security/p5-IO-Socket-SSL \

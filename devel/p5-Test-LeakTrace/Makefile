@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-LeakTrace/Makefile 443836 2017-06-18 17:32:31Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-LeakTrace/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-LeakTrace
 PORTVERSION=	0.16
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Traces memory leaks
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USE_PERL5=	configure

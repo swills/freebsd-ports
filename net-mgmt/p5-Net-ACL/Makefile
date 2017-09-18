@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net-mgmt/p5-Net-ACL/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/p5-Net-ACL/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-ACL
 PORTVERSION=	0.07
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Class representing a generic access-list/route-map
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Cisco-Reconfig>=0.05:net-mgmt/p5-Cisco-Reconfig \

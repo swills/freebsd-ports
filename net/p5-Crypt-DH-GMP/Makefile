@@ -1,5 +1,5 @@
 # Created by: andrey@kostenko.name
-# $FreeBSD: head/net/p5-Crypt-DH-GMP/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Crypt-DH-GMP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-DH-GMP
 PORTVERSION=	0.00012
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Crypt::DH Using GMP Directly
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Devel-CheckLib>=0.40:devel/p5-Devel-CheckLib

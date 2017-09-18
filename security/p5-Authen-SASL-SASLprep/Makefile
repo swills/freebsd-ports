@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/p5-Authen-SASL-SASLprep/Makefile 430113 2016-12-31 13:34:11Z sunpoet $
+# $FreeBSD: head/security/p5-Authen-SASL-SASLprep/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Authen-SASL-SASLprep
 PORTVERSION=	1.100
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Stringprep Profile for User Names and Passwords (RFC 4013)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

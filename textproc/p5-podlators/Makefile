@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-podlators/Makefile 426509 2016-11-19 17:11:51Z sunpoet $
+# $FreeBSD: head/textproc/p5-podlators/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	podlators
 PORTVERSION=	4.09
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Modules to convert and parse POD (Plain Old Documentation)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

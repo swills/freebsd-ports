@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Devel-Declare/Makefile 446816 2017-07-28 10:46:29Z culot $
+# $FreeBSD: head/devel/p5-Devel-Declare/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Devel-Declare
 PORTVERSION=	0.006019
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Adding keywords to Perl, in Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Sub-Name>=0:devel/p5-Sub-Name \

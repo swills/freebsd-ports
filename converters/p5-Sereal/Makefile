@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/p5-Sereal/Makefile 422176 2016-09-15 02:02:48Z adamw $
+# $FreeBSD: head/converters/p5-Sereal/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Sereal
 PORTVERSION=	3.015
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	adamw@FreeBSD.org
 COMMENT=	Perl extension for fast, compact, powerful binary (de-)serialization
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Sereal-Decoder>=${PORTVERSION}:converters/p5-Sereal-Decoder \

@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@daltons.ca>
-# $FreeBSD: head/devel/p5-Data-Table/Makefile 413974 2016-04-25 09:07:17Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-Table/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Table
 PORTVERSION=	1.75
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Data type related to database tables, HTML table displays, etc
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Hash-FieldHash/Makefile 433488 2017-02-06 12:54:46Z sunpoet $
+# $FreeBSD: head/devel/p5-Hash-FieldHash/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Hash-FieldHash
 PORTVERSION=	0.15
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Lightweight field hash implementation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

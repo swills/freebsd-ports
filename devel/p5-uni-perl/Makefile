@@ -1,5 +1,5 @@
 # Created by: Mons Anderson <mons@cpan.org>
-# $FreeBSD: head/devel/p5-uni-perl/Makefile 443807 2017-06-18 05:51:34Z sunpoet $
+# $FreeBSD: head/devel/p5-uni-perl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	uni-perl
 PORTVERSION=	0.91
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	mons@cpan.org
 COMMENT=	Modern perl with Unicode
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-lib-abs>=0.90:devel/p5-lib-abs

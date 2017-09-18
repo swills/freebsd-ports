@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/mail/rubygem-email_reply_trimmer/Makefile 447040 2017-08-01 17:10:17Z sunpoet $
+# $FreeBSD: head/mail/rubygem-email_reply_trimmer/Makefile 449873 2017-09-15 05:50:52Z sunpoet $
 
 PORTNAME=	email_reply_trimmer
-PORTVERSION=	0.1.7
+PORTVERSION=	0.1.8
 CATEGORIES=	mail rubygems
 MASTER_SITES=	RG
 

@@ -1,5 +1,5 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/net/p5-Net-SIP/Makefile 447799 2017-08-11 21:38:41Z sunpoet $
+# $FreeBSD: head/net/p5-Net-SIP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-SIP
 PORTVERSION=	0.810
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Framework SIP (Voice Over IP, RFC3261)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Net-DNS>=0.56:dns/p5-Net-DNS

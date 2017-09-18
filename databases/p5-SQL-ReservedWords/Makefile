@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/databases/p5-SQL-ReservedWords/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-SQL-ReservedWords/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	SQL-ReservedWords
 PORTVERSION=	0.8
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Reserved SQL words by ANSI/ISO
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Sub-Exporter>=0:devel/p5-Sub-Exporter

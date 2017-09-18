@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/p5-Email-Outlook-Message/Makefile 449181 2017-09-03 08:54:37Z pi $
+# $FreeBSD: head/mail/p5-Email-Outlook-Message/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Email-Outlook-Message
 PORTVERSION=	0.919
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Read e-mail messages stored as .msg files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Email-MIME>=0:mail/p5-Email-MIME \

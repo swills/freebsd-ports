@@ -1,10 +1,10 @@
 # Created by: Dominic Fandrey
-# $FreeBSD: head/games/openarena-server/Makefile 430166 2016-12-31 21:07:50Z sunpoet $
+# $FreeBSD: head/games/openarena-server/Makefile 449918 2017-09-15 18:28:31Z adamw $
 
 PORTNAME=	openarena
 PKGNAMESUFFIX=	-server
 
-MAINTAINER=	kami@FreeBSD.org
+MAINTAINER=	kamikaze@bsdforen.de
 COMMENT=	OpenArena dedicated server
 
 LICENSE=	GPLv2

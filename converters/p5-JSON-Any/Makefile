@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/converters/p5-JSON-Any/Makefile 429527 2016-12-26 14:33:04Z mat $
+# $FreeBSD: head/converters/p5-JSON-Any/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	JSON-Any
 PORTVERSION=	1.39
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl Wrapper Class for the various JSON classes
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Cpanel-JSON-XS>=0:converters/p5-Cpanel-JSON-XS \

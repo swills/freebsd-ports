@@ -1,5 +1,5 @@
 # Created by: James Thomason <james@divide.org>
-# $FreeBSD: head/security/p5-Authen-NTLM/Makefile 442232 2017-05-31 17:29:59Z sunpoet $
+# $FreeBSD: head/security/p5-Authen-NTLM/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Authen-NTLM
 PORTVERSION=	1.09
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME:C/.*-//}-${PORTVERSION}
 MAINTAINER=	james@divide.org
 COMMENT=	Perl5 NTLM authentication module
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Digest-HMAC>=0:security/p5-Digest-HMAC

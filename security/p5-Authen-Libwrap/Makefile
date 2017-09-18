@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/security/p5-Authen-Libwrap/Makefile 426504 2016-11-19 17:11:28Z sunpoet $
+# $FreeBSD: head/security/p5-Authen-Libwrap/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Authen-Libwrap
 PORTVERSION=	0.23
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Authen::Libwrap - access to TCP Wrappers library
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Exception>0:devel/p5-Test-Exception

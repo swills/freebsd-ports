@@ -1,5 +1,5 @@
 # Created by: Don Croyle <croyle@gelemna.org>
-# $FreeBSD: head/news/p5-News-Article/Makefile 444800 2017-06-30 22:14:29Z sunpoet $
+# $FreeBSD: head/news/p5-News-Article/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	News-Article
 PORTVERSION=	1.27
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Object for handling Usenet articles in mail or news form
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

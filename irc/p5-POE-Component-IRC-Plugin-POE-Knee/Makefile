@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/irc/p5-POE-Component-IRC-Plugin-POE-Knee/Makefile 434952 2017-02-27 14:14:57Z sunpoet $
+# $FreeBSD: head/irc/p5-POE-Component-IRC-Plugin-POE-Knee/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Component-IRC-Plugin-POE-Knee
 PORTVERSION=	1.12
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	POE::Component::IRC plugin that runs Acme::POE::Knee races
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

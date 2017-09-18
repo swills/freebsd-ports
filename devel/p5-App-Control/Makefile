@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/devel/p5-App-Control/Makefile 386075 2015-05-11 12:04:18Z mat $
+# $FreeBSD: head/devel/p5-App-Control/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	App-Control
 PORTVERSION=	1.02
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Apachectl style control of another script or executable
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

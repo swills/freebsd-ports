@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/databases/p5-SQL-Translator/Makefile 438228 2017-04-11 00:47:29Z sunpoet $
+# $FreeBSD: head/databases/p5-SQL-Translator/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	SQL-Translator
 PORTVERSION=	0.11021
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Manipulate structured data definitions (SQL and more)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Carp-Clan>=0:devel/p5-Carp-Clan \

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/net/p5-Net-OAuth/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Net-OAuth/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-OAuth
 PORTVERSION=	0.28
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Implementation of the OAuth protocol
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Accessor>=0.31:devel/p5-Class-Accessor \

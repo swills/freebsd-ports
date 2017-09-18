@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-NamespaceFactory/Makefile 378171 2015-01-30 17:10:29Z tj $
+# $FreeBSD: head/textproc/p5-XML-NamespaceFactory/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-NamespaceFactory
 PORTVERSION=	1.02
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tj@FreeBSD.org
 COMMENT=	Simple factory objects for SAX namespaced names
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

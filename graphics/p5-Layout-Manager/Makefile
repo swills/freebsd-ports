@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/graphics/p5-Layout-Manager/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/p5-Layout-Manager/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Layout-Manager
 PORTVERSION=	0.35
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	2D Layout Management
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Geometry-Primitive>=0.16:graphics/p5-Geometry-Primitive \

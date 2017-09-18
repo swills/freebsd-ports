@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <mat@FreeBSD.org>
-# $FreeBSD: head/devel/p5-DateTime-TimeZone-LMT/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-DateTime-TimeZone-LMT/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DateTime-TimeZone-LMT
 PORTVERSION=	1.01
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Local Mean Time time zone for DateTime
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DateTime>=0.12:devel/p5-DateTime \

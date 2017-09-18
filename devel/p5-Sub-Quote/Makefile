@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Sub-Quote/Makefile 442865 2017-06-07 19:10:50Z sunpoet $
+# $FreeBSD: head/devel/p5-Sub-Quote/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Sub-Quote
 PORTVERSION=	2.004000
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Efficient generation of subroutines via string eval
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Fatal>=0.003:devel/p5-Test-Fatal

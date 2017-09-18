@@ -1,5 +1,5 @@
-# Created by: Craig Leres <leres@ee.lbl.gov>
-# $FreeBSD: head/devel/arduino-glcd/Makefile 435349 2017-03-03 16:00:19Z mat $
+# Created by: Craig Leres <leres@FreeBSD.org>
+# $FreeBSD: head/devel/arduino-glcd/Makefile 449916 2017-09-15 18:18:26Z leres $
 
 PORTNAME=	arduino-glcd
 PORTVERSION=	3.20111205
@@ -8,7 +8,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://glcd-arduino.googlecode.com/files/
 DISTNAME=	glcd-20111205
 
-MAINTAINER=	leres@ee.lbl.gov
+MAINTAINER=	leres@FreeBSD.org
 COMMENT=	GLCD Graphical LCD Library
 
 LICENSE=	LGPL21

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-LWP-Protocol-https/Makefile 434969 2017-02-27 17:10:09Z sunpoet $
+# $FreeBSD: head/www/p5-LWP-Protocol-https/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	LWP-Protocol-https
 PORTVERSION=	6.07
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Provide https support for LWP::UserAgent
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-IO-Socket-SSL>=1.54:security/p5-IO-Socket-SSL \

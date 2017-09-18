@@ -1,5 +1,5 @@
 # Created by: Wen Heping<wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-System-Command/Makefile 417230 2016-06-21 15:07:23Z mat $
+# $FreeBSD: head/devel/p5-System-Command/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	System-Command
 PORTVERSION=	1.118
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Object for running system commands
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Command>=0:devel/p5-Test-Command \

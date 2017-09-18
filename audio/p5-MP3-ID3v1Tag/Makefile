@@ -1,5 +1,5 @@
 # Created by: Leo Kim <leo@florida.sarang.net>
-# $FreeBSD: head/audio/p5-MP3-ID3v1Tag/Makefile 385807 2015-05-08 17:47:38Z adamw $
+# $FreeBSD: head/audio/p5-MP3-ID3v1Tag/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MP3-ID3v1Tag
 PORTVERSION=	1.11
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Edit ID3v1 Tags from an Audio MPEG Layer 3
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

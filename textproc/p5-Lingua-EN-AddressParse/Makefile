@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Lingua-EN-AddressParse/Makefile 423609 2016-10-09 16:01:48Z adamw $
+# $FreeBSD: head/textproc/p5-Lingua-EN-AddressParse/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Lingua-EN-AddressParse
 PORTVERSION=	1.26
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module to manipulate geographical addresses
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Lingua-EN-NameParse>=1.24:textproc/p5-Lingua-EN-NameParse \

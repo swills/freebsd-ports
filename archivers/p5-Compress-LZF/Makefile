@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/archivers/p5-Compress-LZF/Makefile 433356 2017-02-05 05:31:12Z sunpoet $
+# $FreeBSD: head/archivers/p5-Compress-LZF/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Compress-LZF
 PORTVERSION=	3.80
@@ -11,7 +11,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:S/0$//}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Extremely lightweight Lempel-Ziv-Free compression
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

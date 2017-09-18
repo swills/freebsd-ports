@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-RPC-EPC-Service/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-RPC-EPC-Service/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	RPC-EPC-Service
 PORTVERSION=	0.0.11
@@ -11,7 +11,7 @@ DISTNAME=	${PORTNAME}-v${PORTVERSION}
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for asynchronous remote procedure stack
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

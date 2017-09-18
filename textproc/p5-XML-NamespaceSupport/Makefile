@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-XML-NamespaceSupport/Makefile 437416 2017-04-01 10:52:47Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-NamespaceSupport/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-NamespaceSupport
 PORTVERSION=	1.12
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple generic namespace support class
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

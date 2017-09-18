@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-strictures/Makefile 413619 2016-04-19 01:09:38Z adamw $
+# $FreeBSD: head/devel/p5-strictures/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	strictures
 PORTVERSION=	2.000003
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Turn on strict and make all warnings fatal
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

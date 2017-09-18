@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Carp-Always-Color/Makefile 425505 2016-11-06 16:46:15Z sunpoet $
+# $FreeBSD: head/devel/p5-Carp-Always-Color/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Carp-Always-Color
 PORTVERSION=	0.08
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Carp::Always, but with color
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Philip Paeps <philip@FreeBSD.org>
-# $FreeBSD: head/devel/p5-DateTime-Calendar-Discordian/Makefile 426470 2016-11-19 17:08:52Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime-Calendar-Discordian/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DateTime-Calendar-Discordian
 PORTVERSION=	1.0
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	philip@FreeBSD.org
 COMMENT=	Perl extension for the Discordian Calendar
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

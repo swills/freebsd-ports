@@ -1,5 +1,5 @@
 # Created by: Muhammad Moinur Rahman <bofh@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBICx-Sugar/Makefile 425643 2016-11-07 19:57:36Z pi $
+# $FreeBSD: head/databases/p5-DBICx-Sugar/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBICx-Sugar
 PORTVERSION=	0.0100
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Just some syntax sugar for DBIx::Class
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DBIx-Class>=0:databases/p5-DBIx-Class \

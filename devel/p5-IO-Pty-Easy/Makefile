@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-IO-Pty-Easy/Makefile 417552 2016-06-26 17:14:18Z sunpoet $
+# $FreeBSD: head/devel/p5-IO-Pty-Easy/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IO-Pty-Easy
 PORTVERSION=	0.10
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Easy interface to IO::Pty
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

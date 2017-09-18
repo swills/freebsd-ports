@@ -1,5 +1,5 @@
 # Created by: Motoyuki Kasahara <m-kasahr@sra.co.jp>
-# $FreeBSD: head/japanese/ebnetd/Makefile 427552 2016-12-02 11:58:21Z mat $
+# $FreeBSD: head/japanese/ebnetd/Makefile 449884 2017-09-15 05:52:08Z sunpoet $
 
 PORTNAME=	ebnetd
 PORTVERSION=	1.0
@@ -10,7 +10,8 @@ MASTER_SITES=	ftp://ftp.sra.co.jp/pub/misc/eb/
 MAINTAINER=	yasu@utahime.org
 COMMENT=	Servers for accessing CD-ROM books via TCP/IP
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libeb.so:japanese/eb
 

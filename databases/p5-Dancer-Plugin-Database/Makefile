@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Dancer-Plugin-Database/Makefile 421331 2016-09-04 12:06:22Z wen $
+# $FreeBSD: head/databases/p5-Dancer-Plugin-Database/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Dancer-Plugin-Database
 PORTVERSION=	2.13
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Easy database connections for Dancer applications
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DBI>=0:databases/p5-DBI \

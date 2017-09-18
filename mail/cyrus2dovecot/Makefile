@@ -1,5 +1,5 @@
 # Created by: Vladimir Kondratiev <wulf@mail.mipt.ru>
-# $FreeBSD: head/mail/cyrus2dovecot/Makefile 403913 2015-12-17 17:19:48Z mat $
+# $FreeBSD: head/mail/cyrus2dovecot/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	cyrus2dovecot
 PORTVERSION=	1.2
@@ -11,7 +11,7 @@ EXTRACT_ONLY=
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Convert Cyrus folders to Dovecot
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 PLIST_FILES=	bin/${PORTNAME} man/man1/${PORTNAME}.1.gz

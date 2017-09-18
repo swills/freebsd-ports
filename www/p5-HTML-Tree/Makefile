@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <dima@Chg.RU>
-# $FreeBSD: head/www/p5-HTML-Tree/Makefile 449044 2017-08-31 15:32:18Z sunpoet $
+# $FreeBSD: head/www/p5-HTML-Tree/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-Tree
 PORTVERSION=	5.07
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Collection of modules to manipulate HTML syntax trees
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

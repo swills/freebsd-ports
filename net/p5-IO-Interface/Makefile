@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/net/p5-IO-Interface/Makefile 378629 2015-02-08 03:20:09Z pi $
+# $FreeBSD: head/net/p5-IO-Interface/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IO-Interface
 PORTVERSION=	1.09
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for access to network card configuration information
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

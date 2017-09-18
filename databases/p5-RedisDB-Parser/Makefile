@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-RedisDB-Parser/Makefile 427168 2016-11-26 13:09:08Z kuriyama $
+# $FreeBSD: head/databases/p5-RedisDB-Parser/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	RedisDB-Parser
 PORTVERSION=	2.22
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for Redis protocol parser
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

@@ -1,5 +1,5 @@
 # Created by: Johann Visagie <wjv@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-Twig/Makefile 426985 2016-11-24 00:22:16Z wen $
+# $FreeBSD: head/textproc/p5-XML-Twig/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-Twig
 PORTVERSION=	3.52
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Process huge XML documents by chunks via a tree interface
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTML-Tree>=3.13:www/p5-HTML-Tree \

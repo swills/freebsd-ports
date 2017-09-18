@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Test-Reporter/Makefile 444791 2017-06-30 22:13:45Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Reporter/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Reporter
 PORTVERSION=	1.62
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Sends test results to cpan-testers@perl.org
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

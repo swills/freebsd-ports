@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-GeoIP2/Makefile 440487 2017-05-09 12:56:05Z sunpoet $
+# $FreeBSD: head/net/p5-GeoIP2/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	GeoIP2
 PORTVERSION=	2.003005
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Perl API for MaxMind GeoIP2 web services and databases
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

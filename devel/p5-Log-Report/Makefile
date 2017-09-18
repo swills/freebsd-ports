@@ -1,5 +1,5 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/devel/p5-Log-Report/Makefile 445107 2017-07-06 00:02:56Z sunpoet $
+# $FreeBSD: head/devel/p5-Log-Report/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Log-Report
 PORTVERSION=	1.21
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Report a problem, pluggable handlers and language support
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Devel-GlobalDestruction>=0.09:devel/p5-Devel-GlobalDestruction \

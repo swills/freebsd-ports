@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-AnyEvent-Filesys-Notify/Makefile 427358 2016-11-29 06:59:09Z kuriyama $
+# $FreeBSD: head/devel/p5-AnyEvent-Filesys-Notify/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	AnyEvent-Filesys-Notify
 PORTVERSION=	1.21
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for AnyEvent compat to monitor file/dir changes
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

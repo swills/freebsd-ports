@@ -1,5 +1,5 @@
 # Created by: <hvo.pm@xs4all.nl>
-# $FreeBSD: head/databases/p5-Interchange6-Schema/Makefile 420112 2016-08-11 23:26:10Z pawel $
+# $FreeBSD: head/databases/p5-Interchange6-Schema/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Interchange6-Schema
 PORTVERSION=	0.130
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	hvo.pm@xs4all.nl
 COMMENT=	Database Schema for Interchange 6
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DBIx-Class>=0:databases/p5-DBIx-Class\

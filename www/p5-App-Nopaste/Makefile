@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-App-Nopaste/Makefile 448829 2017-08-27 17:32:04Z sunpoet $
+# $FreeBSD: head/www/p5-App-Nopaste/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	App-Nopaste
 PORTVERSION=	1.011
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Easy access to any pastebin
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

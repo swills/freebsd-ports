@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-Class/Makefile 445900 2017-07-15 17:23:28Z sunpoet $
+# $FreeBSD: head/databases/p5-DBIx-Class/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBIx-Class
 PORTVERSION=	0.082840
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Extensible and flexible object <-> relational mapper
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

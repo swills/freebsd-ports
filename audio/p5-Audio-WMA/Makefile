@@ -1,5 +1,5 @@
 # Created by: Simon Barner <barner@gmx.de>
-# $FreeBSD: head/audio/p5-Audio-WMA/Makefile 385807 2015-05-08 17:47:38Z adamw $
+# $FreeBSD: head/audio/p5-Audio-WMA/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Audio-WMA
 PORTVERSION=	1.3
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Fetch info from WMA audio files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

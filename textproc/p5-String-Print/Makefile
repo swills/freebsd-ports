@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-String-Print/Makefile 445268 2017-07-07 16:33:17Z sunpoet $
+# $FreeBSD: head/textproc/p5-String-Print/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	String-Print
 PORTVERSION=	0.92
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Alternative of printf
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \

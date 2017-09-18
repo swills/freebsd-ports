@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Text-Xslate-Bridge-TT2Like/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Text-Xslate-Bridge-TT2Like/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-Xslate-Bridge-TT2Like
 PORTVERSION=	0.00010
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension of TT2 Variable Method Clone for Text::Xslate
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

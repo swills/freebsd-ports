@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-Appliance-Phrasebook/Makefile 435399 2017-03-04 13:48:40Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Appliance-Phrasebook/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Appliance-Phrasebook
 PORTVERSION=	2.103642
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Network appliance command-line phrasebook
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

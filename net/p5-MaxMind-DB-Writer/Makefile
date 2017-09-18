@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-MaxMind-DB-Writer/Makefile 429016 2016-12-20 18:35:22Z sunpoet $
+# $FreeBSD: head/net/p5-MaxMind-DB-Writer/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MaxMind-DB-Writer
 PORTVERSION=	0.202000
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Create MaxMind DB database files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

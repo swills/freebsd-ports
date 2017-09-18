@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/www/p5-JSON-API/Makefile 436962 2017-03-26 13:42:26Z ehaupt $
+# $FreeBSD: head/www/p5-JSON-API/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	JSON-API
 PORTVERSION=	1.1.0
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Module to interact with a JSON API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-JSON>=2:converters/p5-JSON \

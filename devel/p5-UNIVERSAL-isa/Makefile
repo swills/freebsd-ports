@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-UNIVERSAL-isa/Makefile 389720 2015-06-15 14:43:36Z sunpoet $
+# $FreeBSD: head/devel/p5-UNIVERSAL-isa/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	UNIVERSAL-isa
 PORTVERSION=	1.20150614
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Try to recover from people calling UNIVERSAL::isa as a function
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Moose/Makefile 445683 2017-07-13 18:11:16Z sunpoet $
+# $FreeBSD: head/devel/p5-Moose/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Moose
 PORTVERSION=	2.2006
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Complete modern object system for Perl 5
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 # Do not add p5-Data-Visitor to TEST_DEPENDS to avoid cyclic dependency

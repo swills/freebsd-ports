@@ -1,5 +1,5 @@
 # Created by: Bill "I hate Perl" Fumerola
-# $FreeBSD: head/textproc/p5-Text-Template/Makefile 435037 2017-02-28 09:48:01Z sunpoet $
+# $FreeBSD: head/textproc/p5-Text-Template/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-Template
 PORTVERSION=	1.47
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Expand template text with embedded Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

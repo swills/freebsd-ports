@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Email-Address-XS/Makefile 446673 2017-07-26 18:19:33Z sunpoet $
+# $FreeBSD: head/mail/p5-Email-Address-XS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Email-Address-XS
 PORTVERSION=	1.00
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Parse and format RFC 2822 email addresses and groups
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USE_PERL5=	configure

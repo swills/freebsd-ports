@@ -1,5 +1,5 @@
 # Created by: brix@FreeBSD.org
-# $FreeBSD: head/security/p5-Authen-Passphrase/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-Authen-Passphrase/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Authen-Passphrase
 PORTVERSION=	0.008
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for handling hashed passwords/passphrases as objects
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Authen-DecHpwd>=0:security/p5-Authen-DecHpwd \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 449748 2017-09-13 02:04:45Z zi $
+# $FreeBSD: head/www/Makefile 449983 2017-09-17 04:13:49Z asomers $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1703,6 +1703,7 @@
     SUBDIR += py-pastedeploy
     SUBDIR += py-pastescript
     SUBDIR += py-pelican
+    SUBDIR += py-planet
     SUBDIR += py-plone.alterego
     SUBDIR += py-plone.app.blob
     SUBDIR += py-plone.app.caching
@@ -1834,6 +1835,7 @@
     SUBDIR += py-tmdb3
     SUBDIR += py-tornado
     SUBDIR += py-trello
+    SUBDIR += py-treq
     SUBDIR += py-turbogears2
     SUBDIR += py-tvdb_api
     SUBDIR += py-twistedWeb
@@ -2105,6 +2107,7 @@
     SUBDIR += rubygem-ramaze
     SUBDIR += rubygem-raphael-rails
     SUBDIR += rubygem-rdf
+    SUBDIR += rubygem-rdf-normalize
     SUBDIR += rubygem-redcloth
     SUBDIR += rubygem-redis-rack
     SUBDIR += rubygem-redis-rack1

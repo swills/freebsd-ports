@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/net/p5-Geo-IP/Makefile 418878 2016-07-21 15:42:49Z adamw $
+# $FreeBSD: head/net/p5-Geo-IP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Geo-IP
 PORTVERSION=	1.50
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Gets country name by IP or hostname
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libGeoIP.so:net/GeoIP

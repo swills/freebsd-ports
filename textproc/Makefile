@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 449380 2017-09-06 23:42:09Z tota $
+# $FreeBSD: head/textproc/Makefile 449910 2017-09-15 17:32:31Z jrm $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1510,6 +1510,7 @@
     SUBDIR += rubygem-htmlentities
     SUBDIR += rubygem-ini
     SUBDIR += rubygem-inifile
+    SUBDIR += rubygem-iso-639
     SUBDIR += rubygem-itextomml
     SUBDIR += rubygem-jekyll-assets
     SUBDIR += rubygem-jekyll-feed

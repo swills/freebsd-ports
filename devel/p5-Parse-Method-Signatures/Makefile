@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Parse-Method-Signatures/Makefile 438230 2017-04-11 00:47:39Z sunpoet $
+# $FreeBSD: head/devel/p5-Parse-Method-Signatures/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Parse-Method-Signatures
 PORTVERSION=	1.003019
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Perl6 like method signature parser
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Load>=0.19:devel/p5-Class-Load \

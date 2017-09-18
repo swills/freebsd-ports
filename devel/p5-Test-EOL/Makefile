@@ -1,5 +1,5 @@
 # Created by: milki@rescomp.berkeley.edu
-# $FreeBSD: head/devel/p5-Test-EOL/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Test-EOL/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-EOL
 PORTVERSION=	1.5
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Check the correct line endings in your project
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Pod-Coverage>=1.08:devel/p5-Pod-Coverage \

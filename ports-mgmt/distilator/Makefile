@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/ports-mgmt/distilator/Makefile 428109 2016-12-08 09:08:29Z ehaupt $
+# $FreeBSD: head/ports-mgmt/distilator/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	distilator
 PORTVERSION=	0.3
@@ -10,7 +10,7 @@ MASTER_SITES=	LOCAL/ehaupt
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Command-line script to check the availability of a ports distfiles
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-URI>=1.56:net/p5-URI \

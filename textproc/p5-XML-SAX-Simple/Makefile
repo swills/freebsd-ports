@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-XML-SAX-Simple/Makefile 427395 2016-11-29 18:51:43Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-SAX-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-SAX-Simple
 PORTVERSION=	0.08
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	SAX version of XML::Simple
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

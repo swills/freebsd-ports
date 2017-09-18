@@ -1,5 +1,5 @@
 # Created by: Denis Shaposhnikov <dsh@bamus.cz>
-# $FreeBSD: head/databases/p5-Protocol-CassandraCQL/Makefile 444788 2017-06-30 22:13:30Z sunpoet $
+# $FreeBSD: head/databases/p5-Protocol-CassandraCQL/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Protocol-CassandraCQL
 PORTVERSION=	0.11
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	admins@perceptyx.com
 COMMENT=	Wire protocol support functions for Cassandra CQL3
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

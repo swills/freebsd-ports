@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/textproc/p5-Pod-Escapes/Makefile 376759 2015-01-11 13:29:52Z sunpoet $
+# $FreeBSD: head/textproc/p5-Pod-Escapes/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Pod-Escapes
 PORTVERSION=	1.07
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	For resolving Pod E<...> sequences
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

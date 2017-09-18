@@ -1,5 +1,5 @@
 # Created by: Fernan Aguero <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/www/p5-Catalyst-Plugin-Params-Nested/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-Params-Nested/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Catalyst-Plugin-Params-Nested
 PORTVERSION=	0.05
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Nested params (ala Ruby on Rails or PHP-style param arrays)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-CGI-Expand>=1.06:www/p5-CGI-Expand \

@@ -1,5 +1,5 @@
 # Created by: Yi-Hsuan Hsin <mhsin@mhsin.org>
-# $FreeBSD: head/www/p5-WWW-LongURL/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-LongURL/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WWW-LongURL
 PORTVERSION=	0.05
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	mhsin@mhsin.org
 COMMENT=	Perl interface to the LongURL API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-JSON-Any>0:converters/p5-JSON-Any \

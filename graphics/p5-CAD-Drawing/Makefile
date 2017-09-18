@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/graphics/p5-CAD-Drawing/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/p5-CAD-Drawing/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CAD-Drawing
 PORTVERSION=	0.26
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Methods to create, load, and save vector graphics
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-CAD-Calc>=0:math/p5-CAD-Calc \

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-Pod-ProjectDocs/Makefile 439530 2017-04-27 07:59:50Z sunpoet $
+# $FreeBSD: head/textproc/p5-Pod-ProjectDocs/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Pod-ProjectDocs
 PORTVERSION=	0.48
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Generates CPAN like pod pages
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

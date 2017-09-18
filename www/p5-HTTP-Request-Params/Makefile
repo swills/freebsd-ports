@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/www/p5-HTTP-Request-Params/Makefile 442391 2017-06-02 15:39:23Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-Request-Params/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTTP-Request-Params
 PORTVERSION=	1.02
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Retrieve GET/POST Parameters from HTTP Requests
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-CGI>=3:www/p5-CGI \

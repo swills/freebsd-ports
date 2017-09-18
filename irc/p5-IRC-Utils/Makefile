@@ -1,5 +1,5 @@
 # Created by: TERAMOTO Masahiro <markun@onohara.to>
-# $FreeBSD: head/irc/p5-IRC-Utils/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/irc/p5-IRC-Utils/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IRC-Utils
 PORTVERSION=	0.12
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	markun@onohara.to
 COMMENT=	Common utilities for IRC-related tasks
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

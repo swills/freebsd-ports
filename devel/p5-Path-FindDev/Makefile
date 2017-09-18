@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Path-FindDev/Makefile 444741 2017-06-30 13:44:18Z sunpoet $
+# $FreeBSD: head/devel/p5-Path-FindDev/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Path-FindDev
 PORTVERSION=	0.5.2
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Find a development path in an upper hierarchy
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

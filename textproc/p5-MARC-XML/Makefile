@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-MARC-XML/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-MARC-XML/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MARC-XML
 PORTVERSION=	1.0.3
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	demon@FreeBSD.org
 COMMENT=	Extension to the MARC-Record distribution for working with XML data
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-MARC-Record>=2:textproc/p5-MARC-Record \

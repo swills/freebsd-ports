@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-PPI/Makefile 444199 2017-06-23 21:19:17Z sunpoet $
+# $FreeBSD: head/textproc/p5-PPI/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	PPI
 PORTVERSION=	1.236
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Analyze and manipulate Perl code without using perl itself
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

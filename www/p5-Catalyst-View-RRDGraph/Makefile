@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Catalyst-View-RRDGraph/Makefile 414458 2016-05-02 16:08:56Z zeising $
+# $FreeBSD: head/www/p5-Catalyst-View-RRDGraph/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Catalyst-View-RRDGraph
 PORTVERSION=	0.10
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	RRD graph view class for Catalyst
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.7000:www/p5-Catalyst-Runtime \

@@ -1,5 +1,5 @@
 # Created by: petef@FreeBSD.org
-# $FreeBSD: head/net/p5-File-Rsync/Makefile 413563 2016-04-18 08:46:08Z bofh $
+# $FreeBSD: head/net/p5-File-Rsync/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Rsync
 PORTVERSION=	0.49
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl convenience wrapper for the rsync(1) program
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	rsync:net/rsync \

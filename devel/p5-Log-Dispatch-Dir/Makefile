@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Log-Dispatch-Dir/Makefile 445619 2017-07-13 00:00:10Z sunpoet $
+# $FreeBSD: head/devel/p5-Log-Dispatch-Dir/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Log-Dispatch-Dir
 PORTVERSION=	0.15
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Log messages to separate files in a directory, with rotate options
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: milki <milki@rescomp.berkeley.edu>
-# $FreeBSD: head/textproc/p5-Hailo/Makefile 435061 2017-02-28 14:58:07Z sunpoet $
+# $FreeBSD: head/textproc/p5-Hailo/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Hailo
 PORTVERSION=	0.72
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Pluggable Markov engine analogous to MegaHAL
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

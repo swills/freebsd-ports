@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/p5-XML-MyXML/Makefile 431381 2017-01-13 14:44:03Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-MyXML/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-MyXML
 PORTVERSION=	0.9407
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple-to-use XML module parsing and creating XML documents
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 PORTSCOUT=	skipv:0.098061

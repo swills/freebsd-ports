@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Mock-Quick/Makefile 417235 2016-06-21 15:07:41Z mat $
+# $FreeBSD: head/devel/p5-Mock-Quick/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Mock-Quick
 PORTVERSION=	1.111
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Quickly mock objects and classes
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Exporter-Declare>=0.103:devel/p5-Exporter-Declare

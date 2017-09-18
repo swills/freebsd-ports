@@ -1,5 +1,5 @@
 # Created by: Takuya Tsuchida <tsucchi@cpan.org>
-# $FreeBSD: head/devel/p5-Test-Module-Used/Makefile 444742 2017-06-30 13:44:23Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Module-Used/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Module-Used
 PORTVERSION=	0.2.3
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tsucchi@cpan.org
 COMMENT=	Test required module is really used and vice versa
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-List-MoreUtils>=0.24:lang/p5-List-MoreUtils \

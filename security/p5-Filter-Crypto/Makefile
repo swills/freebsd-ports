@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/security/p5-Filter-Crypto/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/security/p5-Filter-Crypto/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Filter-Crypto
 PORTVERSION=	2.07
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Create runnable Perl files encrypted with OpenSSL libcrypto
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-PAR-Packer>=0:devel/p5-PAR-Packer

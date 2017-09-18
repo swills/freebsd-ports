@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/editors/p5-Padre/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/editors/p5-Padre/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Padre
 PORTVERSION=	1.00
@@ -12,10 +12,10 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${WXSC_DISTFILE}:wxsc
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl Application Development and Refactoring Environment
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/Artistic
-LICENSE_FILE_GPLv1=	${WRKSRC}/COPYING
+LICENSE_FILE_GPLv1+ =	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	p5-Algorithm-Diff>=1.19:devel/p5-Algorithm-Diff \
 		p5-App-cpanminus>=0.9923:devel/p5-App-cpanminus \

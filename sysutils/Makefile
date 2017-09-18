@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 449808 2017-09-13 17:48:05Z jlaffaye $
+# $FreeBSD: head/sysutils/Makefile 449946 2017-09-16 07:10:37Z tcberner $
 #
 
     COMMENT = System utilities
@@ -312,7 +312,7 @@
     SUBDIR += ffs2recov
     SUBDIR += file
     SUBDIR += filedupe
-    SUBDIR += filelight-kde4
+    SUBDIR += filelight
     SUBDIR += fileprune
     SUBDIR += fileschanged
     SUBDIR += filetype

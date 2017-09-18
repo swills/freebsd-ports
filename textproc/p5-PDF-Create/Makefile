@@ -1,5 +1,5 @@
 # Created by: petef@databits.net
-# $FreeBSD: head/textproc/p5-PDF-Create/Makefile 421914 2016-09-12 08:58:56Z jadawin $
+# $FreeBSD: head/textproc/p5-PDF-Create/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	PDF-Create
 PORTVERSION=	1.35
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	jadawin@FreeBSD.org
 COMMENT=	Perl script to convert text files to PDF files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-ShareDir-Install>=0.10:devel/p5-File-ShareDir-Install

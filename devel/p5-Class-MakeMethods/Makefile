@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/devel/p5-Class-MakeMethods/Makefile 441933 2017-05-28 23:15:22Z sunpoet $
+# $FreeBSD: head/devel/p5-Class-MakeMethods/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Class-MakeMethods
 PORTVERSION=	1.010
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:C/0$//}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Generate common types of methods
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

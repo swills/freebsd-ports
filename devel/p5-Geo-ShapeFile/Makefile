@@ -1,5 +1,5 @@
 # Created by: estith
-# $FreeBSD: head/devel/p5-Geo-ShapeFile/Makefile 446830 2017-07-28 13:08:17Z culot $
+# $FreeBSD: head/devel/p5-Geo-ShapeFile/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Geo-ShapeFile
 PORTVERSION=	2.64
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Extension for handling ESRI GIS Shapefiles
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Tree-R>0:devel/p5-Tree-R \

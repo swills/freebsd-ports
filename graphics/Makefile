@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 449705 2017-09-12 19:22:01Z cy $
+# $FreeBSD: head/graphics/Makefile 449993 2017-09-17 11:32:27Z dbaio $
 #
 
     COMMENT = Graphics tools and libraries
@@ -862,6 +862,7 @@
     SUBDIR += py-graph
     SUBDIR += py-graph-core
     SUBDIR += py-graph-dot
+    SUBDIR += py-graphviz
     SUBDIR += py-graphy
     SUBDIR += py-gvgen
     SUBDIR += py-imageio

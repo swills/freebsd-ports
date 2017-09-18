@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Ouch/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Ouch/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Ouch
 PORTVERSION=	0.0409
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for exceptions that don't hurt
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Trap>=0:devel/p5-Test-Trap

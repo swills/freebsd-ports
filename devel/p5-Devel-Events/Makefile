@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Devel-Events/Makefile 442342 2017-06-01 23:51:07Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-Events/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Devel-Events
 PORTVERSION=	0.08
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 module providing an extensible instrumentation framework
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Moose>=0.33:devel/p5-Moose \

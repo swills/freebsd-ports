@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Prime-XS/Makefile 425533 2016-11-06 16:48:26Z sunpoet $
+# $FreeBSD: head/math/p5-Math-Prime-XS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-Prime-XS
 PORTVERSION=	0.27
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Detect and calculate prime numbers with deterministic tests
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Params-Validate>=0:devel/p5-Params-Validate \

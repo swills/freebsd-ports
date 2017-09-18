@@ -1,5 +1,5 @@
 # Created by: clsung
-# $FreeBSD: head/devel/p5-Module-Starter/Makefile 447798 2017-08-11 21:38:36Z sunpoet $
+# $FreeBSD: head/devel/p5-Module-Starter/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Module-Starter
 PORTVERSION=	1.73
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple starter kit for any Perl module
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

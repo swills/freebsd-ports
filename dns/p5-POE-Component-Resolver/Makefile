@@ -1,5 +1,5 @@
 # Created by: Jase Thew <freebsd@beardz.net>
-# $FreeBSD: head/dns/p5-POE-Component-Resolver/Makefile 438232 2017-04-11 00:47:49Z sunpoet $
+# $FreeBSD: head/dns/p5-POE-Component-Resolver/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Component-Resolver
 PORTVERSION=	0.921
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Non-blocking getaddrinfo() resolver
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

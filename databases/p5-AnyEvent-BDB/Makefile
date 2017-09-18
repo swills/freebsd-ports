@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/p5-AnyEvent-BDB/Makefile 435395 2017-03-04 13:48:22Z sunpoet $
+# $FreeBSD: head/databases/p5-AnyEvent-BDB/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	AnyEvent-BDB
 PORTVERSION=	1.1
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Truly asynchronous Berkeley DB access
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-AnyEvent>=3.81:devel/p5-AnyEvent \

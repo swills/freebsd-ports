@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/textproc/p5-Text-QRCode/Makefile 423871 2016-10-12 15:49:20Z adamw $
+# $FreeBSD: head/textproc/p5-Text-QRCode/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-QRCode
 PORTVERSION=	0.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Generate text based QR Code
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libqrencode.so:graphics/libqrencode

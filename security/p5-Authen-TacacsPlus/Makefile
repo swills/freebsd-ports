@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/security/p5-Authen-TacacsPlus/Makefile 433368 2017-02-05 05:32:05Z sunpoet $
+# $FreeBSD: head/security/p5-Authen-TacacsPlus/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Authen-TacacsPlus
 PORTVERSION=	0.26
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module that provides authentication using a tacacs+ server
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

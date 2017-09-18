@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/www/p5-Apache-AuthCookie/Makefile 446924 2017-07-30 13:13:05Z sunpoet $
+# $FreeBSD: head/www/p5-Apache-AuthCookie/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Apache-AuthCookie
 PORTVERSION=	3.27
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module to provide custom forms for reauthentication
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

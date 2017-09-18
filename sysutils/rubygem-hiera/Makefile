@@ -1,8 +1,8 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/sysutils/rubygem-hiera/Makefile 444597 2017-06-28 15:43:50Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-hiera/Makefile 449868 2017-09-14 23:49:25Z sunpoet $
 
 PORTNAME=	hiera
-PORTVERSION=	3.4.0
+PORTVERSION=	3.4.1
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 

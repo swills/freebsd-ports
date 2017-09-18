@@ -1,5 +1,5 @@
 # Created by: Eric Stith
-# $FreeBSD: head/graphics/p5-Geo-Proj4/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/p5-Geo-Proj4/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Geo-Proj4
 PORTVERSION=	1.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Perl cartographic projections wrapper for Proj library
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libproj.so:graphics/proj

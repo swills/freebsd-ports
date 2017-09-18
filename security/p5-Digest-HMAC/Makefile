@@ -1,5 +1,5 @@
 # Created by: nork@cityfujisawa.ne.jp
-# $FreeBSD: head/security/p5-Digest-HMAC/Makefile 442234 2017-05-31 17:30:09Z sunpoet $
+# $FreeBSD: head/security/p5-Digest-HMAC/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Digest-HMAC
 PORTVERSION=	1.03
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 interface to HMAC Message-Digest Algorithms
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

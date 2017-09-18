@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-RandomResults/Makefile 375378 2014-12-24 00:14:11Z bofh $
+# $FreeBSD: head/devel/p5-Test-RandomResults/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-RandomResults
 PORTVERSION=	0.03
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Test non-deterministic functions
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

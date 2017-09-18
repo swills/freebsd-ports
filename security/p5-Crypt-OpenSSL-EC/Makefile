@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/security/p5-Crypt-OpenSSL-EC/Makefile 442429 2017-06-02 18:13:50Z sunpoet $
+# $FreeBSD: head/security/p5-Crypt-OpenSSL-EC/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-OpenSSL-EC
 PORTVERSION=	1.31
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for OpenSSL EC (Elliptic Curves) library
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Crypt-OpenSSL-Bignum>=0.04:security/p5-Crypt-OpenSSL-Bignum

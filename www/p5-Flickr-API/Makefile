@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/www/p5-Flickr-API/Makefile 424704 2016-10-26 14:02:07Z jadawin $
+# $FreeBSD: head/www/p5-Flickr-API/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Flickr-API
 PORTVERSION=	1.28
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interface to the Flickr API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTTP-Message>=1.56:www/p5-HTTP-Message \

@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/mail/p5-URI-imaps/Makefile 438014 2017-04-08 10:34:56Z sunpoet $
+# $FreeBSD: head/mail/p5-URI-imaps/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	URI-imaps
 PORTVERSION=	1.03
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Support IMAPS URI
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-URI>=0:net/p5-URI

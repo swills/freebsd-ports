@@ -1,5 +1,5 @@
 # Created by: gebhart@secnetix.de
-# $FreeBSD: head/net/p5-Kafka/Makefile 438236 2017-04-11 00:48:08Z sunpoet $
+# $FreeBSD: head/net/p5-Kafka/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Kafka
 PORTVERSION=	0.8010
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	gebhart@secnetix.de
 COMMENT=	Apache Kafka interface for Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Compress-Snappy>=0:archivers/p5-Compress-Snappy \

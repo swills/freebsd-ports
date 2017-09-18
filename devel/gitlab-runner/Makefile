@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/gitlab-runner/Makefile 446299 2017-07-20 22:45:25Z swills $
+# $FreeBSD: head/devel/gitlab-runner/Makefile 449979 2017-09-17 01:34:38Z swills $
 
 PORTNAME=	gitlab-runner
-PORTVERSION=	9.3.0
+PORTVERSION=	9.5.0
 CATEGORIES=	devel
 MASTER_SITES=	\
 		https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/repository/archive.tar.bz2?ref=v${PORTVERSION}&dummy=/ \
@@ -24,9 +24,9 @@ RUN_DEPENDS=	ca_root_nss>=0:security/ca_root_nss \
 		git:devel/git
 
 USES=		tar:bz2
-GITHASH=	3df822b2c6e3b083986002bb9f012599bd74f6e9
-GITREV=		3df822b
-GITBRANCH=	9-3-stable
+GITHASH=	413da38a72634601bf435f6215d6669cd5a4e40e
+GITREV=		413da38
+GITBRANCH=	9-5-stable
 WRKSRC=		${WRKDIR}/gitlab-ci-multi-runner-v${PORTVERSION}-${GITHASH}
 
 PLIST_FILES=	bin/gitlab-runner

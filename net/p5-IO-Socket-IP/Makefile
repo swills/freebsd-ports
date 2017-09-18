@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-IO-Socket-IP/Makefile 435617 2017-03-07 17:02:22Z sunpoet $
+# $FreeBSD: head/net/p5-IO-Socket-IP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IO-Socket-IP
 PORTVERSION=	0.39
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Drop-in replacement for IO::Socket::INET supporting IPv4 and IPv6
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Alexander Zhuravlev <zaa@zaa.pp.ru>
-# $FreeBSD: head/mail/p5-Mail-DeliveryStatus-BounceParser/Makefile 435095 2017-02-28 22:50:37Z sunpoet $
+# $FreeBSD: head/mail/p5-Mail-DeliveryStatus-BounceParser/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Mail-DeliveryStatus-BounceParser
 PORTVERSION=	1.542
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension to analyze bounce messages
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

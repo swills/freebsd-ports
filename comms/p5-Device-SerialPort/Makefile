@@ -1,5 +1,5 @@
 # Created by: Nick Sayer <nsayer@FreeBSD.org>
-# $FreeBSD: head/comms/p5-Device-SerialPort/Makefile 433363 2017-02-05 05:31:42Z sunpoet $
+# $FreeBSD: head/comms/p5-Device-SerialPort/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Device-SerialPort
 PORTVERSION=	1.040000
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:C/0+$//}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 module for simple serial port control
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

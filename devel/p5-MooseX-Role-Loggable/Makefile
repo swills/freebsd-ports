@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-Role-Loggable/Makefile 434035 2017-02-13 19:02:23Z sunpoet $
+# $FreeBSD: head/devel/p5-MooseX-Role-Loggable/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooseX-Role-Loggable
 PORTVERSION=	0.114
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Extensive, yet simple, logging role using Log::Dispatchouli
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

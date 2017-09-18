@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/p5-Net-UPS/Makefile 446554 2017-07-25 02:16:05Z tj $
+# $FreeBSD: head/www/p5-Net-UPS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-UPS
 PORTVERSION=	0.16
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tj@FreeBSD.org
 COMMENT=	Perl Client library for UPS XML Shipping API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-IO-Socket-SSL>=0:security/p5-IO-Socket-SSL \

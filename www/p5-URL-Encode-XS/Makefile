@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/www/p5-URL-Encode-XS/Makefile 379870 2015-02-25 01:53:35Z adamw $
+# $FreeBSD: head/www/p5-URL-Encode-XS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	URL-Encode-XS
 PORTVERSION=	0.03
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	XS implementation of application/x-www-form-urlencoded encoding
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

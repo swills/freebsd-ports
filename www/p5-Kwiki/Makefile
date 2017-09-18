@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/www/p5-Kwiki/Makefile 404532 2015-12-26 16:33:11Z amdmi3 $
+# $FreeBSD: head/www/p5-Kwiki/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Kwiki
 PORTVERSION=	0.39
@@ -13,7 +13,7 @@ DISTNAME=	kwiki-trunk-20070327
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Kwiki Wiki Building Framework
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		shebangfix

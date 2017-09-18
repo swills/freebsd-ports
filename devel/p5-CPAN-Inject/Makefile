@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/devel/p5-CPAN-Inject/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-CPAN-Inject/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CPAN-Inject
 PORTVERSION=	1.14
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Base class for injecting distributions into CPAN sources
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-chmod>=0.30:devel/p5-File-chmod \

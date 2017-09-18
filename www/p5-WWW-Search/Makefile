@@ -1,5 +1,5 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/www/p5-WWW-Search/Makefile 439889 2017-05-01 12:47:20Z sunpoet $
+# $FreeBSD: head/www/p5-WWW-Search/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WWW-Search
 PORTVERSION=	2.517
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 module for WWW searches
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Bit-Vector>=0:math/p5-Bit-Vector \

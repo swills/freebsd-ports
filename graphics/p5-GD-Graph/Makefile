@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <dima@Chg.RU>
-# $FreeBSD: head/graphics/p5-GD-Graph/Makefile 426969 2016-11-23 20:05:46Z sunpoet $
+# $FreeBSD: head/graphics/p5-GD-Graph/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	GD-Graph
 PORTVERSION=	1.54
@@ -11,7 +11,7 @@ DISTNAME=	GDGraph-${PORTVERSION}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Graph plotting module for perl5
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-GD>=0:graphics/p5-GD \

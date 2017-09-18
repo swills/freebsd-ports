@@ -1,5 +1,5 @@
 # Created by: clsung
-# $FreeBSD: head/www/p5-HTML-TagParser/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/www/p5-HTML-TagParser/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-TagParser
 PORTVERSION=	0.20
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Yet another HTML tag parser by pure Perl implementation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

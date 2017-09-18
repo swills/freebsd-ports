@@ -1,11 +1,11 @@
-# $FreeBSD: head/x11-fonts/ohsnap/Makefile 447027 2017-08-01 16:39:29Z tcberner $
+# $FreeBSD: head/x11-fonts/ohsnap/Makefile 449943 2017-09-16 05:43:01Z tcberner $
 
 PORTNAME=	ohsnap
 PORTVERSION=	1.8.0
 CATEGORIES=	x11-fonts
 MASTER_SITES=	SF/osnapfont/
 
-MAINTAINER=	lebarondemerde@gmx.com
+MAINTAINER=	lbdm@privacychain.ch
 COMMENT=	Monospaced font based on Artwiz Snap
 
 LICENSE=	GPLv2

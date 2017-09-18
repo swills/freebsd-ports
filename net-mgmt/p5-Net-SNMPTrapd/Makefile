@@ -1,5 +1,5 @@
 # Created by: Hung-Yi Chen <gaod@hychen.org>
-# $FreeBSD: head/net-mgmt/p5-Net-SNMPTrapd/Makefile 432759 2017-01-29 15:38:41Z amdmi3 $
+# $FreeBSD: head/net-mgmt/p5-Net-SNMPTrapd/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-SNMPTrapd
 PORTVERSION=	0.17
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	gaod@hychen.org
 COMMENT=	SNMP Trap Listener in Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Convert-ASN1>=0.22:converters/p5-Convert-ASN1

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/devel/p5-Module-Version/Makefile 401637 2015-11-15 03:01:34Z sunpoet $
+# $FreeBSD: head/devel/p5-Module-Version/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Module-Version
 PORTVERSION=	0.12
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Get module versions
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

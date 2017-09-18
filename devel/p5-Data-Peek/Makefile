@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Data-Peek/Makefile 446679 2017-07-26 18:20:30Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-Peek/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Peek
 PORTVERSION=	0.47
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Collection of low-level debug facilities
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-NoWarnings>=0:devel/p5-Test-NoWarnings

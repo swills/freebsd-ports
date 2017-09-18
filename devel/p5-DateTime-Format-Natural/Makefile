@@ -1,5 +1,5 @@
 # Created by: Timur I. Bakeyev <bat@cpan.org>
-# $FreeBSD: head/devel/p5-DateTime-Format-Natural/Makefile 441446 2017-05-22 11:15:50Z bofh $
+# $FreeBSD: head/devel/p5-DateTime-Format-Natural/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DateTime-Format-Natural
 PORTVERSION=	1.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Create machine readable date/time with natural parsing logic
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-boolean>=0:devel/p5-boolean \

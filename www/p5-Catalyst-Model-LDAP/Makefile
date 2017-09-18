@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Catalyst-Model-LDAP/Makefile 449142 2017-09-02 14:23:59Z sunpoet $
+# $FreeBSD: head/www/p5-Catalyst-Model-LDAP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Catalyst-Model-LDAP
 PORTVERSION=	0.20
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	LDAP model class for Catalyst
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

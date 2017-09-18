@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/www/p5-Apache-AuthTicket/Makefile 446925 2017-07-30 13:13:10Z sunpoet $
+# $FreeBSD: head/www/p5-Apache-AuthTicket/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Apache-AuthTicket
 PORTVERSION=	0.94
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl modules that implement a cookie-based authentication system
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

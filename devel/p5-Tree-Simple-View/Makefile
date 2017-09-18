@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@daltons.ca>
-# $FreeBSD: head/devel/p5-Tree-Simple-View/Makefile 439636 2017-04-28 20:25:14Z sunpoet $
+# $FreeBSD: head/devel/p5-Tree-Simple-View/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Tree-Simple-View
 PORTVERSION=	0.18.0002
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:R}${PORTVERSION:E}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Set of classes for viewing Tree::Simple hierarchies
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Throwable>=0.10:devel/p5-Class-Throwable \

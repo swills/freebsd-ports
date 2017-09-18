@@ -1,5 +1,5 @@
 # Created by: Wen Heping<wen@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-BibTeX-Parser/Makefile 436460 2017-03-19 00:52:18Z wen $
+# $FreeBSD: head/textproc/p5-BibTeX-Parser/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	BibTeX-Parser
 PORTVERSION=	1.00
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Pure perl BibTeX parser
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

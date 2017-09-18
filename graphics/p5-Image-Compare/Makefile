@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/graphics/p5-Image-Compare/Makefile 433928 2017-02-12 08:12:50Z sunpoet $
+# $FreeBSD: head/graphics/p5-Image-Compare/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Image-Compare
 PORTVERSION=	1.03
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Compare two images in a variety of ways
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Imager>=0:graphics/p5-Imager \

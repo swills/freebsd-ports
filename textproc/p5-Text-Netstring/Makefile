@@ -1,5 +1,5 @@
 # Created by: James Raftery <james@now.ie>
-# $FreeBSD: head/textproc/p5-Text-Netstring/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/textproc/p5-Text-Netstring/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-Netstring
 PORTVERSION=	0.07
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	james@now.ie
 COMMENT=	Perl module to create and manipulate netstring encoded strings
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

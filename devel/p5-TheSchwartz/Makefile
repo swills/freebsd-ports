@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-TheSchwartz/Makefile 435920 2017-03-11 15:58:50Z sunpoet $
+# $FreeBSD: head/devel/p5-TheSchwartz/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	TheSchwartz
 PORTVERSION=	1.12
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Reliable job queue
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Data-ObjectDriver>=0.04:devel/p5-Data-ObjectDriver

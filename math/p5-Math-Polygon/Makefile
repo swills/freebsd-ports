@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/p5-Math-Polygon/Makefile 446025 2017-07-16 16:10:28Z sunpoet $
+# $FreeBSD: head/math/p5-Math-Polygon/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-Polygon
 PORTVERSION=	1.06
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Class for Maintaining Polygon Data
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

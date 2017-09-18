@@ -1,5 +1,5 @@
 # Created by: Masafumi NAKANE <max@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-Twitter-Lite/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Net-Twitter-Lite/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Twitter-Lite
 PORTVERSION=	0.12006
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Perl interface to the Twitter API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-JSON>=2.02:converters/p5-JSON \

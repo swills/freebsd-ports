@@ -1,5 +1,5 @@
 # Created by: Jacques Marneweck <jacques@php.net>
-# $FreeBSD: head/www/perlbal/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/perlbal/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Perlbal
 PORTVERSION=	1.80
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Reverse-proxy load balancer and webserver
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-BSD-Resource>=0:devel/p5-BSD-Resource \

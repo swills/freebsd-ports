@@ -1,5 +1,5 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/devel/p5-PerlIO-via-dynamic/Makefile 381136 2015-03-12 18:27:18Z sunpoet $
+# $FreeBSD: head/devel/p5-PerlIO-via-dynamic/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	PerlIO-via-dynamic
 PORTVERSION=	0.14
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Dynamic PerlIO layers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USE_PERL5=	configure

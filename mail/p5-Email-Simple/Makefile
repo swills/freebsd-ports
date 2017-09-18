@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/mail/p5-Email-Simple/Makefile 449482 2017-09-09 09:21:49Z sunpoet $
+# $FreeBSD: head/mail/p5-Email-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Email-Simple
 PORTVERSION=	2.214
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple parsing of RFC2822 message format and headers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

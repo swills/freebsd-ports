@@ -1,5 +1,5 @@
 # Created by: Dennis Herrmann <adox@mcx2.org>
-# $FreeBSD: head/www/p5-WWW-TinySong/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-TinySong/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WWW-TinySong
 PORTVERSION=	1.01
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Get free music links from tinysong.com
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \

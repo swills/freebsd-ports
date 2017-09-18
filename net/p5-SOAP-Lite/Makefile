@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/net/p5-SOAP-Lite/Makefile 417043 2016-06-18 03:03:15Z pi $
+# $FreeBSD: head/net/p5-SOAP-Lite/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	SOAP-Lite
 PORTVERSION=	1.20
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	svysh.fbsd@gmail.com
 COMMENT=	Client and server side SOAP implementation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Data-Recursive-Encode/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-Data-Recursive-Encode/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Recursive-Encode
 PORTVERSION=	0.06
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to encode/decode values in a structure
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Patrick Powell <papowell@astart.com>
-# $FreeBSD: head/textproc/p5-XML-Compile-Dumper/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-XML-Compile-Dumper/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-Compile-Dumper
 PORTVERSION=	0.13
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	papowell@astart.com
 COMMENT=	Dump Compiled XML Translators
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Data-Dump-Streamer>=2.08:devel/p5-Data-Dump-Streamer \

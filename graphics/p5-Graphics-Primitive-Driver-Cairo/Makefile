@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/graphics/p5-Graphics-Primitive-Driver-Cairo/Makefile 428745 2016-12-17 12:58:05Z sunpoet $
+# $FreeBSD: head/graphics/p5-Graphics-Primitive-Driver-Cairo/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Graphics-Primitive-Driver-Cairo
 PORTVERSION=	0.47
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Cairo backend for Graphics::Primitive
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

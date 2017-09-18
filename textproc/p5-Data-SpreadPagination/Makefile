@@ -1,5 +1,5 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/textproc/p5-Data-SpreadPagination/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Data-SpreadPagination/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-SpreadPagination
 PORTVERSION=	0.1.2
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	svysh.fbsd@gmail.com
 COMMENT=	Page numbering and spread pagination
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Data-Page>=0:databases/p5-Data-Page \

@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/net/p5-AnyMQ-AMQP/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-AnyMQ-AMQP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	AnyMQ-AMQP
 PORTVERSION=	0.30
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	AMQP binding for AnyMQ
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-AnyMQ>=0:devel/p5-AnyMQ \

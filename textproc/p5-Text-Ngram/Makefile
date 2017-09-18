@@ -1,5 +1,5 @@
 # Created by: clsung
-# $FreeBSD: head/textproc/p5-Text-Ngram/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Text-Ngram/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-Ngram
 PORTVERSION=	0.15
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for n-gram analysis
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Unicode-CaseFold>=1.00:textproc/p5-Unicode-CaseFold

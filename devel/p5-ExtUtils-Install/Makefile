@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-ExtUtils-Install/Makefile 390893 2015-06-29 12:32:41Z mat $
+# $FreeBSD: head/devel/p5-ExtUtils-Install/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	ExtUtils-Install
 PORTVERSION=	2.04
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to install files from here to there
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-HTML-Entities-Interpolate/Makefile 438095 2017-04-09 10:05:36Z sunpoet $
+# $FreeBSD: head/textproc/p5-HTML-Entities-Interpolate/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-Entities-Interpolate
 PORTVERSION=	1.10
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Call HTML::Entities::encode_entities, via a hash, within a string
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

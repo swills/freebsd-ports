@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-File-Share/Makefile 434219 2017-02-16 16:45:13Z sunpoet $
+# $FreeBSD: head/devel/p5-File-Share/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Share
 PORTVERSION=	0.25
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Extend File::ShareDir to Local Libraries
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

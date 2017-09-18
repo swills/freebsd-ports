@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-XML-DifferenceMarkup/Makefile 413184 2016-04-13 10:36:15Z jbeich $
+# $FreeBSD: head/textproc/p5-XML-DifferenceMarkup/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-DifferenceMarkup
 PORTVERSION=	1.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	This module implements an XML diff producing XML output
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-XML-LibXML>=0:textproc/p5-XML-LibXML

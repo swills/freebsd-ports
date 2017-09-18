@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/textproc/p5-Lingua-EN-Inflect/Makefile 446332 2017-07-21 17:29:50Z sunpoet $
+# $FreeBSD: head/textproc/p5-Lingua-EN-Inflect/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Lingua-EN-Inflect
 PORTVERSION=	1.902
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Convert singular words to their plural form
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

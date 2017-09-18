@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/math/p5-Algorithm-CurveFit/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/p5-Algorithm-CurveFit/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Algorithm-CurveFit
 PORTVERSION=	1.05
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Nonlinear Least Squares Fitting
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Math-MatrixReal>=0:math/p5-Math-MatrixReal \

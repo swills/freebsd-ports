@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-Tiny/Makefile 442430 2017-06-02 18:13:55Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-Tiny/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTTP-Tiny
 PORTVERSION=	0.070
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Small, simple, correct HTTP/1.1 client
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

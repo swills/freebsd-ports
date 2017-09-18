@@ -1,5 +1,5 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/security/p5-Digest-Bcrypt/Makefile 436965 2017-03-26 15:09:33Z wen $
+# $FreeBSD: head/security/p5-Digest-Bcrypt/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Digest-Bcrypt
 PORTVERSION=	1.209
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interface to the bcrypt digest algorithm
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

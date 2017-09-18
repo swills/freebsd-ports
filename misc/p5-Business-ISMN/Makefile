@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/p5-Business-ISMN/Makefile 392544 2015-07-20 01:16:56Z hrs $
+# $FreeBSD: head/misc/p5-Business-ISMN/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Business-ISMN
 PORTVERSION=	1.13
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Work with International Standard Music Numbers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

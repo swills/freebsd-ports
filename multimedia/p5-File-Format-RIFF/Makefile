@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/multimedia/p5-File-Format-RIFF/Makefile 375378 2014-12-24 00:14:11Z bofh $
+# $FreeBSD: head/multimedia/p5-File-Format-RIFF/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Format-RIFF
 DISTVERSION=	1.0.1
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Read, manipulate, and write RIFF files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

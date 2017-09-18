@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Perl-Lint/Makefile 430155 2016-12-31 19:51:34Z adamw $
+# $FreeBSD: head/textproc/p5-Perl-Lint/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Perl-Lint
 PORTVERSION=	0.25
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Yet another Perl source code linter
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-B-Keywords>=0:devel/p5-B-Keywords \

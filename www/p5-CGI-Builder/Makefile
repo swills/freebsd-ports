@@ -1,5 +1,5 @@
 # Created by: Daniel Wijnands <daniel@itxl.nl>
-# $FreeBSD: head/www/p5-CGI-Builder/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-CGI-Builder/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CGI-Builder
 PORTVERSION=	1.36
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl module intended to make it easier to create reusable web apps
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-IO-Util>=0:devel/p5-IO-Util \

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-XSLoader/Makefile 423603 2016-10-09 15:38:59Z adamw $
+# $FreeBSD: head/devel/p5-XSLoader/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XSLoader
 PORTVERSION=	0.24
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Dynamically load C libraries into Perl code
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

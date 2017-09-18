@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-GMPq/Makefile 438980 2017-04-20 16:47:05Z sunpoet $
+# $FreeBSD: head/math/p5-Math-GMPq/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-GMPq
 PORTVERSION=	0.45
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Perl interface to the GMP library rational (mpq) functions
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libgmp.so:math/gmp

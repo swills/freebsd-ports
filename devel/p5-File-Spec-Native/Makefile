@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-File-Spec-Native/Makefile 389561 2015-06-14 03:06:18Z kuriyama $
+# $FreeBSD: head/devel/p5-File-Spec-Native/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Spec-Native
 PORTVERSION=	1.004
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for native OS implementation of File::Spec
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Vanilla I. Shu <vanilla@MinJe.com.TW>
-# $FreeBSD: head/x11-toolkits/p5-Gtk-Perl/Makefile 435066 2017-02-28 14:58:33Z sunpoet $
+# $FreeBSD: head/x11-toolkits/p5-Gtk-Perl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Gtk-Perl
 PORTVERSION=	0.7010
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	The base module of Gtk-Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-XML-Writer>=0:textproc/p5-XML-Writer \

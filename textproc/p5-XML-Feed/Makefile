@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/textproc/p5-XML-Feed/Makefile 435403 2017-03-04 13:48:58Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-Feed/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-Feed
 PORTVERSION=	0.53
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 modules for Syndication feed parser and auto-discovery
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-ErrorHandler>=0:devel/p5-Class-ErrorHandler \

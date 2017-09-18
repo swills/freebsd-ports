@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@daltons.ca>
-# $FreeBSD: head/devel/p5-Tree-Simple-VisitorFactory/Makefile 414678 2016-05-06 06:56:58Z wen $
+# $FreeBSD: head/devel/p5-Tree-Simple-VisitorFactory/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Tree-Simple-VisitorFactory
 PORTVERSION=	0.15
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Set of visitor objects for traversing Tree::Simple hierarchies
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

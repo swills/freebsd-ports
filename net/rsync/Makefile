@@ -1,15 +1,15 @@
 # Created by: David O'Brien (obrien@cs.ucdavis.edu)
-# $FreeBSD: head/net/rsync/Makefile 441452 2017-05-22 12:10:42Z dvl $
+# $FreeBSD: head/net/rsync/Makefile 449999 2017-09-17 13:13:10Z ehaupt $
 
 PORTNAME=	rsync
 PORTVERSION=	3.1.2
 CATEGORIES=	net ipv6
 PORTREVISION=	7
 MASTER_SITES=	http://rsync.samba.org/ftp/rsync/ \
-		ftp://ftp.samba.org/pub/rsync/ \
-		ftp://ftp.sunet.se/pub/unix/admin/rsync/  \
+		https://rsync.samba.org/ftp/rsync/ \
 		ftp://ftp.fu-berlin.de/pub/unix/network/rsync/ \
 		http://www.mirrorservice.org/sites/rsync.samba.org/ \
+		https://www.mirrorservice.org/sites/rsync.samba.org/ \
 		LOCAL/ehaupt/rsync
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 

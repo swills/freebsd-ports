@@ -1,5 +1,5 @@
 # Created by: Erwin Lansing <erwin@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-Differences/Makefile 435919 2017-03-11 15:58:46Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Differences/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Differences
 PORTVERSION=	0.640
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:C/0$//}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Test::Differences - Test strings and data structures for differences
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Text-Diff>=1.43:textproc/p5-Text-Diff

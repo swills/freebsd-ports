@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/print/p5-XML-Handler-AxPoint/Makefile 445329 2017-07-08 13:53:18Z sunpoet $
+# $FreeBSD: head/print/p5-XML-Handler-AxPoint/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-Handler-AxPoint
 PORTVERSION=	1.5
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	XML Based Presentations
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-PDFLib>=0.14:print/p5-PDFLib \

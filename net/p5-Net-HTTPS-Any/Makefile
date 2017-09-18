@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-HTTPS-Any/Makefile 419595 2016-08-04 05:12:10Z pi $
+# $FreeBSD: head/net/p5-Net-HTTPS-Any/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-HTTPS-Any
 PORTVERSION=	0.12
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple HTTPS class using whichever underlying SSL module is available
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Tie-IxHash>=0:devel/p5-Tie-IxHash \

@@ -1,8 +1,8 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/editors/hexedit/Makefile 449460 2017-09-08 21:51:40Z sunpoet $
+# $FreeBSD: head/editors/hexedit/Makefile 449924 2017-09-15 19:17:28Z sunpoet $
 
 PORTNAME=	hexedit
-PORTVERSION=	1.4.1
+PORTVERSION=	1.4.2
 CATEGORIES=	editors
 
 MAINTAINER=	sunpoet@FreeBSD.org

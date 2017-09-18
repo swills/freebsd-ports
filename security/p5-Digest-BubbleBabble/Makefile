@@ -1,5 +1,5 @@
 # Created by: jesper
-# $FreeBSD: head/security/p5-Digest-BubbleBabble/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/security/p5-Digest-BubbleBabble/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Digest-BubbleBabble
 PORTVERSION=	0.02
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 interface to a fingerprint in "bubble babble" format
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

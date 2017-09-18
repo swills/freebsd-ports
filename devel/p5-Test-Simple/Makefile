@@ -1,5 +1,5 @@
 # Created by: Shell Hung <shell@shellhung.org>
-# $FreeBSD: head/devel/p5-Test-Simple/Makefile 449790 2017-09-13 14:07:54Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Simple
 PORTVERSION=	1.302096
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Basic utilities for writing tests in perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

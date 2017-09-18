@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/www/p5-CGI-Cookie-Splitter/Makefile 442386 2017-06-02 15:38:59Z sunpoet $
+# $FreeBSD: head/www/p5-CGI-Cookie-Splitter/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CGI-Cookie-Splitter
 PORTVERSION=	0.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Split big cookies into smaller ones
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

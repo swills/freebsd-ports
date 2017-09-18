@@ -1,5 +1,5 @@
 # Created by: kamikaze@bsdforen.de
-# $FreeBSD: head/multimedia/libbdplus/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/libbdplus/Makefile 449918 2017-09-15 18:28:31Z adamw $
 
 PORTNAME=	libbdplus
 PORTVERSION=	0.1.2
@@ -7,7 +7,7 @@ CATEGORIES=	multimedia
 MASTER_SITES=	ftp://ftp.videolan.org/pub/videolan/${PORTNAME}/${PORTVERSION}/ \
 		http://blu.opsec.eu/
 
-MAINTAINER=	kami@FreeBSD.org
+MAINTAINER=	kamikaze@bsdforen.de
 COMMENT=	BD+ System research implementation
 
 LICENSE=	LGPL21

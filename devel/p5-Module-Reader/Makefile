@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Module-Reader/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-Module-Reader/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Module-Reader
 PORTVERSION=	0.002003
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to read the source of module like perl does
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

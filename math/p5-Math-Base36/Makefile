@@ -1,5 +1,5 @@
 # Created by: Yi-Hsuan Hsin <mhsin@mhsin.org>
-# $FreeBSD: head/math/p5-Math-Base36/Makefile 375952 2015-01-01 16:11:36Z sunpoet $
+# $FreeBSD: head/math/p5-Math-Base36/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-Base36
 PORTVERSION=	0.10
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	mhsin@mhsin.org
 COMMENT=	Encoding and decoding of base36 strings
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

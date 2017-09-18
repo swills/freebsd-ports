@@ -1,5 +1,5 @@
 # Created by: Danny Warren <danny@dannywarren.com>
-# $FreeBSD: head/www/p5-CatalystX-VirtualComponents/Makefile 421058 2016-08-29 12:54:50Z mat $
+# $FreeBSD: head/www/p5-CatalystX-VirtualComponents/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CatalystX-VirtualComponents
 PORTVERSION=	0.00004
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	danny@dannywarren.com
 COMMENT=	Setup virtual Catalyst components
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-namespace-clean>0:devel/p5-namespace-clean \

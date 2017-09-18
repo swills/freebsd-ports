@@ -1,5 +1,5 @@
 # Created by: Felippe de Meirelles Motta <lippemail@gmail.com>
-# $FreeBSD: head/sysutils/p5-Probe-Perl/Makefile 399266 2015-10-14 14:46:08Z culot $
+# $FreeBSD: head/sysutils/p5-Probe-Perl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Probe-Perl
 PORTVERSION=	0.03
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Information about the currently running perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

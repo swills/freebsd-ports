@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/misc/p5-Geo-Coder-Googlev3/Makefile 445888 2017-07-15 17:22:27Z sunpoet $
+# $FreeBSD: head/misc/p5-Geo-Coder-Googlev3/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Geo-Coder-Googlev3
 PORTVERSION=	0.16
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Google Maps v3 Geocoding API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-JSON-XS>=0:converters/p5-JSON-XS \

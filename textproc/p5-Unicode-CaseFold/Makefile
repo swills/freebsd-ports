@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Unicode-CaseFold/Makefile 448623 2017-08-23 14:30:02Z culot $
+# $FreeBSD: head/textproc/p5-Unicode-CaseFold/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Unicode-CaseFold
 PORTVERSION=	1.01
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Unicode case-folding for case-insensitive lookups
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

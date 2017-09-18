@@ -1,5 +1,5 @@
 # Created by: lbr
-# $FreeBSD: head/www/p5-Catalyst-Runtime/Makefile 439980 2017-05-02 21:52:47Z sunpoet $
+# $FreeBSD: head/www/p5-Catalyst-Runtime/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Catalyst-Runtime
 PORTVERSION=	5.90115
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Elegant MVC Web Application Framework (Runtime)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 # Do not add the following ports to TEST_DEPENDS to avoid cyclic dependencies:

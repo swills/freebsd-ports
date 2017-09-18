@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Dancer-Session-Memcached/Makefile 448328 2017-08-19 16:05:14Z sunpoet $
+# $FreeBSD: head/databases/p5-Dancer-Session-Memcached/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Dancer-Session-Memcached
 PORTVERSION=	0.2.02
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:R}${PORTVERSION:E}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Memcached-based session backend for Dancer
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

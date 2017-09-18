@@ -1,5 +1,5 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/security/p5-Dancer2-Plugin-Auth-Extensible/Makefile 447543 2017-08-08 13:44:20Z culot $
+# $FreeBSD: head/security/p5-Dancer2-Plugin-Auth-Extensible/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Dancer2-Plugin-Auth-Extensible
 PORTVERSION=	0.704
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	hvo.pm@xs4all.nl
 COMMENT=	Extensible authentication framework for Dancer2 apps
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Crypt-SaltedHash>0:security/p5-Crypt-SaltedHash \

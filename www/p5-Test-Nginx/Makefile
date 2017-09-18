@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/www/p5-Test-Nginx/Makefile 438167 2017-04-10 13:48:12Z vanilla $
+# $FreeBSD: head/www/p5-Test-Nginx/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Nginx
 PORTVERSION=	0.26
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	vanilla@FreeBSD.org
 COMMENT=	Testing modules for Nginx C module development
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Test-LongString>=0:devel/p5-Test-LongString \

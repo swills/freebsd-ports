@@ -1,5 +1,5 @@
 # Created by: Tsung-Han Yeh <snowfly@yuntech.edu.tw>
-# $FreeBSD: head/www/p5-Net-Flickr-RDF/Makefile 435865 2017-03-10 22:46:06Z sunpoet $
+# $FreeBSD: head/www/p5-Net-Flickr-RDF/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Flickr-RDF
 PORTVERSION=	2.2
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	snowfly@yuntech.edu.tw
 COMMENT=	Describe Flickr photos as RDF
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Net-Flickr-API>=1.7:www/p5-Net-Flickr-API \

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net-im/p5-Jabber-Lite/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-im/p5-Jabber-Lite/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Jabber-Lite
 PORTVERSION=	0.8.1
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Standalone library for communicating with Jabber servers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Authen-SASL>=0:security/p5-Authen-SASL \

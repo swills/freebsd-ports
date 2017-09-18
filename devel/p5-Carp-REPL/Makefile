@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Carp-REPL/Makefile 435012 2017-02-28 09:44:50Z sunpoet $
+# $FreeBSD: head/devel/p5-Carp-REPL/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Carp-REPL
 PORTVERSION=	0.18
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Read-Eval-Print-Loop on die and/or warn
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Data-Dump-Streamer>=0:devel/p5-Data-Dump-Streamer \

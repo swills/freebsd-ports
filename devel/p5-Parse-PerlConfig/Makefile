@@ -1,5 +1,5 @@
 # Created by: Leif Pedersen <pedersen@meridian-enviro.com>
-# $FreeBSD: head/devel/p5-Parse-PerlConfig/Makefile 395264 2015-08-25 14:51:36Z sunpoet $
+# $FreeBSD: head/devel/p5-Parse-PerlConfig/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Parse-PerlConfig
 PORTVERSION=	0.05
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 module to use perl scripts as config files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

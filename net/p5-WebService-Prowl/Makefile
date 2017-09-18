@@ -1,5 +1,5 @@
 # Created by: brix@FreeBSD.org
-# $FreeBSD: head/net/p5-WebService-Prowl/Makefile 416036 2016-05-28 17:09:54Z sunpoet $
+# $FreeBSD: head/net/p5-WebService-Prowl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WebService-Prowl
 PORTVERSION=	0.08
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interface to Prowl Public API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-Expect/Makefile 435532 2017-03-06 10:50:52Z bofh $
+# $FreeBSD: head/devel/p5-Test-Expect/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Expect
 PORTVERSION=	0.34
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Automated driving and testing of terminal-based programs
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Accessor-Chained>=0:devel/p5-Class-Accessor-Chained \

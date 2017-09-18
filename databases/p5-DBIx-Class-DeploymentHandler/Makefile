@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-DBIx-Class-DeploymentHandler/Makefile 426789 2016-11-22 07:30:38Z kuriyama $
+# $FreeBSD: head/databases/p5-DBIx-Class-DeploymentHandler/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBIx-Class-DeploymentHandler
 PORTVERSION=	0.002218
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for extensible DBIx::Class deployment
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

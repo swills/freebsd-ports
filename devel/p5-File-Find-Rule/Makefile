@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-File-Find-Rule/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-File-Find-Rule/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Find-Rule
 PORTVERSION=	0.34
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Alternative interface to File::Find
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Number-Compare>=0:math/p5-Number-Compare \

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/finance/p5-Finance-TW-TSEQuote/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/p5-Finance-TW-TSEQuote/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Finance-TW-TSEQuote
 PORTVERSION=	0.28
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Check stock quotes from Taiwan Security Exchange
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-App-Cache>=0:devel/p5-App-Cache \

@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/graphics/p5-Color-Library/Makefile 435026 2017-02-28 09:47:07Z sunpoet $
+# $FreeBSD: head/graphics/p5-Color-Library/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Color-Library
 PORTVERSION=	0.021
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Easy-to-use and comprehensive named-color library
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \

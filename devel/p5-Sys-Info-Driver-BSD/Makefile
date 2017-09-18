@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Sys-Info-Driver-BSD/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Sys-Info-Driver-BSD/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Sys-Info-Driver-BSD
 PORTVERSION=	0.7801
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	BSD driver for Sys::Info
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-BSD-Sysctl>=0.08:sysutils/p5-BSD-Sysctl \

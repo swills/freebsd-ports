@@ -1,5 +1,5 @@
 # Created by: jupengfei <jupengfei@gmail.com>
-# $FreeBSD: head/net/p5-Net-Traceroute-PurePerl/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Net-Traceroute-PurePerl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Traceroute-PurePerl
 PORTVERSION=	0.10
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Traceroute(1) functionality in perl via raw sockets
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Net-Traceroute>=0:net/p5-Net-Traceroute

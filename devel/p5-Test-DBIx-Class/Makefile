@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-DBIx-Class/Makefile 428126 2016-12-08 15:25:35Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-DBIx-Class/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-DBIx-Class
 PORTVERSION=	0.52
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Easier test cases for your DBIx::Class applications
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

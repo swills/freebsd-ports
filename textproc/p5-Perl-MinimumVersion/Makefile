@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Perl-MinimumVersion/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/textproc/p5-Perl-MinimumVersion/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Perl-MinimumVersion
 PORTVERSION=	1.38
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Find a minimum required version of perl for Perl code
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-Find-Rule>=0:devel/p5-File-Find-Rule \

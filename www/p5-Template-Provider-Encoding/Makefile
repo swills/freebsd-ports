@@ -1,5 +1,5 @@
 # Created by: TAKAHASHI Kaoru <kaoru@kaisei.org>
-# $FreeBSD: head/www/p5-Template-Provider-Encoding/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Template-Provider-Encoding/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Template-Provider-Encoding
 PORTVERSION=	0.10
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Explicitly declare encodings of your templates
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Template-Toolkit>=0:www/p5-Template-Toolkit

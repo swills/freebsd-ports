@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Text-ParseWords/Makefile 381105 2015-03-12 15:23:52Z sunpoet $
+# $FreeBSD: head/textproc/p5-Text-ParseWords/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-ParseWords
 PORTVERSION=	3.30
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Parse text into an array of tokens or array of arrays
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Anes Mukhametov <anes@anes.su>
-# $FreeBSD: head/devel/p5-MooseX-Role-Matcher/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Role-Matcher/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooseX-Role-Matcher
 PORTVERSION=	0.05
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	anes@anes.su
 COMMENT=	Generic object matching based on attributes and methods
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-List-MoreUtils>=0:lang/p5-List-MoreUtils \

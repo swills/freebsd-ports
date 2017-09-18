@@ -1,5 +1,5 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/dns/p5-POE-Component-Server-DNS/Makefile 435862 2017-03-10 22:45:52Z sunpoet $
+# $FreeBSD: head/dns/p5-POE-Component-Server-DNS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Component-Server-DNS
 PORTVERSION=	0.32
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Non-blocking, concurrent DNS server component
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

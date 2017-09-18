@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-GMPz/Makefile 434097 2017-02-14 14:33:27Z sunpoet $
+# $FreeBSD: head/math/p5-Math-GMPz/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-GMPz
 PORTVERSION=	0.46
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Perl interface to the GMP library integer (mpz) functions
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libgmp.so:math/gmp

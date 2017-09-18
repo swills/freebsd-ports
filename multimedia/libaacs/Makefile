@@ -1,5 +1,5 @@
 # Created by: kamikaze@bsdforen.de
-# $FreeBSD: head/multimedia/libaacs/Makefile 414031 2016-04-25 21:58:45Z kami $
+# $FreeBSD: head/multimedia/libaacs/Makefile 449918 2017-09-15 18:28:31Z adamw $
 
 PORTNAME=	libaacs
 PORTVERSION=	0.8.1
@@ -7,7 +7,7 @@ CATEGORIES=	multimedia
 MASTER_SITES=	ftp://ftp.videolan.org/pub/videolan/${PORTNAME}/${PORTVERSION}/ \
 		http://blu.opsec.eu/
 
-MAINTAINER=	kami@FreeBSD.org
+MAINTAINER=	kamikaze@bsdforen.de
 COMMENT=	Advanced Access Content System implementation
 
 LICENSE=	LGPL21

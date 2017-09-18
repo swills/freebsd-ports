@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/audio/p5-Audio-MPD-Common/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/p5-Audio-MPD-Common/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Audio-MPD-Common
 PORTVERSION=	2.003
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Bunch of common helper classes for mpd
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Moose>=0.92:devel/p5-Moose \

@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Class-C3-Componentised/Makefile 435014 2017-02-28 09:45:00Z sunpoet $
+# $FreeBSD: head/devel/p5-Class-C3-Componentised/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Class-C3-Componentised
 PORTVERSION=	1.001000
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Load mix-ins or components to your C3-based class
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-C3>=0.20:devel/p5-Class-C3 \

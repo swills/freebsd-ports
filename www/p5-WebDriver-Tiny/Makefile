@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/www/p5-WebDriver-Tiny/Makefile 428749 2016-12-17 12:58:23Z sunpoet $
+# $FreeBSD: head/www/p5-WebDriver-Tiny/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WebDriver-Tiny
 PORTVERSION=	0.006
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Selenium 2.0 bindings for Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

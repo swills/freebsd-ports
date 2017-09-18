@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/audio/shairport-sync/Makefile 448964 2017-08-30 08:19:57Z ehaupt $
+# $FreeBSD: head/audio/shairport-sync/Makefile 450022 2017-09-17 20:33:53Z ehaupt $
 
 PORTNAME=	shairport-sync
-DISTVERSION=	3.2d3
+DISTVERSION=	3.2d5
 CATEGORIES=	audio
 
 MAINTAINER=	ehaupt@FreeBSD.org

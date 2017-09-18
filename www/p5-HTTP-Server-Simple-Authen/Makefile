@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-Server-Simple-Authen/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTTP-Server-Simple-Authen/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTTP-Server-Simple-Authen
 PORTVERSION=	0.04
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Authentication plugin for HTTP::Server::Simple
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Authen-Simple>=0.4:security/p5-Authen-Simple \

@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Parse-BooleanLogic/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Parse-BooleanLogic/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Parse-BooleanLogic
 PORTVERSION=	0.09
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	Parser of boolean expressions
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Regexp-Common>=2.122:textproc/p5-Regexp-Common \

@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Net-IMAP-Simple/Makefile 443458 2017-06-12 19:02:07Z sunpoet $
+# $FreeBSD: head/mail/p5-Net-IMAP-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-IMAP-Simple
 PORTVERSION=	1.2209
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for simple IMAP account handling
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-IO-Socket-SSL>0:security/p5-IO-Socket-SSL \

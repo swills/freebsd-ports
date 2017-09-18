@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-Plugin-Static-Simple/Makefile 447257 2017-08-03 17:26:32Z sunpoet $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-Static-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Catalyst-Plugin-Static-Simple
 PORTVERSION=	0.34
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Make serving static pages painless
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.80008:www/p5-Catalyst-Runtime \

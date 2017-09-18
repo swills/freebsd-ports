@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-HTTPS-NB/Makefile 425542 2016-11-06 16:49:49Z sunpoet $
+# $FreeBSD: head/net/p5-Net-HTTPS-NB/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-HTTPS-NB
 PORTVERSION=	0.15
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Non-blocking HTTPS client
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-IO-Socket-SSL>=0.98:security/p5-IO-Socket-SSL \

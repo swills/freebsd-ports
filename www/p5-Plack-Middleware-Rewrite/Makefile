@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/www/p5-Plack-Middleware-Rewrite/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Plack-Middleware-Rewrite/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Plack-Middleware-Rewrite
 PORTVERSION=	2.000
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	mod_rewrite for Plack
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Plack>=0.9942:www/p5-Plack

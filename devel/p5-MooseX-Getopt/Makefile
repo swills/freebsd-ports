@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-Getopt/Makefile 417240 2016-06-21 15:07:58Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Getopt/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooseX-Getopt
 PORTVERSION=	0.71
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Moose role for processing command line options
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

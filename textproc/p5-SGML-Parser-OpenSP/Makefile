@@ -1,5 +1,5 @@
 # Created by: Naram Qashat <cyberbotx@cyberbotx.com>
-# $FreeBSD: head/textproc/p5-SGML-Parser-OpenSP/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-SGML-Parser-OpenSP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	SGML-Parser-OpenSP
 PORTVERSION=	0.994
@@ -13,7 +13,7 @@ COMMENT=	Parse SGML documents using OpenSP
 
 # The port's README says the port "is licensed under the same terms as Perl
 # itself".
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	onsgmls:textproc/opensp \

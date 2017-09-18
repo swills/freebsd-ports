@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman <matthew@FreeBSD.org>
-# $FreeBSD: head/deskutils/p5-Data-ICal-DateTime/Makefile 448577 2017-08-22 20:00:22Z matthew $
+# $FreeBSD: head/deskutils/p5-Data-ICal-DateTime/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-ICal-DateTime
 PORTVERSION=	0.82
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	matthew@FreeBSD.org
 COMMENT=	Convenience methods for using Data::ICal with DateTime
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

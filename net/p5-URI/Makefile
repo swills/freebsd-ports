@@ -1,5 +1,5 @@
 # Created by: ache
-# $FreeBSD: head/net/p5-URI/Makefile 446681 2017-07-26 18:20:41Z sunpoet $
+# $FreeBSD: head/net/p5-URI/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	URI
 PORTVERSION=	1.72
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 interface to Uniform Resource Identifier (URI) references
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Needs>=0:devel/p5-Test-Needs

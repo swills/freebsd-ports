@@ -1,5 +1,5 @@
 # Created by: TERAMOTO Masahiro <markun@onohara.to>
-# $FreeBSD: head/www/p5-WWW-Tumblr/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-Tumblr/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WWW-Tumblr
 PORTVERSION=	5.00
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	markun@onohara.to
 COMMENT=	Perl interface for the Tumblr API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTTP-Message>0:www/p5-HTTP-Message \

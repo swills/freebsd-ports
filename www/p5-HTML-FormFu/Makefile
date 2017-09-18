@@ -1,5 +1,5 @@
 # Created by: Andrej Zverev <andrey.zverev@electro-com.ru>
-# $FreeBSD: head/www/p5-HTML-FormFu/Makefile 423718 2016-10-10 20:56:16Z adamw $
+# $FreeBSD: head/www/p5-HTML-FormFu/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-FormFu
 PORTVERSION=	2.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	HTML Form Creation, Rendering and Validation Framework
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Clone>=0.31:devel/p5-Clone \

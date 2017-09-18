@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/p5-Net-Bonjour/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/dns/p5-Net-Bonjour/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Bonjour
 PORTVERSION=	0.96
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Module for DNS service discovery
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Net-DNS>=0.5:dns/p5-Net-DNS

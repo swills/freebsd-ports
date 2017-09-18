@@ -1,5 +1,5 @@
 # Created by: Timur Bakeyev <bat@cpan.org>
-# $FreeBSD: head/converters/p5-Unicode-Stringprep/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/converters/p5-Unicode-Stringprep/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Unicode-Stringprep
 PORTVERSION=	1.105
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Preparation of Internationalized Strings (RFC 3454)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Unicode-Normalize>=1:textproc/p5-Unicode-Normalize

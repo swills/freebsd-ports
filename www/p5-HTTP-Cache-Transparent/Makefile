@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-Cache-Transparent/Makefile 438019 2017-04-08 10:35:20Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-Cache-Transparent/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTTP-Cache-Transparent
 PORTVERSION=	1.4
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Implementation of http get that keeps a local cache of fetched pages
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww

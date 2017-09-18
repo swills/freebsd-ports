@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Unicode-Normalize/Makefile 404157 2015-12-21 18:34:30Z sunpoet $
+# $FreeBSD: head/textproc/p5-Unicode-Normalize/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Unicode-Normalize
 PORTVERSION=	1.25
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Unicode Normalization Forms
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

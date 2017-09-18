@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-JavaScript-Packer/Makefile 438859 2017-04-19 14:39:46Z sunpoet $
+# $FreeBSD: head/textproc/p5-JavaScript-Packer/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	JavaScript-Packer
 PORTVERSION=	2.03
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Perl version of Dean Edwards' Packer.js
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Regexp-RegGrp>=1.001001:devel/p5-Regexp-RegGrp

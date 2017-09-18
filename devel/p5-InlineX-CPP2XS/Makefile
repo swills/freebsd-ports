@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-InlineX-CPP2XS/Makefile 426479 2016-11-19 17:09:35Z sunpoet $
+# $FreeBSD: head/devel/p5-InlineX-CPP2XS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	InlineX-CPP2XS
 PORTVERSION=	0.25
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Convert from Inline C++ code to XS
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Inline>=0.50:devel/p5-Inline \

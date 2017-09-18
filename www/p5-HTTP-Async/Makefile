@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/www/p5-HTTP-Async/Makefile 431580 2017-01-15 15:21:57Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-Async/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTTP-Async
 PORTVERSION=	0.33
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Process multiple HTTP requests in parallel without blocking
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTTP-Server-Simple>=0:www/p5-HTTP-Server-Simple \

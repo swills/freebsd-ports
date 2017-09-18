@@ -1,5 +1,5 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/www/p5-Dancer2-Plugin-Path-Class/Makefile 416703 2016-06-11 06:30:16Z pi $
+# $FreeBSD: head/www/p5-Dancer2-Plugin-Path-Class/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Dancer2-Plugin-Path-Class
 PORTVERSION=	0.08
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	hvo.pm@xs4all.nl
 COMMENT=	List a directory using Path::Class
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Path-Tiny>=0:devel/p5-Path-Tiny

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-MooseX-Role-Parameterized/Makefile 439110 2017-04-21 18:23:29Z sunpoet $
+# $FreeBSD: head/devel/p5-MooseX-Role-Parameterized/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooseX-Role-Parameterized
 PORTVERSION=	1.10
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Roles with composition parameters
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

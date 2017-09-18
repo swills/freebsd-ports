@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-Message/Makefile 443989 2017-06-20 16:06:36Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-Message/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTTP-Message
 PORTVERSION=	6.13
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Representation of HTTP style messages
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

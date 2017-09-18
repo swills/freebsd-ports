@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Git-Version-Compare/Makefile 416011 2016-05-28 17:07:48Z sunpoet $
+# $FreeBSD: head/devel/p5-Git-Version-Compare/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Git-Version-Compare
 PORTVERSION=	1.004
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Functions to compare Git versions
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

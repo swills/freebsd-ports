@@ -1,5 +1,5 @@
 # Created by: Shinsuke Matsui <smatsui@karashi.org>
-# $FreeBSD: head/www/p5-HTML-Selector-XPath/Makefile 426682 2016-11-20 23:56:36Z sunpoet $
+# $FreeBSD: head/www/p5-HTML-Selector-XPath/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-Selector-XPath
 PORTVERSION=	0.22
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	smatsui@karashi.org
 COMMENT=	HTML::Selector::XPath - CSS Selector to XPath compiler
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Base>=0:devel/p5-Test-Base

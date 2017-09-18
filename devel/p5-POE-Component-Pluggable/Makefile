@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/p5-POE-Component-Pluggable/Makefile 434546 2017-02-21 16:36:51Z sunpoet $
+# $FreeBSD: head/devel/p5-POE-Component-Pluggable/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Component-Pluggable
 PORTVERSION=	1.28
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Base class for creating plugin enabled POE Components
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

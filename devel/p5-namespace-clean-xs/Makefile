@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-namespace-clean-xs/Makefile 423693 2016-10-10 20:01:29Z adamw $
+# $FreeBSD: head/devel/p5-namespace-clean-xs/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	namespace-clean-xs
 PORTVERSION=	0.07
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Keep imports and functions out of your namespace, in XS
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-LeakTrace>=0:devel/p5-Test-LeakTrace

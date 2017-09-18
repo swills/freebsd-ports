@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/p5-XML-OPML/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-XML-OPML/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-OPML
 PORTVERSION=	0.26
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Creates and updates OPML (Outline Processor Markup Language) files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser \

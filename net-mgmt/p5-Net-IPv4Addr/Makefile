@@ -1,5 +1,5 @@
 # Created by: Brad Hendrickse <bradh@uunet.co.za>
-# $FreeBSD: head/net-mgmt/p5-Net-IPv4Addr/Makefile 386075 2015-05-11 12:04:18Z mat $
+# $FreeBSD: head/net-mgmt/p5-Net-IPv4Addr/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-IPv4Addr
 PORTVERSION=	0.10
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for manipulating IPv4 addresses
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

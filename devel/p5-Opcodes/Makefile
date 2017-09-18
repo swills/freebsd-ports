@@ -1,5 +1,5 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/devel/p5-Opcodes/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/devel/p5-Opcodes/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Opcodes
 PORTVERSION=	0.14
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	svysh.fbsd@gmail.com
 COMMENT=	More Opcodes information from opnames.h and opcode.h
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

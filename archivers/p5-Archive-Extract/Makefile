@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/archivers/p5-Archive-Extract/Makefile 438001 2017-04-08 10:33:49Z sunpoet $
+# $FreeBSD: head/archivers/p5-Archive-Extract/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Archive-Extract
 PORTVERSION=	0.80
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Generic archive extracting mechanism
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

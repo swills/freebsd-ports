@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/mail/p5-Email-Folder/Makefile 439320 2017-04-24 15:18:53Z sunpoet $
+# $FreeBSD: head/mail/p5-Email-Folder/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Email-Folder
 PORTVERSION=	0.860
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Read all the messages from a folder as Email::Simple objects
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Shigeyuki Fukushima <shige@FreeBSD.org>
-# $FreeBSD: head/japanese/eblook/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/japanese/eblook/Makefile 449883 2017-09-15 05:52:02Z sunpoet $
 
 PORTNAME=	eblook
 PORTVERSION=	1.6.1
@@ -11,7 +11,8 @@ DIST_SUBDIR=	eb
 MAINTAINER=	yasu@utahime.org
 COMMENT=	Command to lookup words in EB format dictionaries
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libeb.so:japanese/eb
 
@@ -33,7 +34,7 @@ OPTIONS_DEFINE=	DOCS
 CONFIGURE_ARGS+=ac_cv_func_iconv=yes
 .endif
 
-post-install:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
 

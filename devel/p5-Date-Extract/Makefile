@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman <matthew@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Date-Extract/Makefile 425944 2016-11-12 12:24:05Z matthew $
+# $FreeBSD: head/devel/p5-Date-Extract/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Date-Extract
 PORTVERSION=	0.06
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	matthew@FreeBSD.org
 COMMENT=	Extract probable dates from strings
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DateTime-Format-Natural>0:devel/p5-DateTime-Format-Natural \

@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Class-Multimethods/Makefile 435481 2017-03-05 14:47:36Z bofh $
+# $FreeBSD: head/devel/p5-Class-Multimethods/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Class-Multimethods
 PORTVERSION=	1.701
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Support multimethods and function overloading in Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-1.700

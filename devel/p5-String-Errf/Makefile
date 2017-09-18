@@ -1,5 +1,5 @@
 # Created by: Geraud CONTINSOUZAS <geraud@gcu.info>
-# $FreeBSD: head/devel/p5-String-Errf/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-String-Errf/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	String-Errf
 PORTVERSION=	0.007
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	geraud@gcu.info
 COMMENT=	Simple sprintf-like dialect
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Params-Util>=0:devel/p5-Params-Util \

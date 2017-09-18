@@ -1,5 +1,5 @@
 # Created by: christian
-# $FreeBSD: head/devel/p5-Text-LevenshteinXS/Makefile 395265 2015-08-25 14:51:41Z sunpoet $
+# $FreeBSD: head/devel/p5-Text-LevenshteinXS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-LevenshteinXS
 PORTVERSION=	0.03
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	XS implementation of the Levenshtein edit distance
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

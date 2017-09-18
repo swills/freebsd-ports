@@ -1,5 +1,5 @@
 # Created by: Evgeniy Kosov <evgeniy@kosov.su>
-# $FreeBSD: head/devel/p5-Log-Any-Adapter-Log4perl/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Log-Any-Adapter-Log4perl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Log-Any-Adapter-Log4perl
 PORTVERSION=	0.08
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Log::Any adapter for Log4perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Log-Any>=1.03:devel/p5-Log-Any \

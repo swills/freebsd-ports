@@ -1,5 +1,5 @@
 # Created by: Andrey Kostenko <andrey@kostenko.name>
-# $FreeBSD: head/devel/p5-IO-Interactive/Makefile 423521 2016-10-08 16:58:13Z adamw $
+# $FreeBSD: head/devel/p5-IO-Interactive/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IO-Interactive
 PORTVERSION=	1.022
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Utilities for interactive I/O
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

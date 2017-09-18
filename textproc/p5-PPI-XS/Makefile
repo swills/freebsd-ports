@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-PPI-XS/Makefile 438287 2017-04-11 15:56:49Z sunpoet $
+# $FreeBSD: head/textproc/p5-PPI-XS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	PPI-XS
 PORTVERSION=	0.904
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	XS acceleration for the PPI perl parser
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-PPI>=1.000:textproc/p5-PPI

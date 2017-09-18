@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Import-Base/Makefile 434291 2017-02-17 16:48:34Z sunpoet $
+# $FreeBSD: head/devel/p5-Import-Base/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Import-Base
 PORTVERSION=	1.003
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Import a set of modules into the calling module
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

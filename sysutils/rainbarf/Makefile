@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/sysutils/rainbarf/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/sysutils/rainbarf/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	rainbarf
 PORTVERSION=	1.4
@@ -12,7 +12,7 @@ DISTNAME=	App-${PORTNAME}-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	CPU/RAM/battery stats chart bar for tmux (and GNU screen)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

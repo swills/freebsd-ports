@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-App-FatPacker/Makefile 427361 2016-11-29 07:07:14Z kuriyama $
+# $FreeBSD: head/devel/p5-App-FatPacker/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	App-FatPacker
 PORTVERSION=	0.010005
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to pack your dependencies onto your script file
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

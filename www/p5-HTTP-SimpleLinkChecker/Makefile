@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-SimpleLinkChecker/Makefile 428127 2016-12-08 15:25:39Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-SimpleLinkChecker/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTTP-SimpleLinkChecker
 PORTVERSION=	1.165
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Check the HTTP response code for a link
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

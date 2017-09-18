@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Sys-Mmap/Makefile 435259 2017-03-02 17:59:27Z sunpoet $
+# $FreeBSD: head/devel/p5-Sys-Mmap/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Sys-Mmap
 PORTVERSION=	0.19
@@ -10,10 +10,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Map in a file as a Perl variable using mmap(2)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/Artistic
-LICENSE_FILE_GPLv1=	${WRKSRC}/Copying
+LICENSE_FILE_GPLv1+ =	${WRKSRC}/Copying
 
 USES=		perl5
 USE_PERL5=	configure

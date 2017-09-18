@@ -1,5 +1,5 @@
 # Created by: Alex Bakhtin <Alex.Bakhtin@gmail.com>
-# $FreeBSD: head/net/p5-AnyEvent-MQTT/Makefile 412713 2016-04-08 03:37:49Z ohauer $
+# $FreeBSD: head/net/p5-AnyEvent-MQTT/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	AnyEvent-MQTT
 PORTVERSION=	1.142640
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	Alex.Bakhtin@gmail.com
 COMMENT=	AnyEvent::MQTT - AnyEvent module for an MQTT client
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

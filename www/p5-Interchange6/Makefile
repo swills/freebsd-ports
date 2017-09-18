@@ -1,5 +1,5 @@
 # Created by: <hvo.pm@xs4all.nl>
-# $FreeBSD: head/www/p5-Interchange6/Makefile 419456 2016-08-01 20:11:19Z pi $
+# $FreeBSD: head/www/p5-Interchange6/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Interchange6
 PORTVERSION=	0.120
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	hvo.pm@xs4all.nl
 COMMENT=	Open Source Shop Machine
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Interchange6-Schema>=0:databases/p5-Interchange6-Schema \

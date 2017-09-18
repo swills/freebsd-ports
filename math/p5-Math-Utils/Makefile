@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Utils/Makefile 447851 2017-08-12 18:58:48Z sunpoet $
+# $FreeBSD: head/math/p5-Math-Utils/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-Utils
 PORTVERSION=	1.11
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Useful mathematical functions not in Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

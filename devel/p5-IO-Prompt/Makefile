@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-IO-Prompt/Makefile 439316 2017-04-24 15:18:18Z sunpoet $
+# $FreeBSD: head/devel/p5-IO-Prompt/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IO-Prompt
 PORTVERSION=	0.997004
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Interactively prompt for user input
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Term-ReadKey>0:devel/p5-Term-ReadKey \

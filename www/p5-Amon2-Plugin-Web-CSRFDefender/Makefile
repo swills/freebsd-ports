@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Amon2-Plugin-Web-CSRFDefender/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Amon2-Plugin-Web-CSRFDefender/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Amon2-Plugin-Web-CSRFDefender
 PORTVERSION=	7.03
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for Amon2 anti CSRF filter
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

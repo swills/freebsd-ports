@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Package-Stash/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Package-Stash/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Package-Stash
 PORTVERSION=	0.37
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Routines for manipulating stashes
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Dist-CheckConflicts>=0.02:devel/p5-Dist-CheckConflicts \

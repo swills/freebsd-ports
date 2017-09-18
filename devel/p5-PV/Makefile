@@ -1,5 +1,5 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/devel/p5-PV/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-PV/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	PV
 PORTVERSION=	1.5
@@ -12,7 +12,7 @@ DISTNAME=	PerlVision-${PORTVERSION}
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl5 library for text-mode user interface widgets
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Curses>=0:devel/p5-Curses

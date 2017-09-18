@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-POE-Component-DirWatch/Makefile 423528 2016-10-08 17:10:55Z adamw $
+# $FreeBSD: head/devel/p5-POE-Component-DirWatch/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Component-DirWatch
 PORTVERSION=	0.300004
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	POE directory watcher
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-POE>=0.12:devel/p5-POE \

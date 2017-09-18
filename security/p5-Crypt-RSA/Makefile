@@ -1,5 +1,5 @@
 # Created by: Michael Haro <mharo@FreeBSD.org>
-# $FreeBSD: head/security/p5-Crypt-RSA/Makefile 436057 2017-03-13 10:27:58Z sunpoet $
+# $FreeBSD: head/security/p5-Crypt-RSA/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-RSA
 PORTVERSION=	1.99
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	RSA public-key cryptosystem
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/ARTISTIC
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/litecoin-utils/Makefile 439779 2017-04-30 01:12:10Z linimon $
+# $FreeBSD: head/net-p2p/litecoin-utils/Makefile 449977 2017-09-17 00:38:59Z swills $
 
 MASTERDIR=	${.CURDIR}/../litecoin
 PKGNAMESUFFIX=	-utils
@@ -21,6 +21,7 @@ CONFIGURE_ARGS=	--without-daemon \
 		--disable-wallet \
 		--disable-reduce-exports
 
-PLIST_FILES=	bin/litecoin-cli bin/litecoin-tx
+PLIST_FILES=	bin/litecoin-cli bin/litecoin-tx \
+		man/man1/litecoin-cli.1.gz man/man1/litecoin-tx.1.gz
 
 .include "${MASTERDIR}/Makefile"

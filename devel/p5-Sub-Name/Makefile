@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Sub-Name/Makefile 446330 2017-07-21 17:29:40Z sunpoet $
+# $FreeBSD: head/devel/p5-Sub-Name/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Sub-Name
 PORTVERSION=	0.21
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tobez@FreeBSD.org
 COMMENT=	Sub::Name - (re)name a sub
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENCE
 

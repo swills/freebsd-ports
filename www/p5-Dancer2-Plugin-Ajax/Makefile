@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Dancer2-Plugin-Ajax/Makefile 426513 2016-11-19 17:12:09Z sunpoet $
+# $FreeBSD: head/www/p5-Dancer2-Plugin-Ajax/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Dancer2-Plugin-Ajax
 PORTVERSION=	0.300000
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Ajax handling for Dancer2 applications
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

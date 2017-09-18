@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-Time-Local/Makefile 435922 2017-03-11 15:59:00Z sunpoet $
+# $FreeBSD: head/devel/p5-Time-Local/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Time-Local
 PORTVERSION=	1.25
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Efficiently compute time from local and GMT time
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

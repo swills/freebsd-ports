@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/sysutils/p5-Unix-ConfigFile/Makefile 375378 2014-12-24 00:14:11Z bofh $
+# $FreeBSD: head/sysutils/p5-Unix-ConfigFile/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Unix-ConfigFile
 PORTVERSION=	0.06
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl modules that provides a simple interface to reading /etc files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: clsung
-# $FreeBSD: head/textproc/p5-Tree-Suffix/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Tree-Suffix/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Tree-Suffix
 PORTVERSION=	0.22
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interface to the libstree library
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Devel-CheckLib>=0:devel/p5-Devel-CheckLib

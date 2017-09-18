@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/converters/p5-Convert-NLS_DATE_FORMAT/Makefile 406321 2016-01-17 13:08:39Z sunpoet $
+# $FreeBSD: head/converters/p5-Convert-NLS_DATE_FORMAT/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Convert-NLS_DATE_FORMAT
 PORTVERSION=	0.06
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Convert Oracle NLS_DATE_FORMAT <-> strftime format strings
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

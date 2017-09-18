@@ -1,5 +1,5 @@
 # Created by: jupengfei <jupengfei@gmail.com>
-# $FreeBSD: head/devel/p5-CPAN-Meta/Makefile 442313 2017-06-01 19:58:01Z sunpoet $
+# $FreeBSD: head/devel/p5-CPAN-Meta/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CPAN-Meta
 PORTVERSION=	2.150010
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Distribution metadata for a CPAN dist
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

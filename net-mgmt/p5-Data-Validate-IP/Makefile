@@ -1,5 +1,5 @@
 # Created by: Tuc <freebsd-ports@t-b-o-h.net>
-# $FreeBSD: head/net-mgmt/p5-Data-Validate-IP/Makefile 436580 2017-03-21 10:38:56Z robak $
+# $FreeBSD: head/net-mgmt/p5-Data-Validate-IP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Validate-IP
 PORTVERSION=	0.27
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	freebsd-ports@t-b-o-h.net
 COMMENT=	Common data validation methods for IPs
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

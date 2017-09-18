@@ -1,5 +1,5 @@
 # Created by: lippe
-# $FreeBSD: head/devel/p5-Test-Portability-Files/Makefile 447498 2017-08-07 16:26:14Z culot $
+# $FreeBSD: head/devel/p5-Test-Portability-Files/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Portability-Files
 PORTVERSION=	0.07
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Check file names portability
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/p5-Dancer-Plugin-Email/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Dancer-Plugin-Email/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Dancer-Plugin-Email
 PORTVERSION=	1.0400
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Simple email handling for Dancer applications
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Dancer>=0:www/p5-Dancer \

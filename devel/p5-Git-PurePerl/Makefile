@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Git-PurePerl/Makefile 423519 2016-10-08 16:53:00Z adamw $
+# $FreeBSD: head/devel/p5-Git-PurePerl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Git-PurePerl
 PORTVERSION=	0.53
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Pure Perl interface to Git repositories
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Archive-Extract>=0:archivers/p5-Archive-Extract \

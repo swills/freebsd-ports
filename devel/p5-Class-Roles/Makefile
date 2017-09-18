@@ -1,5 +1,5 @@
 # Created by: Alex Kapranoff <kappa@FreeBSD.org.ua>
-# $FreeBSD: head/devel/p5-Class-Roles/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Class-Roles/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Class-Roles
 PORTVERSION=	0.30
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Provides a role-based system of OOP (emulates Perl6)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception

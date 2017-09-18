@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Syntax-Highlight-Engine-Kate/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Syntax-Highlight-Engine-Kate/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Syntax-Highlight-Engine-Kate
 PORTVERSION=	0.10
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Port of the syntax highlight engine of the Kate texteditor
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Differences>0:devel/p5-Test-Differences

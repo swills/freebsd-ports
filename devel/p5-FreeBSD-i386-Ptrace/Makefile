@@ -1,5 +1,5 @@
 # Created by: TAKAHASHI Kaoru <kaoru@kaisei.org>
-# $FreeBSD: head/devel/p5-FreeBSD-i386-Ptrace/Makefile 377180 2015-01-16 15:35:05Z sunpoet $
+# $FreeBSD: head/devel/p5-FreeBSD-i386-Ptrace/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	FreeBSD-i386-Ptrace
 PORTVERSION=	0.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for ptrace on FreeBSD-i386
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

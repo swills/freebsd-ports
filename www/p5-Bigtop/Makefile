@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-Bigtop/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/www/p5-Bigtop/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Bigtop
 PORTVERSION=	0.38
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Web application data language processor
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Config-General>=0:devel/p5-Config-General \

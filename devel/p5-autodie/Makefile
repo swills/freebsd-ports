@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-autodie/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-autodie/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	autodie
 PORTVERSION=	2.29
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Replace functions with ones that succeed or die with lexical scope
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-BSD-Resource>=0:devel/p5-BSD-Resource \

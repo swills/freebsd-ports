@@ -1,5 +1,5 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/math/p5-Data-Float/Makefile 446921 2017-07-30 13:12:50Z sunpoet $
+# $FreeBSD: head/math/p5-Data-Float/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Float
 PORTVERSION=	0.013
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Details of the floating point data type
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

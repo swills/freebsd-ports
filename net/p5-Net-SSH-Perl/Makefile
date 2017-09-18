@@ -1,5 +1,5 @@
 # Created by: Jesper Skriver <jesper@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-SSH-Perl/Makefile 448729 2017-08-25 18:21:11Z sunpoet $
+# $FreeBSD: head/net/p5-Net-SSH-Perl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-SSH-Perl
 PORTVERSION=	2.14
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 module implementing both the SSH1 and SSH2 protocols
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

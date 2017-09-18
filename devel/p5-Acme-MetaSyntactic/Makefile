@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Acme-MetaSyntactic/Makefile 438803 2017-04-18 19:38:48Z sunpoet $
+# $FreeBSD: head/devel/p5-Acme-MetaSyntactic/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Acme-MetaSyntactic
 PORTVERSION=	1.013
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Themed metasyntactic variables names
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

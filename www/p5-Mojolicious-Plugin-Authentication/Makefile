@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <mat@FreeBSD.org>
-# $FreeBSD: head/www/p5-Mojolicious-Plugin-Authentication/Makefile 440552 2017-05-10 10:55:34Z sunpoet $
+# $FreeBSD: head/www/p5-Mojolicious-Plugin-Authentication/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Mojolicious-Plugin-Authentication
 PORTVERSION=	1.32
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Mojolicious plugin to make authentication a bit easier
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

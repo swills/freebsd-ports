@@ -1,4 +1,4 @@
-# $FreeBSD: head/ftp/p5-Net-FTP-Recursive/Makefile 444793 2017-06-30 22:13:55Z sunpoet $
+# $FreeBSD: head/ftp/p5-Net-FTP-Recursive/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-FTP-Recursive
 PORTVERSION=	2.04
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl module to provide recursive FTP client class
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 WRKSRC=		${WRKDIR}/${PORTNAME}

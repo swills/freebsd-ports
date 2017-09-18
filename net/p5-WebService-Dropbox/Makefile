@@ -1,5 +1,5 @@
 # Created by: Lung-Pin Chang <changlp@cs.nctu.edu.tw>
-# $FreeBSD: head/net/p5-WebService-Dropbox/Makefile 442291 2017-06-01 15:04:32Z woodsb02 $
+# $FreeBSD: head/net/p5-WebService-Dropbox/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WebService-Dropbox
 PORTVERSION=	2.07
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	woodsb02@FreeBSD.org
 COMMENT=	Perl interface to Dropbox API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

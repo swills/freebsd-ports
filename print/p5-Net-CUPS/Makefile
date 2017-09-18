@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/print/p5-Net-CUPS/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/p5-Net-CUPS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-CUPS
 PORTVERSION=	0.61
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	vg@FreeBSD.org
 COMMENT=	Interface to the CUPS API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libcupsimage.so:print/cups \

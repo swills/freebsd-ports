@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Git-Sub/Makefile 438028 2017-04-08 10:40:49Z sunpoet $
+# $FreeBSD: head/devel/p5-Git-Sub/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Git-Sub
 PORTVERSION=	0.163320
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Git commands imported into the git:: namespace
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

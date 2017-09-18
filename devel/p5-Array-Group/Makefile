@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/p5-Array-Group/Makefile 433364 2017-02-05 05:31:46Z sunpoet $
+# $FreeBSD: head/devel/p5-Array-Group/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Array-Group
 PORTVERSION=	4.2
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Convert an array into array of arrayrefs of uniform size N
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

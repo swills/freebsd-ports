@@ -1,5 +1,5 @@
 # Created by: Kurt Lidl <kurt.lidl@cello.com>
-# $FreeBSD: head/www/p5-CGI-Application-Plugin-Apache/Makefile 428143 2016-12-08 17:26:09Z tijl $
+# $FreeBSD: head/www/p5-CGI-Application-Plugin-Apache/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CGI-Application-Plugin-Apache
 PORTVERSION=	1.02
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	p5-CGI-Application>=3.22:www/p5-CGI-Application \
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 LICENSE_COMB=	dual
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 
 USES=		perl5
 USE_PERL5=	modbuild

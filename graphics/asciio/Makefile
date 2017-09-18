@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/graphics/asciio/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/graphics/asciio/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	asciio
 PORTVERSION=	1.51.3
@@ -12,7 +12,7 @@ DISTNAME=	App-Asciio-${PORTVERSION}
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Perl/GTK application that lets you draw ASCII charts using a GUI
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Algorithm-Diff>=0:devel/p5-Algorithm-Diff \

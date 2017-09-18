@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-NoSQL/Makefile 448327 2017-08-19 16:05:09Z sunpoet $
+# $FreeBSD: head/databases/p5-DBIx-NoSQL/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBIx-NoSQL
 PORTVERSION=	0.0021
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	NoSQL-ish overlay for an SQL database
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/p5-Text-Emoticon/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Text-Emoticon/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-Emoticon
 PORTVERSION=	0.04
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Factory class for Yahoo! and MSN emoticons
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-UNIVERSAL-require>=0:devel/p5-UNIVERSAL-require

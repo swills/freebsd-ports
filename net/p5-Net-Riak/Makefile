@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/p5-Net-Riak/Makefile 435856 2017-03-10 22:45:25Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Riak/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Riak
 PORTVERSION=	0.1702
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Interface to Riak
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

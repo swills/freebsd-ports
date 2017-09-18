@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-Spelling/Makefile 442705 2017-06-05 23:24:57Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Spelling/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Spelling
 PORTVERSION=	0.20
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Check for spelling errors in POD files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Pod-Spell>=0:textproc/p5-Pod-Spell \

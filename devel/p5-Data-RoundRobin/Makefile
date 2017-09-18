@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@lwhsu.org>
-# $FreeBSD: head/devel/p5-Data-RoundRobin/Makefile 375059 2014-12-20 18:16:10Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-RoundRobin/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-RoundRobin
 PORTVERSION=	0.03
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	lwhsu@FreeBSD.org
 COMMENT=	Serve data in a round robin manner
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

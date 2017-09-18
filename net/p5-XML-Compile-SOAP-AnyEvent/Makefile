@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/net/p5-XML-Compile-SOAP-AnyEvent/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-XML-Compile-SOAP-AnyEvent/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-Compile-SOAP-AnyEvent
 PORTVERSION=	0.90
@@ -16,7 +16,7 @@ BUILD_DEPENDS=	p5-AnyEvent-HTTP>=1.46:www/p5-AnyEvent-HTTP \
 		p5-XML-Compile-SOAP>=3.05:net/p5-XML-Compile-SOAP
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

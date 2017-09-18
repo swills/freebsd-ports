@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Text-MicroTemplate/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Text-MicroTemplate/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-MicroTemplate
 PORTVERSION=	0.23
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for standalone, fast and intelligent template engine
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-IO-stringy>0:devel/p5-IO-stringy

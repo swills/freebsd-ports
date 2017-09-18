@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-HTTP-Server-Simple-Static/Makefile 422664 2016-09-23 12:24:23Z lth $
+# $FreeBSD: head/www/p5-HTTP-Server-Simple-Static/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTTP-Server-Simple-Static
 PORTVERSION=	0.12
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Serve static files with HTTP::Server::Simple
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-File-LibMagic>=0:devel/p5-File-LibMagic \

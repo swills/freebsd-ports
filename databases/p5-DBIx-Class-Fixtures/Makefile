@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-DBIx-Class-Fixtures/Makefile 426790 2016-11-22 07:37:11Z kuriyama $
+# $FreeBSD: head/databases/p5-DBIx-Class-Fixtures/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBIx-Class-Fixtures
 PORTVERSION=	1.001036
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to use fixtures with DBIx::Class
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

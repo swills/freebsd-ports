@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/astro/p5-Astro-SpaceTrack/Makefile 441719 2017-05-25 21:01:39Z sunpoet $
+# $FreeBSD: head/astro/p5-Astro-SpaceTrack/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Astro-SpaceTrack
 PORTVERSION=	0.099
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Retrieve orbital data from www.space-track.org
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTTP-Date>=0:www/p5-HTTP-Date \

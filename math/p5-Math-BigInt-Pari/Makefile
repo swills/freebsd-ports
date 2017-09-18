@@ -1,5 +1,5 @@
 # Created by: Andrey <gugu@zoo.rambler.ru>
-# $FreeBSD: head/math/p5-Math-BigInt-Pari/Makefile 431309 2017-01-12 20:02:59Z sunpoet $
+# $FreeBSD: head/math/p5-Math-BigInt-Pari/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-BigInt-Pari
 PORTVERSION=	1.3003
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Use Math::Pari for Math::BigInt routines
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Math-BigInt>=1.999808:math/p5-Math-BigInt \

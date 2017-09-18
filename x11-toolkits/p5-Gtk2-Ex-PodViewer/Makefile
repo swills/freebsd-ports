@@ -1,5 +1,5 @@
 # Created by: ports@c0decafe.net
-# $FreeBSD: head/x11-toolkits/p5-Gtk2-Ex-PodViewer/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-toolkits/p5-Gtk2-Ex-PodViewer/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Gtk2-Ex-PodViewer
 PORTVERSION=	0.18
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Displays plain old documentation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Gtk2>=0:x11-toolkits/p5-Gtk2 \

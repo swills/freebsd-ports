@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Text-Flowed/Makefile 375378 2014-12-24 00:14:11Z bofh $
+# $FreeBSD: head/textproc/p5-Text-Flowed/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-Flowed
 DISTVERSION=	0.14
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	RFC2646 format=flowed
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

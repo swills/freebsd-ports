@@ -1,5 +1,5 @@
 # Created by: TERAMOTO Masahiro <markun@onohara.to>
-# $FreeBSD: head/devel/p5-Danga-Socket-Callback/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Danga-Socket-Callback/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Danga-Socket-Callback
 PORTVERSION=	0.013
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	markun@onohara.to
 COMMENT=	Use Danga::Socket From Callbacks
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Danga-Socket>=0:devel/p5-Danga-Socket

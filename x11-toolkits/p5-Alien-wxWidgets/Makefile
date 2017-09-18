@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/x11-toolkits/p5-Alien-wxWidgets/Makefile 443053 2017-06-10 01:51:02Z sunpoet $
+# $FreeBSD: head/x11-toolkits/p5-Alien-wxWidgets/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Alien-wxWidgets
 PORTVERSION=	0.69
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 module for building, finding and using wxWidgets binaries
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Module-Pluggable>=5.1:devel/p5-Module-Pluggable

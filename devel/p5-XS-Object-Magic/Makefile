@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-XS-Object-Magic/Makefile 442428 2017-06-02 18:13:45Z sunpoet $
+# $FreeBSD: head/devel/p5-XS-Object-Magic/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XS-Object-Magic
 PORTVERSION=	0.04
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Opaque, extensible XS pointer backed objects using sv_magic
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-ExtUtils-Depends>=0.302:devel/p5-ExtUtils-Depends

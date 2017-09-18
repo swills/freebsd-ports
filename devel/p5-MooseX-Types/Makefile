@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-Types/Makefile 433729 2017-02-09 13:50:42Z sunpoet $
+# $FreeBSD: head/devel/p5-MooseX-Types/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooseX-Types
 PORTVERSION=	0.50
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Organise your Moose types in libraries
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Carp-Clan>=6.00:devel/p5-Carp-Clan \

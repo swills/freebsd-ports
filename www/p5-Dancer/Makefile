@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Dancer/Makefile 416290 2016-06-02 19:50:51Z pi $
+# $FreeBSD: head/www/p5-Dancer/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Dancer
 PORTVERSION=	1.3202
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for minimal-effort oriented web application framework
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

@@ -1,5 +1,5 @@
 # Created by: Mosconi <mosconi.rmg@gmail.com>
-# $FreeBSD: head/security/p5-Crypt-OpenSSL-CA/Makefile 443904 2017-06-19 18:05:26Z pi $
+# $FreeBSD: head/security/p5-Crypt-OpenSSL-CA/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-OpenSSL-CA
 PORTVERSION=	0.24
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for OpenSSL CA API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 # Note: The Devel::Mallinfo dependency doesn't work on FreeBSD; mallinfo()

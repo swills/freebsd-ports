@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/p5-XML-DOM-Lite/Makefile 442484 2017-06-03 13:16:43Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-DOM-Lite/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-DOM-Lite
 PORTVERSION=	0.16
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Lite Pure Perl XML DOM Parser Kit
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

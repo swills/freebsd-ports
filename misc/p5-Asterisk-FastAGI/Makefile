@@ -1,5 +1,5 @@
 # Created by: Maksym Sobolyev <sobomax@pbxpress.it>
-# $FreeBSD: head/misc/p5-Asterisk-FastAGI/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/misc/p5-Asterisk-FastAGI/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Asterisk-FastAGI
 PORTVERSION=	0.02
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sobomax@FreeBSD.org
 COMMENT=	Perl module for FastAGI handling
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Module-Install>=0:devel/p5-Module-Install \

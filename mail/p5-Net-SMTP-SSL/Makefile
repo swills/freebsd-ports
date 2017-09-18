@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/p5-Net-SMTP-SSL/Makefile 425543 2016-11-06 16:49:54Z sunpoet $
+# $FreeBSD: head/mail/p5-Net-SMTP-SSL/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-SMTP-SSL
 PORTVERSION=	1.04
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	SSL support for Net::SMTP
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-IO-Socket-SSL>=0:security/p5-IO-Socket-SSL

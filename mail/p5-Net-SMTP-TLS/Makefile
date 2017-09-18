@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/mail/p5-Net-SMTP-TLS/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Net-SMTP-TLS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-SMTP-TLS
 PORTVERSION=	0.12
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	SMTP client supporting TLS and AUTH
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Digest-HMAC>=0:security/p5-Digest-HMAC \

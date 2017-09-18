@@ -1,5 +1,5 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/devel/p5-Connector/Makefile 429930 2016-12-29 17:35:04Z sunpoet $
+# $FreeBSD: head/devel/p5-Connector/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Connector
 PORTVERSION=	1.22
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	svysh.fbsd@gmail.com
 COMMENT=	Generic connection to a hierarchical-structured data set
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	bash:shells/bash \

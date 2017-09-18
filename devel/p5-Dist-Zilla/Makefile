@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Dist-Zilla/Makefile 445511 2017-07-11 16:59:45Z sunpoet $
+# $FreeBSD: head/devel/p5-Dist-Zilla/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Dist-Zilla
 PORTVERSION=	6.010
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Distribution builder
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/textproc/p5-Lingua-EN-Numbers-Ordinate/Makefile 391460 2015-07-06 17:47:29Z sunpoet $
+# $FreeBSD: head/textproc/p5-Lingua-EN-Numbers-Ordinate/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Lingua-EN-Numbers-Ordinate
 PORTVERSION=	1.04
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Go from cardinal number (3) to ordinal ("3rd")
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

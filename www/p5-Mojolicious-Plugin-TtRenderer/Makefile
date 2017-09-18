@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/www/p5-Mojolicious-Plugin-TtRenderer/Makefile 446216 2017-07-19 18:05:12Z sunpoet $
+# $FreeBSD: head/www/p5-Mojolicious-Plugin-TtRenderer/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Mojolicious-Plugin-TtRenderer
 PORTVERSION=	1.59
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Template-toolkit renderer for Mojolicious
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

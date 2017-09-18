@@ -1,5 +1,5 @@
-# Created by: Craig Leres <leres@ee.lbl.gov>
-# $FreeBSD: head/security/broccoli/Makefile 424875 2016-10-28 17:55:30Z danfe $
+# Created by: Craig Leres <leres@FreeBSD.org>
+# $FreeBSD: head/security/broccoli/Makefile 449916 2017-09-15 18:18:26Z leres $
 
 PORTNAME=	broccoli
 PORTVERSION=	1.97
@@ -8,7 +8,7 @@ CATEGORIES=	security
 MASTER_SITES=	http://www.bro.org/downloads/release/
 DISTNAME=	bro-2.4.1
 
-MAINTAINER=	leres@ee.lbl.gov
+MAINTAINER=	leres@FreeBSD.org
 COMMENT=	Bro Client Communications Library
 
 LICENSE=	BSD3CLAUSE

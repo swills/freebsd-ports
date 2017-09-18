@@ -1,5 +1,5 @@
 # Created by: Matthew Fuller <fullermd@over-yonder.net>
-# $FreeBSD: head/textproc/p5-Text-WikiCreole/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/textproc/p5-Text-WikiCreole/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=		Text-WikiCreole
 PORTVERSION=		0.07
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=		p5-
 MAINTAINER=		fullermd@over-yonder.net
 COMMENT=	Implementation of the Wiki Creole markup language
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

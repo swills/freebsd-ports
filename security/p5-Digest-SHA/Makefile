@@ -1,5 +1,5 @@
 # Created by: Travis Campbell <hcoyote@ghostar.org>
-# $FreeBSD: head/security/p5-Digest-SHA/Makefile 449406 2017-09-07 16:12:12Z sunpoet $
+# $FreeBSD: head/security/p5-Digest-SHA/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Digest-SHA
 PORTVERSION=	5.97
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for SHA-1/224/256/384/512
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Pod>=1:devel/p5-Test-Pod \

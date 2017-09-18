@@ -1,5 +1,5 @@
 # Created by: alan <Alan@Wave2.org>
-# $FreeBSD: head/devel/p5-MooseX-Attribute-ENV/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Attribute-ENV/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooseX-Attribute-ENV
 PORTVERSION=	0.02
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	Alan@Wave2.org
 COMMENT=	Set default of an attribute to a value from %ENV
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Moose>=1.19:devel/p5-Moose

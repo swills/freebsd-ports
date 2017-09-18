@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-File/Makefile 442355 2017-06-01 23:52:13Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-File/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-File
 PORTVERSION=	1.44.3
@@ -11,7 +11,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:R}${PORTVERSION:E}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Test file attributes
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-utf8>=0:devel/p5-Test-utf8

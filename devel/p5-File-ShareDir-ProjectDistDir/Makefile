@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-File-ShareDir-ProjectDistDir/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-File-ShareDir-ProjectDistDir/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-ShareDir-ProjectDistDir
 PORTVERSION=	1.000008
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for set-and-forget using a directory in projects root
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-File-ShareDir>0:devel/p5-File-ShareDir \

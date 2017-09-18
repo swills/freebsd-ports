@@ -1,5 +1,5 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Data-URIEncode/Makefile 415603 2016-05-21 16:39:34Z woodsb02 $
+# $FreeBSD: head/devel/p5-Data-URIEncode/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-URIEncode
 PORTVERSION=	0.11
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	woodsb02@FreeBSD.org
 COMMENT=	Allow complex data structures to be encoded using flat URIs
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

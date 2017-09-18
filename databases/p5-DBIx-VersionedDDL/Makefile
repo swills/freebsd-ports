@@ -1,5 +1,5 @@
 # Created by: Alan Snelson <Alan@Wave2.org>
-# $FreeBSD: head/databases/p5-DBIx-VersionedDDL/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBIx-VersionedDDL/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBIx-VersionedDDL
 PORTVERSION=	0.17
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	Alan@Wave2.org
 COMMENT=	Upgrade and downgrade database schemas to a specified version
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DBD-SQLite>=1.31:databases/p5-DBD-SQLite \

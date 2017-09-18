@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Pod-MinimumVersion/Makefile 427096 2016-11-25 10:04:53Z mat $
+# $FreeBSD: head/textproc/p5-Pod-MinimumVersion/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Pod-MinimumVersion
 PORTVERSION=	50
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	report minimum Perl version for given POD
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

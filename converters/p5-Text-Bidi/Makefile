@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/converters/p5-Text-Bidi/Makefile 423516 2016-10-08 16:48:02Z adamw $
+# $FreeBSD: head/converters/p5-Text-Bidi/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-Bidi
 PORTVERSION=	2.12
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interface to the libfribidi
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-ExtUtils-PkgConfig>=0:devel/p5-ExtUtils-PkgConfig \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/p5-Proclet/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/sysutils/p5-Proclet/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Proclet
 PORTVERSION=	0.35
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for minimalistic Supervisor
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

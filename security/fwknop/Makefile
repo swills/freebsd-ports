@@ -1,8 +1,8 @@
 # Created by: Sean Greven <sean.greven@gmail.com>
-# $FreeBSD: head/security/fwknop/Makefile 427552 2016-12-02 11:58:21Z mat $
+# $FreeBSD: head/security/fwknop/Makefile 449936 2017-09-15 20:49:54Z swills $
 
 PORTNAME=	fwknop
-PORTVERSION=	2.6.8
+PORTVERSION=	2.6.9
 PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://www.cipherdyne.org/fwknop/download/
@@ -11,6 +11,10 @@ MAINTAINER=	sean.greven@gmail.com
 COMMENT=	SPA implementation for Linux and FreeBSD
 
 LICENSE=	GPLv2
+
+BUILD_DEPENDS= wget:ftp/wget
+RUN_DEPENDS=   wget:ftp/wget
+LIB_DEPENDS+=  libassuan.so:security/libassuan
 
 CPE_VENDOR=	cipherdyne
 
@@ -40,6 +44,7 @@ IPFW_CONFIGURE_WITH=	ipfw=/sbin/ipfw
 PF_CONFIGURE_WITH=	pf=/sbin/pfctl
 
 GPGME_LIB_DEPENDS=	libgpgme.so:security/gpgme
+GPGME_LIB_DEPENDS+=	libgpg-error.so:security/libgpg-error
 GPGME_CONFIGURE_WITH=	gpgme
 
 post-install:

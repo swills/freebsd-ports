@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Module-Runtime-Conflicts/Makefile 431901 2017-01-19 19:26:21Z sunpoet $
+# $FreeBSD: head/devel/p5-Module-Runtime-Conflicts/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Module-Runtime-Conflicts
 PORTVERSION=	0.003
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Provide information on conflicts for Module::Runtime
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENCE
 

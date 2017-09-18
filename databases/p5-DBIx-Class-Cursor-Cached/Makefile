@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-Class-Cursor-Cached/Makefile 425511 2016-11-06 16:46:44Z sunpoet $
+# $FreeBSD: head/databases/p5-DBIx-Class-Cursor-Cached/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBIx-Class-Cursor-Cached
 PORTVERSION=	1.001004
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Cursor class with built-in caching support
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Carp-Clan>=6.0:devel/p5-Carp-Clan \

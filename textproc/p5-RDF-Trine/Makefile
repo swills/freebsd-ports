@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-RDF-Trine/Makefile 443813 2017-06-18 05:52:03Z sunpoet $
+# $FreeBSD: head/textproc/p5-RDF-Trine/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	RDF-Trine
 PORTVERSION=	1.015
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tj@FreeBSD.org
 COMMENT=	RDF Framework for Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Algorithm-Combinatorics>=0:math/p5-Algorithm-Combinatorics \

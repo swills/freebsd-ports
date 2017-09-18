@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTML-Display/Makefile 447703 2017-08-10 18:23:45Z sunpoet $
+# $FreeBSD: head/www/p5-HTML-Display/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-Display
 PORTVERSION=	0.40
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Display HTML locally in a browser
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTML-TokeParser-Simple>=2:www/p5-HTML-TokeParser-Simple \

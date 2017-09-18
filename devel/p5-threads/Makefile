@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-threads/Makefile 442427 2017-06-02 18:13:40Z sunpoet $
+# $FreeBSD: head/devel/p5-threads/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	threads
 PORTVERSION=	2.16
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interpreter-based threads
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

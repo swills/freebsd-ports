@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@infor.org>
-# $FreeBSD: head/devel/p5-IO-Pager/Makefile 440889 2017-05-14 18:53:17Z sunpoet $
+# $FreeBSD: head/devel/p5-IO-Pager/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IO-Pager
 PORTVERSION=	0.39
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Select a pager, optionally pipe it output if destination is a TTY
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-Which>=0:sysutils/p5-File-Which

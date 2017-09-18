@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-Net-Async-HTTP/Makefile 430152 2016-12-31 19:11:57Z sunpoet $
+# $FreeBSD: head/www/p5-Net-Async-HTTP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Async-HTTP
 PORTVERSION=	0.41
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Use HTTP with IO::Async
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/math/p5-Text-AsciiTeX/Makefile 376486 2015-01-07 17:56:34Z sunpoet $
+# $FreeBSD: head/math/p5-Text-AsciiTeX/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-AsciiTeX
 PORTVERSION=	0.05
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Convert (La)TeX formulas to ASCII art
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

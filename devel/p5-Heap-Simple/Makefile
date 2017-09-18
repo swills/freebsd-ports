@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@daltons.ca>
-# $FreeBSD: head/devel/p5-Heap-Simple/Makefile 375378 2014-12-24 00:14:11Z bofh $
+# $FreeBSD: head/devel/p5-Heap-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Heap-Simple
 PORTVERSION=	0.13
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Fast and easy to use classic heaps
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Razi Khaja <razi@genet.sickkids.on.ca>
-# $FreeBSD: head/biology/p5-Bio-Das/Makefile 428870 2016-12-18 15:25:18Z sunpoet $
+# $FreeBSD: head/biology/p5-Bio-Das/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Bio-Das
 PORTVERSION=	1.17
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Client-side library for Distributed Genome Annotation System
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-BioPerl>=0:biology/p5-BioPerl \

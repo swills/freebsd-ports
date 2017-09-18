@@ -1,5 +1,5 @@
 # Created by: Craig Manley
-# $FreeBSD: head/devel/p5-Config-Properties/Makefile 386665 2015-05-18 09:14:17Z culot $
+# $FreeBSD: head/devel/p5-Config-Properties/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Config-Properties
 PORTVERSION=	1.80
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Read and write property files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

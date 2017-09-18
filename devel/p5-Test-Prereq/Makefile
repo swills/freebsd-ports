@@ -1,5 +1,5 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/devel/p5-Test-Prereq/Makefile 430528 2017-01-04 02:00:23Z wen $
+# $FreeBSD: head/devel/p5-Test-Prereq/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Prereq
 PORTVERSION=	2.002
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	svysh.fbsd@gmail.com
 COMMENT=	Check if Makefile.PL has the right pre-requisites
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Module-Extract-Use>0:devel/p5-Module-Extract-Use \

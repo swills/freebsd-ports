@@ -1,5 +1,5 @@
 # Created by: Andrey Kostenko <andrey@kostenko.name>
-# $FreeBSD: head/databases/p5-DBIx-Custom/Makefile 437331 2017-03-30 21:36:22Z sunpoet $
+# $FreeBSD: head/databases/p5-DBIx-Custom/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBIx-Custom
 PORTVERSION=	0.4000
@@ -11,7 +11,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:C/00$//}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Customizable DBI
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DBD-SQLite>=1.25:databases/p5-DBD-SQLite \

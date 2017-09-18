@@ -1,8 +1,8 @@
 # Created by: Neil Booth
-# $FreeBSD: head/finance/electrum/Makefile 446910 2017-07-30 12:37:46Z riggs $
+# $FreeBSD: head/finance/electrum/Makefile 449998 2017-09-17 12:55:55Z ehaupt $
 
 PORTNAME=	electrum
-PORTVERSION=	2.9.0
+PORTVERSION=	2.9.3
 CATEGORIES=	finance python
 MASTER_SITES=	https://download.electrum.org/${PORTVERSION}/ \
 		http://download.electrum.org/${PORTVERSION}/

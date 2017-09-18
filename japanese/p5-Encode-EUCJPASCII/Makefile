@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/p5-Encode-EUCJPASCII/Makefile 392544 2015-07-20 01:16:56Z hrs $
+# $FreeBSD: head/japanese/p5-Encode-EUCJPASCII/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Encode-EUCJPASCII
 PORTVERSION=	0.03
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	ja-p5-
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Perl5 module for eucJP-open
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

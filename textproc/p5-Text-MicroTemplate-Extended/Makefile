@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Text-MicroTemplate-Extended/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Text-MicroTemplate-Extended/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-MicroTemplate-Extended
 PORTVERSION=	0.17
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for extended MicroTemplate
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

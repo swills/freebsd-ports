@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-IO-Socket-Timeout/Makefile 416550 2016-06-08 17:14:53Z mat $
+# $FreeBSD: head/net/p5-IO-Socket-Timeout/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IO-Socket-Timeout
 PORTVERSION=	0.32
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	pi@FreeBSD.org
 COMMENT=	IO::Socket with read/write timeout
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-PerlIO-via-Timeout>=0.32:devel/p5-PerlIO-via-Timeout

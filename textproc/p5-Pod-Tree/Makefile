@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/p5-Pod-Tree/Makefile 430155 2016-12-31 19:51:34Z adamw $
+# $FreeBSD: head/textproc/p5-Pod-Tree/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Pod-Tree
 PORTVERSION=	1.25
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Create a static syntax tree for a POD
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-HTML-Stream>=1.49:www/p5-HTML-Stream \

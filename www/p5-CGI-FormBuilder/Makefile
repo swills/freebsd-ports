@@ -1,5 +1,5 @@
 # Created by: Fernan Aguero
-# $FreeBSD: head/www/p5-CGI-FormBuilder/Makefile 435496 2017-03-05 18:50:18Z sunpoet $
+# $FreeBSD: head/www/p5-CGI-FormBuilder/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CGI-FormBuilder
 PORTVERSION=	3.1000
@@ -11,7 +11,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:S|00$||}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	FormBuilder for CGI
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-CGI>=0:www/p5-CGI

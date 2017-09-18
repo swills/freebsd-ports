@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-SVG/Makefile 445331 2017-07-08 13:53:29Z sunpoet $
+# $FreeBSD: head/textproc/p5-SVG/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	SVG
 PORTVERSION=	2.78
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for generating Scalable Vector Graphics (SVG) documents
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Data-Report/Makefile 430025 2016-12-30 19:20:36Z sunpoet $
+# $FreeBSD: head/textproc/p5-Data-Report/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Report
 PORTVERSION=	0.10
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tobez@FreeBSD.org
 COMMENT=	Data::Report - Framework for flexible reporting
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 COMMON_DEPENDS=	p5-HTML-Parser>0:www/p5-HTML-Parser \

@@ -1,5 +1,5 @@
 # Created by: TAOKA Fumiyoshi <fmysh@iijmio-mail.jp>
-# $FreeBSD: head/japanese/p5-Text-MeCab/Makefile 444673 2017-06-29 19:13:49Z sunpoet $
+# $FreeBSD: head/japanese/p5-Text-MeCab/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-MeCab
 PORTVERSION=	0.20009
@@ -10,7 +10,7 @@ MASTER_SITES=	CPAN
 MAINTAINER=	fmysh@iijmio-mail.jp
 COMMENT=	Alternate Interface To libmecab
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Class-Accessor>0:devel/p5-Class-Accessor

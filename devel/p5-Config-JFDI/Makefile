@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Config-JFDI/Makefile 445903 2017-07-15 17:23:43Z sunpoet $
+# $FreeBSD: head/devel/p5-Config-JFDI/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Config-JFDI
 PORTVERSION=	0.065
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Catalyst::Plugin::ConfigLoader-style layer over Config::Any
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Carp-Clan-Share>=0:devel/p5-Carp-Clan-Share \

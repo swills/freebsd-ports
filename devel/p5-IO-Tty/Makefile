@@ -1,5 +1,5 @@
 # Created by: Will Andrews <andrews@technologist.com>
-# $FreeBSD: head/devel/p5-IO-Tty/Makefile 430955 2017-01-09 14:41:24Z sunpoet $
+# $FreeBSD: head/devel/p5-IO-Tty/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IO-Tty
 PORTVERSION=	1.12
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Flexible I/O Perl5 module that allows manipulation of pseudo-TTYs
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

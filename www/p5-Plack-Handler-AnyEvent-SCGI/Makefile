@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Plack-Handler-AnyEvent-SCGI/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Plack-Handler-AnyEvent-SCGI/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Plack-Handler-AnyEvent-SCGI
 PORTVERSION=	0.03
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for PSGI handler on AnyEvent::SCGI
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

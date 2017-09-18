@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Moo/Makefile 442349 2017-06-01 23:51:42Z sunpoet $
+# $FreeBSD: head/devel/p5-Moo/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Moo
 PORTVERSION=	2.003002
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Minimalist Object Orientation (with Moose compatibility)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Method-Modifiers>=1.10:devel/p5-Class-Method-Modifiers \

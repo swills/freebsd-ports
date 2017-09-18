@@ -1,5 +1,5 @@
 # Created by: Geraud CONTINSOUZAS <geraud@gcu.info>
-# $FreeBSD: head/devel/p5-Log-Dispatchouli/Makefile 444340 2017-06-26 03:24:28Z sunpoet $
+# $FreeBSD: head/devel/p5-Log-Dispatchouli/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Log-Dispatchouli
 PORTVERSION=	2.012
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	geraud@gcu.info
 COMMENT=	Log events to an array (reference)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

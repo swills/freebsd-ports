@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/www/p5-HTML-FromText/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-FromText/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=		HTML-FromText
 PORTVERSION=		2.07
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=		p5-
 MAINTAINER=		danilo@FreeBSD.org
 COMMENT=	Mark up text as HTML
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Email-Find>=0.09:mail/p5-Email-Find \

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Git-Repository/Makefile 417231 2016-06-21 15:07:27Z mat $
+# $FreeBSD: head/devel/p5-Git-Repository/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Git-Repository
 PORTVERSION=	1.320
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interface to Git repositories
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

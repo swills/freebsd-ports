@@ -1,5 +1,5 @@
 # Created by: Kurt Lidl <kurt.lidl@cello.com>
-# $FreeBSD: head/devel/p5-Number-Tolerant/Makefile 442351 2017-06-01 23:51:52Z sunpoet $
+# $FreeBSD: head/devel/p5-Number-Tolerant/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Number-Tolerant
 PORTVERSION=	1.708
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Provides inexact number comparisons with tolerance ranges
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

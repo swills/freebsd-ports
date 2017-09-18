@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/p5-AnyData/Makefile 435011 2017-02-28 09:44:45Z sunpoet $
+# $FreeBSD: head/devel/p5-AnyData/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	AnyData
 PORTVERSION=	0.12
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Easy access to data in many formats
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

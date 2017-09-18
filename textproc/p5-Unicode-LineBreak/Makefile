@@ -1,5 +1,5 @@
 # Created by: Olivier Girard <Olivier.Girard@univ-angers.fr>
-# $FreeBSD: head/textproc/p5-Unicode-LineBreak/Makefile 438288 2017-04-11 15:56:54Z sunpoet $
+# $FreeBSD: head/textproc/p5-Unicode-LineBreak/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Unicode-LineBreak
 PORTVERSION=	2017.004
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	Olivier.Girard@univ-angers.fr
 COMMENT=	Unicode-LineBreak package
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-MIME-Charset>=1.006.2:mail/p5-MIME-Charset

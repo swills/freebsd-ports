@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/devel/p5-Data-Dump/Makefile 390902 2015-06-29 13:50:38Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-Dump/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Dump
 PORTVERSION=	1.23
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Pretty printing of data structures
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

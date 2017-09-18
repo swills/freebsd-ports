@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-SQL-Maker/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-SQL-Maker/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	SQL-Maker
 PORTVERSION=	1.21
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for yet another SQL builder
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

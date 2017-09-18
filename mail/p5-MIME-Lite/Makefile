@@ -1,5 +1,5 @@
 # Created by: Alex Perel <veers@disturbed.net>
-# $FreeBSD: head/mail/p5-MIME-Lite/Makefile 435096 2017-02-28 22:50:41Z sunpoet $
+# $FreeBSD: head/mail/p5-MIME-Lite/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MIME-Lite
 PORTVERSION=	3.030
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple interface for creating (not parsing!) MIME messages
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

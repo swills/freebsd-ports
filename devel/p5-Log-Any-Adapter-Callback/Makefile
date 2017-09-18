@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Log-Any-Adapter-Callback/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Log-Any-Adapter-Callback/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Log-Any-Adapter-Callback
 PORTVERSION=	0.09
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tj@FreeBSD.org
 COMMENT=	Perl extension adapter for Log::Any with callbacks
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS:=	p5-Log-Any>0:devel/p5-Log-Any

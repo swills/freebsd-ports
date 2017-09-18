@@ -1,5 +1,5 @@
 # Created by: Peter Pentchev <roam@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Time-Human/Makefile 375378 2014-12-24 00:14:11Z bofh $
+# $FreeBSD: head/textproc/p5-Time-Human/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Time-Human
 PORTVERSION=	1.03
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Convert localtime() format to "speaking clock" time
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

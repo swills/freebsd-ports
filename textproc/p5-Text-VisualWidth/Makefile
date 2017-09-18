@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Text-VisualWidth/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/textproc/p5-Text-VisualWidth/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-VisualWidth
 PORTVERSION=	0.02
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for trimming text by terminal columns
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

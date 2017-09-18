@@ -1,5 +1,5 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/lang/p5-Tcl/Makefile 417889 2016-07-01 14:27:31Z mat $
+# $FreeBSD: head/lang/p5-Tcl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Tcl
 PORTVERSION=	1.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Tcl extension module for Perl5
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 PORTSCOUT=	limit:^[0-9\.]*$$

@@ -1,5 +1,5 @@
 # Created by: Anes Mukhametov <anes@anes.su>
-# $FreeBSD: head/devel/p5-CPAN-Site/Makefile 444753 2017-06-30 14:00:18Z sunpoet $
+# $FreeBSD: head/devel/p5-CPAN-Site/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CPAN-Site
 PORTVERSION=	1.11
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	anes@anes.su
 COMMENT=	Extend CPAN with private packages
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Archive-Zip>=0:archivers/p5-Archive-Zip \

@@ -1,5 +1,5 @@
 # Created by: Nobutaka Mantani <nobutaka@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Parse-Win32Registry/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-Parse-Win32Registry/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Parse-Win32Registry
 PORTVERSION=	1.0
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	nobutaka@FreeBSD.org
 COMMENT=	Perl extension for parsing Win32Registry
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

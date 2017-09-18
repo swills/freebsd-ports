@@ -1,5 +1,5 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/databases/p5-DBIx-Handler/Makefile 430895 2017-01-08 20:43:39Z sunpoet $
+# $FreeBSD: head/databases/p5-DBIx-Handler/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBIx-Handler
 PORTVERSION=	0.14
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	svysh.fbsd@gmail.com
 COMMENT=	Fork-safe and easy transaction handling DBI handler
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

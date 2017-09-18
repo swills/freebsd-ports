@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Class-Delegation/Makefile 435015 2017-02-28 09:45:05Z sunpoet $
+# $FreeBSD: head/devel/p5-Class-Delegation/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Class-Delegation
 PORTVERSION=	1.9.0
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Object-oriented delegation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

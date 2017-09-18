@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Log-Dispatch-FileWriteRotate/Makefile 425528 2016-11-06 16:48:03Z sunpoet $
+# $FreeBSD: head/devel/p5-Log-Dispatch-FileWriteRotate/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Log-Dispatch-FileWriteRotate
 PORTVERSION=	0.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Log to files that archive/rotate themselves, w/ File::Write::Rotate
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

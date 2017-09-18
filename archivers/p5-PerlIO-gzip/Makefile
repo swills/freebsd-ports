@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/archivers/p5-PerlIO-gzip/Makefile 444137 2017-06-22 23:40:40Z sunpoet $
+# $FreeBSD: head/archivers/p5-PerlIO-gzip/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	PerlIO-gzip
 PORTVERSION=	0.20
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension to provide a PerlIO layer to gzip/gunzip
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-DBD-CSV/Makefile 425417 2016-11-05 18:01:23Z sunpoet $
+# $FreeBSD: head/databases/p5-DBD-CSV/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBD-CSV
 PORTVERSION=	0.49
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	DBI driver for CSV files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DBI>=1.636:databases/p5-DBI \

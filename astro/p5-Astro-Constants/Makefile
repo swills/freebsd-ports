@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/astro/p5-Astro-Constants/Makefile 441089 2017-05-17 17:13:11Z sunpoet $
+# $FreeBSD: head/astro/p5-Astro-Constants/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Astro-Constants
 PORTVERSION=	0.1100
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Physical constants for use in astronomy
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

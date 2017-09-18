@@ -1,5 +1,5 @@
 # Created by: tj@FreeBSD.org
-# $FreeBSD: head/textproc/p5-Text-CSV-Hashify/Makefile 437850 2017-04-06 02:00:05Z tj $
+# $FreeBSD: head/textproc/p5-Text-CSV-Hashify/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-CSV-Hashify
 PORTVERSION=	0.08
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tj@FreeBSD.org
 COMMENT=	Composition and decomposition of comma-separated values into hashes
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Text-CSV>=0:textproc/p5-Text-CSV

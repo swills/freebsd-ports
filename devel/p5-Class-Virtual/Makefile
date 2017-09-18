@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Class-Virtual/Makefile 419830 2016-08-08 12:07:57Z wen $
+# $FreeBSD: head/devel/p5-Class-Virtual/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Class-Virtual
 PORTVERSION=	0.08
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Base class for virtual base classes in Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Carp-Assert>=0:devel/p5-Carp-Assert \

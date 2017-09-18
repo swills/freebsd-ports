@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/p5-Crypt-Format/Makefile 433291 2017-02-04 09:07:53Z pi $
+# $FreeBSD: head/security/p5-Crypt-Format/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-Format
 PORTVERSION=	0.07
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	pi@FreeBSD.org
 COMMENT=	Conversion utilities for encryption applications
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

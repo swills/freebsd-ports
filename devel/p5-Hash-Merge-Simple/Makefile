@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Hash-Merge-Simple/Makefile 434770 2017-02-25 04:25:33Z sunpoet $
+# $FreeBSD: head/devel/p5-Hash-Merge-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Hash-Merge-Simple
 PORTVERSION=	0.051
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Recursively merge two or more hashes, simply
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 # Do not add p5-Clone to BUILD_DEPENDS and RUN_DEPENDS.

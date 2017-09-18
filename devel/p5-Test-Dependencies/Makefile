@@ -1,5 +1,5 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/devel/p5-Test-Dependencies/Makefile 423547 2016-10-08 22:42:06Z adamw $
+# $FreeBSD: head/devel/p5-Test-Dependencies/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Dependencies
 PORTVERSION=	0.23
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Ensure that your Makefile.PL specifies all module dependencies
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-Find-Rule-Perl>=0:devel/p5-File-Find-Rule-Perl \

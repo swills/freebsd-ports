@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Package-Stash-XS/Makefile 430956 2017-01-09 14:41:29Z sunpoet $
+# $FreeBSD: head/devel/p5-Package-Stash-XS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Package-Stash-XS
 PORTVERSION=	0.28
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Faster and more correct implementation of the Package::Stash API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal \

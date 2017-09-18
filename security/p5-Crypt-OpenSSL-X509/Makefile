@@ -1,5 +1,5 @@
 # Created by: kftseng@iyard.org
-# $FreeBSD: head/security/p5-Crypt-OpenSSL-X509/Makefile 438642 2017-04-16 11:08:15Z sunpoet $
+# $FreeBSD: head/security/p5-Crypt-OpenSSL-X509/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-OpenSSL-X509
 PORTVERSION=	1.807
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for OpenSSL X509 API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BROKEN_SSL=	openssl-devel

@@ -1,5 +1,5 @@
 # Created by: Erwin Lansing <erwin@FreeBSD.org>
-# $FreeBSD: head/security/p5-Crypt-PasswdMD5/Makefile 435035 2017-02-28 09:47:52Z sunpoet $
+# $FreeBSD: head/security/p5-Crypt-PasswdMD5/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-PasswdMD5
 PORTVERSION=	1.40
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module that provides interoperable MD5-based crypt() function
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

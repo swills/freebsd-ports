@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBICx-MapMaker/Makefile 442336 2017-06-01 23:50:38Z sunpoet $
+# $FreeBSD: head/databases/p5-DBICx-MapMaker/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBICx-MapMaker
 PORTVERSION=	0.03
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl 5 module to automatically create a DBIx::Class mapping table
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

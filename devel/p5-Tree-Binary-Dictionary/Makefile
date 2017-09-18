@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@daltons.ca>
-# $FreeBSD: head/devel/p5-Tree-Binary-Dictionary/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Tree-Binary-Dictionary/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Tree-Binary-Dictionary
 PORTVERSION=	1.01
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Dictionary API to a binary tree
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Tree-Binary>=0:devel/p5-Tree-Binary

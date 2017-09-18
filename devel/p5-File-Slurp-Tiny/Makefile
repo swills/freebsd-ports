@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-File-Slurp-Tiny/Makefile 392347 2015-07-17 12:23:13Z sunpoet $
+# $FreeBSD: head/devel/p5-File-Slurp-Tiny/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Slurp-Tiny
 PORTVERSION=	0.004
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Simple, sane and efficient file slurper
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

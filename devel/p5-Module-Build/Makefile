@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Module-Build/Makefile 442348 2017-06-01 23:51:37Z sunpoet $
+# $FreeBSD: head/devel/p5-Module-Build/Makefile 449893 2017-09-15 08:58:46Z mat $
 #
 # If you have compelling evidence that some ports need at least this version of
 # p5-Module-Build to build, be sure to update the BUILD_DEPENDS version in
@@ -14,7 +14,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Build and install Perl modules
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

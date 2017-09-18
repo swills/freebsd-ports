@@ -1,5 +1,5 @@
 # Created by: milki <milki@rescomp.berkeley.edu>
-# $FreeBSD: head/www/p5-LWP-Online/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-LWP-Online/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	LWP-Online
 PORTVERSION=	1.08
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Checks if process has access to the web
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS+=	p5-libwww>=5.805:www/p5-libwww \

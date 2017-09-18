@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-XML-Parser/Makefile 425174 2016-11-02 22:45:14Z mat $
+# $FreeBSD: head/textproc/p5-XML-Parser/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-Parser
 PORTVERSION=	2.44
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension interface to James Clark's XML parser, expat
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libexpat.so:textproc/expat2

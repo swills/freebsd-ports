@@ -1,10 +1,10 @@
-# $FreeBSD: head/ports-mgmt/bsdadminscripts2/Makefile 441068 2017-05-17 09:24:24Z kami $
+# $FreeBSD: head/ports-mgmt/bsdadminscripts2/Makefile 449918 2017-09-15 18:28:31Z adamw $
 
 PORTNAME=	bsdadminscripts2
 DISTVERSION=	0.2.0
 CATEGORIES=	ports-mgmt
 
-MAINTAINER=	kami@FreeBSD.org
+MAINTAINER=	kamikaze@bsdforen.de
 COMMENT=	Collection of administration scripts
 
 LICENSE=	ISCL

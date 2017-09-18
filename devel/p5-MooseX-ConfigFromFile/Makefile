@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-MooseX-ConfigFromFile/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-MooseX-ConfigFromFile/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooseX-ConfigFromFile
 PORTVERSION=	0.14
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to abstract Moose role attribute setting from file
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

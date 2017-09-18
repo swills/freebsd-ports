@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-Class-Helpers/Makefile 437853 2017-04-06 02:10:00Z tj $
+# $FreeBSD: head/databases/p5-DBIx-Class-Helpers/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBIx-Class-Helpers
 PORTVERSION=	2.033003
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tj@FreeBSD.org
 COMMENT=	Simplify the common case stuff for DBIx::Class
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Carp-Clan>=0:devel/p5-Carp-Clan \

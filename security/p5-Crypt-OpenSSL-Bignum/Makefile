@@ -1,5 +1,5 @@
 # Created by: erwin@FreeBSD.org
-# $FreeBSD: head/security/p5-Crypt-OpenSSL-Bignum/Makefile 433798 2017-02-10 15:17:50Z sunpoet $
+# $FreeBSD: head/security/p5-Crypt-OpenSSL-Bignum/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-OpenSSL-Bignum
 PORTVERSION=	0.08
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	OpenSSL's multiprecision integer arithmetic #'
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

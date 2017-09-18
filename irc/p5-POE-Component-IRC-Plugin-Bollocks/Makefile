@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org
-# $FreeBSD: head/irc/p5-POE-Component-IRC-Plugin-Bollocks/Makefile 434459 2017-02-20 15:09:58Z sunpoet $
+# $FreeBSD: head/irc/p5-POE-Component-IRC-Plugin-Bollocks/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Component-IRC-Plugin-Bollocks
 PORTVERSION=	1.02
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	POE::Component::IRC plugin that talks bollocks
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

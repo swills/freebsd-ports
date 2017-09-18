@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Devel-CheckCompiler/Makefile 426428 2016-11-19 17:05:10Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-CheckCompiler/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Devel-CheckCompiler
 PORTVERSION=	0.07
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Check the compiler availability
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

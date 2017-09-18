@@ -1,5 +1,5 @@
 # Created by: Philip Paeps <philip@FreeBSD.org>
-# $FreeBSD: head/math/p5-Roman/Makefile 438672 2017-04-16 20:24:46Z philip $
+# $FreeBSD: head/math/p5-Roman/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Roman
 PORTVERSION=	1.24
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	philip@FreeBSD.org
 COMMENT=	Perl module to convert between Arabic and Roman numerals
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Stream-Buffered/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-Stream-Buffered/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Stream-Buffered
 PORTVERSION=	0.03
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for temporary buffer to save bytes
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

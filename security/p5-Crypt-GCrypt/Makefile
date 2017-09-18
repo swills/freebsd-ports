@@ -1,5 +1,5 @@
 # Created by: TAKAHASHI Kaoru <kaoru@kaisei.org>
-# $FreeBSD: head/security/p5-Crypt-GCrypt/Makefile 427552 2016-12-02 11:58:21Z mat $
+# $FreeBSD: head/security/p5-Crypt-GCrypt/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-GCrypt
 PORTVERSION=	1.26
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Perl interface to the GNU Cryptographic library
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libgcrypt.so:security/libgcrypt

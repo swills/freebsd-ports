@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-FCGI-Async/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-FCGI-Async/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	FCGI-Async
 PORTVERSION=	0.22
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Module to allow use of FastCGI asynchronously
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-IO-Async>=0:devel/p5-IO-Async \

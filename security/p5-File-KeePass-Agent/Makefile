@@ -1,5 +1,5 @@
 # Created by: Cy Schubert <cy@FreeBSD.org>
-# $FreeBSD: head/security/p5-File-KeePass-Agent/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-File-KeePass-Agent/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-KeePass-Agent
 PORTVERSION=	2.01
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Application agent for working with File::KeePass objects
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-KeePass>=2.03:security/p5-File-KeePass \

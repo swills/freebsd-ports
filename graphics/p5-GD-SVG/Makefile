@@ -1,5 +1,5 @@
 # Created by: Fernan Aguero <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/graphics/p5-GD-SVG/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/p5-GD-SVG/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	GD-SVG
 PORTVERSION=	0.33
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Seamlessly enable SVG output from scripts written using GD
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-GD>=0:graphics/p5-GD \

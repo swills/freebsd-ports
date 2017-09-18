@@ -1,5 +1,5 @@
 # Created by: Sahil Tandon <sahil@tandon.net>
-# $FreeBSD: head/devel/p5-Log-Handler/Makefile 420671 2016-08-23 12:40:46Z jadawin $
+# $FreeBSD: head/devel/p5-Log-Handler/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Log-Handler
 PORTVERSION=	0.88
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Object-oriented handler for logging, tracing, and debugging in Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Params-Validate>=0:devel/p5-Params-Validate

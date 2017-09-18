@@ -1,5 +1,5 @@
 # Created by: Blaz Zupan <blaz@amis.net>
-# $FreeBSD: head/converters/p5-Convert-UUlib/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/converters/p5-Convert-UUlib/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Convert-UUlib
 PORTVERSION=	1.50
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:S/0$//}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 interface to the uulib library (a.k.a. uudeview/uuenview)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Canary-Stability>=0:devel/p5-Canary-Stability

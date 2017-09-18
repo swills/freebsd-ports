@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Plack-Middleware-ServerStatus-Lite/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/www/p5-Plack-Middleware-ServerStatus-Lite/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Plack-Middleware-ServerStatus-Lite
 PORTVERSION=	0.34
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Plack middleware to show server status like Apache mod_status
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/security/p5-POE-Component-SSLify/Makefile 430155 2016-12-31 19:51:34Z adamw $
+# $FreeBSD: head/security/p5-POE-Component-SSLify/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Component-SSLify
 PORTVERSION=	1.012
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Integrate SSL into POE
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Net-SSLeay>=1.36:security/p5-Net-SSLeay \

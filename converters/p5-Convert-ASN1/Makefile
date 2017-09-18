@@ -1,5 +1,5 @@
 # Created by: Marc Fournier <scrappy@FreeBSD.org>
-# $FreeBSD: head/converters/p5-Convert-ASN1/Makefile 381151 2015-03-12 23:00:02Z adamw $
+# $FreeBSD: head/converters/p5-Convert-ASN1/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Convert-ASN1
 PORTVERSION=	0.27
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 module to encode and decode ASN.1 data structures
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

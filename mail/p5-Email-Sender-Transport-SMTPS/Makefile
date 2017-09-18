@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/p5-Email-Sender-Transport-SMTPS/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Email-Sender-Transport-SMTPS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Email-Sender-Transport-SMTPS
 PORTVERSION=	0.03
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for Email::Sender::Transport::SMTPS
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

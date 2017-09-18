@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/gnome-icons-gion/Makefile 400848 2015-11-05 12:36:25Z mat $
+# $FreeBSD: head/x11-themes/gnome-icons-gion/Makefile 449989 2017-09-17 09:01:54Z amdmi3 $
 
 PORTNAME=	gion
 PORTVERSION=	0.1.2
@@ -8,6 +8,9 @@ DISTNAME=	Gion-${PORTVERSION}
 
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Gion Icons for Gnome
+
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/Gion/COPYING
 
 USES=		tar:bzip2
 NO_WRKSUBDIR=	yes

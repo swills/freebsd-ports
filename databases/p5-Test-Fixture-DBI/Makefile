@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-Test-Fixture-DBI/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/databases/p5-Test-Fixture-DBI/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Fixture-DBI
 PORTVERSION=	0.09
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to load fixture data into database
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

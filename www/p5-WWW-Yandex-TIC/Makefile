@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/www/p5-WWW-Yandex-TIC/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-Yandex-TIC/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WWW-Yandex-TIC
 PORTVERSION=	0.07
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Query Yandex Thematic Index of Citing (TIC) for domain
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww

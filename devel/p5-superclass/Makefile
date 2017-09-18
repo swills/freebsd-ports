@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-superclass/Makefile 411380 2016-03-19 07:50:55Z pi $
+# $FreeBSD: head/devel/p5-superclass/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	superclass
 PORTVERSION=	0.003
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	hvo.pm@xs4all.nl
 COMMENT=	Like parent, but with version checks
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

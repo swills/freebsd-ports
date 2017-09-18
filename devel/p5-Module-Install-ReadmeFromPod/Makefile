@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Module-Install-ReadmeFromPod/Makefile 414162 2016-04-28 08:47:32Z des $
+# $FreeBSD: head/devel/p5-Module-Install-ReadmeFromPod/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Module-Install-ReadmeFromPod
 PORTVERSION=	0.26
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	des@FreeBSD.org
 COMMENT=	Automatically generate README from POD during installation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Module-Install>=1.00:devel/p5-Module-Install \

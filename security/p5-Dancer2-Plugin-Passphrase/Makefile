@@ -1,5 +1,5 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/security/p5-Dancer2-Plugin-Passphrase/Makefile 444680 2017-06-29 19:14:22Z sunpoet $
+# $FreeBSD: head/security/p5-Dancer2-Plugin-Passphrase/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Dancer2-Plugin-Passphrase
 PORTVERSION=	3.3.0
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	hvo.pm@xs4all.nl
 COMMENT=	Passphrases and Passwords as objects for Dancer2
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Dancer2>=0.200000:www/p5-Dancer2 \

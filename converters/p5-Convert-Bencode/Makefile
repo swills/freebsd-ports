@@ -1,5 +1,5 @@
 # Created by: Oleg R. Muhutdinov <mor@WhiteLuna.com>
-# $FreeBSD: head/converters/p5-Convert-Bencode/Makefile 395262 2015-08-25 14:51:27Z sunpoet $
+# $FreeBSD: head/converters/p5-Convert-Bencode/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Convert-Bencode
 PORTVERSION=	1.03
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Encode and decode bencoded strings
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

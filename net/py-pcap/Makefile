@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/net/py-pcap/Makefile 427543 2016-12-02 04:33:41Z jhale $
+# $FreeBSD: head/net/py-pcap/Makefile 449916 2017-09-15 18:18:26Z leres $
 
 PORTNAME=	pcap
 PORTVERSION=	0.6.4
@@ -9,7 +9,7 @@ MASTER_SITES=	SF/pylib${PORTNAME}/pylib${PORTNAME}/${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	pylib${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	leres@ee.lbl.gov
+MAINTAINER=	leres@FreeBSD.org
 COMMENT=	Python interface to LBL Packet Capture library (libpcap)
 
 LICENSE=	BSD3CLAUSE

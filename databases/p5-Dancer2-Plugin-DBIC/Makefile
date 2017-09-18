@@ -1,5 +1,5 @@
 # Created by: <hvo.pm@xs4all.nl>
-# $FreeBSD: head/databases/p5-Dancer2-Plugin-DBIC/Makefile 416097 2016-05-29 12:27:13Z pawel $
+# $FreeBSD: head/databases/p5-Dancer2-Plugin-DBIC/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Dancer2-Plugin-DBIC
 PORTVERSION=	0.0013
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	hvo.pm@xs4all.nl
 COMMENT=	DBIx::Class interface for Dancer2 applications
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DBIx-Class>=0:databases/p5-DBIx-Class\

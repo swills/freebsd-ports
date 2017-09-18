@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/converters/p5-Bencode/Makefile 422011 2016-09-13 14:22:07Z feld $
+# $FreeBSD: head/converters/p5-Bencode/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Bencode
 PORTVERSION=	1.402
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	feld@FreeBSD.org
 COMMENT=	BitTorrent bencode serialisation format
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Exporter-Tidy>0:devel/p5-Exporter-Tidy

@@ -1,5 +1,5 @@
 # Created by: dom@happygiraffe.net
-# $FreeBSD: head/devel/p5-Time-Object/Makefile 375378 2014-12-24 00:14:11Z bofh $
+# $FreeBSD: head/devel/p5-Time-Object/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Time-Object
 PORTVERSION=	1.00
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl OO interface to time and dates
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

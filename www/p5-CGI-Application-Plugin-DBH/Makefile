@@ -1,5 +1,5 @@
 # Created by: Espen Tagestad <espen@tagestad.no>
-# $FreeBSD: head/www/p5-CGI-Application-Plugin-DBH/Makefile 415839 2016-05-25 15:43:34Z mat $
+# $FreeBSD: head/www/p5-CGI-Application-Plugin-DBH/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CGI-Application-Plugin-DBH
 PORTVERSION=	4.04
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Easy DBI access from CGI::Application
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-CGI-Application>=0:www/p5-CGI-Application \

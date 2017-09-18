@@ -1,5 +1,5 @@
 # Created by: Leo Kim <leo@florida.sarang.net>
-# $FreeBSD: head/devel/p5-B-Graph/Makefile 375378 2014-12-24 00:14:11Z bofh $
+# $FreeBSD: head/devel/p5-B-Graph/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	B-Graph
 PORTVERSION=	0.51
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl Compiler backend to diagram OP trees
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

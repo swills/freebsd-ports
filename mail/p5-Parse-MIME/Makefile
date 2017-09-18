@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/p5-Parse-MIME/Makefile 395087 2015-08-23 11:55:18Z kuriyama $
+# $FreeBSD: head/mail/p5-Parse-MIME/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Parse-MIME
 PORTVERSION=	1.003
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to parse mime-types
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

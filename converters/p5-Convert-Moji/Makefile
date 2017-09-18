@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/p5-Convert-Moji/Makefile 426777 2016-11-22 04:48:34Z kuriyama $
+# $FreeBSD: head/converters/p5-Convert-Moji/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Convert-Moji
 PORTVERSION=	0.08
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to convert objects to alphabets
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

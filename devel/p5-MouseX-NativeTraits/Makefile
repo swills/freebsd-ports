@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MouseX-NativeTraits/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-MouseX-NativeTraits/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MouseX-NativeTraits
 PORTVERSION=	1.09
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Extend your attribute interfaces for Mouse
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Mouse>=0.82:devel/p5-Mouse

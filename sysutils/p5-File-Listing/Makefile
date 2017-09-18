@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/sysutils/p5-File-Listing/Makefile 442235 2017-05-31 17:30:14Z sunpoet $
+# $FreeBSD: head/sysutils/p5-File-Listing/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Listing
 PORTVERSION=	6.04
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Parse directory listings
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTTP-Date>=6:www/p5-HTTP-Date

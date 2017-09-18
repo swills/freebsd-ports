@@ -1,9 +1,8 @@
 # Created by: Frederic Praca <frederic.praca@freebsd-fr.org>
-# $FreeBSD: head/devel/buildbot-worker/Makefile 445206 2017-07-07 03:47:38Z asomers $
+# $FreeBSD: head/devel/buildbot-worker/Makefile 449984 2017-09-17 04:43:18Z asomers $
 
 PORTNAME=	buildbot-worker
-PORTVERSION=	0.9.5
-PORTREVISION=	1
+PORTVERSION=	0.9.10
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 

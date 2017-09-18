@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-HTTP-Exception/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTTP-Exception/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTTP-Exception
 PORTVERSION=	0.04006
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to throw HTTP-Errors as (Exception::Class-) Exceptions
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

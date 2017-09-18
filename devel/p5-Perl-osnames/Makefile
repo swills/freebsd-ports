@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Perl-osnames/Makefile 376214 2015-01-04 12:02:46Z sunpoet $
+# $FreeBSD: head/devel/p5-Perl-osnames/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Perl-osnames
 PORTVERSION=	0.11
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	List possible $$^O ($$OSNAME) values, with description
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USE_PERL5=	configure

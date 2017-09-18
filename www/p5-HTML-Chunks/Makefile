@@ -1,5 +1,5 @@
 # Created by: Alexander Koch <fbsd@meersau.de>
-# $FreeBSD: head/www/p5-HTML-Chunks/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-Chunks/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-Chunks
 PORTVERSION=	1.55.1
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple nested template engine for HTML, XML and XHTML
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-IO-stringy>=0:devel/p5-IO-stringy

@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-MAC-Vendor/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Net-MAC-Vendor/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-MAC-Vendor
 PORTVERSION=	1.2000
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:S/00$//}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Look up the vendor for a MAC
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww

@@ -1,5 +1,5 @@
 # Created by: clive@FreeBSD.org
-# $FreeBSD: head/databases/p5-DBD-ODBC/Makefile 423518 2016-10-08 16:49:27Z adamw $
+# $FreeBSD: head/databases/p5-DBD-ODBC/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBD-ODBC
 PORTVERSION=	1.56
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	DBD module interfacing the ODBC databases
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DBI>=1.609:databases/p5-DBI

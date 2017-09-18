@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-SAX-Base/Makefile 437705 2017-04-04 07:56:25Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-SAX-Base/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-SAX-Base
 PORTVERSION=	1.09
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Base class SAX Drivers and Filters
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 CONFLICTS_INSTALL=	p5-XML-SAX-0.[0-8]* p5-XML-SAX-0.9[0-8]*

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/graphics/p5-SVG-DOM2/Makefile 398495 2015-10-03 17:08:24Z sunpoet $
+# $FreeBSD: head/graphics/p5-SVG-DOM2/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	SVG-DOM2
 PORTVERSION=	1.00
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	SVG extension to the popular XML::DOM2
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

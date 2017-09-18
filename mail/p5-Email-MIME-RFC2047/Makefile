@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/p5-Email-MIME-RFC2047/Makefile 447216 2017-08-03 14:45:01Z culot $
+# $FreeBSD: head/mail/p5-Email-MIME-RFC2047/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Email-MIME-RFC2047
 PORTVERSION=	0.97
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	hvo.pm@xs4all.nl
 COMMENT=	Correct handling of non-ASCII MIME headers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

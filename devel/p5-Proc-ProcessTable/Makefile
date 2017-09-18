@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@ahze.net>
-# $FreeBSD: head/devel/p5-Proc-ProcessTable/Makefile 395375 2015-08-26 16:34:31Z sunpoet $
+# $FreeBSD: head/devel/p5-Proc-ProcessTable/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Proc-ProcessTable
 PORTVERSION=	0.53
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interface to the unix process table
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 OPTIONS_DEFINE=	DOCS

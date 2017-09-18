@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/devel/p5-DateTime-Calendar-FrenchRevolutionary/Makefile 427576 2016-12-02 16:51:20Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime-Calendar-FrenchRevolutionary/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DateTime-Calendar-FrenchRevolutionary
 PORTVERSION=	0.14
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Dates in the French Revolutionary Calendar
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

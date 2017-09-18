@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-HTML-Mason/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-Mason/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-Mason
 PORTVERSION=	1.56
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	High-performance, dynamic web site authoring system
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Cache-Cache>=1:devel/p5-Cache-Cache \

@@ -1,5 +1,5 @@
 # Created by: Alexander Kriventsov <avk@vl.ru>
-# $FreeBSD: head/net-mgmt/p5-Nagios-Plugin-LDAP/Makefile 444346 2017-06-26 03:24:58Z sunpoet $
+# $FreeBSD: head/net-mgmt/p5-Nagios-Plugin-LDAP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Nagios-Plugin-LDAP
 PORTVERSION=	0.04
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	avk@vl.ru
 COMMENT=	Nagios plugin to observe LDAP
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

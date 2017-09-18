@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Text-vCard/Makefile 424625 2016-10-25 13:50:28Z ehaupt $
+# $FreeBSD: head/textproc/p5-Text-vCard/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-vCard
 PORTVERSION=	3.09
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Package to parse, edit and create multiple vCards (RFC 2426)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-Slurp>=0:devel/p5-File-Slurp \

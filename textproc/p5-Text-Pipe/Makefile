@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Text-Pipe/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Text-Pipe/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-Pipe
 PORTVERSION=	0.10
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for common text filter API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

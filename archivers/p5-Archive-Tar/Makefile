@@ -1,5 +1,5 @@
 # Created by: Roman Shterenzon <roman@xpert.com>
-# $FreeBSD: head/archivers/p5-Archive-Tar/Makefile 431650 2017-01-16 14:30:50Z jadawin $
+# $FreeBSD: head/archivers/p5-Archive-Tar/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Archive-Tar
 PORTVERSION=	2.24
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	jadawin@FreeBSD.org
 COMMENT=	Perl module for creation and manipulation of tar files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-IO-String>=0:devel/p5-IO-String

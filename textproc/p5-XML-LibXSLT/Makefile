@@ -1,5 +1,5 @@
 # Created by: Dom Mitchell <dom@happygiraffe.net>
-# $FreeBSD: head/textproc/p5-XML-LibXSLT/Makefile 423701 2016-10-10 20:16:53Z adamw $
+# $FreeBSD: head/textproc/p5-XML-LibXSLT/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-LibXSLT
 PORTVERSION=	1.95
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interface to the GNOME XSLT library
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-XML-LibXML>=1.70:textproc/p5-XML-LibXML

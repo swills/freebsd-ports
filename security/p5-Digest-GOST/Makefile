@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/p5-Digest-GOST/Makefile 441819 2017-05-27 00:20:19Z linimon $
+# $FreeBSD: head/security/p5-Digest-GOST/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Digest-GOST
 PORTVERSION=	0.06
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	pi@FreeBSD.org
 COMMENT=	Perl interface to the GOST R 34.11-94 digest algorithm
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NOT_FOR_ARCHS=		aarch64 armv6 mips64

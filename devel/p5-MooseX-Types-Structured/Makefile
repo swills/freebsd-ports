@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-MooseX-Types-Structured/Makefile 440574 2017-05-10 17:51:50Z sunpoet $
+# $FreeBSD: head/devel/p5-MooseX-Types-Structured/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooseX-Types-Structured
 PORTVERSION=	0.36
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Moose Type Constraint classes for Structured Types
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Devel-PartialDump>=0.13:devel/p5-Devel-PartialDump \

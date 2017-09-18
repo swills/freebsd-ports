@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/archivers/p5-POE-Filter-LZO/Makefile 434605 2017-02-22 17:14:02Z sunpoet $
+# $FreeBSD: head/archivers/p5-POE-Filter-LZO/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Filter-LZO
 PORTVERSION=	1.72
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	POE filter wrapped around Compress::LZO
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

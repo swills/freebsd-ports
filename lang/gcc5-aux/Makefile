@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/lang/gcc5-aux/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/lang/gcc5-aux/Makefile 449947 2017-09-16 08:21:07Z gerald $
 
 PORTNAME=	gcc5-aux
 PORTVERSION=	${SNAPSHOT}
@@ -14,6 +14,9 @@ COMMENT=	Version of GCC ${GCC_BRANCH} with full Ada support
 
 LICENSE=	GPLv3 GPLv3RLE
 LICENSE_COMB=	multi
+
+DEPRECATED=	Essentially unmaintained and replaced by gcc6-aux
+EXPIRATION_DATE=2017-10-31
 
 .include "${.CURDIR}/Makefile.common"
 

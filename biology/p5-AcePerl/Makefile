@@ -1,5 +1,5 @@
 # Created by: Johann Visagie <johann@egenetics.com>
-# $FreeBSD: head/biology/p5-AcePerl/Makefile 434059 2017-02-13 22:43:58Z tijl $
+# $FreeBSD: head/biology/p5-AcePerl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	AcePerl
 PORTVERSION=	1.92
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 interface to the ACEDB genome database system
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Cache-Cache>=0:devel/p5-Cache-Cache

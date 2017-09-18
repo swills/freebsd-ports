@@ -1,5 +1,5 @@
 # Created by: Wen Heping<wen@FreeBSD.org>
-# $FreeBSD: head/astro/p5-Astro-App-Satpass2/Makefile 437603 2017-04-03 08:40:33Z wen $
+# $FreeBSD: head/astro/p5-Astro-App-Satpass2/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Astro-App-Satpass2
 PORTVERSION=	0.034
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Forecast satellite visibility
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Astro-SIMBAD-Client>=0:astro/p5-Astro-SIMBAD-Client \

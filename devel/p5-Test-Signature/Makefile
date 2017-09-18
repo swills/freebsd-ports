@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-Signature/Makefile 435916 2017-03-11 15:58:32Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Signature/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Signature
 PORTVERSION=	1.11
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl Automated SIGNATURE testing
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

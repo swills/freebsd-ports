@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Git-Wrapper/Makefile 423520 2016-10-08 16:56:43Z adamw $
+# $FreeBSD: head/devel/p5-Git-Wrapper/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Git-Wrapper
 PORTVERSION=	0.047
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Wrap git(7) command-line interface
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	git:devel/git \

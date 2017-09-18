@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Lexical-Var/Makefile 405172 2016-01-03 17:50:18Z sunpoet $
+# $FreeBSD: head/devel/p5-Lexical-Var/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Lexical-Var
 PORTVERSION=	0.009
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for static variables without namespace pollution
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

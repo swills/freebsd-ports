@@ -1,5 +1,5 @@
 # Created by: Shell Hung <shell@shellhung.org>
-# $FreeBSD: head/devel/p5-Test-Harness/Makefile 437888 2017-04-06 21:56:33Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Harness/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Harness
 PORTVERSION=	3.39
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Run Perl standard test scripts with statistics
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

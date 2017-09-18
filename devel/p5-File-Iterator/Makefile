@@ -1,5 +1,5 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/devel/p5-File-Iterator/Makefile 386075 2015-05-11 12:04:18Z mat $
+# $FreeBSD: head/devel/p5-File-Iterator/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Iterator
 PORTVERSION=	0.14
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Module for iterating across files in a directory tree
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

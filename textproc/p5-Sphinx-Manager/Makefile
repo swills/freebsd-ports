@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Sphinx-Manager/Makefile 425555 2016-11-06 16:50:51Z sunpoet $
+# $FreeBSD: head/textproc/p5-Sphinx-Manager/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Sphinx-Manager
 PORTVERSION=	0.08
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Sphinx search engine management (start/stop)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \

@@ -1,5 +1,5 @@
 # Created by: Vladimir Timofeev <vovkasm@gmail.com>
-# $FreeBSD: head/devel/p5-Devel-NYTProf/Makefile 427324 2016-11-28 14:22:17Z mat $
+# $FreeBSD: head/devel/p5-Devel-NYTProf/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Devel-NYTProf
 PORTVERSION=	6.04
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	vovkasm@gmail.com
 COMMENT=	Powerful feature-rich Perl source code profiler
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-Which>=0:sysutils/p5-File-Which \

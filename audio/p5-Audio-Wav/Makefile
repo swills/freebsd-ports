@@ -1,5 +1,5 @@
 # Created by: Dominic Mitchell <dom@happygiraffe.net>
-# $FreeBSD: head/audio/p5-Audio-Wav/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/p5-Audio-Wav/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Audio-Wav
 PORTVERSION=	0.14
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl modules for reading and writing Microsoft WAV files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Inline>=0:devel/p5-Inline \

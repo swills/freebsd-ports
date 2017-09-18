@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Module-Metadata/Makefile 389567 2015-06-14 03:58:45Z kuriyama $
+# $FreeBSD: head/devel/p5-Module-Metadata/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Module-Metadata
 PORTVERSION=	1.000027
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to gather package information from perl module files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=	perl5

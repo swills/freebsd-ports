@@ -1,5 +1,5 @@
 # Created by: Marcello Coutinho <marcellocoutinho@gmail.com>
-# $FreeBSD: head/devel/p5-Acme-Comment/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-Acme-Comment/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Acme-Comment
 PORTVERSION=	1.04
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	marcellocoutinho@gmail.com
 COMMENT=	Allow multi-line comments which are filtered out
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

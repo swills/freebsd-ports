@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Exporter-Tiny/Makefile 441473 2017-05-22 17:18:14Z sunpoet $
+# $FreeBSD: head/devel/p5-Exporter-Tiny/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Exporter-Tiny
 PORTVERSION=	1.000000
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Exporter with features of Sub::Exporter but only core dependencies
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: arved
-# $FreeBSD: head/graphics/p5-Graph-ReadWrite/Makefile 423552 2016-10-08 22:57:06Z adamw $
+# $FreeBSD: head/graphics/p5-Graph-ReadWrite/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Graph-ReadWrite
 PORTVERSION=	2.09
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Reading and Writing a variety of graph file formats
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Graph>=0.50:math/p5-Graph \

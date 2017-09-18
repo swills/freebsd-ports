@@ -1,5 +1,5 @@
 # Created by: Stefan Esser <se@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-GDOME/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/textproc/p5-XML-GDOME/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-GDOME
 PORTVERSION=	0.86
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl module that provides the DOM Level 2 Core API for XML documents
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-XML-LibXML>=0:textproc/p5-XML-LibXML \

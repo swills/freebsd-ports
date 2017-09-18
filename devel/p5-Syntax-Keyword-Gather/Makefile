@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Syntax-Keyword-Gather/Makefile 440368 2017-05-07 21:26:12Z sunpoet $
+# $FreeBSD: head/devel/p5-Syntax-Keyword-Gather/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Syntax-Keyword-Gather
 PORTVERSION=	1.003001
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Implements the Perl 6 'gather/take' control structure in Perl 5
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

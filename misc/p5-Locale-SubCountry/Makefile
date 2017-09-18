@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/misc/p5-Locale-SubCountry/Makefile 435707 2017-03-08 16:51:31Z sunpoet $
+# $FreeBSD: head/misc/p5-Locale-SubCountry/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Locale-SubCountry
 PORTVERSION=	2.02
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Convert state, province, county etc. names to/from code
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-JSON>=1:converters/p5-JSON

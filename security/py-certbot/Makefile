@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/security/py-certbot/Makefile 447536 2017-08-08 09:12:27Z cpm $
+# $FreeBSD: head/security/py-certbot/Makefile 449834 2017-09-14 11:25:39Z cpm $
 
 PORTNAME=	certbot
-PORTVERSION=	0.17.0
+PORTVERSION=	0.18.1
 PORTEPOCH=	1
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP

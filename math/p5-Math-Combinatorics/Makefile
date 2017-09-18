@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@daltons.ca>
-# $FreeBSD: head/math/p5-Math-Combinatorics/Makefile 375378 2014-12-24 00:14:11Z bofh $
+# $FreeBSD: head/math/p5-Math-Combinatorics/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-Combinatorics
 PORTVERSION=	0.09
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perform combinations and permutations on lists
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

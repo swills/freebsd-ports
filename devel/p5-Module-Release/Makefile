@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Module-Release/Makefile 430110 2016-12-31 13:33:57Z sunpoet $
+# $FreeBSD: head/devel/p5-Module-Release/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Module-Release
 PORTVERSION=	2.123
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Upload files to CPAN and SourceForge
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-CACertOrg-CA>=0:security/p5-CACertOrg-CA \

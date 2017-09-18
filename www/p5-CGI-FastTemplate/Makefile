@@ -1,5 +1,5 @@
 # Created by: Vanilla I. Shu <vanilla@FreeBSD.org>
-# $FreeBSD: head/www/p5-CGI-FastTemplate/Makefile 375378 2014-12-24 00:14:11Z bofh $
+# $FreeBSD: head/www/p5-CGI-FastTemplate/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CGI-FastTemplate
 PORTVERSION=	1.09
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl module for manage templates and parses templates
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

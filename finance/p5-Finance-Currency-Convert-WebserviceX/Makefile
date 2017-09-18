@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/finance/p5-Finance-Currency-Convert-WebserviceX/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/p5-Finance-Currency-Convert-WebserviceX/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Finance-Currency-Convert-WebserviceX
 PORTVERSION=	0.07001
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Lightweight currency conversion using WebserviceX.NET
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww \

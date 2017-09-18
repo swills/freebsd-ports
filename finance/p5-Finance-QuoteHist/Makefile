@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/finance/p5-Finance-QuoteHist/Makefile 446159 2017-07-18 17:55:35Z sunpoet $
+# $FreeBSD: head/finance/p5-Finance-QuoteHist/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Finance-QuoteHist
 PORTVERSION=	1.27
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for fetching historical stock quotes
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

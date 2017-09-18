@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Locale/Makefile 436789 2017-03-23 23:24:51Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime-Locale/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DateTime-Locale
 PORTVERSION=	1.16
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Localization support for DateTime
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/www/p5-CGI-Compress-Gzip/Makefile 444750 2017-06-30 13:45:02Z sunpoet $
+# $FreeBSD: head/www/p5-CGI-Compress-Gzip/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CGI-Compress-Gzip
 PORTVERSION=	1.03
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tobez@FreeBSD.org
 COMMENT=	CGI::Compress::Gzip - CGI with automatically compressed output
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/www/p5-Template-Toolkit-Simple/Makefile 425952 2016-11-12 13:29:12Z lwhsu $
+# $FreeBSD: head/www/p5-Template-Toolkit-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Template-Toolkit-Simple
 PORTVERSION=	0.31
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	lwhsu@FreeBSD.org
 COMMENT=	Simple Interface to Template Toolkit
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Template-Toolkit>=0:www/p5-Template-Toolkit

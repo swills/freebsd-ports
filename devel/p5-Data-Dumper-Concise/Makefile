@@ -1,5 +1,5 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/devel/p5-Data-Dumper-Concise/Makefile 440813 2017-05-13 12:13:06Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-Dumper-Concise/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Dumper-Concise
 PORTVERSION=	2.023
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Less indentation and newlines plus sub deparsing
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 OPTIONS_DEFINE=	ARGNAMES

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Lingua-EN-Inflect-Phrase/Makefile 435104 2017-02-28 22:51:17Z sunpoet $
+# $FreeBSD: head/textproc/p5-Lingua-EN-Inflect-Phrase/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Lingua-EN-Inflect-Phrase
 PORTVERSION=	0.18
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to inflect short English Phrases
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

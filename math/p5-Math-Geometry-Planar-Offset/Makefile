@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Geometry-Planar-Offset/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/p5-Math-Geometry-Planar-Offset/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-Geometry-Planar-Offset
 PORTVERSION=	1.05
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Calculate offset polygons
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-YAML>=0:textproc/p5-YAML

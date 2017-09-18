@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/www/p5-URI-Fetch/Makefile 441943 2017-05-28 23:16:14Z sunpoet $
+# $FreeBSD: head/www/p5-URI-Fetch/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	URI-Fetch
 PORTVERSION=	0.130
@@ -11,7 +11,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:C/0$//}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Smart URI fetching/caching
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-ErrorHandler>=0:devel/p5-Class-ErrorHandler \

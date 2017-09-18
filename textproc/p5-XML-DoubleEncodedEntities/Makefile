@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/textproc/p5-XML-DoubleEncodedEntities/Makefile 382006 2015-03-23 14:29:10Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-DoubleEncodedEntities/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-DoubleEncodedEntities
 PORTVERSION=	1.1
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Unbreak XML with Doubly-Encoded Entities
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

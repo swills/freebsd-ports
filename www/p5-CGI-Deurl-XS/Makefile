@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/www/p5-CGI-Deurl-XS/Makefile 379337 2015-02-19 09:29:12Z marino $
+# $FreeBSD: head/www/p5-CGI-Deurl-XS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CGI-Deurl-XS
 PORTVERSION=	0.08
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Fast decoder for URL parameter strings
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

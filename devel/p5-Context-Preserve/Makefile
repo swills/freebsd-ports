@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Context-Preserve/Makefile 442340 2017-06-01 23:50:57Z sunpoet $
+# $FreeBSD: head/devel/p5-Context-Preserve/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Context-Preserve
 PORTVERSION=	0.02
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Run code after a subroutine call, preserving the context the subroutine
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENCE
 

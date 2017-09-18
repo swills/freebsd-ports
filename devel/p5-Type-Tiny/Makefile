@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Type-Tiny/Makefile 443029 2017-06-09 18:44:17Z sunpoet $
+# $FreeBSD: head/devel/p5-Type-Tiny/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Type-Tiny
 PORTVERSION=	1.002001
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Tiny, yet Moo(se)-compatible type constraint
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

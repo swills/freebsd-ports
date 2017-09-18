@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Data-ParseBinary/Makefile 444151 2017-06-22 23:42:24Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-ParseBinary/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-ParseBinary
 PORTVERSION=	0.31
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	az@FreeBSD.org
 COMMENT=	Yet Another parser for binary structures
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

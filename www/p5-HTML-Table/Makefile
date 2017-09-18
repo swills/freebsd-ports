@@ -1,5 +1,5 @@
 # Created by: Andreas Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/www/p5-HTML-Table/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/www/p5-HTML-Table/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-Table
 PORTVERSION=	2.08a
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Generate HTML tables for CGI scripts
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 PORTSCOUT=	skipv:2.08

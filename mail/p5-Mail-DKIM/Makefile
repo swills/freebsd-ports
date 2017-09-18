@@ -1,5 +1,5 @@
 # Created by: Yoshisato YANAGISAWA
-# $FreeBSD: head/mail/p5-Mail-DKIM/Makefile 446920 2017-07-30 13:12:44Z sunpoet $
+# $FreeBSD: head/mail/p5-Mail-DKIM/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Mail-DKIM
 PORTVERSION=	0.42
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 module to process and/or create DKIM email
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Crypt-OpenSSL-RSA>=0:security/p5-Crypt-OpenSSL-RSA \

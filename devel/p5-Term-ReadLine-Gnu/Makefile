@@ -1,5 +1,5 @@
 # Created by: Matthew Hunt <mph@pobox.com>
-# $FreeBSD: head/devel/p5-Term-ReadLine-Gnu/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/devel/p5-Term-ReadLine-Gnu/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Term-ReadLine-Gnu
 PORTVERSION=	1.35
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Allow Term::ReadLine to use GNU readline
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5 readline

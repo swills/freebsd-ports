@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/p5-MIME-Types/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-MIME-Types/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MIME-Types
 PORTVERSION=	2.13
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for determining MIME types
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Mojolicious>=0:www/p5-Mojolicious

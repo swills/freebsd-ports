@@ -1,5 +1,5 @@
 # Created by: tobez
-# $FreeBSD: head/devel/p5-Devel-Constants/Makefile 400278 2015-10-27 15:51:05Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-Constants/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Devel-Constants
 PORTVERSION=	1.04
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module to translate constants back to their named symbols
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

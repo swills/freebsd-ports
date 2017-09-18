@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/www/p5-HTML-Template-Compiled/Makefile 414628 2016-05-05 00:01:07Z sunpoet $
+# $FreeBSD: head/www/p5-HTML-Template-Compiled/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-Template-Compiled
 PORTVERSION=	1.003
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Templating system that compiles HTML::Template files to Perl code
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

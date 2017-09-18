@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/p5-Crypt-Passwd-XS/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/security/p5-Crypt-Passwd-XS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-Passwd-XS
 PORTVERSION=	0.601
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Full XS implementation of common crypt() algorithms
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

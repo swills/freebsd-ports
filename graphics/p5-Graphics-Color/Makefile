@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/graphics/p5-Graphics-Color/Makefile 435026 2017-02-28 09:47:07Z sunpoet $
+# $FreeBSD: head/graphics/p5-Graphics-Color/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Graphics-Color
 PORTVERSION=	0.31
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Device and library agnostic color spaces
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Color-Library>=0.020:graphics/p5-Color-Library \

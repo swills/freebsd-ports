@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-AttributeHelpers/Makefile 429527 2016-12-26 14:33:04Z mat $
+# $FreeBSD: head/devel/p5-MooseX-AttributeHelpers/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooseX-AttributeHelpers
 PORTVERSION=	0.25
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Extend your attribute interfaces
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Moose>=0.56:devel/p5-Moose

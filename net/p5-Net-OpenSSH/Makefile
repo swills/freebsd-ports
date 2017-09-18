@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-Net-OpenSSH/Makefile 424448 2016-10-22 06:08:54Z az $
+# $FreeBSD: head/net/p5-Net-OpenSSH/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-OpenSSH
 PORTVERSION=	0.73
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	az@FreeBSD.org
 COMMENT=	Perl SSH client package implemented on top of OpenSSH
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-IO-Tty>=0:devel/p5-IO-Tty

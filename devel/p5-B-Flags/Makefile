@@ -1,5 +1,5 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/devel/p5-B-Flags/Makefile 429126 2016-12-21 20:47:07Z sunpoet $
+# $FreeBSD: head/devel/p5-B-Flags/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	B-Flags
 PORTVERSION=	0.16
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	svysh.fbsd@gmail.com
 COMMENT=	Friendlier flags for B
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

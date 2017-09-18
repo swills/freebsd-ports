@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-IO-Async/Makefile 429281 2016-12-23 20:28:07Z sunpoet $
+# $FreeBSD: head/devel/p5-IO-Async/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IO-Async
 PORTVERSION=	0.71
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl modules that implement asynchronous filehandle IO
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

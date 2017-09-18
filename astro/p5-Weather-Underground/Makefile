@@ -1,5 +1,5 @@
 # Created by: Simon Olofsson <simon@olofsson.de>
-# $FreeBSD: head/astro/p5-Weather-Underground/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/astro/p5-Weather-Underground/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Weather-Underground
 PORTVERSION=	3.03
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Retrieve weather information from wunderground.com
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \

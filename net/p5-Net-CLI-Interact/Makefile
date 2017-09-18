@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-CLI-Interact/Makefile 446596 2017-07-25 16:21:25Z sunpoet $
+# $FreeBSD: head/net/p5-Net-CLI-Interact/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-CLI-Interact
 PORTVERSION=	2.200009
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Toolkit for CLI Automation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Load>=0:devel/p5-Class-Load \

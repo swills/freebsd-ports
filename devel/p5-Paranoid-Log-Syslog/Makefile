@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Paranoid-Log-Syslog/Makefile 447118 2017-08-02 16:13:43Z culot $
+# $FreeBSD: head/devel/p5-Paranoid-Log-Syslog/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Paranoid-Log-Syslog
 PORTVERSION=	2.00
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Syslog support for Paranoid::Log
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Paranoid>=2:devel/p5-Paranoid \

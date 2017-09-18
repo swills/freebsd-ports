@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Log-Defer/Makefile 416157 2016-05-30 15:33:44Z mat $
+# $FreeBSD: head/devel/p5-Log-Defer/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Log-Defer
 PORTVERSION=	0.311
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bill.brinzer@gmail.com
 COMMENT=	Deferred logs and timers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Guard>=0:devel/p5-Guard

@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Method-Alias/Makefile 446752 2017-07-27 15:47:58Z sunpoet $
+# $FreeBSD: head/devel/p5-Method-Alias/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Method-Alias
 PORTVERSION=	1.03
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Create method aliases (and do it safely)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/LICENSE
 

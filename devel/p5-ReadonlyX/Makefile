@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-ReadonlyX/Makefile 431043 2017-01-10 00:09:38Z adamw $
+# $FreeBSD: head/devel/p5-ReadonlyX/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	ReadonlyX
 PORTVERSION=	1.04
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Faster facility for creating read-only scalars, arrays, hashes
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal

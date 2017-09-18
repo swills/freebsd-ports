@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/irc/p5-POE-Component-IRC-Plugin-RSS-Headlines/Makefile 434610 2017-02-22 17:14:26Z sunpoet $
+# $FreeBSD: head/irc/p5-POE-Component-IRC-Plugin-RSS-Headlines/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Component-IRC-Plugin-RSS-Headlines
 PORTVERSION=	1.10
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	POE::Component::IRC plugin that provides RSS headline retrieval
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Mixin-Linewise/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Mixin-Linewise/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Mixin-Linewise
 PORTVERSION=	0.108
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Write your linewise code for handles; this does the rest
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-PerlIO-utf8_strict>=0:devel/p5-PerlIO-utf8_strict \

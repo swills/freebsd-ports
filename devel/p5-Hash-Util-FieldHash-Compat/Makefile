@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/p5-Hash-Util-FieldHash-Compat/Makefile 442346 2017-06-01 23:51:27Z sunpoet $
+# $FreeBSD: head/devel/p5-Hash-Util-FieldHash-Compat/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Hash-Util-FieldHash-Compat
 PORTVERSION=	0.11
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Use Hash::Util::FieldHash or ties, depending on availability
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Module-Metadata>=0:devel/p5-Module-Metadata \

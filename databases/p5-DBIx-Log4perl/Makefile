@@ -1,5 +1,5 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/databases/p5-DBIx-Log4perl/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Log4perl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBIx-Log4perl
 PORTVERSION=	0.26
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	For DBI to selectively log SQL, parameters, result-sets, transactions
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DBI>=1.500:databases/p5-DBI \

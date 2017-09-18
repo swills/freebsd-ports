@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Config-INI-Reader-Ordered/Makefile 435016 2017-02-28 09:45:10Z sunpoet $
+# $FreeBSD: head/devel/p5-Config-INI-Reader-Ordered/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Config-INI-Reader-Ordered
 PORTVERSION=	0.020
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	INI-file parser that returns sections in order
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Test-LWP-UserAgent/Makefile 444158 2017-06-22 23:42:58Z sunpoet $
+# $FreeBSD: head/www/p5-Test-LWP-UserAgent/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-LWP-UserAgent
 PORTVERSION=	0.030
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	pi@FreeBSD.org
 COMMENT=	LWP::UserAgent suitable for simulating and testing network calls
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww \

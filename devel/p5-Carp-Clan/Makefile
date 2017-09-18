@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Carp-Clan/Makefile 431900 2017-01-19 19:26:17Z sunpoet $
+# $FreeBSD: head/devel/p5-Carp-Clan/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Carp-Clan
 PORTVERSION=	6.06
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Report errors from perspective of caller of a "clan" of modules
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception

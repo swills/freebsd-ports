@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/lang/p5-Modern-Perl/Makefile 431801 2017-01-18 14:07:39Z sunpoet $
+# $FreeBSD: head/lang/p5-Modern-Perl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Modern-Perl
 PORTVERSION=	1.20170117
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Enable all of the features of Modern Perl with one import
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/accessibility/atk/Makefile 437463 2017-04-01 19:53:41Z bapt $
+# $FreeBSD: head/accessibility/atk/Makefile 449958 2017-09-16 09:01:53Z amdmi3 $
 
 PORTNAME=	atk
 PORTVERSION=	2.24.0
@@ -11,7 +11,8 @@ DIST_SUBDIR=	gnome2
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	GNOME accessibility toolkit (ATK)
 
-LICENSE=	LGPL21
+LICENSE=	LGPL20+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		tar:xz
 PORTSCOUT=	limitw:1,even
@@ -20,11 +21,9 @@ PORTSCOUT=	limitw:1,even
 
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
-USES+=		gettext gmake gnome libtool pathfix pkgconfig
+USES+=		gettext gmake gnome libtool localbase pathfix pkgconfig
 USE_GNOME=	glib20 introspection:build referencehack
 CONFIGURE_ARGS=	--with-html-dir=${PREFIX}/share/doc
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib
 INSTALL_TARGET=	install-strip
 
 post-patch:

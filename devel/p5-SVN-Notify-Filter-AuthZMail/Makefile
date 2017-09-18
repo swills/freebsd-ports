@@ -1,5 +1,5 @@
 # Created by: glarkin@
-# $FreeBSD: head/devel/p5-SVN-Notify-Filter-AuthZMail/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-SVN-Notify-Filter-AuthZMail/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	SVN-Notify-Filter-AuthZMail
 PORTVERSION=	1.01
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Determines Subversion accounts to receive email via the authz file
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-SVN-Access>=0:devel/p5-SVN-Access \

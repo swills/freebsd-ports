@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-MojoMojo/Makefile 445908 2017-07-15 17:24:04Z sunpoet $
+# $FreeBSD: head/www/p5-MojoMojo/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MojoMojo
 PORTVERSION=	1.12
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Catalyst & DBIx::Class powered Wiki
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 # Please keep order as in Makefile.PL

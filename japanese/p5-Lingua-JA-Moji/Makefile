@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/p5-Lingua-JA-Moji/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/p5-Lingua-JA-Moji/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Lingua-JA-Moji
 PORTVERSION=	0.36
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to handle many kinds of Japanese characters
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/devel/p5-PAR-Packer/Makefile 441928 2017-05-28 23:14:57Z sunpoet $
+# $FreeBSD: head/devel/p5-PAR-Packer/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	PAR-Packer
 PORTVERSION=	1.037
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	PAR Packager
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

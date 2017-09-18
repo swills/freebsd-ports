@@ -1,5 +1,5 @@
 # Created by: Espen Tagestad <espen@tagestad.no>
-# $FreeBSD: head/databases/p5-SQL-Abstract-More/Makefile 431672 2017-01-16 15:35:37Z sunpoet $
+# $FreeBSD: head/databases/p5-SQL-Abstract-More/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	SQL-Abstract-More
 PORTVERSION=	1.28
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	espen@tagestad.no
 COMMENT=	Extension of SQL::Abstract with more constructs and more flexible API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-MRO-Compat>0:devel/p5-MRO-Compat \

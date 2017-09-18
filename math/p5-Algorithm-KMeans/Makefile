@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/p5-Algorithm-KMeans/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/p5-Algorithm-KMeans/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Algorithm-KMeans
 PORTVERSION=	2.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Clustering multi-dimensional data with a pure-Perl implementation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Graphics-GnuplotIF>=1.4:graphics/p5-Graphics-GnuplotIF \

@@ -1,5 +1,5 @@
 # Created by: Erwin Lansing <erwin@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Attribute-Handlers/Makefile 392892 2015-07-25 16:29:58Z sunpoet $
+# $FreeBSD: head/devel/p5-Attribute-Handlers/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Attribute-Handlers
 PORTVERSION=	0.99
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simpler definition of attribute handlers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

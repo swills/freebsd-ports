@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/www/p5-RT-Extension-LDAPImport/Makefile 414662 2016-05-05 20:07:27Z matthew $
+# $FreeBSD: head/www/p5-RT-Extension-LDAPImport/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	RT-Extension-LDAPImport
 PORTVERSION=	0.36
@@ -12,7 +12,7 @@ MAINTAINER=	matthew@FreeBSD.org
 COMMENT=	RT extension to import users from an LDAP store
 
 LICENSE_COMB=	dual
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 
 BUILD_DEPENDS=	p5-perl-ldap>0:net/p5-perl-ldap \
 		p5-Class-Accessor>0:devel/p5-Class-Accessor

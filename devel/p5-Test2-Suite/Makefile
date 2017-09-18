@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test2-Suite/Makefile 449765 2017-09-13 09:36:04Z sunpoet $
+# $FreeBSD: head/devel/p5-Test2-Suite/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test2-Suite
 PORTVERSION=	0.000077
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Distribution with a rich set of tools built upon the Test2 framework
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/latex-biber/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/print/latex-biber/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	biber
 PORTVERSION=	2.1
@@ -11,7 +11,7 @@ DIST_SUBDIR=	TeX
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	BibTeX replacement for users of biblatex
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 __DEPENDS= \

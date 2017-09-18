@@ -1,5 +1,5 @@
 # Created by: Denis Pokataev <catone@cpan.org>
-# $FreeBSD: head/net/p5-Net-Server-SS-PreFork/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Net-Server-SS-PreFork/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Server-SS-PreFork
 PORTVERSION=	0.05
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Hot-deployable variant of Net::Server::PreFork
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Net-Server>0:net/p5-Net-Server \

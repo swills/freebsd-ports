@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/biology/p5-Bio-Coordinate/Makefile 428942 2016-12-19 15:54:39Z sunpoet $
+# $FreeBSD: head/biology/p5-Bio-Coordinate/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Bio-Coordinate
 PORTVERSION=	1.007001
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Modules for working with biological coordinates
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

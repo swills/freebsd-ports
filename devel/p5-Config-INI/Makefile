@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Config-INI/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Config-INI/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Config-INI
 PORTVERSION=	0.025
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple .ini files emitter and parser for Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Mixin-Linewise>=0.100:devel/p5-Mixin-Linewise

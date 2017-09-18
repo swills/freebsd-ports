@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/misc/p5-Array-Compare/Makefile 433366 2017-02-05 05:31:56Z sunpoet $
+# $FreeBSD: head/misc/p5-Array-Compare/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Array-Compare
 PORTVERSION=	3.0.0
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for comparing arrays
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Moo>0:devel/p5-Moo \

@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Object-Enum/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Object-Enum/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Object-Enum
 PORTVERSION=	0.07.3
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:R}${PORTVERSION:E}
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Replacement for if ($$foo eq 'bar')
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Sub-Install>=0:devel/p5-Sub-Install \

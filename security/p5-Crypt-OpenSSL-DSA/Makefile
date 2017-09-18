@@ -1,5 +1,5 @@
 # Created by: nork@FreeBSD.org
-# $FreeBSD: head/security/p5-Crypt-OpenSSL-DSA/Makefile 431579 2017-01-15 15:21:52Z sunpoet $
+# $FreeBSD: head/security/p5-Crypt-OpenSSL-DSA/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-OpenSSL-DSA
 PORTVERSION=	0.19
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 module to DSA signature verification using OpenSSL
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5 ssl

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-Plack-Middleware-XForwardedFor/Makefile 446597 2017-07-25 16:21:30Z sunpoet $
+# $FreeBSD: head/www/p5-Plack-Middleware-XForwardedFor/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Plack-Middleware-XForwardedFor
 PORTVERSION=	0.172050
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Plack middleware to handle X-Forwarded-For headers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

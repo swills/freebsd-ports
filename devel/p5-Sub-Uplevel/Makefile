@@ -1,5 +1,5 @@
 # Created by: Erwin Lansing <erwin@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Sub-Uplevel/Makefile 437523 2017-04-02 02:37:48Z sunpoet $
+# $FreeBSD: head/devel/p5-Sub-Uplevel/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Sub-Uplevel
 PORTVERSION=	0.2800
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Appear to run a function in a higher stack frame
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

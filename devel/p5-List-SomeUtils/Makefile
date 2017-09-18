@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-List-SomeUtils/Makefile 446467 2017-07-23 13:12:30Z sunpoet $
+# $FreeBSD: head/devel/p5-List-SomeUtils/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	List-SomeUtils
 PORTVERSION=	0.56
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Provide the stuff missing in List::Util
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

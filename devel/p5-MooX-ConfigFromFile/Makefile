@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooX-ConfigFromFile/Makefile 441581 2017-05-24 13:02:58Z sunpoet $
+# $FreeBSD: head/devel/p5-MooX-ConfigFromFile/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooX-ConfigFromFile
 PORTVERSION=	0.008
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Moo eXtension for initializing objects from config file
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Config-Any>=0:devel/p5-Config-Any \

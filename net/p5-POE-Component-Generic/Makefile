@@ -1,5 +1,5 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/net/p5-POE-Component-Generic/Makefile 435862 2017-03-10 22:45:52Z sunpoet $
+# $FreeBSD: head/net/p5-POE-Component-Generic/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Component-Generic
 PORTVERSION=	0.1403
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Provides non-blocking access to a blocking object
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Devel-Symdump>=0:devel/p5-Devel-Symdump \

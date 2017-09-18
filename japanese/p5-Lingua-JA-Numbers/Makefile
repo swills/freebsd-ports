@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/japanese/p5-Lingua-JA-Numbers/Makefile 386075 2015-05-11 12:04:18Z mat $
+# $FreeBSD: head/japanese/p5-Lingua-JA-Numbers/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Lingua-JA-Numbers
 PORTVERSION=	0.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Converts numeric values to and from their Japanese string equivalents
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

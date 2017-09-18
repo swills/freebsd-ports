@@ -1,5 +1,5 @@
 # Created by: Dennis Herrmann <dhn@FreeBSD.org>
-# $FreeBSD: head/net/p5-XML-Fast/Makefile 444728 2017-06-30 13:06:04Z sunpoet $
+# $FreeBSD: head/net/p5-XML-Fast/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-Fast
 PORTVERSION=	0.17
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple and fast XML to hash conversion
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

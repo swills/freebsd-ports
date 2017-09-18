@@ -1,11 +1,11 @@
-# Created by: Craig Leres <leres@ee.lbl.gov>
-# $FreeBSD: head/devel/arduino-irremote/Makefile 423861 2016-10-12 12:55:02Z bsam $
+# Created by: Craig Leres <leres@FreeBSD.org>
+# $FreeBSD: head/devel/arduino-irremote/Makefile 449916 2017-09-15 18:18:26Z leres $
 
 PORTNAME=	arduino-irremote
 PORTVERSION=	2.1.0
 CATEGORIES=	devel
 
-MAINTAINER=	leres@ee.lbl.gov
+MAINTAINER=	leres@FreeBSD.org
 COMMENT=	Multi-protocol infrared remote library for the Arduino
 
 LICENSE=	LGPL21

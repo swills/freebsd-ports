@@ -1,5 +1,5 @@
 # Created by: Ruben van Staveren
-# $FreeBSD: head/devel/p5-Thread-Suspend/Makefile 438370 2017-04-12 16:24:25Z sunpoet $
+# $FreeBSD: head/devel/p5-Thread-Suspend/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Thread-Suspend
 PORTVERSION=	1.23
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Suspend and resume operations for threads
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-XML-Compile-WSDL11/Makefile 431302 2017-01-12 20:02:27Z sunpoet $
+# $FreeBSD: head/net/p5-XML-Compile-WSDL11/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-Compile-WSDL11
 PORTVERSION=	3.06
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Create SOAP messages defined by WSDL 1.1
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Log-Report>=1.05:devel/p5-Log-Report \

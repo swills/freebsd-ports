@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-CPAN-Recent-Uploads/Makefile 445624 2017-07-13 00:00:36Z sunpoet $
+# $FreeBSD: head/devel/p5-CPAN-Recent-Uploads/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CPAN-Recent-Uploads
 PORTVERSION=	0.12
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Find the distributions recently uploaded to CPAN
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Test-File-ShareDir/Makefile 438013 2017-04-08 10:34:51Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-File-ShareDir/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-File-ShareDir
 PORTVERSION=	1.001002
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Create a fake ShareDir for your modules for testing
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

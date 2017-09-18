@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/converters/p5-XML-WBXML/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/converters/p5-XML-WBXML/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-WBXML
 PORTVERSION=	0.09
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Convert between XML and WBXML using libwbxml2
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libwbxml2.so:textproc/wbxml2

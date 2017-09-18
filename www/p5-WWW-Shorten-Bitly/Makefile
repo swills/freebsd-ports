@@ -1,5 +1,5 @@
 # Created by: Masafumi NAKANE <max@FreeBSD.org>
-# $FreeBSD: head/www/p5-WWW-Shorten-Bitly/Makefile 433534 2017-02-07 07:56:19Z culot $
+# $FreeBSD: head/www/p5-WWW-Shorten-Bitly/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WWW-Shorten-Bitly
 PORTVERSION=	2.001
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Abstract interface to bit.ly, one of URL shortening sites
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Carp/Makefile 401120 2015-11-09 18:42:56Z sunpoet $
+# $FreeBSD: head/devel/p5-Carp/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Carp
 PORTVERSION=	1.38
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Alternative warn and die for modules
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

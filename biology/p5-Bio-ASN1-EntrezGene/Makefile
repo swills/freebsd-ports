@@ -1,5 +1,5 @@
 # Created by: Mauricio Herrera Cuadra <mauricio@arareko.net>
-# $FreeBSD: head/biology/p5-Bio-ASN1-EntrezGene/Makefile 428869 2016-12-18 15:25:13Z sunpoet $
+# $FreeBSD: head/biology/p5-Bio-ASN1-EntrezGene/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Bio-ASN1-EntrezGene
 PORTVERSION=	1.72
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Regular expression-based Perl Parser for NCBI Entrez Gene
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

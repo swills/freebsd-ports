@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/irc/p5-POE-Component-IRC/Makefile 449419 2017-09-07 20:12:41Z sunpoet $
+# $FreeBSD: head/irc/p5-POE-Component-IRC/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Component-IRC
 PORTVERSION=	6.90
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Fully event-driven IRC client module
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

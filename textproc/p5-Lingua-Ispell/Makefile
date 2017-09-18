@@ -1,5 +1,5 @@
 # Created by: -
-# $FreeBSD: head/textproc/p5-Lingua-Ispell/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Lingua-Ispell/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Lingua-Ispell
 PORTVERSION=	0.07
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Perl module that encapsulates access to the Ispell program
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	ispell:textproc/aspell-ispell

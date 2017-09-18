@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/p5-Chart/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/p5-Chart/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Chart
 PORTVERSION=	2.4.10
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 interface to build chart graphics
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-GD>=2:graphics/p5-GD

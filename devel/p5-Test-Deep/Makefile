@@ -1,5 +1,5 @@
 # Created by: Alex Kapranoff <alex@kapranoff.ru>
-# $FreeBSD: head/devel/p5-Test-Deep/Makefile 442354 2017-06-01 23:52:08Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Deep/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Deep
 PORTVERSION=	1.127
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Test data structures for differences deeply
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: Johann Visagie <johann@egenetics.com>
-# $FreeBSD: head/biology/p5-BioPerl/Makefile 449746 2017-09-13 01:45:35Z wen $
+# $FreeBSD: head/biology/p5-BioPerl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	BioPerl
 PORTVERSION=	1.007002
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Collection of Perl modules for bioinformatics
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Algorithm-Munkres>=0:math/p5-Algorithm-Munkres \

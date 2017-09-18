@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-HTML-ExtractContent/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-ExtractContent/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-ExtractContent
 PORTVERSION=	0.11
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for HTML content extractor with scoring heuristics
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

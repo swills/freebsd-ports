@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Future/Makefile 446818 2017-07-28 12:12:20Z culot $
+# $FreeBSD: head/devel/p5-Future/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Future
 PORTVERSION=	0.35
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Build objects representing outstanding operations
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Fatal>0:devel/p5-Test-Fatal \

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Perl-OSType/Makefile 417302 2016-06-22 13:36:14Z mat $
+# $FreeBSD: head/devel/p5-Perl-OSType/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Perl-OSType
 PORTVERSION=	1.010
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Map Perl operating system names to generic types
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

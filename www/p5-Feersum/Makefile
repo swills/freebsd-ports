@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/www/p5-Feersum/Makefile 443841 2017-06-18 17:32:56Z sunpoet $
+# $FreeBSD: head/www/p5-Feersum/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Feersum
 PORTVERSION=	1.405
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	PSGI engine for Perl based on EV/libev
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-EV>=4.0:devel/p5-EV \

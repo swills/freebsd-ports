@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@ahze.net>
-# $FreeBSD: head/devel/p5-ExtUtils-MakeMaker/Makefile 443457 2017-06-12 19:02:02Z sunpoet $
+# $FreeBSD: head/devel/p5-ExtUtils-MakeMaker/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	ExtUtils-MakeMaker
 PORTVERSION=	7.30
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Designed to write a Makefile for an extension module
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 CONFLICTS=	p5-ExtUtils-Command-[0-9]*
 

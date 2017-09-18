@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/converters/p5-Unicode-IMAPUtf7/Makefile 431259 2017-01-12 12:30:01Z amdmi3 $
+# $FreeBSD: head/converters/p5-Unicode-IMAPUtf7/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Unicode-IMAPUtf7
 PORTVERSION=	2.01
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension to deal with IMAP UTF-7
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Unicode-String>=0:converters/p5-Unicode-String

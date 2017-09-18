@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Return-MultiLevel/Makefile 449640 2017-09-11 13:16:19Z sunpoet $
+# $FreeBSD: head/devel/p5-Return-MultiLevel/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Return-MultiLevel
 PORTVERSION=	0.05
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Return across multiple call levels
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Data-Munge>=0.07:devel/p5-Data-Munge \

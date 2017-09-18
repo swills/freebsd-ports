@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-POE/Makefile 440189 2017-05-05 15:36:50Z sunpoet $
+# $FreeBSD: head/devel/p5-MooseX-POE/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooseX-POE
 PORTVERSION=	0.215
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	The Illicit Love Child of Moose and POE
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

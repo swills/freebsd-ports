@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/p5-PPerl/Makefile 400515 2015-10-30 11:25:18Z sunpoet $
+# $FreeBSD: head/devel/p5-PPerl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	PPerl
 PORTVERSION=	0.25
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Make perl scripts persistent in memory
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

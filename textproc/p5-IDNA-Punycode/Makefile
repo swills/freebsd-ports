@@ -1,5 +1,5 @@
 # Created by: Erwin Lansing <erwin@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-IDNA-Punycode/Makefile 435103 2017-02-28 22:51:12Z sunpoet $
+# $FreeBSD: head/textproc/p5-IDNA-Punycode/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IDNA-Punycode
 PORTVERSION=	0.03
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module to encode Unicode string in Punycode
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

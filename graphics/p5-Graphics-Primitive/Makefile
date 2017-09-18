@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/graphics/p5-Graphics-Primitive/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/p5-Graphics-Primitive/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Graphics-Primitive
 PORTVERSION=	0.67
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Device and library agnostic graphic primitives
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Forest>=0.06:devel/p5-Forest \

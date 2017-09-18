@@ -1,5 +1,5 @@
 # Created by: Jase Thew <freebsd@beardz.net>
-# $FreeBSD: head/net/p5-Net-uFTP/Makefile 422377 2016-09-18 11:54:01Z rene $
+# $FreeBSD: head/net/p5-Net-uFTP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-uFTP
 PORTVERSION=	0.161
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Universal interface for FTP-like modules (FTP, SFTP, SCP)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Accessor-Fast-XS>=0:devel/p5-Class-Accessor-Fast-XS \

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-bareword-filehandles/Makefile 438978 2017-04-20 16:46:56Z sunpoet $
+# $FreeBSD: head/devel/p5-bareword-filehandles/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	bareword-filehandles
 PORTVERSION=	0.005
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Disables bareword filehandles
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

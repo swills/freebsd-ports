@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@daltons.ca>
-# $FreeBSD: head/devel/p5-Algorithm-LUHN/Makefile 401940 2015-11-19 12:10:52Z bofh $
+# $FreeBSD: head/devel/p5-Algorithm-LUHN/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Algorithm-LUHN
 PORTVERSION=	1.02
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Calculate the Modulus 10 Double Add Double checksum
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

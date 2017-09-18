@@ -1,12 +1,12 @@
-# Created by: Craig Leres <leres@ee.lbl.gov>
-# $FreeBSD: head/security/create-cert/Makefile 374458 2014-12-10 14:04:23Z feld $
+# Created by: Craig Leres <leres@FreeBSD.org>
+# $FreeBSD: head/security/create-cert/Makefile 449916 2017-09-15 18:18:26Z leres $
 
 PORTNAME=	create-cert
 PORTVERSION=	2.5
 CATEGORIES=	security
 MASTER_SITES=	ftp://ee.lbl.gov/
 
-MAINTAINER=	leres@ee.lbl.gov
+MAINTAINER=	leres@FreeBSD.org
 COMMENT=	Create openssl client key and certificates
 
 LICENSE=	BSD3CLAUSE

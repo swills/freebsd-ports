@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Calendar-Christian/Makefile 426786 2016-11-22 06:55:27Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime-Calendar-Christian/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DateTime-Calendar-Christian
 PORTVERSION=	0.06
@@ -10,10 +10,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Dates in the Christian calendar
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/LICENSES/Artistic
-LICENSE_FILE_GPLv1=	${WRKSRC}/LICENSES/Copying
+LICENSE_FILE_GPLv1+ =	${WRKSRC}/LICENSES/Copying
 
 BUILD_DEPENDS=	p5-DateTime-Calendar-Julian>=0.04:devel/p5-DateTime-Calendar-Julian
 RUN_DEPENDS:=	${BUILD_DEPENDS}

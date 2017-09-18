@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/p5-Data-Google-Visualization-DataSource/Makefile 416157 2016-05-30 15:33:44Z mat $
+# $FreeBSD: head/graphics/p5-Data-Google-Visualization-DataSource/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Google-Visualization-DataSource
 PORTVERSION=	0.01
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	jeremybbaggs@gmail.com
 COMMENT=	Perl helper class for the Google Chart Tools Datasource Protocol
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Clone>=0:devel/p5-Clone \

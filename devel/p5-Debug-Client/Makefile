@@ -1,5 +1,5 @@
 # Created by: ports@c0decafe.net
-# $FreeBSD: head/devel/p5-Debug-Client/Makefile 445102 2017-07-06 00:02:26Z sunpoet $
+# $FreeBSD: head/devel/p5-Debug-Client/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Debug-Client
 PORTVERSION=	0.31
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Client for the standard Perl debugger
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-PadWalker>=1.98:devel/p5-PadWalker \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/p5-X11-Xlib/Makefile 445047 2017-07-05 05:12:12Z pi $
+# $FreeBSD: head/x11/p5-X11-Xlib/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	X11-Xlib
 PORTVERSION=	0.15
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	pi@FreeBSD.org
 COMMENT=	Low-level access to the X11 library
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Devel-CheckLib>=0:devel/p5-Devel-CheckLib \

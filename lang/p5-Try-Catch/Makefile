@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/lang/p5-Try-Catch/Makefile 428800 2016-12-17 20:50:41Z adamw $
+# $FreeBSD: head/lang/p5-Try-Catch/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Try-Catch
 PORTVERSION=	1.1.0
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Try/Catch exception handler based on Try::Tiny, but faster
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

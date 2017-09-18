@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/p5-Imager/Makefile 448828 2017-08-27 17:32:00Z sunpoet $
+# $FreeBSD: head/graphics/p5-Imager/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Imager
 PORTVERSION=	1.006
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for manipulating gray, color, and rgba format images
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Devel-CheckLib>=0:devel/p5-Devel-CheckLib

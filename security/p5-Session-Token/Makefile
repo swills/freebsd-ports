@@ -1,5 +1,5 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/security/p5-Session-Token/Makefile 420422 2016-08-18 20:18:00Z pi $
+# $FreeBSD: head/security/p5-Session-Token/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Session-Token
 PORTVERSION=	1.503
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	hvo.pm@xs4all.nl
 COMMENT=	Secure, efficient, simple random session token generation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/p5-Net-DNS-Match/Makefile 376686 2015-01-10 10:36:44Z bofh $
+# $FreeBSD: head/dns/p5-Net-DNS-Match/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-DNS-Match
 PORTVERSION=	0.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Test domains against another list of FQDNs
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Eval-Context/Makefile 421693 2016-09-10 14:14:08Z ehaupt $
+# $FreeBSD: head/devel/p5-Eval-Context/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Eval-Context
 PORTVERSION=	0.09.11
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Evaluate Perl code in context wrapper
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Test-Output>=0:devel/p5-Test-Output \

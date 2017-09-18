@@ -1,5 +1,5 @@
 # Created by: Dennis Herrmann <adox@mcx2.org>
-# $FreeBSD: head/audio/p5-Audio-Mixer/Makefile 390918 2015-06-29 15:47:44Z adamw $
+# $FreeBSD: head/audio/p5-Audio-Mixer/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Audio-Mixer
 PORTVERSION=	0.7
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for Sound Mixer control
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USE_PERL5=	configure

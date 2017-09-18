@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Dist-Metadata/Makefile 444738 2017-06-30 13:44:02Z sunpoet $
+# $FreeBSD: head/devel/p5-Dist-Metadata/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Dist-Metadata
 PORTVERSION=	0.926
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for information about a perl module distribution
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

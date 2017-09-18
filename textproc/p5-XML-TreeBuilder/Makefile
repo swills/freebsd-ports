@@ -1,5 +1,5 @@
 # Created by: Will Andrews <will@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-TreeBuilder/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-XML-TreeBuilder/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-TreeBuilder
 PORTVERSION=	5.4
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Perl module to make XML document trees
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTML-Tagset>=3.02:www/p5-HTML-Tagset \

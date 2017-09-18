@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@daltons.ca>
-# $FreeBSD: head/devel/p5-Smart-Comments/Makefile 435913 2017-03-11 15:58:18Z sunpoet $
+# $FreeBSD: head/devel/p5-Smart-Comments/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Smart-Comments
 PORTVERSION=	1.06
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Comments that do more than just sit there
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

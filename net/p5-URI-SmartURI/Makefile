@@ -1,5 +1,5 @@
 # Created by: Oleg Mamontov <oleg@mamontov.net>
-# $FreeBSD: head/net/p5-URI-SmartURI/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-URI-SmartURI/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	URI-SmartURI
 PORTVERSION=	0.032
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	oleg@mamontov.net
 COMMENT=	Subclassable and hostless URIs
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-C3-Componentised>=0:devel/p5-Class-C3-Componentised \

@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Event-Sunrise/Makefile 435024 2017-02-28 09:46:58Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime-Event-Sunrise/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DateTime-Event-Sunrise
 PORTVERSION=	0.0505
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	DateTime Objects for sunrise and sunset for a given day
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

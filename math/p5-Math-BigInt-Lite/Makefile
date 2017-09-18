@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-BigInt-Lite/Makefile 443758 2017-06-17 10:02:23Z sunpoet $
+# $FreeBSD: head/math/p5-Math-BigInt-Lite/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-BigInt-Lite
 PORTVERSION=	0.17
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	What Math::BigInts are before they become big
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

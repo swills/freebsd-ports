@@ -1,5 +1,5 @@
 # Created by: andrey@kostenko.name
-# $FreeBSD: head/devel/p5-Config-MVP/Makefile 438004 2017-04-08 10:34:04Z sunpoet $
+# $FreeBSD: head/devel/p5-Config-MVP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Config-MVP
 PORTVERSION=	2.200010
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Multivalue-property package-oriented configuration
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/p5-Dancer-Plugin-FlashMessage/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Dancer-Plugin-FlashMessage/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Dancer-Plugin-FlashMessage
 PORTVERSION=	0.314
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tj@FreeBSD.org
 COMMENT=	Dancer plugin for implementing Flash Messages
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Dancer>=1.2001:www/p5-Dancer

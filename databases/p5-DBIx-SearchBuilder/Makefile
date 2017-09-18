@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/databases/p5-DBIx-SearchBuilder/Makefile 443805 2017-06-18 05:51:24Z sunpoet $
+# $FreeBSD: head/databases/p5-DBIx-SearchBuilder/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBIx-SearchBuilder
 PORTVERSION=	1.66
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	michelle@sorbs.net
 COMMENT=	Perl extension for easy SQL SELECT Statement generation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-ReturnValue>=0:devel/p5-Class-ReturnValue \

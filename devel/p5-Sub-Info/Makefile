@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Sub-Info/Makefile 430664 2017-01-05 19:34:59Z sunpoet $
+# $FreeBSD: head/devel/p5-Sub-Info/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Sub-Info
 PORTVERSION=	0.002
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Tool to inspect subroutines
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/textproc/p5-Lingua-EN-NameParse/Makefile 423610 2016-10-09 16:03:20Z adamw $
+# $FreeBSD: head/textproc/p5-Lingua-EN-NameParse/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Lingua-EN-NameParse
 PORTVERSION=	1.36
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Routines for manipulating a person's name
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Parse-RecDescent>=1:devel/p5-Parse-RecDescent

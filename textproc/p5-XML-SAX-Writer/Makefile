@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-XML-SAX-Writer/Makefile 446160 2017-07-18 17:55:40Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-SAX-Writer/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-SAX-Writer
 PORTVERSION=	0.57
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	SAX2 XML Writer
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

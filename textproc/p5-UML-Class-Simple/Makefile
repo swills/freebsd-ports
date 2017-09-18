@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-UML-Class-Simple/Makefile 429020 2016-12-20 18:35:40Z sunpoet $
+# $FreeBSD: head/textproc/p5-UML-Class-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	UML-Class-Simple
 PORTVERSION=	0.22
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Render simple UML class diagrams, by loading the code
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Inspector>=1.16:devel/p5-Class-Inspector \

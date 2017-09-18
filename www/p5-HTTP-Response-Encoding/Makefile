@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-HTTP-Response-Encoding/Makefile 443814 2017-06-18 05:52:08Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-Response-Encoding/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTTP-Response-Encoding
 PORTVERSION=	0.06
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Adds encoding() to HTTP::Response
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww \

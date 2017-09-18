@@ -1,5 +1,5 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/security/p5-Unix-Passwd-File/Makefile 445514 2017-07-11 17:00:00Z sunpoet $
+# $FreeBSD: head/security/p5-Unix-Passwd-File/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Unix-Passwd-File
 PORTVERSION=	0.24
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Manipulate passwd and group entries
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

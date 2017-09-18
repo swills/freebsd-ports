@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-HTML-Perlinfo/Makefile 431700 2017-01-16 19:53:07Z pi $
+# $FreeBSD: head/www/p5-HTML-Perlinfo/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-Perlinfo
 PORTVERSION=	1.69
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	pi@FreeBSD.org
 COMMENT=	Display a lot of Perl information in HTML format
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/p5-BBS-UserInfo/Makefile 397421 2015-09-20 20:19:52Z sunpoet $
+# $FreeBSD: head/net/p5-BBS-UserInfo/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	BBS-UserInfo
 PORTVERSION=	0.01
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Base class of BBS::UserInfo::XXX
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

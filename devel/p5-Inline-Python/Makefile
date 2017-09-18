@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Inline-Python/Makefile 447418 2017-08-05 23:10:58Z sunpoet $
+# $FreeBSD: head/devel/p5-Inline-Python/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Inline-Python
 PORTVERSION=	0.56
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Write Perl Subroutines in Python
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Inline>=0.46:devel/p5-Inline

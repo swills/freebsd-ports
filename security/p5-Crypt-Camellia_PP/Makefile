@@ -1,5 +1,5 @@
 # Created by: Yoshisato YANAGISAWA
-# $FreeBSD: head/security/p5-Crypt-Camellia_PP/Makefile 395270 2015-08-25 14:52:02Z sunpoet $
+# $FreeBSD: head/security/p5-Crypt-Camellia_PP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-Camellia_PP
 PORTVERSION=	0.02
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Pure Perl Camellia 128-bit block cipher module
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

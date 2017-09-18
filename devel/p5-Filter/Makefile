@@ -1,5 +1,5 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Filter/Makefile 432368 2017-01-24 17:41:33Z sunpoet $
+# $FreeBSD: head/devel/p5-Filter/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Filter
 PORTVERSION=	1.57
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Number of source filters for perl5 programs
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 PORTSCOUT=	limit:^[0-9\.]*$$

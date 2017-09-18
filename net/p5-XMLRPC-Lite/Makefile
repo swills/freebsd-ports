@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-XMLRPC-Lite/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-XMLRPC-Lite/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XMLRPC-Lite
 PORTVERSION=	0.717
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	vivek@khera.org
 COMMENT=	Client and server side XMLRPC implementation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-SOAP-Lite>=1.11:net/p5-SOAP-Lite

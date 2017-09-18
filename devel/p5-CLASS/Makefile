@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-CLASS/Makefile 397725 2015-09-24 19:03:59Z sunpoet $
+# $FreeBSD: head/devel/p5-CLASS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CLASS
 PORTVERSION=	1.00
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Alias for __PACKAGE__
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Array-Heap/Makefile 433242 2017-02-03 14:15:10Z sunpoet $
+# $FreeBSD: head/devel/p5-Array-Heap/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Array-Heap
 PORTVERSION=	3.22
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	eserte12@yahoo.de
 COMMENT=	Perl module implementing fast binary heaps/priority queues
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Canary-Stability>=0:devel/p5-Canary-Stability

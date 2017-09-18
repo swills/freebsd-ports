@@ -1,9 +1,8 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/ftp/lftp/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/ftp/lftp/Makefile 449897 2017-09-15 10:07:00Z martymac $
 
 PORTNAME=	lftp
-PORTVERSION=	4.8.0
-PORTREVISION=	1
+PORTVERSION=	4.8.1
 CATEGORIES=	ftp ipv6
 MASTER_SITES=	http://lftp.tech/ftp/ \
 		http://lftp.tech/ftp/old/ \
@@ -21,11 +20,10 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libexpat.so:textproc/expat2 \
-		libidn.so:dns/libidn
+		libidn2.so:dns/libidn2
 
 USES=		charsetfix iconv libtool localbase readline shebangfix
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	ac_cv_type_max_align_t=yes
 
 PORTDOCS=	AUTHORS BUGS ChangeLog FAQ FEATURES INSTALL \
 		MIRRORS NEWS README README.debug-levels README.modules \

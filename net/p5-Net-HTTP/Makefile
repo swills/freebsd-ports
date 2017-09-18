@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-HTTP/Makefile 449141 2017-09-02 14:23:54Z sunpoet $
+# $FreeBSD: head/net/p5-Net-HTTP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-HTTP
 PORTVERSION=	6.17
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Low-level HTTP client
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

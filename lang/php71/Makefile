@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/lang/php71/Makefile 449034 2017-08-31 13:59:50Z tz $
+# $FreeBSD: head/lang/php71/Makefile 449898 2017-09-15 10:26:14Z tz $
 
 PORTNAME=	php71
 PORTVERSION=	7.1.9
@@ -48,6 +48,7 @@ OPTIONS_SUB=	yes
 OPTIONS_EXCLUDE_DragonFly=	DTRACE
 # ld(1) fails to link probes: Relocations in generic ELF (EM: 0)
 OPTIONS_EXCLUDE_aarch64=	DTRACE
+OPTIONS_EXCLUDE_sparc64=	DTRACE
 
 CLI_DESC=	Build CLI version
 CGI_DESC=	Build CGI version

@@ -1,5 +1,5 @@
 # Created by: Denis Pokataev <catone@cpan.org>
-# $FreeBSD: head/devel/p5-AnyEvent-Subprocess/Makefile 442695 2017-06-05 23:24:07Z sunpoet $
+# $FreeBSD: head/devel/p5-AnyEvent-Subprocess/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	AnyEvent-Subprocess
 PORTVERSION=	1.102912
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Flexible, OO, asynchronous process spawning and management
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-AnyEvent>=5.2:devel/p5-AnyEvent \

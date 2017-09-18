@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Test-YAML/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Test-YAML/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-YAML
 PORTVERSION=	1.06
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	svysh.fbsd@gmail.com
 COMMENT=	Testing Module for YAML Implementations
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	bash:shells/bash \

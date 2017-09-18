@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/textproc/p5-XML-Atom/Makefile 440729 2017-05-12 21:51:38Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-Atom/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-Atom
 PORTVERSION=	0.42
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 modules for Atom feed and API implementation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

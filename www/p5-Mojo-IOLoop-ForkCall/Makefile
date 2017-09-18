@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Mojo-IOLoop-ForkCall/Makefile 449739 2017-09-12 21:25:57Z jlaffaye $
+# $FreeBSD: head/www/p5-Mojo-IOLoop-ForkCall/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=		Mojo-IOLoop-ForkCall
 PORTVERSION=		0.17
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=		p5-
 MAINTAINER=		skalmanman@gmail.com
 COMMENT=		Mojo::IOLoop::ForkCall
 
-LICENSE=		ART10 GPLv1
+LICENSE=		ART10 GPLv1+
 LICENSE_COMB=		dual
 
 RUN_DEPENDS=		p5-Mojolicious>=5.08:www/p5-Mojolicious \

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Text-Levenshtein-Damerau/Makefile 392779 2015-07-24 08:58:17Z sunpoet $
+# $FreeBSD: head/devel/p5-Text-Levenshtein-Damerau/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-Levenshtein-Damerau
 PORTVERSION=	0.41
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Damerau Levenshtein edit distance
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

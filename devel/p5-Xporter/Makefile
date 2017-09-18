@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Xporter/Makefile 430152 2016-12-31 19:11:57Z sunpoet $
+# $FreeBSD: head/devel/p5-Xporter/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Xporter
 PORTVERSION=	0.1.2
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Alternative Exporter with persistant defaults and auto-ISA
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-mem>=0.4.5:devel/p5-mem

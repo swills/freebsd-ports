@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Format-Mail/Makefile 435334 2017-03-03 10:25:00Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime-Format-Mail/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DateTime-Format-Mail
 PORTVERSION=	0.403
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Convert between DateTime and RFC2822/822 formats
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

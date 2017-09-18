@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/mail/p5-Mail-Box-Parser-C/Makefile 433235 2017-02-03 14:10:09Z sunpoet $
+# $FreeBSD: head/mail/p5-Mail-Box-Parser-C/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Mail-Box-Parser-C
 PORTVERSION=	3.008
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Parsing folders for Mail::Box with C routines
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

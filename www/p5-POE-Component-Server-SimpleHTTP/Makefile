@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-POE-Component-Server-SimpleHTTP/Makefile 435863 2017-03-10 22:45:57Z sunpoet $
+# $FreeBSD: head/www/p5-POE-Component-Server-SimpleHTTP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Component-Server-SimpleHTTP
 PORTVERSION=	2.26
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension to serve HTTP requests in POE
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

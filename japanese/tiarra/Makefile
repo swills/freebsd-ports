@@ -1,5 +1,5 @@
 # Created by: Hajimu UMEMOTO <ume@FreeBSD.org>
-# $FreeBSD: head/japanese/tiarra/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/tiarra/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	tiarra
 PORTVERSION=	20100212
@@ -10,7 +10,7 @@ MASTER_SITES=	http://www.clovery.jp/tiarra/archive/2010/02/
 MAINTAINER=	ume@FreeBSD.org
 COMMENT=	IRC Proxy software
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-IO-Socket-INET6>=0:net/p5-IO-Socket-INET6

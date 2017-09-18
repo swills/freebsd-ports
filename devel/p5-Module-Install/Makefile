@@ -1,5 +1,5 @@
 # Created by: clsung
-# $FreeBSD: head/devel/p5-Module-Install/Makefile 438268 2017-04-11 14:47:21Z swills $
+# $FreeBSD: head/devel/p5-Module-Install/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Module-Install
 PORTVERSION=	1.18
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Standalone, extensible Perl module installer
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-Remove>=1.42:devel/p5-File-Remove \

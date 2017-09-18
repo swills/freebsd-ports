@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-Role-WithOverloading/Makefile 429527 2016-12-26 14:33:04Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Role-WithOverloading/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooseX-Role-WithOverloading
 PORTVERSION=	0.17
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Roles which support overloading
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Moose>=1.15:devel/p5-Moose \

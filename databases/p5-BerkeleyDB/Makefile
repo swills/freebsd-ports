@@ -1,5 +1,5 @@
 # Created by: T. William Wells <bill@twwells.com>
-# $FreeBSD: head/databases/p5-BerkeleyDB/Makefile 419843 2016-08-08 13:46:50Z mat $
+# $FreeBSD: head/databases/p5-BerkeleyDB/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	BerkeleyDB
 PORTVERSION=	0.55
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 interface to the Berkeley DB package
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-MLDBM>=0:databases/p5-MLDBM \

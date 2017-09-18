@@ -1,8 +1,8 @@
 # Created by: Arun Sharma <arun@sharma-home.net>
-# $FreeBSD: head/devel/tbb/Makefile 448598 2017-08-23 11:13:03Z martymac $
+# $FreeBSD: head/devel/tbb/Makefile 449986 2017-09-17 07:03:14Z martymac $
 
 PORTNAME=	tbb
-PORTVERSION=	2017.7
+PORTVERSION=	2018
 CATEGORIES=	devel
 
 MAINTAINER=	martymac@FreeBSD.org
@@ -23,7 +23,7 @@ SUB_LIST=	prefix="${PREFIX}" \
 OPTIONS_DEFINE=	DOCS
 PORTDOCS=	*
 
-ONLY_FOR_ARCHS=		amd64 i386 armv6
+ONLY_FOR_ARCHS=		amd64 armv6 i386
 ONLY_FOR_ARCHS_REASON=	has not been ported to this platform
 
 USE_LDCONFIG=	yes

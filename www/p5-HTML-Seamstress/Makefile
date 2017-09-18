@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/www/p5-HTML-Seamstress/Makefile 435065 2017-02-28 14:58:27Z sunpoet $
+# $FreeBSD: head/www/p5-HTML-Seamstress/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-Seamstress
 PORTVERSION=	6.112830
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	HTML::Tree subclass for HTML templating via tree rewriting
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-HTML-Restrict/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-Restrict/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-Restrict
 PORTVERSION=	2.2.2
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to strip unwanted HTML tags and attributes
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

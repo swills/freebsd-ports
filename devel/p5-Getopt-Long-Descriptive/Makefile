@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Getopt-Long-Descriptive/Makefile 418523 2016-07-14 08:39:56Z wen $
+# $FreeBSD: head/devel/p5-Getopt-Long-Descriptive/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Getopt-Long-Descriptive
 PORTVERSION=	0.100
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Getopt::Long with usage text
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Params-Validate>=0.97:devel/p5-Params-Validate \

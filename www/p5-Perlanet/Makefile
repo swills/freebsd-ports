@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-Perlanet/Makefile 444927 2017-07-03 08:48:58Z sunpoet $
+# $FreeBSD: head/www/p5-Perlanet/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Perlanet
 PORTVERSION=	1.1.0
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Program for creating programs that aggregate web feeds
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-CHI>=0:devel/p5-CHI \

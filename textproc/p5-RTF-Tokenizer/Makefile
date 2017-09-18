@@ -1,5 +1,5 @@
 # Created by: clsung@dragon2.net
-# $FreeBSD: head/textproc/p5-RTF-Tokenizer/Makefile 420179 2016-08-14 07:31:49Z wen $
+# $FreeBSD: head/textproc/p5-RTF-Tokenizer/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	RTF-Tokenizer
 PORTVERSION=	1.20
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for reading RTF files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

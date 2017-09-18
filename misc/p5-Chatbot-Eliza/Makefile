@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/misc/p5-Chatbot-Eliza/Makefile 400649 2015-11-02 10:29:58Z culot $
+# $FreeBSD: head/misc/p5-Chatbot-Eliza/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Chatbot-Eliza
 PORTVERSION=	1.06
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Clone of the classic Eliza program
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

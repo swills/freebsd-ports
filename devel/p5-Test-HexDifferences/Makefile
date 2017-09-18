@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-HexDifferences/Makefile 445103 2017-07-06 00:02:32Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-HexDifferences/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-HexDifferences
 PORTVERSION=	1.001
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Test binary as hexadecimal string
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Sub-Exporter>=0:devel/p5-Sub-Exporter \

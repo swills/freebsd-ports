@@ -1,5 +1,5 @@
 # Created by: Olivier Girard <Olivier.Girard@univ-angers.fr>
-# $FreeBSD: head/mail/p5-MIME-Charset/Makefile 438285 2017-04-11 15:56:39Z sunpoet $
+# $FreeBSD: head/mail/p5-MIME-Charset/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MIME-Charset
 PORTVERSION=	1.012.2
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	Olivier.Girard@univ-angers.fr
 COMMENT=	Charset Informations for MIME
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

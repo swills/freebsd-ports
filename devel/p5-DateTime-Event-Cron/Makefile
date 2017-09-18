@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Event-Cron/Makefile 437967 2017-04-07 23:16:35Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime-Event-Cron/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DateTime-Event-Cron
 PORTVERSION=	0.09
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	DateTime extension for generating recurrence sets from crontab
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \

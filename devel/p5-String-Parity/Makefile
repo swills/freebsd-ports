@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/p5-String-Parity/Makefile 416785 2016-06-12 09:59:06Z bofh $
+# $FreeBSD: head/devel/p5-String-Parity/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	String-Parity
 PORTVERSION=	1.34
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl5 module to generate and test even, odd, mark, and space parity
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman <matthew@FreeBSD.org>
-# $FreeBSD: head/www/p5-WWW-Salesforce/Makefile 449823 2017-09-14 06:22:24Z matthew $
+# $FreeBSD: head/www/p5-WWW-Salesforce/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=       WWW-Salesforce
 PORTVERSION=    0.301
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=  p5-
 MAINTAINER=     matthew@FreeBSD.org
 COMMENT=        Simple abstraction layer between SOAP::Lite and Salesforce.com
 
-LICENSE=        ART10 GPLv1
+LICENSE=        ART10 GPLv1+
 LICENSE_COMB=   dual
 
 BUILD_DEPENDS=	p5-SOAP-Lite>=0.68:net/p5-SOAP-Lite \

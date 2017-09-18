@@ -1,5 +1,5 @@
 # Created by: Mikolaj Golub <trociny@FreeBSD.org>
-# $FreeBSD: head/sysutils/p5-MogileFS-Network/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/p5-MogileFS-Network/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MogileFS-Network
 PORTVERSION=	0.06
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	trociny@FreeBSD.org
 COMMENT=	Network awareness and extensions for p5-MogileFS-Server
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Net-Netmask>=0:net-mgmt/p5-Net-Netmask \

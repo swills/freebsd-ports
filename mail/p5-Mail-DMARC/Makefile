@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/p5-Mail-DMARC/Makefile 424091 2016-10-17 03:05:55Z wen $
+# $FreeBSD: head/mail/p5-Mail-DMARC/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Mail-DMARC
 PORTVERSION=	1.20160612
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	dgeo@centrale-marseille.fr
 COMMENT=	Perl5 module to process and/or create DKIM email
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Crypt-OpenSSL-RSA>=0:security/p5-Crypt-OpenSSL-RSA \

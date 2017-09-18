@@ -1,5 +1,5 @@
 # Created by: Sheldon Hearn <sheldonh@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBD-Sybase/Makefile 449638 2017-09-11 13:16:07Z sunpoet $
+# $FreeBSD: head/databases/p5-DBD-Sybase/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBD-Sybase
 PORTVERSION=	1.16
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Sybase DBI driver for Perl 5
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DBI>=0:databases/p5-DBI

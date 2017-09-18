@@ -1,5 +1,5 @@
 # Created by: <hvo.pm@xs4all.nl>
-# $FreeBSD: head/databases/p5-Dancer2-Session-DBIC/Makefile 419010 2016-07-24 16:19:02Z pi $
+# $FreeBSD: head/databases/p5-Dancer2-Session-DBIC/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Dancer2-Session-DBIC
 PORTVERSION=	0.110
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	hvo.pm@xs4all.nl
 COMMENT=	DBIx::Class based session engine for Dancer2
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DBIx-Class>=0:databases/p5-DBIx-Class\

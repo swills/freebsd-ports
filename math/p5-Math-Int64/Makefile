@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Int64/Makefile 406341 2016-01-17 13:10:18Z sunpoet $
+# $FreeBSD: head/math/p5-Math-Int64/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-Int64
 PORTVERSION=	0.54
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Manipulate 64 bits integers in Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USE_PERL5=	configure

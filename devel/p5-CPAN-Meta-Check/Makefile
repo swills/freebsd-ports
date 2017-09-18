@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/devel/p5-CPAN-Meta-Check/Makefile 442696 2017-06-05 23:24:12Z sunpoet $
+# $FreeBSD: head/devel/p5-CPAN-Meta-Check/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CPAN-Meta-Check
 PORTVERSION=	0.014
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Verify requirements in a CPAN::Meta object
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Deep>0:devel/p5-Test-Deep

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-File-Flock-Retry/Makefile 444965 2017-07-03 17:18:44Z sunpoet $
+# $FreeBSD: head/devel/p5-File-Flock-Retry/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Flock-Retry
 PORTVERSION=	0.62
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Yet another flock module
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

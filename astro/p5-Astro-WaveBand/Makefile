@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/astro/p5-Astro-WaveBand/Makefile 397144 2015-09-17 17:10:17Z sunpoet $
+# $FreeBSD: head/astro/p5-Astro-WaveBand/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Astro-WaveBand
 PORTVERSION=	0.09
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Transparently work in waveband, wavelength, or filter
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

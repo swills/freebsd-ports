@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/p5-Test-WWW-Declare/Makefile 442357 2017-06-01 23:52:24Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-WWW-Declare/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-WWW-Declare
 PORTVERSION=	0.02
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Declarative testing for your web app
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Test-WWW-Mechanize>=0:devel/p5-Test-WWW-Mechanize

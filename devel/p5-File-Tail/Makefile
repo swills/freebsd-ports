@@ -1,5 +1,5 @@
 # Created by: Jeremy Shaffner <jeremy@external.org>
-# $FreeBSD: head/devel/p5-File-Tail/Makefile 394927 2015-08-21 06:56:57Z kuriyama $
+# $FreeBSD: head/devel/p5-File-Tail/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Tail
 PORTVERSION=	1.3
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl Module to read the end of a file as it's appended to
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Tatsuya Ueda <ml+freebsd@tatsuya.info>
-# $FreeBSD: head/devel/p5-Path-Class-File-Lockable/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Path-Class-File-Lockable/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Path-Class-File-Lockable
 PORTVERSION=	0.03
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ml+freebsd@tatsuya.info
 COMMENT=	Lock your files with Path::Class::File
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-NFSLock>0:devel/p5-File-NFSLock \

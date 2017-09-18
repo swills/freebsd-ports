@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-Growl-GNTP/Makefile 412819 2016-04-09 12:30:24Z sunpoet $
+# $FreeBSD: head/net/p5-Growl-GNTP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Growl-GNTP
 PORTVERSION=	0.21
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl implementation of the Growl GNTP Protocol (Client Part)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-POE-Server-TCP/Makefile 418127 2016-07-06 10:03:48Z lth $
+# $FreeBSD: head/devel/p5-Test-POE-Server-TCP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-POE-Server-TCP
 PORTVERSION=	1.20
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	POE Component providing TCP server services for test cases
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-POE>=1.004:devel/p5-POE

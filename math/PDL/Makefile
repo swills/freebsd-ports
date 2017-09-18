@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@plab.ku.dk>
-# $FreeBSD: head/math/PDL/Makefile 446283 2017-07-20 17:57:06Z sunpoet $
+# $FreeBSD: head/math/PDL/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	PDL
 PORTVERSION=	2.018
@@ -9,7 +9,7 @@ MASTER_SITES=	CPAN
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl Data Language
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Astro-FITS-Header>=0:astro/p5-Astro-FITS-Header \

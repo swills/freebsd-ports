@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-IO-AIO/Makefile 414550 2016-05-03 19:01:14Z sunpoet $
+# $FreeBSD: head/devel/p5-IO-AIO/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IO-AIO
 PORTVERSION=	4.34
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Asynchronous Input/Output
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Canary-Stability>=2001:devel/p5-Canary-Stability \

@@ -1,5 +1,5 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/www/p5-WebService-MusicBrainz/Makefile 442575 2017-06-04 18:33:02Z bofh $
+# $FreeBSD: head/www/p5-WebService-MusicBrainz/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WebService-MusicBrainz
 PORTVERSION=	1.0.2
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl interface to MusicBrainz
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \

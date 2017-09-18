@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/mail/p5-Email-Valid/Makefile 421551 2016-09-08 14:01:20Z amdmi3 $
+# $FreeBSD: head/mail/p5-Email-Valid/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Email-Valid
 PORTVERSION=	1.200
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tobez@FreeBSD.org
 COMMENT=	Check validity of Internet email addresses
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 COMMON_DEPENDS=	p5-Net-DNS>0:dns/p5-Net-DNS \

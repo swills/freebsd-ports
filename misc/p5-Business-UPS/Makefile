@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/misc/p5-Business-UPS/Makefile 435032 2017-02-28 09:47:37Z sunpoet $
+# $FreeBSD: head/misc/p5-Business-UPS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Business-UPS
 PORTVERSION=	2.01
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	UPS Interface Module
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww

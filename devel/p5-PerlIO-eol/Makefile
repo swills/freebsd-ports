@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@infor.org>
-# $FreeBSD: head/devel/p5-PerlIO-eol/Makefile 414340 2016-04-30 08:56:41Z sunpoet $
+# $FreeBSD: head/devel/p5-PerlIO-eol/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	PerlIO-eol
 PORTVERSION=	0.16
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	PerlIO layer for normalizing line endings
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

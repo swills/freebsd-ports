@@ -1,5 +1,5 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Config-IniFiles/Makefile 446671 2017-07-26 18:14:42Z culot $
+# $FreeBSD: head/devel/p5-Config-IniFiles/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Config-IniFiles
 PORTVERSION=	2.94
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Read .ini-style configuration files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

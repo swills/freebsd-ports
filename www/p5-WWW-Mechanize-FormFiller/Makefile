@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/www/p5-WWW-Mechanize-FormFiller/Makefile 431984 2017-01-20 19:38:05Z sunpoet $
+# $FreeBSD: head/www/p5-WWW-Mechanize-FormFiller/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WWW-Mechanize-FormFiller
 PORTVERSION=	0.12
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl framework to automate HTML forms
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Data-Random>=0.05:devel/p5-Data-Random \

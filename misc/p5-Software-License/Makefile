@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/misc/p5-Software-License/Makefile 413982 2016-04-25 09:11:02Z sunpoet $
+# $FreeBSD: head/misc/p5-Software-License/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Software-License
 PORTVERSION=	0.103012
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Packages that provide templated software licenses
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Data-Section>=0:devel/p5-Data-Section \

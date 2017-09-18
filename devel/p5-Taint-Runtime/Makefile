@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Taint-Runtime/Makefile 400257 2015-10-27 15:49:23Z sunpoet $
+# $FreeBSD: head/devel/p5-Taint-Runtime/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Taint-Runtime
 PORTVERSION=	0.03
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Runtime enable/disable taint checking
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/www/p5-HTTP-BrowserDetect/Makefile 416201 2016-05-31 14:04:38Z jadawin $
+# $FreeBSD: head/www/p5-HTTP-BrowserDetect/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTTP-BrowserDetect
 PORTVERSION=	3.14
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Determine the Web browser, version, OS from an HTTP user agent string
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/archivers/p5-IO-Compress-Lzop/Makefile 434453 2017-02-20 15:09:30Z sunpoet $
+# $FreeBSD: head/archivers/p5-IO-Compress-Lzop/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IO-Compress-Lzop
 PORTVERSION=	2.074
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Write lzop files / buffers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Compress-LZO>=0:archivers/p5-Compress-LZO \

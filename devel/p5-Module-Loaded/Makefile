@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Module-Loaded/Makefile 389362 2015-06-13 13:51:23Z sunpoet $
+# $FreeBSD: head/devel/p5-Module-Loaded/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Module-Loaded
 PORTVERSION=	0.08
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Mark modules as loaded or unloaded
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

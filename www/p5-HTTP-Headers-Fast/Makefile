@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-HTTP-Headers-Fast/Makefile 437701 2017-04-04 07:38:44Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-Headers-Fast/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTTP-Headers-Fast
 PORTVERSION=	0.21
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for faster implementation of HTTP::Headers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

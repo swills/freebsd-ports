@@ -1,5 +1,5 @@
 # Created by: Elvis Chiang <elvis@sslab.cs.ccu.edu.tw>
-# $FreeBSD: head/devel/p5-Path-Class/Makefile 420206 2016-08-15 00:00:54Z wen $
+# $FreeBSD: head/devel/p5-Path-Class/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Path-Class
 PORTVERSION=	0.37
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Cross-platform path specification manipulation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

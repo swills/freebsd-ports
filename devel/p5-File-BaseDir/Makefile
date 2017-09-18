@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@infor.org>
-# $FreeBSD: head/devel/p5-File-BaseDir/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-File-BaseDir/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-BaseDir
 PORTVERSION=	0.07
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Use the freedesktop basedir spec
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-IPC-System-Simple>=0:devel/p5-IPC-System-Simple

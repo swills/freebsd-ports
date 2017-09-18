@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/converters/p5-JSON-MaybeXS/Makefile 442310 2017-06-01 19:57:45Z sunpoet $
+# $FreeBSD: head/converters/p5-JSON-MaybeXS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	JSON-MaybeXS
 PORTVERSION=	1.003009
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Use Cpanel::JSON::XS with a fallback to JSON::PP
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Cpanel-JSON-XS>=2.3310:converters/p5-Cpanel-JSON-XS

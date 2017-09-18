@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/ftp/p5-Net-FTPSSL/Makefile 437415 2017-04-01 10:52:43Z sunpoet $
+# $FreeBSD: head/ftp/p5-Net-FTPSSL/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-FTPSSL
 PORTVERSION=	0.38
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	FTP over SSL/TLS class
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Sebastien gioria <gioria@FreeBSD.org>
-# $FreeBSD: head/misc/p5-Locale-Msgcat/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/misc/p5-Locale-Msgcat/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Msgcat
 PORTVERSION=	1.03
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl module for systems to support the XPG4 message catalog functions
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

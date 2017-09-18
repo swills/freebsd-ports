@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Canary-Stability/Makefile 423091 2016-10-01 20:28:22Z adamw $
+# $FreeBSD: head/devel/p5-Canary-Stability/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Canary-Stability
 PORTVERSION=	2012
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Checks what version of perl you're running and then complains about it
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

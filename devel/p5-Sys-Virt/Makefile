@@ -1,5 +1,5 @@
 # Created by: Frank Wall <fw@moov.de>
-# $FreeBSD: head/devel/p5-Sys-Virt/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Sys-Virt/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Sys-Virt
 PORTVERSION=	1.1.1
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	fw@moov.de
 COMMENT=	Perl bindings for libvirt
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-XML-XPath>=0:textproc/p5-XML-XPath

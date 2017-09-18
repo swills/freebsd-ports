@@ -1,5 +1,5 @@
 # Created by: andrey@kostenko.name
-# $FreeBSD: head/www/p5-Catalyst-Controller-RateLimit/Makefile 442387 2017-06-02 15:39:04Z sunpoet $
+# $FreeBSD: head/www/p5-Catalyst-Controller-RateLimit/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Catalyst-Controller-RateLimit
 PORTVERSION=	0.28
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Protect your site from robots
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Algorithm-FloodControl>=1.91:devel/p5-Algorithm-FloodControl \

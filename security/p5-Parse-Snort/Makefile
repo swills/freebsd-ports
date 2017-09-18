@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/p5-Parse-Snort/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-Parse-Snort/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Parse-Snort
 PORTVERSION=	0.6
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	jeremybbaggs@gmail.com
 COMMENT=	Perl module to parse and create Snort rules
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor

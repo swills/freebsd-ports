@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooX-Types-MooseLike-Numeric/Makefile 432141 2017-01-22 14:38:05Z sunpoet $
+# $FreeBSD: head/devel/p5-MooX-Types-MooseLike-Numeric/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooX-Types-MooseLike-Numeric
 PORTVERSION=	1.03
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Moo types for numbers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Moo>=1.004002:devel/p5-Moo \

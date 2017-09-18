@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/p5-Net-Async-FastCGI/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Net-Async-FastCGI/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Async-FastCGI
 PORTVERSION=	0.25
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module to use FastCGI with IO::Async
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTTP-Message>=0:www/p5-HTTP-Message \

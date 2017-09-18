@@ -1,5 +1,5 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/textproc/p5-XML-Parser-Lite/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-XML-Parser-Lite/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-Parser-Lite
 PORTVERSION=	0.721
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	svysh.fbsd@gmail.com
 COMMENT=	Lightweight regexp-based XML parser
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Requires>=0.06:devel/p5-Test-Requires \

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/p5-JSON-RPC-Common/Makefile 442347 2017-06-01 23:51:32Z sunpoet $
+# $FreeBSD: head/devel/p5-JSON-RPC-Common/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	JSON-RPC-Common
 PORTVERSION=	0.11
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Transport agnostic JSON RPC helper objects
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

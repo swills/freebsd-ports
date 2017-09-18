@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/vault/Makefile 446790 2017-07-28 01:20:42Z dbaio $
+# $FreeBSD: head/security/vault/Makefile 449937 2017-09-15 21:28:25Z dch $
 
 PORTNAME=	vault
-PORTVERSION=	0.7.2
+PORTVERSION=	0.8.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 
@@ -11,12 +11,12 @@ COMMENT=	Tool for securely accessing secrets
 LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	go>=1.7.1:lang/go
+BUILD_DEPENDS=	go>=1.9:lang/go
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	hashicorp
 GH_SUBDIR=	src/github.com/${GH_ACCOUNT}/${PORTNAME}
-COMMIT_ID=	d28dd5a018294562dbc9a18c95554d52b5d12390
+COMMIT_ID=	9afe7330e06e486ee326621624f2077d88bc9511
 
 USE_RC_SUBR=	vault
 

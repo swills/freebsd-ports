@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net-mgmt/p5-Cisco-Reconfig/Makefile 446018 2017-07-16 16:09:51Z sunpoet $
+# $FreeBSD: head/net-mgmt/p5-Cisco-Reconfig/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Cisco-Reconfig
 PORTVERSION=	0.912
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Parse and generate Cisco configuration files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

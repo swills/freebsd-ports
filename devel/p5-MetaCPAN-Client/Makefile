@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MetaCPAN-Client/Makefile 444480 2017-06-27 16:13:49Z sunpoet $
+# $FreeBSD: head/devel/p5-MetaCPAN-Client/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MetaCPAN-Client
 PORTVERSION=	2.017000
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Comprehensive, DWIM-featured client to the MetaCPAN API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

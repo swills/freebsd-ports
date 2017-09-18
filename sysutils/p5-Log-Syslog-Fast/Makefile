@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman <matthew@FreeBSD.org>
-# $FreeBSD: head/sysutils/p5-Log-Syslog-Fast/Makefile 444806 2017-06-30 22:14:58Z sunpoet $
+# $FreeBSD: head/sysutils/p5-Log-Syslog-Fast/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Log-Syslog-Fast
 PORTVERSION=	0.65
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	matthew@FreeBSD.org
 COMMENT=	Send syslog messages over TCP, UDP, or UNIX sockets
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Log-Syslog-Constants>-1.01:sysutils/p5-Log-Syslog-Constants

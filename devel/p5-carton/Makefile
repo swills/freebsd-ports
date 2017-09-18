@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-carton/Makefile 444735 2017-06-30 13:43:47Z sunpoet $
+# $FreeBSD: head/devel/p5-carton/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	carton
 PORTVERSION=	1.0.28
@@ -12,7 +12,7 @@ DISTNAME=	Carton-v${PORTVERSION}
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl module dependency manager
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

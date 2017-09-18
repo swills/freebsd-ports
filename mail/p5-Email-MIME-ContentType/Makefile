@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/p5-Email-MIME-ContentType/Makefile 449041 2017-08-31 15:31:42Z sunpoet $
+# $FreeBSD: head/mail/p5-Email-MIME-ContentType/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Email-MIME-ContentType
 PORTVERSION=	1.022
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Parse a MIME Content-Type Header
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

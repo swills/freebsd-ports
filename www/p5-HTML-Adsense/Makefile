@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-HTML-Adsense/Makefile 427316 2016-11-28 13:53:22Z amdmi3 $
+# $FreeBSD: head/www/p5-HTML-Adsense/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-Adsense
 PORTVERSION=	0.2
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Create adsense widgets easily
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor

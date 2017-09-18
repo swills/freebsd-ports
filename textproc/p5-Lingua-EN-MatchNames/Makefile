@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/textproc/p5-Lingua-EN-MatchNames/Makefile 430155 2016-12-31 19:51:34Z adamw $
+# $FreeBSD: head/textproc/p5-Lingua-EN-MatchNames/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Lingua-EN-MatchNames
 PORTVERSION=	1.36
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Smart matching for human names
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Lingua-EN-NameParse>=0:textproc/p5-Lingua-EN-NameParse \

@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Class-XSAccessor/Makefile 430960 2017-01-09 14:42:07Z sunpoet $
+# $FreeBSD: head/devel/p5-Class-XSAccessor/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Class-XSAccessor
 PORTVERSION=	1.19
@@ -13,7 +13,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Generate fast XS accessors without runtime compilation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

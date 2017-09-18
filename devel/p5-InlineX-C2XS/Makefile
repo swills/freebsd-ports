@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/p5-InlineX-C2XS/Makefile 415256 2016-05-15 16:13:12Z sunpoet $
+# $FreeBSD: head/devel/p5-InlineX-C2XS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	InlineX-C2XS
 PORTVERSION=	0.25
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module to create an XS file from an Inline C file
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Inline-C>=0.54:devel/p5-Inline-C

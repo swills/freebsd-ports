@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-MooseX-Traits/Makefile 442350 2017-06-01 23:51:47Z sunpoet $
+# $FreeBSD: head/devel/p5-MooseX-Traits/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooseX-Traits
 PORTVERSION=	0.13
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Moose eXtension to automatically apply roles at object creation time
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Load>=0:devel/p5-Class-Load \

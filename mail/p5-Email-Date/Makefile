@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Email-Date/Makefile 435028 2017-02-28 09:47:19Z sunpoet $
+# $FreeBSD: head/mail/p5-Email-Date/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Email-Date
 PORTVERSION=	1.104
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Find and Format Date Headers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

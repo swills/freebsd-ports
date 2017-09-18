@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Coro/Makefile 445904 2017-07-15 17:23:48Z sunpoet $
+# $FreeBSD: head/devel/p5-Coro/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Coro
 PORTVERSION=	6.51.3
@@ -11,7 +11,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:R}${PORTVERSION:E}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Coroutine process abstraction for perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-AnyEvent>=7:devel/p5-AnyEvent \

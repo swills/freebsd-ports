@@ -1,5 +1,5 @@
 # Created by: Zane C. Bowers-Hadley <vvelox@vvelox.net>
-# $FreeBSD: head/audio/p5-MP3-Tag-Utils/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/p5-MP3-Tag-Utils/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MP3-Tag-Utils
 PORTVERSION=	0.0.3
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	vvelox@vvelox.net
 COMMENT=	Assorted utilities for manipulating MP3 files via MP3::Tag
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-MP3-Tag>=1.13:audio/p5-MP3-Tag \

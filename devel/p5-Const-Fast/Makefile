@@ -1,5 +1,5 @@
 # Created by: Philip M. Gollucci
-# $FreeBSD: head/devel/p5-Const-Fast/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Const-Fast/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Const-Fast
 PORTVERSION=	0.014
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Facility for creating read-only scalars, arrays, and hashes
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS:=	${RUN_DEPENDS}

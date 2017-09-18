@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/xdg-user-dirs/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/devel/xdg-user-dirs/Makefile 449832 2017-09-14 11:23:31Z tcberner $
 
 PORTNAME=	xdg-user-dirs
-PORTVERSION=	0.15
-PORTREVISION=	2
+PORTVERSION=	0.16
 CATEGORIES=	devel
 MASTER_SITES=	http://user-dirs.freedesktop.org/releases/
 

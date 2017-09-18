@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/archivers/p5-Archive-Extract-Libarchive/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/archivers/p5-Archive-Extract-Libarchive/Makefile 449892 2017-09-15 08:32:44Z mat $
 
 PORTNAME=	Archive-Extract-Libarchive
 PORTVERSION=	0.38
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Generic archive extracting mechanism (using libarchive)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Object-Tiny>=0:devel/p5-Object-Tiny

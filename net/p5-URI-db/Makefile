@@ -1,5 +1,5 @@
 # Created by: Henrik Hodne <henrik@hodne.io>
-# $FreeBSD: head/net/p5-URI-db/Makefile 413030 2016-04-11 13:25:21Z mat $
+# $FreeBSD: head/net/p5-URI-db/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	URI-db
 PORTVERSION=	0.16
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	henrik@hodne.io
 COMMENT=	Perl5 module representing database URIs
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-URI>=1.40:net/p5-URI \

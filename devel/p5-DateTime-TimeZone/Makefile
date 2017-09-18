@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/devel/p5-DateTime-TimeZone/Makefile 446201 2017-07-19 14:37:44Z mat $
+# $FreeBSD: head/devel/p5-DateTime-TimeZone/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DateTime-TimeZone
 PORTVERSION=	2.11
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	jadawin@FreeBSD.org
 COMMENT=	Time zone object base class and factory
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

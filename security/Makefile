@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 449667 2017-09-11 21:13:54Z ultima $
+# $FreeBSD: head/security/Makefile 449845 2017-09-14 17:44:02Z rene $
 #
 
     COMMENT = Security tools
@@ -80,7 +80,6 @@
     SUBDIR += clamav
     SUBDIR += clamav-milter
     SUBDIR += clamav-unofficial-sigs
-    SUBDIR += clambc
     SUBDIR += clamcour
     SUBDIR += clamd-stream-client
     SUBDIR += clamfs

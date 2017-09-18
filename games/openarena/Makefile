@@ -1,5 +1,5 @@
 # Created by: Josh Tolbert
-# $FreeBSD: head/games/openarena/Makefile 441199 2017-05-18 20:58:59Z kami $
+# $FreeBSD: head/games/openarena/Makefile 449918 2017-09-15 18:28:31Z adamw $
 
 PORTNAME=	openarena
 DISTVERSION=	${GAMEVERSION}.s${SVNREVISION}
@@ -10,7 +10,7 @@ MASTER_SITES=	SF/oarena/src \
 DISTNAME=	${PORTNAME}-engine-source-${GAMEVERSION}
 EXTRACT_SUFX=	.tar.bz2 # override master port
 
-MAINTAINER=	kami@FreeBSD.org
+MAINTAINER=	kamikaze@bsdforen.de
 COMMENT=	Quake3 total conversion based on the ioquake3 engine
 
 LICENSE?=	GPLv2

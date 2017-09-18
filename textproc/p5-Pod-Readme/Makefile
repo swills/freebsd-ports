@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Pod-Readme/Makefile 439327 2017-04-24 15:21:17Z sunpoet $
+# $FreeBSD: head/textproc/p5-Pod-Readme/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Pod-Readme
 PORTVERSION=	1.1.2
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Convert POD to README file
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-CPAN-Changes>=0:devel/p5-CPAN-Changes \

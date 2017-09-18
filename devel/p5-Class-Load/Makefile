@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Class-Load/Makefile 446234 2017-07-19 21:14:39Z az $
+# $FreeBSD: head/devel/p5-Class-Load/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Class-Load
 PORTVERSION=	0.24
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	az@FreeBSD.org
 COMMENT=	Working (require Class::Name) and more
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

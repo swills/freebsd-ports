@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Test-SharedFork/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Test-SharedFork/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-SharedFork
 PORTVERSION=	0.33
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for fork test
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Requires>=0:devel/p5-Test-Requires

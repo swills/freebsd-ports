@@ -1,5 +1,5 @@
 # Created by: Andrey Chernov <ache@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTML-SimpleLinkExtor/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-SimpleLinkExtor/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-SimpleLinkExtor
 PORTVERSION=	1.27
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	This is a simple HTML link extractor
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTML-Parser>=1.28:www/p5-HTML-Parser \

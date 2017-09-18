@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-Socket/Makefile 425553 2016-11-06 16:50:42Z sunpoet $
+# $FreeBSD: head/net/p5-Socket/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Socket
 PORTVERSION=	2.024
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Networking constants and support functions
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 PORTSCOUT=	limit:^[0-9\.]*$$

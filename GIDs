@@ -1,4 +1,4 @@
-# $FreeBSD: head/GIDs 449404 2017-09-07 15:29:35Z swills $
+# $FreeBSD: head/GIDs 449982 2017-09-17 01:54:25Z swills $
 # Please keep this file sorted by GID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/group
@@ -719,7 +719,7 @@ cockroach:*:771:
 # free: 775
 # free: 776
 openxpki:*:777:
-# free: 778
+litecoin:*:778:
 bitcoin:*:779:
 zetacoin:*:780:
 # free: 781

@@ -1,5 +1,5 @@
 # Created by: Geoffroy Desvernay <dgeo@centrale-marseille.fr>
-# $FreeBSD: head/devel/p5-Time-timegm/Makefile 380893 2015-03-10 06:08:19Z vanilla $
+# $FreeBSD: head/devel/p5-Time-timegm/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Time-timegm
 PORTVERSION=	0.01
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Efficiently compute time from local and GMT time
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

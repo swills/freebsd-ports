@@ -1,5 +1,5 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/www/p5-VUser-Google-ProvisioningAPI/Makefile 443815 2017-06-18 05:52:13Z sunpoet $
+# $FreeBSD: head/www/p5-VUser-Google-ProvisioningAPI/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	VUser-Google-ProvisioningAPI
 PORTVERSION=	0.24
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tota@FreeBSD.org
 COMMENT=	Perl module that implements the Google Provisioning API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww \

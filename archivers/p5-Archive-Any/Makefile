@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/archivers/p5-Archive-Any/Makefile 414623 2016-05-05 00:00:43Z sunpoet $
+# $FreeBSD: head/archivers/p5-Archive-Any/Makefile 449892 2017-09-15 08:32:44Z mat $
 
 PORTNAME=	Archive-Any
 PORTVERSION=	0.0945
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Single interface to deal with file archives
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

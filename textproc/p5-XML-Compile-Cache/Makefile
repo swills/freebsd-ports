@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/textproc/p5-XML-Compile-Cache/Makefile 423695 2016-10-10 20:08:51Z adamw $
+# $FreeBSD: head/textproc/p5-XML-Compile-Cache/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-Compile-Cache
 PORTVERSION=	1.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Cache Compiled XML Translators
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Log-Report>=0.19:devel/p5-Log-Report \

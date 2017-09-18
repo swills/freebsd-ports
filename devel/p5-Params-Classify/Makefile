@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Params-Classify/Makefile 446918 2017-07-30 13:12:34Z sunpoet $
+# $FreeBSD: head/devel/p5-Params-Classify/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Params-Classify
 PORTVERSION=	0.015
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Argument type classification
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Devel-CallChecker>=0.003:devel/p5-Devel-CallChecker

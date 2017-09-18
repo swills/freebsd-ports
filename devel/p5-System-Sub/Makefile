@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-System-Sub/Makefile 438011 2017-04-08 10:34:40Z sunpoet $
+# $FreeBSD: head/devel/p5-System-Sub/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	System-Sub
 PORTVERSION=	0.162800
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Wrap external command with a DWIM sub
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

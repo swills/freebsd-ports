@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Devel-Cover-Report-Clover/Makefile 444408 2017-06-26 19:37:42Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-Cover-Report-Clover/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Devel-Cover-Report-Clover
 PORTVERSION=	0.35
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for Clover reporting of coverage statistics
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

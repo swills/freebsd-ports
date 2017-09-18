@@ -1,5 +1,5 @@
 # Created by: TAKAHASHI Kaoru <kaoru@kaisei.org>
-# $FreeBSD: head/www/p5-LWP-UserAgent-WithCache/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-LWP-UserAgent-WithCache/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	LWP-UserAgent-WithCache
 PORTVERSION=	0.12
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	LWP::UserAgent extension with local cache
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Cache-Cache>=0:devel/p5-Cache-Cache \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Data-Walk/Makefile 415480 2016-05-19 03:43:02Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-Walk/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Walk
 PORTVERSION=	2.01
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Traverse Perl data structures
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Log-Log4perl/Makefile 434607 2017-02-22 17:14:12Z sunpoet $
+# $FreeBSD: head/devel/p5-Log-Log4perl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Log-Log4perl
 PORTVERSION=	1.49
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Log4j implementation for Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5 shebangfix

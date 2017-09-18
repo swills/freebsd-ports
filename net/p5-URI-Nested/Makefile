@@ -1,5 +1,5 @@
 # Created by: Henrik Hodne <henrik@hodne.io>
-# $FreeBSD: head/net/p5-URI-Nested/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-URI-Nested/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	URI-Nested
 PORTVERSION=	0.10
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	henrik@hodne.io
 COMMENT=	Perl5 interface for nested URIs
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-URI>=1.40:net/p5-URI

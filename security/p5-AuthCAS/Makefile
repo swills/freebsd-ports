@@ -1,5 +1,5 @@
 # Created by: Frank Wall <fw@moov.de>
-# $FreeBSD: head/security/p5-AuthCAS/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-AuthCAS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	AuthCAS
 PORTVERSION=	1.6
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	fw@moov.de
 COMMENT=	Perl API to Yale's Central Authentication System (CAS)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww \

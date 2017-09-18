@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Devel-PatchPerl/Makefile 434099 2017-02-14 14:33:37Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-PatchPerl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Devel-PatchPerl
 PORTVERSION=	1.48
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module to patch Perl source
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

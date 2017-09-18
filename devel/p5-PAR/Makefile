@@ -1,5 +1,5 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/devel/p5-PAR/Makefile 438555 2017-04-15 00:47:00Z sunpoet $
+# $FreeBSD: head/devel/p5-PAR/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	PAR
 PORTVERSION=	1.015
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Perl Archive Toolkit
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Plack-Middleware-ConsoleLogger/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Plack-Middleware-ConsoleLogger/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Plack-Middleware-ConsoleLogger
 PORTVERSION=	0.05
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to write logs to Firebug or Webkit Inspector
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

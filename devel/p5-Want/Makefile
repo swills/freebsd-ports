@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Want/Makefile 409588 2016-02-26 08:16:34Z wen $
+# $FreeBSD: head/devel/p5-Want/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Want
 PORTVERSION=	0.29
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Generalisation of wantarray
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

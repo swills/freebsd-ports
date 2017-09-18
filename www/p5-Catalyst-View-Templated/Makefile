@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/www/p5-Catalyst-View-Templated/Makefile 442389 2017-06-02 15:39:14Z sunpoet $
+# $FreeBSD: head/www/p5-Catalyst-View-Templated/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Catalyst-View-Templated
 PORTVERSION=	0.02
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Generic base class for template-based views
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Catalyst-Component-ACCEPT_CONTEXT>=0:www/p5-Catalyst-Component-ACCEPT_CONTEXT \

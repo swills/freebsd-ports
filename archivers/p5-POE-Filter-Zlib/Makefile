@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/archivers/p5-POE-Filter-Zlib/Makefile 434946 2017-02-27 14:14:27Z sunpoet $
+# $FreeBSD: head/archivers/p5-POE-Filter-Zlib/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Filter-Zlib
 PORTVERSION=	2.04
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	POE filter wrapped around Compress::Zlib
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

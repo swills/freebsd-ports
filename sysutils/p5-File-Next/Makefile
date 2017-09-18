@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/sysutils/p5-File-Next/Makefile 419911 2016-08-09 09:13:02Z jadawin $
+# $FreeBSD: head/sysutils/p5-File-Next/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Next
 PORTVERSION=	1.16
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	File-finding iterator
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

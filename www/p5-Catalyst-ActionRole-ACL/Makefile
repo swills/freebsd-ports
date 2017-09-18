@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-ActionRole-ACL/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Catalyst-ActionRole-ACL/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Catalyst-ActionRole-ACL
 PORTVERSION=	0.07
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	User role-based authorization action class
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Catalyst-Controller-ActionRole>=0:www/p5-Catalyst-Controller-ActionRole \

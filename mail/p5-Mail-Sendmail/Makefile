@@ -1,5 +1,5 @@
 # Created by: Wei-chun Chao
-# $FreeBSD: head/mail/p5-Mail-Sendmail/Makefile 448556 2017-08-22 16:40:48Z sunpoet $
+# $FreeBSD: head/mail/p5-Mail-Sendmail/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Mail-Sendmail
 PORTVERSION=	0.80
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module implementing a simple, platform-independent mailer
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Params-Util/Makefile 401663 2015-11-15 03:04:12Z sunpoet $
+# $FreeBSD: head/devel/p5-Params-Util/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Params-Util
 PORTVERSION=	1.07
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Utility functions to aid in parameter checking
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

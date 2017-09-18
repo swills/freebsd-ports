@@ -1,5 +1,5 @@
 # Created by: Andrew <andrew@ugh.net.au>
-# $FreeBSD: head/textproc/p5-XML-Simple/Makefile 438723 2017-04-17 16:06:31Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-Simple
 PORTVERSION=	2.24
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Trivial API for reading and writing XML (esp config files)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

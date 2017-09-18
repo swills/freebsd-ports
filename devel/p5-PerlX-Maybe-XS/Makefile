@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-PerlX-Maybe-XS/Makefile 402584 2015-11-29 07:02:01Z sunpoet $
+# $FreeBSD: head/devel/p5-PerlX-Maybe-XS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	PerlX-Maybe-XS
 PORTVERSION=	1.001
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	XS backend for PerlX::Maybe
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

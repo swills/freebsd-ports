@@ -1,5 +1,5 @@
 # Created by: TAKAHASHI Kaoru <kaoru@kaisei.org>
-# $FreeBSD: head/devel/p5-Class-Accessor-Lite/Makefile 397736 2015-09-24 19:04:57Z sunpoet $
+# $FreeBSD: head/devel/p5-Class-Accessor-Lite/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Class-Accessor-Lite
 PORTVERSION=	0.08
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Minimalistic variant of p5-Class-Accessor
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

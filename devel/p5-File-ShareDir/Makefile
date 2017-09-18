@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-File-ShareDir/Makefile 444725 2017-06-30 13:05:49Z sunpoet $
+# $FreeBSD: head/devel/p5-File-ShareDir/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-ShareDir
 PORTVERSION=	1.104
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Locate per-dist and per-module shared files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

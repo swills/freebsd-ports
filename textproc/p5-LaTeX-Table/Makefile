@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/textproc/p5-LaTeX-Table/Makefile 442006 2017-05-29 15:27:26Z sunpoet $
+# $FreeBSD: head/textproc/p5-LaTeX-Table/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	LaTeX-Table
 PORTVERSION=	1.0.6
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for the automatic generation of LaTeX tables
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-LaTeX-Driver>=0:textproc/p5-LaTeX-Driver \

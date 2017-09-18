@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/p5-Linux-Cpuinfo/Makefile 388855 2015-06-08 19:05:20Z bofh $
+# $FreeBSD: head/sysutils/p5-Linux-Cpuinfo/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Linux-Cpuinfo
 PORTVERSION=	1.12
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Object Oriented Interface to /proc/cpuinfo
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

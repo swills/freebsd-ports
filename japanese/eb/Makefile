@@ -1,5 +1,5 @@
 # Created by: Motoyuki Kasahara <m-kasahr@sra.co.jp>
-# $FreeBSD: head/japanese/eb/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/japanese/eb/Makefile 449882 2017-09-15 05:51:55Z sunpoet $
 
 PORTNAME=	eb
 PORTVERSION=	4.4.3
@@ -9,12 +9,14 @@ MASTER_SITES=	ftp://ftp.sra.co.jp/pub/misc/eb/ \
 		ftp://ftp.sra.co.jp/pub/misc/eb/old/eb-${PORTVERSION:C/^([0-9]+)\.([0-9]+).*/\1.\2/}/
 DISTFILES=	${EBFILES} \
 		${APPENDIXFILES}
+DIST_SUBDIR=	eb
 EXTRACT_ONLY=	${EBFILES}
 
 MAINTAINER=	yasu@utahime.org
 COMMENT=	C library for accessing EB, EBG, EBXA, and EPWING CD-ROM dictionaries
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 EBFILES=	${DISTNAME}${EXTRACT_SUFX}
 APPENDIXFILES=	appendix/cencro-1.0.tar.gz \
@@ -48,8 +50,6 @@ APPENDIXFILES=	appendix/cencro-1.0.tar.gz \
 		appendix/readers2-2.0.tar.gz \
 		appendix/ruigigo-1.0.tar.gz \
 		appendix/superdic98-1.0.tar.gz
-
-DIST_SUBDIR=	eb
 
 PORTDOCS=	eb-01.html eb-02.html eb-03.html eb-04.html eb-05.html eb-06.html \
 		eb-07.html eb-08.html eb-09.html eb-10.html eb-11.html eb-12.html \

@@ -1,5 +1,5 @@
 # Created by: Tod McQuillin <devin@spamcop.net>
-# $FreeBSD: head/graphics/p5-Image-ExifTool/Makefile 443436 2017-06-12 10:39:01Z sunpoet $
+# $FreeBSD: head/graphics/p5-Image-ExifTool/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Image-ExifTool
 PORTVERSION=	10.55
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	devin@spamcop.net
 COMMENT=	Perl module for getting EXIF data from image files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 CONFLICTS=	p5-Image-ExifTool-devel-[0-9]*

@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/www/p5-WWW-Wikipedia/Makefile 439981 2017-05-02 21:52:52Z sunpoet $
+# $FreeBSD: head/www/p5-WWW-Wikipedia/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WWW-Wikipedia
 PORTVERSION=	2.05
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module of Automated interface to the Wikipedia
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-LWP-Protocol-https>=0:www/p5-LWP-Protocol-https \

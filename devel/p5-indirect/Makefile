@@ -1,5 +1,5 @@
 # Created by: Dan Rench <citric@cubicone.tmetic.com>
-# $FreeBSD: head/devel/p5-indirect/Makefile 380209 2015-03-01 16:02:17Z adamw $
+# $FreeBSD: head/devel/p5-indirect/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	indirect
 PORTVERSION=	0.33
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	citric@cubicone.tmetic.com
 COMMENT=	Lexically warn about using the indirect object syntax
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,4 +1,4 @@
-# $FreeBSD: head/irc/p5-POE-Component-IRC-Plugin-Karma/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/irc/p5-POE-Component-IRC-Plugin-Karma/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Component-IRC-Plugin-Karma
 PORTVERSION=	0.003
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	PoCo-IRC plugin that keeps track of karma
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite \

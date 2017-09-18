@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-Protocol-HTTP2/Makefile 425548 2016-11-06 16:50:18Z sunpoet $
+# $FreeBSD: head/www/p5-Protocol-HTTP2/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Protocol-HTTP2
 PORTVERSION=	1.08
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	HTTP/2 protocol implementation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

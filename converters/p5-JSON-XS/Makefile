@@ -1,5 +1,5 @@
 # Created by: Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/converters/p5-JSON-XS/Makefile 448246 2017-08-18 15:57:38Z sunpoet $
+# $FreeBSD: head/converters/p5-JSON-XS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	JSON-XS
 PORTVERSION=	3.04
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	JSON serialising/deserialising, done correctly and fast
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Types-Serialiser>=0:devel/p5-Types-Serialiser \

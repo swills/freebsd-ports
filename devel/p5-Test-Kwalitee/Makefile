@@ -1,5 +1,5 @@
 # Created by: Felippe de Meirelles Motta <lippemail@gmail.com>
-# $FreeBSD: head/devel/p5-Test-Kwalitee/Makefile 447497 2017-08-07 16:04:41Z culot $
+# $FreeBSD: head/devel/p5-Test-Kwalitee/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Kwalitee
 PORTVERSION=	1.26
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Test the Kwalitee of a distribution before you release it
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Module-CPANTS-Analyse>=0.92:devel/p5-Module-CPANTS-Analyse

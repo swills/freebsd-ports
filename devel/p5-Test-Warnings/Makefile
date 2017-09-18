@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-Warnings/Makefile 442426 2017-06-02 18:13:34Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Warnings/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Warnings
 PORTVERSION=	0.026
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Test for warnings and the lack of them
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENCE
 

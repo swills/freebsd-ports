@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/p5-Compress-LZ4/Makefile 437883 2017-04-06 21:56:06Z sunpoet $
+# $FreeBSD: head/archivers/p5-Compress-LZ4/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Compress-LZ4
 PORTVERSION=	0.25
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Interface to the LZ4 (de)compressor
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

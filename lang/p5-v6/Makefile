@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/lang/p5-v6/Makefile 433365 2017-02-05 05:31:51Z sunpoet $
+# $FreeBSD: head/lang/p5-v6/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	v6
 PORTVERSION=	0.047
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Experimental compiler for Perl 6
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

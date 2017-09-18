@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/textproc/p5-Lingua-EN-Inflect-Number/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/textproc/p5-Lingua-EN-Inflect-Number/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Lingua-EN-Inflect-Number
 PORTVERSION=	1.12
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Force number of words to singular or plural
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Lingua-EN-Inflect>=0:textproc/p5-Lingua-EN-Inflect

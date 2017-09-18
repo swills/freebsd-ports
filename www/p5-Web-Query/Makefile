@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-Web-Query/Makefile 426683 2016-11-20 23:56:41Z sunpoet $
+# $FreeBSD: head/www/p5-Web-Query/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Web-Query
 PORTVERSION=	0.38
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Yet another scraping library like jQuery
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

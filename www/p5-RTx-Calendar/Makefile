@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman <m.seaman@infracaninophile.co.uk>
-# $FreeBSD: head/www/p5-RTx-Calendar/Makefile 413502 2016-04-17 10:22:50Z matthew $
+# $FreeBSD: head/www/p5-RTx-Calendar/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	RTx-Calendar
 PORTVERSION=	1.01
@@ -11,7 +11,7 @@ MAINTAINER=	matthew@FreeBSD.org
 COMMENT=	Calendar extension module for the RT ticketing system
 
 LICENSE_COMB=	dual
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 
 BUILD_DEPENDS=	p5-Date-ICal>0:devel/p5-Date-ICal      \
 		p5-Data-ICal>0:deskutils/p5-Data-ICal  \

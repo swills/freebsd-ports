@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Sys-Sendfile/Makefile 389574 2015-06-14 04:20:54Z kuriyama $
+# $FreeBSD: head/devel/p5-Sys-Sendfile/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Sys-Sendfile
 PORTVERSION=	0.16
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for zero-copy data transfer
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

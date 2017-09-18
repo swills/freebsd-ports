@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold
-# $FreeBSD: head/graphics/p5-Gimp/Makefile 448664 2017-08-24 12:26:16Z mat $
+# $FreeBSD: head/graphics/p5-Gimp/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Gimp
 PORTVERSION=	2.32
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Write GIMP extensions/plug-ins/load- and save-handlers in Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/COPYING.Artistic
 

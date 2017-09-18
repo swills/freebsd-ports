@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/devel/p5-SVN-Look/Makefile 434693 2017-02-24 02:13:48Z cpm $
+# $FreeBSD: head/devel/p5-SVN-Look/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	SVN-Look
 PORTVERSION=	0.41
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Caching wrapper around the svnlook command
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-List-MoreUtils>=0:lang/p5-List-MoreUtils \

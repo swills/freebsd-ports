@@ -1,8 +1,8 @@
 # Created by: Nicola Stanislao Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/x11-themes/adapta-gtk-theme/Makefile 446409 2017-07-22 16:10:28Z nivit $
+# $FreeBSD: head/x11-themes/adapta-gtk-theme/Makefile 449890 2017-09-15 08:20:38Z nivit $
 
 PORTNAME=	adapta-gtk-theme
-PORTVERSION=	3.91.1.7
+PORTVERSION=	3.91.2.152
 CATEGORIES=	x11-themes
 
 MAINTAINER=	nivit@FreeBSD.org

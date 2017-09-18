@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Algorithm-RabinKarp/Makefile 438246 2017-04-11 00:49:31Z sunpoet $
+# $FreeBSD: head/textproc/p5-Algorithm-RabinKarp/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Algorithm-RabinKarp
 PORTVERSION=	0.41
@@ -13,7 +13,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Rabin-Karp streaming hash
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

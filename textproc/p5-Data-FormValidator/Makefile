@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/textproc/p5-Data-FormValidator/Makefile 448980 2017-08-30 13:29:36Z sunpoet $
+# $FreeBSD: head/textproc/p5-Data-FormValidator/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-FormValidator
 PORTVERSION=	4.88
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Validates user input (usually from an HTML form) based
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-CGI>=3.48:www/p5-CGI \

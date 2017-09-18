@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-Spreadsheet-WriteExcel/Makefile 430157 2016-12-31 20:00:37Z adamw $
+# $FreeBSD: head/textproc/p5-Spreadsheet-WriteExcel/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Spreadsheet-WriteExcel
 PORTVERSION=	2.40
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Write to a cross-platform Excel binary file
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Date-Calc>=0:devel/p5-Date-Calc \

@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/finance/p5-Finance-Currency-Convert/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/finance/p5-Finance-Currency-Convert/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Finance-Currency-Convert
 PORTVERSION=	1.08
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Convert currencies and fetch their exchange rates
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5 tar:tgz

@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/devel/p5-Thread-Queue/Makefile 447618 2017-08-09 11:09:14Z culot $
+# $FreeBSD: head/devel/p5-Thread-Queue/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Thread-Queue
 PORTVERSION=	3.12
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Perl5 thread-safe queues
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	YES

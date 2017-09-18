@@ -1,5 +1,5 @@
 # Created by: gugu
-# $FreeBSD: head/www/p5-Catalyst-Plugin-AutoCRUD/Makefile 435038 2017-02-28 09:48:06Z sunpoet $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-AutoCRUD/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Catalyst-Plugin-AutoCRUD
 PORTVERSION=	2.200002
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Instant AJAX web front-end for DBIx::Class
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Catalyst-Action-RenderView>=0:www/p5-Catalyst-Action-RenderView \

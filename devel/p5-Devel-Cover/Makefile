@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/devel/p5-Devel-Cover/Makefile 446603 2017-07-25 16:22:01Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-Cover/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Devel-Cover
 PORTVERSION=	1.26
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Code coverage metrics for Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENCE
 

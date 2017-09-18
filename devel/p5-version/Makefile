@@ -1,5 +1,5 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/devel/p5-version/Makefile 439245 2017-04-23 17:09:51Z sunpoet $
+# $FreeBSD: head/devel/p5-version/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	version
 PORTVERSION=	0.9918
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for Version Objects
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

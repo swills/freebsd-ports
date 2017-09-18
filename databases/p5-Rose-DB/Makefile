@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/databases/p5-Rose-DB/Makefile 435023 2017-02-28 09:46:53Z sunpoet $
+# $FreeBSD: head/databases/p5-Rose-DB/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Rose-DB
 PORTVERSION=	0.778
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	DBI wrapper and abstraction layer
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Bit-Vector>=6.4:math/p5-Bit-Vector \

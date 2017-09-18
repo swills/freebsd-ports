@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@infor.org>
-# $FreeBSD: head/devel/p5-File-MimeInfo/Makefile 445202 2017-07-07 02:57:38Z acm $
+# $FreeBSD: head/devel/p5-File-MimeInfo/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-MimeInfo
 PORTVERSION=	0.28
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Determine file type
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-BaseDir>=0.03:devel/p5-File-BaseDir \

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Importer/Makefile 424895 2016-10-29 08:43:43Z sunpoet $
+# $FreeBSD: head/devel/p5-Importer/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Importer
 PORTVERSION=	0.024
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Alternative but compatible interface to modules that export symbols
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

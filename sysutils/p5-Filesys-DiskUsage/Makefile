@@ -1,5 +1,5 @@
 # Created by: Alex Deiter <tiamat@komi.mts.ru>
-# $FreeBSD: head/sysutils/p5-Filesys-DiskUsage/Makefile 448597 2017-08-23 11:03:06Z culot $
+# $FreeBSD: head/sysutils/p5-Filesys-DiskUsage/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Filesys-DiskUsage
 PORTVERSION=	0.10
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Perl equivalent of du(1)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Warn>0:devel/p5-Test-Warn

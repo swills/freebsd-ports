@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/devel/p5-SVN-Hooks/Makefile 434707 2017-02-24 11:53:16Z bofh $
+# $FreeBSD: head/devel/p5-SVN-Hooks/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	SVN-Hooks
 PORTVERSION=	1.34
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Framework for implementing Subversion hooks
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Data-Util>=0:devel/p5-Data-Util \

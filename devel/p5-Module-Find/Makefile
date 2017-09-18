@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Module-Find/Makefile 380939 2015-03-10 15:15:21Z sunpoet $
+# $FreeBSD: head/devel/p5-Module-Find/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Module-Find
 PORTVERSION=	0.13
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Lets you find and use modules in categories
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

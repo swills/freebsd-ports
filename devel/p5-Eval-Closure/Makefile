@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Eval-Closure/Makefile 417227 2016-06-21 15:07:13Z mat $
+# $FreeBSD: head/devel/p5-Eval-Closure/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Eval-Closure
 PORTVERSION=	0.14
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Safely and cleanly create closures via string eval
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Try-Tiny>=0:lang/p5-Try-Tiny

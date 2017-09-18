@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-MooseX-App-Cmd/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-MooseX-App-Cmd/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooseX-App-Cmd
 PORTVERSION=	0.32
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Mashes up MooseX::Getopt and App::Cmd
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-App-Cmd>=0.321:devel/p5-App-Cmd \

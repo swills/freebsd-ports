@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-DBIx-Class-Migration/Makefile 426813 2016-11-22 10:15:59Z kuriyama $
+# $FreeBSD: head/databases/p5-DBIx-Class-Migration/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBIx-Class-Migration
 PORTVERSION=	0.058
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to make migrating your DBIx::Class databases easier
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

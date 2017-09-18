@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/www/p5-MojoX-Renderer-Xslate/Makefile 433731 2017-02-09 13:50:54Z sunpoet $
+# $FreeBSD: head/www/p5-MojoX-Renderer-Xslate/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MojoX-Renderer-Xslate
 PORTVERSION=	0.13
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Text::Xslate renderer for for Mojolicious
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Mojolicious>=5.81:www/p5-Mojolicious \

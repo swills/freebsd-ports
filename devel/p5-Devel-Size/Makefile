@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/devel/p5-Devel-Size/Makefile 447473 2017-08-06 16:53:04Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-Size/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Devel-Size
 PORTVERSION=	0.81
@@ -11,7 +11,7 @@ MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for finding the memory usage of Perl variables
 
 LICENSE_COMB=	dual
-LICENSES=	ART10 GPLv1
+LICENSES=	ART10 GPLv1+
 
 USES=		perl5
 USE_PERL5=	configure

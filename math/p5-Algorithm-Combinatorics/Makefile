@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/math/p5-Algorithm-Combinatorics/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/math/p5-Algorithm-Combinatorics/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Algorithm-Combinatorics
 PORTVERSION=	0.27
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Efficient generation of combinatorial sequences
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Sahil Tandon <sahil@FreeBSD.org>
-# $FreeBSD: head/net/p5-AnyEvent-Twitter-Stream/Makefile 419908 2016-08-09 07:59:21Z jadawin $
+# $FreeBSD: head/net/p5-AnyEvent-Twitter-Stream/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	AnyEvent-Twitter-Stream
 PORTVERSION=	0.28
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module to receive Twitter streaming API in an event loop
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-AnyEvent>=0:devel/p5-AnyEvent \

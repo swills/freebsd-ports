@@ -1,5 +1,5 @@
 # Created by: Sander Vesik <sander@haldjas.folklore.ee>
-# $FreeBSD: head/math/p5-Math-MatrixReal/Makefile 423553 2016-10-08 23:03:08Z adamw $
+# $FreeBSD: head/math/p5-Math-MatrixReal/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-MatrixReal
 PORTVERSION=	2.13
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module implementing a Matrix of Reals
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Most>=0:devel/p5-Test-Most

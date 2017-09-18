@@ -1,5 +1,5 @@
 # Created by: David Bremner <bremner@unb.ca>
-# $FreeBSD: head/textproc/p5-Text-BibTeX/Makefile 449043 2017-08-31 15:31:57Z sunpoet $
+# $FreeBSD: head/textproc/p5-Text-BibTeX/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-BibTeX
 PORTVERSION=	0.85
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Manipulate BibTeX files from perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Config-AutoConf>=0.16:devel/p5-Config-AutoConf \

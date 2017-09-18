@@ -1,5 +1,5 @@
 # Created by: aturetta@commit.it
-# $FreeBSD: head/devel/p5-Test-LongString/Makefile 373907 2014-12-04 14:18:54Z jadawin $
+# $FreeBSD: head/devel/p5-Test-LongString/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-LongString
 PORTVERSION=	0.17
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Library to test long strings
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

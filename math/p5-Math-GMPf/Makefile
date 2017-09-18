@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-GMPf/Makefile 448622 2017-08-23 14:26:45Z sunpoet $
+# $FreeBSD: head/math/p5-Math-GMPf/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-GMPf
 PORTVERSION=	0.43
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Perl interface to the GMP library floating point (mpf) functions
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libgmp.so:math/gmp

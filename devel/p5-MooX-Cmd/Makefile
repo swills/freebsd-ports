@@ -1,5 +1,5 @@
 # Created by: Muhammad Moinur Rahman<5u623l20@gmail.com>
-# $FreeBSD: head/devel/p5-MooX-Cmd/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-MooX-Cmd/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooX-Cmd
 PORTVERSION=	0.015
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Giving an easy Moo style way to make command organized CLI apps
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-IO-TieCombine>=0:devel/p5-IO-TieCombine \

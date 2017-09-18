@@ -1,5 +1,5 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/textproc/p5-XML-Compile/Makefile 444665 2017-06-29 19:13:09Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-Compile/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-Compile
 PORTVERSION=	1.58
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Compilation based XML processing
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Log-Report>=1.20:devel/p5-Log-Report \

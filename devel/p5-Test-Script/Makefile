@@ -1,5 +1,5 @@
 # Created by: lth@FreeBSD.org
-# $FreeBSD: head/devel/p5-Test-Script/Makefile 446214 2017-07-19 18:05:02Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Script/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Script
 PORTVERSION=	1.23
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Test::Script - Cross-platform basic tests for scripts
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

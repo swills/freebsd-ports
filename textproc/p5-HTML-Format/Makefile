@@ -1,5 +1,5 @@
 # Created by: Pete Fritchman <petef@databits.net>
-# $FreeBSD: head/textproc/p5-HTML-Format/Makefile 435063 2017-02-28 14:58:17Z sunpoet $
+# $FreeBSD: head/textproc/p5-HTML-Format/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-Format
 PORTVERSION=	2.12
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Module to format HTML to text or PS
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

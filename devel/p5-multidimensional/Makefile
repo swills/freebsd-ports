@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-multidimensional/Makefile 438979 2017-04-20 16:47:00Z sunpoet $
+# $FreeBSD: head/devel/p5-multidimensional/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	multidimensional
 PORTVERSION=	0.013
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Disables multidimensional array emulation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

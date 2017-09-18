@@ -1,5 +1,5 @@
 # Created by: sumikawa@FreeBSD.org
-# $FreeBSD: head/textproc/p5-Plagger/Makefile 420253 2016-08-15 17:12:18Z mat $
+# $FreeBSD: head/textproc/p5-Plagger/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Plagger
 PORTVERSION=	0.7.17
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Pluggable RSS/Atom feed aggregator written in Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \

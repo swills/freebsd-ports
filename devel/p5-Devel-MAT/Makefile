@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Devel-MAT/Makefile 440573 2017-05-10 17:51:44Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-MAT/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Devel-MAT
 PORTVERSION=	0.26
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Perl Memory Analysis Tool
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

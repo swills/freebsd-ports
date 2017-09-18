@@ -1,5 +1,5 @@
 # Created by: Kurt Lidl <kurt.lidl@cello.com>
-# $FreeBSD: head/textproc/p5-JavaScript-Minifier/Makefile 384642 2015-04-24 13:46:21Z culot $
+# $FreeBSD: head/textproc/p5-JavaScript-Minifier/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	JavaScript-Minifier
 PORTVERSION=	1.14
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	JavaScript whitespace/comment eliminator
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

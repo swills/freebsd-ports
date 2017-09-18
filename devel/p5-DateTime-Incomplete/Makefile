@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/devel/p5-DateTime-Incomplete/Makefile 435043 2017-02-28 09:51:17Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime-Incomplete/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DateTime-Incomplete
 PORTVERSION=	0.08
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Incomplete DateTime, like January 5
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

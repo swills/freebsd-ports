@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Plack/Makefile 437709 2017-04-04 07:57:05Z sunpoet $
+# $FreeBSD: head/www/p5-Plack/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Plack
 PORTVERSION=	1.0039
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension of PSGI reference implementation and utilities
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

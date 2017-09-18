@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/p5-Tk-Role-HasWidgets/Makefile 413833 2016-04-23 06:48:29Z sunpoet $
+# $FreeBSD: head/x11-toolkits/p5-Tk-Role-HasWidgets/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Tk-Role-HasWidgets
 PORTVERSION=	1.112380
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Keep track of your Tk widgets
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

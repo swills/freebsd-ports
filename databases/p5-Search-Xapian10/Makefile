@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Search-Xapian10/Makefile 441931 2017-05-28 23:15:12Z sunpoet $
+# $FreeBSD: head/databases/p5-Search-Xapian10/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Search-Xapian
 PORTVERSION=	1.0.23.0
@@ -12,7 +12,7 @@ PKGNAMESUFFIX=	10
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl XS frontend to the Xapian C++ search library
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	xapian-core10>=1.0.22:databases/xapian-core10

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-B-OPCheck/Makefile 418078 2016-07-05 09:09:02Z mat $
+# $FreeBSD: head/devel/p5-B-OPCheck/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	B-OPCheck
 PORTVERSION=	0.32
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	PL_check hacks using Perl callbacks
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-B-Utils>=0.08:devel/p5-B-Utils \

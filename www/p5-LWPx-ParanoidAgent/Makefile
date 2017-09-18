@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/www/p5-LWPx-ParanoidAgent/Makefile 423722 2016-10-10 21:04:00Z adamw $
+# $FreeBSD: head/www/p5-LWPx-ParanoidAgent/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	LWPx-ParanoidAgent
 PORTVERSION=	1.12
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Subclass of LWP::UserAgent that protects you from harm
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Crypt-SSLeay>=0.58:security/p5-Crypt-SSLeay \

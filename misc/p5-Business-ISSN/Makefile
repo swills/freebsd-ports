@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/misc/p5-Business-ISSN/Makefile 375378 2014-12-24 00:14:11Z bofh $
+# $FreeBSD: head/misc/p5-Business-ISSN/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Business-ISSN
 PORTVERSION=	0.91
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl extension for International Standard Serial Numbers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Function-Parameters/Makefile 444920 2017-07-03 08:20:43Z sunpoet $
+# $FreeBSD: head/devel/p5-Function-Parameters/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Function-Parameters
 PORTVERSION=	2.001001
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Subroutine definitions with parameter lists
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Dir-Self>=0:devel/p5-Dir-Self \

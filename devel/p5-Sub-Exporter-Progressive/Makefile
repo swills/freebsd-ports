@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Sub-Exporter-Progressive/Makefile 425556 2016-11-06 16:50:56Z sunpoet $
+# $FreeBSD: head/devel/p5-Sub-Exporter-Progressive/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Sub-Exporter-Progressive
 PORTVERSION=	0.001013
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Only use Sub::Exporter if you need it
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

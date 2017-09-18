@@ -1,9 +1,9 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/archivers/par2cmdline-tbb/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/archivers/par2cmdline-tbb/Makefile 449986 2017-09-17 07:03:14Z martymac $
 
 PORTNAME=	par2cmdline-tbb
 PORTVERSION=	20100203
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	archivers
 MASTER_SITES=	http://chuchusoft.com/par2_tbb/
 DISTNAME=	par2cmdline-0.4-tbb-${PORTVERSION}

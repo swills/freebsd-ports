@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/biology/p5-Bio-GFF3/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/biology/p5-Bio-GFF3/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Bio-GFF3
 PORTVERSION=	2.0
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Fast low-level functions for parsing and formatting GFF3
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-ReadBackwards>=0:devel/p5-File-ReadBackwards \

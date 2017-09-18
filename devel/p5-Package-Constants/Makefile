@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Package-Constants/Makefile 376159 2015-01-03 19:30:33Z sunpoet $
+# $FreeBSD: head/devel/p5-Package-Constants/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Package-Constants
 PORTVERSION=	0.06
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	List all constants declared in a package
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

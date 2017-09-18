@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-Lite/Makefile 435313 2017-03-03 06:24:05Z wen $
+# $FreeBSD: head/databases/p5-DBIx-Lite/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBIx-Lite
 PORTVERSION=	0.31
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Chained and minimal ORM
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DBIx-Connector>=0:databases/p5-DBIx-Connector \

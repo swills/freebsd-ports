@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Module-Build-Tiny/Makefile 425449 2016-11-05 20:32:14Z sunpoet $
+# $FreeBSD: head/devel/p5-Module-Build-Tiny/Makefile 449893 2017-09-15 08:58:46Z mat $
 #
 # If you have compelling evidence that some ports need at least this version of
 # p5-Module-Build-Tiny to build, be sure to update the BUILD_DEPENDS version in
@@ -15,7 +15,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Tiny replacement for Module::Build
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-ExtUtils-Config>=0.003:devel/p5-ExtUtils-Config \

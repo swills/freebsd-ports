@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-TAP-Formatter-JUnit/Makefile 447705 2017-08-10 18:23:55Z sunpoet $
+# $FreeBSD: head/devel/p5-TAP-Formatter-JUnit/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	TAP-Formatter-JUnit
 PORTVERSION=	0.11
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for Harness output delegate for JUnit output
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

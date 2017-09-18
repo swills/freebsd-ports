@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-HTML-Shakan/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-Shakan/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-Shakan
 PORTVERSION=	2.00
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension of form html generator/validator
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

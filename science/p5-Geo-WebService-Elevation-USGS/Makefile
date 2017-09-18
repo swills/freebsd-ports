@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/science/p5-Geo-WebService-Elevation-USGS/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/science/p5-Geo-WebService-Elevation-USGS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Geo-WebService-Elevation-USGS
 PORTVERSION=	0.106
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for elevation queries against USGS web services
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTTP-Message>=0:www/p5-HTTP-Message \

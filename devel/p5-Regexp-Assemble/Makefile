@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Regexp-Assemble/Makefile 443968 2017-06-20 13:29:25Z sunpoet $
+# $FreeBSD: head/devel/p5-Regexp-Assemble/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Regexp-Assemble
 PORTVERSION=	0.38
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Assemble multiple Regular Expressions into one RE
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/p5-Net-VNC/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/net/p5-Net-VNC/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-VNC
 PORTVERSION=	0.40
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple VNC client
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \

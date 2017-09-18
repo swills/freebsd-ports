@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-IPC-Locker/Makefile 439478 2017-04-26 18:46:05Z sunpoet $
+# $FreeBSD: head/devel/p5-IPC-Locker/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IPC-Locker
 PORTVERSION=	1.496
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Provide a server for locks and clients to access that server
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

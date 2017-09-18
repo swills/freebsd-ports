@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 449635 2017-09-11 13:10:24Z mat $
+# $FreeBSD: head/net-mgmt/Makefile 449905 2017-09-15 14:17:03Z pizzamig $
 #
 
     COMMENT = Network management tools
@@ -203,12 +203,14 @@
     SUBDIR += nsca-ng-client
     SUBDIR += nsca27
     SUBDIR += nsca27-client
+    SUBDIR += nstat
     SUBDIR += nstreams
     SUBDIR += observium
     SUBDIR += ocsinventory-agent
     SUBDIR += ocsinventory-ng
     SUBDIR += omping
     SUBDIR += onionlauncher
+    SUBDIR += openbmp
     SUBDIR += openlldp
     SUBDIR += openvmps
     SUBDIR += p0f
@@ -294,6 +296,7 @@
     SUBDIR += pushgateway
     SUBDIR += py-ipcalc
     SUBDIR += py-ipy
+    SUBDIR += py-pdagent
     SUBDIR += py-pyang
     SUBDIR += py-pysmi
     SUBDIR += py-pyzabbix

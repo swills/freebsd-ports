@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/games/iourbanterror/Makefile 438339 2017-04-12 09:10:05Z mat $
+# $FreeBSD: head/games/iourbanterror/Makefile 449918 2017-09-15 18:28:31Z adamw $
 
 PORTNAME=	iourbanterror
 PORTVERSION=	${GAMEVERSION}.${IOQUAKE3VER}
@@ -8,7 +8,7 @@ PORTEPOCH=	1
 CATEGORIES=	games
 DISTNAME=	ioquake3-${IOQUAKE3VER}
 
-MAINTAINER=	kami@FreeBSD.org
+MAINTAINER=	kamikaze@bsdforen.de
 COMMENT=	Quake 3 engine modified for Urban Terror (based on ioquake3)
 
 RUN_DEPENDS=	urbanterror-data>0:games/urbanterror-data

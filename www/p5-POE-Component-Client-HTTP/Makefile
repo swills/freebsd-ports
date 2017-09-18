@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/www/p5-POE-Component-Client-HTTP/Makefile 434611 2017-02-22 17:14:31Z sunpoet $
+# $FreeBSD: head/www/p5-POE-Component-Client-HTTP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Component-Client-HTTP
 PORTVERSION=	0.9490
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:C/0$//}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	POE component for non-blocking/concurrent HTTP queries
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

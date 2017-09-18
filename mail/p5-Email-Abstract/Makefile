@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/p5-Email-Abstract/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/mail/p5-Email-Abstract/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Email-Abstract
 PORTVERSION=	3.008
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Unified interface to mail representations
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Email-Simple>=1.998:mail/p5-Email-Simple \

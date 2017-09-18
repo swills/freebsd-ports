@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-URI-Query/Makefile 425565 2016-11-06 16:51:39Z sunpoet $
+# $FreeBSD: head/net/p5-URI-Query/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	URI-Query
 PORTVERSION=	0.16
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	URI query string manipulation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

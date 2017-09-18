@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Marpa-HTML/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/textproc/p5-Marpa-HTML/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Marpa-HTML
 PORTVERSION=	0.112
@@ -13,7 +13,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	High-level HTML Parser
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTML-Parser>=3.64:www/p5-HTML-Parser \

@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/www/p5-HTTP-MobileAgent/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTTP-MobileAgent/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTTP-MobileAgent
 PORTVERSION=	0.36
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	HTTP mobile user agent string parser for Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Filter>=0:devel/p5-Filter \

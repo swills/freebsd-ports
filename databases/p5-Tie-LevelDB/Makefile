@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Tie-LevelDB/Makefile 448380 2017-08-20 12:26:15Z sunpoet $
+# $FreeBSD: head/databases/p5-Tie-LevelDB/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Tie-LevelDB
 PORTVERSION=	0.07
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Perl Interface to the Google LevelDB NoSQL database
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BROKEN_aarch64=	does not build: error: Please implement AtomicPointer for this platform

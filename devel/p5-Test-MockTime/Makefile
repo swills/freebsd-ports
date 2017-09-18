@@ -1,5 +1,5 @@
 # Created by: Timur I. Bakeyev <bat@cpan.org>
-# $FreeBSD: head/devel/p5-Test-MockTime/Makefile 412391 2016-04-02 07:13:37Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-MockTime/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-MockTime
 PORTVERSION=	0.15
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Replaces actual time with simulated time
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/net/p5-SOAP/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-SOAP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	SOAP
 PORTVERSION=	0.28
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl modules providing an API to the Simple Object Access Protocol
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser \

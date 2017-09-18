@@ -1,5 +1,5 @@
 # Created by: Yuan-Chung Hsiao <ychsiao@ychsiao.org>
-# $FreeBSD: head/textproc/p5-YAML-Tiny/Makefile 409649 2016-02-27 04:44:01Z adamw $
+# $FreeBSD: head/textproc/p5-YAML-Tiny/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	YAML-Tiny
 PORTVERSION=	1.69
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ychsiao@ychsiao.org
 COMMENT=	Read/Write YAML files with as little code as possible
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

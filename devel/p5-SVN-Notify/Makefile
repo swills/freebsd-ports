@@ -1,5 +1,5 @@
 # Created by: dom@happygiraffe.net
-# $FreeBSD: head/devel/p5-SVN-Notify/Makefile 435027 2017-02-28 09:47:13Z sunpoet $
+# $FreeBSD: head/devel/p5-SVN-Notify/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	SVN-Notify
 PORTVERSION=	2.86
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Subversion activity notification
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Email-Address>=1.897:mail/p5-Email-Address \

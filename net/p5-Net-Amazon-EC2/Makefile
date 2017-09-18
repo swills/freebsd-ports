@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-Amazon-EC2/Makefile 435902 2017-03-11 12:55:40Z bofh $
+# $FreeBSD: head/net/p5-Net-Amazon-EC2/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Amazon-EC2
 PORTVERSION=	0.32
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl interface to the Amazon Elastic Compute Cloud
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-LWP-Protocol-https>=0:www/p5-LWP-Protocol-https \

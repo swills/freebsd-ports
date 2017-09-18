@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Inline-C/Makefile 442314 2017-06-01 19:58:06Z sunpoet $
+# $FreeBSD: head/devel/p5-Inline-C/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Inline-C
 PORTVERSION=	0.78
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Write Perl Subroutines in C
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Inline>=0.79:devel/p5-Inline \

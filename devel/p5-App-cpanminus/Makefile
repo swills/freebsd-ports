@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-App-cpanminus/Makefile 427363 2016-11-29 07:31:44Z kuriyama $
+# $FreeBSD: head/devel/p5-App-cpanminus/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	App-cpanminus
 PORTVERSION=	1.7042
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to get, unpack, build, and install modules from CPAN
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=	perl5

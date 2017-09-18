@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@infor.org>
-# $FreeBSD: head/devel/p5-PerlIO-via-symlink/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/devel/p5-PerlIO-via-symlink/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	PerlIO-via-symlink
 PORTVERSION=	0.05
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Symbolic link PerlIO layers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Module-Install>0:devel/p5-Module-Install

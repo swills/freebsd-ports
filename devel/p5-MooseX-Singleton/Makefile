@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-MooseX-Singleton/Makefile 427049 2016-11-24 16:10:34Z sunpoet $
+# $FreeBSD: head/devel/p5-MooseX-Singleton/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooseX-Singleton
 PORTVERSION=	0.30
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Turn Moose class into a singleton
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

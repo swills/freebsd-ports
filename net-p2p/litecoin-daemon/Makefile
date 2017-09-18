@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/litecoin-daemon/Makefile 439779 2017-04-30 01:12:10Z linimon $
+# $FreeBSD: head/net-p2p/litecoin-daemon/Makefile 449977 2017-09-17 00:38:59Z swills $
 
 MASTERDIR=	${.CURDIR}/../litecoin
 PKGNAMESUFFIX=	-daemon
@@ -15,8 +15,11 @@ CPE_VENDOR=	bitcoin
 CPE_PRODUCT=	bitcoind
 CPE_VERSION=	${PORTVERSION:R}
 
-OPTIONS_DEFINE=		DEBUG HARDENING TESTS UPNP WALLET
+OPTIONS_DEFINE=		DEBUG HARDENING TESTS UPNP WALLET ZMQ
 OPTIONS_DEFAULT=	HARDENING WALLET
+
+USERS=		litecoin
+GROUPS=		litecoin
 
 CONFIGURE_ARGS=	--with-daemon \
 		--without-gui \
@@ -26,5 +29,12 @@ CONFIGURE_ARGS=	--with-daemon \
 		--disable-reduce-exports
 
 PLIST_FILES=	bin/litecoind
+PLIST_FILES+=	man/man1/litecoind.1.gz
+PLIST_FILES+=	"@sample etc/litecoin.conf.sample"
+
+USE_RC_SUBR=	litecoind
+
+post-install:
+	${INSTALL_DATA} ${WRKSRC}/contrib/debian/examples/bitcoin.conf ${STAGEDIR}${PREFIX}/etc/litecoin.conf.sample
 
 .include "${MASTERDIR}/Makefile"

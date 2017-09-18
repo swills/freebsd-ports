@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/converters/p5-Encode-Locale/Makefile 442231 2017-05-31 17:29:54Z sunpoet $
+# $FreeBSD: head/converters/p5-Encode-Locale/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Encode-Locale
 PORTVERSION=	1.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Determine the locale encoding
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

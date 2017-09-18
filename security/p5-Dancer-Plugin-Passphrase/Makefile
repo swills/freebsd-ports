@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/security/p5-Dancer-Plugin-Passphrase/Makefile 444679 2017-06-29 19:14:18Z sunpoet $
+# $FreeBSD: head/security/p5-Dancer-Plugin-Passphrase/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Dancer-Plugin-Passphrase
 PORTVERSION=	2.0.1
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Passphrases and Passwords as objects for Dancer
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

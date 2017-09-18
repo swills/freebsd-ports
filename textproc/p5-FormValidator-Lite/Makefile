@@ -1,5 +1,5 @@
 # Created by: TAKAHASHI Kaoru <kaoru@kaisei.org>
-# $FreeBSD: head/textproc/p5-FormValidator-Lite/Makefile 425517 2016-11-06 16:47:12Z sunpoet $
+# $FreeBSD: head/textproc/p5-FormValidator-Lite/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	FormValidator-Lite
 PORTVERSION=	0.39
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Lightleight form validation library
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Accessor-Lite>=0.05:devel/p5-Class-Accessor-Lite \

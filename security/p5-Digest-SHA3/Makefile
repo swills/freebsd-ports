@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/security/p5-Digest-SHA3/Makefile 449407 2017-09-07 16:12:17Z sunpoet $
+# $FreeBSD: head/security/p5-Digest-SHA3/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Digest-SHA3
 PORTVERSION=	0.26
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for SHA-3
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

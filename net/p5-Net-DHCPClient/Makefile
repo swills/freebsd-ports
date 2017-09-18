@@ -1,5 +1,5 @@
 # Created by: Sergey Matveychuk <sem@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-DHCPClient/Makefile 425008 2016-10-31 16:01:55Z adamw $
+# $FreeBSD: head/net/p5-Net-DHCPClient/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-DHCPClient
 PORTVERSION=	1.0
@@ -13,7 +13,7 @@ COMMENT=	Perl implementation of a DHCP client API
 
 RUN_DEPENDS=	p5-Net-RawIP>=0:net/p5-Net-RawIP
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

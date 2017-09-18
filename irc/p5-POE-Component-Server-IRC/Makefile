@@ -1,5 +1,5 @@
 # Created by: Masahiro Teramoto <markun@onohara.to>
-# $FreeBSD: head/irc/p5-POE-Component-Server-IRC/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/irc/p5-POE-Component-Server-IRC/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Component-Server-IRC
 PORTVERSION=	1.54
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	markun@onohara.to
 COMMENT=	Fully event-driven networkable IRC server daemon module
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Crypt-PasswdMD5>=1.3:security/p5-Crypt-PasswdMD5 \

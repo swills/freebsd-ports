@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/security/p5-POE-Filter-SSL/Makefile 448557 2017-08-22 16:40:53Z sunpoet $
+# $FreeBSD: head/security/p5-POE-Filter-SSL/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Filter-SSL
 PORTVERSION=	0.34
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Esiest and flexiblest way to SSL in POEIntegrate SSL into POE
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTTP-Message>=0:www/p5-HTTP-Message \

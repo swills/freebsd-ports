@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Data-Rmap/Makefile 426966 2016-11-23 20:05:32Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-Rmap/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Rmap
 PORTVERSION=	0.65
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Recursive map, apply a block to a data structure
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception

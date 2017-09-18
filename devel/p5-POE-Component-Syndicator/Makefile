@@ -1,5 +1,5 @@
 # Created by: Jase Thew <freebsd@beardz.net>
-# $FreeBSD: head/devel/p5-POE-Component-Syndicator/Makefile 422377 2016-09-18 11:54:01Z rene $
+# $FreeBSD: head/devel/p5-POE-Component-Syndicator/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	POE-Component-Syndicator
 PORTVERSION=	0.06
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	POE component base class which implements the Observer pattern
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-POE>=1.311:devel/p5-POE \

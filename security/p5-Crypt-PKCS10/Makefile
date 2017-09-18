@@ -1,5 +1,5 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/security/p5-Crypt-PKCS10/Makefile 442712 2017-06-05 23:25:30Z sunpoet $
+# $FreeBSD: head/security/p5-Crypt-PKCS10/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-PKCS10
 PORTVERSION=	1.800201
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	svysh.fbsd@gmail.com
 COMMENT=	Parse PKCS #10 certificate requests
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Convert-ASN1>=0.27:converters/p5-Convert-ASN1 \

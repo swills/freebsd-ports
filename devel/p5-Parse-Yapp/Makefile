@@ -1,5 +1,5 @@
 # Created by: Michael Lyngbøl <lyngbol@wheel.dk>
-# $FreeBSD: head/devel/p5-Parse-Yapp/Makefile 428498 2016-12-13 15:21:33Z amdmi3 $
+# $FreeBSD: head/devel/p5-Parse-Yapp/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Parse-Yapp
 PORTVERSION=	1.05
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	lyngbol@wheel.dk
 COMMENT=	Perl extension for generating and using LALR parsers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

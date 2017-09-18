@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/p5-Crypt-RSA-Parse/Makefile 437395 2017-04-01 06:51:05Z pi $
+# $FreeBSD: head/security/p5-Crypt-RSA-Parse/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-RSA-Parse
 PORTVERSION=	0.043
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	pi@FreeBSD.org
 COMMENT=	Parse RSA keys
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Class-Accessor>=0.34:devel/p5-Class-Accessor \

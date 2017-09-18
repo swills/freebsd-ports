@@ -1,5 +1,5 @@
 # Created by: Jui-Nan Lin <jnlin@freebsd.cs.nctu.edu.tw>
-# $FreeBSD: head/www/p5-HTML-ExtractMain/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-ExtractMain/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-ExtractMain
 PORTVERSION=	0.62
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	jnlin@freebsd.cs.nctu.edu.tw
 COMMENT=	Perl extension to extract main content of a web page
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-HTML-Tree>=3.23:www/p5-HTML-Tree \

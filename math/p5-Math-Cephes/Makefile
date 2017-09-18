@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Cephes/Makefile 415173 2016-05-14 01:30:37Z sunpoet $
+# $FreeBSD: head/math/p5-Math-Cephes/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-Cephes
 PORTVERSION=	0.5305
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interface to the cephes math library
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

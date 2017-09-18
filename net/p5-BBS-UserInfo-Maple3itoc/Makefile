@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/p5-BBS-UserInfo-Maple3itoc/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-BBS-UserInfo-Maple3itoc/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	BBS-UserInfo-Maple3itoc
 PORTVERSION=	0.01
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Get user information of Maple3itoc-style BBS
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Expect>=0:lang/p5-Expect

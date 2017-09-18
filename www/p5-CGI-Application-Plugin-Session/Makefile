@@ -1,5 +1,5 @@
 # Created by: George Hartzell <hartzell@alerce.com>
-# $FreeBSD: head/www/p5-CGI-Application-Plugin-Session/Makefile 415696 2016-05-23 03:53:19Z sunpoet $
+# $FreeBSD: head/www/p5-CGI-Application-Plugin-Session/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CGI-Application-Plugin-Session
 PORTVERSION=	1.05
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Plugin that adds session support to CGI::Application
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-CGI-Application>=3.21:www/p5-CGI-Application \

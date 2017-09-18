@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Pod-Site/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/www/p5-Pod-Site/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Pod-Site
 PORTVERSION=	0.56
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Build browsable HTML documentation for your app
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \

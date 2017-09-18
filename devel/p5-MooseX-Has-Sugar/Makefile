@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-Has-Sugar/Makefile 435398 2017-03-04 13:48:35Z sunpoet $
+# $FreeBSD: head/devel/p5-MooseX-Has-Sugar/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooseX-Has-Sugar
 PORTVERSION=	1.000006
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Sugar Syntax for moose has fields
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

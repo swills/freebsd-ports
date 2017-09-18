@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-DBD-Pg/Makefile 441541 2017-05-23 18:51:58Z sunpoet $
+# $FreeBSD: head/databases/p5-DBD-Pg/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBD-Pg
 PORTVERSION=	3.6.2
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Provides access to PostgreSQL databases through the DBI
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DBI>=1.614:databases/p5-DBI

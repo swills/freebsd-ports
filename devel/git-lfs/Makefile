@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/git-lfs/Makefile 446783 2017-07-28 00:08:00Z dbaio $
+# $FreeBSD: head/devel/git-lfs/Makefile 449932 2017-09-15 19:18:09Z sunpoet $
 
 PORTNAME=	git-lfs
-PORTVERSION=	2.2.1
+PORTVERSION=	2.3.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

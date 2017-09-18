@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/devel/p5-Devel-PPPort/Makefile 440892 2017-05-14 18:53:33Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-PPPort/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Devel-PPPort
 PORTVERSION=	3.36
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl/Pollution/Portability
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

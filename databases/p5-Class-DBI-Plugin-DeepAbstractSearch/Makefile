@@ -1,5 +1,5 @@
 # Created by: milki <milki@rescomp.berkeley.edy>
-# $FreeBSD: head/databases/p5-Class-DBI-Plugin-DeepAbstractSearch/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-Class-DBI-Plugin-DeepAbstractSearch/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Class-DBI-Plugin-DeepAbstractSearch
 PORTVERSION=	0.08
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Provides deep_search_where() for Class::DBI
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-DBI>=0.96:databases/p5-Class-DBI \

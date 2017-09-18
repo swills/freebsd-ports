@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/ftp/p5-File-Fetch/Makefile 443808 2017-06-18 05:51:39Z sunpoet $
+# $FreeBSD: head/ftp/p5-File-Fetch/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Fetch
 PORTVERSION=	0.52
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Generic file fetching mechanism
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Dereckson <dereckson@gmail.com>
-# $FreeBSD: head/textproc/p5-Text-CSV-Encoded/Makefile 447708 2017-08-10 18:24:10Z sunpoet $
+# $FreeBSD: head/textproc/p5-Text-CSV-Encoded/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-CSV-Encoded
 PORTVERSION=	0.25
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	dereckson@gmail.com
 COMMENT=	Perl module for Encoding aware CVS files parsing
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

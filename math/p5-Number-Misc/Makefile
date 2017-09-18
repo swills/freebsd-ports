@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/p5-Number-Misc/Makefile 392616 2015-07-21 09:57:10Z kuriyama $
+# $FreeBSD: head/math/p5-Number-Misc/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Number-Misc
 PORTVERSION=	1.2
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension of handy utilities for numbers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

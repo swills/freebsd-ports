@@ -1,5 +1,5 @@
 # Created by: Alexander Zhuravlev <zaa@zaa.pp.ru>
-# $FreeBSD: head/textproc/p5-Text-WikiFormat/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Text-WikiFormat/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-WikiFormat
 PORTVERSION=	0.81
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Module for translating Wiki formatted text into other formats
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-URI>=0.01:net/p5-URI

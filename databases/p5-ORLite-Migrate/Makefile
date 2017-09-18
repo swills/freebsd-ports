@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/databases/p5-ORLite-Migrate/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-ORLite-Migrate/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	ORLite-Migrate
 PORTVERSION=	1.10
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Light weight SQLite-specific schema migration
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-pushd>=1.00:devel/p5-File-pushd \

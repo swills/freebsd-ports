@@ -1,5 +1,5 @@
 # Created by: Andrej Zverev <andrey.zverev@electro-com.ru>
-# $FreeBSD: head/www/p5-Catalyst-Controller-HTML-FormFu/Makefile 441475 2017-05-22 17:18:24Z sunpoet $
+# $FreeBSD: head/www/p5-Catalyst-Controller-HTML-FormFu/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Catalyst-Controller-HTML-FormFu
 PORTVERSION=	2.02
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Catalyst FormFu Base Controller
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

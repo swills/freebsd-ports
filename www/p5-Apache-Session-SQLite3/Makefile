@@ -1,5 +1,5 @@
 # Created by: clsung
-# $FreeBSD: head/www/p5-Apache-Session-SQLite3/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Apache-Session-SQLite3/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Apache-Session-SQLite3
 PORTVERSION=	0.03
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Use DBD::SQLite 1.x for Apache::Session storage
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Apache-Session>=0:www/p5-Apache-Session \

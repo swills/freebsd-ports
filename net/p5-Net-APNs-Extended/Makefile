@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-Net-APNs-Extended/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Net-APNs-Extended/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-APNs-Extended
 PORTVERSION=	0.10
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for APNs that support the extended format
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/archivers/p5-Archive-Peek/Makefile 444733 2017-06-30 13:43:37Z sunpoet $
+# $FreeBSD: head/archivers/p5-Archive-Peek/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Archive-Peek
 PORTVERSION=	0.35
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Peek into archives without extracting them
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

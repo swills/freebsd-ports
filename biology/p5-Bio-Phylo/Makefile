@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/biology/p5-Bio-Phylo/Makefile 428871 2016-12-18 15:25:22Z sunpoet $
+# $FreeBSD: head/biology/p5-Bio-Phylo/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Bio-Phylo
 PORTVERSION=	0.58
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Phylogenetic analysis using Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/COPYING
 

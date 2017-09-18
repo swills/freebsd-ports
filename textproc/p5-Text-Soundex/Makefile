@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Text-Soundex/Makefile 401260 2015-11-11 16:51:35Z sunpoet $
+# $FreeBSD: head/textproc/p5-Text-Soundex/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-Soundex
 PORTVERSION=	3.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Implementation of the soundex algorithm
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USE_PERL5=	configure

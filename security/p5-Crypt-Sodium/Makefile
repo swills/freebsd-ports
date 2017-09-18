@@ -1,5 +1,5 @@
 # Created by: Thomas von Dein <freebsd@daemon.de>
-# $FreeBSD: head/security/p5-Crypt-Sodium/Makefile 437064 2017-03-27 17:34:24Z shaun $
+# $FreeBSD: head/security/p5-Crypt-Sodium/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-Sodium
 PORTVERSION=	0.11
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	freebsd@daemon.de
 COMMENT=	Perl bindings for portable NaCL (libsodium)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libsodium.so:security/libsodium

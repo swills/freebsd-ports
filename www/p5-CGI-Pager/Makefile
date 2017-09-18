@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-CGI-Pager/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-CGI-Pager/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CGI-Pager
 PORTVERSION=	1.01
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to generate HTML pagination linkage easily
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-URI>0:net/p5-URI

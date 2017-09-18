@@ -1,5 +1,5 @@
 # Created by: Mike Fisher <Michael_Fisher@URMC.Rochester.edu>
-# $FreeBSD: head/devel/p5-Data-Page-Pageset/Makefile 444150 2017-06-22 23:42:19Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-Page-Pageset/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Page-Pageset
 PORTVERSION=	1.02
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	Michael_Fisher@URMC.Rochester.edu
 COMMENT=	Perl extension to simplify page number lists
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

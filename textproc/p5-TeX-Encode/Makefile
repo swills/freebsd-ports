@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-TeX-Encode/Makefile 449767 2017-09-13 09:36:20Z sunpoet $
+# $FreeBSD: head/textproc/p5-TeX-Encode/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	TeX-Encode
 PORTVERSION=	2.003
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Encode/decode Perl utf-8 strings into TeX
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

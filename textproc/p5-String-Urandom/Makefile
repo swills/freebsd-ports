@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-String-Urandom/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-String-Urandom/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	String-Urandom
 PORTVERSION=	0.16
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to convert /dev/urandom to 8-bit chars
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

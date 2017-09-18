@@ -1,8 +1,7 @@
-# $FreeBSD: head/graphics/xpdf4/Makefile 449753 2017-09-13 05:08:30Z cy $
+# $FreeBSD: head/graphics/xpdf4/Makefile 449826 2017-09-14 10:08:40Z cy $
 
 PORTNAME=	xpdf
-PORTVERSION=	4.00
-PORTREVISION=	2
+PORTVERSION=	4.02
 CATEGORIES=	graphics print
 MASTER_SITES=	http://www.xpdfreader.com/dl/
 .if !defined(MASTERDIR)
@@ -11,6 +10,7 @@ PKGNAMESUFFIX=	4
 
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Display PDF files and convert them to other formats
+WRKSRC=		${WRKDIR}/${PORTNAME}-4.00
 
 LICENSE=	GPLv2
 

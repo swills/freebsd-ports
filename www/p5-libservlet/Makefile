@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/www/p5-libservlet/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-libservlet/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	libservlet
 PORTVERSION=	0.9.2
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Servlet API for Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Exception-Class>=0:devel/p5-Exception-Class

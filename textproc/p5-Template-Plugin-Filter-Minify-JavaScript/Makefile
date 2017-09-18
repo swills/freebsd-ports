@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Template-Plugin-Filter-Minify-JavaScript/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Template-Plugin-Filter-Minify-JavaScript/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Template-Plugin-Filter-Minify-JavaScript
 PORTVERSION=	0.94
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	JavaScript::Minifier filter for Template Toolkit
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-JavaScript-Minifier>=0:textproc/p5-JavaScript-Minifier \

@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/www/p5-Reddit/Makefile 433130 2017-02-02 07:51:32Z ehaupt $
+# $FreeBSD: head/www/p5-Reddit/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Reddit
 PORTVERSION=	0.30.03
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Module for interacting with Reddit
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Module-Install>=0:devel/p5-Module-Install \

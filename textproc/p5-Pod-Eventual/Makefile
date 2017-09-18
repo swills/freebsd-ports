@@ -1,5 +1,5 @@
 # Created by: Andrey Kostenko <andrey@kostenko.name>
-# $FreeBSD: head/textproc/p5-Pod-Eventual/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Pod-Eventual/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Pod-Eventual
 PORTVERSION=	0.094001
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Read a POD document as a series of trivial events
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Mixin-Linewise>=0.102:devel/p5-Mixin-Linewise

@@ -1,5 +1,5 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBI/Makefile 448117 2017-08-17 15:04:31Z sunpoet $
+# $FreeBSD: head/databases/p5-DBI/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBI
 PORTVERSION=	1.637
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 Database Interface, required for DBD::* modules
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

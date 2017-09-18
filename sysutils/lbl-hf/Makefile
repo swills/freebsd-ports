@@ -1,5 +1,5 @@
-# Created by: Craig Leres <leres@ee.lbl.gov>
-# $FreeBSD: head/sysutils/lbl-hf/Makefile 423940 2016-10-13 21:56:24Z pawel $
+# Created by: Craig Leres <leres@FreeBSD.org>
+# $FreeBSD: head/sysutils/lbl-hf/Makefile 449916 2017-09-15 18:18:26Z leres $
 
 PORTNAME=	hf
 PORTVERSION=	1.7
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://ee.lbl.gov/ \
 		http://www.mmnt.net/db/0/3/ftp.ee.lbl.gov/
 PKGNAMEPREFIX=	lbl-
 
-MAINTAINER=	leres@ee.lbl.gov
+MAINTAINER=	leres@FreeBSD.org
 COMMENT=	Address to hostname filter
 
 LICENSE=	BSD3CLAUSE

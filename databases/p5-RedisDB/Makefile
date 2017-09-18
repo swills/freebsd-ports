@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-RedisDB/Makefile 427167 2016-11-26 13:00:22Z kuriyama $
+# $FreeBSD: head/databases/p5-RedisDB/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	RedisDB
 PORTVERSION=	2.53
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to access redis database
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

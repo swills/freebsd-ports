@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/p5-Encode-ISO2022/Makefile 379988 2015-02-26 05:44:05Z kuriyama $
+# $FreeBSD: head/japanese/p5-Encode-ISO2022/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Encode-ISO2022
 PORTVERSION=	0.04
@@ -8,7 +8,7 @@ MASTER_SITES=	CPAN
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for ISO/IEC 2022 character encoding scheme
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

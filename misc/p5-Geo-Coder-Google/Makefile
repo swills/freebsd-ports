@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/misc/p5-Geo-Coder-Google/Makefile 432879 2017-01-30 21:42:27Z sunpoet $
+# $FreeBSD: head/misc/p5-Geo-Coder-Google/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Geo-Coder-Google
 PORTVERSION=	0.18
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Google Maps Geocoding API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Digest-HMAC>=0:security/p5-Digest-HMAC \

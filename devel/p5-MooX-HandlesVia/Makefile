@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-MooX-HandlesVia/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-MooX-HandlesVia/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooX-HandlesVia
 PORTVERSION=	0.001008
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	NativeTrait-like behavior for Moo
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Data-Perl>=0.002006:devel/p5-Data-Perl \

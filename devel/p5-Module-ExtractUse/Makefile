@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Module-ExtractUse/Makefile 435092 2017-02-28 22:50:22Z sunpoet $
+# $FreeBSD: head/devel/p5-Module-ExtractUse/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Module-ExtractUse
 PORTVERSION=	0.341
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Find out what CPAN modules are used
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

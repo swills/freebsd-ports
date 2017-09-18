@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 448603 2017-08-23 11:33:26Z rene $
+# $FreeBSD: head/biology/Makefile 449922 2017-09-15 19:17:17Z sunpoet $
 #
 
     COMMENT = Biology
@@ -60,6 +60,7 @@
     SUBDIR += p5-Bio-Coordinate
     SUBDIR += p5-Bio-Das
     SUBDIR += p5-Bio-Das-Lite
+    SUBDIR += p5-Bio-FeatureIO
     SUBDIR += p5-Bio-GFF3
     SUBDIR += p5-Bio-Glite
     SUBDIR += p5-Bio-Graphics

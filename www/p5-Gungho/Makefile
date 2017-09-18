@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-Gungho/Makefile 435107 2017-02-28 22:51:32Z sunpoet $
+# $FreeBSD: head/www/p5-Gungho/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Gungho
 PORTVERSION=	0.09008
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Event Based High Performance Web Crawler Framework
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Best>=0:devel/p5-Best \

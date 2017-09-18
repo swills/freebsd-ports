@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/www/p5-Maypole/Makefile 428143 2016-12-08 17:26:09Z tijl $
+# $FreeBSD: head/www/p5-Maypole/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Maypole
 PORTVERSION=	2.13
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	MVC web application framework
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-CGI-Simple>=0:www/p5-CGI-Simple \

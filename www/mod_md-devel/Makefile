@@ -1,8 +1,8 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/www/mod_md-devel/Makefile 449713 2017-09-12 19:57:33Z brnrd $
+# $FreeBSD: head/www/mod_md-devel/Makefile 449899 2017-09-15 10:59:28Z brnrd $
 
 PORTNAME=	mod_md-devel
-PORTVERSION=	0.9.4
+PORTVERSION=	0.9.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 
@@ -23,7 +23,8 @@ GH_ACCOUNT=	icing
 GH_PROJECT=	mod_md
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--program-prefix=ext-
+CONFIGURE_ARGS=	--program-prefix=ext- \
+		--with-openssl=${OPENSSLBASE}
 CONFIGURE_ENV=	CONFIG_SHELL=/bin/sh
 
 MODULENAME=	${GH_PROJECT}

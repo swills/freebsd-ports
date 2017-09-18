@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-GitDDL-Migrator/Makefile 426815 2016-11-22 10:35:10Z kuriyama $
+# $FreeBSD: head/databases/p5-GitDDL-Migrator/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	GitDDL-Migrator
 PORTVERSION=	0.08
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to extended p5-GitDDL
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

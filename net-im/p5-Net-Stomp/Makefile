@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/net-im/p5-Net-Stomp/Makefile 413526 2016-04-17 18:40:23Z sunpoet $
+# $FreeBSD: head/net-im/p5-Net-Stomp/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Stomp
 PORTVERSION=	0.57
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Streaming Text Orientated Messaging Protocol Client
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor

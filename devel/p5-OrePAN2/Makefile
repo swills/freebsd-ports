@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-OrePAN2/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-OrePAN2/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	OrePAN2
 PORTVERSION=	0.40
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for yet another DarkPAN manager
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

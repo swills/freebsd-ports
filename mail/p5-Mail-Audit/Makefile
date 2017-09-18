@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/mail/p5-Mail-Audit/Makefile 435094 2017-02-28 22:50:32Z sunpoet $
+# $FreeBSD: head/mail/p5-Mail-Audit/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Mail-Audit
 PORTVERSION=	2.228
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for creating easy mail filters
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

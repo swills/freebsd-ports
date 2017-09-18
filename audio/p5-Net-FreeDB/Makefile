@@ -1,5 +1,5 @@
 # Created by: Peter Pentchev <roam@FreeBSD.org>
-# $FreeBSD: head/audio/p5-Net-FreeDB/Makefile 427552 2016-12-02 11:58:21Z mat $
+# $FreeBSD: head/audio/p5-Net-FreeDB/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-FreeDB
 PORTVERSION=	0.10
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Get the CDID of an audio CD and query the FreeDB servers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-CDDB-File>=0:audio/p5-CDDB-File  \

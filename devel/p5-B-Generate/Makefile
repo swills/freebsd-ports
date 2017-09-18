@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-B-Generate/Makefile 434725 2017-02-24 15:57:33Z sunpoet $
+# $FreeBSD: head/devel/p5-B-Generate/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	B-Generate
 PORTVERSION=	1.55
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Create your own Perl op trees
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

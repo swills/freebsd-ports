@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/cmake-gui/Makefile 443088 2017-06-10 13:33:52Z rakuco $
+# $FreeBSD: head/devel/cmake-gui/Makefile 449853 2017-09-14 21:02:51Z adridg $
 
 PORTNAME=	cmake
-PORTVERSION=	3.8.2
+DISTVERSION=	3.9.2
 CATEGORIES=	devel
 MASTER_SITES=	https://www.cmake.org/files/v${PORTVERSION:R}/
 PKGNAMESUFFIX=	-gui
@@ -27,7 +27,8 @@ CMAKE_ARGS=	-DBUILD_QtDialog:bool=on \
 		-DSPHINX_MAN:BOOL=ON \
 		-DCMAKE_USE_SYSTEM_LIBRARIES:BOOL=ON \
 		-DCMAKE_DATA_DIR:STRING="/${DATADIR_REL}" \
-		-DCMAKE_DOC_DIR:STRING="/${DOCSDIR_REL}"
+		-DCMAKE_DOC_DIR:STRING="/${DOCSDIR_REL}" \
+		-DCMake_SPHINX_DEPEND_ON_EXECUTABLES:BOOL=OFF
 
 ALL_TARGET=	cmake-gui documentation
 INSTALL_WRKSRC=	${WRKSRC}/Source/QtDialog

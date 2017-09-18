@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-Sunny/Makefile 437691 2017-04-04 07:37:53Z sunpoet $
+# $FreeBSD: head/databases/p5-DBIx-Sunny/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBIx-Sunny
 PORTVERSION=	0.23
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple DBI wrapper supports SQLite and MySQL
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Gabor Kovesdan
-# $FreeBSD: head/security/p5-Crypt-SaltedHash/Makefile 431414 2017-01-13 19:51:33Z skreuzer $
+# $FreeBSD: head/security/p5-Crypt-SaltedHash/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-SaltedHash
 PORTVERSION=	0.09
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	Perl extension to work with salted hashes
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

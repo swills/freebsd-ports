@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Sah/Makefile 435787 2017-03-09 19:16:25Z sunpoet $
+# $FreeBSD: head/devel/p5-Sah/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Sah
 PORTVERSION=	0.9.45
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Schema for data structures (specification)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

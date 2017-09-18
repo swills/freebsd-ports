@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-View-XML-Feed/Makefile 426556 2016-11-20 05:07:26Z ehaupt $
+# $FreeBSD: head/www/p5-Catalyst-View-XML-Feed/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Catalyst-View-XML-Feed
 PORTVERSION=	0.09
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Perl extension for Catalyst view for RSS, Atom, or other XML feeds
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Catalyst-Runtime>0:www/p5-Catalyst-Runtime \

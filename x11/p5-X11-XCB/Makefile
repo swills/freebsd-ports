@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/p5-X11-XCB/Makefile 447683 2017-08-10 15:19:01Z mat $
+# $FreeBSD: head/x11/p5-X11-XCB/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	X11-XCB
 PORTVERSION=	0.16
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	pi@FreeBSD.org
 COMMENT=	Perl bindings for libxcb
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libxcb.so:x11/libxcb \

@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/converters/p5-Number-Nary/Makefile 433201 2017-02-03 08:24:49Z sunpoet $
+# $FreeBSD: head/converters/p5-Number-Nary/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Number-Nary
 PORTVERSION=	1.100312
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tobez@FreeBSD.org
 COMMENT=	Encode and decode numbers as n-ary strings
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/archivers/p5-Archive-Any-Lite/Makefile 414307 2016-04-29 22:42:25Z sunpoet $
+# $FreeBSD: head/archivers/p5-Archive-Any-Lite/Makefile 449892 2017-09-15 08:32:44Z mat $
 
 PORTNAME=	Archive-Any-Lite
 PORTVERSION=	0.11
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Simple CPAN package extractor
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

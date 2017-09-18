@@ -1,5 +1,5 @@
 # Created by: <ports@c0decafe.net>
-# $FreeBSD: head/security/p5-IO-Async-SSL/Makefile 445620 2017-07-13 00:00:15Z sunpoet $
+# $FreeBSD: head/security/p5-IO-Async-SSL/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IO-Async-SSL
 PORTVERSION=	0.20
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Use SSL/TLS with IO::Async
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

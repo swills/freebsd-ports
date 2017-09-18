@@ -1,5 +1,5 @@
 # Created by: brix@FreeBSD.org
-# $FreeBSD: head/devel/p5-Data-Integer/Makefile 447643 2017-08-09 19:35:25Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-Integer/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Integer
 PORTVERSION=	0.006
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Details of the native integer data type
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

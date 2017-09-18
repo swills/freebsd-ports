@@ -1,5 +1,5 @@
 # Created by: clsung@dragon2.net
-# $FreeBSD: head/devel/p5-Algorithm-Networksort/Makefile 413839 2016-04-23 06:48:56Z sunpoet $
+# $FreeBSD: head/devel/p5-Algorithm-Networksort/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Algorithm-Networksort
 PORTVERSION=	2.01
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module that will create sorting networks
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

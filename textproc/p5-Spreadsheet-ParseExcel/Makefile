@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-Spreadsheet-ParseExcel/Makefile 435923 2017-03-11 15:59:04Z sunpoet $
+# $FreeBSD: head/textproc/p5-Spreadsheet-ParseExcel/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Spreadsheet-ParseExcel
 PORTVERSION=	0.65
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Get information from Excel file
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Crypt-RC4>=0:security/p5-Crypt-RC4 \

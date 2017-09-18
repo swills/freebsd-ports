@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Class-Std-Utils/Makefile 397738 2015-09-24 19:05:07Z sunpoet $
+# $FreeBSD: head/devel/p5-Class-Std-Utils/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Class-Std-Utils
 PORTVERSION=	0.0.3
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Utility subroutines for building "inside-out" objects
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

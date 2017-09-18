@@ -1,5 +1,5 @@
 # Created by: Sébastien Santoro <dereckson@gmail.com>
-# $FreeBSD: head/devel/p5-Term-ReadLine-TTYtter/Makefile 417207 2016-06-21 13:24:53Z mat $
+# $FreeBSD: head/devel/p5-Term-ReadLine-TTYtter/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Term-ReadLine-TTYtter
 PORTVERSION=	1.4
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	dereckson@gmail.com
 COMMENT=	Perl5 module for Term::ReadLine allowing rich editing
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

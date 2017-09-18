@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-RSS-Feed/Makefile 441941 2017-05-28 23:16:04Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-RSS-Feed/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-RSS-Feed
 PORTVERSION=	2.40
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:S/0$//}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Persistent XML RSS encapsulation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Clone>=0:devel/p5-Clone \

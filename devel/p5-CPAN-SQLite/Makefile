@@ -1,5 +1,5 @@
 # Created by: Christopher Boumenot <boumenot@gmail.com>
-# $FreeBSD: head/devel/p5-CPAN-SQLite/Makefile 444737 2017-06-30 13:43:57Z sunpoet $
+# $FreeBSD: head/devel/p5-CPAN-SQLite/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CPAN-SQLite
 PORTVERSION=	0.199
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	eg@fbsd.lt
 COMMENT=	Search CPAN using a SQLite database
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

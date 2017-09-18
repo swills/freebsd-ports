@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Cache-FastMmap/Makefile 445902 2017-07-15 17:23:38Z sunpoet $
+# $FreeBSD: head/devel/p5-Cache-FastMmap/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Cache-FastMmap
 PORTVERSION=	1.46
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Uses an mmap'ed file to act as a shared memory interprocess cache #'
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

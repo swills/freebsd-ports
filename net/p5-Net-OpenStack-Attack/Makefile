@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-Net-OpenStack-Attack/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Net-OpenStack-Attack/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-OpenStack-Attack
 PORTVERSION=	1.0500
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Tools for stress testing an OpenStack deployment
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Any-Moose>=0:devel/p5-Any-Moose \

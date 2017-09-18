@@ -1,8 +1,9 @@
-# $FreeBSD: head/databases/influxdb/Makefile 448745 2017-08-26 00:11:55Z ultima $
+# $FreeBSD: head/databases/influxdb/Makefile 449830 2017-09-14 11:17:52Z eugen $
 
 PORTNAME=	influxdb
 PORTVERSION=	1.3.3
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	databases net-mgmt
 
 MAINTAINER=	cheffo@freebsd-bg.org
@@ -72,6 +73,15 @@ INFLUXD_DBDIR=	/var/db/${PORTNAME}/
 INFLUXD_LOGDIR=	/var/log/${PORTNAME}/
 INFLUXD_PIDDIR=	/var/run/${PORTNAME}/
 
+.include <bsd.port.pre.mk>
+
+.if ${OPSYS} == "FreeBSD" && ((${OSVERSION} >= 1100513 && ${OSVERSION} < 1200000) || \
+    	${OSVERSION} >= 1200015)
+SUB_LIST+=	INFLUXD_LOGCMD="daemon"
+.else
+SUB_LIST+=	INFLUXD_LOGCMD="logger"
+.endif
+
 post-patch:
 	@${MKDIR} ${WRKSRC}/src/github.com/${GH_ACCOUNT_DEFAULT}/${PORTNAME}
 	@cd ${WRKSRC} && \
@@ -115,4 +125,4 @@ do-install-MANPAGES-on:
 		${INSTALL_MAN} ${WRKSRC}/src/github.com/influxdata/influxdb/man/$i ${STAGEDIR}${MAN8PREFIX}/man/man1
 .endfor
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

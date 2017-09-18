@@ -1,5 +1,5 @@
 # Created by: Rodrigo OSORIO <rodrigo@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-libsoldout/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-libsoldout/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	libsoldout
 PORTVERSION=	0.02
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	rodrigo@FreeBSD.org
 COMMENT=	Convert Markdown text in (X)HTML
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libsoldout.so:textproc/libsoldout

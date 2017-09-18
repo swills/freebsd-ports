@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Data-Section-Simple/Makefile 399737 2015-10-19 20:18:59Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-Section-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Section-Simple
 PORTVERSION=	0.07
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Read data from __DATA__
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

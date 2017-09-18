@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/net/p5-XML-Compile-SOAP-Daemon/Makefile 415251 2016-05-15 16:12:49Z sunpoet $
+# $FreeBSD: head/net/p5-XML-Compile-SOAP-Daemon/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-Compile-SOAP-Daemon
 PORTVERSION=	3.12
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Base class for SOAP message servers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Log-Report>=0.90:devel/p5-Log-Report \

@@ -1,5 +1,5 @@
 # Created by: ports@c0decafe.net <ports@c0decafe.net>
-# $FreeBSD: head/www/p5-URI-Encode/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/www/p5-URI-Encode/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	URI-Encode
 PORTVERSION=	0.09
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Simple URI Encoding/Decoding
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

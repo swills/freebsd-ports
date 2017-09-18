@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Devel-CheckBin/Makefile 392791 2015-07-24 08:59:22Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-CheckBin/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Devel-CheckBin
 PORTVERSION=	0.04
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Check that a command is available
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

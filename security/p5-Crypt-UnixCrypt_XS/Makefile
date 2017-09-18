@@ -1,5 +1,5 @@
 # Created by: brix@FreeBSD.org
-# $FreeBSD: head/security/p5-Crypt-UnixCrypt_XS/Makefile 427578 2016-12-02 16:51:29Z sunpoet $
+# $FreeBSD: head/security/p5-Crypt-UnixCrypt_XS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-UnixCrypt_XS
 PORTVERSION=	0.11
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl XS interface for a portable traditional crypt function
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 MAKE_JOBS_UNSAFE=	yes

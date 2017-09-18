@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Log-Contextual/Makefile 427412 2016-11-30 08:05:19Z kuriyama $
+# $FreeBSD: head/devel/p5-Log-Contextual/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Log-Contextual
 PORTVERSION=	0.007000
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for simple logging interface with a contextual log
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-Web-Simple/Makefile 440369 2017-05-07 21:26:18Z sunpoet $
+# $FreeBSD: head/www/p5-Web-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Web-Simple
 PORTVERSION=	0.033
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Quick and easy way to build simple web applications
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTTP-Body>=1.22:www/p5-HTTP-Body \

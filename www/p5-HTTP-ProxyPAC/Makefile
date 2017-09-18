@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-ProxyPAC/Makefile 421693 2016-09-10 14:14:08Z ehaupt $
+# $FreeBSD: head/www/p5-HTTP-ProxyPAC/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTTP-ProxyPAC
 PORTVERSION=	0.31
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Use a proxy auto config file to get proxy info
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-JE>0:www/p5-JE \

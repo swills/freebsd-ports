@@ -1,5 +1,5 @@
 # Created by: Oleg A. Mamontov <oleg@mamontov.net>
-# $FreeBSD: head/devel/p5-Module-List/Makefile 448565 2017-08-22 16:41:29Z sunpoet $
+# $FreeBSD: head/devel/p5-Module-List/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Module-List
 PORTVERSION=	0.004
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	oleg@mamontov.net
 COMMENT=	Module 'directory' listing
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

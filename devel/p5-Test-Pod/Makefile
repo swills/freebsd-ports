@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-Test-Pod/Makefile 391452 2015-07-06 17:46:49Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Pod/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Pod
 PORTVERSION=	1.51
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Check for POD errors in files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

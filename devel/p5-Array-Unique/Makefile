@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Array-Unique/Makefile 397721 2015-09-24 19:03:38Z sunpoet $
+# $FreeBSD: head/devel/p5-Array-Unique/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Array-Unique
 PORTVERSION=	0.08
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Tie-able array that allows only unique values
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

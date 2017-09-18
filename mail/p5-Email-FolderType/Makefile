@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/mail/p5-Email-FolderType/Makefile 441111 2017-05-17 18:04:34Z sunpoet $
+# $FreeBSD: head/mail/p5-Email-FolderType/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Email-FolderType
 PORTVERSION=	0.8.14
@@ -11,7 +11,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:R}${PORTVERSION:E}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Determine the type of a mail folder
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

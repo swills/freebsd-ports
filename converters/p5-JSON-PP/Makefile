@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/converters/p5-JSON-PP/Makefile 445926 2017-07-15 19:08:55Z sunpoet $
+# $FreeBSD: head/converters/p5-JSON-PP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	JSON-PP
 PORTVERSION=	2.94000
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:S|000$||}
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	JSON::XS compatible pure-Perl module
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-CleanNamespaces/Makefile 447340 2017-08-04 14:36:39Z culot $
+# $FreeBSD: head/devel/p5-Test-CleanNamespaces/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-CleanNamespaces
 PORTVERSION=	0.22
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Check for uncleaned imports
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Module-Runtime>0:devel/p5-Module-Runtime \

@@ -1,5 +1,5 @@
 # Created by: Jase Thew <freebsd@beardz.net>
-# $FreeBSD: head/devel/p5-Reflex/Makefile 437694 2017-04-04 07:38:08Z sunpoet $
+# $FreeBSD: head/devel/p5-Reflex/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Reflex
 PORTVERSION=	0.100
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Class library for flexible, reactive programs
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

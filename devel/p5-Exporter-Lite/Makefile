@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-Exporter-Lite/Makefile 423693 2016-10-10 20:01:29Z adamw $
+# $FreeBSD: head/devel/p5-Exporter-Lite/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Exporter-Lite
 PORTVERSION=	0.08
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Lightweight exporting of functions and variables
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

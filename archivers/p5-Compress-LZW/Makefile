@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/archivers/p5-Compress-LZW/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/archivers/p5-Compress-LZW/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Compress-LZW
 PORTVERSION=	0.04
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Pure perl implementation of LZW
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Moo>=1.001000:devel/p5-Moo \

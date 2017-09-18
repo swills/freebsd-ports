@@ -1,5 +1,5 @@
 # Created by: Ache
-# $FreeBSD: head/textproc/p5-Text-CSV_XS/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Text-CSV_XS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-CSV_XS
 PORTVERSION=	1.18
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Comma-separated values manipulation routines
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Pod>=0:devel/p5-Test-Pod \

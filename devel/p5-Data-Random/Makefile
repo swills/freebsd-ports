@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Data-Random/Makefile 444152 2017-06-22 23:42:29Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-Random/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Random
 PORTVERSION=	0.12
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for generating random data
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-YAML-Tiny>=0:textproc/p5-YAML-Tiny

@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/www/p5-Jifty/Makefile 435108 2017-02-28 22:51:37Z sunpoet $
+# $FreeBSD: head/www/p5-Jifty/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Jifty
 PORTVERSION=	1.50430
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Jifty -- Just Do It -- Yet another web framework
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Any-Moose>=0:devel/p5-Any-Moose \

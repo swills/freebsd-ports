@@ -1,5 +1,5 @@
 # Created by: nork@cityfujisawa.ne.jp
-# $FreeBSD: head/security/p5-Crypt-OpenSSL-Random/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/security/p5-Crypt-OpenSSL-Random/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-OpenSSL-Random
 PORTVERSION=	0.11
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 interface to the OpenSSL pseudo-random number generator
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 MAKE_ARGS=	PASTHRU_INC=-I${OPENSSLINC}

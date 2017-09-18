@@ -1,5 +1,5 @@
 # Created by: Victor Popov <v.a.popov@gmail.com>
-# $FreeBSD: head/security/p5-Crypt-PBKDF2/Makefile 417257 2016-06-21 15:09:04Z mat $
+# $FreeBSD: head/security/p5-Crypt-PBKDF2/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Crypt-PBKDF2
 PORTVERSION=	0.161520
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	PBKDF2 password hashing algorithm
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Digest-HMAC>=1.01:security/p5-Digest-HMAC \

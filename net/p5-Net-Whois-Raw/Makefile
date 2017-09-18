@@ -1,5 +1,5 @@
 # Created by: Alex Kapranoff <kappa@FreeBSD.org.ua>
-# $FreeBSD: head/net/p5-Net-Whois-Raw/Makefile 447157 2017-08-02 18:36:04Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Whois-Raw/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Whois-Raw
 PORTVERSION=	2.99010
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Very simple Perl interface to query raw whois data
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

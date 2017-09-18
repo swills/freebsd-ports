@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Devel-PartialDump/Makefile 445180 2017-07-06 20:57:47Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-PartialDump/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Devel-PartialDump
 PORTVERSION=	0.20
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Partial dumping of data structures, optimized for argument printing
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENCE
 

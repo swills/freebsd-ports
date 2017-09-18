@@ -1,5 +1,5 @@
 # Created by: George Hartzell <hartzell@alerce.com>
-# $FreeBSD: head/devel/p5-App-Cmd/Makefile 431121 2017-01-10 18:36:46Z sunpoet $
+# $FreeBSD: head/devel/p5-App-Cmd/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	App-Cmd
 PORTVERSION=	0.331
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	App::Cmd - Write command line apps with less suffering
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Capture-Tiny>=0.13:devel/p5-Capture-Tiny \

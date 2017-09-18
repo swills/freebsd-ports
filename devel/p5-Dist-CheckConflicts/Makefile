@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Dist-CheckConflicts/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Dist-CheckConflicts/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Dist-CheckConflicts
 PORTVERSION=	0.11
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Declare version conflicts for your dist
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Module-Runtime>=0.009:devel/p5-Module-Runtime

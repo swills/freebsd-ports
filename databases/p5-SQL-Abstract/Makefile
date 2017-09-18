@@ -1,5 +1,5 @@
 # Created by: Dominic Mitchell
-# $FreeBSD: head/databases/p5-SQL-Abstract/Makefile 437692 2017-04-04 07:37:58Z sunpoet $
+# $FreeBSD: head/databases/p5-SQL-Abstract/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	SQL-Abstract
 PORTVERSION=	1.84
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension to generate SQL from Perl data structures
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Hash-Merge>=0.12:textproc/p5-Hash-Merge \

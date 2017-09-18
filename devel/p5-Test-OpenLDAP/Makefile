@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Test-OpenLDAP/Makefile 444790 2017-06-30 22:13:40Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-OpenLDAP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-OpenLDAP
 PORTVERSION=	0.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to creates temp instance of slapd to run tests against
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

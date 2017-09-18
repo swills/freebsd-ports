@@ -1,5 +1,5 @@
 # Created by: Bill Brinzer <bill.brinzer@gmail.com>
-# $FreeBSD: head/devel/p5-Log-Any-Adapter-Syslog/Makefile 446989 2017-07-31 17:58:06Z eugen $
+# $FreeBSD: head/devel/p5-Log-Any-Adapter-Syslog/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Log-Any-Adapter-Syslog
 PORTVERSION=	1.5
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bill.brinzer@gmail.com
 COMMENT=	Send Log::Any logs to syslog
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 DEPRECATED=	Merged with devel/p5-Log-Any

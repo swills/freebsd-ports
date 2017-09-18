@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-Blog-Spam/Makefile 414306 2016-04-29 22:42:21Z sunpoet $
+# $FreeBSD: head/www/p5-Blog-Spam/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Blog-Spam
 PORTVERSION=	1.0.2
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Blog & Forum SPAM Detection
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

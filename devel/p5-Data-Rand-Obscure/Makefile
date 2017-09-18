@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Data-Rand-Obscure/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Data-Rand-Obscure/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Rand-Obscure
 PORTVERSION=	0.021
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tj@FreeBSD.org
 COMMENT=	Perl module for generating (fairly) random strings easily
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Carp-Clan>=6.04:devel/p5-Carp-Clan \

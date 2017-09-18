@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/textproc/p5-PPIx-EditorTools/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-PPIx-EditorTools/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	PPIx-EditorTools
 PORTVERSION=	0.19
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Utility methods and base class for manipulating Perl via PPI
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-XSAccessor>=1.02:devel/p5-Class-XSAccessor \

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Git-Repository-Plugin-Log/Makefile 413047 2016-04-11 17:26:15Z sunpoet $
+# $FreeBSD: head/devel/p5-Git-Repository-Plugin-Log/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Git-Repository-Plugin-Log
 PORTVERSION=	1.314
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Add a log() method to Git::Repository
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

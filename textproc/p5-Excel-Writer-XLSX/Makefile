@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Excel-Writer-XLSX/Makefile 417563 2016-06-26 17:15:50Z sunpoet $
+# $FreeBSD: head/textproc/p5-Excel-Writer-XLSX/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Excel-Writer-XLSX
 PORTVERSION=	0.95
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Create a new file in the Excel 2007+ XLSX format
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Archive-Zip>=1.30:archivers/p5-Archive-Zip

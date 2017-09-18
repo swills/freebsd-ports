@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/finance/p5-Business-OnlinePayment-AuthorizeNet/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/p5-Business-OnlinePayment-AuthorizeNet/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Business-OnlinePayment-AuthorizeNet
 PORTVERSION=	3.23
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Business::OnlinePayment backend module for Authorize.Net
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Business-OnlinePayment>=3:finance/p5-Business-OnlinePayment \

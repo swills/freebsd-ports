@@ -1,5 +1,5 @@
 # Created by: Jan-Peter Koopmann <j.koopmann@seceidos.de>
-# $FreeBSD: head/converters/p5-Convert-BinHex/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/converters/p5-Convert-BinHex/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Convert-BinHex
 PORTVERSION=	1.125
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module to extract data from Macintosh BinHex files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-File-Slurp>=0:devel/p5-File-Slurp \

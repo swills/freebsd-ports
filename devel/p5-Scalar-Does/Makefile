@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Scalar-Does/Makefile 441997 2017-05-29 15:26:42Z sunpoet $
+# $FreeBSD: head/devel/p5-Scalar-Does/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Scalar-Does
 PORTVERSION=	0.203
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Like ref() but useful
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

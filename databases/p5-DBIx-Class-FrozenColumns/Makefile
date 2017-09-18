@@ -1,5 +1,5 @@
 # Created by: Vladimir Timofeev <vovkasm@gmail.com>
-# $FreeBSD: head/databases/p5-DBIx-Class-FrozenColumns/Makefile 444691 2017-06-30 01:48:47Z sunpoet $
+# $FreeBSD: head/databases/p5-DBIx-Class-FrozenColumns/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBIx-Class-FrozenColumns
 PORTVERSION=	0.09
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	vovkasm@gmail.com
 COMMENT=	Store virtual columns inside another column
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-DBIx-Class>=0.07003:databases/p5-DBIx-Class \

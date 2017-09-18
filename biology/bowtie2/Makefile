@@ -1,9 +1,9 @@
 # Created by: Jason Bacon
-# $FreeBSD: head/biology/bowtie2/Makefile 435599 2017-03-07 12:44:41Z martymac $
+# $FreeBSD: head/biology/bowtie2/Makefile 449986 2017-09-17 07:03:14Z martymac $
 
 PORTNAME=	bowtie2
 PORTVERSION=	2.3.0
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	biology
 

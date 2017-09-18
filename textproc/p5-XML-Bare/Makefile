@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/textproc/p5-XML-Bare/Makefile 390918 2015-06-29 15:47:44Z adamw $
+# $FreeBSD: head/textproc/p5-XML-Bare/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-Bare
 PORTVERSION=	0.53
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Minimal XML Parser
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

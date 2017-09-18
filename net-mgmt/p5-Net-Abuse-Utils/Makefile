@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net-mgmt/p5-Net-Abuse-Utils/Makefile 417256 2016-06-21 15:09:00Z mat $
+# $FreeBSD: head/net-mgmt/p5-Net-Abuse-Utils/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Abuse-Utils
 PORTVERSION=	0.25
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Routines useful for processing network abuse
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Email-Address>=0:mail/p5-Email-Address \

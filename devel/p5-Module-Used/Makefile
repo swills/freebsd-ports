@@ -1,5 +1,5 @@
 # Created by: Takuya Tsuchida <tsucchi@cpan.org>
-# $FreeBSD: head/devel/p5-Module-Used/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/devel/p5-Module-Used/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Module-Used
 PORTVERSION=	v1.2.0
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tsucchi@cpan.org
 COMMENT=	Find modules loaded by Perl code without running it
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-File-Next>=1.02:sysutils/p5-File-Next \

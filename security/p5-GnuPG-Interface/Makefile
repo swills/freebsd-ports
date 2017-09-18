@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/security/p5-GnuPG-Interface/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-GnuPG-Interface/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	GnuPG-Interface
 PORTVERSION=	0.52
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for interfacing with GnuPG
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	gpg2:security/gnupg \

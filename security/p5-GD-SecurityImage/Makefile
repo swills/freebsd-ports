@@ -1,5 +1,5 @@
 # Created by: ports@rbt.ca
-# $FreeBSD: head/security/p5-GD-SecurityImage/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-GD-SecurityImage/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	GD-SecurityImage
 PORTVERSION=	1.73
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 module for creating CAPTCHA security images
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-GD>=0:graphics/p5-GD

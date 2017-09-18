@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/archivers/p5-IO-Compress/Makefile 434450 2017-02-20 15:09:16Z sunpoet $
+# $FreeBSD: head/archivers/p5-IO-Compress/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IO-Compress
 PORTVERSION=	2.074
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Perl5 compression modules (bzip2, deflate, gzip, zlib, zip)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Compress-Raw-Bzip2>=${PORTVERSION}:archivers/p5-Compress-Raw-Bzip2 \

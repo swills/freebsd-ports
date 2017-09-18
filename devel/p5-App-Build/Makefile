@@ -1,5 +1,5 @@
 # Created by: Alex Bakhtin <Alex.Bakhtin@gmail.com>
-# $FreeBSD: head/devel/p5-App-Build/Makefile 431118 2017-01-10 18:36:33Z sunpoet $
+# $FreeBSD: head/devel/p5-App-Build/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	App-Build
 PORTVERSION=	0.74
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	Alex.Bakhtin@gmail.com
 COMMENT=	Build and install Perl applications
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-App-Options>=0:devel/p5-App-Options \

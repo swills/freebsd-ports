@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-HTTP-Cookies-iCab/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTTP-Cookies-iCab/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTTP-Cookies-iCab
 PORTVERSION=	1.131
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Cookie storage and management for iCab
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTTP-Cookies>=0:www/p5-HTTP-Cookies

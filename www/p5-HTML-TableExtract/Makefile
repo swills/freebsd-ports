@@ -1,5 +1,5 @@
 # Created by: Sergey Osokin aka oZZ <ports@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTML-TableExtract/Makefile 441721 2017-05-25 21:01:49Z sunpoet $
+# $FreeBSD: head/www/p5-HTML-TableExtract/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-TableExtract
 PORTVERSION=	2.15
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Extract text contained in tables within an HTML document
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

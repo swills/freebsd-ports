@@ -1,5 +1,5 @@
 # Created by: George Hartzell <hartzell@alerce.com>
-# $FreeBSD: head/www/p5-CGI-Application-Plugin-Authentication/Makefile 438041 2017-04-08 12:40:51Z bofh $
+# $FreeBSD: head/www/p5-CGI-Application-Plugin-Authentication/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CGI-Application-Plugin-Authentication
 PORTVERSION=	0.21
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Support for authenticating requests in CGI::Application
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Apache-Htpasswd>=0:security/p5-Apache-Htpasswd \

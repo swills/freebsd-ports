@@ -1,5 +1,5 @@
 # Created by: clsung
-# $FreeBSD: head/textproc/p5-Text-Affixes/Makefile 400290 2015-10-27 15:52:38Z sunpoet $
+# $FreeBSD: head/textproc/p5-Text-Affixes/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-Affixes
 PORTVERSION=	0.09
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for prefixes and suffixes analisys of text
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

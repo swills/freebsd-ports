@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/p5-Bytes-Random-Secure/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-Bytes-Random-Secure/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Bytes-Random-Secure
 PORTVERSION=	0.29
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Generate cryptographically-secure random bytes
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Crypt-Random-Seed>=0:security/p5-Crypt-Random-Seed \

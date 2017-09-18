@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Config-Any/Makefile 439313 2017-04-24 15:17:50Z sunpoet $
+# $FreeBSD: head/devel/p5-Config-Any/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Config-Any
 PORTVERSION=	0.32
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Load class configuration data from a number of file formats
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Module-Pluggable>=3.6:devel/p5-Module-Pluggable

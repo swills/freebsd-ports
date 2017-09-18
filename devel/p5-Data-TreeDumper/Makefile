@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@daltons.ca>
-# $FreeBSD: head/devel/p5-Data-TreeDumper/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Data-TreeDumper/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-TreeDumper
 PORTVERSION=	0.40
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Dumps a data structure in a tree fashion
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Check-ISA>=0:devel/p5-Check-ISA \

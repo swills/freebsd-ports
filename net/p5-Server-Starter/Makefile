@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-Server-Starter/Makefile 444799 2017-06-30 22:14:24Z sunpoet $
+# $FreeBSD: head/net/p5-Server-Starter/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Server-Starter
 PORTVERSION=	0.30
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension of superdaemon for hot-deploying server programs
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Requires>=0:devel/p5-Test-Requires \

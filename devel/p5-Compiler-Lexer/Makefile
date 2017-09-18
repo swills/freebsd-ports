@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Compiler-Lexer/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Compiler-Lexer/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Compiler-Lexer
 PORTVERSION=	0.22
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for lexical analyzer
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Module-Build-XSUtil>0:devel/p5-Module-Build-XSUtil

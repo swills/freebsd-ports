@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Term-Sk/Makefile 406833 2016-01-21 09:13:04Z culot $
+# $FreeBSD: head/devel/p5-Term-Sk/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Term-Sk
 PORTVERSION=	0.18
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Display a progress indicator on a terminal
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

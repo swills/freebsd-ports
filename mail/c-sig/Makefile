@@ -1,5 +1,5 @@
 # Created by: KIMURA Yasuhiro <yasu@utahime.org>
-# $FreeBSD: head/mail/c-sig/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/mail/c-sig/Makefile 449885 2017-09-15 05:52:14Z sunpoet $
 
 PORTNAME=	c-sig
 PORTVERSION=	3.8
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}.${PORTVERSION}
 MAINTAINER=	yasu@utahime.org
 COMMENT=	Signature insertion tool for Emacs
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 
 USE_EMACS=	yes
 

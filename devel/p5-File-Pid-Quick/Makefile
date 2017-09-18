@@ -1,5 +1,5 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/devel/p5-File-Pid-Quick/Makefile 386075 2015-05-11 12:04:18Z mat $
+# $FreeBSD: head/devel/p5-File-Pid-Quick/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Pid-Quick
 PORTVERSION=	1.02
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Associates a PID file with your script
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

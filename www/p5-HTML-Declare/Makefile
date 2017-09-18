@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTML-Declare/Makefile 437247 2017-03-29 23:36:22Z sunpoet $
+# $FreeBSD: head/www/p5-HTML-Declare/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-Declare
 PORTVERSION=	2.6
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Very simple micro language to generate HTML
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

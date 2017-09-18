@@ -1,5 +1,5 @@
 # Created by: David O'Brien <obrien@FreeBSD.org>
-# $FreeBSD: head/security/bro/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/security/bro/Makefile 449916 2017-09-15 18:18:26Z leres $
 
 PORTNAME=	bro
 PORTVERSION=	2.5.1
@@ -10,7 +10,7 @@ MASTER_SITES=	https://www.bro.org/downloads/:source1 \
 DISTFILES=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX}:source1 \
 		${GH_ACCOUNT}-${GH_PROJECT}-${PORTVERSION2}_GH0${EXTRACT_SUFX}:source2
 
-MAINTAINER=	leres@ee.lbl.gov
+MAINTAINER=	leres@FreeBSD.org
 COMMENT=	System for detecting network intruders in real-time
 
 LICENSE=	BSD3CLAUSE

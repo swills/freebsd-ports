@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/sysutils/p5-BSD-Sysctl/Makefile 445326 2017-07-08 13:45:34Z swills $
+# $FreeBSD: head/sysutils/p5-BSD-Sysctl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	BSD-Sysctl
 PORTVERSION=	0.11
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	david@landgren.net
 COMMENT=	Fetch sysctl values from BSD-like systems
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

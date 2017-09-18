@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Calendar-Julian/Makefile 426473 2016-11-19 17:09:06Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime-Calendar-Julian/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DateTime-Calendar-Julian
 PORTVERSION=	0.04
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Dates in the Julian calendar
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

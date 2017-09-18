@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Email-Delete/Makefile 439319 2017-04-24 15:18:46Z sunpoet $
+# $FreeBSD: head/mail/p5-Email-Delete/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Email-Delete
 PORTVERSION=	2.002
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Delete Messages from Folders
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

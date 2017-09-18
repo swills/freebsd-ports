@@ -1,5 +1,5 @@
 # Created by: Oleg Mamontov <oleg@mamontov.net>
-# $FreeBSD: head/www/p5-HTML-FormFu-Model-DBIC/Makefile 446336 2017-07-21 17:30:10Z sunpoet $
+# $FreeBSD: head/www/p5-HTML-FormFu-Model-DBIC/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-FormFu-Model-DBIC
 PORTVERSION=	2.02
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	oleg@mamontov.net
 COMMENT=	Integrate HTML::FormFu with DBIx::Class
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite \

@@ -1,5 +1,5 @@
 # Created by: Peter Pentchev <roam@FreeBSD.org>
-# $FreeBSD: head/audio/p5-Audio-Scrobbler/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/p5-Audio-Scrobbler/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Audio-Scrobbler
 PORTVERSION=	0.01
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interface to Last.fm and AudioScrobbler
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Config-IniFiles>=0:devel/p5-Config-IniFiles \

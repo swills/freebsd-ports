@@ -1,5 +1,5 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Net-DBus/Makefile 443756 2017-06-17 10:02:13Z sunpoet $
+# $FreeBSD: head/devel/p5-Net-DBus/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-DBus
 PORTVERSION=	1.1.0
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	novel@FreeBSD.org
 COMMENT=	Perl extension for the DBus message system
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-XML-Grove>=0:textproc/p5-XML-Grove \

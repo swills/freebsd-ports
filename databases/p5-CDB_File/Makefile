@@ -1,5 +1,5 @@
 # Created by: Jon Nistor <nistor@snickers.org>
-# $FreeBSD: head/databases/p5-CDB_File/Makefile 444512 2017-06-27 17:06:04Z ultima $
+# $FreeBSD: head/databases/p5-CDB_File/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CDB_File
 PORTVERSION=	0.99
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	nistor@snickers.org
 COMMENT=	Perl5 interface to the CDB package
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5 shebangfix

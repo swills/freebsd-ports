@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Amon2/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/www/p5-Amon2/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Amon2
 PORTVERSION=	6.10
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for lightweight web application framework
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

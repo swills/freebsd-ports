@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-WordPress-XMLRPC/Makefile 435932 2017-03-11 15:59:45Z sunpoet $
+# $FreeBSD: head/www/p5-WordPress-XMLRPC/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WordPress-XMLRPC
 PORTVERSION=	2.12
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl 5 API to WordPress XML-RPC services
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-SOAP-Lite>=0:net/p5-SOAP-Lite \

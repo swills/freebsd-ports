@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/www/p5-Dancer2/Makefile 445622 2017-07-13 00:00:25Z sunpoet $
+# $FreeBSD: head/www/p5-Dancer2/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Dancer2
 PORTVERSION=	0.205001
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Lightweight yet powerful web application framework
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

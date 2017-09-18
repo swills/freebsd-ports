@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/p5-Any-URI-Escape/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Any-URI-Escape/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Any-URI-Escape
 PORTVERSION=	0.01
@@ -13,7 +13,7 @@ COMMENT=	Load URI::Escape::XS preferentially over URI::Escape
 
 RUN_DEPENDS:=	p5-URI-Escape-XS>=0:www/p5-URI-Escape-XS
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

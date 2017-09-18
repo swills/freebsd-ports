@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Log-Any-IfLOG/Makefile 417553 2016-06-26 17:15:03Z sunpoet $
+# $FreeBSD: head/devel/p5-Log-Any-IfLOG/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Log-Any-IfLOG
 PORTVERSION=	0.08
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Load Log::Any only if LOG environment variable is true
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Log-Any>=0:devel/p5-Log-Any

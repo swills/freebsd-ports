@@ -1,5 +1,5 @@
 # Created by: Masahiro Teramoto <markun@onohara.to>
-# $FreeBSD: head/japanese/p5-WWW-MobileCarrierJP/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/p5-WWW-MobileCarrierJP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WWW-MobileCarrierJP
 PORTVERSION=	0.63
@@ -10,7 +10,7 @@ MASTER_SITES=	CPAN
 MAINTAINER=	markun@onohara.to
 COMMENT=	Scrape Japanese mobile carrier information
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Moose>=0.60:devel/p5-Moose \

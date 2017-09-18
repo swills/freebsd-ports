@@ -1,5 +1,5 @@
 # Created by: Philippe Audeoud <jadawin@tuxaco.net>
-# $FreeBSD: head/net/p5-Net-Proxy/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/net/p5-Net-Proxy/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Proxy
 PORTVERSION=	0.13
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	jadawin@FreeBSD.org
 COMMENT=	Framework for proxying network connections in many ways
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

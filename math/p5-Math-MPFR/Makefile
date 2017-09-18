@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/p5-Math-MPFR/Makefile 448395 2017-08-20 12:27:26Z sunpoet $
+# $FreeBSD: head/math/p5-Math-MPFR/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-MPFR
 PORTVERSION=	3.36
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interface to MPFR Library
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libgmp.so:math/gmp \

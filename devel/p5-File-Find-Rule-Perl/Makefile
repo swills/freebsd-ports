@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-File-Find-Rule-Perl/Makefile 444739 2017-06-30 13:44:07Z sunpoet $
+# $FreeBSD: head/devel/p5-File-Find-Rule-Perl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Find-Rule-Perl
 PORTVERSION=	1.15
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Common rules for searching for Perl things
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-Find-Rule>=0.20:devel/p5-File-Find-Rule \

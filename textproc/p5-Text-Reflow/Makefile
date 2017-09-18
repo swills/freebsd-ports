@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/textproc/p5-Text-Reflow/Makefile 428191 2016-12-09 12:56:55Z sunpoet $
+# $FreeBSD: head/textproc/p5-Text-Reflow/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-Reflow
 PORTVERSION=	1.17
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for reflowing text files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

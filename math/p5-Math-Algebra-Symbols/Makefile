@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Algebra-Symbols/Makefile 413564 2016-04-18 08:59:00Z bofh $
+# $FreeBSD: head/math/p5-Math-Algebra-Symbols/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-Algebra-Symbols
 PORTVERSION=	1.27
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Symbolic Algebra in Pure Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

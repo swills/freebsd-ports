@@ -1,5 +1,5 @@
 # Created by: Masahiro Teramoto <markun@onohara.to>
-# $FreeBSD: head/www/p5-WWW-Mixi-Scraper/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-Mixi-Scraper/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WWW-Mixi-Scraper
 PORTVERSION=	0.34
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	markun@onohara.to
 COMMENT=	Yet another mixi scraper
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Module-Find>=0:devel/p5-Module-Find \

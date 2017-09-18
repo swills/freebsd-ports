@@ -1,5 +1,5 @@
 # Created by: TERAMOTO Masahiro <markun@onohara.to>
-# $FreeBSD: head/textproc/p5-YAML-LibYAML/Makefile 445616 2017-07-12 23:52:18Z sunpoet $
+# $FreeBSD: head/textproc/p5-YAML-LibYAML/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	YAML-LibYAML
 PORTVERSION=	0.65
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	markun@onohara.to
 COMMENT=	Perl YAML Serialization using XS and libyaml
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Martin Neubauer <m.ne@gmx.net>
-# $FreeBSD: head/misc/p5-Business-EDI/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/misc/p5-Business-EDI/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Business-EDI
 PORTVERSION=	0.05
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	m.ne@gmx.net
 COMMENT=	Class for generating EDI objects and subobjects
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Exporter-Easy>=0.14:devel/p5-Exporter-Easy \

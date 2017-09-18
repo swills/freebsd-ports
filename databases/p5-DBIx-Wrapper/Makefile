@@ -1,5 +1,5 @@
 # Created by: Don Owens <don@regexguy.com>
-# $FreeBSD: head/databases/p5-DBIx-Wrapper/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Wrapper/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	DBIx-Wrapper
 PORTVERSION=	0.29
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	don@regexguy.com
 COMMENT=	Wrapper around Perl's DBI module
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DBI>=0:databases/p5-DBI

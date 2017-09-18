@@ -1,5 +1,5 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/devel/p5-B-C/Makefile 433797 2017-02-10 15:17:46Z sunpoet $
+# $FreeBSD: head/devel/p5-B-C/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	B-C
 PORTVERSION=	1.55
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl compiler's C backend #'
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-B-Flags>=0.15:devel/p5-B-Flags \

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-match-simple/Makefile 433074 2017-02-01 19:44:14Z sunpoet $
+# $FreeBSD: head/devel/p5-match-simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	match-simple
 PORTVERSION=	0.010
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Simplified clone of smartmatch operator
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

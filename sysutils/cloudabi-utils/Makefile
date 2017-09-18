@@ -1,9 +1,10 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/sysutils/cloudabi-utils/Makefile 449457 2017-09-08 14:35:32Z ed $
+# $FreeBSD: head/sysutils/cloudabi-utils/Makefile 450032 2017-09-18 07:00:55Z ed $
 
 PORTNAME=	cloudabi-utils
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.30
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	ed@FreeBSD.org

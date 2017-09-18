@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/p5-JSON-Path/Makefile 446823 2017-07-28 13:07:20Z sunpoet $
+# $FreeBSD: head/devel/p5-JSON-Path/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	JSON-Path
 PORTVERSION=	0.411
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Search nested hashref/arrayref structures using JSONPath
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Email-FolderType-Net/Makefile 439323 2017-04-24 15:20:11Z sunpoet $
+# $FreeBSD: head/mail/p5-Email-FolderType-Net/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Email-FolderType-Net
 PORTVERSION=	1.043
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Recognize folder types for network based message protocols
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

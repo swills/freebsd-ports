@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Config-INI-Simple/Makefile 397739 2015-09-24 19:05:12Z sunpoet $
+# $FreeBSD: head/devel/p5-Config-INI-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Config-INI-Simple
 PORTVERSION=	0.02
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Simple reading and writing from an INI file
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

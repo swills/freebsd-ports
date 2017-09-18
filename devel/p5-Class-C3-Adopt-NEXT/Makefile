@@ -1,5 +1,5 @@
 # Created by: Denis Pokataev <catone@cpan.org>
-# $FreeBSD: head/devel/p5-Class-C3-Adopt-NEXT/Makefile 430155 2016-12-31 19:51:34Z adamw $
+# $FreeBSD: head/devel/p5-Class-C3-Adopt-NEXT/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Class-C3-Adopt-NEXT
 PORTVERSION=	0.14
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Make NEXT suck less
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-MRO-Compat>=0:devel/p5-MRO-Compat

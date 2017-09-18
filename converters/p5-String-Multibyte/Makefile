@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/converters/p5-String-Multibyte/Makefile 405930 2016-01-12 21:37:55Z sunpoet $
+# $FreeBSD: head/converters/p5-String-Multibyte/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	String-Multibyte
 PORTVERSION=	1.12
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module to manipulate multibyte character strings
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

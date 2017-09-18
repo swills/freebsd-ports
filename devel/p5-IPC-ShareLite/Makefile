@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/devel/p5-IPC-ShareLite/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-IPC-ShareLite/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IPC-ShareLite
 PORTVERSION=	0.17
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple interface to access shared memory
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

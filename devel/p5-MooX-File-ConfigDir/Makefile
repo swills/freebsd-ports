@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooX-File-ConfigDir/Makefile 441524 2017-05-23 14:51:42Z sunpoet $
+# $FreeBSD: head/devel/p5-MooX-File-ConfigDir/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooX-File-ConfigDir
 PORTVERSION=	0.006
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Moo eXtension for File::ConfigDir
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-ConfigDir>=0.018:devel/p5-File-ConfigDir \

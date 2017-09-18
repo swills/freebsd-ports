@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
-# $FreeBSD: head/security/p5-Digest-SHA1/Makefile 376708 2015-01-10 14:19:12Z wen $
+# $FreeBSD: head/security/p5-Digest-SHA1/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Digest-SHA1
 PORTVERSION=	2.13
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl interface to the SHA-1 Algorithm
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

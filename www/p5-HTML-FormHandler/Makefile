@@ -1,5 +1,5 @@
 # Created by: gugu
-# $FreeBSD: head/www/p5-HTML-FormHandler/Makefile 446335 2017-07-21 17:30:05Z sunpoet $
+# $FreeBSD: head/www/p5-HTML-FormHandler/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-FormHandler
 PORTVERSION=	0.40068
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Form handler written in Moose
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

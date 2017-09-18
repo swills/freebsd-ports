@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Test-MockObject/Makefile 416157 2016-05-30 15:33:44Z mat $
+# $FreeBSD: head/devel/p5-Test-MockObject/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-MockObject
 PORTVERSION=	1.20150527
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Tests remote URLs or local web files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-UNIVERSAL-can>=1.20110617:devel/p5-UNIVERSAL-can \

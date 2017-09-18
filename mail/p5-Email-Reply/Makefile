@@ -1,5 +1,5 @@
 # Created by: Kay Abendroth <kay.abendroth@raxion.net>
-# $FreeBSD: head/mail/p5-Email-Reply/Makefile 435027 2017-02-28 09:47:13Z sunpoet $
+# $FreeBSD: head/mail/p5-Email-Reply/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Email-Reply
 PORTVERSION=	1.204
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Email::Reply - Reply to a Message
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Email-Abstract>=2.01:mail/p5-Email-Abstract \

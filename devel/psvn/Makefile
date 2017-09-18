@@ -1,5 +1,5 @@
 # Created by: Kimura Fuyuki <fuyuki@hadaly.org>
-# $FreeBSD: head/devel/psvn/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/devel/psvn/Makefile 449879 2017-09-15 05:51:36Z sunpoet $
 
 PORTNAME=	psvn
 PORTVERSION=	20120326.212349
@@ -13,7 +13,7 @@ EXTRACT_SUFX=	# empty
 MAINTAINER=	yasu@utahime.org
 COMMENT=	Subversion interface for Emacs
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 
 RUN_DEPENDS=	svn:devel/subversion
 

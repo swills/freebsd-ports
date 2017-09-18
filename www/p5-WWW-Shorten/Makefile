@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-WWW-Shorten/Makefile 417726 2016-06-28 15:04:34Z mat $
+# $FreeBSD: head/www/p5-WWW-Shorten/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	WWW-Shorten
 PORTVERSION=	3.093
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Abstract interface to URL shortening sites
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

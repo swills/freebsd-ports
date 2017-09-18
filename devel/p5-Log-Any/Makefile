@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Log-Any/Makefile 446071 2017-07-17 13:19:55Z eugen $
+# $FreeBSD: head/devel/p5-Log-Any/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Log-Any
 PORTVERSION=	1.049
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to bring loggers and listeners together
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 CONFLICTS_INSTALL=	p5-Log-Any-Adapter-Syslog

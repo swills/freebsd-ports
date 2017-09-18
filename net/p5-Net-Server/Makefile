@@ -1,5 +1,5 @@
 # Created by: Jesse McConnell <jesse@gallup.com>
-# $FreeBSD: head/net/p5-Net-Server/Makefile 447800 2017-08-11 21:38:46Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Server/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Server
 PORTVERSION=	2.009
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Configurable base class for writing internet servers in Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

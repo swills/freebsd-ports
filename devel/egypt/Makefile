@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/devel/egypt/Makefile 396892 2015-09-14 12:19:48Z mat $
+# $FreeBSD: head/devel/egypt/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	egypt
 PORTVERSION=	1.10
@@ -10,7 +10,7 @@ MASTER_SITES=	http://www.gson.org/egypt/download/
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Create call graphs of C programs
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5 shebangfix

@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/fabio/Makefile 443072 2017-06-10 07:24:23Z wen $
+# $FreeBSD: head/www/fabio/Makefile 449995 2017-09-17 11:55:34Z dbaio $
 
 PORTNAME=	fabio
-PORTVERSION=	1.5.0
+PORTVERSION=	1.5.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 
@@ -9,6 +9,7 @@ MAINTAINER=	stl@ossuary.net
 COMMENT=	Zero-conf load balancing HTTP(S) router managed by Consul
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		go
 USE_GITHUB=	yes

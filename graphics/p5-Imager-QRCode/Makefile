@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/graphics/p5-Imager-QRCode/Makefile 439318 2017-04-24 15:18:37Z sunpoet $
+# $FreeBSD: head/graphics/p5-Imager-QRCode/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Imager-QRCode
 PORTVERSION=	0.035
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Generate QR Code with Imager using libqrencode
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Imager>=0.55:graphics/p5-Imager

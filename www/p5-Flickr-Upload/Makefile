@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/www/p5-Flickr-Upload/Makefile 435106 2017-02-28 22:51:27Z sunpoet $
+# $FreeBSD: head/www/p5-Flickr-Upload/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Flickr-Upload
 PORTVERSION=	1.60
@@ -11,7 +11,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:S|0$||}
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Upload images to flickr.com
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Flickr-API>=0:www/p5-Flickr-API \

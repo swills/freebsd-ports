@@ -1,5 +1,5 @@
 # Created by: Don Croyle <croyle@gelemna.org>
-# $FreeBSD: head/security/p5-PGP-Sign/Makefile 442595 2017-06-04 22:21:46Z bofh $
+# $FreeBSD: head/security/p5-PGP-Sign/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	PGP-Sign
 PORTVERSION=	0.20
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Create detached PGP signatures for data
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	gpg:security/gnupg

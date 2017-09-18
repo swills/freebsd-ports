@@ -1,5 +1,5 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/devel/p5-MooseX-Types-DateTime-ButMaintained/Makefile 442700 2017-06-05 23:24:32Z sunpoet $
+# $FreeBSD: head/devel/p5-MooseX-Types-DateTime-ButMaintained/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MooseX-Types-DateTime-ButMaintained
 PORTVERSION=	0.16
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	DateTime related constraints and coercions for Moose
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DateTime>=0.43:devel/p5-DateTime \

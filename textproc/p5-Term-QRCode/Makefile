@@ -1,5 +1,5 @@
 # Created by: Stephon Chen <stephon@gmail.com>
-# $FreeBSD: head/textproc/p5-Term-QRCode/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Term-QRCode/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Term-QRCode
 PORTVERSION=	0.01
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	stephon@gmail.com
 COMMENT=	Generate QR Code on Terminal
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	libqrencode>=2.0.0:graphics/libqrencode \

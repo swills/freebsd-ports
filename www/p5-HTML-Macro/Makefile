@@ -1,5 +1,5 @@
 # Created by: Groovis <groovis@groovis.net>
-# $FreeBSD: head/www/p5-HTML-Macro/Makefile 395274 2015-08-25 14:52:20Z sunpoet $
+# $FreeBSD: head/www/p5-HTML-Macro/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-Macro
 PORTVERSION=	1.30
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Process HTML templates with loops, conditionals, macros and more
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

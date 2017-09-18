@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Return-Type/Makefile 442418 2017-06-02 18:12:48Z sunpoet $
+# $FreeBSD: head/devel/p5-Return-Type/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Return-Type
 PORTVERSION=	0.005
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Specify a return type for a function (optionally with coercion)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

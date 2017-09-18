@@ -1,5 +1,5 @@
 # Created by: Kimura Fuyuki <fuyuki@hadaly.org>
-# $FreeBSD: head/net-mgmt/p5-Net-IP/Makefile 375378 2014-12-24 00:14:11Z bofh $
+# $FreeBSD: head/net-mgmt/p5-Net-IP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-IP
 PORTVERSION=	1.26
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl extension for manipulating IPv4/IPv6 addresses
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

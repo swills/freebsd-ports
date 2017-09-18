@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/devel/p5-Test-Cmd/Makefile 400283 2015-10-27 15:51:30Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Cmd/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Cmd
 PORTVERSION=	1.09
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Portable testing of commands and scripts
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

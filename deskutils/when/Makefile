@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/deskutils/when/Makefile 433533 2017-02-07 07:18:46Z culot $
+# $FreeBSD: head/deskutils/when/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	when
 PORTVERSION=	1.1.36
@@ -8,7 +8,7 @@ CATEGORIES=	deskutils
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Simple personal calendar
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USE_GITHUB=	yes

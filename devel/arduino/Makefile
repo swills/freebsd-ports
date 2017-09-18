@@ -1,5 +1,5 @@
 # Created by: Warren Block <wblock@wonkity.com>
-# $FreeBSD: head/devel/arduino/Makefile 436366 2017-03-18 00:30:07Z cpm $
+# $FreeBSD: head/devel/arduino/Makefile 449916 2017-09-15 18:18:26Z leres $
 
 PORTNAME=	arduino
 PORTVERSION=	1.0.6
@@ -9,7 +9,7 @@ CATEGORIES=	devel java lang
 MASTER_SITES=	http://arduino.cc/download.php?f=/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-linux32
 
-MAINTAINER=	leres@ee.lbl.gov
+MAINTAINER=	leres@FreeBSD.org
 COMMENT=	Open-source electronics prototyping platform
 
 LICENSE=	GPLv2 LGPL21

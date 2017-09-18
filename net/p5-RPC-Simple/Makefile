@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/p5-RPC-Simple/Makefile 397451 2015-09-20 20:27:04Z sunpoet $
+# $FreeBSD: head/net/p5-RPC-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	RPC-Simple
 PORTVERSION=	1.002
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Perl classes to handle simple asynchronous RPC calls with call-back
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

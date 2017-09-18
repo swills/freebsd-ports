@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/misc/p5-Business-ISBN-Data/Makefile 430502 2017-01-03 18:36:35Z sunpoet $
+# $FreeBSD: head/misc/p5-Business-ISBN-Data/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Business-ISBN-Data
 PORTVERSION=	20140910.003
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Data pack for Business::ISBN
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: Gabor Kovesdan <gabor@FreeBSD.org>
-# $FreeBSD: head/security/p5-Digest-SHA-PurePerl/Makefile 433454 2017-02-05 21:12:54Z ashish $
+# $FreeBSD: head/security/p5-Digest-SHA-PurePerl/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Digest-SHA-PurePerl
 PORTVERSION=	5.96
@@ -11,7 +11,7 @@ MAINTAINER=	ashish@FreeBSD.org
 COMMENT=	Perl extension for SHA-1/224/256/384/512 in pure Perl
 
 # same license terms as Perl itself
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

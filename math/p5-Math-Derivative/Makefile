@@ -1,5 +1,5 @@
 # Created by: Fernan Aguero <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/math/p5-Math-Derivative/Makefile 405040 2016-01-02 00:16:40Z bofh $
+# $FreeBSD: head/math/p5-Math-Derivative/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-Derivative
 PORTVERSION=	0.04
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Numeric 1st and 2nd order differentiation
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <frederic@culot.org>
-# $FreeBSD: head/science/p5-Physics-Unit/Makefile 448540 2017-08-22 15:11:58Z culot $
+# $FreeBSD: head/science/p5-Physics-Unit/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Physics-Unit
 PORTVERSION=	0.54
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Manipulate Physics units and dimensions
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	YES

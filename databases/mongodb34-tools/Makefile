@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/mongodb34-tools/Makefile 448235 2017-08-18 14:41:13Z swills $
+# $FreeBSD: head/databases/mongodb34-tools/Makefile 449920 2017-09-15 18:38:03Z swills $
 
 PORTNAME=	mongodb34-tools
-PORTVERSION=	3.4.7
+PORTVERSION=	3.4.9
 DISTVERSIONPREFIX=	r
 CATEGORIES=	databases net
 

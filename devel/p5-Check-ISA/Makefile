@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/p5-Check-ISA/Makefile 442339 2017-06-01 23:50:52Z sunpoet $
+# $FreeBSD: head/devel/p5-Check-ISA/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Check-ISA
 PORTVERSION=	0.09
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	DWIM, correct checking of an object's class #'
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

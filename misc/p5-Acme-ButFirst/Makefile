@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/misc/p5-Acme-ButFirst/Makefile 375378 2014-12-24 00:14:11Z bofh $
+# $FreeBSD: head/misc/p5-Acme-ButFirst/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Acme-ButFirst
 PORTVERSION=	1.00
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Do something, but first do something else
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

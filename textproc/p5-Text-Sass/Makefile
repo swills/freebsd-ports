@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Text-Sass/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/textproc/p5-Text-Sass/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-Sass
 PORTVERSION=	0.97
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl implementation of http://sass-lang.com/
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	\

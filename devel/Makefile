@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 449635 2017-09-11 13:10:24Z mat $
+# $FreeBSD: head/devel/Makefile 450024 2017-09-17 20:59:37Z cs $
 #
 
     COMMENT = Development utilities
@@ -255,7 +255,6 @@
     SUBDIR += calibrator
     SUBDIR += capstone3
     SUBDIR += capstone4
-    SUBDIR += cargo
     SUBDIR += cask
     SUBDIR += catch
     SUBDIR += cbrowser
@@ -323,7 +322,6 @@
     SUBDIR += cmake-doc
     SUBDIR += cmake-fedora
     SUBDIR += cmake-gui
-    SUBDIR += cmake-modules
     SUBDIR += cmake-modules-webos
     SUBDIR += cmph
     SUBDIR += cmunge
@@ -1576,6 +1574,7 @@
     SUBDIR += libxalloc
     SUBDIR += libxo
     SUBDIR += libxs
+    SUBDIR += libzim
     SUBDIR += libzookeeper
     SUBDIR += libzrtpcpp
     SUBDIR += libzvbi
@@ -1625,6 +1624,7 @@
     SUBDIR += llvm38
     SUBDIR += llvm39
     SUBDIR += llvm40
+    SUBDIR += llvm50
     SUBDIR += lm4tools
     SUBDIR += lmdbg
     SUBDIR += lndir
@@ -4054,6 +4054,7 @@
     SUBDIR += picp
     SUBDIR += picprog
     SUBDIR += pig
+    SUBDIR += pijul
     SUBDIR += piklab
     SUBDIR += pinba_engine
     SUBDIR += pipestatus
@@ -4710,6 +4711,7 @@
     SUBDIR += py-pytest-asyncio
     SUBDIR += py-pytest-cache
     SUBDIR += py-pytest-capturelog
+    SUBDIR += py-pytest-cov
     SUBDIR += py-pytest-django
     SUBDIR += py-pytest-localserver
     SUBDIR += py-pytest-mock

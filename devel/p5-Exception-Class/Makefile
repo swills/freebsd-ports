@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Exception-Class/Makefile 445454 2017-07-10 18:25:31Z sunpoet $
+# $FreeBSD: head/devel/p5-Exception-Class/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Exception-Class
 PORTVERSION=	1.43
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Real exception classes in Perl
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

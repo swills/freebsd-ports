@@ -1,5 +1,5 @@
 # Created by: ports@c0decafe.net <ports@c0decafe.net>
-# $FreeBSD: head/devel/p5-File-Path-Tiny/Makefile 407817 2016-02-02 14:13:34Z culot $
+# $FreeBSD: head/devel/p5-File-Path-Tiny/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Path-Tiny
 PORTVERSION=	0.8
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Lightweight File::Path alternative
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: Tomoyuki Sakurai <cherry@trombik.org>
-# $FreeBSD: head/misc/p5-Locale-US/Makefile 435099 2017-02-28 22:50:54Z sunpoet $
+# $FreeBSD: head/misc/p5-Locale-US/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Locale-US
 PORTVERSION=	3.04
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Two letter codes for state identification in the United States
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

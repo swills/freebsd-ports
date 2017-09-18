@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Data-Clone/Makefile 413821 2016-04-23 06:47:35Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-Clone/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Clone
 PORTVERSION=	0.004
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Polymorphic data cloning
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-LeakTrace>=0:devel/p5-Test-LeakTrace \

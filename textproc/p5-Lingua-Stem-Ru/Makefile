@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/textproc/p5-Lingua-Stem-Ru/Makefile 410277 2016-03-06 06:21:06Z sunpoet $
+# $FreeBSD: head/textproc/p5-Lingua-Stem-Ru/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Lingua-Stem-Ru
 PORTVERSION=	0.04
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Porter stemming algorithm for Russian (KOI8-R only)
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

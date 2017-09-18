@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Class-Throwable/Makefile 378843 2015-02-11 15:09:58Z culot $
+# $FreeBSD: head/devel/p5-Class-Throwable/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Class-Throwable
 PORTVERSION=	0.13
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Minimal lightweight exception class
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

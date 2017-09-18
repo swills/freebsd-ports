@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/lang/perl5.24/Makefile 448910 2017-08-29 12:45:42Z mat $
+# $FreeBSD: head/lang/perl5.24/Makefile 449892 2017-09-15 08:32:44Z mat $
 
 PORTNAME=	perl
 DISTVERSION=	${PERL_VERSION}
@@ -10,10 +10,10 @@ DIST_SUBDIR=	perl
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Practical Extraction and Report Language
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/Artistic
-LICENSE_FILE_GPLv1=	${WRKSRC}/Copying
+LICENSE_FILE_GPLv1+ =	${WRKSRC}/Copying
 
 # Uncomment when the default Perl is switched to 5.26
 #DEPRECATED=	Support ends three years after .0 release, please upgrade to a more recent version of Perl

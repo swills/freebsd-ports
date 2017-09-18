@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-App-Rad/Makefile 397718 2015-09-24 19:03:22Z sunpoet $
+# $FreeBSD: head/devel/p5-App-Rad/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	App-Rad
 PORTVERSION=	1.05
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Rapid creation of command line applications
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

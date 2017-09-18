@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Sub-Installer/Makefile 441936 2017-05-28 23:15:39Z sunpoet $
+# $FreeBSD: head/devel/p5-Sub-Installer/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Sub-Installer
 PORTVERSION=	0.0.3
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Clean way to (re)install package subroutines
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

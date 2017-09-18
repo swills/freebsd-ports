@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-Fake-HTTPD/Makefile 435256 2017-03-02 17:59:13Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Fake-HTTPD/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Test-Fake-HTTPD
 PORTVERSION=	0.08
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Fake HTTP server
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

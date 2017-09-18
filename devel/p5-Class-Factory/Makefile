@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Class-Factory/Makefile 375378 2014-12-24 00:14:11Z bofh $
+# $FreeBSD: head/devel/p5-Class-Factory/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Class-Factory
 PORTVERSION=	1.06
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Base class for dynamic factory classes
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

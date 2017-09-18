@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-String/Makefile 443759 2017-06-17 10:02:27Z sunpoet $
+# $FreeBSD: head/math/p5-Math-String/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Math-String
 PORTVERSION=	1.29
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module to calculate with strings as if they were big integers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

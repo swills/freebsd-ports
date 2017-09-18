@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-List-UtilsBy/Makefile 394930 2015-08-21 08:05:45Z kuriyama $
+# $FreeBSD: head/devel/p5-List-UtilsBy/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	List-UtilsBy
 PORTVERSION=	0.10
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for higher-order list utility functions
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

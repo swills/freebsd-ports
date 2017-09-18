@@ -1,5 +1,5 @@
 # Created by: Alex Kapranoff <kapr@crosswinds.net>
-# $FreeBSD: head/www/p5-HTML-FillInForm/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-HTML-FillInForm/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-FillInForm
 PORTVERSION=	2.21
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 module for auto-filling HTML form fields from previous values
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-HTML-Parser>=3.26:www/p5-HTML-Parser

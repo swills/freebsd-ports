@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/irc/p5-Bot-BasicBot/Makefile 437968 2017-04-07 23:16:40Z sunpoet $
+# $FreeBSD: head/irc/p5-Bot-BasicBot/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Bot-BasicBot
 PORTVERSION=	0.91
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple irc bot baseclass
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

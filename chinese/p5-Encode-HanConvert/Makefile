@@ -1,5 +1,5 @@
 # Created by: Shen Chuan-Hsing <statue@freebsd.sinica.edu.tw>
-# $FreeBSD: head/chinese/p5-Encode-HanConvert/Makefile 390918 2015-06-29 15:47:44Z adamw $
+# $FreeBSD: head/chinese/p5-Encode-HanConvert/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Encode-HanConvert
 PORTVERSION=	0.35
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Traditional and Simplified Chinese mappings
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

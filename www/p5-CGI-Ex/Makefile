@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-CGI-Ex/Makefile 446682 2017-07-26 18:20:46Z sunpoet $
+# $FreeBSD: head/www/p5-CGI-Ex/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CGI-Ex
 PORTVERSION=	2.45
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	CGI utility suite - makes powerful application writing fun and easy
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-CGI>=0:www/p5-CGI \

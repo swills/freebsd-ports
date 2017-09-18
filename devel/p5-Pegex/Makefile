@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Pegex/Makefile 431576 2017-01-15 15:21:38Z sunpoet $
+# $FreeBSD: head/devel/p5-Pegex/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Pegex
 PORTVERSION=	0.63
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Acmeist PEG Parser Framework
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

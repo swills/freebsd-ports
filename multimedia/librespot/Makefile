@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/librespot/Makefile 441261 2017-05-19 18:49:13Z antoine $
+# $FreeBSD: head/multimedia/librespot/Makefile 449914 2017-09-15 18:01:17Z dumbbell $
 
 PORTNAME=	librespot
 PORTVERSION=	0.1.0
@@ -12,7 +12,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN=		tries to clone git repository during build phase
 
-BUILD_DEPENDS=	cargo>0:devel/cargo \
+BUILD_DEPENDS=	rust>=1.19.0:lang/rust \
 		portaudio>0:audio/portaudio
 
 USES=		localbase pathfix pkgconfig shebangfix

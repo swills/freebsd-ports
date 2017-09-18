@@ -1,5 +1,5 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/net/p5-Net-Ping-External/Makefile 402369 2015-11-24 17:23:53Z amdmi3 $
+# $FreeBSD: head/net/p5-Net-Ping-External/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-Ping-External
 PORTVERSION=	0.15
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	douglas@douglasthrift.net
 COMMENT=	Perl cross-platform interface to ICMP "ping" utilities
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

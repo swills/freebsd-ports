@@ -1,5 +1,5 @@
 # Created by: Zane C, Bowers <vvelox@vvelox.net>
-# $FreeBSD: head/textproc/p5-Text-SpellChecker-GUI/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Text-SpellChecker-GUI/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-SpellChecker-GUI
 PORTVERSION=	0.0.2
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	vvelox@vvelox.net
 COMMENT=	Implements a user interface to Text::SpellChecker using ZConf::GUI
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Curses-UI>=0:devel/p5-Curses-UI \

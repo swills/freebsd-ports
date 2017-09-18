@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/devel/p5-Data-Dump-Streamer/Makefile 423093 2016-10-01 20:35:50Z adamw $
+# $FreeBSD: head/devel/p5-Data-Dump-Streamer/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Data-Dump-Streamer
 PORTVERSION=	2.40
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Stream a highly accurate breadth first data dump in Perl code
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Algorithm-Diff>=0:devel/p5-Algorithm-Diff \

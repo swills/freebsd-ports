@@ -1,5 +1,5 @@
 # Created by: Foxfair Hu <foxfair@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTML-Scrubber/Makefile 444590 2017-06-28 15:43:13Z sunpoet $
+# $FreeBSD: head/www/p5-HTML-Scrubber/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	HTML-Scrubber
 PORTVERSION=	0.17
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension for scrubbing/sanitizing html
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

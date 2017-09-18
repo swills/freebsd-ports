@@ -1,5 +1,5 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/www/p5-CGI_Lite/Makefile 403509 2015-12-11 10:02:14Z sunpoet $
+# $FreeBSD: head/www/p5-CGI_Lite/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	CGI-Lite
 PORTVERSION=	3.01
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Process and decode WWW forms and cookies
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5 shebangfix

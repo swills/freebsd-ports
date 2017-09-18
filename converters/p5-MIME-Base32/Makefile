@@ -1,5 +1,5 @@
 # Created by: nork@FreeBSD.org
-# $FreeBSD: head/converters/p5-MIME-Base32/Makefile 441288 2017-05-20 06:00:56Z bofh $
+# $FreeBSD: head/converters/p5-MIME-Base32/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	MIME-Base32
 PORTVERSION=	1.303
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl5 module for Base32 encodings
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

@@ -1,5 +1,5 @@
 # Created by: Paul Schmehl <pauls@utdallas.edu>
-# $FreeBSD: head/security/p5-Snort-Rule/Makefile 376739 2015-01-11 09:29:37Z bofh $
+# $FreeBSD: head/security/p5-Snort-Rule/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Snort-Rule
 PORTVERSION=	1.07
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Perl5 extension for dynamically building snort rules
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

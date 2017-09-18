@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/audio/p5-Audio-MPD/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/audio/p5-Audio-MPD/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Audio-MPD
 PORTVERSION=	2.004
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Class to talk to MPD (Music Player Daemon) servers
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

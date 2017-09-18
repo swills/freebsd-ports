@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/p5-XML-CanonicalizeXML/Makefile 445928 2017-07-15 19:09:04Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-CanonicalizeXML/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-CanonicalizeXML
 PORTVERSION=	0.05
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Extension for inclusive/exclusive canonicalization of XML
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libxml2.so:textproc/libxml2

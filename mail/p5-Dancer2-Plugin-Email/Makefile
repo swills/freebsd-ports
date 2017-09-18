@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/p5-Dancer2-Plugin-Email/Makefile 436996 2017-03-26 21:24:24Z sunpoet $
+# $FreeBSD: head/mail/p5-Dancer2-Plugin-Email/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Dancer2-Plugin-Email
 PORTVERSION=	0.0202
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple email handling for Dancer2 applications
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

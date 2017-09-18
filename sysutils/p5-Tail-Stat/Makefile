@@ -1,5 +1,5 @@
 # Created by: Oleg A. Mamontov <oleg@mamontov.net>
-# $FreeBSD: head/sysutils/p5-Tail-Stat/Makefile 428515 2016-12-13 17:23:40Z sunpoet $
+# $FreeBSD: head/sysutils/p5-Tail-Stat/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Tail-Stat
 PORTVERSION=	0.26
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	oleg@mamontov.net
 COMMENT=	Real-time log statistics server
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \

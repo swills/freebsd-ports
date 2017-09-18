@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Log-Dispatch-Email-EmailSend/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Log-Dispatch-Email-EmailSend/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Log-Dispatch-Email-EmailSend
 DISTVERSION=	0.03
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Subclass of Log-Dispatch-Email that uses Email-Send
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Email-Send>=2.0:mail/p5-Email-Send \

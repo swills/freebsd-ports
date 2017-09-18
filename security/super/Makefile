@@ -1,5 +1,5 @@
 # Created by: David O'Brien (obrien@NUXI.com)
-# $FreeBSD: head/security/super/Makefile 419207 2016-07-28 09:00:54Z amdmi3 $
+# $FreeBSD: head/security/super/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	super
 PORTVERSION=	3.30.0
@@ -12,10 +12,10 @@ EXTRACT_SUFX=	-tar.gz
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Allow others to run commands as root
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/Artistic
-LICENSE_FILE_GPLv1=	${WRKSRC}/Copying
+LICENSE_FILE_GPLv1+ =	${WRKSRC}/Copying
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir="${PREFIX}/var"

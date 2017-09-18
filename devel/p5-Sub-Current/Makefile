@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/p5-Sub-Current/Makefile 432927 2017-01-31 15:33:40Z sunpoet $
+# $FreeBSD: head/devel/p5-Sub-Current/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Sub-Current
 PORTVERSION=	0.03
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Get the current subroutine
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

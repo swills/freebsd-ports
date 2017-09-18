@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/devel/p5-AutoLoader/Makefile 397722 2015-09-24 19:03:43Z sunpoet $
+# $FreeBSD: head/devel/p5-AutoLoader/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	AutoLoader
 PORTVERSION=	5.74
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Load subroutines only on demand
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 NO_ARCH=	yes

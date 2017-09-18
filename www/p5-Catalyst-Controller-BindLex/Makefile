@@ -1,5 +1,5 @@
 # Created by: Fernan Aguero  <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/www/p5-Catalyst-Controller-BindLex/Makefile 442720 2017-06-05 23:26:09Z sunpoet $
+# $FreeBSD: head/www/p5-Catalyst-Controller-BindLex/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Catalyst-Controller-BindLex
 PORTVERSION=	0.03
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Stash your lexical goodness
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime \

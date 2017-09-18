@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Devel-GlobalDestruction-XS/Makefile 446817 2017-07-28 11:03:12Z culot $
+# $FreeBSD: head/devel/p5-Devel-GlobalDestruction-XS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Devel-GlobalDestruction-XS
 PORTVERSION=	0.03
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Faster implementation of the Devel::GlobalDestruction API
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

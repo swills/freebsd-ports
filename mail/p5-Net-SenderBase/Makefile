@@ -1,5 +1,5 @@
 # Created by: J.R. Oldroyd <fbsd@opal.com>
-# $FreeBSD: head/mail/p5-Net-SenderBase/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Net-SenderBase/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Net-SenderBase
 PORTVERSION=	1.02
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Query the SenderBase service
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Net-DNS>=0:dns/p5-Net-DNS

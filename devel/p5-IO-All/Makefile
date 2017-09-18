@@ -1,5 +1,5 @@
 # Created by: Elvis Chiang <elvis@sslab.cs.ccu.edu.tw>
-# $FreeBSD: head/devel/p5-IO-All/Makefile 446213 2017-07-19 18:04:56Z sunpoet $
+# $FreeBSD: head/devel/p5-IO-All/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	IO-All
 PORTVERSION=	0.87
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	IO::All combines all of the best Perl IO modules
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

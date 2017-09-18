@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/converters/p5-Cpanel-JSON-XS/Makefile 448931 2017-08-29 17:25:51Z sunpoet $
+# $FreeBSD: head/converters/p5-Cpanel-JSON-XS/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Cpanel-JSON-XS
 PORTVERSION=	3.0239
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	JSON::XS for Cpanel, fast and correct serialising
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-JSON>=0:converters/p5-JSON \

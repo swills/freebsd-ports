@@ -1,5 +1,5 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Mail-IMAPTalk/Makefile 426494 2016-11-19 17:10:43Z sunpoet $
+# $FreeBSD: head/mail/p5-Mail-IMAPTalk/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Mail-IMAPTalk
 PORTVERSION=	4.04
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	IMAP client interface with lots of features
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

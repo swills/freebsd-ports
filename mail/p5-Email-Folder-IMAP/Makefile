@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Email-Folder-IMAP/Makefile 439321 2017-04-24 15:19:01Z sunpoet $
+# $FreeBSD: head/mail/p5-Email-Folder-IMAP/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Email-Folder-IMAP
 PORTVERSION=	1.105
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Email::Folder Access to IMAP Folders
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

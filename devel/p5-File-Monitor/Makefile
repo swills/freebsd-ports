@@ -1,5 +1,5 @@
 # Created by: Masahiro Teramoto <markun@onohara.to>
-# $FreeBSD: head/devel/p5-File-Monitor/Makefile 381803 2015-03-21 17:17:34Z sunpoet $
+# $FreeBSD: head/devel/p5-File-Monitor/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	File-Monitor
 PORTVERSION=	1.00
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	markun@onohara.to
 COMMENT=	Monitor files and directories for changes
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=		perl5

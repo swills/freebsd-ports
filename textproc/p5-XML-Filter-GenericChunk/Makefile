@@ -1,5 +1,5 @@
 # Created by: Hansjoerg Pehofer <hansjoerg.pehofer@uibk.ac.at>
-# $FreeBSD: head/textproc/p5-XML-Filter-GenericChunk/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-XML-Filter-GenericChunk/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	XML-Filter-GenericChunk
 PORTVERSION=	0.07
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Base Class for SAX Filters parsing WellBallanced Chunks
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-XML-LibXML>=1.4:textproc/p5-XML-LibXML \

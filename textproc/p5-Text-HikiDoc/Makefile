@@ -1,5 +1,5 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Text-HikiDoc/Makefile 428703 2016-12-17 06:05:11Z tota $
+# $FreeBSD: head/textproc/p5-Text-HikiDoc/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Text-HikiDoc
 PORTVERSION=	1.023
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tota@FreeBSD.org
 COMMENT=	Pure Perl implementation of 'HikiDoc'
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Hash-AutoHash-Args/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Hash-AutoHash-Args/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Hash-AutoHash-Args
 PORTVERSION=	1.18
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Object-oriented processing of keyword-based argument lists
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Hash-AutoHash>=1.17:devel/p5-Hash-AutoHash

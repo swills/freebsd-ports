@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/print/p5-PostScript-PPD/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/p5-PostScript-PPD/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	PostScript-PPD
 PORTVERSION=	0.0206
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Read PostScript Printer Definition files
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 TEST_DEPENDS=	p5-Test-Pod>=1:devel/p5-Test-Pod \

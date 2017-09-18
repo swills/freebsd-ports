@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-String-Compare-ConstantTime/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/textproc/p5-String-Compare-ConstantTime/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	String-Compare-ConstantTime
 PORTVERSION=	0.310
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for timing side-channel protected string compare
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 USES=	perl5

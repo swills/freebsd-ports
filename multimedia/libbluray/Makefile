@@ -1,5 +1,5 @@
 # Created by: kamikaze@bsdforen.de
-# $FreeBSD: head/multimedia/libbluray/Makefile 416253 2016-06-01 17:53:39Z kami $
+# $FreeBSD: head/multimedia/libbluray/Makefile 449918 2017-09-15 18:28:31Z adamw $
 
 PORTNAME=	libbluray
 PORTVERSION=	0.9.3
@@ -8,7 +8,7 @@ CATEGORIES=	multimedia
 MASTER_SITES=	ftp://ftp.videolan.org/pub/videolan/${PORTNAME}/${PORTVERSION}/ \
 		http://blu.opsec.eu/
 
-MAINTAINER=	kami@FreeBSD.org
+MAINTAINER=	kamikaze@bsdforen.de
 COMMENT=	Blu-Ray discs playback library for media players
 
 LICENSE=	LGPL21

@@ -1,5 +1,5 @@
 # Created by: Max Campos <mcampos@bpsw.biz>
-# $FreeBSD: head/devel/p5-User-Identity/Makefile 448091 2017-08-17 12:29:52Z culot $
+# $FreeBSD: head/devel/p5-User-Identity/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	User-Identity
 PORTVERSION=	0.97
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Manage informational objects related to a physical person
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Geography-Countries>0:misc/p5-Geography-Countries

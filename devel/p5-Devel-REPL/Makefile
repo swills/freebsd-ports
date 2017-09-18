@@ -1,5 +1,5 @@
 # Created by: Ashish SHUKLA <wahjava@gmail.com>
-# $FreeBSD: head/devel/p5-Devel-REPL/Makefile 412894 2016-04-10 06:46:42Z ashish $
+# $FreeBSD: head/devel/p5-Devel-REPL/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Devel-REPL
 PORTVERSION=	1.003028
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ashish@FreeBSD.org
 COMMENT=	Modern Perl interactive shell
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/sysutils/p5-Schedule-Load/Makefile 430157 2016-12-31 20:00:37Z adamw $
+# $FreeBSD: head/sysutils/p5-Schedule-Load/Makefile 449893 2017-09-15 08:58:46Z mat $
 
 PORTNAME=	Schedule-Load
 PORTVERSION=	3.064
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Load distribution and status across multiple host machines
 
-LICENSE=	ART10 GPLv1
+LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Proc-ProcessTable>=0.40:devel/p5-Proc-ProcessTable \
