@@ -1,9 +1,8 @@
 # Created by: tcberner
-# $FreeBSD: head/dns/kf5-kdnssd/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/dns/kf5-kdnssd/Makefile 450056 2017-09-18 17:42:44Z tcberner $
 
 PORTNAME=	kdnssd
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	dns kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

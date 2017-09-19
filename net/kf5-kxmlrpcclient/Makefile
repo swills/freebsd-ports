@@ -1,9 +1,8 @@
 # Created by: tcberner
-# $FreeBSD: head/net/kf5-kxmlrpcclient/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net/kf5-kxmlrpcclient/Makefile 450056 2017-09-18 17:42:44Z tcberner $
 
 PORTNAME=	kxmlrpcclient
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	net kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

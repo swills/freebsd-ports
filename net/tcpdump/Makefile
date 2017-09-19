@@ -1,8 +1,8 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/net/tcpdump/Makefile 446516 2017-07-24 10:30:37Z garga $
+# $FreeBSD: head/net/tcpdump/Makefile 450055 2017-09-18 16:53:29Z garga $
 
 PORTNAME=	tcpdump
-PORTVERSION=	4.9.1
+PORTVERSION=	4.9.2
 CATEGORIES=	net ipv6
 MASTER_SITES=	http://www.tcpdump.org/release/
 

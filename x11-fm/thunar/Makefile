@@ -1,8 +1,8 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/x11-fm/thunar/Makefile 434181 2017-02-15 15:56:06Z olivierd $
+# $FreeBSD: head/x11-fm/thunar/Makefile 450044 2017-09-18 15:11:43Z madpilot $
 
 PORTNAME=	Thunar
-PORTVERSION=	1.6.11
+PORTVERSION=	1.6.12
 CATEGORIES=	x11-fm xfce
 MASTER_SITES=	XFCE/src/xfce/${PORTNAME:tl}/${PORTVERSION:R}
 DIST_SUBDIR=	xfce4
@@ -15,20 +15,20 @@ LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/COPYING ${WRKSRC}/COPYING.LIB
 
 LIB_DEPENDS=	libtumbler-1.so:deskutils/xfce4-tumbler \
-	libdbus-1.so:devel/dbus \
-	libdbus-glib-1.so:devel/dbus-glib \
-	libfontconfig.so:x11-fonts/fontconfig \
-	libfreetype.so:print/freetype2
+		libdbus-1.so:devel/dbus \
+		libdbus-glib-1.so:devel/dbus-glib \
+		libfontconfig.so:x11-fonts/fontconfig \
+		libfreetype.so:print/freetype2
 RUN_DEPENDS=	pkexec:sysutils/polkit
 
+USES=		desktop-file-utils gmake pathfix perl5 libtool pkgconfig \
+		gettext-tools xfce tar:bzip2
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
 USE_GNOME=	glib20 gtk20 intltool cairo gdkpixbuf2
 USE_LDCONFIG=	yes
 USE_XFCE=	libexo
 USE_XORG=	ice sm x11
-USES=		desktop-file-utils gmake pathfix perl5 libtool pkgconfig \
-	gettext-tools xfce tar:bzip2
 INSTALL_TARGET=	install-strip
 
 OPTIONS_DEFINE=	NLS NOTIFY
@@ -63,7 +63,7 @@ CONFIGURE_ARGS+=--enable-gio-unix \
 		--enable-dbus
 
 post-patch:
-	${REINPLACE_CMD} -e 's|internet-mail|mail-send|' \
+	${REINPLACE_CMD} -e 's|internet-mail|emblem-mail|' \
 		${WRKSRC}/plugins/thunar-sendto-email/thunar-sendto-email.desktop.in.in
 
 .include <bsd.port.mk>

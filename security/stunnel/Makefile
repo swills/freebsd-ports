@@ -1,5 +1,5 @@
 # Created by: Martti Kuparinen <martti.kuparinen@ericsson.com>
-# $FreeBSD: head/security/stunnel/Makefile 447034 2017-08-01 17:07:58Z zi $
+# $FreeBSD: head/security/stunnel/Makefile 450039 2017-09-18 11:35:24Z zi $
 
 PORTNAME=	stunnel
 PORTVERSION=	5.42
@@ -118,6 +118,6 @@ cert:
 	@${ECHO} "The new certificate will be saved into ${ETCDIR}/stunnel.pem"
 	@${ECHO} "**************************************************************************"
 	@${ECHO} ""
-	@(cd ${WRKSRC}/tools/; make install-data-local)
+	@(cd ${WRKSRC}/tools/; make cert)
 
 .include <bsd.port.post.mk>

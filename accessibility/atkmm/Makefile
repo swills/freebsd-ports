@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/accessibility/atkmm/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/accessibility/atkmm/Makefile 450107 2017-09-19 09:01:55Z amdmi3 $
 
 PORTNAME=	atkmm
 PORTVERSION=	2.24.2
@@ -10,9 +10,10 @@ MASTER_SITES=	GNOME
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	C++ wrapper for ATK API library
 
-PORTSCOUT=	limitw:1,even
+LICENSE=	LGPL21+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-LICENSE=	LGPL20
+PORTSCOUT=	limitw:1,even
 
 USES=		compiler:c++11-lang gmake localbase libtool pathfix \
 		pkgconfig tar:xz

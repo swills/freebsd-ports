@@ -1,8 +1,8 @@
 # Created by: Melvyn Sopacua <melvyn@magemana.nl>
-# $FreeBSD: head/archivers/php-snappy/Makefile 449137 2017-09-02 14:11:38Z joneum $
+# $FreeBSD: head/archivers/php-snappy/Makefile 450053 2017-09-18 16:23:17Z joneum $
 
 PORTNAME=	snappy
-PORTVERSION=	0.1.8
+PORTVERSION=	0.1.9
 CATEGORIES=	archivers
 PKGNAMEPREFIX=	php-
 

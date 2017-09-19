@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-jruby-rack/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/www/rubygem-jruby-rack/Makefile 450069 2017-09-18 17:49:29Z sunpoet $
 
 PORTNAME=	jruby-rack
-PORTVERSION=	1.1.20
+PORTVERSION=	1.1.21
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

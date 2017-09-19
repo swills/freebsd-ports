@@ -1,9 +1,8 @@
 # Created by: Trevor Corpropst <tcornpropst@cox.net>
-# $FreeBSD: head/net/p5-Net-SFTP/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-SFTP/Makefile 450097 2017-09-19 03:12:28Z bofh $
 
 PORTNAME=	Net-SFTP
-PORTVERSION=	0.10
-PORTREVISION=	1
+PORTVERSION=	0.12
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

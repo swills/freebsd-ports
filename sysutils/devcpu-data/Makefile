@@ -1,5 +1,5 @@
 # Created by: stas
-# $FreeBSD: head/sysutils/devcpu-data/Makefile 450017 2017-09-17 18:11:36Z swills $
+# $FreeBSD: head/sysutils/devcpu-data/Makefile 450123 2017-09-19 13:23:57Z swills $
 
 PORTNAME=	data
 PORTVERSION=	1.11
@@ -7,7 +7,6 @@ CATEGORIES=	sysutils
 MASTER_SITES=	https://downloadmirror.intel.com/26925/eng/:intel \
 		http://www.amd64.org/microcode/:amd
 PKGNAMEPREFIX=	devcpu-
-DISTFILES=	microcode-20170511.tgz:intel amd-ucode-2014-12-01.tar.bz2:amd
 DISTFILES=	microcode-20170707.tgz:intel amd-ucode-2014-12-01.tar.bz2:amd
 
 MAINTAINER=	clarkjc@runbox.com

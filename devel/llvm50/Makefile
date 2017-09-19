@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm50/Makefile 449851 2017-09-14 19:30:32Z brooks $
+# $FreeBSD: head/devel/llvm50/Makefile 450073 2017-09-18 19:24:05Z brooks $
 
 PORTNAME=	llvm
 DISTVERSION=	5.0.0
@@ -212,7 +212,7 @@ SHEBANG_FILES+=	tools/clang/tools/scan-view/bin/scan-view \
 .endif
 
 .if ${PORT_OPTIONS:MCOMPILER_RT}
-COMPILER_RT_PATTERN=	(asan_blacklist.txt|sanitizer|xray_interface.h)
+COMPILER_RT_PATTERN=	(asan_blacklist.txt|sanitizer|include.xray)
 .endif
 
 .if ${PORT_OPTIONS:MLIT}

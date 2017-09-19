@@ -1,8 +1,8 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/devel/cloudabi-toolchain/Makefile 446997 2017-07-31 20:26:29Z ed $
+# $FreeBSD: head/devel/cloudabi-toolchain/Makefile 450083 2017-09-18 21:44:16Z ed $
 
 PORTNAME=	cloudabi-toolchain
-PORTVERSION=	1.10
+PORTVERSION=	1.11
 CATEGORIES=	devel
 MASTER_SITES=	# None
 DISTFILES=	# None
@@ -18,7 +18,7 @@ RUN_DEPENDS=	clang${LLVM_SUFFIX}:devel/llvm${LLVM_SUFFIX} \
 
 CONFLICTS=	cloudabi-binutils-*
 
-LLVM_SUFFIX=	40
+LLVM_SUFFIX=	50
 
 CLOUDABI_ARCHS=	aarch64-unknown-cloudabi armv6-unknown-cloudabi-eabihf \
 		armv7-unknown-cloudabi-eabihf i686-unknown-cloudabi \

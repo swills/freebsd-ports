@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Pegex/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Pegex/Makefile 450062 2017-09-18 17:48:53Z sunpoet $
 
 PORTNAME=	Pegex
-PORTVERSION=	0.63
+PORTVERSION=	0.64
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:INGY

@@ -1,5 +1,5 @@
 # Created by: Henrik Motakef <henrik.motakef@web.de>
-# $FreeBSD: head/textproc/cl-ppcre/Makefile 446758 2017-07-27 16:31:29Z amdmi3 $
+# $FreeBSD: head/textproc/cl-ppcre/Makefile 450106 2017-09-19 09:01:53Z amdmi3 $
 
 PORTNAME=	cl-ppcre
 PORTVERSION=	2.0.3
@@ -10,7 +10,10 @@ MASTER_SITES=	LOCAL/olgeni
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Portable Perl-Compatible Regular Expression for Common Lisp
 
+LICENSE=	BSD2CLAUSE
+
 NO_BUILD=	yes
+NO_ARCH=	yes
 
 USE_ASDF=	yes
 

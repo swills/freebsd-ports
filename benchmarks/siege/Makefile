@@ -1,8 +1,8 @@
 # Created by: Mark Pulford <mark@kyne.com.au>
-# $FreeBSD: head/benchmarks/siege/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/benchmarks/siege/Makefile 450082 2017-09-18 21:40:04Z bofh $
 
 PORTNAME=	siege
-PORTVERSION=	4.0.2
+PORTVERSION=	4.0.4
 CATEGORIES=	benchmarks www
 MASTER_SITES=	http://download.joedog.org/siege/ \
 		http://fossies.org/linux/www/

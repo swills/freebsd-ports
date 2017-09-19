@@ -1,8 +1,8 @@
 # Created by: Thierry Thomas <thierry@FreeBSD.org>
-# $FreeBSD: head/cad/kicad-library/Makefile 446084 2017-07-17 17:43:23Z thierry $
+# $FreeBSD: head/cad/kicad-library/Makefile 450079 2017-09-18 20:14:30Z thierry $
 
 PORTNAME=	kicad
-PORTVERSION=	4.0.6
+PORTVERSION=	4.0.7
 CATEGORIES=	cad
 PKGNAMESUFFIX=	-library
 

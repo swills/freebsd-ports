@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/py-s3cmd/Makefile 412985 2016-04-10 21:32:30Z bofh $
+# $FreeBSD: head/net/py-s3cmd/Makefile 450095 2017-09-19 02:03:34Z bofh $
 
 PORTNAME=	s3cmd
-DISTVERSION=	1.6.1
+DISTVERSION=	2.0.0
 CATEGORIES=	net python
 MASTER_SITES=	SF/s3tools/${PORTNAME}/${DISTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

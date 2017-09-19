@@ -1,8 +1,9 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/lang/io/Makefile 449774 2017-09-13 11:46:23Z gahr $
+# $FreeBSD: head/lang/io/Makefile 450108 2017-09-19 10:13:08Z gahr $
 
 PORTNAME=	io
 PORTVERSION=	2017.09.06
+PORTREVISION=	1
 CATEGORIES=	lang
 
 MAINTAINER=	gahr@FreeBSD.org
@@ -46,6 +47,11 @@ post-install:
 	cd ${WRKSRC}/docs && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR}
 	${MKDIR}  ${STAGEDIR}${EXAMPLESDIR}
 	cd ${WRKSRC}/samples && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR}
+	${MKDIR} ${STAGEDIR}${DATADIR}/SyntaxHighlighters
+.for syn in "Emacs IntelliJ JEdit Kate Scintilla Vim"
+	cd ${WRKSRC}/extras/SyntaxHighlighters && \
+	    ${COPYTREE_SHARE} ${syn} ${STAGEDIR}${DATADIR}/SyntaxHighlighters
+.endfor
 
 do-test:
 	cd ${BUILD_WRKSRC} && \

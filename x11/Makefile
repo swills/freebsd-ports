@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 449358 2017-09-06 19:32:40Z tcberner $
+# $FreeBSD: head/x11/Makefile 450057 2017-09-18 17:45:33Z kmoore $
 #
 
     COMMENT = Ports to support the X window system
@@ -213,6 +213,8 @@
     SUBDIR += lsw
     SUBDIR += luit
     SUBDIR += lumina
+    SUBDIR += lumina-core
+    SUBDIR += lumina-coreutils
     SUBDIR += lupe
     SUBDIR += lxde-meta
     SUBDIR += lxhotkey

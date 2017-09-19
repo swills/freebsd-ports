@@ -1,8 +1,8 @@
 # Created by: Yi-Jheng Lin <yzlin@cs.nctu.edu.tw>
-# $FreeBSD: head/www/py-textile/Makefile 447341 2017-08-04 14:40:37Z bofh $
+# $FreeBSD: head/www/py-textile/Makefile 450084 2017-09-18 22:10:06Z bofh $
 
 PORTNAME=	textile
-PORTVERSION=	2.3.15
+PORTVERSION=	2.3.16
 CATEGORIES=	www textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

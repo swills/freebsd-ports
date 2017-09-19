@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/apache22/Makefile 445602 2017-07-12 19:26:14Z brnrd $
+# $FreeBSD: head/www/apache22/Makefile 450118 2017-09-19 12:29:33Z zi $
 
 PORTNAME=	apache22
 PORTVERSION=	2.2.34
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	www ipv6
 MASTER_SITES=	APACHE_HTTPD
 DISTNAME=	httpd-${PORTVERSION}

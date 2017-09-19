@@ -1,8 +1,8 @@
 # Created by: Domas Mituzas <midom@dammit.lt>
-# $FreeBSD: head/databases/freetds/Makefile 447342 2017-08-04 14:51:56Z bofh $
+# $FreeBSD: head/databases/freetds/Makefile 450099 2017-09-19 03:53:25Z bofh $
 
 PORTNAME=	freetds
-PORTVERSION=	1.00.49
+PORTVERSION=	1.00.58
 PORTEPOCH=	1
 CATEGORIES=	databases
 MASTER_SITES=	ftp://ftp.freetds.org/pub/freetds/stable/

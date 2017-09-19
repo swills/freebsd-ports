@@ -1,8 +1,8 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/misc/iso-codes/Makefile 440246 2017-05-06 09:30:38Z kwm $
+# $FreeBSD: head/misc/iso-codes/Makefile 450124 2017-09-19 13:46:52Z kwm $
 
 PORTNAME=	iso-codes
-PORTVERSION=	3.75
+PORTVERSION=	3.76
 CATEGORIES=	misc
 MASTER_SITES=	http://pkg-isocodes.alioth.debian.org/downloads/
 

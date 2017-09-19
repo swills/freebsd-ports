@@ -1,16 +1,14 @@
-# $FreeBSD: head/devel/git-cinnabar/Makefile 449632 2017-09-11 12:57:05Z jbeich $
+# $FreeBSD: head/devel/git-cinnabar/Makefile 450104 2017-09-19 05:07:34Z jbeich $
 
 PORTNAME=	git-cinnabar
 DISTVERSION=	0.5.0b2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	Git remote helper to interact with Mercurial repositories
 
 LICENSE=	GPLv2
-
-BROKEN=		fails to build against git-2.14.*
 
 BUILD_DEPENDS=	${NONEXISTENT}:devel/git:configure
 RUN_DEPENDS=	git:devel/git \

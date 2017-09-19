@@ -1,8 +1,8 @@
 # Created by: Ting-Wei Lan <lantw44@gmail.com>
-# $FreeBSD: head/devel/meson/Makefile 444025 2017-06-21 10:48:30Z kwm $
+# $FreeBSD: head/devel/meson/Makefile 450125 2017-09-19 13:52:57Z kwm $
 
 PORTNAME=	meson
-PORTVERSION=	0.41.1
+PORTVERSION=	0.42.1
 CATEGORIES=	devel python
 MASTER_SITES=	https://github.com/mesonbuild/${PORTNAME}/releases/download/${PORTVERSION}/
 
