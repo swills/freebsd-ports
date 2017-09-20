@@ -1,8 +1,8 @@
 # Created by: Cory McIntire (loon@noncensored.com)
-# $FreeBSD: head/security/lynis/Makefile 448651 2017-08-24 08:25:20Z lme $
+# $FreeBSD: head/security/lynis/Makefile 450166 2017-09-19 20:41:55Z lme $
 
 PORTNAME=	lynis
-PORTVERSION=	2.5.3
+PORTVERSION=	2.5.5
 CATEGORIES=	security
 MASTER_SITES=	https://cisofy.com/files/
 

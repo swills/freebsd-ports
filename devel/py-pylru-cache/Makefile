@@ -1,5 +1,5 @@
 # Created by: philip@FreeBSD.org
-# $FreeBSD: head/devel/py-pylru-cache/Makefile 422506 2016-09-20 15:25:28Z philip $
+# $FreeBSD: head/devel/py-pylru-cache/Makefile 450170 2017-09-19 21:41:45Z philip $
 
 PORTNAME=	pylru-cache
 PORTVERSION=	0.1.4
@@ -11,7 +11,8 @@ DISTNAME=	py_lru_cache-${PORTVERSION}
 MAINTAINER=	philip@FreeBSD.org
 COMMENT=	LRU cache for Python
 
-LICENSE=	BSD
+LICENSE=	BSD3CLAUSE GPLv3
+LICENSE_COMB=	dual
 
 USES?=		python
 USE_PYTHON=	distutils autoplist

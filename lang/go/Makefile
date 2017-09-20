@@ -1,5 +1,5 @@
 # Created by: Devon H. O'Dell <devon.odell@gmail.com>
-# $FreeBSD: head/lang/go/Makefile 448714 2017-08-25 09:55:55Z jlaffaye $
+# $FreeBSD: head/lang/go/Makefile 450165 2017-09-19 20:31:58Z jlaffaye $
 
 PORTNAME=	go
 PORTVERSION=	1.9
@@ -49,7 +49,6 @@ IGNORE=		unknown arch ${ARCH}
 .endif
 
 .if ${PORT_OPTIONS:MGO387}
-.error wat
 GO386=387
 .endif
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/postgresql-odbc/Makefile 450102 2017-09-19 05:06:03Z bofh $
+# $FreeBSD: head/databases/postgresql-odbc/Makefile 450132 2017-09-19 15:18:53Z bofh $
 
 PORTNAME=	postgresql
 PORTVERSION=	09.06.0500
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	PGSQL/odbc/versions/src
 PKGNAMESUFFIX=	-odbc
@@ -16,12 +17,13 @@ LICENSE_FILE=	${WRKSRC}/license.txt
 
 LIB_DEPENDS=	libodbc.so:databases/unixODBC
 
-USES=		libtool pgsql
+USES=		compiler:c11 libtool pgsql
 USE_LDCONFIG=	yes
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-unixodbc=${LOCALBASE}
 INSTALL_TARGET=	install-strip
+CFLAGS+=	-std=c11
 
 DOCSDIR=	${PREFIX}/share/doc/postgresql/odbc
 EXAMPLESDIR=	${PREFIX}/share/examples/postgresql/odbc

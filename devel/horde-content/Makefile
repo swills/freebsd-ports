@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/horde-content/Makefile 399990 2015-10-22 16:00:30Z mm $
+# $FreeBSD: head/devel/horde-content/Makefile 450171 2017-09-19 21:48:42Z mm $
 
 PORTNAME=	content
-PORTVERSION=	2.0.5
+PORTVERSION=	2.0.6
 CATEGORIES=	devel www pear
 PKGNAMEPREFIX=	horde-
 

@@ -1,8 +1,8 @@
 # Created by: Hye-Shik Chang <perky@python.or.kr>
-# $FreeBSD: head/databases/py-bsddb3/Makefile 435468 2017-03-05 10:56:55Z bofh $
+# $FreeBSD: head/databases/py-bsddb3/Makefile 450146 2017-09-19 16:43:22Z bofh $
 
 PORTNAME=	bsddb3
-PORTVERSION=	6.2.4
+PORTVERSION=	6.2.5
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

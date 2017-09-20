@@ -1,8 +1,8 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/nspr/Makefile 446781 2017-07-27 21:33:55Z jbeich $
+# $FreeBSD: head/devel/nspr/Makefile 450202 2017-09-20 13:44:15Z jbeich $
 
 PORTNAME=	nspr
-DISTVERSION=	4.16
+DISTVERSION=	4.17
 CATEGORIES=	devel
 MASTER_SITES=	MOZILLA/${PORTNAME}/releases/v${PORTVERSION}/src
 

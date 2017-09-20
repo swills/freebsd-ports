@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/scss/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/scss/Makefile 450190 2017-09-20 09:01:56Z amdmi3 $
 
 PORTNAME=	scss
 PORTVERSION=	0.4.2
@@ -11,21 +11,23 @@ MASTER_SITES=	SAVANNAH \
 MAINTAINER=	cs@FreeBSD.org
 COMMENT=	Scheme module for W3C Cascading Stylesheets recommendation
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	guile:lang/guile
 
 NO_BUILD=	yes
+NO_ARCH=	yes
 
-FILES=	lexer.scm parser.scm scss.scm properties.scm \
-	interface/sdom.scm common.scm
-INFO=	scss
+FILES=		lexer.scm parser.scm scss.scm properties.scm \
+		interface/sdom.scm common.scm
+INFO=		scss
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/guile/scss
 .for f in ${FILES}
-	@${INSTALL_DATA} ${WRKSRC}/${f} ${STAGEDIR}${PREFIX}/share/guile/scss
+	${INSTALL_DATA} ${WRKSRC}/${f} ${STAGEDIR}${PREFIX}/share/guile/scss
 .endfor
-	@${INSTALL_DATA} ${WRKSRC}/scss.info ${STAGEDIR}${PREFIX}/info
+	${INSTALL_DATA} ${WRKSRC}/scss.info ${STAGEDIR}${PREFIX}/info
 
 .include <bsd.port.mk>

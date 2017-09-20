@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 449648 2017-09-11 14:30:17Z vanilla $
+# $FreeBSD: head/databases/Makefile 450158 2017-09-19 19:48:30Z bofh $
 #
 
     COMMENT = Databases and related software
@@ -196,6 +196,7 @@
     SUBDIR += mongodb34
     SUBDIR += mongodb34-rocks
     SUBDIR += mongodb34-tools
+    SUBDIR += mroonga
     SUBDIR += mrtg-mysql-load
     SUBDIR += mtools-mongodb
     SUBDIR += mtop
@@ -596,6 +597,7 @@
     SUBDIR += pgpool-II-35
     SUBDIR += pgpool-II-36
     SUBDIR += pgreplay
+    SUBDIR += pgroonga
     SUBDIR += pgrouting
     SUBDIR += pgsphere
     SUBDIR += pgtcl

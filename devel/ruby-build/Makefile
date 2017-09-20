@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/ruby-build/Makefile 448128 2017-08-17 15:05:29Z sunpoet $
+# $FreeBSD: head/devel/ruby-build/Makefile 450143 2017-09-19 15:49:47Z sunpoet $
 
 PORTNAME=	ruby-build
-PORTVERSION=	20170726
+PORTVERSION=	20170914
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel ruby
 
-MAINTAINER=	meta+ports@vmeta.jp
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Compile and install different ruby versions
 
 LICENSE=	MIT

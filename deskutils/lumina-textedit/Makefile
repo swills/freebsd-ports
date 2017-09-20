@@ -1,9 +1,10 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-textedit/Makefile 450057 2017-09-18 17:45:33Z kmoore $
+# $FreeBSD: head/deskutils/lumina-textedit/Makefile 450205 2017-09-20 14:16:35Z kmoore $
 
 PORTNAME=	lumina-textedit
 DISTVERSIONPREFIX=      v
-DISTVERSION=    1.3.0-p1
+DISTVERSION=    1.3.0
+DISTVERSIONSUFFIX=	-p1
 CATEGORIES=	deskutils
 
 MAINTAINER=	kmoore@FreeBSD.org

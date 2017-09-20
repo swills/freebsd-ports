@@ -1,15 +1,14 @@
-# $FreeBSD: head/graphics/libzmf/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/libzmf/Makefile 450180 2017-09-20 00:04:47Z jkim $
 
 PORTNAME=	libzmf
-PORTVERSION=	0.0.1
-PORTREVISION=	1
+PORTVERSION=	0.0.2
 CATEGORIES=	graphics
 MASTER_SITES=	LODEV
 
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Library that parses the file format of Zoner Callisto/Draw documents
 
-LICENSE=	MPL
+LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/cstdint.hpp:devel/boost-libs
@@ -19,8 +18,8 @@ LIB_DEPENDS=	libicui18n.so:devel/icu \
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
-USE_LDCONFIG=	yes
 USES=		compiler:c++11-lang libtool pathfix pkgconfig tar:xz
+USE_LDCONFIG=	yes
 
 CONFIGURE_ARGS=	--disable-tests --disable-werror --without-docs
 CPPFLAGS+=	-I${LOCALBASE}/include

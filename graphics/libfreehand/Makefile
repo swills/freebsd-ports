@@ -1,18 +1,19 @@
-# $FreeBSD: head/graphics/libfreehand/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/libfreehand/Makefile 450177 2017-09-19 23:45:59Z jkim $
 
 PORTNAME=	libfreehand
-PORTVERSION=	0.1.1
-PORTREVISION=	7
+PORTVERSION=	0.1.2
 CATEGORIES=	graphics
 MASTER_SITES=	LODEV
 
 MAINTAINER=	office@FreeBSD.org
-COMMENT=	Library providing ability to interpret and import Adobe/Macromedia drawings
+COMMENT=	Library for interpreting and importing Adobe/Macromedia drawings
 
-LICENSE=	LGPL21 MPL GPLv2
-LICENSE_COMB=	dual
+LICENSE=	MPL20
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	icu-config:devel/icu
+BUILD_DEPENDS=	${LOCALBASE}/include/boost/cstdint.hpp:devel/boost-libs \
+		cppunit-config:devel/cppunit \
+		icu-config:devel/icu
 LIB_DEPENDS=	liblcms2.so:graphics/lcms2 \
 		librevenge-0.0.so:textproc/librevenge
 
@@ -21,6 +22,7 @@ USES=	compiler:c++11-lang gperf perl5 libtool pathfix pkgconfig tar:xz
 USE_LDCONFIG=	yes
 USE_PERL5=	build
 CONFIGURE_ARGS=	--disable-werror --without-docs
+CPPFLAGS+=	-I ${LOCALBASE}/include
 INSTALL_TARGET=	install-strip
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 449404 2017-09-07 15:29:35Z swills $
+# $FreeBSD: head/net/Makefile 450185 2017-09-20 01:55:00Z dbaio $
 #
 
     COMMENT = Networking tools
@@ -1079,6 +1079,7 @@
     SUBDIR += py-upnp-inspector
     SUBDIR += py-uritemplate
     SUBDIR += py-urllib3
+    SUBDIR += py-wmi-query
     SUBDIR += py-wolframalpha
     SUBDIR += py-xmlrpc
     SUBDIR += py-zope.proxy

@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/devel/gitlab-shell/Makefile 449785 2017-09-13 13:36:35Z tz $
+# $FreeBSD: head/devel/gitlab-shell/Makefile 450130 2017-09-19 14:41:27Z tz $
 
 PORTNAME=	gitlab-shell
 PORTVERSION=	5.1.1
@@ -34,8 +34,6 @@ do-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}
 	(cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${DATADIR})
 	@${MKDIR} ${STAGEDIR}/var/log/gitlab-shell
-
-post-install:
 	${STRIP_CMD} ${STAGEDIR}${DATADIR}/bin/gitaly-upload-pack
 	${STRIP_CMD} ${STAGEDIR}${DATADIR}/bin/gitaly-receive-pack
 

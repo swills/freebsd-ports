@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-ox/Makefile 447769 2017-08-11 14:40:06Z jrm $
+# $FreeBSD: head/textproc/rubygem-ox/Makefile 450194 2017-09-20 11:34:16Z jrm $
 
 PORTNAME=	ox
-PORTVERSION=	2.6.0
+PORTVERSION=	2.7.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -9,6 +9,8 @@ MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Speed-optimized XML parser and object serializer for Ruby
 
 LICENSE=	MIT
+
+LIB_DEPENDS=	libunwind.so:devel/libunwind
 
 USES=		gem
 USE_RUBY=	yes

@@ -1,8 +1,8 @@
 # Created by: Alexey V. Antipovsky <kemm@in-line.ru>
-# $FreeBSD: head/emulators/libspectrum/Makefile 448189 2017-08-17 20:38:08Z rene $
+# $FreeBSD: head/emulators/libspectrum/Makefile 450145 2017-09-19 16:22:48Z rene $
 
 PORTNAME=	libspectrum
-PORTVERSION=	1.3.6
+PORTVERSION=	1.4.0
 CATEGORIES=	emulators devel
 MASTER_SITES=	SF/fuse-emulator/${PORTNAME}/${PORTVERSION}
 

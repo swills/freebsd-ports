@@ -1,8 +1,8 @@
 # Created by: Fernan Aguero <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/math/p5-Math-Derivative/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/math/p5-Math-Derivative/Makefile 450157 2017-09-19 19:21:14Z bofh $
 
 PORTNAME=	Math-Derivative
-PORTVERSION=	0.04
+PORTVERSION=	1.01
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

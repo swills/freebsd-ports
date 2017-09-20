@@ -1,8 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/databases/cassandra-cpp-driver/Makefile 441147 2017-05-18 13:24:53Z gahr $
+# $FreeBSD: head/databases/cassandra-cpp-driver/Makefile 450204 2017-09-20 14:05:06Z gahr $
 
 PORTNAME=	cassandra-cpp-driver
-PORTVERSION=	2.7.0
+PORTVERSION=	2.7.1
 CATEGORIES=	databases
 
 MAINTAINER=	gahr@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: Muhammad Moinur Rahman <bofh@FreeBSD.org>
-# $FreeBSD: head/devel/libfastjson/Makefile 441294 2017-05-20 08:54:20Z bofh $
+# $FreeBSD: head/devel/libfastjson/Makefile 450178 2017-09-19 23:46:23Z bofh $
 
 PORTNAME=	libfastjson
-PORTVERSION=	0.99.5
+PORTVERSION=	0.99.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

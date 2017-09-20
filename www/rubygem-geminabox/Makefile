@@ -1,9 +1,8 @@
 # Created by: Philip M. Gollucci <pgollucci@p6m7g8.com>
-# $FreeBSD: head/www/rubygem-geminabox/Makefile 433374 2017-02-05 05:32:36Z sunpoet $
+# $FreeBSD: head/www/rubygem-geminabox/Makefile 450142 2017-09-19 15:49:41Z sunpoet $
 
 PORTNAME=	geminabox
-PORTVERSION=	0.13.5
-PORTREVISION=	1
+PORTVERSION=	0.13.6
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

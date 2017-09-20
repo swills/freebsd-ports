@@ -1,9 +1,8 @@
 # Created by: Yukihiro Nakai <nakai@FreeBSD.org>
-# $FreeBSD: head/lang/librep/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/lang/librep/Makefile 450159 2017-09-19 19:51:55Z bofh $
 
 PORTNAME=	librep
-PORTVERSION=	0.92.6
-PORTREVISION=	1
+PORTVERSION=	0.92.7
 CATEGORIES=	lang elisp gnome
 MASTER_SITES=	http://download.tuxfamily.org/librep/
 DISTNAME=	${PORTNAME}_${PORTVERSION}

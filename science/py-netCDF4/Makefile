@@ -1,11 +1,10 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/py-netCDF4/Makefile 442050 2017-05-30 02:56:43Z sunpoet $
+# $FreeBSD: head/science/py-netCDF4/Makefile 450200 2017-09-20 13:19:59Z bofh $
 
 PORTNAME=	netCDF4
-PORTVERSION=	1.2.7
+PORTVERSION=	1.2.9
 DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	rel
-PORTREVISION=	1
 CATEGORIES=	science python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -14,7 +13,8 @@ COMMENT=	Python Interface to the NetCDF Library (versions 3 and 4)
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PYNUMPY}
+BUILD_DEPENDS=	${PYNUMPY} \
+		${LOCALBASE}/bin/cython:lang/cython
 LIB_DEPENDS=	libhdf5.so:science/hdf5 \
 		libnetcdf.so:science/netcdf
 RUN_DEPENDS:=	${BUILD_DEPENDS}
@@ -44,8 +44,13 @@ post-patch:
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/netCDF4/_netCDF4.so
+	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/netcdftime/_netcdftime.so
+
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	(cd ${WRKSRC}/docs && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR})
+
+post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	(cd ${WRKSRC}/examples && ${INSTALL_DATA} * ${STAGEDIR}${EXAMPLESDIR})
 

@@ -1,16 +1,17 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/www/py-tvdb_api/Makefile 403293 2015-12-08 16:16:30Z vanilla $
+# $FreeBSD: head/www/py-tvdb_api/Makefile 450199 2017-09-20 13:03:38Z bofh $
 
 PORTNAME=	tvdb_api
-PORTVERSION=	1.10
+PORTVERSION=	2.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	API interface to TheTVDB.com
 
 USES=		python:2
 USE_PYTHON=	distutils autoplist
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

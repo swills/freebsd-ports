@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/security/pear-Horde_Crypt/Makefile 444450 2017-06-27 10:02:04Z mm $
+# $FreeBSD: head/security/pear-Horde_Crypt/Makefile 450171 2017-09-19 21:48:42Z mm $
 
 PORTNAME=	Horde_Crypt
-PORTVERSION=	2.7.9
+PORTVERSION=	2.7.10
 CATEGORIES=	security www pear
 PKGNAMEPREFIX=	pear-
 

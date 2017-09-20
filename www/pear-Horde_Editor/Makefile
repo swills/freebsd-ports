@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/www/pear-Horde_Editor/Makefile 369674 2014-09-30 22:14:59Z bapt $
+# $FreeBSD: head/www/pear-Horde_Editor/Makefile 450171 2017-09-19 21:48:42Z mm $
 
 PORTNAME=	Horde_Editor
-PORTVERSION=	2.0.4
+PORTVERSION=	2.0.5
 CATEGORIES=	www pear
 
 MAINTAINER=	horde@FreeBSD.org
