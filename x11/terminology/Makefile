@@ -1,9 +1,8 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/x11/terminology/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/x11/terminology/Makefile 450248 2017-09-21 10:54:03Z gblach $
 
 PORTNAME=	terminology
-PORTVERSION=	1.0.0
-PORTREVISION=	3
+PORTVERSION=	1.1.1
 CATEGORIES=	x11 enlightenment
 MASTER_SITES=	http://download.enlightenment.org/rel/apps/${PORTNAME}/
 
@@ -12,7 +11,8 @@ COMMENT=	EFL Terminal Emulator
 
 LICENSE=	BSD2CLAUSE
 
-LIB_DEPENDS=	libefl.so:devel/efl
+LIB_DEPENDS=	libefl.so:devel/efl \
+		libintl.so:devel/gettext-runtime
 
 DIST_SUBDIR=	enlightenment
 GNU_CONFIGURE=	yes

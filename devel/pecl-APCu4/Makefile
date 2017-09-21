@@ -1,8 +1,9 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-APCu4/Makefile 442246 2017-05-31 17:36:18Z pawel $
+# $FreeBSD: head/devel/pecl-APCu4/Makefile 450253 2017-09-21 12:17:37Z mat $
 
 PORTNAME=	APCu
 PORTVERSION=	4.0.11
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMESUFFIX=	4
 DISTNAME=	${PORTNAME:tl}-${PORTVERSION}
@@ -19,5 +20,11 @@ PORTSCOUT=	limit:^4\.
 IGNORE_WITH_PHP=70 71
 USES=		localbase php:pecl
 PHP_MODNAME=	${PORTNAME:tl}
+
+PLIST_FILES=	${DATADIR}/apc.php
+
+post-install:
+	${MKDIR} ${STAGEDIR}${DATADIR}
+	${INSTALL_DATA} ${WRKSRC}/apc.php ${STAGEDIR}${DATADIR}
 
 .include <bsd.port.mk>

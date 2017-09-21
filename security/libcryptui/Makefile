@@ -1,5 +1,5 @@
 # Created by: Dave McKay <dave@mu.org>
-# $FreeBSD: head/security/libcryptui/Makefile 427185 2016-11-26 23:41:16Z jhale $
+# $FreeBSD: head/security/libcryptui/Makefile 450230 2017-09-20 19:48:38Z kwm $
 
 PORTNAME=	libcryptui
 PORTVERSION=	3.12.2
@@ -41,7 +41,7 @@ CONFIGURE_ARGS+=--disable-libnotify
 .endif
 
 post-patch:
-	@${REINPLACE_CMD} -e 's|"1.2 1.4 2.0"|"1.2 1.4 2.0 2.1"|g' \
+	@${REINPLACE_CMD} -e 's|"1.2 1.4 2.0"|"1.2 1.4 2.0 2.1 2.2"|g' \
 		${WRKSRC}/configure
 
 .include <bsd.port.mk>

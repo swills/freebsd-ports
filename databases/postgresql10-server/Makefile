@@ -1,7 +1,7 @@
 # Created by: Marc G. Fournier <scrappy@FreeBSD.org>
-# $FreeBSD: head/databases/postgresql10-server/Makefile 447680 2017-08-10 14:23:31Z girgen $
+# $FreeBSD: head/databases/postgresql10-server/Makefile 450258 2017-09-21 13:43:01Z girgen $
 
-DISTVERSION?=	10beta3
+DISTVERSION?=	10rc1
 PKGNAMESUFFIX?= ${PORTVERSION:R}${COMPONENT}
 
 MAINTAINER?=	pgsql@FreeBSD.org

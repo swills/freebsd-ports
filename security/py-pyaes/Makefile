@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/py-pyaes/Makefile 436753 2017-03-23 02:33:45Z jrm $
+# $FreeBSD: head/security/py-pyaes/Makefile 450257 2017-09-21 13:10:09Z jrm $
 
 PORTNAME=	pyaes
-PORTVERSION=	1.6.0
+PORTVERSION=	1.6.1
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

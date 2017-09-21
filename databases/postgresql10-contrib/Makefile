@@ -1,8 +1,8 @@
 # Created by: Palle Girgensohn <girgen@pingpong.net>
-# $FreeBSD: head/databases/postgresql10-contrib/Makefile 447889 2017-08-13 13:52:53Z girgen $
+# $FreeBSD: head/databases/postgresql10-contrib/Makefile 450258 2017-09-21 13:43:01Z girgen $
 
 PORTNAME=	postgresql
-PORTREVISION=	1
+PORTREVISION=	0
 CATEGORIES=	databases
 
 MAINTAINER=	pgsql@FreeBSD.org

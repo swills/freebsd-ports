@@ -1,8 +1,8 @@
-# $FreeBSD: head/irc/rubygem-cogbot/Makefile 448126 2017-08-17 15:05:19Z sunpoet $
+# $FreeBSD: head/irc/rubygem-cogbot/Makefile 450221 2017-09-20 16:32:32Z sunpoet $
 
 PORTNAME=	cogbot
 PORTVERSION=	0.1.13
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	irc rubygems
 MASTER_SITES=	RG
 

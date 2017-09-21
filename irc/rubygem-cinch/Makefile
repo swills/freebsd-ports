@@ -1,7 +1,7 @@
-# $FreeBSD: head/irc/rubygem-cinch/Makefile 429786 2016-12-28 15:51:54Z swills $
+# $FreeBSD: head/irc/rubygem-cinch/Makefile 450220 2017-09-20 16:32:27Z sunpoet $
 
 PORTNAME=	cinch
-PORTVERSION=	2.3.3
+PORTVERSION=	2.3.4
 CATEGORIES=	irc rubygems
 MASTER_SITES=	RG
 

@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/benchmarks/expedite/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/benchmarks/expedite/Makefile 450248 2017-09-21 10:54:03Z gblach $
 
 PORTNAME=	expedite
 PORTVERSION=	1.7.10
@@ -29,5 +29,7 @@ X11_DESC=	Enable X11 evas engine
 OPENGL_CONFIGURE_ENABLE=	opengl-x11
 SDL_CONFIGURE_ENABLE=		software-sdl
 X11_CONFIGURE_ENABLE=		software-x11 xrender-x11
+
+BROKEN=		Do not build with devel/efl 1.19.x
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 450024 2017-09-17 20:59:37Z cs $
+# $FreeBSD: head/devel/Makefile 450261 2017-09-21 14:33:48Z tz $
 #
 
     COMMENT = Development utilities
@@ -5320,6 +5320,7 @@
     SUBDIR += rubygem-bones
     SUBDIR += rubygem-bootsnap
     SUBDIR += rubygem-bosh-template
+    SUBDIR += rubygem-bootstrap_form
     SUBDIR += rubygem-bosh_common
     SUBDIR += rubygem-bson
     SUBDIR += rubygem-buftok
@@ -5657,6 +5658,7 @@
     SUBDIR += rubygem-rails-deprecated_sanitizer-rails5
     SUBDIR += rubygem-rails-deprecated_sanitizer-rails50
     SUBDIR += rubygem-rails-i18n
+    SUBDIR += rubygem-rails-i18n-4
     SUBDIR += rubygem-rails-i18n-rails50
     SUBDIR += rubygem-rails-observers
     SUBDIR += rubygem-rainbow
@@ -5839,6 +5841,7 @@
     SUBDIR += rubygem-will_paginate
     SUBDIR += rubygem-windows_error
     SUBDIR += rubygem-wmi-lite
+    SUBDIR += rubygem-xdg
     SUBDIR += rubygem-xpath
     SUBDIR += rubygem-yajl-ruby
     SUBDIR += rubygem-yui-compressor

@@ -1,8 +1,8 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/archivers/py-lzma/Makefile 428020 2016-12-07 00:15:55Z sbz $
+# $FreeBSD: head/archivers/py-lzma/Makefile 450256 2017-09-21 13:01:44Z sbz $
 
 PORTNAME=	lzma
-PORTVERSION=	0.4.8
+PORTVERSION=	0.4.9
 CATEGORIES=	archivers python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,9 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/math/mpfr/Makefile 433476 2017-02-06 08:17:14Z ale $
+# $FreeBSD: head/math/mpfr/Makefile 450240 2017-09-21 07:37:13Z ale $
 
 PORTNAME=	mpfr
-PORTVERSION=	3.1.5
-PORTREVISION=	1
+PORTVERSION=	3.1.6
 CATEGORIES=	math devel
 MASTER_SITES=	http://www.mpfr.org/mpfr-current/
 DIST_SUBDIR=	${DISTNAME}
@@ -19,8 +18,8 @@ LICENSE=	LGPL3
 #PATCH_DEPENDS=	gpatch:devel/patch
 LIB_DEPENDS=	libgmp.so:math/gmp
 
-PATCHLEVEL=	2
-PATCHFILES!=	/usr/bin/jot -s " " -w patch%02d ${PATCHLEVEL} 1 ${PATCHLEVEL}
+#PATCHLEVEL=	2
+#PATCHFILES!=	/usr/bin/jot -s " " -w patch%02d ${PATCHLEVEL} 1 ${PATCHLEVEL}
 #PATCH=		${LOCALBASE}/bin/gpatch
 
 USES=		libtool tar:xz

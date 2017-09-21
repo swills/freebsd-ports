@@ -1,8 +1,9 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-APCu/Makefile 442246 2017-05-31 17:36:18Z pawel $
+# $FreeBSD: head/devel/pecl-APCu/Makefile 450253 2017-09-21 12:17:37Z mat $
 
 PORTNAME=	APCu
 PORTVERSION=	5.1.8
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME:tl}-${PORTVERSION}
 
@@ -16,5 +17,11 @@ CONFLICTS_INSTALL=	pecl-APC
 IGNORE_WITH_PHP=56
 USES=		localbase php:pecl
 PHP_MODNAME=	${PORTNAME:tl}
+
+PLIST_FILES=	${DATADIR}/apc.php
+
+post-install:
+	${MKDIR} ${STAGEDIR}${DATADIR}
+	${INSTALL_DATA} ${WRKSRC}/apc.php ${STAGEDIR}${DATADIR}
 
 .include <bsd.port.mk>

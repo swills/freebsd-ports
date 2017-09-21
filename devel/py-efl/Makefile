@@ -1,9 +1,8 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/devel/py-efl/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/devel/py-efl/Makefile 450248 2017-09-21 10:54:03Z gblach $
 
 PORTNAME=	efl
-PORTVERSION=	1.18.0
-PORTREVISION=	1
+PORTVERSION=	1.19.0
 CATEGORIES=	devel python enlightenment
 MASTER_SITES=	http://download.enlightenment.org/rel/bindings/python/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
