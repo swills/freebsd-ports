@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/py-dpkt/Makefile 422153 2016-09-14 19:19:28Z antoine $
+# $FreeBSD: head/net/py-dpkt/Makefile 450346 2017-09-22 09:59:22Z sbz $
 
 PORTNAME=	dpkt
-PORTVERSION=	1.8.8
+PORTVERSION=	1.9.1
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Tony Shadwick <tshadwick@oss-solutions.com>
-# $FreeBSD: head/sysutils/htop/Makefile 431183 2017-01-11 14:14:54Z adamw $
+# $FreeBSD: head/sysutils/htop/Makefile 450353 2017-09-22 10:48:57Z mat $
 
 PORTNAME=	htop
 PORTVERSION=	2.0.2
@@ -13,11 +13,10 @@ LICENSE=	GPLv2
 RUN_DEPENDS=	lsof:sysutils/lsof
 
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib -lexecinfo
+LIBS+=		-lexecinfo
 
 CONFIGURE_ARGS=	--enable-unicode
-USES=		autoreconf execinfo libtool ncurses
+USES=		autoreconf libtool ncurses
 USE_GITHUB=	yes
 GH_ACCOUNT=	hishamhm
 PLIST_FILES=	bin/htop \

@@ -1,5 +1,5 @@
 # Created by: Matthias Sund <m.sund@arcor.de>
-# $FreeBSD: head/devel/upp/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/upp/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	upp
 PORTVERSION=	10804
@@ -14,7 +14,7 @@ COMMENT=	Ultimate++, a BSD-licensed, cross-platform, C/C++ RAD suite
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${BUILD_WRKSRC}/Core/Copying
 
-USES=		compiler:c++11-lib execinfo
+USES=		compiler:c++11-lib
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
 BUILD_WRKSRC=	${WRKSRC}/uppsrc

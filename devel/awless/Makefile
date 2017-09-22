@@ -1,8 +1,8 @@
 # Created by: Dmitri Goutnik <dg@syrec.org>
-# $FreeBSD: head/devel/awless/Makefile 449935 2017-09-15 20:33:23Z swills $
+# $FreeBSD: head/devel/awless/Makefile 450312 2017-09-21 23:44:25Z dbaio $
 
 PORTNAME=	awless
-PORTVERSION=	0.1.3
+PORTVERSION=	0.1.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

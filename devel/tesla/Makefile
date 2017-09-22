@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/tesla/Makefile 448041 2017-08-16 15:44:48Z sunpoet $
+# $FreeBSD: head/devel/tesla/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	tesla
 DISTVERSION=	0.0.20140425
@@ -16,7 +16,7 @@ BROKEN_armv6=		fails to link: cmTC_8106f uses VFP register arguments, testCCompi
 
 SHEBANG_FILES=	scripts/highlight-transitions
 
-USES=		cmake:outsource execinfo python:run shebangfix
+USES=		cmake:outsource python:run shebangfix
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	CTSRD-TESLA

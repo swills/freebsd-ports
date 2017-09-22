@@ -1,5 +1,5 @@
 # Created by: Laurent Courty
-# $FreeBSD: head/graphics/qgis/Makefile 449138 2017-09-02 14:23:38Z sunpoet $
+# $FreeBSD: head/graphics/qgis/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	qgis
 DISTVERSIONPREFIX=	final-
@@ -27,7 +27,7 @@ LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libxerces-c.so:textproc/xerces-c3
 
 USES=		bison cmake compiler:features cpe desktop-file-utils \
-		execinfo fortran gmake pyqt:4 python:2.7 sqlite:3
+		fortran gmake pyqt:4 python:2.7 sqlite:3
 
 USE_GITHUB=	yes
 GH_PROJECT=	${PORTNAME:tu}

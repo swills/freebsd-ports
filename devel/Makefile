@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 450261 2017-09-21 14:33:48Z tz $
+# $FreeBSD: head/devel/Makefile 450352 2017-09-22 10:48:45Z mat $
 #
 
     COMMENT = Development utilities
@@ -1374,7 +1374,6 @@
     SUBDIR += libevt
     SUBDIR += libevtx
     SUBDIR += libewf
-    SUBDIR += libexecinfo
     SUBDIR += libexplain
     SUBDIR += libfaketime
     SUBDIR += libfastcommon

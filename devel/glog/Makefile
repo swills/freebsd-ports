@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/glog/Makefile 440792 2017-05-13 12:11:19Z sunpoet $
+# $FreeBSD: head/devel/glog/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	glog
 PORTVERSION=	0.3.5
@@ -21,7 +21,7 @@ INSTALL_TARGET=	install-strip
 LDFLAGS+=	-lexecinfo
 TEST_TARGET=	check
 USE_LDCONFIG=	yes
-USES=		execinfo libtool localbase pathfix
+USES=		libtool localbase pathfix
 
 PORTDOCS=	*
 

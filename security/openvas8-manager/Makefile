@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/openvas8-manager/Makefile 447483 2017-08-07 03:48:23Z acm $
+# $FreeBSD: head/security/openvas8-manager/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME?=	openvas8-manager
 PORTVERSION?=	6.0.11
@@ -24,7 +24,7 @@ RUN_DEPENDS:=	${BUILD_DEPENDS} \
 
 CONFLICTS?=	${PORTNAME:S/${OPENVAS_VER}/9/}-*
 
-USES=		cmake:outsource execinfo gnome pkgconfig
+USES=		cmake:outsource gnome pkgconfig
 USE_GNOME=	glib20 libxslt:run
 PGSQL_USES=	pgsql
 SQLITE3_USES=	sqlite

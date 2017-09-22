@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/pecl-swoole/Makefile 445877 2017-07-15 14:46:52Z vanilla $
+# $FreeBSD: head/devel/pecl-swoole/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	swoole
 PORTVERSION=	1.9.16
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_powerpc64=	fails to build: swoole_config.h: error GCC 4.4 or later required
 
-USES=		execinfo php:pecl ssl
+USES=		php:pecl ssl
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 USE_PHP=	pcre

@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/novnc/Makefile 449325 2017-09-06 05:50:12Z araujo $
+# $FreeBSD: head/www/novnc/Makefile 450315 2017-09-22 04:56:37Z araujo $
 
 PORTNAME=	novnc
 PORTVERSION=	0.6.2
+PORTREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	araujo@FreeBSD.org
@@ -20,7 +21,7 @@ NO_ARCH=	yes
 TARGET_DIR=	${PREFIX}/libexec/novnc
 
 do-install:
-	${MKDIR} ${TARGET_DIR}
+	${MKDIR} ${STAGEDIR}${TARGET_DIR}
 	cd ${WRKSRC} && ${RM} .gitignore .gitmodules .travis.yml
 	cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${TARGET_DIR}
 	

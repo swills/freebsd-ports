@@ -1,5 +1,5 @@
 # Created by: Michael Vasilenko <acid@stu.cn.ua>
-# $FreeBSD: head/www/elinks/Makefile 446936 2017-07-30 14:34:27Z kwm $
+# $FreeBSD: head/www/elinks/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	elinks
 DISTVERSION=	0.11.7
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
-USES=		bison cpe execinfo gmake localbase ssl tar:bzip2
+USES=		bison cpe gmake localbase ssl tar:bzip2
 CONFIGURE_ARGS=	--without-zlib
 
 LIBS+=		-lexecinfo

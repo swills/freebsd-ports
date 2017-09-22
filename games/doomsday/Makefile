@@ -1,5 +1,5 @@
 # Created by: Igor Pokrovsky <ip@doom.homeunix.org>
-# $FreeBSD: head/games/doomsday/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/doomsday/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	doomsday
 PORTVERSION=	1.15.8
@@ -22,7 +22,7 @@ USE_GL=		gl glu
 USE_LDCONFIG=	yes
 USE_SDL=	sdl2 mixer2 net2
 USE_XORG=	x11
-USES=		compiler:c++11-lib execinfo pkgconfig python:build qmake:outsource
+USES=		compiler:c++11-lib pkgconfig python:build qmake:outsource
 USE_QT4=	corelib network opengl moc_build
 QMAKE_SOURCE_PATH=	${WRKSRC}/doomsday
 QMAKE_ARGS+=	QMAKE_LFLAGS+="-Wl,--export-dynamic" \

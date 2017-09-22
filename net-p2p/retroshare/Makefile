@@ -1,5 +1,5 @@
 # Created by: glocke@bsdstammtisch.at
-# $FreeBSD: head/net-p2p/retroshare/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/net-p2p/retroshare/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	retroshare
 PORTVERSION=	0.6.1
@@ -24,7 +24,7 @@ LIB_DEPENDS=	libsqlcipher.so:databases/sqlcipher \
 		libcurl.so:ftp/curl \
 		libmicrohttpd.so:www/libmicrohttpd
 
-USES=		compiler:features desktop-file-utils dos2unix execinfo pkgconfig qmake ssl
+USES=		compiler:features desktop-file-utils dos2unix pkgconfig qmake ssl
 USE_GNOME=	glib20 libxml2 libxslt
 USE_GL=		gl
 USE_QT5=	buildtools_build uitools_build core gui network xml \

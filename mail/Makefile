@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 449193 2017-09-03 09:51:31Z rene $
+# $FreeBSD: head/mail/Makefile 450348 2017-09-22 10:19:41Z rene $
 #
 
     COMMENT = Electronic mail utilities
@@ -238,7 +238,6 @@
     SUBDIR += milter-bogom
     SUBDIR += milter-callback
     SUBDIR += milter-greylist
-    SUBDIR += milter-greylist-devel
     SUBDIR += milter-manager
     SUBDIR += milter-regex
     SUBDIR += milter-skem

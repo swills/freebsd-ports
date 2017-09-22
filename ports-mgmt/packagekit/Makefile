@@ -1,5 +1,5 @@
 # Created by: Anders F Bjorklund <afb@users.sourceforge.net>
-# $FreeBSD: head/ports-mgmt/packagekit/Makefile 447403 2017-08-05 13:15:09Z koobs $
+# $FreeBSD: head/ports-mgmt/packagekit/Makefile 450353 2017-09-22 10:48:57Z mat $
 #   $MCom: ports/ports-mgmt/packagekit/Makefile,v 1.26 2010/10/10 15:49:51 marcus Exp $
 
 PORTNAME=	PackageKit
@@ -20,7 +20,7 @@ RUN_DEPENDS=	lsof:sysutils/lsof \
 
 IGNORE=		does not build with new polkit
 
-USES=		cpe execinfo gettext gmake iconv libtool pathfix pkgconfig \
+USES=		cpe gettext gmake iconv libtool pathfix pkgconfig \
 		python:build shared-mime-info shebangfix sqlite:3
 CPE_VENDOR=	packagekit_project
 SHEBANG_FILES=	backends/test/helpers/search-name.sh \
@@ -28,8 +28,7 @@ SHEBANG_FILES=	backends/test/helpers/search-name.sh \
 USE_GNOME=	glib20 intltool introspection
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib -lexecinfo
+LIBS+=		-lexecinfo
 CONFIGURE_ARGS+=--with-security-framework=polkit \
 		--localstatedir=/var \
 		--disable-static \

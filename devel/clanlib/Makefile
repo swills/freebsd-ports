@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/clanlib/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/clanlib/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	clanlib
 PORTVERSION=	2.3.7
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libpcre.so:devel/pcre
 
-USES=		compiler:c++11-lib execinfo gmake jpeg libtool localbase:ldflags \
+USES=		compiler:c++11-lib gmake jpeg libtool localbase:ldflags \
 		pathfix pkgconfig sqlite tar:tgz
 USE_XORG=	x11
 USE_LDCONFIG=	yes

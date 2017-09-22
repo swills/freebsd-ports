@@ -1,5 +1,5 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/graphics/cegui/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/cegui/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	cegui
 PORTVERSION=	0.8.4
@@ -17,7 +17,7 @@ CONFIGURE_ENV+=	TOLUA_INC="${LUA_INCDIR}"
 CMAKE_ARGS=	-DCEGUI_SAMPLES_ENABLED:BOOL=OFF \
 		-DCEGUI_BUILD_TESTS=OFF
 USE_LDCONFIG=	yes
-USES=		compiler:c++11-lib cmake execinfo pkgconfig tar:bzip2
+USES=		compiler:c++11-lib cmake pkgconfig tar:bzip2
 
 PORTDOCS=	*
 

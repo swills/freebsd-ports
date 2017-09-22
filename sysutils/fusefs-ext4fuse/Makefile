@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/sysutils/fusefs-ext4fuse/Makefile 403895 2015-12-17 07:49:54Z ehaupt $
+# $FreeBSD: head/sysutils/fusefs-ext4fuse/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	ext4fuse
 PORTVERSION=	0.1.3
@@ -13,7 +13,7 @@ COMMENT=	EXT4 implementation for FUSE
 
 LICENSE=	GPLv2
 
-USES=		execinfo fuse pkgconfig gmake
+USES=		fuse pkgconfig gmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	gerard
 

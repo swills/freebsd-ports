@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/www/rubygem-typhoeus/Makefile 427970 2016-12-06 14:53:36Z sunpoet $
+# $FreeBSD: head/www/rubygem-typhoeus/Makefile 450294 2017-09-21 17:22:04Z sunpoet $
 
 PORTNAME=	typhoeus
-PORTVERSION=	1.1.2
+PORTVERSION=	1.3.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

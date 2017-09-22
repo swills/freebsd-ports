@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/print/scribus/Makefile 448295 2017-08-19 10:28:29Z bsam $
+# $FreeBSD: head/print/scribus/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	scribus
 PORTVERSION=	1.4.6
@@ -29,7 +29,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter \
 
 USE_QT4=	corelib gui linguist_build moc_build qmake_build rcc_build uic_build xml network
 USE_GNOME=	libartlgpl2 libxml2
-USES=		cmake:outsource desktop-file-utils execinfo ghostscript:run jpeg \
+USES=		cmake:outsource desktop-file-utils ghostscript:run jpeg \
 		pkgconfig python shared-mime-info tar:xz
 USE_LDCONFIG=	yes
 

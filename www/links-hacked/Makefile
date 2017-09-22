@@ -1,5 +1,5 @@
 # Created by: Peter Vereshagin <peter@vereshagin.org>
-# $FreeBSD: head/www/links-hacked/Makefile 417919 2016-07-02 10:29:47Z brnrd $
+# $FreeBSD: head/www/links-hacked/Makefile 450353 2017-09-22 10:48:57Z mat $
 
 PORTNAME=	links-hacked
 DISTVERSION=	101110
@@ -12,14 +12,13 @@ COMMENT=	Hacked version of a Links WWW browser
 
 LICENSE=	GPLv2
 
-USES=		autoreconf execinfo ssl
+USES=		autoreconf ssl
 USE_CSTD=	gnu89
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-ssl --without-pmshell --without-atheos --without-fb
 
 CFLAGS+=	-Wno-error=return-type
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib -lexecinfo
+LDFLAGS+=	-lexecinfo
 
 CONFLICTS=	links-[0-9]*
 

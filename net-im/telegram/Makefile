@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/net-im/telegram/Makefile 444532 2017-06-28 00:51:05Z cpm $
+# $FreeBSD: head/net-im/telegram/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	telegram
 PORTVERSION=	1.4.1.g20161227
@@ -20,7 +20,7 @@ BROKEN_mips=	Missing header
 BROKEN_mips64=	Missing header
 BROKEN_powerpc64=	Does not build: Assertion failed: (get_int () == TLS_SCHEMA_V2)
 
-USES=		execinfo gmake lua:52 ncurses pkgconfig readline ssl
+USES=		gmake lua:52 ncurses pkgconfig readline ssl
 GNU_CONFIGURE=	yes
 
 USE_GITHUB=	yes

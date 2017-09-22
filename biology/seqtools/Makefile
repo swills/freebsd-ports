@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/seqtools/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/biology/seqtools/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	seqtools
 PORTVERSION=	4.44.1
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 
 BROKEN_powerpc64=	fails to compile: jsoncpp.cpp: 'snprintf' is not a member of 'std'
 
-USES=		compiler:c++14-lang execinfo gettext libtool pkgconfig
+USES=		compiler:c++14-lang gettext libtool pkgconfig
 GNU_CONFIGURE=	yes
 USE_GNOME=	cairo gdkpixbuf2 gtk20
 USE_XORG=	x11

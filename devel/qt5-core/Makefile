@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt5-core/Makefile 446462 2017-07-23 10:56:02Z tcberner $
+# $FreeBSD: head/devel/qt5-core/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	core
 DISTVERSION=	${QT5_VERSION}
@@ -12,7 +12,6 @@ COMMENT=	Qt core non-graphical module
 LIB_DEPENDS=	libicui18n.so:devel/icu \
 		libpcre.so:devel/pcre
 
-USES=		execinfo
 USE_GNOME=	glib20
 USE_QT5=	qmake_build buildtools_build
 QT_DIST=	base

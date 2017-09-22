@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/dpdk/Makefile 423416 2016-10-06 16:23:45Z amdmi3 $
+# $FreeBSD: head/net/dpdk/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	dpdk
 PORTVERSION=	16.07
@@ -11,7 +11,7 @@ COMMENT=	DPDK: Software libraries for packet processing
 
 LICENSE=	BSD3CLAUSE
 
-USES=		execinfo gmake kmod
+USES=		gmake kmod
 MAKEFILE=	GNUmakefile
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=	Only works on 64-bit x86 hardware
@@ -37,11 +37,6 @@ EXEC_FILES=	app/cmdline_test \
 		app/testpmd \
 		app/testacl \
 		app/test
-
-post-patch:
-	@${REINPLACE_CMD} -e 's|%%EXECINFO_CPPFLAGS%%|${EXECINFO_CPPFLAGS}|g' \
-		-e 's|%%EXECINFO_LDFLAGS%%|${EXECINFO_LDFLAGS}|g' \
-		${WRKSRC}/mk/exec-env/bsdapp/rte.vars.mk
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}/${RTE_TARGET}/app \

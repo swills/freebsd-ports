@@ -1,5 +1,5 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/games/ufoai/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/ufoai/Makefile 450353 2017-09-22 10:48:57Z mat $
 
 PORTNAME=	ufoai
 PORTVERSION=	2.5
@@ -25,13 +25,11 @@ ALL_TARGET=	all lang
 USE_GL=		yes
 USE_SDL=	sdl image mixer ttf
 USE_CXXSTD=	c++11
-USES=		compiler:c++11-lang execinfo gettext gmake jpeg openal:soft pkgconfig \
+USES=		compiler:c++11-lang gettext gmake jpeg openal:soft pkgconfig \
 		python:build tar:bzip2
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--enable-release --target-os=freebsd
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-lpthread -L${LOCALBASE}/lib -lexecinfo
-CFLAGS+=	-I${LOCALBASE}/include
+LDFLAGS+=	-lpthread -lexecinfo
 
 DATADIR=	share/${PORTNAME}
 SUB_FILES=	pkg-message

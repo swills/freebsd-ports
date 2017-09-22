@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/gdm/Makefile 448481 2017-08-21 16:55:01Z mat $
+# $FreeBSD: head/x11/gdm/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	gdm
 PORTVERSION=	3.16.4
@@ -41,7 +41,7 @@ GROUPS=		gdm
 
 PORTSCOUT=	limitw:1,even
 
-USES=		cpe execinfo gettext gmake libtool pathfix pkgconfig tar:xz
+USES=		cpe gettext gmake libtool pathfix pkgconfig tar:xz
 CPE_VENDOR=	gnome
 CPE_VENDOR=	gnome_display_manager
 USE_GNOME=	dconf intlhack introspection librsvg2

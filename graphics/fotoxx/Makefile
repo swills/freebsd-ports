@@ -1,5 +1,5 @@
 # Created by: Rod Person <rodperson@rodperson.com>
-# $FreeBSD: head/graphics/fotoxx/Makefile 415839 2016-05-25 15:43:34Z mat $
+# $FreeBSD: head/graphics/fotoxx/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	fotoxx
 PORTVERSION=	15.05
@@ -18,7 +18,7 @@ RUN_DEPENDS=	xdg-open:devel/xdg-utils \
 		exiftool:graphics/p5-Image-ExifTool \
 		ufraw-batch:graphics/ufraw
 
-USES=		desktop-file-utils execinfo gmake pkgconfig
+USES=		desktop-file-utils gmake pkgconfig
 USE_GNOME=	gtk30
 ALL_TARGET=	fotoxx
 

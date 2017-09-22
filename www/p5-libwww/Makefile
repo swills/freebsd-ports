@@ -1,8 +1,8 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/www/p5-libwww/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-libwww/Makefile 450332 2017-09-22 09:13:31Z sunpoet $
 
 PORTNAME=	libwww
-PORTVERSION=	6.26
+PORTVERSION=	6.27
 DISTVERSIONPREFIX=	perl-
 CATEGORIES=	www devel perl5
 MASTER_SITES=	CPAN

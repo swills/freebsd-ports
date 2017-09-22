@@ -1,5 +1,5 @@
 # Created by: Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
-# $FreeBSD: head/x11-wm/enlightenment/Makefile 450248 2017-09-21 10:54:03Z gblach $
+# $FreeBSD: head/x11-wm/enlightenment/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	enlightenment
 PORTVERSION=	0.21.9
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libefl.so:devel/efl \
 		libxcb-keysyms.so:x11/xcb-util-keysyms
 
 GNU_CONFIGURE=	yes
-USES=		alias autoreconf desktop-file-utils execinfo gettext-tools \
+USES=		alias autoreconf desktop-file-utils gettext-tools \
 		gmake iconv libtool pathfix pkgconfig tar:xz
 USE_XORG=	xcb
 USE_LDCONFIG=	yes

@@ -1,5 +1,5 @@
 # Created by: Pakhom Golynga <pakhom@pakhom.spb.ru>
-# $FreeBSD: head/net-mgmt/zabbix22-server/Makefile 448070 2017-08-16 23:28:38Z dbaio $
+# $FreeBSD: head/net-mgmt/zabbix22-server/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	zabbix22
 PORTVERSION=	2.2.19
@@ -55,11 +55,6 @@ CONFIGURE_ARGS+=	--enable-${ZABBIX_BUILD} \
 			--with-iconv=${ICONV_PREFIX}
 
 .if ${ZABBIX_BUILD} != "agent"
-USES+=		execinfo
-
-CPPFLAGS+=	${EXECINFO_CPPFLAGS}
-LDFLAGS+=	${EXECINFO_LDFLAGS}
-
 SUB_FILES=	pkg-message
 
 CONFIGURE_ARGS+=	--with-net-snmp

@@ -1,5 +1,5 @@
 # Created by: matthew.closson@gmail.com
-# $FreeBSD: head/devel/libCello/Makefile 390631 2015-06-26 12:48:37Z amdmi3 $
+# $FreeBSD: head/devel/libCello/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	libCello
 PORTVERSION=	1.1.7
@@ -13,10 +13,8 @@ COMMENT=	Higher level programming in C
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-USES=		dos2unix execinfo gmake
+USES=		dos2unix gmake
 DOS2UNIX_FILES=	Makefile
-
-CFLAGS+=	${EXECINFO_CPPFLAGS}
 
 post-patch:
 	${REINPLACE_CMD} -E 's| abs\(| labs\(|' ${WRKSRC}/src/*.c

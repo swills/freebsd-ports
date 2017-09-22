@@ -1,5 +1,5 @@
 # Created by: gpalmer
-# $FreeBSD: head/lang/smalltalk/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/lang/smalltalk/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	smalltalk
 PORTVERSION=	3.2.5
@@ -23,7 +23,7 @@ TK_CONFIGURE_WITH=tcl=${LOCALBASE}/lib/tcl8.4 tk=${LOCALBASE}/lib/tk8.4
 PGSQL_USES=	pgsql
 SDL_USE=	SDL=image,mixer,sdl,sound,ttf
 
-USES=		execinfo gmake iconv libtool localbase makeinfo pathfix pkgconfig \
+USES=		gmake iconv libtool localbase makeinfo pathfix pkgconfig \
 		shebangfix sqlite tar:xz
 USE_GNOME=	pango
 USE_XORG=	ice xi xmu

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/qupzilla-qt5/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/www/qupzilla-qt5/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	qupzilla
 PORTVERSION=	1.8.9
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell
 
 CONFLICTS_INSTALL=	${PORTNAME}-qt4*
 
-USES=		desktop-file-utils execinfo pkgconfig qmake ssl tar:xz
+USES=		desktop-file-utils pkgconfig qmake ssl tar:xz
 USE_QT5=	core concurrent gui network printsupport script sql webkit \
 		widgets x11extras xml imageformats_run sql-sqlite3_run \
 		buildtools_build linguisttools_build

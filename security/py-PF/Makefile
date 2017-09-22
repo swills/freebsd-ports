@@ -1,8 +1,8 @@
 # Created by: Sofian Brabez <sbrabez@gmail.com>
-# $FreeBSD: head/security/py-PF/Makefile 387528 2015-05-27 00:09:55Z amdmi3 $
+# $FreeBSD: head/security/py-PF/Makefile 450347 2017-09-22 10:16:15Z sbz $
 
 PORTNAME=	PF
-PORTVERSION=	0.0.8
+PORTVERSION=	0.1.1
 CATEGORIES=	security python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

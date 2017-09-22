@@ -1,5 +1,5 @@
 # Created by: Jim Riggs <ports@christianserving.org>
-# $FreeBSD: head/net-mgmt/zabbix2-server/Makefile 444367 2017-06-26 13:20:57Z dbaio $
+# $FreeBSD: head/net-mgmt/zabbix2-server/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	zabbix2
 PORTVERSION=	2.0.20
@@ -55,11 +55,6 @@ CONFIGURE_ARGS+=	--enable-${ZABBIX_BUILD} \
 			--datadir=${ETCDIR}
 
 .if ${ZABBIX_BUILD} != "agent"
-USES+=		execinfo
-
-CPPFLAGS+=	${EXECINFO_CPPFLAGS}
-LDFLAGS+=	${EXECINFO_LDFLAGS}
-
 SUB_FILES=	pkg-message
 
 CONFIGURE_ARGS+=	--with-net-snmp

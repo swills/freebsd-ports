@@ -1,5 +1,5 @@
 # Created by: KANOU Hiroki <kanou@khdd.net>
-# $FreeBSD: head/print/fontforge/Makefile 448177 2017-08-17 19:10:22Z swills $
+# $FreeBSD: head/print/fontforge/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	fontforge
 PORTVERSION=	20170731
@@ -25,7 +25,7 @@ LIB_DEPENDS=	libuninameslist.so:textproc/libuninameslist \
 
 USE_GITHUB=	yes
 
-USES=		autoreconf:build compiler desktop-file-utils execinfo gettext \
+USES=		autoreconf:build compiler desktop-file-utils gettext \
 		gmake iconv jpeg libtool pkgconfig python readline:port \
 		shared-mime-info shebangfix
 SHEBANG_FILES=	pycontrib/gdraw/__init__.py \

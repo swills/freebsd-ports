@@ -1,5 +1,5 @@
 # Created by: Doug Barton <dougb@FreeBSD.org>
-# $FreeBSD: head/net-p2p/qbittorrent/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net-p2p/qbittorrent/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	qbittorrent
 PORTVERSION=	3.3.15
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libtorrent-rasterbar.so:net-p2p/libtorrent-rasterbar \
 		libboost_system.so:devel/boost-libs
 
-USES=		compiler:c++11-lib execinfo pkgconfig tar:xz
+USES=		compiler:c++11-lib pkgconfig tar:xz
 GNU_CONFIGURE=	yes
 USE_QT5=	core network xml qmake_build buildtools_build linguisttools_build
 QT_NONSTANDARD=	yes

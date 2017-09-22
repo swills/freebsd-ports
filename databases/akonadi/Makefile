@@ -1,5 +1,5 @@
 # Created by: miwi
-# $FreeBSD: head/databases/akonadi/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/databases/akonadi/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	akonadi
 PORTVERSION=	1.13.0
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 # Let process generate meaningful backtrace on core dump.
 BUILD_DEPENDS=	xsltproc:textproc/libxslt
 
-USES=		cmake:outsource execinfo kde:4 shared-mime-info \
+USES=		cmake:outsource kde:4 shared-mime-info \
 		compiler:c++11-lang pathfix tar:bzip2
 USE_KDE=	automoc4 soprano
 USE_QT4=	corelib dbus gui network qtestlib_build sql xml \

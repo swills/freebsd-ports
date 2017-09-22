@@ -1,5 +1,5 @@
 # Created by: LoÃ¯c BARTOLETTI
-# $FreeBSD: head/databases/pgmodeler/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/databases/pgmodeler/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	pgmodeler
 PORTVERSION=	0.9.0
@@ -13,7 +13,7 @@ COMMENT=	PostgreSQL Database Modeler
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		compiler:c++11-lib execinfo pgsql qmake pkgconfig gmake
+USES=		compiler:c++11-lib pgsql qmake pkgconfig gmake
 USE_GITHUB=	yes
 
 USE_GNOME=	libxml2

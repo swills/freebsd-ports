@@ -1,5 +1,5 @@
 # Created by: erich@FreeBSD.org
-# $FreeBSD: head/graphics/gimp-app/Makefile 448669 2017-08-24 13:45:13Z swills $
+# $FreeBSD: head/graphics/gimp-app/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME?=	gimp-app
 PORTVERSION=	2.8.22
@@ -27,7 +27,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/iso-codes.pc:misc/iso-codes
 
 GNU_CONFIGURE=	yes
-USES+=		cpe execinfo gettext gmake jpeg libtool \
+USES+=		cpe gettext gmake jpeg libtool \
 		localbase pathfix pkgconfig shebangfix tar:bzip2
 USE_XORG=	ice sm xcursor xext xfixes xmu xpm xt x11
 USE_GNOME+=	cairo gtk20 intlhack

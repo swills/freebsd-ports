@@ -1,5 +1,5 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/net/freerdp/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net/freerdp/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	freerdp
 DISTVERSION=	2.0.0-rc0
@@ -16,7 +16,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	FreeRDP
 GH_PROJECT=	${GH_ACCOUNT}
 
-USES=		alias cmake:outsource compiler:c++11-lib cpe execinfo gettext localbase pathfix pkgconfig ssl
+USES=		alias cmake:outsource compiler:c++11-lib cpe gettext localbase pathfix pkgconfig ssl
 USE_LDCONFIG=	yes
 CPE_VENDOR=	freerdp_project
 

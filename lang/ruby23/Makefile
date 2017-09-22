@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/lang/ruby23/Makefile 445549 2017-07-11 21:03:09Z swills $
+# $FreeBSD: head/lang/ruby23/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	ruby
 PORTVERSION=	${RUBY_PORTVERSION}
@@ -39,7 +39,7 @@ GNU_CONFIGURE=	yes
 # Keep this, else ruby will fail to load libraries dependent of libpthread.
 LIBS+=		-lpthread -L${LOCALBASE}/lib
 USE_LDCONFIG=	yes
-USES=		autoreconf cpe execinfo ssl tar:xz
+USES=		autoreconf cpe ssl tar:xz
 WRKSRC=		${RUBY_WRKSRC}
 
 RUBY_VER=		2.3

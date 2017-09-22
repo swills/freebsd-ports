@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/facter/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/sysutils/facter/Makefile 450361 2017-09-22 12:28:15Z romain $
 
 PORTNAME=	facter
-PORTVERSION=	3.8.0
-PORTREVISION?=	2
+PORTVERSION=	3.9.0
+PORTREVISION?=	0
 CATEGORIES?=	sysutils
 MASTER_SITES=	http://downloads.puppetlabs.com/facter/
 
@@ -40,7 +40,7 @@ post-patch:
 
 test: build
 	cd ${WRKSRC}/lib && bundle install --path vendor
-	cd ${WRKSRC} && ninja test
+	cd ${WRKSRC} && ${MAKE_CMD} test
 
 .elif ${PKGNAMEPREFIX} == java-
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm50/Makefile 450206 2017-09-20 16:05:58Z brooks $
+# $FreeBSD: head/devel/llvm50/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	llvm
 DISTVERSION=	5.0.0
@@ -93,7 +93,6 @@ LLDB_BUILD_DEPENDS=	swig3.0:devel/swig30
 LLDB_DESC=		Install lldb, the LLVM debugger
 LLDB_DISTFILES=		lldb-${DISTVERSION}.src${EXTRACT_SUFX}
 LLDB_IMPLIES=		CLANG
-LLDB_USES=		execinfo
 LLDB_VARS=		_USES_PYTHON=python
 OPENMP_DESC=		Install libomp, the LLVM OpenMP runtime library
 OPENMP_DISTFILES=	openmp-${DISTVERSION}.src${EXTRACT_SUFX}

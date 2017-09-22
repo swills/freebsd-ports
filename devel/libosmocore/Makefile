@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libosmocore/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/devel/libosmocore/Makefile 450353 2017-09-22 10:48:57Z mat $
 
 PORTNAME=	libosmocore
 PORTVERSION=	0.9.0
@@ -14,9 +14,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpcsclite.so:devel/pcsc-lite
 
-USES=		alias autoreconf execinfo gmake libtool pathfix pkgconfig
+USES=		alias autoreconf gmake libtool pathfix pkgconfig
 GNU_CONFIGURE=	yes
-LDFLAGS+=	-L${LOCALBASE}/lib -lexecinfo
+LDFLAGS+=	-lexecinfo
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 PORTDOCS=	*

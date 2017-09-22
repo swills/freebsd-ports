@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/databases/twemproxy/Makefile 396903 2015-09-14 15:29:54Z skreuzer $
+# $FreeBSD: head/databases/twemproxy/Makefile 450353 2017-09-22 10:48:57Z mat $
 
 PORTNAME=	twemproxy
 PORTVERSION=	0.4.1
@@ -14,10 +14,9 @@ LICENSE=	APACHE20
 USE_GITHUB=	yes
 GH_ACCOUNT=	twitter
 
-USES=		execinfo autoreconf libtool
+USES=		autoreconf libtool
 
-CFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib -lexecinfo
+LDFLAGS+=	-lexecinfo
 
 PLIST_FILES=	sbin/nutcracker \
 		man/man8/nutcracker.8.gz \

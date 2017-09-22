@@ -1,8 +1,8 @@
 # Created by: amistry@am-productions.biz
-# $FreeBSD: head/print/hplip-plugin/Makefile 447928 2017-08-14 11:36:57Z woodsb02 $
+# $FreeBSD: head/print/hplip-plugin/Makefile 450329 2017-09-22 09:04:22Z woodsb02 $
 
 PORTNAME=	hplip-plugin
-PORTVERSION=	3.17.7
+PORTVERSION=	3.17.9
 CATEGORIES=	print
 MASTER_SITES=	http://hplipopensource.com/hplip-web/plugin/
 DISTNAME=	hplip-${DISTVERSION}-plugin

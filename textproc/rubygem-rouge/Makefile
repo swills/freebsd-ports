@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-rouge/Makefile 420026 2016-08-10 14:22:05Z tz $
+# $FreeBSD: head/textproc/rubygem-rouge/Makefile 450270 2017-09-21 15:58:41Z sunpoet $
 
 PORTNAME=	rouge
 PORTVERSION=	2.0.5
@@ -8,7 +8,8 @@ MASTER_SITES=	RG
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Simple, easy-to-extend drop-in replacement for pygments
 
-LICENSE=	MIT
+LICENSE=	BSD2CLAUSE MIT
+LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_ARCH=	yes

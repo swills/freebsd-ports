@@ -1,5 +1,5 @@
 # Created by: Sergey Kozlov <sergey.kozlov@intel.com>
-# $FreeBSD: head/net/intel-ixl-kmod/Makefile 436166 2017-03-14 17:10:53Z pi $
+# $FreeBSD: head/net/intel-ixl-kmod/Makefile 450322 2017-09-22 08:30:36Z mat $
 
 PORTNAME?=	ixl
 PORTVERSION?=	1.7.11
@@ -14,6 +14,8 @@ MAINTAINER?=	freebsd@intel.com
 COMMENT?=	40 gigabit FreeBSD Base Driver for Intel(R) Network Connections
 
 LICENSE=	BSD2CLAUSE
+
+BROKEN=		Does not fetch.
 
 # Present version of net/intel-em-kmod has issues building with netmap(4)
 # support on 11+. Narrowing netmap(4) support to this port only

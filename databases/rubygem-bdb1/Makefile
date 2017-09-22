@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/rubygem-bdb1/Makefile 439170 2017-04-22 12:45:43Z miwi $
+# $FreeBSD: head/databases/rubygem-bdb1/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	bdb1
 PORTVERSION=	0.2.5
@@ -13,7 +13,7 @@ LICENSE=	BSD2CLAUSE RUBY
 LICENSE_COMB=	dual
 
 USE_RUBY=	yes
-USES=		execinfo gem shebangfix
+USES=		gem shebangfix
 SHEBANG_FILES=	examples/*.rb
 
 .include <bsd.port.pre.mk>

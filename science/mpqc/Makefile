@@ -1,5 +1,5 @@
 # Created by: batman <batman@udel.edu>
-# $FreeBSD: head/science/mpqc/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/science/mpqc/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	mpqc
 PORTVERSION=	2.3.1
@@ -45,7 +45,6 @@ MPICH_LIB_DEPENDS=	libmpich.so:net/mpich2
 DOCS_BUILD_DEPENDS=	doxygen:devel/doxygen \
 			dot:graphics/graphviz \
 			${LOCALBASE}/bin/gsed:textproc/gsed
-DOCS_USES=		execinfo
 DOCS_USE=		TEX=latex:build
 
 .include <bsd.port.options.mk>

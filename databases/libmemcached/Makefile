@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/libmemcached/Makefile 443036 2017-06-09 19:06:41Z matthew $
+# $FreeBSD: head/databases/libmemcached/Makefile 450353 2017-09-22 10:48:57Z mat $
 
 PORTNAME=	libmemcached
 PORTVERSION=	1.0.18
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS?=	libevent.so:devel/libevent
 TEST_DEPENDS=	memcached:databases/memcached
 
-USES=		autoreconf execinfo gmake libtool localbase pathfix pkgconfig
+USES=		autoreconf gmake libtool localbase pathfix pkgconfig
 USE_LDCONFIG=	yes
 
 GNU_CONFIGURE=	yes
@@ -23,7 +23,7 @@ CONFIGURE_ARGS=	--without-memcached \
 		--without-sphinx-build \
 		--enable-libmemcachedprotocol
 
-LIBS+=		-L${LOCALBASE}/lib -lexecinfo
+LIBS+=		-lexecinfo
 CXXFLAGS+=	-D__STDC_CONSTANT_MACROS -pthread
 
 OPTIONS_DEFINE=		DEBUG DTRACE MEMASLAP SASL

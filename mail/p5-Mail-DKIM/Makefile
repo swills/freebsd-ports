@@ -1,8 +1,8 @@
 # Created by: Yoshisato YANAGISAWA
-# $FreeBSD: head/mail/p5-Mail-DKIM/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-Mail-DKIM/Makefile 450283 2017-09-21 17:21:07Z sunpoet $
 
 PORTNAME=	Mail-DKIM
-PORTVERSION=	0.42
+PORTVERSION=	0.43
 CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN \
 		http://jason.long.name/dkimproxy/

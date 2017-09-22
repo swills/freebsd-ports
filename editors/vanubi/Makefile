@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/editors/vanubi/Makefile 449337 2017-09-06 11:21:07Z cpm $
+# $FreeBSD: head/editors/vanubi/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	vanubi
 PORTVERSION=	0.0.16
@@ -21,7 +21,7 @@ BUILD_DEPENDS=	valac:lang/vala
 GH_TAGNAME=	eedac1d
 
 USE_GITHUB=	yes
-USES=		autoreconf desktop-file-utils execinfo gmake libtool pkgconfig
+USES=		autoreconf desktop-file-utils gmake libtool pkgconfig
 GNU_CONFIGURE=	yes
 USE_GNOME=	glib20 gtk30 gtksourceview3 libwnck3 vte3
 USE_LDCONFIG=	yes

@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/audio/sayonara/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/audio/sayonara/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	sayonara
 PORTVERSION=	0.9.2
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/license.txt
 LIB_DEPENDS=	libtag.so:audio/taglib \
 		libmtp.so:multimedia/libmtp
 
-USES=		cmake compiler:c++11-lib execinfo pkgconfig
+USES=		cmake compiler:c++11-lib pkgconfig
 USE_GSTREAMER1=	flac mpg123 ogg opus vorbis	# XXX: likely incomplete
 USE_QT5=	dbus core gui network sql sql-sqlite3_run widgets xml \
 		buildtools_build qmake_build linguisttools_build

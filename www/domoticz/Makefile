@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/domoticz/Makefile 448203 2017-08-18 03:14:03Z swills $
+# $FreeBSD: head/www/domoticz/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	domoticz
 PORTVERSION=	3.${DOMOTICZ_REL}
@@ -34,7 +34,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	domoticz
 GH_PROJECT=	domoticz
 
-USES=		cmake iconv pkgconfig execinfo ssl
+USES=		cmake iconv pkgconfig ssl
 
 USE_RC_SUBR=	domoticz
 

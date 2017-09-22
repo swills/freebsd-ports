@@ -1,8 +1,8 @@
 # Created by: Wen heping<wenheping@gmail.com>
-# $FreeBSD: head/graphics/geoserver/Makefile 438392 2017-04-12 17:19:23Z bofh $
+# $FreeBSD: head/graphics/geoserver/Makefile 450299 2017-09-21 18:37:03Z bofh $
 
 PORTNAME=	geoserver
-PORTVERSION=	2.10.2
+PORTVERSION=	2.11.2
 CATEGORIES=	graphics geography java
 MASTER_SITES=	SF/${PORTNAME}/GeoServer/${PORTVERSION}
 DISTNAME=	${PORTNAME}-${PORTVERSION}-bin

@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/dangerdeep/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/dangerdeep/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	dangerdeep
 PORTVERSION=	0.3.0
@@ -14,7 +14,7 @@ COMMENT=	Open source World War II German submarine simulation
 LIB_DEPENDS=	libfftw3.so:math/fftw3
 RUN_DEPENDS=	dangerdeep-data>0:games/dangerdeep-data
 
-USES=		execinfo scons
+USES=		scons
 USE_GL=		yes
 USE_SDL=	sdl mixer image net
 

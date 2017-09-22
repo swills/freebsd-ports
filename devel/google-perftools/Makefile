@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/google-perftools/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/google-perftools/Makefile 450353 2017-09-22 10:48:57Z mat $
 
 PORTNAME=	google-perftools
 PORTVERSION=	2.6.1
@@ -24,12 +24,11 @@ WRKSRC=		${WRKDIR}/gperftools-${PORTVERSION}
 DOCSDIR=	${PREFIX}/share/doc/gperftools
 
 GNU_CONFIGURE=	yes
-USES=		compiler execinfo gmake libtool
+USES=		compiler gmake libtool
 USE_LDCONFIG=	yes
 TEST_TARGET=	check
 
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib -lexecinfo
+LIBS+=		-lexecinfo
 
 OPTIONS_DEFINE=	DOCS
 OPTIONS_DEFAULT=PAGE8K ALIGN16

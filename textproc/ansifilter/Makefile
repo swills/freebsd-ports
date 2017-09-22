@@ -1,12 +1,12 @@
 # Created by: Yi-Jheng Lin <yzlin@cs.nctu.edu.tw>
-# $FreeBSD: head/textproc/ansifilter/Makefile 440860 2017-05-13 23:50:49Z linimon $
+# $FreeBSD: head/textproc/ansifilter/Makefile 450273 2017-09-21 16:23:22Z bofh $
 
 PORTNAME=	ansifilter
-PORTVERSION=	2.3
+PORTVERSION=	2.8
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.andre-simon.de/zip/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Customizable ANSI Code Converter
 
 LICENSE=	GPLv3+

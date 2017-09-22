@@ -1,9 +1,9 @@
 # Created by: Nikolai Lifanov <lifanov@mail.lifanov.com>
-# $FreeBSD: head/sysutils/ansible/Makefile 450168 2017-09-19 20:52:14Z lifanov $
+# $FreeBSD: head/sysutils/ansible/Makefile 450357 2017-09-22 12:20:11Z lifanov $
 
 PORTNAME=	ansible
 PORTVERSION?=	2.4.0.0
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	sysutils python
 MASTER_SITES=	http://releases.ansible.com/ansible/
 
@@ -46,9 +46,9 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-patch:
 	${FIND} ${WRKSRC} -type f | ${XARGS} ${REINPLACE_CMD} \
-		-e 's|/usr/bin/python|${PYTHON_CMD}|'
-		-e 's|/etc/ansible|${ETCDIR}|' \
-		-e 's|/usr/share/ansible|${DATADIR}|'
+		-e 's|/usr/bin/python|${PYTHON_CMD}|g' \
+		-e 's|/etc/ansible|${ETCDIR}|g' \
+		-e 's|/usr/share/ansible|${DATADIR}|g'
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${MAN1PREFIX}/man/man1

@@ -1,5 +1,5 @@
 # Created by: Jin-Sih, Lin <linpct@gmail.com>
-# $FreeBSD: head/sysutils/watchman/Makefile 421635 2016-09-09 19:42:46Z amdmi3 $
+# $FreeBSD: head/sysutils/watchman/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	watchman
 PORTVERSION=	4.5.0
@@ -28,9 +28,6 @@ OPTIONS_DEFINE=	BACKTRACE PCRE
 OPTIONS_DEFAULT=BACKTRACE PCRE
 
 BACKTRACE_DESC=		Stack backtrace support via (lib)execinfo
-BACKTRACE_USES=		execinfo
-BACKTRACE_CPPFLAGS=	${EXECINFO_CPPFLAGS}
-BACKTRACE_LDFLAGS=	${EXECINFO_LDFLAGS}
 BACKTRACE_LIBS=		-lexecinfo
 
 PCRE_LIB_DEPENDS=	libpcre.so:devel/pcre

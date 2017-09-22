@@ -1,7 +1,7 @@
-# $FreeBSD: head/lang/myrddin/Makefile 436084 2017-03-13 15:11:11Z tobik $
+# $FreeBSD: head/lang/myrddin/Makefile 450355 2017-09-22 11:11:02Z tobik $
 
 PORTNAME=	myrddin
-PORTVERSION=	0.1.1
+PORTVERSION=	0.2.0
 CATEGORIES=	lang
 MASTER_SITES=	http://myrlang.org/releases/
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/simutrans/Makefile 446851 2017-07-28 21:14:57Z tijl $
+# $FreeBSD: head/games/simutrans/Makefile 450310 2017-09-21 23:34:52Z jbeich $
 
 PORTNAME=	simutrans
 DISTVERSION=	120-2-2
@@ -37,8 +37,7 @@ MAKE_ARGS=	BACKEND=mixer_sdl \
 		FLAGS="-DUSE_C -DREVISION=${SIMUTRANS_REVISION}" \
 		VERBOSE=1
 NO_WRKSUBDIR=	yes
-USES=		dos2unix gmake zip
-DOS2UNIX_FILES=	gui/loadsave_frame.h
+USES=		gmake zip
 USE_SDL=	sdl mixer
 
 DESKTOP_ENTRIES=Simutrans "" "" simutrans "Game;Simulation;" false

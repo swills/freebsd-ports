@@ -1,5 +1,5 @@
 # Created by: Horia Racoviceanu <horia@racoviceanu.com>
-# $FreeBSD: head/databases/galera/Makefile 446741 2017-07-27 13:57:30Z mat $
+# $FreeBSD: head/databases/galera/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	galera
 PORTVERSION?=	25.3.21
@@ -28,7 +28,7 @@ NOT_FOR_ARCHS=		i386
 # https://tracker.crystax.net/issues/1263
 NOT_FOR_ARCHS_REASON_i386=Uses 64 bit atomics that clang cannot generate on i386
 
-USES=		execinfo python:build scons ssl
+USES=		python:build scons ssl
 
 USE_LDCONFIG=	yes
 

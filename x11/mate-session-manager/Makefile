@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/mate-session-manager/Makefile 447399 2017-08-05 10:58:48Z kwm $
+# $FreeBSD: head/x11/mate-session-manager/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	mate-session-manager
 PORTVERSION=	1.18.0
@@ -19,7 +19,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/console-kit-daemon:sysutils/consolekit2 \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		execinfo gettext gmake localbase libtool pathfix \
+USES=		gettext gmake localbase libtool pathfix \
 		pkgconfig tar:xz
 USE_MATE=	desktop
 USE_XORG=	ice sm x11 xau xext xrandr xrender xtrans xtst

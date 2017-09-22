@@ -1,5 +1,5 @@
 # Created by: Mirko Zinn <mail@derzinn.de>
-# $FreeBSD: head/databases/mongodb/Makefile 446250 2017-07-20 09:14:16Z jbeich $
+# $FreeBSD: head/databases/mongodb/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	mongodb
 PORTVERSION=	2.6.12
@@ -34,7 +34,7 @@ OPTIONS_DEFINE=	SSL SASL TEST
 OPTIONS_DEFAULT=SSL
 TEST_DESC=	Add support for running regression test
 
-USES=		cpe execinfo scons
+USES=		cpe scons
 MAKE_ARGS=	--prefix=${STAGEDIR}${PREFIX} --cc=${CC} --cxx=${CXX} \
 		--use-system-pcre --use-system-snappy --use-system-v8
 

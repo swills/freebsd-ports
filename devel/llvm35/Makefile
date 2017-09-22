@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm35/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/llvm35/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	llvm
 DISTVERSION=	3.5.2
@@ -18,7 +18,7 @@ DATADIR=	${PREFIX}/share/${PORTNAME}${LLVM_SUFFIX}
 
 WRKSRC=		${WRKDIR}/llvm-${DISTVERSION}.src
 
-USES=		compiler:c++11-lib execinfo gmake perl5 tar:xz libedit \
+USES=		compiler:c++11-lib gmake perl5 tar:xz libedit \
 		shebangfix
 GNU_CONFIGURE=	yes
 GNU_CONFIGURE_PREFIX=	${LLVM_PREFIX}

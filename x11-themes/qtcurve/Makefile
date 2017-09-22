@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/qtcurve/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/x11-themes/qtcurve/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	qtcurve
 PORTVERSION=	1.8.18
@@ -28,7 +28,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 USE_GITHUB=	yes
 GH_ACCOUNT=	QtCurve
 
-USES=		compiler:c++11-lib cmake execinfo pkgconfig
+USES=		compiler:c++11-lib cmake pkgconfig
 USE_XORG=	x11 xcb
 
 .for i in gtk2 kde4 qt4 qt5

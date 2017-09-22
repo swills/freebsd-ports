@@ -1,5 +1,5 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/x11/cinnamon-session/Makefile 447399 2017-08-05 10:58:48Z kwm $
+# $FreeBSD: head/x11/cinnamon-session/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	cinnamon-session
 PORTVERSION=	2.4.3
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libdbus-glib-1.so:devel/dbus-glib \
 RUN_DEPENDS=	console-kit-daemon:sysutils/consolekit2 \
 		xdpyinfo:x11/xdpyinfo
 
-USES=		autoreconf:build execinfo gettext gmake libtool \
+USES=		autoreconf:build gettext gmake libtool \
 		pathfix pkgconfig tar:xz
 USE_GITHUB=	yes
 GH_ACCOUNT=	linuxmint

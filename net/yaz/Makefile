@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <dima@Chg.RU>
-# $FreeBSD: head/net/yaz/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/net/yaz/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	yaz
 PORTVERSION=	5.21.1
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libicuuc.so:devel/icu \
 		libgnutls.so:security/gnutls
 
-USES=		execinfo iconv libtool ncurses pathfix pkgconfig readline \
+USES=		iconv libtool ncurses pathfix pkgconfig readline \
 		shebangfix tcl
 SHEBANG_FILES=	util/yaz-asncomp
 GNU_CONFIGURE=	yes

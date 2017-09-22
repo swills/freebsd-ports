@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/wxgtk30/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/x11-toolkits/wxgtk30/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	wx
 PORTVERSION=	3.0.2
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 		libtiff.so:graphics/tiff \
 		libexpat.so:textproc/expat2
 
-USES=		compiler:c++11-lib execinfo gmake iconv jpeg pkgconfig tar:bzip2
+USES=		compiler:c++11-lib gmake iconv jpeg pkgconfig tar:bzip2
 USE_XORG=	x11 sm xxf86vm xinerama
 USE_GL=		glu
 USE_GNOME=	gtk20

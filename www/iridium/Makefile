@@ -1,5 +1,5 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/www/iridium/Makefile 446308 2017-07-21 11:27:14Z cpm $
+# $FreeBSD: head/www/iridium/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	iridium
 PORTVERSION=	58.0
@@ -61,7 +61,7 @@ RUN_DEPENDS=	xdg-open:devel/xdg-utils \
 		droid-fonts-ttf>0:x11-fonts/droid-fonts-ttf
 
 ONLY_FOR_ARCHS=	amd64 i386
-USES=		bison desktop-file-utils execinfo jpeg ninja perl5 \
+USES=		bison desktop-file-utils jpeg ninja perl5 \
 		pkgconfig python:2,build shebangfix tar:xz
 
 USE_PERL5=	build

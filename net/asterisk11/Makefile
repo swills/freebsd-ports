@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/asterisk11/Makefile 450187 2017-09-20 05:35:42Z madpilot $
+# $FreeBSD: head/net/asterisk11/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	asterisk
 PORTVERSION=	11.25.3
@@ -114,7 +114,6 @@ XMPP_DESC=	XMPP/GTALK support
 OPTIONS_SUB=		yes
 
 BACKTRACE_CONFIGURE_WITH=	execinfo
-BACKTRACE_USES=			execinfo
 
 CURL_CONFIGURE_ON=	--with-libcurl
 CURL_CONFIGURE_OFF=	--with-libcurl=no

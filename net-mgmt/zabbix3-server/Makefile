@@ -1,5 +1,5 @@
 # Created by: Pakhom Golynga <pg@pakhom.spb.ru>
-# $FreeBSD: head/net-mgmt/zabbix3-server/Makefile 448071 2017-08-16 23:34:52Z dbaio $
+# $FreeBSD: head/net-mgmt/zabbix3-server/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	zabbix3
 PORTVERSION=	3.0.10
@@ -56,7 +56,6 @@ CONFIGURE_ARGS+=	--enable-${ZABBIX_BUILD} \
 
 .if ${ZABBIX_BUILD} != "agent"
 LIB_DEPENDS=	libnetsnmp.so:net-mgmt/net-snmp
-USES+=		execinfo
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 

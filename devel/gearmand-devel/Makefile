@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/gearmand-devel/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/devel/gearmand-devel/Makefile 450353 2017-09-22 10:48:57Z mat $
 
 PORTNAME=	gearmand
 PORTVERSION=	1.1.8
@@ -25,15 +25,14 @@ BROKEN_sparc64=		Does not build: cannot link with boost
 
 USE_PERL5=	build
 GNU_CONFIGURE=	yes
-USES=		pathfix perl5 gmake gperf libtool execinfo python:build
+USES=		pathfix perl5 gmake gperf libtool python:build
 USE_LDCONFIG=	yes
 USE_RC_SUBR=	gearmand
 SUB_LIST+=	USERS=${USERS} GROUPS=${GROUPS}
 
 CONFIGURE_ARGS+=--with-lib-prefix=${LOCALBASE} --with-boost=${LOCALBASE} \
 		--localstatedir=/var/db/${PORTNAME} --enable-static
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib -lexecinfo
+LDFLAGS+=	-lexecinfo
 
 OPTIONS_DEFINE=	DRIZZLE MEMCACHED PGSQL SQLITE MYSQL HIREDIS TOKYOCAB
 OPTIONS_DEFAULT=SQLITE

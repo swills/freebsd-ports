@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-bosh-template/Makefile 428629 2016-12-15 19:07:29Z dumbbell $
+# $FreeBSD: head/devel/rubygem-bosh-template/Makefile 450285 2017-09-21 17:21:18Z sunpoet $
 
 PORTNAME=	bosh-template
-PORTVERSION=	1.3262.24.0
+PORTVERSION=	2.0.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

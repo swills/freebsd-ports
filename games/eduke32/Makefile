@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/games/eduke32/Makefile 443899 2017-06-19 17:30:37Z ultima $
+# $FreeBSD: head/games/eduke32/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	eduke32
 PORTVERSION=	20170614
@@ -28,7 +28,7 @@ LIB_DEPENDS=	libFLAC.so:audio/flac \
 		libvpx.so:multimedia/libvpx \
 		libpng16.so:graphics/png
 
-USES=		execinfo gmake pkgconfig tar:xz
+USES=		gmake pkgconfig tar:xz
 USE_GL=		gl glu
 USE_GNOME=	gtk20
 USE_SDL=	sdl2 mixer2

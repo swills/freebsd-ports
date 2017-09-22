@@ -1,10 +1,11 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/math/mpfr/Makefile 450240 2017-09-21 07:37:13Z ale $
+# $FreeBSD: head/math/mpfr/Makefile 450297 2017-09-21 18:18:05Z sunpoet $
 
 PORTNAME=	mpfr
 PORTVERSION=	3.1.6
 CATEGORIES=	math devel
-MASTER_SITES=	http://www.mpfr.org/mpfr-current/
+MASTER_SITES=	http://www.mpfr.org/mpfr-current/ \
+		GNU/${PORTNAME}
 DIST_SUBDIR=	${DISTNAME}
 
 PATCH_SITES=	${MASTER_SITES}

@@ -1,8 +1,8 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/devel/py-ptrace/Makefile 434010 2017-02-13 17:42:58Z sbz $
+# $FreeBSD: head/devel/py-ptrace/Makefile 450330 2017-09-22 09:09:57Z sbz $
 
 PORTNAME=	ptrace
-PORTVERSION=	0.9.2
+PORTVERSION=	0.9.3
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

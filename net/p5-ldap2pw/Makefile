@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/p5-ldap2pw/Makefile 449328 2017-09-06 08:28:56Z des $
+# $FreeBSD: head/net/p5-ldap2pw/Makefile 450344 2017-09-22 09:43:41Z des $
 
 PORTNAME=	ldap2pw
-PORTVERSION=	20170906
+PORTVERSION=	20170922
 CATEGORIES=	net
 MASTER_SITES=	GH
 PKGNAMEPREFIX=  p5-

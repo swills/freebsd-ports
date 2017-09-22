@@ -1,5 +1,5 @@
 # Created by: Kai Wang <kaiwang27@gmail.com>
-# $FreeBSD: head/games/frobtads/Makefile 432973 2017-02-01 05:26:09Z jbeich $
+# $FreeBSD: head/games/frobtads/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	frobtads
 PORTVERSION=	1.2.3
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl
 
 CONFLICTS=	tads-2.*
 
-USES=		autoreconf execinfo gmake localbase ncurses
+USES=		autoreconf gmake localbase ncurses
 GNU_CONFIGURE=	yes
 
 LIBS+=		-lcompat

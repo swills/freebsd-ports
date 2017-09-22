@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/fontmatrix/Makefile 440152 2017-05-05 13:47:23Z miwi $
+# $FreeBSD: head/x11-fonts/fontmatrix/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	fontmatrix
 DISTVERSIONPREFIX=	v
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 USE_GITHUB=	yes
 GH_ACCOUNT=	fontmatrix
 
-USES=		cmake execinfo
+USES=		cmake
 USE_QT4=	corelib xml gui svg network moc_build uic_build rcc_build qmake_build \
 		linguisttools_build opengl sql webkit
 INSTALLS_ICONS=	yes

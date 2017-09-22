@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/groonga/Makefile 450085 2017-09-19 00:06:53Z bofh $
+# $FreeBSD: head/textproc/groonga/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	groonga
 PORTVERSION=	7.0.6
@@ -12,7 +12,7 @@ LICENSE=	LGPL21
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
 
-USES=		execinfo gmake libedit libtool pathfix pkgconfig
+USES=		gmake libedit libtool pathfix pkgconfig
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-benchmark \
 		--disable-document \

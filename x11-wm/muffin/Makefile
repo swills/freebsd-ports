@@ -1,5 +1,5 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/x11-wm/muffin/Makefile 440610 2017-05-11 05:08:49Z antoine $
+# $FreeBSD: head/x11-wm/muffin/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	muffin
 PORTVERSION=	2.4.4
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libstartup-notification-1.so:x11/startup-notification \
 		libcinnamon-desktop.so:x11/cinnamon-desktop
 RUN_DEPENDS=	zenity>=3.0.0:x11/zenity
 
-USES=		autoreconf:build execinfo gettext libtool gmake \
+USES=		autoreconf:build gettext libtool gmake \
 		pathfix pkgconfig python:2
 USE_GITHUB=	yes
 GH_ACCOUNT=	linuxmint

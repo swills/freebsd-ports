@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/texstudio/Makefile 448669 2017-08-24 13:45:13Z swills $
+# $FreeBSD: head/editors/texstudio/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	texstudio
 PORTVERSION=	2.11.0
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell \
 BROKEN_aarch64=		fails to compile: error: no member named mc_eip in __mcontext
 BROKEN_armv6=		fails to compile: error: no member named mc_eip in __mcontext
 
-USES=		desktop-file-utils dos2unix execinfo ghostscript:run \
+USES=		desktop-file-utils dos2unix ghostscript:run \
 		pkgconfig qmake
 DOS2UNIX_FILES=	${PORTNAME}.pro
 

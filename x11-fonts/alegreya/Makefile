@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-fonts/alegreya/Makefile 449532 2017-09-10 10:33:56Z rakuco $
+# $FreeBSD: head/x11-fonts/alegreya/Makefile 450366 2017-09-22 12:37:04Z rakuco $
 
 PORTNAME=	alegreya
-PORTVERSION=	2.001
+PORTVERSION=	2.002
 DISTVERSIONPREFIX=	v
 CATEGORIES=	x11-fonts
 

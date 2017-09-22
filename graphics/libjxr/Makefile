@@ -1,10 +1,9 @@
-# $FreeBSD: head/graphics/libjxr/Makefile 441468 2017-05-22 16:04:19Z linimon $
+# $FreeBSD: head/graphics/libjxr/Makefile 450323 2017-09-22 08:30:43Z mat $
 
 PORTNAME=	jxrlib
 PORTVERSION=	1.1
 CATEGORIES=	graphics devel
-MASTER_SITES=	${MASTER_SITE_DEBIAN}
-MASTER_SITE_SUBDIR=pool/main/j/jxrlib
+MASTER_SITES=	DEBIAN
 DISTFILES=	jxrlib_${PORTVERSION}.orig.tar.gz	\
 		jxrlib_${PORTVERSION}-6.debian.tar.xz
 

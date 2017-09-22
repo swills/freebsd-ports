@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/xine/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/multimedia/xine/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	xine
 PORTVERSION=	0.99.9
@@ -15,7 +15,7 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libxine.so:multimedia/libxine
 
-USES=		desktop-file-utils execinfo gmake iconv jpeg pkgconfig readline \
+USES=		desktop-file-utils gmake iconv jpeg pkgconfig readline \
 		shared-mime-info tar:xz
 USE_XORG=	x11 xext xinerama xscrnsaver xtst xv xxf86vm
 GNU_CONFIGURE=	yes

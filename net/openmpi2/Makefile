@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/openmpi2/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net/openmpi2/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	openmpi
 PORTVERSION=	2.1.1
@@ -24,7 +24,7 @@ BROKEN_sparc64=		fails to compile on sparc64
 HAS_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 # :keepla because port uses lt_dlopen
-USES=		execinfo fortran gmake libtool:keepla localbase perl5 \
+USES=		fortran gmake libtool:keepla localbase perl5 \
 		pkgconfig tar:bzip2
 USE_PERL5=	build
 

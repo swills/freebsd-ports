@@ -1,5 +1,5 @@
 # Created by: Nikos Ntarmos <ntarmos@ceid.upatras.gr>
-# $FreeBSD: head/x11-wm/awesome/Makefile 446579 2017-07-25 12:34:10Z garga $
+# $FreeBSD: head/x11-wm/awesome/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	awesome
 PORTVERSION=	4.2
@@ -34,7 +34,7 @@ CONFLICTS_INSTALL=	awesome3-[0-9]*
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	awesomewm
-USES=		cmake:outsource execinfo gettext iconv pkgconfig lua shebangfix
+USES=		cmake:outsource gettext iconv pkgconfig lua shebangfix
 SHEBANG_FILES=	utils/awesome-client
 CMAKE_ARGS=	-DSYSCONFDIR=${PREFIX}/etc \
 		-DAWESOME_MAN_PATH=${MANPREFIX}/man \

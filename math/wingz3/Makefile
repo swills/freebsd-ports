@@ -1,12 +1,13 @@
 # Created by: erich@rrnet.com
-# $FreeBSD: head/math/wingz3/Makefile 421387 2016-09-05 19:23:42Z tijl $
+# $FreeBSD: head/math/wingz3/Makefile 450324 2017-09-22 08:30:46Z mat $
 
 PORTNAME=	wingzpro
 PORTVERSION=	311
 PORTREVISION=	3
 CATEGORIES=	math linux
-MASTER_SITES=	SUNSITE/apps/financial/spreadsheet:wingz	\
-		${MASTER_SITE_FEDORA_LINUX:M*rpmfind.net/*:S|/fedora/core||}:l
+MASTER_SITES=	SUNSITE/apps/financial/spreadsheet:wingz
+# MASTER_SITE_FEDORA_LINUX does not contain rpmfind.net, so this does not do anything
+#		${MASTER_SITE_FEDORA_LINUX:M*rpmfind.net/*:S|/fedora/core||}:l
 MASTER_SITE_SUBDIR= redhat-archive/6.2/en/os/i386/RedHat/RPMS/:l
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}:wingz \
 		ld.so-1.9.5-13.i386.rpm:l	\

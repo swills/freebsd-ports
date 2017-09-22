@@ -1,5 +1,5 @@
 # Created by: Jin-Sih Lin <linpct@gmail.com>
-# $FreeBSD: head/www/node4/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/www/node4/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	node
 PORTVERSION=	4.8.4
@@ -29,7 +29,7 @@ BUNDLED_SSL_CONFIGURE_OFF=	--shared-openssl
 NLS_CONFIGURE_ON=	--with-intl=system-icu
 NLS_LIB_DEPENDS=	libicui18n.so:devel/icu
 
-USES=		compiler:c++11-lib execinfo gmake python:2 pkgconfig localbase
+USES=		compiler:c++11-lib gmake python:2 pkgconfig localbase
 HAS_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 

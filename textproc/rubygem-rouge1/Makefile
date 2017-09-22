@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-rouge1/Makefile 441595 2017-05-24 13:04:08Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-rouge1/Makefile 450343 2017-09-22 09:14:28Z sunpoet $
 
 PORTNAME=	rouge
 PORTVERSION=	1.11.1
@@ -11,6 +11,9 @@ COMMENT=	Simple, easy-to-extend drop-in replacement for pygments
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	Use textproc/rubygem-rouge instead
+EXPIRATION_DATE=2017-10-31
 
 NO_ARCH=	yes
 USE_RUBY=	yes

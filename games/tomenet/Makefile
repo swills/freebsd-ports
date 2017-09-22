@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/games/tomenet/Makefile 403343 2015-12-08 19:29:14Z amdmi3 $
+# $FreeBSD: head/games/tomenet/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	tomenet
 PORTVERSION=	4.6.0
@@ -12,10 +12,8 @@ COMMENT=	Online multiplayer rogue-like role-playing game
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 MAKEFILE=	makefile
 
-USES=		execinfo gmake ncurses tar:bzip2
-CFLAGS+=	-DDEFAULT_PATH="\\\"${DATADIR}/lib/\\\"" \
-		${EXECINFO_CPPFLAGS}
-LDFLAGS+=	${EXECINFO_LDFLAGS}
+USES=		gmake ncurses tar:bzip2
+CFLAGS+=	-DDEFAULT_PATH="\\\"${DATADIR}/lib/\\\""
 MAKE_JOBS_UNSAFE=	yes
 
 SUB_FILES=	pkg-message

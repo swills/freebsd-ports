@@ -1,5 +1,5 @@
 # Created by: Simun Mikecin <numisemis@yahoo.com>
-# $FreeBSD: head/devel/mongo-cxx-driver/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/devel/mongo-cxx-driver/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	mongo-cxx-driver
 PORTVERSION=	1.1.2
@@ -28,7 +28,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	mongodb
 GH_PROJECT=	mongo-cxx-driver
 
-USES=		execinfo scons
+USES=		scons
 MAKE_ARGS=	--prefix=${STAGEDIR}${PREFIX} \
 		--cc=${CC} \
 		--cxx=${CXX}

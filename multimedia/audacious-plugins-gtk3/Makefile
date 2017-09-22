@@ -1,5 +1,5 @@
 # Created by: Zastupov Stepan [RedChrom] <redchrom@mail.ru>
-# $FreeBSD: head/multimedia/audacious-plugins-gtk3/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/multimedia/audacious-plugins-gtk3/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	audacious-plugins
 PORTVERSION=	3.8.2
@@ -28,7 +28,7 @@ DISTINFO_FILE=	${.CURDIR}/distinfo
 FILESDIR=	${MASTERDIR}/files
 
 GNU_CONFIGURE=	yes
-USES=		compiler:c++11-lib execinfo gettext-tools gmake iconv \
+USES=		compiler:c++11-lib gettext-tools gmake iconv \
 	localbase pkgconfig tar:bzip2
 USE_LDCONFIG=	yes
 USE_GNOME=	gtk30 glib20 libxml2 cairo gdkpixbuf2

@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/audio/clementine-player/Makefile 448041 2017-08-16 15:44:48Z sunpoet $
+# $FreeBSD: head/audio/clementine-player/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	clementine
 PORTVERSION=	1.3.1
@@ -32,7 +32,6 @@ GH_PROJECT=	Clementine
 USES=		cmake \
 		compiler:c++11-lib \
 		desktop-file-utils \
-		execinfo \
 		gettext-tools \
 		pkgconfig \
 		sqlite

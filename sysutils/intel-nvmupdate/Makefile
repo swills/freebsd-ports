@@ -1,5 +1,5 @@
 # Created by: Sergey Kozlov <sergey.kozlov@intel.com>
-# $FreeBSD: head/sysutils/intel-nvmupdate/Makefile 441190 2017-05-18 17:57:57Z sbruno $
+# $FreeBSD: head/sysutils/intel-nvmupdate/Makefile 450322 2017-09-22 08:30:36Z mat $
 
 PORTNAME=	nvmupdate
 DISTVERSION=	5_05
@@ -24,6 +24,8 @@ LICENSE_PERMS_IFL=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 LICENSE_NAME_IPL=	Intel Proprietary License
 LICENSE_FILE_IPL=	${WRKSRC}/license.txt
 LICENSE_PERMS_IPL=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
+BROKEN=		Does not fetch.
 
 WRKSRC=			${WRKDIR}/XL710/FreeBSDx64
 NO_BUILD=		yes

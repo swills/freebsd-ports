@@ -1,5 +1,5 @@
 # Created by: Vladimir Chukharev
-# $FreeBSD: head/graphics/py-mayavi/Makefile 438924 2017-04-20 04:13:39Z miwi $
+# $FreeBSD: head/graphics/py-mayavi/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	mayavi
 PORTVERSION=	4.5.0
@@ -31,7 +31,7 @@ RUN_DEPENDS=	vtk6>=6.1.0_8:math/vtk6 \
 		${PYTHON_PKGNAMEPREFIX}scimath>=4.1.2:science/py-scimath \
 		${PYTHON_PKGNAMEPREFIX}traitsui>=4.5.1:graphics/py-traitsui
 
-USES=		execinfo python:-2.7 shebangfix tar:bzip2
+USES=		python:-2.7 shebangfix tar:bzip2
 USE_PYTHON=	autoplist distutils
 USE_WX=		2.8+
 WX_COMPS=	python:run

@@ -1,5 +1,5 @@
 # Created by: Riaan Kruger <riaank@gmail.com>
-# $FreeBSD: head/security/strongswan/Makefile 448590 2017-08-23 06:10:20Z pi $
+# $FreeBSD: head/security/strongswan/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	strongswan
 PORTVERSION=	5.6.0
@@ -12,7 +12,7 @@ COMMENT=	Open Source IKEv2 IPsec-based VPN solution
 
 LICENSE=	GPLv2
 
-USES=		cpe execinfo libtool:keepla pkgconfig tar:bzip2 ssl
+USES=		cpe libtool:keepla pkgconfig tar:bzip2 ssl
 USE_RC_SUBR=	strongswan
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	${PREFIX}/lib/ipsec

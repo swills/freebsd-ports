@@ -1,5 +1,5 @@
 # Created by: dbader@ece.unm.edu
-# $FreeBSD: head/net/mpich2/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net/mpich2/Makefile 450353 2017-09-22 10:48:57Z mat $
 
 PORTNAME=	mpich2
 DISTVERSION=	1.5
@@ -21,7 +21,7 @@ BUILD_DEPENDS=	bash:shells/bash
 RUN_DEPENDS=	bash:shells/bash
 
 GNU_CONFIGURE=	yes
-USES=		execinfo libtool:keepla localbase fortran perl5 \
+USES=		libtool:keepla localbase fortran perl5 \
 		pkgconfig python
 USE_GCC=	yes
 USE_LDCONFIG=	yes
@@ -49,7 +49,7 @@ CONFIGURE_ENV=	FCFLAGS="${FFLAGS}" \
 .if ${FFLAGS} == "-O"
 FFLAGS=		-O2
 .endif
-LDFLAGS+=	-lpthread -L${LOCALBASE}/lib -lexecinfo
+LDFLAGS+=	-lpthread -lexecinfo
 
 MAKE_ENV=	CCACHE_DISABLE=yes PACKAGE=${PORTNAME}
 NOCCACHE=	yes

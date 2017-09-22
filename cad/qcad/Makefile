@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/cad/qcad/Makefile 447895 2017-08-13 15:23:38Z mr $
+# $FreeBSD: head/cad/qcad/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	qcad
 PORTVERSION=	3.17.3.6
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libquazip.so:archivers/quazip
 
 MAKE_JOBS_UNSAFE=yes
 
-USES=		execinfo gmake qmake
+USES=		gmake qmake
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 USE_QT4=	qmake_build codecs-cn codecs-jp codecs-kr codecs-tw corelib \

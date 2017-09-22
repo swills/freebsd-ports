@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm39/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/llvm39/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	llvm
 DISTVERSION=	3.9.1
@@ -94,7 +94,6 @@ LLDB_DESC=		Install lldb, the LLVM debugger
 LLDB_DISTFILES=		lldb-${DISTVERSION}.src${EXTRACT_SUFX}
 LLDB_EXTRA_PATCHES=	${PATCHDIR}/lldb-patch-tools_lldb_source_Host_common_FileSpec.cpp
 LLDB_IMPLIES=		CLANG
-LLDB_USES=		execinfo
 LLDB_VARS=		_USES_PYTHON=python
 OPENMP_DESC=		Install libomp, the LLVM OpenMP runtime library
 OPENMP_DISTFILES=	openmp-${DISTVERSION}.src${EXTRACT_SUFX}

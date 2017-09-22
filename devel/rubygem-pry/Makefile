@@ -1,8 +1,8 @@
 # Created by: Shin-ya MURAKAMI <murashin@gfd-dennou.org>
-# $FreeBSD: head/devel/rubygem-pry/Makefile 430093 2016-12-31 03:27:16Z swills $
+# $FreeBSD: head/devel/rubygem-pry/Makefile 450266 2017-09-21 15:29:13Z sunpoet $
 
 PORTNAME=	pry
-PORTVERSION=	0.10.4
+PORTVERSION=	0.11.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -13,8 +13,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-coderay>=1.1.0:textproc/rubygem-coderay \
-		rubygem-method_source>=0.8.1:devel/rubygem-method_source \
-		rubygem-slop3>=3.4.0:devel/rubygem-slop3
+		rubygem-method_source>=0.8.1:devel/rubygem-method_source
 
 NO_ARCH=	yes
 USE_RUBY=	yes

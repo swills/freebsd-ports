@@ -1,5 +1,5 @@
 # Created by: Alex Deiter <alex.deiter@gmail.com>
-# $FreeBSD: head/sysutils/openipmi/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/sysutils/openipmi/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	openipmi
 PORTVERSION=	2.0.21
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libpopt.so:devel/popt
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
-USES=		execinfo gmake libtool ncurses pathfix pkgconfig
+USES=		gmake libtool ncurses pathfix pkgconfig
 USE_LDCONFIG=	yes
 
 CPPFLAGS+=	-I../include -I${LOCALBASE}/include

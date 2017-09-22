@@ -1,5 +1,5 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/www/httrack/Makefile 441471 2017-05-22 17:18:04Z sunpoet $
+# $FreeBSD: head/www/httrack/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	httrack
 PORTVERSION=	3.49.2
@@ -25,7 +25,7 @@ CONFIGURE_ARGS=	--docdir=${DOCSDIR} --with-zlib=/usr
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	${PREFIX}/lib/httrack
-USES=		alias execinfo gmake iconv libtool localbase shebangfix ssl
+USES=		alias gmake iconv libtool localbase shebangfix ssl
 
 PORTDATA=	*
 PORTDOCS=	*

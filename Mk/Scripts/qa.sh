@@ -1,6 +1,6 @@
 #!/bin/sh
 # MAINTAINER: portmgr@FreeBSD.org
-# $FreeBSD: head/Mk/Scripts/qa.sh 447515 2017-08-07 19:09:41Z lifanov $
+# $FreeBSD: head/Mk/Scripts/qa.sh 450351 2017-09-22 10:48:28Z mat $
 
 if [ -z "${STAGEDIR}" -o -z "${PREFIX}" -o -z "${LOCALBASE}" ]; then
 	echo "STAGEDIR, PREFIX, LOCALBASE required in environment." >&2
@@ -585,9 +585,6 @@ proxydeps_suggest_uses() {
 	# bdb
 	elif expr ${pkg} : "^databases/db[456]" > /dev/null; then
 		warn "you need USES+=bdb"
-	# execinfo
-	elif [ ${pkg} = "devel/libexecinfo" ]; then
-		warn "you need USES+=execinfo"
 	# fam/gamin
 	elif [ ${pkg} = "devel/fam" -o ${pkg} = "devel/gamin" ]; then
 		warn "you need USES+=fam"

@@ -1,5 +1,5 @@
 # Created by: Joris Vandalon
-# $FreeBSD: head/sysutils/fusefs-rar2fs/Makefile 447278 2017-08-03 19:39:46Z jhale $
+# $FreeBSD: head/sysutils/fusefs-rar2fs/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	rar2fs
 PORTVERSION=	1.25.2
@@ -19,7 +19,7 @@ BUILD_DEPENDS=	${NONEXISTENT}:${LIBUNRAR_PORT}:patch
 USE_GITHUB=	yes
 GH_ACCOUNT=	hasse69
 
-USES=		autoreconf execinfo gmake fuse
+USES=		autoreconf gmake fuse
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-static-unrar \

@@ -1,5 +1,5 @@
 # Created by: Kris Moore <kmoore@freebsd.org>
-# $FreeBSD: head/net-im/telegram-purple/Makefile 441881 2017-05-27 22:16:50Z linimon $
+# $FreeBSD: head/net-im/telegram-purple/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	telegram-purple
 PORTVERSION=	1.3.1
@@ -24,7 +24,7 @@ BROKEN_sparc64=		fails to compile: assertion fails
 OPTIONS_DEFINE=	NLS
 OPTIONS_SUB=	yes
 
-USES=		execinfo gettext gmake pkgconfig
+USES=		gettext gmake pkgconfig
 USE_GNOME=	glib20 libxml2
 GNU_CONFIGURE=	yes
 LDFLAGS+=	-L${LOCALBASE}/lib

@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/gnome-session/Makefile 447399 2017-08-05 10:58:48Z kwm $
+# $FreeBSD: head/x11/gnome-session/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	gnome-session
 PORTVERSION=	3.18.1.2
@@ -19,7 +19,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/console-kit-daemon:sysutils/consolekit2 \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		execinfo gettext gmake gnome pathfix pkgconfig tar:xz
+USES=		gettext gmake gnome pathfix pkgconfig tar:xz
 USE_GNOME=	gnomedesktop3 gtk30 intlhack intlhack libxslt:build
 USE_XORG=	ice sm xau xext xtst xrender xtrans xcomposite
 USE_GL=		gl

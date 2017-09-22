@@ -1,5 +1,5 @@
 # Created by: Mykola Dzham <freebsd@levsha.org.ua>
-# $FreeBSD: head/textproc/lttoolbox/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/lttoolbox/Makefile 450275 2017-09-21 17:10:42Z bofh $
 
 PORTNAME=	lttoolbox
 PORTVERSION=	${APVER}.${APREV}
@@ -14,11 +14,11 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libxml2.so:textproc/libxml2
 
 APVER=	3.3
-APREV=	2
+APREV=	3
 
 GNU_CONFIGURE=	yes
-USE_LDCONFIG=	yes
 USES=		libtool pathfix pkgconfig
+USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 
 PLIST_SUB+=	APVER="${APVER}"

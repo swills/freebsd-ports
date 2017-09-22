@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/tbe/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/tbe/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	tbe
 PORTVERSION=	0.9.2.1
@@ -12,7 +12,7 @@ COMMENT=	The Butterfly Effect
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/unzip:archivers/unzip
 
-USES=		cmake compiler:c++11-lib execinfo tar:tgz
+USES=		cmake compiler:c++11-lib tar:tgz
 USE_QT4=	gui linguisttools_build moc_build qmake_build rcc_build \
 		svg uic_build xml
 

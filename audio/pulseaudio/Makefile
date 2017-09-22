@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/audio/pulseaudio/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/audio/pulseaudio/Makefile 450351 2017-09-22 10:48:28Z mat $
 #
 # !!!NOTE!!! Any PORTVERSION update to this port must be accompanied by
 # PORTREVISION bumps of depending ports.
@@ -26,7 +26,7 @@ LIB_DEPENDS=	libsndfile.so:audio/libsndfile \
 USE_GNOME=	glib20 intltool
 USE_XORG=	ice sm x11 xcb xtst
 USE_LDCONFIG=	yes
-USES=		compiler:c11 cpe execinfo gettext gmake gnome iconv libtool \
+USES=		compiler:c11 cpe gettext gmake gnome iconv libtool \
 		pathfix pkgconfig python:run shebangfix ssl tar:xz
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	PTHREAD_LIBS="-lpthread" \

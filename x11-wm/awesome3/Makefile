@@ -1,5 +1,5 @@
 # Created by: Nikos Ntarmos <ntarmos@ceid.upatras.gr>
-# $FreeBSD: head/x11-wm/awesome3/Makefile 441201 2017-05-18 21:20:30Z pawel $
+# $FreeBSD: head/x11-wm/awesome3/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	awesome
 PORTVERSION=	3.5.9
@@ -39,7 +39,7 @@ CONFLICTS_INSTALL=	awesome-[0-9]*
 DEPRECATED=	Awesome WM 3.x is deprecated use 4.x instead
 EXPIRATION_DATE=2017-10-10
 
-USES=		cmake execinfo gettext iconv pkgconfig lua tar:xz
+USES=		cmake gettext iconv pkgconfig lua tar:xz
 CMAKE_ARGS+=	-DSYSCONFDIR=${PREFIX}/etc
 USE_GNOME=	glib20 pango gdkpixbuf2
 USE_XORG=	pixman x11 xau xcb xdmcp xext xft xinerama xrandr xrender \

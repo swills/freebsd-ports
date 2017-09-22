@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/science/cdo/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/science/cdo/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	cdo
 PORTVERSION=	1.9.0
@@ -39,7 +39,7 @@ MAKE_JOBS_UNSAFE=	yes
 TEST_TARGET=	check
 USE_CXXSTD=	c++11
 USE_LDCONFIG=	yes
-USES=		compiler:c++11-lib execinfo gmake libtool localbase pathfix
+USES=		compiler:c++11-lib gmake libtool localbase pathfix
 
 CGRIBEX_CONFIGURE_WITH=	cgribex
 CGRIBEX_LIB_DEPENDS=	libcgribex.so:science/cgribex

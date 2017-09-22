@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/games/alienarena-data/Makefile 345276 2014-02-20 22:41:32Z antoine $
+# $FreeBSD: head/games/alienarena-data/Makefile 450323 2017-09-22 08:30:43Z mat $
 
 PORTNAME=	alienarena
 PORTVERSION=	2013.766
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.linux.kiev.ua/pub/Linux/Gentoo/distfiles/ \
 		http://offload1.icculus.org:9090/alienarena/Files/ \
 		http://icculus.org/alienarena/Files/ \
 		http://red.planetarena.org/files/ \
-		${MASTER_SITE_GENTOO:S|$|distfiles/|}
+		GENTOO
 PKGNAMESUFFIX=	-data
 DISTNAME=	${PORTNAME}-7.66-linux20130827
 

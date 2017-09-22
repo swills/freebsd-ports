@@ -1,12 +1,12 @@
 # Created by: Mykola Dzham <freebsd@levsha.org.ua>
-# $FreeBSD: head/textproc/apertium/Makefile 441212 2017-05-19 09:00:35Z amdmi3 $
+# $FreeBSD: head/textproc/apertium/Makefile 450298 2017-09-21 18:27:01Z bofh $
 
 PORTNAME=	apertium
-PORTVERSION=	3.4.0
+PORTVERSION=	3.4.2
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION:R}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	bofs@FreeBSD.org
 COMMENT=	Toolbox to build shallow-transfer machine translation systems
 
 LICENSE=	GPLv2+

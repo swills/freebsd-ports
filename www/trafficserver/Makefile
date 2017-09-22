@@ -1,5 +1,5 @@
 # Created by: Jui-Nan Lin <jnlin@csie.nctu.edu.tw>
-# $FreeBSD: head/www/trafficserver/Makefile 431815 2017-01-18 16:21:21Z mat $
+# $FreeBSD: head/www/trafficserver/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	trafficserver
 PORTVERSION=	6.2.0
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
-USES=		cpe execinfo gmake libtool ncurses pathfix perl5 pkgconfig \
+USES=		cpe gmake libtool ncurses pathfix perl5 pkgconfig \
 		sqlite ssl tar:bzip2 tcl
 CPE_VENDOR=	apache
 CPE_PRODUCT=	traffic_server

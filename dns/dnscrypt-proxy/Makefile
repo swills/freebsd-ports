@@ -1,5 +1,5 @@
 # Created by: Leo Vandewoestijne <freebsd@dns-lab.com>
-# $FreeBSD: head/dns/dnscrypt-proxy/Makefile 447244 2017-08-03 16:25:46Z feld $
+# $FreeBSD: head/dns/dnscrypt-proxy/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	dnscrypt-proxy
 PORTVERSION=	1.9.5
@@ -23,7 +23,7 @@ USERS=		_dnscrypt-proxy
 GROUPS=		_dnscrypt-proxy
 
 GNU_CONFIGURE=	yes
-USES=		execinfo gmake
+USES=		gmake
 
 INSTALL_TARGET=	install-strip
 

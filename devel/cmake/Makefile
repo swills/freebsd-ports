@@ -1,8 +1,9 @@
 # Created by: Kyle Martin <mkm@ieee.org>
-# $FreeBSD: head/devel/cmake/Makefile 449853 2017-09-14 21:02:51Z adridg $
+# $FreeBSD: head/devel/cmake/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	cmake
 DISTVERSION=	3.9.2
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://www.cmake.org/files/v${PORTVERSION:R}/
 
@@ -23,7 +24,7 @@ CONFIGURE_ARGS=	--prefix=${PREFIX} \
 OPTIONS_DEFINE=	DOCS MANPAGES
 OPTIONS_DEFAULT=MANPAGES
 OPTIONS_SUB=	yes
-USES=		execinfo libarchive ncurses
+USES=		libarchive ncurses
 HAS_CONFIGURE=	yes
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-cached-property/Makefile 438216 2017-04-10 22:50:14Z lifanov $
+# $FreeBSD: head/devel/py-cached-property/Makefile 450358 2017-09-22 12:25:53Z lifanov $
 
 PORTNAME=	cached-property
-PORTVERSION=	1.3.0
+PORTVERSION=	1.3.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

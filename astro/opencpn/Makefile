@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/opencpn/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/astro/opencpn/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	opencpn
 PORTVERSION=	4.4.0
@@ -20,7 +20,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	${GH_PROJECT}
 GH_PROJECT=	OpenCPN
 
-USES=		cmake compiler:c++11-lib execinfo gettext-tools localbase
+USES=		cmake compiler:c++11-lib gettext-tools localbase
 USE_CXXSTD=	c++11
 USE_GL=		gl
 USE_GNOME=	cairo gdkpixbuf2 gtk20

@@ -1,7 +1,7 @@
-# $FreeBSD: head/deskutils/horde-groupware/Makefile 447173 2017-08-02 19:23:51Z mm $
+# $FreeBSD: head/deskutils/horde-groupware/Makefile 450305 2017-09-21 20:45:32Z mm $
 
 PORTNAME=	groupware
-PORTVERSION=	5.2.21
+PORTVERSION=	5.2.22
 CATEGORIES=	deskutils www pear
 PKGNAMEPREFIX=	horde-
 

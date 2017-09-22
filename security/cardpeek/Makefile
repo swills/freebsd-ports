@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/security/cardpeek/Makefile 423912 2016-10-13 13:08:09Z amdmi3 $
+# $FreeBSD: head/security/cardpeek/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	cardpeek
 PORTVERSION=	0.8.4
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libpcsclite.so:devel/pcsc-lite \
 		libcurl.so:ftp/curl
 RUN_DEPENDS=	pcscd:devel/pcsc-lite
 
-USES=		execinfo iconv localbase lua pkgconfig
+USES=		iconv localbase lua pkgconfig
 USE_GNOME=	gtk30
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes

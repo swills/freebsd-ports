@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/games/alienarena/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/alienarena/Makefile 450323 2017-09-22 08:30:43Z mat $
 
 PORTNAME=	alienarena
 PORTVERSION=	2013.766
@@ -8,7 +8,7 @@ CATEGORIES=	games
 MASTER_SITES=	SF/alienarena.mirror/Alien%20Arena%207.66/ \
 		http://icculus.org/alienarena/Files/ \
 		http://red.planetarena.org/files/ \
-		${MASTER_SITE_GENTOO:S|$|distfiles/|}
+		GENTOO
 DISTNAME=	${PORTNAME}-7.66-linux20130827
 
 MAINTAINER=	acm@FreeBSD.org

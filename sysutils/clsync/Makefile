@@ -1,5 +1,5 @@
 # Created by: Dmitry Yu Okunev dyokunev@ut.mephi.ru
-# $FreeBSD: head/sysutils/clsync/Makefile 428143 2016-12-08 17:26:09Z tijl $
+# $FreeBSD: head/sysutils/clsync/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	clsync
 DISTVERSION=	0.4~rc2
@@ -14,9 +14,8 @@ LICENSE=	GPLv3
 LIB_DEPENDS=	libinotify.so:devel/libinotify
 
 GNU_CONFIGURE=	yes
-USES=		autoreconf compiler:features execinfo gmake libtool pkgconfig
+USES=		autoreconf compiler:features gmake libtool pkgconfig
 USE_GNOME=	glib20
-LDFLAGS+=	${EXECINFO_LDFLAGS}
 
 USE_RC_SUBR=	clsync
 

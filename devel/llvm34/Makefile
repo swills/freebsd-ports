@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm34/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/llvm34/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	llvm
 PORTVERSION=	3.4.2
@@ -21,7 +21,7 @@ DATADIR=	${PREFIX}/share/${PORTNAME}${LLVM_SUFFIX}
 
 WRKSRC=		${WRKDIR}/llvm-${PORTVERSION}.src
 
-USES=		execinfo gmake perl5 shebangfix
+USES=		gmake perl5 shebangfix
 GNU_CONFIGURE=	yes
 GNU_CONFIGURE_PREFIX=	${LLVM_PREFIX}
 USE_LDCONFIG=	${LLVM_PREFIX}/lib

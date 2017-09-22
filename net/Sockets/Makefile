@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/net/Sockets/Makefile 421614 2016-09-09 13:05:53Z marino $
+# $FreeBSD: head/net/Sockets/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	Sockets
 PORTVERSION=	2.3.9.9
@@ -10,13 +10,6 @@ MASTER_SITES=	http://www.alhem.net/Sockets/ \
 
 MAINTAINER=	ml@netfence.it
 COMMENT=	C++ wrapper for BSD-style sockets
-
-#execinfo is optional and currently not configured (would need to patch source's #ifdef LINUX)
-#LIB_DEPENDS=	execinfo.1:devel/libexecinfo
-
-#Not needed without execinfo or xml
-#CFLAGS+=	-I${LOCALBASE}/include
-#LDFLAGS+=	-L${LOCALBASE}/lib
 
 USES+=		gmake ssl
 USE_GNOME=	libxml2

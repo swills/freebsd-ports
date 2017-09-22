@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/asterisk13/Makefile 450187 2017-09-20 05:35:42Z madpilot $
+# $FreeBSD: head/net/asterisk13/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	asterisk
 PORTVERSION=	13.17.2
@@ -117,7 +117,6 @@ OPTIONS_SUB=		yes
 ASTVERSION_RUN_DEPENDS=		bash:shells/bash
 
 BACKTRACE_CONFIGURE_WITH=	execinfo
-BACKTRACE_USES=			execinfo
 
 CURL_CONFIGURE_ON=	--with-libcurl
 CURL_CONFIGURE_OFF=	--with-libcurl=no

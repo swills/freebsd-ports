@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/openmpi/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net/openmpi/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 # TODO:
 #  - etc/*.sample support
@@ -22,7 +22,7 @@ LIB_DEPENDS=	libhwloc.so:devel/hwloc \
 HAS_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 # :keepla because port uses lt_dlopen
-USES=		execinfo fortran gmake libtool:keepla perl5 pkgconfig tar:bzip2
+USES=		fortran gmake libtool:keepla perl5 pkgconfig tar:bzip2
 USE_PERL5=	build
 
 MPIBASE?=	mpi

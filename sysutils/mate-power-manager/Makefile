@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/mate-power-manager/Makefile 445014 2017-07-04 11:44:30Z kwm $
+# $FreeBSD: head/sysutils/mate-power-manager/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	mate-power-manager
 PORTVERSION=	1.18.0
@@ -27,7 +27,7 @@ RUN_DEPENDS=	pkexec:sysutils/polkit \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		execinfo gettext gmake libtool localbase \
+USES=		gettext gmake libtool localbase \
 		pathfix pkgconfig tar:xz
 USE_MATE=	panel
 USE_XORG=	x11 xext xproto xrandr xrender

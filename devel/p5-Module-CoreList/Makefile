@@ -1,8 +1,8 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/devel/p5-Module-CoreList/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Module-CoreList/Makefile 450282 2017-09-21 17:21:02Z sunpoet $
 
 PORTNAME=	Module-CoreList
-PORTVERSION=	5.20170821
+PORTVERSION=	5.20170920
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

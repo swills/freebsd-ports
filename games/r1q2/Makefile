@@ -1,5 +1,5 @@
 # Created by: Alejandro Pulver <alepulver@FreeBSD.org>
-# $FreeBSD: head/games/r1q2/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/r1q2/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	r1q2
 PORTVERSION=	8012
@@ -14,7 +14,7 @@ COMMENT=	Enhanced Quake II client/server focusing on stability
 ONLY_FOR_ARCHS=	i386 amd64
 ONLY_FOR_ARCHS_REASON=	sets the FPU rounding mode and precision (not available in fenv.h)
 
-USES=		dos2unix execinfo gmake zip
+USES=		dos2unix gmake zip
 NO_WRKSUBDIR=	yes
 BUILD_WRKSRC=	${WRKSRC}/binaries
 ALL_TARGET=	#

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cmake-gui/Makefile 449853 2017-09-14 21:02:51Z adridg $
+# $FreeBSD: head/devel/cmake-gui/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	cmake
 DISTVERSION=	3.9.2
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		librhash.so:security/rhash
 
 USE_QT5=	core gui widgets buildtools_build qmake_build
-USES=		cmake:run desktop-file-utils execinfo libarchive \
+USES=		cmake:run desktop-file-utils libarchive \
 		shared-mime-info
 CMAKE_ARGS=	-DBUILD_QtDialog:bool=on \
 		-DBUILD_CursesDialog:BOOL=OFF \

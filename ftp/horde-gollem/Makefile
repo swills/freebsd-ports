@@ -1,8 +1,8 @@
 # Created by: Martin Matuska (mm@FreeBSD.org)
-# $FreeBSD: head/ftp/horde-gollem/Makefile 447173 2017-08-02 19:23:51Z mm $
+# $FreeBSD: head/ftp/horde-gollem/Makefile 450305 2017-09-21 20:45:32Z mm $
 
 PORTNAME=	gollem
-PORTVERSION=	3.0.11
+PORTVERSION=	3.0.12
 CATEGORIES=	ftp www pear
 PKGNAMEPREFIX=	horde-
 

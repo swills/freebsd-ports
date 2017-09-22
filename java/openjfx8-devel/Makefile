@@ -1,9 +1,9 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/java/openjfx8-devel/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/java/openjfx8-devel/Makefile 450296 2017-09-21 17:55:30Z tobik $
 
 PORTNAME=	openjfx8
 PORTVERSION=	20170722
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	java x11-toolkits devel
 MASTER_SITES=	https://bitbucket.org/tobik/openjfx-rt/get/freebsd${PORTVERSION}${EXTRACT_SUFX}?dummy=/
 PKGNAMESUFFIX=	-devel

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/node6/Makefile 449663 2017-09-11 18:09:37Z bhughes $
+# $FreeBSD: head/www/node6/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	node
 PORTVERSION=	6.11.3
@@ -35,7 +35,7 @@ NLS_LIB_DEPENDS=	libicui18n.so:devel/icu
 
 DTRACE_CONFIGURE_ON=	--with-dtrace
 
-USES=		compiler:c++11-lib execinfo gmake python:2,build pkgconfig \
+USES=		compiler:c++11-lib gmake python:2,build pkgconfig \
 		localbase shebangfix
 
 HAS_CONFIGURE=	yes

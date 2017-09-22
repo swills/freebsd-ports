@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/horde-passwd/Makefile 428699 2016-12-17 01:23:07Z mm $
+# $FreeBSD: head/www/horde-passwd/Makefile 450306 2017-09-21 20:49:42Z mm $
 
 PORTNAME=	passwd
-PORTVERSION=	5.0.6
+PORTVERSION=	5.0.7
 CATEGORIES=	www pear
 PKGNAMEPREFIX=	horde-
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/mdb/Makefile 447184 2017-08-02 23:58:03Z jhb $
+# $FreeBSD: head/devel/mdb/Makefile 450307 2017-09-21 21:02:03Z jhb $
 
 PORTNAME=	mdb
 PORTVERSION=	0.1
@@ -21,6 +21,7 @@ ONLY_FOR_ARCHS=	amd64
 MAKE_ARGS=	WITH_CTF=yes
 MAKE_ARGS+=	BINDIR=${PREFIX}/bin
 MAKE_ARGS+=	LIBDIR=${PREFIX}/lib
+MAKE_ARGS+=	FREEBSD_SRC_DIR=${SRC_BASE}
 WRKSRC_SUBDIR=	freebsd/cddl/usr.bin/mdb
 CFLAGS+=	-DMDB_PREFIX=\\\"${PREFIX}\\\" -g
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb100-server/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/databases/mariadb100-server/Makefile 450353 2017-09-22 10:48:57Z mat $
 
 PORTNAME?=	mariadb
 PORTVERSION=	10.0.32
@@ -29,7 +29,7 @@ SUB_FILES=	pkg-message
 PKGMESSAGE=	${WRKDIR}/pkg-message
 
 SLAVEDIRS=	databases/mariadb100-client
-USES=		bison:build cmake:noninja compiler:c++11-lib cpe execinfo \
+USES=		bison:build cmake:noninja compiler:c++11-lib cpe \
 		ncurses shebangfix ssl
 USE_LDCONFIG=	${PREFIX}/lib/mysql ${PREFIX}/lib/mysql/plugin
 SHEBANG_FILES=	scripts/*.sh
@@ -59,7 +59,6 @@ CMAKE_ARGS+=	-DINSTALL_DOCDIR="share/doc/mariadb" \
 		-DWITH_LIBEDIT=0 \
 		-DWITH_SSL=${OPENSSLBASE} \
 		-DWITH_LIBWRAP=1 \
-		-DEXECINFO_ROOT=${LOCALBASE} \
 		-DCOMPILATION_COMMENT="FreeBSD Ports"
 
 DATADIR=	${PREFIX}/share/mysql

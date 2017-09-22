@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/lang/ruby22/Makefile 445549 2017-07-11 21:03:09Z swills $
+# $FreeBSD: head/lang/ruby22/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	ruby
 PORTVERSION=	${RUBY_PORTVERSION}
@@ -39,7 +39,7 @@ GNU_CONFIGURE=	yes
 LIBS+=		-lpthread -L${LOCALBASE}/lib
 MAKE_JOBS_UNSAFE=	yes
 USE_LDCONFIG=	yes
-USES=		autoreconf cpe execinfo tar:xz ssl
+USES=		autoreconf cpe tar:xz ssl
 WRKSRC=		${RUBY_WRKSRC}
 
 RUBY_VER=		2.2

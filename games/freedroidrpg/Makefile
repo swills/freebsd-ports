@@ -1,5 +1,5 @@
 # Created by: Travis Poppe <tlp@liquidx.org>
-# $FreeBSD: head/games/freedroidrpg/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/freedroidrpg/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	freedroidrpg
 PORTVERSION=	0.16.1
@@ -35,7 +35,6 @@ OPTIONS_DEFAULT=BACKTRACE OPENGL SOUND
 OPTIONS_SUB=	yes
 
 BACKTRACE_DESC=	Use backtrace() to generate nice bug reports
-BACKTRACE_USES=			execinfo
 BACKTRACE_CONFIGURE_ENABLE=	backtrace
 BACKTRACE_VARS=			STRIP= # empty
 

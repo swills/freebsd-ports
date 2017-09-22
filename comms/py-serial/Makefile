@@ -1,8 +1,8 @@
 # Created by: Hye-Shik Chang <perky@fallin.lv>
-# $FreeBSD: head/comms/py-serial/Makefile 424787 2016-10-27 20:34:28Z sbz $
+# $FreeBSD: head/comms/py-serial/Makefile 450326 2017-09-22 09:01:54Z sbz $
 
 PORTNAME=	serial
-PORTVERSION=	3.2.1
+PORTVERSION=	3.4
 CATEGORIES=	comms python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

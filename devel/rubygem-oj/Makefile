@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-oj/Makefile 447858 2017-08-12 18:59:25Z sunpoet $
+# $FreeBSD: head/devel/rubygem-oj/Makefile 450368 2017-09-22 12:43:09Z jrm $
 
 PORTNAME=	oj
-PORTVERSION=	3.3.5
+PORTVERSION=	3.3.6
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -14,7 +14,7 @@ LICENSE=	MIT
 LIB_DEPENDS=	libgmp.so:math/gmp \
 		libunwind.so:devel/libunwind
 
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Florent Thoumie <flz@FreeBSD.org>
-# $FreeBSD: head/www/chromium/Makefile 449991 2017-09-17 11:10:43Z cpm $
+# $FreeBSD: head/www/chromium/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	chromium
 PORTVERSION=	61.0.3163.79
@@ -67,7 +67,7 @@ ONLY_FOR_ARCHS=	aarch64 amd64 i386
 .if defined(GN_ONLY)
 USES=		compiler:c++14-lang ninja pkgconfig python:2,build shebangfix tar:xz
 .else
-USES=		bison cpe desktop-file-utils execinfo jpeg ninja perl5 pkgconfig \
+USES=		bison cpe desktop-file-utils jpeg ninja perl5 pkgconfig \
 		python:2,build shebangfix tar:xz
 .endif
 MAKE_ARGS=	-C out/${BUILDTYPE}

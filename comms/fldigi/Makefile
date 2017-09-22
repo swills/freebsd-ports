@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/fldigi/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/comms/fldigi/Makefile 450351 2017-09-22 10:48:28Z mat $
 
 PORTNAME=	fldigi
 PORTVERSION=	4.0.9
@@ -24,7 +24,7 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs\
 
 USE_CXXSTD=	gnu++0x
 GNU_CONFIGURE=	yes
-USES=		autoreconf compiler:c++11-lib execinfo jpeg gmake perl5 pkgconfig shebangfix
+USES=		autoreconf compiler:c++11-lib jpeg gmake perl5 pkgconfig shebangfix
 USE_XORG=	x11 xft xext xfixes xcursor xinerama
 CONFIGURE_ENV=	FLTK_CONFIG="${LOCALBASE}/bin/fltk-config" \
 		    EXTRA_LIBS="-lexecinfo"
