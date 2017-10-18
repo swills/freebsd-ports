@@ -1,8 +1,8 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-MockModule/Makefile 445684 2017-07-13 18:11:22Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-MockModule/Makefile 451364 2017-10-06 10:44:23Z sunpoet $
 
 PORTNAME=	Test-MockModule
-PORTVERSION=	0.12
+PORTVERSION=	0.13
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,8 +1,8 @@
 # Created by: Pakhom Golynga <pg@pakhom.spb.ru>
-# $FreeBSD: head/net-mgmt/zabbix32-server/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/net-mgmt/zabbix32-server/Makefile 451868 2017-10-12 12:19:52Z dbaio $
 
 PORTNAME=	zabbix32
-PORTVERSION=	3.2.7
+PORTVERSION=	3.2.8
 PORTREVISION?=	0
 CATEGORIES=	net-mgmt
 MASTER_SITES=	SF/zabbix/ZABBIX%20Latest%20Stable/${PORTVERSION}
@@ -12,9 +12,12 @@ DISTNAME=	zabbix-${PORTVERSION}
 MAINTAINER=	pg@pakhom.spb.ru
 COMMENT=	Enterprise-class open source distributed monitoring (${PKGNAMESUFFIX:S/^-//})
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-CONFLICTS=	zabbix[0-24-9][0-13-9]${PKGNAMESUFFIX} zabbix[0-9]${PKGNAMESUFFIX}
+CONFLICTS=	zabbix[0-24-9][0-9]${PKGNAMESUFFIX} \
+		zabbix3[0-13-9]${PKGNAMESUFFIX} \
+		zabbix[0-9]${PKGNAMESUFFIX}
 
 IGNORE_WITH_MYSQL=	41
 

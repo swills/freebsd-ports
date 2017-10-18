@@ -1,8 +1,8 @@
 # Created by: Adrian Chadd
-# $FreeBSD: head/sysutils/intel-pcm/Makefile 432423 2017-01-25 15:46:41Z dbn $
+# $FreeBSD: head/sysutils/intel-pcm/Makefile 451085 2017-10-02 17:17:08Z swills $
 
 PORTNAME=	intel-pcm
-PORTVERSION=	2.11.1
+PORTVERSION=	201705
 CATEGORIES=	sysutils
 
 MAINTAINER=	imp@FreeBSD.org
@@ -18,7 +18,7 @@ ONLY_FOR_ARCHS=	i386 amd64
 USE_GITHUB=	yes
 GH_ACCOUNT=	opcm
 GH_PROJECT=	pcm
-GH_TAGNAME=	5581ad7
+GH_TAGNAME=	201705
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/*.x ${STAGEDIR}${PREFIX}/sbin

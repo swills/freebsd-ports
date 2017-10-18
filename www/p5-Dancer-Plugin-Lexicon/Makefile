@@ -1,5 +1,5 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/www/p5-Dancer-Plugin-Lexicon/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Dancer-Plugin-Lexicon/Makefile 452126 2017-10-15 02:47:49Z pi $
 
 PORTNAME=	Dancer-Plugin-Lexicon
 PORTVERSION=	0.06
@@ -9,7 +9,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DRTECH
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	hvo.pm@xs4all.nl
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Flexible I18N using Locale::Maketext::Lexicon for Dancer apps
 
 LICENSE=	ART10 GPLv1+

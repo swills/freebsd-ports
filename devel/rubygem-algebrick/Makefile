@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-algebrick/Makefile 431382 2017-01-13 14:44:08Z sunpoet $
+# $FreeBSD: head/devel/rubygem-algebrick/Makefile 450983 2017-09-30 11:47:25Z sunpoet $
 
 PORTNAME=	algebrick
-PORTVERSION=	0.7.4
+PORTVERSION=	0.7.5
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

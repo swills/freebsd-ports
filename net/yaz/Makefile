@@ -1,9 +1,9 @@
 # Created by: Dmitry Sivachenko <dima@Chg.RU>
-# $FreeBSD: head/net/yaz/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/net/yaz/Makefile 450556 2017-09-25 00:02:36Z jbeich $
 
 PORTNAME=	yaz
 PORTVERSION=	5.21.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	http://ftp.indexdata.dk/pub/yaz/
 

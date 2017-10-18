@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/hyphen/Makefile 427033 2016-11-24 15:34:29Z sunpoet $
+# $FreeBSD: head/textproc/hyphen/Makefile 450522 2017-09-24 18:50:25Z sunpoet $
 
 PORTNAME=	hyphen
 PORTVERSION=	2.8.8
@@ -9,10 +9,10 @@ DIST_SUBDIR=	${PORTNAME}
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Library for high quality hyphenation and justification
 
-LICENSE=	LGPL21+ MPL
+LICENSE=	LGPL21+ MPL11
 LICENSE_COMB=	dual
 LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LGPL
-LICENSE_FILE_MPL=	${WRKSRC}/COPYING.MPL
+LICENSE_FILE_MPL11=	${WRKSRC}/COPYING.MPL
 
 GNU_CONFIGURE=	yes
 USES=		libtool pathfix perl5 shebangfix

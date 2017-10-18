@@ -1,12 +1,12 @@
 # Created by: Dominic Fandrey <kamikaze@bsdforen.de>
-# $FreeBSD: head/www/xpi-modify_headers/Makefile 364158 2014-08-06 09:11:57Z olgeni $
+# $FreeBSD: head/www/xpi-modify_headers/Makefile 450473 2017-09-23 21:11:51Z adamw $
 
 PORTNAME=	modify_headers
 PORTVERSION=	0.7.1.2b
 DISTVERSIONSUFFIX=	-fx
 CATEGORIES=	www
 
-MAINTAINER=	kamikaze@bsdforen.de
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Firefox extension to manipulate HTTP headers
 
 XPI_NUM=	967

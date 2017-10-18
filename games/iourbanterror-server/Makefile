@@ -1,10 +1,10 @@
 # Created by: Dominic Fandrey
-# $FreeBSD: head/games/iourbanterror-server/Makefile 449918 2017-09-15 18:28:31Z adamw $
+# $FreeBSD: head/games/iourbanterror-server/Makefile 450473 2017-09-23 21:11:51Z adamw $
 
 PORTNAME=	iourbanterror
 PKGNAMESUFFIX=	-server
 
-MAINTAINER=	kamikaze@bsdforen.de
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Urban Terror dedicated server
 
 LICENSE=	GPLv2

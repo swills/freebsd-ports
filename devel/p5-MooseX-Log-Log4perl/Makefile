@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-Log-Log4perl/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Log-Log4perl/Makefile 451819 2017-10-12 08:10:17Z sunpoet $
 
 PORTNAME=	MooseX-Log-Log4perl
 PORTVERSION=	0.47
@@ -23,8 +23,5 @@ USE_PERL5=	configure
 post-patch:
 	@${REINPLACE_CMD} -i '' -e '/auto_install;/d' \
 		${WRKSRC}/Makefile.PL
-
-regression-test: build
-	cd ${WRKSRC} && ${MAKE} test
 
 .include <bsd.port.mk>

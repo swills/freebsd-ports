@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-omniauth-shibboleth/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/security/rubygem-omniauth-shibboleth/Makefile 451603 2017-10-09 10:38:14Z sunpoet $
 
 PORTNAME=	omniauth-shibboleth
-PORTVERSION=	1.2.1
+PORTVERSION=	1.3.0
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

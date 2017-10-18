@@ -1,5 +1,5 @@
 # Created by: Jose Marques <noway@nohow.demon.co.uk>
-# $FreeBSD: head/palm/ppmtoTbmp/Makefile 428981 2016-12-20 09:02:18Z amdmi3 $
+# $FreeBSD: head/palm/ppmtoTbmp/Makefile 451378 2017-10-06 11:18:35Z tobik $
 
 PORTNAME=	ppmtoTbmp
 PORTVERSION=	1.1
@@ -14,8 +14,9 @@ LICENSE=	NONE
 
 LIB_DEPENDS=	libnetpbm.so:graphics/netpbm
 
-MAKE_ARGS=	CFLAGS="${CFLAGS} -I${LOCALBASE}/include" LDLIBS=-lnetpbm
-LDFLAGS+=	-L${LOCALBASE}/lib
+USES=		localbase:ldflags
+MAKE_ARGS=	CFLAGS="${CFLAGS}" LDLIBS=-lnetpbm
+CFLAGS+=	-I${LOCALBASE}/include/netpbm
 
 PORTDOCS=	README
 

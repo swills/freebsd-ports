@@ -1,5 +1,5 @@
 # Created by: Babak Farrokhi <farrokhi@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/py3-dnsdiag/Makefile 440008 2017-05-03 11:26:26Z farrokhi $
+# $FreeBSD: head/net-mgmt/py3-dnsdiag/Makefile 451506 2017-10-08 08:10:01Z antoine $
 
 PORTNAME=	dnsdiag
 PORTVERSION=	1.6.3
@@ -18,4 +18,11 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>=1.15.0:dns/py-dnspython \
 USES=		python:3.3+
 USE_PYTHON=	autoplist distutils
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if defined(PACKAGE_BUILDING) && !defined(PACKAGE_BUILDING_FLAVORS) && \
+    ${PYTHON_VER} != ${PYTHON_DEFAULT}
+IGNORE=	you have python ${PYTHON_DEFAULT} set as the default, and this needs ${PYTHON_VER}
+.endif
+
+.include <bsd.port.post.mk>

@@ -1,8 +1,8 @@
 # Created by: Henrik Brix Andersen <henrik@brixandersen.dk>
-# $FreeBSD: head/www/ikiwiki/Makefile 444453 2017-06-27 12:54:18Z mat $
+# $FreeBSD: head/www/ikiwiki/Makefile 451126 2017-10-03 11:33:13Z mat $
 
 PORTNAME=	ikiwiki
-PORTVERSION=	3.20170622
+PORTVERSION=	3.20171001
 PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	DEBIAN_POOL \

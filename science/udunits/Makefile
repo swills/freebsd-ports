@@ -1,5 +1,5 @@
 # Created by: Greg Lewis <glewis@FreeBSD.org>
-# $FreeBSD: head/science/udunits/Makefile 441339 2017-05-20 21:50:06Z sunpoet $
+# $FreeBSD: head/science/udunits/Makefile 451544 2017-10-08 13:49:43Z sunpoet $
 
 PORTNAME=	udunits
 PORTVERSION=	2.2.25
@@ -27,8 +27,6 @@ USE_LDCONFIG=	yes
 USES=		libtool localbase
 
 INFO=		udunits2 udunits2lib udunits2prog
-PORTDATA=	*
-PORTDOCS=	*
 
 post-patch:
 	@${REINPLACE_CMD} -e '/install-data-hook$$/d' ${WRKSRC}/lib/Makefile.in

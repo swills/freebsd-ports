@@ -1,5 +1,5 @@
 # Created by: pst
-# $FreeBSD: head/mail/panda-imap/Makefile 438784 2017-04-18 15:15:06Z ak $
+# $FreeBSD: head/mail/panda-imap/Makefile 452085 2017-10-14 19:43:37Z thierry $
 
 PORTNAME=	panda-imap
 PORTVERSION=	20130621
@@ -18,7 +18,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	jonabbey
 GH_TAGNAME=	7905901
 
-CONFLICTS_INSTALL=	imap-uw-20*
+CONFLICTS_INSTALL=	imap-uw-20* courier-0.65.*
 
 DOCSDIR=	${PREFIX}/share/doc/${PORTNAME}${PKGNAMESUFFIX}
 SUB_FILES=	pkg-message

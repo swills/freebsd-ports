@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/py-scikit-image/Makefile 449097 2017-09-01 18:30:36Z antoine $
+# $FreeBSD: head/graphics/py-scikit-image/Makefile 450928 2017-09-29 18:13:20Z swills $
 
 PORTNAME=	scikit-image
-PORTVERSION=	0.13.0
+PORTVERSION=	0.13.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,8 +11,6 @@ COMMENT=	Image Processing SciKit (Toolbox for SciPy)
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
-
-BROKEN=		fails to configure
 
 BUILD_DEPENDS=	${PYNUMPY} \
 		${LOCALBASE}/bin/cython:lang/cython \

@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-multidict/Makefile 443712 2017-06-16 16:27:34Z wg $
+# $FreeBSD: head/www/py-multidict/Makefile 451998 2017-10-13 14:06:20Z philip $
 
 PORTNAME=	multidict
-PORTVERSION=	2.1.6
+PORTVERSION=	3.2.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

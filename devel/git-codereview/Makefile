@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/git-codereview/Makefile 412957 2016-04-10 14:12:48Z swills $
+# $FreeBSD: head/devel/git-codereview/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	git-codereview
 PORTVERSION=	0.0.0.2016030201
@@ -15,8 +15,6 @@ GH_PROJECT=	review
 GH_TAGNAME=	77ae237
 
 PLIST_FILES=	bin/git-codereview
-
-STRIP=		# stripping can break go binaries
 
 post-patch:
 	@${MKDIR} ${WRKSRC}/src/golang.org/x/review

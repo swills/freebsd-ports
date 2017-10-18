@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11-themes/numix-theme/Makefile 436494 2017-03-19 14:02:23Z rene $
+# $FreeBSD: head/x11-themes/numix-theme/Makefile 451355 2017-10-06 07:33:59Z vanilla $
 
 PORTNAME=	numix
-PORTVERSION=	2.6.6
+PORTVERSION=	2.6.7
 CATEGORIES=	x11-themes xfce
 PKGNAMESUFFIX=	-theme
 
@@ -17,9 +17,10 @@ RUN_DEPENDS=	gtk-murrine-engine>=0.98.2:x11-themes/gtk-murrine-engine
 GH_ACCOUNT=	numixproject
 GH_PROJECT=	numix-gtk-theme
 
+USES=		gmake
 USE_GITHUB=	yes
-USES=	gmake
 USE_GNOME=	glib20 gdkpixbuf2
+NO_ARCH=	yes
 INSTALL_TARGET=	# empty
 
 OPTIONS_DEFINE=	NOTIFYD

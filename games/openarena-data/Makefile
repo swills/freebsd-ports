@@ -1,5 +1,5 @@
 # Created by: Dominic Fandrey
-# $FreeBSD: head/games/openarena-data/Makefile 449918 2017-09-15 18:28:31Z adamw $
+# $FreeBSD: head/games/openarena-data/Makefile 450473 2017-09-23 21:11:51Z adamw $
 
 PORTNAME=	data
 PORTVERSION=	0.8.8
@@ -11,7 +11,7 @@ MASTER_SITES=	SF/oarena:data \
 DISTFILES=	${OA_DATA}:data
 EXTRACT_ONLY=
 
-MAINTAINER=	kamikaze@bsdforen.de
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	OpenArena game data files
 
 LICENSE=	GPLv2

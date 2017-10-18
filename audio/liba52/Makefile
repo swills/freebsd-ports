@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/audio/liba52/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/liba52/Makefile 450863 2017-09-28 19:32:49Z jbeich $
 
 PORTNAME=	liba52
 PORTVERSION=	0.7.4
@@ -28,11 +28,10 @@ DJBFFT_CFLAGS=		-I${LOCALBASE}/include
 DJBFFT_LDFLAGS=		-L${LOCALBASE}/lib
 DJBFFT_CONFIGURE_ON=	--enable-djbfft
 
-CFLAGS_aarch64=	-fPIC
-CFLAGS_amd64=	-fPIC
-CFLAGS_powerpc=	-fPIC
-
 HEADER_FILES=	liba52/a52_internal.h
+
+post-patch:
+	@${REINPLACE_CMD} '/-prefer-non-pic/d' ${WRKSRC}/configure
 
 post-patch-OPTIMIZED_CFLAGS-off:
 	@${REINPLACE_CMD} -E -e 's!-O3!${CFLAGS}!' -e 's!-mcpu=[^"]+"!"!' \

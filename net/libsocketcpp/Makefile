@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/net/libsocketcpp/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/net/libsocketcpp/Makefile 451313 2017-10-05 14:02:48Z bapt $
 
 PORTNAME=	libsocketcpp
 PORTVERSION=	1.0.7
@@ -12,6 +12,9 @@ COMMENT=	C++ wrapper library to the sockets
 
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	Uses gets(3)
+EXPIRATION_DATE=	2017-11-05
 
 USES=		libtool
 GNU_CONFIGURE=	yes

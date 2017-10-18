@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 449905 2017-09-15 14:17:03Z pizzamig $
+# $FreeBSD: head/net-mgmt/Makefile 452045 2017-10-14 07:09:11Z pi $
 #
 
     COMMENT = Network management tools
@@ -130,7 +130,6 @@
     SUBDIR += nagios
     SUBDIR += nagios-certexp-plugin
     SUBDIR += nagios-check_bacula
-    SUBDIR += nagios-check_bacula5
     SUBDIR += nagios-check_bacula9
     SUBDIR += nagios-check_clamav
     SUBDIR += nagios-check_cpu_usage
@@ -277,6 +276,7 @@
     SUBDIR += pandorafms_agent
     SUBDIR += pandorafms_console
     SUBDIR += pandorafms_server
+    SUBDIR += pdagent-integrations
     SUBDIR += percona-monitoring-plugins
     SUBDIR += pftabled
     SUBDIR += php56-snmp
@@ -294,10 +294,14 @@
     SUBDIR += portmon
     SUBDIR += prometheus
     SUBDIR += pushgateway
+    SUBDIR += py-adal
     SUBDIR += py-ipcalc
     SUBDIR += py-ipy
+    SUBDIR += py-msrest
+    SUBDIR += py-msrestazure
     SUBDIR += py-pdagent
     SUBDIR += py-pyang
+    SUBDIR += py-pynsca
     SUBDIR += py-pysmi
     SUBDIR += py-pyzabbix
     SUBDIR += py-snmp4

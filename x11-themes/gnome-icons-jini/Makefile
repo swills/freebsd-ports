@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/gnome-icons-jini/Makefile 354925 2014-05-23 10:56:51Z olgeni $
+# $FreeBSD: head/x11-themes/gnome-icons-jini/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	jini
 PORTVERSION=	0.8
@@ -12,7 +12,6 @@ COMMENT=	Jini Icons for Gnome
 
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}
-WANT_GNOME=	yes
 INSTALLS_ICONS=	yes
 
 post-extract:

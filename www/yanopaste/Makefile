@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/www/yanopaste/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/www/yanopaste/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	yanopaste
 PORTVERSION=	1.3.0
@@ -11,6 +11,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Yet Another Nopaste
 
 NO_BUILD=	yes
+USES+=		php
 USE_PHP=	xsl session xmlwriter xmlreader
 SUB_FILES=	pkg-message
 

@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/py-mpmath/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/py-mpmath/Makefile 451696 2017-10-10 11:57:17Z wen $
 
 PORTNAME=	mpmath
-PORTVERSION=	0.19
+PORTVERSION=	1.0.0
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

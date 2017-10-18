@@ -1,11 +1,10 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/archivers/lrzip/Makefile 434582 2017-02-22 12:59:28Z bapt $
+# $FreeBSD: head/archivers/lrzip/Makefile 451859 2017-10-12 11:30:49Z bapt $
 
 PORTNAME=	lrzip
 PORTVERSION=	0.631
 CATEGORIES=	archivers
-MASTER_SITES=	http://ck.kolivas.org/apps/lrzip/ \
-		http://files.gslin.org/Software/
+MASTER_SITES=	http://ck.kolivas.org/apps/lrzip/
 
 MAINTAINER=	delphij@FreeBSD.org
 COMMENT=	Long Range ZIP or Lzma RZIP

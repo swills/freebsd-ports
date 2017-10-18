@@ -1,12 +1,11 @@
 # Created by: Shen Chuan-Hsing
-# $FreeBSD: head/chinese/bg5pdf/Makefile 439043 2017-04-21 10:30:46Z amdmi3 $
+# $FreeBSD: head/chinese/bg5pdf/Makefile 452004 2017-10-13 14:23:31Z bapt $
 
 PORTNAME=	bg5pdf
 PORTVERSION=	1.0.0
 PORTREVISION=	7
 CATEGORIES=	chinese print
-MASTER_SITES=	ftp://freebsd.sinica.edu.tw/pub/statue/bg5pdf/ \
-		LOCAL/chinsan
+MASTER_SITES=	LOCAL/chinsan
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Convert Chinese-Big5 encoded files to PDF, using PDFlib

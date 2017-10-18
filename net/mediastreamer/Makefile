@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/net/mediastreamer/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/net/mediastreamer/Makefile 452147 2017-10-15 14:05:04Z madpilot $
 
 PORTNAME=	mediastreamer
 PORTVERSION=	2.14.0
@@ -84,7 +84,7 @@ VPX_LIB_DEPENDS=	libvpx.so:multimedia/libvpx
 XVIDEO_CONFIGURE_ENABLE=x11 xv
 XVIDEO_USE=		XORG=videoproto,x11,xv
 
-.if defined(WITH_DEBUG) && !defined(WITHOUT_DEBUG)
+.if defined(WITH_DEBUG)
 CONFIGURE_ARGS+=--enable-debug
 .endif
 

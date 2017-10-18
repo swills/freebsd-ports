@@ -1,5 +1,5 @@
 # Created by: Stephane Legrand <stephane@FreeBSD.org>
-# $FreeBSD: head/textproc/ocaml-pxp/Makefile 432489 2017-01-26 14:01:20Z amdmi3 $
+# $FreeBSD: head/textproc/ocaml-pxp/Makefile 451570 2017-10-08 19:36:26Z antoine $
 
 PORTNAME=	pxp
 PORTVERSION=	1.2.7
@@ -14,6 +14,8 @@ BUILD_DEPENDS=	${LOCALBASE}/${OCAML_SITELIBDIR}/netstring/netstring.a:www/ocaml-
 RUN_DEPENDS=	${LOCALBASE}/${OCAML_SITELIBDIR}/netstring/netstring.a:www/ocaml-net
 
 BROKEN=		does not build
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-11-09
 
 OPTIONS_DEFINE=	ULEX
 OPTIONS_DEFAULT=ULEX

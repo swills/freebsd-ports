@@ -1,12 +1,12 @@
 # Created by: Alan E <alane@FreeBSD.org>
-# $FreeBSD: head/misc/kenny/Makefile 403913 2015-12-17 17:19:48Z mat $
+# $FreeBSD: head/misc/kenny/Makefile 451301 2017-10-05 10:38:13Z ak $
 
 PORTNAME=	kenny
 PORTVERSION=	1.7
 PORTREVISION=	1
 CATEGORIES=	misc perl5
-MASTER_SITES=	https://googledrive.com/host/0BwCT-sp3iBCaeDRPYm1jTjl1Qmc/ \
-				http://www.cgarbs.de/stuff/
+MASTER_SITES=	https://aklv.github.io/distfiles/ \
+		http://www.cgarbs.de/stuff/
 DISTNAME=	${PORTNAME}.pl-${PORTVERSION}
 EXTRACT_SUFX=	.gz
 

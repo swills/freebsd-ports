@@ -1,12 +1,10 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/audio/lpac/Makefile 421387 2016-09-05 19:23:42Z tijl $
+# $FreeBSD: head/audio/lpac/Makefile 451965 2017-10-13 08:58:28Z bapt $
 
 PORTNAME=	lpac
 PORTVERSION=	1.40
 CATEGORIES=	audio linux
-MASTER_SITES=	ftp://relay1.tomsk.gov.ru/pub/FreeBSD/ports/distfiles/ \
-		ftp://ftp.itsinternet.net/pub/FreeBSD/ports/distfiles/ \
-		ftp://chernabog.cc.vt.edu/pub2/freebsd/ports/distfiles/
+MASTER_SITES=	ftp://chernabog.cc.vt.edu/pub2/freebsd/ports/distfiles/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Lossless audio codec

@@ -1,5 +1,5 @@
 # Created by: Phillip Neumann <pneumann@gmail.com>
-# $FreeBSD: head/net/rabbitmq/Makefile 449675 2017-09-12 08:19:17Z olgeni $
+# $FreeBSD: head/net/rabbitmq/Makefile 450512 2017-09-24 18:49:35Z sunpoet $
 
 PORTNAME=	rabbitmq
 PORTVERSION=	3.6.12
@@ -10,7 +10,8 @@ DISTNAME=	${PORTNAME}-server-${PORTVERSION}
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	RabbitMQ is an implementation of AMQP
 
-LICENSE=	MPL
+LICENSE=	MPL11
+LICENSE_FILE=	${WRKSRC}/LICENSE-MPL-RabbitMQ
 
 BUILD_DEPENDS=	erlang-runtime19>=19.0:lang/erlang-runtime19 \
 		${PYTHON_PKGNAMEPREFIX}simplejson>=2.0:devel/py-simplejson \

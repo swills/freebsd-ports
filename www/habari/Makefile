@@ -1,5 +1,5 @@
 # Created by: Ayumi M <ayu@commun.jp>
-# $FreeBSD: head/www/habari/Makefile 356784 2014-06-06 13:13:12Z miwi $
+# $FreeBSD: head/www/habari/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	habari
 PORTVERSION=	0.8
@@ -10,9 +10,8 @@ MASTER_SITES=	http://habariproject.org/dist/ \
 MAINTAINER=	ayu@commun.jp
 COMMENT=	Next-generation free software blogging platform
 
-USES=		zip
+USES=		zip php:web
 USE_PHP=	ctype filter hash json mbstring pcre pdo session simplexml tokenizer zlib
-WANT_PHP_WEB=	yes
 NO_BUILD=	yes
 
 OPTIONS_MULTI=	DB

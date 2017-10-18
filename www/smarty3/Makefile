@@ -1,5 +1,5 @@
 # Created by: Michael Fausten <ports@michael-fausten.de>
-# $FreeBSD: head/www/smarty3/Makefile 432208 2017-01-23 09:05:10Z mat $
+# $FreeBSD: head/www/smarty3/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	smarty
 PORTVERSION=	3.1.29
@@ -14,8 +14,8 @@ COMMENT=	PHP compiling template engine
 LICENSE=	LGPL3
 
 NO_BUILD=	yes
+USES=		php:web
 USE_PHP=	pcre
-WANT_PHP_WEB=	yes
 
 PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-message

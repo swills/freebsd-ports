@@ -1,6 +1,6 @@
 #!/bin/sh
 # MAINTAINER: portmgr@FreeBSD.org
-# $FreeBSD: head/Mk/Scripts/qa.sh 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/Mk/Scripts/qa.sh 451250 2017-10-04 21:01:09Z adridg $
 
 if [ -z "${STAGEDIR}" -o -z "${PREFIX}" -o -z "${LOCALBASE}" ]; then
 	echo "STAGEDIR, PREFIX, LOCALBASE required in environment." >&2
@@ -103,26 +103,6 @@ shebang() {
 	done <<-EOF
 	$(find ${STAGEDIR}${PREFIX} \
 	    -type f -perm +111 2>/dev/null)
-	EOF
-
-	# Split stat(1) result into 2 lines and read each line separately to
-	# retain spaces in filenames.
-	while read l; do
-		# No results presents a blank line
-		[ -z "${l}" ] && continue
-		read link
-
-		case "${link}" in
-		/*) f="${STAGEDIR}${link}" ;;
-		*) f="${l%/*}/${link}" ;;
-		esac
-		if [ -f "${f}" ]; then
-			shebangonefile "${f}" || rc=1
-		fi
-	# Use heredoc to avoid losing rc from find|while subshell
-	done <<-EOF
-	$(find ${STAGEDIR}${PREFIX} \
-	    -type l -exec stat -f "%N${LF}%Y" {} + 2>/dev/null)
 	EOF
 
 	return ${rc}
@@ -574,8 +554,6 @@ proxydeps_suggest_uses() {
 	# Qt5
 	elif expr ${pkg} : '.*/qt5-.*' > /dev/null; then
 		warn "you need USE_QT5+=$(echo ${pkg} | sed -E 's|.*/qt5-||')"
-	elif expr ${pkg} : '.*/.*-qt5' > /dev/null; then
-		warn "you need USE_QT5+=$(echo ${pkg} | sed -E 's|.*/(.*)-qt5|\1|')"
 	# MySQL
 	elif expr ${lib_file} : "${LOCALBASE}/lib/mysql/[^/]*$" > /dev/null; then
 		warn "you need USES+=mysql"

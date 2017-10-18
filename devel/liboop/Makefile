@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/liboop/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/devel/liboop/Makefile 452186 2017-10-16 09:48:06Z rodrigo $
 
 PORTNAME=	liboop
 PORTVERSION=	1.0
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	devel
 MASTER_SITES=	GENTOO \
 		http://download.ofb.net/liboop/
@@ -15,6 +15,8 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libadns.so:dns/adns \
 		libwwwcore.so:www/libwww
+
+CONFLICTS_INSTALL=	gale
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-libwww

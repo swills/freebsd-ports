@@ -1,8 +1,8 @@
 # Created by: Paul Dlug<paul@nerdlabs.com>
-# $FreeBSD: head/net-mgmt/nrpe3/Makefile 446741 2017-07-27 13:57:30Z mat $
+# $FreeBSD: head/net-mgmt/nrpe3/Makefile 451775 2017-10-11 19:31:16Z zeising $
 
 PORTNAME=	nrpe
-PORTVERSION=	3.2.0
+PORTVERSION=	3.2.1
 DISTVERSIONPREFIX=	nrpe-
 PORTREVISION?=	0
 CATEGORIES=	net-mgmt

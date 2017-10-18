@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/keybase/Makefile 449949 2017-09-16 08:59:12Z sunpoet $
+# $FreeBSD: head/security/keybase/Makefile 451201 2017-10-04 10:55:18Z sunpoet $
 
 PORTNAME=	keybase
-PORTVERSION=	1.0.30
+PORTVERSION=	1.0.33
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 

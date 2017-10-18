@@ -1,14 +1,14 @@
 # Created by: <hvo.pm@xs4all.nl>
-# $FreeBSD: head/databases/p5-Interchange6-Schema/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-Interchange6-Schema/Makefile 452141 2017-10-15 11:27:48Z pi $
 
 PORTNAME=	Interchange6-Schema
-PORTVERSION=	0.130
+PORTVERSION=	0.133
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:HORNBURG
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	hvo.pm@xs4all.nl
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Database Schema for Interchange 6
 
 LICENSE=	ART10 GPLv1+

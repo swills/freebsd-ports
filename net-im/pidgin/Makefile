@@ -1,5 +1,5 @@
 # Created by: Jim Mock <jim@FreeBSD.org>
-# $FreeBSD: head/net-im/pidgin/Makefile 427552 2016-12-02 11:58:21Z mat $
+# $FreeBSD: head/net-im/pidgin/Makefile 451901 2017-10-12 15:57:51Z mat $
 #   $MCom: ports/net-im/pidgin/Makefile,v 1.17 2007/09/17 19:53:06 marcus Exp $
 
 PORTNAME=	pidgin
@@ -24,7 +24,6 @@ USES=		python:build
 USE_LDCONFIG=	yes
 USE_GNOME=	gnomeprefix gtk20 intltool
 USE_XORG=	xscrnsaver sm
-WANT_GNOME=	yes
 CONFIGURE_ARGS=	--disable-consoleui \
 		--disable-nm \
 		--enable-screensaver \

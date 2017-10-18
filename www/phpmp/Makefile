@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/www/phpmp/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/www/phpmp/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	phpmp
 PORTVERSION=	0.12.0
@@ -13,6 +13,7 @@ COMMENT=	Web interface for music player daemon
 LICENSE=	GPLv2
 
 NO_BUILD=	yes
+USES=		php
 USE_PHP=	pcre sockets
 
 PHPMP?=		${WWWDIR_REL}

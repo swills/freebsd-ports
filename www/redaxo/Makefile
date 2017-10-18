@@ -1,5 +1,5 @@
 # Created by: Marco Steinbach <coco@executive-computing.de>
-# $FreeBSD: head/www/redaxo/Makefile 417374 2016-06-23 13:19:17Z mat $
+# $FreeBSD: head/www/redaxo/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	redaxo
 PORTVERSION=	4.6.1
@@ -15,6 +15,7 @@ LICENSE=	GPLv2
 NO_BUILD=	yes
 
 SUB_FILES+=	pkg-message pkg-deinstall
+
 USE_PHP=	mysql session xml zlib
 USES=		cpe zip:infozip
 
@@ -26,9 +27,10 @@ GD_DESC=	Enable Image Manager extension (requires gd)
 
 OPTIONS_DEFAULT=	APACHE MYSQLS GD
 
-MYSQLS_USE=	MYSQL=server
+MYSQLS_USES=	mysql:server
 
-APACHE_VARS=	WANT_PHP_MOD=yes
+APACHE_USES=	php:mod
+APACHE_USES_OFF=	php
 
 GD_USE=	PHP=gd
 

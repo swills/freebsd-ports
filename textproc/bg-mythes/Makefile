@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/bg-mythes/Makefile 392423 2015-07-18 15:02:02Z sunpoet $
+# $FreeBSD: head/textproc/bg-mythes/Makefile 450520 2017-09-24 18:50:15Z sunpoet $
 
 PORTNAME=	mythes
 PORTVERSION=	4.3
@@ -12,8 +12,11 @@ DIST_SUBDIR=	${PORTNAME}
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Bulgarian thesaurus
 
-LICENSE=	GPLv2 LGPL21 MPL
+LICENSE=	GPLv2 LGPL21 MPL11
 LICENSE_COMB=	dual
+LICENSE_FILE_GPLv2=	${WRKSRC}/GPL-2.0.txt
+LICENSE_FILE_LGPL21=	${WRKSRC}/LGPL-2.1.txt
+LICENSE_FILE_MPL11=	${WRKSRC}/MPL-1.1.txt
 
 USES=		zip
 NO_ARCH=	yes

@@ -1,9 +1,8 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/nginx/Makefile 449429 2017-09-07 21:15:16Z osa $
+# $FreeBSD: head/www/nginx/Makefile 452318 2017-10-18 08:22:45Z joneum $
 
 PORTNAME=	nginx
-PORTVERSION=	1.12.1
-PORTREVISION?=	1
+PORTVERSION=	1.12.2
 PORTEPOCH=	2
 CATEGORIES=	www
 MASTER_SITES=	http://nginx.org/download/
@@ -246,8 +245,6 @@ X11_DESC=			graphics/ImageMagick[-nox11] dependency
 XSS_DESC=			3rd party xss module
 VIDEO_DESC=			Video module support
 
-WANT_GNOME=	yes
-
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MX11}
@@ -481,7 +478,8 @@ NGINX_FASTDFS_VERSION=	5a8110f
 GH_ACCOUNT+=	happyfish100:fastdfs
 GH_PROJECT+=	fastdfs-nginx-module:fastdfs
 GH_TAGNAME+=	${NGINX_FASTDFS_VERSION}:fastdfs
-EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-fastdfs-src-config
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-fastdfs-src-config \
+		${PATCHDIR}/extra-patch-fastdfs-src-mod_fastdfs.conf
 BUILD_DEPENDS+=	${LOCALBASE}/include/fastcommon/logger.h:devel/libfastcommon \
 		${LOCALBASE}/include/fastdfs/fdfs_client.h:ftp/fastdfs
 LIB_DEPENDS+=	libfastcommon.so:devel/libfastcommon \
@@ -933,7 +931,7 @@ CONFIGURE_ARGS+=--without-http_rewrite_module \
 .endif
 
 .if ${PORT_OPTIONS:MPASSENGER}
-PASSENGER_VERSION=	5.1.8
+PASSENGER_VERSION=	5.1.11
 MASTER_SITES+=	http://s3.amazonaws.com/phusion-passenger/releases/:passenger
 DISTFILES+=	passenger-${PASSENGER_VERSION}.tar.gz:passenger
 .if !empty(PORT_OPTIONS:MDSO)

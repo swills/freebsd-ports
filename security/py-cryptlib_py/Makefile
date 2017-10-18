@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/py-cryptlib_py/Makefile 440239 2017-05-06 07:38:46Z miwi $
+# $FreeBSD: head/security/py-cryptlib_py/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	cryptlib_py
 PORTVERSION=	3.4.3
@@ -14,7 +14,7 @@ COMMENT=	Pythin binding for cryptlib
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-ONLY_FOR_ARCHS=	i386 amd64 armv6
+ONLY_FOR_ARCHS=	i386 amd64 armv6 armv7
 
 USES=		python:2 zip:infozip
 USE_PYTHON=	distutils autoplist

@@ -1,5 +1,5 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/x11-fm/thunar/Makefile 450044 2017-09-18 15:11:43Z madpilot $
+# $FreeBSD: head/x11-fm/thunar/Makefile 451481 2017-10-07 22:48:08Z madpilot $
 
 PORTNAME=	Thunar
 PORTVERSION=	1.6.12
@@ -12,7 +12,8 @@ COMMENT=	Xfce file manager
 
 LICENSE=	GPLv2 LGPL20
 LICENSE_COMB=	multi
-LICENSE_FILE=	${WRKSRC}/COPYING ${WRKSRC}/COPYING.LIB
+LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING
+LICENSE_FILE_LGPL20=	${WRKSRC}/COPYING.LIB
 
 LIB_DEPENDS=	libtumbler-1.so:deskutils/xfce4-tumbler \
 		libdbus-1.so:devel/dbus \
@@ -63,7 +64,7 @@ CONFIGURE_ARGS+=--enable-gio-unix \
 		--enable-dbus
 
 post-patch:
-	${REINPLACE_CMD} -e 's|internet-mail|emblem-mail|' \
+	@${REINPLACE_CMD} -e 's|internet-mail|emblem-mail|' \
 		${WRKSRC}/plugins/thunar-sendto-email/thunar-sendto-email.desktop.in.in
 
 .include <bsd.port.mk>

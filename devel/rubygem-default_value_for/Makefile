@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/devel/rubygem-default_value_for/Makefile 430067 2016-12-30 21:25:15Z swills $
+# $FreeBSD: head/devel/rubygem-default_value_for/Makefile 451149 2017-10-03 15:35:53Z sunpoet $
 
 PORTNAME=	default_value_for
-PORTVERSION=	3.0.2
+PORTVERSION=	3.0.3
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

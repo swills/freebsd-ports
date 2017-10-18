@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Regexp-Debugger/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Regexp-Debugger/Makefile 450823 2017-09-28 10:41:23Z sunpoet $
 
 PORTNAME=	Regexp-Debugger
-PORTVERSION=	0.002000
+PORTVERSION=	0.002001
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

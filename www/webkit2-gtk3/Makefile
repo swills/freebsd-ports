@@ -1,9 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/www/webkit2-gtk3/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/www/webkit2-gtk3/Makefile 450556 2017-09-25 00:02:36Z jbeich $
 
 PORTNAME=	webkit
 PORTVERSION=	2.16.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	http://webkitgtk.org/releases/
 PKGNAMESUFFIX=	2-gtk3

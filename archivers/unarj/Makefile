@@ -1,11 +1,11 @@
 # Created by: ache
-# $FreeBSD: head/archivers/unarj/Makefile 408602 2016-02-09 22:46:58Z ak $
+# $FreeBSD: head/archivers/unarj/Makefile 451301 2017-10-05 10:38:13Z ak $
 
 PORTNAME=	unarj
 PORTVERSION=	2.65
 PORTREVISION=	2
 CATEGORIES=	archivers
-MASTER_SITES=	https://googledrive.com/host/0BwCT-sp3iBCaeDRPYm1jTjl1Qmc/
+MASTER_SITES=	https://aklv.github.io/distfiles/
 
 MAINTAINER=	ak@FreeBSD.org
 COMMENT=	Allows files to be extracted from ARJ archives

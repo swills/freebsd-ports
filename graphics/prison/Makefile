@@ -1,8 +1,9 @@
 # Created by: fluffy@
-# $FreeBSD: head/graphics/prison/Makefile 430262 2017-01-01 16:30:44Z tcberner $
+# $FreeBSD: head/graphics/prison/Makefile 450419 2017-09-23 02:59:07Z vanilla $
 
 PORTNAME=	prison
 PORTVERSION=	1.1.1
+PORTREVISION=	1
 CATEGORIES=	graphics kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src
 DIST_SUBDIR=	KDE/${PORTNAME}

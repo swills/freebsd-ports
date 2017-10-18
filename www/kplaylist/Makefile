@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/www/kplaylist/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/www/kplaylist/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	kplaylist
 PORTVERSION=	1.8.505
@@ -15,6 +15,7 @@ RUN_DEPENDS=	lame:audio/lame \
 		oggenc:audio/vorbis-tools \
 		zip:archivers/zip
 
+USES=		php
 USE_PHP=	curl mysql session iconv
 
 WRKSRC=		${WRKDIR}

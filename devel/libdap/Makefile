@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/libdap/Makefile 442308 2017-06-01 19:57:36Z sunpoet $
+# $FreeBSD: head/devel/libdap/Makefile 450815 2017-09-28 10:40:27Z sunpoet $
 
 PORTNAME=	libdap
-PORTVERSION=	3.19.0
+PORTVERSION=	3.19.1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.opendap.org/pub/source/ \
 		LOCAL/sunpoet

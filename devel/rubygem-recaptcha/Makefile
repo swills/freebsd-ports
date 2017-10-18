@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-recaptcha/Makefile 449467 2017-09-08 21:52:15Z sunpoet $
+# $FreeBSD: head/devel/rubygem-recaptcha/Makefile 452231 2017-10-16 17:47:21Z sunpoet $
 
 PORTNAME=	recaptcha
-PORTVERSION=	4.4.1
+PORTVERSION=	4.6.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

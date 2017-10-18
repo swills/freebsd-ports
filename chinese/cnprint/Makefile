@@ -1,12 +1,11 @@
 # Created by: Shen Chuan-Hsing <statue@freebsd.sinica.edu.tw>
-# $FreeBSD: head/chinese/cnprint/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/chinese/cnprint/Makefile 452004 2017-10-13 14:23:31Z bapt $
 
 PORTNAME=	cnprint
 PORTVERSION=	3.30b
 PORTREVISION=	1
 CATEGORIES=	chinese print
-MASTER_SITES=	http://distfiles.cs.nctu.edu.tw/${PORTNAME}-${PORTVERSION}/ \
-		http://ftp.yz.yamagata-u.ac.jp/pub/FreeBSD/distfiles/${PORTNAME}-${PORTVERSION}/
+MASTER_SITES=	http://distfiles.cs.nctu.edu.tw/${PORTNAME}-${PORTVERSION}/
 DISTFILES=	cnprint330b.c cnprint330b.readme ttfb330b.c cnprint330b.hlp \
 		cnprint33.cmd helvet.dat  mssong.ttf.gz mssong.htf \
 		mshei.ttf.gz mshei.htf cc48s.hbf cc48.sym.gz cc48s.1.gz \

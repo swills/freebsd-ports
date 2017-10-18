@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-kaminari/Makefile 434018 2017-02-13 19:01:05Z sunpoet $
+# $FreeBSD: head/www/rubygem-kaminari/Makefile 452112 2017-10-15 00:37:53Z sunpoet $
 
 PORTNAME=	kaminari
-PORTVERSION=	1.0.1
+PORTVERSION=	1.1.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

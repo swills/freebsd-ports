@@ -1,8 +1,8 @@
 # Created by: Murilo Opsfelder <mopsfelder@gmail.com>
-# $FreeBSD: head/www/p5-Mojolicious/Makefile 449219 2017-09-03 22:08:16Z adamw $
+# $FreeBSD: head/www/p5-Mojolicious/Makefile 451899 2017-10-12 15:49:31Z adamw $
 
 PORTNAME=	Mojolicious
-PORTVERSION=	7.44
+PORTVERSION=	7.47
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

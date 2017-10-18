@@ -1,5 +1,5 @@
 # Created by: futatuki
-# $FreeBSD: head/sysutils/cdrdao/Makefile 446760 2017-07-27 16:32:05Z amdmi3 $
+# $FreeBSD: head/sysutils/cdrdao/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME?=	cdrdao
 PORTVERSION=	1.2.3
@@ -37,7 +37,6 @@ TOC2MP3_DESC=		Build with toc2mp3 (requires audio/lame)
 
 .if ${PORTNAME} == "gcdmaster"
 USES+=			pkgconfig shared-mime-info
-WANT_GNOME=		yes
 GCONF_SCHEMAS=		gcdmaster.schemas
 LIB_DEPENDS+=		${MP3OGG_LIB_DEPENDS} \
 			libgnomeuimm-2.6.so:x11-toolkits/libgnomeuimm26

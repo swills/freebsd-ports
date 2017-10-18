@@ -1,11 +1,11 @@
 # Created by: Bruce A. Mah <bmah@ca.sandia.gov>
-# $FreeBSD: head/x11-wm/vtwm/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-wm/vtwm/Makefile 451301 2017-10-05 10:38:13Z ak $
 
 PORTNAME=	vtwm
 PORTVERSION=	5.4.99.20130906
 PORTREVISION=	1
 CATEGORIES=	x11-wm
-MASTER_SITES=	https://googledrive.com/host/0BwCT-sp3iBCaeDRPYm1jTjl1Qmc/
+MASTER_SITES=	https://aklv.github.io/distfiles/
 
 MAINTAINER=	ak@FreeBSD.org
 COMMENT=	Twm with a virtual desktop and optional Motif-like features

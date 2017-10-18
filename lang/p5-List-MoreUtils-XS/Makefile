@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/lang/p5-List-MoreUtils-XS/Makefile 448378 2017-08-20 12:26:05Z sunpoet $
+# $FreeBSD: head/lang/p5-List-MoreUtils-XS/Makefile 451138 2017-10-03 15:34:57Z sunpoet $
 
 PORTNAME=	List-MoreUtils-XS
-PORTVERSION=	0.423
+PORTVERSION=	0.426
 CATEGORIES=	lang perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -18,7 +18,7 @@ USES=		perl5
 
 .include <bsd.port.pre.mk>
 
-.if ${PERL_LEVEL} < 502503
+.if ${PERL_LEVEL} < 502401
 BUILD_DEPENDS+=	p5-XSLoader>=0.22:devel/p5-XSLoader
 RUN_DEPENDS+=	p5-XSLoader>=0.22:devel/p5-XSLoader
 .endif

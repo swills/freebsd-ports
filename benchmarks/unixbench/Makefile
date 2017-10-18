@@ -1,9 +1,10 @@
 # Created by: se
-# $FreeBSD: head/benchmarks/unixbench/Makefile 449273 2017-09-05 07:53:13Z pizzamig $
+# $FreeBSD: head/benchmarks/unixbench/Makefile 450894 2017-09-29 14:45:48Z pizzamig $
 
 PORTNAME=	unixbench
 DISTVERSIONPREFIX=	v
 DISTVERSION=	5.1.3
+PORTREVISION=	1
 CATEGORIES=	benchmarks
 
 MAINTAINER=	pizzamig@FreeBSD.org

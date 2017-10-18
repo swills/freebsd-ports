@@ -1,11 +1,13 @@
 # Created by: lx
-# $FreeBSD: head/security/clusterssh/Makefile 438137 2017-04-10 09:14:44Z ehaupt $
+# $FreeBSD: head/security/clusterssh/Makefile 450647 2017-09-26 07:41:34Z ehaupt $
 
 PORTNAME=	clusterssh
-PORTVERSION=	4.09
+DISTVERSIONPREFIX=	release-
+DISTVERSION=	4.10_02
+PORTREVISION=	1
 CATEGORIES=	security net
 
-MAINTAINER=	lx@FreeBSD.org
+MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Controls multiple hosts simultaneously via xterms and ssh
 
 LICENSE=	GPLv2
@@ -41,7 +43,6 @@ USE_GITHUB=	yes
 USE_PERL5=	modbuild
 
 GH_ACCOUNT=	duncs
-GH_TAGNAME=	4665a23
 
 OPTIONS_SUB=	yes
 OPTIONS_DEFINE=	BASH

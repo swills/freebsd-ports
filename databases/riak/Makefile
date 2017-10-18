@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/riak/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/databases/riak/Makefile 452070 2017-10-14 16:31:34Z bapt $
 
 PORTNAME=	riak
 PORTVERSION=	1.4.12
@@ -11,6 +11,8 @@ MAINTAINER=	robak@FreeBSD.org
 COMMENT=	Open source, distributed, noSQL database
 
 LICENSE=	APACHE20
+
+BROKEN=		No public distfiles
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/erlang15/bin/erlc:lang/erlang-runtime15
 

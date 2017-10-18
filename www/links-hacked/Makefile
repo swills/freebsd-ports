@@ -1,5 +1,5 @@
 # Created by: Peter Vereshagin <peter@vereshagin.org>
-# $FreeBSD: head/www/links-hacked/Makefile 450353 2017-09-22 10:48:57Z mat $
+# $FreeBSD: head/www/links-hacked/Makefile 450569 2017-09-25 05:26:59Z antoine $
 
 PORTNAME=	links-hacked
 DISTVERSION=	101110
@@ -18,7 +18,8 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-ssl --without-pmshell --without-atheos --without-fb
 
 CFLAGS+=	-Wno-error=return-type
-LDFLAGS+=	-lexecinfo
+CPPFLAGS+=	-I${LOCALBASE}/include
+LDFLAGS+=	-L${LOCALBASE}/lib -lexecinfo
 
 CONFLICTS=	links-[0-9]*
 

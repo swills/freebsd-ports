@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/rubygem-mmap2/Makefile 449057 2017-09-01 07:38:45Z tz $
+# $FreeBSD: head/devel/rubygem-mmap2/Makefile 451476 2017-10-07 19:01:09Z antoine $
 
 PORTNAME=	mmap2
 PORTVERSION=	2.2.7
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -10,7 +11,6 @@ COMMENT=	Implement memory-mapped file objects for Ruby 2.x
 
 LICENSE=	RUBY
 
-NO_ARCH=	yes
 USES=		gem
 USE_RUBY=	yes
 

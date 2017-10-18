@@ -1,11 +1,11 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/multimedia/plexhometheater/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/multimedia/plexhometheater/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	plexhometheater
 PORTVERSION=	1.4.1
 DISTVERSIONPREFIX=v
 DISTVERSIONSUFFIX=.469-47a90f01
-PORTREVISION=	11
+PORTREVISION=	13
 CATEGORIES=	multimedia
 
 MAINTAINER=	woodsb02@FreeBSD.org

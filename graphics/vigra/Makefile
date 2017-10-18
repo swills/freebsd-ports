@@ -1,10 +1,13 @@
 # Created by: cartola (Carlos E. G. Carvalho)
-# $FreeBSD: head/graphics/vigra/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/vigra/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	vigra
 DISTVERSION=	1.11.0
-PORTREVISION=	13
+PORTREVISION=	15
 CATEGORIES=	graphics
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	18675a51fca2.patch:-p1
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	VIGRA stands for "Vision with Generic Algorithms"

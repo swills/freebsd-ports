@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/devel/p5-Make/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Make/Makefile 451496 2017-10-08 07:58:45Z sunpoet $
 
 PORTNAME=	Make
 PORTVERSION=	1.1.5
@@ -12,7 +12,6 @@ COMMENT=	Perl module implementing 'make' and script
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
-LICENSE_FILE=	${WRKSRC}/LICENSE
 
 TEST_DEPENDS=	p5-Test-Compile>=1.2.1:devel/p5-Test-Compile
 

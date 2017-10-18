@@ -1,9 +1,9 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/deskutils/kchmviewer/Makefile 442464 2017-06-02 23:04:24Z tcberner $
+# $FreeBSD: head/deskutils/kchmviewer/Makefile 450775 2017-09-27 18:08:14Z rakuco $
 
 PORTNAME=	kchmviewer
 PORTVERSION=	7.7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils kde
 MASTER_SITES=	SF
 

@@ -1,9 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-github_api/Makefile 448047 2017-08-16 15:45:23Z sunpoet $
+# $FreeBSD: head/devel/rubygem-github_api/Makefile 451600 2017-10-09 10:37:59Z sunpoet $
 
 PORTNAME=	github_api
-PORTVERSION=	0.17.0
-PORTREVISION=	2
+PORTVERSION=	0.18.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -13,11 +12,10 @@ COMMENT=	Wrapper that supports all of the GitHub API v3 methods
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	rubygem-addressable>=2.4.0:www/rubygem-addressable \
+RUN_DEPENDS=	rubygem-addressable>=2.4:www/rubygem-addressable \
 		rubygem-descendants_tracker>=0.0.4:devel/rubygem-descendants_tracker \
 		rubygem-faraday>=0.8:www/rubygem-faraday \
 		rubygem-hashie>=3.4:devel/rubygem-hashie \
-		rubygem-mime-types29>=1.16:misc/rubygem-mime-types29 \
 		rubygem-oauth2>=1.0:net/rubygem-oauth2
 
 NO_ARCH=	yes

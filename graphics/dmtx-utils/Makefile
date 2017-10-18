@@ -1,9 +1,9 @@
 # Created by: johans
-# $FreeBSD: head/graphics/dmtx-utils/Makefile 441761 2017-05-26 08:20:18Z kwm $
+# $FreeBSD: head/graphics/dmtx-utils/Makefile 450852 2017-09-28 15:36:31Z kwm $
 
 PORTNAME=	dmtx-utils
 PORTVERSION=	0.7.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics
 MASTER_SITES=	SF/libdmtx/libdmtx/${PORTVERSION}
 

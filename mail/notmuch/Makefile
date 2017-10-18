@@ -1,8 +1,8 @@
 # Created by: DarwinSurvivor <darwinsurvivor@gmail.com>
-# $FreeBSD: head/mail/notmuch/Makefile 447675 2017-08-10 13:20:00Z jrm $
+# $FreeBSD: head/mail/notmuch/Makefile 452172 2017-10-16 05:40:01Z misha $
 
 PORTNAME=	notmuch
-PORTVERSION=	0.25
+PORTVERSION=	0.25.1
 CATEGORIES=	mail
 MASTER_SITES=	http://notmuchmail.org/releases/
 

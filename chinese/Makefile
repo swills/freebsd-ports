@@ -1,4 +1,4 @@
-# $FreeBSD: head/chinese/Makefile 443772 2017-06-17 13:44:51Z rakuco $
+# $FreeBSD: head/chinese/Makefile 450448 2017-09-23 14:29:58Z vanilla $
 #
 
     COMMENT = Chinese support
@@ -45,6 +45,9 @@
     SUBDIR += gb2jis
     SUBDIR += gb2ps
     SUBDIR += gcin
+    SUBDIR += gcin-gtk3
+    SUBDIR += gcin-qt4
+    SUBDIR += gcin-qt5
     SUBDIR += gimp-help-zh_CN
     SUBDIR += gydict
     SUBDIR += hc

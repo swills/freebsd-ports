@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/security/p5-Net-SinFP/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-Net-SinFP/Makefile 451826 2017-10-12 08:11:03Z sunpoet $
 
 PORTNAME?=	Net-SinFP
 PORTVERSION=	2.09
@@ -42,9 +42,6 @@ INSTALL_TARGET=	pure_install
 
 post-patch:
 	@${REINPLACE_CMD} -e 's/.*EXE_FILES.*//' ${WRKSRC}/${CONFIGURE_SCRIPT}
-
-regression-test:
-	@(cd ${WRKSRC} && ${PERL} ${CONFIGURE_SCRIPT} && ${MAKE} test)
 .endif
 
 ONLY_FOR_ARCHS=		i386 amd64

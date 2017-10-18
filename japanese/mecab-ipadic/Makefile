@@ -1,5 +1,5 @@
 # Created by: TAKATSU Tomonari <tota@rtfm.jp>
-# $FreeBSD: head/japanese/mecab-ipadic/Makefile 444227 2017-06-24 16:31:55Z sunpoet $
+# $FreeBSD: head/japanese/mecab-ipadic/Makefile 450932 2017-09-29 19:39:55Z antoine $
 
 PORTNAME=	mecab-ipadic
 DISTVERSION=	2.7.0-20070801
@@ -14,8 +14,8 @@ LICENSE=	NAIST ICOT
 LICENSE_COMB=	multi
 LICENSE_NAME_NAIST=	NAIST
 LICENSE_NAME_ICOT=	ICOT
-LICENSE_PERMS_NAIST=	${_LICENSE_PERMS_DEFAULT}
-LICENSE_PERMS_ICOT=	${_LICENSE_PERMS_DEFAULT}
+LICENSE_PERMS_NAIST=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+LICENSE_PERMS_ICOT=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 .if empty(PKGNAMESUFFIX)
 LICENSE_TEXT_NAIST=	See https://github.com/taku910/mecab/blob/master/mecab-ipadic/COPYING

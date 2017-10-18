@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/openal-soft/Makefile 450103 2017-09-19 05:07:08Z jbeich $
+# $FreeBSD: head/audio/openal-soft/Makefile 451176 2017-10-04 01:11:34Z jbeich $
 
 PORTNAME=	openal-soft
-PORTVERSION=	1.18.1
+PORTVERSION=	1.18.2
 CATEGORIES=	audio
 MASTER_SITES=	http://kcat.strangesoft.net/openal-releases/
 

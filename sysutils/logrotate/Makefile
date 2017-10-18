@@ -1,8 +1,8 @@
 # Created by: Yuan-Chen Cheng <ycheng@sinica.edu.tw>
-# $FreeBSD: head/sysutils/logrotate/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/logrotate/Makefile 452271 2017-10-17 08:21:17Z pizzamig $
 
 PORTNAME=	logrotate
-PORTVERSION=	3.9.2
+PORTVERSION=	3.13.0
 CATEGORIES=	sysutils
 
 MAINTAINER=	js@iksz.hu

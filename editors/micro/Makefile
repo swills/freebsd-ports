@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/micro/Makefile 434995 2017-02-27 22:23:16Z swills $
+# $FreeBSD: head/editors/micro/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	micro
 PORTVERSION=	1.1.4
@@ -36,8 +36,6 @@ GH_TUPLE=	\
 
 BUILD_HASH=	5dc8fe4
 BUILD_DATE=	February 10, 2017
-
-STRIP=		# stripping can break go binaries
 
 PLIST_FILES=	bin/micro
 PORTDOCS=	README.md

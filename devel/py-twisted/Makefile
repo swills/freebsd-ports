@@ -1,9 +1,8 @@
 # Created by: Johann Visagie <wjv@FreeBSD.org>
-# $FreeBSD: head/devel/py-twisted/Makefile 443797 2017-06-18 02:56:43Z sunpoet $
+# $FreeBSD: head/devel/py-twisted/Makefile 450460 2017-09-23 17:00:09Z rodrigc $
 
 PORTNAME=	twisted
-PORTVERSION=	17.5.0
-PORTREVISION=	1
+PORTVERSION=	17.9.0
 CATEGORIES=	devel net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

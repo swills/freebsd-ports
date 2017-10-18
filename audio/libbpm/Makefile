@@ -1,11 +1,11 @@
 # Created by: Mykola Dzham <i@levsha.me>
-# $FreeBSD: head/audio/libbpm/Makefile 357980 2014-06-16 12:43:41Z amdmi3 $
+# $FreeBSD: head/audio/libbpm/Makefile 451965 2017-10-13 08:58:28Z bapt $
 
 PORTNAME=	libbpm
 PORTVERSION=	0.3
 PORTREVISION=	1
 CATEGORIES=	audio
-MASTER_SITES=	http://www.hep.ucl.ac.uk/~bino/libbpm/dist/ http://levsha.me/ports/distfiles/
+MASTER_SITES=	http://www.hep.ucl.ac.uk/~bino/libbpm/dist/
 
 MAINTAINER=	i@levsha.me
 COMMENT=	C-library contains low level beam position monitor signal processing

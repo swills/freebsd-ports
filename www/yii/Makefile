@@ -1,5 +1,5 @@
 # Created by: Yi-Jheng Lin <yzlin@cs.nctu.edu.tw>
-# $FreeBSD: head/www/yii/Makefile 442909 2017-06-08 09:24:01Z madpilot $
+# $FreeBSD: head/www/yii/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	yii
 PORTVERSION=	1.1.19
@@ -14,10 +14,9 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	yiisoft
 
 NO_BUILD=	yes
-USES=		cpe
+USES=		cpe php:web
 CPE_PRODUCT=	yiiframework
 USE_PHP=	pcre spl
-WANT_PHP_WEB=	yes
 
 SUB_FILES=	pkg-message
 

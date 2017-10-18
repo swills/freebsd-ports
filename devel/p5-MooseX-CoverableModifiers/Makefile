@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-MooseX-CoverableModifiers/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-CoverableModifiers/Makefile 452126 2017-10-15 02:47:49Z pi $
 
 PORTNAME=	MooseX-CoverableModifiers
 PORTVERSION=	0.30
@@ -6,7 +6,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	hvo.pm@xs4all.nl
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Make Moose method modifiers Devel::Cover friendly
 
 LICENSE=	ART10 GPLv1+

@@ -1,5 +1,5 @@
 # Created by: Aren Tyr <aren.tyr@gawab.com>
-# $FreeBSD: head/deskutils/cdcat/Makefile 428022 2016-12-07 01:00:11Z jhale $
+# $FreeBSD: head/deskutils/cdcat/Makefile 450503 2017-09-24 18:48:51Z sunpoet $
 
 PORTNAME=	cdcat
 PORTVERSION=	2.3.1
@@ -10,8 +10,8 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Qt based tool for offline CD/DVD/disk catalogs
 
-LICENSE=	GPLv2 MPL
-LICENSE_COMB=	multi
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	cryptopp>0:security/cryptopp
 LIB_DEPENDS=	libtar.so:devel/libtar \

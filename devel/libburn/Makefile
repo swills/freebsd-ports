@@ -1,8 +1,8 @@
 # Created by: J.R. Oldroyd <fbsd@opal.com>
-# $FreeBSD: head/devel/libburn/Makefile 436494 2017-03-19 14:02:23Z rene $
+# $FreeBSD: head/devel/libburn/Makefile 450486 2017-09-24 11:24:26Z riggs $
 
 PORTNAME=	libburn
-PORTVERSION=	1.4.6
+PORTVERSION=	1.4.8
 CATEGORIES=	devel
 MASTER_SITES=	http://files.libburnia-project.org/releases/
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/openntpd/Makefile 449430 2017-09-07 21:23:00Z naddy $
+# $FreeBSD: head/net/openntpd/Makefile 451480 2017-10-07 19:59:30Z naddy $
 
 PORTNAME=	openntpd
 PORTVERSION=	6.2p2
@@ -13,11 +13,13 @@ LICENSE=	ISCL
 
 RUN_DEPENDS=	ca_root_nss>=0:security/ca_root_nss
 
+CONFLICTS=	ntp-[0-9].* ntp-devel-*
+
+USES=		ssl
+
 USE_RC_SUBR=	openntpd
 USERS=		_ntp
 GROUPS=		_ntp
-
-USES=		ssl
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-cacert=${LOCALBASE}/etc/ssl/cert.pem

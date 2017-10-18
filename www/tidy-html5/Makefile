@@ -1,8 +1,9 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/www/tidy-html5/Makefile 435192 2017-03-01 18:49:56Z thierry $
+# $FreeBSD: head/www/tidy-html5/Makefile 452087 2017-10-14 19:53:52Z thierry $
 
 PORTNAME=	tidy-html5
 PORTVERSION=	5.4.0
+PORTREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	thierry@FreeBSD.org
@@ -27,5 +28,6 @@ post-install:
 	# To avoid conflict ATM - to be removed later
 	${MV} ${STAGEDIR}${PREFIX}/bin/tidy ${STAGEDIR}${PREFIX}/bin/tidy5
 	${MV} ${STAGEDIR}${PREFIX}/lib/libtidy.so ${STAGEDIR}${PREFIX}/lib/libtidy5.so
+	${MV} ${STAGEDIR}${MANPREFIX}/man/man1/tidy.1 ${STAGEDIR}${MANPREFIX}/man/man1/tidy5.1
 
 .include <bsd.port.mk>

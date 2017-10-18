@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/sams2/Makefile 424753 2016-10-27 09:29:23Z mat $
+# $FreeBSD: head/www/sams2/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	sams2
 DISTVERSION=	2.0.0
@@ -14,7 +14,7 @@ LICENSE=	BSD4CLAUSE
 LIB_DEPENDS=	libpcre.so:devel/pcre
 RUN_DEPENDS=	${LOCALBASE}/libexec/mysqld:${_MYSQL_SERVER}
 
-USES=		autoreconf gmake libtool tar:bzip2
+USES=		autoreconf gmake libtool php tar:bzip2
 USE_LDCONFIG=	yes
 USE_PHP=	gd mysql zlib
 USE_MYSQL=	yes

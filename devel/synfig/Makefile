@@ -1,9 +1,9 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/devel/synfig/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/synfig/Makefile 450852 2017-09-28 15:36:31Z kwm $
 
 PORTNAME=	synfig
 PORTVERSION=	1.0.2
-PORTREVISION=	7
+PORTREVISION=	10
 CATEGORIES=	devel graphics multimedia
 MASTER_SITES=	SF/${PORTNAME}/releases/${PORTVERSION}/source
 

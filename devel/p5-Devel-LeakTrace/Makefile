@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Devel-LeakTrace/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Devel-LeakTrace/Makefile 451486 2017-10-08 06:10:54Z sunpoet $
 
 PORTNAME=	Devel-LeakTrace
 PORTVERSION=	0.06
@@ -12,7 +12,6 @@ COMMENT=	Indicate where leaked variables are coming from
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
-LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		perl5 pkgconfig
 USE_GNOME=	glib20

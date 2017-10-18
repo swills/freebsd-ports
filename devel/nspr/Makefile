@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/nspr/Makefile 450202 2017-09-20 13:44:15Z jbeich $
+# $FreeBSD: head/devel/nspr/Makefile 450504 2017-09-24 18:48:56Z sunpoet $
 
 PORTNAME=	nspr
 DISTVERSION=	4.17
@@ -8,6 +8,9 @@ MASTER_SITES=	MOZILLA/${PORTNAME}/releases/v${PORTVERSION}/src
 
 MAINTAINER=	gecko@FreeBSD.org
 COMMENT=	Platform-neutral API for system level and libc like functions
+
+LICENSE=	MPL20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		cpe gmake pathfix
 CPE_VENDOR=	mozilla

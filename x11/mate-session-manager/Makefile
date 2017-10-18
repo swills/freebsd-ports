@@ -1,15 +1,17 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/mate-session-manager/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/x11/mate-session-manager/Makefile 452089 2017-10-14 20:51:48Z kwm $
 
 PORTNAME=	mate-session-manager
-PORTVERSION=	1.18.0
-PORTREVISION=	1
+PORTVERSION=	1.18.1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Session component for the MATE desktop
+
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libdbus-glib-1.so:devel/dbus-glib \
 		libdbus-1.so:devel/dbus \

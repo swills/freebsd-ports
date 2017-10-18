@@ -1,5 +1,5 @@
 # Created by: Javier Martin Rueda <jmrueda@diatel.upm.es>
-# $FreeBSD: head/www/moodle33/Makefile 449747 2017-09-13 01:50:45Z wen $
+# $FreeBSD: head/www/moodle33/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	moodle
 PORTVERSION=	3.3.2
@@ -14,7 +14,7 @@ LICENSE=	GPLv3
 
 CONFLICTS=	moodle30-3.0.[0-9]* moodle31-3.1.[0-9]* moodle32-3.2.[0-9]*
 
-USES=		cpe tar:tgz
+USES=		cpe php tar:tgz
 USE_PHP=	ctype curl dom fileinfo gd hash iconv intl json mbstring \
 		opcache openssl pcre session simplexml soap spl tokenizer \
 		xml xmlreader xmlrpc zip zlib
@@ -26,7 +26,8 @@ OPTIONS_DEFINE=		LDAP MIMETEX
 OPTIONS_DEFAULT=	MYSQL
 MIMETEX_DESC=		mimeTeX filter functionality support
 
-MYSQL_USE=	mysql=client php=mysqli
+MYSQL_USES=	mysql
+MYSQL_USE=	php=mysqli
 PGSQL_USE=	php=pgsql
 MSSQL_USE=	php=mssql
 LDAP_USE=	php=ldap

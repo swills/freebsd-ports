@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/phprecipebook/Makefile 433543 2017-02-07 12:14:34Z mat $
+# $FreeBSD: head/www/phprecipebook/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	phprecipebook
 PORTVERSION=	3.01
@@ -15,9 +15,8 @@ LICENSE_FILE=	${WRKSRC}/docs/LICENSE.TXT
 WRKSRC=		${WRKDIR}/${PORTNAME}
 NO_BUILD=	yes
 NO_ARCH=	yes
-USES=		tar:tgz
+USES=		php:web tar:tgz
 USE_PHP=	xml
-WANT_PHP_WEB=	yes
 SUB_FILES=	pkg-message
 PLIST_SUB=	WWWOWN=${WWWOWN} WWWGRP=${WWWGRP}
 

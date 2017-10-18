@@ -1,9 +1,8 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/java/javavmwrapper/Makefile 420669 2016-08-23 12:28:07Z bapt $
+# $FreeBSD: head/java/javavmwrapper/Makefile 452075 2017-10-14 18:36:17Z glewis $
 
 PORTNAME=	javavmwrapper
-PORTVERSION=	2.5
-PORTREVISION=	2
+PORTVERSION=	2.6
 CATEGORIES=	java
 MASTER_SITES=	# none
 DISTFILES=	# none

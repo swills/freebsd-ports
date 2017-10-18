@@ -1,5 +1,5 @@
 # Created by: René Ladan <rene@FreeBSD.org>
-# $FreeBSD: head/www/py-jsonfield/Makefile 448374 2017-08-20 11:49:06Z rene $
+# $FreeBSD: head/www/py-jsonfield/Makefile 451624 2017-10-09 17:03:00Z rene $
 
 PORTNAME=	jsonfield
 PORTVERSION=	2.0.2
@@ -14,6 +14,8 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django110>=0:www/py-django110
+
+CONFLICTS_INSTALL=py*-django-jsonfield
 
 USES=		python
 USE_PYTHON=	distutils autoplist

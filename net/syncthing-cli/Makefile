@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/syncthing-cli/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/syncthing-cli/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	syncthing-cli
 PORTVERSION=	0.1.0.2015092201
@@ -15,8 +15,6 @@ GH_ACCOUNT=	syncthing
 GH_TAGNAME=	9594d39
 
 PLIST_FILES=	bin/syncthing-cli
-
-STRIP=		# stripping can break go binaries
 
 do-build:
 	@cd ${WRKSRC} ; ${SETENV} GOPATH=${WRKSRC}/Godeps/_workspace:${WRKSRC} go build

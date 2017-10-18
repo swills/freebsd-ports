@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/sk-hunspell/Makefile 392422 2015-07-18 15:01:38Z sunpoet $
+# $FreeBSD: head/textproc/sk-hunspell/Makefile 450528 2017-09-24 18:50:54Z sunpoet $
 
 PORTNAME=	hunspell
 PORTVERSION=	20110228
@@ -12,8 +12,11 @@ DIST_SUBDIR=	${PORTNAME}
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Slovak hunspell dictionaries
 
-LICENSE=	LGPL21 GPLv2 MPL
+LICENSE=	GPLv2 LGPL21 MPL11
 LICENSE_COMB=	dual
+LICENSE_FILE_GPLv2=	${WRKSRC}/doc/GPL
+LICENSE_FILE_LGPL21=	${WRKSRC}/doc/LGPL
+LICENSE_FILE_MPL11=	${WRKSRC}/doc/MPL
 
 USES=		zip
 NO_ARCH=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/mesa-dri/Makefile.targets 443828 2017-06-18 14:02:35Z rezny $
+# $FreeBSD: head/graphics/mesa-dri/Makefile.targets 451657 2017-10-10 06:47:01Z rezny $
 #
 # this file holds common targets
 
@@ -12,9 +12,9 @@ post-patch:
 # Clang in 10.3 fails with cannot compile this atomic library call yet 'p_atomic_add'
 # Clang in 11.0 fails with undefined reference to `__atomic_fetch_add_8`
 . if ${ARCH} == "i386"
-	@${REINPLACE_CMD} -e 's|-DUSE_GCC_ATOMIC_BUILTINS||' ${WRKSRC}/configure
+	@${REINPLACE_CMD} -e 's|GCC_ATOMIC_BUILTINS_SUPPORTED||' ${WRKSRC}/configure
 .  if ${COMPONENT} == osmesa
-	@${REINPLACE_CMD} -e 's|-DUSE_GCC_ATOMIC_BUILTINS||' ${WRKSRC}/configure.ac
+	@${REINPLACE_CMD} -e 's|GCC_ATOMIC_BUILTINS_SUPPORTED||' ${WRKSRC}/configure.ac
 .  endif
 . endif
 .endif

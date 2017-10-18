@@ -1,8 +1,8 @@
 # Created by: Neil Blakey-Milner
-# $FreeBSD: head/mail/courier-imap/Makefile 448528 2017-08-22 13:19:49Z madpilot $
+# $FreeBSD: head/mail/courier-imap/Makefile 451318 2017-10-05 15:39:39Z madpilot $
 
 PORTNAME=	courier-imap
-PORTVERSION=	4.18.1
+PORTVERSION=	4.18.2
 PORTEPOCH=	2
 CATEGORIES=	mail ipv6
 MASTER_SITES=	SF/courier/imap/${PORTVERSION}
@@ -14,6 +14,8 @@ BUILD_DEPENDS=	courierauthconfig:security/courier-authlib-base
 RUN_DEPENDS=	courierauthconfig:security/courier-authlib-base \
 		${LOCALBASE}/share/sysconftool/sysconftool:devel/sysconftool
 LIB_DEPENDS=	libcourier-unicode.so:devel/courier-unicode
+
+CONFLICTS=	courier-[0-9]* imap-uw-[0-9]* panda-imap-[0-9]*
 
 USES=		gmake localbase:ldflags perl5 ssl tar:bzip2
 GNU_CONFIGURE=	yes

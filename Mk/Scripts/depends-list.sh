@@ -1,6 +1,6 @@
 #!/bin/sh
 # MAINTAINER: portmgr@FreeBSD.org
-# $FreeBSD: head/Mk/Scripts/depends-list.sh 424170 2016-10-18 15:27:25Z mat $
+# $FreeBSD: head/Mk/Scripts/depends-list.sh 450663 2017-09-26 14:14:44Z mat $
 
 set -e
 
@@ -59,8 +59,13 @@ check_dep() {
 		IFS=${myifs}
 
 		case "${2}" in
-			/*) d=${2} ;;
-			*) d=${PORTSDIR}/${2} ;;
+		/*) d=${2} ;;
+		*) d=${PORTSDIR}/${2} ;;
+		esac
+
+		case "${d}" in
+		*@*/*) ;; # Ignore @ in the path which would not be a flavor
+		*@*) d=${d%@*} ;;
 		esac
 
 		case " ${checked} " in

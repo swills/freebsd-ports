@@ -1,8 +1,8 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/misc/p5-Geo-Coder-Google/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/misc/p5-Geo-Coder-Google/Makefile 451435 2017-10-07 09:12:47Z sunpoet $
 
 PORTNAME=	Geo-Coder-Google
-PORTVERSION=	0.18
+PORTVERSION=	0.19
 CATEGORIES=	misc geography perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/arduinoOTA/Makefile 445117 2017-07-06 01:39:08Z ultima $
+# $FreeBSD: head/devel/arduinoOTA/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	arduinoOTA
 PORTVERSION=	1.2.0
@@ -17,8 +17,6 @@ GH_TAGNAME=	c2b8306
 
 PLIST_FILES=	bin/${PORTNAME}
 COMPILEINFO=	${OPSYS}${OSREL}-${ARCH}-${GH_TAGNAME}
-
-STRIP=		# stripping can break go binaries
 
 do-build:
 	(cd ${WRKSRC} && ${SETENV} ${GO_ENV} go build -o ${PORTNAME} -ldflags "-X main.compileInfo=${COMPILEINFO}" main.go)

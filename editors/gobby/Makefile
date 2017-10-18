@@ -1,13 +1,12 @@
-# $FreeBSD: head/editors/gobby/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/editors/gobby/Makefile 450424 2017-09-23 09:34:10Z sbz $
 
 PORTNAME=	gobby
 PORTVERSION=	0.4.13
 PORTREVISION=	4
 CATEGORIES=	editors
-MASTER_SITES=	http://releases.0x539.de/gobby/ \
-		LOCAL/sbz
+MASTER_SITES=	http://releases.0x539.de/gobby/
 
-MAINTAINER=	sbz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Free collaborative editor
 
 LICENSE=	GPLv2

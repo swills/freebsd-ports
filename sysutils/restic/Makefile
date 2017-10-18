@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/restic/Makefile 446743 2017-07-27 14:30:20Z olgeni $
+# $FreeBSD: head/sysutils/restic/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	restic
 PORTVERSION=	0.7.1
@@ -14,7 +14,6 @@ LICENSE=	BSD2CLAUSE
 USES=		go
 USE_GITHUB=	yes
 
-STRIP=		# stripping can break go binaries
 PLIST_FILES=	bin/restic
 
 post-patch:

@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/misc/p5-Geo-Coder-OpenCage/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/misc/p5-Geo-Coder-OpenCage/Makefile 450817 2017-09-28 10:40:40Z sunpoet $
 
 PORTNAME=	Geo-Coder-OpenCage
-PORTVERSION=	0.10
+PORTVERSION=	0.12
 CATEGORIES=	misc geography perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -15,7 +15,6 @@ LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-JSON>=2.53:converters/p5-JSON \
-		p5-List-MoreUtils>=0.33:lang/p5-List-MoreUtils \
 		p5-URI>=1.60:net/p5-URI
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0.32:devel/p5-Test-Exception \

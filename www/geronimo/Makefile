@@ -1,5 +1,5 @@
 # Created by: Nemo Liu <nemoliu@FreeBSD.org>
-# $FreeBSD: head/www/geronimo/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/www/geronimo/Makefile 450664 2017-09-26 14:14:49Z mat $
 
 PORTNAME=	geronimo
 DISTVERSION=	3.0-beta-1
@@ -47,7 +47,7 @@ GERONIMO_USER?=	www
 GERONIMO_GROUP?=www
 GERONIMO_OUT=	${LOG_DIR}/geronimo.out
 PID_FILE=	/var/run/${APP_SHORTNAME}.pid
-WRKDIR?=	${WRKDIRPREFIX}${.CURDIR}/work
+WRKDIR?=	${WRKDIRPREFIX}${.CURDIR}/${_WRKDIR}
 WRKSRC=		${WRKDIR}/${DISTNAME:S/-bin//}
 JAR_FILE=	bin/server.jar
 PLIST_FILES=	"@(${GERONIMO_USER},${GERONIMO_GROUP},) ${GERONIMO_OUT:S,^${PREFIX}/,,}"

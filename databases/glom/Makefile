@@ -1,9 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/databases/glom/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/databases/glom/Makefile 451570 2017-10-08 19:36:26Z antoine $
 
 PORTNAME=	glom
 PORTVERSION=	1.28.0
-PORTREVISION=	5
+PORTREVISION=	7
 CATEGORIES=	databases gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -25,6 +25,8 @@ RUN_DEPENDS=	iso-codes>=0:misc/iso-codes \
 		libgda5-postgresql>=0:databases/libgda5-postgresql
 
 BROKEN=		Does current not build
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-11-09
 
 GNU_CONFIGURE=	yes
 USES=		desktop-file-utils gettext gmake libarchive libtool pathfix \

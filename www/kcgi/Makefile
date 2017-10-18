@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/kcgi/Makefile 449059 2017-09-01 08:48:48Z bapt $
+# $FreeBSD: head/www/kcgi/Makefile 450596 2017-09-25 14:57:23Z bapt $
 
 PORTNAME=	kcgi
-PORTVERSION=	0.9.6
+PORTVERSION=	0.9.7
 CATEGORIES=	www devel
 MASTER_SITES=	http://kristaps.bsd.lv/kcgi/snapshots/
 

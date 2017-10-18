@@ -1,12 +1,11 @@
 # Created by: Shen Chuan-Hsing <statue@freebsd.sinica.edu.tw>
-# $FreeBSD: head/chinese/dictd-database/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/chinese/dictd-database/Makefile 452004 2017-10-13 14:23:31Z bapt $
 
 PORTNAME=	dictd-database
 PORTVERSION=	1.6
 PORTREVISION=	1
 CATEGORIES=	chinese textproc
-MASTER_SITES=	LOCAL/rafan/chinese/ \
-		ftp://freebsd.sinica.edu.tw/pub/statue/dictd-database/
+MASTER_SITES=	LOCAL/rafan/chinese/
 DISTNAME=	dict-zh-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org

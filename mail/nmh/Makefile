@@ -1,5 +1,5 @@
 # Created by: Scott Blachowicz <scott+ports@sabami.seaslug.org>
-# $FreeBSD: head/mail/nmh/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/mail/nmh/Makefile 451256 2017-10-05 01:54:46Z cy $
 
 PORTNAME=	nmh
 PORTVERSION=	1.6
@@ -71,5 +71,6 @@ DEBUG_FLAGS+=	-O0 -Wall -Wextra -g
 .endif
 
 CONFLICTS=	ja-mh-[0-9]*
+CONFLICTS_INSTALL=	pixie-* p5-Dist-Joseki-*
 
 .include <bsd.port.mk>

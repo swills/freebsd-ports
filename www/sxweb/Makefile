@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/www/sxweb/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/sxweb/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	sxweb
 PORTVERSION=	0.9.0
@@ -11,12 +11,10 @@ COMMENT=	SXDrive Web app
 
 RUN_DEPENDS=	sxinit:net-mgmt/sx
 
-USES=		cpe
+USES=		cpe php:web
 USE_PHP=	ctype curl dom gd hash iconv json mbstring mysql mysqli \
 		pcre pdo pdo_mysql posix session simplexml sockets spl \
 		xml xmlreader xmlwriter
-
-WANT_PHP_WEB=	yes
 
 NO_BUILD=	yes
 SXWEB_USERNAME?=	${WWWOWN}

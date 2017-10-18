@@ -1,5 +1,6 @@
+
 # Created by: Vincent Tantardini <vinc@FreeBSD-fr.org>
-# $FreeBSD: head/www/rnews/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/www/rnews/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	rnews
 PORTVERSION=	1.01
@@ -18,9 +19,10 @@ OPTIONS_DEFINE=	GD MYSQLSERVER DOCS
 OPTIONS_DEFAULT=	GD
 MYSQLSERVER_DESC=	Use MySQL-Server on localhost
 
-.include <bsd.port.options.mk>
-
+USES=		php
 USE_PHP=	mysql mbstring pcre xml iconv
+
+.include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MGD}
 USE_PHP+=	gd

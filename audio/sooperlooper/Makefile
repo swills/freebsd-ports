@@ -1,5 +1,5 @@
 # Created by: mathias.picker@gmx.de
-# $FreeBSD: head/audio/sooperlooper/Makefile 437539 2017-04-02 09:42:48Z bapt $
+# $FreeBSD: head/audio/sooperlooper/Makefile 451570 2017-10-08 19:36:26Z antoine $
 
 PORTNAME=	sooperlooper
 PORTVERSION=	1.7.3
@@ -13,6 +13,8 @@ COMMENT=	Live audio looping sampler
 LICENSE=	GPLv2
 
 BROKEN=		Does not build with newer libsigc++20
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-11-09
 
 BUILD_DEPENDS=	ladspa>0:audio/ladspa
 LIB_DEPENDS=	libjack.so:audio/jack \

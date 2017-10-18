@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/judy/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/devel/judy/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	Judy
 PORTVERSION=	1.0.5
@@ -24,7 +24,7 @@ PORTDOCS=	COPYRIGHT README *.htm
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == armv6 || ${ARCH} == i386 || ${ARCH} == mips || ${ARCH} == powerpc
+.if ${ARCH} == armv6 || ${ARCH} == armv7 || ${ARCH} == i386 || ${ARCH} == mips || ${ARCH} == powerpc
 CONFIGURE_ARGS+=	--enable-32-bit
 .else
 CONFIGURE_ARGS+=	--enable-64-bit

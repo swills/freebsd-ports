@@ -1,5 +1,5 @@
 # Created by: Staffan Ulfberg <staffanu@multivac.fatburen.org>
-# $FreeBSD: head/comms/gnokii/Makefile 445404 2017-07-09 12:50:07Z madpilot $
+# $FreeBSD: head/comms/gnokii/Makefile 452001 2017-10-13 14:19:26Z bapt $
 
 PORTNAME=	gnokii
 PORTVERSION=	0.6.31
@@ -7,7 +7,6 @@ PORTREVISION=	10
 PORTEPOCH=	1
 CATEGORIES=	comms
 MASTER_SITES=	http://www.gnokii.org/download/gnokii/ \
-		ftp://ftp.gnokii.org/pub/gnokii/ \
 		http://www.gnokii.org/download/gnokii/0.6.x/
 
 MAINTAINER=	madpilot@FreeBSD.org

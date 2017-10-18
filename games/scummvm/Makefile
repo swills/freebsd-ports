@@ -1,5 +1,5 @@
 # Created by: Alex Trull <freebsd.alex@trull.org>
-# $FreeBSD: head/games/scummvm/Makefile 428153 2016-12-08 20:11:39Z lme $
+# $FreeBSD: head/games/scummvm/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	scummvm
 PORTVERSION=	1.9.0
@@ -67,7 +67,7 @@ SNDIO_CONFIGURE_OFF=	--disable-sndio
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == "armv6"
+.if ${ARCH} == armv6 || ${ARCH} == armv7
 CONFIGURE_ENV+=	ASFLAGS=-meabi=5
 .endif
 

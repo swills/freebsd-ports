@@ -1,5 +1,5 @@
 # Created by: Lars Eggert <larse@isi.edu>
-# $FreeBSD: head/audio/gkrellmss2/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/audio/gkrellmss2/Makefile 451964 2017-10-13 08:57:45Z bapt $
 
 PORTNAME=	gkrellmss
 PORTVERSION=	2.7
@@ -9,6 +9,8 @@ MASTER_SITES=	http://members.dslextreme.com/users/billw/gkrellmss/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GKrellM plugin with a VU meter showing left/right channel audio
+
+BROKEN=		No public distfiles
 
 LICENSE=	GPLv2+
 

@@ -1,11 +1,10 @@
 # Created by: koshy
-# $FreeBSD: head/benchmarks/netperf/Makefile 399880 2015-10-20 20:43:43Z marius $
+# $FreeBSD: head/benchmarks/netperf/Makefile 451957 2017-10-13 08:21:36Z bapt $
 
 PORTNAME=	netperf
 PORTVERSION=	2.7.0
 CATEGORIES=	benchmarks ipv6
-MASTER_SITES=	ftp://ftp.netperf.org/netperf/ \
-		http://fossies.org/unix/misc/
+MASTER_SITES=	http://fossies.org/unix/misc/
 
 MAINTAINER=	marius@FreeBSD.org
 COMMENT=	Network performance benchmarking package

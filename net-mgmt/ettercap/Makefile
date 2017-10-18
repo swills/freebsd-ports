@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/net-mgmt/ettercap/Makefile 444614 2017-06-28 23:55:46Z sunpoet $
+# $FreeBSD: head/net-mgmt/ettercap/Makefile 451541 2017-10-08 13:49:28Z sunpoet $
 
 PORTNAME=	ettercap
 PORTVERSION=	0.8.2
@@ -37,8 +37,6 @@ USES=		bison cmake:outsource cpe iconv localbase:ldflags pkgconfig
 DOCS=		AUTHORS CHANGELOG README README.BINARIES README.BUGS \
 		README.GIT README.PLATFORMS THANKS TODO TODO.TESTING \
 		doc/capture doc/decoders doc/dissectors doc/plugins doc/threads
-PORTDATA=	*
-PORTDOCS=	*
 
 CPE_VENDOR=	${PORTNAME}_project
 

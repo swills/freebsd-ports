@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/databases/mysql55-server/Makefile 447926 2017-08-14 05:37:21Z vd $
+# $FreeBSD: head/databases/mysql55-server/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME?=	mysql
 PORTVERSION=	5.5.57
@@ -87,7 +87,7 @@ post-patch:
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == "armv6"
+.if ${ARCH} == armv6 || ${ARCH} == armv7
 EXTRA_PATCHES+=		${FILESDIR}/extra-patch-config.h.cmake
 .endif
 

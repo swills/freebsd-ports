@@ -1,5 +1,5 @@
 # Created by: Wen heping <wenheping@gmail.com>
-# $FreeBSD: head/www/xoops/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/www/xoops/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	xoops
 PORTVERSION=	2.5.8
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 
 USE_PHP=	mysqli filter mbstring iconv xml zlib gd exif
 
-USES=		cpe
+USES=		cpe php
 NO_BUILD=	yes
 PLIST_SUB=	WWWOWN="${WWWOWN}" WWWGRP="${WWWGRP}"
 SUB_FILES=	pkg-message

@@ -1,8 +1,8 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-authlogic/Makefile 439730 2017-04-29 06:58:02Z sunpoet $
+# $FreeBSD: head/devel/rubygem-authlogic/Makefile 451030 2017-10-01 08:07:23Z sunpoet $
 
 PORTNAME=	authlogic
-PORTVERSION=	3.6.0
+PORTVERSION=	3.6.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

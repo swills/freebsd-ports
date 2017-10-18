@@ -1,16 +1,15 @@
 # Created by: Glenn Johnson <glennpj@charter.net>
-# $FreeBSD: head/finance/libofx/Makefile 446957 2017-07-31 13:07:22Z jhale $
+# $FreeBSD: head/finance/libofx/Makefile 451528 2017-10-08 13:23:08Z jhale $
 
 PORTNAME=	libofx
-PORTVERSION=	0.9.11
-PORTREVISION=	1
+PORTVERSION=	0.9.12
 CATEGORIES=	finance
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}
 
 MAINTAINER=	jhale@FreeBSD.org
 COMMENT=	OpenSource implementation of the OFX (Open Financial eXchange)
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \

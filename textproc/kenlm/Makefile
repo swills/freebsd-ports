@@ -1,9 +1,9 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/textproc/kenlm/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/textproc/kenlm/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	kenlm
 PORTVERSION=	20140830
-PORTREVISION=	5
+PORTREVISION=	7
 CATEGORIES=	textproc
 MASTER_SITES=	http://kheafield.com/code/
 DISTNAME=	${PORTNAME}

@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/misc/py-progressbar/Makefile 427032 2016-11-24 15:34:24Z sunpoet $
+# $FreeBSD: head/misc/py-progressbar/Makefile 451790 2017-10-11 19:50:27Z sunpoet $
 
 PORTNAME=	progressbar
 PORTVERSION=	2.3
@@ -18,5 +18,7 @@ LICENSE_FILE_BSD3CLAUSE=${WRKSRC}/LICENSE.txt
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils
 USES=		python
+
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}progressbar231
 
 .include <bsd.port.mk>

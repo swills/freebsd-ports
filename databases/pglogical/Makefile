@@ -1,9 +1,8 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/databases/pglogical/Makefile 443124 2017-06-10 21:59:45Z matthew $
+# $FreeBSD: head/databases/pglogical/Makefile 451656 2017-10-10 06:25:11Z matthew $
 
 PORTNAME=	pglogical
-PORTVERSION=	2.0.1
-PORTREVISION=	1
+PORTVERSION=	2.1.0
 CATEGORIES=	databases
 
 MAINTAINER=	matthew@FreeBSD.org
@@ -17,7 +16,7 @@ WANT_PGSQL=	client server
 USE_GITHUB=	yes
 GH_ACCOUNT=	2ndQuadrant
 GH_PROJECT=	pglogical pglogical_dump:dump
-GH_TAGNAME=	REL2_0_1 9f3b0b1:dump
+GH_TAGNAME=	REL2_1_0 9f3b0b1:dump
 GH_SUBDIR=	pglogical_dump:dump
 
 MAKE_ARGS=	USE_PGXS=1

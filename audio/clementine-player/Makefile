@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/audio/clementine-player/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/audio/clementine-player/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	clementine
 PORTVERSION=	1.3.1
-PORTREVISION=	12
+PORTREVISION=	14
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-player
 

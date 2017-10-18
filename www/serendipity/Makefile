@@ -1,5 +1,5 @@
 # Created by: babak@farrokhi.net
-# $FreeBSD: head/www/serendipity/Makefile 440018 2017-05-03 15:04:37Z tz $
+# $FreeBSD: head/www/serendipity/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	serendipity
 PORTVERSION=	2.1.1
@@ -18,29 +18,16 @@ SERENDIPITY?=	www/${PORTNAME}
 PLIST_SUB+=	WWWOWN="${WWWOWN}" WWWGRP="${WWWGRP}"
 USE_PHP=	session pcre gd openssl mbstring iconv zlib xml
 SUB_FILES=	pkg-message
-USES=		cpe tar:bzip2
+USES=		cpe php tar:bzip2
 CPE_VENDOR=	s9y
 
 OPTIONS_DEFINE=	MYSQL PGSQL SQLITE MAGICK
 OPTIONS_DEFAULT=	MYSQL MAGICK
 
-.include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MMYSQL}
-USE_PHP+=	mysql
-. endif
-
-.if ${PORT_OPTIONS:MPGSQL}
-USE_PHP+=	pgsql
-.endif
-
-.if ${PORT_OPTIONS:MSQLITE}
-USE_PHP+=	sqlite3
-.endif
-
-.if ${PORT_OPTIONS:MMAGICK}
-RUN_DEPENDS+=	convert:graphics/ImageMagick
-.endif
+MYSQL_USE=	PHP=mysql
+PGSQL_USE=	PHP=pgsql
+SQLITE_USE=	PHP=sqlite3
+MAGICK_RUN_DEPENDS+=	convert:graphics/ImageMagick
 
 do-install:
 	@-${MKDIR} ${STAGEDIR}${PREFIX}/${SERENDIPITY}

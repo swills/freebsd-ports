@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/libodfgen01/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/textproc/libodfgen01/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	libodfgen
 PORTVERSION=	0.1.6
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	textproc
 MASTER_SITES=	SF/libwpd/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 PKGNAMESUFFIX=	01

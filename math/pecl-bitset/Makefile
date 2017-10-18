@@ -1,9 +1,8 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/math/pecl-bitset/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/math/pecl-bitset/Makefile 451436 2017-10-07 09:12:52Z sunpoet $
 
 PORTNAME=	bitset
-PORTVERSION=	3.0.0
-PORTREVISION=	1
+PORTVERSION=	3.0.1
 CATEGORIES=	math
 
 MAINTAINER=	sunpoet@FreeBSD.org

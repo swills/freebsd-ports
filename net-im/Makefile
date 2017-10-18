@@ -1,9 +1,8 @@
-# $FreeBSD: head/net-im/Makefile 449821 2017-09-14 03:05:09Z ultima $
+# $FreeBSD: head/net-im/Makefile 451223 2017-10-04 12:05:28Z bapt $
 #
 
     COMMENT = Instant messaging
 
-    SUBDIR += ayttm
     SUBDIR += bsflite
     SUBDIR += centerim
     SUBDIR += centerim-devel
@@ -143,7 +142,6 @@
     SUBDIR += py-sleekxmpp
     SUBDIR += py-telepot
     SUBDIR += py-toxcore-c
-    SUBDIR += py-twistedWords
     SUBDIR += py-unmessage
     SUBDIR += py-xmpppy
     SUBDIR += py-xmpppy-irc

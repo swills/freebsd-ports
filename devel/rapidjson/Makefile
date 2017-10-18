@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/rapidjson/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/rapidjson/Makefile 450931 2017-09-29 19:23:13Z antoine $
 
 PORTNAME=	rapidjson
 PORTVERSION=	1.1.0
@@ -13,7 +13,7 @@ COMMENT=	Fast JSON parser/generator for C++ with both SAX/DOM style API
 LICENSE=	unknown
 LICENSE_NAME=	RapidJSON
 LICENSE_FILE=	${WRKSRC}/license.txt
-LICENSE_PERMS=	${_LICENSE_PERMS_DEFAULT}
+LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 BROKEN_aarch64=		does not build: c++: error: the clang compiler does not support -march=native
 BROKEN_armv6=		does not build: c++: error: the clang compiler does not support -march=native

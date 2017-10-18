@@ -1,5 +1,5 @@
 # Created by: Alex Deiter <Alex.Deiter@Gmail.COM>
-# $FreeBSD: head/net/appkonference/Makefile 423378 2016-10-05 19:37:03Z linimon $
+# $FreeBSD: head/net/appkonference/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	appkonference
 PORTVERSION=	2.7
@@ -19,7 +19,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}/konference
 
 PLIST_FILES=	lib/asterisk/modules/app_konference.so
 
-ONLY_FOR_ARCHS=		amd64 armv6 i386 powerpc
+ONLY_FOR_ARCHS=		amd64 armv6 armv7 i386 powerpc
 ONLY_FOR_ARCHS_REASON=	not yet ported to this architecture
 
 OPTIONS_DEFINE=		OPTIMIZED_CFLAGS

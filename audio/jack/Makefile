@@ -1,9 +1,9 @@
 # Created by: Tilman Linneweh <arved@FreeBSD.org>
-# $FreeBSD: head/audio/jack/Makefile 447818 2017-08-12 08:26:24Z riggs $
+# $FreeBSD: head/audio/jack/Makefile 451409 2017-10-06 21:04:01Z jbeich $
 
 PORTNAME=	jackit
 PORTVERSION=	0.125.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 
 MAINTAINER=	multimedia@FreeBSD.org
@@ -14,8 +14,7 @@ LICENSE_COMB=	multi
 
 LIB_DEPENDS=	libsndfile.so:audio/libsndfile \
 		libsamplerate.so:audio/libsamplerate \
-		libcelt0.so:audio/celt \
-		libuuid.so:misc/e2fsprogs-libuuid
+		libcelt0.so:audio/celt
 
 USES=		autoreconf gmake pathfix pkgconfig libtool localbase bdb
 USE_GITHUB=	yes

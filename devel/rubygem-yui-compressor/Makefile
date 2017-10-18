@@ -1,5 +1,5 @@
 # Created by: rpsfa@rit.edu
-# $FreeBSD: head/devel/rubygem-yui-compressor/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-yui-compressor/Makefile 450505 2017-09-24 18:49:02Z sunpoet $
 
 PORTNAME=	yui-compressor
 PORTVERSION=	0.12.0
@@ -9,11 +9,10 @@ MASTER_SITES=	RG
 MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	YUI Compressor for minifying JavaScript and CSS assets
 
-LICENSE=	BSD3CLAUSE MIT MPL
-LICENSE_COMB=	dual
+LICENSE=	BSD3CLAUSE MIT MPL11 MPL20
+LICENSE_COMB=	multi
 
 NO_ARCH=	yes
-
 USE_RUBY=	yes
 USES=		gem
 

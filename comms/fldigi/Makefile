@@ -1,8 +1,7 @@
-# $FreeBSD: head/comms/fldigi/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/comms/fldigi/Makefile 452159 2017-10-15 18:13:36Z db $
 
 PORTNAME=	fldigi
-PORTVERSION=	4.0.9
-PORTREVISION=	1
+PORTVERSION=	4.0.11
 CATEGORIES=	comms hamradio
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}
 
@@ -22,9 +21,9 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs\
 		libsndfile.so:audio/libsndfile \
 		libsamplerate.so:audio/libsamplerate
 
+USES=		autoreconf compiler:c++11-lib jpeg gmake perl5 pkgconfig shebangfix
 USE_CXXSTD=	gnu++0x
 GNU_CONFIGURE=	yes
-USES=		autoreconf compiler:c++11-lib jpeg gmake perl5 pkgconfig shebangfix
 USE_XORG=	x11 xft xext xfixes xcursor xinerama
 CONFIGURE_ENV=	FLTK_CONFIG="${LOCALBASE}/bin/fltk-config" \
 		    EXTRA_LIBS="-lexecinfo"

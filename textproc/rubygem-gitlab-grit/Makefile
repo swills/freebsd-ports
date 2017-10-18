@@ -1,8 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-gitlab-grit/Makefile 417165 2016-06-20 16:05:17Z tz $
+# $FreeBSD: head/textproc/rubygem-gitlab-grit/Makefile 450680 2017-09-26 15:56:16Z sunpoet $
 
 PORTNAME=	gitlab-grit
-PORTVERSION=	2.8.1
-PORTREVISION=	1
+PORTVERSION=	2.8.2
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-miniupnpc/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/py-miniupnpc/Makefile 450664 2017-09-26 14:14:49Z mat $
 
 CATEGORIES=	net python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +12,7 @@ MASTERDIR=	${.CURDIR}/../miniupnpc
 USES=		python
 USE_PYTHON=	autoplist distutils
 
-WRKDIR=		${WRKDIRPREFIX}${MASTERDIR}/work
+WRKDIR=		${WRKDIRPREFIX}${MASTERDIR}/${_WRKDIR}
 PLIST=		${.CURDIR}/pkg-plist
 
 post-patch:

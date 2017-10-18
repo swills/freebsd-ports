@@ -1,5 +1,5 @@
 # Created by: janos.mohacsi@bsd.hu
-# $FreeBSD: head/www/limesurvey/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/www/limesurvey/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	limesurvey
 PORTVERSION=	1.91
@@ -13,7 +13,7 @@ COMMENT=	PHP-based survey building and runing system
 
 LICENSE=	GPLv2
 
-USES=		cpe
+USES=		cpe php:web
 
 # http://docs.limesurvey.org/Installation&structure=English+Instructions+for+LimeSurvey
 OPTIONS_DEFINE=		PGSQL GD LDAP ZIP
@@ -47,7 +47,6 @@ USE_PHP+=	zip
 .endif
 USE_PHP+=	ctype dom iconv json mbstring pcre \
 		simplexml session xmlwriter
-WANT_PHP_WEB=yes
 
 WWWDOCROOT?=		www
 PHPSURVEYORURL?=	${PORTNAME}

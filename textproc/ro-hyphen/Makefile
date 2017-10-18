@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/ro-hyphen/Makefile 392424 2015-07-18 15:05:25Z sunpoet $
+# $FreeBSD: head/textproc/ro-hyphen/Makefile 450527 2017-09-24 18:50:49Z sunpoet $
 
 PORTNAME=	hyphen
 PORTVERSION=	3.3.10
@@ -11,8 +11,8 @@ DIST_SUBDIR=	${PORTNAME}
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Romanian hyphenation rules
 
-LICENSE=	LGPL21 GPLv2 MPL
-LICENSE_COMB=	dual
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING.GPL
 
 USES=		zip
 NO_ARCH=	yes

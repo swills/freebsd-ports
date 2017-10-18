@@ -1,5 +1,5 @@
 # Created by: jrhett@netconsonance.com
-# $FreeBSD: head/sysutils/cfengine34/Makefile 439204 2017-04-23 08:11:18Z miwi $
+# $FreeBSD: head/sysutils/cfengine34/Makefile 451263 2017-10-05 01:56:32Z cy $
 
 PORTNAME=	cfengine
 PORTVERSION=	3.4.5
@@ -13,8 +13,10 @@ MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Systems administration tool for networks
 CPE_VENDOR=	gnu
 
+CONFLICTS=	cfengine-2* cfengine3[0-35-9]-* cfengine31[0-9]-*
 .if !defined(MASTERDIR)
 PKGNAMESUFFIX=	34
+CONFLICTS+=	cfengine-3.*
 .endif
 
 FETCH_BEFORE_ARGS=	-o ${DISTDIR}/${DISTFILES}

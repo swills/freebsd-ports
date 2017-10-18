@@ -1,11 +1,10 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/googlemock/Makefile 441375 2017-05-21 11:06:13Z cpm $
+# $FreeBSD: head/devel/googlemock/Makefile 450562 2017-09-25 00:51:02Z jbeich $
 
 PORTNAME=	googlemock
 DISTVERSIONPREFIX=	release-
-DISTVERSION=	1.8.0-50
-DISTVERSIONSUFFIX=	-g59c795c
-PORTREVISION=	1
+DISTVERSION=	1.8.0-358
+DISTVERSIONSUFFIX=	-gf1a87d7
 CATEGORIES=	devel
 
 MAINTAINER=	jbeich@FreeBSD.org

@@ -1,8 +1,8 @@
-# $FreeBSD: head/archivers/rubygem-snappy/Makefile 447570 2017-08-08 19:25:04Z jrm $
+# $FreeBSD: head/archivers/rubygem-snappy/Makefile 451290 2017-10-05 09:49:26Z sunpoet $
 
 PORTNAME=	snappy
 PORTVERSION=	0.0.17
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	archivers rubygems
 MASTER_SITES=	RG
 
@@ -12,8 +12,7 @@ COMMENT=	Snappy binding for Ruby
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-LIB_DEPENDS=	libsnappy.so:archivers/snappy \
-		libunwind.so:devel/libunwind
+LIB_DEPENDS=	libsnappy.so:archivers/snappy
 
 USES=		gem shebangfix
 USE_RUBY=	yes

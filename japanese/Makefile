@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/Makefile 443772 2017-06-17 13:44:51Z rakuco $
+# $FreeBSD: head/japanese/Makefile 451552 2017-10-08 17:11:42Z pi $
 #
 
     COMMENT = Japanese support
@@ -124,7 +124,6 @@
     SUBDIR += japaneseAFM
     SUBDIR += jargon-fpw
     SUBDIR += jcode.pl
-    SUBDIR += jd
     SUBDIR += jed
     SUBDIR += jishyo
     SUBDIR += jls

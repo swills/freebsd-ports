@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/grafana3/Makefile 432848 2017-01-30 14:41:18Z brd $
+# $FreeBSD: head/www/grafana3/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	grafana
 PORTVERSION=	3.1.1
@@ -96,8 +96,6 @@ SUB_LIST+=	GRAFANA_USER=${GRAFANA_USER} \
 	GRAFANADASHBOARDDIR=${GRAFANADASHBOARDDIR}
 
 PLIST_SUB+=	GRAFANAHOMEDIR=${GRAFANAHOMEDIR}
-
-STRIP=
 
 post-extract:
 	@${MKDIR} ${WRKSRC}/src/github.com/grafana/grafana

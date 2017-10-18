@@ -1,5 +1,5 @@
 # Created by: Kimura Fuyuki <fuyuki@nigredo.org>
-# $FreeBSD: head/databases/qdbm/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/qdbm/Makefile 452147 2017-10-15 14:05:04Z madpilot $
 
 PORTNAME=	qdbm
 PORTVERSION=	1.8.78
@@ -30,7 +30,7 @@ INSTALL_TARGET=	install-strip
 PORTDOCS=	ChangeLog NEWS
 
 post-patch:
-.if defined(WITH_DEBUG) && !defined(WITHOUT_DEBUG)
+.if defined(WITH_DEBUG)
 	@${REINPLACE_CMD} 's/-DNDEBUG//' ${WRKSRC}/Makefile.in
 .endif
 

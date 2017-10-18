@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/lang/gnat_util/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/lang/gnat_util/Makefile 451498 2017-10-08 07:58:54Z sunpoet $
 
 PORTNAME=	gnat_util
 PORTVERSION=	${SNAPSHOT}
@@ -14,7 +14,7 @@ COMMENT=	Library used to build GNAT tools such as ASIS
 LICENSE=	GPLv3 GPLv3RLE
 LICENSE_COMB=	multi
 
-USES=		ada tar:bzip2
+USES=		ada
 NO_MTREE=	yes
 DISTINFO_FILE=	${.CURDIR}/../${ADAXX}-aux/distinfo
 WRKSRC=		${WRKDIR}/${PORTNAME}
@@ -22,11 +22,11 @@ MAKE_ENV=	MAKEOBJDIR=${WRKSRC}/obj
 
 .include "${.CURDIR}/Makefile.sources"
 
-.if defined(ADA_DEFAULT) && ${ADA_DEFAULT} == 49
-.include "${.CURDIR}/../gcc-aux/Makefile.version"
-.elif defined(ADA_DEFAULT) && ${ADA_DEFAULT} == 5
+.if defined(ADA_DEFAULT) && ${ADA_DEFAULT} == 5
+USES+=		tar:bzip2
 .include "${.CURDIR}/../gcc5-aux/Makefile.version"
 .else
+USES+=		tar:xz
 .include "${.CURDIR}/../gcc6-aux/Makefile.version"
 .endif
 

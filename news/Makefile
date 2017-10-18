@@ -1,4 +1,4 @@
-# $FreeBSD: head/news/Makefile 443034 2017-06-09 18:47:56Z tdb $
+# $FreeBSD: head/news/Makefile 450963 2017-09-30 10:17:32Z sunpoet $
 #
 
     COMMENT = Network news
@@ -60,7 +60,6 @@
     SUBDIR += plor
     SUBDIR += py-pynzb
     SUBDIR += py-sabyenc
-    SUBDIR += py-twistedNews
     SUBDIR += py-yenc
     SUBDIR += rawdog
     SUBDIR += s-news

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/zfs-snap-diff/Makefile 425083 2016-11-01 20:18:14Z jrm $
+# $FreeBSD: head/sysutils/zfs-snap-diff/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	zfs-snap-diff
 PORTVERSION=	0.0.9
@@ -23,7 +23,5 @@ GH_SUBDIR=	src/github.com/j-keck/zfs-snap-diff \
 USES=		go
 
 PLIST_FILES=	bin/zfs-snap-diff
-
-STRIP=		# stripping can break go binaries
 
 .include <bsd.port.mk>

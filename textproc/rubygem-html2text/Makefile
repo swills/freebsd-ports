@@ -1,8 +1,8 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-html2text/Makefile 435757 2017-03-09 14:25:12Z tz $
+# $FreeBSD: head/textproc/rubygem-html2text/Makefile 450835 2017-09-28 11:01:37Z sunpoet $
 
 PORTNAME=	html2text
-PORTVERSION=	0.2.0
+PORTVERSION=	0.2.1
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

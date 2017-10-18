@@ -1,13 +1,9 @@
 # Created by: jrhett@netconsonance.com
-# $FreeBSD: head/sysutils/cfengine36/Makefile 444013 2017-06-21 03:40:18Z cy $
+# $FreeBSD: head/sysutils/cfengine36/Makefile 451264 2017-10-05 01:56:45Z cy $
 
 PORTNAME=	cfengine
 PORTVERSION=	3.6.6
 PORTREVISION=	4
-.if !defined(MASTERDIR)
-PKGNAMESUFFIX=	36
-PORTEPOCH?=	2
-.endif
 CATEGORIES=	sysutils
 MASTER_SITES=	https://cfengine-package-repos.s3.amazonaws.com/tarballs/
 DISTFILES=	${PORTNAME}-${PORTVERSION}-2.tar.gz
@@ -16,6 +12,13 @@ MAINTAINER=	cy@FreeBSD.org
 #		gjb@FreeBSD.org is also committer for this port
 #		skreuzer@FreeBSD.org is also committer for this port
 COMMENT=	Systems administration tool for networks
+
+CONFLICTS=      cfengine-2* cfengine3[0-57-9]-* cfengine31[0-9]-*
+.if !defined(MASTERDIR)
+PKGNAMESUFFIX=	36
+PORTEPOCH?=	2
+CONFLICTS+=     cfengine-3.*
+.endif
 
 LICENSE=	GPLv3
 

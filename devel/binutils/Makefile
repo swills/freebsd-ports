@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/binutils/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/devel/binutils/Makefile 451751 2017-10-11 13:59:38Z swills $
 
 PORTNAME=	binutils
 PORTVERSION=	2.28
@@ -28,7 +28,8 @@ RELRO_DESC=	enable -z relro in ELF linker by default
 LICENSE_FILE_GPLv3=	${WRKSRC}/COPYING3
 LICENSE_FILE_LGPL3=	${WRKSRC}/COPYING3.LIB
 
-USES=		bison gmake libtool tar:bzip2 compiler:env
+USES=		bison cpe gmake libtool tar:bzip2 compiler:env
+CPE_VENDOR=	gnu
 GNU_CONFIGURE=	yes
 
 .if defined(PKGNAMEPREFIX)

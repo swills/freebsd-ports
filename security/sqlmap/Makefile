@@ -1,8 +1,8 @@
 # Created by: Tomoyuki Sakurai <cherry@trombik.org>
-# $FreeBSD: head/security/sqlmap/Makefile 445824 2017-07-14 20:16:36Z rm $
+# $FreeBSD: head/security/sqlmap/Makefile 452310 2017-10-17 21:50:18Z rm $
 
 PORTNAME=	sqlmap
-PORTVERSION=	1.1.7
+PORTVERSION=	1.1.10
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 

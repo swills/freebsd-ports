@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/lordsawar/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/lordsawar/Makefile 451570 2017-10-08 19:36:26Z antoine $
 
 PORTNAME=	lordsawar
 PORTVERSION=	0.3.1
@@ -13,6 +13,8 @@ LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN=		Doesn't build after cairomm was updated to 1.12.
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-11-09
 
 USES=		compiler:c++11-lib gettext gmake libarchive pkgconfig shebangfix
 USE_GNOME=	gtkmm30 intltool libxslt

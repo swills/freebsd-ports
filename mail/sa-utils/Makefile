@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/mail/sa-utils/Makefile 438042 2017-04-08 13:02:36Z matthew $
+# $FreeBSD: head/mail/sa-utils/Makefile 452189 2017-10-16 12:33:31Z matthew $
 
 PORTNAME=	sa-utils
 PORTVERSION=	0.04
@@ -23,14 +23,9 @@ PERIODIC_DAILY=	etc/periodic/daily
 
 PLIST_FILES=	${PERIODIC_DAILY}/sa-utils
 
-.include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MSACOMPILE}
-RUN_DEPENDS+=	re2c>=0.12.0:devel/re2c
-SUB_LIST+=	SACOMPILE=YES
-.else
-SUB_LIST+=	SACOMPILE=NO
-.endif
+SACOMPILE_RUN_DEPENDS=	re2c>=0.12.0:devel/re2c
+SACOMPILE_SUB_LIST=	SACOMPILE=YES
+SACOMPILE_SUB_LIST_OFF=	SACOMPILE=NO
 
 do-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/${PERIODIC_DAILY}/

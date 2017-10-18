@@ -1,9 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/astro/py-aipy/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/astro/py-aipy/Makefile 450659 2017-09-26 12:52:57Z wen $
 
 PORTNAME=	aipy
-PORTVERSION=	2.1.0
-PORTREVISION=	1
+PORTVERSION=	2.1.6
 CATEGORIES=	astro python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

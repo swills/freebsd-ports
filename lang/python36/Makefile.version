@@ -1,4 +1,4 @@
 # Mk/Uses/python.mk includes this file, don't remove it!
-# $FreeBSD: head/lang/python36/Makefile.version 446092 2017-07-17 18:42:02Z sunpoet $
+# $FreeBSD: head/lang/python36/Makefile.version 451202 2017-10-04 10:55:25Z sunpoet $
 
-PYTHON_PORTVERSION=	3.6.2
+PYTHON_PORTVERSION=	3.6.3

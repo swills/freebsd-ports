@@ -1,12 +1,11 @@
 # Created by: camson@bilateral.com.au
-# $FreeBSD: head/biology/artemis/Makefile 439093 2017-04-21 16:28:25Z amdmi3 $
+# $FreeBSD: head/biology/artemis/Makefile 451981 2017-10-13 11:14:32Z bapt $
 
 PORTNAME=	artemis
 PORTVERSION=	9
 PORTREVISION=	2
 CATEGORIES=	biology java
-MASTER_SITES=	http://www.sanger.ac.uk/Software/Artemis/v${PORTVERSION}/ \
-		ftp://ftp.sanger.ac.uk/pub/pathogens/software/artemis/v${PORTVERSION}/
+MASTER_SITES=	http://www.sanger.ac.uk/Software/Artemis/v${PORTVERSION}/
 DISTNAME=	artemis_compiled_v${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: me
-# $FreeBSD: head/x11-wm/fvwm/Makefile 434194 2017-02-15 20:31:16Z tijl $
+# $FreeBSD: head/x11-wm/fvwm/Makefile 451273 2017-10-05 06:36:50Z cy $
 
 PORTNAME=	fvwm
 PORTVERSION=	1.24r
@@ -10,6 +10,8 @@ PKGNAMESUFFIX=	1${PKGNAMESUFFIX2}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fvwm window manager
+
+CONFLICTS=	fvwm-2.*
 
 USES=		imake
 USE_XORG=	xbitmaps xpm xext x11 xmu

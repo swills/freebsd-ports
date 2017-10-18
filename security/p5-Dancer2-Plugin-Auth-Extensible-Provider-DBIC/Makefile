@@ -1,13 +1,13 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/security/p5-Dancer2-Plugin-Auth-Extensible-Provider-DBIC/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-Dancer2-Plugin-Auth-Extensible-Provider-DBIC/Makefile 452139 2017-10-15 11:24:48Z pi $
 
 PORTNAME=	Dancer2-Plugin-Auth-Extensible-Provider-DBIC
-PORTVERSION=	0.601
+PORTVERSION=	0.623
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	hvo.pm@xs4all.nl
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Extensible authentication framework for Dancer2 apps using DBIC
 
 LICENSE=	ART10 GPLv1+

@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/eblob/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/devel/eblob/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	eblob
 PORTVERSION=	0.18.2
-PORTREVISION=	6
+PORTREVISION=	8
 CATEGORIES=	devel
 
 MAINTAINER=	ports@FreeBSD.org

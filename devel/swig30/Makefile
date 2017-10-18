@@ -1,5 +1,5 @@
 # Created by: jkh
-# $FreeBSD: head/devel/swig30/Makefile 432653 2017-01-28 20:51:59Z sunpoet $
+# $FreeBSD: head/devel/swig30/Makefile 451537 2017-10-08 13:49:08Z sunpoet $
 
 PORTNAME=	swig
 PORTVERSION=	3.0.12
@@ -27,11 +27,7 @@ GNU_CONFIGURE=	yes
 TEST_TARGET=	check
 USES=		gmake lua
 
-PLIST_FILES=	bin/ccache-swig${PORTVERSION:R} \
-		bin/swig${PORTVERSION:R}
-PORTDATA=	*
-PORTDOCS=	*
-PORTEXAMPLES=	*
+PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
 OCTAVE_VER_CMD=	${LOCALBASE}/bin/octave-config -v 2>/dev/null || ${TRUE}
 

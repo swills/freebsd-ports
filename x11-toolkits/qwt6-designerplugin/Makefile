@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-toolkits/qwt6-designerplugin/Makefile 424339 2016-10-20 15:58:12Z rakuco $
+# $FreeBSD: head/x11-toolkits/qwt6-designerplugin/Makefile 451457 2017-10-07 12:15:36Z vanilla $
 
 PORTNAME=	qwt
-PORTVERSION=	6.1.0
-PORTREVISION=	1
+PORTVERSION=	6.1.3
 CATEGORIES=	x11-toolkits devel
 MASTER_SITES=	SF
 PKGNAMESUFFIX=	6-designerplugin

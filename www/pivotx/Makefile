@@ -1,5 +1,5 @@
 # Created by: Fumiyuki Shimizu <fumifumi@abacustech.jp>
-# $FreeBSD: head/www/pivotx/Makefile 425174 2016-11-02 22:45:14Z mat $
+# $FreeBSD: head/www/pivotx/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	pivotx
 PORTVERSION=	2.3.11
@@ -23,11 +23,10 @@ OPTIONS_DEFINE=	MYSQL PHPDOM DOCS EXAMPLES
 MYSQL_DESC=	Use MySQL instead of flat files
 PHPDOM_DESC=	Use PHP:DOM instead of SimpleXML
 
-.include <bsd.port.options.mk>
-
-WANT_PHP_WEB=	yes
+USES+=		cpe php:web tar:tgz
 USE_PHP=	session gettext xml tokenizer gd pcre
-USES+=		cpe tar:tgz
+
+.include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MPHPDOM}
 USE_PHP+=	dom

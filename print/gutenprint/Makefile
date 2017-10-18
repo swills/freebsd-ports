@@ -1,10 +1,10 @@
 # Created by: dgilbert@velocet.ca
-# $FreeBSD: head/print/gutenprint/Makefile 450167 2017-09-19 20:50:30Z cmt $
+# $FreeBSD: head/print/gutenprint/Makefile 451061 2017-10-01 20:44:29Z cmt $
 #    $MCom: ports/print/gutenprint-base/Makefile,v 1.8 2007/03/30 16:45:02 ahze Exp $
 
 PORTNAME=	gutenprint
 PORTVERSION=	5.2.13
-PORTREVISION?=	0	# also print/gimp-gutenprint
+PORTREVISION?=	1	# also print/gimp-gutenprint
 CATEGORIES=	print
 MASTER_SITES=	SF/gimp-print/gutenprint-5.2/${PORTVERSION}
 

@@ -1,5 +1,5 @@
 # Created by: jseger@FreeBSD.org
-# $FreeBSD: head/sysutils/cfengine22/Makefile 419843 2016-08-08 13:46:50Z mat $
+# $FreeBSD: head/sysutils/cfengine22/Makefile 451263 2017-10-05 01:56:32Z cy $
 
 PORTNAME=	cfengine
 PORTVERSION=	2.2.10
@@ -16,7 +16,7 @@ CPE_VENDOR=	gnu
 
 FETCH_BEFORE_ARGS=	-o ${DISTDIR}/${DISTFILES}
 
-CONFLICTS=	cfengine-3* cfengine-devel-*
+CONFLICTS=	cfengine-3* cfengine-devel-* cfengine3*
 
 USE_RC_SUBR=	cfexecd cfservd
 

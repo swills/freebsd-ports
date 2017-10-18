@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-kaminari-actionview-rails5/Makefile 447386 2017-08-05 03:25:17Z jrm $
+# $FreeBSD: head/www/rubygem-kaminari-actionview-rails5/Makefile 452113 2017-10-15 00:37:58Z sunpoet $
 
 PORTNAME=	kaminari-actionview
-PORTVERSION=	1.0.1
+PORTVERSION=	1.1.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5

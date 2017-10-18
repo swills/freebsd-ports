@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/pixman/Makefile 449285 2017-09-05 14:04:10Z swills $
+# $FreeBSD: head/x11/pixman/Makefile 451559 2017-10-08 18:57:09Z jbeich $
 
 PORTNAME=	pixman
 PORTVERSION=	0.34.0
@@ -25,7 +25,7 @@ MAKE_ARGS=      SUBDIRS=pixman
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == "armv6"
+.if ${ARCH} == "armv6" || ${ARCH} == "armv7"
 BUILD_DEPENDS+=	${LOCALBASE}/bin/as:devel/binutils
 CONFIGURE_ENV+=	CCASFLAGS="${CFLAGS} -no-integrated-as"
 .endif

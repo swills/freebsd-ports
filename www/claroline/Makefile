@@ -1,5 +1,5 @@
 # Created by: Wen heping <wenheping@gmail.com>
-# $FreeBSD: head/www/claroline/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/www/claroline/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	claroline
 PORTVERSION=	1.11.10.1
@@ -12,7 +12,7 @@ COMMENT=	Open Source eLearning and eWorking platform
 
 LICENSE=	GPLv2
 
-USES=		cpe
+USES=		cpe php
 
 NO_BUILD=	yes
 USE_PHP=	mysql

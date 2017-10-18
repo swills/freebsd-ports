@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/horde-mnemo/Makefile 450171 2017-09-19 21:48:42Z mm $
+# $FreeBSD: head/deskutils/horde-mnemo/Makefile 451932 2017-10-12 21:46:13Z mm $
 
 PORTNAME=	mnemo
 PORTVERSION=	4.2.14
+PORTREVISION=	1
 CATEGORIES=	deskutils www pear
 PKGNAMEPREFIX=	horde-
 
@@ -16,6 +17,7 @@ USE_PHP=	gettext
 USE_HORDE_BUILD=	Horde_Role
 USE_HORDE_RUN=	Horde_Role \
 		horde \
+		content \
 		Horde_Auth \
 		Horde_Core \
 		Horde_Data \

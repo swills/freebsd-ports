@@ -1,11 +1,11 @@
 # Created by: Dominic Fandrey <kamikaze@bsdforen.de>
-# $FreeBSD: head/sysutils/automounter/Makefile 449918 2017-09-15 18:28:31Z adamw $
+# $FreeBSD: head/sysutils/automounter/Makefile 450473 2017-09-23 21:11:51Z adamw $
 
 PORTNAME=	automounter
 PORTVERSION=	1.5.1
 CATEGORIES=	sysutils
 
-MAINTAINER=	kamikaze@bsdforen.de
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Provides scripts to dynamically configure amd
 
 LICENSE=	BSD2CLAUSE

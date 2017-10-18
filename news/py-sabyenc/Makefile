@@ -1,9 +1,8 @@
 # Created by: Ralf van der Enden <tremere@cainites.net>
-# $FreeBSD: head/news/py-sabyenc/Makefile 443451 2017-06-12 14:46:06Z tdb $
+# $FreeBSD: head/news/py-sabyenc/Makefile 450427 2017-09-23 11:10:09Z dbaio $
 
 PORTNAME=	sabyenc
-PORTVERSION=	3.0.2
-PORTREVISION=	1
+PORTVERSION=	3.3.1
 CATEGORIES=	news python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,5 +14,8 @@ LICENSE=	LGPL3
 
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/sabyenc.so
 
 .include <bsd.port.mk>

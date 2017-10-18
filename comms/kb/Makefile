@@ -1,11 +1,10 @@
-# $FreeBSD: head/comms/kb/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/comms/kb/Makefile 452001 2017-10-13 14:19:26Z bapt $
 
 PORTNAME=	kb
 PORTVERSION=	8.04
 PORTREVISION=	9
 CATEGORIES=	comms hamradio
-MASTER_SITES=	http://www.db.net/downloads/ \
-		LOCAL/db
+MASTER_SITES=	http://www.db.net/downloads/
 DISTFILES=	kb_src-${PORTVERSION}.tar.gz kb_inst-${PORTVERSION}.tar.gz
 
 MAINTAINER=	hamradio@FreeBSD.org

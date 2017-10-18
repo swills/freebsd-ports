@@ -1,8 +1,8 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/devel/libclc/Makefile 437663 2017-04-03 15:11:06Z rezny $
+# $FreeBSD: head/devel/libclc/Makefile 451422 2017-10-07 00:19:54Z jmd $
 
 PORTNAME=	libclc
-DISTVERSION=	0.3.0.20170225
+DISTVERSION=	0.3.0.20170927
 CATEGORIES=	devel
 
 MAINTAINER=	x11@FreeBSD.org
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	llvm${LLVMVER}>=4.0:devel/llvm${LLVMVER} \
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	llvm-mirror
-GH_TAGNAME=	17648cd
+GH_TAGNAME=	81f74b2
 
 # ninja based build is broken since commit 598792bc (16 sep 2016)
 USES=		gmake python:2.7,build gmake

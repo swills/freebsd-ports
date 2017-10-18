@@ -1,5 +1,5 @@
 # Created by: lesi@FreeBSD.org
-# $FreeBSD: head/graphics/libdrm/Makefile 448836 2017-08-27 18:33:02Z rezny $
+# $FreeBSD: head/graphics/libdrm/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	libdrm
 PORTVERSION=	2.4.83
@@ -50,7 +50,7 @@ PLIST_SUB+=	ARM_DRIVERS="@comment "
 PLIST_SUB+=	INTEL_DRIVER="@comment "
 PLIST_SUB+=	NOUVEAU_DRIVER=""
 PLIST_SUB+=	RADEON_DRIVERS=""
-.elif ${ARCH} == armv6 || ${ARCH} == aarch64
+.elif ${ARCH} == aarch64 || ${ARCH} == armv6 || ${ARCH} == armv7
 PLIST_SUB+=	ARM_DRIVERS=""
 PLIST_SUB+=	INTEL_DRIVER="@comment "
 PLIST_SUB+=	NOUVEAU_DRIVER="@comment "

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/orangehrm/Makefile 440467 2017-05-09 03:17:20Z wen $
+# $FreeBSD: head/www/orangehrm/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	orangehrm
 PORTVERSION=	3.3.3
@@ -13,7 +13,7 @@ COMMENT=	Open Source Human Resource Management
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/license/LICENSE.TXT
 
-USES=		cpe zip
+USES=		cpe php zip
 USE_PHP=	pdo_mysql ctype xml simplexml
 NO_BUILD=	yes
 PLIST=		${WRKDIR}/plist

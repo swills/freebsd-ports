@@ -1,9 +1,9 @@
 # Created by: Jimmy Olgeni <olgeni@uli.it>
-# $FreeBSD: head/graphics/blender/Makefile 450020 2017-09-17 19:30:14Z gerald $
+# $FreeBSD: head/graphics/blender/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	blender
 PORTVERSION=	2.78c
-PORTREVISION=	7
+PORTREVISION=	9
 CATEGORIES=	graphics games
 MASTER_SITES=	http://download.blender.org/source/ \
 		http://mirror.cs.umn.edu/blender.org/source/ \

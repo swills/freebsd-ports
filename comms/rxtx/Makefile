@@ -1,12 +1,11 @@
 # Created by: Jean-Baptiste Quenot <jb.quenot@caraldi.com>
-# $FreeBSD: head/comms/rxtx/Makefile 441814 2017-05-26 20:02:44Z linimon $
+# $FreeBSD: head/comms/rxtx/Makefile 452001 2017-10-13 14:19:26Z bapt $
 
 PORTNAME=	rxtx
 PORTVERSION=	2.2p2
 PORTREVISION=	4
 CATEGORIES=	comms java
-MASTER_SITES=	http://rxtx.qbang.org/pub/rxtx/ \
-		ftp://jarvi.dsl.frii.com/pub/rxtx/
+MASTER_SITES=	http://rxtx.qbang.org/pub/rxtx/
 PKGNAMESUFFIX=	-${JAVA_PORT:S/java\///}
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/p/pre/}
 

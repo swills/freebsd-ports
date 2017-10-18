@@ -1,12 +1,11 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/audio/gmpc-discogs/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/gmpc-discogs/Makefile 451965 2017-10-13 08:58:28Z bapt $
 
 PORTNAME=	gmpc-discogs
 PORTVERSION=	0.20.0
 PORTREVISION=	6
 CATEGORIES=	audio
-MASTER_SITES=	http://download.sarine.nl/Programs/gmpc/${PORTVERSION}/ \
-		http://freebsd.unixfreunde.de/sources/
+MASTER_SITES=	http://download.sarine.nl/Programs/gmpc/${PORTVERSION}/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Album Image fetcher for gmpc

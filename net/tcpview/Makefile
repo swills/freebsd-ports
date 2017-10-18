@@ -1,9 +1,9 @@
 # Created by: Chung-Kie Tung <tung@turtle.ee.ncku.edu.tw>
-# $FreeBSD: head/net/tcpview/Makefile 363374 2014-07-29 19:11:51Z adamw $
+# $FreeBSD: head/net/tcpview/Makefile 451623 2017-10-09 16:58:44Z cy $
 
 PORTNAME=	tcpview
 PORTVERSION=	1.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.cac.washington.edu/pub/noc-tools/tcpview/
 

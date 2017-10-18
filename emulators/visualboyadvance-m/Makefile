@@ -1,5 +1,5 @@
 # Created by: Nicole Reid <root@cooltrainer.org>
-# $FreeBSD: head/emulators/visualboyadvance-m/Makefile 441784 2017-05-26 14:27:45Z linimon $
+# $FreeBSD: head/emulators/visualboyadvance-m/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	visualboyadvance-m
 PORTVERSION=	2.0.0b2
@@ -35,7 +35,6 @@ DEBUGGER_DESC=	Enable the debugger
 ASMCORE_DESC=	Enable x86 ASM CPU cores (i386 only)
 ASMSCALERS_DESC=	Enable x86 ASM graphic filters (i386 only)
 
-WANT_GNOME=	yes
 DOS2UNIX_REGEX=	.*\.(c|cpp|h|ypp)
 USE_XORG=	x11 xext
 USE_GL=		gl glu

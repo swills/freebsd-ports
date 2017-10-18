@@ -1,8 +1,8 @@
 # Created by: JJ Behrens <jj@nttmcl.com>
-# $FreeBSD: head/net-mgmt/p5-Net-IPv6Addr/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net-mgmt/p5-Net-IPv6Addr/Makefile 451365 2017-10-06 10:44:29Z sunpoet $
 
 PORTNAME=	Net-IPv6Addr
-PORTVERSION=	0.7
+PORTVERSION=	0.91
 CATEGORIES=	net-mgmt perl5 ipv6
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

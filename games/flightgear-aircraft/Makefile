@@ -1,8 +1,8 @@
 # Created by: Jean-Yves Lefort <jylefort@FreeBSD.org>
-# $FreeBSD: head/games/flightgear-aircraft/Makefile 428178 2016-12-09 11:11:03Z martymac $
+# $FreeBSD: head/games/flightgear-aircraft/Makefile 451229 2017-10-04 14:27:20Z martymac $
 
 PORTNAME=	flightgear-aircraft
-PORTVERSION=	20161208
+PORTVERSION=	20170929
 CATEGORIES=	games
 # See http://www.flightgear.org/templates.js
 MASTER_SITES=	http://mirrors.ibiblio.org/flightgear/ftp/Aircraft/ \

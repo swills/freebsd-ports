@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/yaac/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/comms/yaac/Makefile 451999 2017-10-13 14:18:50Z bapt $
 
 PORTNAME=	yaac
 PORTVERSION=	1.0b89
@@ -11,6 +11,7 @@ COMMENT=	Platform-independent Java application for the APRS network
 
 LICENSE=	LGPL3
 
+BROKEN=		No public distfiles
 USE_JAVA=	yes
 JAVA_VERSION=	1.6+
 USES=		zip

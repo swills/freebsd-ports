@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/p5-CPAN-Reporter-Smoker/Makefile 412790 2016-04-08 21:55:02Z swills $
+# $FreeBSD: head/devel/p5-CPAN-Reporter-Smoker/Makefile 452205 2017-10-16 16:42:56Z swills $
 
 PORTNAME=	CPAN-Reporter-Smoker
-PORTVERSION=	0.28
+PORTVERSION=	0.29
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DAGOLDEN

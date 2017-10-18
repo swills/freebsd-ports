@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: head/Mk/Scripts/do-depends.sh 425026 2016-10-31 20:54:50Z bdrewery $
+# $FreeBSD: head/Mk/Scripts/do-depends.sh 450663 2017-09-26 14:14:44Z mat $
 #
 # MAINTAINER: portmgr@FreeBSD.org
 
@@ -94,13 +94,15 @@ find_lib()
 anynotfound=0
 err=0
 for _line in ${dp_RAWDEPENDS} ; do
+	# ensure we never leak flavors
+	unset FLAVOR
 	myifs=${IFS}
 	IFS=:
 	set -- ${_line}
 	IFS=${myifs}
 	if [ $# -lt 2 -o $# -gt 3 ]; then
 		echo "Error: bad dependency syntax in ${dp_DEPTYPE}" >&2
-		echo "expecting: pattern:origin[:target]" >&2
+		echo "expecting: pattern:origin[@flavour][:target]" >&2
 		echo "got: ${_line}" >&2
 		err=1
 		continue
@@ -124,6 +126,13 @@ for _line in ${dp_RAWDEPENDS} ; do
 	case "${origin}" in
 	/*) ;;
 	*) origin="${PORTSDIR}/${origin}" ;;
+	esac
+	case "${origin}" in
+	*@*/*) ;; # Ignore @ in the path which would not be a flavor
+	*@*)
+		export FLAVOR="${origin##*@}"
+		origin=${origin%@*}
+		;;
 	esac
 
 	depends_args="${dp_DEPENDS_ARGS}"

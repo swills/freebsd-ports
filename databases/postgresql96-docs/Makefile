@@ -1,15 +1,17 @@
 # Created by: Palle Girgensohn <girgen@pingpong.net>
-# $FreeBSD: head/databases/postgresql96-docs/Makefile 448138 2017-08-17 16:19:01Z mat $
+# $FreeBSD: head/databases/postgresql96-docs/Makefile 450532 2017-09-24 18:58:59Z girgen $
 
 PORTNAME=	postgresql
+PORTREVISION=   0
 PKGNAMESUFFIX?=	${WANT_PGSQL_VER:S,.,,}-docs
-DISTV=	${DISTVERSION:R}
 
 MAINTAINER=	pgsql@FreeBSD.org
 COMMENT=	The PostgreSQL documentation set
 
 MASTERDIR=	${.CURDIR}/../../databases/postgresql${WANT_PGSQL_VER:S/.//}-server
 WANT_PGSQL_VER?=9.6
+
+DISTV=		${DISTVERSION:R}
 
 SLAVE_ONLY=	YES
 COMPONENT=	-docs
@@ -40,6 +42,5 @@ post-install:
 	@(cd ${STAGEDIR}${PREFIX} && ${FIND} ${PGDOCSREL} -type f) >> ${TMPPLIST}
 	@(cd ${STAGEDIR}${PREFIX} && ${FIND} ${PGDOCSREL} -type d) | ${SORT} -r | \
 	     ${SED} 's,.*,@unexec rmdir %D/& 2>/dev/null || true,' >>${TMPPLIST}
-
 
 .include "${MASTERDIR}/Makefile"

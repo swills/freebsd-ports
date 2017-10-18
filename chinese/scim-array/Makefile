@@ -1,5 +1,5 @@
 # Created by: Li-Lun Wang <llwang@infor.org>
-# $FreeBSD: head/chinese/scim-array/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/chinese/scim-array/Makefile 452005 2017-10-13 14:25:31Z bapt $
 
 PORTNAME=	scim-array
 PORTVERSION=	1.0.1
@@ -9,6 +9,8 @@ MASTER_SITES=	http://of.openfoundry.org/download/scimarray/${PORTVERSION}/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Array 30 SCIM IMEngine module
+
+BROKEN=		No public distfiles
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING

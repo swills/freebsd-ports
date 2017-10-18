@@ -1,5 +1,5 @@
 # Created by: Olivier Cochard-Labbe <olivier@FreeBSD.org>
-# $FreeBSD: head/audio/deforaos-mixer/Makefile 431668 2017-01-16 15:20:53Z olivier $
+# $FreeBSD: head/audio/deforaos-mixer/Makefile 451964 2017-10-13 08:57:45Z bapt $
 
 PORTNAME=	mixer
 PORTVERSION=	0.2.2
@@ -10,6 +10,8 @@ DISTNAME=	Mixer-${PORTVERSION}
 
 MAINTAINER=	olivier@FreeBSD.org
 COMMENT=	DeforaOS desktop audio mixer
+
+BROKEN=		No public distfiles
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING

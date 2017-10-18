@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/go14/Makefile 449085 2017-09-01 14:59:03Z linimon $
+# $FreeBSD: head/lang/go14/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	go14
 PORTVERSION=	1.4.3
@@ -29,7 +29,7 @@ sh_CMD=		${SH}
 
 WRKSRC=		${WRKDIR}/go
 
-ONLY_FOR_ARCHS=		amd64 armv6 i386
+ONLY_FOR_ARCHS=		amd64 armv6 armv7 i386
 
 .include <bsd.port.pre.mk>
 
@@ -38,13 +38,13 @@ ONLY_FOR_ARCHS=		amd64 armv6 i386
 CC=clang
 .endif
 
-.if ${ARCH} == "i386"
+.if ${ARCH} == i386
 GOARCH=386
 GOOBJ=8
-.elif ${ARCH} == "amd64"
+.elif ${ARCH} == amd64
 GOARCH=amd64
 GOOBJ=6
-.elif ${ARCH} == "armv6"
+.elif ${ARCH} == armv6 || ${ARCH} == armv7
 GOARCH=arm
 GOOBJ=5
 .else

@@ -1,9 +1,9 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/multimedia/flvtool++/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/multimedia/flvtool++/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	flvtool++
 PORTVERSION=	1.2.1
-PORTREVISION=	5
+PORTREVISION=	7
 CATEGORIES=	multimedia
 
 MAINTAINER=	ports@FreeBSD.org

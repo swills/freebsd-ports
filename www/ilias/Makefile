@@ -1,8 +1,8 @@
 # Created by: Bartlomiej Rutkowski <r@robakdesign.com>
-# $FreeBSD: head/www/ilias/Makefile 448851 2017-08-28 08:08:13Z wen $
+# $FreeBSD: head/www/ilias/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	ilias
-PORTVERSION=	5.2.7
+PORTVERSION=	5.2.8
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 
@@ -24,7 +24,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	ILIAS-eLearning
 GH_PROJECT=	ILIAS
 
-USES=		cpe jpeg
+USES=		cpe jpeg php
 NO_BUILD=	yes
 PLIST=		${WRKDIR}/plist
 SUB_FILES=	pkg-message

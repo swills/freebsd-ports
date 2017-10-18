@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/linux-opera/Makefile 434483 2017-02-20 18:26:29Z tijl $
+# $FreeBSD: head/www/linux-opera/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	opera
 PORTVERSION=	${OPERA_VER}
@@ -24,7 +24,6 @@ RUN_DEPENDS=	update-mime-database:misc/shared-mime-info
 USES=		desktop-file-utils linux shared-mime-info tar:xz
 USE_LINUX=	gtk2 sqlite3 xorglibs
 ONLY_FOR_ARCHS=	i386 amd64
-WANT_GNOME=	yes
 INSTALLS_ICONS=	yes
 
 NO_BUILD=	yes

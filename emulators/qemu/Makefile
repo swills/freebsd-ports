@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@jelal.kn-bremen.de>
-# $FreeBSD: head/emulators/qemu/Makefile 447330 2017-08-04 13:45:29Z bofh $
+# $FreeBSD: head/emulators/qemu/Makefile 451399 2017-10-06 18:53:00Z tobik $
 
 PORTNAME=	qemu
 PORTVERSION=	2.9.0
@@ -47,7 +47,7 @@ OPTIONS_DEFAULT=X11 GTK2 OPENGL GNUTLS SASL JPEG PNG CDROM_DMA CURL PCAP GNS3 NC
 OPTIONS_SUB=	yes
 X11_USE=	SDL=sdl XORG=x11,xext GNOME=gdkpixbuf2
 X11_CONFIGURE_ENABLE=	sdl
-GTK2_USE=	GNOME=gtk20,vte
+GTK2_USE=	GNOME=gtk20,vte,gdkpixbuf2 XORG=x11,xext
 GTK2_USES=	gettext
 GTK2_CONFIGURE_OFF=	--disable-gtk --disable-vte
 GNUTLS_LIB_DEPENDS=	libgnutls.so:security/gnutls

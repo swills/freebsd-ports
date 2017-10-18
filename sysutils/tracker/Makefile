@@ -1,9 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/sysutils/tracker/Makefile 448669 2017-08-24 13:45:13Z swills $
+# $FreeBSD: head/sysutils/tracker/Makefile 450556 2017-09-25 00:02:36Z jbeich $
 
 PORTNAME=	tracker
 PORTVERSION=	1.6.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	GNOME
 

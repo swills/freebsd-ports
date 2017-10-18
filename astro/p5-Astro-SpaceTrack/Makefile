@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/astro/p5-Astro-SpaceTrack/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/astro/p5-Astro-SpaceTrack/Makefile 452103 2017-10-15 00:37:07Z sunpoet $
 
 PORTNAME=	Astro-SpaceTrack
-PORTVERSION=	0.099
+PORTVERSION=	0.100
 CATEGORIES=	astro perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

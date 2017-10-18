@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/rubygem-redis-actionpack-rails50/Makefile 447386 2017-08-05 03:25:17Z jrm $
+# $FreeBSD: head/databases/rubygem-redis-actionpack-rails50/Makefile 452296 2017-10-17 20:07:17Z sunpoet $
 
 PORTNAME=	redis-actionpack
-PORTVERSION=	5.0.1
+PORTVERSION=	5.0.2
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50

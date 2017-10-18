@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/games/ioquake3/Makefile 449918 2017-09-15 18:28:31Z adamw $
+# $FreeBSD: head/games/ioquake3/Makefile 450473 2017-09-23 21:11:51Z adamw $
 
 PORTNAME?=	ioquake3
 PORTVERSION?=	${IOQUAKE3VER}
@@ -9,7 +9,7 @@ MASTER_SITES?=	http://ioquake3.org/files/${DISTVERSION}/
 # Using zip this way enables slaves to override it.
 EXTRACT_SUFX?=	.zip
 
-MAINTAINER?=	kamikaze@bsdforen.de
+MAINTAINER?=	ports@FreeBSD.org
 COMMENT?=	Cleaned-up and enhanced version of Quake 3
 
 LICENSE?=	GPLv2

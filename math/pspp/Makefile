@@ -1,8 +1,9 @@
 # Created by: Andrew L. Neporada <andrew@chg.ru>
-# $FreeBSD: head/math/pspp/Makefile 448986 2017-08-30 15:12:44Z cpm $
+# $FreeBSD: head/math/pspp/Makefile 451937 2017-10-12 22:39:11Z cpm $
 
 PORTNAME=	pspp
 PORTVERSION=	1.0.1
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	GNU
 
@@ -15,7 +16,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	texinfo>0:print/texinfo
 LIB_DEPENDS=	libgslcblas.so:math/gsl
 
-USES=		charsetfix gmake iconv localbase libtool perl5 pkgconfig readline
+USES=		cpe charsetfix gettext-tools gmake iconv localbase libtool \
+		perl5 pkgconfig readline
+CPE_VENDOR=	gnu
 USE_GNOME=	libxml2
 USE_PERL5=	build
 GNU_CONFIGURE=	yes
@@ -41,8 +44,8 @@ GUI_VARS=		INSTALLS_ICONS=yes
 GUI_CONFIGURE_WITH=	cairo gui gui-tools
 GUI_INSTALL_TARGET=	install-icons install-ext-icons
 
-NLS_USES=		gettext
-NLS_CONFIGURE_ENABLE=	nls
+NLS_USES=		gettext-runtime
+NLS_CONFIGURE_OFF=	--disable-nls
 NLS_MAKE_ARGS_OFF=	POFILES=""
 
 PGSQL_USES=		pgsql

@@ -1,12 +1,11 @@
 # Created by: Bill Fumerola <billf@chc-chimes.com>
-# $FreeBSD: head/benchmarks/nttcp/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/benchmarks/nttcp/Makefile 451957 2017-10-13 08:21:36Z bapt $
 
 PORTNAME=	nttcp
 PORTVERSION=	1.47
 PORTREVISION=	3
 CATEGORIES=	benchmarks net
 MASTER_SITES=	http://freeware.sgi.com/source/nttcp/ \
-		http://reality.sgiweb.org/freeware/source/nttcp/ \
 		LOCAL/martymac
 
 MAINTAINER=	martymac@FreeBSD.org

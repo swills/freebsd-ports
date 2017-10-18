@@ -1,8 +1,7 @@
 # Created by: Pakhom Golynga <pg@pakhom.spb.ru>
-# $FreeBSD: head/net-mgmt/zabbix32-frontend/Makefile 448744 2017-08-25 23:32:36Z dbaio $
+# $FreeBSD: head/net-mgmt/zabbix32-frontend/Makefile 451868 2017-10-12 12:19:52Z dbaio $
 
 PORTNAME=	zabbix32
-PORTREVISION=	1
 CATEGORIES=	net-mgmt
 PKGNAMESUFFIX=	-frontend
 

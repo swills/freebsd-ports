@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/gsculpt/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/graphics/gsculpt/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	gsculpt
 PORTVERSION=	0.99.47
-PORTREVISION=	13
+PORTREVISION=	15
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${DISTNAME:S,-src,,}
 DISTNAME=	gSculpt-${PORTVERSION}-alpha-src

@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/py-mycli/Makefile 447796 2017-08-11 21:38:26Z sunpoet $
+# $FreeBSD: head/databases/py-mycli/Makefile 450918 2017-09-29 16:59:43Z sunpoet $
 
 PORTNAME=	mycli
-PORTVERSION=	1.12.1
+PORTVERSION=	1.13.1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Loïc BARTOLETTI <coder@tuxfamily.org>
-# $FreeBSD: head/databases/virtualpg/Makefile 443407 2017-06-11 19:04:08Z sunpoet $
+# $FreeBSD: head/databases/virtualpg/Makefile 450502 2017-09-24 18:48:47Z sunpoet $
 
 PORTNAME=	virtualpg
 PORTVERSION=	1.0.2
@@ -9,9 +9,9 @@ MASTER_SITES=	http://www.gaia-gis.it/gaia-sins/
 MAINTAINER=	lbartoletti@tuxfamily.org
 COMMENT=	Loadable dynamic extension to both SQLite and SpatiaLite
 
-LICENSE=	MPL LGPL21 GPLv2
+LICENSE=	MPL11 LGPL21 GPLv2
 LICENSE_COMB=	dual
-LICENSE_FILE_MPL=	${WRKSRC}/COPYING
+LICENSE_FILE_MPL11=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
 USES=		gmake iconv pathfix pkgconfig libtool pgsql sqlite

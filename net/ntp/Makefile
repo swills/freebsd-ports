@@ -1,5 +1,5 @@
 # Created by: andreas
-# $FreeBSD: head/net/ntp/Makefile 436887 2017-03-25 07:50:53Z cy $
+# $FreeBSD: head/net/ntp/Makefile 451258 2017-10-05 01:55:10Z cy $
 
 PORTNAME=	ntp
 PORTVERSION=	4.2.8p10
@@ -15,7 +15,7 @@ COMMENT=	The Network Time Protocol Distribution
 
 LIB_DEPENDS=	libevent.so:devel/libevent
 
-CONFLICTS=	ntp-devel-*
+CONFLICTS=	ntp-devel-* openntpd-*
 
 USES=		cpe pathfix shebangfix libedit libtool localbase:ldflags \
 		pkgconfig

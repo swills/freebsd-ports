@@ -1,8 +1,8 @@
 # Created by: Matthew Seaman <matthew@FreeBSD.org>
-# $FreeBSD: head/www/p5-WWW-Salesforce/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-WWW-Salesforce/Makefile 451636 2017-10-09 20:07:33Z matthew $
 
 PORTNAME=       WWW-Salesforce
-PORTVERSION=    0.301
+PORTVERSION=    0.303
 CATEGORIES=     www perl5
 MASTER_SITES=   CPAN
 PKGNAMEPREFIX=  p5-

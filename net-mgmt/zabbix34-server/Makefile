@@ -1,8 +1,8 @@
 # Created by: Pakhom Golynga <pg@pakhom.spb.ru>
-# $FreeBSD: head/net-mgmt/zabbix34-server/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/net-mgmt/zabbix34-server/Makefile 451254 2017-10-05 01:03:07Z dbaio $
 
 PORTNAME=	zabbix34
-PORTVERSION=	3.4.1
+PORTVERSION=	3.4.2
 PORTREVISION?=	0
 CATEGORIES=	net-mgmt
 MASTER_SITES=	SF/zabbix/ZABBIX%20Latest%20Stable/${PORTVERSION}
@@ -17,7 +17,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
 
-CONFLICTS=	zabbix[0-24-9][0-35-9]${PKGNAMESUFFIX} zabbix[0-9]${PKGNAMESUFFIX}
+CONFLICTS=	zabbix[0-24-9][0-9]${PKGNAMESUFFIX} \
+		zabbix3[0-35-9]${PKGNAMESUFFIX} \
+		zabbix[0-9]${PKGNAMESUFFIX}
 
 IGNORE_WITH_MYSQL=	41
 

@@ -1,9 +1,8 @@
 # Created by: Joshua D. Abraham <jabra@ccs.neu.edu>
-# $FreeBSD: head/security/p5-Nmap-Parser/Makefile 444681 2017-06-29 19:14:27Z sunpoet $
+# $FreeBSD: head/security/p5-Nmap-Parser/Makefile 451005 2017-09-30 19:21:37Z jadawin $
 
 PORTNAME=	Nmap-Parser
-PORTVERSION=	1.33
-PORTREVISION=	1
+PORTVERSION=	1.36
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

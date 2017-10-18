@@ -1,5 +1,5 @@
 # Created by: Muhammad Moinur Rahman <5u623l20@gmail.com>
-# $FreeBSD: head/lang/guile2/Makefile 448414 2017-08-20 12:30:20Z sunpoet $
+# $FreeBSD: head/lang/guile2/Makefile 451773 2017-10-11 19:10:52Z feld $
 
 PORTNAME=	guile
 PORTVERSION=	2.0.14
@@ -20,6 +20,7 @@ LIB_DEPENDS=	libgmp.so:math/gmp \
 
 CONFLICTS_INSTALL=	guile-[0-9]*
 
+MAKE_JOBS_UNSAFE=	yes
 BROKEN_powerpc64=	does not build: error: expected declaration specifiers or ... before __builtin_choose_expr
 BROKEN_sparc64=		fails to compile: errors in complex.h
 

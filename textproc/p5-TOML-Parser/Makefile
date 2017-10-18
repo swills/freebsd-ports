@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-TOML-Parser/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-TOML-Parser/Makefile 451028 2017-10-01 08:07:13Z sunpoet $
 
 PORTNAME=	TOML-Parser
-PORTVERSION=	0.10
+PORTVERSION=	0.90
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:KARUPA

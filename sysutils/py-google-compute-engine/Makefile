@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/py-google-compute-engine/Makefile 449170 2017-09-03 02:31:16Z ultima $
+# $FreeBSD: head/sysutils/py-google-compute-engine/Makefile 452169 2017-10-15 22:11:30Z ultima $
 
 PORTNAME=	google-compute-engine
 PORTVERSION=	2.4.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

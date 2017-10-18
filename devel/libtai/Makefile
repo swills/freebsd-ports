@@ -1,16 +1,20 @@
 # Created by: Mario S F Ferreira <lioux@linf.unb.br> et al.
-# $FreeBSD: head/devel/libtai/Makefile 441907 2017-05-28 10:58:00Z antoine $
+# $FreeBSD: head/devel/libtai/Makefile 452136 2017-10-15 11:12:44Z rodrigo $
 
 PORTNAME=	libtai
 PORTVERSION=	0.60
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel
 MASTER_SITES=	http://cr.yp.to/libtai/ \
 		ftp://ftp.sunsite.auc.dk/disk1/qmail/ \
 		ftp://ftp.task.gda.pl/mirror/mirror.qmail.org/koobera/pub/software/
 
 MAINTAINER=	rodrigo@FreeBSD.org
-COMMENT=	Library for storing and manipulating dates and times in second/attosecond
+COMMENT=	Library for storing and manipulating dates and times
+
+LICENSE=	UNLICENSE
+
+CONFLICTS_INSTALL=	mess822
 
 ALL_TARGET=	it
 USES=		groff

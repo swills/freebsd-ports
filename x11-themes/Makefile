@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/Makefile 448603 2017-08-23 11:33:26Z rene $
+# $FreeBSD: head/x11-themes/Makefile 450763 2017-09-27 16:00:42Z tcberner $
 #
 
     COMMENT = X11 themes
@@ -161,6 +161,7 @@
     SUBDIR += qtcurve-utils
     SUBDIR += rezlooks
     SUBDIR += sawfish-themes
+    SUBDIR += sddm-freebsd-black-theme
     SUBDIR += slim-themes
     SUBDIR += thewidgetfactory
     SUBDIR += ubuntulooks

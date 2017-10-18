@@ -1,5 +1,5 @@
 # Created by: chinsan@mail2000.com.tw
-# $FreeBSD: head/www/bblog/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/www/bblog/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	bBlog
 PORTVERSION=	0.7.6
@@ -10,9 +10,9 @@ MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME:tl}/${PORTNAME}%20${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Elegant personal publishing system with Smarty
 
+USES=		php:web
 USE_PHP=	mysql pcre session
 NO_BUILD=	yes
-WANT_PHP_WEB=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME:tl}
 WWWDOCROOT?=	www

@@ -1,5 +1,5 @@
 # Created by: Anders Nordby <anders@fix.no>
-# $FreeBSD: head/audio/xmp/Makefile 444887 2017-07-02 14:21:23Z ehaupt $
+# $FreeBSD: head/audio/xmp/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	xmp
 PORTVERSION=	4.1.0
@@ -16,7 +16,6 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libxmp.so:audio/libxmp
 
 USES=		gmake localbase:ldflags pkgconfig
-WANT_GNOME=	yes
 GNU_CONFIGURE=	yes
 
 CONFIGURE_ARGS+=	--sysconfdir=${PREFIX}/etc

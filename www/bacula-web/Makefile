@@ -1,5 +1,5 @@
 # Created by: Dan Langille <dan@langille.org>
-# $FreeBSD: head/www/bacula-web/Makefile 420997 2016-08-27 20:36:54Z dvl $
+# $FreeBSD: head/www/bacula-web/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	bacula-web
 DISTVERSION=	7.2.0
@@ -12,9 +12,8 @@ COMMENT=	Bacula-web provides a summarized output of Bacula jobs
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/docs/COPYING
 
-USES=		tar:tgz
+USES=		php:web tar:tgz
 USE_PHP=	gd gettext session
-WANT_PHP_WEB=	yes
 NO_BUILD=	yes
 NO_ARCH=	yes
 NO_WRKSUBDIR=	yes

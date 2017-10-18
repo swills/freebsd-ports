@@ -1,9 +1,9 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/comms/libconcord/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/libconcord/Makefile 450775 2017-09-27 18:08:14Z rakuco $
 
 PORTNAME=	libconcord
 PORTVERSION=	1.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	comms
 MASTER_SITES=	SF/concordance/concordance/${PORTVERSION}
 DISTNAME=	concordance-${PORTVERSION}

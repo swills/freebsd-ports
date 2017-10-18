@@ -1,4 +1,4 @@
-# $FreeBSD: head/ports-mgmt/Makefile 449193 2017-09-03 09:51:31Z rene $
+# $FreeBSD: head/ports-mgmt/Makefile 451060 2017-10-01 20:43:01Z rene $
 #
 
     COMMENT = Ports for managing, installing, and developing FreeBSD ports and packages
@@ -16,7 +16,6 @@
     SUBDIR += genplist
     SUBDIR += hs-porte
     SUBDIR += jailaudit
-    SUBDIR += kpackagekit
     SUBDIR += lsknobs
     SUBDIR += managepkg
     SUBDIR += mkreadmes
@@ -25,7 +24,6 @@
     SUBDIR += p5-FreeBSD-Ports
     SUBDIR += p5-FreeBSD-Ports-INDEXhash
     SUBDIR += packagekit
-    SUBDIR += packagekit-qt4
     SUBDIR += pchecker
     SUBDIR += pkg
     SUBDIR += pkg-devel
@@ -69,7 +67,6 @@
     SUBDIR += psearch
     SUBDIR += py-pytoport
     SUBDIR += py-skog
-    SUBDIR += redports-node
     SUBDIR += symports
     SUBDIR += synth
     SUBDIR += tinderbox

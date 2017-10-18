@@ -1,5 +1,5 @@
 # Created by: Juergen Unger <j.unger@choin.net>
-# $FreeBSD: head/graphics/fly/Makefile 423400 2016-10-06 09:01:50Z amdmi3 $
+# $FreeBSD: head/graphics/fly/Makefile 451644 2017-10-09 21:15:29Z dumbbell $
 
 PORTNAME=	fly
 PORTVERSION=	2.0.1
@@ -18,6 +18,8 @@ PORTEXAMPLES=	*
 PLIST_FILES=	bin/fly
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
+
+CONFLICTS_INSTALL=	concourse-fly
 
 do-build:
 	cd ${WRKSRC} && ${CC} ${CFLAGS} -I${LOCALBASE}/include fly.c -o fly \

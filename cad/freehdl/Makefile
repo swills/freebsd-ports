@@ -1,5 +1,5 @@
 # Created by: lon_kamikaze@gmx.de
-# $FreeBSD: head/cad/freehdl/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/cad/freehdl/Makefile 450473 2017-09-23 21:11:51Z adamw $
 
 PORTNAME=	freehdl
 PORTVERSION=	0.0.7
@@ -7,7 +7,7 @@ PORTREVISION=	4
 CATEGORIES=	cad
 MASTER_SITES=	http://freehdl.seul.org/~enaroska/
 
-MAINTAINER=	kamikaze@bsdforen.de
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Free VHDL simulator
 
 USES=		gmake pathfix libtool makeinfo perl5 pkgconfig

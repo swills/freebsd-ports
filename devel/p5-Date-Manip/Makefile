@@ -1,8 +1,8 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Date-Manip/Makefile 438221 2017-04-11 00:03:50Z swills $
+# $FreeBSD: head/devel/p5-Date-Manip/Makefile 452204 2017-10-16 16:42:02Z swills $
 
 PORTNAME=	Date-Manip
-PORTVERSION=	6.58
+PORTVERSION=	6.60
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:SBECK

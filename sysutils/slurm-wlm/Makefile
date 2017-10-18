@@ -1,5 +1,5 @@
 # Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/sysutils/slurm-wlm/Makefile 448787 2017-08-26 21:44:07Z jrm $
+# $FreeBSD: head/sysutils/slurm-wlm/Makefile 450626 2017-09-25 17:41:47Z jrm $
 
 PORTNAME=	slurm
 DISTVERSION=	17.02.7
@@ -42,7 +42,7 @@ CURL_DESC=	Require cURL for elasticsearch plugins
 GTK2_DESC=	Build sview GUI config tool
 HDF5_DESC=	Job profiling using HDF5
 HWLOC_DESC=	Portable hardware locality
-IPMI_DESC=	IPMI engergy consumption accounting
+IPMI_DESC=	IPMI energy consumption accounting
 RRD_DESC=	RRD external sensor data collection
 LINUX_DESC=	Support jobacct_gather/linux (requires linprocfs)
 

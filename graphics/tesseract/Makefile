@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/tesseract/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/tesseract/Makefile 450556 2017-09-25 00:02:36Z jbeich $
 
 PORTNAME=	tesseract
 PORTVERSION=	3.05.01
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 
 MAINTAINER=	pkubaj@anongoth.pl
@@ -12,6 +12,7 @@ COMMENT=	Commercial quality open source OCR engine
 LICENSE=	APACHE20
 
 LIB_DEPENDS=	liblept.so:graphics/leptonica
+RUN_DEPENDS=	tesseract-data>=0:graphics/tesseract-data
 
 USES=		autoreconf localbase libtool pathfix pkgconfig
 GNU_CONFIGURE=	yes

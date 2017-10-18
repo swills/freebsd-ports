@@ -1,9 +1,9 @@
 # Created by: Mageirias Anastasios <anastmag@gmail.com>
-# $FreeBSD: head/security/clamfs/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/security/clamfs/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	clamfs
 PORTVERSION=	1.0.1
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	security
 MASTER_SITES=	SF
 
@@ -11,6 +11,8 @@ MAINTAINER=	anastasios@mageirias.com
 COMMENT=	User-space fs with on-access antivirus scanning
 
 LICENSE=	GPLv2
+
+BROKEN=		fails to build with boost 1.65, see bug 220725
 
 LIB_DEPENDS=	libccgnu2.so:devel/commoncpp \
 		libPocoNet.so:devel/poco-ssl \

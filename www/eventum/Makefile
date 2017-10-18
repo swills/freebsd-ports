@@ -1,5 +1,5 @@
 # Created by: Babak Farrokhi <babak@farrokhi.net>
-# $FreeBSD: head/www/eventum/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/www/eventum/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	eventum
 PORTVERSION=	2.2
@@ -10,11 +10,10 @@ MASTER_SITES=	MYSQL/eventum
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Eventum issue tracking system
 
-USES=		cpe
+USES=		cpe php:web
 CPE_VENDOR=	mysql
 NO_BUILD=	yes
 USE_PHP=	pcre session mysql gd gettext
-WANT_PHP_WEB=	yes
 PLIST_SUB=	WWWOWN="${WWWOWN}" WWWGRP="${WWWGRP}"
 
 pre-install:

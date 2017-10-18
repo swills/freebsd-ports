@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/misc/p5-Chatbot-Eliza/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/misc/p5-Chatbot-Eliza/Makefile 450750 2017-09-27 13:44:09Z culot $
 
 PORTNAME=	Chatbot-Eliza
-PORTVERSION=	1.06
+PORTVERSION=	1.08
 CATEGORIES=	misc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

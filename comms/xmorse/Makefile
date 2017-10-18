@@ -1,13 +1,11 @@
 # Created by: Sunry Chen <sunrychen@gmail.com>
-# $FreeBSD: head/comms/xmorse/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/xmorse/Makefile 452001 2017-10-13 14:19:26Z bapt $
 
 PORTNAME=	xmorse
 PORTVERSION=	20041125
 PORTREVISION=	10
 CATEGORIES=	comms hamradio
 MASTER_SITES=	http://c2.com/morse/files/SourceCode/ \
-		http://www.525183.com/freebsd/xmorse/ \
-		http://www.chinatinco.com/freebsd/xmorse/ \
 		http://525183.serverbox.org/freebsd/xmorse/
 DISTNAME=	m${PORTVERSION}
 EXTRACT_SUFX=	.tgz

@@ -1,5 +1,5 @@
 # Created by: Jacob Atzen <jatzen@gmail.com>
-# $FreeBSD: head/www/rubygem-passenger/Makefile 449908 2017-09-15 17:05:41Z asomers $
+# $FreeBSD: head/www/rubygem-passenger/Makefile 451230 2017-10-04 14:36:03Z asomers $
 
 PORTNAME=	passenger
 PORTVERSION=	5.1.8
@@ -118,6 +118,8 @@ post-install:
 	${CHMOD} +x ${STAGEDIR}${PREFIX}/${GEMS_DIR}/${PORTNAME}-${PORTVERSION}/buildout/support-binaries/*
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${GEM_LIB_DIR}/buildout/ruby/*/passenger_native_support.so
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${GEM_LIB_DIR}/buildout/support-binaries/PassengerAgent
+
+post-install-APACHE22-on:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${GEM_LIB_DIR}/buildout/apache2/mod_passenger.so
 
 post-install-SYMLINK-on:

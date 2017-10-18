@@ -1,5 +1,5 @@
 # Created by: Vsevolod Stakhov <vsevolod@highsecure.ru>
-# $FreeBSD: head/www/xaraya/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/www/xaraya/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	xaraya
 DISTVERSION=	2.4.0-b1
@@ -13,7 +13,7 @@ LICENSE=	GPLv2
 
 OPTIONS_DEFINE=	PGSQL MYSQL
 
-USES=		cpe tar:bzip2
+USES=		cpe tar:bzip2 php
 CPE_VERSION=	${DISTVERSION:C/-.*//}
 CPE_UPDATE=	${DISTVERSION:C/[^-]*((-.*)?)/\1/:C/-//}
 USE_PHP=	pcre xml simplexml

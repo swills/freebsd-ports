@@ -1,5 +1,5 @@
 # Created by: nork@FreeBSD.org
-# $FreeBSD: head/graphics/OpenEXR/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/OpenEXR/Makefile 452245 2017-10-16 18:31:20Z mandree $
 
 PORTNAME=	OpenEXR
 PORTVERSION=	2.2.0
@@ -13,6 +13,9 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX}:dist \
 
 MAINTAINER=	mandree@FreeBSD.org
 COMMENT=	High dynamic-range (HDR) image file format
+
+DEPRECATED=	Vulnerable with no upstream support
+EXPIRATION_DATE=2017-12-31
 
 LICENSE=	BSD3CLAUSE
 

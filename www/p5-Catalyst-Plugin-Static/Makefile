@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-Plugin-Static/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-Static/Makefile 451830 2017-10-12 08:11:29Z sunpoet $
 
 PORTNAME=	Catalyst-Plugin-Static
 PORTVERSION=	0.11
@@ -21,8 +21,5 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure
-
-regression-test: build
-	cd ${WRKSRC}/ && ${MAKE} test
 
 .include <bsd.port.mk>

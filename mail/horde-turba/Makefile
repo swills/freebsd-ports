@@ -1,7 +1,8 @@
-# $FreeBSD: head/mail/horde-turba/Makefile 450171 2017-09-19 21:48:42Z mm $
+# $FreeBSD: head/mail/horde-turba/Makefile 451932 2017-10-12 21:46:13Z mm $
 
 PORTNAME=	turba
 PORTVERSION=	4.2.21
+PORTREVISION=	1
 PKGNAMEPREFIX=	horde-
 CATEGORIES=	mail www pear
 
@@ -21,6 +22,7 @@ USE_PHP=	gettext hash json
 USE_HORDE_BUILD=	Horde_Role
 USE_HORDE_RUN=	Horde_Role \
 		horde \
+		content \
 		Horde_Auth \
 		Horde_Core \
 		Horde_Data \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 446994 2017-07-31 19:39:07Z rene $
+# $FreeBSD: head/multimedia/Makefile 452251 2017-10-16 20:37:21Z rene $
 #
 
     COMMENT = Multimedia software
@@ -275,7 +275,6 @@
     SUBDIR += mythtv-frontend
     SUBDIR += naludump
     SUBDIR += nordlicht
-    SUBDIR += nxtvepg
     SUBDIR += obs-studio
     SUBDIR += oggvideotools
     SUBDIR += ogmrip

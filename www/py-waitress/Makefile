@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/www/py-waitress/Makefile 436503 2017-03-19 16:11:40Z rm $
+# $FreeBSD: head/www/py-waitress/Makefile 451784 2017-10-11 19:49:56Z sunpoet $
 
 PORTNAME=	waitress
-PORTVERSION=	1.0.2
+PORTVERSION=	1.1.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,8 +12,8 @@ COMMENT=	Python WSGI server
 
 LICENSE=	ZPL21
 
-USES=	python
-USE_PYTHON=	distutils autoplist
+USES=		python
+USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

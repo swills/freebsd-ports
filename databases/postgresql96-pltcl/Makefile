@@ -1,7 +1,8 @@
 # Created by: Palle Girgensohn <girgen@partitur.se>
-# $FreeBSD: head/databases/postgresql96-pltcl/Makefile 448138 2017-08-17 16:19:01Z mat $
+# $FreeBSD: head/databases/postgresql96-pltcl/Makefile 450532 2017-09-24 18:58:59Z girgen $
 
 PORTNAME=	postgresql
+PORTREVISION=	0
 CATEGORIES=	databases tcl
 PKGNAMESUFFIX?=	${WANT_PGSQL_VER:S/.//}${COMPONENT}
 

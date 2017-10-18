@@ -1,5 +1,5 @@
 # Created by: <hvo.pm@xs4all.nl>
-# $FreeBSD: head/www/p5-Interchange6/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Interchange6/Makefile 452126 2017-10-15 02:47:49Z pi $
 
 PORTNAME=	Interchange6
 PORTVERSION=	0.120
@@ -8,7 +8,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:HORNBURG
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	hvo.pm@xs4all.nl
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Open Source Shop Machine
 
 LICENSE=	ART10 GPLv1+

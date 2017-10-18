@@ -1,9 +1,10 @@
 # Created by: vanilla
-# $FreeBSD: head/graphics/pecl-qrencode/Makefile 420931 2016-08-26 16:27:10Z vanilla $
+# $FreeBSD: head/graphics/pecl-qrencode/Makefile 450419 2017-09-23 02:59:07Z vanilla $
 
 PORTNAME=	qrencode
 PORTVERSION=	0.6
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	graphics pear
 PKGNAMEPREFIX=	pecl-
 DIST_SUBDIR=	PECL

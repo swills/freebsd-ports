@@ -1,14 +1,17 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/audio/mate-media/Makefile 445014 2017-07-04 11:44:30Z kwm $
+# $FreeBSD: head/audio/mate-media/Makefile 452089 2017-10-14 20:51:48Z kwm $
 
 PORTNAME=	mate-media
-PORTVERSION=	1.18.0
+PORTVERSION=	1.18.1
 CATEGORIES=	audio mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Multimedia applications for the MATE desktop
+
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	itstool:textproc/itstool
 LIB_DEPENDS=	libcanberra-gtk.so:audio/libcanberra \

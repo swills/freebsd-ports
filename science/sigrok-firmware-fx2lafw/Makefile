@@ -1,8 +1,8 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/science/sigrok-firmware-fx2lafw/Makefile 425268 2016-11-03 18:30:42Z bsam $
+# $FreeBSD: head/science/sigrok-firmware-fx2lafw/Makefile 451802 2017-10-11 21:48:08Z bsam $
 
 PORTNAME=	firmware
-PORTVERSION=	0.1.4
+PORTVERSION=	0.1.5
 CATEGORIES=	science
 MASTER_SITES=	http://sigrok.org/download/binary/${PKGNAMEPREFIX}${PORTNAME}${PKGNAMESUFFIX}/
 PKGNAMEPREFIX=	sigrok-

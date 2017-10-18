@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/php-xapian/Makefile 439300 2017-04-24 15:15:15Z sunpoet $
+# $FreeBSD: head/databases/php-xapian/Makefile 452217 2017-10-16 17:46:08Z sunpoet $
 
 PORTNAME=	xapian
-PORTVERSION=	1.4.4
+PORTVERSION=	1.4.5
 DISTVERSIONPREFIX=	bindings-
 CATEGORIES=	databases
 MASTER_SITES=	http://oligarchy.co.uk/xapian/${PORTVERSION}/ \
@@ -18,6 +18,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	xapian-core>=${PORTVERSION}:databases/xapian-core
 LIB_DEPENDS=	libxapian.so:databases/xapian-core
 
+CONFLICTS_INSTALL=	xapian-bindings12
+
 OPTIONS_DEFINE=	DOCS
 
 PORTSCOUT=	limitw:1,even
@@ -32,10 +34,7 @@ GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USES=		libtool php:build tar:xz
 
-PLIST_FILES=	lib/php/${PHP_EXT_DIR}/xapian.a \
-		lib/php/${PHP_EXT_DIR}/xapian.so
-PORTDATA=	*
-PORTDOCS=	*
+PLIST_SUB=	PHP_EXT_DIR=${PHP_EXT_DIR} PHP_MAJOR_VER=${PHP_VER:C|.$||}
 
 .include <bsd.port.pre.mk>
 

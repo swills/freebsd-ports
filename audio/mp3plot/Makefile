@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/audio/mp3plot/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/audio/mp3plot/Makefile 450852 2017-09-28 15:36:31Z kwm $
 
 PORTNAME=	mp3plot
 DISTVERSION=	0.6.0
-PORTREVISION=	16
+PORTREVISION=	19
 CATEGORIES=	audio
 MASTER_SITES=	http://p.outlyer.net/mp3plot/files/
 

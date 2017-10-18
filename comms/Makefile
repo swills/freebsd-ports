@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/Makefile 446592 2017-07-25 15:53:12Z amdmi3 $
+# $FreeBSD: head/comms/Makefile 451926 2017-10-12 19:30:51Z db $
 #
 
     COMMENT = Communication utilities
@@ -40,6 +40,7 @@
     SUBDIR += efax-gtk
     SUBDIR += ems-flasher
     SUBDIR += fl_moxgen
+    SUBDIR += flcluster
     SUBDIR += fldigi
     SUBDIR += fllog
     SUBDIR += flrig
@@ -135,6 +136,7 @@
     SUBDIR += predict
     SUBDIR += py-bulksms
     SUBDIR += py-gammu
+    SUBDIR += py-hidapi
     SUBDIR += py-libconcord
     SUBDIR += py-libimobiledevice
     SUBDIR += py-lirc

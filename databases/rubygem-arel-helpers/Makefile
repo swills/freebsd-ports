@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/rubygem-arel-helpers/Makefile 441092 2017-05-17 17:14:55Z sunpoet $
+# $FreeBSD: head/databases/rubygem-arel-helpers/Makefile 451499 2017-10-08 08:02:03Z sunpoet $
 
 PORTNAME=	arel-helpers
-PORTVERSION=	2.4.0
+PORTVERSION=	2.5.0
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

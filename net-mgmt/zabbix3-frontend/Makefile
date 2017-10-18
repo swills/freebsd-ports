@@ -1,14 +1,9 @@
 # Created by: Pakhom Golynga <pg@pakhom.spb.ru>
-# $FreeBSD: head/net-mgmt/zabbix3-frontend/Makefile 448744 2017-08-25 23:32:36Z dbaio $
+# $FreeBSD: head/net-mgmt/zabbix3-frontend/Makefile 451872 2017-10-12 12:38:23Z dbaio $
 
 PORTNAME=	zabbix3
 CATEGORIES=	net-mgmt
 PKGNAMESUFFIX=	-frontend
-
-MAINTAINER=	pg@pakhom.spb.ru
-COMMENT=	Enterprise-class open source distributed monitoring (${PKGNAMESUFFIX:S/^-//}) LTS
-
-LICENSE=	GPLv2
 
 MASTERDIR=	${.CURDIR}/../zabbix3-server
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/lua-lgi/Makefile 444953 2017-07-03 13:33:34Z amdmi3 $
+# $FreeBSD: head/devel/lua-lgi/Makefile 452125 2017-10-15 02:44:22Z vanilla $
 
 PORTNAME=	lgi
-PORTVERSION=	0.9.1
+PORTVERSION=	0.9.2
 CATEGORIES=	devel
 PKGNAMEPREFIX=	${LUA_PKGNAMEPREFIX}
 

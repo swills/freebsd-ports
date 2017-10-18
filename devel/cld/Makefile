@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/cld/Makefile 435349 2017-03-03 16:00:19Z mat $
+# $FreeBSD: head/devel/cld/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	cld
 PORTVERSION=	0.1
@@ -20,7 +20,7 @@ USES=		libtool pathfix
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 
-ONLY_FOR_ARCHS=	i386 amd64 armv6 powerpc
+ONLY_FOR_ARCHS=	i386 amd64 armv6 armv7 powerpc
 ONLY_FOR_ARCHS_REASON=	hardcoded set of supported archs
 
 .include <bsd.port.mk>

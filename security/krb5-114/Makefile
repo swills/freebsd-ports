@@ -1,9 +1,8 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/security/krb5-114/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/security/krb5-114/Makefile 451259 2017-10-05 01:55:26Z cy $
 
 PORTNAME=		krb5
-PORTVERSION=		1.14.5
-PORTREVISION=	5
+PORTVERSION=		1.14.6
 CATEGORIES=		security
 MASTER_SITES=		http://web.mit.edu/kerberos/dist/${PORTNAME}/${PORTVERSION:C/^[0-9]*\.[0-9]*/&X/:C/X\.[0-9]*$//:C/X//}/
 .if !defined(MASTERDIR)
@@ -18,7 +17,8 @@ COMMENT=		MIT implementation of RFC 4120 network authentication service
 
 LICENSE=		MIT
 
-CONFLICTS=		heimdal-[0-9]* srp-[0-9]* krb5-11[35]-[0-9]* krb5-1.[0-9]*
+CONFLICTS=		heimdal-[0-9]* srp-[0-9]* krb5-11[35]-[0-9]* \
+			krb5-1.[0-9]* krb5-devel-*
 
 KERBEROSV_URL=		http://web.mit.edu/kerberos/
 USE_PERL5=		build

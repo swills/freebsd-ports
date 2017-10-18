@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/elixir-uuid/Makefile 436138 2017-03-14 09:20:49Z olgeni $
+# $FreeBSD: head/misc/elixir-uuid/Makefile 451023 2017-10-01 07:20:33Z olgeni $
 
 PORTNAME=	elixir-uuid
-PORTVERSION=	1.1.7
+PORTVERSION=	1.1.8
 DISTVERSIONPREFIX=	v
 CATEGORIES=	misc
 

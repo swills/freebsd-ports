@@ -1,8 +1,8 @@
 # Created by: "Waitman Gobble" <uzimac@da3m0n8t3r.com>
-# $FreeBSD: head/devel/mongo-c-driver/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/devel/mongo-c-driver/Makefile 451611 2017-10-09 13:28:52Z swills $
 
 PORTNAME=	mongo-c-driver
-PORTVERSION=	1.3.5
+PORTVERSION=	1.8.0
 CATEGORIES=	devel
 
 MAINTAINER=	ports@bsdserwis.com
@@ -20,8 +20,5 @@ GH_ACCOUNT=	mongodb
 USES=		cmake:noninja pkgconfig
 USE_LDCONFIG=	yes
 LDFLAGS+=	-pthread
-
-post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libmongoc-1.0.so.${PORTVERSION}
 
 .include <bsd.port.mk>

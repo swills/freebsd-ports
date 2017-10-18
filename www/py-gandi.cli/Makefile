@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/www/py-gandi.cli/Makefile 449906 2017-09-15 15:19:28Z koobs $
+# $FreeBSD: head/www/py-gandi.cli/Makefile 451723 2017-10-11 00:13:31Z koobs $
 
 PORTNAME=	gandi.cli
-PORTVERSION=	0.22
+PORTVERSION=	1.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

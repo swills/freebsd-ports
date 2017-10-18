@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/influxdb/Makefile 449830 2017-09-14 11:17:52Z eugen $
+# $FreeBSD: head/databases/influxdb/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	influxdb
 PORTVERSION=	1.3.3
@@ -12,7 +12,7 @@ COMMENT=	Open-source distributed time series database
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-ONLY_FOR_ARCHS=	amd64 armv6 i386
+ONLY_FOR_ARCHS=	amd64 armv6 armv7 i386
 
 BUILD_DEPENDS=	go>=1.8.1:lang/go
 

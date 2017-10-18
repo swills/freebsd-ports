@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/openiked/Makefile 449313 2017-09-05 20:13:44Z marcel $
+# $FreeBSD: head/security/openiked/Makefile 450383 2017-09-22 15:22:56Z marcel $
 
 PORTNAME=	openiked
-PORTVERSION=	1.8
+PORTVERSION=	1.9
 CATEGORIES=	security net ipv6
 
 MAINTAINER=	marcel@FreeBSD.org

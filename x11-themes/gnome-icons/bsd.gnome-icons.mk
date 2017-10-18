@@ -1,5 +1,5 @@
 # Whom:					Tom McLaughlin <tmclaugh@sdf.lonestar.org>
-# $FreeBSD: head/x11-themes/gnome-icons/bsd.gnome-icons.mk 408200 2016-02-05 15:19:31Z amdmi3 $
+# $FreeBSD: head/x11-themes/gnome-icons/bsd.gnome-icons.mk 451901 2017-10-12 15:57:51Z mat $
 
 PKGNAMEPREFIX=	gnome-icons-
 
@@ -9,7 +9,6 @@ NO_ARCH=	yes
 REASON=		Themes may contain artwork not done by the author. \
 		Keep FreeBSD safe if theme author violated copyrights.
 
-WANT_GNOME=	yes
 INSTALLS_ICONS=	yes
 
 do-install: icon-do-install

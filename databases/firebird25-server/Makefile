@@ -1,9 +1,9 @@
 # Created by: Alonso Cárdenas Márquez <acm@FreeBSD.org>
-# $FreeBSD: head/databases/firebird25-server/Makefile 426816 2016-11-22 10:36:52Z linimon $
+# $FreeBSD: head/databases/firebird25-server/Makefile 450556 2017-09-25 00:02:36Z jbeich $
 
 PORTNAME=	firebird
 PORTVERSION=	2.5.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES?=	databases
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION:S/.0//}-Release/
 PKGNAMESUFFIX?=	${PORTVERSION:R:S/.//}-server

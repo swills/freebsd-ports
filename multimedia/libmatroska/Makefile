@@ -1,8 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/libmatroska/Makefile 439214 2017-04-23 10:22:34Z ehaupt $
+# $FreeBSD: head/multimedia/libmatroska/Makefile 451038 2017-10-01 09:47:45Z riggs $
 
 PORTNAME=	libmatroska
-PORTVERSION=	1.4.7
+PORTVERSION=	1.4.8
 CATEGORIES=	multimedia audio
 MASTER_SITES=	http://dl.matroska.org/downloads/libmatroska/ \
 		http://www.bunkus.org/videotools/mkvtoolnix/sources/
@@ -14,7 +14,7 @@ LICENSE=	LGPL21
 
 LIB_DEPENDS=	libebml.so:textproc/libebml
 
-USES=		libtool pathfix pkgconfig tar:bzip2
+USES=		libtool pathfix pkgconfig tar:xz
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 

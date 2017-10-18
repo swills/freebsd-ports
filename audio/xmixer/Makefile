@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/audio/xmixer/Makefile 363151 2014-07-28 13:41:49Z adamw $
+# $FreeBSD: head/audio/xmixer/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	xmixer
 PORTVERSION=	0.9.4
@@ -12,7 +12,6 @@ COMMENT=	Audio mixer (gtk and Xlib) for X11R6
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-WANT_GNOME=	yes
 GNU_CONFIGURE=	yes
 ALL_TARGET=	${PROGRAMS}
 

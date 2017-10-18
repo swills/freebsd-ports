@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/ro-hunspell/Makefile 392422 2015-07-18 15:01:38Z sunpoet $
+# $FreeBSD: head/textproc/ro-hunspell/Makefile 450526 2017-09-24 18:50:44Z sunpoet $
 
 PORTNAME=	hunspell
 PORTVERSION=	3.3.10
@@ -11,8 +11,11 @@ DIST_SUBDIR=	${PORTNAME}
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Romanian hunspell dictionaries
 
-LICENSE=	LGPL21 GPLv2 MPL
+LICENSE=	GPLv2 LGPL21 MPL11
 LICENSE_COMB=	dual
+LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING.GPL
+LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LGPL
+LICENSE_FILE_MPL11=	${WRKSRC}/COPYING.MPL
 
 USES=		zip
 NO_ARCH=	yes

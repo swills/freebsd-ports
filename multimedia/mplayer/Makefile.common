@@ -2,7 +2,7 @@
 # mplayer and mencoder....the variables that we need to set
 # before we include bsd.port.pre.mk
 #
-# $FreeBSD: head/multimedia/mplayer/Makefile.common 446391 2017-07-22 12:02:39Z riggs $
+# $FreeBSD: head/multimedia/mplayer/Makefile.common 451901 2017-10-12 15:57:51Z mat $
 
 MPLAYER_PORT_VERSION=	1.3.0
 MPLAYER_SNAPSHOT_DATE=	2017-07-22
@@ -49,8 +49,6 @@ CONFIGURE_ARGS=	--cc="${CC}" \
 		--disable-nemesi \
 		--disable-real \
 		--yasm=''
-
-WANT_GNOME=	yes
 
 common-post-patch:
 	@${REINPLACE_CMD} \

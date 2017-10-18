@@ -1,5 +1,5 @@
 # Created by: Andrey Kostenko <andrey@kostenko.name>
-# $FreeBSD: head/archivers/p5-Archive-Rar/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/archivers/p5-Archive-Rar/Makefile 451677 2017-10-10 11:19:51Z sunpoet $
 
 PORTNAME=	Archive-Rar
 PORTVERSION=	2.02
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Interface with the 'rar' command
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	rar:archivers/rar \
 		p5-IPC-Run>=0:devel/p5-IPC-Run

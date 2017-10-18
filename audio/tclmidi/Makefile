@@ -1,5 +1,5 @@
 # Created by: Andreas Kohout <shanee@augusta.de>
-# $FreeBSD: head/audio/tclmidi/Makefile 432852 2017-01-30 15:09:19Z amdmi3 $
+# $FreeBSD: head/audio/tclmidi/Makefile 451570 2017-10-08 19:36:26Z antoine $
 
 PORTNAME=	tclmidi
 PORTVERSION=	3.1
@@ -11,6 +11,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Language designed for creating and editing standard MIDI files
 
 BROKEN=		does not fetch, upstream gone
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-11-09
 
 USES+=		tcl uidfix
 MAKE_ENV=	TCL_INCLUDEDIR="${TCL_INCLUDEDIR}" TCL_LIBDIR="${TCL_LIBDIR}"

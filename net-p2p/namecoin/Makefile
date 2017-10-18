@@ -1,10 +1,10 @@
 # Created by: Chad J. Milios <milios@ccsys.com>
-# $FreeBSD: head/net-p2p/namecoin/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net-p2p/namecoin/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	namecoin
 PORTVERSION=	0.3.80
 DISTVERSIONPREFIX=	nc
-PORTREVISION=	11
+PORTREVISION=	13
 PORTEPOCH=	1
 CATEGORIES=	net-p2p dns
 

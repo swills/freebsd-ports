@@ -1,5 +1,5 @@
 #
-#	$FreeBSD: head/Mk/bsd.emacs.mk 449696 2017-09-12 15:34:32Z ashish $
+#	$FreeBSD: head/Mk/bsd.emacs.mk 451265 2017-10-05 02:00:34Z ashish $
 #
 #	bsd.emacs.mk - 19990829 Shigeyuki Fukushima.
 #
@@ -83,8 +83,8 @@ PLIST?=			${PKGDIR}/pkg-plist.${EMACS_PORT_NAME}
 # Emacs-26.x (development version)
 .elif (${EMACS_PORT_NAME} == "emacs-devel")
 EMACS_NAME=		emacs
-EMACS_VER=		26.0.50
-EMACS_MAJOR_VER=	26
+EMACS_VER=		27.0.50
+EMACS_MAJOR_VER=	27
 EMACS_LIBDIR?=		share/${EMACS_NAME}
 EMACS_LIBDIR_WITH_VER?=	share/${EMACS_NAME}/${EMACS_VER}
 EMACS_PORTDIR=		editors/emacs-devel

@@ -1,8 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/net/asio/Makefile 445351 2017-07-08 22:48:52Z antoine $
+# $FreeBSD: head/net/asio/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	asio
 PORTVERSION=	1.10.6
+PORTREVISION=	2
 CATEGORIES=	net devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION}%20(Stable)/
 

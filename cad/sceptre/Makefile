@@ -1,5 +1,5 @@
 # Created by: grog
-# $FreeBSD: head/cad/sceptre/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/cad/sceptre/Makefile 451979 2017-10-13 11:06:09Z bapt $
 
 PORTNAME=	sceptre
 PORTVERSION=	2012.061
@@ -12,6 +12,7 @@ COMMENT=	General-purpose circuit analysis program
 
 LICENSE=	GPLv2
 
+BROKEN=		No public distfiles
 USES=		fortran
 
 MAKE_JOBS_UNSAFE=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Pod-MinimumVersion/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Pod-MinimumVersion/Makefile 451488 2017-10-08 06:17:15Z sunpoet $
 
 PORTNAME=	Pod-MinimumVersion
 PORTVERSION=	50
@@ -11,10 +11,9 @@ COMMENT=	report minimum Perl version for given POD
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
-LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-IO-String>=1.02:devel/p5-IO-String
-RUN_DEPENDS=	p5-IO-String>=1.02:devel/p5-IO-String
+RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5

@@ -1,8 +1,8 @@
 # Created by: Miguel Mendez <flynn@energyhq.homeip.net>
-# $FreeBSD: head/emulators/hercules/Makefile 402823 2015-12-02 13:10:10Z ak $
+# $FreeBSD: head/emulators/hercules/Makefile 451738 2017-10-11 08:47:23Z vanilla $
 
 PORTNAME=	hercules
-PORTVERSION=	3.12
+PORTVERSION=	3.13
 CATEGORIES=	emulators
 MASTER_SITES=	http://downloads.hercules-390.eu/
 

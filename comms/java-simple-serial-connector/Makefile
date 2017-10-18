@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/java-simple-serial-connector/Makefile 445117 2017-07-06 01:39:08Z ultima $
+# $FreeBSD: head/comms/java-simple-serial-connector/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	java-simple-serial-connector
 PORTVERSION=	2.8.0
@@ -24,7 +24,7 @@ PLIST_FILES=	${JAVA_HOME}/jre/lib/ext/jssc-${PORTVERSION}.jar
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == "armv6" || ${ARCH} == "aarch64"
+.if ${ARCH} == aarch64 || ${ARCH} == armv6 || ${ARCH} == armv7
 JSSC_ARCH=		arm
 .else
 JSSC_ARCH=		${ARCH}

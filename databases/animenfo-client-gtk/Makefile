@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/animenfo-client-gtk/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/databases/animenfo-client-gtk/Makefile 452157 2017-10-15 17:51:02Z bapt $
 
 PORTNAME=	animenfo
 PORTVERSION=	20020819
@@ -10,6 +10,8 @@ DISTNAME=	${PORTNAME}-client-gui-gtk
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	AnimeNfo client with GTK support
+
+BROKEN=		No public distfiles
 
 LICENSE=	GPLv2
 

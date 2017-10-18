@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/graphics/cairo/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/cairo/Makefile 450506 2017-09-24 18:49:06Z sunpoet $
 
 PORTNAME=	cairo
 PORTVERSION=	1.14.8
@@ -11,8 +11,10 @@ MASTER_SITES=	http://cairographics.org/releases/
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Vector graphics library with cross-device output support
 
-LICENSE=	LGPL21 MPL
+LICENSE=	LGPL21 MPL11
 LICENSE_COMB=	dual
+LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING-LGPL-2.1
+LICENSE_FILE_MPL11=	${WRKSRC}/COPYING-MPL-1.1
 
 USES=		tar:xz
 

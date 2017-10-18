@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net-im/ring-gnome/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net-im/ring-gnome/Makefile 450419 2017-09-23 02:59:07Z vanilla $
 
 PORTNAME=	ring-gnome
 PORTVERSION=	0.160516
-PORTREVISION=	7
+PORTREVISION=	8
 #DISTVERSIONPREFIX=	v
 CATEGORIES=	net-im net-p2p
 

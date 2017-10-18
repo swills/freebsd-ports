@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/databases/qdbm-plus/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/qdbm-plus/Makefile 452147 2017-10-15 14:05:04Z madpilot $
 
 PORTNAME=	qdbm
 PORTVERSION=	1.8.78
@@ -27,7 +27,7 @@ CXXFLAGS+=	-fsigned-char -fPIC
 INSTALL_TARGET=	install-strip
 
 post-patch:
-.if defined(WITH_DEBUG) && !defined(WITHOUT_DEBUG)
+.if defined(WITH_DEBUG)
 	@${REINPLACE_CMD} 's/-DNDEBUG//' ${WRKSRC}/Makefile.in
 .endif
 

@@ -1,18 +1,18 @@
 # Created by: ijliao
-# $FreeBSD: head/audio/jmusic/Makefile 402903 2015-12-04 01:44:54Z amdmi3 $
+# $FreeBSD: head/audio/jmusic/Makefile 451943 2017-10-13 06:02:09Z vanilla $
 
 PORTNAME=	jmusic
-PORTVERSION=	1.6.4
+PORTVERSION=	1.6.5
 CATEGORIES=	audio java
 MASTER_SITES=	SF/${PORTNAME}/jMusic_Stable/${PORTVERSION} \
 		SF/${PORTNAME}/jMusic_Instruments/${PORTVERSION:S/.4//}/:instruments \
 		SF/${PORTNAME}/jMusic_Docs/${PORTVERSION}/:docs
 DISTFILES=	jMusic${PORTVERSION}.jar \
 		jMusic_1.6_inst.zip:instruments \
-		jMusic_doc_${PORTVERSION}.zip:docs
+		jMusic_doc_1.6.4.zip:docs
 DIST_SUBDIR=	${PORTNAME}
 EXTRACT_ONLY=	jMusic_1.6_inst.zip \
-		jMusic_doc_${PORTVERSION}.zip
+		jMusic_doc_1.6.4.zip
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Composition in Java

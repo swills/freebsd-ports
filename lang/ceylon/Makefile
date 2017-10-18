@@ -1,8 +1,8 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/lang/ceylon/Makefile 447012 2017-08-01 09:01:11Z amdmi3 $
+# $FreeBSD: head/lang/ceylon/Makefile 451898 2017-10-12 15:35:56Z vanilla $
 
 PORTNAME=	ceylon
-PORTVERSION=	1.3.2
+PORTVERSION=	1.3.3
 CATEGORIES=	lang java
 MASTER_SITES=	http://downloads.ceylon-lang.org/cli/
 

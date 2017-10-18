@@ -1,8 +1,8 @@
 # Created by: Nicola Vitale	<nivit@email.it>
-# $FreeBSD: head/math/geogebra/Makefile 444817 2017-07-01 11:47:13Z riggs $
+# $FreeBSD: head/math/geogebra/Makefile 450494 2017-09-24 15:59:26Z riggs $
 
 PORTNAME=	geogebra
-PORTVERSION=	5.0.367.0
+PORTVERSION=	5.0.387.0
 CATEGORIES=	math java
 MASTER_SITES=	http://download.geogebra.org/installers/5.0/ \
 		http://freebsd.uzsolt.hu/src/
@@ -18,7 +18,7 @@ LICENSE_NAME=	GeoGebra Non-Commercial License Agreement
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 LICENSE_PERMS=	dist-mirror no-dist-sell pkg-mirror no-pkg-sell auto-accept
 
-ONLY_FOR_ARCHS=	i386 amd64
+ONLY_FOR_ARCHS=	amd64 i386
 
 SUB_FILES=	geogebra.desktop
 CONFLICTS=	math/geogebra-i18n-[0-9]*

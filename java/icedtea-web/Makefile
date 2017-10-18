@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/icedtea-web/Makefile 445546 2017-07-11 19:44:09Z jkim $
+# $FreeBSD: head/java/icedtea-web/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	icedtea-web
 PORTVERSION=	1.6.2
@@ -27,8 +27,6 @@ USE_PERL5=	build
 USE_XORG=	x11
 USES=		desktop-file-utils gmake perl5 pkgconfig shebangfix
 SHEBANG_FILES=	jrunscript.in launcher/launchers.in
-
-WANT_GNOME=	yes
 
 CONFIGURE_ARGS=		--with-hamcrest="${HAMCREST_JAR}"
 CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}"

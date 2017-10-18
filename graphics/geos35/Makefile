@@ -1,5 +1,5 @@
 # Created by: Leonardo Martins <lmartins@nepe.eee.ufg.br>
-# $FreeBSD: head/graphics/geos35/Makefile 433764 2017-02-09 18:20:04Z amdmi3 $
+# $FreeBSD: head/graphics/geos35/Makefile 451616 2017-10-09 14:03:27Z amdmi3 $
 
 PORTNAME=	geos
 PORTVERSION=	3.5.0
@@ -14,6 +14,9 @@ COMMENT=	GEOS implements all the OpenGIS "Simple Features for SQL" (legacy)
 
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	legacy version, no longer needed
+EXPIRATION_DATE=2017-11-09
 
 CONFIGURE_ARGS=	--program-suffix=35
 GNU_CONFIGURE=	yes

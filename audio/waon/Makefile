@@ -1,9 +1,9 @@
 # Created by: Kengo Ichiki <kichiki@users.sourceforge.net>
-# $FreeBSD: head/audio/waon/Makefile 426383 2016-11-19 16:04:55Z marino $
+# $FreeBSD: head/audio/waon/Makefile 451241 2017-10-04 18:24:03Z martymac $
 
 PORTNAME=	waon
 PORTVERSION=	0.10
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	SF
 
@@ -16,6 +16,8 @@ LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 		libao.so:audio/libao \
 		libsndfile.so:audio/libsndfile \
 		libsamplerate.so:audio/libsamplerate
+
+CONFLICTS=	pv-[0-9]*
 
 USES=		ncurses pkgconfig
 USE_GNOME=	gtk20

@@ -1,5 +1,5 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/ftp/cftp/Makefile 407987 2016-02-03 21:38:11Z marino $
+# $FreeBSD: head/ftp/cftp/Makefile 450575 2017-09-25 09:01:58Z amdmi3 $
 
 PORTNAME=	cftp
 PORTVERSION=	0.12
@@ -10,6 +10,9 @@ MASTER_SITES=	ftp://ftp.giga.or.at/pub/nih/cftp/ \
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Comfortable FTP, a full screen ftp client
+
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		ncurses
 GNU_CONFIGURE=	yes

@@ -1,9 +1,8 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/ftp/p5-File-Fetch/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/ftp/p5-File-Fetch/Makefile 450604 2017-09-25 15:12:12Z sunpoet $
 
 PORTNAME=	File-Fetch
-PORTVERSION=	0.52
-PORTREVISION=	1
+PORTVERSION=	0.54
 CATEGORIES=	ftp www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

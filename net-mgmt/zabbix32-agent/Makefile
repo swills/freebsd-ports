@@ -1,14 +1,9 @@
 # Created by: Pakhom Golynga <pg@pakhom.spb.ru>
-# $FreeBSD: head/net-mgmt/zabbix32-agent/Makefile 422754 2016-09-25 17:13:42Z danilo $
+# $FreeBSD: head/net-mgmt/zabbix32-agent/Makefile 451868 2017-10-12 12:19:52Z dbaio $
 
 PORTNAME=	zabbix32
 CATEGORIES=	net-mgmt
 PKGNAMESUFFIX=	-agent
-
-MAINTAINER=	pakhom@pakhom.spb.ru
-COMMENT=	Enterprise-class open source distributed monitoring (${PKGNAMESUFFIX:S/^-//})
-
-LICENSE=	GPLv2
 
 MASTERDIR=	${.CURDIR}/../zabbix32-server
 PLIST=		${PKGDIR}/pkg-plist.agent

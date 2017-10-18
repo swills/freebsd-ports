@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/kig/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/kig/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	kig
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	6
+PORTREVISION=	8
 CATEGORIES=	math kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/sysutils/hachoir-metadata/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/hachoir-metadata/Makefile 451426 2017-10-07 06:11:17Z antoine $
 
 PORTNAME=	hachoir-metadata
 PORTVERSION=	1.3.3
@@ -13,7 +13,7 @@ COMMENT=	Extract metadata from files
 BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/hachoir_parser/__init__.py:devel/hachoir-parser
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/hachoir_parser/__init__.py:devel/hachoir-parser
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 .include <bsd.port.pre.mk>

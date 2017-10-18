@@ -1,8 +1,9 @@
 # Created by: Dmitry Sivachenko <dima@Chg.RU>
-# $FreeBSD: head/databases/rrdtool/Makefile 450262 2017-09-21 15:04:49Z zeising $
+# $FreeBSD: head/databases/rrdtool/Makefile 450381 2017-09-22 15:11:15Z zeising $
 
 PORTNAME=	rrdtool
 PORTVERSION=	1.7.0
+PORTREVISION=	1
 CATEGORIES=	databases graphics
 MASTER_SITES=	http://oss.oetiker.ch/rrdtool/pub/
 

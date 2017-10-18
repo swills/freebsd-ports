@@ -1,5 +1,5 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/audio/kaudiocreator/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/audio/kaudiocreator/Makefile 451964 2017-10-13 08:57:45Z bapt $
 
 PORTNAME=	kaudiocreator
 PORTVERSION=	1.3
@@ -12,6 +12,8 @@ MAINTAINER=	dbn@FreeBSD.org
 COMMENT=	Audio-cd ripper and encoder for KDE4
 
 LICENSE=	GPLv2
+
+BROKEN=		No public distfiles
 
 LIB_DEPENDS=	libdiscid.so:audio/libdiscid \
 		libtag.so:audio/taglib

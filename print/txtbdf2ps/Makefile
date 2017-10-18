@@ -1,11 +1,11 @@
 # Created by: ijliao
-# $FreeBSD: head/print/txtbdf2ps/Makefile 400848 2015-11-05 12:36:25Z mat $
+# $FreeBSD: head/print/txtbdf2ps/Makefile 451301 2017-10-05 10:38:13Z ak $
 
 PORTNAME=	txtbdf2ps
 PORTVERSION=	0.7.1
 PORTREVISION=	1
 CATEGORIES=	print
-MASTER_SITES=	https://googledrive.com/host/0BwCT-sp3iBCaeDRPYm1jTjl1Qmc/ \
+MASTER_SITES=	https://aklv.github.io/distfiles/ \
 		http://oldrus-ispell.sourceforge.net/
 EXTRACT_SUFX=	.txt
 

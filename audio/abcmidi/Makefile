@@ -1,5 +1,5 @@
 # Created by: Sue Blake <sue@FreeBSD.org>
-# $FreeBSD: head/audio/abcmidi/Makefile 403699 2015-12-14 01:09:57Z amdmi3 $
+# $FreeBSD: head/audio/abcmidi/Makefile 451964 2017-10-13 08:57:45Z bapt $
 
 PORTNAME=	abcmidi
 DISTVERSION=	2015-09-28
@@ -9,6 +9,8 @@ DISTNAME=	abcMIDI-${DISTVERSION:S/-/./g}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Convert abc music files to MIDI and PostScript
+
+BROKEN=		No public distfiles
 
 LICENSE=	GPLv2
 

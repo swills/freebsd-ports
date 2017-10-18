@@ -1,9 +1,9 @@
 # Created by: marius nuennerich
-# $FreeBSD: head/audio/mumble/Makefile 448041 2017-08-16 15:44:48Z sunpoet $
+# $FreeBSD: head/audio/mumble/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	mumble
 PORTVERSION=	1.2.19
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	audio
 
 MAINTAINER=	feld@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/textproc/rubygem-version_sorter/Makefile 444147 2017-06-22 23:41:31Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-version_sorter/Makefile 452110 2017-10-15 00:37:43Z sunpoet $
 
 PORTNAME=	version_sorter
-PORTVERSION=	2.2.0
+PORTVERSION=	2.2.1
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

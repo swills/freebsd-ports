@@ -1,8 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-scss_lint/Makefile 447283 2017-08-03 21:11:59Z jrm $
+# $FreeBSD: head/textproc/rubygem-scss_lint/Makefile 451673 2017-10-10 11:17:13Z sunpoet $
 
 PORTNAME=	scss_lint
-PORTVERSION=	0.54.0
-PORTREVISION=	1
+PORTVERSION=	0.55.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

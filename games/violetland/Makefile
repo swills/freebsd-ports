@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/violetland/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/violetland/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	violetland
 PORTVERSION=	0.5
-PORTREVISION=	4
+PORTREVISION=	6
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/devel/py-backports.weakref/Makefile 445590 2017-07-12 15:55:52Z lwhsu $
+# $FreeBSD: head/devel/py-backports.weakref/Makefile 450542 2017-09-24 19:08:35Z sunpoet $
 
 PORTNAME=	backports.weakref
 DISTVERSION=	1.0rc1
@@ -14,7 +14,8 @@ LICENSE=	PSFL
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm
 
-USES=		python
+NO_ARCH=	yes
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

@@ -1,11 +1,10 @@
 # Created by: Vsevolod Stakhov <vsevolod@FreeBSD.org>
-# $FreeBSD: head/benchmarks/libmicro/Makefile 440746 2017-05-13 03:35:51Z linimon $
+# $FreeBSD: head/benchmarks/libmicro/Makefile 451957 2017-10-13 08:21:36Z bapt $
 
 PORTNAME=	libmicro
 PORTVERSION=	0.4.1
 CATEGORIES=	benchmarks
-MASTER_SITES=	http://hub.opensolaris.org/bin/download/Project+libmicro/Source+Archives/ \
-		LOCAL/bdrewery/${PORTNAME}/
+MASTER_SITES=	LOCAL/bdrewery/${PORTNAME}/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Set of utilities to benchmark productivity of system calls

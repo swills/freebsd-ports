@@ -1,11 +1,10 @@
-# $FreeBSD: head/comms/linrad/Makefile 441429 2017-05-21 21:55:08Z linimon $
+# $FreeBSD: head/comms/linrad/Makefile 452001 2017-10-13 14:19:26Z bapt $
 
 PORTNAME=	linrad
 PORTVERSION=	4.02
 PORTREVISION=	3
 CATEGORIES=	comms hamradio
 MASTER_SITES=	http://www.nitehawk.com/sm5bsz/linuxdsp/archive/\
-		http://g7rau.demon.co.uk/sm5bsz/linuxdsp/archive/\
 		http://www.sm5bsz.com/linuxdsp/archive/
 DISTNAME=	lir04-02
 EXTRACT_SUFX=	.tbz

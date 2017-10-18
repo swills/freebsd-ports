@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-user_agent/Makefile 434744 2017-02-24 20:11:11Z rm $
+# $FreeBSD: head/www/py-user_agent/Makefile 450413 2017-09-22 20:55:34Z rm $
 
 PORTNAME=	user_agent
-PORTVERSION=	0.1.8
+PORTVERSION=	0.1.9
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

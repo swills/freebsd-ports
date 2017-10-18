@@ -1,13 +1,18 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/textproc/rtf2html/Makefile 376409 2015-01-06 09:40:30Z ehaupt $
+# $FreeBSD: head/textproc/rtf2html/Makefile 451248 2017-10-04 20:40:22Z ehaupt $
 
 PORTNAME=	rtf2html
 DISTVERSION=	1.1b
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	LOCAL/ehaupt
 
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Simple rtf2html converter
+
+LICENSE=	BSD2CLAUSE
+
+CONFLICTS_INSTALL=	p5-RTF-Parser-[0-9]*
 
 PLIST_FILES=	bin/rtf2html
 

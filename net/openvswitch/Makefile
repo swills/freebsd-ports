@@ -1,12 +1,12 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/net/openvswitch/Makefile 440859 2017-05-13 23:36:16Z linimon $
+# $FreeBSD: head/net/openvswitch/Makefile 450564 2017-09-25 01:14:41Z kevlo $
 
 PORTNAME=	openvswitch
 PORTVERSION=	2.3.3
 CATEGORIES=	net
 MASTER_SITES=	http://openvswitch.org/releases/
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Production quality, multilayer virtual switch
 
 LICENSE=	APACHE20

@@ -1,5 +1,5 @@
 # Created by: Oliver Lehmann <Kai_Allard_Liao@gmx.de>
-# $FreeBSD: head/sysutils/xcdroast/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/sysutils/xcdroast/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	xcdroast
 PORTVERSION=	0.98.a.16
@@ -22,7 +22,6 @@ BUILD_DEPENDS=	cdrecord:sysutils/cdrtools
 
 USES=		gettext gmake iconv pkgconfig
 GNU_CONFIGURE=	yes
-WANT_GNOME=	yes
 
 CONFIGURE_ENV+=	GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}"

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/mono-addins/Makefile 419882 2016-08-08 18:03:55Z romain $
+# $FreeBSD: head/devel/mono-addins/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	mono-addins
 PORTVERSION=	1.3
@@ -16,7 +16,6 @@ GH_ACCOUNT=	mono
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	ac_cv_path_MCS=${LOCALBASE}/bin/mcs
 USES=		autoreconf gmake mono pkgconfig
-WANT_GNOME=	yes
 
 OPTIONS_DEFINE=	GTK2 GTK3
 OPTIONS_DEFAULT=GTK2

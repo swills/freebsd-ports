@@ -1,9 +1,9 @@
 # Created by: Anders Nordby <anders@FreeBSD.org>
-# $FreeBSD: head/multimedia/libkate/Makefile 443053 2017-06-10 01:51:02Z sunpoet $
+# $FreeBSD: head/multimedia/libkate/Makefile 451307 2017-10-05 12:38:40Z bapt $
 
 PORTNAME=	libkate
 PORTVERSION=	0.4.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	multimedia
 MASTER_SITES=	http://downloads.xiph.org/releases/kate/
 
@@ -40,9 +40,10 @@ CONFIGURE_ARGS+=	--disable-doc
 
 .if ${PORT_OPTIONS:MKATEDJ}
 RUN_DEPENDS=	${LOCALBASE}/bin/oggz:audio/liboggz
-USES+=		python
-USE_WX=		2.8
-WX_COMPS=	wx contrib python:lib
+USES+=		python shebangfix
+SHEBANG_FILES=	tools/KateDJ/KateDJ
+USE_WX=		3.0+
+WX_COMPS=	wx python:lib
 MANPAGE+=	KateDJ.1
 PLIST_SUB+=	KATEDJ=""
 .else

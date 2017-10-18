@@ -1,9 +1,9 @@
 # Created by: KANOU Hiroki <kanou@mil.allnet.ne.jp>
-# $FreeBSD: head/graphics/autotrace/Makefile 441761 2017-05-26 08:20:18Z kwm $
+# $FreeBSD: head/graphics/autotrace/Makefile 450852 2017-09-28 15:36:31Z kwm $
 
 PORTNAME=	autotrace
 PORTVERSION=	0.31.1
-PORTREVISION=	30
+PORTREVISION=	31
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/AutoTrace/${PORTVERSION}
 

@@ -1,5 +1,5 @@
 # Created by: itojun@itojun.org
-# $FreeBSD: head/misc/magicpoint/Makefile 434338 2017-02-18 09:59:30Z dinoex $
+# $FreeBSD: head/misc/magicpoint/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	magicpoint
 PORTVERSION=	1.13a
@@ -21,7 +21,6 @@ MAKE_JOBS_UNSAFE=	yes
 USES=		imake:env perl5 pkgconfig
 USE_PERL5=	run
 USE_XORG=	x11 xext xmu xt sm ice xi xtst
-WANT_GNOME=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-vflib --enable-locale
 CONFIGURE_ENV=	mgp_cv_path_perl=${PERL}

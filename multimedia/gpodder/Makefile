@@ -1,5 +1,5 @@
 # Created by: Chess Griffin <chess@chessgriffin.com>
-# $FreeBSD: head/multimedia/gpodder/Makefile 429934 2016-12-29 17:54:35Z rm $
+# $FreeBSD: head/multimedia/gpodder/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	gpodder
 PORTVERSION=	3.9.3
@@ -38,7 +38,6 @@ MAKEFILE=	makefile
 NO_ARCH=	yes
 USES=		gettext gmake python:-2.7 shebangfix
 SHEBANG_FILES=	src/gpodder/*.py share/gpodder/examples/*.py share/gpodder/extensions/*.py
-WANT_GNOME=	yes
 INSTALLS_ICONS=	yes
 PLIST_SUB+=	PORTVERSION=${PORTVERSION}
 PORTDOCS=	PKG-INFO README

@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/graphics/pstoedit/Makefile 447573 2017-08-08 20:57:54Z mi $
+# $FreeBSD: head/graphics/pstoedit/Makefile 450852 2017-09-28 15:36:31Z kwm $
 
 PORTNAME=	pstoedit
 PORTVERSION=	3.70
-PORTREVISION=	6
+PORTREVISION=	8
 CATEGORIES=	graphics print
 MASTER_SITES=	SF
 

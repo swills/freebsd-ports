@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/games/p5-Games-Bingo-Bot/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/games/p5-Games-Bingo-Bot/Makefile 451823 2017-10-12 08:10:43Z sunpoet $
 
 PORTNAME=	Games-Bingo-Bot
 PORTVERSION=	0.01
@@ -23,11 +23,8 @@ PORTEXAMPLES=	bingobot.pl
 
 OPTIONS_DEFINE=	EXAMPLES
 
-post-install:
+post-install-EXAMPLES-on:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_SCRIPT} ${WRKSRC}/bin/bingobot.pl ${STAGEDIR}${EXAMPLESDIR}
-
-regression-test: build
-	@cd ${WRKSRC} && ${MAKE} -s test
 
 .include <bsd.port.mk>

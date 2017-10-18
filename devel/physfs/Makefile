@@ -1,8 +1,9 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/devel/physfs/Makefile 405698 2016-01-10 14:59:05Z amdmi3 $
+# $FreeBSD: head/devel/physfs/Makefile 450398 2017-09-22 19:00:41Z oliver $
 
 PORTNAME=	physfs
 PORTVERSION=	2.0.3
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://icculus.org/${PORTNAME}/downloads/
 

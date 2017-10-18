@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net-im/qTox/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net-im/qTox/Makefile 450419 2017-09-23 02:59:07Z vanilla $
 
 PORTNAME=	qTox
 PORTVERSION=	1.11.0
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-im net-p2p
 

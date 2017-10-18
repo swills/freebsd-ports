@@ -1,9 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/subtitleripper/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/subtitleripper/Makefile 451378 2017-10-06 11:18:35Z tobik $
 
 PORTNAME=	subtitleripper
 DISTVERSION=	0.3-4
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-0.3-4
 
@@ -17,7 +17,8 @@ RUN_DEPENDS=	gocr:graphics/gocr \
 		transcode:multimedia/transcode
 
 USES=		gmake tar:tgz
-CFLAGS+=	-D_WITH_GETLINE=1 -DHAVE_GETLINE=1
+CFLAGS+=	-D_WITH_GETLINE=1 -DHAVE_GETLINE=1 \
+		-I${LOCALBASE}/include/netpbm
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/ports-mgmt/pkg/Makefile 437007 2017-03-26 21:25:47Z bapt $
+# $FreeBSD: head/ports-mgmt/pkg/Makefile 452147 2017-10-15 14:05:04Z madpilot $
 
 PORTNAME=	pkg
 DISTVERSION=	1.10.1
@@ -33,7 +33,7 @@ EXTRA_PATCHES=	${FILESDIR}/extra-patch-docs_pkg.8
 
 .include <bsd.port.pre.mk>
 
-.if defined(WITH_DEBUG) && !defined(WITHOUT_DEBUG)
+.if defined(WITH_DEBUG)
 MAKE_ARGS+=	DEBUG_FLAGS="${DEBUG_FLAGS}"
 .endif
 

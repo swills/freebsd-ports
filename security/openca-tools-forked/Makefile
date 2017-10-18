@@ -1,5 +1,5 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/security/openca-tools-forked/Makefile 427552 2016-12-02 11:58:21Z mat $
+# $FreeBSD: head/security/openca-tools-forked/Makefile 450546 2017-09-24 19:08:55Z sunpoet $
 
 PORTNAME=	openca-tools-forked
 PORTVERSION=	1.4.0
@@ -11,6 +11,8 @@ MAINTAINER=	svysh.fbsd@gmail.com
 COMMENT=	Tools to deal with SCEP and PKCS7 messages
 
 LICENSE=	APACHE20
+
+BROKEN_SSL=	openssl-devel
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	openxpki
@@ -26,10 +28,4 @@ post-install:
 	@${MV} ${STAGEDIR}${PREFIX}/man/man1/${f} ${STAGEDIR}${PREFIX}/man/man1/openca-${f}
 .endfor
 
-.include <bsd.port.pre.mk>
-
-.if ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

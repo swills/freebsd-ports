@@ -1,5 +1,5 @@
 # Created by: jrhett@netconsonance.com
-# $FreeBSD: head/sysutils/cfengine33/Makefile 439204 2017-04-23 08:11:18Z miwi $
+# $FreeBSD: head/sysutils/cfengine33/Makefile 451263 2017-10-05 01:56:32Z cy $
 
 PORTNAME=	cfengine
 PORTVERSION=	3.3.8
@@ -16,7 +16,8 @@ CPE_VENDOR=	gnu
 
 FETCH_BEFORE_ARGS=	-o ${DISTDIR}/${DISTFILES}
 
-CONFLICTS=	cfengine-2* cfengine-3.[124-9]* cfengine-devel-*
+CONFLICTS=	cfengine-2* cfengine-3.[124-9]* cfengine-devel-* \
+		cfengine3[0124-9]-* cfengine31[0-9]-*
 
 USE_RC_SUBR=	cf-execd cf-serverd
 

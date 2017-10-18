@@ -1,5 +1,5 @@
 # Created by: Otacilio de Araujo Ramos Neto <otacilio.neto@bsd.com.br>
-# $FreeBSD: head/cad/p5-Verilog-Perl/Makefile 419189 2016-07-27 17:04:44Z pawel $
+# $FreeBSD: head/cad/p5-Verilog-Perl/Makefile 451814 2017-10-12 08:09:44Z sunpoet $
 
 PORTNAME=	Verilog-Perl
 PORTVERSION=	3.418
@@ -23,8 +23,5 @@ CONFIGURE_ENV=	CXX=${CXX}\
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Verilog/Parser/*.so
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Verilog/Preproc/*.so
-
-regression-test: build
-	make test -C ${WRKSRC}
 
 .include <bsd.port.mk>

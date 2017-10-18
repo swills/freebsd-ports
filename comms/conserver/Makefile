@@ -1,12 +1,11 @@
 # Created by: Peter Wemm <peter@netplex.com.au>
-# $FreeBSD: head/comms/conserver/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/conserver/Makefile 452001 2017-10-13 14:19:26Z bapt $
 
 PORTNAME=	conserver
 PORTVERSION=	8.5
 PORTREVISION=	4
 CATEGORIES=	comms
-MASTER_SITES=	ftp://ftp.physics.purdue.edu/pub/pundits/ \
-		http://www.komquats.com/distfiles/ \
+MASTER_SITES=	http://www.komquats.com/distfiles/ \
 		http://people.freebsd.org/~cy/distfiles/
 EXTRACT_SUFX=	.tgz
 

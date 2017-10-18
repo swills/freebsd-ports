@@ -1,5 +1,5 @@
 # Created by: Mark Reidel <ports@mark.reidel.info>
-# $FreeBSD: head/audio/glurp/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/audio/glurp/Makefile 451739 2017-10-11 09:04:01Z amdmi3 $
 
 PORTNAME=	glurp
 PORTVERSION=	0.12.3
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@mark.reidel.info
 COMMENT=	Nice and clean GTK+-2.x based graphical client for musicpd
+
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libmpd.so:audio/libmpd
 

@@ -1,12 +1,11 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/audio/herrie/Makefile 420727 2016-08-23 18:09:22Z marino $
+# $FreeBSD: head/audio/herrie/Makefile 451965 2017-10-13 08:58:28Z bapt $
 
 PORTNAME=	herrie
 PORTVERSION=	2.2
 PORTREVISION=	12
 CATEGORIES=	audio
-MASTER_SITES=	http://herrie.info/distfiles/ \
-		http://www.stack.nl/~ed/projects/herrie/distfiles/
+MASTER_SITES=	http://herrie.info/distfiles/
 
 MAINTAINER=	ed@FreeBSD.org
 COMMENT=	Small command line interface music player

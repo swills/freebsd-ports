@@ -1,9 +1,8 @@
 # Created by: stas
-# $FreeBSD: head/lang/rubinius/Makefile 450353 2017-09-22 10:48:57Z mat $
+# $FreeBSD: head/lang/rubinius/Makefile 451108 2017-10-03 02:33:08Z ashish $
 
 PORTNAME=	rubinius
-PORTVERSION=	3.70
-PORTREVISION=	1
+PORTVERSION=	3.86
 CATEGORIES=	lang
 MASTER_SITES=	http://releases.rubini.us/:source
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}:source

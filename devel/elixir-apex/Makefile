@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-apex/Makefile 432616 2017-01-28 10:05:40Z olgeni $
+# $FreeBSD: head/devel/elixir-apex/Makefile 451379 2017-10-06 12:23:24Z olgeni $
 
 PORTNAME=	apex
-PORTVERSION=	1.0.0
+PORTVERSION=	1.1.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

@@ -1,5 +1,5 @@
 # Created by: jkoshy
-# $FreeBSD: head/benchmarks/netpipe/Makefile 391164 2015-07-02 15:32:16Z skreuzer $
+# $FreeBSD: head/benchmarks/netpipe/Makefile 451956 2017-10-13 08:20:19Z bapt $
 
 PORTNAME=	NetPIPE
 PORTVERSION=	3.7.2
@@ -8,6 +8,8 @@ MASTER_SITES=	http://bitspjoule.org/netpipe/code/
 
 MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	Self-scaling network benchmark
+
+BROKEN=		No public distfiles
 
 # The default port builds and installs only the TCP version of
 # netpipe(1).  The sources support many other variants.

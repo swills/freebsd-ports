@@ -1,7 +1,7 @@
-# $FreeBSD: head/german/mythes/Makefile 450064 2017-09-18 17:49:03Z sunpoet $
+# $FreeBSD: head/german/mythes/Makefile 452223 2017-10-16 17:46:39Z sunpoet $
 
 PORTNAME=	mythes
-PORTVERSION=	2017.09.17
+PORTVERSION=	2017.10.15
 CATEGORIES=	german textproc
 MASTER_SITES=	LOCAL/sunpoet/${PORTNAME}/
 DISTNAME=	Deutscher-Thesaurus-${PORTVERSION:C/\.//g}

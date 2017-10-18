@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-redis-activesupport/Makefile 445526 2017-07-11 17:02:58Z sunpoet $
+# $FreeBSD: head/devel/rubygem-redis-activesupport/Makefile 452303 2017-10-17 20:07:54Z sunpoet $
 
 PORTNAME=	redis-activesupport
-PORTVERSION=	5.0.3
+PORTVERSION=	5.0.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

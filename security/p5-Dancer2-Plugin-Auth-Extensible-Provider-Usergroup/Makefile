@@ -1,5 +1,5 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/security/p5-Dancer2-Plugin-Auth-Extensible-Provider-Usergroup/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-Dancer2-Plugin-Auth-Extensible-Provider-Usergroup/Makefile 452126 2017-10-15 02:47:49Z pi $
 
 PORTNAME=	Dancer2-Plugin-Auth-Extensible-Provider-Usergroup
 PORTVERSION=	0.620
@@ -7,7 +7,7 @@ CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	hvo.pm@xs4all.nl
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Extensible authentication framework for Dancer2 apps
 
 LICENSE=	ART10 GPLv1+

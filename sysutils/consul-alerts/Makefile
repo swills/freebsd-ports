@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/consul-alerts/Makefile 442615 2017-06-05 12:59:09Z amdmi3 $
+# $FreeBSD: head/sysutils/consul-alerts/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	consul-alerts
 PORTVERSION=	0.5.0
@@ -24,8 +24,6 @@ GH_TUPLE=	aws:aws-sdk-go:v1.8.30:aws_sdk_go/src/github.com/aws/aws-sdk-go \
 PLIST_FILES=	${PREFIX}/bin/${PORTNAME}
 
 USE_RC_SUBR=	${PORTNAME}
-
-STRIP=		#none
 
 do-build:
 	cd ${GO_WRKSRC} && \

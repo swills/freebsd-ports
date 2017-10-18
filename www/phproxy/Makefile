@@ -1,5 +1,5 @@
 # Created by: Babak Farrokhi <babak@farrokhi.net>
-# $FreeBSD: head/www/phproxy/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/www/phproxy/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	phproxy
 PORTVERSION=	0.5b2
@@ -12,8 +12,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PHP based web proxy
 
 NO_BUILD=	YES
-WANT_PHP_WEB=	YES
-USES=		zip:infozip
+USES=		php:web zip:infozip
 USE_PHP=	ctype pcre
 EXTRACT_AFTER_ARGS+=	-d ${WRKSRC}
 PLIST_SUB=	WWWOWN="${WWWOWN}" WWWGRP="${WWWGRP}"
@@ -27,7 +26,6 @@ do-install:
 .for i in ${DOCFILES}
 	@${INSTALL_DATA} ${WRKSRC}/${i} ${STAGEDIR}${DOCSDIR}/${i}
 .endfor
-
 	@${RM} ${WRKSRC}/*.txt
 	${MKDIR} ${STAGEDIR}${WWWDIR}
 	@(cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${WWWDIR}/)

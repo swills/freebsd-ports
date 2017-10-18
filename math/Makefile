@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 449635 2017-09-11 13:10:24Z mat $
+# $FreeBSD: head/math/Makefile 451988 2017-10-13 12:58:21Z ler $
 #
 
     COMMENT = Mathematics
@@ -678,6 +678,7 @@
     SUBDIR += rapid
     SUBDIR += reduce
     SUBDIR += reed-solomon
+    SUBDIR += rexx-regmath
     SUBDIR += rkward-kde4
     SUBDIR += rngstreams
     SUBDIR += rocs

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/u-boot-master/Makefile 447312 2017-08-04 01:00:00Z imp $
+# $FreeBSD: head/sysutils/u-boot-master/Makefile 452290 2017-10-17 19:49:10Z manu $
 #
 # Common infrastructure for u-boot ports
 #
@@ -15,11 +15,12 @@ COMMENT=	Cross-build das u-boot for ${MODEL}
 LICENSE=	GPLv2
 
 BUILD_DEPENDS+=	gsed:textproc/gsed \
-		swig:devel/swig13 \
+		swig3.0:devel/swig30 \
 		dtc>=1.4.1:sysutils/dtc
 BUILD_DEPENDS+=	${COMPILER}:devel/${COMPILER}
 
 USES=		gmake python:build shebangfix
+BINARY_ALIAS=	swig=swig3.0 sed=gsed
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	freebsd
@@ -31,7 +32,7 @@ UBOOT_DIR=	share/u-boot/${PORTNAME}${PKGNAMESUFFIX}
 INST=		${PREFIX}/${UBOOT_DIR}
 DESCR?=		${.CURDIR}/pkg-descr
 
-MAKE_ARGS+=	V=1 CROSS_COMPILE=${CROSS_COMPILE} DTC=${LOCALBASE}/bin/dtc ${ARCHFLAGS}
+MAKE_ARGS+=	V=1 CROSS_COMPILE=${CROSS_COMPILE} DTC=${LOCALBASE}/bin/dtc PYTHON=${PYTHON_CMD} ${ARCHFLAGS}
 
 NO_ARCH=	yes
 
@@ -64,7 +65,7 @@ UBOOT_MOVE_ZYNQ_7000=${WRKSRC}/spl/boot.bin ${.CURDIR}/files/uEnv.txt
 .if !defined(UBOOT_VERSION) && defined(UBOOT_VERSION_${FAMILY:tu})
 UBOOT_VERSION=${UBOOT_VERSION_${FAMILY:tu}}
 .endif
-UBOOT_VERSION?=	2017.07.00.1
+UBOOT_VERSION?=	2017.09.00
 
 .if !defined(UBOOT_PLIST) && defined(UBOOT_PLIST_${FAMILY:tu})
 UBOOT_PLIST=${UBOOT_PLIST_${FAMILY:tu}}

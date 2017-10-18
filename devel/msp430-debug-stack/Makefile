@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/msp430-debug-stack/Makefile 450144 2017-09-19 15:51:56Z lev $
+# $FreeBSD: head/devel/msp430-debug-stack/Makefile 451490 2017-10-08 06:19:59Z antoine $
 
 PORTNAME=	msp430-debug-stack
 PORTVERSION=	3.10.001.000
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.ti.com/lit/sw/slac460v/ \
 		http://www.ti.com/lit/ug/slau320z/:doc1 \
@@ -17,6 +17,8 @@ MAINTAINER=	lev@FreeBSD.org
 COMMENT=	TI MSP430 debugging interface library
 
 LICENSE=	BSD3CLAUSE
+
+BROKEN=		fails to package
 
 LIB_DEPENDS=	libboost_filesystem.so:devel/boost-libs \
 		libhidapi.so:comms/hidapi

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/science/grib_api/Makefile 448789 2017-08-27 00:36:18Z sunpoet $
+# $FreeBSD: head/science/grib_api/Makefile 451543 2017-10-08 13:49:38Z sunpoet $
 
 PORTNAME=	grib_api
 PORTVERSION=	1.23.1
@@ -28,8 +28,6 @@ GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
 USES=		libtool pathfix
-
-PORTDATA=	*
 
 JASPER_CONFIGURE_ON=	--with-jasper=${LOCALBASE}
 JASPER_LIB_DEPENDS=	libjasper.so:graphics/jasper

@@ -1,12 +1,15 @@
 # Created by: Ivan Lago <ivan.lago@ifom-ieo-campus.it>
-# $FreeBSD: head/sysutils/syslog-ng310/Makefile 444977 2017-07-03 18:33:48Z cy $
+# $FreeBSD: head/sysutils/syslog-ng310/Makefile 451271 2017-10-05 06:22:34Z cy $
 
 PORTNAME=	syslog-ng
 DISTVERSION=	3.10.1
 CATEGORIES=	sysutils
 DISTFILES=	syslog-ng-${DISTVERSION}.tar.gz
 MASTER_SITES=	https://github.com/balabit/syslog-ng/releases/download/syslog-ng-${DISTVERSION}/
+
+.if !defined(MASTERDIR)
 PKGNAMESUFFIX=	310
+.endif
 
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Powerful syslogd replacement
@@ -21,7 +24,10 @@ BROKEN_sparc64=		fails to link: Internal error: Segmentation fault (program ld)
 
 CONFLICTS?=	syslog-ng-[0-9]* syslog-ng[0-9]-[0-9]* \
 		syslog-ng[0-9][0-9]-[0-9]* \
-		syslog-ng-devel-[0-9]*
+		syslog-ng[0-9][0-9][0-9]-[0-9]* \
+		syslog-ng-devel-[0-9]* \
+		syslog-ng-incubator-*
+
 WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSION}
 
 MAKE_JOBS_UNSAFE=	yes

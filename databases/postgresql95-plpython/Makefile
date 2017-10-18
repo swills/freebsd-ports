@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/postgresql95-plpython/Makefile 448138 2017-08-17 16:19:01Z mat $
+# $FreeBSD: head/databases/postgresql95-plpython/Makefile 450532 2017-09-24 18:58:59Z girgen $
 
 PORTNAME=	postgresql
 CATEGORIES=	databases python
+PORTREVISION=	0
 PKGNAMESUFFIX?=	${WANT_PGSQL_VER:S/.//}${COMPONENT}
 
 MAINTAINER=	pgsql@FreeBSD.org

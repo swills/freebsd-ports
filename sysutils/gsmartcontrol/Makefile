@@ -1,8 +1,8 @@
 # Created by: Pawel Pekala <c0rn@o2.pl>
-# $FreeBSD: head/sysutils/gsmartcontrol/Makefile 449972 2017-09-16 17:31:59Z pawel $
+# $FreeBSD: head/sysutils/gsmartcontrol/Makefile 451168 2017-10-03 20:27:25Z pawel $
 
 PORTNAME=	gsmartcontrol
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 
@@ -20,8 +20,9 @@ LICENSE_FILE_ZLIB=	${WRKSRC}/LICENSE_zlib.txt
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
 RUN_DEPENDS=	bash:shells/bash \
-		gnomesu:security/libgnomesu \
-		smartctl:sysutils/smartmontools
+		pkexec:sysutils/polkit \
+		smartctl:sysutils/smartmontools \
+		xterm:x11/xterm
 
 USES=		compiler:c++11-lang libtool pkgconfig tar:bzip2
 USE_CXXSTD=	c++11

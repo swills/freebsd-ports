@@ -1,8 +1,9 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/py-pdagent/Makefile 449844 2017-09-14 17:37:53Z feld $
+# $FreeBSD: head/net-mgmt/py-pdagent/Makefile 450415 2017-09-22 21:22:24Z feld $
 
 PORTNAME=	pdagent
-DISTVERSION=	v1.4
+PORTVERSION=	1.4
+DISTVERSIONPREFIX=v
 CATEGORIES=	net-mgmt python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

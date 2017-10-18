@@ -1,9 +1,9 @@
 # Created by: Andrey Slusar <anray@FreeBSD.org>
-# $FreeBSD: head/graphics/pecl-imagick/Makefile 441761 2017-05-26 08:20:18Z kwm $
+# $FreeBSD: head/graphics/pecl-imagick/Makefile 450852 2017-09-28 15:36:31Z kwm $
 
 PORTNAME=	imagick
 PORTVERSION=	3.4.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 
 MAINTAINER=	mm@FreeBSD.org

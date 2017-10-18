@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/rubygem-rails4/Makefile 444508 2017-06-27 16:16:12Z sunpoet $
+# $FreeBSD: head/www/rubygem-rails4/Makefile 450844 2017-09-28 11:02:38Z sunpoet $
 
 PORTNAME=	rails
-PORTVERSION=	4.2.9
+PORTVERSION=	4.2.10
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	4

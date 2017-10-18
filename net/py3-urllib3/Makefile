@@ -1,5 +1,5 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/net/py3-urllib3/Makefile 448410 2017-08-20 12:30:00Z sunpoet $
+# $FreeBSD: head/net/py3-urllib3/Makefile 451356 2017-10-06 07:59:42Z ak $
 
 MASTERDIR=	${.CURDIR}/../py-urllib3
 
@@ -16,4 +16,3 @@ PORTSCOUT=	ignore:1
 USES=		python:3.3+
 
 .include "${MASTERDIR}/Makefile"
-

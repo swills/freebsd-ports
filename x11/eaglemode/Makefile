@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/x11/eaglemode/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/x11/eaglemode/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	eaglemode
 PORTVERSION=	0.93.0
@@ -20,7 +20,6 @@ USES=		compiler:features jpeg perl5 pkgconfig shebangfix tar:bzip2
 USE_PERL5=	build
 USE_XORG=	x11 xext xxf86vm
 SUB_FILES=	eaglemode.sh
-WANT_GNOME=	yes
 
 BUILD_ARGS=	continue=no
 

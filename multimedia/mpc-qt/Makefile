@@ -1,9 +1,8 @@
-# $FreeBSD: head/multimedia/mpc-qt/Makefile 449659 2017-09-11 15:57:11Z jbeich $
+# $FreeBSD: head/multimedia/mpc-qt/Makefile 451074 2017-10-02 09:55:52Z jbeich $
 
 PORTNAME=	mpc-qt
 DISTVERSIONPREFIX=	v
-DISTVERSION=	17.09-12
-DISTVERSIONSUFFIX=	-g485ba78
+DISTVERSION=	17.10
 CATEGORIES=	multimedia audio
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -15,7 +14,7 @@ LIB_DEPENDS=	libmpv.so:multimedia/mpv
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	cmdrkotori
-GH_TUPLE=	Argon-:mpv-stats:1.1-24-g6a37a6d:mpv_stats/external/mpv-stats
+GH_TUPLE=	Argon-:mpv-stats:1.1-28-gf42aa68:mpv_stats/external/mpv-stats
 
 USES=		compiler:c++11-lib desktop-file-utils pkgconfig qmake
 USE_QT5=	qmake_build buildtools_build linguisttools_build \

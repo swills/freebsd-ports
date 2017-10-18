@@ -1,5 +1,5 @@
 # Created by: Alex Varju <freebsd-ports@varju.ca>
-# $FreeBSD: head/www/gallery2/Makefile 428352 2016-12-11 15:22:47Z jbeich $
+# $FreeBSD: head/www/gallery2/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	gallery2
 PORTVERSION=	2.3.2
@@ -22,8 +22,8 @@ OPTIONS_DEFAULT=IMAGEMAGICK JHEAD MYSQL
 
 NO_ARCH=	yes
 NO_BUILD=	yes
+USES=		php:web
 USE_PHP=	pcre session
-WANT_PHP_WEB=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 SUB_FILES=	pkg-message

@@ -1,5 +1,5 @@
 # Created by: Jyun-Yan You <jyyou@cs.nctu.edu.tw>
-# $FreeBSD: head/lang/ats/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/lang/ats/Makefile 451190 2017-10-04 08:44:57Z bapt $
 
 PORTNAME=	ats
 PORTVERSION=	${ATS_VER}
@@ -10,6 +10,9 @@ DISTNAME=	${PORTNAME}-lang-${ATS_IMPL}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Language with a type system rooted in the Applied Type System
+
+DEPRECATED=	Unmaintained, outdated, needs lots of refreshment
+EXPIRATION_DATE=	2017-11-04
 
 ONLY_FOR_ARCHS=	i386 amd64
 USES=		gmake tar:tgz

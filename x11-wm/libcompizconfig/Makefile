@@ -1,5 +1,5 @@
 # Created by: Robert Noland <rnoland@FreeBSD.org>
-# $FreeBSD: head/x11-wm/libcompizconfig/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-wm/libcompizconfig/Makefile 451302 2017-10-05 11:46:44Z bapt $
 
 PORTNAME=	libcompizconfig
 PORTVERSION=	0.8.8
@@ -8,6 +8,8 @@ MASTER_SITES=	http://releases.compiz.org/${PORTVERSION}/
 
 MAINTAINER=	freebsd-ports@dan.me.uk
 COMMENT=	Alternative configuration system for Compiz
+
+LICENSE=	GPLv2
 
 BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/compiz.pc:x11-wm/compiz
 
@@ -27,12 +29,7 @@ INOTIFY_DESC?=	Enable inotify support
 INOTIFY_LIB_DEPENDS=	libinotify.so:devel/libinotify
 INOTIFY_LDFLAGS=	-linotify
 
-.include <bsd.port.pre.mk>
-
 post-patch:
-.if empty(PORT_OPTIONS:MINOTIFY)
-	@${REINPLACE_CMD} -e 's|sys/inotify.h||' ${WRKSRC}/configure
-.endif
 	@echo "OSVERSION=${OSVERSION}"
 	@${REINPLACE_CMD} -e 's|malloc.h|stdlib.h|'	\
 		${WRKSRC}/src/main.c			\
@@ -41,9 +38,12 @@ post-patch:
 		${WRKSRC}/src/ini.c			\
 		${WRKSRC}/backend/ini.c
 
+post-patch-INOTIFY-off:
+	@${REINPLACE_CMD} -e 's|sys/inotify.h||' ${WRKSRC}/configure
+
 post-install:
 .for l in compizconfig/backends/libini.so compiz/libccp.so libcompizconfig.so.0.0.0
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/${l}
 .endfor
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

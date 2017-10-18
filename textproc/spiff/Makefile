@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/spiff/Makefile 431026 2017-01-09 19:42:52Z swills $
+# $FreeBSD: head/textproc/spiff/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	spiff
 PORTVERSION=	1.0.8
@@ -17,8 +17,6 @@ PLIST_FILES=	bin/spiff
 
 PORTDOCS=	LICENSE README.md examples/cf-aws.yml \
 		examples/multi-az-cf-aws.yml examples/tutorial.md
-
-STRIP=		# stripping can break go binaries
 
 OPTIONS_DEFINE=	DOCS
 

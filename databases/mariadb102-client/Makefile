@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb102-client/Makefile 446502 2017-07-23 18:08:00Z brnrd $
+# $FreeBSD: head/databases/mariadb102-client/Makefile 451044 2017-10-01 12:58:11Z brnrd $
 
 PORTNAME=	mariadb
 PKGNAMESUFFIX=	102-client
@@ -23,7 +23,7 @@ CLIENT_ONLY=	yes
 post-install:
 	${RM} ${STAGEDIR}${PREFIX}/share/aclocal/mysql.m4
 	${RM} -r ${STAGEDIR}${PREFIX}/share/pkgconfig
-	${RM} -r ${STAGEDIR}${PREFIX}/include/mysql/private
+	${RM} -r ${STAGEDIR}${PREFIX}/include/mysql/server
 	${RM} -r ${STAGEDIR}${DATADIR}/policy
 	${RM} ${STAGEDIR}${PREFIX}/man/man1/aria* ${STAGEDIR}${PREFIX}/man/man1/myisam*
 	# Fix https://mariadb.atlassian.net/browse/MDEV-9388

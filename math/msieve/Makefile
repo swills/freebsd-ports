@@ -1,5 +1,5 @@
 # Created by: Daniel Roethlisberger <daniel@roe.ch>
-# $FreeBSD: head/math/msieve/Makefile 417685 2016-06-27 21:30:34Z rene $
+# $FreeBSD: head/math/msieve/Makefile 452147 2017-10-15 14:05:04Z madpilot $
 
 PORTNAME=	msieve
 PORTVERSION=	1.51
@@ -28,7 +28,7 @@ OPTIONS_DEFAULT=	OPTIMIZED_CFLAGS
 
 .if ${PORT_OPTIONS:MOPTIMIZED_CFLAGS}
 CFLAGS+=	-O3 -ffast-math
-.if defined(WITHOUT_DEBUG) || !defined(WITH_DEBUG)
+.if !defined(WITH_DEBUG)
 CFLAGS+=	-fomit-frame-pointer -DNDEBUG
 .endif
 .endif

@@ -1,11 +1,11 @@
 # Created by: Wen heping <wenheping@gmail.com>
-# $FreeBSD: head/finance/weberp/Makefile 427287 2016-11-28 08:21:53Z wen $
+# $FreeBSD: head/finance/weberp/Makefile 450566 2017-09-25 02:38:28Z wen $
 
 PORTNAME=	weberp
-PORTVERSION=	4.13.1
+PORTVERSION=	4.14.1
 CATEGORIES=	finance www
 MASTER_SITES=	SF/web-erp/
-DISTNAME=	webERP_${PORTVERSION}
+DISTNAME=	webERP${PORTVERSION}
 
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Open-Source Web-Based ERP System
@@ -15,7 +15,7 @@ LICENSE=	GPLv2
 PORTSCOUT=	skipv:3.12
 
 USES=		gettext shebangfix zip
-SHEBANG_FILES=	report_runner.php
+SHEBANG_FILES=	report_runner.php make_release.sh
 USE_PHP=	mysqli gettext
 WRKSRC=		${WRKDIR}/webERP
 

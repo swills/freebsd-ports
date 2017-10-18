@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/srecord/Makefile 441692 2017-05-25 14:23:15Z bapt $
+# $FreeBSD: head/devel/srecord/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	srecord
 PORTVERSION=	1.64
-PORTREVISION=	8
+PORTREVISION=	10
 CATEGORIES=	devel
 MASTER_SITES=	SF
 

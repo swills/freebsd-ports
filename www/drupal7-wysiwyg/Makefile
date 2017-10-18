@@ -1,5 +1,5 @@
 # Created by: Nick Hilliard <nick@foobar.org>
-# $FreeBSD: head/www/drupal7-wysiwyg/Makefile 446151 2017-07-18 17:38:54Z joneum $
+# $FreeBSD: head/www/drupal7-wysiwyg/Makefile 451315 2017-10-05 15:11:35Z sunpoet $
 
 PORTNAME=	wysiwyg
 DISTVERSION=	7.x-2.4
@@ -69,7 +69,7 @@ DOC_FILES=	CHANGELOG.txt README.txt LICENSE.txt
 OPTIONS_DEFINE=	TINYMCE CKEDITOR DOCS
 
 CKEDITOR_DESC=	Install CKEditor
-CKEDITOR_RUN_DEPENDS=	CKEditor>0:www/ckeditor
+CKEDITOR_RUN_DEPENDS=	ckeditor>0:www/ckeditor
 CKEDITOR_PLIST_FILES=	${DRUPAL_MODLIB}/ckeditor
 
 TINYMCE_DESC=	Install TinyMCE Editor

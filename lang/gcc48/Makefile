@@ -1,9 +1,9 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc48/Makefile 450370 2017-09-22 13:05:17Z gerald $
+# $FreeBSD: head/lang/gcc48/Makefile 451246 2017-10-04 20:36:13Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	4.8.5
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	lang
 MASTER_SITES=	GCC/releases/gcc-${PORTVERSION}
 PKGNAMESUFFIX=	${SUFFIX}
@@ -14,6 +14,7 @@ COMMENT=	GNU Compiler Collection 4.8
 LICENSE=	GPLv3 GPLv3RLE
 LICENSE_COMB=	multi
 
+DEPRECATED=	Unsupported by upstream. Use GCC 5 or newer instead.
 ONLY_FOR_ARCHS=	amd64 armv6 i386 powerpc powerpc64 sparc64
 
 LIB_DEPENDS=	libgmp.so:math/gmp \

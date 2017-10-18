@@ -1,5 +1,5 @@
 # Created by: Wen heping <wenheping@gmail.com>
-# $FreeBSD: head/www/elgg/Makefile 385918 2015-05-10 03:15:38Z amdmi3 $
+# $FreeBSD: head/www/elgg/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	elgg
 PORTVERSION=	1.8.0.1
@@ -13,7 +13,7 @@ COMMENT=	Blogging and social networking platform
 LICENSE=	GPLv2
 
 USE_PHP=	mysql gd json soap dom xml
-USES=		cpe gettext zip
+USES=		cpe gettext zip php
 
 NO_BUILD=	yes
 PLIST_SUB=	WWWOWN="${WWWOWN}" WWWGRP="${WWWGRP}"

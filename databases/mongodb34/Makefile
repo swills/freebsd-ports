@@ -1,9 +1,8 @@
-# $FreeBSD: head/databases/mongodb34/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/databases/mongodb34/Makefile 451462 2017-10-07 14:48:08Z riggs $
 
 PORTNAME=	mongodb
 DISTVERSIONPREFIX=	r
-DISTVERSION=	3.4.6
-PORTREVISION=	1
+DISTVERSION=	3.4.9
 CATEGORIES=	databases net
 MASTER_SITES=	https://fastdl.mongodb.org/src/ \
 		http://fastdl.mongodb.org/src/ \

@@ -1,8 +1,8 @@
 # Created by: Peter Haight <peterh@sapros.com>
-# $FreeBSD: head/security/py-m2crypto/Makefile 450279 2017-09-21 17:20:46Z sunpoet $
+# $FreeBSD: head/security/py-m2crypto/Makefile 452122 2017-10-15 00:38:44Z sunpoet $
 
 PORTNAME=	m2crypto
-PORTVERSION=	0.26.2
+PORTVERSION=	0.27.0
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENCE
 
 BUILD_DEPENDS=	swig3.0:devel/swig30
 
-PYDISTUTILS_BUILDARGS=	build_ext --openssl=${OPENSSLBASE} --swig=${LOCALBASE}/bin/swig3.0
+PYDISTUTILS_BUILDARGS=	build_ext --include=${OPENSSLINC} --openssl=${OPENSSLBASE} --swig=${LOCALBASE}/bin/swig3.0
 USE_PYTHON=	autoplist concurrent distutils
 USES=		python ssl
 

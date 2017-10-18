@@ -1,8 +1,8 @@
 # Created by: Bob Bomar <bob@fly.homeunix.org>
-# $FreeBSD: head/www/phpsysinfo/Makefile 431889 2017-01-19 18:12:38Z amdmi3 $
+# $FreeBSD: head/www/phpsysinfo/Makefile 451896 2017-10-12 15:09:59Z sunpoet $
 
 PORTNAME=	phpsysinfo
-PORTVERSION=	3.2.7
+PORTVERSION=	3.2.8
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 

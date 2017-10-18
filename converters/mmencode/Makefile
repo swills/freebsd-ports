@@ -1,11 +1,10 @@
 # Created by: kbyanc
-# $FreeBSD: head/converters/mmencode/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/converters/mmencode/Makefile 452014 2017-10-13 15:29:58Z bapt $
 
 PORTNAME=	mmencode
 PORTVERSION=	2.7
 CATEGORIES=	converters
-MASTER_SITES=	ftp://ftp.delegate.org/pub/mime/mm2.7/ \
-		ftp://ftp.funet.fi/pub/unix/mail/metamail/
+MASTER_SITES=	ftp://ftp.funet.fi/pub/unix/mail/metamail/
 DISTNAME=	mm${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 

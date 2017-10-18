@@ -1,5 +1,5 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/devel/gobject-introspection/Makefile 437545 2017-04-02 10:08:06Z bapt $
+# $FreeBSD: head/devel/gobject-introspection/Makefile 451551 2017-10-08 16:41:21Z pi $
 
 PORTNAME=	gobject-introspection
 PORTVERSION=	1.50.0
@@ -10,6 +10,9 @@ DIST_SUBDIR=	gnome3
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Generate interface introspection data for GObject libraries
+
+LICENSE=	GPLv2+ LGPL20+
+LICENSE_COMB=	dual
 
 # we need cairo otherwise the generated Cairo gir is broken
 BUILD_DEPENDS=	cairo-trace:graphics/cairo

@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-sidekiq/Makefile 445010 2017-07-04 08:08:51Z sunpoet $
+# $FreeBSD: head/devel/rubygem-sidekiq/Makefile 451153 2017-10-03 15:36:14Z sunpoet $
 
 PORTNAME=	sidekiq
-PORTVERSION=	5.0.4
+PORTVERSION=	5.0.5
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	rubygem-concurrent-ruby>=1.0.0:devel/rubygem-concurrent-ruby \
 		rubygem-connection_pool>=2.2:net/rubygem-connection_pool \
 		rubygem-rack-protection>=1.5.0:www/rubygem-rack-protection \
-		rubygem-redis>=3.3.3:databases/rubygem-redis
+		rubygem-redis>=3.3.4:databases/rubygem-redis
 
 NO_ARCH=	yes
 USE_RUBY=	yes

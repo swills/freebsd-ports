@@ -1,5 +1,5 @@
 # Created by: Hendrik Scholz <hendrik@scholz.net>
-# $FreeBSD: head/multimedia/transcode/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/transcode/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	transcode
 PORTVERSION=	1.1.7
@@ -16,7 +16,6 @@ LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg
 
 USE_LDCONFIG=	yes
 USES=		gmake libtool pkgconfig tar:bzip2
-WANT_GNOME=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-oss
 CPPFLAGS+=	-I${LOCALBASE}/include

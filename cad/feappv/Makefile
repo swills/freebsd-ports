@@ -1,5 +1,5 @@
 # Created by: Pedro F. Giffuni <giffunip@asme.org>
-# $FreeBSD: head/cad/feappv/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/cad/feappv/Makefile 451979 2017-10-13 11:06:09Z bapt $
 
 PORTNAME=	feappv
 PORTVERSION=	3.1
@@ -13,6 +13,7 @@ EXTRACT_ONLY=	${PORTNAME}${PORTVERSION:S/.//}${EXTRACT_SUFX}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Finite element analysis program (personal version)
 
+BROKEN=		No public distfiles
 USES=		fortran gmake localbase:ldflags zip
 USE_XORG=	x11
 MAKEFILE=	makefile

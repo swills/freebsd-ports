@@ -1,18 +1,14 @@
 # Created by: tcberner
-# $FreeBSD: head/x11/kf5-kglobalaccel/Makefile 450115 2017-09-19 11:57:22Z rakuco $
+# $FreeBSD: head/x11/kf5-kglobalaccel/Makefile 452286 2017-10-17 17:39:15Z tcberner $
 
 PORTNAME=	kglobalaccel
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	x11 kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KF5 library to add support for global workspace shortcuts
 
 LIB_DEPENDS=	libxcb-keysyms.so:x11/xcb-util-keysyms
-
-# There was a hotfix release for kglobalaccel to fix a regression in 5.38.0.
-KDE_FRAMEWORKS_VERSION=	5.38.1
 
 USES=		cmake:outsource compiler:c++11-lib kde:5 tar:xz
 USE_KDE=	ecm config coreaddons crash dbusaddons i18n service \

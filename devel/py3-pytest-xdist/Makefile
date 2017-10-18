@@ -1,5 +1,5 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/devel/py3-pytest-xdist/Makefile 442851 2017-06-07 15:51:07Z woodsb02 $
+# $FreeBSD: head/devel/py3-pytest-xdist/Makefile 451356 2017-10-06 07:59:42Z ak $
 
 MASTERDIR=	${.CURDIR}/../py-pytest-xdist
 
@@ -13,4 +13,3 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=2.5.1:devel/py3-pytest \
 USES=	python:3.3+
 
 .include "${MASTERDIR}/Makefile"
-

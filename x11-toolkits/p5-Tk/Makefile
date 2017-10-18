@@ -1,9 +1,8 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/p5-Tk/Makefile 427552 2016-12-02 11:58:21Z mat $
+# $FreeBSD: head/x11-toolkits/p5-Tk/Makefile 451634 2017-10-09 19:50:36Z pi $
 
 PORTNAME=	Tk
-PORTVERSION=	804.033
-PORTREVISION=	1
+PORTVERSION=	804.034
 CATEGORIES=	x11-toolkits tk perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -11,8 +10,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	pi@FreeBSD.org
 COMMENT=	Re-port of a perl5 interface to Tk8.4
 
+LICENSE=	ARTPERL10
+
 LIB_DEPENDS=	libpng.so:graphics/png \
-		libfreetype.so:print/freetype2
+		libfreetype.so:print/freetype2 \
+		libfontconfig.so:x11-fonts/fontconfig
 
 OPTIONS_DEFINE=	XFT
 OPTIONS_DEFAULT=	XFT

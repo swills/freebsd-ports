@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-im/licq-msn/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/net-im/licq-msn/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	msn
 PORTVERSION=	1.8.2
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	net-im
 
 MAINTAINER=	dinoex@FreeBSD.org

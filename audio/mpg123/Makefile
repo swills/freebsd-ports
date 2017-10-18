@@ -1,8 +1,8 @@
 # Created by: Carey Jones <mcj@acquiesce.org>
-# $FreeBSD: head/audio/mpg123/Makefile 447871 2017-08-13 06:13:28Z novel $
+# $FreeBSD: head/audio/mpg123/Makefile 450748 2017-09-27 13:33:06Z novel $
 
 PORTNAME=	mpg123
-PORTVERSION=	1.25.6
+PORTVERSION=	1.25.7
 CATEGORIES=	audio ipv6
 MASTER_SITES=	SF \
 		http://www.mpg123.de/download/

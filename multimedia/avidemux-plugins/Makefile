@@ -1,5 +1,5 @@
 # Created by: Anish Mistry (with help from mean)
-# $FreeBSD: head/multimedia/avidemux-plugins/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/avidemux-plugins/Makefile 451578 2017-10-08 21:23:31Z antoine $
 
 PORTNAME=	avidemux
 PORTVERSION=	${AVIDEMUX_VERSION}
@@ -10,6 +10,8 @@ MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	Simple GUI based video editor (Plugins)
 
 LIB_DEPENDS=	libADM6avutil.so.54:multimedia/avidemux
+
+BROKEN=		fails to build
 
 MASTERDIR=	${.CURDIR}/../avidemux
 PLIST=		${.CURDIR}/pkg-plist

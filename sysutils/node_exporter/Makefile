@@ -1,5 +1,5 @@
 # Created by: Jev Björsell <ports@ecadlabs.com>
-# $FreeBSD: head/sysutils/node_exporter/Makefile 436688 2017-03-22 11:44:36Z robak $
+# $FreeBSD: head/sysutils/node_exporter/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	node_exporter
 PORTVERSION=	0.14.0
@@ -22,8 +22,6 @@ GO_TARGET=	github.com/${GH_ACCOUNT}/${PORTNAME}
 PLIST_FILES=	bin/node_exporter
 
 USE_RC_SUBR=	node_exporter
-
-STRIP=		# stripping can break go binaries
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKDIR}/bin/node_exporter ${STAGEDIR}${PREFIX}/bin

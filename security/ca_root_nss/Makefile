@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/ca_root_nss/Makefile 449680 2017-09-12 09:12:11Z jbeich $
+# $FreeBSD: head/security/ca_root_nss/Makefile 450517 2017-09-24 18:50:00Z sunpoet $
 
 PORTNAME=	ca_root_nss
 PORTVERSION=	${VERSION_NSS}
@@ -9,7 +9,7 @@ DISTNAME=	nss-${VERSION_NSS}${NSS_SUFFIX}
 MAINTAINER=	ports-secteam@FreeBSD.org
 COMMENT=	Root certificate bundle from the Mozilla Project
 
-LICENSE=	MPL
+LICENSE=	MPL20
 
 OPTIONS_DEFINE=		ETCSYMLINK
 OPTIONS_DEFAULT=	ETCSYMLINK

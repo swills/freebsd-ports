@@ -1,5 +1,5 @@
 # Created by: Beñat Gonzalez Etxepare <bbtruk@users.sourceforge.net>
-# $FreeBSD: head/x11-fm/doublecmd/Makefile 436925 2017-03-25 23:37:05Z antoine $
+# $FreeBSD: head/x11-fm/doublecmd/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	doublecmd
 PORTVERSION=	0.7.8
@@ -26,7 +26,6 @@ USE_FPC=	cairo fcl-base fcl-db fcl-image fcl-json fcl-registry \
 		fcl-xml iconvenc pasjpeg rtl-extra x11
 USE_XORG=	x11
 DOS2UNIX_FILES=	src/dmhelpmanager.pas
-WANT_GNOME=	yes
 
 PLIST=		${WRKDIR}/pkg-plist
 

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/astro/p5-Astro-ADS/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/astro/p5-Astro-ADS/Makefile 451684 2017-10-10 11:20:24Z sunpoet $
 
 PORTNAME=	Astro-ADS
 PORTVERSION=	1.26
@@ -11,9 +11,12 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	OO Perl interface to the ADS abstract service
 
-BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww
-RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww
+LICENSE=	GPLv2+
 
+BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww
+RUN_DEPENDS:=	${BUILD_DEPENDS}
+
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

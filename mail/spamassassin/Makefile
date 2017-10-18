@@ -1,5 +1,5 @@
 # Created by: Anthony Kim
-# $FreeBSD: head/mail/spamassassin/Makefile 447641 2017-08-09 19:30:58Z zeising $
+# $FreeBSD: head/mail/spamassassin/Makefile 451792 2017-10-11 19:56:07Z zeising $
 
 PORTNAME=	spamassassin
 PORTVERSION=	3.4.1
@@ -55,7 +55,7 @@ OPTIONS_GROUP_DATABASE=	MYSQL PGSQL
 OPTIONS_GROUP_PLUGINS=	DCC DKIM PYZOR RAZOR RELAY_COUNTRY SPF_QUERY
 OPTIONS_SINGLE=		GPG
 OPTIONS_SINGLE_GPG=	GNUPG_NONE GNUPG GNUPG2
-OPTIONS_DEFAULT=	AS_ROOT DKIM GNUPG SSL UPDATE_AND_COMPILE SPF_QUERY
+OPTIONS_DEFAULT=	AS_ROOT DKIM GNUPG SSL SPF_QUERY
 
 AS_ROOT_DESC=		Run spamd as root (recommended)
 
@@ -91,7 +91,8 @@ MYSQL_RUN_DEPENDS=	p5-DBD-mysql>=0:databases/p5-DBD-mysql
 PGSQL_RUN_DEPENDS=	p5-DBD-Pg>=0:databases/p5-DBD-Pg
 PYZOR_RUN_DEPENDS=	pyzor:mail/pyzor
 RAZOR_RUN_DEPENDS=	razor-agents>=2.84:mail/razor-agents
-RELAY_COUNTRY_RUN_DEPENDS=	p5-Geo-IP>=0:net/p5-Geo-IP
+RELAY_COUNTRY_RUN_DEPENDS=	p5-Geo-IP>=0:net/p5-Geo-IP \
+			p5-IP-Country>=0:net/p5-IP-Country
 SPF_QUERY_RUN_DEPENDS=	p5-Mail-SPF>=0:mail/p5-Mail-SPF
 
 SSL_USES=		ssl

@@ -1,11 +1,13 @@
 # Created by: shurd
-# $FreeBSD: head/comms/qtel/Makefile 440110 2017-05-04 14:58:54Z mat $
+# $FreeBSD: head/comms/qtel/Makefile 451999 2017-10-13 14:18:50Z bapt $
 
 PORTNAME=	qtel
 PORTREVISION=	1
 
 MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Qtel Echolink client
+
+BROKEN=		Invalid checksum
 
 LICENSE=	GPLv2
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/jfrog-cli/Makefile 433144 2017-02-02 13:06:37Z swills $
+# $FreeBSD: head/devel/jfrog-cli/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	jfrog-cli
 PORTVERSION=	1.6.0
@@ -14,8 +14,6 @@ GH_ACCOUNT=	JFrogDev
 GH_PROJECT=	jfrog-cli-go
 
 PLIST_FILES=	bin/jfrog
-
-STRIP=		# stripping can break go binaries
 
 post-extract:
 	@${MV} ${WRKSRC}/vendor/ ${WRKSRC}/src

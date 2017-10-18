@@ -1,5 +1,5 @@
 # Created by: Frerich Raabe <frerich.raabe@gmx.de>
-# $FreeBSD: head/devel/distcc/Makefile 427495 2016-12-01 13:08:58Z amdmi3 $
+# $FreeBSD: head/devel/distcc/Makefile 451901 2017-10-12 15:57:51Z mat $
 #   $MCom: ports/devel/distcc/Makefile,v 1.3 2007/10/21 02:46:13 ahze Exp $
 
 PORTNAME=	distcc
@@ -20,7 +20,6 @@ USES=		autoreconf alias gmake libtool pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=     distcc
 GH_TAGNAME=	9a09372
-WANT_GNOME=	yes
 
 GROUPS=		distcc
 USERS=		distcc

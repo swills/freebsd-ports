@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/py-tqdm/Makefile 450311 2017-09-21 23:39:19Z dbaio $
+# $FreeBSD: head/misc/py-tqdm/Makefile 451978 2017-10-13 10:47:24Z culot $
 
 PORTNAME=	tqdm
-PORTVERSION=	4.17.0
+PORTVERSION=	4.19.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	misc
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alexbl@FreeBSD.org>
-# $FreeBSD: head/devel/py-event/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/devel/py-event/Makefile 451570 2017-10-08 19:36:26Z antoine $
 
 PORTNAME=	event
 DISTVERSIONPREFIX=	PYEVENT_
@@ -21,6 +21,8 @@ GH_ACCOUNT=	jaraco
 GH_PROJECT=	pyevent
 
 BROKEN=		fails to build with libevent 2.1
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-11-09
 
 USES=		python
 USE_PYTHON=	distutils autoplist

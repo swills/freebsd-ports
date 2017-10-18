@@ -1,9 +1,10 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/ports-mgmt/synth/Makefile 446594 2017-07-25 16:20:05Z matthew $
+# $FreeBSD: head/ports-mgmt/synth/Makefile 451704 2017-10-10 14:19:33Z tobik $
 
 PORTNAME=	synth
 PORTVERSION=	1.70
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	ports-mgmt
 
 MAINTAINER=	ericturgeon.bsd@gmail.com
@@ -23,12 +24,12 @@ GH_ACCOUNT=	jrmarino
 GPR=		${LOCALBASE}/lib/gnat
 MAKE_ENV=	NCURSES_LINK=static
 
-OPTIONS_DEFINE=	NOWATCHDOG
-OPTIONS_DEFAULT=NOWATCHDOG
+OPTIONS_DEFINE=	WATCHDOG
+OPTIONS_DEFAULT=WATCHDOG
 
-NOWATCHDOG_DESC=	Disable build watchdog monitor
+WATCHDOG_DESC=	Build with watchdog monitor
 
-NOWATCHDOG_EXTRA_PATCHES=	${FILESDIR}/extrapatch-nowatchdog-portscan-buildcycle.adb
+WATCHDOG_EXTRA_PATCHES_OFF=	${FILESDIR}/extrapatch-nowatchdog-portscan-buildcycle.adb
 
 .include <bsd.port.pre.mk>
 

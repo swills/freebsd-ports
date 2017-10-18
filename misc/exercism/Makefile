@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/misc/exercism/Makefile 412839 2016-04-09 12:35:02Z swills $
+# $FreeBSD: head/misc/exercism/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	exercism
 PORTVERSION=	2.2.5
@@ -13,8 +13,6 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/go:lang/go
 
 USE_GITHUB=	yes
 GH_PROJECT=	cli
-
-STRIP=		# stripping can break go binaries
 
 PLIST_FILES=	bin/exercism
 

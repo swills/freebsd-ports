@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 449871 2017-09-15 00:20:37Z lifanov $
+# $FreeBSD: head/games/Makefile 452266 2017-10-17 06:20:55Z antoine $
 #
 
     COMMENT = Games and related software
@@ -180,7 +180,6 @@
     SUBDIR += crafty-open-large
     SUBDIR += crafty-open-medium
     SUBDIR += crafty-tablebase-no-pawn
-    SUBDIR += crafty-tablebase-pawn
     SUBDIR += crashtest
     SUBDIR += cre
     SUBDIR += cretan-hubris
@@ -244,7 +243,6 @@
     SUBDIR += einstein
     SUBDIR += el
     SUBDIR += el-data
-    SUBDIR += ember
     SUBDIR += emptyepsilon
     SUBDIR += endgame-singularity
     SUBDIR += endgame-singularity-music
@@ -767,7 +765,6 @@
     SUBDIR += poker-eval
     SUBDIR += pokerth
     SUBDIR += polyglot
-    SUBDIR += polypuzzle
     SUBDIR += pongix
     SUBDIR += popstar
     SUBDIR += pouetchess

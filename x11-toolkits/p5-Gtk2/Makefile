@@ -1,8 +1,8 @@
 # Created by: clsung@dragon2.net
-# $FreeBSD: head/x11-toolkits/p5-Gtk2/Makefile 438257 2017-04-11 13:08:50Z swills $
+# $FreeBSD: head/x11-toolkits/p5-Gtk2/Makefile 452208 2017-10-16 16:59:54Z swills $
 
 PORTNAME=	Gtk2
-PORTVERSION=	1.24991
+PORTVERSION=	1.24992
 CATEGORIES=	x11-toolkits lang perl5
 MASTER_SITES=	CPAN SF/${PORTNAME:tl}-perl/${PORTNAME}/${PORTVERSION}
 PKGNAMEPREFIX=	p5-

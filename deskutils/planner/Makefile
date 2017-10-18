@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/deskutils/planner/Makefile 428130 2016-12-08 15:46:46Z tijl $
+# $FreeBSD: head/deskutils/planner/Makefile 451901 2017-10-12 15:57:51Z mat $
 #   $MCom: ports-stable/deskutils/planner/Makefile,v 1.4 2009/04/16 00:34:24 kwm Exp $
 
 PORTNAME=	planner
@@ -16,7 +16,6 @@ USES=		desktop-file-utils gettext gmake libtool pathfix pkgconfig \
 		shared-mime-info tar:xz
 USE_GNOME=	gnomeprefix intlhack libgnomeui libgnomeprintui \
 		libgsf
-WANT_GNOME=	yes
 INSTALLS_OMF=	yes
 INSTALLS_ICONS=	yes
 INSTALL_TARGET=	install-strip

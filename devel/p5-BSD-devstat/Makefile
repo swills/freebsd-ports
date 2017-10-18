@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-BSD-devstat/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-BSD-devstat/Makefile 451816 2017-10-12 08:09:55Z sunpoet $
 
 PORTNAME=	BSD-devstat
 PORTVERSION=	0.02
@@ -12,8 +12,5 @@ COMMENT=	Perl extension of devstat(3) API
 
 USES=		perl5
 USE_PERL5=	configure
-
-regression-test:
-	cd ${WRKSRC} && make test
 
 .include <bsd.port.mk>

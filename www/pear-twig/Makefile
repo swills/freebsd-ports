@@ -1,5 +1,5 @@
 # Created by: Joe Horn <joehorn@gmail.com>
-# $FreeBSD: head/www/pear-twig/Makefile 428059 2016-12-07 13:58:14Z tz $
+# $FreeBSD: head/www/pear-twig/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	twig
 PORTVERSION=	1.28.1
@@ -16,11 +16,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 BUILD_DEPENDS=	${PEARDIR}/.channels/pear.twig-project.org.reg:devel/pear-channel-twig
 RUN_DEPENDS=	${PEARDIR}/.channels/pear.twig-project.org.reg:devel/pear-channel-twig
 
-USES=		pear
+USES=		pear php:cli
 PEAR_CHANNEL=	twig
 NO_ARCH=	yes
 
 USE_PHP=	ctype hash
-WANT_PHP_CLI=	yes
 
 .include <bsd.port.mk>

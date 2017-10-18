@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/archivers/p5-PerlIO-via-Bzip2/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/archivers/p5-PerlIO-via-Bzip2/Makefile 451682 2017-10-10 11:20:15Z sunpoet $
 
 PORTNAME=	PerlIO-via-Bzip2
 PORTVERSION=	0.02
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl extension to provide a PerlIO layer to bzip2/bunzip2
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Compress-Bzip2>=0:archivers/p5-Compress-Bzip2
 RUN_DEPENDS:=	${BUILD_DEPENDS}

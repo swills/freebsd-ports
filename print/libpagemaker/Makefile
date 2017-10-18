@@ -1,8 +1,8 @@
-# $FreeBSD: head/print/libpagemaker/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/print/libpagemaker/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	libpagemaker
 PORTVERSION=	0.0.3
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	print graphics devel
 MASTER_SITES=	LIBREOFFICE_DEV
 

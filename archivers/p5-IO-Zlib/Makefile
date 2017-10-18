@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/p5-IO-Zlib/Makefile 395329 2015-08-26 02:00:19Z amdmi3 $
+# $FreeBSD: head/archivers/p5-IO-Zlib/Makefile 451680 2017-10-10 11:20:06Z sunpoet $
 
 PORTNAME=	IO-Zlib
 PORTVERSION=	1.10
@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	IO:: style interface to Compress::Zlib
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	configure

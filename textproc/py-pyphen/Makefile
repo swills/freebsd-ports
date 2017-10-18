@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/textproc/py-pyphen/Makefile 409971 2016-03-02 22:41:44Z rakuco $
+# $FreeBSD: head/textproc/py-pyphen/Makefile 450924 2017-09-29 17:00:12Z sunpoet $
 
 PORTNAME=	pyphen
 PORTVERSION=	0.9.4
@@ -11,11 +11,11 @@ DISTNAME=	Pyphen-${PORTVERSION}
 MAINTAINER=	yuri@rawbw.com
 COMMENT=	Module to hyphenate text based on Hunspell dictionaries
 
-LICENSE=	GPLv2 LGPL21 MPL
+LICENSE=	GPLv2 LGPL21 MPL11
 LICENSE_COMB=	multi
 LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING.GPL
 LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LGPL
-LICENSE_FILE_MPL=	${WRKSRC}/COPYING.MPL
+LICENSE_FILE_MPL11=	${WRKSRC}/COPYING.MPL
 
 USES=		python
 USE_PYTHON=	autoplist distutils

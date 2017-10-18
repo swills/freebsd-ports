@@ -1,10 +1,10 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/googletest/Makefile 441204 2017-05-18 23:22:00Z jbeich $
+# $FreeBSD: head/devel/googletest/Makefile 450562 2017-09-25 00:51:02Z jbeich $
 
 PORTNAME=	googletest
 DISTVERSIONPREFIX=	release-
-DISTVERSION=	1.8.0-50
-DISTVERSIONSUFFIX=	-g59c795c
+DISTVERSION=	1.8.0-358
+DISTVERSIONSUFFIX=	-gf1a87d7
 CATEGORIES=	devel
 
 MAINTAINER=	jbeich@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Alexander Kriventsov
-# $FreeBSD: head/www/repos-style/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/www/repos-style/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	repos-style
 PORTVERSION=	2.0
@@ -13,12 +13,11 @@ COMMENT=	Stylesheet for the Subversion index web page
 
 RUN_DEPENDS=	subversion>=0:devel/subversion
 
-USES=		dos2unix zip
+USES=		dos2unix php:web zip
 DOS2UNIX_GLOB=	*.xsl *.php
 NO_BUILD=	YES
 
 USE_PHP=	xml
-WANT_PHP_WEB=	yes
 
 WRKSRC=		${WRKDIR}/repos-web
 

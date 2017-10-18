@@ -1,5 +1,5 @@
 # Created by: raven428 <raven428@gmail.com>
-# $FreeBSD: head/devel/pinba_engine/Makefile 448041 2017-08-16 15:44:48Z sunpoet $
+# $FreeBSD: head/devel/pinba_engine/Makefile 451570 2017-10-08 19:36:26Z antoine $
 
 PORTNAME=	pinba_engine
 PORTVERSION=	2011.08.18
@@ -19,6 +19,8 @@ BUILD_DEPENDS=	${LOCALBASE}/include/google/protobuf/descriptor.h:devel/protobuf 
 LIB_DEPENDS=	libprotobuf.so:devel/protobuf
 
 BROKEN=		fails to configure (error: Failed to find required header file include/mysql_version.h)
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-11-09
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	tony2001

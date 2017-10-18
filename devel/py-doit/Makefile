@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-doit/Makefile 445868 2017-07-15 10:42:23Z koobs $
+# $FreeBSD: head/devel/py-doit/Makefile 451505 2017-10-08 08:07:38Z antoine $
 
 PORTNAME=	doit
 PORTVERSION=	0.30.3
@@ -23,9 +23,14 @@ USE_PYTHON=	distutils autoplist
 
 NO_ARCH=	yes
 
-.include <bsd.port.pre.mk>
-
 do-test:
 	@cd ${WRKSRC} && ${PYTHON_CMD} -m pytest
+
+.include <bsd.port.pre.mk>
+
+.if defined(PACKAGE_BUILDING) && !defined(PACKAGE_BUILDING_FLAVORS) && \
+    ${PYTHON_VER} != ${PYTHON_DEFAULT}
+IGNORE=	you have python ${PYTHON_DEFAULT} set as the default, and this needs ${PYTHON_VER}
+.endif
 
 .include <bsd.port.post.mk>

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-gitdb2/Makefile 442159 2017-05-31 13:09:22Z sunpoet $
+# $FreeBSD: head/devel/py-gitdb2/Makefile 450919 2017-09-29 16:59:48Z sunpoet $
 
 PORTNAME=	gitdb2
-PORTVERSION=	2.0.2
+PORTVERSION=	2.0.3
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

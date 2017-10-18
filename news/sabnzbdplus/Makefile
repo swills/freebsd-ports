@@ -1,7 +1,7 @@
-# $FreeBSD: head/news/sabnzbdplus/Makefile 449162 2017-09-02 20:36:43Z ultima $
+# $FreeBSD: head/news/sabnzbdplus/Makefile 450426 2017-09-23 10:55:21Z dbaio $
 
 PORTNAME=	sabnzbdplus
-PORTVERSION=	2.2.1
+PORTVERSION=	2.3.0
 CATEGORIES=	news
 
 MAINTAINER=	joshruehlig@gmail.com

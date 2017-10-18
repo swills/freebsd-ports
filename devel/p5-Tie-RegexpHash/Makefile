@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Tie-RegexpHash/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-Tie-RegexpHash/Makefile 451822 2017-10-12 08:10:36Z sunpoet $
 
 PORTNAME=	Tie-RegexpHash
 PORTVERSION=	0.16
@@ -12,8 +12,5 @@ COMMENT=	Use regular expressions as hash keys
 
 USES=		perl5
 USE_PERL5=	configure
-
-regression-test: build
-	@cd ${WRKSRC} && ${MAKE} test
 
 .include <bsd.port.mk>

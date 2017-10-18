@@ -1,9 +1,9 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/x11-servers/xorg-server/Makefile 445323 2017-07-08 12:36:32Z jbeich $
+# $FreeBSD: head/x11-servers/xorg-server/Makefile 452027 2017-10-13 19:14:53Z kwm $
 
 PORTNAME?=	xorg-server
 PORTVERSION?=	1.18.4
-PORTREVISION?=	3
+PORTREVISION?=	5
 PORTEPOCH?=	1
 CATEGORIES=	x11-servers
 MASTER_SITES=	XORG/individual/xserver

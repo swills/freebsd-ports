@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/cassandra2/Makefile 439294 2017-04-24 14:34:07Z amdmi3 $
+# $FreeBSD: head/databases/cassandra2/Makefile 451570 2017-10-08 19:36:26Z antoine $
 
 PORTNAME=	cassandra
 PORTVERSION=	2.1.1
@@ -14,6 +14,8 @@ COMMENT=	Open source distributed database management system
 LICENSE=	APACHE20
 
 BROKEN=		crash with current OpenJDK
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-11-09
 
 JAVA_VERSION=	1.7
 JAVA_VENDOR=	openjdk

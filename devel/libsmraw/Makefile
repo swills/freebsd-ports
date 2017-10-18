@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/libsmraw/Makefile 448843 2017-08-27 20:51:07Z antoine $
+# $FreeBSD: head/devel/libsmraw/Makefile 451479 2017-10-07 19:45:04Z antoine $
 
 PORTNAME=	libsmraw
-DISTVERSION=	alpha-20170802
+DISTVERSION=	alpha-20170803
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/libyal/libsmraw/releases/download/${PORTVERSION:E}/ \
 		LOCAL/antoine

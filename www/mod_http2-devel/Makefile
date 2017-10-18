@@ -1,8 +1,8 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/www/mod_http2-devel/Makefile 449257 2017-09-04 19:08:18Z brnrd $
+# $FreeBSD: head/www/mod_http2-devel/Makefile 450996 2017-09-30 15:04:19Z brnrd $
 
 PORTNAME=	mod_http2-devel
-PORTVERSION=	1.10.11
+PORTVERSION=	1.10.12
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libnghttp2.so:www/libnghttp2
 
 USES=		autoreconf libtool ssl
 USE_GITHUB=	yes
-USE_APACHE=	24
+USE_APACHE=	24+
 
 GH_ACCOUNT=	icing
 GH_PROJECT=	mod_h2

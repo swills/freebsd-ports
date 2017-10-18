@@ -1,8 +1,8 @@
 # Created by: Boris Samorodov <bsam@FreeBSDD.org>
-# $FreeBSD: head/net-mgmt/blackbox_exporter/Makefile 450249 2017-09-21 11:04:00Z bsam $
+# $FreeBSD: head/net-mgmt/blackbox_exporter/Makefile 451720 2017-10-10 19:55:48Z bsam $
 
 PORTNAME=	blackbox_exporter
-PORTVERSION=	0.9.0
+PORTVERSION=	0.10.0
 DISTVERSIONPREFIX=v
 CATEGORIES=	net-mgmt
 

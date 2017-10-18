@@ -1,12 +1,11 @@
 # Created by: ijliao
-# $FreeBSD: head/benchmarks/autobench/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/benchmarks/autobench/Makefile 451957 2017-10-13 08:21:36Z bapt $
 
 PORTNAME=	autobench
 PORTVERSION=	2.1.2
 PORTREVISION=	9
 CATEGORIES=	benchmarks www
-MASTER_SITES=	http://www.xenoclast.org/autobench/downloads/ \
-		http://www.sfr-fresh.com/unix/privat/
+MASTER_SITES=	http://www.xenoclast.org/autobench/downloads/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Automating the process of benchmarking a web server

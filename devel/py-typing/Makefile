@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-typing/Makefile 439230 2017-04-23 16:11:13Z rm $
+# $FreeBSD: head/devel/py-typing/Makefile 450406 2017-09-22 20:52:07Z rm $
 
 PORTNAME=	typing
-PORTVERSION=	3.6.1
+PORTVERSION=	3.6.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

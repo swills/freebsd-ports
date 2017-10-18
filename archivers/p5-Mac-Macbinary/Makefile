@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/archivers/p5-Mac-Macbinary/Makefile 395329 2015-08-26 02:00:19Z amdmi3 $
+# $FreeBSD: head/archivers/p5-Mac-Macbinary/Makefile 451681 2017-10-10 11:20:11Z sunpoet $
 
 PORTNAME=	Mac-Macbinary
 PORTVERSION=	0.06
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module that can extract info from Macbinary files
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-robotremoteserver/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-robotremoteserver/Makefile 451064 2017-10-02 03:14:10Z vanilla $
 
 PORTNAME=	robotremoteserver
-PORTVERSION=	1.0.1
+PORTVERSION=	1.1
 CATEGORIES=	devel www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +13,8 @@ LICENSE=	APACHE20
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}robotframework>=2.7.5:devel/py-robotframework
 
-USES=		python:2
+USES=		python:-2.7
 USE_PYTHON=	distutils autoplist
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

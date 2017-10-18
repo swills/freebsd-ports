@@ -1,8 +1,8 @@
 # Created by: Mihail Timofeev <9267096@gmail.com>
-# $FreeBSD: head/russian/wordpress/Makefile 447336 2017-08-04 14:26:36Z joneum $
+# $FreeBSD: head/russian/wordpress/Makefile 451327 2017-10-05 17:42:07Z joneum $
 
 PORTNAME=	wordpress
-PORTVERSION=	4.8.1
+PORTVERSION=	4.8.2
 DISTVERSIONSUFFIX=	-ru_RU
 CATEGORIES=	russian www
 MASTER_SITES=	http://ru.wordpress.org/

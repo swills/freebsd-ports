@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/www/yuicompressor/Makefile 437039 2017-03-27 11:12:59Z sunpoet $
+# $FreeBSD: head/www/yuicompressor/Makefile 450531 2017-09-24 18:51:08Z sunpoet $
 
 PORTNAME=	yuicompressor
 PORTVERSION=	2.4.8
@@ -13,7 +13,7 @@ EXTRACT_ONLY=	# empty
 MAINTAINER=	citrin@citrin.ru
 COMMENT=	The Yahoo! JavaScript and CSS Compressor
 
-LICENSE=	BSD3CLAUSE MPL
+LICENSE=	BSD3CLAUSE MPL20
 LICENSE_COMB=	multi
 
 NO_WRKSUBDIR=	yes

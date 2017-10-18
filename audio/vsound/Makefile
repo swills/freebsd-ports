@@ -1,11 +1,12 @@
 # Created by: Rahul Siddharthan <rsidd@online.fr>
-# $FreeBSD: head/audio/vsound/Makefile 441847 2017-05-27 15:07:11Z linimon $
+# $FreeBSD: head/audio/vsound/Makefile 452000 2017-10-13 14:19:07Z danfe $
 
 PORTNAME=	vsound
 PORTVERSION=	0.6
 PORTREVISION=	6
 CATEGORIES=	audio
-MASTER_SITES=	http://www.vsound.org/
+MASTER_SITES=	http://down1.chinaunix.net/distfiles/ \
+		http://freebsd.nsu.ru/distfiles/ GENTOO
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Utility for capturing audio streams from programs with OSS output

@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/databases/sqlrelay/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/databases/sqlrelay/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	${SQLRELAY_PORTNAME}
 PORTVERSION=	${SQLRELAY_PORTVERSION}
@@ -16,7 +16,6 @@ LIB_DEPENDS=	librudiments.so:devel/rudiments \
 		libkrb5.so:security/krb5 \
 		libcurl.so:ftp/curl
 
-WANT_GNOME=	yes
 USES=		gmake libtool pathfix python readline
 PATHFIX_MAKEFILEIN=	Makefile
 CPPFLAGS+=	-I${LOCALBASE}/include

@@ -1,5 +1,5 @@
 # Created by: cy@FreeBSD.org
-# $FreeBSD: head/sysutils/cfengine-masterfiles311/Makefile 447760 2017-08-11 13:59:57Z cy $
+# $FreeBSD: head/sysutils/cfengine-masterfiles311/Makefile 451263 2017-10-05 01:56:32Z cy $
 
 PORTNAME=	cfengine-masterfiles
 PORTVERSION=	3.11.0
@@ -15,8 +15,10 @@ LICENSE=	GPLv3
 
 CPE_VENDOR=	gnu
 
+CONFLICTS=      cfengine-masterfiles3[0-9]-* cfengine-masterfiles31[02-9]-*
 .if !defined(MASTERDIR)
 PKGNAMESUFFIX=	311
+CONFLICTS+=     cfengine-masterfiles-3.*
 .endif
 
 RUN_DEPENDS=	cf-agent:sysutils/cfengine${PKGNAMESUFFIX}

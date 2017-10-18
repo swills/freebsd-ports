@@ -1,8 +1,8 @@
 # Created by: J.F. Dockes
-# $FreeBSD: head/databases/xapian-core/Makefile 441868 2017-05-27 19:42:13Z sunpoet $
+# $FreeBSD: head/databases/xapian-core/Makefile 452213 2017-10-16 17:45:48Z sunpoet $
 
 PORTNAME=	xapian-core
-PORTVERSION=	1.4.4
+PORTVERSION=	1.4.5
 PORTEPOCH=	1
 CATEGORIES=	databases
 MASTER_SITES=	http://oligarchy.co.uk/xapian/${PORTVERSION}/ \
@@ -27,9 +27,6 @@ GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
 USES=		libtool pathfix tar:xz
-
-PORTDATA=	*
-PORTDOCS=	*
 
 SSE2_CONFIGURE_ENABLE=	sse
 

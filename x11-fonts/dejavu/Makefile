@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/dejavu/Makefile 426663 2016-11-20 23:55:11Z sunpoet $
+# $FreeBSD: head/x11-fonts/dejavu/Makefile 451453 2017-10-07 09:27:57Z sunpoet $
 
 PORTNAME=	dejavu
 PORTVERSION=	2.37
@@ -9,6 +9,16 @@ MASTER_SITES=	SF
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Bitstream Vera Fonts clone with a wider range of characters
+
+LICENSE=	AMS AREV BITSTREAM
+LICENSE_COMB=	multi
+LICENSE_NAME_AMS=	AMSFonts Copyright version 2.2
+LICENSE_NAME_AREV=	Arev Fonts Copyright
+LICENSE_NAME_BITSTREAM=	Bitstream Vera Fonts Copyright
+LICENSE_FILE=	${WRKSRC}/LICENSE
+LICENSE_PERMS_AMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+LICENSE_PERMS_AREV=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+LICENSE_PERMS_BITSTREAM=dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 OPTIONS_DEFINE=	DOCS LINKS
 OPTIONS_DEFAULT=LINKS

@@ -1,5 +1,5 @@
 # Created by: Tassilo Philipp <tphilipp@potion-studios.com>
-# $FreeBSD: head/devel/psptoolchain-binutils/Makefile 426195 2016-11-16 00:33:20Z linimon $
+# $FreeBSD: head/devel/psptoolchain-binutils/Makefile 451722 2017-10-10 23:21:06Z linimon $
 
 PORTNAME=	binutils
 PORTVERSION=	2.22
@@ -19,7 +19,7 @@ BROKEN_powerpc64=	Does not build
 USES=		gmake tar:bzip2 libtool
 
 HAS_CONFIGURE=	yes
-CONFIGURE_TARGET=	${ARCH:S/amd64/x86_64/:S/armv6/arm/}-unknown-${OPSYS:tl}${OSREL}
+CONFIGURE_TARGET=	${ARCH:S/amd64/x86_64/:C/armv*/arm/}-unknown-${OPSYS:tl}${OSREL}
 CONFIGURE_ARGS=	--prefix=${PREFIX} \
 		--target="psp" \
 		--enable-install-libbfd \

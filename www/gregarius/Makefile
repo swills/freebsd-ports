@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/gregarius/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/www/gregarius/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	gregarius
 PORTVERSION=	0.6.1
@@ -12,6 +12,7 @@ COMMENT=	Web-based RSS/RDF/ATOM news aggregator
 
 LICENSE=	GPLv2
 
+USES=		php
 USE_PHP=	gettext iconv mbstring session xml zlib
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}

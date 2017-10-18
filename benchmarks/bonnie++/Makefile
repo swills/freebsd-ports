@@ -1,10 +1,10 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/benchmarks/bonnie++/Makefile 429165 2016-12-22 15:49:11Z martymac $
+# $FreeBSD: head/benchmarks/bonnie++/Makefile 451953 2017-10-13 08:09:19Z bapt $
 
 PORTNAME=	bonnie++
 PORTVERSION=	1.97.3
 CATEGORIES=	benchmarks
-MASTER_SITES=	http://www.coker.com.au/bonnie++/experimental/
+MASTER_SITES=	https://www.coker.com.au/bonnie++/
 
 MAINTAINER=	martymac@FreeBSD.org
 COMMENT=	Performance Test of Filesystem I/O

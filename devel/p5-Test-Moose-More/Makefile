@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-Test-Moose-More/Makefile 443839 2017-06-18 17:32:46Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Moose-More/Makefile 450437 2017-09-23 14:10:15Z sunpoet $
 
 PORTNAME=	Test-Moose-More
-PORTVERSION=	0.048
+PORTVERSION=	0.050
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,5 +1,5 @@
 # Created by: Carsten Jensen <carsten@sitracker.org>
-# $FreeBSD: head/www/sit/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/www/sit/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	sit
 PORTVERSION=	3.67
@@ -13,8 +13,8 @@ COMMENT=	PHP incident tracking system / Helpdesk
 
 LICENSE=	GPLv2
 
+USES=		php:web
 USE_PHP=	pcre mysql session zlib mbstring
-WANT_PHP_WEB=	yes
 
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/sit-${PORTVERSION}

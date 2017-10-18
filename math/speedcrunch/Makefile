@@ -1,21 +1,31 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/math/speedcrunch/Makefile 425617 2016-11-07 12:40:37Z amdmi3 $
+# $FreeBSD: head/math/speedcrunch/Makefile 451619 2017-10-09 14:57:12Z amdmi3 $
 
 PORTNAME=	speedcrunch
-DISTVERSION=	0.11
+PORTVERSION=	0.12.0
+DISTVERSIONSUFFIX=	-${BB_COMMIT}
 CATEGORIES=	math
+MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	mikael.urankar@gmail.com
 COMMENT=	Keyboard-oriented desktop scientific calculator
 
 LICENSE=	GPLv2+
 
-USE_GITHUB=	yes
-GH_PROJECT=	SpeedCrunch
-
 USES=		cmake:outsource
+
+BB_ACCOUNT=	heldercorreia
+BB_PROJECT=	${PORTNAME}
+BB_COMMIT=	7f2565d6a0ad
+
+WRKSRC=		${WRKDIR}/${BB_ACCOUNT}-${BB_PROJECT}-${BB_COMMIT}
 CMAKE_SOURCE_PATH=	${WRKSRC}/src
-USE_QT4=	qmake_build moc_build rcc_build uic_build corelib gui network
-USE_XORG=	x11 xext sm ice
+USE_QT5=	buildtools core gui help qmake_build qml widgets
+USE_XORG=	x11
+
+post-patch:
+# Remove custom options for compiler warnings
+	@${REINPLACE_CMD} -e 's|-W[-_[:alnum:]]*||g' \
+		${CMAKE_SOURCE_PATH}/CMakeLists.txt
 
 .include <bsd.port.mk>

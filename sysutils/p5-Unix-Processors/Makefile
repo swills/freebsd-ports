@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/sysutils/p5-Unix-Processors/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/sysutils/p5-Unix-Processors/Makefile 451006 2017-09-30 19:26:32Z jadawin $
 
 PORTNAME=	Unix-Processors
-PORTVERSION=	2.044
+PORTVERSION=	2.046
 CATEGORIES=	sysutils perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

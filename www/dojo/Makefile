@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/dojo/Makefile 416152 2016-05-30 13:20:49Z wg $
+# $FreeBSD: head/www/dojo/Makefile 451098 2017-10-02 19:51:50Z wg $
 
 PORTNAME=		dojo
-PORTVERSION=		1.11.1
+PORTVERSION=		1.12.2
 CATEGORIES=		www
 MASTER_SITES=		http://download.dojotoolkit.org/release-${PORTVERSION}/
 DISTNAME=		dojo-release-${PORTVERSION}

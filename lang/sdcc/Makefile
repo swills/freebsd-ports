@@ -1,9 +1,9 @@
-# $FreeBSD: head/lang/sdcc/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/lang/sdcc/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	sdcc
 PORTVERSION=	3.6.0
 DISTVERSIONPREFIX=	src-
-PORTREVISION=	4
+PORTREVISION=	6
 CATEGORIES=	lang
 MASTER_SITES=	SF
 

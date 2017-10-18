@@ -1,5 +1,5 @@
 # Created by: AMAKAWA Shuhei <amakawa@jp.FreeBSD.org>
-# $FreeBSD: head/cad/cider/Makefile 441429 2017-05-21 21:55:08Z linimon $
+# $FreeBSD: head/cad/cider/Makefile 451979 2017-10-13 11:06:09Z bapt $
 
 PORTNAME=	cider
 PORTVERSION=	1.b1
@@ -11,6 +11,7 @@ DISTNAME=	cider1b1
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Mixed-level circuit and device simulator (includes SPICE3)
 
+BROKEN=		No public distfiles
 BROKEN_aarch64=		fails to link: missing sbrk
 BROKEN_powerpc64=	fails to compile: ccache: cc: FreeBSD: No such file or directory
 

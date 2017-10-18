@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/epazote/Makefile 441504 2017-05-23 05:49:55Z miwi $
+# $FreeBSD: head/sysutils/epazote/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	epazote
 PORTVERSION=	2.1.2
@@ -18,8 +18,6 @@ USE_GITHUB=	yes
 GH_TUPLE=	epazote:scheduler:0.1.0:scheduler/src/github.com/epazote/scheduler \
 		go-yaml:yaml:cd8b52f:yaml/src/github.com/go-yaml/yaml
 GH_SUBDIR=	src/github.com/${PORTNAME}/${PORTNAME}
-
-STRIP=		# stripping can break go binaries
 
 PLIST_FILES=	bin/epazote
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 449946 2017-09-16 07:10:37Z tcberner $
+# $FreeBSD: head/sysutils/Makefile 452270 2017-10-17 07:37:56Z se $
 #
 
     COMMENT = System utilities
@@ -74,11 +74,6 @@
     SUBDIR += bacula-client-static
     SUBDIR += bacula-docs
     SUBDIR += bacula-server
-    SUBDIR += bacula5-bat
-    SUBDIR += bacula5-client
-    SUBDIR += bacula5-client-static
-    SUBDIR += bacula5-docs
-    SUBDIR += bacula5-server
     SUBDIR += bacula9-bat
     SUBDIR += bacula9-client
     SUBDIR += bacula9-client-static
@@ -366,6 +361,7 @@
     SUBDIR += fusefs-httpfs
     SUBDIR += fusefs-ifuse
     SUBDIR += fusefs-libs
+    SUBDIR += fusefs-libs3
     SUBDIR += fusefs-lkl
     SUBDIR += fusefs-mhddfs
     SUBDIR += fusefs-mp3fs
@@ -480,6 +476,7 @@
     SUBDIR += intel-nvmupdate
     SUBDIR += intel-pcm
     SUBDIR += intel-qcu
+    SUBDIR += iocage
     SUBDIR += iocell
     SUBDIR += iogen
     SUBDIR += iograph
@@ -575,6 +572,7 @@
     SUBDIR += logwatch
     SUBDIR += lookat
     SUBDIR += lr
+    SUBDIR += lscpu
     SUBDIR += lsof
     SUBDIR += lsop
     SUBDIR += ltrace
@@ -867,6 +865,7 @@
     SUBDIR += puppet4
     SUBDIR += puppet5
     SUBDIR += puppetserver
+    SUBDIR += puppetserver5
     SUBDIR += pv
     SUBDIR += pwd_unmkdb
     SUBDIR += pwgen
@@ -922,7 +921,6 @@
     SUBDIR += py-zdaemon
     SUBDIR += py-zfs
     SUBDIR += py3-execnet
-    SUBDIR += py3-iocage
     SUBDIR += py3-pkginfo
     SUBDIR += py3-ptyprocess
     SUBDIR += pydf
@@ -1143,6 +1141,7 @@
     SUBDIR += syslog-ng-incubator
     SUBDIR += syslog-ng310
     SUBDIR += syslog-ng311
+    SUBDIR += syslog-ng312
     SUBDIR += syslog-ng36
     SUBDIR += syslog-ng37
     SUBDIR += syslog-ng39
@@ -1354,6 +1353,7 @@
     SUBDIR += znapzend
     SUBDIR += zogftw
     SUBDIR += zrep
+    SUBDIR += zrepl
     SUBDIR += zsd
     SUBDIR += zxfer
 

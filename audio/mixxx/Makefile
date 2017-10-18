@@ -1,14 +1,14 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/audio/mixxx/Makefile 448041 2017-08-16 15:44:48Z sunpoet $
+# $FreeBSD: head/audio/mixxx/Makefile 450573 2017-09-25 06:34:58Z acm $
 
 PORTNAME=	mixxx
 PORTVERSION=	2.0.0
 DISTVERSIONSUFFIX=	-src
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	http://downloads.mixxx.org/${PORTNAME}-${PORTVERSION}/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	acm@FreeBSD.org
 COMMENT=	DJ mixing application
 
 LICENSE=	GPLv2+
@@ -32,8 +32,8 @@ BROKEN_aarch64=		fails to compile: Exception("invalid machine type")
 BROKEN_powerpc64=	fails to configure: unmet dependencies: Could not find libprotobuf, libchromaprint, libmp4, and libwavpack
 
 USES=		scons iconv pkgconfig
-USE_QT4=	corelib gui network opengl script scripttools sql svg \
-		testlib xml xmlpatterns linguisttools_build moc_build \
+USE_QT4=	corelib gui network opengl script scripttools sql sql-sqlite3 \
+		svg testlib xml xmlpatterns linguisttools_build moc_build \
 		qmake_build rcc_build uic_build
 USE_GL=		gl glu
 MAKE_ARGS=	qtdir="${PREFIX}" install_root="${PREFIX}" \

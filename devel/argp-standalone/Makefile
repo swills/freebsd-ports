@@ -1,9 +1,9 @@
 # Created by: Sergey Matveychuk <sem@ciam.ru>
-# $FreeBSD: head/devel/argp-standalone/Makefile 421834 2016-09-11 16:38:32Z amdmi3 $
+# $FreeBSD: head/devel/argp-standalone/Makefile 451174 2017-10-03 21:55:00Z bapt $
 
 PORTNAME=	argp-standalone
 PORTVERSION=	1.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://www.lysator.liu.se/~nisse/misc/ \
 		LOCAL/sem

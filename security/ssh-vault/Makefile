@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/ssh-vault/Makefile 449510 2017-09-09 20:51:39Z dbaio $
+# $FreeBSD: head/security/ssh-vault/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	ssh-vault
-PORTVERSION=	0.12.1
+PORTVERSION=	0.12.3
 CATEGORIES=	security
 
 MAINTAINER=	nbari@tequila.io
@@ -19,8 +19,6 @@ USE_GITHUB=	yes
 GH_TUPLE=	ssh-vault:crypto:ae180e0:crypto/src/github.com/ssh-vault/crypto \
 		ssh-vault:ssh2pem:c1edc64:ssh2pem/src/github.com/ssh-vault/ssh2pem
 GH_SUBDIR=	src/github.com/${PORTNAME}/${PORTNAME}
-
-STRIP=		# stripping can break go binaries
 
 PLIST_FILES=	bin/ssh-vault
 

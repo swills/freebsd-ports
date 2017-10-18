@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/direnv/Makefile 450327 2017-09-22 09:01:55Z amdmi3 $
+# $FreeBSD: head/sysutils/direnv/Makefile 452197 2017-10-16 13:56:46Z swills $
 
 PORTNAME=	direnv
-PORTVERSION=	2.11.3
+PORTVERSION=	2.13.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
@@ -15,10 +15,15 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/go:lang/go
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	zimbatm
+GH_SUBDIR=	src/github.com/zimbatm/direnv
+MAKE_ENV=	GOPATH=${WRKSRC}
 
 USES=		gmake
 
 PLIST_FILES=	bin/direnv man/man1/direnv.1.gz man/man1/direnv-stdlib.1.gz
+
+post-patch:
+	${MV} ${WRKSRC}/vendor/github.com/direnv ${WRKSRC}/src/github.com
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/direnv \

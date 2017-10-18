@@ -1,11 +1,10 @@
 # Created by: Aleksander Fafula <alex@fafula.com>
-# $FreeBSD: head/comms/nokryptia/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/nokryptia/Makefile 452001 2017-10-13 14:19:26Z bapt $
 
 PORTNAME=	nokryptia
 PORTVERSION=	1.3
 CATEGORIES=	comms
-MASTER_SITES=	http://tuxmobil.org/software/nokryptia/ \
-		http://www.bsdguru.org/distfiles/
+MASTER_SITES=	http://tuxmobil.org/software/nokryptia/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tool for fast loading mp3s into Nokia 5510

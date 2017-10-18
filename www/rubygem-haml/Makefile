@@ -1,8 +1,8 @@
 # Created by: Robert Gogolok <gogo@cs.uni-sb.de>
-# $FreeBSD: head/www/rubygem-haml/Makefile 449485 2017-09-09 09:22:04Z sunpoet $
+# $FreeBSD: head/www/rubygem-haml/Makefile 452111 2017-10-15 00:37:48Z sunpoet $
 
 PORTNAME=	haml
-PORTVERSION=	5.0.3
+PORTVERSION=	5.0.4
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

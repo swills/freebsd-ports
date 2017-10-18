@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/putty/Makefile 447756 2017-08-11 12:58:55Z mandree $
+# $FreeBSD: head/security/putty/Makefile 452147 2017-10-15 14:05:04Z madpilot $
 
 PORTNAME=	putty
 PORTVERSION=	0.70
@@ -72,7 +72,7 @@ _COMPAT=		-DNO_GSSAPI
 
 _COMPAT+=	-DOMIT_UTMP
 
-.if defined(WITH_DEBUG) && ${WITH_DEBUG} != "no"
+.if defined(WITH_DEBUG)
 XFLAGS=		-DDEBUG
 .endif
 

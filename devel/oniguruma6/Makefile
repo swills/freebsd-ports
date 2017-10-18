@@ -1,8 +1,8 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/oniguruma6/Makefile 445714 2017-07-13 21:15:21Z pawel $
+# $FreeBSD: head/devel/oniguruma6/Makefile 451640 2017-10-09 20:27:09Z pi $
 
 PORTNAME=	oniguruma
-PORTVERSION=	6.4.0
+PORTVERSION=	6.6.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel textproc
 PKGNAMESUFFIX=	6
@@ -13,6 +13,7 @@ COMMENT=	BSDL Regular Expressions library compatible with POSIX/GNU/Perl
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+USES=		pathfix autoreconf libtool
 USE_GITHUB=	yes
 GH_ACCOUNT=	kkos
 
@@ -20,7 +21,6 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 
 CONFLICTS_INSTALL=	oniguruma[45]
 
-USES=		pathfix autoreconf libtool
 PATHFIX_MAKEFILEIN=	Makefile.am
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

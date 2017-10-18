@@ -1,5 +1,5 @@
 # Created by: Alexander Zhuravlev <zaa@zaa.pp.ru>
-# $FreeBSD: head/www/templatelite/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/www/templatelite/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	templatelite
 PORTVERSION=	2.10
@@ -15,8 +15,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 NO_BUILD=	yes
 NO_ARCH=	yes
+USES=		php:web
 USE_PHP=	pcre
-WANT_PHP_WEB=	yes
 WRKSRC=		${WRKDIR}/template_lite
 SUB_FILES=	pkg-message
 

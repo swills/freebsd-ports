@@ -1,9 +1,9 @@
 # Created by: Rodrigo Osorio <rodrigo@freebsd.org>
-# $FreeBSD: head/x11-fm/librfm/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-fm/librfm/Makefile 450775 2017-09-27 18:08:14Z rakuco $
 
 PORTNAME=	librfm
 PORTVERSION=	5.3.16.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fm
 MASTER_SITES=	SF/xffm/${PORTVERSION}
 DISTNAME=	${PORTNAME}5-${PORTVERSION}

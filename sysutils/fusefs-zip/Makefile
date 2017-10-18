@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/fusefs-zip/Makefile 422419 2016-09-19 09:19:47Z vg $
+# $FreeBSD: head/sysutils/fusefs-zip/Makefile 450775 2017-09-27 18:08:14Z rakuco $
 
 PORTNAME=	fuse-zip
 PORTVERSION=	0.4.2
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://bitbucket.org/agalanin/fuse-zip/downloads/
 

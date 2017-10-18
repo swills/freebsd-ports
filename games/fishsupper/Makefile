@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/fishsupper/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/fishsupper/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	fishsupper
 PORTVERSION=	0.1.6
-PORTREVISION=	9
+PORTREVISION=	11
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}
 

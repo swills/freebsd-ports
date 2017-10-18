@@ -1,8 +1,8 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/rubygem-flexmock/Makefile 434616 2017-02-22 17:14:54Z sunpoet $
+# $FreeBSD: head/devel/rubygem-flexmock/Makefile 451150 2017-10-03 15:35:58Z sunpoet $
 
 PORTNAME=	flexmock
-PORTVERSION=	2.3.5
+PORTVERSION=	2.3.6
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-librarianp/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-librarianp/Makefile 451450 2017-10-07 09:14:09Z sunpoet $
 
 PORTNAME=	librarianp
-PORTVERSION=	0.6.3
+PORTVERSION=	0.6.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

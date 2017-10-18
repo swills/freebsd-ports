@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/minerbold/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/minerbold/Makefile 450683 2017-09-26 16:48:02Z amdmi3 $
 
 PORTNAME=	minerbold
-PORTVERSION=	1.3
+PORTVERSION=	1.4
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org

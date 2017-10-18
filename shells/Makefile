@@ -1,4 +1,4 @@
-# $FreeBSD: head/shells/Makefile 430153 2016-12-31 19:42:42Z marino $
+# $FreeBSD: head/shells/Makefile 450378 2017-09-22 14:57:41Z matthew $
 #
 
     COMMENT = Shells
@@ -45,6 +45,7 @@
     SUBDIR += viewglob
     SUBDIR += vshnu
     SUBDIR += wcd
+    SUBDIR += xonsh
     SUBDIR += zsh
     SUBDIR += zsh-navigation-tools
 

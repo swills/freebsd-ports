@@ -1,11 +1,10 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/malint/Makefile 376388 2015-01-06 09:36:21Z ehaupt $
+# $FreeBSD: head/audio/malint/Makefile 451965 2017-10-13 08:58:28Z bapt $
 
 PORTNAME=	malint
 DISTVERSION=	0.2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.nih.at/malint/ \
-		ftp://sunsite.univie.ac.at/pub/nih/malint/ \
 		LOCAL/ehaupt
 
 MAINTAINER=	ehaupt@FreeBSD.org

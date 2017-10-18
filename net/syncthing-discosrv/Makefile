@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/syncthing-discosrv/Makefile 415986 2016-05-28 12:57:06Z swills $
+# $FreeBSD: head/net/syncthing-discosrv/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	syncthing-discosrv
 PORTVERSION=	0.13.0
@@ -20,8 +20,6 @@ PLIST_FILES=	bin/syncthing-discosrv
 USE_RC_SUBR=	syncthing-discosrv
 USERS=		syncthing
 GROUPS=		syncthing
-
-STRIP=		# stripping can break go binaries
 
 post-patch:
 	@cd ${WRKSRC} ; ${MKDIR} src/github.com/${GH_ACCOUNT}/${GH_PROJECT} ; \

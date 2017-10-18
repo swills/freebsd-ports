@@ -1,5 +1,5 @@
 # Created by: Wen heping <wenheping@gmail.com>
-# $FreeBSD: head/www/efront/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/www/efront/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	efront
 DISTVERSION=	3.6.14
@@ -11,7 +11,7 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}_build18016_community
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Elearning and Human Capital Development platform
 
-USES=		cpe shebangfix zip
+USES=		cpe shebangfix zip php
 SHEBANG_FILES=	www/phplivedocx/samples/mail-merge/supported-file-formats/generate-documents.php \
 		www/phplivedocx/samples/mail-merge/supported-file-formats/show-supported-file-formats.php \
 		www/phplivedocx/samples/mail-merge/template-info/list-template-info.php \

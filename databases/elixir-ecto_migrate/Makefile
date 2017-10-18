@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/elixir-ecto_migrate/Makefile 435209 2017-03-02 06:11:18Z olgeni $
+# $FreeBSD: head/databases/elixir-ecto_migrate/Makefile 451570 2017-10-08 19:36:26Z antoine $
 
 PORTNAME=	ecto_migrate
 PORTVERSION=	0.6.3
@@ -12,6 +12,8 @@ COMMENT=	Automatic migrations for Ecto
 LICENSE=	APACHE20
 
 BROKEN=		Does not build with latest Ecto
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-11-09
 
 USES=		elixir
 USE_GITHUB=	yes

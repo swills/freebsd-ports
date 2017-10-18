@@ -1,8 +1,8 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/audio/py-soundscrape/Makefile 442616 2017-06-05 13:00:21Z cpm $
+# $FreeBSD: head/audio/py-soundscrape/Makefile 451959 2017-10-13 08:25:50Z cpm $
 
 PORTNAME=	soundscrape
-PORTVERSION=	0.30.0
+PORTVERSION=	0.30.1
 CATEGORIES=	audio python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

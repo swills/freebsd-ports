@@ -1,11 +1,11 @@
 # Created by: ache
-# $FreeBSD: head/archivers/ha/Makefile 370833 2014-10-14 08:59:35Z ak $
+# $FreeBSD: head/archivers/ha/Makefile 451301 2017-10-05 10:38:13Z ak $
 
 PORTNAME=	ha
 PORTVERSION=	0.999b
 PORTREVISION=	1
 CATEGORIES=	archivers
-MASTER_SITES=	https://googledrive.com/host/0BwCT-sp3iBCaeDRPYm1jTjl1Qmc/
+MASTER_SITES=	https://aklv.github.io/distfiles/
 DISTNAME=	ha0999
 
 MAINTAINER=	ak@FreeBSD.org

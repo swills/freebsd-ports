@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/xpdf3/Makefile 449753 2017-09-13 05:08:30Z cy $
+# $FreeBSD: head/graphics/xpdf3/Makefile 451255 2017-10-05 01:52:47Z cy $
 
 PORTNAME=	xpdf
 PORTVERSION=	3.04
@@ -10,6 +10,9 @@ MASTER_SITES=	http://mirrors.rit.edu/zi/ \
 		http://komquats.com/distfiles/
 .if !defined(MASTERDIR)
 PKGNAMESUFFIX=  3
+CONFLICTS_INSTALL=	xpdf4-* xpdf-*
+.else
+CONFLICTS_INSTALL=	xpdf4-*	xpdf3-*
 .endif
 
 MAINTAINER=	cy@FreeBSD.org

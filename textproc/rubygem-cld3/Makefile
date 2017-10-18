@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-cld3/Makefile 450013 2017-09-17 18:00:13Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-cld3/Makefile 452233 2017-10-16 17:47:32Z sunpoet $
 
 PORTNAME=	cld3
-DISTVERSION=	3.2.0
+DISTVERSION=	3.2.1
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

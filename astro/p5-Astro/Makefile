@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/p5-Astro/Makefile 384893 2015-04-28 11:58:47Z mat $
+# $FreeBSD: head/astro/p5-Astro/Makefile 451683 2017-10-10 11:20:20Z sunpoet $
 
 PORTNAME=	Astro
 PORTVERSION=	0.78
@@ -9,6 +9,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Collection of useful astronomical routines in Perl
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

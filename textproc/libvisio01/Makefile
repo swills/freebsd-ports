@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/libvisio01/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/textproc/libvisio01/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	libvisio
 PORTVERSION=	0.1.5
-PORTREVISION=	10
+PORTREVISION=	13
 CATEGORIES=	textproc devel
 MASTER_SITES=	http://dev-www.libreoffice.org/src/${PORTNAME}/
 PKGNAMESUFFIX=	01
@@ -10,8 +10,9 @@ PKGNAMESUFFIX=	01
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Library and tools for parsing the visio file format structure
 
-LICENSE=	LGPL21 MPL GPLv2
+LICENSE=	GPLv2+ LGPL21+ MPL11 MPL20
 LICENSE_COMB=	dual
+LICENSE_FILE_MPL20=	${WRKSRC}/COPYING.MPL
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/spirit/include/classic_core.hpp:devel/boost-libs
 LIB_DEPENDS=	libicui18n.so:devel/icu \

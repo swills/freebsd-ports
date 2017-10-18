@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/asterisk13/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/net/asterisk13/Makefile 451878 2017-10-12 13:59:48Z madpilot $
 
 PORTNAME=	asterisk
 PORTVERSION=	13.17.2
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://downloads.asterisk.org/pub/telephony/%SUBDIR%/:DEFAULT,g729
 MASTER_SITE_SUBDIR=	asterisk/ \
@@ -101,7 +102,7 @@ G729_DISTFILES=			${ASTERISK_CORE_G729_SOUNDS}:g729 \
 
 ASTVERSION_DESC?= Install astversion (requires bash)
 BACKTRACE_DESC?= Stack backtrace support via (lib)execinfo
-BASE_DESC=	Use base compiler (experimental)
+BASE_DESC=	Use base compiler
 DAHDI_DESC?=	DAHDI support
 EXCHANGE_DESC?=	Exchange calendar support
 MP3PLAYER_DESC=	Install MP3 Player for Music-On-Hold (mpg123)

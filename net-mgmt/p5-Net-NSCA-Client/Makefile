@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/p5-Net-NSCA-Client/Makefile 441618 2017-05-24 21:28:05Z feld $
+# $FreeBSD: head/net-mgmt/p5-Net-NSCA-Client/Makefile 451825 2017-10-12 08:10:57Z sunpoet $
 
 PORTNAME=	Net-NSCA-Client
 PORTVERSION=	0.009002
@@ -48,8 +48,5 @@ USE_PERL5=	modbuild
 post-patch:
 	@cd ${WRKSRC} && ${RM} bin/send_nsca
 	@cd ${WRKSRC} && ${RM} t/send_nsca.t
-
-regression-test: build
-	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./Build test
 
 .include <bsd.port.mk>

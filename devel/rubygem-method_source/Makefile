@@ -1,8 +1,8 @@
 # Created by: Shin-ya MURAKAMI <murashin@gfd-dennou.org>
-# $FreeBSD: head/devel/rubygem-method_source/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-method_source/Makefile 450746 2017-09-27 13:24:16Z sunpoet $
 
 PORTNAME=	method_source
-PORTVERSION=	0.8.2
+PORTVERSION=	0.9.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

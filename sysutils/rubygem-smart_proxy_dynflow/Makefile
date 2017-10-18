@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/rubygem-smart_proxy_dynflow/Makefile 448058 2017-08-16 15:46:19Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-smart_proxy_dynflow/Makefile 451295 2017-10-05 09:49:55Z sunpoet $
 
 PORTNAME=	smart_proxy_dynflow
-PORTVERSION=	0.1.7
+PORTVERSION=	0.1.8
 CATEGORIES=	sysutils ruby
 MASTER_SITES=	RG
 

@@ -1,17 +1,19 @@
 # Created by: Jeremie Le Hen <jlh@FreeBSD.org>
-# $FreeBSD: head/net/bsdrcmds/Makefile 444814 2017-07-01 09:07:19Z jlh $
+# $FreeBSD: head/net/bsdrcmds/Makefile 451120 2017-10-03 09:17:08Z jlh $
 
 PORTNAME=	bsdrcmds
-PORTVERSION=	20170627
+PORTVERSION=	20171003.01
 CATEGORIES=	net
-MASTER_SITES=	LOCAL/jlh
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	jlehen
 
 MAINTAINER=	jlh@FreeBSD.org
-COMMENT=	FreeBSD rcmds (rcp/rlogin/rlogind/rsh/rshd/ruptime/rwho/rwhod)
+COMMENT=	FreeBSD rcmds (rcp/rlogin/rlogind/rsh/rshd)
 
 LICENSE=	BSD3CLAUSE
 
-USES=		tar:xz uidfix
+USES=		uidfix
 
 MAKE_ARGS+=		BINOWN=${BINOWN} BINMODE=${BINMODE}
 MAKE_ENV+=		NO_WERROR=1

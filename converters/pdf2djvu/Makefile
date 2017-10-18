@@ -1,5 +1,5 @@
 # Created by: Denise H. G. <darcsis@gmail.com>
-# $FreeBSD: head/converters/pdf2djvu/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/converters/pdf2djvu/Makefile 452013 2017-10-13 15:29:42Z bapt $
 
 PORTNAME=	pdf2djvu
 PORTVERSION=	0.7.21
@@ -11,6 +11,8 @@ MAINTAINER=	darcsis@gmail.com
 COMMENT=	Pdf2djvu creates DjVu files from PDF files
 
 LICENSE=	GPLv2
+
+BROKEN=		No public distfiles
 
 BUILD_DEPENDS=	${LOCALBASE}/include/pstreams/pstream.h:devel/pstreams
 LIB_DEPENDS=	libpoppler.so:graphics/poppler \

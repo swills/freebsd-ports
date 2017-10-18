@@ -1,9 +1,9 @@
 # Created by: cfs@ing.puc.cl (original)
-# $FreeBSD: head/graphics/urt/Makefile 439602 2017-04-28 11:16:01Z rene $
+# $FreeBSD: head/graphics/urt/Makefile 451378 2017-10-06 11:18:35Z tobik $
 
 PORTNAME=	urt
 PORTVERSION=	3.1b1
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	graphics
 MASTER_SITES=	http://BSDforge.com/projects/source/graphics/utah-raster/
 
@@ -22,6 +22,7 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 
 NO_WRKSUBDIR=	yes
 
+CFLAGS+=	-I${LOCALBASE}/include/netpbm
 USE_XORG=	x11 xext
 HAS_CONFIGURE=	yes
 CONFIGURE_SCRIPT=Configure

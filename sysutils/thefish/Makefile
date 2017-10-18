@@ -1,5 +1,5 @@
 # Created by: Miguel Mendez <flynn@energyhq.homeip.net>
-# $FreeBSD: head/sysutils/thefish/Makefile 402133 2015-11-21 03:45:22Z pi $
+# $FreeBSD: head/sysutils/thefish/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	thefish
 PORTVERSION=	0.6.7
@@ -12,7 +12,6 @@ COMMENT=	Gtk+/ncurses rc.conf editor/management tool
 LICENSE=	BSD2CLAUSE
 
 USES=		pkgconfig tar:xz
-WANT_GNOME=	yes
 
 OPTIONS_SINGLE=		X11
 OPTIONS_SINGLE_X11=	GTK2

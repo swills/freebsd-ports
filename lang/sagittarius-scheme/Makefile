@@ -1,9 +1,8 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/lang/sagittarius-scheme/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/lang/sagittarius-scheme/Makefile 451116 2017-10-03 08:26:06Z ashish $
 
 PORTNAME=	sagittarius
-PORTVERSION=	0.8.0
-PORTREVISION=	2
+PORTVERSION=	0.8.7
 CATEGORIES=	lang
 MASTER_SITES=	https://bitbucket.org/ktakashi/sagittarius-scheme/downloads/ \
 		LOCAL/ashish
@@ -24,12 +23,13 @@ USES=		cmake pkgconfig
 ONLY_FOR_ARCHS=	amd64 i386
 MAKE_JOBS_UNSAFE=	yes
 
-OPTIONS_DEFINE=	ODBC
+OPTIONS_DEFINE=	ODBC SIMD
 
 PLIST_SUB=	PORTNAME=sagittarius PORTVERSION=${PORTVERSION}
 
 ODBC_LIB_DEPENDS=	libiodbc.so:databases/libiodbc
 ODBC_CMAKE_ON=		-DODBC_INCLUDE_DIR:STRING=${LOCALBASE}/include/libiodbc
+SIMD_CMAKE_BOOL=	USE_SSE
 OPTIONS_SUB=		ODBC
 
 .include <bsd.port.pre.mk>
@@ -43,13 +43,14 @@ PLIST_ARCH=	x86_64
 
 PLIST_SUB+=	PLIST_ARCH=${PLIST_ARCH}
 
+pre-configure:
+	@${CC} ${CFLAGS} -o ${WRKDIR}/cpuid ${FILESDIR}/cpuid.c
+	@${REINPLACE_CMD} -e 's,%%CPUID%%,${WRKDIR}/cpuid,' ${WRKSRC}/cmake/FindSSE.cmake
+
 post-patch-ODBC-off:
 	@${REINPLACE_CMD} -e '/odbc odbc/d' ${WRKSRC}/ext/CMakeLists.txt
 
 post-install:
 	@${LN} -sf ${PREFIX}/bin/sagittarius ${STAGEDIR}${PREFIX}/bin/sash
-
-post-build:
-	@${SETENV} ${MAKE_ENV} ${MAKE_CMD} -C ${WRKSRC} doc
 
 .include <bsd.port.post.mk>

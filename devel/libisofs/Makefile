@@ -1,8 +1,8 @@
 # Created by: J.R. Oldroyd <fbsd@opal.com>
-# $FreeBSD: head/devel/libisofs/Makefile 436494 2017-03-19 14:02:23Z rene $
+# $FreeBSD: head/devel/libisofs/Makefile 450487 2017-09-24 11:27:54Z riggs $
 
 PORTNAME=	libisofs
-PORTVERSION=	1.4.6
+PORTVERSION=	1.4.8
 CATEGORIES=	devel
 MASTER_SITES=	http://files.libburnia-project.org/releases/
 
@@ -14,8 +14,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libburn.so:devel/libburn
 
-GNU_CONFIGURE=	yes
 USES=		iconv libtool
+GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 

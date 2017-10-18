@@ -1,5 +1,5 @@
 # Created by: Richard Gallamore <ultima@FreeBSD.org>
-# $FreeBSD: head/www/plexwatchweb/Makefile 444980 2017-07-03 19:06:08Z ultima $
+# $FreeBSD: head/www/plexwatchweb/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	plexWatchWeb
 PORTVERSION=	1.5.4.2
@@ -12,6 +12,7 @@ COMMENT=	Web front-end for plexWatch
 
 RUN_DEPENDS=	plexWatch>=0.1.6:multimedia/plexwatch
 
+USES=		php
 USE_PHP=	curl json session simplexml sqlite3
 
 USERS=		${WWWOWN}

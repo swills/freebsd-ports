@@ -1,5 +1,5 @@
 # Created by: Marcin Cieslak <saper@SYSTEM.PL>
-# $FreeBSD: head/lang/tinypy/Makefile 438121 2017-04-09 22:45:33Z shaun $
+# $FreeBSD: head/lang/tinypy/Makefile 451494 2017-10-08 07:12:20Z antoine $
 
 PORTNAME=	tinypy
 PORTVERSION=	1.1
@@ -11,7 +11,7 @@ COMMENT=	Minimalist implementation of python in 64k of code
 
 LICENSE=	MIT PSFL
 LICENSE_COMB=	multi
-LICENSE_FILE=	LICENSE.txt
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 GH_ACCOUNT=	philhassey
 

@@ -1,5 +1,5 @@
 # Created by: Erik Olson <erikolson@olsonexpress.com>
-# $FreeBSD: head/games/linux-nwnclient/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/games/linux-nwnclient/Makefile 451570 2017-10-08 19:36:26Z antoine $
 
 PORTNAME=	nwnclient
 PORTVERSION=	1.69
@@ -20,6 +20,8 @@ MAINTAINER=	scf@FreeBSD.org
 COMMENT=	Neverwinter Nights Linux (x86) Client
 
 BROKEN=		does not fetch
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-11-09
 
 RUN_DEPENDS=	${LOCALBASE}/share/nwndata/docs/readme.txt:games/nwndata
 

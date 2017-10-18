@@ -1,9 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/games/naev/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/naev/Makefile 450775 2017-09-27 18:08:14Z rakuco $
 
 PORTNAME=	naev
 PORTVERSION=	0.7.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION}/
 

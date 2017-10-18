@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/hotcrp/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/hotcrp/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	hotcrp
 PORTVERSION=	2.94
@@ -12,8 +12,8 @@ COMMENT=	Web based conference management software
 RUN_DEPENDS=	pdftohtml:graphics/poppler-utils \
 		zip:archivers/zip
 
+USES=		php mysql:server
 USE_PHP=	mysqli gd session ctype
-USE_MYSQL=	server
 
 NO_BUILD=	yes
 SUB_FILES=	pkg-message

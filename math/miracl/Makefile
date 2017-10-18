@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/math/miracl/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/miracl/Makefile 451493 2017-10-08 06:39:40Z antoine $
 
 PORTNAME=	miracl
 PORTVERSION=	5.6
@@ -14,12 +14,12 @@ COMMENT=	Multiprecision Integer and Rational Arithmetic C/C++ Library
 
 LICENSE=	AGPLv3 COMMERCIAL
 LICENSE_COMB=	dual
-LICENSE_NAME_COMMERCIAL=	Commericial use license to not be bound by AGPLv3
+LICENSE_NAME_COMMERCIAL=	Commercial use license to not be bound by AGPLv3
 LICENSE_TEXT_COMMERCIAL=	License available from CertiVox for commercial use and
 LICENSE_TEXT_COMMERCIAL+=	to not be bound by the terms of the AGPLv3. Visit
 LICENSE_TEXT_COMMERCIAL+=	http://certivox.com/index.php/solutions/miracl-crypto-sdk/
 LICENSE_TEXT_COMMERCIAL+=	for more details.
-LICENSE_FILE=			${FILESDIR}/LICENSE
+#LICENSE_FILE=			${FILESDIR}/LICENSE
 LICENSE_PERMS_COMMERCIAL=	dist-mirror dist-sell pkg-mirror pkg-sell no-auto-accept
 
 ONLY_FOR_ARCHS=	i386 amd64

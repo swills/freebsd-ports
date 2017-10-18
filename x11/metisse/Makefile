@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/x11/metisse/Makefile 438965 2017-04-20 14:33:04Z amdmi3 $
+# $FreeBSD: head/x11/metisse/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	metisse
 PORTVERSION=	0.4.1
@@ -44,7 +44,6 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-fontdir=${LOCALBASE}/share/fonts
 USE_LDCONFIG=	yes
 USE_XORG=	xcursor xft xinerama xpm xrender xt xtst
-WANT_GNOME=	yes
 MAKE_ARGS=	METISSE_DOC_DIR="${DOCSDIR}"
 INSTALL_TARGET=	install-strip
 

@@ -1,5 +1,5 @@
 # Created by: Chip Marshall <chip@eboai.org>
-# $FreeBSD: head/audio/icecast2/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/icecast2/Makefile 451531 2017-10-08 13:48:37Z sunpoet $
 
 PORTNAME=	icecast2
 PORTVERSION=	2.4.3
@@ -37,10 +37,6 @@ WRKSRC=		${WRKDIR}/icecast-${PORTVERSION}
 
 DATADIR=	${PREFIX}/share/icecast
 DOCSDIR=	${PREFIX}/share/doc/icecast
-PLIST_FILES=	bin/icecast \
-		etc/icecast.xml.sample
-PORTDATA=	*
-PORTDOCS=	*
 SUB_FILES=	pkg-message
 
 CPE_VENDOR=	xiph

@@ -1,5 +1,5 @@
 # Created by: Archie Cobbs
-# $FreeBSD: head/net/mpd5/Makefile 444889 2017-07-02 15:16:20Z eugen $
+# $FreeBSD: head/net/mpd5/Makefile 450652 2017-09-26 09:43:40Z eugen $
 
 PORTNAME=	mpd
 DISTVERSION=	5.8
@@ -12,7 +12,7 @@ DIST_SUBDIR=	mpd5
 MAINTAINER=	eugen@FreeBSD.org
 COMMENT=	Multi-link PPP daemon based on netgraph(4)
 
-LICENSE=	BSD
+LICENSE=	BSD3CLAUSE
 
 OPTIONS_DEFINE=	NG_IPACCT
 NG_IPACCT_DESC=	Use ng_ipacct kernel module from port

@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan@mail20000.com.tw>
-# $FreeBSD: head/www/b2evolution/Makefile 419593 2016-08-04 04:52:55Z marino $
+# $FreeBSD: head/www/b2evolution/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	b2evolution
 PORTVERSION=	4.0.5
@@ -11,12 +11,11 @@ MASTER_SITES=	SF/evocms/${PORTNAME}/b2evo%20${PORTVERSION}-stable
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Multilingual, multiuser, multi-blog engine
 
-USES=		cpe dos2unix zip
+USES=		cpe dos2unix php:web zip
 
 B2EVO_DATE?=	stable-2011-03-23
 USE_PHP=	mysql pcre session xml
 NO_BUILD=	YES
-WANT_PHP_WEB=	YES
 
 TMPDIR?=	${PORTNAME}
 WRKSRC=		${WRKDIR}/${TMPDIR}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/xpdf4/Makefile 450156 2017-09-19 19:04:21Z cy $
+# $FreeBSD: head/graphics/xpdf4/Makefile 451255 2017-10-05 01:52:47Z cy $
 
 PORTNAME=	xpdf
 PORTVERSION=	4.02
@@ -7,6 +7,9 @@ CATEGORIES=	graphics print
 MASTER_SITES=	http://www.xpdfreader.com/dl/
 .if !defined(MASTERDIR)
 PKGNAMESUFFIX=	4
+CONFLICTS_INSTALL=	xpdf3-* xpdf-*
+.else
+CONFLICTS_INSTALL=	xpdf3-*	xpdf4-*
 .endif
 
 MAINTAINER=	cy@FreeBSD.org

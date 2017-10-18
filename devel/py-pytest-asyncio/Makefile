@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-pytest-asyncio/Makefile 449654 2017-09-11 15:08:09Z jbeich $
+# $FreeBSD: head/devel/py-pytest-asyncio/Makefile 450489 2017-09-24 12:23:36Z jbeich $
 
 PORTNAME=	pytest-asyncio
-PORTVERSION=	0.7.0
+PORTVERSION=	0.8.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,9 @@
 # Created by: Mirko Zinn <mail@derzinn.de>
-# $FreeBSD: head/databases/mongodb/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/databases/mongodb/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	mongodb
 PORTVERSION=	2.6.12
+PORTREVISION=	2
 CATEGORIES=	databases net
 MASTER_SITES=	http://downloads.mongodb.org/src/
 DISTNAME=	${PORTNAME}-src-r${PORTVERSION}

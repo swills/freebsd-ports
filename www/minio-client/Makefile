@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/minio-client/Makefile 436693 2017-03-22 12:10:26Z araujo $
+# $FreeBSD: head/www/minio-client/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	minio-client
 PORTVERSION=	${GH_TAGNAME:S/RELEASE.//:S/Z//:S/T/-/:S/-/./g}
@@ -32,7 +32,6 @@ GH_TAGNAME=	RELEASE.2017-02-06T20-16-19Z
 GH_SUBDIR=	src/github.com/${GH_ACCOUNT}/${GH_PROJECT}
 MAKE_ENV=	GOPATH=${WRKSRC} GOROOT=${LOCALBASE}/go
 
-STRIP=		# stripping can break go binaries
 PLIST_FILES=	bin/${MC}
 
 do-build:

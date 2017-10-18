@@ -1,11 +1,10 @@
 # Created by: Pav Lucistnik <pav@oook.cz>
-# $FreeBSD: head/audio/cue2toc/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/cue2toc/Makefile 451965 2017-10-13 08:58:28Z bapt $
 
 PORTNAME=	cue2toc
 PORTVERSION=	0.1
 CATEGORIES=	audio perl5
-MASTER_SITES=	http://www.tuxcoder.com/cue2toc/download/ \
-		http://www.oook.cz/bsd/distfiles/
+MASTER_SITES=	http://www.oook.cz/bsd/distfiles/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Perl script that converts CUE files into TOC files for cdrdao

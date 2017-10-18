@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/codec2/Makefile 447437 2017-08-06 01:07:22Z db $
+# $FreeBSD: head/audio/codec2/Makefile 451964 2017-10-13 08:57:45Z bapt $
 
 PORTNAME=	codec2
 PORTVERSION=	0.7
@@ -8,6 +8,8 @@ MASTER_SITES=	http://files.freedv.org/codec2/ \
 
 MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Low bit rate codec
+
+BROKEN=		no public distfiles
 
 LICENSE=	LGPL21
 

@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/net/p5-AnyMQ-AMQP/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-AnyMQ-AMQP/Makefile 451824 2017-10-12 08:10:49Z sunpoet $
 
 PORTNAME=	AnyMQ-AMQP
 PORTVERSION=	0.30
@@ -22,10 +22,5 @@ RUN_DEPENDS=	p5-AnyMQ>=0:devel/p5-AnyMQ \
 
 USES=		perl5
 USE_PERL5=	configure
-
-.if defined(MAINTAINER_MODE)
-regression-test: build
-	cd ${WRKSRC} && ${MAKE} test
-.endif
 
 .include <bsd.port.mk>

@@ -1,7 +1,7 @@
-# $FreeBSD: head/comms/librs232/Makefile 418823 2016-07-20 08:30:44Z kevlo $
+# $FreeBSD: head/comms/librs232/Makefile 452047 2017-10-14 07:53:04Z kevlo $
 
 PORTNAME=	librs232
-PORTVERSION=	20160710
+PORTVERSION=	20170805
 CATEGORIES=	comms
 DISTNAME=	RS-232
 MASTER_SITES=	http://www.teuniz.net/RS-232/

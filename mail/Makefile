@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 450348 2017-09-22 10:19:41Z rene $
+# $FreeBSD: head/mail/Makefile 452046 2017-10-14 07:21:17Z pi $
 #
 
     COMMENT = Electronic mail utilities
@@ -539,10 +539,10 @@
     SUBDIR += py-milter
     SUBDIR += py-notmuch
     SUBDIR += py-ppolicy
+    SUBDIR += py-premailer
     SUBDIR += py-pymailq
     SUBDIR += py-pyspf
     SUBDIR += py-spambayes
-    SUBDIR += py-twistedMail
     SUBDIR += py-zope.sendmail
     SUBDIR += pymsgauth
     SUBDIR += pysieved

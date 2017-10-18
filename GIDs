@@ -1,4 +1,4 @@
-# $FreeBSD: head/GIDs 449982 2017-09-17 01:54:25Z swills $
+# $FreeBSD: head/GIDs 452063 2017-10-14 12:58:24Z riggs $
 # Please keep this file sorted by GID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/group
@@ -416,7 +416,7 @@ vault:*:471:
 nomad:*:472:
 minio:*:473:
 gitlab-runner:*:474:
-# free: 475
+traefik:*:475:
 # free: 476
 # free: 477
 prometheus:*:478:

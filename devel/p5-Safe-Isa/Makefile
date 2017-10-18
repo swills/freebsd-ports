@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Safe-Isa/Makefile 450331 2017-09-22 09:13:26Z sunpoet $
+# $FreeBSD: head/devel/p5-Safe-Isa/Makefile 451137 2017-10-03 15:34:52Z sunpoet $
 
 PORTNAME=	Safe-Isa
-PORTVERSION=	1.000007
+PORTVERSION=	1.000008
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

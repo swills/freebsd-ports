@@ -1,5 +1,6 @@
-# $FreeBSD: head/print/harfbuzz-icu/Makefile 439575 2017-04-27 21:31:09Z kwm $
+# $FreeBSD: head/print/harfbuzz-icu/Makefile 450872 2017-09-28 20:52:07Z jbeich $
 
+PORTREVISION=	2
 PKGNAMESUFFIX=	-icu
 
 COMMENT=	Harfbuzz ICU support

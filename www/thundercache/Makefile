@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/thundercache/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/www/thundercache/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	thundercache
 PORTVERSION=	6.1
@@ -28,7 +28,7 @@ APACHE_DESC=	Install apache for reporting viewing
 PHP_DESC=	Install PHP for reporting generating
 PGSQL_DESC=	Install PostgreSQL (report data storing)
 
-USES=		shebangfix tar:bzip2 ssl
+USES=		php shebangfix tar:bzip2 ssl
 SHEBANG_FILES=	sbin/thunderlog.php
 USE_GCC=	any
 

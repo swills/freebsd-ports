@@ -1,9 +1,8 @@
 # Created by: Jeremy Norris <ishmael27@home.com>
-# $FreeBSD: head/graphics/imlib2_loaders/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/graphics/imlib2_loaders/Makefile 450845 2017-09-28 11:04:16Z zeising $
 
 PORTNAME=	imlib2_loaders
-PORTVERSION=	1.4.9
-PORTREVISION=	1
+PORTVERSION=	1.4.10
 PORTEPOCH=	2
 CATEGORIES=	graphics enlightenment
 MASTER_SITES=	SF/enlightenment/imlib2-src/${PORTVERSION}

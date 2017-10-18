@@ -1,5 +1,5 @@
 # Created by: Dominic Fandrey <kamikaze@bsdforen.de>
-# $FreeBSD: head/www/xpi-live_http_headers/Makefile 364158 2014-08-06 09:11:57Z olgeni $
+# $FreeBSD: head/www/xpi-live_http_headers/Makefile 450473 2017-09-23 21:11:51Z adamw $
 
 PORTNAME=	live_http_headers
 PORTVERSION=	0.17
@@ -8,7 +8,7 @@ PORTREVISION=	3
 CATEGORIES=	www
 PKGNAMEPREFIX=	xpi-
 
-MAINTAINER=	kamikaze@bsdforen.de
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Firefox extension to view HTTP headers
 
 XPI_NUM=	3829

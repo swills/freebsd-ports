@@ -1,8 +1,9 @@
 # Created by: chinsan
-# $FreeBSD: head/textproc/p5-Text-QRCode/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Text-QRCode/Makefile 450419 2017-09-23 02:59:07Z vanilla $
 
 PORTNAME=	Text-QRCode
 PORTVERSION=	0.05
+PORTREVISION=	1
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

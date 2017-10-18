@@ -1,5 +1,5 @@
 # Created by: peter
-# $FreeBSD: head/x11-wm/fvwm2/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/x11-wm/fvwm2/Makefile 451272 2017-10-05 06:36:44Z cy $
 
 PORTNAME=	fvwm
 PORTVERSION=	2.6.7
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2
 
 # Other ports this port cannot coexist with
-CONFLICTS?=	fvwm-1.* fvwm-2.[457].*
+CONFLICTS?=	fvwm1-1.* fvwm-2.[457].*
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-mandoc --without-gnome --disable-gtk

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/horde-base/Makefile 450171 2017-09-19 21:48:42Z mm $
+# $FreeBSD: head/www/horde-base/Makefile 451729 2017-10-11 02:55:30Z bapt $
 
 PORTNAME=	horde
 PORTVERSION=	5.2.17
@@ -18,7 +18,7 @@ ICONV_DESC=	Depend on PHP iconv extension
 TWITTER_DESC=	Support connections to Twitter
 WEATHER_DESC=	Support weather forecast display
 
-USES=	horde cpe
+USES=	horde cpe php
 USE_PHP=	filter gettext hash
 
 USE_HORDE_BUILD=	Horde_Role

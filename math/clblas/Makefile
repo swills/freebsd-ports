@@ -1,10 +1,10 @@
 # Created by: Johannes Dieterich <dieterich@ogolem.org>
-# $FreeBSD: head/math/clblas/Makefile 441468 2017-05-22 16:04:19Z linimon $
+# $FreeBSD: head/math/clblas/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	clblas
 PORTVERSION=	2.10
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	math
 
 MAINTAINER=	dieterich@ogolem.org

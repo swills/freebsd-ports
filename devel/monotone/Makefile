@@ -1,9 +1,9 @@
 # Created by: Mark A. Wicks <mwicks@kettering.edu>
-# $FreeBSD: head/devel/monotone/Makefile 446854 2017-07-28 21:45:20Z jkim $
+# $FreeBSD: head/devel/monotone/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	monotone
 PORTVERSION=	1.1
-PORTREVISION=	6
+PORTREVISION=	8
 CATEGORIES=	devel
 MASTER_SITES=	http://www.monotone.ca/downloads/${PORTVERSION}/
 

@@ -1,5 +1,5 @@
 # Created by: Bartlomiej Rutkowski <r@robakdesign.com>
-# $FreeBSD: head/www/hastymail2-devel/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/www/hastymail2-devel/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	hastymail2
 PORTVERSION=	1.1.${HASTYMAIL_REV:S/.//g}
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 NO_BUILD=	yes
 SUB_FILES=	pkg-message
 
-WANT_PHP_WEB=	yes
+USES=		php:web
 USE_PHP=	session imap pcre
 
 WRKSRC=		${WRKDIR}/${PORTNAME}

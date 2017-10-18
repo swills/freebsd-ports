@@ -1,5 +1,5 @@
 # Created by: Anders F Bjorklund <afb@rpm5.org>
-# $FreeBSD: head/sysutils/yum/Makefile 425758 2016-11-08 19:29:56Z linimon $
+# $FreeBSD: head/sysutils/yum/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	yum
 PORTVERSION=	3.4.3
@@ -22,7 +22,7 @@ RUN_DEPENDS=	bash:shells/bash \
 		${PYTHON_PKGNAMEPREFIX}iniparse>0:devel/py-iniparse \
 		${PYTHON_PKGNAMEPREFIX}urlgrabber>0:www/py-urlgrabber
 
-ONLY_FOR_ARCHS=		amd64 aarch64 armv6 i386
+ONLY_FOR_ARCHS=		aarch64 amd64 armv6 armv7 i386
 ONLY_FOR_ARCHS_REASON=	linux is not available for ${ARCH}
 
 USES=		cpe gettext gmake python shebangfix

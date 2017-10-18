@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/cad/scotch/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/cad/scotch/Makefile 452084 2017-10-14 19:30:20Z thierry $
 
 PORTNAME=	scotch
 DISTVERSION=	5.1.12b_esmumps
@@ -16,7 +16,7 @@ LICENSE_NAME=	CeCILL-C
 LICENSE_FILE=	${WRKSRC}/doc/CeCILL-C_V1-en.txt
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-CONFLICTS=	gbase-0.* gmap-2006.*
+CONFLICTS=	gbase-0.* gmap-2015.*
 
 USES=		gmake
 

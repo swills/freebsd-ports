@@ -1,6 +1,7 @@
-# $FreeBSD: head/net-p2p/bitcoin-daemon/Makefile 447813 2017-08-12 03:43:31Z swills $
+# $FreeBSD: head/net-p2p/bitcoin-daemon/Makefile 451133 2017-10-03 14:25:09Z swills $
 
 MASTERDIR=	${.CURDIR}/../bitcoin
+PORTREVISION=	2
 PKGNAMESUFFIX=	-daemon
 
 COMMENT=	Virtual Peer-to-Peer Currency (Daemon)
@@ -23,7 +24,8 @@ CONFIGURE_ARGS=	--with-daemon \
 		--without-utils
 
 PLIST_FILES=	bin/bitcoind \
-		man/man1/bitcoind.1.gz
+		man/man1/bitcoind.1.gz \
+		%%ETCDIR%%.conf.sample
 
 USE_RC_SUBR=	bitcoind
 

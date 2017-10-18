@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MCE/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MCE/Makefile 451595 2017-10-09 10:37:32Z sunpoet $
 
 PORTNAME=	MCE
-PORTVERSION=	1.830
+PORTVERSION=	1.831
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:MARIOROY

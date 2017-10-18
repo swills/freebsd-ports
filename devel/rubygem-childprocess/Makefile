@@ -1,8 +1,8 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-childprocess/Makefile 444496 2017-06-27 16:15:11Z sunpoet $
+# $FreeBSD: head/devel/rubygem-childprocess/Makefile 450544 2017-09-24 19:08:45Z sunpoet $
 
 PORTNAME=	childprocess
-PORTVERSION=	0.7.1
+PORTVERSION=	0.8.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

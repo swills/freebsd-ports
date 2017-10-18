@@ -1,5 +1,5 @@
 # Created by: janos.mohacsi@bsd.hu
-# $FreeBSD: head/hungarian/hunspell/Makefile 375089 2014-12-20 19:00:07Z bapt $
+# $FreeBSD: head/hungarian/hunspell/Makefile 450508 2017-09-24 18:49:16Z sunpoet $
 
 PORTNAME=	hunspell
 PORTVERSION=	1.6.1
@@ -10,9 +10,10 @@ DISTNAME=	hu_HU-${PORTVERSION}
 MAINTAINER=	jmohacsi@bsd.hu
 COMMENT=	Hunspell Hungarian dictionary
 
-LICENSE=	GPLv2 LGPL21 MPL
+LICENSE=	GPLv2 LGPL21 MPL11
 LICENSE_COMB=	dual
 
+NO_ARCH=	yes
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/hu_HU-${PORTVERSION}
 

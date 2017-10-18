@@ -1,9 +1,9 @@
 # Created by: "Waitman Gobble" <uzimac@da3m0n8t3r.com>
-# $FreeBSD: head/graphics/dcraw-m/Makefile 441761 2017-05-26 08:20:18Z kwm $
+# $FreeBSD: head/graphics/dcraw-m/Makefile 450852 2017-09-28 15:36:31Z kwm $
 
 PORTNAME=	dcraw-m
 PORTVERSION=	9.22
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics
 
 MAINTAINER=	waitman@waitman.net

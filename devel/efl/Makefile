@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/devel/efl/Makefile 450248 2017-09-21 10:54:03Z gblach $
+# $FreeBSD: head/devel/efl/Makefile 450444 2017-09-23 14:19:45Z gblach $
 
 PORTNAME=	efl
 PORTVERSION=	1.19.2
@@ -22,7 +22,7 @@ LIB_DEPENDS=	libgif.so:graphics/giflib \
 		libsndfile.so:audio/libsndfile
 
 GNU_CONFIGURE=	yes
-USES=		autoreconf compiler:c++11-lib gettext-tools gmake iconv jpeg \
+USES=		autoreconf compiler:c++14-lang gettext-tools gmake iconv jpeg \
 		libtool pathfix pkgconfig shared-mime-info tar:xz
 USE_XORG=	x11 xcursor xcomposite xdamage xext xfixes xi xinerama xp \
 		xrandr xrender xtst xscrnsaver

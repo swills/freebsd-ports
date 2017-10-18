@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/gstreamer1-qt5/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/multimedia/gstreamer1-qt5/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	gstreamer-qt
-PORTREVISION=	3
+PORTREVISION=	5
 PKGNAMESUFFIX=	5
 
 MASTERDIR=	${.CURDIR:H}/gstreamer1-qt4

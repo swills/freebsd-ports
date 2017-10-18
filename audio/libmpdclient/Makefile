@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/audio/libmpdclient/Makefile 446564 2017-07-25 09:09:04Z gblach $
+# $FreeBSD: head/audio/libmpdclient/Makefile 451221 2017-10-04 11:53:46Z bapt $
 
 PORTNAME=	libmpdclient
 PORTVERSION=	2.13
@@ -21,10 +21,6 @@ DOXYGEN_IMPLIES=	DOCS
 
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 
-.include <bsd.port.pre.mk>
+DOXYGEN_MESON_TRUE=	documentation
 
-.if ${PORT_OPTIONS:MDOXYGEN}
-MESON_ARGS+=	-Ddocumentation=true
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

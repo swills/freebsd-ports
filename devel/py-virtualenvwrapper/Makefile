@@ -1,8 +1,8 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/py-virtualenvwrapper/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-virtualenvwrapper/Makefile 452148 2017-10-15 14:24:26Z nivit $
 
 PORTNAME=	virtualenvwrapper
-PORTVERSION=	4.7.1
+PORTVERSION=	4.8.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -29,6 +29,10 @@ USE_PYTHON=	autoplist concurrent distutils
 DOCS_VARS=	DOCSDIR=${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME} \
 		PYDISTUTILS_BUILD_TARGET+=build_sphinx \
 		PYDISTUTILS_BUILDARGS="-a -E"
+
+post-patch:
+	@${REINPLACE_CMD} -e 's|$$(command \\which python)|${PYTHON_CMD}|1' \
+	       	${WRKSRC}/${PORTNAME}.sh
 
 post-patch-DOCS-on:
 	@${REINPLACE_CMD} -e 's|python setup.py|${PYTHON_CMD} setup.py|' \

@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/dpinger/Makefile 410100 2016-03-04 11:43:22Z garga $
+# $FreeBSD: head/net/dpinger/Makefile 451226 2017-10-04 13:10:16Z garga $
 
 PORTNAME=	dpinger
-PORTVERSION=	2.0
+PORTVERSION=	3.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 

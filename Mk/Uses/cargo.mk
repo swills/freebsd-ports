@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/cargo.mk 449914 2017-09-15 18:01:17Z dumbbell $
+# $FreeBSD: head/Mk/Uses/cargo.mk 452147 2017-10-15 14:05:04Z madpilot $
 #
 # This file contains logic to ease porting of Rust packages or
 # binaries using the `cargo` command.
@@ -38,7 +38,7 @@ CARGO_DIST_SUBDIR?=	rust/crates
 
 # Generate list of DISTFILES.
 .for _crate in ${CARGO_CRATES}
-MASTER_SITES+=	${MASTER_SITES_CRATESIO}/${_crate:C/-[^-]*$//}/${_crate:C/^.*-//}/download?dummy=/:cargo_${_crate:S/-//g:S/.//g}
+MASTER_SITES+=	${MASTER_SITES_CRATESIO}/${_crate:C/-[0-9].*$//}/${_crate:C/^.*-([0-9].*)/\1/}/download?dummy=/:cargo_${_crate:S/-//g:S/.//g}
 DISTFILES+=	${CARGO_DIST_SUBDIR}/${_crate}.tar.gz:cargo_${_crate:S/-//g:S/.//g}
 .endfor
 
@@ -46,7 +46,7 @@ DISTFILES+=	${CARGO_DIST_SUBDIR}/${_crate}.tar.gz:cargo_${_crate:S/-//g:S/.//g}
 
 CARGO_BUILDDEP?=	yes
 .if ${CARGO_BUILDDEP:tl} == "yes"
-BUILD_DEPENDS+=	 rust>=1.19.0:lang/rust
+BUILD_DEPENDS+=	 rust>=1.19.0_2:lang/rust
 .endif
 
 # Location of cargo binary (default to lang/rust's Cargo binary)
@@ -103,7 +103,7 @@ CARGO_INSTALL_ARGS+=	--features='${CARGO_FEATURES}'
 CARGO_TEST_ARGS+=	--features='${CARGO_FEATURES}'
 .endif
 
-.if !defined(WITH_DEBUG) || defined(WITHOUT_DEBUG)
+.if !defined(WITH_DEBUG)
 CARGO_BUILD_ARGS+=	--release
 CARGO_TEST_ARGS+=	--release
 .else

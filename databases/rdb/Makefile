@@ -1,5 +1,5 @@
 # Created by: Abel Chow <abel_chow@yahoo.com>
-# $FreeBSD: head/databases/rdb/Makefile 403320 2015-12-08 17:47:51Z amdmi3 $
+# $FreeBSD: head/databases/rdb/Makefile 452070 2017-10-14 16:31:34Z bapt $
 
 PORTNAME=	rdb
 PORTVERSION=	2.6d
@@ -9,6 +9,8 @@ DISTNAME=	RDB-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fast, portable, relational database management system
+
+BROKEN=		No public distfiles
 
 USES=		perl5 shebangfix
 SHEBANG_FILES=	${BINFILES}

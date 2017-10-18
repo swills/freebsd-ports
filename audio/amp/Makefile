@@ -1,12 +1,11 @@
 # Created by: Vanilla I. Shu <vanilla@MinJe.com.TW>
-# $FreeBSD: head/audio/amp/Makefile 417903 2016-07-01 21:25:04Z madpilot $
+# $FreeBSD: head/audio/amp/Makefile 451965 2017-10-13 08:58:28Z bapt $
 
 PORTNAME=	amp
 PORTVERSION=	0.7.6
 PORTEPOCH=	1
 CATEGORIES=	audio
-MASTER_SITES=	http://www.gufi.org/ports/ \
-		http://www-users.cs.umn.edu/~wburdick/ftp/
+MASTER_SITES=	http://www.gufi.org/ports/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Another mp3 player

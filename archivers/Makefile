@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/Makefile 447585 2017-08-09 00:44:05Z ultima $
+# $FreeBSD: head/archivers/Makefile 451917 2017-10-12 17:30:49Z feld $
 #
 
     COMMENT = Archivers
@@ -54,6 +54,7 @@
     SUBDIR += kf5-karchive
     SUBDIR += kzip
     SUBDIR += laszip
+    SUBDIR += lazperf
     SUBDIR += lbrate
     SUBDIR += lbzip2
     SUBDIR += lcab
@@ -170,6 +171,7 @@
     SUBDIR += py-borgbackup
     SUBDIR += py-brotli
     SUBDIR += py-bz2file
+    SUBDIR += py-czipfile
     SUBDIR += py-libarchive-c
     SUBDIR += py-librtfcomp
     SUBDIR += py-lz4

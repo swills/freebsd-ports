@@ -1,5 +1,5 @@
 # Created by: Stefan Hagen <ports@textmail.me>
-# $FreeBSD: head/print/pdfstitch/Makefile 449486 2017-09-09 09:44:12Z tobik $
+# $FreeBSD: head/print/pdfstitch/Makefile 451473 2017-10-07 18:34:09Z antoine $
 
 PORTNAME=	pdfstitch
 DISTVERSIONPREFIX=	v
@@ -12,9 +12,9 @@ COMMENT=	Crop and stitch pages from PDF to larger, single-page PDF
 LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	textproc/p5-YAML>=1.10:textproc/p5-YAML \
-	devel/p5-File-LibMagic>=1.10:devel/p5-File-LibMagic \
-	textproc/p5-PDF-API2>=2.030:textproc/p5-PDF-API2
+RUN_DEPENDS=	p5-YAML>=1.10:textproc/p5-YAML \
+		p5-File-LibMagic>=1.10:devel/p5-File-LibMagic \
+		p5-PDF-API2>=2.030:textproc/p5-PDF-API2
 
 USES=		perl5
 USE_GITHUB=	yes

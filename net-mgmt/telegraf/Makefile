@@ -1,5 +1,5 @@
 # Created by: Stefan Lambrev <cheffo@freebsd-bg.org>
-# $FreeBSD: head/net-mgmt/telegraf/Makefile 441082 2017-05-17 13:35:59Z girgen $
+# $FreeBSD: head/net-mgmt/telegraf/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	telegraf
 DISTVERSION=	1.3.0
@@ -89,8 +89,6 @@ GH_TUPLE=	collectd:go-collectd:2ce1445:collectd_org/src/collectd.org \
 SUB_FILES=	telegraf
 SUB_LIST+=	TELEGRAF_PIDDIR=${TELEGRAF_PIDDIR}
 PLIST_SUB=	TELEGRAF_PIDDIR=${TELEGRAF_PIDDIR}
-
-STRIP=		# stripping can break go binaries
 
 post-patch:
 	@${MKDIR} ${WRKSRC}/src/github.com/${GH_ACCOUNT_DEFAULT}/${PORTNAME}

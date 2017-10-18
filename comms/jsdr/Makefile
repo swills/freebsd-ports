@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/comms/jsdr/Makefile 426360 2016-11-19 11:53:23Z tcberner $
+# $FreeBSD: head/comms/jsdr/Makefile 451999 2017-10-13 14:18:50Z bapt $
 
 PORTNAME=	jsdr
 PORTVERSION=	4.1
@@ -10,6 +10,8 @@ MASTER_SITES=	http://www.sdr-j.tk/ \
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SDR tools for RTL2832-based USB sticks
+
+BROKEN=		No public distfiles
 
 LICENSE=	GPLv2
 

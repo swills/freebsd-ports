@@ -1,12 +1,11 @@
 # Created by: SimaMoto,RyoTa <liangtai.s4@gmail.com>
-# $FreeBSD: head/misc/gimp-help-en/Makefile 429285 2016-12-23 20:45:50Z rakuco $
+# $FreeBSD: head/misc/gimp-help-en/Makefile 451989 2017-10-13 13:05:06Z bapt $
 
 PORTNAME=	gimp-help
 PORTVERSION=	2.8.2
 CATEGORIES?=	misc graphics
-MASTER_SITES=	ftp://ftp.gimp.org/pub/%SUBDIR%/ \
-		http://gimp.mirrors.hoobly.com/%SUBDIR%/ \
-		http://ftp.gwdg.de/pub/misc/grafik/gimp/%SUBDIR%/ \
+MASTER_SITES=	http://gimp.mirrors.hoobly.com/pub/%SUBDIR%/ \
+		http://ftp.gwdg.de/pub/misc/grafik/%SUBDIR%/ \
 		http://www.mirrorservice.org/sites/ftp.gimp.org/pub/%SUBDIR%/
 MASTER_SITE_SUBDIR=	gimp/help
 PKGNAMEPREFIX?=	${DOCLANG}-

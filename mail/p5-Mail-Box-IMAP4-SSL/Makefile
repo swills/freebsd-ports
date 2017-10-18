@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/p5-Mail-Box-IMAP4-SSL/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Mail-Box-IMAP4-SSL/Makefile 452126 2017-10-15 02:47:49Z pi $
 
 PORTNAME=	Mail-Box-IMAP4-SSL
 PORTVERSION=	0.03
@@ -6,7 +6,7 @@ CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	hvo.pm@xs4all.nl
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Missing part of Mail::Box::IMAP4
 
 LICENSE=	APACHE20

@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/devel/rubygem-test-unit/Makefile 444273 2017-06-25 15:02:24Z sunpoet $
+# $FreeBSD: head/devel/rubygem-test-unit/Makefile 450442 2017-09-23 14:10:41Z sunpoet $
 
 PORTNAME=	test-unit
-PORTVERSION=	3.2.5
+PORTVERSION=	3.2.6
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-kaminari-rails5/Makefile 447386 2017-08-05 03:25:17Z jrm $
+# $FreeBSD: head/www/rubygem-kaminari-rails5/Makefile 452117 2017-10-15 00:38:19Z sunpoet $
 
 PORTNAME=	kaminari
-PORTVERSION=	1.0.1
+PORTVERSION=	1.1.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5

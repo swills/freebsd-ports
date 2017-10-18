@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/security/py-gnupg/Makefile 444413 2017-06-26 20:09:07Z cs $
+# $FreeBSD: head/security/py-gnupg/Makefile 451166 2017-10-03 19:36:39Z cs $
 
 PORTNAME=	gnupg
-PORTVERSION=	2.3.0
+PORTVERSION=	2.3.1
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

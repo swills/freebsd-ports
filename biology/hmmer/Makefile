@@ -1,5 +1,5 @@
 # Created by: barnhart@genetics.wustl.edu
-# $FreeBSD: head/biology/hmmer/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/biology/hmmer/Makefile 451981 2017-10-13 11:14:32Z bapt $
 
 PORTNAME=	hmmer
 PORTVERSION=	3.0
@@ -10,6 +10,8 @@ MASTER_SITES=	ftp://selab.janelia.org/pub/software/hmmer3/3.0/ \
 
 MAINTAINER=	bacon4000@gmail.com
 COMMENT=	Profile hidden Markov models for biological sequence analysis
+
+BROKEN=		No public distfiles
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE

@@ -1,5 +1,5 @@
 # Created by: Erwin Lansing <erwin@FreeBSD.org>
-# $FreeBSD: head/net/p5-Filesys-SmbClient/Makefile 436659 2017-03-21 21:59:31Z antoine $
+# $FreeBSD: head/net/p5-Filesys-SmbClient/Makefile 451570 2017-10-08 19:36:26Z antoine $
 
 PORTNAME=	Filesys-SmbClient
 PORTVERSION=	3.2
@@ -12,6 +12,8 @@ MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Interface for access Samba filesystem with libsmclient.so
 
 BROKEN=		no member named close in struct _SMBCCTX
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-11-09
 
 BUILD_DEPENDS=	p5-Test-Simple>=0:devel/p5-Test-Simple
 

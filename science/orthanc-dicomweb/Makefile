@@ -1,9 +1,9 @@
 # Created by: mp39590@gmail.com
-# $FreeBSD: head/science/orthanc-dicomweb/Makefile 441204 2017-05-18 23:22:00Z jbeich $
+# $FreeBSD: head/science/orthanc-dicomweb/Makefile 450562 2017-09-25 00:51:02Z jbeich $
 
 PORTNAME=	orthanc-dicomweb
 PORTVERSION=	0.3
-PORTREVISION=	5
+PORTREVISION=	8
 CATEGORIES=	science net
 MASTER_SITES=	http://orthanc-server.com/downloads/get.php?path=/plugin-dicom-web/
 DISTNAME=	OrthancDicomWeb-${PORTVERSION}

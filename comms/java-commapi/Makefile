@@ -1,5 +1,5 @@
 # Created by: Ari Suutari <ari.suutari@syncrontech.com>
-# $FreeBSD: head/comms/java-commapi/Makefile 428144 2016-12-08 17:40:41Z tijl $
+# $FreeBSD: head/comms/java-commapi/Makefile 451991 2017-10-13 13:21:16Z bapt $
 
 PORTNAME=	java-commapi
 PORTVERSION=	2.0.3
@@ -11,6 +11,7 @@ DISTNAME=	comm${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Sun's Java Communications API
 
+BROKEN=		No upstream anymore
 USES=		zip
 USE_JAVA=	yes
 JAVA_VERSION=	1.6+

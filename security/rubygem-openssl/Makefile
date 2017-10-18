@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-openssl/Makefile 447654 2017-08-09 19:36:22Z sunpoet $
+# $FreeBSD: head/security/rubygem-openssl/Makefile 450611 2017-09-25 15:12:47Z sunpoet $
 
 PORTNAME=	openssl
-PORTVERSION=	2.0.5
+PORTVERSION=	2.0.6
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
@@ -14,6 +14,6 @@ LICENSE_FILE_BSD2CLAUSE=${WRKSRC}/BSDL
 LICENSE_FILE_RUBY=	${WRKSRC}/LICENSE.txt
 
 USE_RUBY=	yes
-USES=		gem
+USES=		gem ssl
 
 .include <bsd.port.mk>

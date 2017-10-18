@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/rubygem-rmagick/Makefile 441761 2017-05-26 08:20:18Z kwm $
+# $FreeBSD: head/graphics/rubygem-rmagick/Makefile 450852 2017-09-28 15:36:31Z kwm $
 
 PORTNAME=	rmagick
 PORTVERSION=	2.16.0
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	graphics rubygems
 MASTER_SITES=	RG
 

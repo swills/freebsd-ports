@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/www/zend-framework1/Makefile 434416 2017-02-19 20:26:07Z sunpoet $
+# $FreeBSD: head/www/zend-framework1/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	ZendFramework
 PORTVERSION=	1.12.16
@@ -16,8 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 NO_ARCH=	yes
 NO_BUILD=	yes
 USE_PHP=	spl
-WANT_PHP_WEB=	yes
-USES=		gettext
+USES=		gettext php:web
 
 CONFLICTS=	ZendFramework-2.*
 

@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.licenses.mk 435394 2017-03-04 13:48:15Z sunpoet $
+# $FreeBSD: head/Mk/bsd.licenses.mk 451432 2017-10-07 09:12:31Z sunpoet $
 
 # ** Please run changes to this file by eadler@ first **
 
@@ -296,6 +296,13 @@ _LICENSE_DISTFILES=	${LICENSE_DISTFILES}
 .	endfor
 
 .else
+
+.	if defined(LICENSE_FILE)
+.		for lic in ${_LICENSE}
+LICENSE_FILE_${lic}?=	${LICENSE_FILE}
+.		endfor
+.	endif
+
 .	for lic in ${_LICENSE}
 # Defaults to empty
 _LICENSE_GROUPS_${lic}?=#

@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/java/classpath/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/java/classpath/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	classpath
 PORTVERSION=	0.99
@@ -24,7 +24,6 @@ USES=		gmake iconv libtool perl5 pkgconfig
 USE_LDCONFIG=	yes
 USE_PERL5=	build
 USE_XORG=	x11 ice xtst xaw xproto xext
-WANT_GNOME=	yes
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib

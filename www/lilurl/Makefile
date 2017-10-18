@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/www/lilurl/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/www/lilurl/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	lilurl
 PORTVERSION=	0.1.1
@@ -10,10 +10,10 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}.tar.gz
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple PHP/MySQL script for generating lil? URLs
 
+USES=		php:web
 USE_PHP=	mysql pcre
 NO_BUILD=	yes
 NO_ARCH=	yes
-WANT_PHP_WEB=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 LILURL_DIR?=	www/lilurl

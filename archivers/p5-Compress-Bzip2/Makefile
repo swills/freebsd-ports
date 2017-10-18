@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/archivers/p5-Compress-Bzip2/Makefile 405839 2016-01-12 08:41:16Z demon $
+# $FreeBSD: head/archivers/p5-Compress-Bzip2/Makefile 451679 2017-10-10 11:20:01Z sunpoet $
 
 PORTNAME=	Compress-Bzip2
 PORTVERSION=	2.24
@@ -10,10 +10,13 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	demon@FreeBSD.org
 COMMENT=	Perl5 interface to bzip2 compression library
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 USES=		perl5
 USE_PERL5=	configure
 
 post-install:
-		${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Compress/Bzip2/Bzip2.so
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Compress/Bzip2/Bzip2.so
 
 .include <bsd.port.mk>

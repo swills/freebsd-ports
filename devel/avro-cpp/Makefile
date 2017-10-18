@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/avro-cpp/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/devel/avro-cpp/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	avro
 PORTVERSION=	1.8.1
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	http://www.sai.msu.su/apache/${PORTNAME}/${PORTNAME}-${PORTVERSION}/ \
 		APACHE/${PORTNAME}/stable

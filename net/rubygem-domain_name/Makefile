@@ -1,5 +1,5 @@
 # Created by: MIHIRA Yoshiro <sanpei@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-domain_name/Makefile 441592 2017-05-24 13:03:53Z sunpoet $
+# $FreeBSD: head/net/rubygem-domain_name/Makefile 450514 2017-09-24 18:49:46Z sunpoet $
 
 PORTNAME=	domain_name
 PORTVERSION=	0.5.20170404
@@ -9,7 +9,7 @@ MASTER_SITES=	RG
 MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Domain Name manipulation library for ruby
 
-LICENSE=	BSD2CLAUSE BSD3CLAUSE GPLv2 LGPL21 MPL
+LICENSE=	BSD2CLAUSE BSD3CLAUSE GPLv2 LGPL21 MPL20
 LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 

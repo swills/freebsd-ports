@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/audio/wavpack/Makefile 434356 2017-02-18 14:51:25Z riggs $
+# $FreeBSD: head/audio/wavpack/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	wavpack
 PORTVERSION=	5.1.0
@@ -22,6 +22,7 @@ INSTALL_TARGET=	install-strip
 OPTIONS_DEFINE=	ASM
 OPTIONS_DEFAULT_amd64=	ASM
 OPTIONS_DEFAULT_armv6=	ASM
+OPTIONS_DEFAULT_armv7=	ASM
 
 ASM_CONFIGURE_OFF=	--disable-asm
 ASM_DESC=	Optimized assembler routines (requires MMX on x86)

@@ -1,8 +1,8 @@
 # Created by: Gleb Smirnoff <glebius@FreeBSD.org>
-# $FreeBSD: head/astro/osmosis/Makefile 445446 2017-07-10 17:56:03Z amdmi3 $
+# $FreeBSD: head/astro/osmosis/Makefile 451321 2017-10-05 16:14:42Z amdmi3 $
 
 PORTNAME=	osmosis
-PORTVERSION=	0.45
+PORTVERSION=	0.46
 CATEGORIES=	astro java
 MASTER_SITES=	http://bretth.dev.openstreetmap.org/osmosis-build/ \
 		http://mirror.amdmi3.ru/distfiles/
@@ -11,6 +11,7 @@ MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Command line Java app for processing OpenStreetMap data
 
 LICENSE=	PD
+LICENSE_FILE=	${WRKSRC}/copying.txt
 
 NO_WRKSUBDIR=	yes
 USES=		tar:tgz

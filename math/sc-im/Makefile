@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/sc-im/Makefile 438936 2017-04-20 09:17:37Z bapt $
+# $FreeBSD: head/math/sc-im/Makefile 450775 2017-09-27 18:08:14Z rakuco $
 
 PORTNAME=	sc-im
 PORTVERSION=	0.6.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	math
 

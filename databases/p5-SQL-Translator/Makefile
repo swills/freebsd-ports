@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/databases/p5-SQL-Translator/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-SQL-Translator/Makefile 451815 2017-10-12 08:09:49Z sunpoet $
 
 PORTNAME=	SQL-Translator
 PORTVERSION=	0.11021
@@ -49,8 +49,5 @@ DIAGRAM_RUN_DEPENDS=	${DIAGRAM_BUILD_DEPENDS}
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|@EXPORT|&_OK|' ${WRKSRC}/lib/SQL/Translator/Parser/xSV.pm
-
-regression-test: build
-	cd ${WRKSRC}/ && ${MAKE} test
 
 .include <bsd.port.mk>

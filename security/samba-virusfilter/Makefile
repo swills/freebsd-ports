@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/samba-virusfilter/Makefile 436659 2017-03-21 21:59:31Z antoine $
+# $FreeBSD: head/security/samba-virusfilter/Makefile 451570 2017-10-08 19:36:26Z antoine $
 
 PORTNAME=	samba-virusfilter
 PORTVERSION=	0.1.3
@@ -10,6 +10,8 @@ MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	On-access anti-virus filter for Samba
 
 BROKEN=		fails to configure with samba 4
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-11-09
 
 PATCH_DEPENDS=	smbclient:${SAMBAPORT}
 BUILD_DEPENDS=	${NONEXISTENT}:${SAMBAPORT}:configure

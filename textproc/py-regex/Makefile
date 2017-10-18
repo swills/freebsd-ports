@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-regex/Makefile 429645 2016-12-27 18:52:50Z rakuco $
+# $FreeBSD: head/textproc/py-regex/Makefile 450614 2017-09-25 15:13:02Z sunpoet $
 
 PORTNAME=	regex
-PORTVERSION=	2016.11.21
+PORTVERSION=	2017.09.23
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

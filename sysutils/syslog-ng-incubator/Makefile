@@ -1,5 +1,5 @@
 # Created by: Peter Czanik <czanik@balabit.hu>
-# $FreeBSD: head/sysutils/syslog-ng-incubator/Makefile 418840 2016-07-20 15:33:20Z mat $
+# $FreeBSD: head/sysutils/syslog-ng-incubator/Makefile 451269 2017-10-05 06:22:25Z cy $
 
 PORTNAME=	syslog-ng-incubator
 PORTVERSION=	0.4.1
@@ -11,6 +11,9 @@ DISTFILES=	syslog-ng-incubator-${PORTVERSION}.tar.xz
 
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	The syslog-ng module incubator
+
+CONFLICTS=	syslog-ng3[79]-* syslog-ng31[0-9]-* syslog-ng-3.[79].* \
+		syslog-ng3.1[0-9].*
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

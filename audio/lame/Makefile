@@ -1,11 +1,10 @@
 # Created by: yoshiaki Uchikawa
-# $FreeBSD: head/audio/lame/Makefile 440456 2017-05-08 20:10:00Z netchild $
+# $FreeBSD: head/audio/lame/Makefile 452032 2017-10-13 21:10:10Z netchild $
 
 PORTNAME=	lame
-PORTVERSION=	3.99.5
-PORTREVISION=	3
+PORTVERSION=	3.100
 CATEGORIES=	audio
-MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME:tl}/3.99
+MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME:tl}/3.100
 
 MAINTAINER=	netchild@FreeBSD.org
 COMMENT=	Fast MP3 encoder kit

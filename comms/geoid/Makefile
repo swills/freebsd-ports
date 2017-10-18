@@ -1,12 +1,11 @@
-# $FreeBSD: head/comms/geoid/Makefile 428135 2016-12-08 16:39:11Z tijl $
+# $FreeBSD: head/comms/geoid/Makefile 452001 2017-10-13 14:19:26Z bapt $
 
 PORTNAME=	geoid
 PORTVERSION=	1.0
 DISTVERSIONSUFFIX=	.src
 PORTREVISION=	8
 CATEGORIES=	comms hamradio
-MASTER_SITES=	http://www.w1hkj.com/LinuxApps/ \
-		LOCAL/db
+MASTER_SITES=	http://www.w1hkj.com/LinuxApps/
 DISTNAME=	fl_geoid
 EXTRACT_SUFX=	.src.tar.gz
 

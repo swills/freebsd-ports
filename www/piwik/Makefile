@@ -1,8 +1,8 @@
 # Created by: Wen heping <wenheping@gmail.com>
-# $FreeBSD: head/www/piwik/Makefile 447615 2017-08-09 09:33:48Z tz $
+# $FreeBSD: head/www/piwik/Makefile 451840 2017-10-12 09:50:03Z tz $
 
 PORTNAME=	piwik
-PORTVERSION=	3.0.4
+PORTVERSION=	3.2.0
 CATEGORIES=	www
 MASTER_SITES=	http://builds.piwik.org/
 

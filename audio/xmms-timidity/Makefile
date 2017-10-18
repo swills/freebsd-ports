@@ -1,5 +1,5 @@
 # Created by: Timothy Beyer <beyert@cs.ucr.edu>
-# $FreeBSD: head/audio/xmms-timidity/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/xmms-timidity/Makefile 451967 2017-10-13 09:06:24Z bapt $
 
 PORTNAME=	xmms-timidity
 PORTVERSION=	0.0.3
@@ -9,6 +9,8 @@ MASTER_SITES=	http://www.shikadi.net/utils/files/
 
 MAINTAINER=	beyert@cs.ucr.edu
 COMMENT=	XMMS input plugin to play midi files (via timidity)
+
+BROKEN=		No public distfiles
 
 LIB_DEPENDS=	libxmms.so:multimedia/xmms
 RUN_DEPENDS=	timidity:audio/timidity

@@ -1,9 +1,9 @@
 # Created by: mp39590@gmail.com
-# $FreeBSD: head/science/orthanc-postgresql/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/science/orthanc-postgresql/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	orthanc-portgresql
 PORTVERSION=	2.0
-PORTREVISION=	4
+PORTREVISION=	6
 CATEGORIES=	science graphics
 MASTER_SITES=	http://orthanc-server.com/downloads/get.php?path=/plugin-postgresql/
 DISTNAME=	OrthancPostgreSQL-${PORTVERSION}

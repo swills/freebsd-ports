@@ -1,5 +1,5 @@
-# Created by: José García Juanino <jjuanino@gmail.com>
-# $FreeBSD: head/archivers/py-borgbackup/Makefile 446878 2017-07-29 13:59:13Z feld $
+# Created by: JosÃ© GarcÃ­a Juanino <jjuanino@gmail.com>
+# $FreeBSD: head/archivers/py-borgbackup/Makefile 451227 2017-10-04 13:45:16Z mat $
 
 PORTNAME=	borgbackup
 PORTVERSION=	1.0.11

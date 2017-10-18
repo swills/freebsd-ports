@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/multimedia/schroedinger/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/schroedinger/Makefile 450511 2017-09-24 18:49:30Z sunpoet $
 
 PORTNAME=	schroedinger
 PORTVERSION=	1.0.11
@@ -10,10 +10,10 @@ MASTER_SITES=	http://diracvideo.org/download/schroedinger/
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	High-speed Dirac codec
 
-LICENSE=	GPLv2 LGPL20 MIT MPL
+LICENSE=	GPLv2 LGPL20 MIT MPL11
 LICENSE_COMB=	dual
 LICENSE_FILE_MIT=	${WRKSRC}/COPYING.MIT
-LICENSE_FILE_MPL=	${WRKSRC}/COPYING.MPL
+LICENSE_FILE_MPL11=	${WRKSRC}/COPYING.MPL
 
 LIB_DEPENDS=	liborc-0.4.so:devel/orc
 

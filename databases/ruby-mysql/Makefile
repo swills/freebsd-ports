@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/databases/ruby-mysql/Makefile 406285 2016-01-17 07:06:25Z swills $
+# $FreeBSD: head/databases/ruby-mysql/Makefile 452070 2017-10-14 16:31:34Z bapt $
 
 PORTNAME=	mysql
 PORTVERSION=	2.8.2
@@ -15,6 +15,8 @@ COMMENT=	Ruby module for accessing MySQL databases with a C API like interface
 
 LICENSE=	BSD2CLAUSE RUBY
 LICENSE_COMB=	dual
+
+BROKEN=		Invalid checksum
 
 BROKEN_RUBY22=	yes
 BROKEN_RUBY23=	yes

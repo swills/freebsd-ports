@@ -1,8 +1,8 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer1-validate/Makefile 446388 2017-07-22 11:35:44Z kwm $
+# $FreeBSD: head/multimedia/gstreamer1-validate/Makefile 450470 2017-09-23 20:29:49Z kwm $
 
 PORTNAME=	gstreamer1-validate
-PORTVERSION=	1.12.2
+PORTVERSION=	1.12.3
 CATEGORIES=	multimedia
 MASTER_SITES=	http://gstreamer.freedesktop.org/src/gst-validate/
 DISTNAME=	gst-validate-${PORTVERSION}
@@ -20,6 +20,6 @@ USE_GNOME=	cairo gdkpixbuf2 gtk30 introspection:build
 USE_GSTREAMER1=	yes
 INSTALL_TARGET=	install-strip
 
-PLIST_SUB=	VERSION=1.0 SOVERSION=0.1202.0
+PLIST_SUB=	VERSION=1.0 SOVERSION=0.1203.0
 
 .include <bsd.port.mk>

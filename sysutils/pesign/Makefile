@@ -1,5 +1,5 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/sysutils/pesign/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/sysutils/pesign/Makefile 450495 2017-09-24 16:16:12Z jbeich $
 
 PORTNAME=	pesign
 PORTVERSION=	0.110
@@ -11,7 +11,7 @@ COMMENT=	Signing utility for UEFI secure boot
 
 LICENSE=	GPLv2
 
-LIB_DEPENDS=	libefivar.so:devel/efivar \
+LIB_DEPENDS=	libefivar.so.0:devel/efivar \
 		libnspr4.so:devel/nspr \
 		libnss3.so:security/nss \
 		libpopt.so:devel/popt \

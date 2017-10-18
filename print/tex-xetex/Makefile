@@ -1,8 +1,8 @@
-# $FreeBSD: head/print/tex-xetex/Makefile 448690 2017-08-24 15:49:34Z swills $
+# $FreeBSD: head/print/tex-xetex/Makefile 450556 2017-09-25 00:02:36Z jbeich $
 
 PORTNAME=	xetex
 PORTVERSION=	0.99992
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	print
 MASTER_SITES=	ftp://tug.org/historic/systems/texlive/2015/
 PKGNAMEPREFIX=	tex-

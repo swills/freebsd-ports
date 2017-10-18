@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-wm/libwraster/Makefile 441761 2017-05-26 08:20:18Z kwm $
+# $FreeBSD: head/x11-wm/libwraster/Makefile 450852 2017-09-28 15:36:31Z kwm $
 
 PORTNAME=	libwraster
 PORTVERSION=	0.95.7
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-wm windowmaker
 MASTER_SITES=	http://windowmaker.org/pub/source/release/
 DISTNAME=	WindowMaker-${PORTVERSION}

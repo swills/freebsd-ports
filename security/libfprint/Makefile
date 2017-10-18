@@ -1,9 +1,9 @@
 # Created by: barner
-# $FreeBSD: head/security/libfprint/Makefile 441761 2017-05-26 08:20:18Z kwm $
+# $FreeBSD: head/security/libfprint/Makefile 450852 2017-09-28 15:36:31Z kwm $
 
 PORTNAME=	libfprint
 PORTVERSION=	0.6.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security
 MASTER_SITES=	http://people.freedesktop.org/~hadess/
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 450158 2017-09-19 19:48:30Z bofh $
+# $FreeBSD: head/databases/Makefile 451925 2017-10-12 19:00:13Z feld $
 #
 
     COMMENT = Databases and related software
@@ -660,6 +660,7 @@
     SUBDIR += phppgadmin
     SUBDIR += pldebugger
     SUBDIR += plpgsql_check
+    SUBDIR += pointcloud
     SUBDIR += postgis-jdbc
     SUBDIR += postgis20
     SUBDIR += postgis21
@@ -840,6 +841,7 @@
     SUBDIR += py-varstack
     SUBDIR += py-whisper
     SUBDIR += py-xapian
+    SUBDIR += py-zodbpickle
     SUBDIR += py3-apsw
     SUBDIR += py3-bsddb3
     SUBDIR += py3-mysqlclient
@@ -1047,6 +1049,7 @@
     SUBDIR += zabbix22-libzbxpgsql
     SUBDIR += zabbix3-libzbxpgsql
     SUBDIR += zabbix32-libzbxpgsql
+    SUBDIR += zabbix34-libzbxpgsql
     SUBDIR += zodb3
 
 .include <bsd.port.subdir.mk>

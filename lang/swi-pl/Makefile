@@ -1,5 +1,5 @@
 # Created by: Michael Butschky <butsch@computi.erols.com>
-# $FreeBSD: head/lang/swi-pl/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/lang/swi-pl/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	swi-pl
 PORTVERSION=	7.4.2
@@ -49,18 +49,18 @@ PLIST_SUB=	DISTNAME=${SWIPLDIR} ARCH=${ARCH} OS=${OPSYS:tl} \
 
 .include <bsd.port.pre.mk>
 
-.if (${ARCH} == "i386" || ${ARCH} == "powerpc" || ${ARCH} == "armv6")
+.if (${ARCH} == armv6 || ${ARCH} == armv7 || ${ARCH} == i386 || ${ARCH} == powerpc)
 PLIST_SUB+=	BITS=32
 .else
 PLIST_SUB+=	BITS=64
 .endif
 
-.if (${ARCH} == "amd64")
+.if (${ARCH} == amd64)
 ARCH=		x86_64
 .endif
 
 post-configure:
-.if ${ARCH} != "i386"
+.if ${ARCH} != i386
 	@${REINPLACE_CMD} -e '/^CMFLAGS=/s/$$/ -fPIC/' \
 		${WRKSRC}/packages/Dialect.defs
 .endif

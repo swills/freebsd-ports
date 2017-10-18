@@ -1,9 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/security/py-libnacl/Makefile 422554 2016-09-21 12:24:21Z philip $
+# $FreeBSD: head/security/py-libnacl/Makefile 450671 2017-09-26 15:45:04Z philip $
 
 PORTNAME=	libnacl
-PORTVERSION=	1.4.4
-PORTREVISION=	2
+PORTVERSION=	1.5.2
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

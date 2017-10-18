@@ -1,7 +1,7 @@
-# $FreeBSD: head/archivers/libunrar5/Makefile 447277 2017-08-03 19:38:28Z jhale $
+# $FreeBSD: head/archivers/libunrar5/Makefile 451548 2017-10-08 14:09:37Z jhale $
 
 PORTNAME=	libunrar5
-PORTVERSION=	5.5.7
+PORTVERSION=	5.5.8
 CATEGORIES=	archivers
 MASTER_SITES=	http://www.rarlab.com/rar/
 DISTNAME=	unrarsrc-${PORTVERSION}

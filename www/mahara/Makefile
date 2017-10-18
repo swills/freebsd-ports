@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/mahara/Makefile 423331 2016-10-05 09:15:24Z wen $
+# $FreeBSD: head/www/mahara/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	mahara
 PORTVERSION=	16.04.3
@@ -12,7 +12,7 @@ COMMENT=	Open source ePortfolio system
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/../COPYING
 
-USES=		cpe tar:bzip2
+USES=		cpe php tar:bzip2
 USE_PHP=	dom gd session json curl xml xmlrpc openssl simplexml \
 		mcrypt zip
 

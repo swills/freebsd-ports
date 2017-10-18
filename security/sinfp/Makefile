@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/security/sinfp/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/sinfp/Makefile 451827 2017-10-12 08:11:09Z sunpoet $
 
 PORTNAME=	sinfp
 PORTREVISION=	${DBDATE}
@@ -15,6 +15,7 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 PLIST=		""
 PLIST_FILES=	bin/${PORTNAME} \
 		%%DATADIR%%/${PORTNAME}.db
+NO_ARCH=	yes
 NO_BUILD=	yes
 MASTERDIR=	${.CURDIR}/../p5-Net-SinFP
 DBDATE=		20110125

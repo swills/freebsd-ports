@@ -1,5 +1,5 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/x11-servers/xorg-nestserver/Makefile 433900 2017-02-11 18:31:47Z bapt $
+# $FreeBSD: head/x11-servers/xorg-nestserver/Makefile 452247 2017-10-16 19:45:15Z rezny $
 
 PORTNAME=	xorg-nestserver
 PORTVERSION=	1.19.1
@@ -25,6 +25,17 @@ CONFIGURE_ARGS+=--enable-xnest --disable-dmx --disable-xephyr --disable-xvfb \
 		--disable-xwayland
 
 PLIST_FILES=	bin/Xnest man/man1/Xnest.1.gz
+
+EXTRA_PATCHES=	${MASTERDIR}/files/patch-CVE-2017-12176 \
+		${MASTERDIR}/files/patch-CVE-2017-12177 \
+		${MASTERDIR}/files/patch-CVE-2017-12178 \
+		${MASTERDIR}/files/patch-CVE-2017-12179 \
+		${MASTERDIR}/files/patch-CVE-2017-12183 \
+		${MASTERDIR}/files/patch-CVE-2017-1218x \
+		${MASTERDIR}/files/patch-CVE-2017-1218y \
+		${MASTERDIR}/files/patch-CVE-2017-13721 \
+		${MASTERDIR}/files/patch-CVE-2017-13723 \
+		${MASTERDIR}/files/patch-os_io.c
 
 do-install:
 	cd ${WRKSRC}/hw/xnest; DESTDIR=${STAGEDIR} ${MAKE} install

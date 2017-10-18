@@ -1,10 +1,10 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/net/xorp/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/net/xorp/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	xorp
 PORTVERSION=	1.8.5
 DISTVERSIONPREFIX=	${PORTNAME}-
-PORTREVISION=	4
+PORTREVISION=	6
 CATEGORIES=	net
 
 MAINTAINER=	hrs@FreeBSD.org

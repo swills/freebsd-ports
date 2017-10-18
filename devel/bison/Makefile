@@ -1,5 +1,5 @@
 # Created by: Jerry Hicks
-# $FreeBSD: head/devel/bison/Makefile 431345 2017-01-13 07:21:04Z sunpoet $
+# $FreeBSD: head/devel/bison/Makefile 451535 2017-10-08 13:48:57Z sunpoet $
 
 PORTNAME=	bison
 PORTVERSION=	3.0.4
@@ -26,9 +26,6 @@ USE_PERL5=	build
 USES=		charsetfix localbase makeinfo perl5 tar:xz
 
 INFO=		bison
-PORTDATA=	*
-PORTDOCS=	*
-PORTEXAMPLES=	*
 
 NLS_CONFIGURE_ENABLE=	nls
 NLS_USES=		gettext

@@ -1,5 +1,5 @@
 # Created by: Matthias Andree <matthias.andree@gmx.de>
-# $FreeBSD: head/misc/e2fsprogs-libblkid/Makefile 447819 2017-08-12 10:12:47Z mandree $
+# $FreeBSD: head/misc/e2fsprogs-libblkid/Makefile 450861 2017-09-28 19:32:19Z jbeich $
 
 PORTREVISION=	0
 CATEGORIES=	misc devel
@@ -22,8 +22,6 @@ INSTALL_TARGET=	install install-shlibs
 INSTALL_WRKSRC=	${WRKSRC}/lib/blkid
 
 PKGDIR=		${.CURDIR}
-
-BROKEN_aarch64=		Fails to build: No targets specified and no makefile found
 
 pre-build:
 	${MKDIR} ${WRKSRC}/lib/blkid/elfshared

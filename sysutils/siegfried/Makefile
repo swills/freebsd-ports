@@ -1,8 +1,8 @@
 # Created by: Steffen Fritz <steffen@fritz.wtf>
-# $FreeBSD: head/sysutils/siegfried/Makefile 447840 2017-08-12 15:46:56Z tobik $
+# $FreeBSD: head/sysutils/siegfried/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=		siegfried
-PORTVERSION=		1.7.5
+PORTVERSION=		1.7.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=		sysutils
 
@@ -21,7 +21,5 @@ USES=	go
 
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${PORTNAME}
 GO_TARGET=	github.com/${GH_ACCOUNT}/${PORTNAME}/cmd/sf
-
-STRIP=		# stripping can break go binaries
 
 .include <bsd.port.mk>

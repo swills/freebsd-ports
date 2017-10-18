@@ -1,5 +1,5 @@
 # Created by: Dan Pelleg <dpelleg+unison@cs.cmu.edu>
-# $FreeBSD: head/net/unison240/Makefile 441963 2017-05-28 23:17:52Z sunpoet $
+# $FreeBSD: head/net/unison240/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	unison
 PORTVERSION=	2.40.128
@@ -20,7 +20,6 @@ PLIST_SUB=	PORTVERSION=${PORTVERSION}
 USES=		gmake
 USE_OCAML=	yes
 NO_OCAML_RUNDEPENDS=yes
-WANT_GNOME=	yes
 MAKE_ARGS=	CFLAGS=""
 
 MAKE_JOBS_UNSAFE=	yes

@@ -1,9 +1,8 @@
 # Created by: Torsten Zuhlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/security/rubygem-devise-two-factor/Makefile 430191 2017-01-01 01:09:26Z sunpoet $
+# $FreeBSD: head/security/rubygem-devise-two-factor/Makefile 451373 2017-10-06 10:45:16Z sunpoet $
 
 PORTNAME=	devise-two-factor
-PORTVERSION=	3.0.0
-PORTREVISION=	2
+PORTVERSION=	3.0.1
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

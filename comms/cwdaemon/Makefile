@@ -1,11 +1,10 @@
 # Created by: Diane Bruce <db@db.net>
-# $FreeBSD: head/comms/cwdaemon/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/cwdaemon/Makefile 452001 2017-10-13 14:19:26Z bapt $
 
 PORTNAME=	cwdaemon
 PORTVERSION=	0.9.4
 CATEGORIES=	comms hamradio
-MASTER_SITES=	http://www.chronos.org.uk/download/ \
-		LOCAL/db
+MASTER_SITES=	LOCAL/db
 
 MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Amateur Radio cw (Morse code) keyer daemon

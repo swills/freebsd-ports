@@ -1,5 +1,5 @@
 # Created by: Pedro F. Giffuni
-# $FreeBSD: head/math/lp_solve/Makefile 442512 2017-06-03 18:17:41Z joneum $
+# $FreeBSD: head/math/lp_solve/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	lp_solve
 PORTVERSION=	5.5.2.5
@@ -20,7 +20,7 @@ BUILDENV=	${SETENV} TMPDIR="${WRKDIR}"
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == "i386" || ${ARCH} == "powerpc" || ${ARCH} == "armv6" || ${ARCH} == "mips"
+.if ${ARCH} == armv6 || ${ARCH} == armv7 || ${ARCH} == i386 || ${ARCH} == mips || ${ARCH} == powerpc
 LPSOLVE_ARCH=	ux32
 .else
 LPSOLVE_ARCH=	ux64

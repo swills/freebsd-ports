@@ -1,9 +1,9 @@
 # Created by: Brian Feldman & Matt Heckaman
-# $FreeBSD: head/net-im/licq/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/net-im/licq/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	base
 PORTVERSION=	${LICQ_VER}
-PORTREVISION=	6
+PORTREVISION=	8
 CATEGORIES=	net-im
 PKGNAMESUFFIX=	${SOCKS_SUFFIX}${PKGNAMESUFFIX2}
 

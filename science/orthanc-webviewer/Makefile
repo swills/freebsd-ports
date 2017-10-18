@@ -1,9 +1,9 @@
 # Created by: mp39590@gmail.com
-# $FreeBSD: head/science/orthanc-webviewer/Makefile 442951 2017-06-08 19:33:40Z antoine $
+# $FreeBSD: head/science/orthanc-webviewer/Makefile 450562 2017-09-25 00:51:02Z jbeich $
 
 PORTNAME=	orthanc-webviewer
 PORTVERSION=	2.2
-PORTREVISION=	5
+PORTREVISION=	8
 CATEGORIES=	science graphics
 MASTER_SITES=	http://orthanc-server.com/downloads/get.php?path=/plugin-webviewer/:main \
 		http://www.montefiore.ulg.ac.be/~jodogne/Orthanc/ThirdPartyDownloads/WebViewer/:thirdparty

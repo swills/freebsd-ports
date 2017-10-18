@@ -1,5 +1,5 @@
 # Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/biology/plink/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/biology/plink/Makefile 451982 2017-10-13 11:14:53Z bapt $
 
 PORTNAME=	plink
 PORTVERSION=	1.07
@@ -10,6 +10,8 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
 MAINTAINER=	bacon4000@gmail.com
 COMMENT=	Whole genome association analysis toolset
+
+BROKEN=		no public distfiles
 
 LICENSE=	GPLv2
 

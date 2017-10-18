@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/mypaint/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/mypaint/Makefile 451797 2017-10-11 20:49:31Z bapt $
 
 PORTNAME=	mypaint
 PORTVERSION=	1.2.0
@@ -15,12 +15,13 @@ LICENSE_COMB=	multi
 LICENSE_FILE_GPLv2+ =	${WRKSRC}/COPYING
 LICENSE_FILE_ISCL=	${WRKSRC}/brushlib/COPYING
 
-BUILD_DEPENDS=	swig13>0:devel/swig13 \
+BUILD_DEPENDS=	swig3.0:devel/swig30 \
 		${PYNUMPY}
 LIB_DEPENDS=	libjson-c.so:devel/json-c \
 		liblcms2.so:graphics/lcms2
 RUN_DEPENDS=	${PYNUMPY}
 
+BINARY_ALIAS=	swig=swig3.0
 USE_GNOME=	gtk30 pygobject3 librsvg2:run
 CFLAGS+=	${CFLAGS_${CHOSEN_COMPILER_TYPE}}
 CFLAGS_gcc=	-std=c99

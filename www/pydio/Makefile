@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/pydio/Makefile 443974 2017-06-20 13:36:50Z madpilot $
+# $FreeBSD: head/www/pydio/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	pydio
 PORTVERSION=	8.0.1
@@ -15,10 +15,9 @@ PORTSCOUT=	limitw:1,even
 
 NO_BUILD=	yes
 NO_ARCH=	yes
-USES=		cpe dos2unix
+USES=		cpe dos2unix php:web
 USE_PHP=	dom mcrypt gd
 DOS2UNIX_REGEX=	.*\.php
-WANT_PHP_WEB=	yes
 SUB_FILES=	pkg-deinstall pkg-message
 SUB_LIST+=	GOWDIR=${WWWDIR:H}
 

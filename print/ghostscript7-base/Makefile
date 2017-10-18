@@ -1,5 +1,5 @@
 # Created by: Andreas Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/print/ghostscript7-base/Makefile 415742 2016-05-23 20:35:01Z amdmi3 $
+# $FreeBSD: head/print/ghostscript7-base/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	ghostscript
 PORTVERSION=	7.07
@@ -30,7 +30,6 @@ CONFLICTS_INSTALL= \
 USES=		autoreconf gmake jpeg shebangfix tar:bzip2
 USE_LDCONFIG=	yes
 SHEBANG_FILES=	lib/fixmswrd.pl
-WANT_GNOME=	yes
 # normazile WRKSRC so things like cups-pstoraster may work
 WRKSRC=		${WRKDIR}/${PORTNAME}
 MAKE_JOBS_UNSAFE=	yes

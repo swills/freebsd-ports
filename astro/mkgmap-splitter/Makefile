@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/astro/mkgmap-splitter/Makefile 446319 2017-07-21 15:24:52Z amdmi3 $
+# $FreeBSD: head/astro/mkgmap-splitter/Makefile 451618 2017-10-09 14:07:33Z amdmi3 $
 
 PORTNAME=	splitter
-PORTVERSION=	r583
+PORTVERSION=	r584
 CATEGORIES=	astro converters java
 MASTER_SITES=	http://www.mkgmap.org.uk/download/ \
 		http://mirror.amdmi3.ru/distfiles/

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-Types-DateTime/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Types-DateTime/Makefile 451484 2017-10-08 06:06:06Z antoine $
 
 PORTNAME=	MooseX-Types-DateTime
 PORTVERSION=	0.13
@@ -13,7 +13,7 @@ COMMENT=	DateTime related constraints and coercions for Moose
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
-LICENSE_FILE=	${WRKSRC}/LICENSE
+LICENSE_FILE=	${WRKSRC}/LICENCE
 
 BUILD_DEPENDS=	p5-DateTime>=0.43.02:devel/p5-DateTime \
 		p5-DateTime-Locale>=0.40.01:devel/p5-DateTime-Locale \

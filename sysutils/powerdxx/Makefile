@@ -1,11 +1,11 @@
-# $FreeBSD: head/sysutils/powerdxx/Makefile 449918 2017-09-15 18:28:31Z adamw $
+# $FreeBSD: head/sysutils/powerdxx/Makefile 450473 2017-09-23 21:11:51Z adamw $
 
 PORTNAME=	powerdxx
 PORTVERSION=	0.2.5
 PORTREVISION=	1
 CATEGORIES=	sysutils
 
-MAINTAINER=	kamikaze@bsdforen.de
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	CPU clock speed/frequency daemon
 
 LICENSE=	ISCL

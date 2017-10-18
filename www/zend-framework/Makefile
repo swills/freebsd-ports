@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/www/zend-framework/Makefile 434415 2017-02-19 20:26:02Z sunpoet $
+# $FreeBSD: head/www/zend-framework/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	ZendFramework
 PORTVERSION=	2.3.3
@@ -18,8 +18,7 @@ CONFLICTS=	ZendFramework-1.*
 NO_ARCH=	yes
 NO_BUILD=	yes
 USE_PHP=	spl
-WANT_PHP_WEB=	yes
-USES=		gettext tar:tgz
+USES=		gettext php:web tar:tgz
 
 SUB_FILES=	pkg-message
 

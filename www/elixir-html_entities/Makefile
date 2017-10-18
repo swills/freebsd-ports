@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/elixir-html_entities/Makefile 411652 2016-03-22 12:23:42Z olgeni $
+# $FreeBSD: head/www/elixir-html_entities/Makefile 451745 2017-10-11 12:40:31Z olgeni $
 
 PORTNAME=	html_entities
-PORTVERSION=	0.3.0
+PORTVERSION=	0.4.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	elixir-

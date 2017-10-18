@@ -1,11 +1,12 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/www/seamonkey-i18n/Makefile 446510 2017-07-24 06:23:00Z jbeich $
+# $FreeBSD: head/www/seamonkey-i18n/Makefile 452187 2017-10-16 11:50:16Z jbeich $
 
 PORTNAME=	seamonkey-i18n
-PORTVERSION=	2.48
+PORTVERSION=	2.49.1
 CATEGORIES=	www mail news editors irc
 MASTER_SITES=	MOZILLA/${PORTNAME:S|-i18n||}/releases/${DISTVERSION}/langpack \
-		MOZILLA/${PORTNAME:S|-i18n||}/candidates/${DISTVERSION}-candidates/build1/langpack
+		MOZILLA/${PORTNAME:S|-i18n||}/candidates/${DISTVERSION}-candidates/build4/linux-i686/xpi \
+		LOCAL/jbeich/${DIST_SUBDIR}
 PKGNAMEPREFIX=
 DISTFILES=	${SEAMONKEY_I18N_:S/$/.langpack.xpi/:S/^/seamonkey-${PORTVERSION}./}
 DIST_SUBDIR=	xpi/${DISTNAME}

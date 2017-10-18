@@ -1,13 +1,12 @@
 # Created by: Mark Reidel <ports@mark.reidel.info>
-# $FreeBSD: head/audio/gmpc/Makefile 421175 2016-08-31 17:42:19Z marino $
+# $FreeBSD: head/audio/gmpc/Makefile 451965 2017-10-13 08:58:28Z bapt $
 
 PORTNAME=	gmpc
 PORTVERSION=	11.8.16
 PORTREVISION=	5
 PORTEPOCH=	1
 CATEGORIES=	audio
-MASTER_SITES=	http://download.sarine.nl/Programs/gmpc/${PORTVERSION}/ \
-		http://freebsd.unixfreunde.de/sources/
+MASTER_SITES=	http://download.sarine.nl/Programs/gmpc/${PORTVERSION}/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Full featured GTK2 client for musicpd

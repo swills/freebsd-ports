@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/archivers/p5-Archive-Peek/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/archivers/p5-Archive-Peek/Makefile 451485 2017-10-08 06:07:59Z antoine $
 
 PORTNAME=	Archive-Peek
 PORTVERSION=	0.35
@@ -13,7 +13,6 @@ COMMENT=	Peek into archives without extracting them
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
-LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-Archive-Zip>=0:archivers/p5-Archive-Zip \
 		p5-Moose>=0:devel/p5-Moose \

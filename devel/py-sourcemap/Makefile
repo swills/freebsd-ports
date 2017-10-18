@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-sourcemap/Makefile 419242 2016-07-29 12:09:58Z rm $
+# $FreeBSD: head/devel/py-sourcemap/Makefile 450405 2017-09-22 20:51:39Z rm $
 
 PORTNAME=	sourcemap
-PORTVERSION=	0.2.0
+PORTVERSION=	0.2.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

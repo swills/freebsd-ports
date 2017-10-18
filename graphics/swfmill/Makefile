@@ -1,9 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/graphics/swfmill/Makefile 433448 2017-02-05 18:58:34Z jbeich $
+# $FreeBSD: head/graphics/swfmill/Makefile 451517 2017-10-08 09:59:29Z pi $
 
 PORTNAME=	swfmill
-PORTVERSION=	0.3.3
-PORTREVISION=	5
+PORTVERSION=	0.3.4
 CATEGORIES=	graphics
 MASTER_SITES=	http://swfmill.org/releases/
 
@@ -13,7 +12,9 @@ COMMENT=	Tool to generate or decompile Adobe Flash SWF files
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libpng.so:graphics/png \
-		libfreetype.so:print/freetype2
+		libfreetype.so:print/freetype2 \
+		libgcrypt.so:security/libgcrypt \
+		libgpg-error.so:security/libgpg-error
 
 USES=		dos2unix iconv gmake pkgconfig libtool
 USE_GNOME=	libxml2 libxslt

@@ -1,5 +1,5 @@
 # Created by: jesse@cs.uni-magdeburg.de
-# $FreeBSD: head/devel/tmake/Makefile 430497 2017-01-03 18:36:11Z sunpoet $
+# $FreeBSD: head/devel/tmake/Makefile 451538 2017-10-08 13:49:13Z sunpoet $
 
 PORTNAME=	tmake
 PORTVERSION=	2.12
@@ -17,9 +17,6 @@ NO_ARCH=	yes
 NO_BUILD=	yes
 REINPLACE_ARGS=	-i ''
 USES=		perl5 shebangfix zip
-
-PLIST_FILES=	bin/progen bin/tmake
-PORTDATA=	*
 
 SHEBANG_FILES=	bin/progen bin/tmake
 

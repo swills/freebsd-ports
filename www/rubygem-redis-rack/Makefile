@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-redis-rack/Makefile 438566 2017-04-15 00:47:55Z sunpoet $
+# $FreeBSD: head/www/rubygem-redis-rack/Makefile 452306 2017-10-17 20:08:10Z sunpoet $
 
 PORTNAME=	redis-rack
-PORTVERSION=	2.0.2
+PORTVERSION=	2.0.3
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -17,5 +17,7 @@ RUN_DEPENDS=	rubygem-rack>=1.5:www/rubygem-rack \
 NO_ARCH=	yes
 USE_RUBY=	yes
 USES=		gem
+
+PLIST_FILES=	bin/appraisal bin/rake
 
 .include <bsd.port.mk>

@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/envconsul/Makefile 438055 2017-04-08 16:44:54Z swills $
+# $FreeBSD: head/sysutils/envconsul/Makefile 452281 2017-10-17 15:16:32Z swills $
 
 PORTNAME=	envconsul
-PORTVERSION=	0.6.2
+PORTVERSION=	0.7.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

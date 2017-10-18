@@ -1,9 +1,9 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/security/quantis/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/security/quantis/Makefile 451497 2017-10-08 07:58:49Z sunpoet $
 
 PORTNAME=	quantis
 DISTVERSION=	v13.11.08
-PORTREVISION=	5
+PORTREVISION=	7
 CATEGORIES=	security devel java
 MASTER_SITES=	http://www.idquantique.com/~download/Quantis/ \
 		LOCAL/ale
@@ -14,7 +14,7 @@ COMMENT=	Libraries and utilities to access Quantis devices
 
 LICENSE=	BSD3CLAUSE GPLv2
 LICENSE_COMB=	dual
-LICENSE_FILE=	${WRKSRC}/Quantis-${DISTVERSION}/License.txt
+LICENSE_FILE_BSD3CLAUSE=${WRKSRC}/../License.txt
 
 OPTIONS_DEFINE=	PCI USB JAVA COMPAT TOOL GUI DOCS EXAMPLES
 OPTIONS_DEFAULT=PCI USB JAVA TOOL GUI

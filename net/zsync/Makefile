@@ -1,8 +1,9 @@
 # Created by: Gea-Suan Lin <gslin@ccca.nctu.edu.tw>
-# $FreeBSD: head/net/zsync/Makefile 399958 2015-10-22 10:30:45Z amdmi3 $
+# $FreeBSD: head/net/zsync/Makefile 451187 2017-10-04 08:11:14Z bapt $
 
 PORTNAME=	zsync
 PORTVERSION=	0.6.2
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://zsync.moria.org.uk/download/
 
@@ -12,7 +13,7 @@ COMMENT=	File transfer program
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		tar:bzip2
+USES=		autoreconf tar:bzip2
 GNU_CONFIGURE=	yes
 
 PORTDOCS=	INSTALL NEWS README

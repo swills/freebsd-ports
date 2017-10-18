@@ -1,12 +1,11 @@
 # Created by: Bernhard Fröhlich <decke@bluelife.at>
-# $FreeBSD: head/audio/vagalume/Makefile 428136 2016-12-08 17:01:31Z tijl $
+# $FreeBSD: head/audio/vagalume/Makefile 451968 2017-10-13 09:06:37Z bapt $
 
 PORTNAME=	vagalume
 PORTVERSION=	0.8.6
 PORTREVISION=	2
 CATEGORIES=	audio
-MASTER_SITES=	http://vagalume.igalia.com/files/source/ \
-		DEBIAN_POOL/pool/main/v/vagalume/
+MASTER_SITES=	http://vagalume.igalia.com/files/source/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GTK+-based client for the Last.fm online radio

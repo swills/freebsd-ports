@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-kaminari-core/Makefile 434015 2017-02-13 18:59:02Z sunpoet $
+# $FreeBSD: head/www/rubygem-kaminari-core/Makefile 452104 2017-10-15 00:37:12Z sunpoet $
 
 PORTNAME=	kaminari-core
-PORTVERSION=	1.0.1
+PORTVERSION=	1.1.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

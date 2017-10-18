@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/keybinder/Makefile 448722 2017-08-25 17:21:13Z danfe $
+# $FreeBSD: head/x11/keybinder/Makefile 451186 2017-10-04 08:01:09Z bapt $
 
 PORTNAME=	keybinder
 PORTVERSION=	0.3.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	x11
 

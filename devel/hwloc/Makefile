@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/hwloc/Makefile 444433 2017-06-26 23:44:13Z linimon $
+# $FreeBSD: head/devel/hwloc/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	hwloc
 PORTVERSION=	1.11.7
@@ -27,7 +27,7 @@ USE_GNOME=	libxml2
 
 PORTDOCS=	*
 
-ONLY_FOR_ARCHS=		amd64 armv6 i386
+ONLY_FOR_ARCHS=		amd64 armv6 armv7 i386
 ONLY_FOR_ARCHS_REASON=	has not been ported to this architecture
 
 OPTIONS_DEFINE=	CAIRO DOCS

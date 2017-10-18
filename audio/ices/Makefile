@@ -1,5 +1,5 @@
 # Created by: Michael Nottebrock <michaelnottebrock@gmx.net>
-# $FreeBSD: head/audio/ices/Makefile 439873 2017-05-01 12:46:00Z sunpoet $
+# $FreeBSD: head/audio/ices/Makefile 451532 2017-10-08 13:48:42Z sunpoet $
 
 PORTNAME=	ices
 PORTVERSION=	2.0.2
@@ -27,9 +27,6 @@ CONFIGURE_ARGS=	--disable-roaraudio --disable-sun-audio
 GNU_CONFIGURE=	yes
 USE_GNOME=	libxml2
 USES=		gmake gnome iconv pkgconfig tar:bzip2
-
-PLIST_FILES=	bin/ices
-PORTDATA=	*
 
 ALSA_CONFIGURE_ENABLE=	alsa
 ALSA_LIB_DEPENDS=	libasound.so:audio/alsa-lib

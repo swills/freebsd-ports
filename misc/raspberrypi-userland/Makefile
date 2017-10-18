@@ -1,5 +1,5 @@
 # Created by: Mikael Urankar <mikael.urankar@gmail.com>
-# $FreeBSD: head/misc/raspberrypi-userland/Makefile 429455 2016-12-25 19:22:53Z cpm $
+# $FreeBSD: head/misc/raspberrypi-userland/Makefile 451653 2017-10-10 01:46:52Z linimon $
 
 PORTNAME=	raspberrypi-userland
 PORTVERSION=	20161026
@@ -10,7 +10,7 @@ COMMENT=	Various libraries for the Raspberry Pi
 
 LICENSE=	BSD3CLAUSE
 
-ONLY_FOR_ARCHS=	armv6
+ONLY_FOR_ARCHS=	armv6 armv7
 
 CONFLICTS_INSTALL=	libglesv2 libEGL
 

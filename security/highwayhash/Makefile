@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/highwayhash/Makefile 447922 2017-08-13 22:35:18Z ultima $
+# $FreeBSD: head/security/highwayhash/Makefile 451758 2017-10-11 16:07:30Z linimon $
 
 PORTNAME=	highwayhash
 PORTVERSION=	g20170512
@@ -11,7 +11,7 @@ COMMENT=	Fast strong hash functions: SipHash/HighwayHash
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-ONLY_FOR_ARCHS=	amd64 arm64 powerpc powerpc64
+ONLY_FOR_ARCHS=	aarch64 amd64 powerpc powerpc64
 ONLY_FOR_ARCHS_REASON=	Assembly is implemented only for specific architectures in highwayhash/tsc_timer.h
 
 USES=		gmake

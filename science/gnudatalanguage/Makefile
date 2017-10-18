@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/science/gnudatalanguage/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/science/gnudatalanguage/Makefile 450701 2017-09-26 22:32:04Z jbeich $
 
 PORTNAME=	gnudatalanguage
 DISTVERSION=	0.9.7
@@ -25,6 +25,13 @@ LIB_DEPENDS+=	libplplot.so:math/plplot	\
 USE_WX=		3.0+
 USE_XORG=	x11 sm ice xext
 USES=		cmake:outsource compiler:gcc-c++11-lib dos2unix ncurses pkgconfig readline tar:tgz
+
+# On FreeBSD < 11 libc++ lacks support for sized delete operators.
+# GCC dropped the builtin version of these operators in 6+ by
+# defaulting to gnu++14. Force c++11 instead.
+# For a more detailed discussion see:
+# https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=219484
+USE_CXXSTD=	gnu++11
 
 # Disable ncurses and readline from ports
 # Disable ImageMagick (does'nt work with plplot because dynamic drivers

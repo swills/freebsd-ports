@@ -1,11 +1,11 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/audio/beast/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/audio/beast/Makefile 452043 2017-10-14 05:59:19Z tobik $
 
 PORTNAME=	beast
 PORTVERSION=	0.7.8
 PORTREVISION=	9
 CATEGORIES=	audio
-MASTER_SITES=	http://testbit.eu/pub/dists/beast/v${PORTVERSION:R}/
+MASTER_SITES=	https://beast.testbit.org/pub/v0/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Powerful music composition and modular synthesis application

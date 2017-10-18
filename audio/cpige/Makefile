@@ -1,12 +1,11 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/audio/cpige/Makefile 434992 2017-02-27 21:20:41Z rene $
+# $FreeBSD: head/audio/cpige/Makefile 451965 2017-10-13 08:58:28Z bapt $
 
 PORTNAME=	cpige
 DISTVERSION=	1.5
 PORTREVISION=	1
 CATEGORIES=	audio
-MASTER_SITES=	http://old.ed.zehome.com/cpige/ \
-		http://T32.TecNik93.com/FreeBSD/ports/cpige/sources/
+MASTER_SITES=	http://old.ed.zehome.com/cpige/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Icecast/Shoutcast stream ripper

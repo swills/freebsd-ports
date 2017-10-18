@@ -1,8 +1,8 @@
 # Created by: Sofian Brabez <sbrabez@gmail.com>
-# $FreeBSD: head/devel/py-bitstring/Makefile 413232 2016-04-13 22:21:03Z sbz $
+# $FreeBSD: head/devel/py-bitstring/Makefile 450374 2017-09-22 13:53:00Z sbz $
 
 PORTNAME=	bitstring
-PORTVERSION=	3.1.4
+PORTVERSION=	3.1.5
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +12,7 @@ COMMENT=	Simple construction, analysis, and modification of binary data
 
 LICENSE=	MIT
 
-USES=		python
+USES=		python zip
 USE_PYTHON=	autoplist concurrent distutils
 
 DOCSDIR=	${PREFIX}/share/doc/py-${PORTNAME}

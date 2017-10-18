@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: head/Mk/Scripts/do-users-groups.sh 446195 2017-07-19 11:55:46Z mat $
+# $FreeBSD: head/Mk/Scripts/do-users-groups.sh 452181 2017-10-16 08:30:27Z antoine $
 #
 # MAINTAINER: portmgr@FreeBSD.org
 
@@ -139,7 +139,7 @@ if [ -n "${USERS}" ]; then
 				/|/nonexistent|/var/empty)
 					;;
 				*)
-					group=$(awk -F: -v gid=${gid} '$3 == gid { print $1 }' ${dp_GID_FILES})
+					group=$(awk -F: -v gid=${gid} '$1 !~ /^#/ && $3 == gid { print $1 }' ${dp_GID_FILES})
 					echo "${dp_INSTALL} -d -g $group -o $login $homedir" >> "${dp_UG_INSTALL}"
 					;;
 			esac

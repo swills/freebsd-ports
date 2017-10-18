@@ -1,5 +1,5 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/science/rubygem-ai4r/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/science/rubygem-ai4r/Makefile 450516 2017-09-24 18:49:56Z sunpoet $
 
 PORTNAME=	ai4r
 PORTVERSION=	1.13
@@ -9,10 +9,9 @@ MASTER_SITES=	RG
 MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Various Ruby artificial intelligence algorithm implementations
 
-LICENSE=	MPL
+LICENSE=	MPL11
 
 NO_ARCH=	yes
-
 USE_RUBY=	yes
 USES=		gem
 

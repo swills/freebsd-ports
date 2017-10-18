@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/linphone/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/net/linphone/Makefile 452147 2017-10-15 14:05:04Z madpilot $
 
 PORTNAME=	linphone
 PORTVERSION=	3.10.2
@@ -55,7 +55,7 @@ UPNP_LIB_DEPENDS=	libupnp.so:devel/upnp
 
 VIDEO_CONFIGURE_ENABLE=	video
 
-.if defined(WITH_DEBUG) && !defined(WITHOUT_DEBUG)
+.if defined(WITH_DEBUG)
 CONFIGURE_ARGS+=--enable-debug
 .endif
 

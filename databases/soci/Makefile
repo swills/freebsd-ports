@@ -1,9 +1,9 @@
 # Created by: Julien Laffaye <kimelto@gmail.com>
-# $FreeBSD: head/databases/soci/Makefile 440865 2017-05-14 06:52:09Z linimon $
+# $FreeBSD: head/databases/soci/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	soci
 PORTVERSION=	3.2.2
-PORTREVISION=	4
+PORTREVISION=	6
 CATEGORIES=	databases
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
@@ -28,6 +28,7 @@ OPTIONS_SUB=	yes
 # firebird is currently only available on x86.
 OPTIONS_EXCLUDE_aarch64=	FIREBIRD
 OPTIONS_EXCLUDE_armv6=		FIREBIRD
+OPTIONS_EXCLUDE_armv7=		FIREBIRD
 OPTIONS_EXCLUDE_mips=		FIREBIRD
 OPTIONS_EXCLUDE_mips64=		FIREBIRD
 OPTIONS_EXCLUDE_powerpc=	FIREBIRD

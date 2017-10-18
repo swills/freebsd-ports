@@ -1,5 +1,5 @@
 # Created by: chuynh@biolateral.com.au
-# $FreeBSD: head/biology/tRNAscan-SE/Makefile 363374 2014-07-29 19:11:51Z adamw $
+# $FreeBSD: head/biology/tRNAscan-SE/Makefile 451982 2017-10-13 11:14:53Z bapt $
 
 PORTNAME=	tRNAscan-SE
 PORTVERSION=	1.23
@@ -9,6 +9,8 @@ MASTER_SITES=	ftp://selab.janelia.org/pub/software/tRNAscan-SE/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Improved tool for transfer RNA detection
+
+BROKEN=		No public distfiles
 
 USES=		perl5 tar:Z
 MAKE_ARGS=	BINDIR="${PREFIX}/bin" \

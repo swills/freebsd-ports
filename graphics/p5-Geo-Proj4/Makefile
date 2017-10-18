@@ -1,14 +1,14 @@
 # Created by: Eric Stith
-# $FreeBSD: head/graphics/p5-Geo-Proj4/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/graphics/p5-Geo-Proj4/Makefile 450669 2017-09-26 15:02:28Z culot $
 
 PORTNAME=	Geo-Proj4
-PORTVERSION=	1.05
+PORTVERSION=	1.06
 CATEGORIES=	graphics devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	culot@FreeBSD.org
-COMMENT=	Perl cartographic projections wrapper for Proj library
+COMMENT=	Cartographic projections wrapper for Proj library
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
@@ -19,5 +19,8 @@ CONFIGURE_ENV=	GEOPROJ_FWTOOLS_DIR=${LOCALBASE}
 MAKE_ENV=	INC=-I${LOCALBASE}/include
 USES=		perl5
 USE_PERL5=	configure
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Geo/Proj4/Proj4.so
 
 .include <bsd.port.mk>

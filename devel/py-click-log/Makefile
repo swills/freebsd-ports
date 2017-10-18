@@ -1,8 +1,8 @@
 # Created by: Christian Geier <geier@lostpackets.de>
-# $FreeBSD: head/devel/py-click-log/Makefile 440483 2017-05-09 12:55:22Z sunpoet $
+# $FreeBSD: head/devel/py-click-log/Makefile 451866 2017-10-12 12:04:51Z jrm $
 
 PORTNAME=	click-log
-PORTVERSION=	0.1.8
+DISTVERSION=	0.2.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

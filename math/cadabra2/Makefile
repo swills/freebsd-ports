@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/math/cadabra2/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/cadabra2/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	cadabra2
 PORTVERSION=	2.1.5
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	math
 
 MAINTAINER=	yuri@rawbw.com

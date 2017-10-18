@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc46/Makefile 450021 2017-09-17 19:32:17Z gerald $
+# $FreeBSD: head/lang/gcc46/Makefile 450476 2017-09-23 22:26:09Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	4.6.4
@@ -102,6 +102,7 @@ full-regression-test: build
 
 post-stage:
 	${RM} ${STAGEDIR}${PREFIX}/man/man7/*
+	${RM} -r ${STAGEDIR}${TARGLIB}/gcc/*/${GCC_VERSION}/include-fixed/
 	# Add target libraries and include files to packaging list.
 	${RM} ${WRKDIR}/PLIST.lib
 .for d in ${TARGLIB:S/^${PREFIX}\///} ${LIBEXEC:S/^${PREFIX}\///}

@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/ctypes.sh/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/ctypes.sh/Makefile 452196 2017-10-16 13:49:41Z swills $
 
 PORTNAME=	ctypes.sh
-PORTVERSION=	0.1
+PORTVERSION=	1.1
 CATEGORIES=	devel
-MASTER_SITES=	https://github.com/taviso/${PORTNAME}/releases/download/v0.01/
+MASTER_SITES=	https://github.com/taviso/${PORTNAME}/releases/download/v${PORTVERSION}/
 DISTNAME=	ctypes-sh-${PORTVERSION}
 
 MAINTAINER=	swills@FreeBSD.org

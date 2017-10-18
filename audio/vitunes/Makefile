@@ -1,13 +1,11 @@
 # Created by: Dennis Herrmann <dhn@FreeBSD.org>
-# $FreeBSD: head/audio/vitunes/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/audio/vitunes/Makefile 451968 2017-10-13 09:06:37Z bapt $
 
 PORTNAME=	vitunes
 PORTVERSION=	2.3
 PORTREVISION=	4
 CATEGORIES=	audio
-MASTER_SITES=	http://vitunes.org/files/ \
-		http://mirror.4bit.ws/ \
-		LOCAL/dhn
+MASTER_SITES=	http://vitunes.org/files/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Curses-based media player with vim-like keybinds

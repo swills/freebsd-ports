@@ -1,8 +1,9 @@
 # Created by: clsung@dragon2.net
-# $FreeBSD: head/textproc/p5-RTF-Parser/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-RTF-Parser/Makefile 451248 2017-10-04 20:40:22Z ehaupt $
 
 PORTNAME=	RTF-Parser
 PORTVERSION=	1.12
+PORTREVISION=	1
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -15,6 +16,8 @@ LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-RTF-Tokenizer>=1.16:textproc/p5-RTF-Tokenizer
 RUN_DEPENDS:=	${BUILD_DEPENDS}
+
+CONFLICTS_INSTALL=	rtf2html-[0-9]*
 
 USES=		perl5
 USE_PERL5=	configure

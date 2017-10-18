@@ -1,5 +1,5 @@
 # Created by: Jim Mock <jim@FreeBSD.org>
-# $FreeBSD: head/net-im/libpurple/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/net-im/libpurple/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME?=	libpurple
 PORTVERSION=	2.12.0
@@ -28,12 +28,10 @@ INSTALL_TARGET=	install-strip
 # set these macros themselves.
 USES+=		iconv python shebangfix
 USE_LDCONFIG=	yes
-WANT_GNOME=	yes
 SHEBANG_FILES=	libpurple/purple-remote \
 		libpurple/purple-url-handler
 
 .if defined(PACKAGE_BUILDING)
-.undef WITHOUT_GNOME
 WITH_GNOME=	yes
 .endif
 
@@ -121,12 +119,12 @@ PLIST_SUB+=		PERL:="@comment not installed: " \
 			PERLMAN:="@comment not installed: "
 .endif
 
-.if !defined(PIDGIN_SLAVE)
+.if defined(WITH_GTKUI) && !defined(PIDGIN_SLAVE)
 USE_GNOME+=	gconf2
 GCONF_SCHEMAS=	purple.schemas
 .endif
 
-#.if defined(WITH_GTKUI) && ${HAVE_GNOME:Mevolutiondataserver}!=""
+#.if defined(WITH_GTKUI)
 #USE_GNOME+=		evolutiondataserver
 #PLIST_SUB+=		EVO=""
 #CONFIGURE_ARGS+=	--enable-gevolution

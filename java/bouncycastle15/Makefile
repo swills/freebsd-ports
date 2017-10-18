@@ -1,5 +1,5 @@
 # Created by: Eugene Grosbein <ports@grosbein.net>
-# $FreeBSD: head/java/bouncycastle15/Makefile 448566 2017-08-22 16:51:42Z eugen $
+# $FreeBSD: head/java/bouncycastle15/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	bouncycastle
 PORTVERSION=	1.58
@@ -48,7 +48,8 @@ PORTDOCS=	*
 .include <bsd.port.options.mk>
 
 # PR 220612: remove fork="true" in javac and fork="yes" in junit tasks
-.if ${ARCH}=="armv6"
+# NB: as of adding armv7, the patchname is kind of obsolete.
+.if ${ARCH} == armv6 || ${ARCH} == armv7
 EXTRA_PATCHES+=	${FILESDIR}/armv6-patch-bc+-build.xml
 .endif
 

@@ -1,9 +1,9 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/graphics/p5-Image-Magick-Iterator/Makefile 441761 2017-05-26 08:20:18Z kwm $
+# $FreeBSD: head/graphics/p5-Image-Magick-Iterator/Makefile 450852 2017-09-28 15:36:31Z kwm $
 
 PORTNAME=	Image-Magick-Iterator
 PORTVERSION=	0.01
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,9 +1,9 @@
 # Created by: Johan Str??m <johan@stromnet.se>
-# $FreeBSD: head/devel/jsoncpp/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/jsoncpp/Makefile 451212 2017-10-04 10:56:16Z sunpoet $
 
 PORTNAME=	jsoncpp
 PORTVERSION=	1.8.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@rawbw.com
@@ -47,9 +47,8 @@ do-install:
 	${LN} -s libjsoncpp.so.${DISTVERSION} ${STAGEDIR}${PREFIX}/lib/libjsoncpp.so
 	${CP} ${WRKSRC}/pkg-config/jsoncpp.pc.in ${STAGEDIR}${PREFIX}/libdata/pkgconfig/jsoncpp.pc
 	@${REINPLACE_CMD} -i '' \
-		-e 's|@CMAKE_INSTALL_PREFIX@|${PREFIX}|g' \
-		-e 's|@CMAKE_INSTALL_LIBDIR@|lib|g' \
-		-e 's|@CMAKE_INSTALL_INCLUDEDIR@|include/jsoncpp|g' \
+		-e 's|@CMAKE_INSTALL_FULL_LIBDIR@|${PREFIX}/lib|g' \
+		-e 's|@CMAKE_INSTALL_FULL_INCLUDEDIR@|${PREFIX}/include/jsoncpp|g' \
 		-e 's|@JSONCPP_VERSION@|${DISTVERSION}|g' \
 		${STAGEDIR}${PREFIX}/libdata/pkgconfig/jsoncpp.pc
 

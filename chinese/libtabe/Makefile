@@ -1,11 +1,11 @@
 # Created by: Jing-Tang Keith Jang <keith@FreeBSD.org>
-# $FreeBSD: head/chinese/libtabe/Makefile 440756 2017-05-13 07:25:16Z miwi $
+# $FreeBSD: head/chinese/libtabe/Makefile 452012 2017-10-13 15:20:58Z sunpoet $
 
 PORTNAME=	libtabe
 PORTVERSION=	0.2.6
 PORTREVISION=	8
 CATEGORIES=	chinese
-MASTER_SITES=	DEBIAN/pool/main/libt/libtabe/
+MASTER_SITES=	http://old-releases.ubuntu.com/ubuntu/pool/universe/libt/libtabe/
 DISTNAME=	libtabe_${PORTVERSION}.orig
 
 MAINTAINER=	ports@FreeBSD.org
@@ -27,7 +27,6 @@ CONFIGURE_ARGS=	--includedir=${PREFIX}/include/tabe \
 		--with-db-bin=${LOCALBASE}/bin
 WRKSRC=		${WRKDIR}/${DISTNAME:S|_|-|}
 MAKE_JOBS_UNSAFE=	yes
-BROKEN=	File unavailable
 
 OPTIONS_DEFINE=		DOCS X11
 OPTIONS_SUB=		X11

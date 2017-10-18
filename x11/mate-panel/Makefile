@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/mate-panel/Makefile 445014 2017-07-04 11:44:30Z kwm $
+# $FreeBSD: head/x11/mate-panel/Makefile 452089 2017-10-14 20:51:48Z kwm $
 
 PORTNAME=	mate-panel
-PORTVERSION=	1.18.3
+PORTVERSION=	1.18.4
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

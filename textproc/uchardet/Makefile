@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/textproc/uchardet/Makefile 427597 2016-12-03 08:24:32Z jhale $
+# $FreeBSD: head/textproc/uchardet/Makefile 450529 2017-09-24 18:50:58Z sunpoet $
 
 PORTNAME=	uchardet
 PORTVERSION=	0.0.6
@@ -9,8 +9,9 @@ MASTER_SITES=	https://www.freedesktop.org/software/${PORTNAME}/releases/
 MAINTAINER=	yuri@rawbw.com
 COMMENT=	Universal charset detection library
 
-LICENSE=	GPLv2+ LGPL21+ MPL
+LICENSE=	GPLv2+ LGPL21+ MPL11
 LICENSE_COMB=	dual
+LICENSE_FILE_MPL11=	${WRKSRC}/COPYING
 
 USES=		cmake pathfix tar:xz
 USE_LDCONFIG=	yes

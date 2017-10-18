@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/rubygem-redis/Makefile 432367 2017-01-24 17:41:29Z sunpoet $
+# $FreeBSD: head/databases/rubygem-redis/Makefile 451140 2017-10-03 15:35:07Z sunpoet $
 
 PORTNAME=	redis
-PORTVERSION=	3.3.3
+PORTVERSION=	3.3.5
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

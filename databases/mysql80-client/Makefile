@@ -1,8 +1,7 @@
 # Created by: "Mahdi Mokhtari <mokhi64@gmail.com>"
-# $FreeBSD: head/databases/mysql80-client/Makefile 441320 2017-05-20 16:58:10Z linimon $
+# $FreeBSD: head/databases/mysql80-client/Makefile 451389 2017-10-06 15:44:18Z mmokhi $
 
 PORTNAME=	mysql
-PORTREVISION?=	3
 PKGNAMESUFFIX=	80-client
 
 COMMENT=	Multithreaded SQL database (client)
@@ -23,7 +22,7 @@ CONFLICTS_INSTALL=	mysql8[1-9]-client-* \
 			mariadb[0-9][0-9]-client-* \
 			percona[0-9][0-9]-client-*
 
-CMAKE_ARGS+=	-DWITHOUT_SERVER=1
+CMAKE_ARGS+=	-DWITHOUT_SERVER=1 -DINSTALL_SUPPORTFILESDIR=0
 
 USE_LDCONFIG+=	${PREFIX}/lib/mysql
 

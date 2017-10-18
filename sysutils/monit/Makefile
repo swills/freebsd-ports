@@ -1,8 +1,8 @@
 # Created by: Martin Pala <martinp@tildeslash.com>
-# $FreeBSD: head/sysutils/monit/Makefile 443107 2017-06-10 17:45:44Z dbaio $
+# $FreeBSD: head/sysutils/monit/Makefile 450555 2017-09-25 00:01:03Z dbaio $
 
 PORTNAME=	monit
-PORTVERSION=	5.23.0
+PORTVERSION=	5.24.0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.mmonit.com/monit/dist/
 

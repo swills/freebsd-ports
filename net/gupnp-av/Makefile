@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/net/gupnp-av/Makefile 439881 2017-05-01 12:46:40Z sunpoet $
+# $FreeBSD: head/net/gupnp-av/Makefile 451542 2017-10-08 13:49:33Z sunpoet $
 
 PORTNAME=	gupnp-av
 PORTVERSION=	0.12.10
@@ -25,8 +25,6 @@ INSTALL_TARGET=	install-strip
 USE_GNOME=	glib20 introspection:build libxml2
 USE_LDCONFIG=	yes
 USES=		gmake gnome libtool pathfix pkgconfig tar:xz
-
-PORTDATA=	*
 
 VALA_BUILD_DEPENDS=	vala>=0.22:lang/vala
 VALA_CONFIGURE_ENV=	ac_cv_path_VAPIGEN=${LOCALBASE}/bin/vapigen

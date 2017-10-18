@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/elasticsearch-plugin-sql/Makefile 427548 2016-12-02 09:21:58Z mat $
+# $FreeBSD: head/textproc/elasticsearch-plugin-sql/Makefile 452051 2017-10-14 10:38:06Z olgeni $
 
 PORTNAME=	sql
-PORTVERSION=	1.4.9
+PORTVERSION=	1.7.6
 CATEGORIES=	textproc
 MASTER_SITES=	https://github.com/NLPchina/elasticsearch-sql/releases/download/${PORTVERSION}/
 PKGNAMEPREFIX=	elasticsearch-plugin-

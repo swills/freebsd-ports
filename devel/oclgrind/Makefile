@@ -1,8 +1,8 @@
 # Created by: Johannes Dieterich <jmd@freebsd.org>
-# $FreeBSD: head/devel/oclgrind/Makefile 433831 2017-02-11 01:58:10Z sunpoet $
+# $FreeBSD: head/devel/oclgrind/Makefile 450800 2017-09-28 02:44:48Z jmd $
 
 PORTNAME=	oclgrind
-PORTVERSION=	20170122
+PORTVERSION=	20170919
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -22,7 +22,7 @@ BROKEN_FreeBSD_10=	oclgrind is only supported on FreeBSD 11.0 and newer, crashes
 USE_GITHUB=	yes
 GH_ACCOUNT=	jrprice
 GH_PROJECT=	Oclgrind
-GH_TAGNAME=	b777367
+GH_TAGNAME=	6419e66
 
 USE_LDCONFIG=	yes
 USES=		cmake

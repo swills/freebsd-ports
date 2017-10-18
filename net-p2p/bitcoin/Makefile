@@ -1,10 +1,9 @@
 # Created by: Shaun Amott <shaun@FreeBSD.org>
-# $FreeBSD: head/net-p2p/bitcoin/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net-p2p/bitcoin/Makefile 451133 2017-10-03 14:25:09Z swills $
 
 PORTNAME=	bitcoin
-PORTVERSION=	0.14.2
+PORTVERSION=	0.15.0.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
 CATEGORIES=	net-p2p finance
 
 MAINTAINER=	robbak@robbak.com
@@ -18,7 +17,6 @@ LIB_DEPENDS=	libboost_date_time.so:devel/boost-libs \
 BROKEN_powerpc64=	fails to compile: util.cpp: undefined reference to boost::program_options::to_internal
 
 USES=		autoreconf compiler:c++11-lib gmake libtool pkgconfig shebangfix ssl
-SHEBANG_FILES=	src/test/*.py
 USE_GITHUB=	yes
 GNU_CONFIGURE=	yes
 

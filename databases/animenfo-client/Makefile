@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/animenfo-client/Makefile 363374 2014-07-29 19:11:51Z adamw $
+# $FreeBSD: head/databases/animenfo-client/Makefile 452157 2017-10-15 17:51:02Z bapt $
 
 PORTNAME=	animenfo
 PORTVERSION=	20020819
@@ -9,6 +9,8 @@ DISTNAME=	${PORTNAME}-client
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	AnimeNfo client
+
+BROKEN=		No public distfiles
 
 LICENSE=	GPLv2
 

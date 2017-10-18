@@ -1,8 +1,9 @@
 # Created by: Mark Reidel <ports@mark.reidle.info>
-# $FreeBSD: head/audio/musicpc/Makefile 445039 2017-07-04 19:41:21Z bhughes $
+# $FreeBSD: head/audio/musicpc/Makefile 451458 2017-10-07 12:56:49Z riggs $
 
 PORTNAME=	musicpc
 PORTVERSION=	0.28
+PORTREVISION=	1
 CATEGORIES=	audio ipv6
 MASTER_SITES=	http://www.musicpd.org/download/mpc/0/
 DISTNAME=	mpc-${PORTVERSION}

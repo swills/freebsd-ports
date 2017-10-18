@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/databases/mysql56-server/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/databases/mysql56-server/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME?=	mysql
 PORTVERSION=	5.6.37
@@ -147,7 +147,7 @@ post-install:
 	${MKDIR} ${STAGEDIR}${MY_TMPDIR}
 .endif
 
-.if ${ARCH} == "armv6"
+.if ${ARCH} == armv6 || ${ARCH} == armv7
 EXTRA_PATCHES+=		${FILESDIR}/extra-patch-config.h.cmake
 .endif
 

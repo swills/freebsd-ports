@@ -1,5 +1,5 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/www/mysar/Makefile 427002 2016-11-24 10:26:38Z amdmi3 $
+# $FreeBSD: head/www/mysar/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	mySAR
 PORTVERSION=	2.1.4
@@ -20,6 +20,7 @@ WRKROOT=	${WRKDIR}/${PORTNAME:tl}
 WRKSRC=		${WRKROOT}/bin/mysar-binary-importer
 GNU_CONFIGURE=	yes
 USE_MYSQL=	yes
+USES=		php
 USE_PHP=	mysql pcre
 USE_CSTD=	gnu89
 

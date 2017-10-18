@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/audio/csound/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/audio/csound/Makefile 451810 2017-10-12 08:01:45Z bapt $
 
 PORTNAME=	csound
 PORTVERSION=	5.19.01
@@ -12,6 +12,9 @@ DIST_SUBDIR=	csound
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Sound synthesizer
+
+DEPRECATED=	Not supported upstream anymore, use csound6
+EXPIRATION_DATE=	2017-11-12
 
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING

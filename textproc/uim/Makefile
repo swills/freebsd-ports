@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/textproc/uim/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/textproc/uim/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	uim
 PORTVERSION=	1.8.6
@@ -16,7 +16,6 @@ COMMENT?=	Input method library
 BROKEN_aarch64=	Fails to build: The collector has not been ported to this machine/OS combination
 
 USE_LDCONFIG=	yes
-WANT_GNOME=	yes
 USE_GNOME+=	glib20 intltool
 USES+=		gettext gmake iconv libedit libtool pathfix pkgconfig perl5 tar:bzip2
 USE_PERL5=	build

@@ -1,8 +1,8 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/elasticsearch2/Makefile 436109 2017-03-13 20:49:36Z tj $
+# $FreeBSD: head/textproc/elasticsearch2/Makefile 452132 2017-10-15 08:36:42Z olgeni $
 
 PORTNAME=	elasticsearch
-PORTVERSION=	2.4.4
+PORTVERSION=	2.4.6
 CATEGORIES=	textproc java devel
 MASTER_SITES=	http://download.elasticsearch.org/${PORTNAME}/${PORTNAME}/ \
 		http://mirrors.rit.edu/zi/
@@ -26,7 +26,7 @@ OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.options.mk>
 
-LUCENEVER=	5.5.2
+LUCENEVER=	5.5.4
 CONFIG_FILES=	elasticsearch.yml logging.yml
 BINS=		elasticsearch.in.sh \
 		elasticsearch \

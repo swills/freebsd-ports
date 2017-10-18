@@ -1,5 +1,5 @@
 # Created by: Sam Lawrance
-# $FreeBSD: head/graphics/libgeotiff/Makefile 426404 2016-11-19 17:03:22Z sunpoet $
+# $FreeBSD: head/graphics/libgeotiff/Makefile 451540 2017-10-08 13:49:23Z sunpoet $
 
 PORTNAME=	libgeotiff
 PORTVERSION=	1.4.2
@@ -32,7 +32,5 @@ GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
 USES=		jpeg libtool
-
-PORTDATA=	*
 
 .include <bsd.port.mk>

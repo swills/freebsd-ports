@@ -1,10 +1,10 @@
 # Created by: Hannes Hauswedell <h2+fbsdports@fsfe.org>
-# $FreeBSD: head/biology/seqan-apps/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/biology/seqan-apps/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	seqan-apps
 PORTVERSION=	2.2.0
 DISTVERSIONPREFIX=	seqan-v
-PORTREVISION=	6
+PORTREVISION=	8
 CATEGORIES=	biology
 
 MAINTAINER=	h2+fbsdports@fsfe.org

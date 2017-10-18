@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 446443 2017-07-23 02:54:33Z acm $
+# $FreeBSD: head/editors/Makefile 452251 2017-10-16 20:37:21Z rene $
 #
 
     COMMENT = Editors
@@ -233,13 +233,11 @@
     SUBDIR += texworks
     SUBDIR += the
     SUBDIR += thoteditor
-    SUBDIR += tpad
     SUBDIR += tree-widget
     SUBDIR += treeform
     SUBDIR += tweak
     SUBDIR += uemacs
     SUBDIR += uzap
-    SUBDIR += vanubi
     SUBDIR += vigor
     SUBDIR += vile
     SUBDIR += vim

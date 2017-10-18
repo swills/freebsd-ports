@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/erlang-gproc/Makefile 421343 2016-09-04 15:57:38Z olgeni $
+# $FreeBSD: head/devel/erlang-gproc/Makefile 451408 2017-10-06 19:42:47Z olgeni $
 
 PORTNAME=	gproc
-PORTVERSION=	0.6.1
+PORTVERSION=	0.7.0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

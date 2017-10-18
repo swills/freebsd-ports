@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/uchiwa/Makefile 428569 2016-12-14 16:06:19Z mat $
+# $FreeBSD: head/www/uchiwa/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=		uchiwa
 PORTVERSION=	0.18.2
@@ -45,8 +45,6 @@ GH_TUPLE+=	kless:osutil:3ac994847c4376a4b905fc0a19f450c5a4bec647:klessosutil/src
 
 USERS=	uchiwa
 GROUPS=	uchiwa
-
-STRIP=	#
 
 post-extract:
 	@${MKDIR} ${WRKSRC}/src/github.com/${GH_ACCOUNT}/${PORTNAME}

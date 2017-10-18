@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/grumpy/Makefile 433273 2017-02-04 00:01:34Z swills $
+# $FreeBSD: head/devel/grumpy/Makefile 452086 2017-10-14 19:53:45Z antoine $
 
 PORTNAME=	grumpy
 PORTVERSION=	0.0.0.2017020301
@@ -25,14 +25,12 @@ PLIST_SUB=	ARCH=amd64
 PLIST_SUB=	ARCH=386
 .endif
 
-STRIP=		# stripping can break go binaries
-
 do-install:
 	cd ${WRKSRC}/build/pkg && ${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/go/pkg/
 	cd ${WRKSRC}/build/src && ${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/go/src/
 	cd ${WRKSRC}/build/lib/python${PYTHON_VER}/site-packages && ${COPYTREE_SHARE} . ${STAGEDIR}${PYTHON_SITELIBDIR}
 .for bin in benchcmp coverparse diffrange grumpc
-	${INSTALL_PROGRAM} ${WRKSRC}/build/bin/${bin} ${STAGEDIR}${PREFIX}/bin/
+	${INSTALL_SCRIPT} ${WRKSRC}/build/bin/${bin} ${STAGEDIR}${PREFIX}/bin/
 .endfor
 
 .include <bsd.port.mk>

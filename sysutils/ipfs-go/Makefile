@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/ipfs-go/Makefile 436273 2017-03-16 11:54:27Z wg $
+# $FreeBSD: head/sysutils/ipfs-go/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	ipfs-go
 PORTVERSION=	0.4.7
@@ -24,8 +24,6 @@ MAKE_ENV+=	GOPATH=${WRKSRC}
 PLIST_FILES=	bin/${PORTNAME}
 
 USE_RC_SUBR=	${PORTNAME}
-
-STRIP=		# stripping can break go binaries
 
 do-build:
 	cd ${WRKSRC}/src/github.com/ipfs/go-ipfs/cmd/ipfs; \

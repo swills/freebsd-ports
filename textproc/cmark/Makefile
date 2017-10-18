@@ -1,8 +1,8 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/textproc/cmark/Makefile 447201 2017-08-03 11:12:50Z tobik $
+# $FreeBSD: head/textproc/cmark/Makefile 451911 2017-10-12 17:01:55Z tobik $
 
 PORTNAME=	cmark
-PORTVERSION=	0.28.0
+PORTVERSION=	0.28.2
 CATEGORIES=	textproc
 
 MAINTAINER=	tobik@FreeBSD.org
@@ -16,6 +16,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	commonmark
 USE_LDCONFIG=	yes
 
+CMAKE_ARGS=	-DCMAKE_INSTALL_LIBDIR:STRING="lib"
 PLIST_SUB=	VERSION=${PORTVERSION}
 TEST_TARGET=	test
 

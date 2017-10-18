@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/appleseed/Makefile 449507 2017-09-09 19:40:10Z jbeich $
+# $FreeBSD: head/graphics/appleseed/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	appleseed
 DISTVERSION=	1.5.2-beta
-PORTREVISION=	7
+PORTREVISION=	9
 CATEGORIES=	graphics
 
 MAINTAINER=	danfe@FreeBSD.org

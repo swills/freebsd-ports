@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/gb/Makefile 435986 2017-03-12 13:11:02Z swills $
+# $FreeBSD: head/devel/gb/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	gb
 PORTVERSION=	0.4.4
@@ -19,7 +19,6 @@ PLIST_FILES=	bin/gb bin/gb-vendor
 
 PORTDOCS=	README.md
 
-STRIP=		# stripping can break go binaries
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${GH_PROJECT}
 GO_TARGET=	./...
 

@@ -1,8 +1,8 @@
 # Created by: Sean Chittenden <seanc@FreeBSD.org>
-# $FreeBSD: head/databases/memcached/Makefile 446713 2017-07-27 05:18:03Z swills $
+# $FreeBSD: head/databases/memcached/Makefile 451706 2017-10-10 15:30:33Z pizzamig $
 
 PORTNAME=	memcached
-PORTVERSION=	1.5.0
+PORTVERSION=	1.5.2
 CATEGORIES=	databases
 MASTER_SITES=	http://www.memcached.org/files/ \
 		GENTOO
@@ -16,6 +16,18 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libevent.so:devel/libevent
 
 CONFLICTS=	memcached-1.2*
+
+USES=		cpe shebangfix autoreconf
+SHEBANG_FILES=	scripts/memcached-tool
+
+USE_RC_SUBR=	memcached
+SUB_LIST+=	RC_SUBR_SUFFIX=${RC_SUBR_SUFFIX}
+
+USE_CSTD=	c99
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--with-libevent=${LOCALBASE} \
+		--program-prefix= \
+		--disable-coverage
 
 # Dtrace option disabled until it is fixed upstream
 OPTIONS_DEFINE=		SASL DOCS DTRACE
@@ -32,18 +44,6 @@ OPTIONS_EXCLUDE_aarch64=	DTRACE
 
 DTRACE_DESC=	Enable dtrace probes
 SASL_DESC=	Enable SASL Authentication
-
-USE_RC_SUBR=	memcached
-SUB_LIST+=	RC_SUBR_SUFFIX=${RC_SUBR_SUFFIX}
-
-USES=		cpe shebangfix autoreconf
-SHEBANG_FILES=	scripts/memcached-tool
-
-USE_CSTD=	c99
-GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-libevent=${LOCALBASE} \
-		--program-prefix= \
-		--disable-coverage
 
 DOCS_BUILD_DEPENDS=	xml2rfc:textproc/xml2rfc
 DOCS_CONFIGURE_ENABLE=	docs

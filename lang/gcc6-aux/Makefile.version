@@ -1,11 +1,11 @@
-# $FreeBSD: head/lang/gcc6-aux/Makefile.version 433630 2017-02-08 01:35:47Z marino $
+# $FreeBSD: head/lang/gcc6-aux/Makefile.version 451312 2017-10-05 13:53:40Z tobik $
 
 GCC_BRANCH=		6
-GCC_POINT=		3.1
+GCC_POINT=		4.1
 GCC_VERSION=		${GCC_BRANCH}.${GCC_POINT}
-SNAPSHOT=		20170202
+SNAPSHOT=		20170802
 BUILD_RELEASE=		no
-MAIN_PR=		1
+MAIN_PR=		0
 UTIL_PR=		0
 ARMV7_PR=		1
 ARM64_PR=		2

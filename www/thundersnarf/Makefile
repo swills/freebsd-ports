@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/thundersnarf/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/www/thundersnarf/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	thundersnarf
 PORTVERSION=	1.3
@@ -18,6 +18,8 @@ PHP_DESC=	Install PHP for reporting generating
 PGSQL_DESC=	Install PostgreSQL (report data storing)
 
 USES=		tar:bzip2
+
+PHP_USES=	php
 
 NO_BUILD=	yes
 NO_ARCH=	yes

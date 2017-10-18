@@ -1,16 +1,15 @@
 # Created by: shurd
-# $FreeBSD: head/comms/svxlink/Makefile 441690 2017-05-25 14:06:10Z bapt $
+# $FreeBSD: head/comms/svxlink/Makefile 452246 2017-10-16 19:28:11Z adrian $
 
 PORTNAME?=	svxlink
 PORTVERSION=	15.11
+PORTREVISION=	1
 CATEGORIES=	comms hamradio
 
 MAINTAINER=	hamradio@FreeBSD.org
 COMMENT?=	General purpose ham radio voice services
 
 LICENSE=	GPLv2
-
-BROKEN=		does not build since newer libsigc++20
 
 LIB_DEPENDS?=	libgsm.so:audio/gsm \
 		libspeex.so:audio/speex \

@@ -1,5 +1,5 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/graphics/mesa-dri/Makefile 443828 2017-06-18 14:02:35Z rezny $
+# $FreeBSD: head/graphics/mesa-dri/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	mesa-dri
 PORTVERSION=	${MESAVERSION}
@@ -52,9 +52,9 @@ GALLIUM_DRIVERS+=	SVGA
 . if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100000
 EXTRA_PATCHES+=	${PATCHDIR}/extra-src_mesa_drivers_dri_i965_intel__screen.c
 . endif
-.elif ${ARCH} == armv6 || ${ARCH} == aarch64
+.elif ${ARCH} == aarch64 || ${ARCH} == armv6 || ${ARCH} == armv7
 GALLIUM_DRIVERS+=	FREEDRENO VC4
-. if ${ARCH} == armv6
+. if ${ARCH} == armv6 || ${ARCH} == armv7
 EXTRA_PATCHES+=	${PATCHDIR}/extra-src_gallium_drivers_vc4_Makefile.in
 . endif
 .endif

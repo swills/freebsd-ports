@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/novnc-websockify/Makefile 449341 2017-09-06 11:49:43Z araujo $
+# $FreeBSD: head/www/novnc-websockify/Makefile 450653 2017-09-26 09:56:52Z araujo $
 
 PORTNAME=	websockify
 PORTVERSION=	0.8.0
@@ -24,7 +24,7 @@ NO_ARCH=	yes
 TARGET_DIR=	${PREFIX}/libexec/novnc/utils/websockify
 
 do-install:
-	${MKDIR} ${TARGET_DIR}
+	${MKDIR} ${STAGEDIR}${TARGET_DIR}
 	cd ${WRKSRC} && ${RM} .gitignore .gitmodules .travis.yml
 	cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${TARGET_DIR}
 	@${CHMOD} +x ${STAGEDIR}${TARGET_DIR}/run

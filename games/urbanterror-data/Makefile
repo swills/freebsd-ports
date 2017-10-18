@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/games/urbanterror-data/Makefile 449918 2017-09-15 18:28:31Z adamw $
+# $FreeBSD: head/games/urbanterror-data/Makefile 450473 2017-09-23 21:11:51Z adamw $
 
 PORTNAME=	data
 PORTVERSION=	4.2.023
@@ -12,7 +12,7 @@ DISTNAME=	UrbanTerror${URT_VER}_full${URT_REV}
 EXTRACT_SUFX=	.zip
 EXTRACT_ONLY=
 
-MAINTAINER=	kamikaze@bsdforen.de
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Standalone realism based mod originally for Quake III Arena
 
 NO_BUILD=	yes

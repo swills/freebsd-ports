@@ -1,9 +1,9 @@
 # Created by: Dmitry N Fomin <fdn@okbire.ru>
-# $FreeBSD: head/sysutils/gdisk/Makefile 426525 2016-11-19 18:21:20Z jbeich $
+# $FreeBSD: head/sysutils/gdisk/Makefile 450556 2017-09-25 00:02:36Z jbeich $
 
 PORTNAME=	gdisk
 PORTVERSION=	0.8.10
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/gptfdisk/gptfdisk/${PORTVERSION}
 DISTNAME=	gptfdisk-${PORTVERSION}

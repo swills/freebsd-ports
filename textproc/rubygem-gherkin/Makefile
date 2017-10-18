@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-gherkin/Makefile 440186 2017-05-05 15:36:34Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-gherkin/Makefile 452107 2017-10-15 00:37:27Z sunpoet $
 
 PORTNAME=	gherkin
-PORTVERSION=	4.1.3
+PORTVERSION=	5.0.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

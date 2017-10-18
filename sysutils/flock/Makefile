@@ -1,11 +1,11 @@
 # Created by: Andrey Zonov <andrey@zonov.org>
-# $FreeBSD: head/sysutils/flock/Makefile 437400 2017-04-01 09:02:07Z amdmi3 $
+# $FreeBSD: head/sysutils/flock/Makefile 451342 2017-10-05 19:38:08Z cs $
 
 PORTNAME=	flock
-PORTVERSION=	2.29
-PORTREVISION=	1
+PORTVERPREFIX=	2.30
+PORTVERSION=	${PORTVERPREFIX}.1
 CATEGORIES=	sysutils
-MASTER_SITES=	KERNEL_ORG/linux/utils/util-linux/v${PORTVERSION}/
+MASTER_SITES=	KERNEL_ORG/linux/utils/util-linux/v${PORTVERPREFIX}/
 DISTNAME=	util-linux-${PORTVERSION}
 
 MAINTAINER=	franco@opnsense.org

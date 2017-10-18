@@ -1,12 +1,10 @@
-# $FreeBSD: head/comms/ebook2cwgui/Makefile 443053 2017-06-10 01:51:02Z sunpoet $
+# $FreeBSD: head/comms/ebook2cwgui/Makefile 452001 2017-10-13 14:19:26Z bapt $
 
 PORTNAME=	ebook2cwgui
 PORTVERSION=	0.1.2
 PORTREVISION=	2
 CATEGORIES=	comms hamradio
-MASTER_SITES=	http://fkurz.net/ham/ebook2cw/ \
-		http://distfiles.bsdjunk.com/ \
-		LOCAL/db
+MASTER_SITES=	http://fkurz.net/ham/ebook4cw/
 
 MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	gui front end for ebooks2cw

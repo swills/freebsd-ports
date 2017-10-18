@@ -1,9 +1,9 @@
 # Created by: Kelly Hays <kelly.hays@jkhfamily.org>
-# $FreeBSD: head/devel/luafilesystem/Makefile 400958 2015-11-06 20:40:35Z pawel $
+# $FreeBSD: head/devel/luafilesystem/Makefile 450946 2017-09-30 07:35:48Z vanilla $
 
 PORTNAME=	luafilesystem
-DISTVERSIONPREFIX=	v_
-DISTVERSION=	1_6_3
+DISTVERSIONPREFIX=	v
+DISTVERSION=	1_7_0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	${LUA_PKGNAMEPREFIX}
 

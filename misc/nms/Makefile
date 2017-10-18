@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/misc/nms/Makefile 436597 2017-03-21 12:53:32Z zi $
+# $FreeBSD: head/misc/nms/Makefile 450422 2017-09-23 03:24:14Z zi $
 
 PORTNAME=	nms
-PORTVERSION=	0.3.2
+PORTVERSION=	0.3.3
 DISTVERSIONPREFIX=	v
 PORTEPOCH=	1
 CATEGORIES=	misc

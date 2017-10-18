@@ -1,9 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/textproc/libwps03/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/textproc/libwps03/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	libwps
 PORTVERSION=	0.3.1
-PORTREVISION=	4
+PORTREVISION=	6
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 PKGNAMESUFFIX=	03
@@ -11,8 +11,10 @@ PKGNAMESUFFIX=	03
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Microsoft file word processor format import filter library
 
-LICENSE=	LGPL21 MPL
+LICENSE=	LGPL21 MPL20
 LICENSE_COMB=	dual
+LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LGPL
+LICENSE_FILE_MPL20=	${WRKSRC}/COPYING.MPL
 
 LIB_DEPENDS=	librevenge-0.0.so:textproc/librevenge
 

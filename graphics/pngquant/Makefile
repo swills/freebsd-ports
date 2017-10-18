@@ -1,8 +1,8 @@
 # Created by: Alex Hayward <xelah@xelah.com>
-# $FreeBSD: head/graphics/pngquant/Makefile 436747 2017-03-22 22:50:16Z ak $
+# $FreeBSD: head/graphics/pngquant/Makefile 451067 2017-10-02 05:59:14Z ak $
 
 PORTNAME=	pngquant
-PORTVERSION=	2.9.0
+PORTVERSION=	2.10.1
 DISTVERSIONSUFFIX=	-src
 CATEGORIES=	graphics
 MASTER_SITES=	http://pngquant.org/

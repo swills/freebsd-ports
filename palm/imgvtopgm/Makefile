@@ -1,9 +1,9 @@
 # Created by: sumikawa@ebina.hitachi.co.jp
-# $FreeBSD: head/palm/imgvtopgm/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/palm/imgvtopgm/Makefile 451378 2017-10-06 11:18:35Z tobik $
 
 PORTNAME=	imgvtopgm
 PORTVERSION=	2.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	palm graphics
 MASTER_SITES=	http://linuxmafia.com/pub/palmos/other-os/
 
@@ -14,6 +14,8 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libnetpbm.so:graphics/netpbm
+
+USES=	localbase
 
 GNU_CONFIGURE=	yes
 

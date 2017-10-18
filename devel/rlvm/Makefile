@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/rlvm/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/rlvm/Makefile 451015 2017-09-30 23:20:05Z jbeich $
 
 PORTNAME=	rlvm
 DISTVERSIONPREFIX=	release-
 DISTVERSION=	0.14-67
 DISTVERSIONSUFFIX=	-g9350209
-PORTREVISION=	8
+PORTREVISION=	10
 CATEGORIES=	devel games
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -68,8 +68,10 @@ post-patch:
 		-e 's,truetype/[^/"]*/,TTF/,' \
 		${WRKSRC}/src/utilities/find_font_file.cc
 
-pre-install-TEST-on:
+do-test-TEST-on:
 	(cd ${WRKSRC} && build/${PORTNAME}_unittests)
+
+pre-install-TEST-on: do-test-TEST-on
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/build/${PORTNAME} \

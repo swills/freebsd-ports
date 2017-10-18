@@ -1,5 +1,5 @@
 # Created by: Geoff Garside
-# $FreeBSD: head/net/rabbitmq-c-devel/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/net/rabbitmq-c-devel/Makefile 450513 2017-09-24 18:49:41Z sunpoet $
 
 PORTNAME=	rabbitmq-c
 PORTVERSION=	0.7.1
@@ -10,8 +10,8 @@ PKGNAMESUFFIX=	-devel
 MAINTAINER=	freebsd@geoffgarside.co.uk
 COMMENT=	RabbitMQ C AMQP client library
 
-LICENSE=	GPLv2 MPL
-LICENSE_COMB=	dual
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE-MIT
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}simplejson>=2.0:devel/py-simplejson
 

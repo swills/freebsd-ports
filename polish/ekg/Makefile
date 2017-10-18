@@ -1,5 +1,5 @@
 # Created by: Jacek Pelka <jacek@combit.com.pl>
-# $FreeBSD: head/polish/ekg/Makefile 450353 2017-09-22 10:48:57Z mat $
+# $FreeBSD: head/polish/ekg/Makefile 450459 2017-09-23 16:43:17Z pawel $
 
 PORTNAME=	ekg
 DISTVERSION=	1.8rc2
@@ -11,13 +11,16 @@ MASTER_SITES=	http://ekg.chmurka.net/
 MAINTAINER=	pawel@FreeBSD.org
 COMMENT=	Text-mode Gadu-Gadu client
 
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/src/COPYING
+
 LIB_DEPENDS=	libgadu.so:polish/libgadu
 
+USES=		gmake localbase ncurses pathfix pkgconfig
 GNU_CONFIGURE=	yes
-USES=		gmake ncurses pathfix pkgconfig
 USE_LDCONFIG=	yes
 
-CONFIGURE_ARGS= --without-libungif \
+CONFIGURE_ARGS=	--without-libungif \
 		--without-libjpeg \
 		--disable-ui-gtk
 
@@ -30,6 +33,7 @@ ASPELL_CONFIGURE_ON=	--enable-aspell
 ASPELL_LIB_DEPENDS=	libaspell.so:textproc/aspell
 ASPELL_RUN_DEPENDS=	pl-aspell>0:polish/aspell
 
+OPENSSL_USES=		ssl
 OPENSSL_CONFIGURE_OFF=	--without-openssl
 
 post-install:

@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/p5-XML-SemanticDiff/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-SemanticDiff/Makefile 450824 2017-09-28 10:41:28Z sunpoet $
 
 PORTNAME=	XML-SemanticDiff
-PORTVERSION=	1.0005
+PORTVERSION=	1.0006
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

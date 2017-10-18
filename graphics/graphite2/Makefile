@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/graphite2/Makefile 440258 2017-05-06 11:33:29Z sunpoet $
+# $FreeBSD: head/graphics/graphite2/Makefile 450507 2017-09-24 18:49:11Z sunpoet $
 
 PORTNAME=	graphite2
 PORTVERSION=	1.3.10
@@ -7,7 +7,7 @@ CATEGORIES=	graphics print
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Rendering capabilities for complex non-Roman writing systems
 
-LICENSE=	GPLv2 LGPL21 MPL
+LICENSE=	GPLv2 LGPL21 MPL20
 LICENSE_COMB=	dual
 
 USE_GITHUB=	yes

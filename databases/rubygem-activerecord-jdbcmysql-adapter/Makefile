@@ -1,8 +1,8 @@
 # Created by: Alexander Logvinov <ports@logvinov,com>
-# $FreeBSD: head/databases/rubygem-activerecord-jdbcmysql-adapter/Makefile 440946 2017-05-15 15:53:18Z sunpoet $
+# $FreeBSD: head/databases/rubygem-activerecord-jdbcmysql-adapter/Makefile 450606 2017-09-25 15:12:22Z sunpoet $
 
 PORTNAME=	activerecord-jdbcmysql-adapter
-PORTVERSION=	1.3.23
+PORTVERSION=	1.3.24
 CATEGORIES=	databases rubygems java
 MASTER_SITES=	RG
 

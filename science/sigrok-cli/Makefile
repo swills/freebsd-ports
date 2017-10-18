@@ -1,9 +1,8 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/science/sigrok-cli/Makefile 423624 2016-10-09 21:25:24Z bsam $
+# $FreeBSD: head/science/sigrok-cli/Makefile 451803 2017-10-11 21:48:56Z bsam $
 
 PORTNAME=	sigrok-cli
-PORTVERSION=	0.5.0
-PORTREVISION=	1
+PORTVERSION=	0.7.0
 CATEGORIES=	science cad
 MASTER_SITES=	http://sigrok.org/download/source/sigrok-cli/
 

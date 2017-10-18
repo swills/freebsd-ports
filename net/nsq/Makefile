@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/nsq/Makefile 440009 2017-05-03 12:16:49Z mat $
+# $FreeBSD: head/net/nsq/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	nsq
 PORTVERSION=	1.0.0
@@ -38,8 +38,6 @@ GH_TUPLE=	BurntSushi:toml:v0.2.0:toml/src/github.com/BurntSushi/toml \
 
 TARGETS=	nsqd nsqlookupd nsqadmin nsq_pubsub nsq_to_nsq nsq_to_file \
 	nsq_to_http nsq_tail nsq_stat to_nsq
-
-STRIP=
 
 .for _t in ${TARGETS}
 build-${_t}:

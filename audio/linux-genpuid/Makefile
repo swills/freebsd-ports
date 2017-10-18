@@ -1,5 +1,5 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/audio/linux-genpuid/Makefile 421387 2016-09-05 19:23:42Z tijl $
+# $FreeBSD: head/audio/linux-genpuid/Makefile 451964 2017-10-13 08:57:45Z bapt $
 
 PORTNAME=	genpuid
 PORTVERSION=	1.4
@@ -12,6 +12,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Application for generating MusicIP puids
 
 USES=		linux tar:tgz
+BROKEN=		No public distfiles
 
 NO_BUILD=		yes
 IA32_BINARY_PORT=	yes

@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/lang/ruby23/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/lang/ruby23/Makefile 452031 2017-10-13 20:40:34Z adamw $
 
 PORTNAME=	ruby
 PORTVERSION=	${RUBY_PORTVERSION}
@@ -72,6 +72,10 @@ READLINE_USES=		readline:port
 CPE_VENDOR=	ruby-lang
 CPE_VERSION=	${RUBY_RELVERSION}
 CPE_UPDATE=	p${RUBY_PATCHLEVEL}
+
+# --- loadpath.o ---
+# loadpath.c:30:2: error: RUBY_EXEC_PREFIX must be defined
+MAKE_JOBS_UNSAFE=	yes
 
 .include <bsd.port.pre.mk>
 

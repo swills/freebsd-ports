@@ -1,5 +1,5 @@
 # Created by: Fernan Aguero <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/biology/ssaha/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/biology/ssaha/Makefile 451982 2017-10-13 11:14:53Z bapt $
 
 PORTNAME=	ssaha
 PORTVERSION=	3.1c
@@ -10,6 +10,8 @@ DISTNAME=	${PORTNAME}_v${PORTVERSION:S/.//}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Very fast matching and alignment of DNA sequences
+
+BROKEN=		No public distfiles
 
 NO_WRKSUBDIR=	yes
 BUILD_WRKSRC=		${WRKSRC}/Binary

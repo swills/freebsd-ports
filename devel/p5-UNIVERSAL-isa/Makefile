@@ -1,8 +1,8 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-UNIVERSAL-isa/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-UNIVERSAL-isa/Makefile 451976 2017-10-13 09:21:10Z sunpoet $
 
 PORTNAME=	UNIVERSAL-isa
-PORTVERSION=	1.20150614
+PORTVERSION=	1.20171012
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

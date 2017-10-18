@@ -1,5 +1,5 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/audio/xmms-faad/Makefile 423688 2016-10-10 19:33:40Z amdmi3 $
+# $FreeBSD: head/audio/xmms-faad/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	faad2
 PORTVERSION=	2.7
@@ -21,7 +21,6 @@ WRKSRC_SUBDIR=	plugins/xmms/src
 
 USE_GNOME=	gtk12
 USES=		pkgconfig tar:bzip2
-WANT_GNOME=	yes
 EXTRA_CFLAGS=	`xmms-config --cflags`
 EXTRA_LDFLAGS=	`xmms-config --libs`
 

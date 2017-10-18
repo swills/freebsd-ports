@@ -1,12 +1,11 @@
 # Created by: jmz
-# $FreeBSD: head/comms/viewfax/Makefile 389300 2015-06-12 20:58:13Z erwin $
+# $FreeBSD: head/comms/viewfax/Makefile 452001 2017-10-13 14:19:26Z bapt $
 
 PORTNAME=	viewfax
 PORTVERSION=	2.6
 PORTREVISION=	1
 CATEGORIES=	comms
-MASTER_SITES=	ftp://ftp.ping.de/pub/unix/ \
-		ftp://ftp.leo.org/historic/comp/os/unix/networking/mgetty/
+MASTER_SITES=	ftp://ftp.ping.de/pub/unix/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Display files containing g3 and/or g4 coded fax pages

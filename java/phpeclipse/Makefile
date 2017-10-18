@@ -1,5 +1,5 @@
 # Created by: rtdean@cytherianage.net
-# $FreeBSD: head/java/phpeclipse/Makefile 419591 2016-08-04 04:01:16Z marino $
+# $FreeBSD: head/java/phpeclipse/Makefile 450473 2017-09-23 21:11:51Z adamw $
 
 PORTNAME=	phpeclipse
 PORTVERSION=	1.2.3
@@ -8,7 +8,7 @@ CATEGORIES=	java editors devel
 MASTER_SITES=	SF/${PORTNAME}/a%29%20Eclipse%203.3.x/PHPEclipse-${PORTVERSION}
 DISTNAME=	PHPEclipse-${PLIST_VER}-src
 
-MAINTAINER=	kamikaze@bsdforen.de
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PHP Eclipse adds PHP support to the Eclipse IDE Framework
 
 RUN_DEPENDS=	eclipse:java/eclipse

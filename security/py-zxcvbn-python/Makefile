@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/py-zxcvbn-python/Makefile 449214 2017-09-03 18:02:45Z jbeich $
+# $FreeBSD: head/security/py-zxcvbn-python/Makefile 452285 2017-10-17 17:19:51Z jbeich $
 
 PORTNAME=	zxcvbn-python
-PORTVERSION=	4.4.16
+PORTVERSION=	4.4.17
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-POE-API-Peek/Makefile 422377 2016-09-18 11:54:01Z rene $
+# $FreeBSD: head/devel/p5-POE-API-Peek/Makefile 451820 2017-10-12 08:10:23Z sunpoet $
 
 PORTNAME=	POE-API-Peek
 DISTVERSION=	2.20
@@ -23,8 +23,5 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 USES=		perl5
 USE_PERL5=	configure
 INSTALL_TARGET=	pure_install
-
-regression-test:
-	@(cd ${WRKSRC} && ${PERL} ${CONFIGURE_SCRIPT} && ${MAKE} test)
 
 .include <bsd.port.mk>

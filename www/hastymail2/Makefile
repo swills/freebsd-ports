@@ -1,5 +1,5 @@
 # Created by: Bartlomiej Rutkowski <r@robakdesign.com>
-# $FreeBSD: head/www/hastymail2/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/www/hastymail2/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	hastymail2
 PORTVERSION=	1.1
@@ -20,7 +20,7 @@ SUB_FILES=	pkg-message
 
 CONFLICTS_INSTALL=	hastymail2-devel-[0-9]*
 
-WANT_PHP_WEB=	yes
+USES=		php:web
 USE_PHP=	ctype pcre session xml
 
 WIKEDVERSION=	1_1

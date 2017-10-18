@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/db48/Makefile 413541 2016-04-17 20:51:21Z bapt $
+# $FreeBSD: head/databases/db48/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	db48
 PORTVERSION=	4.8.30.0
@@ -34,7 +34,7 @@ USE_LDCONFIG=	yes
 
 .include <bsd.port.options.mk>
 
-.if ${ARCH} == "aarch64" || ${ARCH} == "armv6"
+.if ${ARCH} == aarch64 || ${ARCH} == armv6 || ${ARCH} == armv7
 # db48 uses a deprecated instruction for mutexes on ARM, fbsd bug#197227
 CONFIGURE_ARGS+=	--enable-posixmutexes
 .endif

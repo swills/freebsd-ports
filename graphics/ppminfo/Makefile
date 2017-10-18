@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/ppminfo/Makefile 426547 2016-11-20 00:13:50Z marino $
+# $FreeBSD: head/graphics/ppminfo/Makefile 451378 2017-10-06 11:18:35Z tobik $
 
 PORTNAME=	ppminfo
 PORTVERSION=	0.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.vanheusden.com/ppminfo/ CENKES
 
@@ -12,10 +12,9 @@ COMMENT=	Shows details of a ppm file
 
 LIB_DEPENDS=	libnetpbm.so:graphics/netpbm
 
-USES=		ncurses tar:tgz
+USES=		localbase:ldflags ncurses tar:tgz
 PLIST_FILES=	bin/${PORTNAME}
-CFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
+CFLAGS+=	-I${LOCALBASE}/include/netpbm
 
 post-patch:
 	@${REINPLACE_CMD} 's|min(|MIN(|;s|max(|MAX(|' ${WRKSRC}/pi.c

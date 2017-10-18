@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/enventor/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/x11/enventor/Makefile 451563 2017-10-08 18:58:23Z antoine $
 
 PORTNAME=	enventor
 PORTVERSION=	1.0.0
@@ -12,6 +12,8 @@ COMMENT=	Dynamic EDC Editor
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	libefl.so:devel/efl
 

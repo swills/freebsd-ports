@@ -1,5 +1,5 @@
 # Created by: chris@officialunix.com
-# $FreeBSD: head/audio/smasher/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/audio/smasher/Makefile 451810 2017-10-12 08:01:45Z bapt $
 
 PORTNAME=	smasher
 PORTVERSION=	1.1.7
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Cross platform audio loop slicer
+
+DEPRECATED=	Does not build with modern csound
+EXPIRATION_DATE=	2017-11-12
 
 LICENSE=	LGPL20
 LICENSE_FILE=	${WRKSRC}/COPYING.LIB

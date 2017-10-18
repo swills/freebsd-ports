@@ -1,7 +1,7 @@
-# $FreeBSD: head/lang/duktape/Makefile 432547 2017-01-27 10:08:14Z olivierd $
+# $FreeBSD: head/lang/duktape/Makefile 451700 2017-10-10 13:21:16Z vanilla $
 
 PORTNAME=	duktape
-PORTVERSION=	2.0.1
+PORTVERSION=	2.2.0
 CATEGORIES=	lang devel
 MASTER_SITES=	http://duktape.org/
 

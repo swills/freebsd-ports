@@ -1,6 +1,6 @@
-# $FreeBSD: head/emulators/ppsspp-qt5/Makefile 441519 2017-05-23 13:06:58Z jbeich $
+# $FreeBSD: head/emulators/ppsspp-qt5/Makefile 452124 2017-10-15 01:19:50Z jbeich $
 
-PORTREVISION=	0
+PORTREVISION=	2
 PKGNAMESUFFIX=	-qt5
 
 MASTERDIR=	${.CURDIR}/../ppsspp

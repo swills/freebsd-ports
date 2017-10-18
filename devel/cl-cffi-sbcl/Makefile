@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cl-cffi-sbcl/Makefile 432558 2017-01-27 17:46:39Z marino $
+# $FreeBSD: head/devel/cl-cffi-sbcl/Makefile 451570 2017-10-08 19:36:26Z antoine $
 
 PORTNAME=	cffi
 PORTVERSION=	0.16.1
@@ -10,6 +10,8 @@ MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Portable foreign function interface for Common Lisp
 
 BROKEN=		does not build with new sbcl 1.13
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-11-09
 
 BUILD_DEPENDS=	cl-cffi>=0:devel/cl-cffi \
 		cl-alexandria-sbcl>=0:devel/cl-alexandria-sbcl \

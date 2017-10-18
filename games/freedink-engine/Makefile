@@ -1,9 +1,9 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/games/freedink-engine/Makefile 433395 2017-02-05 11:14:37Z sunpoet $
+# $FreeBSD: head/games/freedink-engine/Makefile 450775 2017-09-27 18:08:14Z rakuco $
 
 PORTNAME=	freedink
 PORTVERSION=	108.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games
 MASTER_SITES=	GNU
 PKGNAMESUFFIX=	-engine

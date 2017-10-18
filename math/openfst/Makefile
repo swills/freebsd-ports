@@ -1,9 +1,8 @@
 # Created by: Dmitry Sivachenko <mitya@yandex-team.ru>
-# $FreeBSD: head/math/openfst/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/openfst/Makefile 450581 2017-09-25 10:20:53Z demon $
 
 PORTNAME=	openfst
-PORTVERSION=	1.5.4
-PORTREVISION=	2
+PORTVERSION=	1.6.3
 CATEGORIES=	math
 MASTER_SITES=	http://www.openfst.org/twiki/pub/FST/FstDownload/
 
@@ -15,8 +14,7 @@ LICENSE=	APACHE20
 USES=		compiler:c++11-lib libtool python:2
 USE_LDCONFIG=	${LOCALBASE}/lib/fst
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=--enable-bin --enable-compact-fsts --enable-compress --enable-const-fsts --enable-far --enable-linear-fsts --enable-lookahead-fsts --enable-mpdt --enable-ngram-fsts --enable-pdt --enable-python
-CFLAGS+=	-D_GLIBCXX_USE_C99 # XXX ports/193528
+CONFIGURE_ARGS+=--enable-bin --enable-compact-fsts --enable-compress --enable-const-fsts --enable-far --enable-linear-fsts --enable-lookahead-fsts --enable-mpdt --enable-ngram-fsts --enable-pdt --enable-python --enable-special
 LDFLAGS+=	"-L${LOCALBASE}/lib"
 MAKE_ENV+=	PYTHON=${PYTHON_CMD}
 

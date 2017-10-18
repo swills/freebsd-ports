@@ -1,10 +1,11 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/astro/p5-Astro-Constants/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/astro/p5-Astro-Constants/Makefile 451442 2017-10-07 09:13:24Z sunpoet $
 
 PORTNAME=	Astro-Constants
-PORTVERSION=	0.1100
+PORTVERSION=	0.1200
 CATEGORIES=	astro perl5 science
 MASTER_SITES=	CPAN/Astro
+DISTNAME=	${PORTNAME}-${PORTVERSION:C|00$||}
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org

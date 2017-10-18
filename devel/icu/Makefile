@@ -1,12 +1,13 @@
 # Created by: dwm
-# $FreeBSD: head/devel/icu/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/icu/Makefile 451177 2017-10-04 02:39:08Z jbeich $
 
 PORTNAME=	icu
-DISTVERSION=	58_2
-PORTREVISION?=	3 # keep for icu-lx
+DISTVERSION=	59_1
+PORTREVISION?=	0 # keep for icu-lx
 PORTEPOCH?=	1
 CATEGORIES?=	devel
-MASTER_SITES=	http://download.icu-project.org/files/icu4c/${PORTVERSION}/
+MASTER_SITES=	http://download.icu-project.org/files/icu4c/${PORTVERSION}/ \
+		SF/${PORTNAME}/${PORTNAME:tu}4C/${PORTVERSION}
 DISTNAME=	icu4c-${DISTVERSION}-src
 
 MAINTAINER=	office@FreeBSD.org
@@ -26,7 +27,7 @@ CONFIGURE_ARGS+=--with-data-packaging=archive \
 CPPFLAGS+=	-DICU_NO_USER_DATA_OVERRIDE
 MAKE_ARGS=	VERBOSE=1
 TEST_TARGET=	check
-USES+=		compiler:c++0x gmake pathfix tar:tgz
+USES+=		compiler:c++11-lib gmake pathfix tar:tgz
 USE_LDCONFIG=	yes
 WRKSRC=		${WRKDIR}/icu/source
 

@@ -1,5 +1,5 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/security/R-cran-openssl/Makefile 449438 2017-09-08 03:47:52Z tota $
+# $FreeBSD: head/security/R-cran-openssl/Makefile 450723 2017-09-27 08:08:48Z tota $
 
 PORTNAME=	openssl
 PORTVERSION=	0.9.7
@@ -22,10 +22,4 @@ R_POSTCMD_INSTALL_OPTIONS+=	--configure-vars="INCLUDE_DIR=${OPENSSLINC} LIB_DIR=
 post-patch:
 	${REINPLACE_CMD} -e '1,5d' ${WRKSRC}/src/ssl.c
 
-.include <bsd.port.pre.mk>
-
-.if ${SSL_DEFAULT:Mlibressl*}
-IGNORE=	detected LibreSSL (missing RSA_get0_key and others)
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

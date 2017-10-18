@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/audio/festival/Makefile 440746 2017-05-13 03:35:51Z linimon $
+# $FreeBSD: head/audio/festival/Makefile 450866 2017-09-28 20:05:25Z jbeich $
 
 PORTNAME=	festival
 PORTVERSION=	2.4
@@ -24,11 +24,6 @@ PATCH_SITES=	ftp://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/audio/festival/patch
 
 MAINTAINER=	mi@aldan.algebra.com
 COMMENT=	Multi-lingual speech synthesis system
-
-BROKEN_aarch64=		Fails to link: arm64_unknown.mak: No such file or directory
-BROKEN_armv6=		Fails to link: cc.mak: No such file or directory
-BROKEN_mips64=		Fails to link: cc.mak: No such file or directory
-BROKEN_powerpc64=	Fails to link: powerpc_unknown.mak: No such file or directory
 
 OPTIONS_DEFINE=	NAS ESD
 OPTIONS_DEFAULT=NAS ESD
@@ -85,7 +80,7 @@ do-configure:
 		${FALSE}; \
 	fi
 	# This step helps non-i386 systems and is harmless on i386
-	-${LN} -s ix86_FreeBSD.mak ${WRKDIR}/$d/config/systems/${ARCH:S/armv6/arm/}_unknown.mak
+	-${LN} -s ix86_FreeBSD.mak ${WRKDIR}/$d/config/systems/${MACHINE}_unknown.mak
 .endfor
 	@${REINPLACE_CMD} \
 	    -e '/^CFLAGS *=/s|$$| ${CFLAGS}|' \

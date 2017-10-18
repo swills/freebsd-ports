@@ -1,11 +1,10 @@
 # Created by: Diane Bruce <db@db.net>
-# $FreeBSD: head/comms/chu/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/comms/chu/Makefile 452001 2017-10-13 14:19:26Z bapt $
 
 PORTNAME=	chu
 PORTVERSION=	0.1.29
 CATEGORIES=	comms hamradio
-MASTER_SITES=	SUNSITE/system/admin/time \
-		http://www.rossi.com/chu/
+MASTER_SITES=	SUNSITE/system/admin/time
 
 MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Synchronise computer clock to CHU radio station

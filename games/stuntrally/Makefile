@@ -1,12 +1,16 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/stuntrally/Makefile 446569 2017-07-25 10:22:17Z amdmi3 $
+# $FreeBSD: head/games/stuntrally/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	stuntrally
 PORTVERSION=	2.6
+PORTREVISION=	2
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	3D racing game based on VDrift and OGRE with track editor
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	f7703d8d3f30.patch:-p1
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/License.txt
@@ -16,7 +20,8 @@ LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 USE_GITHUB=	yes
 GH_TUPLE=	stuntrally:tracks:${PORTVERSION}:tracks/data/tracks
 
-USES=		cmake:outsource dos2unix pkgconfig
+USES=		compiler:c++11-lib cmake:outsource dos2unix pkgconfig
+USE_CXXSTD=	gnu++11
 DOS2UNIX_FILES=	source/ogre/BaseApp_Create.cpp
 CMAKE_ARGS=	-DSHARE_INSTALL="${DATADIR_REL}" \
 		-DBULLET_ROOT="${LOCALBASE}"

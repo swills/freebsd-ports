@@ -1,8 +1,8 @@
 # Created by: William Grzybowski <william88@gmail.com>
-# $FreeBSD: head/multimedia/py-guessit/Makefile 434133 2017-02-14 18:48:25Z wg $
+# $FreeBSD: head/multimedia/py-guessit/Makefile 451099 2017-10-02 20:03:34Z wg $
 
 PORTNAME=	guessit
-PORTVERSION=	2.1.1
+PORTVERSION=	2.1.4
 CATEGORIES=	multimedia python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +14,7 @@ LICENSE=	LGPL3
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}babelfish>=0.5.5:devel/py-babelfish \
 		${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil \
-		${PYTHON_PKGNAMEPREFIX}rebulk>=0.8.2:devel/py-rebulk
+		${PYTHON_PKGNAMEPREFIX}rebulk>=0.9.0:devel/py-rebulk
 
 USES=		python
 USE_PYTHON=	distutils autoplist

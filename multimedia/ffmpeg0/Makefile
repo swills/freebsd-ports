@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/ffmpeg0/Makefile 438490 2017-04-14 05:30:25Z jbeich $
+# $FreeBSD: head/multimedia/ffmpeg0/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	ffmpeg
 PORTVERSION=	0.7.17
@@ -164,7 +164,7 @@ COMPAT_HEADERS=libavcodec/avcodec.h \
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == armv6
+.if ${ARCH} == armv6 || ${ARCH} == armv7
 CONFIGURE_ENV+=	ASFLAGS=-no-integrated-as
 CFLAGS+=	-no-integrated-as
 .endif

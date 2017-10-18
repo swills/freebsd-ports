@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/textproc/xqilla/Makefile 415555 2016-05-20 12:47:11Z mat $
+# $FreeBSD: head/textproc/xqilla/Makefile 451565 2017-10-08 19:04:49Z antoine $
 
 PORTNAME=	xqilla
 PORTVERSION=	2.3.3
@@ -13,6 +13,8 @@ COMMENT=	XQuery and XPath2 library
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		fails to build
 
 LIB_DEPENDS=	libxerces-c.so:textproc/xerces-c3 \
 		libtidy.so:www/tidy-lib

@@ -1,10 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/powder-toy/Makefile 448366 2017-08-20 10:46:41Z amdmi3 $
+# $FreeBSD: head/games/powder-toy/Makefile 450686 2017-09-26 18:05:38Z amdmi3 $
 
 PORTNAME=	powder-toy
-PORTVERSION=	92.1
+PORTVERSION=	92.5
 DISTVERSIONPREFIX=	v
-DISTVERSIONSUFFIX=	.332 # build number, not part of official version
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org
@@ -17,7 +16,7 @@ LIB_DEPENDS=	libfftw3f.so:math/fftw3-float \
 		libfftw3.so:math/fftw3
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	simtr
+GH_ACCOUNT=	ThePowderToy
 GH_PROJECT=	The-Powder-Toy
 
 USES=		scons localbase:ldflags lua:51

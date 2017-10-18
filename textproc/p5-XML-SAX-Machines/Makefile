@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-XML-SAX-Machines/Makefile 430157 2016-12-31 20:00:37Z adamw $
+# $FreeBSD: head/textproc/p5-XML-SAX-Machines/Makefile 451828 2017-10-12 08:11:15Z sunpoet $
 
 PORTNAME=	XML-SAX-Machines
 PORTVERSION=	0.46
@@ -21,11 +21,8 @@ USE_PERL5=	configure
 
 OPTIONS_DEFINE=	EXAMPLES
 
-regression-test: build
-	${MAKE} -C ${WRKSRC} test
-
-post-install:
-		@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
-		${INSTALL_SCRIPT} ${WRKSRC}/examples/* ${STAGEDIR}${EXAMPLESDIR}
+post-install-EXAMPLES-on:
+	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
+	${INSTALL_SCRIPT} ${WRKSRC}/examples/* ${STAGEDIR}${EXAMPLESDIR}
 
 .include <bsd.port.mk>

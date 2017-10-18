@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/multimedia/sms1xxx-kmod/Makefile 416936 2016-06-15 20:41:42Z martymac $
+# $FreeBSD: head/multimedia/sms1xxx-kmod/Makefile 451590 2017-10-09 10:05:37Z martymac $
 
 PORTNAME=	sms1xxx
 PORTVERSION=	20120113
@@ -30,7 +30,7 @@ DEBUG_ALL_TARGET=	debug
 STELLAR_DESC=	Build Terratec Cinergy Piranha FW
 NOVA_DESC=	Build Hauppauge WinTV MiniStick FW
 
-ONLY_FOR_ARCHS=	i386 amd64
+ONLY_FOR_ARCHS=	amd64 i386
 
 SUB_FILES=	pkg-message
 
@@ -76,9 +76,9 @@ DISTFILE_INSTRUCTIONS+=	\
 IGNORE=	requires manual fetch
 .else
 pre-fetch:
-	@${MKDIR} ${DISTDIR}/${DIST_SUBDIR}
-	@${PRINTF} "${DISTFILE_INSTRUCTIONS}"
-	@exit 1
+	@${MKDIR} ${DISTDIR}/${DIST_SUBDIR}; \
+	 ${PRINTF} "${DISTFILE_INSTRUCTIONS}"; \
+	exit 1
 .endif
 .endif
 

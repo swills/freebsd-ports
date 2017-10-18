@@ -1,5 +1,5 @@
 # Created by: hrs
-# $FreeBSD: head/cad/alliance/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/cad/alliance/Makefile 451257 2017-10-05 01:54:56Z cy $
 
 PORTNAME=	alliance
 DISTVERSION=	5.0-20120515
@@ -18,6 +18,8 @@ LICENSE_FILE=	${WRKSRC}/LICENCE
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 BROKEN_aarch64=		fails to link: collect2: error: ld returned 1 exit status
+
+CONFLICTS_INSTALL=	fspclient-*
 
 WRKSRC=		${WRKDIR}/alliance-5.0
 SUB_FILES=	pkg-message

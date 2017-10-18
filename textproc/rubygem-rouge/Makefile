@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-rouge/Makefile 450270 2017-09-21 15:58:41Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-rouge/Makefile 452119 2017-10-15 00:38:29Z sunpoet $
 
 PORTNAME=	rouge
-PORTVERSION=	2.0.5
+PORTVERSION=	2.2.1
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -13,9 +13,8 @@ LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_ARCH=	yes
-
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 PLIST_FILES=	bin/rougify
 
 .include <bsd.port.mk>

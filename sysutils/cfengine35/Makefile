@@ -1,5 +1,5 @@
 # Created by: jrhett@netconsonance.com
-# $FreeBSD: head/sysutils/cfengine35/Makefile 439204 2017-04-23 08:11:18Z miwi $
+# $FreeBSD: head/sysutils/cfengine35/Makefile 451263 2017-10-05 01:56:32Z cy $
 
 PORTNAME=	cfengine
 PORTVERSION=	3.5.3
@@ -18,8 +18,10 @@ CPE_VENDOR=	gnu
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
 
+ONFLICTS=	cfengine-2* cfengine3[0-46-9]-* cfengine31[0-9]-*
 .if !defined(MASTERDIR)
 PKGNAMESUFFIX=	35
+CONFLICTS+=	cfengine-3.*
 .endif
 
 FETCH_BEFORE_ARGS=	-o ${DISTDIR}/${DISTFILES}

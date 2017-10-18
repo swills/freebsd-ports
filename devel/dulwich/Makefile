@@ -1,5 +1,5 @@
 # Created by: Marco Broeder <marco.broeder@posteo.eu>
-# $FreeBSD: head/devel/dulwich/Makefile 434488 2017-02-20 20:58:34Z rm $
+# $FreeBSD: head/devel/dulwich/Makefile 451492 2017-10-08 06:22:53Z sunpoet $
 
 PORTNAME=	dulwich
 PORTVERSION=	0.15.0
@@ -12,7 +12,7 @@ COMMENT=	Python implementation of the Git file formats and protocols
 
 LICENSE=	APACHE20 GPLv2+
 LICENSE_COMB=	dual
-LICENSE_FILE=	COPYING relicensing-apachev2.txt
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 PORTDOCS=	AUTHORS CONTRIBUTING NEWS README.md TODO conclusion.txt \
 		file-format.txt index.txt introduction.txt object-store.txt \

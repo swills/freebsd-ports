@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/arduino-builder/Makefile 445117 2017-07-06 01:39:08Z ultima $
+# $FreeBSD: head/devel/arduino-builder/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	arduino-builder
 PORTVERSION=	1.3.25
@@ -27,7 +27,6 @@ TOOLS_RUN_DEPENDS=	arduino-tools>=${_COMPAT_VER}:devel/arduino-tools
 TOOLS_PLIST_FILES=	arduino/arduino-builder.options
 
 GO_ENV+=	GOPATH=${WRKSRC}
-STRIP=		# stripping can break go binaries
 _COMPAT_VER=	1.6.12
 _IDE_VER=	10612
 

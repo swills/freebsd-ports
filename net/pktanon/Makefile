@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/pktanon/Makefile 439934 2017-05-02 06:48:10Z jbeich $
+# $FreeBSD: head/net/pktanon/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	pktanon
 PORTVERSION=	1.4.0
-PORTREVISION=	4
+PORTREVISION=	6
 CATEGORIES=	net
 MASTER_SITES=	http://www.tm.uka.de/software/pktanon/download/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-dev

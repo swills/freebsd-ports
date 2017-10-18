@@ -1,8 +1,8 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/devel/p5-PAR-Packer/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-PAR-Packer/Makefile 450917 2017-09-29 16:59:38Z sunpoet $
 
 PORTNAME=	PAR-Packer
-PORTVERSION=	1.037
+PORTVERSION=	1.039
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -21,6 +21,7 @@ BUILD_DEPENDS=	p5-Archive-Zip>=1.02:archivers/p5-Archive-Zip \
 		p5-PAR>=1.014:devel/p5-PAR \
 		p5-PAR-Dist>=0.22:devel/p5-PAR-Dist
 RUN_DEPENDS:=	${BUILD_DEPENDS}
+TEST_DEPENDS=	p5-IPC-Run3>=0:devel/p5-IPC-Run3
 
 MAKE_JOBS_UNSAFE=	yes
 USE_PERL5=	configure

@@ -1,11 +1,10 @@
-# $FreeBSD: head/www/kanboard/Makefile 448769 2017-08-26 13:03:03Z tobik $
+# $FreeBSD: head/www/kanboard/Makefile 451614 2017-10-09 13:46:30Z vanilla $
 
 PORTNAME=	kanboard
-PORTVERSION=	1.0.46
+PORTVERSION=	1.0.47
 CATEGORIES=	www
-MASTER_SITES=	http://kanboard.net/ \
-		https://bitbucket.org/if0/kanboard-archives/downloads/ \
-		https://github.com/freebsd-kanboard/archives/raw/master/
+MASTER_SITES=	https://github.com/kanboard/kanboard/releases/download/v${PORTVERSION}/ \
+		https://bitbucket.org/if0/kanboard-archives/downloads/
 
 MAINTAINER=	bsd@if0.eu
 COMMENT=	Simple visual task board software

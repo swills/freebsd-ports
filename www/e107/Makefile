@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/e107/Makefile 433707 2017-02-09 01:25:13Z wen $
+# $FreeBSD: head/www/e107/Makefile 451217 2017-10-04 11:23:34Z bapt $
 
 PORTNAME=	e107
 PORTVERSION=	2.1.4
@@ -10,7 +10,7 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}_full
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Content management system written in PHP
 
-USES=		cpe
+USES=		cpe dos2unix php shebangfix
 
 USE_PHP=	dom exif hash pdo_mysql session xml
 WRKSRC=		${WRKDIR}/e107
@@ -21,7 +21,6 @@ SUB_FILES=	pkg-message
 SUB_LIST=	E107DIR=${E107DIR}
 E107DIR=	www/e107
 
-USES=		dos2unix shebangfix
 SHEBANG_FILES=	cron.php e107_handlers/bounce_handler.php
 
 do-extract:

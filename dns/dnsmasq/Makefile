@@ -1,9 +1,9 @@
 # Created by: Steven Honson
-# $FreeBSD: head/dns/dnsmasq/Makefile 442888 2017-06-07 20:00:41Z mandree $
+# $FreeBSD: head/dns/dnsmasq/Makefile 451095 2017-10-02 18:40:30Z brnrd $
 
 PORTNAME=	dnsmasq
-DISTVERSION=	2.77
-PORTREVISION=	1	# leave this in even if 0 to avoid PORTEPOCH bumps
+DISTVERSION=	2.78
+PORTREVISION=	0	# leave this in even if 0 to avoid PORTEPOCH bumps
 PORTEPOCH=	1
 CATEGORIES=	dns ipv6
 MASTER_SITES=	http://www.thekelleys.org.uk/dnsmasq/ \

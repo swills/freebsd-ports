@@ -1,9 +1,9 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/converters/p5-Bencode/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/converters/p5-Bencode/Makefile 450893 2017-09-29 14:11:33Z feld $
 
 PORTNAME=	Bencode
-PORTVERSION=	1.402
-PORTREVISION=	1
+PORTVERSION=	1.500
+PORTREVISION=	0
 CATEGORIES=	converters perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:ARISTOTLE

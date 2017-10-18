@@ -1,9 +1,9 @@
 # Created by: miwi
-# $FreeBSD: head/databases/akonadi/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/databases/akonadi/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	akonadi
 PORTVERSION=	1.13.0
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	databases kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/src
 DIST_SUBDIR=	KDE

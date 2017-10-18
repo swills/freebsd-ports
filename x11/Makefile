@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 450057 2017-09-18 17:45:33Z kmoore $
+# $FreeBSD: head/x11/Makefile 452251 2017-10-16 20:37:21Z rene $
 #
 
     COMMENT = Ports to support the X window system
@@ -327,10 +327,10 @@
     SUBDIR += tilda
     SUBDIR += tint
     SUBDIR += tint-devel
-    SUBDIR += tkXwin
     SUBDIR += trapproto
     SUBDIR += trayer
     SUBDIR += tycoon
+    SUBDIR += urxvt-font-size
     SUBDIR += urxvt-perls
     SUBDIR += vdesk
     SUBDIR += videoproto

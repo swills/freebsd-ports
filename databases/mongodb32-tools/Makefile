@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/databases/mongodb32-tools/Makefile 436248 2017-03-15 14:45:54Z mat $
+# $FreeBSD: head/databases/mongodb32-tools/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	mongodb32-tools
 PORTVERSION=	3.2.11
@@ -28,8 +28,6 @@ SSL_USE=	my_tags=ssl
 
 ONLY_FOR_ARCHS=	i386 amd64
 ONLY_FOR_ARCHS_REASON=	"not yet ported to anything other than i386 and amd64"
-
-STRIP=		# Stripping can break go binaries
 
 # Go is not our friend. Without below, ignores user-supplied flags.
 MAKE_CMD=	${LOCALBASE}/bin/go build

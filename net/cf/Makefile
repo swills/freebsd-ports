@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/cf/Makefile 449988 2017-09-17 09:01:51Z amdmi3 $
+# $FreeBSD: head/net/cf/Makefile 451834 2017-10-12 09:06:17Z mat $
 
 PORTNAME=	cf
 PORTVERSION=	6.24.0
@@ -23,8 +23,6 @@ GO_PKGNAME=	code.cloudfoundry.org/cli
 PLIST_FILES=	bin/cf
 
 PORTDOCS=	CHANGELOG.md NOTICE README.md
-
-STRIP=		# stripping can break go binaries
 
 OPTIONS_DEFINE=	DOCS
 

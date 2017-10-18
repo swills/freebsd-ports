@@ -1,9 +1,8 @@
 # Created by: Muhammad Moinur Rahman <5u623l20@gmail.com>
-# $FreeBSD: head/net/ndpi/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net/ndpi/Makefile 451251 2017-10-04 21:20:36Z madpilot $
 
 PORTNAME=	ndpi
-PORTVERSION=	2.0.2017.05.23
-PORTREVISION=	1
+PORTVERSION=	2.0.2017.09.13
 CATEGORIES=	net
 
 MAINTAINER=	madpilot@FreeBSD.org
@@ -26,7 +25,7 @@ INSTALL_TARGET=	install-strip
 USE_GITHUB=	yes
 GH_ACCOUNT=	ntop
 GH_PROJECT=	nDPI
-GH_TAGNAME=	3cfcc05
+GH_TAGNAME=	6607c33
 
 PLIST_SUB=	MAJOR_VER=${PORTVERSION:C/([[:digit:]])+\.([[:digit:]])+.*/\1.\2/}.0
 

@@ -1,5 +1,5 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/audio/freealut/Makefile 383693 2015-04-10 06:08:38Z antoine $
+# $FreeBSD: head/audio/freealut/Makefile 450397 2017-09-22 18:31:56Z oliver $
 
 PORTNAME=	freealut
 PORTVERSION=	1.1.0
@@ -16,6 +16,7 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 USES=		gmake libtool openal:al pathfix pkgconfig
 USE_LDCONFIG=	yes
+LLD_UNSAFE=	yes
 INSTALL_TARGET=	install-strip
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/redis-devel/Makefile 450353 2017-09-22 10:48:57Z mat $
+# $FreeBSD: head/databases/redis-devel/Makefile 450469 2017-09-23 20:26:44Z osa $
 
 PORTNAME=	redis
-DISTVERSION=	4.0.1
+DISTVERSION=	4.0.2
 CATEGORIES=	databases
 MASTER_SITES=	http://download.redis.io/releases/
 PKGNAMESUFFIX=	-devel
@@ -13,9 +13,6 @@ COMMENT=	Persistent key-value database with built-in net interface
 LICENSE=	BSD3CLAUSE
 
 BROKEN_i386=	undefined reference to __atomic_fetch_add_8
-
-USE_GITHUB=	yes
-GH_ACCOUNT=	antirez
 
 OPTIONS_DEFINE=	TESTS TRIB
 OPTIONS_RADIO=	EXTLUA

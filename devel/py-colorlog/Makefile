@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/devel/py-colorlog/Makefile 450334 2017-09-22 09:13:41Z sunpoet $
+# $FreeBSD: head/devel/py-colorlog/Makefile 450392 2017-09-22 15:50:05Z sunpoet $
 
 PORTNAME=	colorlog
 PORTVERSION=	3.1.0
@@ -18,7 +18,6 @@ NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
-DOCSDIR=	${PREFIX}/share/doc/${PYTHON_PKGNAMEPREFIX}${PORTNAME}
 PORTDOCS=	README.md
 
 post-install-DOCS-on:

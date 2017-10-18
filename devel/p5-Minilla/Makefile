@@ -1,5 +1,5 @@
 # Created by: Serguei Okladnikov <oklaspec@gmail.com>
-# $FreeBSD: head/devel/p5-Minilla/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Minilla/Makefile 451818 2017-10-12 08:10:09Z sunpoet $
 # Date created: 2015-05-28
 
 PORTNAME=	Minilla
@@ -60,11 +60,10 @@ BUILD_DEPENDS+=	p5-Module-Metadata>=1.000027:devel/p5-Module-Metadata
 RUN_DEPENDS+=	p5-Module-Metadata>=1.000027:devel/p5-Module-Metadata
 .endif
 
-regression-test: build
+pre-test:
 	@test ! -e ${WRKDIR}/.gitconfig && \
 		${SETENV} ${MAKE_ENV} git config --global user.name "ports-test" && \
 		${SETENV} ${MAKE_ENV} git config --global user.email "${USER}@${HOST}" || \
 		true
-	@cd ${WRKSRC}/ && ${SETENV} ${MAKE_ENV} ${PERL5} ${PL_BUILD} ${MAKE_ARGS} test
 
 .include <bsd.port.post.mk>

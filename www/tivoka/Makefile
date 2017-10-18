@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/www/tivoka/Makefile 425831 2016-11-10 06:09:31Z wen $
+# $FreeBSD: head/www/tivoka/Makefile 451218 2017-10-04 11:29:14Z bapt $
 
 PORTNAME=	tivoka
 PORTVERSION=	3.5.2
@@ -13,6 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 OPTIONS_DEFINE=	EXAMPLES
 
+USES=		php
 USE_PHP=	json filter
 NO_BUILD=	yes
 
@@ -28,6 +29,8 @@ do-install:
 	@${MKDIR} ${STAGEDIR}${LIBDIR}
 	${INSTALL_DATA} ${WRKSRC}/include.php ${STAGEDIR}${LIBDIR}
 	cd ${WRKSRC} && ${COPYTREE_SHARE} lib ${STAGEDIR}${LIBDIR}
+
+do-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	cd ${WRKSRC}/example && ${COPYTREE_SHARE} \* ${STAGEDIR}${EXAMPLESDIR}
 

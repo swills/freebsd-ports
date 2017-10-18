@@ -1,9 +1,9 @@
 # Created by: darius@dons.net.au
-# $FreeBSD: head/astro/xplanet/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/astro/xplanet/Makefile 451378 2017-10-06 11:18:35Z tobik $
 
 PORTNAME=	xplanet
 PORTVERSION=	1.3.0
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	astro geography
 MASTER_SITES=	SF
 
@@ -11,11 +11,11 @@ MAINTAINER=	novel@FreeBSD.org
 COMMENT=	Draw pictures of the earth textured by an image
 
 GNU_CONFIGURE=	yes
-USES=		iconv
+USES=		iconv localbase
 USE_XORG=	xt xscrnsaver
 CONFIGURE_ARGS=	--with-map-extension=jpg
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib -lm
+CPPFLAGS+=	-I${LOCALBASE}/include/netpbm
+LIBS+=		-lm
 
 OPTIONS_DEFINE=	FREETYPE PANGO GIF JPEG PNG PNM TIFF
 OPTIONS_DEFAULT=	FREETYPE PANGO GIF JPEG PNG PNM TIFF

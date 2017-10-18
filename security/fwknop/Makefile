@@ -1,9 +1,9 @@
 # Created by: Sean Greven <sean.greven@gmail.com>
-# $FreeBSD: head/security/fwknop/Makefile 449936 2017-09-15 20:49:54Z swills $
+# $FreeBSD: head/security/fwknop/Makefile 451339 2017-10-05 19:27:45Z cs $
 
 PORTNAME=	fwknop
 PORTVERSION=	2.6.9
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	http://www.cipherdyne.org/fwknop/download/
 
@@ -15,7 +15,7 @@ LICENSE=	GPLv2
 BUILD_DEPENDS= wget:ftp/wget
 RUN_DEPENDS=   wget:ftp/wget
 LIB_DEPENDS+=  libassuan.so:security/libassuan
-
+CONFLICTS_BUILD=	fwknop-2.6.8_*
 CPE_VENDOR=	cipherdyne
 
 OPTIONS_DEFINE=	GPGME

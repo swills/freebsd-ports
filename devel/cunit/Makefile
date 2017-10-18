@@ -1,5 +1,5 @@
 # Created by: Stefan Pauly <stefan@fh-mainz.de>
-# $FreeBSD: head/devel/cunit/Makefile 441996 2017-05-29 15:26:37Z sunpoet $
+# $FreeBSD: head/devel/cunit/Makefile 451536 2017-10-08 13:49:02Z sunpoet $
 
 PORTNAME=	cunit
 PORTVERSION=	2.1.3
@@ -37,9 +37,6 @@ USES=		autoreconf gmake libtool pathfix tar:bzip2
 DATADIR=	${PREFIX}/share/CUnit
 DOCSDIR=	${PREFIX}/share/doc/CUnit
 EXAMPLESDIR=	${PREFIX}/share/examples/CUnit
-PORTDATA=	*
-PORTDOCS=	*
-PORTEXAMPLES=	*
 
 AUTOMATED_CONFIGURE_ENABLE=	automated
 BASIC_CONFIGURE_ENABLE=	basic

@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale	<nivit@FreeBSD.org>
-# $FreeBSD: head/lang/rhino/Makefile 431402 2017-01-13 16:54:55Z mat $
+# $FreeBSD: head/lang/rhino/Makefile 450510 2017-09-24 18:49:25Z sunpoet $
 
 PORTNAME=	rhino
 DISTVERSION=	1_7R4
@@ -16,7 +16,7 @@ EXTRACT_ONLY=	${PORTNAME}${DISTVERSION}.zip
 MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Implementation of JavaScript written in Java
 
-LICENSE=	MPL
+LICENSE=	MPL20
 
 ALL_TARGET=	jar
 

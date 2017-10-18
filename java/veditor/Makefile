@@ -1,16 +1,15 @@
 # Created by: lon_kamikaze@gmx.de
-# $FreeBSD: head/java/veditor/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/java/veditor/Makefile 451350 2017-10-06 06:17:28Z vanilla $
 
 PORTNAME=	veditor
-PORTVERSION=	0.7.1
-PORTREVISION=	3
+PORTVERSION=	1.2.2
 CATEGORIES=	java cad
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20runtime/VEditor%20${PORTVERSION}
 DISTNAME=	net.sourceforge.${PORTNAME}_${PORTVERSION}
 EXTRACT_SUFX=	.jar
 EXTRACT_ONLY=
 
-MAINTAINER=	kamikaze@bsdforen.de
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Verilog and VHDL editor plugin for eclipse
 
 RUN_DEPENDS=	eclipse:java/eclipse

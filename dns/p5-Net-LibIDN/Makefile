@@ -1,5 +1,5 @@
 # Created by: Dominik Brettnacher <domi@saargate.de>
-# $FreeBSD: head/dns/p5-Net-LibIDN/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/dns/p5-Net-LibIDN/Makefile 450679 2017-09-26 15:56:12Z sunpoet $
 
 PORTNAME=	Net-LibIDN
 PORTVERSION=	0.12
@@ -11,7 +11,9 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	This module provides access to the libidn library
 
-LICENSE=	ART10
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE_ART10=	${WRKSRC}/Artistic
 
 LIB_DEPENDS=	libidn.so:dns/libidn
 

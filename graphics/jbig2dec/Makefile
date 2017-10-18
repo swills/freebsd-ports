@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/jbig2dec/Makefile 412810 2016-04-09 12:29:43Z sunpoet $
+# $FreeBSD: head/graphics/jbig2dec/Makefile 451282 2017-10-05 09:48:45Z sunpoet $
 
 PORTNAME=	jbig2dec
-PORTVERSION=	0.13
+PORTVERSION=	0.14
 CATEGORIES=	graphics devel
 MASTER_SITES=	http://downloads.ghostscript.com/public/${PORTNAME}/ \
 		LOCAL/sunpoet:tests

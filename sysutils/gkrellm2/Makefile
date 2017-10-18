@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/gkrellm2/Makefile 436568 2017-03-21 08:03:00Z glebius $
+# $FreeBSD: head/sysutils/gkrellm2/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	gkrellm
 PORTVERSION=	2.3.10
@@ -15,7 +15,6 @@ LICENSE=	GPLv3
 
 USES=		gmake pkgconfig tar:bzip2
 USE_RC_SUBR=	gkrellmd
-WANT_GNOME=	yes
 
 OPTIONS_DEFINE=		DOCS CLIENT NLS NTLM OPENSSL
 OPTIONS_DEFAULT=	CLIENT NTLM OPENSSL

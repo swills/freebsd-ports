@@ -1,8 +1,9 @@
-# $FreeBSD: head/net-im/mastodon/Makefile 450072 2017-09-18 19:06:19Z jrm $
+# $FreeBSD: head/net-im/mastodon/Makefile 450756 2017-09-27 15:31:06Z jrm $
 
 PORTNAME=	mastodon
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.6.1
+PORTREVISION=	1
 CATEGORIES=	net-im www
 
 MAINTAINER=	jrm@FreeBSD.org

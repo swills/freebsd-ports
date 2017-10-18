@@ -1,5 +1,5 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/sysutils/cloudabi-utils/Makefile 450032 2017-09-18 07:00:55Z ed $
+# $FreeBSD: head/sysutils/cloudabi-utils/Makefile 451721 2017-10-10 21:31:30Z linimon $
 
 PORTNAME=	cloudabi-utils
 DISTVERSIONPREFIX=	v
@@ -13,7 +13,7 @@ COMMENT=	Utilities for running CloudABI programs
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-ONLY_FOR_ARCHS=	aarch64 amd64 armv6 i386
+ONLY_FOR_ARCHS=	aarch64 amd64 armv6 armv7 i386
 ONLY_FOR_ARCHS_REASON=	CloudABI has not yet been ported to other architectures
 
 BUILD_DEPENDS=	${LOCALBASE}/include/cloudabi_types.h:devel/cloudabi \

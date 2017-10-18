@@ -1,10 +1,10 @@
 # Created by: Peter Ankerstal <peter@pean.org>
-# $FreeBSD: head/graphics/npretty/Makefile 441761 2017-05-26 08:20:18Z kwm $
+# $FreeBSD: head/graphics/npretty/Makefile 450852 2017-09-28 15:36:31Z kwm $
 
 PORTNAME=	npretty
 DISTVERSIONPREFIX=	n
 DISTVERSION=	0.9.3-1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 
 MAINTAINER=	peter@pean.org

@@ -1,8 +1,8 @@
 # Created by: Henrik Brix Andersen <brix@FreeBSD.org>
-# $FreeBSD: head/www/xapian-omega12/Makefile 441868 2017-05-27 19:42:13Z sunpoet $
+# $FreeBSD: head/www/xapian-omega12/Makefile 451547 2017-10-08 13:49:58Z sunpoet $
 
 PORTNAME=	xapian-omega
-PORTVERSION=	1.2.24
+PORTVERSION=	1.2.25
 CATEGORIES=	www
 MASTER_SITES=	http://oligarchy.co.uk/xapian/${PORTVERSION}/ \
 		LOCAL/sunpoet
@@ -32,11 +32,6 @@ GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 USES=		libtool localbase perl5 shebangfix tar:xz
 
-MORE_PORTDOCS=	AUTHORS ChangeLog NEWS README TODO
-PORTDATA=	*
-PORTDOCS=	*
-PORTEXAMPLES=	omega.conf
-
 SHEBANG_FILES=	dbi2omega htdig2omega mbox2omega
 
 ICONV_CONFIGURE_ON=	ac_cv_search_iconv=${ICONV_LIB}
@@ -50,10 +45,10 @@ post-patch:
 			${WRKSRC}/Makefile.in
 
 post-install-DOCS-on:
-	cd ${WRKSRC}/ && ${INSTALL_DATA} ${MORE_PORTDOCS} ${STAGEDIR}${DOCSDIR}/
+	cd ${WRKSRC}/ && ${INSTALL_DATA} AUTHORS ChangeLog NEWS README TODO ${STAGEDIR}${DOCSDIR}/
 
 post-install-EXAMPLES-on:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/
-	cd ${WRKSRC}/ && ${INSTALL_DATA} ${PORTEXAMPLES} ${STAGEDIR}${EXAMPLESDIR}/
+	${INSTALL_DATA} ${WRKSRC}/omega.conf ${STAGEDIR}${EXAMPLESDIR}/
 
 .include <bsd.port.mk>

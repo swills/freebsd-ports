@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/x11/xvattr/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/x11/xvattr/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	xvattr
 PORTVERSION=	1.3
@@ -12,7 +12,6 @@ MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Getting and setting Xv attributes
 
 USE_XORG=	x11 xv
-WANT_GNOME=	yes
 USES=		pkgconfig
 
 PLIST_FILES=	bin/${PORTNAME} bin/g${PORTNAME} \

@@ -1,9 +1,9 @@
-# $FreeBSD: head/ports-mgmt/pchecker/Makefile 404342 2015-12-24 11:36:20Z ak $
+# $FreeBSD: head/ports-mgmt/pchecker/Makefile 451354 2017-10-06 06:50:17Z ak $
 
 PORTNAME=	pchecker
-PORTVERSION=	1.18
+PORTVERSION=	1.20
 CATEGORIES=	ports-mgmt
-MASTER_SITES=	https://googledrive.com/host/0BwCT-sp3iBCaeDRPYm1jTjl1Qmc/
+MASTER_SITES=	https://aklv.github.io/distfiles/
 
 MAINTAINER=	ak@FreeBSD.org
 COMMENT=	Tool that checks the ports tree for various errors

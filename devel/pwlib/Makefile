@@ -1,5 +1,5 @@
 # Created by: Roger Hardiman <roger@FreeBSD.org>
-# $FreeBSD: head/devel/pwlib/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/pwlib/Makefile 451901 2017-10-12 15:57:51Z mat $
 
 PORTNAME=	pwlib
 PORTVERSION=	1.12.0
@@ -25,7 +25,6 @@ WRKSRC=		${WRKDIR}/ptlib_v${PORTVERSION:S/./_/g}
 USES=		bison gmake ssl
 USE_GCC=	any
 USE_AUTOTOOLS=	autoconf
-WANT_GNOME=	yes
 USE_LDCONFIG=	yes
 MAKE_JOBS_UNSAFE=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Brian Somers <brian@FreeBSD.org>
-# $FreeBSD: head/multimedia/vlc/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/multimedia/vlc/Makefile 452147 2017-10-15 14:05:04Z madpilot $
 
 PORTNAME=	vlc
 DISTVERSION=	2.2.6
@@ -54,7 +54,7 @@ CONFIGURE_ARGS=	--enable-avcodec --enable-avformat --enable-dvbpsi \
 		--disable-wasapi --disable-x26410b \
 		--with-kde-solid=${PREFIX}/share/apps/solid/actions \
 		ac_cv_search_pthread_rwlock_init=-pthread
-.if defined(WITH_DEBUG) && !defined(WITHOUT_DEBUG)
+.if defined(WITH_DEBUG)
 CONFIGURE_ARGS+=--enable-debug
 .endif
 CPPFLAGS+=	-I${LOCALBASE}/include

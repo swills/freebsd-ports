@@ -1,8 +1,8 @@
 # Created by: Brian Buchanan <brian@CSUA.Berkeley.EDU>
-# $FreeBSD: head/games/flightgear-data/Makefile 438066 2017-04-08 20:26:12Z martymac $
+# $FreeBSD: head/games/flightgear-data/Makefile 450910 2017-09-29 16:06:29Z martymac $
 
 PORTNAME=	flightgear-data
-PORTVERSION=	2017.1.3
+PORTVERSION=	2017.3.1
 CATEGORIES=	games
 MASTER_SITES=	SF/flightgear/release-${PORTVERSION:R}
 DISTNAME=	FlightGear-${PORTVERSION}-data

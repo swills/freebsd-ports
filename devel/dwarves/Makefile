@@ -1,5 +1,5 @@
 # Created by: Conrad Meyer <cem@FreeBSD.org>
-# $FreeBSD: head/devel/dwarves/Makefile 433957 2017-02-12 18:05:38Z cem $
+# $FreeBSD: head/devel/dwarves/Makefile 451570 2017-10-08 19:36:26Z antoine $
 
 PORTNAME=	dwarves
 PORTVERSION=	1.10.20160713
@@ -18,6 +18,8 @@ LICENSE=	GPLv2
 LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING
 
 BROKEN=		does not build (/usr/local/include/libelf.h:308:8: error: unknown type name 'Elf32_Chdr')
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2017-11-09
 
 LIB_DEPENDS=	libargp.so:devel/argp-standalone \
 		libdw.so:devel/elfutils

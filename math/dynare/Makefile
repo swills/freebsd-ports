@@ -1,9 +1,9 @@
 # Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/math/dynare/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/dynare/Makefile 450560 2017-09-25 00:08:16Z jbeich $
 
 PORTNAME=	dynare
 PORTVERSION=	4.5.1
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	math
 MASTER_SITES=	http://www.dynare.org/release/source/
 

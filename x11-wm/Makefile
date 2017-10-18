@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-wm/Makefile 448234 2017-08-18 14:27:26Z jrm $
+# $FreeBSD: head/x11-wm/Makefile 452056 2017-10-14 11:01:52Z rene $
 #
 
     COMMENT = X11 window managers
@@ -10,8 +10,6 @@
     SUBDIR += antiwm
     SUBDIR += awesome
     SUBDIR += awesome-vicious
-    SUBDIR += awesome2
-    SUBDIR += awesome3
     SUBDIR += bbkeys
     SUBDIR += bbpager
     SUBDIR += blackbox

@@ -1,10 +1,10 @@
-# $FreeBSD: head/biology/biococoa/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/biology/biococoa/Makefile 451982 2017-10-13 11:14:53Z bapt $
 
 PORTNAME=	biococoa
 PORTVERSION=	2.2.2
 PORTREVISION=	3
 CATEGORIES=	biology gnustep
-MASTER_SITES=	http://bioinformatics.org/biococoa/downloads/ DEBIAN/pool/main/b/biococoa.app
+MASTER_SITES=	http://bioinformatics.org/biococoa/downloads/
 DISTNAME=	biococoa-${PORTVERSION}-src
 EXTRACT_SUFX=	.tgz
 

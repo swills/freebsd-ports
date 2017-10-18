@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/startup-notification/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/startup-notification/Makefile 450591 2017-09-25 13:16:27Z gahr $
 
 PORTNAME=	startup-notification
 PORTVERSION=	0.12
@@ -10,6 +10,9 @@ DIST_SUBDIR=	gnome2
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Library that supports startup notification spec from freedesktop.org
+
+LICENSE=	LGPL20 MIT
+LICENSE_COMB=	multi
 
 LIB_DEPENDS=	libxcb-util.so:x11/xcb-util
 
