@@ -1,12 +1,12 @@
 # Created by: Denise H. G. <darcsis@gmail.com>
-# $FreeBSD: head/devel/tig/Makefile 451040 2017-10-01 10:01:46Z matthew $
+# $FreeBSD: head/devel/tig/Makefile 452422 2017-10-19 13:55:19Z pizzamig $
 
 PORTNAME=	tig
-PORTVERSION=	2.2.2
+PORTVERSION=	2.3.0
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/jonas/tig/releases/download/${DISTNAME}/
 
-MAINTAINER=	darcsis@gmail.com
+MAINTAINER=	dharrigan@gmail.com
 COMMENT=	Text-mode interface for git
 
 LICENSE=	GPLv2

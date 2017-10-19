@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/p5-Catalyst-Model-LDAP/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Model-LDAP/Makefile 452370 2017-10-18 17:23:08Z sunpoet $
 
 PORTNAME=	Catalyst-Model-LDAP
-PORTVERSION=	0.20
+PORTVERSION=	0.21
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

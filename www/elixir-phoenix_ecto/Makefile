@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/elixir-phoenix_ecto/Makefile 435759 2017-03-09 15:36:20Z olgeni $
+# $FreeBSD: head/www/elixir-phoenix_ecto/Makefile 452411 2017-10-19 10:15:30Z olgeni $
 
 PORTNAME=	phoenix_ecto
-PORTVERSION=	3.2.3
+PORTVERSION=	3.3.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	elixir-

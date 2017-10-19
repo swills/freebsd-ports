@@ -1,8 +1,8 @@
 # Created by: vanilla
-# $FreeBSD: head/net/p5-SOAP-Lite/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-SOAP-Lite/Makefile 452350 2017-10-18 16:16:03Z swills $
 
 PORTNAME=	SOAP-Lite
-PORTVERSION=	1.20
+PORTVERSION=	1.22
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -32,8 +32,8 @@ CONFLICTS_INSTALL=	p5-SOAP-Lite-0.60* p5-SOAP-[0-9]*
 
 CONFIGURE_ARGS=	--noprompt
 INSTALL_TARGET=	pure_install
-USE_PERL5=	configure
 USES=		perl5 shebangfix
+USE_PERL5=	configure
 NO_ARCH=	yes
 
 SHEBANG_FILES=	bin/SOAPsh.pl

@@ -1,9 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/orangehrm/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/orangehrm/Makefile 452414 2017-10-19 10:49:10Z wen $
 
 PORTNAME=	orangehrm
-PORTVERSION=	3.3.3
-PORTREVISION=	1
+PORTVERSION=	4.0
 CATEGORIES=	www misc
 MASTER_SITES=	SF/${PORTNAME}/stable/${PORTVERSION}
 
@@ -14,7 +13,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/license/LICENSE.TXT
 
 USES=		cpe php zip
-USE_PHP=	pdo_mysql ctype xml simplexml
+USE_PHP=	iconv json pdo_mysql ctype xml session simplexml
 NO_BUILD=	yes
 PLIST=		${WRKDIR}/plist
 SUB_FILES=	pkg-message

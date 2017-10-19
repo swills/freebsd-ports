@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-MooseX-Emulate-Class-Accessor-Fast/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Emulate-Class-Accessor-Fast/Makefile 452369 2017-10-18 17:23:03Z sunpoet $
 
 PORTNAME=	MooseX-Emulate-Class-Accessor-Fast
 PORTVERSION=	0.00903
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Emulate Class::Accessor::Fast behavior using Moose attributes
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Moose>=0.84:devel/p5-Moose \
 		p5-namespace-clean>=0:devel/p5-namespace-clean

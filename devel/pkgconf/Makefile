@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/pkgconf/Makefile 451277 2017-10-05 08:24:20Z bapt $
+# $FreeBSD: head/devel/pkgconf/Makefile 452326 2017-10-18 12:00:09Z bapt $
 
 PORTNAME=	pkgconf
-PORTVERSION=	1.3.9
+PORTVERSION=	1.3.10
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://distfiles.dereferenced.org/pkgconf/ \

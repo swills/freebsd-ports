@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 451663 2017-10-10 11:16:07Z sunpoet $
+# $FreeBSD: head/graphics/Makefile 452419 2017-10-19 13:10:48Z swills $
 #
 
     COMMENT = Graphics tools and libraries
@@ -837,6 +837,7 @@
     SUBDIR += projectm-libvisual
     SUBDIR += pstoedit
     SUBDIR += pstoepsi
+    SUBDIR += ptex
     SUBDIR += py-PyOpenGL
     SUBDIR += py-PyOpenGL-accelerate
     SUBDIR += py-PyX

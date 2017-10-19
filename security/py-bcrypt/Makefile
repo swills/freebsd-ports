@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/security/py-bcrypt/Makefile 451902 2017-10-12 16:00:30Z dbaio $
+# $FreeBSD: head/security/py-bcrypt/Makefile 452387 2017-10-18 22:04:26Z dbaio $
 
 PORTNAME=	bcrypt
 PORTVERSION=	3.1.4
@@ -20,7 +20,7 @@ USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 do-test:
-	@cd ${WRKSRC} && pytest -v
+	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYDISTUTILS_SETUP} test
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/bcrypt/_bcrypt.so

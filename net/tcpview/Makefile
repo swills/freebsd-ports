@@ -1,11 +1,13 @@
 # Created by: Chung-Kie Tung <tung@turtle.ee.ncku.edu.tw>
-# $FreeBSD: head/net/tcpview/Makefile 451623 2017-10-09 16:58:44Z cy $
+# $FreeBSD: head/net/tcpview/Makefile 452380 2017-10-18 19:36:55Z cy $
 
 PORTNAME=	tcpview
 PORTVERSION=	1.0
 PORTREVISION=	7
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.cac.washington.edu/pub/noc-tools/tcpview/
+MASTER_SITES=	http://ftp.vim.org/ibiblio/system/network/management/ \
+		ftp://ftp.ottix.net/pub/mirrors/by-package/tcpview/ \
+		ftp://ftp.ibiblio.org/pub/historic-linux/ftp-archives/sunsite.unc.edu/Sep-29-1996/system//Network/management/
 
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Motif-based TCP/IP protocol analyzer

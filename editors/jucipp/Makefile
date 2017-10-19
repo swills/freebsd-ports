@@ -1,9 +1,8 @@
 # Created by: Mohammad S. Babaei <info@babaei.net>
-# $FreeBSD: head/editors/jucipp/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/editors/jucipp/Makefile 452395 2017-10-19 05:52:28Z swills $
 
 PORTNAME=	jucipp
-PORTVERSION=	1.2.4
-PORTREVISION=	2
+PORTVERSION=	1.3.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	editors
 
@@ -16,24 +15,19 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libaspell.so:textproc/aspell \
 		libboost_filesystem.so:devel/boost-libs \
 		libgit2.so:devel/libgit2 \
-		libclang.so:devel/llvm40
+		libclang.so:devel/llvm50
 
-USE_GNOME=	gdkpixbuf2 gtkmm30 gtksourceviewmm3
 USES=		cmake:outsource desktop-file-utils pkgconfig
+USE_GNOME=	gdkpixbuf2 gtkmm30 gtksourceviewmm3
 INSTALLS_ICONS=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	cppit
-GH_TUPLE=	cppit:libclangmm:1ef0424:libclangmm/libclangmm \
-		eidheim:tiny-process-library:8025c45:tiny_process_library/tiny-process-library
+GH_TUPLE=	cppit:libclangmm:d978517:libclangmm/libclangmm \
+		eidheim:tiny-process-library:cf212df:tiny_process_library/tiny-process-library
 
 PLIST_FILES=	bin/juci \
 		share/applications/juci.desktop \
 		share/icons/hicolor/scalable/apps/juci.svg
-
-post-patch:
-# Make sure that jucipp can find LLVM 4.0
-	@${REINPLACE_CMD} 's,[[:<:]]llvm39/\(.*\)[[:>:]],llvm40/\1,g' \
-		${WRKSRC}/cmake_modules/FindLibClang.cmake
 
 .include <bsd.port.mk>

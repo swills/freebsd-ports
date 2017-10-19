@@ -1,10 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/zeronet/Makefile 448507 2017-08-22 02:24:48Z swills $
+# $FreeBSD: head/security/zeronet/Makefile 452351 2017-10-18 16:24:52Z swills $
 
 PORTNAME=	zeronet
-PORTVERSION=	0.5.7
+PORTVERSION=	0.6.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	security net-p2p
 
 MAINTAINER=	yuri@rawbw.com

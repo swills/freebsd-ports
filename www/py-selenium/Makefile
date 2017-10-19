@@ -1,8 +1,8 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/www/py-selenium/Makefile 448356 2017-08-20 04:18:42Z swills $
+# $FreeBSD: head/www/py-selenium/Makefile 452382 2017-10-18 20:16:49Z swills $
 
 PORTNAME=	selenium
-PORTVERSION=	3.5.0
+PORTVERSION=	3.6.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

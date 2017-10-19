@@ -1,9 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/sysutils/tmux/Makefile 445733 2017-07-14 07:58:08Z mat $
+# $FreeBSD: head/sysutils/tmux/Makefile 452346 2017-10-18 15:34:01Z mat $
 
 PORTNAME=	tmux
-PORTVERSION=	2.5
-PORTREVISION=	1
+PORTVERSION=	2.6
 CATEGORIES=	sysutils
 MASTER_SITES=	https://github.com/tmux/tmux/releases/download/${PORTVERSION}/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
@@ -26,7 +25,7 @@ PLIST_FILES=	bin/tmux \
 		man/man1/tmux.1.gz \
 		etc/bash_completion.d/tmux
 
-PORTDOCS=	CHANGES FAQ README TODO
+PORTDOCS=	CHANGES README TODO
 PORTEXAMPLES=	*
 
 OPTIONS_DEFINE=	DOCS EXAMPLES LIBEVENT_STATIC BACKSPACE

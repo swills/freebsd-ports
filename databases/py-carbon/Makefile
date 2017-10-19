@@ -1,9 +1,8 @@
 # Created by: Evan Sarmiento <bsdports@wayfair.com>
-# $FreeBSD: head/databases/py-carbon/Makefile 448709 2017-08-25 05:49:13Z antoine $
+# $FreeBSD: head/databases/py-carbon/Makefile 452341 2017-10-18 14:58:13Z swills $
 
 PORTNAME=	carbon
-PORTVERSION=	0.9.15
-PORTREVISION=	2
+PORTVERSION=	1.0.2
 CATEGORIES=	databases python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -24,6 +23,10 @@ USES=		python:2.7
 USE_RC_SUBR=	carbon
 USE_GITHUB=	yes
 GH_ACCOUNT=	graphite-project
+MAKE_ENV=	GRAPHITE_NO_PREFIX=yes
+
+post-patch:
+	@${REINPLACE_CMD} 's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/setup.py
 
 post-install:
 	${RM} -r ${STAGEDIR}${PREFIX}/examples/init.d

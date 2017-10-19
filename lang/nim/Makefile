@@ -1,15 +1,16 @@
 # Created by: Neal Nelson <ports@nicandneal.net>
-# $FreeBSD: head/lang/nim/Makefile 441881 2017-05-27 22:16:50Z linimon $
+# $FreeBSD: head/lang/nim/Makefile 452386 2017-10-18 22:02:12Z dbaio $
 
 PORTNAME=	nim
-PORTVERSION=	0.17.0
+PORTVERSION=	0.17.2
 CATEGORIES=	lang
-MASTER_SITES=	http://nim-lang.org/download/
+MASTER_SITES=	https://nim-lang.org/download/
 
 MAINTAINER=	ports@nicandneal.net
 COMMENT=	Nim programming language
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/copying.txt
 
 BROKEN_aarch64=		fails to compile: crt1.c: undefined reference to main
 BROKEN_armv6=		fails to compile: crt1.c: undefined reference to main

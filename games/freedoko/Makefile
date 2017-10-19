@@ -1,9 +1,8 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/games/freedoko/Makefile 441395 2017-05-21 13:21:04Z linimon $
+# $FreeBSD: head/games/freedoko/Makefile 452348 2017-10-18 16:04:57Z danfe $
 
 PORTNAME=	freedoko
-PORTVERSION=	0.7.14
-PORTREVISION=	1
+PORTVERSION=	0.7.16
 CATEGORIES=	games
 MASTER_SITES=	SF/free-doko/FreeDoko%20source
 DISTNAME=	FreeDoko_${PORTVERSION}.src
@@ -14,18 +13,19 @@ COMMENT=	Play the card game Doppelkopf
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/../doc/GPL
 
-LIB_DEPENDS=	libgnet-2.0.so:net/gnet2
-
-BROKEN=		fails to compile: refptr.h: expected ';' at end of declaration list
-
 WRKSRC=		${WRKDIR}/${DISTNAME:C/\.src$//}/src
 
-USES=		gmake pkgconfig zip:infozip
-USE_GNOME=	gtkmm24
+USES=		compiler:c++14-lang gmake pkgconfig zip:infozip
+USE_CXXSTD=	c++14
+USE_GNOME=	gtkmm30
 MAKE_ENV=	OS="${OPSYS}" DATADIR="${DATADIR}" DOCSDIR="${DOCSDIR}"
 
-OPTIONS_DEFINE=		DOCS OPENAL
-OPTIONS_DEFAULT=	OPENAL
+OPTIONS_DEFINE=		DOCS NETWORK OPENAL
+OPTIONS_DEFAULT=	NETWORK OPENAL
+
+NETWORK_DESC=		Network support
+NETWORK_LIB_DEPENDS=	libgnet-2.0.so:net/gnet2
+NETWORK_MAKE_ENV=	USE_NETWORK=true
 
 OPENAL_USES=		openal:alut
 OPENAL_MAKE_ENV=	INCLUDE_SOUND_ALUT="$$(pkg-config --cflags freealut)" \

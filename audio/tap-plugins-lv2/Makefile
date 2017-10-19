@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/tap-plugins-lv2/Makefile 448454 2017-08-21 07:04:36Z ultima $
+# $FreeBSD: head/audio/tap-plugins-lv2/Makefile 452397 2017-10-19 06:28:40Z swills $
 
 PORTNAME=	tap-plugins
 PORTVERSION=	g20160125
+PORTREVISION=	1
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 
@@ -21,7 +22,13 @@ GH_PROJECT=	tap-lv2
 GH_TAGNAME=	de26a3c
 
 post-patch:
-	@${REINPLACE_CMD} -e 's| -O3||; s| -Wl,-O1||; s| -fstrength-reduce||' \
+	@${REINPLACE_CMD} -e 's| -O3||; s| -Wl,-O1||; s| -fstrength-reduce||; s| -Wl,--strip-all||' \
 		${WRKSRC}/Makefile.mk
+	@${REINPLACE_CMD} -e 's|^inline$$||' \
+		${WRKSRC}/dynamics/tap_dynamics.c
+
+post-install:
+	@${STRIP_CMD} \
+		${STAGEDIR}${PREFIX}/lib/lv2/*.lv2/*.so
 
 .include <bsd.port.mk>

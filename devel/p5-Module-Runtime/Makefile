@@ -1,8 +1,8 @@
 # Created by: brix@FreeBSD.org
-# $FreeBSD: head/devel/p5-Module-Runtime/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Module-Runtime/Makefile 452360 2017-10-18 17:22:16Z sunpoet $
 
 PORTNAME=	Module-Runtime
-PORTVERSION=	0.015
+PORTVERSION=	0.016
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

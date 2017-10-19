@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-django-cors-headers/Makefile 413287 2016-04-14 16:39:44Z swills $
+# $FreeBSD: head/www/py-django-cors-headers/Makefile 452342 2017-10-18 15:00:28Z swills $
 
 PORTNAME=	django-cors-headers
-PORTVERSION=	1.1.0
+PORTVERSION=	2.1.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

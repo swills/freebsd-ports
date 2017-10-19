@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/erlang-parse_trans/Makefile 417728 2016-06-28 15:21:19Z olgeni $
+# $FreeBSD: head/devel/erlang-parse_trans/Makefile 452323 2017-10-18 10:55:41Z olgeni $
 
 PORTNAME=	parse_trans
-PORTVERSION=	3.0.0
+PORTVERSION=	3.1.0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

@@ -1,12 +1,12 @@
 # Created by: toomas <toomas@median.ee>
-# $FreeBSD: head/databases/pecl-dbase/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/databases/pecl-dbase/Makefile 452328 2017-10-18 12:04:58Z zi $
 
 PORTNAME=	dbase
 PORTVERSION=	5.1.0
 PORTREVISION=	1
 CATEGORIES=	databases pear
 
-MAINTAINER=	toomas@median.ee
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	dBase database file access functions for PHP
 
 LICENSE=	PHP301

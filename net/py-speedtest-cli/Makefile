@@ -1,8 +1,8 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/net/py-speedtest-cli/Makefile 446455 2017-07-23 07:19:06Z nivit $
+# $FreeBSD: head/net/py-speedtest-cli/Makefile 452401 2017-10-19 08:25:55Z nivit $
 
 PORTNAME=	speedtest-cli
-PORTVERSION=	1.0.6
+PORTVERSION=	1.0.7
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

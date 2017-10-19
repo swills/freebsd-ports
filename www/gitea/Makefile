@@ -1,8 +1,8 @@
 # Created by: Stefan Bethke <stb@lassitu.de>
-# $FreeBSD: head/www/gitea/Makefile 452067 2017-10-14 14:34:30Z wen $
+# $FreeBSD: head/www/gitea/Makefile 452400 2017-10-19 07:48:13Z pizzamig $
 
 PORTNAME=	gitea
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 

@@ -1,12 +1,11 @@
-# $FreeBSD: head/x11-wm/cwm/Makefile 451080 2017-10-02 15:04:37Z tobik $
+# $FreeBSD: head/x11-wm/cwm/Makefile 452340 2017-10-18 14:53:19Z tobik $
 
 PORTNAME=	cwm
 DISTVERSIONPREFIX=	v
-DISTVERSION=	5.6-201
-DISTVERSIONSUFFIX=	-g5a46349
+DISTVERSION=	6.2
 CATEGORIES=	x11-wm
 
-MAINTAINER=	braakvaak@aol.com
+MAINTAINER=	tobik@FreeBSD.org
 COMMENT=	Minimalistic window manager for X11 based on evilwm
 
 LICENSE=	ISCL

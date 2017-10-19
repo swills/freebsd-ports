@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/yubikey-piv-manager/Makefile 420539 2016-08-21 07:39:20Z ume $
+# $FreeBSD: head/security/yubikey-piv-manager/Makefile 452337 2017-10-18 14:33:29Z ume $
 
 PORTNAME=	yubikey-piv-manager
-PORTVERSION=	1.3.0
+PORTVERSION=	1.4.2
 #PORTREVISION=	0
 CATEGORIES=	security
 MASTER_SITES=	https://developers.yubico.com/yubikey-piv-manager/Releases/
@@ -10,6 +10,7 @@ MAINTAINER=	ume@FreeBSD.org
 COMMENT=	YubiKey PIV Manager
 
 LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	pyside${PYTHON_PKGNAMESUFFIX}>=1.0.9:devel/pyside \
 		yubico-piv-tool:security/yubico-piv-tool

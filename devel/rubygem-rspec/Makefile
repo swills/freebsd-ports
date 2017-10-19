@@ -1,8 +1,8 @@
 # Created by: Roman Shterenzon <romanbsd@yahoo.com>
-# $FreeBSD: head/devel/rubygem-rspec/Makefile 440169 2017-05-05 15:34:58Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rspec/Makefile 452365 2017-10-18 17:22:42Z sunpoet $
 
 PORTNAME=	rspec
-PORTVERSION=	3.6.0
+PORTVERSION=	3.7.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
