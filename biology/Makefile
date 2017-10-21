@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 449922 2017-09-15 19:17:17Z sunpoet $
+# $FreeBSD: head/biology/Makefile 452595 2017-10-21 16:57:53Z jrm $
 #
 
     COMMENT = Biology
@@ -37,6 +37,7 @@
     SUBDIR += hmmer
     SUBDIR += htslib
     SUBDIR += iolib
+    SUBDIR += iqtree
     SUBDIR += jalview
     SUBDIR += jellyfish
     SUBDIR += lagan

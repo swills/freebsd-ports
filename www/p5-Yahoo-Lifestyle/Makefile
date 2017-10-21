@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/www/p5-Yahoo-Lifestyle/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Yahoo-Lifestyle/Makefile 452591 2017-10-21 15:01:37Z lwhsu $
 
 PORTNAME=	Yahoo-Lifestyle
 PORTVERSION=	0.2
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	hcchien@hcchien.org
 COMMENT=	Simple interface for Yahoo! Taiwan Lifestyle open APIs
+
+DEPRECATED=	This service has been shut down
+EXPIRATION_DATE=	2017-11-30
 
 BUILD_DEPENDS:=	${RUN_DEPENDS} \
 		p5-Test-Simple>=0:devel/p5-Test-Simple

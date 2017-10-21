@@ -1,9 +1,9 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/databases/mysql57-server/Makefile 452458 2017-10-19 17:50:36Z feld $
+# $FreeBSD: head/databases/mysql57-server/Makefile 452597 2017-10-21 18:12:35Z mmokhi $
 
 PORTNAME?=	mysql
 PORTVERSION=	5.7.20
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	databases ipv6
 MASTER_SITES=	MYSQL/MySQL-5.7
 PKGNAMESUFFIX?=	57-server
@@ -26,8 +26,10 @@ MY_DBDIR=	/var/db/mysql
 MY_SECDIR=	/var/db/mysql_secure
 MY_TMPDIR=	/var/db/mysql_tmpdir
 
-LIB_DEPENDS+=	libevent.so:devel/libevent \
-		liblz4.so:archivers/liblz4
+LIB_DEPENDS+=	libcurl.so:ftp/curl \
+		libevent.so:devel/libevent \
+		liblz4.so:archivers/liblz4 \
+		libprotobuf.so:devel/protobuf
 
 CMAKE_BUILD_TYPE=	Release
 
@@ -56,6 +58,8 @@ CMAKE_ARGS+=	-DINSTALL_LAYOUT=FREEBSD \
 		-DWITH_LIBEVENT=system \
 		-DWITH_LZ4=system \
 		-DWITH_ZLIB=system \
+		-DWITH_PROTOBUF=system \
+		-DWITH_CURL=system \
 		-DINSTALL_MYSQLTESTDIR=0 \
 		-DWITH_DEBUG=0
 
