@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 452266 2017-10-17 06:20:55Z antoine $
+# $FreeBSD: head/games/Makefile 452503 2017-10-20 06:52:03Z se $
 #
 
     COMMENT = Games and related software
@@ -680,6 +680,7 @@
     SUBDIR += oneko-sakura
     SUBDIR += oolite
     SUBDIR += oonsoo
+    SUBDIR += open-adventure
     SUBDIR += openalchemist
     SUBDIR += openarena
     SUBDIR += openarena-data

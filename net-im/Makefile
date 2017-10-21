@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 451223 2017-10-04 12:05:28Z bapt $
+# $FreeBSD: head/net-im/Makefile 452537 2017-10-20 16:01:58Z swills $
 #
 
     COMMENT = Instant messaging
@@ -115,6 +115,7 @@
     SUBDIR += pidgin-osd
     SUBDIR += pidgin-pidgimpd
     SUBDIR += pidgin-privacy-please
+    SUBDIR += pidgin-rocketchat
     SUBDIR += pidgin-sipe
     SUBDIR += pidgin-skype
     SUBDIR += pidgin-skypeweb

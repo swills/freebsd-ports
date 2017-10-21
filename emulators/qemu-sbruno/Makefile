@@ -1,8 +1,8 @@
 # Created by: Juergen Lock <nox@jelal.kn-bremen.de>
-# $FreeBSD: head/emulators/qemu-sbruno/Makefile 451906 2017-10-12 16:31:21Z sbruno $
+# $FreeBSD: head/emulators/qemu-sbruno/Makefile 452562 2017-10-20 21:28:14Z sbruno $
 
 PORTNAME=	qemu
-PORTVERSION=	2.9.94.g20171011
+PORTVERSION=	2.9.94.g20171020
 CATEGORIES=	emulators
 MASTER_SITES=	GH
 PKGNAMESUFFIX?=	-sbruno
@@ -16,7 +16,7 @@ LICENSE=	GPLv2
 USE_GITHUB=	yes
 GH_ACCOUNT=	seanbruno
 GH_PROJECT=	${PORTNAME}-bsd-user
-GH_TAGNAME=	eb1c099
+GH_TAGNAME=	8b41155
 HAS_CONFIGURE=	yes
 USES=		gmake pkgconfig bison perl5 python:2,build
 USE_PERL5=	build

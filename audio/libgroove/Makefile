@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/audio/libgroove/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/audio/libgroove/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	libgroove
 PORTVERSION=	4.3.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	audio
 
 MAINTAINER=	ports@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Stephen J. Roznowski <sjr@home.net>
-# $FreeBSD: head/mail/tkrat2/Makefile 441819 2017-05-27 00:20:19Z linimon $
+# $FreeBSD: head/mail/tkrat2/Makefile 452517 2017-10-20 12:25:51Z gahr $
 
 PORTNAME=	tkrat
 PORTVERSION=	2.1.5
@@ -10,6 +10,9 @@ MASTER_SITES=	http://tkrat.org/downloads/stable/ \
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Mail user agent for X with a Tcl/Tk user interface
+
+DEPRECATED=		Tcl/Tk 8.4 is no longer maintained, please use 8.5+
+EXPIRATION_DATE=	2017-11-20
 
 LICENSE=	BSD3CLAUSE
 

@@ -1,10 +1,10 @@
 # Created by: glocke@bsdstammtisch.at
-# $FreeBSD: head/net-p2p/retroshare/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/net-p2p/retroshare/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	retroshare
 PORTVERSION=	0.6.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	net-p2p
 
 MAINTAINER=	peter@netkey.at

@@ -1,9 +1,9 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/multimedia/winff/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/winff/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	WinFF
 PORTVERSION=	1.5.5
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	multimedia
 MASTER_SITES=	http://winff.org/docs/source/
 DISTNAME=	${_PORTNAME}-${PORTVERSION}-source

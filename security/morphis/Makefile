@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/morphis/Makefile 442592 2017-06-04 21:49:48Z bdrewery $
+# $FreeBSD: head/security/morphis/Makefile 452540 2017-10-20 16:18:25Z mat $
 
 PORTNAME=	morphis
 PORTVERSION=	0.8.18.6
@@ -8,6 +8,8 @@ CATEGORIES=	security net-p2p
 
 MAINTAINER=	yuri@rawbw.com
 COMMENT=	Peer-to-peer high-performance distributed datastore and mail
+
+BROKEN=		Does not package
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE

@@ -1,20 +1,22 @@
 # Created by: db
-# $FreeBSD: head/comms/echolinux/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/echolinux/Makefile 452578 2017-10-21 09:04:24Z amdmi3 $
 
 PORTNAME=	echolinux
 PORTVERSION=	0.17a
 PORTREVISION=	7
 CATEGORIES=	comms hamradio
 MASTER_SITES=	SF/cqinet/${PORTNAME}/${PORTNAME}-${PORTVERSION}
-EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Amateur Radio Echolink client for UNIX
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/gpl.txt
 
 LIB_DEPENDS=	libforms.so:x11-toolkits/xforms \
 		libgsm.so:audio/gsm
+
+USES=		tar:tgz
 
 OPTIONS_DEFINE=	DOCS
 
@@ -35,12 +37,14 @@ post-patch:
 		${WRKSRC}/echolinux/Makefile
 
 post-install:
-	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	@${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}/README
-	@${INSTALL_DATA} ${WRKSRC}/Using_EchoLinux.txt ${STAGEDIR}${DOCSDIR}/Using_EchoLinux.txt
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/echolinux
-	@${INSTALL_DATA} ${WRKSRC}/echolinux.desktop ${STAGEDIR}${PREFIX}/share/echolinux
+	${INSTALL_DATA} ${WRKSRC}/echolinux.desktop ${STAGEDIR}${PREFIX}/share/echolinux
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/echolinux/pixmaps
-	@${INSTALL_DATA} ${WRKSRC}/pixmaps/echolinux_48x48.png ${STAGEDIR}${PREFIX}/share/echolinux/pixmaps
+	${INSTALL_DATA} ${WRKSRC}/pixmaps/echolinux_48x48.png ${STAGEDIR}${PREFIX}/share/echolinux/pixmaps
+
+post-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}/README
+	${INSTALL_DATA} ${WRKSRC}/Using_EchoLinux.txt ${STAGEDIR}${DOCSDIR}/Using_EchoLinux.txt
 
 .include <bsd.port.mk>

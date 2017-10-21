@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/games/ttraffic/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/ttraffic/Makefile 452517 2017-10-20 12:25:51Z gahr $
 
 PORTNAME=	ttraffic
 PORTVERSION=	0.8
@@ -10,6 +10,9 @@ MASTER_SITES=	http://alpha.luc.ac.be/Research/Algebra/Members/Ttraffic/ \
 
 MAINTAINER=	tobez@FreeBSD.org
 COMMENT=	TTraffic - A Tcl/Tk version of Rush Hour
+
+DEPRECATED=		Tcl/Tk 8.4 is no longer maintained, please use 8.5+
+EXPIRATION_DATE=	2017-11-20
 
 BUILD_DEPENDS=	wish8.4:x11-toolkits/tk84
 RUN_DEPENDS=	wish8.4:x11-toolkits/tk84

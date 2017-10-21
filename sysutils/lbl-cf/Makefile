@@ -1,13 +1,10 @@
 # Created by: Craig Leres <leres@FreeBSD.org>
-# $FreeBSD: head/sysutils/lbl-cf/Makefile 449916 2017-09-15 18:18:26Z leres $
+# $FreeBSD: head/sysutils/lbl-cf/Makefile 452566 2017-10-21 00:45:50Z leres $
 
 PORTNAME=	cf
 PORTVERSION=	1.2.5
 CATEGORIES=	sysutils
-MASTER_SITES=	ftp://ee.lbl.gov/ \
-		http://www.tux.org//pub/net/ftp.ee.lbl.gov/ \
-		http://ftp.riken.go.jp/pub/net/lbl/ \
-		http://www.ftpdir.hu/ftp.ee.lbl.gov/
+MASTER_SITES=	ftp://ee.lbl.gov/
 PKGNAMEPREFIX=	lbl-
 
 MAINTAINER=	leres@FreeBSD.org

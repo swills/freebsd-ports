@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/hping-devel/Makefile 425758 2016-11-08 19:29:56Z linimon $
+# $FreeBSD: head/net/hping-devel/Makefile 452517 2017-10-20 12:25:51Z gahr $
 
 PORTNAME=	hping
 PORTVERSION=	3.0.20051105
@@ -11,6 +11,9 @@ DISTNAME=	hping3-20051105
 
 MAINTAINER=	ecu@200ok.org
 COMMENT=	Network auditing tool
+
+DEPRECATED=		Tcl/Tk 8.4 is no longer maintained, please use 8.5+
+EXPIRATION_DATE=	2017-11-20
 
 LIB_DEPENDS=	libtcl84.so:lang/tcl84
 

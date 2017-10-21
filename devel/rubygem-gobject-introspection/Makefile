@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-gobject-introspection/Makefile 445936 2017-07-15 19:09:46Z sunpoet $
+# $FreeBSD: head/devel/rubygem-gobject-introspection/Makefile 452433 2017-10-19 17:20:38Z sunpoet $
 
 PORTNAME=	gobject-introspection
-PORTVERSION=	3.1.8
+PORTVERSION=	3.1.9
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

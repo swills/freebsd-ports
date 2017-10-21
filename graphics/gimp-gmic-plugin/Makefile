@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/gimp-gmic-plugin/Makefile 450852 2017-09-28 15:36:31Z kwm $
+# $FreeBSD: head/graphics/gimp-gmic-plugin/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	gmic
 PORTVERSION=	1.6.9
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	graphics
 MASTER_SITES=	http://gmic.eu/files/source/
 PKGNAMEPREFIX=	gimp-

@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/rubygem-grpc/Makefile 445432 2017-07-10 12:08:24Z tz $
+# $FreeBSD: head/net/rubygem-grpc/Makefile 452474 2017-10-19 20:35:55Z sunpoet $
 
 PORTNAME=	grpc
 PORTVERSION=	1.4.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

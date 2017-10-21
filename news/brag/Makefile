@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/news/brag/Makefile 423379 2016-10-05 19:40:06Z ehaupt $
+# $FreeBSD: head/news/brag/Makefile 452517 2017-10-20 12:25:51Z gahr $
 
 PORTNAME=	brag
 PORTVERSION=	1.4.3
@@ -8,6 +8,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Download and assemble multipart binaries from newsgroups
+
+DEPRECATED=		Tcl/Tk 8.4 is no longer maintained, please use 8.5+
+EXPIRATION_DATE=	2017-11-20
 
 LICENSE=	GPLv2
 

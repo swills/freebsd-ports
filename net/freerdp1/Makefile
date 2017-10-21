@@ -1,9 +1,9 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/net/freerdp1/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/net/freerdp1/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	freerdp
 PORTVERSION=	1.2.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	net comms ipv6
 PKGNAMESUFFIX=	1
 

@@ -1,5 +1,5 @@
 # Created by: Nik Clayton <nik@FreeBSD.org>
-# $FreeBSD: head/games/linux-rtcw/Makefile 425274 2016-11-03 21:47:46Z tijl $
+# $FreeBSD: head/games/linux-rtcw/Makefile 452579 2017-10-21 09:12:24Z tobik $
 
 PORTNAME=	rtcw
 DISTVERSION=	1.41b
@@ -12,6 +12,9 @@ EXTRACT_SUFX=	.run
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Return to Castle Wolfenstein (Linux version)
+
+DEPRECATED=	Use the native and open source games/iortcw instead
+EXPIRATION_DATE=	2017-11-30
 
 USES=		linux makeself
 USE_LINUX=	dri xorglibs

@@ -1,9 +1,9 @@
 # Created by: Dierk Sacher <dierk@blaxxtarz.de>
-# $FreeBSD: head/multimedia/ffmpegthumbnailer/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/multimedia/ffmpegthumbnailer/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	ffmpegthumbnailer
 PORTVERSION=	2.2.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	multimedia graphics
 
 MAINTAINER=	clutton@zoho.com

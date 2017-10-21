@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-github-linguist/Makefile 452234 2017-10-16 17:47:37Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-github-linguist/Makefile 452487 2017-10-19 20:37:02Z sunpoet $
 
 PORTNAME=	github-linguist
-PORTVERSION=	5.3.0
+PORTVERSION=	5.3.1
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

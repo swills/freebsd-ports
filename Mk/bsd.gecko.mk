@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 450901 2017-09-29 15:18:18Z jbeich $
+# $FreeBSD: head/Mk/bsd.gecko.mk 452500 2017-10-20 05:27:19Z jbeich $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -386,7 +386,7 @@ post-patch-SNDIO-on:
 .endif
 
 .if ${PORT_OPTIONS:MRUST} || ${MOZILLA_VER:R:R} >= 54
-BUILD_DEPENDS+=	rust>=1.19.0_2:${RUST_PORT}
+BUILD_DEPENDS+=	${RUST_PORT:T}>=1.19.0_2:${RUST_PORT}
 RUST_PORT?=		lang/rust
 . if ${MOZILLA_VER:R:R} < 54
 MOZ_OPTIONS+=	--enable-rust

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Email-Address-XS/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-Email-Address-XS/Makefile 452470 2017-10-19 20:35:36Z sunpoet $
 
 PORTNAME=	Email-Address-XS
-PORTVERSION=	1.00
+PORTVERSION=	1.01
 CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

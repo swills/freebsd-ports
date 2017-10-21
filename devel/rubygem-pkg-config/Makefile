@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-pkg-config/Makefile 448057 2017-08-16 15:46:14Z sunpoet $
+# $FreeBSD: head/devel/rubygem-pkg-config/Makefile 452555 2017-10-20 20:44:42Z sunpoet $
 
 PORTNAME=	pkg-config
-PORTVERSION=	1.2.7
+PORTVERSION=	1.2.8
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

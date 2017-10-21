@@ -1,9 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/graphics/wxsvg/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/wxsvg/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	wxsvg
 PORTVERSION=	1.5.12
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 

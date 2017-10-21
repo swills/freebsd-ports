@@ -1,8 +1,9 @@
-# $FreeBSD: head/audio/cantata/Makefile 451056 2017-10-01 18:49:13Z adridg $
+# $FreeBSD: head/audio/cantata/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=		cantata
 DISTVERSION=		2.2.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=		1
 CATEGORIES=		audio kde
 
 MAINTAINER=		kde@FreeBSD.org

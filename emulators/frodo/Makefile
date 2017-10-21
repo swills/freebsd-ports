@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/frodo/Makefile 433712 2017-02-09 08:12:10Z dinoex $
+# $FreeBSD: head/emulators/frodo/Makefile 452517 2017-10-20 12:25:51Z gahr $
 
 PORTNAME=	frodo
 PORTVERSION=	4.1b
@@ -9,6 +9,9 @@ DISTNAME=	FrodoV4_1b.Src
 
 MAINTAINER=	dinoex@FreeBSD.org
 COMMENT=	Emulates a Commodore 64
+
+DEPRECATED=		Tcl/Tk 8.4 is no longer maintained, please use 8.5+
+EXPIRATION_DATE=	2017-11-20
 
 RUN_DEPENDS=	wish8.4:x11-toolkits/tk84
 

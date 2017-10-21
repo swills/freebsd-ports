@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 452064 2017-10-14 13:15:15Z dbaio $
+# $FreeBSD: head/dns/Makefile 452469 2017-10-19 20:35:31Z sunpoet $
 #
 
     COMMENT = Domain Name Service tools
@@ -136,6 +136,7 @@
     SUBDIR += p5-Net-DNS-Lite
     SUBDIR += p5-Net-DNS-Match
     SUBDIR += p5-Net-DNS-RR-SRV-Helper
+    SUBDIR += p5-Net-DNS-Resolver-Mock
     SUBDIR += p5-Net-DNS-Resolver-Programmable
     SUBDIR += p5-Net-DNS-SEC
     SUBDIR += p5-Net-DNS-TestNS

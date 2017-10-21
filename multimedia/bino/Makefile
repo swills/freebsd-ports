@@ -1,9 +1,9 @@
 # Created by: Mykola Dzham <i@levsha.me>
-# $FreeBSD: head/multimedia/bino/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/multimedia/bino/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	bino
 PORTVERSION=	1.4.2
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	multimedia
 MASTER_SITES=	http://download.savannah.nongnu.org/releases/bino/ http://levsha.me/ports/distfiles/
 

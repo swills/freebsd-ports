@@ -1,12 +1,12 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/graphics/pecl-imlib2/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/graphics/pecl-imlib2/Makefile 452510 2017-10-20 10:26:41Z joneum $
 
 PORTNAME=	imlib2
 PORTVERSION=	0.1.00
 PORTREVISION=	7
 CATEGORIES=	graphics
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PECL extension if imlib2
 
 LICENSE=	PHP202

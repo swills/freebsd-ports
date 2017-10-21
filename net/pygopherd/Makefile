@@ -1,13 +1,10 @@
 # Created by: ijliao
-# $FreeBSD: head/net/pygopherd/Makefile 424797 2016-10-28 00:03:30Z cpm $
+# $FreeBSD: head/net/pygopherd/Makefile 452536 2017-10-20 15:23:21Z swills $
 
 PORTNAME=	pygopherd
-PORTVERSION=	2.0.16
-PORTREVISION=	3
+PORTVERSION=	2.0.18.4
 CATEGORIES=	net python
-MASTER_SITES=	http://gopher.quux.org:70/devel/gopher/Downloads/pygopherd/ \
-		http://gopher.quux.org:70/devel/gopher/Downloads/pygopherd/old/
-DISTNAME=	${PORTNAME}_${PORTVERSION}
+DISTVERSIONPREFIX=	debian/
 
 MAINTAINER=	neel@neelc.org
 COMMENT=	Multiprotocol Information Server
@@ -17,7 +14,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		python
 USE_PYTHON=	distutils
-WRKSRC=		${WRKDIR}/${PORTNAME}
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	jgoerzen
 
 NO_ARCH=	yes
 

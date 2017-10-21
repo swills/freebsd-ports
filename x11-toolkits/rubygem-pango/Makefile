@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-toolkits/rubygem-pango/Makefile 445937 2017-07-15 19:09:51Z sunpoet $
+# $FreeBSD: head/x11-toolkits/rubygem-pango/Makefile 452434 2017-10-19 17:20:43Z sunpoet $
 
 PORTNAME=	pango
-PORTVERSION=	3.1.8
+PORTVERSION=	3.1.9
 CATEGORIES=	x11-toolkits rubygems
 MASTER_SITES=	RG
 

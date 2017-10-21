@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich
-# $FreeBSD: head/security/py-pyaxo/Makefile 449667 2017-09-11 21:13:54Z ultima $
+# $FreeBSD: head/security/py-pyaxo/Makefile 452528 2017-10-20 14:27:44Z swills $
 
 PORTNAME=	pyaxo
-PORTVERSION=	0.7.7
+PORTVERSION=	0.8.2
 CATEGORIES=	security net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,9 +15,16 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}passlib>=1.6.1:security/py-passlib \
 		${PYTHON_PKGNAMEPREFIX}pynacl>=1.0.1:security/py-pynacl
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
 
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
+
+post-patch:
+	@${REINPLACE_CMD} -e "/'pytest-runner',/d" ${WRKSRC}/setup.py
+
+do-test:
+	@(cd ${WRKSRC} && ${PYTHON_CMD} -m pytest)
 
 .include <bsd.port.mk>

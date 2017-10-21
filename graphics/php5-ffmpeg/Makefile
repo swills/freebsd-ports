@@ -1,10 +1,10 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/graphics/php5-ffmpeg/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/graphics/php5-ffmpeg/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	ffmpeg
 PORTVERSION=	0.6.0.20120114
 DISTVERSIONPREFIX=	php-
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics
 MASTER_SITES=	LOCAL/sunpoet
 PKGNAMEPREFIX=	php5-

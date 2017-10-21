@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/rubygem-googleauth/Makefile 452368 2017-10-18 17:22:58Z sunpoet $
+# $FreeBSD: head/security/rubygem-googleauth/Makefile 452473 2017-10-19 20:35:50Z sunpoet $
 
 PORTNAME=	googleauth
-PORTVERSION=	0.6.0
+PORTVERSION=	0.6.1
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

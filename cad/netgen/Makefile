@@ -1,9 +1,9 @@
 # Created by: Thierry Thomas <thierry@FreeBSD.org>
-# $FreeBSD: head/cad/netgen/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/cad/netgen/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	netgen
 PORTVERSION=	5.3.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	cad
 MASTER_SITES=	SF/netgen-mesher/netgen-mesher/${PORTVERSION:C|\.[[:digit:]]+$||}/
 

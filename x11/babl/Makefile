@@ -1,8 +1,8 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/x11/babl/Makefile 442363 2017-06-02 08:52:58Z kwm $
+# $FreeBSD: head/x11/babl/Makefile 452548 2017-10-20 18:18:06Z kwm $
 
 PORTNAME=	babl
-PORTVERSION=	0.1.28
+PORTVERSION=	0.1.30
 CATEGORIES=	x11
 MASTER_SITES=	GIMP
 

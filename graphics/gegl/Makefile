@@ -1,9 +1,9 @@
 # Created by: Pietro Cerutti <gahr@FreeBSD.org>
-# $FreeBSD: head/graphics/gegl/Makefile 440976 2017-05-15 21:43:29Z kwm $
+# $FreeBSD: head/graphics/gegl/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	gegl
 PORTVERSION=	0.2.0
-PORTREVISION=	19
+PORTREVISION=	20
 CATEGORIES=	graphics
 MASTER_SITES=	GIMP
 

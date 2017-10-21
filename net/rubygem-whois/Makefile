@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/net/rubygem-whois/Makefile 446926 2017-07-30 13:13:15Z sunpoet $
+# $FreeBSD: head/net/rubygem-whois/Makefile 452484 2017-10-19 20:36:47Z sunpoet $
 
 PORTNAME=	whois
-PORTVERSION=	4.0.4
+PORTVERSION=	4.0.5
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

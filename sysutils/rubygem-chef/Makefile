@@ -1,9 +1,9 @@
 # Created by: Renaud Chaput <renchap@cocoa-x.com>
-# $FreeBSD: head/sysutils/rubygem-chef/Makefile 447513 2017-08-07 18:52:09Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-chef/Makefile 452573 2017-10-21 07:50:44Z ngie $
 
 PORTNAME=	chef
 PORTVERSION=	13.2.20
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	RG
 
@@ -57,5 +57,6 @@ SHEBANG_LANG=	ksh
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/distro/common/man/man1/*.1 ${STAGEDIR}${MANPREFIX}/man/man1/
 	${INSTALL_MAN} ${WRKSRC}/distro/common/man/man8/*.8 ${STAGEDIR}${MANPREFIX}/man/man8/
+	${MKDIR} ${STAGEDIR}/var/chef
 
 .include <bsd.port.mk>

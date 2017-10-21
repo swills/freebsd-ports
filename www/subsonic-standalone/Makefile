@@ -1,10 +1,10 @@
 # Created by: Jeremie Le Hen <jlh@FreeBSD.org>
 # Based on www/subsonic from Nicole Reid <root@cooltrainer.org>
-# $FreeBSD: head/www/subsonic-standalone/Makefile 446695 2017-07-26 20:18:20Z jlh $
+# $FreeBSD: head/www/subsonic-standalone/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	subsonic-standalone
 PORTVERSION=	6.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	www java
 MASTER_SITES=	SF/subsonic/subsonic/${PORTVERSION}
 DISTNAME=	subsonic-${PORTVERSION}-standalone

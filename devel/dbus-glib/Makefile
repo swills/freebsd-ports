@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/devel/dbus-glib/Makefile 437504 2017-04-01 22:54:32Z bapt $
+# $FreeBSD: head/devel/dbus-glib/Makefile 452568 2017-10-21 04:13:07Z pi $
 
 PORTNAME=	dbus-glib
 PORTVERSION=	0.108
@@ -8,6 +8,9 @@ MASTER_SITES=	http://dbus.freedesktop.org/releases/dbus-glib/
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	GLib bindings for the D-BUS messaging system
+
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libdbus-1.so:devel/dbus
 

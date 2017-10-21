@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-rspec-rails/Makefile 452366 2017-10-18 17:22:48Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rspec-rails/Makefile 452471 2017-10-19 20:35:41Z sunpoet $
 
 PORTNAME=	rspec-rails
-PORTVERSION=	3.7.0
+PORTVERSION=	3.7.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

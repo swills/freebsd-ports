@@ -10,6 +10,13 @@ in the release notes and/or placed into UPDATING.
 
 All ports committers are allowed to commit to this file.
 
+20171020:
+AUTHOR: ak@FreeBSD.org
+
+  The USES=fmake has been removed. It was created to help migration from
+  old FreeBSD make (pmake) and there are no more users of it left in
+  the ports tree.
+
 20171012:
 AUTHOR: mat@FreeBSD.org
 
@@ -3374,4 +3381,4 @@ POSSIBILITY OF SUCH DAMAGE.
 Contact portmgr@FreeBSD.org if you have any questions about your use of
 this document.
 
-$FreeBSD: head/CHANGES 451901 2017-10-12 15:57:51Z mat $
+$FreeBSD: head/CHANGES 452546 2017-10-20 17:23:47Z ak $

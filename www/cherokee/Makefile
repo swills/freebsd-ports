@@ -1,10 +1,10 @@
 # Created by: silence <oksala@videotron.ca>
-# $FreeBSD: head/www/cherokee/Makefile 441494 2017-05-22 22:29:17Z linimon $
+# $FreeBSD: head/www/cherokee/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	cherokee
 PORTVERSION=	1.2.104
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www
 
 MAINTAINER=	ports@FreeBSD.org

@@ -1,9 +1,9 @@
 # Created by: Dave Grochowski <malus.x@gmail.com>
-# $FreeBSD: head/devel/libdlna/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/devel/libdlna/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	libdlna
 PORTVERSION=	0.2.3
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	devel
 MASTER_SITES=	http://libdlna.geexbox.org/releases/ \
 		LOCAL/ehaupt

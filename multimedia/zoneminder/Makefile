@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/zoneminder/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/multimedia/zoneminder/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	zoneminder
 PORTVERSION=	1.30.4
+PORTREVISION=	1
 CATEGORIES=	multimedia
 
 MAINTAINER=	bsd@abinet.ru

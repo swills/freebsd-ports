@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-rubocop/Makefile 449878 2017-09-15 05:51:29Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rubocop/Makefile 452556 2017-10-20 20:44:47Z sunpoet $
 
 PORTNAME=	rubocop
-PORTVERSION=	0.50.0
+PORTVERSION=	0.51.0
 CATEGORIES=	devel ruby
 MASTER_SITES=	RG
 

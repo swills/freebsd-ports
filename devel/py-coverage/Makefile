@@ -1,8 +1,8 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/devel/py-coverage/Makefile 434267 2017-02-17 03:42:24Z lwhsu $
+# $FreeBSD: head/devel/py-coverage/Makefile 452498 2017-10-20 03:49:22Z lwhsu $
 
 PORTNAME=	coverage
-PORTVERSION=	4.3.4
+PORTVERSION=	4.4.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

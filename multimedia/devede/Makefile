@@ -1,10 +1,10 @@
 # Created by: Lars Engels <lars.engels@0x20.net>
-# $FreeBSD: head/multimedia/devede/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/devede/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	devede
 PORTVERSION=	3.23.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	multimedia
 
 MAINTAINER=	ports@FreeBSD.org

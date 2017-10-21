@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-toolkits/rubygem-poppler/Makefile 448669 2017-08-24 13:45:13Z swills $
+# $FreeBSD: head/x11-toolkits/rubygem-poppler/Makefile 452441 2017-10-19 17:21:19Z sunpoet $
 
 PORTNAME=	poppler
-PORTVERSION=	3.1.8
-PORTREVISION=	1
+PORTVERSION=	3.1.9
 CATEGORIES=	x11-toolkits rubygems
 MASTER_SITES=	RG
 
@@ -11,6 +10,7 @@ COMMENT=	Ruby binding for Poppler
 
 LICENSE=	LGPL21+
 
+BUILD_DEPENDS=	rubygem-rake>=0:devel/rubygem-rake
 LIB_DEPENDS=	libpoppler-glib.so:graphics/poppler-glib
 RUN_DEPENDS=	rubygem-cairo>=1.14.0:graphics/rubygem-cairo \
 		rubygem-gdk_pixbuf2>=${PORTVERSION}:graphics/rubygem-gdk_pixbuf2

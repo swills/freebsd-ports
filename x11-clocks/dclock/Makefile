@@ -1,12 +1,12 @@
 # Created by: David Leonard <leonard@dstc.edu.au>
-# $FreeBSD: head/x11-clocks/dclock/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-clocks/dclock/Makefile 452530 2017-10-20 14:50:02Z romain $
 
 PORTNAME=	dclock
 PORTVERSION=	2.2.2
 CATEGORIES=	x11-clocks
 MASTER_SITES=	http://opencircuitdesign.com/~tim/programs/dclock/archive/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	romain@FreeBSD.org
 COMMENT=	7-segment digital clock with some optional features
 
 USE_XORG=	x11 xt

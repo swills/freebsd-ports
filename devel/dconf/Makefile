@@ -1,9 +1,8 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/devel/dconf/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/dconf/Makefile 452544 2017-10-20 17:13:00Z kwm $
 
 PORTNAME=	dconf
-PORTVERSION=	0.24.0
-PORTREVISION=	1
+PORTVERSION=	0.26.1
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 DISTNAME=	dconf-${PORTVERSION}
@@ -12,18 +11,19 @@ DIST_SUBDIR=	gnome3
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Configuration database system for GNOME
 
+LICENSE=	LGPL21
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 BUILD_DEPENDS=	vala>=0.18.1:lang/vala \
 		docbook-xsl>=0:textproc/docbook-xsl
 LIB_DEPENDS=	libdbus-1.so:devel/dbus
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake pathfix pkgconfig tar:xz
-USE_GNOME=	glib20
+USES=		gettext gmake gnome localbase pathfix pkgconfig tar:xz
+USE_GNOME=	glib20 libxslt:build
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/etc/|${PREFIX}/etc/|g' \

@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/textproc/srilm/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/textproc/srilm/Makefile 452517 2017-10-20 12:25:51Z gahr $
 
 PORTNAME=	srilm
 PORTVERSION=	1.5.12
@@ -10,6 +10,9 @@ EXTRACT_SUFX?=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Toolkit for building and applying statistical language models
+
+DEPRECATED=		Tcl/Tk 8.4 is no longer maintained, please use 8.5+
+EXPIRATION_DATE=	2017-11-20
 
 LIB_DEPENDS=	libtcl84.so:lang/tcl84
 

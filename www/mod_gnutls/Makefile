@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/mod_gnutls/Makefile 448644 2017-08-24 01:39:16Z jkim $
+# $FreeBSD: head/www/mod_gnutls/Makefile 452589 2017-10-21 12:43:23Z pi $
 
 PORTNAME=	mod_gnutls
-PORTVERSION=	0.8.2
+PORTVERSION=	0.8.3
 CATEGORIES=	www security
 MASTER_SITES=	https://mod.gnutls.org/downloads/
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}

@@ -1,8 +1,8 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/databases/dbh/Makefile 396214 2015-09-06 13:15:53Z danfe $
+# $FreeBSD: head/databases/dbh/Makefile 452521 2017-10-20 13:59:47Z culot $
 
 PORTNAME=	dbh
-PORTVERSION=	5.0.19
+PORTVERSION=	5.0.22
 CATEGORIES=	databases
 MASTER_SITES=	SF
 DISTNAME=	libdbh2-${PORTVERSION}

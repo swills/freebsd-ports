@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/vapoursynth-l-smash-works/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/vapoursynth-l-smash-works/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	l-smash-works
 DISTVERSION=	0.0-929 # git rev-list --count HEAD
 DISTVERSIONSUFFIX=	-gfba174b
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia
 PKGNAMEPREFIX=	vapoursynth-
 

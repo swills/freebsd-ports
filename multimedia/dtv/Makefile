@@ -1,5 +1,5 @@
 # Created by: dillon
-# $FreeBSD: head/multimedia/dtv/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/dtv/Makefile 452517 2017-10-20 12:25:51Z gahr $
 
 PORTNAME=	dtv
 PORTVERSION=	0.50
@@ -9,6 +9,9 @@ MASTER_SITES=	http://apollo.backplane.com/FreeBSDPorts/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Client/server based TV capture/display program
+
+DEPRECATED=		Tcl/Tk 8.4 is no longer maintained, please use 8.5+
+EXPIRATION_DATE=	2017-11-20
 
 LICENSE=	BSD4CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT

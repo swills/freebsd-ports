@@ -1,9 +1,9 @@
 # Created by: Hendrik Scholz <hendrik@scholz.net>
-# $FreeBSD: head/multimedia/transcode/Makefile 451901 2017-10-12 15:57:51Z mat $
+# $FreeBSD: head/multimedia/transcode/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	transcode
 PORTVERSION=	1.1.7
-PORTREVISION=	29
+PORTREVISION=	30
 CATEGORIES=	multimedia
 MASTER_SITES=	https://bitbucket.org/france/transcode-tcforge/downloads/
 

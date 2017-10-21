@@ -1,8 +1,9 @@
 # Created by: Michael Grünewald <michipili@gmail.com>
-# $FreeBSD: head/x11-toolkits/ocaml-labltk/Makefile 385412 2015-05-04 15:39:41Z madpilot $
+# $FreeBSD: head/x11-toolkits/ocaml-labltk/Makefile 452514 2017-10-20 11:17:56Z gahr $
 
 PORTNAME=	labltk
 PORTVERSION=	8.06.0
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://forge.ocamlcore.org/frs/download.php/1455/
 PKGNAMEPREFIX=	ocaml-
@@ -12,7 +13,7 @@ COMMENT=	Objective Caml interface to Tk
 
 LICENSE=	LGPL20
 
-USES=		gmake tk:84,85
+USES=		gmake tk:85
 HAS_CONFIGURE=	yes
 MAKE_JOBS_UNSAFE=yes
 MAKE_ENV+=	STAGEDIR="${STAGEDIR}"

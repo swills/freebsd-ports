@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 449196 2017-09-03 10:33:56Z rene $
+# $FreeBSD: head/lang/Makefile 452563 2017-10-20 21:33:20Z gerald $
 #
 
     COMMENT = Programming languages
@@ -85,7 +85,6 @@
     SUBDIR += fpc-rtl-extra
     SUBDIR += fpc-rtl-objpas
     SUBDIR += fpc-rtl-unicode
-    SUBDIR += fpc-tcl
     SUBDIR += fpc-units
     SUBDIR += fpc-utils
     SUBDIR += fsharp
@@ -100,7 +99,6 @@
     SUBDIR += gcc49
     SUBDIR += gcc5
     SUBDIR += gcc5-aux
-    SUBDIR += gcc5-devel
     SUBDIR += gcc6
     SUBDIR += gcc6-aux
     SUBDIR += gcc6-devel

@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/mlt/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/multimedia/mlt/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	mlt
 PORTVERSION=	6.4.1
-PORTREVISION?=	4
+PORTREVISION?=	5
 CATEGORIES?=	multimedia
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}
 

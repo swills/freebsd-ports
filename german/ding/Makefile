@@ -1,5 +1,5 @@
 # Created by: n@nectar.com
-# $FreeBSD: head/german/ding/Makefile 425836 2016-11-10 09:03:10Z beat $
+# $FreeBSD: head/german/ding/Makefile 452517 2017-10-20 12:25:51Z gahr $
 
 PORTNAME=	ding
 PORTVERSION=	1.8.1
@@ -9,6 +9,9 @@ MASTER_SITES=	ftp://ftp.tu-chemnitz.de/pub/Local/urz/ding/ \
 
 MAINTAINER=	beat@FreeBSD.org
 COMMENT=	German-English dictionary program for X windows/Unix
+
+DEPRECATED=		Tcl/Tk 8.4 is no longer maintained, please use 8.5+
+EXPIRATION_DATE=	2017-11-20
 
 LICENSE=	GPLv2
 

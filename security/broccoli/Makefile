@@ -1,11 +1,11 @@
 # Created by: Craig Leres <leres@FreeBSD.org>
-# $FreeBSD: head/security/broccoli/Makefile 449916 2017-09-15 18:18:26Z leres $
+# $FreeBSD: head/security/broccoli/Makefile 452566 2017-10-21 00:45:50Z leres $
 
 PORTNAME=	broccoli
 PORTVERSION=	1.97
 PORTEPOCH=	1
 CATEGORIES=	security
-MASTER_SITES=	http://www.bro.org/downloads/release/
+MASTER_SITES=	https://www.bro.org/downloads/release/
 DISTNAME=	bro-2.4.1
 
 MAINTAINER=	leres@FreeBSD.org

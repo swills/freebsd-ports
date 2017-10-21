@@ -1,9 +1,9 @@
 # Created by: dchapes@ddm.on.ca
-# $FreeBSD: head/emulators/vice/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/emulators/vice/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	vice
 PORTVERSION=	3.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.zimmers.net/anonftp/pub/cbm/crossplatform/emulators/VICE/ \
 		ftp://ftp.zimmers.net/pub/cbm/crossplatform/emulators/VICE/

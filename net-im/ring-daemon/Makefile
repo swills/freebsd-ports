@@ -1,10 +1,10 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net-im/ring-daemon/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net-im/ring-daemon/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	ring-daemon
 PORTVERSION=	0.160516
 DISTVERSIONPREFIX=	v
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net-im net-p2p
 
 MAINTAINER=	yuri@rawbw.com

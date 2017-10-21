@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/zoneminder-h264/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/multimedia/zoneminder-h264/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	zoneminder-h264
 PORTVERSION=	1.30.20170222
+PORTREVISION=	1
 CATEGORIES=	multimedia
 
 MAINTAINER=	bsd@abinet.ru

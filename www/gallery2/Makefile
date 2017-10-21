@@ -1,9 +1,9 @@
 # Created by: Alex Varju <freebsd-ports@varju.ca>
-# $FreeBSD: head/www/gallery2/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/gallery2/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	gallery2
 PORTVERSION=	2.3.2
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	www
 MASTER_SITES=	SF/gallery/${PORTNAME}/${PORTVERSION}
 DISTNAME=	gallery-${PORTVERSION}-full

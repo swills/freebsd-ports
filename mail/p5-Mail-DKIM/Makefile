@@ -1,8 +1,8 @@
 # Created by: Yoshisato YANAGISAWA
-# $FreeBSD: head/mail/p5-Mail-DKIM/Makefile 450283 2017-09-21 17:21:07Z sunpoet $
+# $FreeBSD: head/mail/p5-Mail-DKIM/Makefile 452477 2017-10-19 20:36:10Z sunpoet $
 
 PORTNAME=	Mail-DKIM
-PORTVERSION=	0.43
+PORTVERSION=	0.44
 CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN \
 		http://jason.long.name/dkimproxy/
@@ -16,7 +16,9 @@ LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Crypt-OpenSSL-RSA>=0:security/p5-Crypt-OpenSSL-RSA \
 		p5-Mail-Tools>=0:mail/p5-Mail-Tools \
-		p5-Net-DNS>=0:dns/p5-Net-DNS
+		p5-Net-DNS>=0:dns/p5-Net-DNS \
+		p5-Net-DNS-Resolver-Mock>=0:dns/p5-Net-DNS-Resolver-Mock \
+		p5-YAML-LibYAML>=0:textproc/p5-YAML-LibYAML
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes

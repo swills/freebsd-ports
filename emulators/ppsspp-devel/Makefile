@@ -1,8 +1,8 @@
-# $FreeBSD: head/emulators/ppsspp-devel/Makefile 452123 2017-10-15 01:17:34Z jbeich $
+# $FreeBSD: head/emulators/ppsspp-devel/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 DISTVERSION=	1.4.2-473
 DISTVERSIONSUFFIX=	-gbb1f65118
-PORTREVISION?=	0
+PORTREVISION?=	1
 PKGNAMESUFFIX?=	-devel
 
 GH_TUPLE=	hrydgard:glslang:136b1e2d:glslang/ext/glslang \

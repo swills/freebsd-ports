@@ -1,17 +1,17 @@
 #!/bin/sh
 #
-# $FreeBSD: head/net/frr/files/watchfrr.in 444689 2017-06-29 21:05:33Z olivier $
+# $FreeBSD: head/net/frr/files/watchfrr.in 452541 2017-10-20 16:25:06Z olivier $
 #
 
 # PROVIDE: watchfrr
 # REQUIRE: NETWORKING frr
-# KEYWORD: shutdown
+# KEYWORD: nojailvtnet shutdown
 
 # Add the following line to /etc/rc.conf to enable watchfrr:
 # watchfrr_enable="YES"
 #
 # You may also wish to use the following variables to fine-tune startup:
-# watchquagga_flags
+# watchfrr_flags
 
 . /etc/rc.subr
 

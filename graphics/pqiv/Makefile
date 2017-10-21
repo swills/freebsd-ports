@@ -1,8 +1,9 @@
 # Created by: Martin Tournoij <carpetsmoker@xs4all.nl>
-# $FreeBSD: head/graphics/pqiv/Makefile 440387 2017-05-07 21:34:07Z danilo $
+# $FreeBSD: head/graphics/pqiv/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	pqiv
 PORTVERSION=	2.8.5
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	danilo@FreeBSD.org

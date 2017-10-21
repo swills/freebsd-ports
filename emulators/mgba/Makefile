@@ -1,7 +1,8 @@
-# $FreeBSD: head/emulators/mgba/Makefile 451322 2017-10-05 16:35:17Z tobik $
+# $FreeBSD: head/emulators/mgba/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	mgba
 DISTVERSION=	0.6.1
+PORTREVISION=	1
 CATEGORIES=	emulators
 
 MAINTAINER=	greg@unrelenting.technology

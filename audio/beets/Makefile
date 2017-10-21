@@ -1,8 +1,9 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/audio/beets/Makefile 429029 2016-12-20 19:29:29Z olivierd $
+# $FreeBSD: head/audio/beets/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	beets
 PORTVERSION=	1.4.2
+PORTREVISION=	1
 CATEGORIES=	audio python
 MASTER_SITES=	CHEESESHOP
 

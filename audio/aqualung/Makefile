@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/audio/aqualung/Makefile 446284 2017-07-20 18:08:55Z tobik $
+# $FreeBSD: head/audio/aqualung/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	aqualung
 PORTVERSION=	1.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	audio
 MASTER_SITES=	SF
 

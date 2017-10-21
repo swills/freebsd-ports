@@ -1,8 +1,8 @@
 # Created by: Stefan Esser <se@FreeBSD.org>
-# $FreeBSD: head/dns/gen6dns/Makefile 414763 2016-05-07 08:28:08Z se $
+# $FreeBSD: head/dns/gen6dns/Makefile 452587 2017-10-21 11:44:23Z se $
 
 PORTNAME=	gen6dns
-PORTVERSION=	1.2
+PORTVERSION=	1.3
 CATEGORIES=	dns
 MASTER_SITES=	http://www.hznet.de/tools/
 

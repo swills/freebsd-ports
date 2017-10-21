@@ -1,5 +1,5 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/devel/automake/Makefile 444259 2017-06-25 10:50:19Z tijl $
+# $FreeBSD: head/devel/automake/Makefile 452574 2017-10-21 08:09:07Z pi $
 
 PORTNAME=	automake
 PORTVERSION=	1.15.1
@@ -8,6 +8,11 @@ MASTER_SITES=	GNU
 
 MAINTAINER=	tijl@FreeBSD.org
 COMMENT=	GNU Standards-compliant Makefile generator
+
+LICENSE=	GPLv2+ GFDL
+LICENSE_COMB=	multi
+LICENSE_FILE_GPLv2+ =	${WRKSRC}/COPYING
+LICENSE_FILE_GFDL=	${WRKSRC}/doc/fdl.texi
 
 BUILD_DEPENDS=	autoconf-2.69:devel/autoconf
 RUN_DEPENDS=	autoconf-2.69:devel/autoconf \

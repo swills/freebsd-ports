@@ -1,8 +1,8 @@
 # Created by: Jochen Neumeister (<joneum@bsdproject.de>)
-# $FreeBSD: head/devel/phpunit6/Makefile 450789 2017-09-27 21:15:49Z joneum $
+# $FreeBSD: head/devel/phpunit6/Makefile 452464 2017-10-19 19:16:21Z joneum $
 
 PORTNAME=	phpunit
-PORTVERSION=	6.3.1
+PORTVERSION=	6.4.3
 CATEGORIES=	devel www
 MASTER_SITES=	https://phar.phpunit.de/
 PKGNAMESUFFIX=	6

@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/obs-studio/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/multimedia/obs-studio/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	obs-studio
 PORTVERSION=	20.0.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia
 
 MAINTAINER=	ports@FreeBSD.org

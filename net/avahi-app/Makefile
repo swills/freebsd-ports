@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/net/avahi-app/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/net/avahi-app/Makefile 452569 2017-10-21 04:48:49Z pi $
 
 PORTNAME=	avahi
 PORTVERSION=	0.6.31
@@ -10,6 +10,9 @@ PKGNAMESUFFIX?=	-app
 
 MAINTAINER?=	gnome@FreeBSD.org
 COMMENT?=	Service discovery on a local network
+
+LICENSE=	LGPL21+
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 AVAHI_SLAVE?=	no
 

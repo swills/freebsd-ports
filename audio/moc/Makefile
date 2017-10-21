@@ -1,8 +1,9 @@
 # Created by: Revis Zinkov <rzinkov@gmail.com>
-# $FreeBSD: head/audio/moc/Makefile 429419 2016-12-25 13:16:00Z amdmi3 $
+# $FreeBSD: head/audio/moc/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	moc
 PORTVERSION=	2.5.2
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://ftp.daper.net/pub/soft/moc/stable/
 

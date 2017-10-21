@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/subsonic/Makefile 446694 2017-07-26 20:13:14Z jlh $
+# $FreeBSD: head/www/subsonic/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	subsonic
 PORTVERSION=	6.0
+PORTREVISION=	1
 CATEGORIES=	www java
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}-${PORTVERSION}-war

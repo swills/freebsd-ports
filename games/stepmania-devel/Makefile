@@ -1,10 +1,10 @@
 # Created by: Brad Allen <braddo@tranceaddict.net>
-# $FreeBSD: head/games/stepmania-devel/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/stepmania-devel/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	stepmania
 PORTVERSION=	5.0.11
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	games
 PKGNAMESUFFIX=	-devel

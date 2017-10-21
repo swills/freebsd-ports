@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/games/tksol/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/tksol/Makefile 452517 2017-10-20 12:25:51Z gahr $
 
 PORTNAME=	tksol
 PORTVERSION=	1.8.4
@@ -9,6 +9,9 @@ MASTER_SITES=	SUNSITE/games/solitaires
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Version of the card game solitaire
+
+DEPRECATED=		Tcl/Tk 8.4 is no longer maintained, please use 8.5+
+EXPIRATION_DATE=	2017-11-20
 
 LICENSE=	GPLv2
 

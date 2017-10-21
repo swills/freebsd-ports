@@ -1,5 +1,5 @@
 # Created by: Gabor Kovesdan
-# $FreeBSD: head/dns/dualserver/Makefile 393033 2015-07-27 20:32:37Z rodrigo $
+# $FreeBSD: head/dns/dualserver/Makefile 452565 2017-10-20 22:22:01Z rodrigo $
 
 PORTNAME=	dualserver
 PORTVERSION=	6.94
@@ -13,6 +13,9 @@ MAINTAINER=	rodrigo@FreeBSD.org
 COMMENT=	Combined DHCP/DNS server for small LANs
 
 LICENSE=	GPLv2
+
+DEPRECATED=	Please migrate to dns/dnsmasq. Over the years dualserver becomes unmaintenaible.
+EXPIRATION_DATE=	2018-01-01
 
 USES=		dos2unix
 USE_RC_SUBR=	dualserver

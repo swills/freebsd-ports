@@ -1,8 +1,9 @@
 # Created by: Mikhail Teterin <mi@aldan.algebra.com>
-# $FreeBSD: head/net/serviio/Makefile 446566 2017-07-25 09:47:33Z netchild $
+# $FreeBSD: head/net/serviio/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	serviio
 PORTVERSION=	1.9
+PORTREVISION=	1
 CATEGORIES=	net multimedia java www
 MASTER_SITES=	http://download.serviio.org/releases/
 EXTRACT_SUFX=	-linux.tar.gz

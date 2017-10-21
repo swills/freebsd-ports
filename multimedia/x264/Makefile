@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/multimedia/x264/Makefile 445840 2017-07-14 23:58:25Z jbeich $
+# $FreeBSD: head/multimedia/x264/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 #
 # NOTES FOR UPDATING PORT:
 #
@@ -19,7 +19,7 @@
 
 PORTNAME=	x264
 PORTVERSION=	0.${X264_BUILD}.${X264_REV}
-PORTREVISION?=	1 # 0 in libx264
+PORTREVISION?=	2 # 0 in libx264
 CATEGORIES=	multimedia
 MASTER_SITES=	ftp://ftp.videolan.org/pub/videolan/x264/snapshots/ \
 		http://samples.mplayerhq.hu/yuv4mpeg2/:pgo

@@ -1,9 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/schismtracker/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/audio/schismtracker/Makefile 452506 2017-10-20 07:38:37Z ehaupt $
 
 PORTNAME=	schismtracker
-PORTVERSION=	20170420
-PORTREVISION=	1
+PORTVERSION=	20170910
 CATEGORIES=	audio
 
 MAINTAINER=	ehaupt@FreeBSD.org
@@ -11,7 +10,7 @@ COMMENT=	Module tracker editor/player resembling impulse tracker
 
 LICENSE=	GPLv2
 
-ONLY_FOR_ARCHS=	i386 amd64
+ONLY_FOR_ARCHS=	amd64 i386
 
 USES=		autoreconf python compiler:c++11-lib desktop-file-utils
 USE_SDL=	sdl

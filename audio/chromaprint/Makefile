@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/chromaprint/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/audio/chromaprint/Makefile 452570 2017-10-21 06:50:49Z jbeich $
 
 PORTNAME=	chromaprint
 PORTVERSION=	1.4.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	https://github.com/acoustid/${PORTNAME}/releases/download/v${PORTVERSION}/ \
 		https://bitbucket.org/acoustid/${PORTNAME}/downloads/

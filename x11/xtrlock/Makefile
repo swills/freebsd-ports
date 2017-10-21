@@ -1,5 +1,5 @@
 # Created by: Alexey Mikhailov <karma@ez.pereslavl.ru>
-# $FreeBSD: head/x11/xtrlock/Makefile 443945 2017-06-20 09:01:27Z amdmi3 $
+# $FreeBSD: head/x11/xtrlock/Makefile 452530 2017-10-20 14:50:02Z romain $
 
 PORTNAME=	xtrlock
 PORTVERSION=	2.8
@@ -7,7 +7,7 @@ CATEGORIES=	x11
 MASTER_SITES=	DEBIAN
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	romain@FreeBSD.org
 COMMENT=	X Transparent Lock
 
 LICENSE=	GPLv2+

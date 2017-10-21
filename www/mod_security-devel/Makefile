@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/mod_security-devel/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/www/mod_security-devel/Makefile 452572 2017-10-21 07:19:44Z gerald $
 
 PORTNAME=	mod_security-devel
 PORTVERSION=	3.0.0.g2017080200
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 USES=		gmake autoreconf libtool pkgconfig:build
 USE_GNOME=	libxml2
 # GCC because of https://github.com/SpiderLabs/ModSecurity/issues/1411
-USE_GCC=	6+
+USE_GCC=	yes
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 
