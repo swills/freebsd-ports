@@ -1,8 +1,8 @@
 # Created by: Sir l33tname <sirl33tname@gmail.com>
-# $FreeBSD: head/archivers/lua51-zlib/Makefile 444276 2017-06-25 15:02:38Z sunpoet $
+# $FreeBSD: head/archivers/lua51-zlib/Makefile 452729 2017-10-23 18:27:34Z swills $
 
 PORTNAME=	lua51
-PORTVERSION=	1.1
+PORTVERSION=	1.2
 DISTVERSIONPREFIX=v
 CATEGORIES=	archivers
 PKGNAMESUFFIX=	-zlib

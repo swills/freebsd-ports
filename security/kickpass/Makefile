@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/kickpass/Makefile 440857 2017-05-13 22:17:50Z bapt $
+# $FreeBSD: head/security/kickpass/Makefile 452629 2017-10-22 10:09:33Z vsevolod $
 
 PORTNAME=	kickpass
 PORTVERSION=	0.2.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 

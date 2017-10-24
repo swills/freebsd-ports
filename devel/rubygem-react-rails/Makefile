@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-react-rails/Makefile 452300 2017-10-17 20:07:38Z sunpoet $
+# $FreeBSD: head/devel/rubygem-react-rails/Makefile 452726 2017-10-23 18:27:21Z sunpoet $
 
 PORTNAME=	react-rails
-PORTVERSION=	2.3.1
+PORTVERSION=	2.4.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

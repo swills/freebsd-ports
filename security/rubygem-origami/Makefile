@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-origami/Makefile 451429 2017-10-07 08:19:58Z antoine $
+# $FreeBSD: head/security/rubygem-origami/Makefile 452639 2017-10-22 12:27:10Z antoine $
 
 PORTNAME=	origami
-PORTVERSION=	2.0.4
+PORTVERSION=	2.1.0
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

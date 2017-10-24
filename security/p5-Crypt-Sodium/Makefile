@@ -1,8 +1,9 @@
 # Created by: Thomas von Dein <freebsd@daemon.de>
-# $FreeBSD: head/security/p5-Crypt-Sodium/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-Crypt-Sodium/Makefile 452629 2017-10-22 10:09:33Z vsevolod $
 
 PORTNAME=	Crypt-Sodium
 PORTVERSION=	0.11
+PORTREVISION=	1
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/sysutils/debhelper/Makefile 452219 2017-10-16 17:46:18Z sunpoet $
+# $FreeBSD: head/sysutils/debhelper/Makefile 452717 2017-10-23 18:26:36Z sunpoet $
 
 PORTNAME=	debhelper
-PORTVERSION=	10.9.2
+PORTVERSION=	10.10.2
 CATEGORIES=	sysutils
 MASTER_SITES=	DEBIAN
 DISTNAME=	${PORTNAME}_${PORTVERSION}

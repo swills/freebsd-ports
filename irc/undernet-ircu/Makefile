@@ -1,8 +1,8 @@
 # Created by: Walter Venable <weaseal@users.sourceforge.net>
-# $FreeBSD: head/irc/undernet-ircu/Makefile 448150 2017-08-17 16:47:09Z swills $
+# $FreeBSD: head/irc/undernet-ircu/Makefile 452635 2017-10-22 11:06:26Z dbaio $
 
 PORTNAME=	undernet-ircu
-PORTVERSION=	2.10.12.17
+PORTVERSION=	2.10.12.18
 CATEGORIES=	irc net
 MASTER_SITES=	SF/${PORTNAME}/ircu/ircu${PORTVERSION} \
 		ftp://ftpmirror.uk/freebsd-ports/undernet-ircu/

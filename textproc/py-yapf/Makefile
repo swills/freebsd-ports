@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-yapf/Makefile 450484 2017-09-24 09:06:08Z antoine $
+# $FreeBSD: head/textproc/py-yapf/Makefile 452643 2017-10-22 12:33:16Z antoine $
 
 PORTNAME=	yapf
-PORTVERSION=	0.18.0
+PORTVERSION=	0.19.0
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Mikhail Teterin <mi@aldan.algebra.com>
-# $FreeBSD: head/graphics/py-exifread/Makefile 405203 2016-01-04 00:26:15Z mi $
+# $FreeBSD: head/graphics/py-exifread/Makefile 452737 2017-10-23 20:23:54Z swills $
 
 PORTNAME=	ExifRead
 PORTVERSION=	2.1.2
@@ -10,7 +10,8 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	mi@aldan.algebra.com
 COMMENT=	Read Exif metadata from tiff and jpeg files
 
-LICENSE=	BSD
+LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 USES=		python
 USE_PYTHON=	autoplist distutils

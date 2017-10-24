@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-atomicwrites/Makefile 412548 2016-04-05 07:21:31Z pi $
+# $FreeBSD: head/devel/py-atomicwrites/Makefile 452734 2017-10-23 20:11:37Z swills $
 
 PORTNAME=	atomicwrites
-PORTVERSION=	1.0.0
+DISTVERSION=	1.1.5
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Vasil Dimov <vd@FreeBSD.org>
-# $FreeBSD: head/net/cppzmq/Makefile 451944 2017-10-13 06:12:53Z vd $
+# $FreeBSD: head/net/cppzmq/Makefile 452693 2017-10-23 07:19:52Z vd $
 
 PORTNAME=	cppzmq
 PORTVERSION=	4.2.2
@@ -16,7 +16,7 @@ USES=		cmake pkgconfig
 CMAKE_ARGS=	--no-warn-unused-cli -Wno-dev
 
 # cppzmq is included in libzmq2
-CONFLICTS=	libzmq2
+CONFLICTS_INSTALL=	libzmq2
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	zeromq

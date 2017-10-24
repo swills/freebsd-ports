@@ -1,10 +1,11 @@
 # Created by: Craig Leres <leres@FreeBSD.org>
-# $FreeBSD: head/sysutils/lbl-hf/Makefile 452566 2017-10-21 00:45:50Z leres $
+# $FreeBSD: head/sysutils/lbl-hf/Makefile 452617 2017-10-21 23:57:38Z leres $
 
 PORTNAME=	hf
-PORTVERSION=	1.7
+PORTVERSION=	1.8
 CATEGORIES=	sysutils
-MASTER_SITES=	ftp://ee.lbl.gov/
+MASTER_SITES=	https://ee.lbl.gov/downloads/hf/ \
+		LOCAL/leres/hf
 PKGNAMEPREFIX=	lbl-
 
 MAINTAINER=	leres@FreeBSD.org

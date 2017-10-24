@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-kaminari-actionview/Makefile 452105 2017-10-15 00:37:17Z sunpoet $
+# $FreeBSD: head/www/rubygem-kaminari-actionview/Makefile 452658 2017-10-22 16:09:57Z sunpoet $
 
 PORTNAME=	kaminari-actionview
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

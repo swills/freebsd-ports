@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 452419 2017-10-19 13:10:48Z swills $
+# $FreeBSD: head/graphics/Makefile 452652 2017-10-22 15:35:25Z tobik $
 #
 
     COMMENT = Graphics tools and libraries
@@ -798,6 +798,7 @@
     SUBDIR += piglit
     SUBDIR += pikopixel
     SUBDIR += pinpoint
+    SUBDIR += pixd
     SUBDIR += pixelize
     SUBDIR += pixen
     SUBDIR += pixie

@@ -1,10 +1,11 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/py-netCDF4/Makefile 450200 2017-09-20 13:19:59Z bofh $
+# $FreeBSD: head/science/py-netCDF4/Makefile 452602 2017-10-21 20:18:16Z sunpoet $
 
 PORTNAME=	netCDF4
 PORTVERSION=	1.2.9
 DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	rel
+PORTREVISION=	1
 CATEGORIES=	science python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

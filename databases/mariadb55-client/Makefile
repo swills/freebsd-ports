@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb55-client/Makefile 446433 2017-07-22 22:28:13Z brnrd $
+# $FreeBSD: head/databases/mariadb55-client/Makefile 452651 2017-10-22 15:02:55Z brnrd $
 
 PORTNAME=	mariadb
 PKGNAMESUFFIX=	55-client
@@ -21,7 +21,7 @@ CONFLICTS_INSTALL=	mariadb5[0-46-9]-client-* \
 CMAKE_ARGS+=	-DWITHOUT_SERVER=1
 CLIENT_ONLY=	yes
 
-USES+=		ncurses readline
+USES=		ncurses readline
 
 post-install:
 	${RM} ${STAGEDIR}${PREFIX}/bin/mysqld_safe_helper

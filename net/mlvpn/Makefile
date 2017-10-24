@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/mlvpn/Makefile 418449 2016-07-12 22:03:52Z marino $
+# $FreeBSD: head/net/mlvpn/Makefile 452629 2017-10-22 10:09:33Z vsevolod $
 
 PORTNAME=	mlvpn
 PORTVERSION=	2.3.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 
 MAINTAINER=	olivier@FreeBSD.org

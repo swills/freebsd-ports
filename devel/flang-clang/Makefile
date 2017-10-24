@@ -1,8 +1,8 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/devel/flang-clang/Makefile 452497 2017-10-20 01:34:43Z jmd $
+# $FreeBSD: head/devel/flang-clang/Makefile 452710 2017-10-23 14:18:15Z jmd $
 
 PORTNAME=	flang-clang
-DISTVERSION=	4.0-20171019
+DISTVERSION=	5.0-20171019
 PORTREVISION=	1
 CATEGORIES=	devel lang
 
@@ -14,8 +14,8 @@ LICENSE_NAME=	LLVM Release License
 LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-BUILD_DEPENDS=	llvm40>=0:devel/llvm40
-RUN_DEPENDS=	llvm40>=0:devel/llvm40
+BUILD_DEPENDS=	llvm50>=0:devel/llvm50
+RUN_DEPENDS=	llvm50>=0:devel/llvm50
 
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON_amd64=	for now only builds and is supported on amd64
@@ -33,9 +33,9 @@ SHEBANG_FILES=	tools/scan-view/bin/scan-view \
 USE_GITHUB=	yes
 GH_ACCOUNT=	flang-compiler
 GH_PROJECT=	clang
-GH_TAGNAME=	70938ea
+GH_TAGNAME=	b11539a
 
-CMAKE_ARGS+=	-DLLVM_CONFIG=${LOCALBASE}/bin/llvm-config40
+CMAKE_ARGS+=	-DLLVM_CONFIG=${LOCALBASE}/bin/llvm-config50
 
 CMAKE_INSTALL_PREFIX=	${PREFIX}/flang
 

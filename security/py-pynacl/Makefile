@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/py-pynacl/Makefile 439022 2017-04-21 08:09:38Z miwi $
+# $FreeBSD: head/security/py-pynacl/Makefile 452629 2017-10-22 10:09:33Z vsevolod $
 
 PORTNAME=	pynacl
 PORTVERSION=	1.1.2
+PORTREVISION=	1
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

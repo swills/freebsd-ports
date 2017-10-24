@@ -1,8 +1,8 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/textproc/py-texttable/Makefile 452162 2017-10-15 19:19:45Z dbaio $
+# $FreeBSD: head/textproc/py-texttable/Makefile 452676 2017-10-22 18:05:57Z dbaio $
 
 PORTNAME=	texttable
-PORTVERSION=	1.0.0
+PORTVERSION=	1.1.0
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,9 @@
 # Created by: Muhammad Moinur Rahman <5u623l20@gmail.com>
-# $FreeBSD: head/net/ntopng/Makefile 451251 2017-10-04 21:20:36Z madpilot $
+# $FreeBSD: head/net/ntopng/Makefile 452629 2017-10-22 10:09:33Z vsevolod $
 
 PORTNAME=	ntopng
 PORTVERSION=	3.0.2017.10.03
+PORTREVISION=	1
 CATEGORIES=	net
 
 MAINTAINER=	madpilot@FreeBSD.org

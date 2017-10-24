@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/apache24/Makefile.modules 422343 2016-09-17 19:35:48Z ohauer $
+# $FreeBSD: head/www/apache24/Makefile.modules 452732 2017-10-23 18:49:27Z brnrd $
 #
 # =============================================
 # Maintainer note for OPTION handling:
@@ -87,7 +87,7 @@ CONFIGURE_ARGS+=	--without-libxml2
 .endif
 
 .if ${PORT_OPTIONS:MPROXY_HTTP2} && !${PORT_OPTIONS:MPROXY_BALANCER}
-IGNORE=	PROXY_HTTP2 needs PROXY_BALANCER
+IGNORE=	PROXY_HTTP2 requires PROXY_BALANCER
 .endif
 
 .endif	# _PREMKINCLUDED

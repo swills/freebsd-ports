@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/p5-CPAN-Perl-Releases/Makefile 450453 2017-09-23 14:38:31Z sunpoet $
+# $FreeBSD: head/devel/p5-CPAN-Perl-Releases/Makefile 452604 2017-10-21 20:18:29Z sunpoet $
 
 PORTNAME=	CPAN-Perl-Releases
-PORTVERSION=	3.38
+PORTVERSION=	3.40
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

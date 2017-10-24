@@ -1,8 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/mkvtoolnix/Makefile 451046 2017-10-01 14:37:55Z riggs $
+# $FreeBSD: head/multimedia/mkvtoolnix/Makefile 452690 2017-10-23 05:50:50Z riggs $
 
 PORTNAME=	mkvtoolnix
-PORTVERSION=	16.0.0
+PORTVERSION=	17.0.0
 CATEGORIES=	multimedia audio
 MASTER_SITES=	http://www.bunkus.org/videotools/mkvtoolnix/sources/ \
 		https://mkvtoolnix.download/sources/

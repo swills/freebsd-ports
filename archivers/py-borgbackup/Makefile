@@ -1,8 +1,8 @@
 # Created by: José García Juanino <jjuanino@gmail.com>
-# $FreeBSD: head/archivers/py-borgbackup/Makefile 451227 2017-10-04 13:45:16Z mat $
+# $FreeBSD: head/archivers/py-borgbackup/Makefile 452645 2017-10-22 13:07:42Z dbaio $
 
 PORTNAME=	borgbackup
-PORTVERSION=	1.0.11
+PORTVERSION=	1.1.0
 CATEGORIES=	archivers python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -34,6 +34,7 @@ IGNORE=	you have python ${PYTHON_DEFAULT} set as the default, and this needs ${P
 .endif
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/borg/*.so
+	@${FIND} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/borg/ -name "*.so" \
+		-exec ${STRIP_CMD} {} \;
 
 .include <bsd.port.post.mk>

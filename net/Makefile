@@ -1,5 +1,5 @@
 
-# $FreeBSD: head/net/Makefile 452251 2017-10-16 20:37:21Z rene $
+# $FreeBSD: head/net/Makefile 452692 2017-10-23 06:49:03Z tobik $
 #
 
     COMMENT = Networking tools
@@ -99,6 +99,7 @@
     SUBDIR += datapipe
     SUBDIR += dbeacon
     SUBDIR += delegate
+    SUBDIR += deviceatlas-enterprise-c
     SUBDIR += dgd
     SUBDIR += dgd-kernel
     SUBDIR += dgd-lpmud

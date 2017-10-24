@@ -1,9 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/science/cdo/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/science/cdo/Makefile 452602 2017-10-21 20:18:16Z sunpoet $
 
 PORTNAME=	cdo
 PORTVERSION=	1.9.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 MASTER_SITES=	https://code.zmaw.de/attachments/download/15187/ \
 		LOCAL/sunpoet

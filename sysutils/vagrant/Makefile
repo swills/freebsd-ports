@@ -1,8 +1,9 @@
 # Created by: Joseph Benden <joe@thrallingpenguin.com>
-# $FreeBSD: head/sysutils/vagrant/Makefile 450033 2017-09-18 09:01:22Z cmt $
+# $FreeBSD: head/sysutils/vagrant/Makefile 452757 2017-10-24 07:04:47Z madpilot $
 
 PORTNAME=	vagrant
 PORTVERSION=	2.0.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils rubygems devel
 

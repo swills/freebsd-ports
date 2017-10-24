@@ -1,8 +1,8 @@
 # Created by: markm
-# $FreeBSD: head/misc/dejagnu/Makefile 413498 2016-04-17 10:11:59Z gahr $
+# $FreeBSD: head/misc/dejagnu/Makefile 452763 2017-10-24 10:54:56Z gahr $
 
 PORTNAME=	dejagnu
-PORTVERSION=	1.6
+PORTVERSION=	1.6.1
 CATEGORIES=	misc tcl
 MASTER_SITES=	GNU
 

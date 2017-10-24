@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/libsodium/Makefile 436615 2017-03-21 16:21:19Z vsevolod $
+# $FreeBSD: head/security/libsodium/Makefile 452629 2017-10-22 10:09:33Z vsevolod $
 
 PORTNAME=	libsodium
-PORTVERSION=	1.0.12
+PORTVERSION=	1.0.15
 CATEGORIES=	security
 MASTER_SITES=	http://download.libsodium.org/libsodium/releases/
 

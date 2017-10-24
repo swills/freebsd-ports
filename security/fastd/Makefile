@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/fastd/Makefile 430947 2017-01-09 13:16:49Z amdmi3 $
+# $FreeBSD: head/security/fastd/Makefile 452629 2017-10-22 10:09:33Z vsevolod $
 
 PORTNAME=		fastd
 PORTVERSION=		18
-PORTREVISION=		1
+PORTREVISION=		2
 CATEGORIES=		security net
 MASTER_SITES=		https://git.universe-factory.net/fastd/snapshot/
 

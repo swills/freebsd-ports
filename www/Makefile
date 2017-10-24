@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 452057 2017-10-14 11:34:23Z rene $
+# $FreeBSD: head/www/Makefile 452615 2017-10-21 21:12:03Z olgeni $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -128,6 +128,7 @@
     SUBDIR += elgg
     SUBDIR += elinks
     SUBDIR += elixir-html_entities
+    SUBDIR += elixir-html_sanitize_ex
     SUBDIR += elixir-httpoison
     SUBDIR += elixir-httpotion
     SUBDIR += elixir-joken

@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/libuecc/Makefile 418449 2016-07-12 22:03:52Z marino $
+# $FreeBSD: head/security/libuecc/Makefile 452629 2017-10-22 10:09:33Z vsevolod $
 
 PORTNAME=	libuecc
 PORTVERSION=	7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	https://git.universe-factory.net/libuecc/snapshot/ \
 		http://git.universe-factory.net/libuecc/snapshot/

@@ -1,9 +1,10 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/science/netcdf-cxx/Makefile 448727 2017-08-25 18:21:02Z sunpoet $
+# $FreeBSD: head/science/netcdf-cxx/Makefile 452602 2017-10-21 20:18:16Z sunpoet $
 
 PORTNAME=	netcdf-cxx
 PORTVERSION=	4.3.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	science
 
 MAINTAINER=	sunpoet@FreeBSD.org

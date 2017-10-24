@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-kaminari-activerecord/Makefile 452106 2017-10-15 00:37:23Z sunpoet $
+# $FreeBSD: head/www/rubygem-kaminari-activerecord/Makefile 452659 2017-10-22 16:10:02Z sunpoet $
 
 PORTNAME=	kaminari-activerecord
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

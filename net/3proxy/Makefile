@@ -1,8 +1,8 @@
 # Created by: tim@relay.nnn.tstu.ru
-# $FreeBSD: head/net/3proxy/Makefile 444659 2017-06-29 18:20:26Z ultima $
+# $FreeBSD: head/net/3proxy/Makefile 452682 2017-10-22 19:36:03Z ultima $
 
 PORTNAME=	3proxy
-PORTVERSION=	0.8.10
+PORTVERSION=	0.8.11
 CATEGORIES=	net
 
 MAINTAINER=	timp87@gmail.com

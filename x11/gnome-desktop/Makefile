@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/gnome-desktop/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/gnome-desktop/Makefile 452698 2017-10-23 09:04:26Z amdmi3 $
 
 PORTNAME=	gnome-desktop
 PORTVERSION=	3.18.2
@@ -10,6 +10,11 @@ DIST_SUBDIR=	gnome3
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Additional UI API for GNOME 3
+
+LICENSE=	GPLv2+ LGPL20+
+LICENSE_COMB=	multi
+LICENSE_FILE_GPLv2+ =	${WRKSRC}/COPYING
+LICENSE_FILE_LGPL20+ =	${WRKSRC}/COPYING.LIB
 
 USES=		tar:xz
 
@@ -26,14 +31,12 @@ RUN_DEPENDS=	iso-codes>=0:misc/iso-codes \
 		xkeyboard-config>=0:x11/xkeyboard-config \
 		libxkbfile>=0:x11/libxkbfile
 
-USES+=		bison gettext gmake gnome libtool pathfix pkgconfig python:3
+USES+=		bison gettext gmake gnome libtool localbase pathfix pkgconfig python:3
 USE_GNOME=	gtk30 intlhack introspection:build referencehack
 USE_XORG=	x11 xrandr xext
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gnome-distributor="FreeBSD GNOME Project"
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib
 INSTALL_TARGET=	install-strip
 
 post-patch:

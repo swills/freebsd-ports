@@ -1,9 +1,9 @@
 # Created by: Lars Köller <Lars.Koeller@Uni-Bielefeld.de>
-# $FreeBSD: head/math/grace/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/grace/Makefile 452602 2017-10-21 20:18:16Z sunpoet $
 
 PORTNAME=	grace
 PORTVERSION=	5.1.25
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math print
 MASTER_SITES=	ftp://ftp.fu-berlin.de/unix/graphics/grace/src/stable/ \
 		ftp://ftp.ntua.gr/pub/graphics/grace/src/stable/ \

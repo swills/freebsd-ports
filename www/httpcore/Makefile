@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/www/httpcore/Makefile 450241 2017-09-21 08:30:58Z ale $
+# $FreeBSD: head/www/httpcore/Makefile 452714 2017-10-23 15:09:04Z ale $
 
 PORTNAME=	httpcore
-DISTVERSION=	4.4.7
+DISTVERSION=	4.4.8
 CATEGORIES=	www java
 MASTER_SITES=	APACHE/httpcomponents/${PORTNAME}/binary
 DISTNAME=	httpcomponents-core-${DISTVERSION}-bin

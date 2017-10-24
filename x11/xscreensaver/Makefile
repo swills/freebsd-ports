@@ -1,9 +1,8 @@
 # Created by: dom@myrddin.demon.co.uk
-# $FreeBSD: head/x11/xscreensaver/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11/xscreensaver/Makefile 452739 2017-10-23 20:34:24Z zeising $
 
 PORTNAME=	xscreensaver
-PORTVERSION=	5.36
-PORTREVISION=	1
+PORTVERSION=	5.37
 CATEGORIES=	x11
 MASTER_SITES=	http://www.jwz.org/xscreensaver/
 
@@ -26,6 +25,7 @@ USE_GNOME=	cairo gdkpixbuf2 gtk20 intltool libglade2 libxml2
 USE_PERL5=	run
 USE_XORG=	ice sm x11 xext xi xinerama xmu xrandr xrender xpm xt \
 		xxf86misc xxf86vm
+USE_CSTD=	gnu99
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	PERL="${PERL}"

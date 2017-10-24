@@ -1,8 +1,9 @@
 # Created by: Frank DENIS
-# $FreeBSD: head/ftp/pure-ftpd/Makefile 444609 2017-06-28 23:55:22Z sunpoet $
+# $FreeBSD: head/ftp/pure-ftpd/Makefile 452629 2017-10-22 10:09:33Z vsevolod $
 
 PORTNAME=	pure-ftpd
 PORTVERSION=	1.0.46
+PORTREVISION=	1
 CATEGORIES=	ftp ipv6
 MASTER_SITES=	https://github.com/jedisct1/${PORTNAME}/releases/download/${PORTVERSION}/ \
 		https://download.pureftpd.org/pub/pure-ftpd/releases/ \

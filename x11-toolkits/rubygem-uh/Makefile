@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-toolkits/rubygem-uh/Makefile 431189 2017-01-11 15:45:03Z swills $
+# $FreeBSD: head/x11-toolkits/rubygem-uh/Makefile 452678 2017-10-22 19:10:22Z ultima $
 
 PORTNAME=	uh
-PORTVERSION=	2.0.2
+PORTVERSION=	2.1.0
 CATEGORIES=	x11-toolkits rubygems
 MASTER_SITES=	RG
 

@@ -1,9 +1,9 @@
 # Created by: Ville Eerola <ve@sci.fi>
-# $FreeBSD: head/mail/fetchmail/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/mail/fetchmail/Makefile 452761 2017-10-24 09:23:32Z amdmi3 $
 
 PORTNAME=	fetchmail
 PORTVERSION=	6.3.26
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	mail ipv6
 MASTER_SITES=	SF/${PORTNAME}/branch_6.3/ \
 		http://mandree.home.pages.de/${PORTNAME}/
@@ -19,7 +19,7 @@ RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 USERS=		${PORTNAME}
 GROUPS=		${USERS}
 
-USES=		cpe gmake shebangfix tar:xz ssl
+USES=		cpe gmake python shebangfix tar:xz ssl
 SHEBANG_FILES=	fetchmailconf.py
 
 USE_RC_SUBR=	fetchmail
@@ -60,7 +60,6 @@ NTLM_PORTDOCS=		README.NTLM
 POP2_CONFIGURE_ENABLE=	POP2
 
 X11_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>=0:x11-toolkits/py-tkinter
-X11_USES=	python
 X11_CONFIGURE_OFF=	PYTHON=:
 X11_SUB_FILES_OFF=	fetchmailconf
 

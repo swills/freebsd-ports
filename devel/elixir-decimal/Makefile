@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-decimal/Makefile 444578 2017-06-28 14:17:31Z olgeni $
+# $FreeBSD: head/devel/elixir-decimal/Makefile 452624 2017-10-22 08:08:27Z olgeni $
 
 PORTNAME=	decimal
-PORTVERSION=	1.4.0
+PORTVERSION=	1.4.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

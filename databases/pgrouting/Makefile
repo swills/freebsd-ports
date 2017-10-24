@@ -1,16 +1,16 @@
 # Created by: lbartoletti <coder@tuxfamily.org>
-# $FreeBSD: head/databases/pgrouting/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/databases/pgrouting/Makefile 452633 2017-10-22 10:57:03Z dbaio $
 
 PORTNAME=	pgrouting
-PORTVERSION=	2.5.0
+PORTVERSION=	2.5.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
 CATEGORIES=	databases geography
 
 MAINTAINER=	lbartoletti@tuxfamily.org
 COMMENT=	Extension to PostGIS to provide geospatial routing functionality
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs\
 		libCGAL.so:math/cgal \

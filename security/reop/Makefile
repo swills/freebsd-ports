@@ -1,9 +1,9 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/security/reop/Makefile 418449 2016-07-12 22:03:52Z marino $
+# $FreeBSD: head/security/reop/Makefile 452629 2017-10-22 10:09:33Z vsevolod $
 
 PORTNAME=	reop
 PORTVERSION=	2.1.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	security
 
 MAINTAINER=	koobs@FreeBSD.org

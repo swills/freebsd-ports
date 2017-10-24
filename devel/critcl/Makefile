@@ -1,8 +1,9 @@
 # Created by: gahr@FreeBSD.org
-# $FreeBSD: head/devel/critcl/Makefile 450949 2017-09-30 08:23:25Z gahr $
+# $FreeBSD: head/devel/critcl/Makefile 452766 2017-10-24 11:35:35Z gahr $
 
 PORTNAME=	critcl
 PORTVERSION=	3.1.17
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	tcltk@FreeBSD.org

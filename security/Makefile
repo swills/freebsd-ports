@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 451977 2017-10-13 09:53:22Z se $
+# $FreeBSD: head/security/Makefile 452741 2017-10-23 20:46:08Z se $
 #
 
     COMMENT = Security tools
@@ -855,6 +855,7 @@
     SUBDIR += pwauth
     SUBDIR += pwman
     SUBDIR += pwman3
+    SUBDIR += pwned-check
     SUBDIR += pxytest
     SUBDIR += py-AccessControl
     SUBDIR += py-PF

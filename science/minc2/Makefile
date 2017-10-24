@@ -1,10 +1,10 @@
 # Created by: jbacon
-# $FreeBSD: head/science/minc2/Makefile 442050 2017-05-30 02:56:43Z sunpoet $
+# $FreeBSD: head/science/minc2/Makefile 452602 2017-10-21 20:18:16Z sunpoet $
 
 PORTNAME=	minc
 PORTVERSION=	2.2.00
 DISTVERSIONPREFIX=	release-
-PORTREVISION=	5
+PORTREVISION=	6
 PORTEPOCH=	1
 CATEGORIES=	science biology
 PKGNAMESUFFIX=	2

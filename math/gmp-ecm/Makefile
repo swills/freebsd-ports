@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/math/gmp-ecm/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/gmp-ecm/Makefile 452760 2017-10-24 09:04:27Z amdmi3 $
 
 PORTNAME=	gmp-ecm
 PORTVERSION=	6.3
@@ -11,10 +11,12 @@ DISTNAME=	ecm-${PORTVERSION}
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Elliptic Curve Method for Integer Factorization
 
-LIB_DEPENDS=	libgmp.so:math/gmp
-
-LICENSE=	GPLv2 LGPL21
+LICENSE=	GPLv2+ LGPL21+
 LICENSE_COMB=	multi
+LICENSE_FILE_GPLv2+ =	${WRKSRC}/COPYING
+LICENSE_FILE_LGPL21+ =	${WRKSRC}/COPYING.LIB
+
+LIB_DEPENDS=	libgmp.so:math/gmp
 
 CONFLICTS=	ecm-[0-9]*
 

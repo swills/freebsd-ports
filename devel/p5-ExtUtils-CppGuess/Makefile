@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-ExtUtils-CppGuess/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-ExtUtils-CppGuess/Makefile 452654 2017-10-22 16:09:37Z sunpoet $
 
 PORTNAME=	ExtUtils-CppGuess
-PORTVERSION=	0.11
+PORTVERSION=	0.12
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

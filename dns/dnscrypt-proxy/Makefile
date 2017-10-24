@@ -1,9 +1,9 @@
 # Created by: Leo Vandewoestijne <freebsd@dns-lab.com>
-# $FreeBSD: head/dns/dnscrypt-proxy/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/dns/dnscrypt-proxy/Makefile 452629 2017-10-22 10:09:33Z vsevolod $
 
 PORTNAME=	dnscrypt-proxy
 PORTVERSION=	1.9.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	dns
 MASTER_SITES=	https://download.dnscrypt.org/dnscrypt-proxy/ \
 		http://download.dnscrypt.org/dnscrypt-proxy/ \

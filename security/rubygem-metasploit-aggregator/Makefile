@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-metasploit-aggregator/Makefile 445345 2017-07-08 17:05:14Z antoine $
+# $FreeBSD: head/security/rubygem-metasploit-aggregator/Makefile 452640 2017-10-22 12:29:02Z antoine $
 
 PORTNAME=	metasploit-aggregator
-PORTVERSION=	0.2.1
+PORTVERSION=	1.0.0
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

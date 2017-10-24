@@ -1,8 +1,8 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/textproc/cmark/Makefile 451911 2017-10-12 17:01:55Z tobik $
+# $FreeBSD: head/textproc/cmark/Makefile 452695 2017-10-23 08:06:35Z tobik $
 
 PORTNAME=	cmark
-PORTVERSION=	0.28.2
+PORTVERSION=	0.28.3
 CATEGORIES=	textproc
 
 MAINTAINER=	tobik@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 452388 2017-10-18 22:48:43Z dbaio $
+# $FreeBSD: head/mail/Makefile 452638 2017-10-22 12:23:23Z antoine $
 #
 
     COMMENT = Electronic mail utilities
@@ -666,6 +666,7 @@
     SUBDIR += spampd
     SUBDIR += spamprobe
     SUBDIR += spamstats
+    SUBDIR += spfmilter
     SUBDIR += spfval
     SUBDIR += spmfilter
     SUBDIR += spmfilter-clamav

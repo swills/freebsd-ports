@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/math/py-scientific/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/py-scientific/Makefile 452602 2017-10-21 20:18:16Z sunpoet $
 
 PORTNAME=	scientific
 PORTVERSION=	2.8
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math python
 MASTER_SITES=	http://sourcesup.cru.fr/frs/download.php/2309/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

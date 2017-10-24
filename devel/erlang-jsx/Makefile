@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/erlang-jsx/Makefile 433625 2017-02-07 22:54:12Z olgeni $
+# $FreeBSD: head/devel/erlang-jsx/Makefile 452699 2017-10-23 10:00:21Z olgeni $
 
 PORTNAME=	jsx
-PORTVERSION=	2.8.2
+PORTVERSION=	2.8.3
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

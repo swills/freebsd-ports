@@ -1,9 +1,9 @@
 # Created by: Leo Vandewoestijne <freebsd@dns-lab.com>
-# $FreeBSD: head/dns/curvedns/Makefile 418449 2016-07-12 22:03:52Z marino $
+# $FreeBSD: head/dns/curvedns/Makefile 452629 2017-10-22 10:09:33Z vsevolod $
 
 PORTNAME=	curvedns
 PORTVERSION=	0.88.b
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	dns
 
 MAINTAINER=	vsevolod@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-Pint/Makefile 428336 2016-12-11 08:06:13Z novel $
+# $FreeBSD: head/devel/py-Pint/Makefile 452738 2017-10-23 20:27:28Z swills $
 
 PORTNAME=	Pint
 PORTVERSION=	0.7.2
@@ -10,7 +10,8 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	alexander.nusov@nfvexpress.com
 COMMENT=	Physical quantities module
 
-LICENSE=	BSD
+LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_ARCH=	yes
 

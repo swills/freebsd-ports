@@ -1,9 +1,10 @@
 # Created by: sec@42.org
-# $FreeBSD: head/graphics/gmt/Makefile 448340 2017-08-19 16:06:14Z sunpoet $
+# $FreeBSD: head/graphics/gmt/Makefile 452602 2017-10-21 20:18:16Z sunpoet $
 
 PORTNAME=	gmt
 PORTVERSION=	4.5.16
 DISTVERSIONSUFFIX=	-src
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.soest.hawaii.edu/%SUBDIR%/ \
 		ftp://ftp.geologi.uio.no/pub/%SUBDIR%/ \

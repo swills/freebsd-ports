@@ -1,8 +1,8 @@
 # Created by: mikeh@FreeBSD.org
-# $FreeBSD: head/devel/check/Makefile 433840 2017-02-11 08:37:44Z sunpoet $
+# $FreeBSD: head/devel/check/Makefile 452601 2017-10-21 20:17:13Z sunpoet $
 
 PORTNAME=	check
-PORTVERSION=	0.11.0
+PORTVERSION=	0.12.0
 CATEGORIES=	devel
 
 MAINTAINER=	sunpoet@FreeBSD.org

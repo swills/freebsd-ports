@@ -1,9 +1,9 @@
 # Created by: M. L. Dodson, <bdodson@scms.utmb.edu>
-# $FreeBSD: head/math/gri/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/math/gri/Makefile 452602 2017-10-21 20:18:16Z sunpoet $
 
 PORTNAME=	gri
 PORTVERSION=	2.12.23
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	math
 MASTER_SITES=	SF
 

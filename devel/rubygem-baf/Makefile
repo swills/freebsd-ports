@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-baf/Makefile 445297 2017-07-08 03:03:18Z swills $
+# $FreeBSD: head/devel/rubygem-baf/Makefile 452677 2017-10-22 19:07:54Z ultima $
 
 PORTNAME=	baf
-PORTVERSION=	0.12.0
+PORTVERSION=	0.14.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

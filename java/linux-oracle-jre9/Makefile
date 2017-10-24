@@ -1,17 +1,17 @@
-# $FreeBSD: head/java/linux-oracle-jre9/Makefile 452083 2017-10-14 19:10:06Z glewis $
+# $FreeBSD: head/java/linux-oracle-jre9/Makefile 452681 2017-10-22 19:23:58Z glewis $
 
 PORTNAME=	jre
-PORTVERSION=	${JRE_VERSION}.${JRE_UPDATE_VERSION}
+PORTVERSION=	${JRE_VERSION}.${JRE_UPDATE_VERSION}.${JRE_PATCH_VERSION}
 CATEGORIES=	java
 MASTER_SITES=	#
 PKGNAMEPREFIX=	linux-${JRE_VENDOR}-
 PKGNAMESUFFIX=	${JRE_VERSION}
-DISTNAME=	jre-${JRE_VERSION}_linux-x64_bin
+DISTNAME=	jre-${JRE_VERSION}.${JRE_UPDATE_VERSION}.${JRE_PATCH_VERSION}_linux-x64_bin
 
 MAINTAINER=	java@FreeBSD.org
 COMMENT=	Oracle Java ${JRE_VERSION} Runtime Environment for Linux
 
-ONLY_FOR_ARCHS=	amd64 i386
+ONLY_FOR_ARCHS=	amd64
 RUN_DEPENDS=	javavm:java/javavmwrapper
 
 RESTRICTED=	Redistribution of repackaged binaries not permitted
@@ -26,12 +26,15 @@ USE_LINUX=	xorglibs
 JRE_VENDOR=		oracle
 JRE_VERSION=		9
 JRE_UPDATE_VERSION=	0
+JRE_PATCH_VERSION=	1
+.if ${JRE_PATCH_VERSION} == 0
 .if ${JRE_UPDATE_VERSION} == 0
 DL_JRE_VERSION=		${JRE_VERSION}
-.elif ${JRE_UPDATE_VERSION} <= 9
-DL_JRE_VERSION=		${JRE_VERSION}_0${JRE_UPDATE_VERSION}
 .else
-DL_JRE_VERSION=		${JRE_VERSION}_${JRE_UPDATE_VERSION}
+DL_JRE_VERSION=		${JRE_VERSION}.${JRE_UPDATE_VERSION}
+.endif
+.else
+DL_JRE_VERSION=		${JRE_VERSION}.${JRE_UPDATE_VERSION}.${JRE_PATCH_VERSION}
 .endif
 DOWNLOAD_URL=		http://www.oracle.com/technetwork/java/javase/downloads/index.html
 

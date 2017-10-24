@@ -1,9 +1,9 @@
 # Created by: Douglas K. Rand (rand@meridian-enviro.com)
-# $FreeBSD: head/math/p5-NetCDF/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/p5-NetCDF/Makefile 452602 2017-10-21 20:18:16Z sunpoet $
 
 PORTNAME=	NetCDF
 PORTVERSION=	1.2.4
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math perl5
 MASTER_SITES=	ftp://ftp.unidata.ucar.edu/pub/netcdf-perl/
 PKGNAMEPREFIX=	p5-

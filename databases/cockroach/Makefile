@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/cockroach/Makefile 448474 2017-08-21 14:11:33Z krion $
+# $FreeBSD: head/databases/cockroach/Makefile 452622 2017-10-22 08:05:41Z antoine $
 
 PORTNAME=	cockroach
 PORTVERSION=	1.0.4
@@ -12,6 +12,8 @@ COMMENT=	Cloud-native SQL database that survive disasters
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/src/github.com/cockroachdb/cockroach/LICENSE
+
+BROKEN=		fails to build with go 1.9
 
 BUILD_DEPENDS=	bash:shells/bash \
 		cmake:devel/cmake \
