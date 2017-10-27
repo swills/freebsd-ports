@@ -3461,6 +3461,7 @@
 %%WWWDIR%%/app/serializers/note_entity.rb
 %%WWWDIR%%/app/serializers/note_serializer.rb
 %%WWWDIR%%/app/serializers/note_user_entity.rb
+%%WWWDIR%%/app/serializers/pipeline_details_entity.rb
 %%WWWDIR%%/app/serializers/pipeline_entity.rb
 %%WWWDIR%%/app/serializers/pipeline_serializer.rb
 %%WWWDIR%%/app/serializers/project_entity.rb
@@ -4953,6 +4954,7 @@
 @(git,,544) %%WWWDIR%%/bin/web
 @(git,,544) %%WWWDIR%%/bin/with_env
 %%WWWDIR%%/changelogs/archive.md
+@dir %%WWWDIR%%/changelogs/unreleased
 %%WWWDIR%%/config.ru
 %%WWWDIR%%/config/README.md
 %%WWWDIR%%/config/application.rb
@@ -5029,7 +5031,6 @@
 %%WWWDIR%%/config/initializers/postgresql_limit_fix.rb
 %%WWWDIR%%/config/initializers/postgresql_opclasses_support.rb
 %%WWWDIR%%/config/initializers/premailer.rb
-%%WWWDIR%%/config/initializers/rack_attack.rb.sample
 %%WWWDIR%%/config/initializers/rack_attack_git_basic_auth.rb
 %%WWWDIR%%/config/initializers/rack_attack_logging.rb
 %%WWWDIR%%/config/initializers/rack_lineprof.rb
@@ -5067,7 +5068,6 @@
 %%WWWDIR%%/config/redis.cache.yml.example
 %%WWWDIR%%/config/redis.queues.yml.example
 %%WWWDIR%%/config/redis.shared_state.yml.example
-%%WWWDIR%%/config/resque.yml.sample
 %%WWWDIR%%/config/routes.rb
 %%WWWDIR%%/config/routes/admin.rb
 %%WWWDIR%%/config/routes/api.rb
@@ -5091,12 +5091,10 @@
 %%WWWDIR%%/config/routes/uploads.rb
 %%WWWDIR%%/config/routes/user.rb
 %%WWWDIR%%/config/routes/wiki.rb
-%%WWWDIR%%/config/secrets.yml.sample
 %%WWWDIR%%/config/sidekiq.yml.example
 %%WWWDIR%%/config/sidekiq_queues.yml
 %%WWWDIR%%/config/svg.config.js
 %%WWWDIR%%/config/unicorn.rb.example.development
-%%WWWDIR%%/config/unicorn.rb.sample
 %%WWWDIR%%/config/webpack.config.js
 %%WWWDIR%%/db/fixtures/development/01_admin.rb
 %%WWWDIR%%/db/fixtures/development/04_project.rb
@@ -8263,8 +8261,6 @@
 %%WWWDIR%%/lib/support/logrotate/gitlab
 %%WWWDIR%%/lib/support/nginx/gitlab-pages
 %%WWWDIR%%/lib/support/nginx/gitlab-pages-ssl
-%%WWWDIR%%/lib/support/nginx/gitlab-ssl.sample
-%%WWWDIR%%/lib/support/nginx/gitlab.sample
 %%WWWDIR%%/lib/support/nginx/registry-ssl
 %%WWWDIR%%/lib/system_check.rb
 %%WWWDIR%%/lib/system_check/app/active_users_check.rb
@@ -8371,6 +8367,9 @@
 @(git,,) %%WWWDIR%%/locale/it/gitlab.po.time_stamp
 @(git,,) %%WWWDIR%%/locale/ja/gitlab.po
 @(git,,) %%WWWDIR%%/locale/ja/gitlab.po.time_stamp
+@(git,,) %%WWWDIR%%/locale/ko/gitlab.po
+@(git,,) %%WWWDIR%%/locale/ko/gitlab.po.time_stamp
+@(git,,) %%WWWDIR%%/locale/nl_NL/gitlab.po
 @(git,,) %%WWWDIR%%/locale/pt_BR/gitlab.po
 @(git,,) %%WWWDIR%%/locale/pt_BR/gitlab.po.time_stamp
 @(git,,) %%WWWDIR%%/locale/ru/gitlab.po
@@ -11404,7 +11403,6 @@
 @dir %%WWWDIR%%/config
 @dir(,,700) %%WWWDIR%%/builds
 @dir %%WWWDIR%%/lib/assets
-@dir %%WWWDIR%%/lib/ci/assets
 @dir(,,744) %%WWWDIR%%/locale
 @dir(,,744) %%WWWDIR%%/locale/bg
 @dir(,,744) %%WWWDIR%%/locale/de
