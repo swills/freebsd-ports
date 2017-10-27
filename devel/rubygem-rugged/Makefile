@@ -2,7 +2,7 @@
 # $FreeBSD: head/devel/rubygem-rugged/Makefile 445035 2017-07-04 18:37:55Z sunpoet $
 
 PORTNAME=	rugged
-PORTVERSION=	0.25.1.1
+PORTVERSION=	0.26.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -13,7 +13,10 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	cmake:devel/cmake \
-		libgit2>=${PORTVERSION:R}:devel/libgit2
+		libgit2>=${PORTVERSION:R}:devel/libgit2 \
+		rubygem-minitest>=5.0:devel/rubygem-minitest \
+		rubygem-pry>=0:devel/rubygem-pry \
+		rubygem-rake-compiler>=0.9.0:devel/rubygem-rake-compiler
 LIB_DEPENDS=	libgit2.so:devel/libgit2
 
 CONFIGURE_ARGS=	--use-system-libraries
