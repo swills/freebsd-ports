@@ -17,7 +17,8 @@ BUILD_DEPENDS=	cmake:devel/cmake \
 		rubygem-minitest>=5.0:devel/rubygem-minitest \
 		rubygem-pry>=0:devel/rubygem-pry \
 		rubygem-rake-compiler>=0.9.0:devel/rubygem-rake-compiler
-LIB_DEPENDS=	libgit2.so:devel/libgit2
+LIB_DEPENDS=	libgit2.so:devel/libgit2 \
+		libunwind.so:devel/libunwind
 
 CONFIGURE_ARGS=	--use-system-libraries
 USE_RUBY=	yes
