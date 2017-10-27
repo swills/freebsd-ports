@@ -163,7 +163,7 @@ RUN_DEPENDS=	git>=2.14.1:devel/git \
 	rubygem-sentry-raven>=2.5.3:devel/rubygem-sentry-raven \
 	rubygem-premailer-rails>=1.9.7:mail/rubygem-premailer-rails \
 	rubygem-ruby_parser>=3.8.4:devel/rubygem-ruby_parser \
-	rubygem-rails-i18n-4>=4.0.9:devel/rubygem-rails-i18n-4
+	rubygem-rails-i18n-4>=4.0.9:devel/rubygem-rails-i18n-4 \
 	rubygem-gettext_i18n_rails>=1.8.0:devel/rubygem-gettext_i18n_rails \
 	rubygem-gettext_i18n_rails_js>=1.2.0:devel/rubygem-gettext_i18n_rails_js \
 	rubygem-gettext>=3.2.2:devel/rubygem-gettext \
@@ -186,7 +186,9 @@ RUN_DEPENDS=	git>=2.14.1:devel/git \
 	rubygem-vmstat>=2.3.0:sysutils/rubygem-vmstat \
 	rubygem-sys-filesystem>=1.1.6:sysutils/rubygem-sys-filesystem \
 	rubygem-net-ssh>=4.1.0:security/rubygem-net-ssh \
-	# ed25519
+	rubygem-rbnacl>=4.0:security/rubygem-rbnacl \
+	rubygem-rbnacl-libsodium>=0:security/rubygem-rbnacl-libsodium \
+	rubygem-bcrypt-pbkdf>=1.0:security/rubygem-bcrypt-pbkdf \
 	rubygem-gitaly>=0.8.0:net/rubygem-gitaly \
 	rubygem-toml-rb>=0.3.15:www/rubygem-toml-rb \
 	rubygem-flipper>=0.10.2:devel/rubygem-flipper \
