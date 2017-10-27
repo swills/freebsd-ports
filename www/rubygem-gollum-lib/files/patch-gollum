@@ -1,0 +1,36 @@
+--- gollum-lib.gemspec.orig	2017-10-27 15:33:57.111641000 +0200
++++ gollum-lib.gemspec	2017-10-27 15:34:55.272463000 +0200
+@@ -25,12 +25,12 @@
+     s.specification_version = 2
+ 
+     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+-      s.add_runtime_dependency(%q<gollum-grit_adapter>.freeze, ["~> 1.0"])
++      s.add_runtime_dependency(%q<gollum-grit_adapter>.freeze, [">= 1.0"])
+       s.add_runtime_dependency(%q<rouge>.freeze, ["~> 2.1"])
+       s.add_runtime_dependency(%q<nokogiri>.freeze, ["< 2.0", ">= 1.6.1"])
+       s.add_runtime_dependency(%q<stringex>.freeze, ["~> 2.6"])
+-      s.add_runtime_dependency(%q<sanitize>.freeze, ["~> 2.1"])
+-      s.add_runtime_dependency(%q<github-markup>.freeze, ["~> 1.6"])
++      s.add_runtime_dependency(%q<sanitize>.freeze, [">= 2.1"])
++      s.add_runtime_dependency(%q<github-markup>.freeze, [">= 1.6"])
+       s.add_runtime_dependency(%q<gemojione>.freeze, ["~> 3.2"])
+       s.add_development_dependency(%q<org-ruby>.freeze, ["~> 0.9.9"])
+       s.add_development_dependency(%q<kramdown>.freeze, ["~> 1.6.0"])
+@@ -56,7 +56,7 @@
+       s.add_dependency(%q<nokogiri>.freeze, ["< 2.0", ">= 1.6.1"])
+       s.add_dependency(%q<stringex>.freeze, ["~> 2.6"])
+       s.add_dependency(%q<sanitize>.freeze, ["~> 2.1"])
+-      s.add_dependency(%q<github-markup>.freeze, ["~> 1.6"])
++      s.add_dependency(%q<github-markup>.freeze, [">= 1.6"])
+       s.add_dependency(%q<gemojione>.freeze, ["~> 3.2"])
+       s.add_dependency(%q<org-ruby>.freeze, ["~> 0.9.9"])
+       s.add_dependency(%q<kramdown>.freeze, ["~> 1.6.0"])
+@@ -83,7 +83,7 @@
+     s.add_dependency(%q<nokogiri>.freeze, ["< 2.0", ">= 1.6.1"])
+     s.add_dependency(%q<stringex>.freeze, ["~> 2.6"])
+     s.add_dependency(%q<sanitize>.freeze, ["~> 2.1"])
+-    s.add_dependency(%q<github-markup>.freeze, ["~> 1.6"])
++    s.add_dependency(%q<github-markup>.freeze, [">= 1.6"])
+     s.add_dependency(%q<gemojione>.freeze, ["~> 3.2"])
+     s.add_dependency(%q<org-ruby>.freeze, ["~> 0.9.9"])
+     s.add_dependency(%q<kramdown>.freeze, ["~> 1.6.0"])

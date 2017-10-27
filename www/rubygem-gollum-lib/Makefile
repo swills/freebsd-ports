@@ -3,6 +3,7 @@
 
 PORTNAME=	gollum-lib
 PORTVERSION=	4.2.7
+PORTREVISION=	1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -28,14 +29,14 @@ GITHUB_DESC=	Use rubygem-github-markup (default)
 GITLAB_DESC=	Use rubygem-gitlab-markup instead
 
 GITHUB_RUN_DEPENDS=	rubygem-github-markup>=1.6:textproc/rubygem-github-markup
-GITLAB_RUN_DEPENDS=	rubygem-gitlab-markup>=1.5:textproc/rubygem-gitlab-markup
+GITLAB_RUN_DEPENDS=	rubygem-gitlab-markup>=1.6:textproc/rubygem-gitlab-markup
 
 NO_ARCH=	yes
 USES=		gem
 USE_RUBY=	yes
 
 post-patch-GITLAB-on:
-# change runtime dependency from "github-markup ~> 1.6" to "gitlab-markup ~> 1.5"
-	@${REINPLACE_CMD} -e '/s.add_runtime_dependency/ s|github-markup\(.*\)1.6|gitlab-markup\11.5|' ${WRKSRC}/${GEMSPEC}
+# change runtime dependency from "github-markup ~> 1.6" to "gitlab-markup >= 1.6"
+	@${REINPLACE_CMD} -e '/s.add_runtime_dependency/ s|github-markup\(.*\)1.6|gitlab-markup\11.6|' ${WRKSRC}/${GEMSPEC}
 
 .include <bsd.port.mk>
