@@ -50,7 +50,7 @@ RUN_DEPENDS=	git>=2.14.1:devel/git \
 	rubygem-omniauth-github11>=1.1.1:net/rubygem-omniauth-github11 \
 	rubygem-omniauth-gitlab>=1.0.2:security/rubygem-omniauth-gitlab \
 	rubygem-omniauth-google-oauth2>=0.5.2:net/rubygem-omniauth-google-oauth2 \
-	rubygem-omniauth-kerberos>=0.3.0: TODO\
+	rubygem-omniauth-kerberos>=0.3.0:net/rubygem-omniauth-kerberos \
 	rubygem-omniauth-oauth2-generic>=0.2.2:security/rubygem-omniauth-oauth2-generic \
 	rubygem-omniauth-saml>=1.7.0:security/rubygem-omniauth-saml \
 	rubygem-omniauth-shibboleth>=1.2.0:security/rubygem-omniauth-shibboleth \
