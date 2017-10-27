@@ -4,7 +4,7 @@
 PORTNAME=	gitlab
 PORTVERSION=	10.1.0
 DISTVERSIONPREFIX=	v
-#PORTREVISION=	0
+PORTREVISION=	2
 CATEGORIES=	www devel
 
 MAINTAINER=	tz@FreeBSD.org
@@ -188,6 +188,7 @@ RUN_DEPENDS=	git>=2.14.1:devel/git \
 	rubygem-rbnacl>=4.0:security/rubygem-rbnacl \
 	rubygem-rbnacl-libsodium>=0:security/rubygem-rbnacl-libsodium \
 	rubygem-bcrypt_pbkdf>=1.0:security/rubygem-bcrypt_pbkdf \
+	rubygem-gitaly-proto-0.49.0>=0.39.0:net/rubygem-gitaly-proto \
 	rubygem-gitaly>=0.8.0:net/rubygem-gitaly \
 	rubygem-toml-rb>=0.3.15:www/rubygem-toml-rb \
 	rubygem-flipper>=0.10.2:devel/rubygem-flipper \
