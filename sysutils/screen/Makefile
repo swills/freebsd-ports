@@ -1,9 +1,8 @@
 # Created by: Andrey Chernov <ache@FreeBSD.org>
-# $FreeBSD: head/sysutils/screen/Makefile 449031 2017-08-31 12:53:06Z cy $
+# $FreeBSD: head/sysutils/screen/Makefile 452809 2017-10-24 19:07:36Z cy $
 
 PORTNAME=	screen
-PORTVERSION=	4.6.1
-PORTREVISION=	2
+PORTVERSION=	4.6.2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://ftp.gnu.org/gnu/screen/ \
 		ftp://ftp.gnu.org/gnu/screen/ \

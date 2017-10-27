@@ -1,9 +1,8 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/audio/linux-c7-alsa-lib/Makefile 432996 2017-02-01 09:55:43Z tijl $
+# $FreeBSD: head/audio/linux-c7-alsa-lib/Makefile 452945 2017-10-26 19:23:18Z tijl $
 
 PORTNAME=	alsa-lib
-PORTVERSION=	1.1.1
-PORTREVISION=	2
+PORTVERSION=	1.1.3
 CATEGORIES=	audio linux
 
 MAINTAINER=	emulation@FreeBSD.org
@@ -15,7 +14,7 @@ RUN_DEPENDS=	alsa-lib>0:audio/alsa-lib
 
 CONFLICTS=	linux-c6-${PORTNAME}-[0-9]*
 
-RPMVERSION=	1.el7
+RPMVERSION=	3.el7
 USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX_RPM=	yes

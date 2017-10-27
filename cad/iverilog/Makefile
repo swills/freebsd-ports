@@ -1,10 +1,10 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/cad/iverilog/Makefile 430947 2017-01-09 13:16:49Z amdmi3 $
+# $FreeBSD: head/cad/iverilog/Makefile 452817 2017-10-24 21:01:15Z zeising $
 
 PORTNAME=	iverilog
-PORTVERSION=	10.1.1
+PORTVERSION=	10.2
 CATEGORIES=	cad
-MASTER_SITES=	ftp://icarus.com/pub/eda/verilog/v${PORTVERSION:C,\.[0-9]\.[0-9]$,,}/
+MASTER_SITES=	ftp://icarus.com/pub/eda/verilog/v10/
 DISTNAME=	verilog-${PORTVERSION}
 
 MAINTAINER=	zeising@FreeBSD.org
@@ -14,8 +14,7 @@ LICENSE=	GPLv2
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-suffix
-USES=		bison gmake
 
-MAKE_JOBS_UNSAFE=	yes
+USES=		bison gmake readline
 
 .include <bsd.port.mk>

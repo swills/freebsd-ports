@@ -1,9 +1,9 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/net-im/py-matrix-synapse/Makefile 452707 2017-10-23 13:19:35Z feld $
+# $FreeBSD: head/net-im/py-matrix-synapse/Makefile 452777 2017-10-24 14:36:59Z feld $
 
 PORTNAME=	matrix-synapse
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.24.0
+DISTVERSION=	0.24.1
 PORTREVISION=	0
 CATEGORIES=	net-im python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,7 +1,8 @@
-# $FreeBSD: head/lang/erlang-wx/Makefile 446848 2017-07-28 19:16:25Z olgeni $
+# $FreeBSD: head/lang/erlang-wx/Makefile 452849 2017-10-25 13:26:54Z olgeni $
 
 PORTNAME=	erlang
 PORTVERSION=	19.3.6.2
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	lang parallel
 MASTER_SITES=	http://www.erlang.org/download/:erlangorg		\
@@ -62,6 +63,8 @@ do-build:
 	cd ${WRKSRC}/lib/wx && ${GMAKE} ERL_TOP=${WRKSRC} TARGET=${CONFIGURE_TARGET}
 	${STRIP_CMD} ${WRKSRC}/lib/wx/priv/${CONFIGURE_TARGET}/erl_gl.so
 	${STRIP_CMD} ${WRKSRC}/lib/wx/priv/${CONFIGURE_TARGET}/wxe_driver.so
+	${MV} ${WRKSRC}/lib/wx/priv/${CONFIGURE_TARGET}/*.so ${WRKSRC}/lib/wx/priv
+	${RMDIR} ${WRKSRC}/lib/wx/priv/${CONFIGURE_TARGET}
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${APP_DIR}

@@ -1,8 +1,8 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/devel/gitlab-shell/Makefile 450130 2017-09-19 14:41:27Z tz $
+# $FreeBSD: head/devel/gitlab-shell/Makefile 452772 2017-10-24 14:20:55Z tz $
 
 PORTNAME=	gitlab-shell
-PORTVERSION=	5.1.1
+PORTVERSION=	5.3.1
 CATEGORIES=	devel
 MASTER_SITES=	https://gitlab.com/gitlab-org/${PORTNAME}/repository/archive.tar.gz?ref=v${PORTVERSION}&dummy=/
 DISTNAME=	${PORTNAME}-v${PORTVERSION}

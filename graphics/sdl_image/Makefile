@@ -1,9 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/graphics/sdl_image/Makefile 439814 2017-04-30 12:50:54Z sunpoet $
+# $FreeBSD: head/graphics/sdl_image/Makefile 452943 2017-10-26 19:04:42Z jbeich $
 
 PORTNAME=	sdl_image
 PORTVERSION=	1.2.12
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.libsdl.org/projects/SDL_image/release/
 DISTNAME=	SDL_image-${PORTVERSION}

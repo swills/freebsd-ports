@@ -1,9 +1,8 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/security/linux-c7-openssl/Makefile 434593 2017-02-22 16:27:44Z tijl $
+# $FreeBSD: head/security/linux-c7-openssl/Makefile 452945 2017-10-26 19:23:18Z tijl $
 
 PORTNAME=	openssl
-PORTVERSION=	1.0.1e
-PORTREVISION=	3
+PORTVERSION=	1.0.2k
 CATEGORIES=	security linux
 PKGNAMESUFFIX=	-libs
 LIB_DISTNAMES=	${LINUXNAME}-${DISTVERSIONFULL}
@@ -12,14 +11,14 @@ MAINTAINER=	emulation@FreeBSD.org
 COMMENT=	OpenSSL libraries (Linux CentOS ${LINUX_DIST_VER})
 
 LICENSE=	OpenSSL
-LICENSE_FILE=	${WRKSRC}/usr/share/doc/${LINUXNAME}-${PORTVERSION}/LICENSE
+LICENSE_FILE=	${WRKSRC}/usr/share/licenses/${LINUXNAME}-${PORTVERSION}/LICENSE
 
 CONFLICTS=	linux-c6-${PORTNAME}-[0-9]*
 
 DESCR=		${.CURDIR}/../${PORTNAME}/pkg-descr
 DOCSDIR=	${PREFIX}/usr/share/doc/${LINUXNAME}-${PORTVERSION}
 LINUXNAME=	${PORTNAME}${PKGNAMESUFFIX}
-RPMVERSION=	60.el7_3.1
+RPMVERSION=	8.el7
 USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX_RPM=	yes

@@ -1,12 +1,15 @@
 # Created by: tcberner
-# $FreeBSD: head/devel/kf5-kapidox/Makefile 428946 2016-12-19 15:56:24Z tcberner $
+# $FreeBSD: head/devel/kf5-kapidox/Makefile 452819 2017-10-24 21:30:29Z adridg $
 
 PORTNAME=	kapidox
-PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
+DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
 CATEGORIES=	devel kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KF5 API Documentation Tools
+
+LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		cmake:outsource kde:5 python tar:xz
 USE_KDE=	archive ecm

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-et-orbi/Makefile 451438 2017-10-07 09:13:02Z sunpoet $
+# $FreeBSD: head/devel/rubygem-et-orbi/Makefile 452877 2017-10-25 18:28:54Z sunpoet $
 
 PORTNAME=	et-orbi
-PORTVERSION=	1.0.7
+PORTVERSION=	1.0.8
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

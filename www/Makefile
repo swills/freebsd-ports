@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 452615 2017-10-21 21:12:03Z olgeni $
+# $FreeBSD: head/www/Makefile 452915 2017-10-26 11:34:01Z koobs $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1812,6 +1812,7 @@
     SUBDIR += py-recaptcha
     SUBDIR += py-requestbuilder
     SUBDIR += py-requests
+    SUBDIR += py-requests-cache
     SUBDIR += py-requests-file
     SUBDIR += py-requests-futures
     SUBDIR += py-requests-mock

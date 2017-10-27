@@ -1,11 +1,11 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/graphics/linux-c7-glx-utils/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/graphics/linux-c7-glx-utils/Makefile 452945 2017-10-26 19:23:18Z tijl $
 
 PORTNAME=	glx-utils
 PORTVERSION=	8.2.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics linux
-SRC_DISTFILES=	mesa-11.2.2-2.20160614.el7${SRC_SUFX}:SOURCE
+SRC_DISTFILES=	mesa-demos-${DISTVERSIONFULL}${SRC_SUFX}:SOURCE
 
 MAINTAINER=	emulation@FreeBSD.org
 COMMENT=	Mesa GLX utilities (Linux CentOS ${LINUX_DIST_VER})

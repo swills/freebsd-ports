@@ -1,12 +1,17 @@
 # Created by: tcberner
-# $FreeBSD: head/devel/kf5-kcoreaddons/Makefile 450056 2017-09-18 17:42:44Z tcberner $
+# $FreeBSD: head/devel/kf5-kcoreaddons/Makefile 452819 2017-10-24 21:30:29Z adridg $
 
 PORTNAME=	kcoreaddons
-PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
+DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
 CATEGORIES=	devel kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KF5 addons to QtCore
+
+LICENSE=	LGPL21+ BSD3CLAUSE
+LICENSE_COMB=	multi
+LICENSE_FILE_LGPL21+=	${WRKSRC}/COPYING.LIB
+LICENSE_FILE_BSD3CLAUSE=	${WRKSRC}/COPYING-CMAKE-SCRIPTS
 
 USES=		cmake:outsource compiler:c++11-lib kde:5 shared-mime-info tar:xz
 USE_KDE=	ecm

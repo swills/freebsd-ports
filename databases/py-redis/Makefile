@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/databases/py-redis/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/py-redis/Makefile 452919 2017-10-26 13:38:47Z olgeni $
 
 PORTNAME=	redis
-PORTVERSION=	2.10.5
+PORTVERSION=	2.10.6
 CATEGORIES=	databases python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

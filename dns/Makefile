@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 452469 2017-10-19 20:35:31Z sunpoet $
+# $FreeBSD: head/dns/Makefile 452917 2017-10-26 13:03:45Z mat $
 #
 
     COMMENT = Domain Name Service tools
@@ -12,6 +12,7 @@
     SUBDIR += bind9-devel
     SUBDIR += bind910
     SUBDIR += bind911
+    SUBDIR += bind912
     SUBDIR += bind99
     SUBDIR += bindgraph
     SUBDIR += bundy

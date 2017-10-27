@@ -1,9 +1,9 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/security/linux-c7-cyrus-sasl2/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/security/linux-c7-cyrus-sasl2/Makefile 452945 2017-10-26 19:23:18Z tijl $
 
 PORTNAME=	cyrus-sasl
 PORTVERSION=	2.1.26
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security linux
 PKGNAMESUFFIX=	-lib
 LIB_DISTNAMES=	${LINUXNAME}-${DISTVERSIONFULL}
@@ -16,7 +16,7 @@ CONFLICT=	linux-c6-${LINUXNAME}-[0-9]*
 DESCR=		${.CURDIR}/../${PORTNAME}2/pkg-descr
 DOCSDIR=	${PREFIX}/usr/share/doc/${LINUXNAME}-${PORTVERSION}
 LINUXNAME=	${PORTNAME}${PKGNAMESUFFIX}
-RPMVERSION=	20.el7_2
+RPMVERSION=	21.el7
 USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX_RPM=	yes

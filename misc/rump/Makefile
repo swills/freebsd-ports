@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/misc/rump/Makefile 452259 2017-10-17 02:29:24Z vanilla $
+# $FreeBSD: head/misc/rump/Makefile 452830 2017-10-25 04:28:31Z vanilla $
 
 PORTNAME=	rump
 PORTVERSION=	20170822
@@ -24,12 +24,12 @@ USE_LDCONFIG=	yes
 .include <bsd.port.pre.mk>
 
 .if ${ARCH} == "i386" || ${ARCH} == "amd64"
-PLIST_SUB+= 	X8664=""
+PLIST_SUB+=	X8664=""
 .else
-PLIST_SUB+= 	X8664="@comment "
+PLIST_SUB+=	X8664="@comment "
 .endif
 
-.if ${OSVERSION} >= 1100121
+.if ${OSVERSION} >= 1100508
 CFLAGS+=	-Wno-address-of-packed-member
 .endif
 

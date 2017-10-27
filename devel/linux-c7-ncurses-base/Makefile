@@ -1,9 +1,9 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/devel/linux-c7-ncurses-base/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/devel/linux-c7-ncurses-base/Makefile 452945 2017-10-26 19:23:18Z tijl $
 
 PORTNAME=	ncurses
 PORTVERSION=	5.9
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel linux
 PKGNAMESUFFIX=	-base
 SHARE_DISTNAMES=${LINUXNAME}-${DISTVERSIONFULL}
@@ -16,7 +16,7 @@ CONFLICTS=	linux-c6-${PORTNAME}-[0-9]*
 DESCR=		${.CURDIR}/../${PORTNAME}/pkg-descr
 DOCSDIR=	${PREFIX}/usr/share/doc/${LINUXNAME}-${PORTVERSION}
 LINUXNAME=	${PORTNAME}${PKGNAMESUFFIX}
-RPMVERSION=	13.20130511.el7
+RPMVERSION=	14.20130511.el7_4
 USES=		linux:c7
 USE_LINUX_RPM=	noarch
 

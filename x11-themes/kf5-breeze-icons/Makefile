@@ -1,12 +1,15 @@
 # Created by: tcberner
-# $FreeBSD: head/x11-themes/kf5-breeze-icons/Makefile 426118 2016-11-14 16:12:56Z tcberner $
+# $FreeBSD: head/x11-themes/kf5-breeze-icons/Makefile 452819 2017-10-24 21:30:29Z adridg $
 
 PORTNAME=	breeze-icons
-PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
+DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
 CATEGORIES=	x11-themes kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	The Breeze icon theme for KDE
+COMMENT=	Breeze icon theme for KDE
+
+LICENSE=	LGPL3+
+LICENSE_FILE=	${WRKSRC}/COPYING-ICONS
 
 USES=		cmake:outsource kde:5 tar:xz
 USE_KDE=	ecm

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-prometheus-client-mmap/Makefile 449058 2017-09-01 07:40:33Z tz $
+# $FreeBSD: head/devel/rubygem-prometheus-client-mmap/Makefile 452773 2017-10-24 14:23:45Z tz $
 
 PORTNAME=	prometheus-client-mmap
-DISTVERSION=	0.7.0.beta5
+DISTVERSION=	0.7.0.beta11
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,8 +1,8 @@
 # Created by: "Waitman Gobble" <uzimac@da3m0n8t3r.com>
-# $FreeBSD: head/devel/mongo-c-driver/Makefile 451611 2017-10-09 13:28:52Z swills $
+# $FreeBSD: head/devel/mongo-c-driver/Makefile 452887 2017-10-25 18:29:45Z sunpoet $
 
 PORTNAME=	mongo-c-driver
-PORTVERSION=	1.8.0
+PORTVERSION=	1.8.1
 CATEGORIES=	devel
 
 MAINTAINER=	ports@bsdserwis.com
@@ -17,7 +17,8 @@ LIB_DEPENDS=	libsasl2.so:security/cyrus-sasl2 \
 USE_GITHUB=	yes
 GH_ACCOUNT=	mongodb
 
-USES=		cmake:noninja pkgconfig
+USES=		cmake:outsource pkgconfig
+#USES=		cmake:noninja pkgconfig
 USE_LDCONFIG=	yes
 LDFLAGS+=	-pthread
 

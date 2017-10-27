@@ -1,8 +1,7 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: head/editors/openoffice-devel/files/Makefile.knobs 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/editors/openoffice-devel/files/Makefile.knobs 452937 2017-10-26 18:38:56Z truckman $
 
-CONFIGURE_ARGS+=	--with-jdk-home="${JAVA_HOME}" --with-ant-home="${LOCALBASE}/share/java/apache-ant"
 CONFIGURE_ARGS+=	--with-lang=${LOCALIZED_LANG}
 
 pre-fetch:

@@ -1,9 +1,9 @@
 # Created by: ports@nicandneal.net
-# $FreeBSD: head/devel/nimble/Makefile 434535 2017-02-21 14:36:59Z krion $
+# $FreeBSD: head/devel/nimble/Makefile 452936 2017-10-26 18:35:04Z tcberner $
 
 PORTNAME=	nimble
-PORTVERSION=	0.8.2
 DISTVERSIONPREFIX=	v
+DISTVERSION=	0.8.8
 CATEGORIES=	devel
 
 MAINTAINER=	ports@nicandneal.net

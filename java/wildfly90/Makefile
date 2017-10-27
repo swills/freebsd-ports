@@ -1,8 +1,9 @@
 # Created by: Alexander Yerenkow <yerenkow@gmail.com>
-# $FreeBSD: head/java/wildfly90/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/java/wildfly90/Makefile 452898 2017-10-25 23:01:36Z olgeni $
 
 PORTNAME=	wildfly90
 PORTVERSION=	9.0.2
+PORTREVISION=	1
 CATEGORIES=	java www
 MASTER_SITES=	http://download.jboss.org/wildfly/${WILDFLY_VERSION}/
 DISTNAME=	wildfly-${WILDFLY_VERSION}

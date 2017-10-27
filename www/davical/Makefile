@@ -1,10 +1,10 @@
 # Created by: Maurice Castro <maurice@castro.aus.net>
-# $FreeBSD: head/www/davical/Makefile 451009 2017-09-30 20:24:06Z tcberner $
+# $FreeBSD: head/www/davical/Makefile 452931 2017-10-26 17:39:49Z tcberner $
 
 PORTNAME=	davical
 DISTVERSIONPREFIX=	r
 DISTVERSION=	1.1.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES?=	www
 MASTER_SITES=	https://gitlab.com/${PORTNAME}-project/${PORTNAME}/repository/archive.tar.gz?ref=${DISTVERSIONPREFIX}${PORTVERSION}&dummy=/
 

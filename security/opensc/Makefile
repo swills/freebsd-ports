@@ -1,10 +1,10 @@
 # Created by: Bruce M Simpson
-# $FreeBSD: head/security/opensc/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/security/opensc/Makefile 452922 2017-10-26 14:26:13Z ale $
 
 PORTNAME=	opensc
-PORTVERSION=	0.16.0
+PORTVERSION=	0.17.0
 CATEGORIES=	security devel
-MASTER_SITES=	SF/${PORTNAME}/OpenSC/${DISTNAME}
+MASTER_SITES=	https://github.com/OpenSC/OpenSC/releases/download/0.17.0/
 
 MAINTAINER=	ale@FreeBSD.org
 COMMENT=	Libraries and utilities to access smart cards

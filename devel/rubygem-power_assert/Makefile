@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-power_assert/Makefile 448337 2017-08-19 16:05:59Z sunpoet $
+# $FreeBSD: head/devel/rubygem-power_assert/Makefile 452954 2017-10-26 20:05:22Z sunpoet $
 
 PORTNAME=	power_assert
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

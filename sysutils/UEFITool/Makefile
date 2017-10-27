@@ -1,9 +1,8 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/sysutils/UEFITool/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/sysutils/UEFITool/Makefile 452803 2017-10-24 17:47:39Z swills $
 
 PORTNAME=	UEFITool
-PORTVERSION=	40
-PORTREVISION=	1
+PORTVERSION=	43
 DISTVERSIONPREFIX=	A
 CATEGORIES=	sysutils
 

@@ -1,9 +1,9 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/devel/linux-c7-qt/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/devel/linux-c7-qt/Makefile 452945 2017-10-26 19:23:18Z tijl $
 
 PORTNAME=	qt
 PORTVERSION=	4.8.5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel linux
 
 MAINTAINER=	emulation@FreeBSD.org
@@ -13,7 +13,7 @@ CONFLICTS=	linux-c6-${PORTNAME}47-[0-9]*
 
 DATADIR=	${PREFIX}/usr/share/${PORTNAME}4
 DESCR=		${.CURDIR}/../../devel/${PORTNAME}4/pkg-descr
-RPMVERSION=	13.el7
+RPMVERSION=	15.el7_4
 USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX=	fontconfig png dbuslibs sqlite3 openssl

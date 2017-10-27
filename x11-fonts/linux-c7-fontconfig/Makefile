@@ -1,9 +1,9 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/x11-fonts/linux-c7-fontconfig/Makefile 433087 2017-02-01 20:10:41Z tijl $
+# $FreeBSD: head/x11-fonts/linux-c7-fontconfig/Makefile 452945 2017-10-26 19:23:18Z tijl $
 
 PORTNAME=	fontconfig
 PORTVERSION=	2.10.95
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-fonts linux
 
 MAINTAINER=	emulation@FreeBSD.org
@@ -12,7 +12,7 @@ COMMENT=	XML-based font configuration API for X Windows (Linux CentOS ${LINUX_DI
 CONFLICTS=	linux-c6-${PORTNAME}-[0-9]*
 
 DESCR=		${.CURDIR}/../${PORTNAME}/pkg-descr
-RPMVERSION=	10.el7
+RPMVERSION=	11.el7
 USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX=	expat

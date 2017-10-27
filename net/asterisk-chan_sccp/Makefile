@@ -1,5 +1,5 @@
 # Created by: Diederik de Groot
-# $FreeBSD: head/net/asterisk-chan_sccp/Makefile 421951 2016-09-12 19:18:11Z madpilot $
+# $FreeBSD: head/net/asterisk-chan_sccp/Makefile 452780 2017-10-24 15:05:30Z madpilot $
 
 PORTNAME=		chan_sccp
 PORTVERSION=		4.2.3
@@ -13,6 +13,9 @@ MAINTAINER=		ddegroot@talon.nl
 COMMENT=		Replacement for the SCCP channel driver in Asterisk
 
 LICENSE=		GPLv1
+
+BUILD_DEPENDS=		asterisk:net/asterisk13
+RUN_DEPENDS=		asterisk:net/asterisk13
 
 GNU_CONFIGURE=		yes
 USES=			iconv compiler libtool
@@ -29,19 +32,6 @@ LDFLAGS+=		-L${LOCALBASE}/lib ${ICONV_LIB}
 PLIST_FILES=		lib/asterisk/modules/chan_sccp.so \
 			etc/asterisk/sccp.conf \
 			etc/asterisk/sccp.conf.annotated
-
-OPTIONS_SINGLE=		ASTVER
-OPTIONS_SINGLE_ASTVER=	ASTERISK11 ASTERISK13
-OPTIONS_DEFAULT=	ASTERISK13
-
-ASTERISK11_DESC=	Depend on Asterisk 11
-ASTERISK13_DESC=	Depend on Asterisk 13
-
-ASTERISK11_BUILD_DEPENDS=	asterisk:net/asterisk11
-ASTERISK11_RUN_DEPENDS=		asterisk:net/asterisk11
-
-ASTERISK13_BUILD_DEPENDS=	asterisk:net/asterisk13
-ASTERISK13_RUN_DEPENDS=		asterisk:net/asterisk13
 
 post-build:
 	${STRIP_CMD} ${WRKSRC}/src/.libs/chan_sccp.so

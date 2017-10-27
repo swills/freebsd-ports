@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/terraform/Makefile 451128 2017-10-03 13:06:51Z lifanov $
+# $FreeBSD: head/sysutils/terraform/Makefile 452918 2017-10-26 13:35:41Z lifanov $
 
 PORTNAME=	terraform
-PORTVERSION=	0.10.7
+PORTVERSION=	0.10.8
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
@@ -19,5 +19,10 @@ PLIST_FILES=	bin/${PORTNAME}
 USES=	go
 
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${PORTNAME}
+
+post-patch:
+	${REINPLACE_CMD} 's|Prerelease = "dev"|Prerelease = ""|' \
+		${WRKSRC}/version/version.go
+
 
 .include <bsd.port.mk>

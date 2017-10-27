@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/linux-c7-libelf/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/devel/linux-c7-libelf/Makefile 452945 2017-10-26 19:23:18Z tijl $
 
 PORTNAME=	elfutils
-PORTVERSION=	0.166
-PORTREVISION=	1
+PORTVERSION=	0.168
 CATEGORIES=	devel
 PKGNAMESUFFIX=	-libelf
 LIB_DISTNAMES=	${LINUXNAME}-${DISTVERSIONFULL}
@@ -11,7 +10,7 @@ MAINTAINER=	emulation@FreeBSD.org
 COMMENT=	ELF file handling library (CentOS ${LINUX_DIST_VER})
 
 LINUXNAME=	${PORTNAME}${PKGNAMESUFFIX}
-RPMVERSION=	2.el7
+RPMVERSION=	8.el7
 USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX_RPM=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 452270 2017-10-17 07:37:56Z se $
+# $FreeBSD: head/sysutils/Makefile 452829 2017-10-25 03:01:56Z ultima $
 #
 
     COMMENT = System utilities
@@ -627,6 +627,7 @@
     SUBDIR += minimunin
     SUBDIR += minirsyslogd
     SUBDIR += mixer
+    SUBDIR += mkdesktop
     SUBDIR += mkfile
     SUBDIR += mkfwimage
     SUBDIR += mkntpwd
