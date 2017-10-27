@@ -78,7 +78,7 @@ RUN_DEPENDS=	git>=2.14.1:devel/git \
 	rubygem-grape-entity>=0.6.0:devel/rubygem-grape-entity \
 	rubygem-rack-cors0>=0.4.0:www/rubygem-rack-cors0 \
 	rubygem-hashie-forbidden_attributes>=0:devel/rubygem-hashie-forbidden_attributes \
-	rubygem-kaminari-rails4>=1.0:www/rubygem-kaminari-rails4 \
+	rubygem-kaminari-rails5>=1.0:www/rubygem-kaminari-rails5 \
 	rubygem-hamlit>=2.6.1:www/rubygem-hamlit \
 	rubygem-carrierwave>=1.1:www/rubygem-carrierwave \
 	rubygem-dropzonejs-rails>=0.7.1:www/rubygem-dropzonejs-rails \
