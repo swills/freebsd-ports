@@ -1,5 +1,5 @@
 
-# $FreeBSD: head/net/Makefile 452692 2017-10-23 06:49:03Z tobik $
+# $FreeBSD: head/net/Makefile 452863 2017-10-25 15:08:50Z nobutaka $
 #
 
     COMMENT = Networking tools
@@ -138,6 +138,7 @@
     SUBDIR += exabgp
     SUBDIR += exaddos
     SUBDIR += fb
+    SUBDIR += file2pcap
     SUBDIR += findmtu
     SUBDIR += flower
     SUBDIR += flowgrep

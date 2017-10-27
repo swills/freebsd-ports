@@ -1,8 +1,8 @@
 # Created by: Jev Björsell <ports@ecadlabs.com>
-# $FreeBSD: head/net-mgmt/prometheus/Makefile 443993 2017-06-20 16:34:17Z joneum $
+# $FreeBSD: head/net-mgmt/prometheus/Makefile 452787 2017-10-24 17:07:04Z ler $
 
 PORTNAME=	prometheus
-PORTVERSION=	1.7.1
+PORTVERSION=	1.8.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-mgmt
 

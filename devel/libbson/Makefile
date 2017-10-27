@@ -1,8 +1,8 @@
 # Created by: "Waitman Gobble" <uzimac@da3m0n8t3r.com>
-# $FreeBSD: head/devel/libbson/Makefile 451610 2017-10-09 13:27:44Z swills $
+# $FreeBSD: head/devel/libbson/Makefile 452886 2017-10-25 18:29:40Z sunpoet $
 
 PORTNAME=	libbson
-PORTVERSION=	1.8.0
+PORTVERSION=	1.8.1
 CATEGORIES=	devel
 
 MAINTAINER=	ports@bsdserwis.com

@@ -1,22 +1,25 @@
 # Created by: ruslan@shevchenko.kiev.ua
-# $FreeBSD: head/lang/erlang-runtime20/Makefile 451721 2017-10-10 21:31:30Z linimon $
+# $FreeBSD: head/lang/erlang-runtime20/Makefile 452844 2017-10-25 12:43:31Z olgeni $
 
 PORTNAME=	erlang
-PORTVERSION=	20.1
+PORTVERSION=	20.1.3
 CATEGORIES=	lang parallel java
 MASTER_SITES=	http://www.erlang.org/download/:erlangorg		\
 		http://erlang.stacken.kth.se/download/:erlangorg	\
-		http://www.csd.uu.se/ftp/mirror/erlang/download/:erlangorg
+		http://www.csd.uu.se/ftp/mirror/erlang/download/:erlangorg \
+		http://olgeni.olgeni.com/~olgeni/distfiles/:local	\
+		LOCAL/olgeni:local
 PKGNAMESUFFIX=	-runtime20
 DISTNAME=	otp_src_${ERL_RELEASE}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}:erlangorg	\
-		${ERLANG_MAN}:erlangorg
+		${ERLANG_MAN}:erlangorg			\
+		preloaded-${PORTVERSION}${EXTRACT_SUFX}:local
 DIST_SUBDIR=	erlang
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 PATCH_SITES=	http://olgeni.olgeni.com/~olgeni/distfiles/ \
 		LOCAL/olgeni
-PATCHFILES=
+PATCHFILES=	patch-otp-20.1.1 patch-otp-20.1.2 patch-otp-20.1.3
 
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Functional programming language from Ericsson
@@ -192,6 +195,7 @@ pre-configure:
 .if ! ${PORT_OPTIONS:MWX}
 	echo "disabled by port options" > ${WRKSRC}/lib/wx/SKIP
 .endif
+	cd ${WRKSRC} && ${TAR} --unlink -xzpf ${DISTDIR}/${DIST_SUBDIR}/preloaded-${PORTVERSION}${EXTRACT_SUFX}
 
 post-configure:
 .if ${PORT_OPTIONS:MODBC}

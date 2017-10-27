@@ -1,9 +1,9 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/graphics/linux-c7-jasper/Makefile 441914 2017-05-28 16:37:55Z tijl $
+# $FreeBSD: head/graphics/linux-c7-jasper/Makefile 452945 2017-10-26 19:23:18Z tijl $
 
 PORTNAME=	jasper
 PORTVERSION=	1.900.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics linux
 PKGNAMESUFFIX=	-libs
 LIB_DISTNAMES=	${LINUXNAME}-${DISTVERSIONFULL}
@@ -14,7 +14,7 @@ COMMENT=	JPEG-2000 reference implementation (Linux CentOS ${LINUX_DIST_VER})
 DESCR=		${.CURDIR}/../${PORTNAME}/pkg-descr
 DOCSDIR=	${PREFIX}/usr/share/doc/${LINUXNAME}-${PORTVERSION}
 LINUXNAME=	${PORTNAME}${PKGNAMESUFFIX}
-RPMVERSION=	30.el7_3
+RPMVERSION=	31.el7
 USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX=	jpeg

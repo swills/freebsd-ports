@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 452614 2017-10-21 20:22:31Z olgeni $
+# $FreeBSD: head/devel/Makefile 452958 2017-10-26 22:34:30Z jonathan $
 #
 
     COMMENT = Development utilities
@@ -1617,6 +1617,7 @@
     SUBDIR += lion
     SUBDIR += listserialc
     SUBDIR += liteide
+    SUBDIR += llbuild
     SUBDIR += lldb38
     SUBDIR += llnextgen
     SUBDIR += llvm-cheri

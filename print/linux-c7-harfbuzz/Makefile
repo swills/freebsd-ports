@@ -1,8 +1,7 @@
-# $FreeBSD: head/print/linux-c7-harfbuzz/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/print/linux-c7-harfbuzz/Makefile 452945 2017-10-26 19:23:18Z tijl $
 
 PORTNAME=	harfbuzz
-PORTVERSION=	0.9.36
-PORTREVISION=	1
+PORTVERSION=	1.3.2
 CATEGORIES=	print linux
 
 MAINTAINER=	emulation@FreeBSD.org

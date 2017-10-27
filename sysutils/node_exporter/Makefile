@@ -1,8 +1,8 @@
 # Created by: Jev Björsell <ports@ecadlabs.com>
-# $FreeBSD: head/sysutils/node_exporter/Makefile 451834 2017-10-12 09:06:17Z mat $
+# $FreeBSD: head/sysutils/node_exporter/Makefile 452865 2017-10-25 15:17:59Z swills $
 
 PORTNAME=	node_exporter
-PORTVERSION=	0.14.0
+PORTVERSION=	0.15.0
 DISTVERSIONPREFIX=v
 CATEGORIES=	sysutils
 

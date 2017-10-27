@@ -1,5 +1,5 @@
 # Created by: David Carlier
-# $FreeBSD: head/net/deviceatlas-enterprise-c/Makefile 452692 2017-10-23 06:49:03Z tobik $
+# $FreeBSD: head/net/deviceatlas-enterprise-c/Makefile 452913 2017-10-26 11:03:49Z tobik $
 
 PORTNAME=	deviceatlas-enterprise-c
 PORTVERSION=	2.1.3
@@ -17,8 +17,6 @@ LICENSE_TEXT=	The free of charge offering has a restricted use license, for own 
 LICENSE_PERMS=	none
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
-
-RESTRICTED=	Redistribution prohibited
 
 USES=		cmake tar:tgz
 USE_LDCONFIG=	yes

@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/py-python-gist/Makefile 433434 2017-02-05 17:36:08Z rm $
+# $FreeBSD: head/devel/py-python-gist/Makefile 452926 2017-10-26 16:49:15Z tcberner $
 
 PORTNAME=	python-gist
-PORTVERSION=	0.4.7
 DISTVERSIONPREFIX=	v
+DISTVERSION=	0.5.1
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -24,7 +24,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	jdowner
 GH_PROJECT=	gist
 
-USES=		python
+USES=		python:2.7-3.5
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/print/photoprint/Makefile 442589 2017-06-04 21:00:48Z cmt $
+# $FreeBSD: head/print/photoprint/Makefile 452960 2017-10-26 22:56:54Z bsam $
 
 PORTNAME=	photoprint
 DISTVERSION=	0.4.2-pre2
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	print graphics
 MASTER_SITES=	http://www.blackfiveimaging.co.uk/photoprint/
 
@@ -12,6 +12,8 @@ COMMENT=	Utility to print multiple images per sheet
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libcups.so:print/cups \
+		libfontconfig.so:x11-fonts/fontconfig \
+		libfreetype.so:print/freetype2 \
 		libgutenprint.so:print/gutenprint \
 		liblcms.so:graphics/lcms \
 		libnetpbm.so:graphics/netpbm \
@@ -20,7 +22,7 @@ LIB_DEPENDS=	libcups.so:print/cups \
 
 GNU_CONFIGURE=	yes
 USES=		desktop-file-utils gettext jpeg libtool pkgconfig
-USE_GNOME=	gdkpixbuf2 gtk20
+USE_GNOME=     cairo gdkpixbuf2 gtk20
 USE_XORG=	x11
 INSTALLS_ICONS=	yes
 
@@ -30,5 +32,7 @@ LIBS+=		-L${LOCALBASE}/lib -lX11
 post-patch:
 	@${REINPLACE_CMD} -e 's|glib/gstrfuncs.h|glib.h|g' \
 		${WRKSRC}/gp_cppsupport/gprinter.cpp
+	@${REINPLACE_CMD} -e 's|cups/cups.h|cups/ppd.h|g' \
+		${WRKSRC}/stp_support/printerqueues_unix.c
 
 .include <bsd.port.mk>

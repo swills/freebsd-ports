@@ -1,9 +1,8 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/graphics/linux-c7-cairo/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/graphics/linux-c7-cairo/Makefile 452945 2017-10-26 19:23:18Z tijl $
 
 PORTNAME=	cairo
-PORTVERSION=	1.14.2
-PORTREVISION=	4
+PORTVERSION=	1.14.8
 CATEGORIES=	graphics linux
 
 MAINTAINER=	emulation@FreeBSD.org
@@ -12,7 +11,7 @@ COMMENT=	Vector graphics library Cairo (Linux CentOS ${LINUX_DIST_VER})
 CONFLICTS=	linux-c6-${PORTNAME}-[0-9]*
 
 DESCR=		${.CURDIR}/../${PORTNAME}/pkg-descr
-RPMVERSION=	1.el7
+RPMVERSION=	2.el7
 USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX=	dri fontconfig pixman png xorglibs

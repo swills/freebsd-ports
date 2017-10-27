@@ -1,8 +1,8 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/devel/gogland-eap/Makefile 452493 2017-10-19 22:05:51Z bsam $
+# $FreeBSD: head/devel/gogland-eap/Makefile 452933 2017-10-26 18:07:58Z bsam $
 
 PORTNAME=	gogland-eap
-PORTVERSION=	173.3188.63
+PORTVERSION=	173.3415.23
 CATEGORIES=	devel java
 MASTER_SITES=	https://download.jetbrains.com/go/ \
 		http://download.jetbrains.com/go/

@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab/Makefile 451605 2017-10-09 10:42:34Z sunpoet $
+# $FreeBSD: head/www/gitlab/Makefile 452802 2017-10-24 17:42:13Z sunpoet $
 
 PORTNAME=	gitlab
 PORTVERSION=	10.1.0
@@ -216,18 +216,19 @@ NO_ARCH=	yes
 NO_BUILD=	yes
 
 post-patch-MYSQL-on:
-	@${CP} ${WRKSRC}/config/database.yml.mysql ${WRKSRC}/config/database.yml.sample
+	${CP} ${WRKSRC}/config/database.yml.mysql ${WRKSRC}/config/database.yml.sample
 
 post-patch-MYSQL-off:
-	@${REINPLACE_CMD} -e "/gem 'mysql2'/d" ${WRKSRC}/Gemfile
-	@${REINPLACE_CMD} -e "/gem 'peek-mysql2'/d" ${WRKSRC}/Gemfile
+	${REINPLACE_CMD} -e "/gem 'mysql2'/d" ${WRKSRC}/Gemfile
+	${REINPLACE_CMD} -e "/gem 'peek-mysql2'/d" ${WRKSRC}/Gemfile
 
 post-patch-PGSQL-on:
-	@${CP} ${WRKSRC}/config/database.yml.postgresql ${WRKSRC}/config/database.yml.sample
+	${REINPLACE_CMD} -e "/gem 'pg'/d" ${WRKSRC}/Gemfile
+	${CP} ${WRKSRC}/config/database.yml.postgresql ${WRKSRC}/config/database.yml.sample
 
 post-patch-PGSQL-off:
-	@${REINPLACE_CMD} -e "/gem 'pg'/d" ${WRKSRC}/Gemfile
-	@${REINPLACE_CMD} -e "/gem 'peek-pg'/d" ${WRKSRC}/Gemfile
+	${REINPLACE_CMD} -e "/gem 'pg'/d" ${WRKSRC}/Gemfile
+	${REINPLACE_CMD} -e "/gem 'peek-pg'/d" ${WRKSRC}/Gemfile
 
 do-install:
 	${FIND} ${WRKSRC} -name '*.orig' -delete

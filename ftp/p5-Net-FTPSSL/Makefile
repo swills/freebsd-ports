@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/ftp/p5-Net-FTPSSL/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/ftp/p5-Net-FTPSSL/Makefile 452878 2017-10-25 18:28:59Z sunpoet $
 
 PORTNAME=	Net-FTPSSL
-PORTVERSION=	0.38
+PORTVERSION=	0.39
 CATEGORIES=	ftp perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

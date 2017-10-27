@@ -1,9 +1,8 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/audio/linux-c7-pulseaudio-utils/Makefile 441916 2017-05-28 16:56:23Z tijl $
+# $FreeBSD: head/audio/linux-c7-pulseaudio-utils/Makefile 452945 2017-10-26 19:23:18Z tijl $
 
 PORTNAME=	pulseaudio
-PORTVERSION=	6.0
-PORTREVISION=	2
+PORTVERSION=	10.0
 CATEGORIES=	audio linux
 PKGNAMESUFFIX=	-utils
 BIN_DISTNAMES=	${LINUXNAME}-${DISTVERSIONFULL}
@@ -15,7 +14,7 @@ CONFLICTS=	linux-c6-${LINUXNAME}-[0-9]*
 
 DESCR=		${.CURDIR}/../${PORTNAME}/pkg-descr
 LINUXNAME=	${PORTNAME}${PKGNAMESUFFIX}
-RPMVERSION=	9.el7_3
+RPMVERSION=	3.el7
 USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX=	xorglibs pulseaudio-libs

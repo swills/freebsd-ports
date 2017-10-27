@@ -1,9 +1,8 @@
 # Created by: Piotr Kubaj
-# $FreeBSD: head/emulators/linux-c7/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/emulators/linux-c7/Makefile 452945 2017-10-26 19:23:18Z tijl $
 
 PORTNAME=	linux-c7
 PORTVERSION=	${LINUX_DIST_VER}
-PORTREVISION=	1
 CATEGORIES=	emulators linux
 
 MAINTAINER=	emulation@FreeBSD.org

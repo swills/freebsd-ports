@@ -1,9 +1,8 @@
 # Created by: Torsten Zuehlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/devel/rubygem-health_check/Makefile 445522 2017-07-11 17:00:42Z sunpoet $
+# $FreeBSD: head/devel/rubygem-health_check/Makefile 452799 2017-10-24 17:41:57Z sunpoet $
 
 PORTNAME=	health_check
-PORTVERSION=	2.6.0
-PORTREVISION=	2
+PORTVERSION=	2.7.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

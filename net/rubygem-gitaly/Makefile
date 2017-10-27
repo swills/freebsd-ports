@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/rubygem-gitaly/Makefile 449787 2017-09-13 13:44:13Z tz $
+# $FreeBSD: head/net/rubygem-gitaly/Makefile 452774 2017-10-24 14:25:30Z tz $
 
 PORTNAME=	gitaly
-PORTVERSION=	0.8.0
+PORTVERSION=	0.14.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/linux-c7-p11-kit/Makefile 445305 2017-07-08 08:35:54Z tijl $
+# $FreeBSD: head/security/linux-c7-p11-kit/Makefile 452945 2017-10-26 19:23:18Z tijl $
 
 PORTNAME=	p11-kit
-PORTVERSION=	0.20.7
-PORTREVISION=	1
+PORTVERSION=	0.23.5
 CATEGORIES=	security linux
 
 MAINTAINER=	emulation@FreeBSD.org

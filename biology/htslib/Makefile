@@ -1,8 +1,8 @@
 # Created by: Reed A. Cartwright <cartwright@asu.edu>
-# $FreeBSD: head/biology/htslib/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/biology/htslib/Makefile 452840 2017-10-25 10:19:50Z pizzamig $
 
 PORTNAME=	htslib
-PORTVERSION=	1.3.1
+PORTVERSION=	1.6
 CATEGORIES=	biology devel
 
 MAINTAINER=	cartwright@asu.edu
@@ -34,16 +34,8 @@ CURL_CONFIGURE_ENABLE=	libcurl
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
-MAKE_ENV=	INSTALL_LIB="${INSTALL_LIB}" \
-		INSTALL_DATA="${INSTALL_DATA}" \
-		INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
-		INSTALL_DIR="${MKDIR}"
-
 PLIST_SUB=	PORTVERSION="${PORTVERSION}"
 
 TEST_TARGET=	test
-
-post-patch:
-	@${REINPLACE_CMD} -e 's|@PORTVERSION@|${PORTVERSION}|g' ${WRKSRC}/configure.ac
 
 .include <bsd.port.mk>

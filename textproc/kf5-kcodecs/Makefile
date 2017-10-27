@@ -1,12 +1,15 @@
 # Created by: tcberner
-# $FreeBSD: head/textproc/kf5-kcodecs/Makefile 450056 2017-09-18 17:42:44Z tcberner $
+# $FreeBSD: head/textproc/kf5-kcodecs/Makefile 452819 2017-10-24 21:30:29Z adridg $
 
 PORTNAME=	kcodecs
-PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
+DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
 CATEGORIES=	textproc kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KF5 library for string manipulation
+
+LICENSE=	LGPL21
+LICENSE_FILE=	${WRKSRC}/COPYING.LIB
 
 USES=		cmake:outsource compiler:c++11-lib gperf kde:5 tar:xz
 USE_KDE=	ecm

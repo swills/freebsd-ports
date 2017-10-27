@@ -1,9 +1,8 @@
-# $FreeBSD: head/devel/gitaly/Makefile 449783 2017-09-13 13:34:47Z tz $
+# $FreeBSD: head/devel/gitaly/Makefile 452771 2017-10-24 14:19:28Z tz $
 
 PORTNAME=	gitaly
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.11.2
-PORTREVISION=	1
+DISTVERSION=	0.21.2
 CATEGORIES=	devel
 MASTER_SITES=	https://gitlab.com/gitlab-org/${PORTNAME}/repository/archive.tar.gz?ref=${DISTVERSIONPREFIX}${PORTVERSION}&dummy=/
 

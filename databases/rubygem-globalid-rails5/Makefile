@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/databases/rubygem-globalid-rails5/Makefile 447386 2017-08-05 03:25:17Z jrm $
+# $FreeBSD: head/databases/rubygem-globalid-rails5/Makefile 452880 2017-10-25 18:29:09Z sunpoet $
 
 PORTNAME=	globalid
-PORTVERSION=	0.4.0
+PORTVERSION=	0.4.1
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5

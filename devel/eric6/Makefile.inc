@@ -1,12 +1,12 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/devel/eric6/Makefile.inc 431402 2017-01-13 16:54:55Z mat $
+# $FreeBSD: head/devel/eric6/Makefile.inc 452964 2017-10-27 03:43:48Z dbn $
 #
 # This is a set of Makefile macros which allow to build the core and
 # localized language packages for devel/eric6:
 # french/eric6, german/eric6, russian/eric6
 
 PORTNAME=	eric6
-PORTVERSION=	6.1.11
+PORTVERSION=	17.10
 MASTER_SITES=	SF/eric-ide/${PORTNAME}/stable/${PORTVERSION}
 DISTNAME?=	${PORTNAME}-i18n-${I18N_LANG}-${PORTVERSION}
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}

@@ -1,14 +1,14 @@
 # Created by: Alan Eldridge <alane@FreeBSD.org>
-# $FreeBSD: head/www/firefox/Makefile 452748 2017-10-23 22:58:48Z jbeich $
+# $FreeBSD: head/www/firefox/Makefile 452907 2017-10-26 07:48:15Z jbeich $
 
 PORTNAME=	firefox
-DISTVERSION=	56.0.1
+DISTVERSION=	56.0.2
 DISTVERSIONSUFFIX=.source
-PORTREVISION=	4
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	www ipv6
 MASTER_SITES=	MOZILLA/${PORTNAME}/releases/${DISTVERSION}/source \
-		MOZILLA/${PORTNAME}/candidates/${DISTVERSION}-candidates/build2/source
+		MOZILLA/${PORTNAME}/candidates/${DISTVERSION}-candidates/build1/source
 
 MAINTAINER=	gecko@FreeBSD.org
 COMMENT=	Web browser based on the browser portion of Mozilla

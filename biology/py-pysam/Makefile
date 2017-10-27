@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/biology/py-pysam/Makefile 443056 2017-06-10 02:03:39Z wen $
+# $FreeBSD: head/biology/py-pysam/Makefile 452904 2017-10-26 05:30:35Z tcberner $
 
 PORTNAME=	pysam
-PORTVERSION=	0.11.2.2
+DISTVERSION=	0.12.0.1
 CATEGORIES=	biology python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

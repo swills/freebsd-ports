@@ -1,9 +1,9 @@
 # Created by: Marc Abramowitz (http://marc.abramowitz.info)
-# $FreeBSD: head/graphics/opencv/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/graphics/opencv/Makefile 452901 2017-10-26 04:54:37Z ler $
 
 PORTNAME?=	opencv
 PORTVERSION=	2.4.13.1
-PORTREVISION?=	8
+PORTREVISION?=	9
 CATEGORIES=	graphics
 
 MAINTAINER=	ports@FreeBSD.org
@@ -141,7 +141,7 @@ CMAKE_ARGS+=	-DBUILD_opencv_${module}:BOOL=Off
 LIB_DEPENDS+=	libopencv_legacy.so:graphics/opencv
 BUILD_DEPENDS+=	${PYNUMPY}
 RUN_DEPENDS+=	${PYNUMPY}
-USES+=		python:2.7
+USES+=		fortran python:2.7
 CMAKE_ARGS+=	-DBUILD_opencv_python:BOOL=On
 . for module in apps java stitching superres videostab
 CMAKE_ARGS+=	-DBUILD_opencv_${module}:BOOL=Off

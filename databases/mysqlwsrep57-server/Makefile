@@ -1,11 +1,10 @@
 # Created by: Vasil Dimov <vd@FreeBSD.org>
-# $FreeBSD: head/databases/mysqlwsrep57-server/Makefile 446741 2017-07-27 13:57:30Z mat $
+# $FreeBSD: head/databases/mysqlwsrep57-server/Makefile 452868 2017-10-25 17:05:40Z vd $
 
 PORTNAME=	mysqlwsrep
-PORTVERSION?=	5.7.18
+PORTVERSION?=	5.7.20
 DISTVERSIONPREFIX?=	wsrep_
-DISTVERSIONSUFFIX?=	-25.12
-PORTREVISION?=	1
+DISTVERSIONSUFFIX?=	-25.13
 CATEGORIES=	databases ipv6
 MASTER_SITES+=	SF/boost/boost/1.59.0:boost
 PKGNAMESUFFIX=	57-server

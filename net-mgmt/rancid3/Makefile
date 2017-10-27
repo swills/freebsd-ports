@@ -1,9 +1,9 @@
 # Created by: Janos.Mohacsi@bsd.hu
-# $FreeBSD: head/net-mgmt/rancid3/Makefile 439419 2017-04-25 20:55:35Z feld $
+# $FreeBSD: head/net-mgmt/rancid3/Makefile 452870 2017-10-25 18:13:38Z feld $
 
 PORTNAME=	rancid
-PORTVERSION=	3.6.2
-PORTREVISION=	4
+PORTVERSION=	3.7
+PORTREVISION=	0
 CATEGORIES=	net-mgmt
 MASTER_SITES=	ftp://ftp.shrubbery.net/pub/rancid/
 PKGNAMESUFFIX=	3

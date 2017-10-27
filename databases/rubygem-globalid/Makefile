@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/databases/rubygem-globalid/Makefile 438725 2017-04-17 16:06:41Z sunpoet $
+# $FreeBSD: head/databases/rubygem-globalid/Makefile 452879 2017-10-25 18:29:04Z sunpoet $
 
 PORTNAME=	globalid
-PORTVERSION=	0.4.0
+PORTVERSION=	0.4.1
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

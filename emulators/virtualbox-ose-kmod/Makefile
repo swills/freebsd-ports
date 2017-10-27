@@ -1,8 +1,9 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/emulators/virtualbox-ose-kmod/Makefile 452715 2017-10-23 16:49:37Z jkim $
+# $FreeBSD: head/emulators/virtualbox-ose-kmod/Makefile 452816 2017-10-24 20:06:57Z jkim $
 
 PORTNAME=	virtualbox-ose
 PORTVERSION=	5.2.0
+PORTREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	http://download.virtualbox.org/virtualbox/${PORTVERSION}/
 PKGNAMESUFFIX=	-kmod
@@ -41,6 +42,7 @@ CONFLICTS_INSTALL=	virtualbox-ose-kmod-devel-* \
 			virtualbox-ose-kmod-legacy-*
 
 OPTIONS_DEFINE=	DEBUG VIMAGE
+OPTIONS_DEFAULT=VIMAGE
 OPTIONS_SUB=	yes
 DEBUG_DESC=	Debug symbols, additional logs and assertions
 VIMAGE_DESC=	VIMAGE virtual networking support

@@ -1,9 +1,8 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/security/linux-c7-libtasn1/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/security/linux-c7-libtasn1/Makefile 452945 2017-10-26 19:23:18Z tijl $
 
 PORTNAME=	libtasn1
-PORTVERSION=	3.8
-PORTREVISION=	1
+PORTVERSION=	4.10
 CATEGORIES=	security linux
 
 MAINTAINER=	emulation@FreeBSD.org
@@ -14,7 +13,7 @@ LICENSE=	LGPL21+
 CONFLICT=	linux-c6-${PORTNAME}-[0-9]*
 
 DESCR=		${.CURDIR}/../${PORTNAME}/pkg-descr
-RPMVERSION=	3.el7
+RPMVERSION=	1.el7
 USES=		cpe linux:c7
 CPE_VENDOR=	gnu
 USE_LDCONFIG=	yes

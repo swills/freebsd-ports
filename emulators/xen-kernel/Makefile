@@ -1,8 +1,8 @@
-# $FreeBSD: head/emulators/xen-kernel/Makefile 451882 2017-10-12 15:02:30Z royger $
+# $FreeBSD: head/emulators/xen-kernel/Makefile 452769 2017-10-24 14:11:22Z royger $
 
 PORTNAME=	xen
 PORTVERSION=	4.7.2
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	emulators
 MASTER_SITES=	http://downloads.xenproject.org/release/xen/${PORTVERSION}/
 PKGNAMESUFFIX=	-kernel
@@ -80,7 +80,8 @@ EXTRA_PATCHES=	${FILESDIR}/0001-xen-logdirty-prevent-preemption-if-finished.patc
 		${FILESDIR}/xsa241-4.8.patch:-p1 \
 		${FILESDIR}/xsa242-4.9.patch:-p1 \
 		${FILESDIR}/xsa243-4.7.patch:-p1 \
-		${FILESDIR}/xsa244-4.7.patch:-p1
+		${FILESDIR}/xsa244-4.7.patch:-p1 \
+		${FILESDIR}/xsa236-4.9.patch:-p1
 
 .include <bsd.port.options.mk>
 

@@ -1,7 +1,6 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/archivers/php70-zip/Makefile 450775 2017-09-27 18:08:14Z rakuco $
+# $FreeBSD: head/archivers/php70-zip/Makefile 452923 2017-10-26 15:21:23Z tz $
 
-PORTREVISION=	1
 CATEGORIES=	archivers
 
 MASTERDIR=	${.CURDIR}/../../lang/php70

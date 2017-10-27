@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/nmsg/Makefile 434988 2017-02-27 20:50:05Z truckman $
+# $FreeBSD: head/net/nmsg/Makefile 452910 2017-10-26 10:05:12Z truckman $
 
 PORTNAME=	nmsg
-PORTVERSION=	0.13.0
+PORTVERSION=	0.13.1
 CATEGORIES=	net
 MASTER_SITES=	FARSIGHT LOCAL/truckman/farsight
 
