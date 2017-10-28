@@ -21,7 +21,8 @@
  
  [[storage]]
  name = "default"
- path = "/home/git/repositories"
+-path = "/home/git/repositories"
++path = "/usr/home/git/repositories"
  
 +[gitaly-ruby]
 +dir = "/usr/local/bin/ruby"
