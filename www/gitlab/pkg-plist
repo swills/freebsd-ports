@@ -11412,6 +11412,7 @@
 @dir(,,744) %%WWWDIR%%/locale/fr
 @dir(,,744) %%WWWDIR%%/locale/it
 @dir(,,744) %%WWWDIR%%/locale/ja
+@dir(,,744) %%WWWDIR%%/locale/ko
 @dir(,,744) %%WWWDIR%%/locale/pt_BR
 @dir(,,744) %%WWWDIR%%/locale/ru
 @dir(,,744) %%WWWDIR%%/locale/uk
