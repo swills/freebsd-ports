@@ -4342,6 +4342,7 @@
 %%WWWDIR%%/app/views/projects/issues/_nav_btns.html.haml
 %%WWWDIR%%/app/views/projects/issues/_new_branch.html.haml
 %%WWWDIR%%/app/views/projects/issues/_related_branches.html.haml
+%%WWWDIR%%/app/views/projects/issues/edit.html.haml
 %%WWWDIR%%/app/views/projects/issues/index.atom.builder
 %%WWWDIR%%/app/views/projects/issues/index.html.haml
 %%WWWDIR%%/app/views/projects/issues/new.html.haml
@@ -5847,6 +5848,8 @@
 %%WWWDIR%%/db/migrate/20171006090010_add_build_foreign_key_to_ci_build_trace_sections.rb
 %%WWWDIR%%/db/migrate/20171006090100_create_ci_build_trace_section_names.rb
 %%WWWDIR%%/db/migrate/20171006091000_add_name_foreign_key_to_ci_build_trace_sections.rb
+%%WWWDIR%%/db/migrate/20171012101043_add_circuit_breaker_properties_to_application_settings.rb
+%%WWWDIR%%/db/migrate/20171017145932_add_new_circuitbreaker_settings_to_application_settings.rb
 %%WWWDIR%%/db/migrate/limits_to_mysql.rb
 %%WWWDIR%%/db/migrate/markdown_cache_limits_to_mysql.rb
 %%WWWDIR%%/db/migrate/merge_request_diff_file_limits_to_mysql.rb
@@ -5958,6 +5961,7 @@
 %%WWWDIR%%/doc/administration/high_availability/redis.md
 %%WWWDIR%%/doc/administration/high_availability/redis_source.md
 %%WWWDIR%%/doc/administration/housekeeping.md
+%%WWWDIR%%/doc/administration/img/circuitbreaker_config.png
 %%WWWDIR%%/doc/administration/img/custom_hooks_error_msg.png
 %%WWWDIR%%/doc/administration/img/failing_storage.png
 %%WWWDIR%%/doc/administration/img/high_availability/active-active-diagram.png
@@ -6439,7 +6443,6 @@
 %%WWWDIR%%/doc/gitlab-basics/img/create_new_project_info.png
 %%WWWDIR%%/doc/gitlab-basics/img/fork_choose_namespace.png
 %%WWWDIR%%/doc/gitlab-basics/img/fork_new.png
-%%WWWDIR%%/doc/gitlab-basics/img/merge_request_new.png
 %%WWWDIR%%/doc/gitlab-basics/img/merge_request_page.png
 %%WWWDIR%%/doc/gitlab-basics/img/merge_request_select_branch.png
 %%WWWDIR%%/doc/gitlab-basics/img/new_issue_button.png
@@ -6450,7 +6453,6 @@
 %%WWWDIR%%/doc/gitlab-basics/img/profile_settings_ssh_keys_single_key.png
 %%WWWDIR%%/doc/gitlab-basics/img/profile_settings_ssh_keys_title.png
 %%WWWDIR%%/doc/gitlab-basics/img/project_clone_url.png
-%%WWWDIR%%/doc/gitlab-basics/img/project_navbar.png
 %%WWWDIR%%/doc/gitlab-basics/img/public_file_link.png
 %%WWWDIR%%/doc/gitlab-basics/start-using-git.md
 %%WWWDIR%%/doc/hooks/custom_hooks.md
@@ -7942,6 +7944,7 @@
 %%WWWDIR%%/lib/gitlab/git/rev_list.rb
 %%WWWDIR%%/lib/gitlab/git/storage.rb
 %%WWWDIR%%/lib/gitlab/git/storage/circuit_breaker.rb
+%%WWWDIR%%/lib/gitlab/git/storage/circuit_breaker_settings.rb
 %%WWWDIR%%/lib/gitlab/git/storage/forked_storage_check.rb
 %%WWWDIR%%/lib/gitlab/git/storage/health.rb
 %%WWWDIR%%/lib/gitlab/git/storage/null_circuit_breaker.rb
@@ -11034,6 +11037,7 @@
 %%WWWDIR%%/spec/support/quick_actions_helpers.rb
 %%WWWDIR%%/spec/support/rake_helpers.rb
 %%WWWDIR%%/spec/support/reactive_caching_helpers.rb
+%%WWWDIR%%/spec/support/redis_without_keys.rb
 %%WWWDIR%%/spec/support/redis/redis_shared_examples.rb
 %%WWWDIR%%/spec/support/reference_parser_helpers.rb
 %%WWWDIR%%/spec/support/reference_parser_shared_examples.rb
