@@ -1,7 +1,7 @@
 # $FreeBSD: head/security/rubygem-net-scp/Makefile 414136 2016-04-27 21:57:31Z swills $
 
 PORTNAME=	rbnacl
-PORTVERSION=	5.0.0
+PORTVERSION=	4.0.2
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
@@ -10,6 +10,7 @@ COMMENT=	The Networking and Cryptography (NaCl) library provides a high-level to
 
 LICENSE=	MIT
 
+LIB_DEPENDS=	libsodium.so:security/libsodium
 BUILD_DEPENDS=	rubygem-bundler>=0:sysutils/rubygem-bundler
 RUN_DEPENDS=	rubygem-ffi>=0:devel/rubygem-ffi
 
