@@ -1,5 +1,5 @@
 # Created by: Tz-Huan Huang <tzhuan@csie.org>
-# $FreeBSD: head/math/fann/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/math/fann/Makefile 453151 2017-10-30 01:43:55Z wen $
 
 PORTNAME=	fann
 PORTVERSION=	2.2.0
@@ -9,6 +9,9 @@ DISTNAME=	FANN-2.2.0-Source
 
 MAINTAINER=	tzhuan@csie.org
 COMMENT=	Free open source neural network library
+
+LICENSE=	LGPL21+
+LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
 WRKSRC=		${WRKDIR}/FANN-2.2.0-Source
 

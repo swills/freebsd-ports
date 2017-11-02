@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/dns/p5-Net-DNS-Resolver-Mock/Makefile 452469 2017-10-19 20:35:31Z sunpoet $
+# $FreeBSD: head/dns/p5-Net-DNS-Resolver-Mock/Makefile 453296 2017-11-01 16:50:17Z sunpoet $
 
 PORTNAME=	Net-DNS-Resolver-Mock
-PORTVERSION=	1.20170814
+PORTVERSION=	1.20171031
 CATEGORIES=	dns perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -17,6 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 BUILD_DEPENDS=	p5-Net-DNS>=0:dns/p5-Net-DNS
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
+NO_ARCH=	yes
 USE_PERL5=	configure
 USES=		perl5
 

@@ -1,9 +1,8 @@
 # Created by: Jyun-Yan You <jyyou@cs.nctu.edu.tw>
-# $FreeBSD: head/net/rubygem-net-ldap/Makefile 438735 2017-04-17 16:50:32Z miwi $
+# $FreeBSD: head/net/rubygem-net-ldap/Makefile 453372 2017-11-02 19:02:06Z sunpoet $
 
 PORTNAME=	net-ldap
-PORTVERSION=	0.16.0
-PORTREVISION=	1
+PORTVERSION=	0.16.1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

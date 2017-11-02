@@ -1,5 +1,5 @@
 # Created by: Dryice Liu
-# $FreeBSD: head/net/tcping/Makefile 442528 2017-06-04 04:08:09Z miwi $
+# $FreeBSD: head/net/tcping/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	tcping
 PORTVERSION=	1.3.5
@@ -10,8 +10,8 @@ MASTER_SITES=	http://www.linuxco.de/tcping/ \
 MAINTAINER=	dryice@FreeBSD.org
 COMMENT=	Do a TCP connect to the given IP/port combination
 
-LICENSE=        LGPL3
-LICENSE_FILE=   ${WRKSRC}/LICENSE
+LICENSE=	LGPL3
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 PLIST_FILES=	bin/tcping
 PORTDOCS=	README

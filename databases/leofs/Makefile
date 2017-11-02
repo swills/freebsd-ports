@@ -1,5 +1,5 @@
 # Created by: Mikolaj Golub <trociny@FreeBSD.org>
-# $FreeBSD: head/databases/leofs/Makefile 451402 2017-10-06 19:06:37Z trociny $
+# $FreeBSD: head/databases/leofs/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	leofs
 PORTVERSION=	1.3.7
@@ -225,10 +225,10 @@ do-install:
 	    ${FIND} ${LEOFS_BASEDIR:S/${PREFIX}\///}			\
 		${LEOFS_LIBXDIR:S/${PREFIX}\///} -type f -o -type l	\
 		| ${SORT} > ${WRKDIR}/PLIST.leofs
-	cd ${STAGEDIR}${PREFIX} ; 					\
+	cd ${STAGEDIR}${PREFIX} ;					\
 	    ${FIND} ${LEOFS_BASEDIR:S/${PREFIX}\///}			\
 		${LEOFS_LIBXDIR:S/${PREFIX}\///} -type d -empty		\
-		| ${SORT} -r | ${SED} -e 's/^/@dir /' 			\
+		| ${SORT} -r | ${SED} -e 's/^/@dir /'			\
 		>> ${WRKDIR}/PLIST.leofs
 	${ECHO_CMD} "r ${TMPPLIST}"			>  ${WRKDIR}/ex.script
 	${ECHO_CMD} "/Insert PLIST.leofs"		>> ${WRKDIR}/ex.script

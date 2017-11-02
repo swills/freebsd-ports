@@ -1,5 +1,5 @@
 # Created by: Muhammad Moinur Rahman <5u623l20@gmail.com>
-# $FreeBSD: head/net/ndpi/Makefile 451251 2017-10-04 21:20:36Z madpilot $
+# $FreeBSD: head/net/ndpi/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	ndpi
 PORTVERSION=	2.0.2017.09.13
@@ -19,7 +19,7 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 LIBS+=		-ljson-c
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
-USES=	 	autoreconf compiler:c++11-lang libtool pathfix pkgconfig
+USES=		autoreconf compiler:c++11-lang libtool pathfix pkgconfig
 INSTALL_TARGET=	install-strip
 
 USE_GITHUB=	yes

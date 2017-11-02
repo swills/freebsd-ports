@@ -1,5 +1,5 @@
 # Created by: paulh@logicsquad.net
-# $FreeBSD: head/textproc/refdb/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/textproc/refdb/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	refdb
 PORTVERSION=	0.9.9
@@ -31,7 +31,7 @@ XMLCATMGR=	${LOCALBASE}/bin/xmlcatmgr
 OPTIONS_DEFINE=		DOCS CATALOG
 OPTIONS_SINGLE=		DB
 OPTIONS_SINGLE_DB=	MYSQL PGSQL SQLITE
-OPTIONS_EXCLUDE=	CATALOG 	# may not be implemented correctly
+OPTIONS_EXCLUDE=	CATALOG		# may not be implemented correctly
 CATALOG_DESC=		Install SGML catalog
 
 OPTIONS_DEFAULT=	PGSQL

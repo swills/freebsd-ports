@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBD-Oracle/Makefile 441492 2017-05-22 21:38:38Z eugen $
+# $FreeBSD: head/databases/p5-DBD-Oracle/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	DBD-Oracle
 PORTVERSION=	1.19
@@ -38,7 +38,7 @@ post-patch:
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/DBD/Oracle/Oracle.so
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
-	${INSTALL_DATA} ${WRKSRC}/Oracle.ex/Readme 	${STAGEDIR}${EXAMPLESDIR}
+	${INSTALL_DATA} ${WRKSRC}/Oracle.ex/Readme	${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_SCRIPT} ${WRKSRC}/Oracle.ex/*.pl	${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_SCRIPT} ${WRKSRC}/Oracle.ex/japh	${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_SCRIPT} ${WRKSRC}/Oracle.ex/sql	${STAGEDIR}${EXAMPLESDIR}

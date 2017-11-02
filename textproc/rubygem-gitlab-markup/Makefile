@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-gitlab-markup/Makefile 450268 2017-09-21 15:29:24Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-gitlab-markup/Makefile 453308 2017-11-01 16:51:18Z sunpoet $
 
 PORTNAME=	gitlab-markup
-PORTVERSION=	1.6.2
+PORTVERSION=	1.6.3
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

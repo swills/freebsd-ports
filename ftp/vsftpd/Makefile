@@ -1,5 +1,5 @@
 # Created by: Neil Blakey-Milner
-# $FreeBSD: head/ftp/vsftpd/Makefile 417651 2016-06-27 11:31:10Z mat $
+# $FreeBSD: head/ftp/vsftpd/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	vsftpd
 PORTVERSION=	3.0.3
@@ -14,7 +14,7 @@ COMMENT=	FTP daemon that aims to be "very secure"
 LICENSE=	GPLv2
 
 #USERS=		ftp
-#GROUPS=		ftp
+#GROUPS=	ftp
 USES=		alias
 ALL_TARGET=	vsftpd
 USE_RC_SUBR=	vsftpd

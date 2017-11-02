@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/turnserver/Makefile 442454 2017-06-02 19:15:40Z bhughes $
+# $FreeBSD: head/net/turnserver/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	turnserver
 PORTVERSION=	4.5.0.6
@@ -113,7 +113,7 @@ do-install:
 		${STAGEDIR}${PREFIX}/etc/turnserver.conf.default
 	${MKDIR} ${STAGEDIR}${PREFIX}/include/turn
 	(cd ${WRKSRC}/include/turn && ${COPYTREE_SHARE} "client ns_turn_defs.h" \
-	       	${STAGEDIR}${PREFIX}/include/turn)
+		${STAGEDIR}${PREFIX}/include/turn)
 
 do-install-SQLITE-on:
 	${MKDIR} ${STAGEDIR}${PREFIX}/var/db

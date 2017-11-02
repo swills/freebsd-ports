@@ -1,5 +1,5 @@
 # Created by: jim@thehousleys.net
-# $FreeBSD: head/sysutils/healthd/Makefile 411685 2016-03-23 06:51:50Z amdmi3 $
+# $FreeBSD: head/sysutils/healthd/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	healthd
 PORTVERSION=	0.7.9
@@ -24,7 +24,7 @@ SUB_FILES=	pkg-message
 
 OPTIONS_DEFINE=	IPV6 FULL_CONFIG DOCS
 
-FULL_CONFIG_DESC= 		Remotely reading the full config
+FULL_CONFIG_DESC=		Remotely reading the full config
 
 IPV6_CONFIGURE_ENABLE=		ipv6
 FULL_CONFIG_CONFIGURE_ENABLE=	full-config

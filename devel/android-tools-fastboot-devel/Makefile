@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/android-tools-fastboot-devel/Makefile 448529 2017-08-22 13:24:00Z jbeich $
+# $FreeBSD: head/devel/android-tools-fastboot-devel/Makefile 453204 2017-10-30 18:36:22Z jbeich $
 
 # Hint: git describe --abbrev=12 --match android-o-preview-2
 DISTVERSION=	o-preview-2-332
@@ -14,6 +14,5 @@ CONFLICTS_INSTALL=	${PORTNAME}-[0-9]*
 
 MASTERDIR=	${.CURDIR}/../android-tools-fastboot
 DISTINFO_FILE=	${.CURDIR}/distinfo
-EXTRA_PATCHES=	${.CURDIR}/files/patch-*
 
 .include "${MASTERDIR}/Makefile"

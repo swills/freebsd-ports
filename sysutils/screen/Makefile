@@ -1,5 +1,5 @@
 # Created by: Andrey Chernov <ache@FreeBSD.org>
-# $FreeBSD: head/sysutils/screen/Makefile 452809 2017-10-24 19:07:36Z cy $
+# $FreeBSD: head/sysutils/screen/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	screen
 PORTVERSION=	4.6.2
@@ -86,8 +86,8 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|/dev/ptmx|/nonexistent|' ${WRKSRC}/configure
 
 # Bug 191029:	Users can choose whether to use sockets or named pipes.
-# 		Choose sockets if you don't know what the difference is.
-# 		Choose named pipes if your environment is heterogeneous,
+#		Choose sockets if you don't know what the difference is.
+#		Choose named pipes if your environment is heterogeneous,
 #		using both screen 4.0.3 and 4.2.1.
 # Bug 191017
 post-configure-NAMED_PIPES-on:

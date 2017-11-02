@@ -1,8 +1,8 @@
 # Created by: <ports@c0decafe.net>
-# $FreeBSD: head/security/p5-IO-Async-SSL/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-IO-Async-SSL/Makefile 453357 2017-11-02 19:00:50Z sunpoet $
 
 PORTNAME=	IO-Async-SSL
-PORTVERSION=	0.20
+PORTVERSION=	0.21
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

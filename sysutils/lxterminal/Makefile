@@ -1,9 +1,8 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/sysutils/lxterminal/Makefile 435632 2017-03-07 18:22:19Z olivierd $
+# $FreeBSD: head/sysutils/lxterminal/Makefile 453322 2017-11-01 22:12:32Z jbeich $
 
 PORTNAME=	lxterminal
-PORTVERSION=	0.3.0
-PORTREVISION=	1
+PORTVERSION=	0.3.1
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/lxde/LXTerminal%20%28terminal%20emulator%29/LXTerminal%20${PORTVERSION}/
 

@@ -1,5 +1,5 @@
 # Created by: girgen@FreeBSD.org
-# $FreeBSD: head/security/pecl-krb5/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/security/pecl-krb5/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	krb5
 PORTVERSION=	1.1.1
@@ -8,7 +8,7 @@ CATEGORIES=	security pear
 MAINTAINER=	girgen@FreeBSD.org
 COMMENT=	PECL classes for PAM integration
 
-LICENSE= 	BSD3CLAUSE
+LICENSE=	BSD3CLAUSE
 
 LIB_DEPENDS=	libkrb5support.so:security/krb5
 

@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/mail/p5-Mail-Procmail/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Mail-Procmail/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	Mail-Procmail
 PORTVERSION=	1.08
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 module provides procmail-like tools
 
-RUN_DEPENDS= 	p5-LockFile-Simple>=0:devel/p5-LockFile-Simple \
+RUN_DEPENDS=	p5-LockFile-Simple>=0:devel/p5-LockFile-Simple \
 		p5-Mail-Tools>=0:mail/p5-Mail-Tools
 
 USES=		perl5

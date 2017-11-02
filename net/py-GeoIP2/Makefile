@@ -1,8 +1,8 @@
 # Created by: Olivier Cochard-Labbé <olivier@FreeBSD.org>
-# $FreeBSD: head/net/py-GeoIP2/Makefile 440550 2017-05-10 09:29:15Z olivier $
+# $FreeBSD: head/net/py-GeoIP2/Makefile 453216 2017-10-31 06:32:46Z olivier $
 
 PORTNAME=	GeoIP2
-PORTVERSION=	2.5.0
+PORTVERSION=	2.6.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net python geography
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

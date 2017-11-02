@@ -1,9 +1,9 @@
 # Created by: Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
-# $FreeBSD: head/biology/molden/Makefile 450799 2017-09-28 02:43:40Z jmd $
+# $FreeBSD: head/biology/molden/Makefile 453261 2017-11-01 03:48:30Z jmd $
 
 PORTNAME=	molden
 PORTVERSION=	5.7
-PORTREVISION=	12
+PORTREVISION=	13
 PORTEPOCH=	1
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.cmbi.ru.nl/pub/molgraph/molden/

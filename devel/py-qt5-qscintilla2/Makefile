@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-qt5-qscintilla2/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/devel/py-qt5-qscintilla2/Makefile 453263 2017-11-01 07:32:34Z antoine $
 
 PORTNAME=	qscintilla2
 PORTVERSION=	${QSCI2_VERSION}
@@ -29,7 +29,8 @@ DEBUG_CONFIGURE_ON=	--debug --trace
 
 QSCIDIR=	${PREFIX}/share/qt5/qsci
 CONFIGURE_ARGS=	--pyqt PyQt5 -d ${PYTHONPREFIX_SITELIBDIR}/PyQt5 -v ${SIPDIR} \
-		--apidir ${QSCIDIR} --qmake ${QMAKE} --pyqt-sipdir ${SIPDIR}
+		--apidir ${QSCIDIR} --qmake ${QMAKE} --pyqt-sipdir ${SIPDIR} \
+		--sip ${LOCALBASE}/bin/sip-${PYTHON_VER}
 WRKSRC=		${WRKDIR}/${DISTNAME}/Python
 ALL_TARGET=	#empty
 

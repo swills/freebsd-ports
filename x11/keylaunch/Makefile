@@ -1,5 +1,5 @@
 # Created by: mwm@mired.org
-# $FreeBSD: head/x11/keylaunch/Makefile 364347 2014-08-08 08:42:44Z olgeni $
+# $FreeBSD: head/x11/keylaunch/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	keylaunch
 PORTVERSION=	1.3.0
@@ -15,7 +15,7 @@ USES=		perl5 gmake
 USE_PERL5=	build
 USE_XORG=	x11
 
-SUB_FILES= 	pkg-message
+SUB_FILES=	pkg-message
 
 post-patch:
 	@${REINPLACE_CMD} -i '' -e 's|%%LOCALBASE%%|${LOCALBASE}|' ${WRKSRC}/Makefile

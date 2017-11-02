@@ -1,11 +1,11 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/ftp/wget/Makefile 446854 2017-07-28 21:45:20Z jkim $
+# $FreeBSD: head/ftp/wget/Makefile 452985 2017-10-27 12:50:37Z vd $
 
 PORTNAME=	wget
-DISTVERSION=	1.19.1
-PORTREVISION=	1
+DISTVERSION=	1.19.2
 CATEGORIES=	ftp www ipv6
 MASTER_SITES=	GNU
+EXTRACT_SUFX=	.tar.lz
 
 MAINTAINER=	vd@FreeBSD.org
 COMMENT=	Retrieve files from the Net via HTTP(S) and FTP

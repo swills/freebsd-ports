@@ -1,8 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-ox/Makefile 451296 2017-10-05 09:50:00Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-ox/Makefile 453373 2017-11-02 19:02:11Z sunpoet $
 
 PORTNAME=	ox
-PORTVERSION=	2.8.0
-PORTREVISION=	1
+PORTVERSION=	2.8.2
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

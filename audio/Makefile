@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 451962 2017-10-13 08:43:01Z bapt $
+# $FreeBSD: head/audio/Makefile 453324 2017-11-01 22:59:24Z yuri $
 #
 
     COMMENT = Audio tools
@@ -63,6 +63,7 @@
     SUBDIR += cantata
     SUBDIR += caps-lv2
     SUBDIR += caps-plugins
+    SUBDIR += cava
     SUBDIR += ccaudio2
     SUBDIR += cd-console
     SUBDIR += cd-discid
@@ -175,6 +176,7 @@
     SUBDIR += fluidsynth
     SUBDIR += fluidsynth-dssi
     SUBDIR += fmit
+    SUBDIR += foo-yc20
     SUBDIR += forked-daapd
     SUBDIR += fpc-a52
     SUBDIR += fpc-mad
@@ -661,6 +663,7 @@
     SUBDIR += py-pyaudio
     SUBDIR += py-pylast
     SUBDIR += py-pyliblo
+    SUBDIR += py-pysndfile
     SUBDIR += py-shout
     SUBDIR += py-soundcloud
     SUBDIR += py-soundscrape

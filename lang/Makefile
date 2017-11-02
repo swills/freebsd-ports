@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 452563 2017-10-20 21:33:20Z gerald $
+# $FreeBSD: head/lang/Makefile 453265 2017-11-01 07:40:54Z rene $
 #
 
     COMMENT = Programming languages
@@ -98,7 +98,6 @@
     SUBDIR += gcc48
     SUBDIR += gcc49
     SUBDIR += gcc5
-    SUBDIR += gcc5-aux
     SUBDIR += gcc6
     SUBDIR += gcc6-aux
     SUBDIR += gcc6-devel

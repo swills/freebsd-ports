@@ -1,8 +1,9 @@
 # Created by: Paul Dlug <paul@nerdlabs.com>
-# $FreeBSD: head/net-mgmt/nsca/Makefile 432576 2017-01-27 20:52:45Z mm $
+# $FreeBSD: head/net-mgmt/nsca/Makefile 453279 2017-11-01 11:48:32Z feld $
 
 PORTNAME=	nsca
 PORTVERSION=	2.9.2
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 MASTER_SITES=	SF/nagios/nsca-2.x/nsca-${PORTVERSION}
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/keepassxc/Makefile 451345 2017-10-05 21:04:57Z cs $
+# $FreeBSD: head/security/keepassxc/Makefile 453066 2017-10-28 17:32:44Z olgeni $
 
 PORTNAME=	keepassxc
-PORTVERSION=	2.2.1
+PORTVERSION=	2.2.2
 CATEGORIES=	security
 
 MAINTAINER=	melanhit@gmail.com

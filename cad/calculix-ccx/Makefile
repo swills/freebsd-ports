@@ -1,9 +1,8 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/cad/calculix-ccx/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/cad/calculix-ccx/Makefile 453199 2017-10-30 17:15:56Z riggs $
 
 PORTNAME=	ccx
-PORTVERSION=	2.12
-PORTREVISION=	1
+PORTVERSION=	2.13
 CATEGORIES=	cad
 MASTER_SITES=	http://www.dhondt.de/
 PKGNAMEPREFIX=	CalculiX-

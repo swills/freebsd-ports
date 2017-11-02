@@ -1,5 +1,5 @@
 
-# $FreeBSD: head/net/Makefile 452863 2017-10-25 15:08:50Z nobutaka $
+# $FreeBSD: head/net/Makefile 453127 2017-10-29 17:54:47Z pi $
 #
 
     COMMENT = Networking tools
@@ -28,7 +28,6 @@
     SUBDIR += aslookup
     SUBDIR += asterisk-chan_sccp
     SUBDIR += asterisk-g72x
-    SUBDIR += asterisk11
     SUBDIR += asterisk13
     SUBDIR += avahi
     SUBDIR += avahi-app
@@ -578,6 +577,7 @@
     SUBDIR += p5-IP-Anonymous
     SUBDIR += p5-IP-Country
     SUBDIR += p5-IPC-Session
+    SUBDIR += p5-IPv6-Address
     SUBDIR += p5-JavaScript-RPC
     SUBDIR += p5-Kafka
     SUBDIR += p5-MaxMind-DB-Common

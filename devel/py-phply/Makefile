@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-phply/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/devel/py-phply/Makefile 453112 2017-10-29 12:37:59Z dbaio $
 
 PORTNAME=	phply
-PORTVERSION=	1.0.0
+PORTVERSION=	1.2.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,5 +14,8 @@ LICENSE=	BSD3CLAUSE
 NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	autoplist distutils
+
+do-test:
+	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYDISTUTILS_SETUP} test
 
 .include <bsd.port.mk>

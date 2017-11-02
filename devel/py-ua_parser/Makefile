@@ -1,12 +1,12 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/py-ua_parser/Makefile 414921 2016-05-10 05:57:08Z demon $
+# $FreeBSD: head/devel/py-ua_parser/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	ua_parser
 PORTVERSION=	0.7.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=       ${PORTNAME:S/_/-/}-${PORTVERSION}
+DISTNAME=	${PORTNAME:S/_/-/}-${PORTVERSION}
 
 MAINTAINER=	demon@FreeBSD.org
 COMMENT=	Python port of Browserscope's user agent parser

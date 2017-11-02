@@ -1,12 +1,12 @@
 # Created by: Shaun Amott <shaun@inerd.com>
-# $FreeBSD: head/irc/ratbox-respond/Makefile 447034 2017-08-01 17:07:58Z zi $
+# $FreeBSD: head/irc/ratbox-respond/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	ratbox-respond
 PORTVERSION=	1.0
 PORTREVISION=	3
 CATEGORIES=	irc sysutils
 MASTER_SITES=	http://www.ratbox.org/download/${PORTNAME}/ \
-    		http://mirrors.gigenet.com/ratbox/${PORTNAME}/ \
+		http://mirrors.gigenet.com/ratbox/${PORTNAME}/ \
 		ZI
 
 MAINTAINER=	zi@FreeBSD.org

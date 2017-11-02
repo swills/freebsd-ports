@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/net/phpldapadmin/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/net/phpldapadmin/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	phpldapadmin
 PORTVERSION=	1.2.3
@@ -43,15 +43,15 @@ post-patch:
 	${CAT} ${PKGDIR}/pkg-plist-chunk		       >>${PLIST}
 
 do-install:
-	cd ${WRKSRC} ;				    	 \
+	cd ${WRKSRC} ;					 \
 	for src in $$( ${FIND} . ! -name .cvsignore	 \
 		! -name .gitignore ! -name *.orig ) ; do \
-	    dst=${STAGEDIR}${WWWDIR}$${src#.} ;	    	 \
-	    if ${TEST} -d $$src ; then		    	 \
-		${MKDIR} $$dst ;		    	 \
-	    else				    	 \
-		${INSTALL_DATA} $$src $$dst ;	    	 \
-	    fi					    	 \
+	    dst=${STAGEDIR}${WWWDIR}$${src#.} ;		 \
+	    if ${TEST} -d $$src ; then			 \
+		${MKDIR} $$dst ;			 \
+	    else					 \
+		${INSTALL_DATA} $$src $$dst ;		 \
+	    fi						 \
 	done
 
 .include <bsd.port.mk>

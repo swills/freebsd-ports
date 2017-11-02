@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/erlang-jobs/Makefile 450879 2017-09-28 23:44:07Z olgeni $
+# $FreeBSD: head/devel/erlang-jobs/Makefile 453179 2017-10-30 14:23:48Z olgeni $
 
 PORTNAME=	jobs
-PORTVERSION=	0.7.0
+PORTVERSION=	0.7.1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

@@ -1,9 +1,9 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-xdg-entry/Makefile 450205 2017-09-20 14:16:35Z kmoore $
+# $FreeBSD: head/deskutils/lumina-xdg-entry/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	lumina-xdg-entry
-DISTVERSIONPREFIX=      v
-DISTVERSION=    1.3.0
+DISTVERSIONPREFIX=	v
+DISTVERSION=	1.3.0
 DISTVERSIONSUFFIX=	-p1
 CATEGORIES=	deskutils
 
@@ -13,8 +13,8 @@ COMMENT=	XDG desktop entry creator from the Lumina Desktop
 LICENSE=	BSD3CLAUSE
 
 OPTIONS_DEFINE=	I18N
-OPTIONS_DEFAULT=	I18N
-I18N_DESC= Install localization files
+OPTIONS_DEFAULT=I18N
+I18N_DESC=	Install localization files
 
 .include <bsd.port.options.mk>
 
@@ -29,8 +29,8 @@ GH_PROJECT=	lumina
 WRKSRC_SUBDIR=	src-qt5/desktop-utils/${PORTNAME}
 
 .if${PORT_OPTIONS:MI18N}
-USE_QT5+= linguist_build
-QMAKE_ARGS+=CONFIG+=WITH_I18N
+USE_QT5+=	linguist_build
+QMAKE_ARGS+=	CONFIG+=WITH_I18N
 .endif
 
 .include <bsd.port.mk>

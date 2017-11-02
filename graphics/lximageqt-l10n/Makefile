@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/graphics/lximageqt-l10n/Makefile 436494 2017-03-19 14:02:23Z rene $
+# $FreeBSD: head/graphics/lximageqt-l10n/Makefile 452998 2017-10-27 15:40:31Z swills $
 
 PORTNAME=	lximageqt-l10n
-PORTVERSION=	0.11.2
+PORTVERSION=	0.12.0
 CATEGORIES=	graphics
 MASTER_SITES=	LXQT/lxqt-l10n
 DISTNAME=	lxqt-l10n-${DISTVERSION}
@@ -40,6 +40,7 @@ CMAKE_ARGS+=	-DWITH_COMPTON_CONF:BOOL=OFF \
 	-DWITH_OBCONF_QT:BOOL=OFF \
 	-DWITH_PCMANFM_QT:BOOL=OFF \
 	-DWITH_QTERMINAL:BOOL=OFF \
+	-DWITH_QTERMWIDGET:BOOL=OFF \
 	-DWITH_PAVUCONTROL_QT:BOOL=OFF
 
 .include <bsd.port.mk>

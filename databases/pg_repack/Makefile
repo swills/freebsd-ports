@@ -1,8 +1,8 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/pg_repack/Makefile 449205 2017-09-03 14:47:43Z olgeni $
+# $FreeBSD: head/databases/pg_repack/Makefile 453076 2017-10-28 17:41:34Z olgeni $
 
 PORTNAME=	pg_repack
-PORTVERSION=	1.4.1
+PORTVERSION=	1.4.2
 DISTVERSIONPREFIX=	ver_
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql${PGSQL_VER:S/.//}-
@@ -20,7 +20,7 @@ WANT_PGSQL=	server
 
 PLIST_FILES=	bin/pg_repack \
 		lib/postgresql/pg_repack.so \
-		share/postgresql/extension/pg_repack--1.4.1.sql \
+		share/postgresql/extension/pg_repack--1.4.2.sql \
 		share/postgresql/extension/pg_repack.control
 
 post-install:

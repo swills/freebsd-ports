@@ -1,8 +1,8 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/textproc/lucene5/Makefile 434435 2017-02-20 05:10:20Z vanilla $
+# $FreeBSD: head/textproc/lucene5/Makefile 453100 2017-10-29 08:19:27Z vanilla $
 
 PORTNAME=	lucene
-PORTVERSION=	5.5.4
+PORTVERSION=	5.5.5
 CATEGORIES=	textproc java devel
 MASTER_SITES=	APACHE/${PORTNAME}/java/${PORTVERSION}
 PKGNAMESUFFIX=	5

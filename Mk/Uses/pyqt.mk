@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/pyqt.mk 439794 2017-04-30 10:07:23Z tcberner $
+# $FreeBSD: head/Mk/Uses/pyqt.mk 453263 2017-11-01 07:32:34Z antoine $
 #
 # Handle PyQt related ports
 #
@@ -219,6 +219,7 @@ CONFIGURE_ARGS+=-b ${PREFIX}/bin \
 		-d ${PYTHONPREFIX_SITELIBDIR} \
 		-q ${QMAKE} \
 		--confirm-license \
+		--sip ${LOCALBASE}/bin/sip-${PYTHON_VER} \
 		--sipdir ${SIPDIR}
 
 # One of the things PyQt looks for to determine whether to build the Qt DBus

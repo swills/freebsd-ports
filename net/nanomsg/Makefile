@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/nanomsg/Makefile 429430 2016-12-25 14:23:38Z amdmi3 $
+# $FreeBSD: head/net/nanomsg/Makefile 453083 2017-10-28 20:14:29Z pi $
 
 PORTNAME=			nanomsg
-PORTVERSION=			1.0.0
+PORTVERSION=			1.1.0
 CATEGORIES=			net
 
 MAINTAINER=			crest@bultmann.eu

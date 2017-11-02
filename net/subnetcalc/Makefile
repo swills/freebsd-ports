@@ -1,11 +1,10 @@
 # Created by: Thomas Dreibholz <dreibh@iem.uni-due.de>
-# $FreeBSD: head/net/subnetcalc/Makefile 427596 2016-12-03 08:11:52Z jhale $
+# $FreeBSD: head/net/subnetcalc/Makefile 453247 2017-10-31 18:47:52Z tcberner $
 
 PORTNAME=	subnetcalc
-PORTVERSION=	2.4.5
+DISTVERSION=	2.4.8
 CATEGORIES=	net
-MASTER_SITES=	http://www.iem.uni-due.de/~dreibh/subnetcalc/download/ \
-		http://www.uni-due.de/~be0001/subnetcalc/download/
+MASTER_SITES=	https://www.uni-due.de/~be0001/subnetcalc/download/
 
 MAINTAINER=	dreibh@iem.uni-due.de
 COMMENT=	IPv4/IPv6 Subnet Calculator

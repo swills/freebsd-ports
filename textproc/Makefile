@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 451876 2017-10-12 13:20:23Z tobik $
+# $FreeBSD: head/textproc/Makefile 453265 2017-11-01 07:40:54Z rene $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1560,7 +1560,6 @@
     SUBDIR += rubygem-rmmseg-cpp
     SUBDIR += rubygem-ronn
     SUBDIR += rubygem-rouge
-    SUBDIR += rubygem-rouge1
     SUBDIR += rubygem-rttool
     SUBDIR += rubygem-ruby-augeas
     SUBDIR += rubygem-ruby-xslt

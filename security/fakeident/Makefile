@@ -1,13 +1,13 @@
 # Created by: Dean Hollister <dean@odyssey.apana.org.au>
-# $FreeBSD: head/security/fakeident/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/security/fakeident/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	fakeident
 PORTVERSION=	1.7
 PORTREVISION=	3
 CATEGORIES=	security
 MASTER_SITES=	# empty
-DISTFILES=      # empty
-EXTRACT_ONLY=   # empty
+DISTFILES=	# empty
+EXTRACT_ONLY=	# empty
 
 MAINTAINER=	dean@odyssey.apana.org.au
 COMMENT=	Tool that replies with a standard answer to incoming identd requests

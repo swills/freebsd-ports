@@ -1,5 +1,5 @@
 # Created by: Shen Chuan-Hsing <statue@freebsd.sinica.edu.tw>
-# $FreeBSD: head/print/tex-dvipdfmx/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/tex-dvipdfmx/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	dvipdfmx
 PORTVERSION=	20150315
@@ -60,7 +60,7 @@ CONFIGURE_ARGS= --with-system-kpathsea \
 		--with-system-libpng \
 		--with-system-zlib
 CFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+= 	-L${LOCALBASE}/lib
+LDFLAGS+=	-L${LOCALBASE}/lib
 
 pre-install:
 	${CAT} ${DISTDIR}/${DIST_SUBDIR}/texlive-${DISTVERSION_TEXLIVE_TEXMF}-texmf${EXTRACT_SUFX} \

@@ -1,8 +1,8 @@
 # Created by: mat
-# $FreeBSD: head/security/p5-POE-Filter-SSL/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-POE-Filter-SSL/Makefile 453301 2017-11-01 16:50:43Z sunpoet $
 
 PORTNAME=	POE-Filter-SSL
-PORTVERSION=	0.34
+PORTVERSION=	0.36
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

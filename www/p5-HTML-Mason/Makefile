@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/p5-HTML-Mason/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-HTML-Mason/Makefile 453153 2017-10-30 02:51:38Z wen $
 
 PORTNAME=	HTML-Mason
-PORTVERSION=	1.56
+PORTVERSION=	1.58
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

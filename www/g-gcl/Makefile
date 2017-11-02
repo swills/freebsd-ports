@@ -1,5 +1,5 @@
 # Created by: G. Adam Stanislav <adam@whizkidtech.net>
-# $FreeBSD: head/www/g-gcl/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/g-gcl/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	g-gcl
 PORTVERSION=	1.10
@@ -12,7 +12,7 @@ COMMENT=	Sample counter scripts for Graphic Counter Language
 
 RUN_DEPENDS=	gracula:graphics/gracula
 
-NO_BUILD= 	yes
+NO_BUILD=	yes
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/gracula

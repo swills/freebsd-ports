@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-File-Map/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-File-Map/Makefile 453190 2017-10-30 15:40:46Z sunpoet $
 
 PORTNAME=	File-Map
-PORTVERSION=	0.64
+PORTVERSION=	0.65
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:LEONT

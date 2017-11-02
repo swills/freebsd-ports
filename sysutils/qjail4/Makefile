@@ -1,11 +1,11 @@
 # Created by: Joe Barbish
-# $FreeBSD: head/sysutils/qjail4/Makefile 434300 2017-02-17 16:49:13Z mat $
+# $FreeBSD: head/sysutils/qjail4/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	qjail
 PORTVERSION=	4.9
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/${PORTNAME}
-PKGNAMESUFFIX=  4
+PKGNAMESUFFIX=	4
 
 MAINTAINER=	qjail1@a1poweruser.com
 COMMENT=	Utility to quickly deploy and manage jails

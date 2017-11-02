@@ -1,5 +1,5 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/security/heimdal/Makefile 445539 2017-07-11 17:56:53Z hrs $
+# $FreeBSD: head/security/heimdal/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	heimdal
 PORTVERSION=	7.4.0
@@ -80,7 +80,7 @@ SQLITE_CONFIGURE_WITH=	sqlite3
 
 LDAP_DESC=		Enable OpenLDAP KDC backend support
 LDAP_USE=		OPENLDAP=yes
-LDAP_CONFIGURE_ON= 	--with-openldap-include="${LOCALBASE}/include" \
+LDAP_CONFIGURE_ON=	--with-openldap-include="${LOCALBASE}/include" \
 			--with-openldap-lib="${LOCALBASE}/lib"
 LDAP_CONFIGURE_WITH=	openldap
 

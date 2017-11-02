@@ -1,5 +1,5 @@
 # Created by: Satoshi TAOKA <taoka@FreeBSD.org>
-# $FreeBSD: head/japanese/kinput2/Makefile 418840 2016-07-20 15:33:20Z mat $
+# $FreeBSD: head/japanese/kinput2/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	kinput2
 PORTVERSION=	3.1
@@ -23,7 +23,7 @@ OPTIONS_DEFAULT=CANNA FREEWNN           SJ3
 TCP_DESC=		TCP transport support (not needed for most cases)
 
 CANNA_DESC=		Canna support
-CANNA_LIB_DEPENDS= 	libcanna16.so:japanese/canna-lib
+CANNA_LIB_DEPENDS=	libcanna16.so:japanese/canna-lib
 CANNA_CONF=		'\#define UseCanna' \
 			CANNASRC=${LOCALBASE}/include \
 			CANNALIB="-L${LOCALBASE}/lib -lcanna16"

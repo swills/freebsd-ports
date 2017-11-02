@@ -1,5 +1,5 @@
 # Created by: giffunip@asme.org
-# $FreeBSD: head/editors/the/Makefile 426544 2016-11-19 23:17:35Z marino $
+# $FreeBSD: head/editors/the/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	the
 PORTVERSION=	3.3.r4
@@ -67,15 +67,15 @@ post-extract:
 pre-install:
 	${MKDIR}				${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/*.html	${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${WRKSRC}/the64.gif    	${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/the64.gif	${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/the64.png	${STAGEDIR}${DOCSDIR}
 
 do-install-XCURSES-on:
 	${STRIP_CMD}	${STAGEDIR}${PREFIX}/bin/xthe
-	${LN} -sf xthe 	${STAGEDIR}${PREFIX}/bin/the
+	${LN} -sf xthe	${STAGEDIR}${PREFIX}/bin/the
 
 do-install-NCURSES-on:
 	${STRIP_CMD}	${STAGEDIR}${PREFIX}/bin/nthe
-	${LN} -sf nthe 	${STAGEDIR}${PREFIX}/bin/the
+	${LN} -sf nthe	${STAGEDIR}${PREFIX}/bin/the
 
 .include <bsd.port.mk>

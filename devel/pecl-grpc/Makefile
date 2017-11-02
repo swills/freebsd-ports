@@ -1,14 +1,15 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/pecl-grpc/Makefile 448899 2017-08-29 09:36:27Z vanilla $
+# $FreeBSD: head/devel/pecl-grpc/Makefile 453177 2017-10-30 14:19:32Z vanilla $
 
 PORTNAME=	grpc
-PORTVERSION=	1.4.6
+PORTVERSION=	1.6.0
 CATEGORIES=	devel net
 
 MAINTAINER=	vanilla@FreeBSD.org
 COMMENT=	High performance, general RPC framework
 
-LICENSE=	BSD3CLAUSE
+LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_aarch64=		fails to compile: fatal error: sys/auxv.h file not found
 BROKEN_mips=		fails to compile: fatal error: sys/auxv.h file not found

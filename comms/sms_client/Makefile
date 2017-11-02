@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/comms/sms_client/Makefile 359308 2014-06-25 21:52:43Z marino $
+# $FreeBSD: head/comms/sms_client/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	sms_client
 PORTVERSION=	3.0.2
@@ -12,7 +12,7 @@ COMMENT=	Simple UNIX SMS client to send messages to phones or pagers
 
 LICENSE=	BSD3CLAUSE
 
-USES= 		tar:xz
+USES=		tar:xz
 HAS_CONFIGURE=	yes
 SPOOL=		${STAGEDIR}${PREFIX}/var/spool/sms
 

@@ -1,5 +1,5 @@
 # Created by: Sergey Matveychuk <sem@ciam.ru>
-# $FreeBSD: head/ftp/frox/Makefile 421836 2016-09-11 16:40:59Z amdmi3 $
+# $FreeBSD: head/ftp/frox/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	frox
 PORTVERSION=	0.7.18
@@ -41,8 +41,8 @@ PF_DESC=		Build with pf(4) support
 VIRUS_SCAN_DESC=	Run external virus scaner on each download
 HTTP_CACHE_DESC=	Enable use of external cache
 LOCAL_CACHE_DESC=	Enable use of local cache
-CCP_DESC=	 	Ftp-proxy style command control programs
-ROOT_RUN_DESC=	 	Allow frox running as root (not recomended)
+CCP_DESC=		Ftp-proxy style command control programs
+ROOT_RUN_DESC=		Allow frox running as root (not recomended)
 
 IPFILTER_CONFIGURE_ENABLE=	ipfilter
 PF_CPPFLAGS=			-DPF

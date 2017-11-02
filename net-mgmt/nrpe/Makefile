@@ -1,5 +1,5 @@
 # Created by: Paul Dlug<paul@nerdlabs.com>
-# $FreeBSD: head/net-mgmt/nrpe/Makefile 449332 2017-09-06 09:24:10Z mat $
+# $FreeBSD: head/net-mgmt/nrpe/Makefile 453056 2017-10-28 11:25:50Z zeising $
 
 PORTNAME=	nrpe
 DISTVERSION=	2.15
@@ -13,6 +13,9 @@ COMMENT?=	Nagios Remote Plugin Executor
 LICENSE=	GPLv2
 
 CONFLICTS?=	nrpe-ssl nrpe3
+
+DEPRECATED=	EoL, please use nrpe3 instead
+EXPIRATION_DATE=	2018-01-01
 
 USES=		perl5
 USE_PERL5=	build

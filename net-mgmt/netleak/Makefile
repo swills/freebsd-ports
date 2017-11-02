@@ -1,5 +1,5 @@
 # Created by: Vaida Bogdan
-# $FreeBSD: head/net-mgmt/netleak/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/netleak/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	netleak
 PORTVERSION=	0.1a
@@ -26,7 +26,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 
 USES=		perl5 shebangfix tar:tgz
 USE_PERL5=	run
-SHEBANG_FILES= 	netleak netleakd
+SHEBANG_FILES=	netleak netleakd
 
 PORTDOCS=	BUGS README TODO
 

@@ -1,5 +1,5 @@
 # Created by: Babak Farrokhi <farrokhi@FreeBSD.org>
-# $FreeBSD: head/sysutils/istatserver/Makefile 447402 2017-08-05 12:13:37Z farrokhi $
+# $FreeBSD: head/sysutils/istatserver/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	istatserver
 PORTVERSION=	3.02
@@ -31,9 +31,9 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/resource/istatserver_generated.conf \
 	${STAGEDIR}${PREFIX}/etc/istatserver/istatserver_generated.conf.sample
 	${INSTALL_MAN} ${WRKSRC}/resource/istatserver.1 \
-	 		${STAGEDIR}${MANPREFIX}/man/man1
+			${STAGEDIR}${MANPREFIX}/man/man1
 	${INSTALL_MAN} ${WRKSRC}/resource/istatserver.conf.5 \
-	 		${STAGEDIR}${MANPREFIX}/man/man5
+			${STAGEDIR}${MANPREFIX}/man/man5
 	@${ECHO_CMD} '@postexec ${CHOWN} -R ${USERS}:${GROUPS} %D/etc/istatserver' >> ${TMPPLIST}
 
 .include <bsd.port.mk>

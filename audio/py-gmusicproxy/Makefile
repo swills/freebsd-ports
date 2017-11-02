@@ -1,9 +1,9 @@
 # Created by: Ashley Chase <erisianash@gmail.com>
-# $FreeBSD: head/audio/py-gmusicproxy/Makefile 447841 2017-08-12 15:56:09Z riggs $
+# $FreeBSD: head/audio/py-gmusicproxy/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	gmusicproxy
 PORTVERSION=	1.0.8
-DISTVERSIONPREFIX= v
+DISTVERSIONPREFIX=	v
 CATEGORIES=	audio python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

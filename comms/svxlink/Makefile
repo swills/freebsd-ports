@@ -1,9 +1,9 @@
 # Created by: shurd
-# $FreeBSD: head/comms/svxlink/Makefile 452246 2017-10-16 19:28:11Z adrian $
+# $FreeBSD: head/comms/svxlink/Makefile 453329 2017-11-02 01:51:10Z db $
 
 PORTNAME?=	svxlink
 PORTVERSION=	15.11
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	comms hamradio
 
 MAINTAINER=	hamradio@FreeBSD.org
@@ -17,7 +17,8 @@ LIB_DEPENDS?=	libgsm.so:audio/gsm \
 		libgcrypt.so:security/libgcrypt \
 		libsigc-2.0.so:devel/libsigc++20 \
 		libpopt.so:devel/popt \
-		libopus.so:audio/opus
+		libopus.so:audio/opus \
+		librtlsdr.so:comms/rtl-sdr
 BUILD_DEPENDS=	pkg-config:devel/pkgconf \
 		${LOCALBASE}/include/linux/input.h:multimedia/v4l_compat
 

@@ -1,5 +1,5 @@
 # Created by: Glenn Johnson <glennpj@charter.net>
-# $FreeBSD: head/print/gnome-cups-manager/Makefile 436925 2017-03-25 23:37:05Z antoine $
+# $FreeBSD: head/print/gnome-cups-manager/Makefile 453271 2017-11-01 09:04:36Z amdmi3 $
 #   $MCom: ports/print/gnome-cups-manager/Makefile,v 1.8 2007/07/20 01:11:31 mezz Exp $
 
 PORTNAME=	gnome-cups-manager
@@ -13,18 +13,21 @@ DIST_SUBDIR=	gnome2
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Administration tool for cups
 
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 LIB_DEPENDS=	libgnomecups-1.0.so:print/libgnomecups
 RUN_DEPENDS=	gnomesu:security/libgnomesu
 
-USES=		gettext gmake libtool pathfix pkgconfig samba:lib tar:bzip2
+USES=		gettext gmake libtool localbase pathfix pkgconfig samba:lib tar:bzip2
 USE_GNOME=	gnomeprefix intlhack libgnomeprintui libgnomeui
 USE_LDCONFIG=	yes
 USE_XORG=	x11
 INSTALLS_ICONS=	yes
 INSTALL_TARGET=	install-strip
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include -I${SAMBAINCLUDES} -D_IPP_PRIVATE_STRUCTURES
-LIBS+=		-L${LOCALBASE}/lib -L${SAMBALIBS}
+CPPFLAGS+=	-I${SAMBAINCLUDES} -D_IPP_PRIVATE_STRUCTURES
+LIBS+=		-L${SAMBALIBS}
 
 post-patch:
 	@${SED} -e 's|%%PREFIX%%|${PREFIX}|' \

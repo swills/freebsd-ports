@@ -1,10 +1,10 @@
-# $FreeBSD: head/net/p5-srv2pf/Makefile 442854 2017-06-07 17:21:30Z des $
+# $FreeBSD: head/net/p5-srv2pf/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	srv2pf
 PORTVERSION=	20170607
 CATEGORIES=	net
 MASTER_SITES=	GH
-PKGNAMEPREFIX=  p5-
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	des@FreeBSD.org
 COMMENT=	Create and update PF tables from LDAP groups

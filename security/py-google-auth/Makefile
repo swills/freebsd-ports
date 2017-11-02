@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/py-google-auth/Makefile 450278 2017-09-21 17:20:41Z sunpoet $
+# $FreeBSD: head/security/py-google-auth/Makefile 453297 2017-11-01 16:50:22Z sunpoet $
 
 PORTNAME=	google-auth
-PORTVERSION=	1.1.1
+PORTVERSION=	1.2.0
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

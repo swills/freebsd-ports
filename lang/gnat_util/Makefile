@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/lang/gnat_util/Makefile 451498 2017-10-08 07:58:54Z sunpoet $
+# $FreeBSD: head/lang/gnat_util/Makefile 453264 2017-11-01 07:39:42Z rene $
 
 PORTNAME=	gnat_util
 PORTVERSION=	${SNAPSHOT}
@@ -22,13 +22,8 @@ MAKE_ENV=	MAKEOBJDIR=${WRKSRC}/obj
 
 .include "${.CURDIR}/Makefile.sources"
 
-.if defined(ADA_DEFAULT) && ${ADA_DEFAULT} == 5
-USES+=		tar:bzip2
-.include "${.CURDIR}/../gcc5-aux/Makefile.version"
-.else
 USES+=		tar:xz
 .include "${.CURDIR}/../gcc6-aux/Makefile.version"
-.endif
 
 post-extract:
 	@${MKDIR} ${WRKSRC}/obj

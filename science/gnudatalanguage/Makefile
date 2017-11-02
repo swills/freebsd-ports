@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/science/gnudatalanguage/Makefile 452602 2017-10-21 20:18:16Z sunpoet $
+# $FreeBSD: head/science/gnudatalanguage/Makefile 453334 2017-11-02 04:07:23Z jbeich $
 
 PORTNAME=	gnudatalanguage
 DISTVERSION=	0.9.7
@@ -109,7 +109,7 @@ UDUNITS_CMAKE_OFF=	-DUDUNITS:BOOL=NO
 .if defined(BUILD_PYTHON_MODULE)
 CATEGORIES+=	python
 CMAKE_ARGS+=	-DPYTHON_MODULE:BOOL=YES -DOPENMP:BOOL=NO
-PLIST=		pkg-plist.pymod
+PLIST=		${.CURDIR}/pkg-plist.pymod
 .else
 CMAKE_ARGS+=	-DPYTHON_MODULE:BOOL=NO
 .endif

@@ -1,5 +1,5 @@
 # Created by: Rihaz Jerrin <rihaz.jerrin@gmail.com>
-# $FreeBSD: head/net-mgmt/dnsmap/Makefile 445638 2017-07-13 09:00:21Z amdmi3 $
+# $FreeBSD: head/net-mgmt/dnsmap/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	dnsmap
 PORTVERSION=	0.30
@@ -27,7 +27,7 @@ do-install:
 	 ${INSTALL_SCRIPT}   ${WRKSRC}/${PORTNAME}-bulk.sh    ${STAGEDIR}${PREFIX}/bin/${PORTNAME}-bulk
 	 ${MKDIR}	     ${STAGEDIR}${DATADIR}
 	 ${INSTALL_DATA}     ${WRKSRC}/wordlist_TLAs.txt      ${STAGEDIR}${DATADIR}
-	 ${MKDIR}  	     ${STAGEDIR}${DOCSDIR}
+	 ${MKDIR}	     ${STAGEDIR}${DOCSDIR}
 	 ${INSTALL_DATA}     ${PORTDOCS:S|^|${WRKSRC}/|}      ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

@@ -1,12 +1,12 @@
 # Created by: Quentin Stievenart <acieroid@awesom.eu>
-# $FreeBSD: head/devel/cpuflags/Makefile 360753 2014-07-05 14:53:37Z wg $
+# $FreeBSD: head/devel/cpuflags/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	cpuflags
 PORTVERSION=	1.41
 CATEGORIES=	devel sysutils
 MASTER_SITES=	http://awesom.eu/~acieroid/files/ports/${PORTNAME}/
 
-MAINTAINER= ports@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Determine compiler flags to best target current cpu
 
 post-install:

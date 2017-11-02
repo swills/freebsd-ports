@@ -1,9 +1,9 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/sysutils/xe/Makefile 446570 2017-07-25 11:46:38Z tobik $
+# $FreeBSD: head/sysutils/xe/Makefile 453282 2017-11-01 12:41:59Z tobik $
 
 PORTNAME=	xe
-PORTVERSION=	0.9
 DISTVERSIONPREFIX=	v
+DISTVERSION=	0.10
 CATEGORIES=	sysutils
 
 MAINTAINER=	tobik@FreeBSD.org

@@ -1,11 +1,11 @@
 # Created by: sobomax
-# $FreeBSD: head/audio/libg722/Makefile 424658 2016-10-25 22:28:22Z mat $
+# $FreeBSD: head/audio/libg722/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
-PORTNAME=     	libg722
+PORTNAME=	libg722
 DISTVERSIONPREFIX=	v_
 DISTVERSION=	1_0_2
-#PORTREVISION= 	1
-CATEGORIES= 	audio
+#PORTREVISION=	1
+CATEGORIES=	audio
 
 MAINTAINER=	ports@sippysoft.com
 COMMENT=	Software G.722 decoding/encoding library

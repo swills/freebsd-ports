@@ -1,8 +1,8 @@
 # Created by: adamw
-# $FreeBSD: head/net/geoipupdate/Makefile 441800 2017-05-26 17:13:19Z adamw $
+# $FreeBSD: head/net/geoipupdate/Makefile 453214 2017-10-31 01:24:28Z adamw $
 
 PORTNAME=	geoipupdate
-PORTVERSION=	2.4.0
+PORTVERSION=	2.5.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net geography
 
@@ -27,6 +27,7 @@ post-patch:
 		${WRKSRC}/Makefile.am
 
 post-install:
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/GeoIP
 	${MV} ${STAGEDIR}${DOCSDIR}/GeoIP.conf.default \
 		${STAGEDIR}${PREFIX}/etc/GeoIP.conf.sample
 

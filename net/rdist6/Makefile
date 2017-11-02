@@ -1,9 +1,9 @@
 # Created by: peter
-# $FreeBSD: head/net/rdist6/Makefile 373983 2014-12-04 20:55:21Z cy $
+# $FreeBSD: head/net/rdist6/Makefile 453116 2017-10-29 13:38:19Z cy $
 
 PORTNAME=	rdist
 PORTVERSION=	6.1.5
-PORTREVISION=	4
+PORTREVISION=	6
 CATEGORIES=	net
 MASTER_SITES=	http://www.magnicomp.com/download/rdist/ \
 		ftp://ftp.sunet.se/pub/unix/admin/mirror-magnicomp/download/rdist/
@@ -19,8 +19,14 @@ MAKE_ENV=	BUILD_OPT="${CFLAGS}" BUILD_CLIENT=${RDIST_NAME} \
 		STAGEDIR=${STAGEDIR}
 PLIST_SUB=	RDIST_NAME=${RDIST_NAME}
 
+.include <bsd.port.pre.mk>
+
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200050
+RUN_DEPENDS=	rsh:net/bsdrcmds
+.endif
+
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/${RDIST_NAME}
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/rdistd
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

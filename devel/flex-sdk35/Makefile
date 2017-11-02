@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/flex-sdk35/Makefile 377747 2015-01-23 16:03:57Z antoine $
+# $FreeBSD: head/devel/flex-sdk35/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	flex-sdk
 PORTVERSION=	3.5.0.12683
@@ -8,7 +8,7 @@ MASTER_SITES=	http://fpdownload.adobe.com/pub/flex/sdk/builds/flex3/
 DISTFILES=	flex_sdk_${PORTVERSION}_mpl.zip
 PKGNAMESUFFIX=	3
 
-MAINTAINER= 	ports@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Adobe Flex SDK
 
 CONFLICTS=	ja-flex-sdk-2.* flex-sdk2-2.* flex-sdk-4.*

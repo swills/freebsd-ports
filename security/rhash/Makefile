@@ -1,8 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/security/rhash/Makefile 426100 2016-11-14 10:32:11Z danfe $
+# $FreeBSD: head/security/rhash/Makefile 452987 2017-10-27 14:40:41Z danfe $
 
 PORTNAME=	rhash
-PORTVERSION=	1.3.4
+PORTVERSION=	1.3.5
 CATEGORIES=	security
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
@@ -18,9 +18,9 @@ MAKE_ARGS=	INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
 		INSTALL_SHARED="${INSTALL_PROGRAM}" \
 		MANDIR="${PREFIX}/man"
 ALL_TARGET=	build-shared
-INSTALL_TARGET=	install-shared
+INSTALL_TARGET=	install-shared install-lib-static install-lib-shared
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
+WRKSRC=		${WRKDIR}/RHash-${PORTVERSION}
 
 PORTDOCS=	ChangeLog README
 

@@ -1,5 +1,5 @@
 # Created by: Michael Reifenberger <mr@FreeBSD.org>
-# $FreeBSD: head/graphics/opencsg/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/opencsg/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	opencsg
 PORTVERSION=	1.3.2
@@ -13,7 +13,7 @@ COMMENT=	Constructive Solid Geometry rendering library
 
 USES=		qmake
 USE_GL=		glew
-USE_QT4=  	corelib gui
+USE_QT4=	corelib gui
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 PLIST_SUB=      PORTVERSION=${PORTVERSION}
 

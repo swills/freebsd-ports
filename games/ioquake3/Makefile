@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/games/ioquake3/Makefile 450473 2017-09-23 21:11:51Z adamw $
+# $FreeBSD: head/games/ioquake3/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME?=	ioquake3
 PORTVERSION?=	${IOQUAKE3VER}
@@ -18,7 +18,7 @@ LICENSE_FILE?=	${WRKSRC}/COPYING.txt
 USES=		pkgconfig gmake
 
 # Port configuration flags:
-# 	CLIENT SERVER TOOLS DLRENDERER GAMELIBS OPUS OPENGL2
+#	CLIENT SERVER TOOLS DLRENDERER GAMELIBS OPUS OPENGL2
 IOQ3?=		CLIENT TOOLS GAMELIBS
 IOQ3ARCH?=	${ARCH}
 IOQ3SDL?=	sdl
@@ -41,7 +41,7 @@ OPTIONS_DEFINE+=	${IOQ3_OPTIONS} DOCS
 OPTIONS_DEFAULT+=	${IOQ3_OPTIONS}
 
 TOOLS_DESC=	Enable modding tools
-DLRENDERER_DESC=	Build dynamically loaded renderer
+DLRENDERER_DESC=Build dynamically loaded renderer
 GAMELIBS_DESC=	Build game libraries
 
 MAKE_ARGS+=	DEFAULT_BASEDIR="${Q3DIR}" \

@@ -1,5 +1,5 @@
 # Created by: Igor Pokrovsky <tiamat@comset.net>
-# $FreeBSD: head/graphics/glew/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/glew/Makefile 453135 2017-10-29 20:46:34Z zeising $
 
 PORTNAME=	glew
 PORTVERSION=	1.13.0
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	zeising@FreeBSD.org
 COMMENT=	OpenGL Extension Wrangler Library
 
 LICENSE=	MIT BSD3CLAUSE

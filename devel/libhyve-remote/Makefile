@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libhyve-remote/Makefile 452277 2017-10-17 14:01:48Z araujo $
+# $FreeBSD: head/devel/libhyve-remote/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	libhyve-remote
 PORTVERSION=	0.1.3
@@ -21,7 +21,7 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 PLIST_FILES=	${HEADER_FILES} \
 		${LIB_FILES}
 
-HEADER_FILES=	include/libhyverem/hyverem.h 	\
+HEADER_FILES=	include/libhyverem/hyverem.h	\
 		include/libhyverem/rfbsrv.h	\
 		include/libhyverem/libcheck.h	\
 		include/libhyverem/vncserver.h

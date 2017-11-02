@@ -1,5 +1,5 @@
 # Created by: Martin Dieringer <martin.dieringer@gmx.de>
-# $FreeBSD: head/graphics/mupdf/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/mupdf/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	mupdf
 PORTVERSION=	1.11
@@ -52,10 +52,10 @@ post-patch:
 	@${RM} -r ${WRKSRC}/thirdparty/curl \
 		${WRKSRC}/thirdparty/freetype \
 		${WRKSRC}/thirdparty/harfbuzz \
-	 	${WRKSRC}/thirdparty/jbig2dec \
-	 	${WRKSRC}/thirdparty/libjpeg \
-	 	${WRKSRC}/thirdparty/openjpeg \
-	 	${WRKSRC}/thirdparty/zlib
+		${WRKSRC}/thirdparty/jbig2dec \
+		${WRKSRC}/thirdparty/libjpeg \
+		${WRKSRC}/thirdparty/openjpeg \
+		${WRKSRC}/thirdparty/zlib
 
 post-install:
 	${MV} ${STAGEDIR}${PREFIX}/bin/mupdf-x11 ${STAGEDIR}${PREFIX}/bin/mupdf

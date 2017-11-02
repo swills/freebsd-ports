@@ -1,5 +1,5 @@
 # Created by: Rihaz Jerrin <rihaz.jerrin@gmail.com>
-# $FreeBSD: head/security/cisco-torch/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/cisco-torch/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	cisco-torch
 PORTVERSION=	0.4
@@ -33,8 +33,8 @@ FILELIST=	brutefile.txt \
 
 do-install:
 	${INSTALL_SCRIPT}   ${WRKSRC}/cisco-torch.pl ${STAGEDIR}${PREFIX}/bin/cisco-torch
-	${MKDIR} 	    ${STAGEDIR}${DATADIR}/include
-	${MKDIR} 	    ${STAGEDIR}${DATADIR}/tftproot
+	${MKDIR}	    ${STAGEDIR}${DATADIR}/include
+	${MKDIR}	    ${STAGEDIR}${DATADIR}/tftproot
 	${MKDIR}            ${STAGEDIR}${ETCDIR}
 .for i in ${FILELIST}
 	${INSTALL_DATA} ${WRKSRC}/${i} ${STAGEDIR}${DATADIR}

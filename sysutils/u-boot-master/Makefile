@@ -1,11 +1,11 @@
-# $FreeBSD: head/sysutils/u-boot-master/Makefile 452290 2017-10-17 19:49:10Z manu $
+# $FreeBSD: head/sysutils/u-boot-master/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 #
 # Common infrastructure for u-boot ports
 #
 
 PORTNAME=	u-boot
 PORTVERSION=	${UBOOT_VERSION}
-DISTVERSIONPREFIX= ports-v
+DISTVERSIONPREFIX=	ports-v
 CATEGORIES=	sysutils
 PKGNAMESUFFIX?=	-${MODEL}
 
@@ -96,9 +96,9 @@ UBOOT_MOVE=${UBOOT_MOVE_${FAMILY:tu}}
 
 # Each u-boot family has different files to include, bring them in.
 .for i in ${UBOOT_PLIST}
-PLIST_FILES+= ${UBOOT_DIR}/${i}
+PLIST_FILES+=	${UBOOT_DIR}/${i}
 .endfor
-PLIST_FILES+= ${UBOOT_DIR}/README
+PLIST_FILES+=	${UBOOT_DIR}/README
 
 do-configure:
 	(cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${MAKE_CMD} ${BOARD_CONFIG})

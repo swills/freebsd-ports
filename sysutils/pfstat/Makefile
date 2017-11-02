@@ -1,9 +1,9 @@
 # Created by: Max Laier <max@love2party.net>
-# $FreeBSD: head/sysutils/pfstat/Makefile 431267 2017-01-12 14:02:17Z amdmi3 $
+# $FreeBSD: head/sysutils/pfstat/Makefile 453077 2017-10-28 17:56:01Z olgeni $
 
 PORTNAME=	pfstat
 PORTVERSION=	2.5
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	sysutils net
 MASTER_SITES=	http://www.benzedrine.cx/
 

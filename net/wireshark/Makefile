@@ -1,5 +1,5 @@
 # Created by: Bill Fumerola <billf@chc-chimes.com>
-# $FreeBSD: head/net/wireshark/Makefile 449290 2017-09-05 15:26:44Z marcus $
+# $FreeBSD: head/net/wireshark/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME?=	wireshark
 PORTVERSION=	2.4.1
@@ -94,7 +94,7 @@ SNMP_LIB_DEPENDS=	libsmi.so:net-mgmt/libsmi
 CARES_LIB_DEPENDS=	libcares.so:dns/c-ares
 GEOIP_LIB_DEPENDS=	libGeoIP.so:net/GeoIP
 DECRYPT_LIB_DEPENDS=	libgnutls.so:security/gnutls \
-    			libgcrypt.so:security/libgcrypt
+			libgcrypt.so:security/libgcrypt
 
 IPV6_CONFIGURE_ENABLE=	ipv6
 
@@ -171,7 +171,7 @@ post-patch:
 		${WRKSRC}/configure
 	# XXX: Should be optional as to whether or not this flag works at runtime
 	@${REINPLACE_CMD} -e 's|-msse4.2||g' \
-	    	${WRKSRC}/configure
+		${WRKSRC}/configure
 	@${REINPLACE_CMD} -e 's|/usr/share/applications|${DESKTOPDIR}|g ; \
 		s|/usr/share|${LOCALBASE}/share|g ; \
 		s|{mime/packages,applications}|mime/packages| ; \

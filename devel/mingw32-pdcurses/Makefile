@@ -1,5 +1,5 @@
 # Created by: Ed Schouten <ed@fxq.nl>
-# $FreeBSD: head/devel/mingw32-pdcurses/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/devel/mingw32-pdcurses/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	pdcurses
 PORTVERSION=	3.4
@@ -9,7 +9,7 @@ MASTER_SITES=	SF
 PKGNAMEPREFIX=	mingw32-
 DISTNAME=	PDCurses-${PORTVERSION}
 
-MAINTAINER= ports@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Curses and Panel terminal library for Windows
 
 BUILD_DEPENDS=	${PKGNAMEPREFIX}gcc:devel/${PKGNAMEPREFIX}gcc \

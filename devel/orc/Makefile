@@ -1,10 +1,10 @@
 # Created by: mm
-# $FreeBSD: head/devel/orc/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/devel/orc/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	orc
 PORTVERSION=	0.4.25
 CATEGORIES=	devel
-MASTER_SITES= 	http://gstreamer.freedesktop.org/data/src/orc/
+MASTER_SITES=	http://gstreamer.freedesktop.org/data/src/orc/
 
 MAINTAINER=	kwm@FreeBSD.org
 COMMENT=	Library and toolset to operate arrays of data

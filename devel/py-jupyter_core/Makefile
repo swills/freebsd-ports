@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-jupyter_core/Makefile 435934 2017-03-11 15:59:55Z sunpoet $
+# $FreeBSD: head/devel/py-jupyter_core/Makefile 453302 2017-11-01 16:50:48Z sunpoet $
 
 PORTNAME=	jupyter_core
-PORTVERSION=	4.3.0
+PORTVERSION=	4.4.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

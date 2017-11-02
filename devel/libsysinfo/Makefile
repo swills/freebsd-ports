@@ -1,10 +1,11 @@
 # Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/devel/libsysinfo/Makefile 424534 2016-10-23 17:30:48Z imp $
+# $FreeBSD: head/devel/libsysinfo/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	libsysinfo
 PORTVERSION=	0.0.3
+DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	devel
-PORTREVSION=	1
 
 MAINTAINER=	imp@bsdimp.com
 COMMENT=	GNU libc's sysinfo port for FreeBSD
@@ -13,7 +14,6 @@ LICENSE=	BSD3CLAUSE
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	bsdimp
-DISTVERSIONPREFIX= v
 
 USES=		uidfix
 USE_LDCONFIG=	yes

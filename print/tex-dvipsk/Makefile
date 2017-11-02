@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/tex-dvipsk/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/tex-dvipsk/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	dvipsk
 PORTVERSION=	5.995
@@ -53,7 +53,7 @@ CONFIGURE_ARGS= --with-paper \
 		--with-system-libpng \
 		--with-system-zlib
 CFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+= 	-lpaper -L${LOCALBASE}/lib
+LDFLAGS+=	-lpaper -L${LOCALBASE}/lib
 
 INFO=	dvips
 

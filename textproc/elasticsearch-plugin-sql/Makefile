@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/elasticsearch-plugin-sql/Makefile 452051 2017-10-14 10:38:06Z olgeni $
+# $FreeBSD: head/textproc/elasticsearch-plugin-sql/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	sql
 PORTVERSION=	1.7.6
@@ -14,7 +14,7 @@ LICENSE=	APACHE20
 
 RUN_DEPENDS=	elasticsearch>=1.7.0:textproc/elasticsearch
 
-CONFLICTS=      elasticsearch2-plugin-sql-2.*
+CONFLICTS=	elasticsearch2-plugin-sql-2.*
 
 USES=		zip
 NO_BUILD=	yes

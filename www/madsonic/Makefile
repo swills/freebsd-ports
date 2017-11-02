@@ -1,11 +1,10 @@
 # Created by: Nicole Reid <root@cooltrainer.org>
-# $FreeBSD: head/www/madsonic/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/www/madsonic/Makefile 453197 2017-10-30 17:04:08Z swills $
 
 PORTNAME=	madsonic
-PORTVERSION=	6.1.8700
-PORTREVISION=	3
+PORTVERSION=	6.2.9040
 CATEGORIES=	www java
-MASTER_SITES=	http://madsonic.org/download/6.1/
+MASTER_SITES=	http://madsonic.org/download/6.2/
 DISTFILES=	${DISTDATE}_${DISTNAME}-war-tomcat.zip \
 	${DISTDATE}_${DISTNAME}-war-jspc.zip
 
@@ -64,7 +63,7 @@ APE_RUN_DEPENDS=	mac:audio/mac
 .include <bsd.port.options.mk>
 
 NO_BUILD=	yes
-DISTDATE=	20160915
+DISTDATE=	20161208
 USE_JAVA=	yes
 JAVA_VERSION=	1.7+
 USES=	zip

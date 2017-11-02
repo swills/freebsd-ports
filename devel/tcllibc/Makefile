@@ -1,12 +1,12 @@
 # Created by: Mikhail Teterin <mi@aldan.algebra.com>
-# $FreeBSD: head/devel/tcllibc/Makefile 431402 2017-01-13 16:54:55Z mat $
+# $FreeBSD: head/devel/tcllibc/Makefile 453229 2017-10-31 11:42:13Z gahr $
 
 PKGNAMESUFFIX=	c
 
 COMMENT=	Compiled implementations of some of the modules of Tcllib
 
 BUILD_DEPENDS=	critcl:devel/critcl
-RUN_DEPENDS=	${LOCALBASE}/lib/tcllib/pkgIndex.tcl:${MASTERDIR}	# PREFIX, not LOCALBASE
+RUN_DEPENDS=	${LOCALBASE}/lib/tcllib/pkgIndex.tcl:devel/tcllib
 
 MASTERDIR=	${.CURDIR:H}/tcllib
 TMPPLIST=	${WRKDIR}/PLIST

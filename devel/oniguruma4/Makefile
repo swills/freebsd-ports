@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/oniguruma4/Makefile 445714 2017-07-13 21:15:21Z pawel $
+# $FreeBSD: head/devel/oniguruma4/Makefile 453130 2017-10-29 18:18:21Z riggs $
 
 PORTNAME=	oniguruma
 PORTVERSION=	4.7.1
@@ -21,6 +21,9 @@ GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 DOCS=		HISTORY README doc/*
+
+DEPRECATED=	Upstream no longer maintained, superseded by devel/oniguruma6
+EXPIRATION_DATE=2017-11-12
 
 PKGNAMESUFFIX=	4
 

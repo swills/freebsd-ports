@@ -1,9 +1,8 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/misc/tkinfo/Makefile 374396 2014-12-09 14:16:53Z feld $
+# $FreeBSD: head/misc/tkinfo/Makefile 453107 2017-10-29 11:33:07Z vanilla $
 
 PORTNAME=	tkinfo
-PORTVERSION=	2.8
-PORTREVISION=	2
+PORTVERSION=	2.11
 CATEGORIES=	misc tk
 MASTER_SITES=	http://math-www.uni-paderborn.de/~axel/tkinfo/
 
@@ -12,8 +11,9 @@ COMMENT=	Tk script to read GNU "info" files and display them
 
 LICENSE=	MIT
 
-NO_BUILD=	yes
 USES+=		tk
+NO_BUILD=	yes
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/tkinfo \
 		man/man1/tkinfo.1.gz

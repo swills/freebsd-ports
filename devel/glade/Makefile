@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/devel/glade/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/glade/Makefile 452967 2017-10-27 09:04:26Z amdmi3 $
 
 PORTNAME=	glade
 PORTVERSION=	3.18.3
@@ -11,13 +11,18 @@ DIST_SUBDIR=	gnome3
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	User interface builder for GTK+ 3
 
+LICENSE=	GPLv2+ LGPL21+
+LICENSE_COMB=	multi
+LICENSE_FILE_GPLv2+ =	${WRKSRC}/COPYING.GPL
+LICENSE_FILE_LGPL21+ =	${WRKSRC}/COPYING.LGPL
+
 BUILD_DEPENDS=	itstool:textproc/itstool
 
 CONFLICTS=	glade3-3.*
 PORTSCOUT=	limitw:1,even
 
 USES=		desktop-file-utils gettext gmake libtool \
-		pathfix pkgconfig tar:xz
+		localbase:ldflags pathfix pkgconfig tar:xz
 USE_GNOME=	gtk30 gnomedocutils intlhack
 #		introspection:build
 # temp disable, introspection generation crashes with GNOME 3.15
@@ -25,8 +30,7 @@ CONFIGURE_ARGS=	--disable-introspection
 INSTALLS_ICONS=	yes
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include -Wno-error=format-nonliteral
-LDFLAGS+=	-L${LOCALBASE}/lib
+CPPFLAGS+=	-Wno-error=format-nonliteral
 INSTALL_TARGET=	install-strip
 
 DOCSDIR=	${PREFIX}/share/doc/gladeui-2

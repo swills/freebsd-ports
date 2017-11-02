@@ -1,5 +1,5 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/lang/fpc-units/Makefile 452520 2017-10-20 13:55:25Z gahr $
+# $FreeBSD: head/lang/fpc-units/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	units
 PORTVERSION=	3.0.2
@@ -52,7 +52,7 @@ FCL_JS_DESC=		Component Library (js)
 FCL_JSON_DESC=		Component Library (json)
 FCL_NET_DESC=		Component Library (net)
 FCL_PASSRC_DESC=	Component Library (passrc)
-FCL_PDF_DESC=        	Component Library (pdf)
+FCL_PDF_DESC=		Component Library (pdf)
 FCL_REGISTRY_DESC=	Component Library (registry)
 FCL_RES_DESC=		Component Library (res)
 FCL_SDO_DESC=		Component Library (sdo)

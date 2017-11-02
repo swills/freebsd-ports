@@ -1,5 +1,5 @@
 # Created by: od <od@iclub.nsu.ru>
-# $FreeBSD: head/x11/wmappl/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/x11/wmappl/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	wmappl
 PORTVERSION=	0.71
@@ -18,7 +18,7 @@ GNU_CONFIGURE=	yes
 
 OPTIONS_DEFINE=		DOCS IMLIB2
 
-IMLIB2_LIB_DEPENDS= 	libImlib2.so:graphics/imlib2
+IMLIB2_LIB_DEPENDS=	libImlib2.so:graphics/imlib2
 IMLIB2_CONFIGURE_ENABLE=Imlib2
 
 post-extract:

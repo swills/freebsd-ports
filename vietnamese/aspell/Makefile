@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/vietnamese/aspell/Makefile 438338 2017-04-12 09:09:47Z mat $
+# $FreeBSD: head/vietnamese/aspell/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	aspell
 SPELLVERSION=	6-vi-0.01.1-1
@@ -10,7 +10,7 @@ CATEGORIES=	vietnamese textproc
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Aspell Vietnamese dictionaries
 
-DICT=	 	vi
+DICT=		vi
 
 .include "${.CURDIR}/../../textproc/aspell/Makefile.inc"
 .include <bsd.port.post.mk>

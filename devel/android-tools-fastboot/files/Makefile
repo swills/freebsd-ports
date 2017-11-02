@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/android-tools-fastboot/files/Makefile 448522 2017-08-22 13:01:20Z jbeich $
+# $FreeBSD: head/devel/android-tools-fastboot/files/Makefile 453204 2017-10-30 18:36:22Z jbeich $
 
 PROG_CXX=fastboot
 BINDIR?=/usr/bin
@@ -88,7 +88,7 @@ SRCS+=	output_file.c
 SRCS+=	sparse.c
 SRCS+=	sparse_crc32.c
 SRCS+=	sparse_err.c
-SRCS+=	sparse_read.c
+SRCS+=	sparse_read.cpp
 
 # required by libziparchive
 .PATH: ${.CURDIR}/../libutils
@@ -100,7 +100,7 @@ SRCS+=	zip_archive.cc
 
 REVISION?=	$$(${GIT} rev-parse --short=12 HEAD 2>/dev/null || echo unknown)
 
-CPPFLAGS+=	-DFASTBOOT_REVISION="\"${REVISION}-android\""
+CPPFLAGS+=	-DFASTBOOT_VERSION="\"26.0.0 rc1-${REVISION}-android\""
 CPPFLAGS+=	-Doff64_t=off_t
 CPPFLAGS+=	-Dftruncate64=ftruncate
 CPPFLAGS+=	-Dlseek64=lseek

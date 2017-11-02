@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/Makefile 451926 2017-10-12 19:30:51Z db $
+# $FreeBSD: head/comms/Makefile 452990 2017-10-27 15:31:57Z tobik $
 #
 
     COMMENT = Communication utilities
@@ -177,6 +177,7 @@
     SUBDIR += telldus-core
     SUBDIR += thebridge
     SUBDIR += tilp2
+    SUBDIR += tio
     SUBDIR += tits
     SUBDIR += tkhylafax
     SUBDIR += tkscanfax

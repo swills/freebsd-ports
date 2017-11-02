@@ -1,9 +1,8 @@
 # Created by: Leo Vandewoestijne <freebsd@dns-lab.com>
-# $FreeBSD: head/dns/knot2/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/dns/knot2/Makefile 453259 2017-10-31 22:20:27Z matthew $
 
 PORTNAME=	knot
-PORTVERSION=	2.5.3
-PORTREVISION=	3
+PORTVERSION=	2.6.0
 CATEGORIES=	dns ipv6
 MASTER_SITES=	https://secure.nic.cz/files/knot-dns/ \
 		http://dns-lab.com/downloads/knot-dns/
@@ -45,6 +44,7 @@ OPTIONS_DEFINE=			DNSTAP FASTPARSER IDN
 
 DNSTAP_DESC=			dnstap support (see dnstap.info)
 DNSTAP_CONFIGURE_ENABLE=	dnstap
+DNSTAP_CONFIGURE_WITH=		module-dnstap=yes
 DNSTAP_LIB_DEPENDS=		libprotobuf-c.so:devel/protobuf-c \
 				libfstrm.so:devel/fstrm
 # XXX: because `kdig_CPPFLAGS += $(DNSTAP_CFLAGS)' line is missing from

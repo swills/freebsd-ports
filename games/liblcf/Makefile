@@ -1,9 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/liblcf/Makefile 450556 2017-09-25 00:02:36Z jbeich $
+# $FreeBSD: head/games/liblcf/Makefile 453236 2017-10-31 14:44:04Z amdmi3 $
 
 PORTNAME=	liblcf
-PORTVERSION=	0.5.2
-PORTREVISION=	2
+PORTVERSION=	0.5.3
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org

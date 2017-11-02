@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/dnstable/Makefile 434654 2017-02-23 01:54:12Z truckman $
+# $FreeBSD: head/dns/dnstable/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	dnstable
 PORTVERSION=	0.9.1
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 BUILD_DEPENDS=	sie-nmsg>0:net/sie-nmsg
 LIB_DEPENDS=	libmtbl.so:devel/mtbl	\
 		libyajl.so:devel/yajl	\
-		libwdns.so:dns/wdns 	\
+		libwdns.so:dns/wdns	\
 		libnmsg.so:net/nmsg
 RUN_DEPENDS=	sie-nmsg>0:net/sie-nmsg
 

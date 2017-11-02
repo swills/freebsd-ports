@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/rubygem-pghero/Makefile 450607 2017-09-25 15:12:27Z sunpoet $
+# $FreeBSD: head/databases/rubygem-pghero/Makefile 453123 2017-10-29 16:10:09Z sunpoet $
 
 PORTNAME=	pghero
-PORTVERSION=	2.0.6
+PORTVERSION=	2.0.7
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

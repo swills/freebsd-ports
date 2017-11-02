@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/devel/liblxqt-l10n/Makefile 441215 2017-05-19 10:09:57Z joneum $
+# $FreeBSD: head/devel/liblxqt-l10n/Makefile 452997 2017-10-27 15:39:42Z swills $
 
 PORTNAME=	liblxqt-l10n
-PORTVERSION=	0.11.2
+PORTVERSION=	0.12.0
 CATEGORIES=	devel
 MASTER_SITES=	LXQT/lxqt-l10n
 DISTNAME=	lxqt-l10n-${DISTVERSION}
@@ -40,6 +40,7 @@ CMAKE_ARGS+=	-DWITH_COMPTON_CONF:BOOL=OFF \
 	-DWITH_OBCONF_QT:BOOL=OFF \
 	-DWITH_PCMANFM_QT:BOOL=OFF \
 	-DWITH_QTERMINAL:BOOL=OFF \
+	-DWITH_QTERMWIDGET:BOOL=OFF \
 	-DWITH_PAVUCONTROL_QT:BOOL=OFF
 
 .include <bsd.port.mk>

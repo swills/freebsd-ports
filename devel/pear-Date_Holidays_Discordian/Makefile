@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/pear-Date_Holidays_Discordian/Makefile 443180 2017-06-11 07:30:26Z sunpoet $
+# $FreeBSD: head/devel/pear-Date_Holidays_Discordian/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	Date_Holidays_Discordian
 PORTVERSION=	0.1.1
@@ -8,7 +8,7 @@ MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Driver based class to calculate Discordian holidays
 
 BUILD_DEPENDS=  ${PEARDIR}/Date/Holidays.php:devel/pear-Date_Holidays
-RUN_DEPENDS=   	${PEARDIR}/Date/Holidays.php:devel/pear-Date_Holidays
+RUN_DEPENDS=	${PEARDIR}/Date/Holidays.php:devel/pear-Date_Holidays
 
 USES=		pear
 

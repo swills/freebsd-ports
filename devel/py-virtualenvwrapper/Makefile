@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/py-virtualenvwrapper/Makefile 452148 2017-10-15 14:24:26Z nivit $
+# $FreeBSD: head/devel/py-virtualenvwrapper/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	virtualenvwrapper
 PORTVERSION=	4.8.2
@@ -32,7 +32,7 @@ DOCS_VARS=	DOCSDIR=${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME} \
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|$$(command \\which python)|${PYTHON_CMD}|1' \
-	       	${WRKSRC}/${PORTNAME}.sh
+		${WRKSRC}/${PORTNAME}.sh
 
 post-patch-DOCS-on:
 	@${REINPLACE_CMD} -e 's|python setup.py|${PYTHON_CMD} setup.py|' \

@@ -1,11 +1,11 @@
 # Created by: philip@FreeBSD.org
-# $FreeBSD: head/devel/py3-threema-msgapi/Makefile 427937 2016-12-06 08:16:22Z philip $
+# $FreeBSD: head/devel/py3-threema-msgapi/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	threema-msgapi
 PORTVERSION=	2.1.8
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel python
-PKGNAMEPREFIX=  ${PYTHON_PKGNAMEPREFIX}
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	philip@FreeBSD.org
 COMMENT=	Threema Gateway Message SDK for Python

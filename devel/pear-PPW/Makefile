@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-PPW/Makefile 443137 2017-06-11 02:28:16Z sunpoet $
+# $FreeBSD: head/devel/pear-PPW/Makefile 453248 2017-10-31 19:08:52Z joneum $
 
 PORTNAME=	PPW
 PORTVERSION=	1.0.4
@@ -12,6 +12,9 @@ MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PHP Project Wizard
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=	Project is EoL
+EXPIRATION_DATE=	2017-11-07
 
 BUILD_DEPENDS=	pear>=1.9.4:devel/pear \
 		pear-ezc_ConsoleTools>=1.6:devel/pear-ezc_ConsoleTools \

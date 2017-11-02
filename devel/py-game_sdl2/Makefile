@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-game_sdl2/Makefile 435229 2017-03-02 11:16:34Z jbeich $
+# $FreeBSD: head/devel/py-game_sdl2/Makefile 453203 2017-10-30 18:36:00Z jbeich $
 
 PORTNAME=	game_sdl2
-PORTVERSION=	6.99.12.4
+PORTVERSION=	6.99.13
 CATEGORIES=	devel python
 MASTER_SITES=	http://www.renpy.org/dl/${PORTVERSION}/ \
 		GENTOO

@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/emulators/mame/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/emulators/mame/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME?=	mame
 PORTVERSION=	0.166
@@ -19,7 +19,7 @@ ONLY_FOR_ARCHS_REASON=	not yet ported to any arch other than x86
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	mamedev
-GH_PROJECT=	mame 				# explicit (master port)
+GH_PROJECT=	mame				# explicit (master port)
 GH_TAGNAME=	mame${PORTVERSION:S/.//}
 
 USES=		compiler:c11 gmake jpeg pkgconfig python:2,build shebangfix

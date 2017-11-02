@@ -1,11 +1,11 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/lang/beignet/Makefile 451414 2017-10-06 22:05:35Z jbeich $
+# $FreeBSD: head/lang/beignet/Makefile 453205 2017-10-30 18:36:39Z jbeich $
 
 PORTNAME=	beignet
-DISTVERSIONPREFIX=	Release_v
-DISTVERSION=	1.3.1-52
-DISTVERSIONSUFFIX=	-ga97fcb17
+DISTVERSION=	1.3.2
+DISTVERSIONSUFFIX=	-source
 CATEGORIES=	lang
+MASTER_SITES=	https://01.org/sites/default/files/
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	OpenCL library for Intel GPUs
@@ -20,8 +20,7 @@ LIB_DEPENDS=	libOpenCL.so:devel/ocl-icd \
 RUN_DEPENDS=	opencl>=0:devel/opencl \
 		clang${LLVMVER}:devel/llvm${LLVMVER}
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	intel
+WRKSRC=		${WRKDIR}/Beignet-${DISTVERSION}-Source
 
 USES=		cmake ncurses pkgconfig shebangfix
 USE_XORG=	sm ice x11 xext xfixes

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/onscripter/Makefile 428567 2016-12-14 15:39:30Z jbeich $
+# $FreeBSD: head/devel/onscripter/Makefile 453327 2017-11-02 00:13:46Z jbeich $
 
 PORTNAME=	onscripter
-PORTVERSION=	20161102
+PORTVERSION=	20170814
 CATEGORIES=	devel games
 MASTER_SITES=	http://onscripter.osdn.jp/
 

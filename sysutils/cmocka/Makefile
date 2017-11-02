@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/cmocka/Makefile 442784 2017-06-06 16:38:00Z mat $
+# $FreeBSD: head/sysutils/cmocka/Makefile 453155 2017-10-30 04:04:27Z timur $
 
 PORTNAME=	cmocka
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://cmocka.org/files/1.1/ \
 		LOCAL/dteske
@@ -20,7 +20,7 @@ PLIST_FILES=	include/cmocka.h \
 		lib/cmake/cmocka/cmocka-config.cmake \
 		lib/libcmocka.so \
 		lib/libcmocka.so.0 \
-		lib/libcmocka.so.0.4.0 \
+		lib/libcmocka.so.0.4.1 \
 		libdata/pkgconfig/cmocka.pc
 
 OPTIONS_DEFINE=	STATIC

@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/p5-HTTP-Server-Simple-Static/Makefile 451597 2017-10-09 10:37:43Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-Server-Simple-Static/Makefile 453186 2017-10-30 14:54:48Z sunpoet $
 
 PORTNAME=	HTTP-Server-Simple-Static
-PORTVERSION=	0.13
+PORTVERSION=	0.14
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

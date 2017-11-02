@@ -1,8 +1,8 @@
 # Created by: Andreas Kohn
-# $FreeBSD: head/devel/mercurial/Makefile 451091 2017-10-02 18:24:21Z sunpoet $
+# $FreeBSD: head/devel/mercurial/Makefile 453364 2017-11-02 19:01:25Z sunpoet $
 
 PORTNAME=	mercurial
-PORTVERSION=	4.3.3
+PORTVERSION=	4.4
 CATEGORIES=	devel python
 MASTER_SITES=	https://www.mercurial-scm.org/release/
 
@@ -52,7 +52,7 @@ CONTRIB_FILES=	bash_completion \
 		vim/hgtest.vim \
 		vim/patchreview.txt \
 		vim/patchreview.vim
-PORTDOCS=	CONTRIBUTORS README
+PORTDOCS=	CONTRIBUTORS README.rst
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/doc/*.1 ${STAGEDIR}${PREFIX}/man/man1/

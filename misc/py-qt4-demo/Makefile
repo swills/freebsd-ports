@@ -1,5 +1,5 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/misc/py-qt4-demo/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/misc/py-qt4-demo/Makefile 453263 2017-11-01 07:32:34Z antoine $
 
 PORTNAME=	demo
 PORTVERSION=	${PYQT4_VERSION}
@@ -16,6 +16,7 @@ DISTINFO_FILE=	${PYQT4_DISTINFO_FILE}
 
 NO_BUILD=	yes
 USES=		python pyqt:4
+USE_PYTHON=	py3kplist
 
 EXAMPLESDIR=	${PREFIX}/share/examples/py-qt4
 

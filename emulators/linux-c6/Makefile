@@ -1,8 +1,9 @@
 # Created by: Johannes Jost Meixner <xmj@FreeBSD.org>
-# $FreeBSD: head/emulators/linux-c6/Makefile 441768 2017-05-26 10:26:39Z tijl $
+# $FreeBSD: head/emulators/linux-c6/Makefile 453285 2017-11-01 13:21:11Z tijl $
 
 PORTNAME=	linux-c6
 PORTVERSION=	${LINUX_DIST_VER}
+PORTREVISION=	1
 CATEGORIES=	emulators linux
 
 MAINTAINER=	emulation@FreeBSD.org
@@ -26,7 +27,6 @@ RUN_DEPENDS=	linux-c6-libasyncns>0:dns/linux-c6-libasyncns \
 		linux-c6-dbus-libs>0:devel/linux-c6-dbus-libs \
 		linux-c6-qt47>0:devel/linux-c6-qt47 \
 		linux-c6-dbus-glib>0:devel/linux-c6-dbus-glib \
-		linux-c6-ncurses-base>0:devel/linux-c6-ncurses-base \
 		linux-c6-xorg-libs>0:x11/linux-c6-xorg-libs \
 		linux-c6-fontconfig>0:x11-fonts/linux-c6-fontconfig \
 		linux-c6-cups-libs>0:print/linux-c6-cups-libs \

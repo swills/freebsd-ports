@@ -1,11 +1,11 @@
 # Created by: Heiner Strauss <heiner@bilch.com>
-# $FreeBSD: head/finance/openhbci/Makefile 421880 2016-09-11 22:14:52Z marino $
+# $FreeBSD: head/finance/openhbci/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	openhbci
 PORTVERSION=	0.9.17.2
 PORTREVISION=	1
 CATEGORIES=	finance
-MASTER_SITES= 	SF/${PORTNAME}/${PORTNAME}/0.9.17
+MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/0.9.17
 DISTNAME=	openhbci-0.9.17-2
 
 MAINTAINER=	ports@FreeBSD.org

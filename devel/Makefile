@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 452958 2017-10-26 22:34:30Z jonathan $
+# $FreeBSD: head/devel/Makefile 453285 2017-11-01 13:21:11Z tijl $
 #
 
     COMMENT = Development utilities
@@ -329,6 +329,7 @@
     SUBDIR += cobf
     SUBDIR += coccinelle
     SUBDIR += codeblocks
+    SUBDIR += codeblocks-devel
     SUBDIR += codequery
     SUBDIR += codesearch-py
     SUBDIR += codeville
@@ -890,6 +891,7 @@
     SUBDIR += hapy
     SUBDIR += hcs12mem
     SUBDIR += hexcompare
+    SUBDIR += hexd
     SUBDIR += hg-git
     SUBDIR += hgreviewboard
     SUBDIR += hgsvn
@@ -1594,7 +1596,6 @@
     SUBDIR += linux-c6-libsigc++20
     SUBDIR += linux-c6-libsoup
     SUBDIR += linux-c6-libthai
-    SUBDIR += linux-c6-ncurses-base
     SUBDIR += linux-c6-nspr
     SUBDIR += linux-c6-qt47
     SUBDIR += linux-c6-sdl12
@@ -1607,7 +1608,6 @@
     SUBDIR += linux-c7-libpciaccess
     SUBDIR += linux-c7-libsigc++20
     SUBDIR += linux-c7-libthai
-    SUBDIR += linux-c7-ncurses-base
     SUBDIR += linux-c7-nspr
     SUBDIR += linux-c7-qt
     SUBDIR += linux-c7-sdl12

@@ -1,10 +1,9 @@
 # Created by: Anish Mistry
-# $FreeBSD: head/sysutils/fusefs-sshfs/Makefile 442599 2017-06-05 00:46:20Z bofh $
+# $FreeBSD: head/sysutils/fusefs-sshfs/Makefile 453084 2017-10-28 21:36:28Z se $
 
 PORTNAME=	sshfs
-PORTVERSION=	2.9
+PORTVERSION=	3.3.0
 DISTVERSIONPREFIX=	${PORTNAME}-
-PORTREVISION=	1
 CATEGORIES=	sysutils
 PKGNAMEPREFIX=	fusefs-
 
@@ -14,11 +13,13 @@ COMMENT=	Mount remote directories over ssh
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+BUILD_DEPENDS=	rst2man:textproc/py-docutils
+
+USES=		fuse:3 gettext meson pkgconfig
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	libfuse
 
-GNU_CONFIGURE=	yes
-USES=		autoreconf fuse gettext pkgconfig
 USE_GNOME=	glib20
 
 PLIST_FILES=	bin/sshfs \

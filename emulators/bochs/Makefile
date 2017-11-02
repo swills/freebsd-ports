@@ -1,5 +1,5 @@
 # Created by: alex
-# $FreeBSD: head/emulators/bochs/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/emulators/bochs/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	bochs
 PORTVERSION=	2.6.8
@@ -179,7 +179,7 @@ USB_XHCI_IMPLIES=	PCI
 VMX_DESC=		Virtialization extensions
 VMX_VARS=		WITH_CPU_LEVEL=6
 VMX_IMPLIES=		FPU
-VNCSERVER_DESC= 	LibVNCServer support (works with VNC viewer)
+VNCSERVER_DESC=		LibVNCServer support (works with VNC viewer)
 VNCSERVER_LIB_DEPENDS=	libvncserver.so:net/libvncserver
 VNCSERVER_CONFIGURE_WITH=	vncsrv
 VOODOO_DESC=		3dfx Voodoo Graphics emulation

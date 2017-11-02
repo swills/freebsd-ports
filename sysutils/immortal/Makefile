@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/immortal/Makefile 449511 2017-09-09 20:54:10Z dbaio $
+# $FreeBSD: head/sysutils/immortal/Makefile 452970 2017-10-27 10:39:40Z olgeni $
 
 PORTNAME=	immortal
 PORTVERSION=	0.16.0
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	nbari@tequila.io
@@ -40,6 +41,7 @@ do-install:
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${ETCDIR}
-	${INSTALL_DATA} ${FILESDIR}/www.yml ${STAGEDIR}${ETCDIR}/www.yml.sample
+	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
+	${INSTALL_DATA} ${FILESDIR}/www.yml ${STAGEDIR}${EXAMPLESDIR}/www.yml.sample
 
 .include <bsd.port.mk>

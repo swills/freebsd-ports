@@ -1,5 +1,5 @@
 # Created by: Stas Timokhin <devel@stasyan.com>
-# $FreeBSD: head/science/meep/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/science/meep/Makefile 452975 2017-10-27 12:19:20Z mat $
 
 PORTNAME=	meep
 PORTVERSION=	1.2.1
@@ -27,14 +27,11 @@ MAKE_ARGS+=	CC="${CC}" CXX="${CXX}"
 
 OPTIONS_RADIO=		MPI
 OPTIONS_RADIO_MPI=	OPENMPI MPICH2
-OPTIONS_DEFAULT=	${MPI_DEFAULT}
+OPTIONS_DEFAULT=	${OPTIONS_DEFAULT_${OPSYS}}
+OPTIONS_DEFAULT_FreeBSD=	MPICH2
 OPENMPI_DESC=		MPI support (with OpenMPI)
 
 .include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD
-MPI_DEFAULT=	MPICH2
-.endif
 
 .if ${PORT_OPTIONS:MMPICH2} || ${PORT_OPTIONS:MOPENMPI}
 CONFIGURE_ARGS+=	--with-mpi

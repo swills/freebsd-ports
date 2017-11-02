@@ -1,8 +1,8 @@
 # Created by: Rui Lopes (rgl ruilopes com)
-# $FreeBSD: head/devel/rubygem-tzinfo/Makefile 436999 2017-03-26 21:24:38Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tzinfo/Makefile 453039 2017-10-27 23:18:40Z sunpoet $
 
 PORTNAME=	tzinfo
-PORTVERSION=	1.2.3
+PORTVERSION=	1.2.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

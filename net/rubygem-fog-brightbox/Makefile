@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-brightbox/Makefile 447155 2017-08-02 18:35:54Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-brightbox/Makefile 453254 2017-10-31 22:14:49Z sunpoet $
 
 PORTNAME=	fog-brightbox
-PORTVERSION=	0.13.0
+PORTVERSION=	0.14.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

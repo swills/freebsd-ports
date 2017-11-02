@@ -1,5 +1,5 @@
 # Created by: Jason Harmening <jason.harmening@gmail.com>
-# $FreeBSD: head/multimedia/libtuner/Makefile 440858 2017-05-13 23:21:37Z linimon $
+# $FreeBSD: head/multimedia/libtuner/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	libtuner
 PORTVERSION=	1.1.3
@@ -15,7 +15,7 @@ LICENSE_COMB=	multi
 BROKEN_powerpc64=	fails to compile: tuner_iic_device.cpp: EINVAL was not declared in this scope
 
 MAKE_ARGS+=	INSTALLDIR=${STAGEDIR}${PREFIX}
-MAKE_ARGS+= 	-D LIBTUNER_ENABLE_IIC
+MAKE_ARGS+=	-D LIBTUNER_ENABLE_IIC
 USE_LDCONFIG=	${PREFIX}/lib/libtuner
 
 .include <bsd.port.mk>

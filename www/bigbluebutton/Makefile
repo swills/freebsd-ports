@@ -1,5 +1,5 @@
 # Created by: alex.deiter@gmail.com
-# $FreeBSD: head/www/bigbluebutton/Makefile 421951 2016-09-12 19:18:11Z madpilot $
+# $FreeBSD: head/www/bigbluebutton/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	bigbluebutton
 PORTVERSION=	0.71
@@ -34,7 +34,7 @@ USE_JAVA=	yes
 JAVA_EXTRACT=	yes
 NO_BUILD=	yes
 DIST_SUBDIR=	${PORTNAME}
-USE_RC_SUBR=   	openoffice
+USE_RC_SUBR=	openoffice
 SOFFICEBIN?=	${PREFIX}/bin/openoffice-4.0.1
 RED5_HOME?=	${PREFIX}/red5
 RED5_LOGS?=	${RED5_HOME}/log

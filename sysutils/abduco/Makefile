@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/abduco/Makefile 421006 2016-08-28 06:49:37Z marino $
+# $FreeBSD: head/sysutils/abduco/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	abduco
 PORTVERSION=	0.6
@@ -16,7 +16,7 @@ MAKE_ARGS=	CPPFLAGS="${CPPFLAGS}" STRIP="${STRIP_CMD}" \
 PLIST_FILES=	bin/abduco \
 		man/man1/abduco.1.gz
 
-MAKE_JOBS_UNSAFE= 	yes
+MAKE_JOBS_UNSAFE=	yes
 
 pre-everything::
 	@${ECHO_MSG} "You can build abduco with your own config.h using the ABDUCO_CONF knob:"
