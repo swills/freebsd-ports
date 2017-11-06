@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/Makefile 437603 2017-04-03 08:40:33Z wen $
+# $FreeBSD: head/astro/Makefile 453057 2017-10-28 12:17:49Z swills $
 #
 
     COMMENT = Astronomical ports
@@ -105,6 +105,7 @@
     SUBDIR += stellarium
     SUBDIR += stellarium-qt4
     SUBDIR += sunclock
+    SUBDIR += sunwait
     SUBDIR += swe
     SUBDIR += tclgeomap
     SUBDIR += tkgeomap

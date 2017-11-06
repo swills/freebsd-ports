@@ -1,8 +1,8 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/shells/wcd/Makefile 435251 2017-03-02 16:36:36Z pawel $
+# $FreeBSD: head/shells/wcd/Makefile 453353 2017-11-02 17:26:23Z pawel $
 
 PORTNAME=	wcd
-PORTVERSION=	6.0.0
+PORTVERSION=	6.0.1
 CATEGORIES=	shells
 MASTER_SITES=	SF
 

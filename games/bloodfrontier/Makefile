@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/bloodfrontier/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/bloodfrontier/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	bloodfrontier
 DISTVERSION=	B2
@@ -46,7 +46,7 @@ CLIENT_DESKTOP_ENTRIES=	"Blood Frontier" \
 			"bfclient" \
 			"Game;Shooter;" \
 			""
-DEDICATED_DESC= 	Build dedicated server
+DEDICATED_DESC=		Build dedicated server
 DEDICATED_PLIST_FILES=	bin/bfserver libexec/bfserver
 DEDICATED_ALL_TARGET=	server
 

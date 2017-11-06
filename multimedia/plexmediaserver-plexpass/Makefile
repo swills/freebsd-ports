@@ -1,8 +1,8 @@
 # Created by: KalleDK <plexmaintainer@k-moeller.dk>
-# $FreeBSD: head/multimedia/plexmediaserver-plexpass/Makefile 452551 2017-10-20 18:45:55Z feld $
+# $FreeBSD: head/multimedia/plexmediaserver-plexpass/Makefile 453281 2017-11-01 11:51:05Z feld $
 
-PORTVERSION=	1.9.5.4339
-DISTVERSIONSUFFIX=46276db8d
+PORTVERSION=	1.9.6.4401
+DISTVERSIONSUFFIX=53fa66811
 PORTREVISION=	0
 PKGNAMESUFFIX=	-plexpass
 

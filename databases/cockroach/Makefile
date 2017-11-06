@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/cockroach/Makefile 452622 2017-10-22 08:05:41Z antoine $
+# $FreeBSD: head/databases/cockroach/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	cockroach
 PORTVERSION=	1.0.4
@@ -30,7 +30,7 @@ GROUPS=		cockroach
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|-DCMAKE_CXX_FLAGS=-DNDEBUG)|-DCMAKE_CXX_FLAGS=-DNDEBUG) -DFAIL_ON_WARNINGS=OFF|g' \
-	  	${WRKSRC}/src/github.com/cockroachdb/cockroach/build/common.mk
+		${WRKSRC}/src/github.com/cockroachdb/cockroach/build/common.mk
 
 do-build:
 	@${SETENV} -i PATH="${PATH}" \

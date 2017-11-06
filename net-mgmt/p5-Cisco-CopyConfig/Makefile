@@ -1,6 +1,6 @@
-# $FreeBSD: head/net-mgmt/p5-Cisco-CopyConfig/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/p5-Cisco-CopyConfig/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
-PORTNAME=       Cisco-CopyConfig
+PORTNAME=	Cisco-CopyConfig
 PORTVERSION=	1.4
 CATEGORIES=	net-mgmt perl5
 MASTER_SITES=	CPAN

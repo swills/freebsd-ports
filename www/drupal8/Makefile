@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas <acmFreeBSD.org>
-# $FreeBSD: head/www/drupal8/Makefile 448280 2017-08-19 04:02:02Z acm $
+# $FreeBSD: head/www/drupal8/Makefile 453330 2017-11-02 01:52:22Z acm $
 
 PORTNAME=	drupal8
-PORTVERSION=	8.3.7
+PORTVERSION=	8.4.1
 CATEGORIES=	www
 MASTER_SITES=	http://ftp.drupal.org/files/projects/
 DISTNAME=	drupal-${PORTVERSION}
@@ -14,8 +14,8 @@ COMMENT=	Database driven web content management system (CMS)
 LICENSE=	GPLv2+
 
 USES=		php:web shebangfix
-USE_PHP=	dom filter gd hash json mbstring pcre pdo session simplexml \
-		tokenizer xml
+USE_PHP=	dom filter gd hash json mbstring opcache pcre pdo session \
+		simplexml tokenizer xml
 SHEBANG_FILES=	core/scripts/password-hash.sh
 
 NO_ARCH=	yes

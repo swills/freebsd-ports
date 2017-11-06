@@ -1,5 +1,5 @@
 # Created by: Jin-Sih Lin <linpct@gmail.com>
-# $FreeBSD: head/www/node4/Makefile 452889 2017-10-25 18:37:51Z bhughes $
+# $FreeBSD: head/www/node4/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	node
 PORTVERSION=	4.8.5
@@ -36,7 +36,7 @@ CONFLICTS_INSTALL=	node[56]-[0-9]* node01[02]-[0-9]* node-[0-9]* node-devel-[0-9
 
 ONLY_FOR_ARCHS=	amd64 i386
 CONFIGURE_ARGS=	--prefix=${PREFIX_RELDEST} \
-	 	--without-npm \
+		--without-npm \
 		--shared-libuv \
 		--shared-zlib
 PREFIX_RELDEST=	${PREFIX:S,^${DESTDIR},,}

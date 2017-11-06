@@ -1,5 +1,5 @@
 # Created by: Patrick MARIE <mycroft@virgaria.org>
-# $FreeBSD: head/devel/mpatrol/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/devel/mpatrol/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	mpatrol
 PORTVERSION=	1.4.8
@@ -8,7 +8,7 @@ CATEGORIES=	devel
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
-MAINTAINER= ports@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Dynamic memory debugging and profiling library
 
 LIB_DEPENDS=	libelf.so.0:devel/libelf

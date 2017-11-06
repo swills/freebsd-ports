@@ -1,5 +1,5 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/databases/mysql57-server/Makefile 452597 2017-10-21 18:12:35Z mmokhi $
+# $FreeBSD: head/databases/mysql57-server/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME?=	mysql
 PORTVERSION=	5.7.20
@@ -138,7 +138,7 @@ FEDERATED_SUB_LIST+=		FEDER="--federated"
 FEDERATED_SUB_LIST_OFF+=	FEDER=""
 
 # issue 220865: Currently there's no source to be built with server-side support.
-# 		But this keeps the pkg-plist not overlaping
+#		But this keeps the pkg-plist not overlaping
 CMAKE_ARGS+=	-DWITH_AUTHENTICATION_LDAP=0
 .endif
 

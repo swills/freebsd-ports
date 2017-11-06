@@ -1,5 +1,5 @@
 # Created by: rflynn@acsalaska.net
-# $FreeBSD: head/net-mgmt/observium/Makefile 448544 2017-08-22 16:26:13Z swills $
+# $FreeBSD: head/net-mgmt/observium/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	observium
 PORTVERSION=	0.16.10.8128
@@ -12,10 +12,10 @@ DIST_SUBDIR=	${PORTNAME}-${PORTVERSION}
 MAINTAINER=	dirkx@webweaving.org
 COMMENT=	Autodiscovering PHP/MySQL/SNMP based network monitoring
 
-LICENSE=        EULA
+LICENSE=	EULA
 LICENSE_NAME=	"Observium License Version 1.0"
 LICENSE_FILE=	${WRKSRC}/LICENSE.COMMUNITY
-LICENSE_PERMS=  dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/domoticz/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/www/domoticz/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	domoticz
 PORTVERSION=	3.${DOMOTICZ_REL}
@@ -69,9 +69,9 @@ LIB_DEPENDS+=	libmosquitto.so:net/mosquitto
 .endif
 
 .if ${PORT_OPTIONS:MSSQLITE}
-CMAKE_ARGS+= 	-DUSE_BUILTIN_SQLITE="YES"
+CMAKE_ARGS+=	-DUSE_BUILTIN_SQLITE="YES"
 .else
-CMAKE_ARGS+= 	-DUSE_BUILTIN_SQLITE="NO"
+CMAKE_ARGS+=	-DUSE_BUILTIN_SQLITE="NO"
 USES+=		sqlite
 .endif
 

@@ -1,10 +1,10 @@
 # Created by: Simon Barner <barner@gmx.de>
-# $FreeBSD: head/devel/valgrind-devel/Makefile 440063 2017-05-03 22:07:31Z bdrewery $
+# $FreeBSD: head/devel/valgrind-devel/Makefile 453198 2017-10-30 17:13:31Z bdrewery $
 
 PORTNAME=	valgrind
 PORTVERSION=	3.10.1.20160113
 DISTVERSIONPREFIX=	freebsd-
-PORTREVISION=	4
+PORTREVISION=	5
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/ \
@@ -62,6 +62,10 @@ WRKSRC=		${WRKDIR}/${BB_ACCOUNT}-${BB_PROJECT}-${BB_COMMIT}
 CONFIGURE_ENV+=	ac_cv_path_PERL=${PERL}
 
 .include <bsd.port.options.mk>
+
+.if ${OSVERSION} > 1200030
+EXTRA_PATCHES+=	${FILESDIR}/extra-patch-ino64:-p1
+.endif
 
 .if ${ARCH} == "amd64"
 PLIST_SUB+=	AMD64="" ARCH=amd64

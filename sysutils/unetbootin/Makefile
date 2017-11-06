@@ -1,9 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/sysutils/unetbootin/Makefile 449274 2017-09-05 08:59:07Z danfe $
+# $FreeBSD: head/sysutils/unetbootin/Makefile 453225 2017-10-31 10:30:04Z danfe $
 
 PORTNAME=	unetbootin
-PORTVERSION=	655
-PORTREVISION=	1
+PORTVERSION=	657
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/${PORTNAME}/UNetbootin/${PORTVERSION}
 DISTNAME=	${PORTNAME}-source-${PORTVERSION}

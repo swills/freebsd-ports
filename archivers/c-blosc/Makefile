@@ -1,5 +1,5 @@
 # Created by: iblis <iblis@hs.ntnu.edu.tw>
-# $FreeBSD: head/archivers/c-blosc/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/archivers/c-blosc/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	c-blosc
 PORTVERSION=	1.12.1
@@ -28,7 +28,7 @@ PLIST_SUB=	VERSION="${PORTVERSION:R:R}" \
 CMAKE_ARGS=	-DBUILD_SHARED=ON
 
 OPTIONS_DEFINE=	STATIC TEST AVX2 LZ4 SNAPPY ZLIB ZSTD
-OPTIONS_DEFAULT= 	STATIC LZ4 SNAPPY ZLIB ZSTD
+OPTIONS_DEFAULT=STATIC LZ4 SNAPPY ZLIB ZSTD
 OPTIONS_SUB=	yes
 
 AVX2_DESC=	Attempt to build with AVX2 instructions

@@ -1,9 +1,9 @@
 # Created by: Franz Bettag <franz@bett.ag>
-# $FreeBSD: head/security/pixiewps/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/security/pixiewps/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	pixiewps
 PORTVERSION=	1.2.2
-DISTVERSIONPREFIX= v
+DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 
 MAINTAINER=	franz@bett.ag

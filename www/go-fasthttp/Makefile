@@ -1,10 +1,10 @@
-# $FreeBSD: head/www/go-fasthttp/Makefile 434469 2017-02-20 15:16:06Z sunpoet $
+# $FreeBSD: head/www/go-fasthttp/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	fasthttp
 PORTVERSION=	20160617
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www net
-PKGNAMEPREFIX=  go-
+PKGNAMEPREFIX=	go-
 
 MAINTAINER=	guy.tabrar@me.com
 COMMENT=	Fast HTTP package for Go, tuned for high performance
@@ -17,9 +17,9 @@ BUILD_DEPENDS=	go-compress>=0:archivers/go-compress \
 		go-crc32>=0:devel/go-crc32
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USE_GITHUB= 	yes
-GH_ACCOUNT= 	valyala
-USES= 		go
-GO_PKGNAME= 	github.com/valyala/fasthttp
+USE_GITHUB=	yes
+GH_ACCOUNT=	valyala
+USES=		go
+GO_PKGNAME=	github.com/valyala/fasthttp
 
 .include <bsd.port.mk>

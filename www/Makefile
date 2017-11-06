@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 452915 2017-10-26 11:34:01Z koobs $
+# $FreeBSD: head/www/Makefile 453351 2017-11-02 16:28:06Z dvl $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -13,6 +13,7 @@
     SUBDIR += R-cran-scrapeR
     SUBDIR += R-cran-selectr
     SUBDIR += R-cran-shiny
+    SUBDIR += UniversalFeedCreator
     SUBDIR += WebMagick
     SUBDIR += ach
     SUBDIR += adzap
@@ -1370,6 +1371,7 @@
     SUBDIR += p5-WebService-Linode
     SUBDIR += p5-WebService-MoviePosterDB
     SUBDIR += p5-WebService-MusicBrainz
+    SUBDIR += p5-WebService-MusicBrainz0
     SUBDIR += p5-WebService-NoPaste
     SUBDIR += p5-WebService-Pushover
     SUBDIR += p5-WebService-Rakuten

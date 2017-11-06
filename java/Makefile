@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/Makefile 452077 2017-10-14 18:43:15Z glewis $
+# $FreeBSD: head/java/Makefile 453250 2017-10-31 20:30:15Z olgeni $
 #
 
     COMMENT = Java language support
@@ -57,6 +57,7 @@
     SUBDIR += jakarta-regexp
     SUBDIR += jamvm
     SUBDIR += jasmin
+    SUBDIR += jattach
     SUBDIR += java-checkstyle
     SUBDIR += java-cup
     SUBDIR += java-getopt
@@ -125,6 +126,7 @@
     SUBDIR += veditor
     SUBDIR += visualvm
     SUBDIR += wildfly10
+    SUBDIR += wildfly11
     SUBDIR += wildfly90
     SUBDIR += xdoclet
 

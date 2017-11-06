@@ -1,7 +1,6 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/archivers/php56-zip/Makefile 450775 2017-09-27 18:08:14Z rakuco $
+# $FreeBSD: head/archivers/php56-zip/Makefile 453277 2017-11-01 11:39:44Z ale $
 
-PORTREVISION=	1
 CATEGORIES=	archivers
 
 MASTERDIR=	${.CURDIR}/../../lang/php56

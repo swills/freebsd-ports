@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/rofi/Makefile 450971 2017-09-30 10:22:50Z tcberner $
+# $FreeBSD: head/x11/rofi/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	rofi
 DISTVERSION=	1.4.1
@@ -11,7 +11,7 @@ COMMENT=	Window switcher, run dialog and dmenu replacement
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS= 	checkmk:devel/check \
+BUILD_DEPENDS=	checkmk:devel/check \
 		${LOCALBASE}/bin/flex:textproc/flex
 LIB_DEPENDS=	libstartup-notification-1.so:x11/startup-notification \
 		libxcb-ewmh.so:x11/xcb-util-wm \

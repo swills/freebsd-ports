@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/bootstrap-openjdk8/Makefile 451083 2017-10-02 16:24:18Z jkim $
+# $FreeBSD: head/java/bootstrap-openjdk8/Makefile 453336 2017-11-02 05:29:33Z jkim $
 
 PORTNAME=	openjdk8
 PORTVERSION=	${DISTVERSION_${JDK_ARCH}}
@@ -12,9 +12,10 @@ COMMENT=	Java Development Kit 8
 
 LICENSE=	GPLv2
 
-ONLY_FOR_ARCHS=		amd64 armv6 armv7 i386
+ONLY_FOR_ARCHS=		aarch64 amd64 armv6 armv7 i386
 
 DISTINFO_FILE=	${.CURDIR}/distinfo.${JDK_ARCH}
+DISTVERSION_aarch64=	r453315
 DISTVERSION_amd64=	r450802
 DISTVERSION_arm=	r450802
 DISTVERSION_i386=	r450802
@@ -32,7 +33,7 @@ INSTALLDIR=	${STAGEDIR}${PREFIX}/${JDK_ROOT}
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH:Marmv*}
+.if ${ARCH} == aarch64 || ${ARCH:Marmv*}
 RUN_DEPENDS+=	${LOCALBASE}/lib/libffi.so.6:devel/libffi
 .endif
 

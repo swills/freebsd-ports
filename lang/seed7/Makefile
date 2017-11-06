@@ -1,9 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/lang/seed7/Makefile 444437 2017-06-27 00:05:15Z linimon $
+# $FreeBSD: head/lang/seed7/Makefile 452972 2017-10-27 12:11:39Z gahr $
 
 PORTNAME=	seed7
-DISTVERSION=	05_20170501
-PORTREVISION=	1
+DISTVERSION=	05_20170915
 CATEGORIES=	lang
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${DISTNAME}/
 DISTNAME=	${PORTNAME}_${DISTVERSION}
@@ -17,9 +16,9 @@ COMMENT=	High-level, extensible programming language
 LICENSE=	GPLv2 LGPL21
 LICENSE_COMB=	multi
 
-LIB_DEPENDS=	libodbc.so:databases/unixODBC
-
 ONLY_FOR_ARCHS=		amd64 i386 sparc64
+
+LIB_DEPENDS=	libodbc.so:databases/unixODBC
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 

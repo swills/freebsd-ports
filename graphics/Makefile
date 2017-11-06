@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 452652 2017-10-22 15:35:25Z tobik $
+# $FreeBSD: head/graphics/Makefile 453103 2017-10-29 09:20:57Z tcberner $
 #
 
     COMMENT = Graphics tools and libraries
@@ -279,6 +279,7 @@
     SUBDIR += glosm
     SUBDIR += glpng
     SUBDIR += gltt
+    SUBDIR += gmic-qt
     SUBDIR += gmt
     SUBDIR += gnash
     SUBDIR += gnofract4d

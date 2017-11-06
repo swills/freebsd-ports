@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-rex-powershell/Makefile 441379 2017-05-21 11:17:09Z antoine $
+# $FreeBSD: head/security/rubygem-rex-powershell/Makefile 453094 2017-10-29 07:39:08Z antoine $
 
 PORTNAME=	rex-powershell
-PORTVERSION=	0.1.72
+PORTVERSION=	0.1.77
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
@@ -15,8 +15,7 @@ RUN_DEPENDS=	rubygem-rex-random_identifier>=0:security/rubygem-rex-random_identi
 		rubygem-rex-text>=0:security/rubygem-rex-text
 
 NO_ARCH=	yes
-
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 .include <bsd.port.mk>

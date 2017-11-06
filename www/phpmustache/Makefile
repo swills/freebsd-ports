@@ -1,5 +1,5 @@
 # Created by: Steve Polyack <spolyack@collaborativefusion.com>
-# $FreeBSD: head/www/phpmustache/Makefile 448650 2017-08-24 05:28:27Z vanilla $
+# $FreeBSD: head/www/phpmustache/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	phpmustache
 PORTVERSION=	2.12.0
@@ -33,6 +33,6 @@ do-install:
 do-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	(cd ${WRKSRC}/test/fixtures/examples && ${COPYTREE_SHARE} . \
-	       	${STAGEDIR}${EXAMPLESDIR})
+		${STAGEDIR}${EXAMPLESDIR})
 
 .include <bsd.port.mk>

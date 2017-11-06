@@ -1,5 +1,5 @@
 # Created by: Devin Teske <dteske@FreeBSD.org>
-# $FreeBSD: head/sysutils/bsdconfig/Makefile 396034 2015-09-03 18:50:35Z amdmi3 $
+# $FreeBSD: head/sysutils/bsdconfig/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	bsdconfig
 PORTVERSION=	0.9.0
@@ -33,7 +33,7 @@ OPTIONS_DEFINE=	EXAMPLES
 .include <bsd.port.pre.mk>
 
 .if ${OPSYS} != FreeBSD
-IGNORE= 	is a FreeBSD-specific port
+IGNORE=		is a FreeBSD-specific port
 .endif
 
 post-patch:

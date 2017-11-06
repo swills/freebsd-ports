@@ -1,5 +1,5 @@
 # Created by: Mikhail Teterin <mi@aldan.algebra.com>
-# $FreeBSD: head/devel/tcllib/Makefile 431796 2017-01-18 13:20:31Z tijl $
+# $FreeBSD: head/devel/tcllib/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	tcllib
 DISTVERSIONPREFIX=	${PORTNAME}_
@@ -57,8 +57,8 @@ INSTALL_ARGS+=	-no-html
 .if !target(post-patch)
 post-patch:
 #
-# 	Ensure, the detailed output of vendors' self-tests is
-# 	available in addition to the pretty progress report:
+#	Ensure the detailed output of vendors' self-tests is
+#	available in addition to the pretty progress report:
 #
 	${REINPLACE_CMD} -e 's,test run,test run -l testlog,' \
 		-e 's,$$(libdir)/@PACKAGE@@VERSION@,$$(libdir)/@PACKAGE@,' \
@@ -66,7 +66,7 @@ post-patch:
 	${FIND} ${WRKSRC}/apps -type f ! -name "*.man" | ${XARGS} \
 	   ${REINPLACE_CMD} -e 's,exec tclsh,exec ${TCLSH},' -e 's,/usr/bin/env tclsh,${TCLSH},'
 #
-# 	patch(1) adds a newline at eof, so we need to remove it here
+#	patch(1) adds a newline at eof, so we need to remove it here
 #
 	${AWK} 'NR > 1 { print h } { h = $$0 } END { ORS = ""; print h }' \
 	   ${WRKSRC}/modules/doctools/tests/text/04 > ${WRKSRC}/modules/doctools/tests/text/04.new

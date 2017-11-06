@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/ebook2cwgui/Makefile 452001 2017-10-13 14:19:26Z bapt $
+# $FreeBSD: head/comms/ebook2cwgui/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	ebook2cwgui
 PORTVERSION=	0.1.2
@@ -26,7 +26,7 @@ do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/ebook2cwgui ${STAGEDIR}${PREFIX}/bin/ebook2cwgui
 	@${INSTALL_DATA} ${WRKSRC}/ebook2cwgui.1 ${STAGEDIR}${MANPREFIX}/man/man1
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-.for 	f in README COPYING ChangeLog
+.for f in README COPYING ChangeLog
 	@${INSTALL_DATA} ${WRKSRC}/$f ${STAGEDIR}${DOCSDIR}/$f
 .endfor
 

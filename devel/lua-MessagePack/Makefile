@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/lua-MessagePack/Makefile 434587 2017-02-22 15:02:18Z bapt $
+# $FreeBSD: head/devel/lua-MessagePack/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	MessagePack
 PORTVERSION=	0.3.5
 CATEGORIES=	devel
-PKGNAMEPREFIX=  ${LUA_PKGNAMEPREFIX}
+PKGNAMEPREFIX=	${LUA_PKGNAMEPREFIX}
 
 MAINTAINER=	oleksii.tsai@gmail.com
 COMMENT=	Efficient binary serialization format

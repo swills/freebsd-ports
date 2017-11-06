@@ -1,5 +1,5 @@
 # Created by: luigi@FreeBSD.org
-# $FreeBSD: head/sysutils/syslinux/Makefile 451721 2017-10-10 21:31:30Z linimon $
+# $FreeBSD: head/sysutils/syslinux/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	syslinux
 PORTVERSION=	6.03
@@ -28,8 +28,8 @@ PLIST_FILES=	bin/syslinux \
 PORTDATA=	*
 
 pre-patch:
-	@(cd ${WRKSRC}; 						\
-	${FIND} . -type f -exec ${GREP} -le 'elf_i386' \{\} \; | 	\
+	@(cd ${WRKSRC};							\
+	${FIND} . -type f -exec ${GREP} -le 'elf_i386' \{\} \; |	\
 		${XARGS} ${REINPLACE_CMD} -e 's/elf_i386/elf_i386_fbsd/g;' )
 
 post-patch:

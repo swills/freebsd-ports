@@ -1,5 +1,5 @@
 # Created by: Weongyo Jeong <weongyo@FreeBSD.org>
-# $FreeBSD: head/net/bwn-firmware-kmod/Makefile 415149 2016-05-13 20:14:23Z adrian $
+# $FreeBSD: head/net/bwn-firmware-kmod/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	bwn-firmware
 PORTVERSION=	0.1.2
@@ -19,7 +19,7 @@ FIRMWARES=								\
 	ucode ucode5 ucode11 ucode13 ucode14 ucode15			\
 	pcm5 a0g1initvals5 a0g0initvals5				\
 	b0g0initvals5 b0g0initvals13 a0g1bsinitvals5 a0g0bsinitvals5	\
-	b0g0bsinitvals5 						\
+	b0g0bsinitvals5							\
 	lp0initvals13 lp0initvals14 lp0initvals15 lp0bsinitvals13	\
 	lp0bsinitvals14 lp0bsinitvals15					\
 	n0initvals11 n0bsinitvals11					\
@@ -28,7 +28,7 @@ FIRMWARES_LP=								\
 	ucode ucode5 ucode11 ucode13 ucode14 ucode15			\
 	pcm5 a0g1initvals5 a0g0initvals5				\
 	b0g0initvals5 b0g0initvals13 a0g1bsinitvals5 a0g0bsinitvals5	\
-	b0g0bsinitvals5 						\
+	b0g0bsinitvals5							\
 	lp0initvals13 lp0initvals14 lp0initvals15 lp0bsinitvals13	\
 	lp0bsinitvals14 lp0bsinitvals15					\
 	n0initvals11 n0bsinitvals11

@@ -1,11 +1,11 @@
-# $FreeBSD: head/net-mgmt/py-snmp_passpersist/Makefile 422998 2016-09-30 16:23:59Z wg $
+# $FreeBSD: head/net-mgmt/py-snmp_passpersist/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	snmp_passpersist
-PORTVERSION=    1.3.0
-CATEGORIES=     net-mgmt python
-PKGNAMEPREFIX=  ${PYTHON_PKGNAMEPREFIX}
+PORTVERSION=	1.3.0
+CATEGORIES=	net-mgmt python
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=     surajravi@gmail.com
+MAINTAINER=	surajravi@gmail.com
 COMMENT=	Python client library for Net-SNMP pass persist backend
 
 LICENSE=	GPLv3

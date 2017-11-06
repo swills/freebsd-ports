@@ -1,10 +1,10 @@
-# $FreeBSD: head/net/p5-ldap2pf/Makefile 439291 2017-04-24 14:25:06Z des $
+# $FreeBSD: head/net/p5-ldap2pf/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	ldap2pf
 PORTVERSION=	20170424
 CATEGORIES=	net
 MASTER_SITES=	GH
-PKGNAMEPREFIX=  p5-
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	des@FreeBSD.org
 COMMENT=	Create and update PF tables from LDAP groups

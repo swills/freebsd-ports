@@ -1,14 +1,17 @@
 # Created by: Janos.Mohacsi@bsd.hu
-# $FreeBSD: head/databases/p5-DBM-Deep/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBM-Deep/Makefile 453350 2017-11-02 16:17:55Z dbaio $
 
 PORTNAME=	DBM-Deep
-PORTVERSION=	2.0011
+PORTVERSION=	2.0014
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jmohacsi@bsd.hu
 COMMENT=	Pure perl persistent multi-level hash/array DBM
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-FileHandle-Fmode>=0:devel/p5-FileHandle-Fmode
 RUN_DEPENDS=	p5-FileHandle-Fmode>=0:devel/p5-FileHandle-Fmode
@@ -19,5 +22,6 @@ TEST_DEPENDS=	p5-Test-Deep>=0.095:devel/p5-Test-Deep \
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

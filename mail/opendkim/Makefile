@@ -1,22 +1,22 @@
 # Created by: Hirohisa Yamaguchi <umq@ueo.co.jp>
-# $FreeBSD: head/mail/opendkim/Makefile 448274 2017-08-18 20:49:16Z swills $
+# $FreeBSD: head/mail/opendkim/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
-PORTNAME=		opendkim
-PORTVERSION=		2.10.3
-PORTREVISION=		7
-CATEGORIES=		mail security
-MASTER_SITES=		SF/${PORTNAME} \
-			SF/${PORTNAME}/Previous%20Releases \
-			ftp://ftpmirror.uk/freebsd-ports/${PORTNAME}/
+PORTNAME=	opendkim
+PORTVERSION=	2.10.3
+PORTREVISION=	7
+CATEGORIES=	mail security
+MASTER_SITES=	SF/${PORTNAME} \
+		SF/${PORTNAME}/Previous%20Releases \
+		ftp://ftpmirror.uk/freebsd-ports/${PORTNAME}/
 
-MAINTAINER=		freebsd-ports@dan.me.uk
-COMMENT=		DKIM library and milter implementation
+MAINTAINER=	freebsd-ports@dan.me.uk
+COMMENT=	DKIM library and milter implementation
 
-LICENSE=		BSD3CLAUSE SENDMAIL
-LICENSE_COMB=		multi
+LICENSE=	BSD3CLAUSE SENDMAIL
+LICENSE_COMB=	multi
 
 LICENSE_FILE_SENDMAIL=	${WRKSRC}/LICENSE.Sendmail
-LICENSE_GROUPS_SENDMAIL=	FSF OSI
+LICENSE_GROUPS_SENDMAIL=FSF OSI
 LICENSE_NAME_SENDMAIL=	Sendmail Open Source License
 LICENSE_PERMS_SENDMAIL=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
@@ -120,19 +120,19 @@ CONFIGURE_ARGS+=	--with-milter=${MILTERBASE}
 .if ${PORT_OPTIONS:MLUA_ONLY_SIGNING} || \
     ${PORT_OPTIONS:MRBL}
 .if !${PORT_OPTIONS:MLUA}
-IGNORE= options LUA_ONLY_SIGNING and RBL require LUA as well
+IGNORE=	options LUA_ONLY_SIGNING and RBL require LUA as well
 .endif
 .endif
 
 .if ${PORT_OPTIONS:MREPUTATION}
 .if !${PORT_OPTIONS:MCURL} || !${PORT_OPTIONS:MJANSSON}
-IGNORE= option REPUTATION requires CURL and JANSSON as well
+IGNORE=	option REPUTATION requires CURL and JANSSON as well
 .endif
 .endif
 
 .if ${PORT_OPTIONS:MSTATSEXT}
 .if !${PORT_OPTIONS:MSTATS} || !${PORT_OPTIONS:MLUA}
-IGNORE= option STATSEXT requires STATS and LUA as well
+IGNORE=	option STATSEXT requires STATS and LUA as well
 .endif
 .endif
 

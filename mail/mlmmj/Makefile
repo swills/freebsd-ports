@@ -1,8 +1,8 @@
 # Created by: Christian Laursen <xi@borderworlds.dk>
-# $FreeBSD: head/mail/mlmmj/Makefile 417719 2016-06-28 14:00:45Z mat $
+# $FreeBSD: head/mail/mlmmj/Makefile 453272 2017-11-01 09:23:46Z pi $
 
 PORTNAME=	mlmmj
-PORTVERSION=	1.2.19.0
+PORTVERSION=	1.3.0
 CATEGORIES=	mail
 MASTER_SITES=	http://mlmmj.org/releases/
 

@@ -1,16 +1,18 @@
 # Created by: janos.mohacsi@bsd.hu
-# $FreeBSD: head/mail/lookout/Makefile 371330 2014-10-21 17:10:06Z mva $
+# $FreeBSD: head/mail/lookout/Makefile 453044 2017-10-28 04:58:58Z tcberner $
 
 PORTNAME=	lookout
-PORTVERSION=	1.4
+DISTVERSION=	1.4
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://catb.org/~esr/lookout/
 
 MAINTAINER=	jmohacsi@bsd.hu
 COMMENT=	Convert Outlook97 addressbook export files to KDE KAB/GNOME gnomecard
 
-USES=		python
+USES=		python shebangfix
 NO_BUILD=	yes
+SHEBANG_FILES=	lookout
 
 PLIST_FILES=	bin/lookout man/man1/lookout.1.gz
 

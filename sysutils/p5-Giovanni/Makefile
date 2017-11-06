@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/p5-Giovanni/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/sysutils/p5-Giovanni/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	Giovanni
 PORTVERSION=	1.12
@@ -10,8 +10,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	dch@skunkwerks.at
 COMMENT=	PERL-based software deployment tool inspired by capistrano
 
-LICENSE=        ART10 GPLv1+
-LICENSE_COMB=   dual
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	\
 		p5-Config-GitLike>=0:devel/p5-Config-GitLike \

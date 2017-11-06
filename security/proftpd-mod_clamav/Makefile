@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/security/proftpd-mod_clamav/Makefile 446741 2017-07-27 13:57:30Z mat $
+# $FreeBSD: head/security/proftpd-mod_clamav/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	mod_clamav
 DISTVERSIONPREFIX=	v
@@ -21,7 +21,7 @@ GIT_REVISION=	c8586c7
 
 RUN_DEPENDS+=	clamd:security/clamav
 _PROFTPD_MODULE_DISTFILES=	mod_clamav-v0.14rc2${EXTRACT_SUFX}:clamav
-_PROFTPD_MODULE_EXTRACT_ONLY= 	mod_clamav-v0.14rc2${EXTRACT_SUFX}
+_PROFTPD_MODULE_EXTRACT_ONLY=	mod_clamav-v0.14rc2${EXTRACT_SUFX}
 _PROFTPD_MODULE_MASTER_SITES=	https://codeload.github.com/jbenden/mod_clamav/legacy.tar.gz/${GH_TAGNAME}?dummy=/:clamav
 
 INCLUDEDIRS=	${LOCALBASE}/include

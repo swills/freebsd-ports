@@ -1,5 +1,5 @@
 # Created by: db
-# $FreeBSD: head/comms/yfklog/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/yfklog/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	yfklog
 PORTVERSION=	0.3.5
@@ -43,7 +43,7 @@ do-install:
 	@${INSTALL_DATA} ${WRKSRC}/$f ${STAGEDIR}${DATADIR}
 .endfor
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/onlinelog
-.for 	f in README  search.php test.txt
+.for	f in README  search.php test.txt
 	${INSTALL_DATA} ${WRKSRC}/onlinelog/$f ${STAGEDIR}${EXAMPLESDIR}/onlinelog
 .endfor
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/clubs

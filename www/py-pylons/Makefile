@@ -1,5 +1,5 @@
 # Created by: Denis Shaposhnikov <dsh@vlink.ru>
-# $FreeBSD: head/www/py-pylons/Makefile 417626 2016-06-27 01:36:08Z wen $
+# $FreeBSD: head/www/py-pylons/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	pylons
 PORTVERSION=	1.0.2
@@ -15,7 +15,7 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}routes>=1.12.3:www/py-routes \
- 		${PYTHON_PKGNAMEPREFIX}webhelpers>=0.6.4:www/py-webhelpers \
+		${PYTHON_PKGNAMEPREFIX}webhelpers>=0.6.4:www/py-webhelpers \
 		${PYTHON_PKGNAMEPREFIX}beaker>=1.5.4:www/py-beaker \
 		${PYTHON_PKGNAMEPREFIX}Paste>=1.7.5.1:www/py-paste \
 		${PYTHON_PKGNAMEPREFIX}PasteDeploy>=1.5.0:www/py-pastedeploy \

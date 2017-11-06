@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/cegobridge/Makefile 446372 2017-07-22 08:32:31Z pi $
+# $FreeBSD: head/databases/cegobridge/Makefile 453310 2017-11-01 17:42:34Z pi $
 
 PORTNAME=	cegobridge
-PORTVERSION=	1.1.4
+PORTVERSION=	1.1.6
 CATEGORIES=	databases
 MASTER_SITES=	http://www.lemke-it.com/
 

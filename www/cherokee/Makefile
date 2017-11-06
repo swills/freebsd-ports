@@ -1,10 +1,10 @@
 # Created by: silence <oksala@videotron.ca>
-# $FreeBSD: head/www/cherokee/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/www/cherokee/Makefile 453344 2017-11-02 13:26:17Z mat $
 
 PORTNAME=	cherokee
 PORTVERSION=	1.2.104
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	www
 
 MAINTAINER=	ports@FreeBSD.org
@@ -18,7 +18,7 @@ USE_GITHUB=	yes
 GH_PROJECT=	webserver
 
 USES=		autoreconf cpe gettext gmake libtool pathfix pkgconfig \
-		python:2,build shebangfix ssl
+		shebangfix ssl
 SHEBANG_FILES=	admin/CTK/CTK-run.pre admin/server.py \
 		admin/upgrade_config.py cherokee/cherokee-admin-launcher \
 		cherokee/cherokee-tweak contrib/tracelor.py \
@@ -58,7 +58,8 @@ OPTIONS_DEFAULT=	ADMIN GEOIP
 OPTIONS_SUB=		yes
 
 ADMIN_DESC=		Build the Admin Interface
-ADMIN_USES=		python:2,run
+ADMIN_USES=		python:2
+ADMIN_USES_OFF=		python:2,build 
 ADMIN_CONFIGURE_OFF=	--disable-admin
 FFMPEG_LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg
 FFMPEG_CONFIGURE_ON=	--with-ffmpeg=yes

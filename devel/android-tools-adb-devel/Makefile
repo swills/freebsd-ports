@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/android-tools-adb-devel/Makefile 450881 2017-09-29 01:59:33Z jbeich $
+# $FreeBSD: head/devel/android-tools-adb-devel/Makefile 453204 2017-10-30 18:36:22Z jbeich $
 
 # Hint: git describe --abbrev=12 --match android-o-preview-4
 DISTVERSION=	o-preview-4-4534
@@ -9,7 +9,6 @@ CONFLICTS_INSTALL=	${PORTNAME}-[0-9]*
 
 MASTERDIR=	${.CURDIR}/../android-tools-adb
 DISTINFO_FILE=	${.CURDIR}/distinfo
-EXTRA_PATCHES=	${.CURDIR}/files/patch-*
 
 GH_MYTAG=	${DISTVERSIONPREFIX}${DISTVERSION:C/-[0-9]*$//}
 

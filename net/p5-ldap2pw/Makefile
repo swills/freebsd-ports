@@ -1,10 +1,10 @@
-# $FreeBSD: head/net/p5-ldap2pw/Makefile 450344 2017-09-22 09:43:41Z des $
+# $FreeBSD: head/net/p5-ldap2pw/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	ldap2pw
 PORTVERSION=	20170922
 CATEGORIES=	net
 MASTER_SITES=	GH
-PKGNAMEPREFIX=  p5-
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	des@FreeBSD.org
 COMMENT=	Synchronize local user database with LDAP directory

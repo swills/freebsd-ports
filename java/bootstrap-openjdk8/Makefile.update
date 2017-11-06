@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/bootstrap-openjdk8/Makefile.update 451083 2017-10-02 16:24:18Z jkim $
+# $FreeBSD: head/java/bootstrap-openjdk8/Makefile.update 453336 2017-11-02 05:29:33Z jkim $
 
 JDK_ARCH?=	${ARCH:C/armv.*/arm/}
 JDK_PORT?=	openjdk8
@@ -41,7 +41,7 @@ BUILD_ENV+=	java_openjdk8_UNSET="ALSA X11"
 JDK_BUILD_ARGS=	${BUILD_ARGS}
 
 .if !defined(TARGET_OS)
-.if ${ARCH:Marmv*}
+.if ${ARCH} == aarch64 || ${ARCH:Marmv*}
 TARGET_OS=	11
 .else
 TARGET_OS=	10

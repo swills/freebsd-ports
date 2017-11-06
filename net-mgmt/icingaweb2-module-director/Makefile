@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-mgmt/icingaweb2-module-director/Makefile 446660 2017-07-26 14:52:02Z lme $
+# $FreeBSD: head/net-mgmt/icingaweb2-module-director/Makefile 452977 2017-10-27 12:25:00Z lme $
 
 PORTNAME=	icingaweb2-module-director
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.3.2
+DISTVERSION=	1.4.1
 CATEGORIES=	net-mgmt www
 
 MAINTAINER=	lme@FreeBSD.org
@@ -16,7 +16,8 @@ RUN_DEPENDS=	icingaweb2>=2.4.1:net-mgmt/icingaweb2
 USE_GITHUB=	yes
 GH_ACCOUNT=	icinga
 
-USES_PHP=	curl
+USES=		php
+USE_PHP=	yes
 
 NO_BUILD=	yes
 NO_ARCH=	yes

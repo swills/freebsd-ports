@@ -1,5 +1,5 @@
 # Created by: Xin LI <delphij@FreeBSD.org>
-# $FreeBSD: head/net/openldap24-server/Makefile 451425 2017-10-07 04:52:53Z delphij $
+# $FreeBSD: head/net/openldap24-server/Makefile 453156 2017-10-30 05:53:38Z delphij $
 
 PORTNAME=		openldap
 DISTVERSION=		2.4.45
@@ -65,7 +65,7 @@ BROKEN=			incompatible OpenLDAP version: ${WANT_OPENLDAP_VER}
 .endif
 
 PORTREVISION_CLIENT=	0
-PORTREVISION_SERVER=	2
+PORTREVISION_SERVER=	3
 OPENLDAP_SHLIB_MAJOR=	2
 OPENLDAP_SHLIB_MINOR=	10.8
 OPENLDAP_MAJOR=		${DISTVERSION:R}

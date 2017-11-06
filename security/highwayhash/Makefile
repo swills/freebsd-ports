@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/highwayhash/Makefile 451758 2017-10-11 16:07:30Z linimon $
+# $FreeBSD: head/security/highwayhash/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	highwayhash
 PORTVERSION=	g20170512
@@ -26,7 +26,7 @@ post-patch:
 		s|LIBDIR|XLIBDIR|; \
 		s| -O3||; \
 		s|install -m0755 high|${INSTALL_DATA} high|; \
-       		s|install -m0755 lib|${INSTALL_LIB} lib|' \
+		s|install -m0755 lib|${INSTALL_LIB} lib|' \
 		${WRKSRC}/Makefile
 
 post-install:

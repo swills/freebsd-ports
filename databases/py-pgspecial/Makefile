@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/py-pgspecial/Makefile 440373 2017-05-07 21:26:39Z sunpoet $
+# $FreeBSD: head/databases/py-pgspecial/Makefile 453065 2017-10-28 17:32:42Z sunpoet $
 
 PORTNAME=	pgspecial
-PORTVERSION=	1.8.0
+PORTVERSION=	1.9.0
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

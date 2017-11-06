@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-DependentModules/Makefile 442422 2017-06-02 18:13:14Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-DependentModules/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	Test-DependentModules
 PORTVERSION=	0.26
@@ -24,7 +24,7 @@ BUILD_DEPENDS=	p5-Capture-Tiny>=0:devel/p5-Capture-Tiny \
 		p5-autodie>=0:devel/p5-autodie
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-File-Copy-Recursive>=0:devel/p5-File-Copy-Recursive \
-  		p5-Module-Build>=0:devel/p5-Module-Build \
+		p5-Module-Build>=0:devel/p5-Module-Build \
 		p5-Module-Build-Tiny>=0:devel/p5-Module-Build-Tiny
 
 NO_ARCH=	yes

@@ -1,9 +1,9 @@
 # Created by: Shaun Amott <shaun@inerd.com>
-# $FreeBSD: head/ports-mgmt/portscout/Makefile 446122 2017-07-17 22:54:17Z zi $
+# $FreeBSD: head/ports-mgmt/portscout/Makefile 453234 2017-10-31 14:37:19Z zi $
 
 PORTNAME=	portscout
 PORTVERSION=	0.8.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	ports-mgmt
 MASTER_SITES=	http://mirror.inerd.com/FreeBSD/distfiles/${PORTNAME}/ \
 		http://www.atarininja.org/~wxs/distfiles/ \

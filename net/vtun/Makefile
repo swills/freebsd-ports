@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/net/vtun/Makefile 444009 2017-06-21 02:32:34Z cy $
+# $FreeBSD: head/net/vtun/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	vtun
 PORTVERSION=	3.0.4
@@ -10,7 +10,7 @@ MASTER_SITES=	SF
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Virtual Tunnels over TCP/IP networks with traffic shaping
 
-LICENSE=        GPLv2
+LICENSE=	GPLv2
 
 LIB_DEPENDS=	liblzo2.so:archivers/lzo2
 

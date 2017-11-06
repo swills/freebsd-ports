@@ -1,5 +1,5 @@
 # Created by: Mikhail Teterin
-# $FreeBSD: head/java/berkeley-db/Makefile 441786 2017-05-26 14:45:53Z linimon $
+# $FreeBSD: head/java/berkeley-db/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	je
 PORTVERSION=	6.2.31
@@ -47,7 +47,7 @@ post-build:	test
 	#
 	# Please, review the reported failures (if any) and consider
 	# reporting them to the developers via:
-	# 	http://forums.oracle.com/forums/forum.jspa?forumID=273
+	#	http://forums.oracle.com/forums/forum.jspa?forumID=273
 	# You can re-run the tests without rebuilding the port by
 	# simply doing `make test'
 	#
@@ -57,7 +57,7 @@ post-build:
 	# Doing `make test' now might be useful (if time-consuming).
 	# Please, review the reported failures (if any) and consider
 	# reporting them via
-	# 	http://forums.oracle.com/forums/forum.jspa?forumID=273
+	#	http://forums.oracle.com/forums/forum.jspa?forumID=273
 	#
 .endif
 

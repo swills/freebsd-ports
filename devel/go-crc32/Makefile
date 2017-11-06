@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/go-crc32/Makefile 434467 2017-02-20 15:15:08Z sunpoet $
+# $FreeBSD: head/devel/go-crc32/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	crc32
 PORTVERSION=	1.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
-PKGNAMEPREFIX=  go-
+PKGNAMEPREFIX=	go-
 
 MAINTAINER=	guy.tabrar@me.com
 COMMENT=	CRC32 hash with x64 optimizations for go
@@ -12,9 +12,9 @@ COMMENT=	CRC32 hash with x64 optimizations for go
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USE_GITHUB= 	yes
-GH_ACCOUNT= 	klauspost
-USES= 		go
-GO_PKGNAME= 	github.com/klauspost/crc32
+USE_GITHUB=	yes
+GH_ACCOUNT=	klauspost
+USES=		go
+GO_PKGNAME=	github.com/klauspost/crc32
 
 .include <bsd.port.mk>

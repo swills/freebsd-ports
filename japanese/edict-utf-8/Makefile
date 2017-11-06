@@ -1,5 +1,5 @@
 # Created by: Jonathan Hanna
-# $FreeBSD: head/japanese/edict-utf-8/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/japanese/edict-utf-8/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	edict-utf-8
 PORTVERSION=	20100420
@@ -30,7 +30,7 @@ NODOCFILES=	edict_doc.txt edict_doc.html edicth.doc \
 
 # Where to install the data files
 DATADIR=	${PREFIX}/share/dict/edict-utf-8
-PLIST_SUB= 	OWNER="${SHAREOWN}" GROUP="${SHAREGRP}" MODE="${SHAREMODE}"
+PLIST_SUB=	OWNER="${SHAREOWN}" GROUP="${SHAREGRP}" MODE="${SHAREMODE}"
 
 NO_WRKSUBDIR=	yes
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/xpdf3/Makefile 451255 2017-10-05 01:52:47Z cy $
+# $FreeBSD: head/graphics/xpdf3/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	xpdf
 PORTVERSION=	3.04
@@ -9,7 +9,7 @@ MASTER_SITES=	http://mirrors.rit.edu/zi/ \
 		TEX_CTAN/support/xpdf \
 		http://komquats.com/distfiles/
 .if !defined(MASTERDIR)
-PKGNAMESUFFIX=  3
+PKGNAMESUFFIX=	3
 CONFLICTS_INSTALL=	xpdf4-* xpdf-*
 .else
 CONFLICTS_INSTALL=	xpdf4-*	xpdf3-*
@@ -37,16 +37,16 @@ MANPREFIX=	${PREFIX}/share/xpdf
 OPTIONS_DEFINE=	LIBPAPER TYPE1 X11 DOCS
 LIBPAPER_DESC=	Enable libpaper
 TYPE1_DESC=	Ghostscript type1 fonts
-OPTIONS_DEFAULT=	TYPE1 X11
-OPTIONS_SUB=		yes
+OPTIONS_DEFAULT=TYPE1 X11
+OPTIONS_SUB=	yes
 
 SUB_FILES=	xpdf-man.conf
 
 TYPE1_RUN_DEPENDS=	${LOCALBASE}/share/ghostscript/fonts/n021003l.pfb:print/gsfonts
 
 LIBPAPER_LIB_DEPENDS=	libpaper.so:print/libpaper
-LIBPAPER_CONFIGURE_ON=--with-libpaper-library="${LOCALBASE}/lib" \
-		--with-libpaper-includes="${LOCALBASE}/include"
+LIBPAPER_CONFIGURE_ON=	--with-libpaper-library="${LOCALBASE}/lib" \
+			--with-libpaper-includes="${LOCALBASE}/include"
 LIBPAPER_CONFIGURE_OFF=--without-libpaper-library
 
 .if defined(A4)

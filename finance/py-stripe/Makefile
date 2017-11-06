@@ -1,5 +1,5 @@
 # Created by: Trevor Caira <trevor@bitba.se>
-# $FreeBSD: head/finance/py-stripe/Makefile 426059 2016-11-13 16:14:14Z rene $
+# $FreeBSD: head/finance/py-stripe/Makefile 453089 2017-10-29 04:02:53Z koobs $
 #
 
 PORTNAME=	stripe
@@ -16,7 +16,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0.8.8:www/py-requests
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycurl>=7.19:ftp/py-pycurl \
-		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock
+		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock \
+		${PYTHON_PKGNAMEPREFIX}unittest2>0:devel/py-unittest2
 
 USES=		python
 USE_PYTHON=	autoplist distutils

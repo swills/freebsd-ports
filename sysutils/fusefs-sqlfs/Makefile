@@ -1,5 +1,5 @@
 # Created by: Stanislav Sedov <ssedov@mbsd.msk.ru>
-# $FreeBSD: head/sysutils/fusefs-sqlfs/Makefile 431937 2017-01-20 09:01:18Z amdmi3 $
+# $FreeBSD: head/sysutils/fusefs-sqlfs/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	sqlfs
 PORTVERSION=	1.1
@@ -27,7 +27,7 @@ do-build:
 	(cd ${WRKSRC} && ${CC} -DFUSE -DFUSE_USE_VERSION=25		\
 		-D_FILE_OFFSET_BITS=64 -D_REENTRANT ${CFLAGS}		\
 		-I. -I${LOCALBASE}/include -L${LOCALBASE}/lib		\
-		-lfuse -lsqlite${SQLITE_VER} sqlfs.c fuse_main.c 	\
+		-lfuse -lsqlite${SQLITE_VER} sqlfs.c fuse_main.c	\
 		-o sqlfs)
 
 do-install:

@@ -1,9 +1,9 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/x11/lumina-coreutils/Makefile 450205 2017-09-20 14:16:35Z kmoore $
+# $FreeBSD: head/x11/lumina-coreutils/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	lumina-coreutils
-DISTVERSIONPREFIX=      v
-DISTVERSION=    1.3.0
+DISTVERSIONPREFIX=	v
+DISTVERSION=	1.3.0
 DISTVERSIONSUFFIX=	-p1
 CATEGORIES=	x11
 
@@ -18,7 +18,7 @@ CONFLICTS_INSTALL=	lumina-1.2.*
 
 OPTIONS_DEFINE=	I18N
 OPTIONS_DEFAULT=	I18N
-I18N_DESC= Install localization files
+I18N_DESC=	Install localization files
 
 .include <bsd.port.options.mk>
 
@@ -34,8 +34,8 @@ GH_PROJECT=	lumina
 WRKSRC_SUBDIR=	src-qt5/core-utils
 
 .if${PORT_OPTIONS:MI18N}
-USE_QT5+= linguist_build
-QMAKE_ARGS+=CONFIG+=WITH_I18N
+USE_QT5+=	linguist_build
+QMAKE_ARGS+=	CONFIG+=WITH_I18N
 .endif
 
 .include <bsd.port.mk>

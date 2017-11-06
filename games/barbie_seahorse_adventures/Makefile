@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/barbie_seahorse_adventures/Makefile 439031 2017-04-21 08:54:35Z amdmi3 $
+# $FreeBSD: head/games/barbie_seahorse_adventures/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	barbie_seahorse_adventures
 PORTVERSION=	1.1
@@ -21,7 +21,7 @@ WRKSRC=		${WRKDIR}/barbie-${DISTVERSION}
 
 USES=		dos2unix python:2 shebangfix tar:tgz
 SHEBANG_FILES=	run_game.py create-upload.py
-DOS2UNIX_GLOB= 	*.py
+DOS2UNIX_GLOB=	*.py
 NO_BUILD=	yes
 NO_ARCH=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Michael Nottebrock <lofi@FreeBSD.org>
-# $FreeBSD: head/print/foomatic-filters/Makefile 422697 2016-09-23 21:42:02Z jrm $
+# $FreeBSD: head/print/foomatic-filters/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	foomatic-filters
 PORTVERSION=	4.0.17
@@ -55,7 +55,7 @@ MPAGE_RUN_DEPENDS=		mpage:print/mpage
 post-patch:
 	@${REINPLACE_CMD} -e 's|/bin/bash|${SH}|g' ${WRKSRC}/foomaticrip.c
 	@${REINPLACE_CMD} -e 's|%%LOCALBASE%%|${LOCALBASE}|g' \
-		   	  ${WRKSRC}/foomaticrip.c
+			 ${WRKSRC}/foomaticrip.c
 	@${REINPLACE_CMD} -e 's|ln -sf $$(BINDIR)|ln -sf ../../../bin|g' \
 			  -e '/filter.conf/ s|if.*||' \
 			  ${WRKSRC}/Makefile.am

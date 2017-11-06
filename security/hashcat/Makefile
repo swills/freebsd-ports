@@ -1,8 +1,8 @@
 # Created by: Nikolai Lifanov <lifanov@mail.lifanov.com>
-# $FreeBSD: head/security/hashcat/Makefile 443471 2017-06-12 21:53:05Z lifanov $
+# $FreeBSD: head/security/hashcat/Makefile 453139 2017-10-29 21:38:43Z lifanov $
 
 PORTNAME=	hashcat
-PORTVERSION=	3.6.0
+PORTVERSION=	4.0.0
 DISTVERSIONPREFIX=	v
 PORTEPOCH=	1
 CATEGORIES=	security
@@ -21,7 +21,7 @@ USE_GITHUB=	yes
 ALL_TARGET=	default
 USES=		gmake iconv localbase shebangfix
 SHEBANG_FILES=	extra/tab_completion/install
-USE_CSTD=	c99
+USE_CSTD=	gnu99
 
 MAKE_ARGS=	SHARED=1 \
 		CC="${CC}" \

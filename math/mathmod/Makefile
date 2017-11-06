@@ -1,8 +1,8 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/math/mathmod/Makefile 449912 2017-09-15 17:36:27Z thierry $
+# $FreeBSD: head/math/mathmod/Makefile 453312 2017-11-01 18:44:20Z thierry $
 
 PORTNAME=	MathMod
-PORTVERSION=	6.0
+PORTVERSION=	6.1
 CATEGORIES=	math graphics
 MASTER_SITES=	SF/${PORTNAME:tl}/${PKGNAME}/
 DISTNAME=	${PORTNAME:tl}-${PORTVERSION}-source

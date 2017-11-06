@@ -1,5 +1,5 @@
 # Created by: Michael Reifenberger <mr@FreeBSD.org>
-# $FreeBSD: head/cad/kicad-devel/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/cad/kicad-devel/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	kicad
 DISTVERSION=	r${GIT_SRC_DATE}
@@ -85,13 +85,13 @@ post-configure:
 		${WRKSRC}/config.h
 	for f in `${FIND} ${WRKSRC} -name \*.make -o -name link.txt` ; do				\
 		${REINPLACE_CMD}						\
-		-e 's|CC = gcc|#CC = gcc|'             				\
-		-e 's|LD = gcc|LD = ${CC}|'                     		\
-		-e 's|LD = g++|LD = ${CXX}|'                    		\
-		-e 's|wx-config|${WX_CONFIG}|'                  		\
+		-e 's|CC = gcc|#CC = gcc|'					\
+		-e 's|LD = gcc|LD = ${CC}|'					\
+		-e 's|LD = g++|LD = ${CXX}|'					\
+		-e 's|wx-config|${WX_CONFIG}|'					\
 		-e 's|CXX_FLAGS =|CXX_FLAGS = -I${LOCALBASE}/include|'		\
 		-e 's|C_FLAGS =|C_FLAGS = -I${LOCALBASE}/include|'		\
-		-e 's|LDFLAGS =|LDFLAGS += -L${LOCALBASE}/lib|' 		\
+		-e 's|LDFLAGS =|LDFLAGS += -L${LOCALBASE}/lib|'			\
 		-e 's|gcc -D|${CC} -D|'						\
 		-e 's/-pthread;-D_THREAD_SAFE/-pthread -D_THREAD_SAFE/g'	\
 		$$f ;								\

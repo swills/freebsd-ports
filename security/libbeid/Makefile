@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/libbeid/Makefile 441049 2017-05-16 19:16:36Z tijl $
+# $FreeBSD: head/security/libbeid/Makefile 453354 2017-11-02 18:11:29Z tijl $
 
 PORTNAME=	libbeid
-PORTVERSION=	4.2.8
+PORTVERSION=	4.3.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 
@@ -30,8 +30,12 @@ OPTIONS_SUB=	yes
 NLS_CONFIGURE_ENABLE=	nls
 NLS_USES=		gettext-runtime
 
+post-patch:
+	@${ECHO_CMD} ${PORTVERSION}-release > ${WRKSRC}/.version
+
 post-install:
-	${RM} -r ${STAGEDIR}${PREFIX}/lib/pkgconfig
+	${RM} -r ${STAGEDIR}${PREFIX}/lib/mozilla
+	${RM} -r ${STAGEDIR}${PREFIX}/libdata/pkgconfig
 	${MKDIR} ${STAGEDIR}${PREFIX}/lib/pkcs11
 	${LN} -s ../libbeidpkcs11.so.0 \
 		${STAGEDIR}${PREFIX}/lib/pkcs11/beidpkcs11.so

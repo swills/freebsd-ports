@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-http-prompt/Makefile 447192 2017-08-03 01:07:36Z dbaio $
+# $FreeBSD: head/devel/py-http-prompt/Makefile 453110 2017-10-29 12:35:06Z dbaio $
 
 PORTNAME=	http-prompt
-PORTVERSION=	0.10.2
+PORTVERSION=	0.11.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

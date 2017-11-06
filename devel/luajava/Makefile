@@ -1,5 +1,5 @@
 # Created by: sunghyuk
-# $FreeBSD: head/devel/luajava/Makefile 402844 2015-12-02 18:58:11Z amdmi3 $
+# $FreeBSD: head/devel/luajava/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	luajava
 PORTVERSION=	1.1
@@ -23,9 +23,9 @@ OPTIONS_DEFINE=	DOCS
 .include <bsd.port.pre.mk>
 
 .if ${JAVA_PORT_VERSION} == 1.7
-PLIST_SUB+= 	JDK17=""
+PLIST_SUB+=	JDK17=""
 .else
-PLIST_SUB+= 	JDK17="@comment "
+PLIST_SUB+=	JDK17="@comment "
 .endif
 
 post-patch:

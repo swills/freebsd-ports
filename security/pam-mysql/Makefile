@@ -1,5 +1,5 @@
 # Created by: Anders Nordby <anders@fix.no>
-# $FreeBSD: head/security/pam-mysql/Makefile 429962 2016-12-30 09:01:02Z amdmi3 $
+# $FreeBSD: head/security/pam-mysql/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	pam_mysql
 PORTVERSION=	0.7.r1
@@ -28,7 +28,7 @@ PORTDOCS=	*
 PLIST_FILES=	lib/pam_mysql.so lib/pam_mysql.la
 
 OPTIONS_DEFINE= SSL
-SSL_DESC= 	Build with OpenSSL support (non-crypt()ish MD5 hash)
+SSL_DESC=	Build with OpenSSL support (non-crypt()ish MD5 hash)
 SSL_CONFIGURE_WITH= openssl
 
 post-install:

@@ -1,8 +1,8 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/textproc/p5-Lingua-EN-Inflect/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Lingua-EN-Inflect/Makefile 453191 2017-10-30 15:40:51Z sunpoet $
 
 PORTNAME=	Lingua-EN-Inflect
-PORTVERSION=	1.902
+PORTVERSION=	1.903
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

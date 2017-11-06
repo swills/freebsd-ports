@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-logster/Makefile 433841 2017-02-11 08:37:49Z sunpoet $
+# $FreeBSD: head/devel/rubygem-logster/Makefile 453038 2017-10-27 23:18:35Z sunpoet $
 
 PORTNAME=	logster
-PORTVERSION=	1.2.7
+PORTVERSION=	1.2.8
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

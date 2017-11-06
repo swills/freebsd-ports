@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/mastodon/Makefile 452921 2017-10-26 14:12:37Z jrm $
+# $FreeBSD: head/net-im/mastodon/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	mastodon
 DISTVERSIONPREFIX=	v
@@ -127,7 +127,7 @@ do-install:
 		${WRKSRC}/node_modules/*/node_modules \
 		${WRKSRC}/node_modules/node-sass \
 		${WRKSRC}/node_modules/uws/build
-	@${RM} 	${WRKSRC}/Gemfile.lock \
+	@${RM}	${WRKSRC}/Gemfile.lock \
 		${WRKSRC}/lib/tasks/auto_annotate_models.rake \
 		${WRKSRC}/node_modules/uws/uws_darwin_* \
 		${WRKSRC}/node_modules/uws/uws_linux_* \

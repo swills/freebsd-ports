@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/devel/linux-kernel/Makefile 452150 2017-10-15 14:33:54Z tobik $
+# $FreeBSD: head/devel/linux-kernel/Makefile 453375 2017-11-02 20:16:32Z tobik $
 
 # To configure the Linux kernel yourself run
 #
@@ -29,7 +29,7 @@
 # LINUX_MOD_INSTALL_PATH.
 
 PORTNAME=	linux
-PORTVERSION=	4.13.7
+DISTVERSION=	4.13.11
 CATEGORIES=	devel
 MASTER_SITES=	KERNEL_ORG/linux/kernel/v4.x
 PKGNAMESUFFIX=	-kernel

@@ -1,5 +1,5 @@
 # Created by: Martin Tournoij <carpetsmoker@xs4all.nl>
-# $FreeBSD: head/x11-fm/pcmanfm/Makefile 429109 2016-12-21 18:41:37Z olivierd $
+# $FreeBSD: head/x11-fm/pcmanfm/Makefile 453230 2017-10-31 11:42:47Z olgeni $
 
 PORTNAME=	pcmanfm
 PORTVERSION=	1.2.5
@@ -12,8 +12,8 @@ COMMENT=	PCMan File Manager
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libfm-gtk.so:x11/libfm \
-	libfontconfig.so:x11-fonts/fontconfig \
-	libfreetype.so:print/freetype2
+		libfontconfig.so:x11-fonts/fontconfig \
+		libfreetype.so:print/freetype2
 
 USES=		desktop-file-utils gettext gmake libtool localbase pkgconfig \
 		tar:xz

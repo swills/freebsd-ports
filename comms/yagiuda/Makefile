@@ -1,8 +1,9 @@
 # Created by: db
-# $FreeBSD: head/comms/yagiuda/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/comms/yagiuda/Makefile 453062 2017-10-28 16:15:16Z db $
 
 PORTNAME=	yagiuda
 PORTVERSION=	1.19
+PORTREVISION=	1
 CATEGORIES=	comms hamradio
 MASTER_SITES=	http://www.g8wrb.org/yagi/ \
 		LOCAL/db

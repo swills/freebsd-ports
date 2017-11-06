@@ -1,5 +1,5 @@
 # Created by: Neil Blakey-Milner
-# $FreeBSD: head/mail/vpopmail/Makefile 434127 2017-02-14 17:04:02Z tijl $
+# $FreeBSD: head/mail/vpopmail/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	vpopmail
 PORTVERSION=	5.4.33
@@ -219,7 +219,7 @@ PLIST_SUB+=	VCHKPW_MODE="${VCHKPW_MODE}"
 # User-configurable variables
 #
 # ONCHANGE_SCRIPT	- see README.onchange
-# MAILDROP 		- see README.maildrop
+# MAILDROP		- see README.maildrop
 #
 # Define these to change from the default behaviour
 #

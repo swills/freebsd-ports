@@ -1,5 +1,5 @@
 # Created by: andreas
-# $FreeBSD: head/net/ntp-devel/Makefile 451258 2017-10-05 01:55:10Z cy $
+# $FreeBSD: head/net/ntp-devel/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	ntp
 PORTVERSION=	4.3.93
@@ -64,7 +64,7 @@ THREADS_CONFIGURE_WITH=		threads
 .include <bsd.port.pre.mk>
 
 .if ${SSL_DEFAULT:Mlibressl*}
-IGNORE=         detected LibreSSL (undefined references to MD5 symbols)
+IGNORE=	detected LibreSSL (undefined references to MD5 symbols)
 .endif
 
 .for D in ${NTP_DRIVERS}

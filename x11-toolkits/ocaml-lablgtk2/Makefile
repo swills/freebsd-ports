@@ -1,5 +1,5 @@
 # Created by: Rene Ladan <rene@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/ocaml-lablgtk2/Makefile 431617 2017-01-16 07:59:08Z madpilot $
+# $FreeBSD: head/x11-toolkits/ocaml-lablgtk2/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	lablgtk2
 PORTVERSION=	2.18.3
@@ -22,7 +22,7 @@ USE_OCAML_FINDLIB=	yes
 USE_OCAMLFIND_PLIST=	yes
 USE_OCAML_CAMLP4=	yes
 USE_OCAML_LDCONFIG=	yes
-USE_OCAML_WASH= 	yes
+USE_OCAML_WASH=		yes
 
 OPTIONS_DEFINE=		GLADE GNOMECANVAS GNOMEUI GTKGLAREA GTKSOURCEVIEW2 \
 			GTKSPELL LIBRSVG2 DOCS EXAMPLES

@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/textproc/te-aspell/Makefile 438338 2017-04-12 09:09:47Z mat $
+# $FreeBSD: head/textproc/te-aspell/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	${DICT}-aspell
 SPELLVERSION=	6-te-0.01-2
@@ -10,7 +10,7 @@ CATEGORIES=	textproc
 MAINTAINER=	prudhvi-krishna-bsd@surapaneni.in
 COMMENT=	Aspell Telugu dictionary
 
-DICT=	 	te
+DICT=		te
 
 .include "${.CURDIR}/../../textproc/aspell/Makefile.inc"
 .include <bsd.port.post.mk>

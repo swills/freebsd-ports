@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pytest-asyncio/Makefile 450489 2017-09-24 12:23:36Z jbeich $
+# $FreeBSD: head/devel/py-pytest-asyncio/Makefile 453015 2017-10-27 16:47:33Z jbeich $
 
 PORTNAME=	pytest-asyncio
 PORTVERSION=	0.8.0
@@ -17,10 +17,4 @@ NO_ARCH=	yes
 USES=		python:3.5+
 USE_PYTHON=	autoplist distutils
 
-.include <bsd.port.pre.mk>
-
-.if ${PYTHON_REL} < 3400
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}asyncio>0:devel/py-asyncio
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

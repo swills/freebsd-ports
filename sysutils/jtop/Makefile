@@ -1,5 +1,5 @@
 # Created by: Pavel Novikov
-# $FreeBSD: head/sysutils/jtop/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/jtop/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	jtop
 PORTVERSION=	1.0
@@ -14,6 +14,6 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5 shebangfix
 PLIST_FILES=	bin/jtop man/man1/jtop.1.gz
-SHEBANG_FILES= 	jtop.pl
+SHEBANG_FILES=	jtop.pl
 
 .include <bsd.port.mk>

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-MooseX-AttributeShortcuts/Makefile 450541 2017-09-24 19:08:30Z sunpoet $
+# $FreeBSD: head/devel/p5-MooseX-AttributeShortcuts/Makefile 453299 2017-11-01 16:50:33Z sunpoet $
 
 PORTNAME=	MooseX-AttributeShortcuts
-PORTVERSION=	0.035
+PORTVERSION=	0.036
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

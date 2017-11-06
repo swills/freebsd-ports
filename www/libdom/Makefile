@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/www/libdom/Makefile 436494 2017-03-19 14:02:23Z rene $
+# $FreeBSD: head/www/libdom/Makefile 453002 2017-10-27 15:46:21Z vanilla $
 
 PORTNAME=	libdom
-PORTVERSION=	0.3.1
+PORTVERSION=	0.3.2
 CATEGORIES=	www
 MASTER_SITES=	http://download.netsurf-browser.org/libs/releases/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
@@ -11,17 +11,18 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Document Object Model library
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	netsurf-buildsystem>=1.5:devel/netsurf-buildsystem
 LIB_DEPENDS=	libwapcaplet.so:textproc/libwapcaplet \
-	libparserutils.so:devel/libparserutils \
-	libhubbub.so:www/libhubbub \
-	libexpat.so:textproc/expat2
+		libparserutils.so:devel/libparserutils \
+		libhubbub.so:www/libhubbub \
+		libexpat.so:textproc/expat2
 
-USES=	gmake iconv localbase pkgconfig
+USES=		gmake iconv localbase pkgconfig
 USE_LDCONFIG=	yes
 
-WRKSRC=	${WRKDIR}/${DISTNAME:S/-src//}
+WRKSRC=		${WRKDIR}/${DISTNAME:S/-src//}
 
 MAKE_ENV+=	COMPONENT_TYPE="lib-shared"
 

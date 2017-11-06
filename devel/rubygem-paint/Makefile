@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-paint/Makefile 430088 2016-12-31 02:26:23Z swills $
+# $FreeBSD: head/devel/rubygem-paint/Makefile 453371 2017-11-02 19:02:01Z sunpoet $
 
 PORTNAME=	paint
-PORTVERSION=	2.0.0
+PORTVERSION=	2.0.1
 CATEGORIES=	devel
 MASTER_SITES=	RG
 

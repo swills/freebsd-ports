@@ -1,5 +1,5 @@
 # Created by: Oleg Mamontov <oleg@mamontov.net>
-# $FreeBSD: head/www/p5-Catalyst-Plugin-SmartURI/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-SmartURI/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	Catalyst-Plugin-SmartURI
 PORTVERSION=	0.041
@@ -16,7 +16,7 @@ LICENSE_COMB=	dual
 BUILD_DEPENDS=	p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime	\
 		p5-Class-C3-Componentised>=0:devel/p5-Class-C3-Componentised	\
 		p5-Class-Load>=0:devel/p5-Class-Load		\
-		p5-Moose>=0:devel/p5-Moose 				\
+		p5-Moose>=0:devel/p5-Moose			\
 		p5-URI-SmartURI>=0:net/p5-URI-SmartURI
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 

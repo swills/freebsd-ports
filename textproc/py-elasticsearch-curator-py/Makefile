@@ -1,12 +1,12 @@
 # Created by: Dan Langille <dvl@FreeBSD.org>
-# $FreeBSD: head/textproc/py-elasticsearch-curator-py/Makefile 416119 2016-05-29 18:08:19Z dvl $
+# $FreeBSD: head/textproc/py-elasticsearch-curator-py/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=		curator
 PORTVERSION=		3.5.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=		textproc python
 PKGNAMEPREFIX=		${PYTHON_PKGNAMEPREFIX}elasticsearch-
-PKGNAMESUFFIX=  -py
+PKGNAMESUFFIX=		-py
 
 MAINTAINER=		dvl@FreeBSD.org
 COMMENT=		Python index manager for Elasticsearch

@@ -1,5 +1,5 @@
 # Created by: Michael Nottebrock <michaelnottebrock@gmx.net>
-# $FreeBSD: head/multimedia/dvdrip/Makefile 446248 2017-07-20 09:01:00Z amdmi3 $
+# $FreeBSD: head/multimedia/dvdrip/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	dvdrip
 PORTVERSION=	0.98.11
@@ -11,8 +11,8 @@ MASTER_SITE_SUBDIR=	CPAN:JRED
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Perl Gtk+ based dvd-ripper
 
-LICENSE=        ART10 GPLv1 # (ART10 or GPLv1) and CC-BY-SA-2.5
-LICENSE_COMB=   dual
+LICENSE=	ART10 GPLv1 # (ART10 or GPLv1) and CC-BY-SA-2.5
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Gtk2>=0:x11-toolkits/p5-Gtk2 \
 		p5-AnyEvent>=0:devel/p5-AnyEvent \

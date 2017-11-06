@@ -1,5 +1,5 @@
 # Created by: ajk@iu.edu
-# $FreeBSD: head/security/cracklib/Makefile 408192 2016-02-05 14:02:37Z cy $
+# $FreeBSD: head/security/cracklib/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	cracklib
 PORTVERSION=	2.9.6
@@ -7,14 +7,14 @@ CATEGORIES=	security
 .if defined(PYTHON_SLAVEPORT)
 CATEGORIES+=	python
 .endif
-MASTER_SITES=	 https://github.com/cracklib/cracklib/releases/download/cracklib-2.9.6/ \
+MASTER_SITES=	https://github.com/cracklib/cracklib/releases/download/cracklib-2.9.6/ \
 		LOCAL/cy
 DISTFILES=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX} \
 		${PORTNAME}-words-${PORTVERSION}.gz
 EXTRACT_ONLY=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX}
 WORDS_DISTFILE=	${PORTNAME}-words-${PORTVERSION}.gz
 
-MAINTAINER= 	cy@FreeBSD.org
+MAINTAINER=	cy@FreeBSD.org
 COMMENT?=	Password-checking library
 
 LICENSE=	LGPL21

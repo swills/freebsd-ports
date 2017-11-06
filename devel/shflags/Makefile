@@ -1,8 +1,8 @@
 # Created by: Yi-Jheng Lin <yzlin@FreeBSD.org>
-# $FreeBSD: head/devel/shflags/Makefile 448285 2017-08-19 07:21:50Z vanilla $
+# $FreeBSD: head/devel/shflags/Makefile 453093 2017-10-29 07:04:12Z vanilla $
 
 PORTNAME=	shflags
-PORTVERSION=	1.2.1
+PORTVERSION=	1.2.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -21,6 +21,6 @@ NO_BUILD=	yes
 PLIST_FILES=	lib/shflags
 
 do-install:
-	${INSTALL_DATA} ${WRKSRC}/src/shflags ${STAGEDIR}${PREFIX}/lib
+	${INSTALL_DATA} ${WRKSRC}/shflags ${STAGEDIR}${PREFIX}/lib
 
 .include <bsd.port.mk>

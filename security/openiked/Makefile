@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/openiked/Makefile 450383 2017-09-22 15:22:56Z marcel $
+# $FreeBSD: head/security/openiked/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	openiked
 PORTVERSION=	1.9
@@ -18,7 +18,7 @@ USE_RC_SUBR=	iked
 USERS=		_iked
 GROUPS=		_iked
 
-USES=           autoreconf groff libtool ssl
+USES=		autoreconf groff libtool ssl
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 CONFIGURE_ARGS=	--with-libevent-dir=${PREFIX}

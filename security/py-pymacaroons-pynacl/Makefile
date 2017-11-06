@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/security/py-pymacaroons-pynacl/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/py-pymacaroons-pynacl/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	pymacaroons-pynacl
 PORTVERSION=	0.9.3
@@ -20,7 +20,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}hypothesis>0:devel/py-hypothesis \
 		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock \
 		${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose
 
-USES=           python
+USES=		python
 USE_GITHUB=	yes
 USE_PYTHON=	autoplist distutils
 

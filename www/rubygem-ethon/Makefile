@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-ethon/Makefile 427969 2016-12-06 14:53:32Z sunpoet $
+# $FreeBSD: head/www/rubygem-ethon/Makefile 453041 2017-10-27 23:18:51Z sunpoet $
 
 PORTNAME=	ethon
-PORTVERSION=	0.10.1
+PORTVERSION=	0.11.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

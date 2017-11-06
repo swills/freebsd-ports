@@ -1,5 +1,5 @@
 # Created by: jrhett@netconsonance.com
-# $FreeBSD: head/sysutils/cfengine36/Makefile 451264 2017-10-05 01:56:45Z cy $
+# $FreeBSD: head/sysutils/cfengine36/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	cfengine
 PORTVERSION=	3.6.6
@@ -13,11 +13,11 @@ MAINTAINER=	cy@FreeBSD.org
 #		skreuzer@FreeBSD.org is also committer for this port
 COMMENT=	Systems administration tool for networks
 
-CONFLICTS=      cfengine-2* cfengine3[0-57-9]-* cfengine31[0-9]-*
+CONFLICTS=	cfengine-2* cfengine3[0-57-9]-* cfengine31[0-9]-*
 .if !defined(MASTERDIR)
 PKGNAMESUFFIX=	36
 PORTEPOCH?=	2
-CONFLICTS+=     cfengine-3.*
+CONFLICTS+=	cfengine-3.*
 .endif
 
 LICENSE=	GPLv3

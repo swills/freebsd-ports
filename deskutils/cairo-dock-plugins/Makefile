@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/cairo-dock-plugins/Makefile 442784 2017-06-06 16:38:00Z mat $
+# $FreeBSD: head/deskutils/cairo-dock-plugins/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	cairo-dock-plugins
 PORTVERSION=	3.4.1
@@ -95,7 +95,7 @@ IMPULSE_CMAKE_OFF=	-Denable-impulse:BOOL=FALSE
 #KDE_INTEGRATION_LIB_DEPENDS=
 KDE_INTEGRATION_USE_QT4=	corelib
 KDE_INTEGRATION_USES=		kde:4
-KDE_INTEGRATION_USE=    	KDE=kdelibs
+KDE_INTEGRATION_USE=		KDE=kdelibs
 KDE_INTEGRATION_CMAKE_ON=	-Denable-kde-integration:BOOL=TRUE
 KDE_INTEGRATION_CMAKE_OFF=	-Denable-kde-integration:BOOL=FALSE
 
@@ -111,7 +111,7 @@ MAIL_CMAKE_OFF=		-Denable-mail:BOOL=FALSE
 #MONO_BUILD_DEPENDS=	mono:lang/mono
 #MONO_RUN_DEPENDS=	mono:lang/mono
 #MONO_CMAKE_ON=		-Denable-mono-interface:BOOL=TRUE
-#MONO_CMAKE_OFF=		-Denable-mono-interface:BOOL=FALSE
+#MONO_CMAKE_OFF=	-Denable-mono-interface:BOOL=FALSE
 CMAKE_ARGS+=		-Denable-mono-interface:BOOL=FALSE
 
 #PYTHON_LIB_DEPENDS=

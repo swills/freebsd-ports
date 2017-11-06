@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/bsmtp/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/bsmtp/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	bsmtp
 PORTVERSION=	1.02
@@ -23,7 +23,7 @@ CONFIGURE_ARGS=	--redo
 SHEBANG_FILES=	configure
 
 PRIVBIN=	${STAGEDIR}${PREFIX}/libexec/bsmtp
-PUBBIN= 	${STAGEDIR}${PREFIX}/bin
+PUBBIN=		${STAGEDIR}${PREFIX}/bin
 MAILERDIR=	${STAGEDIR}${PREFIX}/share/sendmail
 
 OPTIONS_DEFINE=	DOCS

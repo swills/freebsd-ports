@@ -1,9 +1,8 @@
 # Created by: Joris Vandalon
-# $FreeBSD: head/sysutils/fusefs-rar2fs/Makefile 451548 2017-10-08 14:09:37Z jhale $
+# $FreeBSD: head/sysutils/fusefs-rar2fs/Makefile 452968 2017-10-27 09:08:53Z vanilla $
 
 PORTNAME=	rar2fs
-PORTVERSION=	1.25.2
-PORTREVISION=	1
+PORTVERSION=	1.26.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 PKGNAMEPREFIX=	fusefs-

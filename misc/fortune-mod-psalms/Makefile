@@ -1,5 +1,5 @@
 # Created by: pfg
-# $FreeBSD: head/misc/fortune-mod-psalms/Makefile 400876 2015-11-05 22:58:23Z pawel $
+# $FreeBSD: head/misc/fortune-mod-psalms/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	fortune-mod-psalms
 PORTVERSION=	1.0
@@ -10,7 +10,7 @@ DISTNAME=	${PORTNAME}
 MAINTAINER=	pfg@FreeBSD.org
 COMMENT=	Psalms from the Douai Bible in fortune file format
 
-LICENSE=	CC0-1.0 	#AKA Public Domain
+LICENSE=	CC0-1.0		# AKA Public Domain
 
 NO_ARCH=	yes
 NO_WRKSUBDIR=	yes

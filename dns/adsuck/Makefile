@@ -1,5 +1,5 @@
 # Created by: Philippe Pepiot <phil@philpep.org>
-# $FreeBSD: head/dns/adsuck/Makefile 435306 2017-03-03 04:12:20Z miwi $
+# $FreeBSD: head/dns/adsuck/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	adsuck
 PORTVERSION=	2.3
@@ -17,7 +17,7 @@ LICENSE=	ISCL
 LIB_DEPENDS+=	libevent.so:devel/libevent \
 		libldns.so:dns/ldns
 
-CFLAGS+= 	-I${LOCALBASE}/include
+CFLAGS+=	-I${LOCALBASE}/include
 
 USE_RC_SUBR=	adsuck
 

@@ -1,8 +1,8 @@
 # Created by: Palle Girgensohn <girgen@pingpong.net>
-# $FreeBSD: head/databases/postgresql96-docs/Makefile 450532 2017-09-24 18:58:59Z girgen $
+# $FreeBSD: head/databases/postgresql96-docs/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	postgresql
-PORTREVISION=   0
+PORTREVISION=	0
 PKGNAMESUFFIX?=	${WANT_PGSQL_VER:S,.,,}-docs
 
 MAINTAINER=	pgsql@FreeBSD.org
@@ -27,7 +27,7 @@ BUILD_DEPENDS+=	onsgmls:textproc/opensp			\
 		${sgmldir}/iso8879/catalog:textproc/iso8879	\
 		${dbdir}/dsssl/modular/catalog:textproc/dsssl-docbook-modular \
 		docbook-sgml>0:textproc/docbook-sgml
-CONFIGURE_ARGS= --without-readline
+CONFIGURE_ARGS=	--without-readline
 NO_ARCH=	yes
 
 do-build:

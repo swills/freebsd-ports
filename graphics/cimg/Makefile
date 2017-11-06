@@ -1,8 +1,8 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/graphics/cimg/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/graphics/cimg/Makefile 453048 2017-10-28 08:04:31Z thierry $
 
 PORTNAME=	cimg
-DISTVERSION=	2.1.1
+DISTVERSION=	2.1.3
 PORTREVISION=	1
 PORTEPOCH=	3
 CATEGORIES=	graphics devel
@@ -54,7 +54,6 @@ LIB_DEPENDS+=	libcurl.so:ftp/curl			\
 		libpng.so:graphics/png			\
 		libtiff.so:graphics/tiff		\
 		libHalf.so:graphics/ilmbase		\
-		libIlmImf.so:graphics/OpenEXR		\
 		libgimp-2.0.so:graphics/gimp-app	\
 		libfftw3.so:math/fftw3			\
 		libopencv_legacy.so:graphics/opencv	\

@@ -1,5 +1,5 @@
 # Created by: Neil Blakey-Milner
-# $FreeBSD: head/mail/qmailadmin/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/qmailadmin/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	qmailadmin
 PORTVERSION=	1.2.15
@@ -108,12 +108,12 @@ INSTALL_TARGET=	install-strip
 #			  default is "|preline LOCALBASE/bin/maildrop /etc/mailfilter"
 #			  do not forget the "|" at the start
 # USER_INDEX		- might confuse earlier versions of Internet Explorer
-# CGIBINDIR     	- location of your cgi directory
-# CGIBINSUBDIR  	- subdirectory to place cgi scripts in
-# CGIBINURL     	- location of your cgi directory in a URL
-# WEBDATADIR    	- location of your html files
-# WEBDATASUBDIR 	- subdirectory to place html files in
-# WEBDATAURL    	- location of your html files in a URL
+# CGIBINDIR		- location of your cgi directory
+# CGIBINSUBDIR		- subdirectory to place cgi scripts in
+# CGIBINURL		- location of your cgi directory in a URL
+# WEBDATADIR		- location of your html files
+# WEBDATASUBDIR		- subdirectory to place html files in
+# WEBDATAURL		- location of your html files in a URL
 CGIBINDIR?=	www/cgi-bin.default
 CGIBINSUBDIR?=	qmailadmin
 CGIBINURL?=	/cgi-bin

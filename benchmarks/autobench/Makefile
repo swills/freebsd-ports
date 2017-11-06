@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/benchmarks/autobench/Makefile 451957 2017-10-13 08:21:36Z bapt $
+# $FreeBSD: head/benchmarks/autobench/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	autobench
 PORTVERSION=	2.1.2
@@ -20,7 +20,7 @@ RUN_DEPENDS=	httperf:benchmarks/httperf \
 USES=		gmake perl5 shebangfix
 MAKE_ARGS=	CC="${CC}" CFLAGS="${CFLAGS}" DEBUG_FLAGS= \
 		PREFIX=${PREFIX}
-SHEBANG_FILES= 	autobench_admin autobenchd autobench
+SHEBANG_FILES=	autobench_admin autobenchd autobench
 
 post-patch:
 .for file in autobench autobench_admin

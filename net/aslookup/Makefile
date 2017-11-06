@@ -1,5 +1,5 @@
 # Created by: janos.mohacsi@bsd.hu
-# $FreeBSD: head/net/aslookup/Makefile 362023 2014-07-16 03:00:46Z adamw $
+# $FreeBSD: head/net/aslookup/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	aslookup
 PORTVERSION=	0.12
@@ -19,9 +19,9 @@ post-patch:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/aslookup ${STAGEDIR}${PREFIX}/bin
-	@if [ ! -d ${STAGEDIR}${PREFIX}/share/doc/aslookup ]; then 	\
+	@if [ ! -d ${STAGEDIR}${PREFIX}/share/doc/aslookup ]; then \
 		${MKDIR} ${STAGEDIR}${PREFIX}/share/doc/aslookup; fi
-	${INSTALL_DATA} ${WRKSRC}/readme-eng.txt ${WRKSRC}/readme-jp.txt   \
+	${INSTALL_DATA} ${WRKSRC}/readme-eng.txt ${WRKSRC}/readme-jp.txt \
 		${STAGEDIR}${PREFIX}/share/doc/aslookup
 
 .include <bsd.port.mk>

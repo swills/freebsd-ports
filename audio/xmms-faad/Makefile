@@ -1,11 +1,10 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/audio/xmms-faad/Makefile 451901 2017-10-12 15:57:51Z mat $
+# $FreeBSD: head/audio/xmms-faad/Makefile 453293 2017-11-01 15:36:25Z riggs $
 
 PORTNAME=	faad2
-PORTVERSION=	2.7
-PORTREVISION=	5
+PORTVERSION=	2.8.6
 CATEGORIES=	audio
-MASTER_SITES=	SF/faac/${PORTNAME}-src/${PORTNAME}-${PORTVERSION}
+MASTER_SITES=	SF/faac/${PORTNAME}-src/${PORTNAME}-${PORTVERSION:R}.0
 PKGNAMEPREFIX=	xmms-
 
 MAINTAINER=	ports@FreeBSD.org
@@ -19,8 +18,8 @@ LIB_DEPENDS=	libxmms.so:multimedia/xmms \
 
 WRKSRC_SUBDIR=	plugins/xmms/src
 
+USES=		pkgconfig
 USE_GNOME=	gtk12
-USES=		pkgconfig tar:bzip2
 EXTRA_CFLAGS=	`xmms-config --cflags`
 EXTRA_LDFLAGS=	`xmms-config --libs`
 

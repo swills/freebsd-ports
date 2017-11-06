@@ -1,5 +1,5 @@
 # Created by: Nicole Reid <root@cooltrainer.org>
-# $FreeBSD: head/emulators/visualboyadvance-m/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/emulators/visualboyadvance-m/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	visualboyadvance-m
 PORTVERSION=	2.0.0b2
@@ -81,7 +81,7 @@ LIRC_CMAKE_BOOL=	ENABLE_LIRC
 
 post-patch:
 	@${REINPLACE_CMD} -e '/SET.*LIRC_CLIENT_LIBRARY/ s|lirc_client|${LOCALBASE}/lib/lib&.so|; \
-       		s|share/man|man|' ${WRKSRC}/CMakeLists.txt
+		s|share/man|man|' ${WRKSRC}/CMakeLists.txt
 
 maint-gen-distfile:
 	@if [ -f ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX} ]; then \

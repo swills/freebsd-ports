@@ -1,8 +1,8 @@
 # Created by: Jesse McConnell <jesse@gallup.com>
-# $FreeBSD: head/devel/p5-Log-Agent/Makefile 402756 2015-12-01 16:05:35Z sunpoet $
+# $FreeBSD: head/devel/p5-Log-Agent/Makefile 453068 2017-10-28 17:32:52Z sunpoet $
 
 PORTNAME=	Log-Agent
-PORTVERSION=	1.001
+PORTVERSION=	1.002
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

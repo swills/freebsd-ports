@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/oniguruma5/Makefile 445714 2017-07-13 21:15:21Z pawel $
+# $FreeBSD: head/devel/oniguruma5/Makefile 453131 2017-10-29 18:23:54Z riggs $
 
 PORTNAME=	oniguruma
 PORTVERSION=	5.9.6
@@ -14,6 +14,9 @@ COMMENT=	BSDL Regular Expressions library compatible with POSIX/GNU/Perl
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	Upstream no longer maintained, superseded by devel/oniguruma6
+EXPIRATION_DATE=2017-11-12
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 

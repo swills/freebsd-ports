@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/noto-lite/Makefile 440013 2017-05-03 13:40:28Z kevlo $
+# $FreeBSD: head/x11-fonts/noto-lite/Makefile 453381 2017-11-02 21:41:47Z olgeni $
 
 PORTNAME=	noto
 PORTVERSION=	1.0.5
@@ -22,10 +22,10 @@ NO_WRKSUBDIR=	yes
 
 CONFLICTS_INSTALL=	noto*
 
-LIST= NotoEmoji-Regular.ttf NotoSans-Bold.ttf NotoSans-BoldItalic.ttf NotoSans-Italic.ttf NotoSans-Regular.ttf NotoSansLinearB-Regular.ttf NotoSansSymbols-Regular.ttf NotoSerif-Bold.ttf NotoSerif-BoldItalic.ttf NotoSerif-Italic.ttf NotoSerif-Regular.ttf
+LIST=	NotoEmoji-Regular.ttf NotoSans-Bold.ttf NotoSans-BoldItalic.ttf NotoSans-Italic.ttf NotoSans-Regular.ttf NotoSansLinearB-Regular.ttf NotoSansSymbols-Regular.ttf NotoSerif-Bold.ttf NotoSerif-BoldItalic.ttf NotoSerif-Italic.ttf NotoSerif-Regular.ttf
 
 .for f in ${LIST}
-PLIST_FILES+=   ${FONTSDIR}/${f}
+PLIST_FILES+=	${FONTSDIR}/${f}
 .endfor
 
 post-extract:

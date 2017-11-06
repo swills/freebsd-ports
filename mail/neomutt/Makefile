@@ -1,9 +1,8 @@
-# $FreeBSD: head/mail/neomutt/Makefile 452280 2017-10-17 14:52:45Z adamw $
+# $FreeBSD: head/mail/neomutt/Makefile 453160 2017-10-30 09:15:22Z bapt $
 
 PORTNAME=	neomutt
-PORTVERSION=	20171013
+PORTVERSION=	20171027
 DISTVERSIONPREFIX=	${PORTNAME}-
-PORTREVISION=	1
 CATEGORIES=	mail
 
 MAINTAINER=	bapt@FreeBSD.org

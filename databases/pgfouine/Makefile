@@ -1,5 +1,5 @@
 # Created by: Pierre-Emmanuel Andre <pea@raveland.org>
-# $FreeBSD: head/databases/pgfouine/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/databases/pgfouine/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	pgfouine
 PORTVERSION=	1.2
@@ -29,8 +29,8 @@ do-install:
 	@cd ${WRKSRC}/include && ${COPYTREE_SHARE} \* ${STAGEDIR}${DATADIR}/include/
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/AUTHORS	${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${WRKSRC}/ChangeLog 	${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${WRKSRC}/THANKS 	${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/ChangeLog	${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/THANKS	${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/rpm-specific/sources/pgfouine-tutorial.txt ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

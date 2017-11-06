@@ -1,10 +1,10 @@
-# $FreeBSD: head/archivers/go-compress/Makefile 434468 2017-02-20 15:15:48Z sunpoet $
+# $FreeBSD: head/archivers/go-compress/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	compress
 PORTVERSION=	1.2.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	archivers
-PKGNAMEPREFIX=  go-
+PKGNAMEPREFIX=	go-
 
 MAINTAINER=	guy.tabrar@me.com
 COMMENT=	Go optimised compression packages
@@ -16,10 +16,10 @@ BUILD_DEPENDS=	go-cpuid>=0:devel/go-cpuid \
 		go-crc32>=0:devel/go-crc32
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USE_GITHUB= 	yes
-GH_ACCOUNT= 	klauspost
-USES= 		go
-GO_PKGNAME= 	github.com/klauspost/compress
+USE_GITHUB=	yes
+GH_ACCOUNT=	klauspost
+USES=		go
+GO_PKGNAME=	github.com/klauspost/compress
 GO_TARGET=	${GO_PKGNAME}/flate \
 		${GO_PKGNAME}/gzip \
 		${GO_PKGNAME}/snappy \

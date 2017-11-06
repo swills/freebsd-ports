@@ -1,15 +1,16 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/sysutils/fusefs-ext4fuse/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/sysutils/fusefs-ext4fuse/Makefile 453162 2017-10-30 09:55:15Z ehaupt $
 
 PORTNAME=	ext4fuse
 PORTVERSION=	0.1.3
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	sysutils
 PKGNAMEPREFIX=	fusefs-
 
 MAINTAINER=	ehaupt@FreeBSD.org
-COMMENT=	EXT4 implementation for FUSE
+COMMENT=	Read-only ext4 implementation for FUSE
 
 LICENSE=	GPLv2
 

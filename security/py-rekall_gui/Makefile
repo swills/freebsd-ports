@@ -1,5 +1,5 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/security/py-rekall_gui/Makefile 430814 2017-01-07 16:42:10Z antoine $
+# $FreeBSD: head/security/py-rekall_gui/Makefile 453115 2017-10-29 13:19:24Z antoine $
 
 PORTNAME=	rekall_gui
 DISTVERSION=	1.5.0.post4
@@ -13,6 +13,8 @@ COMMENT=	GUI component of the Rekall framework
 LICENSE=	GPLv2
 
 IGNORE=		does not work with rekall-core 1.6.0
+DEPRECATED=	PoC that is no longer supported
+EXPIRATION_DATE=	2017-11-29
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}rekall-core>=1.5.0.p:security/py-rekall-core \
 		${PYTHON_PKGNAMEPREFIX}codegen>=1.0:devel/py-codegen \

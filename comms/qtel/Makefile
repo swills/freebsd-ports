@@ -1,5 +1,5 @@
 # Created by: shurd
-# $FreeBSD: head/comms/qtel/Makefile 451999 2017-10-13 14:18:50Z bapt $
+# $FreeBSD: head/comms/qtel/Makefile 453328 2017-11-02 00:39:55Z db $
 
 PORTNAME=	qtel
 PORTREVISION=	1
@@ -7,16 +7,17 @@ PORTREVISION=	1
 MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Qtel Echolink client
 
-BROKEN=		Invalid checksum
-
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
-LIB_DEPENDS=	libecholib.so:comms/svxlink
+LIB_DEPENDS=	libecholib.so:comms/svxlink \
+		libgsm.so:audio/gsm
 
 MASTERDIR=	${.CURDIR}/../svxlink
 USE_QT4=	corelib gui network qmake_build linguist_build moc_build rcc_build uic_build
 PKGDIR=		${.CURDIR}
 CMAKE_ARGS+=	-DUSE_QT:BOOL=YES \
 		-DQT_ONLY:BOOL=YES
+USE_GNOME=	libsigc++20
 
 .include "${MASTERDIR}/Makefile"

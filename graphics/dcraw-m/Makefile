@@ -1,5 +1,5 @@
 # Created by: "Waitman Gobble" <uzimac@da3m0n8t3r.com>
-# $FreeBSD: head/graphics/dcraw-m/Makefile 450852 2017-09-28 15:36:31Z kwm $
+# $FreeBSD: head/graphics/dcraw-m/Makefile 453284 2017-11-01 13:10:35Z olgeni $
 
 PORTNAME=	dcraw-m
 PORTVERSION=	9.22
@@ -21,13 +21,13 @@ GH_TAGNAME=	1392579
 
 USES=		jpeg pkgconfig
 
-CFLAGS += 	-Wall -I${LOCALBASE}/include \
+CFLAGS+=	-Wall -I${LOCALBASE}/include \
 		`MagickWand-config --cflags --cppflags` \
 		-DMAGICKCORE_HDRI_ENABLE=0 \
 		-DMAGICKCORE_QUANTUM_DEPTH=16
-LDFLAGS +=	`MagickWand-config --ldflags --libs` -lm -llcms2 -ljpeg \
+LDFLAGS+=	`MagickWand-config --ldflags --libs` -lm -llcms2 -ljpeg \
 		-ljasper
-LIBS    +=      -L${LOCALBASE}/lib
+LIBS+=		-L${LOCALBASE}/lib
 
 PLIST_FILES=	bin/dcraw-m
 

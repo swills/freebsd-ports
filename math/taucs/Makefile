@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni <giffunip@asme.org>
-# $FreeBSD: head/math/taucs/Makefile 450007 2017-09-17 15:26:09Z riggs $
+# $FreeBSD: head/math/taucs/Makefile 453238 2017-10-31 14:51:53Z olgeni $
 
 PORTNAME=	taucs
 PORTVERSION=	2.2
@@ -12,10 +12,10 @@ DISTNAME=	${PORTNAME}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	C library of sparse linear solvers
 
-LICENSE=        TAUCS
-LICENSE_NAME=   TAUCS License
-LICENSE_FILE=   ${FILESDIR}/TAUCS-license.txt
-LICENSE_PERMS=  dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+LICENSE=	TAUCS
+LICENSE_NAME=	TAUCS License
+LICENSE_FILE=	${FILESDIR}/TAUCS-license.txt
+LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 LIB_DEPENDS=	libmetis.so:math/metis4
 

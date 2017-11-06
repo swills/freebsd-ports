@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/android-tools-adb/files/Makefile 448522 2017-08-22 13:01:20Z jbeich $
+# $FreeBSD: head/devel/android-tools-adb/files/Makefile 453204 2017-10-30 18:36:22Z jbeich $
 
 PROG_CXX=adb
 NO_MAN=
@@ -101,7 +101,7 @@ SRCS+= stderr_write.c
 
 REVISION?= $$(${GIT} rev-parse --short=12 HEAD 2>/dev/null || echo unknown)
 
-CPPFLAGS+= -DADB_REVISION="\"${REVISION}-android\""
+CPPFLAGS+= -DADB_VERSION="\"26.0.0 rc1-${REVISION}-android\""
 CPPFLAGS+= -DADB_HOST=1
 CPPFLAGS+= -DHAVE_FORKEXEC=1
 CPPFLAGS+= -DHAVE_SYMLINKS

@@ -1,9 +1,9 @@
 # Created by: Oleg V. Volkov <rover@lglobus.ru>
-# $FreeBSD: head/games/adom/Makefile 421496 2016-09-07 12:43:22Z tijl $
+# $FreeBSD: head/games/adom/Makefile 453285 2017-11-01 13:21:11Z tijl $
 
 PORTNAME=	adom
 PORTVERSION=	1.1.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games linux
 MASTER_SITES=	http://www.adom.de/adom/download/linux/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.//g}-elf
@@ -22,7 +22,7 @@ OPTIONS_DEFINE=	DOCS
 
 ONLY_FOR_ARCHS=	i386 amd64
 USES=		linux
-USE_LINUX=	ncurses-base xorglibs
+USE_LINUX=	xorglibs
 
 WRKSRC=		${WRKDIR}/adom
 NO_BUILD=	yes

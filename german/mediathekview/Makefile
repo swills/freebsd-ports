@@ -1,9 +1,8 @@
 # Created by: Lars Engels <lme@FreeBSD.org>
-# $FreeBSD: head/german/mediathekview/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/german/mediathekview/Makefile 452979 2017-10-27 12:31:28Z lme $
 
 PORTNAME=	mediathekview
-PORTVERSION=	13.0.2
-PORTREVISION=	1
+PORTVERSION=	13.0.3
 CATEGORIES=	german java
 MASTER_SITES=	https://download.mediathekview.de/stabil/
 DISTNAME=	MediathekView-${PORTVERSION}
@@ -32,9 +31,9 @@ OPTIONS_MULTI=		BACKEND
 OPTIONS_MULTI_BACKEND=	MPLAYER MPV VLC
 
 VLC_DESC=		VLC support
-MPV_DESC=		VLC support
+MPV_DESC=		MPV support
 
-OPTIONS_DEFAULT=	VLC
+OPTIONS_DEFAULT=	MPV
 
 MPLAYER_RUN_DEPENDS=	mplayer:multimedia/mplayer
 MPV_RUN_DEPENDS=	mpv:multimedia/mpv
