@@ -1,12 +1,12 @@
 # Created by: Denis Shaposhnikov <dsh@vlink.ru>
-# $FreeBSD: head/misc/qlas/Makefile 346185 2014-02-26 10:04:03Z ehaupt $
+# $FreeBSD: head/misc/qlas/Makefile 453458 2017-11-04 13:07:41Z zi $
 
 PORTNAME=	qlas
 PORTVERSION=	1.93
 CATEGORIES=	misc
 MASTER_SITES=	http://lev.serebryakov.spb.ru/download/qlas/
 
-MAINTAINER=	dsh@vlink.ru
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Qico FIDO mailer log analyzer and statistic builder
 
 USES=		shebangfix perl5 dos2unix

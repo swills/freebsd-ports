@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/en-hunspell/Makefile 432928 2017-01-31 15:33:46Z sunpoet $
+# $FreeBSD: head/textproc/en-hunspell/Makefile 453497 2017-11-04 22:57:02Z sunpoet $
 
 PORTNAME=	hunspell
-PORTVERSION=	2017.01.22
+PORTVERSION=	2017.08.24
 CATEGORIES=	textproc
 MASTER_SITES=	SF/wordlist/speller/${PORTVERSION}/
 PKGNAMEPREFIX=	en-

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/libcmis/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/net/libcmis/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	libcmis
 PORTVERSION=	0.5.1
@@ -9,7 +9,7 @@ MASTER_SITES=	http://dev-www.libreoffice.org/src/
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Client library for the CMIS interface
 
-LICENSE=	LGPL20 MPL GPLv2
+LICENSE=	LGPL20 MPL11 GPLv2
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libcurl.so:ftp/curl

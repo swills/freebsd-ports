@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 452251 2017-10-16 20:37:21Z rene $
+# $FreeBSD: head/x11/Makefile 453600 2017-11-06 07:53:40Z araujo $
 #
 
     COMMENT = Ports to support the X window system
@@ -258,6 +258,7 @@
     SUBDIR += p5-X11-Xlib
     SUBDIR += p5-XTerm-Conf
     SUBDIR += pantheon-terminal
+    SUBDIR += pcdm
     SUBDIR += pipeglade
     SUBDIR += pixman
     SUBDIR += plasma-scriptengine-python

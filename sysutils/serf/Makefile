@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/serf/Makefile 438320 2017-04-11 22:06:51Z swills $
+# $FreeBSD: head/sysutils/serf/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	serf
 PORTVERSION=	0.8.1
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	hashicorp-
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Service discovery and configuration made easy
 
-LICENSE=	MPL
+LICENSE=	MPL20
 
 BUILD_DEPENDS=	go:lang/go
 

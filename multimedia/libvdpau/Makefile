@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/libvdpau/Makefile 452632 2017-10-22 10:31:28Z madpilot $
+# $FreeBSD: head/multimedia/libvdpau/Makefile 453536 2017-11-05 11:15:51Z madpilot $
 
 PORTNAME=	libvdpau
 PORTVERSION=	1.1.1
@@ -19,10 +19,6 @@ USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 
 OPTIONS_DEFINE=	DEBUG
-
-.ifdef WITH_DEBUG
-OPTIONS_DEFAULT=	DEBUG
-.endif
 
 DEBUG_CFLAGS=		-D_DEBUG
 DEBUG_CFLAGS_OFF=	-DNDEBUG

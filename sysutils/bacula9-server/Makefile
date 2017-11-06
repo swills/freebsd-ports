@@ -1,9 +1,8 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/sysutils/bacula9-server/Makefile 449352 2017-09-06 18:28:20Z dvl $
+# $FreeBSD: head/sysutils/bacula9-server/Makefile 453560 2017-11-05 20:04:24Z ler $
 
 PORTNAME=	bacula
-PORTVERSION=	9.0.4
-PORTREVISION=	0
+PORTVERSION=	9.0.5
 CATEGORIES?=	sysutils
 MASTER_SITES=	SF/bacula/bacula/${PORTVERSION}
 PKGNAMEPREFIX?=	#

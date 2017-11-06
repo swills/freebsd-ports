@@ -1,10 +1,9 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/astro/gpstk/Makefile 451468 2017-10-07 17:56:23Z jbeich $
+# $FreeBSD: head/astro/gpstk/Makefile 453450 2017-11-04 11:33:25Z vanilla $
 
 PORTNAME=	gpstk
-PORTVERSION=	2.9
+PORTVERSION=	2.10
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
 CATEGORIES=	astro devel
 
 MAINTAINER=	ports@FreeBSD.org

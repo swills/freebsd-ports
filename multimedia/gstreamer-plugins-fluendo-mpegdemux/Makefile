@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer-plugins-fluendo-mpegdemux/Makefile 393429 2015-08-02 15:03:19Z tijl $
+# $FreeBSD: head/multimedia/gstreamer-plugins-fluendo-mpegdemux/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	gstreamer-plugins-fluendo-mpegdemux
 PORTVERSION=	0.10.71
@@ -11,7 +11,7 @@ DISTNAME=	gst-fluendo-mpegdemux-${PORTVERSION}
 MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	MPEG2 demuxing gstreamer plugin from fluendo
 
-LICENSE=	MPL
+LICENSE=	MPL11
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

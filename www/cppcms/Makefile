@@ -1,10 +1,9 @@
-# $FreeBSD: head/www/cppcms/Makefile 450556 2017-09-25 00:02:36Z jbeich $
+# $FreeBSD: head/www/cppcms/Makefile 453386 2017-11-03 03:44:13Z kevlo $
 
 PORTNAME=	cppcms
-PORTVERSION=	1.0.5
-PORTREVISION=	10
+PORTVERSION=	1.1.0
 CATEGORIES=	www
-MASTER_SITES=	SF/cppcms/${PORTNAME}/${PORTVERSION}
+MASTER_SITES=	SF/cppcms/${PORTNAME}/${PORTVERSION}-beta
 
 MAINTAINER=	kevlo@FreeBSD.org
 COMMENT=	C++ web development framework

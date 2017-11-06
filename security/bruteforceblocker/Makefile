@@ -1,5 +1,5 @@
 # Created by: Daniel Gerzo <danger@rulez.sk>
-# $FreeBSD: head/security/bruteforceblocker/Makefile 452590 2017-10-21 13:00:20Z pi $
+# $FreeBSD: head/security/bruteforceblocker/Makefile 453620 2017-11-06 14:24:39Z mat $
 
 PORTNAME=	bruteforceblocker
 PORTVERSION=	1.2.4
@@ -23,7 +23,6 @@ USE_PERL5=	run
 
 OPTIONS_DEFINE=	DOCS
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 SUB_FILES=	pkg-message
 SHEBANG_FILES=	${PORTNAME}.pl
 

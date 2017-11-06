@@ -1,5 +1,5 @@
 # Created by: Corey Smith <corsmith@gmail.com>
-# $FreeBSD: head/net/freeswitch/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/net/freeswitch/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	freeswitch
 PORTVERSION=	1.6.19
@@ -12,7 +12,7 @@ DISTFILES=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX}
 MAINTAINER=	corsmith@gmail.com
 COMMENT=	Multi-protocol soft switch for telephony applications
 
-LICENSE=	MPL
+LICENSE=	MPL11
 
 ONLY_FOR_ARCHS=	amd64
 

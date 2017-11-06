@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/es-hunspell/Makefile 450521 2017-09-24 18:50:20Z sunpoet $
+# $FreeBSD: head/textproc/es-hunspell/Makefile 453498 2017-11-04 22:57:07Z sunpoet $
 
 PORTNAME=	hunspell
-PORTVERSION=	2.1.1
+PORTVERSION=	2.2
 CATEGORIES=	textproc spanish
 MASTER_SITES=	https://github.com/sbosio/rla-es/releases/download/v${PORTVERSION}/
 PKGNAMEPREFIX=	es-
@@ -16,7 +16,7 @@ LICENSE=	GPLv3 LGPL3 MPL11
 LICENSE_COMB=	dual
 LICENSE_FILE_GPLv3=	${WRKSRC}/GPLv3.txt
 LICENSE_FILE_LGPL3=	${WRKSRC}/LGPLv3.txt
-LICENSE_FILE_MPL=	${WRKSRC}/MPL-1.1.txt
+LICENSE_FILE_MPL11=	${WRKSRC}/MPL-1.1.txt
 
 NO_ARCH=	yes
 NO_BUILD=	yes

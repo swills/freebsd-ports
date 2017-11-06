@@ -1,8 +1,8 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/graphics/frogr/Makefile 430543 2017-01-04 07:56:41Z ashish $
+# $FreeBSD: head/graphics/frogr/Makefile 453512 2017-11-05 03:56:28Z ashish $
 
 PORTNAME=	frogr
-PORTVERSION=	1.2
+PORTVERSION=	1.3
 CATEGORIES=	graphics
 MASTER_SITES=	GNOME
 

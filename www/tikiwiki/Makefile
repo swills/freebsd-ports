@@ -1,13 +1,13 @@
 # Created by: Babak Farrokhi <babak@farrokhi.net>
-# $FreeBSD: head/www/tikiwiki/Makefile 432907 2017-01-31 09:04:50Z vanilla $
+# $FreeBSD: head/www/tikiwiki/Makefile 453522 2017-11-05 08:11:44Z joneum $
 
 PORTNAME=	tikiwiki
-PORTVERSION=	16.2
+DISTVERSION=	17.1
 CATEGORIES=	www
-MASTER_SITES=	SF/${PORTNAME}/Tiki_16.x_Tabbys/${PORTVERSION}/
+MASTER_SITES=	SF/${PORTNAME}/Tiki_17.x_Zeta_Bootis/${PORTVERSION}/
 DISTNAME=	tiki-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Powerful PHP based Wiki/CMS/Groupware
 
 LICENSE=	LGPL21

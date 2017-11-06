@@ -1,9 +1,10 @@
 # Created by: Stefan Esser
-# $FreeBSD: head/sysutils/fusefs-libs3/Makefile 452270 2017-10-17 07:37:56Z se $
+# $FreeBSD: head/sysutils/fusefs-libs3/Makefile 453396 2017-11-03 11:12:33Z se $
 
 PORTNAME=	fusefs-libs3
 DISTVERSIONPREFIX=	fuse-
 DISTVERSION=	3.2.0
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	se@freebsd.org
@@ -18,7 +19,7 @@ USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	libfuse
 GH_PROJECT=	libfuse
-GH_TAGNAME=	d92bf83
+GH_TAGNAME=	8ec7fd9
 
 .include <bsd.port.pre.mk>
 

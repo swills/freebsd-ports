@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/eigen3/Makefile 443663 2017-06-15 22:27:48Z pi $
+# $FreeBSD: head/math/eigen3/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	eigen
 PORTVERSION=	3.3.4
@@ -10,7 +10,7 @@ DIST_SUBDIR=	${PORTNAME}
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Lightweight library for vector and matrix math
 
-LICENSE=	LGPL21 MPL
+LICENSE=	LGPL21 MPL20
 LICENSE_COMB=	multi
 
 CMAKE_ARGS=	-DPKGCONFIG_INSTALL_DIR:PATH="${PREFIX}/libdata/pkgconfig"

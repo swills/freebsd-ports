@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-metasploit_payloads-mettle/Makefile 449188 2017-09-03 09:23:13Z antoine $
+# $FreeBSD: head/security/rubygem-metasploit_payloads-mettle/Makefile 453517 2017-11-05 06:58:02Z antoine $
 
 PORTNAME=	metasploit_payloads-mettle
-PORTVERSION=	0.2.2
+PORTVERSION=	0.2.5
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

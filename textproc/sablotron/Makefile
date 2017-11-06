@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/sablotron/Makefile 431459 2017-01-14 09:01:10Z amdmi3 $
+# $FreeBSD: head/textproc/sablotron/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	Sablot
 PORTVERSION=	1.0.3
@@ -10,7 +10,7 @@ MASTER_SITES=	SF/sablotron/sablotron-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	XML toolkit implementing XSLT 1.0, XPath 1.0 and DOM Level2
 
-LICENSE=	MPL GPLv2+
+LICENSE=	MPL11 GPLv2+
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libexpat.so:textproc/expat2

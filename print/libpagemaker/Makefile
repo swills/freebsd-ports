@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/libpagemaker/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/print/libpagemaker/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	libpagemaker
 PORTVERSION=	0.0.3
@@ -9,7 +9,7 @@ MASTER_SITES=	LIBREOFFICE_DEV
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Library and tools for parsing Aldus/Adobe PageMaker documents
 
-LICENSE=	MPL
+LICENSE=	MPL20
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/format.hpp:devel/boost-libs
 LIB_DEPENDS=	librevenge-0.0.so:textproc/librevenge

@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-sidekiq-cron/Makefile 444197 2017-06-23 21:19:06Z sunpoet $
+# $FreeBSD: head/devel/rubygem-sidekiq-cron/Makefile 453495 2017-11-04 22:56:52Z sunpoet $
 
 PORTNAME=	sidekiq-cron
 PORTVERSION=	0.6.3
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,8 +13,7 @@ COMMENT=	Enables to set jobs to be run in specified time (using CRON notation)
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	rubygem-redis-namespace>=1.5.2:databases/rubygem-redis-namespace \
-		rubygem-rufus-scheduler>=3.3.0:devel/rubygem-rufus-scheduler \
+RUN_DEPENDS=	rubygem-rufus-scheduler>=3.3.0:devel/rubygem-rufus-scheduler \
 		rubygem-sidekiq>=4.2.1:devel/rubygem-sidekiq
 
 NO_ARCH=	yes

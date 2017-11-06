@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/devel/zziplib/Makefile 434587 2017-02-22 15:02:18Z bapt $
+# $FreeBSD: head/devel/zziplib/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	zziplib
 PORTVERSION=	0.13.62
@@ -10,7 +10,7 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}13/${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Library to provide transparent read access to zipped files
 
-LICENSE=	LGPL21 MPL
+LICENSE=	LGPL21 MPL11
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	zip:archivers/zip

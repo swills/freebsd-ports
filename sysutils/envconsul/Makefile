@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/envconsul/Makefile 452281 2017-10-17 15:16:32Z swills $
+# $FreeBSD: head/sysutils/envconsul/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	envconsul
 PORTVERSION=	0.7.2
@@ -8,7 +8,7 @@ CATEGORIES=	sysutils
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Populate values from Consul into a process environment
 
-LICENSE=	MPL
+LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/go:lang/go

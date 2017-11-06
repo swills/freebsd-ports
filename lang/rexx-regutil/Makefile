@@ -1,5 +1,5 @@
 # Created by: Bob Eager <bob@eager.cx>
-# $FreeBSD: head/lang/rexx-regutil/Makefile 417711 2016-06-28 12:15:09Z mat $
+# $FreeBSD: head/lang/rexx-regutil/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	regutil
 PORTVERSION=	1.26
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}${PORTVERSION:S/.//}
 MAINTAINER=	bob@eager.cx
 COMMENT=	Implementation of IBM's RexxUtil function library for Regina
 
-LICENSE=	MPL
+LICENSE=	MPL10
 
 BUILD_DEPENDS=	${LOCALBASE}/include/rexxsaa.h:lang/rexx-regina
 

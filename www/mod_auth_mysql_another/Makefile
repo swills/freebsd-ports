@@ -1,5 +1,5 @@
 # Created by: mbr@FreeBSD.org
-# $FreeBSD: head/www/mod_auth_mysql_another/Makefile 392177 2015-07-15 17:51:25Z pgollucci $
+# $FreeBSD: head/www/mod_auth_mysql_another/Makefile 453544 2017-11-05 12:55:03Z brnrd $
 
 PORTNAME=	mod_auth_mysql
 PORTVERSION=	3.0.0
@@ -21,7 +21,7 @@ AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 AP_INC=	${LOCALBASE}/include/mysql
 AP_LIB=	${LOCALBASE}/lib/mysql
-AP_EXTRAS=	-lmysqlclient -lz -lm
+AP_EXTRAS=	-lmysqlclient_r -lz -lm
 
 PORTDOCS=	CONFIGURE CHANGES
 

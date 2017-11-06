@@ -1,12 +1,12 @@
 # Created by: Denis Shaposhnikov <dsh@vlink.ru>
-# $FreeBSD: head/news/gup/Makefile 345931 2014-02-25 08:51:47Z ehaupt $
+# $FreeBSD: head/news/gup/Makefile 453458 2017-11-04 13:07:41Z zi $
 
 PORTNAME=	gup
 PORTVERSION=	0.4
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.isc.org/isc/inn/unoff-contrib/
 
-MAINTAINER=	dsh@vlink.ru
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Allows remote sites to change their newsgroup subscriptions
 
 WRKSRC=		${WRKDIR}/gup

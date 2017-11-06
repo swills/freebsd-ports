@@ -1,5 +1,5 @@
 # Created by: lbartoletti <coder@tuxfamily.org>
-# $FreeBSD: head/graphics/librasterlite/Makefile 443096 2017-06-10 14:54:34Z dbaio $
+# $FreeBSD: head/graphics/librasterlite/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	librasterlite
 PORTVERSION=	1.1g
@@ -10,7 +10,7 @@ MASTER_SITES=	http://www.gaia-gis.it/gaia-sins/librasterlite-sources/
 MAINTAINER=	lbartoletti@tuxfamily.org
 COMMENT=	Library that stores and retrieves raster coverages using a SpatiaLite
 
-LICENSE=	MPL GPLv2 LGPL21
+LICENSE=	MPL11 GPLv2 LGPL21
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libspatialite.so:databases/spatialite \

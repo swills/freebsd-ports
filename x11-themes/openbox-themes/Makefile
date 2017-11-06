@@ -1,11 +1,10 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/x11-themes/openbox-themes/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/x11-themes/openbox-themes/Makefile 453412 2017-11-03 16:15:08Z novel $
 
 PORTNAME=	openbox-themes
-PORTVERSION=	1.0.1
-PORTREVISION=	5
+PORTVERSION=	1.0.2
 CATEGORIES=	x11-themes
-MASTER_SITES=	LOCAL/novel
+MASTER_SITES=	DEBIAN
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	novel@FreeBSD.org

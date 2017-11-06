@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/games/sdlpop/Makefile 449838 2017-09-14 16:03:11Z swills $
+# $FreeBSD: head/games/sdlpop/Makefile 453620 2017-11-06 14:24:39Z mat $
 
 PORTNAME=	sdlpop
 DISTVERSIONPREFIX=	v
@@ -16,8 +16,9 @@ USES=		cmake localbase:ldflags
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	NagyD
+GH_PROJECT=	SDLPoP
 
-WRKSRC=		${WRKDIR}/SDLPoP-${PORTVERSION}/src
+WRKSRC_SUBDIR=	src
 USE_SDL=	sdl2 image2 mixer2
 PORTDOCS=	*
 

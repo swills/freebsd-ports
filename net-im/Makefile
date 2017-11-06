@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 452537 2017-10-20 16:01:58Z swills $
+# $FreeBSD: head/net-im/Makefile 453595 2017-11-06 07:40:23Z araujo $
 #
 
     COMMENT = Instant messaging
@@ -27,6 +27,7 @@
     SUBDIR += fugu
     SUBDIR += gajim
     SUBDIR += gale
+    SUBDIR += gitterdone
     SUBDIR += gloox
     SUBDIR += hotot
     SUBDIR += hs-haskell-xmpp

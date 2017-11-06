@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.sanity.mk 451901 2017-10-12 15:57:51Z mat $
+# $FreeBSD: head/Mk/bsd.sanity.mk 453460 2017-11-04 13:14:01Z dbaio $
 #
 # MAINTAINER: portmgr@FreeBSD.org
 #
@@ -111,9 +111,6 @@ DEV_ERROR+=	"USE_DOS2UNIX is no longer supported, please use USES=dos2unix"
 .if defined(LICENSE)
 .if ${LICENSE:MBSD}
 DEV_WARNING+=	"LICENSE must not contain BSD, instead use BSD[234]CLAUSE"
-.endif
-.if ${LICENSE:MMPL}
-DEV_WARNING+=	"LICENSE must not contain MPL, instead use MPL[10|11|20]"
 .endif
 .else
 DEV_WARNING+=	"Please set LICENSE for this port"

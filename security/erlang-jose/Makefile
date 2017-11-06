@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/erlang-jose/Makefile 441466 2017-05-22 15:41:55Z vanilla $
+# $FreeBSD: head/security/erlang-jose/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	jose
 PORTVERSION=	1.8.4
@@ -8,7 +8,7 @@ PKGNAMEPREFIX=	erlang-
 MAINTAINER=	vanilla@FreeBSD.org
 COMMENT=	JSON Object Signing and Encryption (JOSE) for Erlang
 
-LICENSE=	MPL
+LICENSE=	MPL20
 
 USES=		erlang:rebar
 USE_GITHUB=	yes

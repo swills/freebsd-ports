@@ -1,8 +1,8 @@
 # Created by: Torsten Zuhlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/databases/rubygem-paranoia/Makefile 439640 2017-04-28 20:25:34Z sunpoet $
+# $FreeBSD: head/databases/rubygem-paranoia/Makefile 453502 2017-11-04 22:57:27Z sunpoet $
 
 PORTNAME=	paranoia
-PORTVERSION=	2.3.1
+PORTVERSION=	2.4.0
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

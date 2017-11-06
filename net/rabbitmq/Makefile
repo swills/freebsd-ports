@@ -1,9 +1,8 @@
 # Created by: Phillip Neumann <pneumann@gmail.com>
-# $FreeBSD: head/net/rabbitmq/Makefile 453343 2017-11-02 12:34:09Z mat $
+# $FreeBSD: head/net/rabbitmq/Makefile 453619 2017-11-06 14:19:33Z olgeni $
 
 PORTNAME=	rabbitmq
-PORTVERSION=	3.6.12
-PORTREVISION=	1
+PORTVERSION=	3.6.13
 CATEGORIES=	net
 MASTER_SITES=	http://www.rabbitmq.com/releases/rabbitmq-server/v${PORTVERSION}/
 DISTNAME=	${PORTNAME}-server-${PORTVERSION}

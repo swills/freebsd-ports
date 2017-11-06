@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 453285 2017-11-01 13:21:11Z tijl $
+# $FreeBSD: head/devel/Makefile 453591 2017-11-06 06:40:39Z vanilla $
 #
 
     COMMENT = Development utilities
@@ -2064,6 +2064,7 @@
     SUBDIR += p5-Class-Factory
     SUBDIR += p5-Class-Factory-Util
     SUBDIR += p5-Class-Field
+    SUBDIR += p5-Class-Fields
     SUBDIR += p5-Class-Forward
     SUBDIR += p5-Class-Generate
     SUBDIR += p5-Class-Gomor
@@ -3241,6 +3242,7 @@
     SUBDIR += p5-SDL
     SUBDIR += p5-SNMP-Persist
     SUBDIR += p5-SOAP-WSDL
+    SUBDIR += p5-SPOPS
     SUBDIR += p5-SSN-Validate
     SUBDIR += p5-SUPER
     SUBDIR += p5-SVN-ACL
@@ -4386,6 +4388,7 @@
     SUBDIR += py-fasteners
     SUBDIR += py-fastentrypoints
     SUBDIR += py-fastimport
+    SUBDIR += py-fastnumbers
     SUBDIR += py-filemagic
     SUBDIR += py-fileutils
     SUBDIR += py-five.customerize
@@ -4447,6 +4450,7 @@
     SUBDIR += py-grizzled
     SUBDIR += py-grouch
     SUBDIR += py-grpcio
+    SUBDIR += py-grpcio-tools
     SUBDIR += py-gtfslib
     SUBDIR += py-gyp
     SUBDIR += py-hash_ring
@@ -4670,6 +4674,7 @@
     SUBDIR += py-pyasn1
     SUBDIR += py-pyasn1-modules
     SUBDIR += py-pybind11
+    SUBDIR += py-pybloomfiltermmap
     SUBDIR += py-pycadf
     SUBDIR += py-pycalendar
     SUBDIR += py-pycallgraph

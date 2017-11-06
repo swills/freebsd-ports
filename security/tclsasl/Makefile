@@ -1,5 +1,5 @@
 # Created by: Denis Shaposhnikov <dsh@vlink.ru>
-# $FreeBSD: head/security/tclsasl/Makefile 413747 2016-04-21 16:48:50Z gahr $
+# $FreeBSD: head/security/tclsasl/Makefile 453458 2017-11-04 13:07:41Z zi $
 
 PORTNAME=	tclsasl
 PORTVERSION=	1.0
@@ -7,7 +7,7 @@ PORTREVISION=	3
 CATEGORIES=	security tcl
 MASTER_SITES=	http://beepcore-tcl.sourceforge.net/
 
-MAINTAINER=	dsh@vlink.ru
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tcl interface to the Cyrus SASLv2 library
 
 LIB_DEPENDS=	libsasl2.so:security/cyrus-sasl2

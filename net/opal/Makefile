@@ -1,5 +1,5 @@
 # Created by: Roger Hardiman <roger@FreeBSD.org>
-# $FreeBSD: head/net/opal/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/net/opal/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	opal
 PORTVERSION=	3.10.10
@@ -10,7 +10,7 @@ MASTER_SITES=	GNOME
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	VoIP abstraction library
 
-LICENSE=	MPL
+LICENSE=	MPL10
 
 LIB_DEPENDS=	libpt.so:devel/ptlib
 

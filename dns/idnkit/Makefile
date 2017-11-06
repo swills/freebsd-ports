@@ -1,9 +1,9 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/dns/idnkit/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/dns/idnkit/Makefile 453406 2017-11-03 13:21:17Z sobomax $
 
 PORTNAME=	idnkit
 PORTVERSION=	1.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	dns
 MASTER_SITES=	http://www.nic.ad.jp/ja/idn/idnkit/download/sources/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

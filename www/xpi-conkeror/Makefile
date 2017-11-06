@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/www/xpi-conkeror/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/www/xpi-conkeror/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	conkeror
 PORTVERSION=	20150730
@@ -11,7 +11,7 @@ MASTER_SITES=	http://distfiles.pirateparty.in/ashish/ \
 MAINTAINER=	ashish@FreeBSD.org
 COMMENT=	Keyboard-oriented, customizable web browser based on Mozilla XULRunner
 
-LICENSE=	GPLv1 GPLv2 MPL
+LICENSE=	GPLv1 GPLv2 MPL11
 LICENSE_COMB=	multi
 
 OPTIONS_SINGLE+=	XULRUNNER

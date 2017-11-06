@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/databases/rubygem-redis-namespace/Makefile 434296 2017-02-17 16:48:57Z sunpoet $
+# $FreeBSD: head/databases/rubygem-redis-namespace/Makefile 453503 2017-11-04 22:57:32Z sunpoet $
 
 PORTNAME=	redis-namespace
-PORTVERSION=	1.5.3
+PORTVERSION=	1.6.0
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

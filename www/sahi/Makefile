@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/www/sahi/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/www/sahi/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	sahi
 PORTVERSION=	3.5.${SAHI_BUILD}
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}_${SAHI_BUILD:S,.,,g}
 MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Web automation and testing tool
 
-LICENSE=	APACHE20 MPL
+LICENSE=	APACHE20 MPL11
 LICENSE_COMB=	multi
 
 RUN_DEPENDS=	xdg-open:devel/xdg-utils

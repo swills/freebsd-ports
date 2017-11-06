@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-django-allauth/Makefile 449134 2017-09-02 12:40:00Z dbaio $
+# $FreeBSD: head/www/py-django-allauth/Makefile 453490 2017-11-04 22:15:07Z dbaio $
 
 PORTNAME=	django-allauth
-PORTVERSION=	0.33.0
+PORTVERSION=	0.34.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

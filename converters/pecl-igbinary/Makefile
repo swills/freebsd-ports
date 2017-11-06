@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/converters/pecl-igbinary/Makefile 450742 2017-09-27 13:23:57Z sunpoet $
+# $FreeBSD: head/converters/pecl-igbinary/Makefile 453564 2017-11-05 21:16:14Z sunpoet $
 
 PORTNAME=	igbinary
-PORTVERSION=	2.0.4
+PORTVERSION=	2.0.5
 CATEGORIES=	converters
 
 MAINTAINER=	sunpoet@FreeBSD.org

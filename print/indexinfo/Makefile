@@ -1,7 +1,7 @@
-# $FreeBSD: head/print/indexinfo/Makefile 452908 2017-10-26 07:59:22Z bapt $
+# $FreeBSD: head/print/indexinfo/Makefile 453561 2017-11-05 20:41:19Z bapt $
 
 PORTNAME=	indexinfo
-PORTVERSION=	0.3
+PORTVERSION=	0.3.1
 CATEGORIES=	print ports-mgmt
 
 MAINTAINER=	bapt@FreeBSD.org

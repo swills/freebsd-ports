@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 452503 2017-10-20 06:52:03Z se $
+# $FreeBSD: head/games/Makefile 453416 2017-11-03 17:09:20Z amdmi3 $
 #
 
     COMMENT = Games and related software
@@ -1003,6 +1003,7 @@
     SUBDIR += tt
     SUBDIR += ttraffic
     SUBDIR += ttt
+    SUBDIR += tty-solitaire
     SUBDIR += tux-aqfh
     SUBDIR += tuxfighter
     SUBDIR += tuxkart

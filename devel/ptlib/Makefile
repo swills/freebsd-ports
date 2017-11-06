@@ -1,5 +1,5 @@
 # Created by: Roger Hardiman <roger@freebsd.org>
-# $FreeBSD: head/devel/ptlib/Makefile 432013 2017-01-21 04:40:06Z jbeich $
+# $FreeBSD: head/devel/ptlib/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	ptlib
 PORTVERSION=	2.10.11
@@ -10,7 +10,7 @@ MASTER_SITES=	GNOME
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Cross platform C++ library, used by OPAL
 
-LICENSE=	MPL
+LICENSE=	MPL10
 
 LIB_DEPENDS=	libexpat.so:textproc/expat2
 

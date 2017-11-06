@@ -1,5 +1,5 @@
 # Created by: Frank Laszlo <laszlof@vonostingroup.com>
-# $FreeBSD: head/audio/taglib/Makefile 447454 2017-08-06 09:13:10Z tcberner $
+# $FreeBSD: head/audio/taglib/Makefile 453460 2017-11-04 13:14:01Z dbaio $
 
 PORTNAME=	taglib
 PORTVERSION=	1.11.1
@@ -12,7 +12,7 @@ COMMENT=	Library for manipulating ID3 tags and Ogg comments
 LICENSE=	LGPL21 MPL11
 LICENSE_COMB=	dual
 LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LGPL
-LICENSE_FILE_MPL=	${WRKSRC}/COPYING.MPL
+LICENSE_FILE_MPL11=	${WRKSRC}/COPYING.MPL
 
 USES=		cmake cpe pathfix
 CMAKE_ARGS=	-DWITH_ASF:BOOL=ON \

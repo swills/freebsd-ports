@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/elixir-jose/Makefile 441467 2017-05-22 15:42:25Z vanilla $
+# $FreeBSD: head/security/elixir-jose/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	jose
 PORTVERSION=	1.8.4
@@ -8,7 +8,7 @@ PKGNAMEPREFIX=	elixir-
 MAINTAINER=	vanilla@FreeBSD.org
 COMMENT=	JSON Object Signing and Encryption (JOSE) for Elixir
 
-LICENSE=	MPL
+LICENSE=	MPL20
 
 USES=		elixir
 USE_GITHUB=	yes

@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-notebook/Makefile 453367 2017-11-02 19:01:40Z sunpoet $
+# $FreeBSD: head/www/py-notebook/Makefile 453501 2017-11-04 22:57:22Z sunpoet $
 
 PORTNAME=	notebook
-PORTVERSION=	5.2.0
+PORTVERSION=	5.2.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

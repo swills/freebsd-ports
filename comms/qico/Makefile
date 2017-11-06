@@ -1,5 +1,5 @@
 # Created by: Denis Shaposhnikov <dsh@vlink.ru>
-# $FreeBSD: head/comms/qico/Makefile 363399 2014-07-29 21:43:17Z adamw $
+# $FreeBSD: head/comms/qico/Makefile 453458 2017-11-04 13:07:41Z zi $
 
 PORTNAME=	qico
 PORTVERSION=	0.49.10.3
@@ -7,7 +7,7 @@ CATEGORIES=	comms
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-0.49.10-p3
 DISTNAME=	${PORTNAME}-0.49.10-p3
 
-MAINTAINER=	dsh@vlink.ru
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	FidoNet Technology Network (FTN) compatible mailer for Unix systems
 
 USES=	tar:bzip2

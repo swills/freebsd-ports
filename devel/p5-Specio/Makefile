@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Specio/Makefile 447355 2017-08-04 20:07:29Z sunpoet $
+# $FreeBSD: head/devel/p5-Specio/Makefile 453563 2017-11-05 21:16:09Z sunpoet $
 
 PORTNAME=	Specio
-PORTVERSION=	0.40
+PORTVERSION=	0.42
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DROLSKY

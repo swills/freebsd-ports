@@ -1,8 +1,8 @@
 # Created by: Leinier Cruz Salfran <salfrancl@yahoo.es>
-# $FreeBSD: head/deskutils/fet/Makefile 450023 2017-09-17 20:49:16Z dbaio $
+# $FreeBSD: head/deskutils/fet/Makefile 453557 2017-11-05 19:15:16Z tcberner $
 
 PORTNAME=	fet
-PORTVERSION=	5.33.1
+DISTVERSION=	5.34.0
 CATEGORIES=	deskutils kde
 MASTER_SITES=	http://lalescu.ro/liviu/fet/download/ \
 		http://lalescu.ro/liviu/fet/download/old/ \

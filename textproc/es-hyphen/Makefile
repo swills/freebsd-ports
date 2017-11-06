@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/es-hyphen/Makefile 392424 2015-07-18 15:05:25Z sunpoet $
+# $FreeBSD: head/textproc/es-hyphen/Makefile 453499 2017-11-04 22:57:12Z sunpoet $
 
 PORTNAME=	hyphen
 PORTVERSION=	2013.09.01	# 0.7
@@ -13,8 +13,11 @@ DIST_SUBDIR=	${PORTNAME}
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Spanish hyphenation rules
 
-LICENSE=	GPLv3 LGPL3 MPL
+LICENSE=	GPLv3 LGPL3 MPL11
 LICENSE_COMB=	dual
+LICENSE_FILE_GPLv3=	${WRKSRC}/GPLv3.txt
+LICENSE_FILE_LGPL3=	${WRKSRC}/LGPLv3.txt
+LICENSE_FILE_MPL11=	${WRKSRC}/MPL-1.1.txt
 
 NO_ARCH=	yes
 NO_BUILD=	yes

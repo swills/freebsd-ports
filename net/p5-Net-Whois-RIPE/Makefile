@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/net/p5-Net-Whois-RIPE/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-Whois-RIPE/Makefile 453615 2017-11-06 13:19:41Z mich $
 
 PORTNAME=	Net-Whois-RIPE
-PORTVERSION=	2.006
+PORTVERSION=	2.006001
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:AASSAD

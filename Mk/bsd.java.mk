@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to svn yourself.
 #
-# $FreeBSD: head/Mk/bsd.java.mk 452076 2017-10-14 18:41:06Z glewis $
+# $FreeBSD: head/Mk/bsd.java.mk 453438 2017-11-04 01:16:31Z kevans $
 #
 
 .if !defined(Java_Include)
@@ -216,33 +216,39 @@ check-makevars::
 .		endfor
 
 # Error checking: JAVA_VERSION
+.if defined(JAVA_VERSION)
 .if !defined(_JAVA_VERSION_LIST_REGEXP)
 _JAVA_VERSION_LIST_REGEXP=	${_JAVA_VERSION_LIST:C/\+/\\+/:ts|}
 .endif
 
 check-makevars::
-	@test ! -z "${JAVA_VERSION}" && ( ${ECHO_CMD} "${JAVA_VERSION}" | ${TR} " " "\n" | ${GREP} -Eq "${_JAVA_VERSION_LIST_REGEXP}" || \
-	(${ECHO_CMD} "${PKGNAME}: Makefile error: \"${JAVA_VERSION}\" is not a valid value for JAVA_VERSION. It should be one or more of: ${__JAVA_VERSION_LIST} (with an optional \"+\" suffix.)"; ${FALSE})) || true
+	@( test ! -z "${JAVA_VERSION}" && ( ${ECHO_CMD} "${JAVA_VERSION}" | ${TR} " " "\n" | ${GREP} -Eq "${_JAVA_VERSION_LIST_REGEXP}")) || \
+	(${ECHO_CMD} "${PKGNAME}: Makefile error: \"${JAVA_VERSION}\" is not a valid value for JAVA_VERSION. It should be one or more of: ${__JAVA_VERSION_LIST} (with an optional \"+\" suffix.)"; ${FALSE})
+.endif
 
 # Error checking: JAVA_VENDOR
+.if defined(JAVA_VENDOR)
 .if !defined(_JAVA_VENDOR_LIST_REGEXP)
 _JAVA_VENDOR_LIST_REGEXP=	${_JAVA_VENDOR_LIST:ts|}
 .endif
 
 check-makevars::
-	@test ! -z "${JAVA_VENDOR}" && ( ${ECHO_CMD} "${JAVA_VENDOR}" | ${TR} " " "\n" | ${GREP} -Eq "${_JAVA_VENDOR_LIST_REGEXP}" || \
+	@( test ! -z "${JAVA_VENDOR}" && ( ${ECHO_CMD} "${JAVA_VENDOR}" | ${TR} " " "\n" | ${GREP} -Eq "${_JAVA_VENDOR_LIST_REGEXP}" )) || \
 	(${ECHO_CMD} "${PKGNAME}: Makefile error: \"${JAVA_VENDOR}\" is not a valid value for JAVA_VENDOR. It should be one or more of: ${_JAVA_VENDOR_LIST}"; \
-	${FALSE})) || true
+	${FALSE})
+.endif
 
 # Error checking: JAVA_OS
+.if defined(JAVA_OS)
 .if !defined(_JAVA_OS_LIST_REGEXP)
 _JAVA_OS_LIST_REGEXP=	${_JAVA_OS_LIST:ts|}
 .endif
 
 check-makevars::
-	@test ! -z "${JAVA_OS}" && ( ${ECHO_CMD} "${JAVA_OS}" | ${TR} " " "\n" | ${GREP} -Eq "${_JAVA_OS_LIST_REGEXP}" || \
+	@( test ! -z "${JAVA_OS}" && ( ${ECHO_CMD} "${JAVA_OS}" | ${TR} " " "\n" | ${GREP} -Eq "${_JAVA_OS_LIST_REGEXP}")) || \
 	(${ECHO_CMD} "${PKGNAME}: Makefile error: \"${JAVA_OS}\" is not a valid value for JAVA_OS. It should be one or more of: ${_JAVA_OS_LIST}"; \
-	${FALSE})) || true
+	${FALSE})
+.endif
 
 # Set default values for JAVA_BUILD and JAVA_RUN
 # When nothing is set, assume JAVA_BUILD=jdk and JAVA_RUN=jre

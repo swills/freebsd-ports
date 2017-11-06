@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@FreeBSD.org>
-# $FreeBSD: head/devel/glibmm-reference/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/glibmm-reference/Makefile 453601 2017-11-06 09:04:34Z amdmi3 $
 
 PORTREVISION=	0
 
@@ -22,6 +22,5 @@ do-install:
 .  for d in docs examples
 	@cd ${WRKSRC}/${d} && ${SETENV} ${MAKE_ENV} ${MAKE_CMD} ${MAKE_ARGS} install
 .  endfor
-
 
 .include "${.CURDIR}/../../devel/glib20-reference/bsd.gnome-reference.mk"

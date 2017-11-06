@@ -1,5 +1,5 @@
 # Created by: stas
-# $FreeBSD: head/lang/rubinius/Makefile 451108 2017-10-03 02:33:08Z ashish $
+# $FreeBSD: head/lang/rubinius/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	rubinius
 PORTVERSION=	3.86
@@ -11,7 +11,7 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 MAINTAINER=	ashish@FreeBSD.org
 COMMENT=	LLVM based ruby language implementation
 
-LICENSE=	MPL
+LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/bundle:sysutils/rubygem-bundler \

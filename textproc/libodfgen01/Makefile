@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/libodfgen01/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/textproc/libodfgen01/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	libodfgen
 PORTVERSION=	0.1.6
@@ -10,7 +10,7 @@ PKGNAMESUFFIX=	01
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Library for generating documents in Open Document Format (ODF)
 
-LICENSE=	LGPL21 MPL
+LICENSE=	LGPL21 MPL20
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	librevenge-0.0.so:textproc/librevenge

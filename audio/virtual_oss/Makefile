@@ -1,8 +1,8 @@
 # Created by: Hans Petter Selasky <hselasky@FreeBSD.org>
-# $FreeBSD: head/audio/virtual_oss/Makefile 447350 2017-08-04 18:15:29Z kwm $
+# $FreeBSD: head/audio/virtual_oss/Makefile 453472 2017-11-04 16:39:13Z hselasky $
 
 PORTNAME=	virtual_oss
-PORTVERSION=	1.1.3
+PORTVERSION=	1.1.5
 CATEGORIES=	audio
 MASTER_SITES=	http://www.selasky.org/hans_petter/distfiles/ \
 		http://home.selasky.org:8192/distfiles/

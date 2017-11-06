@@ -1,5 +1,5 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/emulators/wine-gecko-devel/Makefile 417609 2016-06-26 19:12:02Z gerald $
+# $FreeBSD: head/emulators/wine-gecko-devel/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	wine-gecko
 DISTVERSION=	2.47
@@ -13,7 +13,7 @@ EXTRACT_ONLY=
 MAINTAINER=	gerald@FreeBSD.org
 COMMENT=	Gecko Layout Engine for Wine development branch (HTML support)
 
-LICENSE=	MPL GPLv2 GPLv3 LGPL21 LGPL3
+LICENSE=	MPL20 GPLv2 GPLv3 LGPL21 LGPL3
 LICENSE_COMB=	multi
 
 NO_BUILD=	yes

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-cli-helpers/Makefile 447151 2017-08-02 18:35:33Z sunpoet $
+# $FreeBSD: head/devel/py-cli-helpers/Makefile 453422 2017-11-03 20:27:27Z sunpoet $
 
 PORTNAME=	cli-helpers
-PORTVERSION=	0.2.3
+PORTVERSION=	1.0.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,10 +15,11 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pygments>=1.6:textproc/py-pygments \
+		${PYTHON_PKGNAMEPREFIX}tabulate>=0.8.0:devel/py-tabulate \
 		${PYTHON_PKGNAMEPREFIX}terminaltables>=3.0.0:textproc/py-terminaltables
 
 NO_ARCH=	yes
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 USES=		python
 
 .include <bsd.port.pre.mk>

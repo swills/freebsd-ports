@@ -1,5 +1,5 @@
 # Created by: Tom McLaughlin <tmclaugh@sdf.lonestar.org>
-# $FreeBSD: head/x11-toolkits/libgdiplus/Makefile 438077 2017-04-09 08:07:00Z dbn $
+# $FreeBSD: head/x11-toolkits/libgdiplus/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	libgdiplus
 PORTVERSION=	4.2
@@ -10,7 +10,7 @@ MASTER_SITES=	http://download.mono-project.com/sources/${PORTNAME}/
 MAINTAINER=	mono@FreeBSD.org
 COMMENT=	GDI+ API for System.Windows.Forms in Mono
 
-LICENSE=	MPL
+LICENSE=	MPL11
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libtiff.so:graphics/tiff \
