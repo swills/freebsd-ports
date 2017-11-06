@@ -1,5 +1,5 @@
 # Created by: dsh@vlink.ru
-# $FreeBSD: head/www/jesred/Makefile 364158 2014-08-06 09:11:57Z olgeni $
+# $FreeBSD: head/www/jesred/Makefile 453458 2017-11-04 13:07:41Z zi $
 
 PORTNAME=	jesred
 PORTVERSION=	1.2.1
@@ -9,7 +9,7 @@ MASTER_SITES=	http://www.linofee.org/~jel/webtools/src/ \
 		http://www.acad.bg/ftp/pub/src/misc/
 DISTNAME=	jesred-1.2pl1
 
-MAINTAINER=	dsh@vlink.ru
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Redirector for Squid
 
 do-install:

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/libabw/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/textproc/libabw/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	libabw
 PORTVERSION=	0.1.1
@@ -9,7 +9,7 @@ MASTER_SITES=	LODEV/${PORTNAME}
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Library providing ability to interpret Abiword documents
 
-LICENSE=	MPL
+LICENSE=	MPL20
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/algorithm/string.hpp:devel/boost-libs
 LIB_DEPENDS=	librevenge-0.0.so:textproc/librevenge

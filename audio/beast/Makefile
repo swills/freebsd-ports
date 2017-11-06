@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/audio/beast/Makefile 452043 2017-10-14 05:59:19Z tobik $
+# $FreeBSD: head/audio/beast/Makefile 453470 2017-11-04 15:02:43Z gerald $
 
 PORTNAME=	beast
 PORTVERSION=	0.7.8
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Powerful music composition and modular synthesis application
 
 LICENSE=	LGPL21
+
+DEPRECATED=	4.5 years old version, six versions behind, requires old toolchain, and unmaintained.
+EXPIRATION_DATE=2018-01-04
 
 LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 		libmad.so:audio/libmad \

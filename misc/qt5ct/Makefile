@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/qt5ct/Makefile 442137 2017-05-31 06:31:11Z tcberner $
+# $FreeBSD: head/misc/qt5ct/Makefile 453521 2017-11-05 08:00:29Z tcberner $
 
 PORTNAME=	qt5ct
-PORTVERSION=	0.33
+DISTVERSION=	0.34
 CATEGORIES=	misc
 MASTER_SITES=	SF/${PORTNAME}
 
@@ -19,6 +19,7 @@ USE_QT5=	core dbus gui svg widgets buildtools_build \
 USE_GL=	egl gl
 USE_XORG=	x11 xext xrender
 USE_GNOME=	glib20
+USE_LDCONFIG=	yes
 
 OPTIONS_DEFINE=	DOCS
 

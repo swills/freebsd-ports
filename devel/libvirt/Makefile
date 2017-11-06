@@ -1,8 +1,8 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/devel/libvirt/Makefile 452145 2017-10-15 13:31:09Z novel $
+# $FreeBSD: head/devel/libvirt/Makefile 453410 2017-11-03 16:09:01Z novel $
 
 PORTNAME=	libvirt
-PORTVERSION=	3.8.0
+PORTVERSION=	3.9.0
 CATEGORIES=	devel
 MASTER_SITES=	http://libvirt.org/sources/ \
 		ftp://libvirt.org/libvirt/
@@ -141,7 +141,7 @@ post-install:
 	@${RMDIR} ${STAGEDIR}${EXAMPLESDIR}/networks/autostart
 	@${MKDIR} ${STAGEDIR}${ETCDIR}/qemu/networks/autostart
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-.for doc in AUTHORS ChangeLog INSTALL NEWS README TODO
+.for doc in AUTHORS ChangeLog INSTALL NEWS README
 	${INSTALL_DATA} ${WRKSRC}/${doc} ${STAGEDIR}${DOCSDIR}
 .endfor
 

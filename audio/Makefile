@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 453324 2017-11-01 22:59:24Z yuri $
+# $FreeBSD: head/audio/Makefile 453486 2017-11-04 20:57:49Z yuri $
 #
 
     COMMENT = Audio tools
@@ -330,6 +330,7 @@
     SUBDIR += id3v2
     SUBDIR += idjc
     SUBDIR += ifp-line
+    SUBDIR += infamous-plugins-lv2
     SUBDIR += ir-lv2
     SUBDIR += jack
     SUBDIR += jack-keyboard
@@ -698,6 +699,7 @@
     SUBDIR += rosegarden
     SUBDIR += rplay
     SUBDIR += rsynth
+    SUBDIR += rtaudio
     SUBDIR += rtmidi
     SUBDIR += rubberband
     SUBDIR += ruby-smf

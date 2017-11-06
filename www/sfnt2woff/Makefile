@@ -1,5 +1,5 @@
 # Created by: Andrey Chernov <ache@FreeBSD.org>
-# $FreeBSD: head/www/sfnt2woff/Makefile 353633 2014-05-10 23:45:09Z ache $
+# $FreeBSD: head/www/sfnt2woff/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	sfnt2woff
 PORTVERSION=	20091004
@@ -10,7 +10,7 @@ DISTNAME=	woff-code-latest
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Convert TTF/OTF fonts to WOFF web embeddable format and back
 
-LICENSE=	GPLv2 LGPL21 MPL
+LICENSE=	GPLv2 LGPL21 MPL11
 LICENSE_COMB=	multi
 
 NO_WRKSUBDIR=	yes

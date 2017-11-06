@@ -1,8 +1,8 @@
 # Created by: Murilo Opsfelder <mopsfelder@gmail.com>
-# $FreeBSD: head/www/p5-Mojolicious/Makefile 453252 2017-10-31 21:37:22Z adamw $
+# $FreeBSD: head/www/p5-Mojolicious/Makefile 453555 2017-11-05 18:28:58Z adamw $
 
 PORTNAME=	Mojolicious
-PORTVERSION=	7.51
+PORTVERSION=	7.54
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -15,12 +15,12 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 TEST_DEPENDS=	p5-Role-Tiny>=2.000001:devel/p5-Role-Tiny
 
-OPTIONS_DEFINE=	EV IPV6 TLS
-OPTIONS_DEFAULT=EV TLS
-
 NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+
+OPTIONS_DEFINE=	EV IPV6 TLS
+OPTIONS_DEFAULT=EV TLS
 
 EV_DESC=		High-performance event loop via devel/p5-EV
 EV_BUILD_DEPENDS=	p5-EV>=4:devel/p5-EV

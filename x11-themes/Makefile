@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/Makefile 450763 2017-09-27 16:00:42Z tcberner $
+# $FreeBSD: head/x11-themes/Makefile 453596 2017-11-06 07:43:50Z araujo $
 #
 
     COMMENT = X11 themes
@@ -124,6 +124,7 @@
     SUBDIR += kf5-kemoticons
     SUBDIR += kf5-kiconthemes
     SUBDIR += kf5-oxygen-icons5
+    SUBDIR += lumina-themes
     SUBDIR += lxappearance
     SUBDIR += lxde-icon-theme
     SUBDIR += mate-backgrounds

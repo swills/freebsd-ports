@@ -1,13 +1,12 @@
-# Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/biology/py-pysam/Makefile 452904 2017-10-26 05:30:35Z tcberner $
+# $FreeBSD: head/biology/py-pysam/Makefile 453556 2017-11-05 19:12:28Z yuri $
 
 PORTNAME=	pysam
-DISTVERSION=	0.12.0.1
+DISTVERSION=	0.13
 CATEGORIES=	biology python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Python module for reading, manipulating and writing genomic data sets
 
 LICENSE=	MIT
@@ -18,5 +17,8 @@ RUN_DEPENDS=	cython:lang/cython
 
 USES=		gmake python
 USE_PYTHON=	autoplist distutils
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/pysam/*.so
 
 .include <bsd.port.mk>

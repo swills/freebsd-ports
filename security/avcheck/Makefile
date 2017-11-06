@@ -1,12 +1,12 @@
 # Created by: dsh@vlink.ru
-# $FreeBSD: head/security/avcheck/Makefile 396377 2015-09-08 12:31:42Z danfe $
+# $FreeBSD: head/security/avcheck/Makefile 453458 2017-11-04 13:07:41Z zi $
 
 PORTNAME=	avcheck
 PORTVERSION=	0.91
 CATEGORIES=	security
 MASTER_SITES=	http://www.corpit.ru/ftp/avcheck/
 
-MAINTAINER=	dsh@vlink.ru
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple antivirus solution for a mail system
 
 MAKE_ARGS=	CC="${CC}" CFLAGS="${CFLAGS}"

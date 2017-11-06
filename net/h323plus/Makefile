@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/h323plus/Makefile 427552 2016-12-02 11:58:21Z mat $
+# $FreeBSD: head/net/h323plus/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	h323plus
 PORTVERSION=	1.26.5
@@ -10,7 +10,8 @@ DISTNAME=	${PORTNAME}-v${PORTVERSION:S/./_/g}
 MAINTAINER=	koue@chaosophia.net
 COMMENT=	H323 Video Conferencing library
 
-LICENSE=	MPL
+LICENSE=	MPL10 MPL11
+LICENSE_COMB=	multi
 
 LIB_DEPENDS=	libpt.so:devel/ptlib
 

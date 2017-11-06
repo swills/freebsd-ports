@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/libe-book/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/textproc/libe-book/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	libe-book
 PORTVERSION=	0.1.2
@@ -9,7 +9,7 @@ MASTER_SITES=	SF/libebook/${PORTNAME}-${PORTVERSION}/
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Library for import of reflowable e-book formats
 
-LICENSE=	MPL
+LICENSE=	MPL20
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/algorithm/string.hpp:devel/boost-libs
 LIB_DEPENDS=	libicui18n.so:devel/icu \

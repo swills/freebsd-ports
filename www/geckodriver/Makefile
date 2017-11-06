@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/geckodriver/Makefile 452378 2017-10-18 19:13:19Z tcberner $
+# $FreeBSD: head/www/geckodriver/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	geckodriver
 DISTVERSIONPREFIX=	v
@@ -8,7 +8,7 @@ CATEGORIES=	www
 MAINTAINER=	daniel@blodan.se
 COMMENT=	Proxy for using WebDriver clients with Gecko-based browsers
 
-LICENSE=	MPL
+LICENSE=	MPL20
 
 USES=		cargo
 USE_GITHUB=	yes

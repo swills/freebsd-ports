@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/fastd/Makefile 452629 2017-10-22 10:09:33Z vsevolod $
+# $FreeBSD: head/security/fastd/Makefile 453533 2017-11-05 09:46:57Z antoine $
 
 PORTNAME=		fastd
 PORTVERSION=		18
@@ -11,6 +11,8 @@ COMMENT=		Fast and Secure Tunnelling Daemon
 
 LICENSE=		BSD2CLAUSE
 LICENSE_FILE=		${WRKSRC}/COPYRIGHT
+
+BROKEN=			fails to build
 
 LIB_DEPENDS=		libjson-c.so:devel/json-c       \
 			libsodium.so:security/libsodium \

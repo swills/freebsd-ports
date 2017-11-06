@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llbuild/Makefile 452958 2017-10-26 22:34:30Z jonathan $
+# $FreeBSD: head/devel/llbuild/Makefile 453532 2017-11-05 09:45:06Z antoine $
 
 PORTNAME=		llbuild
 DISTVERSIONPREFIX=	swift-DEVELOPMENT-
@@ -12,6 +12,8 @@ COMMENT=	Low-level build system, used by the Swift Package Manager
 LICENSE=	APACHE20 BSD3CLAUSE NCSA
 LICENSE_COMB=	multi
 LICENSE_FILE_APACHE20=	${WRKSRC}/LICENSE.txt
+
+BROKEN=		checksum and size mismatch
 
 BUILD_DEPENDS=	llvm-lit-devel:devel/llvm-devel
 LIB_DEPENDS=	libsqlite3.so:databases/sqlite3

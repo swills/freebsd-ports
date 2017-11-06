@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/consul/Makefile 449980 2017-09-17 01:43:06Z swills $
+# $FreeBSD: head/sysutils/consul/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	consul
 PORTVERSION=	0.9.3
@@ -9,7 +9,7 @@ CATEGORIES=	sysutils
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Service discovery and configuration made easy
 
-LICENSE=	MPL
+LICENSE=	MPL20
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/go:lang/go
 

@@ -1,5 +1,5 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/science/py-tensorflow/Makefile 447979 2017-08-15 12:08:02Z lwhsu $
+# $FreeBSD: head/science/py-tensorflow/Makefile 453552 2017-11-05 16:43:30Z antoine $
 
 PORTNAME=	tensorflow
 PORTVERSION=	1.2.1
@@ -11,6 +11,8 @@ MAINTAINER=	amutu@amutu.com
 COMMENT=	Computation using data flow graphs for scalable machine learning
 
 LICENSE=	APACHE20
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}wheel>=0.29.0:devel/py-wheel \
 		${PYTHON_PKGNAMEPREFIX}numpy>=1.11.2:math/py-numpy \

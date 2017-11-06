@@ -1,8 +1,8 @@
 # Created by: will
-# $FreeBSD: head/ftp/bftpd/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/ftp/bftpd/Makefile 453586 2017-11-06 02:35:28Z danilo $
 
 PORTNAME=	bftpd
-PORTVERSION=	4.4
+PORTVERSION=	4.6
 CATEGORIES=	ftp
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

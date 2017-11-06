@@ -1,8 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/grpc/Makefile 452691 2017-10-23 06:30:34Z vanilla $
+# $FreeBSD: head/devel/grpc/Makefile 453439 2017-11-04 02:07:10Z vanilla $
 
 PORTNAME=	grpc
-PORTVERSION=	1.6.7
+PORTVERSION=	1.7.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libgflags.so:devel/gflags \
 
 USES=		cmake localbase:ldflags perl5 pkgconfig ssl
 USE_GITHUB=	yes
-GH_TUPLE=	google:benchmark:v1.2.0:benchmark/third_party/benchmark
+GH_TUPLE=	google:benchmark:v1.3.0:benchmark/third_party/benchmark
 USE_LDCONFIG=	yes
 USE_PERL5=	build
 PLIST_SUB+=	SOVERSION=${PORTVERSION}

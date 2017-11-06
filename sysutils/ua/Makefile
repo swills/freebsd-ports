@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/ua/Makefile 421656 2016-09-10 03:41:00Z marino $
+# $FreeBSD: head/sysutils/ua/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	ua
 PORTVERSION=	1.0.1
@@ -7,7 +7,7 @@ CATEGORIES=	sysutils
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Finds sets of identical files
 
-LICENSE=	MPL
+LICENSE=	MPL11
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	euedge

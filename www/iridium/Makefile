@@ -1,5 +1,5 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/www/iridium/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/www/iridium/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	iridium
 PORTVERSION=	58.0
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}${PKGNAMESUFFIX}-${PORTVERSION}
 MAINTAINER=	chromium@FreeBSD.org
 COMMENT=	Iridium browser
 
-LICENSE=	BSD3CLAUSE LGPL21 MPL
+LICENSE=	BSD3CLAUSE LGPL21 MPL11
 LICENSE_COMB=	multi
 
 BUILD_DEPENDS=	gperf:devel/gperf \

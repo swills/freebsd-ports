@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/libmspub01/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/print/libmspub01/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	libmspub
 PORTVERSION=	0.1.2
@@ -10,7 +10,7 @@ PKGNAMESUFFIX=	01
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Library and tools for parsing Microsoft Publisher file format
 
-LICENSE=	LGPL21 MPL GPLv2
+LICENSE=	GPLv2+ LGPL21+ MPL20
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/ptr_container/ptr_map.hpp:devel/boost-libs

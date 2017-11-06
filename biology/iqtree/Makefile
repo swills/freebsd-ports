@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/iqtree/Makefile 452596 2017-10-21 17:40:18Z jrm $
+# $FreeBSD: head/biology/iqtree/Makefile 453620 2017-11-06 14:24:39Z mat $
 
 PORTNAME=	iqtree
 DISTVERSIONPREFIX=	v
@@ -18,8 +18,7 @@ RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/eigen3.pc:math/eigen3
 USES=		cmake compiler:openmp
 USE_GITHUB=	yes
 GH_ACCOUNT=	Cibiv
-
-WRKSRC=		${WRKDIR}/IQ-TREE-${DISTVERSION}
+GH_PROJECT=	IQ-TREE
 
 PLIST_FILES=	bin/iqtree
 PORTEXAMPLES=	example.cf example.nex example.phy models.nex

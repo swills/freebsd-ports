@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 452741 2017-10-23 20:46:08Z se $
+# $FreeBSD: head/security/Makefile 453537 2017-11-05 11:40:37Z dinoex $
 #
 
     COMMENT = Security tools
@@ -1213,6 +1213,7 @@
     SUBDIR += tcpcrypt
     SUBDIR += testssl.sh
     SUBDIR += tinc
+    SUBDIR += tinc-devel
     SUBDIR += tinyca
     SUBDIR += titus
     SUBDIR += tls-check

@@ -1,5 +1,5 @@
 # Created by: J.R. Oldroyd <fbsd@opal.com>
-# $FreeBSD: head/multimedia/tstools/Makefile 395432 2015-08-27 16:50:21Z amdmi3 $
+# $FreeBSD: head/multimedia/tstools/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	tstools
 DISTVERSION=	1_11
@@ -9,7 +9,7 @@ MASTER_SITES=	BERLIOS
 MAINTAINER=	fbsd@opal.com
 COMMENT=	MPEG transport, program, and elementary stream tools
 
-LICENSE=	MPL
+LICENSE=	MPL11
 
 MAKE_JOBS_UNSAFE=	yes
 

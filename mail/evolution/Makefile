@@ -1,5 +1,5 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/mail/evolution/Makefile 450556 2017-09-25 00:02:36Z jbeich $
+# $FreeBSD: head/mail/evolution/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	evolution
 PORTVERSION=	3.24.2
@@ -11,7 +11,7 @@ DIST_SUBDIR=	gnome3
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Integrated mail, calendar and address book distributed suite
 
-LICENSE=	GFDL GPLv2+ LGPL21+ MPL OPENLDAP
+LICENSE=	GFDL GPLv2+ LGPL21+ MPL11 OPENLDAP
 LICENSE_COMB=	multi
 LICENSE_NAME_OPENLDAP=	OpenLDAP Public License
 LICENSE_FILE_OPENLDAP=	${WRKSRC}/COPYING.OPENLDAP

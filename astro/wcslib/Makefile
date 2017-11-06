@@ -1,9 +1,8 @@
 # Created by: Tony Maher <tonymaher@optusnet.com.au>
-# $FreeBSD: head/astro/wcslib/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/astro/wcslib/Makefile 453547 2017-11-05 14:20:11Z danilo $
 
 PORTNAME=	wcslib
-PORTVERSION=	5.16
-PORTREVISION=	2
+PORTVERSION=	5.17
 CATEGORIES=	astro
 MASTER_SITES=	ftp://ftp.atnf.csiro.au/pub/software/wcslib/
 

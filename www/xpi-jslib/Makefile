@@ -1,5 +1,5 @@
 # Created by: Lapo Luchini <lapo@lapo.it>
-# $FreeBSD: head/www/xpi-jslib/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/www/xpi-jslib/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	jslib
 PORTVERSION=	0.1.371
@@ -10,7 +10,7 @@ DISTNAME=	jslib_${PORTVERSION}_lite
 MAINTAINER=	lapo@lapo.it
 COMMENT=	Library of common useful routines for XPI developers
 
-LICENSE=	MPL
+LICENSE=	MPL11
 
 XPI_ID=		{DF8E5247-8E0A-4de6-B393-0735A39DFD80}
 XPI_FILES=	application.ini chrome/jslib.jar chrome/jsliblive/contents.rdf chrome/jsliblive/jsliblive.xul chrome.manifest \

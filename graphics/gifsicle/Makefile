@@ -1,8 +1,8 @@
 # Created by: Brad Hendrickse <bradh@iafrica.com>
-# $FreeBSD: head/graphics/gifsicle/Makefile 412466 2016-04-03 12:02:45Z amdmi3 $
+# $FreeBSD: head/graphics/gifsicle/Makefile 453469 2017-11-04 14:15:55Z vanilla $
 
 PORTNAME=	gifsicle
-PORTVERSION=	1.88
+PORTVERSION=	1.90
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.lcdf.org/gifsicle/
 
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
 
-PORTDOCS=	NEWS README.md
+PORTDOCS=	NEWS.md README.md
 PLIST_FILES=	bin/gifdiff bin/gifsicle \
 		man/man1/gifdiff.1.gz man/man1/gifsicle.1.gz
 

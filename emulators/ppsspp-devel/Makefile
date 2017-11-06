@@ -1,7 +1,7 @@
-# $FreeBSD: head/emulators/ppsspp-devel/Makefile 453023 2017-10-27 20:02:13Z jbeich $
+# $FreeBSD: head/emulators/ppsspp-devel/Makefile 453585 2017-11-06 00:58:29Z jbeich $
 
-DISTVERSION=	1.4.2-564
-DISTVERSIONSUFFIX=	-gfa81dd9c4
+DISTVERSION=	1.4.2-640
+DISTVERSIONSUFFIX=	-gde459e6a1
 PORTREVISION?=	0
 PKGNAMESUFFIX?=	-devel
 

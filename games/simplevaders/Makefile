@@ -1,23 +1,21 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/simplevaders/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/simplevaders/Makefile 453444 2017-11-04 09:04:31Z amdmi3 $
 
 PORTNAME=	simplevaders
-PORTVERSION=	0.8
-PORTREVISION=	10
+PORTVERSION=	0.8.1
 CATEGORIES=	games
-MASTER_SITES=	http://dusted.dk/download/ \
-		http://mirror.amdmi3.ru/distfiles/
+MASTER_SITES=	http://dusted.dk/pages/simplevaders/ \
+		https://mirror.amdmi3.ru/distfiles/
+DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Space-Invaders like 2D space shooter
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3+
 
-USES=		tar:bzip2
+USES=		localbase:ldflags tar:bzip2
 USE_SDL=	sdl mixer image ttf
 USE_GL=		gl glu
-
-WRKSRC=		${WRKDIR}/${PORTNAME}
 
 PLIST_FILES=	bin/${PORTNAME}
 PORTDATA=	*
@@ -25,11 +23,6 @@ PORTDATA=	*
 post-patch:
 	@${REINPLACE_CMD} -e 's|data/|${DATADIR}/|' ${WRKSRC}/main.cpp
 	@${RM} ${WRKSRC}/data/*\~
-
-do-build:
-	(cd ${WRKSRC} && ${CXX} ${CPPFLAGS} ${CXXFLAGS} ${LDFLAGS} main.cpp \
-		-o ${PORTNAME} `${SDL_CONFIG} --cflags --libs` -lSDL_ttf \
-		-lSDL_mixer -lSDL_image -lGL -lGLU)
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin

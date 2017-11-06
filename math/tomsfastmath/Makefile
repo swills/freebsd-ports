@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/tomsfastmath/Makefile 450804 2017-09-28 08:01:04Z gahr $
+# $FreeBSD: head/math/tomsfastmath/Makefile 453620 2017-11-06 14:24:39Z mat $
 
 PORTNAME=	tomsfastmath
 PORTVERSION=	0.13.1
@@ -17,7 +17,6 @@ USES=		compiler:features gmake tar:bzip2
 USE_GITHUB=	yes
 GH_ACCOUNT=	libtom
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 MAKEFILE=	makefile
 ALL_TARGET=	default
 CFLAGS+=	-fPIC

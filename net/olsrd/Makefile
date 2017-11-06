@@ -1,9 +1,8 @@
 # Created by: dave@dogwood.com
-# $FreeBSD: head/net/olsrd/Makefile 434144 2017-02-14 22:24:59Z tijl $
+# $FreeBSD: head/net/olsrd/Makefile 453479 2017-11-04 19:30:37Z joneum $
 
 PORTNAME=	olsrd
-PORTVERSION=	0.9.5
-PORTREVISION=	1
+DISTVERSION=	0.9.6.1
 CATEGORIES=	net
 MASTER_SITES=	http://www.olsr.org/releases/0.9/
 

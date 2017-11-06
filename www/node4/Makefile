@@ -1,5 +1,5 @@
 # Created by: Jin-Sih Lin <linpct@gmail.com>
-# $FreeBSD: head/www/node4/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/www/node4/Makefile 453618 2017-11-06 14:17:56Z bhughes $
 
 PORTNAME=	node
 PORTVERSION=	4.8.5
@@ -32,7 +32,7 @@ USES=		compiler:c++11-lib gmake python:2 pkgconfig localbase
 HAS_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 
-CONFLICTS_INSTALL=	node[56]-[0-9]* node01[02]-[0-9]* node-[0-9]* node-devel-[0-9]* iojs-[0-9]*
+CONFLICTS_INSTALL=	node[568]-[0-9]* node-[0-9]*
 
 ONLY_FOR_ARCHS=	amd64 i386
 CONFIGURE_ARGS=	--prefix=${PREFIX_RELDEST} \

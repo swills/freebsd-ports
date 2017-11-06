@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/textproc/consul-template/Makefile 452195 2017-10-16 13:44:31Z swills $
+# $FreeBSD: head/textproc/consul-template/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	consul-template
 PORTVERSION=	0.19.3
@@ -9,7 +9,7 @@ CATEGORIES=	textproc
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Generic template rendering and notifications with Consul
 
-LICENSE=	MPL
+LICENSE=	MPL20
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/go:lang/go
 

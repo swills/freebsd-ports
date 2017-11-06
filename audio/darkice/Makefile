@@ -1,8 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/audio/darkice/Makefile 423002 2016-09-30 17:08:51Z vanilla $
+# $FreeBSD: head/audio/darkice/Makefile 453593 2017-11-06 07:18:57Z riggs $
 
 PORTNAME=	darkice
 PORTVERSION=	1.3
+PORTREVISION=	1
 CATEGORIES=	audio net
 MASTER_SITES=	SF
 

@@ -1,5 +1,5 @@
 # Created by: Artyom Mirgorodskiy <artyom.mirgorodsky@gmail.com>
-# $FreeBSD: head/security/linux-c6-nss/Makefile 451326 2017-10-05 17:01:04Z tijl $
+# $FreeBSD: head/security/linux-c6-nss/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	nss
 PORTVERSION=	3.28.4
@@ -15,7 +15,7 @@ SRC_DISTFILES=	${DISTNAME}${SRC_SUFX}:SOURCE \
 MAINTAINER=	emulation@FreeBSD.org
 COMMENT=	Network Security Services (Linux CentOS ${LINUX_DIST_VER})
 
-LICENSE=	MPL
+LICENSE=	MPL20
 
 DESCR=		${.CURDIR}/../${PORTNAME}/pkg-descr
 RPMVERSION=	4.el6_9

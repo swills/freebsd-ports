@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/librevenge/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/textproc/librevenge/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	librevenge
 PORTVERSION=	0.0.4
@@ -9,7 +9,7 @@ MASTER_SITES=	SF/libwpd/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Base library for writing document import filters
 
-LICENSE=	LGPL21 MPL
+LICENSE=	LGPL21 MPL20
 LICENSE_COMB=	dual
 
 USES=		gmake libtool pathfix tar:xz

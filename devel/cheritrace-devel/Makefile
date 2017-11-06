@@ -1,5 +1,5 @@
 # Created by: David Chisnall <theraven@FreeBSD.org>
-# $FreeBSD: head/devel/cheritrace-devel/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/cheritrace-devel/Makefile 453531 2017-11-05 09:43:47Z antoine $
 
 PORTNAME=	cheritrace
 PORTVERSION=	0.0.1
@@ -12,6 +12,7 @@ COMMENT=	Library and tool for interacting with CHERI streamtraces
 BUILD_DEPENDS=	llvm-config-cheri:devel/llvm-cheri
 LIB_DEPENDS=	libLLVMCore.so:devel/llvm-cheri
 
+BROKEN=		fails to build
 BROKEN_powerpc64=	fails to compile: addressmap.cc: 'stoll' is not a member of 'std'
 
 USES=		cmake compiler:c++11-lib

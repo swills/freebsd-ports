@@ -1,8 +1,8 @@
-# $FreeBSD: head/biology/diamond/Makefile 448009 2017-08-15 20:45:08Z jrm $
+# $FreeBSD: head/biology/diamond/Makefile 453387 2017-11-03 03:45:01Z jrm $
 
 PORTNAME=	diamond
-DISTVERSIONPREFIX=v
-DISTVERSION=	0.9.10
+DISTVERSIONPREFIX=	v
+DISTVERSION=	0.9.11
 CATEGORIES=	biology
 
 MAINTAINER=	jrm@FreeBSD.org

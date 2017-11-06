@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 453351 2017-11-02 16:28:06Z dvl $
+# $FreeBSD: head/www/Makefile 453618 2017-11-06 14:17:56Z bhughes $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -546,6 +546,7 @@
     SUBDIR += node
     SUBDIR += node4
     SUBDIR += node6
+    SUBDIR += node8
     SUBDIR += nostromo
     SUBDIR += novnc
     SUBDIR += novnc-websockify
@@ -1499,6 +1500,7 @@
     SUBDIR += podcastamatic
     SUBDIR += polipo
     SUBDIR += pound
+    SUBDIR += privatebin
     SUBDIR += privoxy
     SUBDIR += protovis
     SUBDIR += pserv

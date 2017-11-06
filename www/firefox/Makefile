@@ -1,10 +1,10 @@
 # Created by: Alan Eldridge <alane@FreeBSD.org>
-# $FreeBSD: head/www/firefox/Makefile 453085 2017-10-28 23:47:31Z jbeich $
+# $FreeBSD: head/www/firefox/Makefile 453592 2017-11-06 06:41:55Z jbeich $
 
 PORTNAME=	firefox
 DISTVERSION=	56.0.2
 DISTVERSIONSUFFIX=.source
-PORTREVISION=	5
+PORTREVISION=	7
 PORTEPOCH=	1
 CATEGORIES=	www ipv6
 MASTER_SITES=	MOZILLA/${PORTNAME}/releases/${DISTVERSION}/source \
@@ -27,7 +27,6 @@ BUILD_DEPENDS=	nspr>=4.16:devel/nspr \
 		v4l_compat>0:multimedia/v4l_compat \
 		autoconf-2.13:devel/autoconf213 \
 		yasm:devel/yasm \
-		llvm40>0:devel/llvm40 \
 		zip:archivers/zip
 #		soundtouch>=1.9.0:audio/soundtouch \
 
@@ -44,8 +43,6 @@ USES=		tar:xz
 
 FIREFOX_ICON=		${MOZILLA}.png
 FIREFOX_ICON_SRC=	${PREFIX}/lib/${MOZILLA}/browser/chrome/icons/default/default48.png
-MOZ_EXPORT=	BINDGEN_CFLAGS="-isystem${LOCALBASE}/include/nspr \
-			-isystem${LOCALBASE}/include/pixman-1" # XXX bug 1341234
 MOZ_OPTIONS=	--enable-application=browser \
 		--enable-official-branding
 

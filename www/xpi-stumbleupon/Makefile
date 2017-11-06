@@ -1,5 +1,5 @@
 # Created by: Lapo Luchini <lapo@lapo.it>
-# $FreeBSD: head/www/xpi-stumbleupon/Makefile 364158 2014-08-06 09:11:57Z olgeni $
+# $FreeBSD: head/www/xpi-stumbleupon/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	stumbleupon
 PORTVERSION=	3.76
@@ -9,7 +9,7 @@ CATEGORIES=	www
 MAINTAINER=	lapo@lapo.it
 COMMENT=	Collaborative surfing tool extension
 
-LICENSE=	MPL
+LICENSE=	MPL11
 
 XPI_NUM=	138
 XPI_ID=		{AE93811A-5C9A-4d34-8462-F7B864FC4696}

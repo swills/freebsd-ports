@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 451925 2017-10-12 19:00:13Z feld $
+# $FreeBSD: head/databases/Makefile 453390 2017-11-03 07:12:51Z rene $
 #
 
     COMMENT = Databases and related software
@@ -739,10 +739,8 @@
     SUBDIR += proftpd-mod_sql_postgres
     SUBDIR += proftpd-mod_sql_sqlite
     SUBDIR += proftpd-mod_sql_tds
-    SUBDIR += puppetdb-terminus3
     SUBDIR += puppetdb-terminus4
     SUBDIR += puppetdb-terminus5
-    SUBDIR += puppetdb3
     SUBDIR += puppetdb4
     SUBDIR += puppetdb5
     SUBDIR += pure-sql3

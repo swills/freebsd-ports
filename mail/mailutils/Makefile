@@ -1,10 +1,10 @@
 # Created by: Attila Nagy <bra@fsn.hu>
-# $FreeBSD: head/mail/mailutils/Makefile 452420 2017-10-19 13:33:34Z danfe $
+# $FreeBSD: head/mail/mailutils/Makefile 453614 2017-11-06 12:59:17Z danfe $
 
 PORTNAME=	mailutils
-PORTVERSION=	3.3
+PORTVERSION=	3.4
 CATEGORIES=	mail
-MASTER_SITES=	GNU_ALPHA GNU
+MASTER_SITES=	GNU GNU_ALPHA
 
 MAINTAINER=	zeus@gnu.org.ua
 COMMENT=	Utilities, daemons, and filters for processing e-mail
@@ -19,7 +19,7 @@ USE_LDCONFIG=	yes
 USE_RC_SUBR=	comsatd imap4d pop3d
 INSTALL_TARGET=	install-strip
 
-PLIST_SUB+=	LIBVERSION=5.0.5
+PLIST_SUB+=	LIBVERSION=5.0.5 VERSION=${PORTVERSION}
 
 INFO=		${PORTNAME}
 PORTDOCS=	AUTHORS ChangeLog NEWS README* THANKS TODO

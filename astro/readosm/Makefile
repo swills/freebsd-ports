@@ -1,5 +1,5 @@
 # Created by: Loïc BARTOLETTI <coder@tuxfamily.org>
-# $FreeBSD: head/astro/readosm/Makefile 443096 2017-06-10 14:54:34Z dbaio $
+# $FreeBSD: head/astro/readosm/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	readosm
 PORTVERSION=	1.0.0
@@ -10,7 +10,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}e
 MAINTAINER=	lbartoletti@tuxfamily.org
 COMMENT=	Extract valid data from within an Open Street Map input file
 
-LICENSE=	MPL LGPL21 GPLv2
+LICENSE=	MPL11 LGPL21 GPLv2
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libexpat.so:textproc/expat2

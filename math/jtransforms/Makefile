@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/jtransforms/Makefile 420866 2016-08-25 17:14:09Z jkim $
+# $FreeBSD: head/math/jtransforms/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	jtransforms
 PORTVERSION=	2.4
@@ -9,7 +9,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Multithreaded FFT library written in pure Java
 
-LICENSE=	GPLv2 LGPL20 MPL
+LICENSE=	GPLv2 LGPL20 MPL11
 LICENSE_COMB=	multi
 
 USES=		tar:bzip2

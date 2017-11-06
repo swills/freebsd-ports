@@ -1,5 +1,5 @@
 # Created by: Denis Shaposhnikov <dsh@vlink.ru>
-# $FreeBSD: head/misc/table.el/Makefile 345448 2014-02-21 13:56:24Z ehaupt $
+# $FreeBSD: head/misc/table.el/Makefile 453458 2017-11-04 13:07:41Z zi $
 
 PORTNAME=	table.el
 PORTVERSION=	1.5.54
@@ -8,7 +8,7 @@ MASTER_SITES=	SF/table/table/${PORTVERSION}
 DISTNAME=	table-${PORTVERSION}.el.gz
 EXTRACT_SUFX=	# empty
 
-MAINTAINER=	dsh@vlink.ru
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Create and edit WYSIWYG text based embedded tables in Emacs
 
 NO_BUILD=	yes

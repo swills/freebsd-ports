@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-editdistance/Makefile 438626 2017-04-16 11:03:13Z sunpoet $
+# $FreeBSD: head/devel/py-editdistance/Makefile 453565 2017-11-05 21:16:19Z sunpoet $
 
 PORTNAME=	editdistance
-PORTVERSION=	0.3.1
+PORTVERSION=	0.4
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,12 +1,10 @@
-# Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/math/cadabra2/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/math/cadabra2/Makefile 453475 2017-11-04 18:50:45Z yuri $
 
 PORTNAME=	cadabra2
-PORTVERSION=	2.1.5
-PORTREVISION=	3
+DISTVERSION=	2.1.6
 CATEGORIES=	math
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Computer algebra system for solving field theory problems
 
 LICENSE=	LGPL3

@@ -1,5 +1,5 @@
 # Created by: Kimura Fuyuki <fuyuki@mj.0038.net>
-# $FreeBSD: head/textproc/saxon/Makefile 412379 2016-04-02 02:53:44Z amdmi3 $
+# $FreeBSD: head/textproc/saxon/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	saxon
 PORTVERSION=	6.5.5
@@ -10,7 +10,7 @@ DISTNAME=	${PORTNAME}${PORTVERSION:S/./-/g}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	XSLT 1.0 processor for Java
 
-LICENSE=	MPL
+LICENSE=	MPL10
 
 USES=		zip
 USE_JAVA=	yes

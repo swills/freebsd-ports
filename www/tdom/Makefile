@@ -1,5 +1,5 @@
 # Created by: Aldert Nooitgedagt
-# $FreeBSD: head/www/tdom/Makefile 431796 2017-01-18 13:20:31Z tijl $
+# $FreeBSD: head/www/tdom/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	tDOM
 PORTVERSION=	0.8.3
@@ -9,7 +9,7 @@ MASTER_SITES=	GHC http://mirrors.rit.edu/zi/
 MAINTAINER=	mi@aldan.algebra.com
 COMMENT=	High performance XML data processing with Tcl (ARGS for OpenACS)
 
-LICENSE=	MPL MIT
+LICENSE=	MPL11 MIT
 LICENSE_COMB=	multi
 LICENSE_FILE_MIT=	${WRKSRC}/expat/COPYING
 

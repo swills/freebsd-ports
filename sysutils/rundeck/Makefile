@@ -1,13 +1,13 @@
-# $FreeBSD: head/sysutils/rundeck/Makefile 440016 2017-05-03 13:56:43Z miwi $
+# $FreeBSD: head/sysutils/rundeck/Makefile 453480 2017-11-04 19:32:59Z joneum $
 
 PORTNAME=	rundeck
-PORTVERSION=	2.8.2
+DISTVERSION=	2.10.0
 CATEGORIES=	sysutils java
 MASTER_SITES=	http://dl.bintray.com/rundeck/rundeck-maven/
 DISTNAME=	rundeck-launcher-${PORTVERSION}
 EXTRACT_SUFX=	.jar
 
-MAINTAINER=	c.kworr@gmail.com
+MAINTAINER=	arcade@b1t.name
 COMMENT=	Web-console for dispatching commands and scripts to your nodes
 
 LICENSE=	APACHE20

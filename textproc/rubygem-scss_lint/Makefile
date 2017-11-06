@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-scss_lint/Makefile 451673 2017-10-10 11:17:13Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-scss_lint/Makefile 453575 2017-11-05 21:17:19Z sunpoet $
 
 PORTNAME=	scss_lint
-PORTVERSION=	0.55.0
+PORTVERSION=	0.56.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -12,7 +12,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
 RUN_DEPENDS=	rubygem-rake>=0.9:devel/rubygem-rake \
-		rubygem-sass34>=0:textproc/rubygem-sass34
+		rubygem-sass>=3.5.3:textproc/rubygem-sass
 
 NO_ARCH=	yes
 USE_RUBY=	yes

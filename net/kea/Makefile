@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kea/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/net/kea/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	kea
 PORTVERSION=	1.2.0
@@ -9,7 +9,7 @@ MASTER_SITES=	ISC/kea/${PORTVERSION}
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Alternative DHCP implementation by ISC
 
-LICENSE=	MPL
+LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	liblog4cplus.so:devel/log4cplus \

@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/multimedia/mp4v2/Makefile 422324 2016-09-17 13:27:04Z riggs $
+# $FreeBSD: head/multimedia/mp4v2/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	mp4v2
 PORTVERSION=	1.9.1
@@ -10,7 +10,7 @@ MASTER_SITES=	LOCAL/riggs/mp4v2
 MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	Library and tools to read, create, and modify mp4 files
 
-LICENSE=	MPL
+LICENSE=	MPL11
 
 CONFLICTS=	mpeg4ip-libmp4v2-[0-9.]*
 USES=		compiler gmake libtool tar:bzip2

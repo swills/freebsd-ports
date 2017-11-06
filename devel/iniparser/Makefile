@@ -1,8 +1,8 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/devel/iniparser/Makefile 421596 2016-09-09 06:00:31Z kevlo $
+# $FreeBSD: head/devel/iniparser/Makefile 453407 2017-11-03 14:23:20Z kevlo $
 
 PORTNAME=	iniparser
-PORTVERSION=	4.0
+PORTVERSION=	4.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -19,13 +19,13 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	ndevilla
 
 PLIST_FILES=	include/dictionary.h include/iniparser.h lib/libiniparser.a \
-		lib/libiniparser.so lib/libiniparser.so.0
+		lib/libiniparser.so lib/libiniparser.so.1
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/src/dictionary.h ${STAGEDIR}${PREFIX}/include
 	${INSTALL_DATA} ${WRKSRC}/src/iniparser.h ${STAGEDIR}${PREFIX}/include
 	${INSTALL_DATA} ${WRKSRC}/libiniparser.a ${STAGEDIR}${PREFIX}/lib
-	${INSTALL_LIB} ${WRKSRC}/libiniparser.so.0 ${STAGEDIR}${PREFIX}/lib
-	@${LN} -sf libiniparser.so.0 ${STAGEDIR}${PREFIX}/lib/libiniparser.so
+	${INSTALL_LIB} ${WRKSRC}/libiniparser.so.1 ${STAGEDIR}${PREFIX}/lib
+	@${LN} -sf libiniparser.so.1 ${STAGEDIR}${PREFIX}/lib/libiniparser.so
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Vladimir Chukharev
-# $FreeBSD: head/devel/py-robotframework-pabot/Makefile 452743 2017-10-23 21:17:58Z dbaio $
+# $FreeBSD: head/devel/py-robotframework-pabot/Makefile 453468 2017-11-04 14:14:37Z dbaio $
 
 PORTNAME=	robotframework-pabot
-PORTVERSION=	0.42
+PORTVERSION=	0.43
 CATEGORIES=	devel www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

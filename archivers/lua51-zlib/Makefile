@@ -1,11 +1,11 @@
 # Created by: Sir l33tname <sirl33tname@gmail.com>
-# $FreeBSD: head/archivers/lua51-zlib/Makefile 452729 2017-10-23 18:27:34Z swills $
+# $FreeBSD: head/archivers/lua51-zlib/Makefile 453431 2017-11-03 20:28:12Z sunpoet $
 
-PORTNAME=	lua51
+PORTNAME=	zlib
 PORTVERSION=	1.2
 DISTVERSIONPREFIX=v
 CATEGORIES=	archivers
-PKGNAMESUFFIX=	-zlib
+PKGNAMEPREFIX=	lua51-
 
 MAINTAINER=	sirl33tname@gmail.com
 COMMENT=	Simple streaming interface to zlib for the Lua Programming Language

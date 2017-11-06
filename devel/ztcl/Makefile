@@ -1,5 +1,5 @@
 # Created by: Denis Shaposhnikov <dsh@vlink.ru>
-# $FreeBSD: head/devel/ztcl/Makefile 413730 2016-04-21 12:45:16Z gahr $
+# $FreeBSD: head/devel/ztcl/Makefile 453458 2017-11-04 13:07:41Z zi $
 
 PORTNAME=	ztcl
 DISTVERSION=	1.0b4
@@ -8,7 +8,7 @@ CATEGORIES=	devel tcl
 MASTER_SITES=	http://download.gna.org/ztcl/1.0/
 DISTNAME=	${PORTNAME}_${DISTVERSION}_src
 
-MAINTAINER=	dsh@vlink.ru
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Zlib extension library for the Tcl
 
 LICENSE=	LGPL21

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/databases/spatialite/Makefile 443096 2017-06-10 14:54:34Z dbaio $
+# $FreeBSD: head/databases/spatialite/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	spatialite
 PORTVERSION=	4.3.0
@@ -10,7 +10,7 @@ DISTNAME=	lib${PORTNAME}-${PORTVERSION}
 MAINTAINER=	lbartoletti@tuxfamily.org
 COMMENT=	Spatial Extensions for SQLite
 
-LICENSE=	MPL LGPL20 GPLv2
+LICENSE=	MPL11 LGPL20 GPLv2
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libgeos_c.so:graphics/geos \

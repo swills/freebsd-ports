@@ -1,5 +1,5 @@
 # Created by: Geoff Garside
-# $FreeBSD: head/net/rabbitmq-c/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/rabbitmq-c/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	rabbitmq-c
 PORTVERSION=	0.0.1
@@ -15,7 +15,7 @@ DIST_SUBDIR=	rabbitmq
 MAINTAINER=	rabbitmq@geoffgarside.co.uk
 COMMENT=	RabbitMQ C AMQP client library
 
-LICENSE=	GPLv2 MPL
+LICENSE=	GPLv2 MPL11
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	python:lang/python \

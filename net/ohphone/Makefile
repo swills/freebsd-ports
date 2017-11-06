@@ -1,5 +1,5 @@
 # Created by: Roger Hardiman <roger@FreeBSD.org>
-# $FreeBSD: head/net/ohphone/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net/ohphone/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	ohphone
 PORTVERSION=	1.4.5
@@ -10,7 +10,7 @@ MASTER_SITES=	ftp://ftp.frm2.tum.de/pub/jpulz/FreeBSD/distfiles/
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	H323 Video Conferencing Program, compatible with NetMeeting
 
-LICENSE=	MPL
+LICENSE=	MPL10
 
 LIB_DEPENDS=	libh323_r.so:net/openh323
 

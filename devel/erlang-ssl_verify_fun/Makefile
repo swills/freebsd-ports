@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/erlang-ssl_verify_fun/Makefile 436141 2017-03-14 09:34:25Z olgeni $
+# $FreeBSD: head/devel/erlang-ssl_verify_fun/Makefile 453397 2017-11-03 11:20:46Z olgeni $
 
 PORTNAME=	ssl_verify_fun
-PORTVERSION=	1.1.2
+PORTVERSION=	1.1.3
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

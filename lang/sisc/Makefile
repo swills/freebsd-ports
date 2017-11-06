@@ -1,5 +1,5 @@
 # Created by: Kimura Fuyuki <fuyuki@hadaly.org>
-# $FreeBSD: head/lang/sisc/Makefile 421199 2016-09-01 09:01:25Z amdmi3 $
+# $FreeBSD: head/lang/sisc/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	sisc
 PORTVERSION=	1.16.6
@@ -10,7 +10,7 @@ MASTER_SITES=	SF/${PORTNAME}/SISC/${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Extensible Java-based Scheme interpreter
 
-LICENSE=	MPL GPLv2+
+LICENSE=	MPL11 GPLv2+
 LICENSE_COMB=	dual
 
 USE_JAVA=	yes

@@ -1,5 +1,5 @@
 # Created by: Yanhui Shen <shen.elf@gmail.com>
-# $FreeBSD: head/audio/mous/Makefile 413590 2016-04-18 17:19:00Z olivierd $
+# $FreeBSD: head/audio/mous/Makefile 453551 2017-11-05 16:40:48Z antoine $
 
 PORTNAME=	mous
 PORTVERSION=	1.1a
@@ -12,6 +12,8 @@ COMMENT=	Simple yet powerful audio player
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
+
+BROKEN=		fails to build
 
 USES=		cmake
 USE_LDCONFIG=	yes

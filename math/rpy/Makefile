@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/rpy/Makefile 446540 2017-07-24 18:26:39Z pawel $
+# $FreeBSD: head/math/rpy/Makefile 453453 2017-11-04 11:43:35Z dbaio $
 
 PORTNAME=	rpy
 PORTVERSION=	1.0.3
@@ -10,7 +10,7 @@ MASTER_SITES=	SF
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python interface to the R Programming Language
 
-LICENSE=	GPLv2 LGPL21 MPL
+LICENSE=	GPLv2 LGPL21 MPL11
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	${PYNUMPY}

@@ -5,6 +5,22 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20171105
+  AFFECTS: users of www/mod_auth_cas
+  AUTHOR: brnrd@FreeBSD.org
+
+  The configuration of mod_auth_cas has changed since the previous
+  version. Visit the https://github.com/apereo/mod_auth_cas page for
+  an overview of all configuration parameters
+
+20171105:
+  AFFECTS: users of www/mod_rpaf2
+  AUTHOR: brnrd@FreeBSD.org
+
+  The configuration of mod_rpaf2 has been heavily modified since version
+  0.6. Have a look at https://github.com/gnif/mod_rpaf/tree/v0.8.4 to 
+  determine what you need to change in your configuration.
+
 20171031:
   AFFECTS: users of editors/vim
   AUTHOR: adamw@FreeBSD.org
@@ -15063,4 +15079,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: head/UPDATING 453244 2017-10-31 17:15:06Z adamw $
+$FreeBSD: head/UPDATING 453543 2017-11-05 12:36:16Z brnrd $

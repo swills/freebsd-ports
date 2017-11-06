@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/mod_pagespeed/Makefile 452767 2017-10-24 13:41:50Z mmokhi $
+# $FreeBSD: head/www/mod_pagespeed/Makefile 453534 2017-11-05 09:56:47Z antoine $
 
 PORTNAME=	mod_pagespeed
 PORTVERSION=	1.12.34.2
@@ -12,6 +12,8 @@ MAINTAINER=	mmokhi@FreeBSD.org
 COMMENT=	Apache module for rewriting web pages to reduce latency
 
 LICENSE=	APACHE20
+
+BROKEN=		fails to configure
 
 BUILD_DEPENDS=	bash:shells/bash \
 		curl:ftp/curl \
