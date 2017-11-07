@@ -11434,6 +11434,7 @@
 @dir(,,700) %%WWWDIR%%/shared/artifacts
 @dir(,,700) %%WWWDIR%%/shared/artifacts/tmp/cache
 @dir(,,700) %%WWWDIR%%/shared/artifacts/tmp/uploads
+@dir(,,700) %%WWWDIR%%/shared/artifacts/tmp/work
 @dir(,,770) %%WWWDIR%%/shared/pages
 @dir(,,700) %%WWWDIR%%/shared/tmp
 @dir(,,700) %%WWWDIR%%/shared/lfs-objects
