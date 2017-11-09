@@ -1,5 +1,4 @@
-# Created by: Viacheslav Mikerov <SlavaMikerov@gmail.com>
-# $FreeBSD: head/devel/libfmt/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/libfmt/Makefile 453704 2017-11-07 21:47:05Z yuri $
 
 PORTNAME=	libfmt
 PORTVERSION=	3.0.1
@@ -10,14 +9,14 @@ MAINTAINER=	SlavaMikerov@gmail.com
 COMMENT=	Fmt is an open-source formatting library for C++
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE.rst
 
+USES=		cmake:outsource compiler:c++11-lib
 USE_GITHUB=	yes
 GH_ACCOUNT=	fmtlib
 GH_PROJECT=	fmt
-
-USES=		cmake:outsource compiler:c++11-lib
-CMAKE_ARGS=	-DFMT_DOC=OFF
+CMAKE_ARGS=	-DFMT_DOC=OFF -DBUILD_SHARED_LIBS=ON
 OPTIONS_DEFINE=	TEST
-TEST_CMAKE_OFF=	-DFMT_TEST=OFF
+TEST_CMAKE_BOOL=	FMT_TEST
 
 .include <bsd.port.mk>

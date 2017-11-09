@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/textproc/zorba/Makefile 450556 2017-09-25 00:02:36Z jbeich $
+# $FreeBSD: head/textproc/zorba/Makefile 453790 2017-11-09 02:31:47Z jbeich $
 
 PORTNAME=	zorba
 PORTVERSION=	2.7.0
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	textproc
 MASTER_SITES=	https://launchpadlibrarian.net/119058962/
 DISTNAME=	${PORTNAME}-src-${PORTVERSION}
@@ -65,6 +65,7 @@ USES+=		python
 WITH_SWIG=	yes
 CMAKE_ARGS+=	-DPYTHON_SWIG_INSTALL_DIR:FILEPATH=${PYTHONPREFIX_SITELIBDIR:S/${PREFIX}\///}
 PLIST_SUB+=	PYTHON_SITELIBDIR=${PYTHONPREFIX_SITELIBDIR:S/${PREFIX}\///}
+BROKEN=		Does not stage
 .endif
 
 .if ${PORT_OPTIONS:MRUBY}

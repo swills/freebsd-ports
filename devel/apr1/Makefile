@@ -1,8 +1,9 @@
 # Created by: Garrett Rooney <rooneg@electricjellyfish.net>
-# $FreeBSD: head/devel/apr1/Makefile 445645 2017-07-13 11:04:28Z brnrd $
+# $FreeBSD: head/devel/apr1/Makefile 453723 2017-11-08 08:06:08Z brnrd $
 
 PORTNAME=	apr
 PORTVERSION=	${APR_VERSION}.${APU_VERSION}
+PORTREVISION=	0
 CATEGORIES=	devel
 MASTER_SITES=	APACHE/apr
 DISTFILES=	apr-${APR_VERSION}.tar.gz \
@@ -19,8 +20,8 @@ USES=		iconv pathfix libtool cpe
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 
-APR_VERSION=	1.6.2
-APU_VERSION=	1.6.0
+APR_VERSION=	1.6.3
+APU_VERSION=	1.6.1
 
 CPE_VENDOR=	apache
 CPE_PRODUCT=	apr-util

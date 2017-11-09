@@ -1,4 +1,4 @@
-# $FreeBSD: head/finance/Makefile 402871 2015-12-03 11:26:36Z amdmi3 $
+# $FreeBSD: head/finance/Makefile 453767 2017-11-08 21:43:21Z ehaupt $
 #
 
     COMMENT = Monetary, financial, and related applications
@@ -26,6 +26,7 @@
     SUBDIR += bitcoin-armory
     SUBDIR += cbb
     SUBDIR += electrum
+    SUBDIR += electrum2
     SUBDIR += expense
     SUBDIR += fixc
     SUBDIR += frontaccounting

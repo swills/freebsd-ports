@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 449259 2017-09-04 19:32:33Z des $
+# $FreeBSD: head/misc/Makefile 453791 2017-11-09 05:49:40Z yuri $
 #
 
     COMMENT = Miscellaneous utilities
@@ -39,6 +39,7 @@
     SUBDIR += chord2html
     SUBDIR += cinnamon-translations
     SUBDIR += clex
+    SUBDIR += cldr-emoji-annotation
     SUBDIR += cloc
     SUBDIR += clpbar
     SUBDIR += cmatrix

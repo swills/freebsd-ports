@@ -1,10 +1,10 @@
 # Created by: Joe Kelsey
-# $FreeBSD: head/devel/libical/Makefile 451214 2017-10-04 10:56:26Z sunpoet $
+# $FreeBSD: head/devel/libical/Makefile 453790 2017-11-09 02:31:47Z jbeich $
 
 PORTNAME=	libical
 PORTVERSION=	2.0.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	gnome@FreeBSD.org

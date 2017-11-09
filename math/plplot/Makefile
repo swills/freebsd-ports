@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/math/plplot/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/plplot/Makefile 453628 2017-11-06 16:06:22Z mat $
 
 PORTNAME=	plplot
 PORTVERSION=	5.12.0
@@ -64,6 +64,7 @@ PYTHON_BUILD_DEPENDS=	swig:devel/swig13 \
 PYTHON_RUN_DEPENDS=	${PYNUMPY}
 PYTHON_CMAKE_BOOL=	ENABLE_python
 PYTHON_CONFIGURE_ENV=	PYTHON_VERSION="${PYTHON_VERSION}"
+PYTHON_BROKEN=		Does not package
 
 QHULL2003_DESC=		Legacy Qhull support
 QHULL2015_DESC=		Latest Qhull support

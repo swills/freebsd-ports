@@ -1,9 +1,8 @@
-# Created by: Dmitri Goutnik <dg@syrec.org>
-# $FreeBSD: head/comms/tio/Makefile 452990 2017-10-27 15:31:57Z tobik $
+# $FreeBSD: head/comms/tio/Makefile 453758 2017-11-08 18:32:58Z yuri $
 
 PORTNAME=	tio
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.25
+DISTVERSION=	1.26
 CATEGORIES=	comms
 
 MAINTAINER=	dg@syrec.org
@@ -16,7 +15,7 @@ USES=		autoreconf
 GNU_CONFIGURE=	yes
 USE_GITHUB=	yes
 
-OPTIONS_DEFINE=	BASH
+OPTIONS_DEFINE=	BASH DOCS
 OPTIONS_DEFAULT=	BASH
 OPTIONS_SUB=	yes
 

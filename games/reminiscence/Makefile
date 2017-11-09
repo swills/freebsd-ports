@@ -1,11 +1,11 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/reminiscence/Makefile 443010 2017-06-09 15:13:06Z amdmi3 $
+# $FreeBSD: head/games/reminiscence/Makefile 453740 2017-11-08 13:48:30Z amdmi3 $
 
 PORTNAME=	REminiscence
-PORTVERSION=	0.3.3
+PORTVERSION=	0.3.4
 CATEGORIES=	games
 MASTER_SITES=	http://cyxdown.free.fr/reminiscence/ \
-		http://mirror.amdmi3.ru/distfiles/
+		https://mirror.amdmi3.ru/distfiles/
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Rewritten engine for Flashback

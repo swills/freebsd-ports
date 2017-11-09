@@ -1,5 +1,5 @@
 # Created by: Anders Nordby <anders@FreeBSD.org>
-# $FreeBSD: head/multimedia/libkate/Makefile 451307 2017-10-05 12:38:40Z bapt $
+# $FreeBSD: head/multimedia/libkate/Makefile 453627 2017-11-06 16:06:11Z mat $
 
 PORTNAME=	libkate
 PORTVERSION=	0.4.1
@@ -51,7 +51,10 @@ PLIST_SUB+=	KATEDJ="@comment "
 .endif
 
 post-patch:
-.if ! ${PORT_OPTIONS:MKATEDJ}
+.if ${PORT_OPTIONS:MKATEDJ}
+	@${REINPLACE_CMD} -e 's|PYTHON=python|PYTHON=${PYTHON_CMD}|' \
+		${WRKSRC}/misc/autotools/py-compile
+.else
 	@${REINPLACE_CMD} -e \
 		"s|  HAVE_PYTHON_TRUE=$$|  HAVE_PYTHON_TRUE='#'|; \
 			s|  HAVE_PYTHON_FALSE=\'#\'$$|  HAVE_PYTHON_FALSE=|" \

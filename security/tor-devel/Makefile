@@ -1,13 +1,13 @@
 # Created by: peter.thoenen@yahoo.com
-# $FreeBSD: head/security/tor-devel/Makefile 453047 2017-10-28 07:46:30Z joneum $
+# $FreeBSD: head/security/tor-devel/Makefile 453792 2017-11-09 05:53:09Z yuri $
 
 PORTNAME=	tor
-DISTVERSION=	0.3.2.3-alpha
+DISTVERSION=	0.3.2.4-alpha
 CATEGORIES=	security net ipv6
 MASTER_SITES=	TOR
 PKGNAMESUFFIX=	-devel
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Anonymizing overlay network for TCP
 
 LICENSE=	BSD3CLAUSE

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 453265 2017-11-01 07:40:54Z rene $
+# $FreeBSD: head/textproc/Makefile 453761 2017-11-08 18:53:49Z ehaupt $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -208,6 +208,7 @@
     SUBDIR += freexl
     SUBDIR += fy-aspell
     SUBDIR += fzf
+    SUBDIR += fzy
     SUBDIR += ga-aspell
     SUBDIR += gastex
     SUBDIR += gd-aspell
@@ -1400,6 +1401,7 @@
     SUBDIR += py3-pyPEG2
     SUBDIR += py3-pygments
     SUBDIR += py3-pystemmer
+    SUBDIR += py3-qrcode
     SUBDIR += py3-snowballstemmer
     SUBDIR += py3-sphinx
     SUBDIR += py3-sphinx_rtd_theme

@@ -1,8 +1,8 @@
 # Created by: dwm
-# $FreeBSD: head/devel/icu/Makefile 451177 2017-10-04 02:39:08Z jbeich $
+# $FreeBSD: head/devel/icu/Makefile 453790 2017-11-09 02:31:47Z jbeich $
 
 PORTNAME=	icu
-DISTVERSION=	59_1
+DISTVERSION=	60_1
 PORTREVISION?=	0 # keep for icu-lx
 PORTEPOCH?=	1
 CATEGORIES?=	devel

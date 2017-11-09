@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/renpy/Makefile 453509 2017-11-05 01:18:42Z jbeich $
+# $FreeBSD: head/devel/renpy/Makefile 453715 2017-11-08 01:54:38Z jbeich $
 
 PORTNAME=	renpy
 PORTVERSION?=	6.99.13
@@ -45,7 +45,10 @@ TARGET_ORDER_OVERRIDE=610:fix-shebang
 BUILD_WRKSRC=	${WRKSRC}/module
 INSTALL_WRKSRC=	${BUILD_WRKSRC}
 MAKE_ENV+=	RENPY_DEPS_INSTALL="${LOCALBASE}"
-PORTDATA=	gui launcher renpy renpy.py templates
+PORTDATA=	launcher renpy renpy.py templates
+.ifndef PKGNAMESUFFIX
+PORTDATA+=	gui
+.endif
 PORTDOCS=	*
 PLIST_FILES=	bin/${PORTNAME}
 

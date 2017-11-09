@@ -1,8 +1,8 @@
-# $FreeBSD: head/biology/diamond/Makefile 453387 2017-11-03 03:45:01Z jrm $
+# $FreeBSD: head/biology/diamond/Makefile 453752 2017-11-08 16:06:50Z jrm $
 
 PORTNAME=	diamond
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.9.11
+DISTVERSION=	0.9.12
 CATEGORIES=	biology
 
 MAINTAINER=	jrm@FreeBSD.org
@@ -14,12 +14,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 ONLY_FOR_ARCHS=	amd64 i386
 
 USES=		cmake:outsource
-
-CFLAGS+=	-DNDEBUG
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	bbuchfink
 
+CFLAGS+=	-DNDEBUG
 PLIST_FILES=	bin/diamond
 
 .if ! defined(PACKAGE_BUILDING)

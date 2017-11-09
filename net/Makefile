@@ -1,5 +1,5 @@
 
-# $FreeBSD: head/net/Makefile 453127 2017-10-29 17:54:47Z pi $
+# $FreeBSD: head/net/Makefile 453637 2017-11-06 17:59:15Z rene $
 #
 
     COMMENT = Networking tools
@@ -376,7 +376,6 @@
     SUBDIR += librouteros
     SUBDIR += librsync2
     SUBDIR += libsocket++
-    SUBDIR += libsocketcpp
     SUBDIR += libsrtp
     SUBDIR += libtnl
     SUBDIR += libtrace

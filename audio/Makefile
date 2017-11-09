@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 453486 2017-11-04 20:57:49Z yuri $
+# $FreeBSD: head/audio/Makefile 453708 2017-11-07 22:38:01Z yuri $
 #
 
     COMMENT = Audio tools
@@ -130,6 +130,7 @@
     SUBDIR += espeak
     SUBDIR += esperanza
     SUBDIR += etcd
+    SUBDIR += eteroj-lv2
     SUBDIR += etktab
     SUBDIR += exaile
     SUBDIR += exaile-devel
@@ -473,6 +474,7 @@
     SUBDIR += lollypop
     SUBDIR += lpac
     SUBDIR += lua51-mpd
+    SUBDIR += luppp
     SUBDIR += lv2
     SUBDIR += lv2file
     SUBDIR += lvtk

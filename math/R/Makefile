@@ -1,9 +1,9 @@
 # Created by: Maurice Castro <maurice@serc.rmit.edu.au>
-# $FreeBSD: head/math/R/Makefile 452928 2017-10-26 17:05:20Z jrm $
+# $FreeBSD: head/math/R/Makefile 453790 2017-11-09 02:31:47Z jbeich $
 
 PORTNAME=		R
 DISTVERSION=		3.4.2
-PORTREVISION=		1
+PORTREVISION=		2
 CATEGORIES=		math lang
 MASTER_SITES=		CRAN/src/base/R-${PORTVERSION:C|\..*||}
 

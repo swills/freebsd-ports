@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/rubygem-mini_mime/Makefile 447859 2017-08-12 18:59:30Z sunpoet $
+# $FreeBSD: head/mail/rubygem-mini_mime/Makefile 453783 2017-11-08 23:30:48Z sunpoet $
 
 PORTNAME=	mini_mime
-PORTVERSION=	0.1.4
+PORTVERSION=	1.0.0
 CATEGORIES=	mail rubygems
 MASTER_SITES=	RG
 

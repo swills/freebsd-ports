@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-natsort/Makefile 453478 2017-11-04 19:28:11Z yuri $
+# $FreeBSD: head/devel/py-natsort/Makefile 453724 2017-11-08 08:15:20Z yuri $
 
 PORTNAME=	natsort
 DISTVERSION=	5.1.0
@@ -18,8 +18,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest \
 		${PYTHON_PKGNAMEPREFIX}hypothesis>=3.8.0:devel/py-hypothesis \
 		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock \
 		${PYTHON_PKGNAMEPREFIX}pathlib>0:devel/py-pathlib \
-		${PYTHON_PKGNAMEPREFIX}coverage>0:devel/py-coverage \
-		${RUN_DEPENDS}
+		${PYTHON_PKGNAMEPREFIX}coverage>0:devel/py-coverage
 
 USES=		python
 USE_PYTHON=	autoplist distutils

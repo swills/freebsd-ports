@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 453599 2017-11-06 07:51:57Z araujo $
+# $FreeBSD: head/sysutils/Makefile 453722 2017-11-08 07:58:51Z loader $
 #
 
     COMMENT = System utilities
@@ -919,6 +919,7 @@
     SUBDIR += py-scriptine
     SUBDIR += py-shutilwhich
     SUBDIR += py-stdiff
+    SUBDIR += py-superlance
     SUBDIR += py-supervisor
     SUBDIR += py-tmuxp
     SUBDIR += py-uptime

@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/kdb/Makefile 451010 2017-09-30 20:26:31Z tcberner $
+# $FreeBSD: head/databases/kdb/Makefile 453790 2017-11-09 02:31:47Z jbeich $
 
 PORTNAME=		kdb
 DISTVERSION=		3.0.2
+PORTREVISION=	1
 CATEGORIES=		databases kde
 MASTER_SITES=		KDE/stable/${PORTNAME}/src
 DIST_SUBDIR=		KDE/${PORTNAME}

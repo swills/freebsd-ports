@@ -1,8 +1,8 @@
 # Created by: Jev Björsell <ports@ecadlabs.com>
-# $FreeBSD: head/net-mgmt/prometheus/Makefile 452787 2017-10-24 17:07:04Z ler $
+# $FreeBSD: head/net-mgmt/prometheus/Makefile 453646 2017-11-06 22:55:27Z dbaio $
 
 PORTNAME=	prometheus
-PORTVERSION=	1.8.1
+PORTVERSION=	1.8.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-mgmt
 
@@ -10,6 +10,7 @@ MAINTAINER=	ports@ecadlabs.com
 COMMENT=	Systems monitoring and alerting toolkit
 
 LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		go gmake
 USE_GITHUB=	yes

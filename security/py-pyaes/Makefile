@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-pyaes/Makefile 450257 2017-09-21 13:10:09Z jrm $
+# $FreeBSD: head/security/py-pyaes/Makefile 453761 2017-11-08 18:53:49Z ehaupt $
 
 PORTNAME=	pyaes
 PORTVERSION=	1.6.1
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 NO_ARCH=	yes
 
-USES=		python
+USES?=		python
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

@@ -1,9 +1,10 @@
 # Created by: Shaun Amott <shaun@FreeBSD.org>
-# $FreeBSD: head/net-p2p/bitcoin/Makefile 451133 2017-10-03 14:25:09Z swills $
+# $FreeBSD: head/net-p2p/bitcoin/Makefile 453725 2017-11-08 08:18:27Z vd $
 
 PORTNAME=	bitcoin
 PORTVERSION=	0.15.0.1
 DISTVERSIONPREFIX=	v
+PORTREVISION?=	1
 CATEGORIES=	net-p2p finance
 
 MAINTAINER=	robbak@robbak.com

@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-im/py-fbmq/Makefile 452846 2017-10-25 13:22:32Z olgeni $
+# $FreeBSD: head/net-im/py-fbmq/Makefile 453660 2017-11-07 14:15:55Z olgeni $
 
 PORTNAME=	fbmq
-PORTVERSION=	2.3.2
+PORTVERSION=	2.4.1
 CATEGORIES=	net-im devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

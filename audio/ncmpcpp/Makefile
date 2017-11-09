@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/ncmpcpp/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/audio/ncmpcpp/Makefile 453790 2017-11-09 02:31:47Z jbeich $
 
 PORTNAME=	ncmpcpp
 PORTVERSION=	0.8
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio
 MASTER_SITES=	http://ncmpcpp.rybczak.net/stable/
 

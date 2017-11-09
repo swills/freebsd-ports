@@ -1,12 +1,11 @@
 # Created by: Erik Olson <erikolson@olsonexpress.com>
-# $FreeBSD: head/games/nwndata/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/nwndata/Makefile 453788 2017-11-09 01:53:38Z scf $
 
 PORTNAME=	nwndata
 PORTVERSION=	${NWNVER}
 PORTREVISION=	${NWNREV}
 CATEGORIES=	games
-MASTER_SITES=	http://files.bioware.com/neverwinternights/updates/linux/ \
-		http://nwdownloads.bioware.com/neverwinternights/linux/129/ \
+MASTER_SITES=	http://na.llnet.bioware.cdn.ea.com/u/f/eagames/bioware/neverwinternights/updates/linux/ \
 		http://lvlt.bioware.cdn.ea.com/bioware/u/f/eagames/bioware/neverwinternights/updates/linux/
 DISTNAME=	${NWRESOURCES}
 .if defined(CDROM_MOUNT) && exists(${CDROM_MOUNT}/KingmakerSetup.exe)

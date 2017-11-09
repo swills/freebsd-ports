@@ -1,5 +1,5 @@
 # Created by: Neil Booth <kyuupichan@gmail.com>
-# $FreeBSD: head/security/py-pbkdf2/Makefile 376026 2015-01-01 19:29:33Z pawel $
+# $FreeBSD: head/security/py-pbkdf2/Makefile 453761 2017-11-08 18:53:49Z ehaupt $
 
 PORTNAME=	pbkdf2
 PORTVERSION=	1.3
@@ -12,7 +12,7 @@ COMMENT=	PKCS5 v2.0 PBKDF2 Module
 
 LICENSE=	MIT
 
-USES=		python
+USES?=		python
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

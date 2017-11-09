@@ -1,24 +1,25 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/security/hitch/Makefile 436595 2017-03-21 12:46:39Z zi $
+# $FreeBSD: head/security/hitch/Makefile 453741 2017-11-08 14:01:53Z zi $
 
 PORTNAME=		hitch
-PORTVERSION=		1.4.4
-DISTVERSIONPREFIX=	${PORTNAME}-
+PORTVERSION=		1.4.6
+PORTREVISION=		2
 CATEGORIES=		security
+MASTER_SITES=		http://hitch-tls.org/source/ \
+			ZI
 
 MAINTAINER=		zi@FreeBSD.org
 COMMENT=		TLS proxy to forward connections to an unencrypted backend
 
 LICENSE=		BSD2CLAUSE
 
-BUILD_DEPENDS=		rst2man:textproc/py-docutils \
-			pkg-config:devel/pkgconf
+BUILD_DEPENDS=		rst2man:textproc/py-docutils
 LIB_DEPENDS=		libev.so:devel/libev
 
 USERS=			nobody
 GROUPS=			nobody
 
-USES=			autoreconf ssl
+USES=			pkgconfig ssl
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS=		--localstatedir=/var/run
 CONFIGURE_ENV=		CRYPTO_CFLAGS="-I${OPENSSLINC}" CRYPTO_LIBS="-L${OPENSSLLIB}" \
@@ -26,9 +27,6 @@ CONFIGURE_ENV=		CRYPTO_CFLAGS="-I${OPENSSLINC}" CRYPTO_LIBS="-L${OPENSSLLIB}" \
 USE_RC_SUBR=		${PORTNAME}
 CPPFLAGS+=		-I${LOCALBASE}/include
 LDFLAGS+=		-L${LOCALBASE}/lib -lcrypto -lssl
-USE_GITHUB=		yes
-GH_ACCOUNT=		varnish
-PORTSCOUT=		skipv:premerge
 
 post-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/etc

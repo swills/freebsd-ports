@@ -1,9 +1,9 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/java/openjfx8-devel/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/java/openjfx8-devel/Makefile 453790 2017-11-09 02:31:47Z jbeich $
 
 PORTNAME=	openjfx8
 DISTVERSION=	8u172-b00
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	java x11-toolkits devel
 MASTER_SITES=	https://github.com/t6/openjfx/releases/download/release/ \

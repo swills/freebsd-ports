@@ -1,9 +1,9 @@
 # Created by: Vanilla I. Shu <vanilla@FreeBSD.org>
-# $FreeBSD: head/devel/glib20/Makefile 450556 2017-09-25 00:02:36Z jbeich $
+# $FreeBSD: head/devel/glib20/Makefile 453790 2017-11-09 02:31:47Z jbeich $
 
 PORTNAME=	glib
 PORTVERSION=	2.50.2
-PORTREVISION=	6
+PORTREVISION=	7
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	GNOME
