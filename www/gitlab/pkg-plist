@@ -11018,6 +11018,7 @@
 %%WWWDIR%%/spec/support/matchers/pagination_matcher.rb
 %%WWWDIR%%/spec/support/matchers/query_matcher.rb
 %%WWWDIR%%/spec/support/matchers/satisfy_matchers.rb
+%%WWWDIR%%/spec/support/matchers/security_header_matcher.rb
 %%WWWDIR%%/spec/support/matchers/user_activity_matchers.rb
 %%WWWDIR%%/spec/support/mentionable_shared_examples.rb
 %%WWWDIR%%/spec/support/merge_request_helpers.rb

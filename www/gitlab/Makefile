@@ -2,7 +2,7 @@
 # $FreeBSD: head/www/gitlab/Makefile 453507 2017-11-04 22:57:53Z sunpoet $
 
 PORTNAME=	gitlab
-PORTVERSION=	10.1.1
+PORTVERSION=	10.1.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www devel
 
@@ -249,6 +249,7 @@ do-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/www/${PORTNAME}/tmp/sessions
 	${MKDIR} ${STAGEDIR}${PREFIX}/www/${PORTNAME}/tmp/backups
 	${MKDIR} ${STAGEDIR}${PREFIX}/www/${PORTNAME}/shared/tmp
+	${MKDIR} ${STAGEDIR}${PREFIX}/www/${PORTNAME}/shared/artifacts/tmp/work
 	(cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/www/${PORTNAME})
 
 .include <bsd.port.mk>
