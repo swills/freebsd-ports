@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-opennebula/Makefile 451782 2017-10-11 19:49:46Z sunpoet $
+# $FreeBSD: head/net/rubygem-opennebula/Makefile 453683 2017-11-07 21:01:42Z sunpoet $
 
 PORTNAME=	opennebula
-PORTVERSION=	5.4.2
+PORTVERSION=	5.4.3
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

@@ -1,5 +1,5 @@
 # Created by: Edward Tomasz Napierala <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/lash/Makefile 448233 2017-08-18 14:15:45Z swills $
+# $FreeBSD: head/audio/lash/Makefile 453628 2017-11-06 16:06:22Z mat $
 
 PORTNAME=	lash
 PORTVERSION=	0.5.4
@@ -38,6 +38,7 @@ PYTHON_DESC=	Build pylash
 PYTHON_USES=	python
 PYTHON_BUILD_DEPENDS=	swig:devel/swig13
 PYTHON_CONFIGURE_ENABLE=pylash
+PYTHON_BROKEN=	Does not package
 
 READLINE_USES=		readline
 READLINE_CONFIGURE_ENV_OFF=	vl_cv_lib_readline=no

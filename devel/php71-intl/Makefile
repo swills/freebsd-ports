@@ -1,5 +1,6 @@
-# $FreeBSD: head/devel/php71-intl/Makefile 450849 2017-09-28 13:04:46Z tz $
+# $FreeBSD: head/devel/php71-intl/Makefile 453790 2017-11-09 02:31:47Z jbeich $
 
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MASTERDIR=	${.CURDIR}/../../lang/php71

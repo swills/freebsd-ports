@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/Makefile 447965 2017-08-14 19:21:04Z crees $
+# $FreeBSD: head/net-p2p/Makefile 453798 2017-11-09 07:21:44Z vd $
 #
 
     COMMENT = Peer-to-peer network applications
@@ -59,6 +59,7 @@
     SUBDIR += mldonkey
     SUBDIR += mldonkey-core
     SUBDIR += mldonkey-gui
+    SUBDIR += monero-cli
     SUBDIR += namecoin
     SUBDIR += namecoin-daemon
     SUBDIR += napshare

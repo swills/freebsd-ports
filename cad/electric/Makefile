@@ -1,5 +1,5 @@
 # Created by: Mario S F Ferreira <lioux@linf.unb.br> et al.
-# $FreeBSD: head/cad/electric/Makefile 453238 2017-10-31 14:51:53Z olgeni $
+# $FreeBSD: head/cad/electric/Makefile 453801 2017-11-09 09:04:39Z amdmi3 $
 
 PORTNAME=	electric
 PORTVERSION=	7.0.0
@@ -29,8 +29,6 @@ T1LIB_VARS=	FEATURES+=T1LIB
 NLS_USES=	gettext
 NLS_VARS=	FEATURES+=INT
 OPTIMIZED_CFLAGS_VARS=	FEATURES+=OPT
-
-.include <bsd.port.options.mk>
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/share/electric/lib/|${DATADIR}/lib/|; \

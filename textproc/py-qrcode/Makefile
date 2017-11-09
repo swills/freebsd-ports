@@ -1,5 +1,5 @@
 # Created by: Neil Booth
-# $FreeBSD: head/textproc/py-qrcode/Makefile 428203 2016-12-09 13:10:26Z wen $
+# $FreeBSD: head/textproc/py-qrcode/Makefile 453761 2017-11-08 18:53:49Z ehaupt $
 
 PORTNAME=	qrcode
 PORTVERSION=	5.3
@@ -15,7 +15,7 @@ LICENSE=	BSD3CLAUSE
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.8:devel/py-six \
 		${PYTHON_PKGNAMEPREFIX}pillow>=2.6:graphics/py-pillow
 
-USES=		python
+USES?=		python
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

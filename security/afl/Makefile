@@ -1,8 +1,8 @@
 # Created by: Fabian Keil <fk@fabiankeil.de>
-# $FreeBSD: head/security/afl/Makefile 449024 2017-08-31 11:13:57Z tobik $
+# $FreeBSD: head/security/afl/Makefile 453659 2017-11-07 14:08:11Z tobik $
 
 PORTNAME=	afl
-PORTVERSION=	2.51
+PORTVERSION=	2.52
 DISTVERSIONSUFFIX=	b
 CATEGORIES=	security
 MASTER_SITES=	http://lcamtuf.coredump.cx/afl/releases/
@@ -29,7 +29,7 @@ OPTIONS_SUB=	yes
 
 LLVM_DESC=	LLVM-based instrumentation
 
-LLVM_VERSION=	40
+LLVM_VERSION?=	40
 
 LLVM_ALL_TARGET=	llvm_mode
 LLVM_BUILD_DEPENDS=	clang${LLVM_VERSION}:devel/llvm${LLVM_VERSION}

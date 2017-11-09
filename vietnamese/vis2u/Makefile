@@ -1,5 +1,5 @@
 # Created by: David O'Brien (obrien@NUXI.com)
-# $FreeBSD: head/vietnamese/vis2u/Makefile 389302 2015-06-12 21:17:43Z erwin $
+# $FreeBSD: head/vietnamese/vis2u/Makefile 453718 2017-11-08 06:04:45Z ak $
 
 PORTNAME=	vis2u
 PORTVERSION=	1.0
@@ -10,12 +10,13 @@ DISTNAME=	${PORTNAME}${PORTVERSION:S/.//g}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	VISCII->Unicode conversion
 
-USES=		zip:infozip
+USES=		zip
 NO_WRKSUBDIR=	yes
-EXTRACT_BEFORE_ARGS=	-qoL
+
+PLIST_FILES=	bin/vis2u
 
 do-build:
-	cd ${WRKSRC} ; make vis2u
+	${CC} -x c ${CFLAGS} ${WRKSRC}/VIS2U.C -o ${WRKSRC}/vis2u
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/vis2u ${STAGEDIR}${PREFIX}/bin

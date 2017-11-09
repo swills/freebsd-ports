@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@lwhsu.org>
-# $FreeBSD: head/www/py-httplib2/Makefile 437444 2017-04-01 15:59:34Z lwhsu $
+# $FreeBSD: head/www/py-httplib2/Makefile 453761 2017-11-08 18:53:49Z ehaupt $
 
 PORTNAME=	httplib2
 PORTVERSION=	0.10.3
@@ -14,6 +14,6 @@ LICENSE=	MIT
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils
-USES=		python
+USES?=		python
 
 .include <bsd.port.mk>

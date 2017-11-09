@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/sysutils/bacula9-server/Makefile 453560 2017-11-05 20:04:24Z ler $
+# $FreeBSD: head/sysutils/bacula9-server/Makefile 453628 2017-11-06 16:06:22Z mat $
 
 PORTNAME=	bacula
 PORTVERSION=	9.0.5
@@ -45,6 +45,7 @@ OPTIONS_SUB=		yes
 
 PYTHON_USES=		python
 PYTHON_CONFIGURE_ON=	--with-python=yes
+PYTHON_BROKEN=	Does not package
 
 .if !defined(WITH_CLIENT_ONLY)
 LIB_DEPENDS+=	libbac-${PORTVERSION}.so:sysutils/bacula9-client

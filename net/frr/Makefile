@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/frr/Makefile 452541 2017-10-20 16:25:06Z olivier $
+# $FreeBSD: head/net/frr/Makefile 453751 2017-11-08 15:16:38Z olivier $
 
 PORTNAME=	frr
-PORTVERSION=	3.0
+PORTVERSION=	3.0.2
 CATEGORIES=	net ipv6
 
 MAINTAINER=	olivier@FreeBSD.org
@@ -18,7 +18,7 @@ CONFLICTS=	openbgpd openospfd zebra quagga-esr quagga
 USE_GITHUB=	yes
 GH_ACCOUNT=	FRRouting
 GH_PROJECT=	frr
-GH_TAGNAME=	frr-3.0
+GH_TAGNAME=	frr-${PORTVERSION}
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

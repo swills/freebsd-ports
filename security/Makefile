@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 453537 2017-11-05 11:40:37Z dinoex $
+# $FreeBSD: head/security/Makefile 453761 2017-11-08 18:53:49Z ehaupt $
 #
 
     COMMENT = Security tools
@@ -419,6 +419,7 @@
     SUBDIR += nmap
     SUBDIR += nss
     SUBDIR += nss_compat_ossl
+    SUBDIR += nyx
     SUBDIR += oath-toolkit
     SUBDIR += obfsclient
     SUBDIR += obfsproxy
@@ -870,7 +871,7 @@
     SUBDIR += py-backports.ssl_match_hostname
     SUBDIR += py-bcrypt
     SUBDIR += py-borg.localrole
-    SUBDIR += py-btchip
+    SUBDIR += py-btchip-python
     SUBDIR += py-cerealizer
     SUBDIR += py-certbot
     SUBDIR += py-certifi
@@ -997,6 +998,8 @@
     SUBDIR += py3-ecdsa
     SUBDIR += py3-libnacl
     SUBDIR += py3-openssl
+    SUBDIR += py3-pbkdf2
+    SUBDIR += py3-pyaes
     SUBDIR += py3-pycrypto
     SUBDIR += qtkeychain-qt4
     SUBDIR += qtkeychain-qt5

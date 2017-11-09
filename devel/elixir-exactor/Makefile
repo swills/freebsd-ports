@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-exactor/Makefile 430580 2017-01-04 17:06:41Z olgeni $
+# $FreeBSD: head/devel/elixir-exactor/Makefile 453768 2017-11-08 21:44:32Z olgeni $
 
 PORTNAME=	exactor
-PORTVERSION=	2.2.3
+PORTVERSION=	2.2.4
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 

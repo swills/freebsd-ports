@@ -1,7 +1,8 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/security/arm/Makefile 415742 2016-05-23 20:35:01Z amdmi3 $
+# $FreeBSD: head/security/arm/Makefile 453706 2017-11-07 21:53:49Z cs $
 
 PORTNAME=	arm
+DEPRECATED=	arm has been replaced by security/nyx
 DISTVERSION=	1.4.5.0
 PORTREVISION=	1
 CATEGORIES=	security net python

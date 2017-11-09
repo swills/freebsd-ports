@@ -1,9 +1,9 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/sysutils/xe/Makefile 453282 2017-11-01 12:41:59Z tobik $
+# $FreeBSD: head/sysutils/xe/Makefile 453661 2017-11-07 14:19:58Z tobik $
 
 PORTNAME=	xe
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.10
+DISTVERSION=	0.11
 CATEGORIES=	sysutils
 
 MAINTAINER=	tobik@FreeBSD.org
@@ -22,7 +22,8 @@ MAKE_ARGS=	CFLAGS="${CFLAGS}" \
 TEST_TARGET=	check
 
 PLIST_FILES=	bin/xe \
-		man/man1/xe.1.gz
+		man/man1/xe.1.gz \
+		share/zsh/site-functions/_xe
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/xe

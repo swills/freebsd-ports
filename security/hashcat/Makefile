@@ -1,8 +1,8 @@
 # Created by: Nikolai Lifanov <lifanov@mail.lifanov.com>
-# $FreeBSD: head/security/hashcat/Makefile 453139 2017-10-29 21:38:43Z lifanov $
+# $FreeBSD: head/security/hashcat/Makefile 453742 2017-11-08 14:08:06Z lifanov $
 
 PORTNAME=	hashcat
-PORTVERSION=	4.0.0
+PORTVERSION=	4.0.1
 DISTVERSIONPREFIX=	v
 PORTEPOCH=	1
 CATEGORIES=	security

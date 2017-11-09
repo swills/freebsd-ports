@@ -1,10 +1,10 @@
 # Created by: Alan Eldridge <alane@FreeBSD.org>
-# $FreeBSD: head/www/firefox-esr/Makefile 453437 2017-11-03 23:58:45Z jbeich $
+# $FreeBSD: head/www/firefox-esr/Makefile 453790 2017-11-09 02:31:47Z jbeich $
 
 PORTNAME=	firefox
 DISTVERSION=	52.4.1
 DISTVERSIONSUFFIX=esr.source
-PORTREVISION=	4
+PORTREVISION=	5
 PORTEPOCH=	1
 CATEGORIES=	www ipv6
 MASTER_SITES=	MOZILLA/${PORTNAME}/releases/${DISTVERSION}esr/source \

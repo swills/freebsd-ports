@@ -1,8 +1,9 @@
 # Created by: Blaz Zupan <blaz@si.FreeBSD.org>
-# $FreeBSD: head/net-mgmt/nagios4/Makefile 449682 2017-09-12 11:11:39Z mat $
+# $FreeBSD: head/net-mgmt/nagios4/Makefile 453665 2017-11-07 15:47:54Z mat $
 
 PORTNAME=	nagios
 PORTVERSION=	4.3.4
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	net-mgmt
 MASTER_SITES=	https://assets.nagios.com/downloads/nagioscore/releases/ \
@@ -32,6 +33,7 @@ CONFIGURE_ARGS=	--with-command-user=${NAGIOSUSER} \
 		--with-nagios-group=${NAGIOSGROUP} \
 		--with-htmurl=${NAGIOSHTMURL} \
 		--with-cgiurl=${NAGIOSCGIURL} \
+		--with-lockfile=${NAGIOSDIR}/nagios.lock \
 		--sbindir=${WWWDIR}/cgi-bin \
 		--libexecdir=${PREFIX}/libexec/nagios \
 		--datadir=${WWWDIR} \

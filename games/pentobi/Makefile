@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/pentobi/Makefile 443680 2017-06-16 09:20:07Z amdmi3 $
+# $FreeBSD: head/games/pentobi/Makefile 453744 2017-11-08 14:18:22Z amdmi3 $
 
 PORTNAME=	pentobi
-PORTVERSION=	13.1
+PORTVERSION=	14.0
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 

@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-Ifconfig-Wrapper/Makefile 448879 2017-08-28 19:18:20Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Ifconfig-Wrapper/Makefile 453635 2017-11-06 17:39:05Z sunpoet $
 
 PORTNAME=	Net-Ifconfig-Wrapper
-PORTVERSION=	0.15
+PORTVERSION=	0.16
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

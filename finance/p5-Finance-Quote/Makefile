@@ -1,9 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/finance/p5-Finance-Quote/Makefile 428736 2016-12-17 12:57:23Z sunpoet $
+# $FreeBSD: head/finance/p5-Finance-Quote/Makefile 453775 2017-11-08 23:30:07Z sunpoet $
 
 PORTNAME=	Finance-Quote
-PORTVERSION=	1.38
-PORTREVISION=	1
+PORTVERSION=	1.44
 CATEGORIES=	finance perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

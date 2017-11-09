@@ -1,8 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/comms/py-gammu/Makefile 449656 2017-09-11 15:20:54Z vanilla $
+# $FreeBSD: head/comms/py-gammu/Makefile 453717 2017-11-08 05:53:30Z vanilla $
 
 PORTNAME=	gammu
-PORTVERSION=	2.9
+PORTVERSION=	2.10
 CATEGORIES=	comms python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,6 +17,6 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libGammu.so:comms/gammu
 
 USES=		pkgconfig python:-2.7
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

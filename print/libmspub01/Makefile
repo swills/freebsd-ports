@@ -1,8 +1,8 @@
-# $FreeBSD: head/print/libmspub01/Makefile 453453 2017-11-04 11:43:35Z dbaio $
+# $FreeBSD: head/print/libmspub01/Makefile 453790 2017-11-09 02:31:47Z jbeich $
 
 PORTNAME=	libmspub
 PORTVERSION=	0.1.2
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	print graphics devel
 MASTER_SITES=	http://dev-www.libreoffice.org/src/${PORTNAME}/
 PKGNAMESUFFIX=	01

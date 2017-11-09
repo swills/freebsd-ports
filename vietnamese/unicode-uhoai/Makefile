@@ -1,5 +1,5 @@
 # Created by: David O'Brien (obrien@NUXI.com)
-# $FreeBSD: head/vietnamese/unicode-uhoai/Makefile 389302 2015-06-12 21:17:43Z erwin $
+# $FreeBSD: head/vietnamese/unicode-uhoai/Makefile 453718 2017-11-08 06:04:45Z ak $
 
 PORTNAME=	unicode-uhoai
 PORTVERSION=	2.1
@@ -11,15 +11,16 @@ DISTNAME=	uhoaiw21
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Unicode TrueType Font with UHoai Vietnamese encoding
 
-USES=		fonts zip:infozip
+USES=		fonts zip
 NO_WRKSUBDIR=	yes
-NO_BUILD=	taken care of in do-install target
+NO_BUILD=	yes
+
+PLIST_FILES=	%%FONTSDIR%%/uhoaiw21.ttf
 
 FONTNAME=	TrueType
-EXTRACT_BEFORE_ARGS=	-qoL
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${FONTSDIR}
-	${INSTALL_DATA} ${WRKSRC}/uhoaiw21.ttf ${STAGEDIR}${FONTSDIR}
+	${INSTALL_DATA} ${WRKSRC}/UHOAIW21.TTF ${STAGEDIR}${FONTSDIR}/uhoaiw21.ttf
 
 .include <bsd.port.mk>

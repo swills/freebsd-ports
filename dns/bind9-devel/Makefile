@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/bind9-devel/Makefile 453608 2017-11-06 10:38:33Z mat $
+# $FreeBSD: head/dns/bind9-devel/Makefile 453667 2017-11-07 15:48:16Z mat $
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
@@ -8,7 +8,7 @@ PORTVERSION=	${ISCVERSION:S/-P/P/:S/b/.b/:S/a/.a/:S/rc/.rc/}
 PORTREVISION=	0
 .else
 # dns/bind9xx here
-PORTREVISION=	0
+PORTREVISION=	1
 .endif
 CATEGORIES=	dns net ipv6
 MASTER_SITES=	LOCAL/mat/bind

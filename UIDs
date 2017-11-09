@@ -1,4 +1,4 @@
-# $FreeBSD: head/UIDs 452063 2017-10-14 12:58:24Z riggs $
+# $FreeBSD: head/UIDs 453798 2017-11-09 07:21:44Z vd $
 # Please keep this file sorted by UID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/master.passwd
@@ -728,7 +728,7 @@ openxpki:*:777:777::0:0:OpenXPKI Owner:/nonexistent:/usr/sbin/nologin
 litecoin:*:778:778::0:0:litecoin Daemon:/var/db/litecoin:/usr/sbin/nologin
 bitcoin:*:779:779::0:0:bitcoin Daemon:/var/db/bitcoin:/usr/sbin/nologin
 zetacoin:*:780:780::0:0:ZetaCoin Daemon:/nonexistent:/usr/sbin/nologin
-# free: 781
+monero:*:781:781::0:0:Monero Daemon:/var/db/monero:/usr/sbin/nologin
 # free: 782
 # free: 783
 # free: 784

@@ -1,8 +1,8 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/x11/menu-cache/Makefile 436494 2017-03-19 14:02:23Z rene $
+# $FreeBSD: head/x11/menu-cache/Makefile 453749 2017-11-08 15:12:43Z vanilla $
 
 PORTNAME=	menu-cache
-PORTVERSION=	1.0.2
+PORTVERSION=	1.1.0
 CATEGORIES=	x11
 MASTER_SITES=	SF/lxde/${PORTNAME}/${PORTVERSION:R}/
 
@@ -20,6 +20,6 @@ USE_GNOME=	glib20
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 
-CONFIGURE_ARGS=--disable-static
+CONFIGURE_ARGS=	--disable-static
 
 .include <bsd.port.mk>

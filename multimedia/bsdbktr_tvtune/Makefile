@@ -1,5 +1,5 @@
 # Created by: Mina Naguib <webmaster@topfx.com>
-# $FreeBSD: head/multimedia/bsdbktr_tvtune/Makefile 377141 2015-01-15 20:00:09Z ak $
+# $FreeBSD: head/multimedia/bsdbktr_tvtune/Makefile 453651 2017-11-07 09:04:36Z amdmi3 $
 
 PORTNAME=	bsdbktr_tvtune
 PORTVERSION=	0.02
@@ -9,9 +9,11 @@ MASTER_SITES=	http://mina.naguib.ca/dist/
 MAINTAINER=	mina.website@naguib.ca
 COMMENT=	Console Brooktree (bktr) TV tuner
 
+LICENSE=	NONE
+
 ONLY_FOR_ARCHS=	i386
 PLIST_FILES=	bin/bsdbktr_tvtune
-WRKSRC=	${WRKDIR}/${PORTNAME}
+WRKSRC=		${WRKDIR}/${PORTNAME}
 ALL_TARGET=	bsdbktr_tvtune
 
 do-install:

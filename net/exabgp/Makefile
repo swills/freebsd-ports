@@ -1,14 +1,17 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/exabgp/Makefile 447034 2017-08-01 17:07:58Z zi $
+# $FreeBSD: head/net/exabgp/Makefile 453711 2017-11-07 23:31:01Z zi $
 
 PORTNAME=	exabgp
 PORTVERSION=	3.4.20
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	GH \
 		ZI
 
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	BGP engine and route injector
+
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipaddress>0:net/py-ipaddress
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT

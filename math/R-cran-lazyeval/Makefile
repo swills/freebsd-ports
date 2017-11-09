@@ -1,9 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-lazyeval/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/math/R-cran-lazyeval/Makefile 453793 2017-11-09 06:07:12Z wen $
 
 PORTNAME=	lazyeval
-PORTREVISION=	1
-DISTVERSION=	0.2.0
+DISTVERSION=	0.2.1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

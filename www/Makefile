@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 453618 2017-11-06 14:17:56Z bhughes $
+# $FreeBSD: head/www/Makefile 453761 2017-11-08 18:53:49Z ehaupt $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1874,6 +1874,7 @@
     SUBDIR += py-yarl
     SUBDIR += py-zope.app.wsgi
     SUBDIR += py3-cssutils
+    SUBDIR += py3-httplib2
     SUBDIR += py3-requests
     SUBDIR += pyblosxom
     SUBDIR += pycarddav

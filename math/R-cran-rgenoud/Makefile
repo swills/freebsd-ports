@@ -1,9 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-rgenoud/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/math/R-cran-rgenoud/Makefile 453794 2017-11-09 06:23:44Z wen $
 
 PORTNAME=	rgenoud
-PORTREVISION=	1
-DISTVERSION=	5.7-12.4
+DISTVERSION=	5.8-1.0
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

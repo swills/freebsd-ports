@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/py-protobuf/Makefile 450010 2017-09-17 17:59:58Z sunpoet $
+# $FreeBSD: head/devel/py-protobuf/Makefile 453771 2017-11-08 23:01:05Z antoine $
 
 PORTNAME=	protobuf
 PORTVERSION=	3.4.1
@@ -21,7 +21,7 @@ DO_MAKE_TEST=	${PYTHON_CMD} ${PYDISTUTILS_SETUP}
 NO_ARCH=	yes
 TEST_TARGET=	test
 USE_PYTHON=	autoplist distutils
-USES=		python
+USES?=		python
 WRKSRC_SUBDIR=	python
 
 GH_ACCOUNT=	google
