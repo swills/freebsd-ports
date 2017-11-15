@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Data-Serializer-Sereal/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Data-Serializer-Sereal/Makefile 454089 2017-11-12 22:00:17Z adamw $
 
 PORTNAME=	Data-Serializer-Sereal
 PORTVERSION=	1.05
@@ -17,5 +17,6 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

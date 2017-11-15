@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-fonts/montserrat/Makefile 434348 2017-02-18 11:27:42Z rakuco $
+# $FreeBSD: head/x11-fonts/montserrat/Makefile 454031 2017-11-12 10:15:27Z rakuco $
 
 PORTNAME=	montserrat
-PORTVERSION=	6.002
+PORTVERSION=	7.200
 DISTVERSIONPREFIX=	v
 CATEGORIES=	x11-fonts
 
@@ -21,7 +21,7 @@ NO_BUILD=	yes
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-.for docfile in AUTHOR.txt Changelog.md CONTRIBUTORS.txt README.md
+.for docfile in AUTHOR.txt CONTRIBUTORS.txt README.md
 	cd ${WRKSRC} && \
 		${INSTALL_DATA} ${docfile} ${STAGEDIR}${DOCSDIR}
 .endfor

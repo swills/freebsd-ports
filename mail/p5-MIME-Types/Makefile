@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/p5-MIME-Types/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-MIME-Types/Makefile 453913 2017-11-10 19:03:09Z sunpoet $
 
 PORTNAME=	MIME-Types
-PORTVERSION=	2.13
+PORTVERSION=	2.14
 CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

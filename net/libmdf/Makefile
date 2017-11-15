@@ -1,8 +1,7 @@
-# $FreeBSD: head/net/libmdf/Makefile 442742 2017-06-06 05:50:50Z koobs $
+# $FreeBSD: head/net/libmdf/Makefile 453993 2017-11-11 19:18:42Z dbaio $
 
 PORTNAME=	libmdf
-PORTVERSION=	1.0.20
-PORTREVISION=	1
+PORTVERSION=	1.0.21
 CATEGORIES=	net finance
 MASTER_SITES=	https://packages.millistream.com/source/
 
@@ -18,9 +17,6 @@ USES=		libtool pkgconfig ssl
 USE_LDCONFIG=	yes
 
 CONFIGURE_ARGS=	--with-pkgconfigdir=${PREFIX}/libdata/pkgconfig
-
-CONFIGURE_ENV+=	OPENSSL_CFLAGS=${OPENSSLINC} \
-		OPENSSL_LIBS="${OPENSSLLIB} -lcrypto"
 
 INSTALL_TARGET=	install-strip
 TEST_TARGET=	check

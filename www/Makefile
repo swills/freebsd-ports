@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 453761 2017-11-08 18:53:49Z ehaupt $
+# $FreeBSD: head/www/Makefile 454217 2017-11-14 23:10:19Z dvl $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -360,6 +360,7 @@
     SUBDIR += libjwt
     SUBDIR += libmicrohttpd
     SUBDIR += libnghttp2
+    SUBDIR += libresonic-standalone
     SUBDIR += libsocialweb
     SUBDIR += libwww
     SUBDIR += libxul
@@ -535,6 +536,7 @@
     SUBDIR += netstiff
     SUBDIR += netsurf
     SUBDIR += newsbeuter
+    SUBDIR += newsboat
     SUBDIR += nextcloud
     SUBDIR += nghttp2
     SUBDIR += nginx
@@ -2174,6 +2176,7 @@
     SUBDIR += rubygem-unicorn-worker-killer
     SUBDIR += rubygem-url_escape
     SUBDIR += rubygem-url_mount
+    SUBDIR += rubygem-vegas
     SUBDIR += rubygem-wasabi
     SUBDIR += rubygem-webkit-gtk
     SUBDIR += rubygem-webkit-gtk2

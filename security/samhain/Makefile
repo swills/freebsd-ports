@@ -1,8 +1,8 @@
 # Created by: Nikola Kolev <koue@chaosophia.net>
-# $FreeBSD: head/security/samhain/Makefile 447432 2017-08-05 23:13:31Z sunpoet $
+# $FreeBSD: head/security/samhain/Makefile 453817 2017-11-09 14:32:58Z robak $
 
 PORTNAME=	samhain
-PORTVERSION=	4.2.1
+PORTVERSION=	4.2.3
 CATEGORIES=	security
 MASTER_SITES=	http://la-samhna.de/archive/
 DISTNAME=	samhain_signed-${PORTVERSION}

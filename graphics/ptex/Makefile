@@ -1,9 +1,10 @@
-# $FreeBSD: head/graphics/ptex/Makefile 452488 2017-10-19 20:40:30Z swills $
+# $FreeBSD: head/graphics/ptex/Makefile 454169 2017-11-14 09:00:09Z amdmi3 $
 
 PORTNAME=	ptex
 PORTVERSION=	2.1.28
-CATEGORIES?=	graphics
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
+CATEGORIES?=	graphics
 
 MAINTAINER=	FreeBSD@Shaneware.biz
 COMMENT=	Per face texture library
@@ -26,7 +27,7 @@ post-build-DOCS-on:
 do-install:
 	${INSTALL_LIB} ${BUILD_WRKSRC}/src/ptex/libPtex.so \
 		${STAGEDIR}${PREFIX}/lib
-	${INSTALL_LIB} ${BUILD_WRKSRC}/src/ptex/libPtex.a \
+	${INSTALL_DATA} ${BUILD_WRKSRC}/src/ptex/libPtex.a \
 		${STAGEDIR}${PREFIX}/lib
 	${INSTALL_PROGRAM} ${BUILD_WRKSRC}/src/utils/ptxinfo \
 		${STAGEDIR}${PREFIX}/bin

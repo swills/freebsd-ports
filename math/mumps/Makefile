@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/mumps/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/mumps/Makefile 454187 2017-11-14 18:29:22Z thierry $
 
 PORTNAME=	mumps
 PORTVERSION=	4.10.0	# Please do not upgrade to 5+: if needed repocopy to math/mumps5
@@ -42,6 +42,8 @@ USE_LDCONFIG=	yes
 VEM=		${PORTVERSION:R:R}
 LIBS=		cmumps dmumps mumps_common pord smumps zmumps
 
+CONFLICTS=	mumps-5*
+
 .if defined(WITH_OPTIMIZED_FLAGS)
 FFLAGS+=	-O3 -ffast-math
 .endif
@@ -80,9 +82,9 @@ LIB_DEPENDS+=	liblapack.so:math/lapack
 RUN_DEPENDS+=	${LOCALBASE}/bin/mpirun:net/mpich2 \
 		${LOCALBASE}/lib/libblacs.a:math/blacs \
 		${LOCALBASE}/lib/libscalapack.a:math/scalapack
-CONFLICTS=	mumps-4*
+CONFLICTS+=	mumps-4*
 .else
-CONFLICTS=	mumps-mpich-4*
+CONFLICTS+=	mumps-mpich-4*
 .endif
 
 .ifndef WITH_MPI

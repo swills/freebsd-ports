@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.options.desc.mk 447745 2017-08-11 08:33:19Z mandree $
+# $FreeBSD: head/Mk/bsd.options.desc.mk 454235 2017-11-15 12:40:07Z tobik $
 #
 # READ BEFORE EDITING:
 # - Please keep descriptions sorted alphabetically by variable name.
@@ -89,6 +89,7 @@ FFMPEG_DESC?=		FFmpeg support (WMA, AIFF, AC3, APE...)
 FFTW_DESC?=		Discrete Fourier Transform support
 FINGER_DESC?=		finger(1) user information support
 FIREBIRD_DESC?=		Firebird (Interbase) database support
+FISH_DESC?=		Install programmable completions for Fish
 FLAC_DESC?=		FLAC lossless audio codec support
 FLICKR_DESC?=		Flickr support via flickcurl
 FLUIDSYNTH_DESC?=	MIDI playback support via FluidSynth

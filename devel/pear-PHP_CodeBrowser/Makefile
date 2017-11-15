@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-PHP_CodeBrowser/Makefile 443135 2017-06-11 02:28:06Z sunpoet $
+# $FreeBSD: head/devel/pear-PHP_CodeBrowser/Makefile 453994 2017-11-11 19:44:46Z joneum $
 
 PORTNAME=	PHP_CodeBrowser
 PORTVERSION=	1.0.2
@@ -10,17 +10,17 @@ PKGNAMEPREFIX=	pear-
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Code browser that augments the code with information
 
-BUILD_DEPENDS=	pear-Console_CommandLine>=1.1.3:devel/pear-Console_CommandLine \
-		pear-File_Iterator>=1.3.0:devel/pear-File_Iterator \
-		pear-Log>=1.2.1:sysutils/pear-Log
-RUN_DEPENDS=	pear-Console_CommandLine>=1.1.3:devel/pear-Console_CommandLine \
-		pear-File_Iterator>=1.3.0:devel/pear-File_Iterator \
-		pear-Log>=1.2.1:sysutils/pear-Log
+LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN=		unfetchable, redirects to https://phpunit.de/
+BUILD_DEPENDS=	pear-Console_CommandLine>=1.2.2:devel/pear-Console_CommandLine \
+		pear-File_Iterator>=1.4.2:devel/pear-File_Iterator \
+		pear-Log>=1.13.1:sysutils/pear-Log
+RUN_DEPENDS=	pear-Console_CommandLine>=1.2.2:devel/pear-Console_CommandLine \
+		pear-File_Iterator>=1.4.2:devel/pear-File_Iterator \
+		pear-Log>=1.13.1:sysutils/pear-Log
 
-USES=	pear
-USE_PHP=	dom
+USES=	pear php
 PEAR_CHANNEL=	phpunit
 
 .include <bsd.port.mk>

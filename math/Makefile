@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 451988 2017-10-13 12:58:21Z ler $
+# $FreeBSD: head/math/Makefile 454187 2017-11-14 18:29:22Z thierry $
 #
 
     COMMENT = Mathematics
@@ -115,7 +115,6 @@
     SUBDIR += aspcud
     SUBDIR += asymptote
     SUBDIR += atlas
-    SUBDIR += bargraph
     SUBDIR += biggles
     SUBDIR += blacs
     SUBDIR += blas
@@ -317,6 +316,7 @@
     SUBDIR += mtl
     SUBDIR += mtrxmath
     SUBDIR += mumps
+    SUBDIR += mumps-edf
     SUBDIR += mumps-mpich
     SUBDIR += muparser
     SUBDIR += naturalmath

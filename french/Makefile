@@ -1,11 +1,10 @@
-# $FreeBSD: head/french/Makefile 443772 2017-06-17 13:44:51Z rakuco $
+# $FreeBSD: head/french/Makefile 454187 2017-11-14 18:29:22Z thierry $
 #
 
     COMMENT = French support
 
     SUBDIR += aspell
     SUBDIR += aster
-    SUBDIR += eficas
     SUBDIR += eric6
     SUBDIR += fortune-mod-zarathoustra
     SUBDIR += geonext

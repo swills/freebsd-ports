@@ -1,5 +1,5 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/multimedia/libvpx/Makefile 451562 2017-10-08 18:57:40Z jbeich $
+# $FreeBSD: head/multimedia/libvpx/Makefile 454171 2017-11-14 10:14:45Z jbeich $
 
 PORTNAME=	libvpx
 DISTVERSIONPREFIX=	v
@@ -7,13 +7,16 @@ DISTVERSION=	1.6.1
 PORTREVISION=	2
 CATEGORIES=	multimedia
 
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	bc4bc9b6223d.patch:-p1
+
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	VP8/VP9 Codec SDK
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	yasm:devel/yasm
+BUILD_DEPENDS=	nasm:devel/nasm
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	webmproject

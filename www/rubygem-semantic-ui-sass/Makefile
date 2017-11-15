@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/rubygem-semantic-ui-sass/Makefile 449296 2017-09-05 16:11:11Z sunpoet $
+# $FreeBSD: head/www/rubygem-semantic-ui-sass/Makefile 453920 2017-11-10 19:03:47Z sunpoet $
 
 PORTNAME=	semantic-ui-sass
-PORTVERSION=	2.2.12.0
+PORTVERSION=	2.2.12.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

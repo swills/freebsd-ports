@@ -1,15 +1,15 @@
-# $FreeBSD: head/devel/relx/Makefile 445806 2017-07-14 19:21:57Z olgeni $
+# $FreeBSD: head/devel/relx/Makefile 454129 2017-11-13 18:54:51Z olgeni $
 
 PORTNAME=	relx
-PORTVERSION=	3.23.1
+PORTVERSION=	3.24.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 MASTER_SITES+=	LOCAL/olgeni:deps \
 		http://olgeni.olgeni.com/~olgeni/distfiles/:deps \
 		https://s3.amazonaws.com/s3.hex.pm/tarballs/:hex
-DISTFILES=	relx-cache-14${EXTRACT_SUFX}:deps
+DISTFILES=	relx-cache-15${EXTRACT_SUFX}:deps
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX} \
-		relx-cache-14${EXTRACT_SUFX}
+		relx-cache-15${EXTRACT_SUFX}
 
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Sane, simple release creation for Erlang
@@ -29,8 +29,8 @@ GH_ACCOUNT=	erlware
 
 REBAR_DEPS=	bbmustache-1.0.4 \
 		cf-0.2.2 \
-		erlware_commons-1.0.0 \
-		getopt-0.8.2 \
+		erlware_commons-1.0.2 \
+		getopt-1.0.1 \
 		providers-1.6.0
 
 .for _dep in ${REBAR_DEPS}

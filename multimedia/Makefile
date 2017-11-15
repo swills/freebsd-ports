@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 452251 2017-10-16 20:37:21Z rene $
+# $FreeBSD: head/multimedia/Makefile 454051 2017-11-12 15:56:40Z rene $
 #
 
     COMMENT = Multimedia software
@@ -306,7 +306,6 @@
     SUBDIR += php-pHash
     SUBDIR += pitivi
     SUBDIR += playd
-    SUBDIR += plexhometheater
     SUBDIR += plexmediaserver
     SUBDIR += plexmediaserver-plexpass
     SUBDIR += plexpy
@@ -328,6 +327,7 @@
     SUBDIR += py-kaa-imlib2
     SUBDIR += py-kaa-metadata
     SUBDIR += py-librtmp
+    SUBDIR += py-mido
     SUBDIR += py-mlt
     SUBDIR += py-moviepy
     SUBDIR += py-openlp
@@ -373,6 +373,7 @@
     SUBDIR += sabbu
     SUBDIR += schroedinger
     SUBDIR += shotcut
+    SUBDIR += simplescreenrecorder
     SUBDIR += smpeg
     SUBDIR += smpeg2
     SUBDIR += smplayer

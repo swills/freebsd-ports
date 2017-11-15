@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 453761 2017-11-08 18:53:49Z ehaupt $
+# $FreeBSD: head/textproc/Makefile 453966 2017-11-11 10:30:10Z rene $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -524,7 +524,6 @@
     SUBDIR += ny-aspell
     SUBDIR += ocaml-csv
     SUBDIR += ocaml-expat
-    SUBDIR += ocaml-pxp
     SUBDIR += ocaml-text
     SUBDIR += ocaml-tyxml
     SUBDIR += odt2txt

@@ -1,9 +1,9 @@
 # Created by: Anton Tornqvist <antont@inbox.lv>
-# $FreeBSD: head/editors/neovim/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/editors/neovim/Makefile 453954 2017-11-11 07:17:10Z tcberner $
 
 PORTNAME=	neovim
-PORTVERSION=	0.2.0
 DISTVERSIONPREFIX=	v
+DISTVERSION=	0.2.1
 CATEGORIES=	editors
 
 MAINTAINER=	gor@clogic.com.ua

@@ -1,12 +1,12 @@
-# $FreeBSD: head/security/gnupg/Makefile 450153 2017-09-19 18:31:49Z adamw $
+# $FreeBSD: head/security/gnupg/Makefile 453850 2017-11-09 17:03:22Z adamw $
 
 PORTNAME=	gnupg
-PORTVERSION=	2.2.1
+PORTVERSION=	2.2.2
 CATEGORIES=	security
 MASTER_SITES=	GNUPG
 
 MAINTAINER=	adamw@FreeBSD.org
-COMMENT=	The GNU Privacy Guard (modern version)
+COMMENT=	Complete and free PGP implementation
 
 LICENSE=	GPLv3 LGPL3
 LICENSE_COMB=	multi

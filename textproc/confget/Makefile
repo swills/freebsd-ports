@@ -1,8 +1,8 @@
 # Created by: Peter Pentchev <roam@FreeBSD.org>
-# $FreeBSD: head/textproc/confget/Makefile 412754 2016-04-08 16:27:51Z sunpoet $
+# $FreeBSD: head/textproc/confget/Makefile 454132 2017-11-13 19:35:30Z sunpoet $
 
 PORTNAME=	confget
-PORTVERSION=	2.0.0
+PORTVERSION=	2.1.0
 CATEGORIES=	textproc
 MASTER_SITES=	http://devel.ringlet.net/files/textproc/confget/ \
 		LOCAL/sunpoet

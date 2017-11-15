@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/p5-Config-Model/Makefile 451973 2017-10-13 09:20:23Z sunpoet $
+# $FreeBSD: head/devel/p5-Config-Model/Makefile 454138 2017-11-13 19:36:01Z sunpoet $
 
 PORTNAME=	Config-Model
-PORTVERSION=	2.113
+PORTVERSION=	2.114
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -27,7 +27,6 @@ BUILD_DEPENDS=	p5-Carp-Assert-More>=0:devel/p5-Carp-Assert-More \
 		p5-Pod-POM>=0:textproc/p5-Pod-POM \
 		p5-Regexp-Common>=0:textproc/p5-Regexp-Common \
 		p5-Term-ReadLine-Perl>=0:devel/p5-Term-ReadLine-Perl \
-		p5-Text-Diff>=0:textproc/p5-Text-Diff \
 		p5-Text-Levenshtein-Damerau>=0:devel/p5-Text-Levenshtein-Damerau
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Config-Model-Tester>=2.059:devel/p5-Config-Model-Tester \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 453103 2017-10-29 09:20:57Z tcberner $
+# $FreeBSD: head/graphics/Makefile 454053 2017-11-12 16:19:06Z rene $
 #
 
     COMMENT = Graphics tools and libraries
@@ -236,7 +236,6 @@
     SUBDIR += geomorph
     SUBDIR += geomview
     SUBDIR += geos
-    SUBDIR += geos35
     SUBDIR += geoserver
     SUBDIR += gexiv2
     SUBDIR += giblib

@@ -1,8 +1,8 @@
 # Created by: mm
-# $FreeBSD: head/sysutils/cciss_vol_status/Makefile 375112 2014-12-20 19:42:45Z bapt $
+# $FreeBSD: head/sysutils/cciss_vol_status/Makefile 454032 2017-11-12 11:26:36Z robak $
 
 PORTNAME=	cciss_vol_status
-PORTVERSION=	1.11
+PORTVERSION=	1.12
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/cciss/${PORTNAME}
 

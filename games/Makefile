@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 453416 2017-11-03 17:09:20Z amdmi3 $
+# $FreeBSD: head/games/Makefile 453966 2017-11-11 10:30:10Z rene $
 #
 
     COMMENT = Games and related software
@@ -576,7 +576,6 @@
     SUBDIR += lmarbles
     SUBDIR += lmpc
     SUBDIR += lolcat
-    SUBDIR += lordsawar
     SUBDIR += lpairs
     SUBDIR += lskat
     SUBDIR += ltris

@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/p5-Net-Frame-Simple/Makefile 440424 2017-05-08 12:44:13Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Frame-Simple/Makefile 453914 2017-11-10 19:03:15Z sunpoet $
 
 PORTNAME=	Net-Frame-Simple
-PORTVERSION=	1.08
+PORTVERSION=	1.09
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

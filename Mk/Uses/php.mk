@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/php.mk 449499 2017-09-09 16:49:29Z joneum $
+# $FreeBSD: head/Mk/Uses/php.mk 453852 2017-11-09 18:05:11Z mat $
 #
 # Support for PHP-based ports.
 #
@@ -235,8 +235,6 @@ _INCLUDE_USES_PHP_POST_MK=yes
 
 .  if ${php_ARGS:Mext} || ${php_ARGS:Mzend}
 PHP_MODNAME?=	${PORTNAME}
-PHP_EXT_PKGMESSAGE=	${WRKDIR}/php-ext-pkg-message
-_PKGMESSAGES+=	${PHP_EXT_PKGMESSAGE}
 PHP_HEADER_DIRS+=	.
 # If there is no priority defined, we wing it.
 .    if !defined(PHP_MOD_PRIO)
@@ -285,18 +283,6 @@ add-plist-phpext:
 		>> ${TMPPLIST}
 	@${ECHO_CMD} "${PHP_EXT_INI_FILE}" \
 		>> ${TMPPLIST}
-	@${ECHO_CMD} "****************************************************************************" > ${PHP_EXT_PKGMESSAGE}
-	@${ECHO_CMD} "" >> ${PHP_EXT_PKGMESSAGE}
-	@${ECHO_CMD} "The following line has been added to your ${PREFIX}/${PHP_EXT_INI_FILE}" >> ${PHP_EXT_PKGMESSAGE}
-	@${ECHO_CMD} "configuration file to automatically load the installed extension:" >> ${PHP_EXT_PKGMESSAGE}
-	@${ECHO_CMD} "" >> ${PHP_EXT_PKGMESSAGE}
-.    if ${php_ARGS:Mzend}
-	@${ECHO_CMD} "zend_extension=${PHP_MODNAME}.so" >> ${PHP_EXT_PKGMESSAGE}
-.    else
-	@${ECHO_CMD} "extension=${PHP_MODNAME}.so" >> ${PHP_EXT_PKGMESSAGE}
-.    endif
-	@${ECHO_CMD} "" >> ${PHP_EXT_PKGMESSAGE}
-	@${ECHO_CMD} "****************************************************************************" >> ${PHP_EXT_PKGMESSAGE}
 .  endif
 
 # Extensions

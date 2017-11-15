@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/dns/rubygem-validates_hostname/Makefile 438629 2017-04-16 11:07:11Z sunpoet $
+# $FreeBSD: head/dns/rubygem-validates_hostname/Makefile 454210 2017-11-14 22:51:02Z sunpoet $
 
 PORTNAME=	validates_hostname
-PORTVERSION=	1.0.7
+PORTVERSION=	1.0.8
 CATEGORIES=	dns rubygems
 MASTER_SITES=	RG
 

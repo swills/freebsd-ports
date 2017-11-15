@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 453390 2017-11-03 07:12:51Z rene $
+# $FreeBSD: head/databases/Makefile 454052 2017-11-12 16:00:41Z rene $
 #
 
     COMMENT = Databases and related software
@@ -27,7 +27,6 @@
     SUBDIR += buzhug
     SUBDIR += c3p0
     SUBDIR += cassandra-cpp-driver
-    SUBDIR += cassandra2
     SUBDIR += casstcl
     SUBDIR += cdb
     SUBDIR += cego
@@ -57,7 +56,6 @@
     SUBDIR += elixir-calecto
     SUBDIR += elixir-db_connection
     SUBDIR += elixir-ecto
-    SUBDIR += elixir-ecto_migrate
     SUBDIR += elixir-exredis
     SUBDIR += elixir-geo
     SUBDIR += elixir-mariaex
@@ -92,7 +90,6 @@
     SUBDIR += gdbm
     SUBDIR += geoserver-mysql-plugin
     SUBDIR += gigabase
-    SUBDIR += glom
     SUBDIR += gnats4
     SUBDIR += gnatsweb4
     SUBDIR += gomdb

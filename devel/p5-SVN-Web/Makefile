@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-SVN-Web/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-SVN-Web/Makefile 453819 2017-11-09 14:48:35Z danfe $
 
 PORTNAME=	SVN-Web
 PORTVERSION=	0.63
@@ -39,8 +39,6 @@ USES=		perl5 shebangfix
 SHEBANG_FILES=	bin/svnweb-install
 USE_PERL5=	configure
 CONFIGURE_ARGS=	--skip_questions
-
-BROKEN_powerpc=	Does not configure on powerpc
 
 post-install:
 	@${MKDIR} -p ${STAGEDIR}${WWWDIR}

@@ -1,21 +1,20 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/games/emptyepsilon/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/emptyepsilon/Makefile 454084 2017-11-12 21:27:12Z yuri $
 
 PORTNAME=	emptyepsilon
-PORTVERSION=	2017.05.06
-PORTREVISION=	1
 DISTVERSIONPREFIX=	EE-
+DISTVERSION=	2017.11.03
 CATEGORIES=	games
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Spaceship bridge simulator game
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	libsfml-system.so:devel/sfml
-
 BROKEN_powerpc64=	fails to compile: scienceDatabase.cpp: call of overloaded 'abs(float)' is ambiguous
+
+LIB_DEPENDS=	libsfml-system.so:devel/sfml
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	daid

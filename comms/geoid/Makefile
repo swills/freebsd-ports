@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/geoid/Makefile 452001 2017-10-13 14:19:26Z bapt $
+# $FreeBSD: head/comms/geoid/Makefile 454024 2017-11-12 09:04:42Z amdmi3 $
 
 PORTNAME=	geoid
 PORTVERSION=	1.0
@@ -12,6 +12,9 @@ EXTRACT_SUFX=	.src.tar.gz
 MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Geodetic computer for amateur radio use
 
+LICENSE=	GPLv2+ NONE  # only one src file contains license
+LICENSE_COMB=	multi
+
 LIB_DEPENDS=	libfltk.so:x11-toolkits/fltk
 
 USES=		gmake
@@ -22,9 +25,9 @@ post-patch:
 		's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/geoid.cxx
 
 do-install:
-	@${INSTALL_PROGRAM} ${WRKSRC}/geoid ${STAGEDIR}${PREFIX}/bin
-	@${INSTALL_DATA} ${WRKSRC}/geoid.png ${STAGEDIR}${PREFIX}/share/pixmaps
+	${INSTALL_PROGRAM} ${WRKSRC}/geoid ${STAGEDIR}${PREFIX}/bin
+	${INSTALL_DATA} ${WRKSRC}/geoid.png ${STAGEDIR}${PREFIX}/share/pixmaps
 	@${MKDIR} ${STAGEDIR}${DATADIR}
-	@${INSTALL_DATA}	${WRKSRC}/country.pos ${STAGEDIR}${DATADIR}
+	${INSTALL_DATA} ${WRKSRC}/country.pos ${STAGEDIR}${DATADIR}
 
 .include <bsd.port.mk>

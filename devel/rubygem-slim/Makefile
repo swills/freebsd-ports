@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-slim/Makefile 440376 2017-05-07 21:26:54Z sunpoet $
+# $FreeBSD: head/devel/rubygem-slim/Makefile 453918 2017-11-10 19:03:37Z sunpoet $
 
 PORTNAME=	slim
-PORTVERSION=	3.0.8
+PORTVERSION=	3.0.9
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

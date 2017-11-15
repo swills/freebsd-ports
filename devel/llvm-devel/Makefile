@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/llvm-devel/Makefile 453163 2017-10-30 10:19:40Z brooks $
+# $FreeBSD: head/devel/llvm-devel/Makefile 454097 2017-11-13 02:47:52Z brooks $
 
 PORTNAME=	llvm
 PORTVERSION=	${LLVM_MAJOR}.d${SNAPDATE}
@@ -269,7 +269,7 @@ PLIST_SUB+=	OPENMP="@comment "
 .else
 .endif
 
-MAN1SRCS+=	bugpoint.1 llc.1 lli.1 llvm-ar.1 llvm-as.1 \
+MAN1SRCS+=	bugpoint.1 dsymutil.1 llc.1 lli.1 llvm-ar.1 llvm-as.1 \
 		llvm-bcanalyzer.1 llvm-build.1 llvm-config.1 llvm-cov.1 \
 		llvm-diff.1 llvm-dis.1 llvm-dwarfdump.1 \
 		llvm-extract.1 llvm-lib.1 llvm-link.1 llvm-nm.1 \

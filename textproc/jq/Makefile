@@ -1,5 +1,5 @@
 # Created by: Jui-Nan Lin <jnlin@csie.nctu.edu.tw>
-# $FreeBSD: head/textproc/jq/Makefile 445643 2017-07-13 10:52:33Z pi $
+# $FreeBSD: head/textproc/jq/Makefile 454042 2017-11-12 14:00:48Z riggs $
 
 PORTNAME=	jq
 PORTVERSION=	1.5
@@ -33,7 +33,7 @@ DOCS_MAKE_ARGS_OFF=	docdir=
 DOCS_CONFIGURE_ENABLE=	docs
 
 ONIGURUMA_DESC=		With oniguruma BSDL regular expression library
-ONIGURUMA_LIB_DEPENDS=	libonig.so:devel/oniguruma6
+ONIGURUMA_LIB_DEPENDS=	libonig.so:devel/oniguruma
 #ONIGURUMA_CONFIGURE_WITH=oniguruma=${LOCALBASE} # pending resolution of https://github.com/stedolan/jq/issues/1021, next line is the workaround
 ONIGURUMA_CONFIGURE_ON=	--with-oniguruma=${LOCALBASE}
 

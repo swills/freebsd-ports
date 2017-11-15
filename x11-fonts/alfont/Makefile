@@ -1,17 +1,14 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/alfont/Makefile 446387 2017-07-22 11:01:38Z antoine $
+# $FreeBSD: head/x11-fonts/alfont/Makefile 454035 2017-11-12 12:35:22Z rene $
 
 PORTNAME=	alfont
 PORTVERSION=	209
 PORTREVISION=	3
 CATEGORIES=	x11-fonts
-MASTER_SITES=	http://opensnc.sourceforge.net/alfont/mirror/ \
-		SF/nemysisfreebsdp/${CATEGORIES}/${PORTNAME}/:nemysis
-#		http://opensnc.sourceforge.net/alfont/:opensnc
-DISTFILES=	AlFont${DISTVERSION}.rar \
-		alfont.c:nemysis
+MASTER_SITES=	http://opensnc.sourceforge.net/alfont/mirror/
+DISTNAME=	AlFont${DISTVERSION}
+EXTRACT_SUFX=	.rar
 DIST_SUBDIR=	${PORTNAME}
-EXTRACT_ONLY=	AlFont${DISTVERSION}.rar
 
 MAINTAINER=	nemysis@FreeBSD.org
 COMMENT=	Wrapper around the freetype2 library
@@ -20,10 +17,6 @@ LICENSE=	FTL
 LICENSE_NAME=	The FreeType Project LICENSE (FTL)
 LICENSE_FILE=	${WRKSRC}/docs/FTL.txt
 LICENSE_PERMS=	auto-accept
-
-BROKEN=		unfetchable
-DEPRECATED=	Broken for more than 6 months
-EXPIRATION_DATE=	2017-08-23
 
 EXTRACT_DEPENDS=	unrar:archivers/unrar
 LIB_DEPENDS=	liballeg.so.4:devel/allegro \
@@ -62,8 +55,6 @@ do-extract:
 		${_DISTDIR}/AlFont${DISTVERSION}.rar
 
 post-patch:
-	@${CP} -af ${_DISTDIR}/alfont.c ${WRKSRC}/src
-
 	@${REINPLACE_CMD} -e \
 		's|#define ALFONT_WINDOWS|//#define ALFONT_WINDOWS|; \
 		 s|//#define ALFONT_LINUX|#define ALFONT_LINUX|; \

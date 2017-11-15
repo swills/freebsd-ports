@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-tzdata/Makefile 438788 2017-04-18 18:16:39Z olgeni $
+# $FreeBSD: head/devel/elixir-tzdata/Makefile 454106 2017-11-13 12:10:01Z olgeni $
 
 PORTNAME=	tzdata
-PORTVERSION=	0.5.12
+PORTVERSION=	0.5.13
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

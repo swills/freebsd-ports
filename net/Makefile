@@ -1,5 +1,5 @@
 
-# $FreeBSD: head/net/Makefile 453637 2017-11-06 17:59:15Z rene $
+# $FreeBSD: head/net/Makefile 453995 2017-11-11 19:57:17Z joneum $
 #
 
     COMMENT = Networking tools
@@ -92,6 +92,7 @@
     SUBDIR += cvsup-static
     SUBDIR += cvsync
     SUBDIR += czmq
+    SUBDIR += czmq4
     SUBDIR += daemonlogger
     SUBDIR += dante
     SUBDIR += daq
@@ -556,7 +557,6 @@
     SUBDIR += p5-Event-tcp
     SUBDIR += p5-File-Rsync
     SUBDIR += p5-File-RsyncP
-    SUBDIR += p5-Filesys-SmbClient
     SUBDIR += p5-Frontier-RPC
     SUBDIR += p5-Geo-IP
     SUBDIR += p5-Geo-IP-PurePerl

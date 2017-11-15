@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/tap-plugins-lv2/Makefile 452397 2017-10-19 06:28:40Z swills $
+# $FreeBSD: head/audio/tap-plugins-lv2/Makefile 454028 2017-11-12 10:11:32Z yuri $
 
 PORTNAME=	tap-plugins
 PORTVERSION=	g20160125
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	LV2 port for the TAP (Tom's Audio Processing) plugins
 
 LICENSE=	GPLv2
@@ -21,11 +21,7 @@ GH_ACCOUNT=	moddevices
 GH_PROJECT=	tap-lv2
 GH_TAGNAME=	de26a3c
 
-post-patch:
-	@${REINPLACE_CMD} -e 's| -O3||; s| -Wl,-O1||; s| -fstrength-reduce||; s| -Wl,--strip-all||' \
-		${WRKSRC}/Makefile.mk
-	@${REINPLACE_CMD} -e 's|^inline$$||' \
-		${WRKSRC}/dynamics/tap_dynamics.c
+MAKE_ENV+=	NOOPT=true
 
 post-install:
 	@${STRIP_CMD} \

@@ -1,9 +1,9 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc7/Makefile 451719 2017-10-10 19:20:31Z andreast $
+# $FreeBSD: head/lang/gcc7/Makefile 454177 2017-11-14 14:05:47Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	7.2.0
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	lang
 MASTER_SITES=	GCC/releases/gcc-${DISTVERSION}
 PKGNAMESUFFIX=	${SUFFIX}
@@ -82,6 +82,10 @@ CONFIGURE_ARGS+=--disable-bootstrap
 .else
 CONFIGURE_ARGS+=--with-build-config=bootstrap-debug
 ALL_TARGET=	bootstrap-lean
+.endif
+INSTALL_TARGET=	install-strip
+.if ${UID} != 0
+BINMODE=	755
 .endif
 CONFIGURE_ARGS+=--disable-nls \
 		--enable-gnu-indirect-function \

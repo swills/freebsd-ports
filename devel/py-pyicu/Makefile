@@ -1,9 +1,9 @@
 # Created by: bland@FreeBSD.org
-# $FreeBSD: head/devel/py-pyicu/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/devel/py-pyicu/Makefile 454243 2017-11-15 13:32:33Z bland $
 
 PORTNAME=	pyicu
-PORTVERSION=	1.9.4
-PORTREVISION=	6
+PORTVERSION=	1.9.8
+PORTREVISION=
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,6 +18,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libicudata.so:devel/icu
 
 USES?=		python
+USE_CXXSTD=	c++11
 USE_PYTHON=	distutils autoplist
 
 MAKE_ENV+=	PYICU_INCLUDES="${LOCALBASE}/include" \

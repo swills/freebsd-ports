@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 453452 2017-11-04 11:33:52Z jbeich $
+# $FreeBSD: head/Mk/bsd.gecko.mk 454152 2017-11-13 22:21:47Z jbeich $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -602,15 +602,6 @@ gecko-moz-pis-patch:
 .for moz in ${MOZ_PIS_SCRIPTS}
 	@${MOZCONFIG_SED} < ${FILESDIR}/${moz} > ${WRKDIR}/${moz}
 .endfor
-
-do-configure: gecko-do-configure
-
-gecko-do-configure:
-		@(if ! ${CONFIGURE_ENV} ${DO_MAKE_BUILD} configure; then \
-			 ${ECHO_MSG} "===>  Script \"${CONFIGURE_SCRIPT}\" failed unexpectedly."; \
-			 (${ECHO_CMD} ${CONFIGURE_FAIL_MESSAGE}) | ${FMT_80} ; \
-			 ${FALSE}; \
-		fi)
 
 pre-install: gecko-moz-pis-pre-install
 post-install-script: gecko-create-plist

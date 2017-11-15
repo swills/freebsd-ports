@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-toolkits/rubygem-gtk2/Makefile 452440 2017-10-19 17:21:13Z sunpoet $
+# $FreeBSD: head/x11-toolkits/rubygem-gtk2/Makefile 453833 2017-11-09 16:02:47Z sunpoet $
 
 PORTNAME=	gtk2
-PORTVERSION=	3.1.9
+PORTVERSION=	3.2.0
 CATEGORIES=	x11-toolkits rubygems
 MASTER_SITES=	RG
 

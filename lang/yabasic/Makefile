@@ -1,5 +1,5 @@
 # Created by: Frank Gruender <elwood@mc5sys.in-berlin.de>
-# $FreeBSD: head/lang/yabasic/Makefile 430454 2017-01-03 11:01:05Z mat $
+# $FreeBSD: head/lang/yabasic/Makefile 453964 2017-11-11 09:04:41Z amdmi3 $
 
 PORTNAME=	yabasic
 PORTVERSION=	2.769
@@ -15,6 +15,7 @@ LICENSE_COMB=	multi
 USES=		bison ncurses
 GNU_CONFIGURE=	yes
 USE_XORG=	ice sm x11
+TEST_TARGET=	check
 
 PORTDOCS=	yabasic.htm
 PLIST_FILES=	bin/yabasic man/man1/yabasic.1.gz
@@ -29,10 +30,7 @@ post-patch:
 	@${REINPLACE_CMD} -e \
 		'/Intrinsic.h/d' ${WRKSRC}/yabasic.h
 
-post-build test:
-	@(cd ${WRKSRC} && ${DO_MAKE_BUILD} check)
-
-post-install:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	(cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR})
 

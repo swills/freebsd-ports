@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-phply/Makefile 453112 2017-10-29 12:37:59Z dbaio $
+# $FreeBSD: head/devel/py-phply/Makefile 453988 2017-11-11 18:37:36Z dbaio $
 
 PORTNAME=	phply
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

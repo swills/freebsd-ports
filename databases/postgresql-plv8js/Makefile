@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/databases/postgresql-plv8js/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/databases/postgresql-plv8js/Makefile 453809 2017-11-09 14:13:44Z vanilla $
 
 PORTNAME=	plv8
 PORTVERSION=	1.4.8
@@ -9,7 +9,7 @@ CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql${PGSQL_VER:S/.//}-
 PKGNAMESUFFIX=	js
 
-MAINTAINER=	vanilla@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PL/v8js procedural language for PostgreSQL database
 
 LICENSE=	PostgreSQL

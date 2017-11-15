@@ -1,8 +1,8 @@
 # Created by: kftseng@iyard.org
-# $FreeBSD: head/security/p5-Crypt-OpenSSL-X509/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-Crypt-OpenSSL-X509/Makefile 454016 2017-11-11 23:32:26Z sunpoet $
 
 PORTNAME=	Crypt-OpenSSL-X509
-PORTVERSION=	1.807
+PORTVERSION=	1.808
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

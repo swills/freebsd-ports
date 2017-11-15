@@ -1,23 +1,27 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/french/homard/Makefile 426042 2016-11-13 12:44:13Z thierry $
+# $FreeBSD: head/french/homard/Makefile 454187 2017-11-14 18:29:22Z thierry $
 
 PORTNAME=	homard
 DISTVERSION=	11.7-1
+PORTREVISION=	1
 CATEGORIES=	french cad linux
 
 MAINTAINER=	thierry@FreeBSD.org
 COMMENT=	Refinement and de-refinement mesh tool
 
 BUILD_DEPENDS=	${LOCALBASE}/aster/${VER}/bin/aster:french/aster
-RUN_DEPENDS=	${LOCALBASE}/aster/${VER}/bin/aster:french/aster
+RUN_DEPENDS=	${LOCALBASE}/bin/bash:shells/bash		\
+		${LOCALBASE}/aster/${VER}/bin/aster:french/aster
 
 RESTRICTED=	The free downloading of HOMARD software is only allowed for coupling\
 		with Code_Aster. For any other use, a license agreement is requested.\
 		Please contact HOMARD project: <homard@edf.fr>.
 
-ONLY_FOR_ARCHS=	i386 amd64
+ONLY_FOR_ARCHS=	amd64 i386
 
-USES=		linux python
+USES=		linux python shebangfix
+SHEBANG_FILES=	${WRKSRC}/ASTER_HOMARD/homard	\
+		${WRKSRC}/homard_base ${WRKSRC}/setup_homard.py
 REINPLACE_ARGS=	-i ""
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:R}

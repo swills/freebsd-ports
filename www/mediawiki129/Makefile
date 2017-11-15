@@ -1,8 +1,8 @@
 # Created by: Gerrit Beine <tux@pinguru.net>
-# $FreeBSD: head/www/mediawiki129/Makefile 448800 2017-08-27 03:48:21Z wen $
+# $FreeBSD: head/www/mediawiki129/Makefile 454245 2017-11-15 13:44:50Z wen $
 
 PORTNAME=	mediawiki
-PORTVERSION=	1.29.1
+PORTVERSION=	1.29.2
 CATEGORIES=	www
 MASTER_SITES=	http://releases.wikimedia.org/mediawiki/${PORTVERSION:R}/
 PKGNAMESUFFIX=	129

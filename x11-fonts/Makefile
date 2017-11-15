@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 447027 2017-08-01 16:39:29Z tcberner $
+# $FreeBSD: head/x11-fonts/Makefile 454027 2017-11-12 09:35:29Z yuri $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -54,6 +54,7 @@
     SUBDIR += font-adobe-utopia-type1
     SUBDIR += font-alias
     SUBDIR += font-arabic-misc
+    SUBDIR += font-awesome
     SUBDIR += font-bh-100dpi
     SUBDIR += font-bh-75dpi
     SUBDIR += font-bh-lucidatypewriter-100dpi

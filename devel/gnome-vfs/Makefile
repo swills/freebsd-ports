@@ -1,5 +1,5 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/devel/gnome-vfs/Makefile 436925 2017-03-25 23:37:05Z antoine $
+# $FreeBSD: head/devel/gnome-vfs/Makefile 454102 2017-11-13 09:04:43Z amdmi3 $
 
 PORTNAME=	gnome-vfs
 PORTVERSION=	2.24.4
@@ -10,6 +10,11 @@ DIST_SUBDIR=	gnome2
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	GNOME Virtual File System
+
+LICENSE=	LGPL20 LGPL20+  # dbus-utils.c is LGPL20 only
+LICENSE_COMB=	multi
+LICENSE_FILE_LGPL20=	${WRKSRC}/COPYING.LIB
+LICENSE_FILE_LGPL20+ =	${WRKSRC}/COPYING.LIB
 
 USES=		tar:bzip2
 

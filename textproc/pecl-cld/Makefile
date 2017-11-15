@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/textproc/pecl-cld/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/textproc/pecl-cld/Makefile 454055 2017-11-12 16:43:58Z rene $
 
 PORTNAME=	cld
 PORTVERSION=	0.5.0
@@ -10,6 +10,9 @@ MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PHP Bindings for Chromium Compact Language Detector
 
 LICENSE=	BSD2CLAUSE
+
+DEPRECATED=	Depends on expired devel/cld
+EXPIRATION_DATE=2017-12-12
 
 LIB_DEPENDS=	libcld.so:devel/cld
 

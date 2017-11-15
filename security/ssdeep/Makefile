@@ -1,10 +1,10 @@
 # Created by: Nobutaka Mantani <nobutaka@FreeBSD.org>
-# $FreeBSD: head/security/ssdeep/Makefile 394436 2015-08-17 06:38:04Z nobutaka $
+# $FreeBSD: head/security/ssdeep/Makefile 453951 2017-11-11 07:02:31Z nobutaka $
 
 PORTNAME=	ssdeep
-PORTVERSION=	2.13
+PORTVERSION=	2.14.1
 CATEGORIES=	security
-MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION}
+MASTER_SITES=	https://github.com/ssdeep-project/ssdeep/releases/download/release-${PORTVERSION}/
 
 MAINTAINER=	nobutaka@FreeBSD.org
 COMMENT=	Tool for computing context triggered piecewise hashes

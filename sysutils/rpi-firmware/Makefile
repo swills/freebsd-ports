@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/rpi-firmware/Makefile 448432 2017-08-20 15:23:11Z swills $
+# $FreeBSD: head/sysutils/rpi-firmware/Makefile 454131 2017-11-13 19:29:34Z manu $
 
 PORTNAME=	rpi-firmware
-PORTVERSION=	1.20170811
+PORTVERSION=	1.20171029
 CATEGORIES=	sysutils
 
 MAINTAINER=	manu@freebsd.org

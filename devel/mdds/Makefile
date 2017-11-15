@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/mdds/Makefile 442305 2017-06-01 19:06:32Z jkim $
+# $FreeBSD: head/devel/mdds/Makefile 454218 2017-11-14 23:10:59Z jkim $
 
 PORTNAME=	mdds
-PORTVERSION=	1.2.3
+PORTVERSION=	1.3.1
 CATEGORIES=	devel
 MASTER_SITES=	http://kohei.us/files/mdds/src/
 

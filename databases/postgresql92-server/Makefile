@@ -1,9 +1,9 @@
 # Created by: Marc G. Fournier <scrappy@FreeBSD.org>
-# $FreeBSD: head/databases/postgresql92-server/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/databases/postgresql92-server/Makefile 453847 2017-11-09 16:11:21Z girgen $
 
 PORTNAME?=	postgresql
-DISTVERSION?=	9.2.23
-PORTREVISION?=	2
+DISTVERSION?=	9.2.24
+PORTREVISION?=	0
 CATEGORIES?=	databases
 MASTER_SITES=	PGSQL/source/v${DISTVERSION}
 PKGNAMESUFFIX?=	${PORTVERSION:R:S/.//}${COMPONENT}

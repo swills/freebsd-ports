@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-crass/Makefile 442660 2017-06-05 14:53:01Z sunpoet $
+# $FreeBSD: head/www/rubygem-crass/Makefile 454215 2017-11-14 22:51:28Z sunpoet $
 
 PORTNAME=	crass
-PORTVERSION=	1.0.2
+PORTVERSION=	1.0.3
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

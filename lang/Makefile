@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 453265 2017-11-01 07:40:54Z rene $
+# $FreeBSD: head/lang/Makefile 454076 2017-11-12 19:27:53Z rene $
 #
 
     COMMENT = Programming languages
@@ -14,7 +14,6 @@
     SUBDIR += asis
     SUBDIR += asn1c
     SUBDIR += atlast
-    SUBDIR += ats
     SUBDIR += awka
     SUBDIR += bas2tap
     SUBDIR += basic256
@@ -206,6 +205,7 @@
     SUBDIR += oo2c
     SUBDIR += opencoarrays
     SUBDIR += opendylan
+    SUBDIR += owl-lisp
     SUBDIR += p2c
     SUBDIR += p5-Data-JavaScript
     SUBDIR += p5-Error
