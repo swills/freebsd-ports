@@ -6,7 +6,7 @@ CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
 MAINTAINER=	tz@FreeBSD.org
-COMMENT=	This gem implements bcrypt_pdkfd (a variant of PBKDF2 with bcrypt-based PRF)
+COMMENT=	This gem implements bcrypt_pdkfd
 
 LICENSE=	MIT
 
@@ -18,7 +18,7 @@ BUILD_DEPENDS=	rubygem-minitest>=5:devel/rubygem-minitest \
 		rubygem-rdoc>=3.12:devel/rubygem-rdoc
 LIB_DEPENDS=	libunwind.so:devel/libunwind
 
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 .include <bsd.port.mk>

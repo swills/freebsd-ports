@@ -6,7 +6,7 @@ CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
 MAINTAINER=	tz@FreeBSD.org
-COMMENT=	The Networking and Cryptography (NaCl) library provides a high-level toolkit for building cryptographic systems and protocols
+COMMENT=	Networking and Cryptography (NaCl) library
 
 LICENSE=	MIT
 
@@ -14,8 +14,8 @@ LIB_DEPENDS=	libsodium.so:security/libsodium
 BUILD_DEPENDS=	rubygem-bundler>=0:sysutils/rubygem-bundler
 RUN_DEPENDS=	rubygem-ffi>=0:devel/rubygem-ffi
 
+USES=		gem
 NO_ARCH=	yes
 USE_RUBY=	yes
-USES=		gem
 
 .include <bsd.port.mk>
