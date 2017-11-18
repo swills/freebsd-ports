@@ -3,6 +3,7 @@
 
 PORTNAME=	gitlab
 PORTVERSION=	10.1.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www devel
 
@@ -190,8 +191,8 @@ RUN_DEPENDS=	git>=2.14.1:devel/git \
 	rubygem-gitaly-proto>=0.39.0:net/rubygem-gitaly-proto \
 	rubygem-gitaly>=0.8.0:net/rubygem-gitaly \
 	rubygem-toml-rb>=0.3.15:www/rubygem-toml-rb \
-	rubygem-flipper>=0.10.2:devel/rubygem-flipper \
-	rubygem-flipper-active_record>=0.10.2:databases/rubygem-flipper-active_record \
+	rubygem-flipper010>=0.10.2:devel/rubygem-flipper010 \
+	rubygem-flipper-active_record010>=0.10.2:databases/rubygem-flipper-active_record010 \
 	rubygem-lograge>=0.5:www/rubygem-lograge \
 	rubygem-grape_logging>=1.7:devel/rubygem-grape_logging \
 	rubygem-rinku>=1.7.3:www/rubygem-rinku
