@@ -2202,6 +2202,7 @@
 %%WWWDIR%%/app/assets/javascripts/lib/ace/ace_config_paths.js.erb
 %%WWWDIR%%/app/assets/javascripts/lib/utils/accessor.js
 %%WWWDIR%%/app/assets/javascripts/lib/utils/ajax_cache.js
+%%WWWDIR%%/app/assets/javascripts/lib/utils/axios_utils.js
 %%WWWDIR%%/app/assets/javascripts/lib/utils/bootstrap_linked_tabs.js
 %%WWWDIR%%/app/assets/javascripts/lib/utils/cache.js
 %%WWWDIR%%/app/assets/javascripts/lib/utils/common_utils.js
@@ -8496,6 +8497,7 @@
 %%WWWDIR%%/spec/controllers/boards/issues_controller_spec.rb
 %%WWWDIR%%/spec/controllers/boards/lists_controller_spec.rb
 %%WWWDIR%%/spec/controllers/concerns/issuable_collections_spec.rb
+%%WWWDIR%%/spec/controllers/concerns/lfs_request_spec.rb
 %%WWWDIR%%/spec/controllers/dashboard/labels_controller_spec.rb
 %%WWWDIR%%/spec/controllers/dashboard/milestones_controller_spec.rb
 %%WWWDIR%%/spec/controllers/dashboard/todos_controller_spec.rb
@@ -9025,6 +9027,7 @@
 %%WWWDIR%%/spec/features/projects/services/user_activates_slack_notifications_spec.rb
 %%WWWDIR%%/spec/features/projects/services/user_activates_slack_slash_command_spec.rb
 %%WWWDIR%%/spec/features/projects/services/user_views_services_spec.rb
+%%WWWDIR%%/spec/features/projects/settings/forked_project_settings_spec.rb
 %%WWWDIR%%/spec/features/projects/settings/integration_settings_spec.rb
 %%WWWDIR%%/spec/features/projects/settings/merge_requests_settings_spec.rb
 %%WWWDIR%%/spec/features/projects/settings/pipelines_settings_spec.rb
