@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MetaCPAN-Client/Makefile 452291 2017-10-17 20:06:52Z sunpoet $
+# $FreeBSD: head/devel/p5-MetaCPAN-Client/Makefile 454541 2017-11-20 13:21:48Z sunpoet $
 
 PORTNAME=	MetaCPAN-Client
-PORTVERSION=	2.018000
+PORTVERSION=	2.021000
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:MICKEY

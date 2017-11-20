@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 454187 2017-11-14 18:29:22Z thierry $
+# $FreeBSD: head/math/Makefile 454506 2017-11-19 21:59:32Z yuri $
 #
 
     COMMENT = Mathematics
@@ -102,6 +102,7 @@
     SUBDIR += algotutor
     SUBDIR += alt-ergo
     SUBDIR += amath
+    SUBDIR += ambit
     SUBDIR += analitza
     SUBDIR += ann
     SUBDIR += apc
@@ -165,6 +166,7 @@
     SUBDIR += emc2
     SUBDIR += ent
     SUBDIR += entropy
+    SUBDIR += eprover
     SUBDIR += ess
     SUBDIR += eukleides
     SUBDIR += eval
@@ -597,6 +599,8 @@
     SUBDIR += php70-gmp
     SUBDIR += php71-bcmath
     SUBDIR += php71-gmp
+    SUBDIR += php72-bcmath
+    SUBDIR += php72-gmp
     SUBDIR += physcalc
     SUBDIR += picosat
     SUBDIR += plman

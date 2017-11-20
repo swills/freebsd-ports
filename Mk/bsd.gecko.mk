@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 454152 2017-11-13 22:21:47Z jbeich $
+# $FreeBSD: head/Mk/bsd.gecko.mk 454358 2017-11-16 23:04:25Z jbeich $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -426,7 +426,6 @@ MOZ_OPTIONS+=	--enable-dtrace \
 LIBS+=			-lelf
 . endif
 STRIP=
-LLD_UNSAFE=		yes
 .else
 MOZ_OPTIONS+=	--disable-dtrace
 .endif

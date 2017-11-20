@@ -1,9 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/balazar/Makefile 444086 2017-06-21 22:47:01Z linimon $
+# $FreeBSD: head/games/balazar/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
 PORTNAME=	balazar
 PORTVERSION=	0.3.4
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	games python
 MASTER_SITES=	http://download.gna.org/balazar/
 DISTNAME=	Balazar-${PORTVERSION}

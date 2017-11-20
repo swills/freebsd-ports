@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/u-boot-master/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/sysutils/u-boot-master/Makefile 454262 2017-11-15 18:50:36Z manu $
 #
 # Common infrastructure for u-boot ports
 #
@@ -60,6 +60,9 @@ UBOOT_ARCH_ALLWINNER64=aarch64
 # Overrides for Zynq 7000 family
 UBOOT_PLIST_ZYNQ_7000=u-boot.img boot.bin uEnv.txt
 UBOOT_MOVE_ZYNQ_7000=${WRKSRC}/spl/boot.bin ${.CURDIR}/files/uEnv.txt
+
+# Overrides for RPI family
+UBOOT_PLIST_RPI=	u-boot.bin
 
 # Uboot variables
 .if !defined(UBOOT_VERSION) && defined(UBOOT_VERSION_${FAMILY:tu})

@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/audex/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/audio/audex/Makefile 454488 2017-11-19 11:37:26Z riggs $
 
 PORTNAME=	audex
 PORTVERSION=	0.79
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio kde
 MASTER_SITES=	SF/${PORTNAME}/src
 

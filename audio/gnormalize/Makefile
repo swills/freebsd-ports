@@ -1,9 +1,9 @@
 # Created by: Denise H. G. <darcsis@gmail.com>
-# $FreeBSD: head/audio/gnormalize/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/gnormalize/Makefile 454488 2017-11-19 11:37:26Z riggs $
 
 PORTNAME=	gnormalize
 PORTVERSION=	0.63
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	audio
 MASTER_SITES=	SF
 

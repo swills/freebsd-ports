@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/povray-meta/Makefile 425620 2016-11-07 14:07:22Z amdmi3 $
+# $FreeBSD: head/graphics/povray-meta/Makefile 454507 2017-11-19 22:30:45Z antoine $
 
 PORTNAME=	povray-meta
 PORTVERSION=	0.1
@@ -41,7 +41,9 @@ DEFAULT${ver}_DESC=	Create link bin/povray -> bin/povray${ver}
 
 .for ver in ${POV_VERSIONS_ALL}
 . if ${PORT_OPTIONS:MDEFAULT${ver}}
+.  if !${PORT_OPTIONS:MPOVRAY${ver}}
 PORT_OPTIONS+=	POVRAY${ver}
+.  endif
 POV_VERSION=	${ver}
 . endif
 . if ${PORT_OPTIONS:MPOVRAY${ver}}

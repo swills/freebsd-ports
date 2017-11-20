@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 453987 2017-11-11 18:32:46Z yuri $
+# $FreeBSD: head/security/Makefile 454314 2017-11-16 16:27:30Z tz $
 #
 
     COMMENT = Security tools
@@ -818,6 +818,10 @@
     SUBDIR += php71-hash
     SUBDIR += php71-mcrypt
     SUBDIR += php71-openssl
+    SUBDIR += php72-filter
+    SUBDIR += php72-hash
+    SUBDIR += php72-openssl
+    SUBDIR += php72-sodium
     SUBDIR += phpdeadlock
     SUBDIR += phpsecinfo
     SUBDIR += pidentd
@@ -1090,6 +1094,7 @@
     SUBDIR += rubygem-pyu-ruby-sasl
     SUBDIR += rubygem-rack-oauth2
     SUBDIR += rubygem-razorback-scriptNugget
+    SUBDIR += rubygem-rbnacl
     SUBDIR += rubygem-recog
     SUBDIR += rubygem-rex-arch
     SUBDIR += rubygem-rex-bin_tools

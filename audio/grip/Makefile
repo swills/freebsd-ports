@@ -1,9 +1,10 @@
 # Created by: kbyanc@posi.net
-# $FreeBSD: head/audio/grip/Makefile 453217 2017-10-31 08:29:06Z woodsb02 $
+# $FreeBSD: head/audio/grip/Makefile 454488 2017-11-19 11:37:26Z riggs $
 #    $MCom: ports/audio/grip/Makefile,v 1.4 2007/05/19 21:35:57 marcus Exp $
 
 PORTNAME=	grip
 PORTVERSION=	3.6.1
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	SF/grip/${PORTVERSION}
 

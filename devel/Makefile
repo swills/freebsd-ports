@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 454219 2017-11-14 23:11:11Z dvl $
+# $FreeBSD: head/devel/Makefile 454467 2017-11-18 23:34:19Z ehaupt $
 #
 
     COMMENT = Development utilities
@@ -109,6 +109,7 @@
     SUBDIR += aphpunit
     SUBDIR += api-sanity-autotest
     SUBDIR += apiextractor
+    SUBDIR += apitrace
     SUBDIR += appstream-glib
     SUBDIR += apr1
     SUBDIR += apr2
@@ -671,6 +672,7 @@
     SUBDIR += fuel
     SUBDIR += fujaba
     SUBDIR += funnelweb
+    SUBDIR += fuzzylite
     SUBDIR += gaa
     SUBDIR += gamin
     SUBDIR += gauche-readline
@@ -2117,6 +2119,7 @@
     SUBDIR += p5-Class-XPath
     SUBDIR += p5-Class-XSAccessor
     SUBDIR += p5-Clone
+    SUBDIR += p5-Clone-Choose
     SUBDIR += p5-Clone-Fast
     SUBDIR += p5-Clone-More
     SUBDIR += p5-Clone-PP
@@ -4054,6 +4057,16 @@
     SUBDIR += php71-sysvsem
     SUBDIR += php71-sysvshm
     SUBDIR += php71-tokenizer
+    SUBDIR += php72-gettext
+    SUBDIR += php72-intl
+    SUBDIR += php72-json
+    SUBDIR += php72-pcntl
+    SUBDIR += php72-readline
+    SUBDIR += php72-shmop
+    SUBDIR += php72-sysvmsg
+    SUBDIR += php72-sysvsem
+    SUBDIR += php72-sysvshm
+    SUBDIR += php72-tokenizer
     SUBDIR += phpbt
     SUBDIR += phpsh
     SUBDIR += phpunit
@@ -4291,6 +4304,7 @@
     SUBDIR += py-cliapp
     SUBDIR += py-click
     SUBDIR += py-click-log
+    SUBDIR += py-click-plugins
     SUBDIR += py-click-threading
     SUBDIR += py-cliff
     SUBDIR += py-clint
@@ -5685,6 +5699,7 @@
     SUBDIR += rubygem-rainbow
     SUBDIR += rubygem-rake
     SUBDIR += rubygem-rake-compiler
+    SUBDIR += rubygem-rake-compiler-dock
     SUBDIR += rubygem-rake-contrib
     SUBDIR += rubygem-ransack
     SUBDIR += rubygem-rapt

@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/lang/php71/Makefile 452965 2017-10-27 07:32:34Z tz $
+# $FreeBSD: head/lang/php71/Makefile 454501 2017-11-19 21:30:42Z antoine $
 
 PORTNAME=	php71
 PORTVERSION=	7.1.11
@@ -88,9 +88,6 @@ CONFIGURE_ARGS+=--enable-fpm \
 .endif
 
 .if defined(PKGNAMEPREFIX)
-USES+=	php
-PHP_VER=	71
-IGNORE_WITH_PHP=	55 56 70
 USE_APACHE=	22+
 .include "${PORTSDIR}/Mk/bsd.apache.mk"
 .if ${PORT_OPTIONS:MAP2FILTER}
@@ -138,7 +135,6 @@ CONFIGURE_ARGS+=--enable-debug
 .if ${PORT_OPTIONS:MZTS}
 CONFIGURE_ARGS+=--enable-maintainer-zts
 CONFIGURE_ENV+=	pthreads_working="yes"
-USES=	localhost
 .endif
 
 .if ${PORT_OPTIONS:MDTRACE}

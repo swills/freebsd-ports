@@ -1,8 +1,7 @@
-# Created by: tcberner
-# $FreeBSD: head/sysutils/kf5-baloo/Makefile 450056 2017-09-18 17:42:44Z tcberner $
+# $FreeBSD: head/sysutils/kf5-baloo/Makefile 454297 2017-11-16 05:59:35Z tcberner $
 
 PORTNAME=	baloo
-PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
+DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
 CATEGORIES=	sysutils kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

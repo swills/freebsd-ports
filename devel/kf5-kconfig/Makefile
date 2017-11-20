@@ -1,5 +1,4 @@
-# Created by: tcberner
-# $FreeBSD: head/devel/kf5-kconfig/Makefile 452819 2017-10-24 21:30:29Z adridg $
+# $FreeBSD: head/devel/kf5-kconfig/Makefile 454297 2017-11-16 05:59:35Z tcberner $
 
 PORTNAME=	kconfig
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}

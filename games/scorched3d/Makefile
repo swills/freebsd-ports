@@ -1,9 +1,9 @@
 # Created by: mdodd
-# $FreeBSD: head/games/scorched3d/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/scorched3d/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
 PORTNAME=	scorched3d
 PORTVERSION=	0.${SCORCH_VERSION}${SCORCH_REVISION}
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/Version%20${SCORCH_VERSION}
 DISTNAME=	Scorched3D-${SCORCH_VERSION}-src

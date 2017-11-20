@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 454224 2017-11-15 08:08:12Z yuri $
+# $FreeBSD: head/audio/Makefile 454446 2017-11-18 15:43:45Z riggs $
 #
 
     COMMENT = Audio tools
@@ -637,6 +637,7 @@
     SUBDIR += playmidi
     SUBDIR += pm3umpdl
     SUBDIR += pms
+    SUBDIR += pms-devel
     SUBDIR += pocketsphinx
     SUBDIR += polyphone
     SUBDIR += portaudio

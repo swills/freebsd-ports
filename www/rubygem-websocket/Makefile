@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-websocket/Makefile 433083 2017-02-01 19:44:57Z sunpoet $
+# $FreeBSD: head/www/rubygem-websocket/Makefile 454288 2017-11-15 19:57:11Z sunpoet $
 
 PORTNAME=	websocket
-PORTVERSION=	1.2.4
+PORTVERSION=	1.2.5
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

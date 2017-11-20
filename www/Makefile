@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 454217 2017-11-14 23:10:19Z dvl $
+# $FreeBSD: head/www/Makefile 454519 2017-11-20 04:31:30Z sunpoet $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -482,6 +482,7 @@
     SUBDIR += mod_php56
     SUBDIR += mod_php70
     SUBDIR += mod_php71
+    SUBDIR += mod_php72
     SUBDIR += mod_proctitle
     SUBDIR += mod_proxy_html
     SUBDIR += mod_proxy_uwsgi
@@ -520,6 +521,7 @@
     SUBDIR += moodle31
     SUBDIR += moodle32
     SUBDIR += moodle33
+    SUBDIR += moodle34
     SUBDIR += mozplugger
     SUBDIR += multisort
     SUBDIR += multiwatch
@@ -557,6 +559,9 @@
     SUBDIR += npc
     SUBDIR += npm
     SUBDIR += npm-less-plugin-clean-css
+    SUBDIR += npm-node4
+    SUBDIR += npm-node6
+    SUBDIR += npm-node8
     SUBDIR += npm2
     SUBDIR += npm3
     SUBDIR += npm4
@@ -1479,6 +1484,9 @@
     SUBDIR += php71-opcache
     SUBDIR += php71-session
     SUBDIR += php71-tidy
+    SUBDIR += php72-opcache
+    SUBDIR += php72-session
+    SUBDIR += php72-tidy
     SUBDIR += phpbb
     SUBDIR += phpbb3
     SUBDIR += phpgroupware
@@ -1893,6 +1901,7 @@
     SUBDIR += quickie
     SUBDIR += qupzilla-qt4
     SUBDIR += qupzilla-qt5
+    SUBDIR += qutebrowser
     SUBDIR += radicale
     SUBDIR += red5
     SUBDIR += redaxo
@@ -2138,6 +2147,7 @@
     SUBDIR += rubygem-rkelly-remix
     SUBDIR += rubygem-robotex
     SUBDIR += rubygem-robots
+    SUBDIR += rubygem-roda
     SUBDIR += rubygem-rqrcode
     SUBDIR += rubygem-rqrcode-rails3
     SUBDIR += rubygem-rtlit
@@ -2375,6 +2385,7 @@
     SUBDIR += udmsearch
     SUBDIR += ufdbguard
     SUBDIR += uglifyjs
+    SUBDIR += unit
     SUBDIR += usermanager
     SUBDIR += uwsgi
     SUBDIR += uwsgitop

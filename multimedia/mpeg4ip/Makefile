@@ -1,9 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/mpeg4ip/Makefile 453605 2017-11-06 09:28:57Z riggs $
+# $FreeBSD: head/multimedia/mpeg4ip/Makefile 454488 2017-11-19 11:37:26Z riggs $
 
 PORTNAME=	mpeg4ip
 PORTVERSION=	1.6.1
-PORTREVISION=	37
+PORTREVISION=	38
 CATEGORIES=	multimedia audio ipv6 net
 MASTER_SITES=	LOCAL/ahze
 # http://sourceforge.net/forum/forum.php?thread_id=1839453&forum_id=59136

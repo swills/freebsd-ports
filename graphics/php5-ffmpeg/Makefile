@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/graphics/php5-ffmpeg/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/graphics/php5-ffmpeg/Makefile 454529 2017-11-20 04:32:31Z sunpoet $
 
 PORTNAME=	ffmpeg
 PORTVERSION=	0.6.0.20120114
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libgd.so:graphics/gd \
 		libavutil.so:multimedia/ffmpeg
 
-IGNORE_WITH_PHP=70 71
+IGNORE_WITH_PHP=70 71 72
 USES=		localbase php:ext tar:xz
 
 .include <bsd.port.mk>

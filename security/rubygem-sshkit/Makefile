@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/rubygem-sshkit/Makefile 453496 2017-11-04 22:56:57Z sunpoet $
+# $FreeBSD: head/security/rubygem-sshkit/Makefile 454544 2017-11-20 13:22:03Z sunpoet $
 
 PORTNAME=	sshkit
-PORTVERSION=	1.15.0
+PORTVERSION=	1.15.1
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

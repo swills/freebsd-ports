@@ -1,0 +1,9 @@
+# $FreeBSD: head/devel/php72-readline/Makefile 454302 2017-11-16 10:48:48Z tz $
+
+CATEGORIES=	devel
+
+MASTERDIR=	${.CURDIR}/../../lang/php72
+
+PKGNAMESUFFIX=	-readline
+
+.include "${MASTERDIR}/Makefile"

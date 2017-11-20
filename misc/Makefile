@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 453955 2017-11-11 07:31:58Z yuri $
+# $FreeBSD: head/misc/Makefile 454323 2017-11-16 18:41:01Z yuri $
 #
 
     COMMENT = Miscellaneous utilities
@@ -286,6 +286,7 @@
     SUBDIR += osinfo-db
     SUBDIR += ossp-uuid
     SUBDIR += otter
+    SUBDIR += owrep
     SUBDIR += p5-Acme-ButFirst
     SUBDIR += p5-Array-Compare
     SUBDIR += p5-Array-Diff
@@ -363,6 +364,7 @@
     SUBDIR += php56-calendar
     SUBDIR += php70-calendar
     SUBDIR += php71-calendar
+    SUBDIR += php72-calendar
     SUBDIR += phraze
     SUBDIR += pinfo
     SUBDIR += pipe

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 452045 2017-10-14 07:09:11Z pi $
+# $FreeBSD: head/net-mgmt/Makefile 454302 2017-11-16 10:48:48Z tz $
 #
 
     COMMENT = Network management tools
@@ -120,6 +120,7 @@
     SUBDIR += libsmi
     SUBDIR += lldpd
     SUBDIR += mbrowse
+    SUBDIR += mdata-client
     SUBDIR += mk-livestatus
     SUBDIR += monitoring-plugins
     SUBDIR += mrtg
@@ -282,6 +283,7 @@
     SUBDIR += php56-snmp
     SUBDIR += php70-snmp
     SUBDIR += php71-snmp
+    SUBDIR += php72-snmp
     SUBDIR += phpip
     SUBDIR += phpipam
     SUBDIR += phpweathermap
@@ -360,6 +362,7 @@
     SUBDIR += telegraf
     SUBDIR += tornova
     SUBDIR += torrus
+    SUBDIR += triton-guesttools
     SUBDIR += unbound_exporter
     SUBDIR += unifi5
     SUBDIR += victorops-nagios

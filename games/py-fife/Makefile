@@ -1,9 +1,9 @@
 # Created by: GreenDog <fiziologus@gmail.com>
-# $FreeBSD: head/games/py-fife/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/games/py-fife/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
 PORTNAME=		fife
 PORTVERSION=		0.4.1
-PORTREVISION=		4
+PORTREVISION=		5
 CATEGORIES=		games
 PKGNAMEPREFIX=		${PYTHON_PKGNAMEPREFIX}
 

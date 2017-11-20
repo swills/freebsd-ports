@@ -1,9 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/graphics/gstreamer-plugins-gl/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/gstreamer-plugins-gl/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
 PORTNAME=	gstreamer-plugins-gl
 PORTVERSION=	0.10.3
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	graphics
 MASTER_SITES=	http://gstreamer.freedesktop.org/src/gst-plugins-gl/
 DISTNAME=	${PORTNAME:S/gstreamer/gst/}-${PORTVERSION}

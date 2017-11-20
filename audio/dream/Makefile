@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/dream/Makefile 427006 2016-11-24 11:26:42Z tcberner $
+# $FreeBSD: head/audio/dream/Makefile 454488 2017-11-19 11:37:26Z riggs $
 
 PORTNAME=	dream
 PORTVERSION=	2.1.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio comms hamradio
 MASTER_SITES=	SF/drm/${PORTNAME}/${PORTVERSION}
 DISTNAME=	${PORTNAME}-${PORTVERSION}-svn808

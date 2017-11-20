@@ -1,12 +1,12 @@
 # Created by: Anish Mistry (with help from mean)
-# $FreeBSD: head/multimedia/avidemux/Makefile 426566 2016-11-20 09:38:08Z gerald $
+# $FreeBSD: head/multimedia/avidemux/Makefile 454488 2017-11-19 11:37:26Z riggs $
 # assuming freebsd always has 16 byte aligned malloc as macos does. is this true?
 # nls files not getting installed with nls=on. are they getting built?
 # sync port options with current software options
 
 PORTNAME=	avidemux
 PORTVERSION=	${AVIDEMUX_VERSION}
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	multimedia
 
 MAINTAINER=	multimedia@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/npm3/Makefile 443802 2017-06-18 05:51:08Z sunpoet $
+# $FreeBSD: head/www/npm3/Makefile 454521 2017-11-20 04:31:53Z sunpoet $
 
 PORTNAME=	npm
 PORTVERSION=	3.10.10
@@ -16,6 +16,9 @@ LICENSE=	MIT
 RUN_DEPENDS=	gmake:devel/gmake
 
 CONFLICTS_INSTALL=	npm npm2 npm4
+
+DEPRECATED=	Use www/npm or www/npm-node* instead
+EXPIRATION_DATE=2017-12-31
 
 OPTIONS_SINGLE=	BACKEND
 OPTIONS_SINGLE_BACKEND=	NODE NODE6

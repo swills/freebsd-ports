@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/science/ecs/Makefile 442050 2017-05-30 02:56:43Z sunpoet $
+# $FreeBSD: head/science/ecs/Makefile 454339 2017-11-16 20:55:27Z thierry $
 
 PORTNAME=	ecs
 PORTVERSION=	2.0.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	science
 MASTER_SITES=	http://code-saturne.org/releases/
 
@@ -55,12 +55,12 @@ MAKE_JOBS_UNSAFE=yes
 
 .include <bsd.port.pre.mk>
 
-.if exists(${LOCALBASE}/bin/graphchk)
+.if exists(${LOCALBASE}/bin/kmetis)
 # The regular metis is present, so we cannot depend on metis-edf
 LIB_DEPENDS+=	libmetis.so.1:math/metis4
 .else
 # Prefer metis-edf to avoid conflict with Code_Aster
-LIB_DEPENDS+=	libmetis.so.0:math/metis-edf
+LIB_DEPENDS+=	libmetis.so.2:math/metis-edf
 .endif
 
 pre-configure:

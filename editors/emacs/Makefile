@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/editors/emacs/Makefile 450852 2017-09-28 15:36:31Z kwm $
+# $FreeBSD: head/editors/emacs/Makefile 454482 2017-11-19 09:13:43Z ashish $
 
 PORTNAME=	emacs
 PORTVERSION=	${EMACS_VER}
@@ -184,6 +184,17 @@ XWIDGETS_USE=		XORG=xcomposite
 XWIDGETS_CONFIGURE_WITH=xwidgets
 XWIDGETS_LIB_DEPENDS=	libwebkitgtk-3.0.so:www/webkit-gtk3
 XWIDGETS_IMPLIES=	GTK3
+
+.include <bsd.port.options.mk>
+
+# has graphics/ImageMagick been compiled with OPENMP?
+.if ${PORT_OPTIONS:MMAGICK} && ${:!${GREP} -sc " \-fopenmp " ${LOCALBASE}/libdata/pkgconfig/ImageMagick.pc || true!} == "1"
+_MAGICK_WITH_OPENMP=	true
+.endif
+
+.ifdef _MAGICK_WITH_OPENMP
+USES+=	compiler:openmp
+.endif
 
 # With a desktop entry stage-qa will give a warning about requiring
 # desktop-file-utils and portlint -C will give a warning about INSTALL_ICONS,

@@ -1,5 +1,5 @@
 # Created by: ache
-# $FreeBSD: head/net/tintin++/Makefile 450061 2017-09-18 17:48:48Z sunpoet $
+# $FreeBSD: head/net/tintin++/Makefile 454472 2017-11-19 03:31:28Z sunpoet $
 
 PORTNAME=	tintin++
 PORTVERSION=	2.01.3
@@ -14,6 +14,8 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/../COPYING
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
+
+CONFLICTS_INSTALL?=	zh-tintin++
 
 OPTIONS_DEFINE=	BIG5 DOCS
 BIG5_DESC=	Big5 support

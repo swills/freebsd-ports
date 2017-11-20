@@ -1,10 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/rocksdb/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/databases/rocksdb/Makefile 454515 2017-11-20 04:30:26Z sunpoet $
 
 PORTNAME=	rocksdb
-PORTVERSION=	5.7.3
-PORTREVISION=	1
-DISTVERSIONPREFIX=	${PORTNAME}-
+PORTVERSION=	5.8
+DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 
 MAINTAINER?=	sunpoet@FreeBSD.org
@@ -39,7 +38,6 @@ USE_CXXSTD=	c++11
 USE_LDCONFIG=	yes
 USES=		compiler:c++11-lib gmake localbase:ldflags shebangfix
 
-PLIST_SUB=	PORTVERSION=${PORTVERSION} SHLIB_MAJOR=${PORTVERSION:R:R} SHLIB_MINOR=${PORTVERSION:R:E}
 PORTDATA=	make_config.mk
 
 GH_ACCOUNT=	facebook

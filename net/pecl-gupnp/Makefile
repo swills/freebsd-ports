@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/pecl-gupnp/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/net/pecl-gupnp/Makefile 454531 2017-11-20 04:32:41Z sunpoet $
 
 PORTNAME=	gupnp
 PORTVERSION=	1.0.0
@@ -13,7 +13,7 @@ LICENSE=	PHP301
 
 LIB_DEPENDS=	libgupnp-1.0.so:net/gupnp
 
-IGNORE_WITH_PHP=70 71
+IGNORE_WITH_PHP=70 71 72
 USES=		php:pecl pkgconfig
 
 post-patch:

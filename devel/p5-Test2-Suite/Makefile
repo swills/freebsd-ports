@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test2-Suite/Makefile 452875 2017-10-25 18:28:43Z sunpoet $
+# $FreeBSD: head/devel/p5-Test2-Suite/Makefile 454542 2017-11-20 13:21:53Z sunpoet $
 
 PORTNAME=	Test2-Suite
-PORTVERSION=	0.000083
+PORTVERSION=	0.000084
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:EXODIST
@@ -16,6 +16,7 @@ LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-Importer>=0.024:devel/p5-Importer \
+		p5-Module-Pluggable>=2.7:devel/p5-Module-Pluggable \
 		p5-Sub-Info>=0.001:devel/p5-Sub-Info \
 		p5-Term-Table>=0.002:devel/p5-Term-Table \
 		p5-Test-Simple>=1.302102:devel/p5-Test-Simple

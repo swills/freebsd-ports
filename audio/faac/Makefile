@@ -1,8 +1,9 @@
 # Created by: Michael Johnson <ahze@ahze.net>
-# $FreeBSD: head/audio/faac/Makefile 453291 2017-11-01 15:35:28Z riggs $
+# $FreeBSD: head/audio/faac/Makefile 454488 2017-11-19 11:37:26Z riggs $
 
 PORTNAME=	faac
-PORTVERSION=	1.29.8.3
+PORTVERSION=	1.29.9.2
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-src/${PORTNAME}-${PORTVERSION:R:R}
 

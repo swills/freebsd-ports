@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/opensurge/Makefile 454167 2017-11-14 07:23:21Z rene $
+# $FreeBSD: head/games/opensurge/Makefile 454293 2017-11-15 21:39:00Z rene $
 
 PORTNAME=	opensurge
 PORTVERSION=	0.1.r${SVN_REV}
@@ -18,6 +18,7 @@ LICENSE_COMB=	multi
 LICENSE_FILE_GPLv2+ =	${WRKSRC}/licenses/GPLv2.txt
 LICENSE_FILE_CC-BY-SA-3.0=	${WRKSRC}/licenses/CC-BY-SA-3.0.txt
 
+BROKEN=		Does not build
 DEPRECATED=	Does not build
 EXPIRATION_DATE=2018-02-01
 

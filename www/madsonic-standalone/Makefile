@@ -1,13 +1,13 @@
 # Created by: Jeremie Le Hen <jlh@FreeBSD.org>
 # Based on www/subsonic-standalone
 #
-# $FreeBSD: head/www/madsonic-standalone/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/www/madsonic-standalone/Makefile 454488 2017-11-19 11:37:26Z riggs $
 #
 
 PORTNAME=	madsonic-standalone
 PORTVERSION=	6.0
 DISTVERSIONSUFFIX=	.7860
-PORTREVISION=	4
+PORTREVISION=	5
 DISTDATE=	20160109
 CATEGORIES=	www java
 MASTER_SITES=	http://madsonic.org/download/${PORTVERSION}/

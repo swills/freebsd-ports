@@ -1,8 +1,8 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-SebastianBergmann_FinderFacade/Makefile 453998 2017-11-11 20:16:12Z joneum $
+# $FreeBSD: head/devel/pear-SebastianBergmann_FinderFacade/Makefile 454485 2017-11-19 11:08:29Z joneum $
 
 PORTNAME=	FinderFacade
-PORTVERSION=	1.2.1
+PORTVERSION=	1.2.2
 CATEGORIES=	devel pear
 PKGNAMEPREFIX=	pear-SebastianBergmann_
 

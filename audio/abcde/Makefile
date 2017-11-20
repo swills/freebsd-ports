@@ -1,8 +1,9 @@
 # Created by: Munish Chopra <mchopra@engmail.uwaterloo.ca>
-# $FreeBSD: head/audio/abcde/Makefile 447098 2017-08-02 09:57:34Z tz $
+# $FreeBSD: head/audio/abcde/Makefile 454488 2017-11-19 11:37:26Z riggs $
 
 PORTNAME=	abcde
 PORTVERSION=	2.8.1
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://abcde.einval.com/download/
 

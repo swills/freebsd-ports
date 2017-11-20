@@ -1,9 +1,9 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/games/trigger-rally/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/trigger-rally/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
 PORTNAME=	trigger-rally
 PORTVERSION=	0.6.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	SF/trigger-rally/trigger-${PORTVERSION}
 

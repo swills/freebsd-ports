@@ -1,7 +1,7 @@
-# $FreeBSD: head/dns/mDNSResponder_nss/Makefile 438223 2017-04-11 00:31:24Z ler $
+# $FreeBSD: head/dns/mDNSResponder_nss/Makefile 454434 2017-11-18 13:55:34Z dbaio $
 
 PORTNAME=	mDNSResponder
-PORTVERSION=	765.50.9
+PORTVERSION=	878.1.1
 CATEGORIES=	dns net
 MASTER_SITES=	http://opensource.apple.com/tarballs/mDNSResponder/
 PKGNAMESUFFIX=	_nss

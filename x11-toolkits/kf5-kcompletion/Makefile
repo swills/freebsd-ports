@@ -1,8 +1,7 @@
-# Created by: tcberner
-# $FreeBSD: head/x11-toolkits/kf5-kcompletion/Makefile 450056 2017-09-18 17:42:44Z tcberner $
+# $FreeBSD: head/x11-toolkits/kf5-kcompletion/Makefile 454297 2017-11-16 05:59:35Z tcberner $
 
 PORTNAME=	kcompletion
-PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
+DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
 CATEGORIES=	x11-toolkits kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

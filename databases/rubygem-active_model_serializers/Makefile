@@ -1,8 +1,7 @@
-# $FreeBSD: head/databases/rubygem-active_model_serializers/Makefile 449643 2017-09-11 13:16:38Z sunpoet $
+# $FreeBSD: head/databases/rubygem-active_model_serializers/Makefile 454273 2017-11-15 19:55:54Z sunpoet $
 
 PORTNAME=	active_model_serializers
-PORTVERSION=	0.10.6
-PORTREVISION=	1
+PORTVERSION=	0.10.7
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

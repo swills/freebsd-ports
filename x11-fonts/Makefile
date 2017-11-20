@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 454027 2017-11-12 09:35:29Z yuri $
+# $FreeBSD: head/x11-fonts/Makefile 454448 2017-11-18 16:45:49Z yuri $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -105,6 +105,7 @@
     SUBDIR += gnu-unifont
     SUBDIR += gnu-unifont-ttf
     SUBDIR += gohufont
+    SUBDIR += google-fonts
     SUBDIR += hack-font
     SUBDIR += hanazono-fonts-ttf
     SUBDIR += hasklig

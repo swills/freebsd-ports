@@ -1,7 +1,8 @@
-# $FreeBSD: head/cad/solvespace/Makefile 452282 2017-10-17 15:32:35Z swills $
+# $FreeBSD: head/cad/solvespace/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
 PORTNAME=	solvespace
 PORTVERSION=	2.3
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	cad
 

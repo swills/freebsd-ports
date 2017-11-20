@@ -1,9 +1,9 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/security/obfsproxy/Makefile 449230 2017-09-04 00:01:16Z sunpoet $
+# $FreeBSD: head/security/obfsproxy/Makefile 454427 2017-11-18 12:41:18Z cpm $
 
 PORTNAME=	obfsproxy
 PORTVERSION=	0.2.13
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	security net python
 MASTER_SITES=	http://www.c-s.li/ports/
@@ -18,8 +18,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyptlib>=0.0.5:security/py-pyptlib \
 		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted \
 		${PYTHON_PKGNAMEPREFIX}yaml>=0:devel/py-yaml
 
-USE_PYTHON=	distutils
 USES=		python
+USE_PYTHON=	distutils
 SUB_FILES=	pkg-message
 PYDISTUTILS_PKGNAME=obfsproxy
 

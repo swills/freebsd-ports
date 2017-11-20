@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Minion/Makefile 452660 2017-10-22 16:10:07Z sunpoet $
+# $FreeBSD: head/devel/p5-Minion/Makefile 454550 2017-11-20 13:22:33Z sunpoet $
 
 PORTNAME=	Minion
-PORTVERSION=	7.09
+PORTVERSION=	8.01
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:SRI
@@ -14,7 +14,7 @@ COMMENT=	Asynchronous job queue for Mojolicious
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Mojolicious>=7.29:www/p5-Mojolicious
+BUILD_DEPENDS=	p5-Mojolicious>=7.56:www/p5-Mojolicious
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes

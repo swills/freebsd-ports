@@ -1,5 +1,5 @@
 # Created by: Jean-Marc Zucconi <jmz@FreeBSD.org>
-# $FreeBSD: head/graphics/netpbm/Makefile 451378 2017-10-06 11:18:35Z tobik $
+# $FreeBSD: head/graphics/netpbm/Makefile 454404 2017-11-18 00:51:34Z tobik $
 
 PORTNAME=	netpbm
 DISTVERSIONPREFIX=	v
@@ -87,7 +87,9 @@ post-patch:
 .endfor
 
 post-patch-STATIC-on:
-	@${REINPLACE_CMD} 's|$$(LD)|$$(LD) -static|g' ${WRKSRC}/common.mk
+	@${REINPLACE_CMD} -e 's|$$(LD)|$$(LD) -static|g' \
+		-e 's@$$(NETPBMLIBFNAME)@libnetpbm.a@' \
+		${WRKSRC}/common.mk
 
 # Disable building svgtopam by default.  It is the only program that
 # requires libxml2 and it is not useful in this day and age according

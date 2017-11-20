@@ -1,8 +1,8 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/databases/pg_citus/Makefile 452317 2017-10-18 06:53:43Z matthew $
+# $FreeBSD: head/databases/pg_citus/Makefile 454364 2017-11-17 07:37:54Z matthew $
 
 PORTNAME=	citus
-PORTVERSION=	7.0.3
+PORTVERSION=	7.1.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 PKGNAMEPREFIX=	pg_
@@ -15,6 +15,12 @@ LICENSE=	AGPLv3
 USES=		gmake pgsql:9.6+ autoreconf readline
 WANT_PGSQL=	lib server
 GNU_CONFIGURE=	yes
+
+OPTIONS_DEFINE=	ANONSTATS
+
+ANONSTATS_DESC=	Enable anonymous statistics collection
+ANONSTATS_CONFIGURE_WITH=	libcurl
+ANONSTATS_LIB_DEPENDS=		libcurl.so:ftp/curl
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	citusdata

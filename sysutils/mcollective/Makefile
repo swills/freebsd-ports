@@ -1,8 +1,8 @@
 # Created by: Russell Jackson <raj@csub.edu>
-# $FreeBSD: head/sysutils/mcollective/Makefile 451913 2017-10-12 17:02:58Z romain $
+# $FreeBSD: head/sysutils/mcollective/Makefile 454261 2017-11-15 18:50:12Z romain $
 
 PORTNAME=	mcollective
-PORTVERSION=	2.11.3
+PORTVERSION=	2.11.4
 CATEGORIES=	sysutils
 MASTER_SITES=	http://downloads.puppetlabs.com/${PORTNAME}/
 

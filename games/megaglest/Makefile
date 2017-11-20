@@ -1,9 +1,9 @@
 # Created by: Sven Moeller <smoeller@nichthelfer.de>
-# $FreeBSD: head/games/megaglest/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/megaglest/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
 PORTNAME=	megaglest
 PORTVERSION=	3.13.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 
 MAINTAINER=	monwarez@mailoo.org

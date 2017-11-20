@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/Makefile 451474 2017-10-07 18:40:56Z antoine $
+# $FreeBSD: head/converters/Makefile 454302 2017-11-16 10:48:48Z tz $
 #
 
     COMMENT = Character code converters
@@ -146,6 +146,9 @@
     SUBDIR += php71-iconv
     SUBDIR += php71-mbstring
     SUBDIR += php71-recode
+    SUBDIR += php72-iconv
+    SUBDIR += php72-mbstring
+    SUBDIR += php72-recode
     SUBDIR += psiconv
     SUBDIR += py-bcode
     SUBDIR += py-bencode.py

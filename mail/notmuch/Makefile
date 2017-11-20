@@ -1,8 +1,8 @@
 # Created by: DarwinSurvivor <darwinsurvivor@gmail.com>
-# $FreeBSD: head/mail/notmuch/Makefile 452172 2017-10-16 05:40:01Z misha $
+# $FreeBSD: head/mail/notmuch/Makefile 454413 2017-11-18 08:01:52Z misha $
 
 PORTNAME=	notmuch
-PORTVERSION=	0.25.1
+PORTVERSION=	0.25.2
 CATEGORIES=	mail
 MASTER_SITES=	http://notmuchmail.org/releases/
 
@@ -37,11 +37,8 @@ USE_LDCONFIG=	yes
 
 MAKE_ENV+=	PYTHONCMD=${PYTHON_CMD}
 
-TEST_ENV+=	NOTMUCH_SKIP_TESTS="address basic count crypto db-features \
-		database-modified dump-restore emacs emacs-large-search-buffer \
-		from-guessing insert json lib-error new parse-time-string \
-		python search search-output sexp smime symbol-hiding tagging \
-		thread-order thread-search" \
+TEST_ENV+=	NOTMUCH_SKIP_TESTS="basic count new insert tagging atomicity \
+		message-property regexp-query" \
 		V=1 \
 		TEST_CFLAGS="-g -O0 -I${LOCALBASE}/include -L${LOCALBASE}/lib" \
 		BSD_GDB=${LOCALBASE}/bin/gdb

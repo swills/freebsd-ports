@@ -1,8 +1,8 @@
 # Created by: mp39590@gmail.com
-# $FreeBSD: head/devel/acsccid/Makefile 449391 2017-09-07 09:01:46Z amdmi3 $
+# $FreeBSD: head/devel/acsccid/Makefile 454414 2017-11-18 08:18:50Z misha $
 
 PORTNAME=	acsccid
-PORTVERSION=	1.1.4
+PORTVERSION=	1.1.5
 CATEGORIES=	devel
 MASTER_SITES=	SF
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 454190 2017-11-14 18:44:05Z yuri $
+# $FreeBSD: head/science/Makefile 454407 2017-11-18 05:12:35Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -51,6 +51,7 @@
     SUBDIR += fvcom-mpi
     SUBDIR += fvm
     SUBDIR += gchemutils
+    SUBDIR += gdma
     SUBDIR += getdp
     SUBDIR += ghemical
     SUBDIR += ghmm
@@ -171,6 +172,7 @@
     SUBDIR += py-scikit-sparse
     SUBDIR += py-scimath
     SUBDIR += py-scipy
+    SUBDIR += py-scoria
     SUBDIR += py-tensorflow
     SUBDIR += py-ws2300
     SUBDIR += pybrain

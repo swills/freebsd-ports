@@ -1,9 +1,9 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/graphics/reallyslick/Makefile 450852 2017-09-28 15:36:31Z kwm $
+# $FreeBSD: head/graphics/reallyslick/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
 PORTNAME=	reallyslick
 PORTVERSION=	0.9.1
-PORTREVISION=	19
+PORTREVISION=	20
 CATEGORIES=	graphics
 MASTER_SITES=	SF/rss-glx/rss-glx/${PORTVERSION}
 DISTNAME=	rss-glx_${PORTVERSION}

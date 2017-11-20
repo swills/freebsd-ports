@@ -1,9 +1,9 @@
 # Created by: Alejandro Pulver <alepulver@FreeBSD.org>
-# $FreeBSD: head/games/edge/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/edge/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
 PORTNAME=	edge
 PORTVERSION=	1.35
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/EDGE%20Source%20Code/${PORTVERSION} \
 		SF/${PORTNAME}/EDGE%20Binaries/${PORTVERSION}:wad

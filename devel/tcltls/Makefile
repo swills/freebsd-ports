@@ -1,8 +1,8 @@
 # Created by: mi@aldan.algebra.com
-# $FreeBSD: head/devel/tcltls/Makefile 441314 2017-05-20 13:59:35Z mi $
+# $FreeBSD: head/devel/tcltls/Makefile 454338 2017-11-16 20:30:44Z mi $
 
 PORTNAME=	tcltls
-PORTVERSION=	1.7.12
+PORTVERSION=	1.7.14
 CATEGORIES=	devel security tcl
 MASTER_SITES=	http://core.tcl.tk/tcltls/uv/ \
 		http://tcltls.rkeene.org/uv/
@@ -19,6 +19,7 @@ OPTIONS_DEFINE=	DOCS
 
 USES+=		tcl:tea ssl
 CONFIGURE_ARGS+=--with-ssl-dir=${OPENSSLBASE}	\
+		--enable-ssl-fastpath	\
 		--disable-rpath
 
 PLIST_FILES=	lib/${TCL_PKG}/tcltls.so \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.options.mk 443024 2017-06-09 18:12:54Z kwm $
+# $FreeBSD: head/Mk/bsd.options.mk 454332 2017-11-16 19:41:20Z bdrewery $
 #
 # These variables are used in port makefiles to define the options for a port.
 #
@@ -640,23 +640,18 @@ _OPTIONS_${_target}:=	${_OPTIONS_${_target}} ${_prio}:${_type}-${_target}-${opt}
 
 .undef (SELECTED_OPTIONS)
 .undef (DESELECTED_OPTIONS)
-.for opt in ${ALL_OPTIONS}
-.  if ${PORT_OPTIONS:M${opt}}
-SELECTED_OPTIONS:=	${opt} ${SELECTED_OPTIONS}
-.  else
-DESELECTED_OPTIONS:=	${opt} ${DESELECTED_OPTIONS}
-.  endif
-.endfor
+# Wait to expand PORT_OPTIONS until the last moment in case something modifies
+# the selected OPTIONS after bsd.port.options.mk is included.  This uses
+# bmake's :@ for loop.
+_SELECTED_OPTIONS=	${ALL_OPTIONS:@opt@${PORT_OPTIONS:M${opt}}@}
+_DESELECTED_OPTIONS=	${ALL_OPTIONS:@opt@${"${PORT_OPTIONS:M${opt}}":?:${opt}}@}
 .for otype in MULTI GROUP SINGLE RADIO
 .  for m in ${OPTIONS_${otype}}
-.    for opt in ${OPTIONS_${otype}_${m}}
-.      if ${PORT_OPTIONS:M${opt}}
-SELECTED_OPTIONS:=	${opt} ${SELECTED_OPTIONS}
-.      else
-DESELECTED_OPTIONS:=	${opt} ${DESELECTED_OPTIONS}
-.      endif
-.    endfor
+_SELECTED_OPTIONS+=	${OPTIONS_${otype}_${m}:@opt@${PORT_OPTIONS:M${opt}}@}
+_DESELECTED_OPTIONS+=	${OPTIONS_${otype}_${m}:@opt@${"${PORT_OPTIONS:M${opt}}":?:${opt}}@}
 .  endfor
 .endfor
+SELECTED_OPTIONS=	${_SELECTED_OPTIONS:O:u}
+DESELECTED_OPTIONS=	${_DESELECTED_OPTIONS:O:u}
 
 .endif

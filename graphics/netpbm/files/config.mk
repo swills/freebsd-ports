@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/netpbm/files/config.mk 451378 2017-10-06 11:18:35Z tobik $
+# $FreeBSD: head/graphics/netpbm/files/config.mk 454404 2017-11-18 00:51:34Z tobik $
 CFLAGS_SHLIB += -fPIC
 DEFAULT_TARGET = nonmerge
 INSTALL_PERM_BIN =  $(BINMODE)
@@ -13,6 +13,7 @@ JBIGHDR_DIR = $(LOCALBASE)/include
 JBIGLIB = -L$(LOCALBASE)/lib -ljbig
 JPEGHDR_DIR = $(LOCALBASE)/include
 JPEGLIB = -L$(LOCALBASE)/lib -ljpeg
+LINKER_CAN_DO_EXPLICIT_LIBRARY = Y
 LINKERISCOMPILER = Y
 NETPBMLIBSUFFIX = so
 NETPBMLIBTYPE = unixshared
