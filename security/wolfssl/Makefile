@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/wolfssl/Makefile 442405 2017-06-02 15:49:34Z linimon $
+# $FreeBSD: head/security/wolfssl/Makefile 454654 2017-11-21 21:15:35Z johans $
 
 PORTNAME=	wolfssl
-PORTVERSION=	3.11.0
+PORTVERSION=	3.12.2
 CATEGORIES=	security devel
 MASTER_SITES=	http://www.wolfssl.com/
 
@@ -23,7 +23,7 @@ CONFIGURE_ARGS=	--disable-dependency-tracking \
 		--enable-shared --enable-static \
 		--enable-dtls --enable-opensslextra --enable-ipv6 \
 		--enable-dsa --enable-dh --enable-ecc --enable-sni \
-		--enable-ripemd --enable-sha512
+		--enable-ripemd --enable-sha512 --enable-opensslcoexist
 
 USE_LDCONFIG=	yes
 PORTDOCS=	*

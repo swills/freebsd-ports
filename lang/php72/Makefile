@@ -1,9 +1,9 @@
 
-# $FreeBSD: head/lang/php72/Makefile 454501 2017-11-19 21:30:42Z antoine $
+# $FreeBSD: head/lang/php72/Makefile 454754 2017-11-23 11:41:51Z tz $
 
 PORTNAME=	php72
 DISTVERSION=	7.2.0RC6
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES?=	lang devel www
 MASTER_SITES=	https://downloads.php.net/~pollita/
 DISTNAME=	php-${DISTVERSION}
@@ -57,11 +57,10 @@ EMBED_DESC=	Build embedded library
 DEBUG_DESC=	Enable debug
 PHPDBG_DESC=	Interactive PHP debugger
 DTRACE_DESC=	Enable DTrace support
-IPV6_DESC=	Enable ipv6 support
 LINKTHR_DESC=	Link thread lib (for threaded extensions)
 ZTS_DESC=	Force Zend Thread Safety (ZTS) build
 
-CONFLICTS=	php56-* php70-*
+CONFLICTS=	php56-* php70-* php71-*
 
 DESTDIRNAME=	INSTALL_ROOT
 

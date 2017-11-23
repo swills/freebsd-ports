@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/py-pymssql/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/databases/py-pymssql/Makefile 454687 2017-11-22 13:30:29Z swills $
 
 PORTNAME=	pymssql
-PORTVERSION=	2.1.1
+PORTVERSION=	2.1.3
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

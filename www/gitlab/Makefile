@@ -1,10 +1,10 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab/Makefile 454536 2017-11-20 10:08:21Z tz $
+# $FreeBSD: head/www/gitlab/Makefile 454691 2017-11-22 14:55:05Z tz $
 
 PORTNAME=	gitlab
 PORTVERSION=	9.4.7
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	www devel
 
 MAINTAINER=	tz@FreeBSD.org
@@ -188,8 +188,8 @@ RUN_DEPENDS=	git>=2.14.1:devel/git \
 	rubygem-sys-filesystem>=1.1.6:sysutils/rubygem-sys-filesystem \
 	rubygem-gitaly>=0.14.0:net/rubygem-gitaly \
 	rubygem-toml-rb>=0.3.15:www/rubygem-toml-rb \
-	rubygem-flipper>=0.10.2:devel/rubygem-flipper \
-	rubygem-flipper-active_record>=0.10.2:databases/rubygem-flipper-active_record \
+	rubygem-flipper010>=0.10.2:devel/rubygem-flipper010 \
+	rubygem-flipper-active_record010>=0.10.2:databases/rubygem-flipper-active_record010 \
 	rubygem-rinku>=1.7.3:www/rubygem-rinku
 
 PGSQL_RUN_DEPENDS=	rubygem-pg>=0.18.2:databases/rubygem-pg \

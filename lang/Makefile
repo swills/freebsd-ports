@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 454302 2017-11-16 10:48:48Z tz $
+# $FreeBSD: head/lang/Makefile 454648 2017-11-21 18:50:58Z rene $
 #
 
     COMMENT = Programming languages
@@ -344,7 +344,6 @@
     SUBDIR += tcc
     SUBDIR += tcl-manual
     SUBDIR += tcl-wrapper
-    SUBDIR += tcl84
     SUBDIR += tcl85
     SUBDIR += tcl86
     SUBDIR += tcl87

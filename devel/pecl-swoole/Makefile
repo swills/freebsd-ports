@@ -1,8 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/pecl-swoole/Makefile 453345 2017-11-02 13:42:29Z vanilla $
+# $FreeBSD: head/devel/pecl-swoole/Makefile 454692 2017-11-22 15:07:28Z vanilla $
 
 PORTNAME=	swoole
-PORTVERSION=	1.9.22
+PORTVERSION=	1.9.23
 CATEGORIES=	devel net
 
 MAINTAINER=	vanilla@FreeBSD.org

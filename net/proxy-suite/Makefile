@@ -1,5 +1,5 @@
 # Created by: Thomas Quinot <thomas@cuivre.fr.eu.org>
-# $FreeBSD: head/net/proxy-suite/Makefile 386914 2015-05-21 06:54:34Z amdmi3 $
+# $FreeBSD: head/net/proxy-suite/Makefile 454688 2017-11-22 13:34:18Z pi $
 
 PORTNAME=	proxy-suite
 PORTVERSION=	1.9.2.4
@@ -54,15 +54,6 @@ MAKE_ARGS=	INST_ROOT=${STAGEDIR} CONF_DST=ftp-proxy.conf.sample
 SUB_FILES=	pkg-message
 
 .include <bsd.port.pre.mk>
-
-# XXX: newer autoconf's rely on the compiler result, not the preprocessor
-#      for checking headers, so the configure.in needs to be fixed upstream
-#      to properly include dependencies
-post-configure:
-	@${ECHO} "#define HAVE_NET_IF_H 1" >> ${WRKSRC}/config.h
-	@${ECHO} "#define HAVE_NETINET_IP_H 1" >> ${WRKSRC}/config.h
-	@${ECHO} "#define HAVE_NETINET_IP_FIL_H 1" >> ${WRKSRC}/config.h
-	@${ECHO} "#define HAVE_NETINET_IP_NAT_H 1" >> ${WRKSRC}/config.h
 
 pre-install:
 	@${STRIP_CMD} ${WRKSRC}/ftp-proxy/ftp-proxy

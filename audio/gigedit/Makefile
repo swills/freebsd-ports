@@ -1,9 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/audio/gigedit/Makefile 440591 2017-05-10 21:35:06Z antoine $
+# $FreeBSD: head/audio/gigedit/Makefile 454694 2017-11-22 17:39:01Z yuri $
 
 PORTNAME=	gigedit
 PORTVERSION=	0.2.0
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	audio
 MASTER_SITES=	http://download.linuxsampler.org/packages/
 
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser
 LIB_DEPENDS=	libgig.so:audio/libgig \
 		libgtkmm-2.4.so:x11-toolkits/gtkmm24
-RUN_DEPENDS=	${LOCALBASE}/lib/linuxsampler/liblinuxsampler.so.3:audio/linuxsampler
+RUN_DEPENDS=	${LOCALBASE}/lib/linuxsampler/liblinuxsampler.so:audio/linuxsampler
 BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 GNU_CONFIGURE=	yes

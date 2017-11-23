@@ -1,5 +1,5 @@
 # Created by: Bill Fumerola <billf@chc-chimes.com>
-# $FreeBSD: head/net/wireshark/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/net/wireshark/Makefile 454590 2017-11-21 08:36:26Z mat $
 
 PORTNAME?=	wireshark
 PORTVERSION=	2.4.1
@@ -125,7 +125,7 @@ QT5_PLIST_SUB=		GUI_GTK="@comment "
 GTK2_PLIST_SUB=		GUI_GTK=""
 GTK3_PLIST_SUB=		GUI_GTK=""
 
-OPTIONS_SUB=		LUA
+OPTIONS_SUB=		yes
 
 .if defined(LITE)
 CONFIGURE_ARGS+=--enable-androiddump=no

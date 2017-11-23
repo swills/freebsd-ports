@@ -1,8 +1,9 @@
 # Created by: trasz <trasz@FreeBSD.org
-# $FreeBSD: head/audio/qsampler/Makefile 412733 2016-04-08 12:37:30Z mat $
+# $FreeBSD: head/audio/qsampler/Makefile 454694 2017-11-22 17:39:01Z yuri $
 
 PORTNAME=	qsampler
 PORTVERSION=	0.4.0
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	SF \
 		http://download.linuxsampler.org/packages/

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/Makefile 453482 2017-11-04 19:48:14Z yuri $
+# $FreeBSD: head/x11-toolkits/Makefile 454648 2017-11-21 18:50:58Z rene $
 #
 
     COMMENT = X11 toolkits
@@ -268,7 +268,6 @@
     SUBDIR += tile
     SUBDIR += tix
     SUBDIR += tk-wrapper
-    SUBDIR += tk84
     SUBDIR += tk85
     SUBDIR += tk86
     SUBDIR += tk87

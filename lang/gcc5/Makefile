@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc5/Makefile 454504 2017-11-19 21:50:50Z gerald $
+# $FreeBSD: head/lang/gcc5/Makefile 454744 2017-11-23 08:14:50Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	5.5.0
@@ -79,10 +79,6 @@ CONFIGURE_ARGS+=--disable-bootstrap
 .else
 CONFIGURE_ARGS+=--with-build-config=bootstrap-debug
 ALL_TARGET=	bootstrap-lean
-.endif
-INSTALL_TARGET=	install-strip
-.if ${UID} != 0
-BINMODE=	755
 .endif
 INSTALL_TARGET=	install-strip
 .if ${UID} != 0

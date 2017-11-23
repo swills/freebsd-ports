@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-cuba/Makefile 444848 2017-07-01 20:57:56Z sunpoet $
+# $FreeBSD: head/www/rubygem-cuba/Makefile 454731 2017-11-22 23:36:21Z sunpoet $
 
 PORTNAME=	cuba
-PORTVERSION=	3.8.1
+PORTVERSION=	3.9.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

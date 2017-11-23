@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 454323 2017-11-16 18:41:01Z yuri $
+# $FreeBSD: head/misc/Makefile 454664 2017-11-22 06:01:27Z yuri $
 #
 
     COMMENT = Miscellaneous utilities
@@ -101,6 +101,7 @@
     SUBDIR += fortune-mod-psalms
     SUBDIR += fortuneit
     SUBDIR += fpc-chm
+    SUBDIR += free42
     SUBDIR += freebsd-doc-all
     SUBDIR += freebsd-doc-bn
     SUBDIR += freebsd-doc-da

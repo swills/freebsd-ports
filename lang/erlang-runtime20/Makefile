@@ -1,8 +1,8 @@
 # Created by: ruslan@shevchenko.kiev.ua
-# $FreeBSD: head/lang/erlang-runtime20/Makefile 453905 2017-11-10 16:27:32Z olgeni $
+# $FreeBSD: head/lang/erlang-runtime20/Makefile 454558 2017-11-20 13:45:44Z olgeni $
 
 PORTNAME=	erlang
-PORTVERSION=	20.1.5
+PORTVERSION=	20.1.6
 CATEGORIES=	lang parallel java
 MASTER_SITES=	http://www.erlang.org/download/:erlangorg		\
 		http://erlang.stacken.kth.se/download/:erlangorg	\
@@ -20,7 +20,7 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 PATCH_SITES=	http://olgeni.olgeni.com/~olgeni/distfiles/ \
 		LOCAL/olgeni
 PATCHFILES=	patch-otp-20.1.1 patch-otp-20.1.2 patch-otp-20.1.3 \
-		patch-otp-20.1.4 patch-otp-20.1.5
+		patch-otp-20.1.4 patch-otp-20.1.5 patch-otp-20.1.6
 
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Functional programming language from Ericsson
@@ -71,12 +71,12 @@ USE_PERL5=	build
 GNU_CONFIGURE=	yes
 LDFLAGS+=	-L${LOCALBASE}/lib
 
-APP_UPGRADE=	erts           9.1 9.1.4 \
+APP_UPGRADE=	erts           9.1 9.1.5 \
 		lib/compiler 7.1.2 7.1.3 \
 		lib/diameter   2.1 2.1.2 \
 		lib/inets    6.4.2 6.4.4 \
 		lib/snmp     5.2.7 5.2.8 \
-		lib/ssh        4.6 4.6.1
+		lib/ssh        4.6 4.6.2
 
 .include <bsd.port.options.mk>
 

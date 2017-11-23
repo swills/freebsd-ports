@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <sysadmin@alexdupre.com>
-# $FreeBSD: head/mail/nocc/Makefile 424404 2016-10-21 09:27:44Z ale $
+# $FreeBSD: head/mail/nocc/Makefile 454684 2017-11-22 11:33:11Z ale $
 
 PORTNAME=	nocc
-PORTVERSION=	1.9.6
+PORTVERSION=	1.9.7
 CATEGORIES=	mail www
 MASTER_SITES=	SF/${PORTNAME}/NOCC/${PORTVERSION}
 
@@ -17,6 +17,7 @@ USES=		php:web
 USE_PHP=	ctype iconv imap mbstring pcre session
 
 SUB_FILES=	pkg-message
+NO_ARCH=	yes
 NO_BUILD=	yes
 
 NOCCCOMP=	.htaccess favicon.ico robots.txt \

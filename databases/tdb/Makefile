@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/tdb/Makefile 454556 2017-11-20 13:39:16Z timur $
+# $FreeBSD: head/databases/tdb/Makefile 454619 2017-11-21 17:00:12Z timur $
 
 PORTNAME=		tdb
 PORTVERSION=		1.3.15
@@ -44,6 +44,7 @@ PLIST_FILES+=		include/tdb.h \
 			%%PKGCONFIGDIR%%/tdb.pc
 
 .if defined(NO_PYTHON)
+USES+=			python:2.7,build
 CONFIGURE_ARGS+=	--disable-python
 .else
 USES+=			python:2.7

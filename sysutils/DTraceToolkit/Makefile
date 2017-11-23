@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <steven@exit2shell.com>
-# $FreeBSD: head/sysutils/DTraceToolkit/Makefile 420036 2016-08-10 19:45:33Z skreuzer $
+# $FreeBSD: head/sysutils/DTraceToolkit/Makefile 454702 2017-11-22 19:52:48Z skreuzer $
 
 PORTNAME=	dtrace-toolkit
 PORTVERSION=	1.0
@@ -8,6 +8,9 @@ CATEGORIES=	sysutils
 
 MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	Collection of useful scripts for DTrace
+
+DEPRECATED=     Now maintained as part of the base system
+EXPIRATION_DATE=        2018-01-01
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	opendtrace

@@ -1,5 +1,5 @@
 # Created by: arved
-# $FreeBSD: head/www/newsboat/Makefile 454121 2017-11-13 15:51:56Z mat $
+# $FreeBSD: head/www/newsboat/Makefile 454598 2017-11-21 11:44:27Z arved $
 
 PORTNAME=	newsboat
 PORTVERSION=	2.10.1
@@ -41,6 +41,8 @@ post-patch:
 	${REINPLACE_CMD} -e 's,fail "ncursesw",true,; s,fail "libcrypto",true,' \
 		${WRKSRC}/config.sh
 	${REINPLACE_CMD} -e 's|-liconv|${ICONV_LIB} -lcrypto -lncursesw|;s|-Werror||' \
+		${WRKSRC}/Makefile
+	${REINPLACE_CMD} -e 's|LDFLAGS+=-L. -fprofile-arcs -ftest-coverage|LDFLAGS+=-L.|' \
 		${WRKSRC}/Makefile
 
 post-install:

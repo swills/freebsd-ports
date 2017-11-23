@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/gohugo/Makefile 452468 2017-10-19 20:23:08Z tobik $
+# $FreeBSD: head/www/gohugo/Makefile 454590 2017-11-21 08:36:26Z mat $
 
 PORTNAME=	hugo
 DISTVERSIONPREFIX=	v
@@ -65,7 +65,7 @@ GH_TUPLE=	BurntSushi:toml:a368813:toml/src/github.com/BurntSushi/toml \
 
 OPTIONS_DEFINE=		MANPAGES
 OPTIONS_DEFAULT=	MANPAGES
-OPTIONS_SUB=		MANPAGES
+OPTIONS_SUB=		yes
 
 MANPAGES_DESC=	Build and/or install manual pages
 

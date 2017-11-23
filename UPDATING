@@ -5,6 +5,19 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20171119:
+  AFFECTS: users of sysutils/zrepl
+  AUTHOR: woodsb02@FreeBSD.org
+
+  Zrepl has been updated to 0.0.2, which introduces two changes that will
+  require existing users to change their zrepl.yml config file:
+    - global.logging is no longer a dictionary but a list.
+      Refer to the new format here: https://zrepl.github.io/configuration/logging.html
+    - source job field datasets renamed to filesystems.
+      Refer to the new format here: https://zrepl.github.io/configuration/jobs.html
+
+    https://zrepl.github.io/changelog.html#id1
+
 20171117:
   AFFECTS: users of sysutils/terraform
   AUTHOR: lifanov@FreeBSD.org
@@ -15147,4 +15160,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: head/UPDATING 454404 2017-11-18 00:51:34Z tobik $
+$FreeBSD: head/UPDATING 454572 2017-11-20 15:40:31Z woodsb02 $

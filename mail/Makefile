@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 454503 2017-11-19 21:48:19Z yuri $
+# $FreeBSD: head/mail/Makefile 454648 2017-11-21 18:50:58Z rene $
 #
 
     COMMENT = Electronic mail utilities
@@ -720,7 +720,6 @@
     SUBDIR += thunderbird
     SUBDIR += thunderbird-dictionaries
     SUBDIR += thunderbird-i18n
-    SUBDIR += tkrat2
     SUBDIR += tlb
     SUBDIR += tmda
     SUBDIR += tpop3d

@@ -1,8 +1,8 @@
 # Created by: snowchyld
-# $FreeBSD: head/textproc/p5-Hash-Merge/Makefile 454397 2017-11-18 00:10:52Z sunpoet $
+# $FreeBSD: head/textproc/p5-Hash-Merge/Makefile 454715 2017-11-22 23:34:59Z sunpoet $
 
 PORTNAME=	Hash-Merge
-PORTVERSION=	0.298
+PORTVERSION=	0.299
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

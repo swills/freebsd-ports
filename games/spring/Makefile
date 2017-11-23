@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/spring/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/games/spring/Makefile 454590 2017-11-21 08:36:26Z mat $
 
 PORTNAME=	spring
 PORTVERSION=	98.0
@@ -57,7 +57,7 @@ PORTDATA=	*
 
 OPTIONS_DEFINE=	MANPAGES PR_DOWNLOADER DOCS
 OPTIONS_DEFAULT=MANPAGES PR_DOWNLOADER
-OPTIONS_SUB=	*
+OPTIONS_SUB=	yes
 
 HTMLDOCS_DESC=	Build and install HTML documentation
 PR_DOWNLOADER_DESC=	Map and game downloader

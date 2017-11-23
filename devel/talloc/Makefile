@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/talloc/Makefile 454556 2017-11-20 13:39:16Z timur $
+# $FreeBSD: head/devel/talloc/Makefile 454619 2017-11-21 17:00:12Z timur $
 
 PORTNAME=		talloc
 PORTVERSION=		2.1.10
@@ -37,6 +37,7 @@ PLIST_FILES+=		include/talloc.h \
 			%%PKGCONFIGDIR%%/talloc.pc
 
 .if defined(NO_PYTHON)
+USES+=			python:2.7,build
 CONFIGURE_ARGS+=	--disable-python
 .else
 USES+=			python:2.7

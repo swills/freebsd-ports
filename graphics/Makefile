@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 454505 2017-11-19 21:55:20Z yuri $
+# $FreeBSD: head/graphics/Makefile 454666 2017-11-22 06:22:49Z jbeich $
 #
 
     COMMENT = Graphics tools and libraries
@@ -553,7 +553,6 @@
     SUBDIR += libzmf
     SUBDIR += lightzone
     SUBDIR += linplasma
-    SUBDIR += linux-adobesvg
     SUBDIR += linux-c6-cairo
     SUBDIR += linux-c6-dri
     SUBDIR += linux-c6-gdk-pixbuf2

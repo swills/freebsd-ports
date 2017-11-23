@@ -1,11 +1,10 @@
-# $FreeBSD: head/news/Makefile 450963 2017-09-30 10:17:32Z sunpoet $
+# $FreeBSD: head/news/Makefile 454648 2017-11-21 18:50:58Z rene $
 #
 
     COMMENT = Network news
 
     SUBDIR += atp
     SUBDIR += aub
-    SUBDIR += brag
     SUBDIR += c-nocem
     SUBDIR += cg
     SUBDIR += cleanfeed

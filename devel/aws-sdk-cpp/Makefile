@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/aws-sdk-cpp/Makefile 454037 2017-11-12 12:38:40Z vanilla $
+# $FreeBSD: head/devel/aws-sdk-cpp/Makefile 454608 2017-11-21 13:01:16Z arved $
 
 PORTNAME=	aws-sdk-cpp
 PORTVERSION=	1.3.1
@@ -20,7 +20,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	aws
 USES=		cmake pkgconfig compiler:c++11-lib ssl
 USE_LDCONFIG=	yes
-CXXFLAGS=	-Wno-error
+CXXFLAGS=	-Wno-error -Wno-c11-extensions
 
 post-patch:
 	${REINPLACE_CMD} -e "s,/pkgconfig,/../libdata/pkgconfig,g" \

@@ -1,5 +1,5 @@
 # Created by: Laurent Courty
-# $FreeBSD: head/astro/gpsbabel/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/astro/gpsbabel/Makefile 454590 2017-11-21 08:36:26Z mat $
 
 PORTNAME=	gpsbabel
 DISTVERSIONPREFIX=	${PORTNAME}_
@@ -25,7 +25,7 @@ CONFIGURE_ARGS=	--with-zlib=system
 USES=		localbase
 
 OPTIONS_DEFINE=	GUI
-OPTIONS_SUB=	GUI
+OPTIONS_SUB=	yes
 
 GUI_ALL_TARGET=	gui
 GUI_USE=	QT4=gui,xml,network,webkit

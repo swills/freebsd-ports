@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/gnupg/Makefile 453850 2017-11-09 17:03:22Z adamw $
+# $FreeBSD: head/security/gnupg/Makefile 454661 2017-11-22 02:04:36Z adamw $
 
 PORTNAME=	gnupg
-PORTVERSION=	2.2.2
+PORTVERSION=	2.2.3
 CATEGORIES=	security
 MASTER_SITES=	GNUPG
 
@@ -41,7 +41,8 @@ OPTIONS_SUB=	yes
 LDAP_DESC=	LDAP keyserver interface
 SCDAEMON_DESC=	Enable Smartcard daemon (with libusb)
 SUID_GPG_DESC=	Install GPG with suid
-# In jail, SUID is required to avoid warning (security.bsd.unprivileged_mlock sysctl is not used in jail).
+# In jail, SUID is required to avoid warning
+# (security.bsd.unprivileged_mlock sysctl is not used in jail).
 
 GNUTLS_CONFIGURE_ENABLE=gnutls
 GNUTLS_LIB_DEPENDS=	libgnutls.so:security/gnutls

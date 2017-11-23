@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-toolkits/rubygem-poppler/Makefile 453846 2017-11-09 16:05:47Z sunpoet $
+# $FreeBSD: head/x11-toolkits/rubygem-poppler/Makefile 454634 2017-11-21 18:15:04Z sunpoet $
 
 PORTNAME=	poppler
-PORTVERSION=	3.2.0
+PORTVERSION=	3.2.1
 CATEGORIES=	x11-toolkits rubygems
 MASTER_SITES=	RG
 

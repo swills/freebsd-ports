@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 454407 2017-11-18 05:12:35Z yuri $
+# $FreeBSD: head/science/Makefile 454740 2017-11-23 05:58:51Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -32,6 +32,7 @@
     SUBDIR += cgribex
     SUBDIR += checkmol
     SUBDIR += chemical-mime-data
+    SUBDIR += chemps2
     SUBDIR += chemtool
     SUBDIR += chemtool-devel
     SUBDIR += clhep

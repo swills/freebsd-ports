@@ -1,9 +1,9 @@
 # Created by: Masaki TAGAWA <masaki@club.kyutech.ac.jp>
-# $FreeBSD: head/net/chrony/Makefile 454465 2017-11-18 22:41:34Z rodrigo $
+# $FreeBSD: head/net/chrony/Makefile 454559 2017-11-20 13:49:59Z rodrigo $
 
 PORTNAME=	chrony
 PORTVERSION=	3.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	http://download.tuxfamily.org/chrony/
 
@@ -42,6 +42,7 @@ IPV6_CONFIGURE_OFF=	--disable-ipv6
 
 NSS_DESC=		Add support for more hashing algorithms
 NSS_CONFIGURE_OFF=	--without-nss
+NSS_LIB_DEPENDS=	libfreebl3.so:security/nss
 NSS_USES=		pkgconfig
 
 post-install:

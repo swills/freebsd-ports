@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 454051 2017-11-12 15:56:40Z rene $
+# $FreeBSD: head/multimedia/Makefile 454648 2017-11-21 18:50:58Z rene $
 #
 
     COMMENT = Multimedia software
@@ -40,7 +40,6 @@
     SUBDIR += devede
     SUBDIR += dirac
     SUBDIR += dragon
-    SUBDIR += dtv
     SUBDIR += dtv-scan-tables
     SUBDIR += dumpmpeg
     SUBDIR += dv2jpg

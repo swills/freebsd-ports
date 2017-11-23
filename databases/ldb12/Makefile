@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/ldb12/Makefile 454556 2017-11-20 13:39:16Z timur $
+# $FreeBSD: head/databases/ldb12/Makefile 454619 2017-11-21 17:00:12Z timur $
 
 PORTNAME=		ldb
 PORTVERSION=		1.2.2
@@ -79,6 +79,7 @@ PLIST_FILES=		include/ldb_version.h \
 			%%PKGCONFIGDIR%%/ldb.pc
 
 .if defined(NO_PYTHON)
+USES+=			python:2.7,build
 CONFIGURE_ARGS+=	--disable-python
 .else
 USES+=			python:2.7

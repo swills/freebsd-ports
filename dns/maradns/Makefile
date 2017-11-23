@@ -1,8 +1,8 @@
 # Created by: Anders Nordby <anders@fix.no>
-# $FreeBSD: head/dns/maradns/Makefile 431796 2017-01-18 13:20:31Z tijl $
+# $FreeBSD: head/dns/maradns/Makefile 454571 2017-11-20 14:55:31Z mat $
 
 PORTNAME=	maradns
-PORTVERSION=	2.0.13
+PORTVERSION=	2.0.14
 CATEGORIES=	dns
 MASTER_SITES=	http://maradns.samiam.org/download/2.0/${PORTVERSION}/\
 		SF/${PORTNAME}/MaraDNS/${PORTVERSION}/
@@ -13,7 +13,7 @@ COMMENT=	DNS server with focus on security and simplicity
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-DEADWOOD_VER=	3.2.09
+DEADWOOD_VER=	3.2.10
 
 REINPLACE_ARGS=	-i ""
 MAKE_ENV=	FLAGS="${CFLAGS}"

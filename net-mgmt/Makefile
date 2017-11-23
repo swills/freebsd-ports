@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 454302 2017-11-16 10:48:48Z tz $
+# $FreeBSD: head/net-mgmt/Makefile 454648 2017-11-21 18:50:58Z rene $
 #
 
     COMMENT = Network management tools
@@ -186,7 +186,6 @@
     SUBDIR += netmask
     SUBDIR += netspoc
     SUBDIR += netustad
-    SUBDIR += netwag
     SUBDIR += networkmgr
     SUBDIR += netwox
     SUBDIR += netxms

@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-rack-test/Makefile 454554 2017-11-20 13:26:00Z sunpoet $
+# $FreeBSD: head/www/rubygem-rack-test/Makefile 454733 2017-11-22 23:36:31Z sunpoet $
 
 PORTNAME=	rack-test
-PORTVERSION=	0.7.1
+PORTVERSION=	0.8.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

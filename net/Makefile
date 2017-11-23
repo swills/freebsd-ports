@@ -1,5 +1,5 @@
 
-# $FreeBSD: head/net/Makefile 454468 2017-11-18 23:35:22Z ehaupt $
+# $FreeBSD: head/net/Makefile 454655 2017-11-21 21:32:19Z adamw $
 #
 
     COMMENT = Networking tools
@@ -235,7 +235,6 @@
     SUBDIR += hostapd
     SUBDIR += howl
     SUBDIR += hping
-    SUBDIR += hping-devel
     SUBDIR += hs-aws
     SUBDIR += hs-connection
     SUBDIR += hs-gsasl

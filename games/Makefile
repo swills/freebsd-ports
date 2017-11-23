@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 453966 2017-11-11 10:30:10Z rene $
+# $FreeBSD: head/games/Makefile 454703 2017-11-22 20:04:01Z yuri $
 #
 
     COMMENT = Games and related software
@@ -103,7 +103,6 @@
     SUBDIR += blokish
     SUBDIR += bloodfrontier
     SUBDIR += bluemoon
-    SUBDIR += bogged
     SUBDIR += bomber
     SUBDIR += bomberclone
     SUBDIR += bomberinstinct
@@ -432,7 +431,6 @@
     SUBDIR += icbm3d
     SUBDIR += icebreaker
     SUBDIR += iceicepenguin
-    SUBDIR += ifm
     SUBDIR += imaze
     SUBDIR += impossible_mission_puzzle
     SUBDIR += inform
@@ -693,6 +691,7 @@
     SUBDIR += openbor4432
     SUBDIR += openbubbles
     SUBDIR += opencity
+    SUBDIR += openclaw
     SUBDIR += openclonk
     SUBDIR += opengfx
     SUBDIR += openglad
@@ -977,7 +976,6 @@
     SUBDIR += timeseal
     SUBDIR += tinymux
     SUBDIR += tkmoo
-    SUBDIR += tksol
     SUBDIR += tomatoes
     SUBDIR += tome4
     SUBDIR += tomenet
@@ -1000,7 +998,6 @@
     SUBDIR += trophy
     SUBDIR += tsito
     SUBDIR += tt
-    SUBDIR += ttraffic
     SUBDIR += ttt
     SUBDIR += tty-solitaire
     SUBDIR += tux-aqfh
@@ -1153,6 +1150,7 @@
     SUBDIR += xpilot-ng-server
     SUBDIR += xpipeman
     SUBDIR += xpired
+    SUBDIR += xptools
     SUBDIR += xpuyopuyo
     SUBDIR += xpuzzletama
     SUBDIR += xpyraminx

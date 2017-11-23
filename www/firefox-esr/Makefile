@@ -1,9 +1,10 @@
 # Created by: Alan Eldridge <alane@FreeBSD.org>
-# $FreeBSD: head/www/firefox-esr/Makefile 453999 2017-11-11 20:41:59Z jbeich $
+# $FreeBSD: head/www/firefox-esr/Makefile 454672 2017-11-22 06:25:21Z jbeich $
 
 PORTNAME=	firefox
 DISTVERSION=	52.5.0
 DISTVERSIONSUFFIX=esr.source
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	www ipv6
 MASTER_SITES=	MOZILLA/${PORTNAME}/releases/${DISTVERSION}esr/source \
@@ -33,7 +34,7 @@ LIB_DEPENDS=	libv4l2.so:multimedia/libv4l
 
 USE_GECKO=	gecko
 CPE_PRODUCT=	${PORTNAME}_esr
-CONFLICTS_INSTALL=	firefox-[0-9]*
+CONFLICTS_INSTALL=	firefox
 MOZ_PKGCONFIG_FILES=	# empty
 USE_MOZILLA=	-soundtouch
 MOZILLA_NAME=	Firefox

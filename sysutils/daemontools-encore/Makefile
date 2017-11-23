@@ -1,5 +1,5 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/sysutils/daemontools-encore/Makefile 423625 2016-10-09 22:01:34Z bsam $
+# $FreeBSD: head/sysutils/daemontools-encore/Makefile 454618 2017-11-21 16:56:24Z swills $
 
 PORTNAME=	daemontools-encore
 PORTVERSION=	1.10
@@ -17,6 +17,28 @@ USES=		gmake
 CONFLICTS=	daemontools-[0-9]* freedt-[0-9]* serialmail-[0-9]*
 
 ALL_TARGET=	default
+
+S_EARLY_DESC=	Start early, before the normal daemons
+S_NORMAL_DESC=	Start normally in the usual boot sequence
+
+OPTIONS_SINGLE=	SEQ
+OPTIONS_SINGLE_SEQ=	S_EARLY S_NORMAL
+
+OPTIONS_DEFAULT=	S_NORMAL
+
+.include <bsd.port.options.mk>
+
+. if ${PORT_OPTIONS:MS_EARLY}
+SVSCAN_REQUIRE?=	SERVERS
+SVSCAN_BEFORE?=		DAEMON
+. endif
+
+. if ${PORT_OPTIONS:MS_NORMAL}
+SVSCAN_REQUIRE?=	LOGIN
+SVSCAN_BEFORE?=
+. endif
+
+SUB_LIST+=	SVSCAN_REQUIRE=${SVSCAN_REQUIRE} SVSCAN_BEFORE=${SVSCAN_BEFORE}
 
 USE_RC_SUBR=	svscan
 

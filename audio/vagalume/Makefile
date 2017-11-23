@@ -1,5 +1,5 @@
 # Created by: Bernhard Fröhlich <decke@bluelife.at>
-# $FreeBSD: head/audio/vagalume/Makefile 451968 2017-10-13 09:06:37Z bapt $
+# $FreeBSD: head/audio/vagalume/Makefile 454590 2017-11-21 08:36:26Z mat $
 
 PORTNAME=	vagalume
 PORTVERSION=	0.8.6
@@ -24,7 +24,7 @@ INSTALLS_ICONS=	yes
 
 OPTIONS_DEFINE=	DBUS TRAY NLS GCONF
 OPTIONS_DEFAULT=	DBUS TRAY
-OPTIONS_SUB=	NLS DBUS
+OPTIONS_SUB=	yes
 TRAY_DESC=	Tray icon and libnotify support
 
 DBUS_LIB_DEPENDS=	libdbus-glib-1.so:devel/dbus-glib

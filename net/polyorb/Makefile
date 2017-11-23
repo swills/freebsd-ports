@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/net/polyorb/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/net/polyorb/Makefile 454590 2017-11-21 08:36:26Z mat $
 
 PORTNAME=	polyorb
 PORTVERSION=	2.11.1
@@ -42,7 +42,7 @@ CONFIGURE_ARGS=	--with-appli-perso="corba dsa moma" \
 # Polyorb 2014 = PCS version 6   GNAT GCC 4.9 = PCS version 6
 
 OPTIONS_DEFINE=	DOCS TESTSUITE
-OPTIONS_SUB=	TESTSUITE
+OPTIONS_SUB=	yes
 
 TESTSUITE_ALL_TARGET=	testsuite
 TESTSUITE_BUILD_DEPENDS=gnatpython>=20101207:devel/gnatpython

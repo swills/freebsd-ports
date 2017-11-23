@@ -1,5 +1,5 @@
 # Created by: uyamba@gmail.com
-# $FreeBSD: head/audio/qmpdclient/Makefile 434380 2017-02-18 19:48:05Z tcberner $
+# $FreeBSD: head/audio/qmpdclient/Makefile 454590 2017-11-21 08:36:26Z mat $
 
 PORTNAME=	qmpdclient
 PORTVERSION=	1.2.2
@@ -23,7 +23,7 @@ OPTIONS_DEFINE=	DBUS NLS DEBUG
 DATADIR=	${PREFIX}/share/QMPDClient
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-OPTIONS_SUB=	NLS
+OPTIONS_SUB=	yes
 
 NLS_USE=	QT4=linguisttools_build
 

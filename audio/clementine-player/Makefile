@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/audio/clementine-player/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/audio/clementine-player/Makefile 454590 2017-11-21 08:36:26Z mat $
 
 PORTNAME=	clementine
 PORTVERSION=	1.3.1
@@ -105,7 +105,7 @@ OPTIONS_DEFINE=		AMAZON \
 			VISUALISATION \
 			WIIMOTEDEV
 
-OPTIONS_SUB=		VISUALISATION
+OPTIONS_SUB=		yes
 
 AMAZON_DESC=		Amazon Drive support
 AUDIOCD_DESC=		Devices: Audio CD support
