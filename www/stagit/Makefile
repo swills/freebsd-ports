@@ -1,8 +1,8 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/www/stagit/Makefile 447906 2017-08-13 18:11:48Z tobik $
+# $FreeBSD: head/www/stagit/Makefile 454498 2017-11-19 19:07:44Z tobik $
 
 PORTNAME=	stagit
-PORTVERSION=	0.6
+PORTVERSION=	0.7.1
 CATEGORIES=	www
 MASTER_SITES=	http://dl.2f30.org/releases/
 
@@ -14,10 +14,12 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libgit2.so:devel/libgit2
 
+USES=		localbase:ldflags
+USE_CSTD=	c99
+
 MAKE_ARGS=	CC="${CC}" \
-		PREFIX="${PREFIX}" \
-		GITINC="${PREFIX}/include" \
-		GITLIB="${PREFIX}/lib"
+		CFLAGS="${CFLAGS}" \
+		LDFLAGS="${LDFLAGS} -lgit2"
 
 post-patch:
 	@${REINPLACE_CMD} '/strlcat\.o/d; /strlcpy\.o/d' ${WRKSRC}/Makefile

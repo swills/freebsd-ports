@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 452638 2017-10-22 12:23:23Z antoine $
+# $FreeBSD: head/mail/Makefile 454648 2017-11-21 18:50:58Z rene $
 #
 
     COMMENT = Electronic mail utilities
@@ -488,6 +488,7 @@
     SUBDIR += php56-imap
     SUBDIR += php70-imap
     SUBDIR += php71-imap
+    SUBDIR += php72-imap
     SUBDIR += phplist
     SUBDIR += phpmailer
     SUBDIR += pine-pgp-filters
@@ -544,6 +545,7 @@
     SUBDIR += py-pymailq
     SUBDIR += py-pyspf
     SUBDIR += py-spambayes
+    SUBDIR += py-pyzmail
     SUBDIR += py-zope.sendmail
     SUBDIR += pymsgauth
     SUBDIR += pysieved
@@ -718,7 +720,6 @@
     SUBDIR += thunderbird
     SUBDIR += thunderbird-dictionaries
     SUBDIR += thunderbird-i18n
-    SUBDIR += tkrat2
     SUBDIR += tlb
     SUBDIR += tmda
     SUBDIR += tpop3d

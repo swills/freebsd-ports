@@ -1,7 +1,7 @@
-# $FreeBSD: head/converters/p5-Sereal-Encoder/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/converters/p5-Sereal-Encoder/Makefile 454090 2017-11-12 22:00:41Z adamw $
 
 PORTNAME=	Sereal-Encoder
-PORTVERSION=	3.015
+PORTVERSION=	4.004
 CATEGORIES=	converters perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:YVES
@@ -19,6 +19,7 @@ TEST_DEPENDS=	p5-Test-Deep>0:devel/p5-Test-Deep \
 
 USES=		perl5
 USE_PERL5=	configure
+MAKE_JOBS_UNSAFE=	yes
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Sereal/Encoder/Encoder.so

@@ -1,5 +1,5 @@
 # Created by: Junho CHOI <junho.choi@gmail.com>
-# $FreeBSD: head/korean/scim-hangul/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/korean/scim-hangul/Makefile 454590 2017-11-21 08:36:26Z mat $
 
 PORTNAME=	scim-hangul
 PORTVERSION=	0.4.0
@@ -19,7 +19,7 @@ GNU_CONFIGURE=	yes
 USES=		gmake libtool:keepla pkgconfig
 
 OPTIONS_DEFINE=	NLS
-OPTIONS_SUB=	NLS
+OPTIONS_SUB=	yes
 
 .include <bsd.port.options.mk>
 

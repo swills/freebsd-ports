@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc47/Makefile 451246 2017-10-04 20:36:13Z gerald $
+# $FreeBSD: head/lang/gcc47/Makefile 454508 2017-11-19 22:44:45Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	4.7.4
@@ -15,7 +15,7 @@ COMMENT=	GNU Compiler Collection 4.7
 LICENSE=	GPLv3 GPLv3RLE
 LICENSE_COMB=	multi
 
-DEPRECATED=	Unsupported by upstream. Use GCC 5 or newer instead.
+DEPRECATED=	Unsupported by upstream. Use GCC 6 or newer instead.
 ONLY_FOR_ARCHS=	amd64 i386 powerpc sparc64
 
 LIB_DEPENDS=	libgmp.so:math/gmp \

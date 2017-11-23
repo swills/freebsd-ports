@@ -1,5 +1,5 @@
 # Created by: Dima Sivachenko <dima@Chg.RU>
-# $FreeBSD: head/x11-toolkits/fltk/Makefile 447379 2017-08-04 20:48:24Z danfe $
+# $FreeBSD: head/x11-toolkits/fltk/Makefile 454682 2017-11-22 11:06:43Z danfe $
 
 PORTNAME=	fltk
 PORTVERSION=	1.3.4
@@ -15,12 +15,13 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
-USES=		groff jpeg localbase pkgconfig
+USES=		jpeg localbase pkgconfig
 USE_XORG=	x11 xcursor xext xfixes xft xinerama
 USE_GL=		glu
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared
+CONFIGURE_ENV=	NROFF=echo
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

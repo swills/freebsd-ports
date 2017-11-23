@@ -1,8 +1,8 @@
 # Created by: Eric Turgeon <ericturgeon.bsd@gmail.org>
-# $FreeBSD: head/net-mgmt/networkmgr/Makefile 450551 2017-09-24 22:12:31Z dbaio $
+# $FreeBSD: head/net-mgmt/networkmgr/Makefile 453952 2017-11-11 07:11:19Z tcberner $
 
 PORTNAME=	networkmgr
-PORTVERSION=	2.4
+DISTVERSION=	2.5
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	ericturgeon.bsd@gmail.com
@@ -13,11 +13,11 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	doas:security/doas
 
+USES=		python:2.7 shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	GhostBSD
 
 NO_ARCH=	yes
-USES=		python:2.7 shebangfix
 USE_PYTHON=	distutils
 USE_GNOME=	pygtk2
 

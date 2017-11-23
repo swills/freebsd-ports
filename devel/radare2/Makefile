@@ -1,10 +1,9 @@
 # Created by: Karsten Pedersen <kpedersen@opencde.org>
-# $FreeBSD: head/devel/radare2/Makefile 440746 2017-05-13 03:35:51Z linimon $
+# $FreeBSD: head/devel/radare2/Makefile 454557 2017-11-20 13:44:54Z rodrigo $
 
 PORTNAME=	radare2
-PORTVERSION=	1.0.2
+PORTVERSION=	2.0.1
 CATEGORIES=	devel
-MASTER_SITES=	http://rada.re/get/
 
 MAINTAINER=	torres.73a@gmail.com
 COMMENT=	Tools to disasm, debug, analyze, and manipulate binary files
@@ -21,6 +20,8 @@ NOT_FOR_ARCHS_REASON=	does not build: Unsupported BSD architecture
 CONFIGURE_ARGS+=	--with-syscapstone
 
 USES=		gmake pathfix pkgconfig tar:xz
+USE_GITHUB=	yes
+GH_ACCOUNT=	radare
 PATHFIX_MAKEFILEIN=	Makefile
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes

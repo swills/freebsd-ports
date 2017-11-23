@@ -1,8 +1,8 @@
 # Created by: Johannes Jost Meixner <xmj@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-sass-rails-rails50/Makefile 447386 2017-08-05 03:25:17Z jrm $
+# $FreeBSD: head/textproc/rubygem-sass-rails-rails50/Makefile 454286 2017-11-15 19:57:00Z sunpoet $
 
 PORTNAME=	sass-rails
-PORTVERSION=	5.0.6
+PORTVERSION=	5.0.7
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50

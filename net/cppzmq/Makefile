@@ -1,8 +1,9 @@
 # Created by: Vasil Dimov <vd@FreeBSD.org>
-# $FreeBSD: head/net/cppzmq/Makefile 452693 2017-10-23 07:19:52Z vd $
+# $FreeBSD: head/net/cppzmq/Makefile 454121 2017-11-13 15:51:56Z mat $
 
 PORTNAME=	cppzmq
 PORTVERSION=	4.2.2
+DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 
 MAINTAINER=	vd@FreeBSD.org
@@ -20,7 +21,6 @@ CONFLICTS_INSTALL=	libzmq2
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	zeromq
-GH_TAGNAME=	v${PORTVERSION}
 
 PLIST_FILES=	\
 	include/zmq.hpp \

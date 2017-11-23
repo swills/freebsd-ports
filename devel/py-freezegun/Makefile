@@ -1,8 +1,9 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-freezegun/Makefile 445867 2017-07-15 10:15:35Z koobs $
+# $FreeBSD: head/devel/py-freezegun/Makefile 454308 2017-11-16 13:33:35Z ehaupt $
 
 PORTNAME=	freezegun
 PORTVERSION=	0.3.9
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

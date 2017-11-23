@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/rubygem-omniauth-oauth2-generic/Makefile 436729 2017-03-22 21:03:58Z sunpoet $
+# $FreeBSD: head/security/rubygem-omniauth-oauth2-generic/Makefile 454438 2017-11-18 14:17:25Z sunpoet $
 
 PORTNAME=	omniauth-oauth2-generic
-PORTVERSION=	0.2.2
+PORTVERSION=	0.2.4
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

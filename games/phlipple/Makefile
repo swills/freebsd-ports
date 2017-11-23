@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/phlipple/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/phlipple/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
 PORTNAME=	phlipple
 PORTVERSION=	0.8.5
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}
 

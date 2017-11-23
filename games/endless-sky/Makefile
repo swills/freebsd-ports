@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/endless-sky/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/endless-sky/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
 PORTNAME=	endless-sky
 PORTVERSION=	0.9.8
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 

@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/math/pecl-bitset2/Makefile 451437 2017-10-07 09:12:57Z sunpoet $
+# $FreeBSD: head/math/pecl-bitset2/Makefile 454530 2017-11-20 04:32:36Z sunpoet $
 
 PORTNAME=	bitset
 PORTVERSION=	2.0.4
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 PORTSCOUT=	limit:^2\.
 
-IGNORE_WITH_PHP=70 71
+IGNORE_WITH_PHP=70 71 72
 USES=		php:pecl
 
 .include <bsd.port.mk>

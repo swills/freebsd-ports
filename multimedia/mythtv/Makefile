@@ -1,5 +1,5 @@
 # Created by: Stacey Son <mythdev@son.org>, Ari Maniatis <ari@ish.com.au>
-# $FreeBSD: head/multimedia/mythtv/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/multimedia/mythtv/Makefile 454590 2017-11-21 08:36:26Z mat $
 
 PORTNAME=	mythtv
 PORTVERSION=	0.28.7
@@ -72,7 +72,7 @@ QMAKESPEC?=	${LOCALBASE}/share/qt4/mkspecs/freebsd-g++
 
 OPTIONS_DEFINE=	BINDINGS LIRC MYSQL OPENGL VDPAU
 OPTIONS_DEFAULT=	BINDINGS OPENGL VDPAU
-OPTIONS_SUB=	BINDINGS
+OPTIONS_SUB=	yes
 BINDINGS_DESC=	Perl and Python bindings
 
 LIRC_LIB_DEPENDS=	liblirc_client.so:comms/lirc

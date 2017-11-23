@@ -1,13 +1,14 @@
 # Created by: GreenDog <fiziologus@gmail.com>
-# $FreeBSD: head/lang/lua53/Makefile 435741 2017-03-09 03:05:19Z wen $
+# $FreeBSD: head/lang/lua53/Makefile 454163 2017-11-14 06:28:06Z riggs $
 
 PORTNAME=	lua
 PORTVERSION=	5.3.4
+PORTREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	http://www.lua.org/ftp/
 PKGNAMESUFFIX=	53
 
-MAINTAINER=	gmesalazar@gmail.com
+MAINTAINER=	russ.haley@gmail.com
 COMMENT=	Small, compilable scripting language providing easy access to C code
 
 LICENSE=	MIT

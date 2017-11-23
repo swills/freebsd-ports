@@ -1,8 +1,8 @@
 # Created by: Cy Schubert <Cy.Schubert@uumail.gov.bc.ca>
-# $FreeBSD: head/security/tripwire/Makefile 433189 2017-02-03 01:33:18Z cy $
+# $FreeBSD: head/security/tripwire/Makefile 454410 2017-11-18 06:58:42Z cy $
 
 PORTNAME=	tripwire
-PORTVERSION=	2.4.3.2
+PORTVERSION=	2.4.3.6
 CATEGORIES=	security
 
 MAINTAINER=	cy@FreeBSD.org
@@ -180,5 +180,6 @@ create-database:
 .endif
 
 post-install:	install-config-files create-database make-pkg-install
+	${INSTALL_DATA} ${WRKSRC}/COPYING ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.post.mk>

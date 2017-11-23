@@ -1,8 +1,9 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/devel/ncurses/Makefile 451768 2017-10-11 18:08:00Z swills $
+# $FreeBSD: head/devel/ncurses/Makefile 453902 2017-11-10 15:27:41Z swills $
 
 PORTNAME=	ncurses
 PORTVERSION=	6.0.0s${SNAPSHOT}
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.invisible-island.net/${PORTNAME}/current/
 DISTNAME=	${PORTNAME}-6.0-${SNAPSHOT}

@@ -1,8 +1,8 @@
 # Created by: Andrew Lewis <freeghb@gmail.com>
-# $FreeBSD: head/net-im/prosody/Makefile 434391 2017-02-18 22:28:49Z antoine $
+# $FreeBSD: head/net-im/prosody/Makefile 454378 2017-11-17 18:39:05Z lx $
 
 PORTNAME=	prosody
-PORTVERSION=	0.9.12
+PORTVERSION=	0.10.0
 CATEGORIES=	net-im
 MASTER_SITES=	http://prosody.im/downloads/source/ \
 		http://redundancy.redundancy.org/mirror/
@@ -17,7 +17,6 @@ RUN_DEPENDS=	${LUA_MODLIBDIR}/socket/core.so:net/luasocket-51 \
 		${LUA_MODLIBDIR}/ssl.so:security/luasec-51 \
 		${LUA_MODLIBDIR}/lxp.so:textproc/luaexpat-51 \
 		${LUA_MODLIBDIR}/lfs.so:devel/luafilesystem-51
-
 LIB_DEPENDS=	libidn.so:dns/libidn
 
 USES=		cpe gmake lua:51 shebangfix ssl

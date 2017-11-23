@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/py-python-gist/Makefile 453484 2017-11-04 20:32:22Z yuri $
+# $FreeBSD: head/devel/py-python-gist/Makefile 454186 2017-11-14 18:09:35Z yuri $
 
 PORTNAME=	python-gist
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.5.3
+DISTVERSION=	0.6.0
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

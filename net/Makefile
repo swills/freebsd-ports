@@ -1,5 +1,5 @@
 
-# $FreeBSD: head/net/Makefile 453637 2017-11-06 17:59:15Z rene $
+# $FreeBSD: head/net/Makefile 454655 2017-11-21 21:32:19Z adamw $
 #
 
     COMMENT = Networking tools
@@ -92,6 +92,7 @@
     SUBDIR += cvsup-static
     SUBDIR += cvsync
     SUBDIR += czmq
+    SUBDIR += czmq4
     SUBDIR += daemonlogger
     SUBDIR += dante
     SUBDIR += daq
@@ -234,7 +235,6 @@
     SUBDIR += hostapd
     SUBDIR += howl
     SUBDIR += hping
-    SUBDIR += hping-devel
     SUBDIR += hs-aws
     SUBDIR += hs-connection
     SUBDIR += hs-gsasl
@@ -556,7 +556,6 @@
     SUBDIR += p5-Event-tcp
     SUBDIR += p5-File-Rsync
     SUBDIR += p5-File-RsyncP
-    SUBDIR += p5-Filesys-SmbClient
     SUBDIR += p5-Frontier-RPC
     SUBDIR += p5-Geo-IP
     SUBDIR += p5-Geo-IP-PurePerl
@@ -943,6 +942,10 @@
     SUBDIR += php71-soap
     SUBDIR += php71-sockets
     SUBDIR += php71-xmlrpc
+    SUBDIR += php72-ldap
+    SUBDIR += php72-soap
+    SUBDIR += php72-sockets
+    SUBDIR += php72-xmlrpc
     SUBDIR += phpldapadmin
     SUBDIR += pim6-tools
     SUBDIR += pim6dd
@@ -1062,6 +1065,7 @@
     SUBDIR += py-ripe.atlas.tools
     SUBDIR += py-s3cmd
     SUBDIR += py-s3transfer
+    SUBDIR += py-shodan
     SUBDIR += py-smbpasswd
     SUBDIR += py-soap2py
     SUBDIR += py-soappy

@@ -1,5 +1,5 @@
 # Created by: Lars Koeller <Lars_Koeller@odie.physik2.uni-rostock.de>
-# $FreeBSD: head/mail/faces/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/faces/Makefile 454590 2017-11-21 08:36:26Z mat $
 
 PORTNAME=	faces
 PORTVERSION=	1.7.7
@@ -25,7 +25,7 @@ SOX_DESC=	Sox audio support
 NLS_USES=		gettext
 NLS_CONFIGURE_ENABLE=	nls
 
-OPTIONS_SUB=	X11
+OPTIONS_SUB=	yes
 
 X11_USE=	GNOME=gtk12
 X11_CPPFLAGS=	-I../compface -I${LOCALBASE}/include

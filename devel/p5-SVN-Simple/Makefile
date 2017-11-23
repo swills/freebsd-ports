@@ -1,5 +1,5 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/devel/p5-SVN-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-SVN-Simple/Makefile 453819 2017-11-09 14:48:35Z danfe $
 
 PORTNAME=	SVN-Simple
 PORTVERSION=	0.28
@@ -19,7 +19,5 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure
-
-BROKEN_powerpc=	Does not configure
 
 .include <bsd.port.mk>

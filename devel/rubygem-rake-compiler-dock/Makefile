@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/devel/rubygem-rake-compiler-dock/Makefile 454304 2017-11-16 12:24:55Z tz $
 
 PORTNAME=	rake-compiler-dock
 PORTVERSION=	0.6.1

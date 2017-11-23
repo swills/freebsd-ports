@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/llvm50/Makefile 452094 2017-10-14 23:38:31Z brooks $
+# $FreeBSD: head/devel/llvm50/Makefile 454025 2017-11-12 09:09:35Z brooks $
 
 PORTNAME=	llvm
 DISTVERSION=	5.0.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel lang
 MASTER_SITES=	http://llvm.org/${PRE_}releases/${LLVM_RELEASE}/${RCDIR}
 PKGNAMESUFFIX=	${LLVM_SUFFIX}

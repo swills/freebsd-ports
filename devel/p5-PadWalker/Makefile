@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-PadWalker/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-PadWalker/Makefile 454015 2017-11-11 23:32:21Z sunpoet $
 
 PORTNAME=	PadWalker
-PORTVERSION=	2.2
+PORTVERSION=	2.3
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:ROBIN

@@ -1,17 +1,20 @@
 # Created by: Kurt Jaeger <fbsd-ports@opsec.eu>
-# $FreeBSD: head/devel/dragon/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/dragon/Makefile 453923 2017-11-10 19:11:06Z pi $
 
 PORTNAME=	dragon
-PORTVERSION=	1.4.1
+PORTVERSION=	1.4.3
 CATEGORIES=	devel
 MASTER_SITES=	http://www.lemke-it.com/
 
 MAINTAINER=	pi@FreeBSD.org
 COMMENT=	Combined C++ scanner/parser generator for LR compliant grammars
 
+LICENSE=	GPLv3
+
 LIB_DEPENDS=	liblfcbase.so:devel/lfcbase
 
-LICENSE=	GPLv3
+CONFLICTS=	dragon-player
+
 GNU_CONFIGURE=	yes
 PLIST_FILES=	bin/dragon
 

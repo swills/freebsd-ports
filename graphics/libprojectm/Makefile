@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/libprojectm/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/libprojectm/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
 PORTNAME=	libprojectM
 PORTVERSION=	2.0.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics audio
 MASTER_SITES=	SF/${PORTNAME:tl:S/lib//}/${PORTVERSION}/
 DISTNAME=	${PORTNAME:S/lib//}-${DISTVERSION}-Source

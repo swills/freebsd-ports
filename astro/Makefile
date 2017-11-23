@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/Makefile 453057 2017-10-28 12:17:49Z swills $
+# $FreeBSD: head/astro/Makefile 454054 2017-11-12 16:33:15Z rene $
 #
 
     COMMENT = Astronomical ports
@@ -17,7 +17,6 @@
     SUBDIR += garmindev
     SUBDIR += geographiclib
     SUBDIR += gkrellmoon2
-    SUBDIR += gmapcatcher
     SUBDIR += google-earth
     SUBDIR += gpsbabel
     SUBDIR += gpsbabel14

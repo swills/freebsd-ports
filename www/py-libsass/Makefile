@@ -1,16 +1,17 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/www/py-libsass/Makefile 452631 2017-10-22 10:31:00Z pizzamig $
+# $FreeBSD: head/www/py-libsass/Makefile 454341 2017-11-16 21:33:19Z yuri $
 
 PORTNAME=	libsass
-PORTVERSION=	0.13.3
+DISTVERSION=	0.13.4
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Straightforward binding of libsass for Python
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_powerpc64=	fails to compile: cc1plus: error: unrecognized command line option -std=c++0x
 

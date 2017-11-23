@@ -1,9 +1,9 @@
 # Created by: Anonymous
-# $FreeBSD: head/x11/cl-clx-sbcl/Makefile 449398 2017-09-07 14:08:27Z jrm $
+# $FreeBSD: head/x11/cl-clx-sbcl/Makefile 454222 2017-11-15 04:12:07Z jrm $
 
 PORTNAME=	clx
 DISTVERSION=	0.7.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11 lisp
 PKGNAMEPREFIX=	cl-
 PKGNAMESUFFIX=	-sbcl

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 453761 2017-11-08 18:53:49Z ehaupt $
+# $FreeBSD: head/textproc/Makefile 454648 2017-11-21 18:50:58Z rene $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -162,6 +162,7 @@
     SUBDIR += elasticsearch2-plugin-migration
     SUBDIR += elasticsearch2-plugin-sql
     SUBDIR += elasticsearch5
+    SUBDIR += elasticsearch5-search-guard
     SUBDIR += elasticsearch5-x-pack
     SUBDIR += elixir-earmark
     SUBDIR += elixir-ex_doc
@@ -524,7 +525,6 @@
     SUBDIR += ny-aspell
     SUBDIR += ocaml-csv
     SUBDIR += ocaml-expat
-    SUBDIR += ocaml-pxp
     SUBDIR += ocaml-text
     SUBDIR += ocaml-tyxml
     SUBDIR += odt2txt
@@ -1236,6 +1236,16 @@
     SUBDIR += php71-xmlreader
     SUBDIR += php71-xmlwriter
     SUBDIR += php71-xsl
+    SUBDIR += php72-ctype
+    SUBDIR += php72-dom
+    SUBDIR += php72-enchant
+    SUBDIR += php72-pspell
+    SUBDIR += php72-simplexml
+    SUBDIR += php72-wddx
+    SUBDIR += php72-xml
+    SUBDIR += php72-xmlreader
+    SUBDIR += php72-xmlwriter
+    SUBDIR += php72-xsl
     SUBDIR += plover
     SUBDIR += po4a
     SUBDIR += pocketreader
@@ -1662,7 +1672,6 @@
     SUBDIR += sq-hunspell
     SUBDIR += sr-aspell
     SUBDIR += sr-hunspell
-    SUBDIR += srilm
     SUBDIR += ss-hunspell
     SUBDIR += ssddiff
     SUBDIR += stardict-dict-fa_IR

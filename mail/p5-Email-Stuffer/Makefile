@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Email-Stuffer/Makefile 424374 2016-10-21 02:39:50Z zi $
+# $FreeBSD: head/mail/p5-Email-Stuffer/Makefile 454048 2017-11-12 14:38:01Z zi $
 
 PORTNAME=	Email-Stuffer
-PORTVERSION=	0.014
+PORTVERSION=	0.016
 CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

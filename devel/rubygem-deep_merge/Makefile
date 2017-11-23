@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-deep_merge/Makefile 420277 2016-08-16 10:58:54Z robak $
+# $FreeBSD: head/devel/rubygem-deep_merge/Makefile 454491 2017-11-19 14:13:30Z robak $
 
 PORTNAME=	deep_merge
-PORTVERSION=	1.1.1
+PORTVERSION=	1.2.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,5 +1,5 @@
 # Created by: Gerhard Gonter <g.gonter@ieee.org>
-# $FreeBSD: head/lang/py-prolog/Makefile 444098 2017-06-22 05:54:37Z linimon $
+# $FreeBSD: head/lang/py-prolog/Makefile 454458 2017-11-18 20:30:35Z mat $
 
 PORTNAME=	prolog
 PORTVERSION=	0.1
@@ -17,7 +17,7 @@ RUN_DEPENDS=	swipl:lang/swi-pl
 
 BROKEN_amd64=	fails to build: can't link shared libraries to static
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

@@ -1,5 +1,4 @@
-# Created by: tcberner
-# $FreeBSD: head/textproc/kf5-kcodecs/Makefile 452819 2017-10-24 21:30:29Z adridg $
+# $FreeBSD: head/textproc/kf5-kcodecs/Makefile 454297 2017-11-16 05:59:35Z tcberner $
 
 PORTNAME=	kcodecs
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}

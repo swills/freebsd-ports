@@ -1,9 +1,9 @@
 # Created by: Yanhui Shen <shen.elf@gmail.com>
-# $FreeBSD: head/audio/mous/Makefile 453551 2017-11-05 16:40:48Z antoine $
+# $FreeBSD: head/audio/mous/Makefile 454488 2017-11-19 11:37:26Z riggs $
 
 PORTNAME=	mous
 PORTVERSION=	1.1a
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio
 MASTER_SITES=	GHC
 

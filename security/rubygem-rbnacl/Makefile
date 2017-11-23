@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-net-scp/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/security/rubygem-rbnacl/Makefile 454314 2017-11-16 16:27:30Z tz $
 
 PORTNAME=	rbnacl
 PORTVERSION=	4.0.2

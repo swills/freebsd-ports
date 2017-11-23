@@ -1,9 +1,9 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/graphics/mesa-demos/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/mesa-demos/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
 PORTNAME=	mesa-demos
 PORTVERSION=	8.3.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.freedesktop.org/pub/mesa/demos/${PORTVERSION}/
 

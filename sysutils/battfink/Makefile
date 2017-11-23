@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/battfink/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/sysutils/battfink/Makefile 453963 2017-11-11 09:04:37Z amdmi3 $
 
 PORTNAME=	battfink
 PORTVERSION=	0.6.2
@@ -11,13 +11,15 @@ DIST_SUBDIR=	gnome2
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Energy saving preferences app for GNOME
 
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 INSTALLS_OMF=	yes
 USE_GNOME=	gnomeprefix libgnomeui
-USES=		gettext gmake pathfix pkgconfig tar:bzip2
+USES=		gettext gmake localbase pathfix pkgconfig tar:bzip2
 USE_XORG=	x11 xext
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib -lX11 -lXext
+LIBS+=		-lX11 -lXext
 INSTALL_TARGET=	install-strip
 
 GCONF_SCHEMAS=	battfink.schemas

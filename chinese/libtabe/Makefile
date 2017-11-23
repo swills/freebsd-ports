@@ -1,5 +1,5 @@
 # Created by: Jing-Tang Keith Jang <keith@FreeBSD.org>
-# $FreeBSD: head/chinese/libtabe/Makefile 452012 2017-10-13 15:20:58Z sunpoet $
+# $FreeBSD: head/chinese/libtabe/Makefile 454590 2017-11-21 08:36:26Z mat $
 
 PORTNAME=	libtabe
 PORTVERSION=	0.2.6
@@ -29,7 +29,7 @@ WRKSRC=		${WRKDIR}/${DISTNAME:S|_|-|}
 MAKE_JOBS_UNSAFE=	yes
 
 OPTIONS_DEFINE=		DOCS X11
-OPTIONS_SUB=		X11
+OPTIONS_SUB=		yes
 X11_USE=		XORG=x11
 X11_CONFIGURE_WITH=	x
 

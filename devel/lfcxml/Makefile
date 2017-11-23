@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/lfcxml/Makefile 449117 2017-09-02 10:08:30Z pi $
+# $FreeBSD: head/devel/lfcxml/Makefile 453921 2017-11-10 19:09:33Z pi $
 
 PORTNAME=	lfcxml
-PORTVERSION=	1.2.5
+PORTVERSION=	1.2.6
 CATEGORIES=	devel
 MASTER_SITES=	http://www.lemke-it.com/
 

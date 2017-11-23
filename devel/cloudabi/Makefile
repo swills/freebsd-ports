@@ -1,9 +1,9 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/devel/cloudabi/Makefile 453138 2017-10-29 21:34:14Z ed $
+# $FreeBSD: head/devel/cloudabi/Makefile 454091 2017-11-12 22:13:47Z ed $
 
 PORTNAME=	cloudabi
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.16
+DISTVERSION=	0.17
 CATEGORIES=	devel
 
 MAINTAINER=	ed@FreeBSD.org

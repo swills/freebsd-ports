@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/lang/php71/Makefile 452965 2017-10-27 07:32:34Z tz $
+# $FreeBSD: head/lang/php71/Makefile 454753 2017-11-23 11:38:59Z tz $
 
 PORTNAME=	php71
 PORTVERSION=	7.1.11
@@ -37,7 +37,7 @@ CONFIGURE_ARGS+=--with-layout=GNU \
 
 USE_GNOME=	libxml2
 
-OPTIONS_DEFINE+=CLI CGI FPM EMBED PHPDBG DEBUG DTRACE IPV6 LINKTHR ZTS
+OPTIONS_DEFINE+=CLI CGI FPM EMBED PHPDBG DEBUG DTRACE IPV6 MAILHEAD LINKTHR ZTS
 OPTIONS_DEFAULT=CLI CGI FPM LINKTHR DTRACE
 
 # Bug 197128:  No ASM code for MIPS/MIPS64, disable FPM
@@ -57,15 +57,22 @@ EMBED_DESC=	Build embedded library
 DEBUG_DESC=	Enable debug
 PHPDBG_DESC=	Interactive PHP debugger
 DTRACE_DESC=	Enable DTrace support
-IPV6_DESC=	Enable ipv6 support
+MAILHEAD_DESC=	Enable mail header patch
 LINKTHR_DESC=	Link thread lib (for threaded extensions)
 ZTS_DESC=	Force Zend Thread Safety (ZTS) build
 
-CONFLICTS=	php56-* php70-*
+CONFLICTS=	php56-* php70-* php72-*
 
 DESTDIRNAME=	INSTALL_ROOT
 
 .include <bsd.port.pre.mk>
+
+PATCH_DIST_STRIP=	-p1
+
+.if ${PORT_OPTIONS:MMAILHEAD}
+PATCHFILES+=	php-7.1.x-mail-header.patch:mail
+PATCH_SITES+=	http://choon.net/opensource/php/:mail
+.endif
 
 .if ${PORT_OPTIONS:MCLI}
 PHP_SAPI+=	cli
@@ -88,9 +95,6 @@ CONFIGURE_ARGS+=--enable-fpm \
 .endif
 
 .if defined(PKGNAMEPREFIX)
-USES+=	php
-PHP_VER=	71
-IGNORE_WITH_PHP=	55 56 70
 USE_APACHE=	22+
 .include "${PORTSDIR}/Mk/bsd.apache.mk"
 .if ${PORT_OPTIONS:MAP2FILTER}
@@ -138,7 +142,6 @@ CONFIGURE_ARGS+=--enable-debug
 .if ${PORT_OPTIONS:MZTS}
 CONFIGURE_ARGS+=--enable-maintainer-zts
 CONFIGURE_ENV+=	pthreads_working="yes"
-USES=	localhost
 .endif
 
 .if ${PORT_OPTIONS:MDTRACE}

@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-namespace-clean-xs/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-namespace-clean-xs/Makefile 454714 2017-11-22 23:34:54Z sunpoet $
 
 PORTNAME=	namespace-clean-xs
-PORTVERSION=	0.07
+PORTVERSION=	0.09
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

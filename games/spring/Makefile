@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/spring/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/games/spring/Makefile 454590 2017-11-21 08:36:26Z mat $
 
 PORTNAME=	spring
 PORTVERSION=	98.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	games
 MASTER_SITES=	SF/springrts/springrts/${PORTNAME}-${PORTVERSION} \
 		http://springrts.com/dl/
@@ -57,7 +57,7 @@ PORTDATA=	*
 
 OPTIONS_DEFINE=	MANPAGES PR_DOWNLOADER DOCS
 OPTIONS_DEFAULT=MANPAGES PR_DOWNLOADER
-OPTIONS_SUB=	*
+OPTIONS_SUB=	yes
 
 HTMLDOCS_DESC=	Build and install HTML documentation
 PR_DOWNLOADER_DESC=	Map and game downloader

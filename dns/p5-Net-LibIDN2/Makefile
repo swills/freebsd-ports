@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/dns/p5-Net-LibIDN2/Makefile 450672 2017-09-26 15:55:36Z sunpoet $
+# $FreeBSD: head/dns/p5-Net-LibIDN2/Makefile 454010 2017-11-11 23:31:55Z sunpoet $
 
 PORTNAME=	Net-LibIDN2
 PORTVERSION=	1.00
@@ -14,6 +14,7 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BUILD_DEPENDS=	libidn2>=2.0.0:dns/libidn2
 LIB_DEPENDS=	libidn2.so:dns/libidn2
 
 USE_PERL5=	modbuild

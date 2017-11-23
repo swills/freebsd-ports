@@ -1,9 +1,8 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net/Makefile 454271 2017-11-15 19:55:44Z sunpoet $
 
 PORTNAME=	Net
-PORTVERSION=	3.10
-PORTREVISION=	2
+PORTVERSION=	3.11
 PORTEPOCH=	1
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN

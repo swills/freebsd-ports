@@ -1,10 +1,9 @@
 # Created by: Maurice Castro <maurice@castro.aus.net>
-# $FreeBSD: head/www/davical/Makefile 452931 2017-10-26 17:39:49Z tcberner $
+# $FreeBSD: head/www/davical/Makefile 454251 2017-11-15 16:27:13Z swills $
 
 PORTNAME=	davical
 DISTVERSIONPREFIX=	r
-DISTVERSION=	1.1.5
-PORTREVISION=	2
+DISTVERSION=	1.1.6
 CATEGORIES?=	www
 MASTER_SITES=	https://gitlab.com/${PORTNAME}-project/${PORTNAME}/repository/archive.tar.gz?ref=${DISTVERSIONPREFIX}${PORTVERSION}&dummy=/
 
@@ -21,7 +20,7 @@ RUN_DEPENDS=	p5-DBI>=0:databases/p5-DBI \
 		${LOCALBASE}/bin/pwgen:sysutils/pwgen \
 		php-libawl>=0.54:devel/php-libawl
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSIONPREFIX}${PORTVERSION}-7ccc7c449176475891ec50d5524928628df6f8d1
+WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSIONPREFIX}${PORTVERSION}-3ba605288fb0fc0a4f2abce09874f8dab5ffdfb8
 
 NO_BUILD=	yes
 USES=		pgsql php shebangfix

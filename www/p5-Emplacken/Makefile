@@ -1,9 +1,9 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-Emplacken/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Emplacken/Makefile 454071 2017-11-12 19:10:29Z sunpoet $
 
 PORTNAME=	Emplacken
 PORTVERSION=	0.01
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DROLSKY
@@ -25,7 +25,6 @@ BUILD_DEPENDS=	p5-Class-Load>=0:devel/p5-Class-Load \
 		p5-MooseX-Types-Perl>=0:devel/p5-MooseX-Types-Perl \
 		p5-Path-Class>=0:devel/p5-Path-Class \
 		p5-Text-Template>=0:textproc/p5-Text-Template \
-		p5-autodie>=0:devel/p5-autodie \
 		p5-namespace-autoclean>=0:devel/p5-namespace-autoclean
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 

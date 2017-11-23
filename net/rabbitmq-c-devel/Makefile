@@ -1,8 +1,8 @@
 # Created by: Geoff Garside
-# $FreeBSD: head/net/rabbitmq-c-devel/Makefile 450513 2017-09-24 18:49:41Z sunpoet $
+# $FreeBSD: head/net/rabbitmq-c-devel/Makefile 453820 2017-11-09 15:04:14Z rodrigo $
 
 PORTNAME=	rabbitmq-c
-PORTVERSION=	0.7.1
+PORTVERSION=	0.8.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 PKGNAMESUFFIX=	-devel

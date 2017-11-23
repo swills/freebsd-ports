@@ -1,8 +1,8 @@
-# $FreeBSD: head/print/dymo-cups-drivers/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/dymo-cups-drivers/Makefile 453978 2017-11-11 16:07:52Z hselasky $
 
 PORTNAME=	dymo-cups-drivers
 PORTVERSION=	1.4.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	print
 MASTER_SITES=	http://download.dymo.com/Software/Linux/
 

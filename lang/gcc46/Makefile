@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc46/Makefile 450476 2017-09-23 22:26:09Z gerald $
+# $FreeBSD: head/lang/gcc46/Makefile 454508 2017-11-19 22:44:45Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	4.6.4
@@ -15,7 +15,7 @@ COMMENT=	GNU Compiler Collection 4.6
 LICENSE=	GPLv3 GPLv3RLE
 LICENSE_COMB=	multi
 
-DEPRECATED=	Unsupported by upstream. Use GCC 5 or newer instead.
+DEPRECATED=	Unsupported by upstream. Use GCC 6 or newer instead.
 EXPIRATION_DATE=2017-11-30
 ONLY_FOR_ARCHS=	amd64 i386 powerpc sparc64
 

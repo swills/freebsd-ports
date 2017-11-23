@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/p5-GD/Makefile 439637 2017-04-28 20:25:19Z sunpoet $
+# $FreeBSD: head/graphics/p5-GD/Makefile 454350 2017-11-16 22:25:10Z sunpoet $
 
 PORTNAME=	GD
-PORTVERSION=	2.66
+PORTVERSION=	2.67
 CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

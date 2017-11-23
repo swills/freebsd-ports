@@ -1,9 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/sysutils/osquery/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/sysutils/osquery/Makefile 454188 2017-11-14 18:29:43Z zi $
 
 PORTNAME=	osquery
-PORTVERSION=	2.8.0
-PORTREVISION=	4
+PORTVERSION=	2.10.2
 CATEGORIES=	sysutils
 
 MAINTAINER=	zi@FreeBSD.org
@@ -38,12 +37,13 @@ CONFIGURE_ENV+=	OSQUERY_BUILD_VERSION="${PORTVERSION}" HOME="${WRKDIR}" \
 		SKIP_TESTS="yes" CC="${CC}" CXX="${CXX}"
 CMAKE_ARGS+=	-DFREEBSD=awesome -DCMAKE_SYSTEM_NAME="FreeBSD"
 BLDDIR=		${WRKDIR}/.build/${PORTNAME}
+TPVERSION=	${PORTVERSION}
 USE_RC_SUBR=	${PORTNAME}d
 USE_GITHUB=	yes
 GH_ACCOUNT=	facebook ${PORTNAME}:tp
 GH_PROJECT=	third-party:tp
 GH_SUBDIR=	third-party:tp
-GH_TAGNAME=	${PORTVERSION}:tp
+GH_TAGNAME=	${TPVERSION}:tp
 
 # Some options for things that bring in many dependencies
 OPTIONS_DEFINE=	TSK AWS YARA LLDPD

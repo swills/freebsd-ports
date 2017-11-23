@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/py-psycopg2cffi/Makefile 448011 2017-08-15 20:53:40Z jrm $
+# $FreeBSD: head/databases/py-psycopg2cffi/Makefile 454385 2017-11-17 20:34:12Z jrm $
 
 PORTNAME=	psycopg2cffi
-DISTVERSION=	2.7.6
+DISTVERSION=	2.7.7
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

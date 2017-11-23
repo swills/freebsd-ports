@@ -1,8 +1,8 @@
 # Created by: Johann Visagie <wjv@FreeBSD.org>
-# $FreeBSD: head/security/keychain/Makefile 428219 2016-12-09 15:39:08Z garga $
+# $FreeBSD: head/security/keychain/Makefile 454105 2017-11-13 11:43:31Z garga $
 
 PORTNAME=	keychain
-PORTVERSION=	2.8.3
+PORTVERSION=	2.8.4
 CATEGORIES=	security
 MASTER_SITES=	http://www.funtoo.org/archive/keychain/ \
 		GENTOO
@@ -11,6 +11,7 @@ MAINTAINER=	garga@FreeBSD.org
 COMMENT=	User-friendly front-end to ssh-agent(1)
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
 USES=		tar:bzip2
 OPTIONS_DEFINE=	DOCS

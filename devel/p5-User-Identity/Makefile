@@ -1,8 +1,8 @@
 # Created by: Max Campos <mcampos@bpsw.biz>
-# $FreeBSD: head/devel/p5-User-Identity/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-User-Identity/Makefile 454124 2017-11-13 16:10:42Z culot $
 
 PORTNAME=	User-Identity
-PORTVERSION=	0.97
+PORTVERSION=	0.98
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

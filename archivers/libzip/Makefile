@@ -1,10 +1,10 @@
 # Created by: Alexander Zhuravlev <zaa@zaa.pp.ru>
-# $FreeBSD: head/archivers/libzip/Makefile 450776 2017-09-27 18:13:14Z rakuco $
+# $FreeBSD: head/archivers/libzip/Makefile 454603 2017-11-21 12:09:55Z rakuco $
 
 PORTNAME=	libzip
-PORTVERSION=	1.3.0
+PORTVERSION=	1.3.2
 CATEGORIES=	archivers devel
-MASTER_SITES=	https://www.nih.at/libzip/
+MASTER_SITES=	https://libzip.org/download/
 
 MAINTAINER=	rakuco@FreeBSD.org
 COMMENT=	C library for reading, creating, and modifying ZIP archives

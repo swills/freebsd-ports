@@ -1,8 +1,8 @@
 # Created by: Samy Al Bahra <samy@kerneled.org>
-# $FreeBSD: head/devel/libpci/Makefile 445172 2017-07-06 20:55:38Z sunpoet $
+# $FreeBSD: head/devel/libpci/Makefile 454473 2017-11-19 03:31:33Z sunpoet $
 
 PORTNAME=	libpci
-PORTVERSION=	3.5.5
+PORTVERSION=	3.5.6
 CATEGORIES=	devel
 MASTER_SITES=	KERNEL_ORG/software/utils/pciutils \
 		ftp://atrey.karlin.mff.cuni.cz/pub/linux/pci/ \
@@ -37,7 +37,7 @@ LIBPCI_FILES=	include/pci/config.h \
 post-patch:
 	@${LN} -s . ${WRKSRC}/lib/pci
 	@${REINPLACE_CMD} -e '/^CC=/d; /^CFLAGS=/ s|=|+=|; /^IDSDIR=/ s|$$|/pciids|; /^OPT=/d; /^PREFIX=/d' ${WRKSRC}/Makefile
-	@${REINPLACE_CMD} 's|^#include "|&pci/|' ${WRKSRC}/lib/pci.h
+	@${REINPLACE_CMD} -e 's|^#include "|&pci/|' ${WRKSRC}/lib/pci.h
 
 do-configure:
 	@cd ${WRKSRC}/ && ${SETENV} ${MAKE_ENV} ${MAKE_CMD} lib/config.h

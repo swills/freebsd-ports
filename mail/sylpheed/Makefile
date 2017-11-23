@@ -1,5 +1,5 @@
 # Created by: shigeri <shigeri@m10.alpha-net.ne.jp>
-# $FreeBSD: head/mail/sylpheed/Makefile 447940 2017-08-14 14:14:23Z ehaupt $
+# $FreeBSD: head/mail/sylpheed/Makefile 454042 2017-11-12 14:00:48Z riggs $
 
 PORTNAME=	sylpheed
 PORTVERSION=	3.6.0
@@ -75,7 +75,7 @@ JPILOT_CONFIGURE_ENABLE=	jpilot
 LDAP_CONFIGURE_ENABLE=		ldap
 LDAP_USE=			openldap=yes
 
-ONIGURUMA_LIB_DEPENDS=		libonig.so:devel/oniguruma6
+ONIGURUMA_LIB_DEPENDS=		libonig.so:devel/oniguruma
 ONIGURUMA_CONFIGURE_ENABLE=	oniguruma
 
 SSL_CONFIGURE_ENABLE=		ssl

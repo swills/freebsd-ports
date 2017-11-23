@@ -1,5 +1,5 @@
 # Created by: Daniel Gerzo <danger@FreeBSD.org>
-# $FreeBSD: head/www/uwsgi/Makefile 448482 2017-08-21 17:49:01Z ultima $
+# $FreeBSD: head/www/uwsgi/Makefile 453888 2017-11-10 08:48:57Z eugen $
 
 PORTNAME=	uwsgi
 PORTVERSION=	2.0.15
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	www python
 MASTER_SITES=	http://projects.unbit.it/downloads/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	eugene@zhegan.in
 COMMENT=	Developer-friendly WSGI server which uses uwsgi protocol
 
 LICENSE=	GPLv2
@@ -33,6 +33,12 @@ PLIST_FILES=	bin/uwsgi \
 
 OPTIONS_DEFINE=	DEBUG JSON PCRE XML
 
+OPTIONS_GROUP=		PLG
+OPTIONS_GROUP_PLG=	PSGI
+
+PLG_DESC=	Enable plugins
+PSGI_DESC=	PSGI embedded plugin
+
 DEBUG_VARS=		PYDISTUTILS_BUILDARGS+=--debug
 
 JSON_VARS=		BUILDCONF_JSON=jansson
@@ -52,6 +58,9 @@ post-patch:
 .for var in JSON PCRE XML
 	@${REINPLACE_CMD} -e '/^${var:tl} =/ s|= .*|= ${BUILDCONF_${var}:Ufalse}|' ${WRKSRC}/buildconf/base.ini
 .endfor
+
+post-patch-PSGI-on:
+	@${REINPLACE_CMD} -e 's/%(main_plugin)s,/%(main_plugin)s, psgi,/' ${WRKSRC}/buildconf/base.ini
 
 do-configure:
 	@${DO_NADA}

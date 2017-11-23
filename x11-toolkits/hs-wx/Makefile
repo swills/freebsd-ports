@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/hs-wx/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/x11-toolkits/hs-wx/Makefile 453874 2017-11-09 22:17:07Z antoine $
 
 PORTNAME=	wx
 PORTVERSION=	0.92.3.0
@@ -7,7 +7,9 @@ CATEGORIES=	x11-toolkits haskell
 MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	wxHaskell
 
+USES=		dos2unix
 USE_CABAL=	stm wxcore>=0.91
+DOS2UNIX_FILES=	src/Graphics/UI/WX/Window.hs
 
 USE_WX=		3.0
 WX_COMPS=	wx

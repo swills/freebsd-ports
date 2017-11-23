@@ -1,8 +1,7 @@
-# Created by: tcberner
-# $FreeBSD: head/x11/kf5-kglobalaccel/Makefile 452286 2017-10-17 17:39:15Z tcberner $
+# $FreeBSD: head/x11/kf5-kglobalaccel/Makefile 454297 2017-11-16 05:59:35Z tcberner $
 
 PORTNAME=	kglobalaccel
-PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
+DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
 CATEGORIES=	x11 kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

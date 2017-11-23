@@ -1,5 +1,5 @@
 # Created by: Geraud CONTINSOUZAS <geraud@gcu.info>
-# $FreeBSD: head/devel/p5-String-Errf/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-String-Errf/Makefile 454074 2017-11-12 19:10:44Z sunpoet $
 
 PORTNAME=	String-Errf
 PORTVERSION=	0.007
@@ -12,13 +12,13 @@ COMMENT=	Simple sprintf-like dialect
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	p5-Params-Util>=0:devel/p5-Params-Util \
 		p5-Sub-Exporter>=0:devel/p5-Sub-Exporter \
 		p5-String-Formatter>=0.102081:devel/p5-String-Formatter
 BUILD_DEPENDS:=	p5-TimeDate>=0:devel/p5-TimeDate \
 		p5-JSON>=0:converters/p5-JSON \
-		p5-autodie>=0:devel/p5-autodie \
 		${RUN_DEPENDS}
 
 USES=		perl5

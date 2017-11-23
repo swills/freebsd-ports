@@ -1,9 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/graphics/py-glewpy/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/py-glewpy/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
 PORTNAME=	glewpy
 PORTVERSION=	0.7.4
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics python
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

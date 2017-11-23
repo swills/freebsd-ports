@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 453791 2017-11-09 05:49:40Z yuri $
+# $FreeBSD: head/misc/Makefile 454664 2017-11-22 06:01:27Z yuri $
 #
 
     COMMENT = Miscellaneous utilities
@@ -101,6 +101,7 @@
     SUBDIR += fortune-mod-psalms
     SUBDIR += fortuneit
     SUBDIR += fpc-chm
+    SUBDIR += free42
     SUBDIR += freebsd-doc-all
     SUBDIR += freebsd-doc-bn
     SUBDIR += freebsd-doc-da
@@ -286,6 +287,7 @@
     SUBDIR += osinfo-db
     SUBDIR += ossp-uuid
     SUBDIR += otter
+    SUBDIR += owrep
     SUBDIR += p5-Acme-ButFirst
     SUBDIR += p5-Array-Compare
     SUBDIR += p5-Array-Diff
@@ -363,6 +365,7 @@
     SUBDIR += php56-calendar
     SUBDIR += php70-calendar
     SUBDIR += php71-calendar
+    SUBDIR += php72-calendar
     SUBDIR += phraze
     SUBDIR += pinfo
     SUBDIR += pipe
@@ -476,6 +479,7 @@
     SUBDIR += umodunpack
     SUBDIR += unclutter
     SUBDIR += unclutter-xfixes
+    SUBDIR += unicode-emoji
     SUBDIR += upclient
     SUBDIR += us-zipcodes
     SUBDIR += usbids

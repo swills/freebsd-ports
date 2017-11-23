@@ -1,29 +1,25 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/libgig/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/libgig/Makefile 454694 2017-11-22 17:39:01Z yuri $
 
 PORTNAME=	libgig
-PORTVERSION=	3.3.0
-PORTREVISION=	4
+DISTVERSION=	4.0.0
 CATEGORIES=	audio
 MASTER_SITES=	SF/qsampler/${PORTNAME}/${PORTVERSION} \
 		http://download.linuxsampler.org/packages/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Gigasampler file loader library
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libFLAC.so:audio/flac \
-		libsndfile.so:audio/libsndfile \
+LIB_DEPENDS=	libsndfile.so:audio/libsndfile \
 		libuuid.so:misc/e2fsprogs-libuuid
 
-USES=		tar:bzip2 gmake pathfix pkgconfig libtool
+USES=		gmake libtool pathfix pkgconfig tar:bzip2
 GNU_CONFIGURE=	yes
-USE_LDCONFIG=	yes
+USE_LDCONFIG=	${PREFIX}/lib/libgig
 INSTALL_TARGET=	install-strip
-MAKE_JOBS_UNSAFE=yes
-
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
+MAKE_JOBS_UNSAFE=	yes
 
 .include <bsd.port.mk>

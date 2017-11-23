@@ -1,7 +1,7 @@
-# $FreeBSD: head/ports-mgmt/poudriere/Makefile 453087 2017-10-29 01:20:11Z bdrewery $
+# $FreeBSD: head/ports-mgmt/poudriere/Makefile 453981 2017-11-11 17:19:05Z bdrewery $
 
 PORTNAME=	poudriere
-DISTVERSION=	3.1.22
+DISTVERSION=	3.2.0
 PORTREVISION=	0
 CATEGORIES=	ports-mgmt
 MASTER_SITES=	LOCAL/bdrewery/${PORTNAME}/ \
@@ -44,10 +44,12 @@ PLIST_SUB+=	RM=""
 PLIST_SUB+=	RM="@comment "
 .endif
 
-pre-install:
+post-patch:
+	${CP} -f ${WRKSRC}/src/bin/poudriere ${WRKSRC}/poudriere
 	${REINPLACE_CMD} \
 	    -e "s,^\(POUDRIERE_VERSION\)=.*,\1='${PKGVERSION}'," \
-	    ${WRKSRC}/src/bin/poudriere
+	    ${WRKSRC}/poudriere
+	${REINPLACE_CMD} '/.PHONY: poudriere/d' ${WRKSRC}/Makefile.*
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/zsh/site-functions/

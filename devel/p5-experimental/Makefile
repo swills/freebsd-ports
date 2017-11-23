@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-experimental/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-experimental/Makefile 454269 2017-11-15 19:55:34Z sunpoet $
 
 PORTNAME=	experimental
-PORTVERSION=	0.016
+PORTVERSION=	0.017
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:LEONT
@@ -13,9 +13,10 @@ COMMENT=	Experimental features made easy
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_ARCH=	yes
-USE_PERL5=	modbuildtiny
+USE_PERL5=	configure
 USES=		perl5
 
 .include <bsd.port.mk>

@@ -1,7 +1,7 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/emulators/mupen64plus-video-z64/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/emulators/mupen64plus-video-z64/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
-PORTREVISION=	1
+PORTREVISION=	2
 PKGNAMESUFFIX=	-video-z64
 DISTFILES=	${PORTNAME}${PKGNAMESUFFIX}-src-${PORTVERSION}${EXTRACT_SUFX}:plugin
 

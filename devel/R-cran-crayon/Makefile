@@ -1,12 +1,12 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/devel/R-cran-crayon/Makefile 422960 2016-09-30 06:44:33Z wen $
+# $FreeBSD: head/devel/R-cran-crayon/Makefile 453877 2017-11-09 23:03:17Z swills $
 
 PORTNAME=	crayon
-DISTVERSION=	1.3.2
+DISTVERSION=	1.3.4
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
-MAINTAINER=	pfg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Colored Terminal Output
 
 LICENSE=	MIT

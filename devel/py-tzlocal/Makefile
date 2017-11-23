@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-tzlocal/Makefile 443438 2017-06-12 10:39:27Z sunpoet $
+# $FreeBSD: head/devel/py-tzlocal/Makefile 454362 2017-11-17 06:25:33Z antoine $
 
 PORTNAME=	tzlocal
-PORTVERSION=	1.3
+PORTVERSION=	1.4
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	rob.kruus@gmail.com
 COMMENT=	Returns the tzinfo object for the local timezone
 
-LICENSE=	CC0-1.0
+LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz

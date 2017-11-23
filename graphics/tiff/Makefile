@@ -1,8 +1,8 @@
 # Created by: Richard Hwang <rhwang@bigpanda.com>, Mikhail Teterin <mi@aldan.algebra.com>, Jun-ichiro itojun Itoh <itojun@itojun.org>
-# $FreeBSD: head/graphics/tiff/Makefile 441487 2017-05-22 18:53:04Z antoine $
+# $FreeBSD: head/graphics/tiff/Makefile 454499 2017-11-19 20:41:59Z antoine $
 
 PORTNAME=	tiff
-PORTVERSION=	4.0.8
+PORTVERSION=	4.0.9
 CATEGORIES=	graphics
 MASTER_SITES=	http://download.osgeo.org/libtiff/
 

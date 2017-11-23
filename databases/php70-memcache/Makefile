@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine <tux@pinguru.net>
-# $FreeBSD: head/databases/php70-memcache/Makefile 434288 2017-02-17 16:11:20Z sunpoet $
+# $FreeBSD: head/databases/php70-memcache/Makefile 454525 2017-11-20 04:32:12Z sunpoet $
 
 PORTNAME=	memcache
 PORTVERSION=	3.0.8
@@ -18,7 +18,7 @@ OPTIONS_DEFINE=	EXAMPLES
 PORTSCOUT=	skipv:start
 
 CONFIGURE_ARGS=	--with-zlib-dir=/usr
-IGNORE_WITH_PHP=56 71
+IGNORE_WITH_PHP=56 71 72
 PHP_VER=	70
 USE_CSTD=	gnu89
 USE_PHP=	session:build zlib:build

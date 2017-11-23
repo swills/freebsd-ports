@@ -1,7 +1,7 @@
-# $FreeBSD: head/converters/p5-Sereal/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/converters/p5-Sereal/Makefile 454090 2017-11-12 22:00:41Z adamw $
 
 PORTNAME=	Sereal
-PORTVERSION=	3.015
+PORTVERSION=	4.004
 CATEGORIES=	converters perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:YVES

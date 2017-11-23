@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 453325 2017-11-01 23:03:20Z yuri $
+# $FreeBSD: head/deskutils/Makefile 454392 2017-11-17 23:11:07Z adridg $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -130,6 +130,7 @@
     SUBDIR += kruler
     SUBDIR += ksshaskpass
     SUBDIR += launchy
+    SUBDIR += latte-dock
     SUBDIR += libopensync-plugin-vformat-devel
     SUBDIR += libstreamanalyzer
     SUBDIR += libstreams

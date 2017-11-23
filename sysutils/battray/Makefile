@@ -1,24 +1,22 @@
 # Created by: Martin Tournoij <martin@arp242.net>
-# $FreeBSD: head/sysutils/battray/Makefile 416662 2016-06-10 09:08:02Z tz $
+# $FreeBSD: head/sysutils/battray/Makefile 454690 2017-11-22 14:50:22Z tz $
 
 PORTNAME=	battray
-PORTVERSION=	2.1
+DISTVERSION=	2.3
+PORTREVISION=	1
 CATEGORIES=	sysutils python
-MASTER_SITES=	http://code.arp242.net/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
-DISTNAME=	${BB_ACCOUNT}-${BB_PROJECT}-${BB_COMMIT}
+DISTVERSIONPREFIX=	version-
 
 MAINTAINER=	tz@FreeBSD.org
 COMMENT=	Display notebook battery status in tray
 
 LICENSE=	MIT
 
-USE_GNOME=	py3gobject3
 USES=		python:3.3+
+USE_GNOME=	py3gobject3
 USE_PYTHON=	autoplist distutils
 
-
-BB_ACCOUNT=	Carpetsmoker
-BB_PROJECT=	${PORTNAME}
-BB_COMMIT=	011402fbc2a3
+USE_GITHUB=	yes
+GH_ACCOUNT=	Carpetsmoker
 
 .include <bsd.port.mk>

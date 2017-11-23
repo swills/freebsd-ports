@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-rice/Makefile 441874 2017-05-27 20:33:22Z linimon $
+# $FreeBSD: head/devel/rubygem-rice/Makefile 454725 2017-11-22 23:35:51Z sunpoet $
 
 PORTNAME=	rice
-PORTVERSION=	2.1.1
+PORTVERSION=	2.1.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,8 +1,8 @@
 # Created by: Samy Al Bahra <samy@kerneled.org>
-# $FreeBSD: head/sysutils/pciutils/Makefile 445176 2017-07-06 20:55:59Z sunpoet $
+# $FreeBSD: head/sysutils/pciutils/Makefile 454474 2017-11-19 03:31:38Z sunpoet $
 
 PORTNAME=	pciutils
-PORTVERSION=	3.5.5
+PORTVERSION=	3.5.6
 CATEGORIES=	sysutils
 MASTER_SITES=	KERNEL_ORG/software/utils/pciutils \
 		ftp://atrey.karlin.mff.cuni.cz/pub/linux/pci/ \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.default-versions.mk 449606 2017-09-11 06:30:53Z gahr $
+# $FreeBSD: head/Mk/bsd.default-versions.mk 454428 2017-11-18 13:09:56Z tijl $
 #
 # MAINTAINER:	ports@FreeBSD.org
 #
@@ -15,8 +15,8 @@ _INCLUDE_BSD_DEFAULT_VERSIONS_MK=	yes
 
 LOCALBASE?=	/usr/local
 
-.for lang in APACHE BDB FIREBIRD FPC GCC GHOSTSCRIPT LINUX LUA MYSQL PERL5 \
-	PGSQL PHP PYTHON PYTHON2 PYTHON3 RUBY SSL TCLTK
+.for lang in APACHE BDB FIREBIRD FORTRAN FPC GCC GHOSTSCRIPT LINUX LUA MYSQL \
+	PERL5 PGSQL PHP PYTHON PYTHON2 PYTHON3 RUBY SSL TCLTK
 .if defined(${lang}_DEFAULT)
 WARNING+=	"The variable ${lang}_DEFAULT is set and it should only be defined through DEFAULT_VERSIONS+=${lang:tl}=${${lang}_DEFAULT} in /etc/make.conf"
 WARNING+=	"This behaviour has never been supported and will be removed on 2017-01-31"
@@ -35,6 +35,8 @@ APACHE_DEFAULT?=	2.4
 BDB_DEFAULT?=		5
 # Possible values: 2.5
 FIREBIRD_DEFAULT?=	2.5
+# Possible values: flang (experimental), gfortran
+FORTRAN_DEFAULT?=	gfortran
 # Possible values: 3.0.0
 FPC_DEFAULT?=		3.0.2
 # Possible values: 4.8, 4.9, 5, 6, 7
@@ -73,7 +75,7 @@ PERL5_DEFAULT:=		${_PERL5_FROM_BIN:R}
 .endif
 # Possible values: 9.2, 9.3, 9.4, 9.5, 9.6
 PGSQL_DEFAULT?=		9.5
-# Possible values: 5.6, 7.0, 7.1
+# Possible values: 5.6, 7.0, 7.1, 7.2
 PHP_DEFAULT?=		5.6
 # Possible values: 2.7, 3.4, 3.5, 3.6
 PYTHON_DEFAULT?=	2.7

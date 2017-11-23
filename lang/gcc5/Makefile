@@ -1,8 +1,9 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc5/Makefile 451753 2017-10-11 14:35:28Z gerald $
+# $FreeBSD: head/lang/gcc5/Makefile 454744 2017-11-23 08:14:50Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	5.5.0
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	GCC/releases/gcc-${DISTVERSION}
 PKGNAMESUFFIX=	${SUFFIX}
@@ -26,7 +27,6 @@ RUN_DEPENDS+=	${LOCALBASE}/bin/as:devel/binutils
 BUILD_DEPENDS+=	runtest:misc/dejagnu
 .endif
 
-CONFLICTS=	gcc5-devel-5.*
 CPE_VENDOR=	gnu
 
 GCC_VERSION=	${PORTVERSION}
@@ -79,6 +79,10 @@ CONFIGURE_ARGS+=--disable-bootstrap
 .else
 CONFIGURE_ARGS+=--with-build-config=bootstrap-debug
 ALL_TARGET=	bootstrap-lean
+.endif
+INSTALL_TARGET=	install-strip
+.if ${UID} != 0
+BINMODE=	755
 .endif
 CONFIGURE_ARGS+=--disable-nls \
 		--disable-libgcj \

@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Unicode-Collate/Makefile 453492 2017-11-04 22:56:37Z sunpoet $
+# $FreeBSD: head/textproc/p5-Unicode-Collate/Makefile 454543 2017-11-20 13:21:58Z sunpoet $
 
 PORTNAME=	Unicode-Collate
-PORTVERSION=	1.21
+PORTVERSION=	1.24
 CATEGORIES=	textproc converters perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

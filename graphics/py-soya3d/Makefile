@@ -1,9 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/graphics/py-soya3d/Makefile 445990 2017-07-16 09:00:58Z amdmi3 $
+# $FreeBSD: head/graphics/py-soya3d/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
 PORTNAME=	soya3d
 PORTVERSION=	0.14
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	graphics python
 MASTER_SITES=	http://download.gna.org/soya/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,8 @@
-# $FreeBSD: head/mail/sid-milter/Makefile 408774 2016-02-13 09:03:15Z dinoex $
+# $FreeBSD: head/mail/sid-milter/Makefile 454334 2017-11-16 20:16:10Z dinoex $
 
 PORTNAME=	sid-milter
 PORTVERSION=	1.0.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail
 MASTER_SITES=	SF/${PORTNAME}/SenderID%20Milter/${PORTVERSION}
 
@@ -11,6 +11,7 @@ COMMENT=	Milter module for sid and spf
 
 RESTRICTED=	May incorporate intellectual property, possible patent issues
 
+CFLAGS+=	-std=gnu89
 WCONF=		${WRKSRC}/devtools/Site
 DOCSFILES=	FEATURES INSTALL KNOWNBUGS LICENSE README README-SenderID \
 		RELEASE_NOTES rfc4406.txt rfc4407.txt rfc4408.txt

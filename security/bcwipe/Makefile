@@ -1,8 +1,8 @@
 # Created by: crow
-# $FreeBSD: head/security/bcwipe/Makefile 384630 2015-04-24 08:56:15Z amdmi3 $
+# $FreeBSD: head/security/bcwipe/Makefile 454409 2017-11-18 06:57:40Z cy $
 
 PORTNAME=	bcwipe
-PORTVERSION=	1.9.9
+PORTVERSION=	1.9.13
 CATEGORIES=	security
 MASTER_SITES=	http://www.jetico.com/linux/ \
 		http://bsd.desa-hosting.de/distfiles/security/

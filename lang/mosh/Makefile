@@ -1,5 +1,5 @@
 # Created by: Katsuji ISHIKAWA <katsuji.ishikawa@gmail.com>
-# $FreeBSD: head/lang/mosh/Makefile 451554 2017-10-08 18:05:50Z pi $
+# $FreeBSD: head/lang/mosh/Makefile 454042 2017-11-12 14:00:48Z riggs $
 
 PORTNAME=	mosh
 PORTVERSION=	0.2.7
@@ -14,7 +14,7 @@ COMMENT=	Fast R6RS Scheme interpreter
 LICENSE=	BSD2CLAUSE
 
 LIB_DEPENDS=	libgmp.so:math/gmp \
-		libonig.so:devel/oniguruma6
+		libonig.so:devel/oniguruma
 
 BROKEN_armv6=		fails to link: os_dep.c: undefined reference to '__stack_base__'
 BROKEN_mips64=		fails to compile: os_dep.c: redefinition of 'GC_register_dynamic_libraries'

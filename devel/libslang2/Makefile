@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libslang2/Makefile 447955 2017-08-14 18:31:41Z pi $
+# $FreeBSD: head/devel/libslang2/Makefile 454042 2017-11-12 14:00:48Z riggs $
 
 PORTNAME=	libslang2
 PORTVERSION=	2.3.1
@@ -42,7 +42,7 @@ PNG_CONFIGURE_WITH=	png
 PNG_LIB_DEPENDS=	libpng.so:graphics/png
 ICONV_USES=		iconv
 ONIG_CONFIGURE_WITH=	onig
-ONIG_LIB_DEPENDS=	libonig.so:devel/oniguruma6
+ONIG_LIB_DEPENDS=	libonig.so:devel/oniguruma
 
 .include <bsd.port.pre.mk>
 

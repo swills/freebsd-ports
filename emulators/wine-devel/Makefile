@@ -1,8 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/emulators/wine-devel/Makefile 453629 2017-11-06 16:41:17Z gerald $
+# $FreeBSD: head/emulators/wine-devel/Makefile 454745 2017-11-23 08:16:50Z gerald $
 
 PORTNAME=	wine
-DISTVERSION=	2.20
+DISTVERSION=	2.21
 PORTEPOCH=	1
 CATEGORIES=	emulators
 MASTER_SITES=	SF/${PORTNAME}/Source \
@@ -36,6 +36,7 @@ CONFIGURE_ARGS+=--verbose --disable-tests \
 		--without-opencl \
 		--without-osmesa \
 		--with-oss \
+		--without-pulse \
 		--without-sane \
 		--without-tiff
 CONFIGURE_ENV=	CPPBIN="${CPP}" FLEX="${LOCALBASE}/bin/flex"
@@ -100,7 +101,7 @@ WINEMAKER_RUN_DEPENDS=	p5-XML-LibXML>0:textproc/p5-XML-LibXML
 
 X11_CONFIGURE_WITH=	x cms fontconfig freetype glu jpeg opengl png xinerama xinput2 xrandr xrender
 X11_USES=		jpeg
-X11_USE=		GL=glu XORG=xcomposite,xcursor,xi,xinerama,xrandr,xrender
+X11_USE=		GL=glu XORG=x11,xext,xcomposite,xcursor,xi,xinerama,xrandr,xrender
 X11_LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 			libfreetype.so:print/freetype2 \
 			liblcms2.so:graphics/lcms2 \
@@ -147,7 +148,6 @@ EXTRACT_DEPENDS=bash:shells/bash \
 		git:devel/git \
 		${AUTOCONF_DEPENDS}
 
-CONFIGURE_ARGS+=--without-pulse
 USE_AUTOTOOLS=	autoconf:env
 
 post-extract: fix-shebang

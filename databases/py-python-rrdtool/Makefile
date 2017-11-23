@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/py-python-rrdtool/Makefile 441925 2017-05-28 21:18:04Z antoine $
+# $FreeBSD: head/databases/py-python-rrdtool/Makefile 454610 2017-11-21 13:22:32Z mat $
 
 PORTNAME=	python-rrdtool
 PORTVERSION=	1.4.7
@@ -15,7 +15,7 @@ LICENSE=	LGPL3
 LIB_DEPENDS=	librrd.so:databases/rrdtool
 
 USES=		groff pkgconfig python
-USE_GNOME=	cairo glib20 libxml2
+USE_GNOME=	cairo glib20 libxml2 pango
 USE_PYTHON=	distutils autoplist
 
 LDFLAGS+=	-L${LOCALBASE}/lib

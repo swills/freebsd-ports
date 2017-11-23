@@ -1,9 +1,9 @@
 # Created by: Tim Cas <ports@stdrand.com>
-# $FreeBSD: head/devel/ChipmunkPhysics/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/devel/ChipmunkPhysics/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
 PORTNAME=	ChipmunkPhysics
 PORTVERSION=	7.0.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://chipmunk-physics.net/release/Chipmunk-7.x/ \
 		http://files.slembcke.net/chipmunk/release/Chipmunk-7.x/ \

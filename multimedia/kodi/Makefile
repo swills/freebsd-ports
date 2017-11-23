@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/kodi/Makefile 452024 2017-10-13 17:42:53Z tobik $
+# $FreeBSD: head/multimedia/kodi/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
 PORTNAME=	kodi
 DISTVERSION=	17.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	multimedia java
 
 MAINTAINER=	mickael.maillot@gmail.com

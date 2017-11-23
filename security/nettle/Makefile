@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/security/nettle/Makefile 430020 2016-12-30 19:20:13Z sunpoet $
+# $FreeBSD: head/security/nettle/Makefile 454539 2017-11-20 13:21:38Z sunpoet $
 
 PORTNAME=	nettle
-PORTVERSION=	3.3
+PORTVERSION=	3.4
 CATEGORIES=	security
 MASTER_SITES=	GNU \
 		http://www.lysator.liu.se/~nisse/archive/ 
@@ -24,7 +24,7 @@ CONFIGURE_ARGS=	--enable-shared
 CONFIGURE_ENV=	M4="/usr/bin/m4 -g"
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
-USES=		gmake localbase makeinfo pathfix ssl
+USES=		gmake localbase makeinfo pathfix
 
 INFO=		nettle
 PORTDOCS=	NEWS README TODO nettle.html nettle.pdf

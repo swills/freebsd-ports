@@ -1,10 +1,9 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/comms/gqrx/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/comms/gqrx/Makefile 454125 2017-11-13 16:49:17Z martymac $
 
 PORTNAME=	gqrx
-PORTVERSION=	2.8
+PORTVERSION=	2.9
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	comms hamradio
 
@@ -25,10 +24,10 @@ LIB_DEPENDS=	libgnuradio-runtime.so:comms/gnuradio \
 		libboost_system.so:devel/boost-libs \
 		libboost_program_options.so:devel/boost-libs
 
+USES=		pkgconfig qmake
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	csete
-
-USES=		pkgconfig qmake
 
 USE_GL=		gl
 USE_QT5=	buildtools_build core gui svg network widgets

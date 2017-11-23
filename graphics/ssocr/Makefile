@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/graphics/ssocr/Makefile 452758 2017-10-24 08:58:09Z ehaupt $
+# $FreeBSD: head/graphics/ssocr/Makefile 454562 2017-11-20 14:11:15Z ehaupt $
 
 PORTNAME=	ssocr
-PORTVERSION=	2.17.0
+PORTVERSION=	2.18.0
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.unix-ag.uni-kl.de/~auerswal/ssocr/ \
 		LOCAL/ehaupt

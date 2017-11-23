@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/nomad/Makefile 451834 2017-10-12 09:06:17Z mat $
+# $FreeBSD: head/sysutils/nomad/Makefile 453816 2017-11-09 14:25:08Z robak $
 
 PORTNAME=	nomad
-PORTVERSION=	0.6.3
+PORTVERSION=	0.7.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

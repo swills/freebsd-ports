@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab/Makefile 453507 2017-11-04 22:57:53Z sunpoet $
+# $FreeBSD: head/www/gitlab/Makefile 454691 2017-11-22 14:55:05Z tz $
 
 PORTNAME=	gitlab
 PORTVERSION=	10.1.4

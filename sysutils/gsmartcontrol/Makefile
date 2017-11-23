@@ -1,8 +1,8 @@
 # Created by: Pawel Pekala <c0rn@o2.pl>
-# $FreeBSD: head/sysutils/gsmartcontrol/Makefile 451168 2017-10-03 20:27:25Z pawel $
+# $FreeBSD: head/sysutils/gsmartcontrol/Makefile 454252 2017-11-15 17:05:46Z pawel $
 
 PORTNAME=	gsmartcontrol
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.3
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 

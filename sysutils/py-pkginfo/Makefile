@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-pkginfo/Makefile 441866 2017-05-27 19:30:39Z sunpoet $
+# $FreeBSD: head/sysutils/py-pkginfo/Makefile 453903 2017-11-10 15:43:15Z swills $
 
 PORTNAME=	pkginfo
-PORTVERSION=	1.2.1
+DISTVERSION=	1.4.1
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,6 +13,6 @@ LICENSE=	MIT
 
 NO_ARCH=	yes
 USES?=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

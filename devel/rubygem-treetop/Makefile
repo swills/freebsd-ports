@@ -1,8 +1,8 @@
 # Created by: Wen Heping <ruby@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-treetop/Makefile 430211 2017-01-01 01:11:02Z sunpoet $
+# $FreeBSD: head/devel/rubygem-treetop/Makefile 454727 2017-11-22 23:36:01Z sunpoet $
 
 PORTNAME=	treetop
-PORTVERSION=	1.6.8
+PORTVERSION=	1.6.9
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

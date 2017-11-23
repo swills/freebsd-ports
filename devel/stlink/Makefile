@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/stlink/Makefile 448478 2017-08-21 15:32:07Z lev $
+# $FreeBSD: head/devel/stlink/Makefile 454590 2017-11-21 08:36:26Z mat $
 
 PORTNAME=	stlink
 PORTVERSION=	1.4.0
@@ -11,7 +11,7 @@ COMMENT=	STM32 ST-Link JTAG variant tools
 LICENSE=	BSD3CLAUSE
 
 OPTIONS_DEFINE=		GTK3
-OPTIONS_SUB=		GTK3
+OPTIONS_SUB=		yes
 GTK3_EXTRA_PATCHES_OFF=	${FILESDIR}/extra-pacth-turn-off-gtk
 GTK3_USE=		GNOME=gtk30
 

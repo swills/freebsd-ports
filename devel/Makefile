@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 453799 2017-11-09 07:37:00Z rene $
+# $FreeBSD: head/devel/Makefile 454691 2017-11-22 14:55:05Z tz $
 #
 
     COMMENT = Development utilities
@@ -109,6 +109,7 @@
     SUBDIR += aphpunit
     SUBDIR += api-sanity-autotest
     SUBDIR += apiextractor
+    SUBDIR += apitrace
     SUBDIR += appstream-glib
     SUBDIR += apr1
     SUBDIR += apr2
@@ -296,7 +297,6 @@
     SUBDIR += cl-alexandria-sbcl
     SUBDIR += cl-asdf
     SUBDIR += cl-cffi
-    SUBDIR += cl-cffi-sbcl
     SUBDIR += cl-infix
     SUBDIR += cl-infix-sbcl
     SUBDIR += cl-port
@@ -319,6 +319,7 @@
     SUBDIR += clojure-cider
     SUBDIR += cloudabi
     SUBDIR += cloudabi-toolchain
+    SUBDIR += clthreads
     SUBDIR += cltune
     SUBDIR += cmake
     SUBDIR += cmake-doc
@@ -475,7 +476,6 @@
     SUBDIR += dulwich
     SUBDIR += duplo
     SUBDIR += dwarfdump
-    SUBDIR += dwarves
     SUBDIR += dxa65
     SUBDIR += dyncall
     SUBDIR += e00compr
@@ -673,6 +673,7 @@
     SUBDIR += fuel
     SUBDIR += fujaba
     SUBDIR += funnelweb
+    SUBDIR += fuzzylite
     SUBDIR += gaa
     SUBDIR += gamin
     SUBDIR += gauche-readline
@@ -729,8 +730,10 @@
     SUBDIR += geany-plugin-tableconvert
     SUBDIR += geany-plugin-treebrowser
     SUBDIR += geany-plugin-updatechecker
+    SUBDIR += geany-plugin-utilslib
     SUBDIR += geany-plugin-vc
     SUBDIR += geany-plugin-webhelper
+    SUBDIR += geany-plugin-workbench
     SUBDIR += geany-plugin-xmlsnippets
     SUBDIR += geany-plugins
     SUBDIR += geany-plugins-l10n
@@ -842,6 +845,7 @@
     SUBDIR += goffice
     SUBDIR += goffice010
     SUBDIR += gogland-eap
+    SUBDIR += gogs
     SUBDIR += google-gdata
     SUBDIR += google-perftools
     SUBDIR += google-styleguide
@@ -1821,9 +1825,7 @@
     SUBDIR += omniNotify
     SUBDIR += omniORB
     SUBDIR += omniORB-4.1
-    SUBDIR += oniguruma4
-    SUBDIR += oniguruma5
-    SUBDIR += oniguruma6
+    SUBDIR += oniguruma
     SUBDIR += onscripter
     SUBDIR += onscripter-1byte
     SUBDIR += oozie
@@ -2121,6 +2123,7 @@
     SUBDIR += p5-Class-XPath
     SUBDIR += p5-Class-XSAccessor
     SUBDIR += p5-Clone
+    SUBDIR += p5-Clone-Choose
     SUBDIR += p5-Clone-Fast
     SUBDIR += p5-Clone-More
     SUBDIR += p5-Clone-PP
@@ -2843,6 +2846,7 @@
     SUBDIR += p5-Metabase-Client-Simple
     SUBDIR += p5-Metabase-Fact
     SUBDIR += p5-Method-Alias
+    SUBDIR += p5-Method-Signatures
     SUBDIR += p5-Method-Signatures-Simple
     SUBDIR += p5-Minilla
     SUBDIR += p5-Minion
@@ -3092,6 +3096,7 @@
     SUBDIR += p5-POSIX-strftime-Compiler
     SUBDIR += p5-POSIX-strptime
     SUBDIR += p5-PPerl
+    SUBDIR += p5-Pthread-GetThreadId
     SUBDIR += p5-PV
     SUBDIR += p5-Package-Constants
     SUBDIR += p5-Package-DeprecationManager
@@ -4057,6 +4062,16 @@
     SUBDIR += php71-sysvsem
     SUBDIR += php71-sysvshm
     SUBDIR += php71-tokenizer
+    SUBDIR += php72-gettext
+    SUBDIR += php72-intl
+    SUBDIR += php72-json
+    SUBDIR += php72-pcntl
+    SUBDIR += php72-readline
+    SUBDIR += php72-shmop
+    SUBDIR += php72-sysvmsg
+    SUBDIR += php72-sysvsem
+    SUBDIR += php72-sysvshm
+    SUBDIR += php72-tokenizer
     SUBDIR += phpbt
     SUBDIR += phpsh
     SUBDIR += phpunit
@@ -4068,7 +4083,6 @@
     SUBDIR += pig
     SUBDIR += pijul
     SUBDIR += piklab
-    SUBDIR += pinba_engine
     SUBDIR += pipestatus
     SUBDIR += pire
     SUBDIR += pit
@@ -4295,6 +4309,7 @@
     SUBDIR += py-cliapp
     SUBDIR += py-click
     SUBDIR += py-click-log
+    SUBDIR += py-click-plugins
     SUBDIR += py-click-threading
     SUBDIR += py-cliff
     SUBDIR += py-clint
@@ -4377,7 +4392,6 @@
     SUBDIR += py-epdb
     SUBDIR += py-epsilon
     SUBDIR += py-evdev
-    SUBDIR += py-event
     SUBDIR += py-exam
     SUBDIR += py-extras
     SUBDIR += py-extremes
@@ -5142,6 +5156,7 @@
     SUBDIR += py35-setuptools
     SUBDIR += py36-setuptools
     SUBDIR += py_static_check
+    SUBDIR += pybind11
     SUBDIR += pybugz
     SUBDIR += pycharm-ce
     SUBDIR += pychecker
@@ -5454,6 +5469,7 @@
     SUBDIR += rubygem-filesize
     SUBDIR += rubygem-flexmock
     SUBDIR += rubygem-flipper
+    SUBDIR += rubygem-flipper010
     SUBDIR += rubygem-fluent-logger
     SUBDIR += rubygem-fog
     SUBDIR += rubygem-fog-core
@@ -5597,6 +5613,7 @@
     SUBDIR += rubygem-moneta
     SUBDIR += rubygem-moneta06
     SUBDIR += rubygem-mongo
+    SUBDIR += rubygem-mono_logger
     SUBDIR += rubygem-msgpack
     SUBDIR += rubygem-msgpack1
     SUBDIR += rubygem-mspec
@@ -5688,6 +5705,7 @@
     SUBDIR += rubygem-rainbow
     SUBDIR += rubygem-rake
     SUBDIR += rubygem-rake-compiler
+    SUBDIR += rubygem-rake-compiler-dock
     SUBDIR += rubygem-rake-contrib
     SUBDIR += rubygem-ransack
     SUBDIR += rubygem-rapt
@@ -5714,6 +5732,7 @@
     SUBDIR += rubygem-request_store
     SUBDIR += rubygem-require_all
     SUBDIR += rubygem-retriable
+    SUBDIR += rubygem-resque
     SUBDIR += rubygem-retryable
     SUBDIR += rubygem-rgl
     SUBDIR += rubygem-rice
@@ -6019,7 +6038,6 @@
     SUBDIR += tinyq
     SUBDIR += tkcon
     SUBDIR += tkcvs
-    SUBDIR += tkinspect
     SUBDIR += tkmerge
     SUBDIR += tkp4
     SUBDIR += tla

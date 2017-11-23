@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/textproc/p5-Lingua-Identify-CLD/Makefile 443811 2017-06-18 05:51:54Z sunpoet $
+# $FreeBSD: head/textproc/p5-Lingua-Identify-CLD/Makefile 454055 2017-11-12 16:43:58Z rene $
 
 PORTNAME=	Lingua-Identify-CLD
 PORTVERSION=	0.09
@@ -12,6 +12,9 @@ MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Interface to Chrome language detection library
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=	Depends on expired devel/cld
+EXPIRATION_DATE=2017-12-12
 
 BUILD_DEPENDS=	p5-Config-AutoConf>=0.17:devel/p5-Config-AutoConf \
 		p5-ExtUtils-LibBuilder>=0.04:devel/p5-ExtUtils-LibBuilder

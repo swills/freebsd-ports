@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 453722 2017-11-08 07:58:51Z loader $
+# $FreeBSD: head/sysutils/Makefile 454302 2017-11-16 10:48:48Z tz $
 #
 
     COMMENT = System utilities
@@ -301,6 +301,7 @@
     SUBDIR += fatback
     SUBDIR += fconfig
     SUBDIR += fcron
+    SUBDIR += fd
     SUBDIR += fdupes
     SUBDIR += feather
     SUBDIR += fetchlog
@@ -472,6 +473,7 @@
     SUBDIR += i7z
     SUBDIR += iat
     SUBDIR += immortal
+    SUBDIR += incron
     SUBDIR += inotify-tools
     SUBDIR += installwatch
     SUBDIR += intel-nvmupdate
@@ -833,6 +835,8 @@
     SUBDIR += php70-posix
     SUBDIR += php71-fileinfo
     SUBDIR += php71-posix
+    SUBDIR += php72-fileinfo
+    SUBDIR += php72-posix
     SUBDIR += phybs
     SUBDIR += pick
     SUBDIR += pidof
@@ -1222,6 +1226,7 @@
     SUBDIR += u-boot-rpi2
     SUBDIR += u-boot-rpi3
     SUBDIR += u-boot-sinovoip-bpi-m3
+    SUBDIR += u-boot-sopine
     SUBDIR += u-boot-utilite
     SUBDIR += u-boot-wandboard
     SUBDIR += u-boot-zedboard

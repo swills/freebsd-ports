@@ -1,8 +1,9 @@
 # Created by: Yuichiro NAITO <naito.yuichiro@gmail.com>
-# $FreeBSD: head/devel/rubygem-rspec-its/Makefile 445294 2017-07-08 02:44:05Z swills $
+# $FreeBSD: head/devel/rubygem-rspec-its/Makefile 454606 2017-11-21 12:43:10Z pizzamig $
 
 PORTNAME=	rspec-its
 PORTVERSION=	1.2.0
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -16,7 +17,10 @@ RUN_DEPENDS=	rubygem-rspec-core>=${PORTVERSION:R}:devel/rubygem-rspec-core \
 		rubygem-rspec-expectations>=${PORTVERSION:R}:devel/rubygem-rspec-expectations
 
 NO_ARCH=	yes
+USES=		gem shebangfix
+bash_CMD=	${SH}
+SHEBANG_FILES=	script/test_all
+
 USE_RUBY=	yes
-USES=		gem
 
 .include <bsd.port.mk>

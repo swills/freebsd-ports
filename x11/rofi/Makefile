@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/rofi/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/x11/rofi/Makefile 454611 2017-11-21 13:46:24Z arved $
 
 PORTNAME=	rofi
-DISTVERSION=	1.4.1
+DISTVERSION=	1.4.2
 CATEGORIES=	x11
 MASTER_SITES=	https://github.com/DaveDavenport/rofi/releases/download/${PORTVERSION}/
 

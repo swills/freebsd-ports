@@ -1,8 +1,8 @@
 # Created by: Peter Pentchev <roam@FreeBSD.org>
-# $FreeBSD: head/security/paperkey/Makefile 447034 2017-08-01 17:07:58Z zi $
+# $FreeBSD: head/security/paperkey/Makefile 454046 2017-11-12 14:27:15Z zi $
 
 PORTNAME=	paperkey
-PORTVERSION=	1.4
+PORTVERSION=	1.5
 CATEGORIES=	security
 MASTER_SITES=	http://www.jabberwocky.com/software/paperkey/ \
 		ZI

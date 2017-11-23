@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/varnish4/Makefile 447632 2017-08-09 16:10:56Z mat $
+# $FreeBSD: head/www/varnish4/Makefile 454237 2017-11-15 13:01:09Z feld $
 
 PORTNAME=	varnish
-PORTVERSION=	4.1.8
+PORTVERSION=	4.1.9
 DISTVERSIONPREFIX=	varnish-
 PORTREVISION=	0
 CATEGORIES=	www

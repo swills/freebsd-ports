@@ -1,8 +1,8 @@
 # Created by: Neil Booth
-# $FreeBSD: head/finance/electrum/Makefile 453766 2017-11-08 21:42:52Z ehaupt $
+# $FreeBSD: head/finance/electrum/Makefile 454195 2017-11-14 19:07:52Z ehaupt $
 
 PORTNAME=	electrum
-PORTVERSION=	3.0.1
+PORTVERSION=	3.0.2
 CATEGORIES=	finance python
 MASTER_SITES=	https://download.electrum.org/${PORTVERSION}/ \
 		http://download.electrum.org/${PORTVERSION}/
@@ -33,7 +33,14 @@ USE_PYTHON=	autoplist distutils
 PYDISTUTILS_PKGNAME=	Electrum
 NO_ARCH=	yes
 
+.include <bsd.port.pre.mk>
+
+.if defined(PACKAGE_BUILDING) && !defined(PACKAGE_BUILDING_FLAVORS) && \
+	${PYTHON_VER} != ${PYTHON_DEFAULT}
+IGNORE=	you have python ${PYTHON_DEFAULT} set as the default, and this needs ${PYTHON_VER}
+.endif
+
 post-patch:
 	@${REINPLACE_CMD} -e 's,%%PREFIX%%,${PREFIX},g' ${WRKSRC}/setup.py
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

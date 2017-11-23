@@ -1,9 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/slune/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/slune/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
 PORTNAME=	slune
 PORTVERSION=	1.0.15
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	games python
 MASTER_SITES=	http://download.gna.org/slune/
 DISTNAME=	Slune-${PORTVERSION}

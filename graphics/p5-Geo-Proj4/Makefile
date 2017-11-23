@@ -1,8 +1,8 @@
 # Created by: Eric Stith
-# $FreeBSD: head/graphics/p5-Geo-Proj4/Makefile 450669 2017-09-26 15:02:28Z culot $
+# $FreeBSD: head/graphics/p5-Geo-Proj4/Makefile 454305 2017-11-16 12:52:02Z culot $
 
 PORTNAME=	Geo-Proj4
-PORTVERSION=	1.06
+PORTVERSION=	1.07
 CATEGORIES=	graphics devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

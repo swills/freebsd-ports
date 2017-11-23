@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/py-filelock/Makefile 453338 2017-11-02 06:09:42Z yuri $
+# $FreeBSD: head/sysutils/py-filelock/Makefile 454185 2017-11-14 18:07:28Z yuri $
 
 PORTNAME=	filelock
-PORTVERSION=	2.0.12
+PORTVERSION=	2.0.13
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

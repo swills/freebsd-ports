@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau <duchateau.olivier@gmail.com>
-# $FreeBSD: head/www/py-bjoern/Makefile 449078 2017-09-01 12:56:27Z sunpoet $
+# $FreeBSD: head/www/py-bjoern/Makefile 454717 2017-11-22 23:35:09Z sunpoet $
 
 PORTNAME=	bjoern
-PORTVERSION=	2.0.1
+PORTVERSION=	2.0.3
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,8 +16,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libev.so:devel/libev
 
 LDFLAGS+=	-lc
-USES=		localbase python:2
-USE_PYTHON=	autoplist distutils
+USES=		localbase python
+USE_PYTHON=	autoplist concurrent distutils
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/*.so

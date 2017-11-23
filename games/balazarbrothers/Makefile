@@ -1,9 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/balazarbrothers/Makefile 443391 2017-06-11 15:21:31Z antoine $
+# $FreeBSD: head/games/balazarbrothers/Makefile 454454 2017-11-18 19:32:38Z zeising $
 
 PORTNAME=	balazarbrothers
 PORTVERSION=	0.3.1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	games python
 MASTER_SITES=	http://download.gna.org/${PORTNAME:S/brothers//}/
 DISTNAME=	${PORTNAME:S/b/B/g}-${PORTVERSION}

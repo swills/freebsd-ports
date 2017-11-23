@@ -1,10 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/adplay/Makefile 438828 2017-04-19 08:52:21Z ehaupt $
+# $FreeBSD: head/audio/adplay/Makefile 454493 2017-11-19 14:35:13Z ehaupt $
 
 PORTNAME=	adplay
-PORTVERSION=	1.7
+PORTVERSION=	1.8
 DISTVERSIONPREFIX=	v
-PORTREVISION=	8
 CATEGORIES=	audio
 
 MAINTAINER=	ehaupt@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/ftp/Makefile 443511 2017-06-13 16:39:43Z markj $
+# $FreeBSD: head/ftp/Makefile 454302 2017-11-16 10:48:48Z tz $
 #
 
     COMMENT = FTP client and server utilities
@@ -71,6 +71,8 @@
     SUBDIR += php71-curl
     SUBDIR += php71-fastdfs
     SUBDIR += php71-ftp
+    SUBDIR += php72-curl
+    SUBDIR += php72-ftp
     SUBDIR += phpwebftp
     SUBDIR += plasma-applet-ftpmonitor
     SUBDIR += proftpd

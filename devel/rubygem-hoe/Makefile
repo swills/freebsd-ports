@@ -1,8 +1,8 @@
 # Created by: Jonathan Weiss (<jw@innerewut.de>)
-# $FreeBSD: head/devel/rubygem-hoe/Makefile 446164 2017-07-18 17:56:00Z sunpoet $
+# $FreeBSD: head/devel/rubygem-hoe/Makefile 454724 2017-11-22 23:35:45Z sunpoet $
 
 PORTNAME=	hoe
-PORTVERSION=	3.16.1
+PORTVERSION=	3.16.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

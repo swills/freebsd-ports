@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/sams2/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/sams2/Makefile 454590 2017-11-21 08:36:26Z mat $
 
 PORTNAME=	sams2
 DISTVERSION=	2.0.0
@@ -28,7 +28,7 @@ SUB_FILES=	sams2.conf.sample
 PORTDOCS=	*
 
 OPTIONS_DEFINE=	DOCS APACHE
-OPTIONS_SUB=	APACHE
+OPTIONS_SUB=	yes
 APACHE_USE=	APACHE=22+
 
 # We can't use <options> here, ${APACHE*} won't be populated

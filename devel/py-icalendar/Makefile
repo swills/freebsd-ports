@@ -1,8 +1,8 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/devel/py-icalendar/Makefile 443437 2017-06-12 10:39:07Z sunpoet $
+# $FreeBSD: head/devel/py-icalendar/Makefile 454311 2017-11-16 14:34:45Z culot $
 
 PORTNAME=	icalendar
-PORTVERSION=	3.11.1
+PORTVERSION=	3.11.7
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
