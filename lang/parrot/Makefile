@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/lang/parrot/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/lang/parrot/Makefile 454930 2017-11-27 02:55:09Z linimon $
 
 PORTNAME=	parrot
 PORTVERSION=	8.1.0
@@ -44,8 +44,6 @@ perl_OLD_CMD=	perl
 
 DOCSDIR=	share/doc/${PORTNAME}/${PORTVERSION}
 PLIST_SUB=	PARROT_VER="${PORTVERSION}"
-
-BROKEN_ia64=	Does not compile on ia64
 
 do-configure:
 	(cd ${WRKSRC} && ${PERL} ${CONFIGURE_SCRIPT} ${CONFIGURE_ARGS})

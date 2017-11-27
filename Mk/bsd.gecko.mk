@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 454677 2017-11-22 06:28:56Z jbeich $
+# $FreeBSD: head/Mk/bsd.gecko.mk 454808 2017-11-23 22:53:32Z jbeich $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -125,7 +125,6 @@ LLD_UNSAFE=	yes
 
 MOZILLA_SUFX?=	none
 MOZSRC?=	${WRKSRC}
-WRKSRC?=	${WRKDIR}/mozilla
 PLISTF?=	${WRKDIR}/plist_files
 
 MOZ_OBJDIR?=	${WRKSRC}/obj-${ARCH:C/amd64/x86_64/}-unknown-${OPSYS:tl}${OSREL}

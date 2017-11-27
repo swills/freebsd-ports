@@ -1,9 +1,8 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/net/gupnp-igd/Makefile 439882 2017-05-01 12:46:45Z sunpoet $
+# $FreeBSD: head/net/gupnp-igd/Makefile 454776 2017-11-23 19:08:24Z sunpoet $
 
 PORTNAME=	gupnp-igd
-PORTVERSION=	0.2.4
-PORTREVISION=	1
+PORTVERSION=	0.2.5
 CATEGORIES=	net
 MASTER_SITES=	GNOME
 

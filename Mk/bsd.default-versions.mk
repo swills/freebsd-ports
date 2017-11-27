@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.default-versions.mk 454428 2017-11-18 13:09:56Z tijl $
+# $FreeBSD: head/Mk/bsd.default-versions.mk 454756 2017-11-23 12:11:41Z gahr $
 #
 # MAINTAINER:	ports@FreeBSD.org
 #
@@ -136,7 +136,7 @@ check-makevars::
 # Make sure we have a default in the end
 SSL_DEFAULT?=	base
 .endif
-# Possible values: 8.4, 8.5, 8.6, 8.7
+# Possible values: 8.5, 8.6, 8.7
 TCLTK_DEFAULT?=		8.6
 
 # Possible values: 4, 5

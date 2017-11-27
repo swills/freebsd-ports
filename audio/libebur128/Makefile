@@ -1,8 +1,8 @@
 # Created by: Pietro Cerutti <gahr@FreeBSD.org>
-# $FreeBSD: head/audio/libebur128/Makefile 433728 2017-02-09 13:18:55Z vanilla $
+# $FreeBSD: head/audio/libebur128/Makefile 454821 2017-11-24 13:59:14Z vanilla $
 
 PORTNAME=	libebur128
-PORTVERSION=	1.2.2
+PORTVERSION=	1.2.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	audio
 
@@ -17,8 +17,7 @@ LIB_DEPENDS=	libspeexdsp.so:audio/speexdsp
 USE_GITHUB=	yes
 GH_ACCOUNT=	jiixyj
 
-USES=		cmake:outsource pkgconfig
+USES=		cmake:outsource localbase:ldflags pkgconfig
 USE_LDCONFIG=	yes
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 .include <bsd.port.mk>

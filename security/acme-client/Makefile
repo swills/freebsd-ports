@@ -1,9 +1,9 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/security/acme-client/Makefile 439772 2017-04-29 20:13:48Z brnrd $
+# $FreeBSD: head/security/acme-client/Makefile 454922 2017-11-26 21:07:20Z brnrd $
 
 PORTNAME=	acme-client
 PORTVERSION=	0.1.16
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	portable-
 CATEGORIES=	security
 MASTER_SITES=	https://kristaps.bsd.lv/${PORTNAME}/snapshots/ \
@@ -58,7 +58,7 @@ STAGEDIR_libressl!=	${MAKE} -V STAGEDIR -C ${PORTSDIR}/security/libressl
 . endif
 
 pre-configure:
-	@(cd ${STAGEDIR_libressl}${LOCALBASE} && ${COPYTREE_SHARE} \
+	(cd ${STAGEDIR_libressl}${LOCALBASE} && ${COPYTREE_SHARE} \
 		. ${WRKDIR}/libressl "! -name *.so*")
 .endif # SSL_DEFAULT
 

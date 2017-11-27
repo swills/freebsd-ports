@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: head/emulators/py-nova/files/nova-scheduler.in 454856 2017-11-24 23:17:50Z dbaio $
 #
 
 # PROVIDE: nova_scheduler

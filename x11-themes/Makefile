@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/Makefile 453596 2017-11-06 07:43:50Z araujo $
+# $FreeBSD: head/x11-themes/Makefile 454895 2017-11-25 20:34:37Z yuri $
 #
 
     COMMENT = X11 themes
@@ -167,6 +167,7 @@
     SUBDIR += thewidgetfactory
     SUBDIR += ubuntulooks
     SUBDIR += xcursor-themes
+    SUBDIR += xfce-evolution
     SUBDIR += xfce-icons-elementary
 
 .include <bsd.port.subdir.mk>

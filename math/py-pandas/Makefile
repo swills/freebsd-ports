@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/py-pandas/Makefile 442024 2017-05-29 15:28:52Z sunpoet $
+# $FreeBSD: head/math/py-pandas/Makefile 454890 2017-11-25 18:39:42Z tcberner $
 
 PORTNAME=	pandas
-PORTVERSION=	0.20.1
+DISTVERSION=	0.21.0
 CATEGORIES=	math devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -94,6 +94,7 @@ RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>0:www/py-beautifulsoup
 
 SUB_FILES=	pkg-message
 
+# Official support for 2.7, 3.5, and 3.6
 USES=		python
 USE_PYTHON=	autoplist distutils
 

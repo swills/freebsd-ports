@@ -1,8 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/audio/py-pyliblo/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/py-pyliblo/Makefile 454893 2017-11-25 20:29:50Z yuri $
 
 PORTNAME=	pyliblo
-PORTVERSION=	0.10.0
+DISTVERSION=	0.10.0
+PORTREVISION=	1
 CATEGORIES=	audio python
 MASTER_SITES=	http://das.nasophon.de/download/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,14 +14,13 @@ COMMENT=	Python wrapper for the Liblo OSC Library
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	pyrex>=0.9.4:devel/pyrex \
-		${LOCALBASE}/bin/cython:lang/cython
+BUILD_DEPENDS=	cython${PYTHON_VER:M3.*:S/^3/-3/}:lang/cython${PYTHON_MAJOR_VER:M3}
 LIB_DEPENDS=	liblo.so:audio/liblo
 
+USES=		localbase:ldflags python
 USES=		python
-USE_PYTHON=	distutils
+USE_PYTHON=	distutils # autoplist fails to add the manpage files
 MAKE_ENV+=	PREFIX=${PREFIX} LOCALBASE=${LOCALBASE}
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 post-patch:
 	${REINPLACE_CMD} -e 's#%%LOCALBASE%%#${LOCALBASE}#g' ${WRKSRC}/setup.py

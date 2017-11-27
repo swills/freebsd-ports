@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 454703 2017-11-22 20:04:01Z yuri $
+# $FreeBSD: head/games/Makefile 454826 2017-11-24 16:02:29Z amdmi3 $
 #
 
     COMMENT = Games and related software
@@ -954,6 +954,7 @@
     SUBDIR += syobon
     SUBDIR += tads
     SUBDIR += taipan
+    SUBDIR += taisei
     SUBDIR += tali
     SUBDIR += tanglet
     SUBDIR += tanks-of-freedom

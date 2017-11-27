@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/textproc/uncrustify/Makefile 442405 2017-06-02 15:49:34Z linimon $
+# $FreeBSD: head/textproc/uncrustify/Makefile 454825 2017-11-24 15:52:21Z amdmi3 $
 
 PORTNAME=	uncrustify
-PORTVERSION=	0.65
+PORTVERSION=	0.66.1
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
@@ -18,7 +18,7 @@ BROKEN_powerpc64=	fails to compile: cc1plus: error: unrecognized command line op
 
 NO_WRKSUBDIR=	yes
 USES=		cmake:outsource
-CMAKE_ARGS=	-DCURRENT_VERSION="${PORTVERSION}"
+CMAKE_ARGS=	-DNoGitVersionString:BOOL=TRUE
 TEST_TARGET=	test
 
 PORTDOCS=	*

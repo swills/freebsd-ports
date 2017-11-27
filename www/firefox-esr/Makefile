@@ -1,15 +1,16 @@
 # Created by: Alan Eldridge <alane@FreeBSD.org>
-# $FreeBSD: head/www/firefox-esr/Makefile 454672 2017-11-22 06:25:21Z jbeich $
+# $FreeBSD: head/www/firefox-esr/Makefile 454808 2017-11-23 22:53:32Z jbeich $
 
 PORTNAME=	firefox
 DISTVERSION=	52.5.0
-DISTVERSIONSUFFIX=esr.source
+DISTVERSIONSUFFIX=esr
 PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	www ipv6
 MASTER_SITES=	MOZILLA/${PORTNAME}/releases/${DISTVERSION}esr/source \
 		MOZILLA/${PORTNAME}/candidates/${DISTVERSION}esr-candidates/build2/source
 PKGNAMESUFFIX=	-esr
+DISTFILES=	${DISTNAME}.source${EXTRACT_SUFX}
 
 MAINTAINER=	gecko@FreeBSD.org
 COMMENT=	Web browser based on the browser portion of Mozilla
@@ -54,8 +55,6 @@ OPTIONS_SINGLE+=	TOOLKIT
 OPTIONS_SINGLE_TOOLKIT=	GTK2 GTK3
 
 .include "${.CURDIR}/../../www/firefox/Makefile.options"
-
-WRKSRC:=	${WRKDIR}/${PORTNAME}-${DISTVERSION}esr
 
 post-extract:
 	@${SED} -e 's|@FIREFOX_ICON@|${FIREFOX_ICON}|' -e 's|@MOZILLA@|${MOZILLA}|' \

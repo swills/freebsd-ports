@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@jelal.hb.north.de>
-# $FreeBSD: head/sysutils/afio/Makefile 393582 2015-08-05 12:31:29Z amdmi3 $
+# $FreeBSD: head/sysutils/afio/Makefile 454874 2017-11-25 09:00:15Z amdmi3 $
 
 PORTNAME=	afio
 PORTVERSION=	2.5
@@ -26,9 +26,11 @@ PORTEXAMPLES=	*
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
-post-install:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
+
+post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	cd ${WRKSRC} && ${COPYTREE_SHARE} script? ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_SCRIPT} ${FILESDIR}/afiodump.example ${STAGEDIR}${EXAMPLESDIR}

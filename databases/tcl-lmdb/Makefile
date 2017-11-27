@@ -1,8 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/databases/tcl-lmdb/Makefile 435611 2017-03-07 15:28:19Z ak $
+# $FreeBSD: head/databases/tcl-lmdb/Makefile 454816 2017-11-24 09:10:34Z gahr $
 
 PORTNAME=	tcl-lmdb
-PORTVERSION=	0.3.5
+PORTVERSION=	0.3.6
 CATEGORIES=	databases
 
 MAINTAINER=	gahr@FreeBSD.org

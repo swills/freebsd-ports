@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/fcgiwrap/Makefile 453157 2017-10-30 05:59:15Z delphij $
+# $FreeBSD: head/www/fcgiwrap/Makefile 454862 2017-11-25 02:03:57Z delphij $
 
 PORTNAME=	fcgiwrap
 PORTVERSION=	1.1.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	www
 
 MAINTAINER=	ports@FreeBSD.org

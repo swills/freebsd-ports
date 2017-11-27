@@ -1,8 +1,8 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-PHP_Depend/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/devel/pear-PHP_Depend/Makefile 454852 2017-11-24 22:00:39Z joneum $
 
 PORTNAME=	PHP_Depend
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.2
 CATEGORIES=	devel pear
 MASTER_SITES=	http://pear.pdepend.org/get/
 PKGNAMEPREFIX=	pear-

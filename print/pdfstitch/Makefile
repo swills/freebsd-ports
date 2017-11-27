@@ -1,9 +1,9 @@
 # Created by: Stefan Hagen <ports@textmail.me>
-# $FreeBSD: head/print/pdfstitch/Makefile 451473 2017-10-07 18:34:09Z antoine $
+# $FreeBSD: head/print/pdfstitch/Makefile 454836 2017-11-24 19:22:13Z yuri $
 
 PORTNAME=	pdfstitch
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.5
+DISTVERSION=	0.6
 CATEGORIES=	print
 
 MAINTAINER=	ports@textmail.me

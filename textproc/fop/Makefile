@@ -1,5 +1,5 @@
 # Created by: KIRIYAMA Kazuhiko <kiri@FreeBSD.org>
-# $FreeBSD: head/textproc/fop/Makefile 442129 2017-05-31 00:17:51Z dbaio $
+# $FreeBSD: head/textproc/fop/Makefile 454815 2017-11-24 09:00:19Z amdmi3 $
 
 PORTNAME=	fop
 PORTVERSION=	2.2
@@ -47,9 +47,10 @@ do-install:
 	    ${INSTALL_DATA} conf/fop.xconf ${STAGEDIR}${DATADIR}/conf && \
 	    ${COPYTREE_SHARE} hyph ${STAGEDIR}${DATADIR}
 	${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${DATADIR}
-	${LN} -s ${DATADIR}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
+	${LN} -s ../${DATADIR_REL}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	cd ${LEGALDIR} && ${INSTALL_MAN} LICENSE README NOTICE KEYS ${STAGEDIR}${DOCSDIR}
+	cd ${LEGALDIR} && ${INSTALL_DATA} README NOTICE KEYS ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

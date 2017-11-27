@@ -1,8 +1,8 @@
 # Created by: Mathieu Arnold <mat@FreeBSD.org>
-# $FreeBSD: head/devel/p5-ExtUtils-CBuilder/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-ExtUtils-CBuilder/Makefile 454787 2017-11-23 19:09:20Z sunpoet $
 
 PORTNAME=	ExtUtils-CBuilder
-PORTVERSION=	0.280226
+PORTVERSION=	0.280230
 PORTEPOCH=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/aphpunit/Makefile 454303 2017-11-16 11:04:43Z tz $
+# $FreeBSD: head/devel/aphpunit/Makefile 454819 2017-11-24 11:42:13Z tz $
 
 PORTNAME=	aphpunit
-DISTVERSION=	1.1
+DISTVERSION=	1.3
 CATEGORIES=	devel www
 MASTER_SITES=	http://phar.toco-domains.de/
 EXTRACT_SUFX=	.phar

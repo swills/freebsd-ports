@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 454691 2017-11-22 14:55:05Z tz $
+# $FreeBSD: head/devel/Makefile 454942 2017-11-27 11:28:54Z amdmi3 $
 #
 
     COMMENT = Development utilities
@@ -201,6 +201,7 @@
     SUBDIR += bison
     SUBDIR += bisoncpp
     SUBDIR += blame
+    SUBDIR += blitz
     SUBDIR += bmake
     SUBDIR += bmkdep
     SUBDIR += bnf
@@ -4254,6 +4255,7 @@
     SUBDIR += py-aspyct
     SUBDIR += py-astor
     SUBDIR += py-astroid
+    SUBDIR += py-asttokens
     SUBDIR += py-async_timeout
     SUBDIR += py-asyncio
     SUBDIR += py-atomiclong
@@ -5080,6 +5082,7 @@
     SUBDIR += py27-setuptools
     SUBDIR += py3-Jinja2
     SUBDIR += py3-apipkg
+    SUBDIR += py3-asttokens
     SUBDIR += py3-babel
     SUBDIR += py3-cffi
     SUBDIR += py3-click
@@ -5158,6 +5161,7 @@
     SUBDIR += py_static_check
     SUBDIR += pybind11
     SUBDIR += pybugz
+    SUBDIR += pycanberra
     SUBDIR += pycharm-ce
     SUBDIR += pychecker
     SUBDIR += pycount

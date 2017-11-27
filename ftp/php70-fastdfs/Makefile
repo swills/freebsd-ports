@@ -1,4 +1,4 @@
-# $FreeBSD: head/ftp/php70-fastdfs/Makefile 448000 2017-08-15 19:01:24Z dbaio $
+# $FreeBSD: head/ftp/php70-fastdfs/Makefile 454873 2017-11-25 07:51:20Z joneum $
 
 PORTNAME=	fastdfs
 PORTVERSION=	5.0.11
@@ -19,10 +19,10 @@ GH_PROJECT=	fastdfs
 GH_TAGNAME=	1e50b4f
 
 USES=			php:ext
-IGNORE_WITH_PHP=	56 71
 PHP_VER=		70
 
 WRKSRC_SUBDIR=	php_client
+CONFIGURE_ENV=	ROOT=${LOCALBASE}
 
 PHP_MODNAME=	fastdfs_client
 

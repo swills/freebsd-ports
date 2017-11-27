@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: head/misc/py-cinder/files/cinder-volume.in 454856 2017-11-24 23:17:50Z dbaio $
 #
 
 # PROVIDE: cinder_volume

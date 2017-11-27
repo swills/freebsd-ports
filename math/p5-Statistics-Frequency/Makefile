@@ -1,11 +1,10 @@
 # Created by: Steve Wills <steve@mouf.net>
-# $FreeBSD: head/math/p5-Statistics-Frequency/Makefile 412972 2016-04-10 16:57:56Z swills $
+# $FreeBSD: head/math/p5-Statistics-Frequency/Makefile 454828 2017-11-24 17:53:11Z mat $
 
 PORTNAME=	Statistics-Frequency
 PORTVERSION=	0.04
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
-MASTER_SITE_SUBDIR=	Statistics
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	swills@FreeBSD.org

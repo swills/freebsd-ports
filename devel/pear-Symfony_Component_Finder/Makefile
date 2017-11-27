@@ -1,8 +1,8 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-Symfony_Component_Finder/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/devel/pear-Symfony_Component_Finder/Makefile 454847 2017-11-24 20:24:30Z joneum $
 
 PORTNAME=	Finder
-PORTVERSION=	2.3.4
+PORTVERSION=	2.4.4
 CATEGORIES=	devel pear
 MASTER_SITES=	http://pear.symfony.com/get/
 PKGNAMEPREFIX=	pear-Symfony_Component_

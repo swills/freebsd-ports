@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/graphics/p5-Geo-GDAL/Makefile 450389 2017-09-22 15:49:50Z sunpoet $
+# $FreeBSD: head/graphics/p5-Geo-GDAL/Makefile 454864 2017-11-25 03:01:24Z sunpoet $
 
 PORTNAME=	Geo-GDAL
-PORTVERSION=	2.2.2
+PORTVERSION=	2.2.3
 CATEGORIES=	graphics perl5
 MASTER_SITES=	http://download.osgeo.org/gdal/${PORTVERSION}/ \
 		ftp://ftp.remotesensing.org/pub/gdal/${PORTVERSION}/ \

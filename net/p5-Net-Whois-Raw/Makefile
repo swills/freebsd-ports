@@ -1,8 +1,8 @@
 # Created by: Alex Kapranoff <kappa@FreeBSD.org.ua>
-# $FreeBSD: head/net/p5-Net-Whois-Raw/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-Whois-Raw/Makefile 454839 2017-11-24 19:36:42Z sunpoet $
 
 PORTNAME=	Net-Whois-Raw
-PORTVERSION=	2.99010
+PORTVERSION=	2.99011
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

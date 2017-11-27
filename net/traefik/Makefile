@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/traefik/Makefile 454444 2017-11-18 14:50:22Z riggs $
+# $FreeBSD: head/net/traefik/Makefile 454879 2017-11-25 12:04:44Z riggs $
 
 PORTNAME=	traefik
-PORTVERSION=	1.4.3
+PORTVERSION=	1.4.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 

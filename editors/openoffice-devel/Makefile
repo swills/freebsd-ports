@@ -1,9 +1,9 @@
 # Created by: Martin Blapp
-# $FreeBSD: head/editors/openoffice-devel/Makefile 452937 2017-10-26 18:38:56Z truckman $
+# $FreeBSD: head/editors/openoffice-devel/Makefile 454935 2017-11-27 07:28:35Z truckman $
 
 PORTNAME=	apache-openoffice
 PORTVERSION=	${AOOVERSION1}.${AOOVERSION2}.${SVNREVISION}
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	4
 CATEGORIES=	editors java
 MASTER_SITES=	https://dist.apache.org/repos/dist/dev/openoffice/${AOOVERSION}-${AOORC}-r${SVNREVISION}/source/ \

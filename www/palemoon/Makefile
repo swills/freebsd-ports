@@ -1,5 +1,5 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/www/palemoon/Makefile 454738 2017-11-23 00:58:52Z jbeich $
+# $FreeBSD: head/www/palemoon/Makefile 454808 2017-11-23 22:53:32Z jbeich $
 
 PORTNAME=	palemoon
 DISTVERSION=	27.6.1
@@ -45,8 +45,6 @@ OPTIONS_DEFAULT=	BUNDLED_CAIRO GTK2
 OPTIONS_EXCLUDE=	DTRACE INTEGER_SAMPLES JACK SNDIO TEST
 
 .include "${.CURDIR}/../../www/firefox/Makefile.options"
-
-WRKSRC:=	${WRKDIR}/${GH_PROJECT}-${DISTVERSIONFULL}
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|%%LOCALBASE%%|${LOCALBASE}|g' \

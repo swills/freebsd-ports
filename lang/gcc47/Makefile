@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc47/Makefile 454508 2017-11-19 22:44:45Z gerald $
+# $FreeBSD: head/lang/gcc47/Makefile 454798 2017-11-23 21:12:22Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	4.7.4
@@ -60,6 +60,10 @@ CONFIGURE_ARGS+=--disable-bootstrap
 .else
 CONFIGURE_ARGS+=--with-build-config=bootstrap-debug
 ALL_TARGET=	bootstrap-lean
+.endif
+INSTALL_TARGET=	install-strip
+.if ${UID} != 0
+BINMODE=	755
 .endif
 CONFIGURE_ARGS+=--disable-nls \
 		--enable-gnu-indirect-function \

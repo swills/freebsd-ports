@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: head/emulators/qemu-sbruno/files/qemu_user_static.in 448937 2017-08-29 20:21:48Z sbruno $
+# $FreeBSD: head/emulators/qemu-sbruno/files/qemu_user_static.in 454929 2017-11-27 01:09:32Z linimon $
 #
 
 # PROVIDE: %%NAME%%
@@ -138,12 +138,12 @@ list_cmd="${BINMISCCTL} list"
 
 %%NAME%%_stop()
 {
-	${BINMISCCTL} remove mips64
 	${BINMISCCTL} remove arm
 	${BINMISCCTL} remove armv6
 	${BINMISCCTL} remove armv7
 	${BINMISCCTL} remove aarch64
 	${BINMISCCTL} remove mips
+	${BINMISCCTL} remove mips64
 	${BINMISCCTL} remove mipsel
 	${BINMISCCTL} remove powerpc
 	${BINMISCCTL} remove powerpc64

@@ -1,7 +1,7 @@
-# $FreeBSD: head/shells/xonsh/Makefile 450378 2017-09-22 14:57:41Z matthew $
+# $FreeBSD: head/shells/xonsh/Makefile 454806 2017-11-23 22:13:33Z dbaio $
 
 PORTNAME=	xonsh
-PORTVERSION=	0.5.12
+PORTVERSION=	0.6.0
 CATEGORIES=	shells python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

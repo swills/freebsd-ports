@@ -1,11 +1,10 @@
-# $FreeBSD: head/japanese/font-genjyuugothic/Makefile 418945 2016-07-23 06:13:47Z ume $
+# $FreeBSD: head/japanese/font-genjyuugothic/Makefile 454828 2017-11-24 17:53:11Z mat $
 
 PORTNAME=	genjyuugothic
 PORTVERSION=	20150607
 #PORTREVISION=	0
 CATEGORIES=	japanese x11-fonts
-MASTER_SITES=	SOURCEFORGE_JP
-MASTER_SITE_SUBDIR=users/8/8636
+MASTER_SITES=	SOURCEFORGE_JP/users/8/8636
 PKGNAMEPREFIX=	ja-font-
 
 MAINTAINER=	ume@FreeBSD.org

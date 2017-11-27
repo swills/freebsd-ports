@@ -1,13 +1,12 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/mail/thunderbird/Makefile 454675 2017-11-22 06:25:59Z jbeich $
+# $FreeBSD: head/mail/thunderbird/Makefile 454808 2017-11-23 22:53:32Z jbeich $
 
 PORTNAME=	thunderbird
 DISTVERSION=	52.5.0
 CATEGORIES=	mail news net-im ipv6
 MASTER_SITES=	MOZILLA/${PORTNAME}/releases/${DISTVERSION}/source \
 		MOZILLA/${PORTNAME}/candidates/${DISTVERSION}-candidates/build1/source
-DISTFILES=	${PORTNAME}-${DISTVERSION}.source${EXTRACT_SUFX}
-EXTRACT_ONLY=	${PORTNAME}-${DISTVERSION}.source${EXTRACT_SUFX}
+DISTFILES=	${DISTNAME}.source${EXTRACT_SUFX}
 
 MAINTAINER=	gecko@FreeBSD.org
 COMMENT=	Mozilla Thunderbird is standalone mail and news that stands above
@@ -56,7 +55,6 @@ OPTIONS_DEFAULT=BUNDLED_CAIRO CANBERRA GTK3 LIGHTNING
 .include "${.CURDIR}/../../www/firefox/Makefile.options"
 .include <bsd.port.pre.mk>
 
-WRKSRC:=	${WRKDIR}/${PORTNAME}-${DISTVERSION}
 MOZSRC:=	${WRKSRC}/mozilla
 
 .if ${PORT_OPTIONS:MLIGHTNING}

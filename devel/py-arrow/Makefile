@@ -1,8 +1,8 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/devel/py-arrow/Makefile 428820 2016-12-18 01:37:16Z gblach $
+# $FreeBSD: head/devel/py-arrow/Makefile 454883 2017-11-25 14:20:52Z gblach $
 
 PORTNAME=	arrow
-PORTVERSION=	0.10.0
+PORTVERSION=	0.11.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,9 +1,8 @@
 # Created by: Sean Bruno
-# $FreeBSD: head/games/cockatrice/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/cockatrice/Makefile 454769 2017-11-23 17:56:13Z sbruno $
 
 PORTNAME=	Cockatrice
-PORTVERSION=	0.0.g2017.05.05
-PORTREVISION=	2
+PORTVERSION=	0.0.g2017.11.19
 CATEGORIES=	games
 
 MAINTAINER=	sbruno@FreeBSD.org
@@ -14,7 +13,7 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libprotobuf.so:devel/protobuf
 
 USE_GITHUB=	yes
-GH_TAGNAME=	2017-05-05-Release-2.3.17
+GH_TAGNAME=	2017-11-19-Release-2.4.0
 
 USES=		cmake compiler:c++11-lib
 USE_QT5=	buildtools concurrent core multimedia network printsupport \

@@ -1,9 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/pecl-memcached/Makefile 440386 2017-05-07 21:31:14Z sunpoet $
+# $FreeBSD: head/databases/pecl-memcached/Makefile 454783 2017-11-23 19:09:00Z sunpoet $
 
 PORTNAME=	memcached
-PORTVERSION=	3.0.3
-PORTREVISION=	1
+PORTVERSION=	3.0.4
 CATEGORIES=	databases
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -12,6 +11,7 @@ COMMENT=	PHP extension for interfacing with memcached via libmemcached library
 LICENSE=	PHP30
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BUILD_DEPENDS=	libmemcached>=1.0.18:databases/libmemcached
 LIB_DEPENDS=	libmemcached.so:databases/libmemcached
 
 OPTIONS_DEFINE=	IGBINARY SASL

@@ -1,8 +1,8 @@
 # Created by: Hugo Saro <hugo@barafranca.com>
-# $FreeBSD: head/net/haproxy-devel/Makefile 454489 2017-11-19 11:48:37Z demon $
+# $FreeBSD: head/net/haproxy-devel/Makefile 454917 2017-11-26 19:30:55Z demon $
 
 PORTNAME=	haproxy
-DISTVERSION=	1.8-rc4
+DISTVERSION=	1.8.0
 CATEGORIES=	net www
 MASTER_SITES=	http://www.haproxy.org/download/1.8/src/
 PKGNAMESUFFIX=	-devel

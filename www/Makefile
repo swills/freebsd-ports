@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 454738 2017-11-23 00:58:52Z jbeich $
+# $FreeBSD: head/www/Makefile 454949 2017-11-27 13:25:12Z jbeich $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -538,6 +538,8 @@
     SUBDIR += newsbeuter
     SUBDIR += newsboat
     SUBDIR += nextcloud
+    SUBDIR += nextcloud-calendar
+    SUBDIR += nextcloud-contacts
     SUBDIR += nghttp2
     SUBDIR += nginx
     SUBDIR += nginx-devel
@@ -2035,6 +2037,7 @@
     SUBDIR += rubygem-hurley
     SUBDIR += rubygem-innate
     SUBDIR += rubygem-jekyll
+    SUBDIR += rubygem-jekyll-sanity
     SUBDIR += rubygem-jekyll-watch
     SUBDIR += rubygem-journey
     SUBDIR += rubygem-jquery-atwho-rails
@@ -2412,6 +2415,7 @@
     SUBDIR += w3mir
     SUBDIR += waccess
     SUBDIR += wadcomblog
+    SUBDIR += waterfox
     SUBDIR += web2ldap
     SUBDIR += webalizer
     SUBDIR += webbrowser

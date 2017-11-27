@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-rack-mini-profiler/Makefile 453187 2017-10-30 14:54:54Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rack-mini-profiler/Makefile 454843 2017-11-24 19:37:03Z sunpoet $
 
 PORTNAME=	rack-mini-profiler
-PORTVERSION=	0.10.6
+PORTVERSION=	0.10.7
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

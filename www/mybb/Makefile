@@ -1,8 +1,8 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/www/mybb/Makefile 441743 2017-05-25 21:24:26Z joneum $
+# $FreeBSD: head/www/mybb/Makefile 454838 2017-11-24 19:30:46Z joneum $
 
 PORTNAME=	mybb
-PORTVERSION=	1.8.12
+PORTVERSION=	1.8.13
 CATEGORIES=	www
 
 MAINTAINER=	joneum@FreeBSD.org
@@ -12,12 +12,12 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_GITHUB=	yes
-GH_TAGNAME=	${PORTNAME}_1812
+GH_TAGNAME=	${PORTNAME}_1813
 
-USES=		cpe mysql php
+USES=		cpe mysql php:web
 NO_BUILD=	yes
 NO_ARCH=	yes
-USE_PHP=	xsl mysql iconv gd xml
+USE_PHP=	xsl mysqli iconv gd xml
 SUB_FILES=	pkg-message
 WWWDIR?=	${PREFIX}/www/${PORTNAME}
 PLIST_SUB=	WWWOWN=${WWWOWN}

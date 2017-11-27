@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/misc/gnome-mime-data/Makefile 372768 2014-11-19 11:49:04Z kwm $
+# $FreeBSD: head/misc/gnome-mime-data/Makefile 454814 2017-11-24 09:00:18Z amdmi3 $
 #    $MCom: ports/misc/gnome-mime-data/Makefile,v 1.14 2007/05/22 04:59:18 marcus Exp $
 
 PORTNAME=	gnome-mime-data
@@ -7,16 +7,17 @@ PORTVERSION=	2.18.0
 PORTREVISION=	5
 CATEGORIES=	misc gnome
 MASTER_SITES=	GNOME
-DISTNAME=	gnome-mime-data-${PORTVERSION}
 DIST_SUBDIR=	gnome
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	MIME and Application database for GNOME
 
-USES=		gettext gmake pathfix tar:bzip2
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+USES=		gettext gmake localbase pathfix tar:bzip2
 USE_GNOME=	gnomeprefix intlhack
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib -lintl
+LIBS+=		-lintl
 
 .include <bsd.port.mk>

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: head/databases/mysqlwsrep57-server/files/mysql-server.in 454856 2017-11-24 23:17:50Z dbaio $
 #
 
 # PROVIDE: mysql

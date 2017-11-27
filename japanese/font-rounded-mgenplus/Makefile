@@ -1,11 +1,10 @@
-# $FreeBSD: head/japanese/font-rounded-mgenplus/Makefile 419177 2016-07-27 15:05:03Z ume $
+# $FreeBSD: head/japanese/font-rounded-mgenplus/Makefile 454828 2017-11-24 17:53:11Z mat $
 
 PORTNAME=	rounded-mgenplus
 PORTVERSION=	20150602
 #PORTREVISION=	0
 CATEGORIES=	japanese x11-fonts
-MASTER_SITES=	SOURCEFORGE_JP
-MASTER_SITE_SUBDIR=users/8/8598
+MASTER_SITES=	SOURCEFORGE_JP/users/8/8598
 PKGNAMEPREFIX=	ja-font-
 
 MAINTAINER=	ume@FreeBSD.org

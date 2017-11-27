@@ -1,11 +1,10 @@
 # Created by: Ying-Chieh Chen <yinjieh@csie.nctu.edu.tw>
-# $FreeBSD: head/net-mgmt/ipaudit/Makefile 444377 2017-06-26 16:46:32Z ultima $
+# $FreeBSD: head/net-mgmt/ipaudit/Makefile 454828 2017-11-24 17:53:11Z mat $
 
 PORTNAME=	ipaudit
 PORTVERSION=	1.1
 CATEGORIES=	net-mgmt sysutils
-MASTER_SITES=	SF
-MASTER_SITE_SUBDIR=	ipaudit/ipaudit
+MASTER_SITES=	SF/ipaudit/ipaudit
 
 MAINTAINER=	amutu@amutu.com
 COMMENT=	IP traffic summarizer
