@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/wildmidi/Makefile 447551 2017-08-08 17:53:36Z ultima $
+# $FreeBSD: head/audio/wildmidi/Makefile 455007 2017-11-28 00:07:16Z dbaio $
 
 PORTNAME=	wildmidi
-PORTVERSION=	0.4.1
+PORTVERSION=	0.4.2
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	audio
 
@@ -45,11 +45,6 @@ USES+=	openal:al
 .  elif ${PORT_OPTIONS:MALSA}
 LIB_DEPENDS+=	libasound.so:audio/alsa-lib
 .  endif
-.endif
-
-# base: r318780, r319651, r319653
-.if ${OPSYS} == FreeBSD && (${OSVERSION} >= 1200031 || (${OSVERSION} >= 1100514 && ${OSVERSION} < 1200000) || (${OSVERSION} >= 1003514 && ${OSVERSION} < 1100000))
-EXTRA_PATCHES=	${FILESDIR}/extra-patch-src_wm__tty.c
 .endif
 
 post-patch:

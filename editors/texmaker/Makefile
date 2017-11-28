@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/editors/texmaker/Makefile 448669 2017-08-24 13:45:13Z swills $
+# $FreeBSD: head/editors/texmaker/Makefile 455026 2017-11-28 09:03:58Z amdmi3 $
 
 PORTNAME=	texmaker
 PORTVERSION=	4.5
@@ -11,7 +11,7 @@ MASTER_SITES=	http://www.xm1math.net/texmaker/
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	LaTeX Development Environment
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 
 LIB_DEPENDS=	libhunspell-1.6.so:textproc/hunspell \
 		libpoppler.so:graphics/poppler

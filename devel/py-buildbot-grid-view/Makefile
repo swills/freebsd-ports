@@ -1,19 +1,21 @@
-# $FreeBSD: head/devel/py-buildbot-grid-view/Makefile 450642 2017-09-26 04:56:04Z rodrigc $
+# $FreeBSD: head/devel/py-buildbot-grid-view/Makefile 455028 2017-11-28 10:15:46Z rodrigc $
 
 PORTNAME=	buildbot-grid-view
 PORTVERSION=	0.9.11
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	rodrigc@FreeBSD.org
+MAINTAINER=	koobs@FreeBSD.org
 COMMENT=	Continuous Integration Framework (Grid View)
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	buildbot-pkg>=${PORTVERSION}:devel/buildbot-pkg
-RUN_DEPENDS=	buildbot-pkg>=${PORTVERSION}:devel/buildbot-pkg
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}buildbot-pkg>=${PORTVERSION}:devel/py-buildbot-pkg
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}buildbot-pkg>=${PORTVERSION}:devel/py-buildbot-pkg
 
-USES=		python:2.7
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 NO_ARCH=	yes

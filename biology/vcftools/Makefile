@@ -1,8 +1,8 @@
 # Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/biology/vcftools/Makefile 430483 2017-01-03 17:06:49Z jbeich $
+# $FreeBSD: head/biology/vcftools/Makefile 455000 2017-11-27 23:05:40Z jwb $
 
 PORTNAME=	vcftools
-PORTVERSION=	0.1.14
+PORTVERSION=	0.1.15
 DISTVERSIONPREFIX=	v
 CATEGORIES=	biology
 

@@ -1,8 +1,9 @@
 # Created by: David O'Brien <obrien@cs.ucdavis.edu>
-# $FreeBSD: head/editors/vim/Makefile 454894 2017-11-25 20:31:59Z adamw $
+# $FreeBSD: head/editors/vim/Makefile 455019 2017-11-28 04:35:09Z adamw $
 
 PORTNAME=	vim
 PORTVERSION=	8.0.1342
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	editors
 
@@ -75,7 +76,7 @@ CSCOPE_RUN_DEPENDS=	cscope:devel/cscope
 
 EXUBERANT_CTAGS_RUN_DEPENDS=	exctags:devel/ctags
 
-NLS_ENABLE=		nls
+NLS_CONFIGURE_OFF=	--enable-nls=no
 NLS_USES=		gettext
 
 # UI

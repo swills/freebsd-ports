@@ -1,5 +1,5 @@
 # Created by: Zeus Panchenko <zeus@gnu.org.ua>
-# $FreeBSD: head/mail/mailfromd/Makefile 453614 2017-11-06 12:59:17Z danfe $
+# $FreeBSD: head/mail/mailfromd/Makefile 455014 2017-11-28 01:11:09Z danfe $
 
 PORTNAME=	mailfromd
 PORTVERSION=	8.4
@@ -33,7 +33,7 @@ SUB_LIST+=	MFD_RUN_DIR=${MFD_RUN_DIR}
 INFO=		${PORTNAME}
 PORTDOCS=	AUTHORS ChangeLog NEWS README THANKS TODO
 
-OPTIONS_DEFINE=		DOCS DSPAM GEOIP NLS
+OPTIONS_DEFINE=		DEBUG DOCS DSPAM GEOIP NLS
 OPTIONS_DEFAULT=	GDBM
 OPTIONS_MULTI=		DB
 OPTIONS_MULTI_DB=	BDB GDBM
@@ -41,6 +41,8 @@ OPTIONS_SUB=		yes
 
 BDB_DESC=		Berkeley DB v4.8 support (last working one)
 DB_DESC=		Database configuration
+
+DEBUG_CONFIGURE_ON=	--enable-debug
 
 DSPAM_DESC=		DSPAM spam filter library support
 DSPAM_LIB_DEPENDS=	libdspam.so:mail/dspam

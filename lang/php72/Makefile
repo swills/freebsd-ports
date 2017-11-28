@@ -1,5 +1,5 @@
 
-# $FreeBSD: head/lang/php72/Makefile 454754 2017-11-23 11:41:51Z tz $
+# $FreeBSD: head/lang/php72/Makefile 454993 2017-11-27 21:38:06Z gerald $
 
 PORTNAME=	php72
 DISTVERSION=	7.2.0RC6
@@ -54,7 +54,6 @@ CLI_DESC=	Build CLI version
 CGI_DESC=	Build CGI version
 FPM_DESC=	Build FPM version
 EMBED_DESC=	Build embedded library
-DEBUG_DESC=	Enable debug
 PHPDBG_DESC=	Interactive PHP debugger
 DTRACE_DESC=	Enable DTrace support
 LINKTHR_DESC=	Link thread lib (for threaded extensions)

@@ -1,8 +1,8 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/x11-fm/thunar/Makefile 451481 2017-10-07 22:48:08Z madpilot $
+# $FreeBSD: head/x11-fm/thunar/Makefile 454959 2017-11-27 14:45:03Z joneum $
 
 PORTNAME=	Thunar
-PORTVERSION=	1.6.12
+DISTVERSION=	1.6.13
 CATEGORIES=	x11-fm xfce
 MASTER_SITES=	XFCE/src/xfce/${PORTNAME:tl}/${PORTVERSION:R}
 DIST_SUBDIR=	xfce4
@@ -21,6 +21,8 @@ LIB_DEPENDS=	libtumbler-1.so:deskutils/xfce4-tumbler \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2
 RUN_DEPENDS=	pkexec:sysutils/polkit
+
+PORTSCOUT=	limit:^1\.6\.
 
 USES=		desktop-file-utils gmake pathfix perl5 libtool pkgconfig \
 		gettext-tools xfce tar:bzip2

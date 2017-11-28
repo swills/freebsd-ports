@@ -1,5 +1,5 @@
 # Created by: michael johnson <ahze@ahze.net>
-# $FreeBSD: head/multimedia/mkxvcd/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/mkxvcd/Makefile 455033 2017-11-28 11:40:18Z amdmi3 $
 
 PORTNAME=	mkxvcd
 PORTVERSION=	2.0.2
@@ -11,6 +11,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Makes high quality X/K/S/VCD movies from many formats
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	mpeg2enc:multimedia/mjpegtools \
 		bash:shells/bash \
@@ -20,16 +21,18 @@ RUN_DEPENDS=	mpeg2enc:multimedia/mjpegtools \
 USES=		shebangfix
 SHEBANG_FILES=	${PORTNAME}.sh
 NO_BUILD=	yes
-
-PLIST_FILES=	bin/${PORTNAME}
+NO_ARCH=	yes
 
 PORTDOCS=	AUTHORS Changelog README
+PLIST_FILES=	bin/${PORTNAME}
+
 OPTIONS_DEFINE=	DOCS
 
 do-install:
-	@${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME}.sh \
+	${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME}.sh \
 		${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 

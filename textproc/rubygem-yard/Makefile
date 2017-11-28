@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-yard/Makefile 454928 2017-11-26 23:19:35Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-yard/Makefile 455013 2017-11-28 00:51:29Z sunpoet $
 
 PORTNAME=	yard
-PORTVERSION=	0.9.11
+PORTVERSION=	0.9.12
 CATEGORIES=	textproc devel rubygems
 MASTER_SITES=	RG
 

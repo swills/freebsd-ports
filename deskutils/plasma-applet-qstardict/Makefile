@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/plasma-applet-qstardict/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/deskutils/plasma-applet-qstardict/Makefile 455031 2017-11-28 11:29:23Z amdmi3 $
 
 PORTNAME=	qstardict
 PORTVERSION=	1.0.1
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	plasma-applet-
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Dictionary plasma applet for KDE
 
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 RUN_DEPENDS=	${QSTARDICT_PLUGIN_PATH}/libstardict.so:textproc/qstardict
 
 USES=		cmake kde:4 tar:bzip2
@@ -20,7 +23,7 @@ CMAKE_SOURCE_PATH=	${WRKSRC}/kdeplasma
 QSTARDICT_PLUGIN_PATH=	${LOCALBASE}/lib/qstardict/plugins
 
 post-patch:
-	${REINPLACE_CMD} -e 's|/usr/lib/qstardict/plugins|${QSTARDICT_PLUGIN_PATH}|g' \
+	@${REINPLACE_CMD} -e 's|/usr/lib/qstardict/plugins|${QSTARDICT_PLUGIN_PATH}|g' \
 		${WRKSRC}/kdeplasma/dataengine/config.h.cmake
 
 .include <bsd.port.mk>

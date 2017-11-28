@@ -1,8 +1,9 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/lang/chez-scheme/Makefile 454923 2017-11-26 21:18:04Z ashish $
+# $FreeBSD: head/lang/chez-scheme/Makefile 455040 2017-11-28 13:31:18Z mat $
 
 PORTNAME=	chez-scheme
 PORTVERSION=	9.5
+DISTVERSIONPREFIX=	v
 CATEGORIES=	lang
 MASTER_SITES=	http://distfiles.pirateparty.in/ashish/:boot \
 		LOCAL/ashish:boot
@@ -20,7 +21,6 @@ ONLY_FOR_ARCHS=	amd64 i386
 USE_GITHUB=	yes
 GH_ACCOUNT=	cisco
 GH_PROJECT=	ChezScheme
-GH_TAGNAME=	v${PORTVERSION}
 GH_TUPLE=	nanopass:nanopass-framework-scheme:v1.9:nanopass/nanopass \
 		madler:zlib:v1.2.11:zlib/zlib \
 		dybvig:stex:v1.2.1:stex/stex

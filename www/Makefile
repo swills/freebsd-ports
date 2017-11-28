@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 454949 2017-11-27 13:25:12Z jbeich $
+# $FreeBSD: head/www/Makefile 454998 2017-11-27 22:46:35Z arved $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -535,7 +535,6 @@
     SUBDIR += netrik
     SUBDIR += netstiff
     SUBDIR += netsurf
-    SUBDIR += newsbeuter
     SUBDIR += newsboat
     SUBDIR += nextcloud
     SUBDIR += nextcloud-calendar

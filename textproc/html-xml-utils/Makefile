@@ -1,8 +1,8 @@
 # Created by: Takefu <takefu@airport.fm>
-# $FreeBSD: head/textproc/html-xml-utils/Makefile 452180 2017-10-16 08:03:46Z pizzamig $
+# $FreeBSD: head/textproc/html-xml-utils/Makefile 454986 2017-11-27 18:45:13Z joneum $
 
 PORTNAME=	html-xml-utils
-PORTVERSION=	7.2
+DISTVERSION=	7.4
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.w3.org/Tools/HTML-XML-utils/
 

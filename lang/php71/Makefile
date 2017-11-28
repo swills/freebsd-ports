@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/lang/php71/Makefile 454818 2017-11-24 10:13:52Z tz $
+# $FreeBSD: head/lang/php71/Makefile 454993 2017-11-27 21:38:06Z gerald $
 
 PORTNAME=	php71
 PORTVERSION=	7.1.12
@@ -54,7 +54,6 @@ CLI_DESC=	Build CLI version
 CGI_DESC=	Build CGI version
 FPM_DESC=	Build FPM version
 EMBED_DESC=	Build embedded library
-DEBUG_DESC=	Enable debug
 PHPDBG_DESC=	Interactive PHP debugger
 DTRACE_DESC=	Enable DTrace support
 MAILHEAD_DESC=	Enable mail header patch

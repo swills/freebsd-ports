@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 454877 2017-11-25 10:16:31Z yuri $
+# $FreeBSD: head/misc/Makefile 455016 2017-11-28 03:06:58Z yuri $
 #
 
     COMMENT = Miscellaneous utilities
@@ -377,6 +377,7 @@
     SUBDIR += ptsort
     SUBDIR += py-YABT
     SUBDIR += py-cinder
+    SUBDIR += py-colorbrewer
     SUBDIR += py-crudini
     SUBDIR += py-fuzzy
     SUBDIR += py-glance
