@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 454648 2017-11-21 18:50:58Z rene $
+# $FreeBSD: head/lang/Makefile 454923 2017-11-26 21:18:04Z ashish $
 #
 
     COMMENT = Programming languages
@@ -26,6 +26,7 @@
     SUBDIR += cdent
     SUBDIR += ceylon
     SUBDIR += cfortran
+    SUBDIR += chez-scheme
     SUBDIR += chibi-scheme
     SUBDIR += chicken
     SUBDIR += cilkplus

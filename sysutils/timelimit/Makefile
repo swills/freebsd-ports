@@ -1,9 +1,8 @@
 # Created by: roam@FreeBSD.org
-# $FreeBSD: head/sysutils/timelimit/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/sysutils/timelimit/Makefile 454775 2017-11-23 19:08:19Z sunpoet $
 
 PORTNAME=	timelimit
-PORTVERSION=	1.8.1
-PORTREVISION=	1
+PORTVERSION=	1.8.2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://devel.ringlet.net/files/sys/timelimit/ \
 		LOCAL/sunpoet

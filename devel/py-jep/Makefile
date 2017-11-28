@@ -1,8 +1,8 @@
 # Created by: Choe, Cheng-Dae
-# $FreeBSD: head/devel/py-jep/Makefile 447882 2017-08-13 12:55:58Z dbaio $
+# $FreeBSD: head/devel/py-jep/Makefile 454999 2017-11-27 22:47:03Z dbaio $
 
 PORTNAME=	jep
-PORTVERSION=	3.7.0
+PORTVERSION=	3.7.1
 CATEGORIES=	devel java python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

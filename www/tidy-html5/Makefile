@@ -1,9 +1,8 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/www/tidy-html5/Makefile 452087 2017-10-14 19:53:52Z thierry $
+# $FreeBSD: head/www/tidy-html5/Makefile 454920 2017-11-26 20:44:33Z thierry $
 
 PORTNAME=	tidy-html5
-PORTVERSION=	5.4.0
-PORTREVISION=	1
+PORTVERSION=	5.6.0
 CATEGORIES=	www
 
 MAINTAINER=	thierry@FreeBSD.org

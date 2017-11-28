@@ -1,8 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/rubygem-flipper-active_record010/Makefile 454691 2017-11-22 14:55:05Z tz $
+# $FreeBSD: head/databases/rubygem-flipper-active_record010/Makefile 454784 2017-11-23 19:09:04Z sunpoet $
 
 PORTNAME=	flipper-active_record
 PORTVERSION=	0.10.2
+PORTREVISION=	1
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	010
@@ -14,6 +15,8 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	rubygem-activerecord4>=3.2:databases/rubygem-activerecord4 \
 		rubygem-flipper010>=${PORTVERSION}:devel/rubygem-flipper010
+
+PORTSCOUT=	limit:^0\.10\.
 
 CONFLICTS_INSTALL=	rubygem-flipper-active_record
 

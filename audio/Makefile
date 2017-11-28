@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 454446 2017-11-18 15:43:45Z riggs $
+# $FreeBSD: head/audio/Makefile 454934 2017-11-27 06:49:04Z yuri $
 #
 
     COMMENT = Audio tools
@@ -753,6 +753,7 @@
     SUBDIR += solfege
     SUBDIR += sonata
     SUBDIR += sonic-visualiser
+    SUBDIR += sorcer-lv2
     SUBDIR += sound-juicer
     SUBDIR += soundconverter
     SUBDIR += soundgrab

@@ -1,8 +1,8 @@
 # Created by: Nikolay Dachev <freebsd@dacehv.info>
-# $FreeBSD: head/devel/py-tabulate/Makefile 453403 2017-11-03 13:13:24Z skreuzer $
+# $FreeBSD: head/devel/py-tabulate/Makefile 454956 2017-11-27 14:08:50Z skreuzer $
 
 PORTNAME=	tabulate
-PORTVERSION=	0.8.1
+PORTVERSION=	0.8.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

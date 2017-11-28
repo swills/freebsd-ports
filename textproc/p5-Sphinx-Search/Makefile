@@ -1,8 +1,8 @@
 # Created by: Vivek Khera <vivek@khera.org>
-# $FreeBSD: head/textproc/p5-Sphinx-Search/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Sphinx-Search/Makefile 454840 2017-11-24 19:36:47Z sunpoet $
 
 PORTNAME=	Sphinx-Search
-PORTVERSION=	0.29
+PORTVERSION=	0.30
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:JJSCHUTZ
@@ -21,6 +21,7 @@ BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor \
 		p5-Path-Class>=0:devel/p5-Path-Class
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

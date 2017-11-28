@@ -1,9 +1,9 @@
 # Created by: Tomasz Paszkowski <ns88@k.pl>
-# $FreeBSD: head/mail/ssmtp/Makefile 439180 2017-04-22 15:42:17Z adamw $
+# $FreeBSD: head/mail/ssmtp/Makefile 454801 2017-11-23 21:32:48Z lme $
 
 PORTNAME=	ssmtp
 PORTVERSION=	2.64
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail ipv6
 MASTER_SITES=	DEBIAN_POOL
 DISTFILES=	${PORTNAME}_${PORTVERSION}.orig${EXTRACT_SUFX}

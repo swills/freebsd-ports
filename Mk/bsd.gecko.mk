@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 454677 2017-11-22 06:28:56Z jbeich $
+# $FreeBSD: head/Mk/bsd.gecko.mk 455039 2017-11-28 12:57:57Z jbeich $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -125,7 +125,6 @@ LLD_UNSAFE=	yes
 
 MOZILLA_SUFX?=	none
 MOZSRC?=	${WRKSRC}
-WRKSRC?=	${WRKDIR}/mozilla
 PLISTF?=	${WRKDIR}/plist_files
 
 MOZ_OBJDIR?=	${WRKSRC}/obj-${ARCH:C/amd64/x86_64/}-unknown-${OPSYS:tl}${OSREL}
@@ -148,10 +147,12 @@ MOZ_PKGCONFIG_FILES?=	${MOZILLA}-gtkmozembed ${MOZILLA}-js \
 ALL_TARGET?=	build
 
 MOZ_EXPORT+=	${CONFIGURE_ENV} \
+				RUSTFLAGS="${RUSTFLAGS}" \
 				PERL="${PERL}"
 MOZ_OPTIONS+=	--prefix="${PREFIX}"
 MOZ_MK_OPTIONS+=MOZ_OBJDIR="${MOZ_OBJDIR}"
 
+RUSTFLAGS+=		${CFLAGS:M-march=*:S/-march=/-C target-cpu=/}
 LDFLAGS+=		-Wl,--as-needed
 
 .if ${MOZILLA_VER:R:R} < 55 && ${OPSYS} == FreeBSD && ${OSVERSION} < 1200032
@@ -396,7 +397,7 @@ MOZ_OPTIONS+=	--enable-debug --disable-release
 STRIP=	# ports/184285
 .else
 MOZ_OPTIONS+=	--disable-debug --disable-debug-symbols --enable-release
-. if ${MOZILLA_VER:R:R} >= 56
+. if ${MOZILLA_VER:R:R} >= 56 && (${MACHINE_CPU:Msse2} || ${ARCH:Maarch64})
 MOZ_OPTIONS+=	--enable-rust-simd
 . endif
 .endif

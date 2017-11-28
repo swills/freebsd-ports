@@ -1,8 +1,8 @@
 # Created by: TERAMOTO Masahiro <markun@onohara.to>
-# $FreeBSD: head/textproc/p5-YAML-LibYAML/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-YAML-LibYAML/Makefile 454984 2017-11-27 18:31:58Z joneum $
 
 PORTNAME=	YAML-LibYAML
-PORTVERSION=	0.65
+DISTVERSION=	0.67
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

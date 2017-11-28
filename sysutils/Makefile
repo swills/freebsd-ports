@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 454302 2017-11-16 10:48:48Z tz $
+# $FreeBSD: head/sysutils/Makefile 454914 2017-11-26 18:28:54Z dbaio $
 #
 
     COMMENT = System utilities
@@ -466,6 +466,7 @@
     SUBDIR += hs-ekg-core
     SUBDIR += hs-ekg-json
     SUBDIR += hs-mountpoints
+    SUBDIR += hstr
     SUBDIR += htop
     SUBDIR += httplog
     SUBDIR += hwstat
@@ -935,7 +936,6 @@
     SUBDIR += pydf
     SUBDIR += qchroot
     SUBDIR += qjail
-    SUBDIR += qjail2
     SUBDIR += qjail4
     SUBDIR += qlogtools
     SUBDIR += qpxtool

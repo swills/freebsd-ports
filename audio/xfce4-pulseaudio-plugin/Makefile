@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/audio/xfce4-pulseaudio-plugin/Makefile 451135 2017-10-03 14:43:15Z madpilot $
+# $FreeBSD: head/audio/xfce4-pulseaudio-plugin/Makefile 454955 2017-11-27 13:57:43Z madpilot $
 
 PORTNAME=	xfce4-pulseaudio-plugin
 PORTVERSION=	0.2.5
@@ -17,22 +17,23 @@ LIB_DEPENDS=	libpulse-mainloop-glib.so:audio/pulseaudio \
 		libdbus-glib-1.so:devel/dbus-glib
 RUN_DEPENDS=	pavucontrol>=2.0:audio/pavucontrol
 
-USES=	gettext gmake libtool pkgconfig tar:bzip2 xfce:gtk3
+PORTSCOUT=	limit:^0\.2\.
+
+USES=		gettext gmake libtool pkgconfig tar:bzip2 xfce:gtk3
 GNU_CONFIGURE=	yes
 USE_GNOME=	glib20 gtk30 intltool cairo
 USE_XFCE=	panel
 USE_XORG=	x11
 INSTALLS_ICONS=	yes
-USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 
 CONFIGURE_ARGS=--with-mixer-command=${LOCALBASE}/bin/pavucontrol
 CFLAGS+=	-Wno-return-type
 
-OPTIONS_DEFINE=	KEYBINDER
-OPTIONS_DEFAULT=	KEYBINDER
-KEYBINDER_DESC=	Keyboard shortcuts
-KEYBINDER_LIB_DEPENDS=	libkeybinder-3.0.so:x11/keybinder-gtk3
+OPTIONS_DEFINE=			KEYBINDER
+OPTIONS_DEFAULT=		KEYBINDER
+KEYBINDER_DESC=			Keyboard shortcuts
+KEYBINDER_LIB_DEPENDS=		libkeybinder-3.0.so:x11/keybinder-gtk3
 KEYBINDER_CONFIGURE_ENABLE=	keybinder
 
 .include <bsd.port.mk>

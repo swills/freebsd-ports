@@ -1,5 +1,5 @@
 # Created by: Tony Maher
-# $FreeBSD: head/biology/seqio/Makefile 344538 2014-02-16 11:42:09Z ehaupt $
+# $FreeBSD: head/biology/seqio/Makefile 454906 2017-11-26 09:00:21Z amdmi3 $
 
 PORTNAME=	seqio
 PORTVERSION=	1.2.2
@@ -16,7 +16,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 EXAMPLES=	example1.c example2.c example3.c example4.c seqio.c \
 		seqio.h Makefile
 PROGRAMS=	fmtseq grepseq idxseq typeseq wcseq
-PLIST_FILES+=	${PROGRAMS:S,^,bin/,}
+PLIST_FILES=	${PROGRAMS:S,^,bin/,}
 PORTEXAMPLES=	*
 PORTDOCS=	*
 
@@ -24,8 +24,12 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 
 do-install:
 	${INSTALL_PROGRAM} ${PROGRAMS:S,^,${WRKSRC}/,} ${STAGEDIR}${PREFIX}/bin
+
+do-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${EXAMPLES:S,^,${WRKSRC}/,} ${STAGEDIR}${EXAMPLESDIR}
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}/html
 	${INSTALL_DATA} ${WRKSRC}/bioseq.txt ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/*.doc ${STAGEDIR}${DOCSDIR}

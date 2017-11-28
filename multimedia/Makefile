@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 454648 2017-11-21 18:50:58Z rene $
+# $FreeBSD: head/multimedia/Makefile 454848 2017-11-24 20:32:43Z yuri $
 #
 
     COMMENT = Multimedia software
@@ -28,6 +28,7 @@
     SUBDIR += bombono
     SUBDIR += bsdbktr_tvtune
     SUBDIR += camserv
+    SUBDIR += ccextractor
     SUBDIR += cclive
     SUBDIR += cheese
     SUBDIR += clipgrab
@@ -331,6 +332,7 @@
     SUBDIR += py-moviepy
     SUBDIR += py-openlp
     SUBDIR += py-periscope
+    SUBDIR += py-pretty_midi
     SUBDIR += py-qt4-multimedia
     SUBDIR += py-qt4-phonon
     SUBDIR += py-qt5-multimedia

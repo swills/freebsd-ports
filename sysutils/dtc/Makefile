@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/dtc/Makefile 444320 2017-06-25 19:29:03Z linimon $
+# $FreeBSD: head/sysutils/dtc/Makefile 454916 2017-11-26 19:23:07Z manu $
 
 PORTNAME=	dtc
-PORTVERSION=	1.4.4
+PORTVERSION=	1.4.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
@@ -18,6 +18,6 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	dgibson
 GH_PROJECT=	dtc
 
-MAKE_ARGS+=	PREFIX=${PREFIX}
+MAKE_ARGS+=	PREFIX=${PREFIX} NO_PYTHON=yes
 
 .include <bsd.port.mk>

@@ -1,10 +1,9 @@
-# $FreeBSD: head/deskutils/latte-dock/Makefile 454392 2017-11-17 23:11:07Z adridg $
+# $FreeBSD: head/deskutils/latte-dock/Makefile 454828 2017-11-24 17:53:11Z mat $
 
 PORTNAME=	latte-dock
 DISTVERSION=	0.7.2
 CATEGORIES=	deskutils kde
-MASTER_SITES=	KDE
-MASTER_SITE_SUBDIR=	stable/latte-dock
+MASTER_SITES=	KDE/stable/latte-dock
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Launcher for Qt and Plasma desktops

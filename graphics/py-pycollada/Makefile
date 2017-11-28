@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/py-pycollada/Makefile 434735 2017-02-24 17:16:31Z krion $
+# $FreeBSD: head/graphics/py-pycollada/Makefile 454886 2017-11-25 15:43:34Z tcberner $
 
 PORTNAME=	pycollada
-PORTVERSION=	0.4.1
+DISTVERSION=	0.6
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

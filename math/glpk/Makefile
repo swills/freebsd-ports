@@ -1,8 +1,8 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/math/glpk/Makefile 432908 2017-01-31 09:24:04Z demon $
+# $FreeBSD: head/math/glpk/Makefile 455015 2017-11-28 03:03:52Z yuri $
 
 PORTNAME=	glpk
-PORTVERSION=	4.61
+DISTVERSION=	4.63
 CATEGORIES=	math
 MASTER_SITES=	GNU
 
@@ -16,8 +16,8 @@ LIB_DEPENDS=	libgmp.so:math/gmp
 
 CONFLICTS=	goblin-[0-9]*
 
-GNU_CONFIGURE=	yes
 USES=		gmake libtool localbase
+GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 CFLAGS+=	-trigraphs
 CPPFLAGS+=	-D_LSEEK_DECLARED

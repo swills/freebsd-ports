@@ -1,9 +1,8 @@
 # Created by: Igor Pokrovsky <tiamat@comset.net>
-# $FreeBSD: head/graphics/ayam/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/ayam/Makefile 454884 2017-11-25 14:29:00Z vanilla $
 
 PORTNAME=	ayam
-PORTVERSION=	1.23
-PORTREVISION=	1
+PORTVERSION=	1.24
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/Ayam/${PORTVERSION}
 DISTNAME=	${PORTNAME}${PORTVERSION}.src

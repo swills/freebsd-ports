@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: head/science/orthanc/files/orthanc.in 454856 2017-11-24 23:17:50Z dbaio $
 #
 # PROVIDE: orthanc
 # REQUIRE: LOGIN

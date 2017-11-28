@@ -1,6 +1,7 @@
-# $FreeBSD: head/www/qutebrowser/Makefile 454587 2017-11-21 05:30:19Z novel $
+# $FreeBSD: head/www/qutebrowser/Makefile 454829 2017-11-24 17:56:17Z mat $
 
 PORTNAME=	qutebrowser
+DISTVERSIONPREFIX=	v
 DISTVERSION=	1.0.3
 PORTREVISION=	1
 CATEGORIES=	www
@@ -26,6 +27,5 @@ USE_PYQT=	core opengl printsupport sql webkit webkitwidgets widgets qml
 USE_QT5=	sql-sqlite3
 USE_PYTHON=	distutils autoplist
 USE_GITHUB=	yes
-GH_TAGNAME=	v${DISTVERSION}
 
 .include <bsd.port.mk>

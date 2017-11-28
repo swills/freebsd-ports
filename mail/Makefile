@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 454648 2017-11-21 18:50:58Z rene $
+# $FreeBSD: head/mail/Makefile 454858 2017-11-24 23:45:17Z brnrd $
 #
 
     COMMENT = Electronic mail utilities
@@ -267,6 +267,7 @@
     SUBDIR += muttils
     SUBDIR += nbsmtp
     SUBDIR += neomutt
+    SUBDIR += nextcloud-mail
     SUBDIR += nmh
     SUBDIR += nmzmail
     SUBDIR += noattach

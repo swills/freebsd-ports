@@ -1,9 +1,9 @@
 # Created by: oyvindmo@initio.no
-# $FreeBSD: head/audio/ripit/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/ripit/Makefile 454860 2017-11-25 01:25:36Z woodsb02 $
 
 PORTNAME=	ripit
 PORTVERSION=	3.9.0
-PORTREVISION?=	1
+PORTREVISION?=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.suwald.com/ripit/
 

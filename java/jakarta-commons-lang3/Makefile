@@ -1,10 +1,9 @@
-# $FreeBSD: head/java/jakarta-commons-lang3/Makefile 450944 2017-09-30 04:39:29Z truckman $
+# $FreeBSD: head/java/jakarta-commons-lang3/Makefile 454828 2017-11-24 17:53:11Z mat $
 
 PORTNAME=	commons-lang3
 PORTVERSION=	3.4
 CATEGORIES=	java devel
-MASTER_SITES=	APACHE_COMMONS_SOURCE
-MASTER_SITE_SUBDIR=	lang
+MASTER_SITES=	APACHE_COMMONS_SOURCE/lang
 PKGNAMEPREFIX=	jakarta-
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 

@@ -1,8 +1,8 @@
 # Created by: Jin-Shan Tseng <tjs@cdpa.nsysu.edu.tw>
-# $FreeBSD: head/net/p5-Net-SIP/Makefile 453776 2017-11-08 23:30:12Z sunpoet $
+# $FreeBSD: head/net/p5-Net-SIP/Makefile 454789 2017-11-23 19:09:31Z sunpoet $
 
 PORTNAME=	Net-SIP
-PORTVERSION=	0.811
+PORTVERSION=	0.812
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

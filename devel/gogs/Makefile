@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/gogs/Makefile 454653 2017-11-21 20:47:32Z robak $
+# $FreeBSD: head/devel/gogs/Makefile 454805 2017-11-23 22:10:15Z dbaio $
 
 PORTNAME=	gogs
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.11.33
+DISTVERSION=	0.11.34
 CATEGORIES=	devel www
 
 MAINTAINER=	dg@syrec.org

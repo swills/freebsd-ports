@@ -1,8 +1,8 @@
 # Created by: Aaron Dalton <aaron@daltons.ca>
-# $FreeBSD: head/devel/p5-Data-Table/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Data-Table/Makefile 454778 2017-11-23 19:08:34Z sunpoet $
 
 PORTNAME=	Data-Table
-PORTVERSION=	1.75
+PORTVERSION=	1.76
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

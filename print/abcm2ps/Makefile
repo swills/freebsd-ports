@@ -1,8 +1,9 @@
 # Created by: arved
-# $FreeBSD: head/print/abcm2ps/Makefile 435694 2017-03-08 16:01:51Z araujo $
+# $FreeBSD: head/print/abcm2ps/Makefile 454932 2017-11-27 05:24:53Z araujo $
 
 PORTNAME=	abcm2ps
 PORTVERSION=	8.13.7
+PORTREVISION=	1
 CATEGORIES=	print audio
 MASTER_SITES=	http://moinejf.free.fr/
 

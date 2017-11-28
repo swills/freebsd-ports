@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/mod_wsgi4/Makefile 449502 2017-09-09 19:05:09Z dbaio $
+# $FreeBSD: head/www/mod_wsgi4/Makefile 454909 2017-11-26 12:09:29Z joneum $
 
 PORTNAME=	mod_wsgi
-PORTVERSION=	4.5.18
+DISTVERSION=	4.5.22
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}
@@ -14,8 +14,8 @@ LICENSE=	APACHE20
 
 CONFLICTS_INSTALL=${PKGNAMEPREFIX}mod_wsgi3.* mod_wsgi3.*
 
-USE_APACHE=	22+
 USES=		gettext python
+USE_APACHE=	22+
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-apxs="${APXS}" --with-python="${PYTHON_CMD}"

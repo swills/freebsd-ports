@@ -1,8 +1,8 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/www/stagit/Makefile 454498 2017-11-19 19:07:44Z tobik $
+# $FreeBSD: head/www/stagit/Makefile 455035 2017-11-28 11:47:10Z tobik $
 
 PORTNAME=	stagit
-PORTVERSION=	0.7.1
+PORTVERSION=	0.7.2
 CATEGORIES=	www
 MASTER_SITES=	http://dl.2f30.org/releases/
 

@@ -1,8 +1,8 @@
 # Created by: Takefu
-# $FreeBSD: head/japanese/wordpress/Makefile 453318 2017-11-01 21:24:08Z joneum $
+# $FreeBSD: head/japanese/wordpress/Makefile 454827 2017-11-24 17:26:47Z joneum $
 
 PORTNAME=	wordpress
-PORTVERSION=	4.8.3
+PORTVERSION=	4.9
 DISTVERSIONSUFFIX=	-ja
 CATEGORIES=	japanese www
 MASTER_SITES=	http://ja.wordpress.org/

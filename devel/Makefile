@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 454691 2017-11-22 14:55:05Z tz $
+# $FreeBSD: head/devel/Makefile 455028 2017-11-28 10:15:46Z rodrigc $
 #
 
     COMMENT = Development utilities
@@ -201,6 +201,7 @@
     SUBDIR += bison
     SUBDIR += bisoncpp
     SUBDIR += blame
+    SUBDIR += blitz
     SUBDIR += bmake
     SUBDIR += bmkdep
     SUBDIR += bnf
@@ -225,12 +226,6 @@
     SUBDIR += bugzilla44
     SUBDIR += bugzilla50
     SUBDIR += build
-    SUBDIR += buildbot
-    SUBDIR += buildbot-console-view
-    SUBDIR += buildbot-pkg
-    SUBDIR += buildbot-waterfall-view
-    SUBDIR += buildbot-worker
-    SUBDIR += buildbot-www
     SUBDIR += buildtool
     SUBDIR += buildtool-doc
     SUBDIR += bullet
@@ -4254,6 +4249,7 @@
     SUBDIR += py-aspyct
     SUBDIR += py-astor
     SUBDIR += py-astroid
+    SUBDIR += py-asttokens
     SUBDIR += py-async_timeout
     SUBDIR += py-asyncio
     SUBDIR += py-atomiclong
@@ -4284,7 +4280,13 @@
     SUBDIR += py-boto
     SUBDIR += py-botocore
     SUBDIR += py-bsd
+    SUBDIR += py-buildbot
+    SUBDIR += py-buildbot-console-view
     SUBDIR += py-buildbot-grid-view
+    SUBDIR += py-buildbot-pkg
+    SUBDIR += py-buildbot-waterfall-view
+    SUBDIR += py-buildbot-worker
+    SUBDIR += py-buildbot-www
     SUBDIR += py-cached-property
     SUBDIR += py-cachetools
     SUBDIR += py-calendar
@@ -5080,6 +5082,7 @@
     SUBDIR += py27-setuptools
     SUBDIR += py3-Jinja2
     SUBDIR += py3-apipkg
+    SUBDIR += py3-asttokens
     SUBDIR += py3-babel
     SUBDIR += py3-cffi
     SUBDIR += py3-click
@@ -5158,6 +5161,7 @@
     SUBDIR += py_static_check
     SUBDIR += pybind11
     SUBDIR += pybugz
+    SUBDIR += pycanberra
     SUBDIR += pycharm-ce
     SUBDIR += pychecker
     SUBDIR += pycount

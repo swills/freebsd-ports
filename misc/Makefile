@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 454664 2017-11-22 06:01:27Z yuri $
+# $FreeBSD: head/misc/Makefile 455016 2017-11-28 03:06:58Z yuri $
 #
 
     COMMENT = Miscellaneous utilities
@@ -97,6 +97,7 @@
     SUBDIR += fortune-mod-bible
     SUBDIR += fortune-mod-bofh
     SUBDIR += fortune-mod-epictetus
+    SUBDIR += fortune-mod-freebsd-classic
     SUBDIR += fortune-mod-futurama
     SUBDIR += fortune-mod-psalms
     SUBDIR += fortuneit
@@ -376,6 +377,7 @@
     SUBDIR += ptsort
     SUBDIR += py-YABT
     SUBDIR += py-cinder
+    SUBDIR += py-colorbrewer
     SUBDIR += py-crudini
     SUBDIR += py-fuzzy
     SUBDIR += py-glance

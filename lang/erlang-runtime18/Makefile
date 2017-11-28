@@ -1,8 +1,8 @@
 # Created by: ruslan@shevchenko.kiev.ua
-# $FreeBSD: head/lang/erlang-runtime18/Makefile 454315 2017-11-16 17:04:36Z olgeni $
+# $FreeBSD: head/lang/erlang-runtime18/Makefile 454771 2017-11-23 19:07:30Z olgeni $
 
 PORTNAME=	erlang
-PORTVERSION=	18.3.4.6
+PORTVERSION=	18.3.4.7
 CATEGORIES=	lang parallel java
 MASTER_SITES=	http://www.erlang.org/download/:erlangorg		\
 		http://erlang.stacken.kth.se/download/:erlangorg	\
@@ -19,7 +19,7 @@ PATCH_SITES=	http://olgeni.olgeni.com/~olgeni/distfiles/ \
 PATCHFILES=	patch-otp-18.3.1 patch-otp-18.3.2 patch-otp-18.3.3 \
 		patch-otp-18.3.4 patch-otp-18.3.4.1 patch-otp-18.3.4.2 \
 		patch-otp-18.3.4.3 patch-otp-18.3.4.4 patch-otp-18.3.4.5 \
-		patch-otp-18.3.4.6
+		patch-otp-18.3.4.6 patch-otp-18.3.4.7
 
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Functional programming language from Ericsson
@@ -64,7 +64,7 @@ APP_UPGRADE=	erts               7.3  7.3.1.4 \
 		lib/inets          6.2  6.2.4.1 \
 		lib/mnesia      4.13.3   4.13.4 \
 		lib/ssh          4.2.2  4.2.2.4 \
-		lib/ssl            7.3  7.3.3.1
+		lib/ssl            7.3  7.3.3.2
 
 .include <bsd.port.options.mk>
 

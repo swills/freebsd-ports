@@ -1,8 +1,8 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/lang/sagittarius-scheme/Makefile 454590 2017-11-21 08:36:26Z mat $
+# $FreeBSD: head/lang/sagittarius-scheme/Makefile 454764 2017-11-23 14:11:32Z ashish $
 
 PORTNAME=	sagittarius
-PORTVERSION=	0.8.7
+PORTVERSION=	0.8.8
 CATEGORIES=	lang
 MASTER_SITES=	https://bitbucket.org/ktakashi/sagittarius-scheme/downloads/ \
 		LOCAL/ashish
@@ -45,7 +45,7 @@ PLIST_SUB+=	PLIST_ARCH=${PLIST_ARCH}
 
 pre-configure:
 	@${CC} ${CFLAGS} -o ${WRKDIR}/cpuid ${FILESDIR}/cpuid.c
-	@${REINPLACE_CMD} -e 's,%%CPUID%%,${WRKDIR}/cpuid,' ${WRKSRC}/cmake/FindSSE.cmake
+	@${REINPLACE_CMD} -e 's,cpuid,${WRKDIR}/cpuid,' ${WRKSRC}/cmake/FindSSE.cmake
 
 post-patch-ODBC-off:
 	@${REINPLACE_CMD} -e '/odbc odbc/d' ${WRKSRC}/ext/CMakeLists.txt

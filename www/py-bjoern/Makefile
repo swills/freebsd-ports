@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau <duchateau.olivier@gmail.com>
-# $FreeBSD: head/www/py-bjoern/Makefile 454717 2017-11-22 23:35:09Z sunpoet $
+# $FreeBSD: head/www/py-bjoern/Makefile 454791 2017-11-23 19:09:40Z sunpoet $
 
 PORTNAME=	bjoern
-PORTVERSION=	2.0.3
+PORTVERSION=	2.0.4
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

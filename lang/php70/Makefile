@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/php70/Makefile 454753 2017-11-23 11:38:59Z tz $
+# $FreeBSD: head/lang/php70/Makefile 454993 2017-11-27 21:38:06Z gerald $
 
 PORTNAME=	php70
-PORTVERSION=	7.0.25
+PORTVERSION=	7.0.26
 PORTREVISION?=	0
 CATEGORIES?=	lang devel www
 MASTER_SITES=	PHP/distributions
@@ -52,7 +52,6 @@ CLI_DESC=	Build CLI version
 CGI_DESC=	Build CGI version
 FPM_DESC=	Build FPM version
 EMBED_DESC=	Build embedded library
-DEBUG_DESC=	Enable debug
 PHPDBG_DESC=	Interactive PHP debugger
 DTRACE_DESC=	Enable DTrace support
 MAILHEAD_DESC=	Enable mail header patch

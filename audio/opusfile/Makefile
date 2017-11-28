@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/opusfile/Makefile 448151 2017-08-17 16:59:03Z swills $
+# $FreeBSD: head/audio/opusfile/Makefile 455002 2017-11-27 23:46:57Z dbaio $
 
 PORTNAME=	opusfile
-PORTVERSION=	0.9
+PORTVERSION=	0.10
 CATEGORIES=	audio
 MASTER_SITES=	http://downloads.xiph.org/releases/opus/ \
 		MOZILLA/opus
