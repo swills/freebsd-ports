@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/py-google-compute-engine/Makefile 452169 2017-10-15 22:11:30Z ultima $
+# $FreeBSD: head/sysutils/py-google-compute-engine/Makefile 455073 2017-11-28 20:24:51Z ultima $
 
 PORTNAME=	google-compute-engine
-PORTVERSION=	2.4.1
-PORTREVISION=	2
+PORTVERSION=	2.6.1
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -33,14 +32,8 @@ NO_ARCH=	yes
 SUB_LIST=	PYTHON_CMD="${PYTHON_CMD}"
 REINPLACE_ARGS=	-i ''
 
-post-patch:
-	@${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|g' \
-		${WRKSRC}/google_compute_engine/accounts/accounts_utils.py \
-		${WRKSRC}/google_compute_engine/boto/boto_config.py \
-		${WRKSRC}/google_compute_engine/boto/compute_auth.py \
-		${WRKSRC}/google_compute_engine/config_manager.py \
-		${WRKSRC}/google_compute_engine/instance_setup/instance_config.py \
-		${WRKSRC}/google_compute_engine/metadata_scripts/script_executor.py \
-		${WRKSRC}/google_compute_engine/network_setup/network_setup.py
+post-install:
+	${INSTALL_DATA} ${FILESDIR}/instance_configs.cfg.distro.sample \
+		${STAGEDIR}${PREFIX}/etc/instance_configs.cfg.distro.sample
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/py-asttokens/Makefile 454942 2017-11-27 11:28:54Z amdmi3 $
+# $FreeBSD: head/devel/py-asttokens/Makefile 455043 2017-11-28 14:54:35Z amdmi3 $
 
 PORTNAME=	asttokens
-PORTVERSION=	1.1.6
+PORTVERSION=	1.1.7
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

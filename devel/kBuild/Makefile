@@ -1,12 +1,12 @@
 # Created by: Bruce Simpson
-# $FreeBSD: head/devel/kBuild/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/kBuild/Makefile 455084 2017-11-28 23:02:08Z jkim $
 
 PORTNAME=	kBuild
 DISTVERSION=	${KBUILD_VERSION}
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	devel
 MASTER_SITES=	LOCAL/jkim
-DISTNAME=	${PORTNAME}-${DISTVERSION}r3050-src
+DISTNAME=	${PORTNAME}-${DISTVERSION}r3127-src
 
 MAINTAINER=	vbox@FreeBSD.org
 COMMENT=	Makefile framework

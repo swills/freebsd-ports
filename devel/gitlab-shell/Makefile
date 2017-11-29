@@ -1,11 +1,13 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/devel/gitlab-shell/Makefile 452772 2017-10-24 14:20:55Z tz $
+# $FreeBSD: head/devel/gitlab-shell/Makefile 455055 2017-11-28 16:11:43Z tz $
 
 PORTNAME=	gitlab-shell
-PORTVERSION=	5.3.1
+PORTVERSION=	5.9.3
 CATEGORIES=	devel
 MASTER_SITES=	https://gitlab.com/gitlab-org/${PORTNAME}/repository/archive.tar.gz?ref=v${PORTVERSION}&dummy=/
 DISTNAME=	${PORTNAME}-v${PORTVERSION}
+
+LICENSE=	MIT
 
 MAINTAINER=	tz@FreeBSD.org
 COMMENT=	GitLab Shell handles git commands for GitLab
@@ -15,9 +17,6 @@ BUILD_DEPENDS=	gem:devel/ruby-gems \
 
 USERS=		git
 GROUPS=		git
-
-NO_BUILD=	yes
-NO_ARCH=	yes
 
 post-extract:
 	@${MV} ${WRKDIR}/${DISTNAME}-* ${WRKDIR}/${DISTNAME}

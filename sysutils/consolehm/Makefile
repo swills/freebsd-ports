@@ -1,5 +1,5 @@
 # Created by: Mike Muir <mmuir@es.co.nz>
-# $FreeBSD: head/sysutils/consolehm/Makefile 393892 2015-08-10 19:28:57Z amdmi3 $
+# $FreeBSD: head/sysutils/consolehm/Makefile 455069 2017-11-28 18:58:57Z mi $
 
 PORTNAME=	consolehm
 PORTVERSION=	1.31
@@ -16,6 +16,7 @@ ONLY_FOR_ARCHS_REASON=	uses x86-only assembly from machine/cpufunc.h
 USES=		uidfix
 GNU_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/consolehm/consolehm
+MAKE_ARGS+=	-e
 
 PLIST_FILES=	bin/chm man/man8/chm.8.gz
 

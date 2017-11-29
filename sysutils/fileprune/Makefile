@@ -1,14 +1,16 @@
 # Created by: dds
-# $FreeBSD: head/sysutils/fileprune/Makefile 359395 2014-06-26 16:43:38Z vanilla $
+# $FreeBSD: head/sysutils/fileprune/Makefile 455096 2017-11-29 09:00:18Z amdmi3 $
 
 PORTNAME=	fileprune
 PORTVERSION=	1.9
 CATEGORIES=	sysutils
-MASTER_SITES=	http://www.spinellis.gr/sw/unix/fileprune/ \
-		http://www.dmst.aueb.gr/dds/sw/unix/fileprune/
+MASTER_SITES=	https://www.spinellis.gr/sw/unix/fileprune/ \
+		https://www2.dmst.aueb.gr/dds/sw/unix/fileprune/
 
 MAINTAINER=	dds@FreeBSD.org
 COMMENT=	Prune a file set according to a given age distribution
+
+LICENSE=	MIT
 
 PLIST_FILES=	bin/fileprune man/man1/fileprune.1.gz
 

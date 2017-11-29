@@ -1,8 +1,8 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/py-Jinja2/Makefile 437710 2017-04-04 07:57:09Z sunpoet $
+# $FreeBSD: head/devel/py-Jinja2/Makefile 455080 2017-11-28 21:42:54Z yuri $
 
 PORTNAME=	Jinja2
-PORTVERSION=	2.9.5
+PORTVERSION=	2.10
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

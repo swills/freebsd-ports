@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 455028 2017-11-28 10:15:46Z rodrigc $
+# $FreeBSD: head/devel/Makefile 455067 2017-11-28 17:28:04Z dvl $
 #
 
     COMMENT = Development utilities
@@ -4594,6 +4594,7 @@
     SUBDIR += py-mygpoclient
     SUBDIR += py-mypy
     SUBDIR += py-nagioscheck
+    SUBDIR += py-naiveBayesClassifier
     SUBDIR += py-natsort
     SUBDIR += py-natural
     SUBDIR += py-nbconvert

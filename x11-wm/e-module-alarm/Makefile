@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/x11-wm/e-module-alarm/Makefile 446375 2017-07-22 09:01:02Z amdmi3 $
+# $FreeBSD: head/x11-wm/e-module-alarm/Makefile 455090 2017-11-29 01:08:54Z linimon $
 
 PORTNAME=	e-module-alarm
 PORTVERSION=	20140911
@@ -18,6 +18,7 @@ BUILD_DEPENDS=	enlightenment:x11-wm/enlightenment
 RUN_DEPENDS=	enlightenment:x11-wm/enlightenment
 
 BROKEN_armv6=		dumps core: gmake: Makefile:899: Abort trap (core dumped)
+#BROKEN_armv7=		dumps core: gmake: Makefile:899: Abort trap (core dumped)
 
 GNU_CONFIGURE=	yes
 USES=		gmake libtool pkgconfig tar:xz

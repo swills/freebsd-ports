@@ -1,5 +1,5 @@
 
-# $FreeBSD: head/net/Makefile 454655 2017-11-21 21:32:19Z adamw $
+# $FreeBSD: head/net/Makefile 455044 2017-11-28 15:16:38Z tz $
 #
 
     COMMENT = Networking tools
@@ -1228,6 +1228,7 @@
     SUBDIR += rubygem-omniauth-github-discourse
     SUBDIR += rubygem-omniauth-github11
     SUBDIR += rubygem-omniauth-google-oauth2
+    SUBDIR += rubygem-omniauth-kerberos
     SUBDIR += rubygem-omniauth-oauth
     SUBDIR += rubygem-omniauth-oauth2
     SUBDIR += rubygem-omniauth-openid

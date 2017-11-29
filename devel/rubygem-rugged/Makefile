@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-rugged/Makefile 445035 2017-07-04 18:37:55Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rugged/Makefile 455062 2017-11-28 16:39:23Z tz $
 
 PORTNAME=	rugged
-PORTVERSION=	0.25.1.1
+PORTVERSION=	0.26.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -14,7 +14,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	cmake:devel/cmake \
 		libgit2>=${PORTVERSION:R}:devel/libgit2
-LIB_DEPENDS=	libgit2.so:devel/libgit2
+LIB_DEPENDS=	libgit2.so:devel/libgit2 \
+		libgmp.so:math/gmp \
+		libunwind.so:devel/libunwind
 
 CONFIGURE_ARGS=	--use-system-libraries
 USE_RUBY=	yes
