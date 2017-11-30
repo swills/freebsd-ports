@@ -199,7 +199,6 @@ RUN_DEPENDS=	git>=2.14.1:devel/git \
 
 PGSQL_RUN_DEPENDS=	rubygem-pg>=0.18.2:databases/rubygem-pg \
 	rubygem-peek-pg>=1.3.0:databases/rubygem-peek-pg
-PGSQL_VARS=		USES+=pgsql WANT_PGSQL+=server WANT_PGSQL+=contrib
 MYSQL_RUN_DEPENDS=	rubygem-mysql2>=0.4.5:databases/rubygem-mysql2 \
 	rubygem-peek-mysql2>=1.1.0:databases/rubygem-peek-mysql2
 
@@ -255,5 +254,4 @@ do-install:
 	(cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/www/${PORTNAME})
 
 .include <bsd.port.mk>
-.include <bsd.port.options.mk>
 
