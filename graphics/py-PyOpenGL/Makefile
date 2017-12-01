@@ -1,5 +1,5 @@
 # Created by: Randall Hopper <aa8vb@ipass.net>
-# $FreeBSD: head/graphics/py-PyOpenGL/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/py-PyOpenGL/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	PyOpenGL
 PORTVERSION=	3.1.0
@@ -13,7 +13,7 @@ MAINTAINER=	python@FreeBSD.org
 COMMENT=	OpenGL (and related library) interface for Python
 
 BUILD_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow
+		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 OPTIONS_DEFINE=	TKINTER
@@ -24,8 +24,8 @@ USES=		dos2unix python
 USE_GL=		glut
 USE_PYTHON=	distutils autoplist
 
-TKINTER_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter
-TKINTER_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter
+TKINTER_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${FLAVOR}
+TKINTER_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${FLAVOR}
 
 post-patch:
 	@${FIND} ${WRKSRC} -name '*.[ch]' | ${XARGS} ${REINPLACE_CMD} -e \

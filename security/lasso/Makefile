@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/security/lasso/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/security/lasso/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	lasso
 PORTVERSION=	2.4.1
@@ -51,9 +51,9 @@ PLIST_SUB+=	PHP5="@comment "
 .if ${PORT_OPTIONS:MPYTHON}
 CONFIGURE_ARGS+=	--enable-python
 PLIST_SUB+=	PYTHON=""
-USES+=		python
+USES+=		python:2.7
 .else
-USES+=		python:build
+USES+=		python:2.7,build
 CONFIGURE_ARGS+=	--disable-python
 PLIST_SUB+=	PYTHON="@comment "
 .endif

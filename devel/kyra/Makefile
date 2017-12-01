@@ -1,5 +1,5 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/devel/kyra/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/devel/kyra/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	kyra
 PORTVERSION=	2.1.3
@@ -28,6 +28,7 @@ MAKE_ARGS=	CC="${CC}" CXX="${CXX}" LD="${CXX}" \
 
 BROKEN_aarch64=		Fails to compile: error: invalid output constraint =A in asm
 BROKEN_armv6=		Fails to compile: error: invalid output constraint =A in asm
+BROKEN_armv7=		Fails to compile: error: invalid output constraint =A in asm
 
 do-install:
 .for i in encoder spriteed

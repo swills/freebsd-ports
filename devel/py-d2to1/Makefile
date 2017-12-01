@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-d2to1/Makefile 436290 2017-03-16 19:23:48Z antoine $
+# $FreeBSD: head/devel/py-d2to1/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	d2to1
 DISTVERSION=	0.2.12.post1
@@ -11,8 +11,8 @@ COMMENT=	Distutils2-like setup.cfg files with setuptools setup.py
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools>0:devel/${PYTHON_PKGNAMEPREFIX}setuptools
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools>0:devel/py-setuptools@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR}
 
 USES=		python
 USE_GITHUB=	yes

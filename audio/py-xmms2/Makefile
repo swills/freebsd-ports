@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/audio/py-xmms2/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/py-xmms2/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTREVISION=	5
 
@@ -9,12 +9,13 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	madpilot@FreeBSD.org
 COMMENT=	Python Bindings for XMMS2
 
-BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/Pyrex/__init__.py:devel/pyrex
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyrex>0:devel/pyrex@${FLAVOR}
 LIB_DEPENDS+=	libxmmsclient.so:audio/xmms2
 
 MASTERDIR=	${.CURDIR}/../xmms2
 
-USES=		python
+USES=		python:2.7
+USE_PYTHON=	flavors
 
 PLIST=		${.CURDIR}/pkg-plist
 

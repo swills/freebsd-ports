@@ -1,5 +1,5 @@
 # Created by: Bruce M. Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/devel/k8048/Makefile 434867 2017-02-26 12:56:41Z linimon $
+# $FreeBSD: head/devel/k8048/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	k8048
 PORTVERSION=	3.05
@@ -17,6 +17,7 @@ USES=		gmake
 ALL_TARGET=	build
 
 BROKEN_armv6=	fails to compile: invokes x86 asm
+BROKEN_armv7=	fails to compile: invokes x86 asm
 
 PLIST_FILES=	bin/${PORTNAME} bin/kio ${BIN_SYMLINKS}
 

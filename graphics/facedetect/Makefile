@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/graphics/facedetect/Makefile 446258 2017-07-20 11:53:59Z ehaupt $
+# $FreeBSD: head/graphics/facedetect/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	facedetect
 PORTVERSION=	0.1
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/cv.py:graphics/py-opencv
 
-USES=		python:run shebangfix
+USES=		python:2.7,run shebangfix
 USE_GITHUB=	yes
 NO_BUILD=	yes
 NO_ARCH=	yes

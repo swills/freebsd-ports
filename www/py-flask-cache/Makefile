@@ -1,5 +1,5 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/www/py-flask-cache/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-flask-cache/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	Flask-Cache
 PORTVERSION=	0.13.1
@@ -13,7 +13,7 @@ COMMENT=	Cache support for your Flask application
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.8:www/py-flask
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.8:www/py-flask@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

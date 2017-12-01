@@ -1,5 +1,5 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-livesettings/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-django-livesettings/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-livesettings
 DISTVERSION=	1.4-16
@@ -13,8 +13,8 @@ COMMENT=	Configure Django project settings via admin interface
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_hg>=0.4:devel/py-setuptools_hg
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_hg>=0.4:devel/py-setuptools_hg@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18@${FLAVOR}
 
 USES=		python:2
 USE_PYTHON=	distutils autoplist

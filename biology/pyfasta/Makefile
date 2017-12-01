@@ -1,11 +1,12 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/biology/pyfasta/Makefile 371171 2014-10-19 07:38:11Z mva $
+# $FreeBSD: head/biology/pyfasta/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyfasta
 PORTVERSION=	0.5.2
 PORTREVISION=	1
 CATEGORIES=	biology python
 MASTER_SITES=	CHEESESHOP
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Fast, memory-efficient, pythonic access to fasta sequence files

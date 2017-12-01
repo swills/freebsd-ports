@@ -1,5 +1,5 @@
 # Created by: michael johnson <ahze@ahze.net>
-# $FreeBSD: head/devel/py-xdg/Makefile 433711 2017-02-09 05:30:11Z fluffy $
+# $FreeBSD: head/devel/py-xdg/Makefile 455210 2017-11-30 15:50:30Z mat $
 #   $MCom: ports/devel/py-xdg/Makefile,v 1.4 2007/09/10 05:35:05 mezz Exp $
 
 PORTNAME=	xdg
@@ -16,7 +16,7 @@ COMMENT=	Python library to access freedesktop.org standards
 LICENSE=	LGPL20
 
 NO_ARCH=	yes
-USES=		python:2
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 post-patch:

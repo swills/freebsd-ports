@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/devel/py-biplist/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-biplist/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	biplist
 PORTVERSION=	0.9
@@ -12,9 +12,9 @@ COMMENT=	Library for reading/writing binary plists
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose \
-		${PYTHON_PKGNAMEPREFIX}coverage>=0:devel/py-coverage
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}coverage>=0:devel/py-coverage@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
 TEST_DEPENDS:=	${RUN_DEPENDS}
 
 USES=		python

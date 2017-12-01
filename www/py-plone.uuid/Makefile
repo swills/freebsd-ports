@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.uuid/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-plone.uuid/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	plone.uuid
 PORTVERSION=	1.0.3
@@ -13,13 +13,13 @@ COMMENT=	UUIDs for content items
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.browserpage>=0:devel/py-zope.browserpage \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface \
-		${PYTHON_PKGNAMEPREFIX}zope.lifecycleevent>=0:devel/py-zope.lifecycleevent \
-		${PYTHON_PKGNAMEPREFIX}zope.publisher>=0:devel/py-zope.publisher
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.browserpage>=0:devel/py-zope.browserpage@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.lifecycleevent>=0:devel/py-zope.lifecycleevent@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.publisher>=0:devel/py-zope.publisher@${FLAVOR}
 
 NO_ARCH=	yes
-USES=		python zip
+USES=		python:2.7 zip
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

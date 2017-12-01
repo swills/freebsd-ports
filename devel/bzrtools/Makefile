@@ -1,5 +1,5 @@
 # Created by: Ulf Lilleengen
-# $FreeBSD: head/devel/bzrtools/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/bzrtools/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	bzrtools
 PORTVERSION=	2.6.0
@@ -19,7 +19,7 @@ GRAPHVIZ_DESC=	graphviz for graph-ancestry
 RSYNC_DESC=	rsync for rspush
 
 WRKSRC=		${WRKDIR}/bzrtools
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGNAME=	BzrTools
 

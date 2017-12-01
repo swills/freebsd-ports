@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/py-ciphon/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-ciphon/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ciphon
 PORTVERSION=	0.4.0
@@ -12,7 +12,7 @@ COMMENT=	Module for python that adds cpan-like functionality
 
 LICENSE=	BSD2CLAUSE
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 post-install:

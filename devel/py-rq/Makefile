@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/py-rq/Makefile 447084 2017-08-02 01:32:29Z skreuzer $
+# $FreeBSD: head/devel/py-rq/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rq
 PORTVERSION=	0.8.1
@@ -12,8 +12,8 @@ COMMENT=	Simple library for creating background jobs, and processing them
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}redis>=2.7:databases/py-redis \
-		${PYTHON_PKGNAMEPREFIX}click>=4.1:devel/py-click
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}redis>=2.7:databases/py-redis@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}click>=4.1:devel/py-click@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

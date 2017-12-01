@@ -1,5 +1,5 @@
 # Created by: KIKUCHI Koichiro <koichiro@rworks.jp>
-# $FreeBSD: head/net-mgmt/wmi-client/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/net-mgmt/wmi-client/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	wmi
 PORTVERSION=	1.3.16
@@ -29,7 +29,7 @@ PROGS=	bin/wmic bin/winexe
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MPYTHON}
-USES+=		python
+USES+=		python:2.7
 MAKE_ARGS+=	PYTHON="${PYTHON_CMD}" PY_LIBDIR="${PYTHONPREFIX_SITELIBDIR}"
 PLIST_SUB+=	PYTHON=""
 .else

@@ -1,5 +1,5 @@
 # Created by: Jui-Nan Lin <jnlin@freebsd.cs.nctu.edu.tw>
-# $FreeBSD: head/devel/py_static_check/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py_static_check/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	py_static_check
 PORTVERSION=	1.2
@@ -12,9 +12,9 @@ COMMENT=	Statically check your python code
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyflakes>=0.5:devel/py-pyflakes
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyflakes>=0.5:devel/py-pyflakes@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/math/py-numeric/Makefile 425596 2016-11-07 09:00:10Z amdmi3 $
+# $FreeBSD: head/math/py-numeric/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	numeric
 PORTVERSION=	24.2
@@ -15,7 +15,7 @@ EXTRACT_ONLY=	Numeric-${PORTVERSION}${EXTRACT_SUFX}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Numeric Extension to Python
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 WRKSRC=		${WRKDIR}/Numeric-${PORTVERSION}

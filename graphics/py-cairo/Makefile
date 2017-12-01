@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/graphics/py-cairo/Makefile 451329 2017-10-05 18:19:09Z kwm $
+# $FreeBSD: head/graphics/py-cairo/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cairo
 PORTVERSION=	1.14.1
@@ -18,9 +18,12 @@ LICENSE_FILE_MPL11=	${WRKSRC}/COPYING-MPL-1.1
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gnome pkgconfig python:2
+USES=		gnome pkgconfig python
 USE_PYTHON=	distutils
 USE_GNOME=	cairo
+py34_PLIST=	${.CURDIR}/pkg-plist-py3
+py35_PLIST=	${.CURDIR}/pkg-plist-py3
+py36_PLIST=	${.CURDIR}/pkg-plist-py3
 
 PLIST_SUB=	PORTVER=${PORTVERSION}
 

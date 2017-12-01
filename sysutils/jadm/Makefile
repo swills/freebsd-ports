@@ -1,5 +1,5 @@
 # Created by: Nikolay Dachev <jadm@dachev.info>
-# $FreeBSD: head/sysutils/jadm/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/jadm/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	jadm
 PORTVERSION=	1.0
@@ -12,14 +12,14 @@ COMMENT=	FreeBSD jail framework with zfs, vnet and jail.conf support
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}paramiko>=1.14.0:security/py-paramiko \
-		${PYTHON_PKGNAMEPREFIX}netifaces>=0.10.3:net/py-netifaces \
-		${PYTHON_PKGNAMEPREFIX}tabulate>=0.7.2:devel/py-tabulate \
-		${PYTHON_PKGNAMEPREFIX}ipaddress>=1.0.6:net/py-ipaddress
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}paramiko>=1.14.0:security/py-paramiko \
-		${PYTHON_PKGNAMEPREFIX}netifaces>=0.10.3:net/py-netifaces \
-		${PYTHON_PKGNAMEPREFIX}tabulate>=0.7.2:devel/py-tabulate \
-		${PYTHON_PKGNAMEPREFIX}ipaddress>=1.0.6:net/py-ipaddress
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}paramiko>=1.14.0:security/py-paramiko@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}netifaces>=0.10.3:net/py-netifaces@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tabulate>=0.7.2:devel/py-tabulate@${FLAVOR} \
+		${PY_IPADDRESS}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}paramiko>=1.14.0:security/py-paramiko@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}netifaces>=0.10.3:net/py-netifaces@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tabulate>=0.7.2:devel/py-tabulate@${FLAVOR} \
+		${PY_IPADDRESS}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

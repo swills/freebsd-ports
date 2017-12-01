@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/games/mrboom/Makefile 453266 2017-11-01 07:44:24Z ehaupt $
+# $FreeBSD: head/games/mrboom/Makefile 455114 2017-11-29 14:39:10Z ehaupt $
 
 PORTNAME=	mrboom
-PORTVERSION=	3.8
+PORTVERSION=	3.9
 CATEGORIES=	games
 
 MAINTAINER=	ehaupt@FreeBSD.org
@@ -18,7 +18,7 @@ USES=		gmake
 USE_GITHUB=	yes
 USE_SDL=	sdl2 mixer2
 
-GH_ACCOUNT=	libretro
+GH_ACCOUNT=	Javanaise
 GH_PROJECT=	mrboom-libretro
 
 ALL_TARGET=	mrboom

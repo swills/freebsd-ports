@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-annotations/Makefile 413742 2016-04-21 16:09:14Z swills $
+# $FreeBSD: head/www/py-django-annotations/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-annotations
 PORTVERSION=	0.0.0.2016041401
@@ -9,13 +9,13 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Django implementation of annotatorjs Storage
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django-cors-headers>=1.1.0:www/py-django-cors-headers \
-		${PYTHON_PKGNAMEPREFIX}djangorestframework>=3.3.2:www/py-djangorestframework \
-		${PYTHON_PKGNAMEPREFIX}django-rq>0:devel/py-django-rq \
-		${PYTHON_PKGNAMEPREFIX}django-rq-dashboard>0:devel/py-django-rq-dashboard \
-		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django-cors-headers>=1.1.0:www/py-django-cors-headers@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}djangorestframework>=3.3.2:www/py-djangorestframework@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}django-rq>0:devel/py-django-rq@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}django-rq-dashboard>0:devel/py-django-rq-dashboard@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_GITHUB=	yes
 USE_PYTHON=	autoplist concurrent distutils
 

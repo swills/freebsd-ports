@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/sk1libs/Makefile 437141 2017-03-28 17:16:00Z amdmi3 $
+# $FreeBSD: head/graphics/sk1libs/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sk1libs
 PORTVERSION=	0.9.1
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/GNU_LGPL_v2
 LIB_DEPENDS=	liblcms.so:graphics/lcms \
 		libfreetype.so:print/freetype2
 
-USES=		jpeg python
+USES=		jpeg python:2.7
 USE_PYTHON=	distutils
 PYDISTUTILS_BUILD_TARGET=build_ext
 PYDISTUTILS_BUILDARGS=	-L${LOCALBASE}/lib \

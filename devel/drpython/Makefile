@@ -1,5 +1,5 @@
 # Created by: vsevolod
-# $FreeBSD: head/devel/drpython/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/drpython/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	drpython
 PORTVERSION=	3.11.4
@@ -17,13 +17,13 @@ LICENSE=	GPLv2
 # fails to build in presence if installed self
 CONFLICTS_BUILD=	${PORTNAME}${PYTHON_PKGNAMESUFFIX}-[0-9]*
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${FLAVOR}
 RUN_DEPENDS=	xdg-open:devel/xdg-utils
 
 NO_ARCH=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-USES=		compiler:c++11-lib python zip
+USES=		compiler:c++11-lib python:2.7 zip
 USE_PYTHON=	autoplist distutils
 USE_WX=		3.0+
 WX_COMPS=	python:lib

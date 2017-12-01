@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/kodi/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/multimedia/kodi/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	kodi
 DISTVERSION=	17.3
@@ -57,7 +57,7 @@ LIB_DEPENDS=	libass.so:multimedia/libass \
 		libvorbis.so:audio/libvorbis \
 		libxslt.so:textproc/libxslt \
 		libyajl.so:devel/yajl
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 
 ONLY_FOR_ARCHS=	amd64 armv6 armv7 i386
 KODI_ARCH_i386=	x86

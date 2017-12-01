@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/plover/Makefile 443053 2017-06-10 01:51:02Z sunpoet $
+# $FreeBSD: head/textproc/plover/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	plover
 PORTVERSION=	2.2.0
@@ -12,11 +12,11 @@ COMMENT=	Open source solution for stenography
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xlib>=0:x11-toolkits/py-xlib \
-		${PYTHON_PKGNAMEPREFIX}serial>=0:comms/py-serial \
-		${PYTHON_PKGNAMEPREFIX}lockfile>=0:devel/py-lockfile
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xlib>=0:x11-toolkits/py-xlib@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}serial>=0:comms/py-serial@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lockfile>=0:devel/py-lockfile@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 USE_WX=		3.0+
 WX_COMPS=	wx

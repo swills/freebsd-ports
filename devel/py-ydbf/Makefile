@@ -1,5 +1,5 @@
 # Created by: Andrey Polyakov <andrey.polyakov@unix.net>
-# $FreeBSD: head/devel/py-ydbf/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/devel/py-ydbf/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ydbf
 PORTVERSION=	0.0.1
@@ -13,7 +13,7 @@ COMMENT=	Yelded DBF reader/writer for Python
 
 LICENSE=	GPLv2
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

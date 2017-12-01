@@ -1,5 +1,5 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/graphics/cegui/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/graphics/cegui/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cegui
 PORTVERSION=	0.8.7
@@ -45,7 +45,7 @@ LUA_LIB_DEPENDS=	libtolua++-${LUA_VER}.so:lang/tolua++
 LUA_CMAKE_ON=		-DCEGUI_BUILD_LUA_MODULE=ON -DCEGUI_BUILD_LUA_GENERATOR=ON
 LUA_CMAKE_OFF=		-DCEGUI_BUILD_LUA_MODULE=OFF -DCEGUI_BUILD_LUA_GENERATOR=OFF
 # this option is not currently used as it doesn't compile (see also CMAKE_ARGS below)
-PYTHON_USES=		python
+PYTHON_USES=		python:2.7
 PYTHON_LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs
 PYTHON_CMAKE_ON=	-DCEGUI_BUILD_PYTHON_MODULES=ON
 PYTHON_CMAKE_OFF=	-DCEGUI_BUILD_PYTHON_MODULES=OFF

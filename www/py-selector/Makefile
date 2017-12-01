@@ -1,5 +1,5 @@
 # Created by: Trevor Caira <trevor@bitba.se>
-# $FreeBSD: head/www/py-selector/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-selector/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	selector
 PORTVERSION=	0.10.1
@@ -12,7 +12,7 @@ COMMENT=	WSGI request delegation (a.k.a. routing)
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}resolver>=0.2.1:devel/py-resolver
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}resolver>=0.2.1:devel/py-resolver@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

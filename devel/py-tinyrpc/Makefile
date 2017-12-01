@@ -1,5 +1,5 @@
 # Created by: dpejesh@yahoo.com
-# $FreeBSD: head/devel/py-tinyrpc/Makefile 433999 2017-02-13 16:38:32Z mat $
+# $FreeBSD: head/devel/py-tinyrpc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tinyrpc
 PORTVERSION=	0.5
@@ -25,9 +25,9 @@ ZEROMQ_DESC=	ZeroMQ support
 
 OPTIONS_DEFAULT=HTTP
 
-HTTP_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests
-WSGI_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gevent>0:devel/py-gevent \
-			${PYTHON_PKGNAMEPREFIX}werkzeug>0:www/py-werkzeug
-ZEROMQ_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyzmq>0:net/py-pyzmq
+HTTP_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR}
+WSGI_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gevent>0:devel/py-gevent@${FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}werkzeug>0:www/py-werkzeug@${FLAVOR}
+ZEROMQ_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyzmq>0:net/py-pyzmq@${FLAVOR}
 
 .include <bsd.port.mk>

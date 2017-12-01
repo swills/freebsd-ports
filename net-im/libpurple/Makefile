@@ -1,5 +1,5 @@
 # Created by: Jim Mock <jim@FreeBSD.org>
-# $FreeBSD: head/net-im/libpurple/Makefile 451901 2017-10-12 15:57:51Z mat $
+# $FreeBSD: head/net-im/libpurple/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME?=	libpurple
 PORTVERSION=	2.12.0
@@ -26,7 +26,7 @@ INSTALL_TARGET=	install-strip
 .if !defined(PIDGIN_SLAVE)
 # Pidgin slave ports that require the following functionality, must explicitly
 # set these macros themselves.
-USES+=		iconv python shebangfix
+USES+=		iconv python:2.7 shebangfix
 USE_LDCONFIG=	yes
 SHEBANG_FILES=	libpurple/purple-remote \
 		libpurple/purple-url-handler

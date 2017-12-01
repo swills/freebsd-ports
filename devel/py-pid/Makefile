@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-pid/Makefile 451920 2017-10-12 17:53:12Z feld $
+# $FreeBSD: head/devel/py-pid/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pid
 PORTVERSION=	2.1.1
@@ -12,7 +12,7 @@ COMMENT=	Pidfile management for Python
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR}
 
 NO_ARCH=	yes
 

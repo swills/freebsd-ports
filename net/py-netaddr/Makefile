@@ -1,5 +1,5 @@
 # Created by: Yi-Jheng Lin <yzlin@cs.nctu.edu.tw>
-# $FreeBSD: head/net/py-netaddr/Makefile 447455 2017-08-06 10:26:21Z koobs $
+# $FreeBSD: head/net/py-netaddr/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	netaddr
 PORTVERSION=	0.7.19
@@ -13,7 +13,7 @@ COMMENT=	Manipulation of IPv4, IPv6, CIDR, EUI and MAC network addresses
 LICENSE=	BSD3CLAUSE MIT
 LICENSE_COMB=	multi
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=2.4.2:devel/py-pytest
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=2.4.2:devel/py-pytest@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-tox/Makefile 443061 2017-06-10 02:37:12Z woodsb02 $
+# $FreeBSD: head/devel/py-tox/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tox
 PORTVERSION=	2.3.1
@@ -13,14 +13,14 @@ COMMENT=	Virtualenv-based automation of test activities
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}virtualenv>=1.11.2:devel/py-virtualenv \
-		${PYTHON_PKGNAMEPREFIX}py>=1.4.17:devel/py-py \
-		${PYTHON_PKGNAMEPREFIX}pluggy>0:devel/py-pluggy
-TEST_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}tox>0:devel/py-tox \
-		${PYTHON_PKGNAMEPREFIX}pytest>=2.3.5:devel/py-pytest \
-		${PYTHON_PKGNAMEPREFIX}pytest-timeout>0:devel/py-pytest-timeout
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}virtualenv>=1.11.2:devel/py-virtualenv@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}py>=1.4.17:devel/py-py@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pluggy>0:devel/py-pluggy@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tox>0:devel/py-tox@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest>=2.3.5:devel/py-pytest@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest-timeout>0:devel/py-pytest-timeout@${FLAVOR}
 
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 NO_ARCH=	yes

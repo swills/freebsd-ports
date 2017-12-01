@@ -1,5 +1,5 @@
 # Created by: jodocus <jodocus@jodocus.org>
-# $FreeBSD: head/net-im/py-punjab/Makefile 442640 2017-06-05 14:50:55Z sunpoet $
+# $FreeBSD: head/net-im/py-punjab/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	punjab
 PORTVERSION=	0.15
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	HTTP XMPP client interface
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

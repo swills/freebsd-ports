@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/sysutils/py-zdaemon/Makefile 413424 2016-04-16 10:06:16Z rm $
+# $FreeBSD: head/sysutils/py-zdaemon/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	zdaemon
 PORTVERSION=	4.1.0
@@ -13,7 +13,7 @@ COMMENT=	Daemon Process Control Library and Tools for Unix-bases Systems
 LICENSE=	ZPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zconfig>0:devel/py-zconfig
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zconfig>0:devel/py-zconfig@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python zip

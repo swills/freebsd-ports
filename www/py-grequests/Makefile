@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/www/py-grequests/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-grequests/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	grequests
 PORTVERSION=	0.3.0
@@ -13,9 +13,9 @@ COMMENT=	Requests with Gevent to make asyncronous HTTP requests
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gevent>0:devel/py-gevent \
-		${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gevent>0:devel/py-gevent@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	kennethreitz

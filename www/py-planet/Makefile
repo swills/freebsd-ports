@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-planet/Makefile 449951 2017-09-16 08:59:44Z sunpoet $
+# $FreeBSD: head/www/py-planet/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	planet
 PORTVERSION=	1.1.0
@@ -12,9 +12,9 @@ COMMENT=	Python client library and CLI for Planet's public API #'
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=0:devel/py-click \
-		${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests \
-		${PYTHON_PKGNAMEPREFIX}requests-futures>=0:www/py-requests-futures
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=0:devel/py-click@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests-futures>=0:www/py-requests-futures@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

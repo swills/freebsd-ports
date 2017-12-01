@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-darcsver/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-darcsver/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	darcsver
 PORTVERSION=	1.7.4
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Generate a version number from darcs history
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 post-patch:

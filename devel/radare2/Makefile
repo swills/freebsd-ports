@@ -1,5 +1,5 @@
 # Created by: Karsten Pedersen <kpedersen@opencde.org>
-# $FreeBSD: head/devel/radare2/Makefile 454557 2017-11-20 13:44:54Z rodrigo $
+# $FreeBSD: head/devel/radare2/Makefile 455165 2017-11-30 05:55:17Z linimon $
 
 PORTNAME=	radare2
 PORTVERSION=	2.0.1
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS+=		pkg-config:devel/pkgconf
 LIB_DEPENDS+=		libcapstone.so:devel/capstone4
 
-NOT_FOR_ARCHS=		aarch64 armv6 mips mips64 powerpc powerpc64 sparc64
+NOT_FOR_ARCHS=		aarch64 armv6 armv7 mips mips64 powerpc powerpc64 sparc64
 NOT_FOR_ARCHS_REASON=	does not build: Unsupported BSD architecture
 
 CONFIGURE_ARGS+=	--with-syscapstone

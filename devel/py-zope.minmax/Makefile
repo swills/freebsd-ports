@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-zope.minmax/Makefile 425174 2016-11-02 22:45:14Z mat $
+# $FreeBSD: head/devel/py-zope.minmax/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	zope.minmax
 PORTVERSION=	1.1.2
@@ -13,10 +13,10 @@ COMMENT=	Homogeneous values favoring maximum or minimum
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	zodb${PYTHON_PKGNAMESUFFIX}>=0:databases/zodb3 \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface
+RUN_DEPENDS=	zodb${PYTHON_PKGNAMESUFFIX}>=0:databases/zodb3@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

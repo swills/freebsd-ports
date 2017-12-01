@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/leatherman/Makefile 451907 2017-10-12 16:53:01Z romain $
+# $FreeBSD: head/devel/leatherman/Makefile 455181 2017-11-30 08:52:50Z linimon $
 
 PORTNAME=	leatherman
 PORTVERSION=	1.3.0
@@ -13,7 +13,6 @@ LICENSE=	APACHE20
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libcurl.so:ftp/curl
 
-BROKEN_armv6=		fails to configure: CMake: execution of make failed
 BROKEN_powerpc64=	fails to compile: cc1plus: error: unrecognized command line option "-std=c++11"
 
 USE_GITHUB=	yes

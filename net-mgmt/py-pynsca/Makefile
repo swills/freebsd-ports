@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/py-pynsca/Makefile 452045 2017-10-14 07:09:11Z pi $
+# $FreeBSD: head/net-mgmt/py-pynsca/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pynsca
 PORTVERSION=	1.5
@@ -14,15 +14,15 @@ LICENSE=	MPL11
 OPTIONS_DEFINE=	AES 3DES
 
 AES_DESC=	Provide AES encryption
-AES_RUN_DEPENDS=${PYTHON_PKGNAMEPREFIX}mcrypt>=0:security/py-mcrypt
+AES_RUN_DEPENDS=${PYTHON_PKGNAMEPREFIX}mcrypt>=0:security/py-mcrypt@${FLAVOR}
 
 3DES_DESC=	Provide 3DES encryption
-3DES_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>=0:security/py-pycrypto
+3DES_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>=0:security/py-pycrypto@${FLAVOR}
 
 OPTIONS_DEFAULT=AES 3DES
 
 NO_ARCH=	yes
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils concurrent
 
 .include <bsd.port.mk>

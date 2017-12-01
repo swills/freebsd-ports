@@ -1,5 +1,5 @@
 # Created by: Christer Edwards <christer.edwards@gmail.com>
-# $FreeBSD: head/sysutils/py-halite/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/py-halite/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	halite
 PORTVERSION=	0.1.15
@@ -13,8 +13,8 @@ COMMENT=	SaltStack Web UI
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}salt>=0.17.0:sysutils/py-salt \
-		${PYTHON_PKGNAMEPREFIX}cherrypy>0:www/py-cherrypy
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}salt>=0.17.0:sysutils/py-salt@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}cherrypy>0:www/py-cherrypy@${FLAVOR}
 
 USES=		python:2
 USE_PYTHON=	distutils autoplist

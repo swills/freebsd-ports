@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/misc/wmpal/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/misc/wmpal/Makefile 455117 2017-11-29 16:06:26Z amdmi3 $
 
 PORTNAME=	wmpal
 PORTVERSION=	0.6.1
@@ -10,20 +10,23 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	One of the most useless dockapps in the world
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-USE_XORG=	xpm
+USES=		localbase
+USE_XORG=	x11 xpm
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib -lX11
+LIBS+=		-lX11
 
-PORTDOCS=	README
+PORTDOCS=	README AUTHORS
 PLIST_FILES=	bin/wmpal
+
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|"dino"|"daemon"|g' ${WRKSRC}/wmpal.c
 
-post-install:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
+	cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/emulators/dynagen/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/emulators/dynagen/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	dynagen
 PORTVERSION=	0.11.0
@@ -12,7 +12,7 @@ COMMENT=	Text-based front end for Dynamips development version
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}configobj>=4.4.0:devel/py-configobj \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}configobj>=4.4.0:devel/py-configobj@${FLAVOR} \
 		dynamips:emulators/dynamips-community
 
 PLIST_FILES=	bin/dynagen "@sample etc/dynagen.ini.sample"
@@ -21,7 +21,7 @@ PORTDOCS=	*
 PORTEXAMPLES=	*
 PORTDATA=	*
 
-USES=		dos2unix python shebangfix
+USES=		dos2unix python:2.7 shebangfix
 SHEBANG_FILES=	*.py dynagen
 
 USE_PYTHON=	distutils autoplist

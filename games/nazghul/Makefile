@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/games/nazghul/Makefile 441823 2017-05-27 00:43:10Z linimon $
+# $FreeBSD: head/games/nazghul/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	nazghul
 PORTVERSION=	0.7.1
@@ -16,6 +16,7 @@ LIB_DEPENDS=	libpng.so:graphics/png
 
 BROKEN_aarch64=		fails to compile: no matching function for call to cmdwin_vpush
 BROKEN_armv6=		fails to compile: no matching function for call to cmdwin_vpush
+BROKEN_armv7=		fails to compile: no matching function for call to cmdwin_vpush
 
 USE_SDL=	sdl image mixer
 GNU_CONFIGURE=	yes

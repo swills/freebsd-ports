@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/py-rencode/Makefile 441167 2017-05-18 16:04:02Z sunpoet $
+# $FreeBSD: head/converters/py-rencode/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rencode
 PORTVERSION=	1.0.5
@@ -11,9 +11,7 @@ COMMENT=	R-encoding and r-decoding implementation
 
 LICENSE=	GPLv3
 
-BUILD_DEPENDS=	cython:lang/cython
-
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils cython
 USES=		python
 
 post-install:

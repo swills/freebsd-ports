@@ -1,5 +1,5 @@
 # Created by: Gustavo Fukao <gustavofukao@gmail.com>
-# $FreeBSD: head/devel/gazpacho/Makefile 445922 2017-07-15 17:30:42Z sunpoet $
+# $FreeBSD: head/devel/gazpacho/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gazpacho
 PORTVERSION=	0.7.2
@@ -13,10 +13,10 @@ COMMENT=	GUI builder for the GTK+ toolkit
 LICENSE=	LGPL21+ # source mentions LGPL20+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}kiwi-gtk>=0:x11-toolkits/py-kiwi-gtk
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}kiwi-gtk>=0:x11-toolkits/py-kiwi-gtk@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=		desktop-file-utils gettext python
+USES=		desktop-file-utils gettext python:2.7
 USE_GNOME=	pygtk2
 USE_PYTHON=	distutils
 NO_BUILD=	yes

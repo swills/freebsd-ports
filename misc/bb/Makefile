@@ -1,5 +1,5 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/misc/bb/Makefile 441784 2017-05-26 14:27:45Z linimon $
+# $FreeBSD: head/misc/bb/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	bb
 DISTVERSION=	1.3rc1
@@ -18,6 +18,7 @@ LIB_DEPENDS=	libaa.so:graphics/aalib \
 
 BROKEN_aarch64=		fails to build: regparm is not valid on this platform
 BROKEN_armv6=		fails to build: regparm is not valid on this platform
+BROKEN_armv7=		fails to build: regparm is not valid on this platform
 
 GNU_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/bb-1.3.0

@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/multimedia/plexpy/Makefile 450227 2017-09-20 17:02:12Z feld $
+# $FreeBSD: head/multimedia/plexpy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	plexpy
 PORTVERSION=	1.4.22
@@ -13,8 +13,8 @@ COMMENT=	Monitoring, analytics, and notifications for Plex Media Server
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3 \
-		${PYTHON_PKGNAMEPREFIX}openssl>0:security/py-openssl \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}openssl>0:security/py-openssl@${PY_FLAVOR} \
 		${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 
 USE_RC_SUBR=	${PORTNAME}

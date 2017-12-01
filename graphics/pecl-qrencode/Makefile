@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/graphics/pecl-qrencode/Makefile 450419 2017-09-23 02:59:07Z vanilla $
+# $FreeBSD: head/graphics/pecl-qrencode/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	qrencode
 PORTVERSION=	0.6
@@ -15,7 +15,7 @@ COMMENT=	PECL extension for generate qrcode
 LICENSE=	BSD2CLAUSE
 
 LIB_DEPENDS=	libqrencode.so:graphics/libqrencode \
-		libpng16.so:graphics/png
+		libpng.so:graphics/png
 
 USES=		php:ext
 USE_GITHUB=	yes

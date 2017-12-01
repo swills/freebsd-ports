@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/py-qpid/Makefile 447034 2017-08-01 17:07:58Z zi $
+# $FreeBSD: head/devel/py-qpid/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=		qpid
 PORTVERSION=		0.32
@@ -14,7 +14,7 @@ COMMENT=		Python library for qpid, a connection-oriented messaging API
 
 LICENSE=		APACHE20
 
-USES=			python
+USES=			python:2.7
 USE_PYTHON=		distutils autoplist
 
 .include <bsd.port.mk>

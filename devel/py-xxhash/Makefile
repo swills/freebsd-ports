@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-xxhash/Makefile 436854 2017-03-24 19:18:13Z rezny $
+# $FreeBSD: head/devel/py-xxhash/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	xxhash
 PORTVERSION=	1.0.1
@@ -12,7 +12,7 @@ COMMENT=	Python bindings for the xxHash library
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>1:devel/py-nose
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>1:devel/py-nose@${FLAVOR}
 
 USES=		python zip
 USE_PYTHON=	distutils autoplist

@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@FreeBSD.org>
-# $FreeBSD: head/devel/py-cheetah/Makefile 417985 2016-07-03 18:12:19Z pi $
+# $FreeBSD: head/devel/py-cheetah/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cheetah
 PORTVERSION=	2.4.4
@@ -12,7 +12,7 @@ DISTNAME=	Cheetah-${DISTVERSION}
 MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	HTML template engine for Python
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}markdown>=2.0.3:textproc/py-markdown
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}markdown>=2.0.3:textproc/py-markdown@${FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

@@ -1,5 +1,5 @@
 # Created by: Geoffrey Mainland <mainland@apeiron.net>
-# $FreeBSD: head/editors/texmacs/Makefile 441814 2017-05-26 20:02:44Z linimon $
+# $FreeBSD: head/editors/texmacs/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	texmacs
 PORTVERSION=	1.99.4
@@ -20,6 +20,7 @@ LIB_DEPENDS=	libltdl.so:devel/libltdl \
 RUN_DEPENDS=	fig2dev:print/transfig
 
 BROKEN_armv6=		fails to compile: call to min is ambiguous
+BROKEN_armv7=		fails to compile: call to min is ambiguous
 
 USES=		cpe desktop-file-utils gmake iconv localbase pkgconfig python \
 		shared-mime-info shebangfix

@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@FreeBSD.org>
-# $FreeBSD: head/net/liferea/Makefile 441552 2017-05-23 21:16:59Z kwm $
+# $FreeBSD: head/net/liferea/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	liferea
 DISTVERSION=	1.12-rc3
@@ -17,10 +17,10 @@ LIB_DEPENDS=	libsoup-2.4.so:devel/libsoup \
 		libpeas-1.0.so:devel/libpeas \
 		libjson-glib-1.0.so:devel/json-glib
 RUN_DEPENDS=	gsettings-desktop-schemas>=0:devel/gsettings-desktop-schemas \
-		${PYTHON_PKGNAMEPREFIX}libpeas>=0:devel/py3-libpeas
+		${PYTHON_PKGNAMEPREFIX}libpeas>=0:devel/py-libpeas@${PY_FLAVOR}
 
 USES=		desktop-file-utils gettext gmake gnome libtool localbase \
-		pathfix pkgconfig python:3 sqlite tar:bzip2
+		pathfix pkgconfig python:3.4+ sqlite tar:bzip2
 USE_GNOME=	cairo dconf:run gtk30 intltool introspection \
 		libxslt libxml2
 GNU_CONFIGURE=	yes

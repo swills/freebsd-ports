@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-qt5/Makefile 416057 2016-05-28 17:29:16Z pi $
+# $FreeBSD: head/devel/py-qt5/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	qt5
 PORTVERSION=	${PYQT5_VERSION}
@@ -9,6 +9,7 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt 5 toolkit (meta port)
 
 USES=		metaport python pyqt:5
+USE_PYTHON=	flavors
 
 OPTIONS_DEFINE=	core dbus dbussupport demo designer \
 		designerplugin doc gui multimedia multimediawidgets \

@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/textproc/loook/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/loook/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	loook
 PORTVERSION=	0.6.5
@@ -14,7 +14,7 @@ COMMENT=	Simple Python tool that search in LibreOffice/OpenOffice files
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>=0:x11-toolkits/py-tkinter
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>=0:x11-toolkits/py-tkinter@${PY_FLAVOR}
 
 WRKSRC=		${WRKDIR}
 

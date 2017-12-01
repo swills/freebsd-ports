@@ -1,5 +1,5 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-fedex/Makefile 434627 2017-02-22 18:34:03Z tobik $
+# $FreeBSD: head/www/py-fedex/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	fedex
 PORTVERSION=	2.4.0
@@ -12,7 +12,7 @@ COMMENT=	Light wrapper around Fedex's Web Services SOAP API using suds
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}suds>=0:net/py-suds
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}suds>=0:net/py-suds@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7

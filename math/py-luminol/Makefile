@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/py-luminol/Makefile 424866 2016-10-28 17:13:24Z jbeich $
+# $FreeBSD: head/math/py-luminol/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	luminol
 PORTVERSION=	0.3.1
@@ -12,8 +12,8 @@ COMMENT=	Light weight python library for time series data analysis
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy \
-	${PYTHON_PKGNAMEPREFIX}numpy>=1.6.2,1:math/py-numpy
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${FLAVOR} \
+	${PYTHON_PKGNAMEPREFIX}numpy>=1.6.2,1:math/py-numpy@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

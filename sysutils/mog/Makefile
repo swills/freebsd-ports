@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/sysutils/mog/Makefile 436367 2017-03-18 00:31:07Z ehaupt $
+# $FreeBSD: head/sysutils/mog/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	mog
 PORTVERSION=	0.6.0
@@ -11,13 +11,13 @@ COMMENT=	Different take on the UNIX tool cat
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pygments>0:textproc/py-pygments \
-		mdv:devel/py-mdv
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pygments>0:textproc/py-pygments@${FLAVOR} \
+		mdv:devel/py-mdv@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python
 USE_GITHUB=	yes
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils concurrent optsuffix
 NO_ARCH=	yes
 
 GH_ACCOUNT=	witchard

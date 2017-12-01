@@ -1,5 +1,5 @@
 # Created by: Thomas Seck <tmseck@netcologne.de>
-# $FreeBSD: head/sysutils/uschedule/Makefile 441784 2017-05-26 14:27:45Z linimon $
+# $FreeBSD: head/sysutils/uschedule/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	uschedule
 PORTVERSION=	0.7.1
@@ -15,6 +15,7 @@ RUN_DEPENDS=	${LOCALBASE}/bin/multilog:sysutils/daemontools
 
 BROKEN_aarch64=		fails to build: regparm is not valid on this platform
 BROKEN_armv6=		fails to build: regparm is not valid on this platform
+BROKEN_armv7=		fails to build: regparm is not valid on this platform
 
 WRKSRC=		${WRKDIR}/admin/${DISTNAME}
 

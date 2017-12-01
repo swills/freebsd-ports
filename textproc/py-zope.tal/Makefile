@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-zope.tal/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/py-zope.tal/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	zope.tal
 PORTVERSION=	3.6.1
@@ -13,8 +13,8 @@ COMMENT=	Zope Template Application Language (TAL)
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.i18nmessageid>=0:textproc/py-zope.i18nmessageid \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.i18nmessageid>=0:textproc/py-zope.i18nmessageid@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR}
 
 USES=		python zip
 USE_PYTHON=	distutils autoplist

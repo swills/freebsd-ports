@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-diffoscope/Makefile 453613 2017-11-06 12:28:19Z ygy $
+# $FreeBSD: head/sysutils/py-diffoscope/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	diffoscope
 PORTVERSION=	88
@@ -13,15 +13,15 @@ COMMENT=	In-depth comparison of files, archives, and directories
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libarchive-c>=0:archivers/py3-libarchive-c \
-		${PYTHON_PKGNAMEPREFIX}python-magic>=0:devel/py3-python-magic \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libarchive-c>=0:archivers/py-libarchive-c@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}python-magic>=0:devel/py-python-magic@${FLAVOR} \
 		gdiff:textproc/diffutils
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest \
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${FLAVOR} \
 		zipinfo:archivers/unzip \
 		isoinfo:sysutils/cdrkit \
 		rpm2cpio:archivers/rpm2cpio
 
-USES=		python:3.4+
+USES=		python:3.5+
 USE_PYTHON=	autoplist concurrent distutils
 
 NO_ARCH=	yes

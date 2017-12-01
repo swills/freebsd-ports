@@ -1,5 +1,5 @@
 # Created by: Anders F Bjorklund <afb@rpm5.org>
-# $FreeBSD: head/devel/py-yum-metadata-parser/Makefile 430761 2017-01-07 01:07:55Z adamw $
+# $FreeBSD: head/devel/py-yum-metadata-parser/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	yum-metadata-parser
 PORTVERSION=	1.1.4
@@ -14,7 +14,7 @@ COMMENT=	Fast metadata parser for yum
 LIB_DEPENDS=	libxml2.so:textproc/libxml2 \
 		libsqlite3.so:databases/sqlite3
 
-USES=		pkgconfig python
+USES=		pkgconfig python:2.7
 USE_GNOME=	glib20
 USE_PYTHON=	distutils autoplist
 

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/py-flake8-docstrings/Makefile 440568 2017-05-10 14:57:27Z amdmi3 $
+# $FreeBSD: head/devel/py-flake8-docstrings/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	flake8-docstrings
 PORTVERSION=	1.1.0
@@ -13,11 +13,11 @@ COMMENT=	Extension for flake8 which uses pydocstyle to check docstrings
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}flake8>=0:devel/py-flake8 \
-		${PYTHON_PKGNAMEPREFIX}flake8-polyfill>=0:devel/py-flake8-polyfill \
-		${PYTHON_PKGNAMEPREFIX}pydocstyle>=0:devel/py-pydocstyle
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}flake8>=0:devel/py-flake8@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}flake8-polyfill>=0:devel/py-flake8-polyfill@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pydocstyle>=0:devel/py-pydocstyle@${FLAVOR}
 
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

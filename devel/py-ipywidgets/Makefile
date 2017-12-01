@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-ipywidgets/Makefile 438457 2017-04-13 17:32:10Z swills $
+# $FreeBSD: head/devel/py-ipywidgets/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ipywidgets
 PORTVERSION=	6.0.0
@@ -9,10 +9,10 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Interactive HTML widgets for Jupyter notebooks and the IPython kernel
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipython>=4.0.0:devel/ipython \
-		${PYTHON_PKGNAMEPREFIX}ipykernel>=4.2.2:devel/py-ipykernel \
-		${PYTHON_PKGNAMEPREFIX}widgetsnbextension>=1.2:devel/py-widgetsnbextension \
-		${PYTHON_PKGNAMEPREFIX}traitlets>=4.2:devel/py-traitlets
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipython>=4.0.0:devel/ipython@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ipykernel>=4.2.2:devel/py-ipykernel@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}widgetsnbextension>=1.2:devel/py-widgetsnbextension@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}traitlets>=4.2:devel/py-traitlets@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

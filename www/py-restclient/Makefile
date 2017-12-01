@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/www/py-restclient/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-restclient/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	restclient
 PORTVERSION=	0.11.0
@@ -13,7 +13,7 @@ COMMENT=	Convenient library for writing REST clients
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PKGNAMEPREFIX}httplib2>=0:www/py-httplib2
+RUN_DEPENDS=	${PKGNAMEPREFIX}httplib2>=0:www/py-httplib2@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

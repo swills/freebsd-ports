@@ -1,14 +1,16 @@
 # Created by: Li-Wen Hsu <lwhsu@lwhsu.org>
-# $FreeBSD: head/devel/py-pp/Makefile 414505 2016-05-03 01:07:06Z lwhsu $
+# $FreeBSD: head/devel/py-pp/Makefile 455166 2017-11-30 06:09:27Z lwhsu $
 
 PORTNAME=	pp
-PORTVERSION=	1.6.5
+PORTVERSION=	1.6.6
 CATEGORIES=	devel python
 MASTER_SITES=	http://www.parallelpython.com/downloads/pp/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	lwhsu@FreeBSD.org
 COMMENT=	Parallel python execution server
+
+LICENSE=	BSD3CLAUSE
 
 USES=		python:2
 USE_PYTHON=	distutils autoplist

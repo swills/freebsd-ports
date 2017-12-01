@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pyinotify/Makefile 416469 2016-06-06 15:25:42Z mat $
+# $FreeBSD: head/devel/py-pyinotify/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyinotify
 PORTVERSION=	0.9.6
@@ -14,6 +14,6 @@ LICENSE=	MIT
 LIB_DEPENDS=	libinotify.so:devel/libinotify
 
 USES=		python
-USE_PYTHON=	distutils
+USE_PYTHON=	distutils py3kplist
 
 .include <bsd.port.mk>

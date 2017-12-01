@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 455039 2017-11-28 12:57:57Z jbeich $
+# $FreeBSD: head/Mk/bsd.gecko.mk 455111 2017-11-29 13:54:31Z tobik $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -152,8 +152,14 @@ MOZ_EXPORT+=	${CONFIGURE_ENV} \
 MOZ_OPTIONS+=	--prefix="${PREFIX}"
 MOZ_MK_OPTIONS+=MOZ_OBJDIR="${MOZ_OBJDIR}"
 
-RUSTFLAGS+=		${CFLAGS:M-march=*:S/-march=/-C target-cpu=/}
 LDFLAGS+=		-Wl,--as-needed
+
+# Adjust -C target-cpu if -march/-mcpu is set by bsd.cpu.mk
+.if ${ARCH} == amd64 || ${ARCH} == i386
+RUSTFLAGS+=	${CFLAGS:M-march=*:S/-march=/-C target-cpu=/}
+.else
+RUSTFLAGS+=	${CFLAGS:M-mcpu=*:S/-mcpu=/-C target-cpu=/}
+.endif
 
 .if ${MOZILLA_VER:R:R} < 55 && ${OPSYS} == FreeBSD && ${OSVERSION} < 1200032
 # use jemalloc 3.0.0 (4.0 for firefox 43+) API for stats/tuning
@@ -378,7 +384,7 @@ post-patch-SNDIO-on:
 . endfor
 	@${REINPLACE_CMD} -e 's|OS==\"openbsd\"|OS==\"${OPSYS:tl}\"|g' \
 		${MOZSRC}/media/webrtc/trunk/webrtc/build/common.gypi
-	@${ECHO} "OS_LIBS += ['sndio']" >> \
+	@${ECHO_CMD} "OS_LIBS += ['sndio']" >> \
 		${MOZSRC}/media/webrtc/signaling/test/common.build
 .endif
 
@@ -397,7 +403,7 @@ MOZ_OPTIONS+=	--enable-debug --disable-release
 STRIP=	# ports/184285
 .else
 MOZ_OPTIONS+=	--disable-debug --disable-debug-symbols --enable-release
-. if ${MOZILLA_VER:R:R} >= 56 && (${MACHINE_CPU:Msse2} || ${ARCH:Maarch64})
+. if ${MOZILLA_VER:R:R} >= 56 && (${ARCH:Maarch64} || ${MACHINE_CPU:Msse2})
 MOZ_OPTIONS+=	--enable-rust-simd
 . endif
 .endif

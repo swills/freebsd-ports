@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-castellan/Makefile 439170 2017-04-22 12:45:43Z miwi $
+# $FreeBSD: head/devel/py-castellan/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	castellan
 PORTVERSION=	0.5.0
@@ -11,15 +11,15 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	alexander.nusov@nfvexpress.com
 COMMENT=	Generic Key Manager interface for OpenStack
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.8:devel/py-pbr
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Babel>=2.3.4:devel/py-babel \
-		${PYTHON_PKGNAMEPREFIX}cryptography>=1.0:security/py-cryptography \
-		${PYTHON_PKGNAMEPREFIX}oslo.config>=3.14.0:devel/py-oslo.config \
-		${PYTHON_PKGNAMEPREFIX}oslo.context>=2.9.0:devel/py-oslo.context \
-		${PYTHON_PKGNAMEPREFIX}oslo.log>=3.11.0:devel/py-oslo.log \
-		${PYTHON_PKGNAMEPREFIX}oslo.policy>=0.5.0:devel/py-oslo.policy \
-		${PYTHON_PKGNAMEPREFIX}oslo.serialization>=1.10.0:devel/py-oslo.serialization \
-		${PYTHON_PKGNAMEPREFIX}oslo.utils>=3.18.0:devel/py-oslo.utils
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.8:devel/py-pbr@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Babel>=2.3.4:devel/py-babel@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}cryptography>=1.0:security/py-cryptography@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}oslo.config>=3.14.0:devel/py-oslo.config@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}oslo.context>=2.9.0:devel/py-oslo.context@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}oslo.log>=3.11.0:devel/py-oslo.log@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}oslo.policy>=0.5.0:devel/py-oslo.policy@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}oslo.serialization>=1.10.0:devel/py-oslo.serialization@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}oslo.utils>=3.18.0:devel/py-oslo.utils@${FLAVOR}
 
 NO_ARCH=	yes
 

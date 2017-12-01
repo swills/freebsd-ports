@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/security/py-fchksum/Makefile 432850 2017-01-30 14:55:08Z rezny $
+# $FreeBSD: head/security/py-fchksum/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	fchksum
 PORTVERSION=	1.7.1
@@ -14,7 +14,7 @@ COMMENT=	Python module to find the checksum of files
 LICENSE=	GPLv2
 
 PLIST_FILES=	%%PYTHON_SITELIBDIR%%/fchksum.so
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGNAME=	python-fchksum
 

@@ -1,5 +1,5 @@
 # Created by: Charlie Kester <corky1951@comcast.net>
-# $FreeBSD: head/multimedia/py-mlt/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/py-mlt/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTREVISION=	1
 CATEGORIES=	multimedia python
@@ -8,6 +8,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 BUILD_DEPENDS=	python:lang/python
 
 USES=		python:2
+USE_PYTHON=	flavors
 MASTERDIR=	${.CURDIR:H}/mlt
 SLAVEPORT=	swig Python
 

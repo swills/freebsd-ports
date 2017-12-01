@@ -1,5 +1,5 @@
 # Created by: Fukang Chen <loader@FreeBSD.org>
-# $FreeBSD: head/devel/py-pytest-timeout/Makefile 444164 2017-06-23 06:01:54Z loader $
+# $FreeBSD: head/devel/py-pytest-timeout/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pytest-timeout
 PORTVERSION=	1.2.0
@@ -13,12 +13,12 @@ COMMENT=	Pytest plugin to abort hanging tests
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}pytest>=2.8.0:devel/py-pytest
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=2.8.0:devel/py-pytest
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=2.8.0:devel/py-pytest@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=2.8.0:devel/py-pytest@${FLAVOR}
 
 NO_ARCH=	yes
 
-USES?=		python:2.7+
+USES=		python:2.7+
 USE_PYTHON=	autoplist distutils
 
 TEST_ENV+=	PYTHONPATH=${TEST_WRKSRC}

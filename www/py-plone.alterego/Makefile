@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.alterego/Makefile 405756 2016-01-10 23:10:45Z rm $
+# $FreeBSD: head/www/py-plone.alterego/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	plone.alterego
 PORTVERSION=	1.0
@@ -14,7 +14,7 @@ COMMENT=	Low level support for dynamic modules
 LICENSE=	LGPL20
 
 NO_ARCH=	yes
-USES=		python zip
+USES=		python:2.7 zip
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

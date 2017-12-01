@@ -1,5 +1,5 @@
 # Created by: Yuan-Chung Hsiao <ychsiao@gmail.com>
-# $FreeBSD: head/devel/py-tw.forms/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-tw.forms/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tw.forms
 PORTVERSION=	0.9.9
@@ -11,12 +11,12 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	ychsiao@ychsiao.org
 COMMENT=	Web Widgets for building and validating forms
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ToscaWidgets>=0:devel/py-ToscaWidgets \
-		${PYTHON_PKGNAMEPREFIX}formencode>=0:www/py-formencode
-RUN_DEPENDS:=	${PYTHON_PKGNAMEPREFIX}ToscaWidgets>=0:devel/py-ToscaWidgets \
-		${PYTHON_PKGNAMEPREFIX}formencode>=0:www/py-formencode
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ToscaWidgets>=0:devel/py-ToscaWidgets@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}formencode>=0:www/py-formencode@${FLAVOR}
+RUN_DEPENDS:=	${PYTHON_PKGNAMEPREFIX}ToscaWidgets>=0:devel/py-ToscaWidgets@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}formencode>=0:www/py-formencode@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

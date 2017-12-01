@@ -1,5 +1,5 @@
 # Created by: Frederic Praca <frederic.praca@freebsd-fr.org>
-# $FreeBSD: head/devel/py-buildbot-worker/Makefile 455028 2017-11-28 10:15:46Z rodrigc $
+# $FreeBSD: head/devel/py-buildbot-worker/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	buildbot-worker
 PORTVERSION=	0.9.11
@@ -14,10 +14,10 @@ COMMENT=	Buildbot Worker Daemon
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}future>=0.15.2:devel/py-future \
-		${PYTHON_PKGNAMEPREFIX}twisted>=14.0.1:devel/py-twisted
-TEST_DEPENDS=	trial:devel/py-twisted \
-		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}future>=0.15.2:devel/py-future@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}twisted>=14.0.1:devel/py-twisted@${FLAVOR}
+TEST_DEPENDS=	trial:devel/py-twisted@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

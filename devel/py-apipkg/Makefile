@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-apipkg/Makefile 442845 2017-06-07 15:14:00Z woodsb02 $
+# $FreeBSD: head/devel/py-apipkg/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	apipkg
 PORTVERSION=	1.4
@@ -14,7 +14,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_ARCH=	yes
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

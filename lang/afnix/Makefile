@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/lang/afnix/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/lang/afnix/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	afnix
 PORTVERSION=	2.6.3
@@ -13,6 +13,7 @@ MAINTAINER=	johans@FreeBSD.org
 COMMENT=	Multi-threaded functional programming language
 
 BROKEN_armv6=		fails to compile: operator new takes type size_t as first parameterk/er
+BROKEN_armv7=		fails to compile: operator new takes type size_t as first parameterk/er
 BROKEN_i386=		fails to build
 BROKEN_powerpc=		fails to configure
 BROKEN_powerpc64=	fails to build: afnix-setup: cannot determine linking type

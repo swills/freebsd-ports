@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-allauth/Makefile 453490 2017-11-04 22:15:07Z dbaio $
+# $FreeBSD: head/www/py-django-allauth/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-allauth
 PORTVERSION=	0.34.0
@@ -12,7 +12,7 @@ COMMENT=	User registration with social account authentication
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=1.6:www/py-django18
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=1.6:www/py-django18@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

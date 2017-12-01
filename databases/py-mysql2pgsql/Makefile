@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/py-mysql2pgsql/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/py-mysql2pgsql/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	mysql2pgsql
 PORTVERSION=	0.1.6
@@ -12,11 +12,11 @@ COMMENT=	Tool for migrating/converting from MySQL to PostgreSQL
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=1.2.3:databases/py-MySQLdb \
-		${PYTHON_PKGNAMEPREFIX}psycopg2>=2.4.2:databases/py-psycopg2 \
-		${PYTHON_PKGNAMEPREFIX}termcolor>=1.1.0:devel/py-termcolor \
-		${PYTHON_PKGNAMEPREFIX}yaml>=3.10.0:devel/py-yaml \
-		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=1.2.3:databases/py-MySQLdb@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}psycopg2>=2.4.2:databases/py-psycopg2@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}termcolor>=1.1.0:devel/py-termcolor@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>=3.10.0:devel/py-yaml@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${FLAVOR}
 
 USES=		python:2
 USE_PYTHON=	distutils autoplist

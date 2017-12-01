@@ -1,5 +1,5 @@
 # Created by: Joshua Goodall <joshua@roughtrade.net>
-# $FreeBSD: head/net/spread-j/Makefile 441879 2017-05-27 21:43:26Z linimon $
+# $FreeBSD: head/net/spread-j/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	spread
 PORTVERSION=	3.17.3
@@ -15,6 +15,7 @@ COMMENT=	Java client library for the Spread Group Communication System
 BUILD_DEPENDS=	${ANT}:devel/apache-ant
 
 BROKEN_armv6=		fails to package: java/docs/*.html: No such file or directory
+BROKEN_armv7=		fails to package: java/docs/*.html: No such file or directory
 
 USE_JAVA=	YES
 JAVA_VERSION=	1.6+

@@ -1,5 +1,5 @@
 # Created by: jpaetzel@FreeBSD.org
-# $FreeBSD: head/sysutils/catfish/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/catfish/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	catfish
 PORTVERSION=	1.4.1
@@ -12,13 +12,13 @@ COMMENT=	GTK search utility
 LICENSE=	GPLv3
 
 RUN_DEPENDS=	\
-	${PYTHON_PKGNAMEPREFIX}python-distutils-extra>0:devel/py-python-distutils-extra \
-	${PYTHON_PKGNAMEPREFIX}pexpect>0:misc/py-pexpect \
-	${PYTHON_PKGNAMEPREFIX}gobject3>=0:devel/py-gobject3 \
+	${PYTHON_PKGNAMEPREFIX}python-distutils-extra>0:devel/py-python-distutils-extra@${FLAVOR} \
+	${PYTHON_PKGNAMEPREFIX}pexpect>0:misc/py-pexpect@${FLAVOR} \
+	${PYTHON_PKGNAMEPREFIX}gobject3>=0:devel/py-gobject3@${FLAVOR} \
 	gksu:sysutils/gksu
 BUILD_DEPENDS=	${RUN_DEPENDS}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 USE_GNOME=	gtk30 intltool
 

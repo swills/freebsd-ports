@@ -1,5 +1,5 @@
 # Created by: Babak Farrokhi <farrokhi@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/fastnetmon/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/net-mgmt/fastnetmon/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	fastnetmon
 PORTVERSION=	1.1.3
@@ -33,6 +33,7 @@ CMAKE_ARGS+=	-DDISABLE_PF_RING_SUPPORT=ON
 CMAKE_INSTALL_PREFIX=	${PREFIX}
 
 BROKEN_armv6=		Does not build: invokes x86 assembler
+BROKEN_armv7=		Does not build: invokes x86 assembler
 BROKEN_powerpc64=	Does not build
 
 USE_RC_SUBR=	${PORTNAME}

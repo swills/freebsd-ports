@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-gitdb/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-gitdb/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gitdb
 PORTVERSION=	0.6.4
@@ -14,9 +14,9 @@ COMMENT=	Pure Python git object database
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}smmap>=0.8.5:devel/py-smmap
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}smmap>=0.8.5:devel/py-smmap@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 post-install:

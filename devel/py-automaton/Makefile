@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-automaton/Makefile 432698 2017-01-29 07:51:44Z novel $
+# $FreeBSD: head/devel/py-automaton/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	automaton
 PORTVERSION=	1.7.0
@@ -12,10 +12,10 @@ COMMENT=	Friendly state machines for python
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.8:devel/py-pbr
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six \
-		${PYTHON_PKGNAMEPREFIX}debtcollector>=1.2.0:devel/py-debtcollector \
-		${PYTHON_PKGNAMEPREFIX}prettytable>=0:devel/py-prettytable
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.8:devel/py-pbr@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}debtcollector>=1.2.0:devel/py-debtcollector@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}prettytable>=0:devel/py-prettytable@${FLAVOR}
 
 NO_ARCH=	yes
 

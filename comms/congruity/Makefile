@@ -1,5 +1,5 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/comms/congruity/Makefile 443053 2017-06-10 01:51:02Z sunpoet $
+# $FreeBSD: head/comms/congruity/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	congruity
 PORTVERSION=	18
@@ -12,7 +12,7 @@ COMMENT=	GUI Logitech Harmony configuration tool
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libconcord>=0:comms/py-libconcord
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libconcord>=0:comms/py-libconcord@${PY_FLAVOR}
 
 MAKE_ARGS=	MANDIR=${PREFIX}/man
 USES=		desktop-file-utils gmake tar:bzip2 python:2.7+

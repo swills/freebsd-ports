@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/seafile-server/Makefile 449260 2017-09-04 19:49:41Z ultima $
+# $FreeBSD: head/net-mgmt/seafile-server/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	seafile-server
 DISTVERSIONPREFIX=	v
@@ -22,8 +22,8 @@ LIB_DEPENDS=	libsearpc.so:devel/libsearpc \
 		libevent.so:devel/libevent \
 		libuuid.so:misc/e2fsprogs-libuuid \
 		libjansson.so:devel/jansson
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3 \
-		${PYTHON_PKGNAMEPREFIX}urllib3>0:net/py-urllib3 \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}urllib3>0:net/py-urllib3@${PY_FLAVOR} \
 		bash:shells/bash
 
 CONFLICTS=	seafile-[0-9]*

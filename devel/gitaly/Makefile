@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/gitaly/Makefile 452771 2017-10-24 14:19:28Z tz $
+# $FreeBSD: head/devel/gitaly/Makefile 455053 2017-11-28 16:06:22Z tz $
 
 PORTNAME=	gitaly
 DISTVERSIONPREFIX=	v

@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/devel/py-unpaddedbase64/Makefile 431779 2017-01-18 02:16:54Z feld $
+# $FreeBSD: head/devel/py-unpaddedbase64/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	unpaddedbase64
 PORTVERSION=	1.1.0
@@ -13,7 +13,7 @@ COMMENT=	Unpadded Base64
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
 
 USES=		python
 USE_GITHUB=	yes

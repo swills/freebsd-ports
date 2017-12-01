@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-python-magic/Makefile 407583 2016-01-31 08:20:01Z koobs $
+# $FreeBSD: head/devel/py-python-magic/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	python-magic
 PORTVERSION=	0.4.10
@@ -12,7 +12,7 @@ COMMENT=	File type identification using libmagic
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES?=		python
+USES=		python
 USE_GITHUB=	yes
 USE_PYTHON=	autoplist distutils
 

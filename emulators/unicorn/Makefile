@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/unicorn/Makefile 441882 2017-05-27 22:30:08Z linimon $
+# $FreeBSD: head/emulators/unicorn/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	unicorn
 PORTVERSION=	1.0.1
@@ -13,6 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 TEST_DEPENDS=	cmocka>0:sysutils/cmocka
 
 BROKEN_armv6=		fails to compile: 'tcg-target.h' file not found
+BROKEN_armv7=		fails to compile: 'tcg-target.h' file not found
 BROKEN_mips=		fails to compile: 'ICACHE' undeclared (first use in this function)
 BROKEN_mips64=		fails to compile: 'ICACHE' undeclared (first use in this function)
 BROKEN_powerpc64=	fails to compile: cc1: unrecognized command line option "-Wno-logical-op-parentheses"

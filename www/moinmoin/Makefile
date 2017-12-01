@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@python.or.kr>
-# $FreeBSD: head/www/moinmoin/Makefile 438790 2017-04-18 18:29:08Z miwi $
+# $FreeBSD: head/www/moinmoin/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	moinmoin
 PORTVERSION=	1.9.9
@@ -13,7 +13,7 @@ COMMENT=	Python clone of WikiWiki
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/docs/licenses/COPYING
 
-USES=		cpe python shebangfix
+USES=		cpe python:2.7 shebangfix
 CPE_VENDOR=	moinmo
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGNAME=	moin

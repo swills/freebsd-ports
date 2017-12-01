@@ -1,5 +1,5 @@
 # Created by: Carlos J Puga Medina <cpm@fbsd.es>
-# $FreeBSD: head/textproc/py-sphinxcontrib-programoutput/Makefile 441337 2017-05-20 21:17:35Z cpm $
+# $FreeBSD: head/textproc/py-sphinxcontrib-programoutput/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sphinxcontrib-programoutput
 PORTVERSION=	0.11
@@ -13,7 +13,7 @@ COMMENT=	Sphinx extension to include program output
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=1.3.5:textproc/py-sphinx
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=1.3.5:textproc/py-sphinx@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

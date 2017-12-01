@@ -1,5 +1,5 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/comms/py-libconcord/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/py-libconcord/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	libconcord
 PORTVERSION=	1.2
@@ -17,7 +17,7 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libconcord.so:comms/libconcord
 
 USE_LDCONFIG=	yes
-USES=		python:2.7+ tar:bzip2
+USES=		python:2.7 tar:bzip2
 WRKSRC_SUBDIR=	libconcord/bindings/python
 USE_PYTHON=	distutils
 

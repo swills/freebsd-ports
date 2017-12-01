@@ -1,8 +1,8 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/www/palemoon/Makefile 454808 2017-11-23 22:53:32Z jbeich $
+# $FreeBSD: head/www/palemoon/Makefile 455086 2017-11-29 00:12:41Z tobik $
 
 PORTNAME=	palemoon
-DISTVERSION=	27.6.1
+DISTVERSION=	27.6.2
 DISTVERSIONSUFFIX=_Release
 CATEGORIES=	www ipv6
 
@@ -42,7 +42,7 @@ MOZ_OPTIONS=	--enable-application=browser \
 		--enable-jemalloc-lib
 
 OPTIONS_DEFAULT=	BUNDLED_CAIRO GTK2
-OPTIONS_EXCLUDE=	DTRACE INTEGER_SAMPLES JACK SNDIO TEST
+OPTIONS_EXCLUDE=	DTRACE INTEGER_SAMPLES JACK TEST
 
 .include "${.CURDIR}/../../www/firefox/Makefile.options"
 

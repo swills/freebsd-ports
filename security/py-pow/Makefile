@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/security/py-pow/Makefile 437668 2017-04-03 17:33:48Z jkim $
+# $FreeBSD: head/security/py-pow/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pow
 PORTVERSION=	0.7
@@ -14,7 +14,7 @@ COMMENT=	Python OpenSSL Wrappers
 
 LICENSE=	BSD3CLAUSE
 
-USES=		python ssl
+USES=		python:2.7 ssl
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGNAME=	POW
 

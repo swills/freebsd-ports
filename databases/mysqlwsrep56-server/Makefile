@@ -1,5 +1,5 @@
 # Created by: Philip Stoev <philip.stoev@galeracluster.com>
-# $FreeBSD: head/databases/mysqlwsrep56-server/Makefile 452862 2017-10-25 15:00:23Z vd $
+# $FreeBSD: head/databases/mysqlwsrep56-server/Makefile 455165 2017-11-30 05:55:17Z linimon $
 
 PORTNAME=	mysqlwsrep
 PORTVERSION?=	5.6.38
@@ -25,7 +25,7 @@ BROKEN_powerpc64=	Does not build
 DATADIR=	${PREFIX}/share/mysql
 ETCDIR=		${PREFIX}/etc/mysql
 
-NOT_FOR_ARCHS=	aarch64 armv6 powerpc64
+NOT_FOR_ARCHS=	aarch64 armv6 armv7 powerpc64
 NOT_FOR_ARCHS_REASON=	error: Unsupported platform
 
 USES=		bison \
@@ -146,7 +146,7 @@ post-install:
 	${MKDIR} ${STAGEDIR}${MY_SECDIR}
 	${MKDIR} ${STAGEDIR}${MY_TMPDIR}
 
-.if ${ARCH} == "armv6"
+.if ${ARCH} == armv6 || ${ARCH} == armv7
 EXTRA_PATCHES+=	${FILESDIR}/extra-patch-config.h.cmake
 .endif
 

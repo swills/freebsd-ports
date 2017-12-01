@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/www/py-django/Makefile 453366 2017-11-02 19:01:34Z sunpoet $
+# $FreeBSD: head/www/py-django/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django
 CATEGORIES=	www python
@@ -21,11 +21,12 @@ DJANGO111_DESC=	Use Django 1.11.x
 PORTSCOUT=	ignore:1
 
 USES=		cpe metaport python:run
+USE_PYTHON=	flavors
 
 CPE_VENDOR=	djangoproject
 
-DJANGO18_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18
-DJANGO110_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django110>=0:www/py-django110
-DJANGO111_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=0:www/py-django111
+DJANGO18_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${FLAVOR}
+DJANGO110_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django110>=0:www/py-django110@${FLAVOR}
+DJANGO111_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=0:www/py-django111@${FLAVOR}
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Julian Stacey <jhs@FreeBSD.org>
-# $FreeBSD: head/misc/estic/Makefile 452288 2017-10-17 18:31:59Z fjoe $
+# $FreeBSD: head/misc/estic/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=		estic
 PORTVERSION=		1.61
@@ -15,6 +15,7 @@ COMMENT=		Controller for ISDN TK-Anlage (PBX) made by Istec
 LICENSE=	BSD2CLAUSE
 
 BROKEN_armv6=		fails to compile: str.h: friend declaration specifying a default argument must be the only declaration
+BROKEN_armv7=		fails to compile: str.h: friend declaration specifying a default argument must be the only declaration
 
 USES=		ncurses zip
 USE_CSTD=	gnu89

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/audio/py-pyliblo/Makefile 454893 2017-11-25 20:29:50Z yuri $
+# $FreeBSD: head/audio/py-pyliblo/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyliblo
 DISTVERSION=	0.10.0
@@ -14,12 +14,11 @@ COMMENT=	Python wrapper for the Liblo OSC Library
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	cython${PYTHON_VER:M3.*:S/^3/-3/}:lang/cython${PYTHON_MAJOR_VER:M3}
 LIB_DEPENDS=	liblo.so:audio/liblo
 
 USES=		localbase:ldflags python
 USES=		python
-USE_PYTHON=	distutils # autoplist fails to add the manpage files
+USE_PYTHON=	distutils cython
 MAKE_ENV+=	PREFIX=${PREFIX} LOCALBASE=${LOCALBASE}
 
 post-patch:

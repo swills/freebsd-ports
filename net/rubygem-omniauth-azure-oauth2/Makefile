@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/net/rubygem-omniauth-azure-oauth2/Makefile 416662 2016-06-10 09:08:02Z tz $
+# $FreeBSD: head/net/rubygem-omniauth-azure-oauth2/Makefile 455060 2017-11-28 16:33:47Z tz $
 
 PORTNAME=	omniauth-azure-oauth2
 PORTVERSION=	0.0.9

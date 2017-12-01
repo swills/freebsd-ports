@@ -1,5 +1,5 @@
 # Created by: elvstone@gmail.com
-# $FreeBSD: head/databases/py-sqlalchemy-migrate/Makefile 436207 2017-03-15 10:59:09Z lwhsu $
+# $FreeBSD: head/databases/py-sqlalchemy-migrate/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sqlalchemy-migrate
 PORTVERSION=	0.11.0
@@ -13,13 +13,13 @@ COMMENT=	Database schema migrations for SQLAlchemy
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.3:devel/py-pbr
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlalchemy10>=0.7.8:databases/py-sqlalchemy10 \
-		${PYTHON_PKGNAMEPREFIX}Tempita>=0.4:textproc/py-Tempita \
-		${PYTHON_PKGNAMEPREFIX}decorator>0:devel/py-decorator \
-		${PYTHON_PKGNAMEPREFIX}sqlparse>0:databases/py-sqlparse \
-		${PYTHON_PKGNAMEPREFIX}six>=1.7.0:devel/py-six \
-		${PYTHON_PKGNAMEPREFIX}pbr>=1.3:devel/py-pbr
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.3:devel/py-pbr@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlalchemy10>=0.7.8:databases/py-sqlalchemy10@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Tempita>=0.4:textproc/py-Tempita@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}decorator>0:devel/py-decorator@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlparse>0:databases/py-sqlparse@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.7.0:devel/py-six@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pbr>=1.3:devel/py-pbr@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils concurrent autoplist

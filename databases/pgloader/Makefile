@@ -1,5 +1,5 @@
 # Created by: Pierre-Emmanuel Andre
-# $FreeBSD: head/databases/pgloader/Makefile 439170 2017-04-22 12:45:43Z miwi $
+# $FreeBSD: head/databases/pgloader/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pgloader
 PORTVERSION=	2.3.1
@@ -11,10 +11,10 @@ MAINTAINER=	pea@raveland.org
 COMMENT=	Import CSV data and Large Object to PostgreSQL
 
 NO_BUILD=	yes
-USES=		python shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	*.py
 
-RUN_DEPENDS+=	${PYTHON_SITELIBDIR}/psycopg2/__init__.py:databases/py-psycopg2
+RUN_DEPENDS+=	${PYTHON_SITELIBDIR}/psycopg2/__init__.py:databases/py-psycopg2@${PY_FLAVOR}
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 

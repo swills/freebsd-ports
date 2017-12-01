@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale	<nivit@email.it>
-# $FreeBSD: head/textproc/py-enchant/Makefile 446545 2017-07-24 19:42:52Z thierry $
+# $FreeBSD: head/textproc/py-enchant/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	enchant
 PORTVERSION=	1.6.11
@@ -21,7 +21,7 @@ OPTIONS_DEFAULT=WX
 WX_DESC=	Provide a wxSpellCheckerDialog
 OPTIONS_SUB=	yes
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 WX_USE=		WX=3.0+

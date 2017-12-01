@@ -1,5 +1,5 @@
 # Created by: Scott Cheloha <scottcheloha@gmail.com>
-# $FreeBSD: head/biology/bedtools/Makefile 441847 2017-05-27 15:07:11Z linimon $
+# $FreeBSD: head/biology/bedtools/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	bedtools
 PORTVERSION=	2.25.0
@@ -14,6 +14,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_armv6=		fails to compile: implicit instantiation of undefined template __static_assert_test<false>
+BROKEN_armv7=		fails to compile: implicit instantiation of undefined template __static_assert_test<false>
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	arq5x

@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/py-pretty_midi/Makefile 454848 2017-11-24 20:32:43Z yuri $
+# $FreeBSD: head/multimedia/py-pretty_midi/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pretty_midi
 DISTVERSION=	0.2.8
@@ -12,8 +12,8 @@ COMMENT=	Utility functions for handling MIDI data in a nice/intuitive way
 LICENSE=	MIT
 
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}mido>=1.1.16:multimedia/py-mido \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+		${PYTHON_PKGNAMEPREFIX}mido>=1.1.16:multimedia/py-mido@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

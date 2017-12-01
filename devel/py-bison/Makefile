@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/py-bison/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/devel/py-bison/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	bison
 PORTVERSION=	0.1.8
@@ -15,11 +15,11 @@ COMMENT=	Python-based parsing at the speed of C
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	pyrex>=0.9.6.2:devel/pyrex
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyrex>=0.9.6.2:devel/pyrex@${FLAVOR}
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
-USES=		bison:both python
+USES=		bison:both python:2.7
 USE_PYTHON=	distutils autoplist
 
 DOCSDIR=	${PREFIX}/share/doc/py-${PORTNAME}

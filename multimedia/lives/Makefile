@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/multimedia/lives/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/multimedia/lives/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	lives
 PORTVERSION=	2.8.7
@@ -25,7 +25,7 @@ LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 		libvisual-0.4.so:graphics/libvisual04 \
 		libopencv_calib3d.so:graphics/opencv \
 		libopencv_core.so:graphics/opencv-core \
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libfftw3.so:math/fftw3 \
 		libfftw3f.so:math/fftw3-float \
 		libavcodec.so:multimedia/ffmpeg \

@@ -1,5 +1,5 @@
 # Created by: roam@FreeBSD.org
-# $FreeBSD: head/security/poly1305aes/Makefile 441819 2017-05-27 00:20:19Z linimon $
+# $FreeBSD: head/security/poly1305aes/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	poly1305aes
 PORTVERSION=	20050218
@@ -16,6 +16,7 @@ ALL_TARGET=	default
 CC+=		${CPPFLAGS} ${CFLAGS} ${LDFLAGS}
 
 BROKEN_armv6=		fails to build: poly1305aes.impl.do: fatal: all tests failed
+BROKEN_armv7=		fails to build: poly1305aes.impl.do: fatal: all tests failed
 BROKEN_aarch64=		fails to build: poly1305aes.impl.do: fatal: all tests failed
 NOT_FOR_ARCHS=	amd64
 

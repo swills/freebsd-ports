@@ -1,5 +1,5 @@
 # Created by: Peter Haight <peterh@sapros.com>
-# $FreeBSD: head/net-im/gale/Makefile 441855 2017-05-27 16:48:41Z linimon $
+# $FreeBSD: head/net-im/gale/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	gale
 PORTVERSION=	0.99f
@@ -17,6 +17,7 @@ LIB_DEPENDS=	libgc.so:devel/boehm-gc \
 
 BROKEN_aarch64=		fails to compile: conflicting types for __wcwidth
 BROKEN_armv6=		fails to compile: conflicting types for __wcwidth
+BROKEN_armv7=		fails to compile: conflicting types for __wcwidth
 
 USES=		iconv libtool ncurses ssl
 GNU_CONFIGURE=	yes

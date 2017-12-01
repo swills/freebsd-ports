@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/py-pycodestyle/Makefile 435161 2017-03-01 15:01:02Z amdmi3 $
+# $FreeBSD: head/devel/py-pycodestyle/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pycodestyle
 PORTVERSION=	2.3.1
@@ -12,7 +12,7 @@ COMMENT=	Python style guide checker
 
 LICENSE=	MIT # mentioned as "Expat"
 
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 NO_ARCH=	yes
 

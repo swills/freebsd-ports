@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pathtools/Makefile 427801 2016-12-04 20:57:43Z bapt $
+# $FreeBSD: head/devel/py-pathtools/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pathtools
 PORTVERSION=	0.1.2
@@ -20,11 +20,11 @@ USE_PYTHON=	distutils autoplist
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MDOCS}
-BUILD_DEPENDS+=	${PKGNAMEPREFIX}sphinx>=1.1.3:textproc/py-sphinx
+BUILD_DEPENDS+=	${PKGNAMEPREFIX}sphinx>=1.1.3:textproc/py-sphinx@${FLAVOR}
 DOCSDIR=	${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME}
 
 post-build:
-	@(cd ${WRKSRC}/docs ; ${MAKE} html)
+	@(cd ${WRKSRC}/docs ; ${MAKE} SPHINXBUILD=sphinx-build-${PYTHON_VER} html)
 
 post-install:
 	@(cd ${WRKSRC}/docs/build/html ; ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR} \

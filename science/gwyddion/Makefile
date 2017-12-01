@@ -1,9 +1,9 @@
 # Created by: Yeti <yeti@gwyddion.net>
-# $FreeBSD: head/science/gwyddion/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/science/gwyddion/Makefile 455244 2017-12-01 01:58:23Z mandree $
 
 PORTNAME=	gwyddion
 PORTVERSION=	2.45
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	science graphics
 MASTER_SITES=	SF
 
@@ -40,7 +40,7 @@ OPTIONS_SUB=		yes
 
 PERL_USES=		perl5
 PERL_CONFIGURE_WITH=	perl
-PYTHON_USES=		python
+PYTHON_USES=		python:2.7
 PYTHON_USE=		gnome=pygtksourceview
 PYTHON_CONFIGURE_ENABLE=	pygwy
 PYTHON_CONFIGURE_WITH=	gtksourceview python

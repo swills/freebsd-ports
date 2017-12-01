@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/bouncy/Makefile 414989 2016-05-11 13:06:48Z amdmi3 $
+# $FreeBSD: head/games/bouncy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	bouncy
 PORTVERSION=	r6
@@ -19,7 +19,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/GPL.txt
 
 RUN_DEPENDS=	${PYGAME} \
-		${PYTHON_PKGNAMEPREFIX}PyOpenGL>=0:graphics/py-PyOpenGL
+		${PYTHON_PKGNAMEPREFIX}PyOpenGL>=0:graphics/py-PyOpenGL@${PY_FLAVOR}
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-post-${DISTVERSION}
 

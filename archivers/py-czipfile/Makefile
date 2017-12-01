@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/archivers/py-czipfile/Makefile 451917 2017-10-12 17:30:49Z feld $
+# $FreeBSD: head/archivers/py-czipfile/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	czipfile
 PORTVERSION=	1.0.0
@@ -12,7 +12,7 @@ COMMENT=	Fast C-based zipfile decryption for Python
 
 LICENSE=	PSFL
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

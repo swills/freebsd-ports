@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/tornova/Makefile 413197 2016-04-13 10:47:14Z jbeich $
+# $FreeBSD: head/net-mgmt/tornova/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tornova
 PORTVERSION=	0.2.3
@@ -11,7 +11,7 @@ COMMENT=	Frontend for Tor
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}stem>=0.18:security/py-stem \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}stem>=0.18:security/py-stem@${FLAVOR} \
 		tor:security/tor
 
 USE_GITHUB=	yes

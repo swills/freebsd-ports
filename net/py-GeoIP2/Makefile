@@ -1,5 +1,5 @@
 # Created by: Olivier Cochard-Labbé <olivier@FreeBSD.org>
-# $FreeBSD: head/net/py-GeoIP2/Makefile 453216 2017-10-31 06:32:46Z olivier $
+# $FreeBSD: head/net/py-GeoIP2/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	GeoIP2
 PORTVERSION=	2.6.0
@@ -13,8 +13,8 @@ COMMENT=	MaxMind GeoIP2 Python API
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}maxminddb>=1.1.0:net/py-maxminddb \
-		${PYTHON_PKGNAMEPREFIX}requests>=2.4:www/py-requests
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}maxminddb>=1.1.0:net/py-maxminddb@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=2.4:www/py-requests@${FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	maxmind

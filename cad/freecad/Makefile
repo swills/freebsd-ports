@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/freecad/Makefile 451522 2017-10-08 12:40:34Z madpilot $
+# $FreeBSD: head/cad/freecad/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	FreeCAD
 DISTVERSION=	0.17.12018
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libboost_python.so:devel/boost-python-libs \
 		libpyside-python2.7.so:devel/pyside \
 		libCoin.so:graphics/Coin \
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libtiff.so:graphics/tiff \
 		libvtkFiltersTexture-6.2.so:math/vtk6 \
 		libTKernel.so:cad/opencascade \

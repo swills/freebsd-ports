@@ -1,5 +1,5 @@
 # Created by: Martin Jackson <mhjacks@swbell.net>
-# $FreeBSD: head/devel/py-pyasn1/Makefile 452307 2017-10-17 20:17:17Z swills $
+# $FreeBSD: head/devel/py-pyasn1/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyasn1
 PORTVERSION=	0.3.7
@@ -14,7 +14,7 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.rst
 
 NO_ARCH=	yes
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 do-test:

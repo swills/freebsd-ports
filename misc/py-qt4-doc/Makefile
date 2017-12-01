@@ -1,5 +1,5 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/misc/py-qt4-doc/Makefile 403662 2015-12-13 12:45:25Z rakuco $
+# $FreeBSD: head/misc/py-qt4-doc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	doc
 PORTVERSION=	${PYQT4_VERSION}
@@ -17,6 +17,7 @@ NO_BUILD=	yes
 
 USES=		python pyqt:4
 USE_PYQT=	#
+USE_PYTHON=	flavors
 
 DOCSDIR=	${PREFIX}/share/doc/py-qt4
 

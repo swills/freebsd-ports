@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/archivers/py-python-lzo/Makefile 440233 2017-05-06 06:08:03Z miwi $
+# $FreeBSD: head/archivers/py-python-lzo/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	python-lzo
 PORTVERSION=	1.11
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	liblzo2.so:archivers/lzo2
 
-USES=		python:2
+USES=		python
 USE_PYTHON=	autoplist distutils
 CFLAGS+=	-I${LOCALBASE}/include -I${LOCALBASE}/include/lzo
 

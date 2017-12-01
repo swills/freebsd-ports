@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/epydoc/Makefile 401967 2015-11-19 20:49:11Z amdmi3 $
+# $FreeBSD: head/devel/epydoc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	epydoc
 PORTVERSION=	3.0.1
@@ -12,7 +12,7 @@ COMMENT=	Python API documentation generation tool
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 OPTIONS_DEFINE=	DOCS UTF8

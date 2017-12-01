@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/py-qt5-demo/Makefile 453263 2017-11-01 07:32:34Z antoine $
+# $FreeBSD: head/misc/py-qt5-demo/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	demo
 PORTVERSION=	${PYQT5_VERSION}
@@ -22,7 +22,7 @@ USE_PYQT=	core_run dbus_run designer_run \
 		sql_run svg_run test_run webkit_run xml_run \
 		xmlpatterns_run sip_run qscintilla2_run \
 		printsupport_run serialport_run webkitwidgets_run widgets_run
-USE_PYTHON=	py3kplist
+USE_PYTHON=	py3kplist flavors
 
 EXAMPLESDIR=	${PREFIX}/share/examples/py-qt5
 

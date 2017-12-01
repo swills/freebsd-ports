@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <dima@Chg.RU>
-# $FreeBSD: head/databases/rrdtool/Makefile 450381 2017-09-22 15:11:15Z zeising $
+# $FreeBSD: head/databases/rrdtool/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rrdtool
 PORTVERSION=	1.7.0
@@ -52,6 +52,7 @@ PERL_CONFIGURE_ON=	--enable-perl --enable-perl-site-install
 PERL_USES=		perl5
 PYTHON_CONFIGURE_ENABLE=python
 PYTHON_USES=		python
+PYTHON_USE=		python=flavors,optsuffix
 RUBY_CONFIGURE_ENABLE=	ruby
 RUBY_USE=		RUBY=yes
 

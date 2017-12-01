@@ -1,5 +1,5 @@
 # Created by: bra@fsn.hu
-# $FreeBSD: head/net/py-ldaptor/Makefile 449226 2017-09-04 00:00:57Z sunpoet $
+# $FreeBSD: head/net/py-ldaptor/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ldaptor
 PORTVERSION=	0.0.43
@@ -15,9 +15,9 @@ COMMENT=	Pure-python LDAP module for Twisted
 LICENSE=	MIT LGPL21+
 LICENSE_COMB=	multi
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyparsing>=0:devel/py-pyparsing \
-		${PYTHON_PKGNAMEPREFIX}openssl>=0:security/py-openssl \
-		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyparsing>=0:devel/py-pyparsing@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}openssl>=0:security/py-openssl@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR}
 
 GITVERSION=	aad8ded658b36337a08aeb7402b6b67eb8771bea
 

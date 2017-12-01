@@ -1,5 +1,5 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-photologue/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-django-photologue/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-photologue
 PORTVERSION=	3.5.1
@@ -12,11 +12,11 @@ COMMENT=	Powerful image management and gallery application for Django
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pip>0:devel/py-pip
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18 \
-		${PYTHON_PKGNAMEPREFIX}django-sortedm2m>0:www/py-django-sortedm2m \
-		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow \
-		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pip>0:devel/py-pip@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}django-sortedm2m>0:www/py-django-sortedm2m@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

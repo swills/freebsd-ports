@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-z3c.formwidget.query/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-z3c.formwidget.query/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	z3c.formwidget.query
 PORTVERSION=	0.12
@@ -13,13 +13,13 @@ COMMENT=	Source query widget for z3c.form
 LICENSE=	ZPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}z3c.form>=0:devel/py-z3c.form \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface \
-		${PYTHON_PKGNAMEPREFIX}zope.schema>=0:devel/py-zope.schema \
-		${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component \
-		${PYTHON_PKGNAMEPREFIX}zope.i18nmessageid>=0:textproc/py-zope.i18nmessageid
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}z3c.form>=0:devel/py-z3c.form@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.schema>=0:devel/py-zope.schema@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.i18nmessageid>=0:textproc/py-zope.i18nmessageid@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

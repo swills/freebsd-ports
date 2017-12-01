@@ -1,5 +1,5 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/science/sigrok-firmware-utils/Makefile 423624 2016-10-09 21:25:24Z bsam $
+# $FreeBSD: head/science/sigrok-firmware-utils/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	firmware
 PORTVERSION=	20140418
@@ -15,7 +15,7 @@ COMMENT=	Sigrok firmware extraction utils
 
 LICENSE=	GPLv2
 
-USES=		python:3
+USES=		python:3.4+
 NO_BUILD=	yes
 
 PORTDOCS=	README.parsepe

@@ -1,5 +1,5 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/devel/py-kjbuckets/Makefile 435387 2017-03-04 11:29:16Z olgeni $
+# $FreeBSD: head/devel/py-kjbuckets/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	kjbuckets
 PORTVERSION=	1.0.0
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/../COPYRIGHT.txt
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 WRKSRC=		${WRKDIR}/${DISTNAME}/kjbuckets
 

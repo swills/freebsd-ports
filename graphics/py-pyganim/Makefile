@@ -1,5 +1,5 @@
 # Created by: Johannes Jost Meixner <johannes@perceivon.net>
-# $FreeBSD: head/graphics/py-pyganim/Makefile 416918 2016-06-15 09:04:29Z tz $
+# $FreeBSD: head/graphics/py-pyganim/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyganim
 PORTVERSION=	0.9.2
@@ -13,7 +13,7 @@ COMMENT=	Sprite animation module for Pygame
 
 LICENSE=	BSD2CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}game>0:devel/py-game
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}game>0:devel/py-game@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python zip

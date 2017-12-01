@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/isboot-kmod/Makefile 441468 2017-05-22 16:04:19Z linimon $
+# $FreeBSD: head/net/isboot-kmod/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	isboot-kmod
 PORTVERSION=	0.2.13
@@ -13,6 +13,7 @@ COMMENT=	Kernel module enabling iSCSI boot
 LICENSE=	BSD2CLAUSE
 
 BROKEN_armv6=		fails to compile: implicit declaration of function 'cp15_pmccntr_get' is invalid in C99
+BROKEN_armv7=		fails to compile: /usr/src/sys/sys/bus.h:724:10: fatal error: 'device_if.h' file not found
 BROKEN_powerpc64=	fails to compile: pcpu.h: size of array '__assert_0' is negative
 
 USES=		kmod uidfix

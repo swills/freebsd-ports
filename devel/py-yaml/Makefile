@@ -1,5 +1,5 @@
 # Created by: ijliao@FreeBSD.org
-# $FreeBSD: head/devel/py-yaml/Makefile 424443 2016-10-22 02:28:25Z jpaetzel $
+# $FreeBSD: head/devel/py-yaml/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	yaml
 PORTVERSION=	3.11
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 OPTIONS_DEFINE=	LIBYAML EXAMPLES
 LIBYAML_DESC=	Use textproc/libyaml for faster parsing
 
-USES?=		python
+USES=		python
 USE_PYTHON=	distutils autoplist
 
 EXAMPLESDIR=	${PREFIX}/share/examples/${PKGNAMEPREFIX}${PORTNAME}

@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/net/py-pyshark/Makefile 433455 2017-02-05 21:19:34Z feld $
+# $FreeBSD: head/net/py-pyshark/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyshark
 PORTVERSION=	0.3.6.2
@@ -13,10 +13,10 @@ COMMENT=	Pyhon packet parsing using wireshark dissectors
 LICENSE=	MIT
 
 RUN_DEPENDS=	tshark>0:net/tshark \
-		${PYTHON_PKGNAMEPREFIX}trollius>0:devel/py-trollius \
-		${PYTHON_PKGNAMEPREFIX}logbook>0:devel/py-logbook \
-		${PYTHON_PKGNAMEPREFIX}py>0:devel/py-py \
-		${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml
+		${PYTHON_PKGNAMEPREFIX}trollius>0:devel/py-trollius@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}logbook>0:devel/py-logbook@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}py>0:devel/py-py@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${FLAVOR}
 
 USES=		python zip
 USE_PYTHON=	autoplist distutils

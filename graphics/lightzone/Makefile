@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/lightzone/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/lightzone/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	lightzone
 PORTVERSION=	4.1.7
@@ -23,6 +23,7 @@ LIB_DEPENDS=	liblcms2.so:graphics/lcms2 \
 RUN_DEPENDS=	jhindexer:java/javahelp
 
 BROKEN_armv6=		fails to compile: build.xml: exec returned: 1
+BROKEN_armv7=		fails to compile: build.xml: exec returned: 1
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	ktgw0316

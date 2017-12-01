@@ -1,5 +1,5 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/databases/mtools-mongodb/Makefile 428608 2016-12-15 09:22:09Z bsam $
+# $FreeBSD: head/databases/mtools-mongodb/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	mtools
 PORTVERSION=	1.2.3
@@ -13,9 +13,9 @@ COMMENT=	Setup test environments; parse, filter and visualize MongoDB log files
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psutil>=2.0:sysutils/py-psutil \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psutil>=2.0:sysutils/py-psutil@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pymongo>0:databases/pymongo \
-		${PYTHON_PKGNAMEPREFIX}matplotlib>0:math/py-matplotlib
+		${PYTHON_PKGNAMEPREFIX}matplotlib>0:math/py-matplotlib@${FLAVOR}
 
 USE_PYTHON=	autoplist distutils
 USES=		python:2

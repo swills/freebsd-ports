@@ -1,5 +1,5 @@
 # Created by: Mikhail Teterin
-# $FreeBSD: head/java/berkeley-db/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/java/berkeley-db/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	je
 PORTVERSION=	6.2.31
@@ -14,6 +14,7 @@ COMMENT=	Berkeley DB Java Edition
 BUILD_DEPENDS=	${JAVALIBDIR}/junit.jar:java/junit
 
 BROKEN_armv6=		fails to build: build.xml: Java returned: 1
+BROKEN_armv7=		fails to build: build.xml: Java returned: 1
 
 OPTIONS_DEFINE=	DOCS EXAMPLES TEST
 

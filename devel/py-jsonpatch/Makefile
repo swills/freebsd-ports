@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-jsonpatch/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-jsonpatch/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	jsonpatch
 PORTVERSION=	1.9
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	harm@weites.com
 COMMENT=	Apply JSON-Patches (RFC 6902)
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}jsonpointer>0:devel/py-jsonpointer
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}jsonpointer>0:devel/py-jsonpointer@${FLAVOR}
 
 LICENSE=	BSD3CLAUSE
 

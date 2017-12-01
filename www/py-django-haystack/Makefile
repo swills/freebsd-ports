@@ -1,5 +1,5 @@
 # Created by: Kristaps Kulis <kristaps.kulis@gmail.com>
-# $FreeBSD: head/www/py-django-haystack/Makefile 424615 2016-10-25 10:38:22Z rm $
+# $FreeBSD: head/www/py-django-haystack/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-haystack
 PORTVERSION=	2.5.0
@@ -13,7 +13,7 @@ COMMENT=	Pluggable search for Django
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7+

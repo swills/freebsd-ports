@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-microversion-parse/Makefile 433321 2017-02-04 15:48:52Z rm $
+# $FreeBSD: head/devel/py-microversion-parse/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	microversion-parse
 PORTVERSION=	0.1.4
@@ -13,7 +13,7 @@ COMMENT=	Openstack microversion header parser
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.6:devel/py-pbr
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.6:devel/py-pbr@${FLAVOR}
 
 NO_ARCH=	yes
 

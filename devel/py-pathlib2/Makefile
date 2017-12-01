@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/py-pathlib2/Makefile 444305 2017-06-25 16:25:44Z ultima $
+# $FreeBSD: head/devel/py-pathlib2/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pathlib2
 PORTVERSION=	2.3.0
@@ -13,7 +13,7 @@ COMMENT=	Object-oriented filesystem paths
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.rst
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist
@@ -22,7 +22,7 @@ NO_ARCH=	yes
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3500
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}scandir>=0:sysutils/py-scandir
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}scandir>=0:sysutils/py-scandir@${FLAVOR}
 .endif
 
 do-test:

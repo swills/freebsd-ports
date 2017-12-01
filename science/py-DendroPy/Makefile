@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/py-DendroPy/Makefile 437243 2017-03-29 21:16:07Z cs $
+# $FreeBSD: head/science/py-DendroPy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	DendroPy
 PORTVERSION=	4.2.0
@@ -11,6 +11,10 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	Phylogenetic computing library
 
 LICENSE=	BSD3CLAUSE
+
+py34_BROKEN=	does not package
+py35_BROKEN=	does not package
+py36_BROKEN=	does not package
 
 USES=		python
 USE_PYTHON=	distutils

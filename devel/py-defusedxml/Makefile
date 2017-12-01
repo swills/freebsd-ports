@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/devel/py-defusedxml/Makefile 438535 2017-04-14 18:42:32Z swills $
+# $FreeBSD: head/devel/py-defusedxml/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	defusedxml
 PORTVERSION=	0.4.1
@@ -12,7 +12,7 @@ COMMENT=	XML bomb protection for Python stdlib modules
 
 LICENSE=	PSFL
 
-USES?=		python
+USES=		python
 USE_PYTHON=	distutils autoplist
 
 PORTDOCS=	*

@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/py-django-configurations/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-django-configurations/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	configurations
 PORTVERSION=	1.0
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}django-
 MAINTAINER=	tj@FreeBSD.org
 COMMENT=	Django project configuration using the composability of Python classes
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

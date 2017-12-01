@@ -1,5 +1,5 @@
 # Created by: joris
-# $FreeBSD: head/graphics/tilecache/Makefile 438789 2017-04-18 18:26:19Z miwi $
+# $FreeBSD: head/graphics/tilecache/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tilecache
 PORTVERSION=	2.11
@@ -10,13 +10,13 @@ MASTER_SITES=	http://tilecache.org/
 MAINTAINER=	joris.dedieu@gmail.com
 COMMENT=	Python-based WMS-C/TMS server
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}flup>0:www/py-flup \
-		${PYTHON_PKGNAMEPREFIX}Paste>0:www/py-paste
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}flup>0:www/py-flup@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Paste>0:www/py-paste@${FLAVOR}
 
 LICENSE=	BSD3CLAUSE MIT
 LICENSE_COMB=	multi
 
-USES=		python shebangfix
+USES=		python:2.7 shebangfix
 USE_PYTHON=	distutils autoplist
 SHEBANG_FILES=	tilecache.cgi tilecache.fcgi
 

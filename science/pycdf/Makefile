@@ -1,5 +1,5 @@
 # Created by: wenheping@gmail.com
-# $FreeBSD: head/science/pycdf/Makefile 452602 2017-10-21 20:18:16Z sunpoet $
+# $FreeBSD: head/science/pycdf/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pycdf
 PORTVERSION=	0.6.3
@@ -17,7 +17,7 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 LDFLAGS+=	"-L${LOCALBASE}/lib"
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 post-install:

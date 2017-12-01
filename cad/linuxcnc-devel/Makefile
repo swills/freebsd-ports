@@ -1,5 +1,5 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/cad/linuxcnc-devel/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/cad/linuxcnc-devel/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	linuxcnc
 PORTVERSION=	20170708
@@ -46,7 +46,7 @@ CONFIGURE_ARGS=	--with-realtime=uspace --enable-non-distributable=yes \
 		CXXFLAGS="-I${LOCALBASE}/include" CXX="${CXX}" CC="${CC}" \
 		--with-locale-dir="${PREFIX}/share/locale" --with-python=${PYTHON_CMD}
 MAKE_ENV=	BUILD_VERBOSE=1
-USES=		autoreconf gettext gmake ncurses pkgconfig python readline shebangfix tk
+USES=		autoreconf gettext gmake ncurses pkgconfig python:2.7 readline shebangfix tk
 USE_GL=		gl glu
 USE_GNOME=	cairo gdkpixbuf2 libgnomeprintui pygtksourceview
 USE_XORG=	ice sm x11 xext xft xinerama xmu xrender xscrnsaver xt

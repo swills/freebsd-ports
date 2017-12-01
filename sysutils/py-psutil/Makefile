@@ -1,5 +1,5 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/sysutils/py-psutil/Makefile 453857 2017-11-09 19:44:21Z sunpoet $
+# $FreeBSD: head/sysutils/py-psutil/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	psutil
 PORTVERSION=	5.4.1
@@ -13,8 +13,8 @@ COMMENT=	Process utilities module for Python
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock \
-		${PYTHON_PKGNAMEPREFIX}unittest2>=0:devel/py-unittest2
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}unittest2>=0:devel/py-unittest2@${FLAVOR}
 
 USE_PYTHON=	autoplist concurrent distutils
 USES=		python

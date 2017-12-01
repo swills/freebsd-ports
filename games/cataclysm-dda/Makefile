@@ -1,5 +1,5 @@
 # Created by: Vladimir Kondratiev <wulf@cicgroup.ru>
-# $FreeBSD: head/games/cataclysm-dda/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/games/cataclysm-dda/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	cataclysm-dda
 PORTVERSION=	0.C
@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 BROKEN_aarch64=		fails to compile: comparison of integers of different signs: wchar_t and const int
 BROKEN_armv6=		fails to compile: comparison of integers of different signs: wchar_t and const int
+BROKEN_armv7=		fails to compile: comparison of integers of different signs: wchar_t and const int
 BROKEN_powerpc64=	fails to compile: overmap.cpp: 'pow' is not a member of 'std'
 
 USES=		alias compiler:c++11-lib gmake shebangfix

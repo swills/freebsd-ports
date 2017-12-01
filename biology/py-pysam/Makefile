@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/py-pysam/Makefile 453556 2017-11-05 19:12:28Z yuri $
+# $FreeBSD: head/biology/py-pysam/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pysam
 DISTVERSION=	0.13
@@ -12,11 +12,8 @@ COMMENT=	Python module for reading, manipulating and writing genomic data sets
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	cython:lang/cython
-RUN_DEPENDS=	cython:lang/cython
-
 USES=		gmake python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils cython cython_run
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/pysam/*.so

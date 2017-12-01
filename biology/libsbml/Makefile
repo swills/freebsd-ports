@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/biology/libsbml/Makefile 441126 2017-05-18 02:22:18Z wen $
+# $FreeBSD: head/biology/libsbml/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	libsbml
 PORTVERSION=	5.15.0
@@ -27,7 +27,7 @@ OPTIONS_SUB=	yes
 PLIST_SUB+=	PORTVERSION=${PORTVERSION}
 
 PYTHON_BUILD_DEPENDS=	swig2.0:devel/swig20
-PYTHON_USES=		python
+PYTHON_USES=		python:2.7
 PYTHON_CMAKE_ON=	-DWITH_PYTHON:BOOL=ON \
 			-DPYTHON_INCLUDE_DIR:STRING="${PYTHON_INCLUDEDIR}" \
 			-DPYTHON_LIBRARY:STRING="${PYTHONBASE}/lib/lib${PYTHON_VERSION}.so" \

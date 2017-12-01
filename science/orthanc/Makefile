@@ -1,5 +1,5 @@
 # Created by: mp39590@gmail.com
-# $FreeBSD: head/science/orthanc/Makefile 453181 2017-10-30 14:45:19Z misha $
+# $FreeBSD: head/science/orthanc/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	orthanc
 PORTVERSION=	1.3.0
@@ -32,7 +32,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libcharls.so:devel/dcmtk \
 		libdcmjpls.so:devel/dcmtk \
 		libsqlite3.so:databases/sqlite3 \
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libgtest.so:devel/googletest \
 		libpugixml.so:textproc/pugixml
 

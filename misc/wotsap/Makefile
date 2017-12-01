@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/misc/wotsap/Makefile 438894 2017-04-19 16:45:17Z miwi $
+# $FreeBSD: head/misc/wotsap/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	wotsap
 PORTVERSION=	0.7
@@ -11,7 +11,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	danilo@FreeBSD.org
 COMMENT=	Web of trust statistics and pathfinder
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR}
 
 USES=		python:2,run shebangfix
 NO_BUILD=	yes

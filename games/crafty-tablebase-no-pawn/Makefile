@@ -1,5 +1,5 @@
 # Created by: Jonathan Shoemaker <shoemaker@bluebottle.com>
-# $FreeBSD: head/games/crafty-tablebase-no-pawn/Makefile 440858 2017-05-13 23:21:37Z linimon $
+# $FreeBSD: head/games/crafty-tablebase-no-pawn/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	crafty-tablebases-no-pawn
 PORTVERSION=	20070910
@@ -51,6 +51,7 @@ NO_BUILD=	yes
 
 BROKEN_aarch64=		Fails to install: runaway process
 BROKEN_armv6=		Fails to install: runaway process
+BROKEN_armv7=		Fails to install: runaway process
 BROKEN_mips64=		Fails to install: runaway process
 BROKEN_powerpc64=	Fails to install: runaway process
 

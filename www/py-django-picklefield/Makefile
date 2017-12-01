@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/py-django-picklefield/Makefile 417356 2016-06-23 09:48:53Z tz $
+# $FreeBSD: head/www/py-django-picklefield/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	picklefield
 PORTVERSION=	0.3.2
@@ -14,8 +14,8 @@ COMMENT=	Pickled object field for Django
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18 \
-		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

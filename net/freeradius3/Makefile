@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/freeradius3/Makefile 454113 2017-11-13 12:49:35Z mat $
+# $FreeBSD: head/net/freeradius3/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	freeradius
 DISTVERSION=	3.0.15
@@ -98,7 +98,7 @@ PGSQL_CONFIGURE_WITH=		rlm_sql_postgresql
 PYTHON_CONFIGURE_WITH=		rlm_python
 PYTHON_CONFIGURE_ON=		--with-rlm-python-lib-dir=${PYTHON_LIBDIR} \
 				--with-rlm-python-include-dir=${PYTHON_INCLUDEDIR}
-PYTHON_USES=			python gettext-runtime
+PYTHON_USES=			python:2.7 gettext-runtime
 PYTHON_VARS=			SHEBANG_FILES+=src/modules/rlm_python/*.py
 REDIS_CONFIGURE_WITH=		rlm_redis rlm_rediswho
 REDIS_LIB_DEPENDS=		libhiredis.so:databases/hiredis

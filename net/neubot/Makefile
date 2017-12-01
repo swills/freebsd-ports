@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/net/neubot/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/net/neubot/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	neubot
 PORTVERSION=	0.4.16.9
@@ -11,7 +11,7 @@ COMMENT=	Measures neutrality of your network connection in the background
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 
 USES=		python:2
 NO_BUILD=	yes

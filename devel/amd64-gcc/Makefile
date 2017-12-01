@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/amd64-gcc/Makefile 441320 2017-05-20 16:58:10Z linimon $
+# $FreeBSD: head/devel/amd64-gcc/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PKGNAMEPREFIX=	amd64-
 PLIST=	${.CURDIR}/pkg-plist
@@ -10,6 +10,7 @@ FREEBSD_EXTENSION=	yes
 
 BROKEN_aarch64=		error: invalid output constraint '=a' in asm
 BROKEN_armv6=		fails to package
+BROKEN_armv7=		fails to package
 BROKEN_mips=		configure: error: cannot compute suffix of object files: cannot compile
 BROKEN_mips64=		configure: error: cannot compute suffix of object files: cannot compile
 BROKEN_powerpc64=	error: invalid output constraint in asm

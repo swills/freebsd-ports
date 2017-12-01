@@ -1,5 +1,5 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/mail/geary/Makefile 442377 2017-06-02 11:53:02Z kwm $
+# $FreeBSD: head/mail/geary/Makefile 455261 2017-12-01 11:12:04Z amdmi3 $
 #   $MCom: ports/trunk/mail/geary/Makefile 20050 2014-11-10 09:22:41Z gusi $
 
 PORTNAME=	geary
@@ -11,6 +11,9 @@ DIST_SUBDIR=	gnome3
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Mail client for GNOME 3
 
+LICENSE=	LGPL21+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 BUILD_DEPENDS=	vapigen:lang/vala \
 		bash:shells/bash
 LIB_DEPENDS=	libgmime-2.6.so:mail/gmime26 \
@@ -21,19 +24,17 @@ LIB_DEPENDS=	libgmime-2.6.so:mail/gmime26 \
 		libgcr-3.so:security/gcr
 
 USES=		cmake desktop-file-utils gettext \
-		libtool pkgconfig shebangfix tar:xz
+		libtool localbase:ldflags pkgconfig shebangfix tar:xz
 USE_GNOME=	gnomedocutils gnomeprefix gtk30 intlhack
 SHEBANG_FILES=	desktop/geary-attach
 USE_LDCONFIG=	yes
 INSTALLS_ICONS=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 CMAKE_ARGS=	-DNO_FATAL_WARNINGS:BOOL=ON
 
 GLIB_SCHEMAS=	org.yorba.geary.gschema.xml
 
 post-patch:
-		@${REINPLACE_CMD} -e 's|abort $$option||g' \
-			${WRKSRC}/configure
+	@${REINPLACE_CMD} -e 's|abort $$option||g' \
+		${WRKSRC}/configure
 
 .include <bsd.port.mk>

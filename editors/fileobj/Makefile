@@ -1,5 +1,5 @@
 # Created by: Rimvydas Jasinskas <zrj@ef.irc>
-# $FreeBSD: head/editors/fileobj/Makefile 454022 2017-11-12 00:46:38Z bapt $
+# $FreeBSD: head/editors/fileobj/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	fileobj
 PORTVERSION=	0.7.55
@@ -16,7 +16,7 @@ GH_ACCOUNT=	kusumi
 USE_GITHUB=	yes
 
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils concurrent optsuffix
 
 PLIST_FILES=	man/man1/fileobj.1.gz
 

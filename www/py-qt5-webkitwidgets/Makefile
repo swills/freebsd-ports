@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-qt5-webkitwidgets/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/www/py-qt5-webkitwidgets/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	webkitwidgets
 PORTREVISION=	1
@@ -13,6 +13,7 @@ PYQT_DIST=	yes
 USES=		python pyqt:5
 USE_GL=		gl
 USE_PYQT=	sip_build core_run printsupport_run webkit_run widgets_run
+USE_PYTHON=	flavors
 USE_QT5=	core gui network printsupport webkit widgets \
 		qmake_build
 

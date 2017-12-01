@@ -1,5 +1,5 @@
 # Created by: Romain Tartiere <romain@blogreen.org>
-# $FreeBSD: head/graphics/py-poppler/Makefile 448669 2017-08-24 13:45:13Z swills $
+# $FreeBSD: head/graphics/py-poppler/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	poppler
 PORTVERSION=	0.12.1
@@ -17,7 +17,8 @@ COMMENT=	Python bindings for the Poppler PDF rendering library
 LIB_DEPENDS=	libpoppler-glib.so:graphics/poppler-glib
 
 GNU_CONFIGURE=	yes
-USES=		gmake libtool pkgconfig python
+USES=		gmake libtool pkgconfig python:2.7
 USE_GNOME=	atk pygtk2
+USE_PYTHON=	flavors
 
 .include <bsd.port.mk>

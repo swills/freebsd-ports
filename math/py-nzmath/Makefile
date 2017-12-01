@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/py-nzmath/Makefile 371328 2014-10-21 16:54:54Z mva $
+# $FreeBSD: head/math/py-nzmath/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	nzmath
 PORTVERSION=	1.2.0
@@ -11,7 +11,7 @@ DISTNAME=	NZMATH-${PORTVERSION}
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Number theory oriented calculation system
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGNAME=	NZMATH
 

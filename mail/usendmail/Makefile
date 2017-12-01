@@ -1,5 +1,5 @@
 # Created by: Thomas Seck <tmseck@netcologne.de>
-# $FreeBSD: head/mail/usendmail/Makefile 441784 2017-05-26 14:27:45Z linimon $
+# $FreeBSD: head/mail/usendmail/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	usendmail
 PORTVERSION=	0.1.6
@@ -14,6 +14,7 @@ USES=		qmail
 
 BROKEN_aarch64=		fails to build: regparm is not valid on this platform
 BROKEN_armv6=		fails to build: regparm is not valid on this platform
+BROKEN_armv7=		fails to build: auto-aliastest.c:3:34: error: alias must point to a defined variable or function
 
 WRKSRC=		${WRKDIR}/mail/${DISTNAME}
 

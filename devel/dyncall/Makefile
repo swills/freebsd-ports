@@ -1,5 +1,5 @@
 # Created by: Tassilo Philipp <tphilipp@potion-studios.com>
-# $FreeBSD: head/devel/dyncall/Makefile 441847 2017-05-27 15:07:11Z linimon $
+# $FreeBSD: head/devel/dyncall/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	dyncall
 PORTVERSION=	0.9
@@ -14,6 +14,7 @@ COMMENT=	Highly dynamic multi-platform foreign function call interface library
 LICENSE=	ISCL
 
 BROKEN_armv6=		fails to compile: unexpected token in operand
+BROKEN_armv7=		fails to compile: unexpected token in operand
 
 HAS_CONFIGURE=	yes
 

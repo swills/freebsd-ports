@@ -1,5 +1,5 @@
 # Created by: Mark Linimon <linimon@lonesome.com>
-# $FreeBSD: head/dns/py-py3dns/Makefile 426445 2016-11-19 17:06:39Z sunpoet $
+# $FreeBSD: head/dns/py-py3dns/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	py3dns
 PORTVERSION=	3.1.1
@@ -16,7 +16,7 @@ LICENSE_NAME=	CNRI LICENSE AGREEMENT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils

@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/pysolfc/Makefile 438950 2017-04-20 13:44:37Z amdmi3 $
+# $FreeBSD: head/games/pysolfc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pysolfc
 PORTVERSION=	2.0
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter \
 		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow
 
-USES=		python shebangfix tar:bzip2
+USES=		python:2.7 shebangfix tar:bzip2
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 SHEBANG_FILES=	data/themes/clearlooks/create_imgs.py

@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@fallin.lv>
-# $FreeBSD: head/textproc/py-rxp/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/textproc/py-rxp/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rxp
 PORTVERSION=	0.9
@@ -15,7 +15,7 @@ COMMENT=	Fast validating XML parser for Python
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 NO_WRKSUBDIR=	yes
-USES=		python tar:tgz
+USES=		python:2.7 tar:tgz
 USE_PYTHON=	distutils autoplist
 
 DOCSDIR=	${PREFIX}/share/doc/py-rxp

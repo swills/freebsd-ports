@@ -1,5 +1,5 @@
 # Created by: Bernhard Froehlich <decke@FreeBSD.org>
-# $FreeBSD: head/print/cloudprint/Makefile 443416 2017-06-12 08:37:05Z decke $
+# $FreeBSD: head/print/cloudprint/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cloudprint
 PORTVERSION=	0.14.0.20170128
@@ -10,10 +10,10 @@ COMMENT=	Google Cloud Print proxy for local CUPS printers
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycups>=0:print/py-pycups \
-		${PYTHON_PKGNAMEPREFIX}configargparse>=0.9.3:devel/py-configargparse \
-		${PYTHON_PKGNAMEPREFIX}daemon>0:devel/py-daemon \
-		${PYTHON_PKGNAMEPREFIX}requests>=2.7.0:www/py-requests
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycups>=0:print/py-pycups@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}configargparse>=0.9.3:devel/py-configargparse@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}daemon>0:devel/py-daemon@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=2.7.0:www/py-requests@${FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	armooo
@@ -21,7 +21,7 @@ GH_TAGNAME=	108b9f0
 
 NO_ARCH=	yes
 USES=		python
-USE_PYTHON=	autoplist concurrent distutils
+USE_PYTHON=	autoplist concurrent distutils optsuffix
 USE_RC_SUBR=	${PORTNAME}
 
 USERS=		cups

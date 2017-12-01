@@ -1,5 +1,5 @@
 # Created by: Moggie <moggie@elasticmind.net>
-# $FreeBSD: head/www/py-werkzeug/Makefile 441018 2017-05-16 18:18:41Z sunpoet $
+# $FreeBSD: head/www/py-werkzeug/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	werkzeug
 PORTVERSION=	0.12.2
@@ -14,12 +14,12 @@ COMMENT=	Python utilities collection for building WSGI applications
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>=16.0:security/py-openssl
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>=16.0:security/py-openssl@${FLAVOR}
 
 OPTIONS_DEFINE=	EXAMPLES WATCHDOG
 WATCHDOG_DESC=	Monitor filesystem events
-WATCHDOG_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}watchdog>=0.8:devel/py-watchdog \
-			${PYTHON_PKGNAMEPREFIX}termcolor>=1.1.0:devel/py-termcolor
+WATCHDOG_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}watchdog>=0.8:devel/py-watchdog@${FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}termcolor>=1.1.0:devel/py-termcolor@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

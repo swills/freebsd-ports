@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-cdg/Makefile 452495 2017-10-20 00:01:04Z jonathan $
+# $FreeBSD: head/devel/py-cdg/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cdg
 PORTVERSION=	0.1.3
@@ -12,7 +12,7 @@ COMMENT=	Library for working with call- and data-flow graphs
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

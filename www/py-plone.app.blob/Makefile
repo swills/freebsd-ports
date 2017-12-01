@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.app.blob/Makefile 413428 2016-04-16 10:36:51Z rm $
+# $FreeBSD: head/www/py-plone.app.blob/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	plone.app.blob
 PORTVERSION=	1.5.17
@@ -12,11 +12,11 @@ COMMENT=	ZODB blob support for Plone
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	zodb${PYTHON_PKGNAMESUFFIX}>=3.8.1:databases/zodb3 \
-		${PYTHON_PKGNAMEPREFIX}zope.proxy>=3.4:net/py-zope.proxy \
-		${PYTHON_PKGNAMEPREFIX}archetypes.schemaextender>=1.6:devel/py-archetypes.schemaextender \
-		${PYTHON_PKGNAMEPREFIX}plone.app.imaging>1.0:www/py-plone.app.imaging \
-		${PYTHON_PKGNAMEPREFIX}plone.scale>=0:www/py-plone.scale
+RUN_DEPENDS=	zodb${PYTHON_PKGNAMESUFFIX}>=3.8.1:databases/zodb3@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.proxy>=3.4:net/py-zope.proxy@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}archetypes.schemaextender>=1.6:devel/py-archetypes.schemaextender@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}plone.app.imaging>1.0:www/py-plone.app.imaging@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}plone.scale>=0:www/py-plone.scale@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7

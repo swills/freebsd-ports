@@ -1,9 +1,9 @@
 # Created by: Shane Ambler <FreeBSD@Shaneware.biz>
-# $FreeBSD: head/graphics/openshadinglanguage/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/graphics/openshadinglanguage/Makefile 455244 2017-12-01 01:58:23Z mandree $
 
 PORTNAME=	openshadinglanguage
 PORTVERSION=	1.8.10
-PORTREVISION=	3
+PORTREVISION=	4
 DISTVERSIONPREFIX=	Release-
 CATEGORIES=	graphics devel
 

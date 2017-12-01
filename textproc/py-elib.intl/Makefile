@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-elib.intl/Makefile 392377 2015-07-17 14:10:15Z rm $
+# $FreeBSD: head/textproc/py-elib.intl/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	elib.intl
 PORTVERSION=	0.0.3
@@ -18,7 +18,7 @@ USE_GITHUB=	yes
 PORTSCOUT=	ignore:1
 
 NO_ARCH=	yes
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

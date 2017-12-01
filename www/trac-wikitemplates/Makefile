@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine <gerrit.beine@gmx.de>
-# $FreeBSD: head/www/trac-wikitemplates/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/www/trac-wikitemplates/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	wikitemplates
 PORTVERSION=	0.3.0p3
@@ -20,7 +20,7 @@ RUN_DEPENDS=	tracd:www/trac
 #		${PYTHON_SITELIBDIR}/TracCtxtnavAdd-2.0-py${PYTHON_VER}.egg:www/trac-ctxtnavadd
 
 WRKSRC=		${WRKDIR}/${PORTNAME}plugin
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-z3c.batching/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-z3c.batching/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	z3c.batching
 PORTVERSION=	1.1.0
@@ -13,8 +13,8 @@ COMMENT=	Simple sequence batching
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface \
-		${PYTHON_PKGNAMEPREFIX}zope.schema>=0:devel/py-zope.schema
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.schema>=0:devel/py-zope.schema@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

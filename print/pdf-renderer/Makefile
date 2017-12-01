@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/print/pdf-renderer/Makefile 441819 2017-05-27 00:20:19Z linimon $
+# $FreeBSD: head/print/pdf-renderer/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	pdf-renderer
 PORTVERSION=	0.9.1
@@ -14,6 +14,7 @@ COMMENT=	100% Java PDF renderer and viewer
 LICENSE=	LGPL21
 
 BROKEN_armv6=		fails to install: swinglabs-build-impl.xml: Javadoc returned 1
+BROKEN_armv7=		fails to install: swinglabs-build-impl.xml: Javadoc returned 1
 
 USES=		dos2unix zip
 NO_WRKSUBDIR=	yes

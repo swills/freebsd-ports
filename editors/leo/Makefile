@@ -1,5 +1,5 @@
 # Created by: Alan Eldridge <ports@geeksrus.net>
-# $FreeBSD: head/editors/leo/Makefile 439080 2017-04-21 14:16:37Z amdmi3 $
+# $FreeBSD: head/editors/leo/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	leo
 PORTVERSION=	5.3
@@ -15,8 +15,8 @@ COMMENT=	Advanced outline editor for programmers
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3 \
-		${PYTHON_PKGNAMEPREFIX}docutils>0:textproc/py-docutils \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}docutils>0:textproc/py-docutils@${FLAVOR} \
 		silvercity>0:textproc/silvercity
 
 USES=		pyqt:4 python:2 shebangfix zip
@@ -32,7 +32,7 @@ DESKTOP_ENTRIES="Leo" "Literate Editor with Outlines" \
 OPTIONS_DEFINE=		PYENCHANT
 
 PYENCHANT_DESC=		Spell checking support via PyEnchant
-PYENCHANT_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}enchant>0:textproc/py-enchant
+PYENCHANT_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}enchant>0:textproc/py-enchant@${FLAVOR}
 
 post-patch:
 	@${LN} -sf leo/dist/leo-install.py ${WRKSRC}/leo-install.py

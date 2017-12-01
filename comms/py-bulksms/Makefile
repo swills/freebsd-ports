@@ -1,5 +1,5 @@
 # Created by: Andy Gilligan <andy@evo6.org>
-# $FreeBSD: head/comms/py-bulksms/Makefile 394778 2015-08-19 13:29:59Z mat $
+# $FreeBSD: head/comms/py-bulksms/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	bulksms
 PORTVERSION=	0.1
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	craig001@lerwick.hopto.org
 COMMENT=	Python client for the BulkSMS.co.uk HTTP API
 
-USES=			python
+USES=			python:2.7
 USE_PYTHON=		distutils
 PYDISTUTILS_PKGNAME=	BulkSMS
 PYDISTUTILS_PKGVERSION=	1.0

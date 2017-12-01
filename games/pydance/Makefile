@@ -1,5 +1,5 @@
 # Created by: Rudolf Polzer <freebsd-dr@durchnull.de>
-# $FreeBSD: head/games/pydance/Makefile 439073 2017-04-21 14:12:30Z amdmi3 $
+# $FreeBSD: head/games/pydance/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pydance
 PORTVERSION=	1.1.0
@@ -18,7 +18,7 @@ COMMENT=	Dancing simulation game similar to the kind in arcades
 BUILD_DEPENDS=	${PYGAME}
 RUN_DEPENDS=	${PYGAME}
 
-USES=		python shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	pydance.py utils/findbpm.py
 USE_PYTHON=	distutils noegginfo
 SUB_FILES=	pkg-message

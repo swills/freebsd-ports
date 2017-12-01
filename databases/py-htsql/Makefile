@@ -1,5 +1,5 @@
 # Created by: jpaetzel
-# $FreeBSD: head/databases/py-htsql/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/py-htsql/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	htsql
 PORTVERSION=	2.3.3
@@ -17,7 +17,7 @@ LICENSE=	AGPLv3
 USES=		python:2
 USE_PYTHON=	distutils autoplist
 
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR}
 
 .include <bsd.port.mk>

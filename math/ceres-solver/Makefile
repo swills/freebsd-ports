@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/ceres-solver/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/ceres-solver/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ceres-solver
 DISTVERSION=	1.13.0
@@ -42,7 +42,7 @@ CUSTOM_BLAS_DESC=	Handcoded BLAS routines instead of Eigen
 CUSTOM_BLAS_CMAKE_BOOL=	CUSTOM_BLAS
 
 DOCS_BUILD_DEPENDS=	sphinx-build:textproc/py-sphinx
-DOCS_USES=		python:build
+DOCS_USES=		python:2.7,build
 DOCS_CMAKE_BOOL=	BUILD_DOCUMENTATION
 
 EXAMPLES_CMAKE_BOOL=	BUILD_EXAMPLES

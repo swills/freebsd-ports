@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-jsonlib/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-jsonlib/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	jsonlib
 PORTVERSION=	1.6.1
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	JSON Serializer/Deserializer for Python
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

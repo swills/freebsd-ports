@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-scour/Makefile 430765 2017-01-07 03:38:29Z avilla $
+# $FreeBSD: head/textproc/py-scour/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	scour
 PORTVERSION=	0.35
@@ -12,7 +12,7 @@ COMMENT=	SVG scrubber
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

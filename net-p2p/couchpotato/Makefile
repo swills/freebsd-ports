@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/net-p2p/couchpotato/Makefile 447242 2017-08-03 16:23:30Z feld $
+# $FreeBSD: head/net-p2p/couchpotato/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	couchpotato
 PORTVERSION=	0.0.20170327
@@ -11,9 +11,9 @@ COMMENT=	Automatic NZB and torrent downloader
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3 \
-		${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml \
-		${PYTHON_PKGNAMEPREFIX}openssl>0:security/py-openssl
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}openssl>0:security/py-openssl@${PY_FLAVOR}
 
 USE_RC_SUBR=	couchpotato
 SUB_LIST=	PYTHON_CMD=${PYTHON_CMD} USERS=${USERS}

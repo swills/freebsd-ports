@@ -1,5 +1,5 @@
 # Created by: Corey Smith <corsmith@gmail.com>
-# $FreeBSD: head/net/freeswitch/Makefile 453453 2017-11-04 11:43:35Z dbaio $
+# $FreeBSD: head/net/freeswitch/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	freeswitch
 PORTVERSION=	1.6.19
@@ -25,7 +25,7 @@ LIB_DEPENDS=	libsqlite3.so:databases/sqlite3 \
 		libopus.so:audio/opus \
 		libsndfile.so:audio/libsndfile \
 		libfreetype.so:print/freetype2 \
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libjbig.so:graphics/jbigkit
 
 USES=		gmake iconv jpeg libedit libtool lua perl5 pkgconfig shebangfix ssl tar:xz

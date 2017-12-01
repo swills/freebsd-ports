@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/graphics/pencil/Makefile 441855 2017-05-27 16:48:41Z linimon $
+# $FreeBSD: head/graphics/pencil/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	pencil
 PORTVERSION=	0.4.4b
@@ -17,6 +17,7 @@ LIB_DEPENDS=	libming.so:graphics/ming \
 		libpng.so:graphics/png
 
 BROKEN_armv6=		fails to compile: no matching function for call to 'qMax'
+BROKEN_armv7=		fails to compile: no matching function for call to 'qMax'
 
 USES=		qmake zip
 USE_QT4=	gui opengl xml moc_build rcc_build

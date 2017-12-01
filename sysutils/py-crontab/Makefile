@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-crontab/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/py-crontab/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	crontab
 PORTVERSION=	1.9.5
@@ -13,8 +13,8 @@ COMMENT=	Read and write crontab files using a direct API
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=1.5:devel/py-dateutil \
-		${PYTHON_PKGNAMEPREFIX}croniter>0:sysutils/py-croniter
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=1.5:devel/py-dateutil@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}croniter>0:sysutils/py-croniter@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

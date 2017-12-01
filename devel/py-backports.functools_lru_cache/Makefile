@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-backports.functools_lru_cache/Makefile 440837 2017-05-13 13:16:29Z sunpoet $
+# $FreeBSD: head/devel/py-backports.functools_lru_cache/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	backports.functools_lru_cache
 PORTVERSION=	1.4
@@ -11,7 +11,7 @@ COMMENT=	Backport of functools.lru_cache from Python 3.3
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.15.0:devel/py-setuptools_scm
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.15.0:devel/py-setuptools_scm@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils

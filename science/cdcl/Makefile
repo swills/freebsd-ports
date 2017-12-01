@@ -1,5 +1,5 @@
 # Created by: Shin'ya Murakami <murakami@ahs.scitec.kobe-u.ac.jp>
-# $FreeBSD: head/science/cdcl/Makefile 441881 2017-05-27 22:16:50Z linimon $
+# $FreeBSD: head/science/cdcl/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	cdcl
 PORTVERSION=	5.4.8
@@ -14,6 +14,7 @@ MAINTAINER=	murashin@gfd-dennou.org
 COMMENT=	Scientific graphic library for geoscience
 
 BROKEN_armv6=		fails to link: final link failed: Nonrepresentable section on output
+BROKEN_armv7=		fails to link: final link failed: Nonrepresentable section on output
 
 OPTIONS_DEFINE=	DOCS
 USES=		desthack pkgconfig

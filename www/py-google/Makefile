@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/www/py-google/Makefile 419417 2016-07-31 21:45:36Z pawel $
+# $FreeBSD: head/www/py-google/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	google
 PORTVERSION=	1.9.3
@@ -12,7 +12,7 @@ COMMENT=	Python bindings to the Google search engine
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=4:www/py-beautifulsoup
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=4:www/py-beautifulsoup@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

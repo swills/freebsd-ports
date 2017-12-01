@@ -1,5 +1,5 @@
 # Created by: rene
-# $FreeBSD: head/emulators/fuse-utils/Makefile 453508 2017-11-05 00:07:28Z rene $
+# $FreeBSD: head/emulators/fuse-utils/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	fuse-utils
 DISTVERSION=	1.3.5
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libaudiofile.so:audio/libaudiofile \
 		libgcrypt.so:security/libgcrypt \
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libspectrum.so:emulators/libspectrum
 
 USES=		gettext iconv jpeg pkgconfig

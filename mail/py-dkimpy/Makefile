@@ -1,5 +1,5 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/mail/py-dkimpy/Makefile 434591 2017-02-22 15:39:21Z tobik $
+# $FreeBSD: head/mail/py-dkimpy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	dkimpy
 PORTVERSION=	0.6.1
@@ -12,7 +12,7 @@ COMMENT=	Python library for DKIM email signing and verification
 
 LICENSE=	ZLIB
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dns>=0:dns/py-dns
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dns>=0:dns/py-dns@${FLAVOR}
 
 NO_ARCH=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/devel/py-ddt/Makefile 442228 2017-05-31 17:29:41Z cpm $
+# $FreeBSD: head/devel/py-ddt/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ddt
 PORTVERSION=	1.1.1
@@ -13,8 +13,8 @@ COMMENT=	Data-Driven Tests
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose \
-		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

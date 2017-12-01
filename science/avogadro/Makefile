@@ -1,5 +1,5 @@
 # Created by: Troels Kofoed Jacobsen <tkjacobsen@gmail.com>
-# $FreeBSD: head/science/avogadro/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/science/avogadro/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	avogadro
 PORTVERSION=	1.1.1
@@ -35,10 +35,10 @@ OPTIONS_SUB=	yes
 
 PYTHON_USES=		python:2
 PYTHON_BUILD_DEPENDS=	${PYNUMPY} \
-			${PYTHON_PKGNAMEPREFIX}sip>0:devel/py-sip
+			${PYTHON_PKGNAMEPREFIX}sip>0:devel/py-sip@${PY_FLAVOR}
 PYTHON_LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs
 PYTHON_RUN_DEPENDS=	${PYNUMPY} \
-			${PYTHON_PKGNAMEPREFIX}sip>0:devel/py-sip
+			${PYTHON_PKGNAMEPREFIX}sip>0:devel/py-sip@${PY_FLAVOR}
 PYTHON_CMAKE_ON=	-DENABLE_PYTHON=ON \
 			-DPYTHON_INCLUDE_DIR:PATH=${WRKDIR}/include/${PYTHON_VERSION}
 PYTHON_CMAKE_OFF=	-DENABLE_PYTHON=OFF

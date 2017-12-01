@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fm/sunflower/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/x11-fm/sunflower/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sunflower
 DISTVERSION=	0.3-61
@@ -11,11 +11,11 @@ COMMENT=	Twin-panel file manager
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}chardet>0:textproc/py-chardet \
-		${PYTHON_PKGNAMEPREFIX}notify>0:devel/py-notify \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3 \
-		${PYTHON_PKGNAMEPREFIX}setproctitle>=1.1:devel/py-setproctitle \
-		${PYTHON_PKGNAMEPREFIX}dbus>=1.2.0:devel/py-dbus
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}chardet>0:textproc/py-chardet@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}notify>0:devel/py-notify@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}setproctitle>=1.1:devel/py-setproctitle@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dbus>=1.2.0:devel/py-dbus@${PY_FLAVOR}
 
 WRKSRC=		${WRKDIR}/Sunflower
 
@@ -29,7 +29,7 @@ OPTIONS_DEFINE=	VTE
 OPTIONS_DEFAULT=VTE
 
 VTE_DESC=	Use VTE terminal widget
-VTE_RUN_DEPENDS=${PYTHON_PKGNAMEPREFIX}vte>0:x11-toolkits/py-vte
+VTE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}vte>0:x11-toolkits/py-vte@${PY_FLAVOR}
 
 post-patch:
 	${REINPLACE_CMD} -e 's|%%DATADIR%%|${DATADIR}|g' ${WRKSRC}/Sunflower.py

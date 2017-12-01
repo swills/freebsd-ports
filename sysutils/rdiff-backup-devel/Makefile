@@ -1,5 +1,5 @@
 # Created by: Vasil Dimov <vd@datamax.bg>
-# $FreeBSD: head/sysutils/rdiff-backup-devel/Makefile 432379 2017-01-24 19:44:33Z bdrewery $
+# $FreeBSD: head/sysutils/rdiff-backup-devel/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rdiff-backup
 PORTVERSION=	1.3.3
@@ -19,7 +19,7 @@ LIB_DEPENDS=	librsync.so:net/librsync2
 
 CONFLICTS=	rdiff-backup-[0-9]*
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 MAN1S=		rdiff-backup.1 rdiff-backup-statistics.1

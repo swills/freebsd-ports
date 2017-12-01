@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/py-lz4/Makefile 454564 2017-11-20 14:32:19Z sunpoet $
+# $FreeBSD: head/archivers/py-lz4/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	lz4
 PORTVERSION=	0.11.1
@@ -12,7 +12,7 @@ COMMENT=	Python binding for the LZ4 compression library
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm@${FLAVOR}
 LIB_DEPENDS=	liblz4.so:archivers/liblz4
 
 USE_PYTHON=	distutils py3kplist

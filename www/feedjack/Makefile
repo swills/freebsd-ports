@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/feedjack/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/feedjack/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	feedjack
 PORTVERSION=	0.9.16
@@ -10,11 +10,11 @@ DISTNAME=	Feedjack-${PORTVERSION}
 MAINTAINER=	flz@FreeBSD.org
 COMMENT=	Feed aggregator written in Python using the Django framework
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/feedparser.py:textproc/py-feedparser \
-		django-admin.py:www/py-django18
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/feedparser.py:textproc/py-feedparser@${FLAVOR} \
+		django-admin.py:www/py-django18@${FLAVOR}
 
 DIST_SUBDIR=	python
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

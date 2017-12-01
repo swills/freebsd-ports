@@ -1,5 +1,5 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/finance/trytond28_company_work_time/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/trytond28_company_work_time/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	trytond28_company_work_time
 PORTVERSION=	2.8.0
@@ -18,7 +18,7 @@ RUN_DEPENDS=	trytond28_company>=2.8.0:finance/trytond28_company
 
 CONFLICTS=	trytond_company_work_time-2.[46].*
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

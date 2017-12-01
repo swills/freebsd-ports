@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/science/py-cdo/Makefile 451139 2017-10-03 15:35:02Z sunpoet $
+# $FreeBSD: head/science/py-cdo/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cdo
 PORTVERSION=	1.3.5
@@ -13,7 +13,7 @@ COMMENT=	Python binding to CDO (Climate Data Operators)
 LICENSE=	GPLv2
 
 RUN_DEPENDS=	cdo:science/cdo \
-		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six
+		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

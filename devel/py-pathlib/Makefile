@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pathlib/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-pathlib/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pathlib
 PORTVERSION=	1.0.1
@@ -17,7 +17,7 @@ USE_PYTHON=	distutils autoplist
 
 OPTIONS_DEFINE=	DOCS
 
-DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=0:textproc/py-sphinx
+DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=0:textproc/py-sphinx@${FLAVOR}
 
 .include <bsd.port.options.mk>
 

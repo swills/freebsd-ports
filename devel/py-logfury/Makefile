@@ -1,5 +1,5 @@
 # Created by: gordon@FreeBSD.org
-# $FreeBSD: head/devel/py-logfury/Makefile 449267 2017-09-05 04:26:57Z gordon $
+# $FreeBSD: head/devel/py-logfury/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	logfury
 PORTVERSION=	0.1.2
@@ -12,8 +12,8 @@ COMMENT=	Toolkit for logging of library method calls
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.10:devel/py-six \
-		${PYTHON_PKGNAMEPREFIX}funcsigs>=1.0.2:devel/py-funcsigs
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.10:devel/py-six@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}funcsigs>=1.0.2:devel/py-funcsigs@${FLAVOR}
 
 USES=		python:2.7+
 USE_PYTHON=	autoplist distutils

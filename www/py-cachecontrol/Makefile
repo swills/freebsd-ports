@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/www/py-cachecontrol/Makefile 441862 2017-05-27 17:33:15Z sunpoet $
+# $FreeBSD: head/www/py-cachecontrol/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	CacheControl
 PORTVERSION=	0.12.3
@@ -12,8 +12,8 @@ COMMENT=	Caching algorithms in httplib2 for use with requests session object
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests \
-		${PYTHON_PKGNAMEPREFIX}lockfile>=0.9:devel/py-lockfile
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lockfile>=0.9:devel/py-lockfile@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

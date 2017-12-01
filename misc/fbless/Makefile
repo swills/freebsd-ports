@@ -1,5 +1,5 @@
 # Created by: Alexander <alexander.4mail@gmail.com>
-# $FreeBSD: head/misc/fbless/Makefile 414995 2016-05-11 14:31:51Z arved $
+# $FreeBSD: head/misc/fbless/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	fbless
 PORTVERSION=	0.2.3
@@ -10,7 +10,7 @@ COMMENT=	Text-mode fb2 books reader
 
 LICENSE=	GPLv2
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 USE_GITHUB=	yes
 GH_ACCOUNT=	matimatik

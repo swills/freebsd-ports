@@ -1,5 +1,5 @@
 # Created by: Lawrence Stewart <lstewart@FreeBSD.org>
-# $FreeBSD: head/devel/py-Products.LDAPUserFolder/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-Products.LDAPUserFolder/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	Products.LDAPUserFolder
 PORTVERSION=	2.27
@@ -13,8 +13,8 @@ COMMENT=	LDAP-enabled Zope 2 user folder
 
 LICENSE=	ZPL21
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools-git>=0.4.2:devel/py-setuptools-git
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ldap>=2.0.6:net/py-ldap
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools-git>=0.4.2:devel/py-setuptools-git@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ldap>=2.0.6:net/py-ldap@${FLAVOR}
 
 OPTIONS_DEFINE=		POSIXGROUP_PATCH
 POSIXGROUP_PATCH_DESC=	Use posixGroup for group membership

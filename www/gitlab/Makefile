@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab/Makefile 454691 2017-11-22 14:55:05Z tz $
+# $FreeBSD: head/www/gitlab/Makefile 455257 2017-12-01 11:03:43Z tz $
 
 PORTNAME=	gitlab
 PORTVERSION=	10.1.4
@@ -223,7 +223,6 @@ post-patch-MYSQL-off:
 	${REINPLACE_CMD} -e "/gem 'peek-mysql2'/d" ${WRKSRC}/Gemfile
 
 post-patch-PGSQL-on:
-	${REINPLACE_CMD} -e "/gem 'pg'/d" ${WRKSRC}/Gemfile
 	${CP} ${WRKSRC}/config/database.yml.postgresql ${WRKSRC}/config/database.yml.sample
 
 post-patch-PGSQL-off:

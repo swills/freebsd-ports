@@ -1,5 +1,5 @@
 # Created by: Oleg Pudeyev <oleg@bsdpower.com>
-# $FreeBSD: head/www/py-flask-flatpages/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-flask-flatpages/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	Flask-FlatPages
 PORTVERSION=	0.6
@@ -13,9 +13,9 @@ COMMENT=	Provides flat static pages to a Flask application
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0:www/py-flask \
-		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml  \
-		${PYTHON_PKGNAMEPREFIX}markdown>0:textproc/py-markdown
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0:www/py-flask@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${FLAVOR}  \
+		${PYTHON_PKGNAMEPREFIX}markdown>0:textproc/py-markdown@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

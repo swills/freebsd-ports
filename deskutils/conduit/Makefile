@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/deskutils/conduit/Makefile 438999 2017-04-21 03:11:17Z miwi $
+# $FreeBSD: head/deskutils/conduit/Makefile 455210 2017-11-30 15:50:30Z mat $
 #    $MCom: ports/deskutils/conduit/Makefile,v 1.7 2008/03/18 14:53:42 ahze Exp $
 
 PORTNAME=	conduit
@@ -11,15 +11,15 @@ MASTER_SITES=	GNOME
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Synchronization application for GNOME
 
-BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/goocanvasmodule.so:graphics/py-goocanvas \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3 \
-		${PYTHON_PKGNAMEPREFIX}vobject>=0.4.8:deskutils/py-vobject \
-		${PYTHON_PKGNAMEPREFIX}dbus>0:devel/py-dbus
+BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/goocanvasmodule.so:graphics/py-goocanvas@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}vobject>=0.4.8:deskutils/py-vobject@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dbus>0:devel/py-dbus@${PY_FLAVOR}
 LIB_DEPENDS=	libdbus-1.so:devel/dbus
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/goocanvasmodule.so:graphics/py-goocanvas \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3 \
-		${PYTHON_PKGNAMEPREFIX}vobject>=0.4.8:deskutils/py-vobject \
-		${PYTHON_PKGNAMEPREFIX}dbus>0:devel/py-dbus \
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/goocanvasmodule.so:graphics/py-goocanvas@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}vobject>=0.4.8:deskutils/py-vobject@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dbus>0:devel/py-dbus@${PY_FLAVOR} \
 		xdg-open:devel/xdg-utils
 
 GNU_CONFIGURE=	yes

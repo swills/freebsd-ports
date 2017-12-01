@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/py-leather/Makefile 427771 2016-12-04 10:50:00Z matthew $
+# $FreeBSD: head/graphics/py-leather/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	leather
 PORTVERSION=	0.3.3
@@ -11,7 +11,7 @@ COMMENT=	Charting library for those who need charts now
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.6.1:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.6.1:devel/py-six@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/binwalk/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/binwalk/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	binwalk
 PORTVERSION=	2.1.1
@@ -13,7 +13,7 @@ LICENSE=	MIT
 USES=		python
 USE_GITHUB=	yes
 GH_ACCOUNT=	devttys0
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils optsuffix concurrent
 
 RUN_DEPENDS=	7z:archivers/p7zip \
 		cabextract:archivers/cabextract

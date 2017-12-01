@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/py-probstat/Makefile 381585 2015-03-19 00:20:53Z amdmi3 $
+# $FreeBSD: head/math/py-probstat/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	probstat
 PORTVERSION=	0.912
@@ -12,7 +12,7 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Probability And Statistics Utils for Python
 
-USES=		python tar:tgz
+USES=		python:2.7 tar:tgz
 USE_PYTHON=	distutils autoplist
 
 post-install:

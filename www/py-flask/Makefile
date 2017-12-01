@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau <duchateau.olivier@gmail.com>
-# $FreeBSD: head/www/py-flask/Makefile 445318 2017-07-08 11:03:53Z mmokhi $
+# $FreeBSD: head/www/py-flask/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	Flask
 PORTVERSION=	0.12.2
@@ -12,10 +12,10 @@ COMMENT=	Micro web framework
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}werkzeug>=0.11:www/py-werkzeug \
-		${PYTHON_PKGNAMEPREFIX}Jinja2>=2.8:devel/py-Jinja2 \
-		${PYTHON_PKGNAMEPREFIX}itsdangerous>=0.24:security/py-itsdangerous \
-		${PYTHON_PKGNAMEPREFIX}click>=6.6:devel/py-click
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}werkzeug>=0.11:www/py-werkzeug@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Jinja2>=2.8:devel/py-Jinja2@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}itsdangerous>=0.24:security/py-itsdangerous@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}click>=6.6:devel/py-click@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils concurrent autoplist

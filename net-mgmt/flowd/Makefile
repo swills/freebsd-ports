@@ -1,5 +1,5 @@
 # Created by: Janos Mohacsi <janos.mohacsi@bsd.hu>
-# $FreeBSD: head/net-mgmt/flowd/Makefile 422140 2016-09-14 15:59:34Z mat $
+# $FreeBSD: head/net-mgmt/flowd/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	flowd
 PORTVERSION=	0.9.1
@@ -34,7 +34,7 @@ USE_PERL5+=	build run
 .endif
 
 .if ${PORT_OPTIONS:MPYTHON}
-USES+=		python
+USES+=		python:2.7
 PLIST_SUB+=	PYTHON_VER=${PYTHON_VER}
 .endif
 

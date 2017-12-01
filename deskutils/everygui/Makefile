@@ -1,5 +1,5 @@
 # Created by: Remington Lang <MrL0Lz@gmail.com>
-# $FreeBSD: head/deskutils/everygui/Makefile 439053 2017-04-21 11:00:39Z amdmi3 $
+# $FreeBSD: head/deskutils/everygui/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	everygui
 PORTVERSION=	0.99.b
@@ -13,7 +13,7 @@ COMMENT=	Dynamic GUI for an OS command
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		dos2unix python shebangfix
+USES=		dos2unix python:2.7 shebangfix
 SHEBANG_FILES=	src/*.py
 DOS2UNIX_GLOB=	*.py
 USE_PYTHON=	distutils autoplist

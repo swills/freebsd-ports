@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/textproc/py-sphinxcontrib-adadomain/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/textproc/py-sphinxcontrib-adadomain/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sphinxcontrib-adadomain
 PORTVERSION=	0.1
@@ -14,7 +14,7 @@ COMMENT=	Sphinx Adadomain Extension
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PKGNAMEPREFIX}sphinx>=1.1.3:textproc/py-sphinx
+RUN_DEPENDS=	${PKGNAMEPREFIX}sphinx>=1.1.3:textproc/py-sphinx@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

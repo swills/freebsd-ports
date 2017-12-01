@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-Params-ValidationCompiler/Makefile 438610 2017-04-16 01:46:39Z wen $
+# $FreeBSD: head/devel/p5-Params-ValidationCompiler/Makefile 455105 2017-11-29 12:35:59Z wen $
 
 PORTNAME=	Params-ValidationCompiler
-PORTVERSION=	0.24
+PORTVERSION=	0.26
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

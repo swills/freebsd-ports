@@ -1,5 +1,5 @@
 # Created by: Amar Takhar <verm@drunkmonk.net>
-# $FreeBSD: head/dns/fastresolve/Makefile 419843 2016-08-08 13:46:50Z mat $
+# $FreeBSD: head/dns/fastresolve/Makefile 455182 2017-11-30 09:00:19Z amdmi3 $
 
 PORTNAME=	fastresolve
 PORTVERSION=	2.10
@@ -10,18 +10,19 @@ MASTER_SITES=	http://BSDforge.com/projects/source/dns/fastresolve/
 MAINTAINER=	portmaster@BSDforge.com
 COMMENT=	Programs to get DNS and domain ownership information from web logs
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libadns.so:dns/adns
 RUN_DEPENDS=	p5-BerkeleyDB>=0:databases/p5-BerkeleyDB
 
-USES=		bdb perl5 tar:bzip2
+USES=		bdb localbase:ldflags perl5 tar:bzip2
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	PERL=${PERL} \
 		djm_cv_lib_db_Dbopen=yes
 
-LDFLAGS+=	-L${LOCALBASE}/lib -L${BDB_LIB_DIR}
-CXXFLAGS+=	-I${LOCALBASE}/include -I${BDB_INCLUDE_DIR}
+LDFLAGS+=	-L${BDB_LIB_DIR}
+CXXFLAGS+=	-I${BDB_INCLUDE_DIR}
 
 OPTIONS_DEFINE=	DOCS
 
@@ -29,7 +30,7 @@ post-patch:
 	@${REINPLACE_CMD} -e 's/-ldb"/-l${BDB_LIB_CXX_NAME}"/' \
 		${WRKSRC}/configure
 
-post-install:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for f in AUTHORS COPYING ChangeLog INSTALL NEWS README
 	${INSTALL_DATA} ${WRKSRC}/${f} ${STAGEDIR}${DOCSDIR}

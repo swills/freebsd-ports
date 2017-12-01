@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/textproc/py-paragrep/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/py-paragrep/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	paragrep
 PORTVERSION=	3.1.3
@@ -12,7 +12,7 @@ COMMENT=	Paragraph Grep Utility
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}grizzled>=0.8.1:devel/py-grizzled
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}grizzled>=0.8.1:devel/py-grizzled@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python

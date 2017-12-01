@@ -1,5 +1,5 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/archivers/py-librtfcomp/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/archivers/py-librtfcomp/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	librtfcomp
 PORTVERSION=	1.3
@@ -14,13 +14,14 @@ COMMENT=	Python bindings for library for handling compressed RTF documents
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/LICENCE
 
-BUILD_DEPENDS=	pyrexc:devel/pyrex
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyrex>0:devel/pyrex@${FLAVOR}
 LIB_DEPENDS=	librtfcomp.so:archivers/librtfcomp
 
 CONFIGURE_ARGS=	--enable-python-bindings
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 USES=		libtool python:2
+USE_PYTHON=	flavors
 
 BUILD_WRKSRC=	${WRKSRC}/python
 INSTALL_WRKSRC=	${WRKSRC}/python

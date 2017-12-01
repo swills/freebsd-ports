@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/netradiant/Makefile 441814 2017-05-26 20:02:44Z linimon $
+# $FreeBSD: head/games/netradiant/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	netradiant
 PORTVERSION=	20130630
@@ -21,6 +21,7 @@ LIB_DEPENDS=	libgtkglext-x11-1.0.so:x11-toolkits/gtkglext \
 
 BROKEN_aarch64=		fails to link: ldd: install/modules/archivepak.so: not a FreeBSD ELF shared object
 BROKEN_armv6=		fails to build: h2data.armv6: No such file or directory
+BROKEN_armv7=		fails to build: h2data.armv7: No such file or directory
 
 USES=		gmake jpeg pkgconfig tar:bzip2
 USE_GL=		gl

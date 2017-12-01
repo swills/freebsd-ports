@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/nelly/Makefile 414937 2016-05-10 11:13:26Z amdmi3 $
+# $FreeBSD: head/games/nelly/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	nelly
 PORTVERSION=	1.0
@@ -17,7 +17,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Nelly's Rooftop Garden, physics-based puzzle game
 
 RUN_DEPENDS=	${PYGAME} \
-		${PYTHON_PKGNAMEPREFIX}PyOpenGL>=0:graphics/py-PyOpenGL
+		${PYTHON_PKGNAMEPREFIX}PyOpenGL>=0:graphics/py-PyOpenGL@${PY_FLAVOR}
 
 USES=		python:2
 

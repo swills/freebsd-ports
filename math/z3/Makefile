@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/z3/Makefile 449291 2017-09-05 15:26:54Z jrm $
+# $FreeBSD: head/math/z3/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	z3
 DISTVERSIONPREFIX=	${PORTNAME}-
@@ -28,8 +28,8 @@ DEBUG_CONFIGURE_ON=	--debug
 
 PYTHON_DESC=		Enable python bindings
 PYTHON_CONFIGURE_ON=	--python
-PYTHON_USES=		python
-PYTHON_USES_OFF=	python:build
+PYTHON_USES=		python:2.7
+PYTHON_USES_OFF=	python:2.7,build
 
 STATIC_DESC=		Build static z3 library
 STATIC_CONFIGURE_ON=	--staticlib

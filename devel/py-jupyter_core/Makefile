@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-jupyter_core/Makefile 453302 2017-11-01 16:50:48Z sunpoet $
+# $FreeBSD: head/devel/py-jupyter_core/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	jupyter_core
 PORTVERSION=	4.4.0
@@ -12,11 +12,11 @@ COMMENT=	Jupyter core package
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING.md
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}traitlets>=0:devel/py-traitlets
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}traitlets>=0:devel/py-traitlets@${FLAVOR}
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipython>=0:devel/ipython \
-		${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock \
-		${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest \
-		${PYTHON_PKGNAMEPREFIX}testpath>=0:devel/py-testpath
+		${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}testpath>=0:devel/py-testpath@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

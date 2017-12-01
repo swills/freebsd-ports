@@ -1,5 +1,5 @@
 # Created by: Chifeng QU <chifeng@gmail.com>
-# $FreeBSD: head/mail/py-ppolicy/Makefile 442639 2017-06-05 14:50:51Z sunpoet $
+# $FreeBSD: head/mail/py-ppolicy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ppolicy
 PORTVERSION=	2.6.6
@@ -11,10 +11,10 @@ MASTER_SITES=	http://kmlinux.fjfi.cvut.cz/~vokac/activities/ppolicy/download/%SU
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PPolicy is tool for extending Postfix checking capabilities
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>=0:dns/py-dnspython \
-		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>=0:dns/py-dnspython@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 NO_BUILD=	yes
@@ -27,9 +27,9 @@ SUB_FILES=	pkg-message
 OPTIONS_DEFINE=	GEOIP LDAP MYSQL DOCS
 OPTIONS_DEFAULT=	GEOIP LDAP
 
-GEOIP_RUN_DEPENDS=	${PYTHON_SITELIBDIR}/GeoIP.so:net/py-GeoIP
-MYSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=0:databases/py-MySQLdb
-LDAP_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ldap>=2.3.1:net/py-ldap
+GEOIP_RUN_DEPENDS=	${PYTHON_SITELIBDIR}/GeoIP.so:net/py-GeoIP@${FLAVOR}
+MYSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=0:databases/py-MySQLdb@${FLAVOR}
+LDAP_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ldap>=2.3.1:net/py-ldap@${FLAVOR}
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/ppolicy.conf ${STAGEDIR}${PREFIX}/etc

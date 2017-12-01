@@ -1,5 +1,5 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/devel/py-pyxb/Makefile 446555 2017-07-25 04:40:01Z koobs $
+# $FreeBSD: head/devel/py-pyxb/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyxb
 PORTVERSION=	1.2.5
@@ -14,7 +14,7 @@ COMMENT=	Python XML schema bindings
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libxml2>0:textproc/py-libxml2
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libxml2>0:textproc/py-libxml2@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

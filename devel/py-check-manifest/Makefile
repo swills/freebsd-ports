@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/devel/py-check-manifest/Makefile 442502 2017-06-03 14:52:39Z tcberner $
+# $FreeBSD: head/devel/py-check-manifest/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	check-manifest
 PORTVERSION=	0.35
@@ -13,7 +13,7 @@ COMMENT=	Check MANIFEST.in in a Python source package for completeness
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.rst
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR}
 
 OPTIONS_DEFINE=	DOCS
 

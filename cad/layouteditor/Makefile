@@ -1,5 +1,5 @@
 # Created by: Hiroki Sato <hrs@FreeBSD.org>
-# $FreeBSD: head/cad/layouteditor/Makefile 441847 2017-05-27 15:07:11Z linimon $
+# $FreeBSD: head/cad/layouteditor/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	layouteditor
 PORTVERSION=	0.0.20110614
@@ -14,6 +14,7 @@ COMMENT=	IC/MEMS layout editor
 LIB_DEPENDS=	libttf.so:print/freetype
 
 BROKEN_armv6=		fails to compile: no matching member function for call to 'map'
+BROKEN_armv7=		fails to compile: no matching member function for call to 'map'
 
 USES=		qmake zip
 USE_QT4=	corelib gui network moc_build sql uic_build \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-terminado/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/py-terminado/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	terminado
 PORTVERSION=	0.6
@@ -11,8 +11,8 @@ COMMENT=	Terminals served to term.js using Tornado websockets
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ptyprocess>0:sysutils/py-ptyprocess \
-		${PYTHON_PKGNAMEPREFIX}tornado>0:www/py-tornado
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ptyprocess>0:sysutils/py-ptyprocess@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tornado>0:www/py-tornado@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

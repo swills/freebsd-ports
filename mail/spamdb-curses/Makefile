@@ -1,5 +1,5 @@
 # Created by: Martin Tournoij <martin@arp242.net>
-# $FreeBSD: head/mail/spamdb-curses/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/spamdb-curses/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	spamdb-curses
 PORTVERSION=	1.2
@@ -13,7 +13,7 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	${LOCALBASE}/sbin/spamdb:mail/spamd
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 .include <bsd.port.mk>

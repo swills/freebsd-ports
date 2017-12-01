@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/py-scoria/Makefile 454321 2017-11-16 18:27:47Z yuri $
+# $FreeBSD: head/science/py-scoria/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	scoria
 DISTVERSION=	1.0.3
@@ -12,7 +12,7 @@ COMMENT=	Lightweight molecule manipulation codebase
 LICENSE=	APACHE20
 
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy
+		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

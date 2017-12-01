@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/py-gizeh/Makefile 455017 2017-11-28 03:09:27Z yuri $
+# $FreeBSD: head/graphics/py-gizeh/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gizeh
 DISTVERSION=	0.1.10
@@ -12,7 +12,7 @@ COMMENT=	Simple vector graphics in Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENCE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cairocffi>0:graphics/py-cairocffi \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cairocffi>0:graphics/py-cairocffi@${FLAVOR} \
 		${PYNUMPY}
 
 USES=		python

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/git-review/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/git-review/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	git-review
 PORTVERSION=	1.25.0
@@ -11,12 +11,12 @@ COMMENT=	Allow to push code to review and interact with a Gerrit server
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>0:devel/py-pbr
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>0:devel/py-pbr@${FLAVOR}
 RUN_DEPENDS=	git:devel/git \
-		${PYTHON_PKGNAMEPREFIX}requests>2.4:www/py-requests
+		${PYTHON_PKGNAMEPREFIX}requests>2.4:www/py-requests@${FLAVOR}
 
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils concurrent optsuffix
 NO_ARCH=	yes
 
 PORTDOCS=	README.rst HACKING.rst AUTHORS

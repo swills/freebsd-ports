@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/databases/py-oursql/Makefile 415516 2016-05-19 18:06:20Z pi $
+# $FreeBSD: head/databases/py-oursql/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	oursql
 PORTVERSION=	0.9.3.2
@@ -12,7 +12,7 @@ COMMENT=	MySQL bindings for python
 
 LICENSE=	BSD2CLAUSE
 
-USES=		mysql python
+USES=		mysql python:2.7
 USE_PYTHON=	autoplist distutils
 
 post-install:

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-trans/Makefile 402388 2015-11-25 02:28:59Z wen $
+# $FreeBSD: head/textproc/py-trans/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	trans
 PORTVERSION=	2.0.1
@@ -11,7 +11,7 @@ COMMENT=	Module for performing transliteration
 
 LICENSE=	BSD
 
-USES=		python tar:bzip2
+USES=		python:2.7 tar:bzip2
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

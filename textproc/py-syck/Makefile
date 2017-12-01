@@ -1,5 +1,5 @@
 # Created by: dd
-# $FreeBSD: head/textproc/py-syck/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/py-syck/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	syck
 PORTVERSION=	0.61.2
@@ -15,7 +15,7 @@ COMMENT=	Python binding for Syck, a YAML parser and emitter
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libsyck.a:textproc/syck
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 post-patch:

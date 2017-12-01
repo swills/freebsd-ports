@@ -1,8 +1,8 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Moose/Makefile 454711 2017-11-22 23:34:39Z sunpoet $
+# $FreeBSD: head/devel/p5-Moose/Makefile 455106 2017-11-29 12:44:05Z wen $
 
 PORTNAME=	Moose
-PORTVERSION=	2.2008
+PORTVERSION=	2.2009
 PORTEPOCH=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN

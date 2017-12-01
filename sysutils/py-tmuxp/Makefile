@@ -1,5 +1,5 @@
 # Created by: Tony Narlock <tony@git-pull.com>
-# $FreeBSD: head/sysutils/py-tmuxp/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/py-tmuxp/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tmuxp
 PORTVERSION=	0.9.3
@@ -13,9 +13,9 @@ COMMENT=	Session manager for tmux
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}argcomplete>=0:devel/py-argcomplete \
-		${PYTHON_PKGNAMEPREFIX}kaptan>=0.5.7:devel/py-kaptan \
-		${PYTHON_PKGNAMEPREFIX}colorama>=0.3.3:devel/py-colorama \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}argcomplete>=0:devel/py-argcomplete@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}kaptan>=0.5.7:devel/py-kaptan@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}colorama>=0.3.3:devel/py-colorama@${FLAVOR} \
 		tmux:sysutils/tmux
 
 NO_ARCH=	yes

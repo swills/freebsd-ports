@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/www/py-python-digitalocean/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-python-digitalocean/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	python-digitalocean
 PORTVERSION=	1.8
@@ -12,7 +12,7 @@ COMMENT=	API to manage digitalocean.com droplets
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.0.0:www/py-requests
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.0.0:www/py-requests@${FLAVOR}
 
 USES=	python
 USE_PYTHON=	distutils autoplist

@@ -1,16 +1,17 @@
-# $FreeBSD: head/sysutils/py-nomad/Makefile 452026 2017-10-13 18:03:26Z kmoore $
+# $FreeBSD: head/sysutils/py-nomad/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	py-nomad
 PORTVERSION=	0.5.0
 CATEGORIES=	sysutils
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	jhixson@gmail.com
 COMMENT=	Python client for nomad
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.10.0:www/py3-requests
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.10.0:www/py3-requests
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.10.0:www/py-requests@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.10.0:www/py-requests@${PY_FLAVOR}
 
 USES=	python:3.3+
 

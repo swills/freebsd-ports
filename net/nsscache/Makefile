@@ -1,5 +1,5 @@
 # Created by: Kevin Bowling <k@kev009.com>
-# $FreeBSD: head/net/nsscache/Makefile 443666 2017-06-16 00:36:59Z swills $
+# $FreeBSD: head/net/nsscache/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	nsscache
 PORTVERSION=	0.32
@@ -12,8 +12,8 @@ COMMENT=	Python utility to create a local cache of directory services
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pycurl.so:ftp/py-pycurl \
-		${PYTHON_PKGNAMEPREFIX}ldap>0:net/py-ldap
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pycurl.so:ftp/py-pycurl@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ldap>0:net/py-ldap@${FLAVOR}
 
 USES=		python:2
 USE_PYTHON=	autoplist distutils

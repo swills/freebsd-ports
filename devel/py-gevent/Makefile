@@ -1,5 +1,5 @@
 # Created by: Peter Schuller <peter.schuller@infidyne.com>
-# $FreeBSD: head/devel/py-gevent/Makefile 442763 2017-06-06 13:50:44Z sunpoet $
+# $FreeBSD: head/devel/py-gevent/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gevent
 PORTVERSION=	1.2.2
@@ -15,9 +15,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libcares.so:dns/c-ares \
 		libev.so:devel/libev
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}greenlet>=0.4.10:devel/py-greenlet
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}greenlet>=0.4.10:devel/py-greenlet \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}greenlet>=0.4.10:devel/py-greenlet@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}greenlet>=0.4.10:devel/py-greenlet@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${FLAVOR}
 
 DO_MAKE_TEST=	${SETENV} PYTHONPATH=../ ${PYTHON_CMD}
 MAKE_ENV=	CARES_EMBED=0 LIBEV_EMBED=0

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-meliae/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-meliae/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	meliae
 PORTVERSION=	0.4.0
@@ -13,10 +13,8 @@ COMMENT=	Python Memory Usage Analyzer
 
 LICENSE=	GPLv3
 
-BUILD_DEPENDS=	cython>0:lang/cython
-
 USES=		python:2
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist cython
 
 regression-test: extract
 	(cd ${WRKSRC}; ${MAKE} check)

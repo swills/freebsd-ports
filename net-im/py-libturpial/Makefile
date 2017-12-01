@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/net-im/py-libturpial/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-im/py-libturpial/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	libturpial
 PORTVERSION=	1.7.0
@@ -13,9 +13,9 @@ COMMENT=	Twitter API
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}simplejson>=3.4.0:devel/py-simplejson \
-		${PYTHON_PKGNAMEPREFIX}oauth>=1.0.1:net/py-oauth \
-		${PYTHON_PKGNAMEPREFIX}requests>=2.2.0:www/py-requests
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}simplejson>=3.4.0:devel/py-simplejson@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}oauth>=1.0.1:net/py-oauth@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=2.2.0:www/py-requests@${FLAVOR}
 
 USES=		python:2
 USE_PYTHON=	distutils autoplist

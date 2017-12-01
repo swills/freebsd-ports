@@ -1,5 +1,5 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-dfwinreg/Makefile 445342 2017-07-08 16:59:07Z antoine $
+# $FreeBSD: head/security/py-dfwinreg/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	dfwinreg
 PORTVERSION=	20170706
@@ -15,9 +15,9 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	libregf>=a:devel/libregf \
-		${PYTHON_PKGNAMEPREFIX}construct>=0:devel/py-construct \
-		${PYTHON_PKGNAMEPREFIX}dfdatetime>=0:security/py-dfdatetime
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock
+		${PYTHON_PKGNAMEPREFIX}construct>=0:devel/py-construct@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dfdatetime>=0:security/py-dfdatetime@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

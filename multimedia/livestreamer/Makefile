@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/livestreamer/Makefile 430646 2017-01-05 17:30:55Z riggs $
+# $FreeBSD: head/multimedia/livestreamer/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	livestreamer
 PORTVERSION=	1.12.2
@@ -15,10 +15,10 @@ LICENSE=	BSD2CLAUSE MIT APACHE20
 LICENSE_COMB=	multi
 
 RUN_DEPENDS=	rtmpdump:multimedia/rtmpdump \
-		${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests \
-		${PYTHON_PKGNAMEPREFIX}futures>=0:devel/py-futures \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six \
-		${PYTHON_PKGNAMEPREFIX}librtmp>=0:multimedia/py-librtmp
+		${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${FLAVOR} \
+		${PY_FUTURES} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}librtmp>=0:multimedia/py-librtmp@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

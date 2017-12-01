@@ -1,5 +1,5 @@
 # Created by: Willem Jan Withagen <wjw@digiware.nl>
-# $FreeBSD: head/net/ceph-devel/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/net/ceph-devel/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ceph
 DISTVERSION=	wip.v2017-08-15-1
@@ -20,7 +20,6 @@ IGNORE_FreeBSD_10=	Doesnt build for FreeBSD 10.x
 BUILD_DEPENDS=	\
 	yasm:devel/yasm \
 	pkgconf:devel/pkgconf \
-	cython>=0.25.2:lang/cython \
 	sphinx-build:textproc/py-sphinx \
 	${LOCALBASE}/lib/libatomic_ops.a:devel/libatomic_ops \
 	gperf:devel/gperf
@@ -50,6 +49,7 @@ RUN_DEPENDS=	\
 CONFLICTS_INSTALL=	ceph
 
 USES=	gmake cmake:outsource,noninja python:2.7 fuse gettext-runtime shebangfix
+USE_PYTHON=	cython
 USE_GITHUB=	yes
 GH_ACCOUNT=	wjwithagen:DEFAULT
 GH_TUPLE+=	ceph:ceph-erasure-code-corpus:2d7d78b:ceph_erasure_code_corpus/ceph-erasure-code-corpus

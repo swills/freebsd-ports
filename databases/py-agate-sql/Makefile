@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/py-agate-sql/Makefile 439834 2017-04-30 18:21:49Z matthew $
+# $FreeBSD: head/databases/py-agate-sql/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	agate-sql
 PORTVERSION=	0.5.2
@@ -11,8 +11,8 @@ COMMENT=	Add SQL read/write support to agate
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}agate>=1.5.0:textproc/py-agate \
-		${PYTHON_PKGNAMEPREFIX}sqlalchemy10>=1.0.8:databases/py-sqlalchemy10
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}agate>=1.5.0:textproc/py-agate@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlalchemy10>=1.0.8:databases/py-sqlalchemy10@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

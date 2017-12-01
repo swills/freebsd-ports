@@ -1,5 +1,5 @@
 # Created by: Mike Meyer <mwm@mired.org>
-# $FreeBSD: head/x11-wm/plwm/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-wm/plwm/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	plwm
 PORTVERSION=	2.6a
@@ -13,12 +13,12 @@ COMMENT=	Window manager construction kit
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xlib>0:x11-toolkits/py-xlib
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xlib>0:x11-toolkits/py-xlib
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xlib>0:x11-toolkits/py-xlib@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xlib>0:x11-toolkits/py-xlib@${FLAVOR}
 
 NO_ARCH=	yes
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 PORTDOCS=	*

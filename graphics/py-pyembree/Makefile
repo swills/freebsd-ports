@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/py-pyembree/Makefile 449096 2017-09-01 18:25:20Z antoine $
+# $FreeBSD: head/graphics/py-pyembree/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyembree
 PORTVERSION=	0.1.0
@@ -14,13 +14,12 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN=		fails to configure
 
-BUILD_DEPENDS=	cython:lang/cython \
-		${PYNUMPY}
+BUILD_DEPENDS=	${PYNUMPY}
 LIB_DEPENDS=	libembree.so:graphics/embree
 RUN_DEPENDS=	${PYNUMPY}
 
 USES=		localbase python:2
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils cython
 USE_GITHUB=	yes
 GH_ACCOUNT=	scopatz
 

@@ -1,5 +1,5 @@
 # Created by: Koop Mast <einekoai@chello.nl>
-# $FreeBSD: head/x11/workrave/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/x11/workrave/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	workrave
 DISTVERSIONPREFIX=	v
@@ -42,7 +42,7 @@ OPTIONS_SUB=		yes
 
 DISTRIBUTION_DESC=	Build with networking support
 
-DBUS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cheetah>0:devel/py-cheetah
+DBUS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cheetah>0:devel/py-cheetah@${PY_FLAVOR}
 DBUS_CONFIGURE_ENABLE=	dbus
 DBUS_USES=	python:2.7
 

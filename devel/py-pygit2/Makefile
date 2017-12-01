@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/devel/py-pygit2/Makefile 442373 2017-06-02 11:03:31Z araujo $
+# $FreeBSD: head/devel/py-pygit2/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pygit2
 PORTVERSION=	0.26.0
@@ -13,12 +13,12 @@ COMMENT=	Python bindings for libgit2
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}cffi>0:devel/py-cffi
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>0:devel/py-cffi@${FLAVOR}
 LIB_DEPENDS=	libgit2.so:devel/libgit2
-RUN_DEPENDS?=	${BUILD_DEPENDS} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+RUN_DEPENDS=	${BUILD_DEPENDS} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
 
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist distutils
 MAKE_ENV=	LIBGIT2=${LOCALBASE}
 PYDISTUTILS_TEST_TARGET?=	test

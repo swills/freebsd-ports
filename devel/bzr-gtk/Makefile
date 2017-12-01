@@ -1,5 +1,5 @@
 # Created by: Radim Kolar <hsn@sanatana.dharma>
-# $FreeBSD: head/devel/bzr-gtk/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/bzr-gtk/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	bzr-gtk
 PORTVERSION=	0.100.0
@@ -15,10 +15,10 @@ LICENSE=	GPLv2
 
 BUILD_DEPENDS=	bzr:devel/bzr
 RUN_DEPENDS=	bzr:devel/bzr \
-		${PYTHON_PKGNAMEPREFIX}cairo>=0:graphics/py-cairo
+		${PYTHON_PKGNAMEPREFIX}cairo>=0:graphics/py-cairo@${FLAVOR}
 
 
-USES=		desktop-file-utils python
+USES=		desktop-file-utils python:2.7
 USE_PYTHON=	distutils autoplist
 USE_GNOME=	pygtk2
 INSTALLS_ICONS=	yes

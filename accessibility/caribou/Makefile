@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/accessibility/caribou/Makefile 437471 2017-04-01 20:23:26Z bapt $
+# $FreeBSD: head/accessibility/caribou/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	caribou
 PORTVERSION=	0.4.21
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libclutter-glx-1.0.so:graphics/clutter \
 		libgee-0.8.so:devel/libgee \
 		libxklavier.so:x11/libxklavier
-RUN_DEPENDS=	py2?-atspi>=2.1.91:accessibility/py-atspi
+RUN_DEPENDS=	py2?-atspi>=2.1.91:accessibility/py-atspi@${PY_FLAVOR}
 
 USES=		gettext gmake gnome libtool pathfix pkgconfig python:2 \
 		shebangfix tar:xz

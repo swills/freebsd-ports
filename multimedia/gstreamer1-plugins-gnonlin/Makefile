@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer1-plugins-gnonlin/Makefile 405242 2016-01-04 14:21:56Z kwm $
+# $FreeBSD: head/multimedia/gstreamer1-plugins-gnonlin/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gstreamer1-plugins-gnonlin
 PORTVERSION=	1.4.0
@@ -10,7 +10,7 @@ DISTNAME=	gnonlin-${PORTVERSION}
 MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	GStreamer lib for writing non-linear audio and video
 
-USES=		libtool pkgconfig python:3,build tar:xz
+USES=		libtool pkgconfig python:3.4+,build tar:xz
 GNU_CONFIGURE=	yes
 USE_GSTREAMER1=	good
 INSTALL_TARGET=	install-strip

@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/math/py-theano/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/py-theano/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	theano
 PORTVERSION=	0.9.0
@@ -13,7 +13,7 @@ MAINTAINER=	demon@FreeBSD.org
 COMMENT=	Optimizing compiler for evaluating math expressions on CPUs and GPUs
 
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}scipy>=0.8.0:science/py-scipy
+		${PYTHON_PKGNAMEPREFIX}scipy>=0.8.0:science/py-scipy@${FLAVOR}
 
 USES=		compiler:openmp python
 USE_PYTHON=	concurrent distutils autoplist

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-qt5-test/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/devel/py-qt5-test/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	test
 PORTREVISION=	1
@@ -13,6 +13,7 @@ PYQT_DIST=	yes
 USES=		python pyqt:5
 USE_GL=		gl
 USE_PYQT=	sip_build core_run widgets_run
+USE_PYTHON=	flavors
 USE_QT5=	core gui testlib widgets \
 		buildtools_build qmake_build
 

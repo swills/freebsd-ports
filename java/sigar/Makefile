@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/java/sigar/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/java/sigar/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	sigar
 PORTVERSION=	1.7.3
@@ -17,6 +17,7 @@ BUILD_DEPENDS=	${ANT_CMD}:devel/apache-ant
 LIB_DEPENDS=	libsigar.so:devel/sigar
 
 BROKEN_armv6=		fails to compile: jni-build.xml: gcc failed with return code 1
+BROKEN_armv7=		fails to compile: jni-build.xml: gcc failed with return code 1
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	amishHammer

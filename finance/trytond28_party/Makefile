@@ -1,5 +1,5 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/finance/trytond28_party/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/trytond28_party/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	trytond28_party
 PORTVERSION=	2.8.1
@@ -15,11 +15,11 @@ LICENSE=	GPLv3
 
 RUN_DEPENDS=	trytond28>=2.8.2:finance/trytond28 \
 		trytond28_country>=2.8.0:finance/trytond28_country \
-		${PYTHON_PKGNAMEPREFIX}vatnumber>=1.0.0:finance/py-vatnumber
+		${PYTHON_PKGNAMEPREFIX}vatnumber>=1.0.0:finance/py-vatnumber@${FLAVOR}
 
 CONFLICTS=	trytond_party-2.[46].*
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

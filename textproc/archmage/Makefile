@@ -1,5 +1,5 @@
 # Created by: Vsevolod Stakhov <vsevolod@highsecure.ru>
-# $FreeBSD: head/textproc/archmage/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/archmage/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	archmage
 PORTVERSION=	0.2.4
@@ -15,7 +15,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/chm/chm.py:textproc/pychm \
-		${PYTHON_SITELIBDIR}/BeautifulSoup.py:www/py-beautifulsoup32
+		${PYTHON_SITELIBDIR}/BeautifulSoup.py:www/py-beautifulsoup32@${FLAVOR}
 
 NO_BUILD=	yes
 USES=		cpe python:2 tar:bzip2

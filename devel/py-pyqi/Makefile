@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pyqi/Makefile 422697 2016-09-23 21:42:02Z jrm $
+# $FreeBSD: head/devel/py-pyqi/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyqi
 PORTVERSION=	0.3.2
@@ -14,6 +14,6 @@ LICENSE=	BSD3CLAUSE
 NO_ARCH=	yes
 
 USE_PYTHON=	autoplist distutils
-USES=		pgsql python
+USES=		pgsql python:2.7
 
 .include <bsd.port.mk>

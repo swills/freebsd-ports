@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-cmdtest/Makefile 438737 2017-04-17 17:50:04Z bapt $
+# $FreeBSD: head/devel/py-cmdtest/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cmdtest
 PORTVERSION=	0.29
@@ -12,12 +12,12 @@ COMMENT=	Black box testing of Unix programs
 LICENSE=	GPLv3
 LICENSE_FILES=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}markdown>0:textproc/py-markdown \
-		${PYTHON_PKGNAMEPREFIX}cliapp>0:devel/py-cliapp \
-		${PYTHON_PKGNAMEPREFIX}ttystatus>0:devel/py-ttystatus
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}markdown>0:textproc/py-markdown \
-		${PYTHON_PKGNAMEPREFIX}cliapp>0:devel/py-cliapp \
-		${PYTHON_PKGNAMEPREFIX}ttystatus>0:devel/py-ttystatus
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}markdown>0:textproc/py-markdown@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}cliapp>0:devel/py-cliapp@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ttystatus>0:devel/py-ttystatus@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}markdown>0:textproc/py-markdown@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}cliapp>0:devel/py-cliapp@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ttystatus>0:devel/py-ttystatus@${FLAVOR}
 
 USES=		python:2
 USE_PYTHON=	distutils autoplist

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/ibus-el/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/textproc/ibus-el/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ibus-el
 PORTVERSION=	0.3.2
@@ -14,7 +14,7 @@ COMMENT=	IBus client for GNU Emacs
 RUN_DEPENDS=	ibus-daemon:textproc/ibus \
 		${PYTHON_SITELIBDIR}/Xlib/X.py:x11-toolkits/py-xlib
 
-USES=		python:run
+USES=		python:2.7,run
 USE_EMACS=	yes
 
 LICENSE=	GPLv3

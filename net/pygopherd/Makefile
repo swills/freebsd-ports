@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/net/pygopherd/Makefile 452536 2017-10-20 15:23:21Z swills $
+# $FreeBSD: head/net/pygopherd/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pygopherd
 PORTVERSION=	2.0.18.4
@@ -12,7 +12,7 @@ COMMENT=	Multiprotocol Information Server
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 USE_GITHUB=	yes

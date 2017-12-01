@@ -1,5 +1,5 @@
 # Created by: Neil Blakey-Milner <nbm@FreeBSD.org>
-# $FreeBSD: head/www/py-scgi/Makefile 376109 2015-01-03 08:41:20Z mva $
+# $FreeBSD: head/www/py-scgi/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	scgi
 PORTVERSION=	1.14
@@ -14,7 +14,7 @@ COMMENT=	Python server implementation of the Simple Common Gateway Protocol
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/print/biblio-py/Makefile 371452 2014-10-24 16:42:59Z mva $
+# $FreeBSD: head/print/biblio-py/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	biblio-py
 PORTVERSION=	0.6.1
@@ -11,7 +11,7 @@ COMMENT=	Package to manage bibliography written in python
 
 LICENSE=	GPLv2
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

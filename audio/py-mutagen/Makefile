@@ -1,5 +1,5 @@
 # Created by: Byung-Hee HWANG <bh@izb.knu.ac.kr>
-# $FreeBSD: head/audio/py-mutagen/Makefile 453689 2017-11-07 21:02:13Z sunpoet $
+# $FreeBSD: head/audio/py-mutagen/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	mutagen
 PORTVERSION=	1.39
@@ -14,7 +14,7 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 NO_ARCH=	yes
-USES?=		python shebangfix
+USES=		python shebangfix
 USE_PYTHON=	autoplist concurrent distutils
 SHEBANG_FILES=	tools/*
 

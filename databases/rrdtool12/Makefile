@@ -1,5 +1,5 @@
 # Created by: Jeremy Chadwick <koitsu@FreeBSD.org>
-# $FreeBSD: head/databases/rrdtool12/Makefile 414459 2016-05-02 16:14:05Z zeising $
+# $FreeBSD: head/databases/rrdtool12/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rrdtool
 PORTVERSION=	1.2.30
@@ -29,7 +29,7 @@ OPTIONS_DEFAULT=	PERL
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MPYTHON}
-USES+=		python
+USES+=		python:2.7
 PLIST_SUB+=	WITH_PYTHON=""
 CONFIGURE_ARGS+=	--enable-python
 .else

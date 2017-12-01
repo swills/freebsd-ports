@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-oslo.service/Makefile 432740 2017-01-29 13:23:22Z novel $
+# $FreeBSD: head/devel/py-oslo.service/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	oslo.service
 PORTVERSION=	1.19.0
@@ -12,20 +12,20 @@ COMMENT=	Oslo.service library
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.6:devel/py-pbr
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}routes>=0:www/py-routes \
-		${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six \
-		${PYTHON_PKGNAMEPREFIX}oslo.utils>=3.18.0:devel/py-oslo.utils \
-		${PYTHON_PKGNAMEPREFIX}oslo.log>=3.11.0:devel/py-oslo.log \
-		${PYTHON_PKGNAMEPREFIX}oslo.i18n>=2.1.0:devel/py-oslo.i18n \
-		${PYTHON_PKGNAMEPREFIX}oslo.config>=3.14.0:devel/py-oslo.config \
-		${PYTHON_PKGNAMEPREFIX}oslo.concurrency>=3.8.0:devel/py-oslo.concurrency \
-		${PYTHON_PKGNAMEPREFIX}monotonic>=0.6:devel/py-monotonic \
-		${PYTHON_PKGNAMEPREFIX}greenlet>=0.3.2:devel/py-greenlet \
-		${PYTHON_PKGNAMEPREFIX}eventlet>=0:net/py-eventlet \
-		${PYTHON_PKGNAMEPREFIX}webob>=1.6.0:www/py-webob \
-		${PYTHON_PKGNAMEPREFIX}PasteDeploy>=1.5.0:www/py-pastedeploy \
-		${PYTHON_PKGNAMEPREFIX}Paste>=0:www/py-paste
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.6:devel/py-pbr@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}routes>=0:www/py-routes@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}oslo.utils>=3.18.0:devel/py-oslo.utils@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}oslo.log>=3.11.0:devel/py-oslo.log@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}oslo.i18n>=2.1.0:devel/py-oslo.i18n@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}oslo.config>=3.14.0:devel/py-oslo.config@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}oslo.concurrency>=3.8.0:devel/py-oslo.concurrency@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}monotonic>=0.6:devel/py-monotonic@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}greenlet>=0.3.2:devel/py-greenlet@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}eventlet>=0:net/py-eventlet@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}webob>=1.6.0:www/py-webob@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}PasteDeploy>=1.5.0:www/py-pastedeploy@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Paste>=0:www/py-paste@${FLAVOR}
 
 NO_ARCH=	yes
 

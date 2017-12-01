@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pykde4/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/devel/py-pykde4/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pykde4
 PORTVERSION=	${KDE4_VERSION}
@@ -17,6 +17,7 @@ USE_KDE=	kdelibs nepomuk-core okular pimlibs \
 USE_PYQT=	declarative designer gui network opengl phonon script sip \
 		sql svg webkit xml \
 		dbussupport_run
+USE_PYTHON=	flavors
 USE_QT4=	corelib dbus designer_build gui network xml \
 		qmake_build moc_build uic_build rcc_build
 

@@ -1,5 +1,5 @@
 # Created by: Mark Pulford <mark@kyne.com.au>
-# $FreeBSD: head/editors/mp/Makefile 441855 2017-05-27 16:48:41Z linimon $
+# $FreeBSD: head/editors/mp/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	mp
 PORTVERSION=	5.2.10
@@ -14,6 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_aarch64=		fails to compile: conflicting types for __wcwidth
 BROKEN_armv6=		fails to compile: conflicting types for __wcwidth
+BROKEN_armv7=		fails to compile: conflicting types for __wcwidth
 
 USES=		iconv ncurses
 HAS_CONFIGURE=	yes

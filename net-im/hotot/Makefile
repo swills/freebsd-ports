@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/net-im/hotot/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/net-im/hotot/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	hotot
 PORTVERSION=	0.9.8.14
@@ -15,7 +15,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	lyricat
 GH_PROJECT=	Hotot
 
-USES=		cmake gettext kde:4 python
+USES=		cmake gettext kde:4 python:2.7
 USE_GNOME=	intltool
 INSTALLS_ICONS=	yes
 

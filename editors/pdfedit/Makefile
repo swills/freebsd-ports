@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/editors/pdfedit/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/editors/pdfedit/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	pdfedit
 PORTVERSION=	0.4.5
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libboost_filesystem.so:devel/boost-libs \
 		libfreetype.so:print/freetype2 \
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libt1.so:devel/t1lib
 
 USES=		gmake perl5 tar:bzip2

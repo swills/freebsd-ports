@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/legesmotus/Makefile 441807 2017-05-26 18:30:43Z linimon $
+# $FreeBSD: head/games/legesmotus/Makefile 455165 2017-11-30 05:55:17Z linimon $
 
 PORTNAME=	legesmotus
 PORTVERSION=	0.4.0
@@ -13,7 +13,7 @@ COMMENT=	Team-based, networked, 2D shooter set in zero-gravity
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-NOT_FOR_ARCHS=		aarch64 armv6
+NOT_FOR_ARCHS=		aarch64 armv6 armv7
 NOT_FOR_ARCHS_REASON=	fails to build: Disallowed architecture for this platform
 
 HAS_CONFIGURE=	yes

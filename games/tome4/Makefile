@@ -1,5 +1,5 @@
 # Created by: Nikolai Lifanov <lifanov@mail.lifanov.com>
-# $FreeBSD: head/games/tome4/Makefile 444968 2017-07-03 17:21:20Z lifanov $
+# $FreeBSD: head/games/tome4/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	tome4
 PORTVERSION=	1.5.5
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	premake4:devel/premake4
 LIB_DEPENDS=	libvorbisfile.so:audio/libvorbis \
-		libpng16.so:graphics/png
+		libpng.so:graphics/png
 
 DESKTOP_ENTRIES="ToME 4" "" "${PORTNAME}" \
 		"${PORTNAME}" "Game;RolePlaying;" ""

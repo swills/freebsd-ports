@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/cvs2svn/Makefile 430631 2017-01-05 11:00:49Z amdmi3 $
+# $FreeBSD: head/devel/cvs2svn/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cvs2svn
 PORTVERSION=	2.4.0
@@ -14,8 +14,8 @@ PATCH_SITES=	LOCAL/ohauer
 MAINTAINER=	ohauer@FreeBSD.org
 COMMENT=	CVS to Subversion Repository Converter
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdbm>0:databases/py-gdbm
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdbm>0:databases/py-gdbm \
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdbm>0:databases/py-gdbm@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdbm>0:databases/py-gdbm@${FLAVOR} \
 		cvs:devel/cvs
 
 # 2.4.0 -> svn r5392
@@ -37,7 +37,7 @@ SUBVERSION_DESC=	Build with subversion support
 GIT_DESC=		Build with git support
 BAZAAR_DESC=		Build with Bazaar support
 
-SUBVERSION_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}subversion>=0:devel/py-subversion
+SUBVERSION_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}subversion>=0:devel/py-subversion@${FLAVOR}
 GIT_RUN_DEPENDS=	${LOCALBASE}/bin/git:devel/git
 BAZAAR_RUN_DEPENDS=	${LOCALBASE}/bin/bzr:devel/bzr
 

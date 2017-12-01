@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/darktable/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/darktable/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	darktable
 PORTVERSION=	2.2.5
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	graphics
 MASTER_SITES=	https://github.com/darktable-org/${PORTNAME}/releases/download/release-${PORTVERSION:C/\.rc/rc/}/
 
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libjson-glib-1.0.so:devel/json-glib \
 		liblcms2.so:graphics/lcms2 \
 		liblensfun.so:graphics/lensfun \
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libpugixml.so:textproc/pugixml \
 		libsoup-2.4.so:devel/libsoup \
 		libtiff.so:graphics/tiff

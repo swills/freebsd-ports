@@ -1,5 +1,5 @@
 # Created by: Anders Nordby <anders@FreeBSD.org>
-# $FreeBSD: head/multimedia/libkate/Makefile 453627 2017-11-06 16:06:11Z mat $
+# $FreeBSD: head/multimedia/libkate/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	libkate
 PORTVERSION=	0.4.1
@@ -40,7 +40,7 @@ CONFIGURE_ARGS+=	--disable-doc
 
 .if ${PORT_OPTIONS:MKATEDJ}
 RUN_DEPENDS=	${LOCALBASE}/bin/oggz:audio/liboggz
-USES+=		python shebangfix
+USES+=		python:2.7 shebangfix
 SHEBANG_FILES=	tools/KateDJ/KateDJ
 USE_WX=		3.0+
 WX_COMPS=	wx python:lib

@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@python.or.kr>
-# $FreeBSD: head/net/py-xmlrpc/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/net/py-xmlrpc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	xmlrpc
 PORTVERSION=	0.8.8.3
@@ -15,7 +15,7 @@ COMMENT=	Fast implementation of the xmlrpc spec for Python
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 OPTIONS_DEFINE=	EXAMPLES

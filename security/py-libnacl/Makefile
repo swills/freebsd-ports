@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/security/py-libnacl/Makefile 452629 2017-10-22 10:09:33Z vsevolod $
+# $FreeBSD: head/security/py-libnacl/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	libnacl
 PORTVERSION=	1.5.2
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libsodium.so:security/libsodium
 
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 NO_ARCH=	yes

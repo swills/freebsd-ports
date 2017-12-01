@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/devel/py-orbit/Makefile 393429 2015-08-02 15:03:19Z tijl $
+# $FreeBSD: head/devel/py-orbit/Makefile 455210 2017-11-30 15:50:30Z mat $
 #   $MCom: ports/devel/py-orbit/Makefile,v 1.1 2008/09/23 20:08:04 mezz Exp $
 
 PORTNAME=	orbit
@@ -16,8 +16,9 @@ COMMENT=	Python bindings for ORBit2
 
 CONFLICTS=	py*-omniorb-[0-9]*
 
-USES=		gmake libtool pathfix pkgconfig python tar:bzip2
+USES=		gmake libtool pathfix pkgconfig python:2.7 tar:bzip2
 USE_GNOME=	orbit2
+USE_PYTHON=	flavors
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 

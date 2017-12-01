@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/gitinspector/Makefile 442073 2017-05-30 15:21:24Z sunpoet $
+# $FreeBSD: head/devel/gitinspector/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gitinspector
 PORTVERSION=	0.4.4
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 RUN_DEPENDS=	git:devel/git
 
 NO_ARCH=	yes
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils concurrent optsuffix
 USES=		python
 
 GH_ACCOUNT=	ejwa

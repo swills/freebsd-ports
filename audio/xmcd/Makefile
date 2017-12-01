@@ -1,5 +1,5 @@
 # Created by: Gennady Sorokopud <gena@NetVision.net.il>
-# $FreeBSD: head/audio/xmcd/Makefile 441320 2017-05-20 16:58:10Z linimon $
+# $FreeBSD: head/audio/xmcd/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	xmcd
 PORTVERSION=	3.3.2
@@ -24,6 +24,7 @@ LIBBINDIR=	${STAGEDIR}${PREFIX}/lib/X11/xmcd/bin-${OPSYS}_${OSREL:R:R}-${ARCH}
 
 BROKEN_aarch64=		Fails to compile: many undefined symbols in xorg.cf
 BROKEN_armv6=		Fails to compile: many undefined symbols in xorg.cf
+BROKEN_armv7=		Fails to install: strip: xmcd/bin-FreeBSD_12-armv7/cda failed: No such file or directory
 BROKEN_mips64=		Fails to compile: many undefined symbols in xorg.cf
 BROKEN_powerpc64=	Fails to compile: many undefined symbols in xorg.cf
 

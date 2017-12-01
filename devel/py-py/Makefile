@@ -1,5 +1,5 @@
 # Created by: Yi-Jheng Lin <yzlin@cs.nctu.edu.tw>
-# $FreeBSD: head/devel/py-py/Makefile 454440 2017-11-18 14:17:36Z sunpoet $
+# $FreeBSD: head/devel/py-py/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	py
 PORTVERSION=	1.5.2
@@ -13,10 +13,10 @@ COMMENT=	Library with cross-python path, ini-parsing, io, code, log facilities
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
 
 NO_ARCH=	yes
-USES+=		python
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 do-test:

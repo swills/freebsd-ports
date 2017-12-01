@@ -1,5 +1,5 @@
 # Created by: Neil Booth
-# $FreeBSD: head/net/py-pysocks/Makefile 442828 2017-06-07 11:01:05Z koobs $
+# $FreeBSD: head/net/py-pysocks/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pysocks
 PORTVERSION=	1.6.7
@@ -13,7 +13,7 @@ COMMENT=	Python SOCKS module
 
 LICENSE=	BSD3CLAUSE
 
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 NO_ARCH=	yes
 

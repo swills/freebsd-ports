@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/textproc/randlm/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/textproc/randlm/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	randlm
 PORTVERSION=	0.2.5
@@ -26,6 +26,7 @@ INSTALL_TARGET=	install-strip
 
 BROKEN_aarch64=		fails to compile: invalid output constraint =a in asm
 BROKEN_armv6=		fails to compile: invalid output constraint =a in asm
+BROKEN_armv7=		fails to compile: BloomMap.cpp:275:58: error: ordered comparison between pointer and zero ('int *' and 'int')
 BROKEN_powerpc64=	fails to compile: error: 'itr' does not name a type
 
 post-patch:

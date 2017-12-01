@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/math/py-patsy/Makefile 417356 2016-06-23 09:48:53Z tz $
+# $FreeBSD: head/math/py-patsy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	patsy
 PORTVERSION=	0.4.1
@@ -14,7 +14,7 @@ LICENSE=	BSD3CLAUSE PSFL
 LICENSE_COMB=	multi
 
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
 
 USES=		python zip
 USE_PYTHON=	distutils autoplist

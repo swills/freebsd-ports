@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/pyspacewar/Makefile 425202 2016-11-03 11:54:28Z nemysis $
+# $FreeBSD: head/games/pyspacewar/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyspacewar
 PORTVERSION=	1.1.0
@@ -18,7 +18,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	mgedmin
 GH_TAGNAME=	f872564
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 PORTDOCS=	*.rst

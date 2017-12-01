@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: head/multimedia/freevo/files/freevo.in 355422 2014-05-26 17:42:21Z riggs $
+# $FreeBSD: head/multimedia/freevo/files/freevo.in 455210 2017-11-30 15:50:30Z mat $
 #
 
 # PROVIDE: freevo
@@ -30,7 +30,7 @@ freevo_uid=`pw usershow ${freevo_user} | awk -F: '{print $3}'`
 freevo_dir=`pw usershow ${freevo_user} | awk -F: '{print $9}'`
 
 command="%%PREFIX%%/bin/freevo"
-command_interpreter="%%PREFIX%%/bin/%%PYTHON_VERSION%%"
+command_interpreter="%%PYTHON_CMD%%"
 
 # freevo needs PATH set so it can determine python version
 export PATH=/bin:/usr/bin:%%PREFIX%%/bin:${freevo_dir}/bin

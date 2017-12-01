@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/databases/py-gdbm/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/py-gdbm/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gdbm
 PORTVERSION=	${PYTHON_PORTVERSION}
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libgdbm.so:databases/gdbm
 PORTSCOUT=	ignore:1
 
 USES=		python tar:xz
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist allflavors
 
 PYDISTUTILS_INSTALLARGS+=	--install-lib ${PYTHONPREFIX_LIBDIR}/lib-dynload
 

@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/graphics/gthumb/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/gthumb/Makefile 455251 2017-12-01 07:19:53Z antoine $
 #   $MCom: ports/trunk/graphics/gthumb/Makefile 19823 2014-08-20 09:28:14Z gusi $
 
 PORTNAME=	gthumb
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libclutter-1.0.so:graphics/clutter \
 		libgstreamer-1.0.so:multimedia/gstreamer1 \
 		liblcms2.so:graphics/lcms2 \
 		liboauth.so:net/liboauth \
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libsoup-2.4.so:devel/libsoup \
 		libtiff.so:graphics/tiff
 RUN_DEPENDS=	gsettings-desktop-schemas>0:devel/gsettings-desktop-schemas

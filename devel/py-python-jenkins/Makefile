@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/devel/py-python-jenkins/Makefile 448462 2017-08-21 11:02:28Z lwhsu $
+# $FreeBSD: head/devel/py-python-jenkins/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	python-jenkins
 PORTVERSION=	0.4.15
@@ -12,10 +12,10 @@ COMMENT=	Python bindings for the remote Jenkins API
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=0.8.2:devel/py-pbr
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=0.8.2:devel/py-pbr \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six \
-		${PYTHON_PKGNAMEPREFIX}multi_key_dict>0:devel/py-multi_key_dict
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=0.8.2:devel/py-pbr@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=0.8.2:devel/py-pbr@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}multi_key_dict>0:devel/py-multi_key_dict@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

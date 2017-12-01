@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-rwt/Makefile 454437 2017-11-18 14:17:20Z sunpoet $
+# $FreeBSD: head/devel/py-rwt/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rwt
 PORTVERSION=	3.1
@@ -12,11 +12,11 @@ COMMENT=	RWT (Run With This) provides on-demand dependency resolution
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.15.0:devel/py-setuptools_scm
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pip>=0:devel/py-pip
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.15.0:devel/py-setuptools_scm@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pip>=0:devel/py-pip@${FLAVOR}
 
 NO_ARCH=	yes
-USE_PYTHON=	concurrent distutils
+USE_PYTHON=	concurrent distutils autoplist
 USES=		python
 
 .include <bsd.port.mk>

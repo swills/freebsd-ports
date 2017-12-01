@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/net/googlecl/Makefile 439489 2017-04-26 19:44:29Z sbz $
+# $FreeBSD: head/net/googlecl/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	googlecl
 PORTVERSION=	0.9.15.1
@@ -11,9 +11,9 @@ COMMENT=	Command line tools for the Google Data APIs
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/License
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdata>0:devel/py-gdata \
-		${PYTHON_PKGNAMEPREFIX}oauth2client>0:security/py-oauth2client \
-		${PYTHON_PKGNAMEPREFIX}httplib2>0:www/py-httplib2
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdata>0:devel/py-gdata@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}oauth2client>0:security/py-oauth2client@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}httplib2>0:www/py-httplib2@${FLAVOR}
 
 USES=		python:2
 USE_PYTHON=	autoplist distutils

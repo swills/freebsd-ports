@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/www/py-slumber/Makefile 426059 2016-11-13 16:14:14Z rene $
+# $FreeBSD: head/www/py-slumber/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	slumber
 PORTVERSION=	0.7.1
@@ -12,13 +12,13 @@ COMMENT=	Library that makes consuming a REST API easier and more convenient
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR}
 
 OPTIONS_DEFINE=	YAML
 
 YAML_DESC=		YAML serializer support
-YAML_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml
+YAML_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${FLAVOR}
 
 USES=		python
 USE_GITHUB=	yes

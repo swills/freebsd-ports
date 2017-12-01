@@ -1,5 +1,5 @@
 # Created by: Johannes Jost Meixner <johannes@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/py-msrestazure/Makefile 450975 2017-09-30 11:09:19Z tcberner $
+# $FreeBSD: head/net-mgmt/py-msrestazure/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	msrestazure
 PORTVERSION=	0.4.8
@@ -12,9 +12,9 @@ COMMENT=	Azure-specific AutoRest swagger generator Python client runtime
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}keyring>0:security/py-keyring \
-		${PYTHON_PKGNAMEPREFIX}msrest>0:net-mgmt/py-msrest \
-		${PYTHON_PKGNAMEPREFIX}adal>0:net-mgmt/py-adal
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}keyring>0:security/py-keyring@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}msrest>0:net-mgmt/py-msrest@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}adal>0:net-mgmt/py-adal@${FLAVOR}
 
 USES=		python zip
 USE_PYTHON=	autoplist distutils

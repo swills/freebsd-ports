@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/open-motif/Makefile 437094 2017-03-28 05:30:32Z cy $
+# $FreeBSD: head/x11-toolkits/open-motif/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	open-motif
 PORTVERSION=	2.3.7
@@ -21,7 +21,7 @@ USE_XORG=	x11 xaw xbitmaps xext xft xt xmu xrender sm ice
 LIB_DEPENDS=	libXp.so:x11/libXp \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
-		libpng16.so:graphics/png
+		libpng.so:graphics/png
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 CPPFLAGS+=	-DCSRG_BASED -DXUSE_MTSAFE_API -DXNO_MTSAFE_PWDAPI -I${PREFIX}/include

@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/py-bencode.py/Makefile 451475 2017-10-07 18:56:22Z antoine $
+# $FreeBSD: head/converters/py-bencode.py/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	bencode.py
 PORTVERSION=	1.2.0
@@ -15,8 +15,8 @@ LICENSE_NAME=	BitTorrent Open Source License
 LICENSE_TEXT=	See http://directory.fsf.org/wiki/License:BitTorrentOSL1.1
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.9:devel/py-pbr
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.9:devel/py-pbr@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

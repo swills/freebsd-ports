@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-filemagic/Makefile 426059 2016-11-13 16:14:14Z rene $
+# $FreeBSD: head/devel/py-filemagic/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	filemagic
 PORTVERSION=	1.6
@@ -12,7 +12,7 @@ COMMENT=	Python API for libmagic, the library behind the Unix file command
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR}
 
 OPTIONS_DEFINE=	TESTS
 

@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/sysutils/zeitgeist/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/zeitgeist/Makefile 455210 2017-11-30 15:50:30Z mat $
 # NOTE: please keep zeitgeist in sysutils/qzeitgeist in sync
 
 PORTNAME=	zeitgeist
@@ -16,9 +16,9 @@ LICENSE_COMB=	multi
 BUILD_DEPENDS=	valac:lang/vala \
 		dee-tool:devel/dee \
 		rapper:textproc/raptor2 \
-		${PYTHON_PKGNAMEPREFIX}rdflib>=4.1.1:textproc/py-rdflib
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/xdg/__init__.py:devel/py-xdg \
-		${PYTHON_SITELIBDIR}/dbus/__init__.py:devel/py-dbus
+		${PYTHON_PKGNAMEPREFIX}rdflib>=4.1.1:textproc/py-rdflib@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/xdg/__init__.py:devel/py-xdg@${PY_FLAVOR} \
+		${PYTHON_SITELIBDIR}/dbus/__init__.py:devel/py-dbus@${PY_FLAVOR}
 
 USE_GNOME=	intlhack glib20 introspection:build
 GNU_CONFIGURE=	yes

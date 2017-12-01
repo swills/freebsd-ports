@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@email.it>
-# $FreeBSD: head/textproc/py-genshi/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/textproc/py-genshi/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	Genshi
 PORTVERSION=	0.7
@@ -23,7 +23,7 @@ USE_PYTHON=	distutils autoplist
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MBABEL}
-RUN_DEPENDS+=	${PKGNAMEPREFIX}Babel>=0.9.6:devel/py-babel
+RUN_DEPENDS+=	${PKGNAMEPREFIX}Babel>=0.9.6:devel/py-babel@${FLAVOR}
 .endif
 
 .include <bsd.port.mk>

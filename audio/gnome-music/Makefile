@@ -1,5 +1,5 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/audio/gnome-music/Makefile 446388 2017-07-22 11:35:44Z kwm $
+# $FreeBSD: head/audio/gnome-music/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gnome-music
 PORTVERSION=	3.18.2
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libgrilo-0.2.so:net/grilo2 \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake gnome libtool pathfix pkgconfig python:3 tar:xz
+USES=		gettext gmake gnome libtool pathfix pkgconfig python:3.4+ tar:xz
 USE_LDCONFIG=	yes
 USE_GNOME=	gnomedesktop3 gtk30 intltool introspection:build
 GNU_CONFIGURE=	yes

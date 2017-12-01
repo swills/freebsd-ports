@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plonetheme.sunburst/Makefile 405756 2016-01-10 23:10:45Z rm $
+# $FreeBSD: head/www/py-plonetheme.sunburst/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	plonetheme.sunburst
 PORTVERSION=	1.4.7
@@ -13,7 +13,7 @@ COMMENT=	Default theme for Plone 4
 LICENSE=	GPLv2
 
 NO_ARCH=	yes
-USES=		python zip
+USES=		python:2.7 zip
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

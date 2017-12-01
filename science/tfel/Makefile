@@ -1,5 +1,5 @@
 # Created by: Pedro F. Giffuni
-# $FreeBSD: head/science/tfel/Makefile 454878 2017-11-25 10:43:57Z thierry $
+# $FreeBSD: head/science/tfel/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tfel
 PORTVERSION=	3.0.2
@@ -22,10 +22,9 @@ GNUPLOT_BUILD_DEPENDS=	gnuplot:math/gnuplot
 GNUPLOT_RUN_DEPENDS=	gnuplot:math/gnuplot
 
 PYTHON_LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs
-PYTHON_USES=		localbase python
+PYTHON_USES=		localbase python:2.7
 PYTHON_CONFIGURE_ARGS=	--enable-python-bindings
 PYTHON_CONFIGURE_WITH=	boost=${LOCALBASE}
-PYTHON_USES=		localbase python
 
 USES=		libtool tar:bzip2
 GNU_CONFIGURE=	yes

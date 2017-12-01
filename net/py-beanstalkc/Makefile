@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/net/py-beanstalkc/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/py-beanstalkc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	beanstalkc
 PORTVERSION=	0.4.0
@@ -12,17 +12,17 @@ COMMENT=	Simple beanstalkd client library for Python
 
 LICENSE=	APACHE20
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose \
-		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 OPTIONS_DEFINE=		YAML
 OPTIONS_DEFAULT=	YAML
 YAML_DESC=		Support parsing YAML responses
 
-YAML_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml
+YAML_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${FLAVOR}
 
 regression-test: build
 	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYSETUP} test

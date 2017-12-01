@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/security/rubygem-rbnacl-libsodium/Makefile 455048 2017-11-28 15:52:13Z tz $
 
 PORTNAME=	rbnacl-libsodium
 PORTVERSION=	1.0.13
@@ -15,6 +15,7 @@ BUILD_DEPENDS=	rubygem-bundler>=1.5:sysutils/rubygem-bundler \
 RUN_DEPENDS=	rubygem-rbnacl>=3.0.1:security/rubygem-rbnacl
 
 USES=		gem libtool
+USE_LDCONFIG=	yes
 USE_RUBY=	yes
 
 post-install:

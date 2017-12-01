@@ -1,5 +1,5 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/misc/freeguide/Makefile 441819 2017-05-27 00:20:19Z linimon $
+# $FreeBSD: head/misc/freeguide/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	freeguide
 PORTVERSION=	0.11.1
@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/doc/COPYING
 RUN_DEPENDS=	tv_cat:textproc/p5-xmltv
 
 BROKEN_armv6=		fails to package: freeguide.1.gz: No such file or directory
+BROKEN_armv7=		fails to package: freeguide.1.gz: No such file or directory
 
 USE_JAVA=	yes
 JAVA_VERSION=	1.6+

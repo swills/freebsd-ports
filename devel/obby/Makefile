@@ -1,5 +1,5 @@
 # Created by: Andreas Kohn <andreas@syndrom23.de>
-# $FreeBSD: head/devel/obby/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/obby/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	obby
 PORTVERSION=	0.4.8
@@ -16,6 +16,7 @@ LIB_DEPENDS=	libsigc-2.0.so:devel/libsigc++20 \
 		libnet6.so:net/net6
 
 BROKEN_armv6=		fails to compile: no member named 'name' in 'serialise::type_name<long long>'
+BROKEN_armv7=		fails to compile: no member named 'name' in 'serialise::type_name<long long>'
 
 USES=		pathfix pkgconfig libtool compiler:c++11-lang
 USE_CXXSTD=	c++11

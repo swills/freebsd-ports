@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/devel/gnatpython/Makefile 449481 2017-09-09 09:01:49Z amdmi3 $
+# $FreeBSD: head/devel/gnatpython/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gnatpython
 PORTVERSION=	${SNAPSHOT}
@@ -13,7 +13,7 @@ LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING3
 
 SNAPSHOT=	20140224
-USES=		python tar:bzip2
+USES=		python:2.7 tar:bzip2
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-re2/Makefile 446386 2017-07-22 10:43:00Z antoine $
+# $FreeBSD: head/devel/rubygem-re2/Makefile 455059 2017-11-28 16:27:55Z tz $
 
 PORTNAME=	re2
 PORTVERSION=	1.1.1
@@ -11,9 +11,9 @@ COMMENT=	Ruby bindings to re2
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-BUILD_DEPENDS=	re2>=0:devel/re2 \
-		rubygem-rake-compiler>=0.9:devel/rubygem-rake-compiler \
-		rubygem-rspec>=3.2:devel/rubygem-rspec
+BUILD_DEPENDS=	re2>=0:devel/re2
+LIB_DEPENDS=	libunwind.so:devel/libunwind \
+		libgmp.so:math/gmp
 RUN_DEPENDS=	re2>=0:devel/re2
 
 USE_RUBY=	yes

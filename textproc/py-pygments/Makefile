@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/textproc/py-pygments/Makefile 438660 2017-04-16 13:38:25Z nivit $
+# $FreeBSD: head/textproc/py-pygments/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pygments
 PORTVERSION=	2.2.0
@@ -13,7 +13,7 @@ COMMENT=	Syntax highlighter written in Python
 
 LICENSE=	BSD2CLAUSE
 
-USES?=		python
+USES=		python
 USE_PYTHON=	distutils concurrent autoplist
 NO_ARCH=	yes
 

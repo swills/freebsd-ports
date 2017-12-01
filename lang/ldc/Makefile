@@ -1,5 +1,5 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/lang/ldc/Makefile 445988 2017-07-16 08:49:32Z acm $
+# $FreeBSD: head/lang/ldc/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	ldc
 PORTVERSION=	1.3.0
@@ -18,6 +18,7 @@ LIB_DEPENDS=	libconfig.so:devel/libconfig
 
 BROKEN_aarch64=		fails to compile: Error: undefined identifier _jmp_buf, did you mean alias jmp_buf?
 BROKEN_armv6=		fails to compile: Error: undefined identifier _jmp_buf, did you mean alias jmp_buf?
+BROKEN_armv7=		fails to compile: Error: undefined identifier _jmp_buf, did you mean alias jmp_buf?
 BROKEN_powerpc64=	fails to compile: cc1plus: error: unrecognized command line option "-std=c++11"
 
 USES=		cmake

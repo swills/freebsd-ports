@@ -1,5 +1,5 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/www/py-django-simple-history/Makefile 432237 2017-01-23 15:25:10Z cs $
+# $FreeBSD: head/www/py-django-simple-history/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-simple-history
 PORTVERSION=	1.8.2
@@ -11,7 +11,7 @@ COMMENT=	Store model history and view/revert changes from admin site
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18 # >= 1.8
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18@${FLAVOR} # >= 1.8
 
 USE_GITHUB=	yes
 

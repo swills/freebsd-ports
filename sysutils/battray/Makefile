@@ -1,5 +1,5 @@
 # Created by: Martin Tournoij <martin@arp242.net>
-# $FreeBSD: head/sysutils/battray/Makefile 454690 2017-11-22 14:50:22Z tz $
+# $FreeBSD: head/sysutils/battray/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	battray
 DISTVERSION=	2.3
@@ -14,7 +14,7 @@ LICENSE=	MIT
 
 USES=		python:3.3+
 USE_GNOME=	py3gobject3
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils optsuffix
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Carpetsmoker

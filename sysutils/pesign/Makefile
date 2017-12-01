@@ -1,5 +1,5 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/sysutils/pesign/Makefile 450495 2017-09-24 16:16:12Z jbeich $
+# $FreeBSD: head/sysutils/pesign/Makefile 455165 2017-11-30 05:55:17Z linimon $
 
 PORTNAME=	pesign
 PORTVERSION=	0.110
@@ -24,7 +24,7 @@ GH_ACCOUNT=	rhinstaller
 USES=		gmake localbase pkgconfig
 USE_LDCONFIG=	yes
 
-ONLY_FOR_ARCHS=		aarch64 armv6 amd64 i386
+ONLY_FOR_ARCHS=		aarch64 armv6 armv7 amd64 i386
 ONLY_FOR_ARCHS_REASON=	UEFI specification only supports little-endian processors
 BROKEN_armv6=		fails to compile: error: EFI_VARIABLE_NON_VOLATILE redefined
 

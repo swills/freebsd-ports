@@ -1,5 +1,5 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/comms/quisk/Makefile 429198 2016-12-22 22:57:07Z db $
+# $FreeBSD: head/comms/quisk/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	quisk
 PORTVERSION=	4.1.3
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 		libasound.so:audio/alsa-lib \
 		libpulse.so:audio/pulseaudio
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 USE_WX=		3.0+
 WX_COMPS=	python

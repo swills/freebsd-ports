@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/py-cxx/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-cxx/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cxx
 PORTVERSION=	6.0.0
@@ -11,7 +11,7 @@ DISTNAME=	pycxx-${PORTVERSION}
 MAINTAINER=	lwhsu@FreeBSD.org
 COMMENT=	Make it easier to extend Python with C++
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils pythonprefix
 PYDISTUTILS_PKGNAME=	CXX
 PYDISTUTILS_PKGVERSION=	5.3

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/hpenc/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/security/hpenc/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	hpenc
 PORTVERSION=	2.0
@@ -12,6 +12,7 @@ COMMENT=	Fast authenticated encryption CLI tool
 LICENSE=	BSD2CLAUSE
 
 BROKEN_armv6=		fails to build: fatal error: cpuid_flags.inc: No such file or directory
+BROKEN_armv7=		fails to build: fatal error: cpuid_flags.inc: No such file or directory
 BROKEN_powerpc64=	fails to build: fatal error: cpuid_flags.inc: No such file or directory
 
 NOT_FOR_ARCHS=		aarch64 sparc64

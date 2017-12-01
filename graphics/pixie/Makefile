@@ -1,9 +1,9 @@
 # Created by: Igor Pokrovsky <tiamat@comset.net>
-# $FreeBSD: head/graphics/pixie/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/pixie/Makefile 455244 2017-12-01 01:58:23Z mandree $
 
 PORTNAME=	pixie
 PORTVERSION=	2.2.6
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/Pixie%20${PORTVERSION}
 DISTNAME=	Pixie-src-${PORTVERSION}
@@ -20,6 +20,7 @@ LIB_DEPENDS=	libIlmImf.so:graphics/OpenEXR \
 
 BROKEN_aarch64=		fails to compile: use of undeclared identifier CRenderer
 BROKEN_armv6=		fails to compile: use of undeclared identifier CRenderer
+BROKEN_armv7=		fails to compile: use of undeclared identifier CRenderer
 BROKEN_sparc64=		fails to compile
 
 USE_GL=		glu

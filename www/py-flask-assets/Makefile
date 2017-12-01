@@ -1,5 +1,5 @@
 # Created by: Kyle Evans <kevans@FreeBSD.org>
-# $FreeBSD: head/www/py-flask-assets/Makefile 445117 2017-07-06 01:39:08Z ultima $
+# $FreeBSD: head/www/py-flask-assets/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	Flask-Assets
 PORTVERSION=	0.12
@@ -12,8 +12,8 @@ COMMENT=	Asset management for flask
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0:www/py-flask \
-		${PYTHON_PKGNAMEPREFIX}webassets>=0:www/py-webassets
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0:www/py-flask@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}webassets>=0:www/py-webassets@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

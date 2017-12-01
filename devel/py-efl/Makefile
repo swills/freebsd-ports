@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/devel/py-efl/Makefile 450248 2017-09-21 10:54:03Z gblach $
+# $FreeBSD: head/devel/py-efl/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	efl
 PORTVERSION=	1.19.0
@@ -14,20 +14,12 @@ COMMENT=	Python bindings for EFL and Elementary
 LICENSE=	GPLv3 LGPL3
 LICENSE_COMB=	multi
 
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0.83:devel/py-dbus@${FLAVOR}
 LIB_DEPENDS=	libefl.so:devel/efl
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0.83:devel/py-dbus@${FLAVOR}
 
 DIST_SUBDIR=	enlightenment
 USES=		pkgconfig python tar:xz
 USE_PYTHON=	autoplist distutils
 
-.include <bsd.port.pre.mk>
-
-.if ${PYTHON_REL} < 3000
-BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}dbus>=0.83:devel/py-dbus
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}dbus>=0.83:devel/py-dbus
-.else
-BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}dbus>=0.83:devel/py3-dbus
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}dbus>=0.83:devel/py3-dbus
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

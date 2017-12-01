@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/py-py-restclient/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-py-restclient/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	py-restclient
 PORTVERSION=	1.3.3
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Python REST Client
 
-RUN_DEPENDS=	${PKGNAMEPREFIX}httplib2>=0:www/py-httplib2
+RUN_DEPENDS=	${PKGNAMEPREFIX}httplib2>=0:www/py-httplib2@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

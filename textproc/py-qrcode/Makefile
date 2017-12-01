@@ -1,5 +1,5 @@
 # Created by: Neil Booth
-# $FreeBSD: head/textproc/py-qrcode/Makefile 453887 2017-11-10 08:41:59Z ehaupt $
+# $FreeBSD: head/textproc/py-qrcode/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	qrcode
 PORTVERSION=	5.3
@@ -13,18 +13,10 @@ COMMENT=	QR Code image generator
 
 LICENSE=	BSD3CLAUSE
 
-USES?=		python
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.8:devel/py-six@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>=2.6:graphics/py-pillow@${FLAVOR}
+
+USES=		python
 USE_PYTHON=	autoplist distutils
 
-.include <bsd.port.pre.mk>
-
-.if ${PYTHON_REL} > 3000
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.8:devel/py3-six \
-		${PYTHON_PKGNAMEPREFIX}pillow>=2.6:graphics/py3-pillow
-.else
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.8:devel/py-six \
-		${PYTHON_PKGNAMEPREFIX}pillow>=2.6:graphics/py-pillow
-.endif
-
-.include <bsd.port.post.mk>
-
+.include <bsd.port.mk>

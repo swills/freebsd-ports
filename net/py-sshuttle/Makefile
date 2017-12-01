@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/net/py-sshuttle/Makefile 423637 2016-10-10 05:13:54Z koobs $
+# $FreeBSD: head/net/py-sshuttle/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sshuttle
 PORTVERSION=	0.78.1
@@ -13,9 +13,9 @@ COMMENT=	Full-featured VPN over an SSH tunnel
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest \
-		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

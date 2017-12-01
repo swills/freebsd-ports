@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/py-pycollada/Makefile 454886 2017-11-25 15:43:34Z tcberner $
+# $FreeBSD: head/graphics/py-pycollada/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pycollada
 DISTVERSION=	0.6
@@ -11,8 +11,8 @@ COMMENT=	Python library for reading and writing collada documents
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>0:math/py-numpy \
-		${PYTHON_PKGNAMEPREFIX}dateutil>=2.0:devel/py-dateutil
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>0:math/py-numpy@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dateutil>=2.0:devel/py-dateutil@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python
@@ -21,6 +21,6 @@ USE_PYTHON=	autoplist distutils
 OPTIONS_DEFINE=	LXML
 
 LXML_DESC=		Uses lxml for XML loading, construction, and saving.
-LXML_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml
+LXML_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${FLAVOR}
 
 .include <bsd.port.mk>

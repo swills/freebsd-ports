@@ -1,5 +1,5 @@
 # Created by: Andrej Zverev <az@inec.ru>
-# $FreeBSD: head/mail/svnmailer/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/svnmailer/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	svnmailer
 DISTVERSION=	1.1.0-dev-r1373
@@ -11,7 +11,7 @@ PKGNAMESUFFIX=	${PYTHON_PKGNAMESUFFIX}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tool to post subversion repository commit information
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}subversion>0:devel/py-subversion
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}subversion>0:devel/py-subversion@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python:2 tar:bzip2

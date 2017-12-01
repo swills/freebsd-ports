@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/mirage/Makefile 403566 2015-12-11 22:22:24Z pawel $
+# $FreeBSD: head/graphics/mirage/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	mirage
 PORTVERSION=	0.9.5.2
@@ -12,7 +12,7 @@ COMMENT=	Fast and simple image viewer
 
 LICENSE=	GPLv3
 
-USES=		desktop-file-utils gettext python tar:bzip2
+USES=		desktop-file-utils gettext python:2.7 tar:bzip2
 USE_GNOME=	gtk20 pygtk2
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGNAME=	Mirage

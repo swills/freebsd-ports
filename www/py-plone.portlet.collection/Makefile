@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.portlet.collection/Makefile 413428 2016-04-16 10:36:51Z rm $
+# $FreeBSD: head/www/py-plone.portlet.collection/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	plone.portlet.collection
 PORTVERSION=	2.1.10
@@ -12,11 +12,11 @@ COMMENT=	Portlet that fetches results from a collection
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.memoize>=0:www/py-plone.memoize \
-		${PYTHON_PKGNAMEPREFIX}plone.portlets>=0:www/py-plone.portlets \
-		${PYTHON_PKGNAMEPREFIX}plone.app.portlets>=0:www/py-plone.app.portlets \
-		${PYTHON_PKGNAMEPREFIX}plone.app.vocabularies>=0:www/py-plone.app.vocabularies \
-		${PYTHON_PKGNAMEPREFIX}plone.app.form>=0:www/py-plone.app.form
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.memoize>=0:www/py-plone.memoize@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}plone.portlets>=0:www/py-plone.portlets@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}plone.app.portlets>=0:www/py-plone.app.portlets@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}plone.app.vocabularies>=0:www/py-plone.app.vocabularies@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}plone.app.form>=0:www/py-plone.app.form@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7

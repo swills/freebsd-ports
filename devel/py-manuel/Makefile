@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-manuel/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-manuel/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	manuel
 PORTVERSION=	1.8.0
@@ -13,7 +13,7 @@ COMMENT=	Lets you build tested documentation
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.rst
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

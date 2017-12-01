@@ -1,5 +1,5 @@
 # Created by: Stefan Jahn <stefan.jahn@nemesis-sektor.de>
-# $FreeBSD: head/editors/kile-kde4/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/editors/kile-kde4/Makefile 455183 2017-11-30 09:00:23Z amdmi3 $
 
 PORTNAME=	kile
 PORTVERSION=	2.1.3
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}/stable/${PORTNAME}-${DISTVERSION}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	LaTeX source editor for KDE
+
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	identify:graphics/ImageMagick
 

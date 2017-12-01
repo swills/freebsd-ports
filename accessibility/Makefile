@@ -1,4 +1,4 @@
-# $FreeBSD: head/accessibility/Makefile 437468 2017-04-01 20:15:11Z bapt $
+# $FreeBSD: head/accessibility/Makefile 455210 2017-11-30 15:50:30Z mat $
 #
 
     COMMENT = Ports to help disabled users
@@ -23,8 +23,7 @@
     SUBDIR += orca
     SUBDIR += py-atspi
     SUBDIR += py-papi
-    SUBDIR += py3-atspi
-    SUBDIR += py3-speech-dispatcher
+    SUBDIR += py-speech-dispatcher
     SUBDIR += qt4-accessible
     SUBDIR += redshift
     SUBDIR += rubygem-atk

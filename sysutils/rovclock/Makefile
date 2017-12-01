@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/sysutils/rovclock/Makefile 440860 2017-05-13 23:50:49Z linimon $
+# $FreeBSD: head/sysutils/rovclock/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	rovclock
 PORTVERSION=	0.6e
@@ -13,6 +13,7 @@ LICENSE=	GPLv2
 
 BROKEN_aarch64=		fails to install: undefined reference to outl
 BROKEN_armv6=		fails to install: undefined reference to outl
+BROKEN_armv7=		fails to install: undefined reference to outl
 BROKEN_mips=		fails to install: undefined reference to outl
 BROKEN_mips64=		fails to install: undefined reference to outl
 BROKEN_powerpc64=	fails to install: undefined reference to outl

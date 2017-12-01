@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-zope.deferredimport/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-zope.deferredimport/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	zope.deferredimport
 PORTVERSION=	3.5.3
@@ -13,7 +13,7 @@ COMMENT=	Allows to import names that will be resolved when used in the code
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.proxy>=0:net/py-zope.proxy
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.proxy>=0:net/py-zope.proxy@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

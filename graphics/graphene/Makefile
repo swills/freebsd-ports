@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/graphene/Makefile 440761 2017-05-13 08:37:29Z kwm $
+# $FreeBSD: head/graphics/graphene/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	graphene
 PORTVERSION=	1.6.0
@@ -11,7 +11,7 @@ COMMENT=	Optimizations for speeding up vector operations
 
 LICENSE=	MIT
 
-USES=		gnome meson pkgconfig python:3 shebangfix tar:xz
+USES=		gnome meson pkgconfig python:3.4+ shebangfix tar:xz
 USE_GNOME=	glib20 py3gobject3
 
 OPTIONS_SUB=	yes

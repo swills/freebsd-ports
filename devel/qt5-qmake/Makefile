@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt5-qmake/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/qt5-qmake/Makefile 455185 2017-11-30 09:13:54Z linimon $
 
 PORTNAME=	qmake
 DISTVERSION=	${QT5_VERSION}
@@ -32,6 +32,8 @@ CONFIGURE_ARGS=	-no-accessibility -no-openssl -no-gui -no-cups \
 TBR_CONFIG=	concurrent|inotify|xlib
 QMAKESPEC=	${WRKSRC}/mkspecs/freebsd-${QMAKE_COMPILER}
 INSTALL_TARGET=	sub-qmake-qmake-aux-pro-install_subtargets install_mkspecs
+
+BROKEN_powerpc64=	fails to compile: error: unrecognized command line option -std=c++11
 
 BUILD_WRKSRC=	${WRKSRC}/${PORTNAME}
 

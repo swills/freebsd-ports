@@ -1,5 +1,5 @@
 # Created by: Steve Franks <stevefranks@ieee.org>
-# $FreeBSD: head/devel/lpc21isp/Makefile 441847 2017-05-27 15:07:11Z linimon $
+# $FreeBSD: head/devel/lpc21isp/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	lpc21isp
 PORTVERSION=	1.97
@@ -13,6 +13,7 @@ COMMENT=	ISP programmer tool for flashing NXP & Analog Devices ARM7 CPUs
 LICENSE=	LGPL3+
 
 BROKEN_armv6=		fails to compile: no member named 'nQuestionMarks' in 'ISP_ENVIRONMENT'
+BROKEN_armv7=		fails to compile: no member named 'nQuestionMarks' in 'ISP_ENVIRONMENT'
 
 USES=		gmake
 

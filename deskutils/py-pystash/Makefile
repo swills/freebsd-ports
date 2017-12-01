@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/deskutils/py-pystash/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/deskutils/py-pystash/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pystash
 PORTVERSION=	0.0.14
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Save your code snippets in the cloud from the command line
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}args>=0.1.0:devel/py-args \
-		${PYTHON_PKGNAMEPREFIX}clint>=0.3.7:devel/py-clint \
-		${PYTHON_PKGNAMEPREFIX}requests>=2.3.0:www/py-requests \
-		${PYTHON_PKGNAMEPREFIX}xerox>=0.3.1:devel/py-xerox
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}args>=0.1.0:devel/py-args@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}clint>=0.3.7:devel/py-clint@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=2.3.0:www/py-requests@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}xerox>=0.3.1:devel/py-xerox@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

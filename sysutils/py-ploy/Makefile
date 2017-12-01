@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-ploy/Makefile 445996 2017-07-16 11:28:01Z koobs $
+# $FreeBSD: head/sysutils/py-ploy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ploy
 PORTVERSION=	1.2.1
@@ -14,9 +14,9 @@ COMMENT=	Manage servers through a central configuration
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lazy>0:devel/py-lazy \
-		${PYTHON_PKGNAMEPREFIX}paramiko>0:security/py-paramiko \
-		${PYTHON_PKGNAMEPREFIX}setuptools>0:devel/${PYTHON_PKGNAMEPREFIX}setuptools
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lazy>0:devel/py-lazy@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}paramiko>0:security/py-paramiko@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}setuptools>0:devel/py-setuptools@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

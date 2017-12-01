@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/pyobfuscate/Makefile 438920 2017-04-20 02:13:16Z miwi $
+# $FreeBSD: head/devel/pyobfuscate/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyobfuscate
 PORTVERSION=	0.3.20131129
@@ -16,7 +16,7 @@ GH_ACCOUNT=	astrand
 GH_TAGNAME=	47cc6e49bf65649c9fc53fbf4ae7d6e23b565550
 
 USES=		python shebangfix
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist concurrent optsuffix
 NO_ARCH=	yes
 SHEBANG_FILES=	*.py pyobfuscate pyobfuscate-install
 

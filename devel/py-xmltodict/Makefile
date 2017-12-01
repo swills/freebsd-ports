@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/devel/py-xmltodict/Makefile 442498 2017-06-03 14:36:40Z tcberner $
+# $FreeBSD: head/devel/py-xmltodict/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	xmltodict
 PORTVERSION=	0.11.0
@@ -12,7 +12,7 @@ COMMENT=	XML parser that returns python dictionaries
 
 LICENSE=	MIT
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose:devel/py-nose
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose:devel/py-nose@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

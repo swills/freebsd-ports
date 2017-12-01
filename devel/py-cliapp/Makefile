@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-cliapp/Makefile 433519 2017-02-06 21:08:31Z bapt $
+# $FreeBSD: head/devel/py-cliapp/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cliapp
 PORTVERSION=	1.20160724
@@ -12,8 +12,8 @@ COMMENT=	Python framework for command line utilities
 LICENSE=	GPLv2
 LICENSE_FILES=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${FLAVOR}
 
 USES=		python:2
 NO_ARCH=	yes

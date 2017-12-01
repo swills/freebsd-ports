@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-Products.PluginRegistry/Makefile 413428 2016-04-16 10:36:51Z rm $
+# $FreeBSD: head/devel/py-Products.PluginRegistry/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	Products.PluginRegistry
 PORTVERSION=	1.4
@@ -14,7 +14,7 @@ COMMENT=	Configure application plugins based on interfaces
 LICENSE=	ZPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Products.GenericSetup>=0:devel/py-Products.GenericSetup
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Products.GenericSetup>=0:devel/py-Products.GenericSetup@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7

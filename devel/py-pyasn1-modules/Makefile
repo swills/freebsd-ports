@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pyasn1-modules/Makefile 452312 2017-10-17 21:56:32Z rm $
+# $FreeBSD: head/devel/py-pyasn1-modules/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyasn1-modules
 PORTVERSION=	0.1.5
@@ -12,7 +12,7 @@ COMMENT=	Collection of ASN.1 data structures for py-pyasn1
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1>=0.1.8:devel/py-pyasn1
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1>=0.1.8:devel/py-pyasn1@${FLAVOR}
 
 OPTIONS_DEFINE=	DOCS
 

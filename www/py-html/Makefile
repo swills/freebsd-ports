@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/www/py-html/Makefile 418554 2016-07-14 18:53:10Z pawel $
+# $FreeBSD: head/www/py-html/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	html
 PORTVERSION=	1.16
@@ -12,7 +12,7 @@ COMMENT=	Simple, elegant HTML, XHTML and XML generation
 
 LICENSE=	BSD3CLAUSE
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 NO_ARCH=	yes

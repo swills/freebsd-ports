@@ -1,5 +1,5 @@
 # Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/math/py-fiat/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/py-fiat/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	fiat
 PORTVERSION=	${MMVERSION}.0
@@ -14,7 +14,7 @@ COMMENT=	FInite element Automatic Tabulator
 
 LICENSE=	LGPL3
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}scientific>=0:math/py-scientific
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}scientific>=0:math/py-scientific@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python:2

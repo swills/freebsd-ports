@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/security/py-bcrypt/Makefile 452387 2017-10-18 22:04:26Z dbaio $
+# $FreeBSD: head/security/py-bcrypt/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	bcrypt
 PORTVERSION=	3.1.4
@@ -13,8 +13,8 @@ COMMENT=	Modern password hashing for your software and your servers
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.1.0:devel/py-cffi
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=3.2.1:devel/py-pytest
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.1.0:devel/py-cffi@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=3.2.1:devel/py-pytest@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

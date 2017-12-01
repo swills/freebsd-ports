@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/net/py-port-for/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/py-port-for/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	port-for
 PORTVERSION=	0.3.1
@@ -13,8 +13,8 @@ COMMENT=	Utility that helps with local TCP ports managment
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose \
-		${PYTHON_PKGNAMEPREFIX}mock>=0.8:devel/py-mock
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mock>=0.8:devel/py-mock@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils concurrent autoplist

@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/multimedia/libde265/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/multimedia/libde265/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	libde265
 PORTVERSION=	1.0.2
@@ -18,5 +18,6 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-sherlock265 --disable-dec265
 
 BROKEN_armv6=		fails to compile: invokes x86 assembler
+BROKEN_armv7=		fails to compile: invokes x86 assembler
 
 .include <bsd.port.mk>

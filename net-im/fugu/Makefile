@@ -1,5 +1,5 @@
 # Created by: Peter Haight <peterh@sapros.com>
-# $FreeBSD: head/net-im/fugu/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/net-im/fugu/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	fugu
 PORTVERSION=	1.2.3
@@ -12,9 +12,9 @@ COMMENT=	Graphical client for the Gale instant messaging system
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}Pmw>0:x11-toolkits/py-Pmw
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}Pmw>0:x11-toolkits/py-Pmw@${FLAVOR}
 
-USES=		python ssl
+USES=		python:2.7 ssl
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

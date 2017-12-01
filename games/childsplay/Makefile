@@ -1,5 +1,5 @@
 # Created by: bruno
-# $FreeBSD: head/games/childsplay/Makefile 428527 2016-12-13 19:47:24Z rene $
+# $FreeBSD: head/games/childsplay/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	childsplay
 PORTVERSION=	2.6.5
@@ -13,9 +13,9 @@ COMMENT=	Educative games for children
 LICENSE=	GPLv3 # only
 LICENSE_FILE=	${WRKSRC}/gpl-3.0.txt
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}game>0:devel/py-game
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlalchemy10>0:databases/py-sqlalchemy10 \
-		${PYTHON_PKGNAMEPREFIX}game>0:devel/py-game
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}game>0:devel/py-game@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlalchemy10>0:databases/py-sqlalchemy10@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}game>0:devel/py-game@${PY_FLAVOR}
 
 NO_BUILD=	yes
 

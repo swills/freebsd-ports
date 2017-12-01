@@ -1,8 +1,8 @@
 # Created by: Klaus Aehlig <aehlig@linta.de>
-# $FreeBSD: head/devel/bazel/Makefile 452704 2017-10-23 12:26:07Z pizzamig $
+# $FreeBSD: head/devel/bazel/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=		bazel
-PORTVERSION=		0.7.0
+PORTVERSION=		0.8.0
 CATEGORIES=		devel java
 MASTER_SITES=		https://storage.googleapis.com/bazel/${PORTVERSION}/rc${FINALRC}/
 DISTNAME=		bazel-${PORTVERSION}rc${FINALRC}-dist
@@ -14,6 +14,7 @@ LICENSE=		APACHE20
 LICENSE_FILE=		${WRKSRC}/LICENSE
 
 BROKEN_armv6=		fails to package: cp: bazel: No such file or directory
+BROKEN_armv7=		fails to package: cp: bazel: No such file or directory
 
 BUILD_DEPENDS=		bash:shells/bash \
 			zip:archivers/zip
@@ -21,7 +22,7 @@ BUILD_DEPENDS=		bash:shells/bash \
 # In bazel, a release is always code-wise identical to the final release candidate.
 # Hence we can also download that one and so have a simple way to also test earlier release
 # candidates.
-FINALRC=		2
+FINALRC=		5
 
 USES=			shebangfix zip:infozip python
 SHEBANG_REGEX=		.*(sh|txt|_stub|stub_.*|bazel|get_workspace_status|protobuf_support|_so)

@@ -1,5 +1,5 @@
 # Created by: John Hixson <john@ixsystems.com>
-# $FreeBSD: head/www/py-djangotoolbox/Makefile 436558 2017-03-20 18:42:27Z araujo $
+# $FreeBSD: head/www/py-djangotoolbox/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	djangotoolbox
 PORTVERSION=	1.6.1
@@ -13,7 +13,7 @@ COMMENT=	Common API for running Django on non-relational/NoSQL databases
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

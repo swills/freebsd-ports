@@ -1,5 +1,5 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/finance/trytond28_ldap_connection/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/trytond28_ldap_connection/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	trytond28_ldap_connection
 PORTVERSION=	2.8.0
@@ -15,11 +15,11 @@ COMMENT=	Tryton Application Platform (LDAP Connection Module)
 LICENSE=	GPLv3
 
 RUN_DEPENDS=	trytond28>=2.8.2:finance/trytond28 \
-		${PYTHON_PKGNAMEPREFIX}ldap>=2.4.10:net/py-ldap
+		${PYTHON_PKGNAMEPREFIX}ldap>=2.4.10:net/py-ldap@${FLAVOR}
 
 CONFLICTS=	trytond_ldap_connection-2.[46].*
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

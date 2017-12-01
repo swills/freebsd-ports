@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/sysutils/radeontop/Makefile 439999 2017-05-03 01:14:05Z linimon $
+# $FreeBSD: head/sysutils/radeontop/Makefile 455165 2017-11-30 05:55:17Z linimon $
 
 PORTNAME=	radeontop
 PORTVERSION=	1.0
@@ -14,7 +14,7 @@ LICENSE=	GPLv3
 LIB_DEPENDS=	libpciaccess.so:devel/libpciaccess \
 		libdrm.so:graphics/libdrm
 
-NOT_FOR_ARCHS=		aarch64 armv6 mips mips64
+NOT_FOR_ARCHS=		aarch64 armv6 armv7 mips mips64
 NOT_FOR_ARCHS_REASON=	fails to compile: fatal error: amdgpu_drm.h file not found
 
 USE_GITHUB=	yes

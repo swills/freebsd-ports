@@ -1,5 +1,5 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/finance/trytond28_purchase_shipment_cost/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/trytond28_purchase_shipment_cost/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	trytond28_purchase_shipment_cost
 PORTVERSION=	2.8.0
@@ -20,7 +20,7 @@ RUN_DEPENDS=	trytond28_carrier>=2.8.0:finance/trytond28_carrier \
 
 CONFLICTS=	trytond_purchase_shipment_cost-2.[46].*
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

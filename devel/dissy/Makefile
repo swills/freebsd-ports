@@ -1,5 +1,5 @@
 # Created by: Sofian Brabez <sbrabez@gmail.com>
-# $FreeBSD: head/devel/dissy/Makefile 437217 2017-03-29 17:31:06Z sbz $
+# $FreeBSD: head/devel/dissy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	dissy
 PORTVERSION=	10
@@ -12,8 +12,8 @@ COMMENT=	Graphical frontend to the objdump disassembler
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gtk2>0:x11-toolkits/py-gtk2 \
-		${PYTHON_PKGNAMEPREFIX}webkitgtk>0:www/py-webkitgtk
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gtk2>0:x11-toolkits/py-gtk2@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}webkitgtk>0:www/py-webkitgtk@${FLAVOR}
 LIB_DEPENDS=	librsvg-2.so:graphics/librsvg2
 
 USES=		python:2

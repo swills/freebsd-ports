@@ -1,5 +1,5 @@
 # Created by: David Kalliecharan <dave@dal.ca>
-# $FreeBSD: head/devel/py-llvmlite/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/py-llvmlite/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	llvmlite
 PORTVERSION=	0.16.0
@@ -27,7 +27,7 @@ LLVM_VER=	39
 
 # Python 2.7 requires enum34, unnecessary for Python 3.4+
 .if ${PYTHON_REL} < 3400
-BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}enum34>0:devel/py-enum34
+BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}enum34>0:devel/py-enum34@${FLAVOR}
 .endif
 
 BUILD_DEPENDS+=	llvm-config${LLVM_VER}:devel/llvm${LLVM_VER}

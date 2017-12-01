@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/py-dialog/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-dialog/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	dialog
 PORTVERSION=	2.7
@@ -16,7 +16,7 @@ LICENSE=	LGPL20
 
 RUN_DEPENDS=	cdialog:devel/cdialog
 
-USES=		python tar:bzip2
+USES=		python:2.7 tar:bzip2
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGNAME=	pythondialog
 

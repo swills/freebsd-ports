@@ -1,5 +1,5 @@
 # Created by: Robert Gogolok <gogo@cs.uni-sb.de>
-# $FreeBSD: head/devel/py-lxml/Makefile 446983 2017-07-31 16:02:03Z madpilot $
+# $FreeBSD: head/devel/py-lxml/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	lxml
 PORTVERSION=	3.8.0
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/doc/licenses/BSD.txt
 LIB_DEPENDS=	libxml2.so:textproc/libxml2 \
 		libxslt.so:textproc/libxslt
 
-USES+=		python uniquefiles:dirs
+USES=		python uniquefiles:dirs
 USE_PYTHON=	autoplist concurrent distutils
 
 LDFLAGS+=	-Wl,-rpath=${LOCALBASE}/lib

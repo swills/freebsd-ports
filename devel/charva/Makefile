@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/devel/charva/Makefile 441814 2017-05-26 20:02:44Z linimon $
+# $FreeBSD: head/devel/charva/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	charva
 PORTVERSION=	1.1.4
@@ -15,6 +15,7 @@ BUILD_DEPENDS=	gmake:devel/gmake
 RUN_DEPENDS=	${JAVALIBDIR}/commons-logging.jar:java/jakarta-commons-logging
 
 BROKEN_armv6=		fails to compile: build.xml: compilation failed
+BROKEN_armv7=		fails to compile: build.xml: compilation failed
 
 OPTIONS_DEFINE=	DOCS
 

@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/avro-c/Makefile 430631 2017-01-05 11:00:49Z amdmi3 $
+# $FreeBSD: head/devel/avro-c/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	avro
 PORTVERSION=	1.8.1
@@ -17,6 +17,7 @@ LIB_DEPENDS=	libjansson.so:devel/jansson \
 
 BROKEN_aarch64=	Fails to build: error: No atomic implementation
 BROKEN_armv6=	Fails to build: error: No atomic implementation
+BROKEN_armv7=	Fails to build: error: No atomic implementation
 BROKEN_mips=	Fails to build: error: No atomic implementation
 BROKEN_mips64=	Fails to build: error: No atomic implementation
 BROKEN_sparc64=	Fails to build

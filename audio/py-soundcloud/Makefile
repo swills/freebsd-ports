@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/audio/py-soundcloud/Makefile 413999 2016-04-25 11:46:45Z brnrd $
+# $FreeBSD: head/audio/py-soundcloud/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	soundcloud
 PORTVERSION=	0.5.0
@@ -13,7 +13,7 @@ COMMENT=	A friendly wrapper library for the Soundcloud API
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=1.1.2:devel/py-nose
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=1.1.2:devel/py-nose@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

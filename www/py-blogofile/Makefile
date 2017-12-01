@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/www/py-blogofile/Makefile 424951 2016-10-30 16:12:22Z lwhsu $
+# $FreeBSD: head/www/py-blogofile/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	blogofile
 PORTVERSION=	0.8.3
@@ -13,17 +13,17 @@ COMMENT=	Static website compiler and blog engine
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docutils>0:textproc/py-docutils \
-		${PYTHON_PKGNAMEPREFIX}Jinja2>0:devel/py-Jinja2 \
-		${PYTHON_PKGNAMEPREFIX}mako>0:textproc/py-mako \
-		${PYTHON_PKGNAMEPREFIX}markdown>0:textproc/py-markdown \
-		${PYTHON_PKGNAMEPREFIX}MarkupSafe>=0.19:textproc/py-MarkupSafe \
-		${PYTHON_PKGNAMEPREFIX}pygments>0:textproc/py-pygments \
-		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six \
-		${PYTHON_PKGNAMEPREFIX}textile>0:www/py-textile \
-		${PYTHON_PKGNAMEPREFIX}unidecode>=0:converters/py-unidecode \
-		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docutils>0:textproc/py-docutils@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Jinja2>0:devel/py-Jinja2@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mako>0:textproc/py-mako@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}markdown>0:textproc/py-markdown@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}MarkupSafe>=0.19:textproc/py-MarkupSafe@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pygments>0:textproc/py-pygments@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}textile>0:www/py-textile@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}unidecode>=0:converters/py-unidecode@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${FLAVOR}
 
 USES=		python:2
 USE_PYTHON=	autoplist distutils

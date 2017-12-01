@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/science/cdf/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/science/cdf/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	cdf3
 PORTVERSION=	3.3.0
@@ -20,6 +20,7 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 BROKEN_aarch64=		fails to compile: error: use of undeclared identifier FP1ZEROsingle; did you mean FP1zeroSingle?
 BROKEN_armv6=		fails to compile: error: use of undeclared identifier FP1ZEROsingle; did you mean FP1zeroSingle?
+BROKEN_armv7=		fails to compile: error: use of undeclared identifier FP1ZEROsingle; did you mean FP1zeroSingle?
 
 USES=		fortran ncurses
 USE_LDCONFIG=	yes

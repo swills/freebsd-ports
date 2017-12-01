@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/py-bandit/Makefile 433514 2017-02-06 20:15:16Z olivierd $
+# $FreeBSD: head/devel/py-bandit/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	bandit
 PORTVERSION=	1.4.0
@@ -13,10 +13,10 @@ COMMENT=	Tool for finding common security issues in Python code
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.8:devel/py-pbr
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=3.11:devel/py-yaml \
-		${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six \
-		${PYTHON_PKGNAMEPREFIX}stevedore>=1.5.0:devel/py-stevedore
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.8:devel/py-pbr@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=3.11:devel/py-yaml@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}stevedore>=1.5.0:devel/py-stevedore@${FLAVOR}
 
 MAKE_ENV+=	PBR_VERSION=${PORTVERSION}
 

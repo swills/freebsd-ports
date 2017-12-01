@@ -1,5 +1,5 @@
 # Created by: Evgueni V. Gavrilov <aquatique@rusunix.org>
-# $FreeBSD: head/russian/ircd-hybrid/Makefile 452071 2017-10-14 16:57:46Z rodrigo $
+# $FreeBSD: head/russian/ircd-hybrid/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	ircd
 PORTVERSION=	7.2.4
@@ -20,6 +20,7 @@ CONFLICTS_INSTALL=	ircd-[0-9]* irc-[0-9]* charybdis-[0-9]* Nefarious-[0-9]* ircd
 
 BROKEN_aarch64=		fails to compile: passing void * to parameter of incompatible type
 BROKEN_armv6=		fails to compile: passing void * to parameter of incompatible type
+BROKEN_armv7=		fails to compile: passing void * to parameter of incompatible type
 
 WRKSRC=		${WRKDIR}/${PORTNAME}${PKGNAMESUFFIX}-ru
 USES=		bison ssl

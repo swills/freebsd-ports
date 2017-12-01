@@ -1,5 +1,5 @@
 # Created by: Gautam Mani <execve@gmail.com>
-# $FreeBSD: head/games/stockfish/Makefile 454799 2017-11-23 21:16:45Z junovitch $
+# $FreeBSD: head/games/stockfish/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	stockfish
 PORTVERSION=	8
@@ -16,6 +16,7 @@ LICENSE=	GPLv3
 NOT_FOR_ARCHS=	sparc64
 BROKEN_aarch64=	Fails to build: cannot detect architecture
 BROKEN_armv6=	Fails to configure: config-sanity: Error 1
+BROKEN_armv7=	Fails to configure: config-sanity: Error 1
 BROKEN_mips64=	Fails to build: cannot detect architecture
 
 USES=		compiler gmake zip

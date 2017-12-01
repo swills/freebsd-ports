@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-isort/Makefile 442923 2017-06-08 14:06:45Z sunpoet $
+# $FreeBSD: head/devel/py-isort/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	isort
 PORTVERSION=	4.2.15
@@ -12,8 +12,8 @@ COMMENT=	Python utility/library to sort Python imports
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock \
-		${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/math/plplot/Makefile 453628 2017-11-06 16:06:22Z mat $
+# $FreeBSD: head/math/plplot/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	plplot
 PORTVERSION=	5.12.0
@@ -50,7 +50,7 @@ FORTRAN_CMAKE_BOOL=	ENABLE_f95
 FORTRAN_CONFIGURE_ENV=	CMAKE_Fortran_COMPILER="${FC}"
 
 GD_LIB_DEPENDS=		libgd.so:graphics/gd \
-			libpng16.so:graphics/png
+			libpng.so:graphics/png
 GD_USES=		jpeg
 GD_CMAKE_BOOL=		PLD_png
 
@@ -58,7 +58,7 @@ LUA_USES=		lua:51
 LUA_CMAKE_BOOL=		ENABLE_lua
 LUA_CMAKE_ON=		-DLUA_EXECUTABLE:FILEPATH="${LUA_CMD}"
 
-PYTHON_USES=		python
+PYTHON_USES=		python:2.7
 PYTHON_BUILD_DEPENDS=	swig:devel/swig13 \
 			${PYNUMPY}
 PYTHON_RUN_DEPENDS=	${PYNUMPY}

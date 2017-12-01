@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/py-qt5-doc/Makefile 440097 2017-05-04 10:22:04Z tcberner $
+# $FreeBSD: head/misc/py-qt5-doc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	doc
 PORTVERSION=	${PYQT5_VERSION}
@@ -17,6 +17,7 @@ PORTSCOUT=	limit:^${PYQT5_VERSION}
 
 USES=		python pyqt:5
 USE_PYQT=	#
+USE_PYTHON=	flavors
 
 DOCSDIR=	${PREFIX}/share/doc/py-qt5
 

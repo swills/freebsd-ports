@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/www/py-rackspace-monitoring/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-rackspace-monitoring/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rackspace-monitoring
 PORTVERSION=	0.6.5
@@ -13,7 +13,7 @@ COMMENT=	Python client library for Rackspace Cloud Monitoring
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libcloud>=0.14:net/py-libcloud
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libcloud>=0.14:net/py-libcloud@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

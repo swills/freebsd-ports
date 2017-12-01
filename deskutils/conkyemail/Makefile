@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/deskutils/conkyemail/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/deskutils/conkyemail/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	conkyemail
 PORTVERSION=	2.07
@@ -13,7 +13,7 @@ COMMENT=	Email script for conky
 
 RUN_DEPENDS=	conky:sysutils/conky
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 NO_BUILD=	yes
 NO_ARCH=	yes

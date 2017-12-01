@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-flipper010/Makefile 454785 2017-11-23 19:09:10Z sunpoet $
+# $FreeBSD: head/devel/rubygem-flipper010/Makefile 455057 2017-11-28 16:13:30Z tz $
 
 PORTNAME=	flipper
 PORTVERSION=	0.10.2
@@ -15,10 +15,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 CONFLICTS_INSTALL=	rubygem-flipper
 
-USES=		gem
 PORTSCOUT=	limit:^0\.10\.
 
 NO_ARCH=	yes
+USES=		gem
 USE_RUBY=	yes
 
 .include <bsd.port.mk>

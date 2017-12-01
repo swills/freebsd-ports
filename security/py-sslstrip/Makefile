@@ -1,5 +1,5 @@
 # Created by: User & <dragon@njord.localdomain>
-# $FreeBSD: head/security/py-sslstrip/Makefile 449231 2017-09-04 00:01:21Z sunpoet $
+# $FreeBSD: head/security/py-sslstrip/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sslstrip
 PORTVERSION=	0.9
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	kitchetech@gmail.com
 COMMENT=	Python program for SSL stripping
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>=0:security/py-openssl \
-		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>=0:security/py-openssl@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR}
 
 NO_ARCH=	yes
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

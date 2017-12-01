@@ -1,5 +1,5 @@
 # Created by: Frank Fischer
-# $FreeBSD: head/lang/abcl/Makefile 443401 2017-06-11 18:03:55Z olgeni $
+# $FreeBSD: head/lang/abcl/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	abcl
 PORTVERSION=	1.5.0
@@ -11,6 +11,7 @@ MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Implementation of ANSI Common Lisp in Java
 
 BROKEN_armv6=		fails to build: build.xml: Java returned: 1
+BROKEN_armv7=		fails to build: build.xml: Java returned: 1
 
 PLIST_FILES=	share/java/classes/abcl.jar \
 		share/java/classes/abcl-contrib.jar \

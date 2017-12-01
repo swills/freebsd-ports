@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/py-resourcepackage/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-resourcepackage/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	resourcepackage
 PORTVERSION=	1.0.0
@@ -11,7 +11,7 @@ DISTNAME=	ResourcePackage-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Automated resource-as-package embedding mechanism
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

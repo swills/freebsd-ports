@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/security/switzerland/Makefile 395960 2015-09-03 14:09:17Z amdmi3 $
+# $FreeBSD: head/security/switzerland/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	switzerland
 PORTVERSION=	0.1.0
@@ -11,7 +11,7 @@ COMMENT=	Test the integrity of communications over networks and firewalls
 
 LICENSE=	GPLv3
 
-USES=		python tar:tgz
+USES=		python:2.7 tar:tgz
 USE_PYTHON=	distutils
 
 PORTDOCS=	*

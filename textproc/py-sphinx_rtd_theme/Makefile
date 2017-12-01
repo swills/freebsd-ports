@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-sphinx_rtd_theme/Makefile 438334 2017-04-12 07:44:46Z robak $
+# $FreeBSD: head/textproc/py-sphinx_rtd_theme/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sphinx_rtd_theme
 PORTVERSION=	0.2.4
@@ -13,7 +13,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_ARCH=	yes
-USES?=		python
+USES=		python
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

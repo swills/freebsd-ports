@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-XStatic-Bootstrap-SCSS/Makefile 429408 2016-12-25 11:28:58Z novel $
+# $FreeBSD: head/devel/py-XStatic-Bootstrap-SCSS/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	XStatic-Bootstrap-SCSS
 PORTVERSION=	3.3.7.1
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	alexander.nusov@nfvexpress.com
 COMMENT=	Bootstrap SCSS stylesheets (bootstrap-scss)
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}XStatic>=0:devel/py-XStatic
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}XStatic>=0:devel/py-XStatic@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes

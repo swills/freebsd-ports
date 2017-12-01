@@ -1,5 +1,5 @@
 # Created by: Martin Tournoij <carpetsmoker@xs4all.nl>
-# $FreeBSD: head/emulators/catapult/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/emulators/catapult/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	catapult
 PORTVERSION=	0.13.0
@@ -38,6 +38,7 @@ MAKE_JOBS_UNSAFE=	yes
 
 BROKEN_aarch64=	fails to link: fails to detect libxml2 even though it is installed
 BROKEN_armv6=	fails to link: fails to detect libxml2 even though it is installed
+BROKEN_armv7=	fails to link: fails to detect libxml2 even though it is installed
 
 .include <bsd.port.options.mk>
 

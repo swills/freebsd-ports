@@ -1,5 +1,5 @@
 # Created by: Henri Michelon <hmichelon at e-cml.org>
-# $FreeBSD: head/multimedia/gdvrecv/Makefile 380920 2015-03-10 14:15:57Z amdmi3 $
+# $FreeBSD: head/multimedia/gdvrecv/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gdvrecv
 PORTVERSION=	1.2
@@ -13,7 +13,7 @@ COMMENT=	DV tools for FreeBSD
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-USES=		python tar:bzip2
+USES=		python:2.7 tar:bzip2
 USE_GNOME=	pygtk2
 USE_PYTHON=	distutils
 DESKTOP_ENTRIES="Capture Video" \

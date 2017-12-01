@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-urwidtrees/Makefile 413342 2016-04-15 13:49:36Z amdmi3 $
+# $FreeBSD: head/devel/py-urwidtrees/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	urwidtrees
 PORTVERSION=	1.0.2
@@ -11,8 +11,8 @@ COMMENT=	Tree widgets for py-urwid
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}urwid>=1.0.0:devel/py-urwid
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}urwid>=1.0.0:devel/py-urwid
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}urwid>=1.0.0:devel/py-urwid@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}urwid>=1.0.0:devel/py-urwid@${FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	pazz

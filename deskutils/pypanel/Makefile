@@ -1,5 +1,5 @@
 # Created by: Florian Unglaub <flo@btw23.de>
-# $FreeBSD: head/deskutils/pypanel/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/deskutils/pypanel/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pypanel
 PORTVERSION=	2.4
@@ -16,10 +16,10 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 		libImlib2.so:graphics/imlib2
-BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/Xlib/X.py:x11-toolkits/py-xlib
+BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/Xlib/X.py:x11-toolkits/py-xlib@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 USE_XORG=	xft
 

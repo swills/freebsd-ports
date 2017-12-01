@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-spyne/Makefile 426457 2016-11-19 17:07:33Z sunpoet $
+# $FreeBSD: head/www/py-spyne/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	spyne
 PORTVERSION=	2.12.14
@@ -12,10 +12,10 @@ COMMENT=	Transport and architecture agnostic RPC library
 
 LICENSE=	LGPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>=0:devel/py-pytz
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>=0:devel/py-pytz@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils
-USES=		python
+USES=		python:2.7
 
 .include <bsd.port.mk>

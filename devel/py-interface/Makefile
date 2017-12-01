@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/py-interface/Makefile 445486 2017-07-11 09:47:52Z olgeni $
+# $FreeBSD: head/devel/py-interface/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	interface
 PORTVERSION=	2.2
@@ -14,12 +14,14 @@ COMMENT=	Python implementation of an Erlang node
 LICENSE=	LGPL20
 
 USES=			python
-USE_PYTHON=		distutils
+USE_PYTHON=		distutils autoplist
 PYDISTUTILS_PKGNAME=	py_${PORTNAME}
 DOCSDIR=	${PREFIX}/share/doc/py_${PORTNAME}
 # EXAMPLESDIR=	${PREFIX}/share/examples/py_${PORTNAME}
 
 OPTIONS_DEFINE=	DOCS
+
+PORTDOCS=	README
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

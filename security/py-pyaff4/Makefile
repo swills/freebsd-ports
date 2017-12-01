@@ -1,5 +1,5 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/security/py-pyaff4/Makefile 425174 2016-11-02 22:45:14Z mat $
+# $FreeBSD: head/security/py-pyaff4/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyaff4
 DISTVERSION=	0.24.post1
@@ -12,9 +12,9 @@ COMMENT=	Python Advanced Forensic Format Version 4 library
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}intervaltree>=2.1.0:devel/py-intervaltree \
-		${PYTHON_PKGNAMEPREFIX}python-snappy>=0.5:archivers/py-python-snappy \
-		${PYTHON_PKGNAMEPREFIX}rdflib>=4.2.1:textproc/py-rdflib
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}intervaltree>=2.1.0:devel/py-intervaltree@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}python-snappy>=0.5:archivers/py-python-snappy@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}rdflib>=4.2.1:textproc/py-rdflib@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python zip

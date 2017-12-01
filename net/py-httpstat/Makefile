@@ -1,5 +1,5 @@
 # Created by: Danilo G. Baio <dbaio@FreeBSD.org>
-# $FreeBSD: head/net/py-httpstat/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/net/py-httpstat/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	httpstat
 PORTVERSION=	1.2.1
@@ -18,7 +18,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	reorx
 
 NO_ARCH=	yes
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

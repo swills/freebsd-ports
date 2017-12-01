@@ -1,5 +1,5 @@
 # Created by: ptiJo
-# $FreeBSD: head/x11-fm/xfe/Makefile 441194 2017-05-18 20:01:59Z ehaupt $
+# $FreeBSD: head/x11-fm/xfe/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	xfe
 PORTVERSION=	1.42
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libFOX-1.6.so:x11-toolkits/fox16 \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
-		libpng16.so:graphics/png
+		libpng.so:graphics/png
 
 USES=		desktop-file-utils gmake localbase pathfix
 USE_XORG=	x11 xft xrandr xrender

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-uprofiler/Makefile 439720 2017-04-29 06:32:03Z linimon $
+# $FreeBSD: head/devel/php-uprofiler/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	uprofiler
 PORTVERSION=	0.11.0.20150219
@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/../LICENSE
 
 BROKEN_aarch64=		Does not build: invokes x86 asm
 BROKEN_armv6=		Does not build: invokes x86 asm
+BROKEN_armv7=		Does not build: invokes x86 asm
 BROKEN_mips64=		Does not build: invokes x86 asm
 BROKEN_powerpc64=	Does not build: invokes x86 asm
 BROKEN_sparc64=		Does not build: invokes x86 asm

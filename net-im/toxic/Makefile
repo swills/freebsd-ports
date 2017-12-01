@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/net-im/toxic/Makefile 454418 2017-11-18 09:39:37Z thierry $
+# $FreeBSD: head/net-im/toxic/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	toxic
 PORTVERSION=	0.8.1
@@ -16,7 +16,7 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libtoxcore.a:net-im/tox	\
 		${LOCALBASE}/include/linux/videodev2.h:multimedia/v4l_compat
 LIB_DEPENDS=	libvpx.so:multimedia/libvpx		\
 		libsodium.so:security/libsodium		\
-		libpng16.so:graphics/png		\
+		libpng.so:graphics/png		\
 		libopus.so:audio/opus			\
 		libcurl.so:ftp/curl			\
 		libv4l2.so:multimedia/libv4l		\

@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/php70/Makefile 454993 2017-11-27 21:38:06Z gerald $
+# $FreeBSD: head/lang/php70/Makefile 455138 2017-11-29 18:46:30Z gerald $
 
 PORTNAME=	php70
 PORTVERSION=	7.0.26
@@ -53,7 +53,6 @@ CGI_DESC=	Build CGI version
 FPM_DESC=	Build FPM version
 EMBED_DESC=	Build embedded library
 PHPDBG_DESC=	Interactive PHP debugger
-DTRACE_DESC=	Enable DTrace support
 MAILHEAD_DESC=	Enable mail header patch
 LINKTHR_DESC=	Link thread lib (for threaded extensions)
 ZTS_DESC=	Force Zend Thread Safety (ZTS) build

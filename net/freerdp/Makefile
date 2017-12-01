@@ -1,5 +1,5 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/net/freerdp/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/net/freerdp/Makefile 455173 2017-11-30 07:02:49Z linimon $
 
 PORTNAME=	freerdp
 DISTVERSION=	2.0.0-rc0
@@ -30,6 +30,7 @@ OPTIONS_DEFAULT=	CUPS GSTREAMER X11
 OPTIONS_SUB=		yes
 
 OPTIONS_DEFINE_armv6=	NEON
+OPTIONS_DEFINE_armv7=	NEON
 OPTIONS_DEFINE_amd64=	SSE
 OPTIONS_DEFINE_i386=	SSE
 OPTIONS_DEFAULT_amd64=	SSE

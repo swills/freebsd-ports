@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/nagstamon/Makefile 427422 2016-11-30 12:11:50Z ehaupt $
+# $FreeBSD: head/net-mgmt/nagstamon/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	nagstamon
 PORTVERSION=	1.0.1
@@ -15,7 +15,7 @@ COMMENT=	Nagios status monitor for your desktop
 LICENSE=	GPLv2
 
 RUN_DEPENDS=	sox:audio/sox \
-		${PYTHON_PKGNAMEPREFIX}keyring>=1.3:security/py-keyring
+		${PYTHON_PKGNAMEPREFIX}keyring>=1.3:security/py-keyring@${FLAVOR}
 
 USES=		cpe python:2
 CPE_VENDOR=	henri_wahl

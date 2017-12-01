@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/misc/metalink-editor/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/misc/metalink-editor/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	metalink
 PORTVERSION=	1.2.0
@@ -15,7 +15,7 @@ COMMENT=	GUI editor to create and edit metalinks
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/license.txt
 
-USES=		dos2unix python zip
+USES=		dos2unix python:2.7 zip
 DOS2UNIX_REGEX=	.*\.txt
 NO_WRKSUBDIR=	yes
 USE_PYTHON=	distutils

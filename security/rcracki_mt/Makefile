@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rcracki_mt/Makefile 425758 2016-11-08 19:29:56Z linimon $
+# $FreeBSD: head/security/rcracki_mt/Makefile 455165 2017-11-30 05:55:17Z linimon $
 
 PORTNAME=	rcracki_mt
 PORTVERSION=	0.7.0
@@ -11,7 +11,7 @@ COMMENT=	Rainbow table based crack tool
 
 LICENSE=	GPLv2
 
-NOT_FOR_ARCHS=	aarch64 armv6 mips mips64 sparc64
+NOT_FOR_ARCHS=	aarch64 armv6 armv7 mips mips64 sparc64
 NOT_FOR_ARCHS_REASON=	cannot detect endianness
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/${PORTNAME}

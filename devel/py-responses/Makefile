@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/devel/py-responses/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-responses/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	responses
 PORTVERSION=	0.5.0
@@ -12,8 +12,8 @@ COMMENT=	Utility library for mocking out the requests Python library
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>2.0.0:www/py-requests \
-		${PYTHON_PKGNAMEPREFIX}cookies>0:www/py-cookies
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>2.0.0:www/py-requests@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}cookies>0:www/py-cookies@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

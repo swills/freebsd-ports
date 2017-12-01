@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/www/py-txrequests/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-txrequests/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	txrequests
 PORTVERSION=	0.9.2
@@ -13,8 +13,8 @@ COMMENT=	Asynchronous Python HTTP for Humans
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=1.2.0:www/py-requests \
-		${PYTHON_PKGNAMEPREFIX}twisted>=9.0.0:devel/py-twisted
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=1.2.0:www/py-requests@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}twisted>=9.0.0:devel/py-twisted@${FLAVOR}
 
 USES=		python:-2.7
 USE_PYTHON=	autoplist distutils

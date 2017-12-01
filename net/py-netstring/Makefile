@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alexbl@FreeBSD.org>
-# $FreeBSD: head/net/py-netstring/Makefile 371449 2014-10-24 16:21:26Z mva $
+# $FreeBSD: head/net/py-netstring/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	netstring
 PORTVERSION=	1.14
@@ -11,7 +11,7 @@ DISTNAME=	python-${PORTNAME}-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python module implementing the netstring protocol
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Dmitri Goutnik <dg@syrec.org>
-# $FreeBSD: head/x11/alttab/Makefile 452902 2017-10-26 05:16:21Z tcberner $
+# $FreeBSD: head/x11/alttab/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	alttab
 DISTVERSIONPREFIX=	v
@@ -13,7 +13,7 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	${LOCALBASE}/include/uthash.h:devel/uthash
-LIB_DEPENDS=	libpng16.so:graphics/png
+LIB_DEPENDS=	libpng.so:graphics/png
 
 USES=		pkgconfig
 USE_XORG=	x11 xft xrender

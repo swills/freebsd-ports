@@ -1,5 +1,5 @@
 # Created by: Jim Ohlstein <jim@ohlste.in>
-# $FreeBSD: head/databases/monetdb/Makefile 442784 2017-06-06 16:38:00Z mat $
+# $FreeBSD: head/databases/monetdb/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	monetdb
 PORTVERSION=	11.15.19
@@ -177,7 +177,7 @@ PLIST_SUB+=	PYTHON="@comment "
 .endif
 
 .if ${PORT_OPTIONS:MPYTHON2}
-USES+=		python:2
+USES+=		python:2.7
 PLIST_SUB+=	PYTHON_VER=${PYTHON_VER}
 CONFIGURE_ARGS+=	--with-python2=${PYTHON_CMD} \
 			--without-python3
@@ -186,7 +186,7 @@ CONFIGURE_ARGS+=	--without-python2
 .endif
 
 .if ${PORT_OPTIONS:MPYTHON3}
-USES+=		python:3
+USES+=		python:3.4+
 USE_PYTHON=	py3kplist
 PLIST_SUB+=	PYTHON_VER=${PYTHON_VER}
 CONFIGURE_ARGS+=	--with-python3=${PYTHON_CMD} \

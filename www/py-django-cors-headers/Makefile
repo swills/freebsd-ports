@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-cors-headers/Makefile 452342 2017-10-18 15:00:28Z swills $
+# $FreeBSD: head/www/py-django-cors-headers/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-cors-headers
 PORTVERSION=	2.1.0
@@ -11,7 +11,7 @@ COMMENT=	Handles server headers required for Cross-Origin Resource Sharing
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

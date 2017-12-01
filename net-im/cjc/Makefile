@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/net-im/cjc/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-im/cjc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cjc
 PORTVERSION=	1.2.1
@@ -12,7 +12,7 @@ COMMENT=	Console Jabber Client
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyxmpp>=0:net-im/py-pyxmpp
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyxmpp>=0:net-im/py-pyxmpp@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Jajcus

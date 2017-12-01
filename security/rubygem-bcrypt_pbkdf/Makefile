@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/security/rubygem-bcrypt_pbkdf/Makefile 455046 2017-11-28 15:41:22Z tz $
 
 PORTNAME=	bcrypt_pbkdf
 PORTVERSION=	1.0.0
@@ -16,7 +16,8 @@ BUILD_DEPENDS=	rubygem-minitest>=5:devel/rubygem-minitest \
 		rubygem-rbnacl>=3.3:security/rubygem-rbnacl \
 		rubygem-rbnacl-libsodium>=1.0.8:security/rubygem-rbnacl-libsodium \
 		rubygem-rdoc>=3.12:devel/rubygem-rdoc
-LIB_DEPENDS=	libunwind.so:devel/libunwind
+LIB_DEPENDS=	libunwind.so:devel/libunwind \
+		libgmp.so:math/gmp
 
 USES=		gem
 USE_RUBY=	yes

@@ -1,5 +1,5 @@
 # Created by: lbartoletti <coder@tuxfamily.org>
-# $FreeBSD: head/databases/pyspatialite/Makefile 443096 2017-06-10 14:54:34Z dbaio $
+# $FreeBSD: head/databases/pyspatialite/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyspatialite
 PORTVERSION=	3.0.1
@@ -22,7 +22,7 @@ LIB_DEPENDS=	libspatialite.so:databases/spatialite \
 
 OPTIONS_DEFINE=	DOCS
 
-USES=		iconv python
+USES=		iconv python:2.7
 USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.pre.mk>

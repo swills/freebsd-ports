@@ -1,5 +1,5 @@
 # Created by: eivind
-# $FreeBSD: head/textproc/cdiff/Makefile 441518 2017-05-23 12:41:49Z mat $
+# $FreeBSD: head/textproc/cdiff/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cdiff
 DISTVERSION=	1.0-3
@@ -18,7 +18,7 @@ USE_GITHUB=
 GH_ACCOUNT=	ymattw
 
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist concurrent optsuffix
 NO_ARCH=	yes
 
 OPTIONS_DEFINE=	DOCS

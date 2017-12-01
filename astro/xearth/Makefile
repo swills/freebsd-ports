@@ -1,5 +1,5 @@
 # Created by: Piero Serini <piero@FreeBSD.org>
-# $FreeBSD: head/astro/xearth/Makefile 431147 2017-01-11 00:28:13Z ler $
+# $FreeBSD: head/astro/xearth/Makefile 455097 2017-11-29 09:00:22Z amdmi3 $
 
 PORTNAME=	xearth
 PORTVERSION=	1.2
@@ -8,6 +8,11 @@ MASTER_SITES=	LOCAL/madpilot/xearth
 
 MAINTAINER=	ler@FreeBSD.org
 COMMENT=	Set the root window to the image of earth
+
+LICENSE=	Xearth
+LICENSE_FILE=	${WRKSRC}/README
+LICENSE_NAME=	Xearth license
+LICENSE_PERMS=	dist-mirror no-dist-sell pkg-mirror no-pkg-sell auto-accept
 
 USE_XORG=	x11 xext sm ice xt
 USES=		tar:xz
@@ -18,12 +23,12 @@ PLIST_FILES=	bin/xearth \
 PLIST_DIRS=	lib/X11/xearth
 
 do-install:
-	@${INSTALL_PROGRAM} ${WRKSRC}/xearth ${STAGEDIR}${PREFIX}/bin
-	@${INSTALL_MAN} ${WRKSRC}/xearth.man ${STAGEDIR}${MANPREFIX}/man/man1/xearth.1
+	${INSTALL_PROGRAM} ${WRKSRC}/xearth ${STAGEDIR}${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/xearth.man ${STAGEDIR}${MANPREFIX}/man/man1/xearth.1
 	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/X11/xearth
 # Copy the list of FreeBSD sites & committers locations
 .for marker in freebsd.committers.markers freebsd.ftp.markers
-	@${INSTALL_DATA} ${FILESDIR}/${marker} ${STAGEDIR}${PREFIX}/lib/X11/xearth
+	${INSTALL_DATA} ${FILESDIR}/${marker} ${STAGEDIR}${PREFIX}/lib/X11/xearth
 .endfor
 
 .include <bsd.port.mk>

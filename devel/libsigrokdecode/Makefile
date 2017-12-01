@@ -1,5 +1,5 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/devel/libsigrokdecode/Makefile 451801 2017-10-11 21:46:52Z bsam $
+# $FreeBSD: head/devel/libsigrokdecode/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	libsigrokdecode
 PORTVERSION=	0.5.0
@@ -12,7 +12,7 @@ COMMENT=	Framework for hardware logic analyzers, protocol decoders library
 LICENSE=	GPLv3
 
 GNU_CONFIGURE=	yes
-USES=		libtool pathfix pkgconfig python:3
+USES=		libtool pathfix pkgconfig python:3.4+
 USE_GNOME=	glib20
 MAKE_JOBS_UNSAFE=	yes
 USE_LDCONFIG=	yes

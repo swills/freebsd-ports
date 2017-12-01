@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.app.jquerytools/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-plone.app.jquerytools/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	plone.app.jquerytools
 PORTVERSION=	1.7.0
@@ -12,9 +12,9 @@ COMMENT=	jQuery Tools integration for Plone
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component \
-		${PYTHON_PKGNAMEPREFIX}Products.CMFCore>=0:devel/py-Products.CMFCore \
-		${PYTHON_PKGNAMEPREFIX}Products.GenericSetup>=0:devel/py-Products.GenericSetup
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Products.CMFCore>=0:devel/py-Products.CMFCore@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Products.GenericSetup>=0:devel/py-Products.GenericSetup@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7 zope

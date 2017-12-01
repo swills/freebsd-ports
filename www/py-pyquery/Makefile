@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/www/py-pyquery/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-pyquery/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyquery
 PORTVERSION=	1.2.9
@@ -12,18 +12,18 @@ COMMENT=	Jquery-like library for python
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cssselect>=0.6.1:www/py-cssselect \
-		${PYTHON_PKGNAMEPREFIX}lxml>=2.1:devel/py-lxml \
-		${PYTHON_PKGNAMEPREFIX}webob>=1.2.2:www/py-webob
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cssselect>=0.6.1:www/py-cssselect \
-		${PYTHON_PKGNAMEPREFIX}lxml>=2.1:devel/py-lxml \
-		${PYTHON_PKGNAMEPREFIX}webob>=1.2.2:www/py-webob
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cssselect>=0.6.1:www/py-cssselect@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lxml>=2.1:devel/py-lxml@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}webob>=1.2.2:www/py-webob@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cssselect>=0.6.1:www/py-cssselect@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lxml>=2.1:devel/py-lxml@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}webob>=1.2.2:www/py-webob@${FLAVOR}
 
 DOCSDIR=	${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME}
 
 OPTIONS_DEFINE=	DOCS
 
-USES=		python zip
+USES=		python:2.7 zip
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-setuptools-pkg/Makefile 445564 2017-07-12 02:33:36Z koobs $
+# $FreeBSD: head/devel/py-setuptools-pkg/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	setuptools-pkg
 PORTVERSION=	0.9
@@ -13,9 +13,9 @@ COMMENT=	Plugin for setuptools to build FreeBSD pkg
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools>=18.2:devel/${PYTHON_PKGNAMEPREFIX}setuptools
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=2.0.0:devel/py-mock \
-		${PYTHON_PKGNAMEPREFIX}wheel>0:devel/py-wheel
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools>=18.2:devel/py-setuptools@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=2.0.0:devel/py-mock@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}wheel>0:devel/py-wheel@${FLAVOR}
 
 NO_ARCH=	yes
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-kayako/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-kayako/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	kayako
 PORTVERSION=	1.1.5
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	rm@FreeBSD.org
 COMMENT=	Python API Wrapper for Kayako
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2

@@ -1,5 +1,5 @@
 # Created by: Anders Nordby <anders@fix.no>
-# $FreeBSD: head/dns/maradns/Makefile 454571 2017-11-20 14:55:31Z mat $
+# $FreeBSD: head/dns/maradns/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	maradns
 PORTVERSION=	2.0.14
@@ -31,7 +31,7 @@ OPTIONS_SUB=	yes
 CONV_DESC=	Install bind2csv2 tool (needs python)
 
 IPV6_CONFIGURE_ON=	--ipv6
-CONV_USES=	python:run
+CONV_USES=	python:2.7,run
 
 PORTDOCS=	*
 PORTEXAMPLES=	*

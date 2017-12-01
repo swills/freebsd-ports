@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale	<nivit@email.it>
-# $FreeBSD: head/www/py-cherrypy/Makefile 438708 2017-04-17 15:58:10Z miwi $
+# $FreeBSD: head/www/py-cherrypy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cherrypy
 PORTVERSION=	5.4.0
@@ -14,8 +14,8 @@ COMMENT=	Pythonic, object-oriented web development framework
 
 LICENSE=	BSD3CLAUSE
 
-EXAMPLES_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cheetah>=2.4.4:devel/py-cheetah \
-			${PYTHON_PKGNAMEPREFIX}sqlobject>=1.5.1:databases/py-sqlobject
+EXAMPLES_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cheetah>=2.4.4:devel/py-cheetah@${FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}sqlobject>=1.5.1:databases/py-sqlobject@${FLAVOR}
 EXAMPLESDIR=	${PREFIX}/share/examples/${PKGNAMEPREFIX}${PORTNAME}
 
 OPTIONS_DEFINE=	EXAMPLES

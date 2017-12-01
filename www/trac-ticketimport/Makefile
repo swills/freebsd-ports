@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/trac-ticketimport/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/www/trac-ticketimport/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ticketimport
 PORTVERSION=	0.7c
@@ -13,7 +13,7 @@ COMMENT=	Import or update tickets from a CSV file or Excel file
 LICENSE=	BSD3CLAUSE # "same license as trac"
 
 RUN_DEPENDS=	tracd:www/trac \
-		${PYTHON_PKGNAMEPREFIX}xlrd>=0.7.1:textproc/py-xlrd
+		${PYTHON_PKGNAMEPREFIX}xlrd>=0.7.1:textproc/py-xlrd@${FLAVOR}
 
 USES=		python:2
 USE_PYTHON=	distutils autoplist

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/py-pywebdav/Makefile 422142 2016-09-14 16:08:44Z mat $
+# $FreeBSD: head/www/py-pywebdav/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	PyWebDAV
 PORTVERSION=	0.9.8
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	WebDAV Library and Server for Python
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

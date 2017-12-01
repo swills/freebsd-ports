@@ -1,5 +1,5 @@
 # Created by: Yi-Jheng Lin <yzlin@cs.nctu.edu.tw>
-# $FreeBSD: head/devel/py-hash_ring/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-hash_ring/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	hash_ring
 PORTVERSION=	1.3.1
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Implementation of consistent hashing in Python
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-memcached>=0:databases/py-python-memcached
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-memcached>=0:databases/py-python-memcached@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

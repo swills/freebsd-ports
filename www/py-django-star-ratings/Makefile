@@ -1,5 +1,5 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-star-ratings/Makefile 440237 2017-05-06 07:29:54Z miwi $
+# $FreeBSD: head/www/py-django-star-ratings/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-star-ratings
 PORTVERSION=	0.5.1
@@ -12,7 +12,7 @@ COMMENT=	Django app to add star ratings to models
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

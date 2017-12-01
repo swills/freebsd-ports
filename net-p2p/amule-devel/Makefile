@@ -1,5 +1,5 @@
 # Created by: Ganael LAPLANCHE <ganael.laplanche@martymac.org>
-# $FreeBSD: head/net-p2p/amule-devel/Makefile 454659 2017-11-22 00:07:30Z bar $
+# $FreeBSD: head/net-p2p/amule-devel/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	amule
 PORTVERSION=	10990
@@ -101,7 +101,7 @@ UPNP_LIB_DEPENDS=	libupnp.so:devel/upnp
 UPNP_CONFIGURE_OFF=	--disable-upnp
 
 WEBSERVER_CONFIGURE_ON=	--enable-webserver
-WEBSERVER_LIB_DEPENDS=	libpng16.so:graphics/png
+WEBSERVER_LIB_DEPENDS=	libpng.so:graphics/png
 
 WXCAS_CONFIGURE_ON=	--enable-wxcas
 

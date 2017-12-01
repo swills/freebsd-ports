@@ -1,5 +1,5 @@
 # Created by: Sato Hiroki <hrs@FreeBSD.org>
-# $FreeBSD: head/math/gotoblas/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/gotoblas/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	gotoblas
 PORTVERSION=	2.${GOTOBLAS2VER}.${LAPACKVER}
@@ -21,6 +21,7 @@ LICENSE_FILE=	${WRKSRC}/00License.txt
 
 BROKEN_aarch64=		does not build: undefined reference to get_libname
 BROKEN_armv6=		does not build: undefined reference to get_libname
+BROKEN_armv7=		does not build: undefined reference to get_libname
 BROKEN_powerpc64=	does not build: error: macro names must be identifiers
 BROKEN_i386=		does not build (terminates with SIGBUS)
 

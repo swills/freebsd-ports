@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-w3lib/Makefile 450414 2017-09-22 20:56:00Z rm $
+# $FreeBSD: head/www/py-w3lib/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	w3lib
 PORTVERSION=	1.18.0
@@ -11,7 +11,7 @@ COMMENT=	Library of web-related functions
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7+

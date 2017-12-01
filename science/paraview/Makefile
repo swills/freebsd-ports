@@ -1,5 +1,5 @@
 # Created by: anholt@FreeBSD.org
-# $FreeBSD: head/science/paraview/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/science/paraview/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	paraview
 PORTVERSION=	5.2.0
@@ -42,7 +42,7 @@ USE_GL=		gl
 USE_XORG=	x11 xt xext ice xdmcp xau xcb xfixes xdamage xxf86vm xrender sm
 USE_LDCONFIG=	yes
 USE_GSTREAMER=	yes
-USES=		alias desktop-file-utils cmake:outsource jpeg python shebangfix
+USES=		alias desktop-file-utils cmake:outsource jpeg python:2.7 shebangfix
 INSTALLS_ICONS=	yes
 
 CMAKE_ARGS+=	-DBUILD_SHARED_LIBS="ON" \

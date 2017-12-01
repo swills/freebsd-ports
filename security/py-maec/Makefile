@@ -1,5 +1,5 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-maec/Makefile 432133 2017-01-22 13:40:52Z antoine $
+# $FreeBSD: head/security/py-maec/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	maec
 PORTVERSION=	4.1.0.13
@@ -13,10 +13,10 @@ COMMENT=	Python library for parsing, manipulating, and generating MAEC content
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=2.2.3:devel/py-lxml \
-		${PYTHON_PKGNAMEPREFIX}cybox>=2.1.0.13:security/py-cybox \
-		${PYTHON_PKGNAMEPREFIX}mixbox>=0.0.13:security/py-mixbox
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=2.2.3:devel/py-lxml@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}cybox>=2.1.0.13:security/py-cybox@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mixbox>=0.0.13:security/py-mixbox@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

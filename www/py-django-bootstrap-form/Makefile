@@ -1,5 +1,5 @@
 # Created by: Alfred Perlstein <alfred@freebsd.org>
-# $FreeBSD: head/www/py-django-bootstrap-form/Makefile 415265 2016-05-15 16:41:41Z alfred $
+# $FreeBSD: head/www/py-django-bootstrap-form/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-bootstrap-form
 PORTVERSION=	3.2.1
@@ -16,6 +16,6 @@ LICENSE=	MIT
 USES=		python
 USE_PYTHON=	distutils autoplist
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=1.5:www/py-django18
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=1.5:www/py-django18@${FLAVOR}
 
 .include <bsd.port.mk>

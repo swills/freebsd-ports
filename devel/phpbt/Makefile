@@ -1,5 +1,5 @@
 # Created by: Wes Peters <wes@FreeBSD.org>
-# $FreeBSD: head/devel/phpbt/Makefile 444900 2017-07-02 20:50:08Z amdmi3 $
+# $FreeBSD: head/devel/phpbt/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	phpbt
 PORTVERSION=	1.0.1
@@ -32,7 +32,7 @@ OPTIONS_DEFAULT=GNATS
 OPTIONS_SUB=	yes
 
 GNATS_DESC=	Install script to convert entries from GNATS
-GNATS_USES=	python:run shebangfix
+GNATS_USES=	python:2.7,run shebangfix
 
 post-extract-GNATS-off:
 	@${RM} ${WRKSRC}/contrib/gnats-to-phpbt.py

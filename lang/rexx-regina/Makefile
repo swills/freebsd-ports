@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/lang/rexx-regina/Makefile 448258 2017-08-18 16:45:56Z swills $
+# $FreeBSD: head/lang/rexx-regina/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	regina
 PORTVERSION=	3.9.1
@@ -20,6 +20,7 @@ LICENSE=	LGPL21+
 
 BROKEN_aarch64=		Does not build: error: expected expression
 BROKEN_armv6=		Does not build: error: expected expression
+BROKEN_armv7=		Does not build: error: expected expression
 BROKEN_mips=		Does not build: error: expected expression
 BROKEN_mips64=		Does not build: error: expected expression
 BROKEN_powerpc64=	Does not build: error: expected expression

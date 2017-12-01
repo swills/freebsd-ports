@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/net-p2p/py-py2play/Makefile 371450 2014-10-24 16:29:51Z mva $
+# $FreeBSD: head/net-p2p/py-py2play/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	py2play
 PORTVERSION=	0.1.10
@@ -15,7 +15,7 @@ COMMENT=	Peer-to-peer network game engine
 LICENSE=	GPLv2
 
 DIST_SUBDIR=	python
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGNAME=	Py2Play
 EXAMPLESDIR=	${PREFIX}/share/examples/py-py2play

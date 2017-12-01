@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/sysutils/showbeastie/Makefile 440863 2017-05-14 06:33:57Z linimon $
+# $FreeBSD: head/sysutils/showbeastie/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	showbeastie
 PORTVERSION=	0.3
@@ -26,6 +26,7 @@ PLIST_FILES=	bin/${PORTNAME}
 MAKE_ARGS+=	-m ${SRC_BASE}/share/mk
 
 BROKEN_armv6=		fails to link: testmain uses VFP register arguments, dict.o does not
+BROKEN_armv7=		fails to install: tar: could not chdir to '/usr/src/sys/boot'
 BROKEN_mips64=		fails to link: relocation truncated to fit: R_MIPS_26 against `__assert@@FBSD_1.0'
 
 WRKSRC_SUBDIR=	ficl

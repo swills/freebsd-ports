@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/games/trophy/Makefile 424339 2016-10-20 15:58:12Z rakuco $
+# $FreeBSD: head/games/trophy/Makefile 455258 2017-12-01 11:07:29Z amdmi3 $
 
 PORTNAME=	trophy
 PORTVERSION=	2.0.3
@@ -11,25 +11,23 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Single player racing game
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libclanCore.so:devel/clanlib1
 
-USES=		pkgconfig
-
+USES=		pkgconfig localbase
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib
 
-PORTDOCS=	AUTHORS COPYING ChangeLog README TODO
+PORTDOCS=	AUTHORS ChangeLog README TODO
 
 OPTIONS_DEFINE=	DOCS
 
 post-patch:
-	${REINPLACE_CMD} -e "/^icondir =/s,icons,pixmaps," \
+	@${REINPLACE_CMD} -e "/^icondir =/s,icons,pixmaps," \
 		${WRKSRC}/resources/Makefile.in
 
 post-install-DOCS-on:
-	${MKDIR} ${STAGEDIR}${DOCSDIR} && \
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

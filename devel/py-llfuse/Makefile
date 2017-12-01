@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-llfuse/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/py-llfuse/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	llfuse
 PORTVERSION=	1.2
@@ -14,7 +14,7 @@ LICENSE=	LGPL20+
 
 BROKEN_powerpc64=	Does not build: error: conversion to mode_t from int may alter its value
 
-USES?=		compiler:c++11-lang fuse pkgconfig python tar:bz2
+USES=		compiler:c++11-lang fuse pkgconfig python tar:bz2
 USE_PYTHON=	autoplist distutils
 
 post-install:

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-sphinxcontrib-fulltoc/Makefile 438360 2017-04-12 15:16:41Z vanilla $
+# $FreeBSD: head/textproc/py-sphinxcontrib-fulltoc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sphinxcontrib-fulltoc
 PORTVERSION=	1.2.0
@@ -12,8 +12,8 @@ COMMENT=	Sphinx Fulltoc Extension
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PKGNAMEPREFIX}pbr>=1.8.1:devel/py-pbr
-RUN_DEPENDS=	${PKGNAMEPREFIX}sphinx>=1.1.3:textproc/py-sphinx
+BUILD_DEPENDS=	${PKGNAMEPREFIX}pbr>=1.8.1:devel/py-pbr@${FLAVOR}
+RUN_DEPENDS=	${PKGNAMEPREFIX}sphinx>=1.1.3:textproc/py-sphinx@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

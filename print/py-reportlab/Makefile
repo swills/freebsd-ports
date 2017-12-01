@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/print/py-reportlab/Makefile 425255 2016-11-03 16:31:15Z linimon $
+# $FreeBSD: head/print/py-reportlab/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	reportlab
 PORTVERSION=	3.2.0
@@ -16,7 +16,7 @@ COMMENT=	Library to create PDF documents using the Python language
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

@@ -1,5 +1,5 @@
 # Created by: David Kalliecharan <dave@dal.ca>
-# $FreeBSD: head/lang/py-hy/Makefile 449692 2017-09-12 14:49:45Z olgeni $
+# $FreeBSD: head/lang/py-hy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	hy
 PORTVERSION=	0.13.0
@@ -13,15 +13,15 @@ COMMENT=	Hy is a dialect of Lisp that is embedded in Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}args>0:devel/py-args \
-		${PYTHON_PKGNAMEPREFIX}astor>0:devel/py-astor \
-		${PYTHON_PKGNAMEPREFIX}clint>0:devel/py-clint \
-		${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose \
-		${PYTHON_PKGNAMEPREFIX}rply>0:devel/py-rply \
-		${PYTHON_PKGNAMEPREFIX}tox>0:devel/py-tox \
-		${PYTHON_PKGNAMEPREFIX}pygments>0:textproc/py-pygments \
-		${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx \
-		${PYTHON_PKGNAMEPREFIX}sphinx_rtd_theme>0:textproc/py-sphinx_rtd_theme
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}args>0:devel/py-args@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}astor>0:devel/py-astor@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}clint>0:devel/py-clint@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}rply>0:devel/py-rply@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tox>0:devel/py-tox@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pygments>0:textproc/py-pygments@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sphinx_rtd_theme>0:textproc/py-sphinx_rtd_theme@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/www/trac-permredirect/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/www/trac-permredirect/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	permredirect
 PORTVERSION=	3.0
@@ -17,7 +17,7 @@ RUN_DEPENDS=	tracd:www/trac
 
 FETCH_BEFORE_ARGS=	-o ${DISTFILES}
 REV=			13353
-USES=			python zip:infozip
+USES=			python:2.7 zip:infozip
 USE_PYTHON=		distutils autoplist
 WRKSRC=			${WRKDIR}/${PORTNAME}plugin/tags/${PORTVERSION}
 NO_ARCH=		yes

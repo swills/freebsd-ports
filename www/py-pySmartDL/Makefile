@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/py-pySmartDL/Makefile 415298 2016-05-16 02:07:15Z feld $
+# $FreeBSD: head/www/py-pySmartDL/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pySmartDL
 PORTVERSION=	1.2.4
@@ -18,7 +18,7 @@ NO_ARCH=	yes
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_VER} == "2.7"
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}futures>0:devel/py-futures
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}futures>0:devel/py-futures@${FLAVOR}
 .endif
 
 .include <bsd.port.post.mk>

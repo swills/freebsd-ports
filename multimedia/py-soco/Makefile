@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/py-soco/Makefile 454578 2017-11-20 20:57:17Z swills $
+# $FreeBSD: head/multimedia/py-soco/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	soco
 PORTVERSION=	0.13
@@ -12,7 +12,7 @@ COMMENT=	Python library to control Sonos speakers
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.rst
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	SoCo

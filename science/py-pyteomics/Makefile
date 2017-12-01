@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/py-pyteomics/Makefile 444893 2017-07-02 16:10:25Z sunpoet $
+# $FreeBSD: head/science/py-pyteomics/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyteomics
 PORTVERSION=	3.4.2
@@ -12,11 +12,11 @@ COMMENT=	Python modules for proteomics data analysis
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=0:devel/py-lxml \
-		${PYTHON_PKGNAMEPREFIX}matplotlib>=0:math/py-matplotlib \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=0:devel/py-lxml@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}matplotlib>=0:math/py-matplotlib@${FLAVOR} \
 		${PYNUMPY}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

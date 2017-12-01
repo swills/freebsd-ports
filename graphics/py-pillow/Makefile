@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/graphics/py-pillow/Makefile 439814 2017-04-30 12:50:54Z sunpoet $
+# $FreeBSD: head/graphics/py-pillow/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pillow
 PORTVERSION=	3.4.2
@@ -45,15 +45,15 @@ TIFF_VARS=		PYDISTUTILS_BUILDARGS+=--enable-tiff
 TIFF_VARS_OFF=		PYDISTUTILS_BUILDARGS+=--disable-tiff
 
 TKINTER_USES=		tk
-TKINTER_BUILD_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter
-TKINTER_RUN_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter
+TKINTER_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${FLAVOR}
+TKINTER_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${FLAVOR}
 TKINTER_VARS=		PYDISTUTILS_BUILDARGS+="--include-dirs=${TCL_INCLUDEDIR}:${TK_INCLUDEDIR}"
 
 WEBP_LIB_DEPENDS=	libwebp.so:graphics/webp
 WEBP_VARS=		PYDISTUTILS_BUILDARGS+=--enable-webp --enable-webpmux
 WEBP_VARS_OFF=		PYDISTUTILS_BUILDARGS+=--disable-webp --disable-webpmux
 
-USES?=		cpe python
+USES=		cpe python
 USE_GITHUB=	yes
 USE_PYTHON=	autoplist concurrent distutils
 

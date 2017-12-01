@@ -1,5 +1,5 @@
 # Created by: M. Warner Losh <imp@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-dlipower/Makefile 420533 2016-08-20 22:25:57Z imp $
+# $FreeBSD: head/sysutils/py-dlipower/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	dlipower
 PORTVERSION=	0.7.165
@@ -13,9 +13,9 @@ COMMENT=	CLI interface to Digital Logger's (DLI) Power Strips
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=4.0:www/py-beautifulsoup \
-		${PYTHON_PKGNAMEPREFIX}requests>=2.0:www/py-requests \
-		${PYTHON_PKGNAMEPREFIX}six>=1.9:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=4.0:www/py-beautifulsoup@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=2.0:www/py-requests@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.9:devel/py-six@${FLAVOR}
 
 USES=		python shebangfix
 SHEBANG_FILES=	scripts/fence_dli

@@ -1,5 +1,5 @@
 # Created by: Kimura Fuyuki <fuyuki@hadaly.org>
-# $FreeBSD: head/x11-toolkits/py-gtkglext/Makefile 414888 2016-05-09 19:26:26Z pi $
+# $FreeBSD: head/x11-toolkits/py-gtkglext/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gtkglext
 PORTVERSION=	1.1.0
@@ -12,12 +12,13 @@ DISTNAME=	pygtkglext-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python binding for GtkGLExt
 
-BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/OpenGL/__init__.py:graphics/py-PyOpenGL
+BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/OpenGL/__init__.py:graphics/py-PyOpenGL@${FLAVOR}
 LIB_DEPENDS=	libgtkglext-x11-1.0.so:x11-toolkits/gtkglext
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/OpenGL/__init__.py:graphics/py-PyOpenGL
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/OpenGL/__init__.py:graphics/py-PyOpenGL@${FLAVOR}
 
-USES=		gmake libtool pathfix pkgconfig python tar:bzip2
+USES=		gmake libtool pathfix pkgconfig python:2.7 tar:bzip2
 USE_GNOME=	pygtk2
+USE_PYTHON=	flavors
 GNU_CONFIGURE=	yes
 
 post-install:

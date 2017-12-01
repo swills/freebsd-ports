@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libftdi/Makefile 451798 2017-10-11 20:59:30Z bapt $
+# $FreeBSD: head/devel/libftdi/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	libftdi
 PORTVERSION=	0.20
@@ -30,7 +30,7 @@ BOOST_CXXFLAGS=		-I${LOCALBASE}/include
 PYTHON_DESC=		Python bindings
 PYTHON_BUILD_DEPENDS=	swig3.0:devel/swig30
 PYTHON_CMAKE_BOOL=	PYTHON_BINDINGS
-PYTHON_USES=		python
+PYTHON_USES=		python:2.7
 
 BINARY_ALIAS=	swig=swig3.0
 

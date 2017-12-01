@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/py-python-sql/Makefile 439496 2017-04-27 00:52:54Z wen $
+# $FreeBSD: head/databases/py-python-sql/Makefile 455107 2017-11-29 12:47:20Z wen $
 
 PORTNAME=	python-sql
 PORTVERSION=	0.9
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Library to write SQL queries
 
-#LICENSE=	BSD
+LICENSE=	BSD3CLAUSE
 
 USES=		pkgconfig python
 USE_PYTHON=	autoplist distutils

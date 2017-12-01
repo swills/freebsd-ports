@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/databases/py-psycopg2/Makefile 452876 2017-10-25 18:28:48Z sunpoet $
+# $FreeBSD: head/databases/py-psycopg2/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	psycopg2
 PORTVERSION=	2.7.3.2
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/doc/COPYING.LESSER
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 USE_PYTHON=	autoplist concurrent distutils
-USES?=		pgsql python
+USES=		pgsql python
 
 PORTDOCS=	AUTHORS INSTALL NEWS PKG-INFO README.rst
 PORTEXAMPLES=	*

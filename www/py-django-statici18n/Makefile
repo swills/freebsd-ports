@@ -1,5 +1,5 @@
 # Created by: Ultima
-# $FreeBSD: head/www/py-django-statici18n/Makefile 444980 2017-07-03 19:06:08Z ultima $
+# $FreeBSD: head/www/py-django-statici18n/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-statici18n
 PORTVERSION=	1.4.0
@@ -13,10 +13,10 @@ COMMENT=	Helper for generating Javascript catalog to static files
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18 \
-		${PYTHON_PKGNAMEPREFIX}django-appconf>=0.6:www/py-django-appconf
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}django-appconf>=0.6:www/py-django-appconf@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

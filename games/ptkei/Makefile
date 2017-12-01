@@ -1,5 +1,5 @@
 # Created by: Daniel O'Connor <darius@dons.net.au>
-# $FreeBSD: head/games/ptkei/Makefile 438924 2017-04-20 04:13:39Z miwi $
+# $FreeBSD: head/games/ptkei/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ptkei
 PORTVERSION=	2.00.0
@@ -13,7 +13,7 @@ COMMENT=	Python/Tk graphical client for Wolfpack Empire servers
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter \
 		${PYTHON_SITELIBDIR}/Pmw/__init__.py:x11-toolkits/py-Pmw
 
-USES=		python shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	empire.py scripts/*.py
 
 do-build:

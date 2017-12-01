@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-Products.CMFCore/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-Products.CMFCore/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	Products.CMFCore
 PORTVERSION=	2.2.10
@@ -13,11 +13,11 @@ COMMENT=	Zope Content Management Framework core components
 LICENSE=	ZPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}eggtestinfo>0:devel/py-eggtestinfo
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}five.localsitemanager>=0:devel/py-five.localsitemanager \
-		${PYTHON_PKGNAMEPREFIX}Products.GenericSetup>=0:devel/py-Products.GenericSetup \
-		${PYTHON_PKGNAMEPREFIX}Products.ZSQLMethods>0:devel/py-Products.ZSQLMethods \
-		${PYTHON_PKGNAMEPREFIX}zope.app.publication>0:devel/py-zope.app.publication
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}eggtestinfo>0:devel/py-eggtestinfo@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}five.localsitemanager>=0:devel/py-five.localsitemanager@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Products.GenericSetup>=0:devel/py-Products.GenericSetup@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Products.ZSQLMethods>0:devel/py-Products.ZSQLMethods@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.app.publication>0:devel/py-zope.app.publication@${FLAVOR}
 
 NO_ARCH=	yes
 #USES=		zope # cyclic dependency

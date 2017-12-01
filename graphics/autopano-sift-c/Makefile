@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/autopano-sift-c/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/autopano-sift-c/Makefile 455260 2017-12-01 11:08:55Z amdmi3 $
 
 PORTNAME=	autopano-sift-C
 PORTVERSION=	2.5.1
@@ -23,14 +23,14 @@ USES=		cmake jpeg
 
 PORTDOCS=	*
 
-.include <bsd.port.options.mk>
+OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|share/man|man|' -e '/set(all_libs/s/$$/ m/' \
 		${WRKSRC}/CMakeLists.txt
 
-post-install:
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
+post-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/README.1ST ${STAGEDIR}${DOCSDIR}/
 
 .include <bsd.port.mk>

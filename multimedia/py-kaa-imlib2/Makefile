@@ -1,5 +1,5 @@
 # Created by: J.R. Oldroyd <fbsd@opal.com>
-# $FreeBSD: head/multimedia/py-kaa-imlib2/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/py-kaa-imlib2/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	kaa-imlib2
 PORTVERSION=	0.2.3
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	fbsd@opal.com
 COMMENT=	Kaa Media Repository - imlib2 wrapper for python
 
-BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/kaa/__init__.py:multimedia/py-kaa-base
+BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/kaa/__init__.py:multimedia/py-kaa-base@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 LIB_DEPENDS=	libImlib2.so:graphics/imlib2
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

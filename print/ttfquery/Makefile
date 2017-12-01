@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/print/ttfquery/Makefile 429548 2016-12-26 16:44:04Z sunpoet $
+# $FreeBSD: head/print/ttfquery/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ttfquery
 PORTVERSION=	1.0.5
@@ -14,11 +14,11 @@ COMMENT=	FontTools-based package for querying system fonts
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/license.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}fonttools>0:print/py-fonttools \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}fonttools>0:print/py-fonttools@${FLAVOR} \
 		${PYNUMPY}
 
 NO_ARCH=	yes
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

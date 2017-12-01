@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/sysutils/deltarpm/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/deltarpm/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	deltarpm
 PORTVERSION=	3.6
@@ -14,6 +14,7 @@ LICENSE=	BSD3CLAUSE
 LIB_DEPENDS=	librpm.so:archivers/rpm4
 
 USES=		gmake python shebangfix tar:bz2
+USE_PYTHON=	flavors optsuffix
 SHEBANG_FILES=	drpmsync
 
 ALL_TARGET=	all

@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/net-im/pebrot/Makefile 371450 2014-10-24 16:29:51Z mva $
+# $FreeBSD: head/net-im/pebrot/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pebrot
 PORTVERSION=	0.8.9
@@ -10,7 +10,7 @@ MASTER_SITES=	SF
 MAINTAINER=	kevlo@FreeBSD.org
 COMMENT=	Text-based MSN messenger client
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

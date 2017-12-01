@@ -1,5 +1,5 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/devel/libgit2-glib/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/libgit2-glib/Makefile 455098 2017-11-29 10:10:03Z tz $
 
 PORTNAME=	libgit2-glib
 PORTVERSION=	0.26.0

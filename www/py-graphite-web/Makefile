@@ -1,5 +1,5 @@
 # Created by: Evan Sarmiento <esarmiento@wayfair.com>
-# $FreeBSD: head/www/py-graphite-web/Makefile 413785 2016-04-22 15:45:51Z swills $
+# $FreeBSD: head/www/py-graphite-web/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	graphite-web
 PORTVERSION=	0.9.15
@@ -12,11 +12,11 @@ COMMENT=	Enterprise scalable realtime graphing platform
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cairo>=1.8.10:graphics/py-cairo \
-		${PYTHON_PKGNAMEPREFIX}carbon>=${PORTVERSION}:databases/py-carbon \
-		${PYTHON_PKGNAMEPREFIX}django18>=1.4:www/py-django18 \
-		${PYTHON_PKGNAMEPREFIX}django-tagging>=0.3.1:www/py-django-tagging \
-		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cairo>=1.8.10:graphics/py-cairo@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}carbon>=${PORTVERSION}:databases/py-carbon@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}django18>=1.4:www/py-django18@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}django-tagging>=0.3.1:www/py-django-tagging@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${FLAVOR} \
 		xorg-fonts-truetype>=0:x11-fonts/xorg-fonts-truetype
 
 FETCH_ARGS=	-o ${DISTNAME}${EXTRACT_SUFX}

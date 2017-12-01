@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/magicor/Makefile 438475 2017-04-13 19:47:03Z amdmi3 $
+# $FreeBSD: head/games/magicor/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	magicor
 PORTVERSION=	1.1
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pygame/__init__.py:devel/py-game
 
-USES=		python shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	*.py
 NO_BUILD=	yes
 NO_ARCH=	yes

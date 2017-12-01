@@ -1,5 +1,5 @@
 # Created by: Craig Leres <leres@FreeBSD.org>
-# $FreeBSD: head/security/broccoli/Makefile 452566 2017-10-21 00:45:50Z leres $
+# $FreeBSD: head/security/broccoli/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	broccoli
 PORTVERSION=	1.97
@@ -43,7 +43,7 @@ PYTHON_DESC=	Build python bindings for broccoli
 RUBY_DESC=	Build ruby bindings for broccoli
 
 DEBUG_CMAKE_ON=	-D ENABLE_DEBUG:BOOL=true
-PYTHON_USES=	python
+PYTHON_USES=	python:2.7
 PYTHON_CMAKE_ON=	-D PY_MOD_INSTALL_DIR:PATH=${PYTHON_SITELIBDIR}
 PYTHON_CMAKE_OFF=	-D DISABLE_PYTHON_BINDINGS:BOOL=true
 RUBY_USE=	ruby=yes

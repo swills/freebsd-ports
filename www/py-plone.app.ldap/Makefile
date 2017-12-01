@@ -1,5 +1,5 @@
 # Created by: Lawrence Stewart <lstewart@FreeBSD.org>
-# $FreeBSD: head/www/py-plone.app.ldap/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-plone.app.ldap/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	plone.app.ldap
 PORTVERSION=	1.3.2
@@ -13,16 +13,16 @@ COMMENT=	LDAP control panel for Plone
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Products.CMFCore>=2.1.0:devel/py-Products.CMFCore \
-		${PYTHON_PKGNAMEPREFIX}Products.PloneLDAP>=1.0:www/py-Products.PloneLDAP \
-		${PYTHON_PKGNAMEPREFIX}plone.memoize>0:www/py-plone.memoize \
-		${PYTHON_PKGNAMEPREFIX}Products.GenericSetup>0:devel/py-Products.GenericSetup \
-		${PYTHON_PKGNAMEPREFIX}ldap>0:net/py-ldap \
-		${PYTHON_PKGNAMEPREFIX}zope.component>0:devel/py-zope.component \
-		${PYTHON_PKGNAMEPREFIX}zope.i18nmessageid>0:textproc/py-zope.i18nmessageid \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>0:devel/py-zope.interface \
-		${PYTHON_PKGNAMEPREFIX}zope.lifecycleevent>0:devel/py-zope.lifecycleevent \
-		${PYTHON_PKGNAMEPREFIX}zope.schema>0:devel/py-zope.schema
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Products.CMFCore>=2.1.0:devel/py-Products.CMFCore@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Products.PloneLDAP>=1.0:www/py-Products.PloneLDAP@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}plone.memoize>0:www/py-plone.memoize@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Products.GenericSetup>0:devel/py-Products.GenericSetup@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ldap>0:net/py-ldap@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.component>0:devel/py-zope.component@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.i18nmessageid>0:textproc/py-zope.i18nmessageid@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>0:devel/py-zope.interface@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.lifecycleevent>0:devel/py-zope.lifecycleevent@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.schema>0:devel/py-zope.schema@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7 zip

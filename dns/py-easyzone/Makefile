@@ -1,5 +1,5 @@
 # Created by: Attila Nagy <bra@fsn.hu>
-# $FreeBSD: head/dns/py-easyzone/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/dns/py-easyzone/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	easyzone
 PORTVERSION=	1.2.2
@@ -13,7 +13,7 @@ COMMENT=	DNS Zone abstraction module for Python
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>=1.9.4:dns/py-dnspython
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>=1.9.4:dns/py-dnspython@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python

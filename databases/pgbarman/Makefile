@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/databases/pgbarman/Makefile 450188 2017-09-20 07:14:27Z matthew $
+# $FreeBSD: head/databases/pgbarman/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	barman
 DISTVERSION=	2.3
@@ -15,10 +15,10 @@ COMMENT=	Backup and recovery manager for PostgreSQL
 LICENSE=	GPLv3
 
 RUN_DEPENDS=	rsync:net/rsync						\
-		${PYTHON_PKGNAMEPREFIX}psycopg2>0:databases/py-psycopg2	\
-		${PYTHON_PKGNAMEPREFIX}dateutil>=2.1:devel/py-dateutil	\
-		${PYTHON_PKGNAMEPREFIX}argh>=0.21.2:devel/py-argh \
-		${PYTHON_PKGNAMEPREFIX}argcomplete>0:devel/py-argcomplete
+		${PYTHON_PKGNAMEPREFIX}psycopg2>0:databases/py-psycopg2@${FLAVOR}	\
+		${PYTHON_PKGNAMEPREFIX}dateutil>=2.1:devel/py-dateutil@${FLAVOR}	\
+		${PYTHON_PKGNAMEPREFIX}argh>=0.21.2:devel/py-argh@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}argcomplete>0:devel/py-argcomplete@${FLAVOR}
 
 NO_ARCH=	yes
 
@@ -27,7 +27,7 @@ GROUPS=		barman
 
 USES=		pgsql python
 WANT_PGSQL=	client
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils concurrent optsuffix
 
 PORTDOCS=	tutorial.pdf
 

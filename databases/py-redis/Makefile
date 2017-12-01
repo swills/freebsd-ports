@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/databases/py-redis/Makefile 452919 2017-10-26 13:38:47Z olgeni $
+# $FreeBSD: head/databases/py-redis/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	redis
 PORTVERSION=	2.10.6
@@ -18,7 +18,7 @@ OPTIONS_DEFINE=	HIREDIS
 
 HIREDIS_DESC=	High performance response parser (via hiredis)
 
-HIREDIS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}hiredis>0:databases/py-hiredis
+HIREDIS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}hiredis>0:databases/py-hiredis@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist concurrent

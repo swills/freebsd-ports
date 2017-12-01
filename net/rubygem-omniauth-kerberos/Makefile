@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/net/rubygem-omniauth-kerberos/Makefile 455044 2017-11-28 15:16:38Z tz $
 
 PORTNAME=	omniauth-kerberos
 PORTVERSION=	0.3.0

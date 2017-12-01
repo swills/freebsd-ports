@@ -1,5 +1,5 @@
 # Created by: Moggie <moggie@elasticmind.net>
-# $FreeBSD: head/textproc/py-wtforms/Makefile 437155 2017-03-28 20:16:02Z rm $
+# $FreeBSD: head/textproc/py-wtforms/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	wtforms
 PORTVERSION=	2.1
@@ -15,11 +15,11 @@ COMMENT=	Flexible forms validation and rendering library for python
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Babel>0:devel/py-babel
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>0:devel/py-coverage \
-		${PYTHON_PKGNAMEPREFIX}sqlalchemy10>0:databases/py-sqlalchemy10 \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Babel>0:devel/py-babel@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>0:devel/py-coverage@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlalchemy10>0:databases/py-sqlalchemy10@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pep8>0:devel/pep8 \
-		${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil
+		${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil@${FLAVOR}
 
 OPTIONS_DEFINE=		DOCS
 

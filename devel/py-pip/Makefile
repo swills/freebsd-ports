@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/py-pip/Makefile 443059 2017-06-10 02:19:04Z woodsb02 $
+# $FreeBSD: head/devel/py-pip/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pip
 PORTVERSION=	9.0.1
@@ -13,27 +13,27 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 # Tests also need bzr, git, otherwise they fail
-TEST_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest \
-		${PYTHON_PKGNAMEPREFIX}pytest-capturelog>0:devel/py-pytest-capturelog \
-		${PYTHON_PKGNAMEPREFIX}pytest-timeout>0:devel/py-pytest-timeout \
-		${PYTHON_PKGNAMEPREFIX}pytest-xdist>0:devel/py-pytest-xdist \
-		${PYTHON_PKGNAMEPREFIX}virtualenv>=1.10:devel/py-virtualenv \
-		${PYTHON_PKGNAMEPREFIX}scripttest>=1.3:devel/py-scripttest \
-		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock \
-		${PYTHON_PKGNAMEPREFIX}pretend>0:devel/py-pretend \
-		${PYTHON_PKGNAMEPREFIX}freezegun>0:devel/py-freezegun \
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest-capturelog>0:devel/py-pytest-capturelog@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest-timeout>0:devel/py-pytest-timeout@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest-xdist>0:devel/py-pytest-xdist@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}virtualenv>=1.10:devel/py-virtualenv@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}scripttest>=1.3:devel/py-scripttest@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pretend>0:devel/py-pretend@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}freezegun>0:devel/py-freezegun@${FLAVOR} \
 		git>0:devel/git \
 		bzr>0:devel/bzr
 
 OPTIONS_DEFINE=	DOCS
 
-DOCS_BUILD_DEPENDS?=	sphinx-build:textproc/py-sphinx
+DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${FLAVOR}
 DOCS_PORTDOCS=	*
 DOCS_VARS=	PYDISTUTILS_BUILD_TARGET=build_sphinx \
 		PYDISTUTILS_BUILDARGS="-n --all-files --fresh-env"
 
 NO_ARCH=	yes
-USES?=		python shebangfix
+USES=		python shebangfix
 USE_GITHUB=	yes
 USE_PYTHON=	autoplist concurrent distutils
 

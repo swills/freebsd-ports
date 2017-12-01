@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/math/cln/Makefile 426361 2016-11-19 12:18:40Z linimon $
+# $FreeBSD: head/math/cln/Makefile 455177 2017-11-30 08:22:47Z linimon $
 
 PORTNAME=	cln
 PORTVERSION=	1.3.4
@@ -25,7 +25,7 @@ BROKEN_aarch64=	Fails to compile: error: declaration of divu_64_rest in global s
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == aarch64 || ${ARCH} == armv6
+.if ${ARCH} == aarch64 || ${ARCH} == armv6 || ${ARCH} == armv7
 CPPFLAGS+=	-DNO_ASM
 .endif
 

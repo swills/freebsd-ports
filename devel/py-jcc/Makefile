@@ -1,5 +1,5 @@
 # Created by: clsung@FreeBSD.org
-# $FreeBSD: head/devel/py-jcc/Makefile 447881 2017-08-13 12:52:37Z dbaio $
+# $FreeBSD: head/devel/py-jcc/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	jcc
 PORTVERSION=	3.0
@@ -15,6 +15,7 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_armv6=		fails to link: /nxb-bin/usr/bin/ld: cannot find -ljava
+BROKEN_armv7=		fails to link: /nxb-bin/usr/bin/ld: cannot find -ljava
 
 USES=		python
 USE_PYTHON=	distutils autoplist

@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/devel/libsoup/Makefile 454573 2017-11-20 17:10:27Z madpilot $
+# $FreeBSD: head/devel/libsoup/Makefile 455216 2017-11-30 17:54:32Z mat $
 
 PORTNAME=	libsoup
 PORTVERSION=	2.54.1
@@ -21,7 +21,7 @@ PORTSCOUT=	limitw:1,even
 .if !defined(REFERENCE_PORT)
 
 USES+=		gettext gmake gnome libtool pathfix pkgconfig \
-		python:3:build sqlite:3 tar:xz
+		python:build sqlite:3 tar:xz
 USE_GNOME=	glib20 intlhack introspection:build \
 		libxml2 referencehack
 USE_LDCONFIG=	yes

@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/databases/py-pytc/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/py-pytc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pytc
 PORTVERSION=	0.8
@@ -13,7 +13,7 @@ COMMENT=	Tokyo Cabinet Python bindings
 
 LIB_DEPENDS=	libtokyocabinet.so:databases/tokyocabinet
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.pre.mk>

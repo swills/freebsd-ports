@@ -1,5 +1,5 @@
 # Created by: Björn König <bkoenig@alpha-tierchen.de>
-# $FreeBSD: head/net/linknx/Makefile 441874 2017-05-27 20:33:22Z linimon $
+# $FreeBSD: head/net/linknx/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	linknx
 PORTVERSION=	0.0.1.32
@@ -15,6 +15,7 @@ LIB_DEPENDS=	libpthsem.so:devel/pthsem
 BUILD_DEPENDS=	${LOCALBASE}/lib/libargp.a:devel/argp-standalone
 
 BROKEN_armv6=		fails to configure: checking for GNU Pth... Segmentation fault
+BROKEN_armv7=		fails to configure: checking for GNU Pth... Segmentation fault
 BROKEN_mips=		fails to configure: checking for GNU Pth... Segmentation fault
 BROKEN_mips64=		fails to configure: checking for GNU Pth... Segmentation fault
 

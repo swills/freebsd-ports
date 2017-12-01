@@ -1,5 +1,5 @@
 # Created by: Henri Michelon
-# $FreeBSD: head/databases/pgworksheet/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/pgworksheet/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pgworksheet
 PORTVERSION=	1.9
@@ -12,7 +12,7 @@ COMMENT=	Simple PostreSQL GUI front end
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pyPgSQL/libpq/__init__.py:databases/py-pyPgSQL
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pyPgSQL/libpq/__init__.py:databases/py-pyPgSQL@${FLAVOR}
 
 USES=		pgsql python:2 tar:bzip2
 USE_GNOME=	pygtk2

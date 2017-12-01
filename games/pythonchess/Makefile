@@ -1,5 +1,5 @@
 # Created by: Alejandro Pulver <alejandro@varnet.biz>
-# $FreeBSD: head/games/pythonchess/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/games/pythonchess/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pythonchess
 PORTVERSION=	0.7
@@ -17,7 +17,7 @@ COMMENT=	Small program for playing chess against the computer
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/gpl.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${PY_FLAVOR}
 
 WRKSRC=		${WRKDIR}/${PORTNAME:S/p/P/:S/c/C/}
 

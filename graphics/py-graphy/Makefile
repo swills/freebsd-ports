@@ -1,5 +1,5 @@
 # Created by: Sahil Tandon <sahil@FreeBSD.org>
-# $FreeBSD: head/graphics/py-graphy/Makefile 440194 2017-05-05 16:05:55Z sunpoet $
+# $FreeBSD: head/graphics/py-graphy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	graphy
 PORTVERSION=	1.0
@@ -15,6 +15,7 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python:run tar:bzip2
+USE_PYTHON=	flavors
 
 PORTDOCS=	README
 PORTEXAMPLES=	*

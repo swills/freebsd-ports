@@ -1,5 +1,5 @@
 # Created by: Jason Evans <jasone@FreeBSD.org>
-# $FreeBSD: head/biology/crux/Makefile 451982 2017-10-13 11:14:53Z bapt $
+# $FreeBSD: head/biology/crux/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	crux
 PORTVERSION=	1.2.0
@@ -16,6 +16,7 @@ LICENSE_COMB=	multi
 BROKEN=		No public distfiles
 BROKEN_aarch64=		Fails to link: ImportError: /lib/libgcc_s.so.1: version GCC_4.5.0 required by /usr/local/lib/gcc5/libgfortran.so.3 not found
 BROKEN_armv6=		Fails to link: ImportError: /usr/local/lib/gcc49/libgfortran.so.3: Undefined symbol "__aeabi_ldivmod"
+BROKEN_armv7=		Fails to link: ImportError: /usr/local/lib/gcc49/libgfortran.so.3: Undefined symbol "__aeabi_ldivmod"
 
 USES=		fortran gmake python tar:bzip2
 USE_CSTD=	gnu99

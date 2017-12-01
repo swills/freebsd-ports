@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/www/py-html5lib/Makefile 413602 2016-04-18 18:16:11Z rm $
+# $FreeBSD: head/www/py-html5lib/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	html5lib
 PORTVERSION=	0.9999999
@@ -13,7 +13,7 @@ COMMENT=	Python based HTML parser based on the HTML5 spec
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

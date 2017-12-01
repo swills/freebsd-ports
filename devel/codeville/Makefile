@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/devel/codeville/Makefile 417084 2016-06-18 21:01:44Z rm $
+# $FreeBSD: head/devel/codeville/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	codeville
 PORTVERSION=	0.1.17
@@ -12,7 +12,7 @@ COMMENT=	Anarchic control version system without unnecessary re-merges
 LICENSE=	BSD3CLAUSE
 
 NO_ARCH=	yes
-USES=		python tar:xz
+USES=		python:2.7 tar:xz
 USE_PYTHON=	distutils autoplist
 
 PORTDOCS=	LICENSE.txt

@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/www/py-qt4-webkit/Makefile 415984 2016-05-28 12:32:21Z pi $
+# $FreeBSD: head/www/py-qt4-webkit/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	webkit
 CATEGORIES=	www devel python
@@ -12,6 +12,7 @@ PYQT_DIST=	yes
 
 USES=		python pyqt:4
 USE_PYQT=	sip_build core_run gui_run network_run
+USE_PYTHON=	flavors
 USE_QT4=	corelib gui network webkit \
 		moc_build qmake_build
 

@@ -1,5 +1,5 @@
 # Created by: Eugene Grosbein <ports@grosbein.net>
-# $FreeBSD: head/devel/py-xcaplib/Makefile 448678 2017-08-24 14:20:02Z sunpoet $
+# $FreeBSD: head/devel/py-xcaplib/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	xcaplib
 PORTVERSION=	1.2.0
@@ -13,9 +13,9 @@ COMMENT=	Python XCAP client library
 
 LICENSE=	LGPL20+
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}application>=1.1.5:devel/py-application \
-		${PYTHON_PKGNAMEPREFIX}lxml>=2.1.2:devel/py-lxml \
-		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}application>=1.1.5:devel/py-application@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lxml>=2.1.2:devel/py-lxml@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

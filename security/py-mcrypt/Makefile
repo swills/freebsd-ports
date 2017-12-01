@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/security/py-mcrypt/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/py-mcrypt/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	mcrypt
 PORTVERSION=	1.1
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libmcrypt.so:security/libmcrypt
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 PYDISTUTILS_BUILDARGS=	-L${LOCALBASE}/lib
 PYDISTUTILS_BUILD_TARGET=	build_ext

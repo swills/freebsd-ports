@@ -1,5 +1,5 @@
 # Created by: Shinya Esu <esu@yk.rim.or.jp>
-# $FreeBSD: head/games/macopix/Makefile 441875 2017-05-27 21:16:51Z linimon $
+# $FreeBSD: head/games/macopix/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	macopix
 PORTVERSION=	1.7.4
@@ -15,6 +15,7 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_armv6=		dumps core: Assertion failed: (!NodePtr->isKnownSentinel()), function operator*, file ilist_iterator.h
+BROKEN_armv7=		dumps core: Assertion failed: (!NodePtr->isKnownSentinel()), function operator*, file ilist_iterator.h
 
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libtiff.so:graphics/tiff

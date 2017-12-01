@@ -1,5 +1,5 @@
 # Created by: Marc E.E. van Woerkom <marc.vanwoerkom@fernuni-hagen.de>
-# $FreeBSD: head/devel/smv/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/smv/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	smv
 PORTVERSION=	2.5.4.3
@@ -13,6 +13,7 @@ COMMENT=	Symbolic Model Verifier System for checking finite state systems
 
 BROKEN_aarch64=		fails to build: undefined reference to sbrk
 BROKEN_armv6=		fails to build: error: non-void function check_bdd should return a value
+BROKEN_armv7=		fails to build: error: non-void function check_bdd should return a value
 
 USE_GCC=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}

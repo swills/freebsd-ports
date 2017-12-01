@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/astro/py-pyfits/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/astro/py-pyfits/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyfits
 PORTVERSION=	3.4
@@ -14,10 +14,10 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 BUILD_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}d2to1>=0:devel/py-d2to1 \
-		${PYTHON_PKGNAMEPREFIX}stsci.distutils>=0:devel/py-stsci.distutils
+		${PYTHON_PKGNAMEPREFIX}d2to1>=0:devel/py-d2to1@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}stsci.distutils>=0:devel/py-stsci.distutils@${FLAVOR}
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}d2to1>=0:devel/py-d2to1
+		${PYTHON_PKGNAMEPREFIX}d2to1>=0:devel/py-d2to1@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/mkclean/Makefile 435113 2017-03-01 01:47:30Z linimon $
+# $FreeBSD: head/multimedia/mkclean/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	mkclean
 PORTVERSION=	0.8.7
@@ -27,6 +27,7 @@ PLIST_FILES=	bin/mkclean \
 
 BROKEN_aarch64=	Does not install: arm-none-linux-gnueabi-gcc: Command not found
 BROKEN_armv6=	Does not install: arm-none-linux-gnueabi-gcc: Command not found
+BROKEN_armv7=	Does not install: arm-none-linux-gnueabi-gcc: Command not found
 BROKEN_mips64=	Does not install: mipsel-linux-gcc: Command not found
 BROKEN_sparc64=	Does not install: gmake: GNUmakefile: No such file or directory
 

@@ -1,5 +1,5 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/devel/qct/Makefile 433310 2017-02-04 13:37:15Z tcberner $
+# $FreeBSD: head/devel/qct/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	qct
 PORTVERSION=	1.7
@@ -13,7 +13,7 @@ COMMENT=	QCT GUI commit tool
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		pyqt:4 python
+USES=		pyqt:4 python:2.7
 USE_PYQT=	gui
 USE_PYTHON=	distutils
 WRKSRC=		${WRKDIR}/qct

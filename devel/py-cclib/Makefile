@@ -1,10 +1,11 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-cclib/Makefile 441771 2017-05-26 11:24:39Z robak $
+# $FreeBSD: head/devel/py-cclib/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cclib
 PORTVERSION=	1.5.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel python
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	robak@FreeBSD.org
 COMMENT=	Parsers And Algorithms For Computational Chemistry

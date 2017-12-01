@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/py-qt5-quick/Makefile 426990 2016-11-24 06:14:01Z pi $
+# $FreeBSD: head/x11-toolkits/py-qt5-quick/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	quick
 CATEGORIES=	x11-toolkits devel python
@@ -11,6 +11,7 @@ PYQT_DIST=	yes
 
 USES=		python pyqt:5
 USE_PYQT=	sip_build core_run gui_run
+USE_PYTHON=	flavors
 USE_QT5=	core quick qmake_build
 
 OPTIONS_DEFINE=	API DEBUG

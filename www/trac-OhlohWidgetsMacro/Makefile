@@ -1,5 +1,5 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/www/trac-OhlohWidgetsMacro/Makefile 416081 2016-05-29 01:29:08Z amdmi3 $
+# $FreeBSD: head/www/trac-OhlohWidgetsMacro/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	OhlohWidgetsMacro
 PORTVERSION=	0.2
@@ -13,10 +13,10 @@ COMMENT=	Trac macro to embed Ohloh widgets
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycerberus>=0.3:devel/py-pycerberus \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycerberus>=0.3:devel/py-pycerberus@${FLAVOR} \
 		tracd:www/trac
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

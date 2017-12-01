@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-webob/Makefile 426828 2016-11-22 14:41:53Z nivit $
+# $FreeBSD: head/www/py-webob/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	webob
 PORTVERSION=	1.6.3
@@ -12,7 +12,7 @@ COMMENT=	WSGI request and response Python object
 
 LICENSE=	MIT
 
-DOCS_BUILD_DEPENDS=	sphinx-build:textproc/py-sphinx
+DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${FLAVOR}
 DOCSDIR=	${PREFIX}/share/doc/${PYTHON_PKGNAMEPREFIX}${PORTNAME}
 
 OPTIONS_DEFINE=	DOCS TESTS

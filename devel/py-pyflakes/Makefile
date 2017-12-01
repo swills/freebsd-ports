@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/devel/py-pyflakes/Makefile 435159 2017-03-01 14:59:41Z amdmi3 $
+# $FreeBSD: head/devel/py-pyflakes/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyflakes
 PORTVERSION=	1.5.0
@@ -13,7 +13,7 @@ COMMENT=	Passive checker of Python programs
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 NO_ARCH=	yes

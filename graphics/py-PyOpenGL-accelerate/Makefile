@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/py-PyOpenGL-accelerate/Makefile 414964 2016-05-10 21:29:04Z pi $
+# $FreeBSD: head/graphics/py-PyOpenGL-accelerate/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	PyOpenGL
 PORTVERSION=	3.1.0
@@ -13,11 +13,10 @@ COMMENT=	OpenGL acceleration code for PyOpenGL
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	cython:lang/cython \
-		${PYNUMPY}
+BUILD_DEPENDS=	${PYNUMPY}
 RUN_DEPENDS=	${PYNUMPY}
 
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils cython
 USES=		python
 
 .include <bsd.port.mk>

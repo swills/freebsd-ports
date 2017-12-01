@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/Makefile 450019 2017-09-17 18:38:38Z tijl $
+# $FreeBSD: head/print/Makefile 455210 2017-11-30 15:50:30Z mat $
 #
 
     COMMENT = Desktop publishing
@@ -205,8 +205,6 @@
     SUBDIR += py-rtf
     SUBDIR += py-stapler
     SUBDIR += py-trml2pdf
-    SUBDIR += py3-fonttools
-    SUBDIR += py3-pycups
     SUBDIR += qpdf
     SUBDIR += qpdfview
     SUBDIR += qt5-printsupport

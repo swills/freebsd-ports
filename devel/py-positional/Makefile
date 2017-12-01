@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-positional/Makefile 448775 2017-08-26 15:47:38Z novel $
+# $FreeBSD: head/devel/py-positional/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	positional
 PORTVERSION=	1.2.1
@@ -12,7 +12,7 @@ COMMENT=	Library to enforce positional or key-word arguments
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.6:devel/py-pbr
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.6:devel/py-pbr@${FLAVOR}
 
 NO_ARCH=	yes
 

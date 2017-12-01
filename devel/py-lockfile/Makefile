@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-lockfile/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-lockfile/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	lockfile
 PORTVERSION=	0.12.2
@@ -13,8 +13,8 @@ COMMENT=	Platform-independent file locking module
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.8:devel/py-pbr
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.8:devel/py-pbr@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

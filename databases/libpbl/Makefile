@@ -1,5 +1,5 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/databases/libpbl/Makefile 422388 2016-09-18 13:10:04Z linimon $
+# $FreeBSD: head/databases/libpbl/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	libpbl
 PORTVERSION=	1.04.04
@@ -16,6 +16,7 @@ MAKEFILE=	makefile
 TEST_TARGET=	test
 
 BROKEN_armv6=	Fails to build: cannot compile pblPerform.c
+BROKEN_armv7=	Fails to build: cannot compile pblPerform.c
 BROKEN_mips=	Fails to build: cannot compile pblPerform.c
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src

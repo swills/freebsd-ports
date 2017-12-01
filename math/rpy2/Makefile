@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/rpy2/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/rpy2/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rpy2
 PORTVERSION=	2.7.8
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libR.so:math/R
 RUN_DEPENDS=	${PYNUMPY}
 
 USES=		fortran python readline
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist concurrent optsuffix
 LDFLAGS+=	-Wl,--as-needed
 
 pre-configure:

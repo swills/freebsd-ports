@@ -1,5 +1,5 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-cybox/Makefile 441393 2017-05-21 12:29:44Z antoine $
+# $FreeBSD: head/security/py-cybox/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cybox
 PORTVERSION=	2.1.0.14
@@ -13,10 +13,10 @@ COMMENT=	Python library for parsing, manipulating, and generating CybOX content
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=0:devel/py-dateutil \
-		${PYTHON_PKGNAMEPREFIX}lxml>=2.2.3:devel/py-lxml \
-		${PYTHON_PKGNAMEPREFIX}mixbox>=1.0.2:security/py-mixbox
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=0:devel/py-dateutil@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lxml>=2.2.3:devel/py-lxml@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mixbox>=1.0.2:security/py-mixbox@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	CybOXProject

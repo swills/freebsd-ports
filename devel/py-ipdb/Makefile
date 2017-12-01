@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-ipdb/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-ipdb/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ipdb
 PORTVERSION=	0.8.1
@@ -13,7 +13,7 @@ COMMENT=	IPython-enabled pdb
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipython>=0.10:devel/ipython
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipython>=0.10:devel/ipython@${FLAVOR}
 
 USES=		python zip
 USE_PYTHON=	distutils autoplist

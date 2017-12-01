@@ -1,5 +1,5 @@
 # Created by: Landon Fuller <landonf@opendarwin.org>
-# $FreeBSD: head/net/splatd/Makefile 448428 2017-08-20 15:10:25Z rodrigo $
+# $FreeBSD: head/net/splatd/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	splatd
 PORTVERSION=	1.2
@@ -13,13 +13,13 @@ COMMENT=	Splat is the Scalable Periodic LDAP Attribute Transmogrifier
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${LOCALBASE}/bin/zconfig:devel/py-zconfig \
-		${PYTHON_PKGNAMEPREFIX}ldap>=2.3.1:net/py-ldap
-RUN_DEPENDS=	${LOCALBASE}/bin/zconfig:devel/py-zconfig \
-		${PYTHON_PKGNAMEPREFIX}ldap>=2.3.1:net/py-ldap \
-		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
+BUILD_DEPENDS=	${LOCALBASE}/bin/zconfig:devel/py-zconfig@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ldap>=2.3.1:net/py-ldap@${FLAVOR}
+RUN_DEPENDS=	${LOCALBASE}/bin/zconfig:devel/py-zconfig@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ldap>=2.3.1:net/py-ldap@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGNAME=	splat
 USE_RC_SUBR=	splatd

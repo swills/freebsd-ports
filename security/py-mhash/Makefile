@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/security/py-mhash/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/py-mhash/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	mhash
 PORTVERSION=	1.4
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libmhash.so:security/mhash
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 CFLAGS+=	-I${LOCALBASE}/include

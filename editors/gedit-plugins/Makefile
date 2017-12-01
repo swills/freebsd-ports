@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/editors/gedit-plugins/Makefile 430839 2017-01-07 21:42:28Z sunpoet $
+# $FreeBSD: head/editors/gedit-plugins/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gedit-plugins
 PORTVERSION=	3.18.0
@@ -21,7 +21,7 @@ RUN_DEPENDS=	gedit>=0:editors/gedit
 PORTSCOUT=	limitw:1,even
 
 USES=		gettext gmake gnome libtool pathfix pkgconfig \
-		python:3 tar:xz
+		python:3.4+ tar:xz
 USE_GNOME=	gtk30 gtksourceview3 intlhack
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
@@ -33,10 +33,10 @@ GLIB_SCHEMAS=	org.gnome.gedit.plugins.drawspaces.gschema.xml \
 		org.gnome.gedit.plugins.wordcompletion.gschema.xml
 
 USES+=		python
-BUILD_DEPENDS+=	py3?-dbus>=0:devel/py3-dbus
+BUILD_DEPENDS+=	py3?-dbus>=0:devel/py-dbus@${PY_FLAVOR}
 LIB_DEPENDS+=	libgucharmap_2_90.so:deskutils/gucharmap
-RUN_DEPENDS+=	py3?-dbus>=0:devel/py3-dbus \
-		${PYTHON_PKGNAMEPREFIX}libpeas>=0:devel/py3-libpeas
+RUN_DEPENDS+=	py3?-dbus>=0:devel/py-dbus@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}libpeas>=0:devel/py-libpeas@${PY_FLAVOR}
 USE_GNOME+=	vte3
 CONFIGURE_ARGS+=--enable-python
 GLIB_SCHEMAS+=	org.gnome.gedit.plugins.terminal.gschema.xml

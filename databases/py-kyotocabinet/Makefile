@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/py-kyotocabinet/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/py-kyotocabinet/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	kyotocabinet
 PORTVERSION=	1.22
@@ -18,6 +18,6 @@ LICENSE=	GPLv3
 LIB_DEPENDS=	libkyotocabinet.so:databases/kyotocabinet
 
 USE_PYTHON=	autoplist distutils
-USES=		python:3
+USES=		python:3.4+
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/net/sippy_b2bua/Makefile 449228 2017-09-04 00:01:07Z sunpoet $
+# $FreeBSD: head/net/sippy_b2bua/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sippy_b2bua
 PORTVERSION=	1.0.2
@@ -11,11 +11,11 @@ DISTNAME=	sippy-${PORTVERSION}
 MAINTAINER=	sobomax@FreeBSD.org
 COMMENT=	SIP Back-to-back user agent (B2BUA) server with Radius support
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	distutils
-USES=		python
+USES=		python:2.7
 PYDISTUTILS_PKGNAME=	sippy
 DOCSDIR=	${PREFIX}/share/doc/${PYDISTUTILS_PKGNAME}
 

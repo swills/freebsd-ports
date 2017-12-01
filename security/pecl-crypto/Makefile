@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/security/pecl-crypto/Makefile 441874 2017-05-27 20:33:22Z linimon $
+# $FreeBSD: head/security/pecl-crypto/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	crypto
 PORTVERSION=	0.3.1
@@ -11,6 +11,7 @@ COMMENT=	Objective wrapper for OpenSSL Crypto Library
 LICENSE=	PHP301
 
 BROKEN_armv6=		fails to configure: C compiler cannot create executables
+BROKEN_armv7=		fails to configure: C compiler cannot create executables
 BROKEN_mips=		fails to configure: C compiler cannot create executables
 BROKEN_mips64=		fails to configure: C compiler cannot create executables
 BROKEN_powerpc64=	fails to configure: C compiler cannot create executables

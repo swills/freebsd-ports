@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale	<nivit@FreeBSD.org>
-# $FreeBSD: head/graphics/py-pygooglechart/Makefile 371326 2014-10-21 16:36:12Z mva $
+# $FreeBSD: head/graphics/py-pygooglechart/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pygooglechart
 PORTVERSION=	0.3.0
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Complete Python wrapper for the Google Chart API
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 PORTEXAMPLES=	*

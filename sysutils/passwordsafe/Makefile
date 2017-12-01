@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/passwordsafe/Makefile 449990 2017-09-17 10:56:44Z brnrd $
+# $FreeBSD: head/sysutils/passwordsafe/Makefile 455165 2017-11-30 05:55:17Z linimon $
 
 PORTNAME=	passwordsafe
 DISTVERSION=	1.02.1BETA
@@ -13,7 +13,7 @@ LIB_DEPENDS=	libuuid.so:misc/e2fsprogs-libuuid \
 		libxerces-c.so:textproc/xerces-c3
 BUILD_DEPENDS=	zip:archivers/zip
 
-NOT_FOR_ARCHS=		aarch64 armv6
+NOT_FOR_ARCHS=		aarch64 armv6 armv7
 NOT_FOR_ARCHS_REASON=	Cannot determine whether the target CPU is big or little endian - please fix PwsPlatform.h
 
 CONFLICTS=	pwsafe-[0-9]*

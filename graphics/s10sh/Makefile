@@ -1,5 +1,5 @@
 # Created by: John Reynolds <johnjen@reynoldsnet.org>
-# $FreeBSD: head/graphics/s10sh/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/graphics/s10sh/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	s10sh
 PORTVERSION=	0.2.2
@@ -16,6 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_aarch64=	Fails to build: error: can not find the byte order for this architecture, fix bytesex.h
 BROKEN_armv6=	Fails to build: error: can not find the byte order for this architecture, fix bytesex.h
+BROKEN_armv7=	Fails to build: error: can not find the byte order for this architecture, fix bytesex.h
 
 USES=		ncurses readline
 

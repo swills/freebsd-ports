@@ -1,5 +1,5 @@
 # Created by: Daniel Bretoi
-# $FreeBSD: head/devel/py-utils/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-utils/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	utils
 PORTVERSION=	0.4.0
@@ -11,7 +11,7 @@ DISTNAME=	pythonutils-${PORTVERSION}
 MAINTAINER=	daniel@netwalk.org
 COMMENT=	General utility modules that simplify common programming in Python
 
-USES=		python zip
+USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist
 
 DOCSDIR=	${PREFIX}/share/doc/py-${PORTNAME}

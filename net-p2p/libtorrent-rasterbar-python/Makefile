@@ -1,5 +1,5 @@
 # Created by: Doug Barton <dougb@FreeBSD.org>
-# $FreeBSD: head/net-p2p/libtorrent-rasterbar-python/Makefile 449439 2017-09-08 05:24:36Z rezny $
+# $FreeBSD: head/net-p2p/libtorrent-rasterbar-python/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 CATEGORIES=	net-p2p python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +15,7 @@ BUILD_WRKSRC=	${WRKSRC}/bindings/python
 INSTALL_WRKSRC=	${BUILD_WRKSRC}
 
 SLAVE_PORT=	yes
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGNAME=	python_libtorrent
 

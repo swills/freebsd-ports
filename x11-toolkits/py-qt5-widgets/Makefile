@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/py-qt5-widgets/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11-toolkits/py-qt5-widgets/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	widgets
 PORTREVISION=	1
@@ -13,6 +13,7 @@ PYQT_DIST=	yes
 USES=		python pyqt:5
 USE_GL=		gl
 USE_PYQT=	sip_build core_run gui_run
+USE_PYTHON=	flavors
 USE_QT5=	core gui widgets qmake_build
 
 OPTIONS_DEFINE=	API DEBUG

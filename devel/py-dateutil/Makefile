@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/devel/py-dateutil/Makefile 445492 2017-07-11 11:06:02Z koobs $
+# $FreeBSD: head/devel/py-dateutil/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	dateutil
 PORTVERSION=	2.6.1
@@ -12,9 +12,9 @@ COMMENT=	Extensions to the standard Python datetime module
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}six>=1.5:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.5:devel/py-six@${FLAVOR}
 
-USES?=		python
+USES=		python
 USE_GITHUB=	yes
 USE_PYTHON=	autoplist distutils
 

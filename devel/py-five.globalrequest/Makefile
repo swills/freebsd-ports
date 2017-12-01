@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-five.globalrequest/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-five.globalrequest/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	five.globalrequest
 PORTVERSION=	1.0
@@ -13,7 +13,7 @@ COMMENT=	Zope 2 integration for zope.globalrequest
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.globalrequest>=0:devel/py-zope.globalrequest
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.globalrequest>=0:devel/py-zope.globalrequest@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

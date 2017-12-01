@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-pyrfc3339/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-pyrfc3339/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyrfc3339
 PORTVERSION=	1.0
@@ -14,8 +14,8 @@ COMMENT=	Generate and parse RFC 3339 timestamps
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>=0:devel/py-pytz
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>=0:devel/py-pytz@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

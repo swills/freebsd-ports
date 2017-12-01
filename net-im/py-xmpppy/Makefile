@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/net-im/py-xmpppy/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-im/py-xmpppy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	xmpppy
 PORTVERSION=	0.5.0
@@ -12,9 +12,9 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}rc1
 MAINTAINER=	vg@FreeBSD.org
 COMMENT=	Python library that provides easy scripting with Jabber
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>=1.7.1:dns/py-dnspython
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>=1.7.1:dns/py-dnspython@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 post-patch:

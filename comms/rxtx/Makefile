@@ -1,5 +1,5 @@
 # Created by: Jean-Baptiste Quenot <jb.quenot@caraldi.com>
-# $FreeBSD: head/comms/rxtx/Makefile 452001 2017-10-13 14:19:26Z bapt $
+# $FreeBSD: head/comms/rxtx/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	rxtx
 PORTVERSION=	2.2p2
@@ -16,6 +16,7 @@ LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_armv6=		fails to link: librxtxParallel.so: No such file or directory
+BROKEN_armv7=		fails to link: librxtxParallel.so: No such file or directory
 
 USES=		gmake libtool zip
 

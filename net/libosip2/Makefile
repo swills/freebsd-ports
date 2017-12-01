@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/libosip2/Makefile 434859 2017-02-26 11:21:26Z bofh $
+# $FreeBSD: head/net/libosip2/Makefile 455239 2017-12-01 00:02:47Z jkim $
 
 PORTNAME=	libosip2
 PORTVERSION=	5.0.0
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	GNU/osip
 

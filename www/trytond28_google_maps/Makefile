@@ -1,5 +1,5 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/www/trytond28_google_maps/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/trytond28_google_maps/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	trytond28_google_maps
 PORTVERSION=	2.8.0
@@ -18,7 +18,7 @@ RUN_DEPENDS=	trytond28_party>=2.8.0:finance/trytond28_party
 
 CONFLICTS=	trytond_google_maps-2.[46].*
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

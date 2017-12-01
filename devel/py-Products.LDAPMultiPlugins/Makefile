@@ -1,5 +1,5 @@
 # Created by: Lawrence Stewart <lstewart@FreeBSD.org>
-# $FreeBSD: head/devel/py-Products.LDAPMultiPlugins/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-Products.LDAPMultiPlugins/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	Products.LDAPMultiPlugins
 PORTVERSION=	1.14
@@ -14,9 +14,9 @@ COMMENT=	LDAP-backed plugins for the Zope2 PluggableAuthService
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ldap>=2.0.6:net/py-ldap \
-		${PYTHON_PKGNAMEPREFIX}Products.LDAPUserFolder>=2.9:devel/py-Products.LDAPUserFolder \
-		${PYTHON_PKGNAMEPREFIX}Products.PluggableAuthService>=1.4.0:security/py-Products.PluggableAuthService
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ldap>=2.0.6:net/py-ldap@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Products.LDAPUserFolder>=2.9:devel/py-Products.LDAPUserFolder@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Products.PluggableAuthService>=1.4.0:security/py-Products.PluggableAuthService@${FLAVOR}
 
 USES=		python:2
 USE_PYTHON=	distutils autoplist

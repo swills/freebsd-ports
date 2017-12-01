@@ -1,5 +1,5 @@
 # Created by: Nobutaka Mantani <nobutaka@FreeBSD.org>
-# $FreeBSD: head/net/dshell/Makefile 440405 2017-05-08 09:51:33Z miwi $
+# $FreeBSD: head/net/dshell/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	dshell
 PORTVERSION=	3.0.20150220
@@ -13,11 +13,11 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 BUILD_DEPENDS=	bash:shells/bash \
-		${PYTHON_PKGNAMEPREFIX}pygeoip>0:net/py-pygeoip \
-		${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto \
-		${PYTHON_PKGNAMEPREFIX}dpkt>0:net/py-dpkt \
-		${PYTHON_PKGNAMEPREFIX}ipy>0:net-mgmt/py-ipy \
-		${PYTHON_PKGNAMEPREFIX}pypcap>0:net/py-pypcap
+		${PYTHON_PKGNAMEPREFIX}pygeoip>0:net/py-pygeoip@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dpkt>0:net/py-dpkt@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ipy>0:net-mgmt/py-ipy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pypcap>0:net/py-pypcap@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_GITHUB=	yes

@@ -1,5 +1,5 @@
 # Created by: Jacob Myers (jacob@whotookspaz.org)
-# $FreeBSD: head/devel/py-akismet/Makefile 375249 2014-12-22 17:12:26Z feld $
+# $FreeBSD: head/devel/py-akismet/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	akismet
 PORTVERSION=	0.2.0
@@ -14,7 +14,7 @@ COMMENT=	Python interface to the Akismet API
 
 LICENSE=	BSD3CLAUSE
 
-USES=		python zip
+USES=		python:2.7 zip
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGNAME=	akismet
 

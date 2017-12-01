@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-verboselogs/Makefile 446717 2017-07-27 07:48:56Z araujo $
+# $FreeBSD: head/devel/py-verboselogs/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	verboselogs
 PORTVERSION=	1.6
@@ -13,7 +13,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 NO_ARCH=	yes
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

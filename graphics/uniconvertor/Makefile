@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/uniconvertor/Makefile 437141 2017-03-28 17:16:00Z amdmi3 $
+# $FreeBSD: head/graphics/uniconvertor/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	uniconvertor
 PORTVERSION=	1.1.5
@@ -15,9 +15,9 @@ LICENSE_COMB=	multi
 LICENSE_FILE_GPLv2+ =	${WRKSRC}/src/GNU_GPL_v2
 LICENSE_FILE_LGPL20+ =	${WRKSRC}/src/GNU_LGPL_v2
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/sk1libs/__init__.py:graphics/sk1libs
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/sk1libs/__init__.py:graphics/sk1libs@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 post-install:

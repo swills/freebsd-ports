@@ -1,5 +1,5 @@
 # Created by: Stefan Walter <sw@gegenunendlich.de>
-# $FreeBSD: head/graphics/curator/Makefile 415354 2016-05-16 18:48:43Z rene $
+# $FreeBSD: head/graphics/curator/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	curator
 PORTVERSION=	2.1
@@ -11,7 +11,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Static Image Gallery Generator for web or CD-ROM galleries
 
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist concurrent optsuffix
 
 PLIST_FILES=	man/man1/curator.1.gz
 

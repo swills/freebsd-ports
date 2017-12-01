@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/py-requests-file/Makefile 451924 2017-10-12 18:34:47Z feld $
+# $FreeBSD: head/www/py-requests-file/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	requests-file
 PORTVERSION=	1.4.2
@@ -11,8 +11,8 @@ COMMENT=	Transport adapter for use with the Requests Python library
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
 
 NO_ARCH=	yes
 

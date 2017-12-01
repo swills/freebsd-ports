@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/pssh/Makefile 425419 2016-11-05 18:01:32Z sunpoet $
+# $FreeBSD: head/security/pssh/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pssh
 PORTVERSION=	2.3.1
@@ -15,6 +15,6 @@ RUN_DEPENDS=	rsync:net/rsync
 
 NO_ARCH=	yes
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils concurrent optsuffix
 
 .include <bsd.port.mk>

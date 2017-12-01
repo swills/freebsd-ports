@@ -1,8 +1,8 @@
 # Created by: Mikolaj Golub <to.my.trociny@gmail.com>
-# $FreeBSD: head/devel/bmake/Makefile 453609 2017-11-06 11:23:06Z trociny $
+# $FreeBSD: head/devel/bmake/Makefile 455200 2017-11-30 13:49:00Z trociny $
 
 PORTNAME=	bmake
-PORTVERSION=	20171028
+PORTVERSION=	20171126
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.netbsd.org/pub/NetBSD/misc/sjg/
 DISTFILES=	bmake-${PORTVERSION}.tar.gz mk-20170505.tar.gz

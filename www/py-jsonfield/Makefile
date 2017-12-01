@@ -1,5 +1,5 @@
 # Created by: René Ladan <rene@FreeBSD.org>
-# $FreeBSD: head/www/py-jsonfield/Makefile 451624 2017-10-09 17:03:00Z rene $
+# $FreeBSD: head/www/py-jsonfield/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	jsonfield
 PORTVERSION=	2.0.2
@@ -13,7 +13,7 @@ COMMENT=	Reusable JSONField model for Django to store validated JSON
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django110>=0:www/py-django110
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django110>=0:www/py-django110@${FLAVOR}
 
 CONFLICTS_INSTALL=py*-django-jsonfield
 

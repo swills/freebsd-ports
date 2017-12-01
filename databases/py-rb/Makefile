@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/databases/py-rb/Makefile 427564 2016-12-02 15:20:46Z tj $
+# $FreeBSD: head/databases/py-rb/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rb
 PORTVERSION=	1.6
@@ -11,7 +11,7 @@ COMMENT=	Rb - the redis blaster
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}redis>=2.6:databases/py-redis
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}redis>=2.6:databases/py-redis@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

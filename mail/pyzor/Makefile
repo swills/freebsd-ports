@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/mail/pyzor/Makefile 415904 2016-05-26 18:06:26Z amdmi3 $
+# $FreeBSD: head/mail/pyzor/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyzor
 PORTVERSION=	1.0.0
@@ -13,7 +13,7 @@ COMMENT=	Collaborative, networked system to detect and block spam
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdbm>=0:databases/py-gdbm
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdbm>=0:databases/py-gdbm@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

@@ -1,5 +1,5 @@
 # Created by: Diego Depaoli <trebestie@gmail.com>
-# $FreeBSD: head/editors/texworks/Makefile 448669 2017-08-24 13:45:13Z swills $
+# $FreeBSD: head/editors/texworks/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	texworks
 PORTVERSION=	0.4.6
@@ -47,7 +47,7 @@ PORTDOCS=	*
 OPTIONS_DEFINE=	DOCS LUA PYTHON
 LUA_USES=	lua:51
 LUA_PLIST_FILES=lib/texworks/libTWLuaPlugin.so
-PYTHON_USES=	python:3
+PYTHON_USES=	python:3.4+
 PYTHON_PLIST_FILES=lib/texworks/libTWPythonPlugin.so
 
 post-extract:

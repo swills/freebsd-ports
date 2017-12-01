@@ -1,9 +1,9 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/net/remmina-plugins/Makefile 447394 2017-08-05 09:07:37Z woodsb02 $
+# $FreeBSD: head/net/remmina-plugins/Makefile 455115 2017-11-29 15:24:33Z woodsb02 $
 
 PORTNAME?=	remmina-plugins
 DISTVERSIONPREFIX=v
-DISTVERSION=	1.2.0-rcgit.19
+DISTVERSION=	1.2.0-rcgit.24
 CATEGORIES=	net gnome
 
 MAINTAINER?=	woodsb02@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: nbm
-# $FreeBSD: head/mail/offlineimap/Makefile 432688 2017-01-28 22:18:11Z misha $
+# $FreeBSD: head/mail/offlineimap/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	offlineimap
 DISTVERSIONPREFIX=	v
@@ -17,8 +17,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 ## later versions have sqlite3 backend, which is recommended for local storages
 ## with large amount of emails
 ## (add additional variable to use in {BUILD|RUN}_DEPENDS per porter's hb 5.8.2)
-OIMAP_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3
+OIMAP_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${FLAVOR}
 BUILD_DEPENDS=	${OIMAP_DEPENDS}
 RUN_DEPENDS=	${OIMAP_DEPENDS}
 

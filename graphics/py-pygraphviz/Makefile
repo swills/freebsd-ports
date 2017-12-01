@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@fallin.lv>
-# $FreeBSD: head/graphics/py-pygraphviz/Makefile 415457 2016-05-18 16:54:52Z woodsb02 $
+# $FreeBSD: head/graphics/py-pygraphviz/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pygraphviz
 PORTVERSION=	1.3.1
@@ -14,9 +14,9 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libcgraph.so:graphics/graphviz
-TEST_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}nose>=0.10.1:devel/py-nose
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0.10.1:devel/py-nose@${FLAVOR}
 
-USES?=		pkgconfig python
+USES=		pkgconfig python
 USE_PYTHON=	autoplist concurrent distutils
 
 PYDISTUTILS_BUILD_TARGET=	build build_ext

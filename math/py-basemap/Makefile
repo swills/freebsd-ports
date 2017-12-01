@@ -1,5 +1,5 @@
 # Created by: mainland@apeiron.net
-# $FreeBSD: head/math/py-basemap/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/py-basemap/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	basemap
 PORTVERSION=	1.0.7
@@ -14,10 +14,10 @@ LICENSE=	GPLv2 LGPL21 MIT
 LICENSE_COMB=	multi
 
 BUILD_DEPENDS=	${PYNUMPY}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}matplotlib>0:math/py-matplotlib
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}matplotlib>0:math/py-matplotlib@${FLAVOR}
 LIB_DEPENDS=	libgeos.so:graphics/geos
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 DATADIR=	${PREFIX}/share/py-${PORTNAME}-data
