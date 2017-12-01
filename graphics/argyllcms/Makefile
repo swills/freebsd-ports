@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/graphics/argyllcms/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/argyllcms/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	argyllcms
 PORTVERSION=	1.9.2
@@ -15,7 +15,7 @@ LICENSE=	AGPLv3
 
 BUILD_DEPENDS=	jam:devel/jam
 LIB_DEPENDS=	libtiff.so:graphics/tiff \
-		libpng16.so:graphics/png
+		libpng.so:graphics/png
 
 WRKSRC=		${WRKDIR}/Argyll_V${PORTVERSION}
 

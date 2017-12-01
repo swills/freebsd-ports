@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-pytest-xdist/Makefile 442851 2017-06-07 15:51:07Z woodsb02 $
+# $FreeBSD: head/devel/py-pytest-xdist/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pytest-xdist
 PORTVERSION=	1.13.1
@@ -13,14 +13,14 @@ COMMENT=	Py.test plugin for distributed testing and loop-on-failing modes
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=0:devel/py-setuptools_scm
-RUN_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}execnet>=1.1:sysutils/py-execnet \
-		${PYTHON_PKGNAMEPREFIX}pytest>=2.4.2:devel/py-pytest \
-		${PYTHON_PKGNAMEPREFIX}py>=1.4.22:devel/py-py
-TEST_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}pytest>=2.5.1:devel/py-pytest \
-		${PYTHON_PKGNAMEPREFIX}pexpect>0:misc/py-pexpect
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=0:devel/py-setuptools_scm@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}execnet>=1.1:sysutils/py-execnet@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest>=2.4.2:devel/py-pytest@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}py>=1.4.22:devel/py-py@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=2.5.1:devel/py-pytest@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pexpect>0:misc/py-pexpect@${FLAVOR}
 
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 NO_ARCH=	yes

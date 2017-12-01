@@ -1,5 +1,5 @@
 # Created by: Vladimir Chukharev
-# $FreeBSD: head/graphics/py-mayavi/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/graphics/py-mayavi/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	mayavi
 PORTVERSION=	4.5.0
@@ -26,10 +26,10 @@ BUILD_DEPENDS=	vtk6>=6.1.0_8:math/vtk6 \
 		py27-sphinx>=1.3.1_2:textproc/py-sphinx
 RUN_DEPENDS=	vtk6>=6.1.0_8:math/vtk6 \
 		${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}envisage>=4.4.0:devel/py-envisage \
-		${PYTHON_PKGNAMEPREFIX}pyface>=4.5.2:devel/py-pyface \
-		${PYTHON_PKGNAMEPREFIX}scimath>=4.1.2:science/py-scimath \
-		${PYTHON_PKGNAMEPREFIX}traitsui>=4.5.1:graphics/py-traitsui
+		${PYTHON_PKGNAMEPREFIX}envisage>=4.4.0:devel/py-envisage@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyface>=4.5.2:devel/py-pyface@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}scimath>=4.1.2:science/py-scimath@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}traitsui>=4.5.1:graphics/py-traitsui@${FLAVOR}
 
 USES=		python:-2.7 shebangfix tar:bzip2
 USE_PYTHON=	autoplist distutils

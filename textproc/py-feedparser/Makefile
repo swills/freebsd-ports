@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/py-feedparser/Makefile 449355 2017-09-06 18:52:44Z sbz $
+# $FreeBSD: head/textproc/py-feedparser/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	feedparser
 PORTVERSION=	5.2.1
@@ -13,7 +13,7 @@ COMMENT=	Universal feed parser written in Python
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES?=		python tar:bzip2
+USES=		python tar:bzip2
 USE_PYTHON=	distutils autoplist
 
 NO_ARCH=	yes

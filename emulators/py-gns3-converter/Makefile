@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/py-gns3-converter/Makefile 405801 2016-01-11 19:19:35Z pi $
+# $FreeBSD: head/emulators/py-gns3-converter/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gns3-converter
 PORTVERSION=	1.2.4
@@ -10,7 +10,7 @@ COMMENT=	Convert old GNS3 (<=0.8.7) topologies to newer versions
 
 LICENSE=	GPLv3
 
-USES=		python:3
-USE_PYTHON=	distutils autoplist
+USES=		python:3.4+
+USE_PYTHON=	distutils autoplist optsuffix
 
 .include <bsd.port.mk>

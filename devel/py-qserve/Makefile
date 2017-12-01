@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/py-qserve/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-qserve/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	qserve
 PORTVERSION=	0.2.8
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Job queue server
 
-USES=		python zip
+USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

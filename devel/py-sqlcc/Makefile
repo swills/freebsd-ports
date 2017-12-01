@@ -1,5 +1,5 @@
 # Created by: Thinker K.F. Li <thinker@branda.to>
-# $FreeBSD: head/devel/py-sqlcc/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-sqlcc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sqlcc
 PORTVERSION=	0.3.2
@@ -12,9 +12,9 @@ COMMENT=	Python SQL Command Composer
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pythk>=0:devel/pythk
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pythk>=0:devel/pythk@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 .include <bsd.port.mk>

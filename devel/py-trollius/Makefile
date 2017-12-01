@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-trollius/Makefile 426059 2016-11-13 16:14:14Z rene $
+# $FreeBSD: head/devel/py-trollius/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	trollius
 PORTVERSION=	2.0
@@ -20,9 +20,9 @@ NO_ARCH=	yes
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3000
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}futures>0:devel/py-futures
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}futures>0:devel/py-futures@${FLAVOR}
 .if ${PYTHON_REL} < 3300
-TEST_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock
+TEST_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR}
 .endif
 .endif
 

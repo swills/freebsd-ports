@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-zope.applicationcontrol/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-zope.applicationcontrol/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	zope.applicationcontrol
 PORTVERSION=	3.5.5
@@ -13,13 +13,13 @@ COMMENT=	Zope applicationcontrol
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface \
-		${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component \
-		${PYTHON_PKGNAMEPREFIX}zope.location>=0:devel/py-zope.location \
-		${PYTHON_PKGNAMEPREFIX}zope.security>=0:security/py-zope.security \
-		${PYTHON_PKGNAMEPREFIX}zope.traversing>=3.7.0:devel/py-zope.traversing
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.location>=0:devel/py-zope.location@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.security>=0:security/py-zope.security@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.traversing>=3.7.0:devel/py-zope.traversing@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

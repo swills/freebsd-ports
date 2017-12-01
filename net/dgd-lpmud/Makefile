@@ -1,5 +1,5 @@
 # Created by: adam
-# $FreeBSD: head/net/dgd-lpmud/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/net/dgd-lpmud/Makefile 455274 2017-12-01 11:34:09Z amdmi3 $
 
 PORTNAME=	dgd-lpmud
 PORTVERSION=	2.4.5
@@ -12,10 +12,13 @@ DISTNAME=	2.4.5-for-1.4
 MAINTAINER=	glewis@FreeBSD.org
 COMMENT=	LPmud mudlib, for use with DGD
 
+LICENSE=	LPMUD
+LICENSE_NAME=	LPmud license
+LICENSE_FILE=	${WRKSRC}/${PORTVERSION}/Copyright
+LICENSE_PERMS=	dist-mirror no-dist-sell pkg-mirror no-pkg-sell auto-accept
+
 RUN_DEPENDS=	${LOCALBASE}/sbin/dgd:net/dgd
 
-NO_PACKAGE=	May not be used for monetary gain
-NO_CDROM=	${NO_PACKAGE}
 USES=		tar:tgz
 
 DIST_SUBDIR=	dgd

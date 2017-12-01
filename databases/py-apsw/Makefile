@@ -1,5 +1,5 @@
 # Created by: Rusty Nejdl
-# $FreeBSD: head/databases/py-apsw/Makefile 454135 2017-11-13 19:35:45Z sunpoet $
+# $FreeBSD: head/databases/py-apsw/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	apsw
 PORTVERSION=	3.21.0
@@ -14,7 +14,7 @@ LICENSE=	ZLIB
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_PYTHON=	autoplist concurrent distutils
-USES?=		localbase python sqlite:3
+USES=		localbase python sqlite:3
 
 GH_ACCOUNT=	rogerbinns
 USE_GITHUB=	yes

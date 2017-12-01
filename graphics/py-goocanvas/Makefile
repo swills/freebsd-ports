@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/graphics/py-goocanvas/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/py-goocanvas/Makefile 455210 2017-11-30 15:50:30Z mat $
 #    $MCom: ports/graphics/py-goocanvas/Makefile,v 1.6 2008/09/22 09:14:41 kwm Exp $
 
 PORTNAME=	goocanvas
@@ -18,9 +18,10 @@ LIB_DEPENDS=	libgoocanvas.so:graphics/goocanvas
 PLIST_FILES=	%%PYTHON_SITELIBDIR%%/goocanvasmodule.so \
 		libdata/pkgconfig/pygoocanvas.pc
 USE_GNOME=	pygtk2
+USE_PYTHON=	flavors
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-docs
-USES=		gmake libtool pathfix pkgconfig python tar:bzip2
+USES=		gmake libtool pathfix pkgconfig python:2.7 tar:bzip2
 INSTALL_TARGET=	install-strip
 
 post-patch:

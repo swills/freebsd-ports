@@ -1,5 +1,5 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-extensions/Makefile 415798 2016-05-24 16:09:18Z amdmi3 $
+# $FreeBSD: head/www/py-django-extensions/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-extensions
 PORTVERSION=	1.6.7
@@ -13,8 +13,8 @@ COMMENT=	Global custom management extensions for the Django Framework
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18 \
-		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2

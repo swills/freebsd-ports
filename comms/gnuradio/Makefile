@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/gnuradio/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/comms/gnuradio/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gnuradio
 PORTVERSION=	3.7.10.1
@@ -14,14 +14,14 @@ LICENSE=	GPLv3
 
 BUILD_DEPENDS=	sdl-config:devel/sdl12 \
 		swig2.0:devel/swig20 \
-		cheetah:devel/py-cheetah \
-		${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml \
+		cheetah:devel/py-cheetah@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${PY_FLAVOR} \
 		xdg-open:devel/xdg-utils \
 		guile:lang/guile \
 		aconnect:audio/alsa-utils \
 		git:devel/git \
 		${PYNUMPY} \
-		${PYTHON_SITELIBDIR}/ephem/__init__.py:astro/pyephem
+		${PYTHON_SITELIBDIR}/ephem/__init__.py:astro/pyephem@${PY_FLAVOR}
 LIB_DEPENDS=	libcppunit.so:devel/cppunit \
 		libcodec2.so:audio/codec2 \
 		libfftw3.so:math/fftw3 \
@@ -80,7 +80,7 @@ TESTING_DESC=	Include testing support
 PLIST_SUB+=	PORTVERSION=${PORTVERSION}
 
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen \
-			sphinx-apidoc:textproc/py-sphinx \
+			sphinx-apidoc:textproc/py-sphinx@${PY_FLAVOR} \
 			dot:graphics/graphviz \
 			xmlto:textproc/xmlto \
 			freefont-ttf>0:x11-fonts/freefont-ttf

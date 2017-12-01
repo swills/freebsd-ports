@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
-# $FreeBSD: head/mail/py-libgmail/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/py-libgmail/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	libgmail
 DISTVERSION=	0.1.11
@@ -13,7 +13,7 @@ COMMENT=	Library to provide access to Gmail via Python
 BUILD_DEPENDS=	py*-mechanize>=0:www/py-mechanize
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/multimedia/py-librtmp/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/py-librtmp/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	librtmp
 PORTVERSION=	0.3.0
@@ -14,8 +14,8 @@ COMMENT=	Python bindings for librtmp, built with cffi
 LICENSE=	BSD2CLAUSE
 
 LIB_DEPENDS=	librtmp.so:multimedia/librtmp
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=0:devel/py-cffi
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=0:devel/py-cffi
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=0:devel/py-cffi@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=0:devel/py-cffi@${FLAVOR}
 
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
@@ -26,7 +26,7 @@ USE_PYTHON=	autoplist distutils
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3400
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}singledispatch>=0:devel/py-singledispatch
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}singledispatch>=0:devel/py-singledispatch@${FLAVOR}
 .endif
 
 .include <bsd.port.post.mk>

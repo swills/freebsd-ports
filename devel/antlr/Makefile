@@ -1,5 +1,5 @@
 # Created by: Geoffrey Mainland <mainland@apeiron.net>
-# $FreeBSD: head/devel/antlr/Makefile 425127 2016-11-02 09:05:57Z makc $
+# $FreeBSD: head/devel/antlr/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	antlr
 PORTVERSION=	2.7.7
@@ -34,7 +34,7 @@ PORTDOCS=	ANTLRException.gif closure.gif cpp-runtime.html \
 OPTIONS_DEFINE=	PYTHON DOCS
 OPTIONS_SUB=	yes
 
-PYTHON_USES=		python
+PYTHON_USES=		python:2.7
 PYTHON_PORTDOCS=	python-runtime.html
 
 post-extract:

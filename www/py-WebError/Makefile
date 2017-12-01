@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/py-WebError/Makefile 425174 2016-11-02 22:45:14Z mat $
+# $FreeBSD: head/www/py-WebError/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	WebError
 PORTVERSION=	0.13.1
@@ -12,10 +12,10 @@ COMMENT=	Web Error handling and exception catching
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Paste>=1.7:www/py-paste \
-		${PYTHON_PKGNAMEPREFIX}pygments>=1.0:textproc/py-pygments \
-		${PYTHON_PKGNAMEPREFIX}Tempita>=0.3:textproc/py-Tempita \
-		${PYTHON_PKGNAMEPREFIX}webob>=0.9.6.1:www/py-webob
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Paste>=1.7:www/py-paste@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pygments>=1.0:textproc/py-pygments@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Tempita>=0.3:textproc/py-Tempita@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}webob>=0.9.6.1:www/py-webob@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@lwhsu.org>
-# $FreeBSD: head/www/trac-privatetickets/Makefile 451328 2017-10-05 18:05:36Z joneum $
+# $FreeBSD: head/www/trac-privatetickets/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	privatetickets
 PORTVERSION=	2.2.0
@@ -15,7 +15,7 @@ LICENSE=	BSD2CLAUSE
 
 RUN_DEPENDS=	tracd:www/trac
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

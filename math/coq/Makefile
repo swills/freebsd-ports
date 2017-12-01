@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/coq/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/math/coq/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	coq
 PORTVERSION=	8.6
@@ -20,6 +20,7 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2
 
 BROKEN_armv6=		fails to compile: Fatal error: exception Invalid_argument("index out of bounds")
+BROKEN_armv7=		fails to compile: Fatal error: exception Invalid_argument("index out of bounds")
 BROKEN_powerpc=		fails to link
 
 USES=		gmake gettext-runtime

@@ -1,5 +1,5 @@
 # Created by: Junji NAKANISHI <jun-g@daemonfreaks.com>
-# $FreeBSD: head/textproc/py-hyperestraier-python/Makefile 374183 2014-12-07 10:01:36Z mva $
+# $FreeBSD: head/textproc/py-hyperestraier-python/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	hyperestraier
 PORTVERSION=	0.10.10
@@ -13,7 +13,7 @@ MAINTAINER=	jun-g@daemonfreaks.com
 COMMENT=	Pure Python HyperEstraier library
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 PORTEXAMPLES=	example.py asyn_example.py

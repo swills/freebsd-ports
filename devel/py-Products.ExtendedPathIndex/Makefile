@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-Products.ExtendedPathIndex/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-Products.ExtendedPathIndex/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	Products.ExtendedPathIndex
 PORTVERSION=	3.1
@@ -13,11 +13,11 @@ COMMENT=	Zope catalog index for paths
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}AccessControl>0:security/py-AccessControl \
-		${PYTHON_PKGNAMEPREFIX}transaction>0:devel/py-transaction \
-		zodb${PYTHON_PKGNAMESUFFIX}>0:databases/zodb3
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}AccessControl>0:security/py-AccessControl@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}transaction>0:devel/py-transaction@${FLAVOR} \
+		zodb${PYTHON_PKGNAMESUFFIX}>0:databases/zodb3@${FLAVOR}
 
-USES=		python zope zip
+USES=		python:2.7 zope zip
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

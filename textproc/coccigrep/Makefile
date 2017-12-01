@@ -1,5 +1,5 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/textproc/coccigrep/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/coccigrep/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	coccigrep
 PORTVERSION=	1.16
@@ -17,7 +17,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	regit
 
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist concurrent optsuffix
 
 PLIST_FILES=	man/man1/coccigrep.1.gz \
 		${DATADIR_REL}/cocci-grep.el \

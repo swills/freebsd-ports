@@ -1,5 +1,5 @@
 # Created by: Peter Haight <peterh@sapros.com>
-# $FreeBSD: head/security/py-m2crypto/Makefile 452122 2017-10-15 00:38:44Z sunpoet $
+# $FreeBSD: head/security/py-m2crypto/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	m2crypto
 PORTVERSION=	0.27.0
@@ -29,7 +29,7 @@ post-install:
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3500
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}typing>=0:devel/py-typing
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}typing>=0:devel/py-typing@${FLAVOR}
 .endif
 
 .include <bsd.port.post.mk>

@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/net/l2tpd/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net/l2tpd/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	l2tpd
 PORTVERSION=	0.69
@@ -11,6 +11,7 @@ MAINTAINER=	sobomax@FreeBSD.org
 COMMENT=	Implementation of the layer two tunneling protocol
 
 BROKEN_armv6=	fails to link: undefined reference to check_control
+BROKEN_armv7=	fails to link: undefined reference to check_control
 
 USES=		compiler:nestedfct
 

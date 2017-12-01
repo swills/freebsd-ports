@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-fsm/Makefile 435380 2017-03-04 00:22:07Z skreuzer $
+# $FreeBSD: head/devel/py-fsm/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	fsm
 PORTVERSION=	0.01
@@ -15,9 +15,9 @@ GH_ACCOUNT=	oozie
 GH_PROJECT=	python-fsm
 GH_TAGNAME=	bf888123
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pygraphviz>=1.0:graphics/py-pygraphviz
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pygraphviz>=1.0:graphics/py-pygraphviz@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

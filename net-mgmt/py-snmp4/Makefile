@@ -1,5 +1,5 @@
 # Created by: Martin Jackson <mhjacks@swbell.net>
-# $FreeBSD: head/net-mgmt/py-snmp4/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/py-snmp4/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	snmp4
 PORTVERSION=	4.2.5
@@ -15,8 +15,8 @@ COMMENT=	SNMP framework for Python
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1>=0.1.2:devel/py-pyasn1 \
-		${PYTHON_PKGNAMEPREFIX}pycrypto>=2.4.1:security/py-pycrypto
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1>=0.1.2:devel/py-pyasn1@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pycrypto>=2.4.1:security/py-pycrypto@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

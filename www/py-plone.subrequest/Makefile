@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.subrequest/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-plone.subrequest/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	plone.subrequest
 PORTVERSION=	1.6.11
@@ -12,11 +12,11 @@ COMMENT=	Subrequests for Zope2
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}five.globalrequest>=0:devel/py-five.globalrequest \
-		${PYTHON_PKGNAMEPREFIX}zope.globalrequest>=0:devel/py-zope.globalrequest
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}five.globalrequest>=0:devel/py-five.globalrequest@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.globalrequest>=0:devel/py-zope.globalrequest@${FLAVOR}
 
 NO_ARCH=	yes
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

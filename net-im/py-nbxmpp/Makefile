@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/py-nbxmpp/Makefile 442792 2017-06-06 20:48:08Z rm $
+# $FreeBSD: head/net-im/py-nbxmpp/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	nbxmpp
 PORTVERSION=	0.5.6
@@ -12,7 +12,7 @@ COMMENT=	Non blocking Jabber/XMPP module
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>0:security/py-openssl
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>0:security/py-openssl@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7+

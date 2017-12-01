@@ -1,5 +1,5 @@
 # Created by: Hizbulin Ildar <hizel@vyborg.ru>
-# $FreeBSD: head/sysutils/py-supervisor/Makefile 449941 2017-09-16 03:59:25Z koobs $
+# $FreeBSD: head/sysutils/py-supervisor/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	supervisor
 PORTVERSION=	3.3.3
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	hizel@vyborg.ru
 COMMENT=	System for controlling process state under UNIX
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}meld3>=0.6.5:www/py-meld3
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=0.5.0:devel/py-mock
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}meld3>=0.6.5:www/py-meld3@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=0.5.0:devel/py-mock@${FLAVOR}
 
 PORTDOCS=	*.txt *.rst
 

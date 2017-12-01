@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 454923 2017-11-26 21:18:04Z ashish $
+# $FreeBSD: head/lang/Makefile 455210 2017-11-30 15:50:30Z mat $
 #
 
     COMMENT = Programming languages
@@ -47,7 +47,6 @@
     SUBDIR += cparser
     SUBDIR += csharp-mode.el
     SUBDIR += cython
-    SUBDIR += cython3
     SUBDIR += diveintopython
     SUBDIR += dlang-tools
     SUBDIR += dlv

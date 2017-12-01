@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/py-mysqlclient/Makefile 453402 2017-11-03 13:01:57Z dvl $
+# $FreeBSD: head/databases/py-mysqlclient/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	mysqlclient
 DISTVERSION=	1.3.12
@@ -11,7 +11,7 @@ COMMENT=	MySQL database connector for Python
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES?=		iconv mysql python ssl
+USES=		iconv mysql python ssl
 USE_PYTHON=	distutils autoplist
 USE_GITHUB=	yes
 GH_ACCOUNT=	pymysql

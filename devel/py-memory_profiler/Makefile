@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/devel/py-memory_profiler/Makefile 442507 2017-06-03 16:09:03Z tcberner $
+# $FreeBSD: head/devel/py-memory_profiler/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	memory_profiler
 PORTVERSION=	0.47
@@ -16,7 +16,7 @@ OPTIONS_DEFINE=	PSUTIL
 OPTIONS_DEFAULT=	PSUTIL
 
 PSUTIL_DESC=	Use psutil for better performance
-PSUTIL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psutil>1.0.0:sysutils/py-psutil
+PSUTIL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psutil>1.0.0:sysutils/py-psutil@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

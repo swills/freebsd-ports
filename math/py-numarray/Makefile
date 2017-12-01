@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/math/py-numarray/Makefile 438772 2017-04-18 10:26:10Z amdmi3 $
+# $FreeBSD: head/math/py-numarray/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	numarray
 PORTVERSION=	1.5.2
@@ -13,7 +13,7 @@ COMMENT=	Numeric array manipulation extension module for Python
 
 LICENSE=	BSD3CLAUSE
 
-USES=		python shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	Examples/convolve/benchmark.py
 USE_PYTHON=	distutils autoplist
 

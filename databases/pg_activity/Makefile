@@ -1,5 +1,5 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/databases/pg_activity/Makefile 436632 2017-03-21 19:59:39Z jgh $
+# $FreeBSD: head/databases/pg_activity/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pg_activity
 PORTVERSION=	1.3.1
@@ -11,8 +11,8 @@ COMMENT=	Htop like application for PostgreSQL server activity monitoring
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>=0:databases/py-psycopg2 \
-		${PYTHON_PKGNAMEPREFIX}psutil>=0:sysutils/py-psutil
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>=0:databases/py-psycopg2@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}psutil>=0:sysutils/py-psutil@${FLAVOR}
 
 OPTIONS_DEFINE=	DOCS
 
@@ -20,7 +20,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	julmon
 
 USES=		python:2.6+
-USE_PYTHON=	autoplist distutils noegginfo
+USE_PYTHON=	autoplist distutils noegginfo concurrent optsuffix
 PYDISTUTILS_INSTALLARGS=	--with-man
 
 post-patch:

@@ -1,5 +1,5 @@
 # Created by: Shaun Amott <shaun@FreeBSD.org>
-# $FreeBSD: head/devel/py-jsbeautifier/Makefile 438328 2017-04-12 02:32:08Z shaun $
+# $FreeBSD: head/devel/py-jsbeautifier/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	jsbeautifier
 PORTVERSION=	1.6.12
@@ -12,8 +12,8 @@ COMMENT=	JavaScript unobfuscator and beautifier
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.6.1:devel/py-six \
-		${PYTHON_PKGNAMEPREFIX}editorconfig>=0.12.0:editors/py-editorconfig
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.6.1:devel/py-six@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}editorconfig>=0.12.0:editors/py-editorconfig@${FLAVOR}
 
 USES?=		python
 USE_PYTHON=	distutils autoplist

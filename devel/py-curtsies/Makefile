@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-curtsies/Makefile 426443 2016-11-19 17:06:30Z sunpoet $
+# $FreeBSD: head/devel/py-curtsies/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	curtsies
 PORTVERSION=	0.2.11
@@ -13,8 +13,8 @@ COMMENT=	Curses-like terminal wrapper, with colored strings
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}blessings>=1.5:devel/py-blessings \
-		${PYTHON_PKGNAMEPREFIX}wcwidth>=0.1.4:devel/py-wcwidth
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}blessings>=1.5:devel/py-blessings@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}wcwidth>=0.1.4:devel/py-wcwidth@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

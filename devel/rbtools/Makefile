@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rbtools/Makefile 441612 2017-05-24 19:53:07Z rakuco $
+# $FreeBSD: head/devel/rbtools/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	${ORIGNAME:tl}
 DISTVERSION=	0.7.10
@@ -11,14 +11,14 @@ COMMENT=	Set of client tools to use with Review Board
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.8.0:devel/py-six \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3 \
-		${PYTHON_PKGNAMEPREFIX}tqdm>0:misc/py-tqdm
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.8.0:devel/py-six@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tqdm>0:misc/py-tqdm@${FLAVOR}
 
 ORIGNAME=	RBTools
 
 NO_ARCH=	yes
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

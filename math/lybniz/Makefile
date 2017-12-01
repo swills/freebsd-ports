@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/math/lybniz/Makefile 375144 2014-12-21 00:32:19Z bapt $
+# $FreeBSD: head/math/lybniz/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	lybniz
 PORTVERSION=	1.3.2
@@ -12,7 +12,7 @@ COMMENT=	Mathematical function graph plotter
 
 LICENSE=	BSD3CLAUSE
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 USE_GNOME=	pygtk2
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/apitrace/Makefile 454408 2017-11-18 05:38:04Z yuri $
+# $FreeBSD: head/devel/apitrace/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	apitrace
 DISTVERSION=	7.1-455
@@ -11,7 +11,7 @@ COMMENT=	Tools for tracing OpenGL and other graphics APIs
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	libpng16.so:graphics/png
+LIB_DEPENDS=	libpng.so:graphics/png
 
 USES=		cmake:outsource compiler:c++11-lang pkgconfig python:2.7 shebangfix
 USE_GITHUB=	yes

@@ -1,5 +1,5 @@
 # Created by: lbartoletti <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/graphics/py-graphviz/Makefile 452355 2017-10-18 16:53:42Z swills $
+# $FreeBSD: head/graphics/py-graphviz/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	graphviz
 PORTVERSION=	0.8.1
@@ -14,8 +14,8 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	dot:graphics/graphviz
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-cov>=0:devel/py-pytest-cov \
-		${PYTHON_PKGNAMEPREFIX}pytest-mock>=0:devel/py-pytest-mock
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-cov>=0:devel/py-pytest-cov@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest-mock>=0:devel/py-pytest-mock@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python zip

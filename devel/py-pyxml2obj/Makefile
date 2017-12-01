@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pyxml2obj/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-pyxml2obj/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyxml2obj
 PORTVERSION=	0.1.2.9
@@ -12,7 +12,7 @@ COMMENT=	Simple way to convert xml to python object and vice versa
 
 LICENSE=	MIT
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

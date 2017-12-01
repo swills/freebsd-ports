@@ -1,5 +1,5 @@
 # Created by: Dan Langille <dvl@FreeBSD.org>
-# $FreeBSD: head/dns/py-tldextract/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/dns/py-tldextract/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tldextract
 PORTVERSION=	1.7.5
@@ -12,7 +12,7 @@ COMMENT=	Separate the TLD from the registered domain and subdomains of a URL
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}idna>=2.0:dns/py-idna
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}idna>=2.0:dns/py-idna@${FLAVOR}
 
 USES=	python
 USE_PYTHON=	autoplist distutils

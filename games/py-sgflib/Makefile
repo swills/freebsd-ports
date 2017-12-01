@@ -1,5 +1,5 @@
 # Created by: Leland Wang <llwang@infor.org>
-# $FreeBSD: head/games/py-sgflib/Makefile 438924 2017-04-20 04:13:39Z miwi $
+# $FreeBSD: head/games/py-sgflib/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sgflib
 PORTVERSION=	1.0
@@ -17,6 +17,7 @@ LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/lgpl.txt
 
 USES=		python shebangfix
+USE_PYTHON=	flavors
 NO_BUILD=	yes
 NO_ARCH=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}${PORTVERSION}

@@ -1,5 +1,5 @@
 # Created by: Timothy Beyer <beyert@cs.ucr.edu>
-# $FreeBSD: head/japanese/py-tegaki-gtk/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/py-tegaki-gtk/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tegaki
 PORTVERSION=	0.3.1
@@ -15,9 +15,9 @@ COMMENT=	Tegaki PyGTK interface
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libzinnia.so:japanese/zinnia
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/tegaki/engine.py:japanese/py-tegaki
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/tegaki/engine.py:japanese/py-tegaki@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGNAME=	${PORTNAME}_pygtk
 

@@ -1,5 +1,5 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/mail/isbg/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/isbg/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	isbg
 PORTVERSION=	1.00
@@ -12,13 +12,13 @@ COMMENT=	Scan an IMAP inbox for spam using SpamAssassin
 LICENSE=	BSD2CLAUSE
 
 RUN_DEPENDS=	spamassassin:mail/spamassassin \
-		${PYTHON_PKGNAMEPREFIX}docopt>=0.6.1:devel/py-docopt
+		${PYTHON_PKGNAMEPREFIX}docopt>=0.6.1:devel/py-docopt@${FLAVOR}
 
 USE_GITHUB=	yes
 
 NO_ARCH=	yes
 NO_BUILD=	yes
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist concurrent optsuffix
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: mwm@mired.org
-# $FreeBSD: head/devel/pymacs/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/devel/pymacs/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	Pymacs
 PORTVERSION=	0.25
@@ -15,7 +15,7 @@ LICENSE=	GPLv2
 USE_GITHUB=	yes
 GH_ACCOUNT=	pinard
 
-USES=		python
+USES=		python:2.7
 USE_EMACS=	yes
 USE_PYTHON=	distutils
 

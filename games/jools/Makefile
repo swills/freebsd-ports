@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/games/jools/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/games/jools/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	jools
 PORTVERSION=	0.20
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${PYGAME}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 PORTDOCS=	POINTS manual.html manual.pdf manual.tex

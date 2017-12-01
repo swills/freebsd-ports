@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/biology/py-bx-python/Makefile 440232 2017-05-06 06:07:03Z miwi $
+# $FreeBSD: head/biology/py-bx-python/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	bx-python
 PORTVERSION=	0.7.4
@@ -14,7 +14,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}python-lzo>0:archivers/py-python-lzo
+		${PYTHON_PKGNAMEPREFIX}python-lzo>0:archivers/py-python-lzo@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_GITHUB=	yes

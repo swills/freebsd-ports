@@ -1,5 +1,5 @@
 # Created by: David Bremner <bremner@unb.ca>
-# $FreeBSD: head/graphics/ipe/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/ipe/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	ipe
 PORTVERSION=	7.2.7
@@ -14,7 +14,7 @@ COMMENT=	Extensible vector graphics editor with LaTeX support
 LICENSE=	GPLv3+
 
 RUN_DEPENDS=	xdg-open:devel/xdg-utils
-LIB_DEPENDS=	libpng16.so:graphics/png \
+LIB_DEPENDS=	libpng.so:graphics/png \
 		libfreetype.so:print/freetype2
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/src

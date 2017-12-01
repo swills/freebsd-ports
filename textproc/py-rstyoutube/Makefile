@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau <duchateau.olivier@gmail.com>
-# $FreeBSD: head/textproc/py-rstyoutube/Makefile 436503 2017-03-19 16:11:40Z rm $
+# $FreeBSD: head/textproc/py-rstyoutube/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rstyoutube
 PORTVERSION=	0.1.1
@@ -12,7 +12,7 @@ COMMENT=	Embed YouTube videos in reStructuredText documents
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docutils>=0.11:textproc/py-docutils
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docutils>=0.11:textproc/py-docutils@${FLAVOR}
 
 USES=	python:2
 USE_PYTHON=	distutils autoplist

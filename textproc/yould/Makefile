@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/textproc/yould/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/textproc/yould/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	yould
 PORTVERSION=	0.3.7
@@ -13,7 +13,7 @@ COMMENT=	Pronounceable word generator
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

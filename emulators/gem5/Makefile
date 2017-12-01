@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/emulators/gem5/Makefile 440858 2017-05-13 23:21:37Z linimon $
+# $FreeBSD: head/emulators/gem5/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	gem5
 PORTVERSION=	0.0.${DATE}
@@ -12,6 +12,7 @@ BUILD_DEPENDS=	swig2.0:devel/swig20 \
 		scons:devel/scons
 
 BROKEN_armv6=		fails to link: undefined reference to HDLcd::BUS_OPTIONS_RESETV
+BROKEN_armv7=		fails to link: undefined reference to HDLcd::BUS_OPTIONS_RESETV
 BROKEN_i386=		does not build
 BROKEN_mips64=		fails to build: claims that gcc version 4.6 or newer required
 BROKEN_powerpc64=	fails to build: claims that gcc version 4.6 or newer required

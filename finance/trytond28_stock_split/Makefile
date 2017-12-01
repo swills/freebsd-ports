@@ -1,5 +1,5 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/finance/trytond28_stock_split/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/trytond28_stock_split/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	trytond28_stock_split
 PORTVERSION=	2.8.2
@@ -17,7 +17,7 @@ RUN_DEPENDS=	trytond28_stock>=2.8.2:finance/trytond28_stock
 
 CONFLICTS=	trytond_stock_split-2.[46].*
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

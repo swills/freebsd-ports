@@ -1,5 +1,5 @@
 # Created by: Jona Joachim <jaj@hcl-club.lu>
-# $FreeBSD: head/audio/soundconverter/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/soundconverter/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	soundconverter
 PORTVERSION=	2.1.6
@@ -13,7 +13,7 @@ COMMENT=	Sound conversion application for the GNOME environment
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gstreamer>=0.10:multimedia/py-gstreamer
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gstreamer>=0.10:multimedia/py-gstreamer@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		desktop-file-utils gmake python:2 shebangfix tar:xz

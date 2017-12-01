@@ -1,5 +1,5 @@
 # Created by: Max Khon <fjoe@FreeBSD.org>
-# $FreeBSD: head/devel/dmucs/Makefile 441847 2017-05-27 15:07:11Z linimon $
+# $FreeBSD: head/devel/dmucs/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	dmucs
 PORTVERSION=	0.6.1
@@ -11,6 +11,7 @@ MAINTAINER=	fjoe@FreeBSD.org
 COMMENT=	Distributed Multi-User Compilation System (for use with distcc)
 
 BROKEN_armv6=		fails to compile: passing char * to parameter of incompatible type __builtin_va_list
+BROKEN_armv7=		fails to compile: passing char * to parameter of incompatible type __builtin_va_list
 BROKEN_aarch64=		fails to compile: passing char * to parameter of incompatible type __builtin_va_list
 
 WRKSRC=		${WRKDIR}/${PORTNAME}

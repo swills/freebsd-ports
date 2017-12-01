@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/funnyboat/Makefile 438477 2017-04-13 19:48:09Z amdmi3 $
+# $FreeBSD: head/games/funnyboat/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	funnyboat
 PORTVERSION=	1.5
@@ -20,7 +20,7 @@ RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pygame/__init__.py:devel/py-game
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-USES=		python:run zip
+USES=		python:2.7,run zip
 NO_BUILD=	yes
 NO_ARCH=	yes
 

@@ -1,5 +1,5 @@
 # Created by: David Phillips <david@acz.org>
-# $FreeBSD: head/databases/pydbx/Makefile 371173 2014-10-19 08:50:17Z mva $
+# $FreeBSD: head/databases/pydbx/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pydbx
 PORTVERSION=	0.14
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	david@acz.org
 COMMENT=	Simple SQL database abstraction layer for Python
 
-USES=		python
-USE_PYTHON=	distutils
+USES=		python:2.7
+USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

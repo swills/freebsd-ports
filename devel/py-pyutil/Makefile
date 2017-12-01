@@ -1,5 +1,5 @@
 # Created by: Chao Shin <quakelee@cn.FreeBSD.org>
-# $FreeBSD: head/devel/py-pyutil/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-pyutil/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyutil
 PORTVERSION=	2.0.0
@@ -12,7 +12,7 @@ COMMENT=	Collection of mature utilities for Python programmers
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}simplejson>=2.1.1:devel/py-simplejson \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}simplejson>=2.1.1:devel/py-simplejson@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}zbase32>=1.1.0:converters/zbase32
 
 USES=		python:2

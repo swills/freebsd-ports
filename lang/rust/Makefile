@@ -1,9 +1,9 @@
 # Created by: Jyun-Yan You <jyyou@cs.nctu.edu.tw>
-# $FreeBSD: head/lang/rust/Makefile 454995 2017-11-27 22:02:29Z jbeich $
+# $FreeBSD: head/lang/rust/Makefile 455198 2017-11-30 13:33:05Z dumbbell $
 
 PORTNAME=	rust
 PORTVERSION?=	1.22.1
-PORTREVISION?=	1
+PORTREVISION?=	2
 CATEGORIES=	lang
 MASTER_SITES=	http://static.rust-lang.org/dist/:src \
 		LOCAL/dumbbell/rust:rust_bootstrap \

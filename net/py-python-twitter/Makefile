@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/net/py-python-twitter/Makefile 441402 2017-05-21 14:56:59Z sunpoet $
+# $FreeBSD: head/net/py-python-twitter/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	python-twitter
 PORTVERSION=	3.3
@@ -13,8 +13,8 @@ COMMENT=	Python wrapper around the Twitter API
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests \
-		${PYTHON_PKGNAMEPREFIX}requests-oauthlib>=0:www/py-requests-oauthlib
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests-oauthlib>=0:www/py-requests-oauthlib@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/ports-mgmt/py-pytoport/Makefile 442592 2017-06-04 21:49:48Z bdrewery $
+# $FreeBSD: head/ports-mgmt/py-pytoport/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pytoport
 PORTVERSION=	0.4.1
@@ -16,18 +16,11 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 GH_ACCOUNT=	freebsd
 GH_PROJECT=	pytoport
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}spdx-lookup>=0.3.0:misc/py-spdx-lookup \
-		${PYTHON_PKGNAMEPREFIX}docutils>=0.12:textproc/py-docutils
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}spdx-lookup>=0.3.0:misc/py-spdx-lookup@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}docutils>=0.12:textproc/py-docutils@${FLAVOR}
 
 USES=		python:3.3+
 USE_GITHUB=	yes
 USE_PYTHON=	autoplist distutils
 
-.include <bsd.port.pre.mk>
-
-.if defined(PACKAGE_BUILDING) && !defined(PACKAGE_BUILDING_FLAVORS) && \
-    ${PYTHON_VER} != ${PYTHON_DEFAULT}
-IGNORE=	you have python ${PYTHON_DEFAULT} set as the default, and this needs ${PYTHON_VER}
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

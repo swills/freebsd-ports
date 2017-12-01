@@ -1,5 +1,5 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/devel/py-qt4-qscintilla2/Makefile 415984 2016-05-28 12:32:21Z pi $
+# $FreeBSD: head/devel/py-qt4-qscintilla2/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	qscintilla2
 PORTVERSION=	${QSCI2_VERSION}
@@ -22,6 +22,7 @@ QT_NONSTANDARD=	yes  # Do not add unknown arguments to CONFIGURE_ARGS.
 
 USES=		python pyqt:4
 USE_PYQT=	sip core gui
+USE_PYTHON=	flavors
 USE_QT4=	corelib gui moc_build qmake_build
 
 OPTIONS_DEFINE=		DEBUG
@@ -29,7 +30,8 @@ DEBUG_CONFIGURE_ON=	--debug --trace
 
 QSCIDIR=	${PREFIX}/share/qt4/qsci
 CONFIGURE_ARGS=	--pyqt PyQt4 -d ${PYTHONPREFIX_SITELIBDIR}/PyQt4 -v ${SIPDIR} \
-		--apidir ${QSCIDIR} --qmake ${QMAKE} --pyqt-sipdir ${SIPDIR}
+		--apidir ${QSCIDIR} --qmake ${QMAKE} --pyqt-sipdir ${SIPDIR} \
+		--sip ${LOCALBASE}/bin/sip-${PYTHON_VER}
 WRKSRC=		${WRKDIR}/${DISTNAME}/Python
 ALL_TARGET=	#empty
 

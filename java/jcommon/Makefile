@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/java/jcommon/Makefile 441814 2017-05-26 20:02:44Z linimon $
+# $FreeBSD: head/java/jcommon/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	jcommon
 PORTVERSION=	1.0.23
@@ -12,6 +12,7 @@ COMMENT=	Collection of useful classes used by JFreeChart and JFreeReport
 LICENSE=	LGPL21
 
 BROKEN_armv6=		fails to package: find: *: No such file or directory
+BROKEN_armv7=		fails to package: find: *: No such file or directory
 
 USES=		zip
 USE_JAVA=	yes

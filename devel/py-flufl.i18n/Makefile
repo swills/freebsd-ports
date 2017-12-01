@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-flufl.i18n/Makefile 448946 2017-08-30 00:11:10Z acm $
+# $FreeBSD: head/devel/py-flufl.i18n/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	flufl.i18n
 PORTVERSION=	2.0
@@ -11,9 +11,9 @@ COMMENT=	A high level API for Python internationalization
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}atpublic>=0:devel/py-atpublic
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}atpublic>=0:devel/py-atpublic@${FLAVOR}
 
-USES=		python:3
+USES=		python:3.5+
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

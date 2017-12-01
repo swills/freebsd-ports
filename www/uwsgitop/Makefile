@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/www/uwsgitop/Makefile 429968 2016-12-30 11:56:23Z demon $
+# $FreeBSD: head/www/uwsgitop/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	uwsgitop
 PORTVERSION=	0.10
@@ -10,7 +10,7 @@ MAINTAINER=	demon@FreeBSD.org
 COMMENT=	uWSGI top-like app
 
 USES=		python
-USE_PYTHON=	distutils
+USE_PYTHON=	distutils concurrent optsuffix
 
 PLIST_FILES=	bin/uwsgitop %%DOCSDIR%%/README.rst
 

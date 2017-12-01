@@ -1,5 +1,5 @@
 # Created by: Dru Lavigne <dru@FreeBSD.org>
-# $FreeBSD: head/textproc/py-sphinx_numfig/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/py-sphinx_numfig/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sphinx_numfig
 PORTVERSION=	r13
@@ -12,9 +12,10 @@ COMMENT=	Autonumbering figures in Sphinx
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PKGNAMEPREFIX}sphinx>=1.3.1:textproc/py-sphinx
+RUN_DEPENDS=	${PKGNAMEPREFIX}sphinx>=1.3.1:textproc/py-sphinx@${FLAVOR}
 
-USES=		python tar:tgz
+USES=		python:2.7 tar:tgz
+USE_PYTHON=	flavors
 NO_BUILD=	yes
 SPHINXDIR=	${PYTHON_LIBDIR}/site-packages/sphinx
 PLIST_FILES=	${SPHINXDIR}/ext/numfig.py ${SPHINXDIR}/ext/numfig.pyc

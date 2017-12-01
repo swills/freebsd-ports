@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/qt5-webkit/Makefile 454197 2017-11-14 19:31:22Z tcberner $
+# $FreeBSD: head/www/qt5-webkit/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=		webkit
 DISTVERSION=		5.212.0-alpha2
@@ -16,7 +16,7 @@ LIB_DEPENDS=		libfontconfig.so:x11-fonts/fontconfig \
 			libgstbase-1.0.so:multimedia/gstreamer1 \
 			libhyphen.so:textproc/hyphen \
 			libicui18n.so:devel/icu \
-			libpng16.so:graphics/png \
+			libpng.so:graphics/png \
 			libwebp.so:graphics/webp
 
 USES=			bison cmake:outsource gperf jpeg pathfix perl5 pkgconfig \

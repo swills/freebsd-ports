@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/webalizer/Makefile 434642 2017-02-22 21:06:57Z dinoex $
+# $FreeBSD: head/www/webalizer/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	webalizer
 PORTVERSION=	2.23.8
@@ -17,7 +17,7 @@ COMMENT=	Web server log file analysis program
 
 LICENSE=	GPLv2
 
-LIB_DEPENDS+=	libpng16.so:graphics/png
+LIB_DEPENDS+=	libpng.so:graphics/png
 
 GNU_CONFIGURE=	yes
 DOCSDIR?=	${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME}

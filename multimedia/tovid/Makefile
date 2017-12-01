@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/tovid/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/multimedia/tovid/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tovid
 PORTVERSION=	0.35.2
@@ -24,10 +24,10 @@ RUN_DEPENDS=	mplayer:multimedia/mplayer \
 		normalize:audio/normalize \
 		lame:audio/lame \
 		gnubc>0:math/gnubc \
-		${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter \
+		${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${FLAVOR} \
 		bash:shells/bash
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 USE_GITHUB=	yes
 GH_ACCOUNT=	tovid-suite

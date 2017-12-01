@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/py-py-jack/Makefile 448438 2017-08-20 18:33:15Z ultima $
+# $FreeBSD: head/audio/py-py-jack/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	py-jack
 PORTVERSION=	0.5.2
@@ -13,7 +13,7 @@ COMMENT=	Python bindings for the Jack Audio Server
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libjack.so:audio/jack
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>0:math/py-numpy
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>0:math/py-numpy@${FLAVOR}
 
 USES=		python:-2.7 localbase
 USE_PYTHON=	distutils autoplist

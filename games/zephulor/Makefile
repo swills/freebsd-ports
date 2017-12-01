@@ -1,5 +1,5 @@
 # Created by: Alejandro Pulver <alejandro@varnet.biz>
-# $FreeBSD: head/games/zephulor/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/zephulor/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	zephulor
 PORTVERSION=	1
@@ -18,7 +18,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
 RUN_DEPENDS=	${PYGAME} \
-		${PYTHON_PKGNAMEPREFIX}tkinter>=0:x11-toolkits/py-tkinter
+		${PYTHON_PKGNAMEPREFIX}tkinter>=0:x11-toolkits/py-tkinter@${PY_FLAVOR}
 
 WRKSRC=		${WRKDIR}/zephulor-source
 

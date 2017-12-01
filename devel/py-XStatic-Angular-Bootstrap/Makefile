@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-XStatic-Angular-Bootstrap/Makefile 429408 2016-12-25 11:28:58Z novel $
+# $FreeBSD: head/devel/py-XStatic-Angular-Bootstrap/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	XStatic-Angular-Bootstrap
 PORTVERSION=	0.11.0.8
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	alexander.nusov@nfvexpress.com
 COMMENT=	Bootstrap widgets for Angular (angular-bootstrap)
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}XStatic>=0:devel/py-XStatic \
-		${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm \
-		${PYTHON_PKGNAMEPREFIX}wheel>=0:devel/py-wheel
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}XStatic>=0:devel/py-XStatic \
-		${PYTHON_PKGNAMEPREFIX}wheel>=0:devel/py-wheel
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}XStatic>=0:devel/py-XStatic@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}wheel>=0:devel/py-wheel@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}XStatic>=0:devel/py-XStatic@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}wheel>=0:devel/py-wheel@${FLAVOR}
 
 NO_ARCH=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-rauth/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-rauth/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rauth
 PORTVERSION=	0.7.2
@@ -12,10 +12,10 @@ COMMENT=	Python library for OAuth 1.0/a, 2.0, and Ofly consumers
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=1.2.3:www/py-requests
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=1.2.1:devel/py-nose \
-		${PYTHON_PKGNAMEPREFIX}mock>=1.0.1:devel/py-mock \
-		${PYTHON_PKGNAMEPREFIX}pycrypto>=2.5:security/py-pycrypto
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=1.2.3:www/py-requests@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=1.2.1:devel/py-nose@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mock>=1.0.1:devel/py-mock@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pycrypto>=2.5:security/py-pycrypto@${FLAVOR}
 
 USES=		python
 USE_GITHUB=	yes

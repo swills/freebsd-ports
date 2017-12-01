@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-humanfriendly/Makefile 447565 2017-08-08 18:57:56Z sunpoet $
+# $FreeBSD: head/textproc/py-humanfriendly/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	humanfriendly
 PORTVERSION=	4.4.1
@@ -13,13 +13,13 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 NO_ARCH=	yes
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3300
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}monotonic>0:devel/py-monotonic
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}monotonic>0:devel/py-monotonic@${FLAVOR}
 .endif
 
 .include <bsd.port.post.mk>

@@ -1,5 +1,5 @@
 # Created by: Junji NAKANISHI <jun-g@daemonfreaks.com>
-# $FreeBSD: head/www/twill/Makefile 376109 2015-01-03 08:41:20Z mva $
+# $FreeBSD: head/www/twill/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	twill
 PORTVERSION=	0.9
@@ -10,7 +10,7 @@ MASTER_SITES=	http://darcs.idyll.org/~t/projects/
 MAINTAINER=	jun-g@daemonfreaks.com
 COMMENT=	Simple scripting language for Web browsing
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 OPTIONS_DEFINE=	DOCS EXAMPLES

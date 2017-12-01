@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/tarantool-c/Makefile 441826 2017-05-27 05:26:56Z danfe $
+# $FreeBSD: head/databases/tarantool-c/Makefile 455129 2017-11-29 17:24:01Z linimon $
 
 PORTNAME=	tarantool-c
 PORTVERSION=	1.0.0
@@ -18,7 +18,6 @@ USES=		cmake
 CMAKE_ARGS=	-DENABLE_BUNDLED_MSGPUCK=false
 
 BROKEN_aarch64=		Fails to compile: clang compiler does not support -march=native
-BROKEN_armv6=		Fails to compile: clang compiler does not support -march=native
 BROKEN_mips64=		Fails to compile: clang compiler does not support -march=native
 BROKEN_powerpc64=	Fails to compile: clang compiler does not support -march=native
 BROKEN_sparc64=		Fails to compile: clang compiler does not support -march=native

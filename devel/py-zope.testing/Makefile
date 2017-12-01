@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-zope.testing/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-zope.testing/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	zope.testing
 PORTVERSION=	4.1.0
@@ -14,8 +14,8 @@ COMMENT=	Zope testing helpers
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface \
-		${PYTHON_PKGNAMEPREFIX}zope.exceptions>=0:devel/py-zope.exceptions
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.exceptions>=0:devel/py-zope.exceptions@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

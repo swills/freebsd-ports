@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/www/trac-advancedticketworkflow/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/www/trac-advancedticketworkflow/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	advancedticketworkflow
 PORTVERSION=	0.10.3940
@@ -15,7 +15,7 @@ COMMENT=	Advanced Ticket Workflow Plugin for Trac
 RUN_DEPENDS=	tracd:www/trac
 
 WRKSRC=		${WRKDIR}/${PORTNAME}plugin/0.11
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

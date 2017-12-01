@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/multimedia/gaupol/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/gaupol/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gaupol
 PORTVERSION=	0.19.2
@@ -20,7 +20,7 @@ RUN_DEPENDS=	iso-codes>=0:misc/iso-codes \
 
 USE_GNOME=	pygtk2 intltool
 USE_PYTHON=	distutils
-USES=		desktop-file-utils python
+USES=		desktop-file-utils python:2.7
 INSTALLS_ICONS=	yes
 NO_ARCH=	yes
 

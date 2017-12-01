@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/linrad/Makefile 452001 2017-10-13 14:19:26Z bapt $
+# $FreeBSD: head/comms/linrad/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	linrad
 PORTVERSION=	4.02
@@ -33,6 +33,7 @@ LINRAD_DOCFILES=	z_APM.txt z_BUFFERS.txt z_CALIBRATE.txt \
 
 BROKEN_aarch64=		fails to compile: implicit declaration of function outb
 BROKEN_armv6=		fails to configure: can not find /nxb-bin/usr/bin/cc
+BROKEN_armv7=		fails to configure: can not find /nxb-bin/usr/bin/cc
 BROKEN_powerpc64=	fails to compile: implicit declaration of function outb
 BROKEN_sparc64=		fails to compile: implicit declaration of function outb
 

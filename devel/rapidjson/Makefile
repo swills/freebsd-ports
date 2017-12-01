@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/rapidjson/Makefile 450931 2017-09-29 19:23:13Z antoine $
+# $FreeBSD: head/devel/rapidjson/Makefile 455130 2017-11-29 17:26:52Z linimon $
 
 PORTNAME=	rapidjson
 PORTVERSION=	1.1.0
@@ -17,6 +17,7 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 BROKEN_aarch64=		does not build: c++: error: the clang compiler does not support -march=native
 BROKEN_armv6=		does not build: c++: error: the clang compiler does not support -march=native
+BROKEN_armv7=		does not build: include/rapidjson/internal/../allocators.h:128:36: error: zero as null pointer constant
 BROKEN_sparc64=		does not build: c++: error: the clang compiler does not support -march=native
 BROKEN_powerpc64=	does not build: c++: error: the clang compiler does not support -march=native
 

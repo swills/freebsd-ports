@@ -1,5 +1,5 @@
 # Created by: Jie Gao <gaoj@cpsc.ucalgary.ca>
-# $FreeBSD: head/math/qtiplot/Makefile 453238 2017-10-31 14:51:53Z olgeni $
+# $FreeBSD: head/math/qtiplot/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	qtiplot
 DISTVERSION=	0.9.8.9
@@ -37,9 +37,9 @@ DOCS_RUN_DEPENDS=	qtiplot-doc>=0:math/qtiplot-doc
 DOCS_USE=	QT4=assistant-adp_run
 
 PYTHON_DESC=	Python scripting support
-PYTHON_USES=	python
+PYTHON_USES=	python:2.7
 PYTHON_BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/PyQt4/QtGui.so:x11-toolkits/py-qt4-gui
-PYTHON_RUN_DEPENDS:=	${PYTHON_BUILD_DEPENDS}
+PYTHON_RUN_DEPENDS=	${PYTHON_BUILD_DEPENDS}
 PYTHON_CONFIGURE_ENV=	PYTHON_INCLUDEDIR=${PYTHON_INCLUDEDIR} \
 			PYTHON_VERSION=${PYTHON_VERSION}
 

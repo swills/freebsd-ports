@@ -1,5 +1,5 @@
 # Created by: Hon-Yu Lawrence Cheung (cheunghonyu@gmail.com)
-# $FreeBSD: head/deskutils/rednotebook/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/deskutils/rednotebook/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rednotebook
 PORTVERSION=	1.9.0
@@ -12,10 +12,10 @@ COMMENT=	Modern journal written in Python
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml \
-		${PYTHON_PKGNAMEPREFIX}webkitgtk>0:www/py-webkitgtk \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}webkitgtk>0:www/py-webkitgtk@${FLAVOR} \
 		${LOCALBASE}/bin/xdg-open:devel/xdg-utils \
-		${PYTHON_PKGNAMEPREFIX}chardet>0:textproc/py-chardet
+		${PYTHON_PKGNAMEPREFIX}chardet>0:textproc/py-chardet@${FLAVOR}
 
 USES=		desktop-file-utils gettext python:2
 

@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@python.or.kr>
-# $FreeBSD: head/databases/py-bsddb3/Makefile 450146 2017-09-19 16:43:22Z bofh $
+# $FreeBSD: head/databases/py-bsddb3/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	bsddb3
 PORTVERSION=	6.2.5
@@ -12,7 +12,7 @@ COMMENT=	Python extension module for BerkeleyDB 3 and 4
 
 LICENSE=	BSD3CLAUSE
 
-USES?=		bdb python
+USES=		bdb python
 USE_PYTHON=	distutils autoplist
 
 PYDISTUTILS_CONFIGUREARGS=--libs="-l${BDB_LIB_NAME}" --berkeley-db=${LOCALBASE}

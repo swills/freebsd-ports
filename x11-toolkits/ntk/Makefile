@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/ntk/Makefile 453482 2017-11-04 19:48:14Z yuri $
+# $FreeBSD: head/x11-toolkits/ntk/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	ntk
 DISTVERSIONPREFIX=	v
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
-		libpng16.so:graphics/png
+		libpng.so:graphics/png
 
 USES=		jpeg localbase:ldflags pkgconfig waf
 USE_GITHUB=	yes

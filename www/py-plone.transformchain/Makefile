@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.transformchain/Makefile 413428 2016-04-16 10:36:51Z rm $
+# $FreeBSD: head/www/py-plone.transformchain/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	plone.transformchain
 PORTVERSION=	1.1.0
@@ -12,9 +12,9 @@ COMMENT=	Hook into repoze.zope2 for third party packages
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface \
-		${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component \
-		${PYTHON_PKGNAMEPREFIX}zope.schema>=0:devel/py-zope.schema
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.schema>=0:devel/py-zope.schema@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7 zope

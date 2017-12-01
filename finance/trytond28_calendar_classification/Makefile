@@ -1,5 +1,5 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/finance/trytond28_calendar_classification/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/trytond28_calendar_classification/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	trytond28_calendar_classification
 PORTVERSION=	2.8.0
@@ -18,7 +18,7 @@ RUN_DEPENDS=	trytond28_calendar>=2.8.0:finance/trytond28_calendar
 
 CONFLICTS=	trytond_calendar_classification-2.[46].*
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

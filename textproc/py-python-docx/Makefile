@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-python-docx/Makefile 439013 2017-04-21 07:26:26Z miwi $
+# $FreeBSD: head/textproc/py-python-docx/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	python-docx
 PORTVERSION=	0.8.6
@@ -11,7 +11,7 @@ COMMENT=	Python library for creating and updating Microsoft Word files
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=3.3.4:devel/py-lxml
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=3.3.4:devel/py-lxml@${FLAVOR}
 
 # Python3 ready
 USES=		python

@@ -1,5 +1,5 @@
 # Created by: Bob Zimmermann <rpz@cse.wustl.edu>
-# $FreeBSD: head/biology/gmap/Makefile 440746 2017-05-13 03:35:51Z linimon $
+# $FreeBSD: head/biology/gmap/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	gmap
 PORTVERSION=	2015.09.21
@@ -26,6 +26,7 @@ SIMD_CONFIGURE_OFF=	--disable-builtin-popcount --disable-simd
 
 BROKEN_aarch64=		Does not build: invokes x86 asm
 BROKEN_armv6=		Does not build: invokes x86 asm
+BROKEN_armv7=		Does not build: invokes x86 asm
 BROKEN_mips64=		Does not build: invokes x86 asm
 BROKEN_powerpc64=	Does not build: invokes x86 asm
 BROKEN_sparc64=		Does not build: invokes x86 asm

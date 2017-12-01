@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/devel/py-yunomi/Makefile 417356 2016-06-23 09:48:53Z tz $
+# $FreeBSD: head/devel/py-yunomi/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	yunomi
 PORTVERSION=	0.3.0
@@ -16,7 +16,7 @@ LICENSE=	MIT
 PORTDOCS=	README.rst \
 		HISTORY.rst
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 OPTIONS_DEFINE=	DOCS

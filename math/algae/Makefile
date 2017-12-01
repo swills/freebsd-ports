@@ -1,5 +1,5 @@
 # Created by: Michael Neumann <mneumann@ntecs.de>
-# $FreeBSD: head/math/algae/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/algae/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	algae
 PORTVERSION=	4.3.6
@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_aarch64=		does not build: checking for proper floating point exception handling... no
 BROKEN_armv6=		does not build: checking for proper floating point exception handling... no
+BROKEN_armv7=		does not build: checking for proper floating point exception handling... no
 BROKEN_powerpc64=	does not build: configure: error: Cannot handle floating point exceptions
 
 GNU_CONFIGURE=	yes

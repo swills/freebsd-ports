@@ -1,5 +1,5 @@
 # Created by: Nicole Reid <root@cooltrainer.org>
-# $FreeBSD: head/emulators/visualboyadvance-m/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/emulators/visualboyadvance-m/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	visualboyadvance-m
 PORTVERSION=	2.0.0b2
@@ -15,6 +15,7 @@ LIB_DEPENDS=	libpng.so:graphics/png
 
 BROKEN_aarch64=		fails to build: regparm is not valid on this platform
 BROKEN_armv6=		fails to build: regparm is not valid on this platform
+BROKEN_armv7=		fails to build: regparm is not valid on this platform
 
 USE_GITHUB=	yes
 GH_TAGNAME=	VBA-M_Beta_2

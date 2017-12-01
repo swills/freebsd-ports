@@ -1,5 +1,5 @@
 # Created by: Jeremy Karlson
-# $FreeBSD: head/emulators/adamem/Makefile 441784 2017-05-26 14:27:45Z linimon $
+# $FreeBSD: head/emulators/adamem/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	adamem
 PORTVERSION=	1.0
@@ -13,6 +13,7 @@ COMMENT=	ADAMEm is a portable Coleco ADAM and ColecoVision emulator
 
 BROKEN_aarch64=		fails to build: regparm is not valid on this platform
 BROKEN_armv6=		fails to build: regparm is not valid on this platform
+BROKEN_armv7=		fails to build: regparm is not valid on this platform
 
 NO_WRKSUBDIR=	yes
 USE_XORG=	sm x11 xau xext xfixes xi xrandr

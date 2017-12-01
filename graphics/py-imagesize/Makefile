@@ -1,5 +1,5 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/graphics/py-imagesize/Makefile 435433 2017-03-04 22:23:20Z kmoore $
+# $FreeBSD: head/graphics/py-imagesize/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	imagesize
 PORTVERSION=	0.7.1
@@ -13,7 +13,7 @@ COMMENT=	Python image size library
 LICENSE=	MIT
 
 NO_ARCH=	yes
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

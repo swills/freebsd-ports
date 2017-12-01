@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/www/py-requestbuilder/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-requestbuilder/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	requestbuilder
 PORTVERSION=	0.4.0
@@ -13,8 +13,8 @@ COMMENT=	Command line-driven HTTP request builder
 LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.4:www/py-requests \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.4:www/py-requests@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
 
 USES=		python:-2.7
 USE_PYTHON=	distutils autoplist

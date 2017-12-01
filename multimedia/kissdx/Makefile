@@ -1,5 +1,5 @@
 # Created by: Simon Riget <freebsd@paragi.dk>
-# $FreeBSD: head/multimedia/kissdx/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/multimedia/kissdx/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	kissdx
 PORTVERSION=	0.13.10a
@@ -17,6 +17,7 @@ LIB_DEPENDS=	libgd.so:graphics/gd \
 		libdvdread.so:multimedia/libdvdread
 
 BROKEN_armv6=		fails to compile: kissdx.c: function definition is not allowed here
+BROKEN_armv7=		fails to compile: kissdx.c: function definition is not allowed here
 BROKEN_mips64=		fails to compile: kissdx.c: nested functions are disabled, use -fnested-functions to re-enable
 BROKEN_powerpc64=	fails to compile: kissdx.c: nested functions are disabled, use -fnested-functions to re-enable
 

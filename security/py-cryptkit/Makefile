@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/security/py-cryptkit/Makefile 381057 2015-03-12 02:11:28Z amdmi3 $
+# $FreeBSD: head/security/py-cryptkit/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cryptkit
 PORTVERSION=	0.9
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Cryptographic Toolkit for Python
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 post-install:

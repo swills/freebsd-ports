@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/fityk/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/math/fityk/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	fityk
 PORTVERSION=	1.3.0
@@ -46,7 +46,7 @@ OPTIONS_DEFAULT=	PYTHON
 OPTIONS_SUB=		yes
 
 DOCS_BUILD_DEPENDS=	sphinx-build:textproc/py-sphinx
-PYTHON_USES=		python
+PYTHON_USES=		python:2.7
 PYTHON_CONFIGURE_ENABLE=	python
 
 post-patch:

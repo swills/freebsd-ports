@@ -1,5 +1,5 @@
 # Created by: Thinker K.F. Li <thinker@branda.to>
-# $FreeBSD: head/devel/py-pyke/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-pyke/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyke
 PORTVERSION=	1.1.1
@@ -12,9 +12,9 @@ COMMENT=	Python Knowledge Engine
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=2.3:devel/py-ply
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=2.3:devel/py-ply@${FLAVOR}
 
-USES=		python zip
+USES=		python:2.7 zip
 USE_PYTHON=	distutils
 
 OPTIONS_DEFINE=	DOCS

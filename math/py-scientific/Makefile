@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/math/py-scientific/Makefile 452602 2017-10-21 20:18:16Z sunpoet $
+# $FreeBSD: head/math/py-scientific/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	scientific
 PORTVERSION=	2.8
@@ -16,7 +16,7 @@ BUILD_DEPENDS=	${PYNUMPY}
 LIB_DEPENDS=	libnetcdf.so:science/netcdf
 RUN_DEPENDS=	${PYNUMPY}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 DOCSDIR=	${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/py-imgurpython/Makefile 419668 2016-08-05 06:39:13Z kevlo $
+# $FreeBSD: head/graphics/py-imgurpython/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	imgurpython
 PORTVERSION=	1.1.7
@@ -11,7 +11,7 @@ COMMENT=	Python client for the Imgur API
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.7:www/py-requests
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.7:www/py-requests@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

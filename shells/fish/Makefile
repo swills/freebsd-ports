@@ -1,5 +1,5 @@
 # Created by: Kai Wang <kaiw27@gmail.com>
-# $FreeBSD: head/shells/fish/Makefile 449384 2017-09-07 04:58:25Z asomers $
+# $FreeBSD: head/shells/fish/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	fish
 PORTVERSION=	2.6.0
@@ -13,7 +13,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS+=	libpcre2-32.so:devel/pcre2
 
-USES=		autoreconf cpe gmake libtool ncurses pkgconfig pathfix python:3 \
+USES=		autoreconf cpe gmake libtool ncurses pkgconfig pathfix python:3.4+ \
 		localbase compiler:c++11-lang shebangfix
 SHEBANG_FILES=	share/tools/*.py share/tools/web_config/webconfig.py
 

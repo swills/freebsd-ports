@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/www/mongrel2/Makefile 439789 2017-04-30 04:35:10Z linimon $
+# $FreeBSD: head/www/mongrel2/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	mongrel2
 PORTVERSION=	1.7.5
@@ -17,6 +17,7 @@ LIB_DEPENDS=	libzmq.so:net/libzmq2 \
 		libsqlite3.so:databases/sqlite3
 
 BROKEN_armv6=	does not build
+BROKEN_armv7=	does not build: src/task/task.c:66:11: error: no member named 'arm_r0' in 'mcontext_t'
 BROKEN_mips=	does not build (tests segfault)
 BROKEN_mips64=	does not build (tests segfault)
 BROKEN_powerpc64=	does not build (tests segfault)

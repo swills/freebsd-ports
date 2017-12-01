@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/py-django-sudo/Makefile 423421 2016-10-06 16:48:43Z tj $
+# $FreeBSD: head/www/py-django-sudo/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sudo
 PORTVERSION=	2.1.0
@@ -13,7 +13,7 @@ COMMENT=	Sudo mode is an extra layer of security for Django
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

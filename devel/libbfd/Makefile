@@ -1,5 +1,5 @@
 # Created by: Joerg Wunsch <joerg@FreeBSD.org>
-# $FreeBSD: head/devel/libbfd/Makefile 434587 2017-02-22 15:02:18Z bapt $
+# $FreeBSD: head/devel/libbfd/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	libbfd
 PORTVERSION=	2.19.1
@@ -27,6 +27,7 @@ INFO=		bfd
 
 BROKEN_aarch64=		Fails to configure: machine aarch64-portbld not recognized
 BROKEN_armv6=		Fails to configure: BFD does not support target armv6-portbld-freebsd12.0
+BROKEN_armv7=		Fails to configure: BFD does not support target armv7-portbld-freebsd12.0
 BROKEN_mips64=		Fails to configure: BFD does not support target mips64-portbld-freebsd12.0
 
 pre-configure:

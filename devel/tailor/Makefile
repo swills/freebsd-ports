@@ -1,5 +1,5 @@
 # Created by: Rui Lopes <rgl ruilopes com>
-# $FreeBSD: head/devel/tailor/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/tailor/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tailor
 PORTVERSION=	0.9.35
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${LOCALBASE}/bin/rsync:net/rsync
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 NO_ARCH=	yes
 

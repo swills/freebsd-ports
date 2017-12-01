@@ -1,9 +1,9 @@
 # Created by: Carlos Eduardo G. Carvalho <cartola@openit.com.br>
-# $FreeBSD: head/graphics/hugin/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/graphics/hugin/Makefile 455244 2017-12-01 01:58:23Z mandree $
 
 PORTNAME=	hugin
 PORTVERSION=	2017.0.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION:R}
 
@@ -48,7 +48,7 @@ AUTOPANOSIFTC_DESC=	Install graphics/autopano-sift-c
 AUTOPANOSIFTC_RUN_DEPENDS=	autopano:graphics/autopano-sift-c
 
 PYTHON_DESC=		Python Scripting Interface
-PYTHON_USES=		python
+PYTHON_USES=		python:2.7
 PYTHON_BUILD_DEPENDS=	swig2.0:devel/swig20
 PYTHON_CMAKE_ON=	-DBUILD_HSI=ON
 PYTHON_CMAKE_OFF=	-DBUILD_HSI=OFF

@@ -1,5 +1,5 @@
 # Created by: blubee <hello@blubee.me>
-# $FreeBSD: head/devel/pycanberra/Makefile 454831 2017-11-24 18:40:22Z pi $
+# $FreeBSD: head/devel/pycanberra/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=		pycanberra
 DISTVERSION=		1
@@ -12,7 +12,7 @@ LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils optsuffix
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	totdb

@@ -1,5 +1,5 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/deskutils/gnome-sound-recorder/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/deskutils/gnome-sound-recorder/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gnome-sound-recorder
 PORTVERSION=	3.18.2
@@ -14,7 +14,7 @@ LIB_DEPENDS=	libgjs.so:lang/gjs
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake gnome libtool pathfix pkgconfig python:3 tar:xz
+USES=		gettext gmake gnome libtool pathfix pkgconfig python:3.4+ tar:xz
 USE_GNOME=	gnomedesktop3 gtk30 intlhack introspection:build
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes

@@ -1,5 +1,5 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/finance/trytond28_calendar/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/trytond28_calendar/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	trytond28_calendar
 PORTVERSION=	2.8.2
@@ -14,14 +14,14 @@ COMMENT=	Tryton Application Platform (Calendar Module)
 LICENSE=	GPLv3
 
 RUN_DEPENDS=	trytond28>=2.8.2:finance/trytond28 \
-		${PYTHON_PKGNAMEPREFIX}vobject>=0.8.1:deskutils/py-vobject \
-		${PYTHON_PKGNAMEPREFIX}PyWebDAV>=0:www/py-pywebdav \
-		${PYTHON_PKGNAMEPREFIX}pytz>=0:devel/py-pytz \
-		${PYTHON_PKGNAMEPREFIX}dateutil>=1.5:devel/py-dateutil
+		${PYTHON_PKGNAMEPREFIX}vobject>=0.8.1:deskutils/py-vobject@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}PyWebDAV>=0:www/py-pywebdav@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytz>=0:devel/py-pytz@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dateutil>=1.5:devel/py-dateutil@${FLAVOR}
 
 CONFLICTS=	trytond_calendar-2.[46].*
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

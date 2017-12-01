@@ -1,5 +1,5 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/net-mgmt/braa/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/braa/Makefile 455263 2017-12-01 11:14:04Z amdmi3 $
 
 PORTNAME=	braa
 PORTVERSION=	0.82
@@ -8,6 +8,9 @@ MASTER_SITES=	http://s-tech.elsat.net.pl/braa/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tool for making SNMP queries
+
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libnetsnmp.so:net-mgmt/net-snmp
 
@@ -21,15 +24,15 @@ PLIST_FILES=	bin/braa
 OPTIONS_DEFINE=	DOCS
 
 post-patch:
-.for file in Makefile
 	@${REINPLACE_CMD} -e \
 		's|CFLAGS =|CFLAGS+=${CFLAGS}|g ; \
 		s|LDFLAGS =|LDFLAGS?=${LDFLAGS}|g ; \
-		s|strip $$(OUT)||g' ${WRKSRC}/${file}
-.endfor
+		s|strip $$(OUT)||g' ${WRKSRC}/Makefile
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
 

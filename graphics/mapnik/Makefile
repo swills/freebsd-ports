@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/graphics/mapnik/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/graphics/mapnik/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	mapnik
 PORTVERSION=	3.0.9
@@ -73,7 +73,7 @@ PROJ_LIB_DEPENDS=	libproj.so:graphics/proj
 PROJ_MAKE_ARGS_OFF=	PROJ=False
 
 CAIRO_LIB_DEPENDS=	libcairo.so:graphics/cairo
-CAIRO_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cairo>=1.8.2:graphics/py-cairo
+CAIRO_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cairo>=1.8.2:graphics/py-cairo@${PY_FLAVOR}
 CAIRO_MAKE_ARGS_OFF=	CAIRO=False
 
 .include <bsd.port.pre.mk>

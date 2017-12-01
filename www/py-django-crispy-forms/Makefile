@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/py-django-crispy-forms/Makefile 431057 2017-01-10 02:46:49Z wen $
+# $FreeBSD: head/www/py-django-crispy-forms/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-crispy-forms
 PORTVERSION=	1.6.1
@@ -12,7 +12,7 @@ COMMENT=	The best way to have Django DRY forms
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist concurrent

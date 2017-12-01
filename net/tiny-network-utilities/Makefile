@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net/tiny-network-utilities/Makefile 442592 2017-06-04 21:49:48Z bdrewery $
+# $FreeBSD: head/net/tiny-network-utilities/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tiny-network-utilities
 PORTVERSION=	0.150519
@@ -10,8 +10,8 @@ COMMENT=	Minimalistic DHCP, UDP proxy, etc server implementations
 
 LICENSE=	BSD4CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}netifaces>0:net/py-netifaces \
-		${PYTHON_PKGNAMEPREFIX}hexdump>0:textproc/py-hexdump
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}netifaces>0:net/py-netifaces@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}hexdump>0:textproc/py-hexdump@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	yurivict
@@ -25,13 +25,6 @@ FILES_EXEC=	tiny-dhcp-server tiny-udp-proxy tiny-udp-anti-nat
 FILES_LIB=	net_checksums tiny_utils
 PLIST_FILES=	${FILES_EXEC:%=bin/%} ${FILES_LIB:%=${PYTHON_SITELIBDIR}/%.py}
 
-.include <bsd.port.pre.mk>
-
-.if defined(PACKAGE_BUILDING) && !defined(PACKAGE_BUILDING_FLAVORS) && \
-    ${PYTHON_VER} != ${PYTHON_DEFAULT}
-IGNORE=	you have python ${PYTHON_DEFAULT} set as the default, and this needs ${PYTHON_VER}
-.endif
-
 do-install:
 .for file_exec in ${FILES_EXEC}
 	${INSTALL_SCRIPT} ${WRKSRC}/${file_exec}.py \
@@ -43,4 +36,4 @@ do-install:
 		${STAGEDIR}${PYTHON_SITELIBDIR}/${file_lib}.py
 .endfor
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

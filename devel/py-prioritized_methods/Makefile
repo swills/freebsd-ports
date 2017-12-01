@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-prioritized_methods/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-prioritized_methods/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	prioritized_methods
 PORTVERSION=	0.2.1
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	wenheping@gmail.com
 COMMENT=	Extension to PEAK-Rules to prioritize methods
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PEAK-Rules>=0.5:devel/py-PEAK-Rules
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PEAK-Rules>=0.5:devel/py-PEAK-Rules@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

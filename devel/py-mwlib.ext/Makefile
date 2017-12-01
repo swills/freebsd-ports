@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-mwlib.ext/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-mwlib.ext/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	mwlib.ext
 PORTVERSION=	0.13.2
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Provide Dependencies for mwlib
 
-USES=		python zip
+USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

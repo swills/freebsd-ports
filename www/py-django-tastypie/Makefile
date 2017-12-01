@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <william88@gmail.com>
-# $FreeBSD: head/www/py-django-tastypie/Makefile 424452 2016-10-22 08:21:52Z koobs $
+# $FreeBSD: head/www/py-django-tastypie/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-tastypie
 PORTVERSION=	0.13.3
@@ -12,13 +12,13 @@ COMMENT=	Create REST API for Django apps
 
 LICENSE=	BSD3CLAUSE
 
-MY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mimeparse>=0.1.4:devel/py-mimeparse \
-		${PYTHON_PKGNAMEPREFIX}dateutil>=2.1:devel/py-dateutil
+MY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mimeparse>=0.1.4:devel/py-mimeparse@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dateutil>=2.1:devel/py-dateutil@${FLAVOR}
 
 BUILD_DEPENDS=	${MY_DEPENDS}
 
 RUN_DEPENDS?=	${MY_DEPENDS} \
-		${PYTHON_PKGNAMEPREFIX}django18>=1.5:www/py-django18
+		${PYTHON_PKGNAMEPREFIX}django18>=1.5:www/py-django18@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

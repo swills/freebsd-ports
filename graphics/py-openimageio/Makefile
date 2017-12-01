@@ -1,6 +1,7 @@
 # Created by: Shane Ambler
-# $FreeBSD: head/graphics/py-openimageio/Makefile 402355 2015-11-24 11:47:13Z danfe $
+# $FreeBSD: head/graphics/py-openimageio/Makefile 455244 2017-12-01 01:58:23Z mandree $
 
+PORTREVISION=	1
 CATEGORIES=	graphics multimedia python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

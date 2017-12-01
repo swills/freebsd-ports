@@ -1,5 +1,5 @@
 # Created by: Denis Shaposhnikov <dsh@vlink.ru>
-# $FreeBSD: head/www/py-webhelpers/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-webhelpers/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	webhelpers
 PORTVERSION=	1.3
@@ -13,8 +13,8 @@ COMMENT=	Python helper functions for writing templates in web applications
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}routes>=1.1:www/py-routes \
-		${PYTHON_PKGNAMEPREFIX}MarkupSafe>=0.11:textproc/py-MarkupSafe
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}routes>=1.1:www/py-routes@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}MarkupSafe>=0.11:textproc/py-MarkupSafe@${FLAVOR}
 
 USES=		python:2
 USE_PYTHON=	distutils autoplist

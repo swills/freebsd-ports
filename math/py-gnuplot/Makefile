@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/math/py-gnuplot/Makefile 426151 2016-11-15 09:00:18Z amdmi3 $
+# $FreeBSD: head/math/py-gnuplot/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gnuplot
 PORTVERSION=	1.8
@@ -18,7 +18,7 @@ BUILD_DEPENDS=	${PYNUMPY}
 RUN_DEPENDS=	gnuplot:math/gnuplot \
 		${PYNUMPY}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/vnc2flv/Makefile 415839 2016-05-25 15:43:34Z mat $
+# $FreeBSD: head/deskutils/vnc2flv/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	vnc2flv
 PORTVERSION=	20100207
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Captures a VNC desktop session and saves as a flv
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 OPTIONS_DEFINE=	X11

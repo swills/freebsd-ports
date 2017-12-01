@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/ftp/ftpcopy/Makefile 441784 2017-05-26 14:27:45Z linimon $
+# $FreeBSD: head/ftp/ftpcopy/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	ftpcopy
 PORTVERSION=	0.6.7
@@ -11,6 +11,7 @@ COMMENT=	Command line ftp tools for listing and mirroring
 
 BROKEN_aarch64=		fails to build: regparm is not valid on this platform
 BROKEN_armv6=		fails to build: regparm is not valid on this platform
+BROKEN_armv7=		fails to build: regparm is not valid on this platform
 
 USES=		perl5
 USE_PERL5=	build

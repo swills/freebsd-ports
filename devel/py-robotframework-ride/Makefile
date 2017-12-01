@@ -1,5 +1,5 @@
 # Created by: Vladimir Chukharev
-# $FreeBSD: head/devel/py-robotframework-ride/Makefile 423074 2016-10-01 15:54:04Z pawel $
+# $FreeBSD: head/devel/py-robotframework-ride/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	robotframework-ride
 PORTVERSION=	1.5.2
@@ -12,9 +12,9 @@ COMMENT=	Test data editor for Robot Framework
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}robotframework>=2.7.5:devel/py-robotframework \
-		${PYTHON_PKGNAMEPREFIX}robotframework-selenium2library>=1.1.0:devel/py-robotframework-selenium2library \
-		${PYTHON_PKGNAMEPREFIX}pygments>0:textproc/py-pygments
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}robotframework>=2.7.5:devel/py-robotframework@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}robotframework-selenium2library>=1.1.0:devel/py-robotframework-selenium2library@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pygments>0:textproc/py-pygments@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:-2.7

@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/print/py-pycups/Makefile 439629 2017-04-28 20:24:38Z sunpoet $
+# $FreeBSD: head/print/py-pycups/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pycups
 PORTVERSION=	1.9.73
@@ -17,9 +17,9 @@ LICENSE_COMB=	dual
 LIB_DEPENDS=	libcups.so:print/cups
 
 USE_PYTHON=	autoplist concurrent distutils
-USES?=		iconv localbase python tar:bzip2
+USES=		iconv localbase python tar:bzip2
 
-SLAVEDIRS=	print/py3-pycups
+SLAVEDIRS=	print/py-pycups@${PY_FLAVOR}
 
 .include <bsd.port.pre.mk>
 

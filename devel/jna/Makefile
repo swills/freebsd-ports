@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/jna/Makefile 451121 2017-10-03 09:25:48Z vanilla $
+# $FreeBSD: head/devel/jna/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	jna
 PORTVERSION=	4.5.0
@@ -14,6 +14,7 @@ LICENSE_FILE_LGPL21+ =	${WRKSRC}/LICENSE.LGPL
 LICENSE_FILE_APACHE20=	${WRKSRC}/LICENSE.AL
 
 BROKEN_armv6=		fails to compile: build.xml: compilation failed
+BROKEN_armv7=		fails to compile: build.xml: compilation failed
 
 USES=		autoreconf:build gmake libtool
 USE_ANT=	yes

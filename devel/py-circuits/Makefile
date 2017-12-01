@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-circuits/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-circuits/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	circuits
 PORTVERSION=	3.1.0
@@ -13,7 +13,7 @@ COMMENT=	Asynchronous Component-based Event Application Framework
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

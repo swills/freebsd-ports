@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/devel/py-pyinstaller/Makefile 439720 2017-04-29 06:32:03Z linimon $
+# $FreeBSD: head/devel/py-pyinstaller/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyinstaller
 PORTVERSION=	2.1
@@ -22,7 +22,7 @@ BROKEN_sparc64=		Does not compile: error: size of array stb__testsize2_uinta is 
 OPTIONS_DEFINE=	DOCS
 
 EXTRACT_AFTER_ARGS=	--exclude doc/source --no-same-owner --no-same-permissions
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 DOCSDIR=	${PREFIX}/share/doc/${PYTHON_PKGNAMEPREFIX}${PORTNAME}

@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/math/py-bottleneck/Makefile 442499 2017-06-03 14:44:02Z tcberner $
+# $FreeBSD: head/math/py-bottleneck/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	bottleneck
 PORTVERSION=	1.2.1
@@ -13,13 +13,12 @@ COMMENT=	Collection of fast NumPy array functions written in Cython
 
 LICENSE=	BSD2CLAUSE
 
-BUILD_DEPENDS=	${PYNUMPY} \
-		cython:lang/cython
+BUILD_DEPENDS=	${PYNUMPY}
 RUN_DEPENDS=	${PYNUMPY}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR}
 
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist cython
 
 OPTIONS_DEFINE=	DOCS
 DOCSDIR=	${PREFIX}/share/doc/py-${PORTNAME}

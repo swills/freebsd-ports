@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/py-sexy/Makefile 417703 2016-06-28 09:11:31Z rakuco $
+# $FreeBSD: head/x11-toolkits/py-sexy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sexy
 PORTVERSION=	0.1.9
@@ -16,8 +16,9 @@ LICENSE=	LGPL21
 
 LIB_DEPENDS=	libsexy.so:x11-toolkits/libsexy
 
-USES=		libtool pkgconfig python
+USES=		libtool pkgconfig python:2.7
 USE_GNOME=	pygtk2
+USE_PYTHON=	flavors
 GNU_CONFIGURE=	yes
 
 .include <bsd.port.mk>

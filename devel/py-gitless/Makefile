@@ -1,5 +1,5 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/devel/py-gitless/Makefile 446410 2017-07-22 16:32:19Z cpm $
+# $FreeBSD: head/devel/py-gitless/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gitless
 PORTVERSION=	0.8.5
@@ -14,9 +14,9 @@ COMMENT=	Version control system built on top of Git
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}clint>=0.3.6:devel/py-clint \
-		${PYTHON_PKGNAMEPREFIX}pygit2>=0.23.0:devel/py-pygit2 \
-		${PYTHON_PKGNAMEPREFIX}sh>=1.11:devel/py-sh \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}clint>=0.3.6:devel/py-clint@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pygit2>=0.23.0:devel/py-pygit2@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sh>=1.11:devel/py-sh@${FLAVOR} \
 		git:devel/git
 
 USES=		python

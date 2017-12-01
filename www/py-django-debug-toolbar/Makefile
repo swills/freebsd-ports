@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/py-django-debug-toolbar/Makefile 442501 2017-06-03 14:48:42Z tcberner $
+# $FreeBSD: head/www/py-django-debug-toolbar/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-debug-toolbar
 PORTVERSION=	1.8
@@ -12,8 +12,8 @@ COMMENT=	Configurable set of panels to display debug information
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=1.4.2:www/py-django18 \
-		${PYTHON_PKGNAMEPREFIX}sqlparse>0:databases/py-sqlparse
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=1.4.2:www/py-django18@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlparse>0:databases/py-sqlparse@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

@@ -1,5 +1,5 @@
 # Created by: Anders F Bjorklund <afb@rpm5.org>
-# $FreeBSD: head/sysutils/yum/Makefile 451721 2017-10-10 21:31:30Z linimon $
+# $FreeBSD: head/sysutils/yum/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	yum
 PORTVERSION=	3.4.3
@@ -17,15 +17,16 @@ BUILD_DEPENDS=	bash:shells/bash \
 		intltool-update:textproc/intltool
 RUN_DEPENDS=	bash:shells/bash \
 		${PYTHON_SITELIBDIR}/rpm/__init__.py:archivers/rpm4 \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3 \
-		${PYTHON_SITELIBDIR}/sqlitecachec.py:devel/py-yum-metadata-parser \
-		${PYTHON_PKGNAMEPREFIX}iniparse>0:devel/py-iniparse \
-		${PYTHON_PKGNAMEPREFIX}urlgrabber>0:www/py-urlgrabber
+		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR} \
+		${PYTHON_SITELIBDIR}/sqlitecachec.py:devel/py-yum-metadata-parser@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}iniparse>0:devel/py-iniparse@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}urlgrabber>0:www/py-urlgrabber@${FLAVOR}
 
 ONLY_FOR_ARCHS=		aarch64 amd64 armv6 armv7 i386
 ONLY_FOR_ARCHS_REASON=	linux is not available for ${ARCH}
 
-USES=		cpe gettext gmake python shebangfix
+USES=		cpe gettext gmake python:2.7 shebangfix
+USE_PYTHON=	flavors
 SHEBANG_FILES=	etc/yum-updatesd.init
 CPE_VENDOR=	baseurl
 

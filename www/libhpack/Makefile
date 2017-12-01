@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/libhpack/Makefile 448393 2017-08-20 12:27:17Z sunpoet $
+# $FreeBSD: head/www/libhpack/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	libhpack
 PORTVERSION=	0.0.20140710
@@ -16,6 +16,7 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_armv6=	fails to compile: Can't define TIME_MAX #'
+BROKEN_armv7=	fails to compile: Can't define TIME_MAX #'
 
 LIB_DEPENDS=	libcheck.so:devel/check
 

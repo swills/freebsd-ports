@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/cadabra2/Makefile 453475 2017-11-04 18:50:45Z yuri $
+# $FreeBSD: head/math/cadabra2/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cadabra2
 DISTVERSION=	2.1.6
@@ -19,8 +19,8 @@ LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs \
 		libjsoncpp.so:devel/jsoncpp \
 		libgmp.so:math/gmp \
 		libuuid.so:misc/e2fsprogs-libuuid
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/sympy/__init__.py:math/py-sympy \
-		${PYTHON_SITELIBDIR}/matplotlib/__init__.py:math/py-matplotlib
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/sympy/__init__.py:math/py-sympy@${PY_FLAVOR} \
+		${PYTHON_SITELIBDIR}/matplotlib/__init__.py:math/py-matplotlib@${PY_FLAVOR}
 
 OPTIONS_DEFINE=	GUI
 OPTIONS_DEFAULT=GUI

@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/print/py-reportlab1/Makefile 387529 2015-05-27 00:15:04Z amdmi3 $
+# $FreeBSD: head/print/py-reportlab1/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	reportlab
 PORTVERSION=	1.21.2
@@ -21,7 +21,7 @@ CONFLICTS=	py*-reportlab[^1]-[^1].* \
 
 PORTSCOUT=	ignore:1	# Last version of 1.X branch
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 WRKSRC=		${WRKDIR}/reportlab_${PORTVERSION:S/./_/g}/reportlab

@@ -1,5 +1,5 @@
 # Created by: patrick
-# $FreeBSD: head/lang/pfe/Makefile 441847 2017-05-27 15:07:11Z linimon $
+# $FreeBSD: head/lang/pfe/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	pfe
 PORTVERSION=	0.33.71
@@ -12,6 +12,7 @@ COMMENT=	Implementation of ANSI Forth
 
 BROKEN_aarch64=		fails to compile: implicit declaration of function 'PFE_SBR_COMPILE_EXIT' is invalid in C99
 BROKEN_armv6=		fails to compile: implicit declaration of function 'PFE_SBR_COMPILE_EXIT' is invalid in C99
+BROKEN_armv7=		fails to compile: implicit declaration of function 'PFE_SBR_COMPILE_EXIT' is invalid in C99
 BROKEN_i386=		fails to link
 BROKEN_powerpc=		fails to compile
 BROKEN_powerpc64=	fails to build: lvalue required as increment operand

@@ -1,5 +1,5 @@
 # Created by: Michael Gmelin <grembo@FreeBSD.org>
-# $FreeBSD: head/devel/py-buildbot-www/Makefile 455028 2017-11-28 10:15:46Z rodrigc $
+# $FreeBSD: head/devel/py-buildbot-www/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	buildbot-www
 PORTVERSION=	0.9.11
@@ -13,13 +13,13 @@ COMMENT=	Continuous Integration Framework (WWW)
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}buildbot>=${PORTVERSION}:devel/py-buildbot \
-		${PYTHON_PKGNAMEPREFIX}buildbot-pkg>=${PORTVERSION}:devel/py-buildbot-pkg \
-		${PYTHON_PKGNAMEPREFIX}mock>0.8.0:devel/py-mock
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}buildbot-console-view>=${PORTVERSION}:devel/py-buildbot-console-view \
-		${PYTHON_PKGNAMEPREFIX}buildbot-grid-view>=${PORTVERSION}:devel/py-buildbot-grid-view \
-		${PYTHON_PKGNAMEPREFIX}buildbot-waterfall-view>=${PORTVERSION}:devel/py-buildbot-waterfall-view \
-		${PYTHON_PKGNAMEPREFIX}service_identity>=16.0.0:security/py-service_identity
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}buildbot>=${PORTVERSION}:devel/py-buildbot@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}buildbot-pkg>=${PORTVERSION}:devel/py-buildbot-pkg@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mock>0.8.0:devel/py-mock@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}buildbot-console-view>=${PORTVERSION}:devel/py-buildbot-console-view@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}buildbot-grid-view>=${PORTVERSION}:devel/py-buildbot-grid-view@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}buildbot-waterfall-view>=${PORTVERSION}:devel/py-buildbot-waterfall-view@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}service_identity>=16.0.0:security/py-service_identity@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

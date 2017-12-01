@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-vulndb/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/security/py-vulndb/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	vulndb
 PORTVERSION=	0.0.19
@@ -12,7 +12,7 @@ COMMENT=	Provides access to the vulndb information in Python
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools-git>=1.1:devel/py-setuptools-git
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools-git>=1.1:devel/py-setuptools-git@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/deskutils/tel/Makefile 417349 2016-06-23 07:17:46Z bapt $
+# $FreeBSD: head/deskutils/tel/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tel
 PORTVERSION=	0.1.7.1
@@ -14,7 +14,7 @@ LICENSE=	MIT
 
 NO_ARCH=	yes
 
-USES=		gettext python shebangfix tar:bzip2
+USES=		gettext python:2.7 shebangfix tar:bzip2
 SHEBANG_FILES=	src/tel.py
 USE_PYTHON=	distutils
 

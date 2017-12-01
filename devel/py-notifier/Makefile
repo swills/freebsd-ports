@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@lwhsu.org>
-# $FreeBSD: head/devel/py-notifier/Makefile 439091 2017-04-21 16:23:17Z miwi $
+# $FreeBSD: head/devel/py-notifier/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	notifier
 PORTVERSION=	0.5.8
@@ -14,7 +14,7 @@ COMMENT=	Generic notifier/event scheduler abstraction
 
 LICENSE=	LGPL20
 
-USES=		python shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	examples/*.py
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGNAME=	pynotifier

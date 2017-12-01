@@ -1,5 +1,5 @@
 # Created by: GreenDog <fiziologus@gmail.com>
-# $FreeBSD: head/games/unknown-horizons/Makefile 438030 2017-04-08 11:05:02Z amdmi3 $
+# $FreeBSD: head/games/unknown-horizons/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	unknown-horizons
 PORTVERSION=	2013.3
@@ -13,10 +13,10 @@ LICENSE=	GPLv2+
 
 BUILD_DEPENDS=	${LOCALBASE}/share/xsl/docbook/manpages/docbook.xsl:textproc/docbook-xsl \
 		${LOCALBASE}/bin/xsltproc:textproc/libxslt
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/fife/__init__.py:games/py-fife \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3 \
-		${PYTHON_SITELIBDIR}/yaml/__init__.py:devel/py-yaml \
-		${PYTHON_PKGNAMEPREFIX}gdbm>0:databases/py-gdbm
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/fife/__init__.py:games/py-fife@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR} \
+		${PYTHON_SITELIBDIR}/yaml/__init__.py:devel/py-yaml@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}gdbm>0:databases/py-gdbm@${FLAVOR}
 
 ONLY_FOR_ARCHS=	i386 amd64
 

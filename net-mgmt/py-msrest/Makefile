@@ -1,5 +1,5 @@
 # Created by: Johannes Jost Meixner <johannes@perceivon.net>
-# $FreeBSD: head/net-mgmt/py-msrest/Makefile 450974 2017-09-30 10:59:11Z tcberner $
+# $FreeBSD: head/net-mgmt/py-msrest/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	msrest
 PORTVERSION=	0.4.14
@@ -12,10 +12,10 @@ COMMENT=	AutoRest swagger generator Python client runtime
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}certifi>0:security/py-certifi \
-		${PYTHON_PKGNAMEPREFIX}isodate>=0.5.4:devel/py-isodate \
-		${PYTHON_PKGNAMEPREFIX}requests-oauthlib>0:www/py-requests-oauthlib \
-		${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}certifi>0:security/py-certifi@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}isodate>=0.5.4:devel/py-isodate@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests-oauthlib>0:www/py-requests-oauthlib@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils
@@ -23,7 +23,7 @@ USE_PYTHON=	autoplist distutils
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3400
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}enum34>0:devel/py-enum34
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}enum34>0:devel/py-enum34@${FLAVOR}
 .endif
 
 .include <bsd.port.post.mk>

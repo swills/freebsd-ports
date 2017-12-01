@@ -1,5 +1,5 @@
 # Created by: Nick Barkas <snb@threerings.net>
-# $FreeBSD: head/sysutils/farbot/Makefile 434252 2017-02-16 20:36:54Z lifanov $
+# $FreeBSD: head/sysutils/farbot/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	farbot
 PORTVERSION=	1.0
@@ -19,7 +19,7 @@ GH_ACCOUNT=	threerings
 GH_PROJECT=	farbot
 GH_TAGNAME=	c824009
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 PYDISTUTILS_PKGNAME=	farb
 PYDISTUTILS_PKGVERSION=	0.1

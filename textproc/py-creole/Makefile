@@ -1,5 +1,5 @@
 # Created by: Stanislav Svirid <count@211.ru>
-# $FreeBSD: head/textproc/py-creole/Makefile 428844 2016-12-18 11:07:03Z wen $
+# $FreeBSD: head/textproc/py-creole/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	creole
 PORTVERSION=	1.3.1
@@ -13,7 +13,7 @@ COMMENT=	Markup converter in pure Python
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/docutils/__init__.py:textproc/py-docutils
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/docutils/__init__.py:textproc/py-docutils@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

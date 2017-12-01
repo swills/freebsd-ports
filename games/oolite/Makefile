@@ -1,5 +1,5 @@
 # Created by: Andriy Gapon <avg@icyb.net.ua>
-# $FreeBSD: head/games/oolite/Makefile 452037 2017-10-14 00:11:24Z brooks $
+# $FreeBSD: head/games/oolite/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=		oolite
 PORTVERSION=		1.84
@@ -54,6 +54,7 @@ OPTIONS_DEFINE=	DOCS
 
 BROKEN_aarch64=		fails to configure: error: These compiler flags are invalid: -O
 BROKEN_armv6=		fails to compile: your compiler does not follow the C++ specification for temporary object destruction order
+BROKEN_armv7=		fails to compile: your compiler does not follow the C++ specification for temporary object destruction order
 
 .include <bsd.port.pre.mk>
 

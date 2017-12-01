@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pygdbmi/Makefile 437555 2017-04-02 13:42:11Z mmokhi $
+# $FreeBSD: head/devel/py-pygdbmi/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pygdbmi
 PORTVERSION=	0.7.3.3
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	cs01
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

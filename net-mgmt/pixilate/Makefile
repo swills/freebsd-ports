@@ -1,5 +1,5 @@
 # Created by: Barry Irwin <bvi@moria.org>
-# $FreeBSD: head/net-mgmt/pixilate/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/net-mgmt/pixilate/Makefile 455266 2017-12-01 11:14:55Z amdmi3 $
 
 PORTNAME=	pixilate
 PORTVERSION=	0.4.2
@@ -28,8 +28,8 @@ OPTIONS_DEFINE=	DOCS
 post-patch:
 	@cd ${WRKSRC} && ${RM} INSTALL install-sh missing mkinstalldirs
 
-post-install:
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
+post-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

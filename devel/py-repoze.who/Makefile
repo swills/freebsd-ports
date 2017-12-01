@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-repoze.who/Makefile 416793 2016-06-12 11:03:12Z bofh $
+# $FreeBSD: head/devel/py-repoze.who/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	repoze.who
 PORTVERSION=	2.3
@@ -15,8 +15,8 @@ LICENSE_NAME=	Repoze License
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}webob>=0:www/py-webob \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>=3.5.2:devel/py-zope.interface
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}webob>=0:www/py-webob@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>=3.5.2:devel/py-zope.interface@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python

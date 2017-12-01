@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-autopep8/Makefile 451812 2017-10-12 08:09:32Z sunpoet $
+# $FreeBSD: head/textproc/py-autopep8/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	autopep8
 PORTVERSION=	1.3.3
@@ -12,7 +12,7 @@ COMMENT=	Automatically formats Python code to conform to the PEP 8 style guide
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycodestyle>=2.3:devel/py-pycodestyle
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycodestyle>=2.3:devel/py-pycodestyle@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

@@ -1,5 +1,5 @@
 # Created by: Andrej Ebert <andrej@ebert.su>
-# $FreeBSD: head/devel/py-rebulk/Makefile 447553 2017-08-08 17:57:15Z ultima $
+# $FreeBSD: head/devel/py-rebulk/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rebulk
 PORTVERSION=	0.9.0
@@ -12,8 +12,8 @@ COMMENT=	Python library that performs advanced searches in strings
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

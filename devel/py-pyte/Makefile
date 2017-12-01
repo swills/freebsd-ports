@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pyte/Makefile 415596 2016-05-21 12:18:34Z wg $
+# $FreeBSD: head/devel/py-pyte/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyte
 PORTVERSION=	0.5.2
@@ -11,8 +11,8 @@ COMMENT=	Simple VTXXX-compatible terminal emulator
 
 LICENSE=	LGPL3
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-runner>0:devel/py-pytest-runner
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}wcwidth>0:devel/py-wcwidth
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-runner>0:devel/py-pytest-runner@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}wcwidth>0:devel/py-wcwidth@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

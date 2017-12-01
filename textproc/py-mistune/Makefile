@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/textproc/py-mistune/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/py-mistune/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	mistune
 PORTVERSION=	0.7.2
@@ -13,7 +13,7 @@ COMMENT=	Fastest markdown parser in pure Python
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

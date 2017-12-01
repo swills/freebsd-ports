@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/math/py-fastcluster/Makefile 442493 2017-06-03 13:55:21Z tcberner $
+# $FreeBSD: head/math/py-fastcluster/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	fastcluster
 PORTVERSION=	1.1.23
@@ -14,7 +14,7 @@ LICENSE=	BSD2CLAUSE
 
 BUILD_DEPENDS=	${PYNUMPY}
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy
+		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${FLAVOR}
 
 PORTDOCS=	CITATION.txt \
 		INSTALL.txt \

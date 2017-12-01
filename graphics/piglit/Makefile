@@ -1,5 +1,5 @@
 # Created by: Jean-Sébastien Pédron <dumbbell@FreeBSD.org>
-# $FreeBSD: head/graphics/piglit/Makefile 450385 2017-09-22 15:29:50Z dumbbell $
+# $FreeBSD: head/graphics/piglit/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	piglit
 PORTVERSION=	20170922
@@ -13,16 +13,16 @@ LICENSE_COMB=	multi
 
 BUILD_DEPENDS=	${LOCALBASE}/include/CL/opencl.h:devel/opencl \
 		${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}mako>0:textproc/py-mako \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+		${PYTHON_PKGNAMEPREFIX}mako>0:textproc/py-mako@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 LIB_DEPENDS=	libcaca.so:graphics/libcaca \
 		libdrm.so:graphics/libdrm \
 		libOpenCL.so:devel/ocl-icd \
 		libpng.so:graphics/png \
 		libwaffle-1.so:graphics/waffle
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}mako>0:textproc/py-mako \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+		${PYTHON_PKGNAMEPREFIX}mako>0:textproc/py-mako@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	dumbbell

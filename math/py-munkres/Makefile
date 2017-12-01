@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/math/py-munkres/Makefile 403312 2015-12-08 17:27:27Z feld $
+# $FreeBSD: head/math/py-munkres/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	munkres
 PORTVERSION=	1.0.7
@@ -14,10 +14,6 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python
-USE_PYTHON=	distutils
-
-PLIST_FILES=	%%PYTHON_SITELIBDIR%%/munkres.py \
-		%%PYTHON_SITELIBDIR%%/munkres.pyc \
-		%%PYTHON_SITELIBDIR%%/munkres.pyo
+USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Vladimir Chukharev
-# $FreeBSD: head/devel/py-robotframework-pabot/Makefile 453468 2017-11-04 14:14:37Z dbaio $
+# $FreeBSD: head/devel/py-robotframework-pabot/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	robotframework-pabot
 PORTVERSION=	0.43
@@ -12,8 +12,8 @@ COMMENT=	Parallel executor for Robot Framework test cases
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}robotframework>=2.7.5:devel/py-robotframework \
-		${PYTHON_PKGNAMEPREFIX}robotremoteserver>=1.0.1:devel/py-robotremoteserver
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}robotframework>=2.7.5:devel/py-robotframework@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}robotremoteserver>=1.0.1:devel/py-robotremoteserver@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

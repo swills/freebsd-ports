@@ -1,5 +1,5 @@
 # Created by: Sean Bruno <sbruno@freebsd.org>
-# $FreeBSD: head/audio/idjc/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/audio/idjc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	idjc
 PORTVERSION=	0.8.16
@@ -25,8 +25,8 @@ LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 		libsamplerate.so:audio/libsamplerate \
 		libshout-idjc.so:audio/shout-idjc
 RUN_DEPENDS=	oggenc:audio/vorbis-tools \
-		${PYTHON_PKGNAMEPREFIX}mutagen>=0:audio/py-mutagen \
-		${PYTHON_PKGNAMEPREFIX}dbus>=0.8:devel/py-dbus
+		${PYTHON_PKGNAMEPREFIX}mutagen>=0:audio/py-mutagen@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dbus>=0.8:devel/py-dbus@${PY_FLAVOR}
 
 OPTIONS_DEFINE=	DOCS NLS
 OPTIONS_SUB=	YES

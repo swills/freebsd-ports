@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 454934 2017-11-27 06:49:04Z yuri $
+# $FreeBSD: head/audio/Makefile 455210 2017-11-30 15:50:30Z mat $
 #
 
     COMMENT = Audio tools
@@ -65,6 +65,7 @@
     SUBDIR += cantata
     SUBDIR += caps-lv2
     SUBDIR += caps-plugins
+    SUBDIR += carla
     SUBDIR += cava
     SUBDIR += ccaudio2
     SUBDIR += cd-console
@@ -684,8 +685,6 @@
     SUBDIR += py-tagpy
     SUBDIR += py-vorbis
     SUBDIR += py-xmms2
-    SUBDIR += py3-mutagen
-    SUBDIR += py3-pylast
     SUBDIR += pytone
     SUBDIR += qjackctl
     SUBDIR += qmidiarp
@@ -731,7 +730,6 @@
     SUBDIR += sdl_sound
     SUBDIR += sfront
     SUBDIR += shairplay
-    SUBDIR += shairport
     SUBDIR += shairport-sync
     SUBDIR += sherlock-lv2
     SUBDIR += shntool

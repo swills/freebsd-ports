@@ -1,5 +1,5 @@
 # Created by: Randy Westlund <rwestlun@gmail.com>
-# $FreeBSD: head/www/py-goobook/Makefile 427552 2016-12-02 11:58:21Z mat $
+# $FreeBSD: head/www/py-goobook/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	goobook
 PORTVERSION=	1.9
@@ -13,10 +13,10 @@ COMMENT=	Search your Google contacts from the command-line or Mutt
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}oauth2client>=1.4.12:security/py-oauth2client \
-		${PYTHON_PKGNAMEPREFIX}gdata>=2.0.18:devel/py-gdata \
-		${PYTHON_PKGNAMEPREFIX}simplejson>=2.1.0:devel/py-simplejson \
-		${PYTHON_PKGNAMEPREFIX}httplib2>=0.9.1:www/py-httplib2
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}oauth2client>=1.4.12:security/py-oauth2client@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}gdata>=2.0.18:devel/py-gdata@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}simplejson>=2.1.0:devel/py-simplejson@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}httplib2>=0.9.1:www/py-httplib2@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:-2.7

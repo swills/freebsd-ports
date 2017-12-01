@@ -1,8 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/security/p5-CryptX/Makefile 451942 2017-10-13 05:45:53Z vanilla $
+# $FreeBSD: head/security/p5-CryptX/Makefile 455203 2017-11-30 14:56:20Z vanilla $
 
 PORTNAME=	CryptX
-PORTVERSION=	0.054
+PORTVERSION=	0.055
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN/Crypt
 PKGNAMEPREFIX=	p5-

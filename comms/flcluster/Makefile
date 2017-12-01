@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/flcluster/Makefile 452156 2017-10-15 16:38:34Z db $
+# $FreeBSD: head/comms/flcluster/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	flcluster
 PORTVERSION=	1.0.3
@@ -10,7 +10,7 @@ COMMENT=	FLCLUSTER is a management tool for accessing dxcluster nodes
 
 LICENSE=	GPLv3
 
-LIB_DEPENDS=	libpng16.so:graphics/png \
+LIB_DEPENDS=	libpng.so:graphics/png \
 		libfltk.so:x11-toolkits/fltk \
 		libfontconfig.so:x11-fonts/fontconfig
 

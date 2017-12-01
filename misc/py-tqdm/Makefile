@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/py-tqdm/Makefile 455082 2017-11-28 21:56:02Z dbaio $
+# $FreeBSD: head/misc/py-tqdm/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tqdm
 PORTVERSION=	4.19.4
@@ -12,7 +12,7 @@ COMMENT=	Fast, extensible progress bar for Python
 LICENSE=	MIT MPL20
 LICENSE_COMB=	multi
 
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

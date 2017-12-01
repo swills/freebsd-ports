@@ -1,5 +1,5 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/py-vte/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/x11-toolkits/py-vte/Makefile 455210 2017-11-30 15:50:30Z mat $
 #   $MCom: ports/x11-toolkits/py-vte/Makefile,v 1.5 2010/09/30 09:15:43 kwm Exp $
 
 PORTREVISION=	3
@@ -15,8 +15,9 @@ INSTALL_WRKSRC=	${BUILD_WRKSRC}
 DESCR=		${.CURDIR}/pkg-descr
 PLIST=		${.CURDIR}/pkg-plist
 
-USES=		python
+USES=		python:2.7
 USE_GNOME=	intltool pygtk2 vte
+USE_PYTHON=	flavors
 CONFIGURE_ARGS=	--enable-python \
 		--disable-Bsymbolic \
 		--disable-freetypetest

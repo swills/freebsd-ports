@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-googleapis-common-protos/Makefile 450780 2017-09-27 19:21:52Z wg $
+# $FreeBSD: head/devel/py-googleapis-common-protos/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	googleapis-common-protos
 PORTVERSION=	1.5.3
@@ -11,7 +11,7 @@ COMMENT=	Common protobufs used in Google APIs
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}protobuf>0:devel/py-protobuf
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}protobuf>0:devel/py-protobuf@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

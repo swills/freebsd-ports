@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/silvercity/Makefile 415858 2016-05-25 19:30:59Z gerald $
+# $FreeBSD: head/textproc/silvercity/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	silvercity
 PORTVERSION=	0.9.7
@@ -11,7 +11,7 @@ DISTNAME=	SilverCity-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Lexing package for over 20 programming and markup languages
 
-USES=		dos2unix python
+USES=		dos2unix python:2.7
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGNAME=	SilverCity
 

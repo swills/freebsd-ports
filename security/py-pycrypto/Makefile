@@ -1,5 +1,5 @@
 # Created by: nbm
-# $FreeBSD: head/security/py-pycrypto/Makefile 438537 2017-04-14 18:49:32Z swills $
+# $FreeBSD: head/security/py-pycrypto/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pycrypto
 PORTVERSION=	2.6.1
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	koobs@FreeBSD.org
 COMMENT=	Python Cryptography Toolkit
 
-USES?=		python
+USES=		python
 USE_PYTHON=	distutils autoplist
 
 GNU_CONFIGURE=	yes

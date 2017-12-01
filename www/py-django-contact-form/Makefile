@@ -1,5 +1,5 @@
 # Created by: René Ladan <rene@freebsd.org>
-# $FreeBSD: head/www/py-django-contact-form/Makefile 444513 2017-06-27 17:25:53Z rene $
+# $FreeBSD: head/www/py-django-contact-form/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-contact-form
 PORTVERSION=	1.4.2
@@ -12,7 +12,7 @@ COMMENT=	Generic contact-form application for Django
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${FLAVOR}
 
 NO_ARCH=	yes
 

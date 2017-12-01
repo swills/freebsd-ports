@@ -1,5 +1,5 @@
 # Created by: timur@FreeBSD.org
-# $FreeBSD: head/net/samba45/Makefile 454662 2017-11-22 02:44:10Z timur $
+# $FreeBSD: head/net/samba45/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME?=			${SAMBA4_BASENAME}45
 PORTVERSION?=			${SAMBA4_VERSION}
@@ -123,12 +123,12 @@ RUN_DEPENDS+=			libarchive>=3.1.2:archivers/libarchive
 BUILD_DEPENDS+=			p5-Parse-Yapp>=0:devel/p5-Parse-Yapp
 PLIST_SUB+=			PIDL=""
 # External Python modules
-BUILD_DEPENDS+=			${PYTHON_PKGNAMEPREFIX}dnspython>=1.9.4:dns/py-dnspython
-RUN_DEPENDS+=			${PYTHON_PKGNAMEPREFIX}dnspython>=1.9.4:dns/py-dnspython
+BUILD_DEPENDS+=			${PYTHON_PKGNAMEPREFIX}dnspython>=1.9.4:dns/py-dnspython@${PY_FLAVOR}
+RUN_DEPENDS+=			${PYTHON_PKGNAMEPREFIX}dnspython>=1.9.4:dns/py-dnspython@${PY_FLAVOR}
 PLIST_SUB+=			PY_DNSPYTHON="@comment "
 #
-BUILD_DEPENDS+=			${PYTHON_PKGNAMEPREFIX}iso8601>=0.1.11:devel/py-iso8601
-RUN_DEPENDS+=			${PYTHON_PKGNAMEPREFIX}iso8601>=0.1.11:devel/py-iso8601
+BUILD_DEPENDS+=			${PYTHON_PKGNAMEPREFIX}iso8601>=0.1.11:devel/py-iso8601@${PY_FLAVOR}
+RUN_DEPENDS+=			${PYTHON_PKGNAMEPREFIX}iso8601>=0.1.11:devel/py-iso8601@${PY_FLAVOR}
 PLIST_SUB+=			PY_ISO8601="@comment "
 # talloc
 BUILD_DEPENDS+=			talloc>=2.1.8:devel/talloc

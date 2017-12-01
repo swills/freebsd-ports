@@ -1,5 +1,5 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/x11-toolkits/py-qt4-gui/Makefile 415984 2016-05-28 12:32:21Z pi $
+# $FreeBSD: head/x11-toolkits/py-qt4-gui/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gui
 PORTEPOCH=	1
@@ -13,6 +13,7 @@ PYQT_DIST=	yes
 
 USES=		python pyqt:4
 USE_PYQT=	sip_build core_run
+USE_PYTHON=	flavors
 USE_QT4=	corelib gui imageformats_run inputmethods_run iconengines_run \
 		moc_build qmake_build
 

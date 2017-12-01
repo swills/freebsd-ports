@@ -1,5 +1,5 @@
 # Created by: Gregory Bond <gnb@itga.com.au>
-# $FreeBSD: head/databases/py-sybase/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/databases/py-sybase/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sybase
 PORTVERSION=	0.37
@@ -16,7 +16,7 @@ LICENSE=	BSD3CLAUSE
 
 LIB_DEPENDS=	libct.so:databases/freetds
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 OPTIONS_DEFINE=	DOCS THREADS EXAMPLES

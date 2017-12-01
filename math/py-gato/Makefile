@@ -1,5 +1,5 @@
 # Created by: Johann Visagie <wjv@FreeBSD.org>
-# $FreeBSD: head/math/py-gato/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/py-gato/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gato
 PORTVERSION=	1.2.2
@@ -14,7 +14,7 @@ COMMENT=	Python-based toolbox to visualise algorithms on graphs
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/LGPL.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${FLAVOR}
 
 NO_ARCH=	yes
 PORTEXAMPLES=	*

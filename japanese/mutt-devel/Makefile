@@ -1,5 +1,5 @@
 # Created by: IWASHITA Yoji <shuna@pop16.odn.ne.jp>
-# $FreeBSD: head/japanese/mutt-devel/Makefile 441855 2017-05-27 16:48:41Z linimon $
+# $FreeBSD: head/japanese/mutt-devel/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 # WITH_MUTT_CYRUS_SASL2:	if defined, 'Cyrus sasl' support.
 #
@@ -49,6 +49,7 @@ RUN_DEPENDS=	urlview:textproc/urlview \
 
 BROKEN_aarch64=		fails to compile: conflicting types for __wcwidth
 BROKEN_armv6=		fails to compile: conflicting types for __wcwidth
+BROKEN_armv7=		fails to compile: conflicting types for __wcwidth
 
 CONFLICTS=	ja-mutt-[0-9]* mutt-[0-9]* mutt-devel-[0-9]* mutt-devel-lite-[0-9]* mutt-lite-[0-9]* zh-mutt-devel-[0-9]*
 

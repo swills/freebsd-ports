@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-drivers/xf86-video-tseng/Makefile 433863 2017-02-11 14:17:58Z rezny $
+# $FreeBSD: head/x11-drivers/xf86-video-tseng/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	xf86-video-tseng
 PORTVERSION=	1.2.5
@@ -12,5 +12,6 @@ XORG_CAT=	driver
 
 BROKEN_aarch64=		error: implicit declaration of function outb is invalid in C99
 BROKEN_armv6=		error: implicit declaration of function outb is invalid in C99
+BROKEN_armv7=		error: implicit declaration of function outb is invalid in C99
 
 .include <bsd.port.mk>

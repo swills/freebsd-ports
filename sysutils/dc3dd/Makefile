@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/sysutils/dc3dd/Makefile 441819 2017-05-27 00:20:19Z linimon $
+# $FreeBSD: head/sysutils/dc3dd/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	dc3dd
 PORTVERSION=	7.2.641
@@ -14,6 +14,7 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_armv6=		fails to compile: bit-field 'verify_error_if_negative_size__' has negative width
+BROKEN_armv7=		fails to compile: bit-field 'verify_error_if_negative_size__' has negative width
 
 USES=		gettext iconv gmake tar:bzip2
 GNU_CONFIGURE=	yes

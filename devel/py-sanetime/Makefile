@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-sanetime/Makefile 448583 2017-08-22 21:40:16Z antoine $
+# $FreeBSD: head/devel/py-sanetime/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sanetime
 PORTVERSION=	4.2.3
@@ -14,9 +14,9 @@ COMMENT=	Sane date/time Python interface, with Django support
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=1.5:devel/py-dateutil \
-		${PYTHON_PKGNAMEPREFIX}pytz>=2010:devel/py-pytz
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}unittest2>=0:devel/py-unittest2
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=1.5:devel/py-dateutil@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytz>=2010:devel/py-pytz@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}unittest2>=0:devel/py-unittest2@${FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

@@ -1,5 +1,5 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/devel/py-intervaltree/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-intervaltree/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	intervaltree
 PORTVERSION=	2.1.0
@@ -13,7 +13,7 @@ COMMENT=	Editable interval tree data structure for Python 2 and 3
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sortedcontainers>=0:devel/py-sortedcontainers
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sortedcontainers>=0:devel/py-sortedcontainers@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

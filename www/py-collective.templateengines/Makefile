@@ -1,5 +1,5 @@
 # Created by: Michelle Sullivan <michelle@sorbs.net>
-# $FreeBSD: head/www/py-collective.templateengines/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-collective.templateengines/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	collective.templateengines
 PORTVERSION=	0.3.5
@@ -13,7 +13,7 @@ COMMENT=	Template engine abstraction layer for Python
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Products.CMFCore>=2.1.0:devel/py-Products.CMFCore
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Products.CMFCore>=2.1.0:devel/py-Products.CMFCore@${FLAVOR}
 
 USES=		python:2 zip
 USE_PYTHON=	distutils autoplist

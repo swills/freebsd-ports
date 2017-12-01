@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.app.i18n/Makefile 405756 2016-01-10 23:10:45Z rm $
+# $FreeBSD: head/www/py-plone.app.i18n/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	plone.app.i18n
 PORTVERSION=	2.0.3
@@ -13,7 +13,7 @@ COMMENT=	Plone specific i18n extensions
 LICENSE=	GPLv2
 
 NO_ARCH=	yes
-USES=		python zip
+USES=		python:2.7 zip
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

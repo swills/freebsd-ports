@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/py-django-recaptcha/Makefile 427571 2016-12-02 16:18:47Z tj $
+# $FreeBSD: head/www/py-django-recaptcha/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	recaptcha
 PORTVERSION=	1.1.0
@@ -11,7 +11,7 @@ DISTNAME=	django-${PORTNAME}-${PORTVERSION}
 MAINTAINER=	tj@FreeBSD.org
 COMMENT=	Django reCAPTCHA form field/widget integration app
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/aws-sdk-cpp/Makefile 454608 2017-11-21 13:01:16Z arved $
+# $FreeBSD: head/devel/aws-sdk-cpp/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	aws-sdk-cpp
 PORTVERSION=	1.3.1
@@ -14,6 +14,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl
 
 BROKEN_aarch64=		fails to build: runaway process
 BROKEN_armv6=		fails to build: runaway process
+BROKEN_armv7=		fails to build: runaway process
 BROKEN_powerpc64=	fails to build: runaway process
 
 USE_GITHUB=	yes

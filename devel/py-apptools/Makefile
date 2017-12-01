@@ -1,5 +1,5 @@
 # Created by: Vladimir Chukharev
-# $FreeBSD: head/devel/py-apptools/Makefile 419638 2016-08-04 17:48:00Z pi $
+# $FreeBSD: head/devel/py-apptools/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	apptools
 PORTVERSION=	4.4.0
@@ -15,8 +15,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 # See ${WRKSRC}/image_LICENSE.txt for information that other
 # files *LICENSE* are not used
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}traits>=4.5.0:devel/py-traits \
-		${PYTHON_PKGNAMEPREFIX}configobj>=5.0.:devel/py-configobj
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}traits>=4.5.0:devel/py-traits@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}configobj>=5.0.:devel/py-configobj@${FLAVOR}
 
 USES=		python:-2.7
 USE_PYTHON=	autoplist distutils

@@ -1,5 +1,5 @@
 # Created by: Michael Gmelin <grembo@FreeBSD.org>
-# $FreeBSD: head/devel/py-ramlfications/Makefile 436023 2017-03-12 20:15:40Z grembo $
+# $FreeBSD: head/devel/py-ramlfications/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ramlfications
 PORTVERSION=	0.1.9
@@ -13,11 +13,11 @@ COMMENT=	Python parser for RAML
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}attrs>=16.0.0:devel/py-attrs \
-		${PYTHON_PKGNAMEPREFIX}jsonref>=0.1:devel/py-jsonref \
-		${PYTHON_PKGNAMEPREFIX}markdown2>=2.3.2:textproc/py-markdown2 \
-		${PYTHON_PKGNAMEPREFIX}xmltodict>=0.10.1:devel/py-xmltodict \
-		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}attrs>=16.0.0:devel/py-attrs@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}jsonref>=0.1:devel/py-jsonref@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}markdown2>=2.3.2:textproc/py-markdown2@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}xmltodict>=0.10.1:devel/py-xmltodict@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${FLAVOR}
 
 USES?=		python
 USE_PYTHON=	autoplist distutils

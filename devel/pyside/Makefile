@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/pyside/Makefile 441946 2017-05-28 23:16:31Z sunpoet $
+# $FreeBSD: head/devel/pyside/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyside
 PORTVERSION=	1.2.2
@@ -30,6 +30,7 @@ PLIST_SUB=	PORTVERSION=${PORTVERSION} \
 		PYTHON_VERSION=${PYTHON_VERSION}
 
 USES=		cmake python:2 tar:bzip2
+USE_PYTHON=	flavors
 USE_LDCONFIG=	yes
 
 .include <bsd.port.pre.mk>

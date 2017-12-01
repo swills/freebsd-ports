@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/www/py-requests-oauthlib/Makefile 419051 2016-07-25 18:00:26Z rene $
+# $FreeBSD: head/www/py-requests-oauthlib/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	requests-oauthlib
 PORTVERSION=	0.6.2
@@ -12,9 +12,9 @@ COMMENT=	OAuthlib authentication support for Requests
 
 LICENSE=	ISCL
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}oauthlib>=0.6.2:security/py-oauthlib \
-		${PYTHON_PKGNAMEPREFIX}requests>=2.0.0:www/py-requests
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}oauthlib>=0.6.2:security/py-oauthlib@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=2.0.0:www/py-requests@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

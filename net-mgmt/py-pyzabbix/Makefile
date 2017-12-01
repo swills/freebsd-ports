@@ -1,5 +1,5 @@
 # Created by: Fotis Zabaras <fotis@zabaras.eu>
-# $FreeBSD: head/net-mgmt/py-pyzabbix/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/py-pyzabbix/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyzabbix
 PORTVERSION=	0.7.4
@@ -12,7 +12,7 @@ COMMENT=	Zabbix API Python Library
 
 LICENSE=	LGPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=1.0:www/py-requests
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=1.0:www/py-requests@${FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/solaar/Makefile 440475 2017-05-09 09:13:19Z tobik $
+# $FreeBSD: head/sysutils/solaar/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	solaar
 PORTVERSION=	g20170327
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 RUN_DEPENDS=	${LOCALBASE}/lib/libhidapi.so:comms/hidapi
 
 USES=	python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist concurrent optsuffix
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	pwr
@@ -29,7 +29,7 @@ GH_TAGNAME=	53ec751
 NO_ARCH=	yes
 
 OPTIONS_DEFINE=	GUI
-GUI_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gobject3>=0:devel/py${PYTHON_MAJOR_VER:S/2//}-gobject3
+GUI_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gobject3>=0:devel/py-gobject3@${FLAVOR}
 
 post-patch:
 	@${CP} ${FILESDIR}/hidapi.py ${WRKSRC}/lib/hidapi/udev.py

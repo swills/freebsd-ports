@@ -1,5 +1,5 @@
 # Created by: Ilya A. Arkhipov <rum1cro@yandex.ru>
-# $FreeBSD: head/textproc/py-pyscss/Makefile 423080 2016-10-01 16:22:39Z pawel $
+# $FreeBSD: head/textproc/py-pyscss/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyscss
 PORTVERSION=	1.3.5
@@ -12,11 +12,10 @@ COMMENT=	Compiler for SCSS flavor of the Sass language
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six \
-		${PYTHON_PKGNAMEPREFIX}enum34>0:devel/py-enum34 \
-		${PYTHON_PKGNAMEPREFIX}pathlib>0:devel/py-pathlib
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR} \
+		${PY_ENUM34} ${PY_PATHLIB}
 LIB_DEPENDS=	libpcre.so:devel/pcre
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Kronuz

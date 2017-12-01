@@ -1,5 +1,5 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/www/py-django-markdownx/Makefile 447956 2017-08-14 18:50:15Z cs $
+# $FreeBSD: head/www/py-django-markdownx/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-markdownx
 PORTVERSION=	2.0.21
@@ -12,8 +12,8 @@ COMMENT=	Django Markdown editor with image uploads and live preview
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18 \
-		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${FLAVOR}
 
 USE_GITHUB=	yes
 

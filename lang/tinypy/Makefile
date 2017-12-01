@@ -1,5 +1,5 @@
 # Created by: Marcin Cieslak <saper@SYSTEM.PL>
-# $FreeBSD: head/lang/tinypy/Makefile 451494 2017-10-08 07:12:20Z antoine $
+# $FreeBSD: head/lang/tinypy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tinypy
 PORTVERSION=	1.1
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 GH_ACCOUNT=	philhassey
 
-USES=		python:build
+USES=		python:2.7,build
 USE_PYTHON=	distutils noegginfo
 USE_GITHUB=	yes
 

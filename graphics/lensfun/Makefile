@@ -1,5 +1,5 @@
 # Created by: Denis Barov <dindin@dindin.ru>
-# $FreeBSD: head/graphics/lensfun/Makefile 431560 2017-01-15 13:36:16Z mandree $
+# $FreeBSD: head/graphics/lensfun/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	lensfun
 PORTVERSION=	0.3.2
@@ -28,8 +28,8 @@ PYHELPERS_DESC=	Install database helper scripts (need Python 3)
 
 SIMD_CMAKE_OFF=	-DBUILD_FOR_SSE:BOOL=OFF -DBUILD_FOR_SSE2:BOOL=OFF
 
-PYHELPERS_CMAKE_ON=	-DSTAGEDIR:STRING=${STAGEDIR}
+PYHELPERS_CMAKE_ON=	-DSTAGEDIR:STRING=${STAGEDIR} -DPYTHON:STRING=${PYTHON_CMD}
 PYHELPERS_CMAKE_OFF=	-DINSTALL_HELPER_SCRIPTS:BOOL=OFF -DPYTHON:STRING=IGNORE
-PYHELPERS_USES=		python:3
+PYHELPERS_USES=		python:3.4+
 
 .include <bsd.port.mk>

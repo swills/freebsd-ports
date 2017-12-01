@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/codespell/Makefile 429918 2016-12-29 14:29:18Z amdmi3 $
+# $FreeBSD: head/textproc/codespell/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	codespell
 PORTVERSION=	1.8
@@ -10,7 +10,7 @@ COMMENT=	Source code spelling checker
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		python:3
+USES=		python:3.4+
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	lucasdemarchi

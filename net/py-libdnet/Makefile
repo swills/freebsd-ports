@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/net/py-libdnet/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/net/py-libdnet/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 CATEGORIES=	net python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,7 +17,8 @@ PLIST_FILES=	%%PYTHON_SITELIBDIR%%/dnet.so \
 
 LIBDNET_SLAVE=	yes
 
-USES=		python
+USES=		python:2.7
+USE_PYTHON=	flavors
 CONFIGURE_ARGS=	--with-python=${PYTHON_CMD}
 
 .if defined(MAINTAINER_MODE)

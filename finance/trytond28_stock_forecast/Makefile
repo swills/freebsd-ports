@@ -1,5 +1,5 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/finance/trytond28_stock_forecast/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/trytond28_stock_forecast/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	trytond28_stock_forecast
 PORTVERSION=	2.8.2
@@ -13,12 +13,12 @@ COMMENT=	Tryton Application Platform (Stock Forecast Module)
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=1.5:devel/py-dateutil \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=1.5:devel/py-dateutil@${FLAVOR} \
 		trytond28_stock>=2.8.2:finance/trytond28_stock
 
 CONFLICTS=	trytond_stock_forecast-2.[46].*
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

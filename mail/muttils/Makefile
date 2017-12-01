@@ -1,5 +1,5 @@
 # Created by: Jason Helfman <jhelfman@experts-exchange.com>
-# $FreeBSD: head/mail/muttils/Makefile 371330 2014-10-21 17:10:06Z mva $
+# $FreeBSD: head/mail/muttils/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	muttils
 PORTVERSION=	1.3
@@ -15,7 +15,7 @@ CONFLICTS=	zh-wenju-[0-9]* talkfilters-[0-9]* reed-[0-9]*
 
 CHANGESET=	8bb26094df06
 WRKSRC=		${WRKDIR}/blacktrash-${PORTNAME}-${CHANGESET}
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 PORTEXAMPLES=	*

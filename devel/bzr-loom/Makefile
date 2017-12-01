@@ -1,5 +1,5 @@
 # Created by: Carlo Strub <c-s@c-s.li>
-# $FreeBSD: head/devel/bzr-loom/Makefile 415839 2016-05-25 15:43:34Z mat $
+# $FreeBSD: head/devel/bzr-loom/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	bzr-loom
 PORTVERSION=	2.2.0
@@ -16,7 +16,7 @@ LICENSE=	GPLv2
 BUILD_DEPENDS=	bzr:devel/bzr
 RUN_DEPENDS=	bzr:devel/bzr
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

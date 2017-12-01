@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/lang/io/Makefile 450108 2017-09-19 10:13:08Z gahr $
+# $FreeBSD: head/lang/io/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	io
 PORTVERSION=	2017.09.06
@@ -12,6 +12,7 @@ COMMENT=	Small prototype-based programming language
 LICENSE=	BSD3CLAUSE
 
 BROKEN_armv6=		fails to compile: ucontext.h: expected parameter declarator
+BROKEN_armv7=		fails to compile: Coro.c:392:2: no member named 'arm_r0' in 'mcontext_t'
 
 USES=		cmake:outsource,noninja compiler:c11 ssl
 

@@ -1,5 +1,5 @@
 # Created by: John Prather
-# $FreeBSD: head/net-im/pidgin-sipe/Makefile 441850 2017-05-27 16:00:49Z linimon $
+# $FreeBSD: head/net-im/pidgin-sipe/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	pidgin-sipe
 PORTVERSION=	1.21.1
@@ -22,6 +22,7 @@ LIB_DEPENDS=	libnss3.so:security/nss \
 RUN_DEPENDS=	pidgin:net-im/pidgin
 
 BROKEN_armv6=		fails to compile: cast from 'struct sipe_core_public *' to 'struct sipe_core_private *' increases required alignment from 4 to 8
+BROKEN_armv7=		fails to compile: cast from 'struct sipe_core_public *' to 'struct sipe_core_private *' increases required alignment from 4 to 8
 
 GNU_CONFIGURE=	yes
 USES=		gmake libtool localbase pkgconfig tar:bzip2 ssl

@@ -1,5 +1,5 @@
 # Created by: Timothy Beyer <beyert@cs.ucr.edu>
-# $FreeBSD: head/japanese/tegaki-recognize/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/tegaki-recognize/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tegaki
 PORTVERSION=	0.3.1.2
@@ -14,7 +14,7 @@ COMMENT=	Open-Source Chinese and Japanese Handwriting Recognition
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libzinnia.so:japanese/zinnia
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/tegakigtk/recognizer.py:japanese/py-tegaki-gtk
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/tegakigtk/recognizer.py:japanese/py-tegaki-gtk@${FLAVOR}
 
 OPTIONS_DEFINE=	DOCS
 

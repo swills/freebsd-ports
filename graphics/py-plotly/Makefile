@@ -1,5 +1,5 @@
 # Created by: jjachuf@gmail.com
-# $FreeBSD: head/graphics/py-plotly/Makefile 439006 2017-04-21 06:22:25Z miwi $
+# $FreeBSD: head/graphics/py-plotly/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	plotly
 PORTVERSION=	2.0.7
@@ -12,9 +12,9 @@ COMMENT=	Plotting library for collaborative, interactive, publication-quality gr
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six \
-		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

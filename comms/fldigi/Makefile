@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/fldigi/Makefile 453137 2017-10-29 20:55:50Z db $
+# $FreeBSD: head/comms/fldigi/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	fldigi
 PORTVERSION=	4.0.12
@@ -14,7 +14,7 @@ BUILD_DEPENDS=	asciidoc:textproc/asciidoc\
 		docbook-xsl>=1.0:textproc/docbook-xsl\
 		xsltproc:textproc/libxslt
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs\
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libfltk.so:x11-toolkits/fltk \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libportaudio.so:audio/portaudio \

@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/print/pkpgcounter/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/pkpgcounter/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pkpgcounter
 PORTVERSION=	3.50
@@ -10,13 +10,13 @@ MASTER_SITES=	http://www.pykota.com/software/pkpgcounter/download/tarballs/
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Count pages and ink coverage percent
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 PORTDOCS=	README COPYING BUGS CREDITS NEWS
 OPTIONS_DEFINE=	DOCS

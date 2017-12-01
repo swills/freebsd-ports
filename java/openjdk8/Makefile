@@ -1,7 +1,8 @@
-# $FreeBSD: head/java/openjdk8/Makefile 454477 2017-11-19 05:14:20Z glewis $
+# $FreeBSD: head/java/openjdk8/Makefile 455243 2017-12-01 01:56:02Z jkim $
 
 PORTNAME=	openjdk
 PORTVERSION=	${JDK_MAJOR_VERSION}.${JDK_UPDATE_VERSION}.${JDK_BUILD_NUMBER:S/^0//}
+PORTREVISION=	1
 CATEGORIES=	java devel
 MASTER_SITES=	http://download.java.net/openjdk/jdk${JDK_MAJOR_VERSION}/promoted/b${DIST_BUILD_NUMBER}/:jdk \
 		https://adopt-openjdk.ci.cloudbees.com/job/jtreg/${JTREG_JENKINS_BUILD}/artifact/:jtreg \

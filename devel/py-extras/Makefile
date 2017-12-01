@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-extras/Makefile 448354 2017-08-20 03:12:19Z koobs $
+# $FreeBSD: head/devel/py-extras/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	extras
 PORTVERSION=	1.0.0
@@ -13,7 +13,7 @@ COMMENT=	Useful extra bits for Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}testtools>0:devel/py-testtools
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}testtools>0:devel/py-testtools@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

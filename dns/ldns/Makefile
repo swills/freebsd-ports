@@ -1,5 +1,5 @@
 # Created by: Konstantin Saurbier <saurbier@math.uni-bielefeld.de>
-# $FreeBSD: head/dns/ldns/Makefile 446473 2017-07-23 13:13:11Z sunpoet $
+# $FreeBSD: head/dns/ldns/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ldns
 PORTVERSION=	1.7.0
@@ -59,13 +59,14 @@ EXAMPLES_INSTALL_TARGET=	install-examples
 
 .if defined(BUILD_PYLDNS)
 USES+=		python
+USE_PYTHON=	flavors
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 ALL_TARGET=	pyldns
 INSTALL_TARGET=	install-pyldns
 
 CONFIGURE_ARGS+=--with-pyldns
 LIB_DEPENDS+=	libldns.so:dns/ldns
-BUILD_DEPENDS+=	${LOCALBASE}/bin/swig:devel/swig13
+BUILD_DEPENDS+=	swig2.0:devel/swig20
 CFLAGS+=	-I${OPENSSLINC}
 
 post-patch:

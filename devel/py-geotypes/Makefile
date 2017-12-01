@@ -1,5 +1,5 @@
 # Created by: wenheping@gmail.com
-# $FreeBSD: head/devel/py-geotypes/Makefile 386691 2015-05-18 17:07:45Z mat $
+# $FreeBSD: head/devel/py-geotypes/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	geotypes
 PORTVERSION=	0.7.0
@@ -12,7 +12,7 @@ COMMENT=	Python Interface to Support PostGIS
 
 LICENSE=	LGPL21
 
-USES=			python
+USES=			python:2.7
 USE_PYTHON=		distutils
 PYTHON_PKGNAMEPREFIX=	yes
 PYDISTUTILS_EGGINFO=	GeoTypes-0.7.0-py${PYTHON_VER}.egg-info

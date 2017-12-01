@@ -1,5 +1,5 @@
 # Created by: Dryice Liu	<dryice@dryice.name>
-# $FreeBSD: head/www/py-pastedeploy/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-pastedeploy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	PasteDeploy
 PORTVERSION=	1.5.2
@@ -12,7 +12,7 @@ COMMENT=	Load, configure, and compose WSGI applications and servers
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Paste>=1.6:www/py-paste
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Paste>=1.6:www/py-paste@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python

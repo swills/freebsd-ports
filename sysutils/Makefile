@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 454914 2017-11-26 18:28:54Z dbaio $
+# $FreeBSD: head/sysutils/Makefile 455233 2017-11-30 21:34:42Z lifanov $
 #
 
     COMMENT = System utilities
@@ -39,6 +39,7 @@
     SUBDIR += android-file-transfer-qt5
     SUBDIR += ansible
     SUBDIR += ansible1
+    SUBDIR += ansible23
     SUBDIR += anvil
     SUBDIR += apachetop
     SUBDIR += apcpwr
@@ -930,9 +931,6 @@
     SUBDIR += py-uptime
     SUBDIR += py-zdaemon
     SUBDIR += py-zfs
-    SUBDIR += py3-execnet
-    SUBDIR += py3-pkginfo
-    SUBDIR += py3-ptyprocess
     SUBDIR += pydf
     SUBDIR += qchroot
     SUBDIR += qjail

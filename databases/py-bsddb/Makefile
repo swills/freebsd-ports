@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@FreeBSD.org>
-# $FreeBSD: head/databases/py-bsddb/Makefile 419843 2016-08-08 13:46:50Z mat $
+# $FreeBSD: head/databases/py-bsddb/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	bsddb
 PORTVERSION=	${PYTHON_PORTVERSION}
@@ -17,7 +17,7 @@ LICENSE=	PSFL
 PORTSCOUT=	ignore:1
 
 USE_PYTHON=	distutils autoplist
-USES=		bdb python tar:xz
+USES=		bdb python:2.7 tar:xz
 
 DIST_SUBDIR=	python
 DISTINFO_FILE=	${PORTSDIR}/lang/python${PYTHON_SUFFIX}/distinfo
@@ -27,12 +27,6 @@ PYDISTUTILS_INSTALLARGS+=	--install-lib ${PYTHON_LIBDIR}/lib-dynload
 
 MAKE_ENV=	BSDDB_VERSION=${BDB_LIB_NAME}
 
-.include <bsd.port.pre.mk>
-
-.if ${PYTHON_REL} >= 3000
-IGNORE=	bsddb package was removed from core standard library since 3.0, use databases/py-bsddb3 instead
-.endif
-
 post-extract:
 	@${CP} ${FILESDIR}/setup.py ${WRKSRC}
 
@@ -41,4 +35,4 @@ post-patch:
 		's,^\(#include.*\)\(db\.h.*\)$$,\1${BDB_INCLUDE_DIR}/\2,' \
 		${WRKSRC}/bsddb.h
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

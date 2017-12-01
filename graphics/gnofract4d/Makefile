@@ -1,5 +1,5 @@
 # Created by: Will Andrews <andrews@technologist.com>
-# $FreeBSD: head/graphics/gnofract4d/Makefile 439075 2017-04-21 14:13:43Z amdmi3 $
+# $FreeBSD: head/graphics/gnofract4d/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gnofract4d
 DISTVERSIONPREFIX=	V_
@@ -21,7 +21,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	edyoung
 
 USES=		desktop-file-utils display:build jpeg localbase pathfix \
-		pkgconfig python shared-mime-info shebangfix
+		pkgconfig python:2.7 shared-mime-info shebangfix
 SHEBANG_FILES=	fractutils/get.py
 USE_GNOME=	intlhack libxslt:build pygtk2
 USE_PYTHON=	distutils autoplist

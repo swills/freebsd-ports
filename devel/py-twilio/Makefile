@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-twilio/Makefile 454389 2017-11-17 22:15:52Z olgeni $
+# $FreeBSD: head/devel/py-twilio/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	twilio
 PORTVERSION=	6.9.0
@@ -11,9 +11,9 @@ COMMENT=	Python module for communicating with the Twilio API
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}httplib2>=0:www/py-httplib2 \
-		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six \
-		${PYTHON_PKGNAMEPREFIX}pytz>=0:devel/py-pytz
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}httplib2>=0:www/py-httplib2@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytz>=0:devel/py-pytz@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

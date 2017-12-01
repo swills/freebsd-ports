@@ -1,5 +1,5 @@
 # Created by: bsam
-# $FreeBSD: head/deskutils/wammu/Makefile 429356 2016-12-24 14:26:21Z vanilla $
+# $FreeBSD: head/deskutils/wammu/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	wammu
 PORTVERSION=	0.43
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libGammu.so:comms/gammu
 
-USES=		gettext pkgconfig python tar:bz2
+USES=		gettext pkgconfig python:2.7 tar:bz2
 USE_PYTHON=	distutils autoplist
 USE_WX=		3.0+
 WX_COMPS=	python:lib

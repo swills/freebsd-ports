@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/py-pyteomics.biolccc/Makefile 424339 2016-10-20 15:58:12Z rakuco $
+# $FreeBSD: head/science/py-pyteomics.biolccc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyteomics.biolccc
 PORTVERSION=	1.5.0
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python bindings for BioLCCC
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Mykola Khotyaintsev <ko@irfu.se>
-# $FreeBSD: head/math/vtk5/Makefile 448656 2017-08-24 09:13:09Z araujo $
+# $FreeBSD: head/math/vtk5/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	vtk
 PORTVERSION=	5.10.1
@@ -138,7 +138,7 @@ IGNORE=		python wrapping requires shared libraries.\
 		Run make config again and enable the SHARED option
 .endif
 USES+=		python
-USE_PYTHON=	distutils
+USE_PYTHON=	distutils noflavors
 PYDISTUTILS_PKGNAME=	VTK
 # INSTALLS_EGGINFO support has been removed
 # INSTALLS_EGGINFO=	yes

@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/dns/py-dnspython/Makefile 424779 2016-10-27 17:27:56Z rm $
+# $FreeBSD: head/dns/py-dnspython/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	dnspython
 PORTVERSION=	1.15.0
@@ -14,12 +14,12 @@ LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_ARCH=	yes
-USES?=		python:2.7+
+USES=		python:2.7+
 USE_PYTHON=	autoplist distutils
 
 OPTIONS_DEFINE=	EXAMPLES PYCRYPTO
 PYCRYPTO_DESC=	Enable pycrypto (part of dnssec needs it)
-PYCRYPTO_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto
+PYCRYPTO_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto@${FLAVOR}
 
 PORTEXAMPLES=	ddns.py e164.py mx.py name.py reverse.py reverse_name.py \
 		xfr.py zonediff.py

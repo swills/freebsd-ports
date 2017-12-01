@@ -1,5 +1,5 @@
 # Created by: nbm
-# $FreeBSD: head/devel/py-sip/Makefile 439794 2017-04-30 10:07:23Z tcberner $
+# $FreeBSD: head/devel/py-sip/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sip
 PORTVERSION=	${SIP_VERSION}
@@ -13,7 +13,7 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python to C and C++ bindings generator
 
 USES=		python pyqt:sip
-USE_PYTHON=	concurrent py3kplist
+USE_PYTHON=	concurrent py3kplist flavors
 USE_PYQT=	#
 
 CONFIGURE_ARGS=	-b ${PREFIX}/bin -d ${PYTHONPREFIX_SITELIBDIR} \
@@ -29,6 +29,8 @@ DEBUG_CONFIGURE_ON=	--debug
 
 do-configure:
 	cd ${WRKSRC} && ${PYTHON_CMD} configure.py ${CONFIGURE_ARGS}
+	${REINPLACE_CMD} -e '/sip_bin.:/s|'\'',$$|-${PYTHON_VER}'\'',|' \
+		${WRKSRC}/sipconfig.py
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR} && cd ${WRKSRC}/doc/html && \

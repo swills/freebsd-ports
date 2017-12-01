@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/textproc/itstool/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/itstool/Makefile 455252 2017-12-01 08:05:22Z mat $
 #   $MCom: ports/trunk/textproc/itstool/Makefile 19804 2014-08-13 14:55:11Z kwm $
 
 PORTNAME=	itstool
@@ -13,8 +13,8 @@ COMMENT=	Make XML documents translatable through po files
 
 LICENSE=	GPLv3
 
-BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/libxml2.py:textproc/py-libxml2
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/libxml2.py:textproc/py-libxml2
+BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/libxml2.py:textproc/py-libxml2@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/libxml2.py:textproc/py-libxml2@${PY_FLAVOR}
 
 USES=		python:2,run tar:bzip2
 GNU_CONFIGURE=	yes

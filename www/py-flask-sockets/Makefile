@@ -1,5 +1,5 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/www/py-flask-sockets/Makefile 417032 2016-06-17 19:49:20Z antoine $
+# $FreeBSD: head/www/py-flask-sockets/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	Flask-Sockets
 PORTVERSION=	0.2.1
@@ -12,9 +12,9 @@ COMMENT=	Elegant WebSockets for your Flask apps
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0:www/py-flask \
-		${PYTHON_PKGNAMEPREFIX}gevent>=0:devel/py-gevent \
-		${PYTHON_PKGNAMEPREFIX}gevent-websocket>=0:www/py-gevent-websocket
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0:www/py-flask@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}gevent>=0:devel/py-gevent@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}gevent-websocket>=0:www/py-gevent-websocket@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

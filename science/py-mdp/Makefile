@@ -1,5 +1,5 @@
 # Created by: Li-Lun Wang <llwang@infor.org>
-# $FreeBSD: head/science/py-mdp/Makefile 412981 2016-04-10 19:04:12Z bofh $
+# $FreeBSD: head/science/py-mdp/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	mdp
 PORTVERSION=	3.5
@@ -26,7 +26,7 @@ SCIPY_DESC=	Instal SciPy versions of eigensolver, FFT and convolution
 
 LIBSVM_RUN_DEPENDS=	libsvm>2.91:science/libsvm \
 			libsvm-python>2.91:science/libsvm-python
-PP_RUN_DEPENDS=		${PYTHON_PKGNAMEPREFIX}pp>0:devel/py-pp
-SCIPY_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}scipy>=0.5.2:science/py-scipy
+PP_RUN_DEPENDS=		${PYTHON_PKGNAMEPREFIX}pp>0:devel/py-pp@${FLAVOR}
+SCIPY_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}scipy>=0.5.2:science/py-scipy@${FLAVOR}
 
 .include <bsd.port.mk>

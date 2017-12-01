@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@FreeBSD.org>
-# $FreeBSD: head/devel/py-urwid/Makefile 442045 2017-05-30 01:48:40Z sunpoet $
+# $FreeBSD: head/devel/py-urwid/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	urwid
 PORTVERSION=	1.3.1
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 OPTIONS_DEFINE=	EXAMPLES
 
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 PORTEXAMPLES=	*

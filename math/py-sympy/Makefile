@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/py-sympy/Makefile 448870 2017-08-28 15:03:24Z wen $
+# $FreeBSD: head/math/py-sympy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sympy
 PORTVERSION=	1.1.1
@@ -12,7 +12,7 @@ COMMENT=	Python Library For Symbolic Mathematics
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mpmath>=0.19:math/py-mpmath
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mpmath>=0.19:math/py-mpmath@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils
@@ -20,7 +20,7 @@ USE_PYTHON=	autoplist distutils
 OPTIONS_DEFINE=	PYGLET
 PYGLET_DESC=	Enable plotting support
 
-PYGLET_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyglet>=1.1.2:graphics/py-pyglet
+PYGLET_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyglet>=1.1.2:graphics/py-pyglet@${FLAVOR}
 
 post-patch:
 	@${REINPLACE_CMD} -e "s#share/man/man1#man/man1#" ${WRKSRC}/setup.py

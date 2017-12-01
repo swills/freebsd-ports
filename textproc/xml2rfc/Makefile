@@ -1,5 +1,5 @@
 # Created by: jabley@automagic.org
-# $FreeBSD: head/textproc/xml2rfc/Makefile 443470 2017-06-12 20:44:01Z marcus $
+# $FreeBSD: head/textproc/xml2rfc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	xml2rfc
 PORTVERSION=	2.6.1
@@ -11,10 +11,10 @@ COMMENT=	Tool to create RFCs and related documents from XML, as per RFC2629
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=2.2.8:devel/py-lxml \
-		${PYTHON_PKGNAMEPREFIX}requests>=2.5.0:www/py-requests
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=2.2.8:devel/py-lxml@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=2.5.0:www/py-requests@${FLAVOR}
 
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist concurrent optsuffix
 
 .include <bsd.port.mk>

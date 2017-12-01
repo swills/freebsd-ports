@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-libtaxii/Makefile 437736 2017-04-04 14:07:34Z feld $
+# $FreeBSD: head/devel/py-libtaxii/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	libtaxii
 PORTVERSION=	1.1.110
@@ -13,9 +13,9 @@ COMMENT=	Python library for handling TAXII Messages and invoking TAXII Services
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=2.2.3:devel/py-lxml \
-		${PYTHON_PKGNAMEPREFIX}dateutil>=1.4.1:devel/py-dateutil \
-		${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=2.2.3:devel/py-lxml@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dateutil>=1.4.1:devel/py-dateutil@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils

@@ -1,5 +1,5 @@
 # Created by: Melvyn Sopacua <melvyn@magemana.nl>
-# $FreeBSD: head/www/py-django-datetime-widget/Makefile 420752 2016-08-24 02:17:02Z vanilla $
+# $FreeBSD: head/www/py-django-datetime-widget/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-datetime-widget
 PORTVERSION=	0.9.3
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple and clean widget for DateTimeField
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18@${FLAVOR}
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt

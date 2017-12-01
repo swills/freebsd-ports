@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/rpy/Makefile 453453 2017-11-04 11:43:35Z dbaio $
+# $FreeBSD: head/math/rpy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rpy
 PORTVERSION=	1.0.3
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	${PYNUMPY}
 LIB_DEPENDS=	libR.so:math/R
 RUN_DEPENDS=	${PYNUMPY}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 LDFLAGS+=	-L${LOCALBASE}/lib/R/modules -L${LOCALBASE}/lib/R/lib
 

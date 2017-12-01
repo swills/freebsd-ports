@@ -1,5 +1,5 @@
 # Created by: Simun Mikecin <numisemis@yahoo.com>
-# $FreeBSD: head/lang/see/Makefile 452834 2017-10-25 08:35:26Z pizzamig $
+# $FreeBSD: head/lang/see/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	see
 PORTVERSION=	3.1.1424
@@ -22,6 +22,7 @@ LICENSE_PERMS_DTOA.C=	${_LICENSE_PERMS_DEFAULT}
 
 BROKEN_aarch64=		fails to configure: floating point not detected: Exactly one of IEEE_8087, IEEE_MC68k, VAX, or IBM should be defined
 BROKEN_armv6=		fails to configure: floating point not detected: Exactly one of IEEE_8087, IEEE_MC68k, VAX, or IBM should be defined
+BROKEN_armv7=		fails to configure: floating point not detected: Exactly one of IEEE_8087, IEEE_MC68k, VAX, or IBM should be defined
 
 OPTIONS_DEFINE=	GC DEBUG DOCS
 OPTIONS_DEFAULT=	GC

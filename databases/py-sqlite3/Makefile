@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/databases/py-sqlite3/Makefile 415501 2016-05-19 10:57:35Z amdmi3 $
+# $FreeBSD: head/databases/py-sqlite3/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sqlite3
 PORTVERSION=	${PYTHON_PORTVERSION}
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libsqlite3.so:databases/sqlite3
 PORTSCOUT=	ignore:1
 
 USES=		python tar:xz
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils allflavors
 
 DISTINFO_FILE=	${PORTSDIR}/lang/python${PYTHON_SUFFIX}/distinfo
 WRKSRC=		${WRKDIR}/Python-${PORTVERSION}/Modules

@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/www/py-evernote/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-evernote/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	evernote
 PORTVERSION=	1.25.1
@@ -12,8 +12,8 @@ COMMENT=	Evernote SDK for Python
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}oauth2>0:net/py-oauth2 \
-		${PYTHON_PKGNAMEPREFIX}thrift>0:devel/py-thrift
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}oauth2>0:net/py-oauth2@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}thrift>0:devel/py-thrift@${FLAVOR}
 
 USES=		python:-2.7
 USE_PYTHON=	autoplist distutils

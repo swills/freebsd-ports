@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/emulators/loemu/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/emulators/loemu/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	loemu
 PORTVERSION=	0.3.1
@@ -16,7 +16,7 @@ RUN_DEPENDS=	${PYTHON_SITELIBDIR}/gtk-2.0/gtk/__init__.py:x11-toolkits/py-gtk2 \
 		${PYTHON_SITELIBDIR}/libxml2.py:textproc/py-libxml2 \
 		${PYTHON_SITELIBDIR}/libxslt.py:textproc/py-libxslt
 
-USES=		gettext python shebangfix
+USES=		gettext python:2.7 shebangfix
 USE_PYTHON=	distutils
 NO_BUILD=	yes
 SHEBANG_FILES=	setup.py

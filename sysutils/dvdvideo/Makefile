@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/sysutils/dvdvideo/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/dvdvideo/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	dvdvideo
 PORTVERSION=	20130117
@@ -15,8 +15,8 @@ COMMENT=	Video DVD backup tool
 LICENSE=	GPLv3
 
 NO_ARCH=	yes
-USES=		python:3 tar:tgz
-USE_PYTHON=	autoplist distutils
+USES=		python:3.4+ tar:tgz
+USE_PYTHON=	autoplist distutils optsuffix
 
 OPTIONS_DEFINE=	DVDCSS
 .if !defined(PACKAGE_BUILDING)

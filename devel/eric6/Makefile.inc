@@ -1,5 +1,5 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/devel/eric6/Makefile.inc 452964 2017-10-27 03:43:48Z dbn $
+# $FreeBSD: head/devel/eric6/Makefile.inc 455210 2017-11-30 15:50:30Z mat $
 #
 # This is a set of Makefile macros which allow to build the core and
 # localized language packages for devel/eric6:
@@ -22,7 +22,7 @@ I18N_LANG?=	ru
 INSTALL_CMD?=	install-i18n.py -p ${STAGEDIR}
 MAKE_ENV+=	"HOME=${WRKDIR}"
 
-USES+=		python
+USES+=		python:2.7
 NO_BUILD=	yes
 PLIST_FILES?=	%%DATADIR%%/i18n/${PORTNAME}_${I18N_LANG}.qm
 EXTRA_PATCHES?=	${.CURDIR}/../../devel/eric6/files/extra-patch-install-i18n.py

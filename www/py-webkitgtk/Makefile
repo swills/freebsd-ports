@@ -1,5 +1,5 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/www/py-webkitgtk/Makefile 437328 2017-03-30 21:12:43Z mat $
+# $FreeBSD: head/www/py-webkitgtk/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	webkitgtk
 PORTVERSION=	1.1.8
@@ -21,5 +21,6 @@ GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USES=		gmake libtool pathfix pkgconfig python:2 tar:bzip2
 USE_GNOME=	glib20 libxslt pygtk2
+USE_PYTHON=	flavors
 
 .include <bsd.port.mk>

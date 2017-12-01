@@ -1,5 +1,5 @@
 # Created by: Munish Chopra <mchopra@engmail.uwaterloo.ca>
-# $FreeBSD: head/audio/abcde/Makefile 454861 2017-11-25 01:34:24Z woodsb02 $
+# $FreeBSD: head/audio/abcde/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	abcde
 PORTVERSION=	2.8.1
@@ -16,7 +16,7 @@ LICENSE_COMB=	dual
 RUN_DEPENDS=	cd-discid:audio/cd-discid \
 		cdparanoia:audio/cdparanoia \
 		lame:audio/lame \
-		${PYTHON_PKGNAMEPREFIX}eyed3>=0.7:audio/py-eyed3 \
+		${PYTHON_PKGNAMEPREFIX}eyed3>=0.7:audio/py-eyed3@${PY_FLAVOR} \
 		oggenc:audio/vorbis-tools \
 		bash:shells/bash
 

@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau <duchateau.olivier@gmail.com>
-# $FreeBSD: head/www/py-flask-uploads/Makefile 423712 2016-10-10 20:35:00Z rm $
+# $FreeBSD: head/www/py-flask-uploads/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	Flask-Uploads
 PORTVERSION=	0.2.1
@@ -12,7 +12,7 @@ COMMENT=	Flexible and efficient upload handling for Flask
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.10:www/py-flask
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.10:www/py-flask@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7+

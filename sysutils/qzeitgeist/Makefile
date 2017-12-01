@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/qzeitgeist/Makefile 429155 2016-12-22 12:36:23Z avilla $
+# $FreeBSD: head/sysutils/qzeitgeist/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	qzeitgeist
 PORTVERSION=	0.8.0
@@ -20,7 +20,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	rapper:textproc/raptor2 \
 		${PYTHON_SITELIBDIR}/rdflib/__init__.py:textproc/py-rdflib
 
-USES=		cmake kde:4 python:build tar:bzip2
+USES=		cmake kde:4 python:2.7,build tar:bzip2
 USE_KDE=	automoc4
 USE_QT4=	corelib dbus declarative qtestlib \
 		moc_build qmake_build rcc_build uic_build

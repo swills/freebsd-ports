@@ -1,5 +1,5 @@
 # Created by: Jason R. Mastaler <jason@mastaler.com>
-# $FreeBSD: head/mail/tmda/Makefile 438776 2017-04-18 11:09:40Z amdmi3 $
+# $FreeBSD: head/mail/tmda/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tmda
 PORTVERSION=	1.1.12
@@ -14,7 +14,7 @@ COMMENT=	Python-based SPAM reduction system
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		python shebangfix tar:tgz
+USES=		python:2.7 shebangfix tar:tgz
 SHEBANG_FILES=	bin/tmda-* contrib/collectaddys contrib/def2html \
 		contrib/printcdb contrib/printdbm contrib/smtp-check-sender \
 		contrib/tofmipd.init

@@ -1,5 +1,5 @@
 # Created by: Bartek Rutkowski <ports@robakdesign.com>
-# $FreeBSD: head/devel/py-click/Makefile 430838 2017-01-07 21:41:50Z robak $
+# $FreeBSD: head/devel/py-click/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	click
 PORTVERSION=	6.7
@@ -12,7 +12,7 @@ COMMENT=	Python package for creating command line interfaces
 
 LICENSE=	BSD3CLAUSE
 
-USES?=		python
+USES=		python
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Doug Barton <dougb@FreeBSD.org>
-# $FreeBSD: head/x11-wm/obmenu/Makefile 422862 2016-09-28 09:01:46Z amdmi3 $
+# $FreeBSD: head/x11-wm/obmenu/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	obmenu
 PORTVERSION=	1.0
@@ -13,7 +13,7 @@ COMMENT=	Menu manager for Openbox supporting both static and pipe menus
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		python shebangfix
+USES=		python:2.7 shebangfix
 USE_GNOME=	pygtk2
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGNAME=	obMenu

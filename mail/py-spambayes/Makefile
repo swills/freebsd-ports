@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/mail/py-spambayes/Makefile 425174 2016-11-02 22:45:14Z mat $
+# $FreeBSD: head/mail/py-spambayes/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	spambayes
 PORTVERSION=	1.1b2
@@ -12,9 +12,9 @@ COMMENT=	Bayesian anti-spam filter written in Python
 
 LICENSE=	PSFL
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bsddb>0:databases/py-bsddb \
-		${PYTHON_PKGNAMEPREFIX}dns>=2.0:dns/py-dns \
-		${PYTHON_PKGNAMEPREFIX}lockfile>=0.2:devel/py-lockfile
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bsddb>0:databases/py-bsddb@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dns>=2.0:dns/py-dns@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lockfile>=0.2:devel/py-lockfile@${FLAVOR}
 
 USES=		python:-2.7
 USE_PYTHON=	distutils autoplist

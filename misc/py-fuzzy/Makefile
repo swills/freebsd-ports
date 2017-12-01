@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/misc/py-fuzzy/Makefile 452394 2017-10-19 04:59:37Z tcberner $
+# $FreeBSD: head/misc/py-fuzzy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	Fuzzy
 DISTVERSION=	1.2.2
@@ -13,13 +13,11 @@ COMMENT=	Fast Python phonetic algorithms
 LICENSE=	MIT ART20
 LICENSE_COMB=	multi
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm \
-		cython:lang/cython
-RUN_DEPENDS=	cython:lang/cython
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
 
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils cython cython_run
 
 do-test:
 	@cd ${WRKSRC} && ${PYTHON_CMD} -m pytest

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/py-unqlite/Makefile 416161 2016-05-30 16:28:20Z wg $
+# $FreeBSD: head/databases/py-unqlite/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	unqlite
 PORTVERSION=	0.5.3
@@ -11,9 +11,7 @@ COMMENT=	Fast Python bindings for the UnQLite embedded NoSQL database
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	cython>0:lang/cython
-
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist cython
 
 .include <bsd.port.mk>

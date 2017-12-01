@@ -1,5 +1,5 @@
 # Created by: hsu
-# $FreeBSD: head/lang/scm/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/lang/scm/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	scm
 PORTVERSION=	5f2
@@ -17,6 +17,7 @@ LICENSE=	LGPL21
 
 BROKEN_aarch64=		does not link: undefined reference to sbrk
 BROKEN_armv6=		does not build: fails self-tests
+BROKEN_armv7=		does not build: fails self-tests
 BROKEN_mips=		does not build
 BROKEN_mips64=		does not build
 BROKEN_powerpc64=	does not build: error: r4rstest.scm: segment violation 11

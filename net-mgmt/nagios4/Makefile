@@ -1,5 +1,5 @@
 # Created by: Blaz Zupan <blaz@si.FreeBSD.org>
-# $FreeBSD: head/net-mgmt/nagios4/Makefile 453665 2017-11-07 15:47:54Z mat $
+# $FreeBSD: head/net-mgmt/nagios4/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	nagios
 PORTVERSION=	4.3.4
@@ -16,7 +16,7 @@ COMMENT=	Powerful network monitoring system
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libltdl.so:devel/libltdl \
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libgd.so:graphics/gd
 
 USES=		cpe gmake jpeg perl5

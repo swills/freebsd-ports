@@ -1,4 +1,4 @@
-# $FreeBSD: head/irc/bitlbee/Makefile 444642 2017-06-29 10:55:30Z garga $
+# $FreeBSD: head/irc/bitlbee/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	bitlbee
 PORTVERSION=	3.5.1
@@ -83,7 +83,7 @@ OTR_LIB_DEPENDS=	libotr.so.5:security/libotr \
 			libgpg-error.so:security/libgpg-error
 SKYPE_CONFIGURE_ON=	--skype=1
 SKYPE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Skype4Py>0:net-im/py-skype4py
-SKYPE_USES=		python
+SKYPE_USES=		python:2.7
 TWITTER_CONFIGURE_OFF=	--twitter=0
 YAHOO_CONFIGURE_OFF=	--yahoo=0
 

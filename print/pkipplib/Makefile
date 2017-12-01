@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/print/pkipplib/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/print/pkipplib/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pkipplib
 PORTVERSION=	0.07
@@ -12,7 +12,7 @@ COMMENT=	Create and parse IPP requests
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 NO_ARCH=	yes
 

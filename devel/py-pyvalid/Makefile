@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pyvalid/Makefile 428165 2016-12-09 05:35:23Z pi $
+# $FreeBSD: head/devel/py-pyvalid/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyvalid
 PORTVERSION=	0.9
@@ -11,9 +11,9 @@ COMMENT=	Python validation tool
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.8.0:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.8.0:devel/py-six@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

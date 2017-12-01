@@ -1,5 +1,5 @@
 # Created by: Johann Visagie <johann@egenetics.com>
-# $FreeBSD: head/biology/py-biopython/Makefile 448228 2017-08-18 12:57:06Z wen $
+# $FreeBSD: head/biology/py-biopython/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	biopython
 PORTVERSION=	1.70
@@ -20,6 +20,6 @@ OPTIONS_DEFINE=	REPORTLAB
 OPTIONS_DEFAULT=	REPORTLAB
 
 REPORTLAB_DESC=	PDF support in Bio.Graphics module
-REPORTLAB_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}reportlab1>0:print/py-reportlab1
+REPORTLAB_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}reportlab1>0:print/py-reportlab1@${FLAVOR}
 
 .include <bsd.port.mk>

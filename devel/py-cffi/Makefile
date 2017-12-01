@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/devel/py-cffi/Makefile 442371 2017-06-02 11:02:08Z araujo $
+# $FreeBSD: head/devel/py-cffi/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cffi
 PORTVERSION=	1.7.0
@@ -14,11 +14,11 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libffi.so:devel/libffi
-RUN_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}pycparser>=2.10:devel/py-pycparser
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycparser>=2.10:devel/py-pycparser@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
 
 # Actually 2.6-2.7,3.2-3.5
-USES?=		localbase python compiler
+USES=		localbase python compiler
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.pre.mk>

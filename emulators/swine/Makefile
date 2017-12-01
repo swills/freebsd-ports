@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/emulators/swine/Makefile 434380 2017-02-18 19:48:05Z tcberner $
+# $FreeBSD: head/emulators/swine/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	swine
 PORTVERSION=	1.0.4
@@ -23,7 +23,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	dswd
 GH_PROJECT=	Swine
 
-USES=		gmake python
+USES=		gmake python:2.7
 NO_BUILD=	yes
 USE_QT4=	linguist_build
 ONLY_FOR_ARCHS=	i386 amd64

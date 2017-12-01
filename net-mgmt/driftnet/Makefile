@@ -1,5 +1,5 @@
 # Created by: Simon 'corecode' Schubert <corecode@corecode.ath.cx>
-# $FreeBSD: head/net-mgmt/driftnet/Makefile 448037 2017-08-16 13:48:10Z mat $
+# $FreeBSD: head/net-mgmt/driftnet/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	driftnet
 PORTVERSION=	1.1.5
@@ -13,7 +13,7 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libgif.so:graphics/giflib \
-		libpng16.so:graphics/png
+		libpng.so:graphics/png
 BUILD_DEPENDS=	makedepend:devel/makedepend
 
 GNU_CONFIGURE=	yes

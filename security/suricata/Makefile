@@ -1,5 +1,5 @@
 # Created by: Patrick Tracanelli <eksffa@freebsdbrasil.com.br>
-# $FreeBSD: head/security/suricata/Makefile 454651 2017-11-21 19:12:35Z zeising $
+# $FreeBSD: head/security/suricata/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	suricata
 PORTVERSION=	4.0.1
@@ -109,7 +109,7 @@ REDIS_CONFIGURE_ON=		--enable-hiredis \
 				--with-libhiredis-includes=${LOCALBASE}/include \
 				--with-libhiredis-libraries=${LOCALBASE}/lib
 
-SC_USES=			python
+SC_USES=			python:2.7
 SC_CONFIGURE_ENABLE=		python
 
 TESTS_CONFIGURE_ENABLE=		unittests

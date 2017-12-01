@@ -1,5 +1,5 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-dfdatetime/Makefile 447470 2017-08-06 16:34:24Z antoine $
+# $FreeBSD: head/security/py-dfdatetime/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	dfdatetime
 PORTVERSION=	20170719
@@ -14,7 +14,7 @@ COMMENT=	Digital Forensics Date and Time
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

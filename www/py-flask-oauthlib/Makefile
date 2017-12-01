@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-flask-oauthlib/Makefile 445823 2017-07-14 20:15:35Z rm $
+# $FreeBSD: head/www/py-flask-oauthlib/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	Flask-OAuthlib
 PORTVERSION=	0.9.4
@@ -12,9 +12,9 @@ COMMENT=	OAuthlib for Flask
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>0:www/py-flask \
-		${PYTHON_PKGNAMEPREFIX}oauthlib>0:security/py-oauthlib \
-		${PYTHON_PKGNAMEPREFIX}requests-oauthlib>0:www/py-requests-oauthlib
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>0:www/py-flask@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}oauthlib>0:security/py-oauthlib@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests-oauthlib>0:www/py-requests-oauthlib@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7+

@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/py-logilab-common/Makefile 445678 2017-07-13 18:10:50Z sunpoet $
+# $FreeBSD: head/devel/py-logilab-common/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	logilab-common
 PORTVERSION=	1.4.1
@@ -13,8 +13,8 @@ COMMENT=	Common low-level libraries shared among logilab projects
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING.LESSER
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.4.0:devel/py-six
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>=0:devel/py-pytz
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.4.0:devel/py-six@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>=0:devel/py-pytz@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

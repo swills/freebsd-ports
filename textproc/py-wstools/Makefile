@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-wstools/Makefile 432085 2017-01-21 22:05:43Z rm $
+# $FreeBSD: head/textproc/py-wstools/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	wstools
 PORTVERSION=	0.4.5
@@ -12,11 +12,11 @@ COMMENT=	WSDL parsing services for Python
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pip>0:devel/py-pip
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pip>0:devel/py-pip@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
 
 NO_ARCH=	yes
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/finance/gnucash/Makefile 450812 2017-09-28 10:20:26Z madpilot $
+# $FreeBSD: head/finance/gnucash/Makefile 455210 2017-11-30 15:50:30Z mat $
 #   $MCom: ports/finance/gnucash/Makefile,v 1.26 2008/12/31 03:25:18 mezz Exp $
 
 PORTNAME=	gnucash
@@ -53,7 +53,7 @@ DATABASE_RUN_DEPENDS=	libdbi-drivers>=0:databases/libdbi-drivers
 DATABASE_CONFIGURE_ON=	--with-dbi-dbd-dir=${LOCALBASE}/lib/dbd
 LOCALE_TAX_CONFIGURE_ON=--enable-locale-specific-tax
 PYTHON_CONFIGURE_ON=	--enable-python
-PYTHON_USES=		python
+PYTHON_USES=		python:2.7
 GTKMM_USE=		GNOME=gtkmm24
 GTKMM_CONFIGURE_ON=	--enable-gtkmm
 GTKMM_CONFIGURE_OFF=	--disable-gtkmm

@@ -1,5 +1,5 @@
 # Created by: Stas Timokhin <devel@stasyan.com>
-# $FreeBSD: head/science/veusz/Makefile 433310 2017-02-04 13:37:15Z tcberner $
+# $FreeBSD: head/science/veusz/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	veusz
 PORTVERSION=	1.19.1
@@ -15,7 +15,7 @@ LICENSE=	GPLv2
 RUN_DEPENDS=	${PYNUMPY}
 BUILD_DEPENDS:=	${RUN_DEPENDS}
 
-USES=		pyqt:4 python
+USES=		pyqt:4 python:2.7
 USE_PYQT=	gui svg
 USE_PYTHON=	distutils autoplist
 

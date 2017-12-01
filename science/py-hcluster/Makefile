@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/py-hcluster/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/science/py-hcluster/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	hcluster
 PORTVERSION=	0.2.0
@@ -15,10 +15,10 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}matplotlib>0:math/py-matplotlib
+		${PYTHON_PKGNAMEPREFIX}matplotlib>0:math/py-matplotlib@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 post-install:

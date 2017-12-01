@@ -1,5 +1,5 @@
 # Created by: Munish Chopra <mchopra@engmail.uwaterloo.ca>
-# $FreeBSD: head/sysutils/tentakel/Makefile 371454 2014-10-24 16:56:10Z mva $
+# $FreeBSD: head/sysutils/tentakel/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tentakel
 PORTVERSION=	2.2
@@ -13,7 +13,7 @@ COMMENT=	Program for executing commands on many hosts in parallel
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/py
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 OPTIONS_DEFINE=	DOCS

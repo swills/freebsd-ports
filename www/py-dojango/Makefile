@@ -1,5 +1,5 @@
 # Created by: jpaetzel
-# $FreeBSD: head/www/py-dojango/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-dojango/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	dojango
 PORTVERSION=	0.5.7
@@ -14,7 +14,7 @@ COMMENT=	Django application for building dojo
 USES=		python
 USE_PYTHON=	distutils autoplist
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=1.6:www/py-django18
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=1.6:www/py-django18@${FLAVOR}
 
 OPTIONS_DEFINE=		JAVA
 

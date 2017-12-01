@@ -1,5 +1,5 @@
 # Created by: Otacilio de Araujo Ramos Neto <otacilio.neto@bsd.com.br>
-# $FreeBSD: head/devel/flexdock/Makefile 441814 2017-05-26 20:02:44Z linimon $
+# $FreeBSD: head/devel/flexdock/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	flexdock
 PORTVERSION=	1.2.4
@@ -10,6 +10,7 @@ MAINTAINER=	makc@FreeBSD.org
 COMMENT=	Swing windowing and docking framework
 
 BROKEN_armv6=		fails to package: flexdock/api: No such file or directory
+BROKEN_armv7=		fails to package: flexdock/api: No such file or directory
 
 USE_ANT=	yes
 USE_JAVA=	yes

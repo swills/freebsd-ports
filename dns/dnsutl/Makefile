@@ -1,5 +1,5 @@
 # Created by: Karl Dietz (Karl.Dietz@frankfurt.netsurf.de)
-# $FreeBSD: head/dns/dnsutl/Makefile 441925 2017-05-28 21:18:04Z antoine $
+# $FreeBSD: head/dns/dnsutl/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	dnsutl
 PORTVERSION=	1.12
@@ -13,6 +13,7 @@ COMMENT=	Programs to make using DNS easier
 LIB_DEPENDS=	libexplain.so:devel/libexplain
 
 BROKEN_armv6=		fails to package: FAILED test of common/srrf.c file
+BROKEN_armv7=		fails to package: FAILED test of common/srrf.c file
 
 GNU_CONFIGURE=	yes
 ALL_TARGET=	all sure

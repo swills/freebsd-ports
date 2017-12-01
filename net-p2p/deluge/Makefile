@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/deluge/Makefile 440748 2017-05-13 05:48:41Z rm $
+# $FreeBSD: head/net-p2p/deluge/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	deluge
 PORTVERSION=	1.3.15
@@ -10,9 +10,9 @@ COMMENT=	Bittorrent client using Python, GTK2, and libtorrent-rasterbar
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0.83:devel/py-dbus \
-		${PYTHON_PKGNAMEPREFIX}game>=1.8.1:devel/py-game \
-		${PYTHON_PKGNAMEPREFIX}notify>=0.1.1:devel/py-notify \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0.83:devel/py-dbus@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}game>=1.8.1:devel/py-game@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}notify>=0.1.1:devel/py-notify@${PY_FLAVOR} \
 		xdg-utils>=1.0.2:devel/xdg-utils \
 		deluge:net-p2p/deluge-cli
 USE_GNOME=	librsvg2 pygtk2

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/converters/zbase32/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/converters/zbase32/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	zbase32
 PORTVERSION=	1.1.5
@@ -11,10 +11,10 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Base32 Encoder/Decoder
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_darcs>=1.2.11:devel/py-setuptools_darcs
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_darcs>=1.2.11:devel/py-setuptools_darcs@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

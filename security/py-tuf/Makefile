@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/security/py-tuf/Makefile 420121 2016-08-12 11:40:38Z koobs $
+# $FreeBSD: head/security/py-tuf/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tuf
 PORTVERSION=	0.10.0
@@ -10,11 +10,11 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	koobs@FreeBSD.org
 COMMENT=	Framework for securing software update systems
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}iso8601>0:devel/py-iso8601 \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>0:security/py-cryptography \
-		${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto \
-		${PYTHON_PKGNAMEPREFIX}pynacl>0:security/py-pynacl
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}iso8601>0:devel/py-iso8601@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>0:security/py-cryptography@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pynacl>0:security/py-pynacl@${FLAVOR}
 
 # Actually 2.6-3.5
 USES=		python

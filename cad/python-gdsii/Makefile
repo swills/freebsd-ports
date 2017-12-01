@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/python-gdsii/Makefile 425853 2016-11-10 19:38:43Z hrs $
+# $FreeBSD: head/cad/python-gdsii/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	python-gdsii
 PORTVERSION=	0.2.1
@@ -11,7 +11,7 @@ COMMENT=	GDSII manipulation library
 
 LICENSE=	LGPL3
 
-RUN_DEPENDS=    ${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml
+RUN_DEPENDS=    ${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

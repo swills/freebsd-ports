@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-XStatic-roboto-fontface/Makefile 429408 2016-12-25 11:28:58Z novel $
+# $FreeBSD: head/devel/py-XStatic-roboto-fontface/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	XStatic-roboto-fontface
 PORTVERSION=	0.5.0.0
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	alexander.nusov@nfvexpress.com
 COMMENT=	Simple package providing the Roboto fontface (roboto-fontface)
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}XStatic>=0:devel/py-XStatic
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}XStatic>=0:devel/py-XStatic@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: Carlo Strub (c-s@c-s.li)
-# $FreeBSD: head/devel/py-subvertpy/Makefile 415839 2016-05-25 15:43:34Z mat $
+# $FreeBSD: head/devel/py-subvertpy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	subvertpy
 PORTVERSION=	0.9.2
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 
 BUILD_DEPENDS+=	svn:devel/subversion
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 MAKE_ENV=	HOME=/dev/null
 INSTALL_TARGET=	install-strip

@@ -1,5 +1,5 @@
 # Created by: thinker@branda.to
-# $FreeBSD: head/devel/py-subversion/Makefile 404863 2015-12-30 15:22:15Z ohauer $
+# $FreeBSD: head/devel/py-subversion/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -14,6 +14,7 @@ MASTERDIR=	${.CURDIR}/../../devel/subversion
 PKGDIR=		${.CURDIR}
 
 USES+=		python
+USE_PYTHON=	flavors py3kplist
 
 SVN_BUILD_BINDINGS=	yes
 SVN_BUILD_ADDONS=	yes

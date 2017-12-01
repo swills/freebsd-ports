@@ -1,5 +1,5 @@
 # Created by: adsharma@sharams.dhs.org
-# $FreeBSD: head/devel/py-ncurses/Makefile 411704 2016-03-23 12:46:16Z marino $
+# $FreeBSD: head/devel/py-ncurses/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ncurses
 PORTVERSION=	0.3
@@ -15,7 +15,7 @@ COMMENT=	Ncurses binding for Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
-USES=		ncurses python
+USES=		ncurses python:2.7
 USE_PYTHON=	distutils autoplist
 
 post-patch:

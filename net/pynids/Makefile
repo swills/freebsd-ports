@@ -1,5 +1,5 @@
 # Created by: Corey Smith
-# $FreeBSD: head/net/pynids/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/pynids/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pynids
 PORTVERSION=	0.6.1
@@ -14,7 +14,7 @@ COMMENT=	Python interface to libnids
 
 LIB_DEPENDS=	libnet.so:net/libnet
 
-USES=		pkgconfig python
+USES=		pkgconfig python:2.7
 USE_GNOME=	glib20
 USE_PYTHON=	distutils autoplist pythonprefix
 

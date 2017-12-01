@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/graphics/eog-plugins/Makefile 442277 2017-06-01 07:26:36Z kwm $
+# $FreeBSD: head/graphics/eog-plugins/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	eog-plugins
 PORTVERSION=	3.16.6
@@ -42,8 +42,8 @@ CHAMPLAIN_LIB_DEPENDS=	libcogl.so:graphics/cogl \
 CHAMPLAIN_USE=		GL=egl XORG=x11,xcomposite,xdamage,xext,xfixes,xi,xrandr
 
 PYTHON_CONFIGURE_ENABLE=python
-PYTHON_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libpeas>=0:devel/py3-libpeas
-PYTHON_USES=		python:3
+PYTHON_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libpeas>=0:devel/py-libpeas@${PY_FLAVOR}
+PYTHON_USES=		python:3.4+
 PYTHON_VARS=		GLIB_SCHEMAS+="org.gnome.eog.plugins.export-to-folder.gschema.xml \
 				       org.gnome.eog.plugins.fullscreenbg.gschema.xml \
 				       org.gnome.eog.plugins.pythonconsole.gschema.xml"

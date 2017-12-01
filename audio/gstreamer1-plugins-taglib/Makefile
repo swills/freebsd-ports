@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/gstreamer1-plugins-taglib/Makefile 441882 2017-05-27 22:30:08Z linimon $
+# $FreeBSD: head/audio/gstreamer1-plugins-taglib/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTREVISION=	0
 CATEGORIES=	audio
@@ -6,6 +6,7 @@ CATEGORIES=	audio
 COMMENT=	GStreamer taglib plugin for adding APEv2 and ID3v2 headers
 
 BROKEN_armv6=		fails to compile: textidentificationframe.h file not found
+BROKEN_armv7=		fails to compile: textidentificationframe.h file not found
 
 GST_PLUGIN=	taglib
 DIST=		good

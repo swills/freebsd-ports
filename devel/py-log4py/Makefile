@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/py-log4py/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-log4py/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	log4py
 PORTVERSION=	1.3
@@ -12,7 +12,7 @@ COMMENT=	Python logging module
 
 LICENSE=	MIT
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 OPTIONS_DEFINE=	DOCS

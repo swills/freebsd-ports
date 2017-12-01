@@ -1,5 +1,5 @@
 # Created by: Charlie Kester <corky1951@comcast.net>
-# $FreeBSD: head/multimedia/openshot/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/multimedia/openshot/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	openshot
 PORTVERSION=	1.4.3
@@ -14,11 +14,11 @@ LICENSE=	GPLv3
 
 RUN_DEPENDS=	ffmpeg:multimedia/ffmpeg \
 		frei0r-plugins>=0:graphics/frei0r-plugins \
-		${PYTHON_PKGNAMEPREFIX}goocanvas>=0:graphics/py-goocanvas \
-		${PYTHON_PKGNAMEPREFIX}httplib2>=0:www/py-httplib2 \
-		${PYTHON_PKGNAMEPREFIX}pillow>=0:graphics/py-pillow \
-		${PYTHON_PKGNAMEPREFIX}mlt>=0:multimedia/py-mlt \
-		${PYTHON_PKGNAMEPREFIX}xdg>=0:devel/py-xdg \
+		${PYTHON_PKGNAMEPREFIX}goocanvas>=0:graphics/py-goocanvas@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}httplib2>=0:www/py-httplib2@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>=0:graphics/py-pillow@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mlt>=0:multimedia/py-mlt@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}xdg>=0:devel/py-xdg@${FLAVOR} \
 		scrollkeeper-install:textproc/rarian \
 		sox:audio/sox
 

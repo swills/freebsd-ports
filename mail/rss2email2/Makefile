@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/mail/rss2email2/Makefile 431287 2017-01-12 17:05:18Z amdmi3 $
+# $FreeBSD: head/mail/rss2email2/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rss2email
 PORTVERSION=	2.71
@@ -14,8 +14,8 @@ COMMENT=	Emails posts from subscribed RSS/Atom newsfeeds
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}feedparser>=5.0.1:textproc/py-feedparser \
-		${PYTHON_PKGNAMEPREFIX}html2text>=3.0.1:textproc/py-html2text
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}feedparser>=5.0.1:textproc/py-feedparser@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}html2text>=3.0.1:textproc/py-html2text@${PY_FLAVOR}
 
 USES=		python:2 shebangfix
 SHEBANG_FILES=	rss2email.py

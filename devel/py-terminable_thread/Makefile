@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-terminable_thread/Makefile 408646 2016-02-10 19:45:07Z truckman $
+# $FreeBSD: head/devel/py-terminable_thread/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	terminable_thread
 PORTVERSION=	0.7.1
@@ -13,7 +13,7 @@ LICENSE=	PD
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 NO_ARCH=	yes
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

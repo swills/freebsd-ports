@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/misc/pylize/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/misc/pylize/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pylize
 PORTVERSION=	1.3.b
@@ -13,9 +13,9 @@ MAINTAINER=	dryice@dryice.name
 COMMENT=	Presentation generation tool
 
 BUILD_DEPENDS=	python:lang/python \
-		${PYTHON_SITELIBDIR}/HTMLgen.py:www/py-HTMLgen \
-		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow \
-		${PYTHON_SITELIBDIR}/em.py:textproc/py-empy
+		${PYTHON_SITELIBDIR}/HTMLgen.py:www/py-HTMLgen@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${FLAVOR} \
+		${PYTHON_SITELIBDIR}/em.py:textproc/py-empy@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python:2 tar:bzip2

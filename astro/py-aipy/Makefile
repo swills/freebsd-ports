@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/astro/py-aipy/Makefile 450659 2017-09-26 12:52:57Z wen $
+# $FreeBSD: head/astro/py-aipy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	aipy
-PORTVERSION=	2.1.6
+PORTVERSION=	2.1.8
 CATEGORIES=	astro python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,12 +11,12 @@ MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Astronomical Interferometry in PYthon
 
 BUILD_DEPENDS=	${PYNUMPY} \
-		${PYTHON_SITELIBDIR}/ephem/__init__.py:astro/pyephem \
-		${PKGNAMEPREFIX}pyfits>=1.1:astro/py-pyfits \
-		${PKGNAMEPREFIX}matplotlib>=0.98:math/py-matplotlib
+		${PYTHON_SITELIBDIR}/ephem/__init__.py:astro/pyephem@${FLAVOR} \
+		${PKGNAMEPREFIX}pyfits>=1.1:astro/py-pyfits@${FLAVOR} \
+		${PKGNAMEPREFIX}matplotlib>=0.98:math/py-matplotlib@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

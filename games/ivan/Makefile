@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/ivan/Makefile 441823 2017-05-27 00:43:10Z linimon $
+# $FreeBSD: head/games/ivan/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	ivan
 PORTVERSION=	0.50
@@ -14,6 +14,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_armv6=		fails to compile: use of overloaded operator '<<' is ambiguous
+BROKEN_armv7=		fails to compile: use of overloaded operator '<<' is ambiguous
 
 USE_SDL=	sdl
 USES=		gmake

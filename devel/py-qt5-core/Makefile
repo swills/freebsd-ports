@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-qt5-core/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/devel/py-qt5-core/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	core
 CATEGORIES=	devel python
@@ -10,7 +10,7 @@ CONFIGURE_ARGS=	--enable QtCore
 PYQT_DIST=	yes
 
 USES=		python pyqt:5
-USE_PYTHON=	py3kplist
+USE_PYTHON=	py3kplist flavors
 USE_PYQT=	sip_build
 USE_QT5=	core qmake_build
 

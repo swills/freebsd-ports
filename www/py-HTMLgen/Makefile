@@ -1,5 +1,5 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/www/py-HTMLgen/Makefile 438837 2017-04-19 12:25:40Z miwi $
+# $FreeBSD: head/www/py-HTMLgen/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	HTMLgen
 PORTVERSION=	2.2.2
@@ -15,6 +15,7 @@ MAINTAINER=	python@FreeBSD.org
 COMMENT=	Python library for the generation of HTML documents
 
 USES=		python:2 shebangfix
+USE_PYTHON=	flavors
 NO_BUILD=	yes
 NO_ARCH=	yes
 SHEBANG_FILES=	HTMLutil.py barchart.py

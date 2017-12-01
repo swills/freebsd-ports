@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/openmpi2/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/net/openmpi2/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	openmpi
 PORTVERSION=	2.1.1
@@ -19,6 +19,7 @@ LIB_DEPENDS=	libhwloc.so:devel/hwloc \
 		libmunge.so:security/munge
 
 BROKEN_armv6=		fails to package: pkg-static: mca_patcher_overwrite.la: No such file or directory
+BROKEN_armv7=		fails to package: pkg-static: mca_patcher_overwrite.la: No such file or directory
 BROKEN_sparc64=		fails to compile on sparc64
 
 HAS_CONFIGURE=	yes

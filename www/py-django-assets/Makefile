@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-assets/Makefile 423193 2016-10-03 13:32:16Z wg $
+# $FreeBSD: head/www/py-django-assets/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-assets
 PORTVERSION=	0.12
@@ -11,8 +11,8 @@ COMMENT=	Compress and merge CSS and Javascript files
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18 \
-		${PYTHON_PKGNAMEPREFIX}webassets>0:www/py-webassets
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}webassets>0:www/py-webassets@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

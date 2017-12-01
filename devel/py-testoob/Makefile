@@ -1,5 +1,5 @@
 # Created by: Tobias Roth <ports@fsck.ch>
-# $FreeBSD: head/devel/py-testoob/Makefile 442635 2017-06-05 14:50:31Z sunpoet $
+# $FreeBSD: head/devel/py-testoob/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	testoob
 PORTVERSION=	1.15
@@ -22,6 +22,6 @@ NO_ARCH=	yes
 USES=		python tar:bzip2
 USE_PYTHON=	autoplist distutils
 
-TWISTED_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
+TWISTED_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR}
 
 .include <bsd.port.mk>

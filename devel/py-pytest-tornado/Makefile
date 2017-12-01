@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pytest-tornado/Makefile 428270 2016-12-10 03:39:37Z jbeich $
+# $FreeBSD: head/devel/py-pytest-tornado/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pytest-tornado
 PORTVERSION=	0.4.5
@@ -11,8 +11,8 @@ COMMENT=	Py.test plugin providing fixtures and markers for tornado
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest \
-		${PYTHON_PKGNAMEPREFIX}tornado>0:www/py-tornado
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tornado>0:www/py-tornado@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/py-pudb/Makefile 449221 2017-09-04 00:00:33Z sunpoet $
+# $FreeBSD: head/devel/py-pudb/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pudb
 PORTVERSION=	2017.1.4
@@ -13,8 +13,8 @@ COMMENT=	Full-screen, console-based Python debugger
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pygments>=1.0:textproc/py-pygments \
-		${PYTHON_PKGNAMEPREFIX}urwid>=1.1.1:devel/py-urwid
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pygments>=1.0:textproc/py-pygments@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}urwid>=1.1.1:devel/py-urwid@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

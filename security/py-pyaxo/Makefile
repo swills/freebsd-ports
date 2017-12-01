@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich
-# $FreeBSD: head/security/py-pyaxo/Makefile 452528 2017-10-20 14:27:44Z swills $
+# $FreeBSD: head/security/py-pyaxo/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyaxo
 PORTVERSION=	0.8.2
@@ -13,9 +13,9 @@ COMMENT=	Python implementation of the Axolotl ratchet protocol
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}passlib>=1.6.1:security/py-passlib \
-		${PYTHON_PKGNAMEPREFIX}pynacl>=1.0.1:security/py-pynacl
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}passlib>=1.6.1:security/py-passlib@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pynacl>=1.0.1:security/py-pynacl@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils

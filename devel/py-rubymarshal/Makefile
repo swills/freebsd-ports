@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/py-rubymarshal/Makefile 440613 2017-05-11 06:02:25Z antoine $
+# $FreeBSD: head/devel/py-rubymarshal/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rubymarshal
 PORTVERSION=	1.0.3
@@ -14,7 +14,7 @@ COMMENT=	Read and write Ruby-marshalled data
 LICENSE=	WTFPL
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

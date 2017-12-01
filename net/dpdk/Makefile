@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/dpdk/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/net/dpdk/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	dpdk
 PORTVERSION=	16.07
@@ -29,7 +29,7 @@ TOOLS_DESC=	Install tool scripts
 
 DEBUG_MAKE_ENV=	EXTRA_CFLAGS='-O0 -g'
 TOOLS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyelftools>=0:devel/py-pyelftools
-TOOLS_USES=	python
+TOOLS_USES=	python:2.7
 
 # build up the list of files in the compiled directory that should be executable
 EXEC_FILES=	app/cmdline_test \

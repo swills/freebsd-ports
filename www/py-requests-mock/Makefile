@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-requests-mock/Makefile 451087 2017-10-02 18:24:00Z sunpoet $
+# $FreeBSD: head/www/py-requests-mock/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	requests-mock
 PORTVERSION=	1.3.0
@@ -13,9 +13,9 @@ COMMENT=	Mock out responses from the requests package
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=0:devel/py-pbr
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=1.1:www/py-requests \
-		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=0:devel/py-pbr@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=1.1:www/py-requests@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

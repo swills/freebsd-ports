@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/java/classpath/Makefile 451901 2017-10-12 15:57:51Z mat $
+# $FreeBSD: head/java/classpath/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	classpath
 PORTVERSION=	0.99
@@ -17,6 +17,7 @@ LICENSE=	GPLv2
 
 BROKEN_aarch64=		fails to configure: error: The jar tool /usr/local/bin/gjar5 was not found
 BROKEN_armv6=		fails to configure: error: The jar tool /usr/local/bin/gjar5 was not found
+BROKEN_armv7=		fails to configure: error: The jar tool /usr/local/bin/gjar5 was not found
 BROKEN_powerpc64=	fails to configure: error: The jar tool /usr/local/bin/gjar5 was not found
 
 GNU_CONFIGURE=	yes

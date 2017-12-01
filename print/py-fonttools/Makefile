@@ -1,5 +1,5 @@
 # Created by: Joseph Koshy <jkoshy@FreeBSD.org>
-# $FreeBSD: head/print/py-fonttools/Makefile 454790 2017-11-23 19:09:35Z sunpoet $
+# $FreeBSD: head/print/py-fonttools/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	fonttools
 PORTVERSION=	3.20.1
@@ -13,7 +13,7 @@ COMMENT=	Open source library for manipulating fonts, written in Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES?=		python zip
+USES=		python zip
 USE_PYTHON=	autoplist concurrent distutils
 NO_ARCH=	yes
 

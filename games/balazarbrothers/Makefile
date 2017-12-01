@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/balazarbrothers/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/games/balazarbrothers/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	balazarbrothers
 PORTVERSION=	0.3.1
@@ -18,15 +18,15 @@ BROKEN=		conflicting dependencies
 
 LIB_DEPENDS=	libcal3d.so:graphics/cal3d \
 		libfreetype.so:print/freetype2
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}vorbis>0:audio/py-vorbis \
-		${PYTHON_PKGNAMEPREFIX}soya3d>0:graphics/py-soya3d \
-		${PYTHON_PKGNAMEPREFIX}tofu>0:net/py-tofu \
-		${PYTHON_PKGNAMEPREFIX}cerealizer>0:security/py-cerealizer \
-		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}vorbis>0:audio/py-vorbis@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}soya3d>0:graphics/py-soya3d@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tofu>0:net/py-tofu@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}cerealizer>0:security/py-cerealizer@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR}
 
 NO_ARCH=	yes
 
-USES=		gettext python tar:bzip2
+USES=		gettext python:2.7 tar:bzip2
 USE_GL=		glew
 USE_PYTHON=	autoplist distutils
 
@@ -40,7 +40,7 @@ DESKTOP_ENTRIES="BalazarBrothers" "" "" "balazarbrothers" "" ""
 OPTIONS_DEFINE=		OPENAL
 OPTIONS_DEFAULT=	OPENAL
 
-OPENAL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openal>0:audio/py-openal
+OPENAL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openal>0:audio/py-openal@${FLAVOR}
 
 post-patch:
 	@${REINPLACE_CMD} -e \

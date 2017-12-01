@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/py-jedi/Makefile 453404 2017-11-03 13:19:10Z skreuzer $
+# $FreeBSD: head/devel/py-jedi/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	jedi
 PORTVERSION=	0.11.0
@@ -14,7 +14,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 NO_ARCH=	yes
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

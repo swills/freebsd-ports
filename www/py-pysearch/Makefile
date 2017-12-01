@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@lwhsu.org>
-# $FreeBSD: head/www/py-pysearch/Makefile 387009 2015-05-22 10:22:15Z amdmi3 $
+# $FreeBSD: head/www/py-pysearch/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pysearch
 PORTVERSION=	3.1
@@ -12,7 +12,7 @@ DISTNAME=	pYsearch-${PORTVERSION}
 MAINTAINER=	lwhsu@FreeBSD.org
 COMMENT=	Yahoo Search Web Services SDK for Python
 
-USES=		python shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	examples/profile.py \
 		examples/websearch.py
 USE_PYTHON=	distutils

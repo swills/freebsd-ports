@@ -1,5 +1,5 @@
 # Created by: J.F. Dockes
-# $FreeBSD: head/databases/xapian-core10/Makefile 441868 2017-05-27 19:42:13Z sunpoet $
+# $FreeBSD: head/databases/xapian-core10/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	xapian-core
 PORTVERSION=	1.0.23
@@ -14,6 +14,7 @@ COMMENT=	Probabilistic text search database engine
 LICENSE=	GPLv2
 
 BROKEN_armv6=		fails to install: quartz_log.cc:: error: call to 'om_tostring' is ambiguous
+BROKEN_armv7=		fails to install: quartz_log.cc:: error: call to 'om_tostring' is ambiguous
 BROKEN_mips=		fails to install: quartz_log.cc:: error: call to 'om_tostring' is ambiguous
 BROKEN_mips64=		fails to install: quartz_log.cc:: error: call to 'om_tostring' is ambiguous
 

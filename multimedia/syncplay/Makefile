@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/syncplay/Makefile 454381 2017-11-17 19:30:12Z tcberner $
+# $FreeBSD: head/multimedia/syncplay/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	syncplay
 DISTVERSIONPREFIX=	v
@@ -10,7 +10,7 @@ COMMENT=	Synchronize video playback over networks
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${PY_FLAVOR}
 
 USES=		desktop-file-utils gmake python:2.7
 USE_GITHUB=	yes

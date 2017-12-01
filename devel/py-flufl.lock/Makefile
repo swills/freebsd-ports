@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-flufl.lock/Makefile 448947 2017-08-30 00:12:23Z acm $
+# $FreeBSD: head/devel/py-flufl.lock/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	flufl.lock
 PORTVERSION=	3.1
@@ -11,9 +11,9 @@ COMMENT=	NFS-safe file locking with timeouts for POSIX systems
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}atpublic>=0:devel/py-atpublic
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}atpublic>=0:devel/py-atpublic@${FLAVOR}
 
-USES=		python:3
+USES=		python:3.4+
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

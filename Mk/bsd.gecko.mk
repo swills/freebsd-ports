@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 455094 2017-11-29 04:42:33Z jbeich $
+# $FreeBSD: head/Mk/bsd.gecko.mk 455111 2017-11-29 13:54:31Z tobik $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -384,7 +384,7 @@ post-patch-SNDIO-on:
 . endfor
 	@${REINPLACE_CMD} -e 's|OS==\"openbsd\"|OS==\"${OPSYS:tl}\"|g' \
 		${MOZSRC}/media/webrtc/trunk/webrtc/build/common.gypi
-	@${ECHO} "OS_LIBS += ['sndio']" >> \
+	@${ECHO_CMD} "OS_LIBS += ['sndio']" >> \
 		${MOZSRC}/media/webrtc/signaling/test/common.build
 .endif
 

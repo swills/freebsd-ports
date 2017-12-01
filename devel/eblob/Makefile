@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/eblob/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/devel/eblob/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	eblob
 PORTVERSION=	0.18.2
@@ -34,7 +34,7 @@ CMAKE_ARGS+=	-DWITH_ASSERTS=OFF
 
 .if ${PORT_OPTIONS:MPYTHON}
 LIB_DEPENDS+=	libboost_python.so:devel/boost-python-libs
-USES+=		python
+USES+=		python:2.7
 CMAKE_ARGS+=	-DWITH_PYTHON=ON
 PLIST_SUB+=	PYTHON="" PYTHON_VER=${PYTHON_VER}
 .else

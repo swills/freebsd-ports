@@ -1,5 +1,5 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/security/py-rekall/Makefile 431014 2017-01-09 18:56:08Z antoine $
+# $FreeBSD: head/security/py-rekall/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rekall
 PORTVERSION=	1.6.0
@@ -12,7 +12,7 @@ COMMENT=	Memory forensics analysis framework
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}rekall-core>=1.5.0.p:security/py-rekall-core \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}rekall-core>=1.5.0.p:security/py-rekall-core@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ipython>=5.0.0:devel/ipython
 
 NO_ARCH=	yes

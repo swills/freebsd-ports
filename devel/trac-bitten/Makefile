@@ -1,5 +1,5 @@
 # Created by: Tim Niemueller <tim@niemueller.de>
-# $FreeBSD: head/devel/trac-bitten/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/trac-bitten/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	bitten
 PORTVERSION=	0.6
@@ -34,7 +34,7 @@ BITTEN_MASTER_RUN_DEPENDS=	tracd:www/trac
 
 NO_BUILD=	yes
 NO_ARCH=	yes
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 SUB_LIST+=	PYTHON_CMD=${PYTHON_CMD} TOUCH=${TOUCH} CHOWN=${CHOWN} \
 		RM=${RM:Q} USERS=${USERS}

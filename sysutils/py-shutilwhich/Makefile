@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-shutilwhich/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/py-shutilwhich/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	shutilwhich
 PORTVERSION=	1.1.0
@@ -11,7 +11,7 @@ COMMENT=	shutil.which for those not using Python 3.3
 
 LICENSE=	PSFL
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
 
 USES=		python:-3.3
 USE_GITHUB=	yes

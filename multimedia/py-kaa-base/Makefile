@@ -1,5 +1,5 @@
 # Created by: J.R. Oldroyd <fbsd@opal.com>
-# $FreeBSD: head/multimedia/py-kaa-base/Makefile 430761 2017-01-07 01:07:55Z adamw $
+# $FreeBSD: head/multimedia/py-kaa-base/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	kaa-base
 PORTVERSION=	0.6.0
@@ -11,11 +11,11 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	fbsd@opal.com
 COMMENT=	Kaa Media Repository
 
-BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/libxml2.py:textproc/py-libxml2 \
-		${PYTHON_SITELIBDIR}/pygame/__init__.py:devel/py-game
+BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/libxml2.py:textproc/py-libxml2@${FLAVOR} \
+		${PYTHON_SITELIBDIR}/pygame/__init__.py:devel/py-game@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=		python
+USES=		python:2.7
 USE_GNOME=	glib20
 USE_PYTHON=	distutils autoplist
 

@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/news/xpn/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/news/xpn/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	xpn
 PORTVERSION=	1.2.6
@@ -12,8 +12,8 @@ COMMENT=	X Python Newsreader
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gtk2>=2.24.0:x11-toolkits/py-gtk2 \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>=2.7.9:databases/py-sqlite3
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gtk2>=2.24.0:x11-toolkits/py-gtk2@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlite3>=2.7.9:databases/py-sqlite3@${PY_FLAVOR}
 
 NO_BUILD=	yes
 

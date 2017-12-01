@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/kde4-runtime/Makefile 454896 2017-11-25 20:43:39Z adridg $
+# $FreeBSD: head/x11/kde4-runtime/Makefile 455244 2017-12-01 01:58:23Z mandree $
 
 PORTNAME=	kde-runtime
 PORTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	x11 kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

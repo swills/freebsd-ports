@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@ahze.net>
-# $FreeBSD: head/math/convertall/Makefile 442592 2017-06-04 21:49:48Z bdrewery $
+# $FreeBSD: head/math/convertall/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	convertall
 PORTVERSION=	0.6.1
@@ -39,11 +39,4 @@ do-install:
 		-d ${DATADIR} -f ${DATADIR_REL})
 	(cd ${STAGEDIR}${DOCSDIR} && ${RM} INSTALL LICENSE)
 
-.include <bsd.port.pre.mk>
-
-.if defined(PACKAGE_BUILDING) && !defined(PACKAGE_BUILDING_FLAVORS) && \
-    ${PYTHON_VER} != ${PYTHON_DEFAULT}
-IGNORE=	you have python ${PYTHON_DEFAULT} set as the default, and this needs ${PYTHON_VER}
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

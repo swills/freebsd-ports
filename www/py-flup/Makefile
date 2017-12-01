@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@lwhsu.org>
-# $FreeBSD: head/www/py-flup/Makefile 376109 2015-01-03 08:41:20Z mva $
+# $FreeBSD: head/www/py-flup/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	flup
 PORTVERSION=	1.0.2
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	lwhsu@FreeBSD.org
 COMMENT=	Random assortment of WSGI servers, middleware
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

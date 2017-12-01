@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-Missing/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-Missing/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	Missing
 PORTVERSION=	2.13.1
@@ -13,9 +13,9 @@ COMMENT=	Special Missing objects used in Zope2
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ExtensionClass>=0:devel/py-ExtensionClass
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ExtensionClass>=0:devel/py-ExtensionClass@${FLAVOR}
 
-USES=		python zip
+USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

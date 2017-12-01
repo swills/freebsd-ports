@@ -1,5 +1,5 @@
 # Created by: marius@alchemy.franken.de
-# $FreeBSD: head/sysutils/sformat/Makefile 440860 2017-05-13 23:50:49Z linimon $
+# $FreeBSD: head/sysutils/sformat/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	sformat
 PORTVERSION=	3.5
@@ -15,7 +15,8 @@ MAINTAINER=	marius@FreeBSD.org
 COMMENT=	Allows formatting/partitioning/analysis/repairing of SCSI disks
 
 BROKEN_aarch64=		does not build: No rule to make target RULES/arm64-freebsd-cc.rul
-BROKEN_armv6=		does not build: No rule to make target RULES/arm64-freebsd-cc.rul
+BROKEN_armv6=		does not build: No rule to make target RULES/arm-freebsd-cc.rul
+BROKEN_armv7=		does not build: No rule to make target RULES/arm-freebsd-cc.rul
 BROKEN_mips64=		does not build: No rule to make target RULES/mips-freebsd-cc.rul
 BROKEN_powerpc64=	does not install: powerpc-freebsd-cc/sformat: No such file or directory
 

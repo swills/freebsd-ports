@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/py-anonfunc/Makefile 380996 2015-03-11 14:49:35Z amdmi3 $
+# $FreeBSD: head/devel/py-anonfunc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	anonfunc
 PORTVERSION=	1.0
@@ -14,7 +14,7 @@ COMMENT=	Python module that provides easy anonymous function
 
 LICENSE=	BSD2CLAUSE
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 post-patch:

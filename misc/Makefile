@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 455016 2017-11-28 03:06:58Z yuri $
+# $FreeBSD: head/misc/Makefile 455210 2017-11-30 15:50:30Z mat $
 #
 
     COMMENT = Miscellaneous utilities
@@ -56,6 +56,7 @@
     SUBDIR += countrycodes
     SUBDIR += cpuid
     SUBDIR += crosspad
+    SUBDIR += crosti
     SUBDIR += cs
     SUBDIR += cstream
     SUBDIR += dahdi
@@ -398,8 +399,6 @@
     SUBDIR += py-spdx-lookup
     SUBDIR += py-tqdm
     SUBDIR += py-yolk
-    SUBDIR += py3-pexpect
-    SUBDIR += py3-tqdm
     SUBDIR += pylize
     SUBDIR += qbrew
     SUBDIR += qlas

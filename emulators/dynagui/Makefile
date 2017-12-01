@@ -1,5 +1,5 @@
 # Created by: Andrew Greenwood
-# $FreeBSD: head/emulators/dynagui/Makefile 439029 2017-04-21 08:43:45Z amdmi3 $
+# $FreeBSD: head/emulators/dynagui/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	dynagui
 PORTVERSION=	0.4
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	dynagen:emulators/dynagen
 
-USES=		python shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	dynagui.py
 USE_PYTHON=	distutils
 IMGDIR=		${STAGEDIR}${PREFIX}/share/${PORTNAME}/img

@@ -1,5 +1,5 @@
 # Created by: anholt@FreeBSD.org
-# $FreeBSD: head/graphics/driconf/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/driconf/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	driconf
 PORTVERSION=	0.9.1
@@ -16,7 +16,7 @@ RUN_DEPENDS=	${PYTHON_SITELIBDIR}/gtk-2.0/gtk/__init__.py:x11-toolkits/py-gtk2
 USE_GL=		glut
 USE_PYTHON=	distutils
 NO_BUILD=	yes
-USES=		gettext python
+USES=		gettext python:2.7
 PYDISTUTILS_EGGINFODIR=	${STAGEDIR}${PREFIX}/lib/driconf
 
 pre-patch:

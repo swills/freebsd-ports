@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/py-flake8-builtins/Makefile 448369 2017-08-20 11:19:09Z amdmi3 $
+# $FreeBSD: head/devel/py-flake8-builtins/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	flake8-builtins
 PORTVERSION=	1.0
@@ -13,9 +13,9 @@ COMMENT=	Check for python builtins being used as variables or parameters
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}flake8>=0:devel/py-flake8
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}flake8>=0:devel/py-flake8@${FLAVOR}
 
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

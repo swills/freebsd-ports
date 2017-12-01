@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/gnuplot/Makefile 454809 2017-11-24 00:05:20Z glewis $
+# $FreeBSD: head/math/gnuplot/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	gnuplot
 PORTVERSION=	5.2.2
@@ -21,7 +21,7 @@ USE_XORG+=	x11
 LIB_DEPENDS+=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
 		libgd.so:graphics/gd \
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libtiff.so:graphics/tiff
 GNU_CONFIGURE=	yes
 LDFLAGS+=	-L${LOCALBASE}/lib ${ICONV_LIB}

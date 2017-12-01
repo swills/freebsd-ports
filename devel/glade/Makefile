@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/devel/glade/Makefile 452967 2017-10-27 09:04:26Z amdmi3 $
+# $FreeBSD: head/devel/glade/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	glade
 PORTVERSION=	3.18.3
@@ -39,7 +39,7 @@ OPTIONS_SUB=	yes
 OPTIONS_DEFINE=	PYTHON
 OPTIONS_DEFAULT=PYTHON
 PYTHON_CONFIGURE_ENABLE=	python
-PYTHON_USES=	python:3
+PYTHON_USES=	python:3.4+
 PYTHON_USE=	GNOME=py3gobject3
 
 .include <bsd.port.mk>

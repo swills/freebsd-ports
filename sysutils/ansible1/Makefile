@@ -1,19 +1,19 @@
 # Created by: Nikolai Lifanov <lifanov@mail.lifanov.com>
-# $FreeBSD: head/sysutils/ansible1/Makefile 446054 2017-07-17 06:27:45Z koobs $
+# $FreeBSD: head/sysutils/ansible1/Makefile 455233 2017-11-30 21:34:42Z lifanov $
 
 PKGNAMESUFFIX=	1
 PORTVERSION=	1.9.6
 PORTREVISION=	1
 
-CONFLICTS=	ansible-*
+CONFLICTS=	ansible-* ansible23-*
 
 MASTERDIR=	${.CURDIR}/../ansible
 DISTINFO_FILE=	${.CURDIR}/distinfo
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml \
-		${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto \
-		${PYTHON_PKGNAMEPREFIX}paramiko>0:security/py-paramiko \
-		${PYTHON_PKGNAMEPREFIX}Jinja2>0:devel/py-Jinja2
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}paramiko>0:security/py-paramiko@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Jinja2>0:devel/py-Jinja2@${PY_FLAVOR}
 
 USES=	cpe python:2 shebangfix
 

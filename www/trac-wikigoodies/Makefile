@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/www/trac-wikigoodies/Makefile 416081 2016-05-29 01:29:08Z amdmi3 $
+# $FreeBSD: head/www/trac-wikigoodies/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	wikigoodies
 PORTVERSION=	0.3.3522
@@ -19,7 +19,7 @@ RUN_DEPENDS=	tracd:www/trac
 
 WRKSRC=		${WRKDIR}/${PORTNAME}plugin/0.11
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Anders Nordby <anders@fix.no>
-# $FreeBSD: head/graphics/hppsmtools/Makefile 340656 2014-01-21 20:42:02Z antoine $
+# $FreeBSD: head/graphics/hppsmtools/Makefile 455259 2017-12-01 11:08:29Z amdmi3 $
 
 PORTNAME=	hppsmtools
 PORTVERSION=	1.1
@@ -11,6 +11,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tool for HP PhotoSmart C5340A & Konica Q-EZ digital cameras
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 PLIST_FILES=	bin/psmdel bin/psmdir bin/psmget bin/psmsho
 PORTDOCS=	README changes.txt
@@ -27,6 +28,8 @@ do-install:
 .for file in psmdel psmdir psmget psmsho
 	${INSTALL_PROGRAM} ${WRKSRC}/${file} ${STAGEDIR}${PREFIX}/bin
 .endfor
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 

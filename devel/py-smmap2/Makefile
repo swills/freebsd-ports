@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-smmap2/Makefile 443405 2017-06-11 19:03:57Z sunpoet $
+# $FreeBSD: head/devel/py-smmap2/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	smmap2
 PORTVERSION=	2.0.3
@@ -12,7 +12,7 @@ COMMENT=	Sliding-window memory map manager
 
 LICENSE=	BSD3CLAUSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

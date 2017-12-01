@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/math/py-graphillion/Makefile 410030 2016-03-03 10:54:53Z koobs $
+# $FreeBSD: head/math/py-graphillion/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	graphillion
 PORTVERSION=	0.99
@@ -14,7 +14,7 @@ COMMENT=	Fast, lightweight graphset operation library in Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 post-install:

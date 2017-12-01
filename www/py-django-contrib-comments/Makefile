@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/www/py-django-contrib-comments/Makefile 423024 2016-09-30 21:13:20Z rene $
+# $FreeBSD: head/www/py-django-contrib-comments/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-contrib-comments
 PORTVERSION=	1.7.3
@@ -13,7 +13,7 @@ COMMENT=	Code formerly known as django.contrib.comments
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

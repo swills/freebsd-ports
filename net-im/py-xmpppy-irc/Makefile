@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/net-im/py-xmpppy-irc/Makefile 425835 2016-11-10 09:00:12Z amdmi3 $
+# $FreeBSD: head/net-im/py-xmpppy-irc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	xmpppy-irc
 PORTVERSION=	0.3
@@ -14,10 +14,11 @@ COMMENT=	Xmpp to irc transport
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/xmpp/__init__.py:net-im/py-xmpppy \
-		${PYTHON_PKGNAMEPREFIX}irc>0:irc/py-irc
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/xmpp/__init__.py:net-im/py-xmpppy@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}irc>0:irc/py-irc@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
+USE_PYTHON=	flavors
 NO_BUILD=	yes
 NO_ARCH=	yes
 FILES=		irc.py jep0106.py jep0133.py test_jep0106.py

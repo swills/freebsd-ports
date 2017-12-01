@@ -1,5 +1,5 @@
 # Created by: Aleksander Fafula <alex@bsdguru.org>
-# $FreeBSD: head/polish/ekg2/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/polish/ekg2/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ekg2
 PORTVERSION=	0.3.1
@@ -70,7 +70,7 @@ PERL_CONFIGURE_WITH=	perl
 PERL_USES=		perl5
 
 PYTHON_CONFIGURE_WITH=	python
-PYTHON_USES=		python shebangfix
+PYTHON_USES=		python:2.7 shebangfix
 SHEBANG_FILES=		contrib/python/notify-bubble.py
 
 SQLITE_CONFIGURE_WITH=	sqlite3

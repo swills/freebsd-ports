@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/pychecker/Makefile 454940 2017-11-27 09:00:21Z amdmi3 $
+# $FreeBSD: head/devel/pychecker/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pychecker
 PORTVERSION=	0.8.19
@@ -12,7 +12,7 @@ COMMENT=	Python source code checking tool to help hunting common bugs
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

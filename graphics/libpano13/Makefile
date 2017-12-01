@@ -1,5 +1,5 @@
 # Created by: Vasil Dimov <vd@FreeBSD.org>
-# $FreeBSD: head/graphics/libpano13/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/graphics/libpano13/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	libpano13
 PORTVERSION=	2.9.19
@@ -13,7 +13,7 @@ COMMENT=	Cross-platform library behind Panorama Tools and other photo stitchers
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libpng16.so:graphics/png \
+LIB_DEPENDS=	libpng.so:graphics/png \
 		libtiff.so:graphics/tiff
 
 USE_GNOME=	gtk20 glib20 pango atk

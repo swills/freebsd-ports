@@ -1,5 +1,5 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/devel/py-testtools/Makefile 442497 2017-06-03 14:32:42Z tcberner $
+# $FreeBSD: head/devel/py-testtools/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	testtools
 PORTVERSION=	2.3.0
@@ -12,8 +12,8 @@ COMMENT=	Extensions to the Python library's unit testing framework
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.3:devel/py-pbr
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}extras>=0.0.3:devel/py-extras
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.3:devel/py-pbr@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}extras>=0.0.3:devel/py-extras@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist concurrent

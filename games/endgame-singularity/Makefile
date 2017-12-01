@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/games/endgame-singularity/Makefile 428544 2016-12-14 03:47:18Z lifanov $
+# $FreeBSD: head/games/endgame-singularity/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	singularity
 PORTVERSION=	0.30c
@@ -19,7 +19,7 @@ RUN_DEPENDS=	py*-game>=1.8:devel/py-game \
 
 USE_GITHUB=	yes
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 USE_SDL=	image mixer
 PORTDOCS=	AUTHORS Changelog README.txt TODO

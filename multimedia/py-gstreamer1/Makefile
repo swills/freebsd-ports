@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@rainbow-runner.nl>
-# $FreeBSD: head/multimedia/py-gstreamer1/Makefile 450470 2017-09-23 20:29:49Z kwm $
+# $FreeBSD: head/multimedia/py-gstreamer1/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gstreamer
 PORTVERSION=	1.12.3
@@ -10,15 +10,23 @@ PKGNAMESUFFIX=	1
 DISTNAME=	gst-python-${PORTVERSION}
 
 MAINTAINER=	multimedia@FreeBSD.org
-COMMENT=	GStreamer python 2 bindings
+COMMENT=	GStreamer python bindings
 
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gmake libtool localbase pathfix pkgconfig python:2.7 tar:xz
+USES=		gmake libtool localbase pathfix pkgconfig python tar:xz
+.if ${FLAVOR:Upy27:Mpy2*}
 USE_GNOME=	pygobject3
+.else
+USE_GNOME=	py3gobject3
+.endif
+py34_PLIST=	${.CURDIR}/pkg-plist-py3
+py35_PLIST=	${.CURDIR}/pkg-plist-py3
+py36_PLIST=	${.CURDIR}/pkg-plist-py3
+USE_PYTHON=	flavors
 USE_GSTREAMER1=	yes
 GNU_CONFIGURE=	yes
 PLIST_SUB=	VERSION="${GST_VERSION}"

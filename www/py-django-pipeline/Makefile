@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/www/py-django-pipeline/Makefile 442799 2017-06-06 20:53:19Z rm $
+# $FreeBSD: head/www/py-django-pipeline/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-pipeline
 PORTVERSION=	1.6.13
@@ -20,7 +20,7 @@ USE_PYTHON=	autoplist distutils
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3200
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}futures>0:devel/py-futures
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}futures>0:devel/py-futures@${FLAVOR}
 .endif
 
 .include <bsd.port.post.mk>

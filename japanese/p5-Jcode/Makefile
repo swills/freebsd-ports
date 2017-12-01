@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/p5-Jcode/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/japanese/p5-Jcode/Makefile 455195 2017-11-30 11:01:32Z wen $
 
 PORTNAME=	Jcode
 PORTVERSION=	2.07
@@ -8,6 +8,9 @@ MASTER_SITES=	CPAN
 
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension interface to convert Japanese text
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	configure

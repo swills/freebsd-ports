@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/py-prompt_toolkit/Makefile 446820 2017-07-28 13:07:05Z sunpoet $
+# $FreeBSD: head/devel/py-prompt_toolkit/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	prompt_toolkit
 PORTVERSION=	1.0.15
@@ -13,13 +13,13 @@ COMMENT=	Library for building powerful interactive command lines in Python
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six \
-		${PYTHON_PKGNAMEPREFIX}wcwidth>=0:devel/py-wcwidth
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}wcwidth>=0:devel/py-wcwidth@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils
-USES?=		python
+USES=		python
 
-SLAVEDIRS=	devel/py3-prompt_toolkit
+SLAVEDIRS=	devel/py-prompt_toolkit
 
 .include <bsd.port.mk>

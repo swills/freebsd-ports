@@ -1,5 +1,5 @@
 # Created by: Julien Laffaye <jlaffaye@FreeBSD.org>
-# $FreeBSD: head/www/py-feedgenerator/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-feedgenerator/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	feedgenerator
 PORTVERSION=	1.6
@@ -13,8 +13,8 @@ COMMENT=	Standalone version of django.utils.feedgenerator
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz \
-		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@lwhsu.org>
-# $FreeBSD: head/devel/py-cjson/Makefile 437443 2017-04-01 15:56:44Z lwhsu $
+# $FreeBSD: head/devel/py-cjson/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cjson
 PORTVERSION=	1.2.1
@@ -13,7 +13,7 @@ COMMENT=	Fast JSON encoder/decoder for Python
 
 LICENSE=	LGPL20
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 post-install:

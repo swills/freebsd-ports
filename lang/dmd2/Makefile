@@ -1,5 +1,5 @@
 # Created by: Ruben <chromium@hybridsource.org>
-# $FreeBSD: head/lang/dmd2/Makefile 445044 2017-07-05 02:45:25Z cy $
+# $FreeBSD: head/lang/dmd2/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	dmd
 PORTVERSION=	2.073.2
@@ -17,6 +17,7 @@ LICENSE_FILE_DMD=	${WRKSRC}/dmd/src/backendlicense.txt
 LICENSE_PERMS_DMD=	no-dist-mirror no-dist-sell no-pkg-mirror no-pkg-sell auto-accept
 
 BROKEN_armv6=		dumps core: Assertion failed: (!signbit(Port::ldbl_nan)), function PortInitializer, file port.c
+BROKEN_armv7=		dumps core: Assertion failed: (!signbit(Port::ldbl_nan)), function PortInitializer, file port.c
 BROKEN_mips64=		fails to compile: cc1: unrecognized command line option -m32
 BROKEN_powerpc64=	fails to build: can't mangle function with unknown linkage (void*())
 BROKEN_sparc64=		fails to install: divide-by-zero error

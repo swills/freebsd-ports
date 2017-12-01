@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/news/py-yenc/Makefile 398833 2015-10-08 15:12:22Z olgeni $
+# $FreeBSD: head/news/py-yenc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	yenc
 PORTVERSION=	0.3
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	jlaffaye@FreeBSD.org
 COMMENT=	yenc decoding module for Python in C
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 .include <bsd.port.mk>

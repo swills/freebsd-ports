@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau <duchateau.olivier@gmail.com>
-# $FreeBSD: head/databases/py-pickledb/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/py-pickledb/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pickleDB
 PORTVERSION=	0.6.2
@@ -12,7 +12,7 @@ COMMENT=	Lightweight, fast, and simple key-value store
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}simplejson>=0:devel/py-simplejson
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}simplejson>=0:devel/py-simplejson@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

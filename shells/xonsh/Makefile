@@ -1,4 +1,4 @@
-# $FreeBSD: head/shells/xonsh/Makefile 454806 2017-11-23 22:13:33Z dbaio $
+# $FreeBSD: head/shells/xonsh/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	xonsh
 PORTVERSION=	0.6.0
@@ -11,7 +11,7 @@ COMMENT=	Python-ish BASH-wards shell
 
 LICENSE=	BSD2CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}amalgamate>=0:devel/py-amalgamate
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}amalgamate>=0:devel/py-amalgamate@${FLAVOR}
 
 NO_ARCH=	yes
 

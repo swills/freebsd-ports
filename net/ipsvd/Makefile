@@ -1,5 +1,5 @@
 # Created by: Sergei Kolobov <sergei@kolobov.com>
-# $FreeBSD: head/net/ipsvd/Makefile 441819 2017-05-27 00:20:19Z linimon $
+# $FreeBSD: head/net/ipsvd/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	ipsvd
 PORTVERSION=	1.0.0
@@ -13,6 +13,7 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/package/COPYING
 
 BROKEN_armv6=		fails to install: Checking udpsvd... drop: unable to read from socket: bad address
+BROKEN_armv7=		fails to install: Checking udpsvd... drop: unable to read from socket: bad address
 BROKEN_mips64=		fails to install: tcpsvd failed
 
 WRKSRC=		${WRKDIR}/net/${DISTNAME}

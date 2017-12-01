@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/devel/statcvs/Makefile 441814 2017-05-26 20:02:44Z linimon $
+# $FreeBSD: head/devel/statcvs/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	statcvs
 PORTVERSION=	0.7.0
@@ -15,6 +15,7 @@ LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/etc/LICENSE
 
 BROKEN_armv6=		fails to compile: build.xml: compilation failed
+BROKEN_armv7=		fails to compile: build.xml: compilation failed
 
 USES=		zip
 USE_JAVA=	yes

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/textproc/py-pystemmer/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/textproc/py-pystemmer/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pystemmer
 PORTVERSION=	1.3.0
@@ -16,7 +16,7 @@ COMMENT=	Snowball Stemming Algorithms for Information Retrieval
 LICENSE=	MIT BSD3CLAUSE
 LICENSE_COMB=	dual
 
-USES?=		python
+USES=		python
 USE_PYTHON=	distutils autoplist
 
 post-install:

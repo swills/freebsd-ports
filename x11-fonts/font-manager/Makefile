@@ -1,5 +1,5 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/x11-fonts/font-manager/Makefile 434162 2017-02-15 13:19:45Z jrm $
+# $FreeBSD: head/x11-fonts/font-manager/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	font-manager
 PORTVERSION=	0.5.7
@@ -15,8 +15,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
 		libsqlite3.so:databases/sqlite3
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/libxml2.py:textproc/py-libxml2 \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/libxml2.py:textproc/py-libxml2@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	FontManager

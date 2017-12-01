@@ -1,5 +1,5 @@
 # Created by: pjm <pierrejacqes.mimifir@gmail.com>
-# $FreeBSD: head/audio/bristol/Makefile 441395 2017-05-21 13:21:04Z linimon $
+# $FreeBSD: head/audio/bristol/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	bristol
 PORTVERSION=	0.60.10
@@ -27,6 +27,7 @@ CONFIGURE_ARGS+=	--disable-alsa --enable-oss \
 
 BROKEN_aarch64=		Does not build: error: unknown FP unit 'sse'
 BROKEN_armv6=		Does not build: error: unknown FP unit 'sse'
+BROKEN_armv7=		Does not build: error: unknown FP unit 'sse'
 BROKEN_mips64=		Does not build: error: unknown FP unit 'sse'
 BROKEN_powerpc64=	Does not build: error: unknown FP unit 'sse'
 

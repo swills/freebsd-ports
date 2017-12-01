@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/games/trigger-rally/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/games/trigger-rally/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	trigger-rally
 PORTVERSION=	0.6.5
@@ -17,6 +17,7 @@ LIB_DEPENDS+=	libalut.so:audio/freealut
 
 BROKEN_aarch64=		fails to compile: error: the clang compiler does not support -march=native
 BROKEN_armv6=		fails to compile: error: the clang compiler does not support -march=native
+BROKEN_armv7=		fails to compile: error: the clang compiler does not support -march=native
 BROKEN_powerpc64=	fails to compile: error: the clang compiler does not support -march=native
 
 WRKSRC_SUBDIR=	src

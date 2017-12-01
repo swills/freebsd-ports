@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/sysutils/backupchecker/Makefile 438546 2017-04-14 21:44:37Z martymac $
+# $FreeBSD: head/sysutils/backupchecker/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	backupchecker
 PORTVERSION=	1.9
@@ -14,7 +14,7 @@ USE_GITHUB=	yes
 
 NO_ARCH=	yes
 USES=		python:3.3+
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils optsuffix
 
 PORTDOCS=	README.md
 

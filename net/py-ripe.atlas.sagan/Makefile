@@ -1,5 +1,5 @@
 # Created by: Massimiliano Stucchi <mstucchi@ripe.net>
-# $FreeBSD: head/net/py-ripe.atlas.sagan/Makefile 447964 2017-08-14 19:11:39Z sunpoet $
+# $FreeBSD: head/net/py-ripe.atlas.sagan/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ripe.atlas.sagan
 PORTVERSION=	1.2.1
@@ -13,9 +13,9 @@ COMMENT=	Parsing library for RIPE Atlas measurement results
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil \
-		${PYTHON_PKGNAMEPREFIX}pytz>=0:devel/py-pytz \
-		${PYTHON_PKGNAMEPREFIX}cryptography>=0:security/py-cryptography
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytz>=0:devel/py-pytz@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}cryptography>=0:security/py-cryptography@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

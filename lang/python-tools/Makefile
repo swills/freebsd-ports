@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/python-tools/Makefile 399684 2015-10-19 14:50:52Z amdmi3 $
+# $FreeBSD: head/lang/python-tools/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	python-tools
 PORTVERSION=	${PYTHON_PORTVERSION}
@@ -37,10 +37,6 @@ UNIQUE_SUFFIX_FILES=	${SCRIPT_FILES:C/^.*/bin\/&/g} \
 
 .if ${PYTHON_REL} < 3200
 SCRIPT_FILES+=	logmerge
-.endif
-
-.if ${PYTHON_VERSION} == ${PYTHON_DEFAULT_VERSION}
-UNIQUE_DEFAULT_LINKS=	yes
 .endif
 
 do-install:

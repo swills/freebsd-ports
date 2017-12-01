@@ -1,5 +1,5 @@
 # Created by: Dan Langille
-# $FreeBSD: head/devel/py-robotframework-databaselibrary/Makefile 440631 2017-05-11 15:24:57Z dvl $
+# $FreeBSD: head/devel/py-robotframework-databaselibrary/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	robotframework-databaselibrary
 PORTVERSION=	1.0.1
@@ -12,7 +12,7 @@ COMMENT=	Utilities meant for Robot Frameworks usage
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}robotframework>=2.7.5:devel/py-robotframework
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}robotframework>=2.7.5:devel/py-robotframework@${FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	franz-see

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-cuisine/Makefile 424869 2016-10-28 17:14:10Z jbeich $
+# $FreeBSD: head/devel/py-cuisine/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cuisine
 PORTVERSION=	0.7.13
@@ -12,7 +12,7 @@ COMMENT=	Chef-like functionality for Fabric
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}fabric>=1.7,1:devel/py-fabric
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}fabric>=1.7,1:devel/py-fabric@${FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

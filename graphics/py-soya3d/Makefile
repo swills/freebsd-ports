@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/graphics/py-soya3d/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/graphics/py-soya3d/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	soya3d
 PORTVERSION=	0.14
@@ -14,15 +14,15 @@ DIST_SUBDIR=	python
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Very high level 3D engine for Python
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${FLAVOR}
 LIB_DEPENDS=	libode.so:devel/ode \
 		libcal3d.so:graphics/cal3d \
 		libfreetype.so:print/freetype2
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/editobj/editor.py:graphics/py-editobj \
-		${PYTHON_SITELIBDIR}/tofu/client.py:net/py-tofu \
-		${PYTHON_SITELIBDIR}/cerealizer/__init__.py:security/py-cerealizer
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/editobj/editor.py:graphics/py-editobj@${FLAVOR} \
+		${PYTHON_SITELIBDIR}/tofu/client.py:net/py-tofu@${FLAVOR} \
+		${PYTHON_SITELIBDIR}/cerealizer/__init__.py:security/py-cerealizer@${FLAVOR}
 
-USES=		gmake openal:al,alut python tar:bzip2
+USES=		gmake openal:al,alut python:2.7 tar:bzip2
 USE_GL=		glew glu
 USE_PYTHON=	autoplist distutils
 USE_SDL=	sdl

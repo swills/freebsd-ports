@@ -1,5 +1,5 @@
 # Created by: Johan Strom <johan@stromnet.se>
-# $FreeBSD: head/comms/owfs/Makefile 430669 2017-01-05 22:58:02Z jbeich $
+# $FreeBSD: head/comms/owfs/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	owfs
 PORTVERSION=	3.1p1
@@ -57,7 +57,7 @@ OWPERL_USE=			perl5=build,run
 OWPHP_CONFIGURE_ENABLE=		owphp
 
 OWPYTHON_CONFIGURE_ENABLE=	owpython
-OWPYTHON_USES=			python
+OWPYTHON_USES=			python:2.7
 
 # Additional CONFIGURE_ARGS is done below
 OWTCL_CONFIGURE_ENABLE=		owtcl

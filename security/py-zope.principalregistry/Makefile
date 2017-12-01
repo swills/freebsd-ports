@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-zope.principalregistry/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/py-zope.principalregistry/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	zope.principalregistry
 PORTVERSION=	3.7.1
@@ -13,13 +13,13 @@ COMMENT=	Global principal registry component for Zope3
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.authentication>=0:security/py-zope.authentication \
-		${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface \
-		${PYTHON_PKGNAMEPREFIX}zope.password>=0:security/py-zope.password \
-		${PYTHON_PKGNAMEPREFIX}zope.security>=0:security/py-zope.security
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.authentication>=0:security/py-zope.authentication@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.password>=0:security/py-zope.password@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.security>=0:security/py-zope.security@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

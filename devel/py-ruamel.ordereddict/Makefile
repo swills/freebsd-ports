@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-ruamel.ordereddict/Makefile 425183 2016-11-03 00:56:02Z feld $
+# $FreeBSD: head/devel/py-ruamel.ordereddict/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ruamel.ordereddict
 PORTVERSION=	0.4.9
@@ -13,7 +13,7 @@ COMMENT=	Python dict that keeps keys in insertion sorted order
 
 LICENSE=	MIT
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/comms/py-hidapi/Makefile 451805 2017-10-11 22:34:31Z ehaupt $
+# $FreeBSD: head/comms/py-hidapi/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	hidapi
 PORTVERSION=	0.7.99
@@ -13,11 +13,10 @@ COMMENT=	Cython interface to comms/hidapi
 
 LICENSE=	GPLv3
 
-BUILD_DEPENDS=	cython:lang/cython
 LIB_DEPENDS=	libhidapi.so:comms/hidapi
 
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils cython
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|usb-1.0|usb|g' ${WRKSRC}/setup.py

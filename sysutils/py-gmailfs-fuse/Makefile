@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/py-gmailfs-fuse/Makefile 442220 2017-05-31 15:20:16Z mmokhi $
+# $FreeBSD: head/sysutils/py-gmailfs-fuse/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gmailfs-fuse
 PORTVERSION=	0.8.6
@@ -11,7 +11,7 @@ COMMENT=	Use an IMAP server (like gmail) as normal storage
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}fusefs>=0.2:devel/py-fusefs
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}fusefs>=0.2:devel/py-fusefs@${FLAVOR}
 
 USES=		fuse python:2.7
 USE_PYTHON=	autoplist distutils

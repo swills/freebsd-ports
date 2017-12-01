@@ -1,5 +1,5 @@
 # Created by: Andriy Pylypenko <bamby@sippysoft.com>
-# $FreeBSD: head/www/py-wsgiauth/Makefile 425174 2016-11-02 22:45:14Z mat $
+# $FreeBSD: head/www/py-wsgiauth/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	wsgiauth
 PORTVERSION=	0.1
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	bamby@sippysoft.com
 COMMENT=	WSGI authentication middleware
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

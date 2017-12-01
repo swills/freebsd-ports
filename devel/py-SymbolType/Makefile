@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-SymbolType/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-SymbolType/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	SymbolType
 PORTVERSION=	1.0
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	wenheping@gmail.com
 COMMENT=	Simple Symbol Type for Python
 
-USES=		python zip
+USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

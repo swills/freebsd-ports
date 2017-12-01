@@ -1,5 +1,5 @@
 # Created by: Daichi GOTO <daichi@FreeBSD.org>
-# $FreeBSD: head/japanese/ibus-anthy/Makefile 437328 2017-03-30 21:12:43Z mat $
+# $FreeBSD: head/japanese/ibus-anthy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ibus-anthy
 PORTVERSION=	1.2.7
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libanthy.so:japanese/anthy \
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/gtk-2.0/pynotify/_pynotify.so:devel/py-notify
 
 GNU_CONFIGURE=	yes
-USES=		libtool gettext gmake pkgconfig python
+USES=		libtool gettext gmake pkgconfig python:2.7
 USE_GNOME=	intltool pygtk2
 
 LOCALBASE_REPLACE_FILES= \

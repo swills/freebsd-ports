@@ -1,5 +1,5 @@
 
-# $FreeBSD: head/net/Makefile 455044 2017-11-28 15:16:38Z tz $
+# $FreeBSD: head/net/Makefile 455210 2017-11-30 15:50:30Z mat $
 #
 
     COMMENT = Networking tools
@@ -1089,9 +1089,6 @@
     SUBDIR += py-xmlrpc
     SUBDIR += py-zope.proxy
     SUBDIR += py-zsi
-    SUBDIR += py3-netifaces
-    SUBDIR += py3-pysocks
-    SUBDIR += py3-urllib3
     SUBDIR += pygopherd
     SUBDIR += pynids
     SUBDIR += pyrad

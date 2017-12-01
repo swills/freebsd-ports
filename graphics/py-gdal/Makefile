@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/graphics/py-gdal/Makefile 454866 2017-11-25 03:01:33Z sunpoet $
+# $FreeBSD: head/graphics/py-gdal/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gdal
 PORTVERSION=	2.2.3
@@ -27,8 +27,8 @@ WRKSRC_SUBDIR=	swig/python
 
 SHEBANG_FILES=	scripts/*.py
 
-NUMPY_BUILD_DEPENDS=	${PKGNAMEPREFIX}numpy>=1.0.0,1:math/py-numpy
-NUMPY_RUN_DEPENDS=	${PKGNAMEPREFIX}numpy>=1.0.0,1:math/py-numpy
+NUMPY_BUILD_DEPENDS=	${PKGNAMEPREFIX}numpy>=1.0.0,1:math/py-numpy@${FLAVOR}
+NUMPY_RUN_DEPENDS=	${PKGNAMEPREFIX}numpy>=1.0.0,1:math/py-numpy@${FLAVOR}
 NUMPY_USES=		fortran
 
 post-install:

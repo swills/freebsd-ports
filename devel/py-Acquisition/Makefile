@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-Acquisition/Makefile 413247 2016-04-14 07:51:26Z rm $
+# $FreeBSD: head/devel/py-Acquisition/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	Acquisition
 PORTVERSION=	4.2.2
@@ -13,10 +13,10 @@ COMMENT=	Allows to obtain attributes from the containment hierarchy
 LICENSE=	ZPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ExtensionClass>=4.1.1:devel/py-ExtensionClass \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ExtensionClass>=4.1.1:devel/py-ExtensionClass@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 post-install:

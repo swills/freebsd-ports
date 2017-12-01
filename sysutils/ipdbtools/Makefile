@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/ipdbtools/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/sysutils/ipdbtools/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	ipdbtools
 PORTVERSION=	1.1.1
@@ -13,6 +13,7 @@ LICENSE=	BSD2CLAUSE
 
 BROKEN_aarch64=		fails to compile: error: invalid conversion between vector type and integer type
 BROKEN_armv6=		fails to compile: error: invalid conversion between vector type and integer type
+BROKEN_armv7=		fails to compile: error: invalid conversion between vector type and integer type
 BROKEN_powerpc64=	fails to compile: error: unrecognized command line option -mssse3
 BROKEN_sparc64=		fails to compile: error: unrecognized command line option -mssse3
 

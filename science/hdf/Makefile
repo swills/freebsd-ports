@@ -1,5 +1,5 @@
 # Created by: mi
-# $FreeBSD: head/science/hdf/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/science/hdf/Makefile 455170 2017-11-30 06:43:49Z linimon $
 
 PORTNAME=	hdf
 PORTVERSION=	4.2.11
@@ -15,7 +15,7 @@ COMMENT=	Hierarchical Data Format library (from NCSA)
 LIB_DEPENDS=	libsz.so:science/szip
 
 BROKEN_powerpc64=	Does not build: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'you'
-NOT_FOR_ARCHS=		aarch64 armv6
+NOT_FOR_ARCHS=		aarch64 armv6 armv7
 NOT_FOR_ARCHS_REASON=	fails to compile: no machine type has been defined
 
 CONFLICTS_INSTALL=	netcdf-4.[0-9]*

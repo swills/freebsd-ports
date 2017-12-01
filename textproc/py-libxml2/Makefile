@@ -1,5 +1,5 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/textproc/py-libxml2/Makefile 424644 2016-10-25 19:09:14Z antoine $
+# $FreeBSD: head/textproc/py-libxml2/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTREVISION=	0
 CATEGORIES=	textproc gnome python
@@ -14,8 +14,8 @@ INSTALL_WRKSRC=	${BUILD_WRKSRC}
 DESCR=		${.CURDIR}/pkg-descr
 PLIST=		${.CURDIR}/pkg-plist
 
-USE_GNOME+=	libxml2
-USES+=		python:2 gettext-runtime
+USE_GNOME=	libxml2
+USES=		python gettext-runtime
 USE_PYTHON=	autoplist distutils
 
 CPPFLAGS+=	`${PYTHON_CMD}-config --cflags`

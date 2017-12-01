@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/plutocracy/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/plutocracy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	plutocracy
 PORTVERSION=	0.0.20081229
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
-USES=		python tar:bzip2
+USES=		python:2.7 tar:bzip2
 USE_SDL=	sdl pango
 USE_GL=		gl glu
 USE_PYTHON=	distutils

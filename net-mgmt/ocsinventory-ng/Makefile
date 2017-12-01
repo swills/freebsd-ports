@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/ocsinventory-ng/Makefile 438239 2017-04-11 00:48:22Z sunpoet $
+# $FreeBSD: head/net-mgmt/ocsinventory-ng/Makefile 455264 2017-12-01 11:14:24Z amdmi3 $
 
 PORTNAME=	ocsinventory-ng
 PORTVERSION=	2.1.2
@@ -30,11 +30,15 @@ NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}
 SUB_FILES=	pkg-message
 
+OPTIONS_DEFINE=	DOCS
+
 do-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}
 	@(cd ${WRKSRC}/ && ${COPYTREE_SHARE} "Apache binutils dtd etc ocsreports" ${STAGEDIR}${DATADIR}/)
-	@${INSTALL_SCRIPT} ${WRKSRC}/setup.sh ${STAGEDIR}${DATADIR}/
+	${INSTALL_SCRIPT} ${WRKSRC}/setup.sh ${STAGEDIR}${DATADIR}/
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	@${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}/
+	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}/
 
 .include <bsd.port.mk>

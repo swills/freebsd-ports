@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/deskutils/conkyforecast/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/deskutils/conkyforecast/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	conkyforecast
 PORTVERSION=	2.20
@@ -18,7 +18,7 @@ RUN_DEPENDS=	conky:sysutils/conky \
 		pidof:sysutils/pidof
 
 USES=		gettext python fonts
-USE_PYTHON=	distutils
+USE_PYTHON=	distutils concurrent optsuffix
 SUB_FILES=	pkg-message
 
 WRKSRC=		${WRKDIR}/src

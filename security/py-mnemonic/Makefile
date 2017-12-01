@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/security/py-mnemonic/Makefile 451836 2017-10-12 09:30:58Z ehaupt $
+# $FreeBSD: head/security/py-mnemonic/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	mnemonic
 PORTVERSION=	0.18
@@ -12,7 +12,7 @@ COMMENT=	Implementation of Bitcoin BIP-0039
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbkdf2>=1.3:security/py-pbkdf2
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbkdf2>=1.3:security/py-pbkdf2@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

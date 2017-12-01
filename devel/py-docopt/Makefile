@@ -1,5 +1,5 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/devel/py-docopt/Makefile 435294 2017-03-02 19:07:44Z antoine $
+# $FreeBSD: head/devel/py-docopt/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	docopt
 PORTVERSION=	0.6.2
@@ -15,7 +15,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE-MIT
 
 NO_ARCH=	yes
-USES?=		python
+USES=		python
 USE_PYTHON=	distutils autoplist concurrent
 
 OPTIONS_DEFINE=	DOCS EXAMPLES

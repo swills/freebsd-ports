@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/py-cec/Makefile 453465 2017-11-04 13:54:05Z kevlo $
+# $FreeBSD: head/multimedia/py-cec/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cec
 PORTVERSION=	0.2.6
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libcec.so:multimedia/libcec
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 CPPFLAGS+=	-I${LOCALBASE}/include

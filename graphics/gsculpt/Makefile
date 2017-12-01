@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/gsculpt/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/graphics/gsculpt/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gsculpt
 PORTVERSION=	0.99.47
@@ -15,8 +15,8 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PyOpenGL>0:graphics/py-PyOpenGL \
-		${PYTHON_PKGNAMEPREFIX}gtkglext>0:x11-toolkits/py-gtkglext
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PyOpenGL>0:graphics/py-PyOpenGL@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}gtkglext>0:x11-toolkits/py-gtkglext@${PY_FLAVOR}
 
 BROKEN_powerpc=		fails to compile
 BROKEN_sparc64=		fails to compile

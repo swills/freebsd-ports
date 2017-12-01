@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/py-scimath/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/science/py-scimath/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	scimath
 PORTVERSION=	4.1.2
@@ -14,11 +14,11 @@ COMMENT=	Scientific and Mathematical calculations
 LICENSE=	BSD3CLAUSE LGPL3
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}traits>=3.6.0:devel/py-traits \
-		${PYTHON_PKGNAMEPREFIX}numpy>=0:math/py-numpy
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}traits>=3.6.0:devel/py-traits@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}numpy>=0:math/py-numpy@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

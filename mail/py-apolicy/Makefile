@@ -1,5 +1,5 @@
 # Created by: Chifeng QU <chifeng@gmail.com>
-# $FreeBSD: head/mail/py-apolicy/Makefile 442638 2017-06-05 14:50:46Z sunpoet $
+# $FreeBSD: head/mail/py-apolicy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	apolicy
 PORTVERSION=	0.73
@@ -15,9 +15,9 @@ COMMENT=	ACL system for Postfix, as a policy daemon
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipy>=0:net-mgmt/py-ipy \
-		${PYTHON_PKGNAMEPREFIX}pyspf>=0:mail/py-pyspf \
-		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipy>=0:net-mgmt/py-ipy@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyspf>=0:mail/py-pyspf@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils

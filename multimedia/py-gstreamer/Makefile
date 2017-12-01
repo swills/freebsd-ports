@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@rainbow-runner.nl>
-# $FreeBSD: head/multimedia/py-gstreamer/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/multimedia/py-gstreamer/Makefile 455210 2017-11-30 15:50:30Z mat $
 #    $MCom: ports/multimedia/py-gstreamer/Makefile,v 1.20 2008/07/26 17:21:38 marcus Exp $
 
 PORTNAME=	gstreamer
@@ -16,14 +16,15 @@ COMMENT=	Python bindings for gstreamer
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/libxml2mod.so:textproc/py-libxml2
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/libxml2mod.so:textproc/py-libxml2
+BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/libxml2mod.so:textproc/py-libxml2@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/libxml2mod.so:textproc/py-libxml2@${FLAVOR}
 
 PORTSCOUT=	limit:0\.10\..*
 
 USES=		gmake libtool pathfix pkgconfig python:2 tar:bzip2
 USE_GNOME=	pygobject
 USE_GSTREAMER=	yes
+USE_PYTHON=	flavors
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 PLIST_SUB=	VERSION="${GST_VERSION}"

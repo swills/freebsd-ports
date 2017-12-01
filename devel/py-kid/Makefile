@@ -1,5 +1,5 @@
 # Created by: Choe, Cheng-Dae
-# $FreeBSD: head/devel/py-kid/Makefile 438702 2017-04-17 15:09:04Z miwi $
+# $FreeBSD: head/devel/py-kid/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	kid
 PORTVERSION=	0.9.6
@@ -12,7 +12,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Simple template language for XML based written in Python
 
-USES=		python shebangfix
+USES=		python:2.7 shebangfix
 USE_PYTHON=	distutils autoplist
 SHEBANG_FILES=	misc/upgrade-0.6.py
 

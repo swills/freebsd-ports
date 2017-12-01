@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-coloredlogs/Makefile 454841 2017-11-24 19:36:53Z sunpoet $
+# $FreeBSD: head/devel/py-coloredlogs/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	coloredlogs
 PORTVERSION=	7.3.1
@@ -12,10 +12,10 @@ COMMENT=	Colored terminal output for Python logging module
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}humanfriendly>=2.1:textproc/py-humanfriendly
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}humanfriendly>=2.1:textproc/py-humanfriendly@${FLAVOR}
 
 NO_ARCH=	yes
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

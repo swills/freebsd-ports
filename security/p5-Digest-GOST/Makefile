@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/p5-Digest-GOST/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-Digest-GOST/Makefile 455165 2017-11-30 05:55:17Z linimon $
 
 PORTNAME=	Digest-GOST
 PORTVERSION=	0.06
@@ -12,7 +12,7 @@ COMMENT=	Perl interface to the GOST R 34.11-94 digest algorithm
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-NOT_FOR_ARCHS=		aarch64 armv6 mips64
+NOT_FOR_ARCHS=		aarch64 armv6 armv7 mips64
 NOT_FOR_ARCHS_REASON=	fails to build: Cannot detect CPU architechture
 
 USES=		perl5

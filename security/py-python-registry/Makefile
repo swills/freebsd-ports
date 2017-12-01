@@ -1,5 +1,5 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-python-registry/Makefile 412411 2016-04-02 15:47:52Z antoine $
+# $FreeBSD: head/security/py-python-registry/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	python-registry
 PORTVERSION=	1.2.0
@@ -30,7 +30,7 @@ PORTEXAMPLES=	*
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3400
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}enum34>=0:devel/py-enum34
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}enum34>=0:devel/py-enum34@${FLAVOR}
 .endif
 
 post-install-DOCS-on:

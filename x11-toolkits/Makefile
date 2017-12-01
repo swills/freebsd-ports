@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/Makefile 454648 2017-11-21 18:50:58Z rene $
+# $FreeBSD: head/x11-toolkits/Makefile 455210 2017-11-30 15:50:30Z mat $
 #
 
     COMMENT = X11 toolkits
@@ -219,9 +219,6 @@
     SUBDIR += py-wxPython28-common
     SUBDIR += py-wxPython30
     SUBDIR += py-xlib
-    SUBDIR += py34-tkinter
-    SUBDIR += py35-tkinter
-    SUBDIR += py36-tkinter
     SUBDIR += pypy-tkinter
     SUBDIR += qt4-declarative
     SUBDIR += qt4-gui

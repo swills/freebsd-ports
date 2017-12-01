@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-python-dtrace/Makefile 435080 2017-02-28 19:50:04Z swills $
+# $FreeBSD: head/devel/py-python-dtrace/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	python-dtrace
 PORTVERSION=	0.0.9
@@ -11,10 +11,7 @@ COMMENT=	DTrace consumer for Python based on libdtrace
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	cython:lang/cython
-RUN_DEPENDS=	cython:lang/cython
-
 USES=		python zip
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils cython cython_run
 
 .include <bsd.port.mk>

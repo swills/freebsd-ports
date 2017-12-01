@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 454826 2017-11-24 16:02:29Z amdmi3 $
+# $FreeBSD: head/games/Makefile 455196 2017-11-30 11:36:55Z amdmi3 $
 #
 
     COMMENT = Games and related software
@@ -920,6 +920,7 @@
     SUBDIR += solarwolf
     SUBDIR += sopwith
     SUBDIR += spacejunk
+    SUBDIR += spacezero
     SUBDIR += speak
     SUBDIR += species
     SUBDIR += spellathon

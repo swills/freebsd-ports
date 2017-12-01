@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/slune/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/games/slune/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	slune
 PORTVERSION=	1.0.15
@@ -14,12 +14,12 @@ COMMENT=	3D game. includes racing, car-crashing, and lots of action
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libcal3d.so:graphics/cal3d
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openal>0:audio/py-openal \
-		${PYTHON_PKGNAMEPREFIX}vorbis>0:audio/py-vorbis \
-		${PYTHON_PKGNAMEPREFIX}soya3d>0:graphics/py-soya3d \
-		${PYTHON_PKGNAMEPREFIX}py2play>0:net-p2p/py-py2play
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openal>0:audio/py-openal@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}vorbis>0:audio/py-vorbis@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}soya3d>0:graphics/py-soya3d@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}py2play>0:net-p2p/py-py2play@${FLAVOR}
 
-USES=		dos2unix gettext python tar:bzip2
+USES=		dos2unix gettext python:2.7 tar:bzip2
 DOS2UNIX_GLOB=	*.po *.mo
 USE_GL=		glew
 USE_SDL=	sdl mixer

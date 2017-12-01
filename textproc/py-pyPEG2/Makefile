@@ -1,5 +1,5 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/textproc/py-pyPEG2/Makefile 448083 2017-08-17 09:45:13Z ed $
+# $FreeBSD: head/textproc/py-pyPEG2/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyPEG2
 PORTVERSION=	2.15.2
@@ -13,7 +13,7 @@ COMMENT=	Parsing Expression Grammar (PEG) parser for Python
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

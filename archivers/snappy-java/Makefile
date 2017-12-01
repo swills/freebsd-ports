@@ -1,5 +1,5 @@
 # Created by: Radim Kolar <hsn@filez.com>
-# $FreeBSD: head/archivers/snappy-java/Makefile 441814 2017-05-26 20:02:44Z linimon $
+# $FreeBSD: head/archivers/snappy-java/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 # Note to committers:
 # With each version update, a new maven repository must be created and distributed
@@ -26,6 +26,7 @@ LICENSE=	APACHE20
 BUILD_DEPENDS=	${LOCALBASE}/share/java/maven3/bin/mvn:devel/maven3
 
 BROKEN_armv6=		fails to build: maven-assembly-plugin: Failed to retrieve numeric file attributes
+BROKEN_armv7=		fails to build: maven-assembly-plugin: Failed to retrieve numeric file attributes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	xerial

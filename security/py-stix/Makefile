@@ -1,5 +1,5 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-stix/Makefile 441394 2017-05-21 12:30:31Z antoine $
+# $FreeBSD: head/security/py-stix/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	stix
 PORTVERSION=	1.2.0.4
@@ -13,12 +13,12 @@ COMMENT=	Python library for parsing, manipulating, and generating STIX content
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=0:devel/py-dateutil \
-		${PYTHON_PKGNAMEPREFIX}lxml>=2.3:devel/py-lxml \
-		${PYTHON_PKGNAMEPREFIX}cybox>=2.1.0.13:security/py-cybox \
-		${PYTHON_PKGNAMEPREFIX}mixbox>=1.0.2:security/py-mixbox
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose \
-		${PYTHON_PKGNAMEPREFIX}maec>=4.1.0.13:security/py-maec
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=0:devel/py-dateutil@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lxml>=2.3:devel/py-lxml@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}cybox>=2.1.0.13:security/py-cybox@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mixbox>=1.0.2:security/py-mixbox@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}maec>=4.1.0.13:security/py-maec@${FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	STIXProject

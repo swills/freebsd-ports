@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/www/py-cookies/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-cookies/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cookies
 PORTVERSION=	2.2.1
@@ -12,7 +12,7 @@ COMMENT=	Friendlier RFC 6265-compliant cookie parser/renderer
 
 LICENSE=	MIT
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

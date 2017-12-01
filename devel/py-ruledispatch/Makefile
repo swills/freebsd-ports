@@ -1,5 +1,5 @@
 # Created by: Dryice Liu	<dryice@dryice.name>
-# $FreeBSD: head/devel/py-ruledispatch/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-ruledispatch/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	RuleDispatch
 PORTVERSION=	0.5.a1.r2717
@@ -16,10 +16,10 @@ COMMENT=	Rule-based Dispatching and Generic Functions
 LICENSE=	PSFL ZPL21
 LICENSE_COMB=	dual
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Extremes>=1.1:devel/py-extremes \
-		${PYTHON_PKGNAMEPREFIX}PyProtocols>=1.0.a0.r2302:devel/py-protocols-devel
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Extremes>=1.1:devel/py-extremes@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}PyProtocols>=1.0.a0.r2302:devel/py-protocols-devel@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 # to have a platform/release indipendent directory (necessary for strip cmd)

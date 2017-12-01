@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/py-psycopg2cffi/Makefile 454385 2017-11-17 20:34:12Z jrm $
+# $FreeBSD: head/databases/py-psycopg2cffi/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	psycopg2cffi
 DISTVERSION=	2.7.7
@@ -12,8 +12,8 @@ COMMENT=	Implementation of the psycopg2 module using cffi
 LICENSE=	LGPL3+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHONPREFIX_SITELIBDIR}/_cffi_backend.so:devel/py-cffi
-RUN_DEPENDS=	${PYTHONPREFIX_SITELIBDIR}/_cffi_backend.so:devel/py-cffi
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>0:devel/py-cffi@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>0:devel/py-cffi@${FLAVOR}
 
 USES=		pgsql python
 USE_PYTHON=	autoplist distutils

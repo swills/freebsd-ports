@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/pysycache/Makefile 438789 2017-04-18 18:26:19Z miwi $
+# $FreeBSD: head/games/pysycache/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pysycache
 PORTVERSION=	2.0
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pygame/__init__.py:devel/py-game
 
-USES=		python shebangfix zip
+USES=		python:2.7 shebangfix zip
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}
 SUB_FILES=	pkg-message

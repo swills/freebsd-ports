@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-sockjs-tornado/Makefile 419243 2016-07-29 12:10:31Z rm $
+# $FreeBSD: head/www/py-sockjs-tornado/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	sockjs-tornado
 PORTVERSION=	1.0.3
@@ -12,7 +12,7 @@ COMMENT=	SockJS python server implementation on top of Tornado framework
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tornado>0:www/py-tornado
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tornado>0:www/py-tornado@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7+

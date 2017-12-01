@@ -1,5 +1,5 @@
 # Created by: nordwick@xcf.berkeley.edu
-# $FreeBSD: head/java/java-cup/Makefile 441786 2017-05-26 14:45:53Z linimon $
+# $FreeBSD: head/java/java-cup/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	cup
 PORTVERSION=	11.a
@@ -14,6 +14,7 @@ MAINTAINER=	eg@fbsd.lt
 COMMENT=	LALR parser generator in Java
 
 BROKEN_armv6=		fails to build: build.xml: Java returned: 1
+BROKEN_armv7=		fails to build: build.xml: Java returned: 1
 
 USE_JAVA=	yes
 USE_ANT=	yes

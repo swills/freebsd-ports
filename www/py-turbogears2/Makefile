@@ -1,5 +1,5 @@
 # Created by: Wen Heping	<wenheping@gmail.com>
-# $FreeBSD: head/www/py-turbogears2/Makefile 449178 2017-09-03 08:46:31Z wen $
+# $FreeBSD: head/www/py-turbogears2/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	TurboGears2
 PORTVERSION=	2.3.11
@@ -12,10 +12,10 @@ COMMENT=	Python-Based Framework for Rapid Web Development
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}crank>=0:devel/py-crank \
-		${PYTHON_PKGNAMEPREFIX}webob>=1.2:www/py-webob \
-		${PYTHON_PKGNAMEPREFIX}MarkupSafe>=0:textproc/py-MarkupSafe \
-		${PYTHON_PKGNAMEPREFIX}repoze.lru>=0:devel/py-repoze.lru
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}crank>=0:devel/py-crank@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}webob>=1.2:www/py-webob@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}MarkupSafe>=0:textproc/py-MarkupSafe@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}repoze.lru>=0:devel/py-repoze.lru@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

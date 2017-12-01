@@ -1,5 +1,5 @@
 # Created by: Piotr Florczyk <p.florczyk@adminworkshop.pl>
-# $FreeBSD: head/devel/py-construct/Makefile 422515 2016-09-20 16:40:31Z antoine $
+# $FreeBSD: head/devel/py-construct/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	construct
 PORTVERSION=	2.5.3
@@ -14,7 +14,7 @@ COMMENT=	Python module for parsing and building of data structures
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

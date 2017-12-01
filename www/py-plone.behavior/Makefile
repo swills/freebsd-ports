@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.behavior/Makefile 413428 2016-04-16 10:36:51Z rm $
+# $FreeBSD: head/www/py-plone.behavior/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	plone.behavior
 PORTVERSION=	1.1.1
@@ -12,11 +12,11 @@ COMMENT=	Infrastructure for maintaining a registry of available behaviors
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.component>0:devel/py-zope.component \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>0:devel/py-zope.interface \
-		${PYTHON_PKGNAMEPREFIX}zope.schema>0:devel/py-zope.schema \
-		${PYTHON_PKGNAMEPREFIX}zope.annotation>0:devel/py-zope.annotation \
-		${PYTHON_PKGNAMEPREFIX}zope.configuration>0:devel/py-zope.configuration
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.component>0:devel/py-zope.component@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>0:devel/py-zope.interface@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.schema>0:devel/py-zope.schema@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.annotation>0:devel/py-zope.annotation@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.configuration>0:devel/py-zope.configuration@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2.7

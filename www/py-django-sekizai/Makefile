@@ -1,5 +1,5 @@
 # Created by: Matthew X. Economou <xenophon+fbsdports@irtnog.org>
-# $FreeBSD: head/www/py-django-sekizai/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-django-sekizai/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-sekizai
 PORTVERSION=	0.7
@@ -11,8 +11,8 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	xenophon+fbsdports@irtnog.org
 COMMENT=	Block templating system for Django
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18 \
-		${PYTHON_PKGNAMEPREFIX}django-classy-tags>=0.3.1:www/py-django-classy-tags
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}django-classy-tags>=0.3.1:www/py-django-classy-tags@${FLAVOR}
 
 USES=		python:2
 USE_PYTHON=	distutils autoplist

@@ -1,5 +1,5 @@
 # Created by: Julien Laffaye <kimelto@gmail.com>
-# $FreeBSD: head/www/wadcomblog/Makefile 376109 2015-01-03 08:41:20Z mva $
+# $FreeBSD: head/www/wadcomblog/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	WadcomBlog
 PORTVERSION=	0.3
@@ -10,7 +10,7 @@ MASTER_SITES=	http://laffaye.free.fr/distfiles/ \
 MAINTAINER=	jlaffaye@FreeBSD.org
 COMMENT=	Simple open-source static blog engine written in Python
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 OPTIONS_DEFINE=	DOCS EXAMPLES
 

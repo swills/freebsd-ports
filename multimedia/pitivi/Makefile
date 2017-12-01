@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/multimedia/pitivi/Makefile 432431 2017-01-25 16:15:49Z amdmi3 $
+# $FreeBSD: head/multimedia/pitivi/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pitivi
 PORTVERSION=	0.13.4.2
@@ -15,7 +15,7 @@ LICENSE=	LGPL21+
 RUN_DEPENDS=	py*-zope.interface>=0:devel/py-zope.interface \
 		${PYTHON_SITELIBDIR}/goocanvasmodule.so:graphics/py-goocanvas
 
-USES=		gettext gmake localbase pkgconfig python shebangfix tar:bzip2
+USES=		gettext gmake localbase pkgconfig python:2.7 shebangfix tar:bzip2
 SHEBANG_FILES=	bin/pitivi.in
 USE_GNOME=	intltool pygtk2
 USE_GSTREAMER=	gnonlin python good

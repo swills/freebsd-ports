@@ -1,5 +1,5 @@
 # Created by: Igor Pokrovsky <tiamat@telegraph.spb.ru>
-# $FreeBSD: head/games/exult/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/exult/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	exult
 PORTVERSION=	1.5.0.20160514
@@ -16,6 +16,7 @@ LIB_DEPENDS=	libvorbis.so:audio/libvorbis \
 		libpng.so:graphics/png
 
 BROKEN_armv6=		fails to compile: constant expression evaluates to -1 which cannot be narrowed to type char
+BROKEN_armv7=		fails to compile: constant expression evaluates to -1 which cannot be narrowed to type char
 BROKEN_aarch64=		fails to compile: constant expression evaluates to -1 which cannot be narrowed to type char
 
 USE_GITHUB=	yes

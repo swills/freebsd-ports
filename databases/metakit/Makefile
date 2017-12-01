@@ -1,5 +1,5 @@
 # Created by: Russell L. Carter <rcarter@pinyon.org>
-# $FreeBSD: head/databases/metakit/Makefile 436478 2017-03-19 09:01:57Z amdmi3 $
+# $FreeBSD: head/databases/metakit/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	metakit
 PORTVERSION=	2.4.9.7
@@ -26,7 +26,7 @@ OPTIONS_DEFINE=	PYTHON TCL DOCS
 OPTIONS_DEFAULT=	PYTHON
 OPTIONS_SUB=	yes
 
-PYTHON_USES=		python
+PYTHON_USES=		python:2.7
 PYTHON_CONFIGURE_ON=	--with-python=${LOCALBASE}
 PYTHON_CATEGORIES=	python
 

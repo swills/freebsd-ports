@@ -1,5 +1,5 @@
 # Created by: Yuan-Chung Hsiao <ychsiao@gmail.com>
-# $FreeBSD: head/devel/py-repoze.who-friendlyform/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-repoze.who-friendlyform/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	repoze.who-friendlyform
 PORTVERSION=	1.0.8
@@ -10,14 +10,14 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	ychsiao@ychsiao.org
 COMMENT=	Collection of developer-friendly for repoze.who-powered
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>=0:devel/py-coverage \
-		${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose \
-		${PYTHON_PKGNAMEPREFIX}repoze.who>=1.0.15:devel/py-repoze.who
-RUN_DEPENDS:=	${PYTHON_PKGNAMEPREFIX}coverage>=0:devel/py-coverage \
-		${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose \
-		${PYTHON_PKGNAMEPREFIX}repoze.who>=1.0.15:devel/py-repoze.who
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>=0:devel/py-coverage@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}repoze.who>=1.0.15:devel/py-repoze.who@${FLAVOR}
+RUN_DEPENDS:=	${PYTHON_PKGNAMEPREFIX}coverage>=0:devel/py-coverage@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}repoze.who>=1.0.15:devel/py-repoze.who@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

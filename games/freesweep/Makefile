@@ -1,5 +1,5 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/games/freesweep/Makefile 408903 2016-02-14 22:22:39Z junovitch $
+# $FreeBSD: head/games/freesweep/Makefile 455221 2017-11-30 19:15:00Z amdmi3 $
 
 PORTNAME=	freesweep
 PORTVERSION=	1.0.1
@@ -10,6 +10,7 @@ MAINTAINER=	rwestlun@gmail.com
 COMMENT=	Minesweeper-style game for text-mode terminals
 
 LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	rwestlund

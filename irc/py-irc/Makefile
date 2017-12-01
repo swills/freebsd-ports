@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/irc/py-irc/Makefile 438789 2017-04-18 18:26:19Z miwi $
+# $FreeBSD: head/irc/py-irc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	irc
 PORTVERSION=	13.1
@@ -13,12 +13,12 @@ COMMENT=	IRC protocol client library for Python
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}hgtools>0:devel/py-hgtools \
-		${PYTHON_PKGNAMEPREFIX}pytest-runner>0:devel/py-pytest-runner \
-		${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six \
-		${PYTHON_PKGNAMEPREFIX}jaraco.util>0:devel/py-jaraco.util \
-		${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}hgtools>0:devel/py-hgtools@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest-runner>0:devel/py-pytest-runner@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}jaraco.util>0:devel/py-jaraco.util@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm@${FLAVOR}
 
 USES=		python shebangfix
 USE_PYTHON=	distutils autoplist

@@ -1,4 +1,4 @@
-# $FreeBSD: head/german/hunspell/Makefile 441814 2017-05-26 20:02:44Z linimon $
+# $FreeBSD: head/german/hunspell/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	hunspell
 PORTVERSION=	20161207
@@ -19,6 +19,7 @@ BUILD_DEPENDS=	aspell:textproc/aspell \
 		hunspell:textproc/hunspell
 
 BROKEN_armv6=		fails to install: hunspell-capmain-plus_de_DE.tmp: Error 1
+BROKEN_armv7=		fails to install: hunspell-capmain-plus_de_DE.tmp: Error 1
 
 USES=		gmake perl5 shebangfix tar:bzip2
 ALL_TARGET=	hunspell-all

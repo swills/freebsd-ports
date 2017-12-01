@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/graphics/py-editobj/Makefile 371326 2014-10-21 16:36:12Z mva $
+# $FreeBSD: head/graphics/py-editobj/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	editobj
 PORTVERSION=	0.5.7
@@ -13,7 +13,7 @@ MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Create and display a Tkinter dialog box for editing any Python object
 
 DIST_SUBDIR=	python
-USES+=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGNAME=	EditObj
 WRKSRC=		${WRKDIR}/EditObj-${PORTVERSION}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-selection/Makefile 432383 2017-01-24 20:17:52Z rm $
+# $FreeBSD: head/devel/py-selection/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	selection
 PORTVERSION=	0.0.13
@@ -11,9 +11,9 @@ COMMENT=	API to extract content from HTML & XML documents
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six \
-		${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml \
-		${PYTHON_PKGNAMEPREFIX}weblib>0:devel/py-weblib
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}weblib>0:devel/py-weblib@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

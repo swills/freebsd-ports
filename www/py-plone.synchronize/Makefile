@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-plone.synchronize/Makefile 405756 2016-01-10 23:10:45Z rm $
+# $FreeBSD: head/www/py-plone.synchronize/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	plone.synchronize
 PORTVERSION=	1.0.1
@@ -14,7 +14,7 @@ COMMENT=	Simple decorators to support synchronized methods
 LICENSE=	BSD3CLAUSE
 
 NO_ARCH=	yes
-USES=		python zip
+USES=		python:2.7 zip
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/astro/tkgeomap/Makefile 441874 2017-05-27 20:33:22Z linimon $
+# $FreeBSD: head/astro/tkgeomap/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	tkgeomap
 PORTVERSION=	2.11.6
@@ -14,6 +14,7 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libtclgeomap.so:astro/tclgeomap
 
 BROKEN_armv6=		fails to configure: shared build specified but could not find shared tclgeomap library
+BROKEN_armv7=		fails to configure: shared build specified but could not find shared tclgeomap library
 
 USES+=		tk:tea
 CONFIGURE_ARGS=	--with-tclgeomap-include=${LOCALBASE}/include/tclgeomap --with-x \

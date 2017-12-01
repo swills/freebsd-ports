@@ -1,5 +1,5 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/devel/py-codecov/Makefile 442250 2017-05-31 18:04:24Z cpm $
+# $FreeBSD: head/devel/py-codecov/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	codecov
 PORTVERSION=	2.0.9
@@ -13,11 +13,11 @@ COMMENT=	Hosted coverage reports for Github, Bitbucket and Gitlab
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>0:devel/py-coverage \
-		${PYTHON_PKGNAMEPREFIX}requests>=2.7.9:www/py-requests
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ddt>0:devel/py-ddt \
-		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock \
-		${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>0:devel/py-coverage@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>=2.7.9:www/py-requests@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ddt>0:devel/py-ddt@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

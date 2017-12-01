@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-warlock/Makefile 423851 2016-10-12 10:22:12Z novel $
+# $FreeBSD: head/devel/py-warlock/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	warlock
 PORTVERSION=	1.2.0
@@ -10,9 +10,9 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	alexander.nusov@nfvexpress.com
 COMMENT=	Python object model built on JSON schema and JSON patch
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}jsonschema>=0.7:devel/py-jsonschema \
-		${PYTHON_PKGNAMEPREFIX}jsonpatch>=0.10:devel/py-jsonpatch \
-		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}jsonschema>=0.7:devel/py-jsonschema@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}jsonpatch>=0.10:devel/py-jsonpatch@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

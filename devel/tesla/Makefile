@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/tesla/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/devel/tesla/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	tesla
 DISTVERSION=	0.0.20140425
@@ -13,6 +13,7 @@ RUN_DEPENDS=	clang33:lang/clang33
 LIB_DEPENDS=	libprotobuf.so:devel/protobuf
 
 BROKEN_armv6=		fails to link: cmTC_8106f uses VFP register arguments, testCCompiler.c.o does not
+BROKEN_armv7=		fails to link: cmTC_8106f uses VFP register arguments, testCCompiler.c.o does not
 
 SHEBANG_FILES=	scripts/highlight-transitions
 

@@ -1,5 +1,5 @@
 # Created by: Tor Halvard "Squat" Furulund <squat@squat.no>
-# $FreeBSD: head/net-mgmt/tcptrack/Makefile 408166 2016-02-05 11:42:57Z marino $
+# $FreeBSD: head/net-mgmt/tcptrack/Makefile 455265 2017-12-01 11:14:32Z amdmi3 $
 
 PORTNAME=	tcptrack
 PORTVERSION=	1.4.2
@@ -12,6 +12,7 @@ MAINTAINER=	portmaster@BSDforge.com
 COMMENT=	Packet sniffer that displays TCP information like top(1)
 
 LICENSE=	LGPL21
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		ncurses
 GNU_CONFIGURE=	yes

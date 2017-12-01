@@ -1,5 +1,5 @@
 # Created by: nork@FreeBSD.org
-# $FreeBSD: head/java/java3d/Makefile 441814 2017-05-26 20:02:44Z linimon $
+# $FreeBSD: head/java/java3d/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	java3d
 PORTVERSION=	1.5.2
@@ -14,6 +14,7 @@ LICENSE=	BSD2CLAUSE GPLv2
 LICENSE_COMB=	multi
 
 BROKEN_armv6=		fails to compile: build.xml: Compile failed; see the compiler error output for details
+BROKEN_armv7=		fails to compile: build.xml: Compile failed; see the compiler error output for details
 
 USES=		tar:bzip2
 USE_JAVA=	yes

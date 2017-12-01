@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-zope.location/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-zope.location/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	zope.location
 PORTVERSION=	3.9.1
@@ -13,10 +13,10 @@ COMMENT=	Zope Location
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.component>=3.8:devel/py-zope.component \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface \
-		${PYTHON_PKGNAMEPREFIX}zope.proxy>3.3:net/py-zope.proxy \
-		${PYTHON_PKGNAMEPREFIX}zope.schema>=3.6:devel/py-zope.schema
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.component>=3.8:devel/py-zope.component@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.proxy>3.3:net/py-zope.proxy@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.schema>=3.6:devel/py-zope.schema@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

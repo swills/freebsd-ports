@@ -1,5 +1,5 @@
 # Created by: Junji NAKANISHI <jun-g@daemonfreaks.com>
-# $FreeBSD: head/japanese/py-mecab/Makefile 422498 2016-09-20 14:01:58Z marino $
+# $FreeBSD: head/japanese/py-mecab/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	mecab
 PORTVERSION=	0.996
@@ -17,7 +17,7 @@ LICENSE_COMB=	dual
 BUILD_DEPENDS=	swig:devel/swig13
 LIB_DEPENDS=	libmecab.so:japanese/mecab
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 PYDISTUTILS_EGGINFO=	${PORTNAME}_python-${PORTVERSION}.post2-py${PYTHON_VER}.egg-info
 

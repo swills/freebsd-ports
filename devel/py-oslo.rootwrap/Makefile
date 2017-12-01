@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-oslo.rootwrap/Makefile 432733 2017-01-29 12:52:10Z novel $
+# $FreeBSD: head/devel/py-oslo.rootwrap/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	oslo.rootwrap
 PORTVERSION=	5.4.0
@@ -12,8 +12,8 @@ COMMENT=	Oslo rootwrap
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.8:devel/py-pbr
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.8:devel/py-pbr@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six@${FLAVOR}
 
 NO_ARCH=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Gabor Pali <pgj@FreeBSD.org>
-# $FreeBSD: head/devel/cppcheck/Makefile 451750 2017-10-11 13:42:38Z amdmi3 $
+# $FreeBSD: head/devel/cppcheck/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cppcheck
 PORTVERSION=	1.81
@@ -47,7 +47,7 @@ TEST_CMAKE_BOOL=	BUILD_TESTS
 
 HTMLREPORT_DESC=	Install cppcheck-htmlreport
 HTMLREPORT_USES=	python:2,${PYUSE:C/ /,/W}
-HTMLREPORT_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pygments>0:textproc/py-pygments
+HTMLREPORT_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pygments>0:textproc/py-pygments@${PY_FLAVOR}
 HTMLREPORT_PLIST_FILES=	bin/cppcheck-htmlreport
 HTMLREPORT_VARS=	PYUSE+=run
 

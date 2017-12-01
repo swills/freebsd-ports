@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-seafobj/Makefile 448210 2017-08-18 06:39:47Z ultima $
+# $FreeBSD: head/www/py-seafobj/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	seafobj
 DISTVERSIONPREFIX=	v
@@ -16,6 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 USES=		python:-2.7 shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	haiwen
+USE_PYTHON=	flavors
 SHEBANG_FILES=	*.sh *.py
 
 NO_ARCH=	yes

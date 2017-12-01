@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/py-kazoo/Makefile 442679 2017-06-05 18:10:30Z skreuzer $
+# $FreeBSD: head/devel/py-kazoo/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	kazoo
 PORTVERSION=	2.3.1
@@ -12,8 +12,8 @@ COMMENT=	Higher Level API to Zookeeper for Python
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface \
-		${PYTHON_PKGNAMEPREFIX}gevent>=0.13.8:devel/py-gevent
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}gevent>=0.13.8:devel/py-gevent@${FLAVOR}
 
 USES=		gmake python
 USE_PYTHON=	distutils autoplist

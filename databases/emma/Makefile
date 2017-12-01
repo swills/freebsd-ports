@@ -1,5 +1,5 @@
 # Created by: Junji NAKANISHI <jun-g@daemonfreaks.com>
-# $FreeBSD: head/databases/emma/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/emma/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	emma
 PORTVERSION=	0.6
@@ -10,9 +10,9 @@ MASTER_SITES=	http://www.fastflo.de/files/emma/downloads/python_src/
 MAINTAINER=	jun-g@daemonfreaks.com
 COMMENT=	Extendable MySQL managing assistant
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=1.2.3:databases/py-MySQLdb
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=1.2.3:databases/py-MySQLdb@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_GNOME=	pygtk2
 USE_PYTHON=	distutils
 

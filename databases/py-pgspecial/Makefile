@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/py-pgspecial/Makefile 453065 2017-10-28 17:32:42Z sunpoet $
+# $FreeBSD: head/databases/py-pgspecial/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pgspecial
 PORTVERSION=	1.9.0
@@ -12,8 +12,8 @@ COMMENT=	Meta-commands handler for Postgres Database
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=4.1:devel/py-click \
-		${PYTHON_PKGNAMEPREFIX}sqlparse>=0.1.19:databases/py-sqlparse
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=4.1:devel/py-click@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlparse>=0.1.19:databases/py-sqlparse@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

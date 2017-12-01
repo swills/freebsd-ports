@@ -1,5 +1,5 @@
 # Created by: Matthew X. Economou <xenophon+fbsdports@irtnog.org>
-# $FreeBSD: head/www/py-django-openid-auth/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-django-openid-auth/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-openid-auth
 PORTVERSION=	0.4
@@ -14,10 +14,10 @@ COMMENT=	OpenID integration for django.contrib.auth
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=1.3.1:www/py-django18 \
-		${PYTHON_PKGNAMEPREFIX}python-openid>=2.2.5:security/py-python-openid
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=1.3.1:www/py-django18@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}python-openid>=2.2.5:security/py-python-openid@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 NO_WRKSUBDIR=	yes

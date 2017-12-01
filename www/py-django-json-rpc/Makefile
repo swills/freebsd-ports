@@ -1,5 +1,5 @@
 # Created by: John Hixson <john@ixsystems.com>
-# $FreeBSD: head/www/py-django-json-rpc/Makefile 436558 2017-03-20 18:42:27Z araujo $
+# $FreeBSD: head/www/py-django-json-rpc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-json-rpc
 PORTVERSION=	0.6.2
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	jhixson@gmail.com
 COMMENT=	Simple JSON-RPC implementation for Django
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18@${FLAVOR}
 
 LICENSE=	MIT
 

@@ -1,5 +1,5 @@
 # Created by: Walter Venable <weaseal@hotmail.com>
-# $FreeBSD: head/irc/srvx/Makefile 441874 2017-05-27 20:33:22Z linimon $
+# $FreeBSD: head/irc/srvx/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	srvx
 PORTVERSION=	1.3.1
@@ -13,6 +13,7 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_armv6=		fails to configure: Cannot detect format string for time_t
+BROKEN_armv7=		fails to configure: Cannot detect format string for time_t
 
 USES=		cpe
 GNU_CONFIGURE=	yes

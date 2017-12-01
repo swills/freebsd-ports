@@ -1,5 +1,5 @@
 # Created by: Carlo Strub <c-s@c-s.li>
-# $FreeBSD: head/devel/bzr-pipeline/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/bzr-pipeline/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	bzr-pipeline
 PORTVERSION=	1.4
@@ -16,7 +16,7 @@ LICENSE=	GPLv2
 BUILD_DEPENDS=	bzr:devel/bzr
 RUN_DEPENDS=	bzr:devel/bzr
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

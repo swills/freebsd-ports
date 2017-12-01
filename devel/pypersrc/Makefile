@@ -1,5 +1,5 @@
 # Created by: Joseph Koshy <jkoshy@FreeBSD.org>
-# $FreeBSD: head/devel/pypersrc/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/pypersrc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pypersrc
 PORTVERSION=	20120106
@@ -14,7 +14,7 @@ COMMENT=	Python/Tkinter based source browser
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE_GPL2.txt
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Pmw>0:x11-toolkits/py-Pmw
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Pmw>0:x11-toolkits/py-Pmw@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 WRKSRC=		${WRKDIR}/${PORTNAME}

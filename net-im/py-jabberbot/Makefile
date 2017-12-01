@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/net-im/py-jabberbot/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-im/py-jabberbot/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	jabberbot
 PORTVERSION=	0.16
@@ -12,7 +12,7 @@ COMMENT=	Simple Jabber Bot for Python
 
 LICENSE=	GPLv3
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xmpppy>0:net-im/py-xmpppy
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xmpppy>0:net-im/py-xmpppy@${FLAVOR}
 
 USES=		python:2
 USE_PYTHON=	distutils autoplist

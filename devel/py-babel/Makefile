@@ -1,18 +1,19 @@
-# Created by: Dryice Liu<dryice@dryice.name>
-# $FreeBSD: head/devel/py-babel/Makefile 415560 2016-05-20 17:06:47Z olivierd $
+# Created by: Muhammad Moinur Rahman <bofh@FreeBSD.org>
+# $FreeBSD: head/devel/py-babel/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	Babel
-PORTVERSION=	2.3.4
+PORTVERSION=	2.5.1
 CATEGORIES=	devel python
-MASTER_SITES=	https://pypi.io/packages/source/B/${PORTNAME}/
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	gaod@hychen.org
+MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Collection of tools for internationalizing Python applications
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
@@ -22,7 +23,7 @@ PORTDOCS=	docs/*
 
 OPTIONS_DEFINE=	DOCS
 
-post-install-DOCS-on:
+do-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for docfile in ${PORTDOCS}
 	${CP} -r ${WRKSRC}/${docfile} ${STAGEDIR}${DOCSDIR}

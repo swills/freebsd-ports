@@ -1,5 +1,5 @@
 # Created by: Leonardo Martins <lmartins@nepe.eee.ufg.br>
-# $FreeBSD: head/graphics/geos/Makefile 446677 2017-07-26 18:20:20Z sunpoet $
+# $FreeBSD: head/graphics/geos/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	geos
 PORTVERSION=	3.6.2
@@ -27,7 +27,7 @@ PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
 PYTHON_BUILD_DEPENDS=	swig3.0:devel/swig30
 PYTHON_CONFIGURE_ENABLE=python
-PYTHON_USES=		python
+PYTHON_USES=		python:2.7
 RUBY_BUILD_DEPENDS=	swig3.0:devel/swig30
 RUBY_CONFIGURE_ENABLE=	ruby
 RUBY_CONFIGURE_ENV=	RUBY="${RUBY}"

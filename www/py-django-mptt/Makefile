@@ -1,5 +1,5 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/www/py-django-mptt/Makefile 432238 2017-01-23 15:36:43Z cs $
+# $FreeBSD: head/www/py-django-mptt/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-mptt
 PORTVERSION=	0.8.7
@@ -12,7 +12,7 @@ COMMENT=	Utilities for implementing Modified Preorder Tree Traversal in Django
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18 # >= 1.8
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18@${FLAVOR} # >= 1.8
 
 CONFLICTS_INSTALL= py*-django-happenings
 

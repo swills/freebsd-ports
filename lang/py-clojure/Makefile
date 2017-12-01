@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/py-clojure/Makefile 434980 2017-02-27 17:39:22Z amdmi3 $
+# $FreeBSD: head/lang/py-clojure/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	clojure
 PORTVERSION=	0.2.4
@@ -13,7 +13,7 @@ COMMENT=	Implementation of Clojure in Python
 
 LICENSE=	EPL
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

@@ -1,5 +1,5 @@
 # Created by: jkoshy
-# $FreeBSD: head/lang/siod/Makefile 441881 2017-05-27 22:16:50Z linimon $
+# $FreeBSD: head/lang/siod/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	siod
 PORTVERSION=	3.4
@@ -12,6 +12,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Small footprint implementation of the Scheme programming language
 
 BROKEN_armv6=		fails to link: final link failed: Nonrepresentable section on output
+BROKEN_armv7=		fails to link: ld: siod: hidden symbol `__aeabi_uidivmod' in /usr/lib/libgcc.a(aeabi_uidivmod.o) is referenced by DSO
 BROKEN_mips64=		fails to link: final link failed: Nonrepresentable section on output
 
 USE_LDCONFIG=	yes

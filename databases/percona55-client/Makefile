@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/percona55-client/Makefile 426088 2016-11-14 06:49:45Z linimon $
+# $FreeBSD: head/databases/percona55-client/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	percona
 PKGNAMESUFFIX=	55-client
@@ -22,6 +22,7 @@ USE_LDCONFIG=	${PREFIX}/lib/mysql
 
 BROKEN_aarch64=		Fails to build: error: passing int to parameter of incompatible type va_list
 BROKEN_armv6=		Fails to build: error: passing int to parameter of incompatible type va_list
+BROKEN_armv7=		Fails to build: error: passing int to parameter of incompatible type va_list
 
 MANPAGES=	comp_err.1 msql2mysql.1 mysql.1 mysql_config.1 mysql_find_rows.1 \
 		mysql_waitpid.1 mysqlaccess.1 mysqladmin.1 mysqlbinlog.1 \

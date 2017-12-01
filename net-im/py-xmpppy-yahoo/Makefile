@@ -1,5 +1,5 @@
 # Created by: Michael Nottebrock <lofi@FreeBSD.org>
-# $FreeBSD: head/net-im/py-xmpppy-yahoo/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-im/py-xmpppy-yahoo/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	yahoo
 PORTVERSION=	0.3.20070314
@@ -18,7 +18,7 @@ EJABBERD_DESC=	transport with ejabberd
 RUN_DEPENDS+=	${PYTHON_SITELIBDIR}/xmpp/__init__.py:net-im/py-xmpppy \
 		${PYTHON_SITELIBDIR}/DNS/__init__.py:dns/py-dns
 
-USES=		python
+USES=		python:2.7
 NO_BUILD=	yes
 FILES=		adhoc.py config.py jep0133.py roomlist.py xmlconfig.py \
 		yahoo_helpers.py avatar.py htmlutils.py migratespool.py toolbox.py \

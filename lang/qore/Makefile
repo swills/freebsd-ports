@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/qore/Makefile 441814 2017-05-26 20:02:44Z linimon $
+# $FreeBSD: head/lang/qore/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	qore
 PORTVERSION=	0.8.12
@@ -16,6 +16,7 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/flex:textproc/flex \
 		${LOCALBASE}/bin/bash:shells/bash
 
 BROKEN_armv6=		fails to compile: calling a private constructor of class 'ReferenceNode'
+BROKEN_armv7=		fails to compile: calling a private constructor of class 'ReferenceNode'
 BROKEN_powerpc=		fails to build
 BROKEN_powerpc64=	fails to compile: unsupported relocation against r1
 

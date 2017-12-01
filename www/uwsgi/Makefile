@@ -1,5 +1,5 @@
 # Created by: Daniel Gerzo <danger@FreeBSD.org>
-# $FreeBSD: head/www/uwsgi/Makefile 453888 2017-11-10 08:48:57Z eugen $
+# $FreeBSD: head/www/uwsgi/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	uwsgi
 PORTVERSION=	2.0.15
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		pkgconfig python ssl
-USE_PYTHON=	distutils
+USE_PYTHON=	distutils concurrent optsuffix
 USE_RC_SUBR=	uwsgi
 
 CFLAGS+=	-I${OPENSSLINC}

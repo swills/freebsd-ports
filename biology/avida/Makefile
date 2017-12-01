@@ -1,5 +1,5 @@
 # Created by: Jeremy <karlj000@unbc.ca>
-# $FreeBSD: head/biology/avida/Makefile 440746 2017-05-13 03:35:51Z linimon $
+# $FreeBSD: head/biology/avida/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	avida
 PORTVERSION=	2.12.4
@@ -14,6 +14,7 @@ LICENSE=	GPLv3
 
 BROKEN_aarch64=		invokes x86 asm
 BROKEN_armv6=		invokes x86 asm
+BROKEN_armv7=		invokes x86 asm
 BROKEN_mips=		invokes x86 asm
 BROKEN_mips64=		invokes x86 asm
 BROKEN_sparc64=		missing atomics implementation

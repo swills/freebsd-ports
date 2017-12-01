@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale
-# $FreeBSD: head/devel/py-protocols/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/devel/py-protocols/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	protocols
 PORTVERSION=	0.9.3
@@ -12,7 +12,7 @@ DISTNAME=	PyProtocols-${PORTVERSION}
 MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Python module extending the PEP 246 adapt() function
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 post-patch:

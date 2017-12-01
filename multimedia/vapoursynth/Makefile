@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/vapoursynth/Makefile 454001 2017-11-11 20:43:19Z jbeich $
+# $FreeBSD: head/multimedia/vapoursynth/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	vapoursynth
 PORTVERSION=	R40
@@ -64,8 +64,9 @@ CORE_LIB_DEPENDS=		libzimg.so:graphics/sekrit-twc-zimg
 CORE_USES=			compiler:c++11-lib
 CORE_CONFIGURE_ENABLE=		core
 
-PYTHON_USES=			python:3.3-
-PYTHON_BUILD_DEPENDS=		cython:lang/cython
+PYTHON_USES=			python:3.3+
+PYTHON_USE=			python=cython
+PYTHON_VARS=			BINARY_ALIAS=cython=cython-${PYTHON_VER}
 PYTHON_CONFIGURE_ENABLE=	python-module
 PYTHON_IMPLIES=			CORE
 

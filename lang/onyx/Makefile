@@ -1,5 +1,5 @@
 # Created by: jasone
-# $FreeBSD: head/lang/onyx/Makefile 441814 2017-05-26 20:02:44Z linimon $
+# $FreeBSD: head/lang/onyx/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	onyx
 PORTVERSION=	5.1.2
@@ -16,6 +16,7 @@ BUILD_DEPENDS=	cook:devel/cook
 LIB_DEPENDS=	libpcre.so:devel/pcre
 
 BROKEN_armv6=		fails to compile: building for onyx-5.1.2_6: error code 1
+BROKEN_armv7=		fails to compile: building for onyx-5.1.2_6: error code 1
 BROKEN_mips=		fails to compile: building for onyx-5.1.2_6: error code 1
 BROKEN_mips64=		fails to compile: building for onyx-5.1.2_6: error code 1
 

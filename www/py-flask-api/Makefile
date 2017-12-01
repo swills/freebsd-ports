@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-flask-api/Makefile 449127 2017-09-02 11:52:19Z dbaio $
+# $FreeBSD: head/www/py-flask-api/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	flask-api
 PORTVERSION=	1.0
@@ -12,7 +12,7 @@ COMMENT=	Browsable Web APIs for Flask
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>0.10.1:www/py-flask
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>0.10.1:www/py-flask@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

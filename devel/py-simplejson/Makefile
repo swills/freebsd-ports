@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/devel/py-simplejson/Makefile 453690 2017-11-07 21:02:18Z sunpoet $
+# $FreeBSD: head/devel/py-simplejson/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	simplejson
 PORTVERSION=	3.12.0
@@ -14,7 +14,7 @@ COMMENT=	Simple, fast, extensible JSON encoder/decoder
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 post-install:

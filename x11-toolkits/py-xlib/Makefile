@@ -1,5 +1,5 @@
 # Created by: Mike Meyer <mwm@mired.org>
-# $FreeBSD: head/x11-toolkits/py-xlib/Makefile 450942 2017-09-30 01:53:02Z wen $
+# $FreeBSD: head/x11-toolkits/py-xlib/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	xlib
 PORTVERSION=	0.20
@@ -11,9 +11,9 @@ COMMENT=	X11 library for Python
 
 LICENSE=	GPLv2+
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.7:devel/py-setuptools_scm \
-		${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.7:devel/py-setuptools_scm@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${FLAVOR}
 
 GH_ACCOUNT=	python-xlib
 GH_PROJECT=	python-xlib

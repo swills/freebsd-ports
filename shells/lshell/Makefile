@@ -1,5 +1,5 @@
 # Created by: Sylvio Cesar <scjamorim@bsd.com.br>
-# $FreeBSD: head/shells/lshell/Makefile 438214 2017-04-10 21:49:02Z mat $
+# $FreeBSD: head/shells/lshell/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	lshell
 PORTVERSION=	0.9.18.20160916
@@ -15,7 +15,7 @@ GH_PROJECT=	lshell
 GH_TAGNAME=	279d7ab
 
 NO_ARCH=	yes
-USES=		python
+USES=		python:2.7
 USE_GITHUB=	yes
 USE_PYTHON=	distutils
 

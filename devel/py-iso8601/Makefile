@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-iso8601/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-iso8601/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	iso8601
 PORTVERSION=	0.1.11
@@ -13,7 +13,7 @@ COMMENT=	Simple module to parse ISO 8601 dates
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=2.4.2:devel/py-pytest
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=2.4.2:devel/py-pytest@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

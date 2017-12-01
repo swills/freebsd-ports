@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/webpy/Makefile 418306 2016-07-10 08:06:30Z wen $
+# $FreeBSD: head/www/webpy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	webpy
 PORTVERSION=	0.38
@@ -13,7 +13,7 @@ COMMENT=	Web Framework For Python
 
 LICENSE=	PD
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 PYDISTUTILS_PKGNAME=	web.py
 

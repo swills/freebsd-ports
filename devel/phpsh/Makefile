@@ -1,5 +1,5 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/devel/phpsh/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/devel/phpsh/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	phpsh
 PORTVERSION=	20110513
@@ -14,7 +14,7 @@ COMMENT=	Interactive shell for PHP
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		python tar:bzip2
+USES=		python:2.7 tar:bzip2
 USE_PYTHON=	distutils autoplist
 USE_PHP=	pcre posix tokenizer
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/sysutils/lfm/Makefile 444400 2017-06-26 19:37:03Z sunpoet $
+# $FreeBSD: head/sysutils/lfm/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	lfm
 PORTVERSION=	3.1
@@ -14,7 +14,7 @@ LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 NO_ARCH=	yes
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils optsuffix
 USES=		python:3.4+
 
 PLIST_FILES=	man/man1/lfm.1.gz

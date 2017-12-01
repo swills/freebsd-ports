@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@fallin.lv>
-# $FreeBSD: head/graphics/py-gd/Makefile 418829 2016-07-20 09:33:31Z dinoex $
+# $FreeBSD: head/graphics/py-gd/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gd
 PORTVERSION=	0.59
@@ -14,7 +14,7 @@ COMMENT=	Python interface to the GD library
 
 LIB_DEPENDS=	libgd.so:graphics/gd
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist pythonprefix
 PYSETUP=	setup.py
 

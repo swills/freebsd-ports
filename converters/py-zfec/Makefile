@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/converters/py-zfec/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/converters/py-zfec/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	zfec
 PORTVERSION=	1.4.24
@@ -18,7 +18,7 @@ BUILD_DEPENDS=	darcsver:devel/py-darcsver \
 		unsort:devel/py-pyutil
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 DOCSDIR=	${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME}

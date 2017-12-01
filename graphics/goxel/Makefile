@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/goxel/Makefile 454505 2017-11-19 21:55:20Z yuri $
+# $FreeBSD: head/graphics/goxel/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	goxel
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libargp.so:devel/argp-standalone \
 		libglfw.so:graphics/glfw \
-		libpng16.so:graphics/png
+		libpng.so:graphics/png
 
 USES=		compiler:c++11-lang pkgconfig scons
 USE_GITHUB=	yes

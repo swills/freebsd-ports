@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/py-fortran/Makefile 396893 2015-09-14 12:20:04Z amdmi3 $
+# $FreeBSD: head/devel/py-fortran/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	fortran
 PORTVERSION=	8.5.3
@@ -16,7 +16,7 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	${PYNUMERIC}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

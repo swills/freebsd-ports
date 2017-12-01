@@ -1,5 +1,5 @@
 # Created by: Charlie Kester <corky1951@comcast.net>
-# $FreeBSD: head/graphics/boxer/Makefile 430774 2017-01-07 09:01:10Z amdmi3 $
+# $FreeBSD: head/graphics/boxer/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	boxer
 PORTVERSION=	0.4.0
@@ -20,7 +20,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	box:graphics/box
 
-USES=		python
+USES=		python:2.7
 USE_GNOME=	pygtk2
 USE_PYTHON=	distutils autoplist
 USE_LDCONFIG=	yes

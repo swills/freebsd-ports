@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/games/eduke32/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/games/eduke32/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	eduke32
 PORTVERSION=	20170614
@@ -26,7 +26,7 @@ LIB_DEPENDS=	libFLAC.so:audio/flac \
 		libogg.so:audio/libogg \
 		libvorbis.so:audio/libvorbis \
 		libvpx.so:multimedia/libvpx \
-		libpng16.so:graphics/png
+		libpng.so:graphics/png
 
 USES=		gmake pkgconfig tar:xz
 USE_GL=		gl glu

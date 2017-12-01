@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/onionlauncher/Makefile 420110 2016-08-11 22:38:50Z pawel $
+# $FreeBSD: head/net-mgmt/onionlauncher/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	onionlauncher
 PORTVERSION=	0.0.2
@@ -11,14 +11,14 @@ COMMENT=	Launcher for Tor
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}stem>=0.18:security/py-stem \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}stem>=0.18:security/py-stem@${FLAVOR} \
 		tor:security/tor
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	neelchauhan
 GH_PROJECT=	OnionLauncher
 
-USES=		pyqt:5 python
+USES=		pyqt:5 python:2.7
 USE_PYTHON=	autoplist distutils
 USE_PYQT=	core_run gui_run widgets_run
 

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/py-djvulibre/Makefile 440214 2017-05-06 04:03:36Z miwi $
+# $FreeBSD: head/graphics/py-djvulibre/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	python-djvulibre
 PORTVERSION=	0.8
@@ -12,11 +12,10 @@ COMMENT=	Python support for the DjVu image format
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	cython:lang/cython
 LIB_DEPENDS=	libdjvulibre.so:graphics/djvulibre
 
 USES=		python:2 pkgconfig
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils cython
 
 post-patch:
 	@${REINPLACE_CMD} -e "s|'python'|'${PYTHON_CMD}'|g" ${WRKSRC}/setup.py

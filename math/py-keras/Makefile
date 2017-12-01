@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/py-keras/Makefile 453803 2017-11-09 09:16:25Z robak $
+# $FreeBSD: head/math/py-keras/Makefile 455240 2017-12-01 00:35:42Z dbaio $
 
 PORTNAME=	keras
-PORTVERSION=	2.0.9
+PORTVERSION=	2.1.1
 CATEGORIES=	math
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -11,9 +11,9 @@ COMMENT=	Deep Learning library for Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}theano>=0.8.0:math/py-theano \
-		${PYTHON_PKGNAMEPREFIX}yaml>=0:devel/py-yaml \
-		${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}theano>=0.8.0:math/py-theano@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>=0:devel/py-yaml@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.10.0:devel/py-six@${FLAVOR}
 
 USES=		python:-3.5
 USE_PYTHON=	autoplist distutils

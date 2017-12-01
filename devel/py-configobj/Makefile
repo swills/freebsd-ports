@@ -1,5 +1,5 @@
 # Created by: Choe, Cheng-Dae
-# $FreeBSD: head/devel/py-configobj/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-configobj/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	configobj
 PORTVERSION=	5.0.6
@@ -13,7 +13,7 @@ COMMENT=	Simple but powerful config file reader and writer
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

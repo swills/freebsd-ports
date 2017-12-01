@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/devel/py-canonicaljson/Makefile 436686 2017-03-22 11:11:53Z robak $
+# $FreeBSD: head/devel/py-canonicaljson/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	canonicaljson
 PORTVERSION=	1.0.0
@@ -14,9 +14,9 @@ COMMENT=	Canonical JSON
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}frozendict>=0.4:devel/py-frozendict \
-		${PYTHON_PKGNAMEPREFIX}simplejson>=3.6.5:devel/py-simplejson
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}frozendict>=0.4:devel/py-frozendict@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}simplejson>=3.6.5:devel/py-simplejson@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
 
 USES=		python
 USE_GITHUB=	yes

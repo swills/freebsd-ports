@@ -1,5 +1,5 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-registration/Makefile 416211 2016-05-31 16:40:51Z robak $
+# $FreeBSD: head/www/py-django-registration/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-registration
 PORTVERSION=	2.1
@@ -12,7 +12,7 @@ COMMENT=	User-registration application for Django
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=1.4:www/py-django18
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=1.4:www/py-django18@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

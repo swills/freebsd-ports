@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/graphics/py-PyX/Makefile 432169 2017-01-22 22:27:54Z rene $
+# $FreeBSD: head/graphics/py-PyX/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	PyX
 PORTVERSION=	0.14.1
@@ -12,7 +12,7 @@ COMMENT=	Python package for creating encapsulated PostScript figures
 
 LICENSE=	GPLv2
 
-USES=		python:3
+USES=		python:3.4+
 USE_TEX=	latex:build
 USE_PYTHON=	autoplist distutils
 

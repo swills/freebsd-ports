@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-rollbar/Makefile 437194 2017-03-29 12:57:31Z wg $
+# $FreeBSD: head/www/py-rollbar/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rollbar
 PORTVERSION=	0.13.11
@@ -11,8 +11,8 @@ COMMENT=	Easy and powerful exception tracking with Rollbar
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests \
-		${PYTHON_PKGNAMEPREFIX}six>=1.5.7:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.5.7:devel/py-six@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

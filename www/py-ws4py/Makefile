@@ -1,5 +1,5 @@
 # Created by: rene@FreeBSD.org
-# $FreeBSD: head/www/py-ws4py/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-ws4py/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ws4py
 PORTVERSION=	0.3.4
@@ -23,9 +23,9 @@ CHERRYPY_DESC=	CherryPy server support
 GEVENT_DESC=	gevent-based client/server support
 TORNADO_DESC=	Tornado client support
 
-CHERRYPY_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cherrypy>=3.2.2:www/py-cherrypy
-GEVENT_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gevent>=0.13.8:devel/py-gevent
-TORNADO_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tornado>=3.1:www/py-tornado
+CHERRYPY_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cherrypy>=3.2.2:www/py-cherrypy@${FLAVOR}
+GEVENT_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gevent>=0.13.8:devel/py-gevent@${FLAVOR}
+TORNADO_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tornado>=3.1:www/py-tornado@${FLAVOR}
 
 # Do not install files which will not work
 post-patch-CHERRYPY-off:

@@ -1,5 +1,5 @@
 # Created by: Tony Maher <tonymaher@optusnet.com.au>
-# $FreeBSD: head/astro/wcslib/Makefile 453547 2017-11-05 14:20:11Z danilo $
+# $FreeBSD: head/astro/wcslib/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	wcslib
 PORTVERSION=	5.17
@@ -31,7 +31,7 @@ CFITSIO_CONFIGURE_WITH=	cfitsio
 CFITSIO_LIB_DEPENDS=	libcfitsio.so:astro/cfitsio
 PGPLOT_CONFIGURE_WITH=	pgplot
 PGPLOT_LIB_DEPENDS=	libpgplot.so:graphics/pgplot \
-			libpng16.so:graphics/png
+			libpng.so:graphics/png
 PGPLOT_USE=		XORG=x11
 
 post-patch:

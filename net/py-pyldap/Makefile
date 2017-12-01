@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-pyldap/Makefile 444975 2017-07-03 17:45:25Z rm $
+# $FreeBSD: head/net/py-pyldap/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyldap
 PORTVERSION=	2.4.37
@@ -11,7 +11,7 @@ COMMENT=	Fork of python-ldap with Python 3 support
 
 LICENSE=	PSFL
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1-modules>=0:devel/py-pyasn1-modules
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1-modules>=0:devel/py-pyasn1-modules@${FLAVOR}
 
 CONFLICTS_INSTALL=	py27-ldap
 USES=		python

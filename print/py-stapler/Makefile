@@ -1,5 +1,5 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/print/py-stapler/Makefile 447835 2017-08-12 14:50:53Z woodsb02 $
+# $FreeBSD: head/print/py-stapler/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	stapler
 PORTVERSION=	0.3.3
@@ -14,8 +14,8 @@ COMMENT=	Manipulate PDF documents from the command line
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}more-itertools>=2.2:devel/py-more-itertools \
-		${PYTHON_PKGNAMEPREFIX}pdf2>=1.24:print/py-pdf2
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}more-itertools>=2.2:devel/py-more-itertools@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pdf2>=1.24:print/py-pdf2@${FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils

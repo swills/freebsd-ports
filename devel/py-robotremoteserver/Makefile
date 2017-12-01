@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-robotremoteserver/Makefile 452742 2017-10-23 21:14:50Z dbaio $
+# $FreeBSD: head/devel/py-robotremoteserver/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	robotremoteserver
 PORTVERSION=	1.1
@@ -13,7 +13,7 @@ COMMENT=	Python Remote Server for Robot Framework
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}robotframework>=2.7.5:devel/py-robotframework
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}robotframework>=2.7.5:devel/py-robotframework@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

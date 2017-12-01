@@ -1,5 +1,5 @@
 # Created by: Marc Abramowitz (http://marc.abramowitz.info)
-# $FreeBSD: head/graphics/opencv/Makefile 453014 2017-10-27 16:45:00Z linimon $
+# $FreeBSD: head/graphics/opencv/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME?=	opencv
 PORTVERSION=	2.4.13.1
@@ -142,6 +142,7 @@ LIB_DEPENDS+=	libopencv_legacy.so:graphics/opencv
 BUILD_DEPENDS+=	${PYNUMPY}
 RUN_DEPENDS+=	${PYNUMPY}
 USES+=		fortran python:2.7
+USE_PYTHON=	flavors
 CMAKE_ARGS+=	-DBUILD_opencv_python:BOOL=On
 . for module in apps java stitching superres videostab
 CMAKE_ARGS+=	-DBUILD_opencv_${module}:BOOL=Off

@@ -1,5 +1,5 @@
 # Created by: Choe, Cheng-Dae
-# $FreeBSD: head/textproc/py-xlwriter/Makefile 374183 2014-12-07 10:01:36Z mva $
+# $FreeBSD: head/textproc/py-xlwriter/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	xlwriter
 PORTVERSION=	0.4a3
@@ -11,7 +11,7 @@ DISTNAME=	pyXLWriter-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python library for generating Excel-compatible spreadsheets
 
-USES=		python zip
+USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist
 
 PORTEXAMPLES=	*

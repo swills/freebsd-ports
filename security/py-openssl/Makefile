@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/security/py-openssl/Makefile 450578 2017-09-25 09:22:14Z koobs $
+# $FreeBSD: head/security/py-openssl/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	openssl
 PORTVERSION=	17.3.0
@@ -14,12 +14,12 @@ COMMENT=	Python interface to the OpenSSL library
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}cryptography>1.9:security/py-cryptography \
-		${PYTHON_PKGNAMEPREFIX}six>=1.5.2:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>1.9:security/py-cryptography@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.5.2:devel/py-six@${FLAVOR}
 
 OPTIONS_DEFINE=	EXAMPLES
 
-USES?=		cpe python
+USES=		cpe python
 USE_PYTHON=	autoplist concurrent distutils pythonprefix
 
 CPE_VENDOR=	jean-paul_calderone

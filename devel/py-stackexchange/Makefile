@@ -1,5 +1,5 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/devel/py-stackexchange/Makefile 444602 2017-06-28 17:02:46Z cpm $
+# $FreeBSD: head/devel/py-stackexchange/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	stackexchange
 PORTVERSION=	2.2.7
@@ -14,7 +14,7 @@ COMMENT=	Python binding to the StackExchange website APIs
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.8.0:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.8.0:devel/py-six@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

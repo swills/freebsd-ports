@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/py-scripttest/Makefile 443054 2017-06-10 01:56:43Z woodsb02 $
+# $FreeBSD: head/devel/py-scripttest/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	scripttest
 PORTVERSION=	1.3.0
@@ -11,9 +11,9 @@ COMMENT=	Helper to test command-line scripts
 
 LICENSE=	MIT
 
-TEST_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
 
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 USE_GITHUB=	yes

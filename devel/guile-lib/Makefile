@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/guile-lib/Makefile 441814 2017-05-26 20:02:44Z linimon $
+# $FreeBSD: head/devel/guile-lib/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	guile-lib
 PORTVERSION=	0.2.2
@@ -13,6 +13,7 @@ BUILD_DEPENDS=	guile:lang/guile
 RUN_DEPENDS=	guile:lang/guile
 
 BROKEN_armv6=		fails to compile: stack overflow
+BROKEN_armv7=		fails to compile: stack overflow
 
 USES=		gmake
 GNU_CONFIGURE=	yes

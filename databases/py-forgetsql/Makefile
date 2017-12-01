@@ -1,5 +1,5 @@
 # Created by: Anders Nordby <anders@FreeBSD.org>
-# $FreeBSD: head/databases/py-forgetsql/Makefile 416123 2016-05-29 21:31:12Z rene $
+# $FreeBSD: head/databases/py-forgetsql/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	forgetsql
 PORTVERSION=	0.5.1
@@ -23,8 +23,8 @@ PORTDOCS=	BUGS README TODO
 
 OPTIONS_DEFINE=	DOCS MYSQL PGSQL
 
-MYSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=1.2.2:databases/py-MySQLdb
-PGSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>0:databases/py-psycopg2
+MYSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=1.2.2:databases/py-MySQLdb@${FLAVOR}
+PGSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>0:databases/py-psycopg2@${FLAVOR}
 
 .include <bsd.port.options.mk>
 

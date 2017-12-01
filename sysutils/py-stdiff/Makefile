@@ -1,14 +1,15 @@
-# $FreeBSD: head/sysutils/py-stdiff/Makefile 418840 2016-07-20 15:33:20Z mat $
+# $FreeBSD: head/sysutils/py-stdiff/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	stdiff
 PORTVERSION=	0.2.1
 CATEGORIES=	sysutils python
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}/
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	araujo@FreeBSD.org
 COMMENT=	Spot The Difference is a file integrity checker
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 OPTIONS_DEFINE=	DOCS

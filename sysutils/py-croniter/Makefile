@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-croniter/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/py-croniter/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	croniter
 PORTVERSION=	0.3.5
@@ -12,7 +12,7 @@ COMMENT=	Iteration support for datetime objects with cron like format
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=1.5:devel/py-dateutil
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=1.5:devel/py-dateutil@${FLAVOR}
 
 USES=		python zip
 USE_PYTHON=	distutils autoplist

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/py-pyelliptic/Makefile 440224 2017-05-06 05:54:51Z miwi $
+# $FreeBSD: head/security/py-pyelliptic/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyelliptic
 PORTVERSION=	1.5.8
@@ -12,7 +12,7 @@ COMMENT=	Python OpenSSL wrapper
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>=0:security/py-openssl
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>=0:security/py-openssl@${FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	yann2192

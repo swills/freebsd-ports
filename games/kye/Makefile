@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/kye/Makefile 446593 2017-07-25 15:57:34Z amdmi3 $
+# $FreeBSD: head/games/kye/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	kye
 PORTVERSION=	1.0
@@ -23,7 +23,7 @@ RESTRICTED=	kye-data_nuke_levels is charityware
 RESTRICTED_FILES=	 kye-data_nuke_levels.20121101.tar.gz
 
 USE_GNOME=	pygtk2 librsvg2
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 PORTDOCS=	NEWS README

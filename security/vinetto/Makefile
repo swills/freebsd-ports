@@ -1,5 +1,5 @@
 # Created by: Aleksander Fafula <alex@BSDGuru.org>
-# $FreeBSD: head/security/vinetto/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/vinetto/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	vinetto
 PORTVERSION=	0.07
@@ -14,10 +14,10 @@ COMMENT=	Forensics tool to examine Thumbs.db files
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${FLAVOR}
 
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils concurrent optsuffix
 PYDISTUTILS_PKGVERSION=	0.06alpha
 NO_ARCH=	yes
 

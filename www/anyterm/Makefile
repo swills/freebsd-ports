@@ -1,5 +1,5 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/www/anyterm/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/www/anyterm/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	anyterm
 PORTVERSION=	1.1.29
@@ -19,6 +19,7 @@ BUILD_DEPENDS=	${LOCALBASE}/include/boost/function.hpp:devel/boost-libs
 
 BROKEN_aarch64=		does not build: libstdc++.so: undefined reference to __floatunditf@GCC_4.2.0
 BROKEN_armv6=		does not build: libstdc++.so: undefined reference to __floatunditf@GCC_4.2.0
+BROKEN_armv7=		does not build: libstdc++.so: undefined reference to __floatunditf@GCC_4.2.0
 BROKEN_powerpc64=	Does not build: ld: cannot find -lboost_system
 
 USE_RC_SUBR=	anytermd

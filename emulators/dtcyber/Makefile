@@ -1,5 +1,5 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/emulators/dtcyber/Makefile 439905 2017-05-01 19:24:00Z linimon $
+# $FreeBSD: head/emulators/dtcyber/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	dtcyber
 PORTVERSION=	2.0b1
@@ -25,6 +25,7 @@ PLIST_FILES=	bin/dtcyber %%EXAMPLESDIR%%/cyber.ini %%EXAMPLESDIR%%/cos.tap
 
 BROKEN_aarch64=		Fails to compile: error: Unable to determine size of basic data types
 BROKEN_armv6=		Fails to compile: error: Unable to determine size of basic data types
+BROKEN_armv7=		Fails to compile: error: Unable to determine size of basic data types
 BROKEN_mips64=		Fails to compile: error: Unable to determine size of basic data types
 
 do-install:

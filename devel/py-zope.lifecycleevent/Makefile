@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-zope.lifecycleevent/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-zope.lifecycleevent/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	zope.lifecycleevent
 PORTVERSION=	3.7.0
@@ -13,9 +13,9 @@ COMMENT=	Object life-cycle events
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface \
-		${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component \
-		${PYTHON_PKGNAMEPREFIX}zope.event>=0:devel/py-zope.event
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.component>=0:devel/py-zope.component@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.event>=0:devel/py-zope.event@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@lwhsu.org>
-# $FreeBSD: head/ftp/py-ftputil/Makefile 371201 2014-10-19 17:18:24Z mva $
+# $FreeBSD: head/ftp/py-ftputil/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ftputil
 PORTVERSION=	2.6
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	lwhsu@FreeBSD.org
 COMMENT=	High-level FTP client library
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 DOCSDIR=	${PREFIX}/share/doc/py-${PORTNAME}

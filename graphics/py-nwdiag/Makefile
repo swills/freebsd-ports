@@ -1,5 +1,5 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/py-nwdiag/Makefile 412907 2016-04-10 09:39:02Z tota $
+# $FreeBSD: head/graphics/py-nwdiag/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	nwdiag
 PORTVERSION=	1.0.4
@@ -13,9 +13,9 @@ COMMENT=	Simple network-diagram image generator
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PKGNAMEPREFIX}pillow>=2.2.1:graphics/py-pillow \
-		${PKGNAMEPREFIX}funcparserlib>=0.3.6:devel/py-funcparserlib \
-		${PKGNAMEPREFIX}blockdiag>=1.5.0:graphics/py-blockdiag
+RUN_DEPENDS=	${PKGNAMEPREFIX}pillow>=2.2.1:graphics/py-pillow@${FLAVOR} \
+		${PKGNAMEPREFIX}funcparserlib>=0.3.6:devel/py-funcparserlib@${FLAVOR} \
+		${PKGNAMEPREFIX}blockdiag>=1.5.0:graphics/py-blockdiag@${FLAVOR}
 
 USES=	python:-3.4
 USE_PYTHON=	autoplist distutils

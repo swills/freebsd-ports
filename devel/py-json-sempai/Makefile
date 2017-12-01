@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-json-sempai/Makefile 407792 2016-02-02 02:18:32Z swills $
+# $FreeBSD: head/devel/py-json-sempai/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	json-sempai
 PORTVERSION=	0.4.0
@@ -11,7 +11,7 @@ COMMENT=	Pythonic argument parser, that will make you smile
 
 LICENSE=	MIT
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 PORTDOCS=	README.rst

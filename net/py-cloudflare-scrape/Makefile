@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-cloudflare-scrape/Makefile 453519 2017-11-05 07:08:48Z tcberner $
+# $FreeBSD: head/net/py-cloudflare-scrape/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cloudflare-scrape
 DISTVERSION=	1.9.0
@@ -11,7 +11,7 @@ COMMENT=	Python module to bypass Cloudflare's anti-bot page
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PyExecJS>=0:devel/py-PyExecJS
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PyExecJS>=0:devel/py-PyExecJS@${FLAVOR}
 
 USES=		python
 USE_PYTHON=     distutils autoplist

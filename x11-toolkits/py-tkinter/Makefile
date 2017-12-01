@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/py-tkinter/Makefile 401909 2015-11-19 01:28:38Z lwhsu $
+# $FreeBSD: head/x11-toolkits/py-tkinter/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tkinter
 PORTVERSION=	${PYTHON_PORTVERSION}
@@ -16,8 +16,8 @@ LICENSE=	PSFL
 
 PORTSCOUT=	ignore:1
 
-USE_PYTHON=	distutils autoplist
 USES=		python tar:xz tk
+USE_PYTHON=	distutils autoplist allflavors
 
 DIST_SUBDIR=	python
 DISTINFO_FILE=	${PORTSDIR}/lang/python${PYTHON_SUFFIX}/distinfo

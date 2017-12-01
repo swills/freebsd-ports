@@ -1,5 +1,5 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/security/arm/Makefile 453706 2017-11-07 21:53:49Z cs $
+# $FreeBSD: head/security/arm/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	arm
 DEPRECATED=	arm has been replaced by security/nyx
@@ -16,7 +16,7 @@ COMMENT=	Terminal status monitor for Tor
 LICENSE=	GPLv3
 
 USE_PYTHON=	distutils
-USES=		python shebangfix tar:bzip2
+USES=		python:2.7 shebangfix tar:bzip2
 SHEBANG_FILES=	src/resources/torrcOverride/override.py
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

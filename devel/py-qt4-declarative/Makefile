@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-qt4-declarative/Makefile 415984 2016-05-28 12:32:21Z pi $
+# $FreeBSD: head/devel/py-qt4-declarative/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	declarative
 CATEGORIES=	devel python
@@ -11,6 +11,7 @@ PYQT_DIST=	yes
 
 USES=		python pyqt:4
 USE_PYQT=	sip_build core_run gui_run network_run
+USE_PYTHON=	flavors
 USE_QT4=	corelib declarative gui network script sql svg xmlpatterns \
 		qmake_build moc_build
 

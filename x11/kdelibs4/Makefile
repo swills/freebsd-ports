@@ -1,15 +1,15 @@
 # Created by: arved@FreeBSD.org
-# $FreeBSD: head/x11/kdelibs4/Makefile 454896 2017-11-25 20:43:39Z adridg $
+# $FreeBSD: head/x11/kdelibs4/Makefile 455249 2017-12-01 07:04:07Z antoine $
 
 PORTNAME=	kdelibs
 PORTVERSION=	${KDE4_KDELIBS_VERSION}
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	x11 kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Base set of libraries needed by KDE programs
 
-LIB_DEPENDS=	libImath-2_2.so.12:graphics/ilmbase \
+LIB_DEPENDS=	libImath-2_2.so:graphics/ilmbase \
 		libjasper.so:graphics/jasper \
 		libpcre.so:devel/pcre \
 		libenchant.so:textproc/enchant \

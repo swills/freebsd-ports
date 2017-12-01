@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/py-ply/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/devel/py-ply/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ply
 PORTVERSION=	3.10
@@ -13,7 +13,7 @@ COMMENT=	Python Lex-Yacc
 
 LICENSE=	BSD3CLAUSE
 
-USES?=		python
+USES=		python
 USES+=		shebangfix
 USE_PYTHON=	autoplist concurrent distutils
 NO_ARCH=	yes

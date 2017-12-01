@@ -1,5 +1,5 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/devel/py-qt4-core/Makefile 442475 2017-06-03 10:38:33Z tcberner $
+# $FreeBSD: head/devel/py-qt4-core/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	core
 PORTREVISION=	2
@@ -13,7 +13,7 @@ CONFIGURE_ARGS=		--enable QtCore
 PYQT_DIST=		yes
 
 USES=			python pyqt:4
-USE_PYTHON=		py3kplist
+USE_PYTHON=		py3kplist flavors
 USE_PYQT=		sip
 USE_QT4=		corelib qmake_build moc_build
 

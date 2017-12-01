@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/py-google-apputils/Makefile 431127 2017-01-10 19:24:35Z sunpoet $
+# $FreeBSD: head/devel/py-google-apputils/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	google-apputils
 PORTVERSION=	0.4.2
@@ -14,9 +14,9 @@ COMMENT=	Google Application Utilities for Python
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-gflags>2:devel/py-python-gflags \
-		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz \
-		${PYTHON_PKGNAMEPREFIX}dateutil>2:devel/py-dateutil
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-gflags>2:devel/py-python-gflags@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dateutil>2:devel/py-dateutil@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:2

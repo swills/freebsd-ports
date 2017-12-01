@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/py-zkpython/Makefile 425653 2016-11-07 23:59:14Z feld $
+# $FreeBSD: head/devel/py-zkpython/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	zkpython
 PORTVERSION=	0.4.2
@@ -14,7 +14,7 @@ LICENSE=	APACHE20
 
 LIB_DEPENDS=	libzookeeper_mt.so:devel/libzookeeper
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

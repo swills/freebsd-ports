@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/radicale/Makefile 440516 2017-05-09 21:25:26Z zi $
+# $FreeBSD: head/www/radicale/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=		radicale
 PORTVERSION=		1.1.2
@@ -35,11 +35,11 @@ USES+=		python
 .endif
 
 .if ${PORT_OPTIONS:MHTTP}
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}requests1>=0:www/py-requests1
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}requests1>=0:www/py-requests1@${FLAVOR}
 .endif
 
 .if ${PORT_OPTIONS:MLDAP}
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}ldap>=0:net/py-ldap
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}ldap>=0:net/py-ldap@${FLAVOR}
 .endif
 
 post-patch:

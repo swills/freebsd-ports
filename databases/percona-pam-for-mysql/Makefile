@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/databases/percona-pam-for-mysql/Makefile 441395 2017-05-21 13:21:04Z linimon $
+# $FreeBSD: head/databases/percona-pam-for-mysql/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	percona
 PORTREVISION=	1
@@ -8,6 +8,7 @@ PKGNAMESUFFIX=	-pam-for-mysql
 COMMENT=	PAM plugin for MySQL
 
 BROKEN_armv6=		fails to compile: cannot combine with previous 'type-name' declaration specifier
+BROKEN_armv7=		fails to compile: cannot combine with previous 'type-name' declaration specifier
 BROKEN_mips=		fails to configure: CMake Error: Generator: execution of make failed
 BROKEN_mips64=		fails to configure: CMake Error: Generator: execution of make failed
 NOT_FOR_ARCHS=		powerpc64

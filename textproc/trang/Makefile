@@ -1,5 +1,5 @@
 # Created by: Kimura Fuyuki <fuyuki@nigredo.org>
-# $FreeBSD: head/textproc/trang/Makefile 441786 2017-05-26 14:45:53Z linimon $
+# $FreeBSD: head/textproc/trang/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	trang
 PORTVERSION=	2015.11.27
@@ -12,6 +12,7 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/trang/copying.txt
 
 BROKEN_armv6=		fails to build: modbuild.xml: Java returned: 1
+BROKEN_armv7=		fails to build: modbuild.xml: Java returned: 1
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	relaxng

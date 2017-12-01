@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/py-pydnstable/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/dns/py-pydnstable/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pydnstable
 PORTVERSION=	0.6.0
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 LIB_DEPENDS=	libdnstable.so:dns/dnstable
 
 USE_PYTHON=	autoplist distutils
-USES=		pkgconfig python
+USES=		pkgconfig python:2.7
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}/${PYTHON_SITELIBDIR}/dnstable.so

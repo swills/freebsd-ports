@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-qt5-xmlpatterns/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/py-qt5-xmlpatterns/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	xmlpatterns
 CATEGORIES=	textproc devel python
@@ -11,6 +11,7 @@ PYQT_DIST=	yes
 
 USES=		python pyqt:5
 USE_PYQT=	sip_build core_run network_run
+USE_PYTHON=	flavors
 USE_QT5=	core network xmlpatterns qmake_build
 
 OPTIONS_DEFINE=	API DEBUG

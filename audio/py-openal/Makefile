@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/audio/py-openal/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/audio/py-openal/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	openal
 PORTVERSION=	0.1.6
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
-USES=		openal:al,alut python
+USES=		openal:al,alut python:2.7
 USE_PYTHON=	distutils autoplist
 WRKSRC=		${WRKDIR}/PyOpenAL-${PORTVERSION}
 EXAMPLESDIR=	${PREFIX}/share/examples/${PYTHON_PKGNAMEPREFIX}openal

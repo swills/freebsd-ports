@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/cargo.mk 452147 2017-10-15 14:05:04Z madpilot $
+# $FreeBSD: head/Mk/Uses/cargo.mk 455101 2017-11-29 11:06:11Z tobik $
 #
 # This file contains logic to ease porting of Rust packages or
 # binaries using the `cargo` command.
@@ -71,6 +71,13 @@ CARGO_ENV+= \
 	RUSTC=${LOCALBASE}/bin/rustc \
 	RUSTDOC=${LOCALBASE}/bin/rustdoc \
 	RUSTFLAGS="${RUSTFLAGS}"
+
+# Adjust -C target-cpu if -march/-mcpu is set by bsd.cpu.mk
+.if ${ARCH} == amd64 || ${ARCH} == i386
+RUSTFLAGS+=	${CFLAGS:M-march=*:S/-march=/-C target-cpu=/}
+.else
+RUSTFLAGS+=	${CFLAGS:M-mcpu=*:S/-mcpu=/-C target-cpu=/}
+.endif
 
 # Helper to shorten cargo calls.
 CARGO_CARGO_RUN= \

@@ -1,8 +1,9 @@
 # Created by: Manuel Rabade Garica <mig@mig-29.net>
-# $FreeBSD: head/sysutils/xfce4-wavelan-plugin/Makefile 434830 2017-02-25 17:39:02Z olivierd $
+# $FreeBSD: head/sysutils/xfce4-wavelan-plugin/Makefile 455225 2017-11-30 20:36:35Z madpilot $
 
 PORTNAME=	xfce4-wavelan-plugin
 PORTVERSION=	0.6.0
+PORTREVISION=	1
 CATEGORIES=	sysutils xfce
 MASTER_SITES=	XFCE/src/panel-plugins/${PORTNAME}/${PORTVERSION:R}
 DIST_SUBDIR=	xfce4

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/finance/bitcoin-armory/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/finance/bitcoin-armory/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	BitcoinArmory
 PORTVERSION=	0.93.3
@@ -14,10 +14,10 @@ LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/swig3.0:devel/swig30 \
-		${LOCALBASE}/bin/pyrcc4:textproc/py-qt4-xml \
+		${LOCALBASE}/bin/pyrcc4:textproc/py-qt4-xml@${PY_FLAVOR} \
 		${LOCALBASE}/bin/rsync:net/rsync
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=14.0.0:devel/py-twisted \
-		${PYTHON_PKGNAMEPREFIX}psutil>1.2.1:sysutils/py-psutil \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=14.0.0:devel/py-twisted@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}psutil>1.2.1:sysutils/py-psutil@${PY_FLAVOR} \
 		${LOCALBASE}/bin/bitcoind:net-p2p/bitcoin-daemon
 
 USE_GITHUB=	yes

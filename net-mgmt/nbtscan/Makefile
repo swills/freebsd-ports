@@ -1,5 +1,5 @@
 # Created by: Kris Kennaway <kris@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/nbtscan/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/net-mgmt/nbtscan/Makefile 455262 2017-12-01 11:13:42Z amdmi3 $
 
 PORTNAME=	nbtscan
 PORTVERSION=	1.5.1
@@ -11,10 +11,10 @@ MASTER_SITES=	http://www.inetcat.net/software/ \
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	NetBIOS name network scanner
 
-GNU_CONFIGURE=	yes
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib
+GNU_CONFIGURE=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}a
 ALL_TARGET=	nbtscan
@@ -23,7 +23,9 @@ OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/nbtscan ${STAGEDIR}${PREFIX}/bin
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
+
+do-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

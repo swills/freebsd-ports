@@ -1,5 +1,5 @@
 # Created by: Sofian Brabez <sbz@FreeBSD.org>
-# $FreeBSD: head/devel/py-testinfra/Makefile 450998 2017-09-30 15:37:11Z sbz $
+# $FreeBSD: head/devel/py-testinfra/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	testinfra
 PORTVERSION=	1.8.0
@@ -13,9 +13,9 @@ COMMENT=	Testinfra python module Serverspec-like for infrastructure testing
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>0:devel/py-pbr
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest \
-		${PYTHON_PKGNAMEPREFIX}six>1.4:devel/py-six
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>0:devel/py-pbr@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>1.4:devel/py-six@${FLAVOR}
 
 USES=	python
 USE_PYTHON=	distutils autoplist

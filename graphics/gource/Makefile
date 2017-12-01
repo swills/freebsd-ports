@@ -1,5 +1,5 @@
 # Created by: demon@FreeBSD.org
-# $FreeBSD: head/graphics/gource/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/graphics/gource/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	gource
 PORTVERSION=	0.47
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libSDL_image.so:graphics/sdl_image \
 		libfreetype.so:print/freetype2 \
 		libpcre.so:devel/pcre \
 		libboost_filesystem.so:devel/boost-libs \
-		libpng16.so:graphics/png
+		libpng.so:graphics/png
 RUN_DEPENDS=	${LOCALBASE}/include/glm/glm.hpp:math/glm
 
 GNU_CONFIGURE=	yes

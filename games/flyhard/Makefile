@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/flyhard/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/games/flyhard/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	flyhard
 PORTVERSION=	0.42
@@ -18,6 +18,7 @@ LIB_DEPENDS=	libpng.so:graphics/png
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/shared_ptr.hpp:devel/boost-libs
 
 BROKEN_armv6=		dumps core: Assertion failed: (!NodePtr->isKnownSentinel()), function operator*, file ilist_iterator.h
+BROKEN_armv7=		dumps core: Assertion failed: (!NodePtr->isKnownSentinel()), function operator*, file ilist_iterator.h
 
 GNU_CONFIGURE=	yes
 USES=		gmake

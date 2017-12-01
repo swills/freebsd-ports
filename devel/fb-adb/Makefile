@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/fb-adb/Makefile 449658 2017-09-11 15:56:39Z jbeich $
+# $FreeBSD: head/devel/fb-adb/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	fb-adb
 DISTVERSION=	1.4.4-126
@@ -28,7 +28,7 @@ RUN_DEPENDS=	adb:devel/android-tools-adb
 USE_GITHUB=	yes
 GH_ACCOUNT=	facebook
 
-USES=		autoreconf gmake ncurses perl5 python:3,build
+USES=		autoreconf gmake ncurses perl5 python:3.4+,build
 USE_PERL5=	build # pod2man
 BASH_CMD?=	bash # can be zsh
 GNU_CONFIGURE=	yes

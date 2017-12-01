@@ -1,5 +1,5 @@
 # Created by: Attila Nagy <bra@fsn.hu>
-# $FreeBSD: head/devel/py-jsonrpclib/Makefile 447861 2017-08-12 20:31:29Z swills $
+# $FreeBSD: head/devel/py-jsonrpclib/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	jsonrpclib
 PORTVERSION=	0.1.7
@@ -21,7 +21,7 @@ CJSON_DESC=	Use cjson instead of json or simplejson
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MCJSON}
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}cjson>0:devel/py-cjson
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}cjson>0:devel/py-cjson@${FLAVOR}
 .endif
 
 .include <bsd.port.mk>

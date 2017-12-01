@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/Makefile 454302 2017-11-16 10:48:48Z tz $
+# $FreeBSD: head/archivers/Makefile 455210 2017-11-30 15:50:30Z mat $
 #
 
     COMMENT = Archivers
@@ -188,7 +188,7 @@
     SUBDIR += py-rcssmin
     SUBDIR += py-rjsmin
     SUBDIR += py-warctools
-    SUBDIR += py3-libarchive-c
+    SUBDIR += py-xopen
     SUBDIR += qpress
     SUBDIR += quazip
     SUBDIR += quazip-qt5

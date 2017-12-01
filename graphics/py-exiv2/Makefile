@@ -1,5 +1,5 @@
 # Created by: Denis Barov <dindin@dindin.ru>
-# $FreeBSD: head/graphics/py-exiv2/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/graphics/py-exiv2/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	exiv2
 PORTVERSION=	0.3.2
@@ -16,6 +16,7 @@ LIB_DEPENDS=	libexiv2.so:graphics/exiv2\
 		libboost_python.so:devel/boost-python-libs
 
 USES=		python:2 scons tar:bzip2
+USE_PYTHON=	flavors
 USE_LDCONFIG=	yes
 CXXFLAGS+=	-I${LOCALBASE}/include
 MAKE_ARGS+=	prefix=${PREFIX} use_env=1

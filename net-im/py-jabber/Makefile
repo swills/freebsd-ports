@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/net-im/py-jabber/Makefile 371450 2014-10-24 16:29:51Z mva $
+# $FreeBSD: head/net-im/py-jabber/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	jabber
 PORTVERSION=	0.5
@@ -11,7 +11,7 @@ DISTNAME=	jabberpy-${PORTVERSION}-0
 MAINTAINER=	flz@FreeBSD.org
 COMMENT=	Python Jabber library
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 PLIST_FILES=	${PYTHONPREFIX_SITELIBDIR:S;${PREFIX}/;;}/jabber.pth
 

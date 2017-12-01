@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/textproc/gnome-doc-utils/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/gnome-doc-utils/Makefile 455252 2017-12-01 08:05:22Z mat $
 #   $MCom: ports/trunk/textproc/gnome-doc-utils/Makefile 19009 2014-03-02 22:41:42Z kwm $
 
 PORTNAME=	gnome-doc-utils
@@ -12,9 +12,9 @@ MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	GNOME doc utils
 
 BUILD_DEPENDS=	rarian-sk-config:textproc/rarian \
-		${PYTHON_SITELIBDIR}/libxml2mod.so:textproc/py-libxml2
+		${PYTHON_SITELIBDIR}/libxml2mod.so:textproc/py-libxml2@${PY_FLAVOR}
 RUN_DEPENDS=	rarian-sk-config:textproc/rarian \
-		${PYTHON_SITELIBDIR}/libxml2mod.so:textproc/py-libxml2 \
+		${PYTHON_SITELIBDIR}/libxml2mod.so:textproc/py-libxml2@${PY_FLAVOR} \
 		docbook-xml>0:textproc/docbook-xml
 
 USES=		gettext-tools:build,run gmake pathfix pkgconfig python:2 tar:xz

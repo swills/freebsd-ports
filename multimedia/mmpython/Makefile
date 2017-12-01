@@ -1,5 +1,5 @@
 # Created by: larse@isi.edu
-# $FreeBSD: head/multimedia/mmpython/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/mmpython/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	mmpython
 PORTVERSION=	0.4.10
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libdvdread.so:multimedia/libdvdread
 RUN_DEPENDS=	lsdvd:multimedia/lsdvd
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 post-patch:

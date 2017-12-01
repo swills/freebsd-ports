@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/games/iortcw/Makefile 442986 2017-06-09 13:38:02Z tobik $
+# $FreeBSD: head/games/iortcw/Makefile 455165 2017-11-30 05:55:17Z linimon $
 
 PORTNAME=	iortcw
 DISTVERSION=	1.51
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libopus.so:audio/opus \
 		libfreetype.so:print/freetype2
 
-NOT_FOR_ARCHS=		aarch64 armv6 powerpc64
+NOT_FOR_ARCHS=		aarch64 armv6 armv7 powerpc64
 NOT_FOR_ARCHS_REASON=	fails to configure: Architecture not supported
 
 USES=		jpeg pkgconfig gmake

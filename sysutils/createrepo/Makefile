@@ -1,5 +1,5 @@
 # Created by: Anders F Bjorklund <afb@rpm5.org>
-# $FreeBSD: head/sysutils/createrepo/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/createrepo/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	createrepo
 PORTVERSION=	0.10.4
@@ -11,13 +11,14 @@ COMMENT=	Utility to create and manage RPM metadata repositories
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/sqlitecachec.py:devel/py-yum-metadata-parser \
-		${PYTHON_SITELIBDIR}/libxml2.py:textproc/py-libxml2 \
-		${PYTHON_SITELIBDIR}/urlgrabber/__init__.py:www/py-urlgrabber \
-		${PYTHON_SITELIBDIR}/yum/__init__.py:sysutils/yum \
-		${PYTHON_SITELIBDIR}/deltarpm.py:sysutils/deltarpm
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/sqlitecachec.py:devel/py-yum-metadata-parser@${FLAVOR} \
+		${PYTHON_SITELIBDIR}/libxml2.py:textproc/py-libxml2@${FLAVOR} \
+		${PYTHON_SITELIBDIR}/urlgrabber/__init__.py:www/py-urlgrabber@${FLAVOR} \
+		${PYTHON_SITELIBDIR}/yum/__init__.py:sysutils/yum@${FLAVOR} \
+		${PYTHON_SITELIBDIR}/deltarpm.py:sysutils/deltarpm@${FLAVOR}
 
-USES=		gmake python shebangfix
+USES=		gmake python:2.7 shebangfix
+USE_PYTHON=	flavors
 SHEBANG_FILES=	*.py */*.py Makefile
 
 BUILD_DEPENDS+=	ginstall:sysutils/coreutils

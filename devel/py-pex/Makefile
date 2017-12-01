@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/py-pex/Makefile 441558 2017-05-24 02:40:21Z skreuzer $
+# $FreeBSD: head/devel/py-pex/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pex
 PORTVERSION=	1.2.7
@@ -12,7 +12,7 @@ COMMENT=	PEX packaging toolchain
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}wheel>=0.24.0:devel/py-wheel
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}wheel>=0.24.0:devel/py-wheel@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

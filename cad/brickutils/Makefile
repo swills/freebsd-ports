@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/cad/brickutils/Makefile 439287 2017-04-24 12:58:02Z miwi $
+# $FreeBSD: head/cad/brickutils/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	brickutils
 PORTVERSION=	0.1.6.1
@@ -20,7 +20,7 @@ COMMENT=	Utility for building models with LEGO
 LICENSE=	GPLv3
 
 RUN_DEPENDS=	${LOCALBASE}/share/ldraw/models/car.dat:cad/ldraw \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3
+		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 
 WRKSRC=		${WRKDIR}/BrickUtils-${PORTVERSION}
 

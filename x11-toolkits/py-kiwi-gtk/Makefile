@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale	<nivit@email.it>
-# $FreeBSD: head/x11-toolkits/py-kiwi-gtk/Makefile 429349 2016-12-24 13:04:07Z sunpoet $
+# $FreeBSD: head/x11-toolkits/py-kiwi-gtk/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	kiwi-gtk
 PORTVERSION=	1.9.38
@@ -17,7 +17,7 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 NO_ARCH=	yes
 USE_GNOME=	libglade2 pygtk2
 USE_PYTHON=	autoplist distutils
-USES=		gettext python uniquefiles:dirs
+USES=		gettext python:2.7 uniquefiles:dirs
 
 PORTDOCS=	*
 PORTEXAMPLES=	*

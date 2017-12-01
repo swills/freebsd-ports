@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/smake/Makefile 441814 2017-05-26 20:02:44Z linimon $
+# $FreeBSD: head/devel/smake/Makefile 455165 2017-11-30 05:55:17Z linimon $
 
 PORTNAME=	smake
 PORTVERSION=	1.2.5
@@ -14,7 +14,7 @@ LICENSE_COMB=	multi
 LICENSE_FILE_CDDL=	${WRKSRC}/CDDL.Schily.txt
 
 BROKEN_i386=		fails to compile
-NOT_FOR_ARCHS=		aarch64 armv6
+NOT_FOR_ARCHS=		aarch64 armv6 armv7
 NOT_FOR_ARCHS_REASON=	unknown rule to build: ./RULES/arm-freebsd-/nxb-bin/usr/bin/cc.rul
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:C/.a.*//g}

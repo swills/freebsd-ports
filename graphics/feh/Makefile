@@ -1,5 +1,5 @@
 # Created by: Jeremy Norris <ishmael127@home.com>
-# $FreeBSD: head/graphics/feh/Makefile 453908 2017-11-10 18:36:04Z zeising $
+# $FreeBSD: head/graphics/feh/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	feh
 PORTVERSION=	2.22.2
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libImlib2.so:graphics/imlib2 \
-		libpng16.so:graphics/png
+		libpng.so:graphics/png
 
 USE_XORG=	x11 xt xinerama
 USES=		cpe desktop-file-utils gmake perl5 shebangfix tar:bzip2

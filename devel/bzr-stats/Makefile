@@ -1,5 +1,5 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/devel/bzr-stats/Makefile 415839 2016-05-25 15:43:34Z mat $
+# $FreeBSD: head/devel/bzr-stats/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	bzr-stats
 PORTVERSION=	0.1.0
@@ -16,7 +16,7 @@ RUN_DEPENDS=	bzr:devel/bzr
 
 LICENSE=	GPLv2
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Pav Lucistnik <pav@FreeBSD.org>
-# $FreeBSD: head/science/simlib/Makefile 444237 2017-06-24 18:36:19Z linimon $
+# $FreeBSD: head/science/simlib/Makefile 455165 2017-11-30 05:55:17Z linimon $
 
 PORTNAME=	simlib
 PORTVERSION=	3.02
@@ -17,7 +17,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 
 CXXFLAGS+=	-fPIC
 
-NOT_FOR_ARCHS=		aarch64 armv6 mips mips64 powerpc powerpc64 sparc64
+NOT_FOR_ARCHS=		aarch64 armv6 armv7 mips mips64 powerpc powerpc64 sparc64
 NOT_FOR_ARCHS_REASON=	contains not working ${ARCH}-dependent assembly code
 
 post-patch:

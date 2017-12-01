@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau <duchateau.olivier@gmail.com>
-# $FreeBSD: head/databases/py-flask-sqlalchemy/Makefile 451891 2017-10-12 15:09:33Z sunpoet $
+# $FreeBSD: head/databases/py-flask-sqlalchemy/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	Flask-SQLAlchemy
 PORTVERSION=	2.3.2
@@ -13,8 +13,8 @@ COMMENT=	Adds SQLAlchemy support to Flask
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.10:www/py-flask \
-		${PYTHON_PKGNAMEPREFIX}sqlalchemy10>=0.8:databases/py-sqlalchemy10
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.10:www/py-flask@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sqlalchemy10>=0.8:databases/py-sqlalchemy10@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

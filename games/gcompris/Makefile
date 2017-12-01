@@ -1,5 +1,5 @@
 # Created by: Martin Klaffenboeck <martin.klaffenboeck@gmx.at>
-# $FreeBSD: head/games/gcompris/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/gcompris/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	gcompris
 PORTVERSION=	15.10
@@ -13,12 +13,12 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	texi2html:textproc/texi2html \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3
+		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 LIB_DEPENDS=	libvorbis.so:audio/libvorbis \
 		libao.so:audio/libao \
 		libassetml.so:devel/libassetml \
 		libdbus-glib-1.so:devel/dbus-glib
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3 \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} \
 		gnucap:cad/gnucap
 
 USES=		display:configure gettext gmake libtool localbase pathfix \

@@ -1,5 +1,5 @@
 # Created by: n_hibma@qubesoft.com
-# $FreeBSD: head/mail/mailman/Makefile 453025 2017-10-27 21:04:35Z mandree $
+# $FreeBSD: head/mail/mailman/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	mailman
 DISTVERSION=	2.1.25
@@ -141,8 +141,8 @@ RUN_DEPENDS+=	mknmz:databases/namazu2
 EXTRA_PATCHES+=	${FILESDIR}/extra-patch-Mailman-Cgi-private.py
 .endif
 
-BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}dnspython>=0:dns/py-dnspython
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}dnspython>=0:dns/py-dnspython
+BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}dnspython>=0:dns/py-dnspython@${PY_FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}dnspython>=0:dns/py-dnspython@${PY_FLAVOR}
 
 pre-everything::
 	@${ECHO} ""

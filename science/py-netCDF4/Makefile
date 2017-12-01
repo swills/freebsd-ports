@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/py-netCDF4/Makefile 452602 2017-10-21 20:18:16Z sunpoet $
+# $FreeBSD: head/science/py-netCDF4/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	netCDF4
 PORTVERSION=	1.2.9
@@ -14,8 +14,7 @@ COMMENT=	Python Interface to the NetCDF Library (versions 3 and 4)
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PYNUMPY} \
-		${LOCALBASE}/bin/cython:lang/cython
+BUILD_DEPENDS=	${PYNUMPY}
 LIB_DEPENDS=	libhdf5.so:science/hdf5 \
 		libnetcdf.so:science/netcdf
 RUN_DEPENDS:=	${BUILD_DEPENDS}
@@ -23,7 +22,7 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils cython
 
 DOCSDIR=	${PREFIX}/share/doc/py-${PORTNAME}
 EXAMPLESDIR=	${PREFIX}/share/examples/py-${PORTNAME}

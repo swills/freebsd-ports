@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-zope.app.principalannotation/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/py-zope.app.principalannotation/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	zope.app.principalannotation
 PORTVERSION=	3.7.0
@@ -13,12 +13,12 @@ COMMENT=	Bootstrap subscriber and browser menu item for zope.principalannotation
 
 LICENSE=	ZPL21
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}transaction>=0:devel/py-transaction \
-		${PYTHON_PKGNAMEPREFIX}zope.app.appsetup>=3.11.0:devel/py-zope.app.appsetup \
-		${PYTHON_PKGNAMEPREFIX}zope.processlifetime>=0:devel/py-zope.processlifetime \
-		${PYTHON_PKGNAMEPREFIX}zope.principalannotation>=0:security/py-zope.principalannotation
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}transaction>=0:devel/py-transaction@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.app.appsetup>=3.11.0:devel/py-zope.app.appsetup@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.processlifetime>=0:devel/py-zope.processlifetime@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}zope.principalannotation>=0:security/py-zope.principalannotation@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/py-cycler/Makefile 416469 2016-06-06 15:25:42Z mat $
+# $FreeBSD: head/devel/py-cycler/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	cycler
 PORTVERSION=	0.10.0
@@ -12,8 +12,8 @@ COMMENT=	Composable style cycles
 
 LICENSE=	BSD2CLAUSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

@@ -1,5 +1,5 @@
 # Created by: elvstone@gmail.com
-# $FreeBSD: head/irc/znc/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/irc/znc/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	znc
 PORTVERSION=	1.6.5
@@ -54,7 +54,7 @@ PERL_USES=	perl5
 PYTHON_BUILD_DEPENDS=	swig30>=3.0.0:devel/swig30
 PYTHON_CONFIGURE_ON=	--enable-python=python-${PYTHON_VER} --enable-swig
 PYTHON_USE=	perl5=build
-PYTHON_USES=	perl5 python:3
+PYTHON_USES=	perl5 python:3.4+
 TCL_CONFIGURE_ENABLE=	tcl
 TCL_CONFIGURE_ON=	--with-tcl=${TCL_LIBDIR}
 TCL_USES=	tcl

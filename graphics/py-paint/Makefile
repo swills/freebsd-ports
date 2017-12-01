@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@python.or.kr>
-# $FreeBSD: head/graphics/py-paint/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/py-paint/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	paint
 PORTVERSION=	0.3
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 
 OPTIONS_DEFINE=	EXAMPLES
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 USE_GNOME=	libartlgpl2
 NO_WRKSUBDIR=	yes

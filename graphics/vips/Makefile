@@ -1,9 +1,9 @@
 # Created by: Lev Serebryakov <lev@FreeBSD.org>
-# $FreeBSD: head/graphics/vips/Makefile 448690 2017-08-24 15:49:34Z swills $
+# $FreeBSD: head/graphics/vips/Makefile 455244 2017-12-01 01:58:23Z mandree $
 
 PORTNAME=	vips
 PORTVERSION=	8.4.5
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.vips.ecs.soton.ac.uk/supported/${PORTVERSION:R}/
 
@@ -53,7 +53,7 @@ OPTIONS_DEFAULT=	PYTHON
 OPTIONS_SUB=		yes
 
 DOCS_CONFIGURE_ENABLE=	docs
-PYTHON_USES=		python
+PYTHON_USES=		python:2.7
 PYTHON_CONFIGURE_WITH=	python
 PYTHON_CONFIGURE_ENABLE=	pyvips8
 PYTHON_USE=			GNOME=pygobject3

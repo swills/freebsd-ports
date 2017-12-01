@@ -1,9 +1,9 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/graphics/cinepaint/Makefile 447404 2017-08-05 14:14:46Z bsam $
+# $FreeBSD: head/graphics/cinepaint/Makefile 455244 2017-12-01 01:58:23Z mandree $
 
 PORTNAME=	cinepaint
 DISTVERSION=	1.0-4
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/CinePaint/CinePaint-${DISTVERSION}
 

@@ -1,5 +1,5 @@
 # Created by: Dryice Liu <dryice@dryice.name>
-# $FreeBSD: head/devel/py-nose/Makefile 422147 2016-09-14 18:18:22Z amdmi3 $
+# $FreeBSD: head/devel/py-nose/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	nose
 PORTVERSION=	1.3.7
@@ -13,7 +13,7 @@ COMMENT=	Discovery-based unittest extension
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/lgpl.txt
 
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.pre.mk>

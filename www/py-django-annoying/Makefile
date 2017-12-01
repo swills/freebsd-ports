@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/www/py-django-annoying/Makefile 423708 2016-10-10 20:33:02Z cs $
+# $FreeBSD: head/www/py-django-annoying/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	django-annoying
 PORTVERSION=	0.10.3
@@ -12,7 +12,7 @@ COMMENT=	Eliminate annoying things in the Django framework
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18@${FLAVOR}
 
 USE_GITHUB=	yes
 

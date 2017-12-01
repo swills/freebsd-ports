@@ -1,5 +1,5 @@
 # Created by: Hajimu UMEMOTO <ume@FreeBSD.org>
-# $FreeBSD: head/japanese/tomoe/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/tomoe/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	tomoe
 PORTVERSION=	0.6.0
@@ -36,7 +36,7 @@ MYSQL_USE=		MYSQL=yes
 MYSQL_CONFIGURE_WITH=	mysql
 PYTHON_DESC=		Enable Python module
 PYTHON_USE=		GNOME=pygtk2
-PYTHON_USES=		python
+PYTHON_USES=		python:2.7
 PYTHON_CONFIGURE_OFF=	--with-python=no
 RUBY_DESC=		Enable Ruby module
 RUBY_BROKEN=		Does not build

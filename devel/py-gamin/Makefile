@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/devel/py-gamin/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-gamin/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTREVISION=	3
 CATEGORIES=	devel python
@@ -16,7 +16,8 @@ PLIST=		${.CURDIR}/pkg-plist
 
 GAMIN_SLAVE=	yes
 
-USES=		fam:gamin python
+USES=		fam:gamin python:2.7
+USE_PYTHON=	flavors
 CONFIGURE_ARGS=	--with-python=${PYTHON_CMD} \
 		--disable-gtk-doc --with-html-dir=${PREFIX}/share/doc
 

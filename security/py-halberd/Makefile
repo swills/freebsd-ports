@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-halberd/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/security/py-halberd/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	halberd
 PORTVERSION=	0.2.4
@@ -13,7 +13,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_ARCH=	yes
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

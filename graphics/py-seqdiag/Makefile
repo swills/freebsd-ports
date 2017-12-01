@@ -1,5 +1,5 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/py-seqdiag/Makefile 412908 2016-04-10 09:40:26Z tota $
+# $FreeBSD: head/graphics/py-seqdiag/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	seqdiag
 PORTVERSION=	0.9.5
@@ -13,9 +13,9 @@ COMMENT=	Simple sequence-diagram image generator
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PKGNAMEPREFIX}pillow>=2.2.1:graphics/py-pillow \
-		${PKGNAMEPREFIX}funcparserlib>=0.3.6:devel/py-funcparserlib \
-		${PKGNAMEPREFIX}blockdiag>=1.5.0:graphics/py-blockdiag
+RUN_DEPENDS=	${PKGNAMEPREFIX}pillow>=2.2.1:graphics/py-pillow@${FLAVOR} \
+		${PKGNAMEPREFIX}funcparserlib>=0.3.6:devel/py-funcparserlib@${FLAVOR} \
+		${PKGNAMEPREFIX}blockdiag>=1.5.0:graphics/py-blockdiag@${FLAVOR}
 
 USES=	python:-3.4
 USE_PYTHON=	autoplist distutils

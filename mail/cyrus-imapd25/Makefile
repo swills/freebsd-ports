@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/cyrus-imapd25/Makefile 441819 2017-05-27 00:20:19Z linimon $
+# $FreeBSD: head/mail/cyrus-imapd25/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	cyrus-imapd
 PORTVERSION=	2.5.11
@@ -18,6 +18,7 @@ LIB_DEPENDS=	libsasl2.so:security/cyrus-sasl2 \
 		libpcre.so:devel/pcre
 
 BROKEN_armv6=		fails to build: ./tools/config2header: Error code 1
+BROKEN_armv7=		fails to build: ./tools/config2header: Error code 1
 
 CONFLICTS_INSTALL=	cyrus-imapd-2.[^5].* cyrus-imapd2[^5]-2.[^5].* \
 			cyrus-imapd3*

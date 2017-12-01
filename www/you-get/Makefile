@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/you-get/Makefile 454436 2017-11-18 14:17:15Z sunpoet $
+# $FreeBSD: head/www/you-get/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	you-get
-PORTVERSION=	0.4.964
+PORTVERSION=	0.4.985
 CATEGORIES=	www
 MASTER_SITES=	CHEESESHOP
 
@@ -17,8 +17,8 @@ RUN_DEPENDS=	ffmpeg:multimedia/ffmpeg
 OPTIONS_DEFINE=	RTMPDUMP
 
 NO_ARCH=	yes
-USE_PYTHON=	autoplist distutils
-USES=		python:3
+USE_PYTHON=	autoplist distutils optsuffix
+USES=		python:3.4+
 
 RTMPDUMP_RUN_DEPENDS=	rtmpdump:multimedia/rtmpdump
 

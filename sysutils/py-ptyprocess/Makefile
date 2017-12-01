@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/py-ptyprocess/Makefile 442848 2017-06-07 15:39:37Z woodsb02 $
+# $FreeBSD: head/sysutils/py-ptyprocess/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	ptyprocess
 PORTVERSION=	0.5.1
@@ -11,7 +11,7 @@ COMMENT=	Run a subprocess in a pseudo terminal
 
 LICENSE=	ISCL
 
-USES?=		python
+USES=		python
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

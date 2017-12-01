@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/security/gss/Makefile 430235 2017-01-01 03:45:12Z sunpoet $
+# $FreeBSD: head/security/gss/Makefile 455268 2017-12-01 11:17:29Z amdmi3 $
 
 PORTNAME=	gss
 PORTVERSION=	1.0.3
@@ -14,7 +14,7 @@ LIB_DEPENDS=	libshishi.so:security/shishi
 
 CONFLICTS=	heimdal-[0-9]*
 
-USES=		libtool pathfix pkgconfig perl5
+USES=		libtool localbase:ldflags pathfix pkgconfig perl5
 USE_PERL5=	build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-kerberos5
@@ -29,13 +29,10 @@ NLS_CONFIGURE_ENABLE=	nls
 INFO=		gss
 PORTDOCS=	gss.html gss.ps gss.pdf
 
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
-
 post-configure:
 	@cd ${WRKSRC}/doc && ${TOUCH} Makefile*
 
-post-install:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	(cd ${WRKSRC}/doc && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR})
 

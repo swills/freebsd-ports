@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/www/webkit-gtk2/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/www/webkit-gtk2/Makefile 455251 2017-12-01 07:19:53Z antoine $
 
 PORTNAME=	webkit
 PORTVERSION=	2.4.11
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libenchant.so:textproc/enchant \
 		libicutu.so:devel/icu \
 		libharfbuzz.so:print/harfbuzz \
 		libharfbuzz-icu.so:print/harfbuzz-icu \
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libwebp.so:graphics/webp \
 		libcurl.so:ftp/curl \
 		libsoup-2.4.so:devel/libsoup \

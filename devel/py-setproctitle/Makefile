@@ -1,5 +1,5 @@
 # Created by: Sofian Brabez <sbrabez@gmail.com>
-# $FreeBSD: head/devel/py-setproctitle/Makefile 434538 2017-02-21 15:08:16Z amdmi3 $
+# $FreeBSD: head/devel/py-setproctitle/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	setproctitle
 PORTVERSION=	1.1.10
@@ -13,7 +13,7 @@ COMMENT=	Python module to customize the process title
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
-USES?=		python
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 PORTDOCS=	HISTORY.rst README.rst

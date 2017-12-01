@@ -1,8 +1,9 @@
 # Created by: nork@FreeBSD.org
-# $FreeBSD: head/graphics/ampasCTL/Makefile 433785 2017-02-10 03:49:47Z vanilla $
+# $FreeBSD: head/graphics/ampasCTL/Makefile 455244 2017-12-01 01:58:23Z mandree $
 
 PORTNAME=	ampasCTL
 PORTVERSION=	1.5.2
+PORTREVISION=	1
 CATEGORIES=	graphics devel
 
 MAINTAINER=	ports@FreeBSD.org

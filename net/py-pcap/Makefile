@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/net/py-pcap/Makefile 449916 2017-09-15 18:18:26Z leres $
+# $FreeBSD: head/net/py-pcap/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pcap
 PORTVERSION=	0.6.4
@@ -15,7 +15,7 @@ COMMENT=	Python interface to LBL Packet Capture library (libpcap)
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 OPTIONS_DEFINE=	LIBPCAP

@@ -1,5 +1,5 @@
 # Created by: Henry Hu <henry.hu.sh@gmail.com>
-# $FreeBSD: head/chinese/pyzy/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/chinese/pyzy/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	pyzy
 PORTVERSION=	0.1.0
@@ -23,6 +23,7 @@ USE_LDCONFIG=	yes
 
 BROKEN_aarch64=		fails to compile: constant expression evaluates to -1
 BROKEN_armv6=		fails to compile: constant expression evaluates to -1
+BROKEN_armv7=		fails to compile: constant expression evaluates to -1
 BROKEN_powerpc64=	fails to compile: narrowing conversion of '-1' from 'int' to 'char'
 
 GNU_CONFIGURE=	yes

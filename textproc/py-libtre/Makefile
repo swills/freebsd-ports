@@ -1,5 +1,5 @@
 # Created by: bf <bf2006a@yahoo.com>
-# $FreeBSD: head/textproc/py-libtre/Makefile 417685 2016-06-27 21:30:34Z rene $
+# $FreeBSD: head/textproc/py-libtre/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	libtre
 PORTVERSION=	0.8.0
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libtre.so:textproc/libtre
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
-USES=		python tar:bzip2
+USES=		python:2.7 tar:bzip2
 USE_PYTHON=	distutils autoplist
 
 BUILD_WRKSRC=	${WRKSRC}/python

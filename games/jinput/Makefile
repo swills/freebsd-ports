@@ -1,5 +1,5 @@
 # Created by: loader <loader@freebsdmall.com>
-# $FreeBSD: head/games/jinput/Makefile 441814 2017-05-26 20:02:44Z linimon $
+# $FreeBSD: head/games/jinput/Makefile 455167 2017-11-30 06:13:34Z linimon $
 
 PORTNAME=	jinput
 DISTVERSION=	20110801.r247
@@ -13,6 +13,7 @@ BUILD_DEPENDS=	${JAVALIBDIR}/jutils/jutils.jar:games/jutils
 RUN_DEPENDS=	${JAVALIBDIR}/jutils/jutils.jar:games/jutils
 
 BROKEN_armv6=		fails to compile: build.xml: compilation failed
+BROKEN_armv7=		fails to compile: build.xml: compilation failed
 
 USES=		tar:bzip2
 USE_JAVA=	yes

@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@lwhsu.org>
-# $FreeBSD: head/devel/py-pycallgraph/Makefile 438789 2017-04-18 18:26:19Z miwi $
+# $FreeBSD: head/devel/py-pycallgraph/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pycallgraph
 PORTVERSION=	0.5.1
@@ -17,10 +17,10 @@ LICENSE=	GPLv2
 RUN_DEPENDS+=	dot:graphics/graphviz
 
 USES=		python shebangfix
-USE_PYTHON=	distutils
+USE_PYTHON=	distutils autoplist concurrent
 SHEBANG_FILES=	examples/*.py
 
-EXAMPLESDIR=	${PREFIX}/share/examples/py-${PORTNAME}
+EXAMPLESDIR=	${PREFIX}/share/examples/${PYTHON_PKGNAMEPREFIX}${PORTNAME}
 
 OPTIONS_DEFINE=	EXAMPLES
 

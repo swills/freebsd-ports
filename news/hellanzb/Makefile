@@ -1,5 +1,5 @@
 # Created by: Philip Jenvey <pjenvey@groovie.org>
-# $FreeBSD: head/news/hellanzb/Makefile 449229 2017-09-04 00:01:11Z sunpoet $
+# $FreeBSD: head/news/hellanzb/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	hellanzb
 PORTVERSION=	0.13
@@ -15,8 +15,8 @@ LICENSE=	BSD3CLAUSE
 RUN_DEPENDS=	par2:archivers/par2cmdline \
 		flac:audio/flac \
 		shorten:audio/shorten \
-		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted \
-		${PYTHON_PKGNAMEPREFIX}yenc>=0:news/py-yenc \
+		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yenc>=0:news/py-yenc@${FLAVOR} \
 		mac:audio/mac
 
 USE_PYTHON=	distutils

@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/py-pywdns/Makefile 448748 2017-08-26 01:42:45Z truckman $
+# $FreeBSD: head/dns/py-pywdns/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pywdns
 PORTVERSION=	0.9.0
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
 LIB_DEPENDS=	libwdns.so:dns/wdns
 
-USES=		pkgconfig python
+USES=		pkgconfig python:2.7
 USE_PYTHON=	autoplist distutils
 
 post-patch:

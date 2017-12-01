@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-rednose/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-rednose/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	rednose
 PORTVERSION=	0.4.3
@@ -12,8 +12,8 @@ COMMENT=	Coloured output for nosetests
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}colorama>0:devel/py-colorama \
-		${PYTHON_PKGNAMEPREFIX}termstyle>0:devel/py-termstyle
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}colorama>0:devel/py-colorama@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}termstyle>0:devel/py-termstyle@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

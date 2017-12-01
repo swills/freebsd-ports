@@ -1,5 +1,5 @@
 # Created by: makeport.pl
-# $FreeBSD: head/audio/py-vorbis/Makefile 428129 2016-12-08 15:38:24Z tijl $
+# $FreeBSD: head/audio/py-vorbis/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	vorbis
 PORTVERSION=	1.4
@@ -15,8 +15,8 @@ COMMENT=	Object-oriented Python bindings for the vorbis library
 LICENSE=	LGPL20
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/ogg/_ogg.so:audio/py-ogg
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/ogg/_ogg.so:audio/py-ogg
+BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/ogg/_ogg.so:audio/py-ogg@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/ogg/_ogg.so:audio/py-ogg@${FLAVOR}
 LIB_DEPENDS=	libvorbis.so:audio/libvorbis
 
 USES=		python:2

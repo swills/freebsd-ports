@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/math/py-statsmodels/Makefile 443397 2017-06-11 16:53:31Z miwi $
+# $FreeBSD: head/math/py-statsmodels/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	statsmodels
 PORTVERSION=	0.8.0
@@ -12,19 +12,18 @@ COMMENT=	Complement to SciPy for statistical computations
 LICENSE=	BSD3CLAUSE
 
 BUILD_DEPENDS=	${PYNUMPY} \
-		cython:lang/cython \
-		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy \
-		${PYTHON_PKGNAMEPREFIX}pandas>0:math/py-pandas \
-		${PYTHON_PKGNAMEPREFIX}patsy>0:math/py-patsy
+		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pandas>0:math/py-pandas@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}patsy>0:math/py-patsy@${FLAVOR}
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy \
-		${PYTHON_PKGNAMEPREFIX}pandas>0:math/py-pandas \
-		${PYTHON_PKGNAMEPREFIX}patsy>0:math/py-patsy
+		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pandas>0:math/py-pandas@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}patsy>0:math/py-patsy@${FLAVOR}
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 USES=		python shebangfix
-USE_PYTHON=	autoplist distutils concurrent
+USE_PYTHON=	autoplist distutils concurrent cython
 USE_GITHUB=	yes
 GH_TAGNAME=	8e812cd
 SHEBANG_FILES=	tools/*.py statsmodels/datasets/*/data.py statsmodels/tools/print_version.py \

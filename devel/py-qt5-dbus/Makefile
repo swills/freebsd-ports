@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-qt5-dbus/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-qt5-dbus/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	dbus
 CATEGORIES=	devel python
@@ -11,6 +11,7 @@ PYQT_DIST=	yes
 
 USES=		python pyqt:5
 USE_PYQT=	sip_build core_run
+USE_PYTHON=	flavors
 USE_QT5=	core dbus qmake_build
 
 OPTIONS_DEFINE=	API DEBUG

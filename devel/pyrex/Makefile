@@ -1,11 +1,11 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/pyrex/Makefile 432574 2017-01-27 20:52:32Z sunpoet $
+# $FreeBSD: head/devel/pyrex/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyrex
 PORTVERSION=	0.9.9
 CATEGORIES=	devel lang python
 MASTER_SITES=	http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/
-PKGNAMEPREFIX=	${PYTHONPKGNAMEPREFIX}
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	Pyrex-${PORTVERSION}
 
 MAINTAINER=	sunpoet@FreeBSD.org

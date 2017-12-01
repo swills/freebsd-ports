@@ -1,5 +1,5 @@
 # Created by: Oddbjorn Steffensen <oddbjorn@tricknology.org>
-# $FreeBSD: head/www/web2ldap/Makefile 449645 2017-09-11 13:48:06Z bsam $
+# $FreeBSD: head/www/web2ldap/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	web2ldap
 PORTVERSION=	1.2.94
@@ -12,9 +12,9 @@ COMMENT=	Python-based WWW gateway to LDAP servers
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ldap>=2.4.0:net/py-ldap \
-		${PYTHON_SITELIBDIR}/pyweblib/__init__.py:www/py-pyweblib \
-		${PYTHON_PKGNAMEPREFIX}ipaddr>0:devel/py-ipaddr \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ldap>=2.4.0:net/py-ldap@${PY_FLAVOR} \
+		${PYTHON_SITELIBDIR}/pyweblib/__init__.py:www/py-pyweblib@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ipaddr>0:devel/py-ipaddr@${PY_FLAVOR} \
 		${LOCALBASE}/etc/mime.types:misc/mime-support
 
 OPTIONS_DEFINE=	DOCS

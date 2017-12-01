@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-docker-py/Makefile 441990 2017-05-29 14:50:08Z wg $
+# $FreeBSD: head/devel/py-docker-py/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	docker-py
 PORTVERSION=	1.7.2
@@ -12,7 +12,7 @@ COMMENT=	API client for docker written in Python
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}websocket-client>0:www/py-websocket-client
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}websocket-client>0:www/py-websocket-client@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

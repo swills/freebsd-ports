@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@fallin.lv>
-# $FreeBSD: head/devel/py-pqueue/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/devel/py-pqueue/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pqueue
 PORTVERSION=	0.2
@@ -15,7 +15,7 @@ COMMENT=	Fibonacci-Heap based Priority-Queue Extension for Python
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		python tar:bzip2
+USES=		python:2.7 tar:bzip2
 USE_PYTHON=	distutils autoplist
 
 WRKSRC=		${WRKDIR}/PQueue

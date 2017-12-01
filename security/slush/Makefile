@@ -1,5 +1,5 @@
 # Created by: shipley@dis.org
-# $FreeBSD: head/security/slush/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/security/slush/Makefile 455271 2017-12-01 11:19:21Z amdmi3 $
 
 PORTNAME=	slush
 PORTVERSION=	0.1.1
@@ -19,10 +19,12 @@ USES=		ssl
 OPTIONS_DEFINE=	DOCS
 
 do-install:
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${WRKSRC}/control.txt ${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
 	${INSTALL_PROGRAM} ${WRKSRC}/slush ${STAGEDIR}${PREFIX}/bin/slush
 	${INSTALL_PROGRAM} ${WRKSRC}/slushd ${STAGEDIR}${PREFIX}/sbin/slushd
+
+do-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/control.txt ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

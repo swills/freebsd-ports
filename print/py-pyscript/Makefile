@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale	<nivit@email.it>
-# $FreeBSD: head/print/py-pyscript/Makefile 371452 2014-10-24 16:42:59Z mva $
+# $FreeBSD: head/print/py-pyscript/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	pyscript
 PORTVERSION=	0.6.1
@@ -17,7 +17,7 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 
 PYSCRIPT_MANUAL=doc/manual/pyscript.pdf
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils
 USE_TEX=	latex dvipsk
 

@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/textproc/py-markdown2/Makefile 439919 2017-05-02 02:25:08Z wen $
+# $FreeBSD: head/textproc/py-markdown2/Makefile 455108 2017-11-29 12:53:57Z wen $
 
 PORTNAME=	markdown2
-PORTVERSION=	2.3.4
+PORTVERSION=	2.3.5
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

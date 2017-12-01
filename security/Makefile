@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 455048 2017-11-28 15:52:13Z tz $
+# $FreeBSD: head/security/Makefile 455255 2017-12-01 09:38:23Z rene $
 #
 
     COMMENT = Security tools
@@ -962,7 +962,6 @@
     SUBDIR += py-python-social-auth
     SUBDIR += py-rekall
     SUBDIR += py-rekall-core
-    SUBDIR += py-rekall_gui
     SUBDIR += py-requests-kerberos
     SUBDIR += py-rsa
     SUBDIR += py-safe
@@ -1002,14 +1001,6 @@
     SUBDIR += py-zope.securitypolicy
     SUBDIR += py-zope.session
     SUBDIR += py-zxcvbn-python
-    SUBDIR += py3-certifi
-    SUBDIR += py3-cryptography
-    SUBDIR += py3-ecdsa
-    SUBDIR += py3-libnacl
-    SUBDIR += py3-openssl
-    SUBDIR += py3-pbkdf2
-    SUBDIR += py3-pyaes
-    SUBDIR += py3-pycrypto
     SUBDIR += qtkeychain-qt4
     SUBDIR += qtkeychain-qt5
     SUBDIR += quantis
@@ -1263,7 +1254,6 @@
     SUBDIR += wapiti
     SUBDIR += webfwlog
     SUBDIR += webscarab
-    SUBDIR += webshag
     SUBDIR += whatweb
     SUBDIR += wipe
     SUBDIR += wolfssl

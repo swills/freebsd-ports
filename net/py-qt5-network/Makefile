@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-qt5-network/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/py-qt5-network/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=	network
 CATEGORIES=	net devel python
@@ -11,6 +11,7 @@ PYQT_DIST=	yes
 
 USES=		python pyqt:5
 USE_PYQT=	sip_build core_run
+USE_PYTHON=	flavors
 USE_QT5=	core network qmake_build
 
 OPTIONS_DEFINE=	API DEBUG

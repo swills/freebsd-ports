@@ -1,5 +1,5 @@
 # Created by: GreenDog <fiziologus@gmail.com>
-# $FreeBSD: head/games/py-fife/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/games/py-fife/Makefile 455210 2017-11-30 15:50:30Z mat $
 
 PORTNAME=		fife
 PORTVERSION=		0.4.1
@@ -61,6 +61,7 @@ LOGGING_CMAKE_BOOL=	logging
 
 PYTHON_CMAKE_BOOL=	build-python
 PYTHON_USES=		python:2
+PYTHON_USE=		python=flavors
 PYTHON_BUILD_DEPENDS=	${LOCALBASE}/bin/swig3.0:devel/swig30
 
 LIBRARY_CMAKE_BOOL=	build-library
