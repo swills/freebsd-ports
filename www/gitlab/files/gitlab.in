@@ -491,27 +491,54 @@ restart_gitlab(){
 
 ### Finally the input handling.
 
-case "$1" in
-  start|quietstart|faststart)
+case $gitlab_enable in
+  [yY][eE][sS])
+    case "$1" in
+      start|quietstart|faststart)
         start_gitlab
         ;;
-  stop|faststop)
+      stop|faststop)
         stop_gitlab
         ;;
-  restart)
+      restart)
         restart_gitlab
         ;;
-  reload|force-reload)
+      reload|force-reload)
 	reload_gitlab
         ;;
-  status)
+      status)
         print_status
         exit $gitlab_status
         ;;
-  *)
-        echo "Usage: service gitlab {start|quietstart|faststop|stop|restart|reload|status}"
+      *)
+        echo "Usage: service gitlab {start|quietstart|faststop|stop|restart|reload|onestart|onestop|onerestart|onreload|status}"
         exit 1
         ;;
+    esac
+    ;;
+  *)
+    case "$1" in
+      onestart)
+        start_gitlab
+        ;;
+      onestop)
+        stop_gitlab
+        ;;
+      onerestart)
+        restart_gitlab
+        ;;
+      onreload)
+        reload_gitlab
+        ;;
+      status)
+        print_status
+        exit $gitlab_status
+        ;;
+      *)
+        echo "Usage: service gitlab {start|quietstart|faststop|stop|restart|reload|onestart|onestop|onerestart|onreload|status}"
+        exit 1
+        ;;
+    esac
 esac
 
 exit
