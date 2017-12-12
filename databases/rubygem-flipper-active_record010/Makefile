@@ -18,10 +18,8 @@ RUN_DEPENDS=	rubygem-activerecord4>=3.2:databases/rubygem-activerecord4 \
 
 PORTSCOUT=	limit:^0\.10\.
 
-CONFLICTS_INSTALL=	rubygem-flipper-active_record
-
-USES=		gem
 NO_ARCH=	yes
 USE_RUBY=	yes
+USES=		gem
 
 .include <bsd.port.mk>
