@@ -1,5 +1,5 @@
 # Created by: Jeremy <karlj000@unbc.ca>
-# $FreeBSD: head/biology/avida/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/biology/avida/Makefile 455771 2017-12-08 05:20:01Z linimon $
 
 PORTNAME=	avida
 PORTVERSION=	2.12.4

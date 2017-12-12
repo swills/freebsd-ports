@@ -1,5 +1,5 @@
 # Created by: Janos.Mohacsi@bsd.hu
-# $FreeBSD: head/net-mgmt/rancid3/Makefile 452870 2017-10-25 18:13:38Z feld $
+# $FreeBSD: head/net-mgmt/rancid3/Makefile 453278 2017-11-01 11:41:32Z feld $
 
 PORTNAME=	rancid
 PORTVERSION=	3.7

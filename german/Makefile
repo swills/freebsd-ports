@@ -1,4 +1,4 @@
-# $FreeBSD: head/german/Makefile 443772 2017-06-17 13:44:51Z rakuco $
+# $FreeBSD: head/german/Makefile 449269 2017-09-05 05:44:28Z dinoex $
 #
 
     COMMENT = German support
