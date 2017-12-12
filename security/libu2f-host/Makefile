@@ -1,8 +1,9 @@
-# $FreeBSD: head/security/libu2f-host/Makefile 449120 2017-09-02 11:03:22Z cpm $
+# $FreeBSD: head/security/libu2f-host/Makefile 455848 2017-12-09 12:01:12Z cpm $
 
 PORTNAME=	libu2f-host
 PORTVERSION=	1.1.4
 DISTVERSIONPREFIX=	${PORTNAME}-
+PORTREVISION=	1
 CATEGORIES=	security devel
 
 MAINTAINER=	cpm@FreeBSD.org
@@ -15,6 +16,7 @@ BUILD_DEPENDS=	gengetopt:devel/gengetopt \
 		help2man:misc/help2man
 LIB_DEPENDS=	libhidapi.so:comms/hidapi \
 		libjson-c.so:devel/json-c
+RUN_DEPENDS=	${LOCALBASE}/etc/devd/u2f.conf:security/u2f-devd
 
 USES=	autoreconf pkgconfig gmake libtool
 GNU_CONFIGURE=	yes
@@ -25,13 +27,5 @@ GH_ACCOUNT=	Yubico
 
 CONFIGURE_ARGS=	--disable-gtk-doc
 INSTALL_TARGET=	install-strip
-
-SUB_FILES=	pkg-message
-
-GROUPS=	u2f
-
-post-install:
-	${INSTALL_DATA} ${WRKSRC}/u2f.conf.sample \
-		${STAGEDIR}${PREFIX}/etc/devd
 
 .include <bsd.port.mk>

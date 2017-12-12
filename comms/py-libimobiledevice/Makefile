@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/py-libimobiledevice/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/comms/py-libimobiledevice/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTREVISION=	0
 CATEGORIES=	comms python
@@ -15,6 +15,7 @@ PORTSCOUT=	ignore:1
 
 USES=		python:2.7
 USE_PYTHON=	flavors cython
+BINARY_ALIAS=	cython=cython-${PYTHON_VER}
 CONFIGURE_ENV=	PYTHON_LDFLAGS="`pkg-config --libs python-${PYTHON_VER}`"
 SLAVE_PORT=	yes
 MASTERDIR=	${.CURDIR:H:H}/comms/libimobiledevice

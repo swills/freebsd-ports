@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/py-matplotlib/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/math/py-matplotlib/Makefile 455676 2017-12-06 19:46:53Z tobik $
 
 PORTNAME=	matplotlib
 PORTVERSION=	1.5.3
@@ -27,7 +27,7 @@ RUN_DEPENDS=	${PYNUMPY} \
 
 USE_GITHUB=	yes
 
-USES=		compiler:c++11-lib gettext pkgconfig python:2.7 shebangfix uniquefiles:dirs
+USES=		compiler:c++11-lib gettext pkgconfig python shebangfix uniquefiles:dirs
 USE_PYTHON=	autoplist distutils
 CFLAGS+=	-I${LOCALBASE}/include
 
@@ -35,6 +35,11 @@ OPTIONS_DEFINE=		EXAMPLES GTKBACKEND GTKAGGBACKEND QT4AGGBACKEND \
 			QT5AGGBACKEND TKAGGBACKEND WXAGGBACKEND
 OPTIONS_DEFAULT=	GTKBACKEND GTKAGGBACKEND TKAGGBACKEND
 OPTIONS_SUB=		yes
+.if ${FLAVOR:U:Mpy3*}
+# x11-toolkits/py-gtk2, x11-toolkits/py-wxPython28 do not support Python 3
+OPTIONS_EXCLUDE=	GTKBACKEND GTKAGGBACKEND WXAGGBACKEND
+.endif
+
 GTKBACKEND_DESC=	GTK backend support
 GTKBACKEND_VARS=	GTK_BACKEND=True
 GTKBACKEND_VARS_OFF=	GTK_BACKEND=False

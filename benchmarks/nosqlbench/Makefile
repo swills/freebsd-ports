@@ -1,8 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/benchmarks/nosqlbench/Makefile 441395 2017-05-21 13:21:04Z linimon $
+# $FreeBSD: head/benchmarks/nosqlbench/Makefile 456060 2017-12-11 18:32:51Z amdmi3 $
 
 PORTNAME=	nosqlbench
 PORTVERSION=	0.0.${DATE}
+PORTREVISION=	1
 CATEGORIES=	benchmarks databases
 MASTER_SITES=	LOCAL/vg
 
@@ -10,6 +11,7 @@ MAINTAINER=	vg@FreeBSD.org
 COMMENT=	Micro-benchmarking NoSQL storage
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libleveldb.so:databases/leveldb
 
@@ -18,8 +20,10 @@ USES=		cmake tar:bzip2
 
 CONFLICTS=	tarantool-c
 
-BROKEN_aarch64=		Does not build: clang does not support -march=native
-BROKEN_powerpc64=	Does not build: clang does not support -march=native
+post-patch:
+	@${REINPLACE_CMD} -e 's|-O3 -march=native||' ${WRKSRC}/CMakeLists.txt \
+		${WRKSRC}/third_party/memcached/CMakeLists.txt \
+		${WRKSRC}/third_party/tarantool-c/CMakeLists.txt
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/sources/nosqlbench.conf \

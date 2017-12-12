@@ -1,5 +1,5 @@
 # Created by: Domas Mituzas <midom@dammit.lt>
-# $FreeBSD: head/www/kannel/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/www/kannel/Makefile 455765 2017-12-08 01:46:00Z linimon $
 
 PORTNAME=	kannel
 PORTVERSION=	1.4.4
@@ -18,8 +18,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
-
-BROKEN_armv6=		fails to configure: Unable to find MySQL client libraries
 
 PORTSCOUT=	skipv:1.5.0
 

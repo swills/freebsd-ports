@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/emulators/loemu/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/emulators/loemu/Makefile 455837 2017-12-09 10:12:29Z antoine $
 
 PORTNAME=	loemu
 PORTVERSION=	0.3.1
@@ -12,11 +12,11 @@ COMMENT=	Simple frontend for various game emulators
 
 LICENSE=	GPLv2+
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/gtk-2.0/gtk/__init__.py:x11-toolkits/py-gtk2 \
-		${PYTHON_SITELIBDIR}/libxml2.py:textproc/py-libxml2 \
-		${PYTHON_SITELIBDIR}/libxslt.py:textproc/py-libxslt
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libxml2>=0:textproc/py-libxml2@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}libxslt>=0:textproc/py-libxslt@${PY_FLAVOR}
 
 USES=		gettext python:2.7 shebangfix
+USE_GNOME=	pygtk2
 USE_PYTHON=	distutils
 NO_BUILD=	yes
 SHEBANG_FILES=	setup.py

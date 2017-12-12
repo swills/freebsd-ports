@@ -1,5 +1,5 @@
 # Created by: Greg Fitzgerald <gregf@hugops.pw>
-# $FreeBSD: head/net/fb/Makefile 432071 2017-01-21 18:48:35Z lifanov $
+# $FreeBSD: head/net/fb/Makefile 455392 2017-12-03 08:25:31Z antoine $
 
 PORTNAME=	fb
 PORTVERSION=	2.0.3
@@ -11,11 +11,11 @@ COMMENT=	Client for paste.xinu.at
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyliblzma>0:archivers/py-pyliblzma \
-		${PYTHON_PKGNAMEPREFIX}pycurl>0:ftp/py-pycurl \
-		${PYTHON_PKGNAMEPREFIX}xdg>0:devel/py-xdg
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyliblzma>0:archivers/py-pyliblzma@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pycurl>0:ftp/py-pycurl@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}xdg>0:devel/py-xdg@${PY_FLAVOR}
 
-USES=	python shebangfix
+USES=	python:2.7 shebangfix
 NO_ARCH=	yes
 
 SHEBANG_FILES=	${WRKSRC}/fb

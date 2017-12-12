@@ -1,5 +1,5 @@
 # Created by: Michael Beer <beerml@sigma6audio.de>
-# $FreeBSD: head/audio/ardour5/Makefile 453395 2017-11-03 11:03:19Z riggs $
+# $FreeBSD: head/audio/ardour5/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	ardour5
 PORTVERSION=	5.12.0
@@ -39,7 +39,7 @@ LIB_DEPENDS=	libserd-0.so:devel/serd \
 		libFLAC.so:audio/flac
 
 USES=		compiler:c++11-lang desktop-file-utils gettext libarchive \
-		pkgconfig python:build readline:port tar:bzip2 waf
+		pkgconfig python:2.7,build readline:port tar:bzip2 waf
 USE_CXXSTD=	c++11
 USE_XORG=	x11
 USE_GNOME=	atk cairo cairomm gdkpixbuf2 glib20 glibmm gtk20 gtkmm24 pango

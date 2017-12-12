@@ -1,5 +1,5 @@
 # Created by: Ilia Skalozubov <freebsd@skinc.ru>
-# $FreeBSD: head/www/py-kallithea/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-kallithea/Makefile 455392 2017-12-03 08:25:31Z antoine $
 
 PORTNAME=	kallithea
 PORTVERSION=	0.3.2
@@ -35,7 +35,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}waitress>=0.8.8:www/py-waitress@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}urlobject>=2.3.4:www/py-urlobject@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}routes>=1.13:www/py-routes@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}dulwich>=0.9.9:devel/dulwich \
+		${PYTHON_PKGNAMEPREFIX}dulwich>=0.9.9:devel/dulwich@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}bcrypt>=0.3.0:security/py-bcrypt@${FLAVOR} \
 		mercurial>=2.9:devel/mercurial
 

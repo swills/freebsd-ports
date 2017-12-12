@@ -1,5 +1,5 @@
 # Created by: Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
-# $FreeBSD: head/japanese/man/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/man/Makefile 455813 2017-12-09 00:42:05Z linimon $
 
 PORTNAME=	man
 PORTVERSION=	1.1j
@@ -20,6 +20,9 @@ LICENSE=	GPLv2
 
 RUN_DEPENDS=	${LOCALBASE}/bin/groff:japanese/groff \
 		jless:japanese/less
+
+BROKEN_armv6 =		fails to compile: man.c:37:10: fatal error: 'config.h' file not found
+BROKEN_armv7 =		fails to compile: man.c:37:10: fatal error: 'config.h' file not found
 
 MAKE_ENV=	GZCAT=${GZCAT} GZIP_CMD="${GZIP_CMD}"
 USES=		shebangfix

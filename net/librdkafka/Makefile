@@ -1,8 +1,8 @@
 # Created by: Victor Yagofarov <xnasx@yandex.ru>
-# $FreeBSD: head/net/librdkafka/Makefile 452329 2017-10-18 12:27:19Z pizzamig $
+# $FreeBSD: head/net/librdkafka/Makefile 455640 2017-12-06 09:37:36Z pizzamig $
 
 PORTNAME=	librdkafka
-PORTVERSION=	0.11.1
+PORTVERSION=	0.11.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 

@@ -1,12 +1,11 @@
 # Created by: Göran Runfeldt <goranrunfeldt@home.se>
-# $FreeBSD: head/games/xtux/Makefile 433834 2017-02-11 04:44:43Z mmokhi $
+# $FreeBSD: head/games/xtux/Makefile 455602 2017-12-05 18:37:25Z amdmi3 $
 
 PORTNAME=	xtux
-PORTVERSION=	2003.03.06
-PORTREVISION=	4
+PORTVERSION=	20030306
 CATEGORIES=	games
-MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/20030306
-DISTNAME=	${PORTNAME}-src-${PORTVERSION:S/.//g}
+MASTER_SITES=	SF
+DISTNAME=	${PORTNAME}-src-${PORTVERSION}
 
 MAINTAINER=	mmokhi@FreeBSD.org
 COMMENT=	Humorous Arcade game for X
@@ -16,8 +15,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-USE_XORG=	xpm
 USES=		gmake
+USE_XORG=	xpm
 MAKE_ENV=	CPP="${CC} -E"
 
 CFLAGS+=	-DDATADIR=\\\"${DATADIR}\\\"
@@ -61,6 +60,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/data/demos/*.xtdem ${STAGEDIR}${DATADIR}/demos
 	${INSTALL_DATA} ${WRKSRC}/data/maps/*.map ${STAGEDIR}${DATADIR}/maps
 
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/* ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}

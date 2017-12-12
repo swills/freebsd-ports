@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/wsjt/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/comms/wsjt/Makefile 455861 2017-12-09 14:05:08Z antoine $
 
 PORTNAME=	wsjt
 DISTVERSION=	${VERSION}.r${SVN_REV}
@@ -14,8 +14,7 @@ LICENSE=	GPLv3
 
 RUN_DEPENDS=	${LOCALBASE}/bin/kvasd:comms/kvasd \
 		${WSJT_DEPENDS}
-BUILD_DEPENDS=	python:lang/python \
-		${WSJT_DEPENDS}
+BUILD_DEPENDS=	${WSJT_DEPENDS}
 LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 		libfftw3f.so:math/fftw3-float \
 		libsamplerate.so:audio/libsamplerate \

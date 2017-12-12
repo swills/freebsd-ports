@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/multimedia/gaupol/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/multimedia/gaupol/Makefile 455842 2017-12-09 11:36:48Z antoine $
 
 PORTNAME=	gaupol
 PORTVERSION=	0.19.2
@@ -15,8 +15,8 @@ LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	iso-codes>=0:misc/iso-codes \
-		py*-chardet>=0:textproc/py-chardet \
-		py*-enchant>=1.5.1:textproc/py-enchant
+		${PYTHON_PKGNAMEPREFIX}chardet>=0:textproc/py-chardet@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}enchant>=1.5.1:textproc/py-enchant@${FLAVOR}
 
 USE_GNOME=	pygtk2 intltool
 USE_PYTHON=	distutils

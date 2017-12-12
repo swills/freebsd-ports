@@ -1,5 +1,5 @@
 # Created by: Lars Engels <lars.engels@0x20.net>
-# $FreeBSD: head/multimedia/devede/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/multimedia/devede/Makefile 455549 2017-12-04 22:07:34Z antoine $
 
 PORTNAME=	devede
 PORTVERSION=	3.23.0
@@ -23,7 +23,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	rastersoft
 GH_PROJECT=	Devede
 
-USES=		iconv python:run shebangfix
+USES=		iconv python:2.7,run shebangfix
 USE_GNOME=	pygtk2:run
 SHEBANG_FILES=	devede
 NO_ARCH=	yes

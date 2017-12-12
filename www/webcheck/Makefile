@@ -1,5 +1,5 @@
 # Created by: Mike Meyer <mwm@mired.org>
-# $FreeBSD: head/www/webcheck/Makefile 397998 2015-09-26 16:56:11Z bapt $
+# $FreeBSD: head/www/webcheck/Makefile 456068 2017-12-11 21:48:32Z antoine $
 
 PORTNAME=	webcheck
 PORTVERSION=	1.10.3
@@ -11,7 +11,7 @@ EXTRACT_SUFX=	.tar.gz
 MAINTAINER=	reed@reedmedia.net
 COMMENT=	View structure of a web site, get a list of problems like broken links
 
-USES=		python
+USES=		python:2.7
 NO_BUILD=	yes
 
 # what about fancytooltips?

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hyperscan/Makefile 450271 2017-09-21 16:00:35Z gahr $
+# $FreeBSD: head/devel/hyperscan/Makefile 455793 2017-12-08 18:44:07Z vsevolod $
 
 PORTNAME=	hyperscan
-PORTVERSION=	4.5.2
+PORTVERSION=	4.6.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel textproc
 MASTER_SITES=	SF/boost/boost/1.65.1:boost

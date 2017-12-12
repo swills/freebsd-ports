@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/pear-Horde_Prefs/Makefile 435605 2017-03-07 14:22:52Z mm $
+# $FreeBSD: head/devel/pear-Horde_Prefs/Makefile 455798 2017-12-08 20:21:01Z joneum $
 
 PORTNAME=	Horde_Prefs
-PORTVERSION=	2.8.1
+DISTVERSION=	2.9.0
 CATEGORIES=	devel www pear
 
 MAINTAINER=	horde@FreeBSD.org

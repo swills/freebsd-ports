@@ -1,5 +1,5 @@
 # Created by: Mirko Zinn <mail@derzinn.de>
-# $FreeBSD: head/devel/py-mongokit/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-mongokit/Makefile 455392 2017-12-03 08:25:31Z antoine $
 
 PORTNAME=	mongokit
 PORTVERSION=	0.8.3
@@ -11,7 +11,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	mail@derzinn.de
 COMMENT=	Python ORM-like layer on top of pymongo
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pymongo>=2.0.1:databases/pymongo
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pymongo>=2.0.1:databases/pymongo@${FLAVOR}
 
 USES=		python:2
 USE_PYTHON=	distutils autoplist

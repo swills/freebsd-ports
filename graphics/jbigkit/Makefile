@@ -1,5 +1,5 @@
 # Created by: mi
-# $FreeBSD: head/graphics/jbigkit/Makefile 358757 2014-06-21 23:43:16Z adamw $
+# $FreeBSD: head/graphics/jbigkit/Makefile 455681 2017-12-06 21:35:56Z amdmi3 $
 
 PORTNAME=	jbigkit
 PORTVERSION=	2.1
@@ -9,6 +9,9 @@ MASTER_SITES=	http://www.cl.cam.ac.uk/~mgk25/download/
 
 MAINTAINER=	mi@aldan.algebra.com
 COMMENT=	Lossless compression for bi-level images such as scanned pages, faxes
+
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USE_LDCONFIG=	yes
 MANS=		jbgtopbm.1 pbmtojbg.1

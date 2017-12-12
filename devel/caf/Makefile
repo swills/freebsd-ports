@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/caf/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/caf/Makefile 456105 2017-12-12 04:35:49Z jbeich $
 
 PORTNAME=	caf
 PORTVERSION=	0.15.3
@@ -11,8 +11,6 @@ COMMENT=	C++ actor framework
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BROKEN_powerpc64=	does not build: error: to_string is not a member of std
 
 CXXFLAGS+=	-std=c++11 -Wextra -Wall -pedantic
 LDFLAGS+=	-pthread

@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/openmsx/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/emulators/openmsx/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	openmsx
 PORTVERSION=	0.13.0
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 		libao.so:audio/libao
 
 MAKEFILE=	GNUmakefile
-USES=		gmake python tcl
+USES=		gmake python:2.7 tcl
 USE_GCC=	yes
 USE_GL=		glew
 USE_SDL=	sdl ttf

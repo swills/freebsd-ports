@@ -1,9 +1,9 @@
 # Created by: gurkan@phys.ethz.ch
-# $FreeBSD: head/science/gtamsanalyzer/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/science/gtamsanalyzer/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	gtamsanalyzer
 PORTVERSION=	0.42
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	science gnustep
 MASTER_SITES=	SF/tamsys/gnustep%20tams/GTAMSAnalyzer%2${PORTVERSION}
 DISTNAME=	GTAMSAnalyzer.src.${PORTVERSION}

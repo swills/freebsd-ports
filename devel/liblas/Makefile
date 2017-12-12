@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/liblas/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/devel/liblas/Makefile 455765 2017-12-08 01:46:00Z linimon $
 
 PORTNAME=	liblas
 PORTVERSION=	1.8.1
@@ -27,7 +27,6 @@ GH_ACCOUNT=	libLAS
 GH_PROJECT=	${GH_ACCOUNT}
 
 BROKEN_aarch64=		fails to compile: file liblas/detail/endian.hpp needs to be set up for your CPU type
-BROKEN_armv6=		fails to compile: file liblas/detail/endian.hpp needs to be set up for your CPU type
 BROKEN_powerpc64=	fails to compile: undefined reference to boost::program_options::to_internal
 
 .include <bsd.port.mk>

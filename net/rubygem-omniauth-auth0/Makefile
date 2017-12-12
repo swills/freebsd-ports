@@ -1,12 +1,12 @@
 # Created by: Torsten Zuehlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/net/rubygem-omniauth-auth0/Makefile 416662 2016-06-10 09:08:02Z tz $
+# $FreeBSD: head/net/rubygem-omniauth-auth0/Makefile 455591 2017-12-05 16:44:09Z tz $
 
 PORTNAME=	omniauth-auth0
 PORTVERSION=	1.4.1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	idefix@fechner.net
 COMMENT=	Authentication broker supporting different identity providers
 
 LICENSE=	MIT

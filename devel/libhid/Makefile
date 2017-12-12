@@ -1,5 +1,5 @@
 # Created by: ntarmos@ceid.upatras.gr
-# $FreeBSD: head/devel/libhid/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/libhid/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	libhid
 PORTVERSION=	0.2.16
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/xsltproc:textproc/libxslt \
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-doxygen --disable-werror
 INSTALL_TARGET=	install-strip
-USES=		gmake libtool pathfix python
+USES=		gmake libtool pathfix python:2.7
 USE_LDCONFIG=	yes
 
 EXTRA_PATCHES=	${FILESDIR}/extra-patch-usb

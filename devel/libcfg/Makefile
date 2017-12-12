@@ -1,9 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/libcfg/Makefile 452184 2017-10-16 09:38:48Z rodrigo $
+# $FreeBSD: head/devel/libcfg/Makefile 455529 2017-12-04 17:43:55Z rodrigo $
 
 PORTNAME=	libcfg
 PORTVERSION=	0.6.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	http://opensource.platon.org/projects/
 DISTNAME=	${PORTNAME}+-${DISTVERSION}
@@ -19,6 +19,7 @@ CONFLICTS_INSTALL=	ossp-cfg
 USES=		autoreconf gmake
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
+LLD_UNSAFE=	yes
 
 INSTALL_TARGET=	install-strip install-man
 

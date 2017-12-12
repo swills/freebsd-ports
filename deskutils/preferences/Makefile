@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/preferences/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/deskutils/preferences/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	preferences
 PORTVERSION=	1.2.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	deskutils gnustep
 MASTER_SITES=	SF/prefsapp/prefsapp/${PORTVERSION}
 DISTNAME=	Preferences-${PORTVERSION}

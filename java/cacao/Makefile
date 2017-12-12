@@ -1,8 +1,9 @@
 # Created by: Tilman Keskinoz <arved@FreeBSD.org>
-# $FreeBSD: head/java/cacao/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/java/cacao/Makefile 455374 2017-12-02 13:48:41Z rene $
 
 PORTNAME=	cacao
 PORTVERSION=	1.6.1
+PORTREVISION=	1
 CATEGORIES=	java devel
 MASTER_SITES=	http://www.complang.tuwien.ac.at/cacaojvm/download/cacao-${PORTVERSION}/
 
@@ -32,9 +33,9 @@ JDK_DESC=	Build with native JDK
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MJDK}
-BUILD_DEPENDS+=	${LOCALBASE}/bootstrap-openjdk/bin/javac:java/bootstrap-openjdk
-JAR=		${LOCALBASE}/bootstrap-openjdk/bin/jar
-JAVAC=		${LOCALBASE}/bootstrap-openjdk/bin/javac
+BUILD_DEPENDS+=	${LOCALBASE}/bootstrap-openjdk6/bin/javac:java/bootstrap-openjdk6
+JAR=		${LOCALBASE}/bootstrap-openjdk6/bin/jar
+JAVAC=		${LOCALBASE}/bootstrap-openjdk6/bin/javac
 .else
 .if defined(WITH_GCC)
 GCC_SUFX=	${WITH_GCC:S/.//}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/qzeitgeist/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/sysutils/qzeitgeist/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	qzeitgeist
 PORTVERSION=	0.8.0
@@ -18,7 +18,7 @@ LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	rapper:textproc/raptor2 \
-		${PYTHON_SITELIBDIR}/rdflib/__init__.py:textproc/py-rdflib
+		${PYTHON_PKGNAMEPREFIX}rdflib>=0:textproc/py-rdflib@${PY_FLAVOR}
 
 USES=		cmake kde:4 python:2.7,build tar:bzip2
 USE_KDE=	automoc4

@@ -1,5 +1,5 @@
 # Created by: Oliver Braun <obraun@FreeBSD.org>
-# $FreeBSD: head/mail/mairix/Makefile 343883 2014-02-12 10:16:07Z rm $
+# $FreeBSD: head/mail/mairix/Makefile 455813 2017-12-09 00:42:05Z linimon $
 
 PORTNAME=	mairix
 PORTVERSION=	0.23
@@ -10,6 +10,9 @@ MAINTAINER=	jjuanino@gmail.com
 COMMENT=	Indexing and searching in Maildir, MH, or mbox folders
 
 LICENSE=	GPLv2
+
+BROKEN_armv6=		fails to build under emulation: qemu: uncaught target signal 11 (Segmentation fault) - core dumped
+BROKEN_armv7=		fails to build under emulation: qemu: uncaught target signal 11 (Segmentation fault) - core dumped
 
 USES=		bison gmake
 HAS_CONFIGURE=	yes

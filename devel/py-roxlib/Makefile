@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-roxlib/Makefile 438823 2017-04-19 05:08:04Z miwi $
+# $FreeBSD: head/devel/py-roxlib/Makefile 455855 2017-12-09 12:55:23Z antoine $
 
 PORTNAME=	roxlib
 PORTVERSION=	2.0.6
@@ -11,7 +11,7 @@ DISTNAME=	rox-lib2-${PORTVERSION}
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Python libraries for ROX
 
-USES=		python shebangfix tar:bzip2
+USES=		python:2.7 shebangfix tar:bzip2
 USE_GNOME=	pygtk2:run
 SHEBANG_FILES=	ROX-Lib2/AppRun ROX-Lib2/python/make_docs.py
 

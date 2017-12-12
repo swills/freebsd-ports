@@ -1,8 +1,8 @@
 # Created by: Kai Wang <kaiw27@gmail.com>
-# $FreeBSD: head/shells/fish/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/shells/fish/Makefile 456053 2017-12-11 17:39:19Z asomers $
 
 PORTNAME=	fish
-PORTVERSION=	2.6.0
+PORTVERSION=	2.7.0
 CATEGORIES=	shells
 MASTER_SITES=	http://fishshell.com/files/${PORTVERSION}/
 
@@ -16,6 +16,8 @@ LIB_DEPENDS+=	libpcre2-32.so:devel/pcre2
 USES=		autoreconf cpe gmake libtool ncurses pkgconfig pathfix python:3.4+ \
 		localbase compiler:c++11-lang shebangfix
 SHEBANG_FILES=	share/tools/*.py share/tools/web_config/webconfig.py
+
+CONFLICTS_INSTALL=	comms/mlan3
 
 GNU_CONFIGURE=	yes
 

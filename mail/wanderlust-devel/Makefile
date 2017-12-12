@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/mail/wanderlust-devel/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/mail/wanderlust-devel/Makefile 455775 2017-12-08 08:33:45Z mat $
 
 PORTNAME=	wanderlust
 PORTVERSION=	2.15.9.b.${SNAPDATE}
@@ -25,7 +25,6 @@ CONFLICTS=	wanderlust-*-2.14.*
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 .include <bsd.port.pre.mk>
-.include <bsd.port.options.mk>
 
 MIMEUI_PORT_NAME=	${MIMEUI_PRODUCT}
 MIMEUI_PRODUCT=	semi

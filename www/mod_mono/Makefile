@@ -1,5 +1,5 @@
 # Created by: Tom McLaughlin <tmclaugh@sdf.lonestar.org>
-# $FreeBSD: head/www/mod_mono/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/mod_mono/Makefile 456030 2017-12-11 13:58:45Z brnrd $
 
 PORTNAME=	mod_mono
 PORTVERSION=	3.12
@@ -25,11 +25,7 @@ USE_APACHE=	22+
 
 .include <bsd.port.pre.mk>
 
-.if ${APACHE_VERSION} == 13
-MOD_MONOCONFDIR=${APACHEETCDIR}
-.else
 MOD_MONOCONFDIR=${APACHEETCDIR}/Includes
-.endif
 
 PLIST_SUB+=	MOD_MONOCONFDIR=${MOD_MONOCONFDIR}
 

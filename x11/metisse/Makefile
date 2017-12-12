@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/x11/metisse/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/x11/metisse/Makefile 456068 2017-12-11 21:48:32Z antoine $
 
 PORTNAME=	metisse
 PORTVERSION=	0.4.1
@@ -23,7 +23,7 @@ BROKEN_aarch64=	Fails to build: error: GETLEFTBITS_ALIGNMENT must be 1
 BROKEN_armv6=	Fails to build: error: GETLEFTBITS_ALIGNMENT must be 1
 BROKEN_armv7=	Fails to build: error: GETLEFTBITS_ALIGNMENT must be 1
 
-USES=		gettext libtool localbase:ldflags pathfix pkgconfig python shebangfix tar:bzip2
+USES=		gettext libtool localbase:ldflags pathfix pkgconfig python:2.7 shebangfix tar:bzip2
 SHEBANG_FILES=	${WRKSRC}/fvwm-insitu/bin/fvwm-convert-2.4.in \
 		${WRKSRC}/fvwm-insitu/bin/fvwm-convert-2.6.in \
 		${WRKSRC}/fvwm-insitu/bin/fvwm-menu-desktop.in \

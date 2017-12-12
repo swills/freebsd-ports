@@ -1,5 +1,5 @@
 # Created by: Henry Hu <henry.hu.sh@gmail.com>
-# $FreeBSD: head/chinese/pyzy/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/chinese/pyzy/Makefile 455851 2017-12-09 12:25:00Z antoine $
 
 PORTNAME=	pyzy
 PORTVERSION=	0.1.0
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libsqlite3.so:databases/sqlite3
 USE_GITHUB=	yes
 GH_TAGNAME=	6d9c3cd
 
-USES=		compiler:c++11-lib gmake libtool pkgconfig python:build shebangfix autoreconf gettext-runtime pathfix
+USES=		compiler:c++11-lib gmake libtool pkgconfig python:2.7,build shebangfix autoreconf gettext-runtime pathfix
 SHEBANG_FILES=	data/db/android/create_db.py
 USE_GNOME=	glib20
 USE_LDCONFIG=	yes

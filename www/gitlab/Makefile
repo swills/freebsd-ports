@@ -1,13 +1,13 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab/Makefile 455257 2017-12-01 11:03:43Z tz $
+# $FreeBSD: head/www/gitlab/Makefile 455591 2017-12-05 16:44:09Z tz $
 
 PORTNAME=	gitlab
 PORTVERSION=	10.1.4
-PORTREVISION=	1
 DISTVERSIONPREFIX=	v
+PORTREVISION=	2
 CATEGORIES=	www devel
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	idefix@fechner.net
 COMMENT=	Web GUI for managing git repositories
 
 LICENSE=	MIT
@@ -81,7 +81,7 @@ RUN_DEPENDS=	git>=2.14.1:devel/git \
 	rubygem-hamlit>=2.6.1:www/rubygem-hamlit \
 	rubygem-carrierwave>=1.1:www/rubygem-carrierwave \
 	rubygem-dropzonejs-rails>=0.7.1:www/rubygem-dropzonejs-rails \
-	rubygem-fog-aws>=1.4:net/rubygem-fog-aws \
+	rubygem-fog-aws1>=1.4:net/rubygem-fog-aws1 \
 	rubygem-fog-core>=1.44:devel/rubygem-fog-core \
 	rubygem-fog-google>=0.5:net/rubygem-fog-google \
 	rubygem-fog-local>=0.3:net/rubygem-fog-local \

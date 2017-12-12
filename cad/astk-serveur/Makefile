@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/cad/astk-serveur/Makefile 454187 2017-11-14 18:29:22Z thierry $
+# $FreeBSD: head/cad/astk-serveur/Makefile 455826 2017-12-09 09:20:23Z antoine $
 
 PORTNAME=	astk
 DISTVERSION=	1.13.10-1
@@ -31,7 +31,7 @@ LICENSE=	GPLv2
 RUN_DEPENDS+=	${SHELL_INSTALL_ASTER}:shells/${SHIADEP}
 
 .if !defined(CLIENT_SEUL)
-USES+=		gettext python shebangfix tk:build
+USES+=		gettext python:2.7 shebangfix tk:build
 SHEBANG_FILES=	unittest/run_test.py
 .else
 USES+=		tk

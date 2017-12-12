@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/liteide/Makefile 453719 2017-11-08 06:20:29Z yuri $
+# $FreeBSD: head/devel/liteide/Makefile 456072 2017-12-12 02:00:20Z swills $
 
 PORTNAME=	liteide
 DISTVERSIONPREFIX=	x
-DISTVERSION=	33
+DISTVERSION=	33.1
 CATEGORIES=	devel editors
 
 MAINTAINER=	dg@syrec.org

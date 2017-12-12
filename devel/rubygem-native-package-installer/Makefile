@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-native-package-installer/Makefile 454072 2017-11-12 19:10:34Z sunpoet $
+# $FreeBSD: head/devel/rubygem-native-package-installer/Makefile 455717 2017-12-07 16:00:49Z sunpoet $
 
 PORTNAME=	native-package-installer
-PORTVERSION=	1.0.5
+PORTVERSION=	1.0.6
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

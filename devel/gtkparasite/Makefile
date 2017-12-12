@@ -1,5 +1,5 @@
 # Created by: Ashish Shukla <wahjava@gmail.com>
-# $FreeBSD: head/devel/gtkparasite/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/devel/gtkparasite/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	gtkparasite
 PORTVERSION=	20090819
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-static
 INSTALL_TARGET=	install-strip
-USES=		autoreconf libtool pkgconfig python
+USES=		autoreconf libtool pkgconfig python:2.7
 USE_GNOME=	gtk20 pygtk2
 WRKSRC=		${WRKDIR}/chipx86-gtkparasite-a3d862d4a91ea27222e4273a6797f3e47efe6e83
 PORTDOCS=	USAGE

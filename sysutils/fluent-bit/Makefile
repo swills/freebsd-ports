@@ -1,5 +1,5 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/sysutils/fluent-bit/Makefile 447435 2017-08-05 23:13:45Z sunpoet $
+# $FreeBSD: head/sysutils/fluent-bit/Makefile 455765 2017-12-08 01:46:00Z linimon $
 
 PORTNAME=	fluent-bit
 DISTVERSION=	0.11.6
@@ -12,7 +12,6 @@ COMMENT=	Fast and lightweight data forwarder
 LICENSE=	APACHE20
 
 BROKEN_aarch64=		fails to build: error: unknown type name thread_local
-BROKEN_armv6=		fails to configure: failure in cmake
 BROKEN_mips=		fails to build: conflicting types for 'restrict'
 BROKEN_mips64=		fails to build: conflicting types for 'restrict'
 BROKEN_powerpc64=	fails to build: cast from pointer to integer of different size

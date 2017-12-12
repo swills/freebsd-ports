@@ -1,9 +1,8 @@
 # Created by: Parv <parv@pair.org>
-# $FreeBSD: head/databases/p5-DBIx-Simple/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Simple/Makefile 455976 2017-12-11 10:41:16Z sunpoet $
 
 PORTNAME=	DBIx-Simple
-PORTVERSION=	1.35
-PORTREVISION=	1
+PORTVERSION=	1.36
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -21,6 +20,7 @@ SQL_ABSTRACT_DESC=	Generate SQL from Perl data structures
 DBIX_XHTML_TABLE_DESC=	Create XHTML tables from SQL queries
 TEXT_TABLE_DESC=	Create plain text table from data
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

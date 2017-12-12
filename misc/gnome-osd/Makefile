@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/misc/gnome-osd/Makefile 405109 2016-01-03 02:09:57Z amdmi3 $
+# $FreeBSD: head/misc/gnome-osd/Makefile 455845 2017-12-09 11:46:20Z antoine $
 
 PORTNAME=	gnome-osd
 PORTVERSION=	0.20.0
@@ -14,7 +14,7 @@ COMMENT=	On-Screen-Display infrastructure using Pango text rendering
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gettext-tools gmake pathfix pkgconfig python
+USES=		gettext-tools gmake pathfix pkgconfig python:2.7
 USE_GNOME=	gnomeprefix intlhack pygnome2
 GNU_CONFIGURE=	yes
 NO_ARCH=	yes

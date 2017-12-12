@@ -1,5 +1,5 @@
 # Created by: lbartoletti <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/cad/libopencad/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/cad/libopencad/Makefile 456105 2017-12-12 04:35:49Z jbeich $
 
 PORTNAME=	libopencad
 PORTVERSION=	0.2.0
@@ -14,7 +14,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_armv6=		fails to compile: cadheader.cpp: ambiguous conversion for functional-style cast from 'time_t' to 'CADVariant'
 BROKEN_armv7=		fails to compile: cadheader.cpp: ambiguous conversion for functional-style cast from 'time_t' to 'CADVariant'
-BROKEN_powerpc64=	fails to compile: r2000.cpp: 'to_string' was not declared in this scope
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	sandyre

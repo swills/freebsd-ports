@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/rubygem-peek-sidekiq/Makefile 448655 2017-08-24 09:12:58Z tz $
+# $FreeBSD: head/devel/rubygem-peek-sidekiq/Makefile 455591 2017-12-05 16:44:09Z tz $
 
 PORTNAME=	peek-sidekiq
 PORTVERSION=	1.0.3
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	idefix@fechner.net
 COMMENT=	Provide a peek into the Sidekiq calls made
 
 LICENSE=	MIT

@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/libosmo-abis/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/devel/libosmo-abis/Makefile 455736 2017-12-07 16:13:25Z swills $
 
 PORTNAME=	libosmo-abis
-PORTVERSION=	0.3.2
-PORTREVISION=	2
+PORTVERSION=	0.4.0
 CATEGORIES=	devel
 MASTER_SITES=	http://git.osmocom.org/libosmo-abis/snapshot/ \
 		http://chaosophia.net/downloads/osmocom/${PORTNAME}/
@@ -14,6 +13,7 @@ LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libosmocore.so:devel/libosmocore \
+		libtalloc.so:devel/talloc \
 		libortp.so:net/ortp
 
 USES=		autoreconf gmake libtool pathfix pkgconfig

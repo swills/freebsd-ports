@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/devel/py-funcsigs/Makefile 437250 2017-03-29 23:36:36Z sunpoet $
+# $FreeBSD: head/devel/py-funcsigs/Makefile 455456 2017-12-03 20:36:21Z sunpoet $
 
 PORTNAME=	funcsigs
 PORTVERSION=	1.0.2
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Python function signatures from PEP362
 
 LICENSE=	APACHE20

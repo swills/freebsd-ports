@@ -1,5 +1,5 @@
 # Created by: Yinghong Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/net-im/emesene/Makefile 438789 2017-04-18 18:26:19Z miwi $
+# $FreeBSD: head/net-im/emesene/Makefile 455392 2017-12-03 08:25:31Z antoine $
 
 PORTNAME=	emesene
 PORTVERSION=	2.12.9
@@ -12,13 +12,13 @@ COMMENT=	Instant messenging client written in python
 
 LICENSE=	GPLv3+
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3 \
-		${PYTHON_PKGNAMEPREFIX}dnspython>0:dns/py-dnspython \
-		${PYTHON_PKGNAMEPREFIX}dbus>0:devel/py-dbus \
-		${PYTHON_PKGNAMEPREFIX}notify>0:devel/py-notify \
-		${PYTHON_PKGNAMEPREFIX}openssl>0:security/py-openssl \
-		${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto \
-		${PYTHON_PKGNAMEPREFIX}webkitgtk>0:www/py-webkitgtk \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dnspython>0:dns/py-dnspython@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dbus>0:devel/py-dbus@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}notify>0:devel/py-notify@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}openssl>0:security/py-openssl@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}webkitgtk>0:www/py-webkitgtk@${PY_FLAVOR} \
 		xprop:x11/xprop
 
 NO_ARCH=	yes
@@ -26,7 +26,7 @@ NO_BUILD=	yes
 
 USE_GITHUB=	yes
 
-USES=		desktop-file-utils gettext-runtime python shebangfix
+USES=		desktop-file-utils gettext-runtime python:2.7 shebangfix
 USE_GNOME=	pygtk2:run
 USE_GSTREAMER=	python
 INSTALLS_ICONS=	yes

@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/solaar/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/sysutils/solaar/Makefile 455871 2017-12-09 19:05:03Z tobik $
 
 PORTNAME=	solaar
 PORTVERSION=	g20170327
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 
 MAINTAINER=	tobik@FreeBSD.org
@@ -40,5 +40,9 @@ post-patch:
 		${WRKSRC}/lib/logitech_receiver/listener.py
 	@${REINPLACE_CMD} 's|[[:<:]]cmd[[:>:]]|action|' \
 		${WRKSRC}/lib/solaar/cli/__init__.py
+
+post-install:
+	${INSTALL_DATA} ${FILESDIR}/devd-solaar.conf \
+		${STAGEDIR}${PREFIX}/etc/devd/solaar.conf.sample
 
 .include <bsd.port.mk>

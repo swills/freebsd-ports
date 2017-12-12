@@ -1,9 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/py-flake8-import-order/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-flake8-import-order/Makefile 455306 2017-12-01 20:45:45Z amdmi3 $
 
 PORTNAME=	flake8-import-order
-PORTVERSION=	0.15
-PORTREVISION=	1
+PORTVERSION=	0.16
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,8 +13,7 @@ COMMENT=	Flake8 and pylama plugin that checks the ordering of import statements
 LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycodestyle>=0:devel/py-pycodestyle@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}asttokens>=0:devel/py-asttokens@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycodestyle>=0:devel/py-pycodestyle@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

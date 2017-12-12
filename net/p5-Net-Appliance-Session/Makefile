@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-Appliance-Session/Makefile 452227 2017-10-16 17:47:01Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Appliance-Session/Makefile 455981 2017-12-11 10:41:48Z sunpoet $
 
 PORTNAME=	Net-Appliance-Session
-PORTVERSION=	4.300000
+PORTVERSION=	4.300001
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

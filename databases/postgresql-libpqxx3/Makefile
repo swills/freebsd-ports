@@ -1,5 +1,5 @@
 # Created by: Palle Girgensohn <girgen@pingpong.net>
-# $FreeBSD: head/databases/postgresql-libpqxx3/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/databases/postgresql-libpqxx3/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	libpqxx
 PORTVERSION=	3.1.1
@@ -16,7 +16,7 @@ COMMENT=	New C++ interface for PostgreSQL
 CONFLICTS=	postgresql-libpqxx-[2-4].*
 PORTSCOUT=	limit:^2\.
 
-USES+=		gmake libtool pathfix pgsql pkgconfig python:build shebangfix
+USES+=		gmake libtool pathfix pgsql pkgconfig python:2.7,build shebangfix
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 PLIST_SUB=	PORTVERSION=${PORTVERSION}

@@ -1,5 +1,5 @@
 # Created by: asami
-# $FreeBSD: head/games/nethack34/Makefile 407597 2016-01-31 09:25:33Z marino $
+# $FreeBSD: head/games/nethack34/Makefile 455775 2017-12-08 08:33:45Z mat $
 
 PORTNAME=	nethack34
 PORTVERSION=	3.4.3
@@ -74,8 +74,6 @@ CFLAGS+=	-DHPMON
 OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
-
-.include <bsd.port.options.mk>
 
 .if !exists(${PREFIX}/bin/${HACKLINK}) && ${HACKNAME} != ${HACKLINK}
 PLIST_SUB+=	HACKLINK=""

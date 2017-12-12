@@ -1,8 +1,8 @@
 # Created by: Ting-Wei Lan <lantw44@gmail.com>
-# $FreeBSD: head/devel/meson/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/meson/Makefile 456020 2017-12-11 10:45:08Z sunpoet $
 
 PORTNAME=	meson
-PORTVERSION=	0.42.1
+PORTVERSION=	0.43.0
 CATEGORIES=	devel python
 MASTER_SITES=	https://github.com/mesonbuild/${PORTNAME}/releases/download/${PORTVERSION}/
 
@@ -16,5 +16,6 @@ RUN_DEPENDS=	ninja:devel/ninja
 
 USES=		python:3.4+
 USE_PYTHON=	autoplist distutils noflavors
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

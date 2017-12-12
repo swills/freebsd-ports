@@ -1,5 +1,5 @@
 # Created by: Radim Kolar
-# $FreeBSD: head/irc/py-supybot-plugins/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/irc/py-supybot-plugins/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	supybot-plugins
 PORTVERSION=	20060723
@@ -12,9 +12,9 @@ DISTNAME=	Supybot-plugins-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Official plugin pack for Supybot
 
-RUN_DEPENDS=	supybot:irc/py-supybot
+RUN_DEPENDS=	supybot:irc/py-supybot@${PY_FLAVOR}
 
-USES=		python tar:bzip2
+USES=		python:2.7 tar:bzip2
 
 post-extract:
 # Delete, because it now included in irc/py-supybot

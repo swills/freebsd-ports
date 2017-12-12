@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/science/gnudatalanguage/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/science/gnudatalanguage/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	gnudatalanguage
 DISTVERSION=	0.9.7
@@ -93,7 +93,7 @@ NETCDF_CMAKE_OFF=	-DNETCDF:BOOL=NO
 PYTHON_USES=		python:2.7
 PYTHON_BUILD_DEPENDS=	${PYNUMPY}
 PYTHON_RUN_DEPENDS=	${PYNUMPY} \
-			${PYTHON_PKGNAMEPREFIX}matplotlib>0:math/py-matplotlib
+			${PYTHON_PKGNAMEPREFIX}matplotlib>0:math/py-matplotlib@${PY_FLAVOR}
 PYTHON_CMAKE_ON=	-DPYTHON:BOOL=YES -DPYTHONVERSION:STRING="${PYTHON_VER}"
 PYTHON_CMAKE_OFF=	-DPYTHON:BOOL=NO
 

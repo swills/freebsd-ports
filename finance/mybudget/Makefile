@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/finance/mybudget/Makefile 402892 2015-12-03 17:26:06Z amdmi3 $
+# $FreeBSD: head/finance/mybudget/Makefile 455829 2017-12-09 09:31:04Z antoine $
 
 PORTNAME=	myBudget
 PORTVERSION=	0.60
@@ -18,7 +18,7 @@ NO_BUILD=	yes
 USE_GNOME=	pygnome2
 INSTALL_ICONS=	yes
 
-USES=		python shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	myBudget.py
 
 OPTIONS_DEFINE=	DOCS

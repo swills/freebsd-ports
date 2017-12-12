@@ -1,5 +1,5 @@
 # Created by: Pav Lucistnik <pav@oook.cz>
-# $FreeBSD: head/mail/mboxcheck-applet/Makefile 372768 2014-11-19 11:49:04Z kwm $
+# $FreeBSD: head/mail/mboxcheck-applet/Makefile 455839 2017-12-09 10:25:53Z antoine $
 
 PORTNAME=	mboxcheck-applet
 PORTVERSION=	0.3
@@ -10,7 +10,7 @@ MASTER_SITES=	http://perso.orange.fr/seb128/fichiers/
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Mailbox checking applet for GNOME 2
 
-USES=		python
+USES=		python:2.7
 USE_GNOME=	pygnome2:run
 NO_BUILD=	yes
 

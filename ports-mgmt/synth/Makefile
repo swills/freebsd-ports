@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/ports-mgmt/synth/Makefile 453287 2017-11-01 13:45:35Z tobik $
+# $FreeBSD: head/ports-mgmt/synth/Makefile 455644 2017-12-06 11:57:19Z tobik $
 
 PORTNAME=	synth
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.71
+DISTVERSION=	2.02
 CATEGORIES=	ports-mgmt
 
 MAINTAINER=	ericturgeon.bsd@gmail.com

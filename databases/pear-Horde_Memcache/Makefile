@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/pear-Horde_Memcache/Makefile 369674 2014-09-30 22:14:59Z bapt $
+# $FreeBSD: head/databases/pear-Horde_Memcache/Makefile 455798 2017-12-08 20:21:01Z joneum $
 
 PORTNAME=	Horde_Memcache
-PORTVERSION=	2.0.3
+DISTVERSION=	2.1.1
 CATEGORIES=	databases www pear
 
 MAINTAINER=	horde@FreeBSD.org

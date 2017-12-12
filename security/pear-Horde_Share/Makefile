@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/pear-Horde_Share/Makefile 435605 2017-03-07 14:22:52Z mm $
+# $FreeBSD: head/security/pear-Horde_Share/Makefile 455798 2017-12-08 20:21:01Z joneum $
 
 PORTNAME=	Horde_Share
-PORTVERSION=	2.1.2
+DISTVERSION=	2.2.0
 CATEGORIES=	security www pear
 
 MAINTAINER=	horde@FreeBSD.org

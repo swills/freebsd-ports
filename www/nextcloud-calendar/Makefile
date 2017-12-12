@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/www/nextcloud-calendar/Makefile 454858 2017-11-24 23:45:17Z brnrd $
+# $FreeBSD: head/www/nextcloud-calendar/Makefile 455625 2017-12-05 21:05:12Z brnrd $
 
 PORTNAME=	calendar
 PORTVERSION=	1.5.6
@@ -11,7 +11,7 @@ DISTNAME=	${PORTNAME}
 DIST_SUBDIR=	${PKGNAMEPREFIX:S/-//}/${DISTNAME}-${DISTVERSIONPREFIX}${PORTVERSION}
 
 MAINTAINER=	brnrd@freebsd.org
-COMMENT=	Contacts app for Nextcloud
+COMMENT=	Calendar app for Nextcloud
 
 LICENSE=	AGPLv3
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/lang/Makefile 455282 2017-12-01 12:23:20Z rene $
 #
 
     COMMENT = Programming languages
@@ -92,7 +92,6 @@
     SUBDIR += gawk
     SUBDIR += gcc
     SUBDIR += gcc-ecj45
-    SUBDIR += gcc46
     SUBDIR += gcc47
     SUBDIR += gcc48
     SUBDIR += gcc49

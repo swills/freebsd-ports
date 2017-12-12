@@ -1,5 +1,5 @@
 # Created by: Jim Mock <jim@FreeBSD.org>
-# $FreeBSD: head/net-im/libpurple/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-im/libpurple/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME?=	libpurple
 PORTVERSION=	2.12.0
@@ -208,7 +208,7 @@ CONFIGURE_ARGS+=	--disable-gtkspell
 .if ${PORT_OPTIONS:MDBUS}
 LIB_DEPENDS+=		libdbus-glib-1.so:devel/dbus-glib
 .if !defined(PIDGIN_SLAVE)
-RUN_DEPENDS+=		${PYTHON_SITELIBDIR}/dbus/__init__.py:devel/py-dbus
+RUN_DEPENDS+=		${PYTHON_PKGNAMEPREFIX}dbus>=0:devel/py-dbus@${PY_FLAVOR}
 .endif
 CONFIGURE_ARGS+=	--enable-dbus
 PLIST_SUB+=		DBUS=""

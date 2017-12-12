@@ -1,12 +1,12 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/devel/rubygem-licensee/Makefile 444549 2017-06-28 08:45:56Z tz $
+# $FreeBSD: head/devel/rubygem-licensee/Makefile 455591 2017-12-05 16:44:09Z tz $
 
 PORTNAME=	licensee
 PORTVERSION=	8.7.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	idefix@fechner.net
 COMMENT=	Detects under what license a project is distributed
 
 LICENSE=	MIT

@@ -1,8 +1,8 @@
-# $FreeBSD: head/ftp/waiho/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/ftp/waiho/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	waiho
 PORTVERSION=	0.2
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	ftp gnustep
 MASTER_SITES=	http://www.roard.com/waiho/download/
 DISTNAME=	Waiho-${PORTVERSION}

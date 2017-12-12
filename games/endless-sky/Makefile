@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/endless-sky/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/games/endless-sky/Makefile 456105 2017-12-12 04:35:49Z jbeich $
 
 PORTNAME=	endless-sky
 PORTVERSION=	0.9.8
@@ -16,8 +16,6 @@ LICENSE_FILE_GPLv3+ =	${WRKSRC}/license.txt
 
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libmad.so:audio/libmad
-
-BROKEN_powerpc64=	fails to compile: Dialog.h: 'to_string' is not a member of 'std'
 
 USE_GITHUB=	yes
 

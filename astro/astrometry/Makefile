@@ -1,5 +1,5 @@
 # Created by: Sébastien Santoro <dereckson@gmail.com>
-# $FreeBSD: head/astro/astrometry/Makefile 444759 2017-06-30 15:05:05Z tobik $
+# $FreeBSD: head/astro/astrometry/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	astrometry
 PORTVERSION=	0.65
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libcairo.so:graphics/cairo \
 		libnetpbm.so:graphics/netpbm
 RUN_DEPENDS=	${PYNUMPY}
 
-USES=		gmake jpeg pkgconfig python shebangfix tar:bzip2
+USES=		gmake jpeg pkgconfig python:2.7 shebangfix tar:bzip2
 SHEBANG_FILES=	blind/*.py sdss/*.py util/[!c]*.py util/casjobs.py
 USE_LDCONFIG=	${PREFIX}/${PORTNAME}/lib
 ALL_TARGET=	all extra

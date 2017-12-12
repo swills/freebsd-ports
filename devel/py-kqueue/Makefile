@@ -1,5 +1,5 @@
 # Created by: dwhite@FreeBSD.org
-# $FreeBSD: head/devel/py-kqueue/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-kqueue/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=		kqueue
 PORTVERSION=		1.4
@@ -13,7 +13,7 @@ EXTRACT_SUFX=		.tbz
 MAINTAINER=		ports2@dclg.ca
 COMMENT=		Python interface to kqueue(2) and kevent(2) system calls
 
-USES=		python tar:bzip2
+USES=		python:2.7 tar:bzip2
 FILES=		kqsyscallmodule.so KQueue.py KQueue.pyc
 PLIST_FILES=	${FILES:S+^+%%PYTHON_SITELIBDIR%%/+g}
 MAKE_ENV=	MAINCC=${CC}

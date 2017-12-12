@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/golly/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/golly/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	golly
 PORTVERSION=	2.7
@@ -12,7 +12,7 @@ COMMENT=	Conway's Game of Life and other cellular automata
 
 LICENSE=	GPLv2+
 
-USES=		compiler:c++11-lib cmake:outsource perl5 python
+USES=		compiler:c++11-lib cmake:outsource perl5 python:2.7
 USE_CXXSTD=	c++11
 USE_WX=		3.0
 

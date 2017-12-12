@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/boaconstructor/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/boaconstructor/Makefile 455533 2017-12-04 20:07:54Z antoine $
 
 PORTNAME=	boaconstructor
 PORTVERSION=	0.6.1
@@ -14,7 +14,7 @@ COMMENT=	Cross platform RAD GUI Building IDE for wxPython
 
 WRKSRC=		${WRKDIR}/boa-constructor-${PORTVERSION}
 
-USES=		dos2unix gettext python zip
+USES=		dos2unix gettext python:2.7 zip
 USE_WX=		3.0+
 WX_COMPS=	python
 DATADIR=	${PREFIX}/share/Boa

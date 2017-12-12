@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/audio/solfege/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/solfege/Makefile 455913 2017-12-10 20:48:45Z antoine $
 #   $MCom: ports/audio/solfege/Makefile,v 1.7 2007/09/09 23:47:50 mezz Exp $
 
 PORTNAME=	solfege
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	docbook-xsl>0:textproc/docbook-xsl \
 		txt2man:textproc/txt2man
 
-USES=		gettext gmake makeinfo pathfix pkgconfig python shebangfix
+USES=		gettext gmake makeinfo pathfix pkgconfig python:2.7 shebangfix
 SHEBANG_FILES=	exercises/standard/lesson-files/bin/csound-play-harmonic-interval.sh
 USE_GNOME=	pygtk2
 GNU_CONFIGURE=	yes

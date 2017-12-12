@@ -1,16 +1,10 @@
-# $FreeBSD: head/sysutils/u-boot-sopine/Makefile 453980 2017-11-11 17:08:49Z manu $
+# $FreeBSD: head/sysutils/u-boot-sopine/Makefile 456054 2017-12-11 17:54:20Z manu $
 
-MAINTAINER=	manu@FreeBSD.org
+MAINTAINER=	uboot@FreeBSD.org
 MASTERDIR=	${.CURDIR}/../u-boot-master
 
 MODEL=		sopine
 BOARD_CONFIG=	sopine_baseboard_defconfig
 FAMILY=		allwinner64
-
-BUILD_DEPENDS=	${LOCALBASE}/share/atf-allwinner/bl31.bin:sysutils/atf-allwinner
-MAKE_ENV+=	BL31=${LOCALBASE}/share/atf-allwinner/bl31.bin
-
-post-build:
-	${CAT} ${WRKSRC}/spl/sunxi-spl.bin ${WRKSRC}/u-boot.itb > ${WRKSRC}/u-boot-sunxi-with-spl.bin
 
 .include "${MASTERDIR}/Makefile"

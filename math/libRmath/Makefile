@@ -1,9 +1,8 @@
 # Created by: Eric van Gyzen <vangyzen@stat.duke.edu>
-# $FreeBSD: head/math/libRmath/Makefile 454428 2017-11-18 13:09:56Z tijl $
+# $FreeBSD: head/math/libRmath/Makefile 455388 2017-12-03 03:46:11Z jrm $
 
 PORTNAME=	libRmath
-DISTVERSION=	3.4.2
-PORTREVISION=	2
+DISTVERSION=	3.4.3
 CATEGORIES=	math lang
 MASTER_SITES=	CRAN/src/base/R-${PORTVERSION:C|\..*||}
 DISTNAME=	R-${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}
@@ -13,7 +12,8 @@ COMMENT=	Standalone math library from R
 
 LICENSE=	GPLv2
 
-ONLY_FOR_ARCHS=		aarch64 amd64 i386
+BROKEN_FreeBSD_10_armv6=	Fails to build
+ONLY_FOR_ARCHS=	aarch64 amd64 armv6 armv7 i386
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libpcre.so:devel/pcre
@@ -32,7 +32,9 @@ USE_LDCONFIG=	yes
 PLIST_SUB=	RMATH_SOVERSION="${RMATH_SOVERSION}"
 
 OPTIONS_DEFINE=		FLANG
-OPTIONS_EXCLUDE_aarch64=FLANG
+OPTIONS_EXCLUDE_aarch64=	FLANG
+OPTIONS_EXCLUDE_armv6=	FLANG
+OPTIONS_EXCLUDE_armv7=	FLANG
 OPTIONS_EXCLUDE_i386=	FLANG
 
 FLANG_DESC=		Use flang instead of the default Fortran compiler

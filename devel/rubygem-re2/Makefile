@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/rubygem-re2/Makefile 455059 2017-11-28 16:27:55Z tz $
+# $FreeBSD: head/devel/rubygem-re2/Makefile 455591 2017-12-05 16:44:09Z tz $
 
 PORTNAME=	re2
 PORTVERSION=	1.1.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	idefix@fechner.net
 COMMENT=	Ruby bindings to re2
 
 LICENSE=	BSD3CLAUSE

@@ -1,5 +1,5 @@
 # Created by: ballen
-# $FreeBSD: head/biology/phyml/Makefile 449234 2017-09-04 00:01:36Z sunpoet $
+# $FreeBSD: head/biology/phyml/Makefile 455815 2017-12-09 01:39:19Z linimon $
 
 PORTNAME=	phyml
 DISTVERSIONPREFIX=	v
@@ -12,6 +12,10 @@ COMMENT=	Simple, fast, and accurate algorithm to estimate large phylogenies
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_aarch64=		fails to compile: c++: the clang compiler does not support '-march=native'
+BROKEN_armv6=		fails to compile: c++: the clang compiler does not support '-march=native'
+BROKEN_armv7=		fails to compile: c++: the clang compiler does not support '-march=native'
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	stephaneguindon

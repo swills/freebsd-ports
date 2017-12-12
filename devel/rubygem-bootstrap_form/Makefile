@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/rubygem-bootstrap_form/Makefile 450261 2017-09-21 14:33:48Z tz $
+# $FreeBSD: head/devel/rubygem-bootstrap_form/Makefile 455591 2017-12-05 16:44:09Z tz $
 
 PORTNAME=	bootstrap_form
 PORTVERSION=	2.7.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	idefix@fechner.net
 COMMENT=	Form builder using Twitter Bootstrap 3+
 
 LICENSE=	MIT

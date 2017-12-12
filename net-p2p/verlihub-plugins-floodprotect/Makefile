@@ -1,5 +1,5 @@
 # Created by: Mikle Davidkin <skylord@vt.net.ru>
-# $FreeBSD: head/net-p2p/verlihub-plugins-floodprotect/Makefile 447015 2017-08-01 09:04:35Z rakuco $
+# $FreeBSD: head/net-p2p/verlihub-plugins-floodprotect/Makefile 455765 2017-12-08 01:46:00Z linimon $
 
 PORTNAME=	floodprotect
 PORTVERSION=	1.6
@@ -9,8 +9,6 @@ MASTER_SITES=	SF/verlihub/OldFiles
 DISTNAME=	${PLUGIN_NAME}
 
 MAINTAINER=	me@skylord.ru
-
-BROKEN_armv6=		fails to configure: checking for VERLIHUB - version >= 0... no (see config.log)
 
 PLUGIN_NAME=	floodprot
 PLUGIN_DESC=	Floodprotect

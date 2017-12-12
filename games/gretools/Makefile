@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/games/gretools/Makefile 439074 2017-04-21 14:13:05Z amdmi3 $
+# $FreeBSD: head/games/gretools/Makefile 455824 2017-12-09 09:11:53Z antoine $
 
 PORTNAME=	gretools
 PORTVERSION=	1.2.4
@@ -13,7 +13,7 @@ COMMENT=	GNOME vocabulary builder
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gmake pathfix pkgconfig python shebangfix
+USES=		gmake pathfix pkgconfig python:2.7 shebangfix
 SHEBANG_FILES=	gretools.in gretools.py
 USE_GNOME=	gnomeprefix pygnome2
 GNU_CONFIGURE=	yes

@@ -1,8 +1,8 @@
 # Created by: miwi
-# $FreeBSD: head/german/wordpress/Makefile 454827 2017-11-24 17:26:47Z joneum $
+# $FreeBSD: head/german/wordpress/Makefile 455354 2017-12-02 12:20:31Z joneum $
 
 PORTNAME=	wordpress
-PORTVERSION=	4.9
+DISTVERSION=	4.9.1
 DISTVERSIONSUFFIX=	-de_DE
 CATEGORIES=	german www
 MASTER_SITES=	http://de.wordpress.org/
@@ -23,8 +23,8 @@ USE_PHP=	curl gd hash mysqli pcre tokenizer xml zip zlib ftp
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 CPE_LANG=	de
-.if ${PORTVERSION:N*.*.*}
-CPE_VERSION=	${PORTVERSION}.0
+.if ${DISTVERSION:N*.*.*}
+CPE_VERSION=	${DISTVERSION}.0
 .endif
 
 SUB_FILES=	pkg-message

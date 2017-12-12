@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/py-gtksourceview/Makefile 393429 2015-08-02 15:03:19Z tijl $
+# $FreeBSD: head/x11-toolkits/py-gtksourceview/Makefile 455913 2017-12-10 20:48:45Z antoine $
 #   $MCom: ports/x11-toolkits/py-gtksourceview/Makefile,v 1.24 2010/04/19 11:30:28 kwm Exp $
 
 PORTNAME=	gtksourceview
@@ -12,7 +12,7 @@ DISTNAME=	pygtksourceview-${PORTVERSION}
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Python bindings for GtkSourceView 2
 
-USES=		gmake libtool:keepla pathfix pkgconfig python tar:bzip2
+USES=		gmake libtool:keepla pathfix pkgconfig python:2.7 tar:bzip2
 USE_GNOME=	gnomeprefix gtksourceview2 pygtk2
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-docs

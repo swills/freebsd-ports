@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/rubygem-rblineprof/Makefile 448660 2017-08-24 09:34:59Z tz $
+# $FreeBSD: head/devel/rubygem-rblineprof/Makefile 455591 2017-12-05 16:44:09Z tz $
 
 PORTNAME=	rblineprof
 PORTVERSION=	0.3.7
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	idefix@fechner.net
 COMMENT=	Shows you lines of code that are slow
 
 LICENSE=	MIT

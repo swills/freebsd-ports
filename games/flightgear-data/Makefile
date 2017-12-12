@@ -1,5 +1,5 @@
 # Created by: Brian Buchanan <brian@CSUA.Berkeley.EDU>
-# $FreeBSD: head/games/flightgear-data/Makefile 450910 2017-09-29 16:06:29Z martymac $
+# $FreeBSD: head/games/flightgear-data/Makefile 455765 2017-12-08 01:46:00Z linimon $
 
 PORTNAME=	flightgear-data
 PORTVERSION=	2017.3.1
@@ -21,7 +21,6 @@ PLIST=		${WRKDIR}/pkg-plist
 PLIST_DIRS=	%%DATADIR%%
 
 BROKEN_aarch64=		Fails to install: runaway process
-BROKEN_armv6=		Fails to install: runaway process
 BROKEN_mips64=		Fails to install: runaway process
 
 post-patch:

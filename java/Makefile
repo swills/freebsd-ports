@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/Makefile 453250 2017-10-31 20:30:15Z olgeni $
+# $FreeBSD: head/java/Makefile 455282 2017-12-01 12:23:20Z rene $
 #
 
     COMMENT = Java language support
@@ -7,7 +7,6 @@
     SUBDIR += avis
     SUBDIR += berkeley-db
     SUBDIR += bluej
-    SUBDIR += bootstrap-openjdk
     SUBDIR += bootstrap-openjdk6
     SUBDIR += bootstrap-openjdk8
     SUBDIR += bouncycastle

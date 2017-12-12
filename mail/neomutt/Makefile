@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/neomutt/Makefile 453160 2017-10-30 09:15:22Z bapt $
+# $FreeBSD: head/mail/neomutt/Makefile 455931 2017-12-11 08:56:26Z bapt $
 
 PORTNAME=	neomutt
-PORTVERSION=	20171027
+PORTVERSION=	20171208
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	mail
 
@@ -104,7 +104,7 @@ post-install:
 	${RM} ${STAGEDIR}${PREFIX}/etc/mime*
 	${MV} ${STAGEDIR}${PREFIX}/etc/neomuttrc ${STAGEDIR}${PREFIX}/etc/neomuttrc.dist
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/neomutt \
-		${STAGEDIR}${PREFIX}/lib/neomutt/pgpring \
-		${STAGEDIR}${PREFIX}/lib/neomutt/pgpewrap
+		${STAGEDIR}${PREFIX}/libexec/neomutt/pgpring \
+		${STAGEDIR}${PREFIX}/libexec/neomutt/pgpewrap
 
 .include <bsd.port.mk>

@@ -1,8 +1,9 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/devel/pear/Makefile 447331 2017-08-04 14:05:11Z joneum $
+# $FreeBSD: head/devel/pear/Makefile 455314 2017-12-01 22:09:52Z joneum $
 
 PORTNAME=	pear
 PORTVERSION=	1.10.5
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://mirror.bsdproject.de/
 

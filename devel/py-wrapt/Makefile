@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-wrapt/Makefile 450538 2017-09-24 19:08:12Z sunpoet $
+# $FreeBSD: head/devel/py-wrapt/Makefile 455711 2017-12-07 16:00:18Z sunpoet $
 
 PORTNAME=	wrapt
 PORTVERSION=	1.10.11
@@ -13,7 +13,7 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_PYTHON=	autoplist concurrent distutils
-USES?=		python
+USES=		python
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/wrapt/_wrappers.so

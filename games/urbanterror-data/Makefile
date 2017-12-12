@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/games/urbanterror-data/Makefile 450473 2017-09-23 21:11:51Z adamw $
+# $FreeBSD: head/games/urbanterror-data/Makefile 455765 2017-12-08 01:46:00Z linimon $
 
 PORTNAME=	data
 PORTVERSION=	4.2.023
@@ -27,7 +27,6 @@ URT_REV=	${PORTVERSION:C/([0-9]+\.[0-9]+).*\.([0-9]+)/\2/}
 PLIST_SUB+=	VER=${URT_VER}
 
 BROKEN_aarch64=		Fails to install: runaway process
-BROKEN_armv6=		Fails to install: runaway process
 BROKEN_mips=		Fails to install: runaway process
 BROKEN_mips64=		Fails to install: runaway process
 

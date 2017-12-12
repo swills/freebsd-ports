@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/sysutils/lr/Makefile 454445 2017-11-18 15:28:30Z tobik $
+# $FreeBSD: head/sysutils/lr/Makefile 455788 2017-12-08 17:46:53Z tobik $
 
 PORTNAME=	lr
 DISTVERSIONPREFIX=	v
@@ -16,6 +16,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	chneukirchen
 
 MAKE_ARGS=	CFLAGS="${CFLAGS}" \
+		PREFIX="${PREFIX}" \
 		MANDIR="${PREFIX}/man"
 
 OPTIONS_DEFINE=	CONTRIB EMACS NEOVIM VIM

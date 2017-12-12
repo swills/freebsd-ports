@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/bombz/Makefile 413438 2016-04-16 12:29:27Z danfe $
+# $FreeBSD: head/games/bombz/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	bombz
 PORTVERSION=	0.2
@@ -22,7 +22,7 @@ RUN_DEPENDS=	${PYGAME}
 
 WRKSRC=		${WRKDIR}/Bombz
 
-USES=		dos2unix python zip
+USES=		dos2unix python:2.7 zip
 DOS2UNIX_FILES=	*.txt
 USE_SDL=	sdl image mixer
 INSTALLS_ICONS=	yes

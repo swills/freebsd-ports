@@ -1,23 +1,33 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-SebastianBergmann_Version/Makefile 443142 2017-06-11 02:28:39Z sunpoet $
+# $FreeBSD: head/devel/pear-SebastianBergmann_Version/Makefile 456044 2017-12-11 14:53:44Z joneum $
 
 PORTNAME=	Version
-PORTVERSION=	1.0.1
+DISTVERSION=	2.0.1
 CATEGORIES=	devel pear
-MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-SebastianBergmann_
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Managing the version number of Git-hosted PHP projects
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PEARDIR}/.channels/pear.phpunit.de.reg:devel/pear-channel-phpunit
-RUN_DEPENDS=	${PEARDIR}/.channels/pear.phpunit.de.reg:devel/pear-channel-phpunit
+BUILD_DEPENDS=	pear-channel-phpunit>=20110327:devel/pear-channel-phpunit
+RUN_DEPENDS=	pear-channel-phpunit>=20110327:devel/pear-channel-phpunit
 
-BROKEN=		unfetchable, redirects to https://phpunit.de/
+USES=	php
+USE_GITHUB=	yes
+GH_ACCOUNT=	sebastianbergmann
+GH_PROJECT=	${PORTNAME:tl}
 
-PEAR_CHANNEL=	phpunit
-USES=	pear
+NO_ARCH=	yes
+
+NO_BUILD=	yes
+
+PLIST_FILES=	${DATADIR}/Version.php
+
+do-install:
+	${MKDIR} ${STAGEDIR}${DATADIR}
+	${INSTALL_DATA} ${WRKSRC}/src/Version.php ${STAGEDIR}${DATADIR}
 
 .include <bsd.port.mk>

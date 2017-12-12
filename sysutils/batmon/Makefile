@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/batmon/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/sysutils/batmon/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	batmon
 PORTVERSION=	0.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils gnustep
 MASTER_SITES=	SAVANNAH/gap
 

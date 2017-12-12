@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/security/pear-Horde_Oauth/Makefile 425775 2016-11-08 23:53:53Z mm $
+# $FreeBSD: head/security/pear-Horde_Oauth/Makefile 455798 2017-12-08 20:21:01Z joneum $
 
 PORTNAME=	Horde_Oauth
-PORTVERSION=	2.0.3
+DISTVERSION=	2.0.4
 CATEGORIES=	security www pear
 
 MAINTAINER=	horde@FreeBSD.org

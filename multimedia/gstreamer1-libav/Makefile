@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@rainbow-runner.nl>
-# $FreeBSD: head/multimedia/gstreamer1-libav/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/multimedia/gstreamer1-libav/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	gstreamer1-libav
 PORTVERSION=	1.12.3
@@ -21,7 +21,7 @@ LIB_DEPENDS=	liborc-0.4.so:devel/orc \
 PORTSCOUT=	limitw:1,even
 
 USES=		compiler:features gettext-runtime gmake libtool localbase \
-		pkgconfig tar:xz
+		pkgconfig python:build tar:xz
 USE_LDCONFIG=	yes
 USE_GSTREAMER1=	yes
 USE_GNOME=	glib20

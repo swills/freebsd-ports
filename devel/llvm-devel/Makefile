@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/llvm-devel/Makefile 455226 2017-11-30 20:55:53Z brooks $
+# $FreeBSD: head/devel/llvm-devel/Makefile 456103 2017-12-12 04:26:57Z jbeich $
 
 PORTNAME=	llvm
 PORTVERSION=	${LLVM_MAJOR}.d${SNAPDATE}
@@ -8,8 +8,6 @@ PKGNAMESUFFIX=	-devel
 
 MAINTAINER=	brooks@FreeBSD.org
 COMMENT=	LLVM and Clang
-
-BROKEN_powerpc64=	Does not build: error: vsnprintf was not declared in this scope
 
 LLVM_SUFFIX=	-devel
 LLVM_PREFIX=	${PREFIX}/llvm${LLVM_SUFFIX}
@@ -250,7 +248,8 @@ COMMANDS+=	ld.lld \
 COMMANDS+=	lldb \
 		lldb-argdumper \
 		lldb-mi \
-		lldb-server
+		lldb-server \
+		lldb-test
 .endif
 
 .if ! ${OPTIONS_DEFINE:MCOMPILER_RT}

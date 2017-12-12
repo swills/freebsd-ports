@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/gnustep-cdplayer/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/audio/gnustep-cdplayer/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	cdplayer
 PORTVERSION=	0.5.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio gnustep
 MASTER_SITES=	SF/gsburn/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 PKGNAMEPREFIX=	gnustep-

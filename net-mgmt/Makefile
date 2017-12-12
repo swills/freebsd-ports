@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-mgmt/Makefile 455795 2017-12-08 19:02:43Z krion $
 #
 
     COMMENT = Network management tools
@@ -123,6 +123,7 @@
     SUBDIR += lldpd
     SUBDIR += mbrowse
     SUBDIR += mdata-client
+    SUBDIR += metronome
     SUBDIR += mk-livestatus
     SUBDIR += monitoring-plugins
     SUBDIR += mrtg

@@ -1,10 +1,10 @@
 # Created by: mbr@FreeBSD.org
-# $FreeBSD: head/emulators/open-vm-tools/Makefile 451100 2017-10-02 20:04:41Z jpaetzel $
+# $FreeBSD: head/emulators/open-vm-tools/Makefile 455751 2017-12-07 19:52:17Z jpaetzel $
 
 PORTNAME=		open-vm-tools
 PORTVERSION=		${RELEASE_VER}
 DISTVERSIONPREFIX=	stable-
-PORTREVISION=		4
+PORTREVISION=		5
 PORTEPOCH=		2
 CATEGORIES=		emulators
 
@@ -16,9 +16,7 @@ LICENSE_FILE=		${WRKSRC}/COPYING
 
 ONLY_FOR_ARCHS=		amd64 i386
 
-LIB_DEPENDS=		libmspack.so:archivers/libmspack \
-			libxerces-c.so:textproc/xerces-c3 \
-			libxml-security-c.so:security/apache-xml-security-c
+LIB_DEPENDS=		libmspack.so:archivers/libmspack
 
 RELEASE_VER=		10.1.10
 BUILD_VER=		6082533
@@ -55,8 +53,8 @@ CPPFLAGS+=		-Wno-deprecated-declarations
 
 SSP_UNSAFE=		kernel module does not support ssp
 
-CONFIGURE_ARGS+=	--disable-grabbitmqproxy --without-icu \
-			--disable-vgauth --without-procps \
+CONFIGURE_ARGS+=	--without-icu \
+			--disable-vgauth \
 			--sysconfdir=${PREFIX}/etc
 
 CONFLICTS+=		vmware-guestd[0-9]* vmware-tools[0-9]*

@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/cherivis-devel/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/devel/cherivis-devel/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	cherivis-devel
 PORTVERSION=	0.4
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel gnustep
 
 MAINTAINER=	theraven@FreeBSD.org

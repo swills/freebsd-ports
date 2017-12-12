@@ -1,9 +1,9 @@
 # Created by: Adam David <adam@FreeBSD.org>
-# $FreeBSD: head/mail/procmail/Makefile 427390 2016-11-29 18:51:20Z sunpoet $
+# $FreeBSD: head/mail/procmail/Makefile 455800 2017-12-08 20:35:32Z sunpoet $
 
 PORTNAME=	procmail
 PORTVERSION=	3.22
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.ucsb.edu/pub/mirrors/procmail/ \
 		ftp://ftp.informatik.rwth-aachen.de/pub/packages/procmail/ \

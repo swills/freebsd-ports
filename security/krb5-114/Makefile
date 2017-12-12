@@ -1,5 +1,5 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/security/krb5-114/Makefile 451259 2017-10-05 01:55:26Z cy $
+# $FreeBSD: head/security/krb5-114/Makefile 455653 2017-12-06 15:22:49Z cy $
 
 PORTNAME=		krb5
 PORTVERSION=		1.14.6
@@ -16,6 +16,9 @@ MAINTAINER=		cy@FreeBSD.org
 COMMENT=		MIT implementation of RFC 4120 network authentication service
 
 LICENSE=		MIT
+
+DEPRECATED=		EOL twelve months after release of krb5-1.16
+EXPIRATION_DATE=	2018-12-31
 
 CONFLICTS=		heimdal-[0-9]* srp-[0-9]* krb5-11[35]-[0-9]* \
 			krb5-1.[0-9]* krb5-devel-*

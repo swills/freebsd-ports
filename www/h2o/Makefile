@@ -1,5 +1,5 @@
 # Created by: Dave Cottlehuber <dch@skunkwerks.at>
-# $FreeBSD: head/www/h2o/Makefile 452687 2017-10-22 22:34:58Z dch $
+# $FreeBSD: head/www/h2o/Makefile 455927 2017-12-11 07:18:48Z linimon $
 
 PORTNAME=	h2o
 DISTVERSIONPREFIX=	v
@@ -10,6 +10,9 @@ MAINTAINER=	dch@skunkwerks.at
 COMMENT=	Optimized HTTP/2 server including support for TLS 1.3 and HTTP/1.x
 
 LICENSE=	MIT
+
+BROKEN_armv6=		fails to compile: asm_arm.inc:139:36: '.syntax divided' arm assembly not supported
+BROKEN_armv7=		fails to compile: asm_arm.inc:139:36: '.syntax divided' arm assembly not supported
 
 USES=		cmake:noninja compiler:c11 cpe perl5 shebangfix ssl
 CPE_VENDOR=	h2o_project

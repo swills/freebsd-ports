@@ -1,8 +1,8 @@
 # Created by: Andreas Kohn
-# $FreeBSD: head/devel/mercurial/Makefile 453779 2017-11-08 23:30:27Z sunpoet $
+# $FreeBSD: head/devel/mercurial/Makefile 455983 2017-12-11 10:41:58Z sunpoet $
 
 PORTNAME=	mercurial
-PORTVERSION=	4.4.1
+PORTVERSION=	4.4.2
 CATEGORIES=	devel python
 MASTER_SITES=	https://www.mercurial-scm.org/release/
 

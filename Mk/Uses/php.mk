@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/php.mk 454302 2017-11-16 10:48:48Z tz $
+# $FreeBSD: head/Mk/Uses/php.mk 455738 2017-12-07 16:40:20Z tz $
 #
 # Support for PHP-based ports.
 #
@@ -382,6 +382,7 @@ simplexml_DEPENDS=	textproc/php${PHP_VER}-simplexml
 snmp_DEPENDS=	net-mgmt/php${PHP_VER}-snmp
 soap_DEPENDS=	net/php${PHP_VER}-soap
 sockets_DEPENDS=net/php${PHP_VER}-sockets
+sodium_DEPENDS=	security/php${PHP_VER}-sodium
 spl_DEPENDS=	devel/php${PHP_VER}-spl
 sqlite_DEPENDS=	databases/php${PHP_VER}-sqlite
 sqlite3_DEPENDS=databases/php${PHP_VER}-sqlite3

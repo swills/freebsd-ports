@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-aws0/Makefile 436467 2017-03-19 01:57:05Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-aws0/Makefile 455463 2017-12-03 20:36:57Z sunpoet $
 
 PORTNAME=	fog-aws
 PORTVERSION=	0.13.0
@@ -17,6 +17,9 @@ RUN_DEPENDS=	rubygem-fog-core>=1.38:devel/rubygem-fog-core \
 		rubygem-fog-json>=1.0:devel/rubygem-fog-json \
 		rubygem-fog-xml>=0.1:textproc/rubygem-fog-xml \
 		rubygem-ipaddress>=0.8:net/rubygem-ipaddress
+
+DEPRECATED=	Use net/rubygem-fog-aws or net/rubygem-fog-aws1 instead
+EXPIRATION_DATE=2017-12-31
 
 PORTSCOUT=	limit:^0\.
 

@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale	<nivit@email.it>
-# $FreeBSD: head/devel/py-json-py/Makefile 400848 2015-11-05 12:36:25Z mat $
+# $FreeBSD: head/devel/py-json-py/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	json-py
 DISTVERSION=	3_4
@@ -15,7 +15,7 @@ LICENSE=	LGPL20
 
 NO_WRKSUBDIR=	yes
 
-USES=		python zip
+USES=		python:2.7 zip
 
 do-build:
 	# compile python files

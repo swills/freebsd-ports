@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/biology/pycogent/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/biology/pycogent/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	pycogent
 PORTVERSION=	1.9
@@ -11,7 +11,7 @@ COMMENT=	Toolkit for statistical analysis of biological sequences
 LICENSE=	GPLv2
 
 BUILD_DEPENDS=	${PYNUMPY} \
-		${LOCALBASE}/bin/sphinx-build:textproc/py-sphinx@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}sphinx>=0:textproc/py-sphinx@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sqlalchemy10>=1.0.13:databases/py-sqlalchemy10@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 

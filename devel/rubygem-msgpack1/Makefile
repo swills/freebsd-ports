@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-msgpack1/Makefile 438463 2017-04-13 19:31:58Z sunpoet $
+# $FreeBSD: head/devel/rubygem-msgpack1/Makefile 455965 2017-12-11 10:40:21Z sunpoet $
 
 PORTNAME=	msgpack
-PORTVERSION=	1.1.0
+PORTVERSION=	1.2.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	1

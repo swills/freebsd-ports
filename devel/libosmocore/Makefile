@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/libosmocore/Makefile 450353 2017-09-22 10:48:57Z mat $
+# $FreeBSD: head/devel/libosmocore/Makefile 455305 2017-12-01 20:25:40Z ultima $
 
 PORTNAME=	libosmocore
-PORTVERSION=	0.9.0
+PORTVERSION=	0.10.2
 CATEGORIES=	devel
 MASTER_SITES=	http://git.osmocom.org/libosmocore/snapshot/ \
 		http://chaosophia.net/downloads/osmocom/${PORTNAME}/
@@ -12,9 +12,10 @@ COMMENT=	Common library for all Osmocom projects
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libpcsclite.so:devel/pcsc-lite
+LIB_DEPENDS=	libpcsclite.so:devel/pcsc-lite \
+		libtalloc.so:devel/talloc
 
-USES=		alias autoreconf gmake libtool pathfix pkgconfig
+USES=		alias autoreconf gmake libtool pathfix pkgconfig python:2
 GNU_CONFIGURE=	yes
 LDFLAGS+=	-lexecinfo
 USE_LDCONFIG=	yes

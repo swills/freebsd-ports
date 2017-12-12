@@ -1,8 +1,8 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/databases/mysql-connector-java/Makefile 449157 2017-09-02 17:58:41Z matthew $
+# $FreeBSD: head/databases/mysql-connector-java/Makefile 455381 2017-12-02 18:12:09Z matthew $
 
 PORTNAME=	mysql-connector-java
-PORTVERSION=	5.1.44
+PORTVERSION=	5.1.45
 CATEGORIES=	databases java
 MASTER_SITES=	MYSQL/Connector-J
 

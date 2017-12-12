@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.port.mk 455206 2017-11-30 15:33:46Z mat $
+# $FreeBSD: head/Mk/bsd.port.mk 455690 2017-12-07 01:51:00Z bdrewery $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1196,7 +1196,7 @@ OSVERSION!=	${AWK} '/^\#define[[:blank:]]__FreeBSD_version/ {print $$3}' < ${SRC
 .endif
 _EXPORTED_VARS+=	OSVERSION
 
-.if (${OPSYS} == FreeBSD && (${OSVERSION} < 1003000 || (${OSVERSION} >= 1100000 && ${OSVERSION} < 1100122))) || \
+.if (${OPSYS} == FreeBSD && (${OSVERSION} < 1003000 || (${OSVERSION} >= 1100000 && ${OSVERSION} < 1101001))) || \
     (${OPSYS} == DragonFly && ${DFLYVERSION} < 400400)
 _UNSUPPORTED_SYSTEM_MESSAGE=	Ports Collection support for your ${OPSYS} version has ended, and no ports\
 								are guaranteed to build on this system. Please upgrade to a supported release.
@@ -1666,6 +1666,9 @@ CONFIGURE_ENV+=		PATH=${PATH}
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_GITHUB) && defined(USE_GITHUB) && empty(USE_GITHUB:Mnodefault)
+.if defined(WRKSRC)
+DEV_WARNING+=	"You are using USE_GITHUB and WRKSRC is set which is wrong.  Set GH_PROJECT correctly, or set WRKSRC_SUBDIR instead."
+.endif
 WRKSRC?=		${WRKDIR}/${GH_PROJECT}-${GH_TAGNAME_EXTRACT}
 .endif
 # If the distname is not extracting into a specific subdirectory, have the
@@ -4008,6 +4011,7 @@ ${deptype:tl}-depends:
 		dp_SCRIPTSDIR="${SCRIPTSDIR}" \
 		PORTSDIR="${PORTSDIR}" \
 		dp_MAKE="${MAKE}" \
+		dp_MAKEFLAGS='${.MAKEFLAGS}' \
 		${SH} ${SCRIPTSDIR}/do-depends.sh
 .endif
 .endfor
@@ -4040,6 +4044,8 @@ DEPENDS-LIST= \
 
 ALL-DEPENDS-LIST=			${DEPENDS-LIST} -r ${_UNIFIED_DEPENDS:Q}
 MISSING-DEPENDS-LIST=		${DEPENDS-LIST} -m ${_UNIFIED_DEPENDS:Q}
+BUILD-DEPENDS-LIST=			${DEPENDS-LIST} "${PKG_DEPENDS} ${EXTRACT_DEPENDS} ${PATCH_DEPENDS} ${FETCH_DEPENDS} ${BUILD_DEPENDS} ${LIB_DEPENDS}"
+RUN-DEPENDS-LIST=			${DEPENDS-LIST} "${LIB_DEPENDS} ${RUN_DEPENDS}"
 TEST-DEPENDS-LIST=			${DEPENDS-LIST} ${TEST_DEPENDS:Q}
 CLEAN-DEPENDS-LIST=			${DEPENDS-LIST} -wr ${_UNIFIED_DEPENDS:Q} 
 CLEAN-DEPENDS-LIMITED-LIST=	${DEPENDS-LIST} -w ${_UNIFIED_DEPENDS:Q}
@@ -4172,36 +4178,10 @@ build-depends-list:
 	@${BUILD-DEPENDS-LIST}
 .endif
 
-BUILD-DEPENDS-LIST= \
-	for dir in $$(${ECHO_CMD} "${PKG_DEPENDS} ${EXTRACT_DEPENDS} ${PATCH_DEPENDS} ${FETCH_DEPENDS} ${BUILD_DEPENDS} ${LIB_DEPENDS}" | ${SED} -E -e 's,([^: ]*):([^: ]*)(:[^ ]*)?,\2,g' -e 'y/ /\n/'| ${SORT} -u); do \
-		case $$dir in \
-		/*) pdir=$$dir ;; \
-		*) pdir=${PORTSDIR}/$$dir ;; \
-		esac ; \
-		if [ -d $$pdir ]; then \
-			${ECHO_CMD} $$pdir; \
-		else \
-			${ECHO_MSG} "${PKGNAME}: \"$$pdir\" non-existent -- dependency list incomplete" >&2; \
-		fi; \
-	done | ${SORT} -u
-
 run-depends-list:
 .if defined(LIB_DEPENDS) || defined(RUN_DEPENDS)
 	@${RUN-DEPENDS-LIST}
 .endif
-
-RUN-DEPENDS-LIST= \
-	for dir in $$(${ECHO_CMD} "${_LIB_RUN_DEPENDS:C,.*:([^:]*).*,\1,}" | ${SED} -e 'y/ /\n/' | ${SORT} -u); do \
-		case $$dir in \
-		/*) pdir=$$dir ;; \
-		*) pdir=${PORTSDIR}/$$dir ;; \
-		esac ; \
-		if [ -d $$pdir ]; then \
-			${ECHO_CMD} $$pdir; \
-		else \
-			${ECHO_MSG} "${PKGNAME}: \"$$pdir\" non-existent -- dependency list incomplete" >&2; \
-		fi; \
-	done | ${SORT} -u
 
 test-depends-list:
 .if defined(TEST_DEPENDS)
@@ -5406,7 +5386,7 @@ _STAGE_DEP=		build
 # STAGE is special in its numbering as it has install and stage, so install is
 # the main, and stage goes after.
 _STAGE_SEQ=		050:stage-message 100:stage-dir 150:run-depends \
-				151:lib-depends 200:apply-slist 300:pre-install \
+				200:apply-slist 300:pre-install \
 				400:generate-plist 450:pre-su-install 475:create-users-groups \
 				500:do-install 550:kmod-post-install 600:fixup-lib-pkgconfig 700:post-install \
 				750:post-install-script 800:post-stage 850:compress-man \
@@ -5426,7 +5406,7 @@ _TEST_SEQ=		100:test-message 150:test-depends 300:pre-test 500:do-test \
 				800:post-test \
 				${_OPTIONS_test} ${_USES_test}
 _INSTALL_DEP=	stage
-_INSTALL_SEQ=	100:install-message 150:run-depends 151:lib-depends \
+_INSTALL_SEQ=	100:install-message \
 				200:check-already-installed
 _INSTALL_SUSEQ=	300:fake-pkg 500:security-check
 

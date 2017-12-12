@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-python-pcre/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-python-pcre/Makefile 455781 2017-12-08 11:54:31Z amdmi3 $
 
 PORTNAME=	python-pcre
-PORTVERSION=	0.6
+DISTVERSION=	0.7
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,13 +12,15 @@ COMMENT=	Python PCRE bindings
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	pcre>=6.0:devel/pcre
 LIB_DEPENDS=	libpcre.so:devel/pcre
 
-USES=		python:2
-USE_PYTHON=	autoplist distutils
+USES=		python
+USE_PYTHON=	autoplist concurrent distutils
 
 post-patch:
-	${REINPLACE_CMD} -e 's|%%LOCALBASE%%|${LOCALBASE}|' ${WRKSRC}/setup.py
+	@${REINPLACE_CMD} -e 's|%%LOCALBASE%%|${LOCALBASE}|' ${WRKSRC}/setup.py
+
+post-install:
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/python${PYTHON_VER}/site-packages/_pcre.so
 
 .include <bsd.port.mk>

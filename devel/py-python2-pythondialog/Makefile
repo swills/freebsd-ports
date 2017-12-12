@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-python2-pythondialog/Makefile 415166 2016-05-14 01:29:37Z sunpoet $
+# $FreeBSD: head/devel/py-python2-pythondialog/Makefile 455442 2017-12-03 20:35:12Z sunpoet $
 
 PORTNAME=	python2-pythondialog
 PORTVERSION=	3.4.0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,6 +16,6 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils
-USES=		python:2 tar:bz2
+USES=		python:2.7 tar:bz2
 
 .include <bsd.port.mk>

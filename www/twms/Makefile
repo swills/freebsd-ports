@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/www/twms/Makefile 438474 2017-04-13 19:46:32Z amdmi3 $
+# $FreeBSD: head/www/twms/Makefile 456068 2017-12-11 21:48:32Z antoine $
 
 PORTNAME=	twms
 PORTVERSION=	0.02w
@@ -12,14 +12,14 @@ COMMENT=	Tiny WMS server
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pyproj/__init__.py:graphics/py-pyproj \
-		${PYTHON_SITELIBDIR}/web/__init__.py:www/webpy \
-		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyproj>0:graphics/py-pyproj@${PY_FLAVOR} \
+		${PYTHON_SITELIBDIR}/web/__init__.py:www/webpy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Komzpa
 
-USES=		python shebangfix tar:bzip2
+USES=		python:2.7 shebangfix tar:bzip2
 SHEBANG_FILES=	twms.py
 NO_BUILD=	yes
 NO_ARCH=	yes

@@ -1,8 +1,8 @@
 # Created by: Matthias Andree <matthias.andree@gmx.de>
-# $FreeBSD: head/mail/cone/Makefile 448525 2017-08-22 13:04:07Z madpilot $
+# $FreeBSD: head/mail/cone/Makefile 456075 2017-12-12 02:16:08Z swills $
 
 PORTNAME=	cone
-PORTVERSION=	0.96.1
+PORTVERSION=	0.96.2
 CATEGORIES=	mail
 # This is for beta versions, leave it in please:
 #MASTER_SITES=	http://www.courier-mta.org/beta/${PORTNAME}/ \
@@ -10,7 +10,7 @@ CATEGORIES=	mail
 # This is for release versions, leave it in please:
 MASTER_SITES=	SF/courier/${PORTNAME}/${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	chris@bsdjunk.com
 COMMENT=	Console based mail client with POP3/IMAP/SMAP support
 
 LICENSE=	GPLv3

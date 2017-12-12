@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-jemoji/Makefile 450443 2017-09-23 14:10:46Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-jemoji/Makefile 456013 2017-12-11 10:44:33Z sunpoet $
 
 PORTNAME=	jemoji
-PORTVERSION=	0.8.1
+PORTVERSION=	0.9.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

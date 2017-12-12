@@ -1,5 +1,5 @@
 # Created by: Pietro Cerutti <gahr@FreeBSD.org>
-# $FreeBSD: head/math/ogdf/Makefile 414892 2016-05-09 20:46:48Z woodsb02 $
+# $FreeBSD: head/math/ogdf/Makefile 455836 2017-12-09 10:09:04Z antoine $
 
 PORTNAME=	ogdf
 PORTVERSION=	2015.05
@@ -15,7 +15,7 @@ LICENSE_COMB=		dual
 LICENSE_FILE_GPLv2=	${WRKSRC}/LICENSE_GPL_v2.txt
 LICENSE_FILE_GPLv3=	${WRKSRC}/LICENSE_GPL_v3.txt
 
-USES=			compiler:features gmake python:build zip
+USES=			compiler:features gmake python:2.7,build zip
 USE_LDCONFIG=		yes
 LDFLAGS+=		-L${LOCALBASE}/lib
 

@@ -1,9 +1,8 @@
 # Created by: demon@FreeBSD.org
-# $FreeBSD: head/math/glm/Makefile 455034 2017-11-28 11:46:54Z amdmi3 $
+# $FreeBSD: head/math/glm/Makefile 455508 2017-12-04 11:32:28Z amdmi3 $
 
 PORTNAME=	glm
-PORTVERSION=	0.9.8.4
-PORTEPOCH=	1
+PORTVERSION=	0.9.8.5
 CATEGORIES=	math graphics
 
 MAINTAINER=	amdmi3@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: smace@FreeBSD.org
-# $FreeBSD: head/devel/libredblack/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/libredblack/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	libredblack
 PORTVERSION=	1.3
@@ -20,7 +20,7 @@ USE_LDCONFIG=	yes
 CONFIGURE_ARGS+=	--without-rbgen
 PLIST_SUB+=	PYTHON="@comment "
 .else
-USES+=		python
+USES+=		python:2.7
 CONFIGURE_ARGS+=	--with-python=${PYTHON_CMD}
 PLIST_SUB+=	PYTHON=""
 .endif

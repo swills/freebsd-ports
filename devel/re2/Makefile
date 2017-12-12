@@ -1,5 +1,5 @@
 # Created by: Julien Laffaye <kimelto@gmail.com>
-# $FreeBSD: head/devel/re2/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/re2/Makefile 456105 2017-12-12 04:35:49Z jbeich $
 
 PORTNAME=	re2
 PORTVERSION=	20170301
@@ -10,8 +10,6 @@ MAINTAINER=	jlaffaye@FreeBSD.org
 COMMENT=	Fast C++ regex library
 
 LICENSE=	BSD3CLAUSE
-
-BROKEN_powerpc64=	fails to compile: prefilter_tree.cc: 'to_string' is not a member of 'std'
 
 MAKE_ARGS=	CXX="${CXX}" CXXFLAGS="${CXXFLAGS}" SED_INPLACE="${SED} -i ''" prefix=${PREFIX}
 USE_LDCONFIG=	yes

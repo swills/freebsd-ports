@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/shiboken/Makefile 424807 2016-10-28 05:48:48Z pi $
+# $FreeBSD: head/devel/shiboken/Makefile 455544 2017-12-04 21:29:07Z antoine $
 
 PORTNAME=	shiboken
 PORTVERSION=	1.2.2
@@ -22,7 +22,7 @@ PLIST_SUB=	PORTVERSION=${PORTVERSION} \
 USE_QT4=	corelib qmake_build qtestlib moc_build network \
 		uic_build rcc_build xml xmlpatterns
 
-USES=		cmake python tar:bzip2
+USES=		cmake python:2.7 tar:bzip2
 USE_LDCONFIG=	yes
 
 ALL_TARGET=	all

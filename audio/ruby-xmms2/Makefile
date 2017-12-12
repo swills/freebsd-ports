@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/audio/ruby-xmms2/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/ruby-xmms2/Makefile 456071 2017-12-11 22:35:02Z swills $
 
 PORTREVISION=	4
 CATEGORIES=	audio ruby
@@ -18,6 +18,10 @@ USE_GNOME=	glib20
 
 BROKEN_RUBY22=	yes
 BROKEN_RUBY23=	yes
+BROKEN_RUBY24=	yes
+
+DEPRECATED=     Does not build with current versions of ruby
+EXPIRATION_DATE=	2018-01-12
 
 PLIST=		${.CURDIR}/pkg-plist
 

@@ -1,9 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/npm3/Makefile 454521 2017-11-20 04:31:53Z sunpoet $
+# $FreeBSD: head/www/npm3/Makefile 455449 2017-12-03 20:35:46Z sunpoet $
 
 PORTNAME=	npm
 PORTVERSION=	3.10.10
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www
 MASTER_SITES=	LOCAL/sunpoet
 PKGNAMESUFFIX=	3
@@ -31,7 +31,7 @@ MANPREFIX=	${PREFIX}/lib/node_modules/npm
 NO_ARCH=	yes
 NO_BUILD=	yes
 REINPLACE_ARGS=	-i ''
-USES=		cpe python:2 shebangfix tar:xz
+USES=		cpe python:2.7 shebangfix tar:xz
 
 CPE_VENDOR=	npmjs
 CPE_PRODUCT=	node_packaged_modules

@@ -1,10 +1,10 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/audio/mixxx/Makefile 450573 2017-09-25 06:34:58Z acm $
+# $FreeBSD: head/audio/mixxx/Makefile 456058 2017-12-11 18:26:13Z sunpoet $
 
 PORTNAME=	mixxx
 PORTVERSION=	2.0.0
 DISTVERSIONSUFFIX=	-src
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio
 MASTER_SITES=	http://downloads.mixxx.org/${PORTNAME}-${PORTVERSION}/
 

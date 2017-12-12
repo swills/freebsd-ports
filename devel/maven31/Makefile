@@ -1,5 +1,5 @@
 # Created by: Herve Quiroz <hq@FreeBSD.org>
-# $FreeBSD: head/devel/maven31/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/devel/maven31/Makefile 446632 2017-07-25 21:45:58Z matthew $
 
 PORTNAME=	maven31
 DISTVERSION=	3.1.1

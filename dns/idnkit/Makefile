@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/dns/idnkit/Makefile 453406 2017-11-03 13:21:17Z sobomax $
+# $FreeBSD: head/dns/idnkit/Makefile 455744 2017-12-07 17:37:37Z amdmi3 $
 
 PORTNAME=	idnkit
 PORTVERSION=	1.0
@@ -10,6 +10,11 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Library to handle internationalized domain names
+
+LICENSE=	JPNIC
+LICENSE_NAME=	Japan Network Information Center license
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 USES=		iconv libtool
 GNU_CONFIGURE=	yes

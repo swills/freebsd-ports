@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/magicor/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/games/magicor/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	magicor
 PORTVERSION=	1.1
@@ -15,7 +15,7 @@ COMMENT=	Old-school, puzzle game similar to Solomon's Key
 LICENSE=	PD
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pygame/__init__.py:devel/py-game
+RUN_DEPENDS=	${PYGAME}
 
 USES=		python:2.7 shebangfix
 SHEBANG_FILES=	*.py
@@ -37,7 +37,7 @@ OPTIONS_DEFAULT=EDITOR
 OPTIONS_SUB=	yes
 
 EDITOR_DESC=	Enable editor
-EDITOR_RUN_DEPENDS=	${PYTHON_SITELIBDIR}/gtk-2.0/gtk/__init__.py:x11-toolkits/py-gtk2
+EDITOR_USE=	gnome=pygtk2
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|###CONFIG_PATH###|${PREFIX}/etc/magicor/magicor.conf|' \

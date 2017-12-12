@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/npm4/Makefile 443803 2017-06-18 05:51:14Z sunpoet $
+# $FreeBSD: head/www/npm4/Makefile 455450 2017-12-03 20:35:51Z sunpoet $
 
 PORTNAME=	npm
 PORTVERSION=	4.6.1
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	LOCAL/sunpoet
 PKGNAMESUFFIX=	4
@@ -20,7 +21,7 @@ CONFLICTS_INSTALL=	npm npm2 npm3
 NO_ARCH=	yes
 NO_BUILD=	yes
 REINPLACE_ARGS=	-i ''
-USES=		cpe python:2,run tar:xz
+USES=		cpe python:2.7,run tar:xz
 
 CPE_VENDOR=	npmjs
 CPE_PRODUCT=	node_packaged_modules

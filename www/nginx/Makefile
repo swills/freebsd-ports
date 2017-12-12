@@ -1,9 +1,9 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/nginx/Makefile 455088 2017-11-29 00:43:23Z osa $
+# $FreeBSD: head/www/nginx/Makefile 455397 2017-12-03 09:48:02Z brnrd $
 
 PORTNAME=	nginx
 PORTVERSION=	1.12.2
-PORTREVISION?=	1
+PORTREVISION?=	2
 PORTEPOCH=	2
 CATEGORIES=	www
 MASTER_SITES=	http://nginx.org/download/
@@ -1141,9 +1141,9 @@ CONFIGURE_ARGS+=--add-module=${WRKSRC_arrayvar}
 .endif
 
 .if ${PORT_OPTIONS:MBROTLI}
-NGINX_BROTLI_VERSION=	12529813
+NGINX_BROTLI_VERSION=	 990d925
 LIB_DEPENDS+=	libbrotlicommon.so:archivers/brotli
-GH_ACCOUNT+=	google:brotli
+GH_ACCOUNT+=	eustas:brotli
 GH_PROJECT+=	ngx_brotli:brotli
 GH_TAGNAME+=	${NGINX_BROTLI_VERSION}:brotli
 .if ${PORT_OPTIONS:MDSO}
@@ -1268,6 +1268,11 @@ post-patch:
 	@${REINPLACE_CMD} \
 		's!%%PREFIX%%!${LOCALBASE}!g' \
 		${WRKSRC_nginx_tarantool}/config
+.endif
+.if ${PORT_OPTIONS:MBROTLI}
+	@${REINPLACE_CMD} -E \
+		's!^brotli=.*!brotli="${LOCALBASE}"!' \
+		${WRKSRC_brotli}/config
 .endif
 
 pre-configure:
