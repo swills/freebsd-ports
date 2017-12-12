@@ -1,5 +1,5 @@
 # Created by: TAOKA Fumiyoshi <fmysh@iijmio-mail.jp>
-# $FreeBSD: head/devel/py-pyshapelib/Makefile 428449 2016-12-12 20:58:51Z sunpoet $
+# $FreeBSD: head/devel/py-pyshapelib/Makefile 456113 2017-12-12 09:03:39Z antoine $
 
 PORTNAME=	pyshapelib
 PORTVERSION=	1.0
@@ -14,7 +14,7 @@ COMMENT=	Python bindings for Shapelib
 
 LICENSE=	LGPL20
 
-USES=		python
+USES=		python:2.7
 USE_LDCONFIG=	yes
 USE_PYTHON=	distutils
 
@@ -42,10 +42,4 @@ post-install-EXAMPLES-on:
 	${INSTALL_DATA} ${WRKSRC}/$f ${STAGEDIR}${EXAMPLESDIR}
 .endfor
 
-.include <bsd.port.pre.mk>
-
-.if ${PYTHON_MAJOR_VER} != 2
-IGNORE=	does not work with ${PYTHON_VERSION}
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
