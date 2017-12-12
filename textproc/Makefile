@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/Makefile 456064 2017-12-11 20:08:13Z ultima $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1320,6 +1320,7 @@
     SUBDIR += py-paragrep
     SUBDIR += py-parsel
     SUBDIR += py-parsimonious
+    SUBDIR += py-parso
     SUBDIR += py-pdfminer
     SUBDIR += py-pss
     SUBDIR += py-pyPEG2

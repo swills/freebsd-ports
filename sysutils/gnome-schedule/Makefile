@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/sysutils/gnome-schedule/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/gnome-schedule/Makefile 455846 2017-12-09 11:48:42Z antoine $
 #   $MCom: ports/sysutils/gnome-schedule/Makefile,v 1.5 2007/09/10 06:20:14 mezz Exp $
 
 PORTNAME=	gnome-schedule
@@ -20,7 +20,7 @@ OPTIONS_SUB=	yes
 BUILD_DEPENDS=	yelp:x11/yelp
 RUN_DEPENDS=	yelp:x11/yelp
 
-USES=		gmake pathfix python
+USES=		gmake pathfix python:2.7
 USE_GNOME=	gnomeprefix pygnome2 gnomedocutils intltool
 INSTALLS_OMF=	yes
 GNU_CONFIGURE=	yes

@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: head/MOVED 455255 2017-12-01 09:38:23Z rene $
+# $FreeBSD: head/MOVED 455764 2017-12-07 23:49:42Z brooks $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -9603,7 +9603,6 @@ net/libsocketcpp||2017-11-06|Has expired: Uses gets(3)
 security/py-btchip|security/py-btchip-python|2017-11-07|Rename to reflect official Python modules naming scheme
 devel/pear-PPW||2017-11-09|Has expired: Project is EoL
 lang/ats||2017-11-11|Has expired: Unmaintained, outdated, needs lots of refreshment
-games/lordsawar||2017-11-11|Has expired: Broken for more than 6 months
 databases/elixir-ecto_migrate||2017-11-11|Has expired: Broken for more than 6 months
 audio/gspeakers||2017-11-11|Has expired: Broken for more than 6 months
 net/p5-Filesys-SmbClient||2017-11-11|Has expired: Broken for more than 6 months
@@ -9803,3 +9802,11 @@ x11-toolkits/py35-tkinter|x11-toolkits/py-tkinter@py35|2017-11-30|Moved to a fla
 x11-toolkits/py36-tkinter|x11-toolkits/py-tkinter@py36|2017-11-30|Moved to a flavored, generic, version
 security/py-rekall_gui||2017-11-30|Has expired: PoC that is no longer supported
 security/webshag||2017-12-01|Has expired: Abandoned
+www/p5-Yahoo-Lifestyle||2017-12-01|Has expired: This service has been shut down
+games/linux-rtcw|games/iortcw|2017-12-01|Has expired: Use the native and open source games/iortcw instead
+java/bootstrap-openjdk|java/bootstrap-openjdk6|2017-12-01|Has expired: superseded by java/bootstrap-openjdk[68]
+lang/gcc46|lang/gcc6|2017-12-01|Has expired: Unsupported by upstream. Use GCC 6 or newer instead.
+security/krb5-113|security/krb5-114|2017-12-03|Has expired: EOL twelve months after release of krb5-1.15
+net/bird6|net/bird@ipv6|2017-12-06|Moved to a flavored version
+devel/kore-notls|devel/kore@notls|2017-12-06|Moved to a flavored version
+devel/llvm-cheri128|devel/llvm-cheri|2017-12-07|A single cheri compiler can now target 128-bit and 256-bit capabilities

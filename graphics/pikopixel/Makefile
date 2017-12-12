@@ -1,8 +1,9 @@
 # Created by: theraven@FreeBSD.org
-# $FreeBSD: head/graphics/pikopixel/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/graphics/pikopixel/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	pikopixel
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	graphics gnustep
 MASTER_SITES=	http://twilightedge.com/downloads/
 DISTNAME=	PikoPixel.Sources.1.0-b8

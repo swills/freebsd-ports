@@ -1,9 +1,8 @@
 # Created by: Michael Williams <ports@mgwsoftware.com>
-# $FreeBSD: head/games/linux-dwarffortress/Makefile 426710 2016-11-21 12:45:55Z pawel $
+# $FreeBSD: head/games/linux-dwarffortress/Makefile 455323 2017-12-01 23:52:23Z pawel $
 
 PORTNAME=	dwarffortress
-DISTVERSION=	0.43.05
-PORTREVISION=	2
+DISTVERSION=	0.44.02
 CATEGORIES=	games linux
 MASTER_SITES=	http://www.bay12games.com/dwarves/
 PKGNAMEPREFIX=	linux-

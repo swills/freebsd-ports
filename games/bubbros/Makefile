@@ -1,5 +1,5 @@
 # Created by: Janos Mohacsi <janos.mohacsi@bsd.hu>
-# $FreeBSD: head/games/bubbros/Makefile 438970 2017-04-20 15:45:54Z amdmi3 $
+# $FreeBSD: head/games/bubbros/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	bubbros
 PORTVERSION=	1.6.2
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 RUN_DEPENDS=	${PYGAME}
 BUILD_DEPENDS=	${PYGAME}
 
-USES=		python shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	BubBob.py
 USE_XORG=	x11 xext
 

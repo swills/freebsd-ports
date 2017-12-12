@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/reminiscence/Makefile 453740 2017-11-08 13:48:30Z amdmi3 $
+# $FreeBSD: head/games/reminiscence/Makefile 456023 2017-12-11 12:11:10Z amdmi3 $
 
 PORTNAME=	REminiscence
-PORTVERSION=	0.3.4
+PORTVERSION=	0.3.5
 CATEGORIES=	games
 MASTER_SITES=	http://cyxdown.free.fr/reminiscence/ \
 		https://mirror.amdmi3.ru/distfiles/

@@ -1,5 +1,5 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/games/ufoai-data/Makefile 427491 2016-12-01 11:18:03Z mat $
+# $FreeBSD: head/games/ufoai-data/Makefile 455765 2017-12-08 01:46:00Z linimon $
 
 PORTNAME=	data
 PORTVERSION=	2.5
@@ -27,7 +27,6 @@ DATADIR=	share/${PKGNAMEPREFIX:S/-//}
 PLIST=		${WRKDIR}/pkg-plist
 
 BROKEN_aarch64=		Fails to install: runaway process
-BROKEN_armv6=		Fails to install: runaway process
 BROKEN_mips64=		Fails to install: runaway process
 
 post-extract:

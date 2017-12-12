@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/net/pear-Horde_Kolab_Server/Makefile 369674 2014-09-30 22:14:59Z bapt $
+# $FreeBSD: head/net/pear-Horde_Kolab_Server/Makefile 455798 2017-12-08 20:21:01Z joneum $
 
 PORTNAME=	Horde_Kolab_Server
-PORTVERSION=	2.0.1
+DISTVERSION=	2.0.5
 CATEGORIES=	net www pear
 PKGNAMEPREFIX=	pear-
 

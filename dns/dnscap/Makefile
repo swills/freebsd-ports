@@ -1,8 +1,8 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/dns/dnscap/Makefile 448547 2017-08-22 16:40:03Z sunpoet $
+# $FreeBSD: head/dns/dnscap/Makefile 455434 2017-12-03 20:34:33Z sunpoet $
 
 PORTNAME=	dnscap
-PORTVERSION=	1.5.1
+PORTVERSION=	1.6.0
 PORTEPOCH=	1
 CATEGORIES=	dns
 MASTER_SITES=	https://www.dns-oarc.net/files/dnscap/ \

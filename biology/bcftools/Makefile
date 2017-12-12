@@ -1,5 +1,5 @@
 # Created by: Reed A. Cartwright <cartwright@asu.edu>
-# $FreeBSD: head/biology/bcftools/Makefile 452840 2017-10-25 10:19:50Z pizzamig $
+# $FreeBSD: head/biology/bcftools/Makefile 455518 2017-12-04 15:27:29Z mat $
 
 PORTNAME=	bcftools
 PORTVERSION=	1.6
@@ -20,9 +20,8 @@ CONFLICTS_BUILD=openssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	samtools
 
-USES=		autoreconf gmake perl5 python shebangfix
+USES=		autoreconf gmake perl5 python:env shebangfix
 USE_PERL5=	test
-PYTHON_NO_DEPENDS=	yes
 GNU_CONFIGURE=	yes
 SUB_FILES=	pkg-message
 SHEBANG_FILES=	misc/* test/test.pl

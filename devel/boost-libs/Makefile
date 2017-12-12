@@ -1,5 +1,5 @@
 # Created by: Alexander Churanov <churanov.port.maintainer@gmail.com>
-# $FreeBSD: head/devel/boost-libs/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/devel/boost-libs/Makefile 455905 2017-12-10 18:40:51Z jbeich $
 
 PORTNAME=	boost-libs
 PORTREVISION=	1
@@ -32,6 +32,8 @@ ICU_MAKE_ARGS_OFF=	boost.locale.icu=off
 .include "${.CURDIR}/../boost-all/compiled.mk"
 
 MAKE_ARGS+=	--without-python
+MAKE_ARGS+=	${MAKE_ARGS_${CHOSEN_COMPILER_TYPE}}
+MAKE_ARGS_gcc=	xdll-path=${_GCC_RUNTIME}
 ALL_TARGET=	stage
 
 do-install:

@@ -1,5 +1,5 @@
 # Created by: Julien Laffaye <kimelto@gmail.com>
-# $FreeBSD: head/databases/soci/Makefile 453489 2017-11-04 21:42:16Z adridg $
+# $FreeBSD: head/databases/soci/Makefile 455813 2017-12-09 00:42:05Z linimon $
 
 PORTNAME=	soci
 PORTVERSION=	3.2.2
@@ -12,6 +12,9 @@ COMMENT=	The C++ Database Access Library
 
 LICENSE=	BSL
 LICENSE_FILE=	${WRKSRC}/LICENSE_1_0.txt
+
+BROKEN_armv6=		fails to compile: backends/mysql/session.cpp:202:22: error: ordered comparison between pointer and zero ('int *' and 'int')
+BROKEN_armv7=		fails to compile: backends/mysql/session.cpp:202:22: error: ordered comparison between pointer and zero ('int *' and 'int')
 
 USES=		cmake zip
 CMAKE_ARGS+=	-DWITH_ORACLE:BOOL=OFF

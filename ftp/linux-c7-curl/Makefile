@@ -1,9 +1,9 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/ftp/linux-c7-curl/Makefile 452945 2017-10-26 19:23:18Z tijl $
+# $FreeBSD: head/ftp/linux-c7-curl/Makefile 456040 2017-12-11 14:40:06Z tijl $
 
 PORTNAME=	curl
 PORTVERSION=	7.29.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	ftp linux
 LIB_DISTNAMES=	lib${DISTNAME}
 
@@ -15,7 +15,7 @@ LICENSE=	MIT
 CONFLICTS=	linux-c6-${PORTNAME}-[0-9]*
 
 DESCR=		${.CURDIR}/../${PORTNAME}/pkg-descr
-RPMVERSION=	42.el7
+RPMVERSION=	42.el7_4.1
 USES=		linux:c7
 USE_LDCONFIG=	yes
 USE_LINUX=	libssh2 nspr nss openldap

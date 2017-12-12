@@ -1,13 +1,16 @@
 # Created by: proler@gmail.com
-# $FreeBSD: head/databases/clickhouse/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/databases/clickhouse/Makefile 455378 2017-12-02 15:21:29Z lev $
 
 PORTNAME=	clickhouse
-PORTVERSION=	1.1.54304
+PORTVERSION=	1.1.54318
 DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	-stable
 #DISTVERSIONSUFFIX=	-testing
-PORTREVISION=	2
+#PORTREVISION=	1
 CATEGORIES=	databases
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	fa65bdcf4847.patch:-p1
 
 MAINTAINER=	proler@gmail.com
 COMMENT=	ClickHouse is an column-oriented database management system
@@ -30,7 +33,8 @@ LIB_DEPENDS=	libtcmalloc.so:devel/google-perftools \
 		liblz4.so:archivers/liblz4 \
 		libPocoNet.so:devel/poco \
 		libcpuid.so:sysutils/libcpuid \
-		libunwind.so:devel/libunwind
+		libunwind.so:devel/libunwind \
+		librdkafka.so:net/librdkafka
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	yandex

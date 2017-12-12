@@ -1,5 +1,5 @@
 # Created by: Luca Pizzamiglio <luca.pizzamiglio@gmail.com>
-# $FreeBSD: head/devel/breakpad/Makefile 448911 2017-08-29 13:05:21Z pizzamig $
+# $FreeBSD: head/devel/breakpad/Makefile 456076 2017-12-12 02:22:10Z jbeich $
 
 PORTNAME=	breakpad
 DISTVERSION=	g20170811
@@ -11,7 +11,7 @@ COMMENT=	Client/server based crash-reporting system
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=	autoreconf
+USES=		autoreconf compiler:c++11-lib
 GNU_CONFIGURE=	yes
 
 USE_GITHUB=	yes

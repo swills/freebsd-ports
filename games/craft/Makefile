@@ -1,5 +1,5 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/games/craft/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/games/craft/Makefile 455392 2017-12-03 08:25:31Z antoine $
 
 PORTNAME=	craft
 PORTVERSION=	1.0
@@ -27,8 +27,8 @@ USE_XORG=	x11 xi xrandr
 USE_GL=		gl glu
 
 SERVER_USES=		python:2.7
-SERVER_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.2:www/py-requests \
-			${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3
+SERVER_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.2:www/py-requests@${PY_FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${PY_FLAVOR}
 SERVER_CMAKE_ON=	-DSERVER:BOOL=ON
 
 .include <bsd.port.options.mk>

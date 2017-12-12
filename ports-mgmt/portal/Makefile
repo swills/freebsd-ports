@@ -1,4 +1,4 @@
-# $FreeBSD: head/ports-mgmt/portal/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/ports-mgmt/portal/Makefile 456105 2017-12-12 04:35:49Z jbeich $
 
 PORTNAME=	portal
 PORTVERSION=	0.4
@@ -9,8 +9,6 @@ MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Front-end to pkg(8)
 
 LICENSE=	BSD2CLAUSE
-
-BROKEN_powerpc64=	does not build: error: to_string is not a member of std
 
 PLIST_FILES=	bin/${PORTNAME} \
 		man/man1/${PORTNAME}.1.gz

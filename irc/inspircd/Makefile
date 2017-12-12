@@ -1,12 +1,12 @@
 # Created by: Craig Edwards <brain@mail1.chatspike.net>
-# $FreeBSD: head/irc/inspircd/Makefile 454968 2017-11-27 16:10:06Z feld $
+# $FreeBSD: head/irc/inspircd/Makefile 455368 2017-12-02 13:29:36Z feld $
 
 PORTNAME=	inspircd
 PORTVERSION=	2.0.25
 DISTVERSIONPREFIX=	v
 CATEGORIES=	irc
 
-MAINTAINER=	feld@FreeBSD.org
+MAINTAINER=	dg@syrec.org
 COMMENT=	Modular C++ IRC daemon
 
 LICENSE=	GPLv2

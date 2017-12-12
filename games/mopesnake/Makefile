@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/mopesnake/Makefile 415448 2016-05-18 13:33:57Z amdmi3 $
+# $FreeBSD: head/games/mopesnake/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	mopesnake
 PORTVERSION=	0.5
@@ -21,7 +21,7 @@ RUN_DEPENDS=	${PYGAME}
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-pc-${DISTVERSION}
 
-USES=		python zip
+USES=		python:2.7 zip
 NO_ARCH=	yes
 
 PORTDOCS=	index.html

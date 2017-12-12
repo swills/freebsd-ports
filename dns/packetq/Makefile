@@ -1,5 +1,5 @@
 # Created by: Leo Vandewoestijne <freebsd@dns-lab.com>
-# $FreeBSD: head/dns/packetq/Makefile 446182 2017-07-19 00:03:41Z dbaio $
+# $FreeBSD: head/dns/packetq/Makefile 456077 2017-12-12 02:30:49Z jbeich $
 
 PORTNAME=	packetq
 PORTVERSION=	1.4.0
@@ -16,7 +16,7 @@ GH_ACCOUNT=	DNS-OARC
 GH_PROJECT=	PacketQ
 USE_GITHUB=	yes
 
-USES=		autoreconf
+USES=		autoreconf compiler:c++11-lib
 GNU_CONFIGURE=	yes
 
 OPTIONS_DEFINE=	DOCS

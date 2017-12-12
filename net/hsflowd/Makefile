@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/hsflowd/Makefile 447034 2017-08-01 17:07:58Z zi $
+# $FreeBSD: head/net/hsflowd/Makefile 455765 2017-12-08 01:46:00Z linimon $
 
 PORTNAME=	hsflowd
 PORTVERSION=	1.24.1
@@ -9,7 +9,6 @@ MASTER_SITES=	ZI
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Agent that exports metrics using the sFlow protocol
 
-BROKEN_armv6=		fails to compile: src/FreeBSD/Makefile: Malformed conditional (empty $(BINDIR))
 BROKEN_mips=		fails to compile: src/FreeBSD/Makefile: Malformed conditional (empty $(BINDIR))
 BROKEN_mips64=		fails to compile: src/FreeBSD/Makefile: Malformed conditional (empty $(BINDIR))
 

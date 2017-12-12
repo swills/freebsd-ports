@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-toolkits/gnustep-back/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/x11-toolkits/gnustep-back/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	gnustep-back
 PORTVERSION=	0.25.1
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits gnustep
 MASTER_SITES=	GNUSTEP/core
 

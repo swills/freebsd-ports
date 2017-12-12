@@ -1,5 +1,5 @@
 # Created by: Neil Booth
-# $FreeBSD: head/finance/electrum2/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/finance/electrum2/Makefile 455392 2017-12-03 08:25:31Z antoine $
 
 PORTNAME=	electrum
 PORTVERSION=	2.9.3
@@ -41,8 +41,8 @@ OPTIONS_DEFAULT=LEDGER TREZOR
 LEDGER_DESC=	Enable LEDGER Bitcoin hardware wallet support
 TREZOR_DESC=	Enable TREZOR Bitcoin hardware wallet support
 
-LEDGER_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}btchip-python>0:security/py-btchip-python
-TREZOR_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}trezor>0:security/py-trezor
+LEDGER_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}btchip-python>0:security/py-btchip-python@${FLAVOR}
+TREZOR_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}trezor>0:security/py-trezor@${FLAVOR}
 
 LEDGER_PLIST_FILES=	"@sample etc/devd/ledger_wallet.conf.sample"
 TREZOR_PLIST_FILES=	"@sample etc/devd/trezor_wallet.conf.sample"

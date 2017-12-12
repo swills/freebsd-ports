@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/rbtools/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/rbtools/Makefile 455865 2017-12-09 16:53:36Z antoine $
 
 PORTNAME=	${ORIGNAME:tl}
 DISTVERSION=	0.7.10
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://downloads.reviewboard.org/releases/${ORIGNAME}/${DISTVERSION:R}/
 DISTNAME=	${ORIGNAME}-${DISTVERSION}
@@ -19,6 +20,6 @@ ORIGNAME=	RBTools
 
 NO_ARCH=	yes
 USES=		python:2.7
-USE_PYTHON=	autoplist concurrent distutils
+USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

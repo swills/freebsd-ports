@@ -1,5 +1,5 @@
 # Created by: Michael Neumann <mneumann@ntecs.de>
-# $FreeBSD: head/emulators/hatari/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/emulators/hatari/Makefile 455832 2017-12-09 09:40:04Z antoine $
 
 PORTNAME=	hatari
 PORTVERSION=	2.0.0
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libportaudio.so:audio/portaudio \
 BUILD_DEPENDS=	python:lang/python
 RUN_DEPENDS=	python:lang/python
 
-USES=		cmake desktop-file-utils python readline shared-mime-info \
+USES=		cmake desktop-file-utils python:2.7 readline shared-mime-info \
 		shebangfix tar:bzip2
 SHEBANG_FILES=	python-ui/*.py tools/atari-convert-dir.py \
 		tools/debugger/hatari_profile.py tools/hconsole/*.py

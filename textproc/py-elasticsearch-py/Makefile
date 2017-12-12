@@ -1,12 +1,12 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/textproc/py-elasticsearch-py/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-elasticsearch-py/Makefile 455630 2017-12-05 22:00:55Z zi $
 
 PORTNAME=	elasticsearch-py
 PORTVERSION=	5.4.0
 CATEGORIES=	textproc python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	zi@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Official Python low-level client for Elasticsearch
 
 LICENSE=	APACHE20

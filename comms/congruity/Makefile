@@ -1,5 +1,5 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/comms/congruity/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/comms/congruity/Makefile 455392 2017-12-03 08:25:31Z antoine $
 
 PORTNAME=	congruity
 PORTVERSION=	18
@@ -15,7 +15,7 @@ LICENSE=	GPLv2
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libconcord>=0:comms/py-libconcord@${PY_FLAVOR}
 
 MAKE_ARGS=	MANDIR=${PREFIX}/man
-USES=		desktop-file-utils gmake tar:bzip2 python:2.7+
+USES=		desktop-file-utils gmake tar:bzip2 python:2.7
 USE_WX=		2.8+
 WX_COMPS=	python
 

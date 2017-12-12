@@ -1,10 +1,9 @@
 # Created by: rene@FreeBSD.org
-# $FreeBSD: head/lang/owl-lisp/Makefile 454078 2017-11-12 20:36:53Z rene $
+# $FreeBSD: head/lang/owl-lisp/Makefile 455761 2017-12-07 21:43:52Z rene $
 
 PORTNAME=	owl-lisp
-PORTVERSION=	0.1.12
+PORTVERSION=	0.1.14
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	lang
 
 MAINTAINER=	rene@FreeBSD.org

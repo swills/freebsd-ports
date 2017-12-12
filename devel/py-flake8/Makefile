@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <william88@gmail.com>
-# $FreeBSD: head/devel/py-flake8/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-flake8/Makefile 455509 2017-12-04 12:12:58Z wg $
 
 PORTNAME=	flake8
 PORTVERSION=	3.3.0
@@ -21,4 +21,13 @@ USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 NO_ARCH=	yes
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${PYTHON_REL} < 3200
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}configparser>0:devel/py-configparser@${FLAVOR}
+.endif
+.if ${PYTHON_REL} < 3400
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}enum34>0:devel/py-enum34@${FLAVOR}
+.endif
+
+.include <bsd.port.post.mk>

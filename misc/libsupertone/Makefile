@@ -1,5 +1,5 @@
 # Created by: Max Khon <fjoe@FreeBSD.org>
-# $FreeBSD: head/misc/libsupertone/Makefile 441874 2017-05-27 20:33:22Z linimon $
+# $FreeBSD: head/misc/libsupertone/Makefile 455765 2017-12-08 01:46:00Z linimon $
 
 PORTNAME=	libsupertone
 PORTVERSION=	0.0.2
@@ -16,8 +16,6 @@ LIB_DEPENDS=	libaudiofile.so:audio/libaudiofile \
 		libspandsp.so:comms/spandsp \
 		libtiff.so:graphics/tiff \
 		libxml2.so:textproc/libxml2
-
-BROKEN_armv6=		fails to configure: Can't build without spandsp
 
 USES=		tar:tgz libtool
 GNU_CONFIGURE=	yes

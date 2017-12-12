@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-libplist/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-libplist/Makefile 455838 2017-12-09 10:15:42Z antoine $
 
 PORTREVISION=	0
 CATEGORIES=	devel python
@@ -13,6 +13,7 @@ PORTSCOUT=	ignore:1
 
 USES=		python:2.7
 USE_PYTHON=	flavors cython
+BINARY_ALIAS=	cython=cython-${PYTHON_VER}
 CONFIGURE_ENV=	PYTHON_LDFLAGS="`pkg-config --libs python-${PYTHON_VER}`"
 SLAVE_PORT=	yes
 MASTERDIR=	${.CURDIR:H:H}/devel/libplist

@@ -1,13 +1,13 @@
 # Created by: Denis Shaposhnikov <dsh@vlink.ru>
-# $FreeBSD: head/devel/py-decorator/Makefile 423532 2016-10-08 19:21:41Z olivierd $
+# $FreeBSD: head/devel/py-decorator/Makefile 455881 2017-12-10 03:58:42Z ygy $
 
 PORTNAME=	decorator
-PORTVERSION=	4.0.10
+PORTVERSION=	4.1.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	dsh@wizard.volgograd.ru
+MAINTAINER=	ygy@FreeBSD.org
 COMMENT=	Better living through Python with decorators
 
 LICENSE=	MIT

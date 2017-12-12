@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/sysutils/xe/Makefile 453661 2017-11-07 14:19:58Z tobik $
+# $FreeBSD: head/sysutils/xe/Makefile 455788 2017-12-08 17:46:53Z tobik $
 
 PORTNAME=	xe
 DISTVERSIONPREFIX=	v
@@ -18,6 +18,7 @@ USES=		perl5
 USE_PERL5=	test
 
 MAKE_ARGS=	CFLAGS="${CFLAGS}" \
+		PREFIX="${PREFIX}" \
 		MANDIR="${PREFIX}/man"
 TEST_TARGET=	check
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/cartotheque/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/deskutils/cartotheque/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	cartotheque
 PORTVERSION=	0.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	deskutils gnustep
 MASTER_SITES=	LOCAL/dinoex
 DISTNAME=	Cartotheque-${PORTVERSION}

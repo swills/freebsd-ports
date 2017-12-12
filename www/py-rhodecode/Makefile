@@ -1,5 +1,5 @@
 # Created by: gugabsd <gugabsd@mundounix.com.br>
-# $FreeBSD: head/www/py-rhodecode/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-rhodecode/Makefile 455392 2017-12-03 08:25:31Z antoine $
 
 PORTNAME=	rhodecode
 PORTVERSION=	1.7.2
@@ -26,7 +26,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pylons>=1.0:www/py-pylons@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}whoosh>=2.4.0:textproc/py-whoosh@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Babel>=0.9.6:devel/py-babel@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dateutil>=1.5:devel/py-dateutil@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}dulwich>=0.8.7:devel/dulwich \
+		${PYTHON_PKGNAMEPREFIX}dulwich>=0.8.7:devel/dulwich@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}markdown>=2.2.1:textproc/py-markdown@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}docutils>=0.8.1:textproc/py-docutils@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock@${FLAVOR} \

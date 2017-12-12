@@ -1,9 +1,9 @@
 # Created by: Niclas Zeising <zeising@FreeBSD.org>
-# $FreeBSD: head/net/ostinato/Makefile 448041 2017-08-16 15:44:48Z sunpoet $
+# $FreeBSD: head/net/ostinato/Makefile 456058 2017-12-11 18:26:13Z sunpoet $
 
 PORTNAME=	ostinato
 PORTVERSION=	0.8
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net security
 MASTER_SITES=	https://bintray.com/artifact/download/pstavirs/ostinato/
 DISTNAME=	${PORTNAME}-src-${PORTVERSION}

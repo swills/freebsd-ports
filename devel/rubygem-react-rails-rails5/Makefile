@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-react-rails-rails5/Makefile 454214 2017-11-14 22:51:23Z sunpoet $
+# $FreeBSD: head/devel/rubygem-react-rails-rails5/Makefile 456002 2017-12-11 10:43:37Z sunpoet $
 
 PORTNAME=	react-rails
-PORTVERSION=	2.4.2
+PORTVERSION=	2.4.3
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5

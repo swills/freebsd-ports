@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/x11/xbanish/Makefile 442098 2017-05-30 16:22:14Z tobik $
+# $FreeBSD: head/x11/xbanish/Makefile 455791 2017-12-08 18:34:53Z tobik $
 
 PORTNAME=	xbanish
 PORTVERSION=	1.5
@@ -16,7 +16,7 @@ GH_ACCOUNT=	jcs
 
 USE_XORG=	x11 xfixes xi xt
 
-MAKE_ARGS=	X11BASE="${PREFIX}"
+MAKE_ARGS=	X11BASE="${LOCALBASE}"
 
 PLIST_FILES=	bin/xbanish \
 		man/man1/xbanish.1.gz

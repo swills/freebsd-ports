@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/colorcode/Makefile 424339 2016-10-20 15:58:12Z rakuco $
+# $FreeBSD: head/games/colorcode/Makefile 455745 2017-12-07 17:53:38Z amdmi3 $
 
 PORTNAME=	colorcode
 PORTVERSION=	0.8.5
@@ -9,13 +9,19 @@ DISTNAME=	ColorCode-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Advanced MasterMind game and solver
 
-USE_QT5=	gui widgets buildtools_build
+LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+USE_QT5=	core gui widgets buildtools_build
 USES=		qmake
 WRKSRC=		${WRKDIR}/ColorCode-${PORTVERSION}
 
-DESKTOP_ENTRIES=	ColorCode "" \
-			colorcode colorcode \
-			"LogicGame;Game;Qt;" true
+DESKTOP_ENTRIES=ColorCode \
+		"" \
+		colorcode \
+		colorcode \
+		"LogicGame;Game;Qt;" \
+		true
 
 PLIST_FILES=	bin/colorcode \
 		share/pixmaps/colorcode.png

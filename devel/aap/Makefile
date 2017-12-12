@@ -1,5 +1,5 @@
 # Created by: Bram Moolenaar <bram@a-a-p.org>
-# $FreeBSD: head/devel/aap/Makefile 388691 2015-06-07 11:56:10Z bofh $
+# $FreeBSD: head/devel/aap/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	aap
 PORTVERSION=	1.094
@@ -17,7 +17,7 @@ OPTIONS_DEFINE=	DOCS
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
 
-USES=		python zip
+USES=		python:2.7 zip
 PLIST_SUB=	PORTVERSION="${PORTVERSION}"
 NO_ARCH=	yes
 

@@ -1,8 +1,8 @@
 # Created by: Thomas Zander <riggs@FreeBSD.org>
-# $FreeBSD: head/devel/py-validictory/Makefile 437818 2017-04-05 19:58:09Z sunpoet $
+# $FreeBSD: head/devel/py-validictory/Makefile 455985 2017-12-11 10:42:09Z sunpoet $
 
 PORTNAME=	validictory
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

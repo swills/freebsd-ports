@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/Makefile 456107 2017-12-12 06:33:58Z yuri $
 #
 
     COMMENT = Development utilities
@@ -65,6 +65,7 @@
     SUBDIR += R-cran-tidyr
     SUBDIR += R-cran-tidyselect
     SUBDIR += R-cran-withr
+    SUBDIR += RStudio
     SUBDIR += SpecTcl
     SUBDIR += aap
     SUBDIR += aarch64-binutils
@@ -106,6 +107,7 @@
     SUBDIR += antlr4
     SUBDIR += apache-ant
     SUBDIR += apache-rat
+    SUBDIR += aphpbreakdown
     SUBDIR += aphpunit
     SUBDIR += api-sanity-autotest
     SUBDIR += apiextractor
@@ -116,6 +118,7 @@
     SUBDIR += arcanist
     SUBDIR += arduino
     SUBDIR += arduino-avrdude
+    SUBDIR += arduino-bsd-mk
     SUBDIR += arduino-builder
     SUBDIR += arduino-core
     SUBDIR += arduino-ctags
@@ -1289,7 +1292,6 @@
     SUBDIR += kickassembler
     SUBDIR += kimwitu
     SUBDIR += kore
-    SUBDIR += kore-notls
     SUBDIR += ksql
     SUBDIR += kyra
     SUBDIR += kyua
@@ -1552,6 +1554,7 @@
     SUBDIR += libtool
     SUBDIR += libtpl
     SUBDIR += libtrue
+    SUBDIR += libtsm
     SUBDIR += libtuntap
     SUBDIR += libublio
     SUBDIR += libudev-devd
@@ -1622,7 +1625,6 @@
     SUBDIR += lldb38
     SUBDIR += llnextgen
     SUBDIR += llvm-cheri
-    SUBDIR += llvm-cheri128
     SUBDIR += llvm-devel
     SUBDIR += llvm33
     SUBDIR += llvm34
@@ -4137,6 +4139,7 @@
     SUBDIR += py-DateTime
     SUBDIR += py-DocumentTemplate
     SUBDIR += py-ExtensionClass
+    SUBDIR += py-IBMQuantumExperience
     SUBDIR += py-InlineEgg
     SUBDIR += py-Jinja2
     SUBDIR += py-Jinja2-doc
@@ -4260,6 +4263,7 @@
     SUBDIR += py-avro
     SUBDIR += py-babel
     SUBDIR += py-babelfish
+    SUBDIR += py-backports
     SUBDIR += py-backports.csv
     SUBDIR += py-backports.functools_lru_cache
     SUBDIR += py-backports.shutil_get_terminal_size
@@ -5275,6 +5279,7 @@
     SUBDIR += rubygem-backports
     SUBDIR += rubygem-bacon
     SUBDIR += rubygem-baf
+    SUBDIR += rubygem-batch-loader
     SUBDIR += rubygem-benelux
     SUBDIR += rubygem-bin_utils
     SUBDIR += rubygem-bindata
@@ -5531,6 +5536,7 @@
     SUBDIR += rubygem-metasm
     SUBDIR += rubygem-method_source
     SUBDIR += rubygem-micromachine
+    SUBDIR += rubygem-micromachine2
     SUBDIR += rubygem-minitest
     SUBDIR += rubygem-mixlib-archive
     SUBDIR += rubygem-mixlib-authentication

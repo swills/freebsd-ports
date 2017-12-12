@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/gr-osmosdr/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/comms/gr-osmosdr/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	gr-osmosdr
 PORTVERSION=	20160622
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libgnuradio-runtime.so:comms/gnuradio \
 		libboost_system.so:devel/boost-libs \
 		libboost_thread.so:devel/boost-libs
 
-USES=	cmake fortran pkgconfig python tar:tgz
+USES=	cmake fortran pkgconfig python:2.7 tar:tgz
 USE_LDCONFIG=	yes
 
 # See lib/CMakeLists.txt to enable more components

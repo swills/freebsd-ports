@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/x11/xcurs/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/xcurs/Makefile 455532 2017-12-04 20:02:45Z antoine $
 
 PORTNAME=	xcurs
 PORTVERSION=	0.5.1
@@ -11,9 +11,9 @@ MASTER_SITES=	http://freebsd.nsu.ru/distfiles/ \
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Editor for new X.Org style full-color cursors properties
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>=0:graphics/py-pillow
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>=0:graphics/py-pillow@${PY_FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_GNOME=	pygtk2
 NO_BUILD=	yes
 

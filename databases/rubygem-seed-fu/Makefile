@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/rubygem-seed-fu/Makefile 429782 2016-12-28 15:28:18Z swills $
+# $FreeBSD: head/databases/rubygem-seed-fu/Makefile 455477 2017-12-03 20:38:07Z sunpoet $
 
 PORTNAME=	seed-fu
-PORTVERSION=	2.3.6
+PORTVERSION=	2.3.7
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

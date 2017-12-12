@@ -1,8 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/french/med/Makefile 454187 2017-11-14 18:29:22Z thierry $
+# $FreeBSD: head/french/med/Makefile 455407 2017-12-03 15:14:06Z thierry $
 
 PORTNAME=	med
 DISTVERSION=	3.2.1
+PORTREVISION=	1
 CATEGORIES=	french science
 
 MAINTAINER=	thierry@FreeBSD.org
@@ -63,8 +64,8 @@ post-install:
 		&& ${LN} -sf xmdump3 xmdump)
 
 regression-test:
-	(cd ${BUILD_WRKSRC}/tests && ${SETENV} ${MAKE_ENV} ${MAKE_CMD} \
-		${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} check)
+	(cd ${BUILD_WRKSRC}/tests && ${SETENV} ${MAKE_ENV} HDF5_DISABLE_VERSION_CHECK=1	\
+		${MAKE_CMD} ${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} check)
 
 .include "${.CURDIR}/../../french/aster/bsd.aster.mk"
 .include <bsd.port.mk>

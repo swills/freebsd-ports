@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/funnyboat/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/games/funnyboat/Makefile 455858 2017-12-09 13:36:33Z antoine $
 
 PORTNAME=	funnyboat
 PORTVERSION=	1.5
@@ -16,7 +16,7 @@ LICENSE_COMB=	multi
 LICENSE_FILE_GPLv2=	${WRKSRC}/LICENSE-CODE.txt
 LICENSE_FILE_MIT=	${WRKSRC}/LICENSE-MEDIA.txt
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pygame/__init__.py:devel/py-game
+RUN_DEPENDS=	${PYGAME}
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

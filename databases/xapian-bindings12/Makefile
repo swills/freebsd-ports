@@ -1,8 +1,9 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/xapian-bindings12/Makefile 450739 2017-09-27 13:23:42Z sunpoet $
+# $FreeBSD: head/databases/xapian-bindings12/Makefile 455440 2017-12-03 20:35:02Z sunpoet $
 
 PORTNAME=	xapian-bindings
 PORTVERSION=	1.2.25
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	http://oligarchy.co.uk/xapian/${PORTVERSION}/ \
 		LOCAL/sunpoet
@@ -43,7 +44,7 @@ PHP_CONFIGURE_WITH=	php
 PHP_USES=		php:build
 PYTHON_CONFIGURE_ENV=	PYTHON_LIB=${PYTHON_SITELIBDIR}
 PYTHON_CONFIGURE_WITH=	python
-PYTHON_USES=		python:2
+PYTHON_USES=		python:2.7
 RUBY_CONFIGURE_WITH=	ruby
 RUBY_USE=		RUBY=yes
 

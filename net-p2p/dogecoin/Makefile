@@ -1,9 +1,10 @@
 # Created by: Shaun Amott <shaun@FreeBSD.org>
-# $FreeBSD: head/net-p2p/dogecoin/Makefile 451608 2017-10-09 11:18:16Z ehaupt $
+# $FreeBSD: head/net-p2p/dogecoin/Makefile 456058 2017-12-11 18:26:13Z sunpoet $
 
 PORTNAME=	dogecoin
 PORTVERSION=	1.10.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	net-p2p finance
 
 MAINTAINER=	ehaupt@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/math/py-yt/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/math/py-yt/Makefile 455337 2017-12-02 09:22:02Z antoine $
 
 PORTNAME=	yt
 PORTVERSION=	3.4.0
@@ -19,7 +19,7 @@ RUN_DEPENDS=	isympy:math/py-sympy@${FLAVOR} \
 		${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}pyembree>0:graphics/py-pyembree@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}matplotlib>=1.5.3:math/py-matplotlib@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}ipython>=1.0:devel/ipython
+		${PYTHON_PKGNAMEPREFIX}ipython>=1.0:devel/ipython@${FLAVOR}
 LIB_DEPENDS=	libembree.so:graphics/embree \
 		libomp.so:devel/openmp
 

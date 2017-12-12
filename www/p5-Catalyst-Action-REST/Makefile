@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/www/p5-Catalyst-Action-REST/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Action-REST/Makefile 455730 2017-12-07 16:01:54Z sunpoet $
 
 PORTNAME=	Catalyst-Action-REST
-PORTVERSION=	1.20
+PORTVERSION=	1.21
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -12,6 +12,7 @@ COMMENT=	Automated REST Method Dispatching for Catalyst
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.80030:www/p5-Catalyst-Runtime \
 		p5-Class-Inspector>=1.13:devel/p5-Class-Inspector \

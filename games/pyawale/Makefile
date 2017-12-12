@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/games/pyawale/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/games/pyawale/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	pyawale
 PORTVERSION=	0.4.0
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${PYGAME}
 
-USES=		python
+USES=		python:2.7
 
 SUB_FILES=	${PORTNAME}
 

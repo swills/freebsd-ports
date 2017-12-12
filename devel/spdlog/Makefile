@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/spdlog/Makefile 448447 2017-08-21 02:15:13Z vanilla $
+# $FreeBSD: head/devel/spdlog/Makefile 456088 2017-12-12 03:02:10Z jbeich $
 
 PORTNAME=	spdlog
 PORTVERSION=	0.14.0
@@ -12,11 +12,9 @@ COMMENT=	Super fast C++ logging library
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_powerpc64=	fails to compile: includes.h: error: chrono: No such file or directory
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	gabime
 
-USES=		cmake dos2unix pathfix
+USES=		cmake compiler:c++11-lib dos2unix pathfix
 
 .include <bsd.port.mk>

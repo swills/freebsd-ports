@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/audio/jack_mixer/Makefile 438964 2017-04-20 14:32:35Z amdmi3 $
+# $FreeBSD: head/audio/jack_mixer/Makefile 455818 2017-12-09 07:29:40Z antoine $
 
 PORTNAME=	jack_mixer
 PORTVERSION=	10
@@ -14,13 +14,12 @@ LICENSE=	GPLv2 # only
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libjack.so:audio/jack
-BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/fpconst.py:math/py-fpconst \
-		${LOCALBASE}/include/pygtk-2.0/pygtk/pygtk.h:x11-toolkits/py-gtk2
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}fpconst>=0:math/py-fpconst@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}fpconst>=0:math/py-fpconst@${PY_FLAVOR}
 
-USES=		libtool pkgconfig python shebangfix
+USES=		libtool pkgconfig python:2.7 shebangfix
 SHEBANG_FILES=	jack_mixer.py
-USE_GNOME=	gconf2
+USE_GNOME=	gconf2 pygtk2
 GCONF_SCHEMAS=	jack_mixer.schemas
 INSTALLS_ICONS=	yes
 

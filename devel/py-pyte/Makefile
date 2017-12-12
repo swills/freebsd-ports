@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-pyte/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pyte/Makefile 455880 2017-12-10 03:40:16Z ygy $
 
 PORTNAME=	pyte
-PORTVERSION=	0.5.2
+PORTVERSION=	0.7.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

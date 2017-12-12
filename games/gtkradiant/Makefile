@@ -1,5 +1,5 @@
 # Created by: Alejandro Pulver <alepulver@FreeBSD.org>
-# $FreeBSD: head/games/gtkradiant/Makefile 426084 2016-11-14 06:19:30Z linimon $
+# $FreeBSD: head/games/gtkradiant/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	gtkradiant
 PORTVERSION=	1.5.0
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libgtkglext-x11-1.0.so:x11-toolkits/gtkglext \
 		libmhash.so:security/mhash \
 		libpng.so:graphics/png
 
-USES=		pkgconfig python:build scons zip
+USES=		pkgconfig python:2.7,build scons zip
 USE_GNOME=	gtk20 libxml2
 MAKE_ARGS=	${MAKE_ENV} BUILD=release
 SSP_UNSAFE=	yes

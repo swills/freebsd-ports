@@ -1,16 +1,18 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc/Makefile 449652 2017-09-11 14:54:12Z gerald $
+# $FreeBSD: head/lang/gcc/Makefile 455581 2017-12-05 12:45:08Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	${GCC_DEFAULT}
-CATEGORIES=	lang java
+CATEGORIES=	lang
 MASTER_SITES=	# not applicable
 DISTFILES=	# not applicable
 
 MAINTAINER=	gerald@FreeBSD.org
 COMMENT=	Meta-port for the default version of the GNU Compiler Collection
 
-RUN_DEPENDS=	gcc${GCC_DEFAULT}:lang/gcc${GCC_DEFAULT}
+# Once GCC 4.9 and 4.8 aren't options any longer, we can simply use
+# GCC_DEFAULT again below (the expression rewrites 4.9 to 49).
+RUN_DEPENDS=	gcc${GCC_DEFAULT:S/.//}:lang/gcc${GCC_DEFAULT:S/.//}
 
 NO_ARCH=	yes
 NO_BUILD=	yes

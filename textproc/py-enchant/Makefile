@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale	<nivit@email.it>
-# $FreeBSD: head/textproc/py-enchant/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-enchant/Makefile 455308 2017-12-01 20:49:18Z amdmi3 $
 
 PORTNAME=	enchant
 PORTVERSION=	1.6.11
@@ -23,15 +23,14 @@ OPTIONS_SUB=	yes
 
 USES=		python:2.7
 USE_PYTHON=	distutils
+NO_ARCH=	yes
 
 WX_USE=		WX=3.0+
 WX_VARS=	WX_COMPS=python:run
 
 PLIST_SUB+=	VER=${PORTVERSION}
 
-LDFLAGS+=	-L${LOCALBASE}/lib
-
 post-install-WX-off:
-	${RM] ${STAGEDIR}${PYTHON_SITELIBDIR}/${PORTNAME}/checker/wxSpellCheckerDialog*
+	${RM} ${STAGEDIR}${PYTHON_SITELIBDIR}/${PORTNAME}/checker/wxSpellCheckerDialog*
 
 .include <bsd.port.mk>

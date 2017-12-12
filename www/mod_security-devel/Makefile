@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/mod_security-devel/Makefile 452572 2017-10-21 07:19:44Z gerald $
+# $FreeBSD: head/www/mod_security-devel/Makefile 455927 2017-12-11 07:18:48Z linimon $
 
 PORTNAME=	mod_security-devel
 PORTVERSION=	3.0.0.g2017080200
@@ -14,6 +14,10 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libpcre.so:devel/pcre \
 		libyajl.so:devel/yajl \
 		libGeoIP.so:net/GeoIP
+
+BROKEN_aarch64=		fails to compile: string.h:55:1: narrowing conversion of '-1' from 'int' to 'char' inside { }
+BROKEN_armv6=		fails to compile: string.h:55:1: narrowing conversion of '-1' from 'int' to 'char' inside { }
+BROKEN_armv7=		fails to compile: string.h:55:1: narrowing conversion of '-1' from 'int' to 'char' inside { }
 
 USES=		gmake autoreconf libtool pkgconfig:build
 USE_GNOME=	libxml2

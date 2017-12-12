@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/pear-Horde_Autoloader_Cache/Makefile 369674 2014-09-30 22:14:59Z bapt $
+# $FreeBSD: head/devel/pear-Horde_Autoloader_Cache/Makefile 455798 2017-12-08 20:21:01Z joneum $
 
 PORTNAME=	Horde_Autoloader_Cache
-PORTVERSION=	2.0.1
+DISTVERSION=	2.1.3
 CATEGORIES=	devel www pear
 
 MAINTAINER=	horde@FreeBSD.org

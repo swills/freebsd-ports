@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/pysolfc/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/games/pysolfc/Makefile 455392 2017-12-03 08:25:31Z antoine $
 
 PORTNAME=	pysolfc
 PORTVERSION=	2.0
@@ -15,8 +15,8 @@ COMMENT=	Solitaire game, written in Python and the successor of PySol
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter \
-		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${FLAVOR}
 
 USES=		python:2.7 shebangfix tar:bzip2
 USE_PYTHON=	autoplist distutils

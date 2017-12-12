@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/ksql/Makefile 452929 2017-10-26 17:10:10Z tobik $
+# $FreeBSD: head/devel/ksql/Makefile 455697 2017-12-07 08:59:41Z tobik $
 
 PORTNAME=	ksql
-PORTVERSION=	0.1.3
+PORTVERSION=	0.1.4
 CATEGORIES=	devel databases
 MASTER_SITES=	http://kristaps.bsd.lv/ksql/snapshots/
 
@@ -17,7 +17,7 @@ USES=		localbase
 HAS_CONFIGURE=	yes
 
 post-patch:
-	@${REINPLACE_CMD} 's@^PREFIX="/usr/local"@PREFIX="${STAGEDIR}${PREFIX}"@' \
+	@${REINPLACE_CMD} 's@^PREFIX="/usr/local"@PREFIX="${PREFIX}"@' \
 		${WRKSRC}/configure
 
 do-test:

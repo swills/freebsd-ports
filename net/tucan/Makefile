@@ -1,5 +1,5 @@
 # Created by: Gustau Perez Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/net/tucan/Makefile 422140 2016-09-14 15:59:34Z mat $
+# $FreeBSD: head/net/tucan/Makefile 455548 2017-12-04 21:38:47Z antoine $
 
 PORTNAME=	tucan
 PORTVERSION=	0.3.10
@@ -10,13 +10,13 @@ MASTER_SITES=	http://forja.rediris.es/frs/download.php/2051/
 MAINTAINER=	gustau.perez@gmail.com
 COMMENT=	Tucan Manager aids file-sharing with 1-click hosters
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR} \
 		${LOCALBASE}/bin/cntraining:graphics/tesseract
 
 NO_BUILD=	yes
 USE_GNOME=	pygtk2 librsvg2
 
-USES=		gettext python
+USES=		gettext python:2.7
 
 post-patch:
 	${REINPLACE_CMD} -Ee 's|#! /usr/bin/env python|#! ${PYTHON_CMD}|' ${WRKSRC}/tucan.py

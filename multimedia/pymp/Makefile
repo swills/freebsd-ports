@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/multimedia/pymp/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/pymp/Makefile 455844 2017-12-09 11:43:57Z antoine $
 
 PORTNAME=	pymp
 PORTVERSION=	1.1
@@ -19,7 +19,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	jdolan
 GH_TAGNAME=	bea99d9
 
-USES=		shebangfix python
+USES=		shebangfix python:2.7
 SHEBANG_FILES=	*.py
 USE_GNOME=	pygtk2
 NO_ARCH=	yes

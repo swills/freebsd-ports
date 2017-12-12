@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/opensurge/Makefile 454293 2017-11-15 21:39:00Z rene $
+# $FreeBSD: head/games/opensurge/Makefile 455615 2017-12-05 19:56:36Z rene $
 
 PORTNAME=	opensurge
 PORTVERSION=	0.1.r${SVN_REV}
@@ -18,14 +18,11 @@ LICENSE_COMB=	multi
 LICENSE_FILE_GPLv2+ =	${WRKSRC}/licenses/GPLv2.txt
 LICENSE_FILE_CC-BY-SA-3.0=	${WRKSRC}/licenses/CC-BY-SA-3.0.txt
 
-BROKEN=		Does not build
-DEPRECATED=	Does not build
-EXPIRATION_DATE=2018-02-01
-
 BUILD_DEPENDS=	${LOCALBASE}/lib/libaldmb.a:audio/dumb-allegro \
 		${LOCALBASE}/include/alfont.h:x11-fonts/alfont \
 		alureplay:audio/alure
-LIB_DEPENDS=	liballeg.so:devel/allegro \
+LIB_DEPENDS=	libalfont.so:x11-fonts/alfont \
+		liballeg.so:devel/allegro \
 		libogg.so:audio/libogg \
 		libvorbis.so:audio/libvorbis
 RUN_DEPENDS=	${LOCALBASE}/lib/libaldmb.a:audio/dumb-allegro

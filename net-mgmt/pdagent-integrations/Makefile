@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/pdagent-integrations/Makefile 451330 2017-10-05 18:35:51Z feld $
+# $FreeBSD: head/net-mgmt/pdagent-integrations/Makefile 455392 2017-12-03 08:25:31Z antoine $
 
 PORTNAME=	pdagent-integrations
 PORTVERSION=	1.4
@@ -13,7 +13,7 @@ LICENSE=	BSD3CLAUSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pdagent>0:net-mgmt/py-pdagent
 
-USES=	python shebangfix
+USES=	python:2.7 shebangfix
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	PagerDuty

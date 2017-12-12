@@ -1,8 +1,9 @@
 # Created by: torstenb@FreeBSD.org
-# $FreeBSD: head/misc/gnuit/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/misc/gnuit/Makefile 455914 2017-12-10 21:44:24Z gerald $
 
 PORTNAME=	gnuit
 PORTVERSION=	4.9.5
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	GNU
 

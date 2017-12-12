@@ -1,5 +1,5 @@
 # Created by: Gerhard Haering <gerhard.haering@gmx.de>
-# $FreeBSD: head/databases/py-pyPgSQL/Makefile 452070 2017-10-14 16:31:34Z bapt $
+# $FreeBSD: head/databases/py-pyPgSQL/Makefile 455341 2017-12-02 10:20:17Z antoine $
 
 PORTNAME=	pyPgSQL
 PORTVERSION=	2.5.1
@@ -15,7 +15,7 @@ BROKEN=		Invalid checksum
 
 RUN_DEPENDS=	${DATETIME_DEP}:lang/py-mx-base
 
-USES=	pgsql python
+USES=	pgsql python:2.7
 USE_PYTHON=	distutils
 
 DOCS=		Announce ChangeLog README README.html

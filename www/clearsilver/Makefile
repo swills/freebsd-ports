@@ -1,5 +1,5 @@
 # Created by: thinker <thinker@branda.to>
-# $FreeBSD: head/www/clearsilver/Makefile 387688 2015-05-27 23:22:09Z amdmi3 $
+# $FreeBSD: head/www/clearsilver/Makefile 456068 2017-12-11 21:48:32Z antoine $
 
 PORTNAME=	clearsilver
 PORTVERSION=	0.10.5
@@ -17,7 +17,7 @@ CONFIGURE_ARGS=	--disable-apache --disable-perl --disable-ruby \
 
 .if defined(WITH_PYTHON)
 CONFIGURE_ARGS+=	--with-python=${PYTHON_CMD}
-USES+=		python
+USES+=		python:2.7
 PLIST_SUB+=	PYTHON=""
 PKGNAMESUFFIX=	-python
 .else

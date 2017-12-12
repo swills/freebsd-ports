@@ -1,8 +1,9 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/pyrex/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/pyrex/Makefile 455443 2017-12-03 20:35:17Z sunpoet $
 
 PORTNAME=	pyrex
 PORTVERSION=	0.9.9
+PORTREVISION=	1
 CATEGORIES=	devel lang python
 MASTER_SITES=	http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 USE_PYTHON=	autoplist distutils
-USES=		python:2
+USES=		python:2.7
 
 PORTDOCS=	*
 PORTEXAMPLES=	*

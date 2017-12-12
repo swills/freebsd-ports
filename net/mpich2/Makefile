@@ -1,5 +1,5 @@
 # Created by: dbader@ece.unm.edu
-# $FreeBSD: head/net/mpich2/Makefile 450353 2017-09-22 10:48:57Z mat $
+# $FreeBSD: head/net/mpich2/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	mpich2
 DISTVERSION=	1.5
@@ -22,7 +22,7 @@ RUN_DEPENDS=	bash:shells/bash
 
 GNU_CONFIGURE=	yes
 USES=		libtool:keepla localbase fortran perl5 \
-		pkgconfig python
+		pkgconfig python:2.7
 USE_GCC=	yes
 USE_LDCONFIG=	yes
 USE_PERL5=	build

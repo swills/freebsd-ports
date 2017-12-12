@@ -1,8 +1,8 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Syntax-Highlight-Engine-Kate/Makefile 453033 2017-10-27 23:18:09Z sunpoet $
+# $FreeBSD: head/textproc/p5-Syntax-Highlight-Engine-Kate/Makefile 455472 2017-12-03 20:37:42Z sunpoet $
 
 PORTNAME=	Syntax-Highlight-Engine-Kate
-PORTVERSION=	0.12
+PORTVERSION=	0.13
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/xen-kernel/Makefile 452769 2017-10-24 14:11:22Z royger $
+# $FreeBSD: head/emulators/xen-kernel/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	xen
 PORTVERSION=	4.7.2
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 
 ONLY_FOR_ARCHS=	amd64
 
-USES=		cpe gmake python:build
+USES=		cpe gmake python:2.7,build
 
 # We need to use ld from ports because the version in base doesn't
 # support the '--build-id' switch that's needed for live hypervisor

@@ -1,8 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/devel/gnustep-make/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/devel/gnustep-make/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	gnustep-make
 PORTVERSION=	2.7.0
+PORTREVISION=	1
 CATEGORIES=	devel gnustep
 MASTER_SITES=	GNUSTEP/core
 
@@ -21,6 +22,7 @@ CONFIGURE_ARGS+=	--with-thread-lib=-pthread
 CONFIGURE_ARGS+=	--with-config-file=${GNUSTEP_PREFIX}/GNUstep.conf
 CONFIGURE_ARGS+=	--with-layout=gnustep
 CONFIGURE_ARGS+=	--enable-objc-nonfragile-abi --enable-native-objc-exceptions
+CONFIGURE_ARGS+=	--with-library-combo=ng-gnu-gnu
 GNU_CONFIGURE_PREFIX=	${GNUSTEP_PREFIX}
 
 post-install:

@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/www/py-pyquery/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-pyquery/Makefile 456068 2017-12-11 21:48:32Z antoine $
 
 PORTNAME=	pyquery
 PORTVERSION=	1.2.9
@@ -27,7 +27,7 @@ USES=		python:2.7 zip
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 
-DOCS_BUILD_DEPENDS=	sphinx-build:textproc/py-sphinx
+DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=0:textproc/py-sphinx@${FLAVOR}
 DOCS_VARS=	PYDISTUTILS_BUILD_TARGET+="build_sphinx -a -E"
 
 post-install-DOCS-on:

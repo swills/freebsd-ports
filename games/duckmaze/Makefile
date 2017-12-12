@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/duckmaze/Makefile 427413 2016-11-30 09:00:41Z amdmi3 $
+# $FreeBSD: head/games/duckmaze/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	duckmaze
 DISTVERSION=	0.3r34
@@ -21,7 +21,7 @@ RUN_DEPENDS=	${PYGAME}
 
 WRKSRC=		${WRKDIR}/${PORTNAME}/trunk
 
-USES=		python shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	*.py mopelib/mopelib.py
 NO_ARCH=	yes
 

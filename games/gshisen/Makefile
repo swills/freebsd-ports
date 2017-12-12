@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/games/gshisen/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/games/gshisen/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	gshisen
 PORTVERSION=	1.3.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	games gnustep
 MASTER_SITES=	SAVANNAH/gap
 DISTNAME=	GShisen-${PORTVERSION}

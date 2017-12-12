@@ -1,8 +1,9 @@
 # Created by: Hye-Shik Chang <perky@fallin.lv>
-# $FreeBSD: head/astro/py-pymetar/Makefile 426441 2016-11-19 17:06:20Z sunpoet $
+# $FreeBSD: head/astro/py-pymetar/Makefile 455438 2017-12-03 20:34:52Z sunpoet $
 
 PORTNAME=	pymetar
 PORTVERSION=	0.21
+PORTREVISION=	1
 CATEGORIES=	astro python geography
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils
-USES=		python:2 shebangfix
+USES=		python:2.7 shebangfix
 
 SHEBANG_FILES=	bin/${PORTNAME}
 

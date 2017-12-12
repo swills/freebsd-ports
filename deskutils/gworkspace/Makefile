@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/gworkspace/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/deskutils/gworkspace/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	gworkspace
 PORTVERSION=	0.9.4
+PORTREVISION=	1
 CATEGORIES=	deskutils gnustep
 #MASTER_SITES=	http://www.gnustep.it/enrico/gworkspace/
 MASTER_SITES=	GNUSTEP/usr-apps

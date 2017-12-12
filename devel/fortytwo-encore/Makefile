@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/fortytwo-encore/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/devel/fortytwo-encore/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	encore
 PORTVERSION=	0.3.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel gnustep
 MASTER_SITES=	SF/fortytwo/Encore/${PORTVERSION}
 PKGNAMEPREFIX=	fortytwo-

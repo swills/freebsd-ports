@@ -1,5 +1,5 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/chinese/sunpinyin/Makefile 425207 2016-11-03 13:29:58Z mat $
+# $FreeBSD: head/chinese/sunpinyin/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	sunpinyin
 DISTVERSION=	2.0.4rc3
@@ -21,7 +21,7 @@ GH_TAGNAME=	a8bd811
 
 MAKE_ARGS+=	--prefix=${PREFIX}
 USE_LDCONFIG=	yes
-USES=		gmake iconv perl5 pkgconfig python scons shebangfix
+USES=		gmake iconv perl5 pkgconfig python:2.7 scons shebangfix
 USE_PERL5=	build
 SHEBANG_FILES=	python/*.py
 LDFLAGS+=	-L${LOCALBASE}/lib ${ICONV_LIB}

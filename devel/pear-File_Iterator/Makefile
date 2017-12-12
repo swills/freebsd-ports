@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/pear-File_Iterator/Makefile 449807 2017-09-13 17:03:05Z joneum $
+# $FreeBSD: head/devel/pear-File_Iterator/Makefile 455613 2017-12-05 19:52:41Z joneum $
 
 PORTNAME=	File_Iterator
-PORTVERSION=	1.4.2
+DISTVERSION=	1.4.5
 CATEGORIES=	devel www pear
 PKGNAMEPREFIX=	pear-
 
@@ -19,15 +19,14 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	sebastianbergmann
 GH_PROJECT=	php-file-iterator
 
+NO_ARCH=	yes
+
 NO_BUILD=	yes
 
-PHP_DIR=	share/PHP
-
-PLIST_FILES=	${PHP_DIR}/${PORTNAME}/Iterator.php
+PLIST_FILES=	${DATADIR}/Iterator.php
 
 do-install:
-	${MKDIR} ${STAGEDIR}${PREFIX}/${PHP_DIR}/${PORTNAME}
-	${INSTALL_SCRIPT} ${WRKSRC}/src/Iterator.php \
-		${STAGEDIR}${PREFIX}/${PHP_DIR}/${PORTNAME}
+	${MKDIR} ${STAGEDIR}${DATADIR}
+	${INSTALL_DATA} ${WRKSRC}/src/Iterator.php ${STAGEDIR}${DATADIR}
 
 .include <bsd.port.mk>

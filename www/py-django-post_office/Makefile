@@ -1,11 +1,10 @@
 # Created by: Richard Gallamore <ultima@FreeBSD.org>
-# $FreeBSD: head/www/py-django-post_office/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django-post_office/Makefile 455689 2017-12-07 01:49:10Z ultima $
 
 PORTNAME=	django-post_office
-PORTVERSION=	3.0.3
 DISTVERSIONPREFIX=	v
+DISTVERSION=	3.0.4
 CATEGORIES=	www python
-MASTER_SITES=	GH
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	ultima@FreeBSD.org

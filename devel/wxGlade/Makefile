@@ -1,5 +1,5 @@
 # Created by: Michal Pasternak <dotz@irc.pl>
-# $FreeBSD: head/devel/wxGlade/Makefile 415174 2016-05-14 02:01:33Z pi $
+# $FreeBSD: head/devel/wxGlade/Makefile 455817 2017-12-09 07:00:50Z antoine $
 
 PORTNAME=	wxglade
 PORTVERSION=	0.7.2
@@ -13,7 +13,7 @@ COMMENT=	GUI builder for wxPython/wxWidgets written in Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-USES=		python
+USES=		python:2.7
 USE_WX=		3.0+
 WX_COMPS=	python
 

@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/gtranslator/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/gtranslator/Makefile 456048 2017-12-11 16:48:54Z antoine $
 
 PORTNAME=	gtranslator
 PORTVERSION=	2.91.7
@@ -24,6 +24,7 @@ USE_GNOME=	intlhack gnomeprefix gtk30 libgda5 gtksourceview3 libxml2 \
 		introspection:build
 USES=		desktop-file-utils gettext gmake libtool pathfix \
 		pkgconfig python tar:xz
+USE_PYTHON=	py3kplist
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 INSTALLS_ICONS=	yes

@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-p2p/go-ethereum/Makefile 452165 2017-10-15 21:05:30Z ultima $
+# $FreeBSD: head/net-p2p/go-ethereum/Makefile 455345 2017-12-02 11:08:41Z riggs $
 
 PORTNAME=	go-ethereum
-PORTVERSION=	1.7.2
+PORTVERSION=	1.7.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-p2p
 

@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/textproc/pear-Horde_Kolab_Format/Makefile 369674 2014-09-30 22:14:59Z bapt $
+# $FreeBSD: head/textproc/pear-Horde_Kolab_Format/Makefile 455798 2017-12-08 20:21:01Z joneum $
 
 PORTNAME=	Horde_Kolab_Format
-PORTVERSION=	2.0.2
+DISTVERSION=	2.0.9
 CATEGORIES=	textproc www pear
 
 MAINTAINER=	horde@FreeBSD.org

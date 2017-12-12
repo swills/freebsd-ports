@@ -1,8 +1,9 @@
-# $FreeBSD: head/x11-wm/cwm/Makefile 452340 2017-10-18 14:53:19Z tobik $
+# $FreeBSD: head/x11-wm/cwm/Makefile 456069 2017-12-11 21:53:59Z tobik $
 
 PORTNAME=	cwm
 DISTVERSIONPREFIX=	v
-DISTVERSION=	6.2
+DISTVERSION=	6.2-9
+DISTVERSIONSUFFIX=	-ga0774f4
 CATEGORIES=	x11-wm
 
 MAINTAINER=	tobik@FreeBSD.org

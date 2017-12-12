@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/uhd/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/comms/uhd/Makefile 455392 2017-12-03 08:25:31Z antoine $
 
 PORTNAME=	uhd
 PORTVERSION=	3.10.1.1
@@ -14,7 +14,7 @@ COMMENT=	Ettus Research UHD driver framework
 LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/tuple/tuple.hpp:devel/boost-libs \
 		cheetah-analyze:devel/py-cheetah@${PY_FLAVOR} \
-		rst2html:textproc/py-docutils@${PY_FLAVOR} \
+		rst2html:textproc/py-docutils \
 		orcc:devel/orc \
 		${PYTHON_PKGNAMEPREFIX}mako>0:textproc/py-mako@${PY_FLAVOR}
 

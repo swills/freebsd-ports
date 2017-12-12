@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/deskutils/cycle/Makefile 439062 2017-04-21 12:10:20Z amdmi3 $
+# $FreeBSD: head/deskutils/cycle/Makefile 455547 2017-12-04 21:33:58Z antoine $
 
 PORTNAME=	cycle
 PORTVERSION=	0.3.1
@@ -12,7 +12,7 @@ COMMENT=	Calendar program for women
 
 LICENSE=	GPLv2+
 
-USES=		python:run shebangfix tar:bzip2
+USES=		python:2.7,run shebangfix tar:bzip2
 SHEBANG_FILES=	cycle.py
 USE_WX=		3.0+
 WX_COMPS=	python

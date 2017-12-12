@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/archivers/jzlib/Makefile 347400 2014-03-07 15:35:40Z bapt $
+# $FreeBSD: head/archivers/jzlib/Makefile 456112 2017-12-12 09:00:32Z amdmi3 $
 
 PORTNAME=	jzlib
 PORTVERSION=	1.1.1
@@ -9,9 +9,13 @@ MASTER_SITES=	http://www.jcraft.com/jzlib/
 MAINTAINER=	danilo@FreeBSD.org
 COMMENT=	Reimplementation of zlib in pure Java
 
+LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
 USES=		zip
 USE_JAVA=	yes
 JAVA_VERSION=	1.6+
+NO_ARCH=	yes
 
 JAR_FILE=	${WRKSRC}/src/main/java/${PORTNAME}.jar
 
@@ -26,12 +30,16 @@ do-build:
 		${JAR} -cf ${PORTNAME}.jar
 
 do-install:
+	${INSTALL_DATA} ${JAR_FILE} ${STAGEDIR}/${JAVAJARDIR}/${PORTNAME}.jar
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}/${DOCSDIR}
 .for file in ChangeLog LICENSE.txt README
-	@${INSTALL_DATA} ${WRKSRC}/${file} ${STAGEDIR}/${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/${file} ${STAGEDIR}/${DOCSDIR}
 .endfor
+
+do-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}/${EXAMPLESDIR}
 	${INSTALL_DATA} ${WRKSRC}/example/* ${STAGEDIR}/${EXAMPLESDIR}
-	${INSTALL_DATA} ${JAR_FILE} ${STAGEDIR}/${JAVAJARDIR}/${PORTNAME}.jar
 
 .include <bsd.port.mk>

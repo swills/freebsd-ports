@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: head/sysutils/consul/files/consul.in 449981 2017-09-17 01:44:09Z swills $
+# $FreeBSD: head/sysutils/consul/files/consul.in 455627 2017-12-05 21:31:37Z swills $
 #
 # PROVIDE: consul
 # REQUIRE: LOGIN
@@ -37,9 +37,6 @@ command="/usr/sbin/daemon"
 command_args="-f -p ${pidfile} /usr/bin/env ${consul_env} ${procname} agent -data-dir=${consul_dir} -config-dir=%%PREFIX%%/etc/consul.d ${consul_args}"
 
 start_precmd=consul_startprecmd
-restart_precmd=consul_checkconfig
-reload_precmd=consul_checkconfig
-configtest_cmd=consul_checkconfig
 
 consul_startprecmd()
 {
@@ -50,12 +47,6 @@ consul_startprecmd()
         if [ ! -d ${consul_dir} ]; then
                 install -d -o ${consul_user} -g ${consul_group} ${consul_dir}
         fi
-	consul_checkconfig
-}
-
-consul_checkconfig()
-{
-	${procname} validate /usr/local/etc/consul.d
 }
 
 run_rc_command "$1"

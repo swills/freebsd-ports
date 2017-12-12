@@ -1,5 +1,5 @@
 # Created by: tundra
-# $FreeBSD: head/x11-fm/twander/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-fm/twander/Makefile 456068 2017-12-11 21:48:32Z antoine $
 
 PORTNAME=	twander
 PORTVERSION=	3.231
@@ -10,10 +10,10 @@ MASTER_SITES=	http://www.tundraware.com/Software/twander/
 MAINTAINER=	twander@tundraware.com
 COMMENT=	Better Filesystem Browser
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${PY_FLAVOR}
 
-USES=		python
+USES=		python:2.7
 NO_ARCH=	yes
 
 OPTIONS_DEFINE=	DOCS

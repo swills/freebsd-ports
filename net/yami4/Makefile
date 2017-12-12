@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/yami4/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net/yami4/Makefile 456093 2017-12-12 03:21:59Z jbeich $
 
 PORTNAME=	yami4
 PORTVERSION=	1.10.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	http://www.inspirel.com/yami4/files/
 DISTNAME=	yami4-gpl-1.10.0
@@ -13,13 +13,12 @@ COMMENT=	Messaging library for distributed systems
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/gpl-3.0.txt
 
-BROKEN_powerpc64=	Does not build: error: snprintf is not a member of std
-
-# USES=		compiler:c++11-lib
+MAKE_ARGS=	OPTIONS="${CXXFLAGS}"
+CXXFLAGS+=	-D_GLIBCXX_USE_C99 # XXX ports/193528
 
 do-build :
-	cd ${WRKSRC}/src/core; make
-	cd ${WRKSRC}/src/cpp; make
+	${DO_MAKE_BUILD} -C ${WRKSRC}/src/core
+	${DO_MAKE_BUILD} -C ${WRKSRC}/src/cpp
 
 do-install :
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/doc/yami4

@@ -1,5 +1,5 @@
 # Created by: jagapen@home.com
-# $FreeBSD: head/devel/libffcall/Makefile 446847 2017-07-28 18:58:24Z ultima $
+# $FreeBSD: head/devel/libffcall/Makefile 455813 2017-12-09 00:42:05Z linimon $
 
 PORTNAME=	libffcall
 PORTVERSION=	1.13
@@ -10,6 +10,9 @@ MAINTAINER=	amutu@amutu.com
 COMMENT=	Foreign function call libraries
 
 LICENSE=	GPLv2+
+
+BROKEN_armv6=		fails to build: avcall-armhf.s:46:2: error: '.syntax divided' arm assembly not supported
+BROKEN_armv7=		fails to build: avcall-armhf.s:46:2: error: '.syntax divided' arm assembly not supported
 
 GNU_CONFIGURE=	yes
 USES=		gmake libtool

@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/battletanks/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/battletanks/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	btanks
 PORTVERSION=	0.9.8083
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libsigc-2.0.so:devel/libsigc++20 \
 		libvorbisfile.so:audio/libvorbis \
 		libsmpeg.so:multimedia/smpeg
 
-USES=		openal:al pkgconfig lua:51 python:build scons tar:bzip2
+USES=		openal:al pkgconfig lua:51 python:2.7,build scons tar:bzip2
 USE_LDCONFIG=	yes
 USE_SDL=	image sdl
 MAKE_ARGS=	prefix=${PREFIX} resources_dir=${DATADIR} \

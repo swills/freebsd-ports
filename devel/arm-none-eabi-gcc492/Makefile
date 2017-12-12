@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/arm-none-eabi-gcc492/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/devel/arm-none-eabi-gcc492/Makefile 455765 2017-12-08 01:46:00Z linimon $
 
 PORTNAME=	gcc
 PORTVERSION=	4.9.2
@@ -69,8 +69,6 @@ MAKE_ARGS+=	CXXFLAGS=-fbracket-depth=512
 .endif
 
 BROKEN_aarch64=		fails to package
-BROKEN_armv6=		error: no member named 'fancy_abort' in namespace 'std::__1'; did you mean simply 'fancy_abort'?
-BROKEN_armv7=		error: no member named 'fancy_abort' in namespace 'std::__1'; did you mean simply 'fancy_abort'?
 BROKEN_mips=		configure: error: cannot compute suffix of object files: cannot compile
 BROKEN_mips64=		configure: error: cannot compute suffix of object files: cannot compile
 

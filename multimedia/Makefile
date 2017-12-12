@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/multimedia/Makefile 455908 2017-12-10 19:55:16Z yuri $
 #
 
     COMMENT = Multimedia software
@@ -31,6 +31,7 @@
     SUBDIR += ccextractor
     SUBDIR += cclive
     SUBDIR += cheese
+    SUBDIR += chilitags
     SUBDIR += clipgrab
     SUBDIR += clive
     SUBDIR += clutter-gst
@@ -209,6 +210,7 @@
     SUBDIR += libsmacker
     SUBDIR += libtheora
     SUBDIR += libtuner
+    SUBDIR += libuvc
     SUBDIR += libv4l
     SUBDIR += libva
     SUBDIR += libva-intel-driver
@@ -443,6 +445,7 @@
     SUBDIR += vtkmpeg2encode
     SUBDIR += w_scan
     SUBDIR += webcamd
+    SUBDIR += webcamoid
     SUBDIR += webvfx-qt5
     SUBDIR += win32-codecs
     SUBDIR += winff

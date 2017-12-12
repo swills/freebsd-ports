@@ -1,5 +1,5 @@
 # Created by: Jason Bacon <bacon11@tds.net>
-# $FreeBSD: head/devel/libnxt/Makefile 436231 2017-03-15 11:46:30Z amdmi3 $
+# $FreeBSD: head/devel/libnxt/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	libnxt
 PORTVERSION=	0.3
@@ -10,7 +10,7 @@ MAINTAINER=	bacon4000@gmail.com
 COMMENT=	Lego NXT library
 
 SUB_FILES=	pkg-message
-USES=		python:build scons shebangfix
+USES=		python:2.7,build scons shebangfix
 USE_LDCONFIG=	yes
 SHEBANG_FILES=	make_flash_header.py
 

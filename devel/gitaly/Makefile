@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/gitaly/Makefile 455053 2017-11-28 16:06:22Z tz $
+# $FreeBSD: head/devel/gitaly/Makefile 455591 2017-12-05 16:44:09Z tz $
 
 PORTNAME=	gitaly
 DISTVERSIONPREFIX=	v
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://gitlab.com/gitlab-org/${PORTNAME}/repository/archive.tar.gz?ref=${DISTVERSIONPREFIX}${PORTVERSION}&dummy=/
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	idefix@fechner.net
 COMMENT=	Smart reverse proxy for GitLab
 
 LICENSE=	MIT

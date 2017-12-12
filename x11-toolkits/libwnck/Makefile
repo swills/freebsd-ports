@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/libwnck/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/x11-toolkits/libwnck/Makefile 455291 2017-12-01 13:37:52Z amdmi3 $
 #   $MCom$
 
 PORTNAME=	libwnck
@@ -18,14 +18,15 @@ PORTSCOUT=	ignore:1
 
 .if !defined(REFERENCE_PORT)
 
+LICENSE=	LGPL20+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 USE_XORG=	xres x11
 USE_GNOME=	gtk20 referencehack intlhack introspection
-USES+=		bison gettext gmake libtool:keepla pathfix pkgconfig
+USES+=		bison gettext gmake libtool:keepla localbase:ldflags pathfix pkgconfig
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-html-dir=${PREFIX}/share/doc
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 INSTALL_TARGET=	install-strip
 
 OPTIONS_DEFINE=	STARTUP

@@ -1,8 +1,8 @@
 # Created by: Nikolay Pavlov <qpadla@gmail.com>
-# $FreeBSD: head/net-im/openfire/Makefile 452268 2017-10-17 07:18:06Z gahr $
+# $FreeBSD: head/net-im/openfire/Makefile 455696 2017-12-07 08:47:12Z gahr $
 
 PORTNAME=	openfire
-PORTVERSION=	4.1.6
+PORTVERSION=	4.2.0
 DISTVERSIONPREFIX=	v
 PORTREVISION=	0
 PORTEPOCH=	1

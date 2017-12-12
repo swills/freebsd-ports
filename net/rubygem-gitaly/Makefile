@@ -1,11 +1,11 @@
-# $FreeBSD: head/net/rubygem-gitaly/Makefile 452774 2017-10-24 14:25:30Z tz $
+# $FreeBSD: head/net/rubygem-gitaly/Makefile 455591 2017-12-05 16:44:09Z tz $
 
 PORTNAME=	gitaly
 PORTVERSION=	0.14.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	idefix@fechner.net
 COMMENT=	Auto-generated gRPC client for gitaly
 
 LICENSE=	MIT

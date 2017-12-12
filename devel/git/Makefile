@@ -1,5 +1,5 @@
 # Created by: Eric Anholt
-# $FreeBSD: head/devel/git/Makefile 455157 2017-11-29 23:30:43Z garga $
+# $FreeBSD: head/devel/git/Makefile 455883 2017-12-10 09:00:26Z amdmi3 $
 
 PORTNAME=	git
 DISTVERSION=	2.15.1
@@ -15,6 +15,7 @@ MAINTAINER=	garga@FreeBSD.org
 COMMENT?=	Distributed source code management tool
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 CONFLICTS_INSTALL?=	git-gui-[0-9]* git-subversion-[0-9]* git-lite-[0-9]*
 

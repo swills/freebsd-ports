@@ -1,5 +1,5 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/games/xoids/Makefile 441875 2017-05-27 21:16:51Z linimon $
+# $FreeBSD: head/games/xoids/Makefile 455765 2017-12-08 01:46:00Z linimon $
 
 PORTNAME=	xoids
 PORTVERSION=	1.5
@@ -10,7 +10,6 @@ MASTER_SITES=	XCONTRIB/games
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	X Window Asteroids style game with full color pixmaps
 
-BROKEN_armv6=		dumps core: Unknown addressing mode for CP reference!
 NOT_FOR_ARCHS=		mips64
 NOT_FOR_ARCHS_REASON=	unknown architecture
 

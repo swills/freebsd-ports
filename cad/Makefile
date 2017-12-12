@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/Makefile 447973 2017-08-15 00:18:22Z pfg $
+# $FreeBSD: head/cad/Makefile 455420 2017-12-03 19:20:35Z yuri $
 #
 
     COMMENT = CAD tools
@@ -86,6 +86,7 @@
     SUBDIR += sp2sp
     SUBDIR += spice
     SUBDIR += stepcode
+    SUBDIR += sumo
     SUBDIR += sweethome3d
     SUBDIR += tkgate
     SUBDIR += tochnog

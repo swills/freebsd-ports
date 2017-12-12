@@ -1,8 +1,8 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/www/owncloud/Makefile 451433 2017-10-07 09:12:37Z sunpoet $
+# $FreeBSD: head/www/owncloud/Makefile 455951 2017-12-11 10:37:49Z sunpoet $
 
 PORTNAME=	owncloud
-PORTVERSION=	10.0.3
+PORTVERSION=	10.0.4
 CATEGORIES=	www
 MASTER_SITES=	http://download.owncloud.org/community/
 
@@ -27,7 +27,7 @@ SUB_FILES=	pkg-message newsyslog
 PLIST_SUB=	OWNCLOUD_USERNAME=${OWNCLOUD_USERNAME} \
 		OWNCLOUD_GROUPNAME=${OWNCLOUD_GROUPNAME}
 
-OPTIONS_DEFINE=	EXIF LDAP SMB SSL
+OPTIONS_DEFINE=	EXAMPLES EXIF LDAP SMB SSL
 OPTIONS_MULTI=	DB
 OPTIONS_MULTI_DB=	MYSQL PGSQL SQLITE
 OPTIONS_DEFAULT=EXIF LDAP MYSQL SMB SSL
@@ -45,12 +45,13 @@ SMB_RUN_DEPENDS=	pecl-smbclient>=0.8.0:net/pecl-smbclient
 SSL_USE=	PHP=openssl
 
 do-install:
-	@${MKDIR} -m 0755 ${STAGEDIR}${WWWDIR}
-	@cd ${WRKSRC} && \
-		${COPYTREE_SHARE} . ${STAGEDIR}${WWWDIR}
-	@${MKDIR} ${STAGEDIR}${WWWDIR}/data
-	${MKDIR} ${STAGEDIR}${EXAMPLESDIR} \
-		${STAGEDIR}${PREFIX}/etc/newsyslog.conf.d/
+	${MKDIR} ${STAGEDIR}${PREFIX}/etc/newsyslog.conf.d/
+	${MKDIR} -m 0755 ${STAGEDIR}${WWWDIR}/
+	cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${WWWDIR}
+	${MKDIR} ${STAGEDIR}${WWWDIR}/data
+
+do-install-EXAMPLES-on:
+	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/
 	${INSTALL_DATA} ${WRKDIR}/newsyslog ${STAGEDIR}${EXAMPLESDIR}
 
 .include <bsd.port.mk>

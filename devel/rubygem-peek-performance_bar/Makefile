@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/rubygem-peek-performance_bar/Makefile 448630 2017-08-23 16:54:08Z tz $
+# $FreeBSD: head/devel/rubygem-peek-performance_bar/Makefile 455591 2017-12-05 16:44:09Z tz $
 
 PORTNAME=	peek-performance_bar
 PORTVERSION=	1.3.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	idefix@fechner.net
 COMMENT=	Take a peek into the window.performance timing behind your app
 
 LICENSE=	MIT

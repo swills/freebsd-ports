@@ -1,12 +1,12 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/math/glpk/Makefile 455015 2017-11-28 03:03:52Z yuri $
+# $FreeBSD: head/math/glpk/Makefile 455530 2017-12-04 18:11:52Z pi $
 
 PORTNAME=	glpk
-DISTVERSION=	4.63
+DISTVERSION=	4.64
 CATEGORIES=	math
 MASTER_SITES=	GNU
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dg@syrec.org
 COMMENT=	GNU Linear Programming Kit
 
 LICENSE=	GPLv3+

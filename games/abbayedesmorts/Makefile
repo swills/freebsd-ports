@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/abbayedesmorts/Makefile 421362 2016-09-05 12:36:56Z amdmi3 $
+# $FreeBSD: head/games/abbayedesmorts/Makefile 455610 2017-12-05 19:35:40Z amdmi3 $
 
 PORTNAME=	abbayedesmorts
 PORTVERSION=	2.0.1
@@ -9,7 +9,8 @@ CATEGORIES=	games
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Cross-platform port of l'Abbaye des Morts by Locomalito
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3 CC-BY-3.0
+LICENSE_COMB=	multi
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	nevat

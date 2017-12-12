@@ -1,11 +1,11 @@
 # Created by: Dean Freeman (wfreeman@sourcefire.com)
-# $FreeBSD: head/net/daq/Makefile 447034 2017-08-01 17:07:58Z zi $
+# $FreeBSD: head/net/daq/Makefile 456070 2017-12-11 22:31:19Z feld $
 
 PORTNAME=	daq
-PORTVERSION=	2.0.6
-PORTREVISION=	1
+PORTVERSION=	2.2.2
+PORTREVISION=	0
 CATEGORIES=	net
-MASTER_SITES=	https://snort.org/downloads/snort/ \
+MASTER_SITES=	https://snort.org/downloads/snortplus/ \
 		ZI
 
 MAINTAINER=	zi@FreeBSD.org

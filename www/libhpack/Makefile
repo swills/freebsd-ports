@@ -1,9 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/libhpack/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/www/libhpack/Makefile 455446 2017-12-03 20:35:32Z sunpoet $
 
 PORTNAME=	libhpack
 PORTVERSION=	0.0.20140710
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	https://raw.github.com/http2/http2-spec/master/:ec_xml
 DISTFILES=	draft-ietf-httpbis-header-compression.xml:ec_xml
@@ -27,7 +27,7 @@ CMAKE_ARGS=	-DBUILD_DOCS=OFF \
 		-DUSE_VALGRIND=OFF
 MAKE_JOBS_UNSAFE=	yes
 USE_LDCONFIG=	yes
-USES=		cmake pathfix pkgconfig python:2,build shebangfix
+USES=		cmake pathfix pkgconfig python:2.7,build shebangfix
 
 GH_ACCOUNT=	alobbs
 GH_TAGNAME=	b0ade19

@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.options.desc.mk 454235 2017-11-15 12:40:07Z tobik $
+# $FreeBSD: head/Mk/bsd.options.desc.mk 455545 2017-12-04 21:30:00Z sunpoet $
 #
 # READ BEFORE EDITING:
 # - Please keep descriptions sorted alphabetically by variable name.
@@ -42,6 +42,7 @@ BDB_DESC?=		Berkeley DB support
 BDB1_DESC?=		Berkeley DB 1.85 support
 BITTORRENT_DESC?=	BitTorrent file sharing support
 BOOST_DESC?=		Boost C++ libraries support
+BROTLI_DESC?=		Brotli compression support
 BZIP2_DESC?=		bzip2 compression support
 CACA_DESC?=		libcaca graphics library support
 CAIRO_DESC?=		Cairo graphics library support

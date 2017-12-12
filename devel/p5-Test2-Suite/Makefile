@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test2-Suite/Makefile 455164 2017-11-30 04:14:11Z sunpoet $
+# $FreeBSD: head/devel/p5-Test2-Suite/Makefile 455956 2017-12-11 10:38:14Z sunpoet $
 
 PORTNAME=	Test2-Suite
-PORTVERSION=	0.000092
+PORTVERSION=	0.000096
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:EXODIST
@@ -20,7 +20,7 @@ BUILD_DEPENDS=	p5-Importer>=0.024:devel/p5-Importer \
 		p5-Scope-Guard>=0:devel/p5-Scope-Guard \
 		p5-Sub-Info>=0.002:devel/p5-Sub-Info \
 		p5-Term-Table>=0.002:devel/p5-Term-Table \
-		p5-Test-Simple>=1.302111:devel/p5-Test-Simple
+		p5-Test-Simple>=1.302119:devel/p5-Test-Simple
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes

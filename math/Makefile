@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 454506 2017-11-19 21:59:32Z yuri $
+# $FreeBSD: head/math/Makefile 455493 2017-12-03 23:12:34Z rodrigo $
 #
 
     COMMENT = Mathematics
@@ -325,6 +325,7 @@
     SUBDIR += nauty
     SUBDIR += ndiff
     SUBDIR += newmat
+    SUBDIR += nfft
     SUBDIR += ngraph
     SUBDIR += nlopt
     SUBDIR += ntl

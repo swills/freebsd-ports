@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/myrddin/Makefile 450355 2017-09-22 11:11:02Z tobik $
+# $FreeBSD: head/lang/myrddin/Makefile 455792 2017-12-08 18:42:13Z tobik $
 
 PORTNAME=	myrddin
 PORTVERSION=	0.2.0
@@ -16,6 +16,7 @@ ONLY_FOR_ARCHS=	amd64
 USES=	gmake
 
 HAS_CONFIGURE=	yes
+CONFIGURE_ARGS=	--prefix "${PREFIX}"
 WRKSRC=	${WRKDIR}/mc
 TEST_TARGET=	check
 

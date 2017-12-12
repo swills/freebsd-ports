@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/iqtree/Makefile 453620 2017-11-06 14:24:39Z mat $
+# $FreeBSD: head/biology/iqtree/Makefile 455927 2017-12-11 07:18:48Z linimon $
 
 PORTNAME=	iqtree
 DISTVERSIONPREFIX=	v
@@ -14,6 +14,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/eigen3.pc:math/eigen3
 RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/eigen3.pc:math/eigen3
+
+BROKEN_aarch64=		fails to compile: unrecognized command line option '-msse3'
+BROKEN_armv6=		fails to compile: unrecognized command line options '-m32' and '-msse3'
+BROKEN_armv7=		fails to compile: unrecognized command line options '-m32' and '-msse3'
 
 USES=		cmake compiler:openmp
 USE_GITHUB=	yes

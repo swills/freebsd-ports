@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/blitz/Makefile 454833 2017-11-24 19:02:50Z yuri $
+# $FreeBSD: head/devel/blitz/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	blitz
 DISTVERSION=	1.0.1
@@ -10,7 +10,7 @@ COMMENT=	Blitz++ Multi-Dimensional Array Library for C++
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		gmake libtool localbase python:build
+USES=		gmake libtool localbase python:2.7,build
 USE_GITHUB=	yes
 GH_ACCOUNT=	blitzpp
 GNU_CONFIGURE=	yes

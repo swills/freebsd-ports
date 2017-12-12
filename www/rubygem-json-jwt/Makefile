@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-json-jwt/Makefile 453684 2017-11-07 21:01:47Z sunpoet $
+# $FreeBSD: head/www/rubygem-json-jwt/Makefile 455970 2017-12-11 10:40:46Z sunpoet $
 
 PORTNAME=	json-jwt
-PORTVERSION=	1.8.0
+PORTVERSION=	1.8.3
 CATEGORIES=	www devel rubygems
 MASTER_SITES=	RG
 
