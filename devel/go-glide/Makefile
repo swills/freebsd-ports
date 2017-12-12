@@ -1,8 +1,8 @@
 # Created by: Carlo Strub <cs@FreeBSD.org>
-# $FreeBSD: head/devel/go-glide/Makefile 451165 2017-10-03 19:32:20Z cs $
+# $FreeBSD: head/devel/go-glide/Makefile 455762 2017-12-07 22:30:05Z cs $
 
 PORTNAME=	glide
-PORTVERSION=	0.13.0
+PORTVERSION=	0.13.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	go-

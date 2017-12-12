@@ -1,5 +1,5 @@
 # Created by: Dierk Sacher <dierk@blaxxtarz.de>
-# $FreeBSD: head/multimedia/ffmpegthumbnailer/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/multimedia/ffmpegthumbnailer/Makefile 456105 2017-12-12 04:35:49Z jbeich $
 
 PORTNAME=	ffmpegthumbnailer
 PORTVERSION=	2.2.0
@@ -14,8 +14,6 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libswscale.so:multimedia/ffmpeg
-
-BROKEN_powerpc64=	fails to compile: moviedecoder.cpp: error: 'to_string' is not a member of 'std'
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	dirkvdb

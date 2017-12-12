@@ -1,8 +1,8 @@
-# $FreeBSD: head/biology/biococoa/Makefile 451982 2017-10-13 11:14:53Z bapt $
+# $FreeBSD: head/biology/biococoa/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	biococoa
 PORTVERSION=	2.2.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	biology gnustep
 MASTER_SITES=	http://bioinformatics.org/biococoa/downloads/
 DISTNAME=	biococoa-${PORTVERSION}-src

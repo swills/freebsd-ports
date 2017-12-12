@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/www/py-django18/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django18/Makefile 455898 2017-12-10 13:48:51Z wen $
 
 PORTNAME=	django
 PORTVERSION=	1.8.18
@@ -26,7 +26,9 @@ USE_PYTHON=	autoplist distutils
 SHEBANG_FILES=	django/bin/django-admin.py \
 		django/conf/project_template/manage.py
 
-CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}django-devel ${PYTHON_PKGNAMEPREFIX}django1[69] ${PYTHON_PKGNAMEPREFIX}django110
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}django-devel \
+			${PYTHON_PKGNAMEPREFIX}django11[01] \
+			${PYTHON_PKGNAMEPREFIX}django20
 CPE_VENDOR=		djangoproject
 
 DOCSDIR=	${PREFIX}/share/doc/py-django

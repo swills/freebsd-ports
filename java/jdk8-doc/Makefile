@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/jdk8-doc/Makefile 441827 2017-05-27 06:33:43Z glewis $
+# $FreeBSD: head/java/jdk8-doc/Makefile 455929 2017-12-11 08:20:17Z pi $
 
 PORTNAME=	jdk
 PORTVERSION=	${JDK_VERSION}.${JDK_UPDATE_VER}
@@ -15,7 +15,7 @@ RESTRICTED=	This documentation is under license and export control.
 
 WRKSRC=		${WRKDIR}/docs
 JDK_VERSION=	8
-JDK_UPDATE_VER=	131
+JDK_UPDATE_VER=	152
 DOWNLOAD_URL=	http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
 NO_BUILD=	yes

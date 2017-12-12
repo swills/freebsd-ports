@@ -1,5 +1,5 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/lang/chez-scheme/Makefile 455040 2017-11-28 13:31:18Z mat $
+# $FreeBSD: head/lang/chez-scheme/Makefile 455643 2017-12-06 11:55:20Z mat $
 
 PORTNAME=	chez-scheme
 PORTVERSION=	9.5
@@ -24,8 +24,6 @@ GH_PROJECT=	ChezScheme
 GH_TUPLE=	nanopass:nanopass-framework-scheme:v1.9:nanopass/nanopass \
 		madler:zlib:v1.2.11:zlib/zlib \
 		dybvig:stex:v1.2.1:stex/stex
-
-WRKSRC=		${WRKDIR}/ChezScheme-${PORTVERSION}
 
 USES=		gmake iconv:lib ncurses
 USE_XORG=	x11

@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Rinci/Makefile 453031 2017-10-27 23:17:59Z sunpoet $
+# $FreeBSD: head/devel/p5-Rinci/Makefile 455955 2017-12-11 10:38:09Z sunpoet $
 
 PORTNAME=	Rinci
-PORTVERSION=	1.1.85
+PORTVERSION=	1.1.86
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:PERLANCAR

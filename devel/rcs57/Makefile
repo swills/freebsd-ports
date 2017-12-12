@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rcs57/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/devel/rcs57/Makefile 455927 2017-12-11 07:18:48Z linimon $
 
 PORTNAME=	rcs
 PORTVERSION=	5.7
@@ -9,16 +9,19 @@ PKGNAMESUFFIX=	57
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Version control system (as was in FreeBSD prior to removal)
 
+LICENSE=	GPLv2
+
+BROKEN_armv6=		fails to build: runaway build
+BROKEN_armv7=		fails to build: runaway build
+
+CONFLICTS=	rcs-5.[89]*
+
 OPTIONS_DEFINE=	FREEBSD
 OPTIONS_DEFAULT=	FREEBSD
 FREEBSD_DESC=	Apply FreeBSD patches
 
-CONFLICTS=	rcs-5.[89]*
-LICENSE=	GPLv2
-
 USES=		desthack gmake
 GNU_CONFIGURE=	yes
-
 
 FREEBSD_EXTRA_PATCHES+=	${FILESDIR}/freebsd-src-ident.c \
 		${FILESDIR}/freebsd-src-maketime.c \

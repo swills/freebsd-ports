@@ -1,8 +1,8 @@
 # Created by: Elvis Chiang <elvis@sslab.cs.ccu.edu.tw>
-# $FreeBSD: head/www/wordpress/Makefile 454827 2017-11-24 17:26:47Z joneum $
+# $FreeBSD: head/www/wordpress/Makefile 455354 2017-12-02 12:20:31Z joneum $
 
 PORTNAME=	wordpress
-PORTVERSION=	4.9
+DISTVERSION=	4.9.1
 PORTEPOCH=	1
 CATEGORIES=	www
 MASTER_SITES=	http://wordpress.org/
@@ -20,8 +20,8 @@ USES=		php:web cpe
 USE_PHP=	curl gd hash mysqli pcre tokenizer xml zip zlib ftp
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-.if ${PORTVERSION:N*.*.*}
-CPE_VERSION=	${PORTVERSION}.0
+.if ${DISTVERSION:N*.*.*}
+CPE_VERSION=	${DISTVERSION}.0
 .endif
 
 SUB_FILES=	pkg-message

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-rice/Makefile 454725 2017-11-22 23:35:51Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rice/Makefile 455765 2017-12-08 01:46:00Z linimon $
 
 PORTNAME=	rice
 PORTVERSION=	2.1.2
@@ -11,7 +11,6 @@ COMMENT=	C++ interface to Rubys C API
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_armv6=		fails to configure: could not find ruby.h
 BROKEN_powerpc64=	fails to configure: could not find ruby.h
 
 USE_RUBY=	yes

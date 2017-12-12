@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/linux-oracle-jdk18/Makefile 452683 2017-10-22 21:06:34Z glewis $
+# $FreeBSD: head/java/linux-oracle-jdk18/Makefile 455775 2017-12-08 08:33:45Z mat $
 
 PORTNAME=	jdk
 PORTVERSION=	${JDK_VERSION}.${JDK_UPDATE_VERSION}
@@ -50,8 +50,6 @@ bash_CMD=	${SH}
 .if !exists(${DISTDIR}/${DISTNAME}${EXTRACT_SUFX})
 IGNORE?=You must manually fetch the J2SE SDK download for the Linux platform (${DISTNAME}${EXTRACT_SUFX}) from ${DOWNLOAD_URL}, place it in ${DISTDIR} and then run make again
 .endif
-
-.include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MDEMO}
 DEMO_UPDATE_VERSION=	${JDK_UPDATE_VERSION}

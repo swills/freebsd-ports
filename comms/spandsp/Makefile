@@ -1,5 +1,5 @@
 # Created by: wlloyd@slap.net
-# $FreeBSD: head/comms/spandsp/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/comms/spandsp/Makefile 455484 2017-12-03 20:38:42Z sunpoet $
 
 PORTNAME=	spandsp
 PORTVERSION=	0.0.6
@@ -15,13 +15,7 @@ LIB_DEPENDS=	libtiff.so:graphics/tiff
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
-USES=		autoreconf gmake libtool
-
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib
-
+USES=		autoreconf gmake libtool localbase
 USE_LDCONFIG=	yes
-
-CONFLICTS=	spandsp-devel-[0-9]*
 
 .include <bsd.port.mk>

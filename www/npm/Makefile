@@ -1,9 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/npm/Makefile 454516 2017-11-20 04:30:31Z sunpoet $
+# $FreeBSD: head/www/npm/Makefile 455950 2017-12-11 10:37:44Z sunpoet $
 
 PORTNAME=	npm
-PORTVERSION=	5.4.2
-PORTREVISION=	2
+PORTVERSION=	5.6.0
 CATEGORIES=	www
 MASTER_SITES=	LOCAL/sunpoet
 
@@ -27,7 +26,7 @@ NODE8_DESC=	Use Node.js 8.x (www/node8) as backend
 NO_ARCH=	yes
 NO_BUILD=	yes
 REINPLACE_ARGS=	-i ''
-USES=		cpe python:2,run shebangfix tar:xz
+USES=		cpe python:2.7,run shebangfix tar:xz
 
 CPE_VENDOR=	npmjs
 CPE_PRODUCT=	node_packaged_modules

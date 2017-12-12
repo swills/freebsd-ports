@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/poe/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/multimedia/poe/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	poe
 PORTVERSION=	0.5.1
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	multimedia gnustep
 MASTER_SITES=	http://www.eskimo.com/~pburns/Poe/files/
 DISTNAME=	Poe-${PORTVERSION}

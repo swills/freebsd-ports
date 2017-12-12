@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/databases/percona56-server/Makefile 447926 2017-08-14 05:37:21Z vd $
+# $FreeBSD: head/databases/percona56-server/Makefile 455813 2017-12-09 00:42:05Z linimon $
 
 PORTNAME?=	percona
 DISTVERSION=	5.6.36-82.0
@@ -12,6 +12,8 @@ DISTNAME=	percona-server-${DISTVERSION}
 MAINTAINER=	flo@FreeBSD.org
 COMMENT?=	Multithreaded SQL database (server)
 
+BROKEN_armv6=		fails to compile: sql/mysqld.cc:198:19: error: cannot combine with previous 'type-name' declaration specifier
+BROKEN_armv7=		fails to compile: sql/mysqld.cc:198:19: error: cannot combine with previous 'type-name' declaration specifier
 NOT_FOR_ARCHS=		powerpc64
 NOT_FOR_ARCHS_REASON=	unsupported platform
 

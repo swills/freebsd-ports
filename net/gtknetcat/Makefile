@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/net/gtknetcat/Makefile 439103 2017-04-21 17:57:37Z amdmi3 $
+# $FreeBSD: head/net/gtknetcat/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	gtknetcat
 PORTVERSION=	0.1
@@ -19,7 +19,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser
 
-USES=		gmake localbase python shebangfix
+USES=		gmake localbase python:2.7 shebangfix
 SHEBANG_FILES=	src/gtknetcat.in src/gtknetcat.py
 USE_GNOME=	intlhack pygtk2
 GNU_CONFIGURE=	yes

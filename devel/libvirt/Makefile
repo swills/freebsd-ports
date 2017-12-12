@@ -1,5 +1,5 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/devel/libvirt/Makefile 453410 2017-11-03 16:09:01Z novel $
+# $FreeBSD: head/devel/libvirt/Makefile 455835 2017-12-09 10:05:07Z antoine $
 
 PORTNAME=	libvirt
 PORTVERSION=	3.9.0
@@ -94,7 +94,7 @@ PORTSCOUT=	limit:\d+\.\d+\.\d+$$
 LDFLAGS+=	-L${LOCALBASE}/lib -fstack-protector
 
 USES=		charsetfix cpe gmake libtool pathfix \
-		perl5 python:build pkgconfig shebangfix tar:xz
+		perl5 python:2.7,build pkgconfig shebangfix tar:xz
 CPE_VENDOR=	redhat
 USE_PERL5=	build
 USE_LDCONFIG=	yes

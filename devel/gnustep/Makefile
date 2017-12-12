@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/devel/gnustep/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/devel/gnustep/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	gnustep
 PORTVERSION=	1.28.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel lang gnustep
 
 MAINTAINER=	theraven@FreeBSD.org

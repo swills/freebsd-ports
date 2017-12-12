@@ -1,8 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-jekyll-redirect-from/Makefile 438999 2017-04-21 03:11:17Z miwi $
+# $FreeBSD: head/textproc/rubygem-jekyll-redirect-from/Makefile 456012 2017-12-11 10:44:28Z sunpoet $
 
 PORTNAME=	jekyll-redirect-from
-PORTVERSION=	0.12.1
-PORTREVISION=	1
+PORTVERSION=	0.13.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -17,8 +16,7 @@ RUN_DEPENDS=	rubygem-jekyll>=3.3:www/rubygem-jekyll
 NO_ARCH=	yes
 USE_RUBY=	yes
 USES=		gem shebangfix
-SHEBANG_FILES=	script/cibuild \
-		script/bootstrap \
-		script/release
+
+SHEBANG_FILES=	script/*
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Vsevolod Stakhov <vsevolod@highsecure.ru>
-# $FreeBSD: head/misc/metromap/Makefile 426872 2016-11-22 22:00:09Z antoine $
+# $FreeBSD: head/misc/metromap/Makefile 455834 2017-12-09 09:55:06Z antoine $
 
 PORTNAME=	metromap
 PORTVERSION=	0.1.4
@@ -14,7 +14,7 @@ COMMENT=	Simple application for finding paths in different subways maps
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/doc/COPYING
 
-USES=		gettext gmake python shebangfix tar:bzip2
+USES=		gettext gmake python:2.7 shebangfix tar:bzip2
 SHEBANG_FILES=	metromap.py modules/*.py
 USE_GNOME=	pygtk2
 NO_ARCH=	yes

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/net/py-libnet/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/net/py-libnet/Makefile 455770 2017-12-08 05:09:04Z linimon $
 
 PORTNAME=	libnet
 PORTVERSION=	1.1
@@ -15,9 +15,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libnet.so:net/libnet
 
+BROKEN_aarch64=		fails to package: lib.freebsd-11.0-RELEASE-p1-aarch64-2.7/libnet.so: No such file or directory
 BROKEN_armv6=		fails to package: lib.freebsd-11.0-RELEASE-p1-armv6-2.7/libnet.so: No such file or directory
 BROKEN_armv7=		fails to package: lib.freebsd-11.0-RELEASE-p1-armv7-2.7/libnet.so: No such file or directory
-BROKEN_aarch64=		fails to package: lib.freebsd-11.0-RELEASE-p1-aarch64-2.7/libnet.so: No such file or directory
 BROKEN_mips64=		fails to package: lib.freebsd-11.0-RELEASE-p1-mips64-2.7/libnet.so: No such file or directory
 BROKEN_powerpc64=	fails to package: lib.freebsd-11.0-RELEASE-p1-powerpc64-2.7/libnet.so: No such file or directory
 

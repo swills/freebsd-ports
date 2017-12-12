@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-grpc/Makefile 452474 2017-10-19 20:35:55Z sunpoet $
+# $FreeBSD: head/net/rubygem-grpc/Makefile 455591 2017-12-05 16:44:09Z tz $
 
 PORTNAME=	grpc
 PORTVERSION=	1.4.0
@@ -6,7 +6,7 @@ PORTREVISION=	2
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	idefix@fechner.net
 COMMENT=	Ruby implementation of gRPC
 
 LICENSE=	BSD3CLAUSE

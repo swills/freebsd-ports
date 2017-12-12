@@ -1,5 +1,5 @@
 # Created by: Alberto Villa <avilla@FreeBSD.org>
-# $FreeBSD: head/net-im/telepathy-qt4/Makefile 443941 2017-06-20 04:41:27Z fluffy $
+# $FreeBSD: head/net-im/telepathy-qt4/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	telepathy-qt
 PORTVERSION=	0.9.7
@@ -13,10 +13,10 @@ COMMENT=	High-level Qt binding for Telepathy
 
 LICENSE=	LGPL21
 
-BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/_dbus_bindings.so:devel/py-dbus
+BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/_dbus_bindings.so:devel/py-dbus@${PY_FLAVOR}
 LIB_DEPENDS=	libtelepathy-farstream.so:net-im/telepathy-farstream \
 		libtelepathy-glib.so:net-im/telepathy-glib
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/_dbus_bindings.so:devel/py-dbus
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/_dbus_bindings.so:devel/py-dbus@${PY_FLAVOR}
 
 OPTIONS_DEFINE=	DOCS
 

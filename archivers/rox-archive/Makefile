@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/rox-archive/Makefile 439143 2017-04-22 09:25:44Z miwi $
+# $FreeBSD: head/archivers/rox-archive/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	rox-archive
 PORTVERSION=	2.3
@@ -11,9 +11,9 @@ MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Archive management tool for the ROX desktop
 
 RUN_DEPENDS=	${LOCALBASE}/bin/rox:x11-fm/rox-filer \
-		${LOCALBASE}/lib/ROX-Lib2/python/rox/__init__.py:devel/py-roxlib
+		${PYTHON_PKGNAMEPREFIX}roxlib>=0:devel/py-roxlib
 
-USES=		python shebangfix tar:bzip2
+USES=		python:2.7 shebangfix tar:bzip2
 NO_ARCH=	yes
 SHEBANG_FILES=	Archive/AppRun
 

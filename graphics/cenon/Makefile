@@ -1,8 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/cenon/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/graphics/cenon/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	cenon
 PORTVERSION=	4.0.3
+PORTREVISION=	1
 CATEGORIES=	graphics gnustep
 MASTER_SITES=	http://www.cenon.zone/download/source/
 DISTNAME=	Cenon-${MAINVERSION}

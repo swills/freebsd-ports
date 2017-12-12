@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-turbolinks-classic/Makefile 423907 2016-10-13 09:59:08Z tz $
+# $FreeBSD: head/www/rubygem-turbolinks-classic/Makefile 456019 2017-12-11 10:45:03Z sunpoet $
 
 PORTNAME=	turbolinks
-PORTVERSION=	2.5.3
+PORTVERSION=	2.5.4
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-classic

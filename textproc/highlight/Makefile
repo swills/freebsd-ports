@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/textproc/highlight/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/textproc/highlight/Makefile 456105 2017-12-12 04:35:49Z jbeich $
 
 PORTNAME=	highlight
 PORTVERSION=	3.36
@@ -15,8 +15,6 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	boost-libs>0:devel/boost-libs
-
-BROKEN_powerpc64=	fails to compile: rtfgenerator.cpp:279:37: 'to_string' was not declared in this scope
 
 USES=		compiler:c++11-lib gmake lua:52 pkgconfig tar:bzip2
 USE_CXXSTD=	c++11

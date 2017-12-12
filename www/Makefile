@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/Makefile 455897 2017-12-10 13:39:34Z wen $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -540,6 +540,8 @@
     SUBDIR += nextcloud
     SUBDIR += nextcloud-calendar
     SUBDIR += nextcloud-contacts
+    SUBDIR += nextcloud-notes
+    SUBDIR += nextcloud-tasks
     SUBDIR += nghttp2
     SUBDIR += nginx
     SUBDIR += nginx-devel
@@ -609,6 +611,7 @@
     SUBDIR += p5-AnyEvent-ReverseHTTP
     SUBDIR += p5-AnyEvent-SCGI
     SUBDIR += p5-Apache-ASP
+    SUBDIR += p5-AnyEvent-WebSocket-Client
     SUBDIR += p5-Apache-Admin-Config
     SUBDIR += p5-Apache-AuthCookie
     SUBDIR += p5-Apache-AuthTicket
@@ -1388,7 +1391,6 @@
     SUBDIR += p5-WebService-Technorati
     SUBDIR += p5-WebService-YouTube
     SUBDIR += p5-WordPress-XMLRPC
-    SUBDIR += p5-Yahoo-Lifestyle
     SUBDIR += p5-Yahoo-Search
     SUBDIR += p5-ZConf-RSS
     SUBDIR += p5-ZConf-RSS-GUI-GTK
@@ -1642,6 +1644,7 @@
     SUBDIR += py-django110
     SUBDIR += py-django111
     SUBDIR += py-django18
+    SUBDIR += py-django20
     SUBDIR += py-django_compressor
     SUBDIR += py-django_openstack_auth
     SUBDIR += py-django_polymorphic
@@ -1667,6 +1670,7 @@
     SUBDIR += py-flask-cors
     SUBDIR += py-flask-flatpages
     SUBDIR += py-flask-login
+    SUBDIR += py-flask-migrate
     SUBDIR += py-flask-oauthlib
     SUBDIR += py-flask-principal
     SUBDIR += py-flask-restful
@@ -1865,6 +1869,7 @@
     SUBDIR += py-tvdb_api
     SUBDIR += py-txrequests
     SUBDIR += py-uliweb
+    SUBDIR += py-unit
     SUBDIR += py-urlgrabber
     SUBDIR += py-urlobject
     SUBDIR += py-user_agent
@@ -2388,6 +2393,11 @@
     SUBDIR += ufdbguard
     SUBDIR += uglifyjs
     SUBDIR += unit
+    SUBDIR += unit-go
+    SUBDIR += unit-php56
+    SUBDIR += unit-php70
+    SUBDIR += unit-php71
+    SUBDIR += unit-php72
     SUBDIR += usermanager
     SUBDIR += uwsgi
     SUBDIR += uwsgitop

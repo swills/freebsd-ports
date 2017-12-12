@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/a2png/Makefile 437917 2017-04-07 09:02:12Z amdmi3 $
+# $FreeBSD: head/graphics/a2png/Makefile 455813 2017-12-09 00:42:05Z linimon $
 
 PORTNAME=	a2png
 PORTVERSION=	0.1.5
@@ -14,6 +14,9 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libgd.so:graphics/gd
+
+BROKEN_armv6 =		fails to build: parse.c:(.text+0x174): undefined reference to 'fgettok'
+BROKEN_armv7 =		fails to build: parse.c:(.text+0x174): undefined reference to 'fgettok'
 
 USES=		tar:bzip2
 GNU_CONFIGURE=	yes

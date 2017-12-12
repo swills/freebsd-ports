@@ -1,4 +1,4 @@
-# $FreeBSD: head/ports-mgmt/portmaster/Makefile 433268 2017-02-03 22:12:53Z bdrewery $
+# $FreeBSD: head/ports-mgmt/portmaster/Makefile 455782 2017-12-08 14:00:02Z tz $
 
 PORTNAME=	portmaster
 PORTVERSION=	3.17.10
@@ -7,7 +7,7 @@ MASTER_SITES=	LOCAL/bdrewery/${PORTNAME}/ \
 		http://mirror.shatow.net/freebsd/${PORTNAME}/ \
 		GH
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	se@FreeBSD.org
 COMMENT=	Manage your ports without external databases or languages
 
 LICENSE=	BSD2CLAUSE

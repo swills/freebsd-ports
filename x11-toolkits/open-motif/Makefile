@@ -1,10 +1,10 @@
-# $FreeBSD: head/x11-toolkits/open-motif/Makefile 455251 2017-12-01 07:19:53Z antoine $
+# $FreeBSD: head/x11-toolkits/open-motif/Makefile 455654 2017-12-06 15:26:00Z cy $
 
 PORTNAME=	open-motif
-PORTVERSION=	2.3.7
+PORTVERSION=	2.3.8
 CATEGORIES=	x11-toolkits
 # MASTER_SITES=	SF/${PORTNAME}/Motif%202.3.4%20Source%20Code/
-MASTER_SITES=	SF/motif/Motif%202.3.7%20Source%20Code/
+MASTER_SITES=	SF/motif/Motif%20${PORTVERSION}%20Source%20Code/
 DISTNAME=	motif-${PORTVERSION}
 
 MAINTAINER=	cy@FreeBSD.org

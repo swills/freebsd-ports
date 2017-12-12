@@ -1,5 +1,5 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/lang/cling/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/lang/cling/Makefile 456105 2017-12-12 04:35:49Z jbeich $
 
 PORTNAME=		cling
 PORTVERSION=		0.4
@@ -20,7 +20,6 @@ LICENSE_PERMS_LLVM=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 BROKEN_armv6=		fails to compile: AArch64TargetMachine.cpp: relocation truncated to fit: R_ARM_CALL against symbol '__aeabi_uldivmod'
 BROKEN_armv7=		fails to compile: AArch64TargetMachine.cpp: relocation truncated to fit: R_ARM_CALL against symbol '__aeabi_uldivmod'
-BROKEN_powerpc64=	fails to compile: IncrementalParser.cpp: 'to_string' is not a member of 'std'
 
 WRKSRC=		${WRKDIR}/src
 

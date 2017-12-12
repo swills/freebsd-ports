@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/mygui/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/x11-toolkits/mygui/Makefile 455813 2017-12-09 00:42:05Z linimon $
 
 PORTNAME=	mygui
 PORTVERSION=	3.2.2
@@ -13,8 +13,6 @@ COMMENT?=	Fast, simple and flexible GUI system for games and 3D applications
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING.MIT
 
-BROKEN_powerpc64=	Does not build
-
 .if !defined(MASTERDIR)
 LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 		libOIS.so:devel/ois
@@ -24,6 +22,10 @@ LIB_DEPENDS+=	libMyGUIEngine.so:x11-toolkits/mygui
 BUILD_WRKSRC=	${WRKSRC}/${MYGUI_SUBDIR}
 INSTALL_WRKSRC=	${WRKSRC}/${MYGUI_SUBDIR}
 .endif
+
+BROKEN_armv6=		fails to compile: memory:2050:9: error: cannot initialize a member subobject of type 'std::__1::basic_string<char> *' with an rvalue of type 'int'
+BROKEN_armv7=		fails to compile: memory:2050:9: error: cannot initialize a member subobject of type 'std::__1::basic_string<char> *' with an rvalue of type 'int'
+BROKEN_powerpc64=	fails to build
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	MyGUI

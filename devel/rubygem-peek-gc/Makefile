@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/rubygem-peek-gc/Makefile 448212 2017-08-18 08:14:40Z tz $
+# $FreeBSD: head/devel/rubygem-peek-gc/Makefile 455591 2017-12-05 16:44:09Z tz $
 
 PORTNAME=	peek-gc
 PORTVERSION=	0.0.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	idefix@fechner.net
 COMMENT=	Take a peek into the GC info of your Rails application
 
 LICENSE=	MIT

@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/mednafen/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/emulators/mednafen/Makefile 456105 2017-12-12 04:35:49Z jbeich $
 
 PORTNAME=	mednafen
 PORTVERSION=	0.9.45.1
@@ -17,7 +17,6 @@ LIB_DEPENDS=	libcdio.so:sysutils/libcdio \
 		libsndfile.so:audio/libsndfile \
 		libvorbis.so:audio/libvorbis
 
-BROKEN_powerpc64=	fails to compile: mednafen.cpp: 'to_string' is not a member of 'std'
 BROKEN_sparc64=		fails to compile due to internal compiler error
 
 GNU_CONFIGURE=	yes

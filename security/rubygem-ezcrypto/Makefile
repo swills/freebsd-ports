@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer
-# $FreeBSD: head/security/rubygem-ezcrypto/Makefile 447266 2017-08-03 17:27:19Z sunpoet $
+# $FreeBSD: head/security/rubygem-ezcrypto/Makefile 453576 2017-11-05 21:17:25Z sunpoet $
 
 PORTNAME=	ezcrypto
 PORTVERSION=	0.7.2

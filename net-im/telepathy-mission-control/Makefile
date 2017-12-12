@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/net-im/telepathy-mission-control/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-im/telepathy-mission-control/Makefile 455913 2017-12-10 20:48:45Z antoine $
 #    $MCom: ports/trunk/net-im/telepathy-mission-control/Makefile 19955 2014-10-15 10:15:00Z gusi $
 
 PORTNAME=	telepathy-mission-control
@@ -14,7 +14,7 @@ COMMENT=	Telepathy component to apps to abstract details of connection managers
 LIB_DEPENDS=	libtelepathy.so:net-im/libtelepathy \
 		libdbus-glib-1.so:devel/dbus-glib
 
-USES=		gmake libtool pathfix pkgconfig
+USES=		gmake libtool pathfix pkgconfig python:2.7,build
 USE_GNOME=	glib20 libxslt
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include

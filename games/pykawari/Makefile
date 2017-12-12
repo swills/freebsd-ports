@@ -1,5 +1,5 @@
 # Created by: UMENO Takashi
-# $FreeBSD: head/games/pykawari/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/pykawari/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	pykawari
 PORTVERSION=	8.2.8
@@ -18,7 +18,7 @@ RUN_DEPENDS=	ninix:games/ninix-aya
 
 BUILD_WRKSRC=	${WRKSRC}/build/src
 
-USES=		gmake python zip
+USES=		gmake python:2.7 zip
 MAKEFILE=	gcc.mak
 MAKE_ARGS=	CXX="${CXX}" CFLAGS="${CXXFLAGS}" \
 		PYTHONBASE="${PYTHONBASE}" PYTHON_VERSION="${PYTHON_VERSION}"

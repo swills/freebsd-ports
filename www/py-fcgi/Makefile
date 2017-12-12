@@ -1,5 +1,5 @@
 # Created by: JunSeon Oh <hollywar@mail.holywar.net>
-# $FreeBSD: head/www/py-fcgi/Makefile 376109 2015-01-03 08:41:20Z mva $
+# $FreeBSD: head/www/py-fcgi/Makefile 456068 2017-12-11 21:48:32Z antoine $
 
 PORTNAME=	fcgi
 PORTVERSION=	0.1
@@ -14,7 +14,7 @@ EXTRACT_ONLY=	#
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python FastCGI interface library
 
-USES=		python
+USES=		python:2.7
 NO_WRKSUBDIR=	yes
 
 post-extract:

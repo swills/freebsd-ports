@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/simpleviewer/Makefile 455244 2017-12-01 01:58:23Z mandree $
+# $FreeBSD: head/graphics/simpleviewer/Makefile 456098 2017-12-12 03:45:49Z jbeich $
 
 PORTNAME=	simpleviewer
 PORTVERSION=	2.92
@@ -24,8 +24,6 @@ LIB_DEPENDS=	libIlmImf.so:graphics/OpenEXR \
 		libpng.so:graphics/png \
 		libtiff.so:graphics/tiff \
 		libwebp.so:graphics/webp
-
-BROKEN_powerpc64=	fails to build: fileslist.cpp: '::printf' has not been declared
 
 USES=		cmake compiler:c++11-lang jpeg pkgconfig tar:bzip2
 USE_GL=		glu

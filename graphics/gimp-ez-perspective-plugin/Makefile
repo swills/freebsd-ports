@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/graphics/gimp-ez-perspective-plugin/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/gimp-ez-perspective-plugin/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	ez-perspective
 PORTVERSION=	0.1.2
@@ -22,7 +22,7 @@ LICENSE_DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/gimp-2.0.pc:graphics/gimp-app \
 		${LOCALBASE}/libexec/gimp/2.2/python/gimpfu.py:graphics/py-gimp
 
-USES=		python:run zip
+USES=		python:2.7,run zip
 NO_BUILD=	yes
 NO_ARCH=	yes
 NO_WRKSUBDIR=	yes

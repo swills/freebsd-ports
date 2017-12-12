@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/games/4stattack/Makefile 438971 2017-04-20 15:46:21Z amdmi3 $
+# $FreeBSD: head/games/4stattack/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	4stattack
 PORTVERSION=	2.1.4
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/GPL
 
 RUN_DEPENDS=	${PYGAME}
 
-USES=		python shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	4stattack.py
 NO_ARCH=	yes
 

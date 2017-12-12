@@ -1,10 +1,9 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/devel/py-codecov/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-codecov/Makefile 455740 2017-12-07 17:02:12Z cpm $
 
 PORTNAME=	codecov
-PORTVERSION=	2.0.9
+PORTVERSION=	2.0.10
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -22,8 +21,8 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ddt>0:devel/py-ddt@${FLAVOR} \
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
-USE_GITHUB=     yes
-GH_PROJECT=     ${PORTNAME}-python
+USE_GITHUB=	yes
+GH_PROJECT=	${PORTNAME}-python
 
 NO_ARCH=	yes
 

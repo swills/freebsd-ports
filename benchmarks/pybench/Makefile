@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/benchmarks/pybench/Makefile 455032 2017-11-28 11:38:09Z amdmi3 $
+# $FreeBSD: head/benchmarks/pybench/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	pybench
 PORTVERSION=	2.0
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-USES=		python shebangfix zip
+USES=		python:2.7 shebangfix zip
 SHEBANG_FILES=	platform.py
 NO_ARCH=	yes
 

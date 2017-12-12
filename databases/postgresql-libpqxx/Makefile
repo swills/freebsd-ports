@@ -1,5 +1,5 @@
 # Created by: Palle Girgensohn <girgen@pingpong.net>
-# $FreeBSD: head/databases/postgresql-libpqxx/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/databases/postgresql-libpqxx/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	libpqxx
 PORTVERSION=	4.0.1
@@ -17,7 +17,7 @@ LICENSE=	BSD3CLAUSE
 CONFLICTS=	postgresql-libpqxx-3.* postgresql-libpqxx3-3.*
 PORTSCOUT=	limit:^2\.
 
-USES+=		gmake libtool pathfix pgsql python:build shebangfix
+USES+=		gmake libtool pathfix pgsql python:2.7,build shebangfix
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 PLIST_SUB=	PORTVERSION=${PORTVERSION:R}

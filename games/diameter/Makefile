@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/diameter/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/diameter/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	diameter
 PORTVERSION=	0.4.0.3
@@ -13,7 +13,7 @@ COMMENT=	Arcade-style game with elements of economy and adventure
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libguichan.so:devel/guichan
 
-USES=		tar:bzip2 gmake pkgconfig python
+USES=		tar:bzip2 gmake pkgconfig python:2.7
 GNU_CONFIGURE=	yes
 USE_GL=		gl
 USE_SDL=	sdl mixer image

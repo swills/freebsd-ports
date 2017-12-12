@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/uefi-edk2-bhyve/Makefile 453624 2017-11-06 15:28:51Z novel $
+# $FreeBSD: head/sysutils/uefi-edk2-bhyve/Makefile 455392 2017-12-03 08:25:31Z antoine $
 
 PORTNAME=	uefi-edk2-bhyve
 PORTVERSION=	20160704
@@ -12,7 +12,7 @@ LICENSE=	BSD2CLAUSE
 
 BUILD_DEPENDS=	bash:shells/bash \
 		nasm:devel/nasm \
-		${PYTHON_LIBDIR}/lib-dynload/_sqlite3.so:databases/py-sqlite3
+		${PYTHON_LIBDIR}/lib-dynload/_sqlite3.so:databases/py-sqlite3@${PY_FLAVOR}
 
 USES=		gmake \
 		python:2.7,build

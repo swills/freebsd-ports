@@ -1,5 +1,5 @@
 # Created by: janos.mohacsi@bsd.hu
-# $FreeBSD: head/textproc/hunspell/Makefile 449365 2017-09-06 20:06:14Z sunpoet $
+# $FreeBSD: head/textproc/hunspell/Makefile 455904 2017-12-10 18:40:35Z jbeich $
 
 PORTNAME=	hunspell
 PORTVERSION=	1.6.2
@@ -19,8 +19,8 @@ LICENSE_FILE_MPL11=	${WRKSRC}/COPYING.MPL
 CONFLICTS_INSTALL=	tinker-[0-9]*
 CONFIGURE_ARGS=	--disable-nls ${ICONV_CONFIGURE_ARG} --with-readline --with-ui
 GNU_CONFIGURE=	yes
-USES=		autoreconf libtool:keepla pathfix iconv ncurses \
-		readline shebangfix perl5
+USES=		autoreconf compiler:c++11-lib libtool:keepla pathfix \
+		iconv ncurses readline shebangfix perl5
 USE_GITHUB=	yes
 SHEBANG_FILES=	src/tools/ispellaff2myspell
 USE_LDCONFIG=	yes

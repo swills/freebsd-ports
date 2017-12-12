@@ -1,5 +1,5 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/x11-fm/nemo/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-fm/nemo/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	nemo
 PORTVERSION=	2.4.5
@@ -11,7 +11,7 @@ COMMENT=	File manager for the Cinnamon desktop
 
 BUILD_DEPENDS=	gnome-icon-theme>=0:misc/gnome-icon-theme \
 		gtkdocize:textproc/gtk-doc \
-		py*-polib>=0:devel/py-polib \
+		${PYTHON_PKGNAMEPREFIX}polib>=0:devel/py-polib@${PY_FLAVOR} \
 		gnome-autogen.sh:devel/gnome-common \
 		gsettings-desktop-schemas>=0:devel/gsettings-desktop-schemas
 LIB_DEPENDS=	libexif.so:graphics/libexif \

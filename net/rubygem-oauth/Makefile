@@ -1,8 +1,8 @@
 # Created by: wenheping <wenheping@gmail.com>
-# $FreeBSD: head/net/rubygem-oauth/Makefile 441733 2017-05-25 21:02:51Z sunpoet $
+# $FreeBSD: head/net/rubygem-oauth/Makefile 456005 2017-12-11 10:43:52Z sunpoet $
 
 PORTNAME=	oauth
-PORTVERSION=	0.5.3
+PORTVERSION=	0.5.4
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

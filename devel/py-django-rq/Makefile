@@ -1,10 +1,9 @@
 # Created by: René Ladan <rene@freebsd.org>
-# $FreeBSD: head/devel/py-django-rq/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-django-rq/Makefile 455757 2017-12-07 21:14:13Z rene $
 
 PORTNAME=	django-rq
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

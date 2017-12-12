@@ -1,5 +1,5 @@
 # Created by: Nikolai Lifanov <lifanov@mail.lifanov.com>
-# $FreeBSD: head/security/hashcat/Makefile 453742 2017-11-08 14:08:06Z lifanov $
+# $FreeBSD: head/security/hashcat/Makefile 455924 2017-12-11 05:19:00Z linimon $
 
 PORTNAME=	hashcat
 PORTVERSION=	4.0.1
@@ -15,6 +15,9 @@ LICENSE_FILE=	${WRKSRC}/docs/license.txt
 
 BUILD_DEPENDS=	${LOCALBASE}/include/CL/cl.h:devel/opencl \
 		gsed:textproc/gsed
+
+NOT_FOR_ARCHS=		powerpc powerpc64 sparc64
+NOT_FOR_ARCHS_REASON=	fails to compile: compiling for big-endian architecture not supported
 
 USE_GITHUB=	yes
 

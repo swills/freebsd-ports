@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-rwt/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-rwt/Makefile 455457 2017-12-03 20:36:26Z sunpoet $
 
 PORTNAME=	rwt
 PORTVERSION=	3.1
@@ -16,7 +16,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.15.0:devel/py-setuptools
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pip>=0:devel/py-pip@${FLAVOR}
 
 NO_ARCH=	yes
-USE_PYTHON=	concurrent distutils autoplist
+USE_PYTHON=	autoplist concurrent distutils
 USES=		python
 
 .include <bsd.port.mk>

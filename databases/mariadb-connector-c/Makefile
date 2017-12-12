@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb-connector-c/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/databases/mariadb-connector-c/Makefile 455765 2017-12-08 01:46:00Z linimon $
 
 PORTNAME=	mariadb-connector-c
 PORTVERSION=	3.0.2
@@ -20,7 +20,6 @@ COMMENT=	MariaDB database connector for C
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING.LIB
 
-BROKEN_armv6=		fails to configure: CMake Error: Generator: execution of make failed
 BROKEN_powerpc64=	fails to compile: my_stmt_codec.c: error: invalid use of void expression
 
 CONFLICTS_INSTALL=	mariadb[0-9]*-client-* \

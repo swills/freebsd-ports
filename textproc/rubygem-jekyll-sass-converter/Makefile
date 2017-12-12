@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-jekyll-sass-converter/Makefile 427719 2016-12-03 19:35:28Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-jekyll-sass-converter/Makefile 455466 2017-12-03 20:37:12Z sunpoet $
 
 PORTNAME=	jekyll-sass-converter
-PORTVERSION=	1.5.0
+PORTVERSION=	1.5.1
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

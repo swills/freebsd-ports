@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/games/monsterz/Makefile 440615 2017-05-11 06:03:38Z antoine $
+# $FreeBSD: head/games/monsterz/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	monsterz
 PORTVERSION=	0.7.1
@@ -19,7 +19,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${PYGAME}
 
-USES=		python
+USES=		python:2.7
 MAKE_ENV=	prefix=${PREFIX}
 
 PORTDOCS=	AUTHORS README TODO

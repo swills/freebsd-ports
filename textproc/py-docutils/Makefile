@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/py-docutils/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-docutils/Makefile 455393 2017-12-03 08:29:35Z antoine $
 
 PORTNAME=	docutils
 PORTVERSION=	0.14
+PORTREVISION=	1
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -28,7 +29,7 @@ SCRIPTS=	rst2html rst2latex rst2man rst2odt rst2odt_prepstyles \
 
 post-install:
 .for script in ${SCRIPTS}
-	${LN} -s ${script}.py ${STAGEDIR}${PREFIX}/bin/${script}
+	${LN} -s ${script}.py-${PYTHON_VER} ${STAGEDIR}${PREFIX}/bin/${script}
 .endfor
 
 .include <bsd.port.mk>

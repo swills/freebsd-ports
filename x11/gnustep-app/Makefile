@@ -1,9 +1,9 @@
 # Created by: dirk.meyer@dinoex.sub.org
-# $FreeBSD: head/x11/gnustep-app/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/x11/gnustep-app/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	gnustep-app
 PORTVERSION=	2.0.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	x11 gnustep
 
 MAINTAINER=	theraven@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/deskutils/ganyremote/Makefile 439072 2017-04-21 14:11:27Z amdmi3 $
+# $FreeBSD: head/deskutils/ganyremote/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	ganyremote
 PORTVERSION=	6.3.3
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	anyremote:comms/anyremote
 
-USES=		gettext python shebangfix
+USES=		gettext python:2.7 shebangfix
 SHEBANG_FILES=	ganyremote
 USE_GNOME=	pygtk2
 GNU_CONFIGURE=	yes

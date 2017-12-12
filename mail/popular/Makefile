@@ -1,5 +1,5 @@
 # Created by: Pav Lucistnik <pav@FreeBSD.org>
-# $FreeBSD: head/mail/popular/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/mail/popular/Makefile 455315 2017-12-01 22:12:15Z pawel $
 
 PORTNAME=	popular
 PORTVERSION=	1.5.5
@@ -13,6 +13,7 @@ COMMENT=	Suite of programs for setting up large POP3 server systems
 BUILD_DEPENDS=	p5-XML-DOM>=0:textproc/p5-XML-DOM
 
 CONFLICTS=	pserv-[0-9]* synce-librapi2-[0-9]*
+CONFLICTS_INSTALL=	ports-tools # bin/pcheck
 
 USES=		libtool perl5 gmake tar:bzip2 ssl
 GNU_CONFIGURE=	yes

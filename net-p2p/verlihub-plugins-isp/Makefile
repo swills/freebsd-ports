@@ -1,5 +1,5 @@
 # Created by: Mikle Davidkin <skylord@vt.net.ru>
-# $FreeBSD: head/net-p2p/verlihub-plugins-isp/Makefile 441874 2017-05-27 20:33:22Z linimon $
+# $FreeBSD: head/net-p2p/verlihub-plugins-isp/Makefile 455765 2017-12-08 01:46:00Z linimon $
 
 PORTNAME=	isp
 PORTVERSION=	1.1
@@ -8,8 +8,6 @@ CATEGORIES=	net-p2p
 MASTER_SITES=	SF/verlihub/VH_ISP/${DISTVERSION}
 
 MAINTAINER=	me@skylord.ru
-
-BROKEN_armv6=		fails to configure: checking for VERLIHUB - version >= 0... no (see config.log)
 
 PLUGIN_DESC=	ISP
 

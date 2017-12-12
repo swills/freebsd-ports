@@ -1,5 +1,5 @@
 # Created by: Koop Mast <einekoai@chello.nl>
-# $FreeBSD: head/www/bluefish/Makefile 433279 2017-02-04 05:14:39Z woodsb02 $
+# $FreeBSD: head/www/bluefish/Makefile 456068 2017-12-11 21:48:32Z antoine $
 
 PORTNAME=	bluefish
 PORTVERSION=	2.2.10
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libpcre.so:devel/pcre \
 		libenchant.so:textproc/enchant
 
-USES=		desktop-file-utils gettext gmake libtool localbase pkgconfig python \
+USES=		desktop-file-utils gettext gmake libtool localbase pkgconfig python:2.7 \
 		shared-mime-info shebangfix tar:bzip2
 SHEBANG_FILES=	data/css_decompressor
 python_OLD_CMD=	/usr/bin/python2.7

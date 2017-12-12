@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/games/endgame-singularity/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/games/endgame-singularity/Makefile 455852 2017-12-09 12:32:10Z antoine $
 
 PORTNAME=	singularity
 PORTVERSION=	0.30c
@@ -14,7 +14,7 @@ COMMENT=	Simulates the life of a true AI
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/GPL.txt
 
-RUN_DEPENDS=	py*-game>=1.8:devel/py-game \
+RUN_DEPENDS=	${PYGAME} \
 		${PYNUMPY}
 
 USE_GITHUB=	yes

@@ -1,8 +1,8 @@
 # Created by: Muhammad Moinur Rahman <5u623l20@gmail.com>
-# $FreeBSD: head/net/ndpi/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/net/ndpi/Makefile 455867 2017-12-09 17:11:09Z madpilot $
 
 PORTNAME=	ndpi
-PORTVERSION=	2.0.2017.09.13
+PORTVERSION=	2.2.2017.12.05
 CATEGORIES=	net
 
 MAINTAINER=	madpilot@FreeBSD.org
@@ -13,20 +13,23 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libjson-c.so:devel/json-c
 
+USES=		autoreconf compiler:c++11-lang libtool pathfix pkgconfig
 CONFIGURE_ARGS=	--with-pic
 CPPFLAGS+=	-I${LOCALBASE}/include/json-c
 LDFLAGS+=	-L${LOCALBASE}/lib
 LIBS+=		-ljson-c
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
-USES=		autoreconf compiler:c++11-lang libtool pathfix pkgconfig
 INSTALL_TARGET=	install-strip
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	ntop
 GH_PROJECT=	nDPI
-GH_TAGNAME=	6607c33
+GH_TAGNAME=	56dcf65
 
 PLIST_SUB=	MAJOR_VER=${PORTVERSION:C/([[:digit:]])+\.([[:digit:]])+.*/\1.\2/}.0
+
+post-patch:
+	cd ${WRKSRC} && ${SH} autogen.sh
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Leland Wang <llwang@infor.org>
-# $FreeBSD: head/misc/dvorak7min/Makefile 407912 2016-02-02 23:35:31Z marino $
+# $FreeBSD: head/misc/dvorak7min/Makefile 455500 2017-12-04 09:00:25Z amdmi3 $
 
 PORTNAME=	dvorak7min
 PORTVERSION=	1.6.1
@@ -13,6 +13,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Ncurses-based Dvorak typing tutor
 
 LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		ncurses
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
@@ -26,7 +27,6 @@ post-patch:
 		 s|-lncurses|-lcurses|' ${WRKSRC}/Makefile
 
 do-install:
-	(cd ${WRKSRC} && ${INSTALL_PROGRAM} dvorak7min \
-		${STAGEDIR}${PREFIX}/bin)
+	${INSTALL_PROGRAM} ${WRKSRC}/dvorak7min ${STAGEDIR}${PREFIX}/bin
 
 .include <bsd.port.mk>

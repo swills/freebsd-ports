@@ -1,5 +1,5 @@
 # Created by: Dave Cottlehuber <dch@skunkwerks.at>
-# $FreeBSD: head/www/py-graphite-api/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-graphite-api/Makefile 455284 2017-12-01 13:01:54Z antoine $
 
 PORTNAME=	graphite-api
 PORTVERSION=	1.1.3
@@ -26,7 +26,7 @@ RUN_DEPENDS=	\
 
 NO_ARCH=	yes
 USES=		python
-USE_PYTHON=	distutils
+USE_PYTHON=	distutils py3kplist
 
 GRAPHITEAPI_APP=	graphiteapi
 

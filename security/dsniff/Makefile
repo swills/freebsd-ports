@@ -1,5 +1,5 @@
 # Created by: Kris Kennaway <kris@FreeBSD.org>
-# $FreeBSD: head/security/dsniff/Makefile 446460 2017-07-23 09:01:03Z amdmi3 $
+# $FreeBSD: head/security/dsniff/Makefile 455526 2017-12-04 16:57:35Z mat $
 
 PORTNAME=	dsniff
 DISTVERSION=	2.4b1
@@ -18,6 +18,7 @@ LIB_DEPENDS=	libnet.so:net/libnet
 BUILD_DEPENDS=	${LOCALBASE}/lib/libnids.a:net/libnids
 
 BROKEN_FreeBSD_12=	fails to compile: pcaputil.c: '/usr/include/pcap-int.h' file not found
+BROKEN_FreeBSD_11=	fails to compile: pcaputil.c: '/usr/include/pcap-int.h' file not found
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-libnet=${LOCALBASE}

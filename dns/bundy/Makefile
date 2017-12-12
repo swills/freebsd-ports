@@ -1,5 +1,5 @@
 # Created by: Jeremy C. Reed
-# $FreeBSD: head/dns/bundy/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/dns/bundy/Makefile 455813 2017-12-09 00:42:05Z linimon $
 
 PORTNAME=	bundy
 PORTVERSION=	0.20170618
@@ -26,6 +26,8 @@ LIB_DEPENDS=	libbotan-1.10.so:security/botan110 \
 		libsqlite3.so:databases/sqlite3
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 
+BROKEN_armv6 =		fails to build: Child process terminated abnormally: Segmentation fault
+BROKEN_armv7 =		fails to build: Child process terminated abnormally: Segmentation fault
 BROKEN_powerpc64=	fails to configure: checking for botan/botan.h... no
 
 USE_GITHUB=	yes

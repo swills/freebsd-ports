@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/clarence/Makefile 371328 2014-10-21 16:54:54Z mva $
+# $FreeBSD: head/math/clarence/Makefile 455541 2017-12-04 21:00:33Z antoine $
 
 PORTNAME=	clarence
 PORTVERSION=	0.4.4
@@ -11,7 +11,7 @@ MASTER_SITES=	http://www.sourcefiles.org/Productivity_Tools/Calculators/ \
 MAINTAINER=	psh@iki.fi
 COMMENT=	Programmer's calculator
 
-USES=		python shebangfix
+USES=		python:2.7 shebangfix
 USE_GNOME=	pygtk2
 NO_BUILD=	yes
 

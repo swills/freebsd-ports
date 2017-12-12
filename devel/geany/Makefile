@@ -1,5 +1,5 @@
 # Created by: Remington Lang <MrL0Lz@gmail.com>
-# $FreeBSD: head/devel/geany/Makefile 454620 2017-11-21 17:59:25Z madpilot $
+# $FreeBSD: head/devel/geany/Makefile 455698 2017-12-07 09:00:25Z amdmi3 $
 
 PORTNAME=	geany
 PORTVERSION=	1.32
@@ -9,7 +9,8 @@ MASTER_SITES=	http://download.geany.org/ SF
 MAINTAINER=	madpilot@FreeBSD.org
 COMMENT=	Fast and lightweight GTK+ IDE
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2

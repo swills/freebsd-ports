@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/games/farblazer/Makefile 438974 2017-04-20 15:49:54Z amdmi3 $
+# $FreeBSD: head/games/farblazer/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	farblazer
 PORTVERSION=	0.7
@@ -19,7 +19,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
 RUN_DEPENDS=	${PYGAME}
 
-USES=		python shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	farblazer.py
 NO_ARCH=	yes
 

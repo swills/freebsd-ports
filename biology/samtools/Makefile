@@ -1,5 +1,5 @@
 # Created by: Reed A. Cartwright <cartwright@asu.edu>
-# $FreeBSD: head/biology/samtools/Makefile 452840 2017-10-25 10:19:50Z pizzamig $
+# $FreeBSD: head/biology/samtools/Makefile 455518 2017-12-04 15:27:29Z mat $
 
 PORTNAME=	samtools
 PORTVERSION=	1.6
@@ -17,9 +17,8 @@ TEST_DEPENDS=	bash:shells/bash
 
 USE_GITHUB=	yes
 
-USES=		autoreconf gmake ncurses perl5 python shebangfix
+USES=		autoreconf gmake ncurses perl5 python:env shebangfix
 USE_PERL5=	test
-PYTHON_NO_DEPENDS=	yes
 GNU_CONFIGURE=	yes
 SUB_FILES=	pkg-message
 SHEBANG_FILES=	misc/*.pl misc/*.py misc/plot-bamstats test/test.pl

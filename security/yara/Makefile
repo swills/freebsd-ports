@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/yara/Makefile 445141 2017-07-06 12:29:28Z antoine $
+# $FreeBSD: head/security/yara/Makefile 455365 2017-12-02 13:26:03Z antoine $
 
 PORTNAME=	yara
-PORTVERSION=	3.6.3
+PORTVERSION=	3.7.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 

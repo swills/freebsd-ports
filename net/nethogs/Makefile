@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/nethogs/Makefile 440859 2017-05-13 23:36:16Z linimon $
+# $FreeBSD: head/net/nethogs/Makefile 456094 2017-12-12 03:27:03Z jbeich $
 
 PORTNAME=	nethogs
 PORTVERSION=	0.8.5
@@ -12,12 +12,11 @@ COMMENT=	Small net top tool
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_powerpc64=	fails to compile: inode2prog.cpp: snprintf is not a member of std
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	raboof
 
 USES=	gmake shebangfix
+CXXFLAGS+=	-D_GLIBCXX_USE_C99 # XXX ports/193528
 
 SHEBANG_FILES=	determineVersion.sh
 bash_CMD=	/bin/sh

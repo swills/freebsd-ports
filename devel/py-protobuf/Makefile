@@ -1,8 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/py-protobuf/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-protobuf/Makefile 456056 2017-12-11 18:25:32Z sunpoet $
 
 PORTNAME=	protobuf
-PORTVERSION=	3.4.1
+PORTVERSION=	3.5.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,8 +13,8 @@ COMMENT=	Google protobuf Python Client Library
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/../LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.9:devel/py-six@${FLAVOR} \
-		protoc:devel/protobuf
+BUILD_DEPENDS=	protoc:devel/protobuf \
+		${PYTHON_PKGNAMEPREFIX}six>=1.9:devel/py-six@${FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.9:devel/py-six@${FLAVOR}
 
 DO_MAKE_TEST=	${PYTHON_CMD} ${PYDISTUTILS_SETUP}

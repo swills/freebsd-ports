@@ -1,9 +1,8 @@
 # Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/cad/openvsp/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/cad/openvsp/Makefile 455919 2017-12-11 03:04:29Z swills $
 
 PORTNAME=	openvsp
-PORTVERSION=	3.13.3
-PORTREVISION=	1
+PORTVERSION=	3.14.1
 DISTVERSIONPREFIX=	${GH_PROJECT}_
 CATEGORIES=	cad
 

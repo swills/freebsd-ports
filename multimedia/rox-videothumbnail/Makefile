@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/rox-videothumbnail/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/rox-videothumbnail/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	rox-videothumbnail
 PORTVERSION=	0.1.14
@@ -11,11 +11,11 @@ MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Video thumbnail provider for the ROX file manager
 
 RUN_DEPENDS=	${LOCALBASE}/bin/rox:x11-fm/rox-filer \
-		${LOCALBASE}/lib/ROX-Lib2/python/rox/__init__.py:devel/py-roxlib
+		${PYTHON_PKGNAMEPREFIX}roxlib>=0:devel/py-roxlib
 
 WRKSRC=		${WRKDIR}/VideoThumbnail
 
-USES=		python
+USES=		python:2.7
 
 do-build:
 	@${PYTHON_CMD} -m compileall ${WRKSRC}

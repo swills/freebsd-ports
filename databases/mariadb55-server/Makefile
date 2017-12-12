@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb55-server/Makefile 452651 2017-10-22 15:02:55Z brnrd $
+# $FreeBSD: head/databases/mariadb55-server/Makefile 455765 2017-12-08 01:46:00Z linimon $
 
 PORTNAME?=	mariadb
 PORTVERSION=	5.5.58
@@ -51,7 +51,6 @@ CMAKE_ARGS+=	-DINSTALL_DOCDIR="share/doc/mysql" \
 DATADIR=	${PREFIX}/share/mysql
 
 BROKEN_aarch64=		Fails to link: missing sbrk
-BROKEN_armv6=		Does not compile on armv6
 BROKEN_sparc64=		Does not compile: Unsupported platform
 
 .if defined(USE_MYSQL)

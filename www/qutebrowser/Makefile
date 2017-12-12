@@ -1,9 +1,8 @@
-# $FreeBSD: head/www/qutebrowser/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/qutebrowser/Makefile 455389 2017-12-03 06:42:44Z novel $
 
 PORTNAME=	qutebrowser
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.0.3
-PORTREVISION=	1
+DISTVERSION=	1.0.4
 CATEGORIES=	www
 
 MAINTAINER=	novel@FreeBSD.org

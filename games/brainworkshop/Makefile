@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/brainworkshop/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/games/brainworkshop/Makefile 455535 2017-12-04 20:13:39Z antoine $
 
 PORTNAME=	brainworkshop
 PORTVERSION=	4.4
@@ -10,7 +10,7 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/Brain%20Workshop%20${PORTVERSION}
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Free open-source version of the Dual N-Back mental exercise
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pyglet/__init__.py:graphics/py-pyglet
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pyglet/__init__.py:graphics/py-pyglet@${PY_FLAVOR}
 
 USES=		dos2unix python:2.7,run zip
 NO_BUILD=	yes

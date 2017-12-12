@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/rox-edit/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/editors/rox-edit/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	rox-edit
 PORTVERSION=	2.2
@@ -11,9 +11,9 @@ MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Text editor for the ROX desktop
 
 RUN_DEPENDS=	${LOCALBASE}/bin/rox:x11-fm/rox-filer \
-		${LOCALBASE}/lib/ROX-Lib2/python/rox/__init__.py:devel/py-roxlib
+		${PYTHON_PKGNAMEPREFIX}roxlib>=0:devel/py-roxlib
 
-USES=		python tar:bzip2
+USES=		python:2.7 tar:bzip2
 
 post-extract:
 	@${FIND} ${WRKSRC} -name .cvsignore | ${XARGS} ${RM}

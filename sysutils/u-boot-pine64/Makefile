@@ -1,16 +1,10 @@
-# $FreeBSD: head/sysutils/u-boot-pine64/Makefile 447112 2017-08-02 15:21:02Z imp $
+# $FreeBSD: head/sysutils/u-boot-pine64/Makefile 456054 2017-12-11 17:54:20Z manu $
 
-MAINTAINER=	manu@FreeBSD.org
+MAINTAINER=	uboot@FreeBSD.org
 MASTERDIR=	${.CURDIR}/../u-boot-master
 
 MODEL=		pine64
 BOARD_CONFIG=	pine64_plus_defconfig
 FAMILY=		allwinner64
-
-BUILD_DEPENDS=	${LOCALBASE}/share/atf-allwinner/bl31.bin:sysutils/atf-allwinner
-MAKE_ENV+=	BL31=${LOCALBASE}/share/atf-allwinner/bl31.bin
-
-post-build:
-	${CAT} ${WRKSRC}/spl/sunxi-spl.bin ${WRKSRC}/u-boot.itb > ${WRKSRC}/u-boot-sunxi-with-spl.bin
 
 .include "${MASTERDIR}/Makefile"

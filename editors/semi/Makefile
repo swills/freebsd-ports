@@ -1,5 +1,5 @@
 # Created by: Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
-# $FreeBSD: head/editors/semi/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/editors/semi/Makefile 455775 2017-12-08 08:33:45Z mat $
 
 PORTNAME=	semi
 PORTVERSION=	${SEMI_VER}
@@ -45,7 +45,6 @@ MAKE_ARGS+=	PREFIX="${STAGEDIR}${LOCALBASE}" \
 OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.pre.mk>
-.include <bsd.port.options.mk>
 
 PLIST=		${PKGDIR}/pkg-plist.emacs20
 # depends on flim

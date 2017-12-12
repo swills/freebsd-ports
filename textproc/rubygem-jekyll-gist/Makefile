@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv@kvedulv.de>
-# $FreeBSD: head/textproc/rubygem-jekyll-gist/Makefile 444146 2017-06-22 23:41:26Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-jekyll-gist/Makefile 456011 2017-12-11 10:44:23Z sunpoet $
 
 PORTNAME=	jekyll-gist
-PORTVERSION=	1.4.1
+PORTVERSION=	1.5.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -16,6 +16,8 @@ RUN_DEPENDS=	rubygem-octokit>=4.2:net/rubygem-octokit
 
 NO_ARCH=	yes
 USE_RUBY=	yes
-USES=		gem
+USES=		gem shebangfix
+
+SHEBANG_FILES=	script/*
 
 .include <bsd.port.mk>

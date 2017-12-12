@@ -1,5 +1,5 @@
 # Created by: Sergey Akifyev <asa@gascom.ru>
-# $FreeBSD: head/security/gnome-password-generator/Makefile 371453 2014-10-24 16:50:42Z mva $
+# $FreeBSD: head/security/gnome-password-generator/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	gnome-password-generator
 PORTVERSION=	1.6
@@ -11,7 +11,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GNOME 2 password generator
 
 USE_GNOME=	pygnome2
-USES=		python
+USES=		python:2.7
 
 do-build:
 	@cd ${WRKSRC} && ${SED} -e 's|/usr/bin/python|${PYTHON_CMD}|g ; \

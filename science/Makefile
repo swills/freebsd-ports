@@ -1,9 +1,10 @@
-# $FreeBSD: head/science/Makefile 454740 2017-11-23 05:58:51Z yuri $
+# $FreeBSD: head/science/Makefile 455608 2017-12-05 19:15:49Z yuri $
 #
 
     COMMENT = Scientific ports
 
     SUBDIR += 2d-rewriter
+    SUBDIR += ALPSCore
     SUBDIR += InsightToolkit
     SUBDIR += R-cran-AMORE
     SUBDIR += R-cran-DCluster
@@ -19,6 +20,7 @@
     SUBDIR += R-cran-som
     SUBDIR += R-cran-udunits2
     SUBDIR += afni
+    SUBDIR += aircraft-datcom
     SUBDIR += avogadro
     SUBDIR += bddsolve
     SUBDIR += bft
@@ -94,6 +96,7 @@
     SUBDIR += mbdyn
     SUBDIR += mcstas
     SUBDIR += mcstas-comps
+    SUBDIR += mcxtrace
     SUBDIR += medit
     SUBDIR += meep
     SUBDIR += mei

@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/glest/Makefile 443053 2017-06-10 01:51:02Z sunpoet $
+# $FreeBSD: head/games/glest/Makefile 455789 2017-12-08 17:47:11Z amdmi3 $
 
 PORTNAME=	glest
 PORTVERSION=	3.2.2
@@ -17,17 +17,15 @@ LIB_DEPENDS=	libxerces-c.so:textproc/xerces-c3 \
 BUILD_DEPENDS=	jam:devel/jam
 RUN_DEPENDS=	${LOCALBASE}/${DATADIR_REL}/servers.ini:games/glest-data
 
-USES=		dos2unix openal:al,alut pkgconfig zip lua:51
+USES=		dos2unix localbase openal:al,alut pkgconfig zip lua:51
 USE_AUTOTOOLS=	automake:env autoconf:env
 USE_SDL=	yes
 USE_GL=		yes
 GNU_CONFIGURE=	yes
 CONFIGURE_SCRIPT=	mk/linux/configure
-CPPFLAGS+=		-I${LOCALBASE}/include
-LIBS+=			-L${LOCALBASE}/lib
 SUB_FILES=		glest-wrapper pkg-message
 
-JAM_CMD=		${LOCALBASE}/bin/jam -qa
+JAM_CMD=		${LOCALBASE}/bin/jam -q -a -dx
 
 OPTIONS_DEFINE=	DOCS EDITOR
 OPTIONS_SUB=	yes
@@ -77,8 +75,7 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/glest-wrapper \
 		${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 
-.if ${PORT_OPTIONS:MEDITOR}
+do-install-EDITOR-on:
 	${INSTALL_PROGRAM} ${WRKSRC}/glest_editor ${STAGEDIR}${PREFIX}/bin/
-.endif
 
 .include <bsd.port.mk>

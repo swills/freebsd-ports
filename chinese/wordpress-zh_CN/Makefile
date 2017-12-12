@@ -1,8 +1,8 @@
 # Created by: Joe Horn <joehorn@gmail.com>
-# $FreeBSD: head/chinese/wordpress-zh_CN/Makefile 454827 2017-11-24 17:26:47Z joneum $
+# $FreeBSD: head/chinese/wordpress-zh_CN/Makefile 455354 2017-12-02 12:20:31Z joneum $
 
 PORTNAME=	wordpress
-PORTVERSION=	4.9
+DISTVERSION=	4.9.1
 DISTVERSIONSUFFIX=	-zh_CN
 CATEGORIES=	chinese www
 MASTER_SITES=	http://cn.wordpress.org/

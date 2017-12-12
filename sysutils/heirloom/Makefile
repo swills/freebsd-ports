@@ -1,5 +1,5 @@
 # Created by: Cyrille Lefevre <Cyrille.Lefevre@laposte.net>
-# $FreeBSD: head/sysutils/heirloom/Makefile 441875 2017-05-27 21:16:51Z linimon $
+# $FreeBSD: head/sysutils/heirloom/Makefile 455765 2017-12-08 01:46:00Z linimon $
 
 PORTNAME=	heirloom
 PORTVERSION=	070715
@@ -12,8 +12,6 @@ COMMENT=	Collection of standard Unix utilities
 
 BUILD_DEPENDS=	ksh:shells/pdksh
 RUN_DEPENDS:=	${BUILD_DEPENDS}
-
-BROKEN_armv6=		dumps core: Assertion failed: (!NodePtr->isKnownSentinel()), function operator*, file ilist_iterator.h
 
 USES=		gmake ncurses tar:bzip2
 MAKE_ARGS=	CC=${CC} CFLAGS="${CFLAGS}" ROOT="${STAGEDIR}" \

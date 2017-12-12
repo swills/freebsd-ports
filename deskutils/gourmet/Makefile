@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/deskutils/gourmet/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/deskutils/gourmet/Makefile 455337 2017-12-02 09:22:02Z antoine $
 
 PORTNAME=	gourmet
 PORTVERSION=	0.17.4
@@ -25,7 +25,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${FLAVOR} \
 
 OPTIONS_DEFINE=		IPYTHON
 IPYTHON_DESC=		Interactive shell support
-IPYTHON_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipython>0:devel/ipython
+IPYTHON_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipython>0:devel/ipython@${FLAVOR}
 
 USES=		gettext python:-2.7
 USE_GNOME=	intltool pygnome2 pygtk2

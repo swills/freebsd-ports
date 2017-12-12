@@ -1,5 +1,5 @@
 # Created by: UMENO Takashi
-# $FreeBSD: head/games/ninix-aya/Makefile 419572 2016-08-04 01:46:35Z marino $
+# $FreeBSD: head/games/ninix-aya/Makefile 455392 2017-12-03 08:25:31Z antoine $
 
 PORTNAME=	ninix-aya
 PORTVERSION=	4.4
@@ -14,12 +14,12 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpng.so:graphics/png
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}chardet>0:textproc/py-chardet \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}chardet>0:textproc/py-chardet@${PY_FLAVOR} \
 		${PYNUMPY}
 
 NO_ARCH=	yes
 
-USES=		gmake python tar:tgz
+USES=		gmake python:2.7 tar:tgz
 USE_GNOME=	pygtk2
 USE_GSTREAMER=	python
 

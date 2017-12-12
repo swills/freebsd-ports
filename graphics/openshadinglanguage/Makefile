@@ -1,10 +1,10 @@
 # Created by: Shane Ambler <FreeBSD@Shaneware.biz>
-# $FreeBSD: head/graphics/openshadinglanguage/Makefile 455244 2017-12-01 01:58:23Z mandree $
+# $FreeBSD: head/graphics/openshadinglanguage/Makefile 455400 2017-12-03 11:36:21Z danfe $
 
 PORTNAME=	openshadinglanguage
 PORTVERSION=	1.8.10
-PORTREVISION=	4
 DISTVERSIONPREFIX=	Release-
+PORTREVISION=	5
 CATEGORIES=	graphics devel
 
 MAINTAINER=	FreeBSD@Shaneware.biz
@@ -25,7 +25,7 @@ GH_ACCOUNT=	imageworks
 GH_PROJECT=	OpenShadingLanguage
 
 CMAKE_ARGS=	-DLLVM_CONFIG:STRING="${LOCALBASE}/bin/llvm-config40" \
-		-DENABLERTTI:BOOL=OFF -DUSE_BOOST_WAVE:BOOL=OFF
+		-DENABLERTTI:BOOL=ON -DUSE_BOOST_WAVE:BOOL=OFF
 USE_LDCONFIG=	yes
 
 post-patch:

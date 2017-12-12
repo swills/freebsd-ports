@@ -1,5 +1,5 @@
 # Created by: Gabor Pali <pgj@FreeBSD.org>
-# $FreeBSD: head/devel/cppcheck/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/cppcheck/Makefile 456105 2017-12-12 04:35:49Z jbeich $
 
 PORTNAME=	cppcheck
 PORTVERSION=	1.81
@@ -11,8 +11,6 @@ COMMENT?=	Static analysis of C/C++ code
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_powerpc64=	fails to compile: analyzerinfo.cpp: 'to_string' is not a member of 'std'
 
 USES=			compiler:c++11-lib cmake tar:bzip2
 

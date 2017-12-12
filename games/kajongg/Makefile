@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/kajongg/Makefile 448416 2017-08-20 12:30:30Z sunpoet $
+# $FreeBSD: head/games/kajongg/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	kajongg
 PORTVERSION=	${KDE4_VERSION}
@@ -8,10 +8,10 @@ CATEGORIES=	games kde kde-kde4
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	${${PORTNAME}_DESC}
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${PY_FLAVOR}
 
 NO_ARCH=	yes
-USES=		cmake:outsource kde:4 python tar:xz shebangfix sqlite
+USES=		cmake:outsource kde:4 python:2.7 tar:xz shebangfix sqlite
 USE_KDE=	kdelibs pykde4 automoc4
 USE_QT4=	moc_build qmake_build rcc_build uic_build
 CMAKE_ARGS=	-DINSTALL_KAJONGG:BOOL=TRUE

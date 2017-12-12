@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 455196 2017-11-30 11:36:55Z amdmi3 $
+# $FreeBSD: head/games/Makefile 455743 2017-12-07 17:17:44Z amdmi3 $
 #
 
     COMMENT = Games and related software
@@ -534,6 +534,7 @@
     SUBDIR += libretro-cores
     SUBDIR += libshhcards
     SUBDIR += lightsoff
+    SUBDIR += lightyears
     SUBDIR += lincity
     SUBDIR += lincity-ng
     SUBDIR += linux-darwinia-demo
@@ -557,7 +558,6 @@
     SUBDIR += linux-quake3-demo
     SUBDIR += linux-quake4
     SUBDIR += linux-quake4-demo
-    SUBDIR += linux-rtcw
     SUBDIR += linux-ssamtfe
     SUBDIR += linux-ssamtse
     SUBDIR += linux-unigine-heaven
@@ -574,6 +574,7 @@
     SUBDIR += lmarbles
     SUBDIR += lmpc
     SUBDIR += lolcat
+    SUBDIR += lordsawar
     SUBDIR += lpairs
     SUBDIR += lskat
     SUBDIR += ltris
@@ -608,6 +609,7 @@
     SUBDIR += minerbold
     SUBDIR += minetest
     SUBDIR += minetest_game
+    SUBDIR += minilens
     SUBDIR += mirrormagic
     SUBDIR += miscom
     SUBDIR += mkgichessclub

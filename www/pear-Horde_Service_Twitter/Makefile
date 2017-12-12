@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/www/pear-Horde_Service_Twitter/Makefile 425775 2016-11-08 23:53:53Z mm $
+# $FreeBSD: head/www/pear-Horde_Service_Twitter/Makefile 455798 2017-12-08 20:21:01Z joneum $
 
 PORTNAME=	Horde_Service_Twitter
-PORTVERSION=	2.1.5
+DISTVERSION=	2.1.6
 CATEGORIES=	www pear
 
 MAINTAINER=	horde@FreeBSD.org

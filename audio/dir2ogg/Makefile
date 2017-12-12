@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/audio/dir2ogg/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/audio/dir2ogg/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	dir2ogg
 PORTVERSION=	0.12
@@ -14,7 +14,7 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	faad:audio/faad \
-		mutagen-inspect:audio/py-mutagen \
+		${PYTHON_PKGNAMEPREFIX}mutagen>=0:audio/py-mutagen@${PY_FLAVOR} \
 		mplayer:multimedia/mplayer \
 		oggenc:audio/vorbis-tools
 

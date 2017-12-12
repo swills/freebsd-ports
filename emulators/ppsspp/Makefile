@@ -1,8 +1,8 @@
-# $FreeBSD: head/emulators/ppsspp/Makefile 455208 2017-11-30 15:38:04Z jbeich $
+# $FreeBSD: head/emulators/ppsspp/Makefile 455622 2017-12-05 20:55:21Z jbeich $
 
 PORTNAME=	ppsspp
 DISTVERSIONPREFIX=	v
-DISTVERSION?=	1.5.2
+DISTVERSION?=	1.5.4
 PORTREVISION?=	0
 CATEGORIES=	emulators
 # XXX Get from Debian once #697821 lands
@@ -23,7 +23,7 @@ RUN_DEPENDS=	xdg-open:devel/xdg-utils
 USE_GITHUB=	yes
 GH_ACCOUNT=	hrydgard
 GH_TUPLE?=	hrydgard:glslang:2edde666:glslang/ext/glslang \
-		hrydgard:${PORTNAME}-lang:c37028e:lang/assets/lang \
+		hrydgard:${PORTNAME}-lang:1e3e4a0:lang/assets/lang \
 		KhronosGroup:SPIRV-Cross:90966d5:SPIRV/ext/SPIRV-Cross \
 		Kingcom:armips:v0.9-89-g8b4cada:armips/ext/armips \
 		Kingcom:tinyformat:Release-2.0.1-7-gb7f5a22:tinyformat/ext/armips/ext/tinyformat

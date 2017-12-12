@@ -1,9 +1,8 @@
 # Created by: Gerrit Beine <tux@pinguru.net>
-# $FreeBSD: head/databases/php70-memcache/Makefile 454525 2017-11-20 04:32:12Z sunpoet $
+# $FreeBSD: head/databases/php70-memcache/Makefile 455958 2017-12-11 10:38:25Z sunpoet $
 
 PORTNAME=	memcache
-PORTVERSION=	3.0.8
-PORTREVISION=	1
+PORTVERSION=	3.0.9
 CATEGORIES=	databases
 PKGNAMEPREFIX=	php70-
 
@@ -26,7 +25,7 @@ USES=		dos2unix php:ext
 
 GH_ACCOUNT=	websupport-sk
 GH_PROJECT=	pecl-${PORTNAME}
-GH_TAGNAME=	5041d2f
+GH_TAGNAME=	e702b5f
 USE_GITHUB=	yes
 
 post-install-EXAMPLES-on:

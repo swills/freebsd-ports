@@ -1,5 +1,5 @@
 # Created by: Olivier Cochard-Labbe <olivier@FreeBSD.org>
-# $FreeBSD: head/x11/wbarconf/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/wbarconf/Makefile 455536 2017-12-04 20:25:18Z antoine $
 
 PORTNAME=	wbarconf
 PORTVERSION=	0.7.2.2
@@ -15,7 +15,7 @@ LICENSE=	GPLv3
 RUN_DEPENDS=	wbar:x11/wbar
 
 USE_GNOME=	pygobject pygtk2 gtk20
-USES=		gettext desktop-file-utils python shebangfix
+USES=		gettext desktop-file-utils python:2.7 shebangfix
 SHEBANG_FILES=	${WRKSRC}/wbarconf
 python_OLD_CMD=	"/usr/bin/env python2"
 NO_BUILD=	yes

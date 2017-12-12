@@ -1,11 +1,10 @@
-
-# $FreeBSD: head/lang/php72/Makefile 455138 2017-11-29 18:46:30Z gerald $
+# $FreeBSD: head/lang/php72/Makefile 455655 2017-12-06 15:40:48Z tz $
 
 PORTNAME=	php72
-DISTVERSION=	7.2.0RC6
-PORTREVISION?=	1
+DISTVERSION=	7.2.0
+PORTREVISION?=	0
 CATEGORIES?=	lang devel www
-MASTER_SITES=	https://downloads.php.net/~pollita/
+MASTER_SITES=	PHP/distributions
 DISTNAME=	php-${DISTVERSION}
 
 MAINTAINER=	tz@FreeBSD.org
@@ -23,7 +22,8 @@ USE_AUTOTOOLS=	autoconf
 #USES+=		autoreconf gmake
 #GNU_CONFIGURE=	yes
 
-LIB_DEPENDS=	libpcre.so:devel/pcre
+LIB_DEPENDS=	libpcre.so:devel/pcre \
+		libargon2.so:security/libargon2
 
 CONFIGURE_ARGS+=--with-layout=GNU \
 		--localstatedir=/var \
@@ -33,12 +33,13 @@ CONFIGURE_ARGS+=--with-layout=GNU \
 		--enable-mysqlnd \
 		--with-libxml-dir=${LOCALBASE} \
 		--with-pcre-regex=${LOCALBASE} \
+		--with-password-argon2=${LOCALBASE} \
 		--program-prefix=""
 
 USE_GNOME=	libxml2
 
 OPTIONS_DEFINE+=CLI CGI FPM EMBED PHPDBG DEBUG DTRACE IPV6 LINKTHR ZTS
-OPTIONS_DEFAULT=CLI CGI FPM LINKTHR DTRACE
+OPTIONS_DEFAULT=CLI CGI FPM EMBED LINKTHR DTRACE
 
 # Bug 197128:  No ASM code for MIPS/MIPS64, disable FPM
 OPTIONS_EXCLUDE_mips=FPM

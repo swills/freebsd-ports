@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/misc/Makefile 455773 2017-12-08 06:37:54Z yuri $
 #
 
     COMMENT = Miscellaneous utilities
@@ -383,6 +383,7 @@
     SUBDIR += py-fuzzy
     SUBDIR += py-glance
     SUBDIR += py-osd
+    SUBDIR += py-palettable
     SUBDIR += py-pexpect
     SUBDIR += py-powerline-status
     SUBDIR += py-progressbar

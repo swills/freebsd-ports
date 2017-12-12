@@ -1,5 +1,5 @@
 # Created by: hm
-# $FreeBSD: head/comms/mlan3/Makefile 417166 2016-06-20 16:23:28Z mat $
+# $FreeBSD: head/comms/mlan3/Makefile 455527 2017-12-04 16:59:19Z asomers $
 
 PORTNAME=	mlan3
 PORTVERSION=	1.00
@@ -16,6 +16,8 @@ LICENSE_FILE=	${WRKSRC}/license.txt
 NO_WRKSUBDIR=	yes
 USES=		dos2unix uidfix zip
 DOS2UNIX_GLOB=	*.c *.h
+
+CONFLICTS_INSTALL=	shells/fish
 
 post-patch:
 	@${REINPLACE_CMD} -e '/int main/s/short argc/int argc/' \

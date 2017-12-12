@@ -1,9 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-jekyll-coffeescript/Makefile 445506 2017-07-11 16:59:20Z sunpoet $
+# $FreeBSD: head/devel/rubygem-jekyll-coffeescript/Makefile 455716 2017-12-07 16:00:44Z sunpoet $
 
 PORTNAME=	jekyll-coffeescript
-PORTVERSION=	1.0.2
-PORTREVISION=	1
+PORTVERSION=	1.1.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

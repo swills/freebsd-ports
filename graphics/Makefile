@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/Makefile 455903 2017-12-10 17:38:46Z yuri $
 #
 
     COMMENT = Graphics tools and libraries
@@ -148,6 +148,7 @@
     SUBDIR += djview4-qt4
     SUBDIR += djvulibre
     SUBDIR += dmtx-utils
+    SUBDIR += drawpile
     SUBDIR += driconf
     SUBDIR += drm-next-kmod
     SUBDIR += dspdfviewer
@@ -883,6 +884,7 @@
     SUBDIR += py-openexr
     SUBDIR += py-openimageio
     SUBDIR += py-paint
+    SUBDIR += py-photocollage
     SUBDIR += py-pillow
     SUBDIR += py-pivy
     SUBDIR += py-plotly

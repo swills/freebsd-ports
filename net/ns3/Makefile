@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/ns3/Makefile 453746 2017-11-08 14:45:57Z robak $
+# $FreeBSD: head/net/ns3/Makefile 456078 2017-12-12 02:40:39Z jbeich $
 
 PORTNAME=	ns3
 PORTVERSION=	3.27
@@ -11,9 +11,7 @@ COMMENT=	Network simulator for Internet systems
 
 LICENSE=	GPLv2
 
-BROKEN_powerpc64=	fails to compile: cc1plus: unrecognized command line option -std=c++11
-
-USES=		gettext pkgconfig python sqlite tar:bzip2 waf
+USES=		compiler:c++11-lib gettext pkgconfig python sqlite tar:bzip2 waf
 USE_GNOME=	libxml2
 USE_LDCONFIG=	yes
 WRKSRC_SUBDIR=	ns-${DISTVERSION}

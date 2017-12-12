@@ -1,5 +1,5 @@
 # Created by: Tilman Linneweh <arved@FreeBSD.org>
-# $FreeBSD: head/audio/xmms-ladspa/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/xmms-ladspa/Makefile 455336 2017-12-02 09:00:24Z amdmi3 $
 
 PORTNAME=	xmms-ladspa
 PORTVERSION=	1.1
@@ -12,7 +12,7 @@ DISTNAME=	xmms_ladspa-${PORTVERSION}
 MAINTAINER=	arved@FreeBSD.org
 COMMENT=	XMMS Plugin that provides LADSPA Plugins to XMMS
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	${LOCALBASE}/include/ladspa.h:audio/ladspa
@@ -24,6 +24,6 @@ USE_GNOME=	gtk12
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/xmms/Effect/
-	@${INSTALL_DATA} ${WRKSRC}/ladspa.so ${STAGEDIR}${PREFIX}/lib/xmms/Effect/
+	${INSTALL_DATA} ${WRKSRC}/ladspa.so ${STAGEDIR}${PREFIX}/lib/xmms/Effect/
 
 .include <bsd.port.mk>

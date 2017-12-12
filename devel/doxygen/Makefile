@@ -1,5 +1,5 @@
 # Created by: Joep Grooten <joep@di.nl>
-# $FreeBSD: head/devel/doxygen/Makefile 454607 2017-11-21 12:50:27Z arved $
+# $FreeBSD: head/devel/doxygen/Makefile 455534 2017-12-04 20:12:21Z amdmi3 $
 
 PORTNAME=	doxygen
 PORTVERSION=	1.8.13
@@ -16,7 +16,7 @@ COMMENT=	Documentation system for C, C++, and other languages
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		bison cmake:outsource,noninja iconv python:2 shebangfix
+USES=		bison cmake:outsource,noninja iconv python shebangfix
 ALL_TARGET=	all
 CMAKE_ARGS+=	-DDOC_INSTALL_DIR:PATH=${DOCSDIR_REL}
 # Parallel jobs breaks when the DOCS option is on

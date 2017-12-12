@@ -1,5 +1,5 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/devel/pygobject3-common/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/pygobject3-common/Makefile 455912 2017-12-10 20:45:32Z antoine $
 
 PORTNAME=	gobject
 PORTVERSION=	3.18.2
@@ -36,7 +36,7 @@ MAKE_ARGS=	PYTHON_VERSION=${PYTHON_VER}
 .if ${SLAVE_PORT} == no
 PORTSCOUT?=	limitw:1,even
 
-BUILD_DEPENDS+=	${LOCALBASE}/libdata/pkgconfig/pycairo.pc:graphics/py-cairo
+BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}cairo>=0:graphics/py-cairo@${PY_FLAVOR}
 USES+=		gnome python:build
 USE_GNOME=	glib20:build introspection:build
 NO_BUILD=	yes
@@ -58,13 +58,8 @@ RUN_DEPENDS+=	pygobject3-common>=0:devel/pygobject3-common
 .if ${SLAVE_PORT} == python
 USES+=		python
 USE_PYTHON=	flavors
-.if ${FLAVOR:Upy27:Mpy2*}
-BUILD_DEPENDS+=	${LOCALBASE}/libdata/pkgconfig/pycairo.pc:graphics/py-cairo@${PY_FLAVOR}
-RUN_DEPENDS+=	${LOCALBASE}/libdata/pkgconfig/pycairo.pc:graphics/py-cairo@${PY_FLAVOR}
-.else
-BUILD_DEPENDS+=	${LOCALBASE}/libdata/pkgconfig/py3cairo.pc:graphics/py-cairo@${PY_FLAVOR}
-RUN_DEPENDS+=	${LOCALBASE}/libdata/pkgconfig/py3cairo.pc:graphics/py-cairo@${PY_FLAVOR}
-.endif
+BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}cairo>=0:graphics/py-cairo@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}cairo>=0:graphics/py-cairo@${FLAVOR}
 .endif
 
 post-install:

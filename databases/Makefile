@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/Makefile 456046 2017-12-11 16:08:56Z swills $
 #
 
     COMMENT = Databases and related software
@@ -656,6 +656,7 @@
     SUBDIR += php71-sqlite3
     SUBDIR += php72-dba
     SUBDIR += php72-interbase
+    SUBDIR += php72-memcache
     SUBDIR += php72-mysqli
     SUBDIR += php72-odbc
     SUBDIR += php72-pdo
@@ -844,6 +845,7 @@
     SUBDIR += py-sqlobject
     SUBDIR += py-sqlparse
     SUBDIR += py-sqlparse01
+    SUBDIR += py-sqlparse020
     SUBDIR += py-sqlrelay
     SUBDIR += py-swift
     SUBDIR += py-sybase

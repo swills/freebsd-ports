@@ -1,5 +1,5 @@
 # Created by: Javier Martin Rueda <jmrueda@diatel.upm.es>
-# $FreeBSD: head/www/moodle34/Makefile 454376 2017-11-17 15:11:59Z wen $
+# $FreeBSD: head/www/moodle34/Makefile 455299 2017-12-01 16:17:40Z mat $
 
 PORTNAME=	moodle
 PORTVERSION=	3.4
@@ -14,7 +14,6 @@ LICENSE=	GPLv3
 
 CONFLICTS=	moodle31-3.1.[0-9]* moodle32-3.2.[0-9]* moodle33-3.3.[0-9]*
 
-DEFAULT_VERSIONS=	php=70
 IGNORE_WITH_PHP=	56
 
 USES=		cpe php tar:tgz

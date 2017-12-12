@@ -1,5 +1,5 @@
 # Created by: Sébastien Santoro <dereckson@gmail.com>
-# $FreeBSD: head/graphics/commons-utilities/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/commons-utilities/Makefile 455392 2017-12-03 08:25:31Z antoine $
 
 PORTNAME=	commons-utilities
 PORTVERSION=	1.0
@@ -16,10 +16,10 @@ RUN_DEPENDS=	p5-Image-ExifTool>=0:graphics/p5-Image-ExifTool \
 		p5-Term-ReadKey>=0:devel/p5-Term-ReadKey \
 		p5-Text-CSV_XS>=0:textproc/p5-Text-CSV_XS \
 		p5-Text-CSV-Encoded>=0:textproc/p5-Text-CSV-Encoded \
-		${PYTHON_PKGNAMEPREFIX}mechanize>=0.2:www/py-mechanize \
+		${PYTHON_PKGNAMEPREFIX}mechanize>=0.2:www/py-mechanize@${PY_FLAVOR} \
 		exiv2:graphics/exiv2
 
-USES=		jpeg perl5 python shebangfix
+USES=		jpeg perl5 python:2.7 shebangfix
 SHEBANG_FILES=	commons-csv-creator
 USE_PERL5=	run
 NO_BUILD=	yes

@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/msp430-debug-stack/Makefile 453763 2017-11-08 19:44:18Z lev $
+# $FreeBSD: head/devel/msp430-debug-stack/Makefile 456105 2017-12-12 04:35:49Z jbeich $
 
 PORTNAME=	msp430-debug-stack
 PORTVERSION=	3.10.001.000
-PORTREVISION=	3
+PORTREVISION=	6
 CATEGORIES=	devel
 MASTER_SITES=	http://www.ti.com/lit/sw/slac460v/ \
 		http://www.ti.com/lit/ug/slau320z/:doc1 \
@@ -20,8 +20,6 @@ LICENSE=	BSD3CLAUSE
 
 LIB_DEPENDS=	libboost_filesystem.so:devel/boost-libs \
 		libhidapi.so:comms/hidapi
-
-BROKEN_powerpc64=	fails to compile: adapt_enum.h: 'to_string' is not a member of 'std'
 
 USES=		compiler:c++11-lib dos2unix gmake zip:infozip
 USE_LDCONFIG=	yes

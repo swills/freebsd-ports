@@ -1,5 +1,5 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/audio/trommler/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/audio/trommler/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	trommler
 PORTVERSION=	3.8
@@ -13,7 +13,7 @@ COMMENT=	GTK+2 based drum machine
 
 LICENSE=	GPLv2
 
-USES=		gmake pkgconfig python:build shebangfix
+USES=		gmake pkgconfig python:2.7,build shebangfix
 SHEBANG_FILES=	genexport.py
 USE_GNOME=	gtk20
 

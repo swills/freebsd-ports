@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/pysycache/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/games/pysycache/Makefile 455540 2017-12-04 20:50:30Z antoine $
 
 PORTNAME=	pysycache
 PORTVERSION=	2.0
@@ -14,7 +14,7 @@ COMMENT=	Educational software made in python
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pygame/__init__.py:devel/py-game
+RUN_DEPENDS=	${PYGAME}
 
 USES=		python:2.7 shebangfix zip
 NO_BUILD=	yes

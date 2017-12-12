@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/multimedia/libmediainfo/Makefile 453420 2017-11-03 20:27:17Z sunpoet $
+# $FreeBSD: head/multimedia/libmediainfo/Makefile 455943 2017-12-11 10:37:10Z sunpoet $
 
 PORTNAME=	libmediainfo
 PORTVERSION=	17.10
@@ -38,7 +38,6 @@ TINYXML2_CONFIGURE_ON=	--with-libtinyxml2=yes
 TINYXML2_LIB_DEPENDS=	libtinyxml2.so:textproc/tinyxml2
 
 post-patch:
-	@${TOUCH} ${WRKSRC}/aclocal.m4
 	@${REINPLACE_CMD} \
 		-e 's|lib/pkgconfig/|libdata/pkgconfig/|g' \
 		-e 's|-DMEDIAINFO_LIBMMS_FROMSOURCE||g' \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/rmilter/Makefile 441468 2017-05-22 16:04:19Z linimon $
+# $FreeBSD: head/mail/rmilter/Makefile 455765 2017-12-08 01:46:00Z linimon $
 
 PORTNAME=	rmilter
 PORTVERSION=	1.10.0
@@ -11,7 +11,6 @@ LICENSE=	BSD2CLAUSE
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
 
-BROKEN_armv6=		fails to configure in cmake
 BROKEN_powerpc64=	fails to build: btrie.c: '__SIZEOF_POINTER__' undeclared here
 NOT_FOR_ARCHS=		mips sparc64
 NOT_FOR_ARCHS_REASON=	fails to compile: error: Unsupported word size

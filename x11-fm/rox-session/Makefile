@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fm/rox-session/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/x11-fm/rox-session/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	rox-session
 PORTVERSION=	0.40.0
@@ -14,12 +14,12 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libdbus-glib-1.so:devel/dbus-glib
 RUN_DEPENDS=	${LOCALBASE}/bin/rox:x11-fm/rox-filer \
 		${PYTHON_PKGNAMEPREFIX}roxlib>=0:devel/py-roxlib \
-		${PYTHON_PKGNAMEPREFIX}dbus>=0:devel/py-dbus
+		${PYTHON_PKGNAMEPREFIX}dbus>=0:devel/py-dbus@${PY_FLAVOR}
 
 WRKSRC=		${WRKDIR}/ROX-Session
 DATADIR=	${PREFIX}/apps/ROX-Session
 
-USES=		gettext-tools pkgconfig python
+USES=		gettext-tools pkgconfig python:2.7
 USE_GNOME=	gtk20 libxml2
 USE_XORG=	x11 xext xtst xxf86vm
 

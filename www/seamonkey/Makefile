@@ -1,5 +1,5 @@
 # Created by: eivind/dima/jseger
-# $FreeBSD: head/www/seamonkey/Makefile 454808 2017-11-23 22:53:32Z jbeich $
+# $FreeBSD: head/www/seamonkey/Makefile 455413 2017-12-03 17:35:29Z jbeich $
 
 PORTNAME=	seamonkey
 DISTVERSION=	2.49.1
@@ -22,7 +22,7 @@ BUILD_DEPENDS=	nspr>=4.13.1:devel/nspr \
 		libvorbis>=1.3.5,3:audio/libvorbis \
 		libvpx>=1.5.0:multimedia/libvpx \
 		sqlite3>=3.17.0:databases/sqlite3 \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3 \
+		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} \
 		v4l_compat>0:multimedia/v4l_compat \
 		autoconf-2.13:devel/autoconf213 \
 		yasm:devel/yasm \

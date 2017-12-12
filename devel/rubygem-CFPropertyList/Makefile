@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-CFPropertyList/Makefile 432662 2017-01-28 20:52:41Z sunpoet $
+# $FreeBSD: head/devel/rubygem-CFPropertyList/Makefile 455964 2017-12-11 10:38:56Z sunpoet $
 
 PORTNAME=	CFPropertyList
-PORTVERSION=	2.3.5
+PORTVERSION=	2.3.6
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

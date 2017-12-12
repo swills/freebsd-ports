@@ -1,9 +1,9 @@
 # Created by: gurkan@phys.ethz.ch
-# $FreeBSD: head/math/edenmath/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/math/edenmath/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	edenmath
 PORTVERSION=	1.1.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	math gnustep
 MASTER_SITES=	http://www.eskimo.com/~pburns/EdenMath/files/
 DISTNAME=	EdenMath_GNUstep-${PORTVERSION}

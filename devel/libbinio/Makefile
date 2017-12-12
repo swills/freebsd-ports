@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/devel/libbinio/Makefile 441875 2017-05-27 21:16:51Z linimon $
+# $FreeBSD: head/devel/libbinio/Makefile 455765 2017-12-08 01:46:00Z linimon $
 
 PORTNAME=	libbinio
 PORTVERSION=	1.4
@@ -11,8 +11,6 @@ MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Binary I/O stream class library
 
 LICENSE=	LGPL21
-
-BROKEN_armv6=		dumps core: internal compiler failure: Unknown addressing mode for CP reference!
 
 USES=		autoreconf libtool pathfix
 GNU_CONFIGURE=	yes

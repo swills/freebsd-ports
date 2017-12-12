@@ -1,9 +1,9 @@
 # Created by: Dryice Liu <dryice@dryice.name>
-# $FreeBSD: head/www/py-qp/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-qp/Makefile 455451 2017-12-03 20:35:56Z sunpoet $
 
 PORTNAME=	qp
 PORTVERSION=	2.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www python
 MASTER_SITES=	http://www.mems-exchange.org/software/qp/ \
 		LOCAL/sunpoet
@@ -19,7 +19,7 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 USE_PYTHON=	distutils
-USES=		python:2
+USES=		python:2.7
 
 SUB_FILES=	pkg-message
 

@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/uatraits/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/devel/uatraits/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	uatraits
 PORTVERSION=	20130430
@@ -14,7 +14,7 @@ LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs \
 		libpcre.so:devel/pcre \
 		libxml2.so:textproc/libxml2
 
-USES=		autoreconf libtool pkgconfig python ssl
+USES=		autoreconf libtool pkgconfig python:2.7 ssl
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 

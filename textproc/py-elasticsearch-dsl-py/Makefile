@@ -1,8 +1,9 @@
 # Created by: Dan Langille <dvl@FreeBSD.org>
-# $FreeBSD: head/textproc/py-elasticsearch-dsl-py/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-elasticsearch-dsl-py/Makefile 455617 2017-12-05 20:19:11Z dvl $
 
 PORTNAME=	elasticsearch-dsl-py
 PORTVERSION=	0.0.11
+PORTREVISION=	1
 CATEGORIES=	textproc python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -11,7 +12,8 @@ COMMENT=	High level Python client for Elasticsearch
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}elasticsearch-py>=1.3.0:textproc/py-elasticsearch-py@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}elasticsearch-py>=1.3.0:textproc/py-elasticsearch-py@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}dateutil>=0:devel/py-dateutil@${FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	elastic

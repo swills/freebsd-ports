@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 455255 2017-12-01 09:38:23Z rene $
+# $FreeBSD: head/security/Makefile 455902 2017-12-10 16:00:12Z feld $
 #
 
     COMMENT = Security tools
@@ -38,6 +38,7 @@
     SUBDIR += barnyard2
     SUBDIR += barnyard2-sguil
     SUBDIR += base
+    SUBDIR += base-audit
     SUBDIR += bcrypt
     SUBDIR += bcwipe
     SUBDIR += bdes
@@ -310,9 +311,9 @@
     SUBDIR += kpcli
     SUBDIR += kqoauth
     SUBDIR += krb5
-    SUBDIR += krb5-113
     SUBDIR += krb5-114
     SUBDIR += krb5-115
+    SUBDIR += krb5-116
     SUBDIR += krb5-appl
     SUBDIR += krb5-devel
     SUBDIR += kripp
@@ -336,6 +337,7 @@
     SUBDIR += libgnomesu
     SUBDIR += libgpg-error
     SUBDIR += libgringotts
+    SUBDIR += libhijack
     SUBDIR += libident
     SUBDIR += libkpass
     SUBDIR += libksba
@@ -1236,6 +1238,7 @@
     SUBDIR += truecrypt
     SUBDIR += tsshbatch
     SUBDIR += tthsum
+    SUBDIR += u2f-devd
     SUBDIR += umit
     SUBDIR += unhide
     SUBDIR += unicornscan

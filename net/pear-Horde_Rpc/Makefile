@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/pear-Horde_Rpc/Makefile 411757 2016-03-24 07:39:22Z mm $
+# $FreeBSD: head/net/pear-Horde_Rpc/Makefile 455798 2017-12-08 20:21:01Z joneum $
 
 PORTNAME=	Horde_Rpc
-PORTVERSION=	2.1.7
+DISTVERSION=	2.1.8
 CATEGORIES=	net www pear
 
 MAINTAINER=	horde@FreeBSD.org

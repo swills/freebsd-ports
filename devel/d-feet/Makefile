@@ -1,5 +1,5 @@
 # Created by: Thinker K.F. Li <thinker@eeebox.branda.to>
-# $FreeBSD: head/devel/d-feet/Makefile 425988 2016-11-12 20:05:42Z rm $
+# $FreeBSD: head/devel/d-feet/Makefile 456048 2017-12-11 16:48:54Z antoine $
 
 PORTNAME=	d-feet
 PORTVERSION=	0.3.11
@@ -15,8 +15,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	itstool:textproc/itstool
 
 NO_ARCH=	yes
-USES=		gettext gmake gnome perl5 pkgconfig python:2.7+ tar:xz
+USES=		gettext gmake gnome perl5 pkgconfig python tar:xz
 USE_GNOME=	gtk30 intlhack introspection:build libxml2:build libwnck3
+USE_PYTHON=	py3kplist
 GNU_CONFIGURE=	yes
 USE_PERL5=	build
 INSTALLS_ICONS=	yes

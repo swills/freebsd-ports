@@ -1,11 +1,11 @@
-# $FreeBSD: head/security/rubygem-bcrypt_pbkdf/Makefile 455046 2017-11-28 15:41:22Z tz $
+# $FreeBSD: head/security/rubygem-bcrypt_pbkdf/Makefile 455591 2017-12-05 16:44:09Z tz $
 
 PORTNAME=	bcrypt_pbkdf
 PORTVERSION=	1.0.0
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	idefix@fechner.net
 COMMENT=	This gem implements bcrypt_pdkfd
 
 LICENSE=	MIT

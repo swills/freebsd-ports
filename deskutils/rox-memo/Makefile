@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/rox-memo/Makefile 439287 2017-04-24 12:58:02Z miwi $
+# $FreeBSD: head/deskutils/rox-memo/Makefile 455913 2017-12-10 20:48:45Z antoine $
 
 PORTNAME=	rox-memo
 PORTVERSION=	2.1
@@ -11,9 +11,9 @@ MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Appointment/TODO management for the ROX desktop
 
 RUN_DEPENDS=	${LOCALBASE}/bin/rox:x11-fm/rox-filer \
-		${LOCALBASE}/lib/ROX-Lib2/python/rox/__init__.py:devel/py-roxlib
+		${PYTHON_PKGNAMEPREFIX}roxlib>=0:devel/py-roxlib
 
-USES=		python shebangfix tar:bzip2
+USES=		python:2.7 shebangfix tar:bzip2
 SHEBANG_FILES=	Memo/AppRun Memo/AppletRun
 
 do-build:

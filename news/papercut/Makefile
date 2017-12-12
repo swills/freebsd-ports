@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <sheepkiller@cultdeadsheep.org>
-# $FreeBSD: head/news/papercut/Makefile 438824 2017-04-19 06:17:17Z miwi $
+# $FreeBSD: head/news/papercut/Makefile 455392 2017-12-03 08:25:31Z antoine $
 
 PORTNAME=	papercut
 PORTVERSION=	0.9.13
@@ -13,9 +13,9 @@ COMMENT=	Papercut is a news server written in Python, using a MySQL backend
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=1.2.2:databases/py-MySQLdb
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=1.2.2:databases/py-MySQLdb@${PY_FLAVOR}
 
-USES=		python shebangfix
+USES=		python:2.7 shebangfix
 NO_BUILD=	yes
 NO_ARCH=	yes
 SHEBANG_FILES=	*.py auth/*.py storage/*.py

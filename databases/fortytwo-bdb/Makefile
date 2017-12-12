@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/fortytwo-bdb/Makefile 448472 2017-08-21 13:26:28Z theraven $
+# $FreeBSD: head/databases/fortytwo-bdb/Makefile 455401 2017-12-03 12:23:53Z theraven $
 
 PORTNAME=	bdb
 PORTVERSION=	0.2.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	databases gnustep
 MASTER_SITES=	SF/fortytwo/Berkeley%20DB%20Wrapper%20%28BDB%29/${PORTVERSION}
 PKGNAMEPREFIX=	fortytwo-

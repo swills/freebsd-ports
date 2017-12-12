@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/audio/siren/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/audio/siren/Makefile 455765 2017-12-08 01:46:00Z linimon $
 
 PORTNAME=	siren
 PORTVERSION=	0.7
@@ -20,7 +20,6 @@ LIB_DEPENDS=	libFLAC.so:audio/flac \
 		libwavpack.so:audio/wavpack \
 		libopusfile.so:audio/opusfile
 
-BROKEN_armv6=		fails to configure: cannot find program /nxb-bin/usr/bin/cc
 BROKEN_mips=		fails to configure: cannot find program /nxb-bin/usr/bin/cc
 BROKEN_mips64=		fails to configure: cannot find program /nxb-bin/usr/bin/cc
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-micromachine/Makefile 445333 2017-07-08 13:53:39Z sunpoet $
+# $FreeBSD: head/devel/rubygem-micromachine/Makefile 455894 2017-12-10 13:22:10Z sunpoet $
 
 PORTNAME=	micromachine
-PORTVERSION=	2.1.0
+PORTVERSION=	3.0.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

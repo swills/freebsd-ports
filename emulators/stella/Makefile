@@ -1,5 +1,5 @@
 # Created by: Jacques Vidrine <nectar@FreeBSD.org>
-# $FreeBSD: head/emulators/stella/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/emulators/stella/Makefile 456100 2017-12-12 03:49:04Z jbeich $
 
 PORTNAME=	stella
 PORTVERSION=	4.7.3
@@ -15,8 +15,6 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/License.txt
 
 LIB_DEPENDS=	libpng.so:graphics/png
-
-BROKEN_powerpc64=	fails to compile: CartDebug.cxx: 'snprintf' is not a member of 'std'
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

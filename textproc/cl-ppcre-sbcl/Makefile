@@ -1,9 +1,9 @@
 # Created by: Henrik Motakef <henrik.motakef@web.de>
-# $FreeBSD: head/textproc/cl-ppcre-sbcl/Makefile 454222 2017-11-15 04:12:07Z jrm $
+# $FreeBSD: head/textproc/cl-ppcre-sbcl/Makefile 456036 2017-12-11 14:29:48Z krion $
 
 PORTNAME=	cl-ppcre
 PORTVERSION=	2.0.3
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	textproc lisp
 DISTFILES=	# none
 

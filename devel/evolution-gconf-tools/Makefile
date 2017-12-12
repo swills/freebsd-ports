@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/devel/evolution-gconf-tools/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/evolution-gconf-tools/Makefile 456050 2017-12-11 16:54:20Z antoine $
 #   $MCom: ports/devel/evolution-gconf-tools/Makefile,v 1.2 2005/10/14 20:39:56 adamw Exp $
 
 PORTNAME=	evolution-gconf-tools
@@ -14,7 +14,7 @@ COMMENT=	Scripts to make it easier to work with Evolution's configuration
 RUN_DEPENDS=	evolution:mail/evolution
 
 GNU_CONFIGURE=	yes
-USES=		python
+USES=		python:2.7
 USE_GNOME=	gnomeprefix
 NO_ARCH=	yes
 

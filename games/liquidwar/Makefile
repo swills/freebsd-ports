@@ -1,5 +1,5 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/games/liquidwar/Makefile 426269 2016-11-16 22:55:39Z rene $
+# $FreeBSD: head/games/liquidwar/Makefile 456050 2017-12-11 16:54:20Z antoine $
 
 PORTNAME=	liquidwar
 PORTVERSION=	5.6.4
@@ -15,7 +15,7 @@ COMMENT=	You control an army of liquid and have to try and eat your opponents
 LIB_DEPENDS=	liballeg.so:devel/allegro
 
 GNU_CONFIGURE=	yes
-USES=		gmake makeinfo python:build
+USES=		gmake makeinfo python:2.7,build
 CONFIGURE_ARGS=	--disable-target-opt --disable-doc-ps --disable-doc-pdf
 CONFIGURE_ENV=	ac_cv_prog_PYTHON=yes
 

@@ -1,8 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/emulators/wine-devel/Makefile 454745 2017-11-23 08:16:50Z gerald $
+# $FreeBSD: head/emulators/wine-devel/Makefile 455854 2017-12-09 12:50:20Z gerald $
 
 PORTNAME=	wine
-DISTVERSION=	2.21
+DISTVERSION=	3.0-rc1
 PORTEPOCH=	1
 CATEGORIES=	emulators
 MASTER_SITES=	SF/${PORTNAME}/Source \
@@ -18,6 +18,7 @@ LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 ONLY_FOR_ARCHS=	amd64 i386
+STAGING_BROKEN=	Staging patchset still not available for this version
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/flex:textproc/flex \
 		prelink:sysutils/prelink

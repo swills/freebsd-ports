@@ -1,5 +1,5 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/audio/baudline/Makefile 421387 2016-09-05 19:23:42Z tijl $
+# $FreeBSD: head/audio/baudline/Makefile 455501 2017-12-04 09:00:26Z amdmi3 $
 
 PORTNAME=	baudline
 PORTVERSION=	1.08
@@ -40,9 +40,10 @@ do-build:
 	${BRANDELF} -t Linux ${WRKSRC}/baudline
 
 do-install:
-	@${INSTALL_PROGRAM} ${WRKSRC}/baudline ${STAGEDIR}${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/baudline ${STAGEDIR}${PREFIX}/bin
+
 do-install-DOCS-on:
-	@${INSTALL} -d ${STAGEDIR}${DOCSDIR}
-	@cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}/
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}/
 
 .include <bsd.port.mk>

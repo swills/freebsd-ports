@@ -1,5 +1,5 @@
 # Created by: Jeffrey H. Johnson <CPE1704TKS@bellsouth.net>
-# $FreeBSD: head/sysutils/vils/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/vils/Makefile 455611 2017-12-05 19:36:53Z amdmi3 $
 
 PORTNAME=	vils
 PORTVERSION=	20020228
@@ -16,6 +16,7 @@ LICENSE=	BSD2CLAUSE
 RUN_DEPENDS=	zsh:shells/zsh
 
 NO_BUILD=	yes
+NO_ARCH=	yes
 NO_WRKSUBDIR=	yes
 
 EXTRACT_CMD=	${CP}

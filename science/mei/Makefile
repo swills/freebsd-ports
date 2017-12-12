@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/science/mei/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/science/mei/Makefile 455843 2017-12-09 11:39:45Z antoine $
 
 PORTNAME=	mei
 PORTVERSION=	1.0.4
@@ -15,7 +15,7 @@ LICENSE=	LGPL21
 LIB_DEPENDS=	libbft.so:science/bft
 BUILD_DEPENDS=	swig:devel/swig13
 
-USES=		libtool python
+USES=		libtool python:2.7
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	ac_cv_path_PYEXE=${PYTHON_CMD}

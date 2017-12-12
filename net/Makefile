@@ -1,5 +1,5 @@
 
-# $FreeBSD: head/net/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/Makefile 455651 2017-12-06 14:16:51Z mat $
 #
 
     COMMENT = Networking tools
@@ -49,7 +49,6 @@
     SUBDIR += binkd
     SUBDIR += bird
     SUBDIR += bird-devel
-    SUBDIR += bird6
     SUBDIR += bittwist
     SUBDIR += bluemix-cli
     SUBDIR += bmon
@@ -1029,6 +1028,7 @@
     SUBDIR += py-pcapy
     SUBDIR += py-pcs
     SUBDIR += py-port-for
+    SUBDIR += py-portend
     SUBDIR += py-pygeoip
     SUBDIR += py-pyldap
     SUBDIR += py-pynmsg
@@ -1169,6 +1169,7 @@
     SUBDIR += rubygem-fog-atmos
     SUBDIR += rubygem-fog-aws
     SUBDIR += rubygem-fog-aws0
+    SUBDIR += rubygem-fog-aws1
     SUBDIR += rubygem-fog-azure
     SUBDIR += rubygem-fog-brightbox
     SUBDIR += rubygem-fog-cloudatcost

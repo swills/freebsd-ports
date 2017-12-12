@@ -1,5 +1,5 @@
 # Created by: Miguel Mendez <flynn@energyhq.es.eu.org>
-# $FreeBSD: head/games/adonthell/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/adonthell/Makefile 456050 2017-12-11 16:54:20Z antoine $
 #    $MCom: ports/games/adonthell/Makefile,v 1.1 2006/10/04 20:13:33 ahze Exp $
 
 PORTNAME=	adonthell
@@ -19,7 +19,7 @@ LICENSE_DISTFILES=	${DISTFILES}
 LIB_DEPENDS=	libvorbis.so:audio/libvorbis \
 		libfreetype.so:print/freetype2
 
-USES=		gettext gmake python
+USES=		gettext gmake python:2.7
 USE_SDL=	mixer ttf sdl
 USE_GCC=	any
 GNU_CONFIGURE=	yes

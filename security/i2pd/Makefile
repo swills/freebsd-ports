@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/security/i2pd/Makefile 455030 2017-11-28 11:27:40Z amdmi3 $
+# $FreeBSD: head/security/i2pd/Makefile 456105 2017-12-12 04:35:49Z jbeich $
 
 PORTNAME=	i2pd
-PORTVERSION=	2.16.0
+PORTVERSION=	2.17.0
 CATEGORIES=	security net-p2p
 
 MAINTAINER=	amdmi3@FreeBSD.org
@@ -12,8 +12,6 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
-
-BROKEN_powerpc64=	does not build: error: to_string is not a member of std
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	PurpleI2P

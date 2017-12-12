@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-shapely/Makefile 449172 2017-09-03 06:47:50Z wen $
+# $FreeBSD: head/devel/py-shapely/Makefile 455899 2017-12-10 14:09:44Z wen $
 
 PORTNAME=	Shapely
-PORTVERSION=	1.6.1
+PORTVERSION=	1.6.3
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

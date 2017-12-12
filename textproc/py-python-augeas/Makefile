@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-python-augeas/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-python-augeas/Makefile 456108 2017-12-12 06:54:52Z antoine $
 
 PORTNAME=	python-augeas
 PORTVERSION=	1.0.3
@@ -12,16 +12,12 @@ COMMENT=	Pure python bindings for Augeas
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-py34_BROKEN=	does not package
-py35_BROKEN=	does not package
-py36_BROKEN=	does not package
-
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.1.0:devel/py-cffi@${FLAVOR}
 LIB_DEPENDS=	libaugeas.so:textproc/augeas
 
 USES=		python
 USE_GITHUB=	yes
-USE_PYTHON=	distutils
+USE_PYTHON=	distutils py3kplist
 
 GH_ACCOUNT=	hercules-team
 

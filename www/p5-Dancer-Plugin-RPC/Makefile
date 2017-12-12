@@ -1,8 +1,8 @@
 # Created by: Henk van Oers <hvo.pm@xs4all.nl>
-# $FreeBSD: head/www/p5-Dancer-Plugin-RPC/Makefile 453777 2017-11-08 23:30:17Z sunpoet $
+# $FreeBSD: head/www/p5-Dancer-Plugin-RPC/Makefile 455731 2017-12-07 16:01:59Z sunpoet $
 
 PORTNAME=	Dancer-Plugin-RPC
-PORTVERSION=	1.06
+PORTVERSION=	1.07
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:ABELTJE

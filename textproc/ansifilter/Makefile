@@ -1,5 +1,5 @@
 # Created by: Yi-Jheng Lin <yzlin@cs.nctu.edu.tw>
-# $FreeBSD: head/textproc/ansifilter/Makefile 450273 2017-09-21 16:23:22Z bofh $
+# $FreeBSD: head/textproc/ansifilter/Makefile 456086 2017-12-12 02:57:13Z jbeich $
 
 PORTNAME=	ansifilter
 PORTVERSION=	2.8
@@ -12,9 +12,7 @@ COMMENT=	Customizable ANSI Code Converter
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_powerpc64=	fails to compile: cc1plus: error: unrecognized command line option -std=c++11
-
-USES=		gmake tar:bzip2
+USES=		compiler:c++11-lib gmake tar:bzip2
 MAKEFILE=	makefile
 
 PORTDOCS=	ChangeLog README

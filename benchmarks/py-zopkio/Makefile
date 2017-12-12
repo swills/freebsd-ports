@@ -1,7 +1,8 @@
-# $FreeBSD: head/benchmarks/py-zopkio/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/benchmarks/py-zopkio/Makefile 455344 2017-12-02 11:04:07Z antoine $
 
 PORTNAME=	Zopkio
 PORTVERSION=	0.2.5
+PORTREVISION=	1
 CATEGORIES=	benchmarks python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -11,7 +12,7 @@ COMMENT=	Functional and Performance Test Framework
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	naarad:benchmarks/py-naarad \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}naarad>=1.0.15:benchmarks/py-naarad@${FLAVOR} \
 	${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil@${FLAVOR} \
 	${PYTHON_PKGNAMEPREFIX}kazoo>=1.1:devel/py-kazoo@${FLAVOR} \
 	${PYTHON_PKGNAMEPREFIX}paramiko>=1.10.1:security/py-paramiko@${FLAVOR} \
