@@ -102,14 +102,12 @@
  
  # for aws storage
  gem 'unf', '~> 0.1.4'
-@@ -114,33 +114,33 @@ gem 'unf', '~> 0.1.4'
- gem 'seed-fu', '~> 2.3.5'
+@@ -115,32 +115,32 @@ gem 'seed-fu', '~> 2.3.5'
  
  # Markdown and HTML processing
--gem 'html-pipeline', '~> 1.11.0'
+ gem 'html-pipeline', '~> 1.11.0'
 -gem 'deckar01-task_list', '2.0.0'
 -gem 'gitlab-markup', '~> 1.6.2'
-+gem 'html-pipeline', '>= 1.11.0'
 +gem 'deckar01-task_list', '>= 2.0.0'
 +gem 'gitlab-markup', '>= 1.6.2'
  gem 'redcarpet', '~> 3.4'

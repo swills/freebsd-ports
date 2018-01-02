@@ -91,7 +91,7 @@ RUN_DEPENDS=	git>=2.14.1:devel/git \
 	rubygem-google-api-client>=0.13.6:devel/rubygem-google-api-client \
 	rubygem-unf>=0.1.4:textproc/rubygem-unf \
 	rubygem-seed-fu>=2.3.5:databases/rubygem-seed-fu \
-	rubygem-html-pipeline>=1.11.0:textproc/rubygem-html-pipeline \
+	rubygem-html-pipeline1>=1.11.0:textproc/rubygem-html-pipeline1 \
 	rubygem-deckar01-task_list>=2.0.0:www/rubygem-deckar01-task_list \
 	rubygem-gitlab-markup>=1.6.2:textproc/rubygem-gitlab-markup \
 	rubygem-redcarpet>=3.4:textproc/rubygem-redcarpet \
