@@ -1,8 +1,8 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/libgig/Makefile 454694 2017-11-22 17:39:01Z yuri $
+# $FreeBSD: head/audio/libgig/Makefile 457513 2017-12-29 16:33:11Z linimon $
 
 PORTNAME=	libgig
-DISTVERSION=	4.0.0
+DISTVERSION=	4.1.0
 CATEGORIES=	audio
 MASTER_SITES=	SF/qsampler/${PORTNAME}/${PORTVERSION} \
 		http://download.linuxsampler.org/packages/
@@ -12,6 +12,8 @@ COMMENT=	Gigasampler file loader library
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_aarch64=		fails to compile: DLS.cpp:526:9: unknown type name 'uuid_t'; did you mean 'uid_t'?
 
 LIB_DEPENDS=	libsndfile.so:audio/libsndfile \
 		libuuid.so:misc/e2fsprogs-libuuid

@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-openssl/Makefile 450611 2017-09-25 15:12:47Z sunpoet $
+# $FreeBSD: head/security/rubygem-openssl/Makefile 456368 2017-12-14 20:44:16Z sunpoet $
 
 PORTNAME=	openssl
-PORTVERSION=	2.0.6
+PORTVERSION=	2.1.0
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

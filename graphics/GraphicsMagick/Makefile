@@ -1,9 +1,8 @@
 # Created by: Ron van Daal
-# $FreeBSD: head/graphics/GraphicsMagick/Makefile 451539 2017-10-08 13:49:18Z sunpoet $
+# $FreeBSD: head/graphics/GraphicsMagick/Makefile 457070 2017-12-23 16:49:23Z sunpoet $
 
 PORTNAME=	GraphicsMagick
-PORTVERSION=	1.3.26
-PORTREVISION=	1
+PORTVERSION=	1.3.27
 PORTEPOCH=	1
 CATEGORIES=	graphics
 MASTER_SITES=	SF \

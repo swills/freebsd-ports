@@ -1,5 +1,5 @@
 # Created by: IWATSUKI Hiroyuki <don@na.rim.or.jp>
-# $FreeBSD: head/www/ruby-aws/Makefile 406285 2016-01-17 07:06:25Z swills $
+# $FreeBSD: head/www/ruby-aws/Makefile 456324 2017-12-14 18:04:20Z swills $
 
 PORTNAME=	aws
 PORTVERSION=	0.8.1
@@ -17,6 +17,10 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_RUBY22=	yes
 BROKEN_RUBY23=	yes
+BROKEN_RUBY24=	yes
+
+DEPRECATED=	Does not build with current versions of ruby
+EXPIRATION_DATE=	2018-01-14
 
 CONFLICTS=	ruby-amazon-[0-9]*
 

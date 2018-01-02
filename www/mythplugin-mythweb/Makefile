@@ -1,5 +1,5 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/www/mythplugin-mythweb/Makefile 440322 2017-05-07 10:57:36Z miwi $
+# $FreeBSD: head/www/mythplugin-mythweb/Makefile 456517 2017-12-16 21:44:09Z tz $
 
 PORTNAME=	mythweb
 PORTVERSION=	0.28.1
@@ -11,6 +11,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Frontend for scheduling and managing recordings on your MythTV Box
 
 LICENSE=	GPLv2
+
+IGNORE_WITH_PHP=	70 71 72
 
 RUN_DEPENDS=	p5-DBD-mysql>=0:databases/p5-DBD-mysql
 

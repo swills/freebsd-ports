@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/ImageMagick7/Makefile 450491 2017-09-24 13:14:27Z kwm $
+# $FreeBSD: head/graphics/ImageMagick7/Makefile 457289 2017-12-26 16:14:29Z kwm $
 
 PORTNAME=	ImageMagick
-DISTVERSION=	7.0.7-4
+DISTVERSION=	7.0.7-16
 CATEGORIES=	graphics perl5
 MASTER_SITES=	http://www.imagemagick.org/download/ \
 		http://www.imagemagick.org/download/legacy/ \
@@ -53,7 +53,7 @@ USE_GNOME=	libxml2
 SAMPLE_FILES=	coder.xml colors.xml delegates.xml log.xml magic.xml mime.xml \
 		policy.xml quantization-table.xml thresholds.xml \
 		type-apple.xml type-dejavu.xml type-ghostscript.xml \
-		type-windows.xml type.xml
+		type-urw-base35.xml type-windows.xml type.xml 
 
 PLIST_SUB=	PORTVERSION=${PORTVERSION:R}
 

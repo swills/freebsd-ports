@@ -1,5 +1,5 @@
 # Created by: Elias Mandouvalos <ocean@mail.gr>
-# $FreeBSD: head/devel/pecl-runkit/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/devel/pecl-runkit/Makefile 456296 2017-12-14 13:57:28Z tz $
 
 PORTNAME=	runkit
 PORTVERSION=	1.0.4
@@ -12,7 +12,7 @@ COMMENT=	PECL extension to modify constants, user-defined functions, and classes
 LICENSE=	PHP30
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70
+IGNORE_WITH_PHP=	70 71 72
 
 CONFIGURE_ARGS=	--enable-runkit=classkit
 

@@ -1,5 +1,5 @@
 # Created by: Jan Stocker <Jan.Stocker@t-online.de>
-# $FreeBSD: head/games/thudboard/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/thudboard/Makefile 456126 2017-12-12 12:40:15Z antoine $
 
 PORTNAME=	thudboard
 PORTVERSION=	1.8
@@ -10,10 +10,10 @@ MASTER_SITES=	http://www.million.nl/file/
 MAINTAINER=	lme@FreeBSD.org
 COMMENT=	The Discworld Boardgame Board
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${PY_FLAVOR}
 
 NO_WRKSUBDIR=	yes
-USES=		python
+USES=		python:2.7
 
 SUB_FILES=	thudboard
 

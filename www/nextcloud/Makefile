@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/nextcloud/Makefile 452581 2017-10-21 09:20:39Z brnrd $
+# $FreeBSD: head/www/nextcloud/Makefile 456283 2017-12-14 09:11:12Z brnrd $
 
 PORTNAME=	nextcloud
-PORTVERSION=	12.0.3
+PORTVERSION=	12.0.4
 CATEGORIES=	www
 MASTER_SITES=	https://download.nextcloud.com/server/prereleases/
 

@@ -1,8 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/mail/thunderbird-i18n/Makefile 454675 2017-11-22 06:25:59Z jbeich $
+# $FreeBSD: head/mail/thunderbird-i18n/Makefile 457009 2017-12-22 23:54:32Z jbeich $
 
 PORTNAME=	thunderbird-i18n
-PORTVERSION=	52.5.0
+PORTVERSION=	52.5.2
 CATEGORIES=	mail news net-im
 MASTER_SITES=	MOZILLA/${PORTNAME:S|-i18n||}/releases/${DISTVERSION}/linux-i686/xpi \
 		MOZILLA/${PORTNAME:S|-i18n||}/candidates/${DISTVERSION}-candidates/build1/linux-i686/xpi

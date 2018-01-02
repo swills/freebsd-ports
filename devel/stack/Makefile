@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/devel/stack/Makefile 451606 2017-10-09 10:50:00Z tobik $
+# $FreeBSD: head/devel/stack/Makefile 456760 2017-12-19 18:59:07Z tobik $
 
 # To update this port first go to
 # https://github.com/applicative-tech/stack-dependencies, change the
@@ -16,7 +16,7 @@ MASTER_SITES=	GH \
 		https://github.com/applicative-tech/stack-dependencies/releases/download/v${PORTVERSION}/:deps
 DISTFILES=	stack-dependencies-${PORTVERSION}${EXTRACT_SUFX}:deps
 
-MAINTAINER=	tobik@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Cross-platform program for developing Haskell programs
 
 LICENSE=	BSD3CLAUSE

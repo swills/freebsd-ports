@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 454853 2017-11-24 22:12:52Z yuri $
+# $FreeBSD: head/x11/Makefile 456690 2017-12-18 22:39:38Z yuri $
 #
 
     COMMENT = Ports to support the X window system
@@ -106,6 +106,7 @@
     SUBDIR += gtkterm2
     SUBDIR += guake
     SUBDIR += gxkb
+    SUBDIR += hhpc
     SUBDIR += hs-X11
     SUBDIR += hs-X11-xft
     SUBDIR += hs-xmobar
@@ -205,6 +206,7 @@
     SUBDIR += libxshmfence
     SUBDIR += lightdm
     SUBDIR += lightdm-gtk-greeter
+    SUBDIR += lilyterm
     SUBDIR += linux-c6-pixman
     SUBDIR += linux-c6-xorg-libs
     SUBDIR += linux-c7-pixman

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/sysutils/ttyload/Makefile 399130 2015-10-12 14:18:57Z culot $
+# $FreeBSD: head/sysutils/ttyload/Makefile 457664 2017-12-31 01:55:24Z danilo $
 
 PORTNAME=	ttyload
 PORTVERSION=	0.5.3
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.daveltd.com/src/util/ttyload/
 
-MAINTAINER=	serio.jeffrey@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Give a color-coded graph of load averages over time
 
 LICENSE=	ISCL

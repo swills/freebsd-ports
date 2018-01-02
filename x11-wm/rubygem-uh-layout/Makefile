@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-wm/rubygem-uh-layout/Makefile 432308 2017-01-24 00:08:33Z swills $
+# $FreeBSD: head/x11-wm/rubygem-uh-layout/Makefile 457195 2017-12-24 20:00:41Z swills $
 
 PORTNAME=	uh-layout
-PORTVERSION=	0.4.3
+PORTVERSION=	0.5.2
 CATEGORIES=	x11-wm rubygems
 MASTER_SITES=	RG
 

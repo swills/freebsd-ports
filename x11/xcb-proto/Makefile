@@ -1,5 +1,5 @@
 # Created by: Ashish Shukla <wahjava@gmail.com>
-# $FreeBSD: head/x11/xcb-proto/Makefile 425597 2016-11-07 09:32:02Z rm $
+# $FreeBSD: head/x11/xcb-proto/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	xcb-proto
 PORTVERSION=	1.12
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USE_GNOME=	libxml2:build
 XORG_CAT=	proto
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	py3kplist
 NO_ARCH=	yes
 

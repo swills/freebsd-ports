@@ -1,5 +1,5 @@
 # Created by: Piotr Rybicki <meritus@innervision.pl>
-# $FreeBSD: head/www/pecl-amfext/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/www/pecl-amfext/Makefile 456296 2017-12-14 13:57:28Z tz $
 
 PORTNAME=	amfext
 PORTVERSION=	0.9.2
@@ -13,7 +13,7 @@ LICENSE=	PHP30
 
 USES=		dos2unix libtool php:pecl
 PHP_MODNAME=	amf
-IGNORE_WITH_PHP=	70
+IGNORE_WITH_PHP=	70 71 72
 
 CONFIGURE_ARGS=	--with-amf
 

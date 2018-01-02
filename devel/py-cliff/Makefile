@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-cliff/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-cliff/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	cliff
 PORTVERSION=	2.4.0
@@ -23,7 +23,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cmd2>=0.6.7:devel/py-cmd2@${FLAVOR} \
 
 NO_ARCH=	yes
 
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

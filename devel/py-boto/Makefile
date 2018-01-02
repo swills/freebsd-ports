@@ -1,5 +1,5 @@
 # Created by: Peter Schuller <peter.schuller@infidyne.com>
-# $FreeBSD: head/devel/py-boto/Makefile 445827 2017-07-14 20:18:03Z rm $
+# $FreeBSD: head/devel/py-boto/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	boto
 PORTVERSION=	2.48.0
@@ -13,7 +13,7 @@ COMMENT=	Python interface to Amazon Web Services
 LICENSE=	MIT
 
 NO_ARCH=	yes
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 CONFLICTS_INSTALL=	p5-Net-Amazon-Route53-[0-9]*

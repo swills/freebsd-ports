@@ -1,5 +1,5 @@
-# Created by: José García Juanino <jjuanino@gmail.com>
-# $FreeBSD: head/databases/powerarchitect/Makefile 437328 2017-03-30 21:12:43Z mat $
+# Created by: Jose Garcia Juanino <jjuanino@gmail.com>
+# $FreeBSD: head/databases/powerarchitect/Makefile 457367 2017-12-27 13:59:01Z mat $
 
 PORTNAME=	powerarchitect
 PORTVERSION=	1.0.8

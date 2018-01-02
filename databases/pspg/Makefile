@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/pspg/Makefile 455331 2017-12-02 02:25:11Z dbaio $
+# $FreeBSD: head/databases/pspg/Makefile 457549 2017-12-29 22:20:06Z joneum $
 
 PORTNAME=	pspg
-DISTVERSION=	0.7.5
+DISTVERSION=	0.9.1
 CATEGORIES=	databases
 
 MAINTAINER=	dg@syrec.org
@@ -25,6 +25,8 @@ OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/pspg
+
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_MAN} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 

@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/audio/csound6/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/audio/csound6/Makefile 456850 2017-12-20 20:06:02Z bapt $
 
 PORTNAME=	csound
 PORTVERSION=	6.06
@@ -17,7 +17,7 @@ LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	boost-libs>0:devel/boost-libs \
-		swig>2:devel/swig20 \
+		swig3.0:devel/swig30 \
 		eigen>0:math/eigen3 \
 		gmm++>0:math/gmm++
 LIB_DEPENDS=	libsamplerate.so:audio/libsamplerate \
@@ -36,6 +36,7 @@ CMAKE_ARGS=	-DBUILD_CSOUNDVST:BOOL=OFF \
 		-DPYTHON_MODULE_INSTALL_DIR:PATH="${PYTHONPREFIX_SITELIBDIR}"
 USE_LDCONFIG=	yes
 SSP_UNSAFE=	yes
+BINARY_ALIAS=	swig=swig3.0
 
 SUB_FILES=	pkg-message
 

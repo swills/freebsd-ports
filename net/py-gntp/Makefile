@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-gntp/Makefile 438888 2017-04-19 15:56:26Z miwi $
+# $FreeBSD: head/net/py-gntp/Makefile 456126 2017-12-12 12:40:15Z antoine $
 
 PORTNAME=	gntp
 PORTVERSION=	0.8
@@ -23,7 +23,7 @@ USE_PYTHON=	distutils autoplist
 .include <bsd.port.pre.mk>
 
 .if ${PORT_OPTIONS:MDOCS}
-BUILD_DEPENDS+=	sphinx-build:textproc/py-sphinx
+BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}sphinx>=0:textproc/py-sphinx@${FLAVOR}
 DOCSDIR=	${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME}
 PYDISTUTILS_BUILD_TARGET+=	build_sphinx
 

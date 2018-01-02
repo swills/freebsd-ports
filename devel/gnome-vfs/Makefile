@@ -1,9 +1,9 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/devel/gnome-vfs/Makefile 454102 2017-11-13 09:04:43Z amdmi3 $
+# $FreeBSD: head/devel/gnome-vfs/Makefile 457024 2017-12-23 07:03:21Z antoine $
 
 PORTNAME=	gnome-vfs
 PORTVERSION=	2.24.4
-PORTREVISION?=	6
+PORTREVISION?=	7
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

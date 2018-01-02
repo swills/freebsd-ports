@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/consul/Makefile 455627 2017-12-05 21:31:37Z swills $
+# $FreeBSD: head/sysutils/consul/Makefile 457605 2017-12-30 17:46:34Z swills $
 
 PORTNAME=	consul
-PORTVERSION=	1.0.1
+PORTVERSION=	1.0.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/print/cups-smb-backend/Makefile 436925 2017-03-25 23:37:05Z antoine $
+# $FreeBSD: head/print/cups-smb-backend/Makefile 457024 2017-12-23 07:03:21Z antoine $
 
 PORTNAME=	cups-smb-backend
 PORTVERSION=	1.0
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	print
 MASTER_SITES=	# empty
 DISTFILES=	# empty

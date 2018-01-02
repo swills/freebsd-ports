@@ -1,8 +1,8 @@
 # Created by: Greg Lewis <glewis@FreeBSD.org>
-# $FreeBSD: head/science/udunits/Makefile 451544 2017-10-08 13:49:43Z sunpoet $
+# $FreeBSD: head/science/udunits/Makefile 457071 2017-12-23 16:49:28Z sunpoet $
 
 PORTNAME=	udunits
-PORTVERSION=	2.2.25
+PORTVERSION=	2.2.26
 CATEGORIES=	science math
 MASTER_SITES=	ftp://ftp.unidata.ucar.edu/pub/udunits/ \
 		LOCAL/sunpoet

@@ -1,10 +1,9 @@
 # Created by: Jin-Sih Lin <linpct@gmail.com>
-# $FreeBSD: head/www/node4/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/www/node4/Makefile 456343 2017-12-14 19:44:55Z bhughes $
 
 PORTNAME=	node
-PORTVERSION=	4.8.6
+PORTVERSION=	4.8.7
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://nodejs.org/dist/v${PORTVERSION}/
 PKGNAMESUFFIX=	4

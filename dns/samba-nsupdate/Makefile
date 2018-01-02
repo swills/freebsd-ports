@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/samba-nsupdate/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/dns/samba-nsupdate/Makefile 457256 2017-12-25 20:26:58Z tijl $
 
 PORTNAME=		nsupdate
 PORTVERSION=		9.8.6
@@ -18,8 +18,7 @@ ISCVERSION=		9.8.6
 
 MAKE_JOBS_UNSAFE=	yes
 
-USE_AUTOTOOLS=		autoconf autoheader
-USES=			ssl
+USES=			autoreconf libtool ssl
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	\

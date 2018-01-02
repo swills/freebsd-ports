@@ -1,8 +1,9 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/lang/luajit/Makefile 451721 2017-10-10 21:31:30Z linimon $
+# $FreeBSD: head/lang/luajit/Makefile 457655 2017-12-31 00:50:32Z dim $
 
 PORTNAME=	luajit
 DISTVERSION=	2.0.5
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://luajit.org/download/
 DISTNAME=	LuaJIT-${DISTVERSION}

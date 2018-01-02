@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/textproc/ruby-sary/Makefile 422203 2016-09-15 15:08:26Z swills $
+# $FreeBSD: head/textproc/ruby-sary/Makefile 456323 2017-12-14 18:02:10Z swills $
 
 PORTNAME=	sary
 PORTVERSION=	1.2.0
@@ -20,6 +20,10 @@ LIB_DEPENDS=	libsary.so:textproc/sary
 
 BROKEN_RUBY22=	yes
 BROKEN_RUBY23=	yes
+BROKEN_RUBY24=	yes
+
+DEPRECATED=	Does not build with current versions of ruby
+EXPIRATION_DATE=	2018-01-14
 
 OPTIONS_DEFINE=	DOCS
 

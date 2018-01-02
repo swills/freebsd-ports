@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rebar3/Makefile 454755 2017-11-23 11:54:57Z olgeni $
+# $FreeBSD: head/devel/rebar3/Makefile 457032 2017-12-23 09:30:14Z olgeni $
 
 PORTNAME=	rebar3
-PORTVERSION=	3.4.7
+PORTVERSION=	3.5.0
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES+=	LOCAL/olgeni:deps \

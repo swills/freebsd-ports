@@ -1,8 +1,8 @@
 # Created by: Nick Hilliard <nick@foobar.org>
-# $FreeBSD: head/net-mgmt/rubygem-oxidized-script/Makefile 430536 2017-01-04 04:40:42Z swills $
+# $FreeBSD: head/net-mgmt/rubygem-oxidized-script/Makefile 457709 2017-12-31 17:27:20Z swills $
 
 PORTNAME=	oxidized-script
-PORTVERSION=	0.3.1
+PORTVERSION=	0.5.0
 CATEGORIES=	net-mgmt rubygems
 MASTER_SITES=	RG
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/python.mk 456026 2017-12-11 12:41:56Z mat $
+# $FreeBSD: head/Mk/Uses/python.mk 456737 2017-12-19 16:23:48Z mat $
 #
 # Provide support for Python related ports. This includes detecting Python
 # interpreters, ports providing package and modules for python as well as
@@ -451,7 +451,7 @@ FLAVOR=	${FLAVORS:[1]}
 .  endif
 .endif
 
-.if ${FLAVOR:Mpy[23]*}
+.if ${FLAVOR:Mpy[23][0-9]}
 _PYTHON_VERSION=	${FLAVOR:S/py//:C/(.)/\1./}
 .endif
 
@@ -463,11 +463,12 @@ PKGNAMESUFFIX=	${PYTHON_PKGNAMESUFFIX}
 .endif
 
 # To avoid having dependencies with @ and empty flavor:
-.if empty(FLAVOR)
-PY_FLAVOR=	${PYTHON_VERSION:S/^python/py/:S/.//}
-.else
-PY_FLAVOR=	${FLAVOR}
-.endif
+# _PYTHON_VERSION is either set by (first that matches):
+# - If using Python flavors, from the current Python flavor
+# - If using a version restriction (USES=python:3.4+), from the first
+#   acceptable default Python version.
+# - From PYTHON_DEFAULT
+PY_FLAVOR=	py${_PYTHON_VERSION:S/.//}
 
 # Pass PYTHON_VERSION down the dependency chain. This ensures that
 # port A -> B -> C all will use the same python version and do not
@@ -566,6 +567,9 @@ RUN_DEPENDS+=	cython-${PYTHON_VER}:lang/cython@${PY_FLAVOR}
 .endif
 
 .if defined(_PYTHON_FEATURE_CONCURRENT)
+.if !defined(_PYTHON_FEATURE_FLAVORS) && (${_PYTHON_VERSION_MINIMUM:M3*} || ${_PYTHON_VERSION_MAXIMUM:M2*})
+DEV_WARNING+=	"USE_PYTHON=concurrent when only one of Python 2 or 3 is supported AND not using flavors does not make any sense"
+.endif
 _USES_POST+=		uniquefiles:dirs
 .if defined(_PYTHON_FEATURE_FLAVORS) && ${FLAVOR} == ${FLAVORS:[1]}
 UNIQUE_DEFAULT_LINKS=	yes
@@ -576,15 +580,19 @@ UNIQUE_DEFAULT_LINKS=	no
 .endif
 UNIQUE_PREFIX=		${PYTHON_PKGNAMEPREFIX}
 UNIQUE_SUFFIX=		-${PYTHON_VER}
+UNIQUE_SUFFIX_TYPES+=	SUFFIX_MAN
+UNIQUE_SUFFIX_MAN_WITH_EXT=	.[1-9ln]
+UNIQUE_SUFFIX_MAN_EXTRA_EXT=	.gz
 
 .if defined(_PYTHON_FEATURE_AUTOPLIST)
-UNIQUE_FIND_SUFFIX_FILES=	\
-	${SED} -e 's|^${PREFIX}/||' ${_PYTHONPKGLIST} ${TMPPLIST} | \
-	${EGREP} -e '^bin/.*$$|^sbin/.*$$|^libexec/.*$$'
+_UNIQUE_FIND_SUFFIX_FILES=	${SED} -e 's|^${PREFIX}/||' ${_PYTHONPKGLIST} ${TMPPLIST}
 .else
-UNIQUE_FIND_SUFFIX_FILES=	\
-	${EGREP} -he '^bin/.*$$|^sbin/.*$$|^libexec/.*$$' ${TMPPLIST} 2>/dev/null
+_UNIQUE_FIND_SUFFIX_FILES=	${SED} -e 's|^${PREFIX}/||' ${TMPPLIST} 2>/dev/null
 .endif
+UNIQUE_FIND_SUFFIX_FILES+=	${_UNIQUE_FIND_SUFFIX_FILES} | \
+				${EGREP} -he '^bin/.*$$|^sbin/.*$$|^libexec/.*$$'
+UNIQUE_FIND_SUFFIX_MAN_FILES+=	${_UNIQUE_FIND_SUFFIX_FILES} | \
+				${EGREP} -he '^man/man[1-9ln]/.*$$'
 .endif # defined(_PYTHON_FEATURE_CONCURRENT)
 
 _CURRENTPORT:=	${PKGNAMEPREFIX}${PORTNAME}${PKGNAMESUFFIX}

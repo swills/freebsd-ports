@@ -1,5 +1,5 @@
 # Created by: cartola@openit.com.br
-# $FreeBSD: head/graphics/enblend/Makefile 455244 2017-12-01 01:58:23Z mandree $
+# $FreeBSD: head/graphics/enblend/Makefile 457164 2017-12-24 14:08:51Z tijl $
 
 PORTNAME=	enblend
 PORTVERSION=	4.1.4
@@ -26,7 +26,6 @@ RUN_DEPENDS=	OpenEXR>=1.0:graphics/OpenEXR
 
 BROKEN_powerpc64=	fails to configure: libvigraimpex is required to compile Enblend
 
-USE_AUTOTOOLS=	automake:env autoconf:env
 USES=		compiler:features gmake jpeg localbase makeinfo
 CONFIGURE_ARGS=	--with-boost-filesystem
 

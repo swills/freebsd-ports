@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/usermin/Makefile 446492 2017-07-23 16:05:31Z olgeni $
+# $FreeBSD: head/sysutils/usermin/Makefile 456624 2017-12-18 11:51:39Z olgeni $
 
 PORTNAME=	usermin
-PORTVERSION=	1.720
+PORTVERSION=	1.730
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.webmin.com/uupdates/:up \
 		SF/webadmin/${PORTNAME}/${PORTVERSION}:sf \

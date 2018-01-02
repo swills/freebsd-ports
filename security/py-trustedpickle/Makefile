@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/security/py-trustedpickle/Makefile 405412 2016-01-07 11:08:16Z miwi $
+# $FreeBSD: head/security/py-trustedpickle/Makefile 456126 2017-12-12 12:40:15Z antoine $
 
 PORTNAME=	trustedpickle
 PORTVERSION=	0.02
@@ -13,7 +13,7 @@ COMMENT=	TrustedPickle is a Python (de)Pickler with a way to verify the data
 
 LICENSE=	BSD2CLAUSE
 
-USES=		dos2unix python tar:tgz
+USES=		dos2unix python:2.7 tar:tgz
 NO_ARCH=	yes
 
 PLIST_FILES=	%%PYTHON_SITELIBDIR%%/TrustedPickle.py \

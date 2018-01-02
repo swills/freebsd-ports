@@ -1,5 +1,5 @@
 # Created by: kmoore@FreeBSD.org
-# $FreeBSD: head/sysutils/grub2-efi/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/sysutils/grub2-efi/Makefile 457088 2017-12-23 17:18:36Z tijl $
 
 PORTNAME=	grub2-efi
 PORTVERSION=	2.02
@@ -23,9 +23,8 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/flex:textproc/flex \
 WRKSRC=		${WRKDIR}/grub-${PORTVERSION}
 SSP_UNSAFE=	yes
 USE_GCC=	yes
-ACLOCAL_ARGS=	-Im4
 GNU_CONFIGURE=	yes
-USES=		autoreconf bison cpe gettext gmake python tar:xz
+USES=		autoreconf:build bison cpe gettext gmake python tar:xz
 ONLY_FOR_ARCHS=	amd64
 MAKE_JOBS_UNSAFE=	yes
 

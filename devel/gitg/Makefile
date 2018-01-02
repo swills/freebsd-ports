@@ -1,5 +1,5 @@
 # Created by: kipz <somicide@gmail.com>
-# $FreeBSD: head/devel/gitg/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/gitg/Makefile 456683 2017-12-18 21:57:55Z antoine $
 
 PORTNAME=	gitg
 PORTVERSION=	3.24.0
@@ -12,6 +12,8 @@ COMMENT=	GTK-based git repository viewer
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		fails to configure
 
 BUILD_DEPENDS=	gsettings-desktop-schemas>=0:devel/gsettings-desktop-schemas \
 		valac:lang/vala

@@ -1,6 +1,6 @@
 #!/bin/sh
 # MAINTAINER: portmgr@FreeBSD.org
-# $FreeBSD: head/Mk/Scripts/qa.sh 455205 2017-11-30 15:33:29Z mat $
+# $FreeBSD: head/Mk/Scripts/qa.sh 456908 2017-12-21 13:27:51Z amdmi3 $
 
 if [ -z "${STAGEDIR}" -o -z "${PREFIX}" -o -z "${LOCALBASE}" ]; then
 	echo "STAGEDIR, PREFIX, LOCALBASE required in environment." >&2
@@ -48,7 +48,7 @@ shebangonefile() {
 	/bin/rc)
 		# whitelist some interpreters
 		;;
-	${LOCALBASE}/bin/python|${PREFIX}/bin/python)
+	${LOCALBASE}/bin/python|${PREFIX}/bin/python|${LOCALBASE}/bin/python2|${PREFIX}/bin/python2|${LOCALBASE}/bin/python3|${PREFIX}/bin/python3)
 		badinterp="${interp}"
 		;;
 	${LINUXBASE}/*) ;;
@@ -69,7 +69,7 @@ shebangonefile() {
 	/usr/bin/env)
 		interparg=$(sed -n -e '1s/^#![[:space:]]*[^[:space:]]*[[:space:]]*\([^[:space:]]*\).*/\1/p;2q' "${f}")
 		case "${interparg}" in
-		python)
+		python|python2|python3)
 			badinterp="${interp} ${interparg}"
 			;;
 		esac
@@ -677,7 +677,7 @@ proxydeps() {
 			fi
 			already="${already} ${dep_file}"
 		done <<-EOT
-		$(ldd -a "${STAGEDIR}${file}" | \
+		$(env LD_LIBMAP_DISABLE=1 ldd -a "${STAGEDIR}${file}" | \
 			awk '\
 			BEGIN {section=0}\
 			/^\// {section++}\

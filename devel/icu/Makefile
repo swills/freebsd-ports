@@ -1,9 +1,9 @@
 # Created by: dwm
-# $FreeBSD: head/devel/icu/Makefile 455900 2017-12-10 15:39:38Z jbeich $
+# $FreeBSD: head/devel/icu/Makefile 456383 2017-12-15 04:48:45Z jbeich $
 
 PORTNAME=	icu
 DISTVERSION=	60_2
-PORTREVISION?=	0 # keep for icu-lx
+PORTREVISION?=	1 # keep for icu-lx
 PORTEPOCH?=	1
 CATEGORIES?=	devel
 MASTER_SITES=	http://download.icu-project.org/files/icu4c/${PORTVERSION}/ \

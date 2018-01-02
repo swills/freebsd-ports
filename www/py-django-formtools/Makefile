@@ -1,8 +1,8 @@
 # Created by: Sofian Brabez <sbrabez@gmail.com>
-# $FreeBSD: head/www/py-django-formtools/Makefile 403953 2015-12-18 04:08:17Z alfred $
+# $FreeBSD: head/www/py-django-formtools/Makefile 457278 2017-12-26 11:08:02Z alfred $
 
 PORTNAME=	django-formtools
-PORTVERSION=	1.0
+PORTVERSION=	2.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/liblouis/Makefile 435659 2017-03-08 07:02:23Z wen $
+# $FreeBSD: head/devel/liblouis/Makefile 456880 2017-12-21 01:53:59Z wen $
 
 PORTNAME=	liblouis
-PORTVERSION=	3.1.0
+PORTVERSION=	3.4.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -13,7 +13,8 @@ LICENSE=	LGPL3+
 
 BUILD_DEPENDS=	help2man:misc/help2man
 
-USES=		autoreconf gmake libtool pathfix
+USES=		autoreconf gmake libtool pathfix shebangfix
+SHEBANG_FILES=	tools/lou_maketable.d/substrings.pl
 USE_GITHUB=	yes
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes

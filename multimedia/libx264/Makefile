@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/multimedia/libx264/Makefile 445840 2017-07-14 23:58:25Z jbeich $
+# $FreeBSD: head/multimedia/libx264/Makefile 457488 2017-12-29 02:55:42Z jbeich $
 #
 # Updating notes: see multimedia/x264/Makefile.
 
@@ -20,7 +20,7 @@ OPTIONS_EXCLUDE=	FFMS GPAC LAVF LSMASH SWSCALE
 
 ASM_BUILD_DEPENDS=	${ASM_BUILD_DEPENDS_${ARCH}}
 ASM_BUILD_DEPENDS_amd64=${ASM_BUILD_DEPENDS_i386}
-ASM_BUILD_DEPENDS_i386=	yasm>=1.2.0:devel/yasm
+ASM_BUILD_DEPENDS_i386=	nasm>=2.13:devel/nasm
 ASM_CONFIGURE_ENABLE=	asm
 
 HI10P_DESC=		Enable High 10 Profile 10-bit encoding

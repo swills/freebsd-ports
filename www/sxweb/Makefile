@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/www/sxweb/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/sxweb/Makefile 456517 2017-12-16 21:44:09Z tz $
 
 PORTNAME=	sxweb
 PORTVERSION=	0.9.0
@@ -8,6 +8,8 @@ MASTER_SITES=	http://cdn.skylable.com/source/
 
 MAINTAINER=	vg@FreeBSD.org
 COMMENT=	SXDrive Web app
+
+IGNORE_WITH_PHP=	70 71 72
 
 RUN_DEPENDS=	sxinit:net-mgmt/sx
 

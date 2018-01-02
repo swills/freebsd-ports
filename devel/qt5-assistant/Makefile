@@ -1,14 +1,15 @@
-# $FreeBSD: head/devel/qt5-assistant/Makefile 407169 2016-01-24 18:10:14Z rakuco $
+# $FreeBSD: head/devel/qt5-assistant/Makefile 457276 2017-12-26 10:53:13Z rakuco $
 
 PORTNAME=	assistant
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	qt5-
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt 5 documentation browser
 
-USE_QT5=	core gui help network printsupport sql webkit widgets \
+USE_QT5=	core gui help network printsupport sql widgets \
 		buildtools_build sql-sqlite3_run
 QT_DIST=	tools
 USES=		qmake

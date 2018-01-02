@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libdistance/Makefile 412743 2016-04-08 12:53:22Z gahr $
+# $FreeBSD: head/devel/libdistance/Makefile 456734 2017-12-19 16:16:27Z bapt $
 
 PORTNAME=	libdistance
 PORTVERSION=	0.2.2
@@ -11,13 +11,13 @@ COMMENT=	Compute the distance between two pieces of data
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	swig2.0:devel/swig20
+BUILD_DEPENDS=	swig3.0:devel/swig30
 
 USES+=		fakeroot pkgconfig tcl
 USE_LDCONFIG=	yes
 
 MAKE_ARGS+=	INCLUDEDIR=${PREFIX}/include LIBDIR=${PREFIX}/lib
-MAKE_ARGS+=	MANDIR=${PREFIX}/man/man SWIG=swig2.0
+MAKE_ARGS+=	MANDIR=${PREFIX}/man/man SWIG=swig3.0
 CFLAGS+=	-fPIC
 
 pre-build:

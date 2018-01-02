@@ -1,8 +1,8 @@
 # Created by: Clemens Zauner <czauner+ports@onlineloop.com>
-# $FreeBSD: head/textproc/wbxml2/Makefile 446045 2017-07-16 19:58:15Z pi $
+# $FreeBSD: head/textproc/wbxml2/Makefile 456480 2017-12-16 18:11:23Z flo $
 
 PORTNAME=	wbxml2
-PORTVERSION=	0.11.5
+PORTVERSION=	0.11.6
 CATEGORIES=	textproc devel
 MASTER_SITES=	SF/libwbxml/libwbxml/${PORTVERSION}
 DISTNAME=	libwbxml-${PORTVERSION}

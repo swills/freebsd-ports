@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/hs-sandi/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/converters/hs-sandi/Makefile 457241 2017-12-25 15:49:23Z amdmi3 $
 
 PORTNAME=	sandi
 PORTVERSION=	0.4.0
@@ -8,6 +8,8 @@ MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Data encoding library
 
 LICENSE=	BSD3CLAUSE
+
+CONFLICTS_INSTALL=	hs-dataenc-[0-9]*
 
 USE_CABAL=	conduit exceptions stringsearch
 

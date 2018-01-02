@@ -1,5 +1,5 @@
 # Created by: Sebastian Yepes <esn@x123.info>
-# $FreeBSD: head/comms/hamlib/Makefile 438615 2017-04-16 03:12:08Z shurd $
+# $FreeBSD: head/comms/hamlib/Makefile 456726 2017-12-19 15:35:41Z bapt $
 
 PORTNAME=	hamlib
 PORTVERSION=	3.1
@@ -12,7 +12,7 @@ COMMENT=	Shared libraries for Amateur Radio Equipment Control Applications
 
 LICENSE=	LGPL20
 
-BUILD_DEPENDS=	swig:devel/swig13
+BUILD_DEPENDS=	swig3.0:devel/swig30
 LIB_DEPENDS=	libltdl.so:devel/libltdl
 
 INFO=		hamlib
@@ -31,6 +31,7 @@ CONFIGURE_ARGS=	--with-perl-binding \
 		--with-python-binding --without-rigmatrix
 PLIST_SUB=	VER=${PORTVERSION} TCL_VER=${TCL_VER}
 INSTALL_TARGET=	install-strip
+BINARY_ALIAS=	swig=swig3.0
 
 OPTIONS_DEFINE=	DOCS
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/ags/Makefile 441455 2017-05-22 13:17:38Z linimon $
+# $FreeBSD: head/games/ags/Makefile 457240 2017-12-25 14:39:56Z tobik $
 
 PORTNAME=	ags
-PORTVERSION=	3.4.1.1
 DISTVERSIONPREFIX=	v.
+DISTVERSION=	3.4.1.11
 CATEGORIES=	games
 
 MAINTAINER=	tobik@FreeBSD.org

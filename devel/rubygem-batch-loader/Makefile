@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-batch-loader/Makefile 455429 2017-12-03 20:33:44Z sunpoet $
+# $FreeBSD: head/devel/rubygem-batch-loader/Makefile 456650 2017-12-18 17:17:00Z sunpoet $
 
 PORTNAME=	batch-loader
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

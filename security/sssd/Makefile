@@ -1,9 +1,9 @@
 # Created by: Lukas Slebodnik <lukas.slebodnik@intrak.sk>
-# $FreeBSD: head/security/sssd/Makefile 437085 2017-03-27 20:48:27Z asomers $
+# $FreeBSD: head/security/sssd/Makefile 457024 2017-12-23 07:03:21Z antoine $
 
 PORTNAME=	sssd
 PORTVERSION=	1.11.7
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	security
 MASTER_SITES=	https://releases.pagure.org/SSSD/${PORTNAME}/
 

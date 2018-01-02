@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/cyrus-imapd25/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/mail/cyrus-imapd25/Makefile 457094 2017-12-23 17:55:13Z tijl $
 
 PORTNAME=	cyrus-imapd
 PORTVERSION=	2.5.11
@@ -160,7 +160,6 @@ PLIST_SUB+=	CLAMAV="@comment "
 .if ${PORT_OPTIONS:MDRAC}
 IGNORE=		DRAC is not available
 # EXTRA_PATCHES+=	${FILESDIR}/extra-patch-cmulocal__sasl2.m4
-# USE_AUTOTOOLS=	autoconf autoheader
 .endif
 
 .if ${PORT_OPTIONS:MHTTP} || ${PORT_OPTIONS:MSQLITE}

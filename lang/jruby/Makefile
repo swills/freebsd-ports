@@ -1,8 +1,8 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/lang/jruby/Makefile 441803 2017-05-26 17:53:11Z sunpoet $
+# $FreeBSD: head/lang/jruby/Makefile 457196 2017-12-24 20:27:45Z swills $
 
 PORTNAME=	jruby
-PORTVERSION=	9.1.10.0
+PORTVERSION=	9.1.15.0
 DISTVERSIONPREFIX=	bin-
 CATEGORIES=	lang ruby java
 MASTER_SITES=	http://jruby.org.s3.amazonaws.com/downloads/${PORTVERSION}/
@@ -54,12 +54,11 @@ post-patch:
 	@${REINPLACE_CMD} -i "" ${REPLACE_LIST_TEMP} ${WRKSRC}/bin/jruby
 
 do-install:
-	${MKDIR} ${STAGEDIR}${JRUBY_HOME}/bin
-	${MKDIR} ${STAGEDIR}${JRUBY_HOME}/lib
+	${MKDIR} ${STAGEDIR}${JRUBY_HOME}/bin ${STAGEDIR}${JRUBY_HOME}/lib
 	(cd ${WRKSRC}/bin && ${COPYTREE_BIN} . ${STAGEDIR}${JRUBY_HOME}/bin/)
 	(cd ${WRKSRC}/lib && ${COPYTREE_SHARE} . ${STAGEDIR}${JRUBY_HOME}/lib)
 .for f in jruby jirb jgem
-	${LN} -sf ${JRUBY_HOME}/bin/${f} ${STAGEDIR}${PREFIX}/bin/${f}
+	${RLN} ${STAGEDIR}${JRUBY_HOME}/bin/${f} ${STAGEDIR}${PREFIX}/bin/${f}
 .endfor
 	${FIND} ${STAGEDIR}${JRUBY_HOME}/lib/jni/x86_64-FreeBSD -type f -name '*\.so' -exec ${STRIP_CMD} {} \;
 

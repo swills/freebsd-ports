@@ -1,5 +1,5 @@
 # Created by: Roman Bogorodskiy <novel@FreeBSD.org>
-# $FreeBSD: head/devel/libosinfo/Makefile 448770 2017-08-26 13:16:21Z novel $
+# $FreeBSD: head/devel/libosinfo/Makefile 457130 2017-12-24 08:17:35Z novel $
 
 PORTNAME=	libosinfo
 PORTVERSION=	1.1.0
@@ -16,7 +16,7 @@ RUN_DEPENDS:=	${BUILD_DEPENDS} \
 		osinfo-db-import:sysutils/osinfo-db-tools \
 		${LOCALBASE}/share/osinfo/VERSION:misc/osinfo-db
 
-USES=		gmake libtool pathfix pkgconfig
+USES=		gettext-tools gmake libtool pathfix pkgconfig
 USE_GNOME=	glib20 libxml2 libxslt introspection:build intlhack
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes

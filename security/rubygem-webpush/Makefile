@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/rubygem-webpush/Makefile 453700 2017-11-07 21:03:10Z sunpoet $
+# $FreeBSD: head/security/rubygem-webpush/Makefile 457830 2018-01-02 02:57:04Z jrm $
 
 PORTNAME=	webpush
-PORTVERSION=	0.3.2
-PORTREVISION=	1
+PORTVERSION=	0.3.3
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
@@ -13,7 +12,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-hkdf>=0.2:security/rubygem-hkdf \
-		rubygem-jwt>=0:www/rubygem-jwt
+		rubygem-jwt2>=2.0:www/rubygem-jwt2
 
 USES=		gem
 USE_RUBY=	yes

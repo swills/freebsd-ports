@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-Exception-Class/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Exception-Class/Makefile 456147 2017-12-12 13:34:06Z sunpoet $
 
 PORTNAME=	Exception-Class
-PORTVERSION=	1.43
+PORTVERSION=	1.44
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

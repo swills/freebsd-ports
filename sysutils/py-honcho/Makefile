@@ -1,5 +1,5 @@
 # Created by: Fukang Chen <loader@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-honcho/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/sysutils/py-honcho/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	honcho
 PORTVERSION=	1.0.1
@@ -21,7 +21,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	nickstenning
 
 NO_ARCH=	yes
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 do-test:

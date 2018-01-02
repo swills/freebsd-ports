@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/sha1collisiondetection/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/security/sha1collisiondetection/Makefile 456719 2017-12-19 14:41:29Z linimon $
 
 PORTNAME=	sha1collisiondetection
 PORTVERSION=	1.0.2
@@ -11,6 +11,7 @@ COMMENT=	Library and command line tool to detect SHA-1 collisions
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
+BROKEN_aarch64=		fails to compile: generic selections are a C11-specific feature [-Werror,-Wc11-extensions]
 BROKEN_armv6=		fails to compile: generic selections are a C11-specific feature [-Werror,-Wc11-extensions]
 BROKEN_armv7=		fails to compile: generic selections are a C11-specific feature [-Werror,-Wc11-extensions]
 BROKEN_powerpc64=	fails to compile: cc1: unrecognized command line option -std=c90

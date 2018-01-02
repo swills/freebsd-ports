@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/math/plplot/Makefile 455251 2017-12-01 07:19:53Z antoine $
+# $FreeBSD: head/math/plplot/Makefile 456832 2017-12-20 15:16:30Z bapt $
 
 PORTNAME=	plplot
 PORTVERSION=	5.12.0
@@ -59,8 +59,9 @@ LUA_CMAKE_BOOL=		ENABLE_lua
 LUA_CMAKE_ON=		-DLUA_EXECUTABLE:FILEPATH="${LUA_CMD}"
 
 PYTHON_USES=		python:2.7
-PYTHON_BUILD_DEPENDS=	swig:devel/swig13 \
+PYTHON_BUILD_DEPENDS=	swig3.0:devel/swig30 \
 			${PYNUMPY}
+PYTHON_BINARY_ALIAS=	swig=swig3.0
 PYTHON_RUN_DEPENDS=	${PYNUMPY}
 PYTHON_CMAKE_BOOL=	ENABLE_python
 PYTHON_CONFIGURE_ENV=	PYTHON_VERSION="${PYTHON_VERSION}"

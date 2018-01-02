@@ -1,5 +1,7 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/www/unit-php56/Makefile 455874 2017-12-09 19:46:42Z lwhsu $
+# $FreeBSD: head/www/unit-php56/Makefile 456464 2017-12-16 10:20:14Z lwhsu $
+
+PHP_VER?=	56
 
 PKGNAMESUFFIX=	-php${PHP_VER}
 

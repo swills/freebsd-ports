@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-chosen-rails/Makefile 433614 2017-02-07 20:33:35Z sunpoet $
+# $FreeBSD: head/www/rubygem-chosen-rails/Makefile 457416 2017-12-27 19:53:49Z sunpoet $
 
 PORTNAME=	chosen-rails
-PORTVERSION=	1.5.2
+PORTVERSION=	1.8.2
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

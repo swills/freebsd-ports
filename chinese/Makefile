@@ -1,4 +1,4 @@
-# $FreeBSD: head/chinese/Makefile 454767 2017-11-23 16:51:13Z robak $
+# $FreeBSD: head/chinese/Makefile 457833 2018-01-02 07:25:59Z antoine $
 #
 
     COMMENT = Chinese support
@@ -59,6 +59,7 @@
     SUBDIR += kcfonts
     SUBDIR += kde4-l10n-zh_CN
     SUBDIR += kde4-l10n-zh_TW
+    SUBDIR += libcangjie
     SUBDIR += libchewing
     SUBDIR += libpinyin
     SUBDIR += libreoffice-zh_CN
@@ -92,6 +93,7 @@
     SUBDIR += php-opencc
     SUBDIR += phpbb-tw
     SUBDIR += phpbb3-tw
+    SUBDIR += pycangjie
     SUBDIR += pyzy
     SUBDIR += qe
     SUBDIR += qt4-codecs-cn

@@ -1,5 +1,5 @@
 # Created by: Sir l33tname <sirl33tname@gmail.com>
-# $FreeBSD: head/archivers/lua51-zlib/Makefile 453431 2017-11-03 20:28:12Z sunpoet $
+# $FreeBSD: head/archivers/lua51-zlib/Makefile 456771 2017-12-20 01:58:39Z emaste $
 
 PORTNAME=	zlib
 PORTVERSION=	1.2
@@ -23,6 +23,7 @@ MAKE_ENV+=	LUAPATH="${LOCALBASE}"
 MAKE_ENV+=	LUACPATH="${STAGEDIR}${LUA_MODLIBDIR}"
 MAKE_ENV+=	INCDIR="-I${LUA_INCDIR}"
 MAKE_ENV+=	LUALIBDIR="-L${LUA_MODLIBDIR}"
+LLD_UNSAFE=	yes
 
 PLIST_FILES=	${LUA_MODLIBDIR}/zlib.so
 

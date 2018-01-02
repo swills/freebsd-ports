@@ -1,5 +1,5 @@
 # Created by: Vanilla I. Shu <vanilla@FreeBSD.org>
-# $FreeBSD: head/devel/glib12/Makefile 368108 2014-09-13 15:11:27Z tijl $
+# $FreeBSD: head/devel/glib12/Makefile 456711 2017-12-19 09:00:33Z amdmi3 $
 
 PORTNAME=	glib
 PORTVERSION=	1.2.10
@@ -10,6 +10,9 @@ PKGNAMESUFFIX=	12
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Some useful routines of C programming (previous stable version)
+
+LICENSE=	LGPL21+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

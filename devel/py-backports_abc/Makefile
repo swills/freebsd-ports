@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/devel/py-backports_abc/Makefile 426040 2016-11-13 12:42:09Z gblach $
+# $FreeBSD: head/devel/py-backports_abc/Makefile 457550 2017-12-29 22:29:37Z gblach $
 
 PORTNAME=	backports_abc
 PORTVERSION=	0.5
@@ -12,7 +12,8 @@ COMMENT=	Backport of recent additions to the 'collections.abc' module
 
 LICENSE=	PSFL
 
-USES=		python
+NO_ARCH=	yes
+USES=		python:-3.4
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

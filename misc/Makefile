@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 455773 2017-12-08 06:37:54Z yuri $
+# $FreeBSD: head/misc/Makefile 457523 2017-12-29 18:47:11Z sunpoet $
 #
 
     COMMENT = Miscellaneous utilities
@@ -250,6 +250,7 @@
     SUBDIR += libisocodes
     SUBDIR += libkdeedu
     SUBDIR += libmetalink
+    SUBDIR += libpostal
     SUBDIR += libpri
     SUBDIR += libsupertone
     SUBDIR += libutf
@@ -279,6 +280,7 @@
     SUBDIR += najitool
     SUBDIR += newer
     SUBDIR += nms
+    SUBDIR += nnn
     SUBDIR += nsf
     SUBDIR += numchar
     SUBDIR += nut
@@ -298,7 +300,6 @@
     SUBDIR += p5-Array-LineReader
     SUBDIR += p5-Array-PrintCols
     SUBDIR += p5-Array-RefElem
-    SUBDIR += p5-Asterisk
     SUBDIR += p5-Asterisk-FastAGI
     SUBDIR += p5-Bot-Training
     SUBDIR += p5-Bot-Training-MegaHAL
@@ -353,6 +354,7 @@
     SUBDIR += p5-Text-FIGlet
     SUBDIR += p5-Tie-DxHash
     SUBDIR += p5-Zen-Koans
+    SUBDIR += p5-asterisk-perl
     SUBDIR += pantry
     SUBDIR += parley
     SUBDIR += pastebinit

@@ -1,5 +1,5 @@
 # Created by: Rashid N. Achilov <citycat4@ngs.ru>
-# $FreeBSD: head/editors/yui/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/editors/yui/Makefile 457055 2017-12-23 14:27:08Z tijl $
 
 PORTNAME=	yui
 PORTVERSION=	3.2.06
@@ -20,11 +20,9 @@ BROKEN_mips64=		fails to compile: cast from unsigned char* to unsigned int loses
 BROKEN_sparc64=		fails to compile
 BROKEN_powerpc64=	fails to build: strip: open tyui/y failed: No such file or directory
 
-USES=		tar:bzip2
-USE_AUTOTOOLS=	autoconf aclocal
-
-ACLOCAL_ARGS=	-I m4
+GNU_CONFIGURE=	yes
 MAKE_ENV=	LIBPATH=${PREFIX}/lib
+USES=		autoreconf tar:bzip2
 
 OPTIONS_DEFINE=	DOCS
 

@@ -1,5 +1,5 @@
 # Created by: Prudhvi Krishna <prudhvikrishna@gmail.com>
-# $FreeBSD: head/www/entrans/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/entrans/Makefile 456517 2017-12-16 21:44:09Z tz $
 
 PORTNAME=	entrans
 PORTVERSION=	0.3.3
@@ -11,6 +11,8 @@ COMMENT=	Entrans is an online, collaborative translation tool
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+IGNORE_WITH_PHP=	70 71 72
 
 USES=		php:web
 USE_PHP=	mysql

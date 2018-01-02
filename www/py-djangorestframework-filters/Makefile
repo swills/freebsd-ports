@@ -1,8 +1,8 @@
 # Created by: Alfred Perlstein <alfred@freebsd.org>
-# $FreeBSD: head/www/py-djangorestframework-filters/Makefile 411538 2016-03-21 05:04:09Z alfred $
+# $FreeBSD: head/www/py-djangorestframework-filters/Makefile 457279 2017-12-26 11:10:04Z alfred $
 
 PORTNAME=	djangorestframework-filters
-PORTVERSION=	0.8.0
+PORTVERSION=	0.10.2
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

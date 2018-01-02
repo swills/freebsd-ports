@@ -1,14 +1,14 @@
 # Created by: Valerio Daelli <valerio.daelli@gmail.com>
-# $FreeBSD: head/security/ossec-hids-server/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/security/ossec-hids-server/Makefile 457828 2018-01-02 01:18:40Z brd $
 
 PORTNAME=	ossec-hids
 PORTVERSION=	2.8.3
 DISTVERSIONPREFIX=	v
-PORTREVISION?=	2
+PORTREVISION?=	3
 CATEGORIES=	security
 PKGNAMESUFFIX=	-server
 
-MAINTAINER=	brd@FreeBSD.org
+MAINTAINER=	dominik.lisiak@bemsoft.pl
 COMMENT?=	Security tool to monitor and check logs and intrusions
 
 USE_GITHUB=	yes
@@ -96,7 +96,7 @@ do-build:
 .if defined(CLIENT_ONLY)
 	@cd ${WRKSRC}/src;${MAKE} setagent;${MAKE} all;${MAKE} build
 .elif defined(LOCAL_ONLY)
-	@cd ${WRKSRC}/src;${MAKE} setlocal;${MAKE} all;${MAKE} build
+	@cd ${WRKSRC}/src;${MAKE} setlocal;${MAKE} setdb;${MAKE} all;${MAKE} build
 .else
 	@cd ${WRKSRC}/src;${MAKE} setdb;${MAKE} all;${MAKE} build
 .endif

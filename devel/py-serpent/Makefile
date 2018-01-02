@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-serpent/Makefile 445826 2017-07-14 20:17:36Z rm $
+# $FreeBSD: head/devel/py-serpent/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	serpent
 PORTVERSION=	1.23
@@ -12,7 +12,7 @@ COMMENT=	Simple serialization library based on ast.literal_eval
 LICENSE=	MIT
 
 NO_ARCH=	yes
-USES=		dos2unix python:2.7+
+USES=		dos2unix python
 USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

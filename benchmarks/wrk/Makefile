@@ -1,5 +1,5 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/benchmarks/wrk/Makefile 433456 2017-02-05 21:20:24Z tijl $
+# $FreeBSD: head/benchmarks/wrk/Makefile 457638 2017-12-30 21:15:25Z krion $
 
 PORTNAME=	wrk
 PORTVERSION=	4.0.2
@@ -17,6 +17,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	wg
 
 USES=		gmake ssl
+LLD_UNSAFE=	yes
 CFLAGS+=	-std=c99 -D_DECLARE_C99_LDBL_MATH
 MAKE_ENV+=	WITH_OPENSSL=${OPENSSLBASE} WITH_LUAJIT=${LOCALBASE} VER=${PORTVERSION}
 

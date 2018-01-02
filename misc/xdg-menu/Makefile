@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/misc/xdg-menu/Makefile 439028 2017-04-21 08:43:07Z amdmi3 $
+# $FreeBSD: head/misc/xdg-menu/Makefile 456126 2017-12-12 12:40:15Z antoine $
 
 PORTNAME=	xdg-menu
 PORTVERSION=	1.5
@@ -19,13 +19,13 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/Help/COPYING
 
 RUN_DEPENDS=	${LOCALBASE}/bin/rox:x11-fm/rox-filer \
-		${PYTHON_PKGNAMEPREFIX}xdg>=0:devel/py-xdg \
-		${PYTHON_PKGNAMEPREFIX}dbus>=0:devel/py-dbus
+		${PYTHON_PKGNAMEPREFIX}xdg>=0:devel/py-xdg@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dbus>=0:devel/py-dbus@${PY_FLAVOR}
 
 WRKSRC=		${WRKDIR}/XDG-Menu
 DATADIR=	${PREFIX}/apps/XDG-Menu
 
-USES=		python shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	AppRun AppletRun
 INSTALLS_ICONS=	yes
 NO_ARCH=	yes

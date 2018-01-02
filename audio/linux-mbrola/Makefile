@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/audio/linux-mbrola/Makefile 421387 2016-09-05 19:23:42Z tijl $
+# $FreeBSD: head/audio/linux-mbrola/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	mbrola
 PORTVERSION=	3.0.1
@@ -13,6 +13,9 @@ EXTRACT_SUFX=	.zip
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	MBROLA speech synthesizer for Linux
+
+DEPRECATED=	Depends on expiring audio/mbrolavox
+EXPIRATION_DATE=	2018-01-27
 
 RUN_DEPENDS=	mbrolavox>0:audio/mbrolavox
 

@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-podlators/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-podlators/Makefile 457338 2017-12-26 23:20:54Z sunpoet $
 
 PORTNAME=	podlators
-PORTVERSION=	4.09
+PORTVERSION=	4.10
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN/Pod
 PKGNAMEPREFIX=	p5-

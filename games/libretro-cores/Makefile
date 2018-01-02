@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/games/libretro-cores/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/libretro-cores/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	libretro-cores
 PORTVERSION=	0.20161109
@@ -109,6 +109,8 @@ USE_GL=		gl
 DOS2UNIX_FILES=	hatari/Makefile.libretro 81-libretro/81/sp0256.c libretro-uae/Makefile
 
 BROKEN=	checksum mismatch
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 .include <bsd.port.pre.mk>
 

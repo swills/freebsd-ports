@@ -1,5 +1,5 @@
 # Created by: Martin Tournoij <carpetsmoker@xs4all.nl>
-# $FreeBSD: head/emulators/catapult/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/emulators/catapult/Makefile 456181 2017-12-12 18:35:32Z antoine $
 
 PORTNAME=	catapult
 PORTVERSION=	0.13.0
@@ -18,7 +18,7 @@ RUN_DEPENDS=	openmsx:emulators/openmsx
 
 OPTIONS_DEFINE=	DEBUG DOCS
 
-USES=		gmake pkgconfig python:build
+USES=		gmake pkgconfig python:2.7,build
 USE_GCC=	yes
 USE_CXXSTD=	gnu++0x
 USE_GNOME=	gtk20 libxml2

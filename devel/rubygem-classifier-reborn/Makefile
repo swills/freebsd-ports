@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv@kvedulv.de>
-# $FreeBSD: head/devel/rubygem-classifier-reborn/Makefile 430336 2017-01-02 10:14:44Z sunpoet $
+# $FreeBSD: head/devel/rubygem-classifier-reborn/Makefile 456436 2017-12-15 23:52:49Z sunpoet $
 
 PORTNAME=	classifier-reborn
-PORTVERSION=	2.1.0
+PORTVERSION=	2.2.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -17,7 +17,5 @@ RUN_DEPENDS=	rubygem-fast-stemmer>=1.0.0:devel/rubygem-fast-stemmer
 NO_ARCH=	yes
 USE_RUBY=	yes
 USES=		gem
-
-PLIST_FILES=	bin/bayes.rb bin/summarize.rb
 
 .include <bsd.port.mk>

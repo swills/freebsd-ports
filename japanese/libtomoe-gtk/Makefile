@@ -1,5 +1,5 @@
 # Created by: Hajimu UMEMOTO <ume@FreeBSD.org>
-# $FreeBSD: head/japanese/libtomoe-gtk/Makefile 419596 2016-08-04 05:51:16Z marino $
+# $FreeBSD: head/japanese/libtomoe-gtk/Makefile 456181 2017-12-12 18:35:32Z antoine $
 
 PORTNAME=	libtomoe-gtk
 PORTVERSION=	0.6.0
@@ -14,7 +14,7 @@ COMMENT=	TOMOE GTK+ library
 LIB_DEPENDS=	libtomoe.so:japanese/tomoe
 
 GNU_CONFIGURE=	yes
-USES=		gmake libtool pathfix pkgconfig python:build
+USES=		gmake libtool pathfix pkgconfig python:2.7,build
 USE_GNOME=	gtk20
 USE_LDCONFIG=	yes
 

@@ -1,8 +1,8 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/graphics/cimg/Makefile 453759 2017-11-08 18:38:11Z thierry $
+# $FreeBSD: head/graphics/cimg/Makefile 457066 2017-12-23 16:31:57Z thierry $
 
 PORTNAME=	cimg
-DISTVERSION=	2.1.5
+DISTVERSION=	2.1.7
 PORTEPOCH=	3
 CATEGORIES=	graphics devel
 
@@ -18,8 +18,13 @@ LICENSE_FILE_CeCILL=	${WRKSRC}/Licence_CeCILL_V2-en.txt
 LICENSE_PERMS_CeCILL_C=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 LICENSE_PERMS_CeCILL=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-ONLY_FOR_ARCHS=	amd64 i386
-ONLY_FOR_ARCHS_REASON=	invokes i386 asm
+BROKEN_aarch64=		invokes x86 assembler
+BROKEN_armv6=		invokes x86 assembler
+BROKEN_armv7=		invokes x86 assembler
+BROKEN_mips=		invokes x86 assembler
+BROKEN_mips64=		invokes x86 assembler
+BROKEN_sparc64=		invokes x86 assembler
+BROKEN_powerpc64=	invokes x86 assembler
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	dtschump

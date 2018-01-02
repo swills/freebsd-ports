@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/pixd/Makefile 452652 2017-10-22 15:35:25Z tobik $
+# $FreeBSD: head/graphics/pixd/Makefile 457186 2017-12-24 18:19:03Z olgeni $
 
 PORTNAME=	pixd
-PORTVERSION=	g20170531
+DISTVERSIONPREFIX=v
+DISTVERSION=	1.0.0
 CATEGORIES=	graphics
 
 MAINTAINER=	mail@dbalan.in
@@ -13,7 +14,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USES=		gmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	FireyFly
-GH_TAGNAME=	85c1cb6
 
 ALL_TARGET=	pixd
 

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/astro/py-pyfits/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/astro/py-pyfits/Makefile 457587 2017-12-30 06:43:51Z sunpoet $
 
 PORTNAME=	pyfits
 PORTVERSION=	3.4
@@ -12,6 +12,9 @@ COMMENT=	Python Interface to FITS Formatted Files
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+DEPRECATED=	Use astro/py-astropy instead
+EXPIRATION_DATE=2018-01-31
 
 BUILD_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}d2to1>=0:devel/py-d2to1@${FLAVOR} \

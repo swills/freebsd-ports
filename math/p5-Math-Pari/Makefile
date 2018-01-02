@@ -1,5 +1,5 @@
 # Created by: Michael Haro <mharo@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-Pari/Makefile 432532 2017-01-26 19:26:56Z marino $
+# $FreeBSD: head/math/p5-Math-Pari/Makefile 457373 2017-12-27 15:23:24Z emaste $
 
 PORTNAME=	Math-Pari
 PORTVERSION=	2.01080900
@@ -18,6 +18,7 @@ LIB_DEPENDS=	libgmp.so:math/gmp
 
 USES=		perl5
 USE_PERL5=	configure
+LLD_UNSAFE=	yes	# lld defaults to -ztext
 
 PARI_WRKSRC=	${WRKDIR}/pari-2.3.5
 

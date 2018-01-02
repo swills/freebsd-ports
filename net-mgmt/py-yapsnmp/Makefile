@@ -1,5 +1,5 @@
 # Created by: arved
-# $FreeBSD: head/net-mgmt/py-yapsnmp/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/py-yapsnmp/Makefile 456126 2017-12-12 12:40:15Z antoine $
 
 PORTNAME=	yapsnmp
 PORTVERSION=	0.7.8
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libnetsnmp.so:net-mgmt/net-snmp
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gmake libtool python
+USES=		gmake libtool python:2.7
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include -I${PYTHON_INCLUDEDIR}
 LDFLAGS+=	-L${LOCALBASE}/lib

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/sam2p/Makefile 423755 2016-10-11 10:01:53Z des $
+# $FreeBSD: head/graphics/sam2p/Makefile 456591 2017-12-18 05:03:39Z linimon $
 
 PORTNAME=	sam2p
 PORTVERSION=	0.49.3
@@ -13,11 +13,15 @@ COMMENT=	Converts raster (bitmap) image formats into PS or PDF files
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-#USE_GITHUB=	yes
-GH_ACCOUNT=	pts
-
 RUN_DEPENDS=	zip:archivers/zip \
 		tif22pnm:graphics/tif22pnm
+
+BROKEN_aarch64=		running make Makedep... error; configure: error: cannot compute depends
+BROKEN_armv6=		running make Makedep... error; configure: error: cannot compute depends
+BROKEN_armv7=		running make Makedep... error; configure: error: cannot compute depends
+
+#USE_GITHUB=	yes
+GH_ACCOUNT=	pts
 
 USES=		ghostscript:run gmake jpeg:run perl5
 USE_PERL5=	build

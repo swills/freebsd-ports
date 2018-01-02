@@ -1,9 +1,9 @@
 # Created by: CHOI Junho <cjh@FreeBSD.org>
-# $FreeBSD: head/misc/linm/Makefile 436925 2017-03-25 23:37:05Z antoine $
+# $FreeBSD: head/misc/linm/Makefile 457024 2017-12-23 07:03:21Z antoine $
 
 PORTNAME=	linm
 DISTVERSION=	0.8.1-1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	misc shells
 MASTER_SITES=	http://kldp.net/frs/download.php/4508/
 DISTNAME=	${PORTNAME}_${DISTVERSION}

@@ -1,5 +1,5 @@
 # Created by: Babak Farrokhi <babak@farrokhi.net>
-# $FreeBSD: head/www/eventum/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/eventum/Makefile 456517 2017-12-16 21:44:09Z tz $
 
 PORTNAME=	eventum
 PORTVERSION=	2.2
@@ -9,6 +9,8 @@ MASTER_SITES=	MYSQL/eventum
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Eventum issue tracking system
+
+IGNORE_WITH_PHP=	70 71 72
 
 USES=		cpe php:web
 CPE_VENDOR=	mysql

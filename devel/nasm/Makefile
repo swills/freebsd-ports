@@ -1,13 +1,13 @@
 # Created by: Murray Stokely <murray@cdrom.com>
-# $FreeBSD: head/devel/nasm/Makefile 448264 2017-08-18 18:32:25Z swills $
+# $FreeBSD: head/devel/nasm/Makefile 457686 2017-12-31 12:44:15Z zeising $
 
 PORTNAME=	nasm
-PORTVERSION=	2.13.01
+PORTVERSION=	2.13.02
 PORTEPOCH=	1
 CATEGORIES=	devel lang
 MASTER_SITES=	http://www.nasm.us/pub/nasm/releasebuilds/${PORTVERSION}/
 
-MAINTAINER=	serio.jeffrey@gmail.com
+MAINTAINER=	zeising@FreeBSD.org
 COMMENT=	General-purpose multi-platform x86 and amd64 assembler
 
 LICENSE=	BSD2CLAUSE

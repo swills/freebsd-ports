@@ -1,7 +1,7 @@
-# $FreeBSD: head/lang/erlang-wx/Makefile 454803 2017-11-23 21:33:00Z olgeni $
+# $FreeBSD: head/lang/erlang-wx/Makefile 456645 2017-12-18 16:36:52Z olgeni $
 
 PORTNAME=	erlang
-PORTVERSION=	19.3.6.4
+PORTVERSION=	19.3.6.5
 PORTEPOCH=	1
 CATEGORIES=	lang parallel
 MASTER_SITES=	http://www.erlang.org/download/:erlangorg		\
@@ -18,7 +18,7 @@ PATCH_SITES=	http://olgeni.olgeni.com/~olgeni/distfiles/ \
 PATCHFILES=	patch-otp-19.3.1 patch-otp-19.3.2 patch-otp-19.3.3 \
 		patch-otp-19.3.4 patch-otp-19.3.5 patch-otp-19.3.6 \
 		patch-otp-19.3.6.1 patch-otp-19.3.6.2 patch-otp-19.3.6.3 \
-		patch-otp-19.3.6.4
+		patch-otp-19.3.6.4 patch-otp-19.3.6.5
 
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Erlang bindings for wxWindows

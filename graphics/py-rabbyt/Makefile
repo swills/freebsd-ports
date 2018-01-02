@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/py-rabbyt/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/py-rabbyt/Makefile 456618 2017-12-18 11:22:03Z amdmi3 $
 
 PORTNAME=	rabbyt
 PORTVERSION=	0.8.2
@@ -12,6 +12,9 @@ DISTNAME=	Rabbyt-${PORTVERSION}
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Fast sprite library for Python
+
+DEPRECATED=	Development ceased, no longer used in the ports
+EXPIRATION_DATE=2018-01-18
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

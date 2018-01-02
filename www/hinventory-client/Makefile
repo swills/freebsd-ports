@@ -1,5 +1,5 @@
 # Created by: Thomas BRETON <tom@h-inventory.com>
-# $FreeBSD: head/www/hinventory-client/Makefile 442607 2017-06-05 09:01:15Z amdmi3 $
+# $FreeBSD: head/www/hinventory-client/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	hinventory-client
 PORTVERSION=	1.2.5
@@ -11,6 +11,8 @@ MAINTAINER=	tom@h-inventory.com
 COMMENT=	H-Inventory Client for FreeBSD
 
 BROKEN=		does not fetch, upstream gone
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 NO_BUILD=	yes
 NO_ARCH=	yes

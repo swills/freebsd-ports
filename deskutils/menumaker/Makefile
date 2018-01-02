@@ -1,5 +1,5 @@
 # Created by: alepulver@FreeBSD.org
-# $FreeBSD: head/deskutils/menumaker/Makefile 446635 2017-07-25 23:28:01Z jgh $
+# $FreeBSD: head/deskutils/menumaker/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	menumaker
 PORTVERSION=	0.99.10
@@ -12,7 +12,7 @@ COMMENT=	Menu generator for X Window Managers and desktop environments
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gmake python:2.7+
+USES=		gmake python
 GNU_CONFIGURE=	yes
 NO_ARCH=	yes
 

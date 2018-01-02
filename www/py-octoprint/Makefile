@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-octoprint/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-octoprint/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	octoprint
 PORTVERSION=	1.3.0.a
@@ -44,6 +44,8 @@ USES=		python:2.7
 
 USE_PYTHON=	autoplist distutils
 BROKEN=		checksum mismatch
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	kevans91

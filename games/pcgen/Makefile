@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/pcgen/Makefile 403341 2015-12-08 19:24:35Z amdmi3 $
+# $FreeBSD: head/games/pcgen/Makefile 456633 2017-12-18 13:18:05Z amdmi3 $
 
 PORTNAME=	pcgen
 PORTVERSION=	6.02.1
@@ -8,6 +8,8 @@ DISTNAME=	pcgen${PORTVERSION:S/.//g}_full
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Java-based RPG character generator and maintenance program
+
+LICENSE=	LGPL21
 
 USES=		zip
 WRKSRC=		${WRKDIR}/${PORTNAME}${PORTVERSION:S/.//g}

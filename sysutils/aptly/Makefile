@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/aptly/Makefile 448888 2017-08-28 21:28:17Z romain $
+# $FreeBSD: head/sysutils/aptly/Makefile 456398 2017-12-15 15:09:24Z romain $
 
 PORTNAME=	aptly
-PORTVERSION=	1.1.1
+PORTVERSION=	1.2.0
 DISTVERSIONPREFIX=v
 CATEGORIES=	sysutils
 

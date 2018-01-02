@@ -1,5 +1,5 @@
 # Created by: Johann Visagie <johann@egenetics.com>
-# $FreeBSD: head/textproc/py-asv/Makefile 401383 2015-11-12 17:22:52Z amdmi3 $
+# $FreeBSD: head/textproc/py-asv/Makefile 456126 2017-12-12 12:40:15Z antoine $
 
 PORTNAME=	asv
 PORTVERSION=	0.5
@@ -13,7 +13,7 @@ COMMENT=	Extensible Python module to parse simple text file formats like CSV
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		python
+USES=		python:2.7
 NO_ARCH=	yes
 
 PORTDOCS=	README THANKS

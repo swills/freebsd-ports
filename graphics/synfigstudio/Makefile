@@ -1,5 +1,5 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/graphics/synfigstudio/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/synfigstudio/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	synfigstudio
 PORTVERSION=	1.0.2
@@ -13,6 +13,8 @@ COMMENT=	Vector-based 2D animation software package
 LICENSE=	GPLv2+
 
 BROKEN=		missing header
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 BUILD_DEPENDS=	etl>=0.04.19_1:devel/etl
 LIB_DEPENDS=	libsynfig.so:devel/synfig

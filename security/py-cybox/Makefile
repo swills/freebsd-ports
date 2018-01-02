@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-cybox/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-cybox/Makefile 457042 2017-12-23 11:52:57Z antoine $
 
 PORTNAME=	cybox
-PORTVERSION=	2.1.0.14
+PORTVERSION=	2.1.0.16
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

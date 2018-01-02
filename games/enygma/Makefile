@@ -1,5 +1,5 @@
 # Created by: Wouter Reckman <gennerate@zonnet.nl>
-# $FreeBSD: head/games/enygma/Makefile 426604 2016-11-20 16:43:17Z marino $
+# $FreeBSD: head/games/enygma/Makefile 457134 2017-12-24 09:00:37Z amdmi3 $
 
 PORTNAME=	enygma
 PORTVERSION=	1.04
@@ -14,9 +14,9 @@ COMMENT=	Text-based puzzle game
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENCE
 
-USES=		ncurses
+USES=		localbase ncurses
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir=/var/games
-CPPFLAGS+=	-I${NCURSESINC} -I${LOCALBASE}/include
+CPPFLAGS+=	-I${NCURSESINC}
 
 .include <bsd.port.mk>

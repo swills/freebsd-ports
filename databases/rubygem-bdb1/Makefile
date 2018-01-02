@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/rubygem-bdb1/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/databases/rubygem-bdb1/Makefile 457455 2017-12-28 13:42:01Z sunpoet $
 
 PORTNAME=	bdb1
 PORTVERSION=	0.2.5
@@ -16,10 +16,4 @@ USE_RUBY=	yes
 USES=		gem shebangfix
 SHEBANG_FILES=	examples/*.rb
 
-.include <bsd.port.pre.mk>
-
-.if ${RUBY_VER} >= 2.2
-EXTRA_PATCHES+=		${FILESDIR}/extra-patch-ext_bdb1_recnum.c
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

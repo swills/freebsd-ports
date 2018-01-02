@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-roda/Makefile 454360 2017-11-17 05:30:33Z adamw $
+# $FreeBSD: head/www/rubygem-roda/Makefile 456336 2017-12-14 19:25:21Z adamw $
 
 PORTNAME=	roda
-PORTVERSION=	3.2.0
+PORTVERSION=	3.3.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -15,7 +15,12 @@ LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 RUN_DEPENDS=	rubygem-rack>=2.0:www/rubygem-rack
 TEST_DEPENDS=	rubygem-erubi>=0:www/rubygem-erubi \
 		rubygem-haml>=0:www/rubygem-haml \
+		rubygem-json>=0:devel/rubygem-json \
+		rubygem-mail>=0:mail/rubygem-mail \
 		rubygem-minitest>=5.7.0:devel/rubygem-minitest \
+		rubygem-rack_csrf>=0:www/rubygem-rack_csrf \
+		rubygem-rake>=0:devel/rubygem-rake \
+		rubygem-sass>=0:textproc/rubygem-sass \
 		rubygem-tilt>=2.0:devel/rubygem-tilt
 
 USES=		gem

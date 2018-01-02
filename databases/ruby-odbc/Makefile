@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/databases/ruby-odbc/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/ruby-odbc/Makefile 457199 2017-12-24 23:25:20Z swills $
 
 PORTNAME=	odbc
 PORTVERSION=	0.99991
@@ -13,7 +13,9 @@ DIST_SUBDIR=	ruby
 MAINTAINER=	knu@FreeBSD.org
 COMMENT=	Ruby extension library to use ODBC data sources
 
-OPTIONS_DEFINe=	DOCS EXAMPLES
+BROKEN_RUBY24=	yes
+
+OPTIONS_DEFINE=	DOCS EXAMPLES
 
 LIB_DEPENDS=	libodbc.so:databases/unixODBC
 

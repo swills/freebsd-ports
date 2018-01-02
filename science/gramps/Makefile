@@ -1,5 +1,5 @@
 # Created by: Andreas Fehlner <fehlner@gmx.de>
-# $FreeBSD: head/science/gramps/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/science/gramps/Makefile 456602 2017-12-18 09:00:35Z amdmi3 $
 
 PORTNAME=	gramps
 PORTVERSION=	4.2.6
@@ -9,7 +9,7 @@ CATEGORIES=	science gnome python
 MAINTAINER=	woodsb02@FreeBSD.org
 COMMENT=	GTK3-based genealogy program
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libosmgpsmap-1.0.so:x11-toolkits/osm-gps-map

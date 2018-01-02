@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/lightyears/Makefile 455302 2017-12-01 19:13:02Z amdmi3 $
+# $FreeBSD: head/games/lightyears/Makefile 456395 2017-12-15 14:31:49Z amdmi3 $
 
 PORTNAME=	lightyears
 PORTVERSION=	1.4
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	${PYGAME}
 
-USES=		python:2 shebangfix tar:bz2
+USES=		python:2.7 shebangfix tar:bz2
 SHEBANG_FILES=	${PORTNAME}
 
 NO_ARCH=	yes

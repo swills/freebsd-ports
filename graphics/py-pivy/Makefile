@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni <pfg@FreeBSD.org>
-# $FreeBSD: head/graphics/py-pivy/Makefile 441468 2017-05-22 16:04:19Z linimon $
+# $FreeBSD: head/graphics/py-pivy/Makefile 456794 2017-12-20 13:48:47Z bapt $
 
 PORTNAME=	pivy
 PORTVERSION=	0.5.0
@@ -12,13 +12,14 @@ COMMENT=	Python binding for Coin
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${LOCALBASE}/bin/swig:devel/swig13
+BUILD_DEPENDS=	swig3.0:devel/swig30
 LIB_DEPENDS=	libSoQt.so:x11-toolkits/soqt
 
 BROKEN_powerpc64=	fails to link: coin_wrap.o: relocation truncated to fit: R_PPC64_TOC16_DS
 
 USES=		zip python:2
 USE_PYTHON=	autoplist distutils
+BINARY_ALIAS=	swig=swig3.0
 
 WRKSRC=		${WRKDIR}/Coin3D-pivy-${DISTNAME}
 

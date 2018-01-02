@@ -1,8 +1,8 @@
 # Created by: Nikolai Lifanov <lifanov@mail.lifanov.com>
-# $FreeBSD: head/emulators/winetricks/Makefile 452518 2017-10-20 13:25:41Z lifanov $
+# $FreeBSD: head/emulators/winetricks/Makefile 457420 2017-12-27 20:08:23Z lifanov $
 
 PORTNAME=	winetricks
-PORTVERSION=	20171018
+PORTVERSION=	20171222
 CATEGORIES=	emulators
 
 MAINTAINER=	lifanov@FreeBSD.org

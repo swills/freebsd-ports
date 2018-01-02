@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-msgpack/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-msgpack/Makefile 456329 2017-12-14 18:12:41Z swills $
 
 PORTNAME=	msgpack
 PORTVERSION=	0.5.12
@@ -13,6 +13,8 @@ LICENSE=	APACHE20
 USE_RUBY=	yes
 USES=		gem
 STRIPDIR=	${STAGEDIR}${PREFIX}/${GEMS_BASE_DIR}
+
+BROKEN_RUBY24=	yes
 
 post-install:
 	${FIND} ${STRIPDIR} -type f \( -name '*.o' -o -name '*.so' \) | ${XARGS} ${STRIP_CMD}

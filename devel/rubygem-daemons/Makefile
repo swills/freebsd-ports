@@ -1,8 +1,8 @@
 # Created by: Rui Lopes (<rgl ruilopes com>)
-# $FreeBSD: head/devel/rubygem-daemons/Makefile 452725 2017-10-23 18:27:16Z sunpoet $
+# $FreeBSD: head/devel/rubygem-daemons/Makefile 457236 2017-12-25 13:54:14Z sunpoet $
 
 PORTNAME=	daemons
-PORTVERSION=	1.2.5
+PORTVERSION=	1.2.6
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

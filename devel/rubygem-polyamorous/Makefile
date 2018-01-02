@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-polyamorous/Makefile 427675 2016-12-03 19:31:19Z sunpoet $
+# $FreeBSD: head/devel/rubygem-polyamorous/Makefile 457608 2017-12-30 18:16:16Z sunpoet $
 
 PORTNAME=	polyamorous
-PORTVERSION=	1.3.1
+PORTVERSION=	1.3.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

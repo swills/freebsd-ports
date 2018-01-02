@@ -1,9 +1,10 @@
-# $FreeBSD: head/databases/postgis21/Makefile 446033 2017-07-16 16:12:21Z sunpoet $
+# $FreeBSD: head/databases/postgis21/Makefile 456527 2017-12-17 11:25:13Z rodrigo $
 
 PORTNAME=	postgis
 PORTVERSION=	2.1.8
 CATEGORIES=	databases geography
 MASTER_SITES=	http://download.osgeo.org/postgis/source/
+PKGNAMESUFFIX=	21
 
 MAINTAINER=	harrison.grundy@astrodoggroup.com
 COMMENT=	Geographic objects support for PostgreSQL databases
@@ -15,7 +16,7 @@ LIB_DEPENDS=	libproj.so:graphics/proj \
 		libgeos.so:graphics/geos \
 		libjson-c.so:devel/json-c
 
-CONFLICTS_INSTALL=	postgis20 postgis22 postgis23
+CONFLICTS_INSTALL=	postgis20 postgis22 postgis23 postgis24 postgis
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	${ICONV_CONFIGURE_BASE}

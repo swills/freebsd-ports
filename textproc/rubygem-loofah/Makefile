@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/textproc/rubygem-loofah/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/textproc/rubygem-loofah/Makefile 457743 2017-12-31 22:24:03Z sunpoet $
 
 PORTNAME=	loofah
-PORTVERSION=	2.0.3
+PORTVERSION=	2.1.1
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -12,7 +12,8 @@ COMMENT=	Library for manipulating HTML/XML documents and fragments
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE.txt
 
-RUN_DEPENDS=	rubygem-nokogiri>=1.5.9:textproc/rubygem-nokogiri
+RUN_DEPENDS=	rubygem-crass>=1.0.2:www/rubygem-crass \
+		rubygem-nokogiri>=1.5.9:textproc/rubygem-nokogiri
 
 NO_ARCH=	yes
 USE_RUBY=	yes

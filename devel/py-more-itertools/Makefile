@@ -1,8 +1,8 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/devel/py-more-itertools/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-more-itertools/Makefile 456990 2017-12-22 17:07:13Z yuri $
 
 PORTNAME=	more-itertools
-PORTVERSION=	2.2
+PORTVERSION=	4.0.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

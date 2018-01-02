@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/databases/percona57-pam-for-mysql/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/databases/percona57-pam-for-mysql/Makefile 457697 2017-12-31 15:28:55Z feld $
 
 PORTNAME=	percona57
-PORTREVISION?=	2
+PORTREVISION?=	0
 PKGNAMESUFFIX=	-pam-for-mysql
 
 COMMENT=	PAM plugin for MySQL

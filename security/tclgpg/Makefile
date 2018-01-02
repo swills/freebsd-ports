@@ -1,5 +1,5 @@
 # Created by: mp39590@gmail.com
-# $FreeBSD: head/security/tclgpg/Makefile 440780 2017-05-13 10:53:58Z miwi $
+# $FreeBSD: head/security/tclgpg/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	tclgpg
 PORTVERSION=	0.0.0.20150324
@@ -19,6 +19,8 @@ USES=		autoreconf gmake tcl:tea
 USE_LDCONFIG=	yes
 WRKSRC=		${WRKDIR}/tclgpg-4cfd9fa949
 BROKEN=		checksum mismatch
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 PLIST_FILES=	lib/gpg1.0/libgpg1.0.so \
 		lib/gpg1.0/pkgIndex.tcl \

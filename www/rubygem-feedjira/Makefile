@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-feedjira/Makefile 435625 2017-03-07 17:02:59Z sunpoet $
+# $FreeBSD: head/www/rubygem-feedjira/Makefile 456161 2017-12-12 13:35:18Z sunpoet $
 
 PORTNAME=	feedjira
-PORTVERSION=	2.1.2
+PORTVERSION=	2.1.3
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

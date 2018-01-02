@@ -1,5 +1,5 @@
 # Created by: bkhl@elektrubadur.se
-# $FreeBSD: head/news/cg/Makefile 342440 2014-02-03 13:40:25Z miwi $
+# $FreeBSD: head/news/cg/Makefile 457356 2017-12-27 09:00:39Z amdmi3 $
 
 PORTNAME=	cg
 PORTVERSION=	0.4
@@ -8,6 +8,9 @@ MASTER_SITES=	http://www.nih.at/cg/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Semi-automatic newsgroup binary downloader
+
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
 

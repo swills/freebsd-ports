@@ -1,5 +1,5 @@
 # Created by: Alex Deiter <alex.deiter@gmail.com>
-# $FreeBSD: head/sysutils/openipmi/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/sysutils/openipmi/Makefile 456797 2017-12-20 14:16:29Z bapt $
 
 PORTNAME=	openipmi
 PORTVERSION=	2.0.21
@@ -82,8 +82,9 @@ PLIST_SUB+=		PERL="@comment "
 .if ${PORT_OPTIONS:MPYTHON}
 USES+=			python
 CONFIGURE_ARGS+=	--with-python --with-swig ac_cv_path_pythonprog=${PYTHON_CMD}
-BUILD_DEPENDS+=		swig:devel/swig13
+BUILD_DEPENDS+=		swig3.0:devel/swig30
 PLIST_SUB+=		PYTHON=""
+BINARY_ALIAS=		swig=swig3.0
 .else
 CONFIGURE_ARGS+=	--with-python=no --with-swig=no
 PLIST_SUB+=		PYTHON="@comment "

@@ -1,8 +1,8 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/www/mod_md-devel/Makefile 455909 2017-12-10 20:01:34Z brnrd $
+# $FreeBSD: head/www/mod_md-devel/Makefile 457767 2018-01-01 12:06:46Z brnrd $
 
 PORTNAME=	mod_md
-PORTVERSION=	1.0.7
+PORTVERSION=	1.1.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}
@@ -21,6 +21,8 @@ LIB_DEPENDS=	libaprutil-1.so:devel/apr1 \
 USES=		autoreconf libtool ssl
 USE_GITHUB=	yes
 USE_APACHE=	24+
+
+INSTALL_TARGET=	install-strip
 
 GH_ACCOUNT=	icing
 GH_PROJECT=	mod_md
@@ -42,9 +44,6 @@ IGNORE=		port requires OpenSSL 1.0.2 or later, set DEFAULT_VERSIONS+= ssl=openss
 .endif
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${APACHEMODDIR}/${MODULENAME}.so \
-		${WRKSRC}/src/a2md
-	${INSTALL} ${WRKSRC}/src/a2md ${STAGEDIR}${PREFIX}/bin/a2md
 	${RM} ${STAGEDIR}${PREFIX}/share/doc/mod_md/LICENSE
 
 .include <bsd.port.post.mk>

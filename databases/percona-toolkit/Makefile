@@ -1,9 +1,9 @@
-# $FreeBSD: head/databases/percona-toolkit/Makefile 413875 2016-04-23 14:11:46Z flo $
+# $FreeBSD: head/databases/percona-toolkit/Makefile 456483 2017-12-16 19:47:56Z flo $
 
 PORTNAME=	percona-toolkit
-PORTVERSION=	2.2.17
+PORTVERSION=	3.0.5
 CATEGORIES=	databases
-MASTER_SITES=	http://www.percona.com/downloads/${PORTNAME}/${PORTVERSION}/tarball/
+MASTER_SITES=	https://www.percona.com/downloads/${PORTNAME}/${PORTVERSION}/source/tarball/
 
 MAINTAINER=	flo@FreeBSD.org
 COMMENT=	Collection of essential command-line utilities for MySQL

@@ -1,5 +1,5 @@
 # Created by: renchap@cocoa-x.com
-# $FreeBSD: head/devel/rubygem-moneta06/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-moneta06/Makefile 457530 2017-12-29 18:47:53Z sunpoet $
 
 PORTNAME=	moneta
 PORTVERSION=	0.6.0
@@ -10,8 +10,10 @@ PKGNAMESUFFIX=	06
 MAINTAINER=	renchap@cocoa-x.com
 COMMENT=	Unified interface to key/value stores
 
-NO_ARCH=	yes
+DEPRECATED=	Use devel/rubygem-moneta instead
+EXPIRATION_DATE=2018-01-31
 
+NO_ARCH=	yes
 USE_RUBY=	yes
 USES=		gem
 

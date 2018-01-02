@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/py-mycli/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/py-mycli/Makefile 457143 2017-12-24 11:14:56Z sunpoet $
 
 PORTNAME=	mycli
-PORTVERSION=	1.13.1
+PORTVERSION=	1.15.0
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +13,7 @@ COMMENT=	CLI for MySQL Database with auto-completion and syntax highlighting
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cli-helpers>=0.2.3:devel/py-cli-helpers@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cli-helpers>=1.0.1:devel/py-cli-helpers@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}click>=4.1:devel/py-click@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}configobj>=5.0.5:devel/py-configobj@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}cryptography>=1.0.0:security/py-cryptography@${FLAVOR} \

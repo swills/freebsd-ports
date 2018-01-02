@@ -1,5 +1,5 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/security/obfsproxy/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/obfsproxy/Makefile 456678 2017-12-18 21:51:42Z antoine $
 
 PORTNAME=	obfsproxy
 PORTVERSION=	0.2.13
@@ -12,6 +12,8 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	Pluggable transport proxy
 
 LICENSE=	BSD3CLAUSE
+
+BROKEN=		fails to configure
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyptlib>=0.0.5:security/py-pyptlib@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pycrypto>=2.1:security/py-pycrypto@${FLAVOR} \

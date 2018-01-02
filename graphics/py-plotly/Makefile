@@ -1,8 +1,8 @@
 # Created by: jjachuf@gmail.com
-# $FreeBSD: head/graphics/py-plotly/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/py-plotly/Makefile 456564 2017-12-17 21:05:57Z swills $
 
 PORTNAME=	plotly
-PORTVERSION=	2.0.7
+PORTVERSION=	2.2.3
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +14,8 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}decorator>0:devel/py-decorator@${FLAVOR} 
 
 NO_ARCH=	yes
 USES=		python

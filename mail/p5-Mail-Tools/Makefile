@@ -1,8 +1,8 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Mail-Tools/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-Mail-Tools/Makefile 456903 2017-12-21 12:09:48Z wen $
 
 PORTNAME=	Mail-Tools
-PORTVERSION=	2.14
+PORTVERSION=	2.19
 CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -20,7 +20,5 @@ BUILD_DEPENDS:=	${RUN_DEPENDS}
 USES=		perl5
 USE_PERL5=	configure
 NO_ARCH=	YES
-
-#pre-install: test
 
 .include <bsd.port.mk>

@@ -1,9 +1,10 @@
 # Created by: Kyle Martin <mkm@ieee.org>
-# $FreeBSD: head/devel/cmake/Makefile 454301 2017-11-16 10:15:15Z adridg $
+# $FreeBSD: head/devel/cmake/Makefile 457650 2017-12-30 22:31:13Z adridg $
 
 PORTNAME=	cmake
 # Remember to update devel/cmake-doc and devel/cmake-gui as well.
-DISTVERSION=	3.9.6
+DISTVERSION=	3.10.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://www.cmake.org/files/v${PORTVERSION:R}/
 
@@ -19,7 +20,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libuv.so:devel/libuv \
 		librhash.so:security/rhash
 
-USES=		libarchive ncurses
+USES=		compiler:c++11-lang libarchive ncurses
 
 HAS_CONFIGURE=	yes
 CONFIGURE_ENV=	MAKE=make

@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/dnsrecon/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/dns/dnsrecon/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	dnsrecon
 PORTVERSION=	0.8.9
@@ -18,7 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>=0:dns/py-dnspython@${PY_FLAVOR} \
 USE_GITHUB=	yes
 GH_ACCOUNT=	darkoperator
 
-USES=		python:2.7+ shebangfix
+USES=		python shebangfix
 NO_BUILD=	yes
 NO_ARCH=	yes
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-keystoneauth1/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-keystoneauth1/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	keystoneauth1
 PORTVERSION=	2.17.0
@@ -21,7 +21,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}iso8601>=0.1.11:devel/py-iso8601@${FLAVOR} \
 
 NO_ARCH=	yes
 
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

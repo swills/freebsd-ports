@@ -1,5 +1,5 @@
 # Created by: James O'Gorman <james@netinertia.co.uk>
-# $FreeBSD: head/sysutils/boxbackup/Makefile 450353 2017-09-22 10:48:57Z mat $
+# $FreeBSD: head/sysutils/boxbackup/Makefile 457059 2017-12-23 15:13:18Z tijl $
 
 PORTNAME=	boxbackup
 PORTVERSION=	0.11.1
@@ -15,10 +15,8 @@ LICENSE=	BSD3CLAUSE GPLv2
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE-DUAL.txt
 
-USES=		perl5 ssl tar:tgz
+USES=		autoreconf perl5 ssl tar:tgz
 GNU_CONFIGURE=	yes
-USE_AUTOTOOLS=	autoconf aclocal autoheader
-ACLOCAL_ARGS+=	-I ${WRKSRC}/infrastructure/m4
 CFLAGS+=	-I${OPENSSLINC}
 LDFLAGS+=	-L${OPENSSLLIB} -lexecinfo
 

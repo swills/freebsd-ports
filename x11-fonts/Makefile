@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 454448 2017-11-18 16:45:49Z yuri $
+# $FreeBSD: head/x11-fonts/Makefile 457785 2018-01-01 16:52:08Z jrm $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -134,6 +134,7 @@
     SUBDIR += linuxlibertine-g
     SUBDIR += lohit
     SUBDIR += manu-gothica
+    SUBDIR += meslo
     SUBDIR += mgopen
     SUBDIR += mkbold
     SUBDIR += mkbold-mkitalic
@@ -144,6 +145,7 @@
     SUBDIR += montecarlo_fonts
     SUBDIR += montserrat
     SUBDIR += moveable-type-fonts
+    SUBDIR += nerd-fonts
     SUBDIR += nexfontsel
     SUBDIR += noto
     SUBDIR += noto-lite

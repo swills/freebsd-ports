@@ -1,10 +1,10 @@
 # Created by: mbr@FreeBSD.org
-# $FreeBSD: head/emulators/open-vm-tools/Makefile 455751 2017-12-07 19:52:17Z jpaetzel $
+# $FreeBSD: head/emulators/open-vm-tools/Makefile 457485 2017-12-28 22:45:57Z jpaetzel $
 
 PORTNAME=		open-vm-tools
 PORTVERSION=		${RELEASE_VER}
 DISTVERSIONPREFIX=	stable-
-PORTREVISION=		5
+PORTREVISION=		1
 PORTEPOCH=		2
 CATEGORIES=		emulators
 
@@ -18,8 +18,8 @@ ONLY_FOR_ARCHS=		amd64 i386
 
 LIB_DEPENDS=		libmspack.so:archivers/libmspack
 
-RELEASE_VER=		10.1.10
-BUILD_VER=		6082533
+RELEASE_VER=		10.2.0
+BUILD_VER=		7253323
 
 OPTIONS_DEFINE=		DNET LIBNOTIFY OPENSSL X11
 OPTIONS_DEFAULT=	DNET LIBNOTIFY OPENSSL X11

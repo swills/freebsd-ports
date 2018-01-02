@@ -1,5 +1,5 @@
 # Created by: sten@blinkenlights.nl
-# $FreeBSD: head/dns/powerdns-recursor/Makefile 456058 2017-12-11 18:26:13Z sunpoet $
+# $FreeBSD: head/dns/powerdns-recursor/Makefile 456399 2017-12-15 15:14:11Z krion $
 
 PORTNAME=	recursor
 DISTVERSION=	4.1.0
@@ -58,4 +58,10 @@ SETUID_EXTRA_PATCHES=	${PATCHDIR}/extrapatch-setuid
 
 SUB_FILES=	pkg-message
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 1003506
+IGNORE=		no _cxa_thread_atexit() support in FreeBSD libc < 10.4
+.endif
+
+.include <bsd.port.post.mk>

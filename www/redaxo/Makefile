@@ -1,5 +1,5 @@
 # Created by: Marco Steinbach <coco@executive-computing.de>
-# $FreeBSD: head/www/redaxo/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/redaxo/Makefile 456517 2017-12-16 21:44:09Z tz $
 
 PORTNAME=	redaxo
 PORTVERSION=	4.6.1
@@ -11,6 +11,8 @@ MAINTAINER=	coco@executive-computing.de
 COMMENT=	REDAXO content management system
 
 LICENSE=	GPLv2
+
+IGNORE_WITH_PHP=	70 71 72
 
 NO_BUILD=	yes
 

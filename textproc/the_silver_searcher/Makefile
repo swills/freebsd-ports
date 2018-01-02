@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/the_silver_searcher/Makefile 448711 2017-08-25 08:54:17Z olgeni $
+# $FreeBSD: head/textproc/the_silver_searcher/Makefile 457171 2017-12-24 15:02:30Z tijl $
 
 PORTNAME=	the_silver_searcher
 PORTVERSION=	2.1.0
@@ -16,8 +16,6 @@ TEST_DEPENDS=	cram:devel/cram
 USE_GITHUB=	yes
 GH_ACCOUNT=	ggreer
 
-ACLOCAL_ARGS+=	-I ${ACLOCAL_DIR}
-AUTOMAKE_ARGS+=	--add-missing
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	LZMA_LIBS=-llzma
 CONFIGURE_ARGS+=LZMA_CFLAGS=-I/usr/include

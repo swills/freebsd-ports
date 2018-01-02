@@ -1,7 +1,7 @@
-# $FreeBSD: head/games/minecraft-server/Makefile 435529 2017-03-06 10:44:26Z woodsb02 $
+# $FreeBSD: head/games/minecraft-server/Makefile 457820 2018-01-01 23:52:56Z dbaio $
 
 PORTNAME=	minecraft-server
-PORTVERSION=	1.11.2
+PORTVERSION=	1.12.2
 CATEGORIES=	games java
 MASTER_SITES=	https://s3.amazonaws.com/Minecraft.Download/versions/${PORTVERSION}/
 DISTFILES=	minecraft_server.${PORTVERSION}.jar
@@ -45,6 +45,8 @@ CONFIG_FILES=	banned-ips.json \
 
 DAEMON_VARS=	USE_RC_SUBR=minecraft
 DAEMON_RUN_DEPENDS=	tmux:sysutils/tmux
+
+NO_ARCH=	yes
 
 do-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/${PORTNAME}

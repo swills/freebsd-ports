@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 455903 2017-12-10 17:38:46Z yuri $
+# $FreeBSD: head/graphics/Makefile 457750 2018-01-01 01:23:15Z danilo $
 #
 
     COMMENT = Graphics tools and libraries
@@ -483,6 +483,7 @@
     SUBDIR += lib3ds
     SUBDIR += libGLU
     SUBDIR += libGLw
+    SUBDIR += libQGLViewer
     SUBDIR += libafterimage
     SUBDIR += libart_lgpl
     SUBDIR += libboard
@@ -727,6 +728,7 @@
     SUBDIR += p5-Image-ObjectDetect
     SUBDIR += p5-Image-PBMlib
     SUBDIR += p5-Image-Pngslimmer
+    SUBDIR += p5-Image-Sane
     SUBDIR += p5-Image-Scale
     SUBDIR += p5-Image-Size
     SUBDIR += p5-Image-Size-FillFullSelect

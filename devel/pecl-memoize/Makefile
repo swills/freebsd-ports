@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-memoize/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/devel/pecl-memoize/Makefile 456296 2017-12-14 13:57:28Z tz $
 
 PORTNAME=	memoize
 PORTVERSION=	0.2.0
@@ -13,7 +13,7 @@ LICENSE=	PHP301
 
 USES=		php:pecl
 CONFIGURE_ARGS=	--enable-memoize
-IGNORE_WITH_PHP=	70
+IGNORE_WITH_PHP=	70 71 72
 
 OPTIONS_DEFINE=	MEMCACHED MEMORY
 OPTIONS_DEFAULT=MEMORY

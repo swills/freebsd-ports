@@ -1,9 +1,9 @@
 # Created by: Horance Chou <horance@freedom.ie.cycu.edu.tw>
-# $FreeBSD: head/devel/libffi/Makefile 448582 2017-08-22 21:14:10Z antoine $
+# $FreeBSD: head/devel/libffi/Makefile 456663 2017-12-18 17:48:43Z dim $
 
 PORTNAME=	libffi
 PORTVERSION=	3.2.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	SOURCEWARE/${PORTNAME}
 

@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/databases/py-gdbm/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/py-gdbm/Makefile 457528 2017-12-29 18:47:42Z sunpoet $
 
 PORTNAME=	gdbm
 PORTVERSION=	${PYTHON_PORTVERSION}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	databases python
 MASTER_SITES=	PYTHON/ftp/python/${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

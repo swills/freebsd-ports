@@ -1,8 +1,8 @@
 # Created by: David A. Bader <dbader@eece.unm.edu>
-# $FreeBSD: head/biology/phylip/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/biology/phylip/Makefile 457755 2018-01-01 08:40:22Z wen $
 
 PORTNAME=	phylip
-PORTVERSION=	3.696
+PORTVERSION=	3.697
 PORTEPOCH=	1
 CATEGORIES=	biology
 MASTER_SITES=	http://evolution.gs.washington.edu/phylip/download/

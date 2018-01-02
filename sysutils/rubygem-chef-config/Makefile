@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/sysutils/rubygem-chef-config/Makefile 446978 2017-07-31 15:50:30Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-chef-config/Makefile 457521 2017-12-29 18:47:00Z sunpoet $
 
 PORTNAME=	chef-config
-PORTVERSION=	13.2.20
+PORTVERSION=	13.6.4
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 

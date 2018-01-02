@@ -1,0 +1,22 @@
+# $FreeBSD: head/security/rubygem-openssl20/Makefile 456934 2017-12-21 17:42:07Z sunpoet $
+
+PORTNAME=	openssl
+PORTVERSION=	2.0.7
+CATEGORIES=	security rubygems
+MASTER_SITES=	RG
+PKGNAMESUFFIX=	20
+
+MAINTAINER=	ruby@FreeBSD.org
+COMMENT=	Ruby gem that wraps around the OpenSSL library
+
+LICENSE=	BSD2CLAUSE RUBY
+LICENSE_COMB=	dual
+LICENSE_FILE_BSD2CLAUSE=${WRKSRC}/BSDL
+LICENSE_FILE_RUBY=	${WRKSRC}/LICENSE.txt
+
+PORTSCOUT=	limit:^2\.0\.
+
+USE_RUBY=	yes
+USES=		gem ssl
+
+.include <bsd.port.mk>

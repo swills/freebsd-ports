@@ -1,5 +1,5 @@
 # Created by: Janos.Mohacsi@bsd.hu
-# $FreeBSD: head/net/beacon/Makefile 444796 2017-06-30 22:14:09Z sunpoet $
+# $FreeBSD: head/net/beacon/Makefile 457292 2017-12-26 16:28:45Z tijl $
 
 PORTNAME=	beacon
 PORTVERSION=	1.4
@@ -16,8 +16,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 WWW_DIR?=	${PREFIX}/www/
 PLIST_SUB+=	VERSION=${PORTVERSION}
 
+GNU_CONFIGURE=	yes
 USES=		perl5
-USE_AUTOTOOLS=	autoconf
 PORTDOCS=	README
 
 OPTIONS_DEFINE=	DOCS IPV6

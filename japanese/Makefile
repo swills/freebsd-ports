@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/Makefile 451552 2017-10-08 17:11:42Z pi $
+# $FreeBSD: head/japanese/Makefile 457251 2017-12-25 19:05:36Z jrm $
 #
 
     COMMENT = Japanese support
@@ -48,7 +48,6 @@
     SUBDIR += edict-fpw
     SUBDIR += edict-utf-8
     SUBDIR += edyvalue
-    SUBDIR += egg-canna
     SUBDIR += eijiro-fpw
     SUBDIR += epwutil
     SUBDIR += esecanna

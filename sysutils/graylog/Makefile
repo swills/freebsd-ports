@@ -1,5 +1,5 @@
 # Created by: Thomas Bartelmess <thomas@bartelmess.io>
-# $FreeBSD: head/sysutils/graylog/Makefile 442244 2017-05-31 17:31:52Z girgen $
+# $FreeBSD: head/sysutils/graylog/Makefile 456895 2017-12-21 09:00:35Z amdmi3 $
 
 PORTNAME=	graylog
 PORTVERSION=	2.2.3
@@ -11,6 +11,7 @@ MAINTAINER=	thomas@bartelmess.io
 COMMENT=	Tool for centralized log collection
 
 LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		tar:tgz
 USE_JAVA=	yes

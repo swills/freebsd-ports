@@ -1,15 +1,16 @@
 # Created by: Marc G. Fournier <scrappy@FreeBSD.org>
-# $FreeBSD: head/databases/postgresql10-server/Makefile 453847 2017-11-09 16:11:21Z girgen $
+# $FreeBSD: head/databases/postgresql10-server/Makefile 456862 2017-12-20 22:09:08Z girgen $
 
 DISTVERSION?=	10.1
 PKGNAMESUFFIX?= ${PORTVERSION:R}${COMPONENT}
-PORTREVISION?=	0
+PORTREVISION?=	1
 
 MAINTAINER?=	pgsql@FreeBSD.org
 
 INSTALL_DIRS?=	src/common src/timezone src/backend \
 		src/backend/utils/mb/conversion_procs \
 		src/backend/snowball src/backend/replication/libpqwalreceiver \
+		src/backend/replication/pgoutput \
 		src/bin/initdb src/bin/pg_ctl \
 		src/bin/pg_controldata src/bin/pg_resetwal src/pl \
 		src/bin/pg_basebackup src/bin/pg_archivecleanup \

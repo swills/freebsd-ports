@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/nfft/Makefile 455772 2017-12-08 06:34:39Z pi $
+# $FreeBSD: head/math/nfft/Makefile 457253 2017-12-25 20:00:04Z tijl $
 
 PORTNAME=	nfft
 PORTVERSION=	3.4.0
@@ -15,7 +15,6 @@ BUILD_DEPENDS=	bash:shells/bash
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-fftw3=${PREFIX}
 USES=		autoreconf libtool
-USE_AUTOTOOLS=	autoconf:env
 USE_LDCONFIG=	yes
 TEST_TARGET=	check
 

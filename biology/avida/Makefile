@@ -1,5 +1,5 @@
 # Created by: Jeremy <karlj000@unbc.ca>
-# $FreeBSD: head/biology/avida/Makefile 455771 2017-12-08 05:20:01Z linimon $
+# $FreeBSD: head/biology/avida/Makefile 456901 2017-12-21 10:23:19Z linimon $
 
 PORTNAME=	avida
 PORTVERSION=	2.12.4
@@ -12,11 +12,11 @@ COMMENT=	Auto-adaptive genetic system designed for ALife research
 
 LICENSE=	GPLv3
 
-BROKEN_aarch64=		invokes x86 asm
-BROKEN_armv6=		invokes x86 asm
-BROKEN_armv7=		invokes x86 asm
-BROKEN_mips=		invokes x86 asm
-BROKEN_mips64=		invokes x86 asm
+BROKEN_aarch64=		invokes x86 assembler
+BROKEN_armv6=		invokes x86 assembler
+BROKEN_armv7=		invokes x86 assembler
+BROKEN_mips=		invokes x86 assembler
+BROKEN_mips64=		invokes x86 assembler
 BROKEN_sparc64=		missing atomics implementation
 BROKEN_powerpc64=	fails to compile: sibling call optimization does not allow automatic multiple TOCs
 

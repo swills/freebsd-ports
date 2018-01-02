@@ -1,8 +1,9 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/linuxsampler/Makefile 454694 2017-11-22 17:39:01Z yuri $
+# $FreeBSD: head/audio/linuxsampler/Makefile 456940 2017-12-21 18:41:46Z yuri $
 
 PORTNAME=	linuxsampler
 DISTVERSION=	2.0.0
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://download.linuxsampler.org/packages/
 

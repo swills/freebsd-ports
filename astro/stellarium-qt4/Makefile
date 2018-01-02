@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/astro/stellarium-qt4/Makefile 444374 2017-06-26 15:28:45Z danfe $
+# $FreeBSD: head/astro/stellarium-qt4/Makefile 457050 2017-12-23 13:14:31Z danfe $
 
 PORTNAME=	stellarium
 PORTVERSION=	0.12.9
@@ -14,7 +14,7 @@ COMMENT=	3D photo-realistic sky renderer (planetarium)
 
 LICENSE=	GPLv2+
 
-CONFLICTS_INSTALL=	${PORTNAME}-0.13.*
+CONFLICTS_INSTALL=	${PORTNAME}-0.17.*
 PORTSCOUT=	limit:^0\.12\.			# track only 0.12.x (legacy)
 
 USES=		cmake gettext iconv

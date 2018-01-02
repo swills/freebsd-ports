@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/libreoffice/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/editors/libreoffice/Makefile 457068 2017-12-23 16:40:53Z tijl $
 
 .include "${.CURDIR}/Makefile.common"
 
@@ -85,6 +85,9 @@ RUN_DEPENDS=	xdg-open:devel/xdg-utils \
 DISTFILES+=	4b87018f7fff1d054939d19920b751a0-collada2gltf-master-cb1d97788a.tar.bz2:src \
 		86b1daaa438f5a7bea9a52d7b9799ac0-xmlsec1-1.2.23.tar.gz:src \
 		cppunit-1.13.2.tar.gz:src
+
+NOT_FOR_ARCHS=		aarch64 armv6 armv7
+NOT_FOR_ARCHS_REASON=	Unsupported host_cpu
 
 .if defined(PRERELEASE)
 MASTER_SITES+=	http://dev-builds.libreoffice.org/pre-releases/src/
@@ -208,7 +211,6 @@ TEST_CONFIGURE_ENABLE=	cve-tests
 WEBDAV_CONFIGURE_ENABLE=	neon
 WEBDAV_LIB_DEPENDS=	libneon.so:www/neon
 
-ACLOCAL_ARGS=	-I "${WRKSRC}/m4"
 CPPFLAGS+=	-isystem ${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 

@@ -1,9 +1,9 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/net-im/teamwords/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net-im/teamwords/Makefile 457640 2017-12-30 21:38:14Z rakuco $
 
 PORTNAME=	teamwords
 PORTVERSION=	0.2.1
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-im
 
@@ -14,7 +14,7 @@ LICENSE=	LGPL3
 
 USE_LDCONFIG=	yes
 USE_QT5=	core gui network svg linguist \
-		buildtools x11extras
+		webkit buildtools x11extras
 USES=		compiler:c++11-lang qmake tar:xz
 
 QMAKE_ARGS=	CONFIG+="configure"

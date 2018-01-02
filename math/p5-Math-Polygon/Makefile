@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/p5-Math-Polygon/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/math/p5-Math-Polygon/Makefile 457450 2017-12-28 13:41:34Z sunpoet $
 
 PORTNAME=	Math-Polygon
-PORTVERSION=	1.06
+PORTVERSION=	1.07
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

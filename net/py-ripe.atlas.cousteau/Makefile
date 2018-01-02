@@ -1,5 +1,5 @@
 # Created by: Massimiliano Stucchi <mstucchi@ripe.net>
-# $FreeBSD: head/net/py-ripe.atlas.cousteau/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-ripe.atlas.cousteau/Makefile 457647 2017-12-30 22:21:02Z antoine $
 
 PORTNAME=	ripe.atlas.cousteau
 PORTVERSION=	1.4
@@ -12,6 +12,8 @@ COMMENT=	Python wrapper around the RIPE Atlas API
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		depends on package: py27-websocket-client<0.39 - not found
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}socketio-client>=0.6.5:net/py-socketio-client@${FLAVOR} \

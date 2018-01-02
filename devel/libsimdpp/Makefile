@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/libsimdpp/Makefile 453709 2017-11-07 22:42:40Z yuri $
+# $FreeBSD: head/devel/libsimdpp/Makefile 456414 2017-12-15 19:26:41Z yuri $
 
 PORTNAME=	libsimdpp
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.0
+DISTVERSION=	2.1
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -17,5 +17,7 @@ GH_ACCOUNT=	p12tic
 NO_BUILD=	yes
 NO_ARCH=	yes
 TEST_TARGET=	check
+
+PLIST_SUB=	PORTVERSION="${PORTVERSION}"
 
 .include <bsd.port.mk>

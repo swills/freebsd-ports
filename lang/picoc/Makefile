@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/picoc/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/lang/picoc/Makefile 456672 2017-12-18 20:45:48Z linimon $
 
 PORTNAME=	picoc
 PORTVERSION=	2.1
@@ -9,6 +9,8 @@ MAINTAINER=	portmaster@bsdforge.com
 COMMENT=	Very small C interpreter for scripting
 
 LICENSE=	BSD3CLAUSE
+
+BROKEN_aarch64=		fails to link: missing sbrk
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	zsaleeba

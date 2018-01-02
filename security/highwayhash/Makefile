@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/highwayhash/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/security/highwayhash/Makefile 456719 2017-12-19 14:41:29Z linimon $
 
 PORTNAME=	highwayhash
 PORTVERSION=	g20170512
@@ -11,7 +11,8 @@ COMMENT=	Fast strong hash functions: SipHash/HighwayHash
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-ONLY_FOR_ARCHS=	aarch64 amd64 powerpc powerpc64
+BROKEN_aarch64=		fails to compile: /usr/lib/clang/5.0.0/include/mmintrin.h:47:5: use of undeclared identifier '__builtin_ia32_emms'
+ONLY_FOR_ARCHS=		aarch64 amd64 powerpc powerpc64
 ONLY_FOR_ARCHS_REASON=	Assembly is implemented only for specific architectures in highwayhash/tsc_timer.h
 
 USES=		gmake

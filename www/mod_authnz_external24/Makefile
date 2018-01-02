@@ -1,5 +1,5 @@
-# Created by: José García Juanino <jjuanino@gmail.com>
-# $FreeBSD: head/www/mod_authnz_external24/Makefile 437328 2017-03-30 21:12:43Z mat $
+# Created by: Jose Garcia Juanino <jjuanino@gmail.com>
+# $FreeBSD: head/www/mod_authnz_external24/Makefile 457367 2017-12-27 13:59:01Z mat $
 
 PORTNAME=	mod_authnz_external
 PORTVERSION=	3.3.2

@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/gimmage/Makefile 441395 2017-05-21 13:21:04Z linimon $
+# $FreeBSD: head/graphics/gimmage/Makefile 457192 2017-12-24 18:55:45Z swills $
 
 PORTNAME=	gimmage
 PORTVERSION=	0.2.3
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	graphics
 MASTER_SITES=	BERLIOS
 
@@ -13,13 +13,22 @@ COMMENT=	Simple image viewer
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libcurl.so:ftp/curl
+LIB_DEPENDS=	libcurl.so:ftp/curl \
+		libfontconfig.so:x11-fonts/fontconfig \
+		libfreetype.so:print/freetype2
 
-BROKEN=		fails to compile: ustring.h: expected ';' at end of declaration list
-
-USES=		desktop-file-utils gettext pkgconfig
-USE_GNOME=	gtkmm24
+USES=		compiler:c++11-lang desktop-file-utils gettext pkgconfig
+USE_GNOME=	gtkmm24 gdkpixbuf2
 GNU_CONFIGURE=	yes
+USE_CXXSTD=	c++11
+
+OPTIONS_DEFINE=		NLS
+NLS_USES=		gettext
+NLS_CONFIGURE_ENABLE=	gettext
+
+CXXFLAGS+=	-stdlib=libc++ -Wc++11-extensions -Wc++11-long-long \
+		-Wunused-command-line-argument -Wreturn-type \
+		-Wwritable-strings -Wlogical-op-parentheses
 CONFIGURE_ARGS=	--with-libintl-prefix=${LOCALBASE}
 
 .include <bsd.port.mk>

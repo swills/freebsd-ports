@@ -1,8 +1,8 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/mail/sympa/Makefile 455525 2017-12-04 16:53:36Z pi $
+# $FreeBSD: head/mail/sympa/Makefile 457128 2017-12-24 07:12:42Z joneum $
 
 PORTNAME=	sympa
-PORTVERSION=	6.2.22
+DISTVERSION=	6.2.24
 CATEGORIES=	mail
 
 MAINTAINER=	dgeo@centrale-marseille.fr
@@ -58,8 +58,6 @@ USES=		autoreconf cpe fakeroot perl5 shebangfix
 
 SHEBANG_FILES=	po/sympa/xgettext.pl \
 		po/sympa/add-lang.pl \
-		src/bin/find_missing_messages.pl \
-		src/bin/arcrepair.pl
 
 GNU_CONFIGURE=	yes
 ICONSDIR?=	www/icons

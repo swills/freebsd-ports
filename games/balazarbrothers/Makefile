@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/balazarbrothers/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/games/balazarbrothers/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	balazarbrothers
 PORTVERSION=	0.3.1
@@ -15,6 +15,8 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN=		conflicting dependencies
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 LIB_DEPENDS=	libcal3d.so:graphics/cal3d \
 		libfreetype.so:print/freetype2

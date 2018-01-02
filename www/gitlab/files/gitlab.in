@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD: head/www/gitlab/files/gitlab.in 449793 2017-09-13 14:15:08Z tz $
+# $FreeBSD: head/www/gitlab/files/gitlab.in 456116 2017-12-12 10:54:12Z tz $
 
 ### BEGIN INIT INFO
 # Provides:          gitlab

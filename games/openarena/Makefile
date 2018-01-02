@@ -1,10 +1,9 @@
 # Created by: Josh Tolbert
-# $FreeBSD: head/games/openarena/Makefile 450473 2017-09-23 21:11:51Z adamw $
+# $FreeBSD: head/games/openarena/Makefile 457468 2017-12-28 18:38:26Z amdmi3 $
 
 PORTNAME=	openarena
-DISTVERSION=	${GAMEVERSION}.s${SVNREVISION}
-PORTREVISION=	3
-PORTEPOCH=	1
+PORTVERSION=	${GAMEVERSION}.s${SVNREVISION}
+PORTEPOCH=	2
 MASTER_SITES=	SF/oarena/src \
 		http://files.poulsander.com/~poul19/public_files/oa/dev088/
 DISTNAME=	${PORTNAME}-engine-source-${GAMEVERSION}

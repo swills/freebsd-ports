@@ -1,5 +1,5 @@
 # Created by: Sunagawa Koji <koj@ofug.net>
-# $FreeBSD: head/japanese/mailman/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/japanese/mailman/Makefile 457194 2017-12-24 19:53:11Z tijl $
 
 PORTNAME=	mailman
 PORTVERSION=	2.1.14.j7
@@ -21,10 +21,10 @@ CONFLICTS=	mailman-2.1.*
 
 PORTSCOUT=	limit:.*\.j\d+$$
 
-USE_AUTOTOOLS=	autoconf
-USES=		gettext python:2 tar:tgz
+USES=		autoreconf gettext python:2 tar:tgz
 USE_RC_SUBR=	mailman
 
+GNU_CONFIGURE=	yes
 GNU_CONFIGURE_PREFIX=	${MAILMANDIR}
 CONFIGURE_ARGS+=--with-python=${PYTHON_CMD} \
 		--with-username=${MM_USERNAME} \

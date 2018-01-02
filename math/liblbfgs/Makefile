@@ -1,5 +1,5 @@
 # Created by: Hung-Yi Chen <gaod@hychen.org>
-# $FreeBSD: head/math/liblbfgs/Makefile 396103 2015-09-04 16:02:16Z mat $
+# $FreeBSD: head/math/liblbfgs/Makefile 457252 2017-12-25 19:58:10Z tijl $
 
 PORTNAME=	liblbfgs
 PORTVERSION=	1.10
@@ -17,7 +17,6 @@ USES=		libtool
 USE_GITHUB=	yes
 GH_ACCOUNT=	chokkan
 GNU_CONFIGURE=	yes
-USE_AUTOTOOLS=	autoconf:env
 
 OPTIONS_DEFINE=	OPTIMIZED DOCS
 OPTIMIZED_DESC=	SSE2 optimization routines

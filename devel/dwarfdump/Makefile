@@ -1,5 +1,5 @@
 # Created by: joerg@FreeBSD.org
-# $FreeBSD: head/devel/dwarfdump/Makefile 431064 2017-01-10 03:23:50Z junovitch $
+# $FreeBSD: head/devel/dwarfdump/Makefile 457497 2017-12-29 09:00:41Z amdmi3 $
 
 PORTNAME=	dwarfdump
 PORTVERSION=	20161124
@@ -16,9 +16,8 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libdwarf.a:devel/libdwarf
 
 WRKSRC=		${WRKDIR}/dwarf-${PORTVERSION}/dwarfdump
 
+USES=		localbase:ldflags
 GNU_CONFIGURE=	yes
-LDFLAGS+=	-L${LOCALBASE}/lib
-CFLAGS+=	-I${LOCALBASE}/include
 
 PLIST_FILES=	bin/dwarfdump man/man1/dwarfdump.1.gz
 
@@ -38,6 +37,6 @@ post-patch:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/dwarfdump ${STAGEDIR}${PREFIX}/bin
-	${INSTALL_DATA} ${WRKSRC}/dwarfdump.1 ${STAGEDIR}${MANPREFIX}/man/man1
+	${INSTALL_MAN} ${WRKSRC}/dwarfdump.1 ${STAGEDIR}${MANPREFIX}/man/man1
 
 .include <bsd.port.post.mk>

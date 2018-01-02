@@ -1,8 +1,8 @@
 # Created by: will
-# $FreeBSD: head/math/p5-Math-GMP/Makefile 444266 2017-06-25 15:01:46Z sunpoet $
+# $FreeBSD: head/math/p5-Math-GMP/Makefile 456747 2017-12-19 18:20:37Z sunpoet $
 
 PORTNAME=	Math-GMP
-PORTVERSION=	2.15
+PORTVERSION=	2.16
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

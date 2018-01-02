@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/audio/mbrolavox/Makefile 444839 2017-07-01 20:56:52Z antoine $
+# $FreeBSD: head/audio/mbrolavox/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	mbrolavox
 PORTVERSION=	3.0.1
@@ -12,6 +12,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Voices for MBROLA voice synthesizer
 
 BROKEN=		unfetchable
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 USES=		zip:infozip
 NO_BUILD=	yes

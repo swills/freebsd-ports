@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/fb303/Makefile 455849 2017-12-09 12:12:01Z antoine $
+# $FreeBSD: head/devel/fb303/Makefile 457064 2017-12-23 16:13:22Z tijl $
 
 PORTNAME=	fb303
 PORTVERSION=	${THRIFT_PORTVERSION}
@@ -17,12 +17,10 @@ LICENSE=	APACHE20
 LIB_DEPENDS=	libthrift.so:devel/thrift-cpp
 BUILD_DEPENDS=	thrift:devel/thrift
 
-ACLOCAL_ARGS=	-I ./aclocal
-AUTOMAKE_ARGS=	-a
 CONFIGURE_ARGS=	PY_PREFIX="${PREFIX}"
-USE_AUTOTOOLS=	autoconf autoheader:env aclocal automake
 
-USES=		compiler gmake perl5 python:2.7
+GNU_CONFIGURE=	yes
+USES=		autoreconf compiler gmake perl5 python:2.7
 USE_PERL5=	run
 WRKSRC=		${WRKDIR}/${DISTNAME}/contrib/fb303
 

@@ -1,5 +1,5 @@
 # Created by: Florent Thoumie <flz@xbsd.org>
-# $FreeBSD: head/emulators/raine/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/emulators/raine/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	raine
 PORTVERSION=	0.51.9
@@ -14,6 +14,8 @@ COMMENT=	Arcade Emulator for M68000, M68020 and Z80 based hardware
 LICENSE=	ART10
 
 BROKEN=		fails to link
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 BUILD_DEPENDS=	nasm>0:devel/nasm
 LIB_DEPENDS=	libpng.so:graphics/png

@@ -1,8 +1,8 @@
 # Created by: Johann Visagie <wjv@FreeBSD.org>
-# $FreeBSD: head/mail/exim-doc-html/Makefile 435697 2017-03-08 16:46:45Z vsevolod $
+# $FreeBSD: head/mail/exim-doc-html/Makefile 457099 2017-12-23 18:35:41Z vsevolod $
 
 PORTNAME=	exim
-PORTVERSION=	4.89
+PORTVERSION=	4.90
 CATEGORIES=	mail
 MASTER_SITES=	EXIM
 MASTER_SITE_SUBDIR=	/exim4/ \

@@ -1,7 +1,7 @@
-# $FreeBSD: head/benchmarks/stress-ng/Makefile 455027 2017-11-28 09:42:17Z pizzamig $
+# $FreeBSD: head/benchmarks/stress-ng/Makefile 457443 2017-12-28 10:51:49Z pizzamig $
 
 PORTNAME=	stress-ng
-PORTVERSION=	0.09.04
+PORTVERSION=	0.09.07
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://kernel.ubuntu.com/~cking/tarballs/stress-ng/
 
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_aarch64=	Fails to link: missing sbrk
 
-USES=		gmake compiler:c11
+USES=		compiler:c11 gmake tar:xz
 ALL_TARGET=	# empty
 
 PLIST_FILES=	bin/stress-ng man/man1/stress-ng.1.gz

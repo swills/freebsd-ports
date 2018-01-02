@@ -1,17 +1,18 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/finance/R-cran-timeDate/Makefile 378080 2015-01-28 19:30:09Z dbn $
+# $FreeBSD: head/finance/R-cran-timeDate/Makefile 456596 2017-12-18 07:13:54Z dbn $
 
 PORTNAME=	timeDate
-PORTVERSION=	3012.100
+DISTVERSION=	3042.101
 CATEGORIES=	finance
-DISTNAME=	${PORTNAME}_${PORTVERSION}
+DISTNAME=	${PORTNAME}_${DISTVERSION}
 
 MAINTAINER=	dbn@FreeBSD.org
-COMMENT=	Chronological and Calendar Objects
+COMMENT=	Rmetrics - Chronological and Calendar Objects
 
-LICENSE=	GPLv2 GPLv3
-LICENSE_COMB=	dual
+LICENSE=	GPLv2+
 
-USES=	cran:auto-plist
+TEST_DEPENDS=	R-cran-RUnit>0:devel/R-cran-RUnit
+
+USES=		cran:auto-plist
 
 .include <bsd.port.mk>

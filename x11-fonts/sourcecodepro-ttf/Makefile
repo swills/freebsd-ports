@@ -1,5 +1,5 @@
 # Created by: Masaki TAGAWA <masaki@club.kyutech.ac.jp>
-# $FreeBSD: head/x11-fonts/sourcecodepro-ttf/Makefile 448548 2017-08-22 16:40:08Z sunpoet $
+# $FreeBSD: head/x11-fonts/sourcecodepro-ttf/Makefile 456805 2017-12-20 14:37:23Z sunpoet $
 
 PORTNAME=	sourcecodepro
 PORTVERSION=	2.030
@@ -12,6 +12,8 @@ COMMENT=	Set of fonts by Adobe designed for coders
 
 LICENSE=	OFL11
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+PORTSCOUT=	skipv:variable-fonts
 
 NO_ARCH=	yes
 NO_BUILD=	yes

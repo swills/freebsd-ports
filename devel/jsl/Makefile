@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/jsl/Makefile 354712 2014-05-21 06:46:59Z delphij $
+# $FreeBSD: head/devel/jsl/Makefile 456772 2017-12-20 02:08:27Z emaste $
 
 PORTNAME=	jsl
 PORTVERSION=	0.3.0
@@ -19,6 +19,7 @@ MAKEFILE=	Makefile.ref
 MAKE_ARGS=	OS_CFLAGS="-DXP_UNIX -DHAVE_VA_COPY -DVA_COPY=va_copy"
 CFLAGS+=	-fPIC
 MAKE_JOBS_UNSAFE=	yes
+LLD_UNSAFE=	yes
 
 .include <bsd.port.pre.mk>
 

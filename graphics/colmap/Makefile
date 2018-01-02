@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/colmap/Makefile 455621 2017-12-05 20:52:57Z jbeich $
+# $FreeBSD: head/graphics/colmap/Makefile 457776 2018-01-01 13:42:54Z jbeich $
 
 PORTNAME=	colmap
 DISTVERSION=	3.3
@@ -30,7 +30,7 @@ USE_GL=		gl glew
 USE_QT5=	qmake_build buildtools_build core gui opengl_build widgets
 EXCLUDE=	SQLite
 EXTRACT_AFTER_ARGS=	${EXCLUDE:S,^,--exclude src/ext/,}
-CMAKE_ARGS=	-DBOOST_STATIC=off -DCUDA_ENABLED=off
+CMAKE_OFF=	BOOST_STATIC CUDA_ENABLED
 CFLAGS+=	-DVL_OS_LINUX=1
 CXXFLAGS+=	-D_GLIBCXX_USE_C99 -D_GLIBCXX_USE_C99_MATH_TR1 \
 		-D_DECLARE_C99_LDBL_MATH # XXX ports/193528

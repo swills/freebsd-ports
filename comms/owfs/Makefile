@@ -1,5 +1,5 @@
 # Created by: Johan Strom <johan@stromnet.se>
-# $FreeBSD: head/comms/owfs/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/comms/owfs/Makefile 456845 2017-12-20 19:34:11Z bapt $
 
 PORTNAME=	owfs
 PORTVERSION=	3.1p1
@@ -100,8 +100,8 @@ PLIST_SUB+=			OWNETPYTHON="@comment "
 
 # If Perl, Python or PHP is requested, enable SWIG
 .if ${PORT_OPTIONS:MOWPERL} || ${PORT_OPTIONS:MOWPYTHON} || ${PORT_OPTIONS:MOWPHP}
-BUILD_DEPENDS+=			${LOCALBASE}/bin/swig2.0:devel/swig20
-CONFIGURE_ARGS+=		--enable-swig SWIG=${LOCALBASE}/bin/swig2.0
+BUILD_DEPENDS+=			swig3.0:devel/swig30
+CONFIGURE_ARGS+=		--enable-swig SWIG=${LOCALBASE}/bin/swig3.0
 .else
 CONFIGURE_ARGS+=		--disable-swig
 .endif

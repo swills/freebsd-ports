@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/databases/rubygem-mysql/Makefile 444337 2017-06-26 03:24:13Z sunpoet $
+# $FreeBSD: head/databases/rubygem-mysql/Makefile 456326 2017-12-14 18:06:55Z swills $
 
 PORTNAME=	mysql
 PORTVERSION=	2.9.1
@@ -11,6 +11,8 @@ COMMENT=	MySQL API module for Ruby
 
 LICENSE=	GPLv2 RUBY
 LICENSE_COMB=	dual
+
+BROKEN_RUBY24=	yes
 
 USE_RUBY=	yes
 USES=		gem mysql

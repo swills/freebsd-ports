@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/openbsc/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net/openbsc/Makefile 457170 2017-12-24 14:59:56Z tijl $
 
 PORTNAME=	openbsc
 PORTVERSION=	0.15.0
@@ -22,7 +22,6 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/${PORTNAME}
 
 USES=		autoreconf compiler:c11 gmake pathfix pkgconfig ssl
 GNU_CONFIGURE=	yes
-AUTOMAKE_ARGS=	--gnu --add-missing --copy
 CONFIGURE_ARGS+=	CFLAGS="-I${LOCALBASE}/include"
 
 OPTIONS_DEFINE=	BSC NAT SQLITE

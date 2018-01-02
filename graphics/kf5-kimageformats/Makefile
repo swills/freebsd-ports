@@ -1,8 +1,7 @@
-# $FreeBSD: head/graphics/kf5-kimageformats/Makefile 455244 2017-12-01 01:58:23Z mandree $
+# $FreeBSD: head/graphics/kf5-kimageformats/Makefile 456349 2017-12-14 20:15:52Z tcberner $
 
 PORTNAME=	kimageformats
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
-PORTREVISION=	2
 CATEGORIES=	graphics kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

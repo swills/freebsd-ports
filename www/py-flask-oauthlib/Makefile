@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-flask-oauthlib/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-flask-oauthlib/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	Flask-OAuthlib
 PORTVERSION=	0.9.4
@@ -17,7 +17,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>0:www/py-flask@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests-oauthlib>0:www/py-requests-oauthlib@${FLAVOR}
 
 NO_ARCH=	yes
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

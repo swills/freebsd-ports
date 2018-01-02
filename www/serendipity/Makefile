@@ -1,5 +1,5 @@
 # Created by: babak@farrokhi.net
-# $FreeBSD: head/www/serendipity/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/serendipity/Makefile 456517 2017-12-16 21:44:09Z tz $
 
 PORTNAME=	serendipity
 PORTVERSION=	2.1.1
@@ -11,6 +11,8 @@ COMMENT=	PHP based weblog software
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/docs/LICENSE
+
+IGNORE_WITH_PHP=	70 71 72
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 NO_BUILD=	YES

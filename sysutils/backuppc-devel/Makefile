@@ -1,8 +1,9 @@
 # Created by: Alexander Moisseev <moiseev@mezonplus.ru>
-# $FreeBSD: head/sysutils/backuppc-devel/Makefile 442714 2017-06-05 23:25:40Z sunpoet $
+# $FreeBSD: head/sysutils/backuppc-devel/Makefile 457024 2017-12-23 07:03:21Z antoine $
 
 PORTNAME=	backuppc
 PORTVERSION=	4.1.2.20170424
+PORTREVISION=	1
 CATEGORIES=	sysutils
 PKGNAMESUFFIX=	-devel
 

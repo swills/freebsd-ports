@@ -1,5 +1,5 @@
 # Created by: James O'Gorman <james@netinertia.co.uk>
-# $FreeBSD: head/sysutils/boxbackup-devel/Makefile 421663 2016-09-10 04:41:30Z marino $
+# $FreeBSD: head/sysutils/boxbackup-devel/Makefile 457060 2017-12-23 15:28:29Z tijl $
 
 PORTNAME=	boxbackup
 PORTVERSION=	0.11.r${SVNVERSION:C/^[0-9\.]+_[a-z]+_([0-9]+)/\1/}
@@ -17,10 +17,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE-DUAL.txt
 
 SVNVERSION=	0.11_trunk_2979
 
-USES=		perl5 ssl tar:tgz
+USES=		autoreconf perl5 ssl tar:tgz
 GNU_CONFIGURE=	yes
-USE_AUTOTOOLS=	autoconf aclocal autoheader
-ACLOCAL_ARGS+=	-I ${WRKSRC}/infrastructure/m4
 CFLAGS+=	-I${OPENSSLINC}
 LDFLAGS+=	-L${OPENSSLLIB}
 

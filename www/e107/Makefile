@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/e107/Makefile 454246 2017-11-15 13:55:16Z wen $
+# $FreeBSD: head/www/e107/Makefile 457361 2017-12-27 11:49:35Z wen $
 
 PORTNAME=	e107
-PORTVERSION=	2.1.6
+PORTVERSION=	2.1.7
 CATEGORIES=	www
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}%20v${PORTVERSION}
 DISTNAME=	${PORTNAME}_${PORTVERSION}_full

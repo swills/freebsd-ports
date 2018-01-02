@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/mysql-proxy/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/databases/mysql-proxy/Makefile 457659 2017-12-31 01:02:47Z swills $
 
 PORTNAME=	mysql-proxy
 PORTVERSION=	0.8.4
@@ -7,8 +7,11 @@ PORTREVISION=	5
 CATEGORIES=	databases
 MASTER_SITES=	MYSQL/MySQL-Proxy
 
-MAINTAINER=	swills@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Monitor, analyze, or transform the communication of MySQL
+
+DEPRECATED=	No longer maintained and not recommended for production use
+EXPIRATION_DATE=	2018-01-30
 
 LICENSE=	GPLv2
 

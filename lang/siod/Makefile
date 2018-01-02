@@ -1,5 +1,5 @@
 # Created by: jkoshy
-# $FreeBSD: head/lang/siod/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/lang/siod/Makefile 457651 2017-12-30 22:33:48Z krion $
 
 PORTNAME=	siod
 PORTVERSION=	3.4
@@ -16,6 +16,7 @@ BROKEN_armv7=		fails to link: ld: siod: hidden symbol `__aeabi_uidivmod' in /usr
 BROKEN_mips64=		fails to link: final link failed: Nonrepresentable section on output
 
 USE_LDCONFIG=	yes
+LLD_UNSAFE=	yes
 
 NO_WRKSUBDIR=	yes
 MAKEFILE=	makefile

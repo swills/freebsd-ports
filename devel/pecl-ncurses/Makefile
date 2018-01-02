@@ -1,5 +1,5 @@
 # Created by: Jille Timmermans <jille@quis.cx>
-# $FreeBSD: head/devel/pecl-ncurses/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/devel/pecl-ncurses/Makefile 456296 2017-12-14 13:57:28Z tz $
 
 PORTNAME=	ncurses
 PORTVERSION=	1.0.2
@@ -12,6 +12,6 @@ COMMENT=	PECL extension for ncurses
 LICENSE=	PHP301
 
 USES=		php:pecl,cli ncurses
-IGNORE_WITH_PHP=70 71
+IGNORE_WITH_PHP=70 71 72
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Vassili Tchersky <vt@bsdjeunz.org>
-# $FreeBSD: head/net/6tunnel/Makefile 385640 2015-05-07 17:26:05Z mat $
+# $FreeBSD: head/net/6tunnel/Makefile 457254 2017-12-25 20:09:07Z tijl $
 
 PORTNAME=	6tunnel
 DISTVERSION=	0.11rc2.20130525
@@ -13,7 +13,7 @@ COMMENT=	TCP proxy for applications that do not speak IPv6
 LICENSE=	GPLv2
 
 GNU_CONFIGURE=	yes
-USE_AUTOTOOLS=	autoconf
+USES=		autoreconf
 ALL_TARGET=	default
 
 USE_GITHUB=	yes

@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/percona55-server/Makefile 447926 2017-08-14 05:37:21Z vd $
+# $FreeBSD: head/databases/percona55-server/Makefile 456485 2017-12-16 20:16:05Z flo $
 
 PORTNAME?=	percona
-DISTVERSION=	5.5.54-38.6
-PORTREVISION?=	2
+DISTVERSION=	5.5.58-38.10
+PORTREVISION?=	0
 CATEGORIES=	databases ipv6
 MASTER_SITES=	http://www.percona.com/downloads/Percona-Server-5.5/Percona-Server-${DISTVERSION}/source/tarball/
 PKGNAMESUFFIX?=	55-server
@@ -10,6 +10,9 @@ DISTNAME=	percona-server-${DISTVERSION}
 
 MAINTAINER=	flo@FreeBSD.org
 COMMENT?=	Multithreaded SQL database (server)
+
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 SLAVEDIRS=	databases/percona55-client
 USES=		bison cmake:noninja readline shebangfix

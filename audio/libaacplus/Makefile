@@ -1,5 +1,5 @@
 # Created by: takefu <takefu@airport.fm>
-# $FreeBSD: head/audio/libaacplus/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/audio/libaacplus/Makefile 457169 2017-12-24 14:55:15Z tijl $
 
 PORTNAME=	libaacplus
 PORTVERSION=	2.0.2
@@ -31,8 +31,6 @@ USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 MAKE_JOBS_UNSAFE=	yes
 INSTALL_TARGET=	install-strip
-
-AUTOMAKE_ARGS=	--add-missing
 
 OPTIONS_DEFINE=	FFTW3
 OPTIONS_DEFAULT=FFTW3

@@ -1,5 +1,5 @@
 # Created by: kmoore@FreeBSD.org
-# $FreeBSD: head/sysutils/grub2-pcbsd/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/sysutils/grub2-pcbsd/Makefile 457089 2017-12-23 17:22:10Z tijl $
 
 PORTNAME=	grub2-pcbsd
 PORTVERSION=	2.02q
@@ -22,9 +22,8 @@ WRKSRC=		${WRKDIR}/grub-2.02
 CONFLICTS=	grub-0* grub2-2*
 SSP_UNSAFE=	yes
 USE_GCC=	yes
-ACLOCAL_ARGS=	-Im4
 GNU_CONFIGURE=	yes
-USES=		autoreconf bison cpe gettext gmake makeinfo python tar:xz
+USES=		autoreconf:build bison cpe gettext gmake makeinfo python tar:xz
 ONLY_FOR_ARCHS=	i386 amd64
 INFO=		grub grub-dev
 MAKE_JOBS_UNSAFE=	yes

@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/security/p5-Net-SinFP/Makefile 451826 2017-10-12 08:11:03Z sunpoet $
+# $FreeBSD: head/security/p5-Net-SinFP/Makefile 456900 2017-12-21 09:31:25Z linimon $
 
 PORTNAME?=	Net-SinFP
 PORTVERSION=	2.09
@@ -27,6 +27,9 @@ COMMENT=	Full operating system stack fingerprinting suite
 LICENSE=	ART10
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+NOT_FOR_ARCHS=		powerpc powerpc64 sparc64
+NOT_FOR_ARCHS_REASON=	does not support big-endian architectures
+
 .if ${PORTNAME} == "Net-SinFP"
 PKGNAMEPREFIX=	p5-
 
@@ -43,8 +46,5 @@ INSTALL_TARGET=	pure_install
 post-patch:
 	@${REINPLACE_CMD} -e 's/.*EXE_FILES.*//' ${WRKSRC}/${CONFIGURE_SCRIPT}
 .endif
-
-ONLY_FOR_ARCHS=		i386 amd64
-ONLY_FOR_ARCHS_REASON=	Big endian architectures not supported yet
 
 .include <bsd.port.mk>

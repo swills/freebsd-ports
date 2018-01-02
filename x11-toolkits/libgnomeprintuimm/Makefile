@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/libgnomeprintuimm/Makefile 440598 2017-05-10 21:45:26Z antoine $
+# $FreeBSD: head/x11-toolkits/libgnomeprintuimm/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	libgnomeprintuimm
 PORTVERSION=	2.5.2
@@ -12,6 +12,8 @@ MAINTAINER=	bland@FreeBSD.org
 COMMENT=	C++ wrappers for the GNOME print support library
 
 BROKEN=		fails to build
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 LIB_DEPENDS=	libgtkmm-2.4.so:x11-toolkits/gtkmm24 \
 		libgnomeprintmm-2.5.so:print/libgnomeprintmm

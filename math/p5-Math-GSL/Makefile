@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-GSL/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/math/p5-Math-GSL/Makefile 457176 2017-12-24 15:41:58Z danfe $
 
 PORTNAME=	Math-GSL
 PORTVERSION=	0.39
@@ -13,8 +13,6 @@ COMMENT=	Perl interface to GNU Scientific Library
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
-
-BROKEN_sparc64=	does not compile on sparc64
 
 BUILD_DEPENDS=	p5-PkgConfig>=0.07720:devel/p5-PkgConfig
 LIB_DEPENDS=	libgsl.so:math/gsl

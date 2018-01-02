@@ -1,9 +1,9 @@
 # Created by: Michael Vasilenko <acid@stu.cn.ua>
-# $FreeBSD: head/www/elinks/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/www/elinks/Makefile 457024 2017-12-23 07:03:21Z antoine $
 
 PORTNAME=	elinks
 DISTVERSION=	0.11.7
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	www
 MASTER_SITES=	http://elinks.or.cz/download/
 

@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-odfpy/Makefile 444334 2017-06-26 02:19:13Z wen $
+# $FreeBSD: head/devel/py-odfpy/Makefile 456458 2017-12-16 06:14:14Z wen $
 
 PORTNAME=	odfpy
-PORTVERSION=	1.3.5
+PORTVERSION=	1.3.6
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP \
 		http://opendocumentfellowship.com/files/

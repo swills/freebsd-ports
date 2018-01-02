@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@freebsd.org>
-# $FreeBSD: head/www/rubygem-puma2/Makefile 440136 2017-05-04 23:48:03Z sunpoet $
+# $FreeBSD: head/www/rubygem-puma2/Makefile 456423 2017-12-15 23:51:41Z sunpoet $
 
 PORTNAME=	puma
 PORTVERSION=	2.16.0
@@ -12,6 +12,9 @@ COMMENT=	Fast, multithreaded and highly concurrent ruby web server
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	Use www/rubygem-puma instead
+EXPIRATION_DATE=2018-01-31
 
 PORTSCOUT=	limit:^2\.
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-turbolinks-classic/Makefile 456019 2017-12-11 10:45:03Z sunpoet $
+# $FreeBSD: head/www/rubygem-turbolinks-classic/Makefile 456164 2017-12-12 13:35:33Z sunpoet $
 
 PORTNAME=	turbolinks
 PORTVERSION=	2.5.4
@@ -13,6 +13,9 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
 RUN_DEPENDS?=	rubygem-coffee-rails4>=4.0.1:devel/rubygem-coffee-rails4
+
+DEPRECATED=	Use www/rubygem-turbolinks instead
+EXPIRATION_DATE=2018-01-31
 
 PORTSCOUT=	limit:^2\.5
 

@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/net/libproxy-python/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/libproxy-python/Makefile 456126 2017-12-12 12:40:15Z antoine $
 #    $MCom: ports/net/libproxy-python/Makefile,v 1.1 2011/01/12 13:10:54 kwm Exp $
 
 PORTREVISION=	0
@@ -18,7 +18,7 @@ PLIST=		${.CURDIR}/pkg-plist
 INSTALL_WRKSRC=	${CONFIGURE_WRKSRC}/bindings/python
 NO_ARCH=	yes
 NO_BUILD=	yes
-USES=		python
+USES=		python:2.7
 
 LIBPROXY_SLAVE=	python
 

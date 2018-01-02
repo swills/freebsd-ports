@@ -1,5 +1,5 @@
 # Created by: Hirohisa Yamaguchi <umq@ueo.co.jp>
-# $FreeBSD: head/security/axTLS/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/axTLS/Makefile 456801 2017-12-20 14:21:58Z bapt $
 
 PORTNAME=	axTLS
 PORTVERSION=	1.4.9
@@ -46,7 +46,8 @@ STAGE=		${WRKSRC}/_stage
 WITH_HTTP_PORT?=	80
 WITH_SSL_PORT?=		443
 
-PERL_BUILD_DEPENDS=	swig:devel/swig13
+PERL_BUILD_DEPENDS=	swig3.0:devel/swig30
+PERL_BINARY_ALIAS=	swig=swig3.0
 PERL_USES=	perl5
 DOCS_BUILD_DEPENDS=	doxygen:devel/doxygen
 

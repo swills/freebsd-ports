@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/asterisk13/Makefile 455318 2017-12-01 22:42:08Z madpilot $
+# $FreeBSD: head/net/asterisk13/Makefile 457376 2017-12-27 15:55:01Z tijl $
 
 PORTNAME=	asterisk
-PORTVERSION=	13.18.3
+PORTVERSION=	13.18.5
 CATEGORIES=	net
 MASTER_SITES=	http://downloads.asterisk.org/pub/telephony/%SUBDIR%/:DEFAULT,g729
 MASTER_SITE_SUBDIR=	asterisk/ \
@@ -160,11 +160,6 @@ ODBC_CONFIGURE_WITH=	unixodbc
 ODBC_CONFIGURE_ON=	--with-ltdl
 ODBC_LIB_DEPENDS=	libodbc.so:databases/unixODBC \
 			libltdl.so:devel/libltdl
-
-OOH323_CPPFLAGS=	-I${LOCALBASE}/include/openh323
-OOH323_LIB_DEPENDS=     libpt_r.so:devel/pwlib \
-			libh323_r.so:net/openh323
-OOH323_MAKE_ENV=	OPENH323DIR=${LOCALBASE}/share/openh323
 
 PGSQL_CONFIGURE_WITH=	postgres
 PGSQL_USES=		pgsql

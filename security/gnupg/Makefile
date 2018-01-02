@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/gnupg/Makefile 454661 2017-11-22 02:04:36Z adamw $
+# $FreeBSD: head/security/gnupg/Makefile 456878 2017-12-21 01:16:14Z adamw $
 
 PORTNAME=	gnupg
-PORTVERSION=	2.2.3
+PORTVERSION=	2.2.4
 CATEGORIES=	security
 MASTER_SITES=	GNUPG
 
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libassuan.so:security/libassuan \
 		libgpg-error.so:security/libgpg-error \
 		libksba.so:security/libksba \
 		libnpth.so:devel/npth
-BUILD_DEPENDS=	libassuan>=2.4.3:security/libassuan \
+BUILD_DEPENDS=	libassuan>=2.5.1:security/libassuan \
 		libgpg-error>=1.16:security/libgpg-error
 RUN_DEPENDS=	pinentry:security/pinentry
 

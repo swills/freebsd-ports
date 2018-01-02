@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/swift/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/lang/swift/Makefile 457248 2017-12-25 19:01:08Z tijl $
 
 PORTNAME=	swift
 PORTVERSION=	3.1.1
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/swift/LICENSE.txt
 
 BUILD_DEPENDS=	cmake:devel/cmake \
 		bash:shells/bash \
-		swig:devel/swig13 \
+		swig3.0:devel/swig30 \
 		python:lang/python \
 		sphinx-build:textproc/py-sphinx \
 		binutils>=2.25.1:devel/binutils
@@ -25,6 +25,7 @@ LIB_DEPENDS=	libicudata.so:devel/icu \
 
 REL_SNAP=	2017-04-22-a
 USE_GITHUB=	yes
+BINARY_ALIAS=	swig=swig3.0
 
 GH_ACCOUNT=	apple:DEFAULT,llvm,clang,dispatch,lldb,cmark,llbuild,swiftpm,xctest,xcfound
 GH_PROJECT=	swift:DEFAULT swift-llvm:llvm swift-clang:clang swift-lldb:lldb \
@@ -39,7 +40,6 @@ GH_SUBDIR=	llvm:llvm clang:clang lldb:lldb cmark:cmark llbuild:llbuild \
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 USES=		autoreconf:build compiler:c++14-lang libtool localbase:ldflags iconv libedit ninja perl5 pkgconfig sqlite
-USE_AUTOTOOLS=	autoconf:env
 
 USE_GNOME=	libxml2
 USE_LDCONFIG=	yes

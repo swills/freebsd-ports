@@ -1,5 +1,5 @@
 # Created by: Ashish Shukla <wahjava@gmail.com>
-# $FreeBSD: head/x11/libxcb/Makefile 437228 2017-03-29 20:05:09Z rezny $
+# $FreeBSD: head/x11/libxcb/Makefile 457502 2017-12-29 09:25:58Z antoine $
 
 PORTNAME=	libxcb
 PORTVERSION=	1.12
@@ -21,7 +21,7 @@ RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/pthread-stubs.pc:devel/libpthread-st
 CONFIGURE_ARGS+=	--disable-build-docs --without-doxygen --enable-xinput
 
 XORG_CAT=	lib
-USES=		cpe gmake python:2.7+,build
+USES=		cpe gmake python:build
 USE_GNOME=	libxslt:build
 USE_XORG=	xau xdmcp
 INSTALL_TARGET=	install-strip

@@ -1,8 +1,8 @@
 # Created by: rpsfa@rit.edu
-# $FreeBSD: head/devel/rubygem-devise-rails50/Makefile 447386 2017-08-05 03:25:17Z jrm $
+# $FreeBSD: head/devel/rubygem-devise-rails50/Makefile 457619 2017-12-30 18:17:14Z sunpoet $
 
 PORTNAME=	devise
-PORTVERSION=	4.3.0
+PORTVERSION=	4.4.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
 RUN_DEPENDS=	rubygem-bcrypt>=3.0:security/rubygem-bcrypt \
 		rubygem-orm_adapter>=0.1:devel/rubygem-orm_adapter \
-		rubygem-railties50>0:www/rubygem-railties50 \
+		rubygem-railties50>=4.1.0:www/rubygem-railties50 \
 		rubygem-responders-rails50>=0:www/rubygem-responders-rails50 \
 		rubygem-warden>=1.2.3:devel/rubygem-warden
 

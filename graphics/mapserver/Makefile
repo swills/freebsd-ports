@@ -1,5 +1,5 @@
 # Created by: Douglas K. Rand <rand@meridian-enviro.com>
-# $FreeBSD: head/graphics/mapserver/Makefile 455103 2017-11-29 12:26:15Z wen $
+# $FreeBSD: head/graphics/mapserver/Makefile 456845 2017-12-20 19:34:11Z bapt $
 
 PORTNAME=		mapserver
 PORTVERSION=		7.0.7
@@ -44,7 +44,8 @@ WCS_DESC=		WCS Server support
 
 .if ${PORT_OPTIONS:MPYTHON}
 USES+=			python:2
-BUILD_DEPENDS+=		swig2.0:devel/swig20
+BUILD_DEPENDS+=		swig3.0:devel/swig30
+BINARY_ALIAS=		swig=swig3.0
 CMAKE_ARGS+=		-DWITH_PYTHON=yes
 PLIST_SUB+=		PYTHON=""
 MAP_EGG=		MapScript-${PORTVERSION}-${PYTHON_VERSION:S/thon//}
@@ -137,9 +138,10 @@ PLIST_SUB+=		PHP="@comment "
 
 .if ${PORT_OPTIONS:MPERL}
 USES+=		perl5
-BUILD_DEPENDS=	${LOCALBASE}/bin/swig2.0:devel/swig20
+BUILD_DEPENDS=	swig3.0:devel/swig30
 CMAKE_ARGS+=	-DWITH_PERL=1
 PLIST_SUB+=	PERL=""
+BINARY_ALIAS=	swig=swig3.0
 .else
 CMAKE_ARGS+=	-DWITH_PERL=0
 PLIST_SUB+=	PERL="@comment "

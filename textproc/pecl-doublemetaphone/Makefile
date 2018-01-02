@@ -1,5 +1,5 @@
 # Created by: Ditesh Shashikant Gathani <ditesh@gathani.org>
-# $FreeBSD: head/textproc/pecl-doublemetaphone/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/textproc/pecl-doublemetaphone/Makefile 456296 2017-12-14 13:57:28Z tz $
 
 PORTNAME=	doublemetaphone
 PORTVERSION=	1.0.1
@@ -13,7 +13,7 @@ LICENSE=	PHP301
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71
+IGNORE_WITH_PHP=	70 71 72
 
 CONFIGURE_ARGS=	--enable-doublemetaphone
 

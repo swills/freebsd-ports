@@ -1,8 +1,8 @@
 # Created by: Kris Moore <kris@pcbsd.org>
-# $FreeBSD: head/devel/qtcreator/Makefile 449942 2017-09-16 05:39:46Z tcberner $
+# $FreeBSD: head/devel/qtcreator/Makefile 457306 2017-12-26 18:45:20Z tcberner $
 
 PORTNAME=	qtcreator
-DISTVERSION=	4.4.0
+DISTVERSION=	4.5.0
 CATEGORIES=	devel
 MASTER_SITES=	QT/official_releases/qtcreator/${DISTVERSION:R}/${DISTVERSION}
 DISTNAME=	qt-creator-opensource-src-${DISTVERSION}
@@ -18,8 +18,9 @@ USES=		qmake compiler:c++11-lib tar:xz
 USE_LDCONFIG=	${LOCALBASE}/lib/${PORTNAME}
 USE_GL=		gl
 USE_QT5=	buildtools concurrent core designer gui help \
-		linguist network printsupport qdoc qmake qml quick quickcontrols \
-		script script sql svg webengine widgets xml xmlpatterns
+		linguist location network printsupport qdoc qmake qml quick \
+		quickcontrols script script sql svg webchannel webengine \
+		widgets xml xmlpatterns
 
 # be paranoid and do not extract qbs (devel/qbs) copy from source tree
 EXTRACT_AFTER_ARGS+=	--exclude '${DISTNAME}/src/shared/qbs'

@@ -1,8 +1,8 @@
 # Created by: Alfred Perlstein <alfred@freebsd.org>
-# $FreeBSD: head/www/py-djangorestframework-csv/Makefile 408427 2016-02-07 16:41:12Z alfred $
+# $FreeBSD: head/www/py-djangorestframework-csv/Makefile 457281 2017-12-26 11:13:31Z alfred $
 
 PORTNAME=	djangorestframework-csv
-PORTVERSION=	1.4.1
+PORTVERSION=	2.0.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

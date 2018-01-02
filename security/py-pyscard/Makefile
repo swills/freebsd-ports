@@ -1,5 +1,5 @@
 # Created by: mp39590@gmail.com
-# $FreeBSD: head/security/py-pyscard/Makefile 452176 2017-10-16 06:44:39Z misha $
+# $FreeBSD: head/security/py-pyscard/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	pyscard
 PORTVERSION=	1.9.6
@@ -13,13 +13,14 @@ COMMENT=	Smartcard module for Python
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	swig1.3:devel/swig13 \
+BUILD_DEPENDS=	swig3.0:devel/swig30 \
 		pcsc-lite>0:devel/pcsc-lite
 RUN_DEPENDS=	pcsc-lite>0:devel/pcsc-lite
 
 ## Python3 is supported
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist distutils
+BINARY_ALIAS=	swig=swig3.0
 
 PYDISTUTILS_BUILD_TARGET=	build_ext
 PYDISTUTILS_BUILDARGS+=	--include-dirs=${LOCALBASE}/include/PCSC

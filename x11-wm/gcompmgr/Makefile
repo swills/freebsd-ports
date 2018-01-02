@@ -1,5 +1,5 @@
 # Created by: UMENO Takashi
-# $FreeBSD: head/x11-wm/gcompmgr/Makefile 441395 2017-05-21 13:21:04Z linimon $
+# $FreeBSD: head/x11-wm/gcompmgr/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	gcompmgr
 PORTVERSION=	0.21
@@ -13,6 +13,8 @@ COMMENT=	GNOME interface to xcompmgr
 RUN_DEPENDS=	xcompmgr:x11-wm/xcompmgr
 
 BROKEN=		fails to compile: ustring.h: expected ';' at end of declaration list
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 GNU_CONFIGURE=	yes
 LIBS+=		-L${LOCALBASE}/lib -lX11

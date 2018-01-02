@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 455902 2017-12-10 16:00:12Z feld $
+# $FreeBSD: head/security/Makefile 457766 2018-01-01 11:41:37Z rene $
 #
 
     COMMENT = Security tools
@@ -19,7 +19,6 @@
     SUBDIR += afl
     SUBDIR += afterglow
     SUBDIR += aide
-    SUBDIR += aimsniff
     SUBDIR += akmos
     SUBDIR += amap
     SUBDIR += amavis-stats
@@ -183,7 +182,6 @@
     SUBDIR += gnomint
     SUBDIR += gnupg
     SUBDIR += gnupg1
-    SUBDIR += gnupg20
     SUBDIR += gnutls
     SUBDIR += go-cve-dictionary
     SUBDIR += go.crypto
@@ -428,6 +426,7 @@
     SUBDIR += nss_compat_ossl
     SUBDIR += nyx
     SUBDIR += oath-toolkit
+    SUBDIR += obfs4proxy-tor
     SUBDIR += obfsclient
     SUBDIR += obfsproxy
     SUBDIR += ocaml-cryptgps
@@ -1086,6 +1085,7 @@
     SUBDIR += rubygem-omniauth-saml
     SUBDIR += rubygem-omniauth-shibboleth
     SUBDIR += rubygem-openssl
+    SUBDIR += rubygem-openssl20
     SUBDIR += rubygem-openssl-ccm
     SUBDIR += rubygem-openvas-omp
     SUBDIR += rubygem-origami
@@ -1169,9 +1169,11 @@
     SUBDIR += snort
     SUBDIR += snort-rep
     SUBDIR += snort2pfcd
+    SUBDIR += snort3
     SUBDIR += snortreport
     SUBDIR += snortsam
     SUBDIR += snortsnarf
+    SUBDIR += snuffleupagus
     SUBDIR += softether
     SUBDIR += softether-devel
     SUBDIR += softhsm
@@ -1222,6 +1224,7 @@
     SUBDIR += tinc
     SUBDIR += tinc-devel
     SUBDIR += tinyca
+    SUBDIR += titan
     SUBDIR += titus
     SUBDIR += tls-check
     SUBDIR += tlswrap

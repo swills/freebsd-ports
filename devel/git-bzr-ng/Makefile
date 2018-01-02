@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/git-bzr-ng/Makefile 438471 2017-04-13 19:45:02Z amdmi3 $
+# $FreeBSD: head/devel/git-bzr-ng/Makefile 456310 2017-12-14 16:46:23Z amdmi3 $
 
 PORTNAME=	git-bzr-ng
 PORTVERSION=	git20140423
@@ -20,7 +20,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	termie
 GH_TAGNAME=	9878a30
 
-USES=		python:2,run shebangfix
+USES=		python:2.7,run shebangfix
 SHEBANG_FILES=	git-bzr
 NO_BUILD=	yes
 NO_ARCH=	yes

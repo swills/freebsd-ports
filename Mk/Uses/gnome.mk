@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/Uses/gnome.mk 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/Mk/Uses/gnome.mk 456218 2017-12-13 16:11:55Z antoine $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -390,13 +390,13 @@ pygobject_USE_GNOME_IMPL=	glib20
 
 # Have to keep two components because the _DETECT file is not the same.
 py3gobject3_DETECT=		${LOCALBASE}/share/py3gobject3/.keep
-py3gobject3_BUILD_DEPENDS=	py3?-gobject3>=0:devel/py-gobject3@${PY_FLAVOR}
-py3gobject3_RUN_DEPENDS=	py3?-gobject3>=0:devel/py-gobject3@${PY_FLAVOR}
+py3gobject3_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gobject3>=0:devel/py-gobject3@${PY_FLAVOR}
+py3gobject3_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gobject3>=0:devel/py-gobject3@${PY_FLAVOR}
 py3gobject3_USE_GNOME_IMPL=	glib20
 
 pygobject3_DETECT=		${LOCALBASE}/share/pygobject3/.keep
-pygobject3_BUILD_DEPENDS=	py2?-gobject3>=0:devel/py-gobject3@${PY_FLAVOR}
-pygobject3_RUN_DEPENDS=		py2?-gobject3>=0:devel/py-gobject3@${PY_FLAVOR}
+pygobject3_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gobject3>=0:devel/py-gobject3@${PY_FLAVOR}
+pygobject3_RUN_DEPENDS=		${PYTHON_PKGNAMEPREFIX}gobject3>=0:devel/py-gobject3@${PY_FLAVOR}
 pygobject3_USE_GNOME_IMPL=	glib20
 
 pygtk2_DETECT=		${LOCALBASE}/libdata/pkgconfig/pygtk-2.0.pc

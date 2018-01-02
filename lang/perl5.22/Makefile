@@ -1,5 +1,5 @@
 # Created by: mat
-# $FreeBSD: head/lang/perl5.22/Makefile 449892 2017-09-15 08:32:44Z mat $
+# $FreeBSD: head/lang/perl5.22/Makefile 457377 2017-12-27 16:47:12Z mat $
 
 PORTNAME=	perl
 DISTVERSION=	${PERL_VERSION}
@@ -149,11 +149,9 @@ PLIST_SUB+=	PERL_VERSION=${PERL_VERSION} \
 
 _PERL5_DEFAULT_FILE=	/tmp/PERL5_DEFAULT
 
-# bsd.default-versions.mk needs to know LOCALBASE for Perl, so
-# bsd.port.options.mk is needed before including it.
+# Get the default version, and possibly, overwrite it.
 .include <bsd.port.options.mk>
 .sinclude "${_PERL5_DEFAULT_FILE}"
-.include "${.CURDIR}/../../Mk/bsd.default-versions.mk"
 
 # if this port is default due PERL5_DEFAULT
 # change PKGNAME to reflect this

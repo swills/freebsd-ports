@@ -1,12 +1,12 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/java/intellij-pty4j/Makefile 434159 2017-02-15 12:28:29Z tobik $
+# $FreeBSD: head/java/intellij-pty4j/Makefile 456839 2017-12-20 16:50:31Z tobik $
 
 PORTNAME=	intellij-pty4j
 PORTVERSION=	0.5
 PORTREVISION=	1
 CATEGORIES=	java devel
 
-MAINTAINER=	tobik@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	FreeBSD-compatible replacement for IntelliJ's bundled Pty4J
 
 LICENSE=	EPL

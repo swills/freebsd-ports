@@ -1,8 +1,8 @@
 # Created by: Glenn Johnson
-# $FreeBSD: head/graphics/libimg/Makefile 431796 2017-01-18 13:20:31Z tijl $
+# $FreeBSD: head/graphics/libimg/Makefile 457712 2017-12-31 18:18:55Z mi $
 
 PORTNAME=	libimg
-PORTVERSION=	1.4.6
+PORTVERSION=	1.4.7
 CATEGORIES?=	graphics tk
 MASTER_SITES=	SF/tkimg/tkimg/${PORTVERSION:R}/tkimg%20${PORTVERSION}
 DISTNAME=	Img-Source-${PORTVERSION}
@@ -23,10 +23,8 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 
 PLIST_SUB+=	PORTVERSION=${PORTVERSION}
 
-WRKSRC=		${WRKDIR}/tkimg
 USES=		autoreconf jpeg tk:tea zip
 USE_XORG=	x11 xext xft xrender xscrnsaver
-TEST_TARGET=	test
 OPTIONS_DEFINE=	EXAMPLES
 OPTIONS_SUB=	yes
 
@@ -55,6 +53,10 @@ post-configure:
 		-e 's,^SHLIB_LD_LIBS[[:space:]]*=[[:space:]]*(.*),SHLIB_LD_LIBS=\1 -l$l,' \
 		${WRKSRC}/$l/Makefile
 .endfor
+
+test check regression-test: build
+	cd ${WRKSRC}/tests && \
+	${SETENV} TCLLIBPATH=${WRKSRC:Q} ${WISH} ${WRKSRC}/tests/all
 
 .include <bsd.port.options.mk>
 

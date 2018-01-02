@@ -1,9 +1,8 @@
-# $FreeBSD: head/net-im/Makefile 453595 2017-11-06 07:40:23Z araujo $
+# $FreeBSD: head/net-im/Makefile 457718 2017-12-31 19:30:35Z pi $
 #
 
     COMMENT = Instant messaging
 
-    SUBDIR += bsflite
     SUBDIR += centerim
     SUBDIR += centerim-devel
     SUBDIR += chattahoochie
@@ -88,7 +87,6 @@
     SUBDIR += p5-Jabber-Connection
     SUBDIR += p5-Jabber-Lite
     SUBDIR += p5-Jabber-SimpleSend
-    SUBDIR += p5-Net-AIM
     SUBDIR += p5-Net-AOLIM
     SUBDIR += p5-Net-Async-XMPP
     SUBDIR += p5-Net-ICQ2000
@@ -123,13 +121,13 @@
     SUBDIR += pidgin-twitter
     SUBDIR += plasma-applet-ktp
     SUBDIR += poezio
-    SUBDIR += pork
     SUBDIR += profanity
     SUBDIR += prosody
     SUBDIR += prosody-modules
     SUBDIR += proxy65
     SUBDIR += psi
     SUBDIR += psimedia
+    SUBDIR += purple-hangouts
     SUBDIR += py-fbmq
     SUBDIR += py-jabber
     SUBDIR += py-jabberbot
@@ -169,6 +167,7 @@
     SUBDIR += skype4
     SUBDIR += teamwords
     SUBDIR += telegram
+    SUBDIR += telegram-desktop
     SUBDIR += telegram-purple
     SUBDIR += telegramqml
     SUBDIR += telepathy-accounts-signon

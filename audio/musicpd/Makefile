@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/musicpd/Makefile 455427 2017-12-03 20:19:05Z riggs $
+# $FreeBSD: head/audio/musicpd/Makefile 457024 2017-12-23 07:03:21Z antoine $
 
 PORTNAME=	musicpd
-PORTVERSION=	0.20.12
+PORTVERSION=	0.20.13
+PORTREVISION=	1
 CATEGORIES=	audio ipv6
 MASTER_SITES=	http://www.musicpd.org/download/mpd/${PORTVERSION:R}/
 DISTNAME=	mpd-${PORTVERSION}
@@ -111,7 +112,8 @@ MUSEPACK_LIB_DEPENDS=libmpcdec.so:audio/musepack
 OPENAL_CONFIGURE_ENABLE=openal
 OPENAL_LIB_DEPENDS=libopenal.so:audio/openal
 OPUS_CONFIGURE_ENABLE=opus
-OPUS_LIB_DEPENDS=libopus.so:audio/opus
+OPUS_LIB_DEPENDS=	libopus.so:audio/opus \
+			libogg.so:audio/libogg
 OSS_CONFIGURE_ENABLE=oss
 PIPE_CONFIGURE_ENABLE=pipe-output
 PULSEAUDIO_CONFIGURE_ENABLE=pulse

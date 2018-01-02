@@ -1,5 +1,5 @@
 # Created by: Johannes Lundberg <johalun0@gmail.com>
-# $FreeBSD: head/devel/libepoll-shim/Makefile 445415 2017-07-10 00:54:21Z rezny $
+# $FreeBSD: head/devel/libepoll-shim/Makefile 456989 2017-12-22 16:34:38Z tijl $
 
 PORTNAME=	libepoll-shim
 PORTVERSION=	0.0.20161220
@@ -18,7 +18,8 @@ GH_TAGNAME=	c04b26b
 USE_LDCONFIG=	yes
 
 USES=		compiler uidfix
-MAKE_ARGS=	LIBDIR=${PREFIX}/lib INCSDIR=${PREFIX}/include/libepoll-shim/sys
+MAKE_ARGS=	INCSDIR=${PREFIX}/include/libepoll-shim/sys \
+		LIBDIR=${PREFIX}/lib WITHOUT_PROFILE=yes
 
 .include <bsd.port.pre.mk>
 

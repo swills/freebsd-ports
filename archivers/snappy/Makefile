@@ -1,5 +1,5 @@
 # Created by: Vanilla I. Shu <vanilla@FreeBSD.org>
-# $FreeBSD: head/archivers/snappy/Makefile 447321 2017-08-04 07:10:59Z vanilla $
+# $FreeBSD: head/archivers/snappy/Makefile 457139 2017-12-24 10:48:23Z danfe $
 
 PORTNAME=	snappy
 PORTVERSION=	1.1.6
@@ -10,8 +10,6 @@ COMMENT=	Fast compressor/decompressor library
 
 LICENSE=	BSD3CLAUSE
 
-OPTIONS_DEFINE=	DOCS
-
 USES=		autoreconf libtool pathfix pkgconfig
 CONFIGURE_ARGS=	--disable-gtest
 GNU_CONFIGURE=	yes
@@ -19,8 +17,9 @@ USE_LDCONFIG=	yes
 CFLAGS+=	-DNDEBUG
 USE_GITHUB=	yes
 GH_ACCOUNT=	google
+TEST_TARGET=	check
 
-BROKEN_sparc64=	Does not compile on sparc64
+OPTIONS_DEFINE=	DOCS
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${LOCALBASE}/lib/libsnappy.so.1.1.6

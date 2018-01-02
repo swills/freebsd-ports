@@ -1,13 +1,19 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/games/unnethack/Makefile 441925 2017-05-28 21:18:04Z antoine $
+# $FreeBSD: head/games/unnethack/Makefile 456885 2017-12-21 05:58:15Z knu $
 
 PORTNAME=	unnethack
 DISTVERSION=	5.1.0-20131208
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION:R}
 
 MAINTAINER=	knu@FreeBSD.org
 COMMENT=	New variant of NetHack
+
+LICENSE=	nethack
+LICENSE_NAME=	NETHACK GENERAL PUBLIC LICENSE
+LICENSE_FILE=	${WRKSRC}/dat/license
+LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 GNU_CONFIGURE=	yes
 USES=		gmake groff ncurses

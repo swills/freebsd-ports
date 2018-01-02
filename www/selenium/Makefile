@@ -1,9 +1,9 @@
-# $FreeBSD: head/www/selenium/Makefile 449262 2017-09-04 21:29:00Z cpm $
+# $FreeBSD: head/www/selenium/Makefile 456851 2017-12-20 20:15:07Z madpilot $
 
 PORTNAME=	selenium
-PORTVERSION=	3.5.3
+PORTVERSION=	3.8.1
 CATEGORIES=	www devel java
-MASTER_SITES=	http://selenium-release.storage.googleapis.com/3.5/
+MASTER_SITES=	http://selenium-release.storage.googleapis.com/3.8/
 DISTNAME=	selenium-server-standalone-${PORTVERSION}
 EXTRACT_SUFX=	.jar
 EXTRACT_ONLY=

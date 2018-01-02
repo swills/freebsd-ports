@@ -1,9 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/cgdb/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/devel/cgdb/Makefile 457663 2017-12-31 01:54:50Z danilo $
 
 PORTNAME=	cgdb
-PORTVERSION=	0.6.8
-PORTREVISION=	1
+PORTVERSION=	0.7.0
 CATEGORIES=	devel
 MASTER_SITES=	http://cgdb.me/files/
 
@@ -13,10 +12,7 @@ COMMENT=	Curses-based interface to the GNU Debugger
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	help2man:misc/help2man
-
 USES=		makeinfo readline
-
 INFO=		cgdb
 
 GNU_CONFIGURE=	yes

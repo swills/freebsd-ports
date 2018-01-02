@@ -1,11 +1,11 @@
-# $FreeBSD: head/editors/xi-core/Makefile 444039 2017-06-21 16:30:48Z tobik $
+# $FreeBSD: head/editors/xi-core/Makefile 456841 2017-12-20 16:55:24Z tobik $
 
 PORTNAME=	xi-core
 PORTVERSION=	g20170612
 DISTVERSIONPREFIX=	v
 CATEGORIES=	editors
 
-MAINTAINER=	tobik@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Modern editor backend written in Rust
 
 LICENSE=	APACHE20

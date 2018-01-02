@@ -1,5 +1,5 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/deskutils/gnome-documents/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/deskutils/gnome-documents/Makefile 456217 2017-12-13 16:05:48Z antoine $
 
 PORTNAME=	gnome-documents
 PORTVERSION=	3.18.2
@@ -25,14 +25,14 @@ LIB_DEPENDS=	libdbus-glib-1.so:devel/dbus-glib \
 		libgjs.so:lang/gjs \
 		libtracker-sparql-1.0.so:sysutils/tracker \
 		libzapojit-0.0.so:net/libzapojit
-RUN_DEPENDS=	py2?-dbus>0:devel/py-dbus \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>0:devel/py-dbus@${PY_FLAVOR} \
 		${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss \
 		unoconv:textproc/unoconv
 
 PORTSCOUT=	limitw:1,even
 
 USES=		compiler:c++11-lib gettext gmake gnome libtool pathfix \
-		pkgconfig tar:xz
+		pkgconfig python:2.7 tar:xz
 USE_GNOME=	gnomedesktop3 gtk30 intlhack \
 		introspection:build librsvg2 libxml2
 GNU_CONFIGURE=	yes

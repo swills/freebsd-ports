@@ -1,5 +1,5 @@
 # Created by: Dryice Liu	<dryice@dryice.name>
-# $FreeBSD: head/devel/py-ruledispatch/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-ruledispatch/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	RuleDispatch
 PORTVERSION=	0.5.a1.r2717
@@ -15,6 +15,9 @@ COMMENT=	Rule-based Dispatching and Generic Functions
 
 LICENSE=	PSFL ZPL21
 LICENSE_COMB=	dual
+
+DEPRECATED=	Depends on expiring devel/py-protocols-devel
+EXPIRATION_DATE=	2018-01-27
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Extremes>=1.1:devel/py-extremes@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}PyProtocols>=1.0.a0.r2302:devel/py-protocols-devel@${FLAVOR}

@@ -1,5 +1,5 @@
 # Created by: Jasper Jongmans <j.jongmans@aprogas.net>
-# $FreeBSD: head/games/crossfire-server/Makefile 414014 2016-04-25 16:13:38Z mat $
+# $FreeBSD: head/games/crossfire-server/Makefile 456181 2017-12-12 18:35:32Z antoine $
 
 PORTNAME=	crossfire
 PORTVERSION=	1.71.0
@@ -22,7 +22,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libpng.so:graphics/png
 RUN_DEPENDS=	bash:shells/bash
 
-USES=		autoreconf gmake libtool perl5 python shebangfix tar:bzip2 \
+USES=		autoreconf gmake libtool perl5 python:2.7 shebangfix tar:bzip2 \
 		uidfix
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-static --with-check=no --localstatedir=/var/games

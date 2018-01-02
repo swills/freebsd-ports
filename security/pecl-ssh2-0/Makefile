@@ -1,5 +1,5 @@
 # Created by: Alexander Leidinger <netchild@FreeBSD.org>
-# $FreeBSD: head/security/pecl-ssh2-0/Makefile 441122 2017-05-17 23:02:41Z dbaio $
+# $FreeBSD: head/security/pecl-ssh2-0/Makefile 456296 2017-12-14 13:57:28Z tz $
 
 PORTNAME=	ssh2
 PORTVERSION=	0.13
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libssh2.so:security/libssh2
 PORTSCOUT=	limit:^0.*
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71
+IGNORE_WITH_PHP=	70 71 72
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib ${EXTRA_LIBS}

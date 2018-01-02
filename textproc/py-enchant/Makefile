@@ -1,8 +1,8 @@
 # Created by: Nicola Vitale	<nivit@email.it>
-# $FreeBSD: head/textproc/py-enchant/Makefile 455308 2017-12-01 20:49:18Z amdmi3 $
+# $FreeBSD: head/textproc/py-enchant/Makefile 457085 2017-12-23 16:59:10Z thierry $
 
 PORTNAME=	enchant
-PORTVERSION=	1.6.11
+PORTVERSION=	2.0.0
 CATEGORIES=	textproc devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -21,6 +21,7 @@ OPTIONS_DEFAULT=WX
 WX_DESC=	Provide a wxSpellCheckerDialog
 OPTIONS_SUB=	yes
 
+# Enable Python 3 only when Mk/bsd.wx.mk will support it
 USES=		python:2.7
 USE_PYTHON=	distutils
 NO_ARCH=	yes

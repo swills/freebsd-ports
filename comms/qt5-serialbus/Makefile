@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/qt5-serialbus/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/comms/qt5-serialbus/Makefile 457773 2018-01-01 13:13:55Z rakuco $
 
 PORTNAME=	serialbus
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	comms
 PKGNAMEPREFIX=	qt5-
 
@@ -13,8 +13,5 @@ USE_QT5=	core network serialport buildtools_build
 QT_DIST=	serialbus
 USES=		compiler:c++11-lib qmake
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
-
-BUILD_WRKSRC=	${WRKSRC}/src/serialbus
-INSTALL_WRKSRC=	${BUILD_WRKSRC}
 
 .include <bsd.port.mk>

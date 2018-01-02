@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-pyro/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pyro/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	pyro
 PORTVERSION=	4.62
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}serpent>=1.23:devel/py-serpent@${FLAVOR}
 
 NO_ARCH=	yes
-USES=		dos2unix python:2.7+
+USES=		dos2unix python
 USE_PYTHON=	autoplist concurrent distutils
 
 PORTDOCS=	*

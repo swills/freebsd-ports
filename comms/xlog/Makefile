@@ -1,8 +1,8 @@
 # Created by: Patrick Gardella <patrick@FreeBSD.org>
-# $FreeBSD: head/comms/xlog/Makefile 428584 2016-12-14 18:27:01Z danilo $
+# $FreeBSD: head/comms/xlog/Makefile 457323 2017-12-26 22:45:33Z danilo $
 
 PORTNAME=	xlog
-PORTVERSION=	2.0.14
+PORTVERSION=	2.0.15
 CATEGORIES=	comms hamradio
 MASTER_SITES=	SAVANNAH
 

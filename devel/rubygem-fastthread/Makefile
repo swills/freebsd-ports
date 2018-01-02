@@ -1,5 +1,5 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/devel/rubygem-fastthread/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-fastthread/Makefile 456328 2017-12-14 18:09:09Z swills $
 
 PORTNAME=	fastthread
 PORTVERSION=	1.0.7
@@ -10,6 +10,8 @@ MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Optimized replacement for thread.rb primitives
 
 LICENSE=	LGPL21
+
+BROKEN_RUBY24=	yes
 
 USE_RUBY=	yes
 USES=		gem

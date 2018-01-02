@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <rpsfa@rit.edu>
-# $FreeBSD: head/devel/rubygem-delayed_job/Makefile 441860 2017-05-27 17:33:05Z sunpoet $
+# $FreeBSD: head/devel/rubygem-delayed_job/Makefile 457616 2017-12-30 18:16:58Z sunpoet $
 
 PORTNAME=	delayed_job
-PORTVERSION=	4.1.3
+PORTVERSION=	4.1.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,5 +1,5 @@
 # Created by: IWASHITA Yoji <shuna@pop16.odn.ne.jp>
-# $FreeBSD: head/japanese/mutt-devel/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/japanese/mutt-devel/Makefile 457084 2017-12-23 16:59:00Z tijl $
 
 # WITH_MUTT_CYRUS_SASL2:	if defined, 'Cyrus sasl' support.
 #
@@ -133,14 +133,6 @@ post-patch:
 	@${REINPLACE_CMD} -E ${CONFIGURE_SED} \
 		${CONFIGURE_WRKSRC}/${CONFIGURE_SCRIPT}.ac
 .endif
-
-post-configure:
-	@${REINPLACE_CMD} -E "\
-		s|^(s%\@ACLOCAL\@%).+(%g)|\1${ACLOCAL}\2|; \
-		s|^(s%\@AUTOCONF\@%).+(%g)|\1${AUTOCONF}\2|; \
-		s|^(s%\@AUTOMAKE\@%).+(%g)|\1${AUTOMAKE}\2|; \
-		s|^(s%\@AUTOHEADER\@%).+(%g)|\1${AUTOHEADER}\2|" \
-		${BUILD_WRKSRC}/config.status
 
 .if ${PORT_OPTIONS:MDOCS}
 post-install:

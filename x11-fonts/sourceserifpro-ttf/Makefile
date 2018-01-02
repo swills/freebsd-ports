@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/sourceserifpro-ttf/Makefile 448549 2017-08-22 16:40:12Z sunpoet $
+# $FreeBSD: head/x11-fonts/sourceserifpro-ttf/Makefile 456807 2017-12-20 14:37:32Z sunpoet $
 
 PORTNAME=	sourceserifpro
 PORTVERSION=	2.000
@@ -12,6 +12,8 @@ COMMENT=	Set of fonts by Adobe designed for UI
 
 LICENSE=	OFL11
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+PORTSCOUT=	skipv:variable-fonts
 
 NO_ARCH=	yes
 NO_BUILD=	yes

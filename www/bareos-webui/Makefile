@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas <acm@FreeBSD.org>
-# $FreeBSD: head/www/bareos-webui/Makefile 445198 2017-07-07 02:27:26Z acm $
+# $FreeBSD: head/www/bareos-webui/Makefile 456229 2017-12-13 20:11:14Z acm $
 
 PORTNAME=	bareos-webui
-PORTVERSION=	16.2.6
+PORTVERSION=	16.2.7
 DISTVERSIONPREFIX=	Release/
 CATEGORIES=	www sysutils
 
@@ -17,7 +17,7 @@ GH_ACCOUNT=	bareos
 GH_PROJECT=	bareos-webui
 
 USES=		php
-USE_PHP=	openssl
+USE_PHP=	openssl gettext
 NO_BUILD=	yes
 NO_ARCH=	yes
 

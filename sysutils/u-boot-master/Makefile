@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/u-boot-master/Makefile 456059 2017-12-11 18:31:35Z manu $
+# $FreeBSD: head/sysutils/u-boot-master/Makefile 456951 2017-12-22 02:11:44Z linimon $
 #
 # Common infrastructure for u-boot ports
 #
@@ -11,7 +11,7 @@ CATEGORIES=	sysutils
 PKGNAMESUFFIX?=	-${MODEL}
 
 MAINTAINER=	imp@FreeBSD.org
-COMMENT=	Cross-build das u-boot for ${MODEL}
+COMMENT=	Cross-build das u-boot for model ${MODEL}
 
 LICENSE=	GPLv2
 
@@ -38,6 +38,10 @@ MAKE_ARGS+=	V=1 CROSS_COMPILE=${CROSS_COMPILE} DTC=${LOCALBASE}/bin/dtc PYTHON=$
 NO_ARCH=	yes
 
 # Sanity checks
+.if !defined(MODEL) && !defined(BOARD_CONFIG) && !defined(FAMILY)
+MODEL=		NONE
+IGNORE=		is a metaport; there is nothing to build
+.else
 .if !defined(MODEL)
 IGNORE+=	MODEL is not defined
 .endif
@@ -46,6 +50,7 @@ IGNORE+=	BOARD_CONFIG is not defined
 .endif
 .if !defined(FAMILY)
 IGNORE+=	FAMILY is not defined
+.endif
 .endif
 
 # Overrides for OMAP family

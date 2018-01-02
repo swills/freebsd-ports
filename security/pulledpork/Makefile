@@ -1,8 +1,9 @@
 # Created by: Olli Hauer
-# $FreeBSD: head/security/pulledpork/Makefile 425799 2016-11-09 16:01:51Z ohauer $
+# $FreeBSD: head/security/pulledpork/Makefile 457688 2017-12-31 12:57:29Z ohauer $
 
 PORTNAME=	pulledpork
-PORTVERSION=	0.7.2
+PORTVERSION=	0.7.3
+DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 MASTER_SITES=	GHL
 

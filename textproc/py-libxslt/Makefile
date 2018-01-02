@@ -1,15 +1,11 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/textproc/py-libxslt/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-libxslt/Makefile 456181 2017-12-12 18:35:32Z antoine $
 
 CATEGORIES=	textproc gnome python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Python interface for XSLT C library for GNOME
-
-py34_BROKEN=	does not package
-py35_BROKEN=	does not package
-py36_BROKEN=	does not package
 
 MASTERDIR=	${.CURDIR}/../libxslt
 BUILD_WRKSRC=	${WRKSRC}/python
@@ -18,7 +14,7 @@ DESCR=		${.CURDIR}/pkg-descr
 PLIST=		${.CURDIR}/pkg-plist
 
 USE_GNOME=	libxslt
-USES+=		python
+USES+=		python:2.7
 USE_PYTHON=	flavors
 CONFIGURE_ARGS=	--with-html-dir=${PREFIX}/share/doc \
 		--with-python=${PYTHON_CMD}

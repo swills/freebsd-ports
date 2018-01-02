@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/iccexamin/Makefile 447272 2017-08-03 17:47:32Z bsam $
+# $FreeBSD: head/graphics/iccexamin/Makefile 456620 2017-12-18 11:22:42Z amdmi3 $
 
 PORTNAME=	icc-examin
 PORTVERSION=	0.56
@@ -7,7 +7,8 @@ CATEGORIES=	graphics
 MAINTAINER=	bsam@FreeBSD.org
 COMMENT=	ICC profile viewer and colour visualisation
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libfltk.so:x11-toolkits/fltk \
 		libfontconfig.so:x11-fonts/fontconfig \
@@ -17,7 +18,7 @@ LIB_DEPENDS=	libfltk.so:x11-toolkits/fltk \
 		libOyranos.so:graphics/oyranos \
 		libpng.so:graphics/png \
 		libtiff.so:graphics/tiff \
-		libXcm.so:x11/libXcm 
+		libXcm.so:x11/libXcm
 
 USE_GITHUB=     yes
 GH_ACCOUNT=     oyranos-cms

@@ -1,7 +1,7 @@
-# $FreeBSD: head/comms/flcluster/Makefile 455251 2017-12-01 07:19:53Z antoine $
+# $FreeBSD: head/comms/flcluster/Makefile 456770 2017-12-20 00:31:45Z db $
 
 PORTNAME=	flcluster
-PORTVERSION=	1.0.3
+PORTVERSION=	1.0.4
 CATEGORIES=	comms hamradio
 MASTER_SITES=	SF/fldigi/${PORTNAME}
 

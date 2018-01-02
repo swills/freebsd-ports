@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/shells/pdksh/Makefile 439565 2017-04-27 20:24:43Z linimon $
+# $FreeBSD: head/shells/pdksh/Makefile 456587 2017-12-18 04:13:13Z danfe $
 
 PORTNAME=	pdksh
 PORTVERSION=	5.2.14p2
@@ -20,7 +20,6 @@ COMMENT=	The Public Domain Korn Shell
 LICENSE=	BSD3CLAUSE
 
 BROKEN_powerpc64=	fails to compile siglist.in
-BROKEN_sparc64=		fails to compile ./siglist.in
 
 OPTIONS_DEFINE=	STATIC
 

@@ -1,8 +1,8 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/misc/p5-Locale-SubCountry/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/misc/p5-Locale-SubCountry/Makefile 457612 2017-12-30 18:16:37Z sunpoet $
 
 PORTNAME=	Locale-SubCountry
-PORTVERSION=	2.02
+PORTVERSION=	2.04
 CATEGORIES=	misc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

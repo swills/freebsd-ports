@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/2ping/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-mgmt/2ping/Makefile 456138 2017-12-12 13:33:20Z sunpoet $
 
 PORTNAME=	2ping
 PORTVERSION=	4.1
@@ -13,7 +13,7 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 NO_ARCH=	yes
-USE_PYTHON=	autoplist distutils optsuffix
+USE_PYTHON=	autoplist distutils noflavors
 USES=		python:3.4+
 
 .include <bsd.port.mk>

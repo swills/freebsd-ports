@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/clanlib/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/devel/clanlib/Makefile 457513 2017-12-29 16:33:11Z linimon $
 
 PORTNAME=	clanlib
 PORTVERSION=	2.3.7
@@ -13,6 +13,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Cross-platform game SDK
 
 LICENSE=	ZLIB
+
+BROKEN_aarch64=		fails to compile: X11/x11_window.cpp:1626:40: use of undeclared identifier 'malloc'; did you mean 'valloc'?
 
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libmikmod.so:audio/libmikmod \

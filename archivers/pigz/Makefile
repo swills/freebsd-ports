@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/archivers/pigz/Makefile 446368 2017-07-22 07:00:47Z delphij $
+# $FreeBSD: head/archivers/pigz/Makefile 457490 2017-12-29 03:14:37Z delphij $
 
 PORTNAME=	pigz
-PORTVERSION=	2.3.4
+PORTVERSION=	2.4
 CATEGORIES=	archivers
 MASTER_SITES=	http://www.zlib.net/pigz/ \
 		http://freebsd.unixfreunde.de/sources/

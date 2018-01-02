@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/python36/Makefile 451202 2017-10-04 10:55:25Z sunpoet $
+# $FreeBSD: head/lang/python36/Makefile 456915 2017-12-21 17:21:14Z amdmi3 $
 
 PORTNAME=	python
 PORTVERSION=	${PYTHON_PORTVERSION}
@@ -19,7 +19,7 @@ PATHFIX_MAKEFILEIN=	Makefile.pre.in
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 python_CMD=	${PREFIX}/bin/python${PYTHON_PORTVERSION:R}
-SHEBANG_FILES=	Lib/lib2to3/tests/data/*.py Lib/encodings/*.py
+SHEBANG_FILES=	Lib/*.py Lib/*/*.py Lib/*/*/*.py Lib/*/*/*/*.py
 
 BROKEN_SSL=	openssl-devel
 

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/security/nettle/Makefile 454539 2017-11-20 13:21:38Z sunpoet $
+# $FreeBSD: head/security/nettle/Makefile 456468 2017-12-16 13:51:11Z sunpoet $
 
 PORTNAME=	nettle
 PORTVERSION=	3.4
@@ -34,6 +34,11 @@ PORTEXAMPLES=	*.c *.h
 
 .if ${ARCH} == "sparc64"
 CONFIGURE_ENV+=	CCPIC=-fPIC
+.endif
+
+.if ${ARCH} == "mips64"
+post-patch:
+	@${REINPLACE_CMD} -e 's|__sgi|__unix__|' ${WRKSRC}/configure
 .endif
 
 post-install:

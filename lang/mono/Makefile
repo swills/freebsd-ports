@@ -1,5 +1,5 @@
 # Created by: Yukihiro Nakai <nakai@FreeBSD.org>
-# $FreeBSD: head/lang/mono/Makefile 455813 2017-12-09 00:42:05Z linimon $
+# $FreeBSD: head/lang/mono/Makefile 457313 2017-12-26 20:09:09Z emaste $
 
 PORTNAME=	mono
 PORTVERSION=	4.8.1.0
@@ -57,6 +57,7 @@ USE_GNOME=	glib20
 USE_PERL5=	build
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
+LLD_UNSAFE=	yes
 SHEBANG_FILES=	scripts/mono-heapviz
 
 CONFIGURE_ARGS=	--disable-dtrace

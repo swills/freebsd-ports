@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net-p2p/litecoin/Makefile 456058 2017-12-11 18:26:13Z sunpoet $
+# $FreeBSD: head/net-p2p/litecoin/Makefile 457245 2017-12-25 18:07:48Z jbeich $
 
 PORTNAME=	litecoin
 PORTVERSION=	0.14.2
@@ -7,6 +7,9 @@ PORTREVISION=	4
 DISTVERSIONPREFIX=	v
 PORTREVISION=	2
 CATEGORIES=	net-p2p finance
+
+PATCH_SITES=	https://github.com/bitcoin/bitcoin/commit/
+PATCHFILES=	1ec0c0a01c31.patch:-p1
 
 MAINTAINER=	swills@FreeBSD.org
 COMMENT?=	Virtual Peer-to-Peer Currency Client (QT)

@@ -1,5 +1,5 @@
 # Created by: Daisuke Aoyama <aoyama@peach.ne.jp>
-# $FreeBSD: head/net/istgt/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/istgt/Makefile 456197 2017-12-13 08:44:15Z danfe $
 
 PORTNAME=	istgt
 PORTVERSION=	20150713
@@ -22,7 +22,7 @@ SUB_FILES=	pkg-message
 OPTIONS_DEFINE=	SYMLNKDEV VBOXVD DOCS
 
 SYMLNKDEV_DESC=	Allow symbolic link for device file
-VBOXVD_DESC=	Build with VBox VD support (no X11 required)
+VBOXVD_DESC=	VirtualBox VD support (no X11 required)
 
 SYMLNKDEV_CONFIGURE_ON=	--enable-symlink-device
 

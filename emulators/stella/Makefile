@@ -1,5 +1,5 @@
 # Created by: Jacques Vidrine <nectar@FreeBSD.org>
-# $FreeBSD: head/emulators/stella/Makefile 456100 2017-12-12 03:49:04Z jbeich $
+# $FreeBSD: head/emulators/stella/Makefile 456719 2017-12-19 14:41:29Z linimon $
 
 PORTNAME=	stella
 PORTVERSION=	4.7.3
@@ -15,6 +15,13 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/License.txt
 
 LIB_DEPENDS=	libpng.so:graphics/png
+
+BROKEN_aarch64=		fails to compile: Checking for compiler version... 5.0.0, bad; Please ensure you are using GCC 4.7 / Clang 3.4 or above
+BROKEN_armv6=		fails to compile: Checking for compiler version... 5.0.0, bad; Please ensure you are using GCC 4.7 / Clang 3.4 or above
+BROKEN_armv7=		fails to compile: Checking for compiler version... 5.0.0, bad; Please ensure you are using GCC 4.7 / Clang 3.4 or above
+BROKEN_powerpc64=	fails to compile: CartDebug.cxx: 'snprintf' is not a member of 'std'
+
+CONFLICTS_INSTALL=	rubygem-stella
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

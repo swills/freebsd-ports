@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/databases/rubygem-sqlite3/Makefile 430659 2017-01-05 19:33:56Z sunpoet $
+# $FreeBSD: head/databases/rubygem-sqlite3/Makefile 456727 2017-12-19 15:44:58Z bapt $
 
 PORTNAME=	sqlite3
 PORTVERSION=	1.3.13
@@ -12,11 +12,12 @@ COMMENT=	Ruby interface to the SQLite DB engine version 3
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	swig:devel/swig13
+BUILD_DEPENDS=	swig3.0:devel/swig30
 LIB_DEPENDS=	libsqlite3.so:databases/sqlite3
 
 CONFIGURE_ARGS=	--with-sqlite3-dir=${LOCALBASE}
 USE_RUBY=	yes
 USES=		gem
+BINARY_ALIAS=	swig=swig3.0
 
 .include <bsd.port.mk>

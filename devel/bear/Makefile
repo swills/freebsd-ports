@@ -1,5 +1,5 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/devel/bear/Makefile 446457 2017-07-23 08:05:00Z pi $
+# $FreeBSD: head/devel/bear/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	bear
 PORTVERSION=	2.3.6
@@ -15,7 +15,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	rizsotto
 GH_PROJECT=	Bear
 
-USES=		cmake shebangfix python:2.7+
+USES=		cmake shebangfix python
 USE_LDCONFIG=	yes
 
 SHEBANG_FILES=	bear/main.py.in

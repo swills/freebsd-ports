@@ -1,9 +1,8 @@
 # Created by: Alfred Perlstein <alfred@freebsd.org>
-# $FreeBSD: head/www/py-django-bootstrap-form/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django-bootstrap-form/Makefile 457277 2017-12-26 10:58:19Z alfred $
 
 PORTNAME=	django-bootstrap-form
-PORTVERSION=	3.2.1
-PORTREVISION=	1
+PORTVERSION=	3.3
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

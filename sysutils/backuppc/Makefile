@@ -1,9 +1,9 @@
 # Created by: Alexander Moisseev <moiseev@mezonplus.ru>
-# $FreeBSD: head/sysutils/backuppc/Makefile 442735 2017-06-06 01:25:42Z dbaio $
+# $FreeBSD: head/sysutils/backuppc/Makefile 457024 2017-12-23 07:03:21Z antoine $
 
 PORTNAME=	backuppc
 PORTVERSION=	3.3.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	https://github.com/backuppc/backuppc/releases/download/${PORTVERSION}/ \
 		SF

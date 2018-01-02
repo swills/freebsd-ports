@@ -1,5 +1,5 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/devel/ncurses/Makefile 453902 2017-11-10 15:27:41Z swills $
+# $FreeBSD: head/devel/ncurses/Makefile 457633 2017-12-30 19:39:36Z swills $
 
 PORTNAME=	ncurses
 PORTVERSION=	6.0.0s${SNAPSHOT}
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_sparc64=	cannot build: coredump: illegal instruction
 
-SNAPSHOT=	20171007
+SNAPSHOT=	20171223
 GNU_CONFIGURE=	yes
 CONFIGURE_SCRIPT=../configure
 CONFIGURE_ARGS=	--datadir=${PREFIX}/share/misc --disable-overwrite \

@@ -1,5 +1,5 @@
 # Created by: Alex Pesternikov <ap@page2rss.com>
-# $FreeBSD: head/www/ctemplate/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/www/ctemplate/Makefile 457225 2017-12-25 13:15:14Z amdmi3 $
 
 PORTNAME=	ctemplate
 PORTVERSION=	0.5
@@ -9,8 +9,7 @@ MASTER_SITES=	SF
 MAINTAINER=	ap@page2rss.com
 COMMENT=	Template system for C
 
-BROKEN_armv6=		fails to compile: assigning to char * from incompatible type const char *
-BROKEN_armv7=		fails to compile: assigning to char * from incompatible type const char *
+LICENSE=	NONE
 
 USES=		gmake
 GNU_CONFIGURE=	yes

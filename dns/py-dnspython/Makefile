@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/dns/py-dnspython/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/dns/py-dnspython/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	dnspython
 PORTVERSION=	1.15.0
@@ -14,7 +14,7 @@ LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_ARCH=	yes
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 OPTIONS_DEFINE=	EXAMPLES PYCRYPTO

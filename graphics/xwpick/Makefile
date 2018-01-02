@@ -1,5 +1,5 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/graphics/xwpick/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/graphics/xwpick/Makefile 456608 2017-12-18 10:50:21Z amdmi3 $
 
 PORTNAME=	xwpick
 PORTVERSION=	2.20
@@ -10,12 +10,20 @@ MASTER_SITES=	XCONTRIB/applications
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Image pick up utility for X Window System
 
+LICENSE=	xwpick
+LICENSE_NAME=	xwpick license  # non-commercial
+LICENSE_FILE=	${WRKSRC}/COPYING
+LICENSE_PERMS=	dist-mirror no-dist-sell pkg-mirror no-pkg-sell auto-accept
+
 USES=		imake
 USE_XORG=	x11 xext
 
 OPTIONS_DEFINE=	DOCS
 
-post-install:
+post-extract:
+	@${SED} -ne '/COPYRIGHT NOTICE/,$$ p' ${WRKSRC}/0README >${WRKSRC}/COPYING
+
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/CHANGELOG ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/CNL_ARTICLE.PS ${STAGEDIR}${DOCSDIR}

@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/science/py-scipy/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/science/py-scipy/Makefile 456834 2017-12-20 15:25:16Z bapt $
 
 PORTNAME=	scipy
 PORTVERSION=	0.19.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	science python
 MASTER_SITES=	http://docs.scipy.org/doc/${DISTNAME}/:doc \
 		CHEESESHOP:source \
@@ -20,8 +20,7 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 BUILD_DEPENDS=	${PYNUMPY}
-RUN_DEPENDS=	${PYNUMPY} \
-		swig:devel/swig13
+RUN_DEPENDS=	${PYNUMPY}
 
 USES=		fortran python zip
 USE_PYTHON=	autoplist concurrent distutils

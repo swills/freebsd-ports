@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Parse-Pidl/Makefile 436917 2017-03-25 20:49:00Z timur $
+# $FreeBSD: head/devel/p5-Parse-Pidl/Makefile 457208 2017-12-25 05:26:16Z timur $
 
 PORTNAME=		Parse-Pidl
 PORTVERSION=		${SAMBA4_VERSION}
@@ -11,6 +11,9 @@ PKGNAMESUFFIX=
 COMMENT=		IDL compiler written in Perl
 
 LICENSE=		GPLv3
+
+DEPRECATED=		yes
+EXPIRATION_DATE=	2018-01-01
 
 BUILD_DEPENDS=		p5-Parse-Yapp>=0:devel/p5-Parse-Yapp
 RUN_DEPENDS:=		${BUILD_DEPENDS}

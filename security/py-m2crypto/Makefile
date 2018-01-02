@@ -1,5 +1,5 @@
 # Created by: Peter Haight <peterh@sapros.com>
-# $FreeBSD: head/security/py-m2crypto/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-m2crypto/Makefile 456499 2017-12-16 20:55:41Z sunpoet $
 
 PORTNAME=	m2crypto
 PORTVERSION=	0.27.0
@@ -21,7 +21,7 @@ USE_PYTHON=	autoplist concurrent distutils
 USES=		python ssl
 
 post-patch:
-	@${REINPLACE_CMD} -e "s|swig\(', '-version\)|swig3.0\1|" ${WRKSRC}/${PYSETUP}
+	@${REINPLACE_CMD} -e "s|swig\(', '-version\)|swig3.0\1|" ${WRKSRC}/setup.py
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/M2Crypto/_m2crypto.so

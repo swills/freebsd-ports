@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-highline/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-highline/Makefile 457409 2017-12-27 19:53:12Z sunpoet $
 
 PORTNAME=	highline
-PORTVERSION=	1.7.8
+PORTVERSION=	1.7.10
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

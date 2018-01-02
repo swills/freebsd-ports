@@ -1,11 +1,9 @@
-# $FreeBSD: head/ports-mgmt/portmaster/Makefile 455782 2017-12-08 14:00:02Z tz $
+# $FreeBSD: head/ports-mgmt/portmaster/Makefile 457645 2017-12-30 22:14:58Z se $
 
 PORTNAME=	portmaster
-PORTVERSION=	3.17.10
+PORTVERSION=	3.18
+PORTREVISION=	4
 CATEGORIES=	ports-mgmt
-MASTER_SITES=	LOCAL/bdrewery/${PORTNAME}/ \
-		http://mirror.shatow.net/freebsd/${PORTNAME}/ \
-		GH
 
 MAINTAINER=	se@FreeBSD.org
 COMMENT=	Manage your ports without external databases or languages
@@ -31,14 +29,14 @@ verify: checksum
 
 do-build:
 .for file in portmaster files/portmaster.rc.sample files/portmaster.8
-	${SED} -e 's#/usr/local#${LOCALBASE}#g' ${WRKSRC}/${file} \
-	  > ${WRKDIR}/${file:T}
+	${REINPLACE_CMD} -e 's#/usr/local#${LOCALBASE}#g' \
+	    -e 's#%%PKGNAME%%#${PKGNAME}#g' ${WRKSRC}/${file}
 .endfor
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKDIR}/portmaster \
+	${INSTALL_SCRIPT} ${WRKSRC}/portmaster \
 	    ${STAGEDIR}${PREFIX}/sbin
-	${INSTALL_DATA} ${WRKDIR}/portmaster.rc.sample \
+	${INSTALL_DATA} ${WRKSRC}/files/portmaster.rc.sample \
 	    ${STAGEDIR}${PREFIX}/etc
 	${INSTALL_MAN} ${WRKSRC}/files/portmaster.8 \
 	    ${STAGEDIR}${MAN8PREFIX}/man/man8

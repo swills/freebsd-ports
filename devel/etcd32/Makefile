@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/etcd32/Makefile 455599 2017-12-05 18:18:33Z olgeni $
+# $FreeBSD: head/devel/etcd32/Makefile 456860 2017-12-20 21:29:01Z olgeni $
 
 PORTNAME=	etcd
-PORTVERSION=	3.2.11
+PORTVERSION=	3.2.12
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	coreos-

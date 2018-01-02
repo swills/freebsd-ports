@@ -1,8 +1,8 @@
 # Created by: will
-# $FreeBSD: head/archivers/p5-Archive-Zip/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/archivers/p5-Archive-Zip/Makefile 456924 2017-12-21 17:41:15Z sunpoet $
 
 PORTNAME=	Archive-Zip
-PORTVERSION=	1.59
+PORTVERSION=	1.60
 CATEGORIES=	archivers perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

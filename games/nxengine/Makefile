@@ -1,5 +1,5 @@
 # Created by: Nikolai Lifanov <lifanov@FreeBSD.org>
-# $FreeBSD: head/games/nxengine/Makefile 449871 2017-09-15 00:20:37Z lifanov $
+# $FreeBSD: head/games/nxengine/Makefile 456836 2017-12-20 15:30:55Z linimon $
 
 PORTNAME=	nxengine
 PORTVERSION=	1.0.0.6
@@ -32,7 +32,7 @@ USE_SDL=	sdl ttf
 SUB_FILES=	${PORTNAME}
 
 pre-build:
-	@${REINPLACE_CMD} -e 's/g++/${CXX}/' ${WRKSRC}/Makefile
+	@${REINPLACE_CMD} -e 's!g++!${CXX}!' ${WRKSRC}/Makefile
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}

@@ -1,9 +1,8 @@
 # Created by: Hye-Shik Chang <perky@fallin.lv>
-# $FreeBSD: head/math/py-gsl/Makefile 444988 2017-07-03 20:38:11Z tcberner $
+# $FreeBSD: head/math/py-gsl/Makefile 457312 2017-12-26 19:30:17Z lwhsu $
 
 PORTNAME=	gsl
-PORTVERSION=	2.2.0
-PORTREVISION=	1
+PORTVERSION=	2.3.0
 CATEGORIES=	math python
 MASTER_SITES=	SF/py${PORTNAME}/py${PORTNAME}/py${PORTNAME}-${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

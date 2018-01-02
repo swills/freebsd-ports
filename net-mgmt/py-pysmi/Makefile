@@ -1,8 +1,8 @@
 # Created by: John W. O'Brien <john@saltant.com>
-# $FreeBSD: head/net-mgmt/py-pysmi/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-mgmt/py-pysmi/Makefile 457188 2017-12-24 18:40:38Z swills $
 
 PORTNAME=	pysmi
-PORTVERSION=	0.0.7
+PORTVERSION=	0.2.2
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP \
 		SF/pysmi/pysmi/${PORTVERSION}
@@ -25,7 +25,7 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 PORTDOCS=	*
 PORTEXAMPLES=	*
 
-BASEDOCS=	CHANGES.txt README.txt TODO.txt
+BASEDOCS=	CHANGES.rst README.md THANKS.txt TODO.txt
 
 post-patch:
 	${CP} ${FILESDIR}/tests__init__.py ${WRKSRC}/tests/__init__.py

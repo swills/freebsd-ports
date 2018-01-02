@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 455743 2017-12-07 17:17:44Z amdmi3 $
+# $FreeBSD: head/games/Makefile 456988 2017-12-22 16:30:01Z amdmi3 $
 #
 
     COMMENT = Games and related software
@@ -458,6 +458,7 @@
     SUBDIR += joequake
     SUBDIR += jools
     SUBDIR += jtans
+    SUBDIR += jumpnbump
     SUBDIR += jutils
     SUBDIR += jvgs
     SUBDIR += jzip

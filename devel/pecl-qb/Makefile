@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-qb/Makefile 440746 2017-05-13 03:35:51Z linimon $
+# $FreeBSD: head/devel/pecl-qb/Makefile 456296 2017-12-14 13:57:28Z tz $
 
 PORTNAME=	qb
 PORTVERSION=	2.4.0
@@ -14,6 +14,6 @@ LICENSE=	PHP301
 BROKEN_powerpc64=	fails to build: Killing runaway build after 7200 seconds with no output
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70
+IGNORE_WITH_PHP=	70 71 72
 
 .include <bsd.port.mk>

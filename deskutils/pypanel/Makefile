@@ -1,5 +1,5 @@
 # Created by: Florian Unglaub <flo@btw23.de>
-# $FreeBSD: head/deskutils/pypanel/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/deskutils/pypanel/Makefile 456390 2017-12-15 11:29:18Z danfe $
 
 PORTNAME=	pypanel
 PORTVERSION=	2.4
@@ -33,8 +33,9 @@ post-patch:
 		 s|/usr/bin/imlib2-config|${LOCALBASE}/bin/imlib2-config|; \
 		 s|/usr/X11R6/include|${LOCALBASE}/include|; \
 		 s|"COPYING", "README", ||' ${WRKSRC}/setup.py
-	@${REINPLACE_CMD} -e 's|sysconfig\.get_python_lib()|"${PREFIX}/share"|' \
-		${WRKSRC}/setup.py ${WRKSRC}/pypanel
+	@${REINPLACE_CMD} -e \
+		's|sysconfig\.get_python_lib()|"${PREFIX}/share"|' \
+			${WRKSRC}/setup.py ${WRKSRC}/pypanel
 	@${REINPLACE_CMD} -e \
 		's|/usr/lib/libImlib2.so.1|${LOCALBASE}/lib/libImlib2.so|' \
 		${WRKSRC}/setup.py ${WRKSRC}/ppmodule.c

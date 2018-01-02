@@ -1,5 +1,5 @@
 # Created by: Olivier Cochard-Labbe <olivier@FreeBSD.org>
-# $FreeBSD: head/deskutils/deforaos-todo/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/deskutils/deforaos-todo/Makefile 456236 2017-12-13 20:49:20Z sunpoet $
 
 PORTNAME=	todo
 PORTVERSION=	0.2.1
@@ -23,6 +23,8 @@ INSTALLS_ICONS=	yes
 MAKE_ARGS+=	PREFIX=${PREFIX}
 
 MAKE_ENV=	MANDIR=${STAGEDIR}${MANPREFIX}/man
+
+CONFLICTS_INSTALL=	devtodo todo
 
 OPTIONS_DEFINE=	DOCS NLS
 OPTIONS_SUB=	yes

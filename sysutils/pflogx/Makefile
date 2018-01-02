@@ -1,5 +1,5 @@
 # Created by: clsung
-# $FreeBSD: head/sysutils/pflogx/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/pflogx/Makefile 457359 2017-12-27 10:39:58Z danfe $
 
 PORTNAME=	pflogx
 PORTVERSION=	0.86
@@ -12,8 +12,6 @@ COMMENT=	Simple tool to export pf (packet filter) logs to XML files
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BROKEN_sparc64=	cannot compile: error in C++ code
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

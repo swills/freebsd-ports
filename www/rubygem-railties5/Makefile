@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/rubygem-railties5/Makefile 449555 2017-09-10 13:09:55Z sunpoet $
+# $FreeBSD: head/www/rubygem-railties5/Makefile 456261 2017-12-13 20:51:25Z sunpoet $
 
 PORTNAME=	railties
 PORTVERSION=	5.1.4
@@ -19,7 +19,7 @@ RUN_DEPENDS=	rubygem-actionpack5>=${PORTVERSION}:www/rubygem-actionpack5 \
 		rubygem-rake>=0.8.7:devel/rubygem-rake \
 		rubygem-thor>=0.18.1:devel/rubygem-thor
 
-CONFLICTS_INSTALL=	rubygem-railties rubygem-railties4 rubygem-railties41
+CONFLICTS_INSTALL=	rubygem-railties4 rubygem-railties50
 
 NO_ARCH=	yes
 USE_RUBY=	yes

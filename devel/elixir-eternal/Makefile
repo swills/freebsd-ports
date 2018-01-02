@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-eternal/Makefile 452599 2017-10-21 19:55:38Z olgeni $
+# $FreeBSD: head/devel/elixir-eternal/Makefile 457043 2017-12-23 11:55:05Z olgeni $
 
 PORTNAME=	eternal
-PORTVERSION=	1.1.4
+PORTVERSION=	1.2.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-rubocop/Makefile 452556 2017-10-20 20:44:47Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rubocop/Makefile 457456 2017-12-28 13:42:06Z sunpoet $
 
 PORTNAME=	rubocop
-PORTVERSION=	0.51.0
+PORTVERSION=	0.52.1
 CATEGORIES=	devel ruby
 MASTER_SITES=	RG
 
@@ -12,7 +12,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	rubygem-parallel>=1.10:sysutils/rubygem-parallel \
-		rubygem-parser>=2.3.3.1:devel/rubygem-parser \
+		rubygem-parser>=2.4.0.2:devel/rubygem-parser \
 		rubygem-powerpack>=0.1:devel/rubygem-powerpack \
 		rubygem-rainbow>=2.2.2:devel/rubygem-rainbow \
 		rubygem-ruby-progressbar>=1.7:devel/rubygem-ruby-progressbar \

@@ -1,10 +1,11 @@
-# $FreeBSD: head/devel/gitinspector/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/gitinspector/Makefile 456490 2017-12-16 20:54:54Z sunpoet $
 
 PORTNAME=	gitinspector
 PORTVERSION=	0.4.4
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel python
+PKGNAMESUFFIX=	${PYTHON_PKGNAMESUFFIX}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Statistical analysis tool for git repositories
@@ -15,10 +16,13 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 RUN_DEPENDS=	git:devel/git
 
 NO_ARCH=	yes
-USE_PYTHON=	autoplist distutils concurrent optsuffix
+USE_PYTHON=	autoplist concurrent distutils
 USES=		python
 
 GH_ACCOUNT=	ejwa
 USE_GITHUB=	yes
+
+post-patch:
+	@${REINPLACE_CMD} -e '/data_files/d' ${WRKSRC}/setup.py
 
 .include <bsd.port.mk>

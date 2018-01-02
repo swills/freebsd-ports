@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/ppsspp/Makefile 455622 2017-12-05 20:55:21Z jbeich $
+# $FreeBSD: head/emulators/ppsspp/Makefile 457776 2018-01-01 13:42:54Z jbeich $
 
 PORTNAME=	ppsspp
 DISTVERSIONPREFIX=	v
@@ -35,7 +35,8 @@ EXCLUDE=	libzip zlib
 EXTRACT_AFTER_ARGS=${EXCLUDE:S,^,--exclude ,}
 USE_GL=		gl glew glu
 USE_SDL=	sdl2 # joystick
-CMAKE_ARGS=	-DUSING_EGL=off -DUSE_SYSTEM_FFMPEG=on
+CMAKE_ON=	USE_SYSTEM_FFMPEG
+CMAKE_OFF=	USING_EGL
 SUB_FILES=	pkg-message
 PORTDATA=	assets ${PORTNAME}
 

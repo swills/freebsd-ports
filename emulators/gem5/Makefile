@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/emulators/gem5/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/emulators/gem5/Makefile 456845 2017-12-20 19:34:11Z bapt $
 
 PORTNAME=	gem5
 PORTVERSION=	0.0.${DATE}
@@ -8,7 +8,7 @@ CATEGORIES=	emulators
 MAINTAINER=	vg@FreeBSD.org
 COMMENT=	gem5 Simulator System
 
-BUILD_DEPENDS=	swig2.0:devel/swig20 \
+BUILD_DEPENDS=	swig3.0:devel/swig30 \
 		scons:devel/scons
 
 BROKEN_armv6=		fails to link: undefined reference to HDLcd::BUS_OPTIONS_RESETV
@@ -21,7 +21,7 @@ DATE=		20140422
 USE_GITHUB=	yes
 GH_ACCOUNT=	CTSRD-CHERI
 GH_TAGNAME=	99d65cc
-SWIG_BIN=	swig2.0
+SWIG_BIN=	swig3.0
 USES=		gmake
 
 .include <bsd.port.pre.mk>

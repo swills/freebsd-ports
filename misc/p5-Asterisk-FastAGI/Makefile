@@ -1,9 +1,9 @@
 # Created by: Maksym Sobolyev <sobomax@pbxpress.it>
-# $FreeBSD: head/misc/p5-Asterisk-FastAGI/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/misc/p5-Asterisk-FastAGI/Makefile 457523 2017-12-29 18:47:11Z sunpoet $
 
 PORTNAME=	Asterisk-FastAGI
 PORTVERSION=	0.02
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -15,12 +15,13 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Module-Install>=0:devel/p5-Module-Install \
-		p5-Asterisk>=0:misc/p5-Asterisk \
+		p5-asterisk-perl>=0:misc/p5-asterisk-perl \
 		p5-Net-Server>=0:net/p5-Net-Server \
 		p5-File-Remove>=0:devel/p5-File-Remove
-RUN_DEPENDS=	p5-Asterisk>=0:misc/p5-Asterisk \
+RUN_DEPENDS=	p5-asterisk-perl>=0:misc/p5-asterisk-perl \
 		p5-Net-Server>=0:net/p5-Net-Server
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

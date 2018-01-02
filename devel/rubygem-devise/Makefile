@@ -1,8 +1,8 @@
 # Created by: rpsfa@rit.edu
-# $FreeBSD: head/devel/rubygem-devise/Makefile 440947 2017-05-15 15:53:23Z sunpoet $
+# $FreeBSD: head/devel/rubygem-devise/Makefile 457617 2017-12-30 18:17:03Z sunpoet $
 
 PORTNAME=	devise
-PORTVERSION=	4.3.0
+PORTVERSION=	4.4.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -14,8 +14,7 @@ LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
 RUN_DEPENDS=	rubygem-bcrypt>=3.0:security/rubygem-bcrypt \
 		rubygem-orm_adapter>=0.1:devel/rubygem-orm_adapter \
-		rubygem-thread_safe>=0.1:devel/rubygem-thread_safe \
-		rubygem-railties4>=4.1.1:www/rubygem-railties4 \
+		rubygem-railties4>=4.1.0:www/rubygem-railties4 \
 		rubygem-responders>=0:www/rubygem-responders \
 		rubygem-warden>=1.2.3:devel/rubygem-warden
 

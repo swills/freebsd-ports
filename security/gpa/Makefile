@@ -1,5 +1,5 @@
 # Created by: Clive Lin <clive@CirX.ORG>
-# $FreeBSD: head/security/gpa/Makefile 428163 2016-12-09 03:11:34Z jhale $
+# $FreeBSD: head/security/gpa/Makefile 457764 2018-01-01 10:53:03Z rene $
 
 PORTNAME=	gpa
 PORTVERSION=	0.9.10
@@ -33,7 +33,7 @@ NLS_CONFIGURE_ENABLE=	nls
 
 pre-configure:
 	@(if [ ! -e ${LOCALBASE}/bin/gpgsm ] ; then \
-	${ECHO_MSG} "gpa requires gpgsm. (Re)Install security/gnupg20 with the GPGSM option ON" ; \
+	${ECHO_MSG} "gpa requires gpgsm. (Re)Install security/gnupg with the GPGSM option ON" ; \
 	exit 1; \
 	fi)
 

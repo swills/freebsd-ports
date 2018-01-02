@@ -1,18 +1,20 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/devel/gps/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/devel/gps/Makefile 457513 2017-12-29 16:33:11Z linimon $
 
 PORTNAME=	gps
 PORTVERSION=	2016
 PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://downloads.dragonlace.net/src/
-DISTNAME=	gps-gpl-${PORTVERSION}-src
 PKGNAMESUFFIX=	-ide
+DISTNAME=	gps-gpl-${PORTVERSION}-src
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GNAT Programming Studio - IDE for Ada and many other languages
 
 LICENSE=	GPLv3
+
+BROKEN_aarch64=		fails to compile: No rule to make target 'default'
 
 BUILD_DEPENDS=	gprbuild:devel/gprbuild \
 		xmlada>=4.4:textproc/xmlada \

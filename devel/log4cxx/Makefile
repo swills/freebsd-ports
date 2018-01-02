@@ -1,5 +1,5 @@
 # Created by: Thaddeus Covert <tcovert@grimmy.sahuagin.net>
-# $FreeBSD: head/devel/log4cxx/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/devel/log4cxx/Makefile 457160 2017-12-24 13:38:02Z tijl $
 
 PORTNAME=	log4cxx
 PORTVERSION=	0.10.0
@@ -17,7 +17,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libapr-1.so:devel/apr1
 
 GNU_CONFIGURE=	yes
-USE_AUTOTOOLS=	automake:env autoconf:env
 USES=		pathfix libtool
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip

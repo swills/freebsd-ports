@@ -1,16 +1,19 @@
 # Created by: gurkan@phys.ethz.ch
-# $FreeBSD: head/deskutils/charmap/Makefile 455401 2017-12-03 12:23:53Z theraven $
+# $FreeBSD: head/deskutils/charmap/Makefile 457829 2018-01-02 01:51:11Z linimon $
 
 PORTNAME=	charmap
 PORTVERSION=	0.2
 PORTREVISION=	7
 CATEGORIES=	deskutils gnustep
-MASTER_SITES=	http://www.sourcefiles.org/Utilities/GUI/
+MASTER_SITES=	# none
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Character map for GNUstep
 
 LICENSE=	GPLv2
+
+DEPRECATED=	Mastersite disappeared
+EXPIRATION_DATE=	2018-03-01
 
 USES=		gnustep
 USE_GNUSTEP=	back base build gui

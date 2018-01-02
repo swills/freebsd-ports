@@ -1,19 +1,17 @@
 # Created by: Vincent Tantardini <vinc@freebsd-fr.org>
-# $FreeBSD: head/x11/hsetroot/Makefile 440860 2017-05-13 23:50:49Z linimon $
+# $FreeBSD: head/x11/hsetroot/Makefile 457462 2017-12-28 14:30:23Z danfe $
 
 PORTNAME=	hsetroot
 PORTVERSION=	1.0.2
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	x11
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	danfe@FreeBSD.org
 COMMENT=	Wallpaper manipulation utility for X11
 
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libImlib2.so:graphics/imlib2
-
-BROKEN_powerpc64=	fails to compile: hsetroot.c: error: 'for' loop initial declaration used outside C99 mode
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	himdel

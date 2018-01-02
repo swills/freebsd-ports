@@ -1,5 +1,5 @@
 # Created by: Thomas Zander <riggs@FreeBSD.org>
-# $FreeBSD: head/devel/py-validictory/Makefile 455985 2017-12-11 10:42:09Z sunpoet $
+# $FreeBSD: head/devel/py-validictory/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	validictory
 PORTVERSION=	1.1.2
@@ -14,7 +14,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 NO_ARCH=	yes
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

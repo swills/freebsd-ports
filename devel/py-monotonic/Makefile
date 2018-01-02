@@ -1,8 +1,8 @@
 # Created by: Alfred Perlstein <alfred@FreeBSD.org>
-# $FreeBSD: head/devel/py-monotonic/Makefile 433321 2017-02-04 15:48:52Z rm $
+# $FreeBSD: head/devel/py-monotonic/Makefile 457298 2017-12-26 18:20:54Z antoine $
 
 PORTNAME=	monotonic
-PORTVERSION=	1.1
+PORTVERSION=	1.4
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

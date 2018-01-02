@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/clover/Makefile 441424 2017-05-21 19:30:54Z rezny $
+# $FreeBSD: head/lang/clover/Makefile 457264 2017-12-25 23:30:54Z rezny $
 
 PORTNAME=	clover
 PORTVERSION=	${MESAVERSION}
@@ -6,10 +6,11 @@ CATEGORIES=	lang
 
 COMMENT=	Mesa "Clover" OpenCL library
 
-BUILD_DEPENDS=	libclc>=0.2.0.20160915:devel/libclc \
+BUILD_DEPENDS=	libclc>=0.3.0:devel/libclc \
 		opencl>=0:devel/opencl
 LIB_DEPENDS=	libOpenCL.so:devel/ocl-icd
-RUN_DEPENDS=	opencl>=0:devel/opencl
+RUN_DEPENDS=	libclc>=0.3.0:devel/libclc \
+		opencl>=0:devel/opencl
 
 ONLY_FOR_ARCHS=		i386 amd64
 ONLY_FOR_ARCHS_REASON=	Clover needs a GPU supported by the Radeon KMS driver
@@ -33,8 +34,5 @@ pre-configure:
 		${ECHO_MSG} "Your llvm${MESA_LLVM_VER} is not built with clang support, which is required."; \
 		${FALSE}; \
 	fi
-
-post-install:
-	@${MV} ${STAGEDIR}/etc/OpenCL ${STAGEDIR}${PREFIX}/etc/
 
 .include <bsd.port.post.mk>

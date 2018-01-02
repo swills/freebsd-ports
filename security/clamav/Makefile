@@ -1,9 +1,9 @@
 # Created by: markun@onohara.to
-# $FreeBSD: head/security/clamav/Makefile 455091 2017-11-29 02:56:26Z ler $
+# $FreeBSD: head/security/clamav/Makefile 457649 2017-12-30 22:25:18Z ler $
 
 PORTNAME=	clamav
 PORTVERSION=	0.99.2
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	security
 MASTER_SITES=	http://www.clamav.net/downloads/production/
 
@@ -94,6 +94,7 @@ CLAMAVUSER?=	clamav
 CLAMAVGROUP?=	clamav
 
 CLAMAV_CLAMD_SOCKET?=	${RUNDIR}/clamd.sock
+CLAMAV_CLAMD_PIDFILE?=	${RUNDIR}/clamd.pid
 CLAMAV_MILTER_SOCKET?=	${RUNDIR}/clmilter.sock
 
 SUB_FILES=	pkg-deinstall
@@ -105,6 +106,7 @@ SUB_LIST+=	DBDIR=${DBDIR} \
 		CLAMAVUSER=${CLAMAVUSER} \
 		CLAMAVGROUP=${CLAMAVGROUP} \
 		CLAMAV_CLAMD_SOCKET=${CLAMAV_CLAMD_SOCKET} \
+		CLAMAV_CLAMD_PIDFILE=${CLAMAV_CLAMD_PIDFILE} \
 		CLAMAV_MILTER_SOCKET=${CLAMAV_MILTER_SOCKET}
 
 SED_CONF=	-E -e 's|^\#?(Example)$$|\#\1|' \

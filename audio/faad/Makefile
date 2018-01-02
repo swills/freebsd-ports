@@ -1,8 +1,8 @@
 # Created by: Sean McGovern <sean@sfarc.net>
-# $FreeBSD: head/audio/faad/Makefile 453292 2017-11-01 15:36:02Z riggs $
+# $FreeBSD: head/audio/faad/Makefile 457214 2017-12-25 10:37:50Z riggs $
 
 PORTNAME=	faad2
-PORTVERSION=	2.8.6
+PORTVERSION=	2.8.8
 PORTEPOCH=	1
 CATEGORIES=	audio
 MASTER_SITES=	SF/faac/${PORTNAME}-src/${PORTNAME}-${PORTVERSION:R}.0
@@ -33,6 +33,8 @@ post-patch:
 		${WRKSRC}/common/mp4ff/Makefile.am
 	@${ECHO_CMD} "SUBDIRS = libfaad common frontend" > \
 		${WRKSRC}/Makefile.am
+	@${REINPLACE_CMD} -E -e 's|(FAAD2_VERSION +)"unknown"|\1"${PORTVERSION:R}"|' \
+		${WRKSRC}/include/neaacdec.h
 
 post-configure:
 	@${REINPLACE_CMD} "s/444/644/g" ${WRKSRC}/common/mp4ff/Makefile

@@ -1,5 +1,5 @@
 # Created by: Fukang Chen <loader@FreeBSD.org>
-# $FreeBSD: head/devel/py-semantic_version/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-semantic_version/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	semantic_version
 PORTVERSION=	2.6.0
@@ -21,8 +21,7 @@ GH_PROJECT=	python-semanticversion
 
 NO_ARCH=	yes
 
-# Actually 2.7,3.4+
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 do-test:

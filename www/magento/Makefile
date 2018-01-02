@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/www/magento/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/magento/Makefile 456517 2017-12-16 21:44:09Z tz $
 
 PORTNAME=	magento
 PORTVERSION=	1.8.1.0
@@ -9,6 +9,8 @@ MASTER_SITES=	http://www.magentocommerce.com/downloads/assets/${PORTVERSION}/
 
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Feature-rich eCommerce platform
+
+IGNORE_WITH_PHP=	70 71 72
 
 USES=		cpe php
 CPE_VENDDOR=	magentocommerce

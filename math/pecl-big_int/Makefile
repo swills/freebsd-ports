@@ -1,5 +1,5 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@inf.ufsc.br>)
-# $FreeBSD: head/math/pecl-big_int/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/math/pecl-big_int/Makefile 456296 2017-12-14 13:57:28Z tz $
 
 PORTNAME=	big_int
 PORTVERSION=	1.0.7
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71
+IGNORE_WITH_PHP=	70 71 72
 
 CONFIGURE_ARGS=	--enable-big-int=shared
 

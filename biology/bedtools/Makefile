@@ -1,5 +1,5 @@
 # Created by: Scott Cheloha <scottcheloha@gmail.com>
-# $FreeBSD: head/biology/bedtools/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/biology/bedtools/Makefile 456976 2017-12-22 12:27:14Z amdmi3 $
 
 PORTNAME=	bedtools
 PORTVERSION=	2.25.0
@@ -12,9 +12,6 @@ COMMENT=	Toolset for genome arithmetic
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BROKEN_armv6=		fails to compile: implicit instantiation of undefined template __static_assert_test<false>
-BROKEN_armv7=		fails to compile: implicit instantiation of undefined template __static_assert_test<false>
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	arq5x

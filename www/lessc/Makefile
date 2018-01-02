@@ -1,5 +1,5 @@
 # Created by: Rodrigo Osorio <rodrigo@freebsd.org>
-# $FreeBSD: head/www/lessc/Makefile 444698 2017-06-30 06:11:12Z antoine $
+# $FreeBSD: head/www/lessc/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	lessc
 PORTVERSION=	2.5.1
@@ -13,6 +13,8 @@ COMMENT=	Javascript CSS pre-processor
 LICENSE=	APACHE20
 
 BROKEN=		fails to package
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 BUILD_DEPENDS=	npm>=0:www/npm
 RUN_DEPENDS=	npm>=0:www/npm

@@ -1,5 +1,5 @@
 # Created by: Marc G. Fournier <scrappy@FreeBSD.org>
-# $FreeBSD: head/databases/postgresql92-server/Makefile 453847 2017-11-09 16:11:21Z girgen $
+# $FreeBSD: head/databases/postgresql92-server/Makefile 456635 2017-12-18 14:46:23Z emaste $
 
 PORTNAME?=	postgresql
 DISTVERSION?=	9.2.24
@@ -30,6 +30,7 @@ USES+=		tar:bzip2 cpe
 .if !defined(NO_BUILD)
 USES+=	gmake
 GNU_CONFIGURE=	yes
+LLD_UNSAFE=	yes
 .endif
 
 PG_USER?=	pgsql

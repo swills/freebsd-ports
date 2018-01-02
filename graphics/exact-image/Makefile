@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/exact-image/Makefile 455244 2017-12-01 01:58:23Z mandree $
+# $FreeBSD: head/graphics/exact-image/Makefile 456795 2017-12-20 14:10:03Z bapt $
 
 PORTNAME=	exact-image
 PORTVERSION=	0.9.1
@@ -12,7 +12,7 @@ COMMENT=	Fast image processing library
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	swig:devel/swig13
+BUILD_DEPENDS=	swig3.0:devel/swig30
 LIB_DEPENDS=	libagg.so:graphics/agg \
 		libtiff.so:graphics/tiff \
 		libpng.so:graphics/png \
@@ -29,7 +29,7 @@ BROKEN_armv7=		fails to configure: C++ compiler is not installed or does not wor
 #hack to get custom exactcode configure script to enable tiff support with
 #broken headers on c++ in base system:
 CPPFLAGS+=	-fpermissive -I${LOCALBASE}/include
-USES=		gmake jpeg perl5 pkgconfig python tar:bzip2
+USES=		gmake jpeg perl5 pkgconfig python:2.7 tar:bzip2
 USE_XORG=	x11
 HAS_CONFIGURE=	yes
 INSTALL_WRKSRC=	${WRKSRC}/objdir
@@ -39,6 +39,7 @@ PLIST_FILES=	${BINS:S|^|bin/|} \
 		%%SITE_PERL%%/ExactImage.pm \
 		%%PYTHON_SITELIBDIR%%/ExactImage.py \
 		%%PYTHON_SITELIBDIR%%/_ExactImage.so
+BINARY_ALIAS=	swig=swig3.0
 
 post-extract:
 	@${RM} -r ${WRKSRC}/agg-2.4/

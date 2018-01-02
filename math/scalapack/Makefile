@@ -1,5 +1,5 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/math/scalapack/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/scalapack/Makefile 457041 2017-12-23 10:44:23Z adridg $
 
 PORTNAME=	scalapack
 PORTVERSION=	2.0.2
@@ -99,6 +99,10 @@ MPICC=	${LOCALBASE}/mpi/openmpi/bin/mpicc
 MPIF77=	${LOCALBASE}/bin/mpif77
 MPICC=	${LOCALBASE}/bin/mpicc
 .endif
+
+# USES=fortran already forces FC to a supported fortran compiler;
+# assume mpicc points to a compatible compiler and force that, too.
+CC=	${MPICC}
 
 pre-configure:
 	${CP} -p ${WRKSRC}/Makefile ${WRKSRC}/Makefile.dist

@@ -1,5 +1,5 @@
 # Created by: Mykola Marzhan <delgod@portaone.com>
-# $FreeBSD: head/sysutils/isomd5sum/Makefile 441671 2017-05-25 10:12:10Z rakuco $
+# $FreeBSD: head/sysutils/isomd5sum/Makefile 456126 2017-12-12 12:40:15Z antoine $
 
 PORTNAME=	isomd5sum
 PORTVERSION=	1.0.11
@@ -13,7 +13,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libpopt.so:devel/popt
 
-USES=		gmake python
+USES=		gmake python:2.7
 USE_GITHUB=	yes
 GH_ACCOUNT=	rhinstaller
 

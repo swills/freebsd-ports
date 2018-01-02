@@ -1,5 +1,5 @@
 # Created by: Tim Vanderhoek <ac199@freenet.hamilton.on.ca>
-# $FreeBSD: head/converters/xdeview/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/converters/xdeview/Makefile 457357 2017-12-27 09:00:43Z amdmi3 $
 
 PORTNAME=	xdeview
 PORTVERSION=	0.5.20
@@ -42,6 +42,6 @@ post-install:
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	@${INSTALL_DATA} ${FILESDIR}/porting.notes ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${FILESDIR}/porting.notes ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Axel Rau <axel.rau@chaos1.de>
-# $FreeBSD: head/databases/py-sqlparse01/Makefile 428897 2016-12-19 01:18:40Z wen $
+# $FreeBSD: head/databases/py-sqlparse01/Makefile 456245 2017-12-13 20:50:04Z sunpoet $
 
 PORTNAME=	sqlparse01
 PORTVERSION=	0.1.19
@@ -17,6 +17,6 @@ NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils
 USES=		python
 
-CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}sqlparse
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}sqlparse ${PYTHON_PKGNAMEPREFIX}sqlparse020
 
 .include <bsd.port.mk>

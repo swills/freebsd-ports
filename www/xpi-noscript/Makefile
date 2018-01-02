@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/www/xpi-noscript/Makefile 440783 2017-05-13 10:59:11Z miwi $
+# $FreeBSD: head/www/xpi-noscript/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	noscript
 PORTVERSION=	2.6.6.1
@@ -10,6 +10,8 @@ MAINTAINER=	gecko@FreeBSD.org
 COMMENT=	Security-enhancing Java/JS filtering extension
 
 BROKEN=		checksum mismatch
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 XPI_ID=		{73a6fe31-595d-460b-a920-fcc0f8843232}
 XPI_NUM=	722
 

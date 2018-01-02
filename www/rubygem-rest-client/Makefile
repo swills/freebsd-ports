@@ -1,12 +1,12 @@
 # Created by: Renaud Chaput <renchap@cocoa-x.com>
-# $FreeBSD: head/www/rubygem-rest-client/Makefile 438852 2017-04-19 14:39:10Z sunpoet $
+# $FreeBSD: head/www/rubygem-rest-client/Makefile 457537 2017-12-29 18:48:29Z sunpoet $
 
 PORTNAME=	rest-client
-PORTVERSION=	2.0.1
+PORTVERSION=	2.0.2
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	renchap@cocoa-x.com
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Simple Simple HTTP and REST client for Ruby
 
 LICENSE=	MIT

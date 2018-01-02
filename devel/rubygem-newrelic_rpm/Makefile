@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-newrelic_rpm/Makefile 450287 2017-09-21 17:21:28Z sunpoet $
+# $FreeBSD: head/devel/rubygem-newrelic_rpm/Makefile 457410 2017-12-27 19:53:18Z sunpoet $
 
 PORTNAME=	newrelic_rpm
-PORTVERSION=	4.4.0.336
+PORTVERSION=	4.7.1.340
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/py-sqlparse020/Makefile 456046 2017-12-11 16:08:56Z swills $
+# $FreeBSD: head/databases/py-sqlparse020/Makefile 456246 2017-12-13 20:50:09Z sunpoet $
 
 PORTNAME=	sqlparse020
 PORTVERSION=	0.2.0
@@ -15,5 +15,7 @@ LICENSE=	BSD3CLAUSE
 NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
+
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}sqlparse ${PYTHON_PKGNAMEPREFIX}sqlparse01
 
 .include <bsd.port.mk>

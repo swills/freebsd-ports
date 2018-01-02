@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/ruby-rbbr/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/ruby-rbbr/Makefile 456340 2017-12-14 19:39:16Z swills $
 
 PORTNAME=	rbbr
 PORTVERSION=	0.6.0
@@ -18,6 +18,10 @@ RUN_DEPENDS=	rubygem-gettext>=0:devel/rubygem-gettext \
 
 BROKEN_RUBY22=	yes
 BROKEN_RUBY23=	yes
+BROKEN_RUBY24=	yes
+
+DEPRECATED=	Does not build with current versions of ruby
+EXPIRATION_DATE=	2018-01-14
 
 OPTIONS_DEFINE=	DOCS
 
