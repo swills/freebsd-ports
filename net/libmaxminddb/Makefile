@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/libmaxminddb/Makefile 441577 2017-05-24 13:02:38Z sunpoet $
+# $FreeBSD: head/net/libmaxminddb/Makefile 457328 2017-12-26 23:20:02Z sunpoet $
 
 PORTNAME=	libmaxminddb
-PORTVERSION=	1.2.1
+PORTVERSION=	1.3.1
 CATEGORIES=	net
 MASTER_SITES=	https://github.com/maxmind/libmaxminddb/releases/download/${PORTVERSION}/
 

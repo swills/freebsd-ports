@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test2-Suite/Makefile 455956 2017-12-11 10:38:14Z sunpoet $
+# $FreeBSD: head/devel/p5-Test2-Suite/Makefile 456134 2017-12-12 13:32:59Z sunpoet $
 
 PORTNAME=	Test2-Suite
-PORTVERSION=	0.000096
+PORTVERSION=	0.000097
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:EXODIST

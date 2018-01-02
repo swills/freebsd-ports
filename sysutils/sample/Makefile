@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/sample/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/sysutils/sample/Makefile 457226 2017-12-25 13:24:19Z danfe $
 
 PORTNAME=	sample
 PORTVERSION=	0.02f
@@ -10,14 +10,13 @@ COMMENT=	Examine periodic stack traces of all running processes
 
 LICENSE=	BSD3CLAUSE
 
+ONLY_FOR_ARCHS=	amd64
+ONLY_FOR_ARCHS_REASON=	device driver part of the program only supports amd64
+
 BUILD_DEPENDS=	${LOCALBASE}/lib/libbfd.a:devel/libbfd \
 		${LOCALBASE}/lib/libiberty.a:devel/gnulibiberty \
 		${LOCALBASE}/lib/libxo.a:devel/libxo \
 		${LOCALBASE}/bin/python:lang/python
-
-BROKEN_i386=		does not build: don't know how to make sample_support_i386.c
-BROKEN_powerpc64=	does not build: don't know how to make sample_support_powerpc64.c
-BROKEN_sparc64=		does not build: don't know how to make sample_support_sparc64.c
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	freenas

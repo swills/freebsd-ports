@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: head/Mk/Scripts/do-fetch.sh 432617 2017-01-28 10:52:20Z mat $
+# $FreeBSD: head/Mk/Scripts/do-fetch.sh 456460 2017-12-16 08:53:07Z mat $
 #
 # MAINTAINER: portmgr@FreeBSD.org
 
@@ -17,10 +17,14 @@ validate_env dp_DEVELOPER dp_DISABLE_SIZE dp_DISTDIR dp_DISTINFO_FILE \
 
 set -u
 
-if [ ! -d "${dp_DISTDIR}" ]; then
-	mkdir -p "${dp_DISTDIR}"
-fi
-cd "${dp_DISTDIR}"
+case ${dp_TARGET} in
+	do-fetch|makesum)
+		if [ ! -d "${dp_DISTDIR}" ]; then
+			mkdir -p "${dp_DISTDIR}"
+		fi
+		cd "${dp_DISTDIR}"
+		;;
+esac
 
 for _file in "${@}"; do
 	file=${_file%%:*}

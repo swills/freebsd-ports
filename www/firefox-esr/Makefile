@@ -1,8 +1,8 @@
 # Created by: Alan Eldridge <alane@FreeBSD.org>
-# $FreeBSD: head/www/firefox-esr/Makefile 455759 2017-12-07 21:43:23Z jbeich $
+# $FreeBSD: head/www/firefox-esr/Makefile 457305 2017-12-26 18:41:38Z jbeich $
 
 PORTNAME=	firefox
-DISTVERSION=	52.5.2
+DISTVERSION=	52.5.3
 DISTVERSIONSUFFIX=esr
 PORTEPOCH=	1
 CATEGORIES=	www ipv6

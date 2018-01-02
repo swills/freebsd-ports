@@ -1,5 +1,5 @@
 # Created by: Amir Husaini <amir.husaini@bsdit.com>
-# $FreeBSD: head/www/zikula/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/zikula/Makefile 456517 2017-12-16 21:44:09Z tz $
 
 PORTNAME=	zikula
 PORTVERSION=	1.3.5
@@ -11,6 +11,8 @@ DISTNAME=	Zikula_Core-${PORTVERSION}.build20
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	MVC web application framework (PHP/MySQL)
+
+IGNORE_WITH_PHP=	70 71 72
 
 WRKSRC=		${WRKDIR}/Zikula_Core-${PORTVERSION}
 USES=		zip php:web mysql

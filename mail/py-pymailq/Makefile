@@ -1,5 +1,5 @@
 # Created by: Fukang Chen <loader@FreeBSD.org>
-# $FreeBSD: head/mail/py-pymailq/Makefile 449691 2017-09-12 14:42:41Z loader $
+# $FreeBSD: head/mail/py-pymailq/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	pymailq
 PORTVERSION=	0.8.0
@@ -16,15 +16,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	postfix:mail/postfix
 
 NO_ARCH=	yes
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist distutils concurrent
 
-.include <bsd.port.pre.mk>
-
-PLIST_FILES+=	man/man1/pqshell-${PYTHON_VER}.1.gz
-.if ${PYTHON_VERSION} == ${PYTHON_DEFAULT_VERSION}
-PLIST_FILES+=	man/man1/pqshell.1.gz
-.endif
+PLIST_FILES=	man/man1/pqshell.1.gz
 
 post-patch:
 	@${REINPLACE_CMD} -e \
@@ -32,9 +27,6 @@ post-patch:
 		${WRKSRC}/setup.py
 
 post-install:
-	${INSTALL_MAN} ${WRKSRC}/man/pqshell.1 ${STAGEDIR}${MANPREFIX}/man/man1/pqshell-${PYTHON_VER}.1
-.if ${PYTHON_VERSION} == ${PYTHON_DEFAULT_VERSION}
-	${LN} -sf pqshell-${PYTHON_VER}.1 ${STAGEDIR}${MANPREFIX}/man/man1/pqshell.1
-.endif
+	${INSTALL_MAN} ${WRKSRC}/man/pqshell.1 ${STAGEDIR}${MANPREFIX}/man/man1/pqshell.1
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

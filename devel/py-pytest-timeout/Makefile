@@ -1,5 +1,5 @@
 # Created by: Fukang Chen <loader@FreeBSD.org>
-# $FreeBSD: head/devel/py-pytest-timeout/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pytest-timeout/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	pytest-timeout
 PORTVERSION=	1.2.0
@@ -18,7 +18,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=2.8.0:devel/py-pytest@${FLAVOR}
 
 NO_ARCH=	yes
 
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 TEST_ENV+=	PYTHONPATH=${TEST_WRKSRC}

@@ -1,8 +1,8 @@
 # Created by: Solène RAPENNE <solene@bsd.zplay.eu>
-# $FreeBSD: head/graphics/sxiv/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/sxiv/Makefile 456688 2017-12-18 22:22:30Z yuri $
 
 PORTNAME=	sxiv
-PORTVERSION=	1.3.2
+PORTVERSION=	24
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics
 
@@ -11,13 +11,14 @@ COMMENT=	Lightweight image viewer
 
 LICENSE=	GPLv2
 
-LIB_DEPENDS=	libImlib2.so:graphics/imlib2 \
-		libexif.so:graphics/libexif
+LIB_DEPENDS=	libexif.so:graphics/libexif \
+		libgif.so:graphics/giflib \
+		libImlib2.so:graphics/imlib2
 
+USES=		gmake localbase:ldflags pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	muennich
-USES=		pkgconfig gmake
-USE_XORG=	x11
+USE_XORG=	x11 xft
 
 PLIST_FILES=	bin/sxiv \
 		man/man1/sxiv.1.gz \

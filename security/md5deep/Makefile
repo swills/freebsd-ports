@@ -1,5 +1,5 @@
 # Created by: Frank Laszlo <laszlof@vonostingroup.com>
-# $FreeBSD: head/security/md5deep/Makefile 385665 2015-05-07 20:24:15Z mat $
+# $FreeBSD: head/security/md5deep/Makefile 457058 2017-12-23 15:00:27Z tijl $
 
 PORTNAME=	md5deep
 PORTVERSION=	4.4
@@ -16,11 +16,7 @@ GH_PROJECT=	hashdeep
 GH_TAGNAME=	cd2ed74
 
 USE_GITHUB=	yes
-USE_AUTOTOOLS=	autoconf:env autoheader:env automake:env aclocal:env
-USES=		gmake
+USES=		autoreconf gmake
 GNU_CONFIGURE=	yes
-
-pre-configure:
-	(cd ${WRKSRC}; ${SH} bootstrap.sh)
 
 .include <bsd.port.mk>

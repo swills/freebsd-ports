@@ -1,5 +1,5 @@
 # Created by: Matthias Sund <m.sund@arcor.de>
-# $FreeBSD: head/devel/upp/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/devel/upp/Makefile 457642 2017-12-30 21:46:46Z krion $
 
 PORTNAME=	upp
 PORTVERSION=	10804
@@ -61,6 +61,7 @@ SDL_USE=	sql
 OPENGL_USE=	gl
 MYSQL_USE=	mysql=yes
 PGSQL_USES=	pgsql
+LLD_UNSAFE=	yes
 
 .include <bsd.port.pre.mk>
 

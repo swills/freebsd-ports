@@ -1,16 +1,16 @@
 # Created by: delphij@FreeBSD.org
-# $FreeBSD: head/mail/libvmime/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/mail/libvmime/Makefile 457756 2018-01-01 09:00:44Z amdmi3 $
 
 PORTNAME=	libvmime
 PORTVERSION=	0.9.2
-PORTREVISION=	2
 DISTVERSIONPREFIX=	v
+PORTREVISION=	2
 CATEGORIES=	mail
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	All-in-one Internet mail library
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libgnutls.so:security/gnutls \

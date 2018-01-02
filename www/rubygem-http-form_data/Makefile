@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-http-form_data/Makefile 441234 2017-05-19 15:35:38Z sunpoet $
+# $FreeBSD: head/www/rubygem-http-form_data/Makefile 456143 2017-12-12 13:33:45Z sunpoet $
 
 PORTNAME=	http-form_data
-PORTVERSION=	1.0.3
+PORTVERSION=	2.0.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

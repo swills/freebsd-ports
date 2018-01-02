@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/rubygem-bootsnap/Makefile 450543 2017-09-24 19:08:40Z sunpoet $
+# $FreeBSD: head/devel/rubygem-bootsnap/Makefile 457407 2017-12-27 19:53:02Z sunpoet $
 
 PORTNAME=	bootsnap
-PORTVERSION=	1.1.3
-PORTREVISION=	1
+PORTVERSION=	1.1.7
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -10,7 +9,7 @@ MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Boot large ruby/rails apps faster
 
 LICENSE=	MIT
-LICENSE_FILE=	${WRKSRC}/LICENSE
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	rubygem-msgpack1>=1.0:devel/rubygem-msgpack1
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/syncplay/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/multimedia/syncplay/Makefile 457469 2017-12-28 19:21:21Z tcberner $
 
 PORTNAME=	syncplay
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.5.0
+DISTVERSION=	1.5.1
 CATEGORIES=	multimedia
 
 MAINTAINER=	heckendorfc@gmail.com
@@ -12,9 +12,11 @@ LICENSE=	APACHE20
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${PY_FLAVOR}
 
-USES=		desktop-file-utils gmake python:2.7
+USES=		desktop-file-utils gmake python:2.7 shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	Syncplay
+SHEBANG_FILES=	syncplayClient.py \
+		syncplayServer.py
 
 NO_ARCH=	yes
 

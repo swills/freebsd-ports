@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/games/whichwayisup/Makefile 371872 2014-10-31 16:11:33Z amdmi3 $
+# $FreeBSD: head/games/whichwayisup/Makefile 456180 2017-12-12 18:34:34Z antoine $
 
 PORTNAME=	whichwayisup
 PORTVERSION=	0.7.9
@@ -22,6 +22,7 @@ RUN_DEPENDS=	${PYGAME}
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 USES=		dos2unix python zip
+USE_PYTHON=	py3kplist
 DOS2UNIX_REGEX=	.*.[^pt][^nt][^gf]
 INSTALLS_ICONS=	yes
 

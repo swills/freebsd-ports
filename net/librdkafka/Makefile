@@ -1,5 +1,5 @@
 # Created by: Victor Yagofarov <xnasx@yandex.ru>
-# $FreeBSD: head/net/librdkafka/Makefile 455640 2017-12-06 09:37:36Z pizzamig $
+# $FreeBSD: head/net/librdkafka/Makefile 457380 2017-12-27 17:47:08Z danfe $
 
 PORTNAME=	librdkafka
 PORTVERSION=	0.11.3
@@ -15,7 +15,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 BROKEN_mips=		fails to build: undefined reference to __sync_add_and_fetch_4
 BROKEN_mips64=		fails to build: undefined reference to __sync_add_and_fetch_4
 BROKEN_powerpc64=	fails to build: cc: Internal error: Segmentation fault (program ld)
-BROKEN_sparc64=		fails to build: internal compiler error
 
 BUILD_DEPENDS=	bash:shells/bash
 LIB_DEPENDS=	liblz4.so:archivers/liblz4

@@ -1,8 +1,8 @@
 # Created by: will
-# $FreeBSD: head/ftp/bftpd/Makefile 453586 2017-11-06 02:35:28Z danilo $
+# $FreeBSD: head/ftp/bftpd/Makefile 457343 2017-12-26 23:26:33Z danilo $
 
 PORTNAME=	bftpd
-PORTVERSION=	4.6
+PORTVERSION=	4.8
 CATEGORIES=	ftp
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
@@ -11,8 +11,9 @@ COMMENT=	Very configurable FTP server that can do chroot easily
 
 LICENSE=	GPLv2
 
-USE_AUTOTOOLS=	autoconf
-CONFIGURE_ARGS+=	--enable-pam
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--enable-pam
+USES=		autoreconf
 
 WRKSRC=	${WRKDIR}/${PORTNAME}
 

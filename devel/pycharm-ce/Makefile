@@ -1,8 +1,8 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/devel/pycharm-ce/Makefile 453309 2017-11-01 17:38:53Z bsam $
+# $FreeBSD: head/devel/pycharm-ce/Makefile 456758 2017-12-19 18:37:38Z bsam $
 
 PORTNAME=	pycharm-ce
-PORTVERSION=	2017.2.4
+PORTVERSION=	2017.3.1
 CATEGORIES=	devel java python
 MASTER_SITES=	https://download.jetbrains.com/python/ \
 		http://download.jetbrains.com/python/
@@ -41,7 +41,7 @@ do-install:
 	@${RM} -r ${STAGEDIR}${DATADIR}/jre64
 	@${RM} -r ${STAGEDIR}${DATADIR}/helpers/pydev/pydevd_attach_to_process
 	@${RM} ${STAGEDIR}${DATADIR}/lib/pty4j-0.5.jar
-	${INSTALL_SCRIPT} ${WRKDIR}/pycharm ${STAGEDIR}${PREFIX}/bin/
+	${INSTALL_SCRIPT} ${WRKDIR}/pycharm ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 	${INSTALL_DATA} ${WRKDIR}/${PORTNAME}.desktop ${STAGEDIR}${PREFIX}/share/applications/
 	#cd ${WRKSRC}/lib && ${JAVA_HOME}/bin/jar xf icons.jar
 # TODO: Remove and enable fsnotifier when devel/libinotify is fixed

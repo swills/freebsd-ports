@@ -1,4 +1,4 @@
-# $FreeBSD: head/GIDs 454616 2017-11-21 15:47:53Z lifanov $
+# $FreeBSD: head/GIDs 456695 2017-12-18 23:57:06Z yuri $
 # Please keep this file sorted by GID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/group
@@ -150,7 +150,6 @@ gnugk:*:205:
 gini:*:206:
 _mixminion:*:207:
 _dnsdist:*:208:
-gogs:*:209:
 shoutcast:*:210:
 git:*:211:
 hg:*:212:

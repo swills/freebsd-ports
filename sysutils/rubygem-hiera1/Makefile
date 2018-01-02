@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/sysutils/rubygem-hiera1/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/sysutils/rubygem-hiera1/Makefile 457538 2017-12-29 18:48:35Z sunpoet $
 
 PORTNAME=	hiera
 PORTVERSION=	1.3.4
@@ -17,6 +17,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 RUN_DEPENDS=	rubygem-json_pure>=0:devel/rubygem-json_pure
 
 CONFLICTS_INSTALL=	rubygem-hiera-*
+
+DEPRECATED=	Use sysutils/rubygem-hiera instead
+EXPIRATION_DATE=2018-01-31
 
 NO_ARCH=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/net/libproxy/Makefile 406680 2016-01-19 10:00:25Z rakuco $
+# $FreeBSD: head/net/libproxy/Makefile 457539 2017-12-29 18:48:39Z sunpoet $
 #    $MCom: ports/net/libproxy/Makefile,v 1.1 2011/01/12 13:10:52 kwm Exp $
 
 PORTNAME=	libproxy
@@ -9,6 +9,9 @@ CATEGORIES?=	net devel
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT?=	Library that provides automatic proxy configuration management
+
+LICENSE=	LGPL21+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 CPE_VENDOR=		libproxy_project
 PATHFIX_CMAKELISTSTXT=	devfiles.cmk

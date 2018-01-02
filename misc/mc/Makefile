@@ -1,9 +1,9 @@
 # Created by: torstenb@FreeBSD.org
-# $FreeBSD: head/misc/mc/Makefile 446488 2017-07-23 15:26:36Z woodsb02 $
+# $FreeBSD: head/misc/mc/Makefile 456522 2017-12-17 06:58:41Z woodsb02 $
 
 PORTNAME=	mc
-PORTVERSION=	4.8.19
-PORTREVISION=	3
+PORTVERSION=	4.8.20
+PORTREVISION=	1
 CATEGORIES=	misc shells
 MASTER_SITES=	http://ftp.midnight-commander.org/ \
 		http://ftp.osuosl.org/pub/midnightcommander/

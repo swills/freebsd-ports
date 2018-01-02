@@ -1,8 +1,8 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime/Makefile 448554 2017-08-22 16:40:38Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime/Makefile 457582 2017-12-30 06:42:23Z sunpoet $
 
 PORTNAME=	DateTime
-PORTVERSION=	1.44
+PORTVERSION=	1.45
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -11,12 +11,13 @@ MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Date and time object
 
 LICENSE=	ART20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-# Do not add p5-DateTime-Format-Strptime>=1.20.00 to TEST_DEPENDS to avoid cyclic dependency in tinderbox
+# Do not add p5-DateTime-Format-Strptime>=1.20.00 to TEST_DEPENDS to avoid cyclic dependency
 BUILD_DEPENDS=	p5-DateTime-Locale>=1.06:devel/p5-DateTime-Locale \
 		p5-DateTime-TimeZone>=2.02:devel/p5-DateTime-TimeZone \
 		p5-Params-Validate>=1.03:devel/p5-Params-Validate \
-		p5-Params-ValidationCompiler>=0.13:devel/p5-Params-ValidationCompiler \
+		p5-Params-ValidationCompiler>=0.26:devel/p5-Params-ValidationCompiler \
 		p5-Specio>=0:devel/p5-Specio \
 		p5-Try-Tiny>=0:lang/p5-Try-Tiny \
 		p5-namespace-autoclean>=0.19:devel/p5-namespace-autoclean

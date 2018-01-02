@@ -1,15 +1,16 @@
 # Created by: Mikhail Teterin <mi@aldan.algebra.com>
-# $FreeBSD: head/net/minidlna/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/net/minidlna/Makefile 456285 2017-12-14 09:31:09Z bapt $
 
 PORTNAME=	minidlna
-PORTVERSION=	1.2.0
-PORTREVISION=	1
+PORTVERSION=	1.2.1
 PORTEPOCH=	1
 CATEGORIES=	net multimedia www
 MASTER_SITES=	SF
 
 MAINTAINER=	wg@FreeBSD.org
 COMMENT=	Media-server compatible with "Digital Life Network Alliance"
+
+LICENSE=	GPLv2
 
 LIB_DEPENDS=	libsqlite3.so:databases/sqlite3	\
 		libexif.so:graphics/libexif	\
@@ -40,11 +41,7 @@ DEBUG_CFLAGS=	-DDEBUG
 KQUEUE_DESC=	Experimental patch for automatic rescan using kqueue(2)
 NLS_USES=	gettext-runtime
 
-.include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MKQUEUE}
-EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-kqueue
-.endif
+KQUEUE_EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-kqueue
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/*.5 ${STAGEDIR}${MANPREFIX}/man/man5/

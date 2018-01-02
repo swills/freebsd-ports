@@ -1,8 +1,7 @@
-# $FreeBSD: head/converters/py-bencode.py/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/converters/py-bencode.py/Makefile 457107 2017-12-23 21:17:23Z antoine $
 
 PORTNAME=	bencode.py
-PORTVERSION=	1.2.0
-PORTREVISION=	1
+PORTVERSION=	2.0.0
 CATEGORIES=	converters devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

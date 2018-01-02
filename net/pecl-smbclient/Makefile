@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/pecl-smbclient/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/net/pecl-smbclient/Makefile 457024 2017-12-23 07:03:21Z antoine $
 
 PORTNAME=	smbclient
 PORTVERSION=	0.9.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net pear
 
 MAINTAINER=	kevlo@FreeBSD.org

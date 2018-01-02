@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv at kvedulv.de>
-# $FreeBSD: head/devel/rubygem-kafo/Makefile 444668 2017-06-29 19:13:24Z sunpoet $
+# $FreeBSD: head/devel/rubygem-kafo/Makefile 456753 2017-12-19 18:21:08Z sunpoet $
 
 PORTNAME=	kafo
-PORTVERSION=	2.0.2
+PORTVERSION=	2.1.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

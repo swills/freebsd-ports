@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/devel/libical-glib/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/libical-glib/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	libical-glib
 PORTVERSION=	1.0.4
@@ -13,6 +13,8 @@ COMMENT=	Introspection bindings for libical
 LIB_DEPENDS=	libical.so:devel/libical
 
 BROKEN=		Does not build with libical >= 2.0
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 USES=		compiler:c11 gettext gmake libtool pathfix pkgconfig tar:xz
 USE_GNOME=	glib20 introspection:build libxml2

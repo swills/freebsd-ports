@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv@kvedulv.de>
-# $FreeBSD: head/www/rubygem-jekyll-watch/Makefile 456015 2017-12-11 10:44:43Z sunpoet $
+# $FreeBSD: head/www/rubygem-jekyll-watch/Makefile 456369 2017-12-14 20:44:21Z sunpoet $
 
 PORTNAME=	jekyll-watch
-PORTVERSION=	1.5.1
+PORTVERSION=	2.0.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

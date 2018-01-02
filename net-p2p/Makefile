@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/Makefile 453798 2017-11-09 07:21:44Z vd $
+# $FreeBSD: head/net-p2p/Makefile 457636 2017-12-30 20:23:12Z swills $
 #
 
     COMMENT = Peer-to-peer network applications
@@ -72,6 +72,7 @@
     SUBDIR += p5-WWW-BitTorrent
     SUBDIR += phex
     SUBDIR += py-py2play
+    SUBDIR += py-tremc
     SUBDIR += py-transmissionrpc
     SUBDIR += py-vertex
     SUBDIR += qbittorrent
@@ -107,6 +108,7 @@
     SUBDIR += verlihub-plugins-messanger
     SUBDIR += verlihub-plugins-stats
     SUBDIR += vuze
+    SUBDIR += xmrig
     SUBDIR += xnap
     SUBDIR += zetacoin
     SUBDIR += zetacoin-nox11

@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/net/polyorb/Makefile 454590 2017-11-21 08:36:26Z mat $
+# $FreeBSD: head/net/polyorb/Makefile 456126 2017-12-12 12:40:15Z antoine $
 
 PORTNAME=	polyorb
 PORTVERSION=	2.11.1
@@ -15,7 +15,7 @@ LICENSE=	GPLv3
 
 BUILD_DEPENDS=	xmlada>=3.2:textproc/xmlada
 
-USES=		ada gmake python:build shebangfix
+USES=		ada gmake python:2.7,build shebangfix
 GNU_CONFIGURE=	yes
 NO_MTREE=	yes
 YEAR=		2014

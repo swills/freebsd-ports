@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/checkbashisms/Makefile 406015 2016-01-13 07:37:03Z miwi $
+# $FreeBSD: head/devel/checkbashisms/Makefile 457205 2017-12-25 05:16:22Z timur $
 
 PORTNAME=	checkbashisms
-PORTVERSION=	2.15.10
+PORTVERSION=	2.17.11
 CATEGORIES=	devel perl5
 MASTER_SITES=	DEBIAN/pool/main/d/devscripts/
 DISTNAME=	devscripts_${PORTVERSION}

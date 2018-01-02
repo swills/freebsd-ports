@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/ruby-date2/Makefile 406285 2016-01-17 07:06:25Z swills $
+# $FreeBSD: head/devel/ruby-date2/Makefile 456320 2017-12-14 17:58:33Z swills $
 
 PORTNAME=	date2
 PORTVERSION=	4.0.19
@@ -13,6 +13,10 @@ COMMENT=	Alternative date class for Ruby
 
 BROKEN_RUBY22=	yes
 BROKEN_RUBY23=	yes
+BROKEN_RUBY24=	yes
+
+DEPRECATED=	Does not build with current versions of ruby
+EXPIRATION_DATE=	2018-01-14
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 

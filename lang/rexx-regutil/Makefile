@@ -1,5 +1,5 @@
 # Created by: Bob Eager <bob@eager.cx>
-# $FreeBSD: head/lang/rexx-regutil/Makefile 453453 2017-11-04 11:43:35Z dbaio $
+# $FreeBSD: head/lang/rexx-regutil/Makefile 457345 2017-12-27 00:54:43Z emaste $
 
 PORTNAME=	regutil
 PORTVERSION=	1.26
@@ -21,6 +21,7 @@ USES=		ncurses zip
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_LDCONFIG=	yes
+LLD_UNSAFE=	yes	# lld lacks built-in search paths
 MAKEFILE=	Makefile.bsd
 MAKE_ARGS+=	PLIBS="${LDFLAGS:M-L*} -lncurses"
 

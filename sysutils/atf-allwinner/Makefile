@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/atf-allwinner/Makefile 446770 2017-07-27 18:12:58Z linimon $
+# $FreeBSD: head/sysutils/atf-allwinner/Makefile 456855 2017-12-20 20:37:01Z manu $
 
 PORTNAME=	atf-allwinner
-PORTVERSION=	1.2.20170726
+PORTVERSION=	1.2.20171017
 CATEGORIES=	sysutils
 MASTER_SITES=	GH
 
@@ -15,7 +15,7 @@ BUILD_DEPENDS=	aarch64-none-elf-gcc:devel/aarch64-none-elf-gcc
 USE_GITHUB=	yes
 GH_ACCOUNT=	apritzel
 GH_PROJECT=	arm-trusted-firmware
-GH_TAGNAME=	87e8aed
+GH_TAGNAME=	91f2402
 
 SSP_UNSAFE=	yes
 USES=	gmake

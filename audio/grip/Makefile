@@ -1,10 +1,9 @@
 # Created by: kbyanc@posi.net
-# $FreeBSD: head/audio/grip/Makefile 454488 2017-11-19 11:37:26Z riggs $
+# $FreeBSD: head/audio/grip/Makefile 456484 2017-12-16 20:07:41Z riggs $
 #    $MCom: ports/audio/grip/Makefile,v 1.4 2007/05/19 21:35:57 marcus Exp $
 
 PORTNAME=	grip
-PORTVERSION=	3.6.1
-PORTREVISION=	1
+PORTVERSION=	3.6.2
 CATEGORIES=	audio
 MASTER_SITES=	SF/grip/${PORTVERSION}
 
@@ -53,7 +52,7 @@ DEFAULT_CDROM_DEVICE=${WITH_CDROM_DEVICE}
 DEFAULT_CDROM_DEVICE=/dev/cd0
 .endif
 
-pre-everything:
+pre-everything::
 .if !defined(WITH_CDROM_DEVICE)
 	@${ECHO_MSG} "===> The default CDROM device is ${DEFAULT_CDROM_DEVICE}"
 	@${ECHO_MSG} "===> Define WITH_CDROM_DEVICE if you want to change the default"

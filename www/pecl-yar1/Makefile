@@ -1,5 +1,5 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/www/pecl-yar1/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/www/pecl-yar1/Makefile 456296 2017-12-14 13:57:28Z tz $
 
 PORTNAME=	yar
 PORTVERSION=	1.2.5
@@ -14,7 +14,7 @@ LICENSE=	PHP301
 
 USES=		localbase php:pecl
 USE_PHP=	json:build curl:build
-IGNORE_WITH_PHP=70 71
+IGNORE_WITH_PHP=70 71 72
 
 OPTIONS_DEFINE=	MSGPACK
 MSGPACK_DESC=	Enable MSGPACK module

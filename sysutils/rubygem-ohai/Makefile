@@ -1,12 +1,12 @@
 # Created by: Renaud Chaput <renchap@cocoa-x.com>
-# $FreeBSD: head/sysutils/rubygem-ohai/Makefile 446981 2017-07-31 15:50:46Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-ohai/Makefile 457536 2017-12-29 18:48:24Z sunpoet $
 
 PORTNAME=	ohai
-PORTVERSION=	13.2.0
+PORTVERSION=	13.7.0
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	renchap@cocoa-x.com
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Ohai profiles your system and emits JSON
 
 LICENSE=	APACHE20

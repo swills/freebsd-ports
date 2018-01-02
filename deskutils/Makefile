@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 454392 2017-11-17 23:11:07Z adridg $
+# $FreeBSD: head/deskutils/Makefile 457422 2017-12-27 20:39:02Z jrm $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -40,7 +40,6 @@
     SUBDIR += drivel
     SUBDIR += easystroke
     SUBDIR += egroupware
-    SUBDIR += etask
     SUBDIR += everygui
     SUBDIR += fbreader
     SUBDIR += fet
@@ -144,6 +143,7 @@
     SUBDIR += lumina-fm
     SUBDIR += lumina-mediaplayer
     SUBDIR += lumina-notify
+    SUBDIR += lumina-pdf
     SUBDIR += lumina-screenshot
     SUBDIR += lumina-textedit
     SUBDIR += lumina-xdg-entry
@@ -220,6 +220,7 @@
     SUBDIR += rubygem-shellplay
     SUBDIR += rubygem-taskjuggler
     SUBDIR += semantik
+    SUBDIR += showdown
     SUBDIR += shutter
     SUBDIR += silence
     SUBDIR += simpleagenda

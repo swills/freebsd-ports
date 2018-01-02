@@ -1,9 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-mwlib/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-mwlib/Makefile 457310 2017-12-26 19:12:56Z lwhsu $
 
 PORTNAME=	mwlib
-PORTVERSION=	0.15.14
-PORTREVISION=	7
+PORTVERSION=	0.15.19
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +14,6 @@ LICENSE=	BSD3CLAUSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}apipkg>=1.2:devel/py-apipkg@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}bottle>=0.10:www/py-bottle@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}flup>=1.0:www/py-flup@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}gevent>=0:devel/py-gevent@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}lockfile>=0.8:devel/py-lockfile@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}lxml>=0:devel/py-lxml@${FLAVOR} \
@@ -33,7 +31,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}apipkg>=1.2:devel/py-apipkg@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}timelib>=0.2:devel/py-timelib@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}webob>=0.9.6.1:www/py-webob@${FLAVOR}
 
-USES=		python:2 shebangfix zip
+USES=		python:2.7 shebangfix zip
 SHEBANG_FILES=	mwlib/EasyTimeline.pl mwlib/writer/*.py \
 		mwlib/refine/*.py mwlib/parser/*.py \
 		mwlib/net/*.py mwlib/siteinfo/*.py

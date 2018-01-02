@@ -1,5 +1,5 @@
 # Created by: Marcin Jessa <yazzy@yazzy.org>
-# $FreeBSD: head/net/py-pcapy/Makefile 433754 2017-02-09 17:46:26Z krion $
+# $FreeBSD: head/net/py-pcapy/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	pcapy
 PORTVERSION=	0.11.1
@@ -13,7 +13,7 @@ COMMENT=	Python pcap extension
 LICENSE=	APACHE11
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		python:2.7+ dos2unix
+USES=		python dos2unix
 USE_PYTHON=	autoplist distutils
 
 DOCSDIR=	${PREFIX}/share/doc/py-${PORTNAME}

@@ -1,9 +1,8 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-ClassAPI/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/devel/p5-Test-ClassAPI/Makefile 457611 2017-12-30 18:16:32Z sunpoet $
 
 PORTNAME=	Test-ClassAPI
-PORTVERSION=	1.06
-PORTREVISION=	1
+PORTVERSION=	1.07
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -11,11 +10,16 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Provides basic first-pass API testing for large class trees
 
-RUN_DEPENDS=	p5-Class-Inspector>=1.12:devel/p5-Class-Inspector \
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BUILD_DEPENDS=	p5-Class-Inspector>=1.12:devel/p5-Class-Inspector \
 		p5-Config-Tiny>=2.00:devel/p5-Config-Tiny \
 		p5-Params-Util>=1.00:devel/p5-Params-Util
-BUILD_DEPENDS:=	${RUN_DEPENDS}
+RUN_DEPENDS:=	${BUILD_DEPENDS}
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

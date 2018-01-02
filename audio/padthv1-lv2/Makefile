@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/padthv1-lv2/Makefile 455749 2017-12-07 18:23:15Z yuri $
+# $FreeBSD: head/audio/padthv1-lv2/Makefile 456968 2017-12-22 06:39:41Z yuri $
 
 PORTNAME=	padthv1
 DISTVERSIONPREFIX=	${PORTNAME}_
-DISTVERSION=	0_8_5
+DISTVERSION=	0_8_6
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 
@@ -23,6 +23,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	rncbc
 USE_GL=		gl
 USE_QT5=	core gui widgets xml buildtools_build qmake_build
+
+PLIST_SUB=	SHL3=${PORTVERSION} SHL2=${PORTVERSION:R} SHL1=${PORTVERSION:R:R}
 
 CONFIGURE_ARGS=	--disable-alsa-midi
 

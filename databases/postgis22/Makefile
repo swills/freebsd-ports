@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/postgis22/Makefile 437827 2017-04-05 19:58:55Z sunpoet $
+# $FreeBSD: head/databases/postgis22/Makefile 456527 2017-12-17 11:25:13Z rodrigo $
 
 PORTNAME=	postgis
-PORTVERSION=	2.2.5
+PORTVERSION=	2.2.6
 CATEGORIES=	databases geography
 MASTER_SITES=	http://download.osgeo.org/postgis/source/
 PKGNAMESUFFIX=	22
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libproj.so:graphics/proj \
 		libgeos.so:graphics/geos \
 		libjson-c.so:devel/json-c
 
-CONFLICTS=	postgis20-2.0.* postgis-2.1.* postgis23-2.3.*
+CONFLICTS_INSTALL=	postgis20 postgis21 postgis23 postgis24 postgis
 
 USES=		gettext gmake iconv:wchar_t libtool:keepla perl5 pgsql pkgconfig shebangfix
 GNU_CONFIGURE=	yes

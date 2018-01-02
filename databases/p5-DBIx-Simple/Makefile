@@ -1,8 +1,8 @@
 # Created by: Parv <parv@pair.org>
-# $FreeBSD: head/databases/p5-DBIx-Simple/Makefile 455976 2017-12-11 10:41:16Z sunpoet $
+# $FreeBSD: head/databases/p5-DBIx-Simple/Makefile 456146 2017-12-12 13:34:01Z sunpoet $
 
 PORTNAME=	DBIx-Simple
-PORTVERSION=	1.36
+PORTVERSION=	1.37
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

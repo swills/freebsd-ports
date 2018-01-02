@@ -1,15 +1,15 @@
 # Created by: amistry@am-productions.biz
-# $FreeBSD: head/print/hplip/Makefile 450329 2017-09-22 09:04:22Z woodsb02 $
+# $FreeBSD: head/print/hplip/Makefile 457127 2017-12-24 07:10:45Z woodsb02 $
 
 PORTNAME=	hplip
-PORTVERSION=	3.17.9
+PORTVERSION=	3.17.11
 CATEGORIES=	print
 MASTER_SITES=	SF
 
 MAINTAINER=	woodsb02@FreeBSD.org
 COMMENT=	Drivers and utilities for HP printers and All-in-One devices
 
-LICENSE=	GPLv2 MIT BSD3CLAUSE
+LICENSE=	GPLv2+ MIT BSD3CLAUSE
 LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/COPYING
 

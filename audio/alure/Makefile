@@ -1,5 +1,5 @@
-# Created by: nemysis <nemysis@gmx.ch>
-# $FreeBSD: head/audio/alure/Makefile 412344 2016-04-01 13:29:15Z mat $
+ # Created by: nemysis <nemysis@gmx.ch2
+# $FreeBSD: head/audio/alure/Makefile 457512 2017-12-29 16:24:15Z emaste $
 
 PORTNAME=	alure
 PORTVERSION=	1.2
@@ -14,6 +14,7 @@ LICENSE=	MIT
 
 USES=		cmake openal:soft pkgconfig
 USE_LDCONFIG=	yes
+LLD_UNSAFE=	yes	# lld disallows preemption of protected visibility syms
 CMAKE_ARGS=	-DBUILD_STATIC:BOOL=FALSE
 
 PORTDOCS=	*

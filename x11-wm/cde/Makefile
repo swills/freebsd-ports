@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-wm/cde/Makefile 447001 2017-07-31 22:03:45Z crees $
+# $FreeBSD: head/x11-wm/cde/Makefile 457133 2017-12-24 08:56:23Z antoine $
 
 PORTNAME=	cde
 DISTVERSION=	2.2.3
@@ -21,7 +21,6 @@ SHEBANG_FILES=	programs/dtdocbook/sgmls/sgmls.pl \
 USE_LDCONFIG=	${PREFIX}/dt/lib
 USE_RC_SUBR=	dtcms dtspc
 USE_XORG=	xinerama xp xt
-USE_XZ=		yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSION}
 ALL_TARGET=	World

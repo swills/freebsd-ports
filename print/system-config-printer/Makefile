@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/print/system-config-printer/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/system-config-printer/Makefile 456217 2017-12-13 16:05:48Z antoine $
 
 PORTNAME=	system-config-printer
 PORTVERSION=	1.4.7
@@ -13,8 +13,8 @@ COMMENT=	CUPS configuration Gtk+2.0 GUI
 BUILD_DEPENDS=	xmlto:textproc/xmlto \
 		docbook-xml>0:textproc/docbook-xml
 LIB_DEPENDS=	libcups.so:print/cups
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/cups.so:print/py-pycups \
-		${PYTHON_SITELIBDIR}/pycurl.so:ftp/py-pycurl \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycups>=0:print/py-pycups@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pycurl>=0:ftp/py-pycurl@${PY_FLAVOR} \
 		${LOCALBASE}/libexec/cups-pk-helper-mechanism:print/cups-pk-helper
 
 # 1.5 series is python3 ignore them for now.

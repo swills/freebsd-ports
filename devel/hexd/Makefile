@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/hexd/Makefile 452971 2017-10-27 11:58:20Z tobik $
+# $FreeBSD: head/devel/hexd/Makefile 457185 2017-12-24 18:15:51Z olgeni $
 
 PORTNAME=	hexd
-PORTVERSION=	g20170531
+DISTVERSIONPREFIX=v
+DISTVERSION=	1.0.0
 CATEGORIES=	devel
 
 MAINTAINER=	mail@dbalan.in
@@ -13,7 +14,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USES=		gmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	FireyFly
-GH_TAGNAME=	934a506
 
 PLIST_FILES=	bin/hexd \
 		man/man1/hexd.1.gz

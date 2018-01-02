@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-zc.buildout/Makefile 445829 2017-07-14 20:19:28Z rm $
+# $FreeBSD: head/devel/py-zc.buildout/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	zc.buildout
 PORTVERSION=	2.9.4
@@ -14,7 +14,7 @@ LICENSE=	ZPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 NO_ARCH=	yes
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

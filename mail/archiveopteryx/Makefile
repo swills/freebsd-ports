@@ -1,5 +1,5 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/mail/archiveopteryx/Makefile 439779 2017-04-30 01:12:10Z linimon $
+# $FreeBSD: head/mail/archiveopteryx/Makefile 456294 2017-12-14 13:53:49Z amdmi3 $
 
 PORTNAME=	archiveopteryx
 PORTVERSION=	3.2.0
@@ -32,12 +32,13 @@ PLIST_SUB+=	USERS="${USERS}"
 PLIST_SUB+=	GROUPS="${GROUPS}"
 
 JAM?=		${LOCALBASE}/bin/jam
+JAMARG+=	-dx
 
 .include <bsd.port.pre.mk>
 
 # force Clang when on FreeBSD
 .if ${OPSYS} == FreeBSD
-JAMARG=	"-sCLANG=1"
+JAMARG+=	"-sCLANG=1"
 .endif
 
 post-patch:

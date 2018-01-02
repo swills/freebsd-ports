@@ -1,5 +1,5 @@
 # Created by: Pete Fritchman <petef@databits.net>
-# $FreeBSD: head/www/crawl/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/www/crawl/Makefile 457211 2017-12-25 09:00:39Z amdmi3 $
 
 PORTNAME=	crawl
 PORTVERSION=	0.4
@@ -26,7 +26,7 @@ post-patch:
 	@${REINPLACE_CMD} -e 's,/usr/include/db2,${BDB_INCLUDE_DIR},g' \
 		-e 's,db2,${BDB_LIB_NAME},g' ${WRKSRC}/configure.in
 
-post-install:
+post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${WRKSRC}/crawl.conf ${STAGEDIR}${EXAMPLESDIR}
 

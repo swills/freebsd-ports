@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/security/mdcrack/Makefile 440786 2017-05-13 11:02:37Z miwi $
+# $FreeBSD: head/security/mdcrack/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	mdcrack
 PORTVERSION=	1.2
@@ -16,6 +16,8 @@ MAKE_ARGS=	LDFLAGS="${LDFLAGS} -lncurses"
 
 USES=		compiler:features ncurses
 BROKEN=		checksum mismatch
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 .include <bsd.port.pre.mk>
 

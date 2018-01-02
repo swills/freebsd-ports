@@ -1,5 +1,5 @@
 # Created by: TAKATSU Tomonari <tota@rtfm.jp>
-# $FreeBSD: head/www/samidare/Makefile 413914 2016-04-23 20:43:52Z swills $
+# $FreeBSD: head/www/samidare/Makefile 456338 2017-12-14 19:33:41Z swills $
 
 PORTNAME=	samidare
 PORTVERSION=	0.7
@@ -31,6 +31,10 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 
 BROKEN_RUBY22=	yes
 BROKEN_RUBY23=	yes
+BROKEN_RUBY24=	yes
+
+DEPRECATED=	Does not build with current versions of ruby
+EXPIRATION_DATE=	2018-01-14
 
 post-build:
 	@${REINPLACE_CMD} -e '1d' ${BUILD_WRKSRC}/${PORTNAME}

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/gsculpt/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/gsculpt/Makefile 456719 2017-12-19 14:41:29Z linimon $
 
 PORTNAME=	gsculpt
 PORTVERSION=	0.99.47
@@ -18,6 +18,7 @@ LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PyOpenGL>0:graphics/py-PyOpenGL@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}gtkglext>0:x11-toolkits/py-gtkglext@${PY_FLAVOR}
 
+BROKEN_aarch64=		fails to compile: cpp/extlibs/greenlet/greenlet.c:254:2: greenlet needs to be ported to this platform
 BROKEN_powerpc=		fails to compile
 BROKEN_sparc64=		fails to compile
 

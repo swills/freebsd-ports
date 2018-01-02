@@ -1,5 +1,5 @@
 # Created by: David Le Brun <david@trucs.org>
-# $FreeBSD: head/astro/viking/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/astro/viking/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	viking
 PORTVERSION=	1.6.2
@@ -14,6 +14,8 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN=		wrong LIB_DEPENDS
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/pthread-stubs.pc:devel/libpthread-stubs
 LIB_DEPENDS=	libcurl.so:ftp/curl \

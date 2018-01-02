@@ -1,9 +1,10 @@
 # Created by: Stacey Son <mythdev@son.org>, Ari Maniatis <ari@ish.com.au>
-# $FreeBSD: head/multimedia/mythtv/Makefile 455392 2017-12-03 08:25:31Z antoine $
+# $FreeBSD: head/multimedia/mythtv/Makefile 456874 2017-12-20 23:29:02Z tobik $
 
 PORTNAME=	mythtv
-PORTVERSION=	0.28.7
-PORTREVISION=	1
+DISTVERSIONPREFIX=	v
+DISTVERSION=	0.27.5
+PORTEPOCH=	1
 CATEGORIES=	multimedia
 
 MAINTAINER=	ports@FreeBSD.org
@@ -31,7 +32,6 @@ CONFLICTS=	mythtv-frontend-[0-9]*
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	MythTV
-GH_TAGNAME=	ad97d24
 
 WRKSRC_SUBDIR=	${PORTNAME}
 

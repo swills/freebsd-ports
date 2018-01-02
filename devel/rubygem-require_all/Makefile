@@ -1,8 +1,8 @@
 # Created by: rpsfa@rit.edu
-# $FreeBSD: head/devel/rubygem-require_all/Makefile 430806 2017-01-07 15:26:49Z sunpoet $
+# $FreeBSD: head/devel/rubygem-require_all/Makefile 457621 2017-12-30 18:17:24Z sunpoet $
 
 PORTNAME=	require_all
-PORTVERSION=	1.4.0
+PORTVERSION=	1.5.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,5 +1,5 @@
 # Created by: Laurent Courty
-# $FreeBSD: head/astro/gpsbabel14/Makefile 428144 2016-12-08 17:40:41Z tijl $
+# $FreeBSD: head/astro/gpsbabel14/Makefile 457178 2017-12-24 16:41:38Z tijl $
 
 PORTNAME=	gpsbabel
 PORTVERSION=	1.4.4
@@ -17,10 +17,10 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libexpat.so:textproc/expat2
 
-USE_AUTOTOOLS=	autoconf
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-expathdr=${LOCALBASE}/include \
 		--with-libexpat=${LOCALBASE}/lib
+USES=		autoreconf
 
 PLIST_FILES=	bin/gpsbabel
 

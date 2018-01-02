@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/graphics/gimp-refocus-plugin/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/gimp-refocus-plugin/Makefile 456613 2017-12-18 10:57:25Z amdmi3 $
 
 PORTNAME=	refocus
 PORTVERSION=	0.9.0
@@ -12,7 +12,7 @@ PKGNAMESUFFIX=	-plugin
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GIMP plugin to "refocus" images through FIR Wiener filtering
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libgimp-2.0.so:graphics/gimp-app \

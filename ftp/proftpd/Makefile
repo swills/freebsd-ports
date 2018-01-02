@@ -1,5 +1,5 @@
 # Created by: Stephane Legrand
-# $FreeBSD: head/ftp/proftpd/Makefile 446747 2017-07-27 15:25:30Z mm $
+# $FreeBSD: head/ftp/proftpd/Makefile 457183 2017-12-24 17:36:04Z tijl $
 
 PORTNAME?=	proftpd
 .if !defined(DISTVERSION)
@@ -49,7 +49,6 @@ PORTDOCS=	*
 
 MAKE_JOBS_UNSAFE=	yes
 USES+=		cpe gmake libtool
-USE_AUTOTOOLS=	autoconf
 GNU_CONFIGURE=	yes
 
 .if !defined(_BUILDING_PROFTPD_MODULE)

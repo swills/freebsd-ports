@@ -1,11 +1,11 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/converters/p5-JSON-PP/Makefile 455953 2017-12-11 10:37:59Z sunpoet $
+# $FreeBSD: head/converters/p5-JSON-PP/Makefile 457228 2017-12-25 13:53:34Z sunpoet $
 
 PORTNAME=	JSON-PP
-PORTVERSION=	2.97000
+PORTVERSION=	2.97001
 CATEGORIES=	converters perl5
 MASTER_SITES=	CPAN
-MASTER_SITE_SUBDIR=	CPAN:MAKAMAKA
+MASTER_SITE_SUBDIR=	CPAN:ISHIGAKI
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	sunpoet@FreeBSD.org

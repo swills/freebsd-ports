@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: head/net/ceph/files/ceph.in 449176 2017-09-03 08:29:57Z pi $
+# $FreeBSD: head/net/ceph/files/ceph.in 457752 2018-01-01 01:36:00Z jbeich $
 #
 
 # PROVIDE: ceph
@@ -32,5 +32,5 @@ stop_cmd="%%PREFIX%%/bin/init-ceph $*"
 restart_cmd="%%PREFIX%%/bin/init-ceph $*"
 condrestart_cmd="%%PREFIX%%/bin/init-ceph $*"
 
-run_rc_command "$1" 
+run_rc_command "$1" "$*"
 

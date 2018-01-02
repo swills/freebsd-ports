@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/net/pecl-oauth/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/net/pecl-oauth/Makefile 456296 2017-12-14 13:57:28Z tz $
 
 PORTNAME=	oauth
 PORTVERSION=	1.2.3
@@ -21,6 +21,6 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 CONFIGURE_ARGS+=	CFLAGS="${CFLAGS}" LDFLAGS="${LDFLAGS}"
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71
+IGNORE_WITH_PHP=	70 71 72
 
 .include <bsd.port.mk>

@@ -1,15 +1,17 @@
 # Created by: ijliao
-# $FreeBSD: head/math/clarence/Makefile 455541 2017-12-04 21:00:33Z antoine $
+# $FreeBSD: head/math/clarence/Makefile 457829 2018-01-02 01:51:11Z linimon $
 
 PORTNAME=	clarence
 PORTVERSION=	0.4.4
 PORTREVISION=	8
 CATEGORIES=	math python
-MASTER_SITES=	http://www.sourcefiles.org/Productivity_Tools/Calculators/ \
-		ftp://ftp.tu-chemnitz.de/.SAN0/pub/linux/sunsite.unc-mirror/distributions/sourcemage/grimoire/fallback/fallback/
+MASTER_SITES=	# disappeared
 
 MAINTAINER=	psh@iki.fi
 COMMENT=	Programmer's calculator
+
+DEPRECATED=		Mastersite disappeared
+EXPIRATION_DATE=	2018-03-01
 
 USES=		python:2.7 shebangfix
 USE_GNOME=	pygtk2

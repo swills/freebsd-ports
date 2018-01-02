@@ -1,5 +1,5 @@
 # Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/math/ufc/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/math/ufc/Makefile 456845 2017-12-20 19:34:11Z bapt $
 
 PORTNAME=	ufc
 PORTVERSION=	${MMVERSION}.0
@@ -10,7 +10,7 @@ MASTER_SITES=	http://launchpad.net/${PORTNAME}/${MMVERSION}.x/${PORTVERSION}/+do
 MAINTAINER=	bacon4000@gmail.com
 COMMENT=	Unified framework for finite element assembly
 
-BUILD_DEPENDS=	swig2.0:devel/swig20
+BUILD_DEPENDS=	swig3.0:devel/swig30
 LIB_DEPENDS=	libboost_math_c99.so:devel/boost-libs
 
 # LICENSE=	public domain

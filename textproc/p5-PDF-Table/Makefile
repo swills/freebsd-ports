@@ -1,8 +1,8 @@
 # Created by: scheidell@secnap.net
-# $FreeBSD: head/textproc/p5-PDF-Table/Makefile 445413 2017-07-09 21:29:53Z danilo $
+# $FreeBSD: head/textproc/p5-PDF-Table/Makefile 457324 2017-12-26 22:46:17Z danilo $
 
 PORTNAME=	PDF-Table
-DISTVERSION=	0.9.13
+DISTVERSION=	0.9.14
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

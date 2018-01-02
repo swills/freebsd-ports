@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/libvdpau-va-gl/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/multimedia/libvdpau-va-gl/Makefile 456184 2017-12-12 21:29:57Z madpilot $
 
 PORTNAME=	libvdpau-va-gl
 PORTVERSION=	0.4.2
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	multimedia
 

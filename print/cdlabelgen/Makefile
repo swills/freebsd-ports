@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@jelal.kn-bremen.de>
-# $FreeBSD: head/print/cdlabelgen/Makefile 410875 2016-03-12 12:23:58Z rakuco $
+# $FreeBSD: head/print/cdlabelgen/Makefile 456971 2017-12-22 09:00:36Z amdmi3 $
 
 PORTNAME=	cdlabelgen
 PORTVERSION=	4.3.0
@@ -8,6 +8,9 @@ MASTER_SITES=	http://www.aczoom.com/pub/tools/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Generate postscript for frontcards and traycards for CDs
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		perl5 tar:tgz shebangfix
 SHEBANG_FILES=	cdlabelgen
@@ -20,5 +23,8 @@ MAKE_ARGS=	BASE_DIR="${STAGEDIR}${PREFIX}" \
 		INSTALL_FILE="${INSTALL_DATA}" \
 		INSTALL_MAN="${INSTALL_MAN}" \
 		MAN_DIR="${STAGEDIR}${PREFIX}/man"
+
+post-extract:
+	@${SED} -ne '5,35 {s|# *||;p;}' ${WRKSRC}/${PORTNAME} > ${WRKSRC}/COPYING
 
 .include <bsd.port.mk>

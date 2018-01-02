@@ -1,5 +1,5 @@
 # Created by: nork@FreeBSD.org
-# $FreeBSD: head/japanese/xgate/Makefile 431402 2017-01-13 16:54:55Z mat $
+# $FreeBSD: head/japanese/xgate/Makefile 456277 2017-12-14 06:28:44Z antoine $
 
 PORTNAME=	xgate
 PORTVERSION=	3.7pl6
@@ -10,6 +10,8 @@ DISTNAME=	${PORTNAME}pkg${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Webmail system xGate implemented by Servlet over IMAP4/POP3
+
+BROKEN=		unfetchable
 
 RUN_DEPENDS=	${APP_HOME}/bin/bootstrap.jar:www/tomcat6
 

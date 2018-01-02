@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-r18n-core/Makefile 450267 2017-09-21 15:29:19Z sunpoet $
+# $FreeBSD: head/devel/rubygem-r18n-core/Makefile 457080 2017-12-23 16:50:14Z sunpoet $
 
 PORTNAME=	r18n-core
-PORTVERSION=	2.1.8
+PORTVERSION=	2.2.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

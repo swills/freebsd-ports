@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-dfdatetime/Makefile 455371 2017-12-02 13:37:07Z antoine $
+# $FreeBSD: head/security/py-dfdatetime/Makefile 457698 2017-12-31 15:57:33Z antoine $
 
 PORTNAME=	dfdatetime
-PORTVERSION=	20171109
+PORTVERSION=	20171228
 CATEGORIES=	security devel python
 MASTER_SITES=	CHEESESHOP \
 		https://github.com/log2timeline/dfdatetime/releases/download/${PORTVERSION}/

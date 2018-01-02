@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/pire/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/devel/pire/Makefile 457168 2017-12-24 14:54:42Z linimon $
 
 PORTNAME=	pire
 PORTVERSION=	0.0.5
@@ -21,8 +21,5 @@ INSTALL_TARGET=	install-strip
 USES=		autoreconf bison libtool
 USE_LDCONFIG=	yes
 TEST_TARGET=	check
-
-ONLY_FOR_ARCHS=		amd64 i386
-ONLY_FOR_ARCHS_REASON=	not yet ported to big-endian platforms
 
 .include <bsd.port.mk>

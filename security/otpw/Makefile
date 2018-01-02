@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/otpw/Makefile 418200 2016-07-07 22:15:35Z jkim $
+# $FreeBSD: head/security/otpw/Makefile 457344 2017-12-27 00:32:31Z emaste $
 
 PORTNAME=	otpw
 PORTVERSION=	1.5
@@ -16,6 +16,7 @@ USERS=		${PORTNAME}
 
 MAKE_ARGS=	CC="${CC}"
 USES=		gmake
+LLD_UNSAFE=	yes	# lld lacks built-in search paths
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/otpw-gen ${STAGEDIR}${PREFIX}/bin

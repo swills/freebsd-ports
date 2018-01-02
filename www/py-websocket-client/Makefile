@@ -1,8 +1,8 @@
 # Created by: Alfred Perlstein <alfred@freebsd.org>
-# $FreeBSD: head/www/py-websocket-client/Makefile 415285 2016-05-15 21:07:00Z alfred $
+# $FreeBSD: head/www/py-websocket-client/Makefile 457282 2017-12-26 11:15:52Z alfred $
 
 PORTNAME=	websocket-client
-PORTVERSION=	0.37.0
+PORTVERSION=	0.45.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

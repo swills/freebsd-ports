@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/7kaa/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/7kaa/Makefile 456723 2017-12-19 15:17:07Z linimon $
 
 PORTNAME=	7kaa
 PORTVERSION=	2.14.7
@@ -15,6 +15,10 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libenet.so:net/enet \
 		libcurl.so:ftp/curl
+
+BROKEN_aarch64=		fails to compile: OBULLET.cpp:41:9: constant expression evaluates to -1 which cannot be narrowed to type 'char'
+BROKEN_armv6=		fails to compile: OBULLET.cpp:41:9: constant expression evaluates to -1 which cannot be narrowed to type 'char'
+BROKEN_armv7=		fails to compile: OBULLET.cpp:41:9: constant expression evaluates to -1 which cannot be narrowed to type 'char'
 
 USES=		compiler:c++11-lib gmake localbase openal:al pkgconfig tar:xz
 GNU_CONFIGURE=	yes

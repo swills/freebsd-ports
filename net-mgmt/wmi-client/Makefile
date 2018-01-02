@@ -1,5 +1,5 @@
 # Created by: KIKUCHI Koichiro <koichiro@rworks.jp>
-# $FreeBSD: head/net-mgmt/wmi-client/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-mgmt/wmi-client/Makefile 457095 2017-12-23 17:59:50Z tijl $
 
 PORTNAME=	wmi
 PORTVERSION=	1.3.16
@@ -16,8 +16,7 @@ COMMENT=	DCOM/WMI client implementation
 OPTIONS_DEFINE=	PYTHON
 PYTHON_DESC=	Build Python bindings
 
-USE_AUTOTOOLS=	autoconf:env autoheader:env
-USES=		iconv gmake tar:bzip2
+USES=		autoreconf:build gmake iconv tar:bzip2
 
 MAKEFILE=	GNUmakefile
 MAKE_ARGS+=	ZENHOME="${PREFIX}" INSTALL_PROGRAM="${INSTALL_PROGRAM}" \

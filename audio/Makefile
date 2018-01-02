@@ -1,8 +1,9 @@
-# $FreeBSD: head/audio/Makefile 455774 2017-12-08 07:00:12Z yuri $
+# $FreeBSD: head/audio/Makefile 456964 2017-12-22 02:49:17Z araujo $
 #
 
     COMMENT = Audio tools
 
+    SUBDIR += GxSwitchlessWah-lv2
     SUBDIR += HVSC-Update
     SUBDIR += Maaate
     SUBDIR += aacgain
@@ -68,7 +69,6 @@
     SUBDIR += carla
     SUBDIR += cava
     SUBDIR += ccaudio2
-    SUBDIR += cd-console
     SUBDIR += cd-discid
     SUBDIR += cd2mp3
     SUBDIR += cddb-bundle
@@ -143,6 +143,7 @@
     SUBDIR += faac
     SUBDIR += faad
     SUBDIR += fapg
+    SUBDIR += faust
     SUBDIR += fcplay
     SUBDIR += fdk-aac
     SUBDIR += fdmf
@@ -371,7 +372,6 @@
     SUBDIR += ladspa
     SUBDIR += lame
     SUBDIR += lash
-    SUBDIR += last.fm
     SUBDIR += lastfm-desktop
     SUBDIR += liba52
     SUBDIR += libaacplus
@@ -629,6 +629,7 @@
     SUBDIR += patchage
     SUBDIR += pavucontrol
     SUBDIR += pavumeter
+    SUBDIR += pc-mixer
     SUBDIR += pd
     SUBDIR += pd-cyclone
     SUBDIR += pear-Text_Spell_Audio

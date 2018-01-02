@@ -1,5 +1,5 @@
 # Created by: Paul Dlug<paul@nerdlabs.com>
-# $FreeBSD: head/net-mgmt/nrpe3/Makefile 451775 2017-10-11 19:31:16Z zeising $
+# $FreeBSD: head/net-mgmt/nrpe3/Makefile 457759 2018-01-01 09:17:09Z zeising $
 
 PORTNAME=	nrpe
 PORTVERSION=	3.2.1
@@ -12,8 +12,6 @@ MAINTAINER=	zeising@FreeBSD.org
 COMMENT?=	Nagios Remote Plugin Executor
 
 LICENSE=	GPLv2
-
-CONFLICTS=	nrpe nrpe-ssl
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	NagiosEnterprises
@@ -35,9 +33,8 @@ MONPLUGINS_DESC=Use net-mgmt/monitoring-plugins
 
 SSL_USES=		ssl
 SSL_CONFIGURE_ENABLE=	ssl
-SSL_CONFIGURE_ON=	--with-ssl=${OPENSSLDIR} \
-			--with-ssl-inc=${OPENSSLINC} \
-			--with-ssl-lib=${OPENSSLLIB}
+SSL_CONFIGURE_WITH=	ssl=${OPENSSLBASE} ssl-inc=${OPENSSLINC} ssl-lib=${OPENSSLLIB}
+SSL_CFLAGS=		-I${OPENSSLINC}
 
 ARGS_CONFIGURE_ON=	--enable-command-args
 ARGS_CONFIGURE_OFF=	--disable-command-args

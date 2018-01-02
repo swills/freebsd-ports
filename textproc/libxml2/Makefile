@@ -1,8 +1,8 @@
 # Created by: Yukihiro Nakai <Nakai@technologist.com>
-# $FreeBSD: head/textproc/libxml2/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/textproc/libxml2/Makefile 456210 2017-12-13 14:46:44Z swills $
 
 PORTNAME=	libxml2
-PORTVERSION=	2.9.4
+PORTVERSION=	2.9.7
 PORTREVISION?=	0
 CATEGORIES?=	textproc gnome
 MASTER_SITES=	ftp://xmlsoft.org/libxml2/ \

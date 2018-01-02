@@ -1,22 +1,21 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/finance/R-cran-fBasics/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/finance/R-cran-fBasics/Makefile 456604 2017-12-18 09:04:34Z dbn $
 
 PORTNAME=	fBasics
-PORTVERSION=	3011.87
-PORTREVISION=	1
+DISTVERSION=	3042.89
 CATEGORIES=	finance
-DISTNAME=	${PORTNAME}_${PORTVERSION}
+DISTNAME=	${PORTNAME}_${DISTVERSION}
 
 MAINTAINER=	dbn@FreeBSD.org
-COMMENT=	Markets and Basic Statistics
+COMMENT=	Rmetrics - Markets and Basic Statistics
 
-LICENSE=	GPLv2 GPLv3
-LICENSE_COMB=	dual
+LICENSE=	GPLv2+
 
 RUN_DEPENDS=	R-cran-timeDate>0:finance/R-cran-timeDate \
-		R-cran-timeSeries>=2100.84:finance/R-cran-timeSeries \
-		R-cran-stabledist>0:math/R-cran-stabledist \
-		R-cran-gss>0:math/R-cran-gss
+		R-cran-timeSeries>0:finance/R-cran-timeSeries \
+		R-cran-gss>0:math/R-cran-gss \
+		R-cran-stabledist>0:math/R-cran-stabledist
+TEST_DEPENDS=	R-cran-RUnit>0:devel/R-cran-RUnit
 
 USES=		cran:auto-plist,compiles
 

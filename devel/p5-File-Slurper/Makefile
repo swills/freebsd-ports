@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-File-Slurper/Makefile 450066 2017-09-18 17:49:13Z sunpoet $
+# $FreeBSD: head/devel/p5-File-Slurper/Makefile 456746 2017-12-19 18:20:31Z sunpoet $
 
 PORTNAME=	File-Slurper
-PORTVERSION=	0.010
+PORTVERSION=	0.011
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

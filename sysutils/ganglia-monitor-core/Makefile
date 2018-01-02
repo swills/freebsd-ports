@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/ganglia-monitor-core/Makefile 420087 2016-08-11 16:37:47Z skreuzer $
+# $FreeBSD: head/sysutils/ganglia-monitor-core/Makefile 456126 2017-12-12 12:40:15Z antoine $
 
 PORTNAME=	monitor-core
 PORTVERSION=	3.7.1
@@ -25,7 +25,7 @@ OPTIONS_DEFINE=	GMETAD
 OPTIONS_DEFAULT=	GMETAD
 GMETAD_DESC=	include gmetad
 
-USES=		libtool pkgconfig python
+USES=		libtool pkgconfig python:2.7
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-setuid=ganglia --enable-setgid=ganglia \

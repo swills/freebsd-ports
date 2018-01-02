@@ -1,8 +1,8 @@
 # Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/cad/openvsp/Makefile 455919 2017-12-11 03:04:29Z swills $
+# $FreeBSD: head/cad/openvsp/Makefile 456773 2017-12-20 02:27:53Z swills $
 
 PORTNAME=	openvsp
-PORTVERSION=	3.14.1
+PORTVERSION=	3.14.2
 DISTVERSIONPREFIX=	${GH_PROJECT}_
 CATEGORIES=	cad
 
@@ -25,6 +25,10 @@ LIB_DEPENDS=	libdrm.so:graphics/libdrm \
 BUILD_DEPENDS=	${LOCALBASE}/lib/libopenNURBS.a:graphics/opennurbs \
 		${LOCALBASE}/include/glm/glm.hpp:math/glm \
 		${LOCALBASE}/libdata/pkgconfig/pthread-stubs.pc:devel/libpthread-stubs
+
+BROKEN_aarch64=		fails to compile: invokes x86 asm
+BROKEN_armv6=		fails to compile: invokes x86 asm
+BROKEN_armv7=		fails to compile: invokes x86 asm
 
 CMAKE_SOURCE_PATH=	${WRKSRC}/SuperProject
 CMAKE_INSTALL_PREFIX=	${STAGEDIR}${PREFIX}

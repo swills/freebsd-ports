@@ -1,9 +1,9 @@
 # Created by: torstenb
-# $FreeBSD: head/mail/metamail/Makefile 420686 2016-08-23 14:49:46Z marino $
+# $FreeBSD: head/mail/metamail/Makefile 457758 2018-01-01 09:09:51Z pi $
 
 PORTNAME=	metamail
 PORTVERSION=	2.7
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	mail
 MASTER_SITES=	http://ftp.funet.fi/pub/unix/mail/metamail/ \
 		ftp://ftp.research.telcordia.com/pub/nsb/
@@ -28,6 +28,8 @@ X11_BUILD_DEPENDS=	bdftopcf:x11-fonts/bdftopcf \
 X11_RUN_DEPENDS=	xloadimage:x11/xloadimage \
 			mkfontdir:x11-fonts/mkfontdir
 X11_USE=		XORG=x11
+X11_EXTRA_PATCHES=	${FILESDIR}/extra-patch-Makefile-x11
+X11_EXTRA_PATCHES_OFF=	${FILESDIR}/extra-patch-Makefile-nox11
 
 post-patch-X11-off:
 	@${REINPLACE_CMD} -e '/fonts/d' ${WRKSRC}/Makefile

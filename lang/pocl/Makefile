@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/pocl/Makefile 440691 2017-05-12 17:08:26Z rezny $
+# $FreeBSD: head/lang/pocl/Makefile 456680 2017-12-18 21:53:28Z antoine $
 
 PORTNAME=	pocl
 PORTVERSION=	0.14
@@ -11,6 +11,8 @@ COMMENT=	POrtable Computing Language (POCL)
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		fails to package
 
 BUILD_DEPENDS=	llvm${LLVM_VERSION}>=0:devel/llvm${LLVM_VERSION} \
 		opencl>=2.1:devel/opencl

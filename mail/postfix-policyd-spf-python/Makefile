@@ -1,5 +1,5 @@
 # Created by: Giel van Schijndel <me@mortis.eu>
-# $FreeBSD: head/mail/postfix-policyd-spf-python/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/mail/postfix-policyd-spf-python/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	postfix-policyd-spf-python
 PORTVERSION=	1.3.2
@@ -19,7 +19,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipaddr>0:devel/py-ipaddr@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyspf>0:mail/py-pyspf@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}authres>0:mail/py-authres@${FLAVOR}
 
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

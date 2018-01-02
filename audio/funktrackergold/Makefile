@@ -1,5 +1,5 @@
 # Created by: Mark Pulford <mark@kyne.com.au>
-# $FreeBSD: head/audio/funktrackergold/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/audio/funktrackergold/Makefile 456639 2017-12-18 15:44:57Z amdmi3 $
 
 PORTNAME=	funktrackergold
 DISTVERSION=	1.5-2
@@ -11,8 +11,13 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Curses MOD/FNK music tracker
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-OPTIONS_DEFINE=	DOCS
+BROKEN_armv6=		fails to compile: function definition is not allowed here
+BROKEN_armv7=		fails to compile: function definition is not allowed here
+BROKEN_mips=		fails to compile: nested functions are disabled, use -fnested-functions to re-enable
+BROKEN_mips64=		fails to compile: nested functions are disabled, use -fnested-functions to re-enable
+BROKEN_powerpc64=	fails to compile: nested functions are disabled, use -fnested-functions to re-enable
 
 USES=		compiler:nestedfct ncurses tar:tgz
 
@@ -22,14 +27,12 @@ MAKE_ARGS=	EXTRA_LDFLAGS="-lpthread"
 PORTDOCS=	INSTALL
 PLIST_FILES=	bin/funkgold
 
-BROKEN_armv6=		fails to compile: function definition is not allowed here
-BROKEN_armv7=		fails to compile: function definition is not allowed here
-BROKEN_mips=		fails to compile: nested functions are disabled, use -fnested-functions to re-enable
-BROKEN_mips64=		fails to compile: nested functions are disabled, use -fnested-functions to re-enable
-BROKEN_powerpc64=	fails to compile: nested functions are disabled, use -fnested-functions to re-enable
+OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/funkgold ${STAGEDIR}${PREFIX}/bin
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for docs in ${PORTDOCS}
 	${INSTALL_DATA} ${WRKSRC}/${docs} ${STAGEDIR}${DOCSDIR}

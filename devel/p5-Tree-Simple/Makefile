@@ -1,9 +1,8 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Tree-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Tree-Simple/Makefile 457580 2017-12-30 06:42:13Z sunpoet $
 
 PORTNAME=	Tree-Simple
-PORTVERSION=	1.23
-PORTREVISION=	1
+PORTVERSION=	1.32
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,9 +12,11 @@ COMMENT=	Simple tree object
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE_ART10=	${WRKSRC}/LICENSE
 
 TEST_DEPENDS=	p5-Test-Exception>=0.15:devel/p5-Test-Exception
 
+NO_ARCH=	yes
 USES=		perl5 tar:tgz
 USE_PERL5=	configure
 

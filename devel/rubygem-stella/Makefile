@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-stella/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-stella/Makefile 456451 2017-12-15 23:54:05Z sunpoet $
 
 PORTNAME=	stella
 PORTVERSION=	2.1.2.004
@@ -23,6 +23,9 @@ RUN_DEPENDS=	rubygem-benelux>=0.6.1:devel/rubygem-benelux \
 		rubygem-sysinfo>=0.7.3:devel/rubygem-sysinfo \
 		rubygem-whois>=1.6.6:net/rubygem-whois \
 		rubygem-yajl-ruby>=0.7.9:devel/rubygem-yajl-ruby
+
+# bin/stella
+CONFLICTS_INSTALL=	stella
 
 NO_ARCH=	yes
 USE_RUBY=	yes

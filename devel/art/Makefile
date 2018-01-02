@@ -1,5 +1,5 @@
 # Created by: Vladimir Gorelov <virtual.lark@gmail.com>
-# $FreeBSD: head/devel/art/Makefile 441395 2017-05-21 13:21:04Z linimon $
+# $FreeBSD: head/devel/art/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	art
 PORTVERSION=	0.9.01
@@ -16,6 +16,8 @@ LICENSE=	GPLv3
 LIB_DEPENDS=	libxml++-2.6.so:textproc/libxml++26
 
 BROKEN=		fails to compile: ustring.h: expected ';' at end of declaration list
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 USES=	gmake pkgconfig
 

@@ -1,8 +1,8 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-TeX-Encode/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-TeX-Encode/Makefile 457000 2017-12-22 23:04:32Z sunpoet $
 
 PORTNAME=	TeX-Encode
-PORTVERSION=	2.003
+PORTVERSION=	2.004
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:ATHREEF

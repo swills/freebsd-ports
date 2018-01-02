@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-backports.shutil_get_terminal_size/Makefile 455585 2017-12-05 15:00:03Z lifanov $
+# $FreeBSD: head/devel/py-backports.shutil_get_terminal_size/Makefile 457784 2018-01-01 16:45:37Z jpaetzel $
 
 PORTNAME=	backports.shutil_get_terminal_size
 PORTVERSION=	1.0.0
@@ -14,17 +14,16 @@ LICENSE=	PSFL
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}backports>0:devel/py-backports@${FLAVOR}
 
-USES=		python
+NO_ARCH=	yes
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 POST_PLIST=	trim-backports-namespace
 
 post-install:
 	@${RM} ${STAGEDIR}${PYTHON_SITELIBDIR}/backports/__init__.py*
-	@${RM} -r ${STAGEDIR}${PYTHON_SITELIBDIR}/backports/__pycache__
 
 trim-backports-namespace:
 	@${REINPLACE_CMD} '/backports\/__init__.py*/d' ${TMPPLIST}
-	@${REINPLACE_CMD} '/backports\/__pycache__*/d' ${TMPPLIST}
 
 .include <bsd.port.mk>

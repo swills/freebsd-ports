@@ -1,5 +1,5 @@
 # Created by: Dryice Liu	<dryice@dryice.name>
-# $FreeBSD: head/devel/py-protocols-devel/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-protocols-devel/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	PyProtocols
 PORTVERSION=	1.0.a0.r2302
@@ -18,5 +18,7 @@ USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist
 
 BROKEN=	checksum mismatch
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 .include <bsd.port.mk>

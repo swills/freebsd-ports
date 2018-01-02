@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/net/py-beanstalkc/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-beanstalkc/Makefile 456197 2017-12-13 08:44:15Z danfe $
 
 PORTNAME=	beanstalkc
 PORTVERSION=	0.4.0
@@ -20,7 +20,7 @@ USE_PYTHON=	distutils autoplist
 
 OPTIONS_DEFINE=		YAML
 OPTIONS_DEFAULT=	YAML
-YAML_DESC=		Support parsing YAML responses
+YAML_DESC=		YAML response parsing support
 
 YAML_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${FLAVOR}
 

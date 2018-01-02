@@ -1,8 +1,8 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Perl-Tidy/Makefile 441430 2017-05-21 23:16:25Z wen $
+# $FreeBSD: head/devel/p5-Perl-Tidy/Makefile 457738 2017-12-31 22:23:39Z sunpoet $
 
 PORTNAME=	Perl-Tidy
-PORTVERSION=	20170521
+PORTVERSION=	20180101
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

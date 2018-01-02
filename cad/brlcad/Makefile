@@ -1,5 +1,5 @@
 # Created by: Pedro F. Giffuni <giffunip@asme.org>
-# $FreeBSD: head/cad/brlcad/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/cad/brlcad/Makefile 456498 2017-12-16 20:55:36Z sunpoet $
 
 PORTNAME=	brlcad
 PORTVERSION=	7.24.0
@@ -19,6 +19,8 @@ LIB_DEPENDS=	libdrm.so:graphics/libdrm \
 		libfreetype.so:print/freetype2 \
 		libexpat.so:textproc/expat2 \
 		libfontconfig.so:x11-fonts/fontconfig
+
+CONFLICTS_INSTALL=	py[23][0-9]-epsilon
 
 USE_GL=		gl glu
 USE_XORG=	ice inputproto sm x11 xau xcb xdamage xdmcp xext xfixes xft xi \

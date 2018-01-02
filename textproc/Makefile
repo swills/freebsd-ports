@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 456064 2017-12-11 20:08:13Z ultima $
+# $FreeBSD: head/textproc/Makefile 457729 2017-12-31 22:22:54Z sunpoet $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -113,6 +113,7 @@
     SUBDIR += dictem
     SUBDIR += dictfmt
     SUBDIR += dictionary
+    SUBDIR += diff-so-fancy
     SUBDIR += diffmark
     SUBDIR += diffsplit
     SUBDIR += diffstat
@@ -645,7 +646,6 @@
     SUBDIR += p5-Lingua-EN-Words2Nums
     SUBDIR += p5-Lingua-Ident
     SUBDIR += p5-Lingua-Identify
-    SUBDIR += p5-Lingua-Identify-CLD
     SUBDIR += p5-Lingua-Ispell
     SUBDIR += p5-Lingua-PT-Stemmer
     SUBDIR += p5-Lingua-Preferred
@@ -753,6 +753,7 @@
     SUBDIR += p5-RADIUS-UserFile
     SUBDIR += p5-RDF-Core
     SUBDIR += p5-RDF-Notation3
+    SUBDIR += p5-RDF-Query
     SUBDIR += p5-RDF-Simple
     SUBDIR += p5-RDF-Trine
     SUBDIR += p5-RDFStore
@@ -1159,6 +1160,7 @@
     SUBDIR += pcrs
     SUBDIR += pdfgrep
     SUBDIR += pdfoutline
+    SUBDIR += pdfsandwich
     SUBDIR += pdftohtml
     SUBDIR += pear-File_Fortune
     SUBDIR += pear-File_MARC
@@ -1191,7 +1193,6 @@
     SUBDIR += pear-XML_HTMLSax
     SUBDIR += pear-XML_Wddx
     SUBDIR += pear-YAML
-    SUBDIR += pecl-cld
     SUBDIR += pecl-ctemplate
     SUBDIR += pecl-doublemetaphone
     SUBDIR += pecl-stem
@@ -1280,9 +1281,9 @@
     SUBDIR += py-diff-match-patch
     SUBDIR += py-docutils
     SUBDIR += py-dsv
+    SUBDIR += py-elasticsearch
     SUBDIR += py-elasticsearch-curator-py
     SUBDIR += py-elasticsearch-dsl-py
-    SUBDIR += py-elasticsearch-py
     SUBDIR += py-elasticsearch2-dsl-py
     SUBDIR += py-elib.intl
     SUBDIR += py-empy
@@ -1524,6 +1525,7 @@
     SUBDIR += rubygem-libxml-ruby
     SUBDIR += rubygem-linguistics
     SUBDIR += rubygem-liquid
+    SUBDIR += rubygem-liquid-tag-parser
     SUBDIR += rubygem-loggability
     SUBDIR += rubygem-loofah
     SUBDIR += rubygem-ltsv

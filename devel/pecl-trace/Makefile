@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-trace/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/devel/pecl-trace/Makefile 456296 2017-12-14 13:57:28Z tz $
 
 PORTNAME=	trace
 PORTVERSION=	1.0.0
@@ -13,6 +13,7 @@ LICENSE=	APACHE20
 WRKSRC_SUBDIR=	extension
 
 USES=		gmake php:pecl
+IGNORE_WITH_PHP=	71 72
 PLIST_FILES=	bin/phptrace
 
 pre-install:

@@ -1,12 +1,12 @@
 # Created by: Renaud Chaput <renchap@cocoa-x.com>
-# $FreeBSD: head/sysutils/rubygem-chef-zero/Makefile 446979 2017-07-31 15:50:35Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-chef-zero/Makefile 457535 2017-12-29 18:48:19Z sunpoet $
 
 PORTNAME=	chef-zero
-PORTVERSION=	13.0.0
+PORTVERSION=	13.1.0
 CATEGORIES=	sysutils
 MASTER_SITES=	RG
 
-MAINTAINER=	renchap@cocoa-x.com
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Self-contained, easy-setup, fast-start in-memory Chef server
 
 LICENSE=	APACHE20

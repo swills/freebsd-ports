@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 454858 2017-11-24 23:45:17Z brnrd $
+# $FreeBSD: head/mail/Makefile 457423 2017-12-27 20:54:20Z dbaio $
 #
 
     COMMENT = Electronic mail utilities
@@ -531,6 +531,7 @@
     SUBDIR += py-Products.SecureMailHost
     SUBDIR += py-afew
     SUBDIR += py-aiosmtpd
+    SUBDIR += py-alot
     SUBDIR += py-apolicy
     SUBDIR += py-authres
     SUBDIR += py-cyruslib

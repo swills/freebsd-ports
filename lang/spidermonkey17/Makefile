@@ -1,5 +1,5 @@
 # Created by: Dan Rench <citric@cubicone.tmetic.com>
-# $FreeBSD: head/lang/spidermonkey17/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/lang/spidermonkey17/Makefile 456583 2017-12-18 03:19:46Z linimon $
 
 PORTNAME=	spidermonkey17
 DISTVERSION=	1.7.0
@@ -20,6 +20,7 @@ MAKE_ARGS+=	JS_THREADSAFE=YES \
 		LDFLAGS="-L${LOCALBASE}/lib"
 CFLAGS+=	-I${LOCALBASE}/include/nspr
 
+BROKEN_aarch64=		fails to link: missing sbrk
 BROKEN_armv6=		fails to link: final link failed: Nonrepresentable section on output
 BROKEN_armv7=		fails to link: /nxb-bin/usr/bin/ld: FreeBSD12.0-CURRENT_DBG.OBJ/js: hidden symbol `__aeabi_uidivmod' in /usr/lib/libgcc.a(aeabi_uidivmod.o) is referenced by DSO
 BROKEN_mips64=		fails to link: final link failed: Nonrepresentable section on output

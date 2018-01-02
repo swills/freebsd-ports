@@ -1,5 +1,5 @@
 # Created by: sumikawa
-# $FreeBSD: head/security/fsh/Makefile 371453 2014-10-24 16:50:42Z mva $
+# $FreeBSD: head/security/fsh/Makefile 456126 2017-12-12 12:40:15Z antoine $
 
 PORTNAME=	fsh
 PORTVERSION=	1.2
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.lysator.liu.se/fsh/ \
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fast remote command execution
 
-USES=		python
+USES=		python:2.7
 GNU_CONFIGURE=	yes
 
 INFO=	fsh

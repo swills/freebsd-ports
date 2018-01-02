@@ -1,8 +1,9 @@
 # Created by: Li-Wen Hsu <lwhsu@lwhsu.org>
-# $FreeBSD: head/devel/py-instant/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-instant/Makefile 456845 2017-12-20 19:34:11Z bapt $
 
 PORTNAME=	instant
 PORTVERSION=	${MMVERSION}.0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	https://launchpad.net/${PORTNAME}/${MMVERSION}.x/${PORTVERSION}/+download/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +13,7 @@ COMMENT=	Python module for instant inlining of C and C++ code in Python
 
 LICENSE=	LGPL3
 
-RUN_DEPENDS=	swig2.0:devel/swig20
+RUN_DEPENDS=	swig3.0:devel/swig30
 
 USES=			python:2
 USE_PYTHON=		distutils

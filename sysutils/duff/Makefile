@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/duff/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/sysutils/duff/Makefile 457510 2017-12-29 15:47:00Z jhale $
 
 PORTNAME=	duff
 PORTVERSION=	0.5.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	SF
 
@@ -12,16 +12,19 @@ COMMENT=	Duplicate file finder
 LICENSE=	ZLIB
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		tar:bzip2
+USES=		localbase tar:bzip2 shebangfix
 GNU_CONFIGURE=	yes
-
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
+bash_OLD_CMD=	/bin/sh
+SHEBANG_FILES=	join-duplicates.sh
 
 PORTDOCS=	README.SHA
 
-OPTIONS_DEFINE=	NLS
+OPTIONS_DEFINE=	JOIN NLS
 OPTIONS_SUB=	yes
+
+JOIN_DESC=		Add run-dependencies for join-duplicates.sh
+JOIN_RUN_DEPENDS=	bash:shells/bash \
+			gtouch:sysutils/coreutils
 
 NLS_USES=		gettext
 NLS_CONFIGURE_ENABLE=	nls

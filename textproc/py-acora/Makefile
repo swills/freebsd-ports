@@ -1,8 +1,8 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/textproc/py-acora/Makefile 411550 2016-03-21 10:46:10Z antoine $
+# $FreeBSD: head/textproc/py-acora/Makefile 457471 2017-12-28 19:28:59Z antoine $
 
 PORTNAME=	acora
-PORTVERSION=	2.0
+PORTVERSION=	2.1
 CATEGORIES=	textproc devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,5 +15,13 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 USES=		python
 USE_PYTHON=	distutils autoplist
+
+TEST_ENV=	${MAKE_ENV} PYTHONPATH=${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}
+TEST_WRKSRC=	${WRKSRC}/scratch	# Any directory different from ${WRKSRC}
+
+do-test:
+	@${MKDIR} ${TEST_WRKSRC}
+	@${CP} ${WRKSRC}/test.py ${WRKSRC}/README.rst ${TEST_WRKSRC}
+	@cd ${TEST_WRKSRC} && ${SETENV} ${TEST_ENV} ${PYTHON_CMD} test.py
 
 .include <bsd.port.mk>

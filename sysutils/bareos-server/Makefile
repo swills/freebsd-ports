@@ -1,9 +1,9 @@
 # Created by: Alonso Cardenas <acm@FreeBSD.org>
-# $FreeBSD: head/sysutils/bareos-server/Makefile 445197 2017-07-07 02:19:21Z acm $
+# $FreeBSD: head/sysutils/bareos-server/Makefile 456228 2017-12-13 20:06:09Z acm $
 
 PORTNAME=	bareos
 DISTVERSIONPREFIX=	Release/
-DISTVERSION=	16.2.6
+DISTVERSION=	16.2.7
 PORTREVISION?=	0
 CATEGORIES?=	sysutils
 PKGNAMEPREFIX?=	#

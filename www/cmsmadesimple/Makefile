@@ -1,5 +1,5 @@
 # Created by: Wen heping <wenheping@gmail.com>
-# $FreeBSD: head/www/cmsmadesimple/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/cmsmadesimple/Makefile 456517 2017-12-16 21:44:09Z tz $
 
 PORTNAME=	cmsmadesimple
 PORTVERSION=	1.12
@@ -11,6 +11,8 @@ MAINTAINER=	pi@FreeBSD.org
 COMMENT=	Simple Open Source CMS
 
 LICENSE=	GPLv2
+
+IGNORE_WITH_PHP=	70 71 72
 
 USES=		php
 USE_PHP=	mysql tokenizer gd

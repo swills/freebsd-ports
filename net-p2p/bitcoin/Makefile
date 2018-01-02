@@ -1,11 +1,14 @@
 # Created by: Shaun Amott <shaun@FreeBSD.org>
-# $FreeBSD: head/net-p2p/bitcoin/Makefile 456058 2017-12-11 18:26:13Z sunpoet $
+# $FreeBSD: head/net-p2p/bitcoin/Makefile 457245 2017-12-25 18:07:48Z jbeich $
 
 PORTNAME=	bitcoin
 PORTVERSION=	0.15.1
 DISTVERSIONPREFIX=	v
 PORTREVISION?=	2
 CATEGORIES=	net-p2p finance
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	1ec0c0a01c31.patch:-p1
 
 MAINTAINER=	robbak@robbak.com
 COMMENT?=	Virtual Peer-to-Peer Currency Client (QT)

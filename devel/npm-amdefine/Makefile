@@ -1,5 +1,5 @@
 # Created by: Rodrigo Osorio <rodrigo@freebsd.org>
-# $FreeBSD: head/devel/npm-amdefine/Makefile 444696 2017-06-30 06:07:53Z antoine $
+# $FreeBSD: head/devel/npm-amdefine/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	npm-amdefine
 PORTVERSION=	1.0.1
@@ -11,6 +11,8 @@ COMMENT=	Implementation of AMD's define() in Node
 LICENSE=	APACHE20
 
 BROKEN=		fails to package
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 BUILD_DEPENDS=	npm>=0:www/npm
 RUN_DEPENDS=	npm>=0:www/npm

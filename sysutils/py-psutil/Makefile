@@ -1,5 +1,5 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/sysutils/py-psutil/Makefile 455963 2017-12-11 10:38:50Z sunpoet $
+# $FreeBSD: head/sysutils/py-psutil/Makefile 457392 2017-12-27 19:51:45Z sunpoet $
 
 PORTNAME=	psutil
 PORTVERSION=	5.4.2
@@ -15,6 +15,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}unittest2>=0:devel/py-unittest2@${FLAVOR}
+
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}psutil121
 
 USE_PYTHON=	autoplist concurrent distutils
 USES=		python

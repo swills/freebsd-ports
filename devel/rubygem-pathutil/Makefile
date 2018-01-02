@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-pathutil/Makefile 454073 2017-11-12 19:10:39Z sunpoet $
+# $FreeBSD: head/devel/rubygem-pathutil/Makefile 456141 2017-12-12 13:33:35Z sunpoet $
 
 PORTNAME=	pathutil
-PORTVERSION=	0.16.0
+PORTVERSION=	0.16.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

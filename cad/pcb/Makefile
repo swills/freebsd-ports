@@ -1,5 +1,5 @@
 # Created by: Michael Reifenberger <mr@FreeBSD.org>
-# $FreeBSD: head/cad/pcb/Makefile 418829 2016-07-20 09:33:31Z dinoex $
+# $FreeBSD: head/cad/pcb/Makefile 457179 2017-12-24 17:00:29Z tijl $
 
 PORTNAME=	pcb
 PORTVERSION=	20140316
@@ -20,7 +20,6 @@ BUILD_DEPENDS:=	${RUN_DEPENDS}
 
 CONFLICTS=	gts-[0-9]*
 
-USE_AUTOTOOLS=	autoconf
 USES=		gmake pkgconfig tk:run shared-mime-info desktop-file-utils
 USE_GNOME=	intltool
 INSTALLS_ICONS=	yes

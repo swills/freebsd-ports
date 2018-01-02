@@ -1,5 +1,5 @@
 # Created by: Sofian Brabez <sbrabez@gmail.com>
-# $FreeBSD: head/devel/py-InlineEgg/Makefile 440775 2017-05-13 10:44:18Z miwi $
+# $FreeBSD: head/devel/py-InlineEgg/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	InlineEgg
 PORTVERSION=	1.08
@@ -16,6 +16,8 @@ USES=		dos2unix python shebangfix
 SHEBANG_FILES=	examples/*.py
 USE_PYTHON=	distutils autoplist
 BROKEN=		checksum mismatch
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 PORTDOCS=	InlineEgg.html Changelog README
 PORTEXAMPLES=	*

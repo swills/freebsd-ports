@@ -1,10 +1,10 @@
 # Created by: Glenn Johnson <glennpj@charter.net>
-# $FreeBSD: head/print/gnome-cups-manager/Makefile 453271 2017-11-01 09:04:36Z amdmi3 $
+# $FreeBSD: head/print/gnome-cups-manager/Makefile 457024 2017-12-23 07:03:21Z antoine $
 #   $MCom: ports/print/gnome-cups-manager/Makefile,v 1.8 2007/07/20 01:11:31 mezz Exp $
 
 PORTNAME=	gnome-cups-manager
 PORTVERSION=	0.31
-PORTREVISION=	18
+PORTREVISION=	19
 PORTEPOCH=	1
 CATEGORIES=	print gnome
 MASTER_SITES=	GNOME

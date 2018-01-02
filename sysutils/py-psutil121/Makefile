@@ -1,5 +1,5 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/sysutils/py-psutil121/Makefile 455813 2017-12-09 00:42:05Z linimon $
+# $FreeBSD: head/sysutils/py-psutil121/Makefile 457393 2017-12-27 19:51:50Z sunpoet $
 
 PORTNAME=	psutil
 PORTVERSION=	1.2.1
@@ -14,8 +14,12 @@ COMMENT=	Process utilities module for Python
 
 LICENSE=	BSD3CLAUSE
 
+BROKEN_aarch64=		fails to compile: psutil/_psutil_bsd.c:957:23: error: no member named 'kf_sa_local' in 'struct kinfo_file'
 BROKEN_armv6=		fails to compile: psutil/_psutil_bsd.c:957:23: error: no member named 'kf_sa_local' in 'struct kinfo_file'
 BROKEN_armv7=		fails to compile: psutil/_psutil_bsd.c:957:23: error: no member named 'kf_sa_local' in 'struct kinfo_file'
+BROKEN_mips=		fails to compile: psutil/_psutil_bsd.c:957:23: error: no member named 'kf_sa_local' in 'struct kinfo_file'
+
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}psutil
 
 PORTSCOUT=	limit:^1\.2\.
 

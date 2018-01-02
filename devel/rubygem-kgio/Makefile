@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-kgio/Makefile 430084 2016-12-31 02:13:05Z swills $
+# $FreeBSD: head/devel/rubygem-kgio/Makefile 456510 2017-12-16 20:56:38Z sunpoet $
 
 PORTNAME=	kgio
-PORTVERSION=	2.11.0
+PORTVERSION=	2.11.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

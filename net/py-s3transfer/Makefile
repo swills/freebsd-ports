@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/py-s3transfer/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-s3transfer/Makefile 456790 2017-12-20 12:53:48Z bhughes $
 
 PORTNAME=	s3transfer
-PORTVERSION=	0.1.11
+PORTVERSION=	0.1.12
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

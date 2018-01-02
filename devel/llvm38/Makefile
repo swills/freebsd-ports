@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm38/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/llvm38/Makefile 456833 2017-12-20 15:18:26Z bapt $
 
 PORTNAME=	llvm
 DISTVERSION=	3.8.1
@@ -77,7 +77,8 @@ EXTRAS_DISTFILES= clang-tools-extra-${DISTVERSION}.src${EXTRACT_SUFX}
 LIT_DESC=		Install lit and FileCheck test tools
 LLD_DESC=		Install lld, the LLVM linker
 LLD_DISTFILES=		lld-${DISTVERSION}.src${EXTRACT_SUFX}
-LLDB_BUILD_DEPENDS=	swig:devel/swig13
+LLDB_BUILD_DEPENDS=	swig3.0:devel/swig30
+LLDB_BINARY_ALIAS=	swig=swig3.0
 LLDB_DESC=		Install lldb, the LLVM debugger
 LLDB_DISTFILES=		lldb-${DISTVERSION}.src${EXTRACT_SUFX}
 LLDB_IMPLIES=		CLANG

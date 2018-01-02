@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/textproc/zorba/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/textproc/zorba/Makefile 456845 2017-12-20 19:34:11Z bapt $
 
 PORTNAME=	zorba
 PORTVERSION=	2.7.0
@@ -82,7 +82,8 @@ CMAKE_ARGS+=	-DJAVA_LIBDIR:PATH=${JAVALIBDIR}
 .endif
 
 .if defined(WITH_SWIG)
-BUILD_DEPENDS+=	swig2.0:devel/swig20
+BUILD_DEPENDS+=	swig3.0:devel/swig30
+BINARY_ALIAS=	swig=swig3.0
 .endif
 
 post-patch:

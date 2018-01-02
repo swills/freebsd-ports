@@ -1,5 +1,5 @@
 # Created by: Hung-Yi Chen <gaod@hychen.org>
-# $FreeBSD: head/www/pecl-solr/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/www/pecl-solr/Makefile 456296 2017-12-14 13:57:28Z tz $
 
 PORTNAME=	solr
 PORTVERSION=	2.4.0
@@ -15,5 +15,6 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 
 USES=		php:pecl
 USE_PHP=	json:build
+IGNORE_WITH_PHP=	72
 
 .include <bsd.port.mk>

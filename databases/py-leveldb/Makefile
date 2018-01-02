@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/py-leveldb/Makefile 431116 2017-01-10 18:36:23Z sunpoet $
+# $FreeBSD: head/databases/py-leveldb/Makefile 456493 2017-12-16 20:55:10Z sunpoet $
 
 PORTNAME=	leveldb
 PORTVERSION=	0.20
@@ -21,7 +21,7 @@ USE_PYTHON=	autoplist concurrent distutils
 USES=		localbase python
 
 post-patch:
-	@${REINPLACE_CMD} -e 's|%%LOCALBASE%%|${LOCALBASE}|' ${WRKSRC}/${PYSETUP}
+	@${REINPLACE_CMD} -e 's|%%LOCALBASE%%|${LOCALBASE}|' ${WRKSRC}/setup.py
 	@${RM} -r ${WRKSRC}/leveldb/ ${WRKSRC}/snappy/
 
 post-install:

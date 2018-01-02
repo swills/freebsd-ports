@@ -2,10 +2,10 @@
 # mplayer and mencoder....the variables that we need to set
 # before we include bsd.port.pre.mk
 #
-# $FreeBSD: head/multimedia/mplayer/Makefile.common 451901 2017-10-12 15:57:51Z mat $
+# $FreeBSD: head/multimedia/mplayer/Makefile.common 456904 2017-12-21 12:31:30Z riggs $
 
 MPLAYER_PORT_VERSION=	1.3.0
-MPLAYER_SNAPSHOT_DATE=	2017-07-22
+MPLAYER_SNAPSHOT_DATE=	2017-12-20
 MASTER_SITES=	LOCAL/riggs/mplayer
 DISTNAME=	mplayer-${MPLAYER_PORT_VERSION}.${MPLAYER_SNAPSHOT_DATE:S/-//g}
 WRKSRC=		${WRKDIR}/mplayer-export-${MPLAYER_SNAPSHOT_DATE}

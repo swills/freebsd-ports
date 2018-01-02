@@ -1,5 +1,5 @@
 # Created by: Travis Campbell <hcoyote@ghostar.org>
-# $FreeBSD: head/www/oscommerce/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/oscommerce/Makefile 456517 2017-12-16 21:44:09Z tz $
 
 PORTNAME=	oscommerce
 DISTVERSION=	2.3.4
@@ -9,6 +9,8 @@ MASTER_SITES=	http://www.oscommerce.com/files/
 
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Full-featured open source e-commerce system
+
+IGNORE_WITH_PHP=	70 71 72
 
 USES=		cpe php:web zip
 USE_PHP=	mysql session pcre gd curl openssl

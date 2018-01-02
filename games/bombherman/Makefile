@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/bombherman/Makefile 432051 2017-01-21 15:33:18Z antoine $
+# $FreeBSD: head/games/bombherman/Makefile 457161 2017-12-24 13:45:17Z tijl $
 
 PORTNAME=	bomb-her-man
 PORTVERSION=	0.3
@@ -22,11 +22,10 @@ GH_ACCOUNT=	Keruspe
 GH_PROJECT=	Bomb-her-man
 GH_TAGNAME=	8f5aa22
 
-USES=		gmake pkgconfig
+USES=		autoreconf gmake pkgconfig
 USE_SDL=	sdl image mixer ttf
 USE_GNOME=	cairo intltool librsvg2
 GNU_CONFIGURE=	yes
-USE_AUTOTOOLS=	automake:env
 ALL_TARGET=	# empty
 
 CFLAGS+=	-I${LOCALBASE}/include
@@ -48,11 +47,6 @@ NLS_USES=	gettext
 
 # Wrong versioning upstream
 PORTSCOUT=	 ignore:1
-
-.include <bsd.port.options.mk>
-
-pre-configure:
-	@(cd ${WRKSRC} && ${SETENV} ${CONFIGURE_ENV} ./autogen.sh)
 
 post-install:
 .for s in ${ICON_SIZES}

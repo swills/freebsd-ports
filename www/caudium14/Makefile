@@ -1,5 +1,5 @@
 # Created by: kiwi@oav.net
-# $FreeBSD: head/www/caudium14/Makefile 438272 2017-04-11 15:21:23Z mat $
+# $FreeBSD: head/www/caudium14/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	caudium14
 PORTVERSION=	${CAUDIUMVERSION}.${PIKEVERSION}
@@ -11,6 +11,9 @@ DISTNAME=	Caudium-${CAUDIUMVERSION}
 
 MAINTAINER=	johans@FreeBSD.org
 COMMENT=	Free webserver based on the Roxen Challenger 1.3 code base
+
+DEPRECATED=	Depends on expiring lang/pike78
+EXPIRATION_DATE=	2018-01-27
 
 BUILD_DEPENDS=	pike78:lang/pike78
 LIB_DEPENDS=	libsablot.so:textproc/sablotron

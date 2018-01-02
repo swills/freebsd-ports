@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/math/vtk6/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/math/vtk6/Makefile 457151 2017-12-24 12:17:40Z antoine $
 
 PORTNAME=	vtk
 PORTVERSION=	6.2.0
@@ -179,13 +179,12 @@ PLIST_SUB+=	JAVA="@comment "
 
 .if ${PORT_OPTIONS:MPYTHON}
 USES+=		python:2.7
-USE_PYTHON=	flavors
 CMAKE_ARGS+=	-DVTK_WRAP_PYTHON:BOOL=ON \
 		-DVTK_INSTALL_PYTHON_MODULE_DIR:STRING=${PYTHONPREFIX_SITELIBDIR} \
 		-DModule_vtkRenderingMatplotlib:BOOL=ON \
 		-DModule_vtkPythonInterpreter:BOOL=ON
 PLIST_SUB+=	PYTHON=""
-RUN_DEPENDS+=	${PYTHON_SITELIBDIR}/matplotlib/__init__.py:math/py-matplotlib@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_SITELIBDIR}/matplotlib/__init__.py:math/py-matplotlib@${PY_FLAVOR}
 .else
 CMAKE_ARGS+=	-DVTK_WRAP_PYTHON:BOOL=OFF
 PLIST_SUB+=	PYTHON="@comment "

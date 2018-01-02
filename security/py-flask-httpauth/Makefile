@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-flask-httpauth/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-flask-httpauth/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	Flask-HTTPAuth
 PORTVERSION=	3.2.3
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>0:www/py-flask@${FLAVOR}
 
 NO_ARCH=	yes
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

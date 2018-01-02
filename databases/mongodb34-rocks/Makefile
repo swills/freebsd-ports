@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mongodb34-rocks/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/databases/mongodb34-rocks/Makefile 456685 2017-12-18 22:01:59Z antoine $
 
 PORTNAME=	mongodb
 PORTVERSION=	3.4.6
@@ -18,6 +18,8 @@ COMMENT=	Distributed document-oriented database with a RocksDB Storage Engine
 # mongodb is AGPLv3, C++ driver is APACHE20
 LICENSE=	AGPLv3 APACHE20
 LICENSE_COMB=	multi
+
+BROKEN=		fails to link
 
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=	"Only supported on amd64 (i386 deprecated in v3)"

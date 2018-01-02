@@ -1,5 +1,5 @@
 # Created by: dpejesh@yahoo.com
-# $FreeBSD: head/net/pacemaker/Makefile 443502 2017-06-13 14:32:23Z joneum $
+# $FreeBSD: head/net/pacemaker/Makefile 456125 2017-12-12 12:37:57Z antoine $
 
 PORTNAME=	pacemaker
 PORTVERSION=	1.1.16
@@ -39,6 +39,7 @@ GH_ACCOUNT=	ClusterLabs
 USES=		autoreconf gmake libtool pathfix pkgconfig python shebangfix
 USE_GNOME=	glib20
 USE_LDCONFIG=	yes
+USE_PYTHON=	py3kplist
 USE_RC_SUBR=	${PORTNAME}
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-fatal-warnings \

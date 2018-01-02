@@ -1,20 +1,17 @@
 # Created by: Marcus Glocker <marcus@nazgul.ch>
-# $FreeBSD: head/net/wmwlmon/Makefile 397879 2015-09-25 21:24:21Z linimon $
+# $FreeBSD: head/net/wmwlmon/Makefile 457838 2018-01-02 09:02:21Z danfe $
 
 PORTNAME=	wmwlmon
 PORTVERSION=	1.0
 CATEGORIES=	net windowmaker
 MASTER_SITES=	http://www.nazgul.ch/dev/
-DISTNAME=	wmwlmon-${PORTVERSION}
 
 MAINTAINER=	LukeD@pobox.com
 COMMENT=	DockApp showing the state of a wireless network device
 
-USE_XORG=	x11 xpm
+USE_XORG=	x11 xext xpm
 
 PLIST_FILES=	bin/wmwlmon man/man1/wmwlmon.1.gz
-
-BROKEN_sparc64=	fails to build
 
 post-patch:
 	${REINPLACE_CMD} -e 's#/usr/X11R6#${LOCALBASE}#g' \

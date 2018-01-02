@@ -1,5 +1,5 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/games/columns/Makefile 416708 2016-06-11 09:03:55Z amdmi3 $
+# $FreeBSD: head/games/columns/Makefile 456240 2017-12-13 20:49:40Z sunpoet $
 
 PORTNAME=	columns
 PORTVERSION=	1.2b
@@ -21,6 +21,8 @@ GNU_CONFIGURE=	yes
 
 DATADIR=	${PREFIX}/share/Columns
 PORTDOCS=	README
+
+CONFLICTS_INSTALL=	autogen
 
 OPTIONS_DEFINE=	DOCS
 

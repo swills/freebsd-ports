@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/shebangfix.mk 447527 2017-08-08 01:10:57Z feld $
+# $FreeBSD: head/Mk/Uses/shebangfix.mk 456908 2017-12-21 13:27:51Z amdmi3 $
 #
 # Replace #! interpreters in scripts by what we actually have.
 #
@@ -63,6 +63,13 @@ ${lang}_OLD_CMD+= "/usr/bin/env ${lang}"
 ${lang}_OLD_CMD+= /bin/${lang}
 ${lang}_OLD_CMD+= /usr/bin/${lang}
 ${lang}_OLD_CMD+= /usr/local/bin/${lang}
+.endfor
+
+.for pyver in 2 3
+python_OLD_CMD+= "/usr/bin/env python${pyver}"
+python_OLD_CMD+= /bin/python${pyver}
+python_OLD_CMD+= /usr/bin/python${pyver}
+python_OLD_CMD+= /usr/local/bin/python${pyver}
 .endfor
 
 .for lang in ${SHEBANG_LANG}

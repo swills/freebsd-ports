@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 452251 2017-10-16 20:37:21Z rene $
+# $FreeBSD: head/editors/Makefile 457287 2017-12-26 15:00:16Z jrm $
 #
 
     COMMENT = Editors
@@ -29,6 +29,7 @@
     SUBDIR += dkns
     SUBDIR += dlangide
     SUBDIR += drjava
+    SUBDIR += dte
     SUBDIR += e3
     SUBDIR += ecce
     SUBDIR += edith
@@ -233,7 +234,6 @@
     SUBDIR += texworks
     SUBDIR += the
     SUBDIR += thoteditor
-    SUBDIR += tree-widget
     SUBDIR += treeform
     SUBDIR += tweak
     SUBDIR += uemacs

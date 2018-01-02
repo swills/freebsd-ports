@@ -1,7 +1,7 @@
-# $FreeBSD: head/comms/amtterm/Makefile 413045 2016-04-11 17:01:44Z sbruno $
+# $FreeBSD: head/comms/amtterm/Makefile 456991 2017-12-22 20:55:47Z sbruno $
 
 PORTNAME=	amtterm
-PORTVERSION=	1.4
+PORTVERSION=	1.6
 CATEGORIES=	comms
 MASTER_SITES=	https://www.kraxel.org/releases/${PORTNAME}/
 

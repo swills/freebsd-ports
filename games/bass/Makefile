@@ -1,5 +1,5 @@
 # Created by: Alex Trull <freebsd.alex@trull.org>
-# $FreeBSD: head/games/bass/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/bass/Makefile 457270 2017-12-26 09:00:42Z amdmi3 $
 
 PORTNAME=	bass
 PORTVERSION=	1.2
@@ -20,6 +20,7 @@ RUN_DEPENDS=	scummvm:games/scummvm
 
 USES=		zip
 NO_BUILD=	yes
+NO_ARCH=	yes
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
 SUB_FILES=	pkg-message
@@ -27,11 +28,13 @@ SUB_FILES=	pkg-message
 OPTIONS_DEFINE=	DOCS
 
 do-install:
-	${MKDIR} ${STAGEDIR}${DATADIR}
+	@${MKDIR} ${STAGEDIR}${DATADIR}
 	${INSTALL_DATA} ${WRKSRC}/sky.dnr ${STAGEDIR}${DATADIR}
 	${INSTALL_DATA} ${WRKSRC}/sky.dsk ${STAGEDIR}${DATADIR}
 	${INSTALL_DATA} ${WRKSRC}/sky.cpt ${STAGEDIR}${DATADIR}
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	@${INSTALL_DATA} ${WRKSRC}/readme.txt ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/readme.txt ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

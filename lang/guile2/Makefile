@@ -1,5 +1,5 @@
 # Created by: Muhammad Moinur Rahman <5u623l20@gmail.com>
-# $FreeBSD: head/lang/guile2/Makefile 451773 2017-10-11 19:10:52Z feld $
+# $FreeBSD: head/lang/guile2/Makefile 457632 2017-12-30 19:12:39Z danfe $
 
 PORTNAME=	guile
 PORTVERSION=	2.0.14
@@ -21,8 +21,6 @@ LIB_DEPENDS=	libgmp.so:math/gmp \
 CONFLICTS_INSTALL=	guile-[0-9]*
 
 MAKE_JOBS_UNSAFE=	yes
-BROKEN_powerpc64=	does not build: error: expected declaration specifiers or ... before __builtin_choose_expr
-BROKEN_sparc64=		fails to compile: errors in complex.h
 
 USES=		charsetfix gmake libtool makeinfo ncurses pathfix pkgconfig \
 		readline
@@ -32,13 +30,17 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LIBS+=		-L${LOCALBASE}/lib
 INSTALL_TARGET=	install-strip
 
+INFO=		guile r5rs
+
 PLIST_SUB=	GUILE_VER=${PORTVERSION:R}
 
 OPTIONS_DEFINE=	NLS THREADS
 OPTIONS_DEFAULT=THREADS
 OPTIONS_SUB=	yes
+
 NLS_CONFIGURE_ENABLE=	nls
 NLS_USES=	gettext
+
 THREADS_CONFIGURE_WITH=	threads
 THREADS_LIB_DEPENDS=	libgc-threaded.so:devel/boehm-gc-threaded
 THREADS_LIB_DEPENDS_OFF=	libgc.so:devel/boehm-gc
@@ -46,8 +48,6 @@ THREADS_LIB_DEPENDS_OFF=	libgc.so:devel/boehm-gc
 REINPLACE_FILES=	libguile/smob.c libguile/filesys.c libguile/gc.c \
 			libguile/mallocs.c libguile/eval.c \
 			libguile/gc-malloc.c libguile/ports.c
-
-INFO=		guile r5rs
 
 post-patch:
 	@cd ${WRKSRC} ; \

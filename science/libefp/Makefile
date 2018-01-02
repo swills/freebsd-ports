@@ -1,7 +1,7 @@
-# $FreeBSD: head/science/libefp/Makefile 454160 2017-11-14 04:31:58Z yuri $
+# $FreeBSD: head/science/libefp/Makefile 457098 2017-12-23 18:19:11Z yuri $
 
 PORTNAME=	libefp
-DISTVERSION=	1.4.2
+DISTVERSION=	1.5.0
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/x11-fonts/sourcesanspro-ttf/Makefile 448551 2017-08-22 16:40:23Z sunpoet $
+# $FreeBSD: head/x11-fonts/sourcesanspro-ttf/Makefile 456806 2017-12-20 14:37:27Z sunpoet $
 
 PORTNAME=	sourcesanspro
 PORTVERSION=	2.020
@@ -12,6 +12,8 @@ COMMENT=	Set of fonts by Adobe designed for user interfaces
 
 LICENSE=	OFL11
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+PORTSCOUT=	skipv:variable-fonts
 
 NO_ARCH=	yes
 NO_BUILD=	yes

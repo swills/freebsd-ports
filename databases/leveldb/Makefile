@@ -1,10 +1,10 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/leveldb/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/databases/leveldb/Makefile 456489 2017-12-16 20:54:49Z sunpoet $
 
 PORTNAME=	leveldb
 PORTVERSION=	1.20
-PORTREVISION=	2
 DISTVERSIONPREFIX=	v
+PORTREVISION=	2
 CATEGORIES=	databases
 
 MAINTAINER=	sunpoet@FreeBSD.org

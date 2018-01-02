@@ -1,5 +1,5 @@
 # Created by: Sascha Klauder <sklauder@trimind.de>
-# $FreeBSD: head/shells/ambit/Makefile 440778 2017-05-13 10:52:13Z miwi $
+# $FreeBSD: head/shells/ambit/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	ambit
 PORTVERSION=	2.0.39
@@ -20,6 +20,8 @@ NO_BUILD=	yes
 NO_ARCH=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 BROKEN=		checksum mismatch
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 PLIST_SUB=	AMBITDIR=${AMBITDIR}
 

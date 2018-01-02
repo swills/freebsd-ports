@@ -1,8 +1,8 @@
 # Created by: Johannes Jost Meixner <xmj@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-rails-dom-testing1/Makefile 430420 2017-01-02 23:08:27Z swills $
+# $FreeBSD: head/textproc/rubygem-rails-dom-testing1/Makefile 456756 2017-12-19 18:21:24Z sunpoet $
 
 PORTNAME=	rails-dom-testing
-PORTVERSION=	1.0.8
+PORTVERSION=	1.0.9
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	1

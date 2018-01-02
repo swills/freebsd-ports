@@ -1,4 +1,4 @@
-# $FreeBSD: head/irc/bitlbee/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/irc/bitlbee/Makefile 456471 2017-12-16 14:25:05Z rene $
 
 PORTNAME=	bitlbee
 PORTVERSION=	3.5.1
@@ -41,7 +41,7 @@ LIBPURPLE_PREVENTS_MSG=	If libpurple is enabled, all native protocols must be di
 OTR_DESC=		Off-the-Record Messaging support
 LIBPURPLE_DESC=		Use libpurple for protocol support
 MSN_DESC=		Microsoft Messenger support
-OSCAR_DESC=		OSCAR (ICQ, AIM) support
+OSCAR_DESC=		OSCAR (ICQ) support
 SKYPE_DESC=		Skype support
 TWITTER_DESC=		Twitter support
 YAHOO_DESC=		Yahoo! Messenger support

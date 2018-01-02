@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/compiler.mk 449716 2017-09-12 20:43:58Z gerald $
+# $FreeBSD: head/Mk/Uses/compiler.mk 457360 2017-12-27 10:41:30Z jbeich $
 #
 # Allows to determine the compiler being used
 #
@@ -153,10 +153,10 @@ CC=	clang
 CXX=	clang++
 CHOSEN_COMPILER_TYPE=	clang
 .else
-BUILD_DEPENDS+=	${LOCALBASE}/bin/clang40:devel/llvm40
-CPP=	${LOCALBASE}/bin/clang-cpp40
-CC=	${LOCALBASE}/bin/clang40
-CXX=	${LOCALBASE}/bin/clang++40
+BUILD_DEPENDS+=	${LOCALBASE}/bin/clang50:devel/llvm50
+CPP=	${LOCALBASE}/bin/clang-cpp50
+CC=	${LOCALBASE}/bin/clang50
+CXX=	${LOCALBASE}/bin/clang++50
 CHOSEN_COMPILER_TYPE=	clang
 .endif
 .endif

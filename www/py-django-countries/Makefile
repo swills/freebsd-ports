@@ -1,8 +1,8 @@
 # Created by: Alfred Perlstein <alfred@freebsd.org>
-# $FreeBSD: head/www/py-django-countries/Makefile 403952 2015-12-18 04:05:45Z alfred $
+# $FreeBSD: head/www/py-django-countries/Makefile 457280 2017-12-26 11:12:01Z alfred $
 
 PORTNAME=	django-countries
-PORTVERSION=	3.4.1
+PORTVERSION=	5.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

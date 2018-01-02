@@ -1,8 +1,8 @@
 # Created by: gordon@FreeBSD.org
-# $FreeBSD: head/devel/p4p/Makefile 435451 2017-03-05 07:05:59Z gordon $
+# $FreeBSD: head/devel/p4p/Makefile 456883 2017-12-21 04:07:29Z gordon $
 
 PORTNAME=	p4p
-PORTVERSION=	2016.1.1492381
+PORTVERSION=	2016.1.1598719
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.perforce.com/perforce/${P4VERSION}/bin.${PLATFORM}/ \
 		http://filehost.perforce.com/perforce/${P4VERSION}/bin.${PLATFORM}/

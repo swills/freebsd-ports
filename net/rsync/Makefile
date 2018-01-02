@@ -1,10 +1,10 @@
 # Created by: David O'Brien (obrien@cs.ucdavis.edu)
-# $FreeBSD: head/net/rsync/Makefile 449999 2017-09-17 13:13:10Z ehaupt $
+# $FreeBSD: head/net/rsync/Makefile 456798 2017-12-20 14:18:20Z ehaupt $
 
 PORTNAME=	rsync
 PORTVERSION=	3.1.2
+PORTREVISION=	8
 CATEGORIES=	net ipv6
-PORTREVISION=	7
 MASTER_SITES=	http://rsync.samba.org/ftp/rsync/ \
 		https://rsync.samba.org/ftp/rsync/ \
 		ftp://ftp.fu-berlin.de/pub/unix/network/rsync/ \

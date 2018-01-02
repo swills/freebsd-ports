@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/lightning/Makefile 450197 2017-09-20 12:01:11Z bofh $
+# $FreeBSD: head/devel/lightning/Makefile 456894 2017-12-21 08:59:33Z linimon $
 
 PORTNAME=	lightning
 PORTVERSION=	2.1.2
@@ -20,7 +20,7 @@ USE_LDCONFIG=	yes
 
 PLIST_SUB=	JIT_ARCH=${ARCH:S/i386/x86/:S/amd64/x86/:S/x86_64/x86/:S/sparc64/sparc/:S/powerpc/ppc/}
 
-ONLY_FOR_ARCHS=	amd64 arm i386 mips powerpc sparc64
+ONLY_FOR_ARCHS=	aarch64 amd64 arm armv6 armv7 i386 mips powerpc sparc64
 
 INFO=		lightning
 

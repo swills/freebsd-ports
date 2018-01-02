@@ -1,5 +1,5 @@
 # Created by: Edgardo Garcia Hoeffler <edybsd@yahoo.com.ar>
-# $FreeBSD: head/x11-fm/gnome-commander2/Makefile 455036 2017-11-28 11:47:16Z amdmi3 $
+# $FreeBSD: head/x11-fm/gnome-commander2/Makefile 456126 2017-12-12 12:40:15Z antoine $
 
 PORTNAME=	gnome-commander
 PORTVERSION=	1.6.3
@@ -25,7 +25,7 @@ RUN_DEPENDS=	meld:textproc/meld \
 		yelp:x11/yelp
 
 USES=		compiler:c++11-lang gettext gmake libtool localbase:ldflags pathfix \
-		pkgconfig python tar:xz
+		pkgconfig python:2.7 tar:xz
 USE_GNOME=	cairo gdkpixbuf2 gnomedocutils gnomeprefix gnomevfs2 intltool libgnomeui
 USE_XORG=	ice sm
 GNU_CONFIGURE=	yes

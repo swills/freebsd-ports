@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/libsignon-glib/Makefile 445159 2017-07-06 15:18:01Z tcberner $
+# $FreeBSD: head/net-im/libsignon-glib/Makefile 456216 2017-12-13 16:01:51Z antoine $
 
 PORTNAME=	${GL_PROJECT}
 PORTVERSION=	1.14
@@ -22,6 +22,7 @@ CONFIGURE_ARGS=	--disable-tests --enable-gtk-doc
 
 USES=		autoreconf gmake libtool pathfix pkgconfig python tar:bz2
 USE_GNOME=	introspection pygobject3
+USE_PYTHON=	py3kplist
 
 PATHFIX_MAKEFILEIN=	Makefile.am
 

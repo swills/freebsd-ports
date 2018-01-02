@@ -1,13 +1,13 @@
 # Created by: Alexandros Kosiaris <akosiaris+ports@gmail.com>
-# $FreeBSD: head/devel/py-celery/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-celery/Makefile 457826 2018-01-02 00:52:59Z olgeni $
 
 PORTNAME=	celery
-PORTVERSION=	4.0.2
+PORTVERSION=	4.1.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	wg@FreeBSD.org
+MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Asynchronous task queue/job queue
 
 LICENSE=	BSD3CLAUSE

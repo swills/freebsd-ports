@@ -1,17 +1,17 @@
-# $FreeBSD: head/comms/cwstudio/Makefile 430482 2017-01-03 16:37:20Z db $
+# $FreeBSD: head/comms/cwstudio/Makefile 457213 2017-12-25 10:23:27Z joneum $
 
 PORTNAME=	cwstudio
-PORTVERSION=	0.9.5
+DISTVERSION=	0.9.6
 CATEGORIES=	comms hamradio
 MASTER_SITES=	SOURCEFORGE/cwstudio
 
 MAINTAINER=	luqqe@users.sourceforge.net
-COMMENT=	Fast, portable and lightweight Morse code signals generator
+COMMENT=	Multichannel portable Morse code signals generator
 
 LICENSE=	GPLv3+
 
-USE_WX=		3.0+
 USES+=		ncurses
+USE_WX=		3.0+
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-wx-config=${LOCALBASE}/bin/wxgtk2u-3.0-config

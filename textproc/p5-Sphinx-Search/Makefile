@@ -1,8 +1,8 @@
 # Created by: Vivek Khera <vivek@khera.org>
-# $FreeBSD: head/textproc/p5-Sphinx-Search/Makefile 454840 2017-11-24 19:36:47Z sunpoet $
+# $FreeBSD: head/textproc/p5-Sphinx-Search/Makefile 456150 2017-12-12 13:34:21Z sunpoet $
 
 PORTNAME=	Sphinx-Search
-PORTVERSION=	0.30
+PORTVERSION=	0.31
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:JJSCHUTZ

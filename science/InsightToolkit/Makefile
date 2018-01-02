@@ -1,8 +1,9 @@
 # Created by: bacon@smithers.neuro.mcw.edu
-# $FreeBSD: head/science/InsightToolkit/Makefile 450430 2017-09-23 12:12:08Z woodsb02 $
+# $FreeBSD: head/science/InsightToolkit/Makefile 457666 2017-12-31 03:15:44Z woodsb02 $
 
 PORTNAME=	InsightToolkit
-PORTVERSION=	4.12.2
+PORTVERSION=	4.13.0
+PORTREVISION=	1
 CATEGORIES=	science biology
 MASTER_SITES=	SF/itk/itk/${ITK_VER}
 
@@ -11,6 +12,7 @@ COMMENT=	Insight Toolkit
 
 LICENSE=	APACHE20
 
+BUILD_DEPENDS=	googletest>=0:devel/googletest
 LIB_DEPENDS=	libgdcmCommon.so:devel/gdcm \
 		libexpat.so:textproc/expat2 \
 		libfftw.so:math/fftw \

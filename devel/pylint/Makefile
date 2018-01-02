@@ -1,8 +1,8 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/pylint/Makefile 455939 2017-12-11 10:36:50Z sunpoet $
+# $FreeBSD: head/devel/pylint/Makefile 456545 2017-12-17 15:54:10Z sunpoet $
 
 PORTNAME=	pylint
-PORTVERSION=	1.7.4
+PORTVERSION=	1.8.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMESUFFIX=	${PYTHON_PKGNAMESUFFIX}
@@ -14,8 +14,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-runner>=0:devel/py-pytest-runner@${FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}astroid>=1.5.1:devel/py-astroid@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}editdistance>=0:devel/py-editdistance@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}astroid>=1.6.0:devel/py-astroid@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}isort>=4.2.5:devel/py-isort@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mccabe>=0:devel/py-mccabe@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}

@@ -1,8 +1,9 @@
 # Created by: Dryice Liu	<dryice@dryice.name>
-# $FreeBSD: head/www/py-pastescript/Makefile 455733 2017-12-07 16:02:09Z sunpoet $
+# $FreeBSD: head/www/py-pastescript/Makefile 457301 2017-12-26 18:36:47Z lwhsu $
 
 PORTNAME=	PasteScript
 PORTVERSION=	2.0.2
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +15,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/docs/license.txt
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cheetah>=0:devel/py-cheetah@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}flup>=0:www/py-flup@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}flup6>=0:www/py-flup6@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Paste>=1.3:www/py-paste@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}PasteDeploy>=0:www/py-pastedeploy@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR} \

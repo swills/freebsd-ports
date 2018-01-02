@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/truevision/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/truevision/Makefile 456181 2017-12-12 18:35:32Z antoine $
 
 PORTNAME=	truevision
 DISTVERSION=	0.5.5-2
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libgtkglext-x11-1.0.so:x11-toolkits/gtkglext
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:R}
 
 USES=		desktop-file-utils gettext gmake libtool pathfix pkgconfig \
-		python shared-mime-info tar:bzip2
+		python:2.7 shared-mime-info tar:bzip2
 USE_GNOME=	gnomeprefix intlhack libgnomeui
 USE_GL=		gl
 GNU_CONFIGURE=	yes

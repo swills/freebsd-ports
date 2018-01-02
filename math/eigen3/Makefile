@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/eigen3/Makefile 453453 2017-11-04 11:43:35Z dbaio $
+# $FreeBSD: head/math/eigen3/Makefile 457660 2017-12-31 01:28:28Z yuri $
 
 PORTNAME=	eigen
 PORTVERSION=	3.3.4
@@ -16,6 +16,7 @@ LICENSE_COMB=	multi
 CMAKE_ARGS=	-DPKGCONFIG_INSTALL_DIR:PATH="${PREFIX}/libdata/pkgconfig"
 USES=		cmake:outsource tar:bzip2
 NO_BUILD=	yes
+NO_ARCH=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTNAME}-5a0156e40feb
 

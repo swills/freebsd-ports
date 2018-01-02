@@ -1,4 +1,4 @@
-# $FreeBSD: head/korean/ibus-hangul/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/korean/ibus-hangul/Makefile 456216 2017-12-13 16:01:51Z antoine $
 
 PORTNAME=	ibus-hangul
 PORTVERSION=	1.5.0
@@ -18,5 +18,6 @@ INSTALLS_ICONS=	yes
 INSTALL_TARGET=	install-strip
 USE_GNOME=	gtk30 intlhack pygobject3
 USES=		gettext gmake libtool pkgconfig python
+USE_PYTHON=	py3kplist
 
 .include <bsd.port.mk>

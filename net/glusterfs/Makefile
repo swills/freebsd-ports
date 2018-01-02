@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/glusterfs/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/net/glusterfs/Makefile 456126 2017-12-12 12:40:15Z antoine $
 
 PORTNAME=	glusterfs
 PORTVERSION=	3.11.1
@@ -14,7 +14,7 @@ LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libargp.so:devel/argp-standalone liburcu-bp.so:sysutils/liburcu
 
-USES=		bison gettext libtool pkgconfig python readline shebangfix \
+USES=		bison gettext libtool pkgconfig python:2.7 readline shebangfix \
 		sqlite ssl
 
 BROKEN_SSL=	libressl

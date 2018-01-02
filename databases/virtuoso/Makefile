@@ -1,5 +1,5 @@
 # Created by: Max Khon <fjoe@FreeBSD.org>
-# $FreeBSD: head/databases/virtuoso/Makefile 455165 2017-11-30 05:55:17Z linimon $
+# $FreeBSD: head/databases/virtuoso/Makefile 457061 2017-12-23 15:41:21Z tijl $
 
 PORTNAME=	virtuoso
 PORTVERSION=	7.2.4.2
@@ -28,7 +28,6 @@ NOT_FOR_ARCHS=	arm armv6 armv7 i386 mips powerpc
 NOT_FOR_ARCHS_REASON=	can only be built on 64bit platforms
 
 USES=		gmake libtool readline uidfix ssl
-USE_AUTOTOOLS=	autoheader aclocal
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-readline\

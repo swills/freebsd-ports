@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-flask-wtf/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-flask-wtf/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	Flask-WTF
 PORTVERSION=	0.14.2
@@ -23,7 +23,7 @@ TESTS_BUILD_DEPENDS=	${RUN_DEPENDS} \
 			${TEST_DEPENDS}
 
 NO_ARCH=	yes
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 do-test:

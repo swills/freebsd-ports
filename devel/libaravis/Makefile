@@ -1,5 +1,5 @@
 # Created by: Rozhuk Ivan
-# $FreeBSD: head/devel/libaravis/Makefile 441951 2017-05-28 23:16:55Z sunpoet $
+# $FreeBSD: head/devel/libaravis/Makefile 457173 2017-12-24 15:05:38Z tijl $
 
 PORTNAME=		libaravis
 PORTVERSION=		0.5.9
@@ -25,7 +25,6 @@ LIB_DEPENDS+=		libxml2.so:textproc/libxml2 \
 USES=			pkgconfig autoreconf libtool gmake
 USE_LDCONFIG=		yes
 GNU_CONFIGURE=		yes
-AUTOMAKE_ARGS=		--add-missing --copy
 MAKE_ARGS=		pkgconfigdir="${PREFIX}/libdata/pkgconfig"
 
 OPTIONS_DEFINE=		DOCS NLS FAST_HEARTBEAT USB

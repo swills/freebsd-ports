@@ -1,5 +1,5 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/devel/pijul/Makefile 451334 2017-10-05 18:56:33Z cs $
+# $FreeBSD: head/devel/pijul/Makefile 456576 2017-12-18 02:06:59Z linimon $
 
 PORTNAME=	pijul
 PORTVERSION=	0.8.0
@@ -11,6 +11,8 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	Distributed version control system
 
 LICENSE=	GPLv2
+
+BROKEN_aarch64=		fails to compile: aesv8-armx-linux64.S:53:2: instruction requires: crypto aese v6.16b,v0.16b
 
 USES=		cargo gmake
 CARGO_CRATES=	advapi32-sys-0.2.0 \

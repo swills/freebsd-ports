@@ -1,9 +1,8 @@
 # Created by: Peter Haight <peterh@sapros.com>
-# $FreeBSD: head/devel/scons/Makefile 438473 2017-04-13 19:46:06Z amdmi3 $
+# $FreeBSD: head/devel/scons/Makefile 456127 2017-12-12 12:47:05Z swills $
 
 PORTNAME=	scons
-PORTVERSION=	2.5.1
-PORTREVISION=	1
+PORTVERSION=	3.0.1
 CATEGORIES=	devel python
 MASTER_SITES=	SF
 
@@ -15,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	gm4:devel/m4
 
-USES=		python:2 shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	script/scons*
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes

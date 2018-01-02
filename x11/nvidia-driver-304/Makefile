@@ -1,7 +1,7 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/x11/nvidia-driver-304/Makefile 437618 2017-04-03 12:08:32Z danfe $
+# $FreeBSD: head/x11/nvidia-driver-304/Makefile 457308 2017-12-26 18:55:18Z danfe $
 
-DISTVERSION=	304.135
+DISTVERSION=	304.137
 # Explicitly set PORTREVISION as it can be overridden by the master port
 PORTREVISION=	0
 

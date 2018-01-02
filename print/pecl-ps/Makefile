@@ -1,5 +1,5 @@
 # Created by: Alan Garfield <alan@fromorbit.com>
-# $FreeBSD: head/print/pecl-ps/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/print/pecl-ps/Makefile 456296 2017-12-14 13:57:28Z tz $
 
 PORTNAME=	ps
 PORTVERSION=	1.3.7
@@ -11,10 +11,11 @@ COMMENT=	PHP extension for pslib to generate postscript
 
 LICENSE=	PHP202
 
+IGNORE_WITH_PHP=	70 71 72
+
 LIB_DEPENDS=	libps.so:print/pslib
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|-ldl|-lintl|g' ${WRKSRC}/config.m4

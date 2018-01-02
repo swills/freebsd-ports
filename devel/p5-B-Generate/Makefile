@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-B-Generate/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-B-Generate/Makefile 456925 2017-12-21 17:41:20Z sunpoet $
 
 PORTNAME=	B-Generate
-PORTVERSION=	1.55
+PORTVERSION=	1.56
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

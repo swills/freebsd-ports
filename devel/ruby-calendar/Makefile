@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/ruby-calendar/Makefile 406285 2016-01-17 07:06:25Z swills $
+# $FreeBSD: head/devel/ruby-calendar/Makefile 456321 2017-12-14 17:58:50Z swills $
 
 PORTNAME=	calendar
 PORTVERSION=	1.11.4r
@@ -15,6 +15,10 @@ COMMENT=	Ruby modules to handle various calendars
 
 BROKEN_RUBY22=	yes
 BROKEN_RUBY23=	yes
+BROKEN_RUBY24=	yes
+
+DEPRECATED=	Does not build with current versions of ruby
+EXPIRATION_DATE=	2018-01-14
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 

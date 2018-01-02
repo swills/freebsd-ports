@@ -1,8 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/www/py-django110/Makefile 455898 2017-12-10 13:48:51Z wen $
+# $FreeBSD: head/www/py-django110/Makefile 457583 2017-12-30 06:42:28Z sunpoet $
 
 PORTNAME=	django
 PORTVERSION=	1.10.8
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP \
 		https://www.djangoproject.com/m/releases/${PORTVERSION}/
@@ -17,6 +18,9 @@ COMMENT=	High-level Python Web Framework
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+DEPRECATED=	Use www/py-django111 or www/py-django20 instead
+EXPIRATION_DATE=2018-01-31
+
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${FLAVOR}
 
 NO_ARCH=	yes
@@ -29,8 +33,9 @@ CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}django-devel ${PYTHON_PKGNAMEPREFIX}dj
 CPE_VENDOR=		djangoproject
 
 DOCSDIR=	${PREFIX}/share/doc/py-django
+PORTDOCS=	*
 
-OPTIONS_DEFINE=		DOCS FASTCGI HTMLDOCS
+OPTIONS_DEFINE=		DOCS HTMLDOCS
 OPTIONS_DEFAULT=	SQLITE
 
 OPTIONS_GROUP=		DATABASE
@@ -41,20 +46,13 @@ HTMLDOCS_DESC=	Install HTML documentation (requires Sphinx)
 PLIST_FILES=	man/man1/django-admin.1.gz
 
 HTMLDOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${FLAVOR}
+HTMLDOCS_IMPLIES=	DOCS
 PGSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>0:databases/py-psycopg2@${FLAVOR}
 MYSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=1.2.2:databases/py-MySQLdb@${FLAVOR}
 SQLITE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR}
-FASTCGI_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}flup>0:www/py-flup@${FLAVOR}
-
-.include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MHTMLDOCS} && empty(PORT_OPTIONS:MDOCS)
-IGNORE=	you cannot build documentation with DOCS option disabled
-PORTDOCS=	*
-.endif
 
 post-build-HTMLDOCS-on:
-	cd ${WRKSRC}/docs && ${MAKE} html
+	cd ${WRKSRC}/docs && ${MAKE} html SPHINXBUILD=sphinx-build-${PYTHON_VER}
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/docs/man/* ${STAGEDIR}/${MAN1PREFIX}/man/man1

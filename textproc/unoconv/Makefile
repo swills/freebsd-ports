@@ -1,8 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/textproc/unoconv/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/unoconv/Makefile 456188 2017-12-13 02:16:28Z swills $
 
 PORTNAME=	unoconv
 PORTVERSION=	0.6
+PORTREVISION=	1
 CATEGORIES=	textproc python
 MASTER_SITES=	http://dag.wieers.com/home-made/${PORTNAME}/ \
 		SF/nemysisfreebsdp/textproc/:icons

@@ -1,5 +1,5 @@
 # Created by: Stas Timokhin <stast@bsdportal.ru>
-# $FreeBSD: head/multimedia/bombono/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/multimedia/bombono/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	bombono
 PORTVERSION=	1.2.2
@@ -26,6 +26,8 @@ RUN_DEPENDS=	gm:graphics/GraphicsMagick \
 		toolame:audio/toolame
 
 BROKEN=		fails to compile: weakref.h: macro "static_assert" passed 3 arguments, but takes just 2
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 USES=		desktop-file-utils gettext pkgconfig scons shared-mime-info \
 		tar:bzip2

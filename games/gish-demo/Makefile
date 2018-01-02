@@ -1,5 +1,5 @@
 # Created by: Jona Joachim <walkingshadow@grummel.net>
-# $FreeBSD: head/games/gish-demo/Makefile 440643 2017-05-11 18:26:00Z antoine $
+# $FreeBSD: head/games/gish-demo/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	gish-demo
 PORTVERSION=	1.60
@@ -12,6 +12,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Platform game with a gelatinous 12-pound ball of tar (Demo version)
 
 BROKEN=		unfetchable
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 RESTRICTED=	(c) Copyright 2004 Chronic Logic All rights reserved
 ONLY_FOR_ARCHS=	i386 amd64

@@ -1,8 +1,8 @@
 # Created by: John W. O'Brien <john@saltant.com>
-# $FreeBSD: head/textproc/py-m2r/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-m2r/Makefile 457545 2017-12-29 22:07:45Z joneum $
 
 PORTNAME=	m2r
-PORTVERSION=	0.1.6
+DISTVERSION=	0.1.12
 CATEGORIES=	textproc devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

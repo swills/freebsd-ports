@@ -1,17 +1,20 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/games/adgali/Makefile 450353 2017-09-22 10:48:57Z mat $
+# $FreeBSD: head/games/adgali/Makefile 457829 2018-01-02 01:51:11Z linimon $
 
 PORTNAME=	adgali
 PORTVERSION=	0.2.4
 PORTREVISION=	15
 CATEGORIES=	games devel
-MASTER_SITES=	http://www.sourcefiles.org/Programming/Libraries/Games/
+MASTER_SITES=	# disappeared
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Open source game library useful for 2D game development
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	Mastersite disappeared
+EXPIRATION_DATE=	2018-03-01
 
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libtiff.so:graphics/tiff \

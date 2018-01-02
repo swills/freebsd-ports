@@ -1,5 +1,5 @@
 # Created by: Tobias C. Berner <tcberner@gmail.com>
-# $FreeBSD: head/net-im/libaccounts-glib/Makefile 437609 2017-04-03 09:48:43Z rakuco $
+# $FreeBSD: head/net-im/libaccounts-glib/Makefile 456216 2017-12-13 16:01:51Z antoine $
 
 PORTNAME=	libaccounts-glib
 PORTVERSION=	1.21
@@ -24,6 +24,7 @@ INSTALL_TARGET=	install-strip
 
 USES=		autoreconf gmake libtool pathfix pkgconfig python sqlite:3
 USE_GNOME=	pygobject3 introspection libxml2
+USE_PYTHON=	py3kplist
 
 # GitLab variables.
 GL_ACCOUNT=	accounts-sso

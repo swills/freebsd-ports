@@ -1,5 +1,5 @@
 # Created by: Edward Tomasz Napierala <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/ardour/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/audio/ardour/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	ardour
 PORTVERSION=	2.8.16
@@ -14,6 +14,8 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN=		fails to build
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 LIB_DEPENDS=	liblo.so:audio/liblo \
 		liblrdf.so:textproc/liblrdf \

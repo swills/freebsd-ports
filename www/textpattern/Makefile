@@ -1,5 +1,5 @@
 # Created by: babak@farrokhi.net
-# $FreeBSD: head/www/textpattern/Makefile 424495 2016-10-23 06:53:16Z jhale $
+# $FreeBSD: head/www/textpattern/Makefile 456517 2017-12-16 21:44:09Z tz $
 
 PORTNAME=	textpattern
 PORTVERSION=	4.6.2
@@ -10,6 +10,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Free, flexible, elegant, easy-to-use content management system
 
 LICENSE=	GPLv2
+
+IGNORE_WITH_PHP=	70 71 72
 
 USES=		cpe php:web
 USE_PHP=	json mbstring mysql pcre xml zlib

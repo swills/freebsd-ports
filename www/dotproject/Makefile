@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/dotproject/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/dotproject/Makefile 456517 2017-12-16 21:44:09Z tz $
 
 PORTNAME=	dotproject
 PORTVERSION=	2.1.8
@@ -10,6 +10,8 @@ COMMENT=	Open Source Project Management tool
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+IGNORE_WITH_PHP=	70 71 72
 
 USES=		cpe shebangfix php:web
 SHEBANG_FILES=	misc/cvs2cl/cvs2cl.pl

@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/archivers/kzip/Makefile 421387 2016-09-05 19:23:42Z tijl $
+# $FreeBSD: head/archivers/kzip/Makefile 457212 2017-12-25 09:00:42Z amdmi3 $
 
 PORTNAME=	kzip
 DISTVERSION=	20150319
@@ -20,19 +20,12 @@ USES=		linux
 NO_BUILD=	yes
 WRKSRC_SUBDIR=	i686
 
-FILES=		kzip-static
-.for file in ${FILES}
-PLIST_FILES+=	bin/${file:S/-static$//}
-.endfor
+PLIST_FILES=	bin/kzip
 
 post-extract:
-.for file in ${FILES}
-	@${BRANDELF} -t Linux ${WRKSRC}/${file}
-.endfor
+	@${BRANDELF} -t Linux ${WRKSRC}/kzip-static
 
 do-install:
-.for file in ${FILES}
-	@${INSTALL_PROGRAM} ${WRKSRC}/${file} ${STAGEDIR}${PREFIX}/bin/${file:S/-static$//}
-.endfor
+	${INSTALL_PROGRAM} ${WRKSRC}/kzip-static ${STAGEDIR}${PREFIX}/bin/kzip
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/games/twitch/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/games/twitch/Makefile 456126 2017-12-12 12:40:15Z antoine $
 
 PORTNAME=	twitch
 PORTVERSION=	1.0
@@ -19,7 +19,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYGAME}
 
-USES=		python
+USES=		python:2.7
 
 PORTDOCS=	AUTHORS BUGS README
 OPTIONS_DEFINE=	DOCS

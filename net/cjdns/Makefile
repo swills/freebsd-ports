@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net/cjdns/Makefile 444361 2017-06-26 10:10:20Z bhughes $
+# $FreeBSD: head/net/cjdns/Makefile 456217 2017-12-13 16:05:48Z antoine $
 
 PORTNAME=	cjdns
 PORTVERSION=	20
@@ -18,7 +18,7 @@ BUILD_DEPENDS=	node:www/node \
 USE_GITHUB=	yes
 GH_ACCOUNT=	cjdelisle
 
-USES=		gmake python
+USES=		gmake python:2.7
 USE_RC_SUBR=	cjdns
 SUB_FILES=	cjdns pkg-message
 SUB_LIST=	LOCALBASE=${LOCALBASE}

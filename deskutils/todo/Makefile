@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/deskutils/todo/Makefile 451777 2017-10-11 19:49:21Z sunpoet $
+# $FreeBSD: head/deskutils/todo/Makefile 456237 2017-12-13 20:49:25Z sunpoet $
 
 PORTNAME=	todo
 PORTVERSION=	2.10.0
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	bash:shells/bash
 
 # bin/todo
-CONFLICTS_INSTALL=	devtodo
+CONFLICTS_INSTALL=	deforaos-todo devtodo
 
 NO_ARCH=	yes
 NO_BUILD=	yes

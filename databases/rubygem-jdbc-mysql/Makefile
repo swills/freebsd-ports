@@ -1,8 +1,8 @@
 # Created by: Alexander Logvinov <ports@logvinov,com>
-# $FreeBSD: head/databases/rubygem-jdbc-mysql/Makefile 442645 2017-06-05 14:51:28Z sunpoet $
+# $FreeBSD: head/databases/rubygem-jdbc-mysql/Makefile 457403 2017-12-27 19:52:40Z sunpoet $
 
 PORTNAME=	jdbc-mysql
-PORTVERSION=	5.1.42
+PORTVERSION=	5.1.44
 CATEGORIES=	databases rubygems java
 MASTER_SITES=	RG
 

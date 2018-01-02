@@ -1,8 +1,8 @@
 # Created by: Christopher Elkins <chrise@scardini.com>
-# $FreeBSD: head/lang/nickle/Makefile 451699 2017-10-10 13:17:40Z vanilla $
+# $FreeBSD: head/lang/nickle/Makefile 457775 2018-01-01 13:34:56Z wen $
 
 PORTNAME=	nickle
-PORTVERSION=	2.79
+PORTVERSION=	2.81
 CATEGORIES=	lang
 MASTER_SITES=	http://www.nickle.org/release/
 

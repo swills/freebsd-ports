@@ -1,9 +1,10 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/textproc/consul-template/Makefile 455664 2017-12-06 17:14:13Z swills $
+# $FreeBSD: head/textproc/consul-template/Makefile 456563 2017-12-17 21:04:49Z swills $
 
 PORTNAME=	consul-template
 PORTVERSION=	0.19.4
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	textproc
 
 MAINTAINER=	swills@FreeBSD.org

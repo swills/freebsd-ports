@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/glest/Makefile 455789 2017-12-08 17:47:11Z amdmi3 $
+# $FreeBSD: head/games/glest/Makefile 457081 2017-12-23 16:50:15Z tijl $
 
 PORTNAME=	glest
 PORTVERSION=	3.2.2
@@ -17,8 +17,8 @@ LIB_DEPENDS=	libxerces-c.so:textproc/xerces-c3 \
 BUILD_DEPENDS=	jam:devel/jam
 RUN_DEPENDS=	${LOCALBASE}/${DATADIR_REL}/servers.ini:games/glest-data
 
-USES=		dos2unix localbase openal:al,alut pkgconfig zip lua:51
-USE_AUTOTOOLS=	automake:env autoconf:env
+USES=		autoreconf:build dos2unix localbase lua:51 openal:al,alut \
+		pkgconfig zip
 USE_SDL=	yes
 USE_GL=		yes
 GNU_CONFIGURE=	yes
@@ -45,9 +45,6 @@ pre-extract:
 	@${MKDIR} ${WRKDIR}/${DISTNAME}
 
 post-patch:
-	@${REINPLACE_CMD} -e "s|%%ACLOCAL%%|${ACLOCAL}|g" \
-		-e "s|%%AUTOCONF%%|${AUTOCONF}|g" \
-		${WRKSRC}/mk/linux/autogen.sh
 	@${REINPLACE_CMD} \
 		-e 's|PTHREAD_LIBS="-l[$$]flag"|PTHREAD_LIBS="-lpthread"|g' \
 		-e 's|pthreads library -l[$$]flag|pthreads library -lpthread|g' \

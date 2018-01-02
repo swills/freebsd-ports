@@ -1,8 +1,8 @@
 # Created by: Wen heping <wenheping@gmail.com>
-# $FreeBSD: head/www/opencart/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/opencart/Makefile 456882 2017-12-21 03:22:17Z wen $
 
 PORTNAME=	opencart
-PORTVERSION=	2.3.0.2
+PORTVERSION=	3.0.2.0
 CATEGORIES=	www misc
 
 MAINTAINER=	wen@FreeBSD.org
@@ -14,7 +14,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	opencart
 
 USES=		php
-USE_PHP=	filter mysqli curl mbstring gd zlib mcrypt session zip hash
+USE_PHP=	filter mysqli curl mbstring gd zlib mcrypt session zip hash openssl
 WRKSRC_SUBDIR=	upload
 
 NO_BUILD=	yes

@@ -1,8 +1,9 @@
 # Created by: melifaro@ipfw.ru
-# $FreeBSD: head/net/nss-pam-ldapd/Makefile 447034 2017-08-01 17:07:58Z zi $
+# $FreeBSD: head/net/nss-pam-ldapd/Makefile 456718 2017-12-19 14:40:35Z zi $
 
 PORTNAME=		nss-pam-ldapd
 PORTVERSION=		0.9.8
+PORTREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		http://arthurdejong.org/nss-pam-ldapd/ \
 			ZI

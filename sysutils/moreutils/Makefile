@@ -1,8 +1,8 @@
 # Created by: Charlie Kester <corky1951@comcast.net>
-# $FreeBSD: head/sysutils/moreutils/Makefile 439805 2017-04-30 12:00:08Z sunpoet $
+# $FreeBSD: head/sysutils/moreutils/Makefile 457800 2018-01-01 20:58:37Z sunpoet $
 
 PORTNAME=	moreutils
-PORTVERSION=	0.61
+PORTVERSION=	0.62
 CATEGORIES=	sysutils
 MASTER_SITES=	https://git.joeyh.name/index.cgi/moreutils.git/snapshot/ \
 		LOCAL/sunpoet

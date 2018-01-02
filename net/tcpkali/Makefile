@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/tcpkali/Makefile 444417 2017-06-26 22:26:55Z linimon $
+# $FreeBSD: head/net/tcpkali/Makefile 456901 2017-12-21 10:23:19Z linimon $
 
 PORTNAME=	tcpkali
 PORTVERSION=	1.1.1
@@ -11,8 +11,13 @@ COMMENT=	High performance load generator for TCP and WebSocket servers
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-ONLY_FOR_ARCHS=		amd64 i386
-ONLY_FOR_ARCHS_REASON=	uses x86 assembler
+BROKEN_aarch64=		invokes x86 assembler
+BROKEN_armv6=		invokes x86 assembler
+BROKEN_armv7=		invokes x86 assembler
+BROKEN_mips=		invokes x86 assembler
+BROKEN_mips64=		invokes x86 assembler
+BROKEN_sparc64=		invokes x86 assembler
+BROKEN_powerpc64=	invokes x86 assembler
 
 GNU_CONFIGURE=	yes
 USES=		autoreconf libtool gmake ncurses

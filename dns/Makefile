@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/dns/Makefile 457766 2018-01-01 11:41:37Z rene $
 #
 
     COMMENT = Domain Name Service tools
@@ -62,7 +62,7 @@
     SUBDIR += doc
     SUBDIR += dq
     SUBDIR += drool
-    SUBDIR += dualserver
+    SUBDIR += dynip
     SUBDIR += erlang-idna
     SUBDIR += ez-ipupdate
     SUBDIR += fastresolve
@@ -171,6 +171,7 @@
     SUBDIR += pear-Net_DNS2
     SUBDIR += powerdns
     SUBDIR += powerdns-recursor
+    SUBDIR += powerdns-recursor40
     SUBDIR += public_suffix_list
     SUBDIR += py-dns
     SUBDIR += py-dns-lexicon

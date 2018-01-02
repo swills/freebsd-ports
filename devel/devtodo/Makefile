@@ -1,5 +1,5 @@
 # Created by: Pete Fritchman <petef@databits.net>
-# $FreeBSD: head/devel/devtodo/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/devel/devtodo/Makefile 456238 2017-12-13 20:49:30Z sunpoet $
 
 PORTNAME=	devtodo
 PORTVERSION=	0.1.20
@@ -10,7 +10,7 @@ MASTER_SITES=	http://swapoff.org/files/devtodo/
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tool to effectively maintain todo lists aimed at developers
 
-CONFLICTS=	tdl-[0-9]* todo-[0-9]*
+CONFLICTS_INSTALL=	deforaos-todo tdl todo
 
 GNU_CONFIGURE=	yes
 USES=		ncurses readline

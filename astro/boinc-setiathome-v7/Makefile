@@ -1,5 +1,5 @@
 # Created by: rene
-# $FreeBSD: head/astro/boinc-setiathome-v7/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/astro/boinc-setiathome-v7/Makefile 457159 2017-12-24 13:36:40Z tijl $
 
 PORTNAME=	boinc-setiathome-v7
 PORTVERSION=	7.00
@@ -18,9 +18,8 @@ BUILD_DEPENDS=	${LOCALBASE}/include/fftw3.h:math/fftw3
 RUN_DEPENDS=	boinc_client:net/boinc-client
 LIB_DEPENDS=	libfftw3f.so:math/fftw3-float
 
-USES=		tar:xz gmake pkgconfig
-USE_AUTOTOOLS=	autoconf:env automake:env
 GNU_CONFIGURE=	yes
+USES=		autoreconf gmake libtool pkgconfig tar:xz
 
 CFLAGS+=	-O2 -I${LOCALBASE}/include/boinc -I${LOCALBASE}/include \
 		-L${LOCALBASE}/lib
@@ -88,9 +87,6 @@ post-patch:
 		${WRKSRC}/client/seti.cpp \
 		${WRKSRC}/client/timecvt.cpp \
 		${WRKSRC}/db/xml_util.cpp
-
-pre-configure:
-	(cd ${WRKSRC} ; ./_autosetup)
 
 do-install:
 	${INSTALL} -d ${STAGEDIR}${BOINC_CLIENT_HOME}/projects

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-csv/Makefile 442029 2017-05-29 18:24:47Z olgeni $
+# $FreeBSD: head/devel/elixir-csv/Makefile 456837 2017-12-20 15:54:03Z olgeni $
 
 PORTNAME=	csv
-PORTVERSION=	2.0.0
+PORTVERSION=	2.1.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

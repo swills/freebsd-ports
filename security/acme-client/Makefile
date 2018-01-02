@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/security/acme-client/Makefile 454922 2017-11-26 21:07:20Z brnrd $
+# $FreeBSD: head/security/acme-client/Makefile 457047 2017-12-23 12:38:35Z brnrd $
 
 PORTNAME=	acme-client
 PORTVERSION=	0.1.16
@@ -50,16 +50,16 @@ post-install:
 .include <bsd.port.pre.mk>
 
 .if ! ${SSL_DEFAULT:Mlibressl*}
-BUILD_DEPENDS+=		${NONEXISTENT}:security/libressl:stage
-CPPFLAGS+=		-I${WRKDIR}/libressl/include
-LDFLAGS+=		-L${WRKDIR}/libressl/lib
 . ifnmake describe
 STAGEDIR_libressl!=	${MAKE} -V STAGEDIR -C ${PORTSDIR}/security/libressl
 . endif
-
-pre-configure:
-	(cd ${STAGEDIR_libressl}${LOCALBASE} && ${COPYTREE_SHARE} \
-		. ${WRKDIR}/libressl "! -name *.so*")
+BUILD_DEPENDS+=	${NONEXISTENT}:security/libressl:stage
+CPPFLAGS+=	-I${STAGEDIR_libressl}${LOCALBASE}/include
+LDFLAGS+=	${STAGEDIR_libressl}${LOCALBASE}/lib/libtls.a \
+		${STAGEDIR_libressl}${LOCALBASE}/lib/libssl.a \
+		${STAGEDIR_libressl}${LOCALBASE}/lib/libcrypto.a
+post-configure:
+	${REINPLACE_CMD} 's/-l[a-z]*//g' ${WRKSRC}/GNUmakefile 
 .endif # SSL_DEFAULT
 
 .include <bsd.port.post.mk>

@@ -1,5 +1,5 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/archivers/py-rarfile/Makefile 416606 2016-06-09 14:49:44Z arved $
+# $FreeBSD: head/archivers/py-rarfile/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	rarfile
 PORTVERSION=	2.8
@@ -15,7 +15,7 @@ LICENSE=	ISCL
 RUN_DEPENDS=	unrar:archivers/unrar
 
 NO_ARCH=	yes
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

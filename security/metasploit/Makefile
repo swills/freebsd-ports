@@ -1,8 +1,8 @@
 # Created by: Yonatan <onatan@gmail.com>
-# $FreeBSD: head/security/metasploit/Makefile 455518 2017-12-04 15:27:29Z mat $
+# $FreeBSD: head/security/metasploit/Makefile 457705 2017-12-31 16:26:46Z antoine $
 
 PORTNAME=	metasploit
-PORTVERSION=	4.16.21
+PORTVERSION=	4.16.28
 CATEGORIES=	security
 
 MAINTAINER=	tanawts@gmail.com
@@ -26,8 +26,8 @@ RUN_DEPENDS=	nmap:security/nmap \
 		rubygem-metasploit-credential>=0:security/rubygem-metasploit-credential \
 		rubygem-metasploit_data_models>=0:security/rubygem-metasploit_data_models \
 		rubygem-metasploit-model>=0:security/rubygem-metasploit-model \
-		rubygem-metasploit-payloads>=1.3.18:security/rubygem-metasploit-payloads \
-		rubygem-metasploit_payloads-mettle>=0.2.8:security/rubygem-metasploit_payloads-mettle \
+		rubygem-metasploit-payloads>=1.3.23:security/rubygem-metasploit-payloads \
+		rubygem-metasploit_payloads-mettle>=0.3.3:security/rubygem-metasploit_payloads-mettle \
 		rubygem-msgpack1>=0:devel/rubygem-msgpack1 \
 		rubygem-network_interface>=0:net/rubygem-network_interface \
 		rubygem-rubyntlm>=0:net/rubygem-rubyntlm \
@@ -46,6 +46,7 @@ RUN_DEPENDS=	nmap:security/nmap \
 		rubygem-windows_error>=0:devel/rubygem-windows_error \
 		rubygem-pdf-reader>=0:print/rubygem-pdf-reader \
 		rubygem-dnsruby>=0:dns/rubygem-dnsruby \
+		rubygem-mqtt>=0:net/rubygem-mqtt \
 		rubygem-net-ssh>=0:security/rubygem-net-ssh \
 		rubygem-ruby_smb>=0:net/rubygem-ruby_smb \
 		rubygem-rex-arch>=0:security/rubygem-rex-arch \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/eq10q-lv2/Makefile 454224 2017-11-15 08:08:12Z yuri $
+# $FreeBSD: head/audio/eq10q-lv2/Makefile 457513 2017-12-29 16:33:11Z linimon $
 
 PORTNAME=	eq10q
 DISTVERSION=	2.2
@@ -11,6 +11,10 @@ COMMENT=	Parametric equalizer LV2 audio plugin
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_aarch64=		fails to compile: unknown FP unit 'sse'
+BROKEN_armv6=		fails to compile: unknown FP unit 'sse'
+BROKEN_mips64=		fails to compile: unknown FP unit 'sse'
 
 BUILD_DEPENDS=	lv2>0:audio/lv2
 LIB_DEPENDS=	libfftw3.so:math/fftw3 \

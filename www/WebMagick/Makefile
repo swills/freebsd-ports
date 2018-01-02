@@ -1,5 +1,5 @@
 # Created by: ache
-# $FreeBSD: head/www/WebMagick/Makefile 450852 2017-09-28 15:36:31Z kwm $
+# $FreeBSD: head/www/WebMagick/Makefile 457172 2017-12-24 15:03:58Z tijl $
 
 PORTNAME=	WebMagick
 PORTVERSION=	2.03p29
@@ -20,7 +20,6 @@ RUN_DEPENDS=	p5-Sort-Naturally>=0:textproc/p5-Sort-Naturally
 
 USES=		shebangfix perl5 autoreconf
 GNU_CONFIGURE=	yes
-AUTOMAKE_ARGS+= --add-missing
 INFO=		webmagick
 MAKE_ARGS+=	ICON_INSTALL_DIR=${STAGEDIR}${PREFIX}/www/data/webmagick \
 		ETC_INSTALL_DIR=${STAGEDIR}${PREFIX}/etc

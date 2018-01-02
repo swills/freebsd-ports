@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/bitcoin-utils/Makefile 447813 2017-08-12 03:43:31Z swills $
+# $FreeBSD: head/net-p2p/bitcoin-utils/Makefile 456900 2017-12-21 09:31:25Z linimon $
 
 MASTERDIR=	${.CURDIR}/../bitcoin
 PKGNAMESUFFIX=	-utils
@@ -6,11 +6,11 @@ PKGNAMESUFFIX=	-utils
 COMMENT=	Virtual Peer-to-Peer Currency (CLI and Utilities)
 SLAVE_PORT=	yes
 
+NOT_FOR_ARCHS=		powerpc powerpc64 sparc64
+NOT_FOR_ARCHS_REASON=	does not support big-endian architectures
+
 OPTIONS_DEFINE=		DEBUG HARDENING TESTS
 OPTIONS_DEFAULT=	HARDENING TESTS
-
-ONLY_FOR_ARCHS=		amd64 i386
-ONLY_FOR_ARCHS_REASON=	does not support big-endian architectures
 
 CONFIGURE_ARGS=	--without-daemon \
 		--without-gui \

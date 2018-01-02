@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11-wm/plank/Makefile 436494 2017-03-19 14:02:23Z rene $
+# $FreeBSD: head/x11-wm/plank/Makefile 457464 2017-12-28 15:28:18Z woodsb02 $
 
 PORTNAME=	plank
-PORTVERSION=	0.11.3
+PORTVERSION=	0.11.4
 CATEGORIES=	x11-wm
 MASTER_SITES=	https://launchpadlibrarian.net/296808043/ \
 	https://launchpad.net/${PORTNAME}/1.0/${PORTVERSION}/+download/

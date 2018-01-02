@@ -1,5 +1,5 @@
 # Created by: John von Essen
-# $FreeBSD: head/www/privoxy/Makefile 421155 2016-08-31 12:08:21Z amdmi3 $
+# $FreeBSD: head/www/privoxy/Makefile 457149 2017-12-24 11:58:42Z tijl $
 
 PORTNAME=	privoxy
 PORTVERSION=	3.0.26
@@ -85,9 +85,6 @@ post-patch-DOCS-on:
 	${REINPLACE_CMD} \
 		-e 's,^#\(user-manual\) http://www.privoxy.org/user-manual/,\1 ${DOCSDIR}/user-manual,' \
 		${WRKSRC}/config
-
-pre-configure:
-	@(cd ${WRKSRC}; ${AUTOHEADER})
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/etc/privoxy/templates

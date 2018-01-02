@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/sysutils/dd_rescue/Makefile 426201 2016-11-16 00:35:29Z linimon $
+# $FreeBSD: head/sysutils/dd_rescue/Makefile 457101 2017-12-23 19:31:00Z tijl $
 
 PORTNAME=	dd_rescue
 PORTVERSION=	1.46
@@ -13,9 +13,9 @@ COMMENT=	dd tool suitable for rescuing data from a medium with errors
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gmake
+GNU_CONFIGURE=	yes
+USES=		autoreconf gmake
 USE_CSTD=	gnu89
-USE_AUTOTOOLS=	autoconf autoheader
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 ALL_TARGET=	default

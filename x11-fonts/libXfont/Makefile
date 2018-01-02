@@ -1,8 +1,8 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/libXfont/Makefile 425432 2016-11-05 19:08:34Z bapt $
+# $FreeBSD: head/x11-fonts/libXfont/Makefile 456561 2017-12-17 19:01:19Z zeising $
 
 PORTNAME=	libXfont
-PORTVERSION=	1.5.2
+PORTVERSION=	1.5.4
 PORTEPOCH=	2
 CATEGORIES=	x11-fonts
 

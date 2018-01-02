@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/security/nss/Makefile 455124 2017-11-29 17:15:14Z jbeich $
+# $FreeBSD: head/security/nss/Makefile 456313 2017-12-14 17:13:22Z jbeich $
 
 PORTNAME=	nss
 PORTVERSION=	3.34.1
@@ -57,7 +57,7 @@ BINS=		${DIST}/${OPSYS}${OSREL}_OPT.OBJ
 BINS=		${DIST}/${OPSYS}${OSREL}_DBG.OBJ
 .endif
 
-.if ${OPSYS} == FreeBSD && ${ARCH} == i386
+.if ${OPSYS} == FreeBSD && ${ARCH} == i386 && ! ${MACHINE_CPU:Msse2}
 USES+=		compiler:c++14-lang # gcm.h
 .endif
 

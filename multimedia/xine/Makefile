@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/xine/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/multimedia/xine/Makefile 457511 2017-12-29 16:16:00Z emaste $
 
 PORTNAME=	xine
 PORTVERSION=	0.99.9
@@ -27,6 +27,7 @@ INSTALLS_ICONS=	yes
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+LLD_UNSAFE=	yes	# lld disallows preemption of protected visibility syms
 
 DOCSDIR=	${PREFIX}/share/doc/xine-ui
 

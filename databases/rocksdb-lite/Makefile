@@ -1,10 +1,12 @@
 # Created by: David Thiel <lx@FreeBSD.org>
-# $FreeBSD: head/databases/rocksdb-lite/Makefile 440110 2017-05-04 14:58:54Z mat $
+# $FreeBSD: head/databases/rocksdb-lite/Makefile 457353 2017-12-27 08:02:58Z linimon $
 
 MAINTAINER=	lx@FreeBSD.org
 COMMENT=	Persistent key-value store for fast storage environments (lite version)
 
 LITE=		yes
 MASTERDIR=	${.CURDIR}/../rocksdb
+
+BROKEN_armv6=		does not build: db/compaction_job.cc:714:52: error: implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'const size_t' (aka 'const unsigned int')
 
 .include "${MASTERDIR}/Makefile"

@@ -1,8 +1,9 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/llvm-devel/Makefile 456103 2017-12-12 04:26:57Z jbeich $
+# $FreeBSD: head/devel/llvm-devel/Makefile 456697 2017-12-19 00:32:00Z brooks $
 
 PORTNAME=	llvm
 PORTVERSION=	${LLVM_MAJOR}.d${SNAPDATE}
+PORTREVISION=	1
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-devel
 
@@ -52,7 +53,7 @@ OPTIONS_DEFINE_i386=	COMPILER_RT
 OPTIONS_DEFAULT=	CLANG EXTRAS LIT LLD LLDB
 OPTIONS_DEFAULT_amd64=	COMPILER_RT GOLD OPENMP
 OPTIONS_DEFAULT_i386=	COMPILER_RT
-OPTIONS_EXCLUDE_FreeBSD_10=	LLDB
+OPTIONS_EXCLUDE_FreeBSD_10=	LLDB OPENMP
 OPTIONS_SUB=	yes
 
 PLIST_FILES=
@@ -279,6 +280,10 @@ MAN1SRCS+=	bugpoint.1 dsymutil.1 llc.1 lli.1 llvm-ar.1 llvm-as.1 \
 		opt.1 tblgen.1
 
 .include <bsd.port.pre.mk>
+
+.if ${OPSYS} == FreeBSD && ${OSREL} == 10.3
+CFLAGS+=	-D_LIBCPP_TRIVIAL_PAIR_COPY_CTOR=1
+.endif
 
 .if defined(WITH_DEBUG)
 CMAKE_BUILD_TYPE=	RelWithDebInfo

@@ -1,15 +1,15 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/py-pynacl/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-pynacl/Makefile 456943 2017-12-21 20:10:09Z yuri $
 
 PORTNAME=	pynacl
-DISTVERSION=	1.2.0
+DISTVERSION=	1.2.1
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	PyNaCl-${PORTVERSION}
 
 MAINTAINER=	yuri@FreeBSD.org
-COMMENT=	PyNaCl is a Python binding to the Networking and Cryptography library
+COMMENT=	Python binding to the Networking and Cryptography library
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE

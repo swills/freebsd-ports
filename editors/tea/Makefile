@@ -1,8 +1,8 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/editors/tea/Makefile 446047 2017-07-16 21:36:03Z danilo $
+# $FreeBSD: head/editors/tea/Makefile 457341 2017-12-26 23:21:04Z danilo $
 
 PORTNAME=	tea
-PORTVERSION=	44.1.0
+PORTVERSION=	44.1.1
 CATEGORIES=	editors
 MASTER_SITES=	http://semiletov.org/tea/dloads/
 

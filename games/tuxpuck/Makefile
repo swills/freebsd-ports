@@ -1,24 +1,27 @@
 # Created by: Jan Stocker <Jan.Stocker@t-online.de>
-# $FreeBSD: head/games/tuxpuck/Makefile 417682 2016-06-27 20:02:47Z tz $
+# $FreeBSD: head/games/tuxpuck/Makefile 457829 2018-01-02 01:51:11Z linimon $
 
 PORTNAME=	tuxpuck
 PORTVERSION=	0.8.2
 PORTREVISION=	23
 CATEGORIES=	games
-MASTER_SITES=	http://www.sourcefiles.org/Games/Sports/Miscellaneous/
+MASTER_SITES=	# disappeared
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Shufflepuck Cafe Clone
 
 LICENSE=	GPLv2
 
+DEPRECATED=	Mastersite disappeared
+EXPIRATION_DATE=	2018-03-01
+
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libogg.so:audio/libogg \
 		libvorbis.so:audio/libvorbis \
 		libfreetype.so:print/freetype2
 
-USE_SDL=	sdl
 USES=		gmake jpeg
+USE_SDL=	sdl
 ALL_TARGET=	${PORTNAME}
 MAKE_JOBS_UNSAFE=	yes
 

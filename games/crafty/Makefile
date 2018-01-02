@@ -1,5 +1,5 @@
 # Created by: Stefan Eggers <seggers@semyam.dinoco.de>
-# $FreeBSD: head/games/crafty/Makefile 455815 2017-12-09 01:39:19Z linimon $
+# $FreeBSD: head/games/crafty/Makefile 456638 2017-12-18 15:25:49Z amdmi3 $
 
 PORTNAME=	crafty
 PORTVERSION=	25.2
@@ -18,9 +18,7 @@ EXTRACT_ONLY=	crafty-${PORTVERSION}.zip
 MAINTAINER=	johans@FreeBSD.org
 COMMENT=	Chess program for playing and analyzing games
 
-BROKEN_aarch64=		fails to build: Could not read profile default.profdata: No such file or directory
-BROKEN_armv6=		fails to build: Could not read profile default.profdata: No such file or directory
-BROKEN_armv7=		fails to build: Could not read profile default.profdata: No such file or directory
+BROKEN=		fails to build: Could not read profile default.profdata: No such file or directory
 
 WRKSRC=		${WRKDIR}
 

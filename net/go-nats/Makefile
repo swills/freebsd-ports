@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/go-nats/Makefile 447755 2017-08-11 11:52:46Z olgeni $
+# $FreeBSD: head/net/go-nats/Makefile 456859 2017-12-20 21:27:05Z olgeni $
 
 PORTNAME=	go-nats
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.3.0
+DISTVERSION=	1.4.0
 CATEGORIES=	net
 
 MAINTAINER=	olgeni@FreeBSD.org

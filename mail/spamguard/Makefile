@@ -1,5 +1,5 @@
 # Created by: Omer Faruk Sen <ofsen@enderunix.org>
-# $FreeBSD: head/mail/spamguard/Makefile 375378 2014-12-24 00:14:11Z bofh $
+# $FreeBSD: head/mail/spamguard/Makefile 457166 2017-12-24 14:36:13Z tijl $
 
 PORTNAME=	spamguard
 PORTVERSION=	1.8
@@ -11,10 +11,9 @@ COMMENT=	MTA spam prevention program for qmail/postfix/sendmail
 
 LICENSE=	BSD3CLAUSE
 
-USE_AUTOTOOLS=	automake
-
 WRKSRC=		${WRKDIR}/${PORTNAME}
 GNU_CONFIGURE=	yes
+USES=		autoreconf
 
 OPTIONS_DEFINE=	DOCS
 
@@ -25,9 +24,6 @@ DOCS_TR=	BENIOKU BENIOKU.DigitalUnix COPYING DEGISIKLIKLER \
 		GUNCELLEME KURULUM KURULUM-SONRASI YAPILACAKLAR YAZARLAR
 
 SUB_FILES=	pkg-message
-
-pre-configure:
-	cd ${WRKSRC}; ./autogen.sh
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}/tr

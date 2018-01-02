@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Directory-Scratch-Structured/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/devel/p5-Directory-Scratch-Structured/Makefile 457737 2017-12-31 22:23:34Z sunpoet $
 
 PORTNAME=	Directory-Scratch-Structured
 PORTVERSION=	0.04
@@ -11,19 +11,22 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Creates temporary files and directories from a structured description
 
-USES=		perl5
-USE_PERL5=	modbuild
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
-RUN_DEPENDS=	p5-Readonly>=0:devel/p5-Readonly \
+BUILD_DEPENDS=	p5-Readonly>=0:devel/p5-Readonly \
 		p5-Sub-Exporter>=0:devel/p5-Sub-Exporter \
 		p5-Sub-Install>=0:devel/p5-Sub-Install \
 		p5-Data-TreeDumper>=0:devel/p5-Data-TreeDumper \
 		p5-Directory-Scratch>=0:devel/p5-Directory-Scratch
-BUILD_DEPENDS:=	${RUN_DEPENDS}
-TEST_DEPENDS=	p5-Test-Block>0:devel/p5-Test-Block \
-		p5-Test-Exception>0:devel/p5-Test-Exception \
-		p5-Test-NoWarnings>0:devel/p5-Test-NoWarnings \
-		p5-Test-Strict>0:devel/p5-Test-Strict \
-		p5-Test-Warn>0:devel/p5-Test-Warn
+RUN_DEPENDS:=	${BUILD_DEPENDS}
+TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception \
+		p5-Test-NoWarnings>=0:devel/p5-Test-NoWarnings \
+		p5-Test-Strict>=0:devel/p5-Test-Strict \
+		p5-Test-Warn>=0:devel/p5-Test-Warn
+
+NO_ARCH=	yes
+USES=		perl5
+USE_PERL5=	modbuild
 
 .include <bsd.port.mk>

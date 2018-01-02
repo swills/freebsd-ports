@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/elixir-mime/Makefile 435131 2017-03-01 11:14:58Z olgeni $
+# $FreeBSD: head/misc/elixir-mime/Makefile 457210 2017-12-25 08:52:24Z olgeni $
 
 PORTNAME=	mime
-PORTVERSION=	1.1.0
+PORTVERSION=	1.2.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	misc
 PKGNAMEPREFIX=	elixir-

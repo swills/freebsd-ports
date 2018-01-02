@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/cyrus-imapd24/Makefile 448201 2017-08-18 02:29:33Z ume $
+# $FreeBSD: head/mail/cyrus-imapd24/Makefile 457153 2017-12-24 12:44:47Z tijl $
 
 PORTNAME=	cyrus-imapd
 PORTVERSION=	2.4.20
@@ -54,6 +54,7 @@ BDB_CONFIGURE_ON=	--with-bdb-incdir=${BDB_INCLUDE_DIR} \
 DRAC_DESC=		Enable DRAC support
 DRAC_CONFIGURE_ON=	--with-drac=${LOCALBASE}
 DRAC_BUILD_DEPENDS=	${LOCALBASE}/lib/libdrac.a:mail/drac
+DRAC_USES=		autoreconf
 IDLED_DESC=		Enable IMAP idled support
 IDLED_CONFIGURE_ENABLE=	idled
 LDAP_DESC=		Enable LDAP support (experimental)
@@ -111,7 +112,6 @@ AUTOSIEVE_PATCHFILES=	${PORTNAME}-2.4.12-autosieve-${AUTOSIEVE_VERSION}.patch:-p
 AUTOSIEVE_EXTRA_PATCHES=${FILESDIR}/extra-patch-imap__lmtp_sieve.c
 
 DRAC_EXTRA_PATCHES=	${FILESDIR}/extra-patch-cmulocal_sasl2.m4
-DRAC_USE=	AUTOTOOLS=autoconf,autoheader
 
 MANDIRS=	${CYRUS_PREFIX}/man
 

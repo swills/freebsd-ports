@@ -1,11 +1,12 @@
 # Created by: Yi-Jheng Lin <yzlin@FreeBSD.org>
-# $FreeBSD: head/devel/bpython/Makefile 455432 2017-12-03 20:34:23Z sunpoet $
+# $FreeBSD: head/devel/bpython/Makefile 456135 2017-12-12 13:33:04Z sunpoet $
 
 PORTNAME=	bpython
 PORTVERSION=	0.17
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP \
 		https://bpython-interpreter.org/releases/
+PKGNAMESUFFIX=	${PYTHON_PKGNAMESUFFIX}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Fancy interface to the Python interpreter
@@ -24,7 +25,7 @@ OPTIONS_DEFINE=	EXAMPLES NLS
 OPTIONS_SUB=	yes
 
 NO_ARCH=	yes
-USE_PYTHON=	autoplist concurrent distutils optsuffix
+USE_PYTHON=	autoplist concurrent distutils
 USES=		python
 
 PORTEXAMPLES=	light.theme sample.theme

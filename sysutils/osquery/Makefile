@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/sysutils/osquery/Makefile 454188 2017-11-14 18:29:43Z zi $
+# $FreeBSD: head/sysutils/osquery/Makefile 456677 2017-12-18 21:50:17Z antoine $
 
 PORTNAME=	osquery
 PORTVERSION=	2.10.2
@@ -10,6 +10,8 @@ COMMENT=	SQL powered OS instrumentation, monitoring, and analytics
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		fails to link
 
 BUILD_DEPENDS=	thrift>0:devel/thrift \
 		bash>0:shells/bash \

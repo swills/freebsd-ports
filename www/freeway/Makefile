@@ -1,5 +1,5 @@
 # Created by: Wen heping <wenheping@gmail.com>
-# $FreeBSD: head/www/freeway/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/freeway/Makefile 456517 2017-12-16 21:44:09Z tz $
 
 PORTNAME=	freeway
 PORTVERSION=	1.4.2.197
@@ -10,6 +10,8 @@ DISTNAME=	${PORTNAME}_${PORTVERSION:S,.,_,g}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Advanced Open Source eCommerce Platform
+
+IGNORE_WITH_PHP=	70 71 72
 
 USES=		shebangfix php
 SHEBANG_FILES=	admin/htmlarea/plugins/SpellChecker/spell-check-logic.cgi

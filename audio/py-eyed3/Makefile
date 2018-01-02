@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@FreeBSD.org>
-# $FreeBSD: head/audio/py-eyed3/Makefile 439226 2017-04-23 16:09:09Z rm $
+# $FreeBSD: head/audio/py-eyed3/Makefile 457354 2017-12-27 08:03:30Z bapt $
 
 PORTNAME=	eyed3
 PORTVERSION=	0.7.10
@@ -16,7 +16,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 NO_ARCH=	yes
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 DOCSDIR=	${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME}

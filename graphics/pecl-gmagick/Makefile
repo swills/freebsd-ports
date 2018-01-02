@@ -1,5 +1,5 @@
 # Created by: Dan Rowe <bsdports@csnstores.com>
-# $FreeBSD: head/graphics/pecl-gmagick/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/graphics/pecl-gmagick/Makefile 456296 2017-12-14 13:57:28Z tz $
 
 PORTNAME=	gmagick
 PORTVERSION=	1.1.7RC3
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libGraphicsMagick.so:graphics/GraphicsMagick
 
 USES=		php:pecl
 
-IGNORE_WITH_PHP=	70 71
+IGNORE_WITH_PHP=	70 71 72
 
 CONFIGURE_ARGS=	--with-gmagick=${LOCALBASE}
 

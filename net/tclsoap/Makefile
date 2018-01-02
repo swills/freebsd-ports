@@ -1,5 +1,5 @@
 # Created by: Sebastien Santoro <dereckson@gmail.com>
-# $FreeBSD: head/net/tclsoap/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/tclsoap/Makefile 457255 2017-12-25 20:20:13Z tijl $
 
 PORTNAME=	tclsoap
 PORTVERSION=	1.6.7
@@ -14,8 +14,8 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	${LOCALBASE}/lib/TclxmlConfig.sh:devel/tclxml
 
+GNU_CONFIGURE=	yes
 USES=		tcl:wrapper,build
-USE_AUTOTOOLS=	autoconf:autoconf
 WRKSRC=		${WRKDIR}/${PORTNAME}${PORTVERSION}
 
 .include <bsd.port.mk>

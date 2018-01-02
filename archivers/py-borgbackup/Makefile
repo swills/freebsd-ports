@@ -1,8 +1,8 @@
 # Created by: José García Juanino <jjuanino@gmail.com>
-# $FreeBSD: head/archivers/py-borgbackup/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/archivers/py-borgbackup/Makefile 457682 2017-12-31 10:24:45Z tcberner $
 
 PORTNAME=	borgbackup
-DISTVERSION=	1.1.3
+DISTVERSION=	1.1.4
 CATEGORIES=	archivers python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +14,8 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.7:devel/py-setuptools_scm@${FLAVOR}
-LIB_DEPENDS=	liblz4.so:archivers/liblz4
+LIB_DEPENDS=	liblz4.so:archivers/liblz4 \
+		libzstd.so:archivers/zstd
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack-python>=0.4.6:devel/py-msgpack-python@${FLAVOR}
 
 OPTIONS_DEFINE=	FUSE

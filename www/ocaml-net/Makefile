@@ -1,5 +1,5 @@
 # Created by: Stephane Legrand <stephane@FreeBSD.org>
-# $FreeBSD: head/www/ocaml-net/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/ocaml-net/Makefile 456279 2017-12-14 06:59:13Z antoine $
 
 PORTNAME=	net
 PORTVERSION=	4.0.4
@@ -13,6 +13,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	OCaml modules for Internet applications
 
 LICENSE=	GPLv2
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	${SA_DIR}/pcre/pcre.a:devel/ocaml-pcre
 RUN_DEPENDS=	${SA_DIR}/pcre/pcre.a:devel/ocaml-pcre

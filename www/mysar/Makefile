@@ -1,5 +1,5 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/www/mysar/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/mysar/Makefile 456517 2017-12-16 21:44:09Z tz $
 
 PORTNAME=	mySAR
 PORTVERSION=	2.1.4
@@ -10,6 +10,8 @@ DISTNAME=	${PORTNAME:tl}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	MySQL Squid Access Report
+
+IGNORE_WITH_PHP=	70 71 72
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKROOT}/COPYING

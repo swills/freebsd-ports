@@ -1,5 +1,5 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/security/py-pyptlib/Makefile 445581 2017-07-12 10:17:42Z loader $
+# $FreeBSD: head/security/py-pyptlib/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	pyptlib
 PORTVERSION=	0.0.6
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_ARCH=	yes
 
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 do-test:

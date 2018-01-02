@@ -1,5 +1,5 @@
 # Created by: Maxime Henrion <mux@FreeBSD.org>
-# $FreeBSD: head/games/armagetron/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/armagetron/Makefile 456719 2017-12-19 14:41:29Z linimon $
 
 PORTNAME=	armagetron
 PORTVERSION=	0.2.8.3.3
@@ -14,6 +14,10 @@ COMMENT=	Multiplayer networked Tron clone in 3D
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_FreeBSD_12_aarch64=	network/nNetObject.cpp:1533:46: error: ordered comparison between pointer and zero ('const nSocket *' and 'int')
+BROKEN_FreeBSD_12_armv6=	network/nNetObject.cpp:1533:46: error: ordered comparison between pointer and zero ('const nSocket *' and 'int')
+BROKEN_FreeBSD_12_armv7=	network/nNetObject.cpp:1533:46: error: ordered comparison between pointer and zero ('const nSocket *' and 'int')
 
 USES=		gmake jpeg
 GNU_CONFIGURE=	yes

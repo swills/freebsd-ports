@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/archivers/Makefile 457366 2017-12-27 13:17:17Z antoine $
 #
 
     COMMENT = Archivers
@@ -170,6 +170,7 @@
     SUBDIR += ppmd-7z
     SUBDIR += ppunpack
     SUBDIR += pxz
+    SUBDIR += py-acefile
     SUBDIR += py-attic
     SUBDIR += py-backports.lzma
     SUBDIR += py-borgbackup

@@ -1,10 +1,11 @@
 # Created by: arved
-# $FreeBSD: head/editors/komodo-edit/Makefile 445754 2017-07-14 13:48:25Z mmokhi $
+# $FreeBSD: head/editors/komodo-edit/Makefile 457148 2017-12-24 11:15:21Z sunpoet $
 
 PORTNAME=	komodo-edit
 PORTVERSION=	10.2.2
 CATEGORIES=	editors
-MASTER_SITES=	http://downloads.activestate.com/Komodo/releases/${PORTVERSION}/
+MASTER_SITES=	http://downloads.activestate.com/Komodo/releases/${PORTVERSION}/ \
+		http://downloads.activestate.com/Komodo/releases/archive/${PORTVERSION:R:R}.x/${PORTVERSION}/
 DISTNAME=	Komodo-Edit-${PORTVERSION}-17703-linux-x86
 
 MAINTAINER=	allanjude@FreeBSD.org

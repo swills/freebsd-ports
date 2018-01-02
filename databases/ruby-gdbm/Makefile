@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/databases/ruby-gdbm/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/ruby-gdbm/Makefile 456401 2017-12-15 15:22:29Z swills $
 
 PORTNAME=	gdbm
 PORTVERSION=	${RUBY_PORTVERSION}
@@ -28,8 +28,15 @@ MAKE_ARGS=	sitelibdir='$$(rubylibdir)' \
 		INSTALL_PROG="${INSTALL_PROGRAM}" \
 		INSTALL_DATA="${INSTALL_DATA}"
 
+.include <bsd.port.pre.mk>
+
+.if ${RUBY_VER} >= 2.4
+post-patch:
+	@${REINPLACE_CMD} -e '/\/include\/ruby.h/d' ${WRKSRC}/depend
+.endif
+
 do-extract:
 	${MKDIR} ${WRKDIR}
 	${LN} -sf `cd ${PORTSDIR}/${RUBY_PORT}; ${MAKE} -V WRKDIR`/${PORTNAME} ${WRKDIR}/
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

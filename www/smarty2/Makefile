@@ -1,8 +1,8 @@
 # Created by: Simon 'corecode' Schubert <corecode@corecode.ath.cx>
-# $FreeBSD: head/www/smarty2/Makefile 418896 2016-07-21 21:27:53Z danilo $
+# $FreeBSD: head/www/smarty2/Makefile 457476 2017-12-28 20:09:31Z danilo $
 
 PORTNAME=	smarty
-PORTVERSION=	2.6.30
+PORTVERSION=	2.6.31
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 MASTER_SITES=	http://www.smarty.net/files/docs/:manual
@@ -15,9 +15,10 @@ LICENSE=	LGPL21
 
 OPTIONS_DEFINE=	DOCS
 
+NO_ARCH=	yes
 NO_BUILD=	yes
-USE_PHP=	pcre
 USES=		php:web
+USE_PHP=	pcre
 
 PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-message

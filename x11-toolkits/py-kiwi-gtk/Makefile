@@ -1,8 +1,8 @@
 # Created by: Nicola Vitale	<nivit@email.it>
-# $FreeBSD: head/x11-toolkits/py-kiwi-gtk/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/x11-toolkits/py-kiwi-gtk/Makefile 457452 2017-12-28 13:41:44Z sunpoet $
 
 PORTNAME=	kiwi-gtk
-PORTVERSION=	1.9.38
+PORTVERSION=	1.11.1
 CATEGORIES=	x11-toolkits python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

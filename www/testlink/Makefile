@@ -1,5 +1,5 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/www/testlink/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/testlink/Makefile 456517 2017-12-16 21:44:09Z tz $
 
 PORTNAME=	testlink
 PORTVERSION=	1.9.14
@@ -11,6 +11,8 @@ COMMENT=	Web based test management and test execution system
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+IGNORE_WITH_PHP=	70 71 72
 
 USES=		cpe php:web
 CPE_VENDOR=	teamst

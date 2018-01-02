@@ -1,5 +1,5 @@
 # Created by: Rodrigo Osorio <rodrigo@freebsd.org>
-# $FreeBSD: head/www/npm-less-plugin-clean-css/Makefile 440978 2017-05-15 22:05:46Z rodrigo $
+# $FreeBSD: head/www/npm-less-plugin-clean-css/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	npm-less-plugin-clean-css
 PORTVERSION=	20170503
@@ -9,6 +9,9 @@ MAINTAINER=	rodrigo@FreeBSD.org
 COMMENT=	Compresses the css output from less using clean-css
 
 LICENSE=	APACHE20
+
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 BUILD_DEPENDS=	npm>=0:www/npm
 RUN_DEPENDS=	npm>=0:www/npm \

@@ -1,5 +1,5 @@
 # Created by: Scott Kleihege <scott-ports@tummy.com>
-# $FreeBSD: head/sysutils/heartbeat/Makefile 449242 2017-09-04 11:46:51Z grembo $
+# $FreeBSD: head/sysutils/heartbeat/Makefile 456828 2017-12-20 14:44:20Z bapt $
 
 PORTNAME=	heartbeat
 PORTVERSION=	2.1.4
@@ -23,7 +23,7 @@ LIB_DEPENDS=	libltdl.so:devel/libltdl \
 		libxml2.so:textproc/libxml2
 BUILD_DEPENDS=	bison:devel/bison
 
-USES=		autoreconf cpe gettext gmake libtool perl5 pkgconfig python tar:bzip2 \
+USES=		autoreconf cpe gettext gmake libtool perl5 pkgconfig python:2.7 tar:bzip2 \
 		shebangfix
 SHEBANG_FILES=	ldirectord/ldirectord.in \
 		lib/plugins/stonith/external/ibmrsa-telnet \
@@ -72,8 +72,9 @@ DRAC3_LIB_DEPENDS=	libcurl.so:ftp/curl
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MMGMT}
-BUILD_DEPENDS+=		swig:devel/swig13
+BUILD_DEPENDS+=		swig3.0:devel/swig30
 RUN_DEPENDS+=		${LOCALBASE}/libdata/pkgconfig/pygtk-2.0.pc:x11-toolkits/py-gtk2
+BINARY_ALIAS=		swig=swig3.0
 PLIST_SUB+=		MGMT=""
 .else
 CONFIGURE_ARGS+=	--disable-mgmt

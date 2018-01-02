@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/textproc/ruby-deplate/Makefile 406285 2016-01-17 07:06:25Z swills $
+# $FreeBSD: head/textproc/ruby-deplate/Makefile 456322 2017-12-14 18:00:21Z swills $
 
 PORTNAME=	deplate
 PORTVERSION=	0.8.5
@@ -16,6 +16,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
 
 BROKEN_RUBY22=	yes
 BROKEN_RUBY23=	yes
+BROKEN_RUBY24=	yes
+
+DEPRECATED=	Does not build with current versions of ruby
+EXPIRATION_DATE=	2018-01-14
 
 NO_ARCH=	yes
 USES=		zip

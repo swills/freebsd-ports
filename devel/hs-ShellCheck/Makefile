@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-ShellCheck/Makefile 448911 2017-08-29 13:05:21Z pizzamig $
+# $FreeBSD: head/devel/hs-ShellCheck/Makefile 457445 2017-12-28 10:59:46Z pizzamig $
 
 PORTNAME=	ShellCheck
-PORTVERSION=	0.4.6
+PORTVERSION=	0.4.7
 CATEGORIES=	devel haskell
 
 MAINTAINER=	pizzamig@FreeBSD.org

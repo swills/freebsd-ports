@@ -1,5 +1,5 @@
 # Created by: markm@FreeBSD.org
-# $FreeBSD: head/mail/exim/Makefile 455220 2017-11-30 18:48:13Z vsevolod $
+# $FreeBSD: head/mail/exim/Makefile 457099 2017-12-23 18:35:41Z vsevolod $
 
 PORTNAME=	exim
 PORTVERSION?=	${EXIM_VERSION}
@@ -91,7 +91,7 @@ MASTER_SITES+=	http://marc.merlins.org/linux/exim/files/:sa_exim \
 DISTFILES+=	sa-exim-${SA_EXIM_VERSION}.tar.gz:sa_exim
 .endif
 
-EXIM_VERSION=	4.89.1
+EXIM_VERSION=	4.90
 SA_EXIM_VERSION=4.2
 EXIM_INSTALL_ARG+=	"-no_chown" "-no_symlink"
 

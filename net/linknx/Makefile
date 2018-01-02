@@ -1,5 +1,5 @@
-# Created by: Björn König <bkoenig@alpha-tierchen.de>
-# $FreeBSD: head/net/linknx/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# Created by: Bjorn Konig <bkoenig@alpha-tierchen.de>
+# $FreeBSD: head/net/linknx/Makefile 457367 2017-12-27 13:59:01Z mat $
 
 PORTNAME=	linknx
 PORTVERSION=	0.0.1.32
@@ -14,6 +14,7 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libpthsem.so:devel/pthsem
 BUILD_DEPENDS=	${LOCALBASE}/lib/libargp.a:devel/argp-standalone
 
+BROKEN_aarch64=		fails to compile: /usr/include/c++/v1/math.h:733:39: no member named 'fabsf' in the global namespace; did you mean simply 'fabsf'?
 BROKEN_armv6=		fails to configure: checking for GNU Pth... Segmentation fault
 BROKEN_armv7=		fails to configure: checking for GNU Pth... Segmentation fault
 BROKEN_mips=		fails to configure: checking for GNU Pth... Segmentation fault

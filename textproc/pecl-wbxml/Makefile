@@ -1,5 +1,5 @@
 # Created by: Florian Smeets <flo@smeets.im>
-# $FreeBSD: head/textproc/pecl-wbxml/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/textproc/pecl-wbxml/Makefile 456296 2017-12-14 13:57:28Z tz $
 
 PORTNAME=	wbxml
 PORTVERSION=	1.0.3
@@ -15,7 +15,7 @@ USES=		php:pecl
 
 CONFIGURE_ARGS=	--with-wbxml=${LOCALBASE} \
 		--with-libexpat-dir=${LOCALBASE}
-IGNORE_WITH_PHP=	70 71
+IGNORE_WITH_PHP=	70 71 72
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|%%LOCALBASE%%|${LOCALBASE}|g' ${WRKSRC}/config.m4

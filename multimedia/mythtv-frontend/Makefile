@@ -1,9 +1,10 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/multimedia/mythtv-frontend/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/multimedia/mythtv-frontend/Makefile 456874 2017-12-20 23:29:02Z tobik $
 
 PORTNAME=	mythtv-frontend
-PORTVERSION=	0.28.1
-PORTREVISION=	1
+DISTVERSIONPREFIX=	v
+DISTVERSION=	0.27.5
+PORTEPOCH=	1
 CATEGORIES=	multimedia
 
 MAINTAINER=	ports@FreeBSD.org
@@ -24,7 +25,6 @@ CONFLICTS=	mythtv-[0-9]*
 USE_GITHUB=	yes
 GH_ACCOUNT=	MythTV
 GH_PROJECT=	mythtv
-GH_TAGNAME=	ad97d24
 
 WRKSRC_SUBDIR=	${GH_PROJECT}
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/entr/Makefile 448075 2017-08-17 01:17:21Z danilo $
+# $FreeBSD: head/sysutils/entr/Makefile 457477 2017-12-28 20:40:56Z danilo $
 
 PORTNAME=	entr
-PORTVERSION=	3.8
+PORTVERSION=	3.9
 CATEGORIES=	sysutils
 MASTER_SITES=	http://entrproject.org/code/ \
 		https://bitbucket.org/eradman/entr/get/
@@ -13,7 +13,7 @@ COMMENT=	Runs arbitrary commands when files change
 # All the code used in FreeBSD is under ISCL license.
 LICENSE=	ISCL
 
-WRKSRC=		${WRKDIR}/eradman-entr-592856d50559
+WRKSRC=		${WRKDIR}/eradman-entr-332fd96a324a
 
 MAKEFILE=	Makefile.bsd
 MAKE_ARGS=	MANPREFIX=${MANPREFIX}/man

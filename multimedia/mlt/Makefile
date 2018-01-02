@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/mlt/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/multimedia/mlt/Makefile 456788 2017-12-20 12:41:30Z bapt $
 
 PORTNAME=	mlt
 PORTVERSION=	6.4.1
@@ -154,7 +154,8 @@ COMMENT=	${LANGUAGE} bindings for the MLT multimedia framework
 LICENSE=	LGPL21
 LICENSE_COMB=	single
 
-BUILD_DEPENDS+=	swig:devel/swig13
+BUILD_DEPENDS+=	swig3.0:devel/swig30
+BINARY_ALIAS=	swig=swig3.0
 
 _CFLAGS=	-I${LOCALBASE}/include -L${LOCALBASE}/lib
 CFLAGS+=	${_CFLAGS}

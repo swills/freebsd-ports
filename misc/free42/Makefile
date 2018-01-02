@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/free42/Makefile 454664 2017-11-22 06:01:27Z yuri $
+# $FreeBSD: head/misc/free42/Makefile 457513 2017-12-29 16:33:11Z linimon $
 
 PORTNAME=	Free42
 DISTVERSION=	2.0.7
@@ -11,6 +11,10 @@ COMMENT=	Simulation of the HP-42S scientific calculator and HP-82240 printer
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_aarch64=		fails to link: c++: error: no such file or directory: 'gcc111libbid.a'
+BROKEN_armv6=		fails to link: c++: error: no such file or directory: 'gcc111libbid.a'
+BROKEN_mips64=		fails to link: c++: error: no such file or directory: 'gcc111libbid.a'
 
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2

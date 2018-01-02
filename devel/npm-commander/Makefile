@@ -1,5 +1,5 @@
 # Created by: Rodrigo Osorio <rodrigo@freebsd.org>
-# $FreeBSD: head/devel/npm-commander/Makefile 440978 2017-05-15 22:05:46Z rodrigo $
+# $FreeBSD: head/devel/npm-commander/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	npm-commander
 PORTVERSION=	2.9.0
@@ -10,6 +10,9 @@ MAINTAINER=	rodrigo@FreeBSD.org
 COMMENT=	node.js command-line interfaces made easy
 
 LICENSE=	APACHE20
+
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 BUILD_DEPENDS=	npm>=0:www/npm
 RUN_DEPENDS=	npm>=0:www/npm \

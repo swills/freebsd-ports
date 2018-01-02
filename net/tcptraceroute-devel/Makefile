@@ -1,5 +1,5 @@
 # Created by: josh.carroll@gmail.com
-# $FreeBSD: head/net/tcptraceroute-devel/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/tcptraceroute-devel/Makefile 457692 2017-12-31 14:19:20Z sunpoet $
 
 PORTNAME=	tcptraceroute
 DISTVERSION=	1.5beta7
@@ -17,6 +17,9 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libnet.so:net/libnet
 
 CONFLICTS=	tcptraceroute-1.4*
+
+DEPRECATED=	Use net/tcptraceroute instead
+EXPIRATION_DATE=2018-01-31
 
 PORTDOCS=	tcptraceroute.1.html tcptraceroute.lsm AUTHORS \
 		COPYING ChangeLog NEWS README examples.txt

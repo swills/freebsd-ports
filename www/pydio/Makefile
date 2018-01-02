@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/pydio/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/pydio/Makefile 457046 2017-12-23 12:37:01Z riggs $
 
 PORTNAME=	pydio
-PORTVERSION=	8.0.1
+PORTVERSION=	8.0.2
 CATEGORIES=	www
 MASTER_SITES=	https://download.pydio.com/pub/core/archives/
 DISTNAME=	${PORTNAME}-core-${PORTVERSION}
@@ -28,6 +28,8 @@ post-patch:
 	# Remove unneeded sample file for IIS
 	@${RM} ${WRKSRC}/web.config.sample
 	@${RM} ${WRKSRC}/data/web.config
+	# Remove not working sample file for Nginx
+	@${RM} ${WRKSRC}/nginx.conf.sample
 
 	# Remove dead symlinks shipped in upstream
 	@${RM} ${WRKSRC}/plugins/gui.ajax/res/mui/less

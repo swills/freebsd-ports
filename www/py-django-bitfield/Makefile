@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-bitfield/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django-bitfield/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	django-bitfield
 PORTVERSION=	1.9.3
@@ -16,7 +16,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
 
 NO_ARCH=	yes
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

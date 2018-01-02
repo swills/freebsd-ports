@@ -1,5 +1,5 @@
 # Created by: stas@FreeBSD.org
-# $FreeBSD: head/devel/libunwind/Makefile 442810 2017-06-06 22:39:50Z danilo $
+# $FreeBSD: head/devel/libunwind/Makefile 456743 2017-12-19 18:06:29Z emaste $
 
 PORTNAME=	libunwind
 PORTVERSION=	20170113	# This is the release date of libunwind 1.2
@@ -25,6 +25,7 @@ GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
 USES=		libtool pathfix pkgconfig
+LLD_UNSAFE=	yes
 
 PLIST_SUB=	ARCH=${ARCH:S|i386|x86|:S|amd64|x86_64|}
 

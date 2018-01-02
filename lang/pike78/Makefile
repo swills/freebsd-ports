@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/pike78/Makefile 443392 2017-06-11 15:24:07Z antoine $
+# $FreeBSD: head/lang/pike78/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	pike78
 PORTVERSION=	${PIKEVERSION}
@@ -14,6 +14,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Dynamic programming language with a syntax similar to C++
 
 BROKEN=		fails to build
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-01-27
 
 LIB_DEPENDS=	libtiff.so:graphics/tiff \
 		libgdbm.so:databases/gdbm \

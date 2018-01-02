@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-sourcemap/Makefile 450405 2017-09-22 20:51:39Z rm $
+# $FreeBSD: head/devel/py-sourcemap/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	sourcemap
 PORTVERSION=	0.2.1
@@ -13,7 +13,7 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_ARCH=	yes
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

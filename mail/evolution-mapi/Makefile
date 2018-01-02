@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/mail/evolution-mapi/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/mail/evolution-mapi/Makefile 457358 2017-12-27 09:30:47Z antoine $
 
 PORTNAME=	evolution-mapi
 PORTVERSION=	3.18.4
@@ -9,6 +9,9 @@ DIST_SUBDIR=	gnome3
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Evolution Microsoft Exchange plugin through OpenChange
+
+DEPRECATED=	Depends on expiring mail/libmapi
+EXPIRATION_DATE=	2018-01-27
 
 BUILD_DEPENDS=	itstool:textproc/itstool \
 		evolution>=3.0.0:mail/evolution

@@ -1,14 +1,17 @@
 # Created by: vanilla
-# $FreeBSD: head/x11-toolkits/p5-Tk-HistEntry/Makefile 427148 2016-11-26 10:34:18Z sunpoet $
+# $FreeBSD: head/x11-toolkits/p5-Tk-HistEntry/Makefile 457805 2018-01-01 20:59:03Z sunpoet $
 
 PORTNAME=	Tk-HistEntry
-PORTVERSION=	0.44
+PORTVERSION=	0.45
 CATEGORIES=	x11-toolkits perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Tk::HistEntry - Entry widget with history capability
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Tk>=0:x11-toolkits/p5-Tk
 RUN_DEPENDS:=	${BUILD_DEPENDS}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/xen-tools/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/sysutils/xen-tools/Makefile 456126 2017-12-12 12:40:15Z antoine $
 
 PORTNAME=	xen
 PKGNAMESUFFIX=	-tools
@@ -29,7 +29,7 @@ ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=	"not yet ported to anything other than amd64"
 
 USES=		cpe gettext gmake libtool localbase:ldflags perl5 pkgconfig \
-		python shebangfix
+		python:2.7 shebangfix
 USE_GNOME=	glib20
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes

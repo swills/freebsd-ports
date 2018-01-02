@@ -1,17 +1,22 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/emulators/gnuboy/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/emulators/gnuboy/Makefile 457829 2018-01-02 01:51:11Z linimon $
 
 PORTNAME=	gnuboy
 PORTVERSION=	1.0.3
 PORTREVISION=	11
 CATEGORIES=	emulators games
-MASTER_SITES=	http://www.sourcefiles.org/Emulators/Videogames/
+MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Nintendo GameBoy emulator
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=		Latest version is 1.0.5, older version does not fetch
+EXPIRATION_DATE=	2018-03-01
+ONLY_FOR_ARCHS=		amd64 i386
+ONLY_FOR_ARCHS_REASON=	relies on features specific to x86
 
 LIB_DEPENDS=	libvga.so:graphics/svgalib
 

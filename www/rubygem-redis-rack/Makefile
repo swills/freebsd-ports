@@ -1,8 +1,7 @@
-# $FreeBSD: head/www/rubygem-redis-rack/Makefile 452390 2017-10-19 00:17:04Z jrm $
+# $FreeBSD: head/www/rubygem-redis-rack/Makefile 456757 2017-12-19 18:21:29Z sunpoet $
 
 PORTNAME=	redis-rack
-DISTVERSION=	2.0.3
-PORTREVISION=	1
+DISTVERSION=	2.0.4
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

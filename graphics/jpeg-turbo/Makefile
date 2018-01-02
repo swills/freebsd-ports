@@ -1,8 +1,8 @@
 # Created by: Denis Podolskiy <bytestore@yandex.ru>
-# $FreeBSD: head/graphics/jpeg-turbo/Makefile 447451 2017-08-06 08:07:54Z antoine $
+# $FreeBSD: head/graphics/jpeg-turbo/Makefile 457182 2017-12-24 17:35:25Z antoine $
 
 PORTNAME=	jpeg-turbo
-PORTVERSION=	1.5.2
+PORTVERSION=	1.5.3
 PORTREVISION?=	0
 CATEGORIES=	graphics
 MASTER_SITES=	SF/lib${PORTNAME}/${PORTVERSION}

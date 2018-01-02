@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/teeworlds/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/teeworlds/Makefile 456767 2017-12-19 20:21:49Z amdmi3 $
 
 PORTNAME=	teeworlds
 PORTVERSION=	0.6.4
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libfreetype.so:print/freetype2
 
 CPE_VERSION=	${PORTVERSION:C/^0\.//}
 
-USES=		cpe python:2,build
+USES=		cpe python:build
 BAM_VERSION=	0.4.0
 BAM_WRKSRC=	${WRKDIR}/bam-${BAM_VERSION}
 BAM_TARGET=	release

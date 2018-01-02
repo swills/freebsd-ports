@@ -1,13 +1,12 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/sysutils/auto-admin/Makefile 452526 2017-10-20 14:18:01Z swills $
+# $FreeBSD: head/sysutils/auto-admin/Makefile 457473 2017-12-28 19:39:50Z jwb $
 
 PORTNAME=	auto-admin
-PORTVERSION=	0.4.0
+DISTVERSION=	0.4.2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://acadix.biz/Ports/distfiles/
 
-MAINTAINER=	bacon4000@gmail.com
-COMMENT=	Portable tools for automating system management
+MAINTAINER=	jwb@FreeBSD.org
+COMMENT=	Portable tools for automating systems management
 
 LICENSE=	BSD2CLAUSE
 

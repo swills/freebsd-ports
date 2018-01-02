@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/www/sitebar/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/sitebar/Makefile 456517 2017-12-16 21:44:09Z tz $
 
 PORTNAME=	sitebar
 PORTVERSION=	3.3.9
@@ -9,6 +9,8 @@ DISTNAME=	SiteBar-${PORTVERSION}
 
 MAINTAINER=	gunter@six-two.net
 COMMENT=	The Bookmark Server for Personal and Team Use
+
+IGNORE_WITH_PHP=	70 71 72
 
 USES=		php:web tar:bzip2
 USE_PHP=	mysql pcre

@@ -1,5 +1,5 @@
 # Created by: Wen heping <wenheping@gmail.com>
-# $FreeBSD: head/www/impresscms/Makefile 439069 2017-04-21 14:09:38Z amdmi3 $
+# $FreeBSD: head/www/impresscms/Makefile 456517 2017-12-16 21:44:09Z tz $
 
 PORTNAME=	impresscms
 PORTVERSION=	1.3.10
@@ -10,6 +10,8 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}_final
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Community Developed Content Management System
+
+IGNORE_WITH_PHP=	70 71 72
 
 USES=		cpe shebangfix python:run php zip:infozip
 SHEBANG_FILES=	htdocs/editors/FCKeditor/editor/dialog/fck_spellerpages/spellerpages/server-scripts/spellchecker.pl \

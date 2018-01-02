@@ -1,5 +1,5 @@
 # Created by: pat
-# $FreeBSD: head/sysutils/lcdproc/Makefile 430669 2017-01-05 22:58:02Z jbeich $
+# $FreeBSD: head/sysutils/lcdproc/Makefile 457090 2017-12-23 17:24:19Z tijl $
 
 PORTNAME=	lcdproc
 PORTVERSION=	0.5.7
@@ -49,9 +49,6 @@ SERDISP_CPPFLAGS=	-I${LOCALBASE}/include
 
 X11_USE=		xorg=x11
 X11_CONFIGURE_ENABLE=	libX11
-
-# Empty args to aclocal required!
-ACLOCAL_ARGS=
 
 LCDPROC_DRIVERS=bayrad \
 		CFontz \

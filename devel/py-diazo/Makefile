@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-diazo/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-diazo/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	diazo
 PORTVERSION=	1.2.8
@@ -20,7 +20,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}webob>=0:www/py-webob@${FLAVOR}
 
 NO_ARCH=	yes
-USES=		python:2.7+
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

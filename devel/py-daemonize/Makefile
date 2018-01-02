@@ -1,8 +1,8 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/devel/py-daemonize/Makefile 405522 2016-01-08 04:51:15Z koobs $
+# $FreeBSD: head/devel/py-daemonize/Makefile 456190 2017-12-13 06:14:31Z yuri $
 
 PORTNAME=	daemonize
-PORTVERSION=	2.4.2
+PORTVERSION=	2.4.7
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +15,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python
 USE_PYTHON=	autoplist distutils
-
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

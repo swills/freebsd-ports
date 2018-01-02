@@ -1,8 +1,8 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBI/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-DBI/Makefile 457524 2017-12-29 18:47:20Z sunpoet $
 
 PORTNAME=	DBI
-PORTVERSION=	1.637
+PORTVERSION=	1.639
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

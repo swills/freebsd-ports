@@ -1,9 +1,9 @@
 # Created by: obrien@cs.ucdavis.edu
-# $FreeBSD: head/news/tin/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/news/tin/Makefile 457218 2017-12-25 11:43:02Z johans $
 
 PORTNAME=	tin
-PORTVERSION=	2.4.1
-PORTREVISION?=	2 # keep for chinese/tin
+PORTVERSION=	2.4.2
+PORTREVISION?=	0 # keep for chinese/tin
 CATEGORIES+=	news ipv6
 MASTER_SITES=	ftp://ftp.tin.org/pub/news/clients/tin/v${PORTVERSION:R}/ \
 		ftp://ftp.sunet.se/pub/news/readers/tin/v${PORTVERSION:R}/ \

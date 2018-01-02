@@ -1,5 +1,5 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/graphics/mesa-libs/Makefile 451657 2017-10-10 06:47:01Z rezny $
+# $FreeBSD: head/graphics/mesa-libs/Makefile 456530 2017-12-17 13:07:37Z zeising $
 
 PORTNAME=	mesa-libs
 PORTVERSION=	${MESAVERSION}
@@ -39,11 +39,11 @@ IGNORE=	option WAYLAND is only valid on platforms with LLVM
 .endif
 .endif
 
-MESA_BUILD_WRKSRC=	src/mapi
+MESA_BUILD_WRKSRC=	src/mapi src/util
 MESA_INSTALL_WRKSRC=	src/mapi
 
 .if ${PORT_OPTIONS:MWAYLAND}
-MESA_BUILD_WRKSRC+=	src/util src/egl/wayland/wayland-drm src/egl/wayland/wayland-egl
+MESA_BUILD_WRKSRC+=	src/egl/wayland/wayland-drm src/egl/wayland/wayland-egl
 MESA_INSTALL_WRKSRC+=	src/egl/wayland/wayland-egl
 .endif
 

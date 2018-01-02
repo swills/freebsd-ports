@@ -1,5 +1,5 @@
 # Created by: Christoph Mallon <christoph.mallon@gmx.de>
-# $FreeBSD: head/games/jaggedalliance2/Makefile 444426 2017-06-26 23:05:56Z linimon $
+# $FreeBSD: head/games/jaggedalliance2/Makefile 456894 2017-12-21 08:59:33Z linimon $
 
 PORTNAME=	ja2
 PORTVERSION=	0.14.01
@@ -12,7 +12,7 @@ MAINTAINER=	lme@FreeBSD.org
 COMMENT=	Port of "Jagged Alliance 2" using SDL
 
 # Ignore this if you feel adventurous
-ONLY_FOR_ARCHS=		amd64 arm i386
+ONLY_FOR_ARCHS=		aarch64 amd64 arm armv6 armv7 i386
 ONLY_FOR_ARCHS_REASON=	Needs a little endian environment
 
 NO_CDROM=	License only permits non-commerical use

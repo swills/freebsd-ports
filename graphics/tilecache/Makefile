@@ -1,20 +1,20 @@
 # Created by: joris
-# $FreeBSD: head/graphics/tilecache/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/tilecache/Makefile 457301 2017-12-26 18:36:47Z lwhsu $
 
 PORTNAME=	tilecache
 PORTVERSION=	2.11
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics python geography www
 MASTER_SITES=	http://tilecache.org/
 
 MAINTAINER=	joris.dedieu@gmail.com
 COMMENT=	Python-based WMS-C/TMS server
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}flup>0:www/py-flup@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Paste>0:www/py-paste@${FLAVOR}
-
 LICENSE=	BSD3CLAUSE MIT
 LICENSE_COMB=	multi
+
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}flup6>0:www/py-flup6@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Paste>0:www/py-paste@${FLAVOR}
 
 USES=		python:2.7 shebangfix
 USE_PYTHON=	distutils autoplist

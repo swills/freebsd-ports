@@ -1,8 +1,8 @@
 # Created by: Torsten Zuhlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/security/rubygem-omniauth-saml/Makefile 431318 2017-01-12 20:03:41Z sunpoet $
+# $FreeBSD: head/security/rubygem-omniauth-saml/Makefile 457670 2017-12-31 06:25:20Z swills $
 
 PORTNAME=	omniauth-saml
-PORTVERSION=	1.7.0
+PORTVERSION=	1.8.1
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

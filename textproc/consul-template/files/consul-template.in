@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: head/textproc/consul-template/files/consul-template.in 420033 2016-08-10 15:31:45Z swills $
+# $FreeBSD: head/textproc/consul-template/files/consul-template.in 456563 2017-12-17 21:04:49Z swills $
 #
 # PROVIDE: consul_template
 # REQUIRE: LOGIN
@@ -37,6 +37,7 @@ pidfile=/var/run/consul-template.pid
 procname="%%PREFIX%%/bin/consul-template"
 command="/usr/sbin/daemon"
 command_args="-f -p ${pidfile} /usr/bin/env ${consul_template_env} ${procname} -config=%%PREFIX%%/etc/consul-template.d ${consul_template_args}"
+sig_stop="INT"
 
 start_precmd=consul_template_startprecmd
 

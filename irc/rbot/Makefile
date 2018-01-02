@@ -1,8 +1,8 @@
 # Created by: David Bushong <david+ports@bushong.net>
-# $FreeBSD: head/irc/rbot/Makefile 427735 2016-12-03 19:36:41Z sunpoet $
+# $FreeBSD: head/irc/rbot/Makefile 456373 2017-12-14 20:58:10Z bdrewery $
 
 PORTNAME=	rbot
-PORTVERSION=	20150311
+PORTVERSION=	20160325
 PORTREVISION=	0
 PORTEPOCH=	1
 CATEGORIES=	irc ruby
@@ -16,6 +16,9 @@ LICENSE_FILE_GPLv2=	${WRKSRC}/GPLv2
 LICENSE_FILE_MIT=	${WRKSRC}/COPYING.rbot
 
 RUN_DEPENDS=	${RUBY_SITEARCHLIBDIR}/tokyocabinet.so:databases/ruby-tokyocabinet \
+		rubygem-gettext>=0:devel/rubygem-gettext \
+		rubygem-htmlentities>=0:textproc/rubygem-htmlentities \
+		rubygem-hpricot>=0:www/rubygem-hpricot \
 		rubygem-mechanize>=0:www/rubygem-mechanize \
 		rubygem-tzinfo>=0:devel/rubygem-tzinfo \
 		rubygem-oauth>=0:net/rubygem-oauth \
@@ -28,7 +31,7 @@ CONFIGURE_ARGS=	--prefix=${PREFIX}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	ruby-${PORTNAME}
-GH_TAGNAME=	545f217
+GH_TAGNAME=	e358601cc521d8aced941eb928fae2d8c53cf0c2
 
 PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-message
@@ -36,9 +39,6 @@ SUB_FILES=	pkg-message
 PORTDOCS=	REQUIREMENTS ChangeLog
 
 OPTIONS_DEFINE=	DOCS
-
-BROKEN_RUBY22=	yes
-BROKEN_RUBY23=	yes
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

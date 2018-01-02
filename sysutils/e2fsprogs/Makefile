@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/sysutils/e2fsprogs/Makefile 453206 2017-10-30 19:04:02Z mandree $
+# $FreeBSD: head/sysutils/e2fsprogs/Makefile 457508 2017-12-29 15:20:54Z emaste $
 
 PORTNAME=	e2fsprogs
 PORTVERSION=	1.43.7
@@ -27,6 +27,7 @@ CPE_VENDOR=	e2fsprogs_project
 USE_CSTD=	gnu99
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
+LLD_UNSAFE=	yes
 CONFIGURE_ARGS?=--disable-fsck \
 		--disable-e2initrd-helper \
 		--disable-libuuid \

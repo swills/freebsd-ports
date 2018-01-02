@@ -1,8 +1,8 @@
 # Created by: Jimmy Olgeni <olgeni@uli.it>
-# $FreeBSD: head/deskutils/egroupware/Makefile 440366 2017-05-07 20:57:54Z danilo $
+# $FreeBSD: head/deskutils/egroupware/Makefile 457782 2018-01-01 16:20:42Z danilo $
 
 PORTNAME=	eGroupware
-PORTVERSION=	16.1.20170415
+PORTVERSION=	17.1.20171218
 CATEGORIES=	deskutils
 MASTER_SITES=	https://github.com/${GH_ACCOUNT}/${PORTNAME:tl}/releases/download/${PORTVERSION}/
 DISTNAME=	${PORTNAME:tl}-epl-${PORTVERSION}
@@ -20,10 +20,11 @@ RUN_DEPENDS=	${LOCALBASE}/share/pear/Net/Sieve.php:net/pear-Net_Sieve \
 		${LOCALBASE}/share/pear/Horde/Smtp.php:mail/pear-Horde_Smtp \
 		${LOCALBASE}/share/pear/Horde/Compress.php:archivers/pear-Horde_Compress \
 		${LOCALBASE}/share/pear/Horde/Icalendar.php:devel/pear-Horde_Icalendar \
-		${LOCALBASE}/share/pear/Horde/Mapi.php:mail/pear-Horde_Mapi
+		${LOCALBASE}/share/pear/Horde/Mapi.php:mail/pear-Horde_Mapi \
+		${LOCALBASE}/share/pear/Horde/Crypt.php:security/pear-Horde_Crypt
 
 USES=		cpe php tar:bzip2
-USE_PHP=	bcmath bz2 ctype json mcrypt session simplexml tidy xmlreader zlib
+USE_PHP=	bcmath bz2 ctype json session simplexml tidy xmlreader zlib
 NO_BUILD=	yes
 PLIST=		${WRKDIR}/plist
 SUB_FILES=	pkg-message

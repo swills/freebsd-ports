@@ -1,17 +1,14 @@
 # Created by: Foxfair Hu <foxfair@FreeBSD.org>
-# $FreeBSD: head/chinese/tintin++/Makefile 454472 2017-11-19 03:31:28Z sunpoet $
+# $FreeBSD: head/chinese/tintin++/Makefile 457731 2017-12-31 22:23:04Z sunpoet $
 
 CATEGORIES=	chinese
 
-MAINTAINER=	sunpoet@FreeBSD.org
-
-LICENSE=	GPLv2
-LICENSE_FILE=	${WRKSRC}/../COPYING
-
 CONFLICTS_INSTALL=	tintin++
 
-MASTERDIR=	${.CURDIR}/../../net/tintin++
-
 OPTIONS_SLAVE=	BIG5
+
+PORTSCOUT=	ignore:1
+
+MASTERDIR=	${.CURDIR}/../../net/tintin++
 
 .include "${MASTERDIR}/Makefile"

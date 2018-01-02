@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-nio4r/Makefile 442164 2017-05-31 13:09:47Z sunpoet $
+# $FreeBSD: head/devel/rubygem-nio4r/Makefile 457520 2017-12-29 18:46:55Z sunpoet $
 
 PORTNAME=	nio4r
-PORTVERSION=	2.1.0
+PORTVERSION=	2.2.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

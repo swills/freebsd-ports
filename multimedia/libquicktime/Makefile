@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/multimedia/libquicktime/Makefile 454488 2017-11-19 11:37:26Z riggs $
+# $FreeBSD: head/multimedia/libquicktime/Makefile 457488 2017-12-29 02:55:42Z jbeich $
 
 PORTNAME=	libquicktime
 PORTVERSION=	1.2.4
-PORTREVISION?=	18
+PORTREVISION?=	19
 CATEGORIES=	multimedia
 MASTER_SITES=	SF
 

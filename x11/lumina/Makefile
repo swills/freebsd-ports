@@ -1,12 +1,12 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/x11/lumina/Makefile 450057 2017-09-18 17:45:33Z kmoore $
+# $FreeBSD: head/x11/lumina/Makefile 456961 2017-12-22 02:40:39Z araujo $
 
 PORTNAME=	lumina
-PORTVERSION=	1.3.0
+PORTVERSION=	1.4.1
 PORTEPOCH=	3
 CATEGORIES=	x11
 
-MAINTAINER=	kmoore@FreeBSD.org
+MAINTAINER=	jt@ixsystems.com
 COMMENT=	Lumina Desktop Environment (meta-port)
 
 LICENSE=	BSD3CLAUSE
@@ -18,9 +18,9 @@ RUN_DEPENDS=	lumina-core>=0:x11/lumina-core \
 		lumina-fileinfo>=0:deskutils/lumina-fileinfo \
 		lumina-fm>=0:deskutils/lumina-fm \
 		lumina-mediaplayer>=0:deskutils/lumina-mediaplayer \
+		lumina-pdf>=0:deskutils/lumina-pdf \
 		lumina-screenshot>=0:deskutils/lumina-screenshot \
-		lumina-textedit>=0:deskutils/lumina-textedit \
-		lumina-xdg-entry>=0:deskutils/lumina-xdg-entry
+		lumina-textedit>=0:deskutils/lumina-textedit
 
 CONFLICTS_INSTALL=	lumina-1.2.*
 

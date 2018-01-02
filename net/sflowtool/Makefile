@@ -1,8 +1,8 @@
 # Created by: Gregory Edigarov <greg@bestnet.kharkov.ua>
-# $FreeBSD: head/net/sflowtool/Makefile 424263 2016-10-19 15:42:50Z ohauer $
+# $FreeBSD: head/net/sflowtool/Makefile 457689 2017-12-31 13:02:01Z ohauer $
 
 PORTNAME=	sflowtool
-PORTVERSION=	3.39
+PORTVERSION=	3.41
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 

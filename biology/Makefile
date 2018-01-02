@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 455857 2017-12-09 13:23:32Z jwb $
+# $FreeBSD: head/biology/Makefile 456950 2017-12-22 01:30:26Z jwb $
 #
 
     COMMENT = Biology
@@ -14,6 +14,7 @@
     SUBDIR += bowtie
     SUBDIR += bowtie2
     SUBDIR += bwa
+    SUBDIR += canu
     SUBDIR += cd-hit
     SUBDIR += cdbfasta
     SUBDIR += chemeq

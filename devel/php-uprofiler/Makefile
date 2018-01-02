@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-uprofiler/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/devel/php-uprofiler/Makefile 456901 2017-12-21 10:23:19Z linimon $
 
 PORTNAME=	uprofiler
 PORTVERSION=	0.11.0.20150219
@@ -13,12 +13,12 @@ COMMENT=	Lightweight profiler for PHP
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/../LICENSE
 
-BROKEN_aarch64=		Does not build: invokes x86 asm
-BROKEN_armv6=		Does not build: invokes x86 asm
-BROKEN_armv7=		Does not build: invokes x86 asm
-BROKEN_mips64=		Does not build: invokes x86 asm
-BROKEN_powerpc64=	Does not build: invokes x86 asm
-BROKEN_sparc64=		Does not build: invokes x86 asm
+BROKEN_aarch64=		invokes x86 assembler
+BROKEN_armv6=		invokes x86 assembler
+BROKEN_armv7=		invokes x86 assembler
+BROKEN_mips64=		invokes x86 assembler
+BROKEN_powerpc64=	invokes x86 assembler
+BROKEN_sparc64=		invokes x86 assembler
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	FriendsOfPHP

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/dhewm3/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/games/dhewm3/Makefile 456388 2017-12-15 11:18:46Z amdmi3 $
 
 PORTNAME=	dhewm3
 PORTVERSION=	1.4.1
@@ -14,9 +14,6 @@ LICENSE_FILE=	${WRKSRC}/../COPYING.txt
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libogg.so:audio/libogg \
 		libvorbis.so:audio/libvorbis
-
-BROKEN_armv6=		dumps core: Assertion failed: (!NodePtr->isKnownSentinel()), function operator*, file ilist_iterator.h
-BROKEN_armv7=		dumps core: Assertion failed: (!NodePtr->isKnownSentinel()), function operator*, file ilist_iterator.h
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	dhewm

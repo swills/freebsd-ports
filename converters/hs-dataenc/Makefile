@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/hs-dataenc/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/converters/hs-dataenc/Makefile 457241 2017-12-25 15:49:23Z amdmi3 $
 
 PORTNAME=	dataenc
 PORTVERSION=	0.14.0.7
@@ -9,6 +9,8 @@ MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Data encoding library
 
 LICENSE=	BSD3CLAUSE
+
+CONFLICTS_INSTALL=	hs-sandi-[0-9]*
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

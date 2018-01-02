@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/wolfssl/Makefile 454654 2017-11-21 21:15:35Z johans $
+# $FreeBSD: head/security/wolfssl/Makefile 457220 2017-12-25 11:47:17Z johans $
 
 PORTNAME=	wolfssl
-PORTVERSION=	3.12.2
+PORTVERSION=	3.13.0
 CATEGORIES=	security devel
 MASTER_SITES=	http://www.wolfssl.com/
 

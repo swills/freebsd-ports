@@ -1,9 +1,9 @@
 # Created by: ruslan@shevchenko.kiev.ua
-# $FreeBSD: head/lang/erlang-runtime17/Makefile 451721 2017-10-10 21:31:30Z linimon $
+# $FreeBSD: head/lang/erlang-runtime17/Makefile 456477 2017-12-16 17:33:32Z olgeni $
 
 PORTNAME=	erlang
 PORTVERSION=	17.5.6.9
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	lang parallel java
 MASTER_SITES=	http://www.erlang.org/download/:erlangorg		\
 		http://erlang.stacken.kth.se/download/:erlangorg	\

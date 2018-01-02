@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/sysutils/lfm/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/sysutils/lfm/Makefile 456500 2017-12-16 20:55:45Z sunpoet $
 
 PORTNAME=	lfm
 PORTVERSION=	3.1
@@ -14,13 +14,13 @@ LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 NO_ARCH=	yes
-USE_PYTHON=	autoplist distutils optsuffix
+USE_PYTHON=	autoplist distutils noflavors
 USES=		python:3.4+
 
 PLIST_FILES=	man/man1/lfm.1.gz
 
 post-patch:
-	@${REINPLACE_CMD} -e '/print(__doc__)/d' ${WRKSRC}/${PYSETUP}
+	@${REINPLACE_CMD} -e '/print(__doc__)/d' ${WRKSRC}/setup.py
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/lfm.1 ${STAGEDIR}${MAN1PREFIX}/man/man1/

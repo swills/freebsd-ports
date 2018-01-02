@@ -1,13 +1,15 @@
 # Created by: TAKAHASHI Kaoru <kaoru@kaisei.org>
-# $FreeBSD: head/security/pgpdump/Makefile 414963 2016-05-10 21:06:44Z johans $
+# $FreeBSD: head/security/pgpdump/Makefile 456221 2017-12-13 16:46:31Z johans $
 
 PORTNAME=	pgpdump
-PORTVERSION=	0.31
+PORTVERSION=	0.32
 CATEGORIES=	security
 MASTER_SITES=	http://www.mew.org/~kazu/proj/pgpdump/
 
 MAINTAINER=	johans@FreeBSD.org
 COMMENT=	PGP packet visualizer
+
+LICENSE=	BSD3CLAUSE
 
 GNU_CONFIGURE=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/graphics/guilib/Makefile 384215 2015-04-18 09:47:29Z tijl $
+# $FreeBSD: head/graphics/guilib/Makefile 457056 2017-12-23 14:53:50Z tijl $
 
 PORTNAME=	guilib
 PORTVERSION=	1.2.1
@@ -15,10 +15,6 @@ USE_SDL=	sdl
 USES=		gmake libtool
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
-USE_AUTOTOOLS=	aclocal:env
 INSTALL_TARGET=	install-strip
-
-post-configure:
-	@${REINPLACE_CMD} -e 's|^ACLOCAL =.*|ACLOCAL = ${ACLOCAL}|g' ${WRKSRC}/Makefile
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-treq/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-treq/Makefile 457499 2017-12-29 09:01:54Z antoine $
 
 PORTNAME=	treq
 PORTVERSION=	17.8.0
@@ -25,7 +25,7 @@ RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}openssl>=16.0.0:security/py-openssl@${FLAVO
 
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock@${FLAVOR}
 
-USES=		python:2.7+	# Actually 2.7+,3.3+
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 NO_ARCH=	yes

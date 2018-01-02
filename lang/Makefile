@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 455282 2017-12-01 12:23:20Z rene $
+# $FreeBSD: head/lang/Makefile 457835 2018-01-02 08:49:35Z danfe $
 #
 
     COMMENT = Programming languages
@@ -30,6 +30,7 @@
     SUBDIR += chibi-scheme
     SUBDIR += chicken
     SUBDIR += cilkplus
+    SUBDIR += cim
     SUBDIR += cint
     SUBDIR += cjs
     SUBDIR += clang-devel
@@ -302,6 +303,7 @@
     SUBDIR += ruby22
     SUBDIR += ruby23
     SUBDIR += ruby24
+    SUBDIR += ruby25
     SUBDIR += runawk
     SUBDIR += rust
     SUBDIR += rust-nightly

@@ -1,8 +1,8 @@
 # Created by: Sergey Matveychuk <sem@FreeBSD.org>
-# $FreeBSD: head/net/dhcprelya/Makefile 434792 2017-02-25 10:27:15Z az $
+# $FreeBSD: head/net/dhcprelya/Makefile 456214 2017-12-13 15:34:43Z az $
 
 PORTNAME=	dhcprelya
-PORTVERSION=	5.0
+PORTVERSION=	6.1
 CATEGORIES=	net
 
 MAINTAINER=	sem@semmy.ru
@@ -12,7 +12,7 @@ LICENSE=	BSD3CLAUSE
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	sem-hub
-GH_TAGNAME=	7be8923
+GH_TAGNAME=	a4d10c4
 
 USE_RC_SUBR=	dhcprelya
 

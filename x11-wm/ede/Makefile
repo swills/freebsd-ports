@@ -1,5 +1,5 @@
 # Created by: Sergey Matveychuk <sem@ciam.ru>
-# $FreeBSD: head/x11-wm/ede/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-wm/ede/Makefile 456295 2017-12-14 13:54:13Z amdmi3 $
 
 PORTNAME=	ede
 PORTVERSION=	2.1
@@ -95,15 +95,15 @@ post-configure:
 
 pre-build:
 	@(cd ${EDELIB_WRKSRC} \
-		&& ${LOCALBASE}/bin/jam -j${MAKE_JOBS_NUMBER} \
-		&& ${LOCALBASE}/bin/jam ${INSTALL_TARGET})
+		&& ${LOCALBASE}/bin/jam -dx -j${MAKE_JOBS_NUMBER} \
+		&& ${LOCALBASE}/bin/jam -dx ${INSTALL_TARGET})
 
 do-build:
-	@(cd ${BUILD_WRKSRC} && ${LOCALBASE}/bin/jam -j${MAKE_JOBS_NUMBER})
+	@(cd ${BUILD_WRKSRC} && ${LOCALBASE}/bin/jam -dx -j${MAKE_JOBS_NUMBER})
 
 do-install:
 	@(cd ${INSTALL_WRKSRC} && ${SETENV} DESTDIR="${STAGEDIR}" \
-		${LOCALBASE}/bin/jam ${INSTALL_TARGET})
+		${LOCALBASE}/bin/jam -dx ${INSTALL_TARGET})
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/doc/ede-2.1.0/manual/images
 	@(cd ${WRKSRC}/doc/manual/images && ${COPYTREE_SHARE} . \
 		${STAGEDIR}${PREFIX}/share/doc/ede-2.1.0/manual/images)

@@ -1,8 +1,8 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/databases/py-pymysql/Makefile 437859 2017-04-06 12:16:25Z lwhsu $
+# $FreeBSD: head/databases/py-pymysql/Makefile 457309 2017-12-26 18:59:10Z lwhsu $
 
 PORTNAME=	pymysql
-PORTVERSION=	0.7.11
+PORTVERSION=	0.8.0
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

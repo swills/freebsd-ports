@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/databases/percona57-client/Makefile 437438 2017-04-01 15:11:14Z bapt $
+# $FreeBSD: head/databases/percona57-client/Makefile 457697 2017-12-31 15:28:55Z feld $
 
 PORTNAME=	percona
-PORTREVISION?=	3
+PORTREVISION?=	0
 PKGNAMESUFFIX=	57-client
 
 COMMENT=	Multithreaded SQL database (client)

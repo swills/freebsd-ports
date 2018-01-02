@@ -1,8 +1,8 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-interval/Makefile 452827 2017-10-25 02:22:43Z stephen $
+# $FreeBSD: head/math/octave-forge-interval/Makefile 456967 2017-12-22 04:55:14Z stephen $
 
 PORTNAME=	octave-forge-interval
-PORTVERSION=	3.0.0
+PORTVERSION=	3.1.0
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org

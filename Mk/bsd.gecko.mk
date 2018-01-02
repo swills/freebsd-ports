@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 455111 2017-11-29 13:54:31Z tobik $
+# $FreeBSD: head/Mk/bsd.gecko.mk 457797 2018-01-01 20:25:54Z jbeich $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -106,7 +106,7 @@ USE_XORG+=	xcb
 .endif
 
 .if ${MOZILLA_VER:R:R} >= 56
-MESA_LLVM_VER?=	40
+MESA_LLVM_VER?=	50
 BUILD_DEPENDS+=	llvm${MESA_LLVM_VER}>0:devel/llvm${MESA_LLVM_VER}
 MOZ_EXPORT+=	LLVM_CONFIG=llvm-config${MESA_LLVM_VER}
 MOZ_EXPORT+=	BINDGEN_CFLAGS="${BINDGEN_CFLAGS}"
@@ -311,6 +311,13 @@ MOZ_EXPORT+=	MOZ_OPTIMIZE_FLAGS="${CFLAGS:M-O*}"
 MOZ_OPTIONS+=	--enable-optimize
 .else
 MOZ_OPTIONS+=	--disable-optimize
+. if ${MOZILLA_VER:R:R} >= 56
+.  if ${/usr/bin/ld:L:tA} != /usr/bin/ld.lld
+# ld 2.17 barfs on Stylo built with -C opt-level=0
+USE_BINUTILS=	yes
+LDFLAGS+=		-B${LOCALBASE}/bin
+.  endif
+. endif
 .endif
 
 .if ${PORT_OPTIONS:MCANBERRA}
