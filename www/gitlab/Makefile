@@ -218,15 +218,15 @@ post-patch-MYSQL-on:
 	${CP} ${WRKSRC}/config/database.yml.mysql ${WRKSRC}/config/database.yml.sample
 
 post-patch-MYSQL-off:
-#	${REINPLACE_CMD} -e "/gem 'mysql2'/d" ${WRKSRC}/Gemfile
-#	${REINPLACE_CMD} -e "/gem 'peek-mysql2'/d" ${WRKSRC}/Gemfile
+	${REINPLACE_CMD} -e "/gem 'mysql2'/d" ${WRKSRC}/Gemfile
+	${REINPLACE_CMD} -e "/gem 'peek-mysql2'/d" ${WRKSRC}/Gemfile
 
 post-patch-PGSQL-on:
 	${CP} ${WRKSRC}/config/database.yml.postgresql ${WRKSRC}/config/database.yml.sample
 
 post-patch-PGSQL-off:
-#	${REINPLACE_CMD} -e "/gem 'pg'/d" ${WRKSRC}/Gemfile
-#	${REINPLACE_CMD} -e "/gem 'peek-pg'/d" ${WRKSRC}/Gemfile
+	${REINPLACE_CMD} -e "/gem 'pg'/d" ${WRKSRC}/Gemfile
+	${REINPLACE_CMD} -e "/gem 'peek-pg'/d" ${WRKSRC}/Gemfile
 
 do-install:
 	${FIND} ${WRKSRC} -name '*.orig' -delete
