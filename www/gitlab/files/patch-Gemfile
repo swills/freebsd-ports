@@ -184,7 +184,7 @@
  
  # Flowdock integration
  gem 'gitlab-flowdock-git-hook', '~> 1.0.1'
-@@ -199,13 +199,13 @@ gem 'asana', '~> 0.6.0'
+@@ -199,23 +199,23 @@ gem 'asana', '~> 0.6.0'
  gem 'ruby-fogbugz', '~> 0.2.1'
  
  # Kubernetes integration
@@ -200,8 +200,11 @@
  gem 'babosa', '~> 1.0.2'
  
  # Sanitizes SVG input
-@@ -215,7 +215,7 @@ gem 'loofah', '~> 2.0.3'
- gem 'licensee', '~> 8.7.0'
+ gem 'loofah', '~> 2.0.3'
+ 
+ # Working with license
+-gem 'licensee', '~> 8.7.0'
++gem 'licensee', '>= 8.7.0'
  
  # Protect against bruteforcing
 -gem 'rack-attack', '~> 4.4.1'
