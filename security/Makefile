@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 457766 2018-01-01 11:41:37Z rene $
+# $FreeBSD: head/security/Makefile 458139 2018-01-05 13:22:23Z swills $
 #
 
     COMMENT = Security tools
@@ -1094,6 +1094,7 @@
     SUBDIR += rubygem-rack-oauth2
     SUBDIR += rubygem-razorback-scriptNugget
     SUBDIR += rubygem-rbnacl
+    SUBDIR += rubygem-rbnacl4
     SUBDIR += rubygem-rbnacl-libsodium
     SUBDIR += rubygem-recog
     SUBDIR += rubygem-rex-arch

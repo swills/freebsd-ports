@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/waterfox/Makefile 457554 2017-12-30 00:07:44Z jbeich $
+# $FreeBSD: head/www/waterfox/Makefile 458143 2018-01-05 14:53:37Z jbeich $
 
 PORTNAME=	waterfox
-DISTVERSION=	56.0.1.s20171228
+DISTVERSION=	56.0.1.s20180105
 CATEGORIES=	www ipv6
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -32,7 +32,7 @@ LIB_DEPENDS=	libv4l2.so:multimedia/libv4l
 USE_GITHUB=	yes
 GH_ACCOUNT=	MrAlex94
 GH_PROJECT=	Waterfox
-GH_TAGNAME=	7da45c952fc0
+GH_TAGNAME=	8f77aec80334
 
 USE_GECKO=	gecko
 MOZ_PKGCONFIG_FILES=	# empty

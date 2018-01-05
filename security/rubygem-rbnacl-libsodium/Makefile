@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-rbnacl-libsodium/Makefile 455591 2017-12-05 16:44:09Z tz $
+# $FreeBSD: head/security/rubygem-rbnacl-libsodium/Makefile 458141 2018-01-05 13:32:48Z swills $
 
 PORTNAME=	rbnacl-libsodium
-PORTVERSION=	1.0.13
+PORTVERSION=	1.0.16
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
@@ -21,7 +21,7 @@ USE_RUBY=	yes
 post-install:
 	( cd ${WRKSRC} && \
 	${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/${GEMS_DIR}/${PORTNAME}-${PORTVERSION} )
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${GEM_LIB_DIR}/vendor/libsodium/src/libsodium/.libs/libsodium.so.18.3.0
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${GEM_LIB_DIR}/vendor/libsodium/dist/lib/libsodium.so.18.3.0
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${GEM_LIB_DIR}/vendor/libsodium/src/libsodium/.libs/libsodium.so.23.1.0
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${GEM_LIB_DIR}/vendor/libsodium/dist/lib/libsodium.so.23.1.0
 
 .include <bsd.port.mk>
