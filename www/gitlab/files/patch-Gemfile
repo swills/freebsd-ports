@@ -163,7 +163,7 @@
  
  # GitLab settings
  gem 'settingslogic', '~> 2.0.9'
-@@ -168,7 +168,7 @@ gem 're2', '~> 1.1.1'
+@@ -168,20 +168,20 @@ gem 're2', '~> 1.1.1'
  
  # Misc
  
@@ -172,7 +172,10 @@
  
  # Cache
  gem 'redis-rails', '~> 5.0.1'
-@@ -178,10 +178,10 @@ gem 'redis', '~> 3.2'
+ 
+ # Redis
+-gem 'redis', '~> 3.2'
++gem 'redis', '>= 3.2'
  gem 'connection_pool', '~> 2.0'
  
  # HipChat integration
