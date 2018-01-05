@@ -1,9 +1,10 @@
 # Created by: arved
-# $FreeBSD: head/www/newsboat/Makefile 454598 2017-11-21 11:44:27Z arved $
+# $FreeBSD: head/www/newsboat/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
 
 PORTNAME=	newsboat
 PORTVERSION=	2.10.1
 DISTVERSIONPREFIX=	r
+PORTREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	mt@markoturk.info

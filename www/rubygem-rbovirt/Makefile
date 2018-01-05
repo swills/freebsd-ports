@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-rbovirt/Makefile 450979 2017-09-30 11:45:43Z sunpoet $
+# $FreeBSD: head/www/rubygem-rbovirt/Makefile 457978 2018-01-03 16:45:49Z sunpoet $
 
 PORTNAME=	rbovirt
-PORTVERSION=	0.1.4
+PORTVERSION=	0.1.5
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

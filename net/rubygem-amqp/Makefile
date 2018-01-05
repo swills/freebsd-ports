@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-amqp/Makefile 433233 2017-02-03 14:09:59Z sunpoet $
+# $FreeBSD: head/net/rubygem-amqp/Makefile 457975 2018-01-03 16:45:34Z sunpoet $
 
 PORTNAME=	amqp
-PORTVERSION=	1.7.0
+PORTVERSION=	1.8.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -12,7 +12,7 @@ COMMENT=	Implementation of the AMQP protocol for RabbitMQ clients
 LICENSE=	BSD2CLAUSE RUBY
 LICENSE_COMB=	dual
 
-RUN_DEPENDS=	rubygem-amq-protocol>=2.1.0:net/rubygem-amq-protocol \
+RUN_DEPENDS=	rubygem-amq-protocol>=2.2.0:net/rubygem-amq-protocol \
 		rubygem-eventmachine>=0:devel/rubygem-eventmachine
 
 NO_ARCH=	yes

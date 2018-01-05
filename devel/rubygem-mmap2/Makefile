@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-mmap2/Makefile 455591 2017-12-05 16:44:09Z tz $
+# $FreeBSD: head/devel/rubygem-mmap2/Makefile 457897 2018-01-02 15:44:46Z swills $
 
 PORTNAME=	mmap2
-PORTVERSION=	2.2.7
+PORTVERSION=	2.2.9
 PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG

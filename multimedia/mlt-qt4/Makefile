@@ -1,6 +1,6 @@
-# $FreeBSD: head/multimedia/mlt-qt4/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/mlt-qt4/Makefile 458021 2018-01-04 11:11:17Z tcberner $
 
-PORTREVISION=	1
+PORTREVISION=	2
 
 CONFLICTS_INSTALL=	${PORTNAME}-qt5-*
 

@@ -1,5 +1,5 @@
 # Created by: Andreas Fehlner <fehlner@gmx.de>
-# $FreeBSD: head/science/gramps/Makefile 456602 2017-12-18 09:00:35Z amdmi3 $
+# $FreeBSD: head/science/gramps/Makefile 457964 2018-01-03 13:22:31Z mat $
 
 PORTNAME=	gramps
 PORTVERSION=	4.2.6
@@ -23,7 +23,7 @@ GH_ACCOUNT=	gramps-project
 
 NO_ARCH=	yes
 USES=		desktop-file-utils gettext shared-mime-info python:3.2+
-USE_GNOME=	cairo gtk30 intltool librsvg2 pango py3gobject3
+USE_GNOME=	cairo gtk30 intltool librsvg2 pango pygobject3
 USE_PYTHON=	autoplist distutils optsuffix
 CONFIGURE_ARGS=	--disable-mime-install
 INSTALLS_OMF=	yes

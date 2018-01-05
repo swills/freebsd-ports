@@ -1,5 +1,5 @@
 # Created by: simond@irrelevant.org
-# $FreeBSD: head/textproc/p5-EBook-Tools/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/textproc/p5-EBook-Tools/Makefile 458093 2018-01-04 23:25:04Z rene $
 
 PORTNAME=	EBook-Tools
 PORTVERSION=	0.5.4
@@ -9,7 +9,7 @@ CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	junovitch@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Object class for manipulating and generating E-books
 
 LICENSE=	GPLv2

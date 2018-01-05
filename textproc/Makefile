@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 457729 2017-12-31 22:22:54Z sunpoet $
+# $FreeBSD: head/textproc/Makefile 457942 2018-01-03 02:22:57Z jrm $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1586,6 +1586,7 @@
     SUBDIR += rubygem-tidy
     SUBDIR += rubygem-truncato
     SUBDIR += rubygem-twitter-text
+    SUBDIR += rubygem-twitter-text1
     SUBDIR += rubygem-unf
     SUBDIR += rubygem-unf_ext
     SUBDIR += rubygem-version_sorter

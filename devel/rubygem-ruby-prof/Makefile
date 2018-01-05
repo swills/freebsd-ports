@@ -1,8 +1,8 @@
 # Created by: Robert Gogolok <gogo@cs.uni-sb.de>
-# $FreeBSD: head/devel/rubygem-ruby-prof/Makefile 430331 2017-01-02 10:04:07Z swills $
+# $FreeBSD: head/devel/rubygem-ruby-prof/Makefile 458092 2018-01-04 23:15:24Z swills $
 
 PORTNAME=	ruby-prof
-PORTVERSION=	0.16.2
+PORTVERSION=	0.17.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

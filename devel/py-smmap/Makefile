@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-smmap/Makefile 456449 2017-12-15 23:53:54Z sunpoet $
+# $FreeBSD: head/devel/py-smmap/Makefile 457896 2018-01-02 15:35:54Z sunpoet $
 
 PORTNAME=	smmap
 PORTVERSION=	0.9.0
@@ -10,6 +10,9 @@ MAINTAINER=	rm@FreeBSD.org
 COMMENT=	Pure python sliding memory map manager
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=	Use devel/py-smmap2 instead
+EXPIRATION_DATE=2018-01-31
 
 CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}smmap2
 

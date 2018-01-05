@@ -1,5 +1,5 @@
 # Created by: Martin Tournoij <martin@arp242.net>
-# $FreeBSD: head/sysutils/battray/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/sysutils/battray/Makefile 457964 2018-01-03 13:22:31Z mat $
 
 PORTNAME=	battray
 DISTVERSION=	2.3
@@ -13,7 +13,7 @@ COMMENT=	Display notebook battery status in tray
 LICENSE=	MIT
 
 USES=		python:3.3+
-USE_GNOME=	py3gobject3
+USE_GNOME=	pygobject3
 USE_PYTHON=	autoplist distutils optsuffix
 
 USE_GITHUB=	yes

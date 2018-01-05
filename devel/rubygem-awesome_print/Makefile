@@ -1,8 +1,8 @@
 # Created by: Koichiro IWAO <meta+ports@vmeta.jp>
-# $FreeBSD: head/devel/rubygem-awesome_print/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-awesome_print/Makefile 458037 2018-01-04 16:24:58Z swills $
 
 PORTNAME=	awesome_print
-PORTVERSION=	1.6.1
+PORTVERSION=	1.8.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

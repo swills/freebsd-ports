@@ -1,9 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-oauth2/Makefile 448048 2017-08-16 15:45:28Z sunpoet $
+# $FreeBSD: head/net/rubygem-oauth2/Makefile 457887 2018-01-02 15:34:19Z sunpoet $
 
 PORTNAME=	oauth2
 PORTVERSION=	1.4.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

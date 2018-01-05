@@ -1,8 +1,8 @@
-# $FreeBSD: head/news/ifmail/Makefile 433719 2017-02-09 10:20:41Z dinoex $
+# $FreeBSD: head/news/ifmail/Makefile 458117 2018-01-05 05:20:53Z dinoex $
 
 PORTNAME=	ifmail
 PORTVERSION=	2.15
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	news comms
 MASTER_SITES=	SUNSITE/system/fido
 

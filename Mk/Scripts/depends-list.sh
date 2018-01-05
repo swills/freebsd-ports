@@ -1,6 +1,6 @@
 #!/bin/sh
 # MAINTAINER: portmgr@FreeBSD.org
-# $FreeBSD: head/Mk/Scripts/depends-list.sh 450663 2017-09-26 14:14:44Z mat $
+# $FreeBSD: head/Mk/Scripts/depends-list.sh 458056 2018-01-04 20:01:46Z bdrewery $
 
 set -e
 
@@ -53,6 +53,7 @@ check_dep() {
 	local _dep wrkdir show_dep
 
 	for _dep ; do
+		unset FLAVOR
 		myifs=${IFS}
 		IFS=:
 		set -- ${_dep}
@@ -65,7 +66,10 @@ check_dep() {
 
 		case "${d}" in
 		*@*/*) ;; # Ignore @ in the path which would not be a flavor
-		*@*) d=${d%@*} ;;
+		*@*)
+			export FLAVOR=${d##*@}
+			d=${d%@*}
+			;;
 		esac
 
 		case " ${checked} " in

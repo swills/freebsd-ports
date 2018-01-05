@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/audio/lollypop/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/audio/lollypop/Makefile 457964 2018-01-03 13:22:31Z mat $
 
 PORTNAME=	lollypop
 PORTVERSION=	0.9.15
@@ -22,7 +22,7 @@ LIB_DEPENDS=	libnotify.so:devel/libnotify \
 
 USES=	shebangfix python:3.4+ pkgconfig gettext gmake sqlite tar:xz
 GNU_CONFIGURE=	yes
-USE_GNOME=	glib20 gtk30 py3gobject3 introspection:build intltool intlhack
+USE_GNOME=	glib20 gtk30 pygobject3 introspection:build intltool intlhack
 USE_GSTREAMER1=	yes mpg123 ogg flac opus libav faad good speex
 USE_PYTHON=	py3kplist
 INSTALLS_ICONS=	yes

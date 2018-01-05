@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/kalzium/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/science/kalzium/Makefile 457914 2018-01-02 16:49:24Z tcberner $
 
 PORTNAME=	kalzium
 PORTVERSION=	${KDE4_VERSION}
@@ -10,13 +10,11 @@ COMMENT=	Periodic table of elements for KDE 4
 
 LIB_DEPENDS=	libopenbabel.so:science/openbabel \
 		libavogadro.so:science/avogadro
-BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/eigen2.pc:math/eigen2 \
-		${LOCALBASE}/libdata/pkgconfig/eigen3.pc:math/eigen3 \
-		${LOCALBASE}/lib/ocaml/facile/facile.a:math/facile \
+BUILD_DEPENDS=	${LOCALBASE}/lib/ocaml/facile/facile.a:math/facile \
 		${LOCALBASE}/libdata/pkgconfig/chemical-mime-data.pc:science/chemical-mime-data
 RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/chemical-mime-data.pc:science/chemical-mime-data
 
-USES=		cmake:outsource kde:4 pkgconfig tar:xz
+USES=		cmake:outsource eigen:3 kde:4 pkgconfig tar:xz
 USE_KDE=	kdelibs automoc4
 USE_OCAML=	yes
 NO_OCAML_RUNDEPENDS=	yes

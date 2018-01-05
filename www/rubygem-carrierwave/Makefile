@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-carrierwave/Makefile 451210 2017-10-04 10:56:06Z sunpoet $
+# $FreeBSD: head/www/rubygem-carrierwave/Makefile 457988 2018-01-03 16:46:40Z sunpoet $
 
 PORTNAME=	carrierwave
-PORTVERSION=	1.2.1
+PORTVERSION=	1.2.2
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

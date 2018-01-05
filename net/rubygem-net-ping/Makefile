@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/rubygem-net-ping/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/net/rubygem-net-ping/Makefile 457846 2018-01-02 10:55:11Z romain $
 
 PORTNAME=	net-ping
-PORTVERSION=	1.7.8
+PORTVERSION=	2.0.2
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -10,7 +10,7 @@ COMMENT=	Collection of classes that provide different ways to ping computers
 
 LICENSE=	APACHE20
 
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 .include <bsd.port.mk>

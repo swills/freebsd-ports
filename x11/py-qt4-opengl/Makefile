@@ -1,9 +1,8 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/x11/py-qt4-opengl/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/x11/py-qt4-opengl/Makefile 457921 2018-01-02 20:21:34Z rakuco $
 
 PORTNAME=	opengl
 PORTEPOCH=	1
-PORTREVISION=	1
 CATEGORIES=	x11 devel python
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-MooseX-ClassAttribute/Makefile 417239 2016-06-21 15:07:55Z mat $
+# $FreeBSD: head/devel/p5-MooseX-ClassAttribute/Makefile 458074 2018-01-04 20:12:13Z sunpoet $
 
 PORTNAME=	MooseX-ClassAttribute
 PORTVERSION=	0.29
@@ -19,8 +19,7 @@ BUILD_DEPENDS=	p5-Moose>=2:devel/p5-Moose \
 		p5-namespace-autoclean>=0.11:devel/p5-namespace-autoclean \
 		p5-namespace-clean>=0.20:devel/p5-namespace-clean
 RUN_DEPENDS:=	${BUILD_DEPENDS}
-TEST_DEPENDS=	p5-MooseX-AttributeHelpers>=0:devel/p5-MooseX-AttributeHelpers \
-		p5-MooseX-Role-Parameterized>=0:devel/p5-MooseX-Role-Parameterized \
+TEST_DEPENDS=	p5-MooseX-Role-Parameterized>=0:devel/p5-MooseX-Role-Parameterized \
 		p5-MooseX-Role-Strict>=0:devel/p5-MooseX-Role-Strict \
 		p5-Test-Requires>=0.05:devel/p5-Test-Requires \
 		p5-Test-Fatal>=0:devel/p5-Test-Fatal

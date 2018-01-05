@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/math/gmp/Makefile 446854 2017-07-28 21:45:20Z jkim $
+# $FreeBSD: head/math/gmp/Makefile 458016 2018-01-04 08:38:19Z amdmi3 $
 
 PORTNAME=	gmp
 PORTVERSION=	6.1.2
@@ -21,6 +21,7 @@ CONFIGURE_ARGS=	--prefix=${PREFIX} \
 		--infodir=${PREFIX}/info \
 		--mandir=${PREFIX}/man \
 		--enable-cxx
+MAKE_JOBS_UNSAFE=yes
 USE_LDCONFIG=	yes
 
 INFO=		gmp

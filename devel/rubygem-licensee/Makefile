@@ -1,8 +1,8 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/devel/rubygem-licensee/Makefile 455591 2017-12-05 16:44:09Z tz $
+# $FreeBSD: head/devel/rubygem-licensee/Makefile 457898 2018-01-02 15:46:37Z swills $
 
 PORTNAME=	licensee
-PORTVERSION=	8.7.0
+PORTVERSION=	9.6.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

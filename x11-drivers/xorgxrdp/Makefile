@@ -1,8 +1,8 @@
 # Created by: Koichiro IWAO <meta+ports@vmeta.jp>
-# $FreeBSD: head/x11-drivers/xorgxrdp/Makefile 454229 2017-11-15 10:13:18Z pizzamig $
+# $FreeBSD: head/x11-drivers/xorgxrdp/Makefile 458036 2018-01-04 16:19:39Z swills $
 
 PORTNAME=	xorgxrdp
-PORTVERSION=	0.2.4
+PORTVERSION=	0.2.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	x11-drivers
 DIST_SUBDIR=	xrdp
@@ -23,7 +23,7 @@ USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	neutrinolabs
 GH_PROJECT=	xrdp:xrdp
-GH_TAGNAME=	v0.9.4:xrdp
+GH_TAGNAME=	v0.9.5:xrdp
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 457830 2018-01-02 02:57:04Z jrm $
+# $FreeBSD: head/www/Makefile 457970 2018-01-03 15:49:41Z jrm $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1606,6 +1606,7 @@
     SUBDIR += py-django-mezzanine-filebrowser
     SUBDIR += py-django-mezzanine-grappelli
     SUBDIR += py-django-mptt
+    SUBDIR += py-django-netfields
     SUBDIR += py-django-openid-auth
     SUBDIR += py-django-otp
     SUBDIR += py-django-otp-yubikey
@@ -2059,7 +2060,7 @@
     SUBDIR += rubygem-jsobfu
     SUBDIR += rubygem-json-jwt
     SUBDIR += rubygem-jwt
-    SUBDIR += rubygem-jwt2
+    SUBDIR += rubygem-jwt1
     SUBDIR += rubygem-kaminari
     SUBDIR += rubygem-kaminari-actionview
     SUBDIR += rubygem-kaminari-actionview-rails5

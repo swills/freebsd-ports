@@ -1,5 +1,5 @@
 # Created by: Arjan van Leeuwen <avleeuwen@piwebs.com>
-# $FreeBSD: head/graphics/digikam-kde4/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/graphics/digikam-kde4/Makefile 457914 2018-01-02 16:49:24Z tcberner $
 
 PORTNAME=	digikam
 PORTVERSION=	${DIGIKAM_VER}
@@ -12,7 +12,6 @@ COMMENT=	KDE4 digital photo management application
 
 .include "${.CURDIR}/Makefile.common"
 
-BUILD_DEPENDS=	${LOCALBASE}/include/eigen3/Eigen/Eigen:math/eigen3
 LIB_DEPENDS=	libtiff.so:graphics/tiff \
 		liblcms.so:graphics/lcms \
 		libpng.so:graphics/png \
@@ -24,7 +23,7 @@ LIB_DEPENDS=	libtiff.so:graphics/tiff \
 		libkgeomap.so:astro/libkgeomap \
 		libboost_graph.so:devel/boost-libs
 
-USES+=		pkgconfig shebangfix
+USES+=		eigen:3 pkgconfig shebangfix
 USE_KDE+=	libkdcraw libkexiv2 libkipi runtime_run
 USE_QT4+=	sql-sqlite3_run
 USE_LDCONFIG=	yes

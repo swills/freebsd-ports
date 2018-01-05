@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/editors/gedit/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/editors/gedit/Makefile 457964 2018-01-03 13:22:31Z mat $
 
 PORTNAME=	gedit
 PORTVERSION=	3.22.0
@@ -30,7 +30,7 @@ PORTSCOUT=	limitw:1,even
 USES=		desktop-file-utils gettext gmake gnome libtool localbase \
 		pathfix pkgconfig python:3.2+ tar:xz
 USE_GNOME=	cairo gdkpixbuf2 gtksourceview3 intlhack introspection \
-		libxml2 py3gobject3
+		libxml2 pygobject3
 USE_XORG=	sm x11
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-updater \

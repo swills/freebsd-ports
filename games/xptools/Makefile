@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/xptools/Makefile 454683 2017-11-22 11:31:17Z tz $
+# $FreeBSD: head/games/xptools/Makefile 457914 2018-01-02 16:49:24Z tcberner $
 
 PORTNAME=	xptools
 DISTVERSION=	wed_161r1
@@ -14,7 +14,6 @@ LICENSE=	MIT
 ONLY_FOR_ARCHS=	amd64
 
 BUILD_DEPENDS=	gnustat:sysutils/coreutils \
-		${LOCALBASE}/libdata/pkgconfig/eigen3.pc:math/eigen3 \
 		${LOCALBASE}/lib/libntl.a:math/ntl \
 		cmake:devel/cmake
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
@@ -34,7 +33,7 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libGLw.so:graphics/libGLw \
 		libGLU.so:graphics/libGLU
 
-USES=		gmake jpeg sqlite ssl
+USES=		eigen:3 gmake jpeg sqlite ssl
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	X-Plane

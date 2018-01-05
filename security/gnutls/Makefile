@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/gnutls/Makefile 452646 2017-10-22 13:53:58Z tijl $
+# $FreeBSD: head/security/gnutls/Makefile 458103 2018-01-05 02:58:09Z jbeich $
 
 PORTNAME=	gnutls
 PORTVERSION=	3.5.16
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libgmp.so:math/gmp \
 BUILD_DEPENDS+=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 RUN_DEPENDS+=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 
-USES=		compiler cpe gmake iconv libtool localbase makeinfo \
+USES=		cpe gmake iconv libtool localbase makeinfo \
 		pathfix pkgconfig tar:xz
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
@@ -60,15 +60,6 @@ ZLIB_CONFIGURE_WITH=	zlib
 
 INFO=		gnutls gnutls-guile
 
-.include <bsd.port.pre.mk>
-
-# XXX CHOSEN_COMPILER_VERSION isn't supported, so check CC hasn't changed
-.if ${ARCH} == aarch64 && ${CC} == cc && \
-    ${COMPILER_TYPE} == clang && ${COMPILER_VERSION} < 40
-BUILD_DEPENDS+=	as:devel/binutils
-CFLAGS+=	-no-integrated-as
-.endif
-
 post-patch:
 	@${RM} ${WRKSRC}/doc/*.info*
 
@@ -76,4 +67,4 @@ post-install:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/examples/*.[ch] ${STAGEDIR}${EXAMPLESDIR}
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

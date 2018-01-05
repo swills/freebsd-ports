@@ -1,9 +1,9 @@
 # Created by: Denis Shaposhnikov <dsh@vlink.ru>
-# $FreeBSD: head/net-mgmt/nagiosgraph/Makefile 414458 2016-05-02 16:08:56Z zeising $
+# $FreeBSD: head/net-mgmt/nagiosgraph/Makefile 458039 2018-01-04 17:29:28Z zi $
 
 PORTNAME=	nagiosgraph
 PORTVERSION=	1.5.2
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	net-mgmt
 MASTER_SITES=	SF
 
@@ -12,7 +12,8 @@ COMMENT=	Generate rrdtool graphs using performance data from nagios plugins
 
 LICENSE=	ART20
 
-RUN_DEPENDS=	rrdtool>=0:databases/rrdtool
+RUN_DEPENDS=	rrdtool>=0:databases/rrdtool \
+		p5-CGI>=0:www/p5-CGI
 
 OPTIONS_DEFINE=		DOCS
 OPTIONS_SINGLE=		NAGIOS

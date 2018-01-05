@@ -1,8 +1,7 @@
 # Created by: David Naylor <dbn@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/pypy-tkinter/Makefile 403664 2015-12-13 13:16:31Z dbn $
+# $FreeBSD: head/x11-toolkits/pypy-tkinter/Makefile 457998 2018-01-03 18:42:15Z dbn $
 
 PORTNAME=	tkinter
-PORTVERSION=	${PYTHON_PORTVERSION}
 CATEGORIES=	x11-toolkits python
 
 MAINTAINER=	python@FreeBSD.org

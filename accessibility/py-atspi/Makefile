@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/accessibility/py-atspi/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/accessibility/py-atspi/Makefile 457964 2018-01-03 13:22:31Z mat $
 
 PORTNAME=	atspi
 PORTVERSION=	2.24.0
@@ -21,11 +21,7 @@ PORTSCOUT=	limitw:1,even
 
 USES=		gettext gmake gnome localbase pathfix pkgconfig python tar:xz
 USE_PYTHON=	flavors
-.if ${FLAVOR:Upy27:Mpy2*} 
 USE_GNOME=	intlhack pygobject3
-.else
-USE_GNOME=	intlhack py3gobject3
-.endif
 py34_PLIST=	${.CURDIR}/pkg-plist-py3
 py35_PLIST=	${.CURDIR}/pkg-plist-py3
 py36_PLIST=	${.CURDIR}/pkg-plist-py3

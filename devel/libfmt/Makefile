@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/libfmt/Makefile 453704 2017-11-07 21:47:05Z yuri $
+# $FreeBSD: head/devel/libfmt/Makefile 458014 2018-01-04 05:33:38Z tobik $
 
 PORTNAME=	libfmt
 PORTVERSION=	3.0.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 
 MAINTAINER=	SlavaMikerov@gmail.com

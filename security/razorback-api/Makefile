@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/razorback-api/Makefile 425260 2016-11-03 16:36:25Z linimon $
+# $FreeBSD: head/security/razorback-api/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
 
 PORTNAME=	api
 PORTVERSION=	0.5.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	security
 MASTER_SITES=	SF/razorbacktm/API
 PKGNAMEPREFIX=	razorback-

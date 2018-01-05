@@ -1,9 +1,10 @@
 # Created by: Dave Cottlehuber <dch@skunkwerks.at>
-# $FreeBSD: head/net-mgmt/riemann-c-client/Makefile 449054 2017-09-01 00:18:04Z dbaio $
+# $FreeBSD: head/net-mgmt/riemann-c-client/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
 
 PORTNAME=	riemann-c-client
 PORTVERSION=	1.10.1
 DISTVERSIONPREFIX=	${PORTNAME}-
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	dch@skunkwerks.at

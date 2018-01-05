@@ -1,9 +1,9 @@
 # Created by: Tom Judge <tom@tomjudge.com>
-# $FreeBSD: head/security/razorback-syslogNugget/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/razorback-syslogNugget/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
 
 PORTNAME=	syslogNugget
 PORTVERSION=	0.5.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security
 MASTER_SITES=	SF/razorbacktm/Nuggets
 PKGNAMEPREFIX=	razorback-

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/colmap/Makefile 457776 2018-01-01 13:42:54Z jbeich $
+# $FreeBSD: head/graphics/colmap/Makefile 457914 2018-01-02 16:49:24Z tcberner $
 
 PORTNAME=	colmap
 DISTVERSION=	3.3
@@ -18,13 +18,12 @@ LICENSE_FILE_MIT=	${WRKSRC}/src/ext/PoissonRecon/LICENSE
 LICENSE_FILE_SIFTGPU=	${WRKSRC}/src/ext/SiftGPU/LICENSE
 LICENSE_PERMS_SIFTGPU=	dist-mirror pkg-mirror auto-accept
 
-BUILD_DEPENDS=	eigen>=3:math/eigen3
 LIB_DEPENDS=	libboost_filesystem.so:devel/boost-libs \
 		libglog.so:devel/glog \
 		libfreeimage.so:graphics/freeimage \
 		libceres.so:math/ceres-solver
 
-USES=		cmake compiler:${OPENMP}c++11-lib fortran localbase sqlite
+USES=		cmake compiler:${OPENMP}c++11-lib eigen:3 fortran localbase sqlite
 USE_GITHUB=	yes
 USE_GL=		gl glew
 USE_QT5=	qmake_build buildtools_build core gui opengl_build widgets

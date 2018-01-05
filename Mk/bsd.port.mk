@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.port.mk 457794 2018-01-01 20:16:39Z jbeich $
+# $FreeBSD: head/Mk/bsd.port.mk 458083 2018-01-04 20:17:40Z bdrewery $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1061,6 +1061,11 @@ STAGEDIR?=	${WRKDIR}/stage
 NOTPHONY?=
 FLAVORS?=
 FLAVOR?=
+# Disallow forced FLAVOR as make argument since we cannot change it to the
+# proper default.
+.if empty(FLAVOR) && !empty(.MAKEOVERRIDES:MFLAVOR)
+.error FLAVOR may not be passed empty as a make argument.
+.endif
 # Store env FLAVOR for later
 .if !defined(_FLAVOR)
 _FLAVOR:=	${FLAVOR}
@@ -1082,7 +1087,7 @@ _PORTS_DIRECTORIES+=	${PKG_DBDIR} ${PREFIX} ${WRKDIR} ${EXTRACT_WRKDIR} \
 .include "${PORTSDIR}/Mk/bsd.commands.mk"
 
 # Do not leak flavors to childs make
-.MAKEOVERRIDES:=	${MAKEOVERRIDES:NFLAVOR=*}
+.MAKEOVERRIDES:=	${.MAKEOVERRIDES:NFLAVOR}
 
 .if !empty(FLAVOR) && !defined(_DID_FLAVORS_HELPERS)
 _DID_FLAVORS_HELPERS=	yes
@@ -3808,7 +3813,7 @@ CLEAN_DEPENDENCIES=
 .if !defined(NOCLEANDEPENDS)
 CLEAN_DEPENDENCIES+=	limited-clean-depends-${_f}
 limited-clean-depends-${_f}:
-	@cd ${.CURDIR} && ${MAKE} FLAVOR=${_f} limited-clean-depends
+	@cd ${.CURDIR} && ${SETENV} FLAVOR=${_f} ${MAKE} limited-clean-depends
 .endif
 .if target(pre-clean)
 CLEAN_DEPENDENCIES+=	pre-clean-${_f}
@@ -4084,7 +4089,7 @@ fetch-specials:
 		/*) ;; \
 		*) dir=${PORTSDIR}/$$dir ;; \
 		esac; \
-		(cd $$dir; ${MAKE} FLAVOR=$${flavor} fetch); \
+		(cd $$dir; ${SETENV} FLAVOR=$${flavor} ${MAKE} fetch); \
 	done
 .endif
 
@@ -4212,6 +4217,12 @@ PACKAGE-DEPENDS-LIST?= \
 	fi; \
 	checked="${PARENT_CHECKED}"; \
 	for dir in ${_LIB_RUN_DEPENDS:C,[^:]*:([^:]*):?.*,\1,}; do \
+		case $${dir} in \
+		*@*) \
+			flavor=$${dir\#*@}; \
+			dir=$${dir%@*}; \
+			;; \
+		esac; \
 		case "$$dir" in \
 		/*) ;; \
 		*) dir=${PORTSDIR}/$$dir ;; \
@@ -4221,7 +4232,7 @@ PACKAGE-DEPENDS-LIST?= \
 			case $$checked in	\
 			$$dir|$$dir\ *|*\ $$dir|*\ $$dir\ *) continue;;	\
 			esac;	\
-			childout=$$(cd $$dir; ${MAKE} CHILD_DEPENDS=yes PARENT_CHECKED="$$checked" package-depends-list); \
+			childout=$$(cd $$dir; ${SETENV} FLAVOR=$${flavor} ${MAKE} CHILD_DEPENDS=yes PARENT_CHECKED="$$checked" package-depends-list); \
 			set -- $$childout; \
 			childdir=""; \
 			while [ $$\# != 0 ]; do \
@@ -4371,7 +4382,7 @@ describe:
 describe: ${FLAVORS:S/^/describe-/}
 .   for f in ${FLAVORS}
 describe-${f}:
-	@cd ${.CURDIR} && ${MAKE} -B FLAVOR=${f} -D_DESCRIBE_WITH_FLAVOR describe
+	@cd ${.CURDIR} && ${SETENV} FLAVOR=${f} ${MAKE} -B -D_DESCRIBE_WITH_FLAVOR describe
 .   endfor
 .  endif # empty(FLAVORS)
 . endif
@@ -4661,7 +4672,7 @@ pretty-flavors-package-names: .PHONY
 .else
 .for f in ${FLAVORS}
 	@${ECHO_CMD} -n "${f}: "
-	@cd ${.CURDIR} && ${MAKE} -B FLAVOR=${f} -V PKGNAME
+	@cd ${.CURDIR} && ${SETENV} FLAVOR=${f} ${MAKE} -B -V PKGNAME
 .endfor
 .endif
 
@@ -4670,7 +4681,7 @@ flavors-package-names: .PHONY
 	@${ECHO_CMD} "${PKGNAME}"
 .else
 .for f in ${FLAVORS}
-	@cd ${.CURDIR} && ${MAKE} -B FLAVOR=${f} -V PKGNAME
+	@cd ${.CURDIR} && ${SETENV} FLAVOR=${f} ${MAKE} -B -V PKGNAME
 .endfor
 .endif
 

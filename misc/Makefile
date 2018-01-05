@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 457523 2017-12-29 18:47:11Z sunpoet $
+# $FreeBSD: head/misc/Makefile 457921 2018-01-02 20:21:34Z rakuco $
 #
 
     COMMENT = Miscellaneous utilities
@@ -396,7 +396,6 @@
     SUBDIR += py-qt4-demo
     SUBDIR += py-qt4-doc
     SUBDIR += py-qt5-demo
-    SUBDIR += py-qt5-doc
     SUBDIR += py-socli
     SUBDIR += py-spdx
     SUBDIR += py-spdx-lookup

@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/accessibility/orca/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/accessibility/orca/Makefile 457964 2018-01-03 13:22:31Z mat $
 
 PORTNAME=	orca
 PORTVERSION=	3.18.2
@@ -28,7 +28,7 @@ PORTSCOUT=	limitw:1,even
 
 NO_ARCH=	yes
 USES=		gettext gmake gnome pathfix pkgconfig python:3.4+ tar:xz
-USE_GNOME=	gtk30 py3gobject3 intlhack
+USE_GNOME=	gtk30 pygobject3 intlhack
 INSTALLS_ICONS=	yes
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include

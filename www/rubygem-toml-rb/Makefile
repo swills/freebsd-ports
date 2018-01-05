@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-toml-rb/Makefile 455591 2017-12-05 16:44:09Z tz $
+# $FreeBSD: head/www/rubygem-toml-rb/Makefile 457868 2018-01-02 15:30:24Z swills $
 
 PORTNAME=	toml-rb
-PORTVERSION=	1.0.0
+PORTVERSION=	1.1.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

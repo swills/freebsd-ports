@@ -1,10 +1,10 @@
 # Created by: mbr@FreeBSD.org
-# $FreeBSD: head/emulators/open-vm-tools/Makefile 457485 2017-12-28 22:45:57Z jpaetzel $
+# $FreeBSD: head/emulators/open-vm-tools/Makefile 457864 2018-01-02 14:45:06Z jpaetzel $
 
 PORTNAME=		open-vm-tools
 PORTVERSION=		${RELEASE_VER}
 DISTVERSIONPREFIX=	stable-
-PORTREVISION=		1
+PORTREVISION=		2
 PORTEPOCH=		2
 CATEGORIES=		emulators
 

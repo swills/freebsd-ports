@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-dynect/Makefile 427643 2016-12-03 19:28:52Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-dynect/Makefile 458064 2018-01-04 20:11:22Z sunpoet $
 
 PORTNAME=	fog-dynect
-PORTVERSION=	0.2.0
+PORTVERSION=	0.3.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

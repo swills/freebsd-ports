@@ -1,5 +1,5 @@
 # Created by: Chris Piazza <cpiazza@FreeBSD.org>
-# $FreeBSD: head/graphics/libwmf/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/libwmf/Makefile 458093 2018-01-04 23:25:04Z rene $
 
 PORTNAME=	libwmf
 PORTVERSION=	0.2.8.4
@@ -7,7 +7,7 @@ PORTREVISION=	15
 CATEGORIES=	graphics
 MASTER_SITES=	SF/wvware/${PORTNAME}/${PORTVERSION}
 
-MAINTAINER=	junovitch@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tools and library for converting Microsoft WMF (windows metafile)
 
 LICENSE=	GPLv2+

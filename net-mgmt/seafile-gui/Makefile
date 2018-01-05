@@ -1,8 +1,9 @@
-# $FreeBSD: head/net-mgmt/seafile-gui/Makefile 456865 2017-12-20 22:59:00Z ultima $
+# $FreeBSD: head/net-mgmt/seafile-gui/Makefile 458112 2018-01-05 03:56:32Z ultima $
 
 PORTNAME=	seafile-gui
 DISTVERSIONPREFIX=	v
 DISTVERSION=	${SEAFILE_CLIENT_VER}
+PORTREVISION=	1
 CATEGORIES=	net-mgmt devel
 
 MAINTAINER=	ultima@FreeBSD.org
@@ -28,9 +29,9 @@ GH_ACCOUNT=	haiwen
 GH_PROJECT=	seafile-client
 
 USE_GNOME=	glib20
-USE_QT5=	core dbus gui network testlib widgets \
+USE_QT5=	core gui network widgets \
 		qmake_build buildtools_build linguisttools_build
-INSTALLS_ICONS=	yes
+#INSTALLS_ICONS=	yes
 CMAKE_ARGS=	-DCMAKE_INCLUDE_PATH:PATH=include/glib-2.0 \
 		-DOPENSSL_INCLUDE_DIRS=${OPENSSLINC} \
 		-DOPENSSL_LIBRARIES="-L${OPENSSLLIB} -lcrypto"

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/rubygem-gpgme/Makefile 456813 2017-12-20 14:38:03Z sunpoet $
+# $FreeBSD: head/security/rubygem-gpgme/Makefile 458065 2018-01-04 20:11:27Z sunpoet $
 
 PORTNAME=	gpgme
-PORTVERSION=	2.0.15
+PORTVERSION=	2.0.16
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

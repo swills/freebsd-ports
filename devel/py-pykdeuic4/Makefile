@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pykdeuic4/Makefile 440439 2017-05-08 16:12:14Z tcberner $
+# $FreeBSD: head/devel/py-pykdeuic4/Makefile 457857 2018-01-02 14:13:31Z rakuco $
 
 PORTNAME=	pykdeuic4
 PORTVERSION=	${KDE4_VERSION}
@@ -15,6 +15,7 @@ USE_KDE=	kdelibs automoc4 pykde4
 USE_QT4=	moc_build qmake_build rcc_build uic_build
 DISTINFO_FILE=	${.CURDIR:H:H}/devel/py-pykde4/distinfo
 
+NO_ARCH=	yes
 SHEBANG_FILES=	pykdeuic4.py
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/tools/${PORTNAME}

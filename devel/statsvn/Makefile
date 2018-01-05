@@ -1,9 +1,9 @@
 # Created by: glarkin
-# $FreeBSD: head/devel/statsvn/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/statsvn/Makefile 458017 2018-01-04 08:42:55Z tobik $
 
 PORTNAME=	statsvn
 PORTVERSION=	0.7.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel java
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}-${PORTVERSION}-source
@@ -26,10 +26,12 @@ NO_ARCH=	yes
 
 ALL_TARGET=	dist
 
-SUB_FILES=	pkg-message
+SUB_FILES=	statsvn
+SUB_LIST=	JAVA=${JAVA}
 
 PORTDOCS=	*
-PLIST_FILES=	%%DATADIR%%/statsvn.jar
+PLIST_FILES=	bin/statsvn \
+		%%DATADIR%%/statsvn.jar
 
 OPTIONS_DEFINE=	DOCS
 
@@ -37,6 +39,7 @@ DOCS_ALL_TARGET=	javadoc
 
 do-install:
 	(cd ${WRKSRC}/dist && ${COPYTREE_SHARE} . ${STAGEDIR}${DATADIR})
+	${INSTALL_SCRIPT} ${WRKDIR}/statsvn ${STAGEDIR}${PREFIX}/bin
 
 do-install-DOCS-on:
 	(cd ${WRKSRC}/doc && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR})

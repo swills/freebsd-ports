@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/lang/tcl86/Makefile 448343 2017-08-19 17:15:18Z gahr $
+# $FreeBSD: head/lang/tcl86/Makefile 457841 2018-01-02 10:39:22Z gahr $
 
 PORTNAME=	tcl
-PORTVERSION=	8.6.7
+PORTVERSION=	8.6.8
 PORTREVISION=	0
 CATEGORIES=	lang
 MASTER_SITES=	SF/tcl/Tcl/${PORTVERSION} \

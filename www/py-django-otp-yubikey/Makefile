@@ -1,8 +1,8 @@
 # Created by: Carlo Strub <cs@FreeBSD.org>
-# $FreeBSD: head/www/py-django-otp-yubikey/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django-otp-yubikey/Makefile 457926 2018-01-02 20:49:04Z cs $
 
 PORTNAME=	django-otp-yubikey
-PORTVERSION=	0.4.0
+PORTVERSION=	0.4.2
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

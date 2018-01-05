@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-rbnacl/Makefile 455591 2017-12-05 16:44:09Z tz $
+# $FreeBSD: head/security/rubygem-rbnacl/Makefile 458098 2018-01-05 00:50:27Z swills $
 
 PORTNAME=	rbnacl
-PORTVERSION=	4.0.2
+PORTVERSION=	5.0.0
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

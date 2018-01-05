@@ -1,5 +1,5 @@
 # Created by: Vincent Tantardini <vinc@FreeBSD-fr.org>
-# $FreeBSD: head/graphics/libcaca/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/libcaca/Makefile 458101 2018-01-05 02:57:35Z jbeich $
 
 PORTNAME=	libcaca
 DISTVERSION=	0.99.beta19
@@ -26,8 +26,6 @@ INSTALL_TARGET=	install-strip
 
 DOCS=		AUTHORS COPYING COPYING.GPL COPYING.LGPL ChangeLog NEWS \
 		NOTES README THANKS
-
-BROKEN_aarch64=		Fails to compile: error in backend: Do not know how to split this operator's operand!
 
 OPTIONS_DEFINE=	X11 IMLIB2 FTGL SLANG DOCS
 OPTIONS_DEFAULT=	X11 IMLIB2

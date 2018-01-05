@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 456690 2017-12-18 22:39:38Z yuri $
+# $FreeBSD: head/x11/Makefile 458038 2018-01-04 17:09:27Z swills $
 #
 
     COMMENT = Ports to support the X window system
@@ -281,6 +281,7 @@
     SUBDIR += qterminal
     SUBDIR += qterminal-l10n
     SUBDIR += qxkb
+    SUBDIR += radare-cutter
     SUBDIR += randrproto
     SUBDIR += recordproto
     SUBDIR += rendercheck

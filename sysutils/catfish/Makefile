@@ -1,5 +1,5 @@
 # Created by: jpaetzel@FreeBSD.org
-# $FreeBSD: head/sysutils/catfish/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/sysutils/catfish/Makefile 457964 2018-01-03 13:22:31Z mat $
 
 PORTNAME=	catfish
 PORTVERSION=	1.4.1
@@ -14,13 +14,12 @@ LICENSE=	GPLv3
 RUN_DEPENDS=	\
 	${PYTHON_PKGNAMEPREFIX}python-distutils-extra>0:devel/py-python-distutils-extra@${FLAVOR} \
 	${PYTHON_PKGNAMEPREFIX}pexpect>0:misc/py-pexpect@${FLAVOR} \
-	${PYTHON_PKGNAMEPREFIX}gobject3>=0:devel/py-gobject3@${FLAVOR} \
 	gksu:sysutils/gksu
 BUILD_DEPENDS=	${RUN_DEPENDS}
 
 USES=		python:2.7
 USE_PYTHON=	distutils
-USE_GNOME=	gtk30 intltool
+USE_GNOME=	gtk30 intltool pygobject3
 
 .include <bsd.port.pre.mk>
 

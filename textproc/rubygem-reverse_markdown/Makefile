@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-reverse_markdown/Makefile 418394 2016-07-11 19:49:18Z pawel $
+# $FreeBSD: head/textproc/rubygem-reverse_markdown/Makefile 458100 2018-01-05 02:50:29Z araujo $
 
 PORTNAME=	reverse_markdown
-PORTVERSION=	1.0.3
+PORTVERSION=	1.0.4
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

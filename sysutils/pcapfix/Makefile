@@ -1,8 +1,8 @@
 # Created by: Vidar Karlsen <vidar@karlsen.tech>
-# $FreeBSD: head/sysutils/pcapfix/Makefile 433999 2017-02-13 16:38:32Z mat $
+# $FreeBSD: head/sysutils/pcapfix/Makefile 457992 2018-01-03 16:59:26Z swills $
 
 PORTNAME=	pcapfix
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

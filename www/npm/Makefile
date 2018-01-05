@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/npm/Makefile 456421 2017-12-15 23:51:31Z sunpoet $
+# $FreeBSD: head/www/npm/Makefile 457974 2018-01-03 16:45:29Z sunpoet $
 
 PORTNAME=	npm
 PORTVERSION=	5.6.0
@@ -10,7 +10,8 @@ MASTER_SITES=	LOCAL/sunpoet
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Node package manager
 
-LICENSE=	MIT
+LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/lib/node_modules/npm/LICENSE
 
 RUN_DEPENDS=	gmake:devel/gmake
 

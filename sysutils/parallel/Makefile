@@ -1,15 +1,15 @@
 # Created by: Chris Howey <howeyc@gmail.com>
-# $FreeBSD: head/sysutils/parallel/Makefile 432281 2017-01-23 18:51:56Z sunpoet $
+# $FreeBSD: head/sysutils/parallel/Makefile 457935 2018-01-02 23:24:33Z dbaio $
 
 PORTNAME=	parallel
-PORTVERSION=	20170122
+PORTVERSION=	20171222
 CATEGORIES=	sysutils
 MASTER_SITES=	GNU
 
 MAINTAINER=	howeyc@gmail.com
 COMMENT=	Shell tool for executing jobs in parallel
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 OPTIONS_DEFINE=	DOCS

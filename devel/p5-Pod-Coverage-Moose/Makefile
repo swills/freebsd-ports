@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/p5-Pod-Coverage-Moose/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Pod-Coverage-Moose/Makefile 458076 2018-01-04 20:12:23Z sunpoet $
 
 PORTNAME=	Pod-Coverage-Moose
 PORTVERSION=	0.07
@@ -17,8 +17,7 @@ BUILD_DEPENDS=	p5-Moose>=2.1300:devel/p5-Moose \
 		p5-Pod-Coverage>=0:devel/p5-Pod-Coverage \
 		p5-namespace-autoclean>=0.08:devel/p5-namespace-autoclean
 RUN_DEPENDS:=	${BUILD_DEPENDS}
-TEST_DEPENDS=	p5-MooseX-AttributeHelpers>=0:devel/p5-MooseX-AttributeHelpers \
-		p5-MooseX-Role-WithOverloading>=0:devel/p5-MooseX-Role-WithOverloading \
+TEST_DEPENDS=	p5-MooseX-Role-WithOverloading>=0:devel/p5-MooseX-Role-WithOverloading \
 		p5-Test-Requires>=0:devel/p5-Test-Requires
 
 NO_ARCH=	yes

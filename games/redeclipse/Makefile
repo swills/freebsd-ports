@@ -1,8 +1,8 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/redeclipse/Makefile 444891 2017-07-02 15:37:41Z amdmi3 $
+# $FreeBSD: head/games/redeclipse/Makefile 457861 2018-01-02 14:35:41Z amdmi3 $
 
 PORTNAME=	redeclipse
-PORTVERSION=	1.5.8
+PORTVERSION=	1.6.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 
@@ -12,9 +12,9 @@ COMMENT=	Single-player and multi-player first-person ego-shooter
 LICENSE=	MIT ZLIB
 LICENSE_COMB=	multi
 
-RUN_DEPENDS=	redeclipse-data>=${PORTVERSION}:games/redeclipse-data
-
 BROKEN_sparc64=	does not build on sparc64
+
+RUN_DEPENDS=	redeclipse-data>=${PORTVERSION}:games/redeclipse-data
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	red-eclipse

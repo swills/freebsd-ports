@@ -1,8 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/lang/itcl4/Makefile 448458 2017-08-21 07:49:12Z gahr $
+# $FreeBSD: head/lang/itcl4/Makefile 457845 2018-01-02 10:51:06Z gahr $
 
 PORTNAME=	itcl4
-PORTVERSION=	4.1.0
+PORTVERSION=	4.1.1
 PORTREVISION=	0
 CATEGORIES=	lang
 MASTER_SITES=	SF/incrtcl/%5Bincr%20Tcl_Tk%5D-4-source/itcl%20${PORTVERSION}/
