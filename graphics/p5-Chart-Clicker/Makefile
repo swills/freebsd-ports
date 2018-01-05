@@ -1,8 +1,9 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/graphics/p5-Chart-Clicker/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/graphics/p5-Chart-Clicker/Makefile 458077 2018-01-04 20:12:28Z sunpoet $
 
 PORTNAME=	Chart-Clicker
 PORTVERSION=	2.90
+PORTREVISION=	1
 CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -16,7 +17,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	p5-Color-Scheme>=0:graphics/p5-Color-Scheme \
 		p5-Moose>=0:devel/p5-Moose \
-		p5-MooseX-AttributeHelpers>=0:devel/p5-MooseX-AttributeHelpers \
 		p5-DateTime>=0:devel/p5-DateTime \
 		p5-DateTime-Set>=0:devel/p5-DateTime-Set \
 		p5-Geometry-Primitive>=0:graphics/p5-Geometry-Primitive \

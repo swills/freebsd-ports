@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/libjxr/Makefile 452534 2017-10-20 15:17:08Z swills $
+# $FreeBSD: head/graphics/libjxr/Makefile 458110 2018-01-05 03:41:39Z jbeich $
 
 PORTNAME=	jxrlib
 PORTVERSION=	1.1
@@ -12,7 +12,6 @@ COMMENT=	Library for JPEG XR, a.k.a. Windows MediaTM Photo
 
 LICENSE=	BSD2CLAUSE
 
-BROKEN_aarch64=		fails to link: cc: linker command failed with exit code 1 (use -v to see invocation)
 BROKEN_mips=		fails to compile: cc1: unrecognized command line option "-Wno-extra-tokens"
 BROKEN_mips64=		fails to compile: cc1: unrecognized command line option "-Wno-extra-tokens"
 BROKEN_powerpc64=	fails to compile: cc1: unrecognized command line option "-Wno-extra-tokens"

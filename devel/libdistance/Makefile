@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libdistance/Makefile 456734 2017-12-19 16:16:27Z bapt $
+# $FreeBSD: head/devel/libdistance/Makefile 458028 2018-01-04 13:03:58Z gahr $
 
 PORTNAME=	libdistance
 PORTVERSION=	0.2.2
@@ -22,6 +22,10 @@ CFLAGS+=	-fPIC
 
 pre-build:
 	mkdir -p ${STAGEDIR}/usr/local/tests/${PORTNAME}
+
+post-patch:
+	${REINPLACE_CMD} 's|%%TCL_SHLIB_VER%%|${TCL_SHLIB_VER}|' \
+	    ${WRKSRC}/swig/tcl/Makefile
 
 MAKE_JOBS_UNSAFE=	yes
 

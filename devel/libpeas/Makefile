@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/devel/libpeas/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/libpeas/Makefile 457964 2018-01-03 13:22:31Z mat $
 
 PORTNAME=	libpeas
 PORTVERSION=	1.20.0
@@ -39,13 +39,12 @@ PLIST=          ${.CURDIR}/pkg-plist
 .if ${LIBPEAS_SLAVE} == python
 USES+=		python
 USE_PYTHON=	flavors
-.if ${FLAVOR:Upy27:Mpy2*}
 USE_GNOME+=	pygobject3
+.if ${FLAVOR:Upy27:Mpy2*}
 CONFIGURE_ARGS+=	--disable-python3
 BUILD_WRKSRC=	${WRKSRC}/loaders/python
 INSTALL_WRKSRC=	${WRKSRC}/loaders/python
 .else
-USE_GNOME+=	py3gobject3
 CONFIGURE_ARGS+=	--disable-python2 \
 			ac_cv_path_PYTHON3_CONFIG=${LOCALBASE}/bin/python${PYTHON_VER}-config
 BUILD_WRKSRC=	${WRKSRC}/loaders/python3

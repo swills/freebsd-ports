@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-rspec-core/Makefile 452362 2017-10-18 17:22:27Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rspec-core/Makefile 457987 2018-01-03 16:46:35Z sunpoet $
 
 PORTNAME=	rspec-core
-PORTVERSION=	3.7.0
+PORTVERSION=	3.7.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

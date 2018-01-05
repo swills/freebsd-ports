@@ -1,7 +1,6 @@
-# $FreeBSD: head/www/py-qt5-webkitwidgets/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-qt5-webkitwidgets/Makefile 457921 2018-01-02 20:21:34Z rakuco $
 
 PORTNAME=	webkitwidgets
-PORTREVISION=	1
 CATEGORIES=	www devel python
 
 MAINTAINER=	kde@FreeBSD.org

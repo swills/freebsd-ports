@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/metronome/Makefile 455795 2017-12-08 19:02:43Z krion $
+# $FreeBSD: head/net-mgmt/metronome/Makefile 457914 2018-01-02 16:49:24Z tcberner $
 
 PORTNAME=	metronome
 DISTVERSION=	0.9.0
@@ -10,10 +10,9 @@ COMMENT=	Client-side java script to render graphs w/o depending on graphite
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	eigen>0:math/eigen3
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 
-USES=		autoreconf:build libtool:build pathfix pkgconfig
+USES=		autoreconf:build eigen:3 libtool:build pathfix pkgconfig
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	ahupowerdns

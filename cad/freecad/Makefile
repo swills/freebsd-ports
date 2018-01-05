@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/freecad/Makefile 456830 2017-12-20 15:10:04Z bapt $
+# $FreeBSD: head/cad/freecad/Makefile 457914 2018-01-02 16:49:24Z tcberner $
 
 PORTNAME=	FreeCAD
 DISTVERSION=	0.17.12018
@@ -11,8 +11,7 @@ LICENSE=	LGPL20+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	pyside-rcc:devel/pyside-tools \
-		swig3.0:devel/swig30 \
-		${LOCALBASE}/libdata/pkgconfig/eigen3.pc:math/eigen3
+		swig3.0:devel/swig30
 LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libfreetype.so:print/freetype2 \
 		libboost_python.so:devel/boost-python-libs \
@@ -31,7 +30,7 @@ LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libhdf5.so:science/hdf5
 RUN_DEPENDS=	pivy>0:graphics/py-pivy@${PY_FLAVOR}
 
-USES=		dos2unix compiler:c++11-lib cmake:outsource fortran jpeg \
+USES=		dos2unix compiler:c++11-lib cmake:outsource eigen:3 fortran jpeg \
 		python:2.7 localbase
 USE_XORG=	ice sm x11 xext xt
 USE_GL=		gl glu

@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/sysutils/rubygem-guard/Makefile 432768 2017-01-29 16:05:06Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-guard/Makefile 458066 2018-01-04 20:11:32Z sunpoet $
 
 PORTNAME=	guard
-PORTVERSION=	2.14.1
+PORTVERSION=	2.14.2
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-formatador>=0.2.4:devel/rubygem-formatador \
 		rubygem-listen>=2.7:devel/rubygem-listen \
-		rubygem-lumberjack>=1.0:devel/rubygem-lumberjack \
+		rubygem-lumberjack>=1.0.12:devel/rubygem-lumberjack \
 		rubygem-nenv>=0.1:devel/rubygem-nenv \
 		rubygem-notiffany>=0:devel/rubygem-notiffany \
 		rubygem-pry>=0.9.12:devel/rubygem-pry \

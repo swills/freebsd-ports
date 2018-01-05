@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/audio/deadbeef/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/audio/deadbeef/Makefile 458101 2018-01-05 02:57:35Z jbeich $
 
 PORTNAME=	deadbeef
 PORTVERSION=	0.7.2
@@ -28,7 +28,6 @@ INSTALLS_ICONS=	yes
 SHEBANG_FILES=	yasmwrapper.sh
 INSTALL_TARGET=	install-strip
 
-BROKEN_aarch64=		Fails to compile: error in backend: Do not know how to split this operator's operand!
 BROKEN_armv6=		Fails to compile: error: invalid conversion between vector type and integer type
 BROKEN_armv7=		Fails to compile: error: invalid conversion between vector type and integer type
 

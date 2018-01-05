@@ -1,5 +1,5 @@
 # Created by: Romain Tartiere <romain@blogreen.org>
-# $FreeBSD: head/mail/jmba/Makefile 426199 2016-11-16 00:34:36Z linimon $
+# $FreeBSD: head/mail/jmba/Makefile 458113 2018-01-05 04:19:26Z jbeich $
 
 PORTNAME=	jmba
 PORTVERSION=	0.5.5
@@ -10,9 +10,8 @@ MAINTAINER=	romain@FreeBSD.org
 COMMENT=	Junk Mail Buffering Agent
 
 GNU_CONFIGURE=	yes
+CONFIGURE_ENV=	ac_cv_func_gettext=no ac_cv_lib_intl_main=no
 USES=	gmake tar:bzip2
-
-BROKEN_aarch64=	Fails to build: gmake: msgfmt: Command not found
 
 PLIST_FILES=	bin/jmba \
 		man/man1/jmba.1.gz

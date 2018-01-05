@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-jwt/Makefile 427731 2016-12-03 19:36:23Z sunpoet $
+# $FreeBSD: head/www/rubygem-jwt/Makefile 457879 2018-01-02 15:33:39Z sunpoet $
 
 PORTNAME=	jwt
-PORTVERSION=	1.5.6
+PORTVERSION=	2.1.0
 CATEGORIES=	www devel rubygems
 MASTER_SITES=	RG
 

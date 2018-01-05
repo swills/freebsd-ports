@@ -1,8 +1,9 @@
 # Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/sysutils/slurm-wlm/Makefile 453388 2017-11-03 03:46:51Z jrm $
+# $FreeBSD: head/sysutils/slurm-wlm/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
 
 PORTNAME=	slurm
 DISTVERSION=	17.02.9
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.schedmd.com/download/latest/ \
 		http://www.schedmd.com/download/archive/ \

@@ -1,8 +1,8 @@
 # Created by: Pav Lucistnik <pav@oook.cz>
-# $FreeBSD: head/textproc/meld/Makefile 422790 2016-09-26 18:53:56Z pawel $
+# $FreeBSD: head/textproc/meld/Makefile 458090 2018-01-04 21:41:41Z pawel $
 
 PORTNAME=	meld
-PORTVERSION=	3.16.3
+PORTVERSION=	3.18.0
 CATEGORIES=	textproc devel python
 MASTER_SITES=	GNOME
 
@@ -15,11 +15,11 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	itstool:textproc/itstool
 RUN_DEPENDS=	gsettings-desktop-schemas>=0:devel/gsettings-desktop-schemas
 
-USES=		desktop-file-utils gettext python:2 shared-mime-info \
+USES=		desktop-file-utils gettext python:3.4+ shared-mime-info \
 		shebangfix tar:xz
 SHEBANG_FILES=	bin/meld
 USE_PYTHON=	distutils
-USE_GNOME=	gtksourceview3 pygobject3 intltool
+USE_GNOME=	gtksourceview3 intltool libxml2:build pygobject3
 GLIB_SCHEMAS=	org.gnome.meld.gschema.xml
 PYDISTUTILS_INSTALLNOSINGLE=	yes
 PYDISTUTILS_INSTALL_TARGET=	--no-update-icon-cache --no-compile-schemas install

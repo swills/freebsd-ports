@@ -1,8 +1,8 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/science/pynn/Makefile 441500 2017-05-23 02:34:02Z wen $
+# $FreeBSD: head/science/pynn/Makefile 458024 2018-01-04 11:54:56Z wen $
 
 PORTNAME=	pynn
-PORTVERSION=	0.9.1
+PORTVERSION=	0.9.2
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

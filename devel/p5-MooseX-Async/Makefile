@@ -1,5 +1,5 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooseX-Async/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Async/Makefile 458073 2018-01-04 20:12:08Z sunpoet $
 
 PORTNAME=	MooseX-Async
 PORTVERSION=	0.07
@@ -11,10 +11,14 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	The Orphanange of Asynchronous Love Children
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 RUN_DEPENDS=	p5-Moose>=0.56:devel/p5-Moose \
 		p5-MooseX-AttributeHelpers>=0.13:devel/p5-MooseX-AttributeHelpers
 BUILD_DEPENDS:=	${RUN_DEPENDS}
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

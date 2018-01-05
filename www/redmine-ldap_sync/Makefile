@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/redmine-ldap_sync/Makefile 418096 2016-07-05 17:19:53Z feld $
+# $FreeBSD: head/www/redmine-ldap_sync/Makefile 457904 2018-01-02 16:04:00Z feld $
 
 PORTNAME=	ldap_sync
-PORTVERSION=	2.0.7
+PORTVERSION=	2.1.0
 CATEGORIES=	www
 PKGNAMEPREFIX=	redmine-
 DIST_SUBDIR=	${PORTNAME}-${PORTVERSION}

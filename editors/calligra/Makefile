@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/calligra/Makefile 455244 2017-12-01 01:58:23Z mandree $
+# $FreeBSD: head/editors/calligra/Makefile 457914 2018-01-02 16:49:24Z tcberner $
 
 # TODO (when these parts are available in KF5):
 #  - add calendarcore to USE_KDE when KDE PIM is available
@@ -37,11 +37,10 @@ LIB_DEPENDS=	libImath-2_2.so:graphics/ilmbase \
 		libwpg-0.3.so:graphics/libwpg03 \
 		libwps-0.3.so:textproc/libwps03
 
-BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/eigen3.pc:math/eigen3 \
-		pstoedit:graphics/pstoedit
+BUILD_DEPENDS=	pstoedit:graphics/pstoedit
 RUN_DEPENDS=	pstoedit:graphics/pstoedit
 
-USES=		cmake:outsource cpe compiler:c++11-lib desktop-file-utils \
+USES=		cmake:outsource cpe compiler:c++11-lib desktop-file-utils eigen:3 \
 		gettext iconv:translit jpeg kde:5 localbase:ldflags perl5 pkgconfig \
 		shared-mime-info sqlite tar:xz
 USE_KDE=	activities archive auth bookmarks codecs completion config \

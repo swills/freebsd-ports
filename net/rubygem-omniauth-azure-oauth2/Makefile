@@ -1,8 +1,9 @@
 # Created by: Torsten Zuehlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/net/rubygem-omniauth-azure-oauth2/Makefile 455591 2017-12-05 16:44:09Z tz $
+# $FreeBSD: head/net/rubygem-omniauth-azure-oauth2/Makefile 457888 2018-01-02 15:34:24Z sunpoet $
 
 PORTNAME=	omniauth-azure-oauth2
 PORTVERSION=	0.0.9
+PORTREVISION=	1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

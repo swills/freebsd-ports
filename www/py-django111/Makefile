@@ -1,11 +1,10 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/www/py-django111/Makefile 457303 2017-12-26 18:39:14Z lwhsu $
+# $FreeBSD: head/www/py-django111/Makefile 457882 2018-01-02 15:33:54Z sunpoet $
 #
 # Remember to update www/py-django along with this port.
 
 PORTNAME=	django
-PORTVERSION=	1.11.8
-PORTREVISION=	1
+PORTVERSION=	1.11.9
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP \
 		https://www.djangoproject.com/m/releases/${PORTVERSION}/

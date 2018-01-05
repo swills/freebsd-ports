@@ -1,8 +1,8 @@
-# $FreeBSD: head/german/unix-connect/Makefile 442539 2017-06-04 09:24:48Z dinoex $
+# $FreeBSD: head/german/unix-connect/Makefile 458118 2018-01-05 05:53:09Z dinoex $
 
 PORTNAME=	unix-connect
 PORTVERSION=	0.95
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	german comms news mail
 MASTER_SITES=	ftp://ftp.dinoex.org/pub/unix-connect/ \
 		SF

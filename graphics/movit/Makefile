@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/movit/Makefile 429213 2016-12-23 02:35:32Z avilla $
+# $FreeBSD: head/graphics/movit/Makefile 458029 2018-01-04 14:09:31Z mat $
 
 PORTNAME=	movit
 PORTVERSION=	1.4.0
+PORTREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://${PORTNAME}.sesse.net/
 
@@ -12,10 +13,8 @@ LICENSE=	GPLv2+
 
 LIB_DEPENDS=	libepoxy.so:graphics/libepoxy \
 		libfftw3.so:math/fftw3
-BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/eigen3.pc:math/eigen3
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=		autoreconf gmake libtool pathfix pkgconfig
+USES=		autoreconf gmake eigen:3,build,run libtool pathfix pkgconfig
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 

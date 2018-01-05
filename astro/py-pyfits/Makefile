@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/astro/py-pyfits/Makefile 457587 2017-12-30 06:43:51Z sunpoet $
+# $FreeBSD: head/astro/py-pyfits/Makefile 457948 2018-01-03 09:24:08Z vanilla $
 
 PORTNAME=	pyfits
-PORTVERSION=	3.4
+PORTVERSION=	3.5
 CATEGORIES=	astro python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

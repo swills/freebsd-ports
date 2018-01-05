@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/audio/rhythmbox/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/audio/rhythmbox/Makefile 457964 2018-01-03 13:22:31Z mat $
 
 PORTNAME=	rhythmbox
 PORTVERSION=	3.2.1
@@ -28,7 +28,7 @@ LIB_DEPENDS=	libmusicbrainz5.so:audio/libmusicbrainz5 \
 USES=		desktop-file-utils gettext gmake gnome libtool localbase \
 		pathfix pkgconfig tar:xz
 USE_GNOME=	intlhack gnomeprefix gtk30 introspection:build \
-		py3gobject3
+		pygobject3
 USE_XORG=	ice xproto
 GNU_CONFIGURE=	yes
 USE_GSTREAMER1=	flac lame jpeg cdparanoia vorbis

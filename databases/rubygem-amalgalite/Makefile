@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/databases/rubygem-amalgalite/Makefile 456362 2017-12-14 20:43:44Z sunpoet $
+# $FreeBSD: head/databases/rubygem-amalgalite/Makefile 457981 2018-01-03 16:46:04Z sunpoet $
 
 PORTNAME=	amalgalite
-PORTVERSION=	1.6.0
+PORTVERSION=	1.6.1
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

@@ -1,8 +1,7 @@
 # Created by: David Naylor <dbn@FreeBSD.org>
-# $FreeBSD: head/databases/pypy-sqlite3/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/pypy-sqlite3/Makefile 457998 2018-01-03 18:42:15Z dbn $
 
 PORTNAME=	sqlite3
-PORTVERSION=	${PYTHON_PORTVERSION}
 CATEGORIES=	databases python
 
 MAINTAINER=	python@FreeBSD.org

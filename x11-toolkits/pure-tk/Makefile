@@ -1,5 +1,5 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/x11-toolkits/pure-tk/Makefile 436235 2017-03-15 11:56:07Z amdmi3 $
+# $FreeBSD: head/x11-toolkits/pure-tk/Makefile 458027 2018-01-04 12:58:50Z gahr $
 
 PORTNAME=	pure-tk
 PORTVERSION=	0.5
@@ -28,7 +28,7 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-patch:
 	@${REINPLACE_CMD} \
-		-e "s|pkg-config tcl|pkg-config tk|" \
+		-e "s|pkg-config tcl|pkg-config tk${TK_SHLIB_VER}|" \
 		-e "s|-ltcl\$$(tclvers)|-ltcl${TCL_SHLIB_VER}|" \
 		-e "s|-ltk\$$(tclvers)|-ltk${TK_SHLIB_VER}|" \
 		${WRKSRC}/Makefile

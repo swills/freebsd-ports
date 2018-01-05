@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/postgis20/Makefile 456527 2017-12-17 11:25:13Z rodrigo $
+# $FreeBSD: head/databases/postgis20/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
 
 PORTNAME=	postgis
 PORTVERSION=	2.0.7
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	databases geography
 MASTER_SITES=	http://download.osgeo.org/postgis/source/
 PKGNAMESUFFIX=	20

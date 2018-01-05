@@ -1,8 +1,7 @@
 # Created by: David Naylor <dbn@FreeBSD.org>
-# $FreeBSD: head/databases/pypy-gdbm/Makefile 418864 2016-07-21 06:02:04Z dbn $
+# $FreeBSD: head/databases/pypy-gdbm/Makefile 457998 2018-01-03 18:42:15Z dbn $
 
 PORTNAME=	gdbm
-PORTVERSION=	${PYTHON_PORTVERSION}
 CATEGORIES=	databases python
 
 MAINTAINER=	python@FreeBSD.org

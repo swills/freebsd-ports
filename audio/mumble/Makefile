@@ -1,9 +1,9 @@
 # Created by: marius nuennerich
-# $FreeBSD: head/audio/mumble/Makefile 456058 2017-12-11 18:26:13Z sunpoet $
+# $FreeBSD: head/audio/mumble/Makefile 457971 2018-01-03 16:18:44Z feld $
 
 PORTNAME=	mumble
 PORTVERSION=	1.2.19
-PORTREVISION=	4
+PORTREVISION=	6
 CATEGORIES=	audio
 
 MAINTAINER=	feld@FreeBSD.org
@@ -60,6 +60,8 @@ PORTAUDIO_LIB_DEPENDS=	libportaudio.so:audio/portaudio
 .if ${COMPILER_TYPE} == gcc
 CONFIG+=	no-pch
 .endif
+
+EXTRA_PATCHES=	${FILESDIR}/extrapatch-fix-build-boost-1.66:-p1
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|-ldl||' ${WRKSRC}/overlay_gl/overlay_gl.pro

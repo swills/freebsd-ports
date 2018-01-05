@@ -1,8 +1,8 @@
 # Created by: Michal Bielicki <m.bielicki@llizardfs.com>
-# $FreeBSD: head/devel/isa-l/Makefile 445349 2017-07-08 22:43:16Z lme $
+# $FreeBSD: head/devel/isa-l/Makefile 458035 2018-01-04 16:01:50Z swills $
 
 PORTNAME=	isa-l
-PORTVERSION=	2.19.0
+PORTVERSION=	2.21.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

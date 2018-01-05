@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-mgmt/rubygem-snmp/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/net-mgmt/rubygem-snmp/Makefile 457912 2018-01-02 16:20:08Z swills $
 
 PORTNAME=	snmp
-PORTVERSION=	1.1.1
+PORTVERSION=	1.2.0
 CATEGORIES=	net-mgmt rubygems
 MASTER_SITES=	RG
 

@@ -1,8 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/tk85/Makefile 413747 2016-04-21 16:48:50Z gahr $
+# $FreeBSD: head/x11-toolkits/tk85/Makefile 458018 2018-01-04 08:54:45Z gahr $
 
 PORTNAME=	tk
 PORTVERSION=	8.5.19
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	TCLTK/tcl8_5 SF/tcl/Tcl/${PORTVERSION}
 PKGNAMESUFFIX=	${SHORT_TK_VER}
@@ -63,6 +64,8 @@ post-patch:
 	     s|@TK_BUILD_STUB_LIB_PATH@|@TK_STUB_LIB_PATH@|; \
 	     s|@TK_SRC_DIR@|${PREFIX}/include/tk${TK_VER}|' \
 	     ${WRKSRC}/tkConfig.sh.in
+	${REINPLACE_CMD} -e '/^Requires/s|tcl|tcl${SHORT_TK_VER}|' \
+	    ${WRKSRC}/tk.pc.in
 	@${REINPLACE_CMD} -e 's|X11/Intrinsic.h|X11/Xlib.h|g' ${WRKSRC}/configure
 	@${REINPLACE_CMD} -e 's|@TK_SHARED_BUILD@|#@TK_SHARED_BUILD@|g; s|%%LOCALBASE%%|${LOCALBASE}|g' ${WRKSRC}/Makefile.in
 

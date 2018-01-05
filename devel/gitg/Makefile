@@ -1,5 +1,5 @@
 # Created by: kipz <somicide@gmail.com>
-# $FreeBSD: head/devel/gitg/Makefile 456683 2017-12-18 21:57:55Z antoine $
+# $FreeBSD: head/devel/gitg/Makefile 457964 2018-01-03 13:22:31Z mat $
 
 PORTNAME=	gitg
 PORTVERSION=	3.24.0
@@ -50,6 +50,6 @@ NLS_USES_OFF=	gettext-tools
 NLS_CONFIGURE_ENABLE=	nls
 PYTHON_USES=	python:3.2+
 PYTHON_CONFIGURE_ENABLE=	python
-PYTHON_USE=	GNOME=py3gobject3
+PYTHON_USE=	GNOME=pygobject3
 
 .include <bsd.port.mk>

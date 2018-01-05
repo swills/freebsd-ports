@@ -1,9 +1,9 @@
 # Created by: Vincent Tantardini <vinc@freebsd-fr.org>
-# $FreeBSD: head/x11/hsetroot/Makefile 457462 2017-12-28 14:30:23Z danfe $
+# $FreeBSD: head/x11/hsetroot/Makefile 457969 2018-01-03 15:11:11Z danfe $
 
 PORTNAME=	hsetroot
 PORTVERSION=	1.0.2
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	x11
 
 MAINTAINER=	danfe@FreeBSD.org
@@ -12,6 +12,7 @@ COMMENT=	Wallpaper manipulation utility for X11
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libImlib2.so:graphics/imlib2
+RUN_DEPENDS=	xrandr:x11/xrandr
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	himdel

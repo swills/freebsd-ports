@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 457766 2018-01-01 11:41:37Z rene $
+# $FreeBSD: head/devel/Makefile 458121 2018-01-05 06:54:27Z antoine $
 #
 
     COMMENT = Development utilities
@@ -1196,6 +1196,7 @@
     SUBDIR += icu-lx
     SUBDIR += idutils
     SUBDIR += imake
+    SUBDIR += inastemp
     SUBDIR += include-what-you-use
     SUBDIR += inifiled
     SUBDIR += inilib

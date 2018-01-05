@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/net/rubygem-omniauth-auth0/Makefile 455591 2017-12-05 16:44:09Z tz $
+# $FreeBSD: head/net/rubygem-omniauth-auth0/Makefile 457867 2018-01-02 15:28:44Z swills $
 
 PORTNAME=	omniauth-auth0
 PORTVERSION=	2.0.0

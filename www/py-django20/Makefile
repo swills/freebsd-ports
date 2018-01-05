@@ -1,9 +1,8 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/www/py-django20/Makefile 457303 2017-12-26 18:39:14Z lwhsu $
+# $FreeBSD: head/www/py-django20/Makefile 457883 2018-01-02 15:33:59Z sunpoet $
 
 PORTNAME=	django
-PORTVERSION=	2.0
-PORTREVISION=	1
+PORTVERSION=	2.0.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP \
 		https://www.djangoproject.com/m/releases/${PORTVERSION}/

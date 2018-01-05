@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-qt5/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-qt5/Makefile 457921 2018-01-02 20:21:34Z rakuco $
 
 PORTNAME=	qt5
 PORTVERSION=	${PYQT5_VERSION}
@@ -12,7 +12,7 @@ USES=		metaport python pyqt:5
 USE_PYTHON=	flavors
 
 OPTIONS_DEFINE=	core dbus dbussupport demo designer \
-		designerplugin doc gui multimedia multimediawidgets \
+		designerplugin gui multimedia multimediawidgets \
 		network opengl printsupport qml qscintilla2 sql \
 		serialport svg test webkit webkitwidgets \
 		widgets xml xmlpatterns

@@ -1,7 +1,7 @@
-#	$FreeBSD: head/devel/rubygem-p4ruby/Makefile 414136 2016-04-27 21:57:31Z swills $
+#	$FreeBSD: head/devel/rubygem-p4ruby/Makefile 457911 2018-01-02 16:18:28Z swills $
 
 PORTNAME=	p4ruby
-PORTVERSION=	2015.2.1313860
+PORTVERSION=	2017.1.1599185
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

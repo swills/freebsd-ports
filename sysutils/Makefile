@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 457766 2018-01-01 11:41:37Z rene $
+# $FreeBSD: head/sysutils/Makefile 458060 2018-01-04 20:11:01Z sunpoet $
 #
 
     COMMENT = System utilities
@@ -188,6 +188,7 @@
     SUBDIR += consul
     SUBDIR += consul_exporter
     SUBDIR += consul-alerts
+    SUBDIR += container-diff
     SUBDIR += contractor
     SUBDIR += copytape
     SUBDIR += coreutils
@@ -1290,6 +1291,7 @@
     SUBDIR += vpnc-scripts
     SUBDIR += vstrip
     SUBDIR += vttest
+    SUBDIR += vzvol
     SUBDIR += wait_on
     SUBDIR += warden
     SUBDIR += watchdog

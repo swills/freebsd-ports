@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/rubygem-mario-redis-lock/Makefile 447386 2017-08-05 03:25:17Z jrm $
+# $FreeBSD: head/databases/rubygem-mario-redis-lock/Makefile 457982 2018-01-03 16:46:09Z sunpoet $
 
 PORTNAME=	mario-redis-lock
 PORTVERSION=	1.2.0
+PORTREVISION=	2
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 
@@ -10,7 +11,7 @@ COMMENT=	Ruby distributed lock using Redis, with emphasis in transparency
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	rubygem-redis>=3.3.3:databases/rubygem-redis
+RUN_DEPENDS=	rubygem-redis>=3.0.5:databases/rubygem-redis
 
 USES=		gem
 USE_RUBY=	yes

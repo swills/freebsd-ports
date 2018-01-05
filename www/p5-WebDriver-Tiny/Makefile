@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/www/p5-WebDriver-Tiny/Makefile 457001 2017-12-22 23:04:37Z sunpoet $
+# $FreeBSD: head/www/p5-WebDriver-Tiny/Makefile 457979 2018-01-03 16:45:54Z sunpoet $
 
 PORTNAME=	WebDriver-Tiny
-PORTVERSION=	0.100
+PORTVERSION=	0.101
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:CVLIBRARY

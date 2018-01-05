@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-openssl20/Makefile 456934 2017-12-21 17:42:07Z sunpoet $
+# $FreeBSD: head/security/rubygem-openssl20/Makefile 458070 2018-01-04 20:11:53Z sunpoet $
 
 PORTNAME=	openssl
 PORTVERSION=	2.0.7
@@ -13,6 +13,9 @@ LICENSE=	BSD2CLAUSE RUBY
 LICENSE_COMB=	dual
 LICENSE_FILE_BSD2CLAUSE=${WRKSRC}/BSDL
 LICENSE_FILE_RUBY=	${WRKSRC}/LICENSE.txt
+
+DEPRECATED=	Use security/rubygem-openssl instead
+EXPIRATION_DATE=2018-01-31
 
 PORTSCOUT=	limit:^2\.0\.
 

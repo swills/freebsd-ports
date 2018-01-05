@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/kudu/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/kudu/Makefile 457920 2018-01-02 20:06:38Z amdmi3 $
 
 PORTNAME=	kudu
 PORTVERSION=	0.1.2
@@ -14,12 +14,11 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libgtkglext-x11-1.0.so:x11-toolkits/gtkglext
 
-USES=		tar:bzip2 pkgconfig python
+USES=		localbase tar:bzip2 pkgconfig python:2.7
 GNU_CONFIGURE=	yes
 USE_GL=		gl
 
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib -lcompat -lm
+LIBS+=		-lcompat -lm
 
 PLIST_FILES=	bin/${PORTNAME}
 PORTDATA=	*

@@ -1,5 +1,5 @@
 # Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/graphics/code-eli/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/graphics/code-eli/Makefile 457914 2018-01-02 16:49:24Z tcberner $
 
 PORTNAME=	code-eli
 PORTVERSION=	0.3.6
@@ -14,13 +14,11 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 BROKEN=		Needs work to use math/eigen3 currently in ports
 
-BUILD_DEPENDS=	eigen>3:math/eigen3
-
 USE_GITHUB=	yes
 GH_PROJECT=	Code-Eli
 GH_ACCOUNT=	ddmarshall
 
-USES=		cmake:outsource compiler:c++11-lib
+USES=		cmake:outsource compiler:c++11-lib eigen:3
 PORTEXAMPLES=	AirfoilFitExample VSPPodExample test
 ALL_TARGET=	all
 

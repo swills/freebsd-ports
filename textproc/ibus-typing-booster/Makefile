@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/textproc/ibus-typing-booster/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/ibus-typing-booster/Makefile 457964 2018-01-03 13:22:31Z mat $
 
 PORTNAME=	ibus-typing-booster
 PORTVERSION=	1.5.34
@@ -12,14 +12,12 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/xdg/Menu.py:devel/py-xdg@${PY_FLAVOR}		\
-		${PYTHON_SITELIBDIR}/gi/_gi.so:devel/py-gobject3@${PY_FLAVOR}	\
 		${PYTHON_LIBDIR}/lib-dynload/_sqlite3.so:databases/py-sqlite3@${PY_FLAVOR}
 LIB_DEPENDS=	libibus-1.0.so:textproc/ibus	\
 		libm17n.so:devel/m17n-lib
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/xdg/Menu.py:devel/py-xdg@${PY_FLAVOR}		\
 		${PYTHON_SITELIBDIR}/dbus/bus.py:devel/py-dbus@${PY_FLAVOR}		\
 		${PYTHON_SITELIBDIR}/hunspell.so:textproc/py-hunspell@${PY_FLAVOR}	\
-		${PYTHON_SITELIBDIR}/gi/_gi.so:devel/py-gobject3@${PY_FLAVOR}	\
 		${LOCALBASE}/share/unicode/ucd/Index.txt:textproc/UCD	\
 		${LOCALBASE}/share/unicode/cldr/readme.html:textproc/CLDR\
 		${PYTHON_LIBDIR}/lib-dynload/_sqlite3.so:databases/py-sqlite3@${PY_FLAVOR}
@@ -30,7 +28,8 @@ TEST_DEPENDS=	${LOCALBASE}/share/hunspell/de_DE.dic:german/hunspell	\
 USE_GITHUB=	yes
 GH_ACCOUNT=	mike-fabian
 
-USES=		autoreconf gettext gmake iconv pathfix pkgconfig python:3.3+
+USES=		autoreconf gettext gmake gnome iconv pathfix pkgconfig python:3.3+
+USE_GNOME=	pygobject3
 GNU_CONFIGURE=	yes
 NO_ARCH=	yes
 TEST_TARGET=	check

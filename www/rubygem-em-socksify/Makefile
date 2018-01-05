@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-em-socksify/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/www/rubygem-em-socksify/Makefile 457989 2018-01-03 16:46:45Z sunpoet $
 
 PORTNAME=	em-socksify
-PORTVERSION=	0.3.1
+PORTVERSION=	0.3.2
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

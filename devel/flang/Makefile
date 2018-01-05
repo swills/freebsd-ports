@@ -1,9 +1,9 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/devel/flang/Makefile 456079 2017-12-12 02:43:49Z jmd $
+# $FreeBSD: head/devel/flang/Makefile 457940 2018-01-03 02:14:34Z jmd $
 
 PORTNAME=	flang
-DISTVERSION=	5.0-20171019
-PORTREVISION=	2
+DISTVERSION=	5.0-20171225
+PORTREVISION=	0
 CATEGORIES=	devel
 
 MAINTAINER=	jmd@FreeBSD.org
@@ -31,7 +31,7 @@ USES+=		${_USES_PYTHON}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	flang-compiler
-GH_TAGNAME=	e68c31f
+GH_TAGNAME=	64189a1
 
 CMAKE_ARGS+=	-DLLVM_CONFIG=${LOCALBASE}/bin/llvm-config50 \
 		-DCMAKE_CXX_COMPILER=${LOCALBASE}flang/bin/clang++ \

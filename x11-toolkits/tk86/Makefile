@@ -1,8 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/tk86/Makefile 448344 2017-08-19 17:15:40Z gahr $
+# $FreeBSD: head/x11-toolkits/tk86/Makefile 458018 2018-01-04 08:54:45Z gahr $
 
 PORTNAME=	tk
-PORTVERSION=	8.6.7
+PORTVERSION=	8.6.8
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	SF/tcl/Tcl/${PORTVERSION} TCLTK/tcl8_6
 PKGNAMESUFFIX=	${PORTVERSION:R:S/.//}
@@ -64,6 +65,8 @@ post-patch:
 	     s|@TK_BUILD_STUB_LIB_PATH@|@TK_STUB_LIB_PATH@|; \
 	     s|@TK_SRC_DIR@|${PREFIX}/include/tk${TK_VER}|' \
 	     ${WRKSRC}/tkConfig.sh.in
+	${REINPLACE_CMD} -e '/^Requires/s|tcl|tcl${SHORT_TK_VER}|' \
+	    ${WRKSRC}/tk.pc.in
 
 regression-test:	build
 	cd ${WRKSRC}; ${MAKE} test

@@ -1,5 +1,5 @@
 # Created by: FreeBSD GNOME Team <gnome@freebsd.org>
-# $FreeBSD: head/games/gnome-sudoku/Makefile 441065 2017-05-17 08:44:31Z kwm $
+# $FreeBSD: head/games/gnome-sudoku/Makefile 457964 2018-01-03 13:22:31Z mat $
 
 PORTNAME=	gnome-sudoku
 PORTVERSION=	3.24.0
@@ -24,7 +24,7 @@ PORTSCOUT=	limitw:1,even
 
 USES=		gettext gmake gnome localbase pathfix \
 		pkgconfig python:3.3+ shebangfix tar:xz
-USE_GNOME=	cairo gtk30 intlhack libxml2:build py3gobject3
+USE_GNOME=	cairo gtk30 intlhack libxml2:build pygobject3
 INSTALLS_ICONS=	yes
 GNU_CONFIGURE=	yes
 

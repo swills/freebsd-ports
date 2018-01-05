@@ -1,9 +1,9 @@
 # Created by: Tom Judge <tom@tomjudge.com>
-# $FreeBSD: head/security/razorback-clamavNugget/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/razorback-clamavNugget/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
 
 PORTNAME=	clamavNugget
 PORTVERSION=	0.5.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	security
 MASTER_SITES=	SF/razorbacktm/Nuggets
 PKGNAMEPREFIX=	razorback-

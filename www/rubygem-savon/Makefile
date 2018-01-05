@@ -1,8 +1,8 @@
 # Created by: Joseph Benden <joe@thrallingpenguin.com>
-# $FreeBSD: head/www/rubygem-savon/Makefile 446803 2017-07-28 02:41:42Z sunpoet $
+# $FreeBSD: head/www/rubygem-savon/Makefile 457908 2018-01-02 16:12:15Z swills $
 
 PORTNAME=	savon
-PORTVERSION=	2.11.1
+PORTVERSION=	2.11.2
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

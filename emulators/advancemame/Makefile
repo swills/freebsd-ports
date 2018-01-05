@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/emulators/advancemame/Makefile 427432 2016-11-30 16:01:30Z linimon $
+# $FreeBSD: head/emulators/advancemame/Makefile 458101 2018-01-05 02:57:35Z jbeich $
 
 PORTNAME=	advancemame
 PORTVERSION=	1.4
@@ -27,8 +27,6 @@ DOCSDIR=	${PREFIX}/share/doc/advance
 DATADIR=	${PREFIX}/share/advance
 
 PORTDOCS=	*
-
-BROKEN_aarch64=		Fails to compile: error in backend: Do not know how to split this operator's operand!
 
 OPTIONS_DEFINE=		DOCS FREETYPE SLANG
 OPTIONS_DEFINE_i386=	ASM

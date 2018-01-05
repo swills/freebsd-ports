@@ -5,6 +5,14 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20180102:
+  AFFECTS: users of devel/awscli
+  AUTHOR: bhughes@FreeBSD.org
+
+  The package name for devel/awscli has changed (back) to just awscli.
+  The introduction of flavors erroneously caused the awscli package to
+  be renamed to py27-awscli.
+
 20171230:
   AFFECTS: users of net-im/ejabberd
   AUTHOR: ashish@FreeBSD.org
@@ -15333,4 +15341,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: head/UPDATING 457588 2017-12-30 06:58:29Z ashish $
+$FreeBSD: head/UPDATING 457853 2018-01-02 13:52:49Z bhughes $

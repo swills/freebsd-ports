@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/misc/talkfilters/Makefile 434754 2017-02-24 21:55:52Z linimon $
+# $FreeBSD: head/misc/talkfilters/Makefile 458101 2018-01-05 02:57:35Z jbeich $
 
 PORTNAME=	talkfilters
 PORTVERSION=	2.3.8
@@ -18,8 +18,6 @@ CONFLICTS=	jive* chef* filters-*
 USES=		libtool pathfix
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
-
-BROKEN_aarch64=	fails to install: error in backend: fixup value out of range
 
 SUB_FILES=	pkg-message
 

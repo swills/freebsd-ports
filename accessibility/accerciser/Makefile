@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/accessibility/accerciser/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/accessibility/accerciser/Makefile 457964 2018-01-03 13:22:31Z mat $
 #   $MCom: ports/trunk/accessibility/accerciser/Makefile 19980 2014-10-17 06:01:57Z gusi $
 
 PORTNAME=	accerciser
@@ -20,7 +20,7 @@ RUN_DEPENDS=	gsettings-desktop-schemas>=3.2.0:devel/gsettings-desktop-schemas \
 
 NO_ARCH=	yes
 USES=		gettext gmake pkgconfig python:3.4+ shebangfix tar:xz
-USE_GNOME=	gtk30 intlhack py3gobject3
+USE_GNOME=	gtk30 intlhack pygobject3
 INSTALLS_ICONS=	yes
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include

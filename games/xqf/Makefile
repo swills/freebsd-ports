@@ -1,5 +1,5 @@
 # Created by: steve farrell
-# $FreeBSD: head/games/xqf/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/games/xqf/Makefile 458107 2018-01-05 03:32:57Z jbeich $
 
 PORTNAME=	xqf
 PORTVERSION=	1.0.5
@@ -34,8 +34,6 @@ GEOIP_CONFIGURE_ENABLE=	geoip
 GEOIP_LIB_DEPENDS=	libGeoIP.so:net/GeoIP
 
 BZIP2_CONFIGURE_ENABLE=	bzip2
-
-BROKEN_aarch64=		Fails to linkld: final link failed: Bad value
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

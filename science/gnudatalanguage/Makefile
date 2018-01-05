@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/science/gnudatalanguage/Makefile 455913 2017-12-10 20:48:45Z antoine $
+# $FreeBSD: head/science/gnudatalanguage/Makefile 457914 2018-01-02 16:49:24Z tcberner $
 
 PORTNAME=	gnudatalanguage
 DISTVERSION=	0.9.7
@@ -54,7 +54,7 @@ OPTIONS_DEFINE=	EIGEN EXAMPLES FFTW GRAPHICSMAGICK GRIB HDF5 LIBPROJ4 MPICH2 NET
 OPTIONS_DEFAULT=EIGEN FFTW GRAPHICSMAGICK GRIB HDF5 LIBPROJ4 NETCDF PYTHON UDUNITS
 
 EIGEN_DESC=	Eigen3 support (boost performance)
-EIGEN_BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/eigen3.pc:math/eigen3
+EIGEN_USES=		eigen:3
 EIGEN_CMAKE_ON=		-DEIGEN3:BOOL=YES
 EIGEN_CMAKE_OFF=	-DEIGEN3:BOOL=NO
 

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@FreeBSD.org>
-# $FreeBSD: head/math/libmesh/Makefile 456854 2017-12-20 20:36:19Z yuri $
+# $FreeBSD: head/math/libmesh/Makefile 457914 2018-01-02 16:49:24Z tcberner $
 
 PORTNAME=	libmesh
 DISTVERSIONPREFIX=	v
@@ -12,10 +12,9 @@ COMMENT=	Numerical simulation of partial differential equations
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	eigen>0:math/eigen3
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs
 
-USES=		autoreconf gmake libtool
+USES=		autoreconf eigen:3 gmake libtool
 GNU_CONFIGURE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	libMesh

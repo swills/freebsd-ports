@@ -1,8 +1,9 @@
-# $FreeBSD: head/net-mgmt/ccnet-client/Makefile 448017 2017-08-15 23:43:24Z ultima $
+# $FreeBSD: head/net-mgmt/ccnet-client/Makefile 458112 2018-01-05 03:56:32Z ultima $
 
 PORTNAME=	ccnet-client
 DISTVERSIONPREFIX=	v
 DISTVERSION=	${SEAFILE_CLIENT_VER}
+PORTREVISION=	1
 CATEGORIES=	net-mgmt devel
 
 MAINTAINER=	ultima@FreeBSD.org
@@ -14,7 +15,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 BUILD_DEPENDS=	valac:lang/vala
 LIB_DEPENDS=	libsearpc.so:devel/libsearpc \
 		libsqlite3.so:databases/sqlite3 \
-		libzdb.so:databases/libzdb \
 		libuuid.so:misc/e2fsprogs-libuuid \
 		libevent.so:devel/libevent \
 		libjansson.so:devel/jansson

@@ -1,8 +1,8 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/www/py-django-mptt/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django-mptt/Makefile 457927 2018-01-02 21:06:03Z cs $
 
 PORTNAME=	django-mptt
-PORTVERSION=	0.8.7
+PORTVERSION=	0.9.0
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18@${FLAVOR} # >= 1.8
 
-CONFLICTS_INSTALL= py*-django-happenings
+CONFLICTS_INSTALL=py*-django-happenings
 
 USE_GITHUB=	yes
 
