@@ -185,7 +185,7 @@ RUN_DEPENDS=	git>=2.14.1:devel/git \
 	rubygem-vmstat>=2.3.0:sysutils/rubygem-vmstat \
 	rubygem-sys-filesystem>=1.1.6:sysutils/rubygem-sys-filesystem \
 	rubygem-net-ssh>=4.1.0:security/rubygem-net-ssh \
-	rubygem-rbnacl4>=4.0:security/rubygem-rbnacl4 \
+	rubygem-rbnacl4<=4.0.2:security/rubygem-rbnacl4 \
 	rubygem-rbnacl-libsodium>=0:security/rubygem-rbnacl-libsodium \
 	rubygem-bcrypt_pbkdf>=1.0:security/rubygem-bcrypt_pbkdf \
 	rubygem-gitaly-proto>=0.39.0:net/rubygem-gitaly-proto \
