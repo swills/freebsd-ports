@@ -1,9 +1,9 @@
 # Created by: Alex Samorukov <samm@os2.kiev.ua>
-# $FreeBSD: head/sysutils/exfat-utils/Makefile 418728 2016-07-18 18:29:59Z jbeich $
+# $FreeBSD: head/sysutils/exfat-utils/Makefile 458135 2018-01-05 12:27:33Z riggs $
 
 PORTNAME=	exfat
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.2.4
+DISTVERSION=	1.2.7
 CATEGORIES=	sysutils
 PKGNAMESUFFIX=	-utils
 

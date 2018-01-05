@@ -1,5 +1,5 @@
 # Created by: Vladimir Kondratiev <wulf@mail.mipt.ru>
-# $FreeBSD: head/multimedia/smpeg2/Makefile 423272 2016-10-04 15:40:33Z jbeich $
+# $FreeBSD: head/multimedia/smpeg2/Makefile 458131 2018-01-05 11:57:37Z jbeich $
 
 PORTNAME=	smpeg2
 PORTVERSION=	2.0.0
@@ -16,7 +16,8 @@ LICENSE_COMB=	multi
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
-USES=		libtool
+CFLAGS+=	${COMPILER_FEATURES:Mc++11:C/.+/-Wno-error=narrowing/}
+USES=		compiler:features libtool
 USE_SDL=	sdl2
 USE_LDCONFIG=	yes
 

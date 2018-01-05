@@ -1,8 +1,8 @@
 # Created by: Jui-Nan Lin <jnlin@freebsd.cs.nctu.edu.tw>
-# $FreeBSD: head/net/pecl-amqp/Makefile 441497 2017-05-23 00:45:36Z dbaio $
+# $FreeBSD: head/net/pecl-amqp/Makefile 458149 2018-01-05 15:37:57Z pizzamig $
 
 PORTNAME=	amqp
-PORTVERSION=	1.9.0
+PORTVERSION=	1.9.3
 CATEGORIES=	net pear
 
 MAINTAINER=	jnlin@freebsd.cs.nctu.edu.tw

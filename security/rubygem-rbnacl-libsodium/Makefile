@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-rbnacl-libsodium/Makefile 455591 2017-12-05 16:44:09Z tz $
+# $FreeBSD: head/security/rubygem-rbnacl-libsodium/Makefile 458141 2018-01-05 13:32:48Z swills $
 
 PORTNAME=	rbnacl-libsodium
 PORTVERSION=	1.0.16

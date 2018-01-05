@@ -1,11 +1,11 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/oniguruma/Makefile 454041 2017-11-12 13:59:15Z riggs $
+# $FreeBSD: head/devel/oniguruma/Makefile 458138 2018-01-05 13:12:18Z riggs $
 
 PORTNAME=	oniguruma
 PORTVERSION=	6.6.1
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	devel textproc
-PKGNAMESUFFIX=	6
 
 MAINTAINER=	rob@theseusnetworking.com
 COMMENT=	BSDL Regular Expressions library compatible with POSIX/GNU/Perl

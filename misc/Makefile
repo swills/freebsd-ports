@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 457921 2018-01-02 20:21:34Z rakuco $
+# $FreeBSD: head/misc/Makefile 458123 2018-01-05 09:26:49Z ygy $
 #
 
     COMMENT = Miscellaneous utilities
@@ -465,6 +465,7 @@
     SUBDIR += tempcontrol
     SUBDIR += termatrix
     SUBDIR += teseq
+    SUBDIR += thefuck
     SUBDIR += timediff
     SUBDIR += tkcron
     SUBDIR += tkinfo
