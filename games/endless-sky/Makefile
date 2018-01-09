@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/endless-sky/Makefile 456105 2017-12-12 04:35:49Z jbeich $
+# $FreeBSD: head/games/endless-sky/Makefile 458388 2018-01-07 22:34:17Z krion $
 
 PORTNAME=	endless-sky
 PORTVERSION=	0.9.8
@@ -22,6 +22,7 @@ USE_GITHUB=	yes
 USES=		compiler:c++11-lib jpeg localbase:ldflags openal scons
 USE_SDL=	sdl2
 USE_GL=		gl glew
+LLD_UNSAFE=	yes
 INSTALLS_ICONS=	yes
 
 PORTDATA=	*

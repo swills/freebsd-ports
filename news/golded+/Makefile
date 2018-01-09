@@ -1,5 +1,5 @@
 # Created by: Max Khon
-# $FreeBSD: head/news/golded+/Makefile 423285 2016-10-04 17:32:58Z fjoe $
+# $FreeBSD: head/news/golded+/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	golded+
 PORTVERSION=	1.1.5.a${SNAPDATE}
@@ -17,7 +17,6 @@ USES=		gmake ncurses
 
 WRKSRC=		${WRKDIR}/golded-plus/${PORTNAME}
 
-MAN1=		golded.1 goldnode.1 rddt.1
 DOCS=		copying copying.lib license.txt notework.txt rusfaq.txt\
 		tips.txt notework.rus
 PORTDOCS=	${DOCS} gold_ref.txt gold_usr.txt

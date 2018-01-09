@@ -1,10 +1,10 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab/Makefile 458142 2018-01-05 14:03:18Z swills $
+# $FreeBSD: head/www/gitlab/Makefile 458333 2018-01-07 12:13:37Z sunpoet $
 
 PORTNAME=	gitlab
 PORTVERSION=	10.1.5
 DISTVERSIONPREFIX=	v
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	www devel
 
 MAINTAINER=	idefix@fechner.net

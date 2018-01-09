@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 458121 2018-01-05 06:54:27Z antoine $
+# $FreeBSD: head/devel/Makefile 458432 2018-01-08 16:02:38Z swills $
 #
 
     COMMENT = Development utilities
@@ -2978,7 +2978,6 @@
     SUBDIR += p5-MooseX-Role-Matcher
     SUBDIR += p5-MooseX-Role-Parameterized
     SUBDIR += p5-MooseX-Role-Strict
-    SUBDIR += p5-MooseX-Role-WithOverloading
     SUBDIR += p5-MooseX-Runnable
     SUBDIR += p5-MooseX-SemiAffordanceAccessor
     SUBDIR += p5-MooseX-SetOnce
@@ -3428,7 +3427,6 @@
     SUBDIR += p5-Test-Benchmark
     SUBDIR += p5-Test-BinaryData
     SUBDIR += p5-Test-Bits
-    SUBDIR += p5-Test-Block
     SUBDIR += p5-Test-CPAN-Meta
     SUBDIR += p5-Test-CPAN-Meta-YAML
     SUBDIR += p5-Test-CheckDeps
@@ -5726,6 +5724,7 @@
     SUBDIR += rubygem-sdoc
     SUBDIR += rubygem-semantic_puppet
     SUBDIR += rubygem-semi_semantic
+    SUBDIR += rubygem-semver2
     SUBDIR += rubygem-sentry-raven
     SUBDIR += rubygem-sequel
     SUBDIR += rubygem-settingslogic

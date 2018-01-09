@@ -1,5 +1,5 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/databases/postgres-xl/Makefile 448064 2017-08-16 20:00:46Z pi $
+# $FreeBSD: head/databases/postgres-xl/Makefile 458377 2018-01-07 19:43:13Z krion $
 
 PORTNAME=	postgres-xl
 DISTVERSION=	9.5r1.5
@@ -20,6 +20,7 @@ CONFLICTS=	postgresql[^${PORTVERSION:R:R}]?-client* \
 
 USES=		gmake readline
 USE_LDCONFIG=	yes
+LLD_UNSAFE=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-world
 

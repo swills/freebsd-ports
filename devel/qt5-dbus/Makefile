@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt5-dbus/Makefile 429488 2016-12-26 10:00:10Z rakuco $
+# $FreeBSD: head/devel/qt5-dbus/Makefile 458293 2018-01-06 21:30:31Z rakuco $
 
 PORTNAME=	dbus
 DISTVERSION=	${QT5_VERSION}
@@ -23,6 +23,12 @@ TOOLS=		qdbuscpp2xml qdbusxml2cpp
 
 QT_DEFINES=	DBUS
 QT_CONFIG=	dbus
+
+post-configure:
+.for d in src/dbus src/tools/qdbuscpp2xml src/tools/qdbusxml2cpp
+	${MKDIR} ${WRKSRC}/${d}
+	cd ${WRKSRC}/${d} && ${SETENV} ${QMAKE_ENV} ${_QMAKE} ${QMAKE_ARGS} ${WRKSRC}/${d}
+.endfor
 
 post-build:
 .for t in ${TOOLS}

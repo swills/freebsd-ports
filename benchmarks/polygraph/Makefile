@@ -1,9 +1,8 @@
 # Created by: Dima Sivachenko <dima@chg.ru>
-# $FreeBSD: head/benchmarks/polygraph/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/benchmarks/polygraph/Makefile 458244 2018-01-06 13:29:29Z wen $
 
 PORTNAME=	polygraph
-PORTVERSION=	4.9.0
-PORTREVISION=	4
+PORTVERSION=	4.11.0
 DISTVERSIONSUFFIX=	-src
 CATEGORIES=	benchmarks www
 MASTER_SITES=	http://www.web-polygraph.org/downloads/srcs/

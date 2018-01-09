@@ -1,5 +1,5 @@
 # Created by: Jing-Tang Keith Jang <keith@FreeBSD.org>
-# $FreeBSD: head/chinese/libtabe/Makefile 454590 2017-11-21 08:36:26Z mat $
+# $FreeBSD: head/chinese/libtabe/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	libtabe
 PORTVERSION=	0.2.6
@@ -34,17 +34,6 @@ X11_USE=		XORG=x11
 X11_CONFIGURE_WITH=	x
 
 .include <bsd.port.options.mk>
-
-pre-everything::
-.if defined(WITH_BDB_VER)
-pre-everything::
-	@${ECHO_CMD} ""
-	@${ECHO_CMD} "WARNING:"
-	@${ECHO_CMD} "	You have defined WITH_BDB_VER. Make sure you use the same"
-	@${ECHO_CMD} "	db version for all ports that use libtabe, such as xcin."
-	@${ECHO_CMD} "	Otherwise, ports that use libtabe may not work correctly."
-	@${ECHO_CMD} ""
-.endif
 
 post-patch-X11-off:
 	${REINPLACE_CMD} -e '/all:/s/ bims//; /bims/d' \

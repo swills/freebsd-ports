@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-fog-core/Makefile 447154 2017-08-02 18:35:49Z sunpoet $
+# $FreeBSD: head/devel/rubygem-fog-core/Makefile 458250 2018-01-06 13:50:16Z sunpoet $
 
 PORTNAME=	fog-core
-PORTVERSION=	1.45.0
+PORTVERSION=	2.0.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -14,7 +14,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 RUN_DEPENDS=	rubygem-builder>=0:devel/rubygem-builder \
 		rubygem-excon>=0.58:devel/rubygem-excon \
-		rubygem-formatador>=0.2:devel/rubygem-formatador
+		rubygem-formatador>=0.2:devel/rubygem-formatador \
+		rubygem-mime-types>=0:misc/rubygem-mime-types
 
 NO_ARCH=	yes
 USE_RUBY=	yes

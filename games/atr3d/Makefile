@@ -1,5 +1,5 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/games/atr3d/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/atr3d/Makefile 458385 2018-01-07 21:27:59Z krion $
 
 PORTNAME=	atr3d
 PORTVERSION=	0.6
@@ -24,6 +24,7 @@ GNU_CONFIGURE=	yes
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+LLD_UNSAFE=	yes
 
 OPTIONS_DEFINE=	OPENAL
 OPTIONS_DEFAULT=OPENAL

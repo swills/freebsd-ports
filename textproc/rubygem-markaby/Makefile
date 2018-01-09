@@ -1,8 +1,8 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-markaby/Makefile 450341 2017-09-22 09:14:18Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-markaby/Makefile 458448 2018-01-08 16:52:25Z sunpoet $
 
 PORTNAME=	markaby
-PORTVERSION=	0.8.1
+PORTVERSION=	0.9.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

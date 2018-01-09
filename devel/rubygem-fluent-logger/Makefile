@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-fluent-logger/Makefile 438861 2017-04-19 14:39:57Z sunpoet $
+# $FreeBSD: head/devel/rubygem-fluent-logger/Makefile 458194 2018-01-06 04:33:10Z sunpoet $
 
 PORTNAME=	fluent-logger
-PORTVERSION=	0.7.1
+PORTVERSION=	0.7.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/minetest/Makefile 442786 2017-06-06 17:15:44Z amdmi3 $
+# $FreeBSD: head/games/minetest/Makefile 458402 2018-01-08 10:38:20Z krion $
 
 PORTNAME=	minetest
 PORTVERSION=	0.4.16
@@ -18,6 +18,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	minetest
 
 USES=		cmake iconv:wchar_t
+LLD_UNSAFE=	yes
 CMAKE_ARGS=	-DCUSTOM_MANDIR="${PREFIX}/man" \
 		-DCUSTOM_EXAMPLE_CONF_DIR="${PREFIX}/etc"
 

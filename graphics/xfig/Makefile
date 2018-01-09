@@ -1,5 +1,5 @@
 # Created by: roberto
-# $FreeBSD: head/graphics/xfig/Makefile 425174 2016-11-02 22:45:14Z mat $
+# $FreeBSD: head/graphics/xfig/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	xfig
 PORTVERSION=	3.2.5c
@@ -44,7 +44,7 @@ INSTALL_TARGET+=	install.html
 .if ! ${PORT_OPTIONS:MI18N} || ! ${PORT_OPTIONS:MDOCS}
 PLIST_SUB+=	JPORTDOCS="@comment "
 .else
-PLIST_SUB=	JPORTDOCS=""
+PLIST_SUB+=	JPORTDOCS=""
 .endif
 
 .if ${PORT_OPTIONS:MI18N}

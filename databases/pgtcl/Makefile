@@ -1,9 +1,8 @@
 # Created by: Mikhail Teterin
-# $FreeBSD: head/databases/pgtcl/Makefile 413730 2016-04-21 12:45:16Z gahr $
+# $FreeBSD: head/databases/pgtcl/Makefile 458313 2018-01-07 11:33:58Z krion $
 
 PORTNAME=	pgtcl
-PORTVERSION=	2.0.0
-PORTREVISION=	1
+PORTVERSION=	2.1.1
 CATEGORIES=	databases tcl
 MASTER_SITES=	SF/pgtclng/pgtclng/${PORTVERSION}
 DISTNAME=	${PORTNAME}${PORTVERSION}
@@ -28,7 +27,7 @@ USES+=		tcl:tea
 LIBDIR=		${PREFIX}/lib/${PORTNAME}
 USE_LDCONFIG=	${LIBDIR}
 PLIST_SUB+=	PORTVERSION=${PORTVERSION}
-MANUALREL=	20110918
+MANUALREL=	20171113
 
 .include <bsd.port.options.mk>
 

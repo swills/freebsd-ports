@@ -1,5 +1,5 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/emulators/fs-uae/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/emulators/fs-uae/Makefile 458378 2018-01-07 19:49:15Z krion $
 
 PORTNAME=	fs-uae
 PORTVERSION=	2.4.1
@@ -20,6 +20,7 @@ USES=		gettext gmake pkgconfig
 USE_SDL=	sdl
 USE_GL=		gl
 USE_GNOME=	glib20
+LLD_UNSAFE=	yes
 INSTALLS_ICONS=	yes
 MAKE_ARGS+=	prefix=${PREFIX}
 

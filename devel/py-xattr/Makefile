@@ -1,8 +1,9 @@
 # Created by: bland@FreeBSD.org
-# $FreeBSD: head/devel/py-xattr/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-xattr/Makefile 458167 2018-01-05 20:02:03Z yuri $
 
 PORTNAME=	xattr
 PORTVERSION=	0.9.2
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,5 +19,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>=1.0.0:devel/py-cffi@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/xattr/_lib*.so
 
 .include <bsd.port.mk>

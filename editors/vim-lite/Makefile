@@ -1,11 +1,11 @@
 # Created by: David O'Brien (obrien@NUXI.com)
-# $FreeBSD: head/editors/vim-lite/Makefile 452015 2017-10-13 16:14:28Z adamw $
+# $FreeBSD: head/editors/vim-lite/Makefile 458471 2018-01-08 19:44:13Z adamw $
 
 PKGNAMESUFFIX=	-lite
 
 COMMENT=	Improved version of the vi editor (lite package)
 
-CONFLICTS_INSTALL=	vim-[0-9]*
+CONFLICTS_INSTALL=	vim vim-tiny
 
 LITE=		yes
 MASTERDIR=	${.CURDIR}/../vim

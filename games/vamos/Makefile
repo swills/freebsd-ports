@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/games/vamos/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/games/vamos/Makefile 458408 2018-01-08 13:21:10Z krion $
 
 PORTNAME=	vamos
 PORTVERSION=	0.7.1
@@ -27,6 +27,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	ac_cv_lib_freeglut_glutGetModifiers=no \
 		--disable-unit-tests
 USE_LDCONFIG=	yes
+LLD_UNSAFE=	yes
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-lpthread -L${LOCALBASE}/lib

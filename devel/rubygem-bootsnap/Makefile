@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-bootsnap/Makefile 457407 2017-12-27 19:53:02Z sunpoet $
+# $FreeBSD: head/devel/rubygem-bootsnap/Makefile 458269 2018-01-06 13:51:55Z sunpoet $
 
 PORTNAME=	bootsnap
-PORTVERSION=	1.1.7
+PORTVERSION=	1.1.8
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

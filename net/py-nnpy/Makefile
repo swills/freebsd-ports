@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/py-nnpy/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-nnpy/Makefile 458167 2018-01-05 20:02:03Z yuri $
 
 PORTNAME=	nnpy
 PORTVERSION=	1.3
+PORTREVISION=	1
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,5 +18,8 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		python
 USE_PYTHON=	autoplist distutils
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/_nnpy*.so
 
 .include <bsd.port.mk>

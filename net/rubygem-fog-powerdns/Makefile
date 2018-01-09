@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-powerdns/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/net/rubygem-fog-powerdns/Makefile 458264 2018-01-06 13:51:29Z sunpoet $
 
 PORTNAME=	fog-powerdns
 PORTVERSION=	0.1.1
+PORTREVISION=	1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

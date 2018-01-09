@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/freeminer/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/freeminer/Makefile 458388 2018-01-07 22:34:17Z krion $
 
 PORTNAME=	freeminer
 PORTVERSION=	0.4.10.4
@@ -18,6 +18,7 @@ LIB_DEPENDS=	libsqlite3.so:databases/sqlite3
 USE_GITHUB=	yes
 
 USES=		compiler:c++11-lib cmake
+LLD_UNSAFE=	yes
 CMAKE_ARGS=	-DCUSTOM_MANDIR="${PREFIX}/man" \
 		-DCUSTOM_EXAMPLE_CONF_DIR="${PREFIX}/etc" \
 		-DRUN_IN_PLACE=0

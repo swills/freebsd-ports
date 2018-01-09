@@ -1,8 +1,9 @@
-# $FreeBSD: head/finance/gnucash/Makefile 456617 2017-12-18 11:21:40Z madpilot $
+# $FreeBSD: head/finance/gnucash/Makefile 458427 2018-01-08 15:20:57Z cpm $
 #   $MCom: ports/finance/gnucash/Makefile,v 1.26 2008/12/31 03:25:18 mezz Exp $
 
 PORTNAME=	gnucash
 PORTVERSION=	2.6.19
+PORTREVISION=	1
 CATEGORIES=	finance gnome
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20%28stable%29/${PORTVERSION}
 
@@ -100,7 +101,7 @@ GLIB_SCHEMAS=	org.gnucash.dialogs.business.gschema.xml \
 .if ${FLAVOR:U} == guile1
 CONFIGURE_ARGS+=	--with-guile=1.8
 PLIST_SUB+=		GUILE2="@comment "
-.elif ${FLAVOR:U} == guile2
+.elif ${FLAVOR:U${FLAVORS:[1]}} == guile2
 CONFIGURE_ARGS+=	--with-guile=2.0
 PLIST_SUB+=		GUILE2=""
 .endif

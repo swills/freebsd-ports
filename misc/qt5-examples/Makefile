@@ -1,5 +1,5 @@
 # Created by: Marie Loise Nolden <nolden@kde.org>
-# $FreeBSD: head/misc/qt5-examples/Makefile 434380 2017-02-18 19:48:05Z tcberner $
+# $FreeBSD: head/misc/qt5-examples/Makefile 458293 2018-01-06 21:30:31Z rakuco $
 
 PORTNAME=	examples
 DISTVERSION=	${QT5_VERSION}
@@ -19,7 +19,7 @@ USES=		tar:xz
 USE_QT5=	#
 
 DESCR=		${.CURDIR:H:H}/devel/qt5/pkg-descr
-DISTINFO_FILE=	${.CURDIR:H:H}/misc/qt5-doc/distinfo
+DISTINFO_FILE=	${.CURDIR}/distinfo
 
 EXAMPLESDIR=	${PREFIX}/share/examples/qt5
 # The destination location depends on the values given in

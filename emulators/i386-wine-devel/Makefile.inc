@@ -1,8 +1,8 @@
 # Created by: David Naylor <dbn@FreeBSD.org>
-# $FreeBSD: head/emulators/i386-wine-devel/Makefile.inc 455891 2017-12-10 12:28:08Z dbn $
+# $FreeBSD: head/emulators/i386-wine-devel/Makefile.inc 458214 2018-01-06 05:31:43Z dbn $
 
 PORTNAME=	wine
-PORTVERSION=	2.21
+PORTVERSION=	3.0.r4
 PORTEPOCH=	1
 CATEGORIES=	emulators
 MASTER_SITES=	LOCAL/dbn/repos/wine/${DIST_SUBDIR}/
@@ -89,7 +89,7 @@ ${PLIST}: fetch
 port-update:
 	${RM} ${SLAVEDIR}/distinfo ${SLAVEDIR}/distinfo~ ${SLAVEDIR}/pkg-plist.*
 .for osrel in 10 11 12
-.for suffix in -devel -staging
+.for suffix in -devel
 	${MAKE} fetch OSREL=${osrel} OSVERSION=${osrel}99999 _OSRELEASE=${osrel} PKGNAMESUFFIX=${suffix}
 	${MAKE} makesum OSREL=${osrel} OSVERSION=${osrel}99999 _OSRELEASE=${osrel} PKGNAMESUFFIX=${suffix}
 	${CAT} ${SLAVEDIR}/distinfo >> ${SLAVEDIR}/distinfo~

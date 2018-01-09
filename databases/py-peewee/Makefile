@@ -1,5 +1,5 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/databases/py-peewee/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/py-peewee/Makefile 458431 2018-01-08 15:47:40Z mat $
 
 PORTNAME=	peewee
 PORTVERSION=	2.9.2
@@ -17,11 +17,12 @@ OPTIONS_DEFINE=		DOCS SQLITE MYSQL PGSQL
 OPTIONS_DEFAULT=	SQLITE
 
 NO_ARCH=	yes
-USES=		python
+USES=		python${PY_MYSQL}
 USE_PYTHON=	autoplist distutils
 
 SQLITE_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR}
 MYSQL_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=1.2.3:databases/py-MySQLdb@${FLAVOR}
+MYSQL_VARS=	PY_MYSQL=:2.7
 PGSQL_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>=2.5.1:databases/py-psycopg2@${FLAVOR}
 
 .include <bsd.port.mk>

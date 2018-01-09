@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/qt5-imageformats/Makefile 439814 2017-04-30 12:50:54Z sunpoet $
+# $FreeBSD: head/graphics/qt5-imageformats/Makefile 458312 2018-01-07 10:08:50Z tcberner $
 
 PORTNAME=	imageformats
 DISTVERSION=	${QT5_VERSION}
@@ -16,6 +16,6 @@ LIB_DEPENDS=	libjasper.so:graphics/jasper \
 
 USE_QT5=	core gui buildtools_build
 QT_DIST=	${PORTNAME}
-USES=		qmake
+USES=		localbase qmake
 
 .include <bsd.port.mk>

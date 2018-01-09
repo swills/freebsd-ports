@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz
-# $FreeBSD: head/net-mgmt/jnettop/Makefile 447034 2017-08-01 17:07:58Z zi $
+# $FreeBSD: head/net-mgmt/jnettop/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	jnettop
 PORTVERSION=	0.13.0
@@ -10,8 +10,6 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/0.13 \
 
 MAINTAINER=	zi@FreeBSD.org
 COMMENT=	Traffic visualizer, similar to nettop
-
-MAN8=		jnettop.8
 
 GNU_CONFIGURE=	yes
 USES=		pkgconfig gmake

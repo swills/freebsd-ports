@@ -1,8 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/emulators/wine-devel/Makefile 457668 2017-12-31 06:11:40Z gerald $
+# $FreeBSD: head/emulators/wine-devel/Makefile 458393 2018-01-08 00:13:21Z gerald $
 
 PORTNAME=	wine
-DISTVERSION=	3.0-rc4
+DISTVERSION=	3.0-rc5
 PORTEPOCH=	1
 CATEGORIES=	emulators
 MASTER_SITES=	SF/${PORTNAME}/Source \
@@ -39,7 +39,8 @@ CONFIGURE_ARGS+=--verbose --disable-tests \
 		--with-oss \
 		--without-pulse \
 		--without-sane \
-		--without-tiff
+		--without-tiff \
+		--without-udev
 CONFIGURE_ENV=	CPPBIN="${CPP}" FLEX="${LOCALBASE}/bin/flex"
 WINELIBDIR?=	${PREFIX}/lib
 USES=		bison compiler:c11 desktop-file-utils gmake shebangfix tar:xz

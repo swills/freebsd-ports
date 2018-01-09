@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/games/ioquake3/Makefile 453238 2017-10-31 14:51:53Z olgeni $
+# $FreeBSD: head/games/ioquake3/Makefile 458405 2018-01-08 10:47:29Z krion $
 
 PORTNAME?=	ioquake3
 PORTVERSION?=	${IOQUAKE3VER}
@@ -52,6 +52,7 @@ MAKE_ARGS+=	DEFAULT_BASEDIR="${Q3DIR}" \
 		TOOLS_CC="${CC}" \
 		USE_LOCAL_HEADERS=0
 ALL_TARGET=	release
+LLD_UNSAFE=	yes
 
 LIBDIR=		lib/${PORTNAME}${PKGNAMESUFFIX}
 DOCSDIR=	share/doc/${PORTNAME}${PKGNAMESUFFIX}

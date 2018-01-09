@@ -1,9 +1,8 @@
 # Created by: Aaron Dalton <aaron@daltons.ca>
-# $FreeBSD: head/devel/p5-File-Random/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-File-Random/Makefile 458474 2018-01-08 20:15:44Z bofh $
 
 PORTNAME=	File-Random
-PORTVERSION=	0.17
-PORTREVISION=	2
+PORTVERSION=	0.18
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -25,5 +24,6 @@ TEST_DEPENDS=	p5-Test-Class>=0.03:devel/p5-Test-Class \
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

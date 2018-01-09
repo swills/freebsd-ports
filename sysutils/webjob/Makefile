@@ -1,5 +1,5 @@
 # Created by: Klayton Monroe <klm@uidzero.org>
-# $FreeBSD: head/sysutils/webjob/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/sysutils/webjob/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	webjob
 PORTVERSION=	1.9.0
@@ -43,7 +43,6 @@ PLIST_SUB+=		DSV_TOOLS="@comment "
 .else
 PLIST_SUB+=		DSV_TOOLS=""
 CONFIGURE_ARGS+=	--with-dsv-tools
-MAN1+=			webjob-dsvtool.1
 .endif
 .endif
 

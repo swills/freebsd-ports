@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/textproc/rubygem-rchardet/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/textproc/rubygem-rchardet/Makefile 458449 2018-01-08 16:52:30Z sunpoet $
 
 PORTNAME=	rchardet
-PORTVERSION=	1.6.1
+PORTVERSION=	1.7.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

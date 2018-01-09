@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/games/trigger-rally/Makefile 457351 2017-12-27 07:36:05Z linimon $
+# $FreeBSD: head/games/trigger-rally/Makefile 458408 2018-01-08 13:21:10Z krion $
 
 PORTNAME=	trigger-rally
 PORTVERSION=	0.6.5
@@ -26,6 +26,7 @@ USE_SDL=	sdl2 image2
 USE_GL=		glu gl glew
 MAKEFILE=	GNUmakefile
 ALL_TARGET=	build
+LLD_UNSAFE=	yes
 
 WORKINGSRC=	${WRKDIR}/${PORTNAME}-${PORTVERSION}
 DATADIR=	${PREFIX}/share/games/trigger-rally

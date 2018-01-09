@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/dhewm3/Makefile 456388 2017-12-15 11:18:46Z amdmi3 $
+# $FreeBSD: head/games/dhewm3/Makefile 458388 2018-01-07 22:34:17Z krion $
 
 PORTNAME=	dhewm3
 PORTVERSION=	1.4.1
@@ -20,6 +20,7 @@ GH_ACCOUNT=	dhewm
 
 USES=		cmake jpeg openal:al
 USE_SDL=	sdl2
+LLD_UNSAFE=	yes
 
 WRKSRC_SUBDIR=	neo
 

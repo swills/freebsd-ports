@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt5-buildtools/Makefile 429488 2016-12-26 10:00:10Z rakuco $
+# $FreeBSD: head/devel/qt5-buildtools/Makefile 458293 2018-01-06 21:30:31Z rakuco $
 
 PORTNAME=	buildtools
 DISTVERSION=	${QT5_VERSION}
@@ -20,6 +20,12 @@ INSTALL_WRKSRC=	${BUILD_WRKSRC}
 
 MORE_WRKSRCS=	src/tools/moc \
 		src/tools/rcc
+
+post-configure:
+.for d in src/tools/bootstrap ${MORE_WRKSRCS}
+	${MKDIR} ${WRKSRC}/${d}
+	cd ${WRKSRC}/${d} && ${SETENV} ${QMAKE_ENV} ${_QMAKE} ${QMAKE_ARGS} ${WRKSRC}/${d}
+.endfor
 
 post-build:
 .for d in ${MORE_WRKSRCS}

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/7kaa/Makefile 456723 2017-12-19 15:17:07Z linimon $
+# $FreeBSD: head/games/7kaa/Makefile 458382 2018-01-07 20:22:22Z krion $
 
 PORTNAME=	7kaa
 PORTVERSION=	2.14.7
@@ -22,6 +22,7 @@ BROKEN_armv7=		fails to compile: OBULLET.cpp:41:9: constant expression evaluates
 
 USES=		compiler:c++11-lib gmake localbase openal:al pkgconfig tar:xz
 GNU_CONFIGURE=	yes
+LLD_UNSAFE=	yes
 CONFIGURE_ARGS=	--disable-nls # no translations ATM
 USE_SDL=	sdl2
 

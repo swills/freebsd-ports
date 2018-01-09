@@ -1,8 +1,9 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/net/cagibi/Makefile 420774 2016-08-24 08:20:31Z tcberner $
+# $FreeBSD: head/net/cagibi/Makefile 458285 2018-01-06 18:39:20Z tcberner $
 
 PORTNAME=	cagibi
 PORTVERSION=	0.2.0
+PORTREVISION=	1
 CATEGORIES=	net devel
 MASTER_SITES=	KDE/stable/${PORTNAME}
 

@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/net-im/toxic/Makefile 455251 2017-12-01 07:19:53Z antoine $
+# $FreeBSD: head/net-im/toxic/Makefile 458372 2018-01-07 19:03:28Z krion $
 
 PORTNAME=	toxic
 PORTVERSION=	0.8.1
@@ -38,6 +38,7 @@ PYTHON_VARS=	USES+=python:3.3+
 PYTHON_MAKE_ARGS=	ENABLE_PYTHON=1
 
 MAKE_ENV=	USER_CFLAGS="${CFLAGS}" USER_LDFLAGS="${LDFLAGS}"
+LLD_UNSAFE=	yes
 SUB_FILES=	pkg-message
 
 USES=		desktop-file-utils gettext-runtime gmake ncurses openal:al,alut pkgconfig

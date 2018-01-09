@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 456964 2017-12-22 02:49:17Z araujo $
+# $FreeBSD: head/audio/Makefile 458173 2018-01-05 22:00:56Z rene $
 #
 
     COMMENT = Audio tools
@@ -54,7 +54,6 @@
     SUBDIR += baresip
     SUBDIR += baudline
     SUBDIR += bcg729
-    SUBDIR += beast
     SUBDIR += beep
     SUBDIR += beets
     SUBDIR += blop

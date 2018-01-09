@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/radare-cutter/Makefile 458038 2018-01-04 17:09:27Z swills $
+# $FreeBSD: head/x11/radare-cutter/Makefile 458230 2018-01-06 07:41:45Z antoine $
 
 PORTNAME=	radare-cutter
 PORTVERSION=	1.1
@@ -9,7 +9,7 @@ MAINTAINER=	swills@FreeBSD.org
 COMMENT=	GUI for radare2 reverse engineering framework
 
 LICENSE=	GPLv3
-LICENSE_FILE=	${WRKSRC}/COPYING
+LICENSE_FILE=	${WRKSRC}/../COPYING
 
 LIB_DEPENDS=	libr2.so:devel/radare2
 

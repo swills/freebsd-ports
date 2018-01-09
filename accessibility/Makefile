@@ -1,4 +1,4 @@
-# $FreeBSD: head/accessibility/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/accessibility/Makefile 458293 2018-01-06 21:30:31Z rakuco $
 #
 
     COMMENT = Ports to help disabled users
@@ -25,6 +25,7 @@
     SUBDIR += py-papi
     SUBDIR += py-speech-dispatcher
     SUBDIR += qt4-accessible
+    SUBDIR += qt5-speech
     SUBDIR += redshift
     SUBDIR += rubygem-atk
     SUBDIR += speech-dispatcher

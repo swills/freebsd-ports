@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/py-psycopg2cffi/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/py-psycopg2cffi/Makefile 458167 2018-01-05 20:02:03Z yuri $
 
 PORTNAME=	psycopg2cffi
 DISTVERSION=	2.7.7
+PORTREVISION=	1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -19,6 +20,6 @@ USES=		pgsql python
 USE_PYTHON=	autoplist distutils
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/${PORTNAME}/_impl/_libpq.so
+	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/${PORTNAME}/_impl/_libpq*.so
 
 .include <bsd.port.mk>

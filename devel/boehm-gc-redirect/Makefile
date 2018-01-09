@@ -1,7 +1,5 @@
 # Created by: stas
-# $FreeBSD: head/devel/boehm-gc-redirect/Makefile 398832 2015-10-08 15:11:28Z olgeni $
-
-PORTREVISION=	1
+# $FreeBSD: head/devel/boehm-gc-redirect/Makefile 458406 2018-01-08 12:52:49Z cpm $
 
 COMMENT=	Garbage collection and memory leak detection for C and C++ with malloc redirection
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/ports-mgmt/portmaster/Makefile 457952 2018-01-03 11:10:33Z se $
+# $FreeBSD: head/ports-mgmt/portmaster/Makefile 458299 2018-01-06 22:43:20Z se $
 
 PORTNAME=	portmaster
 PORTVERSION=	3.18
-PORTREVISION=	7
+PORTREVISION=	9
 CATEGORIES=	ports-mgmt
 
 MAINTAINER=	se@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/httpry/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/httpry/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	httpry
 PORTVERSION=	0.1.7
@@ -16,12 +16,12 @@ EXTRASCRIPTS_DESC=	Install additional scripts
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MEXTRASCRIPTS}
-PLIST_SUB=	EXTRASCRIPTS=""
+PLIST_SUB+=	EXTRASCRIPTS=""
 USES+=		perl5
 USE_PERL5=	run
 RUN_DEPENDS=	p5-DBI>=0:databases/p5-DBI
 .else
-PLIST_SUB=	EXTRASCRIPTS="@comment "
+PLIST_SUB+=	EXTRASCRIPTS="@comment "
 .endif
 
 do-install:

@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/cran.mk 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/Mk/Uses/cran.mk 458513 2018-01-09 07:40:55Z mat $
 #
 # Use the Comprehensive R Archive Network 
 #
@@ -47,7 +47,7 @@ do-test:
 R_POSTCMD_INSTALL_OPTIONS+=	-l ${STAGEDIR}${PREFIX}/${R_LIB_DIR}
 R_POSTCMD_INSTALL_OPTIONS+=	--install-tests
 
-.if defined(NOPORTDOCS)
+.if empty(PORT_OPTIONS:MDOCS)
 R_POSTCMD_INSTALL_OPTIONS+=	--no-docs --no-html
 .endif
 

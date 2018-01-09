@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/qt5-script/Makefile 444123 2017-06-22 17:24:42Z dim $
+# $FreeBSD: head/devel/qt5-script/Makefile 458293 2018-01-06 21:30:31Z rakuco $
 
 PORTNAME=	script
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	2
 CATEGORIES=	devel
 PKGNAMEPREFIX=	qt5-
 

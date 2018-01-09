@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/qt5-printsupport/Makefile 429488 2016-12-26 10:00:10Z rakuco $
+# $FreeBSD: head/print/qt5-printsupport/Makefile 458293 2018-01-06 21:30:31Z rakuco $
 
 PORTNAME=	printsupport
 DISTVERSION=	${QT5_VERSION}
@@ -29,10 +29,17 @@ CUPS_LIB_DEPENDS=	libcups.so:print/cups
 .if ${PORT_OPTIONS:MCUPS}
 QT_DEFINES+=	CUPS
 QT_CONFIG+=	cups
+MORE_WRKSRCS+=	src/plugins/printsupport
 .else
 QT_DEFINES+=	-CUPS
 QT_CONFIG+=	-cups
 .endif
+
+post-configure:
+.for d in src/printsupport ${MORE_WRKSRCS}
+	${MKDIR} ${WRKSRC}/${d}
+	cd ${WRKSRC}/${d} && ${SETENV} ${QMAKE_ENV} ${_QMAKE} ${QMAKE_ARGS} ${WRKSRC}/${d}
+.endfor
 
 post-build:
 .if ${PORT_OPTIONS:MCUPS}

@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/databases/ruby-bdb/Makefile 457454 2017-12-28 13:41:56Z sunpoet $
+# $FreeBSD: head/databases/ruby-bdb/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	bdb
 PORTVERSION=	0.6.6
@@ -9,7 +9,6 @@ MASTER_SITES=	ftp://ftp.idaemons.org/pub/distfiles/ruby/ \
 		http://idaemons.org/distfiles/ruby/ \
 		LOCAL/knu
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
-PKGNAMESUFFIX=	${WITH_BDB_VER}
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org

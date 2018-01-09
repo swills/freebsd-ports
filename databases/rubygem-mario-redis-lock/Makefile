@@ -1,8 +1,7 @@
-# $FreeBSD: head/databases/rubygem-mario-redis-lock/Makefile 457982 2018-01-03 16:46:09Z sunpoet $
+# $FreeBSD: head/databases/rubygem-mario-redis-lock/Makefile 458495 2018-01-08 23:04:14Z swills $
 
 PORTNAME=	mario-redis-lock
-PORTVERSION=	1.2.0
-PORTREVISION=	2
+PORTVERSION=	1.2.1
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

@@ -1,5 +1,5 @@
 # Created by: ajk@iu.edu
-# $FreeBSD: head/security/p5-Authen-Krb5/Makefile 378261 2015-02-01 18:43:42Z hrs $
+# $FreeBSD: head/security/p5-Authen-Krb5/Makefile 458328 2018-01-07 12:13:11Z sunpoet $
 
 PORTNAME=	Authen-Krb5
 PORTVERSION=	1.9
@@ -29,7 +29,7 @@ GSSAPI_MIT_USES=	gssapi:mit
 post-extract:
 	${INSTALL_DATA} ${FILESDIR}/krb5-heimdal-compat.h ${WRKSRC}
 
-post-build:
-	${STRIP_CMD} ${WRKSRC}/blib/arch/auto/Authen/Krb5/Krb5.so
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Authen/Krb5/Krb5.so
 
 .include <bsd.port.mk>

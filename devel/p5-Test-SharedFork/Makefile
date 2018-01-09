@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-Test-SharedFork/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Test-SharedFork/Makefile 458180 2018-01-06 00:25:25Z wen $
 
 PORTNAME=	Test-SharedFork
-PORTVERSION=	0.33
+PORTVERSION=	0.35
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:EXODIST

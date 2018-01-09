@@ -1,9 +1,9 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/www/anyterm/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/www/anyterm/Makefile 458399 2018-01-08 09:00:52Z amdmi3 $
 
 PORTNAME=	anyterm
 PORTVERSION=	1.1.29
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	www
 MASTER_SITES=	http://anyterm.org/download/ \
 		http://dl1.douglasthrift.net/${PORTNAME}/ \
@@ -15,7 +15,7 @@ COMMENT=	Terminal emulator on a Web page
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${LOCALBASE}/include/boost/function.hpp:devel/boost-libs
+LIB_DEPENDS=	libboost_system.so:devel/boost-libs
 
 BROKEN_aarch64=		does not build: libstdc++.so: undefined reference to __floatunditf@GCC_4.2.0
 BROKEN_armv6=		does not build: libstdc++.so: undefined reference to __floatunditf@GCC_4.2.0

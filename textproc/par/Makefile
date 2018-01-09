@@ -1,5 +1,5 @@
 # Created by: Mark R V Murray <mark@grondar.za>
-# $FreeBSD: head/textproc/par/Makefile 394583 2015-08-18 13:21:23Z markm $
+# $FreeBSD: head/textproc/par/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	par
 PORTVERSION=	1.52
@@ -15,7 +15,6 @@ COMMENT=	Paragraph reformatter for email
 CONFLICTS=	quake-par-[0-9]*
 
 ALL_TARGET=	#
-MAN1=		par.1
 PLIST_FILES=	bin/par \
 		man/man1/par.1.gz
 

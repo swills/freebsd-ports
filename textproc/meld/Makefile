@@ -1,5 +1,5 @@
 # Created by: Pav Lucistnik <pav@oook.cz>
-# $FreeBSD: head/textproc/meld/Makefile 458090 2018-01-04 21:41:41Z pawel $
+# $FreeBSD: head/textproc/meld/Makefile 458161 2018-01-05 18:17:40Z pawel $
 
 PORTNAME=	meld
 PORTVERSION=	3.18.0
@@ -18,12 +18,15 @@ RUN_DEPENDS=	gsettings-desktop-schemas>=0:devel/gsettings-desktop-schemas
 USES=		desktop-file-utils gettext python:3.4+ shared-mime-info \
 		shebangfix tar:xz
 SHEBANG_FILES=	bin/meld
-USE_PYTHON=	distutils
+USE_PYTHON=	distutils noflavors
 USE_GNOME=	gtksourceview3 intltool libxml2:build pygobject3
 GLIB_SCHEMAS=	org.gnome.meld.gschema.xml
-PYDISTUTILS_INSTALLNOSINGLE=	yes
 PYDISTUTILS_INSTALL_TARGET=	--no-update-icon-cache --no-compile-schemas install
 INSTALLS_ICONS=	yes
 NO_ARCH=	yes
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+PYDISTUTILS_INSTALLARGS=	-c -O1 --prefix=${PREFIX} --root=${STAGEDIR}
+
+.include <bsd.port.post.mk>

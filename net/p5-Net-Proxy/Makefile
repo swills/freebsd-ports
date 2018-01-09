@@ -1,5 +1,5 @@
 # Created by: Philippe Audeoud <jadawin@tuxaco.net>
-# $FreeBSD: head/net/p5-Net-Proxy/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-Proxy/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	Net-Proxy
 PORTVERSION=	0.13
@@ -16,8 +16,5 @@ LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	configure
-
-MAN1=	connect-tunnel.1 \
-	sslh.1
 
 .include <bsd.port.mk>

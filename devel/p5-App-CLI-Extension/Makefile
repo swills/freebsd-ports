@@ -1,14 +1,12 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-App-CLI-Extension/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-App-CLI-Extension/Makefile 458320 2018-01-07 12:12:27Z sunpoet $
 
 PORTNAME=	App-CLI-Extension
-PORTVERSION=	1.42.1
-PORTREVISION=	2
+PORTVERSION=	1.421
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:HOLLY
 PKGNAMEPREFIX=	p5-
-DISTNAME=	${PORTNAME}-${PORTVERSION:R}${PORTVERSION:E}
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Extension for App::CLI extension module

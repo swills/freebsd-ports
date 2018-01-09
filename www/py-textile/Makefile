@@ -1,8 +1,8 @@
 # Created by: Yi-Jheng Lin <yzlin@cs.nctu.edu.tw>
-# $FreeBSD: head/www/py-textile/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-textile/Makefile 458465 2018-01-08 18:00:50Z bofh $
 
 PORTNAME=	textile
-PORTVERSION=	2.3.16
+PORTVERSION=	3.0.0
 CATEGORIES=	www textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,5 +18,8 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-runner>0:devel/py-pytest-runner@${F
 USES=		python
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
+USE_GITHUB=	yes
+GH_ACCOUNT=	${PORTNAME}
+GH_PROJECT=	python-${PORTNAME}
 
 .include <bsd.port.mk>

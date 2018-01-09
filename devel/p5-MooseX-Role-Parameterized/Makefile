@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-MooseX-Role-Parameterized/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Role-Parameterized/Makefile 458203 2018-01-06 04:33:56Z sunpoet $
 
 PORTNAME=	MooseX-Role-Parameterized
 PORTVERSION=	1.10
@@ -20,7 +20,6 @@ BUILD_DEPENDS=	p5-Module-Runtime>=0:devel/p5-Module-Runtime \
 		p5-namespace-clean>=0.19:devel/p5-namespace-clean
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-CPAN-Meta-Check>=0.011:devel/p5-CPAN-Meta-Check \
-		p5-MooseX-Role-WithOverloading>=0:devel/p5-MooseX-Role-WithOverloading \
 		p5-Test-Fatal>=0:devel/p5-Test-Fatal \
 		p5-Test-Requires>=0:devel/p5-Test-Requires
 

@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/emulators/yabause/Makefile 417166 2016-06-20 16:23:28Z mat $
+# $FreeBSD: head/emulators/yabause/Makefile 458381 2018-01-07 20:16:07Z krion $
 
 PORTNAME=	yabause
 PORTVERSION=	0.9.14
@@ -18,6 +18,7 @@ USE_GL=		gl glu glut
 
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+LLD_UNSAFE=	yes
 
 SUB_FILES=	pkg-message
 

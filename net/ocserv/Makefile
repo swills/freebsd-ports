@@ -1,8 +1,8 @@
 # Created by: Carlos J Puga Medina <cpm@fbsd.es>
-# $FreeBSD: head/net/ocserv/Makefile 452040 2017-10-14 02:03:05Z cpm $
+# $FreeBSD: head/net/ocserv/Makefile 458468 2018-01-08 18:48:12Z cpm $
 
 PORTNAME=	ocserv
-PORTVERSION=	0.11.9
+PORTVERSION=	0.11.10
 CATEGORIES=	net security
 MASTER_SITES=	ftp://ftp.infradead.org/pub/ocserv/ \
 		LOCAL/cpm
@@ -30,7 +30,6 @@ USES=		autoreconf cpe gmake gperf libtool localbase ncurses \
 		pathfix pkgconfig readline tar:xz
 CPE_VENDOR=	infradead
 GNU_CONFIGURE=	yes
-USE_LDCONFIG=	yes
 
 CONFIGURE_ARGS=	--disable-nls \
 		--enable-local-libopts \

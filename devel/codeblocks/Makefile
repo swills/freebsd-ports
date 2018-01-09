@@ -1,9 +1,8 @@
 # Created by: Matthias Sund <m.sund@arcor.de>
-# $FreeBSD: head/devel/codeblocks/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/devel/codeblocks/Makefile 458306 2018-01-07 09:00:36Z riggs $
 
 PORTNAME=	codeblocks
-PORTVERSION=	16.01
-PORTREVISION=	8
+PORTVERSION=	17.12
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/Sources/${PORTVERSION}
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -18,22 +17,23 @@ BUILD_DEPENDS=	zip:archivers/zip
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
-		libhunspell-1.6.so:textproc/hunspell
+		libhunspell-1.6.so:textproc/hunspell \
+		libtinyxml.so:textproc/tinyxml
 
-USES=		autoreconf compiler desktop-file-utils fam:gamin localbase \
+USES=		tar:xz autoreconf compiler desktop-file-utils fam:gamin localbase \
 		gettext-runtime libtool pathfix pkgconfig shared-mime-info
 USE_WX=		2.8
 USE_GNOME=	gtk20 cairo
 USE_XORG=	x11
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-wx-config=${WX_CONFIG} --with-contrib-plugins=all \
-		--disable-pch
+		--disable-pch --with-boost-system=boost_system
 PKG_CONFIG_LIBDIR=	${LOCALBASE}/libdata/pkgconfig
 INSTALLS_ICONS=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}.release
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 .include <bsd.port.pre.mk>
 

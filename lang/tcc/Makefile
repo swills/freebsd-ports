@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/tcc/Makefile 437935 2017-04-07 16:03:05Z amdmi3 $
+# $FreeBSD: head/lang/tcc/Makefile 458428 2018-01-08 15:34:23Z cpm $
 
 PORTNAME=	tcc
 DISTVERSIONPREFIX=	release_
@@ -6,7 +6,7 @@ DISTVERSION=	0_9_26
 PORTREVISION=	5
 CATEGORIES=	lang
 
-MAINTAINER=	cpm@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tiny C Compiler
 
 LICENSE=	LGPL21

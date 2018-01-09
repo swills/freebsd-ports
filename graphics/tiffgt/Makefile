@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/tiffgt/Makefile 442775 2017-06-06 14:16:02Z bofh $
+# $FreeBSD: head/graphics/tiffgt/Makefile 458484 2018-01-08 21:43:08Z bofh $
 
 PORTNAME=	tiffgt
-DISTVERSION=	4.0.8
+DISTVERSION=	4.0.9
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.remotesensing.org/pub/libtiff/ \
 		http://download.osgeo.org/libtiff/

@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-dashing/Makefile 441040 2017-05-16 18:22:19Z sunpoet $
+# $FreeBSD: head/www/rubygem-dashing/Makefile 458435 2018-01-08 16:32:05Z feld $
 
 PORTNAME=	dashing
 PORTVERSION=	1.3.7
@@ -16,7 +16,7 @@ RUN_DEPENDS=	rubygem-sass32>=3.2.12:textproc/rubygem-sass32 \
 		rubygem-coffee-script>=2.3.0:devel/rubygem-coffee-script \
 		rubygem-execjs>=2.2.2:devel/rubygem-execjs \
 		rubygem-sinatra1>=1.4.4:www/rubygem-sinatra1 \
-		rubygem-sinatra-contrib>=1.4.2:www/rubygem-sinatra-contrib \
+		rubygem-sinatra-contrib1>=1.4.2:www/rubygem-sinatra-contrib1 \
 		rubygem-thin>=1.6.2:www/rubygem-thin \
 		rubygem-rufus-scheduler>=3.0.9:devel/rubygem-rufus-scheduler \
 		rubygem-thor>=0.19.1:devel/rubygem-thor \

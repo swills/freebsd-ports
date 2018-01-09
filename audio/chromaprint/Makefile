@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/chromaprint/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/audio/chromaprint/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	chromaprint
 PORTVERSION=	1.4.2
@@ -27,9 +27,7 @@ OPTIONS_DEFINE=		DOXYGEN TEST
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen \
 			dot:graphics/graphviz
 DOXYGEN_PORTDOCS=	*
-# PORTDOCS macro won't work if NOPORTDOCS is defined or if DOCS is disabled
 DOXYGEN_IMPLIES=	DOCS
-.undef NOPORTDOCS
 
 TEST_BUILD_DEPENDS=	${NONEXISTENT}:devel/googletest:patch
 TEST_CMAKE_BOOL=	BUILD_TESTS

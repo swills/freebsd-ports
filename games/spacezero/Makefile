@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/spacezero/Makefile 455196 2017-11-30 11:36:55Z amdmi3 $
+# $FreeBSD: head/games/spacezero/Makefile 458402 2018-01-08 10:38:20Z krion $
 
 PORTNAME=	spacezero
 PORTVERSION=	0.86.00
@@ -17,6 +17,7 @@ LIB_DEPENDS=	libvorbisfile.so:audio/libvorbis
 USES=		openal:al,alut pkgconfig
 USE_GNOME=	gtk20
 USE_XORG=	x11
+LLD_UNSAFE=	yes
 MAKE_ARGS=	DATADIR="${DATADIR}" \
 		INSTALL_DATA_DIR="${DATADIR}"
 ALL_TARGET=	${PORTNAME}

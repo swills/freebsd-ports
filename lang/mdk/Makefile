@@ -1,9 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/lang/mdk/Makefile 445412 2017-07-09 21:04:08Z lme $
+# $FreeBSD: head/lang/mdk/Makefile 458427 2018-01-08 15:20:57Z cpm $
 
 PORTNAME=	mdk
 PORTVERSION=	1.2.9
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang gnome
 MASTER_SITES=	GNU/${PORTNAME}/v${PORTVERSION}
 

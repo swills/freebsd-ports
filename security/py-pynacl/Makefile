@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/py-pynacl/Makefile 456943 2017-12-21 20:10:09Z yuri $
+# $FreeBSD: head/security/py-pynacl/Makefile 458167 2018-01-05 20:02:03Z yuri $
 
 PORTNAME=	pynacl
 DISTVERSION=	1.2.1
+PORTREVISION=	1
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -29,7 +30,7 @@ BUNDLED_NACL_LIB_DEPENDS_OFF=	libsodium.so:security/libsodium
 BUNDLED_NACL_MAKE_ENV_OFF=	SODIUM_INSTALL=system
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/nacl/_sodium.so
+	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/nacl/_sodium*.so
 
 do-test:
 	@cd ${WRKSRC} && ${SETENV} PYTHONPATH=${STAGEDIR}${PYTHONPREFIX_SITELIBDIR} ${PYTHON_CMD} -m pytest -rs tests

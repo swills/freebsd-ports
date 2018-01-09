@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/x11-toolkits/Makefile 458486 2018-01-08 21:59:15Z rakuco $
 #
 
     COMMENT = X11 toolkits
@@ -226,8 +226,8 @@
     SUBDIR += qt5-canvas3d
     SUBDIR += qt5-charts
     SUBDIR += qt5-datavis3d
-    SUBDIR += qt5-declarative-render2d
     SUBDIR += qt5-gamepad
+    SUBDIR += qt5-gtkplatform
     SUBDIR += qt5-gui
     SUBDIR += qt5-quick
     SUBDIR += qt5-quickcontrols

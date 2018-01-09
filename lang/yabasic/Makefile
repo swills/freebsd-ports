@@ -1,16 +1,17 @@
 # Created by: Frank Gruender <elwood@mc5sys.in-berlin.de>
-# $FreeBSD: head/lang/yabasic/Makefile 453964 2017-11-11 09:04:41Z amdmi3 $
+# $FreeBSD: head/lang/yabasic/Makefile 458410 2018-01-08 13:33:39Z wen $
 
 PORTNAME=	yabasic
-PORTVERSION=	2.769
+PORTVERSION=	2.78.2
+PORTEPOCH=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://www.yabasic.de/download/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Yet another Basic for Unix and Windows
 
-LICENSE=	ART10 GPLv2
-LICENSE_COMB=	multi
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		bison ncurses
 GNU_CONFIGURE=	yes

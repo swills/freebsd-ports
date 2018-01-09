@@ -1,8 +1,9 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/devel/py-pygit2/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pygit2/Makefile 458167 2018-01-05 20:02:03Z yuri $
 
 PORTNAME=	pygit2
 PORTVERSION=	0.26.0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -27,6 +28,6 @@ do-test:
 	@(cd ${BUILD_WRKSRC}; ${SETENV} ${MAKE_ENV} ${PYTHON_CMD} ${PYDISTUTILS_SETUP} ${PYDISTUTILS_TEST_TARGET} ${PYDISTUTILS_TESTARGS})
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/_pygit2.so ${STAGEDIR}${PYTHON_SITELIBDIR}/pygit2/_libgit2.so
+	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/_pygit2.so ${STAGEDIR}${PYTHON_SITELIBDIR}/pygit2/_libgit2*.so
 
 .include <bsd.port.mk>

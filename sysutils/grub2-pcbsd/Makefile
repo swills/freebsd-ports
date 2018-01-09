@@ -1,5 +1,5 @@
 # Created by: kmoore@FreeBSD.org
-# $FreeBSD: head/sysutils/grub2-pcbsd/Makefile 457089 2017-12-23 17:22:10Z tijl $
+# $FreeBSD: head/sysutils/grub2-pcbsd/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	grub2-pcbsd
 PORTVERSION=	2.02q
@@ -54,7 +54,6 @@ PLIST_SUB+=	EFIEMU=${EFIEMU}
 LIB_DEPENDS+=	libfreetype.so:print/freetype2
 BUILD_DEPENDS+=	${LOCALBASE}/share/fonts/dejavu/DejaVuSans.ttf:x11-fonts/dejavu \
 		${LOCALBASE}/share/fonts/gnu-unifont/unifont.pcf.gz:x11-fonts/gnu-unifont
-MAN1+=		grub-mkfont.1
 CONFIGURE_ARGS+=	--enable-grub-mkfont
 .else
 CONFIGURE_ARGS+=	--disable-grub-mkfont

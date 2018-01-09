@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/irrlamb/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/irrlamb/Makefile 458402 2018-01-08 10:38:20Z krion $
 
 PORTNAME=	irrlamb
 PORTVERSION=	0.2.1
@@ -24,6 +24,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	jazztickets
 
 USES=		cmake compiler:c++11-lib lua:53 openal
+LLD_UNSAFE=	yes
 
 PORTDOCS=	*
 PORTDATA=	*

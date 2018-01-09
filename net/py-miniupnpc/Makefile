@@ -1,11 +1,12 @@
-# $FreeBSD: head/net/py-miniupnpc/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-miniupnpc/Makefile 458238 2018-01-06 10:02:43Z mat $
 
 CATEGORIES=	net python
+PORTREVISION=	1
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 COMMENT=	Python module for miniupnpc
 
-BUILD_DEPENDS=	${NONEXISTENT}:net/miniupnpc:build
+LIB_DEPENDS=	libminiupnpc.so:net/miniupnpc
 
 MASTERDIR=	${.CURDIR}/../miniupnpc
 
@@ -13,13 +14,6 @@ USES=		python
 USE_PYTHON=	autoplist distutils
 
 PLIST=		${.CURDIR}/pkg-plist
-
-post-patch:
-	${REINPLACE_CMD} 's/\(version\)="[^"]*"/\1="${PORTVERSION}"/' \
-		${WRKSRC}/setup.py
-
-pre-build:
-	${CP} $$(make FLAVOR= -C ${MASTERDIR} -V WRKSRC)/libminiupnpc.a ${WRKSRC}
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/miniupnpc.so

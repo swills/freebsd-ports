@@ -1,7 +1,5 @@
 # Created by: stas
-# $FreeBSD: head/devel/boehm-gc-threaded/Makefile 369894 2014-10-03 12:52:34Z tijl $
-
-PORTREVISION=	1
+# $FreeBSD: head/devel/boehm-gc-threaded/Makefile 458406 2018-01-08 12:52:49Z cpm $
 
 COMMENT=	Garbage collection and memory leak detection for C and C++ with threading support
 

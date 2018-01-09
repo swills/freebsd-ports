@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/chinese/p5-Lingua-ZH-TaBE/Makefile 419843 2016-08-08 13:46:50Z mat $
+# $FreeBSD: head/chinese/p5-Lingua-ZH-TaBE/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	Lingua-ZH-TaBE
 PORTVERSION=	0.07
@@ -19,19 +19,5 @@ USE_PERL5=	configure
 OBSOLETE_BDB_VAR=	WITH_DB
 
 CONFIGURE_ARGS=	DB="${BDB_LIB_NAME}"
-
-pre-everything::
-	@${ECHO_CMD} ""
-	@${ECHO_CMD} "You may specify db version to use:"
-	@${ECHO_CMD} ""
-	@${ECHO_CMD} "	WITH_BDB_VER=version	(Default 41)"
-.if defined(WITH_BDB_VER)
-	@${ECHO_CMD} ""
-	@${ECHO_CMD} "WARNING:"
-	@${ECHO_CMD} "	You have defined WITH_BDB_VER. Make sure you use the same"
-	@${ECHO_CMD} "	db version that libtabe uses. Otherwise, this port may"
-	@${ECHO_CMD} "	not work correctly."
-.endif
-	@${ECHO_CMD} ""
 
 .include <bsd.port.mk>

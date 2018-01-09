@@ -1,5 +1,4 @@
-
-# $FreeBSD: head/net/Makefile 457788 2018-01-01 17:47:07Z danilo $
+# $FreeBSD: head/net/Makefile 458352 2018-01-07 15:51:42Z sunpoet $
 #
 
     COMMENT = Networking tools
@@ -1393,8 +1392,8 @@
     SUBDIR += toonel
     SUBDIR += torsocks
     SUBDIR += traceroute
-    SUBDIR += traff
     SUBDIR += traefik
+    SUBDIR += traff
     SUBDIR += trafshow
     SUBDIR += trafshow3
     SUBDIR += tramp

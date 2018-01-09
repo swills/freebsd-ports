@@ -1,5 +1,5 @@
 # Created by: Romain Tartiere <romain@FreeBSD.org>
-# $FreeBSD: head/graphics/mscgen/Makefile 418829 2016-07-20 09:33:31Z dinoex $
+# $FreeBSD: head/graphics/mscgen/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	mscgen
 PORTVERSION=	0.20
@@ -33,7 +33,5 @@ CONFIGURE_ARGS+=--without-png
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 GNU_CONFIGURE=	yes
-
-MAN1=		mscgen.1
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/motor/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/devel/motor/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	motor
 PORTVERSION=	3.4.0
@@ -23,10 +23,10 @@ CONFIGURE_ARGS=	${ICONV_CONFIGURE_ARG}
 .if ${PORT_OPTIONS:MNLS}
 USES+=		gettext
 CONFIGURE_ARGS+=--with-libintl-prefix=${LOCALBASE}
-PLIST_SUB=	NLS=""
+PLIST_SUB+=	NLS=""
 .else
 CONFIGURE_ARGS+=--disable-nls
-PLIST_SUB=	NLS="@comment "
+PLIST_SUB+=	NLS="@comment "
 .endif
 
 post-patch:

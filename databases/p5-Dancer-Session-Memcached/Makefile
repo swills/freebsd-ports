@@ -1,13 +1,11 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Dancer-Session-Memcached/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-Dancer-Session-Memcached/Makefile 458319 2018-01-07 12:12:22Z sunpoet $
 
 PORTNAME=	Dancer-Session-Memcached
-PORTVERSION=	0.2.02
-PORTREVISION=	1
+PORTVERSION=	0.202
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
-DISTNAME=	${PORTNAME}-${PORTVERSION:R}${PORTVERSION:E}
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Memcached-based session backend for Dancer
