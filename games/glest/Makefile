@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/games/glest/Makefile 457081 2017-12-23 16:50:15Z tijl $
+# $FreeBSD: head/games/glest/Makefile 458388 2018-01-07 22:34:17Z krion $
 
 PORTNAME=	glest
 PORTVERSION=	3.2.2
@@ -21,6 +21,7 @@ USES=		autoreconf:build dos2unix localbase lua:51 openal:al,alut \
 		pkgconfig zip
 USE_SDL=	yes
 USE_GL=		yes
+LLD_UNSAFE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_SCRIPT=	mk/linux/configure
 SUB_FILES=		glest-wrapper pkg-message

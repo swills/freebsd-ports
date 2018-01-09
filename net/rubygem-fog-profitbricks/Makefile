@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-profitbricks/Makefile 455719 2017-12-07 16:00:59Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-profitbricks/Makefile 458265 2018-01-06 13:51:34Z sunpoet $
 
 PORTNAME=	fog-profitbricks
 PORTVERSION=	4.1.1
+PORTREVISION=	1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

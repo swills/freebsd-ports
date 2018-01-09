@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/liblognorm/Makefile 438052 2017-04-08 16:00:34Z bofh $
+# $FreeBSD: head/devel/liblognorm/Makefile 458466 2018-01-08 18:10:31Z bofh $
 
 PORTNAME=	liblognorm
-PORTVERSION=	2.0.3
+PORTVERSION=	2.0.4
 CATEGORIES=	devel net security
 MASTER_SITES=	http://www.liblognorm.com/download/files/download/
 

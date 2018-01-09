@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 457287 2017-12-26 15:00:16Z jrm $
+# $FreeBSD: head/editors/Makefile 458471 2018-01-08 19:44:13Z adamw $
 #
 
     COMMENT = Editors
@@ -185,6 +185,7 @@
     SUBDIR += linux-sublime3
     SUBDIR += madedit
     SUBDIR += manedit
+    SUBDIR += medit
     SUBDIR += mg
     SUBDIR += micro
     SUBDIR += mined
@@ -215,6 +216,7 @@
     SUBDIR += py-editorconfig
     SUBDIR += py-room
     SUBDIR += rox-edit
+    SUBDIR += rubygem-neovim
     SUBDIR += scite
     SUBDIR += se
     SUBDIR += semi
@@ -242,6 +244,7 @@
     SUBDIR += vile
     SUBDIR += vim
     SUBDIR += vim-lite
+    SUBDIR += vim-tiny
     SUBDIR += web-mode
     SUBDIR += with-editor
     SUBDIR += wordgrinder

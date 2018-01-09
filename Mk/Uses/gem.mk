@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/gem.mk 438265 2017-04-11 14:22:41Z amdmi3 $
+# $FreeBSD: head/Mk/Uses/gem.mk 458513 2018-01-09 07:40:55Z mat $
 #
 # Support rubygem packages
 #
@@ -111,7 +111,7 @@ do-install:
 	${RM} -r ${STAGEDIR}${PREFIX}/${GEM_LIB_DIR}/ext \
 		${STAGEDIR}${PREFIX}/${CACHE_DIR} 2> /dev/null || ${TRUE}
 	${RMDIR} ${STAGEDIR}${PREFIX}/${EXT_DIR} 2> /dev/null || ${TRUE}
-.if defined(NOPORTDOCS)
+.if !${PORT_OPTIONS:MDOCS}
 	-@${RMDIR} ${STAGEDIR}${PREFIX}/${DOC_DIR}
 .endif
 .endif
@@ -120,7 +120,7 @@ do-install:
 _USES_install+=	820:gem-autoplist
 gem-autoplist:
 	@${ECHO} ${GEM_SPEC} >> ${TMPPLIST}
-.if !defined(NOPORTDOCS)
+.if ${PORT_OPTIONS:MDOCS}
 	@${FIND} -ds ${STAGEDIR}${PREFIX}/${DOC_DIR} -type f -print | ${SED} -E -e \
 		's,^${STAGEDIR}${PREFIX}/?,,' >> ${TMPPLIST}
 .endif

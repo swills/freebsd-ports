@@ -1,9 +1,9 @@
 # Created by: danny@ricin.com
-# $FreeBSD: head/www/qt4-webkit/Makefile 442740 2017-06-06 05:00:56Z tcberner $
+# $FreeBSD: head/www/qt4-webkit/Makefile 458310 2018-01-07 09:27:51Z tcberner $
 
 PORTNAME=	webkit
 DISTVERSION=	${QT4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www
 PKGNAMEPREFIX=	qt4-
 
@@ -15,6 +15,7 @@ USE_QT4=	corelib declarative gui network \
 QT_DIST=	yes
 USE_XORG=	xrender
 USES=		pkgconfig
+USE_CXXSTD=	gnu++98
 
 HAS_CONFIGURE=	yes
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}

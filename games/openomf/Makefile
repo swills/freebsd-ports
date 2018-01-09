@@ -1,5 +1,5 @@
 # Created by: Stas Timokhin <devel@stasyan.com>
-# $FreeBSD: head/games/openomf/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/openomf/Makefile 458402 2018-01-08 10:38:20Z krion $
 
 PORTNAME=	openomf
 PORTVERSION=	0.6.5
@@ -29,6 +29,7 @@ GH_TUPLE=	omf2097:libShadowDive:b2c34a6:shadow \
 
 USES=		cmake compiler:c++11-lang gettext openal
 USE_SDL=	sdl2
+LLD_UNSAFE=	yes
 
 DESKTOP_ENTRIES="OpenOMF" "" \
 		"${PREFIX}/share/openomf/openomf_icon.png " \

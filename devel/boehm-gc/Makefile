@@ -1,8 +1,8 @@
 # Created by: Mike McGaughey <mmcg@cs.monash.edu.au>
-# $FreeBSD: head/devel/boehm-gc/Makefile 455215 2017-11-30 17:34:36Z amdmi3 $
+# $FreeBSD: head/devel/boehm-gc/Makefile 458406 2018-01-08 12:52:49Z cpm $
 
 PORTNAME=	gc
-PORTVERSION=	7.6.0
+PORTVERSION=	7.6.2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.hboehm.info/gc/gc_source/
 PKGNAMEPREFIX=	boehm-
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	boehm-
 PKGNAMESUFFIX=	-${GC_VARIANT}
 .endif
 
-MAINTAINER=	cpm@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Garbage collection and memory leak detection for C and C++
 
 LICENSE=	BDWGC
@@ -35,11 +35,15 @@ WRKSRC=		${WRKDIR}/${DISTNAME:C/[a-z]$//}
 OPTIONS_DEFINE=	DEBUG
 
 .ifdef GC_VARIANT
-INSTLIBS=	cord gc gccpp
+INSTLIBS=	cord gccpp
+GCLIBS=		gc
 PLIST=		${NONEXISTENT}
 PLIST_FILES=	${INSTLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.so,} \
 		${INSTLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.so.1,} \
-		${INSTLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.so.1.0.3,} \
+		${INSTLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.so.1.3.0,} \
+		${GCLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.so,} \
+		${GCLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.so.2,} \
+		${GCLIBS:S,^,lib/lib,:S,$,-${GC_VARIANT}.so.2.2.1,} \
 		libdata/pkgconfig/bdw-gc-${GC_VARIANT}.pc
 RUN_DEPENDS+=	${LOCALBASE}/include/gc/gc.h:devel/boehm-gc
 . if ${GC_VARIANT} == "redirect"

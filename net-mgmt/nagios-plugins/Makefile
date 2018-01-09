@@ -1,9 +1,9 @@
 # Created by: Blaz Zupan <blaz@si.FreeBSD.org>
-# $FreeBSD: head/net-mgmt/nagios-plugins/Makefile 449835 2017-09-14 11:58:58Z mat $
+# $FreeBSD: head/net-mgmt/nagios-plugins/Makefile 458415 2018-01-08 13:38:55Z mat $
 
 PORTNAME=	nagios-plugins
 PORTVERSION=	2.2.1
-PORTREVISION=	5
+PORTREVISION=	6
 PORTEPOCH=	1
 CATEGORIES=	net-mgmt
 MASTER_SITES=	https://www.nagios-plugins.org/download/ \

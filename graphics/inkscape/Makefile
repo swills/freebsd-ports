@@ -1,8 +1,9 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/graphics/inkscape/Makefile 450859 2017-09-28 19:04:56Z kwm $
+# $FreeBSD: head/graphics/inkscape/Makefile 458427 2018-01-08 15:20:57Z cpm $
 
 PORTNAME=	inkscape
 PORTVERSION=	0.92.2
+PORTREVISION=	1
 CATEGORIES=	graphics gnome
 MASTER_SITES=	https://launchpadlibrarian.net/332184472/ \
 		https://inkscape.org/en/gallery/item/11254/ \

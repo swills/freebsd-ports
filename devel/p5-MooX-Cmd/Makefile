@@ -1,8 +1,8 @@
 # Created by: Muhammad Moinur Rahman<5u623l20@gmail.com>
-# $FreeBSD: head/devel/p5-MooX-Cmd/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooX-Cmd/Makefile 458477 2018-01-08 20:23:05Z bofh $
 
 PORTNAME=	MooX-Cmd
-PORTVERSION=	0.015
+PORTVERSION=	0.017
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

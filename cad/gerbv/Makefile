@@ -1,9 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/cad/gerbv/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/cad/gerbv/Makefile 458279 2018-01-06 15:07:06Z wen $
 
 PORTNAME=	gerbv
-PORTVERSION=	2.6.1
-PORTREVISION=	2
+PORTVERSION=	2.6.2
 CATEGORIES=	cad
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

@@ -1,9 +1,8 @@
 # Created by: Joseph Benden <joe@thrallingpenguin.com>
-# $FreeBSD: head/sysutils/rubygem-winrm/Makefile 446799 2017-07-28 02:41:18Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-winrm/Makefile 458420 2018-01-08 14:29:02Z swills $
 
 PORTNAME=	winrm
-PORTVERSION=	2.1.3
-PORTREVISION=	1
+PORTVERSION=	2.2.3
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 

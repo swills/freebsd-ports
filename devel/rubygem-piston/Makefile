@@ -1,5 +1,5 @@
 # Created by: Tim Bishop <tdb@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-piston/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-piston/Makefile 458433 2018-01-08 16:11:34Z swills $
 
 PORTNAME=	piston
 PORTVERSION=	1.4.0
@@ -14,5 +14,8 @@ NO_ARCH=	yes
 USE_RUBY=	yes
 USES=		gem
 PLIST_FILES=	bin/piston
+
+DEPRECATED=	No longer maintained upstream
+EXPIRATION_DATE=2018-02-08
 
 .include <bsd.port.mk>

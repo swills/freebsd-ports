@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/qt5-webchannel/Makefile 388182 2015-05-31 22:56:44Z alonso $
+# $FreeBSD: head/www/qt5-webchannel/Makefile 458293 2018-01-06 21:30:31Z rakuco $
 
 PORTNAME=	webchannel
 DISTVERSION=	${QT5_VERSION}
@@ -10,7 +10,11 @@ COMMENT=	Qt 5 library for integration of C++/QML with HTML/js clients
 
 USE_QT5=	buildtools_build core qml quick
 QT_DIST=	${PORTNAME}
-USES=		qmake
+USES=		qmake:norecursive
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
+
+# The default EXTRACT_AFTER_ARGS value excludes examples/ from the extracted
+# tarball, which we need during the build.
+EXTRACT_AFTER_ARGS=	# empty
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/apricots/Makefile 394783 2015-08-19 14:09:29Z amdmi3 $
+# $FreeBSD: head/games/apricots/Makefile 458385 2018-01-07 21:27:59Z krion $
 
 PORTNAME=	apricots
 PORTVERSION=	0.2.6
@@ -20,6 +20,7 @@ PLIST_FILES=	bin/${PORTNAME} libexec/${PORTNAME}
 PORTDATA=	*
 PORTDOCS=	*
 CPPFLAGS+=	-DAP_PATH="\"${DATADIR}/\""
+LLD_UNSAFE=	yes
 
 DESKTOP_ENTRIES="Apricots" \
 		"${COMMENT}" \

@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/games/OpenTomb/Makefile 447783 2017-08-11 18:17:53Z tobik $
+# $FreeBSD: head/games/OpenTomb/Makefile 458385 2018-01-07 21:27:59Z krion $
 
 PORTNAME=	OpenTomb
 DISTVERSIONPREFIX=	win32-
@@ -18,6 +18,7 @@ USE_GITHUB=	yes
 
 USES=		cmake lua openal
 USE_SDL=	sdl2
+LLD_UNSAFE=	yes
 SUB_FILES=	OpenTomb
 
 post-patch:

@@ -1,8 +1,8 @@
 # Created by: ijliao@FreeBSD.org
-# $FreeBSD: head/devel/log4cpp/Makefile 441429 2017-05-21 21:55:08Z linimon $
+# $FreeBSD: head/devel/log4cpp/Makefile 458335 2018-01-07 12:13:48Z sunpoet $
 
 PORTNAME=	log4cpp
-PORTVERSION=	1.1.2
+PORTVERSION=	1.1.3
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION:R}.x%20%28new%29/${PORTNAME}-${PORTVERSION:R}
 
@@ -25,8 +25,8 @@ REINPLACE_ARGS=	-i ""
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
 
-OPTIONS_DEFINE=		DOXYGEN
-OPTIONS_SUB=		yes
+OPTIONS_DEFINE=	DOXYGEN
+OPTIONS_SUB=	yes
 
 DOXYGEN_BUILD_DEPENDS=		doxygen:devel/doxygen
 DOXYGEN_CONFIGURE_ENABLE=	doxygen

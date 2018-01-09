@@ -1,5 +1,5 @@
 # Created by: at@rominet.net
-# $FreeBSD: head/net/ssltunnel-client/Makefile 421934 2016-09-12 16:10:41Z marino $
+# $FreeBSD: head/net/ssltunnel-client/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	ssltunnel
 PORTVERSION=	1.18
@@ -28,7 +28,6 @@ USES=		iconv ssl
 USE_GNOME=	gtk12
 USES+=		perl5
 RUN_DEPENDS=	p5-Gtk>=0:x11-toolkits/p5-Gtk
-MAN1+=		gpppclient.1
 PLIST_SUB+=	PERLGTK=""
 .else
 PLIST_SUB+=	PERLGTK="@comment "

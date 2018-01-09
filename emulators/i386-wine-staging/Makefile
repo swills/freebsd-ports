@@ -1,5 +1,5 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/emulators/i386-wine-staging/Makefile 451356 2017-10-06 07:59:42Z ak $
+# $FreeBSD: head/emulators/i386-wine-staging/Makefile 458214 2018-01-06 05:31:43Z dbn $
 
 COMMENT=	32-bit Wine built with the Staging patchset for 64-bit FreeBSD
 
@@ -22,5 +22,6 @@ PKGNAMESUFFIX=	-staging
 .include "${SLAVEDIR}/Makefile.i386"
 .else
 MASTERDIR=	${SLAVEDIR}
+BROKEN=		Staging patchset still not available for this version
 .include "${SLAVEDIR}/Makefile.inc"
 .endif

@@ -1,5 +1,5 @@
 # Created by: Nikolai Lifanov <lifanov@mail.lifanov.com>
-# $FreeBSD: head/games/tome4/Makefile 455251 2017-12-01 07:19:53Z antoine $
+# $FreeBSD: head/games/tome4/Makefile 458408 2018-01-08 13:21:10Z krion $
 
 PORTNAME=	tome4
 PORTVERSION=	1.5.5
@@ -31,6 +31,7 @@ USE_SDL=	image2 sdl2 ttf2
 USE_GL=		gl glu
 USE_CSTD=	gnu89
 SUB_FILES=	tome4
+LLD_UNSAFE=	yes
 
 .include <bsd.port.pre.mk>
 

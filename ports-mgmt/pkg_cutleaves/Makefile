@@ -1,8 +1,8 @@
 # Created by: Stefan Walter <sw@gegenunendlich.de>
-# $FreeBSD: head/ports-mgmt/pkg_cutleaves/Makefile 403913 2015-12-17 17:19:48Z mat $
+# $FreeBSD: head/ports-mgmt/pkg_cutleaves/Makefile 458380 2018-01-07 20:02:12Z bofh $
 
 PORTNAME=	pkg_cutleaves
-PORTVERSION=	20090810
+PORTVERSION=	20180108
 CATEGORIES=	ports-mgmt
 MASTER_SITES=	# none
 DISTFILES=	# none

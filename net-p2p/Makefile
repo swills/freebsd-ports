@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/Makefile 457636 2017-12-30 20:23:12Z swills $
+# $FreeBSD: head/net-p2p/Makefile 458350 2018-01-07 15:45:41Z sunpoet $
 #
 
     COMMENT = Peer-to-peer network applications
@@ -72,8 +72,8 @@
     SUBDIR += p5-WWW-BitTorrent
     SUBDIR += phex
     SUBDIR += py-py2play
-    SUBDIR += py-tremc
     SUBDIR += py-transmissionrpc
+    SUBDIR += py-tremc
     SUBDIR += py-vertex
     SUBDIR += qbittorrent
     SUBDIR += qbittorrent-nox11

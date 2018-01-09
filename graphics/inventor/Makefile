@@ -1,5 +1,5 @@
 # Created by: Christian Gusenbauer
-# $FreeBSD: head/graphics/inventor/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/inventor/Makefile 458374 2018-01-07 19:19:00Z krion $
 
 PORTNAME=	inventor
 PORTVERSION=	2.1.5.p10
@@ -43,6 +43,7 @@ OPTIONS_DEFINE=	DEBUG
 DEBUG_MAKE_ENV=	LIBTYPE=debug
 
 LDFLAGS+=	-Wl,--add-needed
+LLD_UNSAFE=	yes
 
 post-patch:
 # Fix for print/freetype2 v2.7, where FT_Done_GlyphSlot function is not exported

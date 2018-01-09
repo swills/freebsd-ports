@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale	<nivit@email.it>
-# $FreeBSD: head/math/muparser/Makefile 435575 2017-03-07 00:06:43Z jhale $
+# $FreeBSD: head/math/muparser/Makefile 458515 2018-01-09 07:55:05Z mat $
 
 PORTNAME=	muparser
 PORTVERSION=	2.2.5
@@ -31,7 +31,6 @@ DOXYGEN_ALL_TARGET=	documentation
 DOXYGEN_PORTDOCS=	*
 # PORTDOCS macro won't work if NOPORTDOCS is defined or if DOCS is disabled
 DOXYGEN_IMPLIES=	DOCS
-.undef NOPORTDOCS
 
 EXAMPLES_CONFIGURE_ENABLE=	samples
 EXAMPLES_ALL_TARGET=	samples

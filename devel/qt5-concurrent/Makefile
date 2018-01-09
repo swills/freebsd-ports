@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt5-concurrent/Makefile 372179 2014-11-05 09:39:21Z rakuco $
+# $FreeBSD: head/devel/qt5-concurrent/Makefile 458293 2018-01-06 21:30:31Z rakuco $
 
 PORTNAME=	concurrent
 DISTVERSION=	${QT5_VERSION}
@@ -19,5 +19,11 @@ INSTALL_WRKSRC=	${BUILD_WRKSRC}
 
 QT_DEFINES=	CONCURRENT
 QT_CONFIG=	concurrent
+
+post-configure:
+.for d in src/concurrent
+	${MKDIR} ${WRKSRC}/${d}
+	cd ${WRKSRC}/${d} && ${SETENV} ${QMAKE_ENV} ${_QMAKE} ${QMAKE_ARGS} ${WRKSRC}/${d}
+.endfor
 
 .include <bsd.port.mk>

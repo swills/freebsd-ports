@@ -1,8 +1,9 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/security/py-bcrypt/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-bcrypt/Makefile 458167 2018-01-05 20:02:03Z yuri $
 
 PORTNAME=	bcrypt
 PORTVERSION=	3.1.4
+PORTREVISION=	1
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -23,6 +24,6 @@ do-test:
 	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYDISTUTILS_SETUP} test
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/bcrypt/_bcrypt.so
+	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/bcrypt/_bcrypt*.so
 
 .include <bsd.port.mk>

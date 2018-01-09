@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 458123 2018-01-05 09:26:49Z ygy $
+# $FreeBSD: head/misc/Makefile 458479 2018-01-08 20:53:35Z pi $
 #
 
     COMMENT = Miscellaneous utilities
@@ -38,8 +38,8 @@
     SUBDIR += chmlib
     SUBDIR += chord2html
     SUBDIR += cinnamon-translations
-    SUBDIR += clex
     SUBDIR += cldr-emoji-annotation
+    SUBDIR += clex
     SUBDIR += cloc
     SUBDIR += clpbar
     SUBDIR += cmatrix
@@ -249,8 +249,10 @@
     SUBDIR += libeatmydata
     SUBDIR += libisocodes
     SUBDIR += libkdeedu
+    SUBDIR += liblxi
     SUBDIR += libmetalink
     SUBDIR += libpostal
+    SUBDIR += libpredict
     SUBDIR += libpri
     SUBDIR += libsupertone
     SUBDIR += libutf

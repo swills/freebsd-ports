@@ -1,5 +1,5 @@
 # Created by: aaron@FreeBSD.org
-# $FreeBSD: head/devel/libs11n/Makefile 371334 2014-10-21 19:30:51Z antoine $
+# $FreeBSD: head/devel/libs11n/Makefile 458334 2018-01-07 12:13:43Z sunpoet $
 
 PORTNAME=	libs11n
 PORTVERSION=	1.2.10
@@ -12,7 +12,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	C++ library for easily serializing a wide variety of objects
 
 USES=		uidfix zip
-WRKSRC=		${WRKDIR}/${DISTNAME}/src
+WRKSRC_SUBDIR=	src
 USE_LDCONFIG=	yes
 
 .if defined(NO_PROFILE)

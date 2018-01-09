@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/elasticsearch5/Makefile 451762 2017-10-11 17:08:37Z feld $
+# $FreeBSD: head/textproc/elasticsearch5/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	elasticsearch
 PORTVERSION=	5.3.0
@@ -53,7 +53,7 @@ SUB_LIST=	SEARCHUSER=${SEARCHUSER} \
 		SEARCHGROUP=${SEARCHGROUP} \
 		PORTVERSION=${PORTVERSION}
 SUB_FILES=	pkg-message
-PLIST_SUB=	SEARCHUSER=${SEARCHUSER} \
+PLIST_SUB+=	SEARCHUSER=${SEARCHUSER} \
 		SEARCHGROUP=${SEARCHGROUP} \
 		LUCENEVER=${LUCENEVER} \
 		PORTVERSION=${PORTVERSION} \

@@ -1,9 +1,8 @@
 # Created by: George Hartzell <hartzell@alerce.com>
-# $FreeBSD: head/devel/p5-Sub-WrapPackages/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Sub-WrapPackages/Makefile 458478 2018-01-08 20:29:14Z bofh $
 
 PORTNAME=	Sub-WrapPackages
-PORTVERSION=	2.0
-PORTREVISION=	1
+PORTVERSION=	2.01
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -21,5 +20,6 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

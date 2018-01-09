@@ -1,8 +1,9 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-azure/Makefile 430342 2017-01-02 10:15:12Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-azure/Makefile 458256 2018-01-06 13:50:47Z sunpoet $
 
 PORTNAME=	fog-azure
 PORTVERSION=	0.0.2
+PORTREVISION=	1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

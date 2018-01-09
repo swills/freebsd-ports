@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 457970 2018-01-03 15:49:41Z jrm $
+# $FreeBSD: head/www/Makefile 458436 2018-01-08 16:42:07Z feld $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -610,8 +610,8 @@
     SUBDIR += p5-AnyEvent-Mojo
     SUBDIR += p5-AnyEvent-ReverseHTTP
     SUBDIR += p5-AnyEvent-SCGI
-    SUBDIR += p5-Apache-ASP
     SUBDIR += p5-AnyEvent-WebSocket-Client
+    SUBDIR += p5-Apache-ASP
     SUBDIR += p5-Apache-Admin-Config
     SUBDIR += p5-Apache-AuthCookie
     SUBDIR += p5-Apache-AuthTicket
@@ -2177,6 +2177,7 @@
     SUBDIR += rubygem-simple-rss
     SUBDIR += rubygem-sinatra
     SUBDIR += rubygem-sinatra-contrib
+    SUBDIR += rubygem-sinatra-contrib1
     SUBDIR += rubygem-sinatra-r18n
     SUBDIR += rubygem-sinatra-respond_to
     SUBDIR += rubygem-sinatra1

@@ -1,9 +1,9 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/attica/Makefile 410702 2016-03-09 15:14:35Z rakuco $
+# $FreeBSD: head/x11-toolkits/attica/Makefile 458295 2018-01-06 22:02:46Z tcberner $
 
 PORTNAME=	attica
 PORTVERSION=	0.4.2
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	2
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	KDE/stable/${PORTNAME}
@@ -17,6 +17,7 @@ USE_LDCONFIG=	yes
 USES=		cmake:outsource tar:bzip2
 CMAKE_ARGS=	-DATTICA_ENABLE_TESTS:BOOL=OFF \
 		-DQT4_BUILD:BOOL=ON
+USE_CXXSTD=	gnu++98
 
 post-patch:
 # LIB_DESTINATION is not caught by USES=pathfix.

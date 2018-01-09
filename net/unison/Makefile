@@ -1,9 +1,9 @@
 # Created by: Dan Pelleg <dpelleg+unison@cs.cmu.edu>
-# $FreeBSD: head/net/unison/Makefile 451901 2017-10-12 15:57:51Z mat $
+# $FreeBSD: head/net/unison/Makefile 458159 2018-01-05 18:12:14Z madpilot $
 
 PORTNAME=	unison
 PORTVERSION=	2.48.4
-PORTREVISION?=	1
+PORTREVISION?=	2
 CATEGORIES=	net
 MASTER_SITES=	http://www.cis.upenn.edu/~bcpierce/unison/download/releases/${DISTNAME}/
 DISTFILES=	${EXTRACT_ONLY} ${EXTRA_DOCS}

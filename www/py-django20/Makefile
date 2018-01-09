@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/www/py-django20/Makefile 457883 2018-01-02 15:33:59Z sunpoet $
+# $FreeBSD: head/www/py-django20/Makefile 458431 2018-01-08 15:47:40Z mat $
 
 PORTNAME=	django
 PORTVERSION=	2.0.1
@@ -46,6 +46,7 @@ HTMLDOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${FLA
 HTMLDOCS_IMPLIES=	DOCS
 PGSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>0:databases/py-psycopg2@${FLAVOR}
 MYSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=1.2.2:databases/py-MySQLdb@${FLAVOR}
+MYSQL_BROKEN=		MySQLdb only supports Python 2.
 SQLITE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR}
 
 post-build-HTMLDOCS-on:

@@ -1,8 +1,8 @@
 # Created by: clsung
-# $FreeBSD: head/net/p5-Net-GitHub/Makefile 456249 2017-12-13 20:50:23Z sunpoet $
+# $FreeBSD: head/net/p5-Net-GitHub/Makefile 458268 2018-01-06 13:51:50Z sunpoet $
 
 PORTNAME=	Net-GitHub
-PORTVERSION=	0.91
+PORTVERSION=	0.93
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

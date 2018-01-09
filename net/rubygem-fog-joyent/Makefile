@@ -1,8 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-joyent/Makefile 447145 2017-08-02 18:30:59Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-joyent/Makefile 458261 2018-01-06 13:51:13Z sunpoet $
 
 PORTNAME=	fog-joyent
 PORTVERSION=	0.0.1
+PORTREVISION=	1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

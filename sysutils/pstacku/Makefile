@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/sysutils/pstacku/Makefile 448911 2017-08-29 13:05:21Z pizzamig $
+# $FreeBSD: head/sysutils/pstacku/Makefile 458369 2018-01-07 18:49:28Z krion $
 
 PORTNAME=	pstacku
 PORTVERSION=	0.9.2
@@ -16,6 +16,7 @@ LIB_DEPENDS=	libunwind.so:devel/libunwind
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-libunwind=${LOCALBASE}
+LLD_UNSAFE=	yes
 ONLY_FOR_ARCHS=	amd64 i386
 CONFLICTS=	pstack-[0-9]*
 

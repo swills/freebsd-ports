@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/www/p5-Continuity/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Continuity/Makefile 458321 2018-01-07 12:12:33Z sunpoet $
 
 PORTNAME=	Continuity
 PORTVERSION=	1.5
@@ -14,7 +14,7 @@ COMMENT=	Stateful Web applications in Perl
 
 COMMON_DEPENDS=	p5-Event>0:devel/p5-Event \
 		p5-HTTP-Daemon>=1.36:www/p5-HTTP-Daemon \
-		p5-Coro>=4.37:devel/p5-Coro \
+		p5-Coro>=4.370:devel/p5-Coro \
 		p5-PSGI>=0:www/p5-PSGI \
 		p5-libwww>0:www/p5-libwww
 BUILD_DEPENDS=	${COMMON_DEPENDS}

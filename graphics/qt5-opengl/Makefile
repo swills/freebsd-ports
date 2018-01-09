@@ -1,8 +1,7 @@
-# $FreeBSD: head/graphics/qt5-opengl/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/qt5-opengl/Makefile 458293 2018-01-06 21:30:31Z rakuco $
 
 PORTNAME=	opengl
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	qt5-
 
@@ -20,5 +19,11 @@ INSTALL_WRKSRC=	${BUILD_WRKSRC}
 
 QT_DEFINES=	OPENGL
 QT_CONFIG=	opengl
+
+post-configure:
+.for d in src/opengl
+	${MKDIR} ${WRKSRC}/${d}
+	cd ${WRKSRC}/${d} && ${SETENV} ${QMAKE_ENV} ${_QMAKE} ${QMAKE_ARGS} ${WRKSRC}/${d}
+.endfor
 
 .include <bsd.port.mk>

@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/neomutt/Makefile 455931 2017-12-11 08:56:26Z bapt $
+# $FreeBSD: head/mail/neomutt/Makefile 458294 2018-01-06 21:31:21Z bapt $
 
 PORTNAME=	neomutt
-PORTVERSION=	20171208
+PORTVERSION=	20171215
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	mail
 
@@ -20,7 +20,6 @@ USE_GITHUB=	yes
 USE_PERL5=	build
 
 HAS_CONFIGURE=	yes
-CONFIGURE_SCRIPT=	configure.autosetup
 
 OPTIONS_SUB=	yes
 SHEBANG_FILES=	contrib/smime_keys

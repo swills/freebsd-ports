@@ -1,5 +1,5 @@
 # Created by: Mikolaj Golub <trociny@FreeBSD.org>
-# $FreeBSD: head/databases/leo_center/Makefile 441036 2017-05-16 18:22:00Z sunpoet $
+# $FreeBSD: head/databases/leo_center/Makefile 458435 2018-01-08 16:32:05Z feld $
 
 PORTNAME=	leo_center
 PORTVERSION=	0.4.70
@@ -19,7 +19,7 @@ DIST_SUBDIR=	leofs
 
 RUN_DEPENDS=	rubygem-haml>=0:www/rubygem-haml \
 		rubygem-leo_manager_client>=0.4.13:databases/rubygem-leo_manager_client \
-		rubygem-sinatra-contrib>=0:www/rubygem-sinatra-contrib \
+		rubygem-sinatra-contrib1>=0:www/rubygem-sinatra-contrib1 \
 		rubygem-sinatra1>=1.4.3:www/rubygem-sinatra1 \
 		rubygem-thin>=0:www/rubygem-thin
 

@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/textproc/uim/Makefile 451901 2017-10-12 15:57:51Z mat $
+# $FreeBSD: head/textproc/uim/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	uim
 PORTVERSION=	1.8.6
@@ -46,7 +46,7 @@ CFLAGS+=	-I${LOCALBASE}/include
 .if !defined(UIM_SLAVE)
 DOCSDIR_JA=	${PREFIX}/share/doc/ja/uim
 DOCSDIR_SIGSCHEME=	${PREFIX}/share/doc/uim/sigscheme
-PLIST_SUB=	DOCSDIR_JA="${DOCSDIR_JA:S,^${PREFIX}/,,}" \
+PLIST_SUB+=	DOCSDIR_JA="${DOCSDIR_JA:S,^${PREFIX}/,,}" \
 		DOCSDIR_SIGSCHEME="${DOCSDIR_SIGSCHEME:S,^${PREFIX}/,,}"
 .endif
 

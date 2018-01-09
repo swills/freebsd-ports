@@ -1,5 +1,5 @@
 # Created by: Jacob Atzen <jatzen@gmail.com>
-# $FreeBSD: head/www/rubygem-passenger/Makefile 455088 2017-11-29 00:43:23Z osa $
+# $FreeBSD: head/www/rubygem-passenger/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	passenger
 PORTVERSION=	5.1.12
@@ -42,8 +42,6 @@ SHEBANG_FILES=	\
 	dev/ci/scripts/docker-entrypoint.sh \
 	dev/ci/run-tests-natively \
 	dev/ci/setup-host
-
-NOPORTDOCS=	yes
 
 APACHE22_USE=	APACHE=22+
 

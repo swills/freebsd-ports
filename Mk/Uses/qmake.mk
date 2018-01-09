@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/qmake.mk 424156 2016-10-18 11:20:01Z jbeich $
+# $FreeBSD: head/Mk/Uses/qmake.mk 458293 2018-01-06 21:30:31Z rakuco $
 #
 # Provide support for qmake-based projects
 #
@@ -16,6 +16,11 @@
 #			Default: ${CONFIGURE_ENV}
 # QMAKE_ARGS		- Arguments passed to qmake.
 #			Default: see below
+# QMAKE_CONFIGURE_ARGS  - Extra arguments passed to qmake after everything
+#                       else, such as "-foo -no-bar". The arguments are usually
+#                       set in configure.json. This variable is specific to
+#                       qmake from Qt 5.
+#                       Default: empty
 # QMAKE_SOURCE_PATH	- Path to qmake project files.
 #			Default: ${WRKSRC} if out-of-source build is
 #			requested, empty otherwise.
@@ -105,7 +110,9 @@ DESTDIRNAME=	INSTALL_ROOT
 qmake-configure:
 	@${MKDIR} ${_QMAKE_WRKSRC}
 	@cd ${_QMAKE_WRKSRC} && \
-		${SETENV} ${QMAKE_ENV} ${_QMAKE} ${QMAKE_ARGS} ${QMAKE_SOURCE_PATH}
+		${SETENV} ${QMAKE_ENV} ${_QMAKE} ${QMAKE_ARGS} \
+			${QMAKE_SOURCE_PATH} \
+			${QMAKE_CONFIGURE_ARGS:?--:} ${QMAKE_CONFIGURE_ARGS}
 
 .if !target(do-configure) && ! ${qmake_ARGS:M_env}
 _USES_configure+=	450:qmake-configure

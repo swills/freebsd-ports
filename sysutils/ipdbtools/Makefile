@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/ipdbtools/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/sysutils/ipdbtools/Makefile 458512 2018-01-09 07:28:22Z danfe $
 
 PORTNAME=	ipdbtools
 PORTVERSION=	1.1.1
@@ -14,10 +14,10 @@ LICENSE=	BSD2CLAUSE
 BROKEN_aarch64=		fails to compile: error: invalid conversion between vector type and integer type
 BROKEN_armv6=		fails to compile: error: invalid conversion between vector type and integer type
 BROKEN_armv7=		fails to compile: error: invalid conversion between vector type and integer type
-BROKEN_powerpc64=	fails to compile: error: unrecognized command line option -mssse3
-BROKEN_sparc64=		fails to compile: error: unrecognized command line option -mssse3
 
 USES=		tar:bzip2 compiler:c11
+
+CFLAGS_amd64=	-mssse3
 
 PLIST_FILES=	bin/ipup \
 		bin/ipdb \
@@ -26,5 +26,10 @@ PLIST_FILES=	bin/ipup \
 		man/man1/ipup.1.gz \
 		man/man1/ipdb.1.gz \
 		man/man1/ipdb-update.sh.1.gz
+
+post-patch:
+	@${REINPLACE_CMD} -e 's|-g0 -Ofast -mssse3|${CFLAGS}|' \
+		${WRKSRC}/Makefile
+	@${REINPLACE_CMD} -e '/tmmintrin\.h/d' ${WRKSRC}/store.c
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Herve Quiroz <hq@FreeBSD.org>
-# $FreeBSD: head/dns/dnsjava/Makefile 431592 2017-01-15 18:18:37Z danilo $
+# $FreeBSD: head/dns/dnsjava/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	dnsjava
 PORTVERSION=	2.1.8
@@ -24,9 +24,9 @@ DOCS_ALL_TARGET=	docs
 .include <bsd.port.pre.mk>
 
 .if ${JAVA_PORT_VERSION} == "1.6.0"
-PLIST_SUB=	JDK6=""
+PLIST_SUB+=	JDK6=""
 .else
-PLIST_SUB=	JDK6="@comment "
+PLIST_SUB+=	JDK6="@comment "
 .endif
 .if ${JAVA_PORT_VERSION} == "1.8.0"
 PLIST_SUB+=	JDK8=""

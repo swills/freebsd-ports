@@ -1,5 +1,5 @@
 # Created by: SADA Kenji <sada@FreeBSD.org>
-# $FreeBSD: head/devel/cvsweb3/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/devel/cvsweb3/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	cvsweb
 PORTVERSION=	3.0.6
@@ -68,7 +68,7 @@ CONFFILES=	cvsweb.conf \
 		cvsweb.conf-netbsd \
 		cvsweb.conf-ruby
 
-PLIST_SUB=	CGIDIR="${CGIDIR}" ICONSDIR="${ICONSDIR}" CSSDIR="${CSSDIR}" \
+PLIST_SUB+=	CGIDIR="${CGIDIR}" ICONSDIR="${ICONSDIR}" CSSDIR="${CSSDIR}" \
 		DIRPREFIX="${DIRPREFIX}"
 
 SUB_FILES=	pkg-message

@@ -1,12 +1,13 @@
 # Created by: chinsan
-# $FreeBSD: head/graphics/p5-Captcha-reCAPTCHA/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/graphics/p5-Captcha-reCAPTCHA/Makefile 458324 2018-01-07 12:12:49Z sunpoet $
 
 PORTNAME=	Captcha-reCAPTCHA
-PORTVERSION=	0.98
+PORTVERSION=	0.99
 CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:SUNNYP
 PKGNAMEPREFIX=	p5-
+DISTNAME=	Captcha-reCaptcha-${PORTVERSION}
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl implementation of the reCAPTCHA API
@@ -14,16 +15,13 @@ COMMENT=	Perl implementation of the reCAPTCHA API
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-libwww>=0:www/p5-libwww \
-		p5-HTML-Tiny>=0:textproc/p5-HTML-Tiny
+BUILD_DEPENDS=	p5-HTML-Tiny>=0:textproc/p5-HTML-Tiny \
+		p5-libwww>=0:www/p5-libwww
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 WRKSRC=		${WRKDIR}/Captcha-reCaptcha
-
-post-patch:
-	@${FIND} ${WRKSRC} -name '._*' -delete
 
 .include <bsd.port.mk>

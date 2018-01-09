@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <rpsfa@rit.edu>
-# $FreeBSD: head/net/isc-dhcp43-server/Makefile 450198 2017-09-20 12:58:19Z zi $
+# $FreeBSD: head/net/isc-dhcp43-server/Makefile 458489 2018-01-08 22:33:23Z zi $
 
 PORTNAME=	dhcp
 PORTVERSION=	4.3.6
@@ -18,7 +18,7 @@ LICENSE=	ISCL
 
 USES=		gmake
 
-PORTREVISION_SERVER=	1
+PORTREVISION_SERVER=	2
 PORTREVISION_CLIENT=	0
 PORTREVISION_RELAY=	0
 

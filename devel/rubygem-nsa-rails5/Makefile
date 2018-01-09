@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/rubygem-nsa-rails5/Makefile 452610 2017-10-21 20:19:00Z sunpoet $
+# $FreeBSD: head/devel/rubygem-nsa-rails5/Makefile 458160 2018-01-05 18:17:17Z jrm $
 
 PORTNAME=	nsa
 PORTVERSION=	0.2.4
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5

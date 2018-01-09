@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/cad/calculix-ccx/Makefile 453199 2017-10-30 17:15:56Z riggs $
+# $FreeBSD: head/cad/calculix-ccx/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	ccx
 PORTVERSION=	2.13
@@ -56,9 +56,6 @@ DOCSDIR=	${PREFIX}/share/doc/CalculiX
 .if $(PORT_OPTIONS:MEXAMPLES)
 DISTFILES+=	${DIST_EXAMPLES}
 EXTRACT_ONLY+=	${DIST_EXAMPLES}
-PLIST_SUB=	PORTEXAMPLES=""
-.else
-PLIST_SUB=	PORTEXAMPLES="@comment "
 .endif
 
 .if ${ARCH} == "sparc64"

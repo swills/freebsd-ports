@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/voxelands/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/voxelands/Makefile 458408 2018-01-08 13:21:10Z krion $
 
 PORTNAME=		voxelands
 PORTVERSION=		1604.00
@@ -18,6 +18,7 @@ LIB_DEPENDS=		libIrrlicht.so:x11-toolkits/irrlicht \
 BROKEN_powerpc64=	fails to link: sibling call optimization does not allow automatic multiple TOCs
 
 USES=			cmake tar:bzip2
+LLD_UNSAFE=		yes
 
 WRKSRC=			${WRKDIR}/${PORTNAME}
 

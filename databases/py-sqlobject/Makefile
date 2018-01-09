@@ -1,5 +1,5 @@
 # Created by: "Choe, Cheng-Dae" whitekid
-# $FreeBSD: head/databases/py-sqlobject/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/py-sqlobject/Makefile 458431 2018-01-08 15:47:40Z mat $
 
 PORTNAME=	sqlobject
 PORTVERSION=	1.6.0
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}formencode>=1.2.2:www/py-formencode@${FLAV
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
-USES=		python
+USES=		python${PY_MYSQL}
 USE_PYTHON=	autoplist distutils
 
 # currently MaxDB(SAP), ADODB are not supported
@@ -27,6 +27,7 @@ SYBASE_DESC=	sybase support
 PORTDOCS=	*
 
 MYSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=0:databases/py-MySQLdb@${FLAVOR}
+MYSQL_VARS=	PY_MYSQL=:2.7
 PGSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>=0:databases/py-psycopg2@${FLAVOR}
 SQLITE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${FLAVOR}
 MSSQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pymssql>=0:databases/py-pymssql@${FLAVOR}

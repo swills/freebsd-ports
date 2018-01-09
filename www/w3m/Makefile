@@ -1,8 +1,9 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/www/w3m/Makefile 430919 2017-01-09 07:48:30Z nobutaka $
+# $FreeBSD: head/www/w3m/Makefile 458427 2018-01-08 15:20:57Z cpm $
 
 PORTNAME=	w3m
 PORTVERSION=	0.5.3.20170102
+PORTREVISION=	1
 CATEGORIES+=	www ipv6
 
 MAINTAINER?=	nobutaka@FreeBSD.org

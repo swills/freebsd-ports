@@ -1,8 +1,8 @@
 # Created by: Ron van Daal
-# $FreeBSD: head/graphics/GraphicsMagick/Makefile 457070 2017-12-23 16:49:23Z sunpoet $
+# $FreeBSD: head/graphics/GraphicsMagick/Makefile 458317 2018-01-07 12:12:12Z sunpoet $
 
 PORTNAME=	GraphicsMagick
-PORTVERSION=	1.3.27
+PORTVERSION=	1.3.27a
 PORTEPOCH=	1
 CATEGORIES=	graphics
 MASTER_SITES=	SF \
@@ -18,6 +18,8 @@ OPTIONS_DEFAULT=FREETYPE JASPER JBIG JPEG LCMS2 OPENMP PNG TIFF WEBP WMF X11 XML
 DPS_DESC=	Display Ghostscript support
 Q8BIT_DESC=	Use 8-bit pixels (speed) instead of 16-bit (quality)
 TEST_DESC=	Run bundled self-tests after build
+
+PORTSCOUT=	skipv:1.3.27
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --enable-static \

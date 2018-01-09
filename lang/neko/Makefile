@@ -1,7 +1,8 @@
-# $FreeBSD: head/lang/neko/Makefile 430235 2017-01-01 03:45:12Z sunpoet $
+# $FreeBSD: head/lang/neko/Makefile 458427 2018-01-08 15:20:57Z cpm $
 
 PORTNAME=	neko
 PORTVERSION=	2.1.0
+PORTREVISION=	1
 CATEGORIES=	lang
 
 MAINTAINER=	penzin.dev@gmail.com

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/cyrus-sasl2/Makefile.common 447787 2017-08-11 18:47:20Z mmokhi $
+# $FreeBSD: head/security/cyrus-sasl2/Makefile.common 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	cyrus-sasl
 PORTVERSION=	2.1.26
@@ -144,7 +144,7 @@ WANT_OPENLDAP_VER=	${WITH_OPENLDAP_VER}
 RUNPATH=	"@comment "
 .endif
 
-PLIST_SUB=	PREFIX=${PREFIX} \
+PLIST_SUB+=	PREFIX=${PREFIX} \
 		DOCSDIR=${DOCSDIR:S/^${PREFIX}\///} \
 		RUNPATH=${RUNPATH}
 

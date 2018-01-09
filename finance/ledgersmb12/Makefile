@@ -1,11 +1,10 @@
 # Created by: anarcat@anarcat.ath.cx
-# $FreeBSD: head/finance/ledgersmb12/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/ledgersmb12/Makefile 458308 2018-01-07 09:18:15Z wen $
 
 PORTNAME=	ledgersmb
-PORTVERSION=	1.2.17
-PORTREVISION=	2
+PORTVERSION=	1.2.26
 CATEGORIES=	finance perl5
-MASTER_SITES=	SF/ledger-smb/Releases/archive-1.2/${PORTVERSION}
+MASTER_SITES=	http://download.ledgersmb.org/f/Releases/archive-1.2/${PORTVERSION}/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Double entry accounting system

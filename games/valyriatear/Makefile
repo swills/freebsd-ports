@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/valyriatear/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/games/valyriatear/Makefile 458408 2018-01-08 13:21:10Z krion $
 
 PORTNAME=	valyriatear
 PORTVERSION=	1.0.0
@@ -29,6 +29,7 @@ USE_SDL=	sdl image ttf
 USE_GL=		gl glu
 USE_XORG=	x11 xext sm ice
 INSTALLS_ICONS=	yes
+LLD_UNSAFE=	yes
 
 PORTDOCS=	*
 PORTDATA=	*

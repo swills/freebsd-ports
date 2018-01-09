@@ -1,11 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: head/sysutils/devcpu-data/files/microcode_update.in 452203 2017-10-16 16:37:56Z riggs $
+# $FreeBSD: head/sysutils/devcpu-data/files/microcode_update.in 458169 2018-01-05 20:37:57Z sbruno $
 #
 
 # PROVIDE:	microcode_update
 # REQUIRE:	root mountcritlocal
 # KEYWORD:	nojail
+# BEFORE:	SERVERS
 
 #
 # Add the following line to /etc/rc.conf to enable flow-capture:

@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/lang/icon/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/lang/icon/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	icon
 PORTVERSION=	9.5.1
@@ -27,12 +27,12 @@ OPTIONS_DEFINE=	DOCS X11
 
 .if empty(PORT_OPTIONS:MX11)
 CONFIG_CMD=	Configure
-PLIST_SUB=	WITHOUT_X11="@comment "
+PLIST_SUB+=	WITHOUT_X11="@comment "
 .else
 USE_XORG=	x11 xpm
 CFLAGS+=	-I${LOCALBASE}/include
 CONFIG_CMD=	X-Configure
-PLIST_SUB=	WITHOUT_X11=
+PLIST_SUB+=	WITHOUT_X11=
 .endif
 
 post-patch:

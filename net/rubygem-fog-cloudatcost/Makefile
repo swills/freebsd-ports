@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-cloudatcost/Makefile 427642 2016-12-03 19:28:48Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-cloudatcost/Makefile 458258 2018-01-06 13:50:58Z sunpoet $
 
 PORTNAME=	fog-cloudatcost
 PORTVERSION=	0.2.3
+PORTREVISION=	1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

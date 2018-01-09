@@ -1,7 +1,7 @@
-# $FreeBSD: head/irc/irssi/Makefile 452675 2017-10-22 17:53:19Z dbaio $
+# $FreeBSD: head/irc/irssi/Makefile 458290 2018-01-06 21:18:40Z dbaio $
 
 PORTNAME=	irssi
-PORTVERSION=	1.0.5
+PORTVERSION=	1.0.6
 PORTEPOCH=	1
 CATEGORIES?=	irc
 MASTER_SITES=	https://github.com/irssi/irssi/releases/download/${PORTVERSION}/
@@ -9,7 +9,8 @@ MASTER_SITES=	https://github.com/irssi/irssi/releases/download/${PORTVERSION}/
 MAINTAINER=	dor.bsd@xm0.uk
 COMMENT=	Modular IRC client with many features
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		cpe gettext-runtime gmake libtool ncurses pkgconfig tar:xz
 GNU_CONFIGURE=	yes

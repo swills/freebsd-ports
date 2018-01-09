@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/textproc/py-elasticsearch/Makefile 456997 2017-12-22 23:04:17Z sunpoet $
+# $FreeBSD: head/textproc/py-elasticsearch/Makefile 458249 2018-01-06 13:50:10Z sunpoet $
 
 PORTNAME=	elasticsearch
-PORTVERSION=	6.0.0
+PORTVERSION=	6.1.1
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

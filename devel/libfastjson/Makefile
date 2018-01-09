@@ -1,8 +1,8 @@
 # Created by: Muhammad Moinur Rahman <bofh@FreeBSD.org>
-# $FreeBSD: head/devel/libfastjson/Makefile 453448 2017-11-04 10:58:25Z matthew $
+# $FreeBSD: head/devel/libfastjson/Makefile 458462 2018-01-08 17:48:08Z bofh $
 
 PORTNAME=	libfastjson
-PORTVERSION=	0.99.7
+PORTVERSION=	0.99.8
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -11,11 +11,12 @@ COMMENT=	libfastjson is a fork from json-c
 
 LICENSE=	MIT
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	rsyslog
-
 GNU_CONFIGURE=	yes
 USES=		autoreconf libtool pathfix pkgconfig
 INSTALL_TARGET=	install-strip
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	rsyslog
+USE_LDCONFIG=	yes
 
 .include <bsd.port.mk>

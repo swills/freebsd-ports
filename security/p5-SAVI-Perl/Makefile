@@ -1,5 +1,5 @@
 # Created by: Gary Hayers <Gary@Hayers.net>
-# $FreeBSD: head/security/p5-SAVI-Perl/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/security/p5-SAVI-Perl/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	SAVI-Perl
 PORTVERSION=	0.30
@@ -10,8 +10,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	pi@FreeBSD.org
 COMMENT=	Perl5 module interface to Sophos AntiVirus
-
-MAN3=		SAVI.3
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 457942 2018-01-03 02:22:57Z jrm $
+# $FreeBSD: head/textproc/Makefile 458492 2018-01-08 22:40:41Z dbaio $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1273,6 +1273,7 @@
     SUBDIR += py-awesome-slugify
     SUBDIR += py-bugzillatools
     SUBDIR += py-chardet
+    SUBDIR += py-cjkwrap
     SUBDIR += py-cloud_sptheme
     SUBDIR += py-colorclass
     SUBDIR += py-creole
@@ -1584,6 +1585,7 @@
     SUBDIR += rubygem-terminal-table
     SUBDIR += rubygem-text
     SUBDIR += rubygem-tidy
+    SUBDIR += rubygem-tidy_ffi
     SUBDIR += rubygem-truncato
     SUBDIR += rubygem-twitter-text
     SUBDIR += rubygem-twitter-text1

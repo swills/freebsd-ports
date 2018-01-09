@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/smokeqt/Makefile 424182 2016-10-18 17:22:35Z tcberner $
+# $FreeBSD: head/devel/smokeqt/Makefile 458340 2018-01-07 15:03:15Z tcberner $
 
 PORTNAME=	smokeqt
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
@@ -18,5 +18,6 @@ USE_QT4=	corelib dbus declarative designer_build gui help \
 		sql svg webkit xml xmlpatterns \
 		qmake_build moc_build uic_build rcc_build
 USE_LDCONFIG=	yes
+USE_CXXSTD=	gnu++98
 
 .include <bsd.port.mk>

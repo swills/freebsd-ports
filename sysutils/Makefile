@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 458060 2018-01-04 20:11:01Z sunpoet $
+# $FreeBSD: head/sysutils/Makefile 458481 2018-01-08 21:28:11Z rakuco $
 #
 
     COMMENT = System utilities
@@ -186,8 +186,8 @@
     SUBDIR += consolehm
     SUBDIR += consolekit2
     SUBDIR += consul
-    SUBDIR += consul_exporter
     SUBDIR += consul-alerts
+    SUBDIR += consul_exporter
     SUBDIR += container-diff
     SUBDIR += contractor
     SUBDIR += copytape
@@ -936,6 +936,7 @@
     SUBDIR += py-zfs
     SUBDIR += pydf
     SUBDIR += qchroot
+    SUBDIR += qdirstat
     SUBDIR += qjail
     SUBDIR += qjail4
     SUBDIR += qlogtools
@@ -1119,7 +1120,6 @@
     SUBDIR += snap
     SUBDIR += snooze
     SUBDIR += snowlog
-    SUBDIR += socket
     SUBDIR += socklog
     SUBDIR += solaar
     SUBDIR += sortu
@@ -1195,12 +1195,12 @@
     SUBDIR += tracker
     SUBDIR += tree
     SUBDIR += tren
+    SUBDIR += trueos-libqt5
     SUBDIR += ts
     SUBDIR += tss
     SUBDIR += tty-clock
     SUBDIR += ttyd
     SUBDIR += ttyload
-    SUBDIR += trueos-libqt5
     SUBDIR += tuptime
     SUBDIR += tw_cli
     SUBDIR += twmn

@@ -1,8 +1,8 @@
-# $FreeBSD: head/ports-mgmt/poudriere-devel/Makefile 457934 2018-01-02 23:23:34Z bdrewery $
+# $FreeBSD: head/ports-mgmt/poudriere-devel/Makefile 458170 2018-01-05 20:50:33Z bdrewery $
 
 PORTNAME=	poudriere
-DISTVERSION=	3.2.99.20180102
-PORTREVISION=	2
+DISTVERSION=	3.2.99.20180105
+PORTREVISION=	1
 CATEGORIES=	ports-mgmt
 MASTER_SITES=	LOCAL/bdrewery/${PORTNAME}/ \
 		http://mirror.shatow.net/freebsd/${PORTNAME}/ \
@@ -18,7 +18,7 @@ CONFLICTS_INSTALL=	poudriere-[0-9]*
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	freebsd
-GH_TAGNAME=	3.2.3-66-g83691739
+GH_TAGNAME=	3.2.3-85-g190c9bef
 #DISTNAME=	${GH_ACCOUNT}-${GH_PROJECT}-${GH_TAGNAME}
 
 GNU_CONFIGURE=	yes

@@ -1,12 +1,11 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/mail/p5-Email-FolderType/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-Email-FolderType/Makefile 458325 2018-01-07 12:12:54Z sunpoet $
 
 PORTNAME=	Email-FolderType
-PORTVERSION=	0.8.14
+PORTVERSION=	0.814
 CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
-DISTNAME=	${PORTNAME}-${PORTVERSION:R}${PORTVERSION:E}
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Determine the type of a mail folder

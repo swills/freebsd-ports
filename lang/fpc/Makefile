@@ -1,5 +1,5 @@
 # Created by: John Merryweather Cooper et al
-# $FreeBSD: head/lang/fpc/Makefile 447304 2017-08-03 23:40:28Z acm $
+# $FreeBSD: head/lang/fpc/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	fpc
 PORTVERSION=	3.0.2
@@ -36,12 +36,12 @@ FPCSRCDIR=	${PORTNAME}-${PORTVERSION}
 .if ${ARCH} == "i386"
 PPNAME=		ppc386
 FPC_ARCH=	i386
-PLIST_SUB=	FPC_I386="" \
+PLIST_SUB+=	FPC_I386="" \
 		FPC_AMD64="@comment "
 .elif ${ARCH} == "amd64"
 PPNAME=		ppcx64
 FPC_ARCH=	x86_64
-PLIST_SUB=	FPC_I386="@comment " \
+PLIST_SUB+=	FPC_I386="@comment " \
 		FPC_AMD64=""
 .endif
 

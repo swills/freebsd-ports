@@ -1,5 +1,5 @@
 # Created by: Oliver Eikemeier
-# $FreeBSD: head/shells/bash/Makefile 453109 2017-10-29 11:37:06Z ehaupt $
+# $FreeBSD: head/shells/bash/Makefile 458370 2018-01-07 18:54:47Z krion $
 
 PORTNAME=		bash
 PATCHLEVEL=		12
@@ -64,6 +64,7 @@ CONFLICTS+=		bash-[0-9]*
 
 .if ${PORT_OPTIONS:MSTATIC} || defined(NO_DYNAMICROOT) || (defined(NOSHARED) && ${NOSHARED:tl} != "no")
 CONFIGURE_ARGS+=	--enable-static-link
+LLD_UNSAFE=		yes
 .else
 CONFIGURE_ARGS+=	--disable-static-link
 # Bash symbols must be exported in order to link runtime plugins, i.e.,

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/arx-libertatis/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/games/arx-libertatis/Makefile 458385 2018-01-07 21:27:59Z krion $
 
 PORTNAME=	arx-libertatis
 PORTVERSION=	1.1.2
@@ -20,6 +20,7 @@ BUILD_DEPENDS=	${LOCALBASE}/include/boost/foreach.hpp:devel/boost-libs
 USES=		cmake openal tar:xz
 USE_SDL=	sdl
 USE_GL=		gl glew
+LLD_UNSAFE=	yes
 CMAKE_ARGS=	-DDATA_DIR=arx \
 		-DSTRICT_USE=ON
 

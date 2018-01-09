@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-flipper/Makefile 453680 2017-11-07 21:01:27Z sunpoet $
+# $FreeBSD: head/devel/rubygem-flipper/Makefile 458342 2018-01-07 15:32:32Z sunpoet $
 
 PORTNAME=	flipper
-PORTVERSION=	0.11.0
+PORTVERSION=	0.12.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

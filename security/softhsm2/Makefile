@@ -1,9 +1,9 @@
 # Created by: Jaap Akkerhuis <jaap@NLnetLabs.nl>
-# $FreeBSD: head/security/softhsm2/Makefile 448254 2017-08-18 16:09:58Z swills $
+# $FreeBSD: head/security/softhsm2/Makefile 458409 2018-01-08 13:32:53Z pi $
 
 PORTNAME=	softhsm
 PORTVERSION=	2.3.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	http://dist.opendnssec.org/source/ \
 		http://dist.opendnssec.org/source/testing/
@@ -56,5 +56,10 @@ CONFIGURE_ARGS+=	--disable-gost
 .if ${SSL_DEFAULT:Mopenssl-devel}
 CONFIGURE_ARGS+=	--disable-gost
 .endif
+
+post-install:
+	${MKDIR} ${STAGEDIR}${PREFIX}/share/p11-kit/modules
+	${INSTALL_DATA} ${WRKSRC}/softhsm2.module \
+		${STAGEDIR}${PREFIX}/share/p11-kit/modules
 
 .include <bsd.port.mk>

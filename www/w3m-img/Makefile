@@ -1,6 +1,7 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/www/w3m-img/Makefile 345532 2014-02-21 18:55:46Z antoine $
+# $FreeBSD: head/www/w3m-img/Makefile 458427 2018-01-08 15:20:57Z cpm $
 
+PORTREVISION=	1
 PKGNAMESUFFIX=	-img
 
 MAINTAINER=	nobutaka@FreeBSD.org

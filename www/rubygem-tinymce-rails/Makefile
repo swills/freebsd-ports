@@ -1,9 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-tinymce-rails/Makefile 427997 2016-12-06 22:14:12Z swills $
+# $FreeBSD: head/www/rubygem-tinymce-rails/Makefile 458429 2018-01-08 15:44:16Z zi $
 
 PORTNAME=	tinymce-rails
-PORTVERSION=	4.1.0
-PORTREVISION=	1
+PORTVERSION=	4.7.4
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

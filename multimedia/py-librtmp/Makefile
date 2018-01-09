@@ -1,8 +1,9 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/multimedia/py-librtmp/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/multimedia/py-librtmp/Makefile 458167 2018-01-05 20:02:03Z yuri $
 
 PORTNAME=	librtmp
 PORTVERSION=	0.3.0
+PORTREVISION=	1
 CATEGORIES=	multimedia python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -28,5 +29,8 @@ USE_PYTHON=	autoplist distutils
 .if ${PYTHON_REL} < 3400
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}singledispatch>=0:devel/py-singledispatch@${FLAVOR}
 .endif
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/librtmp/_librtmp*.so
 
 .include <bsd.port.post.mk>

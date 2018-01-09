@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/supertuxkart/Makefile 456901 2017-12-21 10:23:19Z linimon $
+# $FreeBSD: head/games/supertuxkart/Makefile 458402 2018-01-08 10:38:20Z krion $
 
 PORTNAME=	supertuxkart
 PORTVERSION=	0.9.2
@@ -33,6 +33,7 @@ USES=		alias cmake compiler:c++11-lib dos2unix gettext \
 USE_GL=		gl glu
 USE_SDL=	sdl
 USE_XORG=	x11 xext sm ice
+LLD_UNSAFE=	yes
 DOS2UNIX_FILES=	lib/irrlicht/source/Irrlicht/Makefile \
 		lib/irrlicht/source/Irrlicht/COpenGLExtensionHandler.h
 CMAKE_ARGS=	-DUSE_WIIUSE=NO \

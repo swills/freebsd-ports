@@ -1,9 +1,9 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer-qt4/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/multimedia/gstreamer-qt4/Makefile 458309 2018-01-07 09:27:11Z tcberner $
 
 PORTNAME=	gstreamer
 PORTVERSION=	0.10.3
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	multimedia
 MASTER_SITES=	http://gstreamer.freedesktop.org/src/qt-${PORTNAME}/
 PKGNAMESUFFIX=	-qt4

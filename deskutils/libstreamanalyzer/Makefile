@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/libstreamanalyzer/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/deskutils/libstreamanalyzer/Makefile 458300 2018-01-06 23:03:49Z tcberner $
 
 PORTNAME=	libstreamanalyzer
 PORTVERSION=	${STRIGI_VERSION}
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	deskutils
 MASTER_SITES=	${STRIGI_MASTER_SITES}
 
@@ -17,6 +17,7 @@ LIB_DEPENDS=	libavcodec${FFMPEG_SUFFIX}.so:multimedia/ffmpeg${FFMPEG_SUFFIX} \
 USES=		pkgconfig iconv
 USE_GNOME=	libxml2
 USE_LDCONFIG=	yes
+USE_CXXSTD=	gnu++98
 
 # supported versions: ffmpeg, ffmpeg1, ffmpeg-devel
 # corresponding FFMPEG_SUFFIX: '', '1', '-devel'

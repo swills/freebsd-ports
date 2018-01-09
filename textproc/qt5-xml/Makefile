@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/qt5-xml/Makefile 372179 2014-11-05 09:39:21Z rakuco $
+# $FreeBSD: head/textproc/qt5-xml/Makefile 458293 2018-01-06 21:30:31Z rakuco $
 
 PORTNAME=	xml
 DISTVERSION=	${QT5_VERSION}
@@ -16,5 +16,11 @@ USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 
 BUILD_WRKSRC=	${WRKSRC}/src/${PORTNAME}
 INSTALL_WRKSRC=	${BUILD_WRKSRC}
+
+post-configure:
+.for d in src/xml
+	${MKDIR} ${WRKSRC}/${d}
+	cd ${WRKSRC}/${d} && ${SETENV} ${QMAKE_ENV} ${_QMAKE} ${QMAKE_ARGS} ${WRKSRC}/${d}
+.endfor
 
 .include <bsd.port.mk>

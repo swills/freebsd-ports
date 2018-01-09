@@ -1,8 +1,8 @@
 # Created by: Anish Mistry
-# $FreeBSD: head/sysutils/fusefs-sshfs/Makefile 453084 2017-10-28 21:36:28Z se $
+# $FreeBSD: head/sysutils/fusefs-sshfs/Makefile 458485 2018-01-08 21:58:18Z bofh $
 
 PORTNAME=	sshfs
-PORTVERSION=	3.3.0
+PORTVERSION=	3.3.1
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	sysutils
 PKGNAMEPREFIX=	fusefs-
@@ -21,6 +21,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	libfuse
 
 USE_GNOME=	glib20
+CFLAGS+=	-DNDEBUG
 
 PLIST_FILES=	bin/sshfs \
 		man/man1/sshfs.1.gz

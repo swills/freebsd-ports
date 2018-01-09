@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-digitalocean/Makefile 436177 2017-03-14 21:34:53Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-digitalocean/Makefile 458259 2018-01-06 13:51:03Z sunpoet $
 
 PORTNAME=	fog-digitalocean
 PORTVERSION=	0.3.0
+PORTREVISION=	1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

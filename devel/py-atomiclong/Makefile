@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/py-atomiclong/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-atomiclong/Makefile 458167 2018-01-05 20:02:03Z yuri $
 
 PORTNAME=	atomiclong
 PORTVERSION=	0.1.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -21,6 +21,9 @@ USE_PYTHON=	autoplist distutils
 
 post-patch:
 	@${REINPLACE_CMD} '/setup_requires/d' ${WRKSRC}/${PYSETUP}
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/_cffi__*.so
 
 do-test:
 	@(cd ${TEST_WRKSRC} && ${SETENV} ${TEST_ENV} ${PYTHON_CMD} -m pytest)

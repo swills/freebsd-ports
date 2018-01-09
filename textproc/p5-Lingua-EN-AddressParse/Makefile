@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/p5-Lingua-EN-AddressParse/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Lingua-EN-AddressParse/Makefile 458330 2018-01-07 12:13:21Z sunpoet $
 
 PORTNAME=	Lingua-EN-AddressParse
-PORTVERSION=	1.26
+PORTVERSION=	1.27
 CATEGORIES=	textproc perl5 geography
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

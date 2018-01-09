@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/elasticsearch/Makefile 449450 2017-09-08 12:58:08Z olgeni $
+# $FreeBSD: head/textproc/elasticsearch/Makefile 458513 2018-01-09 07:40:55Z mat $
 
 PORTNAME=	elasticsearch
 PORTVERSION=	1.7.6
@@ -77,7 +77,7 @@ SUB_LIST=	SEARCHUSER=${SEARCHUSER} \
 		SEARCHGROUP=${SEARCHGROUP} \
 		PORTVERSION=${PORTVERSION}
 SUB_FILES=	elasticsearch-plugin pkg-message
-PLIST_SUB=	SIGAR_ARCH=${SIGAR_ARCH} \
+PLIST_SUB+=	SIGAR_ARCH=${SIGAR_ARCH} \
 		SEARCHUSER=${SEARCHUSER} \
 		SEARCHGROUP=${SEARCHGROUP} \
 		LUCENEVER=${LUCENEVER} \

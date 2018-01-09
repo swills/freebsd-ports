@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/vegastrike/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/games/vegastrike/Makefile 458408 2018-01-08 13:21:10Z krion $
 
 PORTNAME=	vegastrike
 PORTVERSION=	0.5.1.r1
@@ -30,6 +30,7 @@ USE_XORG=	sm ice xi x11 xext xrender xinerama xi xrandr xcursor \
 USE_GNOME=	gtk20
 DOS2UNIX_GLOB=	*.cpp *.h
 EXTRACT_AFTER_ARGS=	--exclude boost
+LLD_UNSAFE=	yes
 
 # cegui and ffmpeg are not used yet
 CONFIGURE_ARGS=	--disable-cegui --disable-ffmpeg \

@@ -1,10 +1,10 @@
 # Created by: Oleg Ginzburg  (olevole@olevole.ru)
-# $FreeBSD: head/net-im/freetalk/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/net-im/freetalk/Makefile 458427 2018-01-08 15:20:57Z cpm $
 
 PORTNAME=	freetalk
 PORTVERSION=	4.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-im
 
 MAINTAINER=	olevole@olevole.ru

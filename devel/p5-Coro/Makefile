@@ -1,12 +1,11 @@
-# $FreeBSD: head/devel/p5-Coro/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Coro/Makefile 458443 2018-01-08 16:51:58Z sunpoet $
 
 PORTNAME=	Coro
-PORTVERSION=	6.51.3
+PORTVERSION=	6.514
 PORTEPOCH=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
-DISTNAME=	${PORTNAME}-${PORTVERSION:R}${PORTVERSION:E}
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Coroutine process abstraction for perl

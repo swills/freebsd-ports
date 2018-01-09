@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-jquery-atwho-rails/Makefile 435718 2017-03-08 16:52:21Z sunpoet $
+# $FreeBSD: head/www/rubygem-jquery-atwho-rails/Makefile 458332 2018-01-07 12:13:32Z sunpoet $
 
 PORTNAME=	jquery-atwho-rails
-PORTVERSION=	1.3.2
+PORTVERSION=	1.5.4
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

@@ -1,13 +1,13 @@
 # Created by: Munish Chopra <mchopra@engmail.uwaterloo.ca>
-# $FreeBSD: head/www/awstats/Makefile 431043 2017-01-10 00:09:38Z adamw $
+# $FreeBSD: head/www/awstats/Makefile 458496 2018-01-08 23:09:28Z dbaio $
 
 PORTNAME=	awstats
-PORTVERSION=	7.6
+PORTVERSION=	7.7
 PORTEPOCH=	1
 CATEGORIES=	www
 MASTER_SITES=	SF/${PORTNAME}/AWStats/${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	vidar@karlsen.tech
 COMMENT=	Free real-time logfile analyzer to get advanced web statistics
 
 LICENSE=	GPLv3

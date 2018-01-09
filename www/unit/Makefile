@@ -1,9 +1,8 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/unit/Makefile 455874 2017-12-09 19:46:42Z lwhsu $
+# $FreeBSD: head/www/unit/Makefile 458171 2018-01-05 21:09:27Z osa $
 
 PORTNAME=	unit
-PORTVERSION=	0.2
-PORTREVISION=	1
+PORTVERSION=	0.3
 CATEGORIES=	www
 MASTER_SITES=	https://unit.nginx.org/download/
 

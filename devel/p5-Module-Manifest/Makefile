@@ -1,9 +1,8 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/devel/p5-Module-Manifest/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Module-Manifest/Makefile 458475 2018-01-08 20:21:22Z bofh $
 
 PORTNAME=	Module-Manifest
-PORTVERSION=	1.08
-PORTREVISION=	2
+PORTVERSION=	1.09
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -21,5 +20,6 @@ TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>
