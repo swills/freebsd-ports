@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc48/Makefile 454798 2017-11-23 21:12:22Z gerald $
+# $FreeBSD: head/lang/gcc48/Makefile 458581 2018-01-09 22:08:45Z dim $
 
 PORTNAME=	gcc
 PORTVERSION=	4.8.5
@@ -119,6 +119,11 @@ SUB_LIST+=	TARGLIB=${TARGLIB}
 
 pre-everything::
 	@${ECHO_MSG} "Making GCC ${PORTVERSION} for ${CONFIGURE_TARGET} [${LANGUAGES}]"
+
+post-patch:
+	@${FIND} ${WRKSRC} -type f -name '*.[ch]' | \
+	    ${XARGS} ${EGREP} -l '"(HOST_WIDE|PLUGIN_COND)' | \
+	    ${XARGS} ${REINPLACE_CMD} -E -e 's/"(HOST_WIDE|PLUGIN_COND)/" \1/g'
 
 pre-configure:
 	cd ${WRKSRC} ; contrib/gcc_update --touch

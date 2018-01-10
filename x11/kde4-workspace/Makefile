@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kde4-workspace/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/x11/kde4-workspace/Makefile 458577 2018-01-09 21:47:55Z rakuco $
 
 PORTNAME=	kde-workspace
 PORTVERSION=	${KDE4_WORKSPACE_VERSION}
@@ -55,6 +55,10 @@ SHEBANG_FILES=	kwin/clients/oxygen/data/update_oxygen.pl
 USE_LDCONFIG=	yes
 
 KDE_APPLICATIONS_VERSION=	15.08.0
+
+# clang 6.0 defaults to -std=gnu++14, but the port fails with too many errors
+# when built in C++11 (or later) mode.
+USE_CXXSTD=	gnu++98
 
 CMAKE_ARGS=	-DCMAKE_REQUIRED_FLAGS:STRING="-L${LOCALBASE}/lib" \
 		-DBUILD_python:BOOL=OFF \

@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@Fluffy.Khv.RU>
-# $FreeBSD: head/sysutils/polkit-qt/Makefile 423333 2016-10-05 09:59:12Z tcberner $
+# $FreeBSD: head/sysutils/polkit-qt/Makefile 458561 2018-01-09 19:16:16Z danfe $
 
 PORTNAME=	polkit-qt
 PORTVERSION=	0.112.0
@@ -19,7 +19,6 @@ USES=		cmake:outsource pkgconfig tar:bzip2
 USE_GNOME=	glib20
 CMAKE_ARGS=	-DBUILD_EXAMPLES:BOOL=OFF \
 		-DBUILD_TEST:BOOL=OFF
-
 
 .if empty(PKGNAMESUFFIX)
 USES+=		kde:4

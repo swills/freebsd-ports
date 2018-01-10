@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-SebastianBergmann_PHPCPD/Makefile 455643 2017-12-06 11:55:20Z mat $
+# $FreeBSD: head/devel/pear-SebastianBergmann_PHPCPD/Makefile 458558 2018-01-09 18:44:07Z danfe $
 
 PORTNAME=	PHPCPD
 DISTVERSION=	2.0.0
@@ -28,8 +28,6 @@ GH_PROJECT=	${PORTNAME:tl}
 USE_PHP=	tokenizer
 
 NO_ARCH=	yes
-
-
 NO_BUILD=	yes
 
 PLIST_FILES=	${DATADIR}/phpcpd.php

@@ -1,5 +1,5 @@
 # Created by: Arne Lundberg <arlu@telia.com>
-# $FreeBSD: head/net/qadsl/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/net/qadsl/Makefile 458559 2018-01-09 19:06:33Z danfe $
 
 PORTNAME=	qadsl
 PORTVERSION=	1.3.3
@@ -33,6 +33,5 @@ post-patch:
 		'/echo $${CFLAGS}/s|^|#| ; \
 		 /echo $${CXXFLAGS}/s|^|#| ; \
 		 s|$$OPTIMIZER_CFLAGS||' ${WRKSRC}/configure
-
 
 .include <bsd.port.mk>

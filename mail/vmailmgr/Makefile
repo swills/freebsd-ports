@@ -1,5 +1,5 @@
 # Created by: Mij <mij@bitchx.it>
-# $FreeBSD: head/mail/vmailmgr/Makefile 390210 2015-06-21 13:45:22Z bapt $
+# $FreeBSD: head/mail/vmailmgr/Makefile 458557 2018-01-09 18:22:10Z danfe $
 
 PORTNAME=	vmailmgr
 PORTVERSION=	0.97
@@ -10,7 +10,6 @@ MASTER_SITES=	http://www.vmailmgr.org/current/	\
 
 MAINTAINER=	mij@bitchx.it
 COMMENT=	Virtual domain manager for qmail
-
 
 # get python paths (PYTHON_SITELIBDIR) in case we install the python API
 USES=			autoreconf gmake perl5 python

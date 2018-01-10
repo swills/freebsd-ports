@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/cgilib/Makefile 414458 2016-05-02 16:08:56Z zeising $
+# $FreeBSD: head/devel/cgilib/Makefile 458558 2018-01-09 18:44:07Z danfe $
 
 PORTNAME=	cgilib
 PORTVERSION=	0.7
@@ -33,7 +33,6 @@ PLIST_FILES=	include/cgi.h lib/libcgi.a lib/libcgi.so lib/libcgi.so.1 \
 		man/man3/cgiRedirect.3.gz \
 		man/man3/cgiSetHeader.3.gz \
 		man/man3/cgiSetType.3.gz
-
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/cgi.h ${STAGEDIR}${PREFIX}/include

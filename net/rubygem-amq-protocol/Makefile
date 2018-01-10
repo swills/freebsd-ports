@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-amq-protocol/Makefile 440660 2017-05-11 21:02:36Z sunpoet $
+# $FreeBSD: head/net/rubygem-amq-protocol/Makefile 458548 2018-01-09 16:41:07Z sunpoet $
 
 PORTNAME=	amq-protocol
-PORTVERSION=	2.2.0
+PORTVERSION=	2.3.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

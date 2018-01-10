@@ -1,5 +1,5 @@
 # Created by: Ralf S. Engelschall <rse@gnu.org>
-# $FreeBSD: head/devel/pth/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/devel/pth/Makefile 458558 2018-01-09 18:44:07Z danfe $
 
 PORTNAME=	pth
 PORTVERSION=	2.0.7
@@ -20,7 +20,6 @@ CONFIGURE_ARGS=	--enable-optimize \
 		--libdir="${PREFIX}/lib/pth"
 USES=		libtool
 USE_LDCONFIG=	${PREFIX}/lib/pth
-
 
 OPTIONS_DEFINE=	OPTIMIZED_CFLAGS
 OPTIONS_DEFAULT=	OPTIMIZED_CFLAGS

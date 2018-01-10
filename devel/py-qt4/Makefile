@@ -1,5 +1,5 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/devel/py-qt4/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-qt4/Makefile 458563 2018-01-09 20:06:34Z jrm $
 
 PORTNAME=	qt4
 PORTVERSION=	${PYQT4_VERSION}
@@ -12,6 +12,7 @@ COMMENT=	Python bindings for the Qt 4 toolkit (meta port)
 USES=		metaport python pyqt:4
 USE_PYTHON=	flavors
 
+# Keep these synchronized with _USE_PYQT_ALL / _USE_PYQT4_ONLY in Mk/Use/pyqt.mk
 OPTIONS_DEFINE=		assistant core dbus dbussupport declarative \
 			demo designer designerplugin doc gui help \
 			multimedia network opengl phonon qscintilla2 \

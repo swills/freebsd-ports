@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/sysutils/dvdvideo/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/sysutils/dvdvideo/Makefile 458616 2018-01-10 09:00:50Z amdmi3 $
 
 PORTNAME=	dvdvideo
 PORTVERSION=	20130117
@@ -13,6 +13,7 @@ MAINTAINER=	martymac@FreeBSD.org
 COMMENT=	Video DVD backup tool
 
 LICENSE=	GPLv3
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 NO_ARCH=	yes
 USES=		python:3.4+ tar:tgz

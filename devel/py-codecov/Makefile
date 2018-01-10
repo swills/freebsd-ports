@@ -1,8 +1,8 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/devel/py-codecov/Makefile 455740 2017-12-07 17:02:12Z cpm $
+# $FreeBSD: head/devel/py-codecov/Makefile 458529 2018-01-09 14:06:04Z cpm $
 
 PORTNAME=	codecov
-PORTVERSION=	2.0.10
+PORTVERSION=	2.0.13
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,6 +11,7 @@ MAINTAINER=	cpm@FreeBSD.org
 COMMENT=	Hosted coverage reports for Github, Bitbucket and Gitlab
 
 LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>0:devel/py-coverage@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests>=2.7.9:www/py-requests@${FLAVOR}

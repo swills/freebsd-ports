@@ -1,9 +1,10 @@
 # Created by: Andreas Kohn <andreas@syndrom23.de>
-# $FreeBSD: head/devel/libnotify/Makefile 437532 2017-04-02 08:40:04Z bapt $
+# $FreeBSD: head/devel/libnotify/Makefile 458520 2018-01-09 10:25:24Z tijl $
 #   $MCom: ports/trunk/devel/libnotify/Makefile 19813 2014-08-15 19:44:33Z gusi $
 
 PORTNAME=	libnotify
 PORTVERSION=	0.7.7
+PORTREVISION=	1
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 
@@ -13,8 +14,8 @@ COMMENT=	Library for desktop notifications
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gettext gmake libtool localbase pathfix pkgconfig tar:xz
-USE_GNOME=	intlhack glib20 gdkpixbuf2 introspection
+USES=		gmake libtool pkgconfig tar:xz
+USE_GNOME=	glib20 gdkpixbuf2 introspection:build
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.sanity.mk 458513 2018-01-09 07:40:55Z mat $
+# $FreeBSD: head/Mk/bsd.sanity.mk 458521 2018-01-09 11:45:22Z mat $
 #
 # MAINTAINER: portmgr@FreeBSD.org
 #
@@ -231,9 +231,9 @@ INSTALLS_EGGINFO_ALT=	an entry in the plist
 WANT_SDL_ALT=		USE_SDL for SDL directly, if you need optional dependency, use options
 RUBYGEM_AUTOPLIST_ALT=	USES=gem
 USE_RUBYGEMS_ALT=	USES=gem
-USE_GHOSTSCRIPT=	USES=ghostscript
-USE_GHOSTSCRIPT_BUILD=	USES=ghostscript
-USE_GHOSTSCRIPT_RUN=	USES=ghostscript
+USE_GHOSTSCRIPT_ALT=	USES=ghostscript
+USE_GHOSTSCRIPT_BUILD_ALT=	USES=ghostscript
+USE_GHOSTSCRIPT_RUN_ALT=	USES=ghostscript
 NO_STAGE_ALT=	https://wiki.freebsd.org/ports/StageDir to convert your port to staging
 
 .for a in ${SANITY_DEPRECATED}

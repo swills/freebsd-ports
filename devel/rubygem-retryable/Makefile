@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-retryable/Makefile 427678 2016-12-03 19:31:32Z sunpoet $
+# $FreeBSD: head/devel/rubygem-retryable/Makefile 458599 2018-01-10 06:40:10Z sunpoet $
 
 PORTNAME=	retryable
-PORTVERSION=	2.0.4
+PORTVERSION=	3.0.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

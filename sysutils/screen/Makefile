@@ -1,5 +1,5 @@
 # Created by: Andrey Chernov <ache@FreeBSD.org>
-# $FreeBSD: head/sysutils/screen/Makefile 458511 2018-01-09 07:25:51Z cy $
+# $FreeBSD: head/sysutils/screen/Makefile 458569 2018-01-09 20:41:44Z cy $
 
 PORTNAME=	screen
 PORTVERSION=	4.6.2
@@ -11,7 +11,7 @@ MASTER_SITES=	GNU \
 		http://mirror.sdunix.com/gnu/ \
 		ftp://mirrors.kernel.org/gnu/screen/ \
 		http://cschubert.com/distfiles/ \
-		http://people.freebsd.org/~cy/distfiles/
+		LOCAL/cy
 
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Multi-screen window manager

@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/net/polyorb/Makefile 456126 2017-12-12 12:40:15Z antoine $
+# $FreeBSD: head/net/polyorb/Makefile 458559 2018-01-09 19:06:33Z danfe $
 
 PORTNAME=	polyorb
 PORTVERSION=	2.11.1
@@ -47,7 +47,6 @@ OPTIONS_SUB=	yes
 TESTSUITE_ALL_TARGET=	testsuite
 TESTSUITE_BUILD_DEPENDS=gnatpython>=20101207:devel/gnatpython
 TESTSUITE_DESC=		Enable 'make run-testsuite' target
-
 
 .include <bsd.port.options.mk>
 

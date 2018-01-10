@@ -1,9 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/tk86/Makefile 458018 2018-01-04 08:54:45Z gahr $
+# $FreeBSD: head/x11-toolkits/tk86/Makefile 458615 2018-01-10 08:22:03Z gahr $
 
 PORTNAME=	tk
 PORTVERSION=	8.6.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	SF/tcl/Tcl/${PORTVERSION} TCLTK/tcl8_6
 PKGNAMESUFFIX=	${PORTVERSION:R:S/.//}

@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/devel/allegro-devel/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/devel/allegro-devel/Makefile 458558 2018-01-09 18:44:07Z danfe $
 
 PORTNAME=	allegro
 DISTVERSION=	5.0.9
@@ -119,7 +119,6 @@ post-install:
 	${STRIP_CMD} ${STAGEDIR}${EXAMPLESDIR}/${l}
 . endfor
 .endif
-
 
 .if ${PORT_OPTIONS:MDEMOS} && ${PORT_OPTIONS:MEXAMPLES}
 	@(cd ${WRKSRC} && ${COPYTREE_SHARE} demos ${STAGEDIR}${EXAMPLESDIR})

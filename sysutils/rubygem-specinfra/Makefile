@@ -1,8 +1,8 @@
 # Created by: Yuichiro NAITO <naito.yuichiro@gmail.com>
-# $FreeBSD: head/sysutils/rubygem-specinfra/Makefile 445295 2017-07-08 02:47:08Z swills $
+# $FreeBSD: head/sysutils/rubygem-specinfra/Makefile 458530 2018-01-09 14:28:10Z swills $
 
 PORTNAME=	specinfra
-PORTVERSION=	2.68.0
+PORTVERSION=	2.73.0
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 

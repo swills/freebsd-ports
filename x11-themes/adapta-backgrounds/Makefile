@@ -1,16 +1,16 @@
 # Created by: Nicola Stanislao Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/x11-themes/adapta-backgrounds/Makefile 446315 2017-07-21 13:37:04Z nivit $
+# $FreeBSD: head/x11-themes/adapta-backgrounds/Makefile 458565 2018-01-09 20:23:04Z nivit $
 
 PORTNAME=	adapta-backgrounds
-PORTVERSION=	0.4.0.6
+PORTVERSION=	0.5.2.3
 CATEGORIES=	x11-themes
 
 MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Wallpaper collection for adapta-project
 
-LICENSE=	GPLv2 CC-BY-SA-3.0
+LICENSE=	GPLv2 CC-BY-SA-4.0
 LICENSE_COMB=	multi
-LICENSE_FILE_CC-BY-SA-3.0=	${WRKSRC}/LICENSE_CC_BY_SA3
+LICENSE_FILE_CC-BY-SA-4.0=	${WRKSRC}/LICENSE_CC_BY_SA4
 LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING
 
 DOCS_MAKE_ENV=	ADAPTA_BG_DOCS=yes

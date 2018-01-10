@@ -1,5 +1,5 @@
 # Created by: Lung-Pin Chang <changlp@cs.nctu.edu.tw>
-# $FreeBSD: head/net/p5-WebService-Dropbox/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-WebService-Dropbox/Makefile 458559 2018-01-09 19:06:33Z danfe $
 
 PORTNAME=	WebService-Dropbox
 PORTVERSION=	2.07
@@ -13,7 +13,6 @@ COMMENT=	Perl interface to Dropbox API
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
 
 MY_DEPENDS=	p5-HTTP-Message>=6.06:www/p5-HTTP-Message \
 		p5-JSON>=2.59:converters/p5-JSON \

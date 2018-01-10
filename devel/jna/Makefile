@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/jna/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/devel/jna/Makefile 458527 2018-01-09 13:09:47Z vanilla $
 
 PORTNAME=	jna
-PORTVERSION=	4.5.0
+PORTVERSION=	4.5.1
 CATEGORIES=	devel java
 
 MAINTAINER=	ports@FreeBSD.org

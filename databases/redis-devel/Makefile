@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/redis-devel/Makefile 455564 2017-12-05 03:26:36Z osa $
+# $FreeBSD: head/databases/redis-devel/Makefile 458592 2018-01-10 03:24:40Z adamw $
 
 PORTNAME=	redis
 DISTVERSION=	4.0.6
@@ -11,8 +11,6 @@ MAINTAINER=	osa@FreeBSD.org
 COMMENT=	Persistent key-value database with built-in net interface
 
 LICENSE=	BSD3CLAUSE
-
-BROKEN_i386=	undefined reference to __atomic_fetch_add_8
 
 OPTIONS_DEFINE=	TESTS TRIB
 OPTIONS_RADIO=	EXTLUA
@@ -27,6 +25,7 @@ TRIB_DESC=	Install redis-trib.rb (lang/ruby req.)
 
 .if ${ARCH} == i386 && ! ${CFLAGS:M-march=*}
 # Needed for __atomic_fetch_add_8
+USE_GCC=	yes
 CFLAGS+=	-march=i586
 .endif
 

@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-t/Makefile 431524 2017-01-15 04:17:49Z sunpoet $
+# $FreeBSD: head/net/rubygem-t/Makefile 458600 2018-01-10 06:40:15Z sunpoet $
 
 PORTNAME=	t
 PORTVERSION=	3.1.0
+PORTREVISION=	1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

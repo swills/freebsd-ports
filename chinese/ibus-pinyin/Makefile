@@ -1,5 +1,5 @@
 # Created by: Henry Hu <henry.hu.sh@gmail.com>
-# $FreeBSD: head/chinese/ibus-pinyin/Makefile 456048 2017-12-11 16:48:54Z antoine $
+# $FreeBSD: head/chinese/ibus-pinyin/Makefile 458586 2018-01-09 23:59:55Z yuri $
 
 PORTNAME=	ibus-pinyin
 PORTVERSION=	1.5.0
@@ -17,20 +17,17 @@ LIB_DEPENDS=	libpyzy-1.0.so:chinese/pyzy \
 		libibus-1.0.so:textproc/ibus \
 		libsqlite3.so:databases/sqlite3
 
-USES=		compiler:c++11-lib gmake pkgconfig python autoreconf libtool
-USE_GNOME=	glib20
+USES=		compiler:c++11-lib gmake pkgconfig python autoreconf libtool gettext
+USE_GITHUB=	yes
+GH_ACCOUNT=	ibus
+USE_GNOME=	glib20 intltool
 USE_PYTHON=	py3kplist
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-dependency-tracking --disable-lua-extension
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	ibus
-
 OPTIONS_DEFINE=	NLS
 OPTIONS_SUB=	yes
 
-NLS_USES=	gettext
-NLS_USE=	GNOME=intltool
 NLS_CONFIGURE_ENABLE=	nls
 
 .include <bsd.port.mk>

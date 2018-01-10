@@ -1,5 +1,5 @@
 # Created by: Horst Leitenmueller <horst.leitenmueller@liwest.at>
-# $FreeBSD: head/mail/openemm2015/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/mail/openemm2015/Makefile 458557 2018-01-09 18:22:10Z danfe $
 
 PORTNAME=	openemm2015
 PORTVERSION=	0
@@ -196,7 +196,6 @@ do-install:
 
 	(cd ${STAGEDIR}${PREFIX}/${PORTNAME}/webapps/ && \
 		${LN} -sf openemm/assets openemmassets)
-
 
 	# as needed from Running Q/A tests (stage-qa)
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${PORTNAME}/bin/bav

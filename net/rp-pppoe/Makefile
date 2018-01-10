@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <liouxFreeBSD.org>
-# $FreeBSD: head/net/rp-pppoe/Makefile 405808 2016-01-11 21:20:50Z mandree $
+# $FreeBSD: head/net/rp-pppoe/Makefile 458559 2018-01-09 19:06:33Z danfe $
 
 PORTNAME=	rp-pppoe
 PORTVERSION=	3.12
@@ -13,7 +13,6 @@ GNU_CONFIGURE=	yes
 PATCH_WRKSRC=	${WRKSRC}/src
 CONFIGURE_WRKSRC=	${WRKSRC}/src
 BUILD_WRKSRC=	${WRKSRC}/src
-
 
 man5=	pppoe.conf.5
 man8=	pppoe-connect.8 pppoe-setup.8 pppoe-start.8 pppoe-status.8 \

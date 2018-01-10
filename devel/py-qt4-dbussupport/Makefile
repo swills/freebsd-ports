@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-qt4-dbussupport/Makefile 457921 2018-01-02 20:21:34Z rakuco $
+# $FreeBSD: head/devel/py-qt4-dbussupport/Makefile 458558 2018-01-09 18:44:07Z danfe $
 
 PORTNAME=	dbussupport
 CATEGORIES=	devel python
@@ -8,7 +8,6 @@ COMMENT=	Qt event loop support for dbus-python
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0.8:devel/py-dbus@${FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0.8:devel/py-dbus@${FLAVOR}
-
 
 CONFIGURE_ARGS=	--enable QtCore
 PYQT_DIST=	yes
