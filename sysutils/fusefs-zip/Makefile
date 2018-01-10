@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/fusefs-zip/Makefile 450775 2017-09-27 18:08:14Z rakuco $
+# $FreeBSD: head/sysutils/fusefs-zip/Makefile 458542 2018-01-09 15:59:35Z novel $
 
 PORTNAME=	fuse-zip
-PORTVERSION=	0.4.2
-PORTREVISION=	1
+PORTVERSION=	0.4.4
 CATEGORIES=	sysutils
 MASTER_SITES=	https://bitbucket.org/agalanin/fuse-zip/downloads/
 
@@ -17,7 +16,7 @@ BUILD_DEPENDS=	libzip>=0.11.1:archivers/libzip
 USES=		gmake fuse pkgconfig
 
 PLIST_FILES=	bin/${PORTNAME} man/man1/${PORTNAME}.1.gz
-PORTDOCS=	README changelog
+PORTDOCS=	README.md changelog
 
 OPTIONS_DEFINE=	DOCS
 

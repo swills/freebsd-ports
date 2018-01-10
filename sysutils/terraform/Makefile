@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/terraform/Makefile 455298 2017-12-01 16:12:28Z lifanov $
+# $FreeBSD: head/sysutils/terraform/Makefile 458561 2018-01-09 19:16:16Z danfe $
 
 PORTNAME=	terraform
 PORTVERSION=	0.11.1
@@ -23,6 +23,5 @@ GO_PKGNAME=	github.com/${GH_ACCOUNT}/${PORTNAME}
 post-patch:
 	${REINPLACE_CMD} 's|Prerelease = "dev"|Prerelease = ""|' \
 		${WRKSRC}/version/version.go
-
 
 .include <bsd.port.mk>

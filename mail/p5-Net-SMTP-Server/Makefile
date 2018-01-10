@@ -1,5 +1,5 @@
 # Created by: Kimura Fuyuki <fuyuki@mj.0038.net>
-# $FreeBSD: head/mail/p5-Net-SMTP-Server/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/p5-Net-SMTP-Server/Makefile 458557 2018-01-09 18:22:10Z danfe $
 
 PORTNAME=	Net-SMTP-Server
 PORTVERSION=	1.1
@@ -17,7 +17,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-Net-DNS>=0:dns/p5-Net-DNS
 RUN_DEPENDS:=	${BUILD_DEPENDS}
-
 
 USES=		perl5
 USE_PERL5=	configure

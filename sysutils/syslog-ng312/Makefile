@@ -1,5 +1,5 @@
 # Created by: Ivan Lago <ivan.lago@ifom-ieo-campus.it>
-# $FreeBSD: head/sysutils/syslog-ng312/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
+# $FreeBSD: head/sysutils/syslog-ng312/Makefile 458561 2018-01-09 19:16:16Z danfe $
 
 PORTNAME=	syslog-ng
 DISTVERSION=	3.12.1
@@ -68,7 +68,6 @@ SPOOF_CONFIGURE_ENABLE=		spoof-source
 SPOOF_CONFIGURE_ON=		--with-libnet=/usr/local/bin
 SPOOF_CONFIGURE_ENV=		LIBNET_CFLAGS="-I/usr/local/include" \
 				LIBNET_LIBS="-L/usr/local/lib -lnet"
-
 
 IPV6_CONFIGURE_ENABLE=		ipv6
 

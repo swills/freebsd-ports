@@ -1,5 +1,5 @@
 # Created by: Alan Eldridge <alane@geeksrus.net>
-# $FreeBSD: head/print/cups/Makefile 453352 2017-11-02 17:03:32Z tijl $
+# $FreeBSD: head/print/cups/Makefile 458595 2018-01-10 03:54:34Z jhibbits $
 
 PORTNAME=	cups
 PORTVERSION=	2.2.6
@@ -103,6 +103,9 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|\.default|.sample|'\
 		${WRKSRC}/cgi-bin/admin.c\
 		${WRKSRC}/conf/Makefile
+.if !empty(ARCH:Mpowerpc*)
+	@${REINPLACE_CMD} -e 's|@PIEFLAGS@||g' ${WRKSRC}/Makedefs.in
+.endif
 
 post-patch-DOCS-off:
 # Link to online documentation.

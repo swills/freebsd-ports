@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-darcsver/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-darcsver/Makefile 458558 2018-01-09 18:44:07Z danfe $
 
 PORTNAME=	darcsver
 PORTVERSION=	1.7.4
@@ -16,6 +16,5 @@ USE_PYTHON=	distutils autoplist
 
 post-patch:
 	@${REINPLACE_CMD} -e 's#(doc_loc, data_fnames)##g' ${WRKSRC}/setup.py
-
 
 .include <bsd.port.mk>

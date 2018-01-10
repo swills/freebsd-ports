@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 458457 2018-01-08 17:11:27Z krion $
+# $FreeBSD: head/security/Makefile 458556 2018-01-09 16:54:30Z pizzamig $
 #
 
     COMMENT = Security tools
@@ -803,6 +803,7 @@
     SUBDIR += pecl-gnupg
     SUBDIR += pecl-krb5
     SUBDIR += pecl-libsodium
+    SUBDIR += pecl-mcrypt
     SUBDIR += pecl-pam
     SUBDIR += pecl-scrypt
     SUBDIR += pecl-ssh2

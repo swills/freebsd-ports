@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 458352 2018-01-07 15:51:42Z sunpoet $
+# $FreeBSD: head/net/Makefile 458570 2018-01-09 20:51:38Z zi $
 #
 
     COMMENT = Networking tools
@@ -284,6 +284,9 @@
     SUBDIR += isc-dhcp43-client
     SUBDIR += isc-dhcp43-relay
     SUBDIR += isc-dhcp43-server
+    SUBDIR += isc-dhcp44-client
+    SUBDIR += isc-dhcp44-relay
+    SUBDIR += isc-dhcp44-server
     SUBDIR += istgt
     SUBDIR += jags
     SUBDIR += jakarta-commons-net

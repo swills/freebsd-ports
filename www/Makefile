@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 458436 2018-01-08 16:42:07Z feld $
+# $FreeBSD: head/www/Makefile 458563 2018-01-09 20:06:34Z jrm $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1830,6 +1830,8 @@
     SUBDIR += py-qp
     SUBDIR += py-qpy
     SUBDIR += py-qt4-webkit
+    SUBDIR += py-qt5-webchannel
+    SUBDIR += py-qt5-webengine
     SUBDIR += py-qt5-webkit
     SUBDIR += py-qt5-webkitwidgets
     SUBDIR += py-rackspace-monitoring
@@ -2181,6 +2183,7 @@
     SUBDIR += rubygem-sinatra-r18n
     SUBDIR += rubygem-sinatra-respond_to
     SUBDIR += rubygem-sinatra1
+    SUBDIR += rubygem-smashing
     SUBDIR += rubygem-socksify
     SUBDIR += rubygem-task_list
     SUBDIR += rubygem-thin

@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-multi_json/Makefile 449372 2017-09-06 20:06:49Z sunpoet $
+# $FreeBSD: head/devel/rubygem-multi_json/Makefile 458610 2018-01-10 06:41:07Z sunpoet $
 
 PORTNAME=	multi_json
-PORTVERSION=	1.12.2
+PORTVERSION=	1.13.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

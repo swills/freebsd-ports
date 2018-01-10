@@ -1,5 +1,5 @@
 # Created by: ajk@waterspout.com
-# $FreeBSD: head/devel/mkcmd/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/mkcmd/Makefile 458558 2018-01-09 18:44:07Z danfe $
 
 PORTNAME=	mkcmd
 PORTVERSION=	8.14
@@ -8,7 +8,6 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.physics.purdue.edu/pub/pundits/ \
 		http://www.komquats.com/distfiles/ \
 		http://people.freebsd.org/~cy/distfiles/
-
 
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Command-line parser and manual page generator

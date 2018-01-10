@@ -1,8 +1,8 @@
 # Created by: Yuichiro NAITO <naito.yuichiro@gmail.com>
-# $FreeBSD: head/sysutils/rubygem-serverspec/Makefile 445296 2017-07-08 02:56:12Z swills $
+# $FreeBSD: head/sysutils/rubygem-serverspec/Makefile 458531 2018-01-09 14:30:08Z swills $
 
 PORTNAME=	serverspec
-PORTVERSION=	2.39.1
+PORTVERSION=	2.41.3
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 RUN_DEPENDS=	rubygem-multi_json>=0:devel/rubygem-multi_json \
 		rubygem-rspec>=3.0:devel/rubygem-rspec \
 		rubygem-rspec-its>=1.2.0:devel/rubygem-rspec-its \
-		rubygem-specinfra>=2.53:sysutils/rubygem-specinfra
+		rubygem-specinfra>=2.72:sysutils/rubygem-specinfra
 
 NO_ARCH=	yes
 USE_RUBY=	yes

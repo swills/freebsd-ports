@@ -1,9 +1,8 @@
 # Created by: Yinghong Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/devel/etl/Makefile 434587 2017-02-22 15:02:18Z bapt $
+# $FreeBSD: head/devel/etl/Makefile 458541 2018-01-09 15:57:07Z woodsb02 $
 
 PORTNAME=	etl
-PORTVERSION=	0.04.19
-PORTREVISION=	1
+PORTVERSION=	1.2.1
 CATEGORIES=	devel lang
 MASTER_SITES=	SF/synfig/releases/${SYNFIG_VERSION}/source/
 DISTNAME=	ETL-${PORTVERSION}
@@ -17,7 +16,7 @@ NO_ARCH=	yes
 
 OPTIONS_DEFINE=	DOCS
 
-SYNFIG_VERSION=	1.0.2
+SYNFIG_VERSION=	1.2.1
 
 USES=		pathfix pkgconfig
 GNU_CONFIGURE=	yes

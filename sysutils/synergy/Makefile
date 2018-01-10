@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/synergy/Makefile 457710 2017-12-31 17:30:12Z danfe $
+# $FreeBSD: head/sysutils/synergy/Makefile 458561 2018-01-09 19:16:16Z danfe $
 
 PORTNAME=	synergy
 PORTVERSION=	1.8.8
@@ -11,7 +11,6 @@ COMMENT=	Mouse and keyboard sharing utility
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 

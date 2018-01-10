@@ -1,5 +1,5 @@
 # Created by: Simon Barner <barner@gmx.de>
-# $FreeBSD: head/devel/valgrind-devel/Makefile 453198 2017-10-30 17:13:31Z bdrewery $
+# $FreeBSD: head/devel/valgrind-devel/Makefile 458558 2018-01-09 18:44:07Z danfe $
 
 PORTNAME=	valgrind
 PORTVERSION=	3.10.1.20160113
@@ -34,7 +34,6 @@ OPTIONS_DEFAULT_amd64=	32BIT
 .endif
 32BIT_DESC=	Enable debugging of 32-bit programs (requires lib32)
 MPI_DESC=	Enable build of MPI wrappers
-
 
 DOCS_BUILD_DEPENDS=    docbook-xsl>=0:textproc/docbook-xsl \
                        xsltproc:textproc/libxslt

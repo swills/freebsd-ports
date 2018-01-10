@@ -1,5 +1,5 @@
 # Created by: Weongyo Jeong <weongyo@FreeBSD.org>
-# $FreeBSD: head/net/bwn-firmware-kmod/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/net/bwn-firmware-kmod/Makefile 458559 2018-01-09 19:06:33Z danfe $
 
 PORTNAME=	bwn-firmware
 PORTVERSION=	0.1.2
@@ -99,7 +99,6 @@ do-build:
 		${WRKSRC}/n/v4/Makefile
 	@${ECHO_CMD} ".include <bsd.kmod.mk>" >> ${WRKSRC}/n/v4/Makefile
 	@cd ${WRKSRC}/n/v4; make all
-
 
 do-install:
 	@cd ${WRKSRC}/bg/v4; ${SETENV} ${MAKE_ENV} KMODDIR="${STAGEDIR}${KMODDIR}" make install

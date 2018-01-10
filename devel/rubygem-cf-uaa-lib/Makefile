@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/rubygem-cf-uaa-lib/Makefile 457408 2017-12-27 19:53:07Z sunpoet $
+# $FreeBSD: head/devel/rubygem-cf-uaa-lib/Makefile 458606 2018-01-10 06:40:46Z sunpoet $
 
 PORTNAME=	cf-uaa-lib
 PORTVERSION=	3.13.0
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

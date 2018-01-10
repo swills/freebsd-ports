@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/mail/thunderbird-i18n/Makefile 457009 2017-12-22 23:54:32Z jbeich $
+# $FreeBSD: head/mail/thunderbird-i18n/Makefile 458557 2018-01-09 18:22:10Z danfe $
 
 PORTNAME=	thunderbird-i18n
 PORTVERSION=	52.5.2
@@ -56,7 +56,6 @@ do-extract:
 	done
 	${CAT} ${PLISTF} | ${SORT} >> ${PLIST}
 
-
 do-install:
 	@${MKDIR} ${STAGEDIR}${XPI_LIBDIR} ${XPI_LINKFARMS:S,^,${STAGEDIR},}
 	cd ${WRKSRC}; ${PAX} -rw . ${STAGEDIR}${XPI_LIBDIR}
@@ -78,5 +77,4 @@ list-langs:
 		${AWK} 'BEGIN{ORS=" "}{print $$1}END{printf "\nNumber of languages: %d\n",NR}'
 
 .include "${.CURDIR}/../../www/xpi-adblock/Makefile.xpi"
-
 .include <bsd.port.post.mk>

@@ -1,5 +1,5 @@
 # Created by: Michael L. Hostbaek (mich@freebsdcluster.org)
-# $FreeBSD: head/sysutils/finfo/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/sysutils/finfo/Makefile 458561 2018-01-09 19:16:16Z danfe $
 
 PORTNAME=	finfo
 PORTVERSION=	0.1
@@ -10,7 +10,6 @@ MAINTAINER=	mich@FreeBSD.org
 COMMENT=	Finfo displays potentially useful information about a file
 
 PLIST_FILES=	bin/finfo man/man1/finfo.1.gz
-
 
 do-build:
 	(cd ${WRKSRC} && ${CC} ${CFLAGS} -o ${PORTNAME} ${PORTNAME}.c)

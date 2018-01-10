@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 458479 2018-01-08 20:53:35Z pi $
+# $FreeBSD: head/misc/Makefile 458560 2018-01-09 19:10:45Z pi $
 #
 
     COMMENT = Miscellaneous utilities
@@ -264,6 +264,7 @@
     SUBDIR += loop
     SUBDIR += lv
     SUBDIR += lxde-common
+    SUBDIR += lxi-tools
     SUBDIR += magicpoint
     SUBDIR += man.el
     SUBDIR += mbuffer

@@ -1,8 +1,9 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/net/mrouted/Makefile 430358 2017-01-02 14:53:15Z hrs $
+# $FreeBSD: head/net/mrouted/Makefile 458619 2018-01-10 10:30:23Z pi $
 
 PORTNAME=	mrouted
 PORTVERSION=	3.9.8
+PORTREVISION=	1
 CATEGORIES=	net
 
 MAINTAINER=	hrs@FreeBSD.org

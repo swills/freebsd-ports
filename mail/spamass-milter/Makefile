@@ -1,5 +1,5 @@
 # Created by: Eugene M. Kim <ab@astralblue.net>
-# $FreeBSD: head/mail/spamass-milter/Makefile 435352 2017-03-03 16:51:49Z bmah $
+# $FreeBSD: head/mail/spamass-milter/Makefile 458557 2018-01-09 18:22:10Z danfe $
 
 PORTNAME=	spamass-milter
 PORTVERSION=	0.4.0
@@ -14,7 +14,6 @@ BUILD_DEPENDS=	spamc:mail/spamassassin
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 LICENSE=	GPLv2
-
 
 OPTIONS_DEFINE=	LDAP SENDMAIL_PORT DOCS
 SENDMAIL_PORT_DESC=	Build against sendmail port
@@ -58,5 +57,4 @@ post-install:
 .endif
 
 .include "${PORTSDIR}/mail/sendmail/bsd.milter.mk"
-
 .include <bsd.port.post.mk>

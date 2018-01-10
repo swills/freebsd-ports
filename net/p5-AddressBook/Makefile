@@ -1,5 +1,5 @@
 # Created by: Brian Somers <brian@FreeBSD.org>
-# $FreeBSD: head/net/p5-AddressBook/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-AddressBook/Makefile 458559 2018-01-09 19:06:33Z danfe $
 
 PORTNAME=	AddressBook
 PORTVERSION=	0.16
@@ -11,7 +11,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 module providing an LDAP addressbook interface
-
 
 BUILD_DEPENDS=	p5-Date-Manip>=0:devel/p5-Date-Manip \
 		p5-XML-DOM>=0:textproc/p5-XML-DOM

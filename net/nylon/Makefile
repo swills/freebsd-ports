@@ -1,5 +1,5 @@
 # Created by: William Ward <William.Ward@ericsson.com>
-# $FreeBSD: head/net/nylon/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/net/nylon/Makefile 458559 2018-01-09 19:06:33Z danfe $
 
 PORTNAME=	nylon
 PORTVERSION=	1.21
@@ -19,7 +19,6 @@ GNU_CONFIGURE=	yes
 # Necessary for $PREFIX to work:
 CONFIGURE_ARGS=	--with-libevent=yes
 CONFIGURE_ENV=	EVENTLIB="`pkgconf --libs libevent`" EVENTINC="`pkgconf --cflags libevent`"
-
 
 PLIST_FILES=	bin/nylon etc/nylon.conf.sample man/man1/nylon.1.gz
 
