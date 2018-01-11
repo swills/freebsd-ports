@@ -1,5 +1,5 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/security/openvas8/Makefile 447483 2017-08-07 03:48:23Z acm $
+# $FreeBSD: head/security/openvas8/Makefile 458754 2018-01-11 16:24:53Z danfe $
 
 PORTNAME=	openvas8
 PORTVERSION=	8.0
@@ -28,6 +28,5 @@ RUN_DEPENDS+=	${LOCALBASE}/sbin/gsad:security/greenbone-security-assistant${OPEN
 
 SUB_FILES=	pkg-message
 OPENVAS_VER=	8
-
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Colin Booth <colin@heliocat.net>
-# $FreeBSD: head/sysutils/s6/Makefile 428504 2016-12-13 15:45:52Z amdmi3 $
+# $FreeBSD: head/sysutils/s6/Makefile 458735 2018-01-11 13:46:32Z pi $
 
 PORTNAME=	s6
-PORTVERSION=	2.4.0.0
+PORTVERSION=	2.7.0.0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.skarnet.org/software/${PORTNAME}/
 

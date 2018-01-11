@@ -1,5 +1,5 @@
 # Created by: sumikawa
-# $FreeBSD: head/security/racoon2/Makefile 455421 2017-12-03 19:22:12Z rene $
+# $FreeBSD: head/security/racoon2/Makefile 458731 2018-01-11 13:35:59Z tijl $
 
 PORTNAME=	racoon2
 PORTVERSION=	20100526a
@@ -14,7 +14,6 @@ USES=		perl5 tar:tgz ssl
 CONFIGURE_ARGS+=	--disable-kinkd
 PLIST_SUB+=	KINK="@comment "
 
-USE_AUTOTOOLS=	autoconf
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--prefix=${STAGEDIR}${PREFIX}
 CONFIGURE_ARGS+=	--sysconfdir=${PREFIX}/etc/racoon2

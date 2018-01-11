@@ -1,8 +1,8 @@
 # Created by: Erik Greenwald <erik@smluc.org>
-# $FreeBSD: head/sysutils/x86info/Makefile 442093 2017-05-30 15:23:06Z sunpoet $
+# $FreeBSD: head/sysutils/x86info/Makefile 458760 2018-01-11 17:57:44Z sbruno $
 
 PORTNAME=	x86info
-DISTVERSION=	1.31snap01
+DISTVERSION=	1.31snap02
 CATEGORIES=	sysutils
 
 MAINTAINER=	ports@FreeBSD.org
@@ -17,7 +17,7 @@ ONLY_FOR_ARCHS=	i386 amd64
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	kernelslacker
-GH_TAGNAME=	636fbaa
+GH_TAGNAME=	b7d0839
 
 USES=		gmake pkgconfig python:build
 

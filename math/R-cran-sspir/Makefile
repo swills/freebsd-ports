@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-sspir/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/R-cran-sspir/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	sspir
 PORTVERSION=	0.2.10
@@ -14,7 +14,6 @@ COMMENT=	glm-like formula to define dynamic generalized linear models
 RUN_DEPENDS=	R-cran-mvtnorm>=0.9.96_11:math/R-cran-mvtnorm \
 		R-cran-KFAS>=0.9.11_3:math/R-cran-KFAS
 
-USES=	cran:auto-plist
-
+USES=		cran:auto-plist
 
 .include <bsd.port.mk>

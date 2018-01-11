@@ -1,8 +1,8 @@
 # Created by: David Taylor <davidt@yadt.co.uk>
-# $FreeBSD: head/irc/ircd-hybrid/Makefile 429265 2016-12-23 14:21:56Z db $
+# $FreeBSD: head/irc/ircd-hybrid/Makefile 458681 2018-01-10 19:28:04Z db $
 
 PORTNAME=	ircd-hybrid
-PORTVERSION=	8.2.21
+PORTVERSION=	8.2.22
 CATEGORIES=	irc ipv6
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

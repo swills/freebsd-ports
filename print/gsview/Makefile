@@ -1,5 +1,5 @@
 # Created by: bf <bf2006a@yahoo.com>
-# $FreeBSD: head/print/gsview/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/gsview/Makefile 458646 2018-01-10 15:08:51Z danfe $
 
 PORTNAME=	gsview
 PORTVERSION=	4.9
@@ -49,8 +49,8 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/src/printer.ini \
 	    ${STAGEDIR}${PREFIX}/etc/gsview/
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	cd ${WRKSRC} && ${INSTALL_MAN} gsview.css cdorder.txt regorder.txt \
+	cd ${WRKSRC} && ${INSTALL_DATA} gsview.css cdorder.txt regorder.txt \
 	    Readme.htm LICENCE ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/bin/*.htm ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/bin/*.htm ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

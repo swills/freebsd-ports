@@ -1,8 +1,8 @@
 # Created by: Andris Raugulis <moo@arthepsy.eu>
-# $FreeBSD: head/sysutils/s6-rc/Makefile 430734 2017-01-06 20:01:08Z lifanov $
+# $FreeBSD: head/sysutils/s6-rc/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	s6-rc
-PORTVERSION=	0.0.2.1
+PORTVERSION=	0.4.0.0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.skarnet.org/software/${PORTNAME}/
 
@@ -32,11 +32,11 @@ DOCS=		AUTHORS COPYING INSTALL README doc/*.html
 OPTIONS_DEFINE=	DOCS
 
 post-install:
-.for d in bin sbin libexec
+.for d in bin libexec
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${d}/*
 .endfor
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libs6rc.so.${PORTVERSION}
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	cd ${WRKSRC} && ${INSTALL_MAN} ${DOCS} ${STAGEDIR}${DOCSDIR}
+	cd ${WRKSRC} && ${INSTALL_DATA} ${DOCS} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

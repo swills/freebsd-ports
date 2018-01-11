@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 458471 2018-01-08 19:44:13Z adamw $
+# $FreeBSD: head/editors/Makefile 458784 2018-01-11 20:29:52Z adamw $
 #
 
     COMMENT = Editors
@@ -243,7 +243,7 @@
     SUBDIR += vigor
     SUBDIR += vile
     SUBDIR += vim
-    SUBDIR += vim-lite
+    SUBDIR += vim-console
     SUBDIR += vim-tiny
     SUBDIR += web-mode
     SUBDIR += with-editor

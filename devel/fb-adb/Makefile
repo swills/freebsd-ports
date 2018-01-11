@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/fb-adb/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/fb-adb/Makefile 458786 2018-01-11 20:34:08Z adamw $
 
 PORTNAME=	fb-adb
 DISTVERSION=	1.4.4-126
@@ -21,7 +21,7 @@ COMMENT=	Better shell for Android devices
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	xxd:editors/vim-lite \
+BUILD_DEPENDS=	xxd:editors/vim-console \
 		${BASH_CMD}:shells/${BASH_CMD:T}
 RUN_DEPENDS=	adb:devel/android-tools-adb
 

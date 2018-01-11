@@ -1,5 +1,5 @@
 # Created by: Bert Burgemeister <trebbu@googlemail.com>
-# $FreeBSD: head/games/goldencheetah/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/goldencheetah/Makefile 458646 2018-01-10 15:08:51Z danfe $
 
 PORTNAME=	GoldenCheetah
 PORTVERSION=	3.2
@@ -46,6 +46,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/user/*.info \
 		${STAGEDIR}${PREFIX}/${INFO_PATH}/
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/doc/user/*.pdf ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/doc/user/*.pdf ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

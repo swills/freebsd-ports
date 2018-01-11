@@ -1,5 +1,5 @@
 # Created by: KIMURA Yasuhiro <yasu@utahime.org>
-# $FreeBSD: head/devel/git-modes/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/devel/git-modes/Makefile 458761 2018-01-11 18:09:00Z danfe $
 
 PORTNAME=	git-modes
 PORTVERSION=	1.2.6
@@ -33,8 +33,12 @@ GIT_SUBVERSION_RUN_DEPENDS=	git-subversion>0:devel/git-subversion
 GIT_SUBVERSION_RUN_DEPENDS_OFF=	git>0:devel/git
 
 do-install:
-	${MKDIR} ${STAGEDIR}${PREFIX}/${ELISPDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${WRKSRC}/*.el ${WRKSRC}/*.elc ${STAGEDIR}${PREFIX}/${ELISPDIR}
-	${INSTALL_MAN} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
+	@${MKDIR} ${STAGEDIR}${PREFIX}/${ELISPDIR}
+	${INSTALL_DATA} ${WRKSRC}/*.el ${WRKSRC}/*.elc \
+		${STAGEDIR}${PREFIX}/${ELISPDIR}
+
+do-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

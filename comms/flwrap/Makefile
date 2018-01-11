@@ -1,11 +1,11 @@
 # Created by: Diane Bruce <db@db.net>
-# $FreeBSD: head/comms/flwrap/Makefile 452001 2017-10-13 14:19:26Z bapt $
+# $FreeBSD: head/comms/flwrap/Makefile 458675 2018-01-10 18:58:11Z db $
 
 PORTNAME=	flwrap
 PORTVERSION=	1.3.4
 PORTREVISION=	2
 CATEGORIES=	comms hamradio
-MASTER_SITES=	LOCAL/db
+MASTER_SITES=	SF/fldigi/${PORTNAME}
 
 MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Flwrap is a companion utility for fldigi

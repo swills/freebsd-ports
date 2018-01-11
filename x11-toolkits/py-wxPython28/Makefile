@@ -1,5 +1,5 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/x11-toolkits/py-wxPython28/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/x11-toolkits/py-wxPython28/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	wxPython
 PORTVERSION=	2.8.12.1
@@ -83,7 +83,6 @@ PYDISTUTILS_BUILDARGS+=	\
 			NO_HEADERS=1 \
 			NO_SCRIPTS=1 \
 			INSTALL_MULTIVERSION=1
-
 
 PYDISTUTILS_BUILDARGS+=	\
 			UNICODE=1

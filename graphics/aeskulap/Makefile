@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/graphics/aeskulap/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/aeskulap/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	aeskulap
 PORTVERSION=	0.2.2.20140119
@@ -19,8 +19,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	pipelka
 GH_TAGNAME=	ea0a119
 
-USES=		compiler:c++11-lang autoreconf desktop-file-utils gettext gmake \
-		libtool localbase pkgconfig
+USES=		compiler:c++11-lang autoreconf desktop-file-utils gettext \
+		gmake libtool localbase pkgconfig
 USE_CXXSTD=	c++11
 USE_GNOME=	gconfmm26 gtkmm24 intltool
 GCONF_SCHEMAS=	aeskulap.schemas
@@ -30,6 +30,5 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-static
 INSTALL_TARGET=	install-strip
 INSTALLS_ICONS=	yes
-
 
 .include <bsd.port.mk>

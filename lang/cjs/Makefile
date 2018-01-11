@@ -1,5 +1,5 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/lang/cjs/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/lang/cjs/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	cjs
 PORTVERSION=	2.4.1
@@ -28,6 +28,5 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 INSTALL_TARGET=	install-strip
 CONFIGURE_ARGS+=--enable-compile-warnings=no
-
 
 .include <bsd.port.mk>

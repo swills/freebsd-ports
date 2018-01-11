@@ -1,8 +1,7 @@
-# $FreeBSD: head/archivers/php71-phar/Makefile 455586 2017-12-05 15:56:04Z tz $
+# $FreeBSD: head/archivers/php71-phar/Makefile 458658 2018-01-10 16:07:02Z tz $
 
 CATEGORIES=	archivers
 
-PORTREVISION=	2
 MASTERDIR=	${.CURDIR}/../../lang/php71
 
 PKGNAMESUFFIX=	-phar

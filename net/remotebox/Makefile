@@ -1,5 +1,5 @@
 # Created by: Haowu Ge <ghw@7axu.com>
-# $FreeBSD: head/net/remotebox/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/net/remotebox/Makefile 458646 2018-01-10 15:08:51Z danfe $
 
 PORTNAME=	remotebox
 PORTVERSION=	1.8.1
@@ -49,7 +49,7 @@ do-install:
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/docs/remotebox.pdf ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/docs/changelog.txt ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/docs/remotebox.pdf ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/docs/changelog.txt ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

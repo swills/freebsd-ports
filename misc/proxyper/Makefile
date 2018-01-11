@@ -1,5 +1,5 @@
 # Created by: globalpanic@gmx.net
-# $FreeBSD: head/misc/proxyper/Makefile 428612 2016-12-15 11:20:05Z tdb $
+# $FreeBSD: head/misc/proxyper/Makefile 458646 2018-01-10 15:08:51Z danfe $
 
 PORTNAME=	proxyper
 PORTVERSION=	347
@@ -28,8 +28,8 @@ DISTNAME=	proxyper${PORTVERSION}-freebsd7-x86
 do-install:
 	${MKDIR} ${STAGEDIR}${BINDIR}
 	${INSTALL_PROGRAM} ${WRKSRC}/proxyper ${STAGEDIR}${BINDIR}
-	${INSTALL_MAN} ${WRKSRC}/ChangeLog.txt ${STAGEDIR}${BINDIR}
-	${INSTALL_MAN} ${WRKSRC}/manual.html ${STAGEDIR}${BINDIR}
+	${INSTALL_DATA} ${WRKSRC}/ChangeLog.txt ${STAGEDIR}${BINDIR}
+	${INSTALL_DATA} ${WRKSRC}/manual.html ${STAGEDIR}${BINDIR}
 	${INSTALL} -c -m 644 ${WRKSRC}/proxyper.ini ${STAGEDIR}${BINDIR}/proxyper.ini.sample
 
 .include <bsd.port.post.mk>

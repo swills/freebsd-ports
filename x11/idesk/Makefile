@@ -1,5 +1,5 @@
 # Created by: Sascha Holzleiter <sascha@root-login.org>
-# $FreeBSD: head/x11/idesk/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/idesk/Makefile 458746 2018-01-11 14:45:54Z tijl $
 
 PORTNAME=	idesk
 PORTVERSION=	0.7.5
@@ -14,7 +14,6 @@ LIB_DEPENDS=	libXft.so:x11-fonts/libXft \
 		libImlib2.so:graphics/imlib2
 
 GNU_CONFIGURE=	yes
-USE_AUTOTOOLS=	autoconf
 USES=		gmake pkgconfig tar:bzip2
 
 OPTIONS_DEFINE=	SHAPE SN DOCS

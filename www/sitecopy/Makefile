@@ -1,5 +1,5 @@
 # Created by: nik
-# $FreeBSD: head/www/sitecopy/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/www/sitecopy/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	sitecopy
 PORTVERSION=	0.16.6
@@ -37,7 +37,6 @@ PLIST_SUB+=	NLS="@comment "
 USES+=	ssl
 CONFIGURE_ARGS+=	--with-ssl
 .endif
-
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|;;|;|g' \

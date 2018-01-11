@@ -1,5 +1,5 @@
 # Created by: Winston Weinert <winstonw@lavabit.com>
-# $FreeBSD: head/net/drawterm/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/net/drawterm/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	drawterm
 PORTVERSION=	20140106
@@ -29,6 +29,6 @@ do-install:
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README ${WRKSRC}/LICENSE ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${WRKSRC}/LICENSE ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

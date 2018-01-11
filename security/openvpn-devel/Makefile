@@ -1,5 +1,5 @@
 # Created by: Matthias Andree <mandree@FreeBSD.org>
-# $FreeBSD: head/security/openvpn-devel/Makefile 444072 2017-06-21 19:19:26Z jpaetzel $
+# $FreeBSD: head/security/openvpn-devel/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=		openvpn
 DISTVERSION=		201725
@@ -124,7 +124,7 @@ post-install:
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}/
 .for i in AUTHORS ChangeLog PORTS
-	${INSTALL_MAN} ${WRKSRC}/${i} ${STAGEDIR}${DOCSDIR}/
+	${INSTALL_DATA} ${WRKSRC}/${i} ${STAGEDIR}${DOCSDIR}/
 .endfor
 
 post-install-EXAMPLES-on:

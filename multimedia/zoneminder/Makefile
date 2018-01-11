@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/zoneminder/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/multimedia/zoneminder/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	zoneminder
 PORTVERSION=	1.30.4
@@ -109,6 +109,6 @@ post-install:
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	cd ${WRKSRC} && ${INSTALL_MAN} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
+	cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.post.mk>

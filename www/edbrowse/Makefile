@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/edbrowse/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/www/edbrowse/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	edbrowse
 PORTVERSION=	3.5.1
@@ -34,9 +34,9 @@ do-install:
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKBASE}/CHANGES ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKBASE}/COPYING ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKBASE}/README ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKBASE}/CHANGES ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKBASE}/COPYING ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKBASE}/README ${STAGEDIR}${DOCSDIR}
 	(cd ${WRKBASE}/doc && \
 		${FIND} . \( -name setup.ebrc -or -name "man-edbrowse*" \) -delete  && \
 		${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR})

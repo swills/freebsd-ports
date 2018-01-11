@@ -1,5 +1,5 @@
 # Created by: Alan Eldridge <alane@geeksrus.net>
-# $FreeBSD: head/sysutils/xstow/Makefile 363399 2014-07-29 21:43:17Z adamw $
+# $FreeBSD: head/sysutils/xstow/Makefile 458749 2018-01-11 15:24:16Z danfe $
 
 PORTNAME=	xstow
 PORTVERSION=	1.0.2
@@ -9,7 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}/
 MAINTAINER=	rakuco@FreeBSD.org
 COMMENT=	Enhanced replacement for GNU stow written in C++
 
-USES=	tar:bzip2
+LICENSE=	GPLv2
+
+USES=		tar:bzip2
 GNU_CONFIGURE=	yes
 
 .if defined(WITH_DEBUG)
@@ -19,12 +21,13 @@ CONFIGURE_ARGS+=	--enable-debug
 PLIST_FILES=	bin/merge-info bin/xstow \
 		man/man1/merge-info.1.gz man/man1/xstow.1.gz \
 		man/man5/xstow.ini.5.gz
-PORTDOCS=	AUTHORS COPYING ChangeLog NEWS README TODO xstow.html xstow.ini xstow.ini.html
+PORTDOCS=	AUTHORS ChangeLog NEWS README TODO xstow.html \
+		xstow.ini xstow.ini.html
 
 OPTIONS_DEFINE=	DOCS
 
-post-install:
-	(cd ${WRKSRC} && \
-	 ${INSTALL_MAN} AUTHORS COPYING ChangeLog NEWS README TODO ${STAGEDIR}${DOCSDIR})
+post-install-DOCS-on:
+	${INSTALL_DATA} ${PORTDOCS:M[ACNRT]*:S|^|${WRKSRC}/|} \
+		${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

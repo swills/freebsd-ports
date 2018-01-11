@@ -1,5 +1,5 @@
 # Created by: David O'Brien <obrien@cs.ucdavis.edu>
-# $FreeBSD: head/editors/vim/Makefile 458471 2018-01-08 19:44:13Z adamw $
+# $FreeBSD: head/editors/vim/Makefile 458784 2018-01-11 20:29:52Z adamw $
 
 PORTNAME=	vim
 PORTVERSION=	8.0.1427
@@ -14,7 +14,7 @@ LICENSE_NAME=	VIM License
 LICENSE_FILE=	${WRKSRC}/runtime/doc/uganda.txt
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-CONFLICTS_INSTALL?=	vim-lite vim-tiny
+CONFLICTS_INSTALL?=	vim-console vim-tiny
 
 USES=		cpe iconv ncurses pkgconfig shebangfix
 USE_GITHUB=	yes
@@ -45,7 +45,7 @@ OPTIONS_GROUP=		LANGBIND
 OPTIONS_GROUP_LANGBIND=	LUA PERL PYTHON2 PYTHON3 RUBY SCHEME TCL
 OPTIONS_SUB=		yes
 
-.if defined(LITE)
+.if defined(CONSOLE)
 OPTIONS_DEFAULT=	DEFAULT_VIMRC
 OPTIONS_SLAVE=		CONSOLE
 # Exclude everything except the two options above

@@ -1,5 +1,5 @@
 # Created by: Seiichirou Hiraoka
-# $FreeBSD: head/games/xosmulti/Makefile 436760 2017-03-23 09:13:25Z tobik $
+# $FreeBSD: head/games/xosmulti/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	xosmulti
 PORTVERSION=	1.00
@@ -28,6 +28,6 @@ PLIST_FILES=	bin/xosmulti
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xosmulti ${STAGEDIR}${PREFIX}/bin
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/doc/ja/xosmulti
-	${INSTALL_MAN} ${WRKSRC}/README.jp ${STAGEDIR}${PREFIX}/share/doc/ja/xosmulti
+	${INSTALL_DATA} ${WRKSRC}/README.jp ${STAGEDIR}${PREFIX}/share/doc/ja/xosmulti
 
 .include <bsd.port.mk>

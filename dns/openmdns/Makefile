@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/openmdns/Makefile 435887 2017-03-11 08:37:50Z jbeich $
+# $FreeBSD: head/dns/openmdns/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	openmdns
 DISTVERSION=	0.7
@@ -47,6 +47,6 @@ post-patch:
 
 post-install-DOCS-on:
 	(cd ${WRKSRC}/docs && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR})
-	${INSTALL_MAN} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

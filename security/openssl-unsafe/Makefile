@@ -1,5 +1,5 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/security/openssl-unsafe/Makefile 453623 2017-11-06 15:21:36Z brnrd $
+# $FreeBSD: head/security/openssl-unsafe/Makefile 458754 2018-01-11 16:24:53Z danfe $
 
 PORTNAME=	openssl
 PORTVERSION=	1.0.2.20170706
@@ -40,7 +40,6 @@ CONFIGURE_ARGS+=	enable-ec_nistp_64_gcc_128
 
 OPENSSLDIR?=	${PREFIX}/openssl-unsafe/etc
 PLIST_SUB+=	OPENSSLDIR=${OPENSSLDIR:S=^${PREFIX}/==}
-
 
 .include "version.mk"
 

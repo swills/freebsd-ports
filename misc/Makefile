@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 458560 2018-01-09 19:10:45Z pi $
+# $FreeBSD: head/misc/Makefile 458666 2018-01-10 17:43:18Z kwm $
 #
 
     COMMENT = Miscellaneous utilities
@@ -376,6 +376,7 @@
     SUBDIR += phraze
     SUBDIR += pinfo
     SUBDIR += pipe
+    SUBDIR += pnpids
     SUBDIR += podsleuth
     SUBDIR += posixtestsuite
     SUBDIR += proxyper

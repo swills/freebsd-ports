@@ -1,5 +1,5 @@
 # Created by: Ashish Shukla <wahjava@gmail.com>
-# $FreeBSD: head/devel/gtkparasite/Makefile 455913 2017-12-10 20:48:45Z antoine $
+# $FreeBSD: head/devel/gtkparasite/Makefile 458761 2018-01-11 18:09:00Z danfe $
 
 PORTNAME=	gtkparasite
 PORTVERSION=	20090819
@@ -24,8 +24,8 @@ PLIST_FILES=	lib/gtk-2.0/modules/libgtkparasite.so
 
 OPTIONS_DEFINE=	DOCS
 
-post-install:
+post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/USAGE ${STAGEDIR}/${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/USAGE ${STAGEDIR}/${DOCSDIR}
 
 .include <bsd.port.mk>

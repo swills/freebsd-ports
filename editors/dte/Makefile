@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/dte/Makefile 456913 2017-12-21 15:47:10Z tobik $
+# $FreeBSD: head/editors/dte/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	dte
 DISTVERSIONPREFIX=	v
@@ -32,6 +32,6 @@ post-install:
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/games/digger-vgl/Makefile 444416 2017-06-26 22:20:20Z linimon $
+# $FreeBSD: head/games/digger-vgl/Makefile 458646 2018-01-10 15:08:51Z danfe $
 
 PORTNAME=	digger
 PORTVERSION=	20020314
@@ -30,7 +30,7 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/digger ${STAGEDIR}${PREFIX}/bin
 	@${MKDIR} ${STAGEDIR}/var/games/digger
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/digger.txt ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/digger.txt ${STAGEDIR}${DOCSDIR}
 .if ${PORT_OPTIONS:MSOUND}
 	@${ECHO_MSG}
 	@${ECHO_MSG} "Use \"digger /A\" command to run Digger with sound enabled."

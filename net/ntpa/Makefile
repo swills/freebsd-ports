@@ -1,5 +1,5 @@
 # Created by: Carsten Larsen <cs@innolan.dk>
-# $FreeBSD: head/net/ntpa/Makefile 448208 2017-08-18 04:21:39Z swills $
+# $FreeBSD: head/net/ntpa/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	ntpa
 PORTVERSION=	0.8.2
@@ -60,9 +60,9 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/examples/ntpa.conf ${STAGEDIR}${PREFIX}/etc/ntpa/ntpa.conf.sample
 	${INSTALL_MAN} ${WRKSRC}/docs/ntpa.1 ${STAGEDIR}${PREFIX}/man/man1
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/CHANGES ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/DATABASE ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/INSTALL ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/CHANGES ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/DATABASE ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/INSTALL ${STAGEDIR}${DOCSDIR}
 	${MKDIR} ${STAGEDIR}/var/log/ntpa
 	${MKDIR} ${STAGEDIR}/var/run/ntpa
 	${INSTALL_DATA} ${FILESDIR}/newsyslog ${STAGEDIR}${ETCDIR}/ntpa.newsyslog

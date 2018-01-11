@@ -1,8 +1,9 @@
 # Created by: Martin Dieringer <Martin.Dieringer@t-online.de>
-# $FreeBSD: head/audio/mac/Makefile 412626 2016-04-06 15:29:26Z marino $
+# $FreeBSD: head/audio/mac/Makefile 458677 2018-01-10 19:12:35Z jbeich $
 
 PORTNAME=	mac
 PORTVERSION=	3.99.4.5.7
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://etree.org/shnutils/shntool/support/formats/ape/unix/3.99-u4-b5-s7/ \
 		http://freebsd.nsu.ru/distfiles/

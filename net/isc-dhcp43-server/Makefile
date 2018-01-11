@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <rpsfa@rit.edu>
-# $FreeBSD: head/net/isc-dhcp43-server/Makefile 458567 2018-01-09 20:37:17Z zi $
+# $FreeBSD: head/net/isc-dhcp43-server/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	dhcp
 PORTVERSION=	4.3.6
@@ -165,7 +165,7 @@ do-install:
 .endif
 .if ${PORT_OPTIONS:MLDAP}
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${LDAP_README} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${LDAP_README} ${STAGEDIR}${DOCSDIR}
 .endif
 .endif
 .if ${SUBSYS} == client

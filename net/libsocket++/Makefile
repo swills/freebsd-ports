@@ -1,5 +1,5 @@
 # Created by: Narvi <narvi@haldjas.folklore.ee>
-# $FreeBSD: head/net/libsocket++/Makefile 384229 2015-04-18 15:14:57Z tijl $
+# $FreeBSD: head/net/libsocket++/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	libsocket++
 PORTVERSION=	1.12.13
@@ -24,6 +24,6 @@ INFO=	socket++
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

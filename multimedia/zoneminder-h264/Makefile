@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/zoneminder-h264/Makefile 457488 2017-12-29 02:55:42Z jbeich $
+# $FreeBSD: head/multimedia/zoneminder-h264/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	zoneminder-h264
 PORTVERSION=	1.30.20170222
@@ -107,6 +107,6 @@ post-install:
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	cd ${WRKSRC} && ${INSTALL_MAN} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
+	cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

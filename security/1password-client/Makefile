@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/security/1password-client/Makefile 457382 2017-12-27 18:10:45Z linimon $
+# $FreeBSD: head/security/1password-client/Makefile 458763 2018-01-11 18:27:52Z adamw $
 
 PORTNAME=	1password-client
-PORTVERSION=	0.1.1
+PORTVERSION=	0.2
 CATEGORIES=	security
 MASTER_SITES=	https://cache.agilebits.com/dist/1P/op/pkg/v${PORTVERSION}/
 

@@ -1,5 +1,5 @@
 # Created by: Yi-Jheng Lin <yzlin@cs.nctu.edu.tw>
-# $FreeBSD: head/sysutils/safe-rm/Makefile 423226 2016-10-03 21:52:34Z amdmi3 $
+# $FreeBSD: head/sysutils/safe-rm/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	safe-rm
 PORTVERSION=	0.12
@@ -28,6 +28,6 @@ do-install:
 
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${PORTDOCS:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

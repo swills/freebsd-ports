@@ -1,5 +1,5 @@
 # Created by: sobomax
-# $FreeBSD: head/databases/rrdmerge/Makefile 414458 2016-05-02 16:08:56Z zeising $
+# $FreeBSD: head/databases/rrdmerge/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	rrdmerge
 PORTVERSION=	0.0.1
@@ -33,6 +33,6 @@ do-install:
 
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README.rst ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README.rst ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: IWATSUKI Hiroyuki <don@na.rim.or.jp>
-# $FreeBSD: head/www/rubygem-scrapi/Makefile 447270 2017-08-03 17:27:39Z sunpoet $
+# $FreeBSD: head/www/rubygem-scrapi/Makefile 458662 2018-01-10 17:15:09Z swills $
 
 PORTNAME=	scrapi
 PORTVERSION=	1.2.0
@@ -18,6 +18,9 @@ USE_RUBY=	yes
 USE_LDCONFIG=	yes
 USES=		gem
 PLIST_FILES=	${GEM_LIB_DIR}/lib/tidy/libtidy.so
+
+DEPRECATED=	No longer maintained upstream
+EXPIRATION_DATE=2018-02-10
 
 post-install:
 	${RM} ${LOCALBASE}/${GEM_LIB_DIR}/lib/tidy/libtidy.dll

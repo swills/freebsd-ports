@@ -1,5 +1,5 @@
 # Created by: Robert Gogolok <gogo@cs.uni-sb.de>
-# $FreeBSD: head/devel/py-lxml/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-lxml/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	lxml
 PORTVERSION=	3.8.0
@@ -28,7 +28,7 @@ OPTIONS_DEFINE=	DOCS
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${DOCS_FILES:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${DOCS_FILES:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
 	@cd ${WRKSRC} && ${COPYTREE_SHARE} doc ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

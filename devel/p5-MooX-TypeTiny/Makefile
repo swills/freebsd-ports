@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooX-TypeTiny/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooX-TypeTiny/Makefile 458791 2018-01-11 20:41:11Z adamw $
 
 PORTNAME=	MooX-TypeTiny
 PORTVERSION=	0.001003
@@ -7,7 +7,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	adamw@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Optimized type checks for Moo + Type::Tiny
 
 LICENSE=	ART10 GPLv1+

@@ -1,5 +1,5 @@
 # Created by: Doug Barton <dougb@FreeBSD.org>
-# $FreeBSD: head/net-p2p/libtorrent-rasterbar/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/net-p2p/libtorrent-rasterbar/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	libtorrent-rasterbar
 PORTVERSION=	1.1.4
@@ -78,7 +78,7 @@ post-install:
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${DOCFILES:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${DOCFILES:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 	(cd ${WRKSRC} && ${COPYTREE_SHARE} docs ${STAGEDIR}${DOCSDIR})
 	${RM} ${STAGEDIR}${DOCSDIR}/docs/._*
 

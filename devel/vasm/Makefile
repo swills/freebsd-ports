@@ -1,5 +1,5 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/devel/vasm/Makefile 448647 2017-08-24 05:17:49Z vanilla $
+# $FreeBSD: head/devel/vasm/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	vasm
 PORTVERSION=	1.8a
@@ -55,7 +55,7 @@ do-install:
 do-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for DOC in ${DOC_LIST}
-	${INSTALL_MAN} ${WRKSRC}/doc/${DOC} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/doc/${DOC} ${STAGEDIR}${DOCSDIR}
 .endfor
 
 .include <bsd.port.mk>

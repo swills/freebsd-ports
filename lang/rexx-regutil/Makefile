@@ -1,5 +1,5 @@
 # Created by: Bob Eager <bob@eager.cx>
-# $FreeBSD: head/lang/rexx-regutil/Makefile 457345 2017-12-27 00:54:43Z emaste $
+# $FreeBSD: head/lang/rexx-regutil/Makefile 458646 2018-01-10 15:08:51Z danfe $
 
 PORTNAME=	regutil
 PORTVERSION=	1.26
@@ -36,15 +36,15 @@ PORTEXAMPLES=	*.rex
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 do-install:
-		${INSTALL_LIB} ${WRKSRC}/librexxutil.so ${STAGEDIR}${PREFIX}/lib/
-		${INSTALL_MAN} ${WRKDIR}/regutil.1 ${STAGEDIR}${PREFIX}/man/man1/
+	${INSTALL_LIB} ${WRKSRC}/librexxutil.so ${STAGEDIR}${PREFIX}/lib
+	${INSTALL_MAN} ${WRKDIR}/regutil.1 ${STAGEDIR}${MANPREFIX}/man/man1
 
 do-install-DOCS-on:
-		${MKDIR} ${STAGEDIR}${DOCSDIR}
-		${INSTALL_MAN} ${WRKSRC}/regutil.pdf ${STAGEDIR}${DOCSDIR}/
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/regutil.pdf ${STAGEDIR}${DOCSDIR}
 
 do-install-EXAMPLES-on:
-		${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
-		${INSTALL_MAN} ${WRKSRC}/*.rex ${STAGEDIR}${EXAMPLESDIR}
+	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
+	${INSTALL_DATA} ${WRKSRC}/*.rex ${STAGEDIR}${EXAMPLESDIR}
 
 .include <bsd.port.mk>

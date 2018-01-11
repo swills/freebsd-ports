@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-binding_of_caller/Makefile 452662 2017-10-22 16:10:18Z sunpoet $
+# $FreeBSD: head/devel/rubygem-binding_of_caller/Makefile 458656 2018-01-10 16:03:12Z swills $
 
 PORTNAME=	binding_of_caller
-PORTVERSION=	0.7.3
+PORTVERSION=	0.8.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

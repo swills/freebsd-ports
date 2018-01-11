@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/gcc-msp430-ti-toolchain/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/devel/gcc-msp430-ti-toolchain/Makefile 458646 2018-01-10 15:08:51Z danfe $
 
 PORTNAME=	gcc-msp430-ti-toolchain
 PORTVERSION=	${GCC_VERSION}.${TI_VERSION}.${RELEASE_DATE}
@@ -165,9 +165,8 @@ do-install:
 		${TAR} xf - -C ${STAGEDIR}${GNU_CONFIGURE_PREFIX}
 	@${ECHO_MSG} "Install minimal documentation..."
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${DISTDIR}/${DIST_SUBDIR}/slau591${DOC_VERSION}.pdf \
+	${INSTALL_DATA} ${DISTDIR}/${DIST_SUBDIR}/slau591${DOC_VERSION}.pdf \
 		${STAGEDIR}${DOCSDIR}/slau591c.pdf
-	${INSTALL_MAN} ${FILESDIR}/watchdog.txt \
-		${STAGEDIR}${DOCSDIR}/watchdog.txt
+	${INSTALL_DATA} ${FILESDIR}/watchdog.txt ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

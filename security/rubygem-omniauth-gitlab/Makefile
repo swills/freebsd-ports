@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-omniauth-gitlab/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/security/rubygem-omniauth-gitlab/Makefile 458776 2018-01-11 18:36:11Z sunpoet $
 
 PORTNAME=	omniauth-gitlab
-PORTVERSION=	1.0.2
+PORTVERSION=	1.0.3
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

@@ -1,5 +1,5 @@
 # Created by: bf <bf2006a@yahoo.com>
-# $FreeBSD: head/math/testu01/Makefile 427133 2016-11-26 09:00:44Z amdmi3 $
+# $FreeBSD: head/math/testu01/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	TestU01
 PORTVERSION=	1.2.3
@@ -41,10 +41,8 @@ post-patch-DOCS-off:
 	@${FIND} -X ${WRKSRC} -name 'Makefile.in' | ${XARGS} ${REINPLACE_CMD} \
 	-e '/^install-data-am\: /s/install-docDATA//'
 
-
 post-patch-EXAMPLES-off:
 	@${REINPLACE_CMD} -e  '/^SUBDIRS \=/s/ examples / /' ${WRKSRC}/Makefile.in
-
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

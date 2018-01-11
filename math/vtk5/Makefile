@@ -1,5 +1,5 @@
 # Created by: Mykola Khotyaintsev <ko@irfu.se>
-# $FreeBSD: head/math/vtk5/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/math/vtk5/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	vtk
 PORTVERSION=	5.10.1
@@ -71,7 +71,6 @@ QT4_CMAKE_BOOL=		VTK_USE_GUISUPPORT
 TCLTK_CMAKE_BOOL=	VTK_WRAP_TCL
 DBGLEAKS_CMAKE_BOOL=	VTK_DEBUG_LEAKS
 LEGACY_CMAKE_BOOL_OFF=	VTK_LEGACY_REMOVE
-
 
 .include <bsd.port.options.mk>
 

@@ -1,8 +1,7 @@
-# $FreeBSD: head/textproc/libmwaw03/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/textproc/libmwaw03/Makefile 458695 2018-01-10 21:12:42Z jkim $
 
 PORTNAME=	libmwaw
-PORTVERSION=	0.3.12
-PORTREVISION=	2
+PORTVERSION=	0.3.13
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 PKGNAMESUFFIX=	03
@@ -19,17 +18,8 @@ CONFIGURE_ARGS=	--disable-werror --without-docs
 CPPFLAGS+=	-I${LOCALBASE}/include
 
 GNU_CONFIGURE=	yes
-USES=		compiler:features libtool pathfix pkgconfig tar:xz
+USES=		compiler:c++11-lib libtool pathfix pkgconfig tar:xz
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 
-.include <bsd.port.pre.mk>
-
-.if ${COMPILER_FEATURES:Mlibc++}
-CONFIGURE_ARGS+=	--with-sharedptr=c++11
-.else
-BUILD_DEPENDS+=	${LOCALBASE}/include/boost/shared_ptr.hpp:devel/boost-libs
-CONFIGURE_ARGS+=	--with-sharedptr=boost
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

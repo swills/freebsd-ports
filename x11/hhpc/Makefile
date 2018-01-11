@@ -1,5 +1,5 @@
 # Created by: Dmitri Goutnik <dg@syrec.org>
-# $FreeBSD: head/x11/hhpc/Makefile 456690 2017-12-18 22:39:38Z yuri $
+# $FreeBSD: head/x11/hhpc/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	hhpc
 DISTVERSIONPREFIX=	v
@@ -26,6 +26,6 @@ OPTIONS_DEFINE=	DOCS
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/hhpc ${STAGEDIR}${PREFIX}/bin/
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

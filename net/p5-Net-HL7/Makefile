@@ -1,5 +1,5 @@
 # Created by: Brent B. Powers <bbp2006@columbia.edu>
-# $FreeBSD: head/net/p5-Net-HL7/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/net/p5-Net-HL7/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	Net-HL7
 PORTVERSION=	0.75
@@ -24,6 +24,6 @@ PORTDOCS=	README
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/${PORTDOCS} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

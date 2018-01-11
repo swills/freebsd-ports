@@ -1,5 +1,5 @@
-# Created by: Nicola Vitale	<nivit@email.it>
-# $FreeBSD: head/japanese/kana-no-quiz/Makefile 455210 2017-11-30 15:50:30Z mat $
+# Created by: Nicola Vitale <nivit@email.it>
+# $FreeBSD: head/japanese/kana-no-quiz/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	kana-no-quiz
 DISTVERSION=	1.9.5
@@ -17,7 +17,6 @@ RUN_DEPENDS=	${PYGAME}
 
 NO_BUILD=	yes
 NO_ARCH=	yes
-
 
 USES=		gettext python:2.7 tar:bzip2
 USE_GNOME=	pygtk2:run

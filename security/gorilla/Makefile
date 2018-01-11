@@ -1,5 +1,5 @@
 # Created by: Kay Lehmann <kay_lehmann@web.de>
-# $FreeBSD: head/security/gorilla/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/security/gorilla/Makefile 458754 2018-01-11 16:24:53Z danfe $
 
 PORTNAME=	gorilla
 PORTVERSION=	1.5.3.6
@@ -56,7 +56,6 @@ do-build:
 	${MV} ${WRKDIR}/${PORTNAME}-sha256/sha256/${GORILLAARCH}/ \
 		${WRKSRC}/sources/tcllib/sha256c/${GORILLAARCH:tl}
 .endif
-
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/gorilla

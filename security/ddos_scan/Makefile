@@ -1,5 +1,5 @@
 # Created by: David O'Brien (obrien@NUXI.com)
-# $FreeBSD: head/security/ddos_scan/Makefile 401373 2015-11-12 17:20:45Z amdmi3 $
+# $FreeBSD: head/security/ddos_scan/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	ddos_scan
 PORTVERSION=	1.6
@@ -21,6 +21,6 @@ do-install:
 
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

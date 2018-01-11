@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/security/pvk/Makefile 421801 2016-09-11 06:16:39Z marino $
+# $FreeBSD: head/security/pvk/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	pvk
 PORTVERSION=	20070406
@@ -23,6 +23,6 @@ post-patch:
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pvk ${STAGEDIR}${PREFIX}/bin
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

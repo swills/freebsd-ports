@@ -1,5 +1,5 @@
 # Created by: "Waitman Gobble" <uzimac@da3m0n8t3r.com>
-# $FreeBSD: head/ports-mgmt/pkgcompare/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/ports-mgmt/pkgcompare/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	pkgcompare
 PORTVERSION=	1.1
@@ -33,7 +33,6 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/pkg-compare.8 \
 		${STAGEDIR}${MAN8PREFIX}/man/man8
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${LICENSE_FILE} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

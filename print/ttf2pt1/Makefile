@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/print/ttf2pt1/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/ttf2pt1/Makefile 458754 2018-01-11 16:24:53Z danfe $
 
 PORTNAME=	ttf2pt1
 PORTVERSION=	3.4.4
@@ -31,7 +31,6 @@ SHEBANG_FILES=	app/TeX/sfd2map \
 		scripts/html2man \
 		scripts/t1fdir \
 		scripts/trans
-
 
 CPPFLAGS+=	`pkg-config --cflags freetype2` \
 		-I${LOCALBASE}/include -DUSE_FREETYPE

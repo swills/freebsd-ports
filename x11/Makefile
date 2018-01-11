@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 458038 2018-01-04 17:09:27Z swills $
+# $FreeBSD: head/x11/Makefile 458712 2018-01-11 06:23:22Z tobik $
 #
 
     COMMENT = Ports to support the X window system
@@ -265,6 +265,7 @@
     SUBDIR += pixman
     SUBDIR += plasma-scriptengine-python
     SUBDIR += plasma-scriptengine-ruby
+    SUBDIR += polybar
     SUBDIR += presentproto
     SUBDIR += printproto
     SUBDIR += printscreen

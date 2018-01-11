@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/textproc/multimarkdown/Makefile 428569 2016-12-14 16:06:19Z mat $
+# $FreeBSD: head/textproc/multimarkdown/Makefile 458754 2018-01-11 16:24:53Z danfe $
 
 PORTNAME=	multimarkdown
 PORTVERSION=	4.7
@@ -46,7 +46,6 @@ post-patch-EXTRAS-on:
 	@${REINPLACE_CMD} -E "s,^(xslt_path)=.*,\1=${DATADIR},; s,(xslt_path)/../,\1/," \
 		${WRKSRC}/Support/bin/*
 	@${REINPLACE_CMD} -e "s,/usr/local,${PREFIX},g" ${WRKSRC}/Support/bin/*
-
 
 do-install:
 	@${FIND} ${WRKSRC} -name '*.bak' -delete

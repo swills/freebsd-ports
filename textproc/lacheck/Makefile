@@ -1,5 +1,5 @@
 # Created by: Uwe Pierau <uwe.pierau@tu-clausthal.de>
-# $FreeBSD: head/textproc/lacheck/Makefile 413137 2016-04-12 15:06:40Z mat $
+# $FreeBSD: head/textproc/lacheck/Makefile 458754 2018-01-11 16:24:53Z danfe $
 
 PORTNAME=	lacheck
 PORTVERSION=	1.26
@@ -13,7 +13,6 @@ COMMENT=	Tool for finding common mistakes in LaTeX documents
 PLIST_FILES=	bin/lacheck \
 		man/man1/lacheck.1.gz
 ALL_TARGET=	lacheck lacheck.1
-
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/local|${PREFIX}| ; \

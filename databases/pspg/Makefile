@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/pspg/Makefile 457549 2017-12-29 22:20:06Z joneum $
+# $FreeBSD: head/databases/pspg/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	pspg
 DISTVERSION=	0.9.1
@@ -28,6 +28,6 @@ post-install:
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: djp
-# $FreeBSD: head/misc/fortune-mod-bible/Makefile 422160 2016-09-14 19:50:46Z antoine $
+# $FreeBSD: head/misc/fortune-mod-bible/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	fortune-mod-bible
 PORTVERSION=	1.0
@@ -33,6 +33,5 @@ do-build:
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/games/fortune
 	${INSTALL_DATA} ${WRKSRC}/bible* ${STAGEDIR}${PREFIX}/share/games/fortune
-
 
 .include <bsd.port.mk>

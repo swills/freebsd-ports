@@ -1,6 +1,6 @@
 # Created by: Jeremie Le Hen <jlh@FreeBSD.org>
 # Based on www/subsonic from Nicole Reid <root@cooltrainer.org>
-# $FreeBSD: head/www/subsonic-standalone/Makefile 454488 2017-11-19 11:37:26Z riggs $
+# $FreeBSD: head/www/subsonic-standalone/Makefile 458646 2018-01-10 15:08:51Z danfe $
 
 PORTNAME=	subsonic-standalone
 PORTVERSION=	6.0
@@ -70,7 +70,7 @@ do-install:
 	@${CAT} ${WRKDIR}/message-transcoding >> ${PKGMESSAGE}
 	@${CAT} ${PKGDIR}/pkg-message-spacer >> ${PKGMESSAGE}
 	${MKDIR} ${STAGEDIR}${DATADIR}
-	${INSTALL_MAN} ${WRKSRC}/README.TXT ${STAGEDIR}${DATADIR}/
+	${INSTALL_DATA} ${WRKSRC}/README.TXT ${STAGEDIR}${DATADIR}/
 	${INSTALL_DATA} ${WRKSRC}/subsonic.war ${STAGEDIR}${DATADIR}/
 	${INSTALL_DATA} ${WRKSRC}/subsonic-booter-jar-with-dependencies.jar ${STAGEDIR}${DATADIR}/
 

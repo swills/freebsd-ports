@@ -1,5 +1,5 @@
 # Created by: Florent Thoumie <flz@xbsd.org>
-# $FreeBSD: head/net-p2p/libbt/Makefile 428136 2016-12-08 17:01:31Z tijl $
+# $FreeBSD: head/net-p2p/libbt/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	libbt
 PORTVERSION=	1.05
@@ -37,7 +37,7 @@ do-install:
 .endfor
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for i in ${PORTDOCS}
-	${INSTALL_MAN} ${WRKSRC}/docs/${i} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/docs/${i} ${STAGEDIR}${DOCSDIR}
 .endfor
 
 .include <bsd.port.mk>

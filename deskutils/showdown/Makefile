@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/showdown/Makefile 457021 2017-12-23 04:44:29Z yuri $
+# $FreeBSD: head/deskutils/showdown/Makefile 458761 2018-01-11 18:09:00Z danfe $
 
 PORTNAME=	showdown
 DISTVERSION=	0.6
@@ -37,6 +37,6 @@ post-install:
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

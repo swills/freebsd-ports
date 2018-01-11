@@ -1,5 +1,5 @@
 # Created by: Will Andrews <andrews@technologist.com>
-# $FreeBSD: head/benchmarks/httperf/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/benchmarks/httperf/Makefile 458761 2018-01-11 18:09:00Z danfe $
 
 PORTNAME=	httperf
 PORTVERSION=	0.9.0.1
@@ -19,16 +19,17 @@ MAKE_ARGS=	LIBUTIL_OBJS=ssl_writev.o \
 
 PLIST_FILES=	bin/httperf \
 		man/man1/httperf.1.gz
-
-OPTIONS_DEFINE=	DOCS
 PORTDOCS=	ChangeLog NEWS README TODO
 
+OPTIONS_DEFINE=	DOCS
+
 do-install:
-	${INSTALL_MAN} ${WRKSRC}/man/${PORTNAME}.1 ${STAGEDIR}${MAN1PREFIX}/man/man1/
+	${INSTALL_MAN} ${WRKSRC}/man/${PORTNAME}.1 \
+		${STAGEDIR}${MAN1PREFIX}/man/man1
 	${INSTALL_PROGRAM} ${WRKSRC}/src/${PORTNAME} ${STAGEDIR}${PREFIX}/bin/
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-.for file in ${PORTDOCS}
-	${INSTALL_MAN} ${WRKSRC}/${file} ${STAGEDIR}${DOCSDIR}
-.endfor
+	${INSTALL_DATA} ${PORTDOCS:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

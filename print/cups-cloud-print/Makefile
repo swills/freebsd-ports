@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/cups-cloud-print/Makefile 414851 2016-05-09 13:43:30Z mat $
+# $FreeBSD: head/print/cups-cloud-print/Makefile 458651 2018-01-10 15:39:39Z amdmi3 $
 
 PORTNAME=	cups-cloud-print
 PORTVERSION=	20160502
@@ -12,9 +12,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	cups-config:print/cups
 RUN_DEPENDS=	cancel:print/cups \
-		${PYTHON_PKGNAMEPREFIX}pycups>0:print/py-pycups \
 		bash:shells/bash \
-		${PYTHON_PKGNAMEPREFIX}httplib2>0:www/py-httplib2
+		${PYTHON_PKGNAMEPREFIX}pycups>0:print/py-pycups@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}httplib2>0:www/py-httplib2@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	simoncadman

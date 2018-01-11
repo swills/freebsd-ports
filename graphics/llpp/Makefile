@@ -1,9 +1,9 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/graphics/llpp/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/llpp/Makefile 458743 2018-01-11 14:21:22Z tobik $
 
 PORTNAME=	llpp
 PORTVERSION=	25
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics
 MASTER_SITES=	http://repo.or.cz/llpp.git/snapshot/
 DISTNAME=	v${PORTVERSION}

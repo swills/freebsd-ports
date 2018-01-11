@@ -1,5 +1,5 @@
 # Created by: Angel Carpintero <ack@telefonica.net>
-# $FreeBSD: head/multimedia/motion/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/multimedia/motion/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	motion
 PORTVERSION=	4.0.1
@@ -95,7 +95,7 @@ do-install:
 
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 
 do-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}

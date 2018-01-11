@@ -1,5 +1,5 @@
 # Created by: Kris Kennaway <kris@FreeBSD.org>
-# $FreeBSD: head/security/fakebo/Makefile 412355 2016-04-01 15:43:45Z amdmi3 $
+# $FreeBSD: head/security/fakebo/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	fakebo
 PORTVERSION=	0.4.2.1
@@ -30,7 +30,7 @@ do-install:
 
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/custom.replies ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/custom.replies ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

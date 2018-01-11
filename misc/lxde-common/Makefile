@@ -1,5 +1,5 @@
 # Created by: sahne
-# $FreeBSD: head/misc/lxde-common/Makefile 432393 2017-01-24 21:42:48Z olivierd $
+# $FreeBSD: head/misc/lxde-common/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	lxde-common
 PORTVERSION=	0.99.2
@@ -13,19 +13,18 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	lxde-icon-theme>=0:x11-themes/lxde-icon-theme \
-	gnome-themes-standard>=3.18:x11-themes/gnome-themes-standard \
-	xscreensaver:x11/xscreensaver
+		gnome-themes-standard>=3.18:x11-themes/gnome-themes-standard \
+		xscreensaver:x11/xscreensaver
 
 USES=		gettext-tools gmake localbase tar:xz
 USE_GNOME=	gtk20 intltool
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=	--sysconfdir=${PREFIX}/etc \
-	--with-xsession-path=${PREFIX}/share/xsessions
+CONFIGURE_ARGS=	--sysconfdir=${PREFIX}/etc \
+		--with-xsession-path=${PREFIX}/share/xsessions
 NO_ARCH=	yes
 
 DATADIR=	${PREFIX}/share/lxde
 INSTALLS_ICONS=	yes
-
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/desktop.conf \

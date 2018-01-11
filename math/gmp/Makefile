@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/math/gmp/Makefile 458016 2018-01-04 08:38:19Z amdmi3 $
+# $FreeBSD: head/math/gmp/Makefile 458670 2018-01-10 18:36:49Z amdmi3 $
 
 PORTNAME=	gmp
 PORTVERSION=	6.1.2
@@ -45,8 +45,5 @@ CONFIGURE_ENV+=	ABI="32"
 
 post-extract:
 	@${RM} ${WRKSRC}/doc/gmp.info*
-
-regression-test check: build
-	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE} check
 
 .include <bsd.port.post.mk>

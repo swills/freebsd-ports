@@ -1,5 +1,5 @@
 # Created by: Douglas K. Rand <rand@meridian-enviro.com>
-# $FreeBSD: head/graphics/mapserver/Makefile 456845 2017-12-20 19:34:11Z bapt $
+# $FreeBSD: head/graphics/mapserver/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=		mapserver
 PORTVERSION=		7.0.7
@@ -199,10 +199,8 @@ do-install-PHP-on:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/etc/php
 	@${ECHO_CMD} "extension=php_mapscript.so" > ${STAGEDIR}${PREFIX}/etc/php/ext-20-php_mapscript.ini
 
-
 do-install-PYTHON-on:
 	@${MKDIR} ${STAGEDIR}${PYTHON_SITELIBDIR}/
 	(cd ${BUILD_WRKSRC}/mapscript/python && ${CP} mapscript.py _mapscript.so ${STAGEDIR}${PYTHON_SITELIBDIR}/)
-
 
 .include <bsd.port.mk>

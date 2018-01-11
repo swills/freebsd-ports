@@ -1,5 +1,5 @@
 # Created by: chuckr
-# $FreeBSD: head/x11-toolkits/iwidgets/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/x11-toolkits/iwidgets/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	iwidgets
 PORTVERSION=	4.0.1
@@ -40,9 +40,9 @@ post-install:
 	${LN} -s ${DISTNAME} ${STAGEDIR}${PREFIX}/lib/iwidgets
 .if ${PORT_OPTIONS:MDOCS}
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/doc/iwidgets.ps ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/doc/iwidgets.ps ${STAGEDIR}${DOCSDIR}
 .for f in CHANGES ChangeLog README
-	${INSTALL_MAN} ${WRKSRC}/${f} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/${f} ${STAGEDIR}${DOCSDIR}
 .endfor
 .endif
 

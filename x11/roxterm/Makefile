@@ -1,5 +1,5 @@
 # Created by: Yinghong Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/x11/roxterm/Makefile 428916 2016-12-19 09:47:32Z amdmi3 $
+# $FreeBSD: head/x11/roxterm/Makefile 458782 2018-01-11 20:01:45Z amdmi3 $
 
 PORTNAME=	roxterm
 PORTVERSION=	3.3.2
@@ -12,7 +12,7 @@ COMMENT=	GTK+ terminal emulator with tabs
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lockfile>0:devel/py-lockfile \
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lockfile>0:devel/py-lockfile@${PY_FLAVOR} \
 		docbook-xsl>0:textproc/docbook-xsl \
 		itstool:textproc/itstool \
 		po4a:textproc/po4a

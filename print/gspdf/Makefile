@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/gspdf/Makefile 455401 2017-12-03 12:23:53Z theraven $
+# $FreeBSD: head/print/gspdf/Makefile 458754 2018-01-11 16:24:53Z danfe $
 
 PORTNAME=	gspdf
 PORTVERSION=	0.5
@@ -12,7 +12,6 @@ COMMENT=	Postscript and Pdf Viewer for GNUstep
 
 USES=		ghostscript gnustep
 USE_GNUSTEP=	back build
-
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/GNUstep/System/Applications/GSPdf.app/GSPdf

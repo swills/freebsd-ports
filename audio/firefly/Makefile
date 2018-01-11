@@ -1,5 +1,5 @@
 # Created by: Mark Foster <mark@foster.cc>
-# $FreeBSD: head/audio/firefly/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/audio/firefly/Makefile 458754 2018-01-11 16:24:53Z danfe $
 
 PORTNAME=	firefly
 PORTVERSION=	1696
@@ -73,6 +73,5 @@ post-install-DOCS-on:
 	ChangeLog INSTALL NEWS TODO
 	${INSTALL_DATA} ${WRKSRC}/${i} ${STAGEDIR}${DOCSDIR}
 .endfor
-
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: David O'Brien (obrien@NUXI.com)
-# $FreeBSD: head/mail/mutt14/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/mail/mutt14/Makefile 458646 2018-01-10 15:08:51Z danfe $
 
 PORTNAME=	mutt
 PORTVERSION=	1.4.2.3
@@ -168,7 +168,7 @@ post-install:
 .if ${PORT_OPTIONS:MDOCS}
 	@${ECHO} "===>   Installing Mutt documentation"
 	@${MKDIR} ${STAGEDIR}${DOCSDIR} && ${CHMOD} a+rx ${STAGEDIR}${DOCSDIR}
-	@cd ${WRKSRC}/doc ; ${INSTALL_MAN} manual.txt PGP-Notes.txt \
+	@cd ${WRKSRC}/doc && ${INSTALL_DATA} manual.txt PGP-Notes.txt \
 		${STAGEDIR}${DOCSDIR}
 .endif
 

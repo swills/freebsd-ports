@@ -1,5 +1,5 @@
 # Created by: Nick Barkas <snb@threerings.net>
-# $FreeBSD: head/sysutils/farbot/Makefile 455853 2017-12-09 12:36:46Z antoine $
+# $FreeBSD: head/sysutils/farbot/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	farbot
 PORTVERSION=	1.0
@@ -32,6 +32,6 @@ post-install:
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}/xhtml
-	${INSTALL_MAN} ${WRKSRC}/docs/xhtml/* ${STAGEDIR}${DOCSDIR}/xhtml
+	${INSTALL_DATA} ${WRKSRC}/docs/xhtml/* ${STAGEDIR}${DOCSDIR}/xhtml
 
 .include <bsd.port.mk>

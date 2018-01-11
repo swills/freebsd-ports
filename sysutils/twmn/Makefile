@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/twmn/Makefile 456936 2017-12-21 18:12:11Z yuri $
+# $FreeBSD: head/sysutils/twmn/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	twmn
 PORTVERSION=	g20171216
@@ -31,7 +31,7 @@ post-install:
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 
 post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}

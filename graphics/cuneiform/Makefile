@@ -1,5 +1,5 @@
 # Created by: samm
-# $FreeBSD: head/graphics/cuneiform/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/cuneiform/Makefile 458779 2018-01-11 19:04:34Z pi $
 
 PORTNAME=	cuneiform
 PORTVERSION=	1.1.0
@@ -8,7 +8,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://launchpadlibrarian.net/69906918/
 DISTNAME=	${PORTNAME}-linux-${PORTVERSION}
 
-MAINTAINER=	samm@os2.kiev.ua
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	OCR system developed and open sourced by Cognitive technologies
 
 LICENSE=	BSD3CLAUSE

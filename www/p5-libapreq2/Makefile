@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-libapreq2/Makefile 427552 2016-12-02 11:58:21Z mat $
+# $FreeBSD: head/www/p5-libapreq2/Makefile 458756 2018-01-11 17:09:58Z tijl $
 
 PORTNAME=	libapreq2
 PORTVERSION=	2.13
@@ -13,16 +13,14 @@ COMMENT=	Perl binding for the Generic Apache2 Request Library
 
 LICENSE=	APACHE20
 
-USES=		gmake libtool perl5
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--with-apache2-apxs=${APXS} \
+		--with-expat=${LOCALBASE} \
+		--enable-perl-glue --with-perl=${PERL}
+USES=		libtool perl5
 USE_APACHE=	22+
 USE_PERL5=	run
 USE_LDCONFIG=	yes
-USE_AUTOTOOLS=	autoconf
-CONFIGURE_ARGS+=	--with-apache2-apxs=${APXS} \
-			--with-expat=${LOCALBASE} \
-			--enable-perl-glue --with-perl=${PERL}
-
-MAKE_ENV+=     MAKE=${GMAKE} ## MakeMaker blows it without this
 
 BUILD_DEPENDS=	libapreq2>0:www/libapreq2 \
 		${APACHE_PKGNAMEPREFIX}mod_perl2>=0:www/mod_perl2 \

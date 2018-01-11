@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/ttyd/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
+# $FreeBSD: head/sysutils/ttyd/Makefile 458786 2018-01-11 20:34:08Z adamw $
 
 PORTNAME=	ttyd
 PORTVERSION=	1.3.3
@@ -11,7 +11,7 @@ COMMENT=	Program to share your terminal over the web
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	xxd:editors/vim-lite
+BUILD_DEPENDS=	xxd:editors/vim-console
 LIB_DEPENDS=	libjson-c.so:devel/json-c \
 		libwebsockets.so:net/libwebsockets
 

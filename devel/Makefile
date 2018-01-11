@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 458432 2018-01-08 16:02:38Z swills $
+# $FreeBSD: head/devel/Makefile 458650 2018-01-10 15:38:07Z swills $
 #
 
     COMMENT = Development utilities
@@ -5519,6 +5519,7 @@
     SUBDIR += rubygem-librarianp
     SUBDIR += rubygem-libyajl2
     SUBDIR += rubygem-licensee
+    SUBDIR += rubygem-licensee8
     SUBDIR += rubygem-listen
     SUBDIR += rubygem-little-plugger
     SUBDIR += rubygem-local_time

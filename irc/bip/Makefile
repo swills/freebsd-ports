@@ -1,5 +1,5 @@
 # Created by: Chess Griffin <chess@chessgriffin.com>
-# $FreeBSD: head/irc/bip/Makefile 427389 2016-11-29 18:46:21Z mat $
+# $FreeBSD: head/irc/bip/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	bip
 PORTVERSION=	0.8.9
@@ -37,7 +37,6 @@ post-install-DOCS-on:
 .for docs in ${PORTDOCS}
 	${INSTALL_DATA} ${WRKSRC}/${docs} ${STAGEDIR}${DOCSDIR}
 .endfor
-
 
 post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}

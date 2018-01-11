@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold
-# $FreeBSD: head/graphics/p5-Gimp/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/graphics/p5-Gimp/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	Gimp
 PORTVERSION=	2.32
@@ -37,6 +37,5 @@ MAKE_JOBS_UNSAFE=	yes
 .if ${PERL_LEVEL} < 502502
 BUILD_DEPENDS+=	p5-ExtUtils-MakeMaker>=7.14:devel/p5-ExtUtils-MakeMaker
 .endif
-
 
 .include <bsd.port.post.mk>

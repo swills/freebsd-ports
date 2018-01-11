@@ -1,5 +1,5 @@
-# Created by: Lars Köller <Lars.Koeller@Uni-Bielefeld.de>
-# $FreeBSD: head/math/grace/Makefile 452602 2017-10-21 20:18:16Z sunpoet $
+# Created by: Lars Koeller <Lars.Koeller@Uni-Bielefeld.de>
+# $FreeBSD: head/math/grace/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	grace
 PORTVERSION=	5.1.25
@@ -68,10 +68,9 @@ post-configure:
 		's|$$(GRACE_HOME)/bin|$$(PREFIX)/bin|'
 
 post-install:
-	(cd ${WRKSRC}/doc && ${INSTALL_MAN} [c-g]*.1 \
-		${STAGEDIR}${MANPREFIX}/man/man1)
-	(cd ${FILESDIR} && ${INSTALL_MAN} mini-xmgr3.xpm \
-		${STAGEDIR}${PREFIX}/share/pixmaps)
+	${INSTALL_MAN} ${WRKSRC}/doc/[c-g]*.1 ${STAGEDIR}${MANPREFIX}/man/man1
+	${INSTALL_DATA} ${FILESDIR}/mini-xmgr3.xpm \
+		${STAGEDIR}${PREFIX}/share/pixmaps
 	${LN} -sf xmgrace ${STAGEDIR}${PREFIX}/bin/grace
 	${LN} -sf grace.1 ${STAGEDIR}${MANPREFIX}/man/man1/xmgrace.1
 	${LN} -sf ${DOCSDIR} ${STAGEDIR}${DATADIR}/doc

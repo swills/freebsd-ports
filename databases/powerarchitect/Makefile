@@ -1,5 +1,5 @@
 # Created by: Jose Garcia Juanino <jjuanino@gmail.com>
-# $FreeBSD: head/databases/powerarchitect/Makefile 457367 2017-12-27 13:59:01Z mat $
+# $FreeBSD: head/databases/powerarchitect/Makefile 458761 2018-01-11 18:09:00Z danfe $
 
 PORTNAME=	powerarchitect
 PORTVERSION=	1.0.8
@@ -12,21 +12,19 @@ COMMENT=	Data modeling and profiling tool
 
 LICENSE=	GPLv3
 
-OPTIONS_DEFINE=	MYSQL_JDBC PGSQL_JDBC
-
-MYSQL_JDBC_RUN_DEPENDS=	${JAVALIBDIR}/mysql-connector-java.jar:databases/mysql-connector-java
-PGSQL_JDBC_RUN_DEPENDS=	${JAVALIBDIR}/postgresql.jar:databases/postgresql-jdbc
-
 USE_JAVA=	yes
-
 JAVA_VERSION=	1.6+
-
 NO_BUILD=	yes
 
 PORTDOCS=	*
 DATADIR=	${JAVASHAREDIR}/${PORTNAME}
 WRKSRC=		${WRKDIR}/architect-${PORTVERSION}
 SUB_FILES=	${PORTNAME}
+
+OPTIONS_DEFINE=	DOCS MYSQL_JDBC PGSQL_JDBC
+
+MYSQL_JDBC_RUN_DEPENDS=	${JAVALIBDIR}/mysql-connector-java.jar:databases/mysql-connector-java
+PGSQL_JDBC_RUN_DEPENDS=	${JAVALIBDIR}/postgresql.jar:databases/postgresql-jdbc
 
 do-install:
 	@${MKDIR} ${STAGEDIR}/${DATADIR}/jdbc
@@ -36,7 +34,8 @@ do-install:
 	    ${COPYTREE_SHARE} lib ${STAGEDIR}/${DATADIR})
 	${INSTALL_SCRIPT} ${WRKDIR}/${PORTNAME} ${STAGEDIR}/${PREFIX}/bin/${PORTNAME}
 
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}/${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README.generic ${STAGEDIR}/${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README.generic ${STAGEDIR}/${DOCSDIR}
 
 .include <bsd.port.mk>

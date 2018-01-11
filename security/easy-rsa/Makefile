@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/easy-rsa/Makefile 409070 2016-02-17 20:36:46Z mandree $
+# $FreeBSD: head/security/easy-rsa/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	easy-rsa
 DISTVERSION=	3.0.1
@@ -40,7 +40,7 @@ do-install:
 do-install-DOCS-on:
 		${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for i in ${_pd_files}
-		${INSTALL_MAN} ${WRKSRC}/${i} ${STAGEDIR}${DOCSDIR}
+		${INSTALL_DATA} ${WRKSRC}/${i} ${STAGEDIR}${DOCSDIR}
 .endfor
 .for i in ${_pd_dirs}
 		${MKDIR} ${STAGEDIR}${DOCSDIR}/${i}

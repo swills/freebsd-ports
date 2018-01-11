@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/perl5.mk 456384 2017-12-15 06:34:12Z antoine $
+# $FreeBSD: head/Mk/Uses/perl5.mk 458753 2018-01-11 16:22:02Z tijl $
 #
 # Provide support to use perl5
 #
@@ -237,7 +237,7 @@ TEST_DEPENDS+=		${PERL5_DEPEND}:lang/${PERL_PORT}
 .  endif
 
 .  if ${_USE_PERL5:Mconfigure}
-CONFIGURE_ARGS+=	CC="${CC}" CCFLAGS="${CFLAGS}" PREFIX="${PREFIX}" \
+CONFIGURE_ARGS+=	CC="${CC}" CCFLAGS="${CFLAGS}" LD="${CC}" PREFIX="${PREFIX}" \
 			INSTALLPRIVLIB="${PREFIX}/lib" INSTALLARCHLIB="${PREFIX}/lib"
 CONFIGURE_SCRIPT?=	Makefile.PL
 MAN3PREFIX?=		${PREFIX}/${SITE_PERL_REL}

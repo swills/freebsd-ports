@@ -1,5 +1,5 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/science/sigrok-firmware-fx2lafw/Makefile 451802 2017-10-11 21:48:08Z bsam $
+# $FreeBSD: head/science/sigrok-firmware-fx2lafw/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	firmware
 PORTVERSION=	0.1.5
@@ -31,7 +31,7 @@ PLIST_FILES=	${FW_FILES:S,^,share/sigrok-firmware/,}
 do-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for docfile in README NEWS
-	${INSTALL_MAN} ${WRKSRC}/${docfile} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/${docfile} ${STAGEDIR}${DOCSDIR}
 .endfor
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/sigrok-firmware
 .for fwfile in ${FW_FILES}

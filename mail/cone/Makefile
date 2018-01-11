@@ -1,5 +1,5 @@
 # Created by: Matthias Andree <matthias.andree@gmx.de>
-# $FreeBSD: head/mail/cone/Makefile 456075 2017-12-12 02:16:08Z swills $
+# $FreeBSD: head/mail/cone/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	cone
 PORTVERSION=	0.96.2
@@ -41,6 +41,6 @@ post-install:
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/ChangeLog ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/ChangeLog ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

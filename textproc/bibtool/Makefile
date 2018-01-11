@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@infor.org>
-# $FreeBSD: head/textproc/bibtool/Makefile 441428 2017-05-21 21:06:27Z johans $
+# $FreeBSD: head/textproc/bibtool/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	bibtool
 PORTVERSION=	2.67
@@ -31,7 +31,7 @@ post-build:
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	cd ${WRKSRC}/doc && ${INSTALL_MAN} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
+	cd ${WRKSRC}/doc && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 
 .include <bsd.port.mk>

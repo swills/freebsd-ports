@@ -1,12 +1,12 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/editors/rubygem-neovim/Makefile 458467 2018-01-08 18:34:27Z adamw $
+# $FreeBSD: head/editors/rubygem-neovim/Makefile 458790 2018-01-11 20:38:57Z adamw $
 
 PORTNAME=	neovim
 PORTVERSION=	0.7.0
 CATEGORIES=	editors rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	adamw@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Ruby bindings for neovim
 
 LICENSE=	MIT

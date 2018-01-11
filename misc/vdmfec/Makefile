@@ -1,5 +1,5 @@
 # Created by: Harald Schmalzbauer <freebsd@omnilan.de>
-# $FreeBSD: head/misc/vdmfec/Makefile 380126 2015-02-27 21:48:21Z pi $
+# $FreeBSD: head/misc/vdmfec/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	vdmfec
 PORTVERSION=	1.0
@@ -26,8 +26,8 @@ PLIST_FILES=	bin/vdm_decode \
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README.fec ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README.fec ${STAGEDIR}${DOCSDIR}
 	${INSTALL_PROGRAM} ${WRKSRC}/vdmfec ${STAGEDIR}/${PREFIX}/bin
 	${LN} ${STAGEDIR}/${PREFIX}/bin/vdmfec ${STAGEDIR}/${PREFIX}/bin/vdm_encode
 	${LN} ${STAGEDIR}/${PREFIX}/bin/vdmfec ${STAGEDIR}/${PREFIX}/bin/vdm_decode

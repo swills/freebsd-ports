@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/frr/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
+# $FreeBSD: head/net/frr/Makefile 458787 2018-01-11 20:34:21Z rene $
 
 PORTNAME=	frr
 PORTVERSION=	3.0.2
@@ -14,6 +14,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	gawk:lang/gawk
 LIB_DEPENDS=	libjson-c.so:devel/json-c
+
+RESTRICTED=	possible GPL violation of Quagga project
 
 CONFLICTS=	openbgpd openospfd zebra quagga-esr quagga
 

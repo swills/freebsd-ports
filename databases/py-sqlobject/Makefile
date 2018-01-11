@@ -1,5 +1,5 @@
 # Created by: "Choe, Cheng-Dae" whitekid
-# $FreeBSD: head/databases/py-sqlobject/Makefile 458431 2018-01-08 15:47:40Z mat $
+# $FreeBSD: head/databases/py-sqlobject/Makefile 458646 2018-01-10 15:08:51Z danfe $
 
 PORTNAME=	sqlobject
 PORTVERSION=	1.6.0
@@ -35,7 +35,7 @@ SYBASE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sybase>=0.37:databases/py-sybase@${FL
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README.txt ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README.txt ${STAGEDIR}${DOCSDIR}
 	(cd ${WRKSRC}/docs && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR})
 
 .include <bsd.port.mk>

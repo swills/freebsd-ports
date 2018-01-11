@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/graphics/imc/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/imc/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	imc
 PORTVERSION=	4.3
@@ -27,7 +27,6 @@ PLIST_FILES=	bin/${PORTNAME} \
 		man/man1/${PORTNAME}.1.gz
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
-
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

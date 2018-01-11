@@ -1,5 +1,5 @@
 # Created by: Volker Stolz <stolz@i2.informatik.rwth-aachen.de>
-# $FreeBSD: head/devel/hs-alex/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/devel/hs-alex/Makefile 458785 2018-01-11 20:31:44Z tijl $
 
 PORTNAME=	alex
 PORTVERSION=	3.2.1
@@ -13,7 +13,7 @@ LICENSE=	BSD3CLAUSE
 USE_CABAL=	QuickCheck>=2
 
 XMLDOCS=	doc/alex:html
-USE_AUTOTOOLS=	autoconf:env
+XMLDOCS_CONF=	yes
 
 STANDALONE=	yes
 EXECUTABLE=	alex

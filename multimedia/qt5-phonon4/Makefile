@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/qt5-phonon4/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/multimedia/qt5-phonon4/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	phonon
 PORTVERSION=	4.9.1
@@ -13,7 +13,6 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Phonon 4 transitional library for Qt 5
 
 LICENSE=	LGPL21
-
 
 USES=		cmake:outsource kde:5 pathfix tar:xz
 USE_KDE=	ecm

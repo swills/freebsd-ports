@@ -1,5 +1,5 @@
 # Created by: Harold Gutch <logix@foobar.franken.de>
-# $FreeBSD: head/misc/spamcalc/Makefile 363374 2014-07-29 19:11:51Z adamw $
+# $FreeBSD: head/misc/spamcalc/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	spamcalc
 PORTVERSION=	0.5
@@ -35,7 +35,7 @@ do-install:
 .endfor
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for i in LICENSE algorithms arguments feedback files introduction todo
-	${INSTALL_MAN} ${WRKSRC}/docs/${i} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/docs/${i} ${STAGEDIR}${DOCSDIR}
 .endfor
 
 .include <bsd.port.mk>
