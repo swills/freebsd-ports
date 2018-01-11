@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/libpostal/Makefile 456691 2017-12-18 22:43:44Z yuri $
+# $FreeBSD: head/misc/libpostal/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	libpostal
 DISTVERSIONPREFIX=	v
@@ -53,6 +53,6 @@ post-install:
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

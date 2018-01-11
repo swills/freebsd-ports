@@ -1,15 +1,14 @@
-# $FreeBSD: head/devel/liborcus/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/devel/liborcus/Makefile 458698 2018-01-10 22:39:26Z jkim $
 
 PORTNAME=	liborcus
-PORTVERSION=	0.12.1
-PORTREVISION=	5
+PORTVERSION=	0.13.1
 CATEGORIES=	devel misc
 MASTER_SITES=	http://kohei.us/files/orcus/src/
 
 MAINTAINER=	office@FreeBSD.org
 COMMENT=	Standalone file import filter library for spreadsheet documents
 
-LICENSE=	MIT
+LICENSE=	MPL20
 
 BUILD_DEPENDS=	${LOCALBASE}/include/mdds-1.2/mdds/global.hpp:devel/mdds
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs

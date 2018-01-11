@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/audio/autozen/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/audio/autozen/Makefile 458754 2018-01-11 16:24:53Z danfe $
 
 PORTNAME=	autozen
 PORTVERSION=	2.1
@@ -12,7 +12,6 @@ COMMENT=	Adjust brain waves with sound
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
-
 
 OPTIONS_DEFINE=	DOCS
 

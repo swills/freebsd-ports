@@ -1,5 +1,5 @@
 # Created by: TAOKA Fumiyoshi <fmysh@iijmio-mail.jp>
-# $FreeBSD: head/devel/py-pyshapelib/Makefile 456113 2017-12-12 09:03:39Z antoine $
+# $FreeBSD: head/devel/py-pyshapelib/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	pyshapelib
 PORTVERSION=	1.0
@@ -33,7 +33,7 @@ post-extract:
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for f in ${PORTDOCS}
-	${INSTALL_MAN} ${WRKSRC}/$f ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/$f ${STAGEDIR}${DOCSDIR}
 .endfor
 
 post-install-EXAMPLES-on:

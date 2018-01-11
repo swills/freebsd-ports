@@ -1,5 +1,5 @@
 # Created by: Motomichi Matsuzaki <mzaki@m.u-tokyo.ac.jp>
-# $FreeBSD: head/biology/velvet/Makefile 377443 2015-01-19 17:43:57Z marino $
+# $FreeBSD: head/biology/velvet/Makefile 458761 2018-01-11 18:09:00Z danfe $
 
 PORTNAME=	velvet
 PORTVERSION=	1.2.10
@@ -77,7 +77,9 @@ do-install:
 .for f in ${PERLMOD_FILES}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${STAGEDIR}${PREFIX}/${SITE_PERL_REL}/${f:H:T}/${f:T}
 .endfor
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
+
+do-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

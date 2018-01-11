@@ -1,5 +1,5 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/science/sigrok-firmware-utils/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/science/sigrok-firmware-utils/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	firmware
 PORTVERSION=	20140418
@@ -32,7 +32,7 @@ PLIST_FILES=	${PY_FILES:S,^,bin/,} \
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${FILESDIR}/README.parsepe ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${FILESDIR}/README.parsepe ${STAGEDIR}${DOCSDIR}
 .for fil in ${PY_FILES}
 	${INSTALL_SCRIPT} ${FILESDIR}/${fil} ${STAGEDIR}${PREFIX}/bin
 .endfor

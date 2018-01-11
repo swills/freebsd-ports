@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/comms/sredird/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/comms/sredird/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	sredird
 PORTVERSION=	2.2.2
@@ -23,6 +23,6 @@ do-install:
 
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

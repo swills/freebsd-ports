@@ -1,5 +1,5 @@
 # Created by: Martin Kammerhofer
-# $FreeBSD: head/textproc/perl2html/Makefile 395960 2015-09-03 14:09:17Z amdmi3 $
+# $FreeBSD: head/textproc/perl2html/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	perl2html
 PORTVERSION=	0.9.2
@@ -18,7 +18,7 @@ OPTIONS_DEFINE=	DOCS
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for file in AUTHORS NEWS README
-	${INSTALL_MAN} ${WRKSRC}/${file} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/${file} ${STAGEDIR}${DOCSDIR}
 .endfor
 
 .include <bsd.port.mk>

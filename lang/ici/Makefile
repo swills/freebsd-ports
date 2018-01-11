@@ -1,5 +1,5 @@
 # Created by: andy
-# $FreeBSD: head/lang/ici/Makefile 360810 2014-07-05 19:27:03Z olgeni $
+# $FreeBSD: head/lang/ici/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	ici
 PORTVERSION=	4.1.2
@@ -33,7 +33,7 @@ do-install:
 .endfor
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/doc/ici4
 .for f in ${ICIDOCS}
-	${INSTALL_MAN} ${WRKSRC}/$f ${STAGEDIR}${PREFIX}/share/doc/ici4
+	${INSTALL_DATA} ${WRKSRC}/$f ${STAGEDIR}${PREFIX}/share/doc/ici4
 .endfor
 
 .include <bsd.port.mk>

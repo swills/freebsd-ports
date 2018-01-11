@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/isc-dhcp44-server/Makefile 458580 2018-01-09 22:07:43Z zi $
+# $FreeBSD: head/net/isc-dhcp44-server/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	dhcp
 PORTVERSION=	4.4.0b1
@@ -165,7 +165,7 @@ do-install:
 .endif
 .if ${PORT_OPTIONS:MLDAP}
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${LDAP_README} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${LDAP_README} ${STAGEDIR}${DOCSDIR}
 .endif
 .endif
 .if ${SUBSYS} == client

@@ -1,5 +1,5 @@
 # Created by: Marcin Cieslak <saper@SYSTEM.PL>
-# $FreeBSD: head/net/tn5250j/Makefile 431402 2017-01-13 16:54:55Z mat $
+# $FreeBSD: head/net/tn5250j/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	tn5250j
 PORTVERSION=	0.6.0
@@ -53,7 +53,7 @@ do-install:
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for d in ${DOC_FILES}
-	${INSTALL_MAN} ${WRKSRC}/src/${d} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/src/${d} ${STAGEDIR}${DOCSDIR}
 .endfor
 
 .include <bsd.port.post.mk>

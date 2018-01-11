@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/elasticsearch5-x-pack/Makefile 437844 2017-04-06 01:33:55Z tj $
+# $FreeBSD: head/textproc/elasticsearch5-x-pack/Makefile 458754 2018-01-11 16:24:53Z danfe $
 
 PORTNAME=	x-pack
 PORTVERSION=	5.3.0
@@ -9,7 +9,6 @@ PKGNAMEPREFIX=	elasticsearch5-
 
 MAINTAINER=	tj@FreeBSD.org
 COMMENT=	Elasticsearch X-Pack plugins
-
 
 RUN_DEPENDS:=	elasticsearch5>=5.3.0:textproc/elasticsearch5
 

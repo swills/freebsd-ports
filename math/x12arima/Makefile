@@ -1,5 +1,5 @@
 # Created by: jh@jameshoward.us
-# $FreeBSD: head/math/x12arima/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/x12arima/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	x12arima
 PORTVERSION=	0.3
@@ -31,7 +31,7 @@ PORTDOCS=	ReleaseNotesVersion03.pdf qref03unix.pdf x12adocV03.pdf
 .if ${PORT_OPTIONS:MDOCS}
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	@(cd ${WRKSRC}/docs && ${INSTALL_MAN} ${PORTDOCS} ${STAGEDIR}${DOCSDIR})
-
+	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/docs/|} ${STAGEDIR}${DOCSDIR}
 .endif
+
 .include <bsd.port.mk>

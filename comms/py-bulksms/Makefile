@@ -1,5 +1,5 @@
 # Created by: Andy Gilligan <andy@evo6.org>
-# $FreeBSD: head/comms/py-bulksms/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/comms/py-bulksms/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	bulksms
 PORTVERSION=	0.1
@@ -21,6 +21,6 @@ OPTIONS_DEFINE=	DOCS
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	@${INSTALL_MAN} ${WRKSRC}/README.html ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README.html ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

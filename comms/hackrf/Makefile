@@ -1,8 +1,8 @@
 # Created by: Tomasz "CeDeROM" CEDRO (http://www.tomek.cedro.info)
-# $FreeBSD: head/comms/hackrf/Makefile 395641 2015-08-30 20:20:31Z pi $
+# $FreeBSD: head/comms/hackrf/Makefile 458672 2018-01-10 18:51:08Z swills $
 
 PORTNAME=	hackrf
-PORTVERSION=	2015.07.2
+PORTVERSION=	2017.02.1
 CATEGORIES=	comms devel hamradio science security
 
 MAINTAINER=	cederom@tlen.pl
@@ -12,7 +12,7 @@ LICENSE=	GPLv2
 
 USE_GITHUB=	YES
 GH_ACCOUNT=	mossmann
-GH_TAGNAME=	69c4997
+GH_TAGNAME=	31a37bd
 
 USES=		cmake:outsource
 CMAKE_SOURCE_PATH=	${WRKSRC}/host

@@ -1,8 +1,8 @@
 # Created by: Lukasz Stelmach <lukasz.stelmach@iem.pw.edu.pl>
-# $FreeBSD: head/www/mathjax/Makefile 427912 2016-12-05 18:12:12Z pi $
+# $FreeBSD: head/www/mathjax/Makefile 458730 2018-01-11 13:23:48Z tobik $
 
 PORTNAME=	MathJax
-PORTVERSION=	2.7.0
+DISTVERSION=	2.7.2
 CATEGORIES=	www
 
 MAINTAINER=	marko.cupac@mimar.rs

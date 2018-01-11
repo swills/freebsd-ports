@@ -1,8 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/textproc/py-html2text/Makefile 451525 2017-10-08 12:47:38Z dbaio $
+# $FreeBSD: head/textproc/py-html2text/Makefile 458799 2018-01-11 22:17:29Z dbaio $
 
 PORTNAME=	html2text
-PORTVERSION=	2017.10.4
+PORTVERSION=	2018.1.9
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

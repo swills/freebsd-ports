@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/libevhtp/Makefile 458045 2018-01-04 19:13:15Z ultima $
+# $FreeBSD: head/www/libevhtp/Makefile 458757 2018-01-11 17:34:22Z ultima $
 
 PORTNAME=	libevhtp
 PORTVERSION=	1.2.15
+PORTREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	ultima@FreeBSD.org

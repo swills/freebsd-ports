@@ -1,5 +1,5 @@
 # Created by: rooneg@electricjellyfish.net
-# $FreeBSD: head/devel/subversion/Makefile 458087 2018-01-04 20:58:50Z lev $
+# $FreeBSD: head/devel/subversion/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTREVISION=	1
 
@@ -164,7 +164,7 @@ post-install:	${MKREPOS_TARGET}
 	@${MKDIR} ${STAGEDIR}${DATADIR}
 	(cd ${WRKSRC}/tools.examples && ${TAR} --exclude '*.in' -cf - * | ${TAR} -C ${STAGEDIR}${DATADIR} -xof - )
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 
 post-install-STATIC-off:
 	-@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/*.so

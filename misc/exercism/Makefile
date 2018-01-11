@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/misc/exercism/Makefile 451834 2017-10-12 09:06:17Z mat $
+# $FreeBSD: head/misc/exercism/Makefile 458696 2018-01-10 21:45:11Z swills $
 
 PORTNAME=	exercism
-PORTVERSION=	2.2.5
+PORTVERSION=	2.4.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	misc
 

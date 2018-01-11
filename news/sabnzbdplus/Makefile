@@ -1,4 +1,4 @@
-# $FreeBSD: head/news/sabnzbdplus/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/news/sabnzbdplus/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	sabnzbdplus
 PORTVERSION=	2.3.0
@@ -70,7 +70,7 @@ do-install:
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for i in ${PORTDOCS}
-	${INSTALL_MAN} ${WRKSRC}/${i} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/${i} ${STAGEDIR}${DOCSDIR}
 .endfor
 
 .include <bsd.port.mk>

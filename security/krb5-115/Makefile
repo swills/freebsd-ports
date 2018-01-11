@@ -1,5 +1,5 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/security/krb5-115/Makefile 453195 2017-10-30 16:55:26Z mandree $
+# $FreeBSD: head/security/krb5-115/Makefile 458754 2018-01-11 16:24:53Z danfe $
 
 PORTNAME=		krb5
 PORTVERSION=		1.15.2
@@ -99,7 +99,6 @@ CONFIGURE_ARGS+=	--program-transform-name="${PROGRAM_TRANSFORM_NAME}"
 HTML_DOC_DIR=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/doc/html
 PDF_DOC_DIR=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/doc/pdf
 
-
 .include <bsd.port.pre.mk>
 
 post-install:
@@ -112,7 +111,7 @@ post-install:
 		${MKDIR} ${STAGEDIR}${PREFIX}/share/doc/krb5/$${i}; \
 	done; \
 	for i in $${pdf_files}; do \
-		${INSTALL_MAN} $${pdf} ${PREFIX}/share/doc/krb5/$${i}; \
+		${INSTALL_DATA} $${pdf} ${PREFIX}/share/doc/krb5/$${i}; \
 		${ECHO_CMD} share/doc/krb5/$${i} >> ${TMPPLIST}; \
 	done
 .endif
@@ -123,7 +122,7 @@ post-install:
 		${MKDIR} ${PREFIX}/share/doc/krb5/$${i}; \
 	done; \
 	for i in $${html_files}; do \
-		${INSTALL_MAN} $${i} ${PREFIX}/share/doc/krb5/$${i}; \
+		${INSTALL_DATA} $${i} ${PREFIX}/share/doc/krb5/$${i}; \
 		${ECHO_CMD} share/doc/krb5/$${i} >> ${TMPPLIST}; \
 	done
 .endif

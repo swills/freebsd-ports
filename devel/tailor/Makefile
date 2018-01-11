@@ -1,5 +1,5 @@
 # Created by: Rui Lopes <rgl ruilopes com>
-# $FreeBSD: head/devel/tailor/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/tailor/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	tailor
 PORTVERSION=	0.9.35
@@ -21,8 +21,8 @@ NO_ARCH=	yes
 
 OPTIONS_DEFINE=	DOCS
 
-post-install:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README* ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README* ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

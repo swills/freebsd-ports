@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/isboot-kmod/Makefile 456582 2017-12-18 03:15:54Z linimon $
+# $FreeBSD: head/net/isboot-kmod/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	isboot-kmod
 PORTVERSION=	0.2.13
@@ -29,6 +29,6 @@ VIMAGE_CFLAGS=	-DVIMAGE
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	cd ${WRKDIR}/${DISTNAME} && ${INSTALL_MAN} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
+	cd ${WRKDIR}/${DISTNAME} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

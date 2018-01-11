@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/acme.sh/Makefile 457087 2017-12-23 17:08:16Z dvl $
+# $FreeBSD: head/security/acme.sh/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	acme.sh
 PORTVERSION=	2.7.5
@@ -47,6 +47,6 @@ do-install:
 
 do-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

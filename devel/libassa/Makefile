@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/libassa/Makefile 396867 2015-09-13 22:03:46Z rodrigo $
+# $FreeBSD: head/devel/libassa/Makefile 458747 2018-01-11 14:58:49Z tijl $
 
 PORTNAME=	libassa
 DISTVERSION=	3.5.1
@@ -10,8 +10,8 @@ MAINTAINER=	rodrigo@FreeBSD.org
 COMMENT=	C++ networking library and application framework
 
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	TIRPC_CFLAGS=" " TIRPC_LIBS=" "
 USES=		libtool pathfix pkgconfig
-USE_AUTOTOOLS=	autoconf
 USE_LDCONFIG=	yes
 PLIST_SUB=	ASSA_VERSION=${PORTVERSION:R:R}
 

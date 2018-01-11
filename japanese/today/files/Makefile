@@ -1,7 +1,7 @@
 #
 # Makefile for today
 #
-# $FreeBSD: head/japanese/today/files/Makefile 398832 2015-10-08 15:11:28Z olgeni $
+# $FreeBSD: head/japanese/today/files/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 CC ?= cc
 CFLAGS += -DTRANS -DMSG_STYLE -DINTERNAL_KYUREKI_TBL -D_T_SEARCH_DEFPATHS=\"${PREFIX}/etc\" #-DUSE_TERMCAP
@@ -18,7 +18,6 @@ OBJS_TDY = $(OBJST1) $(OBJST2) version.o
 OBJSC1 = config.o getfile.o getsb.o kyureki2.o \
   misc2.o rdcalend.o schedule2.o
 OBJS_CAL = calendar.o $(OBJSC1)
-
 
 all: today calendar dayinfo
 
@@ -43,7 +42,6 @@ dayinfo: dayinfo.c
 
 clean:
 	rm -f *.o core dayinfo calendar today
-
 
 birthday.o: birthday.c $(HFILES)
 calendar.o: calendar.c $(HFILES) $(OBJSC1)

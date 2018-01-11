@@ -1,11 +1,11 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/editors/vim-tiny/Makefile 458471 2018-01-08 19:44:13Z adamw $
+# $FreeBSD: head/editors/vim-tiny/Makefile 458784 2018-01-11 20:29:52Z adamw $
 
 PKGNAMESUFFIX=	-tiny
 
 COMMENT=	Improved version of the vi editor (vim binary only)
 
-CONFLICTS_INSTALL=	vim vim-lite
+CONFLICTS_INSTALL=	vim vim-console
 
 TINY=		yes
 MASTERDIR=	${.CURDIR}/../vim

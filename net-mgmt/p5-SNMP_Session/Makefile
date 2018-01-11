@@ -1,5 +1,5 @@
 # Created by: Stephen J. Roznowski <sjr@home.net>
-# $FreeBSD: head/net-mgmt/p5-SNMP_Session/Makefile 437328 2017-03-30 21:12:43Z mat $
+# $FreeBSD: head/net-mgmt/p5-SNMP_Session/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	SNMP_Session
 PORTVERSION=	1.13
@@ -26,6 +26,5 @@ post-install:
 .for file in README README.SNMP_util index.html
 	${INSTALL_DATA} ${WRKSRC}/${file} ${STAGEDIR}${DOCSDIR}
 .endfor
-
 
 .include <bsd.port.mk>

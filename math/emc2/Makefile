@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/math/emc2/Makefile 433664 2017-02-08 18:46:36Z thierry $
+# $FreeBSD: head/math/emc2/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	emc2
 DISTVERSIONPREFIX=v
@@ -44,6 +44,6 @@ do-install:
 
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	@(cd ${DISTDIR} && ${INSTALL_MAN} ${PORTDOCS} ${STAGEDIR}${DOCSDIR})
+	@(cd ${DISTDIR} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR})
 
 .include <bsd.port.mk>

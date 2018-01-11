@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/print/mftrace/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/mftrace/Makefile 458754 2018-01-11 16:24:53Z danfe $
 
 PORTNAME=	mftrace
 PORTVERSION=	1.2.18
@@ -27,7 +27,6 @@ USE_TEX=	base texmf
 GNU_CONFIGURE=	yes
 USES=		gmake python
 MAKEFILE=	GNUmakefile
-
 
 PLIST_FILES=	\
 		bin/gf2pbm \

@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/megamario/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/megamario/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	megamario
 PORTVERSION=	1.7
@@ -59,7 +59,7 @@ post-install:
 		${STAGEDIR}${PREFIX}/share/pixmaps/
 	${INSTALL_DATA} ${WRKSRC}/${PORTNAME}.desktop ${STAGEDIR}${DESKTOPDIR}
 
-
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${DOC_FILES1:S|^|${DOCSRCDIR1}/|} ${STAGEDIR}${DOCSDIR}
 	@${MKDIR} ${STAGEDIR}${DOCSDIR2}

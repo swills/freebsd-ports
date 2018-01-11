@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/mlvpn/Makefile 452629 2017-10-22 10:09:33Z vsevolod $
+# $FreeBSD: head/net/mlvpn/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	mlvpn
 PORTVERSION=	2.3.1
@@ -36,7 +36,7 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/man/${PORTNAME}.1 ${STAGEDIR}${PREFIX}/man/man1
 	${INSTALL_MAN} ${WRKSRC}/man/${PORTNAME}.conf.5	${STAGEDIR}${PREFIX}/man/man5
 	@${MKDIR} ${STAGEDIR}${ETCDIR}
-	${INSTALL_MAN} ${WRKSRC}/doc/examples/${PORTNAME}.conf.in ${STAGEDIR}${ETCDIR}/${PORTNAME}.conf.sample
+	${INSTALL_DATA} ${WRKSRC}/doc/examples/${PORTNAME}.conf.in ${STAGEDIR}${ETCDIR}/${PORTNAME}.conf.sample
 	${INSTALL_SCRIPT} ${WRKSRC}/doc/examples/mlvpn_updown.sh.in ${STAGEDIR}${ETCDIR}/mlvpn_updown.sh
 
 .include <bsd.port.mk>

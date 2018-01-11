@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv at kvedulv.de>
-# $FreeBSD: head/devel/rubygem-apipie-bindings/Makefile 458345 2018-01-07 15:32:48Z sunpoet $
+# $FreeBSD: head/devel/rubygem-apipie-bindings/Makefile 458633 2018-01-10 12:43:18Z sunpoet $
 
 PORTNAME=	apipie-bindings
-PORTVERSION=	0.2.1
+PORTVERSION=	0.2.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

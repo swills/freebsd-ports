@@ -1,9 +1,8 @@
 # Created by: Zsolt Udvari <udvzsolt@gmail.com>
-# $FreeBSD: head/graphics/zathura-pdf-mupdf/Makefile 457257 2017-12-25 20:52:52Z madpilot $
+# $FreeBSD: head/graphics/zathura-pdf-mupdf/Makefile 458742 2018-01-11 14:20:38Z tobik $
 
 PORTNAME=	zathura-pdf-mupdf
-PORTVERSION=	0.3.1
-PORTREVISION=	5
+PORTVERSION=	0.3.2
 CATEGORIES=	graphics
 MASTER_SITES=	https://pwmt.org/projects/zathura-pdf-mupdf/download/ \
 		http://www.madpilot.net/~mad/pwmt.org/

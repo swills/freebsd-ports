@@ -1,5 +1,5 @@
 # Created by: G. Adam Stanislav <adam@whizkidtech.net>
-# $FreeBSD: head/misc/numchar/Makefile 345385 2014-02-21 12:59:44Z ehaupt $
+# $FreeBSD: head/misc/numchar/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	numchar
 PORTVERSION=	1.0
@@ -13,7 +13,7 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/numchar ${STAGEDIR}${PREFIX}/bin
 	${LN} -fs ${PREFIX}/bin/numchar ${STAGEDIR}${PREFIX}/bin/phdecode
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/doc/numchar
-	${INSTALL_MAN} ${WRKSRC}/numchar.html \
+	${INSTALL_DATA} ${WRKSRC}/numchar.html \
 		${STAGEDIR}${PREFIX}/share/doc/numchar
 
 .include <bsd.port.mk>

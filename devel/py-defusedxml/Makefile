@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/devel/py-defusedxml/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-defusedxml/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	defusedxml
 PORTVERSION=	0.4.1
@@ -20,8 +20,8 @@ DOCS_FILES=	CHANGES.txt README.txt
 
 OPTIONS_DEFINE=	DOCS
 
-post-install:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${DOCS_FILES:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${DOCS_FILES:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

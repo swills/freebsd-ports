@@ -1,9 +1,8 @@
 # Created by: Lefteris Chatzibarbas <lefcha@hellug.gr>
-# $FreeBSD: head/mail/imapfilter/Makefile 435498 2017-03-05 19:24:33Z bofh $
+# $FreeBSD: head/mail/imapfilter/Makefile 458688 2018-01-10 20:03:51Z bofh $
 
 PORTNAME=	imapfilter
-PORTVERSION=	2.6.10
-PORTREVISION=	1
+PORTVERSION=	2.6.11
 DISTVERSIONPREFIX=	v
 CATEGORIES=	mail
 
@@ -22,19 +21,6 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	lefcha
 
 PORTDOCS=	LICENSE NEWS README
-PLIST_FILES=	bin/imapfilter \
-		man/man1/imapfilter.1.gz \
-		man/man5/imapfilter_config.5.gz \
-		%%DATADIR%%/account.lua \
-		%%DATADIR%%/auxiliary.lua \
-		%%DATADIR%%/common.lua \
-		%%DATADIR%%/mailbox.lua \
-		%%DATADIR%%/message.lua \
-		%%DATADIR%%/options.lua \
-		%%DATADIR%%/regex.lua \
-		%%DATADIR%%/set.lua \
-		%%EXAMPLESDIR%%/config.lua \
-		%%EXAMPLESDIR%%/extend.lua
 MAKE_ARGS=	PREFIX=${PREFIX} \
 		MYCFLAGS="${CPPFLAGS}" \
 		MYLDFLAGS="${LDFLAGS}" \

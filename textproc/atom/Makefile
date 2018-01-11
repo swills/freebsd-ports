@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/atom/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/textproc/atom/Makefile 458761 2018-01-11 18:09:00Z danfe $
 
 PORTNAME=	atom
 PORTVERSION=	1.0
@@ -17,10 +17,14 @@ GNU_CONFIGURE=	yes
 PLIST_FILES=	bin/atom man/man1/atom.1.gz
 PORTDOCS=	README TODO testFile
 
+OPTIONS_DEFINE=	DOCS
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin/
 	${INSTALL_MAN} ${WRKSRC}/${PORTNAME}.1 ${STAGEDIR}${PREFIX}/man/man1/
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${PORTDOCS:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}/
+
+do-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

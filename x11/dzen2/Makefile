@@ -1,5 +1,5 @@
 # Created by: Morten Slot Kristensen
-# $FreeBSD: head/x11/dzen2/Makefile 445039 2017-07-04 19:41:21Z bhughes $
+# $FreeBSD: head/x11/dzen2/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	dzen
 PORTVERSION=	0.9.5
@@ -43,8 +43,8 @@ MAKE_ARGS+=	LDFLAGS="${LDFLAGS} \$${LIBS}" \
 post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
-	${INSTALL_MAN} ${WRKSRC}/README.dzen ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/gadgets/README.* ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/gadgets/*.sh ${STAGEDIR}${EXAMPLESDIR}
+	${INSTALL_DATA} ${WRKSRC}/README.dzen ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/gadgets/README.* ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/gadgets/*.sh ${STAGEDIR}${EXAMPLESDIR}
 
 .include <bsd.port.mk>

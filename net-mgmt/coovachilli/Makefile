@@ -1,5 +1,5 @@
 # Created by: Sevan Janiyan <venture37@geeklan.co.uk>
-# $FreeBSD: head/net-mgmt/coovachilli/Makefile 386913 2015-05-21 06:54:23Z amdmi3 $
+# $FreeBSD: head/net-mgmt/coovachilli/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	coovachilli
 PORTVERSION=	1.0.12
@@ -29,8 +29,8 @@ OPTIONS_DEFINE=	EXAMPLES
 
 post-install:
 	${MKDIR} ${STAGEDIR}/${EXAMPLESDIR}
-	${INSTALL_MAN} ${FILESDIR}/main.conf.sample ${STAGEDIR}/${EXAMPLESDIR}
-	${INSTALL_MAN} ${FILESDIR}/pf.conf.sample ${STAGEDIR}/${EXAMPLESDIR}
-	${INSTALL_MAN} ${FILESDIR}/ipfw-config.sample ${STAGEDIR}/${EXAMPLESDIR}
+	${INSTALL_DATA} ${FILESDIR}/main.conf.sample ${STAGEDIR}/${EXAMPLESDIR}
+	${INSTALL_DATA} ${FILESDIR}/pf.conf.sample ${STAGEDIR}/${EXAMPLESDIR}
+	${INSTALL_DATA} ${FILESDIR}/ipfw-config.sample ${STAGEDIR}/${EXAMPLESDIR}
 
 .include <bsd.port.mk>

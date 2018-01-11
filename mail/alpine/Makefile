@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/alpine/Makefile 443900 2017-06-19 17:39:21Z ultima $
+# $FreeBSD: head/mail/alpine/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME?=	alpine
 PORTVERSION=	2.21
@@ -119,13 +119,13 @@ post-install:
 post-install-DOCS-on:
 	${INSTALL} -d ${STAGEDIR}${DOCSDIR} ${STAGEDIR}${DOCSDIR}/tech-notes
 .for f in ${PORTDOCSbase}
-	${INSTALL_MAN} ${WRKSRC}/$f ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/$f ${STAGEDIR}${DOCSDIR}
 .endfor
 .for f in ${PORTDOCSdoc}
-	${INSTALL_MAN} ${WRKSRC}/doc/$f ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/doc/$f ${STAGEDIR}${DOCSDIR}
 .endfor
 .for f in ${PORTDOCShtml}
-	${INSTALL_MAN} ${WRKSRC}/doc/$f ${STAGEDIR}${DOCSDIR}/tech-notes
+	${INSTALL_DATA} ${WRKSRC}/doc/$f ${STAGEDIR}${DOCSDIR}/tech-notes
 .endfor
 .endif # !defined(PICO_ALPINE_SLAVE)
 

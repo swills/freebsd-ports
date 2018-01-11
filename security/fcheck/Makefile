@@ -1,5 +1,5 @@
 # Created by: Lars Engels <lme@FreeBSD.org>
-# $FreeBSD: head/security/fcheck/Makefile 362024 2014-07-16 03:18:26Z adamw $
+# $FreeBSD: head/security/fcheck/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	fcheck
 PORTVERSION=	2.07.59
@@ -39,7 +39,7 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/sbin
 	${INSTALL_DATA} ${WRKSRC}/${PORTNAME}.cfg ${STAGEDIR}${PREFIX}/etc/${PORTNAME}.cfg.sample
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/install ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/install ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.post.mk>

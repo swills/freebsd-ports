@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/aircraft-datcom/Makefile 455488 2017-12-03 21:26:18Z rodrigo $
+# $FreeBSD: head/science/aircraft-datcom/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	aircraft-datcom
 DISTVERSION=	0.0.20120723
@@ -19,6 +19,6 @@ USES=	fortran cmake
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/doc/* ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/doc/* ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.post.mk>

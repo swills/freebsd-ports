@@ -1,5 +1,5 @@
 # Created by: Ganbold Tsagaankhuu <ganbold@FreeBSD.org>
-# $FreeBSD: head/databases/ateam_mysql_ldap_auth/Makefile 416240 2016-06-01 13:14:56Z mat $
+# $FreeBSD: head/databases/ateam_mysql_ldap_auth/Makefile 458720 2018-01-11 11:12:33Z danfe $
 
 PORTNAME=	ateam_mysql_ldap_auth
 PORTVERSION=	1.0
@@ -28,11 +28,15 @@ PLIST_FILES=	lib/mysql/plugin/auth_ldap.so \
 SUB_FILES=	pkg-message
 
 do-install:
-	${MKDIR} ${STAGEDIR}${PREFIX}/lib/mysql/plugin
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_PROGRAM} ${WRKSRC}/src/auth_ldap.so ${STAGEDIR}${PREFIX}/lib/mysql/plugin/
-	${INSTALL_DATA} ${WRKSRC}/ateam_mysql_ldap_auth.conf ${STAGEDIR}${PREFIX}/etc/ateam_mysql_ldap_auth.conf.sample
-	${INSTALL_MAN} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}/
-	${INSTALL_MAN} ${WRKSRC}/INSTALL ${STAGEDIR}${DOCSDIR}/
+	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/mysql/plugin
+	${INSTALL_PROGRAM} ${WRKSRC}/src/auth_ldap.so \
+		${STAGEDIR}${PREFIX}/lib/mysql/plugin
+	${INSTALL_DATA} ${WRKSRC}/ateam_mysql_ldap_auth.conf \
+		${STAGEDIR}${PREFIX}/etc/ateam_mysql_ldap_auth.conf.sample
+
+do-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/INSTALL ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

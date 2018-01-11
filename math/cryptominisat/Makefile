@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/cryptominisat/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/math/cryptominisat/Makefile 458786 2018-01-11 20:34:08Z adamw $
 
 PORTNAME=	cryptominisat
 PORTVERSION=	5.0.1
@@ -12,7 +12,7 @@ LICENSE=	MIT LGPL21
 LICENSE_COMB=	multi
 LICENSE_FILE_LGPL21=	${WRKSRC}/LICENSE-SCALMC
 
-BUILD_DEPENDS=	xxd:editors/vim-lite # for xxd tool
+BUILD_DEPENDS=	xxd:editors/vim-console # for xxd tool
 LIB_DEPENDS=	libboost_program_options.so:devel/boost-libs
 
 BROKEN_powerpc64=	fails to compile: main.cpp: undefined reference to boost::program_options::abstract_variables_map::operator[]

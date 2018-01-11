@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/syncthing/Makefile 455633 2017-12-06 02:41:21Z swills $
+# $FreeBSD: head/net/syncthing/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	syncthing
 PORTVERSION=	0.14.41
@@ -29,7 +29,7 @@ do-install:
 		${STAGEDIR}${PREFIX}/bin/
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for x in AUTHORS CONTRIBUTING.md LICENSE README.md
-	${INSTALL_MAN} ${WRKSRC}/src/github.com/${PORTNAME}/${PORTNAME}/${x} \
+	${INSTALL_DATA} ${WRKSRC}/src/github.com/${PORTNAME}/${PORTNAME}/${x} \
 		${STAGEDIR}${DOCSDIR}
 .endfor
 

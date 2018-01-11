@@ -1,8 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/mail/opensmtpd-extras-table-python/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/mail/opensmtpd-extras-table-python/Makefile 458745 2018-01-11 14:39:10Z fluffy $
 
 PKGNAMESUFFIX=	-table-python
-PORTREVISION=	2
+PORTREVISION=	3
 
 COMMENT=	Python table support for OpenSMTPD
 
@@ -10,7 +10,7 @@ PLIST_FILES=	libexec/opensmtpd/table-python
 
 CONFIGURE_ARGS+=	--with-table-python --with-python-type=${PYTHON_VERSION}
 
-USES=		python:2 pkgconfig
+USES=		python:2.7 pkgconfig
 
 MASTERDIR=	${.CURDIR}/../opensmtpd-extras
 SLAVE_PORT=	yes

@@ -1,5 +1,5 @@
 # Created by: Nosov Artem <chip-set@mail.ru>
-# $FreeBSD: head/sysutils/zisofs-tools/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/sysutils/zisofs-tools/Makefile 458733 2018-01-11 13:41:45Z tijl $
 
 PORTNAME=	zisofs-tools
 PORTVERSION=	1.0.8
@@ -12,7 +12,6 @@ COMMENT=	User utilities for zisofs
 
 PORTDOCS=	CHANGES COPYING INSTALL MRULES README
 
-USE_AUTOTOOLS=	autoconf
 USES=		gmake tar:bzip2 desthack
 GNU_CONFIGURE=	yes
 

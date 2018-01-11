@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/amtc/Makefile 427552 2016-12-02 11:58:21Z mat $
+# $FreeBSD: head/sysutils/amtc/Makefile 458786 2018-01-11 20:34:08Z adamw $
 
 PORTNAME=	amtc
 PORTVERSION=	0.8.5
@@ -9,7 +9,7 @@ COMMENT=	Threaded Intel AMT/vPro mass management tool
 
 LICENSE=	CC-BY-3.0
 
-BUILD_DEPENDS=	xxd:editors/vim-lite
+BUILD_DEPENDS=	xxd:editors/vim-console
 LIB_DEPENDS+=	libgcrypt.so:security/libgcrypt \
 		libcurl.so:ftp/curl
 

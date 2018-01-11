@@ -1,5 +1,5 @@
 # Created by: Alex Samorukov <samm@os2.kiev.ua>
-# $FreeBSD: head/databases/xtrabackup/Makefile 455169 2017-11-30 06:42:57Z linimon $
+# $FreeBSD: head/databases/xtrabackup/Makefile 458786 2018-01-11 20:34:08Z adamw $
 
 PORTNAME=	xtrabackup
 PORTVERSION=	2.3.6
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	bash:shells/bash \
 		cmake:devel/cmake \
 		bison:devel/bison \
-		xxd:editors/vim-lite
+		xxd:editors/vim-console
 LIB_DEPENDS=	libev.so:devel/libev \
 		libgcrypt.so:security/libgcrypt \
 		libgpg-error.so:security/libgpg-error

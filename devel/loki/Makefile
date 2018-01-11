@@ -1,5 +1,5 @@
 # Created by: Sun Chang-Ming
-# $FreeBSD: head/devel/loki/Makefile 425237 2016-11-03 16:03:20Z linimon $
+# $FreeBSD: head/devel/loki/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	loki
 PORTVERSION=	0.1.7
@@ -27,10 +27,10 @@ post-patch:
 		-e 's/\$${PREFIX}/$${DESTDIR}$${PREFIX}/g' \
 		${WRKSRC}/Makefile.common
 
-post-install:
+post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for i in ${DOCS}
-	${INSTALL_MAN} ${WRKSRC}/${i} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/${i} ${STAGEDIR}${DOCSDIR}
 .endfor
 
 .include <bsd.port.mk>

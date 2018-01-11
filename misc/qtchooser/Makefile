@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/qtchooser/Makefile 434380 2017-02-18 19:48:05Z tcberner $
+# $FreeBSD: head/misc/qtchooser/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	qtchooser
 PORTVERSION=	39
@@ -42,6 +42,5 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/qtchooser.1 ${STAGEDIR}${MAN1PREFIX}/man/man1
 # Create the default profile.
 	cd ${STAGEDIR}/${QT_QTCHOOSERDIR} && ${LN} -s qt5.conf default.conf
-
 
 .include <bsd.port.mk>

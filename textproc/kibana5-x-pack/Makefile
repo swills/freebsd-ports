@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/kibana5-x-pack/Makefile 437844 2017-04-06 01:33:55Z tj $
+# $FreeBSD: head/textproc/kibana5-x-pack/Makefile 458754 2018-01-11 16:24:53Z danfe $
 
 PORTNAME=	x-pack
 PORTVERSION=	5.3.0
@@ -9,7 +9,6 @@ PKGNAMEPREFIX=	kibana5-
 
 MAINTAINER=	tj@FreeBSD.org
 COMMENT=	Kibana 5.0 X-Pack plugins
-
 
 RUN_DEPENDS:=	kibana5>=5.3.0:textproc/kibana5
 

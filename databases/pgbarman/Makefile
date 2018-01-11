@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/databases/pgbarman/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/pgbarman/Makefile 458761 2018-01-11 18:09:00Z danfe $
 
 PORTNAME=	barman
 DISTVERSION=	2.3
@@ -31,6 +31,8 @@ USE_PYTHON=	autoplist distutils concurrent optsuffix
 
 PORTDOCS=	tutorial.pdf
 
+OPTIONS_DEFINE=	DOCS
+
 .include <bsd.port.pre.mk>
 
 .if ${PGSQL_VER:M9\.[12345]}
@@ -48,9 +50,12 @@ post-patch:
 	${SED} -i -e "s@%%PGUSER%%@${PGUSER}@" ${WRKSRC}/doc/barman.5
 
 post-install:
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKDIR}/${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 	${MKDIR} ${STAGEDIR}${ETCDIR}
-	${INSTALL_DATA} ${WRKSRC}/doc/barman.conf ${STAGEDIR}${ETCDIR}/barman.conf.sample
+	${INSTALL_DATA} ${WRKSRC}/doc/barman.conf \
+		${STAGEDIR}${ETCDIR}/barman.conf.sample
+
+post-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKDIR}/${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.post.mk>

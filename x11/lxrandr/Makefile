@@ -1,5 +1,5 @@
 # Created by: Eric Turgeon <ericturgeon.bsd@gmail.com>
-# $FreeBSD: head/x11/lxrandr/Makefile 431467 2017-01-14 14:01:59Z olivierd $
+# $FreeBSD: head/x11/lxrandr/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	lxrandr
 PORTVERSION=	0.3.1
@@ -12,14 +12,13 @@ COMMENT=	Monitor configuration tool
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
-	libfreetype.so:print/freetype2
+		libfreetype.so:print/freetype2
 
 USES=		desktop-file-utils gmake localbase pkgconfig tar:xz
 USE_GNOME=	gtk20 intltool cairo
 USE_XORG=	xrandr
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
-
 
 OPTIONS_DEFINE=	NLS
 OPTIONS_SUB=	yes

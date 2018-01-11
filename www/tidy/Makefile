@@ -1,5 +1,5 @@
 # Created by: Abel Chow <achow@transoft.net>
-# $FreeBSD: head/www/tidy/Makefile 422753 2016-09-25 16:39:04Z dinoex $
+# $FreeBSD: head/www/tidy/Makefile 458761 2018-01-11 18:09:00Z danfe $
 
 PORTNAME=	tidy4
 PORTVERSION=	20000804
@@ -25,10 +25,11 @@ do-configure:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/tidy ${STAGEDIR}${PREFIX}/bin/tidy4
-	${INSTALL_MAN}	${WRKSRC}/man_page.txt	${STAGEDIR}${PREFIX}/man/man1/tidy4.1
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
-.for docfile in ${DOCFILES}
-	${INSTALL_MAN} ${WRKSRC}/${docfile} ${STAGEDIR}${DOCSDIR}/
-.endfor
+	${INSTALL_MAN} ${WRKSRC}/man_page.txt \
+		${STAGEDIR}${PREFIX}/man/man1/tidy4.1
+
+do-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

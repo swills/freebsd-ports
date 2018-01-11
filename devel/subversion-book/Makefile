@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/subversion-book/Makefile 400854 2015-11-05 13:59:10Z mat $
+# $FreeBSD: head/devel/subversion-book/Makefile 458646 2018-01-10 15:08:51Z danfe $
 
 PORTNAME=	subversion-book
 DISTVERSION=	4515
@@ -42,7 +42,7 @@ do-install-HTML_SINGLE-on:
 	(cd ${STAGEDIR}${DOCSDIR}/svn-book-html && ${LN} -s svn-book.html index.html)
 
 do-install-PDF-on:
-	${INSTALL_MAN} ${DISTDIR}/${DIST_SUBDIR}/${PDF_DISTFILES} \
+	${INSTALL_DATA} ${DISTDIR}/${DIST_SUBDIR}/${PDF_DISTFILES} \
 		${STAGEDIR}${DOCSDIR}/svn-book.pdf
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Frank Laszlo <laszlof@vonostingroup.com>
-# $FreeBSD: head/audio/ezstream/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/audio/ezstream/Makefile 458754 2018-01-11 16:24:53Z danfe $
 
 PORTNAME=	ezstream
 PORTVERSION=	0.5.6
@@ -40,7 +40,6 @@ TAGLIB_LIB_DEPENDS=		libtag.so:audio/taglib
 TAGLIB_CONFIGURE_ON=	--with-taglib=${LOCALBASE}
 
 .include <bsd.port.options.mk>
-
 
 post-patch:
 	@${REINPLACE_CMD} -e '/^SUBDIRS =/s|examples||g ; \

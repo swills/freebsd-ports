@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-six/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/security/rubygem-six/Makefile 458657 2018-01-10 16:03:51Z swills $
 
 PORTNAME=	six
-PORTVERSION=	0.2.0
+PORTVERSION=	0.2.1
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

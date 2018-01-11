@@ -1,5 +1,5 @@
 # Created by: KIMURA Yasuhiro <yasu@utahime.org>
-# $FreeBSD: head/textproc/yaml-mode.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/textproc/yaml-mode.el/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	yaml-mode.el
 PORTVERSION=	0.0.13
@@ -32,7 +32,7 @@ pre-install:
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for file in Changes README
-	${INSTALL_MAN} ${WRKSRC}/${file} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/${file} ${STAGEDIR}${DOCSDIR}
 .endfor
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/graphics/gtk-update-icon-cache/Makefile 448895 2017-08-29 09:01:36Z amdmi3 $
+# $FreeBSD: head/graphics/gtk-update-icon-cache/Makefile 458674 2018-01-10 18:57:31Z swills $
 
 PORTNAME=	gtk-update-icon-cache
-PORTVERSION=	2.24.29
+PORTVERSION=	2.24.31
 CATEGORIES=	graphics
 MASTER_SITES=	GNOME/sources/gtk+/${PORTVERSION:C/^([0-9]+\.[0-9]+).*/\1/}
 DISTNAME=	gtk+-${PORTVERSION}

@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/devel/p5-Set-Object/Makefile 454140 2017-11-13 19:36:11Z sunpoet $
+# $FreeBSD: head/devel/p5-Set-Object/Makefile 458630 2018-01-10 12:43:01Z sunpoet $
 
 PORTNAME=	Set-Object
-PORTVERSION=	1.38
+PORTVERSION=	1.39
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

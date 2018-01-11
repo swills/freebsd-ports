@@ -1,5 +1,5 @@
 # Created by: KIMURA Yasuhiro <yasu@utahime.org>
-# $FreeBSD: head/editors/with-editor/Makefile 451337 2017-10-05 19:21:46Z cs $
+# $FreeBSD: head/editors/with-editor/Makefile 458761 2018-01-11 18:09:00Z danfe $
 
 PORTNAME=	with-editor
 PORTVERSION=	2.7.0
@@ -18,22 +18,25 @@ GH_ACCOUNT=	magit
 
 USES=		gmake makeinfo
 USE_EMACS=	yes
+MAKE_ENV=	EFLAGS="-L ${PREFIX}/${EMACS_SITE_LISPDIR}"
 NO_ARCH=	yes
 INFO=		with-editor
 PORTDOCS=	README.md
-
-OPTIONS_DEFINE=	DOCS
-
-MAKE_ENV+=	EFLAGS="-L ${PREFIX}/${EMACS_SITE_LISPDIR}"
 
 PLIST_FILES=	${EMACS_VERSION_SITE_LISPDIR}/with-editor.el \
 		${EMACS_VERSION_SITE_LISPDIR}/with-editor.elc \
 		${EMACS_VERSION_SITE_LISPDIR}/with-editor-autoloads.el
 
+OPTIONS_DEFINE=	DOCS
+
 do-install:
-	${MKDIR} ${STAGEDIR}${PREFIX}/${EMACS_VERSION_SITE_LISPDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${WRKSRC}/*.el ${WRKSRC}/*.elc ${STAGEDIR}${PREFIX}/${EMACS_VERSION_SITE_LISPDIR}
-	${INSTALL_MAN} ${WRKSRC}/*.info ${STAGEDIR}${PREFIX}/${INFO_PATH}
-	${INSTALL_MAN} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
+	@${MKDIR} ${STAGEDIR}${PREFIX}/${EMACS_VERSION_SITE_LISPDIR}
+	${INSTALL_DATA} ${WRKSRC}/*.el ${WRKSRC}/*.elc \
+		${STAGEDIR}${PREFIX}/${EMACS_VERSION_SITE_LISPDIR}
+
+do-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/*.info ${STAGEDIR}${PREFIX}/${INFO_PATH}
+	${INSTALL_DATA} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

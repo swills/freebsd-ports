@@ -1,5 +1,5 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/comms/tcpser/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/comms/tcpser/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	tcpser
 DISTVERSION=	1.0rc12
@@ -25,6 +25,6 @@ do-install:
 
 do-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README ${WRKSRC}/CHANGES ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${WRKSRC}/CHANGES ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

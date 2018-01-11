@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/net-p2p/frost/Makefile 400848 2015-11-05 12:36:25Z mat $
+# $FreeBSD: head/net-p2p/frost/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	frost
 PORTVERSION=	1.2.0.20090314
@@ -23,7 +23,6 @@ PLIST_SUB=	JAR_DIR=${JAR_DIR}
 DATADIR=	${JAVASHAREDIR}/${PORTNAME}
 
 OPTIONS_DEFINE=	DOCS
-
 
 JAVAVM=		${LOCALBASE}/bin/java
 JAR_DIR=	${JAVAJARDIR:S,^${PREFIX}/,,}/${PORTNAME}
@@ -58,8 +57,6 @@ DESKTOP_ENTRIES=	"Frost" "Freenet Client" \
 			"${JAVASHAREDIR}/${PORTNAME}/jtc.ico" \
 			"frost" "P2P;Network;Java;" \
 			false
-
-pre-everything::
 
 post-patch:
 	@${SED} -e "s|%%PREFIX%%|${PREFIX}|; \

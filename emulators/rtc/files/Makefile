@@ -22,7 +22,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN	IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 #
-# $FreeBSD: head/emulators/rtc/files/Makefile 398832 2015-10-08 15:11:28Z olgeni $
+# $FreeBSD: head/emulators/rtc/files/Makefile 458755 2018-01-11 16:53:44Z danfe $
 #
 
 SYS?=		/sys
@@ -36,7 +36,6 @@ MODULE_DEPEND=	linux
 CDEV_MAJOR?=	202
 DEVNAME= 	${KMOD}
 SRCS=		rtc.c rtc_linux.c vnode_if.h
-
 
 INCLUDE=	-I${.CURDIR} -I${SYS}
 

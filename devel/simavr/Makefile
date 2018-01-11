@@ -1,5 +1,5 @@
 # Created by: Felix Palmen <felix@palmen-it.de>
-# $FreeBSD: head/devel/simavr/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/devel/simavr/Makefile 458646 2018-01-10 15:08:51Z danfe $
 
 PORTNAME=	simavr
 PORTVERSION=	1.3
@@ -50,8 +50,8 @@ post-install:
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/doc/manual/manual.pdf ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/doc/simavr_callgraph.pdf ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/doc/manual/manual.pdf ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/doc/simavr_callgraph.pdf ${STAGEDIR}${DOCSDIR}
 
 post-install-EXAMPLES-on:
 .for BOARDELF in hd77480,charlcd i2ctest ledramp simduino ssd1306,ssd1306demo timer_64led

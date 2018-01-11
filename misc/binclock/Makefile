@@ -1,5 +1,5 @@
 # Created by: Dereckson <dereckson@gmail.com>
-# $FreeBSD: head/misc/binclock/Makefile 412060 2016-03-28 16:22:29Z riggs $
+# $FreeBSD: head/misc/binclock/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	binclock
 DISTVERSION=	1.5
@@ -25,6 +25,6 @@ do-install:
 
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

@@ -1,7 +1,7 @@
-# $FreeBSD: head/finance/homebank/Makefile 449959 2017-09-16 09:42:21Z pawel $
+# $FreeBSD: head/finance/homebank/Makefile 458694 2018-01-10 20:21:53Z pawel $
 
 PORTNAME=	homebank
-PORTVERSION=	5.1.6
+PORTVERSION=	5.1.7
 CATEGORIES=	finance
 MASTER_SITES=	http://homebank.free.fr/public/
 

@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/devel/rubygem-slack-notifier/Makefile 447902 2017-08-13 16:40:19Z sunpoet $
+# $FreeBSD: head/devel/rubygem-slack-notifier/Makefile 458775 2018-01-11 18:36:06Z sunpoet $
 
 PORTNAME=	slack-notifier
-PORTVERSION=	2.3.1
+PORTVERSION=	2.3.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

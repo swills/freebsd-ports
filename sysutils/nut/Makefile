@@ -1,5 +1,5 @@
 # Created by: Boris Popov <bp@FreeBSD.org>
-# $FreeBSD: head/sysutils/nut/Makefile 452531 2017-10-20 14:51:35Z cy $
+# $FreeBSD: head/sysutils/nut/Makefile 458738 2018-01-11 13:54:03Z tijl $
 
 PORTNAME=	nut
 PORTVERSION=	2.7.4
@@ -12,10 +12,9 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Network UPS Tools
 
-USE_AUTOTOOLS=	autoconf
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
-USES=		gmake pkgconfig libtool
+USES=		autoreconf gmake pkgconfig libtool
 
 NUT_USER?=	uucp
 NUT_GROUP?=	uucp

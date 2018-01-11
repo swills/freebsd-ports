@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/x11-toolkits/fltk-devel/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11-toolkits/fltk-devel/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	fltk
 DISTVERSION=	1.3.x-r${SNAPSHOT_VERS}
@@ -31,7 +31,6 @@ CMAKE_ARGS+=	-DOPTION_BUILD_SHARED_LIBS:BOOL=ON \
 		-DPREFIX_DOC:PATH=${PREFIX}/share/examples/fltk-devel \
 		-DPREFIX_INCLUDE:PATH=${PREFIX}/include/fltk-devel \
 		-DPREFIX_LIB:PATH=${PREFIX}/lib/fltk-devel
-
 
 SNAPSHOT_VERS=	10370
 PORTEXAMPLES=	*

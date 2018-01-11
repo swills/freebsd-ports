@@ -1,5 +1,5 @@
 # Created by: bf <bf@FreeBSD.org>
-# $FreeBSD: head/math/libranlip/Makefile 453238 2017-10-31 14:51:53Z olgeni $
+# $FreeBSD: head/math/libranlip/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	libranlip
 DISTVERSION=	1.0
@@ -32,7 +32,7 @@ post-install:
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/docs/ranlip.ps ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/docs/ranlip.ps ${STAGEDIR}${DOCSDIR}
 
 post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}

@@ -1,5 +1,6 @@
 # Toplevel Makefile for Xymon
-# $FreeBSD: head/net-mgmt/xymon-server/files/Makefile 398833 2015-10-08 15:12:22Z olgeni $
+# $FreeBSD: head/net-mgmt/xymon-server/files/Makefile 458755 2018-01-11 16:53:44Z danfe $
+
 BUILDTOPDIR=`pwd`
 
 # configure settings for Xymon
@@ -89,8 +90,6 @@ LFSDEF = -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
 
 include build/Makefile.FreeBSD
 
-
-# Add local CFLAGS etc. settings here
+# Add local CFLAGS, etc. settings here
 
 include build/Makefile.rules
-

@@ -1,5 +1,5 @@
 # Created by: Sergey Samoyloff <gonza@techline.ru>
-# $FreeBSD: head/mail/popa3d/Makefile 399146 2015-10-12 18:22:34Z amdmi3 $
+# $FreeBSD: head/mail/popa3d/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	popa3d
 PORTVERSION=	1.0.3
@@ -91,8 +91,8 @@ do-install:
 
 .if ${PORT_OPTIONS:MDOCS}
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/DESIGN ${STAGEDIR}${DOCSDIR}/
-	${INSTALL_MAN} ${WRKSRC}/LICENSE ${STAGEDIR}${DOCSDIR}/
+	${INSTALL_DATA} ${WRKSRC}/DESIGN ${STAGEDIR}${DOCSDIR}/
+	${INSTALL_DATA} ${WRKSRC}/LICENSE ${STAGEDIR}${DOCSDIR}/
 .if ${PORT_OPTIONS:MSMTP_AFTER_POP3}
 	${INSTALL_DATA} ${FILESDIR}/POPAUTH ${STAGEDIR}${DOCSDIR}/
 .endif

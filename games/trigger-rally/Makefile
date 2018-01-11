@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/games/trigger-rally/Makefile 458408 2018-01-08 13:21:10Z krion $
+# $FreeBSD: head/games/trigger-rally/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	trigger-rally
 PORTVERSION=	0.6.5
@@ -41,7 +41,7 @@ do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}
 	cd ${WORKINGSRC}/bin && ${CP} trigger-rally.config.defs ${STAGEDIR}${DATADIR}
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	cd ${WORKINGSRC}/doc && ${INSTALL_MAN} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
+	cd ${WORKINGSRC}/doc && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 	cd ${WORKINGSRC}/data && ${COPYTREE_SHARE} . ${STAGEDIR}${DATADIR}
 .for i in 16 22 24 32 36 48 64 72 96 128 192 256
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/hicolor/${i}x${i}/apps/ && \

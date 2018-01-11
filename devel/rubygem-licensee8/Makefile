@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/devel/rubygem-licensee/Makefile 457898 2018-01-02 15:46:37Z swills $
+# $FreeBSD: head/devel/rubygem-licensee8/Makefile 458650 2018-01-10 15:38:07Z swills $
 
 PORTNAME=	licensee
 PORTVERSION=	8.7.0

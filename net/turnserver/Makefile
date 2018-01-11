@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/turnserver/Makefile 456114 2017-12-12 10:02:20Z bhughes $
+# $FreeBSD: head/net/turnserver/Makefile 458646 2018-01-10 15:08:51Z danfe $
 
 PORTNAME=	turnserver
 PORTVERSION=	4.5.0.7
@@ -124,7 +124,7 @@ do-install-EXAMPLES-on:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/scripts/${dir}
 .endfor
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/etc
-	${INSTALL_MAN} ${WRKSRC}/examples/scripts/readme.txt \
+	${INSTALL_DATA} ${WRKSRC}/examples/scripts/readme.txt \
 		${STAGEDIR}${EXAMPLESDIR}/scripts
 	(cd ${WRKSRC}/examples/etc && ${INSTALL_DATA} ${_ETC_EXAMPLES} \
 		${STAGEDIR}${EXAMPLESDIR}/etc)

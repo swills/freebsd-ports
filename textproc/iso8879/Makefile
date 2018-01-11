@@ -1,5 +1,5 @@
 # Created by: jfieber
-# $FreeBSD: head/textproc/iso8879/Makefile 415814 2016-05-24 22:32:49Z bapt $
+# $FreeBSD: head/textproc/iso8879/Makefile 458754 2018-01-11 16:24:53Z danfe $
 
 PORTNAME=	iso8879
 PORTVERSION=	1986
@@ -23,6 +23,5 @@ do-install:
 	@${MKDIR} ${STAGEDIR}${INSTDIR}
 	@${INSTALL_DATA} ${WRKSRC}/ISO* ${STAGEDIR}${INSTDIR}
 	@${INSTALL_DATA} ${FILESDIR}/catalog ${STAGEDIR}${INSTDIR}/catalog
-
 
 .include <bsd.port.mk>

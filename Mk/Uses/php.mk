@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/php.mk 458602 2018-01-10 06:40:25Z sunpoet $
+# $FreeBSD: head/Mk/Uses/php.mk 458777 2018-01-11 18:39:40Z tijl $
 #
 # Support for PHP-based ports.
 #
@@ -215,9 +215,9 @@ PLIST_SUB+=	PHP_EXT_DIR=${PHP_EXT_DIR}
 SUB_LIST+=	PHP_EXT_DIR=${PHP_EXT_DIR}
 
 .  if ${php_ARGS:Mphpize} || ${php_ARGS:Mext} || ${php_ARGS:Mzend}
-BUILD_DEPENDS+=	${PHPBASE}/bin/phpize:${PHP_PORT}
+BUILD_DEPENDS+=	${PHPBASE}/bin/phpize:${PHP_PORT} \
+		autoconf>0:devel/autoconf
 GNU_CONFIGURE=	yes
-USE_AUTOTOOLS+=	autoconf:env
 CONFIGURE_ARGS+=--with-php-config=${PHPBASE}/bin/php-config
 
 configure-message: phpize-message do-phpize

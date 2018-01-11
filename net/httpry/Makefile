@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/httpry/Makefile 458513 2018-01-09 07:40:55Z mat $
+# $FreeBSD: head/net/httpry/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	httpry
 PORTVERSION=	0.1.7
@@ -33,7 +33,7 @@ do-install:
 		${COPYTREE_BIN} \* ${STAGEDIR}${PREFIX}/bin/httpry-scripts "! -name *.bak")
 .endif
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/doc/perl-tools ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/doc/format-string ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/doc/perl-tools ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/doc/format-string ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

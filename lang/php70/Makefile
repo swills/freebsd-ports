@@ -1,9 +1,9 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/php70/Makefile 456526 2017-12-17 10:19:10Z lwhsu $
+# $FreeBSD: head/lang/php70/Makefile 458655 2018-01-10 16:01:51Z tz $
 
 PORTNAME=	php70
-PORTVERSION=	7.0.26
-PORTREVISION?=	2
+PORTVERSION=	7.0.27
+PORTREVISION?=	0
 CATEGORIES?=	lang devel www
 MASTER_SITES=	PHP/distributions
 DISTNAME=	php-${PORTVERSION}

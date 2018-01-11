@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/micro/Makefile 451834 2017-10-12 09:06:17Z mat $
+# $FreeBSD: head/editors/micro/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	micro
 PORTVERSION=	1.1.4
@@ -48,6 +48,6 @@ do-build:
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/micro ${STAGEDIR}${PREFIX}/bin
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

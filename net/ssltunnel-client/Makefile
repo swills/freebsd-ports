@@ -1,5 +1,5 @@
 # Created by: at@rominet.net
-# $FreeBSD: head/net/ssltunnel-client/Makefile 458513 2018-01-09 07:40:55Z mat $
+# $FreeBSD: head/net/ssltunnel-client/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	ssltunnel
 PORTVERSION=	1.18
@@ -38,9 +38,9 @@ post-patch:
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/LISEZ-MOI \
+	${INSTALL_DATA} ${WRKSRC}/LISEZ-MOI \
 		${STAGEDIR}${DOCSDIR}/client.LISEZ-MOI
-	${INSTALL_MAN} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}/client.README
+	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}/client.README
 	${MKDIR} ${STAGEDIR}${ETCDIR}/
 	${INSTALL_DATA} ${WRKSRC}/client/tunnel.conf \
 		${STAGEDIR}${ETCDIR}/client.conf.sample

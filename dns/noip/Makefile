@@ -1,5 +1,5 @@
 # Created by: Eyal Soha <esoha@attbi.com>
-# $FreeBSD: head/dns/noip/Makefile 422034 2016-09-13 16:41:08Z amdmi3 $
+# $FreeBSD: head/dns/noip/Makefile 458761 2018-01-11 18:09:00Z danfe $
 
 PORTNAME=	noip
 PORTVERSION=	2.1.9
@@ -27,9 +27,11 @@ OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/noip2 ${STAGEDIR}${PREFIX}/bin
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README.FIRST ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/COPYING ${STAGEDIR}${DOCSDIR}
+
+do-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README.FIRST ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/COPYING ${STAGEDIR}${DOCSDIR}
 
 conf:
 	(cd ${PREFIX}/etc && ${PREFIX}/bin/noip2 -C)

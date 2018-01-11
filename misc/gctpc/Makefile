@@ -1,5 +1,5 @@
 # Created by: Randall Hopper <aa8vb@nc.rr.com>
-# $FreeBSD: head/misc/gctpc/Makefile 413132 2016-04-12 15:06:10Z mat $
+# $FreeBSD: head/misc/gctpc/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	gctpc
 PORTVERSION=	2.0
@@ -32,7 +32,7 @@ do-install:
 
 do-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/../doc/* ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/../README ${STAGEDIR}${DOCSDIR}/README.main
+	${INSTALL_DATA} ${WRKSRC}/../doc/* ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/../README ${STAGEDIR}${DOCSDIR}/README.main
 
 .include <bsd.port.mk>

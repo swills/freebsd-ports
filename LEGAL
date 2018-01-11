@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: head/LEGAL 452080 2017-10-14 18:55:09Z glewis $
+# $FreeBSD: head/LEGAL 458787 2018-01-11 20:34:21Z rene $
 #
 #    **********************************************************************
 #    ***                      NOTE TO COMMITTERS                        ***
@@ -252,3 +252,4 @@ btsync_*		net-p2p/btsync		Redistribution forbidden by license
 sas2ircu-*		sysutils/sas2ircu	May not be redistributed. Must accept license to download.
 snes9x-*		emulators/snes9x-gtk	Commercial users must seek permission from copyright holders.
 rainloop-1.*.zip	mail/rainloop		Redistribution in any form is prohibited
+frr-*			net/frr			possible GPL violation of Quagga project

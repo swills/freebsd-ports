@@ -1,5 +1,5 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/security/krb5-114/Makefile 455653 2017-12-06 15:22:49Z cy $
+# $FreeBSD: head/security/krb5-114/Makefile 458646 2018-01-10 15:08:51Z danfe $
 
 PORTNAME=		krb5
 PORTVERSION=		1.14.6
@@ -112,7 +112,7 @@ post-install:
 		${MKDIR} ${STAGEDIR}${PREFIX}/share/doc/krb5/$${i}; \
 	done; \
 	for i in $${pdf_files}; do \
-		${INSTALL_MAN} $${pdf} ${PREFIX}/share/doc/krb5/$${i}; \
+		${INSTALL_DATA} $${pdf} ${PREFIX}/share/doc/krb5/$${i}; \
 		${ECHO_CMD} share/doc/krb5/$${i} >> ${TMPPLIST}; \
 	done
 .endif
@@ -123,7 +123,7 @@ post-install:
 		${MKDIR} ${PREFIX}/share/doc/krb5/$${i}; \
 	done; \
 	for i in $${html_files}; do \
-		${INSTALL_MAN} $${i} ${PREFIX}/share/doc/krb5/$${i}; \
+		${INSTALL_DATA} $${i} ${PREFIX}/share/doc/krb5/$${i}; \
 		${ECHO_CMD} share/doc/krb5/$${i} >> ${TMPPLIST}; \
 	done
 .endif

@@ -1,5 +1,5 @@
 # Created by: Masaki TAGAWA <masaki@club.kyutech.ac.jp>
-# $FreeBSD: head/net/packter-agent/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/net/packter-agent/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	packter-agent
 PORTVERSION=	2.5
@@ -51,7 +51,7 @@ post-install:
 .if ${PORT_OPTIONS:MDOCS}
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for f in ${PORTDOCS}
-	${INSTALL_MAN} ${WRKSRC}/${f} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/${f} ${STAGEDIR}${DOCSDIR}
 .endfor
 .endif
 

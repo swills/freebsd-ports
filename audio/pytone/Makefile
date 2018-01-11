@@ -1,5 +1,5 @@
 # Created by: David Thiel <lx@FreeBSD.org>
-# $FreeBSD: head/audio/pytone/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/audio/pytone/Makefile 458754 2018-01-11 16:24:53Z danfe $
 
 PORTNAME=	pytone
 PORTVERSION=	3.0.3
@@ -17,7 +17,6 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libao.so:audio/libao
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mutagen>0:audio/py-mutagen@${FLAVOR}
-
 
 USES=		ncurses python:2
 USE_PYTHON=	autoplist distutils

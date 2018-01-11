@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/ansiweather/Makefile 444133 2017-06-22 22:45:03Z dbaio $
+# $FreeBSD: head/misc/ansiweather/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	ansiweather
 PORTVERSION=	1.11
@@ -37,7 +37,7 @@ do-install-EXAMPLES-on:
 
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/AUTHORS ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/AUTHORS ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

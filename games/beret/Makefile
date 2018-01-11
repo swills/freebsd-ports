@@ -1,5 +1,5 @@
 # Created by: Alfonso S. Siciliano <alfix86@gmail.com>
-# $FreeBSD: head/games/beret/Makefile 438582 2017-04-15 12:35:41Z swills $
+# $FreeBSD: head/games/beret/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	beret
 PORTVERSION=	1.2.1
@@ -37,7 +37,7 @@ post-patch:
 do-install:
 	${INSTALL_PROGRAM} ${WORKINGSRC}/beret ${STAGEDIR}${PREFIX}/bin
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	cd ${WORKINGSRC} && ${INSTALL_MAN} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
+	cd ${WORKINGSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 	${MKDIR} ${STAGEDIR}${DATADIR}
 .for datadir in images music rooms sfx
 	${MKDIR} ${STAGEDIR}${DATADIR}/${datadir}

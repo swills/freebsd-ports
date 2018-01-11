@@ -1,5 +1,5 @@
 # Created by: Jim Mock <jim@FreeBSD.org>
-# $FreeBSD: head/deskutils/wmpinboard/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/deskutils/wmpinboard/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	wmpinboard
 PORTVERSION=	1.0
@@ -18,7 +18,6 @@ USES=		gmake
 GNU_CONFIGURE=	yes
 MAKE_ARGS=	ACLOCAL="${TRUE}" AUTOCONF="${TRUE}" AUTOMAKE="${TRUE}" \
 		AUTOHEADER="${TRUE}"
-
 
 PLIST_FILES=	bin/wmpinboard \
 		man/man1/wmpinboard.1.gz

@@ -1,8 +1,7 @@
-# $FreeBSD: head/math/adept/Makefile 457311 2017-12-26 19:28:08Z yuri $
+# $FreeBSD: head/math/adept/Makefile 458714 2018-01-11 07:17:33Z yuri $
 
 PORTNAME=	adept
-DISTVERSION=	2.0.3
-PORTREVISION=	1
+DISTVERSION=	2.0.4
 CATEGORIES=	math
 MASTER_SITES=	http://www.met.reading.ac.uk/clouds/adept/
 

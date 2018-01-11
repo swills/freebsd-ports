@@ -1,5 +1,5 @@
 # Created by: TAOKA Fumiyoshi
-# $FreeBSD: head/graphics/py-pyproj/Makefile 428160 2016-12-08 22:44:41Z jhale $
+# $FreeBSD: head/graphics/py-pyproj/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	pyproj
 PORTVERSION=	1.9.5.1
@@ -32,7 +32,7 @@ post-install:
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${PORTDOCS1:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS1:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
 
 post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}

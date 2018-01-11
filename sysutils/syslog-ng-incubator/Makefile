@@ -1,5 +1,5 @@
 # Created by: Peter Czanik <czanik@balabit.hu>
-# $FreeBSD: head/sysutils/syslog-ng-incubator/Makefile 451269 2017-10-05 06:22:25Z cy $
+# $FreeBSD: head/sysutils/syslog-ng-incubator/Makefile 458744 2018-01-11 14:23:53Z tijl $
 
 PORTNAME=	syslog-ng-incubator
 PORTVERSION=	0.4.1
@@ -27,7 +27,6 @@ SHEBANG_FILES=	scl/elasticsearch/es-bridge
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 USE_GNOME=	glib20
-USE_AUTOTOOLS=	autoconf:env
 
 CONFIGURE_ARGS=	--datadir=${PREFIX}/share/syslog-ng/ --disable-java
 

@@ -1,5 +1,5 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/security/krb5-devel/Makefile 453195 2017-10-30 16:55:26Z mandree $
+# $FreeBSD: head/security/krb5-devel/Makefile 458754 2018-01-11 16:24:53Z danfe $
 
 PORTNAME=		krb5
 PORTVERSION=		1.16.${MIT_COMMIT_DATE}
@@ -97,7 +97,6 @@ CONFIGURE_ARGS+=	--without-readline
 .if defined(PROGRAM_TRANSFORM_NAME) && ${PROGRAM_TRANSFORM_NAME} != ""
 CONFIGURE_ARGS+=	--program-transform-name="${PROGRAM_TRANSFORM_NAME}"
 .endif
-
 
 .include <bsd.port.pre.mk>
 

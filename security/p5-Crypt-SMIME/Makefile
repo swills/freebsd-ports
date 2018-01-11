@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/p5-Crypt-SMIME/Makefile 430454 2017-01-03 11:01:05Z mat $
+# $FreeBSD: head/security/p5-Crypt-SMIME/Makefile 458769 2018-01-11 18:35:35Z sunpoet $
 
 PORTNAME=	Crypt-SMIME
-PORTVERSION=	0.19
+PORTVERSION=	0.20
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,5 +1,5 @@
 # Created by: G. Adam Stanislav <adam@whizkidtech.net>
-# $FreeBSD: head/graphics/gracula/Makefile 362015 2014-07-15 23:30:05Z adamw $
+# $FreeBSD: head/graphics/gracula/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	gracula
 PORTVERSION=	3.0
@@ -19,7 +19,7 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/gracula ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_PROGRAM} ${WRKSRC}/sec2000 ${STAGEDIR}${PREFIX}/bin
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/NNL  ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README  ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/NNL ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

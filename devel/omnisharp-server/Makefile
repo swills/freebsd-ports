@@ -1,5 +1,5 @@
 # Created by: Richard Gallamore <ultima@FreeBSD.org>
-# $FreeBSD: head/devel/omnisharp-server/Makefile 456331 2017-12-14 18:37:29Z ultima $
+# $FreeBSD: head/devel/omnisharp-server/Makefile 458759 2018-01-11 17:43:47Z ultima $
 
 PORTNAME=	omnisharp-server
 DISTVERSION=	g20150729
@@ -17,6 +17,8 @@ GH_ACCOUNT=	OmniSharp
 GH_TAGNAME=	e1902915c
 GH_TUPLE=	icsharpcode:NRefactory:3f78bdbed:nrefactory/NRefactory \
 		jbevain:cecil:4770957a0:cecil/cecil
+
+PORTSCOUT=	ignore:mono-2.10.8
 
 do-build:
 		(cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} \

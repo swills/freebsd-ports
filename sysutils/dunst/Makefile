@@ -1,8 +1,8 @@
 # Created by: Rod Person <rodperson@rodperson.com>
-# $FreeBSD: head/sysutils/dunst/Makefile 447590 2017-08-09 03:09:26Z tobik $
+# $FreeBSD: head/sysutils/dunst/Makefile 458679 2018-01-10 19:17:19Z swills $
 
 PORTNAME=	dunst
-PORTVERSION=	1.2.0
+PORTVERSION=	1.3.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 USES=		gmake perl5 pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	dunst-project
-USE_GNOME=	gtk20 gdkpixbuf2 cairo
+USE_GNOME=	cairo gdkpixbuf2 pango
 USE_PERL5=	build
 USE_XORG=	x11 xrandr xinerama xscrnsaver
 
@@ -33,6 +33,10 @@ PLIST_FILES=	bin/dunst \
 post-patch:
 	@${REINPLACE_CMD} -e '/dunst\.systemd\.service/d' ${WRKSRC}/Makefile
 	@${ECHO_CMD} ${PORTVERSION} > ${WRKSRC}/VERSION
+
+pre-install:
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/dunst/
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/dbus-1/services/
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/dunst

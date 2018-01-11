@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/nnn/Makefile 457381 2017-12-27 17:47:29Z yuri $
+# $FreeBSD: head/misc/nnn/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	nnn
 DISTVERSIONPREFIX=	v
@@ -48,7 +48,7 @@ post-install-BASH-on:
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 
 post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}

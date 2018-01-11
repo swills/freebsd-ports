@@ -1,5 +1,5 @@
 # Created by: Adam David <adam@FreeBSD.org>
-# $FreeBSD: head/news/nntp/Makefile 439201 2017-04-23 07:40:35Z miwi $
+# $FreeBSD: head/news/nntp/Makefile 458755 2018-01-11 16:53:44Z danfe $
 
 PORTNAME=	nntp
 PORTVERSION=	1.5.12.2
@@ -48,7 +48,6 @@ ALONE=	-e 's|\#define.ALONE|\#undef	ALONE|'
 
 post-extract:
 	${CP} ${WRKSRC}/conf.h.dist ${WRKSRC}/conf.h
-
 
 post-patch:
 	${REINPLACE_CMD} \

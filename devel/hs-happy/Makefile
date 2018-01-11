@@ -1,5 +1,5 @@
 # Created by: Simon Marlow <simonmar@microsoft.com>
-# $FreeBSD: head/devel/hs-happy/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/devel/hs-happy/Makefile 458785 2018-01-11 20:31:44Z tijl $
 
 PORTNAME=	happy
 PORTVERSION=	1.19.5
@@ -14,7 +14,7 @@ LICENSE=	BSD3CLAUSE
 USE_CABAL=	mtl>=1.0
 
 XMLDOCS=	doc/happy:html
-USE_AUTOTOOLS=	autoconf:env
+XMLDOCS_CONF=	yes
 
 STANDALONE=	yes
 EXECUTABLE=	happy

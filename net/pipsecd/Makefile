@@ -1,5 +1,5 @@
 # Created by: Patrick Bihan-Faou <patrick@mindstep.com>
-# $FreeBSD: head/net/pipsecd/Makefile 437668 2017-04-03 17:33:48Z jkim $
+# $FreeBSD: head/net/pipsecd/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	pipsecd
 PORTVERSION=	19991014
@@ -25,8 +25,8 @@ do-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/etc/ipsec
 	${INSTALL_DATA} ${WRKSRC}/pipsecd.conf.sample ${STAGEDIR}${PREFIX}/etc/ipsec
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/doc/pipsecd
-	${INSTALL_MAN} ${WRKSRC}/README ${STAGEDIR}${PREFIX}/share/doc/pipsecd
-	${INSTALL_MAN} ${WRKSRC}/COPYRIGHT ${STAGEDIR}${PREFIX}/share/doc/pipsecd
-	${INSTALL_MAN} ${WRKSRC}/README.port ${STAGEDIR}${PREFIX}/share/doc/pipsecd
+	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${PREFIX}/share/doc/pipsecd
+	${INSTALL_DATA} ${WRKSRC}/COPYRIGHT ${STAGEDIR}${PREFIX}/share/doc/pipsecd
+	${INSTALL_DATA} ${WRKSRC}/README.port ${STAGEDIR}${PREFIX}/share/doc/pipsecd
 
 .include <bsd.port.mk>

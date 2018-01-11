@@ -1,9 +1,8 @@
 # Created by: Andrey Akhmichin <sepulkarium45@yahoo.com>
-# $FreeBSD: head/net-im/pidgin-skypeweb/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/net-im/pidgin-skypeweb/Makefile 458780 2018-01-11 19:09:27Z pi $
 
 PORTNAME=	pidgin-skypeweb
-PORTVERSION=	1.2.2
-PORTREVISION=	1
+PORTVERSION=	1.4
 PORTEPOCH=	1
 CATEGORIES=	net-im
 

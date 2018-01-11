@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 458556 2018-01-09 16:54:30Z pizzamig $
+# $FreeBSD: head/security/Makefile 458661 2018-01-10 17:12:45Z ale $
 #
 
     COMMENT = Security tools
@@ -1238,6 +1238,7 @@
     SUBDIR += tor-devel
     SUBDIR += tpm-tools
     SUBDIR += tpmmanager
+    SUBDIR += trezord
     SUBDIR += trinokiller
     SUBDIR += tripwire
     SUBDIR += tripwire-131

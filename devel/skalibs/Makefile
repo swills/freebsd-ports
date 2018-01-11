@@ -1,8 +1,8 @@
 # Created by: Sergei Kolobov <sergei@kolobov.com>
-# $FreeBSD: head/devel/skalibs/Makefile 432095 2017-01-22 06:22:42Z wen $
+# $FreeBSD: head/devel/skalibs/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	skalibs
-PORTVERSION=	2.4.0.2
+PORTVERSION=	2.6.3.0
 CATEGORIES=	devel
 MASTER_SITES=	http://www.skarnet.org/software/${PORTNAME}/
 
@@ -29,7 +29,7 @@ post-install-DOCS-on:
 	cd ${WRKSRC} && ${INSTALL_DATA} ${DOCS} ${STAGEDIR}${DOCSDIR}
 .for d in libbiguint libdatastruct librandom libstdcrypto libstddjb libunixonacid
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}/${d}
-	cd ${WRKSRC} && ${INSTALL_MAN} doc/${d}/*.html ${STAGEDIR}${DOCSDIR}/${d}
+	cd ${WRKSRC} && ${INSTALL_DATA} doc/${d}/*.html ${STAGEDIR}${DOCSDIR}/${d}
 .endfor
 
 .include <bsd.port.mk>

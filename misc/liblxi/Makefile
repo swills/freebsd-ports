@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/liblxi/Makefile 458479 2018-01-08 20:53:35Z pi $
+# $FreeBSD: head/misc/liblxi/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	liblxi
 DISTVERSIONPREFIX=	v
@@ -32,6 +32,6 @@ AVAHI_LIB_DEPENDS=	libavahi-client.so:net/avahi-app
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

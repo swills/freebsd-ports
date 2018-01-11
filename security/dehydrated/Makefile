@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/dehydrated/Makefile 434506 2017-02-21 06:24:59Z wen $
+# $FreeBSD: head/security/dehydrated/Makefile 458739 2018-01-11 14:18:01Z danfe $
 
 PORTNAME=	dehydrated
 PORTVERSION=	0.4.0
@@ -73,10 +73,10 @@ do-install:
 
 do-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_MAN} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
 .	for d in dns-verification domains_txt ecc hook_chain import-from-official-client \
 		per-certificate-config staging troubleshooting wellknown
-		${INSTALL_MAN} ${WRKSRC}/docs/${d}.md ${STAGEDIR}${DOCSDIR}
+		${INSTALL_DATA} ${WRKSRC}/docs/${d}.md ${STAGEDIR}${DOCSDIR}
 .	endfor
 
 .include <bsd.port.mk>
