@@ -1,4 +1,4 @@
---- lib/gitlab/recaptcha.rb.orig	2017-12-07 12:02:52 UTC
+--- lib/gitlab/recaptcha.rb.orig	2018-01-11 16:23:59 UTC
 +++ lib/gitlab/recaptcha.rb
 @@ -5,8 +5,8 @@ module Gitlab
      def self.load_configurations!
