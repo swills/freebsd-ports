@@ -1,10 +1,10 @@
-# $FreeBSD: head/archivers/deco/Makefile 424658 2016-10-25 22:28:22Z mat $
+# $FreeBSD: head/archivers/deco/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	deco
 PORTVERSION=	1.6.4
 CATEGORIES=	archivers
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Program to extract various archive file formats
 
 LICENSE=	GPLv3

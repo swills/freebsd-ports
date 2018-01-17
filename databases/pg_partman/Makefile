@@ -1,27 +1,38 @@
-# $FreeBSD: head/databases/pg_partman/Makefile 454387 2017-11-17 21:34:18Z tcberner $
+# $FreeBSD: head/databases/pg_partman/Makefile 459216 2018-01-17 01:28:36Z dbaio $
 
 PORTNAME=	pg_partman
-DISTVERSION=	3.1.0
+DISTVERSIONPREFIX=	v
+DISTVERSION=	3.1.1
 CATEGORIES=	databases
 
 MAINTAINER=	lacey.leanne@gmail.com
 COMMENT=	PostgreSQL Partition Manager
 
 LICENSE=	PostgreSQL
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/psycopg2/__init__.py:databases/py-psycopg2
 
 USES=		gmake pgsql:9.4+ python uidfix shebangfix
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	keithf4
+
 WANT_PGSQL=	server
 SHEBANG_GLOB=	*.py
 
-USE_GITHUB=	yes
-GH_TUPLE=	keithf4:${PORTNAME}:v${PORTVERSION}
+OPTIONS_DEFINE=	DOCS
 
 post-install:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/postgresql/pg_partman_bgw.so
+
+post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${MV} ${STAGEDIR}${PREFIX}/share/doc/postgresql/extension/*.md ${STAGEDIR}${DOCSDIR}
 	${RMDIR} ${STAGEDIR}${PREFIX}/share/doc/postgresql/extension
 	${RMDIR} ${STAGEDIR}${PREFIX}/share/doc/postgresql
+
+post-install-DOCS-off:
+	${RM} -r ${STAGEDIR}${PREFIX}/share/doc/postgresql
 
 .include <bsd.port.mk>

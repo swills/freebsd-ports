@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/tarsnap-gui/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/sysutils/tarsnap-gui/Makefile 458865 2018-01-12 19:28:21Z swills $
 
 PORTNAME=	tarsnap-gui
-PORTVERSION=	0.9
-PORTREVISION=	2
+PORTVERSION=	1.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
@@ -13,7 +12,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	Tarsnap
 
 USES=		compiler:c++11-lib qmake
-USE_QT5=	qmake_build widgets network buildtools_build sql-sqlite3
+USE_QT5=	buildtools_build core gui network qmake_build sql sql-sqlite3 widgets
+USE_GL=		gl
 
 PLIST_FILES=	bin/tarsnap-gui
 

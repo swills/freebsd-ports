@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-hex/Makefile 448938 2017-08-29 20:57:40Z olgeni $
+# $FreeBSD: head/devel/elixir-hex/Makefile 459196 2018-01-16 17:13:40Z olgeni $
 
 PORTNAME=	hex
-PORTVERSION=	0.17.1
+PORTVERSION=	0.17.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

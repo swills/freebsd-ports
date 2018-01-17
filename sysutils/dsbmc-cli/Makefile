@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/dsbmc-cli/Makefile 454250 2017-11-15 15:21:37Z swills $
+# $FreeBSD: head/sysutils/dsbmc-cli/Makefile 458990 2018-01-14 19:01:58Z swills $
 
 PORTNAME=	dsbmc-cli
-PORTVERSION=	0.1.2
+PORTVERSION=	0.1.3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://freeshell.de/~mk/download/
 

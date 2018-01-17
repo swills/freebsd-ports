@@ -1,5 +1,5 @@
 # Created by: Kris Moore <kmoore@freebsd.org>
-# $FreeBSD: head/net-im/telegram-purple/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/net-im/telegram-purple/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	telegram-purple
 PORTVERSION=	1.3.1
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=	v
 PORTREVISION=	3
 CATEGORIES=	net-im
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Libpurple plugin for Telegram messenger
 
 LICENSE=	GPLv2+

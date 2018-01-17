@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 458481 2018-01-08 21:28:11Z rakuco $
+# $FreeBSD: head/sysutils/Makefile 459193 2018-01-16 16:20:37Z jmd $
 #
 
     COMMENT = System utilities
@@ -160,6 +160,7 @@
     SUBDIR += chyves
     SUBDIR += cinnamon-control-center
     SUBDIR += cinnamon-settings-daemon
+    SUBDIR += circonus-agent
     SUBDIR += ciso
     SUBDIR += ciso-maker
     SUBDIR += ck4up

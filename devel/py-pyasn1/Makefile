@@ -1,8 +1,8 @@
 # Created by: Martin Jackson <mhjacks@swbell.net>
-# $FreeBSD: head/devel/py-pyasn1/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pyasn1/Makefile 458957 2018-01-14 07:07:18Z sunpoet $
 
 PORTNAME=	pyasn1
-PORTVERSION=	0.3.7
+PORTVERSION=	0.4.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

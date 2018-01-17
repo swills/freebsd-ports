@@ -1,5 +1,5 @@
 # Created by: Kostya Lukin <lukin@okbmei.msk.su>
-# $FreeBSD: head/dns/adns/Makefile 427552 2016-12-02 11:58:21Z mat $
+# $FreeBSD: head/dns/adns/Makefile 459004 2018-01-14 21:38:50Z bapt $
 
 PORTNAME=	adns
 PORTVERSION=	1.5.1
@@ -19,10 +19,8 @@ PORTSCOUT=	skipv:1.5.0~rc0,1.5.0~rc1
 LIBVERSION=	1
 PLIST_SUB+=	LIBVERSION="${LIBVERSION}"
 
-BUILD_DEPENDS+=		gm4:devel/m4
 CFLAGS+=		-Ds6_addr16=__u6_addr.__u6_addr16
 CFLAGS+=		-Ds6_addr32=__u6_addr.__u6_addr32
-MAKE_FLAGS+=		M4=gm4
 
 DOCS=		COPYING GPL-vs-LGPL INSTALL README \
 		README.html TODO changelog

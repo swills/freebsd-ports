@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-curses/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-curses/Makefile 459055 2018-01-15 14:49:09Z swills $
 
 PORTNAME=	curses
-PORTVERSION=	1.0.1
+PORTVERSION=	1.2.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

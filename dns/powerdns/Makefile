@@ -1,8 +1,8 @@
-# $FreeBSD: head/dns/powerdns/Makefile 456058 2017-12-11 18:26:13Z sunpoet $
+# $FreeBSD: head/dns/powerdns/Makefile 459099 2018-01-15 17:17:17Z sunpoet $
 
 PORTNAME=	powerdns
 DISTVERSION=	4.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	dns ipv6
 MASTER_SITES=	http://downloads.powerdns.com/releases/
 DISTNAME=	pdns-${DISTVERSION}
@@ -79,8 +79,10 @@ OPENLDAP_USE=		OPENLDAP=YES
 OPENLDAP_VARS=		MODULES+=ldap
 
 OPTALGO_CONFIGURE_ON=	--enable-botan \
+			--enable-libdecaf \
 			--enable-libsodium
 OPTALGO_LIB_DEPENDS=	libbotan-2.so:security/botan2 \
+			libdecaf.so:security/libdecaf \
 			libsodium.so:security/libsodium
 
 PGSQL_CONFIGURE_ON=	--with-pgsql=${LOCALBASE}
@@ -116,7 +118,7 @@ MYDNS_DESC=		MyDNS backend
 MYSQL_DESC=		MySQL backend
 OPENDBX_DESC=		OpenDBX backend
 OPENLDAP_DESC=		OpenLDAP backend
-OPTALGO_DESC=		Enable optional algorithms (12 & 15)
+OPTALGO_DESC=		Enable optional algorithms (12, 15 & 16)
 PGSQL_DESC=		PostgreSQL backend
 PROTOBUF_DESC=		Protobuf support
 REMOTE_DESC=		Remote backend

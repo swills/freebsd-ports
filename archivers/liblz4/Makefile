@@ -1,8 +1,8 @@
 # Created by: adamw
-# $FreeBSD: head/archivers/liblz4/Makefile 448415 2017-08-20 12:30:25Z sunpoet $
+# $FreeBSD: head/archivers/liblz4/Makefile 458961 2018-01-14 07:07:39Z sunpoet $
 
 PORTNAME=	lz4
-PORTVERSION=	1.8.0
+PORTVERSION=	1.8.1
 DISTVERSIONPREFIX=	v
 PORTEPOCH=	1
 CATEGORIES=	archivers

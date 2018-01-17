@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/noto-lite/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/x11-fonts/noto-lite/Makefile 458846 2018-01-12 14:25:47Z sunpoet $
 
 PORTNAME=	noto
 PORTVERSION=	1.0.5
@@ -10,7 +10,7 @@ DISTNAME=	${PORTNAME:S|n|N|}-hinted
 DISTFILES=	${DISTNAME}.zip NotoEmoji-Regular.ttf:emoji
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Google font family - lite version
 
 LICENSE=	APACHE20 OFL11

@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/devel/py-foolscap/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-foolscap/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	foolscap
 PORTVERSION=	0.12.4
@@ -8,7 +8,7 @@ CATEGORIES=	devel python
 MASTER_SITES=   http://foolscap.lothar.com/releases/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	RPC protocol for Twisted Python
 
 LICENSE=	MIT

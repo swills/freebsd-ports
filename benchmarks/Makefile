@@ -1,4 +1,4 @@
-# $FreeBSD: head/benchmarks/Makefile 444832 2017-07-01 18:30:30Z danfe $
+# $FreeBSD: head/benchmarks/Makefile 459019 2018-01-15 07:05:53Z danfe $
 #
 
     COMMENT = Benchmarking tools
@@ -38,6 +38,7 @@
     SUBDIR += iperf3
     SUBDIR += libmicro
     SUBDIR += lmbench
+    SUBDIR += lzbench
     SUBDIR += mdtest
     SUBDIR += nbench
     SUBDIR += netio

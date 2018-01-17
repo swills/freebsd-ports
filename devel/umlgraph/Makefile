@@ -1,12 +1,12 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/devel/umlgraph/Makefile 442783 2017-06-06 16:18:16Z mat $
+# $FreeBSD: head/devel/umlgraph/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	umlgraph
 DISTVERSIONPREFIX=	R
 DISTVERSION=	5_7_2
 CATEGORIES=	devel java
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Automated drawing of UML diagrams
 
 LICENSE=	BSD3CLAUSE

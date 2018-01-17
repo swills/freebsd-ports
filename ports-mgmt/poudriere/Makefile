@@ -1,7 +1,7 @@
-# $FreeBSD: head/ports-mgmt/poudriere/Makefile 455605 2017-12-05 19:06:28Z bdrewery $
+# $FreeBSD: head/ports-mgmt/poudriere/Makefile 459203 2018-01-16 19:10:51Z bdrewery $
 
 PORTNAME=	poudriere
-DISTVERSION=	3.2.3
+DISTVERSION=	3.2.4
 PORTREVISION=	0
 CATEGORIES=	ports-mgmt
 MASTER_SITES=	LOCAL/bdrewery/${PORTNAME}/ \

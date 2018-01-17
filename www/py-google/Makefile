@@ -1,13 +1,13 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/www/py-google/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-google/Makefile 459128 2018-01-15 22:09:37Z yuri $
 
 PORTNAME=	google
-PORTVERSION=	1.9.3
+DISTVERSION=	2.0.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Python bindings to the Google search engine
 
 LICENSE=	BSD2CLAUSE

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/comic-neue/Makefile 406153 2016-01-15 11:21:58Z amdmi3 $
+# $FreeBSD: head/x11-fonts/comic-neue/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	comic-neue
 PORTVERSION=	1.1
@@ -6,7 +6,7 @@ PORTREVISION=	2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://comicneue.com/
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Free Comic Sans alternative
 
 LICENSE=	CC0-1.0

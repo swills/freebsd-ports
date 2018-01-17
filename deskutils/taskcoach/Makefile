@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/taskcoach/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/deskutils/taskcoach/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	taskcoach
 PORTVERSION=	1.4.2
@@ -7,7 +7,7 @@ CATEGORIES=	deskutils python
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/Release-${PORTVERSION}
 DISTNAME=	TaskCoach-${PORTVERSION}
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Friendly task manager
 
 LICENSE=	GPLv3

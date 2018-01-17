@@ -1,5 +1,5 @@
 # Created by: lightside <lightside@gmx.com>
-# $FreeBSD: head/games/diaspora/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/diaspora/Makefile 459123 2018-01-15 21:59:49Z jbeich $
 
 PORTNAME=	diaspora
 PORTVERSION=	1.1.1
@@ -31,6 +31,7 @@ LIB_DEPENDS=	libjansson.so:devel/jansson \
 		libtheora.so:multimedia/libtheora
 
 USES=		autoreconf jpeg lua:51 openal pkgconfig tar:lzma
+USE_CXXSTD=	gnu++98
 USE_GL=		gl glu
 USE_SDL=	sdl
 GNU_CONFIGURE=	yes
@@ -60,7 +61,7 @@ WXLAUNCHER_DESKTOP_ENTRIES=	"Diaspora Launcher" "${COMMENT}" \
 			"${PORTNAME}" "fs2_open_${PORTNAME}_launcher" \
 			"Game;Simulation;" false
 WXLAUNCHER_PLIST_FILES=	bin/fs2_open_${PORTNAME}_launcher \
-			%%DATADIR%%/fs2_open_${PORTNAME}
+			${DATADIR}/fs2_open_${PORTNAME}
 WXLAUNCHER_RUN_DEPENDS=	wxlauncher:games/wxlauncher
 WXLAUNCHER_SUB_FILES=	fs2_open_${PORTNAME}_launcher
 WXLAUNCHER_VARS=	PORTDATA+="resources *.ini *.png *.bmp"

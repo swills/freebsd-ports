@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 457748 2018-01-01 00:17:23Z zeising $
+# $FreeBSD: head/net-mgmt/Makefile 458819 2018-01-12 11:45:30Z pi $
 #
 
     COMMENT = Network management tools
@@ -295,6 +295,7 @@
     SUBDIR += pnp-icinga2
     SUBDIR += portmon
     SUBDIR += prometheus
+    SUBDIR += prometheus-collectd-exporter
     SUBDIR += pushgateway
     SUBDIR += py-adal
     SUBDIR += py-dnsdiag

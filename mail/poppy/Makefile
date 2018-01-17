@@ -1,12 +1,12 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/mail/poppy/Makefile 361099 2014-07-07 15:31:01Z olgeni $
+# $FreeBSD: head/mail/poppy/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	poppy
 PORTVERSION=	4.01
 CATEGORIES=	mail
 MASTER_SITES=	http://www.cnpbagwell.com/
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Client to perform simple tasks with a POP3/IMAP server
 
 USES=		shebangfix

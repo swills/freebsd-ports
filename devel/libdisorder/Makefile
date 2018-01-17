@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libdisorder/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/devel/libdisorder/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	libdisorder
 PORTVERSION=	0.0.2
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://libdisorder.freshdefense.net/releases/
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple C library for entropy measurement
 
 LICENSE=	GPLv2+

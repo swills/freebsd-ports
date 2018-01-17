@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/net-im/pebrot/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-im/pebrot/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	pebrot
 PORTVERSION=	0.8.9
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	net-im
 MASTER_SITES=	SF
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Text-based MSN messenger client
 
 USES=		python:2.7

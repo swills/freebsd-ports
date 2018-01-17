@@ -1,8 +1,9 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/devel/eric6/Makefile 458671 2018-01-10 18:39:31Z dbn $
+# $FreeBSD: head/devel/eric6/Makefile 459220 2018-01-17 06:19:00Z dbn $
 
 PKGNAMESUFFIX=	-${FLAVOR:U:S/_/-/}
 CATEGORIES=	devel python
+DISTNAME=	${PORTNAME}-nolang-${DISTVERSION}
 
 BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/PyQt${PYQTVER}/QtGui.so:x11-toolkits/py-qt${PYQTVER}-gui@${PY_FLAVOR} \
 		${PYTHON_SITELIBDIR}/PyQt${PYQTVER}/Qsci.so:devel/py-qt${PYQTVER}-qscintilla2@${PY_FLAVOR}

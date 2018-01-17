@@ -1,9 +1,8 @@
 # Created by: Koichiro IWAO <meta+ports@vmeta.jp>
-# $FreeBSD: head/net-im/rubygem-earthquake/Makefile 427995 2016-12-06 22:09:31Z swills $
+# $FreeBSD: head/net-im/rubygem-earthquake/Makefile 459074 2018-01-15 15:54:53Z swills $
 
 PORTNAME=	earthquake
-PORTVERSION=	1.0.0
-PORTREVISION=	2
+PORTVERSION=	1.0.2
 CATEGORIES=	net-im rubygems
 MASTER_SITES=	RG
 

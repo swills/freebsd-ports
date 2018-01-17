@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 458563 2018-01-09 20:06:34Z jrm $
+# $FreeBSD: head/www/Makefile 459028 2018-01-15 10:06:57Z rene $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1947,7 +1947,6 @@
     SUBDIR += rt42
     SUBDIR += rt44
     SUBDIR += rtv
-    SUBDIR += ruby-aws
     SUBDIR += rubygem-ace-rails-ap
     SUBDIR += rubygem-actioncable5
     SUBDIR += rubygem-actioncable50
@@ -2218,7 +2217,6 @@
     SUBDIR += sabredav
     SUBDIR += sahi
     SUBDIR += sakai
-    SUBDIR += samidare
     SUBDIR += sams2
     SUBDIR += sarg
     SUBDIR += scloader

@@ -1,9 +1,9 @@
 # Created by: Dmitri Goutnik <dg@syrec.org>
-# $FreeBSD: head/devel/awless/Makefile 455232 2017-11-30 21:32:27Z dbaio $
+# $FreeBSD: head/devel/awless/Makefile 459184 2018-01-16 15:38:00Z swills $
 
 PORTNAME=	awless
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.1.8
+DISTVERSION=	0.1.9
 CATEGORIES=	devel
 
 MAINTAINER=	dg@syrec.org
@@ -28,6 +28,8 @@ do-build:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-cool.io/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-cool.io/Makefile 459053 2018-01-15 14:42:29Z swills $
 
 PORTNAME=	cool.io
-PORTVERSION=	1.2.4
+PORTVERSION=	1.5.3
 PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG

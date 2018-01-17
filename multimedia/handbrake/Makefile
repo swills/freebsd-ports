@@ -1,5 +1,5 @@
 # Created by: Andrew Thompson <andy@fud.org.nz>
-# $FreeBSD: head/multimedia/handbrake/Makefile 457488 2017-12-29 02:55:42Z jbeich $
+# $FreeBSD: head/multimedia/handbrake/Makefile 458807 2018-01-12 08:51:04Z tobik $
 
 PORTNAME=	handbrake
 PORTVERSION=	1.0.7
@@ -64,7 +64,7 @@ LIB_DEPENDS+=	libdvdcss.so:multimedia/libdvdcss
 GNU_CONFIGURE=	yes
 USE_GCC=	yes
 USES=		autoreconf:build compiler:features gmake iconv \
-		libtool:build localbase:ldflags pkgconfig python:build
+		libtool:build localbase:ldflags pkgconfig python:2.7,build
 MAKE_ENV=	V=1 ACLOCAL=${LOCALBASE}/bin/aclocal
 
 CONFIGURE_ARGS=	--force --enable-x265
@@ -123,6 +123,10 @@ post-extract: .SILENT
 .for f in ${CONTRIB_FILES}
 	${CP} ${DISTDIR}/${DIST_SUBDIR}/${f} ${WRKSRC}/download
 .endfor
+
+post-patch:
+	@${REINPLACE_CMD} 's@python2 @${PYTHON_CMD} @' \
+		${WRKSRC}/gtk/src/Makefile.am
 
 post-install-X11-on:
 	${LN} -sf ghb ${STAGEDIR}${PREFIX}/bin/HandBrake

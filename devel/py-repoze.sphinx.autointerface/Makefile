@@ -1,5 +1,5 @@
 # Created by: Carlos J Puga Medina <cpm@fbsd.es>
-# $FreeBSD: head/devel/py-repoze.sphinx.autointerface/Makefile 412442 2016-04-03 02:17:52Z cpm $
+# $FreeBSD: head/devel/py-repoze.sphinx.autointerface/Makefile 459177 2018-01-16 14:35:45Z cpm $
 
 PORTNAME=	repoze.sphinx.autointerface
 PORTVERSION=	0.8
@@ -11,6 +11,7 @@ MAINTAINER=	cpm@FreeBSD.org
 COMMENT=	Auto-generates API docs from Zope interfaces
 
 LICENSE=	BSD4CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 USES=	python
 USE_PYTHON=	autoplist distutils

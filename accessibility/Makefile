@@ -1,4 +1,4 @@
-# $FreeBSD: head/accessibility/Makefile 458293 2018-01-06 21:30:31Z rakuco $
+# $FreeBSD: head/accessibility/Makefile 459211 2018-01-16 22:24:57Z feld $
 #
 
     COMMENT = Ports to help disabled users
@@ -28,6 +28,7 @@
     SUBDIR += qt5-speech
     SUBDIR += redshift
     SUBDIR += rubygem-atk
+    SUBDIR += sct
     SUBDIR += speech-dispatcher
     SUBDIR += yasr
 

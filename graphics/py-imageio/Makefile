@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/py-imageio/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/graphics/py-imageio/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	imageio
 PORTVERSION=	1.6
@@ -7,7 +7,7 @@ CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python library for reading and writing image, video formats
 
 LICENSE=	BSD2CLAUSE

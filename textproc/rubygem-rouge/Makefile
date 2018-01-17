@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-rouge/Makefile 452119 2017-10-15 00:38:29Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-rouge/Makefile 459076 2018-01-15 15:58:44Z swills $
 
 PORTNAME=	rouge
-PORTVERSION=	2.2.1
+PORTVERSION=	3.1.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

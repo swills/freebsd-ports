@@ -1,11 +1,11 @@
-# $FreeBSD: head/audio/py-speechrecognition/Makefile 456523 2017-12-17 08:29:52Z kevlo $
+# $FreeBSD: head/audio/py-speechrecognition/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	SpeechRecognition
 PORTVERSION=	3.8.1
 CATEGORIES=	audio python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python Library for performing speech recognition
 
 LICENSE=	BSD3CLAUSE

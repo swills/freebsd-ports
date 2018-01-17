@@ -1,8 +1,8 @@
 # Created by: Geraud CONTINSOUZAS <geraud@gcu.info>
-# $FreeBSD: head/devel/p5-CPAN-Uploader/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-CPAN-Uploader/Makefile 458896 2018-01-13 08:12:41Z sunpoet $
 
 PORTNAME=	CPAN-Uploader
-PORTVERSION=	0.103012
+PORTVERSION=	0.103013
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -20,6 +20,7 @@ BUILD_DEPENDS=	p5-Getopt-Long-Descriptive>=0.084:devel/p5-Getopt-Long-Descriptiv
 		p5-Term-ReadKey>=0:devel/p5-Term-ReadKey \
 		p5-libwww>=0:www/p5-libwww
 RUN_DEPENDS:=	${BUILD_DEPENDS}
+TEST_DEPENDS=	p5-File-HomeDir>=0:devel/p5-File-HomeDir
 
 NO_ARCH=	yes
 USES=		perl5

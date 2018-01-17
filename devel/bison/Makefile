@@ -1,5 +1,5 @@
 # Created by: Jerry Hicks
-# $FreeBSD: head/devel/bison/Makefile 451535 2017-10-08 13:48:57Z sunpoet $
+# $FreeBSD: head/devel/bison/Makefile 459020 2018-01-15 07:35:04Z antoine $
 
 PORTNAME=	bison
 PORTVERSION=	3.0.4
@@ -20,6 +20,10 @@ OPTIONS_DEFINE=	DOCS EXAMPLES NLS
 OPTIONS_SUB=	yes
 
 CONFIGURE_ARGS=	--disable-yacc
+.ifdef QEMU_EMULATING
+# XXX bug 224740: configure hangs
+CONFIGURE_ENV=	gl_cv_func_printf_enomem=no
+.endif
 GNU_CONFIGURE=	yes
 TEST_TARGET=	check
 USE_PERL5=	build

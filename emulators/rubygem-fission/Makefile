@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/emulators/rubygem-fission/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/emulators/rubygem-fission/Makefile 458974 2018-01-14 14:14:38Z sunpoet $
 
 PORTNAME=	fission
 PORTVERSION=	0.5.0
+PORTREVISION=	1
 CATEGORIES=	emulators rubygems
 MASTER_SITES=	RG
 

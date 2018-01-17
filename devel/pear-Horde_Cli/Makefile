@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/pear-Horde_Cli/Makefile 444450 2017-06-27 10:02:04Z mm $
+# $FreeBSD: head/devel/pear-Horde_Cli/Makefile 459207 2018-01-16 21:14:00Z joneum $
 
 PORTNAME=	Horde_Cli
-PORTVERSION=	2.2.4
+DISTVERSION=	2.3.0
 CATEGORIES=	devel www pear
 
 MAINTAINER=	horde@FreeBSD.org

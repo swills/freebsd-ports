@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/gcc-arm-embedded/files/Makefile 445495 2017-07-11 11:26:49Z lev $
+# $FreeBSD: head/devel/gcc-arm-embedded/files/Makefile 459104 2018-01-15 17:41:40Z lev $
 
 .include "Makefile.inc"
 
@@ -430,6 +430,7 @@ strip-binaries:
 	   if ! ${FILE} $$bin | ${GREP} -qs ': ELF' ; then continue ; fi ; \
 	   ${STRIP_CMD} $${bin} ; \
 	 done
+	@${STRIP_CMD} ${INTERIM_PREFIX}/lib/libcc1.so.0
 	@for bin in $$(${FIND} ${INTERIM_PREFIX}/lib/gcc/${TARGET}/${GCC_VERSION} -perm +111 -and ! -type d) ; do \
 	   if ! ${FILE} $$bin | ${GREP} -qs ': ELF' ; then continue ; fi ; \
 	   ${STRIP_CMD} $${bin} ; \

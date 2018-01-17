@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/astro/stellarium-qt4/Makefile 457050 2017-12-23 13:14:31Z danfe $
+# $FreeBSD: head/astro/stellarium-qt4/Makefile 459192 2018-01-16 16:03:39Z danfe $
 
 PORTNAME=	stellarium
 PORTVERSION=	0.12.9
@@ -68,6 +68,9 @@ PLIST_SUB+=	SCRIPTS="@comment "
 .endif
 
 post-patch: .SILENT
+# Fix the build against Clang 6.0.0
+	${REINPLACE_CMD} -e 's,skyDrawer==false,skyDrawer==NULL,' \
+		${WRKSRC}/src/core/StelCore.cpp
 # Avoid picking up the wrong `fixx11h.h' (`x11/kdelibs3' port installs one
 # that does not handle FontChange)
 	${GREP} -Rl --null fixx11h\\.h ${WRKSRC}/src ${WRKSRC}/plugins | \

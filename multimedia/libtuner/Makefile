@@ -1,8 +1,8 @@
 # Created by: Jason Harmening <jason.harmening@gmail.com>
-# $FreeBSD: head/multimedia/libtuner/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/multimedia/libtuner/Makefile 459103 2018-01-15 17:40:13Z swills $
 
 PORTNAME=	libtuner
-PORTVERSION=	1.1.3
+PORTVERSION=	1.1.4
 CATEGORIES=	multimedia
 MASTER_SITES=	ftp://corona.homeunix.net/ports/libtuner/
 
@@ -11,8 +11,6 @@ COMMENT=	Userspace drivers for various TV/radio tuner ICs
 
 LICENSE=	BSD2CLAUSE MIT
 LICENSE_COMB=	multi
-
-BROKEN_powerpc64=	fails to compile: tuner_iic_device.cpp: EINVAL was not declared in this scope
 
 MAKE_ARGS+=	INSTALLDIR=${STAGEDIR}${PREFIX}
 MAKE_ARGS+=	-D LIBTUNER_ENABLE_IIC

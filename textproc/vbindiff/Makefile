@@ -1,13 +1,15 @@
 # Created by: chinsan
-# $FreeBSD: head/textproc/vbindiff/Makefile 408215 2016-02-05 16:11:16Z marino $
+# $FreeBSD: head/textproc/vbindiff/Makefile 459213 2018-01-16 23:22:50Z dbaio $
 
 PORTNAME=	vbindiff
-DISTVERSION=	3.0_beta4
+DISTVERSION=	3.0_beta5
 CATEGORIES=	textproc
-MASTER_SITES=	http://www.cjmweb.net/vbindiff/
+MASTER_SITES=	https://www.cjmweb.net/vbindiff/
 
 MAINTAINER=	cyberbotx@cyberbotx.com
 COMMENT=	Visual binary diff, visually compare binary files
+
+LICENSE=	GPLv2+
 
 USES=		ncurses
 GNU_CONFIGURE=	yes

@@ -1,8 +1,8 @@
 # Created by: Javier Martin Rueda <jmrueda@diatel.upm.es>
-# $FreeBSD: head/www/moodle34/Makefile 455299 2017-12-01 16:17:40Z mat $
+# $FreeBSD: head/www/moodle34/Makefile 459159 2018-01-16 07:57:02Z wen $
 
 PORTNAME=	moodle
-PORTVERSION=	3.4
+PORTVERSION=	3.4.1
 CATEGORIES=	www
 MASTER_SITES=	SF/moodle/Moodle/stable34/
 PKGNAMESUFFIX=	${PKGORIGIN:T:S/moodle//}

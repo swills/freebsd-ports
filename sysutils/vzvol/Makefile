@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/vzvol/Makefile 458044 2018-01-04 19:09:13Z olgeni $
+# $FreeBSD: head/sysutils/vzvol/Makefile 458815 2018-01-12 09:59:32Z mmokhi $
 
 PORTNAME=		vzvol
 DISTVERSIONPREFIX=	v
@@ -27,7 +27,7 @@ OPTIONS_DEFAULT=		EXT PROGRESS VIRTUALBOX XFS
 
 EXT_RUN_DEPENDS=		mke2fs:sysutils/e2fsprogs
 PROGRESS_RUN_DEPENDS=		pv:sysutils/pv
-VIRTUALBOX_RUN_DEPENDS=		VirtualBox:emulators/virtualbox-ose
+VIRTUALBOX_RUN_DEPENDS=		VBoxManage:emulators/virtualbox-ose
 XFS_RUN_DEPENDS=		mkfs.xfs:sysutils/xfsprogs
 
 EXT_DESC=			Install support for ext2, ext3, and ext4

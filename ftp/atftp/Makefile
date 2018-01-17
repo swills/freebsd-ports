@@ -1,4 +1,4 @@
-# $FreeBSD: head/ftp/atftp/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/ftp/atftp/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	atftp
 PORTVERSION=	0.7
@@ -7,7 +7,7 @@ CATEGORIES=	ftp
 MASTER_SITES=	DEBIAN/pool/main/a/${PORTNAME}
 DISTNAME=	${PORTNAME}_${PORTVERSION}.dfsg.orig
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Advanced tftp server and client
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}.dfsg

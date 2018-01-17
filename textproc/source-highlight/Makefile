@@ -1,5 +1,5 @@
 # Created by: Kris Kennaway <kris@FreeBSD.org>
-# $FreeBSD: head/textproc/source-highlight/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/textproc/source-highlight/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	source-highlight
 PORTVERSION=	3.1.6
@@ -7,7 +7,7 @@ PORTREVISION=	8
 CATEGORIES=	textproc
 MASTER_SITES=	GNU/src-highlite
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	C/C++ and Java sources to HTML converter
 
 LICENSE=	GPLv3

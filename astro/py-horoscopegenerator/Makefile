@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/py-horoscopegenerator/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/astro/py-horoscopegenerator/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	HoroscopeGenerator
 PORTVERSION=	0.1.8
@@ -7,7 +7,7 @@ CATEGORIES=	astro python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Generate horoscopes using context-free grammar
 
 LICENSE=	MIT

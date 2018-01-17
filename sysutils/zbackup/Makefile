@@ -1,11 +1,11 @@
-# $FreeBSD: head/sysutils/zbackup/Makefile 456058 2017-12-11 18:26:13Z sunpoet $
+# $FreeBSD: head/sysutils/zbackup/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	zbackup
 PORTVERSION=	1.4.4
 PORTREVISION=	5
 CATEGORIES=	sysutils
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Versatile deduplicating backup tool
 
 LICENSE=	GPLv2

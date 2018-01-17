@@ -1,8 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/py-sympy/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/math/py-sympy/Makefile 459135 2018-01-15 23:11:00Z yuri $
 
 PORTNAME=	sympy
 PORTVERSION=	1.1.1
+PORTREVISION=	1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +16,8 @@ LICENSE=	BSD3CLAUSE
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mpmath>=0.19:math/py-mpmath@${FLAVOR}
 
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	distutils concurrent autoplist
+NO_ARCH=	yes
 
 OPTIONS_DEFINE=	PYGLET
 PYGLET_DESC=	Enable plotting support

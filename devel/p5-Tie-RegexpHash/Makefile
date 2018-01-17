@@ -1,15 +1,18 @@
-# $FreeBSD: head/devel/p5-Tie-RegexpHash/Makefile 451822 2017-10-12 08:10:36Z sunpoet $
+# $FreeBSD: head/devel/p5-Tie-RegexpHash/Makefile 458909 2018-01-13 08:13:51Z sunpoet $
 
 PORTNAME=	Tie-RegexpHash
-PORTVERSION=	0.16
-PORTREVISION=	1
+PORTVERSION=	0.17
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Use regular expressions as hash keys
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

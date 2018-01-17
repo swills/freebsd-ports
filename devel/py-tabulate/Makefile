@@ -1,8 +1,9 @@
 # Created by: Nikolay Dachev <freebsd@dacehv.info>
-# $FreeBSD: head/devel/py-tabulate/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-tabulate/Makefile 458907 2018-01-13 08:13:40Z sunpoet $
 
 PORTNAME=	tabulate
 PORTVERSION=	0.8.2
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +15,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

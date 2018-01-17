@@ -1,10 +1,9 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/www/palemoon/Makefile 455413 2017-12-03 17:35:29Z jbeich $
+# $FreeBSD: head/www/palemoon/Makefile 459164 2018-01-16 11:38:05Z tobik $
 
 PORTNAME=	palemoon
-DISTVERSION=	27.6.2
+DISTVERSION=	27.7.0
 DISTVERSIONSUFFIX=_Release
-PORTREVISION=	1
 CATEGORIES=	www ipv6
 
 MAINTAINER=	lichray@gmail.com

@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/py-cec/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/multimedia/py-cec/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	cec
 PORTVERSION=	0.2.6
@@ -6,7 +6,7 @@ CATEGORIES=	multimedia python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python bindings for libcec
 
 LICENSE=	GPLv2

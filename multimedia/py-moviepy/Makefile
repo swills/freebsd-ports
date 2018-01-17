@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/py-moviepy/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/multimedia/py-moviepy/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	moviepy
 PORTVERSION=	0.2.2.13
@@ -7,7 +7,7 @@ CATEGORIES=	multimedia python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Video editing with Python
 
 LICENSE=	MIT

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 458570 2018-01-09 20:51:38Z zi $
+# $FreeBSD: head/net/Makefile 459179 2018-01-16 14:58:51Z tobik $
 #
 
     COMMENT = Networking tools
@@ -1420,7 +1420,6 @@
     SUBDIR += unfs3
     SUBDIR += unison
     SUBDIR += unison-devel
-    SUBDIR += unison-nox11
     SUBDIR += unison232
     SUBDIR += unison240
     SUBDIR += unix2tcp

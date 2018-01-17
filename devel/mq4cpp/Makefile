@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/devel/mq4cpp/Makefile 367858 2014-09-10 14:59:37Z amdmi3 $
+# $FreeBSD: head/devel/mq4cpp/Makefile 459156 2018-01-16 06:14:58Z vanilla $
 
 PORTNAME=	mq4cpp
 PORTVERSION=	1.16
@@ -15,5 +15,6 @@ OPTIONS_DEFINE=	DOCS
 USE_LDCONFIG=	yes
 USES=		dos2unix libtool pathfix pkgconfig tar:bzip2
 GNU_CONFIGURE=	yes
+USE_CXXSTD=	c++98
 
 .include <bsd.port.mk>

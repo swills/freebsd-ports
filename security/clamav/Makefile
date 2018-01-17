@@ -1,9 +1,9 @@
 # Created by: markun@onohara.to
-# $FreeBSD: head/security/clamav/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
+# $FreeBSD: head/security/clamav/Makefile 459048 2018-01-15 14:32:54Z ler $
 
 PORTNAME=	clamav
 PORTVERSION=	0.99.2
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	security
 MASTER_SITES=	http://www.clamav.net/downloads/production/
 
@@ -28,7 +28,7 @@ STDERR_DESC=		Print logs to stderr instead of stdout
 EXPERIMENTAL_DESC=	Build experimental code
 DMG_XAR_DESC=		Enable DMG and XAR archives support
 
-OPTIONS_DEFAULT=	ARC ARJ LHA UNZOO UNRAR DMG_XAR \
+OPTIONS_DEFAULT=	ARC ARJ UNZOO UNRAR DMG_XAR \
 			JSON PCRE
 
 ARC_RUN_DEPENDS=	arc:archivers/arc

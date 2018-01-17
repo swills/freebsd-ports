@@ -1,8 +1,8 @@
 # Created by: ndewing@experts-exchange.com
-# $FreeBSD: head/devel/rubygem-mixlib-shellout/Makefile 446977 2017-07-31 15:50:24Z sunpoet $
+# $FreeBSD: head/devel/rubygem-mixlib-shellout/Makefile 459061 2018-01-15 15:04:59Z swills $
 
 PORTNAME=	mixlib-shellout
-PORTVERSION=	2.2.7
+PORTVERSION=	2.3.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

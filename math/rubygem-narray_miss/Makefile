@@ -1,8 +1,8 @@
 # Created by: Shin-ya MURAKAMI <murashin@gfd-dennou.org>
-# $FreeBSD: head/math/rubygem-narray_miss/Makefile 414169 2016-04-28 13:42:40Z swills $
+# $FreeBSD: head/math/rubygem-narray_miss/Makefile 459070 2018-01-15 15:30:17Z swills $
 
 PORTNAME=	narray_miss
-PORTVERSION=	1.2.8
+PORTVERSION=	1.4.0
 CATEGORIES=	math rubygems
 MASTER_SITES=	RG
 

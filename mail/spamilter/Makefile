@@ -1,8 +1,8 @@
-# $FreeBSD: head/mail/spamilter/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/spamilter/Makefile 459031 2018-01-15 10:55:01Z dinoex $
 
 PORTNAME=	spamilter
 PORTVERSION=	0.60
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail
 MASTER_SITES=	http://www.wanlink.com/spamilter/download/
 

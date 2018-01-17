@@ -1,5 +1,5 @@
 # Created by: Conrad Meyer <cem@FreeBSD.org>
-# $FreeBSD: head/devel/elfutils/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/devel/elfutils/Makefile 459106 2018-01-15 17:56:55Z danfe $
 
 PORTNAME=	elfutils
 PORTVERSION=	0.170
@@ -19,7 +19,6 @@ BROKEN_aarch64=		fails to build: fatal error: linux/uio.h: No such file or direc
 BROKEN_armv6=		fails to build: fails to compile i386_disasm.c
 BROKEN_armv7=		fails to build: fails to compile i386_disasm.c
 BROKEN_powerpc64=	fails to build: error: field 'r' has incomplete type
-BROKEN_sparc64=		fails to build: fails to compile dwarf_begin_elf.c
 
 LIB_DEPENDS=	libargp.so:devel/argp-standalone
 PATCH_DEPENDS=	${NONEXISTENT}:devel/gnulib:extract

@@ -1,8 +1,8 @@
 # Created by: jabley@automagic.org
-# $FreeBSD: head/textproc/xml2rfc/Makefile 458504 2018-01-09 02:55:13Z marcus $
+# $FreeBSD: head/textproc/xml2rfc/Makefile 459131 2018-01-15 22:19:40Z marcus $
 
 PORTNAME=	xml2rfc
-PORTVERSION=	2.8.3
+PORTVERSION=	2.8.4
 CATEGORIES=	textproc
 MASTER_SITES=	http://tools.ietf.org/tools/xml2rfc2/cli/
 

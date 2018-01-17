@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 458492 2018-01-08 22:40:41Z dbaio $
+# $FreeBSD: head/textproc/Makefile 459170 2018-01-16 13:38:05Z swills $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1446,14 +1446,12 @@
     SUBDIR += rtfreader
     SUBDIR += rtfx
     SUBDIR += rubber
-    SUBDIR += ruby-deplate
     SUBDIR += ruby-escape
     SUBDIR += ruby-format
     SUBDIR += ruby-htree
     SUBDIR += ruby-rd-mode.el
     SUBDIR += ruby-rdtool
     SUBDIR += ruby-rttool
-    SUBDIR += ruby-sary
     SUBDIR += ruby-xmlparser
     SUBDIR += rubygem-actionpack-xml_parser
     SUBDIR += rubygem-actionpack-xml_parser1
@@ -1559,6 +1557,7 @@
     SUBDIR += rubygem-rmmseg-cpp
     SUBDIR += rubygem-ronn
     SUBDIR += rubygem-rouge
+    SUBDIR += rubygem-rouge2
     SUBDIR += rubygem-rttool
     SUBDIR += rubygem-ruby-augeas
     SUBDIR += rubygem-ruby-xslt

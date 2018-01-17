@@ -1,8 +1,8 @@
 # Created by: Dave Glowacki <dglo@ssec.wisc.edu>
-# $FreeBSD: head/java/java-checkstyle/Makefile 438349 2017-04-12 11:09:11Z bofh $
+# $FreeBSD: head/java/java-checkstyle/Makefile 458926 2018-01-13 11:25:40Z bofh $
 
 PORTNAME=	checkstyle
-PORTVERSION=	7.6
+PORTVERSION=	8.7
 CATEGORIES=	java devel
 MASTER_SITES=	SF
 PKGNAMEPREFIX=	java-
@@ -21,8 +21,6 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 JAR_FILE=	${PORTNAME}-${PORTVERSION}-all.jar
 
-PLIST_FILES=	bin/${PORTNAME} \
-		%%JAVAJARDIR%%/${PORTNAME}.jar
 PORTDOCS=	*
 PORTEXAMPLES=	*
 

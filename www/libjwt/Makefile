@@ -1,12 +1,12 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/www/libjwt/Makefile 442494 2017-06-03 14:04:03Z kevlo $
+# $FreeBSD: head/www/libjwt/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	libjwt
 PORTVERSION=	1.8.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	JSON Web Token implementation in C
 
 LICENSE=	GPLv2

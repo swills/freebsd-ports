@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/py-imgurpython/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/py-imgurpython/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	imgurpython
 PORTVERSION=	1.1.7
@@ -6,7 +6,7 @@ CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python client for the Imgur API
 
 LICENSE=	MIT

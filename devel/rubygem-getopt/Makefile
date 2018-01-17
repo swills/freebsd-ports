@@ -1,8 +1,8 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/devel/rubygem-getopt/Makefile 414140 2016-04-27 22:15:29Z swills $
+# $FreeBSD: head/devel/rubygem-getopt/Makefile 459058 2018-01-15 14:55:08Z swills $
 
 PORTNAME=	getopt
-PORTVERSION=	1.4.1
+PORTVERSION=	1.4.3
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,12 +1,12 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/devel/iniparser/Makefile 453407 2017-11-03 14:23:20Z kevlo $
+# $FreeBSD: head/devel/iniparser/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	iniparser
 PORTVERSION=	4.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Free stand-alone ini file parsing library
 
 LICENSE=	MIT

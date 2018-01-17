@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-Socket/Makefile 458628 2018-01-10 12:42:51Z sunpoet $
+# $FreeBSD: head/net/p5-Socket/Makefile 458895 2018-01-13 08:12:35Z sunpoet $
 
 PORTNAME=	Socket
-PORTVERSION=	2.025
+PORTVERSION=	2.027
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:PEVANS

@@ -1,5 +1,5 @@
 # Created by: kevlo
-# $FreeBSD: head/net/ntlmaps/Makefile 456126 2017-12-12 12:40:15Z antoine $
+# $FreeBSD: head/net/ntlmaps/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	ntlmaps
 PORTVERSION=	0.9.9.0.1
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Proxy that authenticates the user using the NTLM protocol
 
 USES=		dos2unix python:2.7

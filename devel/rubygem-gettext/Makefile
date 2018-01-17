@@ -1,8 +1,8 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/rubygem-gettext/Makefile 447604 2017-08-09 09:00:22Z tz $
+# $FreeBSD: head/devel/rubygem-gettext/Makefile 459059 2018-01-15 14:57:33Z swills $
 
 PORTNAME=	gettext
-PORTVERSION=	3.2.2
+PORTVERSION=	3.2.6
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

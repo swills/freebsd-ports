@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/kamera-kde4/Makefile 447935 2017-08-14 12:56:23Z woodsb02 $
+# $FreeBSD: head/graphics/kamera-kde4/Makefile 458949 2018-01-14 01:23:15Z woodsb02 $
 
 PORTNAME=	kamera
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

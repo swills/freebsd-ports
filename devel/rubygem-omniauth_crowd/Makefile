@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-omniauth_crowd/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-omniauth_crowd/Makefile 459062 2018-01-15 15:06:36Z swills $
 
 PORTNAME=	omniauth_crowd
-PORTVERSION=	2.2.3
+PORTVERSION=	2.4.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

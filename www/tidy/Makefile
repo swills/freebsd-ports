@@ -1,5 +1,5 @@
 # Created by: Abel Chow <achow@transoft.net>
-# $FreeBSD: head/www/tidy/Makefile 458761 2018-01-11 18:09:00Z danfe $
+# $FreeBSD: head/www/tidy/Makefile 458945 2018-01-13 22:22:50Z antoine $
 
 PORTNAME=	tidy4
 PORTVERSION=	20000804
@@ -16,7 +16,8 @@ LICENSE_FILE=	${FILESDIR}/COPYRIGHT
 
 USES=		tar:tgz
 ALL_TARGET=	tidy
-DOCFILES=	Overview.html tidy.gif release-notes.html grid.gif
+PLIST_FILES=	bin/tidy4 man/man1/tidy4.1.gz
+PORTDOCS=	Overview.html tidy.gif release-notes.html grid.gif
 
 OPTIONS_DEFINE=	DOCS
 

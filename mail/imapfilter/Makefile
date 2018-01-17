@@ -1,8 +1,9 @@
 # Created by: Lefteris Chatzibarbas <lefcha@hellug.gr>
-# $FreeBSD: head/mail/imapfilter/Makefile 458688 2018-01-10 20:03:51Z bofh $
+# $FreeBSD: head/mail/imapfilter/Makefile 458805 2018-01-12 06:36:36Z bofh $
 
 PORTNAME=	imapfilter
 PORTVERSION=	2.6.11
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	mail
 
@@ -30,7 +31,7 @@ MAKE_ARGS=	PREFIX=${PREFIX} \
 		LIBLUA=-llua-${LUA_VER}
 
 post-patch:
-	${REINPLACE_CMD} 's|-ldl ||' ${WRKSRC}/src/Makefile
+	@${REINPLACE_CMD} 's|-ldl ||' ${WRKSRC}/src/Makefile
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}/${PREFIX}/bin/imapfilter

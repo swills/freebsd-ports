@@ -1,8 +1,8 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/dns/rubygem-simpleidn/Makefile 436526 2017-03-20 00:28:57Z sunpoet $
+# $FreeBSD: head/dns/rubygem-simpleidn/Makefile 459072 2018-01-15 15:34:16Z swills $
 
 PORTNAME=	simpleidn
-PORTVERSION=	0.0.7
+PORTVERSION=	0.0.9
 CATEGORIES=	dns rubygems
 MASTER_SITES=	RG
 
