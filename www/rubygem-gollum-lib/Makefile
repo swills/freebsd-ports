@@ -3,6 +3,7 @@
 
 PORTNAME=	gollum-lib
 PORTVERSION=	4.2.7
+PORTREVISION=	1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -15,7 +16,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	rubygem-gemojione>=3.2:graphics/rubygem-gemojione \
 		rubygem-gollum-grit_adapter>=1.0:www/rubygem-gollum-grit_adapter \
 		rubygem-nokogiri>=1.6.1:textproc/rubygem-nokogiri \
-		rubygem-rouge>=2.1:textproc/rubygem-rouge \
 		rubygem-sanitize>=2.1:textproc/rubygem-sanitize \
 		rubygem-stringex>=2.6:devel/rubygem-stringex
 
@@ -27,8 +27,10 @@ MARKUP_DESC=	Markup Selection
 GITHUB_DESC=	Use rubygem-github-markup (default)
 GITLAB_DESC=	Use rubygem-gitlab-markup instead
 
-GITHUB_RUN_DEPENDS=	rubygem-github-markup>=1.6:textproc/rubygem-github-markup
-GITLAB_RUN_DEPENDS=	rubygem-gitlab-markup>=1.5:textproc/rubygem-gitlab-markup
+GITHUB_RUN_DEPENDS=	rubygem-github-markup>=1.6:textproc/rubygem-github-markup \
+			rubygem-rouge>=2.1:textproc/rubygem-rouge
+GITLAB_RUN_DEPENDS=	rubygem-gitlab-markup>=1.5:textproc/rubygem-gitlab-markup \
+			rubygem-rouge2>=2.1:textproc/rubygem-rouge2
 
 NO_ARCH=	yes
 USES=		gem
