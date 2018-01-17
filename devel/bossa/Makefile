@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/bossa/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/bossa/Makefile 459112 2018-01-15 20:40:11Z kevans $
 
 PORTNAME=	bossa
 PORTVERSION=	1.7.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 
 MAINTAINER=	kevans@FreeBSD.org

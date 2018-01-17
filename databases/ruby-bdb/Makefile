@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/databases/ruby-bdb/Makefile 458513 2018-01-09 07:40:55Z mat $
+# $FreeBSD: head/databases/ruby-bdb/Makefile 458847 2018-01-12 14:28:36Z swills $
 
 PORTNAME=	bdb
 PORTVERSION=	0.6.6
@@ -15,6 +15,8 @@ MAINTAINER=	knu@FreeBSD.org
 COMMENT=	Ruby interface to Oracle Berkeley DB revision 2 or later
 
 LICENSE=	RUBY
+
+BROKEN_RUBY25=	yes
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 

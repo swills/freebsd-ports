@@ -1,11 +1,11 @@
-# $FreeBSD: head/net/pecl-smbclient/Makefile 457024 2017-12-23 07:03:21Z antoine $
+# $FreeBSD: head/net/pecl-smbclient/Makefile 458844 2018-01-12 14:25:36Z sunpoet $
 
 PORTNAME=	smbclient
 PORTVERSION=	0.9.0
 PORTREVISION=	3
 CATEGORIES=	net pear
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Smbclient wrapper extension
 
 LICENSE=	BSD2CLAUSE

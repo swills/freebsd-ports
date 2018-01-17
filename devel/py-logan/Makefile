@@ -1,8 +1,9 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/devel/py-logan/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-logan/Makefile 458900 2018-01-13 08:13:02Z sunpoet $
 
 PORTNAME=	logan
 PORTVERSION=	0.7.2
+PORTREVISION=	1
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -11,8 +12,8 @@ COMMENT=	Logan is a toolkit for running standalone Django applications
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}nose>=1.1.2:devel/py-nose@${FLAVOR}
 

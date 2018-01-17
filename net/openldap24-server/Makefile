@@ -1,5 +1,5 @@
 # Created by: Xin LI <delphij@FreeBSD.org>
-# $FreeBSD: head/net/openldap24-server/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/net/openldap24-server/Makefile 459003 2018-01-14 21:37:08Z tijl $
 
 PORTNAME=		openldap
 DISTVERSION=		2.4.45
@@ -508,8 +508,8 @@ EXTRA_PATCHES+=		${FILESDIR}/extrapatch-outlook-servers__slapd__schema_prep.c
 .endif
 
 .if ${PORT_OPTIONS:MKQUEUE}
+BUILD_DEPENDS+=		autoconf>0:devel/autoconf
 EXTRA_PATCHES+=		${FILESDIR}/extrapatch-ITS6300
-USE_AUTOTOOLS=		autoconf
 .endif
 
 # end of client/server specific configuration
@@ -565,6 +565,9 @@ pre-configure:
 		${ECHO_CMD} "${PKGNAME}: bind installed with PORT_REPLACES_BASE_BIND causes build problems."; \
 		${FALSE}; \
 	fi
+.if ${PORT_OPTIONS:MKQUEUE}
+	@(cd ${WRKSRC} && ${LOCALBASE}/bin/autoconf)
+.endif
 
 .if !defined(CLIENT_ONLY)
 test: build

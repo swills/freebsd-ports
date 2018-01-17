@@ -1,11 +1,11 @@
-# $FreeBSD: head/www/htmlcxx/Makefile 434196 2017-02-16 02:31:16Z kevlo $
+# $FreeBSD: head/www/htmlcxx/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	htmlcxx
 PORTVERSION=	0.86
 CATEGORIES=	www textproc
 MASTER_SITES=	SF
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	HTML and CSS APIs for C++
 
 LICENSE=	LGPL20

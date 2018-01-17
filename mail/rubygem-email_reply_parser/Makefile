@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/rubygem-email_reply_parser/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/mail/rubygem-email_reply_parser/Makefile 459067 2018-01-15 15:18:31Z swills $
 
 PORTNAME=	email_reply_parser
-PORTVERSION=	0.5.8
+PORTVERSION=	0.5.9
 CATEGORIES=	mail rubygems
 MASTER_SITES=	RG
 

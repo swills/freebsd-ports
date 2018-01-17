@@ -1,9 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-xmltv/Makefile 442719 2017-06-05 23:26:04Z sunpoet $
+# $FreeBSD: head/textproc/p5-xmltv/Makefile 458965 2018-01-14 13:26:01Z riggs $
 
 PORTNAME=	xmltv
-PORTVERSION=	0.5.68
-PORTREVISION=	1
+PORTVERSION=	0.5.70
 CATEGORIES=	textproc perl5
 MASTER_SITES=	SF
 PKGNAMEPREFIX=	p5-

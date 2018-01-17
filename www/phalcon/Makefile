@@ -1,9 +1,9 @@
 # Created by: Jin-Sih Lin <linpct@gmail.com>
-# $FreeBSD: head/www/phalcon/Makefile 457216 2017-12-25 11:00:21Z joneum $
+# $FreeBSD: head/www/phalcon/Makefile 458828 2018-01-12 14:06:44Z vanilla $
 
 PORTNAME=	phalcon
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.3.0
+DISTVERSION=	3.3.1
 CATEGORIES=	www
 
 MAINTAINER=	linpct@gmail.com

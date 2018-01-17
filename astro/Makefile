@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/Makefile 454054 2017-11-12 16:33:15Z rene $
+# $FreeBSD: head/astro/Makefile 459014 2018-01-14 23:38:11Z ler $
 #
 
     COMMENT = Astronomical ports
@@ -7,7 +7,7 @@
     SUBDIR += accrete
     SUBDIR += astrometry
     SUBDIR += boinc-astropulse
-    SUBDIR += boinc-setiathome-v7
+    SUBDIR += boinc-setiathome
     SUBDIR += celestia
     SUBDIR += celestia-gnome
     SUBDIR += celestia-gtk

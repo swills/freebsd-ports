@@ -1,12 +1,12 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/dilay/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/dilay/Makefile 459137 2018-01-15 23:25:18Z yuri $
 
 PORTNAME=	dilay
-PORTVERSION=	1.5.0
-PORTREVISION=	3
+DISTVERSION=	1.6.1-11
+DISTVERSIONSUFFIX=	-g1c129887  # master has the fix for missing #include
 CATEGORIES=	graphics
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	3D sculpting application
 
 LICENSE=	GPLv3
@@ -14,19 +14,19 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 BUILD_DEPENDS=	${LOCALBASE}/include/glm/glm.hpp:math/glm
 
+USES=		compiler:c++14-lang gmake qmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	abau
-
-USES=		compiler:c++14-lang gmake qmake
 USE_CXXSTD=	c++14
 USE_GL=		gl
 USE_QT5=	core gui opengl widgets xml buildtools_build
 
-# Workaround for: Parallel build fails (https://github.com/abau/dilay/issues/19)
-MAKE_JOBS_UNSAFE=yes
-# Workaround for: https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=210327
-QMAKE_ARGS+=	QMAKE_CXXFLAGS_CXX11=
+MAKE_JOBS_UNSAFE=	yes  # Workaround for: https://github.com/abau/dilay/issues/19 parallel build fails (still a problem despite having been closed)
 
-PLIST_FILES=	bin/dilay
+PLIST_FILES=	bin/dilay \
+		share/applications/dilay.desktop
+.for sz in 16 32 48 256
+PLIST_FILES+=	share/icons/hicolor/${sz}x${sz}/apps/dilay.png
+.endfor
 
 .include <bsd.port.mk>

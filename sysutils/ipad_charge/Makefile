@@ -1,11 +1,11 @@
-# $FreeBSD: head/sysutils/ipad_charge/Makefile 374507 2014-12-11 01:44:00Z kevlo $
+# $FreeBSD: head/sysutils/ipad_charge/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	ipad_charge
 PORTVERSION=	2.0.1
 CATEGORIES=	sysutils
 DISTFILES=	# empty
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Generic iPad USB charging utility
 
 LICENSE=	BSD2CLAUSE

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/synergy/Makefile 458561 2018-01-09 19:16:16Z danfe $
+# $FreeBSD: head/sysutils/synergy/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	synergy
 PORTVERSION=	1.8.8
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	-stable
 CATEGORIES=	sysutils
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Mouse and keyboard sharing utility
 
 LICENSE=	GPLv2

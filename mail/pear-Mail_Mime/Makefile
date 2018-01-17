@@ -1,8 +1,8 @@
 # Created by: Thierry Thomas (<thierry@pompo.net>)
-# $FreeBSD: head/mail/pear-Mail_Mime/Makefile 450101 2017-09-19 04:47:16Z bofh $
+# $FreeBSD: head/mail/pear-Mail_Mime/Makefile 458942 2018-01-13 21:13:20Z bofh $
 
 PORTNAME=	Mail_Mime
-PORTVERSION=	1.10.1
+PORTVERSION=	1.10.2
 PORTEPOCH=	2
 CATEGORIES=	mail www pear
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/recordmydesktop/Makefile 428129 2016-12-08 15:38:24Z tijl $
+# $FreeBSD: head/multimedia/recordmydesktop/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	recordmydesktop
 DISTVERSION=	0.3.8.1
@@ -6,7 +6,7 @@ PORTREVISION=	6
 CATEGORIES=	multimedia
 MASTER_SITES=	SF
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Record desktop sessions to an Ogg-Theora-Vorbis file
 
 LIB_DEPENDS=	libtheora.so:multimedia/libtheora \

@@ -1,10 +1,9 @@
 # Created by: Horia Racoviceanu <horia@racoviceanu.com>
-# $FreeBSD: head/graphics/mozjpeg/Makefile 448386 2017-08-20 12:26:43Z sunpoet $
+# $FreeBSD: head/graphics/mozjpeg/Makefile 458971 2018-01-14 14:14:22Z sunpoet $
 
 PORTNAME=	mozjpeg
-PORTVERSION=	3.2
+PORTVERSION=	3.3.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	sunpoet@FreeBSD.org

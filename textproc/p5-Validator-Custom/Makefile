@@ -1,12 +1,11 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/textproc/p5-Validator-Custom/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Validator-Custom/Makefile 458972 2018-01-14 14:14:27Z sunpoet $
 
 PORTNAME=	Validator-Custom
-PORTVERSION=	1.02.01
+PORTVERSION=	1.0201
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:KIMOTO
-DISTNAME=	${PORTNAME}-${PORTVERSION:R}${PORTVERSION:E}
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	sunpoet@FreeBSD.org

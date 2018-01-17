@@ -1,4 +1,4 @@
-# $FreeBSD: head/shells/Makefile 450378 2017-09-22 14:57:41Z matthew $
+# $FreeBSD: head/shells/Makefile 458806 2018-01-12 07:47:30Z tobik $
 #
 
     COMMENT = Shells
@@ -25,6 +25,7 @@
     SUBDIR += lshell
     SUBDIR += mksh
     SUBDIR += nologinmsg
+    SUBDIR += oksh
     SUBDIR += osh
     SUBDIR += p5-Bash-Completion
     SUBDIR += p5-Shell-Perl

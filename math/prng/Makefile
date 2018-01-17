@@ -1,5 +1,5 @@
 # Created by: bf <bf@FreeBSD.org>
-# $FreeBSD: head/math/prng/Makefile 458761 2018-01-11 18:09:00Z danfe $
+# $FreeBSD: head/math/prng/Makefile 458925 2018-01-13 10:13:48Z antoine $
 
 PORTNAME=	prng
 DISTVERSION=	3.0.2
@@ -26,7 +26,7 @@ post-install-DOCS-on:
 
 post-install-EXAMPLES-on:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
-	${INSTALL_DATA} ${PORTDOCS:S,^,${WRKSRC}/examples/,} \
+	${INSTALL_DATA} ${PORTEXAMPLES:S,^,${WRKSRC}/examples/,} \
 		${STAGEDIR}${EXAMPLESDIR}
 
 check regression-test test: build

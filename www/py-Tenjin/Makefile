@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-Tenjin/Makefile 420776 2016-08-24 08:59:01Z kevlo $
+# $FreeBSD: head/www/py-Tenjin/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	Tenjin
 PORTVERSION=	1.1.1
@@ -6,7 +6,7 @@ CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fast and full-featured template engine based on embedded Python
 
 LICENSE=	MIT

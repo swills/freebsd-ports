@@ -1,10 +1,10 @@
 # Created by: Roman Shterenzon <roman@xpert.com>
-# $FreeBSD: head/security/fwbuilder/Makefile 438272 2017-04-11 15:21:23Z mat $
+# $FreeBSD: head/security/fwbuilder/Makefile 459218 2018-01-17 03:46:43Z cy $
 
 PORTNAME=	fwbuilder
 PORTVERSION=	5.1.0
 DISTVERSIONSUFFIX=	.${BUILD}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	security
 MASTER_SITES=	SF/${PORTNAME}/Current_Packages/${PORTVERSION}
 
@@ -45,6 +45,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	QMAKESPEC=${LOCALBASE}/share/qt/mkspecs/freebsd-g++ \
 		INSTALL_ROOT=${STAGEDIR}
 CPPFLAGS+=	-I${LOCALBASE}/include
+CXXFLAGS+=	-Wno-reserved-user-defined-literal
 LDFLAGS+=	-L${LOCALBASE}/lib
 CONFIGURE_ARGS=	--with-docdir=${DOCSDIR} --with-qtdir=${QTDIR} \
 		--prefix=${PREFIX}

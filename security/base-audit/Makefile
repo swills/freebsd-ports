@@ -1,8 +1,8 @@
 # Created by: Miroslav Lachman
-# $FreeBSD: head/security/base-audit/Makefile 455902 2017-12-10 16:00:12Z feld $
+# $FreeBSD: head/security/base-audit/Makefile 458854 2018-01-12 15:29:00Z pi $
 
 PORTNAME=	base-audit
-PORTVERSION=	0.1
+PORTVERSION=	0.2
 CATEGORIES=	security
 MASTER_SITES=	# none
 DISTFILES=	# none

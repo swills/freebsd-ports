@@ -1,9 +1,8 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/databases/rubygem-tarantool/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/databases/rubygem-tarantool/Makefile 459051 2018-01-15 14:38:59Z swills $
 
 PORTNAME=	tarantool
-PORTVERSION=	0.4.4.0
-PORTREVISION=	1
+PORTVERSION=	0.5.8
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

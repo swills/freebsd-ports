@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/noto/Makefile 440000 2017-05-03 01:38:07Z kevlo $
+# $FreeBSD: head/x11-fonts/noto/Makefile 458845 2018-01-12 14:25:41Z sunpoet $
 
 PORTNAME=	noto
 PORTVERSION=	1.0.5
@@ -12,7 +12,7 @@ DISTFILES=	${DISTNAME}.zip \
 		${PORTNAME:S|n|N|}SerifCJKsc-hinted.zip \
 		${PORTNAME:S|n|N|}SerifCJKtc-hinted.zip
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Google font family
 
 LICENSE=	OFL11

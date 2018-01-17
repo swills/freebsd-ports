@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-drivers/Makefile 437150 2017-03-28 19:14:53Z pi $
+# $FreeBSD: head/x11-drivers/Makefile 459199 2018-01-16 17:47:09Z novel $
 #
 
     COMMENT = X11 drivers
@@ -37,6 +37,7 @@
     SUBDIR += xf86-video-neomagic
     SUBDIR += xf86-video-nv
     SUBDIR += xf86-video-openchrome
+    SUBDIR += xf86-video-qxl
     SUBDIR += xf86-video-r128
     SUBDIR += xf86-video-rendition
     SUBDIR += xf86-video-s3

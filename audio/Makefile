@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 458173 2018-01-05 22:00:56Z rene $
+# $FreeBSD: head/audio/Makefile 459121 2018-01-15 21:56:45Z yuri $
 #
 
     COMMENT = Audio tools
@@ -687,6 +687,7 @@
     SUBDIR += py-speex
     SUBDIR += py-tagpy
     SUBDIR += py-vorbis
+    SUBDIR += py-wavio
     SUBDIR += py-xmms2
     SUBDIR += pytone
     SUBDIR += qjackctl
@@ -717,7 +718,6 @@
     SUBDIR += rubberband
     SUBDIR += ruby-smf
     SUBDIR += ruby-taglib
-    SUBDIR += ruby-xmms2
     SUBDIR += rubygem-librmpd
     SUBDIR += rubygem-ruby-mp3info
     SUBDIR += rubygem-ruby-ogginfo

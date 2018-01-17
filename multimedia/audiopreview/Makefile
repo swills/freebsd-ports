@@ -1,5 +1,5 @@
 # Created by: kevlo
-# $FreeBSD: head/multimedia/audiopreview/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/multimedia/audiopreview/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	audiopreview
 PORTVERSION=	0.6
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	multimedia
 MASTER_SITES=	http://audiopreview.codealpha.net/files/
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Command-line tool to play previews of audio and video files
 
 USES=		gettext gmake pkgconfig

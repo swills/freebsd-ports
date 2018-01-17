@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/sysutils/container-diff/Makefile 458765 2018-01-11 18:35:15Z sunpoet $
+# $FreeBSD: head/sysutils/container-diff/Makefile 458955 2018-01-14 07:07:08Z sunpoet $
 
 PORTNAME=	container-diff
 PORTVERSION=	0.6.2
@@ -19,13 +19,6 @@ PLIST_FILES=	bin/container-diff
 
 GH_ACCOUNT=	GoogleCloudPlatform
 USE_GITHUB=	yes
-
-.include <bsd.port.options.mk>
-
-# Change inode size from 64 bits to 32 bits for systems without ino64 support
-.if ${OSVERSION} < 1200031
-EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-without-ino64
-.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKDIR}/bin/container-diff ${STAGEDIR}${PREFIX}/bin/container-diff

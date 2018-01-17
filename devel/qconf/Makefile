@@ -1,9 +1,9 @@
 # Created by: Andreev Maxim <andreevmaxim@gmail.com>
-# $FreeBSD: head/devel/qconf/Makefile 440940 2017-05-15 15:46:02Z tcberner $
+# $FreeBSD: head/devel/qconf/Makefile 458875 2018-01-12 21:44:43Z swills $
 
 PORTNAME=	qconf
-PORTVERSION=	2.3
 DISTVERSIONPREFIX=	v
+DISTVERSION=	2.4
 CATEGORIES=	devel
 
 MAINTAINER=	ports@FreeBSD.org

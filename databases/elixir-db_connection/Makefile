@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/elixir-db_connection/Makefile 435829 2017-03-10 13:19:08Z olgeni $
+# $FreeBSD: head/databases/elixir-db_connection/Makefile 459015 2018-01-14 23:43:30Z olgeni $
 
 PORTNAME=	db_connection
-DISTVERSION=	1.1.2
+DISTVERSION=	1.1.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 PKGNAMEPREFIX=	elixir-

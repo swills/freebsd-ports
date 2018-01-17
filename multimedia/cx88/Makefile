@@ -1,9 +1,8 @@
 # Created by: Jason Harmening <jason.harmening@gmail.com>
-# $FreeBSD: head/multimedia/cx88/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
+# $FreeBSD: head/multimedia/cx88/Makefile 459173 2018-01-16 14:21:17Z swills $
 
 PORTNAME=	cx88
-PORTVERSION=	1.5.1
-PORTREVISION=	1
+PORTVERSION=	1.5.2
 CATEGORIES=	multimedia
 MASTER_SITES=	ftp://corona.homeunix.net/ports/cx88/
 
@@ -14,7 +13,7 @@ LICENSE=	BSD2CLAUSE
 
 LIB_DEPENDS=	libjson-c.so:devel/json-c
 BUILD_DEPENDS=	${LOCALBASE}/lib/libezxml.a:textproc/ezxml \
-		libtuner>=1.1.3:multimedia/libtuner
+		libtuner>=1.1.4:multimedia/libtuner
 
 MAKE_ARGS+=	LIBTUNER_LIB=${LOCALBASE}/lib/libtuner LIBTUNER_HEADER=${LOCALBASE}/include/libtuner KMODDIR=${KMODDIR} PREFIX=${STAGEDIR}${PREFIX}
 MAKE_JOBS_UNSAFE=	yes

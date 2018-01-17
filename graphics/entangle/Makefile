@@ -1,8 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/entangle/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/entangle/Makefile 458949 2018-01-14 01:23:15Z woodsb02 $
 
 PORTNAME=	entangle
 PORTVERSION=	0.7.2
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://entangle-photo.org/download/sources/
 

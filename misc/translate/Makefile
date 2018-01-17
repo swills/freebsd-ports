@@ -1,13 +1,13 @@
 # Created by: Michael L. Hostbaek (mich@freebsdcluster.org)
-# $FreeBSD: head/misc/translate/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/misc/translate/Makefile 459036 2018-01-15 11:54:37Z mich $
 
 PORTNAME=	translate
-PORTVERSION=	1.11
+PORTVERSION=	1.20
 CATEGORIES=	misc
 MASTER_SITES=	http://www.freebsdcluster.org/~mich/software/
 
 MAINTAINER=	mich@FreeBSD.org
-COMMENT=	Translates string using Babelfish
+COMMENT=	Translates string using Google Translate
 
 RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww
 

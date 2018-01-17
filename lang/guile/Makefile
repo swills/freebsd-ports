@@ -1,5 +1,5 @@
 # Created by: jseger@FreeBSD.org
-# $FreeBSD: head/lang/guile/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/lang/guile/Makefile 459008 2018-01-14 22:18:54Z tijl $
 #    $MCom: ports/lang/guile/Makefile,v 1.1 2006/09/12 14:57:06 ahze Exp $
 
 PORTNAME=	guile
@@ -49,7 +49,6 @@ post-extract:
 post-patch:
 	@cd ${WRKSRC} ; \
 	  ${REINPLACE_CMD} -e 's|<malloc\.h>|<stdlib.h>|g' ${REINPLACE_FILES}
-	@${REINPLACE_CMD} -e 's|2.68|${AUTOCONF_VERSION}|g' ${WRKSRC}/aclocal.m4
 	@${REINPLACE_CMD} -e 's|$$(libdir)|$$(libdir)data|g' ${WRKSRC}/Makefile.am
 	@${TOUCH} ${WRKSRC}/Makefile.in
 

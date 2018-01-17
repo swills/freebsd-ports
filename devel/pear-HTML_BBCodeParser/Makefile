@@ -1,8 +1,8 @@
 # Created by: Lewis Thompson <purple@lewiz.net>
-# $FreeBSD: head/devel/pear-HTML_BBCodeParser/Makefile 458566 2018-01-09 20:26:55Z joneum $
+# $FreeBSD: head/devel/pear-HTML_BBCodeParser/Makefile 459174 2018-01-16 14:26:57Z joneum $
 
 PORTNAME=	HTML_BBCodeParser
-DISTVERSION=	1.2.4
+PORTVERSION=	1.2.3
 CATEGORIES=	devel www pear
 
 MAINTAINER=	lewiz@compsoc.man.ac.uk

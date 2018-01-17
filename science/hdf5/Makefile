@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/science/hdf5/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/science/hdf5/Makefile 459018 2018-01-15 05:40:13Z danfe $
 
 PORTNAME=	hdf5
 PORTVERSION=	1.10.1
@@ -17,9 +17,6 @@ LICENSE=	BSD4CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 CONFLICTS_INSTALL=	hdf-4.[0-9]* hdf5-1.6.[0-9]*
-
-NOT_FOR_ARCHS=	sparc64
-NOT_FOR_ARCHS_REASON=	does not compile
 
 OPTIONS_DEFINE=	DEBUG EXAMPLES FORTRAN SZIP
 OPTIONS_DEFAULT=SZIP

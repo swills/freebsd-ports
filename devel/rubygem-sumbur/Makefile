@@ -1,8 +1,8 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-sumbur/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-sumbur/Makefile 459065 2018-01-15 15:11:23Z swills $
 
 PORTNAME=	sumbur
-PORTVERSION=	0.1.2
+PORTVERSION=	0.1.2.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

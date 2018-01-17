@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/textproc/tkdiff/Makefile 363904 2014-08-03 14:15:08Z olgeni $
+# $FreeBSD: head/textproc/tkdiff/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	tkdiff
 PORTVERSION=	4.2
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	textproc tk
 MASTER_SITES=	SF
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tk frontend for diff(1)
 
 LICENSE=	GPLv2

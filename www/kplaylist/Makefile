@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/www/kplaylist/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/kplaylist/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	kplaylist
 PORTVERSION=	1.8.505
@@ -8,7 +8,7 @@ CATEGORIES=	www multimedia
 MASTER_SITES=	http://www.kplaylist.net/archive.php?file=1.8.505&tar=true/
 DISTNAME=	${PORTNAME}.${PORTVERSION}
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PHP based music database
 
 IGNORE_WITH_PHP=	70 71 72

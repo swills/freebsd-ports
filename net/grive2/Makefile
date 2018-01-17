@@ -1,5 +1,5 @@
 # Created by: Carlos J Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/net/grive2/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/net/grive2/Makefile 459168 2018-01-16 13:29:46Z cpm $
 
 PORTNAME=	grive2
 PORTVERSION=	0.5.0
@@ -22,10 +22,10 @@ LIB_DEPENDS=	libboost_filesystem.so:devel/boost-libs \
 
 CONFLICTS_INSTALL=	grive-[0-9]*
 
+USES=		cmake localbase pkgconfig
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	vitalif
-
-USES=		cmake pkgconfig localbase
 
 PLIST_FILES=	bin/grive \
 		man/man1/grive.1.gz

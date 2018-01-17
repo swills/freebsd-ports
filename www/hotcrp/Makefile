@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/hotcrp/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/hotcrp/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	hotcrp
 PORTVERSION=	2.94
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://www.read.seas.harvard.edu/~kohler/hotcrp/
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Web based conference management software
 
 RUN_DEPENDS=	pdftohtml:graphics/poppler-utils \

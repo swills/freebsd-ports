@@ -1,8 +1,8 @@
 # Created by: Don Croyle <croyle@gelemna.org>
-# $FreeBSD: head/devel/astyle/Makefile 452694 2017-10-23 07:32:36Z tobik $
+# $FreeBSD: head/devel/astyle/Makefile 459024 2018-01-15 09:18:52Z lme $
 
 PORTNAME=	astyle
-PORTVERSION=	3.0.1
+PORTVERSION=	3.1
 CATEGORIES=	devel textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}%20${PORTVERSION}
 DISTNAME=	${PORTNAME}_${PORTVERSION}_linux

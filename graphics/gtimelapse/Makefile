@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/gtimelapse/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/gtimelapse/Makefile 458949 2018-01-14 01:23:15Z woodsb02 $
 
 PORTNAME=	gtimelapse
 DISTVERSION=	0.1
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/Relase	# yes, this is not a typo (here)
 

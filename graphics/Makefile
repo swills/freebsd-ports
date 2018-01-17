@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 457750 2018-01-01 01:23:15Z danilo $
+# $FreeBSD: head/graphics/Makefile 459154 2018-01-16 05:53:01Z yuri $
 #
 
     COMMENT = Graphics tools and libraries
@@ -757,6 +757,7 @@
     SUBDIR += panoglview
     SUBDIR += panomatic
     SUBDIR += partio
+    SUBDIR += pcl-pointclouds
     SUBDIR += pdf2svg
     SUBDIR += pdfpc
     SUBDIR += pear-Horde_Image
@@ -1029,6 +1030,7 @@
     SUBDIR += sswf
     SUBDIR += stamp
     SUBDIR += structuresynth
+    SUBDIR += sverchok-blender
     SUBDIR += svg2pdf
     SUBDIR += svg2png
     SUBDIR += svgalib

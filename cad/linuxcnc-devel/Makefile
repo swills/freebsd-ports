@@ -1,5 +1,5 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/cad/linuxcnc-devel/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/cad/linuxcnc-devel/Makefile 458869 2018-01-12 20:42:19Z antoine $
 
 PORTNAME=	linuxcnc
 PORTVERSION=	20170708
@@ -12,7 +12,7 @@ COMMENT=	Open Source CNC machine controller
 
 LICENSE=	GPLv2
 
-BROKEN_FreeBSD_10=	Does not build
+BROKEN=		wrong DEPENDS
 
 LIB_DEPENDS=	libBLT25.so:x11-toolkits/blt \
 		libboost_python.so:devel/boost-python-libs \

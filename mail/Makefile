@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 458347 2018-01-07 15:35:02Z sunpoet $
+# $FreeBSD: head/mail/Makefile 459119 2018-01-15 21:35:10Z kwm $
 #
 
     COMMENT = Electronic mail utilities
@@ -146,6 +146,7 @@
     SUBDIR += gmime24-sharp
     SUBDIR += gmime26
     SUBDIR += gmime26-sharp
+    SUBDIR += gmime30
     SUBDIR += gnarwl
     SUBDIR += gnubiff
     SUBDIR += gnumail

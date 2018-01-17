@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/converters/py-zfec/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/converters/py-zfec/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	zfec
 PORTVERSION=	1.4.24
@@ -8,7 +8,7 @@ CATEGORIES=	converters python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fast erasure codec for Python
 
 LICENSE=	GPLv2

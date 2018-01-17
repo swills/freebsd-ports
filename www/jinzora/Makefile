@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/www/jinzora/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/jinzora/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	jinzora
 PORTVERSION=	3.0
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	www multimedia
 MASTER_SITES=	SF/${PORTNAME}/Jinzora%20${PORTVERSION}
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Web based media streaming and management system
 
 IGNORE_WITH_PHP=	70 71 72

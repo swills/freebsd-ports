@@ -1,8 +1,8 @@
 # Created by: Shin-ya MURAKAMI <murashin@gfd-dennou.org>
-# $FreeBSD: head/math/rubygem-numru-misc/Makefile 414147 2016-04-27 23:20:34Z swills $
+# $FreeBSD: head/math/rubygem-numru-misc/Makefile 459071 2018-01-15 15:32:32Z swills $
 
 PORTNAME=	numru-misc
-PORTVERSION=	0.1.1
+PORTVERSION=	0.1.2
 CATEGORIES=	math rubygems
 MASTER_SITES=	RG
 

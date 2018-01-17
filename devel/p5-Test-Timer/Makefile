@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-Test-Timer/Makefile 452209 2017-10-16 17:03:01Z swills $
+# $FreeBSD: head/devel/p5-Test-Timer/Makefile 458872 2018-01-12 21:13:18Z swills $
 
 PORTNAME=	Test-Timer
-PORTVERSION=	2.04
+PORTVERSION=	2.09
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

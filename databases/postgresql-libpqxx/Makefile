@@ -1,11 +1,9 @@
 # Created by: Palle Girgensohn <girgen@pingpong.net>
-# $FreeBSD: head/databases/postgresql-libpqxx/Makefile 456050 2017-12-11 16:54:20Z antoine $
+# $FreeBSD: head/databases/postgresql-libpqxx/Makefile 458857 2018-01-12 16:26:29Z girgen $
 
 PORTNAME=	libpqxx
-PORTVERSION=	4.0.1
-PORTREVISION=	1
+PORTVERSION=	6.0.0
 CATEGORIES=	databases
-MASTER_SITES=	http://pqxx.org/download/software/libpqxx/
 PKGNAMEPREFIX=	postgresql-
 DIST_SUBDIR=	postgresql
 
@@ -14,14 +12,17 @@ COMMENT=	New C++ interface for PostgreSQL
 
 LICENSE=	BSD3CLAUSE
 
-CONFLICTS=	postgresql-libpqxx-3.* postgresql-libpqxx3-3.*
-PORTSCOUT=	limit:^2\.
+CONFLICTS=	postgresql-libpqxx-[1-5].* postgresql-libpqxx3-3.* \
+		postgresql-libpqxx4-4.*
 
-USES+=		gmake libtool pathfix pgsql python:2.7,build shebangfix
+USES=		gmake libtool pathfix pgsql python:2.7,build shebangfix
+USE_GITHUB=	yes
+GH_ACCOUNT=	jtv
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
-PLIST_SUB=	PORTVERSION=${PORTVERSION:R}
 SHEBANG_FILES=	${WRKSRC}/tools/splitconfig
+INSTALL_TARGET=	install-strip
+PLIST_SUB=	PORTVERSION=${PORTVERSION:R}
 
 CONFIGURE_ARGS=	--enable-shared \
 		--disable-dependency-tracking

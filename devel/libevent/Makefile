@@ -1,8 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/libevent/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/devel/libevent/Makefile 459209 2018-01-16 22:15:05Z feld $
 
 PORTNAME=	libevent
 PORTVERSION=	2.1.8
+PORTREVISION=	1
 DISTVERSIONPREFIX=	release-
 DISTVERSIONSUFFIX=	-stable
 CATEGORIES=	devel
@@ -13,7 +14,8 @@ COMMENT=	API for executing callback functions on events or timeouts
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		autoreconf libtool pathfix
+USES=		autoreconf libtool pathfix python:2.7,env shebangfix
+SHEBANG_FILES=	event_rpcgen.py
 USE_GITHUB=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/lua-bitop/Makefile 436465 2017-03-19 01:56:56Z sunpoet $
+# $FreeBSD: head/devel/lua-bitop/Makefile 458803 2018-01-12 00:19:21Z lx $
 
 PORTNAME=	bitop
 PORTVERSION=	1.0.2
@@ -17,7 +17,7 @@ LICENSE=	MIT
 CFLAGS+=	-DLUA_NUMBER_LONG_LONG -I${LUA_INCDIR}
 MAKE_ARGS=	CC=${CC} LUA=${LUA_CMD}
 TEST_TARGET=	test
-USES=		gmake lua
+USES?=		gmake lua
 
 PLIST_FILES=	%%LUA_MODLIBDIR%%/bit.so
 

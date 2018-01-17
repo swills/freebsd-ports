@@ -1,9 +1,9 @@
 # Created by: Neil Blakey-Milner
-# $FreeBSD: head/dns/djbdns/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/dns/djbdns/Makefile 459204 2018-01-16 19:54:19Z lx $
 
 PORTNAME?=	djbdns
 PORTVERSION?=	${DJBDNS_VER}
-PORTREVISION?=	21
+PORTREVISION?=	22
 PORTEPOCH?=	1
 CATEGORIES?=	dns
 MASTER_SITES=	http://cr.yp.to/djbdns/ \

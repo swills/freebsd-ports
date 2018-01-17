@@ -1,8 +1,8 @@
 # Created by: Koichiro IWAO <meta+ports@vmeta.jp>
-# $FreeBSD: head/devel/rubygem-delayer-deferred/Makefile 440304 2017-05-07 05:48:55Z tota $
+# $FreeBSD: head/devel/rubygem-delayer-deferred/Makefile 459056 2018-01-15 14:50:51Z swills $
 
 PORTNAME=	delayer-deferred
-PORTVERSION=	1.1.1
+PORTVERSION=	2.0.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

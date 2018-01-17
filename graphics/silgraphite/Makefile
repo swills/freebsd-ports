@@ -1,5 +1,5 @@
 # Created by: Dennis Herrmann <adox@mcx2.org>
-# $FreeBSD: head/graphics/silgraphite/Makefile 415652 2016-05-23 03:49:33Z sunpoet $
+# $FreeBSD: head/graphics/silgraphite/Makefile 459155 2018-01-16 05:56:38Z truckman $
 
 PORTNAME=	silgraphite
 PORTVERSION=	2.3.1
@@ -30,5 +30,7 @@ USES=		libtool pathfix pkgconfig
 FREETYPE_CONFIGURE_WITH=freetype
 FREETYPE_LIB_DEPENDS=	libfreetype.so:print/freetype2
 FREETYPE_USES=		iconv
+
+CXXFLAGS+=	-std=c++98
 
 .include <bsd.port.mk>

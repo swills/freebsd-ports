@@ -1,8 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/spdlog/Makefile 457122 2017-12-24 02:48:13Z vanilla $
+# $FreeBSD: head/devel/spdlog/Makefile 458951 2018-01-14 02:04:54Z vanilla $
 
 PORTNAME=	spdlog
-PORTVERSION=	0.16.2
+PORTVERSION=	0.16.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

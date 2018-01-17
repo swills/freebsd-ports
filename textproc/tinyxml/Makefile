@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/tinyxml/Makefile 362024 2014-07-16 03:18:26Z adamw $
+# $FreeBSD: head/textproc/tinyxml/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	tinyxml
 PORTVERSION=	2.6.2
@@ -8,7 +8,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}_${PORTVERSION:S/./_/g}
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Small C++ XML parser
 
 WRKSRC=		${WRKDIR}/${PORTNAME}

@@ -1,12 +1,12 @@
 # Created by: fenner
-# $FreeBSD: head/net/rtptools/Makefile 418125 2016-07-06 08:47:11Z cpm $
+# $FreeBSD: head/net/rtptools/Makefile 459172 2018-01-16 14:19:24Z cpm $
 
 PORTNAME=	rtptools
 PORTVERSION=	1.21
 CATEGORIES=	net mbone
 MASTER_SITES=	http://www.cs.columbia.edu/IRT/software/rtptools/download/
 
-MAINTAINER=	cpm@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Set of tools to record, playback, and monitor RTPv2 data streams
 
 LICENSE=	CUL

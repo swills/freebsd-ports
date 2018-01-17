@@ -1,8 +1,8 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/devel/rubygem-unicode/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-unicode/Makefile 459066 2018-01-15 15:16:28Z swills $
 
 PORTNAME=	unicode
-PORTVERSION=	0.4.4
+PORTVERSION=	0.4.4.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-nnpy/Makefile 458167 2018-01-05 20:02:03Z yuri $
+# $FreeBSD: head/net/py-nnpy/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	nnpy
 PORTVERSION=	1.3
@@ -7,7 +7,7 @@ CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	cffi-based Python bindings for nanomsg
 
 LICENSE=	MIT

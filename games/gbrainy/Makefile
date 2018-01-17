@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/gbrainy/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/gbrainy/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	gbrainy
 PORTVERSION=	2.2.2
@@ -6,7 +6,7 @@ PORTEPOCH=	2
 CATEGORIES=	games
 MASTER_SITES=	http://gent.softcatala.org/jmas/gbrainy/
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Brain teaser game and trainer
 
 LICENSE=	GPLv2

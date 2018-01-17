@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/openbgpd/Makefile 442012 2017-05-29 15:27:54Z sunpoet $
+# $FreeBSD: head/net/openbgpd/Makefile 458810 2018-01-12 09:03:49Z pi $
 
 PORTNAME=	openbgpd
 PORTVERSION=	5.2.20121209
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	OPENBSD/OpenBGPD
 DISTNAME=	${PORTNAME}-4.6
@@ -17,7 +17,7 @@ LICENSE_FILE=	${FILESDIR}/COPYING
 CONFLICTS=	zebra-[0-9]* quagga-[0-9]*
 
 WRKSRC=		${WRKDIR}
-USES=		uidfix tar:tgz
+USES=		tar:tgz uidfix
 USE_RC_SUBR=	${PORTNAME}
 PLIST_FILES=	sbin/bgpctl sbin/bgpd man/man5/bgpd.conf.5.gz \
 		man/man8/bgpctl.8.gz man/man8/bgpd.8.gz

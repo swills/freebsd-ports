@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/hdf5-18/Makefile 455407 2017-12-03 15:14:06Z thierry $
+# $FreeBSD: head/science/hdf5-18/Makefile 459018 2018-01-15 05:40:13Z danfe $
 
 PORTNAME=	hdf5
 PORTVERSION=	1.8.20 # When PORTVERSION changes, please update french/med/files/patch-configure
@@ -14,8 +14,6 @@ COMMENT=	Hierarchical Data Format library (from NCSA) 1.8
 
 LICENSE=	BSD4CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_sparc64=		Does not compile on ${ARCH}
 
 OPTIONS_DEFINE=	DEBUG EXAMPLES FORTRAN SZIP
 

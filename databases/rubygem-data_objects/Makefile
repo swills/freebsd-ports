@@ -1,8 +1,8 @@
 # Created by: Espen Volden aka voldern <voldern@hoeggen.net>
-# $FreeBSD: head/databases/rubygem-data_objects/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/databases/rubygem-data_objects/Makefile 459043 2018-01-15 14:01:40Z swills $
 
 PORTNAME=	data_objects
-PORTVERSION=	0.10.13
+PORTVERSION=	0.10.17
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

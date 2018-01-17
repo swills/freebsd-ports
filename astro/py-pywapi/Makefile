@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/py-pywapi/Makefile 419623 2016-08-04 15:21:41Z kevlo $
+# $FreeBSD: head/astro/py-pywapi/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	pywapi
 PORTVERSION=	0.3.8
@@ -6,7 +6,7 @@ CATEGORIES=	astro python
 MASTER_SITES=	http://launchpad.net/python-weather-api/trunk/${PORTVERSION}/+download/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python wrapper around different weather APIs
 
 LICENSE=	MIT

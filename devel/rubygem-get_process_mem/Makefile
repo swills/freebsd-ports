@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-get_process_mem/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-get_process_mem/Makefile 459057 2018-01-15 14:53:08Z swills $
 
 PORTNAME=	get_process_mem
-PORTVERSION=	0.2.0
+PORTVERSION=	0.2.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

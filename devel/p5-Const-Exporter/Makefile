@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Const-Exporter/Makefile 437809 2017-04-05 19:57:23Z sunpoet $
+# $FreeBSD: head/devel/p5-Const-Exporter/Makefile 459185 2018-01-16 15:42:23Z sunpoet $
 
 PORTNAME=	Const-Exporter
-PORTVERSION=	0.2.4
+PORTVERSION=	0.3.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
@@ -13,11 +13,14 @@ MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Declare constants for export
 
 LICENSE=	ART20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Const-Fast>=0.014:devel/p5-Const-Fast \
-		p5-Package-Stash>=0:devel/p5-Package-Stash
+BUILD_DEPENDS=	p5-Const-Fast>=0:devel/p5-Const-Fast \
+		p5-Package-Stash>=0:devel/p5-Package-Stash \
+		p5-Ref-Util>=0:devel/p5-Ref-Util
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Hash-Objectify>=0:devel/p5-Hash-Objectify \
+		p5-Path-Tiny>=0.004:devel/p5-Path-Tiny \
 		p5-Test-Most>=0:devel/p5-Test-Most
 
 NO_ARCH=	yes

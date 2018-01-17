@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/benchmarks/glmark2/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/benchmarks/glmark2/Makefile 459035 2018-01-15 11:38:03Z danfe $
 
 PORTNAME=	glmark2
 PORTVERSION=	2014.03
@@ -17,7 +17,6 @@ LIB_DEPENDS=	libpng.so:graphics/png
 USES=		jpeg localbase:ldflags pkgconfig waf
 USE_GL=		egl gl glesv2
 CONFIGURE_ARGS=	--with-flavors=x11-gl,x11-glesv2 --no-opt --no-debug
-WAF_CMD=	./waf -v
 
 PORTDOCS=	NEWS
 
@@ -25,6 +24,8 @@ OPTIONS_DEFINE=	DOCS
 
 post-patch:
 	@${REINPLACE_CMD} -e "/lib/s/, 'dl'//" ${WRKSRC}/src/wscript_build
+	@${REINPLACE_CMD} -e 's/GLMARK_VERSION/ &/' \
+		${WRKSRC}/src/native-state-x11.cpp
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

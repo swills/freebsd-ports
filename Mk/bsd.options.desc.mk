@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.options.desc.mk 455545 2017-12-04 21:30:00Z sunpoet $
+# $FreeBSD: head/Mk/bsd.options.desc.mk 459041 2018-01-15 13:32:54Z mat $
 #
 # READ BEFORE EDITING:
 # - Please keep descriptions sorted alphabetically by variable name.
@@ -134,8 +134,8 @@ GPERFTOOLS_DESC?=	Google gperftools support
 GPHOTO_DESC?=		Digital cameras support via libgphoto2
 GRAPHMAGICK_DESC?=	GraphicsMagick image processing support
 GRAPHVIZ_DESC?=		Graphviz graph drawing support
-GRIB_API_DESC?=		ECMWF GRIB API support
 GRASS_DESC?=		Geographic Information System (GIS) support
+GRIB_API_DESC?=		ECMWF GRIB API support
 GSM_DESC?=		GSM codec support
 GSSAPI_BASE_DESC?=	GSSAPI support via base system (needs Kerberos)
 GSSAPI_DESC?=		GSSAPI Security API support

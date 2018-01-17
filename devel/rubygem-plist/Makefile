@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-plist/Makefile 446980 2017-07-31 15:50:40Z sunpoet $
+# $FreeBSD: head/devel/rubygem-plist/Makefile 459063 2018-01-15 15:08:08Z swills $
 
 PORTNAME=	plist
-PORTVERSION=	3.3.0
+PORTVERSION=	3.4.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

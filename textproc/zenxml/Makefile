@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/zenxml/Makefile 410504 2016-03-07 06:15:25Z kevlo $
+# $FreeBSD: head/textproc/zenxml/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	zenxml
 PORTVERSION=	2.3
@@ -6,7 +6,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/
 DISTNAME=	zenXml_${PORTVERSION}
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple XML processing using C++
 
 LICENSE=	GPLv3

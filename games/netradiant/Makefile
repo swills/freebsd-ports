@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/netradiant/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/games/netradiant/Makefile 459080 2018-01-15 16:50:28Z danfe $
 
 PORTNAME=	netradiant
 PORTVERSION=	20130630
@@ -40,12 +40,6 @@ post-patch:
 # Add missing checks for __FreeBSD__
 	@${FIND} ${WRKSRC}/tools -name '*.[ch]' | ${XARGS} ${REINPLACE_CMD} \
 		-e 's/__linux__/__${OPSYS}__ ) || defined ( &/'
-# Fix the build against Clang
-	@${REINPLACE_CMD} -e '/#include "generic\/reference\.h"/x ; 288G' \
-		${WRKSRC}/libs/scenelib.h
-	@${REINPLACE_CMD} -e '/#include "generic\/referencecounted\.h/ { \
-		x ; s/^/#include "scenelib.h"/ ; G ; }' \
-			${WRKSRC}/plugins/mapq3/parse.h
 
 pre-install:
 # Fix permissions of some files (drop bogus execute bit)

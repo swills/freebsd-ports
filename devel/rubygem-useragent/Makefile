@@ -1,8 +1,8 @@
 # Created by: Sir l33tname <sirl33tname@gmail.com>
-# $FreeBSD: head/devel/rubygem-useragent/Makefile 435781 2017-03-09 18:09:58Z swills $
+# $FreeBSD: head/devel/rubygem-useragent/Makefile 458978 2018-01-14 14:14:58Z sunpoet $
 
 PORTNAME=	useragent
-PORTVERSION=	0.16.8
+PORTVERSION=	0.16.9
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,5 +1,5 @@
 # Created by: Denis Barov <dindin@dindin.ru>
-# $FreeBSD: head/graphics/lensfun/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/lensfun/Makefile 459110 2018-01-15 18:42:10Z danfe $
 
 PORTNAME=	lensfun
 PORTVERSION=	0.3.2
@@ -31,5 +31,9 @@ SIMD_CMAKE_OFF=	-DBUILD_FOR_SSE:BOOL=OFF -DBUILD_FOR_SSE2:BOOL=OFF
 PYHELPERS_CMAKE_ON=	-DSTAGEDIR:STRING=${STAGEDIR} -DPYTHON:STRING=${PYTHON_CMD}
 PYHELPERS_CMAKE_OFF=	-DINSTALL_HELPER_SCRIPTS:BOOL=OFF -DPYTHON:STRING=IGNORE
 PYHELPERS_USES=		python:3.4+
+
+post-patch:
+# Fix the build against Clang 6.0.0
+	@${REINPLACE_CMD} -e '/%%/s,R_BX, & ,' ${WRKSRC}/libs/lensfun/cpuid.cpp
 
 .include <bsd.port.mk>

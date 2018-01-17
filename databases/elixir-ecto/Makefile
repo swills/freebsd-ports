@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/elixir-ecto/Makefile 456979 2017-12-22 13:55:40Z olgeni $
+# $FreeBSD: head/databases/elixir-ecto/Makefile 458924 2018-01-13 10:10:40Z olgeni $
 
 PORTNAME=	ecto
-PORTVERSION=	2.2.7
+PORTVERSION=	2.2.8
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 PKGNAMEPREFIX=	elixir-

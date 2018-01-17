@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb102-client/Makefile 455626 2017-12-05 21:15:30Z brnrd $
+# $FreeBSD: head/databases/mariadb102-client/Makefile 459005 2018-01-14 21:53:59Z brnrd $
 
 PORTNAME=	mariadb
 PORTREVISION=	0
@@ -29,7 +29,9 @@ post-configure:
 post-install:
 	${RM} ${STAGEDIR}${PREFIX}/share/aclocal/mysql.m4
 	${RM} -r ${STAGEDIR}${PREFIX}/share/pkgconfig
-	${RM} -r ${STAGEDIR}${PREFIX}/include/mysql/server
+.	for f in server my_global.h my_sys.h mysql_com.h mysql_version.h
+	${RM} -r ${STAGEDIR}${PREFIX}/include/mysql/${f}
+.	endfor
 	${RM} -r ${STAGEDIR}${DATADIR}/policy
 	${RM} ${STAGEDIR}${PREFIX}/man/man1/aria* ${STAGEDIR}${PREFIX}/man/man1/myisam*
 	# Fix https://mariadb.atlassian.net/browse/MDEV-9388

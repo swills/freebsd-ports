@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/deheader/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/deheader/Makefile 458818 2018-01-12 11:21:07Z rene $
 
 PORTNAME=	deheader
 PORTVERSION=	1.0
 CATEGORIES=	devel
 MASTER_SITES=	http://www.catb.org/esr/deheader/
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tool to find unnecessary includes in C/C++ files
 
 LICENSE=	BSD3CLAUSE

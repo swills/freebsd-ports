@@ -1,21 +1,23 @@
 # Created by: Stefan `Sec` Zehl <sec@42.org>
-# $FreeBSD: head/www/p5-Protocol-WebSocket/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Protocol-WebSocket/Makefile 458899 2018-01-13 08:12:57Z sunpoet $
 
 PORTNAME=	Protocol-WebSocket
-PORTVERSION=	0.00906
-PORTREVISION=	2
+PORTVERSION=	0.2300
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:VTI
+DISTNAME=	${PORTNAME}-${PORTVERSION:C|00$||}
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	sec@42.org
 COMMENT=	Client/server WebSocket message and frame parser/constructor
 
-BUILD_DEPENDS=	p5-Digest-SHA1>=0:security/p5-Digest-SHA1
-RUN_DEPENDS=	p5-Digest-SHA1>=0:security/p5-Digest-SHA1
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
+NO_ARCH=	yes
 USES=		perl5
-USE_PERL5=	configure
+USE_PERL5=	modbuildtiny
 
 .include <bsd.port.mk>

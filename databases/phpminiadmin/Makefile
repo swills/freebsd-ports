@@ -1,8 +1,8 @@
 # Created by: spam@rm-rf.kiev.ua
-# $FreeBSD: head/databases/phpminiadmin/Makefile 436463 2017-03-19 01:52:29Z wen $
+# $FreeBSD: head/databases/phpminiadmin/Makefile 459212 2018-01-16 23:09:46Z dbaio $
 
 PORTNAME=	phpminiadmin
-PORTVERSION=	1.9.170312
+PORTVERSION=	1.9.170730
 CATEGORIES=	databases www
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 DISTNAME=	${PORTNAME}

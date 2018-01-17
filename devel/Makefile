@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 458650 2018-01-10 15:38:07Z swills $
+# $FreeBSD: head/devel/Makefile 459030 2018-01-15 10:37:33Z yuri $
 #
 
     COMMENT = Development utilities
@@ -430,6 +430,7 @@
     SUBDIR += deforaos-libsystem
     SUBDIR += deheader
     SUBDIR += delta
+    SUBDIR += dep
     SUBDIR += derelict-sdl2
     SUBDIR += derelict-util
     SUBDIR += desktop-file-utils
@@ -1538,6 +1539,7 @@
     SUBDIR += libsoup-gnome
     SUBDIR += libsoup-reference
     SUBDIR += libspark2012
+    SUBDIR += libspice-server
     SUBDIR += libstatgrab
     SUBDIR += libstatgrab0
     SUBDIR += libstrfunc
@@ -1668,6 +1670,7 @@
     SUBDIR += lua-posix
     SUBDIR += lua-pty
     SUBDIR += lua-sysctl
+    SUBDIR += lua51-bitop
     SUBDIR += lua51-cjson
     SUBDIR += lua51-libevent
     SUBDIR += luabind
@@ -4403,6 +4406,7 @@
     SUBDIR += py-epdb
     SUBDIR += py-epsilon
     SUBDIR += py-evdev
+    SUBDIR += py-eventlib
     SUBDIR += py-exam
     SUBDIR += py-extras
     SUBDIR += py-extremes
@@ -4564,6 +4568,7 @@
     SUBDIR += py-libzfs
     SUBDIR += py-linecache2
     SUBDIR += py-llfuse
+    SUBDIR += py-llvmcpy
     SUBDIR += py-llvmlite
     SUBDIR += py-lock_file
     SUBDIR += py-lockfile
@@ -4746,6 +4751,7 @@
     SUBDIR += py-pyqi
     SUBDIR += py-pyqtree
     SUBDIR += py-pyral
+    SUBDIR += py-pyrepl
     SUBDIR += py-pyrfc3339
     SUBDIR += py-pyro
     SUBDIR += py-pyshapelib
@@ -4823,7 +4829,6 @@
     SUBDIR += py-rcsparse
     SUBDIR += py-rebulk
     SUBDIR += py-rednose
-    SUBDIR += py-repl
     SUBDIR += py-repoze.lru
     SUBDIR += py-repoze.sphinx.autointerface
     SUBDIR += py-repoze.tm2
@@ -5224,14 +5229,11 @@
     SUBDIR += rth
     SUBDIR += ruby-bsearch
     SUBDIR += ruby-build
-    SUBDIR += ruby-calendar
-    SUBDIR += ruby-date2
     SUBDIR += ruby-gems
     SUBDIR += ruby-korundum
     SUBDIR += ruby-krossruby
     SUBDIR += ruby-ncurses
     SUBDIR += ruby-qtruby
-    SUBDIR += ruby-rbbr
     SUBDIR += ruby-rbprof
     SUBDIR += ruby-sdl
     SUBDIR += ruby-setup.rb

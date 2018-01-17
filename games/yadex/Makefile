@@ -1,5 +1,5 @@
 # Created by: Jordan DeLong <fracture@allusion.net>
-# $FreeBSD: head/games/yadex/Makefile 373615 2014-11-29 12:22:21Z antoine $
+# $FreeBSD: head/games/yadex/Makefile 459082 2018-01-15 16:53:05Z danfe $
 
 PORTNAME=	yadex
 PORTVERSION=	1.7.0
@@ -9,7 +9,7 @@ MASTER_SITES=	http://www.teaser.fr/~amajorel/yadex/
 DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	danfe@FreeBSD.org
-COMMENT=	WAD file editor, for games like Doom and Hexen
+COMMENT=	WAD file editor, for games like Doom and Heretic
 
 LICENSE=	GPLv2
 
@@ -60,6 +60,8 @@ post-patch:
 	@${REINPLACE_CMD} -E 's,^#(CXXFLAGS \+= -DWHITE_BACKGROUND)$$,\1,' \
 		${WRKSRC}/${MAKEFILE}
 .endif
+# Fix the build against Clang 6.0.0
+	@${REINPLACE_CMD} -e 's,1000000ul,1000000l,' ${WRKSRC}/src/input.cc
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

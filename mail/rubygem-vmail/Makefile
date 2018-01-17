@@ -1,8 +1,8 @@
 # Created by: Hsin-Han You <hhyou@cs.nctu.edu.tw>
-# $FreeBSD: head/mail/rubygem-vmail/Makefile 458786 2018-01-11 20:34:08Z adamw $
+# $FreeBSD: head/mail/rubygem-vmail/Makefile 459069 2018-01-15 15:24:32Z swills $
 
 PORTNAME=	vmail
-PORTVERSION=	2.9.5
+PORTVERSION=	2.9.8
 PORTREVISION=	1
 CATEGORIES=	mail rubygems
 MASTER_SITES=	RG

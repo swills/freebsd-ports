@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: head/Mk/bsd.sites.mk 457865 2018-01-02 15:02:09Z linimon $
+# $FreeBSD: head/Mk/bsd.sites.mk 459033 2018-01-15 11:34:53Z mat $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -429,7 +429,7 @@ GH_PROJECT:=	${GH_PROJECT_DEFAULT}
 GH_TAGNAME:=	${GH_TAGNAME_DEFAULT}
 GH_SUBDIR:=	${GH_SUBDIR_DEFAULT}
 .  if defined(GH_TAGNAME)
-GH_TAGNAME_SANITIZED=	${GH_TAGNAME:S,/,-,}
+GH_TAGNAME_SANITIZED=	${GH_TAGNAME:S,/,-,g}
 # GitHub silently converts tags starting with v to not have v in the filename
 # and extraction directory.  It also replaces + with -.
 GH_TAGNAME_EXTRACT=	${GH_TAGNAME_SANITIZED:C/^[vV]([0-9])/\1/:S/+/-/g}

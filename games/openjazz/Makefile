@@ -1,36 +1,30 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/games/openjazz/Makefile 382275 2015-03-25 23:00:50Z marino $
+# $FreeBSD: head/games/openjazz/Makefile 459163 2018-01-16 11:10:14Z martymac $
 
 PORTNAME=	openjazz
-PORTVERSION=	20120819
-PORTREVISION=	4
+PORTVERSION=	20171024
 CATEGORIES=	games
-MASTER_SITES=	http://alister.eu/jazz/oj/ \
-		LOCAL/martymac
-DISTNAME=	OpenJazz-src-190812
 
 MAINTAINER=	martymac@FreeBSD.org
 COMMENT=	Free re-implementation of the Jazz Jackrabbit(tm) game engine
 
 LICENSE=	GPLv2
 
-WRKSRC=	${WRKDIR}/${PORTNAME}
-EXTRACT_AFTER_ARGS=	-d ${WRKSRC}
+USES=	dos2unix gmake
 
-USES=	dos2unix gmake zip
+USE_GITHUB=	yes
+GH_ACCOUNT=	AlisterT
+
 DOS2UNIX_REGEX=	.*\.(h|cpp)
 ALL_TARGET=	OpenJazz
 USE_XORG=	x11 xext xrandr xrender xau xdmcp
 USE_SDL=	sdl
 
-CPPFLAGS+=	-I${LOCALBASE}/include `${SDL_CONFIG} --cflags` \
+CXXFLAGS+=	-I${LOCALBASE}/include `${SDL_CONFIG} --cflags` \
 		-DDATAPATH=\\\"${DATADIR}/\\\" -DHOMEDIR
 LDFLAGS+=	-lpthread -L${LOCALBASE}/lib `${SDL_CONFIG} --libs`
 
 SUB_FILES=	pkg-message
-
-pre-extract:
-	@${MKDIR} ${WRKSRC}
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}

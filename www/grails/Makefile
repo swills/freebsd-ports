@@ -1,5 +1,5 @@
 # Created by: Mitchell Smith <mjs@bur.st>
-# $FreeBSD: head/www/grails/Makefile 405644 2016-01-09 16:53:04Z pawel $
+# $FreeBSD: head/www/grails/Makefile 458921 2018-01-13 09:00:52Z amdmi3 $
 
 PORTNAME=	grails
 DISTVERSION=	1.3.6
@@ -9,6 +9,9 @@ MASTER_SITES=	http://dist.codehaus.org/grails/ \
 
 MAINTAINER=	mjs@bur.st
 COMMENT=	Web framework built on Groovy
+
+LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSION:tu}
 

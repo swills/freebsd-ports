@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/Makefile 454302 2017-11-16 10:48:48Z tz $
+# $FreeBSD: head/converters/Makefile 459138 2018-01-15 23:30:33Z yuri $
 #
 
     COMMENT = Character code converters
@@ -59,6 +59,7 @@
     SUBDIR += ocaml-base64
     SUBDIR += ocaml-jsonm
     SUBDIR += osm2mp
+    SUBDIR += osm2pgrouting
     SUBDIR += osm2pgsql
     SUBDIR += p5-Bencode
     SUBDIR += p5-Boulder

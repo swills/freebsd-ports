@@ -1,15 +1,17 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/sysutils/kiconvtool/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/sysutils/kiconvtool/Makefile 458948 2018-01-14 00:25:54Z amdmi3 $
 
 PORTNAME=	kiconvtool
-PORTVERSION=	0.97
-PORTREVISION=	1
+PORTVERSION=	0.98
 CATEGORIES=	sysutils
-MASTER_SITES=	http://mirror.amdmi3.ru/distfiles/ \
-		LOCAL/amdmi3
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Tool to preload kernel iconv charset tables
+
+LICENSE=	BSD2CLAUSE
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	AMDmi3
 
 USES=		iconv	# used by libkiconv, actually
 

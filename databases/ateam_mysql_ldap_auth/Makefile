@@ -1,5 +1,5 @@
 # Created by: Ganbold Tsagaankhuu <ganbold@FreeBSD.org>
-# $FreeBSD: head/databases/ateam_mysql_ldap_auth/Makefile 458720 2018-01-11 11:12:33Z danfe $
+# $FreeBSD: head/databases/ateam_mysql_ldap_auth/Makefile 458946 2018-01-13 22:43:03Z antoine $
 
 PORTNAME=	ateam_mysql_ldap_auth
 PORTVERSION=	1.0
@@ -21,9 +21,10 @@ GH_ACCOUNT=	ateamsystems
 GH_TAGNAME=	f6a1a5d
 
 PLIST_FILES=	lib/mysql/plugin/auth_ldap.so \
-		"@sample etc/ateam_mysql_ldap_auth.conf.sample" \
-		${DOCSDIR}/README \
-		${DOCSDIR}/INSTALL
+		"@sample etc/ateam_mysql_ldap_auth.conf.sample"
+PORTDOCS=	README INSTALL
+
+OPTIONS_DEFINE=	DOCS
 
 SUB_FILES=	pkg-message
 
