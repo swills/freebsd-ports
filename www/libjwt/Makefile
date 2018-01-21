@@ -1,8 +1,8 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/www/libjwt/Makefile 458818 2018-01-12 11:21:07Z rene $
+# $FreeBSD: head/www/libjwt/Makefile 459562 2018-01-21 01:35:58Z vanilla $
 
 PORTNAME=	libjwt
-PORTVERSION=	1.8.0
+PORTVERSION=	1.9.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 

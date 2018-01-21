@@ -1,9 +1,9 @@
-# $FreeBSD: head/dns/bind910/Makefile 458822 2018-01-12 12:58:51Z mat $
+# $FreeBSD: head/dns/bind910/Makefile 459406 2018-01-19 12:32:34Z mat $
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
 PORTVERSION=	${ISCVERSION:S/-P/P/:S/b/.b/:S/a/.a/:S/rc/.rc/}
-PORTREVISION=	7
+PORTREVISION=	1
 CATEGORIES=	dns net ipv6
 MASTER_SITES=	ISC/bind9/${ISCVERSION}
 PKGNAMESUFFIX=	910
@@ -19,7 +19,7 @@ DEPRECATED=	Going out of support, please migrate to dns/bind911
 EXPIRATION_DATE=	2018-06-30
 
 # ISC releases things like 9.8.0-P1, which our versioning doesn't like
-ISCVERSION=	9.10.6
+ISCVERSION=	9.10.6-P1
 
 USES=	cpe libedit
 

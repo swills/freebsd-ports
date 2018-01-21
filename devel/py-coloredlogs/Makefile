@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-coloredlogs/Makefile 458445 2018-01-08 16:52:09Z sunpoet $
+# $FreeBSD: head/devel/py-coloredlogs/Makefile 459336 2018-01-18 14:42:57Z sunpoet $
 
 PORTNAME=	coloredlogs
-PORTVERSION=	8.0
+PORTVERSION=	9.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +12,7 @@ COMMENT=	Colored terminal output for Python logging module
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}humanfriendly>=3.7:textproc/py-humanfriendly@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}humanfriendly>=4.7:textproc/py-humanfriendly@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

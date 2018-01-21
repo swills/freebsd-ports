@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/cadabra2/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/math/cadabra2/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	cadabra2
 DISTVERSION=	2.1.6
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org

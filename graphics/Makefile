@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 459154 2018-01-16 05:53:01Z yuri $
+# $FreeBSD: head/graphics/Makefile 459457 2018-01-19 18:37:39Z rene $
 #
 
     COMMENT = Graphics tools and libraries
@@ -356,6 +356,7 @@
     SUBDIR += hs-svgcairo
     SUBDIR += hugin
     SUBDIR += icat
+    SUBDIR += icc-profiles-adobe-cs4
     SUBDIR += icc-profiles-basiccolor
     SUBDIR += icc-profiles-openicc
     SUBDIR += iccexamin
@@ -906,7 +907,6 @@
     SUBDIR += py-pyproj
     SUBDIR += py-qt4-svg
     SUBDIR += py-qt5-svg
-    SUBDIR += py-rabbyt
     SUBDIR += py-sane
     SUBDIR += py-scikit-image
     SUBDIR += py-seqdiag

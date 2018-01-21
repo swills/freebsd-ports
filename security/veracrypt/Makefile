@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/veracrypt/Makefile 446184 2017-07-19 05:40:13Z acm $
+# $FreeBSD: head/security/veracrypt/Makefile 459567 2018-01-21 02:22:41Z jbeich $
 
 PORTNAME=	veracrypt
 PORTVERSION=	1.21
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME:S/v/V/:S/c/C/}%20${PORTVERSION}/
 DISTNAME=	${PORTNAME:S/v/V/:S/c/C/}_${PORTVERSION}_Source

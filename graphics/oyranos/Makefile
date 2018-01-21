@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/oyranos/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/oyranos/Makefile 459474 2018-01-19 21:28:34Z antoine $
 
 PORTNAME=	oyranos
 PORTVERSION=	0.9.6
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics
 
 MAINTAINER=	bsam@FreeBSD.org
@@ -44,6 +44,7 @@ OPTIONS_DEFINE=	DOXYGEN
 DOXYGEN_BUILD_DEPENDS=	${LOCALBASE}/bin/doxygen:devel/doxygen
 
 PORTDOCS=	*
+DOCSDIR=	${PREFIX}/share/doc/${PORTNAME}-${PORTVERSION}
 
 PLIST_SUB+=	VER=${PORTVERSION}
 

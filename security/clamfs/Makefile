@@ -1,9 +1,9 @@
 # Created by: Mageirias Anastasios <anastmag@gmail.com>
-# $FreeBSD: head/security/clamfs/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/security/clamfs/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	clamfs
 PORTVERSION=	1.0.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	security
 MASTER_SITES=	SF
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 458661 2018-01-10 17:12:45Z ale $
+# $FreeBSD: head/security/Makefile 459560 2018-01-21 00:38:29Z jhale $
 #
 
     COMMENT = Security tools
@@ -409,6 +409,7 @@
     SUBDIR += metasploit
     SUBDIR += mhash
     SUBDIR += mindterm-binary
+    SUBDIR += minisign
     SUBDIR += monkeysphere
     SUBDIR += morphis
     SUBDIR += munge
@@ -837,6 +838,7 @@
     SUBDIR += pidgin-otr
     SUBDIR += pinentry
     SUBDIR += pinentry-curses
+    SUBDIR += pinentry-fltk
     SUBDIR += pinentry-gnome3
     SUBDIR += pinentry-gtk2
     SUBDIR += pinentry-qt4

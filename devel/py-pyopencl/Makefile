@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/py-pyopencl/Makefile 458167 2018-01-05 20:02:03Z yuri $
+# $FreeBSD: head/devel/py-pyopencl/Makefile 459500 2018-01-20 10:02:19Z sunpoet $
 
 PORTNAME=	pyopencl
-PORTVERSION=	2017.2.2
-PORTREVISION=	1
+PORTVERSION=	2018.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

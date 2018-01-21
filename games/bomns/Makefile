@@ -1,5 +1,5 @@
 # Created by: Alejandro Pulver <alejandro@varnet.biz>
-# $FreeBSD: head/games/bomns/Makefile 416233 2016-06-01 09:03:50Z amdmi3 $
+# $FreeBSD: head/games/bomns/Makefile 459539 2018-01-20 17:47:39Z jbeich $
 
 PORTNAME=	bomns
 PORTVERSION=	0.99.3
@@ -21,6 +21,7 @@ GH_TAGNAME=	113be27
 
 USES=		cmake localbase
 CMAKE_ARGS=	-Wno-dev
+USE_CXXSTD=	gnu++98
 USE_SDL=	mixer sdl
 USE_GNOME=	gtk20
 USE_CSTD=	gnu89

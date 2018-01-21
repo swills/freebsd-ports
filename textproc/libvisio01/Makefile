@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/libvisio01/Makefile 454828 2017-11-24 17:53:11Z mat $
+# $FreeBSD: head/textproc/libvisio01/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	libvisio
 PORTVERSION=	0.1.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc devel
 MASTER_SITES=	LODEV/${PORTNAME}
 PKGNAMESUFFIX=	01

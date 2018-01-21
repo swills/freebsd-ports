@@ -1,9 +1,8 @@
 # Created by: Joep Grooten <joep@di.nl>
-# $FreeBSD: head/devel/doxygen/Makefile 455534 2017-12-04 20:12:21Z amdmi3 $
+# $FreeBSD: head/devel/doxygen/Makefile 459474 2018-01-19 21:28:34Z antoine $
 
 PORTNAME=	doxygen
-PORTVERSION=	1.8.13
-PORTREVISION=	1
+PORTVERSION=	1.8.14
 PORTEPOCH=	2
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.stack.nl/pub/users/dimitri/ \

@@ -1,8 +1,8 @@
 # Created by: adamw
-# $FreeBSD: head/archivers/liblz4/Makefile 458961 2018-01-14 07:07:39Z sunpoet $
+# $FreeBSD: head/archivers/liblz4/Makefile 459351 2018-01-18 14:44:16Z sunpoet $
 
 PORTNAME=	lz4
-PORTVERSION=	1.8.1
+PORTVERSION=	1.8.1.2
 DISTVERSIONPREFIX=	v
 PORTEPOCH=	1
 CATEGORIES=	archivers
@@ -20,7 +20,7 @@ USE_LDCONFIG=	yes
 #PATHFIX_MAKEFILEIN=	Makefile
 
 ALL_TARGET=	default		# don't remove this
-SO_VER=		${PORTVERSION}
+SO_VER=		${PORTVERSION:R}
 PLIST_SUB+=	SO_VER=${SO_VER} SO_VER_MAJ=${SO_VER:R:R}
 LIBDIR=		${PREFIX}/lib
 

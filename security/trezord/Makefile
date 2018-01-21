@@ -1,8 +1,9 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/security/trezord/Makefile 458661 2018-01-10 17:12:45Z ale $
+# $FreeBSD: head/security/trezord/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	trezord
 PORTVERSION=	1.2.1
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	LOCAL/ale
 

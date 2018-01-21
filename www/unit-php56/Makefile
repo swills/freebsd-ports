@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/www/unit-php56/Makefile 456464 2017-12-16 10:20:14Z lwhsu $
+# $FreeBSD: head/www/unit-php56/Makefile 459541 2018-01-20 19:23:58Z osa $
 
 PHP_VER?=	56
 
@@ -10,6 +10,8 @@ COMMENT=	PHP module for NGINX Unit
 PLIST_FILES=	libexec/unit/modules/php${PHP_VER}.unit.so
 
 USES=		php:build,embed
+
+USE_RC_SUBR?=	# reset to empty
 
 MASTERDIR=	${.CURDIR}/../unit
 

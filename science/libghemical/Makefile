@@ -1,5 +1,5 @@
 # Created by: Nakata Maho <maho@FreeBSD.org>
-# $FreeBSD: head/science/libghemical/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/science/libghemical/Makefile 459494 2018-01-20 07:41:40Z antoine $
 
 PORTNAME=	libghemical
 PORTVERSION=	3.0.0
@@ -10,6 +10,8 @@ MASTER_SITES=	http://bioinformatics.org/ghemical/download/release20111012/	\
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Support libraries of science/ghemical port
+
+BROKEN=		fails to configure
 
 BUILD_DEPENDS=	obabel:science/openbabel \
 		intltool-update:textproc/intltool \

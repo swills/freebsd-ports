@@ -1,10 +1,10 @@
-# $FreeBSD: head/comms/splat/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/comms/splat/Makefile 459370 2018-01-18 19:56:15Z db $
 
 PORTNAME=	splat
-PORTVERSION=	1.4.0
+PORTVERSION=	1.4.2
 CATEGORIES=	comms hamradio
-MASTER_SITES=	SUNSITE/apps/ham
-
+MASTER_SITES=	http://www.qsl.net/kd2bd/
+#http://www.qsl.net/kd2bd/splat-1.4.2.tar.bz2
 MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Used in calculating path losses, useful to ham radio and others
 

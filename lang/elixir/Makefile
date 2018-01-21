@@ -1,8 +1,8 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/lang/elixir/Makefile 456778 2017-12-20 07:23:21Z olgeni $
+# $FreeBSD: head/lang/elixir/Makefile 459438 2018-01-19 16:48:30Z olgeni $
 
 PORTNAME=	elixir
-PORTVERSION=	1.5.3
+PORTVERSION=	1.6.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	lang
 MASTER_SITES+=	https://github.com/elixir-lang/elixir/releases/download/${DISTVERSIONPREFIX}${PORTVERSION}/:doc
@@ -14,8 +14,8 @@ COMMENT=	Functional, meta-programming aware language built on top of Erlang VM
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	erlang>=18:lang/erlang
-RUN_DEPENDS=	erlang>=18:lang/erlang
+BUILD_DEPENDS=	erlang>=19:lang/erlang
+RUN_DEPENDS=	erlang>=19:lang/erlang
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	elixir-lang

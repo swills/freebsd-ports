@@ -1,8 +1,9 @@
 # Created by: Tony Maher
-# $FreeBSD: head/security/apache-xml-security-c/Makefile 439541 2017-04-27 12:14:37Z mat $
+# $FreeBSD: head/security/apache-xml-security-c/Makefile 459470 2018-01-19 20:34:42Z girgen $
 
 PORTNAME=	xml-security-c
 PORTVERSION=	1.7.3
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	APACHE/santuario/c-library
 PKGNAMEPREFIX=	apache-
@@ -16,10 +17,12 @@ LIB_DEPENDS+=	libxerces-c.so.3:textproc/xerces-c3
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-xerces=${LOCALBASE}
-USES=		gmake libtool tar:bzip2 ssl
+USES=		cpe gmake libtool tar:bzip2 ssl
 USE_LDCONFIG=	yes
 CONFIGURE_ARGS+=--with-openssl=${OPENSSLBASE}
 
+CPE_PRODUCT=	xml_security_for_c\+\+
+CPE_VENDOR=	apache
 BROKEN_SSL=	openssl-devel
 BROKEN_SSL_REASON_openssl-devel=	field has incomplete type HMAC_CTX (aka hmac_ctx_st)
 

@@ -1,9 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/flowcanvas/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/x11-toolkits/flowcanvas/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	flowcanvas
 PORTVERSION=	0.7.1
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://download.drobilla.net/
 

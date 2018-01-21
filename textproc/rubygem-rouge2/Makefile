@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-rouge2/Makefile 459191 2018-01-16 15:53:33Z swills $
+# $FreeBSD: head/textproc/rubygem-rouge2/Makefile 459256 2018-01-17 13:57:32Z swills $
 
 PORTNAME=	rouge
 PORTVERSION=	2.2.1
@@ -12,6 +12,8 @@ COMMENT=	Simple, easy-to-extend drop-in replacement for pygments
 LICENSE=	BSD2CLAUSE MIT
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+CONFLICTS_INSTALL=	rubygems-rouge
 
 NO_ARCH=	yes
 USES=		gem

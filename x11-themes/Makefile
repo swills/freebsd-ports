@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/Makefile 454895 2017-11-25 20:34:37Z yuri $
+# $FreeBSD: head/x11-themes/Makefile 459580 2018-01-21 09:48:06Z novel $
 #
 
     COMMENT = X11 themes
@@ -146,6 +146,7 @@
     SUBDIR += murrine-configurator
     SUBDIR += nimbus
     SUBDIR += numix-theme
+    SUBDIR += openbox-arc-theme
     SUBDIR += openbox-themes
     SUBDIR += plank-theme-moka
     SUBDIR += qt4-style-Kvantum

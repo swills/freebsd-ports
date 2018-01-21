@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-red_black_tree/Makefile 418363 2016-07-11 10:47:50Z olgeni $
+# $FreeBSD: head/devel/elixir-red_black_tree/Makefile 459423 2018-01-19 14:46:14Z olgeni $
 
 PORTNAME=	red_black_tree
 PORTVERSION=	1.2.0
@@ -12,6 +12,8 @@ COMMENT=	Red-black tree implementation for Elixir
 LICENSE=	MIT
 
 IGNORE=		does not build with Elixir 1.3
+DEPRECATED=	No longer maintained upstream
+EXPIRATION_DATE=2018-02-18
 
 USES=		elixir
 USE_GITHUB=	yes

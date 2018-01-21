@@ -1,5 +1,5 @@
 # Created by: Muhammad Moinur Rahman <5u623l20@gmail.com>
-# $FreeBSD: head/devel/py-enum34/Makefile 443066 2017-06-10 03:13:28Z woodsb02 $
+# $FreeBSD: head/devel/py-enum34/Makefile 459514 2018-01-20 12:38:05Z sunpoet $
 
 PORTNAME=	enum34
 PORTVERSION=	1.1.6
@@ -12,7 +12,7 @@ COMMENT=	Python 3.4 Enum backported to 3.3, 3.2, 3.1, 2.7
 
 LICENSE=	BSD3CLAUSE
 
-USES?=		python:2.7-3.3
+USES?=		python:-3.3
 USE_PYTHON=	distutils autoplist
 OPTIONS_DEFINE=	DOCS
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 457718 2017-12-31 19:30:35Z pi $
+# $FreeBSD: head/net-im/Makefile 459509 2018-01-20 10:25:50Z nivit $
 #
 
     COMMENT = Instant messaging
@@ -161,6 +161,7 @@
     SUBDIR += rubygem-termtter
     SUBDIR += rubygem-tinder
     SUBDIR += sayaka
+    SUBDIR += scudcloud
     SUBDIR += sendxmpp
     SUBDIR += skype
     SUBDIR += skype-devel

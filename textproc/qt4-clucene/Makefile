@@ -1,9 +1,9 @@
 # Created by: danny@ricin.com
-# $FreeBSD: head/textproc/qt4-clucene/Makefile 434380 2017-02-18 19:48:05Z tcberner $
+# $FreeBSD: head/textproc/qt4-clucene/Makefile 459481 2018-01-19 22:57:06Z adridg $
 
 PORTNAME=	clucene
 DISTVERSION=	${QT4_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc
 PKGNAMEPREFIX=	qt4-
 

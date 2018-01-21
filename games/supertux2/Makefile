@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/supertux2/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/games/supertux2/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	supertux
 PORTVERSION=	0.4.0
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	games
 MASTER_SITES=	https://github.com/SuperTux/supertux/releases/download/v${PORTVERSION}/
 PKGNAMESUFFIX=	2

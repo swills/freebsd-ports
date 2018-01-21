@@ -1,9 +1,9 @@
 # Created by: Brooks Davis
-# $FreeBSD: head/lang/clang-devel/Makefile 428585 2016-12-14 18:38:06Z brooks $
+# $FreeBSD: head/lang/clang-devel/Makefile 459483 2018-01-19 23:30:47Z brooks $
 
 PORTNAME=	clang
 PORTVERSION=	${LLVM_MAJOR}.d${SNAPDATE}
-PORTREVISION=	1
+PORTREVISION=	0
 CATEGORIES=	lang devel
 PKGNAMESUFFIX=	-devel
 

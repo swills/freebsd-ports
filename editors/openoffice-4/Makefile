@@ -1,9 +1,9 @@
 # Created by: Martin Blapp
-# $FreeBSD: head/editors/openoffice-4/Makefile 457654 2017-12-31 00:00:06Z truckman $
+# $FreeBSD: head/editors/openoffice-4/Makefile 459465 2018-01-19 19:40:46Z truckman $
 
 PORTNAME=	apache-openoffice
 PORTVERSION=	${AOOVERSION}
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	editors java
 MASTER_SITES=	APACHE/openoffice/${PORTVERSION}/sources \
 		http://tools.openoffice.org/unowinreg_prebuild/680/:unoreg \
@@ -138,14 +138,13 @@ WITHOUT_CPU_CFLAGS=	true
 CPE_PRODUCT=	${PORTNAME:S|apache-||}
 CPE_VENDOR=	apache
 
-OPTIONS_DEFINE=		CUPS GNOME GNOMEVFS MMEDIA SDK WIKI_PUBLISHER CCACHE
+OPTIONS_DEFINE=		CUPS GNOME GNOMEVFS MMEDIA SDK WIKI_PUBLISHER
 OPTIONS_DEFAULT=	CUPS GNOME GNOMEVFS MMEDIA WIKI_PUBLISHER
 GNOME_DESC=		GConf + screensaver presentation control via DBUS
 GNOMEVFS_DESC=		GNOME Virtual File System
 MMEDIA_DESC=		Multimedia backend for impress
 SDK_DESC=		Build and install software development kit
 WIKI_PUBLISHER_DESC=	Build and install Wiki Publisher extension
-CCACHE_DESC=		Mimimize compile time of C/C++ programs
 
 CUPS_CONFIGURE_ENABLE=		cups
 CUPS_LIB_DEPENDS=		libcups.so:print/cups
@@ -207,18 +206,7 @@ PACKAGE_PREFIX=		Apache_OpenOffice
 
 LOCALIZED_LANG?=	en-US
 
-.if ${PORT_OPTIONS:MCCACHE} || defined(WITH_CCACHE)
-BUILD_DEPENDS+=	ccache:devel/ccache
-CCACHE_PREFIX=	ccache
-AOOCC=		${CCACHE_PREFIX} ${CC}
-AOOCXX=		${CCACHE_PREFIX} ${CXX}
-.else
-AOOCC=		${CC}
-AOOCXX=		${CXX}
-.endif
-
-CONFIGURE_ENV+=	CC="${AOOCC}" CXX="${AOOCXX}"		\
-		PATH=${WRKSRC}/solenv/bin:$$PATH
+AOO_MAKE_ENV=	${MAKE_ENV:NCPPFLAGS=*:NCFLAGS=*:NCXXFLAGS=*}
 
 GNU_CONFIGURE=	yes
 WRKSUBDIR=	${WRKDIR}/aoo-${AOOVERSION}
@@ -415,6 +403,7 @@ do-build:
 	 fi ;								  \
 	fi ;								  \
 	cd ${WRKSRC}/instsetoo_native ;					  \
+	export ${AOO_MAKE_ENV} ;					  \
 	. ../${FREEBSD_ENV_SET} ;					  \
 	build.pl --all -P$${numproc} -- -P$${dmproc}
 

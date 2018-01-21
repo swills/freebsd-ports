@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/opensubdiv/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/graphics/opensubdiv/Makefile 459474 2018-01-19 21:28:34Z antoine $
 
 PORTNAME=	opensubdiv
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3_3_0
 CATEGORIES?=	graphics

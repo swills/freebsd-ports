@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/libmusicbrainz3/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/libmusicbrainz3/Makefile 459231 2018-01-17 09:31:14Z tcberner $
 
 PORTNAME=	libmusicbrainz
 PORTVERSION=	3.0.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.musicbrainz.org/pub/musicbrainz/ \
 		http://ftp.osuosl.org/pub/musicbrainz/

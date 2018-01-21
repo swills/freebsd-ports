@@ -1,7 +1,8 @@
-# $FreeBSD: head/cad/freecad/Makefile 457914 2018-01-02 16:49:24Z tcberner $
+# $FreeBSD: head/cad/freecad/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	FreeCAD
 DISTVERSION=	0.17.12018
+PORTREVISION=	1
 CATEGORIES=	cad
 
 MAINTAINER=	ports@FreeBSD.org

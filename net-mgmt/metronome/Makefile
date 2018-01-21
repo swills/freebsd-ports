@@ -1,7 +1,8 @@
-# $FreeBSD: head/net-mgmt/metronome/Makefile 457914 2018-01-02 16:49:24Z tcberner $
+# $FreeBSD: head/net-mgmt/metronome/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	metronome
 DISTVERSION=	0.9.0
+PORTREVISION=	1
 CATEGORIES=	net-mgmt dns
 
 MAINTAINER=	krion@FreeBSD.org

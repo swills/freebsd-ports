@@ -1,8 +1,9 @@
 # Created by: ijliao@FreeBSD.org
-# $FreeBSD: head/devel/log4cpp/Makefile 458335 2018-01-07 12:13:48Z sunpoet $
+# $FreeBSD: head/devel/log4cpp/Makefile 459474 2018-01-19 21:28:34Z antoine $
 
 PORTNAME=	log4cpp
 PORTVERSION=	1.1.3
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION:R}.x%20%28new%29/${PORTNAME}-${PORTVERSION:R}
 

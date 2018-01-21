@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/transmission-daemon/Makefile 459011 2018-01-14 22:35:00Z woodsb02 $
+# $FreeBSD: head/net-p2p/transmission-daemon/Makefile 459492 2018-01-20 01:20:19Z woodsb02 $
 
 PORTREVISION=	4
 PKGNAMESUFFIX=	-daemon
@@ -12,6 +12,7 @@ DESCR=		${.CURDIR}/pkg-descr
 MASTERDIR=	${.CURDIR}/../transmission-cli
 PLIST=		${.CURDIR}/pkg-plist
 SLAVEPORT=	daemon
+PKGMESSAGE=	${.CURDIR}/pkg-message
 
 USE_RC_SUBR=	transmission
 USERS=		transmission

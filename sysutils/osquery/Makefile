@@ -1,8 +1,9 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/sysutils/osquery/Makefile 456677 2017-12-18 21:50:17Z antoine $
+# $FreeBSD: head/sysutils/osquery/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	osquery
 PORTVERSION=	2.10.2
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	zi@FreeBSD.org
@@ -12,6 +13,7 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN=		fails to link
+#BROKEN=		fails to build with boost 1.66, see bug 224180
 
 BUILD_DEPENDS=	thrift>0:devel/thrift \
 		bash>0:shells/bash \

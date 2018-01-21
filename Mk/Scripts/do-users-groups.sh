@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: head/Mk/Scripts/do-users-groups.sh 452181 2017-10-16 08:30:27Z antoine $
+# $FreeBSD: head/Mk/Scripts/do-users-groups.sh 459356 2018-01-18 15:42:15Z mat $
 #
 # MAINTAINER: portmgr@FreeBSD.org
 
@@ -31,7 +31,6 @@ set -f
 
 rm -f "${dp_UG_INSTALL}" "${dp_UG_DEINSTALL}" || :
 
-# Before FreeBSD 10.2, PW did not have -R support.
 if [ "${dp_OPSYS}" = FreeBSD ] ; then
 	cat >> "${dp_UG_INSTALL}" <<-eot
 	if [ -n "\${PKG_ROOTDIR}" ] && [ "\${PKG_ROOTDIR}" != "/" ]; then

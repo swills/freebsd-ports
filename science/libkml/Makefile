@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/science/libkml/Makefile 457386 2017-12-27 19:47:20Z jbeich $
+# $FreeBSD: head/science/libkml/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	libkml
 PORTVERSION=	1.3.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	science
 
 MAINTAINER=	sunpoet@FreeBSD.org

@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/audex/Makefile 454488 2017-11-19 11:37:26Z riggs $
+# $FreeBSD: head/audio/audex/Makefile 459239 2018-01-17 11:24:47Z tcberner $
 
 PORTNAME=	audex
 PORTVERSION=	0.79
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio kde
 MASTER_SITES=	SF/${PORTNAME}/src
 
@@ -17,6 +17,8 @@ USES=		tar:xz cmake kde:4
 USE_KDE=	automoc4 kdelibs libkcddb libkcompactdisc
 USE_QT4=	gui dbus network svg xml \
 		qmake_build moc_build rcc_build uic_build
+# Too many changes for suffix on literals without a space.
+USE_CXXSTD=	gnu++98
 
 OPTIONS_DEFINE=		NLS EYED3 FAAC FLAC LAME VORBIS
 OPTIONS_DEFAULT=	FLAC VORBIS

@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/bombherman/Makefile 457161 2017-12-24 13:45:17Z tijl $
+# $FreeBSD: head/games/bombherman/Makefile 459538 2018-01-20 17:47:16Z jbeich $
 
 PORTNAME=	bomb-her-man
 PORTVERSION=	0.3
@@ -23,6 +23,7 @@ GH_PROJECT=	Bomb-her-man
 GH_TAGNAME=	8f5aa22
 
 USES=		autoreconf gmake pkgconfig
+USE_CXXSTD=	gnu++98
 USE_SDL=	sdl image mixer ttf
 USE_GNOME=	cairo intltool librsvg2
 GNU_CONFIGURE=	yes

@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/audio/creox/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/audio/creox/Makefile 459242 2018-01-17 11:48:22Z tcberner $
 
 PORTNAME=	creox
 PORTVERSION=	0.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	audio kde
 
 MAINTAINER=	ports@FreeBSD.org
@@ -21,6 +21,7 @@ USES=		cmake:outsource kde:4
 USE_KDE=	automoc4 kdelibs
 USE_QT4=	moc_build qmake_build rcc_build uic_build
 USE_XORG=	xft xpm
+USE_CXXSTD=	gnu++98
 
 post-patch:
 	@${REINPLACE_CMD} -e \

@@ -1,5 +1,5 @@
 # Created by: koshy
-# $FreeBSD: head/benchmarks/netperf/Makefile 451957 2017-10-13 08:21:36Z bapt $
+# $FreeBSD: head/benchmarks/netperf/Makefile 459451 2018-01-19 17:04:52Z mat $
 
 PORTNAME=	netperf
 PORTVERSION=	2.7.0
@@ -13,7 +13,7 @@ OPTIONS_DEFINE=		EXAMPLES EXS HISTOGRAM OMNI SCTP SOCKETS
 OPTIONS_DEFAULT=	${OPTIONS_DEFINE}
 
 EXS_DESC=	Enable ICSC async socket support
-HISTOGRAM_DESC=	Enable optional histogram output
+HISTOGRAM_DESC=	Enable histogram output
 OMNI_DESC=	Enable OMNI tests
 SCTP_DESC=	Enable SCTP support
 SOCKETS_DESC=	Enable Unix Domain socket support

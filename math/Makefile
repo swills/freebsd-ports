@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 459136 2018-01-15 23:16:09Z yuri $
+# $FreeBSD: head/math/Makefile 459245 2018-01-17 13:15:36Z jmd $
 #
 
     COMMENT = Mathematics
@@ -737,6 +737,7 @@
     SUBDIR += symmetrica
     SUBDIR += tablix
     SUBDIR += taucs
+    SUBDIR += tblis
     SUBDIR += testu01
     SUBDIR += tetgen
     SUBDIR += timbl

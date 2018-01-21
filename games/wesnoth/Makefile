@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/wesnoth/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/games/wesnoth/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	wesnoth
 PORTVERSION=	1.12.6
-PORTREVISION=	7
+PORTREVISION=	8
 PORTEPOCH=	1
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION:R}/${PORTNAME}-${PORTVERSION} \
@@ -21,6 +21,7 @@ LIB_DEPENDS=	libvorbisfile.so:audio/libvorbis \
 		libpng.so:graphics/png \
 		libfontconfig.so:x11-fonts/fontconfig
 
+BROKEN_FreeBSD_10=	fails to build with boost 1.66, see bug 224130
 BROKEN_powerpc64=	fails to link: schema_validator.cpp: undefined reference to boost::match_results
 
 LDFLAGS+=	-L${LOCALBASE}/lib -lboost_system

@@ -1,10 +1,10 @@
 # Created by: wcarey
-# $FreeBSD: head/finance/ledger/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/finance/ledger/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	ledger
 PORTVERSION=	3.1.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	finance
 
 MAINTAINER=	woodycarey@hotmail.com

@@ -1,8 +1,9 @@
 # Created by: Janos Mohacsi
-# $FreeBSD: head/devel/xmltooling/Makefile 458860 2018-01-12 17:39:27Z girgen $
+# $FreeBSD: head/devel/xmltooling/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	xmltooling
 PORTVERSION=	1.6.3
+PORTREVISION=	1
 CATEGORIES=	devel security
 MASTER_SITES=	http://shibboleth.net/downloads/c++-opensaml/2.6.1/
 

@@ -1,8 +1,8 @@
 # Created by: Yen-Ming Lee <leeym@leeym.com>
-# $FreeBSD: head/net/GeoIP/Makefile 440984 2017-05-15 22:55:13Z adamw $
+# $FreeBSD: head/net/GeoIP/Makefile 459312 2018-01-18 02:51:39Z adamw $
 
 PORTNAME=	GeoIP
-PORTVERSION=	1.6.11
+PORTVERSION=	1.6.12
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net geography
 
@@ -20,6 +20,7 @@ USES=		autoreconf libtool pathfix
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
+TEST_TARGET=	check
 
 SUB_FILES=	geoipupdate.sh pkg-message
 PLIST_SUB+=	PORTVERSION="${PORTVERSION}"

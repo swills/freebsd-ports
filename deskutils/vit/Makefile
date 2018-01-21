@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/deskutils/vit/Makefile 443754 2017-06-17 10:02:03Z sunpoet $
+# $FreeBSD: head/deskutils/vit/Makefile 459496 2018-01-20 09:02:04Z amdmi3 $
 
 PORTNAME=	vit
 PORTVERSION=	1.2
@@ -10,7 +10,7 @@ MASTER_SITES=	http://taskwarrior.org/download/
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Curses-based interface to taskwarrior
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3+
 
 BUILD_DEPENDS=	p5-Curses>=0:devel/p5-Curses \
 		task:deskutils/taskwarrior
@@ -26,10 +26,6 @@ PLIST_FILES=	bin/vit \
 		etc/vit-commands \
 		man/man1/vit.1.gz \
 		man/man5/vitrc.5.gz
-
-post-patch:
-	${REINPLACE_CMD} -e '1774,1778d' \
-	    ${WRKSRC}/${CONFIGURE_SCRIPT}
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/vit ${STAGEDIR}${PREFIX}/bin

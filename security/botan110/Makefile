@@ -1,9 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/security/botan110/Makefile 450702 2017-09-26 23:37:19Z jbeich $
+# $FreeBSD: head/security/botan110/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	botan
 PORTVERSION=	1.10.13
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	security
 MASTER_SITES=	http://botan.randombit.net/releases/
 PKGNAMESUFFIX=	110

@@ -1,9 +1,9 @@
 # Created by: Alexander V. Ribchansky <triosoft@triosoft.com.ua>
-# $FreeBSD: head/multimedia/k9copy-kde4/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/k9copy-kde4/Makefile 459241 2018-01-17 11:40:31Z tcberner $
 
 PORTNAME=	k9copy
 PORTVERSION=	2.3.4
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	multimedia kde
 MASTER_SITES=	LOCAL/rakuco
 DISTNAME=	${PORTNAME}-${PORTVERSION}-Source
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libxine.so:multimedia/libxine \
 		libmpeg2.so:multimedia/libmpeg2 \
 		libavcodec0.so:multimedia/ffmpeg0
 
-USES=		cmake gettext kde:4
+USES=		cmake gettext kde:4 localbase
 USE_KDE=	kdelibs automoc4
 USE_QT4=	moc_build qmake_build rcc_build uic_build
 

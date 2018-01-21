@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/lander/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/games/lander/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	lander
 PORTVERSION=	0.6.6
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	games
 MASTER_SITES=	http://www.nickg.me.uk/files/ \
 		http://mirror.amdmi3.ru/distfiles/

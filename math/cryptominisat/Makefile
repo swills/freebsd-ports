@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/cryptominisat/Makefile 458786 2018-01-11 20:34:08Z adamw $
+# $FreeBSD: head/math/cryptominisat/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	cryptominisat
 PORTVERSION=	5.0.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	math
 
 MAINTAINER=	6yearold@gmail.com

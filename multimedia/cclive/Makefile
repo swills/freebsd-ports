@@ -1,9 +1,9 @@
 # Created by: Toni Gundogdu <legatvs@gmail.com>
-# $FreeBSD: head/multimedia/cclive/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/multimedia/cclive/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	cclive
 PORTVERSION=	0.7.16
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	multimedia net
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION:R}
 

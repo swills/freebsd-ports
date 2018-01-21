@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/kf5-kactivities/Makefile 454297 2017-11-16 05:59:35Z tcberner $
+# $FreeBSD: head/x11/kf5-kactivities/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	kactivities
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11 kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

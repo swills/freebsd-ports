@@ -1,5 +1,5 @@
 # Created by: KalleDK <plexmaintainer@k-moeller.dk>
-# $FreeBSD: head/multimedia/plexmediaserver-plexpass/Makefile 457600 2017-12-30 13:55:23Z feld $
+# $FreeBSD: head/multimedia/plexmediaserver-plexpass/Makefile 459290 2018-01-17 22:17:27Z feld $
 
 PORTVERSION=	1.11.0.4666
 DISTVERSIONSUFFIX=fc63598ba
@@ -13,11 +13,9 @@ USE_RC_SUBR=	${PORTNAME}_plexpass
 MASTERDIR=${.CURDIR}/../plexmediaserver
 
 DISTINFO_FILE=	${.CURDIR}/distinfo
-PLIST=	${.CURDIR}/pkg-plist
 FILESDIR=	${.CURDIR}/files
 DATADIR=	${PREFIX}/share/${PORTNAME}${PKGNAMESUFFIX}
 
 SUB_LIST=	PORTNAME=${PORTNAME}_plexpass DATADIR=${DATADIR} USERS=${USERS} GROUPS=${GROUPS}
-PLIST_SUB+=	PLEX_BUILD=${DISTVERSIONSUFFIX}
 
 .include "${MASTERDIR}/Makefile"

@@ -1,8 +1,8 @@
-# $FreeBSD: head/print/texlive-base/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/print/texlive-base/Makefile 459279 2018-01-17 18:49:27Z jrm $
 
 PORTNAME=	texlive
 PORTVERSION=	20150521
-PORTREVISION=	23
+PORTREVISION=	24
 CATEGORIES=	print
 MASTER_SITES=	TEX_CTAN/systems/texlive/Source/
 PKGNAMESUFFIX=	-base
@@ -103,6 +103,7 @@ SHEBANG_FILES=	texk/texlive/linked_scripts/accfonts/mkt1font \
 	texk/texlive/linked_scripts/mathspic/mathspic.pl \
 	texk/texlive/linked_scripts/mf2pt1/mf2pt1.pl \
 	texk/texlive/linked_scripts/multibibliography/multibibliography.pl \
+	texk/texlive/linked_scripts/pygmentex/*.py \
 	texk/texlive/linked_scripts/pythontex/*.py \
 	texk/texlive/linked_scripts/rubik/rubikrotation.pl \
 	texk/texlive/linked_scripts/splitindex/splitindex.pl \

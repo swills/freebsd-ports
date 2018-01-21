@@ -1,10 +1,10 @@
 # Created by: Chad J. Milios <milios@ccsys.com>
-# $FreeBSD: head/net-p2p/namecoin/Makefile 456058 2017-12-11 18:26:13Z sunpoet $
+# $FreeBSD: head/net-p2p/namecoin/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	namecoin
 PORTVERSION=	0.3.80
 DISTVERSIONPREFIX=	nc
-PORTREVISION=	14
+PORTREVISION=	15
 PORTEPOCH=	1
 CATEGORIES=	net-p2p dns
 
@@ -16,6 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libboost_date_time.so:devel/boost-libs
 
+BROKEN=		fails to build with boost 1.66, see bug 224186
 BROKEN_powerpc64=	fails to build: util.cpp: undefined reference to boost::program_options::to_internal
 
 OPTIONS_DEFINE=	X11 UPNP QRCODES DBUS

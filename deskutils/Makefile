@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 458346 2018-01-07 15:33:51Z sunpoet $
+# $FreeBSD: head/deskutils/Makefile 459530 2018-01-20 17:37:21Z novel $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -202,7 +202,6 @@
     SUBDIR += py-pycarddav
     SUBDIR += py-pystash
     SUBDIR += py-send2trash
-    SUBDIR += py-spice-gtk
     SUBDIR += py-taskw
     SUBDIR += py-vdirsyncer
     SUBDIR += py-vobject

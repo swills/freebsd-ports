@@ -1,12 +1,12 @@
 # Created by: Andy Pavlo
-# $FreeBSD: head/sysutils/condor/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/sysutils/condor/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 #
 # Note: Make sure there are no older versions of HTCondor installed during
 #       build.  The build system may pick up incompatible headers and libs.
 
 PORTNAME=	condor
 PORTVERSION=	8.4.9
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	sysutils net
 MASTER_SITES=	http://www.acadix.biz/Ports/distfiles/
 DISTNAME=	condor_src-${PORTVERSION}-all-all

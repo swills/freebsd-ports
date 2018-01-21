@@ -1,9 +1,9 @@
 # Created by: Michael L. Hostbaek (mich@freebsdcluster.org)
-# $FreeBSD: head/misc/translate/Makefile 459036 2018-01-15 11:54:37Z mich $
+# $FreeBSD: head/misc/translate/Makefile 459321 2018-01-18 10:06:54Z danfe $
 
 PORTNAME=	translate
 PORTVERSION=	1.20
-CATEGORIES=	misc
+CATEGORIES=	misc perl5
 MASTER_SITES=	http://www.freebsdcluster.org/~mich/software/
 
 MAINTAINER=	mich@FreeBSD.org

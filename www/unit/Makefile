@@ -1,8 +1,9 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/unit/Makefile 458171 2018-01-05 21:09:27Z osa $
+# $FreeBSD: head/www/unit/Makefile 459542 2018-01-20 19:36:17Z osa $
 
 PORTNAME=	unit
 PORTVERSION=	0.3
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	https://unit.nginx.org/download/
 
@@ -70,6 +71,10 @@ CONFIGURE_ARGS+=--control=unix:${UNIT_SOCK}
 
 .if !target(post-install)
 post-install:
+	${MKDIR} ${STAGEDIR}${UNIT_LOGDIR}
+	${MKDIR} ${STAGEDIR}${UNIT_RUNDIR}
+	${ECHO_CMD} @dir ${UNIT_LOGDIR} >> ${TMPPLIST}
+	${ECHO_CMD} @dir ${UNIT_RUNDIR} >> ${TMPPLIST}
 	${MKDIR} ${STAGEDIR}${PREFIX}/libexec/unit/modules
 .endif
 

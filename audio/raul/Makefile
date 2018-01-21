@@ -1,9 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/audio/raul/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/audio/raul/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	raul
 PORTVERSION=	0.8.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	audio
 MASTER_SITES=	http://download.drobilla.net/
 

@@ -1,10 +1,10 @@
 # Created by: Carlos J Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/net/grive2/Makefile 459168 2018-01-16 13:29:46Z cpm $
+# $FreeBSD: head/net/grive2/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	grive2
 PORTVERSION=	0.5.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net
 
 MAINTAINER=	cpm@FreeBSD.org

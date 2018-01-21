@@ -1,8 +1,8 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/comms/flrig/Makefile 458153 2018-01-05 16:56:20Z db $
+# $FreeBSD: head/comms/flrig/Makefile 459272 2018-01-17 16:59:55Z db $
 
 PORTNAME=	flrig
-PORTVERSION=	1.3.37
+PORTVERSION=	1.3.38
 CATEGORIES=	comms hamradio
 MASTER_SITES=	SF/fldigi/${PORTNAME}
 

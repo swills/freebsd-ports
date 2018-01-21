@@ -1,5 +1,5 @@
 # Created by: Anthony Kim
-# $FreeBSD: head/mail/spamassassin/Makefile 451792 2017-10-11 19:56:07Z zeising $
+# $FreeBSD: head/mail/spamassassin/Makefile 459451 2018-01-19 17:04:52Z mat $
 
 PORTNAME=	spamassassin
 PORTVERSION=	3.4.1
@@ -61,7 +61,7 @@ AS_ROOT_DESC=		Run spamd as root (recommended)
 
 DATABASE_DESC=		Optional user-config/bayes database backends
 
-GPG_DESC=		GnuPG (for sa-update, optional)
+GPG_DESC=		GnuPG (for sa-update)
 GNUPG_NONE_DESC=	Do not use GnuPG
 GNUPG_DESC=		GnuPG 1 (security/gnupg1)
 GNUPG2_DESC=		GnuPG 2 (security/gnupg)

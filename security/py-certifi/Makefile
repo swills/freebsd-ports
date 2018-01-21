@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau <duchateau.olivier@gmail.com>
-# $FreeBSD: head/security/py-certifi/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-certifi/Makefile 459443 2018-01-19 17:02:37Z sunpoet $
 
 PORTNAME=	certifi
-PORTVERSION=	2017.11.5
+PORTVERSION=	2018.1.18
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

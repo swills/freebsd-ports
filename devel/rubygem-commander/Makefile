@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-commander/Makefile 430008 2016-12-30 17:05:27Z swills $
+# $FreeBSD: head/devel/rubygem-commander/Makefile 459505 2018-01-20 10:02:46Z sunpoet $
 
 PORTNAME=	commander
-PORTVERSION=	4.4.3
+PORTVERSION=	4.4.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

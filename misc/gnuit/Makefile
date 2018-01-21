@@ -1,14 +1,17 @@
 # Created by: torstenb@FreeBSD.org
-# $FreeBSD: head/misc/gnuit/Makefile 455914 2017-12-10 21:44:24Z gerald $
+# $FreeBSD: head/misc/gnuit/Makefile 459574 2018-01-21 08:43:04Z gerald $
 
 PORTNAME=	gnuit
 PORTVERSION=	4.9.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	GNU
 
 MAINTAINER=	gerald@FreeBSD.org
 COMMENT=	GNU Interactive Tools - a file system browser for UNIX systems
+
+LICENSE=	GPLv3+ GFDL
+LICENSE_COMB=	multi
 
 USES=		ncurses
 GNU_CONFIGURE=	YES

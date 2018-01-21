@@ -1,9 +1,10 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/nghttp2/Makefile 456804 2017-12-20 14:37:18Z sunpoet $
+# $FreeBSD: head/www/nghttp2/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	nghttp2
 PORTVERSION=	1.29.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	www net
 
 MAINTAINER=	sunpoet@FreeBSD.org

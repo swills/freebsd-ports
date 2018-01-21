@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Import-Base/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Import-Base/Makefile 459250 2018-01-17 13:43:55Z sunpoet $
 
 PORTNAME=	Import-Base
-PORTVERSION=	1.003
+PORTVERSION=	1.004
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:PREACTION

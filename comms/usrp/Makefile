@@ -1,14 +1,16 @@
-# $FreeBSD: head/comms/usrp/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/comms/usrp/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	usrp
 PORTVERSION=	3.4.3
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	comms hamradio
 MASTER_SITES=	LOCAL/adrian
 DISTNAME=	Ettus-USRP-3.4.3
 
 MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Ettus Research USRP driver framework
+
+BROKEN=		fails to build with boost 1.66, see bug 224088
 
 LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/tuple/tuple.hpp:devel/boost-libs \

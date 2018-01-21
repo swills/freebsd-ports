@@ -1,14 +1,10 @@
 # Created by: Doug Barton <dougb@FreeBSD.org>
-# $FreeBSD: head/net-p2p/libtorrent-rasterbar/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/net-p2p/libtorrent-rasterbar/Makefile 459367 2018-01-18 18:27:26Z jbeich $
 
 PORTNAME=	libtorrent-rasterbar
-PORTVERSION=	1.1.4
-PORTREVISION=	3
+PORTVERSION=	1.1.6
 CATEGORIES?=	net-p2p ipv6
 MASTER_SITES=	https://github.com/arvidn/libtorrent/releases/download/libtorrent-${PORTVERSION:S/./_/g}/
-
-PATCH_SITES=	https://github.com/arvidn/libtorrent/commit/
-PATCHFILES=	7eb3cf6bc6db.patch:-p1
 
 MAINTAINER=	rezny@FreeBSD.org
 COMMENT?=	C++ library implementing a BitTorrent client
@@ -44,6 +40,7 @@ PORTDOCS=	${DOCFILES} docs/*
 PORTEXAMPLES=	*.cpp
 
 OPTIONS_DEFINE=	DEBUG DOCS EXAMPLES LOGGING TEST
+OPTIONS_DEFAULT=LOGGING
 OPTIONS_SUB=	yes
 LOGGING_DESC=	Enable disk stat logging and logging to disk
 
