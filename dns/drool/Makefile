@@ -1,8 +1,9 @@
 # Created by: Jaap Akkerhuis <jaap@NLnetLabs.nl>
-# $FreeBSD: head/dns/drool/Makefile 457973 2018-01-03 16:38:41Z swills $
+# $FreeBSD: head/dns/drool/Makefile 459285 2018-01-17 20:07:46Z tobik $
 
 PORTNAME=	drool
 DISTVERSION=	1.0.1
+DISTVERSION=	1.0.2
 CATEGORIES=	dns
 MASTER_SITES=	https://www.dns-oarc.net/files/drool/
 

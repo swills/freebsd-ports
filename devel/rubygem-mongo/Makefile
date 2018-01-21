@@ -1,8 +1,8 @@
 # Created by: Evan Sarmiento <bsdports@wayfair.com>
-# $FreeBSD: head/devel/rubygem-mongo/Makefile 446609 2017-07-25 16:22:32Z sunpoet $
+# $FreeBSD: head/devel/rubygem-mongo/Makefile 459345 2018-01-18 14:43:46Z sunpoet $
 
 PORTNAME=	mongo
-PORTVERSION=	2.4.3
+PORTVERSION=	2.5.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,7 +12,7 @@ COMMENT=	Ruby driver for MongoDB
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	rubygem-bson>=${PORTVERSION}:devel/rubygem-bson
+RUN_DEPENDS=	rubygem-bson>=4.3.0:devel/rubygem-bson
 
 NO_ARCH=	yes
 USE_RUBY=	yes

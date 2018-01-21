@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-enum-compat/Makefile 435682 2017-03-08 12:48:28Z mmokhi $
+# $FreeBSD: head/devel/py-enum-compat/Makefile 459513 2018-01-20 12:37:59Z sunpoet $
 
 PORTNAME=	enum-compat
 PORTVERSION=	0.0.2
@@ -11,7 +11,7 @@ COMMENT=	Python 3.4 Enum dummy no-op package
 
 LICENSE=	MIT
 
-USES=		python:2.7-3.3
+USES=		python:-3.3
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

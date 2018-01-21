@@ -1,9 +1,8 @@
 # Created by: Hye-Shik Chang <perky@FreeBSD.org>
-# $FreeBSD: head/devel/py-urwid/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-urwid/Makefile 459338 2018-01-18 14:43:08Z sunpoet $
 
 PORTNAME=	urwid
-PORTVERSION=	1.3.1
-PORTREVISION=	1
+PORTVERSION=	2.0.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

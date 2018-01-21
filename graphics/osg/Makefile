@@ -1,5 +1,5 @@
 # Created by: Randall Hopper <aa8vb@nc.rr.com>
-# $FreeBSD: head/graphics/osg/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/graphics/osg/Makefile 459451 2018-01-19 17:04:52Z mat $
 
 PORTNAME=	osg
 PORTVERSION=	3.4.0
@@ -46,7 +46,7 @@ GTA_DESC=	GTA file format support
 INVENTOR_DESC=	SGI OpenInventor support
 LIBLAS_DESC=	liblas support
 NVTT_DESC=	Use NVidia texture tools
-QT_DESC=	QT toolkit support (optional)
+QT_DESC=	QT toolkit support
 SDL_DESC=	Use SDL (joystick support in present3d)
 VNC_DESC=	LibVNCServer support
 

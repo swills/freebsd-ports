@@ -1,8 +1,8 @@
 # Created by: Eric Anholt
-# $FreeBSD: head/devel/git/Makefile 455883 2017-12-10 09:00:26Z amdmi3 $
+# $FreeBSD: head/devel/git/Makefile 459462 2018-01-19 19:22:32Z garga $
 
 PORTNAME=	git
-DISTVERSION=	2.15.1
+DISTVERSION=	2.16.0
 CATEGORIES=	devel
 MASTER_SITES=	KERNEL_ORG/software/scm/git
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
@@ -44,7 +44,8 @@ SHEBANG_FILES=	*.perl */*.perl */*/*.perl */*.pl */*/*.pl */*/*/*.pl \
 		contrib/remote-helpers/git-remote-hg \
 		contrib/credential/netrc/git-credential-netrc \
 		contrib/buildsystems/generate contrib/contacts/git-contacts \
-		contrib/svn-fe/svnrdump_sim.py
+		contrib/svn-fe/svnrdump_sim.py \
+		templates/hooks--fsmonitor-watchman.sample
 TEST_TARGET=	test
 
 CONFIGURE_ARGS=	--enable-pthreads=-pthread ac_cv_header_libcharset_h=no

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/opentyrian/Makefile 427946 2016-12-06 11:06:42Z amdmi3 $
+# $FreeBSD: head/games/opentyrian/Makefile 459454 2018-01-19 18:28:33Z amdmi3 $
 
 PORTNAME=	opentyrian
 PORTVERSION=	2.1.20130907
@@ -22,6 +22,8 @@ MAKE_ENV=	ALL_CFLAGS="${CFLAGS}"
 USE_SDL=	sdl
 SUB_FILES=	pkg-message
 DATADIR=	${PREFIX}/share/tyrian
+
+PORTSCOUT=	ignore:11402-phase-0.8
 
 PORTDOCS=	CREDITS NEWS README
 

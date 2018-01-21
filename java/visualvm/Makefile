@@ -1,12 +1,11 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/java/visualvm/Makefile 426108 2016-11-14 14:54:13Z swills $
+# $FreeBSD: head/java/visualvm/Makefile 459554 2018-01-20 21:32:07Z swills $
 
 PORTNAME=	visualvm
-PORTVERSION=	1.3.9
-PORTREVISION=	1
+PORTVERSION=	1.4
 CATEGORIES=	java devel
 MASTER_SITES=	https://github.com/visualvm/visualvm.src/releases/download/${PORTVERSION}/
-DISTNAME=	visualvm_${PORTVERSION:S/.//g}-ml
+DISTNAME=	visualvm_${PORTVERSION:S/.//g}
 
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	GUI tool combining CLI JDK tools and profiling capabilities
@@ -19,7 +18,7 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 USES=		zip:infozip
 NO_BUILD=	yes
 USE_JAVA=	yes
-JAVA_VERSION=	1.7+
+JAVA_VERSION=	1.8+
 WRKSRC=		${WRKDIR}/visualvm_${PORTVERSION:S/.//g}
 SUB_FILES=	visualvm.desktop
 

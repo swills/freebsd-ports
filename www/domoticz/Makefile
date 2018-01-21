@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/domoticz/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/www/domoticz/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	domoticz
 PORTVERSION=	3.${DOMOTICZ_REL}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www
 
 MAINTAINER=	kiwi@oav.net
@@ -10,6 +10,8 @@ COMMENT=	Home Automation System
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/License.txt
+
+BROKEN=		fails to build with boost 1.66, see bug 224181
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libexpat.so:textproc/expat2

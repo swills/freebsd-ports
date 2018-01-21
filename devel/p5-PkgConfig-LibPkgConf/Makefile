@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-PkgConfig-LibPkgConf/Makefile 457448 2017-12-28 13:41:23Z sunpoet $
+# $FreeBSD: head/devel/p5-PkgConfig-LibPkgConf/Makefile 459403 2018-01-19 10:00:43Z bapt $
 
 PORTNAME=	PkgConfig-LibPkgConf
-PORTVERSION=	0.07
+PORTVERSION=	0.08
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:PLICEASE
@@ -15,7 +15,7 @@ LICENSE=	ART10 GPLv1
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	pkgconf>=1.3.0:devel/pkgconf
+BUILD_DEPENDS=	pkgconf>=1.3.90:devel/pkgconf
 LIB_DEPENDS=	libpkgconf.so:devel/pkgconf
 
 CFLAGS+=	-I${LOCALBASE}/include/pkgconf

@@ -1,8 +1,8 @@
-# $FreeBSD: head/lang/sdcc-devel/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/lang/sdcc-devel/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	sdcc
 PORTVERSION=	3.6.1.2016.07.08
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	lang
 MASTER_SITES=	SF/sdcc/snapshot_builds/sdcc-src/ \
 		http://tijl.fastmail.com/mirror/

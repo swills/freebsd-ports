@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/mitsuba/Makefile 457914 2018-01-02 16:49:24Z tcberner $
+# $FreeBSD: head/graphics/mitsuba/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	mitsuba
 PORTVERSION=	0.5.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	graphics
 MASTER_SITES=	https://www.mitsuba-renderer.org/repos/mitsuba/archive/${HG_REVISION}${EXTRACT_SUFX}?dummy=
 DISTNAME=	${PORTNAME}-${HG_REVISION}

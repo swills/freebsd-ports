@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/qt5-network/Makefile 458293 2018-01-06 21:30:31Z rakuco $
+# $FreeBSD: head/net/qt5-network/Makefile 459510 2018-01-20 11:56:14Z woodsb02 $
 
 PORTNAME=	network
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	net ipv6
 PKGNAMEPREFIX=	qt5-
 

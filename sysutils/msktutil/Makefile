@@ -1,8 +1,9 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/sysutils/msktutil/Makefile 447034 2017-08-01 17:07:58Z zi $
+# $FreeBSD: head/sysutils/msktutil/Makefile 459280 2018-01-17 18:52:58Z zi $
 
 PORTNAME=	msktutil
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/${PORTNAME} \
 		ZI
@@ -18,7 +19,7 @@ USE_OPENLDAP=	yes
 GNU_CONFIGURE=	yes
 WANT_OPENLDAP_SASL=	yes
 
-CONFIGURE_ARGS+=--with-sasldir=${LOCALBASE}
+CONFIGURE_ARGS+=--with-sasldir=${LOCALBASE} --with-ldapdir=${LOCALBASE}
 
 OPTIONS_SINGLE=	GSSAPI
 OPTIONS_SINGLE_GSSAPI=	GSSAPI_BASE GSSAPI_HEIMDAL GSSAPI_MIT
@@ -28,6 +29,11 @@ OPTIONS_DEFAULT=GSSAPI_BASE
 GSSAPI_BASE_USES=	gssapi
 GSSAPI_HEIMDAL_USES=	gssapi:heimdal
 GSSAPI_MIT_USES=	gssapi:mit
+
+GSSAPI_BASE_CONFIGURE_ON=	--with-krb5=heimdal
+GSSAPI_HEIMDAL_CONFIGURE_ON=	--with-krb5=heimdal
+GSSAPI_MIT_CONFIGURE_ON=	--with-krb5=mit
+CONFIGURE_ARGS+=		--with-krb5-config=${KRB5CONFIG}
 
 PLIST_FILES=	man/man1/msktutil.1.gz sbin/msktutil
 

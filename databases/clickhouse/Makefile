@@ -1,12 +1,12 @@
 # Created by: proler@gmail.com
-# $FreeBSD: head/databases/clickhouse/Makefile 455378 2017-12-02 15:21:29Z lev $
+# $FreeBSD: head/databases/clickhouse/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	clickhouse
 PORTVERSION=	1.1.54318
 DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	-stable
 #DISTVERSIONSUFFIX=	-testing
-#PORTREVISION=	1
+PORTREVISION=	1
 CATEGORIES=	databases
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

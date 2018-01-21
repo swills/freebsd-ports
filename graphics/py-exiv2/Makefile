@@ -1,9 +1,9 @@
 # Created by: Denis Barov <dindin@dindin.ru>
-# $FreeBSD: head/graphics/py-exiv2/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/py-exiv2/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	exiv2
 PORTVERSION=	0.3.2
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	graphics python
 MASTER_SITES=	https://launchpadlibrarian.net/83595798/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

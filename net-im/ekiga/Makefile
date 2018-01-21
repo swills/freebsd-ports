@@ -1,10 +1,10 @@
 # Created by: Charlie & <root@ws.ipfw.ru>
-# $FreeBSD: head/net-im/ekiga/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/net-im/ekiga/Makefile 459451 2018-01-19 17:04:52Z mat $
 #    $MCom: ports/trunk/net-im/ekiga/Makefile 19954 2014-10-15 10:03:57Z kwm $
 
 PORTNAME=	ekiga
 PORTVERSION=	4.0.1
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	net-im
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -39,10 +39,12 @@ GNOMEHELP_DESC=	Build Ekiga help files
 #OPTIONS_GROUP_EXP=	KDE KAB GSTREAMER XCAP LOUDMOUTH
 EXP_DESC=	Experimental features
 KDE_DESC=	KDE 4 support
-KAB_DESC=	KAddressBook support (implies KDE option)
+KAB_DESC=	KAddressBook support
 GSTREAMER_DESC=	Gstreamer support
 XCAP_DESC=	Remote contact storage via HTTP in xml format
 LOUDMOUTH_DESC=	XMPP (jabber) support
+
+KAB_IMPLIES=	KDE
 
 # Note that h.323 support is enabled when opal is build with it.
 

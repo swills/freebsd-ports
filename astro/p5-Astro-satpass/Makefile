@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/astro/p5-Astro-satpass/Makefile 457735 2017-12-31 22:23:24Z sunpoet $
+# $FreeBSD: head/astro/p5-Astro-satpass/Makefile 459248 2018-01-17 13:43:45Z sunpoet $
 
 PORTNAME=	Astro-satpass
-PORTVERSION=	0.087
+PORTVERSION=	0.088
 CATEGORIES=	astro perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

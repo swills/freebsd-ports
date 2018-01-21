@@ -1,9 +1,10 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/net-mgmt/netdata/Makefile 456741 2017-12-19 17:18:51Z mmokhi $
+# $FreeBSD: head/net-mgmt/netdata/Makefile 459323 2018-01-18 12:25:10Z mmokhi $
 
 PORTNAME=	netdata
 PORTVERSION=	1.9.0
 DISTVERSIONPREFIX=v
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	mmokhi@FreeBSD.org
@@ -13,6 +14,8 @@ LICENSE=	GPLv3
 
 BUILD_DEPENDS=	${LOCALBASE}/include/uuid/uuid.h:misc/e2fsprogs-libuuid
 LIB_DEPENDS=	libuuid.so:misc/e2fsprogs-libuuid
+RUN_DEPENDS=	bash:shells/bash \
+		curl:ftp/curl
 
 USES=		autoreconf pathfix pkgconfig:both python shebangfix
 

@@ -1,9 +1,9 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/math/stp/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/math/stp/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	stp
 PORTVERSION=	1436
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	math
 MASTER_SITES=	http://intara.arrowdodger.ru/
 

@@ -1,8 +1,8 @@
 # Created by: Michal Hanula <michal@hanu.la>
-# $FreeBSD: head/net-mgmt/alertmanager/Makefile 457190 2017-12-24 18:46:53Z swills $
+# $FreeBSD: head/net-mgmt/alertmanager/Makefile 459303 2018-01-18 00:37:20Z dbaio $
 
 PORTNAME=	alertmanager
-PORTVERSION=	0.12.0
+PORTVERSION=	0.13.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-mgmt
 

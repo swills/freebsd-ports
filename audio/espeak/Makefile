@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@email.it>
-# $FreeBSD: head/audio/espeak/Makefile 458752 2018-01-11 16:16:16Z danfe $
+# $FreeBSD: head/audio/espeak/Makefile 459230 2018-01-17 09:21:28Z tcberner $
 
 PORTNAME=	espeak
 PORTVERSION=	1.48.04
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION:R}
 DISTNAME=	${PORTNAME}-${PORTVERSION}-source
@@ -17,6 +17,7 @@ CONFLICTS=	speak-1.[0-9]
 
 USES=		gmake zip
 USE_LDCONFIG=	yes
+USE_CXXSTD=	gnu++98
 CXXFLAGS+=	-I${LOCALBASE}/include
 
 BUILD_WRKSRC=	${WRKSRC}/src

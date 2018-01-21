@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kf5-plasma-framework/Makefile 454297 2017-11-16 05:59:35Z tcberner $
+# $FreeBSD: head/x11/kf5-plasma-framework/Makefile 459233 2018-01-17 10:21:32Z tcberner $
 
 PORTNAME=	plasma-framework
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -11,7 +11,7 @@ USES=		cmake:outsource compiler:c++11-lib gettext kde:5 pkgconfig tar:xz
 USE_GL=		egl gl
 USE_KDE=	activities archive auth codecs completion config \
 		configwidgets coreaddons dbusaddons doctools globalaccel \
-		guiaddons i18n iconthemes jobwidgets kio package \
+		guiaddons i18n iconthemes jobwidgets kirigami2 kio package \
 		notifications service wayland windowsystem xmlgui kdeclarative \
 		widgetsaddons
 USE_QT5=	buildtools_build core dbus gui network qmake_build qml \

@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/allacrost/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/games/allacrost/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	allacrost
 PORTVERSION=	1.0.2
-PORTREVISION=	20
+PORTREVISION=	21
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-demo/${PORTVERSION}
 DISTNAME=	${PORTNAME}_demo_source_${PORTVERSION}

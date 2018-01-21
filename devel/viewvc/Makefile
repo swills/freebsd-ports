@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/devel/viewvc/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/viewvc/Makefile 459451 2018-01-19 17:04:52Z mat $
 
 PORTNAME=	viewvc
 DISTVERSION=	1.1.26
@@ -21,7 +21,7 @@ OPTIONS_SINGLE_WEBSRV=	APACHE LIGHTTPD
 OPTIONS_SINGLE_APMOD=	MODPYTHON33 MODPYTHON35 MODWSGI
 
 WEBSRV_DESC=		Enable web server support
-APMOD_DESC=		depend on optional Apache module
+APMOD_DESC=		depend on Apache module
 
 MODWSGI_DESC=		Add mod_wsgi to the list of package dependencies
 MODPYTHON33_DESC=	Add mod_python33 to the list of package dependencies

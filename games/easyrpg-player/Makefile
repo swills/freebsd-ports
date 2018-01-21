@@ -1,8 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/easyrpg-player/Makefile 453237 2017-10-31 14:44:23Z amdmi3 $
+# $FreeBSD: head/games/easyrpg-player/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	easyrpg-player
 PORTVERSION=	0.5.3
+PORTREVISION=	1
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org

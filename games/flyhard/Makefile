@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/flyhard/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/games/flyhard/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	flyhard
 PORTVERSION=	0.42
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	games
 MASTER_SITES=	http://www.markboyd.me.uk/games/flyhard/ \
 		http://mirror.amdmi3.ru/distfiles/

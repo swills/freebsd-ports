@@ -1,4 +1,5 @@
-# $FreeBSD: head/multimedia/sabbu/Makefile 428150 2016-12-08 19:23:24Z tijl $
+#	$FreeBSD: head/ports-mgmt/pkg_jail/files/pkg_update 411390 2016-03-19 11:00:57Z dinoex 2
+# $FreeBSD: head/multimedia/sabbu/Makefile 459319 2018-01-18 09:48:48Z dinoex $
 
 PORTNAME=	sabbu
 PORTVERSION=	0.3.0
@@ -13,6 +14,8 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libavcodec0.so:multimedia/ffmpeg0 \
 		libsndfile.so:audio/libsndfile
+
+BROKEN_FreeBSD_12=	Regression C++
 
 USES=		tar:bzip2 gmake pkgconfig iconv
 GNU_CONFIGURE=	yes

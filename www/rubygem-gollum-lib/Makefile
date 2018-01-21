@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/rubygem-gollum-lib/Makefile 452120 2017-10-15 00:38:34Z sunpoet $
+# $FreeBSD: head/www/rubygem-gollum-lib/Makefile 459284 2018-01-17 19:29:50Z swills $
 
 PORTNAME=	gollum-lib
 PORTVERSION=	4.2.7
@@ -16,6 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	rubygem-gemojione>=3.2:graphics/rubygem-gemojione \
 		rubygem-gollum-grit_adapter>=1.0:www/rubygem-gollum-grit_adapter \
 		rubygem-nokogiri>=1.6.1:textproc/rubygem-nokogiri \
+		rubygem-rouge2>=2.1:textproc/rubygem-rouge2 \
 		rubygem-sanitize>=2.1:textproc/rubygem-sanitize \
 		rubygem-stringex>=2.6:devel/rubygem-stringex
 
@@ -27,10 +28,8 @@ MARKUP_DESC=	Markup Selection
 GITHUB_DESC=	Use rubygem-github-markup (default)
 GITLAB_DESC=	Use rubygem-gitlab-markup instead
 
-GITHUB_RUN_DEPENDS=	rubygem-github-markup>=1.6:textproc/rubygem-github-markup \
-			rubygem-rouge>=2.1:textproc/rubygem-rouge
-GITLAB_RUN_DEPENDS=	rubygem-gitlab-markup>=1.5:textproc/rubygem-gitlab-markup \
-			rubygem-rouge2>=2.1:textproc/rubygem-rouge2
+GITHUB_RUN_DEPENDS=	rubygem-github-markup>=1.6:textproc/rubygem-github-markup
+GITLAB_RUN_DEPENDS=	rubygem-gitlab-markup>=1.5:textproc/rubygem-gitlab-markup
 
 NO_ARCH=	yes
 USES=		gem

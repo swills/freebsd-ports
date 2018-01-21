@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/springlobby/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/games/springlobby/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	springlobby
 PORTVERSION=	0.180
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	games net
 MASTER_SITES=	http://www.springlobby.info/tarballs/ \
 		http://mirror.amdmi3.ru/distfiles/

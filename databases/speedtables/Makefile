@@ -1,10 +1,10 @@
 # Created by: gahr
-# $FreeBSD: head/databases/speedtables/Makefile 451182 2017-10-04 07:50:17Z gahr $
+# $FreeBSD: head/databases/speedtables/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	speedtables
-PORTVERSION=	1.13.8
-DISTVERSIONPREFIX=	v
-PORTREVISION=	0
+PORTVERSION=	1.13.9
+#DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	databases
 
 MAINTAINER=	gahr@FreeBSD.org
@@ -30,7 +30,8 @@ PORTDOCS=	*
 OPTIONS_DEFINE=	DOCS PGSQL CASSANDRA
 CASSANDRA_DESC=		Cassandra database support
 PGSQL_CONFIGURE_ON=	--with-pgsql=${LOCALBASE}
-PGSQL_LIB_DEPENDS=	libpgtcl2.0.0.so:databases/postgresql94-pgtcl
+PGSQL_USES=		pgsql
+PGSQL_VARS=		WANT_PGSQL=pgtcl
 CASSANDRA_CONFIGURE_ON=	--with-casstcl=${LOCALBASE}
 CASSANDRA_LIB_DEPENDS=	libcasstcl.so:databases/casstcl
 

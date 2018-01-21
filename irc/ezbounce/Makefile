@@ -1,9 +1,9 @@
 # Created by: Chris Piazza <cpiazza@FreeBSD.org>
-# $FreeBSD: head/irc/ezbounce/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/irc/ezbounce/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	ezbounce
 PORTVERSION=	1.99.15
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	irc
 MASTER_SITES=	http://BSDforge.com/projects/source/irc/ezbounce/
 

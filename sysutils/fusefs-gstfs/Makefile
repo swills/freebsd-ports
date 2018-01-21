@@ -1,5 +1,5 @@
 # Created by: Dennis Herrmann <adox@mcx2.org>
-# $FreeBSD: head/sysutils/fusefs-gstfs/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/sysutils/fusefs-gstfs/Makefile 459228 2018-01-17 09:02:02Z amdmi3 $
 
 PORTNAME=	gstfs
 PORTVERSION=	0.1
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	fusefs-
 
 MAINTAINER=	rodrigo@FreeBSD.org
 COMMENT=	On-demand, transcoding filesystem (using GStreamer pipeline)
+
+LICENSE=	LGPL3
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
@@ -27,9 +30,13 @@ post-patch:
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
+
+do-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
-	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
+
+do-install-EXAMPLES-on:
+	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${PORTEXAMPLES:S,^,${WRKSRC}/,} ${STAGEDIR}${EXAMPLESDIR}
 
 .include <bsd.port.mk>

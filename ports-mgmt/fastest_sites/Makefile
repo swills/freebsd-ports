@@ -1,8 +1,8 @@
-# $FreeBSD: head/ports-mgmt/fastest_sites/Makefile 421611 2016-09-09 12:02:45Z amdmi3 $
+# $FreeBSD: head/ports-mgmt/fastest_sites/Makefile 459259 2018-01-17 14:29:16Z tobik $
 
 PORTNAME=	fastest_sites
 PORTVERSION=	20110317
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	ports-mgmt
 MASTER_SITES=	http://www.semicomplete.com/files/fastest_sites/
 EXTRACT_SUFX=	.py

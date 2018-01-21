@@ -1,9 +1,9 @@
 # Created by: Charles Swiger <chuck@pkix.net>
-# $FreeBSD: head/sysutils/dvd+rw-tools/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/dvd+rw-tools/Makefile 459238 2018-01-17 11:05:25Z tcberner $
 
 PORTNAME=	dvd+rw-tools
 PORTVERSION=	7.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.pkix.net/mirror/fy.chalmers.se/ \
 		http://fy.chalmers.se/~appro/linux/DVD+RW/tools/

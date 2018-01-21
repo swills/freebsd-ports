@@ -1,9 +1,8 @@
 # Created by: erich@rrnet.com
-# $FreeBSD: head/security/sudo/Makefile 454126 2017-11-13 16:58:14Z brd $
+# $FreeBSD: head/security/sudo/Makefile 459262 2018-01-17 15:07:51Z garga $
 
 PORTNAME=	sudo
-PORTVERSION=	1.8.21p2
-PORTREVISION=	1
+PORTVERSION=	1.8.22
 CATEGORIES=	security
 MASTER_SITES=	SUDO
 
@@ -29,7 +28,7 @@ CONFIGURE_ARGS=	--sysconfdir=${PREFIX}/etc \
 		--with-long-otp-prompt
 
 OPTIONS_DEFINE=	LDAP INSULTS DISABLE_ROOT_SUDO DISABLE_AUTH NOARGS_SHELL \
-		AUDIT OPIE NLS SSSD DOCS
+		AUDIT OPIE NLS SSSD DOCS EXAMPLES
 OPTIONS_DEFAULT=	AUDIT
 OPTIONS_SUB=	yes
 

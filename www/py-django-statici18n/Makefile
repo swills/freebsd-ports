@@ -1,8 +1,8 @@
 # Created by: Ultima
-# $FreeBSD: head/www/py-django-statici18n/Makefile 456073 2017-12-12 02:07:21Z ultima $
+# $FreeBSD: head/www/py-django-statici18n/Makefile 459578 2018-01-21 09:00:36Z sunpoet $
 
 PORTNAME=	django-statici18n
-PORTVERSION=	1.5.0
+PORTVERSION=	1.6.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}django-appconf>=0.6:www/py-django-appconf@${FLAVOR}
 
-USES=		python:2.7-3.5
+USES=		python
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

@@ -1,8 +1,8 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/devel/py-codecov/Makefile 458529 2018-01-09 14:06:04Z cpm $
+# $FreeBSD: head/devel/py-codecov/Makefile 459456 2018-01-19 18:36:15Z cpm $
 
 PORTNAME=	codecov
-PORTVERSION=	2.0.13
+PORTVERSION=	2.0.14
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

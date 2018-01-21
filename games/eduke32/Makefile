@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/games/eduke32/Makefile 456723 2017-12-19 15:17:07Z linimon $
+# $FreeBSD: head/games/eduke32/Makefile 459398 2018-01-19 06:36:37Z danfe $
 
 PORTNAME=	eduke32
 PORTVERSION=	20170614
@@ -29,7 +29,6 @@ LIB_DEPENDS=	libFLAC.so:audio/flac \
 		libpng.so:graphics/png
 
 BROKEN_aarch64=		fails to compile: polymost.cpp:2403:18: non-constant-expression cannot be narrowed from type 'long' to 'int32_t' (aka 'int') in initializer list
-BROKEN_sparc64=		fails to compile
 
 USES=		gmake pkgconfig tar:xz
 USE_GL=		gl glu
@@ -48,6 +47,8 @@ PORTEXAMPLES=	*
 OPTIONS_DEFINE=		EXAMPLES GCC HRP OFFENSIVE SHAREWARE VOXEL
 OPTIONS_DEFINE_i386=	ASM
 OPTIONS_DEFAULT_i386=	ASM
+OPTIONS_DEFAULT_powerpc=	GCC
+OPTIONS_DEFAULT_sparc64=	GCC
 
 ASM_BUILD_DEPENDS=	nasm:devel/nasm
 ASM_MAKE_ARGS_OFF=	NOASM=1

@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/frodo/Makefile 453337 2017-11-02 06:07:06Z dinoex $
+# $FreeBSD: head/emulators/frodo/Makefile 459319 2018-01-18 09:48:48Z dinoex $
 
 PORTNAME=	frodo
 PORTVERSION=	4.1b
@@ -9,6 +9,8 @@ DISTNAME=	FrodoV4_1b.Src
 
 MAINTAINER=	dinoex@FreeBSD.org
 COMMENT=	Emulates a Commodore 64
+
+BROKEN_FreeBSD_12=	Regression C++
 
 USES=		shebangfix tk:run
 USE_XORG=	x11 xt xext sm ice

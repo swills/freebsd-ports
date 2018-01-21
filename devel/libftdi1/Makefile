@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/libftdi1/Makefile 459183 2018-01-16 15:22:46Z bsam $
+# $FreeBSD: head/devel/libftdi1/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	libftdi1
 PORTVERSION=	1.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	http://www.intra2net.com/en/developer/libftdi/download/
 

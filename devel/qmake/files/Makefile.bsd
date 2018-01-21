@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qmake/files/Makefile.bsd 368943 2014-09-22 14:29:47Z bapt $
+# $FreeBSD: head/devel/qmake/files/Makefile.bsd 459563 2018-01-21 02:07:42Z mi $
 
 _OBJS!=	${MAKE} -f Makefile.unix -V OBJS -V QOBJS
 # We'd like to avoid using qconfig.cpp, but can't -- see the comment
@@ -19,7 +19,7 @@ CXXFLAGS+=-I${.CURDIR:H}/src/$s
 CXXFLAGS+=-I${.CURDIR}/generators$g
 .endfor
 
-CXXFLAGS+=-I. -I"${FILESDIR}"
+CXXFLAGS+=-I. -I"${FILESDIR}" -Dregister=
 
 CXXFLAGS+=-DQT_NO_TEXTCODEC -DQT_NO_UNICODETABLES -DQT_NO_COMPONENT \
 	-DQT_NO_STL -DQT_NO_COMPRESS -DQT_INSTALL_DATA="\"${SHAREDIR}\""

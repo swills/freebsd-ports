@@ -1,8 +1,8 @@
 # Created by: Evan Sarmiento <bsdports@wayfair.com>
-# $FreeBSD: head/devel/rubygem-bson/Makefile 445009 2017-07-04 08:08:45Z sunpoet $
+# $FreeBSD: head/devel/rubygem-bson/Makefile 459343 2018-01-18 14:43:35Z sunpoet $
 
 PORTNAME=	bson
-PORTVERSION=	4.2.2
+PORTVERSION=	4.3.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

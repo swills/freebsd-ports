@@ -1,8 +1,8 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-jira-ruby/Makefile 448830 2017-08-27 17:32:10Z sunpoet $
+# $FreeBSD: head/devel/rubygem-jira-ruby/Makefile 459507 2018-01-20 10:02:57Z sunpoet $
 
 PORTNAME=	jira-ruby
-PORTVERSION=	1.4.3
+PORTVERSION=	1.5.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

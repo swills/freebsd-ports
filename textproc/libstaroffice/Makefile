@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/libstaroffice/Makefile 453764 2017-11-08 20:18:36Z jkim $
+# $FreeBSD: head/textproc/libstaroffice/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	libstaroffice
 PORTVERSION=	0.0.5
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	LODEV
 MASTER_SITE_SUBDIR=	#

@@ -1,7 +1,7 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/emulators/mupen64plus-video-glide64mk2/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/emulators/mupen64plus-video-glide64mk2/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
-PORTREVISION=	10
+PORTREVISION=	11
 PKGNAMESUFFIX=	-video-glide64mk2
 
 COMMENT=	Glide64mk2 video plugin for Mupen64Plus

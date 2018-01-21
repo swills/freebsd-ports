@@ -1,10 +1,10 @@
-# $FreeBSD: head/audio/libcoverart/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/libcoverart/Makefile 459556 2018-01-20 23:06:41Z jhale $
 
 PORTNAME=	libcoverart
 PORTVERSION=	1.0.0
 PORTREVISION=	4
 CATEGORIES=	audio
-MASTER_SITES=	GHC
+MASTER_SITES=	https://github.com/metabrainz/${PORTNAME}/releases/download/release-${PORTVERSION}/
 
 MAINTAINER=	jhale@FreeBSD.org
 COMMENT=	Library for accessing the MusicBrainz cover art archive
@@ -16,11 +16,6 @@ LIB_DEPENDS=	libjansson.so:devel/jansson \
 
 USES=		cmake pathfix
 USE_LDCONFIG=	yes
-USE_GITHUB=	yes
-GH_ACCOUNT=	metabrainz
-
-# {PROJECT_VERSION} is not a variable nor a typo, just part of the directory name
-WRKSRC=		${WRKDIR}/${PORTNAME}-{PROJECT_VERSION}
 
 post-patch:
 	${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|g' \

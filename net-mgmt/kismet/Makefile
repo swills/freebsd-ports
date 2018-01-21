@@ -1,8 +1,9 @@
 # Created by: Thomas Spreng <spreng@socket.ch>
-# $FreeBSD: head/net-mgmt/kismet/Makefile 417965 2016-07-03 10:38:12Z pi $
+# $FreeBSD: head/net-mgmt/kismet/Makefile 459402 2018-01-19 09:38:40Z pi $
 
 PORTNAME=	kismet
 DISTVERSION=	2016-07-R1
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://www.kismetwireless.net/code/

@@ -1,9 +1,9 @@
 # Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/math/ufc/Makefile 456845 2017-12-20 19:34:11Z bapt $
+# $FreeBSD: head/math/ufc/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	ufc
 PORTVERSION=	${MMVERSION}.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	math python
 MASTER_SITES=	http://launchpad.net/${PORTNAME}/${MMVERSION}.x/${PORTVERSION}/+download/
 

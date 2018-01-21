@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/povray37/Makefile 458513 2018-01-09 07:40:55Z mat $
+# $FreeBSD: head/graphics/povray37/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	povray
 DISTVERSION=	3.7.0.RC6
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.povray.org/beta/source/
 PKGNAMESUFFIX=	37

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-exrm/Makefile 418693 2016-07-18 11:17:51Z olgeni $
+# $FreeBSD: head/devel/elixir-exrm/Makefile 459424 2018-01-19 14:48:12Z olgeni $
 
 PORTNAME=	exrm
 DISTVERSION=	1.0.8
@@ -9,6 +9,10 @@ MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Automatically generate releases for Elixir projects
 
 LICENSE=	MIT
+
+IGNORE=		does not build with Elixir 1.6
+DEPRECATED=	No longer maintained upstream
+EXPIRATION_DATE=2018-02-18
 
 USES=		elixir
 USE_GITHUB=	yes

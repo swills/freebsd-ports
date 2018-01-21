@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-conform_exrm/Makefile 409895 2016-03-01 19:29:40Z olgeni $
+# $FreeBSD: head/devel/elixir-conform_exrm/Makefile 459425 2018-01-19 14:49:01Z olgeni $
 
 PORTNAME=	conform_exrm
 PORTVERSION=	1.0.0
@@ -9,6 +9,10 @@ MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Conform plugin for ExRM
 
 LICENSE=	MIT
+
+IGNORE=		does not build with Elixir 1.6
+DEPRECATED=	No longer maintained upstream
+EXPIRATION_DATE=2018-02-18
 
 USES=		elixir
 USE_GITHUB=	yes

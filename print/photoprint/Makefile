@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/photoprint/Makefile 452960 2017-10-26 22:56:54Z bsam $
+# $FreeBSD: head/print/photoprint/Makefile 459261 2018-01-17 14:35:30Z bsam $
 
 PORTNAME=	photoprint
 DISTVERSION=	0.4.2-pre2
@@ -21,13 +21,12 @@ LIB_DEPENDS=	libcups.so:print/cups \
 		libtiff.so:graphics/tiff
 
 GNU_CONFIGURE=	yes
-USES=		desktop-file-utils gettext jpeg libtool pkgconfig
-USE_GNOME=     cairo gdkpixbuf2 gtk20
+USES=		desktop-file-utils gettext jpeg libtool localbase pkgconfig
+USE_GNOME=	cairo gdkpixbuf2 gtk20
 USE_XORG=	x11
+USE_CXXSTD=	gnu++98
+LIBS+=		-lX11
 INSTALLS_ICONS=	yes
-
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib -lX11
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|glib/gstrfuncs.h|glib.h|g' \

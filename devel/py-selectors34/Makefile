@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-selectors34/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-selectors34/Makefile 459516 2018-01-20 12:38:15Z sunpoet $
 
 PORTNAME=	selectors34
 PORTVERSION=	1.2
@@ -14,7 +14,7 @@ LICENSE=	PSFL
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
 
 NO_ARCH=	yes
-USES=		python:2.7-3.3
+USES=		python:-3.3
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

@@ -1,9 +1,9 @@
 # Created by: nm@web.am
-# $FreeBSD: head/net-im/licq-osd/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/net-im/licq-osd/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	osd
 PORTVERSION=	1.8.2
-PORTREVISION=	6
+PORTREVISION=	7
 PORTEPOCH=	2
 CATEGORIES=	net-im
 

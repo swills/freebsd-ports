@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-usb/Makefile 432005 2017-01-20 23:51:40Z sbz $
+# $FreeBSD: head/devel/py-usb/Makefile 459552 2018-01-20 20:39:30Z sbz $
 
 PORTNAME=	usb
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.2
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -14,8 +14,9 @@ USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	walac
+GH_ACCOUNT=	pyusb
 GH_PROJECT=	py${PORTNAME}
+GH_TAGNAME=	47ca9c3
 
 PORTDOCS=	*.rst
 

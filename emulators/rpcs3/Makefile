@@ -1,9 +1,9 @@
-# $FreeBSD: head/emulators/rpcs3/Makefile 459144 2018-01-16 00:52:35Z jbeich $
+# $FreeBSD: head/emulators/rpcs3/Makefile 459488 2018-01-20 00:22:48Z jbeich $
 
 PORTNAME=	rpcs3
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.0.4-252
-DISTVERSIONSUFFIX=	-g24e97b9e0
+DISTVERSION=	0.0.4-270
+DISTVERSIONSUFFIX=	-gf908daf32
 CATEGORIES=	emulators
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -44,10 +44,6 @@ CMAKE_ON=	CMAKE_SKIP_RPATH USE_SYSTEM_FFMPEG USE_SYSTEM_LIBPNG
 CXXFLAGS+=	-D_GLIBCXX_USE_C99 # XXX ports/193528
 CXXFLAGS+=	-Wno-macro-redefined # __STDC_*_MACROS sys/cdefs.h vs. llvm-config
 LDFLAGS+=	-Wl,--as-needed # GLU
-PLIST_FILES=	bin/${PORTNAME} \
-		share/applications/${PORTNAME}.desktop \
-		share/icons/hicolor/48x48/apps/${PORTNAME}.png \
-		share/icons/hicolor/scalable/apps/${PORTNAME}.svg \
 
 OPTIONS_DEFINE=	ALSA EVDEV GDB LLVM PULSEAUDIO VULKAN
 OPTIONS_DEFAULT=ALSA LLVM VULKAN

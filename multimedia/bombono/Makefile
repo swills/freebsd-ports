@@ -1,9 +1,9 @@
 # Created by: Stas Timokhin <stast@bsdportal.ru>
-# $FreeBSD: head/multimedia/bombono/Makefile 457358 2017-12-27 09:30:47Z antoine $
+# $FreeBSD: head/multimedia/bombono/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	bombono
 PORTVERSION=	1.2.2
-PORTREVISION=	19
+PORTREVISION=	20
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-dvd/${PORTVERSION:R}
 DISTNAME=	${PORTNAME}-dvd-${PORTVERSION}

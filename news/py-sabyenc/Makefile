@@ -1,8 +1,8 @@
 # Created by: Ralf van der Enden <tremere@cainites.net>
-# $FreeBSD: head/news/py-sabyenc/Makefile 450427 2017-09-23 11:10:09Z dbaio $
+# $FreeBSD: head/news/py-sabyenc/Makefile 459529 2018-01-20 17:35:06Z flo $
 
 PORTNAME=	sabyenc
-PORTVERSION=	3.3.1
+PORTVERSION=	3.3.2
 CATEGORIES=	news python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

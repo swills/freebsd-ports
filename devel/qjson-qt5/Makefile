@@ -1,6 +1,6 @@
-# $FreeBSD: head/devel/qjson-qt5/Makefile 429134 2016-12-22 00:59:21Z avilla $
+# $FreeBSD: head/devel/qjson-qt5/Makefile 459474 2018-01-19 21:28:34Z antoine $
 
-PORTREVISION=	0
+PORTREVISION=	1
 PKGNAMESUFFIX=	-qt5
 
 MASTERDIR=	${.CURDIR:H}/qjson

@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/gnash/Makefile 456184 2017-12-12 21:29:57Z madpilot $
+# $FreeBSD: head/graphics/gnash/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	gnash
 PORTVERSION=	0.8.10
-PORTREVISION=	32
+PORTREVISION=	33
 CATEGORIES=	graphics
 MASTER_SITES=	http://git.savannah.gnu.org/cgit/gnash.git/snapshot/
 DISTNAME=	gnash-2b3bdede0305c4fc3ad21a0a4197330606c9b880

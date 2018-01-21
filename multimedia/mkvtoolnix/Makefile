@@ -1,8 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/mkvtoolnix/Makefile 457694 2017-12-31 14:28:07Z riggs $
+# $FreeBSD: head/multimedia/mkvtoolnix/Makefile 459553 2018-01-20 20:43:27Z riggs $
 
 PORTNAME=	mkvtoolnix
-PORTVERSION=	19.0.0
+PORTVERSION=	20.0.0
 CATEGORIES=	multimedia audio
 MASTER_SITES=	http://www.bunkus.org/videotools/mkvtoolnix/sources/ \
 		https://mkvtoolnix.download/sources/
@@ -53,6 +53,7 @@ QT5_USES=	desktop-file-utils shared-mime-info
 QT5_USE=	QT5=buildtools_build,concurrent,core,gui,multimedia,network,quick,widgets
 QT5_CONFIGURE_ENABLE=	qt
 QT5_BUILD_DEPENDS=	qmake:devel/qt5-qmake
+QT5_LIB_DEPENDS=	libcmark.so:textproc/cmark
 
 MANTRANS_DESC=		Build and install manpage translations
 MANTRANS_BUILD_DEPENDS=	po4a:textproc/po4a

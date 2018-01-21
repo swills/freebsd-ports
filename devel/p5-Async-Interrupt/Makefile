@@ -1,8 +1,8 @@
 # Created by: Mikhail T. <michael@fun-box.ru>
-# $FreeBSD: head/devel/p5-Async-Interrupt/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Async-Interrupt/Makefile 459442 2018-01-19 17:02:32Z sunpoet $
 
 PORTNAME=	Async-Interrupt
-PORTVERSION=	1.21
+PORTVERSION=	1.22
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -18,5 +18,8 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Async/Interrupt/Interrupt.so
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Kirill Ponomarew <krion@FreeBSD.org>
-# $FreeBSD: head/games/shaaft/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/shaaft/Makefile 459428 2018-01-19 15:08:00Z danfe $
 
 PORTNAME=	shaaft
 PORTVERSION=	0.5.0
@@ -15,12 +15,9 @@ LIB_DEPENDS=	libpng.so:graphics/png
 
 CONFLICTS=	criticalmass-*
 
-BROKEN_aarch64=		fails to compile: error: conflicting declaration typedef int GLintptrARB
-BROKEN_sparc64=		does not compile
-
 USES=		tar:bzip2
 USE_SDL=	mixer image sdl
-USE_GL=		yes
+USE_GL=		gl
 USE_GCC=	any
 USE_CXXSTD=	gnu++98
 GNU_CONFIGURE=	yes

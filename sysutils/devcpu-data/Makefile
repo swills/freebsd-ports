@@ -1,14 +1,15 @@
 # Created by: stas
-# $FreeBSD: head/sysutils/devcpu-data/Makefile 459205 2018-01-16 19:56:34Z sbruno $
+# $FreeBSD: head/sysutils/devcpu-data/Makefile 459464 2018-01-19 19:28:08Z sbruno $
 
 PORTNAME=	data
-PORTVERSION=	1.14
-PORTREVISION=	3
+PORTVERSION=	1.15
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://downloadmirror.intel.com/27337/eng/:intel \
 		LOCAL/sbruno:amd
 PKGNAMEPREFIX=	devcpu-
-DISTFILES=	microcode-20171117.tgz:intel amd64-microcode_3.20171205.1.tar.xz:amd
+DISTFILES=	microcode-20171117.tgz:intel \
+		amd64-microcode_3.20171205.1.tar.xz:amd
 
 MAINTAINER=	clarkjc@runbox.com
 COMMENT=	Intel and AMD CPUs microcode updates
@@ -31,6 +32,10 @@ post-extract:
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}/
+	${INSTALL_DATA} ${WRKSRC}/amd64-microcode-3.20171205.1/microcode_amd.bin ${STAGEDIR}${DATADIR}/
+	${INSTALL_DATA} ${WRKSRC}/amd64-microcode-3.20171205.1/microcode_amd_fam15h.bin ${STAGEDIR}${DATADIR}/
+	${INSTALL_DATA} ${WRKSRC}/amd64-microcode-3.20171205.1/microcode_amd_fam16h.bin ${STAGEDIR}${DATADIR}/
+	${INSTALL_DATA} ${WRKSRC}/amd64-microcode-3.20171205.1/microcode_amd_fam17h.bin ${STAGEDIR}${DATADIR}/
 	${INSTALL_DATA} ${WRKSRC}/mcodes/* ${STAGEDIR}${DATADIR}/
 
 .include <bsd.port.mk>

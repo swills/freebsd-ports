@@ -1,9 +1,9 @@
 # Created by: Mohammad S. Babaei <info@babaei.net>
-# $FreeBSD: head/www/wt/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/www/wt/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	wt
 PORTVERSION=	3.3.7
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	www
 
 MAINTAINER=	info@babaei.net
@@ -16,6 +16,7 @@ LIB_DEPENDS+=	libpng.so:graphics/png \
 		libboost_system.so:devel/boost-libs \
 		libGraphicsMagick.so:graphics/GraphicsMagick
 
+BROKEN=		fails to build with boost 1.66, see bug 224183
 BROKEN_powerpc64=	fails to link: libwthttp.so. undefined reference to boost::program_options::abstract_variables_map::operator
 
 USE_GITHUB=	yes

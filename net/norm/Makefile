@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/norm/Makefile 439779 2017-04-30 01:12:10Z linimon $
+# $FreeBSD: head/net/norm/Makefile 459365 2018-01-18 17:32:31Z danfe $
 
 PORTNAME=	norm
 PORTVERSION=	1.5r6
@@ -9,17 +9,16 @@ DISTNAME=	src-norm-${DISTVERSION}
 MAINTAINER=	hd@oc.dk
 COMMENT=	NACK-Oriented Reliable Multicast (NORM)
 
-BROKEN_mips=	Does not build: named return values are no longer supported
-BROKEN_mips64=	Does not build: named return values are no longer supported
-BROKEN_powerpc64=	Does not build: named return values are no longer supported
-BROKEN_sparc64=	Does not build: named return values are no longer supported
-
 WRKSRC=		${WRKDIR}/norm-${DISTVERSION}
 
 USES=		waf tar:tgz libtool
 USE_LDCONFIG=	yes
 PLIST_FILES=	include/normApi.h lib/libnorm.so lib/libnorm.so.1 \
 		lib/libnorm.so.1.0.0
+
+post-patch:
+	@${REINPLACE_CMD} -e '92s,r.*;,{&},' \
+		${WRKSRC}/protolib/include/protoSpace.h
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/include/normApi.h ${STAGEDIR}${PREFIX}/include/

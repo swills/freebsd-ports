@@ -1,8 +1,8 @@
 # Created by: Sergei Kolobov <sergei@kolobov.com>
-# $FreeBSD: head/security/libtasn1/Makefile 442505 2017-06-03 16:02:26Z novel $
+# $FreeBSD: head/security/libtasn1/Makefile 459431 2018-01-19 15:44:49Z novel $
 
 PORTNAME=	libtasn1
-PORTVERSION=	4.12
+PORTVERSION=	4.13
 CATEGORIES=	security
 MASTER_SITES=	GNU
 
@@ -12,8 +12,8 @@ COMMENT=	ASN.1 structure parser library
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING.LIB
 
-USE_LDCONFIG=	yes
 USES=		cpe pkgconfig pathfix gmake libtool
+USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 CPE_VENDOR=	gnu

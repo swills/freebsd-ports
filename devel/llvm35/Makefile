@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm35/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/devel/llvm35/Makefile 459485 2018-01-19 23:38:18Z brooks $
 
 PORTNAME=	llvm
 DISTVERSION=	3.5.2
@@ -115,10 +115,10 @@ CONFIGURE_ARGS+=	--disable-docs
 
 .if ${PORT_OPTIONS:MLIT}
 MAN1SRCS+=		lit.1
-USES+=			python
+USES+=			python:2.7
 LIT_COMMANDS=		lit llvm-lit FileCheck
 .else
-USES+=			python:build
+USES+=			python:2.7,build
 .endif
 
 .if ${PORT_OPTIONS:MLTOPLUGIN}

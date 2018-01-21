@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/games/vamos/Makefile 458408 2018-01-08 13:21:10Z krion $
+# $FreeBSD: head/games/vamos/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	vamos
 PORTVERSION=	0.7.1
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/ \
 		SF/nemysisfreebsdp/${CATEGORIES}/:icons

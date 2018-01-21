@@ -1,9 +1,8 @@
 # Created by: Mikhail Teterin <mi@aldan.algebra.com>
-# $FreeBSD: head/graphics/libfpx/Makefile 409147 2016-02-19 03:16:43Z mi $
+# $FreeBSD: head/graphics/libfpx/Makefile 459561 2018-01-21 01:09:18Z mi $
 
 PORTNAME=	libfpx
-DISTVERSION=	1.3.1-4
-PORTREVISION=	1
+DISTVERSION=	1.3.1-10
 CATEGORIES=	graphics
 MASTER_SITES=	http://imagemagick.mirrorcatalogs.com/delegates/	\
 		http://www.imagemagick.org/download/delegates/	\

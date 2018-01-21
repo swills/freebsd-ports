@@ -1,9 +1,9 @@
 # Created by: alepulver
-# $FreeBSD: head/editors/pdfedit/Makefile 455251 2017-12-01 07:19:53Z antoine $
+# $FreeBSD: head/editors/pdfedit/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	pdfedit
 PORTVERSION=	0.4.5
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	editors
 MASTER_SITES=	SF
 

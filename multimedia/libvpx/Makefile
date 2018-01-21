@@ -1,5 +1,5 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/multimedia/libvpx/Makefile 454590 2017-11-21 08:36:26Z mat $
+# $FreeBSD: head/multimedia/libvpx/Makefile 459398 2018-01-19 06:36:37Z danfe $
 
 PORTNAME=	libvpx
 DISTVERSIONPREFIX=	v
@@ -82,6 +82,8 @@ THREADS_CONFIGURE_OFF=	--disable-multithread
 post-patch:
 	@${REINPLACE_CMD} 's|\(link_with_cc\)=gcc|\1=$${CC}|' \
 		${WRKSRC}/build/make/configure.sh
+	@${REINPLACE_CMD} 's|sparc-solaris-gcc|sparc-linux-gcc|' \
+		${WRKSRC}/configure
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/vpx*

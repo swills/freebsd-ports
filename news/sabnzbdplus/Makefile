@@ -1,7 +1,7 @@
-# $FreeBSD: head/news/sabnzbdplus/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/news/sabnzbdplus/Makefile 459531 2018-01-20 17:37:32Z flo $
 
 PORTNAME=	sabnzbdplus
-PORTVERSION=	2.3.0
+PORTVERSION=	2.3.2
 CATEGORIES=	news
 
 MAINTAINER=	joshruehlig@gmail.com
@@ -44,7 +44,7 @@ YENC_DESC=	yenc support
 
 PAR2CMDLINE_RUN_DEPENDS=	par2repair:archivers/par2cmdline-tbb
 FEEDPARSER_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}feedparser>=0:textproc/py-feedparser@${PY_FLAVOR}
-YENC_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sabyenc>=0:news/py-sabyenc@${PY_FLAVOR}
+YENC_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sabyenc>=3.3.1:news/py-sabyenc@${PY_FLAVOR}
 SSL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>=0:security/py-cryptography@${PY_FLAVOR}
 UNRAR_RUN_DEPENDS=	unrar:archivers/unrar
 7ZIP_RUN_DEPENDS=	7za:archivers/p7zip

@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/frei0r/Makefile 438490 2017-04-14 05:30:25Z jbeich $
+# $FreeBSD: head/graphics/frei0r/Makefile 459232 2018-01-17 09:59:37Z tcberner $
 
 PORTNAME=	frei0r
 PORTVERSION=	1.5.0
@@ -22,13 +22,14 @@ IGNORE=		cannot build OpenCV and gavl plugins simultaneously
 .endif
 
 .if defined(BUILDING_FREI0R_OPENCV) || defined(BUILDING_FREI0R_GAVL)
-EXTRA_PATCHES=	${PATCHDIR}/extra-patch-frei0r-plugins
+EXTRA_PATCHES=	${PATCHDIR}/extra-patch-frei0r-plugins \
+		${PATCHDIR}/extra-patch-src_filter_facedetect_CMakeLists.txt
 
 USES+=	localbase
 .endif
 
 .if defined(BUILDING_FREI0R_OPENCV)
-PORTREVISION=	2
+PORTREVISION=	3
 COMMENT=	Frei0r OpenCV plugins
 PKGNAMESUFFIX=	-plugins-opencv
 LIB_DEPENDS+=	libopencv_legacy.so:graphics/opencv

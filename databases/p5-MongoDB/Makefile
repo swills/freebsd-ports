@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/databases/p5-MongoDB/Makefile 442338 2017-06-01 23:50:47Z sunpoet $
+# $FreeBSD: head/databases/p5-MongoDB/Makefile 459334 2018-01-18 14:42:47Z sunpoet $
 
 PORTNAME=	MongoDB
-PORTVERSION=	1.8.0
+PORTVERSION=	1.8.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN

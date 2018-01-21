@@ -1,5 +1,5 @@
 # Created by: b.f. <bf@FreeBSD.org>
-# $FreeBSD: head/textproc/tinyxml2/Makefile 456744 2017-12-19 18:20:20Z sunpoet $
+# $FreeBSD: head/textproc/tinyxml2/Makefile 459575 2018-01-21 09:00:19Z sunpoet $
 
 PORTNAME=	tinyxml2
 PORTVERSION=	6.0.0
@@ -22,6 +22,9 @@ PORTEXAMPLES=	*
 
 GH_ACCOUNT=	leethomason
 USE_GITHUB=	yes
+
+post-patch:
+	@${REINPLACE_CMD} -e '/CMAKE_DEBUG_POSTFIX/d' ${WRKSRC}/CMakeLists.txt
 
 post-install-EXAMPLES-on:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/

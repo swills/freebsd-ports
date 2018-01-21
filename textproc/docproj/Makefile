@@ -1,5 +1,5 @@
 # Created by: Nik Clayton <nik@FreeBSD.org>
-# $FreeBSD: head/textproc/docproj/Makefile 420130 2016-08-12 15:37:41Z wblock $
+# $FreeBSD: head/textproc/docproj/Makefile 459451 2018-01-19 17:04:52Z mat $
 
 PORTNAME=	docproj
 PORTVERSION=	2.0
@@ -40,7 +40,7 @@ IGOR_RUN_DEPENDS=	igor:textproc/igor
 FOP_DESC=		FOP PDF renderer (requires Java)
 FOP_RUN_DEPENDS=	fop:textproc/fop \
 			${FONTS}
-JING_DESC=		Jing for advanced RELAX NG validation (optional)
+JING_DESC=		Jing for advanced RELAX NG validation
 JING_RUN_DEPENDS=	jing:textproc/jing
 DBLATEX_DESC=		dblatex PDF renderer (experimental, requires TeXLive)
 DBLATEX_RUN_DEPENDS=	dblatex:textproc/dblatex \

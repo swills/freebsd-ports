@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/sysutils/glogg/Makefile 457197 2017-12-24 20:27:59Z yuri $
+# $FreeBSD: head/sysutils/glogg/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	glogg
 DISTVERSION=	1.1.4
+PORTREVISION=	1
 CATEGORIES=	sysutils textproc
 MASTER_SITES=	http://glogg.bonnefon.org/files/
 

@@ -1,9 +1,9 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/science/bddsolve/Makefile 450560 2017-09-25 00:08:16Z jbeich $
+# $FreeBSD: head/science/bddsolve/Makefile 459315 2018-01-18 04:11:02Z jbeich $
 
 PORTNAME=	bddsolve
-PORTVERSION=	1.03
-PORTREVISION=	6
+PORTVERSION=	1.04
+PORTREVISION=	1
 CATEGORIES=	science
 MASTER_SITES=	http://www.win.tue.nl/~wieger/bddsolve/_downloads/
 DISTNAME=	${PORTNAME}-source-${PORTVERSION}

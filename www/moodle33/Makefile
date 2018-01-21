@@ -1,8 +1,8 @@
 # Created by: Javier Martin Rueda <jmrueda@diatel.upm.es>
-# $FreeBSD: head/www/moodle33/Makefile 454244 2017-11-15 13:40:54Z wen $
+# $FreeBSD: head/www/moodle33/Makefile 459257 2018-01-17 14:27:48Z wen $
 
 PORTNAME=	moodle
-PORTVERSION=	3.3.3
+PORTVERSION=	3.3.4
 CATEGORIES=	www
 MASTER_SITES=	SF/moodle/Moodle/stable33/
 PKGNAMESUFFIX=	${PKGORIGIN:T:S/moodle//}
@@ -12,7 +12,7 @@ COMMENT=	Course management system based on social constructionism
 
 LICENSE=	GPLv3
 
-CONFLICTS=	moodle31-3.1.[0-9]* moodle32-3.2.[0-9]* moodle34-3.4
+CONFLICTS=	moodle31-3.1.[0-9]* moodle32-3.2.[0-9]* moodle34-3.4.[0-9]*
 
 USES=		cpe php tar:tgz
 USE_PHP=	ctype curl dom fileinfo gd hash iconv intl json mbstring \
