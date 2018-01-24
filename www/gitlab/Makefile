@@ -172,7 +172,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-peek-rblineprof>=0.2.0:devel/rubygem-peek-rblineprof \
 	rubygem-peek-redis>=1.2.0:devel/rubygem-peek-redis \
 	rubygem-peek-sidekiq>=1.0.3:devel/rubygem-peek-sidekiq \
-	rubygem-prometheus-client-mmap>=0.7.0.beta18:devel/rubygem-prometheus-client-mmap \
+	rubygem-prometheus-client-mmap>=0.7.0.beta44:devel/rubygem-prometheus-client-mmap \
 	rubygem-octokit>=4.6.2:net/rubygem-octokit \
 	rubygem-mail_room>=0.9.1:mail/rubygem-mail_room \
 	rubygem-email_reply_trimmer>=0.1:mail/rubygem-email_reply_trimmer \
