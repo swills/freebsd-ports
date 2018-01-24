@@ -192,6 +192,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-toml-rb>=0.3.15:www/rubygem-toml-rb \
 	rubygem-flipper011>=0.11.0:devel/rubygem-flipper011 \
 	rubygem-flipper-active_record011>=0.11.0:databases/rubygem-flipper-active_record011 \
+	rubygem-flipper-active_support_cache_store011>=0.11.0:devel/rubygem-flipper-active_support_cache_store011 \
 	rubygem-lograge>=0.5:www/rubygem-lograge \
 	rubygem-grape_logging>=1.7:devel/rubygem-grape_logging \
 	rubygem-asset_sync220>=2.2.0:net/rubygem-asset_sync220 \
