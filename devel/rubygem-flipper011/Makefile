@@ -1,27 +1,23 @@
-# Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
 # $FreeBSD$
 
 PORTNAME=	flipper
-PORTVERSION=	0.10.2
+PORTVERSION=	0.11.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
-PKGNAMESUFFIX=	010
+PKGNAMESUFFIX=	011
 
-MAINTAINER=	sunpoet@FreeBSD.org
+MAINTAINER=	idefix@fechner.net
 COMMENT=	Act of enabling/disabling features in your application
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-CONFLICTS_INSTALL=	rubygem-flipper
+CONFLICTS_INSTALL=	rubygem-flipper rubygem-flipper010
 
-PORTSCOUT=	limit:^0\.10\.
+PORTSCOUT=	limit:^0\.11\.
 
 NO_ARCH=	yes
 USES=		gem
 USE_RUBY=	yes
-
-DEPRECATED=	yes
-EXPIRATION_DATE=	2018-08-01
 
 .include <bsd.port.mk>

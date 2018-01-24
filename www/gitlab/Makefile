@@ -190,7 +190,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-gitaly-proto>=0.39.0:net/rubygem-gitaly-proto \
 	rubygem-gitaly>=0.8.0:net/rubygem-gitaly \
 	rubygem-toml-rb>=0.3.15:www/rubygem-toml-rb \
-	rubygem-flipper010>=0.10.2:devel/rubygem-flipper010 \
+	rubygem-flipper011>=0.11.0:devel/rubygem-flipper011 \
 	rubygem-flipper-active_record010>=0.10.2:databases/rubygem-flipper-active_record010 \
 	rubygem-lograge>=0.5:www/rubygem-lograge \
 	rubygem-grape_logging>=1.7:devel/rubygem-grape_logging \
