@@ -12218,9 +12218,9 @@
 @dir(git,git,554) %%WWWDIR%%/bin
 @dir %%WWWDIR%%/config
 @dir(,,700) %%WWWDIR%%/builds
+@dir %%WWWDIR%%/changelogs/unreleased
 @dir(,,744) %%WWWDIR%%/locale
 @dir %%WWWDIR%%/lib/assets
-@dir %%WWWDIR%%/lib/ci/assets
 @dir(,,744) %%WWWDIR%%/locale/bg
 @dir(,,744) %%WWWDIR%%/locale/de
 @dir(,,744) %%WWWDIR%%/locale/en
