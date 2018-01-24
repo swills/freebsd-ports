@@ -194,6 +194,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-flipper-active_record010>=0.10.2:databases/rubygem-flipper-active_record010 \
 	rubygem-lograge>=0.5:www/rubygem-lograge \
 	rubygem-grape_logging>=1.7:devel/rubygem-grape_logging \
+	rubygem-asset_sync220>=2.2.0:net/rubygem-asset_sync220 \
 	rubygem-rinku>=1.7.3:www/rubygem-rinku
 
 PGSQL_RUN_DEPENDS=	rubygem-pg>=0.18.2:databases/rubygem-pg \
