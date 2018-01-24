@@ -165,6 +165,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-gettext_i18n_rails>=1.8.0:devel/rubygem-gettext_i18n_rails \
 	rubygem-gettext_i18n_rails_js>=1.2.0:devel/rubygem-gettext_i18n_rails_js \
 	rubygem-gettext>=3.2.2:devel/rubygem-gettext \
+	rubygem-batch-loader>=1.2.1:devel/rubygem-batch-loader \
 	rubygem-peek>=1.0.1:devel/rubygem-peek \
 	rubygem-peek-gc>=0.0.2:devel/rubygem-peek-gc \
 	rubygem-peek-host>=1.0.0:devel/rubygem-peek-host \
