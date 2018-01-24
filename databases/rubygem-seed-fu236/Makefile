@@ -4,6 +4,7 @@ PORTNAME=	seed-fu
 PORTVERSION=	2.3.6
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
+PKGNAMESUFFIX=	236
 
 MAINTAINER=	idefix@fechner.net
 COMMENT=	Library to maintain seed datas
