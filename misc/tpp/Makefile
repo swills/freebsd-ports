@@ -1,5 +1,5 @@
 # Created by: arved
-# $FreeBSD: head/misc/tpp/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/misc/tpp/Makefile 459596 2018-01-21 12:03:18Z rene $
 
 PORTNAME=	tpp
 PORTVERSION=	1.3.1
@@ -8,6 +8,9 @@ MASTER_SITES=	http://synflood.at/tpp/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Text presentation program
+
+DEPRECATED=	Depends on expired devel/ruby-ncurses
+EXPIRATION_DATE=2018-02-21
 
 RUN_DEPENDS=	${RUBY_SITELIBDIR}/ncurses.rb:devel/ruby-ncurses \
 		figlet:misc/figlet

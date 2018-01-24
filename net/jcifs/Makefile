@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/net/jcifs/Makefile 371731 2014-10-30 09:53:51Z ale $
+# $FreeBSD: head/net/jcifs/Makefile 459756 2018-01-23 14:41:08Z ale $
 
 PORTNAME=	jcifs
-PORTVERSION=	1.3.18
+PORTVERSION=	1.3.19
 PORTEPOCH=	1
 CATEGORIES=	net java
 MASTER_SITES=	http://jcifs.samba.org/src/
@@ -18,6 +18,7 @@ USES=		tar:tgz
 USE_JAVA=	yes
 JAVA_VERSION=	1.6+
 WRKSRC=		${WRKDIR}/${PORTNAME}_${PORTVERSION}
+NO_ARCH=	yes
 NO_BUILD=	yes
 
 PLIST_FILES=	%%JAVAJARDIR%%/${PORTNAME}.jar

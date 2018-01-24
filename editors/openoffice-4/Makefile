@@ -1,5 +1,5 @@
 # Created by: Martin Blapp
-# $FreeBSD: head/editors/openoffice-4/Makefile 459465 2018-01-19 19:40:46Z truckman $
+# $FreeBSD: head/editors/openoffice-4/Makefile 459824 2018-01-24 09:41:04Z ak $
 
 PORTNAME=	apache-openoffice
 PORTVERSION=	${AOOVERSION}
@@ -119,7 +119,7 @@ XDGDIR=			${OOPATH}/share/xdg
 XDGREL=			../../${INSTALLATION_BASEDIR}/openoffice${AOOVERSION1}/share/xdg
 EXECBASE?=		openoffice-${AOOSUFFIX}
 
-USES=		autoreconf:autoconf bison compiler:c++11-lib cpe \
+USES=		autoreconf bison compiler:c++11-lib cpe \
 		desktop-file-utils \
 		gettext-runtime gmake iconv jpeg perl5 pkgconfig python \
 		shared-mime-info ssl tar:bzip2

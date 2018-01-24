@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 459560 2018-01-21 00:38:29Z jhale $
+# $FreeBSD: head/security/Makefile 459738 2018-01-23 10:34:21Z woodsb02 $
 #
 
     COMMENT = Security tools
@@ -294,6 +294,7 @@
     SUBDIR += kdbx-viewer
     SUBDIR += kedpm
     SUBDIR += keepass
+    SUBDIR += keepass-plugin-keepassrpc
     SUBDIR += keepassx
     SUBDIR += keepassx-devel
     SUBDIR += keepassx2
@@ -916,6 +917,7 @@
     SUBDIR += py-hkdf
     SUBDIR += py-htpasswd
     SUBDIR += py-itsdangerous
+    SUBDIR += py-josepy
     SUBDIR += py-kerberos
     SUBDIR += py-keyczar
     SUBDIR += py-keyring
@@ -948,6 +950,7 @@
     SUBDIR += py-pyaes
     SUBDIR += py-pyaff4
     SUBDIR += py-pyaxo
+    SUBDIR += py-pyblake2
     SUBDIR += py-pyclamd
     SUBDIR += py-pycrypto
     SUBDIR += py-pycryptodome

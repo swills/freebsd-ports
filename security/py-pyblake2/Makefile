@@ -1,0 +1,22 @@
+# $FreeBSD: head/security/py-pyblake2/Makefile 459605 2018-01-21 13:20:31Z antoine $
+
+PORTNAME=	pyblake2
+PORTVERSION=	0.9.3
+CATEGORIES=	security python
+MASTER_SITES=	CHEESESHOP
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+
+MAINTAINER=	antoine@FreeBSD.org
+COMMENT=	BLAKE2 hash function extension module
+
+LICENSE=	CC0-1.0
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+USES=		python
+USE_PYTHON=	distutils autoplist
+TEST_ENV=	PYTHONPATH=${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}
+
+do-test:
+	@(cd ${TEST_WRKSRC}; ${SETENV} ${TEST_ENV} ${PYTHON_CMD} test/test.py)
+
+.include <bsd.port.mk>

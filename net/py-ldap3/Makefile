@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/py-ldap3/Makefile 457499 2017-12-29 09:01:54Z antoine $
+# $FreeBSD: head/net/py-ldap3/Makefile 459692 2018-01-22 20:09:27Z rm $
 
 PORTNAME=	ldap3
-PORTVERSION=	2.3
+PORTVERSION=	2.4.1
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

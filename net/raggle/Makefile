@@ -1,5 +1,5 @@
 # Created by: gslin@ccca.nctu.edu.tw
-# $FreeBSD: head/net/raggle/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/raggle/Makefile 459596 2018-01-21 12:03:18Z rene $
 
 PORTNAME=	raggle
 PORTVERSION=	0.4.4
@@ -9,6 +9,9 @@ MASTER_SITES=	http://www.raggle.org/files/
 
 MAINTAINER=	jadawin@FreeBSD.org
 COMMENT=	Console RSS aggregator written in Ruby
+
+DEPRECATED=	Depends on expired devel/ruby-ncurses
+EXPIRATION_DATE=2018-02-21
 
 RUN_DEPENDS=	${RUBY_SITELIBDIR}/ncurses.rb:devel/ruby-ncurses
 

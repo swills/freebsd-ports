@@ -1,5 +1,5 @@
 # Created by: Marcin Jessa <yazzy@yazzy.org>
-# $FreeBSD: head/net/py-impacket/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-impacket/Makefile 459637 2018-01-22 09:02:06Z amdmi3 $
 
 PORTNAME=	impacket
 PORTVERSION=	0.9.15
@@ -11,7 +11,8 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Collection of Python classes providing access to network packets
 
-LICENSE=	APACHE11
+LICENSE=	APACHE11 ZLIB
+LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1>=0:devel/py-pyasn1@${FLAVOR} \
@@ -20,6 +21,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1>=0:devel/py-pyasn1@${FLAVOR} \
 
 USES=		dos2unix python
 USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
 
 PORTDOCS=	*
 

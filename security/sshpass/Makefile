@@ -1,5 +1,5 @@
 # Created by: Hung-Yi Chen <gaod@hychen.org>
-# $FreeBSD: head/security/sshpass/Makefile 431989 2017-01-20 19:38:49Z sunpoet $
+# $FreeBSD: head/security/sshpass/Makefile 459824 2018-01-24 09:41:04Z ak $
 
 PORTNAME=	sshpass
 PORTVERSION=	1.06
@@ -12,7 +12,7 @@ COMMENT=	Non-interactive ssh password auth tool
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		autoreconf:env
+USES=		autoreconf
 GNU_CONFIGURE=	yes
 
 PLIST_FILES=	bin/sshpass \

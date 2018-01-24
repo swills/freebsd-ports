@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-threads/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-threads/Makefile 459770 2018-01-23 15:17:12Z sunpoet $
 
 PORTNAME=	threads
-PORTVERSION=	2.16
+PORTVERSION=	2.21
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:JDHEDDEN

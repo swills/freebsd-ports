@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-manuel/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-manuel/Makefile 459698 2018-01-22 20:31:56Z rm $
 
 PORTNAME=	manuel
-PORTVERSION=	1.8.0
+PORTVERSION=	1.9.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.rst
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
 
+NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 

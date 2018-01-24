@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-fonts/hack-font/Makefile 452927 2017-10-26 16:52:38Z rakuco $
+# $FreeBSD: head/x11-fonts/hack-font/Makefile 459799 2018-01-23 22:10:49Z rakuco $
 
 PORTNAME=	hack-font
-PORTVERSION=	3.000
+PORTVERSION=	3.001
 DISTVERSIONPREFIX=	v
 CATEGORIES=	x11-fonts
 
@@ -16,7 +16,7 @@ LICENSE_FILE_MIT=	${WRKSRC}/LICENSE.md
 LICENSE_PERMS_BITSTREAM=auto-accept dist-mirror dist-sell pkg-mirror pkg-sell
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	chrissimpkins
+GH_ACCOUNT=	source-foundry
 GH_PROJECT=	Hack
 
 USES=		fonts

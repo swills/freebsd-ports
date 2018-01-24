@@ -1,5 +1,5 @@
 # Created by: Marc Fonvieille <blackend@FreeBSD.org>
-# $FreeBSD: head/misc/freebsd-doc-zh_tw/Makefile 357873 2014-06-15 12:32:26Z blackend $
+# $FreeBSD: head/misc/freebsd-doc-zh_tw/Makefile 459649 2018-01-22 13:07:46Z blackend $
 
 CATEGORIES=	misc docs
 PKGNAMEPREFIX=	zh_tw-
@@ -14,3 +14,7 @@ DOCLANG=	zh_TW.UTF-8
 DOCLANG_PREFIX=	zh_TW
 
 .include "${MASTERDIR}/Makefile"
+
+.if ${PORT_OPTIONS:MPDF} || ${PORT_OPTIONS:MPS}
+BUILD_DEPENDS+=	${LOCALBASE}/share/fonts/TrueType/gkai00mp.ttf:chinese/arphicttf
+.endif

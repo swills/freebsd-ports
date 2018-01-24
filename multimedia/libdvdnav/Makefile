@@ -1,8 +1,8 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/multimedia/libdvdnav/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/libdvdnav/Makefile 459704 2018-01-22 21:31:13Z martymac $
 
 PORTNAME=	libdvdnav
-PORTVERSION=	5.0.3
+PORTVERSION=	6.0.0
 CATEGORIES=	multimedia
 MASTER_SITES=	http://download.videolan.org/pub/videolan/libdvdnav/${PORTVERSION}/ \
 		http://dvdnav.mplayerhq.hu/releases/ \
@@ -10,7 +10,7 @@ MASTER_SITES=	http://download.videolan.org/pub/videolan/libdvdnav/${PORTVERSION}
 		LOCAL/martymac
 
 MAINTAINER=	martymac@FreeBSD.org
-COMMENT=	MPlayer version of the libdvdnav project
+COMMENT=	Videolan version of the libdvdnav project
 
 LICENSE=	GPLv2
 

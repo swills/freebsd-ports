@@ -1,9 +1,9 @@
 # Created by: Yen-Ming Lee <leeym@leeym.com>
-# $FreeBSD: head/mail/openwebmail/Makefile 441912 2017-05-28 14:27:25Z crees $
+# $FreeBSD: head/mail/openwebmail/Makefile 459630 2018-01-21 22:14:47Z crees $
 
 PORTNAME=	openwebmail
 PORTVERSION=	2.53
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	mail
 MASTER_SITES=	http://openwebmail.acatysmoof.com/download/release/ \
 		http://openwebmail.org/openwebmail/download/release/

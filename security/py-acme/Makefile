@@ -1,8 +1,8 @@
 # Created by: Carlos J Puga Medina <cpm@fbsd.es>
-# $FreeBSD: head/security/py-acme/Makefile 455779 2017-12-08 10:22:42Z cpm $
+# $FreeBSD: head/security/py-acme/Makefile 459659 2018-01-22 15:44:05Z cpm $
 
 PORTNAME=	acme
-PORTVERSION=	0.20.0
+PORTVERSION=	0.21.0
 PORTEPOCH=	1
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
@@ -15,6 +15,7 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>=0.8:security/py-cryptography@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}josepy>=1.0.0:security/py-josepy@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}openssl>=0.13:security/py-openssl@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyrfc3339>0:devel/py-pyrfc3339@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${FLAVOR} \

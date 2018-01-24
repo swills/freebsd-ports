@@ -1,8 +1,8 @@
 # Created by: Alexander Kabaev <ak03@gte.com>
-# $FreeBSD: head/x11-toolkits/bwidget/Makefile 452764 2017-10-24 11:00:14Z gahr $
+# $FreeBSD: head/x11-toolkits/bwidget/Makefile 459736 2018-01-23 09:53:49Z gahr $
 
 PORTNAME=	bwidget
-PORTVERSION=	1.9.11
+PORTVERSION=	1.9.12
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	SF/tcllib/BWidget/${PORTVERSION}
 

@@ -1,8 +1,9 @@
 # Created by: Andrew 'derfi' Sidorov <derfi@vei.ru>
-# $FreeBSD: head/net-mgmt/nagvis/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/net-mgmt/nagvis/Makefile 459737 2018-01-23 10:25:02Z girgen $
 
 PORTNAME=	nagvis
 PORTVERSION=	1.8.5
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://www.nagvis.org/share/
 

@@ -1,5 +1,5 @@
 # Created by: dd
-# $FreeBSD: head/misc/figlet-fonts/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/misc/figlet-fonts/Makefile 459729 2018-01-23 08:47:46Z rm $
 
 PORTNAME=	figlet-fonts
 PORTVERSION=	20121202
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://ftp.figlet.org/pub/figlet/fonts/
 DISTFILES=	contributed.tar.gz international.tar.gz
 DIST_SUBDIR=	figlet
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	ptudor@ptudor.net
 COMMENT=	Assorted fonts for the figlet(6) program
 
 RUN_DEPENDS=	figlet:misc/figlet

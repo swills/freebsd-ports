@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/bind910/Makefile 459406 2018-01-19 12:32:34Z mat $
+# $FreeBSD: head/dns/bind910/Makefile 459831 2018-01-24 10:43:30Z mat $
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
@@ -41,7 +41,7 @@ CONFIGURE_ARGS=	--localstatedir=/var --disable-linux-caps \
 		--sysconfdir=${ETCDIR}
 ETCDIR=		${PREFIX}/etc/namedb
 
-CONFLICTS=	bind-tools bind99 bind911 bind9-devel
+CONFLICTS=	bind-tools bind99 bind911 bind912 bind9-devel
 
 SUB_FILES=	pkg-message named.conf
 USE_RC_SUBR=	named

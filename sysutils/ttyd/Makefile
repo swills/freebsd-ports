@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/ttyd/Makefile 458786 2018-01-11 20:34:08Z adamw $
+# $FreeBSD: head/sysutils/ttyd/Makefile 459682 2018-01-22 18:12:33Z rm $
 
 PORTNAME=	ttyd
-PORTVERSION=	1.3.3
-PORTREVISION=	1
+PORTVERSION=	1.4.0
 CATEGORIES=	sysutils
 
 MAINTAINER=	neel@neelc.org

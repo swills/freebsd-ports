@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-google-api-client/Makefile 459094 2018-01-15 17:16:50Z sunpoet $
+# $FreeBSD: head/devel/rubygem-google-api-client/Makefile 459668 2018-01-22 15:47:14Z sunpoet $
 
 PORTNAME=	google-api-client
-PORTVERSION=	0.19.3
+PORTVERSION=	0.19.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

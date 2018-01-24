@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-rbnacl/Makefile 458098 2018-01-05 00:50:27Z swills $
+# $FreeBSD: head/security/rubygem-rbnacl/Makefile 459592 2018-01-21 11:55:33Z sunpoet $
 
 PORTNAME=	rbnacl
 PORTVERSION=	5.0.0
@@ -11,7 +11,6 @@ COMMENT=	Networking and Cryptography (NaCl) library
 LICENSE=	MIT
 
 LIB_DEPENDS=	libsodium.so:security/libsodium
-BUILD_DEPENDS=	rubygem-bundler>=0:sysutils/rubygem-bundler
 RUN_DEPENDS=	rubygem-ffi>=0:devel/rubygem-ffi
 
 NO_ARCH=	yes

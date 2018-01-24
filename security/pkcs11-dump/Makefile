@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/security/pkcs11-dump/Makefile 437018 2017-03-27 10:00:48Z ale $
+# $FreeBSD: head/security/pkcs11-dump/Makefile 459740 2018-01-23 10:48:49Z ale $
 
 PORTNAME=	pkcs11-dump
 PORTVERSION=	0.3.4
@@ -9,7 +9,9 @@ MASTER_SITES=	https://github.com/alonbl/pkcs11-dump/releases/download/pkcs11-dum
 MAINTAINER=	ale@FreeBSD.org
 COMMENT=	Allow dumping PKCS\#11 token content
 
-USES=	tar:bzip2 ssl
+LICENSE=	GPLv2
+
+USES=		tar:bzip2 ssl dos2unix
 GNU_CONFIGURE=	yes
 
 CONFIGURE_ENV=	OPENSSL_CFLAGS="-I${OPENSSLINC}" \

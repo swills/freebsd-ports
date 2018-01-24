@@ -1,9 +1,9 @@
 # Created by: darius@dons.net.au
-# $FreeBSD: head/astro/xplanet/Makefile 451378 2017-10-06 11:18:35Z tobik $
+# $FreeBSD: head/astro/xplanet/Makefile 459625 2018-01-21 19:50:46Z adridg $
 
 PORTNAME=	xplanet
 PORTVERSION=	1.3.0
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	astro geography
 MASTER_SITES=	SF
 

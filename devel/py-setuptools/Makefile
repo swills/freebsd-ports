@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-setuptools/Makefile 457799 2018-01-01 20:40:04Z sunpoet $
+# $FreeBSD: head/devel/py-setuptools/Makefile 459584 2018-01-21 10:51:29Z mat $
 
 PORTNAME=	setuptools
 PORTVERSION=	38.2.5
@@ -25,7 +25,7 @@ PLIST_FILES=	"@sample %%PYTHON_SITELIBDIR%%/easy-install.pth.dist %%PYTHON_SITEL
 
 .include <bsd.port.pre.mk>
 
-.if ${PYTHON_VERSION} != ${PYTHON_DEFAULT_VERSION}
+.if ${FLAVOR} != ${FLAVORS:[1]}
 SUB_FILES+=	pkg-message
 SUB_LIST+=	PYTHON_VER=${PYTHON_VER}
 .endif

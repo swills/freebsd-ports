@@ -1,9 +1,8 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/net-im/folks/Makefile 443492 2017-06-13 08:14:34Z kwm $
+# $FreeBSD: head/net-im/folks/Makefile 459814 2018-01-24 07:13:00Z truckman $
 
 PORTNAME=	folks
-PORTVERSION=	0.11.1
-PORTREVISION=	2
+PORTVERSION=	0.11.4
 CATEGORIES=	net-im
 MASTER_SITES=	GNOME
 
@@ -29,7 +28,7 @@ INSTALL_TARGET=	install-strip
 
 GLIB_SCHEMAS=	org.freedesktop.folks.gschema.xml
 
-PLIST_SUB=	LIBVER=25 VERSION=43 LIBVERLONG=25.18.1
+PLIST_SUB=	LIBVER=25 VERSION=43 LIBVERLONG=25.18.4
 
 OPTIONS_SUB=	yes
 OPTIONS_DEFINE=	SOCIALWEB TRACKER

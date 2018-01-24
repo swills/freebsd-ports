@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-aniso8601/Makefile 457499 2017-12-29 09:01:54Z antoine $
+# $FreeBSD: head/devel/py-aniso8601/Makefile 459700 2018-01-22 21:05:54Z rm $
 
 PORTNAME=	aniso8601
-PORTVERSION=	1.3.0
+PORTVERSION=	2.0.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

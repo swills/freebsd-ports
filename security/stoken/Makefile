@@ -1,5 +1,5 @@
 # Created by: Alex Samorukov <samm@os2.kiev.ua>
-# $FreeBSD: head/security/stoken/Makefile 431216 2017-01-12 01:02:05Z vanilla $
+# $FreeBSD: head/security/stoken/Makefile 459733 2018-01-23 09:25:45Z gahr $
 
 PORTNAME=	stoken
 PORTVERSION=	0.91
@@ -34,5 +34,7 @@ INSTALL_TARGET=	install-strip
 
 post-patch:
 	${REINPLACE_CMD} -e 's|/bin/bash|/bin/sh|g' ${WRKSRC}/Makefile.in
+	${REINPLACE_CMD} -e 's|LTC_LTC_PKCS_1_V1_5|LTC_PKCS_1_V1_5|g' \
+	    ${WRKSRC}/src/stc-tomcrypt.c
 
 .include <bsd.port.mk>

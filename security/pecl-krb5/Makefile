@@ -1,8 +1,8 @@
 # Created by: girgen@FreeBSD.org
-# $FreeBSD: head/security/pecl-krb5/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/security/pecl-krb5/Makefile 459741 2018-01-23 10:51:59Z girgen $
 
 PORTNAME=	krb5
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	security pear
 
 MAINTAINER=	girgen@FreeBSD.org

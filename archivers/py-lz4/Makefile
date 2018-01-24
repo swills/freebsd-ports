@@ -1,7 +1,7 @@
-# $FreeBSD: head/archivers/py-lz4/Makefile 457980 2018-01-03 16:45:59Z sunpoet $
+# $FreeBSD: head/archivers/py-lz4/Makefile 459666 2018-01-22 15:47:03Z sunpoet $
 
 PORTNAME=	lz4
-PORTVERSION=	0.18.1
+PORTVERSION=	0.19.1
 CATEGORIES=	archivers python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -28,4 +28,10 @@ post-install:
 		${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/${PORTNAME}/block/_block.so \
 		${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/${PORTNAME}/frame/_frame.so
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${PYTHON_REL} < 3000
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}future>=0:devel/py-future@${FLAVOR}
+.endif
+
+.include <bsd.port.post.mk>

@@ -1,5 +1,5 @@
 # Created by: Jonathan Hanna
-# $FreeBSD: head/japanese/edict/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/japanese/edict/Makefile 459643 2018-01-22 11:49:15Z danfe $
 
 PORTNAME=	edict
 PORTVERSION=	19990714
@@ -46,8 +46,6 @@ DATADIR=	${PREFIX}/share/dict/edict
 DOCSDIR=	${PREFIX}/share/doc/xjdic
 
 NO_WRKSUBDIR=	yes
-
-BROKEN_sparc64=	Fails on sparc64 during installation with error 2
 
 OPTIONS_DEFINE=	DOCS
 

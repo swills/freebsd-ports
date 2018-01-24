@@ -1,5 +1,5 @@
 # Created by: mbr@FreeBSD.org
-# $FreeBSD: head/emulators/open-vm-tools/Makefile 457864 2018-01-02 14:45:06Z jpaetzel $
+# $FreeBSD: head/emulators/open-vm-tools/Makefile 459824 2018-01-24 09:41:04Z ak $
 
 PORTNAME=		open-vm-tools
 PORTVERSION=		${RELEASE_VER}
@@ -42,7 +42,7 @@ OPENSSL_CONFIGURE_WITH=	ssl
 WRKSRC_SUBDIR=		open-vm-tools
 
 GNU_CONFIGURE=		yes
-USES=			autoreconf:-iv fuse gettext-runtime kmod libtool localbase pathfix pkgconfig
+USES=			autoreconf fuse gettext-runtime kmod libtool localbase pathfix pkgconfig
 USE_GNOME=		glib20
 
 USE_GITHUB=		yes

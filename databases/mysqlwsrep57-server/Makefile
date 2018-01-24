@@ -1,5 +1,5 @@
 # Created by: Vasil Dimov <vd@FreeBSD.org>
-# $FreeBSD: head/databases/mysqlwsrep57-server/Makefile 455165 2017-11-30 05:55:17Z linimon $
+# $FreeBSD: head/databases/mysqlwsrep57-server/Makefile 459735 2018-01-23 09:51:53Z vd $
 
 PORTNAME=	mysqlwsrep
 PORTVERSION?=	5.7.20
@@ -169,6 +169,14 @@ FEDERATED_SUB_LIST_OFF+=FEDER=""
 CMAKE_ARGS+=		-DWITH_SSL=system
 .else
 CMAKE_ARGS+=		-DWITH_SSL=${OPENSSLBASE}
+.endif
+
+# ${LOCALBASE}/include/lz4.h does not compile with Clang 6.
+# Also MySQL code itself needs -Wno-c++11-narrowing when Clang 6 is used.
+.if ${OSVERSION} >= 1200056
+CFLAGS+=	-DLZ4_DISABLE_DEPRECATE_WARNINGS
+CXXFLAGS+=	-DLZ4_DISABLE_DEPRECATE_WARNINGS -Wno-c++11-narrowing
+LDFLAGS+=	-L${LOCALBASE}/lib
 .endif
 
 post-extract:

@@ -1,10 +1,10 @@
 # Created by: J.R. Oldroyd <fbsd@opal.com>
-# $FreeBSD: head/net/boinc-client/Makefile 459310 2018-01-18 01:54:35Z ler $
+# $FreeBSD: head/net/boinc-client/Makefile 459631 2018-01-21 22:50:56Z ler $
 
 PORTNAME=	boinc-client
 PORTVERSION=	7.8.6
 DISTVERSIONPREFIX=	client_release/7.8/
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net
 
 MAINTAINER=	ler@FreeBSD.org

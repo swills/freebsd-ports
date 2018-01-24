@@ -1,5 +1,5 @@
 # Created by: nils@guru.ims.uni-stuttgart.de
-# $FreeBSD: head/devel/dmake/Makefile 442629 2017-06-05 14:50:01Z sunpoet $
+# $FreeBSD: head/devel/dmake/Makefile 459824 2018-01-24 09:41:04Z ak $
 
 PORTNAME=	dmake
 PORTVERSION=	4.12.20150309
@@ -15,7 +15,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	mohawk2
 GH_TAGNAME=	e5588b0
 
-USES=		autoreconf:autoconf
+USES=		autoreconf
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--datarootdir=${DATADIR}
 

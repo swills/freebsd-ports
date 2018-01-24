@@ -1,5 +1,5 @@
 # Created by: Andrey Zonov <andrey@zonov.org>
-# $FreeBSD: head/sysutils/flock/Makefile 451342 2017-10-05 19:38:08Z cs $
+# $FreeBSD: head/sysutils/flock/Makefile 459824 2018-01-24 09:41:04Z ak $
 
 PORTNAME=	flock
 PORTVERPREFIX=	2.30
@@ -20,7 +20,7 @@ USES=		libtool pkgconfig
 OPTIONS_DEFINE=	NLS
 
 NLS_CONFIGURE_ENABLE=	nls
-NLS_USES=	autoreconf:autopoint gettext
+NLS_USES=	autoreconf gettext
 
 PLIST_FILES=	bin/flock man/man1/flock.1.gz \
 		etc/bash_completion.d/flock

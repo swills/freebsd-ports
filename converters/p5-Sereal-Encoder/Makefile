@@ -1,7 +1,7 @@
-# $FreeBSD: head/converters/p5-Sereal-Encoder/Makefile 454090 2017-11-12 22:00:41Z adamw $
+# $FreeBSD: head/converters/p5-Sereal-Encoder/Makefile 459804 2018-01-23 23:03:38Z adamw $
 
 PORTNAME=	Sereal-Encoder
-PORTVERSION=	4.004
+PORTVERSION=	4.005
 CATEGORIES=	converters perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:YVES

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-podcastparser/Makefile 429932 2016-12-29 17:49:55Z rm $
+# $FreeBSD: head/devel/py-podcastparser/Makefile 459696 2018-01-22 20:27:13Z rm $
 
 PORTNAME=	podcastparser
-PORTVERSION=	0.6.1
+PORTVERSION=	0.6.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

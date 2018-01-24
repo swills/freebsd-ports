@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: head/Mk/bsd.sites.mk 459033 2018-01-15 11:34:53Z mat $
+# $FreeBSD: head/Mk/bsd.sites.mk 459585 2018-01-21 10:54:45Z rakuco $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -860,8 +860,8 @@ MASTER_SITE_QMAIL+= \
 
 .if !defined(IGNORE_MASTER_SITE_QT)
 MASTER_SITE_QT+= \
-	http://download.qt-project.org/%SUBDIR%/ \
-	http://master.qt-project.org/%SUBDIR%/ \
+	https://download.qt.io/%SUBDIR%/ \
+	http://master.qt.io/%SUBDIR%/ \
 	http://www.mirrorservice.org/sites/download.qt-project.org/%SUBDIR%/ \
 	http://www.nic.funet.fi/pub/mirrors/download.qt-project.org/%SUBDIR%/ \
 	http://qtmirror.ics.com/pub/qtproject/%SUBDIR%/ \

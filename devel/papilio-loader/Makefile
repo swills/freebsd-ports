@@ -1,5 +1,5 @@
 # Created by: mr@freebsd.org
-# $FreeBSD: head/devel/papilio-loader/Makefile 448471 2017-08-21 13:14:02Z mat $
+# $FreeBSD: head/devel/papilio-loader/Makefile 459824 2018-01-24 09:41:04Z ak $
 
 PORTNAME=	papilio-loader
 PORTVERSION=	2.8
@@ -19,7 +19,8 @@ GH_PROJECT=	Papilio-Loader
 GH_TAGNAME=	dd111c4
 WRKSRC_SUBDIR=	papilio-prog
 
-USES=		autoreconf:autoconf pkgconfig gmake
+USES=		autoreconf pkgconfig gmake
+CXXFLAGS+=	-std=c++98
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	libftdi1_CFLAGS="-I ${LOCALBASE}/include/libftdi1"
 CONFIGURE_ENV+=	libftdi1_LIBS="-L ${LOCALBASE}/lib -lftdi1"

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-rbnacl-libsodium/Makefile 458141 2018-01-05 13:32:48Z swills $
+# $FreeBSD: head/security/rubygem-rbnacl-libsodium/Makefile 459593 2018-01-21 11:55:37Z sunpoet $
 
 PORTNAME=	rbnacl-libsodium
 PORTVERSION=	1.0.16
@@ -10,8 +10,6 @@ COMMENT=	Port rbnacl with bundled libsodium
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	rubygem-bundler>=1.5:sysutils/rubygem-bundler \
-		rubygem-rake>=10:devel/rubygem-rake
 RUN_DEPENDS=	rubygem-rbnacl>=3.0.1:security/rubygem-rbnacl
 
 USES=		gem libtool

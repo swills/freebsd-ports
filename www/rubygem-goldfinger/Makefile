@@ -1,8 +1,7 @@
-# $FreeBSD: head/www/rubygem-goldfinger/Makefile 456162 2017-12-12 13:35:23Z sunpoet $
+# $FreeBSD: head/www/rubygem-goldfinger/Makefile 459776 2018-01-23 15:17:44Z sunpoet $
 
 PORTNAME=	goldfinger
-PORTVERSION=	2.0.1
-PORTREVISION=	1
+PORTVERSION=	2.1.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -13,7 +12,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-addressable>=2.5:www/rubygem-addressable \
-		rubygem-http2>=2.2:www/rubygem-http2 \
+		rubygem-http>=3.0:www/rubygem-http \
 		rubygem-nokogiri>=1.8:textproc/rubygem-nokogiri \
 		rubygem-oj>=3.0:devel/rubygem-oj
 

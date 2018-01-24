@@ -1,9 +1,9 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/anjuta/Makefile 442673 2017-06-05 15:54:13Z kwm $
+# $FreeBSD: head/devel/anjuta/Makefile 459816 2018-01-24 07:15:13Z truckman $
 
 PORTNAME=	anjuta
 PORTVERSION=	3.18.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -99,7 +99,7 @@ SVN_CONFIGURE_ENABLE=	plugin-subversion
 DEVHELP_LIB_DEPENDS=	libdevhelp-3.so:devel/devhelp
 DEVHELP_CONFIGURE_ENBABLE=	plugin-devhelp
 
-VALA_VER=		0.30
+VALA_VER=		0.36
 VALA_BUILD_DEPENDS=	vala>=${VALA_VER}<${VALA_VER}.99:lang/vala
 VALA_RUN_DEPENDS=	vala>=${VALA_VER}<${VALA_VER}.99:lang/vala
 VALA_CONFIGURE_ENABLE=	vala

@@ -1,9 +1,8 @@
 # Created by: Stefan Ehmann <shoesoft@gmx.net>
-# $FreeBSD: head/devel/ice/Makefile 449413 2017-09-07 18:28:12Z grembo $
+# $FreeBSD: head/devel/ice/Makefile 459707 2018-01-22 23:05:51Z grembo $
 
 PORTNAME=		Ice
-PORTVERSION=		3.6.3
-PORTREVISION=		3
+PORTVERSION=		3.6.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=		devel
 

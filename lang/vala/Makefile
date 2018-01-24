@@ -1,8 +1,8 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/lang/vala/Makefile 419143 2016-07-26 18:41:37Z olivierd $
+# $FreeBSD: head/lang/vala/Makefile 459813 2018-01-24 07:11:56Z truckman $
 
 PORTNAME=	vala
-PORTVERSION=	0.30.2
+PORTVERSION=	0.36.4
 CATEGORIES=	lang gnome
 MASTER_SITES=	GNOME
 
@@ -15,16 +15,13 @@ PORTSCOUT=	limitw:1,even
 
 USES=		bison gettext-runtime gmake gnome libtool \
 		localbase pathfix pkgconfig tar:xz
-USE_GNOME=	glib20 gnomeprefix libxslt
+USE_GNOME=	glib20 gnomeprefix libxslt:build
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 
 VALA_VER=	${PORTVERSION:R}
 
-# Version got bumped to 0.30, replace VERSION with that instead
-# of using VALA_VER. Replace 0.30 with VALA_VER when vala gets to 0.30.0
-#PLIST_SUB=	VERSION=${VALA_VER}
-PLIST_SUB=	VERSION=0.30
+PLIST_SUB=	VERSION=0.36
 
 .include <bsd.port.mk>

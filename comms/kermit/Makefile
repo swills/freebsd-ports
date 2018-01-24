@@ -1,11 +1,11 @@
 # Created by: Paul Traina <pst@FreeBSD.org>
-# $FreeBSD: head/comms/kermit/Makefile 438272 2017-04-11 15:21:23Z mat $
+# $FreeBSD: head/comms/kermit/Makefile 459648 2018-01-22 12:39:20Z danfe $
 
 PORTNAME=	kermit
 PORTVERSION=	9.0.304
 CATEGORIES=	comms ftp net
 MASTER_SITES=	ftp://ftp.kermitproject.org/kermit/test/tar/
-DISTNAME=	cku${PORTVERSION:E}-dev20
+DISTNAME=	cku${PORTVERSION:E}-dev22
 
 MAINTAINER=	danfe@FreeBSD.org
 COMMENT=	Portable scriptable network and serial communication program

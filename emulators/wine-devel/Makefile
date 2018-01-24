@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/emulators/wine-devel/Makefile 458947 2018-01-14 00:21:44Z gerald $
+# $FreeBSD: head/emulators/wine-devel/Makefile 459628 2018-01-21 21:17:11Z gerald $
 
 PORTNAME=	wine
 DISTVERSION=	3.0-rc6
@@ -34,6 +34,7 @@ CONFIGURE_ARGS+=--verbose --disable-tests \
 		--without-alsa --without-capi --without-dbus \
 		--without-gettext --without-gettextpo \
 		--without-gphoto --without-gsm --without-gstreamer \
+		--without-krb5 \
 		--without-opencl \
 		--without-osmesa \
 		--with-oss \

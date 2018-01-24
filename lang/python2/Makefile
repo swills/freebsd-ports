@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/python2/Makefile 386379 2015-05-15 03:48:06Z bdrewery $
+# $FreeBSD: head/lang/python2/Makefile 459584 2018-01-21 10:51:29Z mat $
 
 PORTNAME=	python2
 PORTVERSION=	${PYTHON_MAJOR_VER}
@@ -12,7 +12,7 @@ MAINTAINER=	python@FreeBSD.org
 COMMENT=	The "meta-port" for version 2 of the Python interpreter
 
 USES=			python:run
-PYTHON_VERSION=		${PYTHON2_DEFAULT_VERSION}
+PYTHON_VERSION=		python${PYTHON2_DEFAULT}
 NO_BUILD=		yes
 
 PLIST_FILES=	bin/2to3-${PYTHON_MAJOR_VER} \

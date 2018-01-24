@@ -1,9 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/security/py-cryptography/Makefile 458625 2018-01-10 12:35:02Z amdmi3 $
+# $FreeBSD: head/security/py-cryptography/Makefile 459656 2018-01-22 14:57:29Z sbz $
 
 PORTNAME=	cryptography
-PORTVERSION=	2.0.3
-PORTREVISION=	1
+PORTVERSION=	2.1.4
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

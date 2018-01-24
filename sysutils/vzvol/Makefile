@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/vzvol/Makefile 458815 2018-01-12 09:59:32Z mmokhi $
+# $FreeBSD: head/sysutils/vzvol/Makefile 459710 2018-01-22 23:54:41Z swills $
 
 PORTNAME=		vzvol
 DISTVERSIONPREFIX=	v
-DISTVERSION=		0.5.5
+DISTVERSION=		0.6.0
 CATEGORIES=		sysutils
 
 MAINTAINER=		rainbow@purlinux.org

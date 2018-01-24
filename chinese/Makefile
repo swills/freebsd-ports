@@ -1,4 +1,4 @@
-# $FreeBSD: head/chinese/Makefile 457833 2018-01-02 07:25:59Z antoine $
+# $FreeBSD: head/chinese/Makefile 459687 2018-01-22 19:31:45Z pi $
 #
 
     COMMENT = Chinese support
@@ -52,6 +52,7 @@
     SUBDIR += gydict
     SUBDIR += hc
     SUBDIR += ibus-array
+    SUBDIR += ibus-cangjie
     SUBDIR += ibus-chewing
     SUBDIR += ibus-libpinyin
     SUBDIR += ibus-pinyin

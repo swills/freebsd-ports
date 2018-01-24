@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 457766 2018-01-01 11:41:37Z rene $
+# $FreeBSD: head/dns/Makefile 459604 2018-01-21 13:12:27Z antoine $
 #
 
     COMMENT = Domain Name Service tools
@@ -187,6 +187,7 @@
     SUBDIR += py-pycares
     SUBDIR += py-pydnstable
     SUBDIR += py-pywdns
+    SUBDIR += py-tld
     SUBDIR += py-tldextract
     SUBDIR += radns
     SUBDIR += rbldnsd

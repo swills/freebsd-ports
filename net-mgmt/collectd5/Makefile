@@ -1,5 +1,5 @@
 # Created by: Matt Peterson <matt@peterson.org>
-# $FreeBSD: head/net-mgmt/collectd5/Makefile 455109 2017-11-29 13:12:24Z des $
+# $FreeBSD: head/net-mgmt/collectd5/Makefile 459641 2018-01-22 09:44:42Z pizzamig $
 
 PORTNAME=	collectd
 PORTVERSION=	5.8.0
@@ -264,7 +264,6 @@ TSDB_CONFIGURE_ENABLE=		write_tsdb
 
 VARNISH_LIB_DEPENDS=		libvarnishapi.so:www/varnish4
 VARNISH_CONFIGURE_ENABLE=	varnish
-VARNISH_CONFIGURE_WITH=		libvarnish=${LOCALBASE}
 
 VIRT_IMPLIES=			XML
 VIRT_LIB_DEPENDS=		libvirt.so:devel/libvirt \

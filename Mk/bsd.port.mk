@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.port.mk 459027 2018-01-15 10:01:32Z tijl $
+# $FreeBSD: head/Mk/bsd.port.mk 459673 2018-01-22 16:35:23Z tz $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1616,7 +1616,8 @@ QA_ENV+=		STAGEDIR=${STAGEDIR} \
 				PKGBASE=${PKGBASE} \
 				PORTNAME=${PORTNAME} \
 				NO_ARCH=${NO_ARCH} \
-				"NO_ARCH_IGNORE=${NO_ARCH_IGNORE}"
+				"NO_ARCH_IGNORE=${NO_ARCH_IGNORE}" \
+				USE_RUBY=${USE_RUBY}
 .if !empty(USES:Mssl)
 QA_ENV+=		USESSSL=yes
 .endif

@@ -1,9 +1,9 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/security/py-volatility/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-volatility/Makefile 459602 2018-01-21 12:40:37Z antoine $
 
 PORTNAME=	volatility
 PORTVERSION=	2.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security python
 MASTER_SITES=	http://downloads.volatilityfoundation.org/releases/${PORTVERSION}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

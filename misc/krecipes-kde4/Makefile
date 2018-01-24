@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/krecipes-kde4/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/misc/krecipes-kde4/Makefile 459629 2018-01-21 21:43:07Z jhale $
 
 PORTNAME=	krecipes
 DISTVERSION=	2.0-beta2
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	misc kde
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${DISTVERSION}
 

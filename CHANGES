@@ -10,6 +10,12 @@ in the release notes and/or placed into UPDATING.
 
 All ports committers are allowed to commit to this file.
 
+20180116:
+AUTHOR: mat@FreeBSD.org
+
+  The deprecated PYTHON_DEFAULT_VERSION, PYTHON2_DEFAULT_VERSION, and
+  PYTHON3_DEFAULT_VERSION have been removed.
+
 20180106:
 AUTHOR: kde@FreeBSD.org
 
@@ -3510,4 +3516,4 @@ POSSIBILITY OF SUCH DAMAGE.
 Contact portmgr@FreeBSD.org if you have any questions about your use of
 this document.
 
-$FreeBSD: head/CHANGES 458293 2018-01-06 21:30:31Z rakuco $
+$FreeBSD: head/CHANGES 459584 2018-01-21 10:51:29Z mat $

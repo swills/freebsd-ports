@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/gohugo/Makefile 459381 2018-01-18 21:41:20Z ultima $
+# $FreeBSD: head/www/gohugo/Makefile 459705 2018-01-22 22:31:56Z ultima $
 
 PORTNAME=	hugo
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.33
+DISTVERSION=	0.34
 CATEGORIES=	www
 PKGNAMEPREFIX=	go
 DIST_SUBDIR=	${PKGNAMEPREFIX}${PORTNAME}
@@ -30,6 +30,7 @@ GH_TUPLE=	BurntSushi:toml:a368813:toml/src/github.com/BurntSushi/toml \
 		eknkc:amber:cdade1c:amber/src/github.com/eknkc/amber \
 		fortytw2:leaktest:7dad533:leaktest/src/github.com/fortytw2/leaktest \
 		fsnotify:fsnotify:c282820:fsnotify/src/github.com/fsnotify/fsnotify \
+		gobwas:glob:bea32b9:glob/src/github.com/gobwas/glob \
 		gorilla:websocket:ea4d1f6:websocket/src/github.com/gorilla/websocket \
 		hashicorp:go-immutable-radix:8aac270:go_immutable_radix/src/github.com/hashicorp/go-immutable-radix \
 		hashicorp:golang-lru:0a025b7:golang_lru/src/github.com/hashicorp/golang-lru \

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/phpunit/Makefile 443562 2017-06-14 09:56:44Z tz $
+# $FreeBSD: head/devel/phpunit/Makefile 459645 2018-01-22 12:09:30Z tz $
 
 PORTNAME=	phpunit
-PORTVERSION=	5.7.20
+DISTVERSION=	5.7.26
 CATEGORIES=	devel www
 MASTER_SITES=	https://phar.phpunit.de/ \
 		http://ports.toco-domains.de/

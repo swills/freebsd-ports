@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 459193 2018-01-16 16:20:37Z jmd $
+# $FreeBSD: head/sysutils/Makefile 459798 2018-01-23 21:48:39Z pizzamig $
 #
 
     COMMENT = System utilities
@@ -419,6 +419,7 @@
     SUBDIR += gnome-system-monitor
     SUBDIR += gnome_subr
     SUBDIR += goaccess
+    SUBDIR += google-compute-engine-oslogin
     SUBDIR += goss
     SUBDIR += gpart
     SUBDIR += gpte
@@ -856,6 +857,7 @@
     SUBDIR += polkit-kde
     SUBDIR += polkit-qt
     SUBDIR += polkit-qt5
+    SUBDIR += pot
     SUBDIR += powerdxx
     SUBDIR += powerman
     SUBDIR += powermon

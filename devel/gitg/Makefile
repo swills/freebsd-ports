@@ -1,19 +1,17 @@
 # Created by: kipz <somicide@gmail.com>
-# $FreeBSD: head/devel/gitg/Makefile 457964 2018-01-03 13:22:31Z mat $
+# $FreeBSD: head/devel/gitg/Makefile 459639 2018-01-22 09:12:49Z rm $
 
 PORTNAME=	gitg
-PORTVERSION=	3.24.0
-PORTREVISION=	1
+PORTVERSION=	3.26.0
 CATEGORIES=	devel deskutils gnome
 MASTER_SITES=	GNOME
+DIST_SUBDIR=	gnome3
 
 MAINTAINER=	kwm@FreeBSD.org
 COMMENT=	GTK-based git repository viewer
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN=		fails to configure
 
 BUILD_DEPENDS=	gsettings-desktop-schemas>=0:devel/gsettings-desktop-schemas \
 		valac:lang/vala

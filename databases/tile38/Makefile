@@ -1,8 +1,8 @@
 # Created by: olevole@olevole.ru
-# $FreeBSD: head/databases/tile38/Makefile 458547 2018-01-09 16:38:57Z novel $
+# $FreeBSD: head/databases/tile38/Makefile 459672 2018-01-22 16:17:23Z rm $
 
 PORTNAME=	tile38
-PORTVERSION=	1.10.0
+PORTVERSION=	1.10.1
 CATEGORIES=	databases
 
 MAINTAINER=	olevole@olevole.ru
@@ -11,9 +11,7 @@ COMMENT=	In-memory geolocation data store, spatial index, and realtime geofence
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	go>=1.4:lang/go \
-		bash:shells/bash
-RUN_DEPENDS=	go>=1.4:lang/go \
+BUILD_DEPENDS=	go>=1.7:lang/go \
 		bash:shells/bash
 
 USES=		shebangfix

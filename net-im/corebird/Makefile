@@ -1,9 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/net-im/corebird/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net-im/corebird/Makefile 459825 2018-01-24 10:17:57Z cpm $
 
 PORTNAME=	corebird
-PORTVERSION=	1.5.1
-PORTREVISION=	1
+PORTVERSION=	1.7.3
 CATEGORIES=	net-im
 
 MAINTAINER=	cpm@FreeBSD.org
@@ -16,21 +15,22 @@ BUILD_DEPENDS=	valac:lang/vala
 LIB_DEPENDS=	libsoup-2.4.so:devel/libsoup \
 		libnotify.so:devel/libnotify \
 		libjson-glib-1.0.so:devel/json-glib \
-		librest-0.7.so:devel/librest \
 		libgspell-1.so:textproc/gspell
+
+USES=		autoreconf compiler:c++11-lang gmake libtool pkgconfig sqlite
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	baedert
-
-USES=		autoreconf compiler:c++11-lang gmake libtool pkgconfig sqlite
 
 GNU_CONFIGURE=	yes
 USE_GNOME=	atk cairo gdkpixbuf2 glib20 gtk30 intltool libxml2 pango
 INSTALLS_ICONS=	yes
 
-OPTIONS_DEFINE=		GSTREAMER NLS
+OPTIONS_DEFINE=		DEBUG GSTREAMER NLS
 OPTIONS_DEFAULT=	GSTREAMER
 OPTIONS_SUB=		yes
+
+DEBUG_CONFIGURE_ON=		--enable-debug
 
 GSTREAMER_LIB_DEPENDS=		libgstbase-1.0.so:multimedia/gstreamer1 \
 				libgstreamer-1.0.so:multimedia/gstreamer1

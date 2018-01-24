@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-http2/Makefile 456132 2017-12-12 13:32:48Z sunpoet $
+# $FreeBSD: head/www/rubygem-http2/Makefile 459768 2018-01-23 15:17:02Z sunpoet $
 
 PORTNAME=	http
 PORTVERSION=	2.2.2
@@ -12,6 +12,9 @@ COMMENT=	Simple Ruby DSL for making HTTP requests
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+DEPRECATED=	Use www/rubygem-http instead
+EXPIRATION_DATE=2018-01-31
 
 RUN_DEPENDS=	rubygem-addressable>=2.3:www/rubygem-addressable \
 		rubygem-http-cookie>=1.0:www/rubygem-http-cookie \

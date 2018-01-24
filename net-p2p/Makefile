@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/Makefile 458350 2018-01-07 15:45:41Z sunpoet $
+# $FreeBSD: head/net-p2p/Makefile 459646 2018-01-22 12:27:41Z vd $
 #
 
     COMMENT = Peer-to-peer network applications
@@ -77,6 +77,7 @@
     SUBDIR += py-vertex
     SUBDIR += qbittorrent
     SUBDIR += qbittorrent-nox11
+    SUBDIR += qtum
     SUBDIR += radarr
     SUBDIR += retroshare
     SUBDIR += rtorrent

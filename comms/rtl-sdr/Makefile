@@ -1,9 +1,8 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/comms/rtl-sdr/Makefile 459474 2018-01-19 21:28:34Z antoine $
+# $FreeBSD: head/comms/rtl-sdr/Makefile 459833 2018-01-24 11:07:48Z martymac $
 
 PORTNAME=	rtl-sdr
-PORTVERSION=	20140210
-PORTREVISION=	11
+PORTVERSION=	20170919
 CATEGORIES=	comms hamradio
 MASTER_SITES=	http://contribs.martymac.org/FreeBSD-ports/distfiles/ \
 		LOCAL/martymac

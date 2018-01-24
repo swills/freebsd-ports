@@ -1,8 +1,8 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/devel/pycharm-ce/Makefile 458400 2018-01-08 09:22:42Z bsam $
+# $FreeBSD: head/devel/pycharm-ce/Makefile 459796 2018-01-23 20:42:50Z bsam $
 
 PORTNAME=	pycharm-ce
-PORTVERSION=	2017.3.2
+PORTVERSION=	2017.3.3
 CATEGORIES=	devel java python
 MASTER_SITES=	https://download.jetbrains.com/python/ \
 		http://download.jetbrains.com/python/

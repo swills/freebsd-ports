@@ -1,9 +1,8 @@
-# $FreeBSD: head/net-mgmt/icingaweb2/Makefile 457968 2018-01-03 15:02:39Z lme $
+# $FreeBSD: head/net-mgmt/icingaweb2/Makefile 459785 2018-01-23 16:04:24Z lme $
 
 PORTNAME=	icingaweb2
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.5.0
-PORTREVISION=	1
+DISTVERSION=	2.5.1
 CATEGORIES=	net-mgmt www
 
 MAINTAINER=	lme@FreeBSD.org
@@ -54,6 +53,7 @@ do-install:
 		${STAGEDIR}${EXAMPLESDIR}/bash_completion.d
 	(cd ${WRKSRC} && ${RM} -r .mailmap changelog.py icingaweb2.spec \
 		bin/license_writer.py packages test)
+	(${FIND} ${WRKSRC} -name "*.bak" -delete)
 	${MKDIR} ${STAGEDIR}${WWWDIR}
 	(cd ${WRKSRC} && \
 		${COPYTREE_SHARE} . ${STAGEDIR}${WWWDIR})

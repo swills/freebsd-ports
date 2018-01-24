@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/libilbc/Makefile 439779 2017-04-30 01:12:10Z linimon $
+# $FreeBSD: head/net/libilbc/Makefile 459635 2018-01-22 06:41:18Z danfe $
 
 PORTNAME=	libilbc
 DISTVERSIONPREFIX=	v
@@ -10,9 +10,6 @@ COMMENT=	Internet Low Bit Rate codec (RFC3951)
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-NOT_FOR_ARCHS=	powerpc64 sparc64
-NOT_FOR_ARCHS_REASON=	not yet ported to this architecture
 
 CONFLICTS=	ilbc-r[0-9]*
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libosmocore/Makefile 455305 2017-12-01 20:25:40Z ultima $
+# $FreeBSD: head/devel/libosmocore/Makefile 459644 2018-01-22 11:50:08Z danfe $
 
 PORTNAME=	libosmocore
 PORTVERSION=	0.10.2
@@ -29,5 +29,7 @@ DOXYGEN_CONFIGURE_ENV_OFF=ac_cv_path_DOXYGEN=false
 
 post-patch:
 	${ECHO_CMD} ${PORTVERSION} > ${WRKSRC}/.tarball-version
+	@${REINPLACE_CMD} -e '/#pragma GCC diagnostic/d' \
+		${WRKSRC}/src/application.c
 
 .include <bsd.port.mk>

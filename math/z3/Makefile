@@ -1,9 +1,8 @@
-# $FreeBSD: head/math/z3/Makefile 457155 2017-12-24 13:01:36Z jrm $
+# $FreeBSD: head/math/z3/Makefile 459750 2018-01-23 13:55:27Z ale $
 
 PORTNAME=	z3
 DISTVERSIONPREFIX=	${PORTNAME}-
-DISTVERSION=	4.5.0
-PORTREVISION=	2
+DISTVERSION=	4.6.0
 CATEGORIES=	math
 
 MAINTAINER=	6yearold@gmail.com
@@ -50,5 +49,6 @@ INSTALL_WRKSRC=		${WRKSRC}/build
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/z3
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libz3.so
+	${LN} -s libz3.so ${STAGEDIR}${PREFIX}/lib/libz3.so.0
 
 .include <bsd.port.mk>

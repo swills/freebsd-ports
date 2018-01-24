@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libosmo-netif/Makefile 456032 2017-12-11 14:09:35Z swills $
+# $FreeBSD: head/devel/libosmo-netif/Makefile 459644 2018-01-22 11:50:08Z danfe $
 
 PORTNAME=	libosmo-netif
 PORTVERSION=	0.1.1
@@ -15,11 +15,6 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libosmocore.so:devel/libosmocore \
 		libosmoabis.so:devel/libosmo-abis \
 		libtalloc.so:devel/talloc
-
-BROKEN_mips=	Does not build: undefined reference to __bswap_16
-BROKEN_mips64=	Does not build: undefined reference to __bswap_16
-BROKEN_powerpc64=	Does not build: undefined reference to __bswap_16
-BROKEN_sparc64=	Does not build: undefined reference to __bswap_16
 
 USES=		autoreconf libtool pathfix pkgconfig
 GNU_CONFIGURE=	yes
@@ -41,5 +36,7 @@ DAHDI_CPPFLAGS=		-I${LOCALBASE}/include
 
 post-patch:
 	${ECHO_CMD} ${PORTVERSION} > ${WRKSRC}/.tarball-version
+	@${REINPLACE_CMD} -e 's,__bswap_,__bswap,' \
+		${WRKSRC}/examples/rs232-write.c
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: lippe
-# $FreeBSD: head/devel/p5-Test-Portability-Files/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Test-Portability-Files/Makefile 459655 2018-01-22 14:10:59Z culot $
 
 PORTNAME=	Test-Portability-Files
-PORTVERSION=	0.07
+PORTVERSION=	0.09
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

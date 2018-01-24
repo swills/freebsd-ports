@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/mdp/Makefile 449997 2017-09-17 12:04:34Z dbaio $
+# $FreeBSD: head/misc/mdp/Makefile 459681 2018-01-22 18:11:11Z rm $
 
 PORTNAME=	mdp
-PORTVERSION=	1.0.10
+PORTVERSION=	1.0.12
 CATEGORIES=	misc
 
 MAINTAINER=	neel@neelc.org

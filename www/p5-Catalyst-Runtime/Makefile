@@ -1,8 +1,8 @@
 # Created by: lbr
-# $FreeBSD: head/www/p5-Catalyst-Runtime/Makefile 459521 2018-01-20 13:17:58Z sunpoet $
+# $FreeBSD: head/www/p5-Catalyst-Runtime/Makefile 459665 2018-01-22 15:46:57Z sunpoet $
 
 PORTNAME=	Catalyst-Runtime
-PORTVERSION=	5.90116
+PORTVERSION=	5.90117
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

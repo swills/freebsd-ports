@@ -1,9 +1,9 @@
 # Created by: Blaz Zupan <blaz@si.FreeBSD.org>
-# $FreeBSD: head/net-mgmt/nagios/Makefile 418829 2016-07-20 09:33:31Z dinoex $
+# $FreeBSD: head/net-mgmt/nagios/Makefile 459801 2018-01-23 22:54:03Z girgen $
 
 PORTNAME=	nagios
 PORTVERSION=	3.5.1
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	net-mgmt
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-3.x/${PORTNAME}-${PORTVERSION}
 
