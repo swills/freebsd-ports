@@ -179,7 +179,6 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-html2text>=0:textproc/rubygem-html2text \
 	rubygem-ruby-prof>=0.16.2:devel/rubygem-ruby-prof \
 	rubygem-oauth2>=1.4.0:net/rubygem-oauth2 \
-	rubygem-paranoia>=2.3.1:databases/rubygem-paranoia \
 	rubygem-health_check>=2.6.0:devel/rubygem-health_check \
 	rubygem-vmstat>=2.3.0:sysutils/rubygem-vmstat \
 	rubygem-sys-filesystem>=1.1.6:sysutils/rubygem-sys-filesystem \
