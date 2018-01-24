@@ -18,6 +18,9 @@ RUN_DEPENDS=	rubygem-activerecord4>=3.2:databases/rubygem-activerecord4 \
 
 PORTSCOUT=	limit:^0\.10\.
 
+DEPRECATED=	yes
+EXPIRATION_DATE=	2018-08-01
+
 NO_ARCH=	yes
 USE_RUBY=	yes
 USES=		gem
