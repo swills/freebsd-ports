@@ -10,6 +10,9 @@ PKGNAMESUFFIX=	0
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Middleware that will make Rack-based apps CORS compatible
 
+DEPRECATED=	yes
+EXPIRATION_DATE=	2018-08-01
+
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
