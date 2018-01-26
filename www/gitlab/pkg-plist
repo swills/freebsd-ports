@@ -6157,6 +6157,7 @@
 %%WWWDIR%%/db/migrate/20171222183504_add_jobs_cache_index_to_project.rb
 %%WWWDIR%%/db/migrate/20171229225929_change_user_project_limit_not_null_and_remove_default.rb
 %%WWWDIR%%/db/migrate/20171230123729_add_rebase_commit_sha_to_merge_requests_ce.rb
+%%WWWDIR%%/db/migrate/20180113220114_rework_redirect_routes_indexes.rb
 %%WWWDIR%%/db/migrate/limits_to_mysql.rb
 %%WWWDIR%%/db/migrate/markdown_cache_limits_to_mysql.rb
 %%WWWDIR%%/db/migrate/merge_request_diff_file_limits_to_mysql.rb
@@ -7526,6 +7527,7 @@
 %%WWWDIR%%/doc/user/project/pipelines/img/job_artifacts_builds_page.png
 %%WWWDIR%%/doc/user/project/pipelines/img/job_artifacts_pipelines_page.png
 %%WWWDIR%%/doc/user/project/pipelines/img/job_latest_artifacts_browser.png
+%%WWWDIR%%/doc/user/project/pipelines/img/pipeline_schedule_play.png
 %%WWWDIR%%/doc/user/project/pipelines/img/pipeline_schedule_variables.png
 %%WWWDIR%%/doc/user/project/pipelines/img/pipeline_schedules_list.png
 %%WWWDIR%%/doc/user/project/pipelines/img/pipeline_schedules_new_form.png
