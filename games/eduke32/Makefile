@@ -1,8 +1,9 @@
 # Created by: alepulver
-# $FreeBSD: head/games/eduke32/Makefile 459398 2018-01-19 06:36:37Z danfe $
+# $FreeBSD: head/games/eduke32/Makefile 459963 2018-01-25 21:20:12Z jbeich $
 
 PORTNAME=	eduke32
 PORTVERSION=	20170614
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://dukeworld.duke4.net/eduke32/synthesis/${PORTVERSION}-${SVNREVISION}/:eduke32 \
 		http://www.duke4.org/files/nightfright/hrp/:hrp \

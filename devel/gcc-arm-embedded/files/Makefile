@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/gcc-arm-embedded/files/Makefile 459104 2018-01-15 17:41:40Z lev $
+# $FreeBSD: head/devel/gcc-arm-embedded/files/Makefile 459944 2018-01-25 14:01:37Z lev $
 
 .include "Makefile.inc"
 
@@ -13,7 +13,7 @@ WORLD_LIB=${LOCALBASE}
 LDFLAGS+=	-L${WORLD_LIB}/lib
 
 .if ${CHOSEN_COMPILER_TYPE} == clang
-MAKE_ARGS+=     CFLAGS="-Wno-error -fbracket-depth=512" CXXFLAGS="-Wno-error -fbracket-depth=512"
+MAKE_ARGS+=     CFLAGS="-Wno-error -fbracket-depth=512 -Wno-deprecated-register" CXXFLAGS="-Wno-error -fbracket-depth=512 -Wno-deprecated-register"
 .endif
 
 MISC_DOCS=	license.txt readme.txt release.txt

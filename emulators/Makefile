@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/Makefile 455135 2017-11-29 17:37:44Z jbeich $
+# $FreeBSD: head/emulators/Makefile 460155 2018-01-28 01:39:12Z rene $
 #
 
     COMMENT = Emulators for other operating systems
@@ -130,7 +130,6 @@
     SUBDIR += qmc2
     SUBDIR += qtemu
     SUBDIR += quasi88
-    SUBDIR += raine
     SUBDIR += riscv-fesvr
     SUBDIR += riscv-isa-sim
     SUBDIR += rpcs3

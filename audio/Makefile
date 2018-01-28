@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 459301 2018-01-18 00:22:33Z jbeich $
+# $FreeBSD: head/audio/Makefile 460155 2018-01-28 01:39:12Z rene $
 #
 
     COMMENT = Audio tools
@@ -199,7 +199,6 @@
     SUBDIR += gbsplay
     SUBDIR += gervill
     SUBDIR += ghostess
-    SUBDIR += gigedit
     SUBDIR += gimmix
     SUBDIR += gkrellmms2
     SUBDIR += gkrellmss2
@@ -227,7 +226,6 @@
     SUBDIR += gmusicbrowser
     SUBDIR += gnaural
     SUBDIR += gnome-music
-    SUBDIR += gnomoradio
     SUBDIR += gnormalize
     SUBDIR += gnuitar
     SUBDIR += gnupod
@@ -312,6 +310,7 @@
     SUBDIR += gtkguitune
     SUBDIR += gtkpod
     SUBDIR += gtmixer
+    SUBDIR += guidolib
     SUBDIR += guspat
     SUBDIR += gvolwheel
     SUBDIR += gxmms2
@@ -469,7 +468,6 @@
     SUBDIR += linux-c7-sdl_mixer
     SUBDIR += linux-genpuid
     SUBDIR += linux-laudio
-    SUBDIR += linux-mbrola
     SUBDIR += linux-skype_oss_wrapper
     SUBDIR += linuxsampler
     SUBDIR += listener
@@ -494,7 +492,6 @@
     SUBDIR += maplay
     SUBDIR += mate-media
     SUBDIR += mbox
-    SUBDIR += mbrolavox
     SUBDIR += mcplay
     SUBDIR += mctoolame-decoder
     SUBDIR += mctoolame-encoder

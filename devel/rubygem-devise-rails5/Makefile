@@ -1,8 +1,8 @@
 # Created by: rpsfa@rit.edu
-# $FreeBSD: head/devel/rubygem-devise-rails5/Makefile 457618 2017-12-30 18:17:08Z sunpoet $
+# $FreeBSD: head/devel/rubygem-devise-rails5/Makefile 459870 2018-01-24 18:46:12Z sunpoet $
 
 PORTNAME=	devise
-PORTVERSION=	4.4.0
+PORTVERSION=	4.4.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5

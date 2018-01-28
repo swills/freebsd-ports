@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <sheepkiller@cultdeadsheep.org>
-# $FreeBSD: head/www/suphp/Makefile 417719 2016-06-28 14:00:45Z mat $
+# $FreeBSD: head/www/suphp/Makefile 459952 2018-01-25 17:40:46Z bdrewery $
 
 PORTNAME=	suphp
 PORTVERSION=	0.7.2
@@ -19,6 +19,7 @@ SUB_FILES=	pkg-message
 USE_APACHE=	22+
 CFLAGS+=	-I${LOCALBASE}/include
 USE_CSTD=	gnu89
+USE_CXXSTD=	gnu++98
 
 MYPORTDOCS=	apache/CONFIG \
 		apache/INSTALL \

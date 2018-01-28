@@ -1,5 +1,5 @@
 # Created by: Nicola Stanislao Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/net-im/scudcloud/Makefile 459509 2018-01-20 10:25:50Z nivit $
+# $FreeBSD: head/net-im/scudcloud/Makefile 459926 2018-01-25 12:55:54Z mat $
 
 PORTNAME=	scudcloud
 PORTVERSION=	1.64
@@ -29,7 +29,7 @@ OPTIONS_DEFINE=	HUNSPELL
 
 USES=		python:3.4+
 USE_GITHUB=	yes
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist distutils optsuffix
 
 post-patch:
 		@${REINPLACE_CMD} -i.bak -e 's,%%LOCALBASE%%,${LOCALBASE},1' \

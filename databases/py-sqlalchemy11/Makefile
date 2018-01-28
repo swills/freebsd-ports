@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/py-sqlalchemy11/Makefile 457391 2017-12-27 19:51:40Z sunpoet $
+# $FreeBSD: head/databases/py-sqlalchemy11/Makefile 459862 2018-01-24 18:45:31Z sunpoet $
 
 PORTNAME=	sqlalchemy
 PORTVERSION=	1.1.15
@@ -19,7 +19,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pytest>=2.5.2:devel/py-pytest@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pytest-xdist>=0:devel/py-pytest-xdist@${FLAVOR}
 
-CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}sqlalchemy10
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}sqlalchemy1[02]
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 OPTIONS_MULTI=	BACKEND

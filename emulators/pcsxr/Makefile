@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/emulators/pcsxr/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/emulators/pcsxr/Makefile 459919 2018-01-25 11:07:50Z martymac $
 
 PORTNAME=	pcsxr
 PORTVERSION=	1.9.94.r87113
@@ -13,11 +13,14 @@ COMMENT=	Playstation (PSX) emulator
 
 LICENSE=	GPLv2
 
+ONLY_FOR_ARCHS=	amd64 i386
+
 BUILD_DEPENDS=	gawk:lang/gawk
 LIB_DEPENDS=	libvorbis.so:audio/libvorbis \
 		libcdio.so:sysutils/libcdio
 
-ONLY_FOR_ARCHS=	i386 amd64
+USES=		autoreconf desktop-file-utils dos2unix iconv gmake libtool \
+		pkgconfig tar:bzip2
 
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
@@ -32,8 +35,6 @@ USE_XORG=	x11 xv xext xxf86vm xtst
 USE_SDL=	sdl
 USE_GL=	gl
 
-USES=		autoreconf desktop-file-utils dos2unix iconv gmake libtool \
-		pkgconfig tar:bzip2
 DOS2UNIX_REGEX=	.*\.(c|h|cpp|hpp|am)
 
 PORTDOCS=	ChangeLog README

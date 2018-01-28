@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 459245 2018-01-17 13:15:36Z jmd $
+# $FreeBSD: head/math/Makefile 460155 2018-01-28 01:39:12Z rene $
 #
 
     COMMENT = Mathematics
@@ -115,7 +115,6 @@
     SUBDIR += arpack++
     SUBDIR += arpack-ng
     SUBDIR += arpack-ng-mpich
-    SUBDIR += asir2000
     SUBDIR += aspcud
     SUBDIR += asymptote
     SUBDIR += atlas
@@ -741,6 +740,7 @@
     SUBDIR += testu01
     SUBDIR += tetgen
     SUBDIR += timbl
+    SUBDIR += tmv
     SUBDIR += tomsfastmath
     SUBDIR += topaz
     SUBDIR += triangle

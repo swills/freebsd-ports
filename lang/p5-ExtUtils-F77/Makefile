@@ -1,9 +1,9 @@
 # Created by: jmz
-# $FreeBSD: head/lang/p5-ExtUtils-F77/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/lang/p5-ExtUtils-F77/Makefile 460046 2018-01-26 18:13:52Z sunpoet $
 
 PORTNAME=	ExtUtils-F77
 PORTVERSION=	1.20
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	lang perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -19,8 +19,6 @@ USES=		fortran perl5
 USE_PERL5=	configure
 
 post-patch:
-	@${REINPLACE_CMD} -e "s|'gfortran44'|'${FC}'|" \
-			  -e "s|'-O2'|'${CFLAGS}'|" \
-			  ${WRKSRC}/F77.pm
+	@${REINPLACE_CMD} -e "s|'gfortran48'|'${FC}'|; s|'-O2'|'${CFLAGS}'|" ${WRKSRC}/F77.pm
 
 .include <bsd.port.mk>

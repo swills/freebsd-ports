@@ -1,10 +1,11 @@
 # Created by: Sergey Skvortsov <skv@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBD-mysql/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-DBD-mysql/Makefile 460092 2018-01-27 10:24:03Z sunpoet $
 
 PORTNAME=	DBD-mysql
-PORTVERSION=	4.043
+PORTVERSION=	4.044
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
+MASTER_SITE_SUBDIR=	CPAN:CAPTTOFU
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org

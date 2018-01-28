@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 459798 2018-01-23 21:48:39Z pizzamig $
+# $FreeBSD: head/sysutils/Makefile 459917 2018-01-25 09:58:12Z tobik $
 #
 
     COMMENT = System utilities
@@ -209,6 +209,7 @@
     SUBDIR += curly
     SUBDIR += currtime
     SUBDIR += cw
+    SUBDIR += DTraceToolkit
     SUBDIR += daa2iso
     SUBDIR += dae
     SUBDIR += daemonize
@@ -1123,6 +1124,7 @@
     SUBDIR += snap
     SUBDIR += snooze
     SUBDIR += snowlog
+    SUBDIR += socket
     SUBDIR += socklog
     SUBDIR += solaar
     SUBDIR += sortu

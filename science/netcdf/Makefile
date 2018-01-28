@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/science/netcdf/Makefile 452602 2017-10-21 20:18:16Z sunpoet $
+# $FreeBSD: head/science/netcdf/Makefile 460017 2018-01-26 18:10:57Z sunpoet $
 
 PORTNAME=	netcdf
-PORTVERSION=	4.5.0
+PORTVERSION=	4.6.0
 CATEGORIES=	science
 MASTER_SITES=	http://www.unidata.ucar.edu/downloads/netcdf/ftp/ \
 		ftp://ftp.unidata.ucar.edu/pub/netcdf/ \
@@ -25,7 +25,7 @@ OPTIONS_DEFAULT=DAP SZIP
 DAP_DESC=	Build DAP client and remote testing
 SZIP_DESC=	SZIP support (required if HDF5 was built with SZIP)
 
-CONFIGURE_ARGS=	--enable-netcdf-4
+CONFIGURE_ARGS=	--disable-filter-testing --enable-netcdf-4
 CPPFLAGS+=	-fPIC -DPIC
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
@@ -44,7 +44,6 @@ SZIP_LIBS=		-lsz
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|-ldl ||g' ${WRKSRC}/configure
-	@${REINPLACE_CMD} -e 's|mmap|_&|g' ${WRKSRC}/nc_test/tst_diskless.c ${WRKSRC}/nc_test/tst_diskless3.c
 
 post-build-DOXYGEN-on:
 	cd ${WRKSRC}/docs/ && ${LOCALBASE}/bin/doxygen .

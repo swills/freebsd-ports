@@ -1,8 +1,8 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/devel/p5-Devel-CheckOS/Makefile 446764 2017-07-27 16:48:52Z culot $
+# $FreeBSD: head/devel/p5-Devel-CheckOS/Makefile 459942 2018-01-25 13:53:11Z culot $
 
 PORTNAME=	Devel-CheckOS
-PORTVERSION=	1.80
+PORTVERSION=	1.81
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -17,6 +17,7 @@ BUILD_DEPENDS=	p5-Data-Compare>=1.2100:devel/p5-Data-Compare \
 		p5-File-Find-Rule>=0.28:devel/p5-File-Find-Rule
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

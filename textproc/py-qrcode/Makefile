@@ -1,14 +1,14 @@
 # Created by: Neil Booth
-# $FreeBSD: head/textproc/py-qrcode/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-qrcode/Makefile 460054 2018-01-26 21:56:10Z leres $
 
 PORTNAME=	qrcode
 PORTVERSION=	5.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	kyuupichan@gmail.com
+MAINTAINER=	leres@FreeBSD.org
 COMMENT=	QR Code image generator
 
 LICENSE=	BSD3CLAUSE
@@ -18,5 +18,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.8:devel/py-six@${FLAVOR} \
 
 USES=		python
 USE_PYTHON=	autoplist distutils
+
+post-patch:
+	${REINPLACE_CMD} -e 's|share/\(man/man1\)|\1|' ${WRKSRC}/setup.py
 
 .include <bsd.port.mk>

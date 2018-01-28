@@ -1,8 +1,8 @@
 # Created by: Harald Wille <harald.wille@students.jku.at>
-# $FreeBSD: head/misc/wmweather+/Makefile 430750 2017-01-06 21:16:19Z vanilla $
+# $FreeBSD: head/misc/wmweather+/Makefile 459850 2018-01-24 18:26:58Z rm $
 
 PORTNAME=	wmweather+
-PORTVERSION=	2.16
+PORTVERSION=	2.17
 CATEGORIES=	misc windowmaker geography
 MASTER_SITES=	SF/wmweatherplus/wmweather%2B/ \
 		SF/nemysisfreebsdp/misc/:icons

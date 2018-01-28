@@ -1,16 +1,20 @@
 #!/bin/sh
 # MAINTAINER: portmgr@FreeBSD.org
-# $FreeBSD: head/Mk/Scripts/depends-list.sh 458056 2018-01-04 20:01:46Z bdrewery $
+# $FreeBSD: head/Mk/Scripts/depends-list.sh 459882 2018-01-24 18:54:57Z bdrewery $
 
 set -e
 
 . ${dp_SCRIPTSDIR}/functions.sh
 
+flavors=0
 recursive=0
 missing=0
 requires_wrkdir=0
-while getopts "mrw" FLAG; do
+while getopts "fmrw" FLAG; do
 	case "${FLAG}" in
+		f)
+			flavors=1
+			;;
 		m)
 			missing=1
 			recursive=1
@@ -71,14 +75,19 @@ check_dep() {
 			d=${d%@*}
 			;;
 		esac
+		if [ ${flavors} -eq 1 -a -n "${FLAVOR:-}" ]; then
+			port_display="${d}@${FLAVOR}"
+		else
+			port_display="${d}"
+		fi
 
 		case " ${checked} " in
 			*\ ${d}\ *) continue ;; # Already checked
 		esac
 		checked="${checked} ${d}"
 		# Check if the dependency actually exists or skip otherwise.
-		if [ ! -d ${d} ]; then
-			echo "${dp_PKGNAME}: \"${d}\" non-existent -- dependency list incomplete" >&2
+		if [ ! -d "${d}" ]; then
+			echo "${dp_PKGNAME}: \"${port_display}\" non-existent -- dependency list incomplete" >&2
 			continue
 		fi
 
@@ -104,7 +113,7 @@ check_dep() {
 		if [ ${requires_wrkdir} -eq 1 ] && ! [ -d "${wrkdir}" ]; then
 			show_dep=0
 		fi
-		[ ${show_dep} -eq 1 ] && echo ${d}
+		[ ${show_dep} -eq 1 ] && echo "${port_display}"
 		if [ ${recursive} -eq 1 -o ${requires_wrkdir} -eq 1 -a ${show_dep} -eq 1 ]; then
 			check_dep $@
 		fi

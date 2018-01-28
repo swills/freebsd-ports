@@ -1,5 +1,5 @@
 # Created by: Brian Buchanan <brian@CSUA.Berkeley.EDU>
-# $FreeBSD: head/games/flightgear-data/Makefile 455765 2017-12-08 01:46:00Z linimon $
+# $FreeBSD: head/games/flightgear-data/Makefile 459919 2018-01-25 11:07:50Z martymac $
 
 PORTNAME=	flightgear-data
 PORTVERSION=	2017.3.1
@@ -12,6 +12,9 @@ COMMENT=	FlightGear scenery, textures, and aircraft models
 
 LICENSE=	GPLv2
 
+BROKEN_aarch64=		Fails to install: runaway process
+BROKEN_mips64=		Fails to install: runaway process
+
 NO_BUILD=	yes
 USES=		tar:bzip2
 WRKSRC=		${WRKDIR}/fgdata
@@ -19,9 +22,6 @@ DATADIR=	${PREFIX}/share/flightgear
 
 PLIST=		${WRKDIR}/pkg-plist
 PLIST_DIRS=	%%DATADIR%%
-
-BROKEN_aarch64=		Fails to install: runaway process
-BROKEN_mips64=		Fails to install: runaway process
 
 post-patch:
 	@${RM} ${WRKSRC}/COPYING

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/science/mpb/Makefile 459622 2018-01-21 18:21:55Z gerald $
+# $FreeBSD: head/science/mpb/Makefile 459910 2018-01-25 07:52:54Z jbeich $
 
 PORTNAME=	mpb
 PORTVERSION=	1.5
@@ -32,10 +32,6 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 NLOPT_LIB_DEPENDS=	libnlopt.so:math/nlopt
 
 .include <bsd.port.options.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} > 1200051
-USE_GCC=	yes
-.endif
 
 .if ${PORT_OPTIONS:MATLAS}
 LIB_DEPENDS+=	libatlas.so:math/atlas

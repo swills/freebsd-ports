@@ -1,6 +1,7 @@
-# $FreeBSD: head/games/openbor4432/Makefile 440514 2017-05-09 20:57:05Z jbeich $
+# $FreeBSD: head/games/openbor4432/Makefile 459963 2018-01-25 21:20:12Z jbeich $
 
 PORTVERSION=	4432
+PORTREVISION=	1
 PKGNAMESUFFIX=	${PORTVERSION}
 
 MASTERDIR=	${.CURDIR}/../openbor

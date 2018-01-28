@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-jupyter_client/Makefile 458068 2018-01-04 20:11:43Z sunpoet $
+# $FreeBSD: head/devel/py-jupyter_client/Makefile 459937 2018-01-25 13:07:06Z sunpoet $
 
 PORTNAME=	jupyter_client
-PORTVERSION=	5.2.1
+PORTVERSION=	5.2.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.md
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=2.1:devel/py-dateutil@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}jupyter_core>=0:devel/py-jupyter_core@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyzmq>=13:net/py-pyzmq@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tornado>=4.1:www/py-tornado@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}traitlets>=0:devel/py-traitlets@${FLAVOR}
 
 NO_ARCH=	yes

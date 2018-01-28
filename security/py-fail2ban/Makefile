@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-fail2ban/Makefile 459794 2018-01-23 20:13:52Z pi $
+# $FreeBSD: head/security/py-fail2ban/Makefile 459924 2018-01-25 12:37:06Z mat $
 
 PORTNAME=	fail2ban
 PORTVERSION=	0.10.2
@@ -15,7 +15,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR}
 
 OPTIONS_DEFINE=	DOCS
 
-USES=		python shebangfix
+USES=		python:patch shebangfix
 USE_GITHUB=	yes
 USE_PYTHON=	autoplist distutils
 USE_RC_SUBR=	fail2ban

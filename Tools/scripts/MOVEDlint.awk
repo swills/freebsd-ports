@@ -25,7 +25,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 #
-# $FreeBSD: head/Tools/scripts/MOVEDlint.awk 455205 2017-11-30 15:33:29Z mat $
+# $FreeBSD: head/Tools/scripts/MOVEDlint.awk 459958 2018-01-25 20:56:18Z bdrewery $
 #
 # MOVEDlint - check MOVED for consistency
 #
@@ -74,6 +74,13 @@ $3 !~ /^20[0-3][0-9]-[01][0-9]-[0-3][0-9]$/ {
 }
 
 {
+    if ($1 in srcs) {
+        printf "%5d: %s has duplicate entries\n", NR, $1 | sort
+        error[NR] = 1
+        next
+    }
+    srcs[$1] = 1
+
     if (lastdate > $3) {
         printf "%5d: date going backwards from %s to %s\n", NR, lastdate, $3 | sort
         error[NR] = 1

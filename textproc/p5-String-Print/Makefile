@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-String-Print/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-String-Print/Makefile 460019 2018-01-26 18:11:07Z sunpoet $
 
 PORTNAME=	String-Print
-PORTVERSION=	0.92
+PORTVERSION=	0.93
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

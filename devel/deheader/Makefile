@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/deheader/Makefile 458818 2018-01-12 11:21:07Z rene $
+# $FreeBSD: head/devel/deheader/Makefile 460118 2018-01-27 12:48:26Z amdmi3 $
 
 PORTNAME=	deheader
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.catb.org/esr/deheader/
 
@@ -11,8 +12,10 @@ COMMENT=	Tool to find unnecessary includes in C/C++ files
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+USES=		python shebangfix
+SHEBANG_FILES=	${PORTNAME}
 NO_BUILD=	yes
-USES=		python
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/deheader man/man1/deheader.1.gz
 

@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/rubygem-rails4/Makefile 450844 2017-09-28 11:02:38Z sunpoet $
+# $FreeBSD: head/www/rubygem-rails4/Makefile 460140 2018-01-27 18:42:55Z sunpoet $
 
 PORTNAME=	rails
 PORTVERSION=	4.2.10
@@ -54,6 +54,6 @@ PASSENGER_DESC=	Passenger backend
 MEMCACHE_CLIENT_DESC=	MemCache-Client support
 
 MEMCACHE_CLIENT_RUN_DEPENDS=	rubygem-memcache-client>=1.2.0:databases/rubygem-memcache-client
-PASSENGER_RUN_DEPENDS=	rubygem-passenger>=2.2.15:www/rubygem-passenger
+PASSENGER_RUN_DEPENDS=	rubygem-passenger-*>=2.2.15:www/rubygem-passenger
 
 .include <bsd.port.mk>

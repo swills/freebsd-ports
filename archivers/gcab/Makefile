@@ -1,8 +1,8 @@
 # Created by: kwm@FreeBSD.org
-# $FreeBSD: head/archivers/gcab/Makefile 437511 2017-04-02 00:04:21Z bapt $
+# $FreeBSD: head/archivers/gcab/Makefile 460078 2018-01-27 09:13:06Z kwm $
 
 PORTNAME=	gcab
-PORTVERSION=	0.7
+PORTVERSION=	0.8
 CATEGORIES=	archivers gnome
 MASTER_SITES=	GNOME
 

@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Minion/Makefile 456655 2017-12-18 17:17:25Z sunpoet $
+# $FreeBSD: head/devel/p5-Minion/Makefile 460095 2018-01-27 10:24:19Z sunpoet $
 
 PORTNAME=	Minion
-PORTVERSION=	8.08
+PORTVERSION=	8.09
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:SRI

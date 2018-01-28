@@ -1,9 +1,9 @@
 # Created by: Andrew Thompson <andy@fud.org.nz>
-# $FreeBSD: head/multimedia/handbrake/Makefile 458807 2018-01-12 08:51:04Z tobik $
+# $FreeBSD: head/multimedia/handbrake/Makefile 459963 2018-01-25 21:20:12Z jbeich $
 
 PORTNAME=	handbrake
 PORTVERSION=	1.0.7
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	multimedia
 DIST_SUBDIR=	${PORTNAME}
 

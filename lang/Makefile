@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 459751 2018-01-23 13:58:22Z ale $
+# $FreeBSD: head/lang/Makefile 460155 2018-01-28 01:39:12Z rene $
 #
 
     COMMENT = Programming languages
@@ -88,6 +88,7 @@
     SUBDIR += fpc-units
     SUBDIR += fpc-utils
     SUBDIR += fsharp
+    SUBDIR += fth
     SUBDIR += gambit-c
     SUBDIR += gauche
     SUBDIR += gawk
@@ -103,7 +104,6 @@
     SUBDIR += gcc7
     SUBDIR += gcc7-devel
     SUBDIR += gcc8-devel
-    SUBDIR += gcl
     SUBDIR += gforth
     SUBDIR += ghc
     SUBDIR += gjs
@@ -261,12 +261,11 @@
     SUBDIR += php72-extensions
     SUBDIR += php_doc
     SUBDIR += picoc
-    SUBDIR += pike78
     SUBDIR += pocl
     SUBDIR += polyml
     SUBDIR += ptoc
     SUBDIR += pure
-    SUBDIR += py-clojure
+    SUBDIR += py-clojure_py
     SUBDIR += py-hy
     SUBDIR += py-mx-base
     SUBDIR += py-prolog

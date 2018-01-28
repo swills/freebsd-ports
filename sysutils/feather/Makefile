@@ -1,9 +1,10 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/sysutils/feather/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/sysutils/feather/Makefile 460119 2018-01-27 12:48:26Z amdmi3 $
 
 PORTNAME=	feather
 PORTVERSION=	1.3.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	sysutils python
 
 MAINTAINER=	ports@FreeBSD.org
@@ -12,20 +13,22 @@ COMMENT=	Python script for managing tarsnap backups
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=0:devel/py-yaml@${PY_FLAVOR} \
 		tarsnap>=0:sysutils/tarsnap
 
-USES=		python:2,run
-NO_BUILD=	yes
-NO_ARCH=	yes
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	danrue
 
+USES=		python:2,run shebangfix
+SHEBANG_FILES=	${PORTNAME}
+NO_BUILD=	yes
+NO_ARCH=	yes
+
 SUB_FILES=	pkg-message
+
+PLIST_FILES=	bin/feather etc/feather.yaml.dist
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 PORTDOCS=	README.md
 PORTEXAMPLES=	feather.cron.d.example
-PLIST_FILES=	bin/feather etc/feather.yaml.dist
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/feather ${STAGEDIR}${PREFIX}/bin

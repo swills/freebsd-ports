@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/sysutils/dvdvideo/Makefile 458616 2018-01-10 09:00:50Z amdmi3 $
+# $FreeBSD: head/sysutils/dvdvideo/Makefile 459921 2018-01-25 11:41:21Z martymac $
 
 PORTNAME=	dvdvideo
 PORTVERSION=	20130117
@@ -7,6 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	sysutils multimedia
 MASTER_SITES=	http://contribs.martymac.org/FreeBSD-ports/distfiles/ \
 		LOCAL/martymac
+PKGNAMESUFFIX=	${PYTHON_PKGNAMESUFFIX}
 DISTNAME=	python-${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	martymac@FreeBSD.org
@@ -17,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 NO_ARCH=	yes
 USES=		python:3.4+ tar:tgz
-USE_PYTHON=	autoplist distutils optsuffix
+USE_PYTHON=	autoplist distutils
 
 OPTIONS_DEFINE=	DVDCSS
 .if !defined(PACKAGE_BUILDING)

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/gearmand-devel/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/devel/gearmand-devel/Makefile 460065 2018-01-27 00:34:13Z bdrewery $
 
 PORTNAME=	gearmand
 PORTVERSION=	1.1.8
@@ -29,6 +29,7 @@ USES=		pathfix perl5 gmake gperf libtool python:build
 USE_LDCONFIG=	yes
 USE_RC_SUBR=	gearmand
 SUB_LIST+=	USERS=${USERS} GROUPS=${GROUPS}
+USE_CXXSTD=	gnu++98
 
 CONFIGURE_ARGS+=--with-lib-prefix=${LOCALBASE} --with-boost=${LOCALBASE} \
 		--localstatedir=/var/db/${PORTNAME} --enable-static

@@ -1,5 +1,5 @@
 # Created by: Horia Racoviceanu <horia@racoviceanu.com>
-# $FreeBSD: head/textproc/py-cloud_sptheme/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-cloud_sptheme/Makefile 460025 2018-01-26 18:12:00Z sunpoet $
 
 PORTNAME=	cloud_sptheme
 PORTVERSION=	1.8.3
@@ -8,7 +8,7 @@ MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DIST_SUBDIR=	python
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Sphinx theme
 
 LICENSE=	BSD3CLAUSE

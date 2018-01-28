@@ -1,5 +1,5 @@
 # Created by: Olivier Cochard-Labbe <olivier@FreeBSD.org>
-# $FreeBSD: head/security/gputty/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/gputty/Makefile 460076 2018-01-27 09:02:08Z amdmi3 $
 
 PORTNAME=	gputty
 PORTVERSION=	0.9.10
@@ -9,7 +9,8 @@ MASTER_SITES=	http://www.defora.org/os/download/download/3381/
 MAINTAINER=	olivier@FreeBSD.org
 COMMENT=	Frontend to the SSH client, using the Gtk+ toolkit
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libSystem.so:devel/deforaos-libsystem
 

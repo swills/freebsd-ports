@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-iCal-Parser/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-iCal-Parser/Makefile 460094 2018-01-27 10:24:13Z sunpoet $
 
 PORTNAME=	iCal-Parser
 PORTVERSION=	1.20
@@ -11,7 +11,7 @@ MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Parse iCalendar files into a data structure
 
 BUILD_DEPENDS=	p5-IO-String>=0:devel/p5-IO-String \
-	p5-FreezeThaw>=0.43:devel/p5-FreezeThaw \
+	p5-FreezeThaw>=0.4300:devel/p5-FreezeThaw \
 	p5-DateTime-Format-ICal>=0.08:devel/p5-DateTime-Format-ICal \
 	p5-Text-vFile-asData>=0.02:devel/p5-Text-vFile-asData
 RUN_DEPENDS:=	${BUILD_DEPENDS}

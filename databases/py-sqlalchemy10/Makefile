@@ -1,5 +1,5 @@
 # Created by: Dryice Dong Liu <dryice@dryice.name>
-# $FreeBSD: head/databases/py-sqlalchemy10/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/py-sqlalchemy10/Makefile 459861 2018-01-24 18:45:26Z sunpoet $
 
 PORTNAME=	sqlalchemy
 PORTVERSION=	1.0.14
@@ -24,7 +24,7 @@ PY2TO3_CMD=	${LOCALBASE}/bin/2to3-${PYTHON_VER}
 PY2TO3_ARGS=	--no-diffs --nobackups --verbose --write
 TEST_TARGET=	do-test
 
-CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}sqlalchemy0[6789]*
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}sqlalchemy0[6789]* ${PYTHON_PKGNAMEPREFIX}sqlalchemy1[12]
 
 OPTIONS_DEFINE=		DOCS EXAMPLES
 OPTIONS_MULTI=		BACKEND

@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@FreeBSD.org>
-# $FreeBSD: head/games/flightgear-mb339-pan/Makefile 440858 2017-05-13 23:21:37Z linimon $
+# $FreeBSD: head/games/flightgear-mb339-pan/Makefile 459919 2018-01-25 11:07:50Z martymac $
 
 PORTNAME=	flightgear-mb339-pan
 PORTVERSION=	2.1
@@ -11,11 +11,11 @@ DISTNAME=	mb339pan_${PORTVERSION}
 MAINTAINER=	martymac@FreeBSD.org
 COMMENT=	Simulation of the MB-339 PAN aerobatic jet
 
+BROKEN_powerpc64=	fails to build: runaway process
+
 RUN_DEPENDS=	${LOCALBASE}/share/flightgear/version:games/flightgear-data
 
 RESTRICTED=	Redistribution prohibited
-
-BROKEN_powerpc64=	fails to build: runaway process
 
 NO_BUILD=	yes
 USES=		zip

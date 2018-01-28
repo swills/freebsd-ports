@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/dateutils/Makefile 440860 2017-05-13 23:50:49Z linimon $
+# $FreeBSD: head/sysutils/dateutils/Makefile 460010 2018-01-26 17:10:42Z danfe $
 
 PORTNAME=	dateutils
 PORTVERSION=	0.4.1
@@ -13,9 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	help2man:misc/help2man
 
-BROKEN_powerpc64=	fails to compile: sysctl.h: expected declaration specifiers or ... before u_int
-
-USES=		pathfix tar:xz
+USES=		tar:xz
 GNU_CONFIGURE=	yes
 
 INFO=		dateutils

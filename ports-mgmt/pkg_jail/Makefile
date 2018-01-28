@@ -1,7 +1,7 @@
-# $FreeBSD: head/ports-mgmt/pkg_jail/Makefile 446867 2017-07-29 06:02:24Z dinoex $
+# $FreeBSD: head/ports-mgmt/pkg_jail/Makefile 460107 2018-01-27 11:20:47Z dinoex $
 
 PORTNAME=	pkg_jail
-PORTVERSION=	1.92
+PORTVERSION=	1.93
 CATEGORIES=	ports-mgmt
 MASTER_SITES=	# empty
 DISTFILES=	# empty

@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/py-DendroPy/Makefile 459546 2018-01-20 20:08:15Z antoine $
+# $FreeBSD: head/science/py-DendroPy/Makefile 460143 2018-01-27 19:16:04Z cs $
 
 PORTNAME=	DendroPy
-PORTVERSION=	4.2.0
+PORTVERSION=	4.3.0
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

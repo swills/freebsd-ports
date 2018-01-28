@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-ransack/Makefile 451780 2017-10-11 19:49:36Z sunpoet $
+# $FreeBSD: head/devel/rubygem-ransack/Makefile 460088 2018-01-27 10:23:42Z sunpoet $
 
 PORTNAME=	ransack
-PORTVERSION=	1.8.4
+PORTVERSION=	1.8.6
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -16,7 +16,7 @@ RUN_DEPENDS=	rubygem-actionpack4>=3.0:www/rubygem-actionpack4 \
 		rubygem-activerecord4>=3.0:databases/rubygem-activerecord4 \
 		rubygem-activesupport4>=3.0:devel/rubygem-activesupport4 \
 		rubygem-i18n>=0:devel/rubygem-i18n \
-		rubygem-polyamorous>=1.3:devel/rubygem-polyamorous
+		rubygem-polyamorous>=1.3.2:devel/rubygem-polyamorous
 
 NO_ARCH=	yes
 USE_RUBY=	yes

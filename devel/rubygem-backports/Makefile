@@ -1,8 +1,8 @@
 # Created by: Bryan Drewery <bryan@shatow.net>
-# $FreeBSD: head/devel/rubygem-backports/Makefile 457339 2017-12-26 23:20:59Z sunpoet $
+# $FreeBSD: head/devel/rubygem-backports/Makefile 460035 2018-01-26 18:12:53Z sunpoet $
 
 PORTNAME=	backports
-PORTVERSION=	3.11.0
+PORTVERSION=	3.11.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

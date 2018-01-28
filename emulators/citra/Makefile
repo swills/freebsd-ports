@@ -1,7 +1,7 @@
-# $FreeBSD: head/emulators/citra/Makefile 459717 2018-01-23 00:51:48Z jbeich $
+# $FreeBSD: head/emulators/citra/Makefile 460069 2018-01-27 00:54:31Z jbeich $
 
 PORTNAME=	citra
-PORTVERSION=	s20180122
+PORTVERSION=	s20180127
 PORTREVISION?=	0
 CATEGORIES=	emulators
 
@@ -26,7 +26,7 @@ ONLY_FOR_ARCHS_REASON=	https://github.com/MerryMage/dynarmic/issues/35
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	citra-emu
-GH_TAGNAME=	0e8c25fd
+GH_TAGNAME=	5a57578c
 GH_TUPLE=	citra-emu:ext-soundtouch:019d208:soundtouch/externals/soundtouch \
 		MerryMage:dynarmic:4110494:dynarmic/externals/dynarmic \
 		benhoyt:inih:r40:inih/externals/inih/inih \

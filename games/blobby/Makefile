@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/games/blobby/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/games/blobby/Makefile 459919 2018-01-25 11:07:50Z martymac $
 
 PORTNAME=	blobby
 PORTVERSION=	1.0
@@ -15,13 +15,13 @@ COMMENT=	Official continuation of the famous Blobby Volley 1.x game
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libphysfs.so:devel/physfs
-BUILD_DEPENDS=	zip:archivers/zip \
-		${LOCALBASE}/include/boost/crc.hpp:devel/boost-libs
-
 BROKEN_powerpc64=	fails to build: cc1plus: unrecognized command line option "-std=c++11"
 NOT_FOR_ARCHS=		aarch64
 NOT_FOR_ARCHS_REASON=	fails to compile: I can't tell what endian-ness to use for your architecture
+
+LIB_DEPENDS=	libphysfs.so:devel/physfs
+BUILD_DEPENDS=	zip:archivers/zip \
+		${LOCALBASE}/include/boost/crc.hpp:devel/boost-libs
 
 USES=		cmake dos2unix localbase:ldflags pkgconfig
 DOS2UNIX_REGEX=	.*\.(c|h|cpp)

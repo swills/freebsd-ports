@@ -1,4 +1,4 @@
-# $FreeBSD: head/ports-mgmt/Makefile 451060 2017-10-01 20:43:01Z rene $
+# $FreeBSD: head/ports-mgmt/Makefile 459945 2018-01-25 14:45:04Z rodrigo $
 #
 
     COMMENT = Ports for managing, installing, and developing FreeBSD ports and packages
@@ -28,6 +28,7 @@
     SUBDIR += pkg
     SUBDIR += pkg-devel
     SUBDIR += pkg-plist
+    SUBDIR += pkg-provides
     SUBDIR += pkg-rmleaf
     SUBDIR += pkg_cleanup
     SUBDIR += pkg_cutleaves

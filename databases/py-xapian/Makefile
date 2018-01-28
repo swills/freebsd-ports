@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/py-xapian/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/py-xapian/Makefile 459929 2018-01-25 13:06:23Z sunpoet $
 
 PORTNAME=	xapian
 PORTVERSION=	1.4.5
@@ -17,8 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_aarch64=	fails to build: Fatal Python error: swig_pythreadstate set in XapianSWIG_Python_Thread_Allow ctor
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=1.4.8:textproc/py-sphinx@${FLAVOR} \
-		xapian-core>=${PORTVERSION}:databases/xapian-core
+BUILD_DEPENDS=	xapian-core>=${PORTVERSION}:databases/xapian-core
 LIB_DEPENDS=	libxapian.so:databases/xapian-core
 
 CONFLICTS_INSTALL=	xapian-bindings12
@@ -37,6 +36,8 @@ USES=		libtool python tar:xz
 USE_PYTHON=	flavors
 
 PORTDOCS=	*
+
+DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=1.4.8:textproc/py-sphinx@${FLAVOR}
 
 .include <bsd.port.pre.mk>
 

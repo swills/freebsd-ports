@@ -1,8 +1,8 @@
 # Created by: Gerhard Häring <gh@ghaering.de>
-# $FreeBSD: head/sysutils/duplicity/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/sysutils/duplicity/Makefile 460150 2018-01-27 20:14:28Z dbaio $
 
 PORTNAME=	duplicity
-PORTVERSION=	0.7.15
+PORTVERSION=	0.7.16
 CATEGORIES=	sysutils
 MASTER_SITES=	http://launchpad.net/duplicity/0.7-series/${PORTVERSION}/+download/
 
@@ -15,9 +15,11 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	librsync.so:net/librsync2
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}fasteners>=0:devel/py-fasteners@${FLAVOR}
 
-USES=		python:2
+USES=		python:2.7 shebangfix
 USE_PYTHON=	autoplist distutils
 USE_LDCONFIG=	yes
+
+SHEBANG_FILES=	bin/duplicity bin/rdiffdir
 
 PORTDOCS=	CHANGELOG COPYING README README-REPO README-LOG
 
@@ -26,7 +28,7 @@ OPTIONS_GROUP=		GPG SSH
 OPTIONS_SINGLE=		GPG
 OPTIONS_SINGLE_GPG=	GNUPG GNUPG2
 OPTIONS_GROUP_SSH=	PARAMIKO PEXPECT
-OPTIONS_DEFAULT=	FTP FTPS GNUPG PARAMIKO S3
+OPTIONS_DEFAULT=	FTP FTPS GNUPG PARAMIKO PEXPECT S3
 FTP_DESC=		FTP backend
 FTPS_DESC=		FTPS backend
 GDOCS_DESC=		Google Docs backend

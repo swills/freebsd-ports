@@ -1,5 +1,5 @@
 # Created by: fjoe@FreeBSD.org
-# $FreeBSD: head/x11-toolkits/wxgtk28/Makefile 443053 2017-06-10 01:51:02Z sunpoet $
+# $FreeBSD: head/x11-toolkits/wxgtk28/Makefile 459890 2018-01-24 21:33:05Z antoine $
 
 PORTNAME=	wx
 PORTVERSION=	2.8.12
@@ -17,6 +17,7 @@ LIB_DEPENDS+=	libpng.so:graphics/png\
 		libexpat.so:textproc/expat2
 
 USES=		compiler gmake iconv jpeg pkgconfig tar:bzip2
+USE_CXXSTD=	gnu++98
 USE_XORG=	x11 sm xxf86vm xinerama
 USE_GL=		glu
 USE_GNOME=	gtk20 pangox-compat

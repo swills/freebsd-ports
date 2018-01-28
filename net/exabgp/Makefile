@@ -1,9 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/exabgp/Makefile 453711 2017-11-07 23:31:01Z zi $
+# $FreeBSD: head/net/exabgp/Makefile 459951 2018-01-25 17:35:41Z zi $
 
 PORTNAME=	exabgp
-PORTVERSION=	3.4.20
-PORTREVISION=	1
+PORTVERSION=	3.4.21
 CATEGORIES=	net
 MASTER_SITES=	GH \
 		ZI
@@ -18,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Exa-Networks
-USES=		python:2
+USES=		python:2.7
 SUB_FILES=	pkg-message exabgp.sh
 SUB_LIST=	PYTHON_LIBDIR=${PYTHON_LIBDIR} PYTHON_CMD=${PYTHON_CMD} \
 		PYTHON_SITELIBDIR=${PYTHON_SITELIBDIR}

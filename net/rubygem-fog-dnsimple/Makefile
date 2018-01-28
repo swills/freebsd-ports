@@ -1,9 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-dnsimple/Makefile 458260 2018-01-06 13:51:08Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-dnsimple/Makefile 459865 2018-01-24 18:45:46Z sunpoet $
 
 PORTNAME=	fog-dnsimple
-PORTVERSION=	1.0.0
-PORTREVISION=	1
+PORTVERSION=	2.0.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

@@ -1,12 +1,12 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/zeronet/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/zeronet/Makefile 460147 2018-01-27 19:48:43Z yuri $
 
 PORTNAME=	zeronet
-PORTVERSION=	0.6.0
 DISTVERSIONPREFIX=	v
+DISTVERSION=	0.6.1
 CATEGORIES=	security net-p2p
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Decentralized websites using Bitcoin crypto and BitTorrent network
 
 LICENSE=	GPLv2
