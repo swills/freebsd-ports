@@ -1,9 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc7/Makefile 455404 2017-12-03 13:33:02Z gerald $
+# $FreeBSD: head/lang/gcc7/Makefile 459981 2018-01-26 09:50:19Z gerald $
 
 PORTNAME=	gcc
-PORTVERSION=	7.2.0
-PORTREVISION=	4
+PORTVERSION=	7.3.0
 CATEGORIES=	lang
 MASTER_SITES=	GCC/releases/gcc-${DISTVERSION}
 PKGNAMESUFFIX=	${SUFFIX}

@@ -1,8 +1,8 @@
-# $FreeBSD: head/print/tex-xetex/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/print/tex-xetex/Makefile 460105 2018-01-27 11:14:19Z tcberner $
 
 PORTNAME=	xetex
 PORTVERSION=	0.99992
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	print
 MASTER_SITES=	ftp://tug.org/historic/systems/texlive/2015/
 PKGNAMEPREFIX=	tex-
@@ -25,7 +25,7 @@ LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 		libTECkit.so:textproc/teckit
 
 USES=		pkgconfig tar:xz
-USE_TEX=	kpathsea web2c texmf formats fmtutil
+USE_TEX=	kpathsea web2c texmf formats fmtutil dvipdfmx
 USE_XORG=	pixman
 USE_GNOME=	cairo
 TEXHASHDIRS=	${TEXMFDISTDIR} ${TEXMFVARDIR}

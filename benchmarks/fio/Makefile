@@ -1,5 +1,5 @@
 # Created by: luigi@FreeBSD.org
-# $FreeBSD: head/benchmarks/fio/Makefile 458289 2018-01-06 21:11:13Z bapt $
+# $FreeBSD: head/benchmarks/fio/Makefile 459947 2018-01-25 15:04:07Z bapt $
 
 PORTNAME=	fio
 PORTVERSION=	3.3
@@ -18,9 +18,8 @@ GNUPLOT_DESC=	Support for plotting graphs
 
 GNUPLOT_BUILD_DEPENDS=	${LOCALBASE}/bin/gnuplot:math/gnuplot
 
-BROKEN_aarch64=		Fails to compile: error: sys/auxv.h file not found
-BROKEN_armv6=		Fails to compile: error: use of undeclared identifier nop
-BROKEN_powerpc64=	Fails to compile: verify.c:1574: undefined reference to bswap64
+BROKEN_aarch64=		Fails to compile: undefined symbol: getauxval
+BROKEN_armv6=		Fails to compile: unsupported ARM architecture
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/fio ${STAGEDIR}${PREFIX}/bin

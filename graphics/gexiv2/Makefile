@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/graphics/gexiv2/Makefile 441468 2017-05-22 16:04:19Z linimon $
+# $FreeBSD: head/graphics/gexiv2/Makefile 460049 2018-01-26 19:35:51Z linimon $
 
 PORTNAME=	gexiv2
 PORTVERSION=	0.10.6
@@ -15,8 +15,6 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	gm4:devel/m4 \
 		vala>=0:lang/vala
 LIB_DEPENDS=	libexiv2.so:graphics/exiv2
-
-BROKEN_powerpc64=	fails to compile: gexiv2-metadata-gps.cpp: 'overflow_error' is not a member of 'std'
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--enable-introspection=yes \

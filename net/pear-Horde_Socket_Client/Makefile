@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/net/pear-Horde_Socket_Client/Makefile 411757 2016-03-24 07:39:22Z mm $
+# $FreeBSD: head/net/pear-Horde_Socket_Client/Makefile 459953 2018-01-25 18:59:26Z joneum $
 
 PORTNAME=	Horde_Socket_Client
-PORTVERSION=	2.1.1
+DISTVERSION=	2.1.2
 CATEGORIES=	net www pear
 
 MAINTAINER=	horde@FreeBSD.org

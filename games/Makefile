@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 456988 2017-12-22 16:30:01Z amdmi3 $
+# $FreeBSD: head/games/Makefile 460155 2018-01-28 01:39:12Z rene $
 #
 
     COMMENT = Games and related software
@@ -72,7 +72,6 @@
     SUBDIR += awale
     SUBDIR += awele
     SUBDIR += balazar
-    SUBDIR += balazarbrothers
     SUBDIR += ballerburg
     SUBDIR += banihstypos
     SUBDIR += barbie_seahorse_adventures
@@ -151,7 +150,6 @@
     SUBDIR += cgoban
     SUBDIR += chanta
     SUBDIR += chapping
-    SUBDIR += cheech
     SUBDIR += chessx
     SUBDIR += childsplay
     SUBDIR += chocolate-doom
@@ -337,7 +335,6 @@
     SUBDIR += ggz-txt-client
     SUBDIR += gigalomania
     SUBDIR += gillo
-    SUBDIR += gish-demo
     SUBDIR += gl-117
     SUBDIR += glaxium
     SUBDIR += glbsp
@@ -477,6 +474,7 @@
     SUBDIR += kcheckers
     SUBDIR += kdegames4
     SUBDIR += kdiamond
+    SUBDIR += keeperrl
     SUBDIR += kevedit
     SUBDIR += kfourinline
     SUBDIR += kgoldrunner
@@ -532,7 +530,6 @@
     SUBDIR += liblcf
     SUBDIR += libmaitretarot
     SUBDIR += libmt_client
-    SUBDIR += libretro-cores
     SUBDIR += libshhcards
     SUBDIR += lightsoff
     SUBDIR += lightyears
@@ -696,6 +693,7 @@
     SUBDIR += opencity
     SUBDIR += openclaw
     SUBDIR += openclonk
+    SUBDIR += opendungeons
     SUBDIR += opengfx
     SUBDIR += openglad
     SUBDIR += openjazz

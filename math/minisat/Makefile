@@ -1,9 +1,9 @@
 # Created by: Vsevolod Stakhov <vsevolod@FreeBSD.org>
-# $FreeBSD: head/math/minisat/Makefile 390672 2015-06-26 23:10:09Z amdmi3 $
+# $FreeBSD: head/math/minisat/Makefile 459914 2018-01-25 09:04:31Z vsevolod $
 
 PORTNAME=	minisat
 PORTVERSION=	2.2.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math devel
 MASTER_SITES=	http://highsecure.ru/distfiles/
 

@@ -1,5 +1,5 @@
 # Created by: Victor Yagofarov <xnasx@yandex.ru>
-# $FreeBSD: head/net/librdkafka/Makefile 457380 2017-12-27 17:47:08Z danfe $
+# $FreeBSD: head/net/librdkafka/Makefile 460116 2018-01-27 12:44:00Z pizzamig $
 
 PORTNAME=	librdkafka
 PORTVERSION=	0.11.3
@@ -29,6 +29,12 @@ MAKE_ARGS=	pkgconfigdir=${PREFIX}/libdata/pkgconfig
 CONFIGURE_ARGS+=	--disable-sasl --enable-ssl
 
 USE_LDCONFIG=	yes
+
+.include <bsd.port.options.mk>
+
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200056 && ${ARCH} == i386
+BROKEN=	undefined reference to '__atomic_fetch_add_8'
+.endif
 
 post-patch:
 	${REINPLACE_CMD} -e \

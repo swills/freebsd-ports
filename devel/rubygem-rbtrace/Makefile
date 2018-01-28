@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-rbtrace/Makefile 457985 2018-01-03 16:46:24Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rbtrace/Makefile 459876 2018-01-24 18:46:44Z sunpoet $
 
 PORTNAME=	rbtrace
-PORTVERSION=	0.4.9
+PORTVERSION=	0.4.10
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

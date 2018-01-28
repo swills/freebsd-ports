@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/sysutils/rubygem-chef-config/Makefile 457521 2017-12-29 18:47:00Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-chef-config/Makefile 460110 2018-01-27 11:38:38Z sunpoet $
 
 PORTNAME=	chef-config
-PORTVERSION=	13.6.4
+PORTVERSION=	13.7.16
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
@@ -15,7 +15,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	rubygem-addressable>=0:www/rubygem-addressable \
 		rubygem-fuzzyurl>=0:www/rubygem-fuzzyurl \
 		rubygem-mixlib-config>=2.0:devel/rubygem-mixlib-config \
-		rubygem-mixlib-shellout>=2.0:devel/rubygem-mixlib-shellout
+		rubygem-mixlib-shellout>=2.0:devel/rubygem-mixlib-shellout \
+		rubygem-tomlrb>=1.2:textproc/rubygem-tomlrb
 
 NO_ARCH=	yes
 USE_RUBY=	yes

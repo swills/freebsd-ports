@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 459606 2018-01-21 13:30:43Z antoine $
+# $FreeBSD: head/graphics/Makefile 460064 2018-01-26 23:54:45Z yuri $
 #
 
     COMMENT = Graphics tools and libraries
@@ -379,6 +379,7 @@
     SUBDIR += impressive
     SUBDIR += imv
     SUBDIR += inkscape
+    SUBDIR += instant-meshes
     SUBDIR += intel-backlight
     SUBDIR += intergif
     SUBDIR += inventor

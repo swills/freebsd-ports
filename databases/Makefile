@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 459132 2018-01-15 22:25:53Z yuri $
+# $FreeBSD: head/databases/Makefile 459853 2018-01-24 18:44:44Z sunpoet $
 #
 
     COMMENT = Databases and related software
@@ -844,6 +844,7 @@
     SUBDIR += py-sqlalchemy-migrate
     SUBDIR += py-sqlalchemy10
     SUBDIR += py-sqlalchemy11
+    SUBDIR += py-sqlalchemy12
     SUBDIR += py-sqlite3
     SUBDIR += py-sqlite3dbm
     SUBDIR += py-sqlobject

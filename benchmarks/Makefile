@@ -1,4 +1,4 @@
-# $FreeBSD: head/benchmarks/Makefile 459019 2018-01-15 07:05:53Z danfe $
+# $FreeBSD: head/benchmarks/Makefile 460126 2018-01-27 14:30:59Z dbaio $
 #
 
     COMMENT = Benchmarking tools
@@ -62,6 +62,7 @@
     SUBDIR += postal
     SUBDIR += postmark
     SUBDIR += py-naarad
+    SUBDIR += py-throughpy
     SUBDIR += py-zopkio
     SUBDIR += pybench
     SUBDIR += raidtest
@@ -87,6 +88,7 @@
     SUBDIR += typometer
     SUBDIR += ubench
     SUBDIR += unixbench
+    SUBDIR += vegeta
     SUBDIR += webbench
     SUBDIR += wrk
 

@@ -1,5 +1,5 @@
 # Created by: Edward Tomasz Napierala <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/ardour/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/audio/ardour/Makefile 460055 2018-01-26 22:16:11Z danfe $
 
 PORTNAME=	ardour
 PORTVERSION=	2.8.16
@@ -12,10 +12,6 @@ COMMENT=	Multichannel digital audio workstation
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN=		fails to build
-DEPRECATED=	Broken for more than 6 months
-EXPIRATION_DATE=	2018-01-27
 
 LIB_DEPENDS=	liblo.so:audio/liblo \
 		liblrdf.so:textproc/liblrdf \
@@ -73,6 +69,17 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|alsa_pcm|oss|g' ${WRKSRC}/templates/*.template
 	@${REINPLACE_CMD} -e 's|std::pair<double|std::pair<const double|' \
 		${WRKSRC}/gtk2_ardour/tempo_lines.h
+	@${REINPLACE_CMD} -e '/sigc++\/class_slot\.h/d' \
+		${WRKSRC}/libs/ardour/audioregion.cc \
+		${WRKSRC}/libs/ardour/region.cc
+	@${REINPLACE_CMD} -e 's|time_t|& *|' \
+		${WRKSRC}/libs/ardour/audiosource.cc
+	@${REINPLACE_CMD} -e '/sigc++\/retype\.h/d' \
+		${WRKSRC}/libs/ardour/audio_track.cc \
+		${WRKSRC}/gtk2_ardour/editor_markers.cc \
+		${WRKSRC}/libs/ardour/session.cc \
+		${WRKSRC}/libs/ardour/session_transport.cc \
+		${WRKSRC}/libs/ardour/track.cc
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/ardour2/templates

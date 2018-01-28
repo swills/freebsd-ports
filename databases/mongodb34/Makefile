@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mongodb34/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/databases/mongodb34/Makefile 460156 2018-01-28 02:45:32Z jbeich $
 
 PORTNAME=	mongodb
 DISTVERSIONPREFIX=	r
@@ -18,7 +18,6 @@ COMMENT=	Distributed document-oriented "NoSQL" database
 LICENSE=	AGPLv3 APACHE20
 LICENSE_COMB=	multi
 
-BROKEN=		fails to build with boost 1.66, see bug 224090
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=	"Only supported on amd64 (i386 deprecated in v3)"
 

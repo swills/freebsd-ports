@@ -1,8 +1,9 @@
 # Created by: Peter Johnson <johnson.peter@gmail.com>
-# $FreeBSD: head/textproc/dblatex/Makefile 438770 2017-04-18 10:22:42Z amdmi3 $
+# $FreeBSD: head/textproc/dblatex/Makefile 460117 2018-01-27 12:48:20Z amdmi3 $
 
 PORTNAME=	dblatex
 PORTVERSION=	0.3.9
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
@@ -27,14 +28,10 @@ PYDISTUTILS_INSTALLARGS+=	--catalogs=${LOCALBASE}/share/xml/catalog.ports \
 OPTIONS_DEFINE=	DOCS
 
 post-patch:
-	@${REINPLACE_CMD} -e "s,share/man/man1,man/man1,g" ${WRKSRC}/setup.py
+	@${REINPLACE_CMD} -e '/SHELL_SCRIPT/ s|#!.*|#!${PYTHON_CMD}|' ${WRKSRC}/setup.py
+	@${REINPLACE_CMD} -e 's,share/man/man1,man/man1,g' ${WRKSRC}/setup.py
 
 post-patch-DOCS-off:
 	@${REINPLACE_CMD} -e '/pdfdocs),/d ; /htmldoc)/d' ${WRKSRC}/setup.py
-
-post-install:
-	# shebangfix can't be used because dblatex is built from scratch
-	@${REINPLACE_CMD} -i '' -e 's|/usr/bin/env python|${PREFIX}/bin/python2|' \
-		${STAGEDIR}${PREFIX}/bin/dblatex
 
 .include <bsd.port.mk>

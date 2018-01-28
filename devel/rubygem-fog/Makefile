@@ -1,9 +1,9 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-fog/Makefile 458251 2018-01-06 13:50:21Z sunpoet $
+# $FreeBSD: head/devel/rubygem-fog/Makefile 459872 2018-01-24 18:46:23Z sunpoet $
 
 PORTNAME=	fog
 PORTVERSION=	1.42.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

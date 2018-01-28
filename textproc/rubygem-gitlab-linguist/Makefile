@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-gitlab-linguist/Makefile 448795 2017-08-27 00:36:48Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-gitlab-linguist/Makefile 460138 2018-01-27 18:42:45Z sunpoet $
 
 PORTNAME=	gitlab-linguist
 PORTVERSION=	3.0.1
@@ -15,7 +15,7 @@ RUN_DEPENDS=	rubygem-charlock_holmes>=0.6.6:textproc/rubygem-charlock_holmes \
 		rubygem-mime-types1>=1.19:misc/rubygem-mime-types1
 
 # bin/linguist
-CONFLICTS_INSTALL=	rubygem-github-linguist
+CONFLICTS_INSTALL=	qtchooser rubygem-github-linguist
 
 NO_ARCH=	yes
 USE_RUBY=	yes

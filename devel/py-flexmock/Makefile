@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/py-flexmock/Makefile 406888 2016-01-22 03:50:13Z vanilla $
+# $FreeBSD: head/devel/py-flexmock/Makefile 460024 2018-01-26 18:11:55Z sunpoet $
 
 PORTNAME=	flexmock
 PORTVERSION=	0.10.2
@@ -7,10 +7,14 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
-COMMENT=	Flexmock is a mock/stub/spy library for Python
+MAINTAINER=	sunpoet@FreeBSD.org
+COMMENT=	Testing library to create mocks, stubs and fakes
 
+LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+NO_ARCH=	yes
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

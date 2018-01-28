@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/archivers/par2cmdline-tbb/Makefile 449986 2017-09-17 07:03:14Z martymac $
+# $FreeBSD: head/archivers/par2cmdline-tbb/Makefile 459919 2018-01-25 11:07:50Z martymac $
 
 PORTNAME=	par2cmdline-tbb
 PORTVERSION=	20100203
@@ -13,9 +13,9 @@ COMMENT=	Tools for using Parity v2 Archive files (tbb version)
 
 LICENSE=	GPLv2
 
-LIB_DEPENDS=	libtbb.so:devel/tbb
-
 ONLY_FOR_ARCHS=		amd64 i386
+
+LIB_DEPENDS=	libtbb.so:devel/tbb
 
 GNU_CONFIGURE=	yes
 USES=		autoreconf

@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 459119 2018-01-15 21:35:10Z kwm $
+# $FreeBSD: head/mail/Makefile 460155 2018-01-28 01:39:12Z rene $
 #
 
     COMMENT = Electronic mail utilities
@@ -191,7 +191,6 @@
     SUBDIR += libdomainkeys
     SUBDIR += libesmtp
     SUBDIR += libetpan
-    SUBDIR += libmapi
     SUBDIR += libmilter
     SUBDIR += libpst
     SUBDIR += librfc822

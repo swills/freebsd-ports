@@ -1,10 +1,9 @@
-# $FreeBSD: head/shells/Makefile 458806 2018-01-12 07:47:30Z tobik $
+# $FreeBSD: head/shells/Makefile 460155 2018-01-28 01:39:12Z rene $
 #
 
     COMMENT = Shells
 
     SUBDIR += 44bsd-csh
-    SUBDIR += ambit
     SUBDIR += bash
     SUBDIR += bash-completion
     SUBDIR += bash-static

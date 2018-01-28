@@ -1,4 +1,4 @@
-# $FreeBSD: head/korean/Makefile 422221 2016-09-15 18:12:44Z jkim $
+# $FreeBSD: head/korean/Makefile 459893 2018-01-25 00:39:44Z jkim $
 #
 
     COMMENT = Korean support
@@ -8,6 +8,7 @@
     SUBDIR += aleefonts-ttf
     SUBDIR += baekmukfonts-bdf
     SUBDIR += baekmukfonts-ttf
+    SUBDIR += d2coding-ttf
     SUBDIR += engdic
     SUBDIR += fcitx-hangul
     SUBDIR += gimp-help

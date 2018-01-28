@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/multimedia/sms1xxx-kmod/Makefile 451590 2017-10-09 10:05:37Z martymac $
+# $FreeBSD: head/multimedia/sms1xxx-kmod/Makefile 459919 2018-01-25 11:07:50Z martymac $
 
 PORTNAME=	sms1xxx
 PORTVERSION=	20120113
@@ -15,6 +15,8 @@ COMMENT=	Native FreeBSD driver for Siano-based USB DVB devices
 
 LICENSE=	GPLv2
 
+ONLY_FOR_ARCHS=	amd64 i386
+
 WRKSRC=	${WRKDIR}/siano-${PORTVERSION}
 
 NO_PACKAGE=	should be recompiled for a particular FreeBSD kernel
@@ -29,8 +31,6 @@ RC5WATCH_DESC=	Build rc5watch IR utility
 DEBUG_ALL_TARGET=	debug
 STELLAR_DESC=	Build Terratec Cinergy Piranha FW
 NOVA_DESC=	Build Hauppauge WinTV MiniStick FW
-
-ONLY_FOR_ARCHS=	amd64 i386
 
 SUB_FILES=	pkg-message
 

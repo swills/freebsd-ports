@@ -1,5 +1,5 @@
 # Created by: Edwin Groothuis <edwin2mavetju.org>
-# $FreeBSD: head/devel/flatzebra/Makefile 426948 2016-11-23 18:15:24Z amdmi3 $
+# $FreeBSD: head/devel/flatzebra/Makefile 460013 2018-01-26 17:29:13Z jbeich $
 
 PORTNAME=	flatzebra
 PORTVERSION=	0.1.6
@@ -14,6 +14,7 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		pathfix pkgconfig libtool
+USE_CXXSTD=	gnu++98
 GNU_CONFIGURE=	yes
 USE_SDL=	sdl mixer image
 USE_LDCONFIG=	yes

@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/net/grsync/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/grsync/Makefile 459919 2018-01-25 11:07:50Z martymac $
 
 PORTNAME=	grsync
 PORTVERSION=	1.2.6
@@ -15,17 +15,17 @@ LICENSE=	GPLv2
 RUN_DEPENDS=	rsync:net/rsync \
 		bash:shells/bash
 
-USE_GNOME=	gtk20 intltool
-USES=		desktop-file-utils gettext gmake \
-		pkgconfig shared-mime-info shebangfix
-SHEBANG_FILES=	src/grsync-batch
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--disable-unity
-
-INSTALLS_ICONS=	yes
-
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+
+USES=		desktop-file-utils gettext gmake \
+		pkgconfig shared-mime-info shebangfix
+USE_GNOME=	gtk20 intltool
+SHEBANG_FILES=	src/grsync-batch
+
+INSTALLS_ICONS=	yes
 
 OPTIONS_DEFINE=	NLS
 OPTIONS_SUB=	yes

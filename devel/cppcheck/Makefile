@@ -1,8 +1,8 @@
 # Created by: Gabor Pali <pgj@FreeBSD.org>
-# $FreeBSD: head/devel/cppcheck/Makefile 456389 2017-12-15 11:25:27Z amdmi3 $
+# $FreeBSD: head/devel/cppcheck/Makefile 459927 2018-01-25 12:59:02Z amdmi3 $
 
 PORTNAME=	cppcheck
-PORTVERSION=	1.81
+PORTVERSION=	1.82
 CATEGORIES=	devel
 MASTER_SITES=	SF
 
@@ -56,6 +56,9 @@ MATCHCOMPILER_DESC=	Build-time optimizations via Python
 MATCHCOMPILER_CMAKE_BOOL=	USE_MATCHCOMPILER
 MATCHCOMPILER_USES=	python:${PYUSE:C/ /,/W}
 MATCHCOMPILER_VARS=	PYUSE+=build
+
+post-patch:
+	@${REINPLACE_CMD} -e '/find_package(Qt5/ d' ${WRKSRC}/cmake/findDependencies.cmake
 
 post-install-HTMLREPORT-on:
 	${INSTALL_SCRIPT} ${WRKSRC}/htmlreport/cppcheck-htmlreport ${STAGEDIR}${PREFIX}/bin

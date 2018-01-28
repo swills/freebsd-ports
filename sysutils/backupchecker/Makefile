@@ -1,20 +1,21 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/sysutils/backupchecker/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/sysutils/backupchecker/Makefile 459921 2018-01-25 11:41:21Z martymac $
 
 PORTNAME=	backupchecker
 PORTVERSION=	1.9
 CATEGORIES=	sysutils archivers
+PKGNAMESUFFIX=	${PYTHON_PKGNAMESUFFIX}
 
 MAINTAINER=	martymac@FreeBSD.org
 COMMENT=	Fully automated backup checker
 
 LICENSE=	GPLv3
 
-USE_GITHUB=	yes
-
 NO_ARCH=	yes
+
 USES=		python:3.3+
-USE_PYTHON=	autoplist distutils optsuffix
+USE_GITHUB=	yes
+USE_PYTHON=	autoplist distutils
 
 PORTDOCS=	README.md
 

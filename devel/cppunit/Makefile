@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/cppunit/Makefile 422818 2016-09-27 16:32:52Z antoine $
+# $FreeBSD: head/devel/cppunit/Makefile 459889 2018-01-24 20:58:21Z bdrewery $
 
 PORTNAME=	cppunit
-PORTVERSION=	1.13.2
-PORTREVISION=	2
+PORTVERSION=	1.14.0
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://dev-www.libreoffice.org/src/
 
@@ -23,6 +23,12 @@ INSTALL_TARGET=	install-strip
 OPTIONS_SUB=	yes
 USE_LDCONFIG=	yes
 USES=		libtool pathfix
+
+SUB_FILES=	cppunit-config
+SUB_LIST+=	DISTVERSION=${DISTVERSION}
+
+post-install:
+	${INSTALL_SCRIPT} ${WRKDIR}/cppunit-config ${STAGEDIR}${PREFIX}/bin/
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

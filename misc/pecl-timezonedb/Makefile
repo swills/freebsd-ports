@@ -1,8 +1,8 @@
 # Created by: Marcus Alves Grando <mnag@FreeBSD.org>
-# $FreeBSD: head/misc/pecl-timezonedb/Makefile 452791 2017-10-24 17:41:16Z sunpoet $
+# $FreeBSD: head/misc/pecl-timezonedb/Makefile 460086 2018-01-27 10:23:32Z sunpoet $
 
 PORTNAME=	timezonedb
-PORTVERSION=	2017.3
+PORTVERSION=	2018.3
 CATEGORIES=	misc
 
 MAINTAINER=	sunpoet@FreeBSD.org

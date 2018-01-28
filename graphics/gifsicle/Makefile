@@ -1,8 +1,8 @@
 # Created by: Brad Hendrickse <bradh@iafrica.com>
-# $FreeBSD: head/graphics/gifsicle/Makefile 453469 2017-11-04 14:15:55Z vanilla $
+# $FreeBSD: head/graphics/gifsicle/Makefile 459846 2018-01-24 17:25:14Z pi $
 
 PORTNAME=	gifsicle
-PORTVERSION=	1.90
+PORTVERSION=	1.91
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.lcdf.org/gifsicle/
 
@@ -19,7 +19,7 @@ PLIST_FILES=	bin/gifdiff bin/gifsicle \
 		man/man1/gifdiff.1.gz man/man1/gifsicle.1.gz
 
 OPTIONS_DEFINE=		DOCS X11
-OPTIONS_DEFAULT=	X11
+OPTIONS_DEFAULT=
 
 X11_USE=		xorg=x11
 X11_CONFIGURE_ENABLE=	gifview

@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-paperclip/Makefile 430089 2016-12-31 02:29:21Z swills $
+# $FreeBSD: head/devel/rubygem-paperclip/Makefile 460038 2018-01-26 18:13:09Z sunpoet $
 
 PORTNAME=	paperclip
-PORTVERSION=	5.1.0
+PORTVERSION=	5.2.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

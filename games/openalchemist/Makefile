@@ -1,5 +1,5 @@
 # Created by: Ganael LAPLANCHE <ganael.laplanche@martymac.org>
-# $FreeBSD: head/games/openalchemist/Makefile 455913 2017-12-10 20:48:45Z antoine $
+# $FreeBSD: head/games/openalchemist/Makefile 459919 2018-01-25 11:07:50Z martymac $
 
 PORTNAME=	openalchemist
 PORTVERSION=	0.3
@@ -22,12 +22,14 @@ LIB_DEPENDS=	libclanCore.so:devel/clanlib1 \
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-lpthread -L${LOCALBASE}/lib
 GNU_CONFIGURE=	yes
+
+USES=		autoreconf gmake iconv jpeg pkgconfig python:2.7,run shebangfix
+SHEBANG_FILES=	openalchemist-config
+
 USE_GNOME=	pygtk2
 USE_XORG=	xxf86vm xi x11 xmu xext xdamage xfixes xau xdmcp xt sm ice
 USE_GL=		gl glu
 USE_SDL=	sdl gfx
-USES=		autoreconf gmake iconv jpeg pkgconfig python:2.7,run shebangfix
-SHEBANG_FILES=	openalchemist-config
 
 PORTDOCS=	AUTHORS ChangeLog README TODO
 

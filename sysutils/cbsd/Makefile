@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/cbsd/Makefile 459436 2018-01-19 16:32:25Z novel $
+# $FreeBSD: head/sysutils/cbsd/Makefile 459849 2018-01-24 18:25:14Z rm $
 
 PORTNAME=	cbsd
-DISTVERSION=	11.1.12
+DISTVERSION=	11.1.13
 CATEGORIES=	sysutils
 
 MAINTAINER=	olevole@olevole.ru

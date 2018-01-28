@@ -1,14 +1,10 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/multimedia/libvpx/Makefile 459398 2018-01-19 06:36:37Z danfe $
+# $FreeBSD: head/multimedia/libvpx/Makefile 459963 2018-01-25 21:20:12Z jbeich $
 
 PORTNAME=	libvpx
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.6.1
-PORTREVISION=	2
+DISTVERSION=	1.7.0
 CATEGORIES=	multimedia
-
-PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
-PATCHFILES=	bc4bc9b6223d.patch:-p1
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	VP8/VP9 Codec SDK

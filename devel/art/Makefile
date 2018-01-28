@@ -1,5 +1,5 @@
 # Created by: Vladimir Gorelov <virtual.lark@gmail.com>
-# $FreeBSD: head/devel/art/Makefile 457358 2017-12-27 09:30:47Z antoine $
+# $FreeBSD: head/devel/art/Makefile 460004 2018-01-26 15:02:40Z danfe $
 
 PORTNAME=	art
 PORTVERSION=	0.9.01
@@ -15,21 +15,26 @@ LICENSE=	GPLv3
 
 LIB_DEPENDS=	libxml++-2.6.so:textproc/libxml++26
 
-BROKEN=		fails to compile: ustring.h: expected ';' at end of declaration list
-DEPRECATED=	Broken for more than 6 months
-EXPIRATION_DATE=	2018-01-27
-
-USES=	gmake pkgconfig
+USES=		compiler:c++11-lang gmake pkgconfig
+USE_CXXSTD=	c++11
 
 OPTIONS_DEFINE=	DOCS
 
+post-patch:
+	@${FIND} ${WRKSRC} -type f -name Makefile | ${XARGS} \
+		${REINPLACE_CMD} -e '/$$(CXX)/s,CFLAGS,CXXFLAGS,' \
+		-e 's,^CFLAGS+=,CXXFLAGS+=,'
+
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/artlibgen/src/artlibgen ${STAGEDIR}${PREFIX}/bin
-	${INSTALL_PROGRAM} ${WRKSRC}/artrepgen/artrepgen ${STAGEDIR}${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/artlibgen/src/artlibgen \
+		${WRKSRC}/artrepgen/artrepgen ${STAGEDIR}${PREFIX}/bin
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for docs in posix-gcc-mt-file-lint.xml posix-gcc-mt-netw-lint.xml \
  posix-gcc-mt-file-special.xml
-	@${INSTALL_DATA} ${WRKSRC}/artlibgen/templates/${docs} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/artlibgen/templates/${docs} \
+		${STAGEDIR}${DOCSDIR}
 .endfor
 
 .if defined(MAINTAINER_MODE)

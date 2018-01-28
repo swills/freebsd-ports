@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/misc/xdelta3/Makefile 409024 2016-02-16 23:50:33Z danilo $
+# $FreeBSD: head/misc/xdelta3/Makefile 459941 2018-01-25 13:25:43Z danilo $
 
 PORTNAME=	xdelta
 PORTVERSION=	3.0.11
@@ -14,6 +14,7 @@ COMMENT=	Open-source binary diff, VCDIFF/RFC 3284 delta compression
 LICENSE=	GPLv2+
 
 USES=		autoreconf gmake
+USE_CXXSTD=	gnu++98
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	jmacd

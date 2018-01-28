@@ -1,10 +1,10 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/x11-fonts/hanazono-fonts-ttf/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/x11-fonts/hanazono-fonts-ttf/Makefile 459880 2018-01-24 18:47:05Z sunpoet $
 
 PORTNAME=	hanazono-fonts-ttf
-PORTVERSION=	20141012
+PORTVERSION=	20170904
 CATEGORIES=	x11-fonts
-MASTER_SITES=	SFJP/hanazono-font/62072
+MASTER_SITES=	SFJP/hanazono-font/68253
 DISTNAME=	${PORTNAME:C/-.*//}-${PORTVERSION}
 
 MAINTAINER=	lichray@gmail.com
@@ -13,6 +13,7 @@ COMMENT=	CJK Mincho-typeface developed by Hanazono University
 LICENSE=	OFL11
 
 USES=		fonts zip
+NO_ARCH=	yes
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
 

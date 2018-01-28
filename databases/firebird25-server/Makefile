@@ -1,5 +1,5 @@
 # Created by: Alonso Cárdenas Márquez <acm@FreeBSD.org>
-# $FreeBSD: head/databases/firebird25-server/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/databases/firebird25-server/Makefile 459839 2018-01-24 12:47:17Z antoine $
 
 PORTNAME=	firebird
 PORTVERSION=	2.5.6
@@ -25,6 +25,7 @@ LICENSE_PERMS_IPL=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 LIB_DEPENDS=	libicuuc.so:devel/icu
 
 USES=		cpe gmake pkgconfig tar:bzip2
+USE_CXXSTD=	gnu++98
 GNU_CONFIGURE=	yes
 MAKE_JOBS_UNSAFE=	yes
 

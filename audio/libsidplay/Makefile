@@ -1,5 +1,5 @@
 # Created by: Stefan Zehl <sec@42.org>
-# $FreeBSD: head/audio/libsidplay/Makefile 424821 2016-10-28 10:29:33Z ehaupt $
+# $FreeBSD: head/audio/libsidplay/Makefile 459997 2018-01-26 14:39:15Z jbeich $
 
 PORTNAME=	libsidplay
 PORTVERSION=	1.36.59
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	sid_cv_have_ios_binary=yes
 INSTALL_TARGET=	install-strip
-USES=		libtool tar:tgz
+USES=		autoreconf libtool tar:tgz
 USE_LDCONFIG=	yes
 
 .include <bsd.port.pre.mk>

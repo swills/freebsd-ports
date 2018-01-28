@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 459179 2018-01-16 14:58:51Z tobik $
+# $FreeBSD: head/net/Makefile 460141 2018-01-27 19:02:01Z dumbbell $
 #
 
     COMMENT = Networking tools
@@ -55,6 +55,8 @@
     SUBDIR += boclient
     SUBDIR += boinc-client
     SUBDIR += boinc_curses
+    SUBDIR += bosh-bootloader
+    SUBDIR += bosh-cli
     SUBDIR += bounce
     SUBDIR += bsdec2-image-upload
     SUBDIR += bsdproxy

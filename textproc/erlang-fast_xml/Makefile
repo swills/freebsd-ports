@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/erlang-fast_xml/Makefile 458620 2018-01-10 11:37:39Z olgeni $
+# $FreeBSD: head/textproc/erlang-fast_xml/Makefile 459982 2018-01-26 10:00:03Z antoine $
 
 PORTNAME=	fast_xml
 PORTVERSION=	1.1.28
@@ -9,6 +9,8 @@ MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Erlang XML parsing and manipulation library
 
 LICENSE=	APACHE20
+
+BROKEN=		checksum and size mismatch
 
 LIB_DEPENDS=	libexpat.so:textproc/expat2
 

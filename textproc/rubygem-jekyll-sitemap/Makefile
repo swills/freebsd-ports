@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-jekyll-sitemap/Makefile 438379 2017-04-12 16:25:11Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-jekyll-sitemap/Makefile 460042 2018-01-26 18:13:30Z sunpoet $
 
 PORTNAME=	jekyll-sitemap
-PORTVERSION=	1.1.1
+PORTVERSION=	1.2.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -15,6 +15,8 @@ RUN_DEPENDS=	rubygem-jekyll>=3.3:www/rubygem-jekyll
 
 NO_ARCH=	yes
 USE_RUBY=	yes
-USES=		gem
+USES=		gem shebangfix
+
+SHEBANG_FILES=	script/*
 
 .include <bsd.port.mk>

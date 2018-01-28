@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-ast/Makefile 427689 2016-12-03 19:33:12Z sunpoet $
+# $FreeBSD: head/devel/rubygem-ast/Makefile 460031 2018-01-26 18:12:32Z sunpoet $
 
 PORTNAME=	ast
-PORTVERSION=	2.3.0
+PORTVERSION=	2.4.0
 CATEGORIES=	devel ruby
 MASTER_SITES=	RG
 

@@ -1,17 +1,19 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/devel/p5-FreezeThaw/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-FreezeThaw/Makefile 460094 2018-01-27 10:24:13Z sunpoet $
 
 PORTNAME=	FreezeThaw
-PORTVERSION=	0.50.01
-PORTREVISION=	1
+PORTVERSION=	0.5001
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
-DISTNAME=	${PORTNAME}-${PORTVERSION:C/\.(..)$/\1/}
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Module for converting Perl structures to strings and back
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

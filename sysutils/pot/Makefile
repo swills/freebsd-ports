@@ -1,8 +1,8 @@
 # Created by: Luca Pizzamiglio <pizzamig@FreeBSD.org>
-# $FreeBSD: head/sysutils/pot/Makefile 459798 2018-01-23 21:48:39Z pizzamig $
+# $FreeBSD: head/sysutils/pot/Makefile 460114 2018-01-27 12:10:40Z pizzamig $
 
 PORTNAME=	pot
-PORTVERSION=	0.2.0
+PORTVERSION=	0.3.1
 CATEGORIES=	sysutils
 
 MAINTAINER=	pizzamig@FreeBSD.org
@@ -24,6 +24,8 @@ do-install:
 	${MKDIR} ${STAGEDIR}${ETCDIR}
 	${MKDIR} ${STAGEDIR}${ETCDIR}/flavours
 	${INSTALL_DATA} ${WRKSRC}/etc/pot/pot.default.conf \
+		${STAGEDIR}${ETCDIR}
+	${INSTALL_DATA} ${WRKSRC}/etc/pot/pot.conf.sample \
 		${STAGEDIR}${ETCDIR}
 	${INSTALL_DATA} ${WRKSRC}/etc/pot/flavours/dns.sh \
 		${STAGEDIR}${ETCDIR}/flavours

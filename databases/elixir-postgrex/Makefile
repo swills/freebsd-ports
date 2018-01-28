@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/elixir-postgrex/Makefile 442269 2017-06-01 02:13:00Z olgeni $
+# $FreeBSD: head/databases/elixir-postgrex/Makefile 459987 2018-01-26 11:48:17Z olgeni $
 
 PORTNAME=	postgrex
-PORTVERSION=	0.13.3
+PORTVERSION=	0.13.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 PKGNAMEPREFIX=	elixir-

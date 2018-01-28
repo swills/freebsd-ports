@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/mariadb-connector-c/Makefile 459793 2018-01-23 19:50:57Z brnrd $
+# $FreeBSD: head/databases/mariadb-connector-c/Makefile 459845 2018-01-24 16:09:58Z brnrd $
 
 PORTNAME=	mariadb-connector-c
 PORTVERSION=	3.0.3
+PORTREVISION=	1
 CATEGORIES=	databases ipv6
 MASTER_SITES=	http://ftp.osuosl.org/pub/${SITESDIR}/ \
 		http://mirrors.supportex.net/${SITESDIR}/ \
@@ -27,7 +28,7 @@ CONFLICTS_INSTALL=	mariadb[0-9]*-client-* \
 			percona[0-9]*-client-*
 
 USES=		cmake compiler:c++11-lib iconv:translit ssl
-USE_LDCONFIG=	${PREFIX}/lib/mysql
+USE_LDCONFIG=	${PREFIX}/lib/mariadb
 SITESDIR=	mariadb/connector-c-${PORTVERSION}
 DOCSDIR=	${PREFIX}/share/doc/mysql
 

@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/php-xapian/Makefile 452217 2017-10-16 17:46:08Z sunpoet $
+# $FreeBSD: head/databases/php-xapian/Makefile 460020 2018-01-26 18:11:12Z sunpoet $
 
 PORTNAME=	xapian
 PORTVERSION=	1.4.5
@@ -40,8 +40,10 @@ PLIST_SUB=	PHP_EXT_DIR=${PHP_EXT_DIR} PHP_MAJOR_VER=${PHP_VER:C|.$||}
 
 .if ${PHP_VER} >= 70
 CONFIGURE_ARGS+=--with-php7 --without-php
+PLIST_SUB+=	PHP5="@comment " PHP7=""
 .else
 CONFIGURE_ARGS+=--with-php --without-php7
+PLIST_SUB+=	PHP5="" PHP7="@comment "
 .endif
 
 post-patch:

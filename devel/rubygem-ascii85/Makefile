@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-ascii85/Makefile 447261 2017-08-03 17:26:53Z sunpoet $
+# $FreeBSD: head/devel/rubygem-ascii85/Makefile 460030 2018-01-26 18:12:26Z sunpoet $
 
 PORTNAME=	ascii85
-PORTVERSION=	1.0.2
+PORTVERSION=	1.0.3
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 DISTNAME=	Ascii85-${PORTVERSION}

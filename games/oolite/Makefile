@@ -1,5 +1,5 @@
 # Created by: Andriy Gapon <avg@icyb.net.ua>
-# $FreeBSD: head/games/oolite/Makefile 457594 2017-12-30 09:43:39Z madpilot $
+# $FreeBSD: head/games/oolite/Makefile 460106 2018-01-27 11:19:06Z madpilot $
 
 PORTNAME=		oolite
 PORTVERSION=		1.86
@@ -24,6 +24,7 @@ LIB_DEPENDS=		libespeak.so:audio/espeak \
 			libminizip.so:archivers/minizip
 
 USES=			gnustep openal:al perl5 python:build tar:bzip2
+USE_CXXSTD=		gnu++98
 USE_GL=			gl glu
 USE_SDL=		sdl
 USE_XORG=		x11

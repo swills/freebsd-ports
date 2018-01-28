@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Devel-MAT/Makefile 456544 2017-12-17 15:54:04Z sunpoet $
+# $FreeBSD: head/devel/p5-Devel-MAT/Makefile 459857 2018-01-24 18:45:06Z sunpoet $
 
 PORTNAME=	Devel-MAT
-PORTVERSION=	0.32
+PORTVERSION=	0.33
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

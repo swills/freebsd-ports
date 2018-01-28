@@ -1,13 +1,13 @@
 # Created by: Vassili Tchersky <vt@bsdjeunz.org>
-# $FreeBSD: head/net/6tunnel/Makefile 457254 2017-12-25 20:09:07Z tijl $
+# $FreeBSD: head/net/6tunnel/Makefile 459886 2018-01-24 19:23:37Z bdrewery $
 
 PORTNAME=	6tunnel
-DISTVERSION=	0.11rc2.20130525
+DISTVERSION=	0.12
 CATEGORIES=	net ipv6
 MASTER_SITES=	GH \
 		LOCAL/bdrewery/${PORTNAME}/
 
-MAINTAINER=	bdrewery@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	TCP proxy for applications that do not speak IPv6
 
 LICENSE=	GPLv2
