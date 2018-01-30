@@ -1,5 +1,5 @@
 # Created by: Vanilla I. Shu <vanilla@MinJe.com.TW>
-# $FreeBSD: head/audio/amp/Makefile 451965 2017-10-13 08:58:28Z bapt $
+# $FreeBSD: head/audio/amp/Makefile 460298 2018-01-29 12:56:00Z bapt $
 
 PORTNAME=	amp
 PORTVERSION=	0.7.6
@@ -9,6 +9,9 @@ MASTER_SITES=	http://www.gufi.org/ports/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Another mp3 player
+
+DEPRECATED=	No more upstream
+EXPIRATION_DATE=	2018-03-01
 
 USES=		gmake
 GNU_CONFIGURE=	yes

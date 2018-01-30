@@ -1,11 +1,11 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/graphics/linux-c6-sdl_ttf/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/graphics/linux-c6-sdl_ttf/Makefile 460328 2018-01-29 19:45:22Z tijl $
 
 PORTNAME=	sdl_ttf
 PORTVERSION=	2.0.11
 PORTREVISION=	4
 CATEGORIES=	graphics linux
-MASTER_SITES=	EPEL
+MASTER_SITES=	EPEL/s
 DISTNAME=	${LINUXNAME}-${DISTVERSIONFULL}
 
 MAINTAINER=	emulation@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.options.desc.mk 459041 2018-01-15 13:32:54Z mat $
+# $FreeBSD: head/Mk/bsd.options.desc.mk 460280 2018-01-29 11:28:55Z sunpoet $
 #
 # READ BEFORE EDITING:
 # - Please keep descriptions sorted alphabetically by variable name.
@@ -426,6 +426,7 @@ REGEX_DESC?=		Regular expression support
 RESIN3_DESC?=		Resin 3.x support
 RTMP_DESC?=		RTMP protocol support via librtmp
 RTMPDUMP_DESC?=		RTMP protocol support via rtmpdump
+RTSP_DESC?=		Real Time Streaming Protocol (RTSP) support
 RUBY_DESC?=		Ruby bindings or support
 SAMPLERATE_DESC?=	Sample rate conversion support
 SANE_DESC?=		SANE API scanner support
@@ -471,7 +472,9 @@ SYSLOG_DESC?=		Syslog logging support
 SZIP_DESC?=		Szip compression support
 TCL_DESC?=		Tcl scripting language support
 TCLTK_DESC?=		Tcl/Tk GUI toolkit support
+TELNET_DESC?=		Telnet support
 TEST_DESC?=		Build and/or run tests
+TFTP_DESC?=		TFTP support
 THEORA_DESC?=		Ogg Theora video codec support
 THREADS_DESC?=		Threading support
 TIDY_DESC?=		Tidy HTML cleaner support

@@ -1,8 +1,9 @@
 # Created by: Vsevolod Stakhov <vsevolod@highsecure.ru>
-# $FreeBSD: head/net-im/gajim/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-im/gajim/Makefile 460256 2018-01-29 11:18:02Z des $
 
 PORTNAME=	gajim
 PORTVERSION=	0.16.8
+PORTREVISION=	1
 CATEGORIES=	net-im
 MASTER_SITES=	http://gajim.org/downloads/0.16/
 

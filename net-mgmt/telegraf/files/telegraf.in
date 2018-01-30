@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: head/net-mgmt/telegraf/files/telegraf.in 426880 2016-11-23 00:23:49Z girgen $
+# $FreeBSD: head/net-mgmt/telegraf/files/telegraf.in 460163 2018-01-28 10:54:46Z girgen $
 
 # PROVIDE: telegraf
 # REQUIRE: DAEMON NETWORKING
@@ -16,6 +16,8 @@
 # telegraf_flags (str):		Extra flags passed to telegraf
 
 . /etc/rc.subr
+
+PATH=${PATH}:%%LOCALBASE%%/sbin:%%LOCALBASE%%/bin
 
 name="telegraf"
 rcvar=telegraf_enable

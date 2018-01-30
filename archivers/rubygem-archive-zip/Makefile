@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/archivers/rubygem-archive-zip/Makefile 449295 2017-09-05 16:11:06Z sunpoet $
+# $FreeBSD: head/archivers/rubygem-archive-zip/Makefile 460274 2018-01-29 11:28:24Z sunpoet $
 
 PORTNAME=	archive-zip
-PORTVERSION=	0.10.0
+PORTVERSION=	0.11.0
 CATEGORIES=	archivers rubygems
 MASTER_SITES=	RG
 

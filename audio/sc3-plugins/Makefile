@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/sc3-plugins/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/audio/sc3-plugins/Makefile 460315 2018-01-29 16:19:41Z yuri $
 
 PORTNAME=	sc3-plugins
-DISTVERSION=	3.8.0
-PORTREVISION=	1
+DISTVERSIONPREFIX=	Version-
+DISTVERSION=	3.9.0
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -25,7 +25,6 @@ OPTIONS_SUB=	yes
 USES=		cmake:outsource localbase pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	supercollider
-GH_TAGNAME=	5342a4a
 GH_TUPLE=	timblechmann:nova-simd:3140689:n/external_libraries/nova-simd
 CMAKE_ARGS+=	-DSYSTEM_STK:BOOL=ON
 CMAKE_ARGS+=	-DSC_PATH:STRING=${LOCALBASE}/include/SuperCollider/ # see https://github.com/supercollider/sc3-plugins/issues/170

@@ -1,9 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-profitbricks/Makefile 458265 2018-01-06 13:51:34Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-profitbricks/Makefile 460199 2018-01-28 14:08:41Z sunpoet $
 
 PORTNAME=	fog-profitbricks
 PORTVERSION=	4.1.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -13,7 +13,7 @@ COMMENT=	Module for the 'fog' gem to support ProfitBricks
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-RUN_DEPENDS=	rubygem-fog-core>=1.42:devel/rubygem-fog-core \
+RUN_DEPENDS=	rubygem-fog-core1>=1.42:devel/rubygem-fog-core1 \
 		rubygem-fog-json>=1.0:devel/rubygem-fog-json
 
 NO_ARCH=	yes

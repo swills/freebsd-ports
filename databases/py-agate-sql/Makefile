@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/py-agate-sql/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/py-agate-sql/Makefile 460242 2018-01-29 07:42:45Z matthew $
 
 PORTNAME=	agate-sql
-PORTVERSION=	0.5.2
+PORTVERSION=	0.5.3
 CATEGORIES=	databases textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

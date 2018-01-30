@@ -1,11 +1,11 @@
 # Created by: Tassilo Philipp <tphilipp@potion-studios.com>
-# $FreeBSD: head/devel/psptoolchain-binutils/Makefile 451722 2017-10-10 23:21:06Z linimon $
+# $FreeBSD: head/devel/psptoolchain-binutils/Makefile 460216 2018-01-28 14:10:09Z sunpoet $
 
 PORTNAME=	binutils
 PORTVERSION=	2.22
 PORTREVISION=	1
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.gnu.org/pub/gnu/${PORTNAME}/ \
+MASTER_SITES=	GNU \
 		SOURCEWARE/${PORTNAME}/releases
 PKGNAMEPREFIX=	psptoolchain-
 

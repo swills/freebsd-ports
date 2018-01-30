@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-MatchIt/Makefile 439364 2017-04-25 07:52:45Z wen $
+# $FreeBSD: head/math/R-cran-MatchIt/Makefile 460302 2018-01-29 13:31:39Z wen $
 
 PORTNAME=	MatchIt
-DISTVERSION=	3.0.1
+DISTVERSION=	3.0.2
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

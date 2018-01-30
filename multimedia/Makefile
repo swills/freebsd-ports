@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 460155 2018-01-28 01:39:12Z rene $
+# $FreeBSD: head/multimedia/Makefile 460326 2018-01-29 19:21:21Z yuri $
 #
 
     COMMENT = Multimedia software
@@ -25,6 +25,7 @@
     SUBDIR += baka-mplayer
     SUBDIR += bino
     SUBDIR += bitstream
+    SUBDIR += blind
     SUBDIR += bsdbktr_tvtune
     SUBDIR += camserv
     SUBDIR += ccextractor

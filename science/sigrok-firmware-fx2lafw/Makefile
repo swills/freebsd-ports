@@ -1,8 +1,8 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/science/sigrok-firmware-fx2lafw/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/science/sigrok-firmware-fx2lafw/Makefile 460231 2018-01-28 21:50:25Z bsam $
 
 PORTNAME=	firmware
-PORTVERSION=	0.1.5
+PORTVERSION=	0.1.6
 CATEGORIES=	science
 MASTER_SITES=	http://sigrok.org/download/binary/${PKGNAMEPREFIX}${PORTNAME}${PKGNAMESUFFIX}/
 PKGNAMEPREFIX=	sigrok-
@@ -20,10 +20,14 @@ FW_FILES=	fx2lafw-braintechnology-usb-lps.fw \
 		fx2lafw-cwav-usbeeax.fw \
 		fx2lafw-cwav-usbeedx.fw \
 		fx2lafw-cwav-usbeesx.fw \
+		fx2lafw-cwav-usbeezx.fw \
 		fx2lafw-cypress-fx2.fw \
+		fx2lafw-hantek-6022be.fw \
+		fx2lafw-hantek-6022bl.fw \
+		fx2lafw-sainsmart-dds120.fw \
 		fx2lafw-saleae-logic.fw \
-		fx2lafw-sigrok-fx2-8ch.fw \
-		fx2lafw-sigrok-fx2-16ch.fw
+		fx2lafw-sigrok-fx2-16ch.fw \
+		fx2lafw-sigrok-fx2-8ch.fw
 
 PORTDOCS=	README NEWS
 PLIST_FILES=	${FW_FILES:S,^,share/sigrok-firmware/,}

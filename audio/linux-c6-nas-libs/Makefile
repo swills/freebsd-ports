@@ -1,11 +1,11 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/audio/linux-c6-nas-libs/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/audio/linux-c6-nas-libs/Makefile 460328 2018-01-29 19:45:22Z tijl $
 
 PORTNAME=	nas
 PORTVERSION=	1.9.1
 PORTREVISION=	3
 CATEGORIES=	audio linux
-MASTER_SITES=	EPEL
+MASTER_SITES=	EPEL/n
 
 MAINTAINER=	emulation@FreeBSD.org
 COMMENT=	Network Audio System (Linux CentOS ${LINUX_DIST_VER})

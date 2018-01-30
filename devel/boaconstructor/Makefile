@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/boaconstructor/Makefile 455533 2017-12-04 20:07:54Z antoine $
+# $FreeBSD: head/devel/boaconstructor/Makefile 460298 2018-01-29 12:56:00Z bapt $
 
 PORTNAME=	boaconstructor
 PORTVERSION=	0.6.1
@@ -11,6 +11,9 @@ DISTNAME=	boa-constructor-${PORTVERSION}.src
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Cross platform RAD GUI Building IDE for wxPython
+
+DEPRECATED=	Abandonware, does not work with recent python/wxPython
+EXPIRATION_DATE=	2018-03-01
 
 WRKSRC=		${WRKDIR}/boa-constructor-${PORTVERSION}
 

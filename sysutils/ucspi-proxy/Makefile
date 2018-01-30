@@ -1,8 +1,8 @@
 # Created by: Dale Woolridge <dale.woolridge@gmail.com>
-# $FreeBSD: head/sysutils/ucspi-proxy/Makefile 436933 2017-03-26 04:54:07Z araujo $
+# $FreeBSD: head/sysutils/ucspi-proxy/Makefile 460309 2018-01-29 14:27:36Z araujo $
 
 PORTNAME=	ucspi-proxy
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://untroubled.org/ucspi-proxy/
 

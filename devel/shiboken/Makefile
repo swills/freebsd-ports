@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/shiboken/Makefile 455544 2017-12-04 21:29:07Z antoine $
+# $FreeBSD: head/devel/shiboken/Makefile 460241 2018-01-29 06:45:16Z araujo $
 
 PORTNAME=	shiboken
 PORTVERSION=	1.2.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	https://download.qt-project.org/official_releases/pyside/
 

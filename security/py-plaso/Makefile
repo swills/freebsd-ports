@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-plaso/Makefile 457700 2017-12-31 16:09:43Z antoine $
+# $FreeBSD: head/security/py-plaso/Makefile 460292 2018-01-29 12:18:51Z antoine $
 
 PORTNAME=	plaso
-PORTVERSION=	20171231
+PORTVERSION=	20180127
 CATEGORIES=	security python
 MASTER_SITES=	https://github.com/log2timeline/plaso/releases/download/${PORTVERSION}/ \
 		LOCAL/antoine

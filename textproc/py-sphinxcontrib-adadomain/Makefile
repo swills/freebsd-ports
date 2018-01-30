@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/textproc/py-sphinxcontrib-adadomain/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-sphinxcontrib-adadomain/Makefile 460241 2018-01-29 06:45:16Z araujo $
 
 PORTNAME=	sphinxcontrib-adadomain
 PORTVERSION=	0.1
@@ -9,7 +9,7 @@ MASTER_SITES=	https://pypi.python.org/packages/source/s/${PORTNAME}/ \
 		LOCAL/marino
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	araujo@FreeBSD.org
 COMMENT=	Sphinx Adadomain Extension
 
 LICENSE=	BSD2CLAUSE

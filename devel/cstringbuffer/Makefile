@@ -1,5 +1,5 @@
 # Created by: Mooneer Salem <mooneer@translator.cx>
-# $FreeBSD: head/devel/cstringbuffer/Makefile 355618 2014-05-28 12:40:06Z amdmi3 $
+# $FreeBSD: head/devel/cstringbuffer/Makefile 460298 2018-01-29 12:56:00Z bapt $
 
 PORTNAME=	cstringbuffer
 PORTVERSION=	0.1.6
@@ -9,6 +9,9 @@ MASTER_SITES=	http://mirror.amdmi3.ru/distfiles/ # mirror, original disappeared
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	File-like IO for strings
+
+DEPRECATED=	Abandonware, no more upstream
+EXPIRATION_DATE=	2018-03-01
 
 USES=		libtool
 GNU_CONFIGURE=	yes

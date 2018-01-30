@@ -1,5 +1,5 @@
 # Created by: Mark Starovoytov <mark_sf@kikg.ifmo.ru>
-# $FreeBSD: head/devel/dotconf++/Makefile 355864 2014-05-30 15:49:51Z amdmi3 $
+# $FreeBSD: head/devel/dotconf++/Makefile 460298 2018-01-29 12:56:00Z bapt $
 
 PORTNAME=	dotconfpp
 PORTVERSION=	0.0.5
@@ -10,6 +10,9 @@ MASTER_SITES=	SF \
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Configuration file parser written in C++
+
+DEPRECATED=	No upstream, not depend on in the ports tree
+EXPIRATION_DATE=	2018-03-01
 
 USES=		compiler:env libtool
 GNU_CONFIGURE=	yes

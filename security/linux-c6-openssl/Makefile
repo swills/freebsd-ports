@@ -1,9 +1,9 @@
 # Created by: Artyom Mirgorodskiy <artyom.mirgorodsky@gmail.com>
-# $FreeBSD: head/security/linux-c6-openssl/Makefile 441768 2017-05-26 10:26:39Z tijl $
+# $FreeBSD: head/security/linux-c6-openssl/Makefile 460347 2018-01-29 22:00:39Z tijl $
 
 PORTNAME=	openssl
 PORTVERSION=	1.0.1e
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	security linux
 
 MAINTAINER=	emulation@FreeBSD.org

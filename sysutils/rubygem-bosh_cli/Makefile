@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/rubygem-bosh_cli/Makefile 442644 2017-06-05 14:51:23Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-bosh_cli/Makefile 460209 2018-01-28 14:09:33Z sunpoet $
 
 PORTNAME=	bosh_cli
 PORTVERSION=	1.3262.26.0
@@ -10,6 +10,9 @@ MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	BOSH CLI
 
 LICENSE=	APACHE20
+
+DEPRECATED=	Use net/bosh-cli (CLI v2) instead
+EXPIRATION_DATE=2018-02-28
 
 RUN_DEPENDS=	rubygem-blobstore_client>=1.3262.24.0:devel/rubygem-blobstore_client \
 		rubygem-bosh_common>=1.3262.24.0:devel/rubygem-bosh_common \

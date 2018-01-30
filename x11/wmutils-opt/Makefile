@@ -1,0 +1,24 @@
+# $FreeBSD: head/x11/wmutils-opt/Makefile 460344 2018-01-29 21:49:33Z yuri $
+
+PORTNAME=	wmutils-opt
+DISTVERSIONPREFIX=	v
+DISTVERSION=	1.0
+CATEGORIES=	x11
+
+MAINTAINER=	dg@syrec.org
+COMMENT=	Optional addons to wmutils
+
+LICENSE=	ISCL
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+USES=		localbase:ldflags
+USE_XORG=	xcb
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	wmutils
+GH_PROJECT=	opt
+
+post-install:
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/*
+
+.include <bsd.port.mk>

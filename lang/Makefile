@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 460155 2018-01-28 01:39:12Z rene $
+# $FreeBSD: head/lang/Makefile 460323 2018-01-29 19:12:29Z yuri $
 #
 
     COMMENT = Programming languages
@@ -293,6 +293,7 @@
     SUBDIR += racket-minimal
     SUBDIR += ratfor
     SUBDIR += referenceassemblies-pcl
+    SUBDIR += retro12
     SUBDIR += rexx-imc
     SUBDIR += rexx-regina
     SUBDIR += rexx-regutil

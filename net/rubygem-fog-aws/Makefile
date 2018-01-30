@@ -1,9 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-aws/Makefile 458254 2018-01-06 13:50:37Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-aws/Makefile 460188 2018-01-28 14:07:47Z sunpoet $
 
 PORTNAME=	fog-aws
 PORTVERSION=	2.0.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -13,7 +13,7 @@ COMMENT=	Module for the 'fog' gem to support Amazon Web Services
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-RUN_DEPENDS=	rubygem-fog-core>=1.38:devel/rubygem-fog-core \
+RUN_DEPENDS=	rubygem-fog-core1>=1.38:devel/rubygem-fog-core1 \
 		rubygem-fog-json>=1.0:devel/rubygem-fog-json \
 		rubygem-fog-xml>=0.1:textproc/rubygem-fog-xml \
 		rubygem-ipaddress>=0.8:net/rubygem-ipaddress

@@ -1,5 +1,5 @@
 # Created by: Alejandro Pulver <alejandro@varnet.biz>
-# $FreeBSD: head/devel/adime/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/adime/Makefile 460298 2018-01-29 12:56:00Z bapt $
 
 PORTNAME=	adime
 PORTVERSION=	2.2.1
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Generate Allegro dialogs in a simple way
 
 LIB_DEPENDS=	liballeg.so:devel/allegro
+
+DEPRECATED=	Abandonware, not used in the ports tree
+EXPIRATION_DATE=	2018-03-01
 
 USES=	gmake
 

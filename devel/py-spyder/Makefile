@@ -1,8 +1,9 @@
 # Created by: Rod Person <rodperson@rodperson.com>
-# $FreeBSD: head/devel/py-spyder/Makefile 455841 2017-12-09 10:56:29Z sunpoet $
+# $FreeBSD: head/devel/py-spyder/Makefile 460241 2018-01-29 06:45:16Z araujo $
 
 PORTNAME=	spyder
 PORTVERSION=	2.3.7
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -27,7 +28,6 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	spyder-ide
 
 DOCSDIR=	${PYTHON_SITELIBDIR}/spyderlib
-PORTDOCS=	doc
 
 OPTIONS_DEFINE=	DOCS
 OPTIONS_GROUP=	RECOMMENDED OPTIONAL

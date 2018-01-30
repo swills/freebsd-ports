@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/p5-Authen-SCRAM/Makefile 454781 2017-11-23 19:08:50Z sunpoet $
+# $FreeBSD: head/security/p5-Authen-SCRAM/Makefile 460261 2018-01-29 11:27:19Z sunpoet $
 
 PORTNAME=	Authen-SCRAM
-PORTVERSION=	0.006
+PORTVERSION=	0.007
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -11,6 +11,7 @@ MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Salted Challenge Response Authentication Mechanism (RFC 5802)
 
 LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-Authen-SASL-SASLprep>=1.100:security/p5-Authen-SASL-SASLprep \
 		p5-Crypt-URandom>=0:security/p5-Crypt-URandom \

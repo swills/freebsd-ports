@@ -1,5 +1,5 @@
 # Created by: Neil Blakey-Milner <nbm@rucus.ru.ac.za>
-# $FreeBSD: head/ftp/curl/Makefile 460136 2018-01-27 18:42:35Z sunpoet $
+# $FreeBSD: head/ftp/curl/Makefile 460317 2018-01-29 17:03:11Z sunpoet $
 
 PORTNAME=	curl
 PORTVERSION=	7.58.0
@@ -35,7 +35,7 @@ TLS_SRP_DESC=		TLS-SRP (Secure Remote Password) support
 CONFIGURE_ARGS=	--disable-werror \
 		--enable-imap --enable-pop3 --enable-rtsp --enable-smtp \
 		--with-zsh-functions-dir=${LOCALBASE}/share/zsh/site-functions \
-		--without-axtls --without-brotli
+		--without-axtls
 CONFIGURE_ENV=	LOCALBASE=${LOCALBASE} \
 		ac_cv_func_SSLv2_client_method=no
 GNU_CONFIGURE=	yes

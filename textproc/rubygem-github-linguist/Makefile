@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-github-linguist/Makefile 460137 2018-01-27 18:42:40Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-github-linguist/Makefile 460211 2018-01-28 14:09:43Z sunpoet $
 
 PORTNAME=	github-linguist
-PORTVERSION=	5.3.3
+PORTVERSION=	6.0.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -12,7 +12,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-charlock_holmes>=0.7.5:textproc/rubygem-charlock_holmes \
-		rubygem-escape_utils>=1.1.0:textproc/rubygem-escape_utils \
+		rubygem-escape_utils>=1.2.0:textproc/rubygem-escape_utils \
 		rubygem-mime-types>=1.19:misc/rubygem-mime-types \
 		rubygem-rugged>=0.25.1:devel/rubygem-rugged
 

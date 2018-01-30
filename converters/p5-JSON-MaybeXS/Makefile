@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/converters/p5-JSON-MaybeXS/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/converters/p5-JSON-MaybeXS/Makefile 460185 2018-01-28 14:07:32Z sunpoet $
 
 PORTNAME=	JSON-MaybeXS
-PORTVERSION=	1.003009
+PORTVERSION=	1.003010
 CATEGORIES=	converters perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

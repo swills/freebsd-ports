@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-agate-excel/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-agate-excel/Makefile 460243 2018-01-29 07:43:47Z matthew $
 
 PORTNAME=	agate-excel
-PORTVERSION=	0.2.1
+PORTVERSION=	0.2.2
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

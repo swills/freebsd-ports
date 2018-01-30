@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 460155 2018-01-28 01:39:12Z rene $
+# $FreeBSD: head/mail/Makefile 460228 2018-01-28 19:29:26Z cs $
 #
 
     COMMENT = Electronic mail utilities
@@ -112,7 +112,6 @@
     SUBDIR += esmtp
     SUBDIR += evolution
     SUBDIR += evolution-ews
-    SUBDIR += evolution-mapi
     SUBDIR += exilog
     SUBDIR += exim
     SUBDIR += exim-doc-html
@@ -644,6 +643,7 @@
     SUBDIR += sieve-connect
     SUBDIR += sigrot
     SUBDIR += simscan
+    SUBDIR += sisyphus
     SUBDIR += slapd-cyrus
     SUBDIR += sma
     SUBDIR += smfsav

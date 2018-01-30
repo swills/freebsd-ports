@@ -1,12 +1,12 @@
 # Created by: Sergei Kolobov <sergei@kolobov.com>
-# $FreeBSD: head/mail/qmail-autoresponder/Makefile 436934 2017-03-26 04:55:09Z araujo $
+# $FreeBSD: head/mail/qmail-autoresponder/Makefile 460308 2018-01-29 14:22:16Z araujo $
 
 PORTNAME=	qmail-autoresponder
 PORTVERSION=	0.98
 CATEGORIES=	mail
 MASTER_SITES=	http://untroubled.org/${PORTNAME}/archive/
 
-MAINTAINER=	araujo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Rate-limited autoresponder for qmail
 
 LIB_DEPENDS=	libbg.so:devel/bglibs

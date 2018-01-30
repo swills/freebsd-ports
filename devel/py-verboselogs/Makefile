@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-verboselogs/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-verboselogs/Makefile 460310 2018-01-29 14:32:50Z araujo $
 
 PORTNAME=	verboselogs
-PORTVERSION=	1.6
+PORTVERSION=	1.7
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,20 +1,20 @@
 # Created by: tg@FreeBSD.org
-# $FreeBSD: head/print/gv/Makefile 417685 2016-06-27 21:30:34Z rene $
+# $FreeBSD: head/print/gv/Makefile 460182 2018-01-28 13:54:30Z gerald $
 
 PORTNAME=	gv
 PORTVERSION=	3.7.4
 PORTREVISION=	4
 CATEGORIES=	print
-MASTER_SITES=	GNU/${PORTNAME}
+MASTER_SITES=	GNU
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PostScript and PDF previewer
 
 LIB_DEPENDS=	libXaw3d.so:x11-toolkits/Xaw3d
 
-USE_XORG=	xpm ice sm xext xmu x11
 USES=		cpe ghostscript:x11 iconv gmake perl5 shebangfix
 USE_PERL5=	build
+USE_XORG=	xpm ice sm xext xmu x11
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LIBS+=		-L${LOCALBASE}/lib

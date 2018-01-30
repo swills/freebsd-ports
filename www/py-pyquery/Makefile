@@ -1,8 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/www/py-pyquery/Makefile 456068 2017-12-11 21:48:32Z antoine $
+# $FreeBSD: head/www/py-pyquery/Makefile 460241 2018-01-29 06:45:16Z araujo $
 
 PORTNAME=	pyquery
 PORTVERSION=	1.2.9
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

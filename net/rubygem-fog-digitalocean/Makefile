@@ -1,9 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-digitalocean/Makefile 458259 2018-01-06 13:51:03Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-digitalocean/Makefile 460193 2018-01-28 14:08:12Z sunpoet $
 
 PORTNAME=	fog-digitalocean
 PORTVERSION=	0.3.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -13,7 +13,7 @@ COMMENT=	Module for the 'fog' gem to support DigitalOcean
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-RUN_DEPENDS=	rubygem-fog-core>=1.42:devel/rubygem-fog-core \
+RUN_DEPENDS=	rubygem-fog-core1>=1.42:devel/rubygem-fog-core1 \
 		rubygem-fog-json>=1.0:devel/rubygem-fog-json \
 		rubygem-fog-xml>=0.1:textproc/rubygem-fog-xml \
 		rubygem-ipaddress>=0.5:net/rubygem-ipaddress

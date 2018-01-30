@@ -1,11 +1,11 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/audio/linux-c6-openal-soft/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/audio/linux-c6-openal-soft/Makefile 460328 2018-01-29 19:45:22Z tijl $
 
 PORTNAME=	openal-soft
 PORTVERSION=	1.12.854
 PORTREVISION=	5
 CATEGORIES=	audio linux
-MASTER_SITES=	EPEL
+MASTER_SITES=	EPEL/o
 
 MAINTAINER=	emulation@FreeBSD.org
 COMMENT=	3D positional spatialized sound library (Linux CentOS ${LINUX_DIST_VER})
