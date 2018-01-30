@@ -74,7 +74,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-gollum-rugged_adapter>=0.4.4:www/rubygem-gollum-rugged_adapter \
 	rubygem-github-linguist>=4.7.0:textproc/rubygem-github-linguist \
 	rubygem-grape>=1.0:devel/rubygem-grape \
-	rubygem-grape-entity060>=0.6.0:devel/rubygem-grape-entity060 \
+	rubygem-grape-entity06>=0.6.0:devel/rubygem-grape-entity06 \
 	rubygem-rack-cors>=1.0.0:www/rubygem-rack-cors \
 	rubygem-hashie-forbidden_attributes>=0:devel/rubygem-hashie-forbidden_attributes \
 	rubygem-kaminari-rails4>=1.0:www/rubygem-kaminari-rails4 \
