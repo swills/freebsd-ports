@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 460141 2018-01-27 19:02:01Z dumbbell $
+# $FreeBSD: head/net/Makefile 460314 2018-01-29 16:17:45Z yuri $
 #
 
     COMMENT = Networking tools
@@ -480,6 +480,7 @@
     SUBDIR += nifmon
     SUBDIR += nload
     SUBDIR += nmsg
+    SUBDIR += nncp
     SUBDIR += nocatsplash
     SUBDIR += norm
     SUBDIR += nph

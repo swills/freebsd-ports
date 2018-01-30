@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.qt.mk 459478 2018-01-19 22:35:14Z adridg $
+# $FreeBSD: head/Mk/bsd.qt.mk 460296 2018-01-29 12:37:05Z rakuco $
 #
 # Port variables:
 # USE_QT*			- List of Qt modules to depend on, with optional '_build'
@@ -27,7 +27,7 @@ Qt_Pre_Include=	bsd.qt.mk
 # Qt versions currently supported by the framework.
 _QT_SUPPORTED?=	4 5
 QT4_VERSION?=	4.8.7
-QT5_VERSION?=	5.9.3
+QT5_VERSION?=	5.9.4
 
 _QT_RELNAME=	qt${_QT_VERSION:R:R}
 _QT_VERSION=	# empty

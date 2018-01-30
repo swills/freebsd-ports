@@ -1,18 +1,16 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/mpc/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/mpc/Makefile 460170 2018-01-28 13:01:03Z gerald $
 
 PORTNAME=	mpc
 PORTVERSION=	1.0.3
 CATEGORIES=	math devel
-MASTER_SITES=	http://www.multiprecision.org/mpc/download/
+MASTER_SITES=	GNU
 
 MAINTAINER=	gerald@FreeBSD.org
 COMMENT=	Library of complex numbers with arbitrarily high precision
 
 LIB_DEPENDS=	libgmp.so:math/gmp \
 		libmpfr.so:math/mpfr
-
-PORTSCOUT=	site:http://www.multiprecision.org/index.php?prog=mpc&page=download
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gmp=${LOCALBASE} \

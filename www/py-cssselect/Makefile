@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/www/py-cssselect/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/py-cssselect/Makefile 460241 2018-01-29 06:45:16Z araujo $
 
 PORTNAME=	cssselect
 PORTVERSION=	0.9.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

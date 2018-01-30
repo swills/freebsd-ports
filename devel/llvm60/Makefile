@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm60/Makefile 460063 2018-01-26 23:47:28Z brooks $
+# $FreeBSD: head/devel/llvm60/Makefile 460167 2018-01-28 11:55:58Z brooks $
 
 PORTNAME=	llvm
 DISTVERSION=	6.0.0rc1
@@ -318,10 +318,11 @@ _COMPILER_RT_LIBS+= \
 	libclang_rt.safestack-i386.a \
 	libclang_rt.stats-i386.a \
 	libclang_rt.stats_client-i386.a \
+	libclang_rt.ubsan_minimal-i386.a \
+	libclang_rt.ubsan_minimal-i386.so \
 	libclang_rt.ubsan_standalone-i386.a \
 	libclang_rt.ubsan_standalone-i386.so \
-	libclang_rt.ubsan_standalone_cxx-i386.a \
-	libclang_rt.ubsan_standalone_cxx-i386.so
+	libclang_rt.ubsan_standalone_cxx-i386.a
 .endif
 
 .if ${PORT_OPTIONS:MEXTRAS}

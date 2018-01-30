@@ -1,14 +1,16 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/security/linux-c7-nss/Makefile 452945 2017-10-26 19:23:18Z tijl $
+# $FreeBSD: head/security/linux-c7-nss/Makefile 460341 2018-01-29 21:42:07Z tijl $
 
 PORTNAME=	nss
 PORTVERSION=	3.28.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security linux
 LIB_DISTNAMES=	${DISTNAME} \
+		${PORTNAME}-pem-1.0.3-4.el7 \
 		${PORTNAME}-util-${PORTVERSION}-3.el7 \
 		${PORTNAME}-softokn-3.28.3-8.el7_4
 SRC_DISTFILES=	${DISTNAME}${SRC_SUFX}:SOURCE \
+		${PORTNAME}-pem-1.0.3-4.el7${SRC_SUFX}:SOURCE \
 		${PORTNAME}-util-${PORTVERSION}-3.el7${SRC_SUFX}:SOURCE \
 		${PORTNAME}-softokn-3.28.3-8.el7_4${SRC_SUFX}:SOURCE
 

@@ -1,8 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/darktable/Makefile 459912 2018-01-25 08:49:55Z dumbbell $
+# $FreeBSD: head/graphics/darktable/Makefile 460174 2018-01-28 13:19:56Z dumbbell $
 
 PORTNAME=	darktable
 PORTVERSION=	2.4.1
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	https://github.com/darktable-org/${PORTNAME}/releases/download/release-${PORTVERSION:C/\.rc/rc/}/
 
@@ -11,7 +12,8 @@ COMMENT=	Virtual lighttable and darkroom for photographers
 
 LICENSE=	GPLv3
 
-BUILD_DEPENDS=	xsltproc:textproc/libxslt \
+BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/iso-codes.pc:misc/iso-codes \
+		xsltproc:textproc/libxslt \
 		po4a-translate:textproc/po4a
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libexiv2.so:graphics/exiv2 \

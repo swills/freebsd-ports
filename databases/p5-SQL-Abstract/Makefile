@@ -1,8 +1,8 @@
 # Created by: Dominic Mitchell
-# $FreeBSD: head/databases/p5-SQL-Abstract/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-SQL-Abstract/Makefile 460201 2018-01-28 14:08:51Z sunpoet $
 
 PORTNAME=	SQL-Abstract
-PORTVERSION=	1.84
+PORTVERSION=	1.85
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

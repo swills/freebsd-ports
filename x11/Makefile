@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 458712 2018-01-11 06:23:22Z tobik $
+# $FreeBSD: head/x11/Makefile 460344 2018-01-29 21:49:33Z yuri $
 #
 
     COMMENT = Ports to support the X window system
@@ -351,6 +351,8 @@
     SUBDIR += wmctrl
     SUBDIR += wmdrawer
     SUBDIR += wmmatrix
+    SUBDIR += wmutils-core
+    SUBDIR += wmutils-opt
     SUBDIR += wmxss
     SUBDIR += workrave
     SUBDIR += x11perf

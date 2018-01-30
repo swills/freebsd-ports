@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/linux-oracle-jre9/Makefile 452681 2017-10-22 19:23:58Z glewis $
+# $FreeBSD: head/java/linux-oracle-jre9/Makefile 460351 2018-01-29 22:28:30Z jkim $
 
 PORTNAME=	jre
 PORTVERSION=	${JRE_VERSION}.${JRE_UPDATE_VERSION}.${JRE_PATCH_VERSION}
@@ -26,7 +26,7 @@ USE_LINUX=	xorglibs
 JRE_VENDOR=		oracle
 JRE_VERSION=		9
 JRE_UPDATE_VERSION=	0
-JRE_PATCH_VERSION=	1
+JRE_PATCH_VERSION=	4
 .if ${JRE_PATCH_VERSION} == 0
 .if ${JRE_UPDATE_VERSION} == 0
 DL_JRE_VERSION=		${JRE_VERSION}

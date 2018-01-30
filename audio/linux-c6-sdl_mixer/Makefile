@@ -1,11 +1,11 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/audio/linux-c6-sdl_mixer/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/audio/linux-c6-sdl_mixer/Makefile 460328 2018-01-29 19:45:22Z tijl $
 
 PORTNAME=	sdl_mixer
 PORTVERSION=	1.2.12
 PORTREVISION=	5
 CATEGORIES=	audio linux
-MASTER_SITES=	EPEL
+MASTER_SITES=	EPEL/s
 DISTNAME=	${LINUXNAME}-${DISTVERSIONFULL}
 
 MAINTAINER=	emulation@FreeBSD.org

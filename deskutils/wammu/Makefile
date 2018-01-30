@@ -1,8 +1,8 @@
 # Created by: bsam
-# $FreeBSD: head/deskutils/wammu/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/deskutils/wammu/Makefile 460249 2018-01-29 09:25:22Z vanilla $
 
 PORTNAME=	wammu
-PORTVERSION=	0.43
+PORTVERSION=	0.44
 CATEGORIES=	deskutils
 MASTER_SITES=	http://dl.cihar.com/wammu/v0/ \
 		http://dl.cihar.com.nyud.net/wammu/v0/

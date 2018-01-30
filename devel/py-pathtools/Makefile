@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/py-pathtools/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pathtools/Makefile 460241 2018-01-29 06:45:16Z araujo $
 
 PORTNAME=	pathtools
 PORTVERSION=	0.1.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

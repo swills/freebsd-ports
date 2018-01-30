@@ -1,5 +1,5 @@
 # Created by: John M. Cooper <john_m_cooper@yahoo.com>
-# $FreeBSD: head/devel/afay/Makefile 423686 2016-10-10 19:33:15Z amdmi3 $
+# $FreeBSD: head/devel/afay/Makefile 460298 2018-01-29 12:56:00Z bapt $
 
 PORTNAME=	afay
 PORTVERSION=	041111
@@ -10,6 +10,9 @@ DISTNAME=	afay_thiberlog_${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Improved aflex and ayacc Ada 95 scanner and parser generators
+
+DEPRECATED=	Abandonware, not used in the ports tree
+EXPIRATION_DATE=	2018-03-01
 
 LICENSE=	aflex
 LICENSE_NAME=	Arcadia-UC-Irvine

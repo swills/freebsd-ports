@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 460155 2018-01-28 01:39:12Z rene $
+# $FreeBSD: head/devel/Makefile 460367 2018-01-30 01:16:41Z swills $
 #
 
     COMMENT = Development utilities
@@ -191,10 +191,10 @@
     SUBDIR += bcc
     SUBDIR += bcpp
     SUBDIR += bear
-    SUBDIR += beautifyphp
     SUBDIR += bennugd-core
     SUBDIR += bennugd-modules
     SUBDIR += bglibs
+    SUBDIR += bhyve-vm-goagent
     SUBDIR += bicyclerepair
     SUBDIR += bin86
     SUBDIR += bingrep
@@ -305,7 +305,6 @@
     SUBDIR += cl-trivial-gray-streams-sbcl
     SUBDIR += clanlib
     SUBDIR += clanlib1
-    SUBDIR += clanlib22
     SUBDIR += cld2
     SUBDIR += clewn
     SUBDIR += clig
@@ -1994,6 +1993,7 @@
     SUBDIR += p5-CPAN-Reporter-Smoker
     SUBDIR += p5-CPAN-SQLite
     SUBDIR += p5-CPAN-Site
+    SUBDIR += p5-CPAN-Testers-Common-Client
     SUBDIR += p5-CPAN-Testers-Report
     SUBDIR += p5-CPAN-Uploader
     SUBDIR += p5-CPAN-YACSmoke
@@ -5306,10 +5306,12 @@
     SUBDIR += rubygem-bugspots
     SUBDIR += rubygem-builder
     SUBDIR += rubygem-byebug
+    SUBDIR += rubygem-byebug9
     SUBDIR += rubygem-cabin
     SUBDIR += rubygem-caesars
     SUBDIR += rubygem-cairo-gobject
     SUBDIR += rubygem-capybara
+    SUBDIR += rubygem-capybara-screenshot
     SUBDIR += rubygem-celluloid
     SUBDIR += rubygem-celluloid-essentials
     SUBDIR += rubygem-celluloid-extras
@@ -5420,7 +5422,9 @@
     SUBDIR += rubygem-fluent-logger
     SUBDIR += rubygem-fog
     SUBDIR += rubygem-fog-core
+    SUBDIR += rubygem-fog-core1
     SUBDIR += rubygem-fog-json
+    SUBDIR += rubygem-fog-json102
     SUBDIR += rubygem-font-awesome-rails
     SUBDIR += rubygem-font-awesome-rails-rails4
     SUBDIR += rubygem-font-awesome-rails-rails5
@@ -5635,6 +5639,7 @@
     SUBDIR += rubygem-protected_attributes
     SUBDIR += rubygem-protocol
     SUBDIR += rubygem-pry
+    SUBDIR += rubygem-pry-byebug
     SUBDIR += rubygem-pry-rails
     SUBDIR += rubygem-pry-remote-em
     SUBDIR += rubygem-ptreloaded

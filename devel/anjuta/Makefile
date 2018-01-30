@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/anjuta/Makefile 459816 2018-01-24 07:15:13Z truckman $
+# $FreeBSD: head/devel/anjuta/Makefile 460237 2018-01-29 03:10:26Z truckman $
 
 PORTNAME=	anjuta
 PORTVERSION=	3.18.2
@@ -100,8 +100,8 @@ DEVHELP_LIB_DEPENDS=	libdevhelp-3.so:devel/devhelp
 DEVHELP_CONFIGURE_ENBABLE=	plugin-devhelp
 
 VALA_VER=		0.36
-VALA_BUILD_DEPENDS=	vala>=${VALA_VER}<${VALA_VER}.99:lang/vala
-VALA_RUN_DEPENDS=	vala>=${VALA_VER}<${VALA_VER}.99:lang/vala
+VALA_BUILD_DEPENDS=	vala>=${VALA_VER},1<${VALA_VER}.99,1:lang/vala
+VALA_RUN_DEPENDS=	vala>=${VALA_VER},1<${VALA_VER}.99,1:lang/vala
 VALA_CONFIGURE_ENABLE=	vala
 
 post-patch:

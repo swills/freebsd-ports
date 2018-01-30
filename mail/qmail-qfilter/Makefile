@@ -1,5 +1,5 @@
 # Created by: Sergei Kolobov <sergei@FreeBSD.org>
-# $FreeBSD: head/mail/qmail-qfilter/Makefile 436935 2017-03-26 04:56:04Z araujo $
+# $FreeBSD: head/mail/qmail-qfilter/Makefile 460308 2018-01-29 14:22:16Z araujo $
 
 PORTNAME=	qmail-qfilter
 PORTVERSION=	2.1
@@ -7,7 +7,7 @@ PORTREVISION=	4
 CATEGORIES=	mail
 MASTER_SITES=	http://untroubled.org/${PORTNAME}/
 
-MAINTAINER=	araujo@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Front-end for qmail-queue to run messages through filters
 
 LICENSE=	GPLv2

@@ -1,10 +1,10 @@
 # Created by: ijliao
-# $FreeBSD: head/misc/help2man/Makefile 450673 2017-09-26 15:55:41Z sunpoet $
+# $FreeBSD: head/misc/help2man/Makefile 460183 2018-01-28 14:07:21Z sunpoet $
 
 PORTNAME=	help2man
 PORTVERSION=	1.47.5
 CATEGORIES=	misc
-MASTER_SITES=	GNU/${PORTNAME}
+MASTER_SITES=	GNU
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Automatically generating simple manual pages from program output

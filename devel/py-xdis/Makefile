@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-xdis/Makefile 459661 2018-01-22 15:46:37Z sunpoet $
+# $FreeBSD: head/devel/py-xdis/Makefile 460263 2018-01-29 11:27:29Z sunpoet $
 
 PORTNAME=	xdis
-PORTVERSION=	3.6.7
+PORTVERSION=	3.6.8
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

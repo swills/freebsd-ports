@@ -1,10 +1,10 @@
 # Created by: jagapen@home.com
-# $FreeBSD: head/devel/libffcall/Makefile 455813 2017-12-09 00:42:05Z linimon $
+# $FreeBSD: head/devel/libffcall/Makefile 460215 2018-01-28 14:10:04Z sunpoet $
 
 PORTNAME=	libffcall
 PORTVERSION=	1.13
 CATEGORIES=	devel
-MASTER_SITES=	GNU/${PORTNAME}
+MASTER_SITES=	GNU
 
 MAINTAINER=	amutu@amutu.com
 COMMENT=	Foreign function call libraries

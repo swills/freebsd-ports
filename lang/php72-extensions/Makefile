@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/php72-extensions/Makefile 454302 2017-11-16 10:48:48Z tz $
+# $FreeBSD: head/lang/php72-extensions/Makefile 460303 2018-01-29 13:43:22Z mat $
 
 PORTNAME=	php72
 PORTVERSION=	1.0
@@ -71,7 +71,7 @@ SIMPLEXML_DESC=		simplexml support
 SNMP_DESC=		SNMP support
 SOAP_DESC=		SOAP support
 SOCKETS_DESC=		sockets support
-SODIUM_DESC=		Sodium encyrption support
+SODIUM_DESC=		Sodium encryption support
 SQLITE3_DESC=		sqlite3 support
 SYSVMSG_DESC=		System V message support
 SYSVSEM_DESC=		System V semaphore support

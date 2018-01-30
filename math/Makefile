@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 460155 2018-01-28 01:39:12Z rene $
+# $FreeBSD: head/math/Makefile 460299 2018-01-29 13:23:12Z ale $
 #
 
     COMMENT = Mathematics
@@ -714,6 +714,7 @@
     SUBDIR += scilab-toolbox-swt
     SUBDIR += sdpa
     SUBDIR += sdpara
+    SUBDIR += secp256k1
     SUBDIR += sfft
     SUBDIR += sfst
     SUBDIR += simd-viterbi

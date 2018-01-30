@@ -1,9 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-powerdns/Makefile 458264 2018-01-06 13:51:29Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-powerdns/Makefile 460198 2018-01-28 14:08:36Z sunpoet $
 
 PORTNAME=	fog-powerdns
 PORTVERSION=	0.1.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -13,7 +13,7 @@ COMMENT=	Module for the 'fog' gem to support PowerDNS DNS services
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	rubygem-fog-core>=1.27:devel/rubygem-fog-core \
+RUN_DEPENDS=	rubygem-fog-core1>=1.27:devel/rubygem-fog-core1 \
 		rubygem-fog-json>=1.0:devel/rubygem-fog-json \
 		rubygem-fog-xml>=0.1:textproc/rubygem-fog-xml
 

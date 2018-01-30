@@ -1,11 +1,11 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/audio/linux-c6-mikmod/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/audio/linux-c6-mikmod/Makefile 460328 2018-01-29 19:45:22Z tijl $
 
 PORTNAME=	libmikmod
 PORTVERSION=	3.2.0
 PORTREVISION=	4
 CATEGORIES=	audio linux
-MASTER_SITES=	EPEL
+MASTER_SITES=	EPEL/l
 
 MAINTAINER=	emulation@FreeBSD.org
 COMMENT=	MikMod Sound Library (Linux CentOS ${LINUX_DIST_VER})

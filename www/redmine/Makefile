@@ -1,8 +1,9 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/www/redmine/Makefile 458611 2018-01-10 06:41:12Z sunpoet $
+# $FreeBSD: head/www/redmine/Makefile 460213 2018-01-28 14:09:53Z sunpoet $
 
 PORTNAME=	redmine
 PORTVERSION=	3.4.4
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://www.redmine.org/releases/
 

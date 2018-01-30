@@ -1,5 +1,5 @@
 # Created by: Ilia Chipitsine <ilia@jane.cgu.chel.su>
-# $FreeBSD: head/converters/p5-Unicode-Map8/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/converters/p5-Unicode-Map8/Makefile 460271 2018-01-29 11:28:09Z sunpoet $
 
 PORTNAME=	Unicode-Map8
 PORTVERSION=	0.13
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Mapping table between 8-bit chars and Unicode
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Unicode-String>=2:converters/p5-Unicode-String
 RUN_DEPENDS:=	${BUILD_DEPENDS}

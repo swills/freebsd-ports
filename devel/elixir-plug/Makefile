@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-plug/Makefile 452413 2017-10-19 10:19:02Z olgeni $
+# $FreeBSD: head/devel/elixir-plug/Makefile 460288 2018-01-29 11:48:11Z olgeni $
 
 PORTNAME=	plug
-PORTVERSION=	1.4.3
+PORTVERSION=	1.4.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

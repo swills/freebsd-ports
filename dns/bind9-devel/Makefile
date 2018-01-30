@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/bind9-devel/Makefile 459831 2018-01-24 10:43:30Z mat $
+# $FreeBSD: head/dns/bind9-devel/Makefile 460312 2018-01-29 15:07:21Z mat $
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
@@ -31,8 +31,8 @@ LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
 # ISC releases things like 9.8.0-P1, which our versioning doesn't like
-ISCVERSION=	9.13.0a0.2018.01.22
-HASH=		8a4ce20
+ISCVERSION=	9.13.0a0.2018.01.29
+HASH=		8d1b3f5
 
 USES=	cpe libedit
 

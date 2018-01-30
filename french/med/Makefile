@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/french/med/Makefile 455407 2017-12-03 15:14:06Z thierry $
+# $FreeBSD: head/french/med/Makefile 460222 2018-01-28 15:55:53Z thierry $
 
 PORTNAME=	med
 DISTVERSION=	3.2.1
@@ -19,6 +19,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
 USES=		fortran gmake libtool tk
+USE_CXXSTD=	gnu++98
 CFLAGS+=	-fPIC
 CONFIGURE_ARGS=	--disable-python --with-hdf5=${LOCALBASE}	\
 		--with-hdf5-include=${LOCALBASE}/include/hdf5-18

@@ -1,5 +1,5 @@
 # Created by: Ivan Lago <ivan.lago@ifom-ieo-campus.it>
-# $FreeBSD: head/sysutils/syslog-ng311/Makefile 459810 2018-01-24 01:25:35Z cy $
+# $FreeBSD: head/sysutils/syslog-ng311/Makefile 460281 2018-01-29 11:28:59Z sunpoet $
 
 PORTNAME=	syslog-ng
 DISTVERSION=	3.11.1
@@ -37,7 +37,7 @@ SQL_DESC=		Build with database (libdbi) support
 SPOOF_DESC=		Build with spoof source support
 SMTP_DESC=		Build with SMTP support
 JSON_DESC=		Build with JSON-C support
-GEOIP_DESC=		Build with GeoIP support (depreciated)
+GEOIP_DESC=		Build with GeoIP support (deprecated)
 GEOIP2_DESC=		Build with geoip2 (MaxMindDB) support
 REDIS_DESC=		Build with Redis support
 JAVA_DESC=		Build with Java support (no modules)

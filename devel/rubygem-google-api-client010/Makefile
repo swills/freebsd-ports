@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-google-api-client010/Makefile 448882 2017-08-28 19:18:36Z sunpoet $
+# $FreeBSD: head/devel/rubygem-google-api-client010/Makefile 460276 2018-01-29 11:28:35Z sunpoet $
 
 PORTNAME=	google-api-client
 PORTVERSION=	0.10.3
@@ -11,6 +11,9 @@ COMMENT=	Client for accessing Google APIs
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	Use devel/rubygem-google-api-client instead
+EXPIRATION_DATE=2018-02-28
 
 RUN_DEPENDS=	rubygem-addressable>=2.3:www/rubygem-addressable \
 		rubygem-googleauth>=0.5:security/rubygem-googleauth \

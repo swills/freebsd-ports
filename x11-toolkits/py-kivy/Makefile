@@ -1,8 +1,9 @@
 # Created by: David Naylor <dbn@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/py-kivy/Makefile 458236 2018-01-06 09:17:39Z antoine $
+# $FreeBSD: head/x11-toolkits/py-kivy/Makefile 460241 2018-01-29 06:45:16Z araujo $
 
 PORTNAME=	kivy
 PORTVERSION=	1.10.0
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

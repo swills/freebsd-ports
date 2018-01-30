@@ -1,5 +1,5 @@
 # Created by: Yinghong Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/devel/alabastra/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/devel/alabastra/Makefile 460298 2018-01-29 12:56:00Z bapt $
 
 PORTNAME=	alabastra
 PORTVERSION=	0.21b
@@ -10,6 +10,9 @@ DISTNAME=	Alabastra-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	C++ editor written with Qt 4
+
+DEPRECATED=	Abandonware, not used in the ports tree
+EXPIRATION_DATE=	2018-03-01
 
 LICENSE=	GPLv2+
 
