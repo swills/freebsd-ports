@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	rubygem-activesupport4>=4.0:devel/rubygem-activesupport4 \
 		rubygem-multi_json>=1.3.2:devel/rubygem-multi_json
 
-PORTSCOUT=	limit:^0\.6\.
+PORTSCOUT=	limit:^0\.6\.0
 
 NO_ARCH=	yes
 USES=		gem
