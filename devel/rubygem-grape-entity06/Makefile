@@ -1,10 +1,10 @@
 # $FreeBSD$
 
 PORTNAME=	grape-entity
-PORTVERSION=	0.6.0
+PORTVERSION=	0.6.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
-PKGNAMESUFFIX=	060
+PKGNAMESUFFIX=	06
 
 MAINTAINER=	idefix@fechner.net
 COMMENT=	Entities - a simple Facade to use with your models and API
