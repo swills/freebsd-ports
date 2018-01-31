@@ -1,19 +1,6 @@
---- Gemfile.orig	2018-01-22 14:26:07 UTC
+--- Gemfile.orig	2018-01-30 10:00:41 UTC
 +++ Gemfile
-@@ -1,49 +1,49 @@
- source 'https://rubygems.org'
- 
--gem 'rails', '4.2.10'
-+gem 'rails', '>=4.2.10'
- gem 'rails-deprecated_sanitizer', '~> 1.0.3'
- 
- # Responders respond_to and respond_with
- gem 'responders', '~> 2.0'
- 
--gem 'sprockets', '~> 3.7.0'
-+gem 'sprockets', '>= 3.7.0'
- 
- # Default values for AR models
+@@ -12,8 +12,8 @@ gem 'sprockets', '~> 3.7.0'
  gem 'default_value_for', '~> 3.0.0'
  
  # Supported DBs
@@ -24,11 +11,7 @@
  
  gem 'rugged', '~> 0.26.0'
  gem 'grape-route-helpers', '~> 2.1.0'
- 
--gem 'faraday', '~> 0.12'
-+gem 'faraday', '>= 0.12'
- 
- # Authentication libraries
+@@ -24,8 +24,8 @@ gem 'faraday', '~> 0.12'
  gem 'devise', '~> 4.2'
  gem 'doorkeeper', '~> 4.2.0'
  gem 'doorkeeper-openid_connect', '~> 1.2.0'
@@ -39,10 +22,8 @@
  gem 'omniauth-azure-oauth2', '~> 0.0.9'
  gem 'omniauth-cas3', '~> 1.1.4'
  gem 'omniauth-facebook', '~> 4.0.0'
- gem 'omniauth-github', '~> 1.1.1'
- gem 'omniauth-gitlab', '~> 1.0.2'
--gem 'omniauth-google-oauth2', '~> 0.5.2'
-+gem 'omniauth-google-oauth2', '>= 0.5.2'
+@@ -34,16 +34,16 @@ gem 'omniauth-gitlab', '~> 1.0.2'
+ gem 'omniauth-google-oauth2', '~> 0.5.2'
  gem 'omniauth-kerberos', '~> 0.3.0', group: :kerberos
  gem 'omniauth-oauth2-generic', '~> 0.2.2'
 -gem 'omniauth-saml', '~> 1.7.0'
@@ -64,7 +45,7 @@
  gem 'akismet', '~> 2.0'
  
  # Two-factor authentication
-@@ -77,12 +77,12 @@ gem 'gollum-lib', '~> 4.2', require: fal
+@@ -77,7 +77,7 @@ gem 'gollum-lib', '~> 4.2', require: fal
  gem 'gollum-rugged_adapter', '~> 0.4.4', require: false
  
  # Language detection
@@ -73,12 +54,6 @@
  
  # API
  gem 'grape', '~> 1.0'
- gem 'grape-entity', '~> 0.6.0'
--gem 'rack-cors', '~> 1.0.0', require: 'rack/cors'
-+gem 'rack-cors', '>= 1.0.0', require: 'rack/cors'
- 
- # Disable strong_params so that Mash does not respond to :permitted?
- gem 'hashie-forbidden_attributes'
 @@ -91,25 +91,25 @@ gem 'hashie-forbidden_attributes'
  gem 'kaminari', '~> 1.0'
  
@@ -87,8 +62,7 @@
 +gem 'hamlit', '>= 2.6.1'
  
  # Files attachments
--gem 'carrierwave', '~> 1.2'
-+gem 'carrierwave', '>= 1.2'
+ gem 'carrierwave', '~> 1.2'
  
  # Drag and Drop UI
 -gem 'dropzonejs-rails', '~> 0.7.1'
@@ -96,15 +70,13 @@
  
  # for backups
  gem 'fog-aws', '~> 1.4'
--gem 'fog-core', '~> 1.44'
+ gem 'fog-core', '~> 1.44'
 -gem 'fog-google', '~> 0.5'
-+gem 'fog-core', '>= 1.44'
 +gem 'fog-google', '>= 0.5'
  gem 'fog-local', '~> 0.3'
  gem 'fog-openstack', '~> 0.1'
  gem 'fog-rackspace', '~> 0.1.1'
--gem 'fog-aliyun', '~> 0.2.0'
-+gem 'fog-aliyun', '>= 0.2.0'
+ gem 'fog-aliyun', '~> 0.2.0'
  
  # for Google storage
 -gem 'google-api-client', '~> 0.13.6'
@@ -112,24 +84,15 @@
  
  # for aws storage
  gem 'unf', '~> 0.1.4'
-@@ -119,32 +119,32 @@ gem 'seed-fu', '2.3.6' # Upgrade to > 2.
- 
- # Markdown and HTML processing
- gem 'html-pipeline', '~> 1.11.0'
--gem 'deckar01-task_list', '2.0.0'
--gem 'gitlab-markup', '~> 1.6.2'
-+gem 'deckar01-task_list', '>= 2.0.0'
-+gem 'gitlab-markup', '>= 1.6.2'
- gem 'redcarpet', '~> 3.4'
- gem 'RedCloth', '~> 4.3.2'
+@@ -126,25 +126,25 @@ gem 'RedCloth', '~> 4.3.2'
  gem 'rdoc', '~> 4.2'
  gem 'org-ruby', '~> 0.9.12'
  gem 'creole', '~> 0.5.0'
 -gem 'wikicloth', '0.8.1'
-+gem 'wikicloth', '>= 0.8.1'
++gem 'wikicloth', '~> 0.8.1'
  gem 'asciidoctor', '~> 1.5.2'
 -gem 'asciidoctor-plantuml', '0.0.7'
-+gem 'asciidoctor-plantuml', '>= 0.0.7'
++gem 'asciidoctor-plantuml', '~> 0.0.7'
  gem 'rouge', '~> 2.0'
  gem 'truncato', '~> 0.7.9'
  gem 'bootstrap_form', '~> 2.7.0'
@@ -152,7 +115,7 @@
  
  # Issue tags
  gem 'acts-as-taggable-on', '~> 4.0'
-@@ -152,17 +152,17 @@ gem 'acts-as-taggable-on', '~> 4.0'
+@@ -152,14 +152,14 @@ gem 'acts-as-taggable-on', '~> 4.0'
  # Background jobs
  gem 'sidekiq', '~> 5.0'
  gem 'sidekiq-cron', '~> 0.6.0'
@@ -168,12 +131,8 @@
 +gem 'httparty', '>= 0.13.3'
  
  # Colored output to console
--gem 'rainbow', '~> 2.2'
-+gem 'rainbow', '>= 2.2'
- 
- # GitLab settings
- gem 'settingslogic', '~> 2.0.9'
-@@ -172,20 +172,20 @@ gem 're2', '~> 1.1.1'
+ gem 'rainbow', '~> 2.2'
+@@ -172,17 +172,17 @@ gem 're2', '~> 1.1.1'
  
  # Misc
  
@@ -193,11 +152,7 @@
 +gem 'hipchat', '>= 1.5.0'
  
  # JIRA integration
--gem 'jira-ruby', '~> 1.4'
-+gem 'jira-ruby', '>= 1.4'
- 
- # Flowdock integration
- gem 'gitlab-flowdock-git-hook', '~> 1.0.1'
+ gem 'jira-ruby', '~> 1.4'
 @@ -203,23 +203,23 @@ gem 'asana', '~> 0.6.0'
  gem 'ruby-fogbugz', '~> 0.2.1'
  
@@ -226,32 +181,25 @@
  
  # Ace editor
  gem 'ace-rails-ap', '~> 4.1.0'
-@@ -238,33 +238,33 @@ gem 'chronic', '~> 0.10.2'
- gem 'chronic_duration', '~> 0.10.6'
- 
- gem 'webpack-rails', '~> 0.9.10'
--gem 'rack-proxy', '~> 0.6.0'
-+gem 'rack-proxy', '>= 0.6.0'
+@@ -241,14 +241,14 @@ gem 'webpack-rails', '~> 0.9.10'
+ gem 'rack-proxy', '~> 0.6.0'
  
  gem 'sass-rails', '~> 5.0.6'
 -gem 'uglifier', '~> 2.7.2'
 +gem 'uglifier', '>= 2.7.2'
  
--gem 'addressable', '~> 2.5.2'
-+gem 'addressable', '>= 2.5.2'
+ gem 'addressable', '~> 2.5.2'
  gem 'bootstrap-sass', '~> 3.3.0'
  gem 'font-awesome-rails', '~> 4.7'
  gem 'gemojione', '~> 3.3'
 -gem 'gon', '~> 6.1.0'
 -gem 'jquery-atwho-rails', '~> 1.3.2'
--gem 'jquery-rails', '~> 4.3.1'
--gem 'request_store', '~> 1.3'
 +gem 'gon', '>= 6.1.0'
 +gem 'jquery-atwho-rails', '>= 1.3.2'
-+gem 'jquery-rails', '>= 4.3.1'
-+gem 'request_store', '>= 1.3'
+ gem 'jquery-rails', '~> 4.3.1'
+ gem 'request_store', '~> 1.3'
  gem 'select2-rails', '~> 3.5.9'
- gem 'virtus', '~> 1.0.1'
+@@ -256,15 +256,15 @@ gem 'virtus', '~> 1.0.1'
  gem 'base32', '~> 0.3.0'
  
  # Sentry integration
@@ -270,19 +218,16 @@
  gem 'gettext', '~> 3.2.2', require: false, group: :development
  
  gem 'batch-loader', '~> 1.2.1'
-@@ -273,139 +273,53 @@ gem 'batch-loader', '~> 1.2.1'
+@@ -273,7 +273,7 @@ gem 'batch-loader', '~> 1.2.1'
  gem 'peek', '~> 1.0.1'
  gem 'peek-gc', '~> 0.0.2'
  gem 'peek-host', '~> 1.0.0'
 -gem 'peek-mysql2', '~> 1.1.0', group: :mysql
--gem 'peek-performance_bar', '~> 1.3.0'
--gem 'peek-pg', '~> 1.3.0', group: :postgres
 +gem 'peek-mysql2', '>= 1.1.0', group: :mysql
-+gem 'peek-performance_bar', '>= 1.3.0'
-+gem 'peek-pg', '>= 1.3.0', group: :postgres
+ gem 'peek-performance_bar', '~> 1.3.0'
+ gem 'peek-pg', '~> 1.3.0', group: :postgres
  gem 'peek-rblineprof', '~> 0.2.0'
- gem 'peek-redis', '~> 1.2.0'
- gem 'peek-sidekiq', '~> 1.0.3'
+@@ -282,118 +282,32 @@ gem 'peek-sidekiq', '~> 1.0.3'
  
  # Metrics
  group :metrics do
@@ -382,16 +327,14 @@
  
  gem 'mail_room', '~> 0.9.1'
  
--gem 'email_reply_trimmer', '~> 0.1'
-+gem 'email_reply_trimmer', '>= 0.1'
+ gem 'email_reply_trimmer', '~> 0.1'
  gem 'html2text'
  
 -gem 'ruby-prof', '~> 0.16.2'
 +gem 'ruby-prof', '>= 0.16.2'
  
  # OAuth
--gem 'oauth2', '~> 1.4'
-+gem 'oauth2', '>= 1.4'
+ gem 'oauth2', '~> 1.4'
  
  # Health check
 -gem 'health_check', '~> 2.6.0'
@@ -407,10 +350,7 @@
  
  # Required for ED25519 SSH host key support
  group :ed25519 do
-   gem 'rbnacl-libsodium'
--  gem 'rbnacl', '~> 4.0'
-+  gem 'rbnacl', '~> 4.0.2'
-   gem 'bcrypt_pbkdf', '~> 1.0'
+@@ -403,9 +317,9 @@ group :ed25519 do
  end
  
  # Gitaly GRPC client

@@ -4,6 +4,7 @@
 PORTNAME=	gitlab
 PORTVERSION=	10.4.2
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	www devel
 
 MAINTAINER=	idefix@fechner.net
@@ -81,7 +82,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-carrierwave>=1.1:www/rubygem-carrierwave \
 	rubygem-dropzonejs-rails>=0.7.1:www/rubygem-dropzonejs-rails \
 	rubygem-fog-aws1>=1.4:net/rubygem-fog-aws1 \
-	rubygem-fog-core>=1.44:devel/rubygem-fog-core \
+	rubygem-fog-core1>=1.44:devel/rubygem-fog-core1 \
 	rubygem-fog-google>=0.5:net/rubygem-fog-google \
 	rubygem-fog-local>=0.3:net/rubygem-fog-local \
 	rubygem-fog-openstack>=0.1:net/rubygem-fog-openstack \
