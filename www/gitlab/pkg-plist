@@ -11037,6 +11037,7 @@
 %%WWWDIR%%/spec/migrations/move_system_upload_folder_spec.rb
 %%WWWDIR%%/spec/migrations/move_uploads_to_system_dir_spec.rb
 %%WWWDIR%%/spec/migrations/normalize_ldap_extern_uids_spec.rb
+%%WWWDIR%%/spec/migrations/populate_can_push_from_deploy_keys_projects_spec.rb
 %%WWWDIR%%/spec/migrations/remove_assignee_id_from_issue_spec.rb
 %%WWWDIR%%/spec/migrations/remove_dot_git_from_usernames_spec.rb
 %%WWWDIR%%/spec/migrations/remove_duplicate_mr_events_spec.rb
