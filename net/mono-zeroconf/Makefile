@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/mono-zeroconf/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/mono-zeroconf/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	mono-zeroconf
 PORTVERSION=	0.9.0
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://download.banshee.fm/${PORTNAME}/
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-github-markup/Makefile 456010 2017-12-11 10:44:18Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-github-markup/Makefile 460407 2018-01-30 15:39:35Z sunpoet $
 
 PORTNAME=	github-markup
-PORTVERSION=	1.6.2
+PORTVERSION=	1.7.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -18,8 +18,7 @@ REINPLACE_ARGS=	-i ''
 
 PLIST_FILES=	bin/github-markup
 
-SHEBANG_FILES=	script/bootstrap \
-		script/cibuild
+SHEBANG_FILES=	script/*
 
 post-patch:
 	@${REINPLACE_CMD} -e '1d' ${WRKSRC}/lib/github/commands/rest2html

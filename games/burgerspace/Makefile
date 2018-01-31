@@ -1,11 +1,11 @@
 # Created by: Mark Pulford <mark@kyne.com.au>
-# $FreeBSD: head/games/burgerspace/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/burgerspace/Makefile 460384 2018-01-30 12:35:05Z martymac $
 
 PORTNAME=	burgerspace
 PORTVERSION=	1.9.2
 PORTREVISION=	2
 CATEGORIES=	games
-MASTER_SITES=	http://perso.b2b2c.ca/sarrazip/dev/ \
+MASTER_SITES=	http://perso.b2b2c.ca/~sarrazip/dev/ \
 		LOCAL/martymac
 
 MAINTAINER=	martymac@FreeBSD.org

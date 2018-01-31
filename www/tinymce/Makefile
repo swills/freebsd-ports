@@ -1,8 +1,8 @@
 # Created by: Nick Hilliard <nick@foobar.org>
-# $FreeBSD: head/www/tinymce/Makefile 459761 2018-01-23 15:16:26Z sunpoet $
+# $FreeBSD: head/www/tinymce/Makefile 460395 2018-01-30 15:38:35Z sunpoet $
 
 PORTNAME=	tinymce
-PORTVERSION=	4.7.5
+PORTVERSION=	4.7.6
 CATEGORIES=	www
 MASTER_SITES=	http://download.ephox.com/${PORTNAME}/community/ \
 		LOCAL/sunpoet

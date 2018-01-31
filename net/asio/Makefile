@@ -1,5 +1,5 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/net/asio/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/net/asio/Makefile 460459 2018-01-31 04:43:28Z yuri $
 
 PORTNAME=	asio
 PORTVERSION=	1.10.6
@@ -15,9 +15,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE_1_0.txt
 
 RUN_DEPENDS=	${LOCALBASE}/include/boost/chrono/system_clocks.hpp:devel/boost-libs
 
+USES=		tar:bz2
 GNU_CONFIGURE=	yes
-USES=		gmake tar:bz2
 NO_BUILD=	yes
+NO_ARCH=	yes
 INSTALL_TARGET=	install-data
 
 .include <bsd.port.mk>

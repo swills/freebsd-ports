@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/vm-bhyve/Makefile 457036 2017-12-23 09:58:55Z marck $
+# $FreeBSD: head/sysutils/vm-bhyve/Makefile 460415 2018-01-30 16:58:14Z asomers $
 
 PORTNAME=	vm-bhyve
 PORTVERSION=	1.1.8
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=v
 CATEGORIES=	sysutils
 
@@ -11,6 +11,8 @@ COMMENT=	Management system for bhyve virtual machines
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 
 OPTIONS_DEFINE=	EXAMPLES
 EXAMPLES_DESC=	Install example guest templates

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@FreeBSD.org>
-# $FreeBSD: head/science/MOOSE-neural-simulator/Makefile 456732 2017-12-19 16:04:34Z yuri $
+# $FreeBSD: head/science/MOOSE-neural-simulator/Makefile 460443 2018-01-30 21:53:41Z antoine $
 
 PORTNAME=	MOOSE-neural-simulator
 DISTVERSION=	3.1.2
@@ -24,7 +24,7 @@ RUN_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}pygraphviz>=0:graphics/py-pygraphviz@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}suds-jurko>=0.4:net/py-suds-jurko@${PY_FLAVOR}
 
-USES=		cmake:outsource fortran gettext-runtime pyqt:4 python
+USES=		cmake:outsource fortran gettext-runtime pyqt:4 python:2.7
 USE_GITHUB=	yes
 GH_ACCOUNT=	BhallaLab
 GH_PROJECT=	moose

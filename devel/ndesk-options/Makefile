@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/ndesk-options/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/devel/ndesk-options/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	ndesk-options
 PORTVERSION=	0.2.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.ndesk.org/archive/${PORTNAME}/
 

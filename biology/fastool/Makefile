@@ -1,11 +1,10 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/biology/fastool/Makefile 430490 2017-01-03 18:12:13Z mat $
+# $FreeBSD: head/biology/fastool/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	fastool
 PORTVERSION=	0.1.4
 CATEGORIES=	biology
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Simple and quick FastQ and FastA tool for file reading and conversion
 
 LICENSE=	BSD2CLAUSE

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/mono-addins/Makefile 451901 2017-10-12 15:57:51Z mat $
+# $FreeBSD: head/devel/mono-addins/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	mono-addins
 PORTVERSION=	1.3
+PORTREVISION=	1
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	devel
 

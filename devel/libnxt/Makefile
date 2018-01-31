@@ -1,12 +1,11 @@
-# Created by: Jason Bacon <bacon11@tds.net>
-# $FreeBSD: head/devel/libnxt/Makefile 456050 2017-12-11 16:54:20Z antoine $
+# $FreeBSD: head/devel/libnxt/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	libnxt
 PORTVERSION=	0.3
 CATEGORIES=	devel
 MASTER_SITES=	https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/libnxt/
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Lego NXT library
 
 SUB_FILES=	pkg-message

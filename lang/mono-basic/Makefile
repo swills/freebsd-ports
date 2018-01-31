@@ -1,8 +1,9 @@
 # Created by: Romain Tartiere <romain@blogreen.org>
-# $FreeBSD: head/lang/mono-basic/Makefile 424974 2016-10-31 06:58:31Z dbn $
+# $FreeBSD: head/lang/mono-basic/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	mono-basic
 PORTVERSION=	4.6
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://download.mono-project.com/sources/${PORTNAME}/ \
 		http://ftp.novell.com/pub/mono/sources/${PORTNAME}/

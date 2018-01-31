@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/www/py-libsass/Makefile 459124 2018-01-15 22:01:00Z yuri $
+# $FreeBSD: head/www/py-libsass/Makefile 460457 2018-01-31 04:23:07Z yuri $
 
 PORTNAME=	libsass
-DISTVERSION=	0.13.5
+DISTVERSION=	0.13.6
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

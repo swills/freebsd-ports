@@ -1,5 +1,5 @@
 # Created by: Key-Teck SIN <ktsin@acm.org>
-# $FreeBSD: head/net/grive/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/net/grive/Makefile 460425 2018-01-30 18:10:07Z cpm $
 
 PORTNAME=	grive
 PORTVERSION=	0.3.0
@@ -10,6 +10,9 @@ MAINTAINER=	ktsin@acm.org
 COMMENT=	Open source client for Google Drive
 
 LICENSE=	GPLv2
+
+DEPRECATED=	Unmaintained by upstream, use net/grive2 instead
+EXPIRATION_DATE=	2018-02-16
 
 LIB_DEPENDS=	libboost_filesystem.so:devel/boost-libs \
 		libcurl.so:ftp/curl \

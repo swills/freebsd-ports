@@ -1,11 +1,11 @@
 # Created by: Juan Salaverria <rael@vectorstar.net>
-# $FreeBSD: head/textproc/sagasu/Makefile 415224 2016-05-15 09:03:36Z amdmi3 $
+# $FreeBSD: head/textproc/sagasu/Makefile 460384 2018-01-30 12:35:05Z martymac $
 
 PORTNAME=	sagasu
 PORTVERSION=	2.0.12
 PORTREVISION=	1
 CATEGORIES=	textproc gnome
-MASTER_SITES=	http://perso.b2b2c.ca/sarrazip/dev/
+MASTER_SITES=	http://perso.b2b2c.ca/~sarrazip/dev/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GNOME tool to find strings in a set of files

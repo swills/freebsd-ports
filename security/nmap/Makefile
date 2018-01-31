@@ -1,9 +1,9 @@
 # Created by: David O'Brien (obrien@NUXI.com)
-# $FreeBSD: head/security/nmap/Makefile 441214 2017-05-19 09:46:16Z eugen $
+# $FreeBSD: head/security/nmap/Makefile 460437 2018-01-30 21:02:54Z ohauer $
 
 PORTNAME=	nmap
-DISTVERSION=	7.40
-PORTREVISION=	1
+DISTVERSION=	7.60
+PORTREVISION=	0
 CATEGORIES=	security ipv6
 MASTER_SITES=	http://nmap.org/dist/ \
 		LOCAL/ohauer

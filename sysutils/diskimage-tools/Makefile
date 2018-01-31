@@ -1,12 +1,11 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/sysutils/diskimage-tools/Makefile 403506 2015-12-11 08:48:56Z miwi $
+# $FreeBSD: head/sysutils/diskimage-tools/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	diskimage-tools
 PORTVERSION=	0.1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://acadix.biz/Ports/distfiles/
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Convenience tools for manipulating disk images
 
 LICENSE=	BSD

@@ -1,5 +1,5 @@
 # Created by: Marc G. Fournier <scrappy@FreeBSD.org>
-# $FreeBSD: head/databases/postgresql10-server/Makefile 456862 2017-12-20 22:09:08Z girgen $
+# $FreeBSD: head/databases/postgresql10-server/Makefile 460386 2018-01-30 13:45:50Z mat $
 
 DISTVERSION?=	10.1
 PKGNAMESUFFIX?= ${PORTVERSION:R}${COMPONENT}
@@ -21,11 +21,5 @@ INSTALL_DIRS?=	src/common src/timezone src/backend \
 PG_USER?=	postgres
 PG_GROUP?=	postgres
 PG_UID?=	770
-
-.if defined(SERVER_ONLY)
-CONFIGURE_ARGS+=--with-icu
-LIB_DEPENDS+=	libicudata.so:devel/icu
-USES+=		pkgconfig
-.endif
 
 .include "${.CURDIR}/../postgresql92-server/Makefile"

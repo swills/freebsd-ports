@@ -1,5 +1,5 @@
 # Created by: Julian Stacey <jhs@FreeBSD.org>
-# $FreeBSD: head/misc/estic/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/misc/estic/Makefile 460447 2018-01-30 23:13:11Z dinoex $
 
 PORTNAME=		estic
 PORTVERSION=		1.61
@@ -87,9 +87,9 @@ do-install:
 .if ${PORT_OPTIONS:MDOCS}
 	@# estic doc says estic.res must be in bin path or current directory
 	${MKDIR} ${PBX_DOC}
-	${INSTALL_DATA} ${ESTIC}/estic.doc ${PBX_DOC}
+	${INSTALL_DATA} ${ESTIC}/estic.doc ${PBX_DOC}/
 	@# estic.doc is not nroff format, & is in German
-	${INSTALL_DATA} ${FILESDIR}/README ${PBX_DOC}
+	${INSTALL_DATA} ${FILESDIR}/README ${PBX_DOC}/
 .endif
 	@# ${FILESDIR}/README is not in nroff, but is a temporary document.
 	${MKDIR} ${PBX_ETC} ${PBX_VAR}

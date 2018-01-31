@@ -1,12 +1,12 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/sysutils/libsunacl/Makefile 353797 2014-05-12 10:41:43Z trasz $
+# $FreeBSD: head/sysutils/libsunacl/Makefile 460453 2018-01-31 01:35:58Z timur $
 
 PORTNAME=	libsunacl
-PORTVERSION=	1.0
+PORTVERSION=	1.0.1
 CATEGORIES=	sysutils
-MASTER_SITES=	SF
+MASTER_SITES=	https://github.com/freenas/libsunacl/releases/download/v${PORTVERSION}/
 
-MAINTAINER=	trasz@FreeBSD.org
+MAINTAINER=	timur@FreeBSD.org
 COMMENT=	Wrapper providing SunOS NFSv4 ACL API
 
 LICENSE=	BSD2CLAUSE

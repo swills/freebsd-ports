@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-PHP_CodeCoverage/Makefile 452650 2017-10-22 14:51:35Z joneum $
+# $FreeBSD: head/devel/pear-PHP_CodeCoverage/Makefile 460391 2018-01-30 15:15:53Z pizzamig $
 
 PORTNAME=	PHP_CodeCoverage
 DISTVERSION=	5.2.2
@@ -32,7 +32,7 @@ DOM_DESC=	Enable DOM support
 XDEBUG_DESC=	Enable Xdebug support
 
 DOM_USE=	PHP=dom
-XDEBUG_RUN_DEPENDS=	${LOCALBASE}/lib/php/${PHP_EXT_DIR}/xdebug.so:devel/php-xdebug
+XDEBUG_RUN_DEPENDS=	${LOCALBASE}/lib/php/${PHP_EXT_DIR}/xdebug.so:devel/pecl-xdebug
 
 PHP_DIR=	share/PHP
 

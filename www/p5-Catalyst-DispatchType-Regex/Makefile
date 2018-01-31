@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-DispatchType-Regex/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-DispatchType-Regex/Makefile 460396 2018-01-30 15:38:40Z sunpoet $
 
 PORTNAME=	Catalyst-DispatchType-Regex
 PORTVERSION=	5.90035
+PORTREVISION=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -15,7 +16,6 @@ LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Catalyst-Runtime>=5.90060:www/p5-Catalyst-Runtime \
 		p5-Moose>=0:devel/p5-Moose \
-		p5-Text-Balanced>=0:textproc/p5-Text-Balanced \
 		p5-Text-SimpleTable>=0:textproc/p5-Text-SimpleTable
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-MRO-Compat>=0:devel/p5-MRO-Compat \

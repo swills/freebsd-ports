@@ -1,12 +1,11 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/www/webbrowser/Makefile 403506 2015-12-11 08:48:56Z miwi $
+# $FreeBSD: head/www/webbrowser/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	webbrowser
 PORTVERSION=	0.3
 CATEGORIES=	www
 MASTER_SITES=	http://acadix.biz/Ports/distfiles/
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Wrapper for running the "best" available WEB browser
 
 LICENSE=	BSD2CLAUSE

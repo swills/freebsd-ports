@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/nplot/Makefile 423453 2016-10-07 07:13:40Z pi $
+# $FreeBSD: head/graphics/nplot/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	nplot
 PORTVERSION=	0.9.11
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	cs@innolan.dk

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/telegram-desktop/Makefile 456694 2017-12-18 23:35:45Z yuri $
+# $FreeBSD: head/net-im/telegram-desktop/Makefile 460442 2018-01-30 21:50:16Z antoine $
 
 PORTNAME=	telegram-desktop
 DISTVERSIONPREFIX=	v
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 		libopus.so:audio/opus \
 		libpulse.so:audio/pulseaudio
 
-USES=		cmake:noninja,outsource desktop-file-utils gmake pkgconfig python:build ssl
+USES=		cmake:noninja,outsource desktop-file-utils gmake pkgconfig python:2.7,build ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	telegramdesktop
 GH_PROJECT=	tdesktop

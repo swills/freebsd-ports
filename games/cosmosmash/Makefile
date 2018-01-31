@@ -1,11 +1,11 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/games/cosmosmash/Makefile 459919 2018-01-25 11:07:50Z martymac $
+# $FreeBSD: head/games/cosmosmash/Makefile 460384 2018-01-30 12:35:05Z martymac $
 
 PORTNAME=	cosmosmash
 DISTVERSION=	1.4.7
 PORTREVISION=	4
 CATEGORIES=	games
-MASTER_SITES=	http://perso.b2b2c.ca/sarrazip/dev/ \
+MASTER_SITES=	http://perso.b2b2c.ca/~sarrazip/dev/ \
 		LOCAL/martymac
 
 MAINTAINER=	martymac@FreeBSD.org

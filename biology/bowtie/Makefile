@@ -1,5 +1,4 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/biology/bowtie/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/biology/bowtie/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=		bowtie
 PORTVERSION=		1.1.2
@@ -7,7 +6,7 @@ PORTREVISION=	4
 DISTVERSIONPREFIX=	v
 CATEGORIES=		biology
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Ultrafast, memory-efficient short read aligner
 
 LICENSE=	ART10

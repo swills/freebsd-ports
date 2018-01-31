@@ -1,8 +1,9 @@
 # Created by: Tom McLaughlin <tmclaugh@sdf.lonestar.org>
-# $FreeBSD: head/devel/dbus-sharp/Makefile 440838 2017-05-13 13:22:16Z romain $
+# $FreeBSD: head/devel/dbus-sharp/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	dbus-sharp
 PORTVERSION=	0.8.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=v
 PORTEPOCH=	1
 CATEGORIES=	devel gnome

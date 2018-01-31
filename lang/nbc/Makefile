@@ -1,7 +1,5 @@
 # Created by: Ivan "Rambius" Ivanov <rambiusparkisanius@gmail.com>
-# $FreeBSD: head/lang/nbc/Makefile 434897 2017-02-26 17:44:25Z acm $
-
-# Also created by: Jason Bacon <bacon4000@gmail.com>
+# $FreeBSD: head/lang/nbc/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=		nbc
 PORTVERSION=		1.2.1.r4

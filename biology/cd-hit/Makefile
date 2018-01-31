@@ -1,5 +1,4 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/biology/cd-hit/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/biology/cd-hit/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	cd-hit
 PORTVERSION=	4.6.6
@@ -7,7 +6,7 @@ PORTREVISION=	2
 DISTVERSIONPREFIX=	V
 CATEGORIES=	biology
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Clustering and comparing protein or nucleotide sequences
 
 LICENSE=	GPLv2

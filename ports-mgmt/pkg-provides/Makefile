@@ -1,8 +1,9 @@
-# $FreeBSD: head/ports-mgmt/pkg-provides/Makefile 459945 2018-01-25 14:45:04Z rodrigo $
+# $FreeBSD: head/ports-mgmt/pkg-provides/Makefile 460465 2018-01-31 09:33:25Z rodrigo $
 
 PORTNAME=	pkg-provides
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.3.1
+PORTREVISION=	1
 CATEGORIES=	ports-mgmt
 
 MAINTAINER=	rodrigo@FreeBSD.org

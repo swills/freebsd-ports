@@ -1,8 +1,9 @@
 # Created by: Juli Mallett
-# $FreeBSD: head/x11-toolkits/gtk-sharp20/Makefile 458233 2018-01-06 08:44:30Z dbn $
+# $FreeBSD: head/x11-toolkits/gtk-sharp20/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	gtk-sharp
 PORTVERSION=	2.12.45
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://download.mono-project.com/sources/gtk-sharp212/
 PKGNAMESUFFIX=	20

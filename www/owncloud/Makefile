@@ -1,8 +1,8 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/www/owncloud/Makefile 459760 2018-01-23 15:16:21Z sunpoet $
+# $FreeBSD: head/www/owncloud/Makefile 460394 2018-01-30 15:38:30Z sunpoet $
 
 PORTNAME=	owncloud
-PORTVERSION=	10.0.5
+PORTVERSION=	10.0.6
 CATEGORIES=	www
 MASTER_SITES=	http://download.owncloud.org/community/
 

@@ -1,5 +1,4 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/sysutils/slurm-wlm/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
+# $FreeBSD: head/sysutils/slurm-wlm/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	slurm
 DISTVERSION=	17.02.9

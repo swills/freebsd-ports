@@ -1,5 +1,4 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/math/py-fiat/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/math/py-fiat/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	fiat
 PORTVERSION=	${MMVERSION}.0
@@ -9,7 +8,7 @@ MASTER_SITES=	https://launchpad.net/${PORTNAME}/${MMVERSION}.x/release-${MMVERSI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	${PORTNAME}-${MMVERSION}
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	FInite element Automatic Tabulator
 
 LICENSE=	LGPL3

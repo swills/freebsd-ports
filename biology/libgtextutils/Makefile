@@ -1,11 +1,10 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/biology/libgtextutils/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/biology/libgtextutils/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	libgtextutils
 PORTVERSION=	0.7
 CATEGORIES=	biology
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Gordon's text utilities
 
 LICENSE=	AGPLv3

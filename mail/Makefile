@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 460228 2018-01-28 19:29:26Z cs $
+# $FreeBSD: head/mail/Makefile 460376 2018-01-30 09:10:30Z jrm $
 #
 
     COMMENT = Electronic mail utilities
@@ -625,6 +625,7 @@
     SUBDIR += rubygem-pony
     SUBDIR += rubygem-premailer
     SUBDIR += rubygem-premailer-rails
+    SUBDIR += rubygem-premailer-rails-rails5
     SUBDIR += rubygem-rmail
     SUBDIR += rubygem-roadie
     SUBDIR += rubygem-roadie-rails

@@ -1,5 +1,4 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/math/py-ffc/Makefile 403506 2015-12-11 08:48:56Z miwi $
+# $FreeBSD: head/math/py-ffc/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	ffc
 PORTVERSION=	${MMVERSION}.0
@@ -7,7 +6,7 @@ CATEGORIES=	math python
 MASTER_SITES=	https://launchpad.net/${PORTNAME}/${MMVERSION}.x/${PORTVERSION}/+download/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	C++ code generator for multilinear forms
 
 LICENSE=	LGPL3

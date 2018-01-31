@@ -1,5 +1,4 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/biology/plink/Makefile 451982 2017-10-13 11:14:53Z bapt $
+# $FreeBSD: head/biology/plink/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	plink
 PORTVERSION=	1.07
@@ -8,7 +7,7 @@ CATEGORIES=	biology science
 MASTER_SITES=	http://pngu.mgh.harvard.edu/~purcell/plink/dist/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Whole genome association analysis toolset
 
 BROKEN=		no public distfiles

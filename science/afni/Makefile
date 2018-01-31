@@ -1,5 +1,4 @@
-# Created by: Jason W. Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/science/afni/Makefile 456719 2017-12-19 14:41:29Z linimon $
+# $FreeBSD: head/science/afni/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 ############################################################################
 # http://www.neuro.mcw.edu/Ports has the latest source distribution from
@@ -15,7 +14,7 @@ PORTREVISION=	5
 CATEGORIES=	science biology graphics
 MASTER_SITES=	http://www.acadix.biz/Ports/distfiles/
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Advanced Functional Neuro Imaging
 
 LICENSE=	GPLv2

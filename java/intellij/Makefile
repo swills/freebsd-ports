@@ -1,11 +1,11 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/java/intellij/Makefile 459797 2018-01-23 20:43:23Z bsam $
+# $FreeBSD: head/java/intellij/Makefile 460382 2018-01-30 12:28:36Z bsam $
 
 # Based on the devel/intellij port from OpenBSD by
 # Vadim Zhukov <zhuk@openbsd.org>
 
 PORTNAME=	intellij
-PORTVERSION=	2017.3.3
+PORTVERSION=	2017.3.4
 CATEGORIES=	java devel
 MASTER_SITES=	https://download.jetbrains.com/idea/ \
 		http://download.jetbrains.com/idea/
@@ -28,7 +28,7 @@ NO_ARCH=	yes
 NO_BUILD=	yes
 INSTALL_TARGET=	install-strip
 
-WRKSRC=		${WRKDIR}/idea-IC-173.4301.25
+WRKSRC=		${WRKDIR}/idea-IC-173.4548.28
 
 .include "common.mk"
 

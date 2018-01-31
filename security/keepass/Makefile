@@ -1,8 +1,9 @@
 # Created by: Ben Woods <woodsb02@FreeBSD.org>
-# $FreeBSD: head/security/keepass/Makefile 454405 2017-11-18 02:56:23Z woodsb02 $
+# $FreeBSD: head/security/keepass/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	keepass
 PORTVERSION=	2.37
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	SF/${PORTNAME}/KeePass%202.x/${PORTVERSION}
 DISTNAME=	KeePass-${PORTVERSION}-Source

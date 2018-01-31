@@ -1,8 +1,9 @@
 # Created by: Romain Tartiere <romain@blogreen.org>
-# $FreeBSD: head/devel/flickrnet/Makefile 417166 2016-06-20 16:23:28Z mat $
+# $FreeBSD: head/devel/flickrnet/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	flickrnet
 PORTVERSION=	2.2.0
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://romain.blogreen.org/distfiles/
