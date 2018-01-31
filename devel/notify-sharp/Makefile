@@ -1,9 +1,9 @@
 # Created by: Romain Tartiere <romain@blogreen.org>
-# $FreeBSD: head/devel/notify-sharp/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/notify-sharp/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	notify-sharp
 PORTVERSION=	0.4.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://romain.blogreen.org/distfiles/
 

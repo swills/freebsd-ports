@@ -1,11 +1,10 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/biology/fastx-toolkit/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/biology/fastx-toolkit/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	fastx_toolkit
 PORTVERSION=	0.0.14
 CATEGORIES=	biology
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	CLI tools for Short-Reads FASTA/FASTQ files preprocessing
 
 LICENSE=	AGPLv3+

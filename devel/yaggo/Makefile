@@ -1,12 +1,11 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/devel/yaggo/Makefile 411420 2016-03-19 18:17:50Z mat $
+# $FreeBSD: head/devel/yaggo/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	yaggo
 PORTVERSION=	1.5.9
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Generate command line parser using getopt_long
 
 LICENSE=	GPLv3

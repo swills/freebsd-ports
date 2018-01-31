@@ -1,10 +1,10 @@
 # Created by: FreeBSD GNOME Team <gnome@FreeBSD.org>
-# $FreeBSD: head/devel/ndesk-dbus-glib/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/ndesk-dbus-glib/Makefile 460430 2018-01-30 19:00:27Z dbn $
 #   $MCom: ports/devel/ndesk-dbus-glib/Makefile,v 1.2 2008/01/14 22:35:41 mezz Exp $
 
 PORTNAME=	ndesk-dbus-glib
 PORTVERSION=	0.4.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.ndesk.org/archive/ndesk-dbus/
 

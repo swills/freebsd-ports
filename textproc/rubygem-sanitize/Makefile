@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/textproc/rubygem-sanitize/Makefile 442659 2017-06-05 14:52:56Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-sanitize/Makefile 460410 2018-01-30 15:39:51Z sunpoet $
 
 PORTNAME=	sanitize
-PORTVERSION=	4.5.0
+PORTVERSION=	4.6.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-crass>=1.0.2:www/rubygem-crass \
 		rubygem-nokogiri>=1.4.4:textproc/rubygem-nokogiri \
-		rubygem-nokogumbo>=1.4.1:textproc/rubygem-nokogumbo
+		rubygem-nokogumbo>=1.4:textproc/rubygem-nokogumbo
 
 NO_ARCH=	yes
 USE_RUBY=	yes

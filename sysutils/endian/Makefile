@@ -1,12 +1,11 @@
-# Created by: Jason W. Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/sysutils/endian/Makefile 403506 2015-12-11 08:48:56Z miwi $
+# $FreeBSD: head/sysutils/endian/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	endian
 PORTVERSION=	1.1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://acadix.biz/Ports/distfiles/
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Report endianness of a system
 
 LICENSE=	BSD2CLAUSE

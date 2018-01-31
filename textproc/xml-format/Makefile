@@ -1,5 +1,4 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/textproc/xml-format/Makefile 403506 2015-12-11 08:48:56Z miwi $
+# $FreeBSD: head/textproc/xml-format/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	xml-format
 PORTVERSION=	0.2

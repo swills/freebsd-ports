@@ -1,12 +1,12 @@
 # Created by: Dan Siercks <dsiercks@uwm.edu>
-# $FreeBSD: head/biology/cdbfasta/Makefile 403506 2015-12-11 08:48:56Z miwi $
+# $FreeBSD: head/biology/cdbfasta/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	cdbfasta
 PORTVERSION=	2010.07.22
 CATEGORIES=	biology
 MASTER_SITES=	http://acadix.biz/Ports/distfiles/
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Fast indexing and retrieval of FASTA records from flat file databases
 
 # LICENSE=	unspecified

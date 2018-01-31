@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Text-Balanced/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-Text-Balanced/Makefile 460404 2018-01-30 15:39:20Z sunpoet $
 
 PORTNAME=	Text-Balanced
 PORTVERSION=	2.03
@@ -12,7 +12,9 @@ COMMENT=	Extract delimited text sequences from strings
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE_ART10=	${WRKSRC}/LICENSE
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

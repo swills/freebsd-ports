@@ -1,8 +1,9 @@
 # Created by: Tom McLaughlin <tmclaugh@sdf.lonestar.org>
-# $FreeBSD: head/www/xsp/Makefile 419884 2016-08-08 18:06:59Z romain $
+# $FreeBSD: head/www/xsp/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	xsp
 PORTVERSION=	4.2
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://download.mono-project.com/sources/${PORTNAME}/
 

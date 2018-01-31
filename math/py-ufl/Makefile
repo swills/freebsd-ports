@@ -1,5 +1,4 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/math/py-ufl/Makefile 403506 2015-12-11 08:48:56Z miwi $
+# $FreeBSD: head/math/py-ufl/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	ufl
 PORTVERSION=	${MMVERSION}0
@@ -8,7 +7,7 @@ MASTER_SITES=	https://launchpad.net/${PORTNAME}/${MMVERSION}.x/${MMVERSION}.0/+d
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	${PORTNAME}-${MMVERSION}.0
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Unified Form Language for finite element discretizations
 
 LICENSE=	LGPL3

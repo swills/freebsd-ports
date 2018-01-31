@@ -1,8 +1,9 @@
 # Created by: Tom McLaughlin <tmclaugh@sdf.lonestar.org>
-# $FreeBSD: head/deskutils/tomboy/Makefile 440909 2017-05-15 06:28:52Z romain $
+# $FreeBSD: head/deskutils/tomboy/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	tomboy
 PORTVERSION=	1.15.7
+PORTREVISION=	1
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

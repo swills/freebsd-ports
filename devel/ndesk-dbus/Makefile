@@ -1,9 +1,10 @@
 # Created by: FreeBSD GNOME Team <gnome@FreeBSD.org>
-# $FreeBSD: head/devel/ndesk-dbus/Makefile 387189 2015-05-23 23:04:34Z antoine $
+# $FreeBSD: head/devel/ndesk-dbus/Makefile 460430 2018-01-30 19:00:27Z dbn $
 #   $MCom: ports/devel/ndesk-dbus/Makefile,v 1.2 2008/01/14 22:35:41 mezz Exp $
 
 PORTNAME=	ndesk-dbus
 PORTVERSION=	0.6.1a
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.ndesk.org/archive/ndesk-dbus/
 

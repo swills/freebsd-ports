@@ -1,9 +1,9 @@
 # Created by: Romain Tartiere <romain@blogreen.org>
-# $FreeBSD: head/security/gnome-keyring-sharp/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/gnome-keyring-sharp/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	gnome-keyring-sharp
 PORTVERSION=	1.0.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	security
 MASTER_SITES=	http://www.go-mono.com/archive/${PORTNAME}/
 
@@ -18,7 +18,7 @@ BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/ndesk-dbus-1.0.pc:devel/ndesk-dbus
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 GNU_CONFIGURE=	yes
-USES=		gmake libtool mono pathfix pkgconfig
+USES=		autoreconf gmake libtool mono pathfix pkgconfig
 USE_GNOME=	gtksharp20
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip

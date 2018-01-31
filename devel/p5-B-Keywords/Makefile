@@ -1,8 +1,8 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-B-Keywords/Makefile 457525 2017-12-29 18:47:26Z sunpoet $
+# $FreeBSD: head/devel/p5-B-Keywords/Makefile 460402 2018-01-30 15:39:10Z sunpoet $
 
 PORTNAME=	B-Keywords
-PORTVERSION=	1.16
+PORTVERSION=	1.18
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

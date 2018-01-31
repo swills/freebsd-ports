@@ -1,12 +1,13 @@
 # Created by: Jeroen Schot <schot@a-eskwadraat.nl>
-# $FreeBSD: head/x11-wm/dwm/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-wm/dwm/Makefile 460417 2018-01-30 17:28:34Z zeising $
 
 PORTNAME=	dwm
 PORTVERSION=	6.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://dl.suckless.org/${PORTNAME}/ \
 		http://schot.a-eskwadraat.nl/files/
+
 PATCH_SITES=	http://dwm.suckless.org/patches/
 
 MAINTAINER=	schot@a-eskwadraat.nl
@@ -17,11 +18,15 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig
 
-OPTIONS_DEFINE=	XINERAMA DOCS
+OPTIONS_DEFINE=	XINERAMA DOCS SUPERASMODKEY
 OPTIONS_DEFAULT=XINERAMA
+
+SUPERASMODKEY_DESC=	Use Super instead of Alt for the dwm mod key
 
 XINERAMA_USE=	XORG=xinerama
 XINERAMA_MAKE_ARGS_OFF=	XINERAMAFLAGS= XINERAMALIBS=
+
+SUPERASMODKEY_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-config.def.h
 
 USE_XORG=	x11 xft
 MAKE_ARGS=	CC="${CC}" PREFIX="${PREFIX}" MANPREFIX="${MANPREFIX}/man" \
@@ -45,5 +50,6 @@ post-extract:
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}${DOCSDIR}
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/dwm
 
 .include <bsd.port.mk>

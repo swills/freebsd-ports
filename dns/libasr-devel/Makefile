@@ -1,8 +1,9 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/dns/libasr-devel/Makefile 441907 2017-05-28 10:58:00Z antoine $
+# $FreeBSD: head/dns/libasr-devel/Makefile 460381 2018-01-30 12:14:40Z fluffy $
 
 PORTNAME=	libasr
 PORTVERSION=	201602131606
+PORTREVISION=	1
 CATEGORIES=	dns
 MASTER_SITES=	http://www.opensmtpd.org/archives/ \
 		http://distfiles.pirateparty.in/ashish/
@@ -19,7 +20,14 @@ CONFLICTS=	libasr-[0-9]*
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 
-USES=		groff libtool
+OPTIONS_DEFINE=	MAN3
+OPTIONS_SUB=	yes
+
+MAN3_DESC=	Install API manpages (section 3)
+MAN3_USES=	groff
+MAN3_CONFIGURE_OFF=	ac_cv_path_GROFF="" ac_cv_path_NROFF="" ac_cv_path_MANDOC=""
+
+USES=		libtool ssl:build
 USE_LDCONFIG=	yes
 
 .include <bsd.port.mk>

@@ -1,5 +1,4 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/devel/p5-Device-USB/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Device-USB/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	Device-USB
 PORTVERSION=	0.35

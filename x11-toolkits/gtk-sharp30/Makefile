@@ -1,9 +1,9 @@
 # Created by: Juli Mallett
-# $FreeBSD: head/x11-toolkits/gtk-sharp30/Makefile 424974 2016-10-31 06:58:31Z dbn $
+# $FreeBSD: head/x11-toolkits/gtk-sharp30/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	gtk-sharp
 PORTVERSION=	2.99.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	GNOME
 PKGNAMESUFFIX=	30

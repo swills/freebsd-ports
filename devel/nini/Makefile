@@ -1,8 +1,9 @@
 # Created by: Romain Tartiere <romain@blogreen.org>
-# $FreeBSD: head/devel/nini/Makefile 408525 2016-02-09 01:43:24Z amdmi3 $
+# $FreeBSD: head/devel/nini/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	nini
 PORTVERSION=	1.1.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	SF/nini/Nini/${PORTVERSION}
 DISTNAME=	Nini-${PORTVERSION}

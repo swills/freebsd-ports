@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-gitaly-proto/Makefile 460200 2018-01-28 14:08:46Z sunpoet $
+# $FreeBSD: head/net/rubygem-gitaly-proto/Makefile 460399 2018-01-30 15:38:55Z sunpoet $
 
 PORTNAME=	gitaly-proto
-PORTVERSION=	0.82.0
+PORTVERSION=	0.83.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

@@ -1,5 +1,5 @@
 # Created by: Vsevolod Stakhov <vsevolod@highsecure.ru>
-# $FreeBSD: head/net-im/py-pyxmpp/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-im/py-pyxmpp/Makefile 460427 2018-01-30 18:16:23Z rm $
 
 PORTNAME=	pyxmpp
 PORTVERSION=	1.1.2
@@ -13,6 +13,9 @@ COMMENT=	Python XMPP library
 
 LICENSE=	LGPL21 # only
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	Obsoleted in favor of PyXMPP2
+EXPIRATION_DATE=	2018-02-28
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>0:dns/py-dnspython@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}m2crypto>=0.18.2:security/py-m2crypto@${FLAVOR} \

@@ -1,10 +1,10 @@
 # Created by: Christopher Nehren <apeiron+ports@coitusmentis.info>
-# $FreeBSD: head/devel/nant/Makefile 429540 2016-12-26 16:43:27Z sunpoet $
+# $FreeBSD: head/devel/nant/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	nant
 PORTVERSION=	0.92
 DISTVERSIONSUFFIX=	-src
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	SF
 

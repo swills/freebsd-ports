@@ -1,5 +1,5 @@
 # Created by: Denis Barov
-# $FreeBSD: head/sysutils/fusefs-smbnetfs/Makefile 460320 2018-01-29 18:32:31Z mi $
+# $FreeBSD: head/sysutils/fusefs-smbnetfs/Makefile 460440 2018-01-30 21:39:38Z mi $
 
 PORTNAME=	smbnetfs
 PORTVERSION=	0.6.1
@@ -30,6 +30,8 @@ CONFIGURE_ENV+=	GLIB_LIBS=-L/var/empty
 CFLAGS+=	-I${SAMBAINCLUDES}
 LDFLAGS+=	-L${SAMBALIBS}
 SUB_FILES=	pkg-message
+# configure just generated config.h -- we do not need to redo it:
+MAKE_ARGS+=	AUTOHEADER=${TRUE}
 
 .include <bsd.port.pre.mk>
 

@@ -1,5 +1,4 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/audio/praat/Makefile 441429 2017-05-21 21:55:08Z linimon $
+# $FreeBSD: head/audio/praat/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	praat
 PORTVERSION=	5.4.08
@@ -7,7 +6,7 @@ DISTVERSIONPREFIX=	v
 PORTREVISION=	3
 CATEGORIES=	audio science
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Phonetics by Computer
 
 LICENSE=	GPLv2

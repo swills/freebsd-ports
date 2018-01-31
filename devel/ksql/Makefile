@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/ksql/Makefile 455697 2017-12-07 08:59:41Z tobik $
+# $FreeBSD: head/devel/ksql/Makefile 460373 2018-01-30 07:19:30Z tobik $
 
 PORTNAME=	ksql
-PORTVERSION=	0.1.4
+PORTVERSION=	0.2.2
 CATEGORIES=	devel databases
 MASTER_SITES=	http://kristaps.bsd.lv/ksql/snapshots/
 
@@ -15,10 +15,7 @@ BUILD_DEPENDS=	${LOCALBASE}/include/sqlite3.h:databases/sqlite3
 USES=		localbase
 
 HAS_CONFIGURE=	yes
-
-post-patch:
-	@${REINPLACE_CMD} 's@^PREFIX="/usr/local"@PREFIX="${PREFIX}"@' \
-		${WRKSRC}/configure
+CONFIGURE_ARGS=	PREFIX="${PREFIX}"
 
 do-test:
 	@cd ${WRKSRC} && ./test

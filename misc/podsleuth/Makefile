@@ -1,9 +1,9 @@
 # Created by: Romain Tartiere <romain@blogreen.org>
-# $FreeBSD: head/misc/podsleuth/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/misc/podsleuth/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	podsleuth
 PORTVERSION=	0.6.7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	http://download.banshee.fm/${PORTNAME}/${PORTVERSION}/
 

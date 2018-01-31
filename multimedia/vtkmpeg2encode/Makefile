@@ -1,5 +1,4 @@
-# Created by: Jason W. Bacon <bacon@smithers.neuro.mcw.edu>
-# $FreeBSD: head/multimedia/vtkmpeg2encode/Makefile 388438 2015-06-03 15:59:33Z amdmi3 $
+# $FreeBSD: head/multimedia/vtkmpeg2encode/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	vtkmpeg2encode
 PORTVERSION=	${VTK_VERSION}

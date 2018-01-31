@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/taglib-sharp/Makefile 387194 2015-05-23 23:41:20Z antoine $
+# $FreeBSD: head/audio/taglib-sharp/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	taglib-sharp
 PORTVERSION=	2.0.3.7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://download.banshee.fm/${PORTNAME}/${PORTVERSION}/
 

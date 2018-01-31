@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/ganglia-monitor-core/Makefile 456126 2017-12-12 12:40:15Z antoine $
+# $FreeBSD: head/sysutils/ganglia-monitor-core/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	monitor-core
 PORTVERSION=	3.7.1
@@ -10,7 +10,7 @@ PKGNAMESUFFIX=	-${CLUSTER}
 .endif
 DISTNAME=	ganglia-${PORTVERSION}
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Ganglia cluster monitor, monitoring daemon
 
 LICENSE=	BSD3CLAUSE

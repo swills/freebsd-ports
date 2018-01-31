@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/gbrainy/Makefile 458818 2018-01-12 11:21:07Z rene $
+# $FreeBSD: head/games/gbrainy/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	gbrainy
 PORTVERSION=	2.2.2
+PORTREVISION=	1
 PORTEPOCH=	2
 CATEGORIES=	games
 MASTER_SITES=	http://gent.softcatala.org/jmas/gbrainy/

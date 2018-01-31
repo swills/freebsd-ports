@@ -1,7 +1,7 @@
 # Created by: Tom McLaughlin <tmclaugh@sdf.lonestar.org>
-# $FreeBSD: head/mail/gmime2-sharp/Makefile 428132 2016-12-08 16:07:33Z tijl $
+# $FreeBSD: head/mail/gmime2-sharp/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	mail
 PKGNAMESUFFIX=	2-sharp
 

@@ -1,9 +1,9 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/audio/linux-c6-alsa-plugins-pulseaudio/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/audio/linux-c6-alsa-plugins-pulseaudio/Makefile 460379 2018-01-30 10:50:22Z tijl $
 
 PORTNAME=	alsa-plugins
 PORTVERSION=	1.1.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio linux
 PKGNAMESUFFIX=	-pulseaudio
 LIB_DISTNAMES=	${LINUXNAME}-${DISTVERSIONFULL}

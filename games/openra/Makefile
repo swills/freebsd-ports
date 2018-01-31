@@ -1,8 +1,9 @@
-# $FreeBSD: head/games/openra/Makefile 452072 2017-10-14 17:00:56Z jbeich $
+# $FreeBSD: head/games/openra/Makefile 460439 2018-01-30 21:38:18Z jbeich $
 
 PORTNAME=	openra
 PORTVERSION=	20171014
 DISTVERSIONPREFIX=	release-
+PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	https://github.com/${GH_ACCOUNT}/SDL2-CS/releases/download/20161223/:SDL2_CS \
 		https://github.com/${GH_ACCOUNT}/OpenAL-CS/releases/download/20151227/:OpenAL_CS \
@@ -68,8 +69,8 @@ post-patch:
 		${WRKSRC}/Makefile
 	${REINPLACE_CMD} -e '/[[:<:]]get[[:blank:]]/d' \
 			${WRKSRC}/thirdparty/fetch-thirdparty-deps.sh
-	${FIND} ${WRKSRC}/thirdparty -name '*.config*' -exec ${REINPLACE_CMD} \
-		-i '.bak.os' -e '/linux/{ p; s//${OPSYS:tl}/; }' {} +
+	${FIND} -L ${WRKSRC}/thirdparty -name '*.config*' -exec ${REINPLACE_CMD} \
+		-i '.bak.os' -e '/${OPSYS:tl}/d; /linux/{ p; s//${OPSYS:tl}/; }' {} +
 	${SED} 's/@LIBLUA51@/liblua-${LUA_VER}.so/' \
 		${WRKSRC}/thirdparty/Eluant.dll.config.in \
 		>${WRKSRC}/Eluant.dll.config

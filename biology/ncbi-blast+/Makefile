@@ -1,5 +1,4 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/biology/ncbi-blast+/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/biology/ncbi-blast+/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	blast+
 PORTVERSION=	2.5.0
@@ -10,7 +9,7 @@ MASTER_SITES=	http://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/${PORTVERSION
 PKGNAMEPREFIX=	ncbi-
 DISTNAME=	ncbi-blast-${PORTVERSION}+-src
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	NCBI implementation of Basic Local Alignment Search Tool
 
 LICENSE=	PD

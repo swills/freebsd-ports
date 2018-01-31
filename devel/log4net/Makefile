@@ -1,9 +1,9 @@
 # Created by: Christopher Nehren <apeiron@coitusmentis.info>
-# $FreeBSD: head/devel/log4net/Makefile 407555 2016-01-30 21:49:33Z amdmi3 $
+# $FreeBSD: head/devel/log4net/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	log4net
 PORTVERSION=	1.2.10
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	APACHE/incubator/log4net/${PORTVERSION}
 DISTNAME=	incubating-${PORTNAME}-${PORTVERSION}

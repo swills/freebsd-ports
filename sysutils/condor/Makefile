@@ -1,5 +1,5 @@
 # Created by: Andy Pavlo
-# $FreeBSD: head/sysutils/condor/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/sysutils/condor/Makefile 460452 2018-01-31 01:07:07Z jwb $
 #
 # Note: Make sure there are no older versions of HTCondor installed during
 #       build.  The build system may pick up incompatible headers and libs.
@@ -11,7 +11,7 @@ CATEGORIES=	sysutils net
 MASTER_SITES=	http://www.acadix.biz/Ports/distfiles/
 DISTNAME=	condor_src-${PORTVERSION}-all-all
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	High-throughput computing on distributively owned resources
 
 LICENSE=	APACHE20

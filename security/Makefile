@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 460157 2018-01-28 04:04:42Z cy $
+# $FreeBSD: head/security/Makefile 460456 2018-01-31 04:19:02Z yuri $
 #
 
     COMMENT = Security tools
@@ -1188,6 +1188,7 @@
     SUBDIR += softether-devel
     SUBDIR += softhsm
     SUBDIR += softhsm2
+    SUBDIR += sops
     SUBDIR += spass
     SUBDIR += spike-proxy
     SUBDIR += spybye

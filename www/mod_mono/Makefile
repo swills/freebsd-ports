@@ -1,8 +1,9 @@
 # Created by: Tom McLaughlin <tmclaugh@sdf.lonestar.org>
-# $FreeBSD: head/www/mod_mono/Makefile 456030 2017-12-11 13:58:45Z brnrd $
+# $FreeBSD: head/www/mod_mono/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	mod_mono
 PORTVERSION=	3.12
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://download.mono-project.com/sources/${PORTNAME}/
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}

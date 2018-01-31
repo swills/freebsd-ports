@@ -1,12 +1,11 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/ports-mgmt/genplist/Makefile 408905 2016-02-14 22:29:56Z ohauer $
+# $FreeBSD: head/ports-mgmt/genplist/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	genplist
 PORTVERSION=	1.2
 CATEGORIES=	ports-mgmt
 MASTER_SITES=	http://acadix.biz/Ports/distfiles/
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Generates a static plist for a port
 
 LICENSE=	BSD2CLAUSE

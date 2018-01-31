@@ -1,9 +1,9 @@
 # Created by: Marcin Simonides <marcin@studio4plus.com>
-# $FreeBSD: head/multimedia/gnome-subtitles/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/multimedia/gnome-subtitles/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	gnome-subtitles
 PORTVERSION=	1.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia
 MASTER_SITES=	SF
 

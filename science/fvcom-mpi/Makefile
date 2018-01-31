@@ -1,12 +1,11 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/science/fvcom-mpi/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/science/fvcom-mpi/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTREVISION=	10
 PKGNAMESUFFIX=	-openmpi
 
 MPIPREFIX=	mpi/openmpi/
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 
 LIB_DEPENDS+=	libmpi.so:net/openmpi
 

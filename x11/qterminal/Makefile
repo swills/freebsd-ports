@@ -1,5 +1,4 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/x11/qterminal/Makefile 453005 2017-10-27 15:50:20Z swills $
+# $FreeBSD: head/x11/qterminal/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	qterminal
 PORTVERSION=	0.8.0

@@ -1,8 +1,8 @@
 # Created by: Sergei Kolobov <sergei@kolobov.com>
-# $FreeBSD: head/ports-mgmt/porttools/Makefile 415896 2016-05-26 14:18:22Z skreuzer $
+# $FreeBSD: head/ports-mgmt/porttools/Makefile 460454 2018-01-31 01:37:41Z skreuzer $
 
 PORTNAME=	porttools
-PORTVERSION=	1.07
+PORTVERSION=	1.08
 CATEGORIES=	ports-mgmt
 
 MAINTAINER=	skreuzer@FreeBSD.org

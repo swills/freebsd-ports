@@ -1,7 +1,7 @@
 # Created by: rooneg@electricjellyfish.net
-# $FreeBSD: head/devel/subversion/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/devel/subversion/Makefile 460383 2018-01-30 12:31:06Z lev $
 
-PORTREVISION=	1
+PORTREVISION=	2
 
 MAINTAINER=	lev@FreeBSD.org
 COMMENT=	Version control system
@@ -17,6 +17,7 @@ OPTIONS_DEFINE=	\
 		BDB		\
 		DOCS		\
 		FREEBSD_TEMPLATE\
+		GPG_AGENT \
 		MAINTAINER_DEBUG\
 		NLS		\
 		SASL		\
@@ -30,6 +31,7 @@ OPTIONS_DEFAULT=FREEBSD_TEMPLATE \
 		SERF TOOLS
 
 FREEBSD_TEMPLATE_DESC=	FreeBSD Project log template
+GPG_AGENT_DESC=		Enable GPG agent password store
 MAINTAINER_DEBUG_DESC=	Build debug version
 SERF_DESC=		WebDAV/Delta-V (HTTP/HTTPS) repo access module
 STATIC_DESC=		Build static version (no shared libs)

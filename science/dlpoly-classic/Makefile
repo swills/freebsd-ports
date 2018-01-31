@@ -1,5 +1,4 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/science/dlpoly-classic/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/science/dlpoly-classic/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	dlpoly
 PORTVERSION=	1.8
@@ -9,7 +8,7 @@ MASTER_SITES=	http://ccpforge.cse.rl.ac.uk/gf/download/frsrelease/238/2028/
 PKGNAMESUFFIX=	classic
 DISTNAME=	dl_class_${PORTVERSION}
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Molecular dynamics simulation package
 
 BUILD_DEPENDS=	${LOCALBASE}/mpi/openmpi/bin/mpif90:net/openmpi

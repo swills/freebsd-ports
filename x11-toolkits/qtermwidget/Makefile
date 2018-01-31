@@ -1,5 +1,4 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/x11-toolkits/qtermwidget/Makefile 453001 2017-10-27 15:45:45Z swills $
+# $FreeBSD: head/x11-toolkits/qtermwidget/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	qtermwidget
 PORTVERSION=	0.8.0

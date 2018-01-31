@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 459917 2018-01-25 09:58:12Z tobik $
+# $FreeBSD: head/sysutils/Makefile 460461 2018-01-31 06:25:40Z yuri $
 #
 
     COMMENT = System utilities
@@ -1083,6 +1083,7 @@
     SUBDIR += sas3ircu
     SUBDIR += savelogs
     SUBDIR += sb16config
+    SUBDIR += sbase
     SUBDIR += sbsigntool
     SUBDIR += scalpel
     SUBDIR += scan_ffs

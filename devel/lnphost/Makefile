@@ -1,12 +1,11 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/devel/lnphost/Makefile 403506 2015-12-11 08:48:56Z miwi $
+# $FreeBSD: head/devel/lnphost/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	lnphost
 PORTVERSION=	1.0a
 CATEGORIES=	devel
 MASTER_SITES=	SF
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Lego RCX iinfrared communication API
 
 LICENSE=	GPLv2

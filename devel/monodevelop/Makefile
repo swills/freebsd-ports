@@ -1,8 +1,9 @@
 # Created by: Tom McLaughlin <tmclaugh@sdf.lonestar.org>
-# $FreeBSD: head/devel/monodevelop/Makefile 440759 2017-05-13 07:48:27Z dbn $
+# $FreeBSD: head/devel/monodevelop/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	monodevelop
 PORTVERSION=	6.2.1.3
+PORTREVISION=	1
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	devel
 

@@ -1,12 +1,11 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/biology/bwa/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/biology/bwa/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	bwa
 PORTVERSION=	0.7.17
 DISTVERSIONPREFIX=v
 CATEGORIES=	biology
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Burrows-Wheeler sequence aligner
 
 LICENSE=	GPLv3

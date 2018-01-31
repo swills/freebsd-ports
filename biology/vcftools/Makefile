@@ -1,12 +1,11 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/biology/vcftools/Makefile 455000 2017-11-27 23:05:40Z jwb $
+# $FreeBSD: head/biology/vcftools/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	vcftools
 PORTVERSION=	0.1.15
 DISTVERSIONPREFIX=	v
 CATEGORIES=	biology
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Tools for working with VCF genomics files
 
 LICENSE=	LGPL3

@@ -1,11 +1,11 @@
 # Created by: Edwin Groothuis <edwin2mavetju.org>
-# $FreeBSD: head/devel/flatzebra/Makefile 460013 2018-01-26 17:29:13Z jbeich $
+# $FreeBSD: head/devel/flatzebra/Makefile 460384 2018-01-30 12:35:05Z martymac $
 
 PORTNAME=	flatzebra
 PORTVERSION=	0.1.6
 PORTREVISION=	5
 CATEGORIES=	devel games
-MASTER_SITES=	http://perso.b2b2c.ca/sarrazip/dev/
+MASTER_SITES=	http://perso.b2b2c.ca/~sarrazip/dev/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Generic game engine for 2D double-buffering animation

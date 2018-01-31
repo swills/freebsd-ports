@@ -1,8 +1,9 @@
 # Created by: Richard Gallamore <ultima@FreeBSD.org>
-# $FreeBSD: head/devel/omnisharp-server/Makefile 458759 2018-01-11 17:43:47Z ultima $
+# $FreeBSD: head/devel/omnisharp-server/Makefile 460430 2018-01-30 19:00:27Z dbn $
 
 PORTNAME=	omnisharp-server
 DISTVERSION=	g20150729
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	ultima@FreeBSD.org

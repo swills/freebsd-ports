@@ -1,5 +1,4 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/biology/jellyfish/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/biology/jellyfish/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	jellyfish
 PORTVERSION=	2.2.6
@@ -7,7 +6,7 @@ PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	biology
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Fast, memory-efficient counting of k-mers in DNA
 
 LICENSE=	GPLv3+

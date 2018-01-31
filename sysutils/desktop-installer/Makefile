@@ -1,5 +1,4 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/sysutils/desktop-installer/Makefile 457479 2017-12-28 21:05:55Z jwb $
+# $FreeBSD: head/sysutils/desktop-installer/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	desktop-installer
 DISTVERSION=	0.6.0

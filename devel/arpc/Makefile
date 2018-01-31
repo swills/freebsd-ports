@@ -1,10 +1,9 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/devel/arpc/Makefile 455813 2017-12-09 00:42:05Z linimon $
+# $FreeBSD: head/devel/arpc/Makefile 460378 2018-01-30 09:12:06Z ed $
 
 PORTNAME=	arpc
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.6
-PORTREVISION=	1
+DISTVERSION=	0.7
 CATEGORIES=	devel
 
 MAINTAINER=	ed@FreeBSD.org

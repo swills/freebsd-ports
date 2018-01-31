@@ -1,5 +1,4 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/lang/x10/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/lang/x10/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	x10
 PORTVERSION=	2.2.1
@@ -20,7 +19,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		bdwgc-7.1.tar.gz
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Object-oriented parallel programming language
 
 LICENSE=	EPL

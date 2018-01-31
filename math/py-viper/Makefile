@@ -1,5 +1,4 @@
-# Created by: Jason Bacon <bacon4000@gmail.com>
-# $FreeBSD: head/math/py-viper/Makefile 403506 2015-12-11 08:48:56Z miwi $
+# $FreeBSD: head/math/py-viper/Makefile 460452 2018-01-31 01:07:07Z jwb $
 
 PORTNAME=	viper
 PORTVERSION=	1.0.1
@@ -7,7 +6,7 @@ CATEGORIES=	math python
 MASTER_SITES=	https://launchpad.net/fenics-${PORTNAME}/${MMVERSION}.x/${PORTVERSION}/+download/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	bacon4000@gmail.com
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Minimalistic scientific plotter and visualization module
 
 LICENSE=	LGPL3

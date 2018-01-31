@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-im/py-nbxmpp/Makefile 457499 2017-12-29 09:01:54Z antoine $
+# $FreeBSD: head/net-im/py-nbxmpp/Makefile 460419 2018-01-30 17:39:47Z rm $
 
 PORTNAME=	nbxmpp
-PORTVERSION=	0.5.6
+PORTVERSION=	0.6.3
 CATEGORIES=	net-im devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
