@@ -7,7 +7,7 @@ VALID_CATEGORIES=	base
 
 COMMENT=	GNU binary tools for base
 
-MASTERDIR=	${.CURDIR}/../..//devel/binutils
+MASTERDIR=	${.CURDIR}/../../devel/binutils
 PLIST=		${.CURDIR}/pkg-plist.${TARGET_ARCH}
 
 .if !defined(CROSS_TOOLCHAIN)
