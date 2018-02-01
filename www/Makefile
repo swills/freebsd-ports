@@ -2021,6 +2021,7 @@
     SUBDIR += rubygem-haml-rails-rails4
     SUBDIR += rubygem-haml4
     SUBDIR += rubygem-hamlit
+    SUBDIR += rubygem-hamlit26
     SUBDIR += rubygem-hamlit-rails
     SUBDIR += rubygem-hamlit-rails-rails5
     SUBDIR += rubygem-hamlit-rails-rails50
