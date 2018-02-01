@@ -343,18 +343,15 @@
  
  # Required for ED25519 SSH host key support
  group :ed25519 do
-@@ -403,9 +317,9 @@ group :ed25519 do
+@@ -403,7 +317,7 @@ group :ed25519 do
  end
  
  # Gitaly GRPC client
 -gem 'gitaly-proto', '~> 0.64.0', require: 'gitaly'
 +gem 'gitaly-proto', '>= 0.64.0', require: 'gitaly'
  
--gem 'toml-rb', '~> 0.3.15', require: false
-+gem 'toml-rb', '>= 0.3.15', require: false
+ gem 'toml-rb', '~> 0.3.15', require: false
  
- # Feature toggles
- gem 'flipper', '~> 0.11.0'
 @@ -416,5 +330,8 @@ gem 'flipper-active_support_cache_store'
  gem 'lograge', '~> 0.5'
  gem 'grape_logging', '~> 1.7'

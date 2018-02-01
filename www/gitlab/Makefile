@@ -190,7 +190,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-bcrypt_pbkdf>=1.0:security/rubygem-bcrypt_pbkdf \
 	rubygem-gitaly-proto>=0.39.0:net/rubygem-gitaly-proto \
 	rubygem-gitaly>=0.8.0:net/rubygem-gitaly \
-	rubygem-toml-rb>=0.3.15:www/rubygem-toml-rb \
+	rubygem-toml-rb03>=0.3.15:www/rubygem-toml-rb03 \
 	rubygem-flipper011>=0.11.0:devel/rubygem-flipper011 \
 	rubygem-flipper-active_record011>=0.11.0:databases/rubygem-flipper-active_record011 \
 	rubygem-flipper-active_support_cache_store011>=0.11.0:devel/rubygem-flipper-active_support_cache_store011 \
