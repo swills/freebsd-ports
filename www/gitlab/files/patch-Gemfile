@@ -54,14 +54,7 @@
  
  # API
  gem 'grape', '~> 1.0'
-@@ -91,25 +91,25 @@ gem 'hashie-forbidden_attributes'
- gem 'kaminari', '~> 1.0'
- 
- # HAML
--gem 'hamlit', '~> 2.6.1'
-+gem 'hamlit', '>= 2.6.1'
- 
- # Files attachments
+@@ -97,19 +97,19 @@ gem 'hamlit', '~> 2.6.1'
  gem 'carrierwave', '~> 1.2'
  
  # Drag and Drop UI
