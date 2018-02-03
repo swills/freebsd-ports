@@ -42,8 +42,8 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-devise>=4.2:devel/rubygem-devise \
 	rubygem-doorkeeper>=4.2:security/rubygem-doorkeeper \
 	rubygem-doorkeeper-openid_connect>=1.2.0:security/rubygem-doorkeeper-openid_connect \
-	rubygem-omniauth>=1.4.2:security/rubygem-omniauth \
-	rubygem-omniauth-auth0>=1.4.1:net/rubygem-omniauth-auth0 \
+	rubygem-omniauth14>=1.4.2:security/rubygem-omniauth14 \
+	rubygem-omniauth-auth014>=1.4.1:net/rubygem-omniauth-auth014 \
 	rubygem-omniauth-azure-oauth2>=0.0.9:net/rubygem-omniauth-azure-oauth2 \
 	rubygem-omniauth-cas3>=1.1.4:security/rubygem-omniauth-cas3 \
 	rubygem-omniauth-facebook>=4.0.0:net/rubygem-omniauth-facebook \
@@ -52,10 +52,10 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-omniauth-google-oauth2>=0.5.2:net/rubygem-omniauth-google-oauth2 \
 	rubygem-omniauth-kerberos>=0.3.0:net/rubygem-omniauth-kerberos \
 	rubygem-omniauth-oauth2-generic>=0.2.2:security/rubygem-omniauth-oauth2-generic \
-	rubygem-omniauth-saml>=1.7.0:security/rubygem-omniauth-saml \
-	rubygem-omniauth-shibboleth>=1.2.0:security/rubygem-omniauth-shibboleth \
-	rubygem-omniauth-twitter>=1.2.0:net/rubygem-omniauth-twitter \
-	rubygem-omniauth_crowd>=2.2.0:devel/rubygem-omniauth_crowd \
+	rubygem-omniauth-saml17>=1.7.0:security/rubygem-omniauth-saml17 \
+	rubygem-omniauth-shibboleth12>=1.2.0:security/rubygem-omniauth-shibboleth12 \
+	rubygem-omniauth-twitter12>=1.2.0:net/rubygem-omniauth-twitter12 \
+	rubygem-omniauth_crowd22>=2.2.0:devel/rubygem-omniauth_crowd22 \
 	rubygem-omniauth-authentiq>=0.3.1:net/rubygem-omniauth-authentiq \
 	rubygem-rack-oauth2>=1.2.1:security/rubygem-rack-oauth2 \
 	rubygem-jwt1>=1.5.6:www/rubygem-jwt1 \
@@ -152,7 +152,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-bootstrap-sass>=3.3.0:www/rubygem-bootstrap-sass \
 	rubygem-font-awesome-rails-rails4>=4.7:devel/rubygem-font-awesome-rails-rails4 \
 	rubygem-gemojione>=3.3:graphics/rubygem-gemojione \
-	rubygem-gon>=6.1.0:www/rubygem-gon \
+	rubygem-gon61>=6.1.0:www/rubygem-gon61 \
 	rubygem-jquery-atwho-rails>=1.3.2:www/rubygem-jquery-atwho-rails \
 	rubygem-jquery-rails>=4.1.0:www/rubygem-jquery-rails \
 	rubygem-request_store>=1.3:devel/rubygem-request_store \
