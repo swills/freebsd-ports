@@ -40,13 +40,7 @@
  gem 'jwt', '~> 1.5.6'
  
  # Spam and anti-bot protection
-@@ -97,19 +97,19 @@ gem 'hamlit', '~> 2.6.1'
- gem 'carrierwave', '~> 1.2'
- 
- # Drag and Drop UI
--gem 'dropzonejs-rails', '~> 0.7.1'
-+gem 'dropzonejs-rails', '>= 0.7.1'
- 
+@@ -102,14 +102,14 @@ gem 'dropzonejs-rails', '~> 0.7.1'
  # for backups
  gem 'fog-aws', '~> 1.4'
  gem 'fog-core', '~> 1.44'
