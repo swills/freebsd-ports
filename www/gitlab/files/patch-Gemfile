@@ -105,7 +105,7 @@
  
  # Colored output to console
  gem 'rainbow', '~> 2.2'
-@@ -172,17 +172,17 @@ gem 're2', '~> 1.1.1'
+@@ -172,7 +172,7 @@ gem 're2', '~> 1.1.1'
  
  # Misc
  
@@ -114,10 +114,7 @@
  
  # Cache
  gem 'redis-rails', '~> 5.0.2'
- 
- # Redis
--gem 'redis', '~> 3.2'
-+gem 'redis', '>= 3.2'
+@@ -182,7 +182,7 @@ gem 'redis', '~> 3.2'
  gem 'connection_pool', '~> 2.0'
  
  # HipChat integration
