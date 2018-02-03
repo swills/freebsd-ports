@@ -72,7 +72,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-net-ldap>=0.16.0:net/rubygem-net-ldap \
 	rubygem-gollum-lib-gitlab>=4.2.0:www/rubygem-gollum-lib-gitlab \
 	rubygem-gollum-rugged_adapter>=0.4.4:www/rubygem-gollum-rugged_adapter \
-	rubygem-github-linguist>=4.7.0:textproc/rubygem-github-linguist \
+	rubygem-github-linguist47>=4.7.0:textproc/rubygem-github-linguist47 \
 	rubygem-grape>=1.0:devel/rubygem-grape \
 	rubygem-grape-entity060>=0.6.0:devel/rubygem-grape-entity060 \
 	rubygem-rack-cors>=1.0.0:www/rubygem-rack-cors \
