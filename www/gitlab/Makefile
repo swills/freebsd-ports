@@ -124,7 +124,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-redis-rails>=5.0.1:www/rubygem-redis-rails \
 	rubygem-redis3>=3.2:databases/rubygem-redis3 \
 	rubygem-connection_pool>=2.0:net/rubygem-connection_pool \
-	rubygem-hipchat>=1.5.0:net-im/rubygem-hipchat \
+	rubygem-hipchat15>=1.5.0:net-im/rubygem-hipchat15 \
 	rubygem-jira-ruby>=1.4:devel/rubygem-jira-ruby \
 	rubygem-gitlab-flowdock-git-hook>=1.0.1:www/rubygem-gitlab-flowdock-git-hook \
 	rubygem-gemnasium-gitlab-service>=0.2:devel/rubygem-gemnasium-gitlab-service \
