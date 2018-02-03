@@ -11,15 +11,7 @@
  
  gem 'rugged', '~> 0.26.0'
  gem 'grape-route-helpers', '~> 2.1.0'
-@@ -102,14 +102,14 @@ gem 'dropzonejs-rails', '~> 0.7.1'
- # for backups
- gem 'fog-aws', '~> 1.4'
- gem 'fog-core', '~> 1.44'
--gem 'fog-google', '~> 0.5'
-+gem 'fog-google', '>= 0.5'
- gem 'fog-local', '~> 0.3'
- gem 'fog-openstack', '~> 0.1'
- gem 'fog-rackspace', '~> 0.1.1'
+@@ -109,7 +109,7 @@ gem 'fog-rackspace', '~> 0.1.1'
  gem 'fog-aliyun', '~> 0.2.0'
  
  # for Google storage
