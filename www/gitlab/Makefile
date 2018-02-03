@@ -83,7 +83,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-dropzonejs-rails07>=0.7.1:www/rubygem-dropzonejs-rails07 \
 	rubygem-fog-aws1>=1.4:net/rubygem-fog-aws1 \
 	rubygem-fog-core1>=1.44:devel/rubygem-fog-core1 \
-	rubygem-fog-google>=0.5:net/rubygem-fog-google \
+	rubygem-fog-google0>=0.5:net/rubygem-fog-google0 \
 	rubygem-fog-local>=0.3:net/rubygem-fog-local \
 	rubygem-fog-openstack>=0.1:net/rubygem-fog-openstack \
 	rubygem-fog-rackspace>=0.1.1:net/rubygem-fog-rackspace \
