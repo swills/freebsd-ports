@@ -80,7 +80,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-kaminari-rails4>=1.0:www/rubygem-kaminari-rails4 \
 	rubygem-hamlit26>=2.6.1:www/rubygem-hamlit26 \
 	rubygem-carrierwave>=1.1:www/rubygem-carrierwave \
-	rubygem-dropzonejs-rails>=0.7.1:www/rubygem-dropzonejs-rails \
+	rubygem-dropzonejs-rails07>=0.7.1:www/rubygem-dropzonejs-rails07 \
 	rubygem-fog-aws1>=1.4:net/rubygem-fog-aws1 \
 	rubygem-fog-core1>=1.44:devel/rubygem-fog-core1 \
 	rubygem-fog-google>=0.5:net/rubygem-fog-google \
