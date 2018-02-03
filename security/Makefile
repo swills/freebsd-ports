@@ -1085,12 +1085,14 @@
     SUBDIR += rubygem-nexpose
     SUBDIR += rubygem-nmap-parser
     SUBDIR += rubygem-omniauth
+    SUBDIR += rubygem-omniauth14
     SUBDIR += rubygem-omniauth-bitbucket
     SUBDIR += rubygem-omniauth-cas3
     SUBDIR += rubygem-omniauth-gitlab
     SUBDIR += rubygem-omniauth-multipassword
     SUBDIR += rubygem-omniauth-oauth2-generic
     SUBDIR += rubygem-omniauth-saml
+    SUBDIR += rubygem-omniauth-saml17
     SUBDIR += rubygem-omniauth-shibboleth
     SUBDIR += rubygem-openssl
     SUBDIR += rubygem-openssl-ccm

@@ -2013,6 +2013,7 @@
     SUBDIR += rubygem-gollum-lib-gitlab
     SUBDIR += rubygem-gollum-rugged_adapter
     SUBDIR += rubygem-gon
+    SUBDIR += rubygem-gon61
     SUBDIR += rubygem-gon-rails4
     SUBDIR += rubygem-hackpad-cli
     SUBDIR += rubygem-haml

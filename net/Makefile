@@ -1226,6 +1226,7 @@
     SUBDIR += rubygem-octokit
     SUBDIR += rubygem-octopress-deploy
     SUBDIR += rubygem-omniauth-auth0
+    SUBDIR += rubygem-omniauth-auth014
     SUBDIR += rubygem-omniauth-authentiq
     SUBDIR += rubygem-omniauth-azure-oauth2
     SUBDIR += rubygem-omniauth-facebook
@@ -1238,6 +1239,7 @@
     SUBDIR += rubygem-omniauth-oauth2
     SUBDIR += rubygem-omniauth-openid
     SUBDIR += rubygem-omniauth-twitter
+    SUBDIR += rubygem-omniauth-twitter12
     SUBDIR += rubygem-open-uri-cached
     SUBDIR += rubygem-opennebula
     SUBDIR += rubygem-packetfu
