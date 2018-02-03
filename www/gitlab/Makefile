@@ -59,7 +59,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-omniauth-authentiq>=0.3.1:net/rubygem-omniauth-authentiq \
 	rubygem-rack-oauth2>=1.2.1:security/rubygem-rack-oauth2 \
 	rubygem-jwt1>=1.5.6:www/rubygem-jwt1 \
-	rubygem-recaptcha>=3.0:devel/rubygem-recaptcha \
+	rubygem-recaptcha3>=3.0:devel/rubygem-recaptcha3 \
 	rubygem-akismet>=2.0:devel/rubygem-akismet \
 	rubygem-devise-two-factor>=3.0.0:security/rubygem-devise-two-factor \
 	rubygem-rqrcode-rails3>=0.1.7:www/rubygem-rqrcode-rails3 \

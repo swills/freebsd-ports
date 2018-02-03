@@ -22,7 +22,7 @@
  gem 'omniauth-azure-oauth2', '~> 0.0.9'
  gem 'omniauth-cas3', '~> 1.1.4'
  gem 'omniauth-facebook', '~> 4.0.0'
-@@ -34,16 +34,16 @@ gem 'omniauth-gitlab', '~> 1.0.2'
+@@ -34,12 +34,12 @@ gem 'omniauth-gitlab', '~> 1.0.2'
  gem 'omniauth-google-oauth2', '~> 0.5.2'
  gem 'omniauth-kerberos', '~> 0.3.0', group: :kerberos
  gem 'omniauth-oauth2-generic', '~> 0.2.2'
@@ -40,11 +40,6 @@
  gem 'jwt', '~> 1.5.6'
  
  # Spam and anti-bot protection
--gem 'recaptcha', '~> 3.0', require: 'recaptcha/rails'
-+gem 'recaptcha', '>= 3.0', require: 'recaptcha/rails'
- gem 'akismet', '~> 2.0'
- 
- # Two-factor authentication
 @@ -97,19 +97,19 @@ gem 'hamlit', '~> 2.6.1'
  gem 'carrierwave', '~> 1.2'
  
