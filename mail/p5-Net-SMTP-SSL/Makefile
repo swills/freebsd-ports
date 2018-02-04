@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/p5-Net-SMTP-SSL/Makefile 457732 2017-12-31 22:23:08Z sunpoet $
+# $FreeBSD: head/mail/p5-Net-SMTP-SSL/Makefile 460518 2018-01-31 16:53:42Z sunpoet $
 
 PORTNAME=	Net-SMTP-SSL
 PORTVERSION=	1.04
@@ -14,7 +14,7 @@ LICENSE_COMB=	dual
 
 # devel/bugzilla{44,50} still depend on this port
 DEPRECATED=	Deprecated by upstream, use Net::SMTP instead
-EXPIRATION_DATE=2018-01-31
+EXPIRATION_DATE=2018-03-31
 
 BUILD_DEPENDS=	p5-IO-Socket-SSL>=0:security/p5-IO-Socket-SSL
 RUN_DEPENDS:=	${BUILD_DEPENDS}

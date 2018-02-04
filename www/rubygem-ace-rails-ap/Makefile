@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/rubygem-ace-rails-ap/Makefile 446217 2017-07-19 18:05:17Z sunpoet $
+# $FreeBSD: head/www/rubygem-ace-rails-ap/Makefile 460491 2018-01-31 15:52:52Z sunpoet $
 
 PORTNAME=	ace-rails-ap
-PORTVERSION=	4.1.3
+PORTVERSION=	4.1.4
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

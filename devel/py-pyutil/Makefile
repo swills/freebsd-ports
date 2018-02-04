@@ -1,8 +1,8 @@
 # Created by: Chao Shin <quakelee@cn.FreeBSD.org>
-# $FreeBSD: head/devel/py-pyutil/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pyutil/Makefile 460551 2018-02-01 02:56:52Z wen $
 
 PORTNAME=	pyutil
-PORTVERSION=	2.0.0
+PORTVERSION=	3.1.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

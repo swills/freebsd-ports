@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 460299 2018-01-29 13:23:12Z ale $
+# $FreeBSD: head/math/Makefile 460848 2018-02-03 20:59:14Z yuri $
 #
 
     COMMENT = Mathematics
@@ -204,6 +204,7 @@
     SUBDIR += glgraph
     SUBDIR += glm
     SUBDIR += glpk
+    SUBDIR += glucose
     SUBDIR += gmm++
     SUBDIR += gmp
     SUBDIR += gmp-ecm

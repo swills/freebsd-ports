@@ -1,19 +1,20 @@
 # Created by: Satoshi Taoka <taoka@FreeBSD.org>
-# $FreeBSD: head/print/yatex/Makefile 361986 2014-07-15 17:37:38Z adamw $
+# $FreeBSD: head/print/yatex/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	yatex
 PORTVERSION=	1.77
+PORTREVISION=	1
 CATEGORIES?=	print elisp
 MASTER_SITES=	http://www.yatex.org/
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Yet Another LaTeX mode and html mode on Emacs
 
-USES=		dos2unix
-USE_EMACS=	yes
-EMACS_NO_RUN_DEPENDS=	yes
-EMACS_NO_BUILD_DEPENDS=	yes
+USES=		dos2unix emacs
+EMACS_NO_DEPENDS=	yes
+
 NO_BUILD=	yes
 PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-message yatex-startup.el

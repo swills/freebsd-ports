@@ -1,8 +1,8 @@
 # Created by: vanilla
-# $FreeBSD: head/net/p5-SOAP-Lite/Makefile 456827 2017-12-20 14:42:38Z sunpoet $
+# $FreeBSD: head/net/p5-SOAP-Lite/Makefile 460790 2018-02-03 06:21:56Z sunpoet $
 
 PORTNAME=	SOAP-Lite
-PORTVERSION=	1.24
+PORTVERSION=	1.26
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

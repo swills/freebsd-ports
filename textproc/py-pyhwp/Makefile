@@ -1,9 +1,9 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/textproc/py-pyhwp/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-pyhwp/Makefile 460801 2018-02-03 09:52:35Z antoine $
 
 PORTNAME=	pyhwp
 PORTVERSION=	0.1b8
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

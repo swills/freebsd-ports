@@ -1,8 +1,8 @@
 # Created by: Nobutaka Mantani <nobutaka@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Mac-PropertyList/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Mac-PropertyList/Makefile 460823 2018-02-03 16:28:54Z nobutaka $
 
 PORTNAME=	Mac-PropertyList
-PORTVERSION=	1.41
+PORTVERSION=	1.412
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

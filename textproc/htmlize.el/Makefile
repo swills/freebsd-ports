@@ -1,11 +1,12 @@
 # Created by: Marc van Woerkom <marc.vanwoerkom@fernuni-hagen.de>
-# $FreeBSD: head/textproc/htmlize.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/textproc/htmlize.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	htmlize.el
 PORTVERSION=	1.39
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	textproc elisp
 MASTER_SITES=	http://fly.srk.fer.hr/~hniksic/emacs/
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME}.cgi
 EXTRACT_SUFX=
 DIST_SUBDIR=	repacked
@@ -13,7 +14,8 @@ DIST_SUBDIR=	repacked
 MAINTAINER=	dryice@FreeBSD.org
 COMMENT=	Emacs major mode to create HTML files from Emacs buffers (in colour!)
 
-USE_EMACS=	yes
+USES=		emacs
+
 NO_WRKSUBDIR=	yes
 EXTRACT_CMD=	${CP}
 EXTRACT_BEFORE_ARGS=

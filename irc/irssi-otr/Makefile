@@ -1,8 +1,9 @@
 # Created by: Ashish Shukla <wahjava@gmail.com>
-# $FreeBSD: head/irc/irssi-otr/Makefile 433450 2017-02-05 20:27:03Z ashish $
+# $FreeBSD: head/irc/irssi-otr/Makefile 460717 2018-02-02 17:37:28Z brd $
 
 PORTNAME=	irssi-otr
 PORTVERSION=	1.0.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	irc
 

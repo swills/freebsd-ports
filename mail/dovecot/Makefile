@@ -1,5 +1,5 @@
 # Created by: Nagy, Attila <bra@fsn.hu>
-# $FreeBSD: head/mail/dovecot/Makefile 460336 2018-01-29 20:59:18Z zeising $
+# $FreeBSD: head/mail/dovecot/Makefile 460590 2018-02-01 13:23:40Z zeising $
 
 ######################################################################
 # Anytime PORTVERSION changes please bump PORTREVISION of            #
@@ -13,7 +13,7 @@
 
 PORTNAME=	dovecot
 PORTVERSION=	2.2.33.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	mail ipv6
 MASTER_SITES=	https://www.dovecot.org/releases/2.2/
 

@@ -1,13 +1,13 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/py-pycryptodome/Makefile 449297 2017-09-05 16:11:16Z sunpoet $
+# $FreeBSD: head/security/py-pycryptodome/Makefile 460839 2018-02-03 19:36:19Z yuri $
 
 PORTNAME=	pycryptodome
-PORTVERSION=	3.4.7
+DISTVERSION=	3.4.9
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Cryptographic library for Python
 
 LICENSE=	BSD2CLAUSE

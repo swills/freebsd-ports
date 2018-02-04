@@ -1,9 +1,9 @@
 # Created by: imp
-# $FreeBSD: head/games/seahaven/Makefile 357261 2014-06-10 04:49:09Z imp $
+# $FreeBSD: head/games/seahaven/Makefile 460730 2018-02-02 19:30:58Z imp $
 
 PORTNAME=	seahaven
 PORTVERSION=	1.60
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	http://seahaven.sourceforge.net/
 EXTRACT_SUFX=	.tgz

@@ -1,12 +1,13 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/ir-lv2/Makefile 448184 2017-08-17 19:53:52Z ultima $
+# $FreeBSD: head/audio/ir-lv2/Makefile 460835 2018-02-03 19:15:45Z yuri $
 
 PORTNAME=	ir
-PORTVERSION=	g20130909
+DISTVERSIONPREFIX=	v
+DISTVERSION=	1.3.2-1
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	LV2 impulse response plugin for reverb and cabinet simulation
 
 LICENSE=	GPLv2
@@ -24,7 +25,6 @@ USES=		gmake pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	Anchakor
 GH_PROJECT=	ir.lv2
-GH_TAGNAME=	af1f8ab
 USE_GNOME=	glib20 gtk20 gdkpixbuf2 cairo
 
 PLIST_FILES=	lib/lv2/ir.lv2/ir.so lib/lv2/ir.lv2/ir.ttl \

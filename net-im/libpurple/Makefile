@@ -1,9 +1,9 @@
 # Created by: Jim Mock <jim@FreeBSD.org>
-# $FreeBSD: head/net-im/libpurple/Makefile 456482 2017-12-16 19:05:58Z olgeni $
+# $FreeBSD: head/net-im/libpurple/Makefile 460831 2018-02-03 18:21:41Z amdmi3 $
 
 PORTNAME?=	libpurple
 PORTVERSION=	2.12.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES?=	net-im
 MASTER_SITES=	SF/pidgin/Pidgin/${PORTVERSION}
 DISTNAME=	pidgin-${PORTVERSION}
@@ -11,7 +11,7 @@ DISTNAME=	pidgin-${PORTVERSION}
 MAINTAINER?=	marcus@FreeBSD.org
 COMMENT?=	Backend library for the Pidgin multi-protocol messaging client
 
-USES+=		cpe gettext gmake libtool pathfix pkgconfig tar:bzip2
+USES+=		cpe gettext gmake libtool localbase pathfix pkgconfig tar:bzip2
 USE_GNOME?=	gnomeprefix intltool glib20 libxml2
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS?=--disable-gtkui \
@@ -19,8 +19,6 @@ CONFIGURE_ARGS?=--disable-gtkui \
 		--with-dynamic-prpls=${PRPL_MODULES:S/,$//} \
 		--enable-static \
 		--disable-nm
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib
 INSTALL_TARGET=	install-strip
 
 .if !defined(PIDGIN_SLAVE)

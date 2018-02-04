@@ -1,8 +1,8 @@
 # Created by: Klaus Aehlig <aehlig@linta.de>
-# $FreeBSD: head/devel/bazel/Makefile 456716 2017-12-19 13:11:32Z swills $
+# $FreeBSD: head/devel/bazel/Makefile 460767 2018-02-03 03:19:58Z swills $
 
 PORTNAME=		bazel
-PORTVERSION=		0.9.0
+PORTVERSION=		0.10.0
 CATEGORIES=		devel java
 MASTER_SITES=		https://storage.googleapis.com/bazel/${PORTVERSION}/rc${FINALRC}/
 DISTNAME=		bazel-${PORTVERSION}rc${FINALRC}-dist
@@ -22,7 +22,7 @@ BUILD_DEPENDS=		bash:shells/bash \
 # In bazel, a release is always code-wise identical to the final release candidate.
 # Hence we can also download that one and so have a simple way to also test earlier release
 # candidates.
-FINALRC=		6
+FINALRC=		8
 
 USES=			shebangfix zip:infozip python
 SHEBANG_REGEX=		.*(sh|txt|_stub|stub_.*|bazel|get_workspace_status|protobuf_support|_so)

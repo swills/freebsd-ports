@@ -1,8 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/grpc/Makefile 459613 2018-01-21 14:55:59Z vanilla $
+# $FreeBSD: head/devel/grpc/Makefile 460867 2018-02-04 03:35:57Z vanilla $
 
 PORTNAME=	grpc
-PORTVERSION=	1.8.5
+PORTVERSION=	1.9.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

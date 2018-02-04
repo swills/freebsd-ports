@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/print/Makefile 460708 2018-02-02 16:04:37Z jrm $
 #
 
     COMMENT = Desktop publishing
@@ -158,6 +158,7 @@
     SUBDIR += paps
     SUBDIR += pcal
     SUBDIR += pdf-renderer
+    SUBDIR += pdf-tools
     SUBDIR += pdf4tcl
     SUBDIR += pdfbox
     SUBDIR += pdfcube

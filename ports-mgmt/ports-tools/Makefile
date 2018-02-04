@@ -1,8 +1,8 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/ports-mgmt/ports-tools/Makefile 456420 2017-12-15 22:26:11Z pawel $
+# $FreeBSD: head/ports-mgmt/ports-tools/Makefile 460843 2018-02-03 20:03:08Z pawel $
 
 PORTNAME=	ports-tools
-PORTVERSION=	1.6
+PORTVERSION=	1.7
 CATEGORIES=	ports-mgmt
 
 MAINTAINER=	pawel@FreeBSD.org

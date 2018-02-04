@@ -1,9 +1,8 @@
 # Created by: ballen
-# $FreeBSD: head/biology/phyml/Makefile 457351 2017-12-27 07:36:05Z linimon $
+# $FreeBSD: head/biology/phyml/Makefile 460569 2018-02-01 07:26:57Z wen $
 
 PORTNAME=	phyml
-DISTVERSIONPREFIX=	v
-DISTVERSION=	3.3.20170530
+DISTVERSION=	3.3.20180129
 PORTEPOCH=	1
 CATEGORIES=	biology
 

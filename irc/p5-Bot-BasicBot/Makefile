@@ -1,8 +1,8 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/irc/p5-Bot-BasicBot/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/irc/p5-Bot-BasicBot/Makefile 460745 2018-02-02 19:55:13Z sunpoet $
 
 PORTNAME=	Bot-BasicBot
-PORTVERSION=	0.91
+PORTVERSION=	0.92
 CATEGORIES=	irc perl5
 MASTER_SITES=	CPAN/Bot
 PKGNAMEPREFIX=	p5-

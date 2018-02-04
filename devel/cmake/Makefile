@@ -1,5 +1,5 @@
 # Created by: Kyle Martin <mkm@ieee.org>
-# $FreeBSD: head/devel/cmake/Makefile 459851 2018-01-24 18:29:08Z tcberner $
+# $FreeBSD: head/devel/cmake/Makefile 460715 2018-02-02 16:42:40Z amdmi3 $
 
 PORTNAME=	cmake
 # Remember to update devel/cmake-doc and devel/cmake-gui as well.
@@ -34,7 +34,8 @@ OPTIONS_DEFINE=	DOCS MANPAGES
 OPTIONS_DEFAULT=MANPAGES
 OPTIONS_SUB=	yes
 
-MANPAGES_BUILD_DEPENDS=	sphinx-build:textproc/py-sphinx
+MANPAGES_USES=		python:env
+MANPAGES_BUILD_DEPENDS=	sphinx-build:textproc/py-sphinx@${PY_FLAVOR}
 MANPAGES_CONFIGURE_ON=	--sphinx-man
 
 CONFLICTS_INSTALL=	cmake-modules-*

@@ -1,5 +1,5 @@
 # Created by: TAKATSU Tomonari <tota@rtfm.jp>
-# $FreeBSD: head/mail/lens/Makefile 413910 2016-04-23 20:32:03Z swills $
+# $FreeBSD: head/mail/lens/Makefile 460516 2018-01-31 16:51:08Z sunpoet $
 
 PORTNAME=	lens
 PORTVERSION=	0.2
@@ -12,7 +12,6 @@ MAINTAINER=	tota@FreeBSD.org
 COMMENT=	Mail filter written in Ruby
 
 NO_BUILD=	yes
-BROKEN_RUBY22=	yes
 BROKEN_RUBY23=	yes
 USE_RUBY=	yes
 USES=		shebangfix

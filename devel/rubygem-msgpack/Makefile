@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-msgpack/Makefile 459075 2018-01-15 15:56:10Z swills $
+# $FreeBSD: head/devel/rubygem-msgpack/Makefile 460772 2018-02-03 04:31:49Z swills $
 
 PORTNAME=	msgpack
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

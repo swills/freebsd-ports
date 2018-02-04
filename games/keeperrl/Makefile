@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/keeperrl/Makefile 460048 2018-01-26 19:32:07Z pawel $
+# $FreeBSD: head/games/keeperrl/Makefile 460620 2018-02-01 17:31:35Z pawel $
 
 PORTNAME=	keeperrl
 PORTVERSION=	0.0.${ALPHA_VERSION}
+PORTREVISION=	1
 CATEGORIES=	games
 
 MAINTAINER=	pawel@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/sysutils/pcbsd-utils/Makefile 430454 2017-01-03 11:01:05Z mat $
+# $FreeBSD: head/sysutils/pcbsd-utils/Makefile 460617 2018-02-01 16:45:10Z amdmi3 $
 
 PORTNAME=	pcbsd-utils
 PORTVERSION=	1440778617
@@ -15,7 +15,7 @@ RUN_DEPENDS=	sipcalc:net-mgmt/sipcalc \
 
 WRKSRC_SUBDIR=	src-sh/pcbsd-utils
 USE_QT5=	core network buildtools qmake
-USES=		pkgconfig tar:xz
+USES=		pkgconfig
 MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
 
 USE_GITHUB=	yes

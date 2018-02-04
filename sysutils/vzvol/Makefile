@@ -1,11 +1,11 @@
-# $FreeBSD: head/sysutils/vzvol/Makefile 459710 2018-01-22 23:54:41Z swills $
+# $FreeBSD: head/sysutils/vzvol/Makefile 460627 2018-02-01 20:19:27Z dteske $
 
 PORTNAME=		vzvol
 DISTVERSIONPREFIX=	v
-DISTVERSION=		0.6.0
+DISTVERSION=		0.6.1
 CATEGORIES=		sysutils
 
-MAINTAINER=		rainbow@purlinux.org
+MAINTAINER=		rainbow@sanitylinux.org
 COMMENT=		Feature-rich ZFS zvol management tool
 
 LICENSE=		BSD2CLAUSE

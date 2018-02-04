@@ -1,8 +1,8 @@
 # Created by: John Hixson <jhixson@gmail.com>
-# $FreeBSD: head/security/ngrok/Makefile 428245 2016-12-09 22:13:17Z marino $
+# $FreeBSD: head/security/ngrok/Makefile 460825 2018-02-03 16:46:10Z dbaio $
 
 PORTNAME=	ngrok
-PORTVERSION=	2.1.18
+PORTVERSION=	2.2.8
 CATEGORIES=	security
 MASTER_SITES=	https://bin.equinox.io/c/4VmDzA7iaHb/
 DISTNAME=	${PORTNAME}-stable-freebsd-${ARCH:S/i386/386/:S/x86_64/amd64/}
@@ -15,7 +15,7 @@ COMMENT=	Secure tunnels to localhost
 LICENSE=	NONE APACHE20 BSD3CLAUSE CC0-1.0 LGPL3+ MIT
 LICENSE_COMB=	multi
 
-ONLY_FOR_ARCHS=	i386 amd64
+ONLY_FOR_ARCHS=	amd64 i386
 
 NO_WRKSUBDIR=	yes
 PLIST_FILES=	bin/ngrok

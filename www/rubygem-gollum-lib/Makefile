@@ -1,9 +1,9 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/rubygem-gollum-lib/Makefile 459284 2018-01-17 19:29:50Z swills $
+# $FreeBSD: head/www/rubygem-gollum-lib/Makefile 460492 2018-01-31 15:52:57Z sunpoet $
 
 PORTNAME=	gollum-lib
 PORTVERSION=	4.2.7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -36,7 +36,7 @@ USES=		gem
 USE_RUBY=	yes
 
 post-patch-GITLAB-on:
-# change runtime dependency from "github-markup ~> 1.6" to "gitlab-markup ~> 1.5"
+# change runtime dependency from "github-markup >= 1.6" to "gitlab-markup ~> 1.5"
 	@${REINPLACE_CMD} -e '/s.add_runtime_dependency/ s|github-markup\(.*\)1.6|gitlab-markup\11.5|' ${WRKSRC}/${GEMSPEC}
 
 .include <bsd.port.mk>

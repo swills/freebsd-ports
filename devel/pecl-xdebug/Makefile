@@ -1,8 +1,9 @@
 # Created by: Jens Rehsack <rehsack@liwing.de>
-# $FreeBSD: head/devel/pecl-xdebug/Makefile 460391 2018-01-30 15:15:53Z pizzamig $
+# $FreeBSD: head/devel/pecl-xdebug/Makefile 460519 2018-01-31 17:00:28Z pizzamig $
 
 PORTNAME=	xdebug
 PORTVERSION=	2.5.5
+PORTREVISION=	1
 CATEGORIES=	devel pear
 
 MAINTAINER=	pizzamig@FreeBSD.org
@@ -14,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 IGNORE_WITH_PHP=	72
 
 CONFIGURE_ARGS=	--enable-xdebug
-USES=		php:pecl
+USES=		php:pecl,zend
 
 SUB_FILES=	pkg-message
 

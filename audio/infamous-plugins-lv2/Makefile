@@ -1,9 +1,8 @@
-# $FreeBSD: head/audio/infamous-plugins-lv2/Makefile 453486 2017-11-04 20:57:49Z yuri $
+# $FreeBSD: head/audio/infamous-plugins-lv2/Makefile 460841 2018-02-03 19:49:09Z yuri $
 
 PORTNAME=	infamous-plugins
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.2.02-80
-DISTVERSIONSUFFIX=	-ga68e73d
+DISTVERSION=	0.2.04
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 

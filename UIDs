@@ -1,4 +1,4 @@
-# $FreeBSD: head/UIDs 456695 2017-12-18 23:57:06Z yuri $
+# $FreeBSD: head/UIDs 460677 2018-02-02 08:39:46Z olivier $
 # Please keep this file sorted by UID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/master.passwd
@@ -835,7 +835,7 @@ archiva:*:871:871::0:0:Apache Archiva Daemon:/nonexistent:/usr/sbin/nologin
 # free: 886
 # free: 887
 vuls:*:888:888::0:0:VULnerability Scanner:/var/db/vuls:/usr/sbin/nologin
-# free: 889
+mattermost:*:889:889::0:0:Mattermost:/usr/local/www/mattermost:/usr/sbin/nologin
 # free: 890
 # free: 891
 # free: 892

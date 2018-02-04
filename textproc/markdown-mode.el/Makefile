@@ -1,25 +1,26 @@
-# $FreeBSD: head/textproc/markdown-mode.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/textproc/markdown-mode.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	markdown-mode.el
 PORTVERSION=	2.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	textproc
 MASTER_SITES=	http://jblevins.org/projects/markdown-mode/
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 DISTNAME=	markdown-mode.el
 EXTRACT_SUFX=	# empty
 DIST_SUBDIR=	${PORTNAME}-${PORTVERSION}
 EXTRACT_ONLY=	# empty
 
 MAINTAINER=	olgeni@FreeBSD.org
-COMMENT=	Emacs/XEmacs major mode for editing Markdown-formatted text
+COMMENT=	Emacs major mode for editing Markdown-formatted text
 
 LICENSE=	GPLv3+
+
+USES=		emacs
 
 NO_ARCH=	yes
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
-
-USE_EMACS=	yes
 
 PLIST_FILES=	${EMACS_SITE_LISPDIR}/markdown-mode.el
 

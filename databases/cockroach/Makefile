@@ -1,27 +1,31 @@
-# $FreeBSD: head/databases/cockroach/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/databases/cockroach/Makefile 460498 2018-01-31 16:33:41Z lifanov $
 
 PORTNAME=	cockroach
-PORTVERSION=	1.0.4
+PORTVERSION=	1.1.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 MASTER_SITES=	https://binaries.cockroachdb.com/
 EXTRACT_SUFX=	.src.tgz
 
-MAINTAINER=	james@jen20.com
+MAINTAINER=	freebsd@jen20.com
 COMMENT=	Cloud-native SQL database that survive disasters
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/src/github.com/cockroachdb/cockroach/LICENSE
 
-BROKEN=		fails to build with go 1.9
+ONLY_FOR_ARCHS=	amd64
+ONLY_FOR_ARCHS_REASON=	"Only supported on amd64"
 
-BUILD_DEPENDS=	bash:shells/bash \
+BUILD_DEPENDS=	autoconf:devel/autoconf \
+		bash:shells/bash \
 		cmake:devel/cmake \
 		go:lang/go
 
 USES=		gmake
 
 USE_RC_SUBR=	cockroach
+
+NO_CCACHE=	yes
 
 PLIST_FILES=	bin/cockroach
 

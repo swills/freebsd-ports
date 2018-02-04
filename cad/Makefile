@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/Makefile 458868 2018-01-12 20:12:44Z mr $
+# $FreeBSD: head/cad/Makefile 460847 2018-02-03 20:55:08Z yuri $
 #
 
     COMMENT = CAD tools
@@ -72,6 +72,7 @@
     SUBDIR += py-gdspy
     SUBDIR += py-lcapy
     SUBDIR += py-pycam
+    SUBDIR += py-pyfda
     SUBDIR += python-gdsii
     SUBDIR += pythoncad
     SUBDIR += qcad

@@ -1,10 +1,10 @@
-# $FreeBSD: head/x11/alacritty/Makefile 460358 2018-01-30 00:54:35Z jbeich $
+# $FreeBSD: head/x11/alacritty/Makefile 460687 2018-02-02 09:56:20Z zeising $
 
 PORTNAME=	alacritty
 PORTVERSION=	g20180126
 CATEGORIES=	x11
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	zeising@FreeBSD.org
 COMMENT=	GPU-accelerated terminal emulator
 
 LICENSE=	APACHE20

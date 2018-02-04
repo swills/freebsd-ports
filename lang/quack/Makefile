@@ -1,11 +1,12 @@
 # Created by: Kimura Fuyuki <fuyuki@nigredo.org>
-# $FreeBSD: head/lang/quack/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/lang/quack/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	quack
 PORTVERSION=	0.47
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang scheme elisp
 MASTER_SITES=	http://www.neilvandyke.org/quack/
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.el
 DIST_SUBDIR=	${PORTNAME}-${PORTVERSION}
@@ -17,7 +18,7 @@ LICENSE=	GPLv2
 
 RUN_DEPENDS=	wget:ftp/wget
 
-USE_EMACS=	yes
+USES=		emacs
 
 NO_WRKSUBDIR=	yes
 EXTRACT_CMD=	${CP}

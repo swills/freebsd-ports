@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/godep/Makefile 438047 2017-04-08 15:14:33Z swills $
+# $FreeBSD: head/devel/godep/Makefile 460779 2018-02-03 05:35:34Z swills $
 
 PORTNAME=	godep
-PORTVERSION=	79
+PORTVERSION=	80
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

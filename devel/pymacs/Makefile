@@ -1,22 +1,21 @@
 # Created by: mwm@mired.org
-# $FreeBSD: head/devel/pymacs/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/pymacs/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	Pymacs
 PORTVERSION=	0.25
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel editors python elisp
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python package for scripting emacs
 
 LICENSE=	GPLv2
 
+USES=		emacs python:2.7
 USE_GITHUB=	yes
 GH_ACCOUNT=	pinard
-
-USES=		python:2.7
-USE_EMACS=	yes
 USE_PYTHON=	distutils
 
 pre-configure:

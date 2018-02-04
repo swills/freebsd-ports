@@ -1,9 +1,9 @@
 # Created by: Ivan "Rambius" Ivanov <rambiusparkisanius@gmail.com>
-# $FreeBSD: head/lang/nbc/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/lang/nbc/Makefile 460572 2018-02-01 07:31:03Z acm $
 
 PORTNAME=		nbc
 PORTVERSION=		1.2.1.r4
-PORTREVISION=		10
+PORTREVISION=		11
 CATEGORIES=		lang
 MASTER_SITES=		SF/bricxcc/NBC_NXC/NBC%20release%20${PORTVERSION:S/.r/%20r/}
 DISTNAME=		${PORTNAME}-${PORTVERSION}.src

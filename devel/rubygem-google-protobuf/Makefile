@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-google-protobuf/Makefile 460087 2018-01-27 10:23:37Z sunpoet $
+# $FreeBSD: head/devel/rubygem-google-protobuf/Makefile 460476 2018-01-31 15:51:34Z sunpoet $
 
 PORTNAME=	google-protobuf
-PORTVERSION=	3.5.1.1
+PORTVERSION=	3.5.1.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

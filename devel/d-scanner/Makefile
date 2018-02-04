@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/d-scanner/Makefile 446655 2017-07-26 13:16:39Z mat $
+# $FreeBSD: head/devel/d-scanner/Makefile 460652 2018-02-01 23:50:22Z acm $
 
 PORTNAME=	d-scanner
-PORTVERSION=	0.4.0
+PORTVERSION=	0.4.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -22,14 +22,18 @@ BUILD_DEPENDS=	ldmd2:lang/ldc \
 USE_GITHUB=	yes
 GH_ACCOUNT=	dlang-community
 GH_PROJECT=	D-Scanner
+GH_TAGNAME=	d610df2
 
 PLIST_FILES=	bin/dscanner
 DUB_CMD=	${LOCALBASE}/bin/dub build --build=release
+
+post-patch:
+	${REINPLACE_CMD} 's|%%LOCALBASE%%|${LOCALBASE}|g' ${WRKSRC}/dub.json
 
 do-build:
 	@cd ${WRKSRC} && ${DUB_CMD}
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/dscanner ${STAGEDIR}${PREFIX}/bin/
+	${INSTALL_PROGRAM} ${WRKSRC}/bin/dscanner ${STAGEDIR}${PREFIX}/bin/
 
 .include <bsd.port.mk>

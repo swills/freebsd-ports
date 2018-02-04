@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 460323 2018-01-29 19:12:29Z yuri $
+# $FreeBSD: head/lang/Makefile 460504 2018-01-31 16:41:57Z sunpoet $
 #
 
     COMMENT = Programming languages
@@ -300,7 +300,6 @@
     SUBDIR += rexx-wrapper
     SUBDIR += rhino
     SUBDIR += rubinius
-    SUBDIR += ruby22
     SUBDIR += ruby23
     SUBDIR += ruby24
     SUBDIR += ruby25

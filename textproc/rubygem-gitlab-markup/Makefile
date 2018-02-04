@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/rubygem-gitlab-markup/Makefile 453308 2017-11-01 16:51:18Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-gitlab-markup/Makefile 460833 2018-02-03 18:22:37Z amdmi3 $
 
 PORTNAME=	gitlab-markup
 PORTVERSION=	1.6.3
+PORTREVISION=	1
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -13,13 +14,12 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_ARCH=	yes
 USE_RUBY=	yes
-USES=		gem shebangfix
+USES=		gem python:run shebangfix
 
 PLIST_FILES=	bin/github-markup
 
 SHEBANG_FILES=	lib/github/commands/rest2html \
 		script/bootstrap \
 		script/cibuild
-python_CMD=	${LOCALBASE}/bin/python2
 
 .include <bsd.port.mk>

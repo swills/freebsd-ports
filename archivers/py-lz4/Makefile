@@ -1,7 +1,7 @@
-# $FreeBSD: head/archivers/py-lz4/Makefile 459666 2018-01-22 15:47:03Z sunpoet $
+# $FreeBSD: head/archivers/py-lz4/Makefile 460747 2018-02-02 19:55:23Z sunpoet $
 
 PORTNAME=	lz4
-PORTVERSION=	0.19.1
+PORTVERSION=	0.19.2
 CATEGORIES=	archivers python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

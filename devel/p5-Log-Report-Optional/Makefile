@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Log-Report-Optional/Makefile 459858 2018-01-24 18:45:11Z sunpoet $
+# $FreeBSD: head/devel/p5-Log-Report-Optional/Makefile 460737 2018-02-02 19:54:33Z sunpoet $
 
 PORTNAME=	Log-Report-Optional
-PORTVERSION=	1.05
+PORTVERSION=	1.06
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

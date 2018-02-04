@@ -1,10 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/sysutils/cpu-x/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/sysutils/cpu-x/Makefile 460618 2018-02-01 17:11:32Z danfe $
 
 PORTNAME=	cpu-x
-PORTVERSION=	3.1.3
+PORTVERSION=	3.2.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
 CATEGORIES=	sysutils
 
 MAINTAINER=	danfe@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/astro/p5-Astro-Catalog/Makefile 433362 2017-02-05 05:31:38Z sunpoet $
+# $FreeBSD: head/astro/p5-Astro-Catalog/Makefile 460556 2018-02-01 07:07:41Z wen $
 
 PORTNAME=	Astro-Catalog
-PORTVERSION=	4.31
+PORTVERSION=	4.32
 CATEGORIES=	astro perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

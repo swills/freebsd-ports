@@ -1,8 +1,9 @@
 # Created by: Bruce Simpson
-# $FreeBSD: head/net/py-txamqp/Makefile 457399 2017-12-27 19:52:20Z sunpoet $
+# $FreeBSD: head/net/py-txamqp/Makefile 460589 2018-02-01 13:23:37Z sunpoet $
 
 PORTNAME=	txamqp
 PORTVERSION=	0.8.1
+PORTREVISION=	1
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +15,7 @@ COMMENT=	Twisted Python library for the AMQP messaging protocol
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-xRUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR}
 
 NO_ARCH=	yes

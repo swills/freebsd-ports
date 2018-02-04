@@ -1,12 +1,13 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Sepia/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/devel/p5-Sepia/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	Sepia
 PORTVERSION=	0.992
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
 MAINTAINER=	ashish@FreeBSD.org
 COMMENT=	Simple Emacs-Perl Interface
@@ -20,9 +21,8 @@ BUILD_DEPENDS=	p5-Devel-Size>=0:devel/p5-Devel-Size \
 		p5-BSD-Resource>=0:devel/p5-BSD-Resource
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=		gmake makeinfo perl5
+USES=		emacs gmake makeinfo perl5
 USE_PERL5=	configure
-USE_EMACS=	yes
 
 INFO=	sepia
 

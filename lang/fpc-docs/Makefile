@@ -1,8 +1,8 @@
 # Created by: John Merryweather Cooper
-# $FreeBSD: head/lang/fpc-docs/Makefile 447304 2017-08-03 23:40:28Z acm $
+# $FreeBSD: head/lang/fpc-docs/Makefile 460558 2018-02-01 07:14:41Z acm $
 
 PORTNAME=	docs
-PORTVERSION=	3.0.2
+PORTVERSION=	3.0.4
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.freepascal.org/pub/fpc/dist/${PORTVERSION}/docs/ \
 		ftp://freepascal.stack.nl/pub/fpc/dist/${PORTVERSION}/docs/

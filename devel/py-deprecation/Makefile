@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-deprecation/Makefile 457227 2017-12-25 13:53:21Z sunpoet $
+# $FreeBSD: head/devel/py-deprecation/Makefile 460741 2018-02-02 19:54:54Z sunpoet $
 
 PORTNAME=	deprecation
-PORTVERSION=	1.0.1
+PORTVERSION=	1.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,6 +12,8 @@ COMMENT=	Library to handle automated deprecations
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}packaging>=0:devel/py-packaging@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils

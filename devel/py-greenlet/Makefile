@@ -1,8 +1,8 @@
 # Created by: Peter Schuller <peter.schuller@infidyne.com>
-# $FreeBSD: head/devel/py-greenlet/Makefile 440746 2017-05-13 03:35:51Z linimon $
+# $FreeBSD: head/devel/py-greenlet/Makefile 460587 2018-02-01 13:23:26Z sunpoet $
 
 PORTNAME=	greenlet
-PORTVERSION=	0.4.12
+PORTVERSION=	0.4.13
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

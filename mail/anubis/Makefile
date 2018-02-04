@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/mail/anubis/Makefile 427185 2016-11-26 23:41:16Z jhale $
+# $FreeBSD: head/mail/anubis/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	anubis
 PORTVERSION=	4.2
@@ -43,7 +43,7 @@ OPTIONS_EXCLUDE+=	PAM
 .endif
 
 EMACS_DESC=		Install EMACS lisp files (requires emacs)
-EMACS_USE=		EMACS=yes
+EMACS_USES=		emacs:build
 EMACS_CONFIGURE_ON=	--with-lispdir=${PREFIX}/${EMACS_SITE_LISPDIR}/anubis
 EMACS_CONFIGURE_OFF=	--with-lispdir=no
 

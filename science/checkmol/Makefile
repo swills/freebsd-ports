@@ -1,9 +1,9 @@
 # Created by: Fernan Aguero <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/science/checkmol/Makefile 434899 2017-02-26 17:48:32Z acm $
+# $FreeBSD: head/science/checkmol/Makefile 460573 2018-02-01 07:32:05Z acm $
 
 PORTNAME=	checkmol
 PORTVERSION=	0.5
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	science
 MASTER_SITES=	http://merian.pch.univie.ac.at/pch/download/chemistry/checkmol/
 EXTRACT_SUFX=	.pas

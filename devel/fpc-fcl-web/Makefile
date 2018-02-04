@@ -1,5 +1,5 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/fpc-fcl-web/Makefile 447304 2017-08-03 23:40:28Z acm $
+# $FreeBSD: head/devel/fpc-fcl-web/Makefile 460577 2018-02-01 08:17:51Z acm $
 
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-fcl-web
@@ -7,8 +7,8 @@ PKGNAMESUFFIX=	-fcl-web
 COMMENT=	Free Pascal web application libary (FCL)
 
 USE_FPC=	dblib fcl-async fcl-base fcl-db fcl-xml fcl-json fcl-net \
-		fcl-passrc fastcgi httpd22 httpd24 ibase mysql odbc openssl \
-		oracle postgres pxlib rtl-extra sqlite
+		fcl-fpcunit fcl-passrc fastcgi httpd22 httpd24 ibase mysql \
+		odbc openssl oracle postgres pxlib rtl-extra sqlite
 
 MASTERDIR=	${.CURDIR}/../../lang/fpc
 WRKUNITDIR=	${FPCSRCDIR}/packages/${PKGNAMESUFFIX:S/-//}

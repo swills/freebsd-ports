@@ -1,7 +1,8 @@
-# $FreeBSD: head/irc/irssi-icb/Makefile 438740 2017-04-17 18:37:55Z philip $
+# $FreeBSD: head/irc/irssi-icb/Makefile 460717 2018-02-02 17:37:28Z brd $
 
 PORTNAME=	irssi-icb
 PORTVERSION=	0.17
+PORTREVISION=	1
 CATEGORIES=	irc
 
 MAINTAINER=	santhosh.raju@gmail.com

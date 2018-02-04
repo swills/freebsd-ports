@@ -1,7 +1,8 @@
-# $FreeBSD: head/lang/fpc-rtl-objpas/Makefile 447304 2017-08-03 23:40:28Z acm $
+# $FreeBSD: head/lang/fpc-rtl-objpas/Makefile 460467 2018-01-31 12:22:10Z amdmi3 $
 
 CATEGORIES=	lang
 PKGNAMESUFFIX=	-rtl-objpas
+PORTREVISION=	1
 
 COMMENT=	Free Pascal compatibility unit with Delphi
 

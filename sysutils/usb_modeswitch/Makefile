@@ -1,8 +1,8 @@
 # Created by: Alexander V. Chernikov <melifaro@FreeBSD.org>
-# $FreeBSD: head/sysutils/usb_modeswitch/Makefile 452529 2017-10-20 14:32:35Z swills $
+# $FreeBSD: head/sysutils/usb_modeswitch/Makefile 460768 2018-02-03 03:49:25Z swills $
 
 PORTNAME=	usb_modeswitch
-PORTVERSION=	2.5.1
+PORTVERSION=	2.5.2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.draisberghof.de/usb_modeswitch/
 DISTNAME=	${PORTNAME:S|_|-|}-${PORTVERSION}

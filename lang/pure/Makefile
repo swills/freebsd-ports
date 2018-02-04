@@ -1,5 +1,5 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/lang/pure/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/lang/pure/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	pure
 PORTVERSION=	0.64
@@ -75,7 +75,7 @@ DISTFILES+=	${EXTRACT_ONLY} ${PORTNAME}-docs-${PORTVERSION}.tar.gz
 .endif
 
 .if ${PORT_OPTIONS:MEMACS}
-USE_EMACS=	yes
+USES+=			emacs:build
 MAKE_ARGS+=	emacs_prefix=${PREFIX}
 .endif
 

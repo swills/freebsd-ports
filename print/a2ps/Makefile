@@ -1,5 +1,5 @@
 # Created by: Chuck Robey <chuckr@FreeBSD.org>
-# $FreeBSD: head/print/a2ps/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/print/a2ps/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	a2ps
 PORTVERSION=	4.13b
@@ -43,7 +43,7 @@ I18N_DESC=Enable I18N support
 
 NLS_USES=		gettext
 NLS_CONFIGURE_ENABLE=	nls
-EMACS_USE=		EMACS=yes
+EMACS_USES=		emacs:build
 EMACS_CONFIGURE_ON=	--with-lispdir=${LOCALBASE}/${EMACS_SITE_LISPDIR}
 
 .include <bsd.port.options.mk>

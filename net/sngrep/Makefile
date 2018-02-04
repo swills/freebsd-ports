@@ -1,8 +1,8 @@
 # Created by: Talal Al Dik (tad@vif.com)
-# $FreeBSD: head/net/sngrep/Makefile 452637 2017-10-22 11:16:15Z dbaio $
+# $FreeBSD: head/net/sngrep/Makefile 460829 2018-02-03 17:22:30Z dbaio $
 
 PORTNAME=	sngrep
-PORTVERSION=	1.4.4
+PORTVERSION=	1.4.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 
@@ -12,11 +12,12 @@ COMMENT=	SIP Packet display and capture
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+USES=		autoreconf localbase ncurses
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	irontec
 
 GNU_CONFIGURE=	yes
-USES=		autoreconf localbase ncurses
 
 OPTIONS_DEFINE=	OPENSSL PCRE UNICODE IPV6 EEP
 

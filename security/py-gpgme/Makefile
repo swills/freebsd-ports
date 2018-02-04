@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-gpgme/Makefile 427185 2016-11-26 23:41:16Z jhale $
+# $FreeBSD: head/security/py-gpgme/Makefile 460759 2018-02-02 23:30:34Z jhale $
 
 PORTREVISION=	0
 CATEGORIES=	security python
@@ -11,6 +11,12 @@ MASTERDIR=	${.CURDIR}/../../security/gpgme
 SLAVEPORT=	python
 BINDING_NAME=	python
 PLIST=		${.CURDIR}/pkg-plist
+
+.if ${FLAVOR:Upy27:Mpy2*}
+CONFIGURE_ARGS+=--enable-languages="python2"
+.else
+CONFIGURE_ARGS+=--enable-languages="python3"
+.endif
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/${PYTHON_VERSION}/site-packages/gpg/_gpgme.so

@@ -1,9 +1,9 @@
 # Created by: David Thiel <lx@FreeBSD.org>
-# $FreeBSD: head/audio/pytone/Makefile 458754 2018-01-11 16:24:53Z danfe $
+# $FreeBSD: head/audio/pytone/Makefile 460796 2018-02-03 08:34:24Z sunpoet $
 
 PORTNAME=	pytone
 PORTVERSION=	3.0.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio python
 MASTER_SITES=	http://www.luga.de/pytone/download/ \
 		http://redundancy.redundancy.org/mirror/
@@ -30,7 +30,7 @@ PLIST_FILES=	etc/pytonerc.sample
 OPTIONS_DEFINE=		MAD MPG123 MPG321 VORBIS
 OPTIONS_DEFAULT=	MAD VORBIS
 
-MAD_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mad>0:audio/py-mad@${FLAVOR}
+MAD_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pymad>0:audio/py-pymad@${FLAVOR}
 MPG123_RUN_DEPENDS=	mpg123:audio/mpg123
 MPG321_DESC=		MP3 decoding support via mpg321
 MPG321_RUN_DEPENDS=	mpg321:audio/mpg321

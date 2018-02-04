@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/containers/Makefile 446655 2017-07-26 13:16:39Z mat $
+# $FreeBSD: head/devel/containers/Makefile 460633 2018-02-01 20:48:01Z acm $
 
 PORTNAME=	containers
-PORTVERSION=	0.5.3
+PORTVERSION=	0.6.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

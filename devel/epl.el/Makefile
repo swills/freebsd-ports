@@ -1,24 +1,26 @@
-# $FreeBSD: head/devel/epl.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/devel/epl.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	epl.el
 PORTVERSION=	0.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel elisp
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Emacs Package Library
 
 LICENSE=	GPLv3
 
+USES=		emacs
 USE_GITHUB=	yes
 GH_ACCOUNT=	cask
 GH_PROJECT=	epl
-USE_EMACS=	yes
+
 NO_BUILD=	yes
-PLIST_FILES=	%%EMACS_SITE_LISPDIR%%/epl.el
+PLIST_FILES=	${EMACS_SITE_LISPDIR}/epl.el
 
 do-install:
-	cd ${WRKSRC} && ${INSTALL_DATA} ${PLIST_FILES:M*.el:T} \
-	    ${STAGEDIR}${PREFIX}/${EMACS_SITE_LISPDIR}
+	(cd ${WRKSRC} && ${INSTALL_DATA} ${PLIST_FILES:M*.el:T} \
+	    ${STAGEDIR}${PREFIX}/${EMACS_SITE_LISPDIR})
 
 .include <bsd.port.mk>

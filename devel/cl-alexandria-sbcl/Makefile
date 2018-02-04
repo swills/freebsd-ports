@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/cl-alexandria-sbcl/Makefile 458423 2018-01-08 14:44:54Z krion $
+# $FreeBSD: head/devel/cl-alexandria-sbcl/Makefile 460521 2018-01-31 17:58:27Z krion $
 
 PORTNAME=	alexandria
 PORTVERSION=	2010.01.16
-PORTREVISION=	17
+PORTREVISION=	18
 CATEGORIES=	devel lisp
 PKGNAMEPREFIX=	cl-
 DISTFILES=	# none

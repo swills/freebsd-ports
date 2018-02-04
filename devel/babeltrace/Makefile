@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/babeltrace/Makefile 448911 2017-08-29 13:05:21Z pizzamig $
+# $FreeBSD: head/devel/babeltrace/Makefile 460699 2018-02-02 13:27:33Z pizzamig $
 
 PORTNAME=	babeltrace
-PORTVERSION=	1.5.3
+PORTVERSION=	1.5.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -19,10 +19,11 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libpopt.so:devel/popt \
 		libuuid.so:misc/e2fsprogs-libuuid
 
+USES=		autoreconf:build bison gmake libtool pathfix pkgconfig
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	efficios
 
-USES=		autoreconf:build bison gmake libtool pathfix pkgconfig
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-debug-info
 USE_GNOME=	glib20

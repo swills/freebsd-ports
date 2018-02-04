@@ -1,12 +1,12 @@
 # Created by: FUJISHIMA Satsuki <sf@FreeBSD.org>
-# $FreeBSD: head/japanese/navi2ch/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/japanese/navi2ch/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	navi2ch
 PORTVERSION=	2.0.0.d
-PORTREVISION=	5
+PORTREVISION=	6
 PORTEPOCH=	1
 CATEGORIES=	japanese www elisp
-PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	2ch.net and 2ch-like BBS navigator for Emacsen
@@ -16,10 +16,11 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${LOCALBASE}/sbin/2chproxy.pl:japanese/p5-2chproxy
 
-USE_EMACS=	yes
+USES=		emacs
 USE_GITHUB=	yes
 GH_ACCOUNT=	naota
 GH_TAGNAME=	faebfd1
+
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	EMACS="${EMACS_CMD}"
 CONFIGURE_ARGS=	--with-lispdir=${PREFIX}/${LISPDIR}/${PORTNAME}

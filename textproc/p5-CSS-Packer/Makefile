@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-CSS-Packer/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-CSS-Packer/Makefile 460780 2018-02-03 06:21:06Z sunpoet $
 
 PORTNAME=	CSS-Packer
-PORTVERSION=	2.03
+PORTVERSION=	2.05
 CATEGORIES=	textproc www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -15,7 +15,8 @@ LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Regexp-RegGrp>=1.001001:devel/p5-Regexp-RegGrp
 RUN_DEPENDS:=	${BUILD_DEPENDS}
-TEST_DEPENDS=	p5-Test-Pod>=1.22:devel/p5-Test-Pod
+TEST_DEPENDS=	p5-Test-File-Contents>=0.21:devel/p5-Test-File-Contents \
+		p5-Test-Pod>=1.22:devel/p5-Test-Pod
 
 NO_ARCH=	yes
 USE_PERL5=	configure

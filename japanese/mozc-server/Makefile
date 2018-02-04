@@ -1,5 +1,5 @@
 # Created by: Daichi GOTO <daichi@FreeBSD.org>
-# $FreeBSD: head/japanese/mozc-server/Makefile 456058 2017-12-11 18:26:13Z sunpoet $
+# $FreeBSD: head/japanese/mozc-server/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	mozc
 PORTVERSION=	2.20.2677.102.02
@@ -57,7 +57,7 @@ USE_GNOME=	cairo gdkpixbuf2 glib20 gtk20
 LIB_DEPENDS+=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2
 .elif ${BUILD_MOZC_LIST:Mmozc_el} == "mozc_el"
-USE_EMACS=	yes
+USES+=		emacs
 .elif ${BUILD_MOZC_LIST:Mfcitx_mozc}
 USES+=		gettext-tools
 .endif

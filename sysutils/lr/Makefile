@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/sysutils/lr/Makefile 455788 2017-12-08 17:46:53Z tobik $
+# $FreeBSD: head/sysutils/lr/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	lr
 DISTVERSIONPREFIX=	v
@@ -28,9 +28,8 @@ NEOVIM_DESC=	Neovim plugin
 VIM_DESC=	Vim plugin
 
 OPTIONS_SUB=	yes
-EMACS_USE=	emacs=yes
-EMACS_NO_BUILD_DEPENDS=	yes
-EMACS_NO_RUN_DEPENDS=	yes
+EMACS_USES=	emacs
+EMACS_VARS=	EMACS_NO_DEPENDS=yes
 
 CONTRIB_RUN_DEPENDS=	xe:sysutils/xe
 

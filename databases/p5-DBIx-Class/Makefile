@@ -1,9 +1,8 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/databases/p5-DBIx-Class/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Class/Makefile 460478 2018-01-31 15:51:44Z sunpoet $
 
 PORTNAME=	DBIx-Class
-PORTVERSION=	0.082840
-PORTREVISION=	1
+PORTVERSION=	0.082841
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

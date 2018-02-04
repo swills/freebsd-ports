@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 460456 2018-01-31 04:19:02Z yuri $
+# $FreeBSD: head/security/Makefile 460506 2018-01-31 16:42:07Z sunpoet $
 #
 
     COMMENT = Security tools
@@ -1096,7 +1096,6 @@
     SUBDIR += rubygem-omniauth-shibboleth
     SUBDIR += rubygem-openssl
     SUBDIR += rubygem-openssl-ccm
-    SUBDIR += rubygem-openssl20
     SUBDIR += rubygem-openvas-omp
     SUBDIR += rubygem-origami
     SUBDIR += rubygem-pbkdf2-ruby

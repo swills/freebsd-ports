@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/py-protobuf/Makefile 459086 2018-01-15 17:16:14Z sunpoet $
+# $FreeBSD: head/devel/py-protobuf/Makefile 460784 2018-02-03 06:21:26Z sunpoet $
 
 PORTNAME=	protobuf
 PORTVERSION=	3.5.1.1
@@ -20,7 +20,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.9:devel/py-six@${FLAVOR}
 DO_MAKE_TEST=	${PYTHON_CMD} ${PYDISTUTILS_SETUP}
 NO_ARCH=	yes
 TEST_TARGET=	test
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 USES=		python
 WRKSRC_SUBDIR=	python
 

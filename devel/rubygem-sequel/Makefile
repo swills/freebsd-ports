@@ -1,8 +1,8 @@
 # Created by: Wen Heping<wenheping@gmail.com>
-# $FreeBSD: head/devel/rubygem-sequel/Makefile 458147 2018-01-05 15:09:00Z swills $
+# $FreeBSD: head/devel/rubygem-sequel/Makefile 460592 2018-02-01 13:23:47Z sunpoet $
 
 PORTNAME=	sequel
-PORTVERSION=	5.4.0
+PORTVERSION=	5.5.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 458819 2018-01-12 11:45:30Z pi $
+# $FreeBSD: head/net-mgmt/Makefile 460818 2018-02-03 15:01:06Z mmokhi $
 #
 
     COMMENT = Network management tools
@@ -327,6 +327,7 @@
     SUBDIR += routers2-extensions
     SUBDIR += routers2-extras
     SUBDIR += rrdbot
+    SUBDIR += rtrlib
     SUBDIR += rubygem-blimpy
     SUBDIR += rubygem-oxidized
     SUBDIR += rubygem-oxidized-script

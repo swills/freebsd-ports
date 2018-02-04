@@ -1,9 +1,9 @@
 # Created by: Fernan Aguero <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/science/mol2ps/Makefile 434900 2017-02-26 17:50:29Z acm $
+# $FreeBSD: head/science/mol2ps/Makefile 460573 2018-02-01 07:32:05Z acm $
 
 PORTNAME=	mol2ps
 PORTVERSION=	0.4b
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 MASTER_SITES=	http://merian.pch.univie.ac.at/pch/download/chemistry/${PORTNAME}/
 DISTNAME=	${PORTNAME}

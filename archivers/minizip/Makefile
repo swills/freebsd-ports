@@ -1,5 +1,5 @@
 # Created by: lbartoletti <coder@tuxfamily.org>
-# $FreeBSD: head/archivers/minizip/Makefile 448251 2017-08-18 15:58:03Z sunpoet $
+# $FreeBSD: head/archivers/minizip/Makefile 460580 2018-02-01 09:02:16Z amdmi3 $
 
 PORTNAME=	minizip
 PORTVERSION=	1.2.11
@@ -25,7 +25,7 @@ post-patch:
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/*.1 ${STAGEDIR}${PREFIX}/man/man1
 
-regression-test:
+do-test:
 	${RM} -r ${WRKDIR}/regression-test1
 	${MKDIR} ${WRKDIR}/regression-test1
 	${MV} ${WRKSRC}/*.[cho] ${WRKDIR}/regression-test1
