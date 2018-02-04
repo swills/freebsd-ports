@@ -1,10 +1,10 @@
-# $FreeBSD: head/mail/mu4e-maildirs/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/mail/mu4e-maildirs/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	mu4e-maildirs
 PORTVERSION=	0.8.20160126
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail
-PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Maildirs extension for Mu4e
@@ -12,14 +12,15 @@ COMMENT=	Maildirs extension for Mu4e
 LICENSE=	GPLv3
 
 BUILD_DEPENDS:=	${RUN_DEPENDS}
-RUN_DEPENDS=	${LOCALBASE}/${EMACS_SITE_LISPDIR}/dash.el:devel/dash.el \
-		${LOCALBASE}/${EMACS_SITE_LISPDIR}/mu4e/mu4e.elc:mail/mu4e
+RUN_DEPENDS=	dash.el${EMACS_PKGNAMESUFFIX}>0:devel/dash.el@${EMACS_FLAVOR} \
+		mu4e${EMACS_PKGNAMESUFFIX}>0:mail/mu4e@${EMACS_FLAVOR}
 
+USES=		emacs
 USE_GITHUB=	yes
 GH_PROJECT=	${PORTNAME}-extension
 GH_ACCOUNT=	agpchil
 GH_TAGNAME=	f759dff
-USE_EMACS=	yes
+
 NO_CONFIGURE=	yes
 PLIST_FILES=	${EMACS_SITE_LISPDIR}/mu4e/mu4e-maildirs-extension.elc \
 		${EMACS_SITE_LISPDIR}/mu4e/mu4e-maildirs-extension.el.gz

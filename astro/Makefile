@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/Makefile 459014 2018-01-14 23:38:11Z ler $
+# $FreeBSD: head/astro/Makefile 460500 2018-01-31 16:40:59Z sunpoet $
 #
 
     COMMENT = Astronomical ports
@@ -84,7 +84,6 @@
     SUBDIR += py-astLib
     SUBDIR += py-astropy
     SUBDIR += py-horoscopegenerator
-    SUBDIR += py-pyfits
     SUBDIR += py-pymetar
     SUBDIR += py-pywapi
     SUBDIR += pyephem

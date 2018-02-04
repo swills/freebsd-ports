@@ -1,8 +1,8 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/multimedia/smtube/Makefile 440632 2017-05-11 15:42:44Z pawel $
+# $FreeBSD: head/multimedia/smtube/Makefile 460834 2018-02-03 18:25:50Z pawel $
 
 PORTNAME=	smtube
-PORTVERSION=	17.5.0
+PORTVERSION=	18.1.0
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/smtube/SMTube/${PORTVERSION}/
 
@@ -14,8 +14,9 @@ LICENSE_FILE=	${WRKSRC}/Copying.txt
 
 USES=		gmake tar:bzip2
 ALL_TARGET=	#empty
-MAKE_ARGS=	DATA_PATH=${DATADIR} DOC_PATH=${DOCSDIR} \
-		LRELEASE=${LRELEASE} MAKE=${MAKE_CMD}
+MAKE_ARGS=	DATA_PATH="${DATADIR}" DOC_PATH="${DOCSDIR}" \
+		LRELEASE="${LRELEASE}" MAKE="${MAKE_CMD}" \
+		QMAKE="${QMAKE}"
 
 PORTDOCS=	*
 
@@ -45,7 +46,7 @@ SMPLAYER_RUN_DEPENDS=		smplayer:multimedia/smplayer
 VLC_RUN_DEPENDS=		vlc:multimedia/vlc
 
 post-patch:
-	@${REINPLACE_CMD} '/^QMAKE/ s|qmake|${QMAKE} ${QMAKE_ARGS:S,\$(,\$\$(,g}|' \
+	@${REINPLACE_CMD} 's|$$(QMAKE_OPTS)|${QMAKE_ARGS:S,\$,\$\$,g}|' \
 		${WRKSRC}/Makefile
 
 post-install:

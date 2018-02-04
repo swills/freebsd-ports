@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/devel/cdash/Makefile 415360 2016-05-16 19:28:59Z amdmi3 $
+# $FreeBSD: head/devel/cdash/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	cdash
 PORTVERSION=	2.2.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.cdash.org/wp-content/uploads/2014/11/
 DISTNAME=	CDash-2-2-3

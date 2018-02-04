@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 460314 2018-01-29 16:17:45Z yuri $
+# $FreeBSD: head/net/Makefile 460860 2018-02-03 23:47:36Z yuri $
 #
 
     COMMENT = Networking tools
@@ -1072,6 +1072,7 @@
     SUBDIR += py-s3cmd
     SUBDIR += py-s3transfer
     SUBDIR += py-shodan
+    SUBDIR += py-smart_open
     SUBDIR += py-smbpasswd
     SUBDIR += py-soap2py
     SUBDIR += py-soappy
@@ -1127,6 +1128,7 @@
     SUBDIR += rdapper
     SUBDIR += rdesktop
     SUBDIR += rdist6
+    SUBDIR += reaver
     SUBDIR += recvnet
     SUBDIR += redir
     SUBDIR += relayd
@@ -1377,7 +1379,6 @@
     SUBDIR += tcptestsuite
     SUBDIR += tcptrace
     SUBDIR += tcptraceroute
-    SUBDIR += tcptraceroute-devel
     SUBDIR += tcpview
     SUBDIR += tcpwatch
     SUBDIR += tcpxd

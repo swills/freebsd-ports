@@ -1,19 +1,20 @@
 # Created by: Robert Withrow <witr@rwwa.com>
-# $FreeBSD: head/print/hyperlatex/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/print/hyperlatex/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	Hyperlatex
 DISTVERSION=	2.9a
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	print
 MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME:tl}/2.9a
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Produce HTML and printed documents from LaTeX source
 
 RUN_DEPENDS=	ppmtogif:graphics/netpbm
 
+USES=		emacs
 USE_TEX=	latex
-USE_EMACS=	yes
 
 LATEX_DIR=	${PREFIX}/share/texmf/tex/latex/hyperlatex
 HYPERLATEX_DIR=	${PREFIX}/share/hyperlatex

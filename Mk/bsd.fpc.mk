@@ -1,5 +1,5 @@
 #
-# $FreeBSD: head/Mk/bsd.fpc.mk 452522 2017-10-20 14:04:02Z gahr $
+# $FreeBSD: head/Mk/bsd.fpc.mk 460558 2018-02-01 07:14:41Z acm $
 #
 # bsd.fpc.mk - Support for FreePascal based ports.
 #
@@ -72,12 +72,12 @@ _FPC_ALL_UNITS=	a52 aspell bfd bzip2 cairo chm dblib dbus dts fastcgi \
 		fcl-res fcl-sdo fcl-sound fcl-stl fcl-web fcl-xml fftw \
 		fpindexer fppkg fv gdbint gdbm gmp googleapi graph gtk2 \
 		hermes httpd22 httpd24 ibase iconvenc imagemagick \
-		ldap libcurl libgd libpng libvlc libxml2 lua mad modplug mysql \
-		ncurses newt numlib odbc oggvorbis openal opengl openssl \
-		oracle pasjpeg pcap postgres proj4 pthreads pxlib regexpr \
-		rexx rsvg rtl-console rtl-extra rtl-objpas rtl-unicode sdl \
-		sqlite svgalib symbolic syslog unzip users utmp \
-		uuid x11 xforms zlib
+		ldap libcurl libgd libmicrohttpd libpng libvlc libxml2 lua mad \
+		modplug mysql ncurses newt numlib odbc oggvorbis openal opengl \
+		openssl oracle pasjpeg pcap postgres proj4 pthreads pxlib \
+		regexpr rexx rsvg rtl-console rtl-extra rtl-objpas rtl-unicode \
+		sdl sqlite svgalib symbolic syslog unzip users utmp uuid x11 \
+		xforms zlib
 
 .if defined(WANT_FPC_BASE)
 .       if ${WANT_FPC_BASE:tl} == "yes"
@@ -163,6 +163,7 @@ imagemagick_UNIT=	graphics/fpc-imagemagick
 ldap_UNIT=	net/fpc-ldap
 libcurl_UNIT=	ftp/fpc-libcurl
 libgd_UNIT=	graphics/fpc-libgd
+libmicrohttpd_UNIT=	www/fpc-libmicrohttpd
 libpng_UNIT=	graphics/fpc-libpng
 libvlc_UNIT=	multimedia/fpc-libvlc
 libxml2_UNIT=	textproc/fpc-libxml2

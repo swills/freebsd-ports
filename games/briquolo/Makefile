@@ -1,9 +1,9 @@
 # Created by: Kirill Ponomarew <krion@FreeBSD.org>
-# $FreeBSD: head/games/briquolo/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/briquolo/Makefile 460698 2018-02-02 12:12:31Z martymac $
 
 PORTNAME=	briquolo
 PORTVERSION=	0.5.7
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	games
 MASTER_SITES=	http://briquolo.free.fr/download/
 

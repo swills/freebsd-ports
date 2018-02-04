@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/cf/Makefile 451834 2017-10-12 09:06:17Z mat $
+# $FreeBSD: head/net/cf/Makefile 460776 2018-02-03 05:04:24Z swills $
 
 PORTNAME=	cf
-PORTVERSION=	6.24.0
+PORTVERSION=	6.34.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 
@@ -22,7 +22,7 @@ GO_PKGNAME=	code.cloudfoundry.org/cli
 
 PLIST_FILES=	bin/cf
 
-PORTDOCS=	CHANGELOG.md NOTICE README.md
+PORTDOCS=	NOTICE README.md
 
 OPTIONS_DEFINE=	DOCS
 

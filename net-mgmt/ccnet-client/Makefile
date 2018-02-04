@@ -1,9 +1,8 @@
-# $FreeBSD: head/net-mgmt/ccnet-client/Makefile 458112 2018-01-05 03:56:32Z ultima $
+# $FreeBSD: head/net-mgmt/ccnet-client/Makefile 460731 2018-02-02 19:50:08Z ultima $
 
 PORTNAME=	ccnet-client
 DISTVERSIONPREFIX=	v
 DISTVERSION=	${SEAFILE_CLIENT_VER}
-PORTREVISION=	1
 CATEGORIES=	net-mgmt devel
 
 MAINTAINER=	ultima@FreeBSD.org

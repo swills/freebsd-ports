@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-editdistance/Makefile 453565 2017-11-05 21:16:19Z sunpoet $
+# $FreeBSD: head/devel/py-editdistance/Makefile 460782 2018-02-03 06:21:16Z sunpoet $
 
 PORTNAME=	editdistance
 PORTVERSION=	0.4
@@ -12,7 +12,7 @@ COMMENT=	Fast implementation of the edit distance (Levenshtein distance)
 
 LICENSE=	MIT
 
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 USES=		python
 
 post-install:

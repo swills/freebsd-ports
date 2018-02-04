@@ -1,10 +1,11 @@
-# $FreeBSD: head/editors/paredit-mode.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/editors/paredit-mode.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	paredit-mode.el
 PORTVERSION=	24
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	editors elisp
 MASTER_SITES=	http://mumble.net/~campbell/emacs/
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 DISTNAME=	paredit-${PORTVERSION}.el
 EXTRACT_SUFX=
 EXTRACT_ONLY=
@@ -12,11 +13,11 @@ EXTRACT_ONLY=
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Minor mode for performing editing of S-expression data
 
-USE_EMACS=	yes
+USES=		emacs
 
 NO_BUILD=	yes
 
-PLIST_FILES=	%%EMACS_SITE_LISPDIR%%/paredit.el
+PLIST_FILES=	${EMACS_SITE_LISPDIR}/paredit.el
 
 do-install:
 	${INSTALL_DATA} ${DISTDIR}/${DISTNAME} ${STAGEDIR}${PREFIX}/${EMACS_SITE_LISPDIR}/paredit.el

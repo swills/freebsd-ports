@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/node8/Makefile 456345 2017-12-14 19:46:22Z bhughes $
+# $FreeBSD: head/www/node8/Makefile 460855 2018-02-03 22:30:24Z bhughes $
 
 PORTNAME=	node
-PORTVERSION=	8.9.3
+PORTVERSION=	8.9.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 MASTER_SITES=	http://nodejs.org/dist/v${PORTVERSION}/
@@ -12,6 +12,8 @@ COMMENT=	V8 JavaScript for client and server (8.x LTS)
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+ONLY_FOR_ARCHS=		aarch64 amd64 armv6 armv7 i386
 
 OPTIONS_DEFINE=	BUNDLED_SSL DOCS NLS DTRACE
 OPTIONS_DEFAULT=DTRACE
@@ -41,11 +43,8 @@ USES=		compiler:c++11-lib gmake python:2,build pkgconfig \
 		localbase shebangfix
 
 HAS_CONFIGURE=	yes
-USE_LDCONFIG=	yes
 
 CONFLICTS_INSTALL=	node[456]-[0-9]* node-[0-9]*
-
-ONLY_FOR_ARCHS=		aarch64 amd64 armv6 armv7 i386
 
 CONFIGURE_ARGS=	--prefix=${PREFIX_RELDEST} \
 		--without-npm \

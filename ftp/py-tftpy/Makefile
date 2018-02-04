@@ -1,9 +1,9 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/ftp/py-tftpy/Makefile 436099 2017-03-13 17:48:56Z sunpoet $
+# $FreeBSD: head/ftp/py-tftpy/Makefile 460786 2018-02-03 06:21:36Z sunpoet $
 
 PORTNAME=	tftpy
 PORTVERSION=	0.6.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	ftp python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -14,7 +14,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 NO_ARCH=	yes
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 USES=		python
 
 GH_ACCOUNT=	msoulier

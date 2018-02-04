@@ -1,9 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/net-p2p/transmission-remote-gui/Makefile 435184 2017-03-01 17:52:16Z acm $
+# $FreeBSD: head/net-p2p/transmission-remote-gui/Makefile 460565 2018-02-01 07:22:34Z acm $
 
 PORTNAME=	transmission-remote-gui
 PORTVERSION=	5.0.1
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	net-p2p
 MASTER_SITES=	SF/${PROJECTNAME}/${PORTVERSION}/
 DISTNAME=	transgui-${PORTVERSION}-src
@@ -27,7 +27,7 @@ SUB_FILES=	pkg-message
 LAZARUS_PROJECT_FILE=	transgui.lpi
 LAZBUILD_CMD=		${LOCALBASE}/bin/lazbuild -d
 LCL_UNITS_DIR=		${LOCALBASE}/share/lazarus-${LAZARUS_VER}/lcl/units/${BUILDNAME}
-LAZARUS_VER=		1.6.4
+LAZARUS_VER=		1.8.0
 LAZARUS_DIR=		${LOCALBASE}/share/lazarus-${LAZARUS_VER}
 PROJECT_NAME=		transgui
 

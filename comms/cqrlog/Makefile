@@ -1,8 +1,9 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/comms/cqrlog/Makefile 451901 2017-10-12 15:57:51Z mat $
+# $FreeBSD: head/comms/cqrlog/Makefile 460568 2018-02-01 07:24:58Z acm $
 
 PORTNAME=	cqrlog
 PORTVERSION=	2.0.4
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	comms hamradio
 
@@ -27,7 +28,7 @@ USE_FPC=	cairo fcl-base fcl-db fcl-image fcl-json fcl-net fcl-web \
 
 ALL_TARGET=	${PORTNAME}
 
-LAZARUS_VER=	1.6.4
+LAZARUS_VER=	1.8.0
 LAZARUS_DIR=	${LOCALBASE}/share/lazarus-${LAZARUS_VER}
 
 OPTIONS_SINGLE=		LCL

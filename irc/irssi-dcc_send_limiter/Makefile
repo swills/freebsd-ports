@@ -1,9 +1,9 @@
 # Created by: Timothy Redaelli <drizzt@gufi.org>
-# $FreeBSD: head/irc/irssi-dcc_send_limiter/Makefile 458291 2018-01-06 21:20:51Z dbaio $
+# $FreeBSD: head/irc/irssi-dcc_send_limiter/Makefile 460717 2018-02-02 17:37:28Z brd $
 
 PORTNAME=	dcc_send_limiter
 PORTVERSION=	0.8.10
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	irc
 MASTER_SITES=	http://svn.irssi.org/repos/modules/trunk/ \
 		http://utenti.gufi.org/~drizzt/codes/irssi-dcc_send_limiter/

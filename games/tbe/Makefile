@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/tbe/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/games/tbe/Makefile 460706 2018-02-02 15:27:41Z amdmi3 $
 
 PORTNAME=	tbe
 PORTVERSION=	0.9.2.1
@@ -10,14 +10,17 @@ CATEGORIES=	games
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	The Butterfly Effect
 
-BUILD_DEPENDS=	${LOCALBASE}/bin/unzip:archivers/unzip
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake compiler:c++11-lib tar:tgz
-USE_QT4=	gui linguisttools_build moc_build qmake_build rcc_build \
-		svg uic_build xml
+BUILD_DEPENDS=	${LOCALBASE}/bin/unzip:archivers/unzip
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	kaa-ching
+
+USES=		cmake compiler:c++11-lib
+USE_QT4=	corelib gui linguisttools_build moc_build qmake_build rcc_build \
+		svg uic_build xml
 
 PORTDOCS=	*
 

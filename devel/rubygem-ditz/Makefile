@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-ditz/Makefile 414145 2016-04-27 22:32:36Z swills $
+# $FreeBSD: head/devel/rubygem-ditz/Makefile 460515 2018-01-31 16:51:03Z sunpoet $
 
 PORTNAME=	ditz
 PORTVERSION=	0.5
@@ -14,7 +14,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-trollop>=1.9:devel/rubygem-trollop
 
-BROKEN_RUBY22=	yes
 BROKEN_RUBY23=	yes
 
 NO_ARCH=	yes

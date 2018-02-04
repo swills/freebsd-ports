@@ -1,11 +1,12 @@
 # Created by: stas
-# $FreeBSD: head/cad/verilog-mode.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/cad/verilog-mode.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	verilog-mode.el
 PORTVERSION=	801
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	cad elisp
 MASTER_SITES=	http://www.veripool.org/ftp/
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME:R}-${PORTVERSION}.${PORTNAME:E}
 EXTRACT_SUFX=	.gz
 
@@ -21,8 +22,7 @@ EXTRACT_AFTER_ARGS=	> ${PORTNAME}
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
 
-USE_EMACS=	yes
-EMACS_NO_BUILD_DEPENDS=	yes
+USES=		emacs:run
 
 PLIST_FILES=	${EMACS_SITE_LISPDIR}/${PORTNAME}
 

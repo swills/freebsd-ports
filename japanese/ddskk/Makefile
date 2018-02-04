@@ -1,14 +1,14 @@
 # Created by: Shigeyuki FUKUSHIMA <shige@kuis.kyoto-u.ac.jp>
-# $FreeBSD: head/japanese/ddskk/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/japanese/ddskk/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	ddskk
 PORTVERSION=	15.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	japanese elisp
 MASTER_SITES=	http://openlab.ring.gr.jp/skk/maintrunk/ \
 		ftp://ftp.ring.gr.jp/pub/elisp/skk/maintrunk/ \
 		http://www.ring.gr.jp/archives/elisp/skk/maintrunk/
-PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple Kana to Kanji conversion program on Emacsen
@@ -16,7 +16,8 @@ COMMENT=	Simple Kana to Kanji conversion program on Emacsen
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/READMEs/COPYING
 
-USE_EMACS=	yes
+USES=		emacs
+
 MAKE_ARGS=	PREFIX="${STAGEDIR}${PREFIX}" \
 		SKK_LISPDIR="${STAGEDIR}${PREFIX}/${SKK_LISPDIR}" \
 		SKK_INFODIR="${STAGEDIR}${PREFIX}/${INFO_PATH}"

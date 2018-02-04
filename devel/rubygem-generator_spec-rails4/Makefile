@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-generator_spec-rails4/Makefile 441225 2017-05-19 14:52:52Z jrm $
+# $FreeBSD: head/devel/rubygem-generator_spec-rails4/Makefile 460787 2018-02-03 06:21:41Z sunpoet $
 
 PORTNAME=	generator_spec
 PORTVERSION=	0.9.4
@@ -12,8 +12,8 @@ COMMENT=	Test Rails generators with RSpec
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
-RUN_DEPENDS=	rubygem-activesupport4>=4.1.4:devel/rubygem-activesupport4 \
-		rubygem-railties4>=4.1.4:www/rubygem-railties4
+RUN_DEPENDS=	rubygem-activesupport4>=3.0.0:devel/rubygem-activesupport4 \
+		rubygem-railties4>=3.0.0:www/rubygem-railties4
 
 NO_ARCH=	yes
 USE_RUBY=	yes

@@ -1,7 +1,7 @@
-# $FreeBSD: head/java/openjfx8-scenebuilder/Makefile 451238 2017-10-04 17:12:42Z tobik $
+# $FreeBSD: head/java/openjfx8-scenebuilder/Makefile 460609 2018-02-01 15:19:45Z tobik $
 
 PORTNAME=	openjfx8
-DISTVERSION=	8u172-b00
+DISTVERSION=	8u172-b03
 CATEGORIES=	java x11-toolkits devel
 MASTER_SITES=	https://github.com/t6/openjfx/releases/download/release/ \
 		http://hg.openjdk.java.net/openjfx/8u/rt/archive/${DISTVERSION}${EXTRACT_SUFX}?dummy=/

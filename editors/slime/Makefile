@@ -1,11 +1,12 @@
 # Created by: Dominic Mitchell
-# $FreeBSD: head/editors/slime/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/editors/slime/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	slime
 PORTVERSION=	2.15
-PORTREVISION=	2
 DISTVERSIONPREFIX=v
+PORTREVISION=	3
 CATEGORIES=	editors elisp
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
 MAINTAINER=	joe@thrallingpenguin.com
 COMMENT=	Superior Lisp Interaction Mode for Emacs
@@ -17,8 +18,7 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 BUILD_DEPENDS=	texinfo>=5.2:print/texinfo
 
-USES=		gmake
-USE_EMACS=	yes
+USES=		emacs gmake
 USE_GITHUB=	yes
 
 SLIME_LISPDIR=	${PREFIX}/${EMACS_VERSION_SITE_LISPDIR}/slime

@@ -1,14 +1,14 @@
 # Created by: Dryice Liu <dryice@liu.com.cn>
-# $FreeBSD: head/textproc/xml-parse.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/textproc/xml-parse.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	xml-parse.el
 PORTVERSION=	1.5
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	textproc elisp
 MASTER_SITES=	http://dryice.name/computer/FreeBSD/distfiles/ \
 		http://sacha.free.net.ph/notebook/emacs/ \
 		http://ports.toco-domains.de/
-PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=
 EXTRACT_ONLY=
@@ -16,7 +16,8 @@ EXTRACT_ONLY=
 MAINTAINER=	tz@FreeBSD.org
 COMMENT=	Code to efficiently read/write XML data with Elisp
 
-USE_EMACS=	yes
+USES=		emacs
+
 NO_BUILD=	yes
 
 do-install:

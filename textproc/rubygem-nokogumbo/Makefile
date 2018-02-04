@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-nokogumbo/Makefile 442872 2017-06-07 19:11:27Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-nokogumbo/Makefile 460490 2018-01-31 15:52:47Z sunpoet $
 
 PORTNAME=	nokogumbo
-PORTVERSION=	1.4.13
+PORTVERSION=	1.5.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

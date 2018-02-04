@@ -1,5 +1,5 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/x11/lxmenu-data/Makefile 417703 2016-06-28 09:11:31Z rakuco $
+# $FreeBSD: head/x11/lxmenu-data/Makefile 460579 2018-02-01 09:02:14Z amdmi3 $
 
 PORTNAME=	lxmenu-data
 PORTVERSION=	0.1.5
@@ -16,9 +16,11 @@ BUILD_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser
 USES=		gettext gmake localbase tar:xz
 USE_GNOME=	intltool
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=--prefix=${LOCALBASE} --sysconfdir=${LOCALBASE}/etc
+CONFIGURE_ARGS=	--sysconfdir=${PREFIX}/etc
+NO_ARCH=	yes
 
 PORTDOCS=	AUTHORS README TODO
+
 OPTIONS_DEFINE=	DOCS
 
 post-install-DOCS-on:

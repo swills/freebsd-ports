@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 459853 2018-01-24 18:44:44Z sunpoet $
+# $FreeBSD: head/databases/Makefile 460537 2018-01-31 21:37:03Z rene $
 #
 
     COMMENT = Databases and related software
@@ -209,7 +209,6 @@
     SUBDIR += mysql-connector-c++
     SUBDIR += mysql-connector-java
     SUBDIR += mysql-connector-odbc
-    SUBDIR += mysql-proxy
     SUBDIR += mysql-q4m
     SUBDIR += mysql-udf
     SUBDIR += mysql2odbc

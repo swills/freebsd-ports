@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/cups-cloud-print/Makefile 458651 2018-01-10 15:39:39Z amdmi3 $
+# $FreeBSD: head/print/cups-cloud-print/Makefile 460798 2018-02-03 09:02:13Z amdmi3 $
 
 PORTNAME=	cups-cloud-print
 PORTVERSION=	20160502
@@ -39,6 +39,6 @@ post-patch:
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	(cd ${WRKSRC} && ${INSTALL_DATA} README.md ${STAGEDIR}${DOCSDIR})
+	${INSTALL_DATA} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

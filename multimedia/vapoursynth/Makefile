@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/vapoursynth/Makefile 459166 2018-01-16 13:01:30Z jbeich $
+# $FreeBSD: head/multimedia/vapoursynth/Makefile 460607 2018-02-01 15:10:31Z jbeich $
 
 PORTNAME=	vapoursynth
-PORTVERSION=	R42.1
+PORTVERSION=	R43
 CATEGORIES=	multimedia
 
 MAINTAINER=	jbeich@FreeBSD.org

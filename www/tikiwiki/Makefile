@@ -1,10 +1,10 @@
 # Created by: Babak Farrokhi <babak@farrokhi.net>
-# $FreeBSD: head/www/tikiwiki/Makefile 453522 2017-11-05 08:11:44Z joneum $
+# $FreeBSD: head/www/tikiwiki/Makefile 460622 2018-02-01 18:22:43Z joneum $
 
 PORTNAME=	tikiwiki
-DISTVERSION=	17.1
+DISTVERSION=	18.0
 CATEGORIES=	www
-MASTER_SITES=	SF/${PORTNAME}/Tiki_17.x_Zeta_Bootis/${PORTVERSION}/
+MASTER_SITES=	SF/${PORTNAME}/Tiki_18.x_Alcyone/${PORTVERSION}/
 DISTNAME=	tiki-${PORTVERSION}
 
 MAINTAINER=	joneum@FreeBSD.org

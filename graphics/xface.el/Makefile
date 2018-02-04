@@ -1,13 +1,13 @@
 # Created by: Yoichi NAKAYAMA <yoichi@FreeBSD.org>
-# $FreeBSD: head/graphics/xface.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/graphics/xface.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	xface.el
 PORTVERSION=	1.3.6.24
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	graphics elisp
 MASTER_SITES=	http://www.jpl.org/ftp/pub/elisp/ \
 		ftp://ftp.jpl.org/pub/elisp/
-PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 DISTNAME=	x-face-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
@@ -17,7 +17,8 @@ LICENSE=	GPLv2+
 
 RUN_DEPENDS=	compface:mail/faces
 
-USE_EMACS=	yes
+USES=		emacs
+EMACS_FLAVORS_EXCLUDE=	devel_full devel_nox # fail to build
 
 LISP_FILES=	x-face
 LISPDIR=	${EMACS_VERSION_SITE_LISPDIR}/x-face

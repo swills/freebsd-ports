@@ -1,8 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/graphics/derelict-gl3/Makefile 446655 2017-07-26 13:16:39Z mat $
+# $FreeBSD: head/graphics/derelict-gl3/Makefile 460657 2018-02-02 00:16:51Z acm $
 
 PORTNAME=	derelict-gl3
 PORTVERSION=	1.0.23
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics
 

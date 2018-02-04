@@ -1,7 +1,6 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/multimedia/fpc-libvlc/Makefile 447304 2017-08-03 23:40:28Z acm $
+# $FreeBSD: head/multimedia/fpc-libvlc/Makefile 460558 2018-02-01 07:14:41Z acm $
 
-PORTREVISION=	1
 CATEGORIES=	multimedia lang
 PKGNAMESUFFIX=	-libvlc
 

@@ -1,11 +1,12 @@
 # Created by: Max N. Boyarov <m.boyarov@bsd.by>
-# $FreeBSD: head/net-im/jabber.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/net-im/jabber.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	jabber.el
 PORTVERSION=	0.8.92
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net-im elisp
 MASTER_SITES=	SF/emacs-jabber/emacs-jabber%20beta%20versions/${PORTVERSION}
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 DISTNAME=		emacs-jabber-${PORTVERSION}
 
 MAINTAINER=	max.n.boyarov@gmail.com
@@ -13,19 +14,16 @@ COMMENT=	Minimal jabber client for [X]Emacs
 
 RUN_DEPENDS=	${LOCALBASE}/bin/gnutls-cli:security/gnutls
 
-INFO=		emacs-jabber
-PORTDOCS+=	AUTHORS NEWS README
-
-USE_EMACS=	yes
+USES=		emacs gmake
 GNU_CONFIGURE=	yes
-USES=		gmake
+
+INFO=		emacs-jabber
+PORTDOCS=	AUTHORS NEWS README
+
+CONFIGURE_ARGS=	--with-lispdir=${PREFIX}/${EMACS_VERSION_SITE_LISPDIR}/emacs-jabber \
+		--disable-schemas-install
 
 OPTIONS_DEFINE=	DOCS
-
-CONFIGURE_ARGS+=	--with-lispdir=${PREFIX}/${EMACS_VERSION_SITE_LISPDIR}/emacs-jabber \
-			--disable-schemas-install
-
-.include <bsd.port.options.mk>
 
 pre-configure:
 	${REINPLACE_CMD} -e 's/jabber\.info/emacs-jabber.info/' \
@@ -40,7 +38,7 @@ pre-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/${EMACS_VERSION_SITE_LISPDIR}/emacs-jabber
 
 post-install:
-		${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for doc in ${PORTDOCS}
 		${INSTALL_DATA} ${WRKSRC}/${doc} ${STAGEDIR}${DOCSDIR}/
 .endfor

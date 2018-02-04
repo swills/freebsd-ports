@@ -1,8 +1,8 @@
 # Created by: John Merryweather Cooper <coop9211@uidaho.edu>
-# $FreeBSD: head/lang/fpc-base/Makefile 447304 2017-08-03 23:40:28Z acm $
+# $FreeBSD: head/lang/fpc-base/Makefile 460558 2018-02-01 07:14:41Z acm $
 
 PORTNAME=	base
-PORTVERSION=	3.0.2
+PORTVERSION=	3.0.4
 CATEGORIES=	lang
 PKGNAMEPREFIX=	fpc-
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 458784 2018-01-11 20:29:52Z adamw $
+# $FreeBSD: head/editors/Makefile 460621 2018-02-01 18:03:09Z jrm $
 #
 
     COMMENT = Editors
@@ -36,7 +36,6 @@
     SUBDIR += editorconfig-core-c
     SUBDIR += emacs
     SUBDIR += emacs-devel
-    SUBDIR += emacs-nox11
     SUBDIR += encryptpad
     SUBDIR += fileobj
     SUBDIR += flim
@@ -77,6 +76,7 @@
     SUBDIR += lazarus-lcl-gtk2
     SUBDIR += lazarus-lcl-nogui
     SUBDIR += lazarus-lcl-qt
+    SUBDIR += lazarus-lcl-qt5
     SUBDIR += lazarus-lcl-units
     SUBDIR += le
     SUBDIR += leafpad

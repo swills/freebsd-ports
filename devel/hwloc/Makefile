@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/hwloc/Makefile 451721 2017-10-10 21:31:30Z linimon $
+# $FreeBSD: head/devel/hwloc/Makefile 460636 2018-02-01 21:20:00Z feld $
 
 PORTNAME=	hwloc
 PORTVERSION=	1.11.7
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.open-mpi.org/software/hwloc/v${PORTVERSION:R}/downloads/ \
 		http://icl.cs.utk.edu/open-mpi/software/hwloc/v${PORTVERSION:R}/downloads/
@@ -22,6 +23,7 @@ CONFIGURE_ARGS=	--enable-static \
 		--disable-gl
 INSTALL_TARGET=	install-strip
 USES=		iconv libtool pathfix pkgconfig tar:bzip2
+USE_GCC=	any
 USE_LDCONFIG=	yes
 USE_GNOME=	libxml2
 

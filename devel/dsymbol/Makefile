@@ -1,9 +1,8 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/dsymbol/Makefile 446655 2017-07-26 13:16:39Z mat $
+# $FreeBSD: head/devel/dsymbol/Makefile 460647 2018-02-01 22:30:58Z acm $
 
 PORTNAME=	dsymbol
-PORTVERSION=	0.2.5
-DISTVERSIONPREFIX=	v
+DISTVERSION=	0.3.0-beta1
 CATEGORIES=	devel
 
 MAINTAINER=	acm@FreeBSD.org
@@ -18,6 +17,7 @@ BUILD_DEPENDS=	ldmd2:lang/ldc \
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	dlang-community
+GH_TAGNAME=	v${DISTVERSION:S/beta/beta./}
 
 DUB_CMD=	${LOCALBASE}/bin/dub build --build=release
 D_INCLUDE_DIR=	${PREFIX}/include/d

@@ -1,9 +1,10 @@
 # Created by: Nicola Stanislao Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/deskutils/flameshot/Makefile 459627 2018-01-21 20:14:47Z nivit $
+# $FreeBSD: head/deskutils/flameshot/Makefile 460819 2018-02-03 15:09:40Z rakuco $
 
 PORTNAME=	flameshot
 PORTVERSION=	0.5.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	deskutils
 
 MAINTAINER=	nivit@FreeBSD.org
@@ -17,10 +18,10 @@ GH_ACCOUNT=	lupoDharkael
 INSTALL_ICONS=	yes
 
 USES=		qmake
-USE_GCC=	yes
 USE_GITHUB=	yes
 USE_GL=		gl
-USE_QT5=	core dbus gui linguist network widgets
+USE_QT5=	core dbus gui linguist network widgets \
+		buildtools_build
 
 post-patch:
 		@${REINPLACE_CMD} -e 's,%%LOCALBASE%%,${LOCALBASE},1' \

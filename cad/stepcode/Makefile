@@ -1,5 +1,5 @@
 # Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/cad/stepcode/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/cad/stepcode/Makefile 460682 2018-02-02 09:48:48Z danfe $
 
 PORTNAME=	stepcode
 PORTVERSION=	0.8
@@ -22,6 +22,10 @@ CMAKE_ARGS+=	-DSC_INSTALL_PREFIX=${PREFIX} \
 		-DSC_BUILD_TYPE=Release
 
 MANDIRS=	${PREFIX}/man
+
+post-patch:
+	@${REINPLACE_CMD} -e 's,( JudyValue ) 0,nullptr,' \
+		${WRKSRC}/src/base/judy/src/judy*Array.h
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/schema_scanner

@@ -1,8 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/print/derelict-ft/Makefile 446655 2017-07-26 13:16:39Z mat $
+# $FreeBSD: head/print/derelict-ft/Makefile 460658 2018-02-02 00:19:30Z acm $
 
 PORTNAME=	derelict-ft
 PORTVERSION=	1.1.3
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	print
 

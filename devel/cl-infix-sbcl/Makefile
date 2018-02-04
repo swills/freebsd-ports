@@ -1,9 +1,9 @@
 # Created by: Pedro F Giffuni
-# $FreeBSD: head/devel/cl-infix-sbcl/Makefile 458423 2018-01-08 14:44:54Z krion $
+# $FreeBSD: head/devel/cl-infix-sbcl/Makefile 460521 2018-01-31 17:58:27Z krion $
 
 PORTNAME=	infix
 PORTVERSION=	19960628
-PORTREVISION=	20
+PORTREVISION=	21
 CATEGORIES=	devel lisp
 PKGNAMEPREFIX=	cl-
 DISTFILES=	# none

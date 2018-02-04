@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-msgpax/Makefile 455768 2017-12-08 03:20:47Z olgeni $
+# $FreeBSD: head/devel/elixir-msgpax/Makefile 460714 2018-02-02 16:36:48Z olgeni $
 
 PORTNAME=	msgpax
-PORTVERSION=	2.1.0
+PORTVERSION=	2.1.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

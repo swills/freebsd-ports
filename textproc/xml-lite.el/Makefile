@@ -1,19 +1,21 @@
 # Created by: Kimura Fuyuki <fuyuki@mj.0038.net>
-# $FreeBSD: head/textproc/xml-lite.el/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/textproc/xml-lite.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	xml-lite.el
 PORTVERSION=	1.1
-PORTREVISION=	9
+PORTREVISION=	10
 PORTEPOCH=	1
 CATEGORIES=	textproc elisp
 MASTER_SITES=	http://dogbiscuit.org/mdub/software/
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	# empty
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple XML-editing for GNU Emacs
 
-USE_EMACS=	yes
+USES=		emacs
+
 NO_WRKSUBDIR=	yes
 EXTRACT_CMD=	${CP}
 EXTRACT_BEFORE_ARGS=

@@ -1,8 +1,9 @@
 # Created by: Beñat Gonzalez Etxepare <bbtruk@users.sourceforge.net>
-# $FreeBSD: head/x11-fm/doublecmd/Makefile 457653 2017-12-30 23:36:07Z swills $
+# $FreeBSD: head/x11-fm/doublecmd/Makefile 460566 2018-02-01 07:23:24Z acm $
 
 PORTNAME=	doublecmd
 PORTVERSION=	0.8.1
+PORTREVISION=	1
 CATEGORIES=	x11-fm
 MASTER_SITES=	SF/${PORTNAME}/Double%20Commander%20Source
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
@@ -29,7 +30,7 @@ DOS2UNIX_FILES=	src/dmhelpmanager.pas
 PLIST=		${WRKDIR}/pkg-plist
 
 PROJECT_FILE=	src/doublecmd.lpi
-LAZARUS_VER=	1.6.4
+LAZARUS_VER=	1.8.0
 LAZBUILD_CMD=	${LOCALBASE}/bin/lazbuild -d --pcp=${WRKSRC}/tmppcp
 LAZARUS_DIR=	${LOCALBASE}/share/lazarus-${LAZARUS_VER}
 MAKE_ENV+=	LDVER=ld.bfd # for DragonFly

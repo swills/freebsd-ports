@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/cl-trivial-gray-streams-sbcl/Makefile 458423 2018-01-08 14:44:54Z krion $
+# $FreeBSD: head/devel/cl-trivial-gray-streams-sbcl/Makefile 460521 2018-01-31 17:58:27Z krion $
 
 PORTNAME=	trivial-gray-streams
 PORTVERSION=	2008.11.02
-PORTREVISION=	17
+PORTREVISION=	18
 CATEGORIES=	devel lisp
 PKGNAMEPREFIX=	cl-
 DISTFILES=	# none

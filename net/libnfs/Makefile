@@ -1,13 +1,11 @@
 # Created by: Manuel Creach <manuel.creach@icloud.com>
-# $FreeBSD: head/net/libnfs/Makefile 396103 2015-09-04 16:02:16Z mat $
+# $FreeBSD: head/net/libnfs/Makefile 460581 2018-02-01 09:09:53Z gahr $
 
 PORTNAME=	libnfs
-PORTVERSION=	1.3.0
-PORTREVISION=	1
+PORTVERSION=	2.0.0
 CATEGORIES=	net
-MASTER_SITES=	GHC
 
-MAINTAINER=	manuel.creach@icloud.com
+MAINTAINER=	snoe925@gmail.com
 COMMENT=	Client library for accessing NFS shares over a network
 
 LICENSE=	LGPL21 GPLv3
@@ -19,6 +17,9 @@ USES=		autoreconf gmake libtool pkgconfig
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	sahlberg
+GH_TAGNAME=	${PORTNAME}-${PORTVERSION}
+
+CONFIGURE_ARGS=	--disable-werror
 
 post-patch:
 	${REINPLACE_CMD} 's|$$(libdir)/\(pkgconfig\)|$$(prefix)/libdata/\1|' \

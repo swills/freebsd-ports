@@ -1,12 +1,12 @@
 # Created by: Shigeyuki Fukushima <shige@FreeBSD.org>
-# $FreeBSD: head/editors/psgml/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/editors/psgml/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	psgml
 PORTVERSION=	1.4.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	editors elisp
 MASTER_SITES=	SF/${PORTNAME}/ALPHA%20${PORTNAME}/${PORTVERSION}
-PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME}-1.3.2
 
 PATCH_SITES=	LOCAL/hrs
@@ -17,7 +17,8 @@ COMMENT=	Major mode for editing SGML and XML documents for Emacs
 
 LICENSE=	GPLv2
 
-USE_EMACS=	yes
+USES=		emacs
+
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS=	--lispdir=${PSGML_LISPDIR}
 CONFIGURE_ENV=	EMACS=${EMACS_CMD}

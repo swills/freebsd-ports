@@ -1,4 +1,4 @@
-# $FreeBSD: head/accessibility/speech-dispatcher/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/accessibility/speech-dispatcher/Makefile 460827 2018-02-03 17:06:46Z amdmi3 $
 
 PORTNAME=	speech-dispatcher
 PORTVERSION=	0.8.6
@@ -91,7 +91,8 @@ post-install:
 PORTSCOUT=	ignore:1
 
 NO_ARCH=	yes
-USES+=		python:3.3+
+USES+=		python:3.3+ shebangfix
+SHEBANG_FILES=	src/api/python/speechd_config/spd-conf
 USE_PYTHON=	flavors
 LIB_DEPENDS+=	libspeechd.so:accessibility/speech-dispatcher
 RUN_DEPENDS+=	${PYTHON_SITELIBDIR}/xdg/__init__.py:devel/py-xdg@${FLAVOR}

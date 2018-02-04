@@ -1,12 +1,12 @@
 # Created by: KIMURA Yasuhiro <yasu@utahime.org>
-# $FreeBSD: head/textproc/yaml-mode.el/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/textproc/yaml-mode.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	yaml-mode.el
 PORTVERSION=	0.0.13
-PORTREVISION=	2
 DISTVERSIONPREFIX=	v
+PORTREVISION=	3
 CATEGORIES=	textproc elisp
-PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
 MAINTAINER=	yasu@utahime.org
 COMMENT=	Simple major mode to edit YAML file for Emacsen
@@ -14,11 +14,10 @@ COMMENT=	Simple major mode to edit YAML file for Emacsen
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
+USES=		emacs
 USE_GITHUB=	yes
 GH_ACCOUNT=	yoshiki
 GH_PROJECT=	yaml-mode
-
-USE_EMACS=	yes
 
 MAKE_ENV=	LISPDIR=${LISPDIR}
 

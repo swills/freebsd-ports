@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/libdparse/Makefile 446655 2017-07-26 13:16:39Z mat $
+# $FreeBSD: head/devel/libdparse/Makefile 460645 2018-02-01 22:23:04Z acm $
 
 PORTNAME=	libdparse
-DISTVERSION=	0.7.1-beta6
+DISTVERSION=	0.8.0-alpha1
 CATEGORIES=	devel
 
 MAINTAINER=	acm@FreeBSD.org
@@ -15,10 +15,8 @@ BUILD_DEPENDS=	ldmd2:lang/ldc \
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	dlang-community
-# FIXME: Remove this once it goes out of beta.
-# Side note, 0.7.1-beta.6 was a perfectly reasonable version to be used in
-# DISTVERSION.
-GH_TAGNAME=	v${DISTVERSION:S/beta/beta./}
+GH_TAGNAME=	v${DISTVERSION:S/alpha/alpha./}
+#GH_TAGNAME=	v${PORTVERSION}
 
 DUB_CMD=	${LOCALBASE}/bin/dub build --build=release
 D_INCLUDE_DIR=	${PREFIX}/include/d

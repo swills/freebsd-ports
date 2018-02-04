@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 460155 2018-01-28 01:39:12Z rene $
+# $FreeBSD: head/audio/Makefile 460844 2018-02-03 20:03:23Z yuri $
 #
 
     COMMENT = Audio tools
@@ -50,6 +50,7 @@
     SUBDIR += autocd
     SUBDIR += autotalent
     SUBDIR += autozen
+    SUBDIR += avldrums-lv2
     SUBDIR += aylet
     SUBDIR += baresip
     SUBDIR += baudline
@@ -560,6 +561,7 @@
     SUBDIR += ncmpc
     SUBDIR += ncmpcpp
     SUBDIR += nekobee
+    SUBDIR += noise-repellent-lv2
     SUBDIR += normalize
     SUBDIR += nosefart
     SUBDIR += nspmod
@@ -661,7 +663,6 @@
     SUBDIR += py-hsaudiotag
     SUBDIR += py-id3
     SUBDIR += py-karaoke
-    SUBDIR += py-mad
     SUBDIR += py-mpd
     SUBDIR += py-mpd2
     SUBDIR += py-musicbrainz2
@@ -675,6 +676,7 @@
     SUBDIR += py-pyaudio
     SUBDIR += py-pylast
     SUBDIR += py-pyliblo
+    SUBDIR += py-pymad
     SUBDIR += py-pysndfile
     SUBDIR += py-shout
     SUBDIR += py-soundcloud

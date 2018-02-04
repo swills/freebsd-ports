@@ -1,5 +1,5 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/sysutils/pbi-manager/Makefile 430454 2017-01-03 11:01:05Z mat $
+# $FreeBSD: head/sysutils/pbi-manager/Makefile 460684 2018-02-02 09:50:10Z amdmi3 $
 
 PORTNAME=	pbi-manager
 PORTVERSION=	1456333648
@@ -13,8 +13,9 @@ LICENSE=	BSD3CLAUSE
 RUN_DEPENDS=	${LOCALBASE}/share/pcbsd/scripts/functions.sh:sysutils/pcbsd-libsh
 
 WRKSRC_SUBDIR=	src-sh/pbi-manager
-USES=		pkgconfig tar:xz
+USES=		pkgconfig
 NO_BUILD=	yes
+NO_ARCH=	yes
 MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
 
 USE_GITHUB=	yes

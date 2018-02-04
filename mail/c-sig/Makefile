@@ -1,12 +1,12 @@
 # Created by: KIMURA Yasuhiro <yasu@utahime.org>
-# $FreeBSD: head/mail/c-sig/Makefile 449885 2017-09-15 05:52:14Z sunpoet $
+# $FreeBSD: head/mail/c-sig/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	c-sig
 PORTVERSION=	3.8
-PORTREVISION=	18
+PORTREVISION=	19
 CATEGORIES=	mail elisp
 MASTER_SITES=	LOCAL/tota/${PORTNAME}
-PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME}.${PORTVERSION}
 
 MAINTAINER=	yasu@utahime.org
@@ -14,7 +14,7 @@ COMMENT=	Signature insertion tool for Emacs
 
 LICENSE=	GPLv2+
 
-USE_EMACS=	yes
+USES=		emacs
 
 NO_WRKSUBDIR=	yes
 

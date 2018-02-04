@@ -1,7 +1,6 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/graphics/fpc-imagemagick/Makefile 450852 2017-09-28 15:36:31Z kwm $
+# $FreeBSD: head/graphics/fpc-imagemagick/Makefile 460558 2018-02-01 07:14:41Z acm $
 
-PORTREVISION=	2
 CATEGORIES=	graphics lang
 PKGNAMESUFFIX=	-imagemagick
 

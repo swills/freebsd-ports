@@ -1,13 +1,13 @@
 # Created by: Kimura Fuyuki <fuyuki@mj.0038.net>
-# $FreeBSD: head/textproc/dictionary/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/textproc/dictionary/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	dictionary
 PORTVERSION=	1.8.7
-PORTREVISION=	19
+PORTREVISION=	20
 CATEGORIES=	textproc net elisp
 MASTER_SITES=	http://me.in-berlin.de/~myrkr/dictionary/ \
 		http://bsdchat.com/dist/dryice/
-PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Dictionary client for Emacs
@@ -15,7 +15,7 @@ COMMENT=	Dictionary client for Emacs
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/GPL
 
-USE_EMACS=	yes
+USES=		emacs
 
 LISPDIR=	${PREFIX}/${EMACS_VERSION_SITE_LISPDIR}/${PORTNAME}
 ELS=		connection.el dictionary.el link.el

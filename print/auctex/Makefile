@@ -1,22 +1,22 @@
 # Created by: Martin Kammerhofer
-# $FreeBSD: head/print/auctex/Makefile 449697 2017-09-12 15:38:56Z ashish $
+# $FreeBSD: head/print/auctex/Makefile 460621 2018-02-01 18:03:09Z jrm $
 
 PORTNAME=	auctex
 PORTVERSION=	11.90
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	print elisp
 MASTER_SITES=	GNU
-PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
+PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Integrated environment for writing LaTeX using GNU Emacs
 
 LICENSE=	GPLv3
 
-USES=		ghostscript gmake
-USE_EMACS=	yes
+USES=		emacs ghostscript gmake
 USE_TEX=	latex texhash
 TEXHASHDIRS=	${TEXMFDIR}
+
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-lispdir=${PREFIX}/${EMACS_VERSION_SITE_LISPDIR} \
 	--with-auto-dir=${PREFIX}/${EMACS_VERSION_SITE_LISPDIR}/auctex/auto \

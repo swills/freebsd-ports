@@ -1,9 +1,9 @@
 # Created by: Jens Holmqvist <zparta@hispan.se>
-# $FreeBSD: head/irc/irssi-fish/Makefile 438884 2017-04-19 15:04:59Z tcberner $
+# $FreeBSD: head/irc/irssi-fish/Makefile 460717 2018-02-02 17:37:28Z brd $
 
 PORTNAME=	irssi-fish
 DISTVERSION=	1.4.20160122
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	irc security
 
 MAINTAINER=	ashish@FreeBSD.org

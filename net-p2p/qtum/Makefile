@@ -1,5 +1,5 @@
 # Created by: Vasil Dimov <vd@FreeBSD.org>
-# $FreeBSD: head/net-p2p/qtum/Makefile 459646 2018-01-22 12:27:41Z vd $
+# $FreeBSD: head/net-p2p/qtum/Makefile 460468 2018-01-31 12:23:11Z vd $
 
 PORTNAME=	qtum
 PORTVERSION=	0.14.13
@@ -10,6 +10,8 @@ MAINTAINER=	vd@FreeBSD.org
 COMMENT=	PoS cryptocurrency that can execute smart contract as part of an UTXO
 
 LICENSE=	GPLv3
+
+BROKEN_i386=	does not compile: invalid operand for instruction ... ASJ(jnz, 0, b) ... "jnz"
 
 BUILD_DEPENDS=	libzmq4>0:net/libzmq4
 RUN_DEPENDS=	libzmq4>0:net/libzmq4

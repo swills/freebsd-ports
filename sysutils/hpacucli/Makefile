@@ -1,5 +1,5 @@
 # Created by: SriSaiGanesh
-# $FreeBSD: head/sysutils/hpacucli/Makefile 430454 2017-01-03 11:01:05Z mat $
+# $FreeBSD: head/sysutils/hpacucli/Makefile 460552 2018-02-01 05:28:21Z linimon $
 
 PORTNAME=	hpacucli
 PORTVERSION=	7.50
@@ -9,6 +9,9 @@ MASTER_SITES=	LOCAL/brooks
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	HP configuration utility for Smart Array RAID cards
+
+ONLY_FOR_ARCHS=		amd64 i386
+ONLY_FOR_ARCHS_REASON=	relies on compatXx features that are x86-specific
 
 RUN_DEPENDS=	compat4x-i386>0:misc/compat4x \
 		compat5x-${ARCH}>0:misc/compat5x

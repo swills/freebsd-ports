@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/japanese/migemo/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/japanese/migemo/Makefile 460732 2018-02-02 19:50:59Z jrm $
 
 PORTNAME=	migemo
 PORTVERSION=	0.40
@@ -11,6 +11,11 @@ MASTER_SITES=	http://0xcc.net/migemo/ \
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${SKKDIC_FILE}.bz2:skkdic
 DIST_SUBDIR=	migemo
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
+
+.if defined(SLAVE_PORT)
+DEPRECATED=	Unmaintained
+EXPIRATION_DATE=	2018-03-01
+.endif
 
 MAINTAINER=	nobutaka@FreeBSD.org
 COMMENT?=	Japanese incremental search tool
@@ -25,7 +30,7 @@ RUN_DEPENDS=	${RUBY_SITELIBDIR}/romkan.rb:japanese/ruby-romkan \
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-rubydir=${RUBY_SITELIBDIR}
-USES=		autoreconf
+USES+=		autoreconf
 USE_RUBY=	yes
 
 .if !defined(SLAVE_PORT)

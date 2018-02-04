@@ -1,8 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/sysutils/ncdu/Makefile 420842 2016-08-25 11:34:08Z pawel $
+# $FreeBSD: head/sysutils/ncdu/Makefile 460495 2018-01-31 16:19:08Z pawel $
 
 PORTNAME=	ncdu
-PORTVERSION=	1.12
+PORTVERSION=	1.13
 CATEGORIES=	sysutils
 MASTER_SITES=	http://dev.yorhel.nl/download/
 

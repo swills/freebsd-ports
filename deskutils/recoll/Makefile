@@ -1,9 +1,9 @@
 # Created by: J.F. Dockes <jean-francois.dockes@wanadoo.fr>
-# $FreeBSD: head/deskutils/recoll/Makefile 460009 2018-01-26 17:08:59Z amdmi3 $
+# $FreeBSD: head/deskutils/recoll/Makefile 460612 2018-02-01 15:28:25Z amdmi3 $
 
 PORTNAME=	recoll
 PORTVERSION=	1.23.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils
 MASTER_SITES=	http://www.lesbonscomptes.com/recoll/
 
@@ -27,6 +27,7 @@ SHEBANG_FILES=	filters/*.py desktop/hotrecoll.py \
 		filters/rclics filters/rclinfo filters/rclkar \
 		filters/rclpython filters/rclrar filters/rcltar \
 		filters/rclwar filters/rclzip
+USE_PYTHON=	py3kplist
 USE_GNOME=	libxslt:run
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-pic

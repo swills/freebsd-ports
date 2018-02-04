@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/www/aws/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/www/aws/Makefile 460619 2018-02-01 17:29:09Z amdmi3 $
 
 PORTNAME=	aws
 PORTVERSION=	17.1
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	gprbuild:devel/gprbuild \
 		gnatpython>=20101207:devel/gnatpython
 RUN_DEPENDS=	xmlada>=4.4:textproc/xmlada
 
-USES=		ada:run gmake python shebangfix tar:bzip2
+USES=		ada:run gmake python shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	AdaCore
 GH_TUPLE=	AdaCore:templates-parser:${PORTVERSION}:tp/templates_parser

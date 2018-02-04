@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/Makefile 457251 2017-12-25 19:05:36Z jrm $
+# $FreeBSD: head/japanese/Makefile 460621 2018-02-01 18:03:09Z jrm $
 #
 
     COMMENT = Japanese support
@@ -169,7 +169,7 @@
     SUBDIR += mg
     SUBDIR += mh
     SUBDIR += migemo
-    SUBDIR += migemo-emacs23
+    SUBDIR += migemo-emacs
     SUBDIR += migemo.el
     SUBDIR += mime_pls
     SUBDIR += ming

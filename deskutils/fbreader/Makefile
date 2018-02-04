@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/deskutils/fbreader/Makefile 423014 2016-09-30 19:24:30Z tijl $
+# $FreeBSD: head/deskutils/fbreader/Makefile 460683 2018-02-02 09:49:17Z amdmi3 $
 
 PORTNAME=	fbreader
 PORTVERSION=	0.99.6
@@ -27,7 +27,7 @@ STATUS=		debug
 STATUS=		release
 .endif
 
-USES=		compiler gmake iconv localbase pkgconfig sqlite tar:tgz
+USES=		compiler gmake iconv localbase pkgconfig sqlite
 USE_LDCONFIG=	yes
 
 INSTALL_TARGET=	do_install

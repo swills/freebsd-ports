@@ -1,8 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/lang/dlang-tools/Makefile 446655 2017-07-26 13:16:39Z mat $
+# $FreeBSD: head/lang/dlang-tools/Makefile 460659 2018-02-02 00:20:36Z acm $
 
 PORTNAME=	tools
-PORTVERSION=	2.075.0
+PORTVERSION=	2.078.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	lang
 PKGNAMEPREFIX=	dlang-

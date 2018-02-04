@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-JavaScript-Packer/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-JavaScript-Packer/Makefile 460740 2018-02-02 19:54:48Z sunpoet $
 
 PORTNAME=	JavaScript-Packer
-PORTVERSION=	2.03
+PORTVERSION=	2.04
 CATEGORIES=	textproc www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
