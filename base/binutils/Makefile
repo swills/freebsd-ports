@@ -19,7 +19,8 @@ PLIST=		${.CURDIR}/pkg-plist.${TARGET_ARCH}
 .endif
 
 TARGET_ARCH=	${CROSS_TOOLCHAIN:C,-.*$,,}
-BUTARGET=	${TARGET_ARCH}-${OPSYS:tl}
+BUTARGET=	${TARGET_ARCH}-unknown-${OPSYS:tl}${OSREL}
+
 CONFIGURE_ARGS+=	--disable-host-shared
 PREFIX=	/usr
 
