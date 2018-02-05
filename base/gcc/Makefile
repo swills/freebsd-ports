@@ -30,7 +30,10 @@ LICENSE_COMB=	multi
 
 PREFIX=		/usr
 CONFIGURE_ENV=	gcc_gxx_include_dir="/usr/include/c++/v1" \
-		NM=/usr/bin/nm NM_FOR_TARGET=/usr/bin/nm
+		NM=/usr/bin/nm \
+		AS_FOR_TARGET=/usr/bin/as \
+		LD_FOR_TARGET=/usr/bin/ld \
+		NM_FOR_TARGET=/usr/bin/nm
 TARGET_ARCH=	${CROSS_TOOLCHAIN:C,-.*$,,}
 GCC_TARGET=	${TARGET_ARCH}-unknown-${OPSYS:tl}${OSREL}
 
@@ -51,8 +54,6 @@ CONFIGURE_ARGS+=	\
 		--enable-languages=c,c++ \
 		--disable-nls \
 		--without-headers \
-		--with-ld=/usr/bin/ld \
-		--with-as=/usr/bin/as \
 		--with-build-sysroot=${CROSS_SYSROOT} \
 		-with-pkgversion="GNU Collection for FreeBSD"
 
