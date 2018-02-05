@@ -111,6 +111,7 @@ post-install:
 .endif
 	@if [ -d ${STAGEDIR}${PREFIX}/${INFO_PATH} ] ; then rm -rf ${STAGEDIR}${PREFIX}/${INFO_PATH}; fi
 	${LN} -fs ../../bin/${BUTARGET}-size ${STAGEDIR}${PREFIX}/${BUTARGET}/bin/size
+.if defined(CROSS_TOOLCHAIN)
 	${LN} -fs ${BUTARGET}-freebsd-as ${STAGEDIR}/usr/bin/as
 	${LN} -fs ${BUTARGET}-freebsd-ld ${STAGEDIR}/usr/bin/ld
 	${LN} -fs ${BUTARGET}-freebsd-ld.bfd ${STAGEDIR}/usr/bin/ld.bfd
@@ -120,6 +121,7 @@ post-install:
 	${LN} -fs ${BUTARGET}-freebsd-ld.1.gz ${STAGEDIR}/${MANDIR}1/ld.1.gz
 	${LN} -fs ${BUTARGET}-freebsd-objcopy.1.gz ${STAGEDIR}/${MANDIR}1/objcopy.1.gz
 	${LN} -fs ${BUTARGET}-freebsd-objdump.1.gz ${STAGEDIR}/${MANDIR}1/objdump.1.gz
+.endif
 .endif
 .for tool in ${BUREMOVE}
 	@${RM} ${STAGEDIR}${PREFIX}/bin/${BUTARGET}-${tool} \
