@@ -36,8 +36,6 @@ CONFIGURE_ENV=	gcc_gxx_include_dir="/usr/include/c++/v1" \
 		NM_FOR_TARGET=/usr/bin/nm
 TARGET_ARCH=	${CROSS_TOOLCHAIN:C,-.*$,,}
 GCC_TARGET=	${TARGET_ARCH}-unknown-${OPSYS:tl}${OSREL}
-
-
 USES=	gmake libtool tar:bzip2 makeinfo
 PLIST_SUB=	TARGETARCH=${TARGET_ARCH} \
 		OPSYS=${OPSYS:tl} \
