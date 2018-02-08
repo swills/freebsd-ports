@@ -9250,7 +9250,6 @@
 %%WWWDIR%%/spec/features/ci_lint_spec.rb
 %%WWWDIR%%/spec/features/commits_spec.rb
 %%WWWDIR%%/spec/features/container_registry_spec.rb
-%%WWWDIR%%/spec/features/copy_as_gfm_spec.rb
 %%WWWDIR%%/spec/features/cycle_analytics_spec.rb
 %%WWWDIR%%/spec/features/dashboard/active_tab_spec.rb
 %%WWWDIR%%/spec/features/dashboard/activity_spec.rb
@@ -9285,7 +9284,6 @@
 %%WWWDIR%%/spec/features/explore/groups_spec.rb
 %%WWWDIR%%/spec/features/explore/new_menu_spec.rb
 %%WWWDIR%%/spec/features/explore/user_explores_projects_spec.rb
-%%WWWDIR%%/spec/features/gitlab_flavored_markdown_spec.rb
 %%WWWDIR%%/spec/features/global_search_spec.rb
 %%WWWDIR%%/spec/features/group_variables_spec.rb
 %%WWWDIR%%/spec/features/groups/activity_spec.rb
@@ -9350,7 +9348,11 @@
 %%WWWDIR%%/spec/features/issues_spec.rb
 %%WWWDIR%%/spec/features/login_spec.rb
 %%WWWDIR%%/spec/features/logout_spec.rb
-%%WWWDIR%%/spec/features/markdown_spec.rb
+%%WWWDIR%%/spec/features/markdown/copy_as_gfm_spec.rb
+%%WWWDIR%%/spec/features/markdown/gitlab_flavored_markdown_spec.rb
+%%WWWDIR%%/spec/features/markdown/markdown_spec.rb
+%%WWWDIR%%/spec/features/markdown/math_spec.rb
+%%WWWDIR%%/spec/features/markdown/mermaid_spec.rb
 %%WWWDIR%%/spec/features/merge_requests/assign_issues_spec.rb
 %%WWWDIR%%/spec/features/merge_requests/award_spec.rb
 %%WWWDIR%%/spec/features/merge_requests/check_if_mergeable_with_unresolved_discussions_spec.rb
@@ -11843,6 +11845,7 @@
 %%WWWDIR%%/spec/support/shared_examples/throttled_touch.rb
 %%WWWDIR%%/spec/support/sidekiq.rb
 %%WWWDIR%%/spec/support/slack_mattermost_notifications_shared_examples.rb
+%%WWWDIR%%/spec/support/snippet_visibility.rb
 %%WWWDIR%%/spec/support/snippets_shared_examples.rb
 %%WWWDIR%%/spec/support/sorting_helper.rb
 %%WWWDIR%%/spec/support/stored_repositories.rb
