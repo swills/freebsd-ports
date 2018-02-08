@@ -1,7 +1,7 @@
 # $FreeBSD: head/devel/rubygem-peek-performance_bar/Makefile 455591 2017-12-05 16:44:09Z tz $
 
 PORTNAME=	peek-performance_bar
-PORTVERSION=	1.3.0
+PORTVERSION=	1.3.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
