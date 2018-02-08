@@ -1,5 +1,5 @@
 # Created by: Anders Nordby <anders@fix.no>
-# $FreeBSD: head/graphics/gphoto2/Makefile 458949 2018-01-14 01:23:15Z woodsb02 $
+# $FreeBSD: head/graphics/gphoto2/Makefile 460933 2018-02-04 15:08:34Z woodsb02 $
 
 PORTNAME=	gphoto2
 PORTVERSION=	2.5.15
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libexif.so:graphics/libexif \
 		libgphoto2.so:graphics/libgphoto2 \
 		libpopt.so:devel/popt
 
-USES=		gmake jpeg localbase pkgconfig tar:bzip2
+USES=		gmake jpeg pkgconfig tar:bzip2
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	POPT_CFLAGS="$$(pkg-config --cflags popt)" \
 		POPT_LIBS="$$(pkg-config --libs popt)"

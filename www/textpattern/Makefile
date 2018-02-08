@@ -1,5 +1,5 @@
 # Created by: babak@farrokhi.net
-# $FreeBSD: head/www/textpattern/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/textpattern/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	textpattern
 PORTVERSION=	4.6.2
@@ -8,6 +8,9 @@ MASTER_SITES=	http://textpattern.com/file_download/110/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Free, flexible, elegant, easy-to-use content management system
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained, all www files wrongly belongs to www user.
 
 LICENSE=	GPLv2
 

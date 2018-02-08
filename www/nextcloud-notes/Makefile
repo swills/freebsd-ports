@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/www/nextcloud-notes/Makefile 455625 2017-12-05 21:05:12Z brnrd $
+# $FreeBSD: head/www/nextcloud-notes/Makefile 461133 2018-02-07 10:13:17Z brnrd $
 
 PORTNAME=	notes
 PORTVERSION=	2.3.2
@@ -14,8 +14,9 @@ MAINTAINER=	brnrd@freebsd.org
 COMMENT=	Notes app for Nextcloud
 
 LICENSE=	AGPLv3
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	nextcloud>=12:www/nextcloud
+RUN_DEPENDS=	nextcloud>=9:www/nextcloud
 
 NO_BUILD=	yes
 NO_ARCH=	yes

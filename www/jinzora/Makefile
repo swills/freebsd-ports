@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/www/jinzora/Makefile 458818 2018-01-12 11:21:07Z rene $
+# $FreeBSD: head/www/jinzora/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	jinzora
 PORTVERSION=	3.0
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}/Jinzora%20${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Web based media streaming and management system
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained, all www files wrongly belongs to www user.
 
 IGNORE_WITH_PHP=	70 71 72
 

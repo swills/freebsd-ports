@@ -1,5 +1,5 @@
 # Created by: Wen heping <wenheping@gmail.com>
-# $FreeBSD: head/www/freeway/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/freeway/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	freeway
 PORTVERSION=	1.4.2.197
@@ -10,6 +10,9 @@ DISTNAME=	${PORTNAME}_${PORTVERSION:S,.,_,g}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Advanced Open Source eCommerce Platform
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained upstream, all www files wrongly belongs to www user.
 
 IGNORE_WITH_PHP=	70 71 72
 

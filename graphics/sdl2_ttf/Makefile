@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/sdl2_ttf/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/sdl2_ttf/Makefile 460979 2018-02-05 16:24:49Z amdmi3 $
 
 PORTNAME=	sdl2_ttf
 PORTVERSION=	2.0.14
@@ -7,7 +7,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://www.libsdl.org/projects/SDL_ttf/release/
 DISTNAME=	SDL2_ttf-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Library to use TrueType fonts to render text in SDL applications
 
 LICENSE=	ZLIB

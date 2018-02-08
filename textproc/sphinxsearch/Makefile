@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/textproc/sphinxsearch/Makefile 440902 2017-05-14 20:33:31Z matthew $
+# $FreeBSD: head/textproc/sphinxsearch/Makefile 460879 2018-02-04 09:16:23Z matthew $
 
 # Note: the Sphinx Storage Engine MySQL plugin is not supported by
 # this port.  You need a patched version of mysql server for that.
@@ -7,7 +7,7 @@
 
 PORTNAME=	sphinxsearch
 PORTVERSION=	2.2.11
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc databases
 MASTER_SITES=	http://sphinxsearch.com/files/ \
 		http://snowball.tartarus.org/dist/:libstemmer

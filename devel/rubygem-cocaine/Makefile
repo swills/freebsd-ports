@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-cocaine/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-cocaine/Makefile 460901 2018-02-04 10:13:51Z sunpoet $
 
 PORTNAME=	cocaine
-PORTVERSION=	0.5.8
+PORTVERSION=	0.6.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,7 +12,7 @@ COMMENT=	Small library for doing (command) lines
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	rubygem-climate_control>=0.0.3:devel/rubygem-climate_control
+RUN_DEPENDS=	rubygem-terrapin>=${PORTVERSION}:devel/rubygem-terrapin
 
 NO_ARCH=	yes
 USE_RUBY=	yes

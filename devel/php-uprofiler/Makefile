@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-uprofiler/Makefile 456901 2017-12-21 10:23:19Z linimon $
+# $FreeBSD: head/devel/php-uprofiler/Makefile 461158 2018-02-07 17:46:10Z mat $
 
 PORTNAME=	uprofiler
 PORTVERSION=	0.11.0.20150219
@@ -26,6 +26,6 @@ GH_TAGNAME=	483c1e5
 
 WRKSRC_SUBDIR=	extension
 USES=		php:ext
-IGNORE_WITH_PHP=	70 71
+IGNORE_WITH_PHP=	70 71 72
 
 .include <bsd.port.mk>

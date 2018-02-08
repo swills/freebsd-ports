@@ -1,8 +1,9 @@
 # Created by: Harald Wille <harald.wille@students.jku.at>
-# $FreeBSD: head/misc/wmweather+/Makefile 459850 2018-01-24 18:26:58Z rm $
+# $FreeBSD: head/misc/wmweather+/Makefile 461116 2018-02-06 23:49:44Z dbaio $
 
 PORTNAME=	wmweather+
 PORTVERSION=	2.17
+PORTREVISION=	1
 CATEGORIES=	misc windowmaker geography
 MASTER_SITES=	SF/wmweatherplus/wmweather%2B/ \
 		SF/nemysisfreebsdp/misc/:icons
@@ -54,11 +55,14 @@ WM_LIB_DEPENDS=		libWMaker.so:x11-wm/windowmaker
 WM_LIB_DEPENDS_OFF=	libwraster.so:x11-wm/libwraster
 
 post-patch:
-	@${REINPLACE_CMD} -e 's| __THROW __attribute__ ((__noreturn__))|| ; \
-		s|http://www.nws.noaa.gov/tg/siteloc.shtml|http://www.nws.noaa.gov/tg/siteloc.php|' \
+	@${REINPLACE_CMD} \
+		-e 's| __THROW __attribute__ ((__noreturn__))||' \
+		-e 's|http://www.nws.noaa.gov/tg/siteloc.shtml|http://www.nws.noaa.gov/tg/siteloc.php|' \
+		-e 's|"/etc/wmweather+.conf"|"${PREFIX}/etc/wmweather+.conf"|' \
 		${WRKSRC}/${PORTNAME}.c
-	@${REINPLACE_CMD} -e \
-		's|http://www.nws.noaa.gov/tg/siteloc.shtml|http://www.nws.noaa.gov/tg/siteloc.php|' \
+	@${REINPLACE_CMD} \
+		-e 's|http://www.nws.noaa.gov/tg/siteloc.shtml|http://www.nws.noaa.gov/tg/siteloc.php|' \
+		-e 's|/etc/wmweather+.conf|${PREFIX}/etc/wmweather+.conf|' \
 		${WRKSRC}/${PORTNAME}.1.in
 
 do-install:

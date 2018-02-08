@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/eigen3/Makefile 457660 2017-12-31 01:28:28Z yuri $
+# $FreeBSD: head/math/eigen3/Makefile 460909 2018-02-04 10:14:31Z sunpoet $
 
 PORTNAME=	eigen
 PORTVERSION=	3.3.4
@@ -12,6 +12,8 @@ COMMENT=	Lightweight library for vector and matrix math
 
 LICENSE=	LGPL21 MPL20
 LICENSE_COMB=	multi
+LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LGPL
+LICENSE_FILE_MPL20=	${WRKSRC}/COPYING.MPL2
 
 CMAKE_ARGS=	-DPKGCONFIG_INSTALL_DIR:PATH="${PREFIX}/libdata/pkgconfig"
 USES=		cmake:outsource tar:bzip2

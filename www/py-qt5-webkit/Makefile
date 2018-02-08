@@ -1,6 +1,7 @@
-# $FreeBSD: head/www/py-qt5-webkit/Makefile 457921 2018-01-02 20:21:34Z rakuco $
+# $FreeBSD: head/www/py-qt5-webkit/Makefile 460949 2018-02-04 20:56:45Z rakuco $
 
 PORTNAME=	webkit
+PORTREVISION=	1
 CATEGORIES=	www devel python
 
 MAINTAINER=	kde@FreeBSD.org

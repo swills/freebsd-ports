@@ -1,6 +1,7 @@
-# $FreeBSD: head/devel/py-qt5-designer/Makefile 457921 2018-01-02 20:21:34Z rakuco $
+# $FreeBSD: head/devel/py-qt5-designer/Makefile 460949 2018-02-04 20:56:45Z rakuco $
 
 PORTNAME=	designer
+PORTREVISION=	1
 CATEGORIES=	devel python
 
 MAINTAINER=	kde@FreeBSD.org

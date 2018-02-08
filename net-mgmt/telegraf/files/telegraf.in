@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: head/net-mgmt/telegraf/files/telegraf.in 460163 2018-01-28 10:54:46Z girgen $
+# $FreeBSD: head/net-mgmt/telegraf/files/telegraf.in 460975 2018-02-05 15:05:36Z girgen $
 
 # PROVIDE: telegraf
 # REQUIRE: DAEMON NETWORKING
@@ -32,6 +32,7 @@ start_precmd=telegraf_prestart
 pidfile="/var/run/${name}.pid"
 command=/usr/sbin/daemon
 command_args="-crP ${pidfile} %%PREFIX%%/bin/${name} ${telegraf_flags} -config=${telegraf_conf} >> /var/log/telegraf.log 2>&1"
+extra_commands="reload"
 
 telegraf_prestart() {
 # Have to empty rc_flags so they don't get passed to daemon(8)

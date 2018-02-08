@@ -1,5 +1,5 @@
 # Created by: Mark Pulford <mark@kyne.com.au>
-# $FreeBSD: head/games/burgerspace/Makefile 460384 2018-01-30 12:35:05Z martymac $
+# $FreeBSD: head/games/burgerspace/Makefile 460940 2018-02-04 16:34:17Z martymac $
 
 PORTNAME=	burgerspace
 PORTVERSION=	1.9.2
@@ -16,6 +16,7 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libflatzebra-0.1.so:devel/flatzebra
 
 USES=		pkgconfig
+USE_CXXSTD=	gnu++98
 USE_SDL=	mixer sdl
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include

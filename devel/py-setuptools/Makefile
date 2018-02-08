@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-setuptools/Makefile 459584 2018-01-21 10:51:29Z mat $
+# $FreeBSD: head/devel/py-setuptools/Makefile 460916 2018-02-04 10:49:08Z sunpoet $
 
 PORTNAME=	setuptools
 PORTVERSION=	38.2.5
@@ -10,7 +10,8 @@ DIST_SUBDIR=	python
 MAINTAINER=	python@FreeBSD.org
 COMMENT=	Python packages installer
 
-LICENSE=	PSFL
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_ARCH=	yes
 USES=		python zip

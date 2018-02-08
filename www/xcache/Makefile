@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/www/xcache/Makefile 417719 2016-06-28 14:00:45Z mat $
+# $FreeBSD: head/www/xcache/Makefile 461158 2018-02-07 17:46:10Z mat $
 
 PORTNAME=	xcache
 DISTVERSION=	3.2.0
@@ -12,6 +12,8 @@ COMMENT=	Fast and stable php opcode cacher
 LICENSE=	BSD3CLAUSE
 
 USES=		php:phpize tar:bzip2
+
+IGNORE_WITH_PHP=	70 71 72
 
 CONFIGURE_ARGS=	--enable-xcache=shared
 

@@ -1,5 +1,5 @@
 # Created by: Valery Komarov <komarov@valerka.net>
-# $FreeBSD: head/devel/php5-dav/Makefile 433543 2017-02-07 12:14:34Z mat $
+# $FreeBSD: head/devel/php5-dav/Makefile 461158 2018-02-07 17:46:10Z mat $
 
 PORTNAME=	dav
 PORTVERSION=	1.2
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libneon.so:www/neon
 
 USES=		php:ext
 
-IGNORE_WITH_PHP=	70 71
+IGNORE_WITH_PHP=	70 71 72
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

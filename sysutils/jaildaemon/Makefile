@@ -1,8 +1,8 @@
 # Created by: Dirk Engling <erdgeist@erdgeist.org>
-# $FreeBSD: head/sysutils/jaildaemon/Makefile 442668 2017-06-05 15:28:07Z amdmi3 $
+# $FreeBSD: head/sysutils/jaildaemon/Makefile 461098 2018-02-06 19:56:52Z dbaio $
 
 PORTNAME=	jaildaemon
-PORTVERSION=	0.3
+PORTVERSION=	0.4
 CATEGORIES=	sysutils
 MASTER_SITES=	http://erdgeist.org/arts/software/jaildaemon/
 

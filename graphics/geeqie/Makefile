@@ -1,9 +1,8 @@
 # Created by: Martin Tournoij <carpetsmoker@rwxrwxrwx.net>
-# $FreeBSD: head/graphics/geeqie/Makefile 455598 2017-12-05 18:16:49Z amdmi3 $
+# $FreeBSD: head/graphics/geeqie/Makefile 461162 2018-02-07 18:16:39Z amdmi3 $
 
 PORTNAME=	geeqie
-PORTVERSION=	1.3
-PORTREVISION=	2
+PORTVERSION=	1.4
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.geeqie.org/
 

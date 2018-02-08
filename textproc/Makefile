@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 460120 2018-01-27 12:54:08Z dbaio $
+# $FreeBSD: head/textproc/Makefile 460964 2018-02-05 07:46:24Z yuri $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -333,6 +333,7 @@
     SUBDIR += ibus
     SUBDIR += ibus-el
     SUBDIR += ibus-kmfl
+    SUBDIR += ibus-m17n
     SUBDIR += ibus-qt
     SUBDIR += ibus-typing-booster
     SUBDIR += icdiff

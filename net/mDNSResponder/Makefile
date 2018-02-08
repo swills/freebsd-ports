@@ -1,8 +1,8 @@
 # Created by: Alfred Perlstein <alfred@FreeBSD.org>
-# $FreeBSD: head/net/mDNSResponder/Makefile 450916 2017-09-29 16:59:33Z sunpoet $
+# $FreeBSD: head/net/mDNSResponder/Makefile 460991 2018-02-05 17:49:21Z sunpoet $
 
 PORTNAME=	mDNSResponder
-PORTVERSION=	878.1.1
+PORTVERSION=	878.30.4
 CATEGORIES=	net dns
 MASTER_SITES=	http://opensource.apple.com/tarballs/${PORTNAME}/
 

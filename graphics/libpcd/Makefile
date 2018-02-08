@@ -1,5 +1,5 @@
 # Created by: Andrey Slusar <anray@FreeBSD.org>
-# $FreeBSD: head/graphics/libpcd/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/graphics/libpcd/Makefile 461126 2018-02-07 09:02:45Z amdmi3 $
 
 PORTNAME=	libpcd
 PORTVERSION=	1.0.1
@@ -19,6 +19,6 @@ MAKEFILE=	GNUmakefile
 USE_LDCONFIG=	yes
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libpcd.so
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libpcd.so
 
 .include <bsd.port.mk>

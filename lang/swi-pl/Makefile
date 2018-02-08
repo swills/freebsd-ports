@@ -1,9 +1,8 @@
 # Created by: Michael Butschky <butsch@computi.erols.com>
-# $FreeBSD: head/lang/swi-pl/Makefile 454908 2017-11-26 10:19:33Z johans $
+# $FreeBSD: head/lang/swi-pl/Makefile 460978 2018-02-05 15:40:56Z johans $
 
 PORTNAME=	swi-pl
-PORTVERSION=	7.6.2
-PORTREVERSION=	1
+PORTVERSION=	7.6.4
 CATEGORIES=	lang
 MASTER_SITES=	http://www.swi-prolog.org/download/stable/src/
 DISTNAME=	swipl-${PORTVERSION}

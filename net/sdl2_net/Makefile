@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/sdl2_net/Makefile 432169 2017-01-22 22:27:54Z rene $
+# $FreeBSD: head/net/sdl2_net/Makefile 460979 2018-02-05 16:24:49Z amdmi3 $
 
 PORTNAME=	sdl2_net
 PORTVERSION=	2.0.1
@@ -6,7 +6,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.libsdl.org/projects/SDL_net/release/
 DISTNAME=	SDL2_net-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Small sample cross-platform networking library
 
 LICENSE=	ZLIB

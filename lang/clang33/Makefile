@@ -1,8 +1,8 @@
-# $FreeBSD: head/lang/clang33/Makefile 441694 2017-05-25 14:35:49Z bapt $
+# $FreeBSD: head/lang/clang33/Makefile 461076 2018-02-06 16:55:44Z amdmi3 $
 
 PORTNAME=	clang
 DISTVERSION=	3.3
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	lang devel
 MASTER_SITES=	http://llvm.org/releases/${PORTVERSION}/
 PKGNAMESUFFIX=	${LLVM_SUFFIX}
@@ -33,7 +33,8 @@ PYTHONLIBDIR=	${LLVM_PREFIX}/lib/python
 
 GNU_CONFIGURE=	yes
 GNU_CONFIGURE_PREFIX=	${LLVM_PREFIX}
-USES=		gmake groff perl5 python
+USES=		gmake groff perl5 python:2.7 shebangfix
+SHEBANG_FILES=	tools/clang/tools/scan-view/scan-view
 USE_LDCONFIG=	yes
 
 MAKE_ARGS=	CLANG_TBLGEN=${WRKSRC}/${RELTYPE}/bin/clang-tblgen \

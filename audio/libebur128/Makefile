@@ -1,8 +1,8 @@
 # Created by: Pietro Cerutti <gahr@FreeBSD.org>
-# $FreeBSD: head/audio/libebur128/Makefile 454821 2017-11-24 13:59:14Z vanilla $
+# $FreeBSD: head/audio/libebur128/Makefile 460960 2018-02-05 03:41:39Z vanilla $
 
 PORTNAME=	libebur128
-PORTVERSION=	1.2.3
+PORTVERSION=	1.2.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	audio
 

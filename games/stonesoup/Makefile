@@ -1,8 +1,8 @@
 # Created by: Tobias Rehbein <tobias.rehbein@web.de>
-# $FreeBSD: head/games/stonesoup/Makefile 458451 2018-01-08 16:59:35Z lifanov $
+# $FreeBSD: head/games/stonesoup/Makefile 460976 2018-02-05 15:13:48Z lifanov $
 
 PORTNAME=	stonesoup
-PORTVERSION=	0.21.0
+PORTVERSION=	0.21.1
 CATEGORIES=	games
 MASTER_SITES=	https://crawl.develz.org/release/%SUBDIR%/ \
 		http://crawl.develz.org/release/%SUBDIR%/

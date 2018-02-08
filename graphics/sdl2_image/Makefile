@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/sdl2_image/Makefile 452939 2017-10-26 18:53:43Z jbeich $
+# $FreeBSD: head/graphics/sdl2_image/Makefile 460979 2018-02-05 16:24:49Z amdmi3 $
 
 PORTNAME=	sdl2_image
 PORTVERSION=	2.0.1
@@ -7,7 +7,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://www.libsdl.org/projects/SDL_image/release/
 DISTNAME=	SDL2_image-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Simple library to load images of various formats as SDL surfaces
 
 LICENSE=	ZLIB

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 460862 2018-02-04 02:48:58Z yuri $
+# $FreeBSD: head/devel/Makefile 461188 2018-02-07 21:43:29Z amdmi3 $
 #
 
     COMMENT = Development utilities
@@ -4418,6 +4418,7 @@
     SUBDIR += py-evdev
     SUBDIR += py-eventlib
     SUBDIR += py-exam
+    SUBDIR += py-expiringdict
     SUBDIR += py-extras
     SUBDIR += py-extremes
     SUBDIR += py-ezpyinline
@@ -4669,6 +4670,7 @@
     SUBDIR += py-oslo.versionedobjects
     SUBDIR += py-oslo.vmware
     SUBDIR += py-osprofiler
+    SUBDIR += py-p4python
     SUBDIR += py-packaging
     SUBDIR += py-palm
     SUBDIR += py-parsedatetime
@@ -4679,6 +4681,7 @@
     SUBDIR += py-paver
     SUBDIR += py-pbr
     SUBDIR += py-pefile
+    SUBDIR += py-pep8-naming
     SUBDIR += py-period
     SUBDIR += py-petname
     SUBDIR += py-pex
@@ -5808,6 +5811,7 @@
     SUBDIR += rubygem-templater
     SUBDIR += rubygem-temple
     SUBDIR += rubygem-term-ansicolor
+    SUBDIR += rubygem-terrapin
     SUBDIR += rubygem-test-unit
     SUBDIR += rubygem-thor
     SUBDIR += rubygem-thread_safe
@@ -5956,8 +5960,8 @@
     SUBDIR += sysconftool
     SUBDIR += sysfsutils
     SUBDIR += t1lib
-    SUBDIR += tablist
     SUBDIR += ta-lib
+    SUBDIR += tablist
     SUBDIR += tailor
     SUBDIR += talloc
     SUBDIR += tass64

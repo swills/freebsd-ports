@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/sqlrelay/Makefile.common 442515 2017-06-03 19:26:05Z pi $
+# $FreeBSD: head/databases/sqlrelay/Makefile.common 460938 2018-02-04 15:59:09Z pi $
 
 SQLRELAY_PORTNAME=	sqlrelay
-SQLRELAY_PORTVERSION=	1.1.0
+SQLRELAY_PORTVERSION=	1.2.0
 
 SQLRELAY_PORTDIR=	databases/${SQLRELAY_PORTNAME}
 SQLRELAY_WRKSRC_CMD=	cd ${PORTSDIR}/${SQLRELAY_PORTDIR} && ${MAKE} -V WRKSRC

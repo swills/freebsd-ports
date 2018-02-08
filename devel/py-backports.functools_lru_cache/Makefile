@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/py-backports.functools_lru_cache/Makefile 455710 2017-12-07 16:00:13Z sunpoet $
+# $FreeBSD: head/devel/py-backports.functools_lru_cache/Makefile 460992 2018-02-05 17:49:27Z sunpoet $
 
 PORTNAME=	backports.functools_lru_cache
-PORTVERSION=	1.4
-PORTREVISION=	1
+PORTVERSION=	1.5
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

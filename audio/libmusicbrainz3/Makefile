@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/libmusicbrainz3/Makefile 459231 2018-01-17 09:31:14Z tcberner $
+# $FreeBSD: head/audio/libmusicbrainz3/Makefile 461142 2018-02-07 12:58:43Z jhale $
 
 PORTNAME=	libmusicbrainz
 PORTVERSION=	3.0.3
@@ -12,6 +12,9 @@ MAINTAINER=	jhale@FreeBSD.org
 COMMENT=	MusicBrainz client library for audio metadata lookup
 
 LICENSE=	LGPL21
+
+DEPRECATED=	Web Service 1.0 support ending 2018-08-01
+EXPIRATION_DATE=	2018-08-01
 
 LIB_DEPENDS=	libdiscid.so:audio/libdiscid \
 		libneon.so:www/neon

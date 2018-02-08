@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: head/net-im/mastodon/files/mastodon_workers.in 458637 2018-01-10 13:19:08Z jrm $
+# $FreeBSD: head/net-im/mastodon/files/mastodon_workers.in 461097 2018-02-06 19:42:03Z jrm $
 
 # PROVIDE: mastodon_workers
 # REQUIRE: LOGIN postgresql nginx redis
@@ -60,7 +60,7 @@ mastodon_workers_user=mastodon
 pidfile="/var/run/mastodon/${name}.pid"
 procname="%%RUBY%%:"
 
-start_precmd="rm -f %%WWWDIR%%/Gemfile.lock"
+start_precmd=":>%%WWWDIR%%/Gemfile.lock"
 command="%%PREFIX%%/bin/sidekiq"
 command_flags="-c ${mastodon_workers_threads} -q default -q mailers -q pull -q push"
 command_args=">> /var/log/mastodon/${name##mastodon_}.log 2>&1 &"

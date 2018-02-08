@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/www/phpwebapp/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/www/phpwebapp/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	phpwebapp
 PORTVERSION=	1.3
@@ -8,6 +8,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Web application framework
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained upstream, all www files wrongly belongs to www user.
 
 NO_ARCH=	yes
 NO_BUILD=	yes

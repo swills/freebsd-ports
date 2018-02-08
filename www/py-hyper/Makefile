@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/www/py-hyper/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-hyper/Makefile 461091 2018-02-06 19:18:45Z sunpoet $
 
 PORTNAME=	hyper
 PORTVERSION=	0.5.0
@@ -22,13 +22,6 @@ USE_PYTHON=	autoplist distutils
 
 NO_ARCH=	yes
 
-.include <bsd.port.pre.mk>
-
-.if ${PYTHON_REL} == 3300 || (${PYTHON_VER} == 2.7 && ${PYTHON_REL} < 2709)
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}openssl>=0.14:security/py-openssl@${FLAVOR} \
-		${PYTHON_PGNAMEPREFIX}service_identity>=14.0.0:security/py-service_identity
-.endif
-
 post-extract:
 	@${MKDIR} ${WRKSRC}/test/certs/
 	@${CP} ${FILESDIR}/files-server.py ${WRKSRC}/test/server.py
@@ -38,4 +31,4 @@ post-extract:
 do-test:
 	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYDISTUTILS_SETUP} test --pytest-args "-k 'not test_integration'"
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

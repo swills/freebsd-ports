@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/misc/py-yolk/Makefile 387491 2015-05-26 16:47:02Z antoine $
+# $FreeBSD: head/misc/py-yolk/Makefile 461090 2018-02-06 19:18:40Z sunpoet $
 
 PORTNAME=	yolk
 PORTVERSION=	0.4.3
@@ -32,10 +32,4 @@ post-install:
 	cd ${WRKSRC}/examples && ${FIND} . -type f -exec ${INSTALL_DATA} {} ${STAGEDIR}${EXAMPLESDIR}/{} ";"
 .endif
 
-.include <bsd.port.pre.mk>
-
-.if ${PYTHON_REL} == 2701 || ${PYTHON_REL} == 3200
-IGNORE=	does not work with ${PYTHON_VERSION} (see http://goo.gl/SZpDN)
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

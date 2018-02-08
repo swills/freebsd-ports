@@ -1,5 +1,5 @@
 # Created by: Wen heping <wenheping@gmail.com>
-# $FreeBSD: head/www/impresscms/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/impresscms/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	impresscms
 PORTVERSION=	1.3.10
@@ -10,6 +10,9 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}_final
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Community Developed Content Management System
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained, all www files wrongly belongs to www user.
 
 IGNORE_WITH_PHP=	70 71 72
 

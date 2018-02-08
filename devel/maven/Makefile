@@ -1,8 +1,8 @@
 # Created by: JonathanChen <jonc@chen.org.nz>
-# $FreeBSD: head/devel/maven/Makefile 446632 2017-07-25 21:45:58Z matthew $
+# $FreeBSD: head/devel/maven/Makefile 461124 2018-02-07 07:25:39Z pi $
 
 PORTNAME=	maven
-DISTVERSION=	3.5.0
+DISTVERSION=	3.5.2
 CATEGORIES=	devel java
 MASTER_SITES=	APACHE/maven/maven-3/${DISTVERSION}/binaries
 DISTNAME=	apache-maven-${DISTVERSION}-bin

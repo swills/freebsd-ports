@@ -1,9 +1,9 @@
 # Created by: Chris Calvey <chris@securityforensics.co.uk>
-# $FreeBSD: head/sysutils/afflib/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/sysutils/afflib/Makefile 460881 2018-02-04 10:03:04Z antoine $
 
 PORTNAME=	afflib
-PORTVERSION=	3.7.15
-PORTREVISION=	1
+PORTVERSION=	3.7.16
+DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
 MAINTAINER=	antoine@FreeBSD.org
@@ -18,12 +18,11 @@ LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 USE_GITHUB=	yes
 GH_ACCOUNT=	sshock
 GH_PROJECT=	AFFLIBv3
-GH_TAGNAME=	4540cbd
 
-USE_LDCONFIG=	yes
-USES=		autoreconf fuse libtool pathfix readline ssl
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-s3=yes
+USES=		autoreconf fuse libtool pathfix readline ssl
+USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 
 .include <bsd.port.mk>

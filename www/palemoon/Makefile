@@ -1,9 +1,10 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/www/palemoon/Makefile 460803 2018-02-03 10:36:46Z tobik $
+# $FreeBSD: head/www/palemoon/Makefile 461119 2018-02-06 23:57:31Z feld $
 
 PORTNAME=	palemoon
 DISTVERSION=	27.7.2
 DISTVERSIONSUFFIX=_Release
+PORTREVISION=	1
 CATEGORIES=	www ipv6
 
 MAINTAINER=	lichray@gmail.com
@@ -21,6 +22,11 @@ BUILD_DEPENDS=	nspr>=4.15:devel/nspr \
 		autoconf-2.13:devel/autoconf213 \
 		yasm:devel/yasm \
 		zip:archivers/zip
+
+# Needs branding removed for legal reasons.
+# Removing from our mirrors until this is handled.
+# See PR 225717
+LICENSE_PERMS=	no-pkg-mirror no-pkg-sell
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	MoonchildProductions

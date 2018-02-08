@@ -1,5 +1,5 @@
 # Created by: Sylvio Cesar <sylvio@FreeBSD.org>
-# $FreeBSD: head/www/lionwiki/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/lionwiki/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	lionwiki
 PORTVERSION=	3.2.7
@@ -8,6 +8,9 @@ MASTER_SITES=	http://lionwiki.0o.cz/download/${PORTVERSION}/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Minimalis wiki, extensible, templatable and file based
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained, all www files wrongly belongs to www user.
 
 USES=		php
 USE_PHP=	session ctype

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-python-socketio/Makefile 445317 2017-07-08 11:01:31Z mmokhi $
+# $FreeBSD: head/devel/py-python-socketio/Makefile 461167 2018-02-07 18:39:50Z mmokhi $
 
 PORTNAME=	python-socketio
-PORTVERSION=	1.7.6
+PORTVERSION=	1.8.4
 CATEGORIES=	devel python net
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

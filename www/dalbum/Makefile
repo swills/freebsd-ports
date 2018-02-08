@@ -1,5 +1,5 @@
 # Created by: Sergey Matveychuk <sem@FreeBSD.org>
-# $FreeBSD: head/www/dalbum/Makefile 421854 2016-09-11 17:56:26Z amdmi3 $
+# $FreeBSD: head/www/dalbum/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	dalbum
 PORTVERSION=	140.152
@@ -10,6 +10,9 @@ DISTNAME=	${PORTNAME}${PORTVERSION:S/./_/}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Free, highly customizable PHP photo album
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained, all www files wrongly belongs to www user.          
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/license.txt

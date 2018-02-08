@@ -1,13 +1,11 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/sysutils/inotify-tools/Makefile 448240 2017-08-18 15:25:32Z swills $
+# $FreeBSD: head/sysutils/inotify-tools/Makefile 461008 2018-02-05 18:04:43Z yuri $
 
 PORTNAME=	inotify-tools
-PORTVERSION=	3.14.01
-DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+DISTVERSION=	3.20.1
 CATEGORIES=	sysutils
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Command-line utilities to watch for file events
 
 LICENSE=	GPLv2
@@ -18,7 +16,6 @@ LIB_DEPENDS=	libinotify.so:devel/libinotify
 USES=		autoreconf gmake libtool localbase
 USE_GITHUB=	yes
 GH_ACCOUNT=	rvoicilas
-GH_TAGNAME=	1df9af4
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-doxygen
 USE_LDCONFIG=	yes

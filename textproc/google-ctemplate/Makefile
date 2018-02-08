@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/google-ctemplate/Makefile 421635 2016-09-09 19:42:46Z amdmi3 $
+# $FreeBSD: head/textproc/google-ctemplate/Makefile 461154 2018-02-07 16:33:14Z amdmi3 $
 
 PORTNAME=	ctemplate
 PORTVERSION=	2.3
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 OPTIONS_DEFINE=	DOCS
 
-USES=		libtool pathfix pkgconfig python shebangfix
+USES=		libtool pathfix pkgconfig python:2.7 shebangfix
 GNU_CONFIGURE=	yes
 SHEBANG_FILES=	src/template-converter src/htmlparser/generate_fsm.py src/htmlparser/fsm_config.py
 USE_LDCONFIG=	yes

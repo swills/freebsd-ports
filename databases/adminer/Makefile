@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/databases/adminer/Makefile 452384 2017-10-18 20:32:27Z swills $
+# $FreeBSD: head/databases/adminer/Makefile 461096 2018-02-06 19:31:57Z dbaio $
 
 PORTNAME=	adminer
-PORTVERSION=	4.3.1
+PORTVERSION=	4.6.0
 CATEGORIES=	databases www
 MASTER_SITES=	https://github.com/vrana/adminer/releases/download/v${PORTVERSION}/
 EXTRACT_SUFX=	.php

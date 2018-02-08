@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/rssroll/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/rssroll/Makefile 461128 2018-02-07 09:16:51Z bapt $
 
 PORTNAME=	rssroll
 PORTVERSION=	0.5
+PORTREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	koue@chaosophia.net
@@ -17,8 +18,6 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	koue
 
 GNU_CONFIGURE=	yes
-
-PLIST_SUB+=	WWWOWN=${WWWOWN} WWWGRP=${WWWGRP}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/rssroll ${STAGEDIR}${PREFIX}/bin

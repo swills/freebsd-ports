@@ -1,5 +1,5 @@
 # Created by: Shaun Amott <shaun@inerd.com>
-# $FreeBSD: head/www/quickie/Makefile 441695 2017-05-25 14:38:52Z bapt $
+# $FreeBSD: head/www/quickie/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	quickie
 PORTVERSION=	1.1
@@ -12,6 +12,9 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Small footprint, fast Wiki engine written in C++
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained, all www files wrongly belongs to www user.
 
 LICENSE=	GPLv2+
 

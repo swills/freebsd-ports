@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 456763 2017-12-19 19:49:17Z yuri $
+# $FreeBSD: head/science/Makefile 460947 2018-02-04 19:00:27Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -199,6 +199,7 @@
     SUBDIR += silo
     SUBDIR += simlib
     SUBDIR += simsmith
+    SUBDIR += siril
     SUBDIR += step
     SUBDIR += svmlight
     SUBDIR += szip

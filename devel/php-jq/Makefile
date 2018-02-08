@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-jq/Makefile 433543 2017-02-07 12:14:34Z mat $
+# $FreeBSD: head/devel/php-jq/Makefile 461158 2018-02-07 17:46:10Z mat $
 
 PORTNAME=	jq
 PORTVERSION=	0.0.1
@@ -19,7 +19,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	kjdev
 GH_PROJECT=	php-ext-jq
 
-IGNORE_WITH_PHP=	70 71
+IGNORE_WITH_PHP=	70 71 72
 USES=		php:ext
 
 JQ_CMD=		${LOCALBASE}/bin/jq

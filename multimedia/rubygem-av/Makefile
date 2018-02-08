@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/rubygem-av/Makefile 447386 2017-08-05 03:25:17Z jrm $
+# $FreeBSD: head/multimedia/rubygem-av/Makefile 460927 2018-02-04 13:18:20Z jrm $
 
 PORTNAME=	av
 PORTVERSION=	0.9.0
+PORTREVISION=	1
 CATEGORIES=	multimedia rubygems
 MASTER_SITES=	RG
 
@@ -13,9 +14,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	rubygem-cocaine>=0.5.3:devel/rubygem-cocaine
 
-NO_ARCH=	yes
-
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/audio/musescore/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/audio/musescore/Makefile 461017 2018-02-05 20:11:24Z adridg $
 
 PORTNAME=	musescore
 PORTVERSION=	2.1
@@ -8,7 +8,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://ftp.osuosl.org/pub/musescore/releases/MuseScore-${PORTVERSION}/
 DISTNAME=	MuseScore-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	adridg@FreeBSD.org
 COMMENT=	Free music composition & notation software
 
 LICENSE=	GPLv2

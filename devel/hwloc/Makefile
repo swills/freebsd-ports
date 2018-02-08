@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/hwloc/Makefile 460636 2018-02-01 21:20:00Z feld $
+# $FreeBSD: head/devel/hwloc/Makefile 460928 2018-02-04 13:21:37Z feld $
 
 PORTNAME=	hwloc
 PORTVERSION=	1.11.7
@@ -23,6 +23,7 @@ CONFIGURE_ARGS=	--enable-static \
 		--disable-gl
 INSTALL_TARGET=	install-strip
 USES=		iconv libtool pathfix pkgconfig tar:bzip2
+# Builds fine with clang, but crashes since 1.11.3
 USE_GCC=	any
 USE_LDCONFIG=	yes
 USE_GNOME=	libxml2

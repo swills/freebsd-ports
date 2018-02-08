@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-delfick_error/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-delfick_error/Makefile 461152 2018-02-07 15:59:19Z amdmi3 $
 
 PORTNAME=	delfick_error
 PORTVERSION=	1.7.2
@@ -29,6 +29,9 @@ GH_TAGNAME=	6761e6c
 USE_PYTHON=	autoplist distutils
 
 PORTDOCS=	*
+
+post-patch:
+	@${REINPLACE_CMD} -e 's|sphinx-build|&-${PYTHON_VER}|' ${WRKSRC}/docs/build.sh
 
 post-build-DOCS-on:
 	cd ${WRKSRC}/docs && ${SH} build.sh

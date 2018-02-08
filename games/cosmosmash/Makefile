@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/games/cosmosmash/Makefile 460384 2018-01-30 12:35:05Z martymac $
+# $FreeBSD: head/games/cosmosmash/Makefile 460940 2018-02-04 16:34:17Z martymac $
 
 PORTNAME=	cosmosmash
 DISTVERSION=	1.4.7
@@ -19,6 +19,7 @@ LIB_DEPENDS=	libflatzebra-0.1.so:devel/flatzebra \
 		libaudiofile.so:audio/libaudiofile
 
 USES=		iconv pkgconfig desktop-file-utils
+USE_CXXSTD=	gnu++98
 USE_SDL=	sdl image mixer
 USE_XORG=	x11 xau xdmcp
 GNU_CONFIGURE=	yes

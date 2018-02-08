@@ -1,10 +1,10 @@
-# $FreeBSD: head/sysutils/u-boot-duovero/Makefile 424736 2016-10-26 21:24:39Z imp $
+# $FreeBSD: head/sysutils/u-boot-duovero/Makefile 461102 2018-02-06 20:47:29Z manu $
 
 MAINTAINER=	imp@FreeBSD.org
 MASTERDIR=	${.CURDIR}/../u-boot-master
 
 MODEL=		duovero
-BOARD_CONFIG=	duovero_config
+BOARD_CONFIG=	duovero_defconfig
 FAMILY=		omap
 
 .include "${MASTERDIR}/Makefile"

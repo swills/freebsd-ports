@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/net/avahi-app/Makefile 452569 2017-10-21 04:48:49Z pi $
+# $FreeBSD: head/net/avahi-app/Makefile 461170 2018-02-07 19:06:39Z pi $
 
 PORTNAME=	avahi
 PORTVERSION=	0.6.31
-PORTREVISION?=	5
+PORTREVISION?=	6
 CATEGORIES?=	net dns
 MASTER_SITES=	http://www.avahi.org/download/
 PKGNAMESUFFIX?=	-app

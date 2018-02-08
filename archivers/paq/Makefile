@@ -1,5 +1,5 @@
 # Created by: bf <bf2006a@yahoo.com>
-# $FreeBSD: head/archivers/paq/Makefile 452322 2017-10-18 09:22:29Z ak $
+# $FreeBSD: head/archivers/paq/Makefile 461127 2018-02-07 09:02:49Z amdmi3 $
 
 PORTNAME=	paq
 PORTVERSION=	20140131
@@ -115,7 +115,7 @@ do-install:
 	cd ${DISTDIR}/${DIST_SUBDIR}; ${INSTALL_DATA} ${PORTDOCS:M*.pdf} ${STAGEDIR}${DOCSDIR}
 .endif
 
-check regression-test test: build
+do-test:
 .for _f in calgarytest.zpaq calgarytest2.zpaq
 .for _c in -list -test
 	${WRKSRC}/zpaq ${_c} ${DISTDIR}/${DIST_SUBDIR}/${_f}

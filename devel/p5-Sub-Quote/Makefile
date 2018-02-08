@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Sub-Quote/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Sub-Quote/Makefile 461115 2018-02-06 23:13:54Z adamw $
 
 PORTNAME=	Sub-Quote
-PORTVERSION=	2.004000
+PORTVERSION=	2.005000
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:HAARG

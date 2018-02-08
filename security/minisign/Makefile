@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/security/minisign/Makefile 459357 2018-01-18 15:43:54Z feld $
+# $FreeBSD: head/security/minisign/Makefile 460929 2018-02-04 13:28:20Z feld $
 
 PORTNAME=	minisign
-PORTVERSION=	0.7
+PORTVERSION=	0.8
 CATEGORIES=	security
 
 MAINTAINER=	feld@FreeBSD.org

@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/greenbone-security-assistant8/Makefile 447445 2017-08-06 06:49:42Z acm $
+# $FreeBSD: head/security/greenbone-security-assistant8/Makefile 461045 2018-02-06 13:22:05Z amdmi3 $
 
 PORTNAME?=	greenbone-security-assistant8
 PORTVERSION?=	6.0.12
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 MASTER_SITES?=	http://wald.intevation.org/frs/download.php/2442/
 DISTNAME=	${PORTNAME:S/${OPENVAS_VER}//}-${PORTVERSION}

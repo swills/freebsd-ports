@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-configargparse/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-configargparse/Makefile 460993 2018-02-05 17:49:32Z sunpoet $
 
 PORTNAME=	configargparse
-PORTVERSION=	0.12.0
+PORTVERSION=	0.13.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

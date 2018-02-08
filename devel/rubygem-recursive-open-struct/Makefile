@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-recursive-open-struct/Makefile 444203 2017-06-23 21:19:38Z sunpoet $
+# $FreeBSD: head/devel/rubygem-recursive-open-struct/Makefile 460903 2018-02-04 10:14:02Z sunpoet $
 
 PORTNAME=	recursive-open-struct
-PORTVERSION=	1.0.5
+PORTVERSION=	1.1.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

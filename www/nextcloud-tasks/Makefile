@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/www/nextcloud-tasks/Makefile 455648 2017-12-06 12:49:51Z brnrd $
+# $FreeBSD: head/www/nextcloud-tasks/Makefile 461134 2018-02-07 10:15:27Z brnrd $
 
 PORTNAME=	tasks
 PORTVERSION=	0.9.5
@@ -14,8 +14,9 @@ MAINTAINER=	brnrd@freebsd.org
 COMMENT=	Tasks app for Nextcloud
 
 LICENSE=	AGPLv3
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	nextcloud>=12:www/nextcloud
+RUN_DEPENDS=	nextcloud>=10:www/nextcloud
 
 NO_BUILD=	yes
 NO_ARCH=	yes

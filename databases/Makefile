@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 460537 2018-01-31 21:37:03Z rene $
+# $FreeBSD: head/databases/Makefile 461187 2018-02-07 21:01:44Z yuri $
 #
 
     COMMENT = Databases and related software
@@ -21,6 +21,7 @@
     SUBDIR += apq-odbc
     SUBDIR += apq-pgsql
     SUBDIR += arangodb32
+    SUBDIR += arangodb33
     SUBDIR += ateam_mysql_ldap_auth
     SUBDIR += autobackupmysql
     SUBDIR += bbdb
@@ -196,6 +197,7 @@
     SUBDIR += mongodb34
     SUBDIR += mongodb34-rocks
     SUBDIR += mongodb34-tools
+    SUBDIR += mongodb36
     SUBDIR += mroonga
     SUBDIR += mrtg-mysql-load
     SUBDIR += mtools-mongodb

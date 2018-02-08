@@ -1,5 +1,5 @@
 # Created by: Mun-Kyo Seo <munggo@gmail.com>
-# $FreeBSD: head/www/skytemplate/Makefile 417719 2016-06-28 14:00:45Z mat $
+# $FreeBSD: head/www/skytemplate/Makefile 461156 2018-02-07 17:13:27Z amdmi3 $
 
 PORTNAME=	skytemplate
 PORTVERSION=	1.4.0
@@ -13,15 +13,14 @@ COMMENT=	Yet another PHP compiling template engine
 
 USES=		php:web
 NO_BUILD=	yes
+NO_ARCH=	yes
 
 SUB_FILES=	pkg-message
 
 do-install:
-	${MKDIR} ${STAGEDIR}${DATADIR}
-.for f in class.SkyTemplate.php class.SkyTemplate_withDaddy.php
-	${INSTALL_DATA} ${WRKSRC}/$f ${STAGEDIR}${DATADIR}
-	${MKDIR} ${STAGEDIR}${DATADIR}/SkyTpl
+	@${MKDIR} ${STAGEDIR}${DATADIR}
+	${INSTALL_DATA} ${WRKSRC}/*.php ${STAGEDIR}${DATADIR}
+	@${MKDIR} ${STAGEDIR}${DATADIR}/SkyTpl
 	${INSTALL_DATA} ${WRKSRC}/SkyTpl/* ${STAGEDIR}${DATADIR}/SkyTpl
-.endfor
 
 .include <bsd.port.mk>

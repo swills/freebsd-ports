@@ -1,20 +1,29 @@
 # Created by: asami
-# $FreeBSD: head/net/igmpproxy/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/net/igmpproxy/Makefile 461191 2018-02-07 22:37:31Z feld $
 
 PORTNAME=	igmpproxy
-PORTVERSION=	0.1
-PORTREVISION=	2
+PORTVERSION=	0.2
 PORTEPOCH=	1
 CATEGORIES=	net
-MASTER_SITES=	SF
 
-MAINTAINER=	melifaro@ipfw.ru
+MAINTAINER=	franco@opnsense.org
 COMMENT=	Multicast forwarding IGMP proxy
 
-HOMEPAGE=	http://igmpproxy.sourceforge.net/
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	pali
 
 USE_RC_SUBR=	igmpproxy
-USES=		gmake
+USES=		autoreconf
 GNU_CONFIGURE=	yes
+
+EXTRA_PATCHES+=	${FILESDIR}/0001-Revert-Try-to-fix-problems-with-strict-aliasing.patch:-p1
+EXTRA_PATCHES+= ${FILESDIR}/0002-Revert-Include-config.h-before-any-other-files-to-ma.patch:-p1
+
+post-install:
+	${INSTALL_DATA} ${WRKSRC}/igmpproxy.conf \
+	    ${STAGEDIR}${PREFIX}/etc/igmpproxy.conf.sample
 
 .include <bsd.port.mk>

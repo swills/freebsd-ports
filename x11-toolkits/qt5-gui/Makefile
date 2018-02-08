@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-toolkits/qt5-gui/Makefile 458311 2018-01-07 10:08:22Z tcberner $
+# $FreeBSD: head/x11-toolkits/qt5-gui/Makefile 461141 2018-02-07 12:33:59Z adridg $
 
 PORTNAME=	gui
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-toolkits graphics
 PKGNAMEPREFIX=	qt5-
 

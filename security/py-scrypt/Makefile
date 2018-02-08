@@ -1,21 +1,19 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/py-scrypt/Makefile 426059 2016-11-13 16:14:14Z rene $
+# $FreeBSD: head/security/py-scrypt/Makefile 461200 2018-02-08 07:21:59Z yuri $
 
 PORTNAME=	scrypt
-PORTVERSION=	0.8.0
+DISTVERSION=	0.8.3
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Bindings for the scrypt key derivation function library
 
 LICENSE=	BSD2CLAUSE
 
 USES=		python ssl
 USE_PYTHON=	autoplist distutils
-CFLAGS+=	-I${OPENSSLINC}
-LDFLAGS+=	-L${OPENSSLLIB}
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/_scrypt.so

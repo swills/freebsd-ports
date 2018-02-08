@@ -1,5 +1,5 @@
 # Created by: Amir Husaini <amir.husaini@bsdit.com>
-# $FreeBSD: head/www/zikula/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/zikula/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	zikula
 PORTVERSION=	1.3.5
@@ -11,6 +11,9 @@ DISTNAME=	Zikula_Core-${PORTVERSION}.build20
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	MVC web application framework (PHP/MySQL)
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained, no upstream, all www files wrongly belongs to www user.
 
 IGNORE_WITH_PHP=	70 71 72
 
