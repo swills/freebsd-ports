@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/www/nextcloud-contacts/Makefile 454858 2017-11-24 23:45:17Z brnrd $
+# $FreeBSD: head/www/nextcloud-contacts/Makefile 461132 2018-02-07 10:10:13Z brnrd $
 
 PORTNAME=	contacts
 PORTVERSION=	2.0.1
@@ -15,7 +15,7 @@ COMMENT=	Contacts app for Nextcloud
 
 LICENSE=	AGPLv3
 
-RUN_DEPENDS=	nextcloud>=12:www/nextcloud
+RUN_DEPENDS=	nextcloud>=11:www/nextcloud
 
 NO_BUILD=	yes
 NO_ARCH=	yes

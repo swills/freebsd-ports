@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/sdl_gfx/Makefile 432169 2017-01-22 22:27:54Z rene $
+# $FreeBSD: head/graphics/sdl_gfx/Makefile 460979 2018-02-05 16:24:49Z amdmi3 $
 
 PORTNAME=	sdl_gfx
 PORTVERSION=	2.0.25
@@ -8,7 +8,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://www.ferzkopp.net/Software/SDL_gfx-${PORTVERSION:R}/
 DISTNAME=	SDL_gfx-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	SDL graphics drawing primitives and other support functions
 
 LICENSE=	ZLIB

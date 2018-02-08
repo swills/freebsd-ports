@@ -1,5 +1,5 @@
 # Created by: Babak Farrokhi <babak@farrokhi.net>
-# $FreeBSD: head/www/iwebcal/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/www/iwebcal/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	iwebcal
 PORTVERSION=	2.1
@@ -9,6 +9,9 @@ MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Webbased iCal calendar viewer
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained, all www files wrongly belongs to www user.
 
 USES=		php tar:tgz
 NO_BUILD=	yes

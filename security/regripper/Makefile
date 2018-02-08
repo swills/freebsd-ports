@@ -1,8 +1,8 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/security/regripper/Makefile 425938 2016-11-12 10:14:09Z antoine $
+# $FreeBSD: head/security/regripper/Makefile 460911 2018-02-04 10:21:39Z antoine $
 
 PORTNAME=	regripper
-PORTVERSION=	2.8.20161012
+PORTVERSION=	2.8.20180128
 CATEGORIES=	security
 
 MAINTAINER=	antoine@FreeBSD.org
@@ -15,7 +15,7 @@ RUN_DEPENDS=	p5-Parse-Win32Registry>=0:devel/p5-Parse-Win32Registry
 USE_GITHUB=	yes
 GH_ACCOUNT=	keydet89
 GH_PROJECT=	RegRipper2.8
-GH_TAGNAME=	5bf9baf
+GH_TAGNAME=	289161b
 
 NO_ARCH=	yes
 NO_BUILD=	yes

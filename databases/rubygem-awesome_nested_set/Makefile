@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@freebsd.org>
-# $FreeBSD: head/databases/rubygem-awesome_nested_set/Makefile 440375 2017-05-07 21:26:49Z sunpoet $
+# $FreeBSD: head/databases/rubygem-awesome_nested_set/Makefile 460918 2018-02-04 10:49:18Z sunpoet $
 
 PORTNAME=	awesome_nested_set
-PORTVERSION=	3.1.3
+PORTVERSION=	3.1.4
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

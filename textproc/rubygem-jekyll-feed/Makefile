@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-jekyll-feed/Makefile 437260 2017-03-29 23:37:22Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-jekyll-feed/Makefile 461005 2018-02-05 17:50:34Z sunpoet $
 
 PORTNAME=	jekyll-feed
-PORTVERSION=	0.9.2
+PORTVERSION=	0.9.3
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -15,6 +15,8 @@ RUN_DEPENDS=	rubygem-jekyll>=3.3:www/rubygem-jekyll
 
 NO_ARCH=	yes
 USE_RUBY=	yes
-USES=		gem
+USES=		gem shebangfix
+
+SHEBANG_FILES=	script/*
 
 .include <bsd.port.mk>

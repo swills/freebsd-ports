@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/compiler.mk 457360 2017-12-27 10:41:30Z jbeich $
+# $FreeBSD: head/Mk/Uses/compiler.mk 461046 2018-02-06 13:30:29Z bapt $
 #
 # Allows to determine the compiler being used
 #
@@ -175,10 +175,10 @@ CC=	clang
 CXX=	clang++
 CHOSEN_COMPILER_TYPE=	clang
 .else
-BUILD_DEPENDS+=	${LOCALBASE}/bin/clang34:lang/clang34
-CPP=	${LOCALBASE}/bin/clang-cpp34
-CC=	${LOCALBASE}/bin/clang34
-CXX=	${LOCALBASE}/bin/clang++34
+BUILD_DEPENDS+=	${LOCALBASE}/bin/clang50:devel/llvm50
+CPP=	${LOCALBASE}/bin/clang-cpp50
+CC=	${LOCALBASE}/bin/clang50
+CXX=	${LOCALBASE}/bin/clang++50
 CHOSEN_COMPILER_TYPE=	clang
 .endif
 .endif
@@ -197,11 +197,11 @@ CC=	clang
 CXX=	clang++
 CHOSEN_COMPILER_TYPE=	clang
 .else
-BUILD_DEPENDS+=	${LOCALBASE}/bin/clang34:lang/clang34
+BUILD_DEPENDS+=	${LOCALBASE}/bin/clang50:devel/llvm50
 CHOSEN_COMPILER_TYPE=	clang
-CPP=	${LOCALBASE}/bin/clang-cpp34
-CC=	${LOCALBASE}/bin/clang34
-CXX=	${LOCALBASE}/bin/clang++34
+CPP=	${LOCALBASE}/bin/clang-cpp50
+CC=	${LOCALBASE}/bin/clang50
+CXX=	${LOCALBASE}/bin/clang++50
 .endif
 .endif
 .endif
@@ -219,11 +219,11 @@ CC=	clang
 CXX=	clang++
 CHOSEN_COMPILER_TYPE=	clang
 .else
-BUILD_DEPENDS+=	${LOCALBASE}/bin/clang34:lang/clang34
+BUILD_DEPENDS+=	${LOCALBASE}/bin/clang50:devel/llvm50
 CHOSEN_COMPILER_TYPE=	clang
-CPP=	${LOCALBASE}/bin/clang-cpp34
-CC=	${LOCALBASE}/bin/clang34
-CXX=	${LOCALBASE}/bin/clang++34
+CPP=	${LOCALBASE}/bin/clang-cpp50
+CC=	${LOCALBASE}/bin/clang50
+CXX=	${LOCALBASE}/bin/clang++50
 .endif
 .endif
 .endif

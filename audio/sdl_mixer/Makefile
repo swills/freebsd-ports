@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/audio/sdl_mixer/Makefile 432169 2017-01-22 22:27:54Z rene $
+# $FreeBSD: head/audio/sdl_mixer/Makefile 460979 2018-02-05 16:24:49Z amdmi3 $
 
 PORTNAME=	sdl_mixer
 PORTVERSION=	1.2.12
@@ -8,7 +8,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://www.libsdl.org/projects/SDL_mixer/release/
 DISTNAME=	SDL_mixer-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Sample multi-channel audio mixer library
 
 LICENSE=	ZLIB

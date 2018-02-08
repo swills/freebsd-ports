@@ -1,8 +1,8 @@
 # Created by: Oleh Hushchenkov <gor@clogic.com.ua>
-# $FreeBSD: head/misc/unclutter-xfixes/Makefile 446242 2017-07-19 23:58:01Z dbaio $
+# $FreeBSD: head/misc/unclutter-xfixes/Makefile 461100 2018-02-06 20:29:33Z dbaio $
 
 PORTNAME=	unclutter-xfixes
-PORTVERSION=	1.2
+PORTVERSION=	1.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	misc
 
@@ -15,21 +15,21 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 BUILD_DEPENDS=	a2x:textproc/asciidoc
 LIB_DEPENDS=	libev.so:devel/libev
 
-CONFLICTS_INSTALL=	unclutter-8*
-
-CFLAGS+=	-I${LOCALBASE}/include
+USES=		gmake pkgconfig
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Airblader
 
 USE_XORG=	x11 xi xfixes
 
-USES=		gmake pkgconfig
+CONFLICTS_INSTALL=	unclutter-8*
 
 PLIST_FILES=	bin/unclutter \
 		man/man1/unclutter.1.gz
 
 MAKE_ENV+=	UNCLUTTER_VERSION=${PORTVERSION}
 MAKE_ARGS=	CC=${CC}
+
+CFLAGS+=	-I${LOCALBASE}/include
 
 .include <bsd.port.mk>

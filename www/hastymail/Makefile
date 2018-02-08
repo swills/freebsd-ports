@@ -1,5 +1,5 @@
 # Created by: Bartlomiej Rutkowski <r@robakdesign.com>
-# $FreeBSD: head/www/hastymail/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/hastymail/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	hastymail
 PORTVERSION=	1.5
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME}/OldFiles
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Small, fast and secure yet powerful IMAP webmail
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained, all www files wrongly belongs to www user.
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/php70-memcached/Makefile 428773 2016-12-17 16:11:01Z mat $
+# $FreeBSD: head/databases/php70-memcached/Makefile 461159 2018-02-07 17:52:31Z mat $
 
 PORTNAME=	memcached
 PORTVERSION=	3.0.0b1
@@ -19,7 +19,7 @@ CONFIGURE_ARGS=	--disable-memcached-sasl --enable-memcached-json --with-libmemca
 USES=		pkgconfig php:ext
 USE_PHP=	session:build json:build
 PHP_VER=	70
-IGNORE_WITH_PHP=56
+IGNORE_WITH_PHP=56 71 72
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	php-memcached-dev

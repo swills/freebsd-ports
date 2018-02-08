@@ -1,5 +1,5 @@
 # Created by: Naram Qashat <cyberbotx@cyberbotx.com>
-# $FreeBSD: head/graphics/php-libpuzzle/Makefile 433543 2017-02-07 12:14:34Z mat $
+# $FreeBSD: head/graphics/php-libpuzzle/Makefile 461158 2018-02-07 17:46:10Z mat $
 
 PORTNAME=	libpuzzle
 PORTVERSION=	0.11
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libpuzzle.so:graphics/libpuzzle \
 		libgd.so:graphics/gd
 
 USES=		php:ext tar:bzip2
-IGNORE_WITH_PHP=	70 71
+IGNORE_WITH_PHP=	70 71 72
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/php/${PORTNAME}
 

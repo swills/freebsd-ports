@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/py-pygdbmi/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pygdbmi/Makefile 461165 2018-02-07 18:32:54Z mmokhi $
 
 PORTNAME=	pygdbmi
-PORTVERSION=	0.7.3.3
-DISTVERSIONPREFIX=	pyPI-
+PORTVERSION=	0.8.2.0
 CATEGORIES=	devel lang python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

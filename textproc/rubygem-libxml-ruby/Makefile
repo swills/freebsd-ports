@@ -1,8 +1,8 @@
 # Created by: Michael Schout <mschout@gkg.net>
-# $FreeBSD: head/textproc/rubygem-libxml-ruby/Makefile 433873 2017-02-11 14:20:31Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-libxml-ruby/Makefile 461006 2018-02-05 17:50:40Z sunpoet $
 
 PORTNAME=	libxml-ruby
-PORTVERSION=	3.0.0
+PORTVERSION=	3.1.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

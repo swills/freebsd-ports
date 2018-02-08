@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-zc.buildout/Makefile 457499 2017-12-29 09:01:54Z antoine $
+# $FreeBSD: head/devel/py-zc.buildout/Makefile 460983 2018-02-05 17:07:23Z rm $
 
 PORTNAME=	zc.buildout
-PORTVERSION=	2.9.4
+PORTVERSION=	2.11.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

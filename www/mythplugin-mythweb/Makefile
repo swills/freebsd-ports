@@ -1,5 +1,5 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/www/mythplugin-mythweb/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/mythplugin-mythweb/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	mythweb
 PORTVERSION=	0.28.1
@@ -11,6 +11,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Frontend for scheduling and managing recordings on your MythTV Box
 
 LICENSE=	GPLv2
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained, all www files wrongly belongs to www user.
 
 IGNORE_WITH_PHP=	70 71 72
 

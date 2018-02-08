@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/py-eventlet/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-eventlet/Makefile 461168 2018-02-07 18:40:54Z mmokhi $
 
 PORTNAME=	eventlet
-PORTVERSION=	0.21.0
+PORTVERSION=	0.22.0
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

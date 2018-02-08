@@ -1,5 +1,5 @@
 # Created by: Joe Horn <joehorn@gmail.com>
-# $FreeBSD: head/www/extjs/Makefile 396470 2015-09-09 11:15:28Z amdmi3 $
+# $FreeBSD: head/www/extjs/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	extjs
 PORTVERSION=	4.2.2
@@ -11,6 +11,9 @@ DISTNAME=	ext-${PORTVERSION}-gpl
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	JavaScript platform for rapid development of cross-browser web apps
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained, all www files wrongly belongs to www user.
 
 LICENSE=	GPLv3
 

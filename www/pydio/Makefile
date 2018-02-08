@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/pydio/Makefile 457046 2017-12-23 12:37:01Z riggs $
+# $FreeBSD: head/www/pydio/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	pydio
 PORTVERSION=	8.0.2
@@ -12,6 +12,8 @@ COMMENT=	Ajax web file management system
 LICENSE=	AGPLv3
 
 PORTSCOUT=	limitw:1,even
+
+BROKEN=		It is wrong to have the entire files owned by www user
 
 NO_BUILD=	yes
 NO_ARCH=	yes

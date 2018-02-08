@@ -1,5 +1,5 @@
 # Created by: shanee@augusta.de
-# $FreeBSD: head/audio/rosegarden/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/audio/rosegarden/Makefile 461017 2018-02-05 20:11:24Z adridg $
 
 PORTNAME=	rosegarden
 PORTVERSION=	17.04
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	SF
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	adridg@FreeBSD.org
 COMMENT=	General purpose music editor and sequencer suite
 
 LICENSE=	GPLv2+

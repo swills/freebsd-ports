@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/net-im/empathy/Makefile 450126 2017-09-19 14:00:01Z kwm $
+# $FreeBSD: head/net-im/empathy/Makefile 461077 2018-02-06 17:01:48Z amdmi3 $
 
 PORTNAME=	empathy
 PORTVERSION=	3.12.14
@@ -48,7 +48,7 @@ RUN_DEPENDS=	iso-codes>=0:misc/iso-codes \
 		mc-tool:net-im/telepathy-mission-control
 
 USES=		gettext gmake gnome libtool localbase pathfix \
-		pkgconfig python tar:xz
+		pkgconfig python:2.7 tar:xz
 USE_GNOME=	cairo evolutiondataserver3 intlhack
 USE_XORG=	x11 xcomposite xdamage xext xfixes xi xrandr
 USE_GL=		egl

@@ -1,8 +1,8 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/finance/p5-Business-OnlinePayment/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/finance/p5-Business-OnlinePayment/Makefile 460896 2018-02-04 10:13:25Z sunpoet $
 
 PORTNAME=	Business-OnlinePayment
-PORTVERSION=	3.04
+PORTVERSION=	3.05
 CATEGORIES=	finance perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:IVAN

@@ -1,5 +1,5 @@
 # Created by: Bob Bomar <bob@fly.homeunix.org>
-# $FreeBSD: head/www/geeklog/Makefile 417719 2016-06-28 14:00:45Z mat $
+# $FreeBSD: head/www/geeklog/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	geeklog
 PORTVERSION=	1.6.1
@@ -9,6 +9,9 @@ MASTER_SITES=	http://www.geeklog.net/filemgmt/upload_dir/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Web content management system
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained, all www files wrongly belongs to www user.
 
 LICENSE=	GPLv2+
 

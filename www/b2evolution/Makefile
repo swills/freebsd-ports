@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan@mail20000.com.tw>
-# $FreeBSD: head/www/b2evolution/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/b2evolution/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	b2evolution
 PORTVERSION=	4.0.5
@@ -10,6 +10,9 @@ MASTER_SITES=	SF/evocms/${PORTNAME}/b2evo%20${PORTVERSION}-stable
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Multilingual, multiuser, multi-blog engine
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained, all www files wrongly belongs to www user.
 
 IGNORE_WITH_PHP=	70 71 72
 

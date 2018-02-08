@@ -1,9 +1,9 @@
 # Created by: Mark A. Wicks <mwicks@kettering.edu>
-# $FreeBSD: head/devel/monotone/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/devel/monotone/Makefile 461054 2018-02-06 14:17:29Z amdmi3 $
 
 PORTNAME=	monotone
 PORTVERSION=	1.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	devel
 MASTER_SITES=	http://www.monotone.ca/downloads/${PORTVERSION}/
 
@@ -21,7 +21,8 @@ LIB_DEPENDS=	libpcre.so:devel/pcre \
 
 SUB_FILES=	pkg-message
 USES=		cpe gmake iconv localbase lua:51 makeinfo perl5 \
-		pkgconfig tar:bzip2
+		pkgconfig python:run shebangfix tar:bzip2
+SHEBANG_FILES=	extra/mtn-hooks/monotone-ciabot.py
 USE_PERL5=	build
 
 GNU_CONFIGURE=	yes

@@ -1,5 +1,5 @@
 # Created by: gordon@FreeBSD.org
-# $FreeBSD: head/devel/p4p/Makefile 456883 2017-12-21 04:07:29Z gordon $
+# $FreeBSD: head/devel/p4p/Makefile 460953 2018-02-04 23:35:50Z gordon $
 
 PORTNAME=	p4p
 PORTVERSION=	2016.1.1598719
@@ -32,7 +32,7 @@ USE_RC_SUBR=	p4p
 
 .include <bsd.port.pre.mk>
 
-.include "${.CURDIR}/../p4/Makefile.inc"
+.include "${.CURDIR}/../p4d/Makefile.inc"
 
 USERS=	p4admin
 GROUPS=	p4admin

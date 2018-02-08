@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/p5-bignum/Makefile 460746 2018-02-02 19:55:18Z sunpoet $
+# $FreeBSD: head/math/p5-bignum/Makefile 460999 2018-02-05 17:50:03Z sunpoet $
 
 PORTNAME=	bignum
-PORTVERSION=	0.48
+PORTVERSION=	0.49
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:PJACKLAM

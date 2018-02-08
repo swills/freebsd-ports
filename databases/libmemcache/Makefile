@@ -1,5 +1,5 @@
 # Created by: Sean Chittenden <seanc@FreeBSD.org>
-# $FreeBSD: head/databases/libmemcache/Makefile 429023 2016-12-20 18:35:53Z sunpoet $
+# $FreeBSD: head/databases/libmemcache/Makefile 460877 2018-02-04 09:02:13Z amdmi3 $
 
 PORTNAME=	libmemcache
 DISTVERSION=	1.4.0.rc2
@@ -8,7 +8,10 @@ CATEGORIES=	databases
 MASTER_SITES=	http://people.FreeBSD.org/~seanc/libmemcache/
 
 MAINTAINER=	ports@FreeBSD.org
-COMMENT=	The C library for accessing a memcache cluster
+COMMENT=	C library for accessing a memcache cluster
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		libtool tar:bzip2
 USE_LDCONFIG=	yes

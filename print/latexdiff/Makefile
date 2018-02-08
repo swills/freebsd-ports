@@ -1,20 +1,18 @@
 # Created by: Maxim Loginov <Zeliboba@mail.ru>
-# $FreeBSD: head/print/latexdiff/Makefile 426334 2016-11-18 19:08:16Z jhale $
+# $FreeBSD: head/print/latexdiff/Makefile 461071 2018-02-06 16:13:05Z jhale $
 
 PORTNAME=	latexdiff
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.1
 CATEGORIES=	print perl5
-MASTER_SITES=	TEX_CTAN/support
-DISTNAME=	${PORTNAME}
-DIST_SUBDIR=	${PORTNAME}/${PORTVERSION}
+MASTER_SITES=	https://github.com/ftilmann/${PORTNAME}/releases/download/${PORTVERSION}/
 
 MAINTAINER=	jhale@FreeBSD.org
 COMMENT=	Determine and mark up significant differences between latex files
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		perl5 zip
+USES=		perl5
 USE_PERL5=	run
 NO_ARCH=	yes
 NO_BUILD=	yes

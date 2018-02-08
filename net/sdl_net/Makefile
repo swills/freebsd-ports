@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/net/sdl_net/Makefile 434925 2017-02-27 12:38:47Z amdmi3 $
+# $FreeBSD: head/net/sdl_net/Makefile 460979 2018-02-05 16:24:49Z amdmi3 $
 
 PORTNAME=	sdl_net
 PORTVERSION=	1.2.8
@@ -8,7 +8,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.libsdl.org/projects/SDL_net/release/
 DISTNAME=	SDL_net-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Small sample cross-platform networking library
 
 LICENSE=	ZLIB

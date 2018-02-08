@@ -1,6 +1,7 @@
-# $FreeBSD: head/print/py-qt5-printsupport/Makefile 457921 2018-01-02 20:21:34Z rakuco $
+# $FreeBSD: head/print/py-qt5-printsupport/Makefile 460949 2018-02-04 20:56:45Z rakuco $
 
 PORTNAME=	printsupport
+PORTREVISION=	1
 CATEGORIES=	print python
 
 MAINTAINER=	kde@FreeBSD.org

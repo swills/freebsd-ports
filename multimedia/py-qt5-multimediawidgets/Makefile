@@ -1,6 +1,7 @@
-# $FreeBSD: head/multimedia/py-qt5-multimediawidgets/Makefile 457921 2018-01-02 20:21:34Z rakuco $
+# $FreeBSD: head/multimedia/py-qt5-multimediawidgets/Makefile 460949 2018-02-04 20:56:45Z rakuco $
 
 PORTNAME=	multimediawidgets
+PORTREVISION=	1
 CATEGORIES=	multimedia devel python
 
 MAINTAINER=	kde@FreeBSD.org

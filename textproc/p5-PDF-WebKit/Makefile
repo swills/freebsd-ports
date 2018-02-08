@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/p5-PDF-WebKit/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-PDF-WebKit/Makefile 461000 2018-02-05 17:50:08Z sunpoet $
 
 PORTNAME=	PDF-WebKit
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

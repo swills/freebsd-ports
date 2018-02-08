@@ -1,5 +1,5 @@
 # Created by: David Yeske <dyeske@gmail.com>
-# $FreeBSD: head/audio/sdl_sound/Makefile 432169 2017-01-22 22:27:54Z rene $
+# $FreeBSD: head/audio/sdl_sound/Makefile 460979 2018-02-05 16:24:49Z amdmi3 $
 
 PORTNAME=	sdl_sound
 PORTVERSION=	1.0.3
@@ -8,7 +8,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://www.icculus.org/SDL_sound/downloads/
 DISTNAME=	SDL_sound-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	SDL audio library and player for some popular sound file formats
 
 USES=		libtool

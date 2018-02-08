@@ -1,5 +1,5 @@
 # Created by: <mark@goodstorm.com>
-# $FreeBSD: head/graphics/php-magickwand/Makefile 450852 2017-09-28 15:36:31Z kwm $
+# $FreeBSD: head/graphics/php-magickwand/Makefile 461158 2018-02-07 17:46:10Z mat $
 
 PORTNAME=	magickwand
 PORTVERSION=	1.0.9
@@ -15,7 +15,7 @@ COMMENT=	PHP extension to manipulate images
 LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick
 
 USES=		php:ext pkgconfig
-IGNORE_WITH_PHP=	70 71
+IGNORE_WITH_PHP=	70 71 72
 
 CONFIGURE_ARGS=	--with-magickwand=${LOCALBASE}
 

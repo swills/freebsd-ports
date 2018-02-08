@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/powerpc64-gcc/Makefile 441822 2017-05-27 00:29:56Z kan $
+# $FreeBSD: head/devel/powerpc64-gcc/Makefile 461058 2018-02-06 14:32:52Z swills $
 
 PORTNAME=	gcc
 PORTVERSION=	6.3.0
@@ -29,7 +29,7 @@ PLIST_SUB=	TARGETARCH=${PKGNAMEPREFIX:C/-//g} \
 .if empty(GCC_TARGET)
 # We are building for a FreeBSD target
 GCC_TARGET?=	${PKGNAMEPREFIX}unknown-${OPSYS:tl}${OSREL}
-BU_PREFIX?=	${PKGNAMEPREFIX}${OPSYS:tl}
+BU_PREFIX?=	${PKGNAMEPREFIX}unknown-${OPSYS:tl}${OSREL}
 EXTRA_PATCHES+= ${FILESDIR}/freebsd-format-extensions
 .else
 BU_PREFIX?=	${GCC_TARGET}

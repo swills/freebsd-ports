@@ -1,7 +1,5 @@
 # Created by: ache@FreeBSD.org
-# $FreeBSD: head/www/geolizer/Makefile 434643 2017-02-22 21:08:51Z dinoex $
-
-CATEGORIES=
+# $FreeBSD: head/www/geolizer/Makefile 461107 2018-02-06 21:05:50Z bdrewery $
 
 MAINTAINER=	dinoex@FreeBSD.org
 

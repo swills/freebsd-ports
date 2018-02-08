@@ -1,8 +1,8 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/security/nextcloud-twofactor_totp/Makefile 456204 2017-12-13 12:07:46Z brnrd $
+# $FreeBSD: head/security/nextcloud-twofactor_totp/Makefile 460922 2018-02-04 11:14:00Z brnrd $
 
 PORTNAME=	twofactor_totp
-PORTVERSION=	1.4.0
+PORTVERSION=	1.4.1
 CATEGORIES=	security
 MASTER_SITES=	https://github.com/${PKGNAMEPREFIX:S/-//}/${PORTNAME}/releases/download/${DISTVERSIONPREFIX}${PORTVERSION}/
 PKGNAMEPREFIX=	nextcloud-
@@ -13,6 +13,7 @@ MAINTAINER=	brnrd@freebsd.org
 COMMENT=	TOTP multi-factor auth app for Nextcloud
 
 LICENSE=	AGPLv3
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	nextcloud>=12:www/nextcloud
 
@@ -30,5 +31,6 @@ WWWDIR=		${PREFIX}/www/nextcloud/apps/${PORTNAME}
 do-install:
 	${MKDIR} ${STAGEDIR}${WWWDIR}
 	(cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${WWWDIR})
+	${RM} ${STAGEDIR}${WWWDIR}/COPYING
 
 .include <bsd.port.mk>

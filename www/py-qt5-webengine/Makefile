@@ -1,6 +1,7 @@
-# $FreeBSD: head/www/py-qt5-webengine/Makefile 458563 2018-01-09 20:06:34Z jrm $
+# $FreeBSD: head/www/py-qt5-webengine/Makefile 460949 2018-02-04 20:56:45Z rakuco $
 
 PORTNAME=	webengine
+PORTREVISION=	1
 CATEGORIES=	www devel python
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,14 +1,16 @@
 # Created by: Sebastian Yepes F. <esn@x123.info>
-# $FreeBSD: head/sysutils/apachetop/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/sysutils/apachetop/Makefile 460934 2018-02-04 15:09:38Z danfe $
 
 PORTNAME=	apachetop
 PORTVERSION=	0.12.6
 PORTREVISION=	5
 CATEGORIES=	sysutils
-MASTER_SITES=	http://lukasz.wasikowski.net/files/
+MASTER_SITES=	https://www.freebsd.systems/files/
 
 MAINTAINER=	lukasz@wasikowski.net
-COMMENT=	Apache RealTime log stats
+COMMENT=	Apache realtime log stats
+
+LICENSE=	BSD3CLAUSE
 
 GNU_CONFIGURE=	yes
 USES=		ncurses readline

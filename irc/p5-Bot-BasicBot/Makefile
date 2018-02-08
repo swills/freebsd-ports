@@ -1,8 +1,8 @@
 # Created by: Aaron Dalton <aaron@FreeBSD.org>
-# $FreeBSD: head/irc/p5-Bot-BasicBot/Makefile 460745 2018-02-02 19:55:13Z sunpoet $
+# $FreeBSD: head/irc/p5-Bot-BasicBot/Makefile 460897 2018-02-04 10:13:31Z sunpoet $
 
 PORTNAME=	Bot-BasicBot
-PORTVERSION=	0.92
+PORTVERSION=	0.93
 CATEGORIES=	irc perl5
 MASTER_SITES=	CPAN/Bot
 PKGNAMEPREFIX=	p5-
@@ -15,7 +15,7 @@ LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-POE>=0:devel/p5-POE \
-		p5-POE-Component-IRC>=0:irc/p5-POE-Component-IRC
+		p5-POE-Component-IRC>=6.90:irc/p5-POE-Component-IRC
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes

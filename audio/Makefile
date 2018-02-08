@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 460844 2018-02-03 20:03:23Z yuri $
+# $FreeBSD: head/audio/Makefile 460952 2018-02-04 22:33:06Z yuri $
 #
 
     COMMENT = Audio tools
@@ -680,6 +680,7 @@
     SUBDIR += py-pysndfile
     SUBDIR += py-shout
     SUBDIR += py-soundcloud
+    SUBDIR += py-sounddevice
     SUBDIR += py-soundscrape
     SUBDIR += py-speechrecognition
     SUBDIR += py-speex

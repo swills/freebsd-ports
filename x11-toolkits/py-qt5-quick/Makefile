@@ -1,6 +1,7 @@
-# $FreeBSD: head/x11-toolkits/py-qt5-quick/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/x11-toolkits/py-qt5-quick/Makefile 460949 2018-02-04 20:56:45Z rakuco $
 
 PORTNAME=	quick
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits devel python
 
 MAINTAINER=	kde@FreeBSD.org

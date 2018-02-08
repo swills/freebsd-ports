@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 460818 2018-02-03 15:01:06Z mmokhi $
+# $FreeBSD: head/net-mgmt/Makefile 460932 2018-02-04 14:01:50Z feld $
 #
 
     COMMENT = Network management tools
@@ -366,6 +366,7 @@
     SUBDIR += torrus
     SUBDIR += triton-guesttools
     SUBDIR += unbound_exporter
+    SUBDIR += unifi-devel
     SUBDIR += unifi5
     SUBDIR += victorops-nagios
     SUBDIR += vidalia

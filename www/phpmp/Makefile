@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/www/phpmp/Makefile 458818 2018-01-12 11:21:07Z rene $
+# $FreeBSD: head/www/phpmp/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	phpmp
 PORTVERSION=	0.12.0
@@ -9,6 +9,9 @@ MASTER_SITES=	http://www.bayofrum.net/dist/${PORTNAME}/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Web interface for music player daemon
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained, all www files wrongly belongs to www user.
 
 LICENSE=	GPLv2
 

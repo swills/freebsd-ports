@@ -1,14 +1,14 @@
 # Created by: Pav Lucistnik <pav@FreeBSD.org>
-# $FreeBSD: head/net/bird/Makefile 455651 2017-12-06 14:16:51Z mat $
+# $FreeBSD: head/net/bird/Makefile 461153 2018-02-07 16:31:27Z olivier $
 
 PORTNAME=	bird
 PORTVERSION=	1.6.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net
 MASTER_SITES=	ftp://bird.network.cz/pub/bird/ \
 		http://bird.mpls.in/distfiles/bird/
 
-MAINTAINER=	melifaro@ipfw.ru
+MAINTAINER=	olivier@FreeBSD.org
 COMMENT?=	Dynamic IP routing daemon (${FLAVOR:Uipv4:S/ip/IP/} version)
 
 LICENSE=	GPLv2

@@ -1,7 +1,8 @@
 # Created by: Simon 'corecode' Schubert <corecode@corecode.ath.cx>
-# $FreeBSD: head/mail/claws-mail/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/mail/claws-mail/Makefile 461043 2018-02-06 13:15:36Z amdmi3 $
 
 PORTNAME=	claws-mail
+PORTREVISION=	1
 CATEGORIES=	mail news ipv6
 
 COMMENT=	Lightweight and featureful GTK+ based e-mail and news client
@@ -18,9 +19,8 @@ RUN_DEPENDS=	mime-support>0:misc/mime-support
 
 USE_XORG=	ice sm
 USE_GNOME=	cairo gtk20 librsvg2
-USES=		cpe desktop-file-utils pathfix shebangfix ssl
+USES=		cpe desktop-file-utils pathfix python:2.7,run shebangfix ssl
 SHEBANG_FILES=	tools/*.pl tools/*.py tools/tb2claws-mail
-python_CMD=	${LOCALBASE}/bin/python2
 INSTALLS_ICONS=	yes
 
 OPTIONS_DEFINE=	COMPFACE DEBUG DOCS ENCHANT IPV6 JPILOT LDAP \

@@ -1,5 +1,5 @@
 # Created by: Babak Farrokhi <babak@farrokhi.net>
-# $FreeBSD: head/www/eventum/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/eventum/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	eventum
 PORTVERSION=	2.2
@@ -9,6 +9,9 @@ MASTER_SITES=	MYSQL/eventum
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Eventum issue tracking system
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained, all www files wrongly belongs to www user.
 
 IGNORE_WITH_PHP=	70 71 72
 

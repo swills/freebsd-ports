@@ -1,5 +1,5 @@
 # Created by: chinsan@mail2000.com.tw
-# $FreeBSD: head/www/bblog/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/bblog/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	bBlog
 PORTVERSION=	0.7.6
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME:tl}/${PORTNAME}%20${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Elegant personal publishing system with Smarty
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained, all www files wrongly belongs to www user.
 
 IGNORE_WITH_PHP=	70 71 72
 

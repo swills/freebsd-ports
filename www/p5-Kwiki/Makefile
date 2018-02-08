@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/www/p5-Kwiki/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Kwiki/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	Kwiki
 PORTVERSION=	0.39
@@ -12,6 +12,10 @@ DISTNAME=	kwiki-trunk-20070327
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Kwiki Wiki Building Framework
+
+EXPIRATION_DATE=	2018-05-07
+DEPRECATED=	All www files wrongly belongs to www user.
+FORBIDDEN=	All www files wrongly belongs to www user.
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual

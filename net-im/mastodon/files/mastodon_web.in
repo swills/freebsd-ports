@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: head/net-im/mastodon/files/mastodon_web.in 458637 2018-01-10 13:19:08Z jrm $
+# $FreeBSD: head/net-im/mastodon/files/mastodon_web.in 461097 2018-02-06 19:42:03Z jrm $
 
 # PROVIDE: mastodon_web
 # REQUIRE: LOGIN postgresql nginx redis
@@ -65,7 +65,7 @@ mastodon_web_user=mastodon
 pidfile="/var/run/mastodon/${name}.pid"
 procname="%%RUBY%%:"
 
-start_precmd="rm -f %%WWWDIR%%/Gemfile.lock"
+start_precmd=":>%%WWWDIR%%/Gemfile.lock"
 command="%%PREFIX%%/bin/puma"
 command_flags="-C config/puma.rb"
 command_args=">> /var/log/mastodon/${name##mastodon_}.log 2>&1 &"

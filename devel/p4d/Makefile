@@ -1,8 +1,8 @@
 # Created by: gordon@FreeBSD.org
-# $FreeBSD: head/devel/p4d/Makefile 456883 2017-12-21 04:07:29Z gordon $
+# $FreeBSD: head/devel/p4d/Makefile 460953 2018-02-04 23:35:50Z gordon $
 
 PORTNAME=	p4d
-PORTVERSION=	2016.1.1598719
+PORTVERSION=	2016.1.1611275
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.perforce.com/perforce/${P4VERSION}/bin.${PLATFORM}/ \
 		http://filehost.perforce.com/perforce/${P4VERSION}/bin.${PLATFORM}/
@@ -32,7 +32,7 @@ USE_RC_SUBR=	p4d
 
 .include <bsd.port.pre.mk>
 
-.include "${.CURDIR}/../p4/Makefile.inc"
+.include "${.CURDIR}/Makefile.inc"
 
 USERS=	p4admin
 GROUPS=	p4admin

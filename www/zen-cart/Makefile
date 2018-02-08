@@ -1,5 +1,5 @@
 # Created by: Beech Rintoul <beech@FreeBSD.org>
-# $FreeBSD: head/www/zen-cart/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/www/zen-cart/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	zen-cart
 PORTVERSION=	1.3.9h
@@ -11,6 +11,9 @@ DISTNAME=	zen-cart-v1.3.9h-full-fileset-10262010
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PHP-based user-friendly, open source shopping cart
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained, no upstream, all www files wrongly belongs to www user.
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/license.txt

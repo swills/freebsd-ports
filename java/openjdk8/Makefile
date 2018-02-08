@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/openjdk8/Makefile 460849 2018-02-03 21:41:06Z glewis $
+# $FreeBSD: head/java/openjdk8/Makefile 461197 2018-02-08 06:29:02Z glewis $
 
 PORTNAME=	openjdk
 PORTVERSION=	${JDK_MAJOR_VERSION}.${JDK_UPDATE_VERSION}.${JDK_BUILD_NUMBER:S/^0//}
@@ -329,6 +329,12 @@ BUILD_DEPENDS+=		${BOOTSTRAPJDKDIR}/bin/javac:java/bootstrap-openjdk8
 # XXX We must limit max heap size for 32-bit targets.
 CONFIGURE_ARGS+=	--with-boot-jdk-jvmargs="-Xmx768m"
 MAKE_ENV+=	JAVADOC_CMD_MEM="-Xmx768m"
+.endif
+
+.if ${ARCH} == i386
+# Fix the build for i386 when WITH_LLD_IS_LD is set
+# https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=225741
+MAKE_ENV+=	LFLAGS="-Wl,-z,notext"
 .endif
 
 .if ${ARCH} == amd64 || ${ARCH} == i386 || ${ARCH} == powerpc64

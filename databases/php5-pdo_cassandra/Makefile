@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/databases/php5-pdo_cassandra/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/databases/php5-pdo_cassandra/Makefile 461158 2018-02-07 17:46:10Z mat $
 
 PORTNAME=	pdo_cassandra
 PORTVERSION=	0.2.1
@@ -25,7 +25,7 @@ USES=		compiler:c++11-lib php:ext pkgconfig
 USE_CXXSTD=	c++11
 USE_PHP=	pdo:build
 
-IGNORE_WITH_PHP=	70 71
+IGNORE_WITH_PHP=	70 71 72
 
 .include <bsd.port.pre.mk>
 .include "${PORTSDIR}/devel/thrift/bsd.thrift.mk"

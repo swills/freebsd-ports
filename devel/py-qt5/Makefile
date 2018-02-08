@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/py-qt5/Makefile 458563 2018-01-09 20:06:34Z jrm $
+# $FreeBSD: head/devel/py-qt5/Makefile 460949 2018-02-04 20:56:45Z rakuco $
 
 PORTNAME=	qt5
 PORTVERSION=	${PYQT5_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

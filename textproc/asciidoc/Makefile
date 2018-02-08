@@ -1,8 +1,9 @@
 # Created by: anholt@FreeBSD.org
-# $FreeBSD: head/textproc/asciidoc/Makefile 455948 2017-12-11 10:37:33Z sunpoet $
+# $FreeBSD: head/textproc/asciidoc/Makefile 460914 2018-02-04 10:48:57Z sunpoet $
 
 PORTNAME=	asciidoc
 PORTVERSION=	8.6.10
+PORTREVISION=	1
 CATEGORIES=	textproc
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -28,6 +29,7 @@ python2_CMD=	${PYTHON_CMD}
 
 post-patch:
 	@${REINPLACE_CMD} -e '/^INSTALL_PROG/ s|INSTALL_PROGRAM|INSTALL_SCRIPT|; s|\.conf|&.sample|; s|python\( a2x.py\)|${PYTHON_CMD}\1|' ${WRKSRC}/Makefile.in
+	@${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|' ${WRKSRC}/a2x.py
 	@${FIND} ${WRKSRC} -name '*.conf' | ${XARGS} -I % ${LN} % %.sample
 
 post-install:

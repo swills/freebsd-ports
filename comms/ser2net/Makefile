@@ -1,8 +1,8 @@
 # Created by: Devon H. O'Dell <devon.odell@coyotepoint.com>
-# $FreeBSD: head/comms/ser2net/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/comms/ser2net/Makefile 460876 2018-02-04 08:54:30Z danfe $
 
 PORTNAME=	ser2net
-PORTVERSION=	2.10.0
+PORTVERSION=	3.5
 CATEGORIES=	comms net
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}
 
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USE_RC_SUBR=	${PORTNAME}
 
-USES=		autoreconf libtool
+USES=		libtool
 GNU_CONFIGURE=	yes
 
 PORTDOCS=	AUTHORS ChangeLog NEWS README
@@ -32,6 +32,8 @@ post-patch:
 	@${REINPLACE_CMD} -e \
 		's!ttyS!cuad!g' ${WRKSRC}/${i}
 .endfor
+	@${REINPLACE_CMD} -e '/#include <values\.h>/d' \
+		${WRKSRC}/readconfig.c
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} \
@@ -43,8 +45,6 @@ do-install:
 
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-.for i in ${PORTDOCS}
-	(cd ${WRKSRC} && ${INSTALL_DATA} ${i} ${STAGEDIR}${DOCSDIR})
-.endfor
+	${INSTALL_DATA} ${PORTDOCS:S!^!${WRKSRC}/!} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

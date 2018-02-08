@@ -1,4 +1,4 @@
-# $FreeBSD: head/ports-mgmt/pkg-devel/Makefile 458301 2018-01-06 23:14:19Z bapt $
+# $FreeBSD: head/ports-mgmt/pkg-devel/Makefile 461053 2018-02-06 14:13:35Z swills $
 
 PORTNAME=	pkg
 DISTVERSION=	1.10.99.7
@@ -70,7 +70,7 @@ pre-everything::
 .endif
 
 .undef INSTALLS_DEPENDS
-.if !exists(${LOCALBASE}/sbin/pkg)
+.if !exists(${LOCALBASE}/sbin/pkg) || !defined(CROSS_TOOLCHAIN)
 PKG_BIN=	${WRKSRC}/src/pkg-static
 .endif
 

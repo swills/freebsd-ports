@@ -1,9 +1,9 @@
 # Created by: Alexander Brovikov <alexander@brovikov.ru>
-# $FreeBSD: head/net/libsrtp/Makefile 430937 2017-01-09 10:05:19Z amdmi3 $
+# $FreeBSD: head/net/libsrtp/Makefile 461203 2018-02-08 08:29:58Z bhughes $
 
 PORTNAME=	libsrtp
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.5.4
+DISTVERSION=	1.6.0
 CATEGORIES=	net
 
 MAINTAINER=	tijl@FreeBSD.org

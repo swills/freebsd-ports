@@ -1,5 +1,5 @@
 # Created by: Yi-Jheng Lin <yzlin@cs.nctu.edu.tw>
-# $FreeBSD: head/www/yii/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/yii/Makefile 461130 2018-02-07 10:06:07Z bapt $
 
 PORTNAME=	yii
 PORTVERSION=	1.1.19
@@ -7,6 +7,9 @@ CATEGORIES=	www
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	High-performance component-based PHP framework
+
+EXPIRATION_DATE=	2018-03-07
+DEPRECATED=	Unmaintained, all www files wrongly belongs to www user.
 
 LICENSE=	BSD3CLAUSE
 
