@@ -4,6 +4,7 @@ PORTNAME=	diffy
 PORTVERSION=	3.1.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
+PKGNAMESUFFIX=	31
 
 MAINTAINER=	idefix@fechner.net
 COMMENT=	Convenient diffing in ruby

@@ -4,6 +4,7 @@ PORTNAME=	wikicloth
 PORTVERSION=	0.8.1
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
+PKGNAMESUFFIX=	081
 
 MAINTAINER=	idefix@fechner.net
 COMMENT=	Ruby parser for the MediaWiki markup language

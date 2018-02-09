@@ -4,6 +4,7 @@ PORTNAME=	asciidoctor-plantuml
 PORTVERSION=	0.0.7
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
+PKGNAMESUFFIX=	007
 
 MAINTAINER=	idefix@fechner.net
 COMMENT=	Asciidoctor PlantUML extension
