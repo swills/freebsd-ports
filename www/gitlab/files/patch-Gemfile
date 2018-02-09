@@ -20,15 +20,6 @@
  
  # for aws storage
  gem 'unf', '~> 0.1.4'
-@@ -172,7 +172,7 @@ gem 're2', '~> 1.1.1'
- 
- # Misc
- 
--gem 'version_sorter', '~> 2.1.0'
-+gem 'version_sorter', '>= 2.1.0'
- 
- # Cache
- gem 'redis-rails', '~> 5.0.2'
 @@ -182,7 +182,7 @@ gem 'redis', '~> 3.2'
  gem 'connection_pool', '~> 2.0'
  

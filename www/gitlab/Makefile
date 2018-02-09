@@ -120,7 +120,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-rainbow2>=2.2:devel/rubygem-rainbow2 \
 	rubygem-settingslogic>=2.0.9:devel/rubygem-settingslogic \
 	rubygem-re2>=1.1.1:devel/rubygem-re2 \
-	rubygem-version_sorter>=2.1.0:textproc/rubygem-version_sorter \
+	rubygem-version_sorter21>=2.1.0:textproc/rubygem-version_sorter21 \
 	rubygem-redis-rails>=5.0.1:www/rubygem-redis-rails \
 	rubygem-redis3>=3.2:databases/rubygem-redis3 \
 	rubygem-connection_pool>=2.0:net/rubygem-connection_pool \
