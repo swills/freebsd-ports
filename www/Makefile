@@ -1958,6 +1958,7 @@
     SUBDIR += rubygem-acts-as-taggable-on5
     SUBDIR += rubygem-acts_as_taggable
     SUBDIR += rubygem-addressable
+    SUBDIR += rubygem-addressable23
     SUBDIR += rubygem-adsf
     SUBDIR += rubygem-akami
     SUBDIR += rubygem-amazon-ecs
@@ -2035,6 +2036,7 @@
     SUBDIR += rubygem-hpricot
     SUBDIR += rubygem-html2haml
     SUBDIR += rubygem-http
+    SUBDIR += rubygem-http098
     SUBDIR += rubygem-http-cookie
     SUBDIR += rubygem-http-form_data
     SUBDIR += rubygem-http-form_data1
@@ -2074,6 +2076,7 @@
     SUBDIR += rubygem-kaminari-rails50
     SUBDIR += rubygem-kensa
     SUBDIR += rubygem-kubeclient
+    SUBDIR += rubygem-kubeclient22
     SUBDIR += rubygem-layout_yullio_generator
     SUBDIR += rubygem-less
     SUBDIR += rubygem-lighthouse-api
