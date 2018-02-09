@@ -13,7 +13,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-actionmailer4>=3:mail/rubygem-actionmailer4 \
-		rubygem-premailer17>=1.7.9:mail/rubygem-premailer17
+		rubygem-premailer>=1.7.9:mail/rubygem-premailer
 
 PORTSCOUT=	limit=^1\.9
 
