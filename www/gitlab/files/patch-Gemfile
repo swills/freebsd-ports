@@ -20,12 +20,7 @@
  
  # for aws storage
  gem 'unf', '~> 0.1.4'
-@@ -135,16 +135,16 @@ gem 'bootstrap_form', '~> 2.7.0'
- gem 'nokogiri', '~> 1.8.1'
- 
- # Diffs
--gem 'diffy', '~> 3.1.0'
-+gem 'diffy', '>= 3.1.0'
+@@ -139,12 +139,12 @@ gem 'diffy', '~> 3.1.0'
  
  # Application server
  group :unicorn do
