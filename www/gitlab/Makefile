@@ -99,7 +99,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-rdoc>=4.2:devel/rubygem-rdoc \
 	rubygem-org-ruby>=0.9.12:textproc/rubygem-org-ruby \
 	rubygem-creole>=0.5.0:textproc/rubygem-creole \
-	rubygem-wikicloth>=0.8.1:textproc/rubygem-wikicloth \
+	rubygem-wikicloth081>=0.8.1:textproc/rubygem-wikicloth081 \
 	rubygem-asciidoctor>=1.5.2:textproc/rubygem-asciidoctor \
 	rubygem-asciidoctor-plantuml007>=0.0.7:textproc/rubygem-asciidoctor-plantuml007 \
 	rubygem-rouge2>=2.0:textproc/rubygem-rouge2 \

@@ -1600,6 +1600,7 @@
     SUBDIR += rubygem-version_sorter
     SUBDIR += rubygem-whatlanguage
     SUBDIR += rubygem-wikicloth
+    SUBDIR += rubygem-wikicloth081
     SUBDIR += rubygem-xml-simple
     SUBDIR += rubygem-ya2yaml
     SUBDIR += rubygem-yard
