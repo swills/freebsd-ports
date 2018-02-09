@@ -20,13 +20,7 @@
  
  # for aws storage
  gem 'unf', '~> 0.1.4'
-@@ -139,12 +139,12 @@ gem 'diffy', '~> 3.1.0'
- 
- # Application server
- group :unicorn do
--  gem 'unicorn', '~> 5.1.0'
-+  gem 'unicorn', '>= 5.1.0'
-   gem 'unicorn-worker-killer', '~> 0.4.4'
+@@ -144,7 +144,7 @@ group :unicorn do
  end
  
  # State machine
