@@ -159,7 +159,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-select2-rails3>=3.5.9:www/rubygem-select2-rails3 \
 	rubygem-virtus>=1.0.1:devel/rubygem-virtus \
 	rubygem-base32>=0.3.0:converters/rubygem-base32 \
-	rubygem-sentry-raven>=2.5.3:devel/rubygem-sentry-raven \
+	rubygem-sentry-raven25>=2.5.3:devel/rubygem-sentry-raven25 \
 	rubygem-premailer-rails>=1.9.7:mail/rubygem-premailer-rails \
 	rubygem-ruby_parser>=3.8.4:devel/rubygem-ruby_parser \
 	rubygem-rails-i18n-4>=4.0.9:devel/rubygem-rails-i18n-4 \
