@@ -2044,7 +2044,6 @@
     SUBDIR += rubygem-http-form_data1
     SUBDIR += rubygem-http_router
     SUBDIR += rubygem-httparty
-    SUBDIR += rubygem-httparty013
     SUBDIR += rubygem-httpclient
     SUBDIR += rubygem-httpi
     SUBDIR += rubygem-hurley
@@ -2207,6 +2206,7 @@
     SUBDIR += rubygem-unicorn
     SUBDIR += rubygem-unicorn51
     SUBDIR += rubygem-unicorn-worker-killer
+    SUBDIR += rubygem-unicorn-worker-killer044
     SUBDIR += rubygem-url_escape
     SUBDIR += rubygem-url_mount
     SUBDIR += rubygem-vegas

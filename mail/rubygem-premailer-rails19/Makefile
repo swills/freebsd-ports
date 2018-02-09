@@ -12,7 +12,7 @@ COMMENT=	Improve the rendering of HTML emails
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	rubygem-actionmailer5>=3:mail/rubygem-actionmailer5 \
+RUN_DEPENDS=	rubygem-actionmailer4>=3:mail/rubygem-actionmailer4 \
 		rubygem-premailer17>=1.7.9:mail/rubygem-premailer17
 
 PORTSCOUT=	limit=^1\.9

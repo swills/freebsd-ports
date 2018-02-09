@@ -108,7 +108,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-nokogiri>=1.8.1:textproc/rubygem-nokogiri  \
 	rubygem-diffy31>=3.1.0:textproc/rubygem-diffy31 \
 	rubygem-unicorn51>=5.1.0:www/rubygem-unicorn51 \
-	rubygem-unicorn-worker-killer>=0.4.4:www/rubygem-unicorn-worker-killer \
+	rubygem-unicorn-worker-killer044>=0.4.4:www/rubygem-unicorn-worker-killer044 \
 	rubygem-state_machines-activerecord04>=0.4.0:databases/rubygem-state_machines-activerecord04 \
 	rubygem-acts-as-taggable-on>=4.0.0:www/rubygem-acts-as-taggable-on \
 	rubygem-sidekiq>=5.0.0:devel/rubygem-sidekiq \
@@ -116,7 +116,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-redis-namespace15>=1.5.2:databases/rubygem-redis-namespace15 \
 	rubygem-sidekiq-limit_fetch>=3.4:devel/rubygem-sidekiq-limit_fetch \
 	rubygem-rufus-scheduler>=3.4.0:devel/rubygem-rufus-scheduler \
-	rubygem-httparty013>=0.13.3:www/rubygem-httparty013 \
+	rubygem-httparty>=0.13.3:www/rubygem-httparty \
 	rubygem-rainbow2>=2.2:devel/rubygem-rainbow2 \
 	rubygem-settingslogic>=2.0.9:devel/rubygem-settingslogic \
 	rubygem-re2>=1.1.1:devel/rubygem-re2 \
