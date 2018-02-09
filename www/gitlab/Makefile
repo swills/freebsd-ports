@@ -135,7 +135,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-d3_rails-rails4>=3.5.0:www/rubygem-d3_rails-rails4 \
 	rubygem-sanitize20>=2.0:textproc/rubygem-sanitize20 \
 	rubygem-babosa>=1.0.2:textproc/rubygem-babosa \
-	rubygem-loofah>=2.0.3:textproc/rubygem-loofah \
+	rubygem-loofah20>=2.0.3:textproc/rubygem-loofah20 \
 	rubygem-licensee8>=8.7:devel/rubygem-licensee8 \
 	rubygem-rack-attack>=4.4.1:www/rubygem-rack-attack \
 	rubygem-ace-rails-ap>=4.1.0:www/rubygem-ace-rails-ap \
