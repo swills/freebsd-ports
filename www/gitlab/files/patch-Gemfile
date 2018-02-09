@@ -127,15 +127,6 @@
  gem 'octokit', '~> 4.6.2'
  
  gem 'mail_room', '~> 0.9.1'
-@@ -393,7 +307,7 @@ gem 'vmstat', '~> 2.3.0'
- gem 'sys-filesystem', '~> 1.1.6'
- 
- # SSH host key support
--gem 'net-ssh', '~> 4.1.0'
-+gem 'net-ssh', '>= 4.1.0'
- 
- # Required for ED25519 SSH host key support
- group :ed25519 do
 @@ -403,7 +317,7 @@ group :ed25519 do
  end
  
