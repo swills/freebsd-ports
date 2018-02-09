@@ -116,7 +116,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-redis-namespace15>=1.5.2:databases/rubygem-redis-namespace15 \
 	rubygem-sidekiq-limit_fetch>=3.4:devel/rubygem-sidekiq-limit_fetch \
 	rubygem-rufus-scheduler>=3.4.0:devel/rubygem-rufus-scheduler \
-	rubygem-httparty>=0.13.3:www/rubygem-httparty \
+	rubygem-httparty013>=0.13.3:www/rubygem-httparty013 \
 	rubygem-rainbow2>=2.2:devel/rubygem-rainbow2 \
 	rubygem-settingslogic>=2.0.9:devel/rubygem-settingslogic \
 	rubygem-re2>=1.1.1:devel/rubygem-re2 \
