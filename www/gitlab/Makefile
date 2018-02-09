@@ -101,7 +101,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-creole>=0.5.0:textproc/rubygem-creole \
 	rubygem-wikicloth>=0.8.1:textproc/rubygem-wikicloth \
 	rubygem-asciidoctor>=1.5.2:textproc/rubygem-asciidoctor \
-	rubygem-asciidoctor-plantuml>=0.0.7:textproc/rubygem-asciidoctor-plantuml \
+	rubygem-asciidoctor-plantuml007>=0.0.7:textproc/rubygem-asciidoctor-plantuml007 \
 	rubygem-rouge2>=2.0:textproc/rubygem-rouge2 \
 	rubygem-truncato>=0.7.9:textproc/rubygem-truncato \
 	rubygem-bootstrap_form>=2.7.0:devel/rubygem-bootstrap_form \
