@@ -133,7 +133,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-ruby-fogbugz>=0.2.1:devel/rubygem-ruby-fogbugz \
 	rubygem-kubeclient22>=2.2.0:www/rubygem-kubeclient22 \
 	rubygem-d3_rails-rails4>=3.5.0:www/rubygem-d3_rails-rails4 \
-	rubygem-sanitize>=2.0:textproc/rubygem-sanitize \
+	rubygem-sanitize20>=2.0:textproc/rubygem-sanitize20 \
 	rubygem-babosa>=1.0.2:textproc/rubygem-babosa \
 	rubygem-loofah>=2.0.3:textproc/rubygem-loofah \
 	rubygem-licensee8>=8.7:devel/rubygem-licensee8 \

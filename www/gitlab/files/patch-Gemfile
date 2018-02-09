@@ -20,12 +20,7 @@
  
  # for aws storage
  gem 'unf', '~> 0.1.4'
-@@ -209,17 +209,17 @@ gem 'kubeclient', '~> 2.2.0'
- gem 'd3_rails', '~> 3.5.0'
- 
- # Sanitize user input
--gem 'sanitize', '~> 2.0'
-+gem 'sanitize', '>= 2.0'
+@@ -213,13 +213,13 @@ gem 'sanitize', '~> 2.0'
  gem 'babosa', '~> 1.0.2'
  
  # Sanitizes SVG input
