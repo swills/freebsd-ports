@@ -147,7 +147,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-webpack-rails>=0.9.10:www/rubygem-webpack-rails \
 	rubygem-rack-proxy>=0.6.0:www/rubygem-rack-proxy \
 	rubygem-sass-rails5>=5.0.6:textproc/rubygem-sass-rails5 \
-	rubygem-uglifier>=2.7.2:www/rubygem-uglifier \
+	rubygem-uglifier27>=2.7.2:www/rubygem-uglifier27 \
 	rubygem-addressable>=2.5.2:www/rubygem-addressable \
 	rubygem-bootstrap-sass>=3.3.0:www/rubygem-bootstrap-sass \
 	rubygem-font-awesome-rails-rails4>=4.7:devel/rubygem-font-awesome-rails-rails4 \
