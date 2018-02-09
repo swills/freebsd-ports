@@ -20,15 +20,6 @@
  
  # for aws storage
  gem 'unf', '~> 0.1.4'
-@@ -182,7 +182,7 @@ gem 'redis', '~> 3.2'
- gem 'connection_pool', '~> 2.0'
- 
- # HipChat integration
--gem 'hipchat', '~> 1.5.0'
-+gem 'hipchat', '>= 1.5.0'
- 
- # JIRA integration
- gem 'jira-ruby', '~> 1.4'
 @@ -203,23 +203,23 @@ gem 'asana', '~> 0.6.0'
  gem 'ruby-fogbugz', '~> 0.2.1'
  
