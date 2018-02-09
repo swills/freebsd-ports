@@ -131,7 +131,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-slack-notifier1>=1.5.1:devel/rubygem-slack-notifier1 \
 	rubygem-asana>=0.6.0:www/rubygem-asana \
 	rubygem-ruby-fogbugz>=0.2.1:devel/rubygem-ruby-fogbugz \
-	rubygem-kubeclient>=2.2.0:www/rubygem-kubeclient \
+	rubygem-kubeclient22>=2.2.0:www/rubygem-kubeclient22 \
 	rubygem-d3_rails-rails4>=3.5.0:www/rubygem-d3_rails-rails4 \
 	rubygem-sanitize>=2.0:textproc/rubygem-sanitize \
 	rubygem-babosa>=1.0.2:textproc/rubygem-babosa \

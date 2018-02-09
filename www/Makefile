@@ -2038,6 +2038,7 @@
     SUBDIR += rubygem-hpricot
     SUBDIR += rubygem-html2haml
     SUBDIR += rubygem-http
+    SUBDIR += rubygem-http098
     SUBDIR += rubygem-http-cookie
     SUBDIR += rubygem-http-form_data
     SUBDIR += rubygem-http-form_data1
