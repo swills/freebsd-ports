@@ -127,14 +127,7 @@
  gem 'octokit', '~> 4.6.2'
  
  gem 'mail_room', '~> 0.9.1'
-@@ -380,20 +294,20 @@ gem 'mail_room', '~> 0.9.1'
- gem 'email_reply_trimmer', '~> 0.1'
- gem 'html2text'
- 
--gem 'ruby-prof', '~> 0.16.2'
-+gem 'ruby-prof', '>= 0.16.2'
- 
- # OAuth
+@@ -386,14 +300,14 @@ gem 'ruby-prof', '~> 0.16.2'
  gem 'oauth2', '~> 1.4'
  
  # Health check

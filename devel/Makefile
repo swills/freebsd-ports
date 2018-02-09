@@ -5730,6 +5730,7 @@
     SUBDIR += rubygem-ruby-libvirt
     SUBDIR += rubygem-ruby-ole
     SUBDIR += rubygem-ruby-prof
+    SUBDIR += rubygem-ruby-prof016
     SUBDIR += rubygem-ruby-progressbar
     SUBDIR += rubygem-ruby-sdl-ffi
     SUBDIR += rubygem-ruby2ruby
