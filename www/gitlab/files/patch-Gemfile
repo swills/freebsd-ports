@@ -20,6 +20,15 @@
  
  # for aws storage
  gem 'unf', '~> 0.1.4'
+@@ -159,7 +159,7 @@ gem 'sidekiq-limit_fetch', '~> 3.4', req
+ gem 'rufus-scheduler', '~> 3.4'
+ 
+ # HTTP requests
+-gem 'httparty', '~> 0.13.3'
++gem 'httparty', '>= 0.13.3'
+ 
+ # Colored output to console
+ gem 'rainbow', '~> 2.2'
 @@ -273,7 +273,7 @@ gem 'batch-loader', '~> 1.2.1'
  gem 'peek', '~> 1.0.1'
  gem 'peek-gc', '~> 0.0.2'
