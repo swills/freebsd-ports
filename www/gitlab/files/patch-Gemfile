@@ -20,14 +20,7 @@
  
  # for aws storage
  gem 'unf', '~> 0.1.4'
-@@ -258,13 +258,13 @@ gem 'base32', '~> 0.3.0'
- # Sentry integration
- gem 'sentry-raven', '~> 2.5.3'
- 
--gem 'premailer-rails', '~> 1.9.7'
-+gem 'premailer-rails', '>= 1.9.7'
- 
- # I18n
+@@ -264,7 +264,7 @@ gem 'premailer-rails', '~> 1.9.7'
  gem 'ruby_parser', '~> 3.8', require: false
  gem 'rails-i18n', '~> 4.0.9'
  gem 'gettext_i18n_rails', '~> 1.8.0'

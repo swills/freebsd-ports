@@ -1,0 +1,24 @@
+# $FreeBSD$
+
+PORTNAME=	premailer-rails
+PORTVERSION=	1.9.7
+CATEGORIES=	mail rubygems
+MASTER_SITES=	RG
+PKGNAMESUFFIX=	19
+
+MAINTAINER=	idefix@fechner.net
+COMMENT=	Improve the rendering of HTML emails
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+RUN_DEPENDS=	rubygem-actionmailer5>=3:mail/rubygem-actionmailer5 \
+		rubygem-premailer17>=1.7.9:mail/rubygem-premailer17
+
+PORTSCOUT=	limit=^1\.9
+
+NO_ARCH=	yes
+USES=		gem
+USE_RUBY=	yes
+
+.include <bsd.port.mk>

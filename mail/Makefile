@@ -624,7 +624,9 @@
     SUBDIR += rubygem-mini_mime
     SUBDIR += rubygem-pony
     SUBDIR += rubygem-premailer
+    SUBDIR += rubygem-premailer17
     SUBDIR += rubygem-premailer-rails
+    SUBDIR += rubygem-premailer-rails19
     SUBDIR += rubygem-premailer-rails-rails5
     SUBDIR += rubygem-rmail
     SUBDIR += rubygem-roadie
