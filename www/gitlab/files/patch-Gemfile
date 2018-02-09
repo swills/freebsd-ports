@@ -127,15 +127,7 @@
  gem 'octokit', '~> 4.6.2'
  
  gem 'mail_room', '~> 0.9.1'
-@@ -386,14 +300,14 @@ gem 'ruby-prof', '~> 0.16.2'
- gem 'oauth2', '~> 1.4'
- 
- # Health check
--gem 'health_check', '~> 2.6.0'
-+gem 'health_check', '>= 2.6.0'
- 
- # System information
- gem 'vmstat', '~> 2.3.0'
+@@ -393,7 +307,7 @@ gem 'vmstat', '~> 2.3.0'
  gem 'sys-filesystem', '~> 1.1.6'
  
  # SSH host key support
