@@ -109,7 +109,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-diffy31>=3.1.0:textproc/rubygem-diffy31 \
 	rubygem-unicorn51>=5.1.0:www/rubygem-unicorn51 \
 	rubygem-unicorn-worker-killer>=0.4.4:www/rubygem-unicorn-worker-killer \
-	rubygem-state_machines-activerecord>=0.4.0:databases/rubygem-state_machines-activerecord \
+	rubygem-state_machines-activerecord04>=0.4.0:databases/rubygem-state_machines-activerecord04 \
 	rubygem-acts-as-taggable-on>=4.0.0:www/rubygem-acts-as-taggable-on \
 	rubygem-sidekiq>=5.0.0:devel/rubygem-sidekiq \
 	rubygem-sidekiq-cron>=0.6.0:devel/rubygem-sidekiq-cron \

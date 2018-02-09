@@ -20,15 +20,6 @@
  
  # for aws storage
  gem 'unf', '~> 0.1.4'
-@@ -144,7 +144,7 @@ group :unicorn do
- end
- 
- # State machine
--gem 'state_machines-activerecord', '~> 0.4.0'
-+gem 'state_machines-activerecord', '>= 0.4.0'
- 
- # Issue tags
- gem 'acts-as-taggable-on', '~> 4.0'
 @@ -159,7 +159,7 @@ gem 'sidekiq-limit_fetch', '~> 3.4', req
  gem 'rufus-scheduler', '~> 3.4'
  
