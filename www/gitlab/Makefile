@@ -109,7 +109,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-diffy31>=3.1.0:textproc/rubygem-diffy31 \
 	rubygem-unicorn51>=5.1.0:www/rubygem-unicorn51 \
 	rubygem-unicorn-worker-killer044>=0.4.4:www/rubygem-unicorn-worker-killer044 \
-	rubygem-state_machines-activerecord04>=0.4.0:databases/rubygem-state_machines-activerecord04 \
+	rubygem-state_machines-activerecord>=0.4.0:databases/rubygem-state_machines-activerecord \
 	rubygem-acts-as-taggable-on>=4.0.0:www/rubygem-acts-as-taggable-on \
 	rubygem-sidekiq>=5.0.0:devel/rubygem-sidekiq \
 	rubygem-sidekiq-cron>=0.6.0:devel/rubygem-sidekiq-cron \
@@ -133,7 +133,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-ruby-fogbugz>=0.2.1:devel/rubygem-ruby-fogbugz \
 	rubygem-kubeclient22>=2.2.0:www/rubygem-kubeclient22 \
 	rubygem-d3_rails-rails4>=3.5.0:www/rubygem-d3_rails-rails4 \
-	rubygem-sanitize20>=2.0:textproc/rubygem-sanitize20 \
+	rubygem-sanitize>=2.0:textproc/rubygem-sanitize \
 	rubygem-babosa>=1.0.2:textproc/rubygem-babosa \
 	rubygem-loofah20>=2.0.3:textproc/rubygem-loofah20 \
 	rubygem-licensee8>=8.7:devel/rubygem-licensee8 \

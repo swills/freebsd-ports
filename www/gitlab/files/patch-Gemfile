@@ -20,6 +20,15 @@
  
  # for aws storage
  gem 'unf', '~> 0.1.4'
+@@ -144,7 +144,7 @@ group :unicorn do
+ end
+ 
+ # State machine
+-gem 'state_machines-activerecord', '~> 0.4.0'
++gem 'state_machines-activerecord', '>= 0.4.0'
+ 
+ # Issue tags
+ gem 'acts-as-taggable-on', '~> 4.0'
 @@ -159,7 +159,7 @@ gem 'sidekiq-limit_fetch', '~> 3.4', req
  gem 'rufus-scheduler', '~> 3.4'
  
@@ -29,6 +38,15 @@
  
  # Colored output to console
  gem 'rainbow', '~> 2.2'
+@@ -209,7 +209,7 @@ gem 'kubeclient', '~> 2.2.0'
+ gem 'd3_rails', '~> 3.5.0'
+ 
+ # Sanitize user input
+-gem 'sanitize', '~> 2.0'
++gem 'sanitize', '>= 2.0'
+ gem 'babosa', '~> 1.0.2'
+ 
+ # Sanitizes SVG input
 @@ -273,7 +273,7 @@ gem 'batch-loader', '~> 1.2.1'
  gem 'peek', '~> 1.0.1'
  gem 'peek-gc', '~> 0.0.2'
