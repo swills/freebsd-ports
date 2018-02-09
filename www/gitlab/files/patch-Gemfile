@@ -29,7 +29,7 @@
  gem 'peek-performance_bar', '~> 1.3.0'
  gem 'peek-pg', '~> 1.3.0', group: :postgres
  gem 'peek-rblineprof', '~> 0.2.0'
-@@ -282,118 +282,32 @@ gem 'peek-sidekiq', '~> 1.0.3'
+@@ -282,97 +282,11 @@ gem 'peek-sidekiq', '~> 1.0.3'
  
  # Metrics
  group :metrics do
@@ -124,11 +124,10 @@
 -  gem 'test-prof', '~> 0.2.5'
 -end
 -
--gem 'octokit', '~> 4.6.2'
-+gem 'octokit', '>= 4.6.2'
+ gem 'octokit', '~> 4.6.2'
  
  gem 'mail_room', '~> 0.9.1'
- 
+@@ -380,20 +294,20 @@ gem 'mail_room', '~> 0.9.1'
  gem 'email_reply_trimmer', '~> 0.1'
  gem 'html2text'
  
