@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
 RUN_DEPENDS=	rubygem-activerecord4>=4.1.4:databases/rubygem-activerecord4
 
 PORTSCOUT=	limit:^3\.0\.3
+CONFLICTS_INSTALL=	rubygem-default_value_for
 
 NO_ARCH=	yes
 USES=		gem
