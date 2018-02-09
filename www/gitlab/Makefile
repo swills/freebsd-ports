@@ -137,7 +137,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-babosa>=1.0.2:textproc/rubygem-babosa \
 	rubygem-loofah20>=2.0.3:textproc/rubygem-loofah20 \
 	rubygem-licensee8>=8.7:devel/rubygem-licensee8 \
-	rubygem-rack-attack>=4.4.1:www/rubygem-rack-attack \
+	rubygem-rack-attack44>=4.4.1:www/rubygem-rack-attack44 \
 	rubygem-ace-rails-ap>=4.1.0:www/rubygem-ace-rails-ap \
 	rubygem-mousetrap-rails>=1.4.6:www/rubygem-mousetrap-rails \
 	rubygem-charlock_holmes>=0.7.5:textproc/rubygem-charlock_holmes \
