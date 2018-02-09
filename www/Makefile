@@ -2052,6 +2052,7 @@
     SUBDIR += rubygem-jekyll-watch
     SUBDIR += rubygem-journey
     SUBDIR += rubygem-jquery-atwho-rails
+    SUBDIR += rubygem-jquery-atwho-rails13
     SUBDIR += rubygem-jquery-rails
     SUBDIR += rubygem-jquery-rails-rails5
     SUBDIR += rubygem-jquery-rails-rails50
