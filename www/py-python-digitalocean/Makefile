@@ -1,8 +1,8 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/www/py-python-digitalocean/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-python-digitalocean/Makefile 461244 2018-02-08 15:12:12Z skreuzer $
 
 PORTNAME=	python-digitalocean
-PORTVERSION=	1.8
+PORTVERSION=	1.13.2
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

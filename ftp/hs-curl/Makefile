@@ -1,8 +1,8 @@
-# $FreeBSD: head/ftp/hs-curl/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/ftp/hs-curl/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	curl
 PORTVERSION=	1.3.8
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	ftp haskell
 
 MAINTAINER=	haskell@FreeBSD.org

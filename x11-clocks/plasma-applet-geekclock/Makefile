@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-clocks/plasma-applet-geekclock/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/x11-clocks/plasma-applet-geekclock/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	geekclock
 PORTVERSION=	1.0
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	x11-clocks deskutils kde
 MASTER_SITES=	http://w2f2.com/projects/${PORTNAME}/
 PKGNAMEPREFIX=	plasma-applet-

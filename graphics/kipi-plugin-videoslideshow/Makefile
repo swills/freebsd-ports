@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/kipi-plugin-videoslideshow/Makefile 450852 2017-09-28 15:36:31Z kwm $
+# $FreeBSD: head/graphics/kipi-plugin-videoslideshow/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kipi-plugin-${KIPI_PLUGIN}
 PORTVERSION=	${DIGIKAM_VER}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics kde
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/okular/Makefile 448690 2017-08-24 15:49:34Z swills $
+# $FreeBSD: head/graphics/okular/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	okular
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	8
+PORTREVISION=	10
 CATEGORIES=	graphics kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libdjvulibre.so:graphics/djvulibre \
 		libchm.so:misc/chmlib \
 		libfreetype.so:print/freetype2 \
 		libepub.so:textproc/ebook-tools \
-		libqmobipocket.so:graphics/kdegraphics4-mobipocket
+		libqmobipocket.so:graphics/kdegraphics-mobipocket-kde4
 
 USES=		cmake:outsource jpeg kde:4 pkgconfig tar:xz
 USE_KDE=	kdelibs automoc4 qimageblitz kactivities \

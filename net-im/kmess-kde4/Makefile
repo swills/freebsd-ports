@@ -1,9 +1,9 @@
 # Created by: Hye-Shik Chang <perky@python.or.kr>
-# $FreeBSD: head/net-im/kmess-kde4/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/net-im/kmess-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kmess
 PORTVERSION=	2.0.6.2
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	net-im kde
 MASTER_SITES=	SF/${PORTNAME}/Latest%20versions/${PORTVERSION}/
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/ftp/plasma-applet-ftpmonitor/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/ftp/plasma-applet-ftpmonitor/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	ftpmonitor
 PORTVERSION=	1.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	ftp kde
 MASTER_SITES=	https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ftpmonitor/
 PKGNAMEPREFIX=	plasma-applet-

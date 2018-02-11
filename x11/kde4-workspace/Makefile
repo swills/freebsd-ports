@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/kde4-workspace/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/x11/kde4-workspace/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kde-workspace
 PORTVERSION=	${KDE4_WORKSPACE_VERSION}
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	x11 kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

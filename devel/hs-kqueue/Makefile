@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/hs-kqueue/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/devel/hs-kqueue/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	kqueue
 PORTVERSION=	0.2
+PORTREVISION=	1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

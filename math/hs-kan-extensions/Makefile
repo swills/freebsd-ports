@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/hs-kan-extensions/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/math/hs-kan-extensions/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	kan-extensions
 PORTVERSION=	5.0.2
+PORTREVISION=	1
 CATEGORIES=	math haskell
 
 MAINTAINER=	haskell@FreeBSD.org

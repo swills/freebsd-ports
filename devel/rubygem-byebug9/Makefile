@@ -1,5 +1,5 @@
 # Created by: Michael Moll <kvedulv at kvedulv.de>
-# $FreeBSD: head/devel/rubygem-byebug9/Makefile 460370 2018-01-30 06:16:02Z swills $
+# $FreeBSD: head/devel/rubygem-byebug9/Makefile 461232 2018-02-08 13:01:07Z sunpoet $
 
 PORTNAME=	byebug
 PORTVERSION=	9.1.0
@@ -12,6 +12,9 @@ COMMENT=	Ruby 2 debugger
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	Use devel/rubygem-byebug instead
+EXPIRATION_DATE=2018-02-28
 
 USE_RUBY=	yes
 USES=		gem

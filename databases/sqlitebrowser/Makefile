@@ -1,8 +1,8 @@
 # Created by: loïc bartoletti <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/databases/sqlitebrowser/Makefile 448488 2017-08-21 20:22:25Z swills $
+# $FreeBSD: head/databases/sqlitebrowser/Makefile 461266 2018-02-08 20:27:29Z dbaio $
 
 PORTNAME=	sqlitebrowser
-PORTVERSION=	3.10.0
+PORTVERSION=	3.10.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 

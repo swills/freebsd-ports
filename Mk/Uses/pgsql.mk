@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/pgsql.mk 447720 2017-08-10 20:25:17Z girgen $
+# $FreeBSD: head/Mk/Uses/pgsql.mk 461442 2018-02-10 22:19:13Z rene $
 #
 # Provide support for PostgreSQL (pgsql)
 #
@@ -33,7 +33,7 @@ _INCLUDE_USES_PGSQL_MK=	yes
 
 # When adding a version, please keep the comment in
 # Mk/bsd.default-versions.mk in sync.
-VALID_PGSQL_VER=	9.2 9.3 9.4 9.5 9.6 10
+VALID_PGSQL_VER=	9.3 9.4 9.5 9.6 10
 
 # Override non-default LIBVERS like this:
 #PGSQL99_LIBVER=6

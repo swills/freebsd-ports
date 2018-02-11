@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/plasma-applet-teacooker/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/deskutils/plasma-applet-teacooker/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	teacooker
 PORTVERSION=	0.3.0
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	deskutils kde
 MASTER_SITES=	http://www.kde-apps.org/CONTENT/content-files/
 PKGNAMEPREFIX=	plasma-applet-

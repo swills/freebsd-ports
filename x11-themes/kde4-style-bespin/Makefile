@@ -1,9 +1,9 @@
 # Created by: Steve Wills <steve@mouf.net>
-# $FreeBSD: head/x11-themes/kde4-style-bespin/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/x11-themes/kde4-style-bespin/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	bespin
 PORTVERSION=	201303202227
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	x11-themes kde
 MASTER_SITES=	http://bsd.e-shell.net/local/
 PKGNAMEPREFIX=	kde4-style-

@@ -1,7 +1,7 @@
-# $FreeBSD: head/archivers/p7zip-codec-rar/Makefile 402988 2015-12-04 14:16:13Z sunpoet $
+# $FreeBSD: head/archivers/p7zip-codec-rar/Makefile 461380 2018-02-10 11:00:26Z rakuco $
 
 PKGNAMESUFFIX=	-codec-rar
-PORTREVISION=	0
+PORTREVISION=	1
 
 COMMENT=	RAR decoder codec for p7zip
 

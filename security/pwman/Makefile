@@ -1,8 +1,8 @@
 # Created by: Anders Nordby <anders@FreeBSD.org>
-# $FreeBSD: head/security/pwman/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/pwman/Makefile 461454 2018-02-11 02:31:27Z yuri $
 
 PORTNAME=	pwman
-PORTVERSION=	0.4.4
+DISTVERSION=	0.4.5
 CATEGORIES=	security
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

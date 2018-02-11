@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/hs-NumInstances/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/math/hs-NumInstances/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	NumInstances
 PORTVERSION=	1.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math haskell
 
 MAINTAINER=	haskell@FreeBSD.org

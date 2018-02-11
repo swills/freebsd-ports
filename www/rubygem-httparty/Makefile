@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/rubygem-httparty/Makefile 446418 2017-07-22 17:08:01Z sunpoet $
+# $FreeBSD: head/www/rubygem-httparty/Makefile 461236 2018-02-08 13:01:28Z sunpoet $
 
 PORTNAME=	httparty
-PORTVERSION=	0.15.6
+PORTVERSION=	0.15.7
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

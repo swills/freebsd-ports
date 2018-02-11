@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-toolkits/hs-wx/Makefile 453874 2017-11-09 22:17:07Z antoine $
+# $FreeBSD: head/x11-toolkits/hs-wx/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	wx
 PORTVERSION=	0.92.3.0
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits haskell
 
 MAINTAINER=	haskell@FreeBSD.org

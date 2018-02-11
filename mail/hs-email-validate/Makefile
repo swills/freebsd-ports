@@ -1,7 +1,8 @@
-# $FreeBSD: head/mail/hs-email-validate/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/mail/hs-email-validate/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	email-validate
 PORTVERSION=	2.3
+PORTREVISION=	1
 CATEGORIES=	mail haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: Oliver Braun <obraun@FreeBSD.org>
-# $FreeBSD: head/devel/hs-c2hs/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/devel/hs-c2hs/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	c2hs
-PORTVERSION=	0.28.2
+PORTVERSION=	0.28.3
 PORTREVISION=	1
 CATEGORIES=	devel haskell
 
@@ -11,7 +11,7 @@ COMMENT=	C->Haskell FFI tool that gives some cross-language type safety
 
 LICENSE=	GPLv2
 
-USE_CABAL=	dlist language-c>=0.5.0 shelly>=1.0 text yaml>=0.8
+USE_CABAL=	dlist language-c>=0.7.1 shelly>=1.0 text yaml>=0.8
 
 XMLDOCS=	doc/users_guide:html
 

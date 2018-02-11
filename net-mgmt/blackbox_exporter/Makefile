@@ -1,15 +1,17 @@
 # Created by: Boris Samorodov <bsam@FreeBSDD.org>
-# $FreeBSD: head/net-mgmt/blackbox_exporter/Makefile 455227 2017-11-30 20:58:48Z bsam $
+# $FreeBSD: head/net-mgmt/blackbox_exporter/Makefile 461439 2018-02-10 22:13:30Z bsam $
 
 PORTNAME=	blackbox_exporter
 PORTVERSION=	0.11.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=v
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	bsam@FreeBSD.org
 COMMENT=	Prometheus exporter for endpoints over HTTP(S), DNS, TCP and ICMP
 
-LICENSE=	APACHE20
+LICENSE=		APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		go
 USE_GITHUB=	yes

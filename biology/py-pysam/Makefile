@@ -1,7 +1,7 @@
-# $FreeBSD: head/biology/py-pysam/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/biology/py-pysam/Makefile 461449 2018-02-10 23:01:37Z yuri $
 
 PORTNAME=	pysam
-DISTVERSION=	0.13
+DISTVERSION=	0.14
 CATEGORIES=	biology python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

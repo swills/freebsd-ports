@@ -1,12 +1,11 @@
 # Created by: Leo Vandewoestijne <freebsd@dns-lab.com>
-# $FreeBSD: head/dns/dnscrypt-proxy/Makefile 457054 2017-12-23 14:16:18Z dbaio $
+# $FreeBSD: head/dns/dnscrypt-proxy/Makefile 461445 2018-02-10 22:34:35Z dbaio $
 
 PORTNAME=	dnscrypt-proxy
 PORTVERSION=	1.9.5
 PORTREVISION=	3
 CATEGORIES=	dns
-MASTER_SITES=	https://download.dnscrypt.org/dnscrypt-proxy/ \
-		https://download.dnscrypt.org/dnscrypt-proxy/old/
+MASTER_SITES=	LOCAL/dbaio/${PORTNAME}/
 
 MAINTAINER=	freebsd@dns-lab.com
 COMMENT=	Boost privacy and security of DNS

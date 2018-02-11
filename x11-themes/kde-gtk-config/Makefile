@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-themes/kde-gtk-config/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/x11-themes/kde-gtk-config/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kde-gtk-config
 PORTVERSION=	2.2.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-themes kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src
 

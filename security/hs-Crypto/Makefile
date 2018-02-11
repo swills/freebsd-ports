@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-Crypto/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/security/hs-Crypto/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	Crypto
 PORTVERSION=	4.2.5.1
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

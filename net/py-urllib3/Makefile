@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/net/py-urllib3/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-urllib3/Makefile 461424 2018-02-10 19:59:06Z sunpoet $
 
 PORTNAME=	urllib3
 PORTVERSION=	1.22
@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>=1.3.4:security/py-cryptography@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}idna>=2.0:dns/py-idna@${FLAVOR} \
+		${PY_IPADDRESS} \
 		${PYTHON_PKGNAMEPREFIX}openssl>=16.0:security/py-openssl@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pysocks>=1.5.7:net/py-pysocks@${FLAVOR}
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock@${FLAVOR} \
@@ -28,10 +29,6 @@ NO_ARCH=	yes
 SUB_FILES=	pkg-message
 
 .include <bsd.port.pre.mk>
-
-.if ${PYTHON_REL} < 3300
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}ipaddress>=0:net/py-ipaddress@${FLAVOR}
-.endif
 
 .if ${PYTHON_REL} < 3400
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}certifi>=0:security/py-certifi@${FLAVOR}

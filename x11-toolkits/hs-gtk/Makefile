@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-toolkits/hs-gtk/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/x11-toolkits/hs-gtk/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	gtk
 PORTVERSION=	0.14.6
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits haskell
 
 MAINTAINER=	haskell@FreeBSD.org

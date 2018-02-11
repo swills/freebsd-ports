@@ -1,9 +1,9 @@
 # Created by: Willem van Engen <wvengen@stack.nl>
-# $FreeBSD: head/misc/sword/Makefile 459270 2018-01-17 16:44:05Z tabthorpe $
+# $FreeBSD: head/misc/sword/Makefile 461290 2018-02-09 09:12:48Z jbeich $
 
 PORTNAME=	sword
 PORTVERSION=	1.7.4
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.crosswire.org/pub/sword/source/v${PORTVERSION:R}/ \
 		http://crosswire.org/ftpmirror/pub/sword/source/v${PORTVERSION:R}/
@@ -45,6 +45,8 @@ CONFIGURE_ARGS+=	--without-curl
 .endif
 
 .if ${PORT_OPTIONS:MCLUCENE}
+USES+=		compiler:c++11-lib
+USE_CXXSTD=	gnu++11
 LIB_DEPENDS+=	libclucene-core.so:textproc/clucene \
 		libicudata.so:devel/icu
 CONFIGURE_ARGS+=	--with-clucene=${LOCALBASE} --with-icu

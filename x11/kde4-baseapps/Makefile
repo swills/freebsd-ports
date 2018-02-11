@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/kde4-baseapps/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/x11/kde4-baseapps/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kde-baseapps
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11 kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

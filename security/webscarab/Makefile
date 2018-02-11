@@ -1,5 +1,5 @@
 # Created by: Niels Heinen
-# $FreeBSD: head/security/webscarab/Makefile 411328 2016-03-18 03:12:18Z amdmi3 $
+# $FreeBSD: head/security/webscarab/Makefile 461204 2018-02-08 09:02:46Z amdmi3 $
 
 PORTNAME=	webscarab
 PORTVERSION=	20090427
@@ -10,6 +10,9 @@ MASTER_SITES=	LOCAL/niels \
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Framework for analysing HTTP and HTTPS web application traffic
 
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
 USES=		zip
 USE_JAVA=	yes
 JAVA_VERSION=	1.6+
@@ -18,7 +21,7 @@ NO_ARCH=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}-1304
 DATADIR=	${JAVASHAREDIR}/${PORTNAME}
 
-PORTDOCS=	README LICENSE ChangeLog
+PORTDOCS=	README ChangeLog
 
 OPTIONS_DEFINE=	DOCS
 

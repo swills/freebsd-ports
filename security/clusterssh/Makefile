@@ -1,9 +1,9 @@
 # Created by: lx
-# $FreeBSD: head/security/clusterssh/Makefile 457051 2017-12-23 13:51:19Z ehaupt $
+# $FreeBSD: head/security/clusterssh/Makefile 461381 2018-02-10 11:13:14Z ehaupt $
 
 PORTNAME=	clusterssh
 DISTVERSIONPREFIX=	release-
-DISTVERSION=	4.11
+DISTVERSION=	4.13
 CATEGORIES=	security net
 
 MAINTAINER=	ehaupt@FreeBSD.org
@@ -40,6 +40,7 @@ TEST_DEPENDS=	p5-CPAN-Changes>=0:devel/p5-CPAN-Changes \
 USES=		perl5
 USE_GITHUB=	yes
 USE_PERL5=	modbuild
+NO_ARCH=	yes
 
 GH_ACCOUNT=	duncs
 

@@ -1,9 +1,9 @@
 # Created by: Andy Fawcett <andy@athame.co.uk>
-# $FreeBSD: head/math/abakus/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/math/abakus/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	abakus
 PORTVERSION=	0.92
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math kde
 MASTER_SITES=	http://purinchu.net/abakus/
 

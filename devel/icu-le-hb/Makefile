@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/icu-le-hb/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/devel/icu-le-hb/Makefile 461290 2018-02-09 09:12:48Z jbeich $
 
 PORTNAME=	icu-le-hb
 DISTVERSION=	1.0.3-3
 DISTVERSIONSUFFIX=	-gb8a3163
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel print
 
 MAINTAINER=	office@FreeBSD.org
@@ -20,7 +20,8 @@ LIB_DEPENDS=	libicuuc.so:devel/icu \
 USE_GITHUB=	yes
 GH_ACCOUNT=	behdad
 
-USES=		autoreconf gmake libtool pathfix pkgconfig
+USES=		autoreconf compiler:c++11-lib gmake libtool pathfix pkgconfig
+USE_CXXSTD=	gnu++11
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

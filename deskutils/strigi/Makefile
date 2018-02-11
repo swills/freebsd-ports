@@ -1,9 +1,9 @@
 # Created by: Tilman Keskinoz <arved@FreeBSD.org>
-# $FreeBSD: head/deskutils/strigi/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/deskutils/strigi/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	strigi
 PORTVERSION=	${STRIGI_VERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	deskutils
 
 MAINTAINER=	kde@FreeBSD.org

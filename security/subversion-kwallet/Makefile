@@ -1,8 +1,8 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/security/subversion-kwallet/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/security/subversion-kwallet/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PKGNAMESUFFIX=	-kwallet
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security kde
 
 MAINTAINER=	lev@FreeBSD.org

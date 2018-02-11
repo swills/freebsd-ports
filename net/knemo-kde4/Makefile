@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/knemo-kde4/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/net/knemo-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	knemo
 PORTVERSION=	0.7.7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net kde
 MASTER_SITES=	http://kde-apps.org/CONTENT/content-files/
 DISTNAME=	12956-${PORTNAME}-${PORTVERSION}

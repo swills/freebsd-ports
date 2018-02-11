@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/plasma-scriptengine-python/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/x11/plasma-scriptengine-python/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	plasma-scriptengine-python
 PORTVERSION=	${KDE4_WORKSPACE_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11 kde kde-applications
 DISTNAME=	kde-workspace-${PORTVERSION}
 

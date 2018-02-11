@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/kde-thumbnailer-chm/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/misc/kde-thumbnailer-chm/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kde-thumbnailer-chm
 PORTVERSION=	0.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	misc kde
 MASTER_SITES=	http://kde-apps.org/CONTENT/content-files/
 DISTNAME=	153410-${PORTNAME}-${PORTVERSION}

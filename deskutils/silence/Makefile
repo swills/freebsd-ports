@@ -1,9 +1,9 @@
 # Created by: Mina R Waheeb <syncer@gmail.com>
-# $FreeBSD: head/deskutils/silence/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/deskutils/silence/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	silence
 PORTVERSION=	0.2
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	deskutils kde
 MASTER_SITES=	http://kde-apps.org/CONTENT/content-files/
 DISTNAME=	124776-${PORTNAME}-${PORTVERSION}

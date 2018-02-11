@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/baloo/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/sysutils/baloo/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	baloo
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	sysutils kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

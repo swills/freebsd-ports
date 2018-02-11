@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/databases/evolution-data-server/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/databases/evolution-data-server/Makefile 461290 2018-02-09 09:12:48Z jbeich $
 
 PORTNAME=	evolution-data-server
 PORTVERSION=	3.24.2
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	databases gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -33,6 +33,7 @@ PORTSCOUT=	limitw:1,even
 USES=		bdb:5 cmake compiler:c++11-lib gettext gnome gperf \
 		iconv localbase pathfix pkgconfig python:3.3+,build\
 		sqlite tar:xz
+USE_CXXSTD=	gnu++11
 USE_GNOME=	cairo gdkpixbuf2 gtk30 intltool introspection:build libxml2
 USE_LDCONFIG=	yes
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 460155 2018-01-28 01:39:12Z rene $
+# $FreeBSD: head/games/Makefile 461387 2018-02-10 11:39:52Z tcberner $
 #
 
     COMMENT = Games and related software
@@ -472,7 +472,7 @@
     SUBDIR += kbounce
     SUBDIR += kbreakout
     SUBDIR += kcheckers
-    SUBDIR += kdegames4
+    SUBDIR += kdegames-kde4
     SUBDIR += kdiamond
     SUBDIR += keeperrl
     SUBDIR += kevedit

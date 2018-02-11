@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/plasma-applet-panelspacer/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/deskutils/plasma-applet-panelspacer/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	panelspacer
 PORTVERSION=	0.2
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	deskutils kde
 MASTER_SITES=	http://danakil.free.fr/linux/releases/${PORTNAME}-${PORTVERSION}/
 PKGNAMEPREFIX=	plasma-applet-

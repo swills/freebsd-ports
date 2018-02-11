@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libftdi/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/devel/libftdi/Makefile 461415 2018-02-10 19:38:23Z tobik $
 
 PORTNAME=	libftdi
 PORTVERSION=	0.20
@@ -28,11 +28,10 @@ BOOST_CMAKE_BOOL=	FTDIPP
 BOOST_CXXFLAGS=		-I${LOCALBASE}/include
 
 PYTHON_DESC=		Python bindings
+PYTHON_BINARY_ALIAS=	swig=swig3.0
 PYTHON_BUILD_DEPENDS=	swig3.0:devel/swig30
 PYTHON_CMAKE_BOOL=	PYTHON_BINDINGS
 PYTHON_USES=		python:2.7
-
-BINARY_ALIAS=	swig=swig3.0
 
 post-patch:
 	@${REINPLACE_CMD} \

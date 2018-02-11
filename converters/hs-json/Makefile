@@ -1,9 +1,9 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/converters/hs-json/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/converters/hs-json/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	json
 PORTVERSION=	0.9.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	converters haskell
 
 MAINTAINER=	haskell@FreeBSD.org

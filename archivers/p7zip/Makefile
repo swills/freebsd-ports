@@ -1,9 +1,9 @@
 # Created by: Juergen Lock <nox@jelal.kn-bremen.de>
-# $FreeBSD: head/archivers/p7zip/Makefile 451478 2017-10-07 19:23:17Z rakuco $
+# $FreeBSD: head/archivers/p7zip/Makefile 461379 2018-02-10 10:59:11Z rakuco $
 
 PORTNAME=	p7zip
 PORTVERSION=	16.02
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	archivers
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}_${DISTVERSION}_src_all

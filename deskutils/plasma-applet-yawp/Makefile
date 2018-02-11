@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/plasma-applet-yawp/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/deskutils/plasma-applet-yawp/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	yawp
 PORTVERSION=	0.4.5
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	deskutils kde
 MASTER_SITES=	SF
 PKGNAMEPREFIX=	plasma-applet-

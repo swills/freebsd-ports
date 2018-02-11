@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/kcoloredit/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/graphics/kcoloredit/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kcoloredit
 PORTVERSION=	${APP_VER}.${EXTRA_VER}
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	graphics kde
 MASTER_SITES=	KDE/stable/extragear
 DISTNAME=	${PORTNAME}-${APP_VER}-kde${EXTRA_VER}

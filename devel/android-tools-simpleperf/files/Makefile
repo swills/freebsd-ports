@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/android-tools-simpleperf/files/Makefile 422319 2016-09-17 12:34:20Z jbeich $
+# $FreeBSD: head/devel/android-tools-simpleperf/files/Makefile 461279 2018-02-08 22:39:42Z jbeich $
 
 PROG_CXX=simpleperf
 NO_MAN=
@@ -89,7 +89,10 @@ TEST_CPPFLAGS+=	$$(${GTEST_CONFIG} --cppflags)
 CPPFLAGS.${f}+=	${TEST_CPPFLAGS}
 .endfor
 
-LDADD+=		$$(${LLVM_CONFIG} --system-libs --libs --ldflags)
+LDADD!=		${LLVM_CONFIG} --system-libs --libs --ldflags --link-static
+LDADD+=		-lz \-lpthread
+# https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=223191#c3
+LDADD:=		${LDADD:S,-l/usr/lib/libexecinfo.so,-lexecinfo,}
 TEST_LDADD+=	$$(${GTEST_CONFIG} --libs --ldflags)
 
 TEST_OBJS+=	${TEST_SRCS:R:S/$/.o/}

@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-toolkits/hs-pango/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/x11-toolkits/hs-pango/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	pango
 PORTVERSION=	0.13.3.1
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits haskell
 
 MAINTAINER=	haskell@FreeBSD.org

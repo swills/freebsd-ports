@@ -1,10 +1,9 @@
 # Created by: Christer Edwards <christer.edwards@gmail.com>
-# $FreeBSD: head/net/py-kafka-python/Makefile 449132 2017-09-02 12:22:51Z dbaio $
+# $FreeBSD: head/net/py-kafka-python/Makefile 461365 2018-02-10 08:27:18Z yuri $
 
 PORTNAME=	kafka-python
-PORTVERSION=	1.3.4
+PORTVERSION=	1.4.1
 CATEGORIES=	net python
-MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	christer.edwards@gmail.com
@@ -13,8 +12,10 @@ COMMENT=	Pure Python client for Apache Kafka
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
+USES=		python
+USE_GITHUB=	yes
+GH_ACCOUNT=	dpkp
 USE_PYTHON=	autoplist distutils
-USES=		python shebangfix
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

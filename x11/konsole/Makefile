@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/konsole/Makefile 442456 2017-06-02 19:36:45Z tcberner $
+# $FreeBSD: head/x11/konsole/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	konsole
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11 kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

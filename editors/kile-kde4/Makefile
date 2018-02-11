@@ -1,9 +1,9 @@
 # Created by: Stefan Jahn <stefan.jahn@nemesis-sektor.de>
-# $FreeBSD: head/editors/kile-kde4/Makefile 455183 2017-11-30 09:00:23Z amdmi3 $
+# $FreeBSD: head/editors/kile-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kile
 PORTVERSION=	2.1.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	editors kde
 MASTER_SITES=	SF/${PORTNAME}/stable/${PORTNAME}-${DISTVERSION}
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/kde-dev-scripts/Makefile 439502 2017-04-27 05:12:55Z tcberner $
+# $FreeBSD: head/devel/kde-dev-scripts/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kde-dev-scripts
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

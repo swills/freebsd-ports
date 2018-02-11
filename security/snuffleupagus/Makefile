@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/snuffleupagus/Makefile 457156 2017-12-24 13:11:41Z joneum $
+# $FreeBSD: head/security/snuffleupagus/Makefile 461211 2018-02-08 10:42:20Z pi $
 
 PORTNAME=	snuffleupagus
 DISTVERSIONPREFIX=v
-DISTVERSION=	0.1.0
+DISTVERSION=	0.2.1
 CATEGORIES=	security
 
 MAINTAINER=	franco@opnsense.org

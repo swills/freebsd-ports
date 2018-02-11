@@ -1,18 +1,15 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/net/srelay/Makefile 394213 2015-08-14 13:45:47Z decke $
+# $FreeBSD: head/net/srelay/Makefile 461269 2018-02-08 21:18:15Z decke $
 
 PORTNAME=	srelay
-PORTVERSION=	0.4.8b6
+PORTVERSION=	0.4.8p1
 CATEGORIES=	net
+MASTER_SITES=	SOURCEFORGE/socks-relay/socks-relay/${PORTNAME}-0.4.8
 
 MAINTAINER=	decke@FreeBSD.org
 COMMENT=	Srelay is a SOCKS4/5 proxy and Relay
 
 LICENSE=	BSD3CLAUSE
-
-USE_GITHUB=	yes
-GH_ACCOUNT=	gco
-GH_TAGNAME=	9461835
 
 HAS_CONFIGURE=	yes
 USE_RC_SUBR=	srelay

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 459509 2018-01-20 10:25:50Z nivit $
+# $FreeBSD: head/net-im/Makefile 461284 2018-02-09 02:38:59Z swills $
 #
 
     COMMENT = Instant messaging
@@ -128,6 +128,7 @@
     SUBDIR += psi
     SUBDIR += psimedia
     SUBDIR += purple-hangouts
+    SUBDIR += purple-discord
     SUBDIR += py-fbmq
     SUBDIR += py-jabber
     SUBDIR += py-jabberbot

@@ -1,9 +1,9 @@
 # Created by: Raphael Kubo da Costa <rakuco@FreeBSD.org>
-# $FreeBSD: head/audio/juk/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/audio/juk/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	juk
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

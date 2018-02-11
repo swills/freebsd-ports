@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/bovo/Makefile 458364 2018-01-07 18:16:48Z tcberner $
+# $FreeBSD: head/games/bovo/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	bovo
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	games kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
@@ -13,5 +13,5 @@ USE_KDE=	kdelibs libkdegames automoc4
 USE_QT4=	moc_build qmake_build rcc_build uic_build
 USE_CXXSTD=	gnu++98
 
-.include <${.CURDIR}/../kdegames4/Makefile.common>
+.include <${.CURDIR}/../kdegames-kde4/Makefile.common>
 .include <bsd.port.mk>

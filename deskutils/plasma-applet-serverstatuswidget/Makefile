@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/plasma-applet-serverstatuswidget/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/deskutils/plasma-applet-serverstatuswidget/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	serverstatuswidget
 PORTVERSION=	1.5.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	deskutils kde
 MASTER_SITES=	http://kde-look.org/CONTENT/content-files/
 PKGNAMEPREFIX=	plasma-applet-

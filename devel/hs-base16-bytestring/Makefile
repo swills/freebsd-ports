@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-base16-bytestring/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/devel/hs-base16-bytestring/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	base16-bytestring
 PORTVERSION=	0.1.1.6
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

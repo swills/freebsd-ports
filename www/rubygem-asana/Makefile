@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-asana/Makefile 457415 2017-12-27 19:53:44Z sunpoet $
+# $FreeBSD: head/www/rubygem-asana/Makefile 461409 2018-02-10 16:21:52Z sunpoet $
 
 PORTNAME=	asana
-PORTVERSION=	0.6.2
+PORTVERSION=	0.6.3
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

@@ -1,12 +1,13 @@
 # Created by: Johannes Dieterich <dieterich@ogolem.org>
-# $FreeBSD: head/java/aparapi/Makefile 422757 2016-09-25 21:40:54Z kwm $
+# $FreeBSD: head/java/aparapi/Makefile 461287 2018-02-09 04:33:16Z jmd $
 
 PORTNAME=	aparapi
 PORTVERSION=	1.0.0
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-SNAPSHOT
 CATEGORIES=	java lang
 
-MAINTAINER=	dieterich@ogolem.org
+MAINTAINER=	jmd@FreeBSD.org
 COMMENT=	Open source API for expressing data parallel workflows in Java
 
 LICENSE=	BSD3CLAUSE

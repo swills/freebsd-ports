@@ -1,8 +1,8 @@
-# $FreeBSD: head/editors/kate-plugin-pate/Makefile 456181 2017-12-12 18:35:32Z antoine $
+# $FreeBSD: head/editors/kate-plugin-pate/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kate-plugin-pate
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	editors kde kde-kde4
 DISTNAME=	kate-${PORTVERSION}
 

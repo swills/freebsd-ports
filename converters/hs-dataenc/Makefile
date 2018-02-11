@@ -1,8 +1,8 @@
-# $FreeBSD: head/converters/hs-dataenc/Makefile 457241 2017-12-25 15:49:23Z amdmi3 $
+# $FreeBSD: head/converters/hs-dataenc/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	dataenc
 PORTVERSION=	0.14.0.7
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	converters haskell
 
 MAINTAINER=	haskell@FreeBSD.org

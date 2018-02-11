@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/hs-ed25519/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/security/hs-ed25519/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	ed25519
 PORTVERSION=	0.0.5.0
+PORTREVISION=	1
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

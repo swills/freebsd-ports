@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/sqlcipher/Makefile 452580 2017-10-21 09:20:22Z tcberner $
+# $FreeBSD: head/databases/sqlcipher/Makefile 461361 2018-02-10 07:30:01Z pi $
 
 PORTNAME=	sqlcipher
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.4.1
+DISTVERSION=	3.4.2
 CATEGORIES=	databases
 
 MAINTAINER=	jharris@widomaker.com

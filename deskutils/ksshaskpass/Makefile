@@ -1,9 +1,9 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/deskutils/ksshaskpass/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/deskutils/ksshaskpass/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	ksshaskpass
 PORTVERSION=	0.5.3
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	deskutils
 MASTER_SITES=	http://kde-apps.org/CONTENT/content-files/
 DISTNAME=	50971-${PORTNAME}-${PORTVERSION}

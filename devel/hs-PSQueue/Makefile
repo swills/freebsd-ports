@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-PSQueue/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/devel/hs-PSQueue/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	PSQueue
 PORTVERSION=	1.1
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

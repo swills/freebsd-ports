@@ -1,7 +1,7 @@
-# $FreeBSD: head/finance/skrooge/Makefile 457319 2017-12-26 22:09:55Z tcberner $
+# $FreeBSD: head/finance/skrooge/Makefile 461344 2018-02-09 22:37:27Z rakuco $
 
 PORTNAME=	skrooge
-DISTVERSION=	2.10.5
+DISTVERSION=	2.11.0
 CATEGORIES=	finance kde
 MASTER_SITES=	KDE/stable/${PORTNAME}
 DIST_SUBDIR=	KDE/${PORTNAME}
@@ -32,6 +32,7 @@ USE_QT5=	concurrent core dbus designer gui network printsupport qml \
 		quick script sql svg webkit widgets xml \
 		qmake_build buildtools_build
 SHEBANG_FILES=	plugins/import/skrooge_import_backend/skrooge-sabb.py \
+		skgbankmodeler/skrooge-coinmarketcap.py \
 		skgbankmodeler/skrooge-yahoodl.py
 
 USE_LDCONFIG=	yes

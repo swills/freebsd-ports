@@ -1,22 +1,21 @@
-# $FreeBSD: head/devel/py-ipdb/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-ipdb/Makefile 461312 2018-02-09 14:08:52Z sunpoet $
 
 PORTNAME=	ipdb
-PORTVERSION=	0.8.1
-PORTREVISION=	1
+PORTVERSION=	0.10.3
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	IPython-enabled pdb
 
-LICENSE=	GPLv2+
+LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipython>=0.10:devel/ipython@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipython>=0.10.2:devel/ipython@${FLAVOR}
 
-USES=		python zip
-USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
+USES=		python
+USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

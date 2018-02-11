@@ -1,9 +1,9 @@
 # Created by: Mina R Waheeb <syncer@gmail.com>
-# $FreeBSD: head/audio/kstreamripper/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/audio/kstreamripper/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kstreamripper
 PORTVERSION=	0.7.100
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio kde
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}
 

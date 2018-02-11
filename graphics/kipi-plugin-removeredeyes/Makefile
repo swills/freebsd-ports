@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/kipi-plugin-removeredeyes/Makefile 445158 2017-07-06 15:08:41Z tcberner $
+# $FreeBSD: head/graphics/kipi-plugin-removeredeyes/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kipi-plugin-${KIPI_PLUGIN}
 PORTVERSION=	${DIGIKAM_VER}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics kde
 
 MAINTAINER=	kde@FreeBSD.org

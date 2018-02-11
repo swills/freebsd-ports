@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/klickety/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/games/klickety/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	klickety
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	games kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
@@ -14,5 +14,5 @@ SHEBANG_FILES=	klickety-2.0-inherit-ksame-highscore.pl
 USE_QT4=	corelib gui xml \
 		moc_build qmake_build rcc_build uic_build
 
-.include <${.CURDIR}/../kdegames4/Makefile.common>
+.include <${.CURDIR}/../kdegames-kde4/Makefile.common>
 .include <bsd.port.mk>

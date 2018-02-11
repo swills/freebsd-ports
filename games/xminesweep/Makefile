@@ -1,13 +1,13 @@
 # Created by: janek
-# $FreeBSD: head/games/xminesweep/Makefile 363374 2014-07-29 19:11:51Z adamw $
+# $FreeBSD: head/games/xminesweep/Makefile 461458 2018-02-11 05:23:00Z danfe $
 
 PORTNAME=	xminesweep
 PORTVERSION=	3.0
 PORTREVISION=	2
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.netlab.is.tsukuba.ac.jp/pub/X/our_collections/games/ \
+MASTER_SITES=	http://web.warwick.ac.uk/ftp/pub/x11/ \
+		ftp://ftp.netlab.is.tsukuba.ac.jp/pub/X/our_collections/games/ \
 		ftp://ftp.uni-halle.de/pub/X11/contrib/games/ \
-		ftp://ftp.warwick.ac.uk/pub/x11/ \
 		ftp://ftp.eunet.ch/software/X/games/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 

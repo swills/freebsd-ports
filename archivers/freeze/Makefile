@@ -1,11 +1,11 @@
 # Created by: lukin@okbmei.msk.su
-# $FreeBSD: head/archivers/freeze/Makefile 429483 2016-12-26 08:36:13Z amdmi3 $
+# $FreeBSD: head/archivers/freeze/Makefile 461458 2018-02-11 05:23:00Z danfe $
 
 PORTNAME=	freeze
 PORTVERSION=	2.5
 PORTREVISION=	2
 CATEGORIES=	archivers
-MASTER_SITES=	ftp://ftp.warwick.ac.uk/pub/compression/ \
+MASTER_SITES=	http://web.warwick.ac.uk/ftp/pub/compression/ \
 		http://www.rebootking.de/distfiles/ \
 		http://ngsoftwareltd.com/freebsd/distfiles/
 

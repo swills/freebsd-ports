@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 460064 2018-01-26 23:54:45Z yuri $
+# $FreeBSD: head/graphics/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 #
 
     COMMENT = Graphics tools and libraries
@@ -407,11 +407,11 @@
     SUBDIR += kamera-kde4
     SUBDIR += kcolorchooser
     SUBDIR += kcoloredit
-    SUBDIR += kdegraphics4
-    SUBDIR += kdegraphics4-mobipocket
-    SUBDIR += kdegraphics4-strigi-analyzer
-    SUBDIR += kdegraphics4-svgpart
-    SUBDIR += kdegraphics4-thumbnailers
+    SUBDIR += kdegraphics-kde4
+    SUBDIR += kdegraphics-mobipocket-kde4
+    SUBDIR += kdegraphics-strigi-analyzer-kde4
+    SUBDIR += kdegraphics-svgpart-kde4
+    SUBDIR += kdegraphics-thumbnailers-kde4
     SUBDIR += kdiagram
     SUBDIR += kf5-kimageformats
     SUBDIR += kf5-kplotting

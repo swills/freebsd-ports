@@ -1,5 +1,5 @@
 # Created by: Kris Kennaway <kris@FreeBSD.org>
-# $FreeBSD: head/net/xprobe/Makefile 345800 2014-02-24 10:36:11Z sunpoet $
+# $FreeBSD: head/net/xprobe/Makefile 461435 2018-02-10 21:37:20Z sunpoet $
 
 PORTNAME=	xprobe2
 PORTVERSION=	0.3
@@ -10,6 +10,7 @@ MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	ICMP active OS fingerprint scanner
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 CONFIGURE_ENV=	INSTALL=${INSTALL}
 GNU_CONFIGURE=	yes

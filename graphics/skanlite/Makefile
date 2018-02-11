@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/skanlite/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/graphics/skanlite/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	skanlite
 PORTVERSION=	1.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src
 DIST_SUBDIR=	KDE/extragear

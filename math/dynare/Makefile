@@ -1,9 +1,8 @@
 # Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/math/dynare/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/math/dynare/Makefile 461410 2018-02-10 18:01:20Z yuri $
 
 PORTNAME=	dynare
-DISTVERSION=	4.5.3
-PORTREVISION=	1
+DISTVERSION=	4.5.4
 CATEGORIES=	math
 MASTER_SITES=	http://www.dynare.org/release/source/
 
@@ -20,7 +19,7 @@ LIB_DEPENDS=	libumfpack.so:math/suitesparse \
 		libhdf5.so:science/hdf5 \
 		libopenblas.so:math/openblas \
 		libfftw3_threads.so:math/fftw3 \
-		libfftw3f_threads.so:math/fftw3-float \
+		libfftw3f_threads.so:math/fftw3-float
 
 GNU_CONFIGURE=	yes
 USES=		fortran gmake localbase pkgconfig shebangfix tar:xz

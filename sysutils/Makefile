@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 460532 2018-01-31 21:03:35Z tijl $
+# $FreeBSD: head/sysutils/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 #
 
     COMMENT = System utilities
@@ -523,7 +523,7 @@
     SUBDIR += k8temp
     SUBDIR += kcm-polkit-kde
     SUBDIR += kcron
-    SUBDIR += kdeadmin4
+    SUBDIR += kdeadmin-kde4
     SUBDIR += kdf
     SUBDIR += kdirstat
     SUBDIR += keyboard-daemon

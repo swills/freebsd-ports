@@ -1,8 +1,8 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/devel/p5-Test-Strict/Makefile 455194 2017-11-30 10:59:29Z wen $
+# $FreeBSD: head/devel/p5-Test-Strict/Makefile 461317 2018-02-09 14:11:07Z sunpoet $
 
 PORTNAME=	Test-Strict
-PORTVERSION=	0.40
+PORTVERSION=	0.41
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

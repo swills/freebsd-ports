@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/kcm-polkit-kde/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/sysutils/kcm-polkit-kde/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	polkit-kde
 DISTVERSION=	0.0-${PORTDATE}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	sysutils kde
 MASTER_SITES=	LOCAL/avilla
 PKGNAMEPREFIX=	kcm-

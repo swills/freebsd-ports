@@ -1,9 +1,9 @@
 # Created by: Markus Brueffer <brueffer@phoenix-systems.de>
-# $FreeBSD: head/graphics/kphotoalbum-kde4/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/graphics/kphotoalbum-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kphotoalbum
 PORTVERSION=	4.4
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	graphics kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src
 DIST_SUBDIR=	KDE

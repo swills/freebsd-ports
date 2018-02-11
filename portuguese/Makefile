@@ -1,11 +1,10 @@
-# $FreeBSD: head/portuguese/Makefile 443772 2017-06-17 13:44:51Z rakuco $
+# $FreeBSD: head/portuguese/Makefile 461243 2018-02-08 15:11:50Z dbn $
 #
 
     COMMENT = Portuguese language support
 
     SUBDIR += aspell-pt_BR
     SUBDIR += aspell-pt_PT
-    SUBDIR += eric6
     SUBDIR += gimp-help-pt_BR
     SUBDIR += hunspell
     SUBDIR += hyphen

@@ -1,9 +1,9 @@
 # Created by: Markus Brueffer <brueffer@phoenix-systems.de>
-# $FreeBSD: head/mail/kshowmail/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/mail/kshowmail/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kshowmail
 PORTVERSION=	4.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	mail kde
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20for%20KDE4/${PORTVERSION}
 

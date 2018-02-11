@@ -1,9 +1,9 @@
 # Created by: David Naylor <dbn@FreeBSD.org>
-# $FreeBSD: head/x11-themes/kde4-style-oxygen-transparent/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/x11-themes/kde4-style-oxygen-transparent/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	oxygen-transparent
 PORTVERSION=	2014.03.10
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-themes kde
 MASTER_SITES=	LOCAL/dbn/${PORTNAME}
 PKGNAMEPREFIX=	kde4-style-

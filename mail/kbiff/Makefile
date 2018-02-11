@@ -1,9 +1,9 @@
 # Created by: andreas
-# $FreeBSD: head/mail/kbiff/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/mail/kbiff/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kbiff
 PORTVERSION=	4.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	mail kde
 MASTER_SITES=	SF
 
