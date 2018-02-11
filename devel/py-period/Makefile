@@ -1,33 +1,21 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/py-period/Makefile 439042 2017-04-21 10:29:55Z amdmi3 $
+# $FreeBSD: head/devel/py-period/Makefile 461313 2018-02-09 14:08:57Z sunpoet $
 
 PORTNAME=	period
-PORTVERSION=	0.5
-PORTREVISION=	1
+PORTVERSION=	0.6.1
 CATEGORIES=	devel python
-MASTER_SITES=	http://www.biostat.wisc.edu/~annis/creations/
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Basic time period checking library
 
-LICENSE=	ART10 # same as perl
+LICENSE=	ART20
 
-USES=		python shebangfix
-SHEBANG_FILES=	period.py
-NO_BUILD=	yes
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pip>=0:devel/py-pip@${FLAVOR}
+
 NO_ARCH=	yes
-
-OPTIONS_DEFINE=	DOCS
-
-do-install:
-	@${MKDIR} ${STAGEDIR}${PYTHON_SITELIBDIR}
-	${INSTALL_SCRIPT} ${WRKSRC}/period.py ${STAGEDIR}${PYTHON_SITELIBDIR}
-
-do-install-DOCS-on:
-	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-.for ex in html txt
-	${INSTALL_DATA} ${WRKSRC}/period.${ex} ${STAGEDIR}${DOCSDIR}
-.endfor
+USE_PYTHON=	autoplist concurrent distutils
+USES=		python
 
 .include <bsd.port.mk>

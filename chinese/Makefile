@@ -1,4 +1,4 @@
-# $FreeBSD: head/chinese/Makefile 459687 2018-01-22 19:31:45Z pi $
+# $FreeBSD: head/chinese/Makefile 461243 2018-02-08 15:11:50Z dbn $
 #
 
     COMMENT = Chinese support
@@ -27,7 +27,6 @@
     SUBDIR += dictd-database
     SUBDIR += docproj
     SUBDIR += enscript
-    SUBDIR += eric6
     SUBDIR += eterm
     SUBDIR += fandol
     SUBDIR += fcitx

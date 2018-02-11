@@ -1,8 +1,9 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/math/hs-vector-space/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/math/hs-vector-space/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	vector-space
 PORTVERSION=	0.10.4
+PORTREVISION=	1
 CATEGORIES=	math haskell
 
 MAINTAINER=	haskell@FreeBSD.org

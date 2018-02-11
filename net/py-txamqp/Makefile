@@ -1,9 +1,8 @@
 # Created by: Bruce Simpson
-# $FreeBSD: head/net/py-txamqp/Makefile 460589 2018-02-01 13:23:37Z sunpoet $
+# $FreeBSD: head/net/py-txamqp/Makefile 461229 2018-02-08 13:00:50Z sunpoet $
 
 PORTNAME=	txamqp
-PORTVERSION=	0.8.1
-PORTREVISION=	1
+PORTVERSION=	0.8.2
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

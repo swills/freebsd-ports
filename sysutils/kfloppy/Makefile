@@ -1,9 +1,9 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/sysutils/kfloppy/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/sysutils/kfloppy/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kfloppy
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

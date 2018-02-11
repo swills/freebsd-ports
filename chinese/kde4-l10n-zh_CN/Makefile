@@ -1,9 +1,9 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/chinese/kde4-l10n-zh_CN/Makefile 449969 2017-09-16 16:52:48Z tcberner $
+# $FreeBSD: head/chinese/kde4-l10n-zh_CN/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kde-l10n
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	chinese kde
 
 MAINTAINER=	kde@FreeBSD.org

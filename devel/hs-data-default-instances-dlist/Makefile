@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-data-default-instances-dlist/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/devel/hs-data-default-instances-dlist/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	data-default-instances-dlist
 PORTVERSION=	0.0.1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

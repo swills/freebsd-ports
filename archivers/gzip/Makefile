@@ -1,13 +1,15 @@
 # Created by: Cyrille Lefevre <cyrille.lefevre@laposte.net>
-# $FreeBSD: head/archivers/gzip/Makefile 414103 2016-04-27 12:20:19Z johans $
+# $FreeBSD: head/archivers/gzip/Makefile 461214 2018-02-08 12:05:05Z johans $
 
 PORTNAME=	gzip
-PORTVERSION=	1.8
+PORTVERSION=	1.9
 CATEGORIES=	archivers
 MASTER_SITES=	GNU
 
 MAINTAINER=	johans@FreeBSD.org
 COMMENT=	Compression utility designed to be a replacement for compress
+
+LICENSE=	GPLv3+
 
 USES=		cpe charsetfix makeinfo
 GNU_CONFIGURE=	yes

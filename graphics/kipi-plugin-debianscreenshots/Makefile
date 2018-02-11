@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/kipi-plugin-debianscreenshots/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/graphics/kipi-plugin-debianscreenshots/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kipi-plugin-${KIPI_PLUGIN}
 PORTVERSION=	${DIGIKAM_VER}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics kde
 
 MAINTAINER=	kde@FreeBSD.org

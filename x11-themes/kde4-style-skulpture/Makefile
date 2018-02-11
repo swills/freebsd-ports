@@ -1,9 +1,9 @@
 # Created by: Steve Wills <steve@mouf.net>
-# $FreeBSD: head/x11-themes/kde4-style-skulpture/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/x11-themes/kde4-style-skulpture/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	skulpture
 PORTVERSION=	0.2.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-themes kde
 MASTER_SITES=	http://www.kde-look.org/CONTENT/content-files/
 PKGNAMEPREFIX=	kde4-style-

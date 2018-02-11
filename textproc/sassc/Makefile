@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/textproc/sassc/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/textproc/sassc/Makefile 461398 2018-02-10 14:50:17Z nivit $
 
 PORTNAME=	sassc
-PORTVERSION=	3.4.2
-PORTREVISION=	2
+PORTVERSION=	3.4.8
+PORTREVISION=	0
 CATEGORIES=	textproc
 
 MAINTAINER=	nivit@FreeBSD.org
@@ -14,13 +14,15 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libsass.so:textproc/libsass
 
-USE_GITHUB=	yes
 GH_ACCOUNT=	sass
-
-USES=		autoreconf compiler:c++11-lib gmake libtool localbase
 GNU_CONFIGURE=	yes
 
+MAKEFILE=	GNUmakefile
+
 PLIST_FILES=	bin/sassc
+
+USES=		autoreconf compiler:c++11-lib gmake libtool localbase
+USE_GITHUB=	yes
 
 post-patch:
 	@${ECHO_CMD} "${ECHO_CMD} \"${PORTVERSION}\"" > ${WRKSRC}/version.sh

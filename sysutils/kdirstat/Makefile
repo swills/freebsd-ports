@@ -1,9 +1,9 @@
 # Created by: Stefan Jahn <stefan.jahn@nemesis-sektor.de>
-# $FreeBSD: head/sysutils/kdirstat/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/sysutils/kdirstat/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kdirstat
 PORTVERSION=	2.7.8
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils kde
 MASTER_SITES=	https://bitbucket.org/jeromerobert/k4dirstat/get/
 DISTNAME=	k4dirstat-${PORTVERSION}

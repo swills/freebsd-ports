@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/kuser/Makefile 458366 2018-01-07 18:18:29Z tcberner $
+# $FreeBSD: head/sysutils/kuser/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kuser
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

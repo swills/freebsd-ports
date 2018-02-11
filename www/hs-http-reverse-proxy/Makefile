@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/hs-http-reverse-proxy/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/www/hs-http-reverse-proxy/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	http-reverse-proxy
 PORTVERSION=	0.4.4
+PORTREVISION=	1
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

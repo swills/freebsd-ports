@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTML-DOM/Makefile 421693 2016-09-10 14:14:08Z ehaupt $
+# $FreeBSD: head/www/p5-HTML-DOM/Makefile 461376 2018-02-10 10:52:28Z ehaupt $
 
 PORTNAME=	HTML-DOM
-PORTVERSION=	0.057
+PORTVERSION=	0.058
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

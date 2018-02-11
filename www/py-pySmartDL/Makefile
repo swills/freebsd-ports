@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/py-pySmartDL/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-pySmartDL/Makefile 461428 2018-02-10 19:59:26Z sunpoet $
 
 PORTNAME=	pySmartDL
 PORTVERSION=	1.2.4
@@ -10,15 +10,11 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	feld@FreeBSD.org
 COMMENT=	Smart download manager for Python
 
+RUN_DEPENDS=	${PY_FUTURES}
+
 USES=		python
 USE_PYTHON=	autoplist distutils
 
 NO_ARCH=	yes
 
-.include <bsd.port.pre.mk>
-
-.if ${PYTHON_VER} == "2.7"
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}futures>0:devel/py-futures@${FLAVOR}
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

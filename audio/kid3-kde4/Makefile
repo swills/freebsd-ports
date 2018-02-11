@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/kid3-kde4/Makefile 460133 2018-01-27 17:36:35Z jhale $
+# $FreeBSD: head/audio/kid3-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kid3
 PORTVERSION=	3.5.1
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	audio kde
 MASTER_SITES=	SF
 

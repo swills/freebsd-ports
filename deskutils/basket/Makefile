@@ -1,9 +1,9 @@
 # Created by: Markus Brueffer <brueffer@phoenix-systems.de>
-# $FreeBSD: head/deskutils/basket/Makefile 459243 2018-01-17 12:11:56Z tcberner $
+# $FreeBSD: head/deskutils/basket/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	basket
 PORTVERSION=	1.81
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	deskutils kde
 MASTER_SITES=	http://basket.kde.org/downloads/
 

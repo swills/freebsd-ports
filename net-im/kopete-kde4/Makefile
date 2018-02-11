@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-im/kopete-kde4/Makefile 458368 2018-01-07 18:21:29Z tcberner $
+# $FreeBSD: head/net-im/kopete-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kopete
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	6
+PORTREVISION=	8
 CATEGORIES=	net-im kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
@@ -12,7 +12,7 @@ LIB_DEPENDS=	libidn.so:dns/libidn \
 		libqca.so:devel/qca \
 		libotr.so.5:security/libotr \
 		libgadu.so:polish/libgadu \
-		libkleo.so:deskutils/kdepim4 \
+		libkleo.so:deskutils/kdepim-kde4 \
 		libmeanwhile.so:net-im/meanwhile \
 		libv4l2.so:multimedia/libv4l \
 		libjasper.so:graphics/jasper

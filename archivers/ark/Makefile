@@ -1,9 +1,9 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/archivers/ark/Makefile 445791 2017-07-14 17:20:13Z amdmi3 $
+# $FreeBSD: head/archivers/ark/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	ark
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	archivers kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

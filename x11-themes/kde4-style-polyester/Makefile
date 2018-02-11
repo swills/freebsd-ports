@@ -1,9 +1,9 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/x11-themes/kde4-style-polyester/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/x11-themes/kde4-style-polyester/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	polyester
 PORTVERSION=	2.0.0
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	x11-themes kde
 MASTER_SITES=	http://www.notmart.org/files/
 PKGNAMEPREFIX=	kde4-style-

@@ -1,8 +1,8 @@
 # Created by: Elvis Chiang <elvis@sslab.cs.ccu.edu.tw>
-# $FreeBSD: head/www/wordpress/Makefile 459400 2018-01-19 07:09:28Z joneum $
+# $FreeBSD: head/www/wordpress/Makefile 461345 2018-02-09 22:48:12Z joneum $
 
 PORTNAME=	wordpress
-DISTVERSION=	4.9.2
+DISTVERSION=	4.9.4
 PORTEPOCH=	1
 CATEGORIES=	www
 MASTER_SITES=	http://wordpress.org/

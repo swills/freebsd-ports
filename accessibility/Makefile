@@ -1,4 +1,4 @@
-# $FreeBSD: head/accessibility/Makefile 459211 2018-01-16 22:24:57Z feld $
+# $FreeBSD: head/accessibility/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 #
 
     COMMENT = Ports to help disabled users
@@ -13,7 +13,7 @@
     SUBDIR += eflite
     SUBDIR += jovie
     SUBDIR += kaccessible
-    SUBDIR += kdeaccessibility4
+    SUBDIR += kdeaccessibility-kde4
     SUBDIR += kmag
     SUBDIR += kmousetool
     SUBDIR += kmouth

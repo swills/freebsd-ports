@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/free42/Makefile 458469 2018-01-08 18:56:09Z yuri $
+# $FreeBSD: head/misc/free42/Makefile 461444 2018-02-10 22:34:22Z yuri $
 
 PORTNAME=	free42
-DISTVERSION=	2.0.10
+DISTVERSION=	2.0.14
 CATEGORIES=	misc
 MASTER_SITES=	http://thomasokken.com/free42/upstream/
 DISTNAME=	${PORTNAME}-nologo-${DISTVERSION}
@@ -24,6 +24,7 @@ USE_GNOME=	atk cairo gdkpixbuf2 glib20 gtk20 pango
 USE_XORG=	x11 xmu
 DOS2UNIX_FILES=	gtk/IntelRDFPMathLib20U1/LIBRARY/float128/op_system.h
 
+CXXFLAGS+=	-Wno-c++11-narrowing -Wno-constant-conversion # to accommodate some code breaking with clang-50
 BUILD_WRKSRC=	${WRKSRC}/gtk
 
 post-extract:

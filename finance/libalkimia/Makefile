@@ -1,8 +1,8 @@
-# $FreeBSD: head/finance/libalkimia/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/finance/libalkimia/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	libalkimia
 PORTVERSION=	5.0.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	finance kde
 MASTER_SITES=	KDE/stable/alkimia/${PORTVERSION}/src
 

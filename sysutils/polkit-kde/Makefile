@@ -1,9 +1,9 @@
 # Created by: Dima Panov <fluffy@Fluffy.Khv.RU>
-# $FreeBSD: head/sysutils/polkit-kde/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/sysutils/polkit-kde/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	polkit-kde
 PORTVERSION=	0.99.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	sysutils kde
 MASTER_SITES=	KDE/stable/apps/KDE4.x/admin/
 DISTNAME=	${PORTNAME}-agent-1-${PORTVERSION:C/1$/0/}

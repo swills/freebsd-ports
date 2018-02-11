@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 460344 2018-01-29 21:49:33Z yuri $
+# $FreeBSD: head/x11/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 #
 
     COMMENT = Ports to support the X window system
@@ -128,7 +128,7 @@
     SUBDIR += kde4-baseapps
     SUBDIR += kde4-runtime
     SUBDIR += kde4-workspace
-    SUBDIR += kdelibs4
+    SUBDIR += kdelibs-kde4
     SUBDIR += keybinder
     SUBDIR += keybinder-gtk3
     SUBDIR += keyboardcast

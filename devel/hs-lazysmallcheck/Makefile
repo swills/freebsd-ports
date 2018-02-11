@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-lazysmallcheck/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/devel/hs-lazysmallcheck/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	lazysmallcheck
 PORTVERSION=	0.6
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

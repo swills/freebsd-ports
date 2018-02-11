@@ -1,9 +1,9 @@
 # Created by: Raphael Kubo da Costa <rakuco@FreeBSD.org>
-# $FreeBSD: head/audio/kscd/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/audio/kscd/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kscd
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

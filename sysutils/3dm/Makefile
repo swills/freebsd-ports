@@ -1,9 +1,9 @@
 # Created by: Daniel Baker <dbaker@FreeBSD.org>
-# $FreeBSD: head/sysutils/3dm/Makefile 417677 2016-06-27 19:29:07Z pi $
+# $FreeBSD: head/sysutils/3dm/Makefile 461346 2018-02-09 23:21:33Z yuri $
 
 PORTNAME=	3dm
-PORTVERSION=	2.11.00.021
-PORTREVISION=	3
+DISTVERSION=	2.11.00.021
+PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.avagotech.com/docs-and-downloads/raid-controllers/raid-controllers-common-files/
@@ -14,16 +14,17 @@ MAINTAINER=	takefu@airport.fm
 COMMENT=	3ware RAID controller monitoring daemon and web server
 
 LICENSE=	3dm
-LICENSE_NAME=	AVAGO
+LICENSE_NAME=	BROADCOM
 LICENSE_TEXT=	Source recipient must acknowledge license.\
 		Reproduction or redistribution prohibited.\
-		See http://www.avagotech.com/cs/Satellite?pagename=AVG2/Utilities/EulaMsg
+		See https://www.broadcom.com/cs/Satellite?pagename=AVG2/Utilities/EulaMsg
 LICENSE_PERMS=	no-dist-mirror no-dist-sell no-pkg-mirror no-pkg-sell auto-accept
+
+ONLY_FOR_ARCHS=	amd64 i386
 
 USES=		zip
 USE_RC_SUBR=	3dm2
 SUB_FILES=	pkg-message 3dm2.conf.sample
-ONLY_FOR_ARCHS=	i386 amd64
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
 MSGDIR=		${ETCDIR}2/msg

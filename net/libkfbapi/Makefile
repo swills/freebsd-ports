@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/libkfbapi/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/net/libkfbapi/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	libkfbapi
 PORTVERSION=	1.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net kde
 MASTER_SITES=	KDE/stable/libkfbapi/${PORTVERSION}/src
 DIST_SUBDIR=	KDE

@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/kde4-l10n-ia/Makefile 449969 2017-09-16 16:52:48Z tcberner $
+# $FreeBSD: head/misc/kde4-l10n-ia/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kde-l10n
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	misc kde
 
 MAINTAINER=	kde@FreeBSD.org

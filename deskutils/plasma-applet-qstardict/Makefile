@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/plasma-applet-qstardict/Makefile 455031 2017-11-28 11:29:23Z amdmi3 $
+# $FreeBSD: head/deskutils/plasma-applet-qstardict/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	qstardict
 PORTVERSION=	1.0.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	deskutils textproc kde
 MASTER_SITES=	http://qstardict.ylsoftware.com/files/
 PKGNAMEPREFIX=	plasma-applet-

@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/coinmp/Makefile 461195 2018-02-08 01:13:21Z pfg $
+# $FreeBSD: head/math/coinmp/Makefile 461242 2018-02-08 14:41:23Z pfg $
 
 PORTNAME=	CoinMP
 PORTVERSION=	1.8.3
@@ -24,7 +24,7 @@ CXXFLAGS+=	-ffast-math
 
 OPTIONS_DEFINE=	DEBUG DOCS FORTRAN GLPK
 
-FORTRAN_DESCR=	Use BLAS/LAPACK with the fortran interface
+FORTRAN_DESC=	Use BLAS/LAPACK with the Fortran interface
 GLPK_DESC=	GNU Linear Programming Kit support
 
 PORTDOCS=	*

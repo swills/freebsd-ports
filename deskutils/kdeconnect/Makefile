@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/kdeconnect/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/deskutils/kdeconnect/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kdeconnect-kde
 PORTVERSION=	0.7.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	deskutils
 MASTER_SITES=	KDE/unstable/kdeconnect/${PORTVERSION}/src/
 

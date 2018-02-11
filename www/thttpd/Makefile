@@ -1,8 +1,8 @@
 # Created by: Anders Nordby <anders@fix.no>
-# $FreeBSD: head/www/thttpd/Makefile 437856 2017-04-06 07:08:10Z danfe $
+# $FreeBSD: head/www/thttpd/Makefile 461240 2018-02-08 14:26:28Z danfe $
 
 PORTNAME=	thttpd
-PORTVERSION=	2.27
+PORTVERSION=	2.28
 CATEGORIES=	www ipv6
 MASTER_SITES=	http://www.acme.com/software/thttpd/
 

@@ -1,12 +1,12 @@
 # Created by: Alexander Novitsky <alecn2002@yandex.ru>
-# $FreeBSD: head/devel/ruby-gems/Makefile 457795 2018-01-01 20:19:02Z sunpoet $
+# $FreeBSD: head/devel/ruby-gems/Makefile 461230 2018-02-08 13:00:56Z sunpoet $
 #
 # Do not forget to update the following gemspec patches:
 # - security/rubygem-ezcrypto/files/patch-gemspec
 # - www/rubygem-gitlab-grack/files/patch-gemspec
 
 PORTNAME=	gems
-PORTVERSION=	2.7.4
+PORTVERSION=	2.7.5
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://production.cf.rubygems.org/rubygems/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -35,7 +35,7 @@ GEMS_DOC_BASE_DIR=	${GEMS_VER_DIR}/doc
 GEMS_DOC_BASE_DIR_P=	${GEMS_VER_DIR_P}/doc
 GEMS_DOC_DIR=		${GEMS_DOC_BASE_DIR}/${DISTNAME}
 GEMS_DOC_DIR_P=		${GEMS_DOC_BASE_DIR_P}/%%DISTNAME%%
-GEMS_ENV=		GEM_HOME=${STAGEDIR}${PREFIX}/${GEMS_VER_DIR}
+GEMS_ENV=		DONT_USE_BUNDLER_FOR_GEMDEPS=true GEM_HOME=${STAGEDIR}${PREFIX}/${GEMS_VER_DIR}
 RUBY_SETUP_OPTIONS=	--destdir=${STAGEDIR} --no-regenerate-binstubs
 RUBY_VER_SHORT=		${RUBY_VER:S/.//}
 
@@ -56,10 +56,6 @@ PLIST_SUB=	DISTNAME="${DISTNAME}" \
 OPTIONS_DEFINE=	DOCS
 
 DOCS_VARS_OFF=	RUBY_SETUP_OPTIONS+="--no-ri --no-rdoc"
-
-post-patch:
-# Disable bundler for gemdeps
-	@${REINPLACE_CMD} -e '/USE_BUNDLER_FOR_GEMDEPS = true/ s|true|false|' ${WRKSRC}/lib/rubygems.rb
 
 do-install:
 	cd ${WRKSRC}/ && ${SETENV} ${GEMS_ENV} ${RUBY} ${RUBY_SETUP} ${RUBY_SETUP_OPTIONS}

@@ -1,9 +1,9 @@
 # Created by: Stefan Esser <se@FreeBSD.org>
-# $FreeBSD: head/multimedia/kplayer-kde4/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/kplayer-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kplayer
 PORTVERSION=	0.7
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	multimedia kde
 MASTER_SITES=	SF
 

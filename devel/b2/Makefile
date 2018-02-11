@@ -1,5 +1,5 @@
 # Created by: Bartek Rutkowski <robak@FreeBSD.org>
-# $FreeBSD: head/devel/b2/Makefile 457499 2017-12-29 09:01:54Z antoine $
+# $FreeBSD: head/devel/b2/Makefile 461420 2018-02-10 19:58:46Z sunpoet $
 
 PORTNAME=	b2
 DISTVERSIONPREFIX=	v
@@ -13,6 +13,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}arrow>=0.8.0:devel/py-arrow@${FLAVOR} \
+		${PY_FUTURES} \
 		${PYTHON_PKGNAMEPREFIX}logfury>=0.1.2:devel/py-logfury@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests>=2.9.1:www/py-requests@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=1.10:devel/py-six@${FLAVOR} \
@@ -28,10 +29,4 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	Backblaze
 GH_PROJECT=	B2_Command_Line_Tool
 
-.include <bsd.port.pre.mk>
-
-.if ${PYTHON_REL} < 3000
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}futures>=3.0.5:devel/py-futures@${FLAVOR}
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

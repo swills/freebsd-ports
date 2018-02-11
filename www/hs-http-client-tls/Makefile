@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/hs-http-client-tls/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/www/hs-http-client-tls/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	http-client-tls
 PORTVERSION=	0.3.5.1
+PORTREVISION=	1
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

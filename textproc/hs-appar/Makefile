@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/hs-appar/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/textproc/hs-appar/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	appar
 PORTVERSION=	0.1.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

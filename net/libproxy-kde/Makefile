@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/net/libproxy-kde/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/net/libproxy-kde/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 #    $MCom: ports/net/libproxy-kde/Makefile,v 1.1 2011/01/12 13:10:53 kwm Exp $
 
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net devel
 PKGNAMESUFFIX=	-kde
 

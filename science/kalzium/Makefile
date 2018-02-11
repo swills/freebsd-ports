@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/kalzium/Makefile 457914 2018-01-02 16:49:24Z tcberner $
+# $FreeBSD: head/science/kalzium/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kalzium
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	science kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

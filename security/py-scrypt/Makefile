@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/py-scrypt/Makefile 461200 2018-02-08 07:21:59Z yuri $
+# $FreeBSD: head/security/py-scrypt/Makefile 461320 2018-02-09 17:09:46Z yuri $
 
 PORTNAME=	scrypt
-DISTVERSION=	0.8.3
+DISTVERSION=	0.8.6
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

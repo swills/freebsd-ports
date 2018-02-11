@@ -1,5 +1,5 @@
 # Created by: cnh@ivmg.net
-# $FreeBSD: head/net-mgmt/tcpreplay/Makefile 449020 2017-08-31 09:55:58Z ehaupt $
+# $FreeBSD: head/net-mgmt/tcpreplay/Makefile 461205 2018-02-08 09:02:48Z amdmi3 $
 
 PORTNAME=	tcpreplay
 PORTVERSION=	4.2.6
@@ -19,6 +19,7 @@ BUILD_DEPENDS=	pcapnav-config:net/libpcapnav
 USES=		autoreconf libtool pkgconfig
 USE_GITHUB=	yes
 GNU_CONFIGURE=	yes
+TEST_TARGET=	test
 
 GH_ACCOUNT=	appneta
 
@@ -41,8 +42,5 @@ LIBPCAP_PORTS_LIB_DEPENDS=	libpcap.so:net/libpcap
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|-Wall -O3||' ${WRKSRC}/${CONFIGURE_SCRIPT}.ac
-
-regression-test: build
-	@cd ${WRKSRC} && ${MAKE} -s test
 
 .include <bsd.port.mk>

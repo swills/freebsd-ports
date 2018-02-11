@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/kpovmodeler/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/kpovmodeler/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kpovmodeler
 PORTVERSION=	${APP_VER}.${EXTRA_VER}
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	graphics kde
 MASTER_SITES=	KDE/Attic/${EXTRA_VER}/src/extragear
 DISTNAME=	${PORTNAME}-${APP_VER}-kde${EXTRA_VER}

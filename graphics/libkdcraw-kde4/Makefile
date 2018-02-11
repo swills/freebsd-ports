@@ -1,9 +1,9 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/graphics/libkdcraw-kde4/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/graphics/libkdcraw-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	libkdcraw
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	graphics kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/mail/py-dkimpy/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/mail/py-dkimpy/Makefile 461371 2018-02-10 09:39:30Z antoine $
 
 PORTNAME=	dkimpy
-PORTVERSION=	0.6.1
+DISTVERSION=	0.7.0
 CATEGORIES=	mail python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,11 +12,13 @@ COMMENT=	Python library for DKIM email signing and verification
 
 LICENSE=	ZLIB
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dns>=0:dns/py-dns@${FLAVOR}
-
-NO_ARCH=	yes
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}authres>=0:mail/py-authres@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dnspython>=0:dns/py-dnspython@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}milter>=0:mail/py-milter@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pynacl>=0:security/py-pynacl@${FLAVOR}
 
 USES=		python:2.7
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	distutils autoplist concurrent
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

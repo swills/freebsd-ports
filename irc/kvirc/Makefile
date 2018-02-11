@@ -1,9 +1,9 @@
 # Created by: Michael Ranner
-# $FreeBSD: head/irc/kvirc/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/irc/kvirc/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kvirc
 PORTVERSION=	4.2.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	irc kde
 MASTER_SITES=	ftp://ftp.kvirc.de/pub/kvirc/%SUBDIR%/ \
 		http://kvirc.gmake.de/pub/kvirc/%SUBDIR%/ \

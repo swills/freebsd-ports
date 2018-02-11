@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/hs-data-default-class/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/devel/hs-data-default-class/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	data-default-class
 PORTVERSION=	0.1.2.0
+PORTREVISION=	1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

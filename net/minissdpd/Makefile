@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/net/minissdpd/Makefile 429077 2016-12-21 12:37:56Z ehaupt $
+# $FreeBSD: head/net/minissdpd/Makefile 461390 2018-02-10 12:34:37Z ehaupt $
 
 PORTNAME=	minissdpd
-PORTVERSION=	1.5.20161216
+PORTVERSION=	1.5.20180203
 CATEGORIES=	net
 MASTER_SITES=	http://miniupnp.free.fr/files/ \
 		LOCAL/ehaupt

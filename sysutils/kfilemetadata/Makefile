@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/kfilemetadata/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/sysutils/kfilemetadata/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kfilemetadata
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	13
+PORTREVISION=	15
 CATEGORIES=	sysutils kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
@@ -13,7 +13,7 @@ LIB_DEPENDS=	libpoppler-qt4.so:graphics/poppler-qt4 \
 		libexiv2.so:graphics/exiv2 \
 		libswscale.so:multimedia/ffmpeg \
 		libepub.so:textproc/ebook-tools \
-		libqmobipocket.so:graphics/kdegraphics4-mobipocket
+		libqmobipocket.so:graphics/kdegraphics-mobipocket-kde4
 
 USES=		cmake:outsource kde:4 pkgconfig tar:xz
 USE_KDE=	automoc4 kdelibs

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 460506 2018-01-31 16:42:07Z sunpoet $
+# $FreeBSD: head/security/Makefile 461418 2018-02-10 19:58:36Z sunpoet $
 #
 
     COMMENT = Security tools
@@ -969,6 +969,7 @@
     SUBDIR += py-python-openid
     SUBDIR += py-python-registry
     SUBDIR += py-python-social-auth
+    SUBDIR += py-python3-openid
     SUBDIR += py-rekall
     SUBDIR += py-rekall-core
     SUBDIR += py-requests-kerberos

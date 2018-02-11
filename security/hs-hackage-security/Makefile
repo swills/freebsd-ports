@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/hs-hackage-security/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/security/hs-hackage-security/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	hackage-security
 PORTVERSION=	0.5.2.2
+PORTREVISION=	1
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/hs-fdo-notify/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/deskutils/hs-fdo-notify/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	fdo-notify
 PORTVERSION=	0.3.1
+PORTREVISION=	1
 CATEGORIES=	deskutils haskell
 
 MAINTAINER=	haskell@FreeBSD.org

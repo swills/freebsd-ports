@@ -1,9 +1,9 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/french/kde4-l10n/Makefile 449969 2017-09-16 16:52:48Z tcberner $
+# $FreeBSD: head/french/kde4-l10n/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kde-l10n
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	french kde
 
 MAINTAINER=	kde@FreeBSD.org

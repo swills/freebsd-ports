@@ -1,9 +1,9 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/audio/amarok-kde4/Makefile 453473 2017-11-04 17:13:34Z dbn $
+# $FreeBSD: head/audio/amarok-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	amarok
 PORTVERSION=	2.8.0
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	audio kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src
 

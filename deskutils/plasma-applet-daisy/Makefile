@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/plasma-applet-daisy/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/deskutils/plasma-applet-daisy/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	daisy
 PORTVERSION=	0.0.4.26
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	deskutils kde
 MASTER_SITES=	http://cdlszm.org/downloads/
 PKGNAMEPREFIX=	plasma-applet-

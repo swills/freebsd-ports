@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-cipher-des/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/security/hs-cipher-des/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	cipher-des
 PORTVERSION=	0.0.6
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

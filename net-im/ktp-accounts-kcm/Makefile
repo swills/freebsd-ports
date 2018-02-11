@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-im/ktp-accounts-kcm/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/net-im/ktp-accounts-kcm/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	ktp-accounts-kcm
 PORTVERSION=	${KTP_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-im kde
 MASTER_SITES=	KDE/${KTP_BRANCH}/kde-telepathy/${PORTVERSION}/src
 

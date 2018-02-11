@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 460952 2018-02-04 22:33:06Z yuri $
+# $FreeBSD: head/audio/Makefile 461283 2018-02-09 02:35:14Z jhale $
 #
 
     COMMENT = Audio tools
@@ -418,6 +418,7 @@
     SUBDIR += libmusicbrainz3
     SUBDIR += libmusicbrainz5
     SUBDIR += libmusicxml
+    SUBDIR += libmysofa
     SUBDIR += libnjb
     SUBDIR += libnoise
     SUBDIR += libogg

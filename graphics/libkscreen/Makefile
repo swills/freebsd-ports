@@ -1,9 +1,9 @@
 # Created by: alonso@
-# $FreeBSD: head/graphics/libkscreen/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/graphics/libkscreen/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	libkscreen
 PORTVERSION=	1.0.5
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/hs-prelude-extras/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/devel/hs-prelude-extras/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	prelude-extras
 PORTVERSION=	0.4.0.3
+PORTREVISION=	1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

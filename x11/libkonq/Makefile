@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/libkonq/Makefile 441419 2017-05-21 17:05:32Z rakuco $
+# $FreeBSD: head/x11/libkonq/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	libkonq
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11 kde kde-kde4
 DISTNAME=	kde-baseapps-${PORTVERSION}
 

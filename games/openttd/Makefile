@@ -1,8 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/openttd/Makefile 457957 2018-01-03 12:10:39Z danfe $
+# $FreeBSD: head/games/openttd/Makefile 461290 2018-02-09 09:12:48Z jbeich $
 
 PORTNAME=	openttd
 DISTVERSION=	1.7.2
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://ca.binaries.openttd.org/binaries/releases/${DISTVERSION}/ \
 		http://cz.binaries.openttd.org/binaries/releases/${DISTVERSION}/ \
@@ -57,6 +58,8 @@ CONFIGURE_ARGS+=	--enable-dedicated
 CFLAGS+=	-I${LOCALBASE}/include
 USE_RC_SUBR=	${PORTNAME}
 .else
+USES+=		compiler:c++11-lib
+USE_CXXSTD=	gnu++11
 LIB_DEPENDS+=	libfreetype.so:print/freetype2 \
 		libicui18n.so:devel/icu \
 		libicu-le-hb.so:devel/icu-le-hb \

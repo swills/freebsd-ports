@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/kipi-plugin-advancedslideshow/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/graphics/kipi-plugin-advancedslideshow/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kipi-plugin-${KIPI_PLUGIN}
 PORTVERSION=	${DIGIKAM_VER}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics kde
 
 MAINTAINER=	kde@FreeBSD.org

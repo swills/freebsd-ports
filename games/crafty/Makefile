@@ -1,13 +1,14 @@
 # Created by: Stefan Eggers <seggers@semyam.dinoco.de>
-# $FreeBSD: head/games/crafty/Makefile 461039 2018-02-06 11:50:38Z johans $
+# $FreeBSD: head/games/crafty/Makefile 461319 2018-02-09 16:13:07Z johans $
 
 PORTNAME=	crafty
 PORTVERSION=	25.2
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://www.craftychess.com/downloads/source/:src \
 		http://www.craftychess.com/downloads/book/:data
 DISTFILES=	crafty-${PORTVERSION}.zip:src \
-		books.bin:data \
+		book.bin:data \
 		start.pgn.gz:data
 DIST_SUBDIR=	crafty
 EXTRACT_ONLY=	crafty-${PORTVERSION}.zip

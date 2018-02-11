@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/Makefile 460660 2018-02-02 01:03:48Z jonathan $
+# $FreeBSD: head/x11-themes/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 #
 
     COMMENT = X11 themes
@@ -120,7 +120,7 @@
     SUBDIR += kde4-wallpapers-freebsd
     SUBDIR += kde4-windeco-crystal
     SUBDIR += kde4-windeco-dekorator
-    SUBDIR += kdeartwork4
+    SUBDIR += kdeartwork-kde4
     SUBDIR += kf5-breeze-icons
     SUBDIR += kf5-kemoticons
     SUBDIR += kf5-kiconthemes
@@ -165,6 +165,8 @@
     SUBDIR += rezlooks
     SUBDIR += sawfish-themes
     SUBDIR += sddm-freebsd-black-theme
+    SUBDIR += slim-freebsd-black-theme
+    SUBDIR += slim-freebsd-themes
     SUBDIR += slim-themes
     SUBDIR += thewidgetfactory
     SUBDIR += ubuntulooks

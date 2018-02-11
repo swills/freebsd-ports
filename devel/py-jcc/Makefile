@@ -1,5 +1,5 @@
 # Created by: clsung@FreeBSD.org
-# $FreeBSD: head/devel/py-jcc/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/devel/py-jcc/Makefile 461393 2018-02-10 12:58:55Z dbaio $
 
 PORTNAME=	jcc
 PORTVERSION=	3.0
@@ -25,7 +25,7 @@ JAVA_VERSION=	1.6+
 JAVA_VENDOR=	openjdk
 
 JCC_INCLUDES=	'${JAVA_HOME}/include;${JAVA_HOME}/include/freebsd'
-JCC_CFLAGS=	'-fno-strict-aliasing;-pipe'
+JCC_CFLAGS=	'-fno-strict-aliasing;-pipe;-std=gnu++98'
 JCC_LFLAGS=	'-L${JAVA_HOME}/jre/lib/${ARCH};-ljava;-ljvm;-lverify;-L${JAVA_HOME}/jre/lib/${ARCH}/server;-L${JAVA_HOME}/jre/lib/${ARCH}/client;-Wl,-rpath=${JAVA_HOME}/jre/lib/${ARCH}:${JAVA_HOME}/jre/lib/${ARCH}/server:${JAVA_HOME}/jre/lib/${ARCH}/client'
 JCC_DEBUG_CFLAGS=	"-O0 -g -DDEBUG"
 

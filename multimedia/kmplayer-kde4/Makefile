@@ -1,9 +1,9 @@
 # Created by: Kris Moore
-# $FreeBSD: head/multimedia/kmplayer-kde4/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/kmplayer-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kmplayer
 PORTVERSION=	0.11.5b
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	3
 CATEGORIES=	multimedia audio kde
 PKGNAMESUFFIX=	-kde4

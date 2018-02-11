@@ -1,9 +1,9 @@
 # Created by: decept
-# $FreeBSD: head/x11-themes/kde4-windeco-crystal/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/x11-themes/kde4-windeco-crystal/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	crystal
 PORTVERSION=	2.2.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	x11-themes kde
 MASTER_SITES=	http://www.kde-look.org/CONTENT/content-files/
 PKGNAMEPREFIX=	kde-windeco-

@@ -1,9 +1,9 @@
 # Created by: Raphael Kubo da Costa <rakuco@FreeBSD.org>
-# $FreeBSD: head/audio/kmix/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/audio/kmix/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kmix
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

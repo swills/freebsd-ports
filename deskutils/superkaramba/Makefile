@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/superkaramba/Makefile 458360 2018-01-07 17:02:46Z tcberner $
+# $FreeBSD: head/deskutils/superkaramba/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	superkaramba
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	deskutils kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

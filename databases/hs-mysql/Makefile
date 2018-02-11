@@ -1,8 +1,9 @@
 # Created by: jyyou@cs.nctu.edu.tw
-# $FreeBSD: head/databases/hs-mysql/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/databases/hs-mysql/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	mysql
 PORTVERSION=	0.1.4
+PORTREVISION=	1
 CATEGORIES=	databases haskell
 
 MAINTAINER=	haskell@FreeBSD.org

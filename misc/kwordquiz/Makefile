@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/kwordquiz/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/misc/kwordquiz/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kwordquiz
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/kde-thumbnailer-epub/Makefile 440955 2017-05-15 16:25:58Z tcberner $
+# $FreeBSD: head/misc/kde-thumbnailer-epub/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kde-thumbnailer-epub
 PORTVERSION=	1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc kde
 MASTER_SITES=	http://kde-apps.org/CONTENT/content-files/
 DISTNAME=	151210-${PORTNAME}-${PORTVERSION}

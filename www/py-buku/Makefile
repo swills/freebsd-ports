@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/www/py-buku/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-buku/Makefile 461391 2018-02-10 12:39:50Z ehaupt $
 
 PORTNAME=	buku
-PORTVERSION=	3.5
+PORTVERSION=	3.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

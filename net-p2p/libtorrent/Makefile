@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-p2p/libtorrent/Makefile 451589 2017-10-09 09:42:45Z danfe $
+# $FreeBSD: head/net-p2p/libtorrent/Makefile 461437 2018-02-10 21:52:45Z dbaio $
 
 PORTNAME=	libtorrent
 PORTVERSION=	0.13.6
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net-p2p
 MASTER_SITES=	http://rtorrent.net/downloads/
 

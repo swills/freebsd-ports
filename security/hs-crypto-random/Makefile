@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-crypto-random/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/security/hs-crypto-random/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	crypto-random
 PORTVERSION=	0.0.9
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

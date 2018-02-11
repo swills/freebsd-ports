@@ -1,7 +1,8 @@
-# $FreeBSD: head/dns/hs-dns/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/dns/hs-dns/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	dns
 PORTVERSION=	2.0.10
+PORTREVISION=	1
 CATEGORIES=	dns haskell
 
 MAINTAINER=	haskell@FreeBSD.org

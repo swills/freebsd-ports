@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.default-versions.mk 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/Mk/bsd.default-versions.mk 461442 2018-02-10 22:19:13Z rene $
 #
 # MAINTAINER:	ports@FreeBSD.org
 #
@@ -70,7 +70,7 @@ _PERL5_FROM_BIN!=	perl -e 'printf "%vd\n", $$^V;'
 _EXPORTED_VARS+=	_PERL5_FROM_BIN
 PERL5_DEFAULT:=		${_PERL5_FROM_BIN:R}
 .endif
-# Possible values: 9.2, 9.3, 9.4, 9.5, 9.6
+# Possible values: 9.3, 9.4, 9.5, 9.6
 PGSQL_DEFAULT?=		9.5
 # Possible values: 5.6, 7.0, 7.1, 7.2
 PHP_DEFAULT?=		5.6

@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-hlibev/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/devel/hs-hlibev/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	hlibev
 PORTVERSION=	0.4.0
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 459753 2018-01-23 14:15:56Z tobik $
+# $FreeBSD: head/deskutils/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -124,9 +124,9 @@
     SUBDIR += kcharselect
     SUBDIR += kchmviewer
     SUBDIR += kdeconnect
-    SUBDIR += kdepim4
-    SUBDIR += kdepim4-runtime
-    SUBDIR += kdepimlibs4
+    SUBDIR += kdepim-kde4
+    SUBDIR += kdepim-runtime-kde4
+    SUBDIR += kdepimlibs-kde4
     SUBDIR += kdeplasma-addons
     SUBDIR += kruler
     SUBDIR += ksshaskpass

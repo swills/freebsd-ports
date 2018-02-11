@@ -1,9 +1,10 @@
-# $FreeBSD: head/net-im/kde-telepathy/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/net-im/kde-telepathy/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kde-telepathy
 PORTVERSION=	${KTP_VERSION}
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	net-im kde
+PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE integrated instant messaging framework

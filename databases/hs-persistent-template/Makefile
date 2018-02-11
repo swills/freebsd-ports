@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/hs-persistent-template/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/databases/hs-persistent-template/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	persistent-template
 PORTVERSION=	2.5.2
+PORTREVISION=	1
 CATEGORIES=	databases haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-im/hs-haskell-xmpp/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/net-im/hs-haskell-xmpp/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	haskell-xmpp
 PORTVERSION=	1.0.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net-im haskell
 
 MAINTAINER=	haskell@FreeBSD.org

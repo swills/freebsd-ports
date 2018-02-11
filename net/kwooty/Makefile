@@ -1,9 +1,9 @@
 # Created by: Mina R Waheeb <syncer@gmail.com>
-# $FreeBSD: head/net/kwooty/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/net/kwooty/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kwooty
 PORTVERSION=	0.8.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net kde
 MASTER_SITES=	SF/${PORTNAME}
 

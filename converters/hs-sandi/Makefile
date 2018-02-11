@@ -1,7 +1,8 @@
-# $FreeBSD: head/converters/hs-sandi/Makefile 457241 2017-12-25 15:49:23Z amdmi3 $
+# $FreeBSD: head/converters/hs-sandi/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	sandi
 PORTVERSION=	0.4.0
+PORTREVISION=	1
 CATEGORIES=	converters haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-IfElse/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/devel/hs-IfElse/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	IfElse
 PORTVERSION=	0.85
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

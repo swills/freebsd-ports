@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/libsigsegv/Makefile 436146 2017-03-14 10:46:04Z robak $
+# $FreeBSD: head/devel/libsigsegv/Makefile 461368 2018-02-10 09:02:53Z amdmi3 $
 
 PORTNAME=	libsigsegv
 PORTVERSION=	2.11
@@ -9,13 +9,14 @@ MASTER_SITES=	GNU/libsigsegv
 MAINTAINER=	gaod@hychen.org
 COMMENT=	Handling page faults in user mode
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+USES=		libtool
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	AWK="${AWK}" --enable-shared
 INSTALL_TARGET=	install-strip
-USES=		libtool
+TEST_TARGET=	check
 USE_LDCONFIG=	yes
 
 PLIST_FILES=	include/sigsegv.h \
@@ -23,9 +24,5 @@ PLIST_FILES=	include/sigsegv.h \
 		lib/libsigsegv.so \
 		lib/libsigsegv.so.2 \
 		lib/libsigsegv.so.2.0.4
-
-regression-test: build
-	@(cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_CMD} ${MAKE_FLAGS} \
-		${MAKEFILE} ${MAKE_ARGS} check)
 
 .include <bsd.port.mk>

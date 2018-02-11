@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/games/emptyepsilon/Makefile 454084 2017-11-12 21:27:12Z yuri $
+# $FreeBSD: head/games/emptyepsilon/Makefile 461452 2018-02-10 23:49:18Z yuri $
 
 PORTNAME=	emptyepsilon
 DISTVERSIONPREFIX=	EE-
-DISTVERSION=	2017.11.03
+DISTVERSION=	2018.01.05
 CATEGORIES=	games
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -16,11 +16,10 @@ BROKEN_powerpc64=	fails to compile: scienceDatabase.cpp: call of overloaded 'abs
 
 LIB_DEPENDS=	libsfml-system.so:devel/sfml
 
+USES=		cmake:outsource compiler:c++11-lib
 USE_GITHUB=	yes
 GH_ACCOUNT=	daid
 GH_PROJECT=	EmptyEpsilon SeriousProton:sproton
-
-USES=		cmake compiler:c++11-lib
 USE_GL=		gl glu
 CMAKE_ARGS=	-DSERIOUS_PROTON_DIR="${WRKSRC_sproton}/"
 

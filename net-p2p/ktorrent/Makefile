@@ -1,9 +1,9 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/net-p2p/ktorrent/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/net-p2p/ktorrent/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	ktorrent
 DISTVERSION=	4.3.1
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	net-p2p kde
 MASTER_SITES=	http://ktorrent.org/downloads/${DISTVERSION}/
 

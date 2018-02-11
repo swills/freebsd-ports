@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-trollius/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-trollius/Makefile 461421 2018-02-10 19:58:51Z sunpoet $
 
 PORTNAME=	trollius
 PORTVERSION=	2.0
@@ -12,6 +12,8 @@ COMMENT=	Port of the Tulip project (asyncio module, PEP 3156) on Python 2
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+RUN_DEPENDS=	${PY_FUTURES}
+
 USES=		python
 USE_PYTHON=	autoplist distutils
 
@@ -19,11 +21,8 @@ NO_ARCH=	yes
 
 .include <bsd.port.pre.mk>
 
-.if ${PYTHON_REL} < 3000
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}futures>0:devel/py-futures@${FLAVOR}
 .if ${PYTHON_REL} < 3300
 TEST_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR}
-.endif
 .endif
 
 do-test:

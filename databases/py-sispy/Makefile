@@ -1,8 +1,8 @@
 # Created by: Rick Miller
-# $FreeBSD: head/databases/py-sispy/Makefile 446383 2017-07-22 09:52:39Z antoine $
+# $FreeBSD: head/databases/py-sispy/Makefile 461372 2018-02-10 09:51:28Z yuri $
 
 PORTNAME=	sispy
-PORTVERSION=	1.0.1
+PORTVERSION=	1.1.0
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,8 +12,10 @@ COMMENT=	Python client library for interacting with the SIS RESTful API
 
 LICENSE=	BSD3CLAUSE
 
-# Python 2.6+, 3.4+
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR}
+
 USES=		python
-USE_PYTHON=	autoplist concurrent distutils
+USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

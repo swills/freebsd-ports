@@ -1,8 +1,8 @@
 # Created by: Nick Sayer <nsayer@FreeBSD.org>
-# $FreeBSD: head/databases/unixODBC/Makefile 397634 2015-09-23 19:38:57Z jkim $
+# $FreeBSD: head/databases/unixODBC/Makefile 461382 2018-02-10 11:13:57Z vanilla $
 
 PORTNAME=	unixODBC
-PORTVERSION=	2.3.4
+PORTVERSION=	2.3.5
 CATEGORIES=	databases
 MASTER_SITES=	ftp://ftp.unixodbc.org/pub/unixODBC/
 

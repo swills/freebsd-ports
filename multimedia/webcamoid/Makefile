@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/webcamoid/Makefile 456881 2017-12-21 02:23:31Z yuri $
+# $FreeBSD: head/multimedia/webcamoid/Makefile 461275 2018-02-08 22:14:31Z gerald $
 
 PORTNAME=	webcamoid
 DISTVERSION=	8.1.0
@@ -29,7 +29,7 @@ QMAKE_ARGS=	INSTALLQMLDIR=${QT_QMLDIR} \
 		MANDIR=${PREFIX}/man
 
 # Workaround for the crash when built with clang that the upstream author says is a bug in clang
-USE_GCC=	6.0+
+USE_GCC=	6+
 
 # Workaround for Bug#224137: devel/qt5-qmake: Doesn't use the right compiler in case USE_GCC is selected
 BINARY_ALIAS=	g++=${CXX}

@@ -1,9 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/sysutils/knutclient-kde4/Makefile 459255 2018-01-17 13:51:55Z tcberner $
+# $FreeBSD: head/sysutils/knutclient-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	knutclient
 PORTVERSION=	1.0.4
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	sysutils kde
 MASTER_SITES=	ftp://ftp.buzuluk.cz/pub/alo/knutclient/stable/ \
 		http://www.ringofsaturn.com/distfiles/ \

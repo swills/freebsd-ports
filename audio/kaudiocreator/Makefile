@@ -1,9 +1,9 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/audio/kaudiocreator/Makefile 451964 2017-10-13 08:57:45Z bapt $
+# $FreeBSD: head/audio/kaudiocreator/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kaudiocreator
 PORTVERSION=	1.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio kde
 MASTER_SITES=	http://kde-look.org/CONTENT/content-files/
 DISTNAME=	107645-${PORTNAME}-${PORTVERSION}

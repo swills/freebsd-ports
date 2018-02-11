@@ -1,9 +1,9 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/math/hs-erf/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/math/hs-erf/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	erf
 PORTVERSION=	2.0.0.0
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	math haskell
 
 MAINTAINER=	haskell@FreeBSD.org

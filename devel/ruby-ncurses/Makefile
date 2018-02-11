@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/ruby-ncurses/Makefile 456864 2017-12-20 22:27:25Z linimon $
+# $FreeBSD: head/devel/ruby-ncurses/Makefile 461259 2018-02-08 18:51:55Z sunpoet $
 
 PORTNAME=	ncurses
 PORTVERSION=	1.2.4
@@ -19,7 +19,7 @@ USE_RUBY_EXTCONF=	yes
 
 BROKEN=			checksum mismatch
 DEPRECATED=		Marked BROKEN for more than 6 months
-EXPIRATION_DATE=	2018-01-20
+EXPIRATION_DATE=	2018-02-21
 
 INSTALL_TARGET=	site-install
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/cantor/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/cantor/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	cantor
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	math kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

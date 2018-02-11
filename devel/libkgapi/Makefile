@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/libkgapi/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/devel/libkgapi/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	libkgapi
 PORTVERSION=	2.2.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel kde
 MASTER_SITES=	KDE/stable/libkgapi/${PORTVERSION}/src
 DIST_SUBDIR=	KDE

@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/audio/creox/Makefile 459242 2018-01-17 11:48:22Z tcberner $
+# $FreeBSD: head/audio/creox/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	creox
 PORTVERSION=	0.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio kde
 
 MAINTAINER=	ports@FreeBSD.org

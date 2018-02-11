@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-certificate/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/security/hs-certificate/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	certificate
 PORTVERSION=	1.3.9
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,9 +1,9 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/security/kwalletmanager/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/security/kwalletmanager/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kwalletmanager
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

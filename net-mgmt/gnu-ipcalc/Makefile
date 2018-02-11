@@ -1,9 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/gnu-ipcalc/Makefile 448449 2017-08-21 06:27:09Z ehaupt $
+# $FreeBSD: head/net-mgmt/gnu-ipcalc/Makefile 461377 2018-02-10 10:55:31Z ehaupt $
 
 PORTNAME=	ipcalc
-PORTVERSION=	0.2.0
-PORTREVISION=	1
+PORTVERSION=	0.2.2
 CATEGORIES=	net-mgmt
 PKGNAMEPREFIX=	gnu-
 

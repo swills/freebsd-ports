@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/libkolab/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/devel/libkolab/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	libkolab
 PORTVERSION=	0.6.3
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	devel kde
 MASTER_SITES=	http://mirror.kolabsys.com/pub/releases/
 

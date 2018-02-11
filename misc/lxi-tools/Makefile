@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/lxi-tools/Makefile 460342 2018-01-29 21:43:55Z yuri $
+# $FreeBSD: head/misc/lxi-tools/Makefile 461315 2018-02-09 14:09:07Z sunpoet $
 
 PORTNAME=	lxi-tools
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.17
+DISTVERSION=	1.18
 CATEGORIES=	misc
 
 MAINTAINER=	dg@syrec.org
@@ -18,22 +18,27 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	lxi-tools
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--disable-static
+CONFIGURE_ARGS=	--disable-static \
+		--with-bash-completion-dir=${PREFIX}/etc/bash_completion.d
 CFLAGS+=	-D_WITH_GETLINE # enable getline(3) prototype
 
 PORTDOCS=	README
 
 PLIST_FILES=	bin/lxi \
+		etc/bash_completion.d/lxi \
 		man/man1/lxi.1.gz
 
-OPTIONS_DEFINE=	BASH DOCS GUI
+OPTIONS_DEFINE=	DOCS GUI
 
-BASH_CONFIGURE_WITH=	bash-completion-dir=${PREFIX}/etc/bash_completion.d
-BASH_PLIST_FILES=	${PREFIX}/etc/bash_completion.d/lxi
-
-GUI_CONFIGURE_ENABLE=	lxi-gui
 GUI_USE=		qt5=core,gui,charts,widgets,buildtools_build,qmake_build gl=gl
+GUI_CONFIGURE_ENABLE=	lxi-gui
+GUI_CONFIGURE_ENV+=	LDFLAGS="${LDFLAGS} -L${QT_LIBDIR}"
+GUI_VARS=		QT_NONSTANDARD=yes
 GUI_PLIST_FILES=	bin/lxi-gui
+
+post-patch:
+	${REINPLACE_CMD} -e '/\$$(QTCHOOSER)/s/-qt=5//' \
+		${WRKSRC}/src/gui/lxi-gui/Makefile.am
 
 post-install-GUI-on:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/lxi-gui

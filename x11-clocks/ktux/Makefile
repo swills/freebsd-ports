@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-clocks/ktux/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/x11-clocks/ktux/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	ktux
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-clocks kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

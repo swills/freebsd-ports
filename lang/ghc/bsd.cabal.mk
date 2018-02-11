@@ -1,5 +1,5 @@
 
-# $FreeBSD: head/lang/ghc/bsd.cabal.mk 458785 2018-01-11 20:31:44Z tijl $
+# $FreeBSD: head/lang/ghc/bsd.cabal.mk 461362 2018-02-10 08:03:22Z tcberner $
 #
 # bsd.cabal.mk -- Support for ports based on Haskell Cabal.
 #
@@ -95,13 +95,6 @@ RUN_DEPENDS+=	ghc>=${GHC_VERSION}:lang/ghc
 BUILD_DEPENDS+=	ghc:lang/ghc
 BUILD_DEPENDS+=	ghc>=${GHC_VERSION}:lang/ghc
 .endif
-
-# LLVM is still not properly supported, further it does not make sense to have
-# to depend on old llvm ports that will be removed from the ports soon.
-# So for now, stick to GCC -- this might change with ghc-8.4.
-# https://ghc.haskell.org/trac/ghc/wiki/Commentary/Compiler/Backends/LLVM/Installing
-# We should however investigate whether base's clang is enough to build ghc&co.
-USE_GCC=	yes
 
 
 CONFIGURE_ARGS+=	--with-gcc=${CC} --with-ld=${LD} --with-ar=${AR}

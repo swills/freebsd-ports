@@ -1,8 +1,8 @@
-# $FreeBSD: head/arabic/kde4-l10n/Makefile 449969 2017-09-16 16:52:48Z tcberner $
+# $FreeBSD: head/arabic/kde4-l10n/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kde-l10n
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	arabic kde
 
 MAINTAINER=	kde@FreeBSD.org

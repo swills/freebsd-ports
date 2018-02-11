@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/isc-dhcp44-server/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/net/isc-dhcp44-server/Makefile 461238 2018-02-08 13:31:23Z zi $
 
 PORTNAME=	dhcp
 PORTVERSION=	4.4.0b1
@@ -18,7 +18,9 @@ LICENSE=	MPL20
 
 USES=		gmake
 
-PORTREVISION_SERVER=	0
+FORBIDDEN=	Serious flaw in 4.4.0 dhcpd, please wait for 4.4.1
+
+PORTREVISION_SERVER=	1
 PORTREVISION_CLIENT=	0
 PORTREVISION_RELAY=	0
 

@@ -1,8 +1,9 @@
 # Created by: Samy Al Bahra <sbahra@kerneled.org>
-# $FreeBSD: head/archivers/hs-zlib/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/archivers/hs-zlib/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	zlib
 PORTVERSION=	0.6.1.2
+PORTREVISION=	1
 CATEGORIES=	archivers haskell
 
 MAINTAINER=	haskell@FreeBSD.org

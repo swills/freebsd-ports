@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/www/choqok/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/www/choqok/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	choqok
 PORTVERSION=	1.5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www kde
 MASTER_SITES=	SF/${PORTNAME}/Choqok/
 

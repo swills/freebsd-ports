@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/emulators/wine-devel/Makefile 460858 2018-02-03 22:41:40Z gerald $
+# $FreeBSD: head/emulators/wine-devel/Makefile 461272 2018-02-08 21:54:24Z gerald $
 
 PORTNAME=	wine
 DISTVERSION=	3.1
@@ -111,7 +111,7 @@ X11_LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 .include <bsd.port.pre.mk>
 
 # PR224863: clang 6.0.0 crashes
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200056 && ${ARCH} == amd64
+.if ${OPSYS} == FreeBSD && ${OSVERSION} == 1200056 && ${ARCH} == amd64
 USE_GCC=	yes
 .endif
 

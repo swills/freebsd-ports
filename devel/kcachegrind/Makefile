@@ -1,9 +1,9 @@
 # Created by: Simon Barner <barner@gmx.de>
-# $FreeBSD: head/devel/kcachegrind/Makefile 440440 2017-05-08 16:42:34Z tcberner $
+# $FreeBSD: head/devel/kcachegrind/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	kcachegrind
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

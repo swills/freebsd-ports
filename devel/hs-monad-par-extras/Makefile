@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-monad-par-extras/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/devel/hs-monad-par-extras/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	monad-par-extras
 PORTVERSION=	0.3.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

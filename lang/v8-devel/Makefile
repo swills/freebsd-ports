@@ -1,9 +1,9 @@
 # Created by: siasia
-# $FreeBSD: head/lang/v8-devel/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/lang/v8-devel/Makefile 461290 2018-02-09 09:12:48Z jbeich $
 
 PORTNAME=	v8
 PORTVERSION=	3.27.7
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	lang
 MASTER_SITES=	LOCAL/vanilla
 PKGNAMESUFFIX=	-devel
@@ -23,7 +23,8 @@ ALL_TARGET=	native
 MAKE_ARGS=	library=shared use_system_icu=on
 MAKE_ENV=	CC.host=${CC} CXX.host=${CXX} LINK.host=${CXX} LINK.target=${CXX}
 USE_LDCONFIG=	yes
-USES=		compiler cpe gmake localbase python:2 shebangfix tar:xz
+USE_CXXSTD=	gnu++11
+USES=		compiler:c++11-lib cpe gmake localbase python:2 shebangfix tar:xz
 
 CPE_VENDOR=	google
 

@@ -1,9 +1,9 @@
 # Created by: Raphael Kubo da Costa <rakuco@FreeBSD.org>
-# $FreeBSD: head/multimedia/dragon/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/dragon/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	dragon
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia kde kde-kde4
 # Avoid clash with devel/dragon
 PKGNAMESUFFIX=	-player

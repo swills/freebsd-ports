@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/hs-mountpoints/Makefile 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/sysutils/hs-mountpoints/Makefile 461362 2018-02-10 08:03:22Z tcberner $
 
 PORTNAME=	mountpoints
 PORTVERSION=	1.0.2
+PORTREVISION=	1
 CATEGORIES=	sysutils haskell
 
 MAINTAINER=	haskell@FreeBSD.org

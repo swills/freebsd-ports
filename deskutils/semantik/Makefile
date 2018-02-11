@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/semantik/Makefile 453045 2017-10-28 05:05:01Z tcberner $
+# $FreeBSD: head/deskutils/semantik/Makefile 461375 2018-02-10 10:29:51Z tcberner $
 
 PORTNAME=	semantik
 DISTVERSION=	0.9.5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	deskutils kde
 MASTER_SITES=	http://ftp.waf.io/pub/release/ \
 		http://www.freehackers.org/~tnagy/release/

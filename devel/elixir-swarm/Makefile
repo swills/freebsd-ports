@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-swarm/Makefile 460674 2018-02-02 07:13:35Z olgeni $
+# $FreeBSD: head/devel/elixir-swarm/Makefile 461325 2018-02-09 18:57:26Z olgeni $
 
 PORTNAME=	swarm
-DISTVERSION=	3.2.1
+DISTVERSION=	3.3.0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
