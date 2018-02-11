@@ -12,7 +12,7 @@ COMMENT=	Ruby client class for Redis with namespace support
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	rubygem-redis>=3.0.4:databases/rubygem-redis
+RUN_DEPENDS=	rubygem-redis3>=3.0.4:databases/rubygem-redis3
 
 PORTSCOUT=	limit:^1\.5
 
