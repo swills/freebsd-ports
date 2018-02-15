@@ -1,12 +1,12 @@
 # Created by: Daniel Baker <dbaker@FreeBSD.org>
-# $FreeBSD: head/sysutils/3dm/Makefile 461346 2018-02-09 23:21:33Z yuri $
+# $FreeBSD: head/sysutils/3dm/Makefile 461864 2018-02-15 08:29:20Z yuri $
 
 PORTNAME=	3dm
 DISTVERSION=	2.11.00.021
 PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	sysutils
-MASTER_SITES=	http://www.avagotech.com/docs-and-downloads/raid-controllers/raid-controllers-common-files/
+MASTER_SITES=	https://docs.broadcom.com/docs-and-downloads/raid-controllers/raid-controllers-common-files/
 DISTNAME=	3DM2_CLI-freebsd_10-2-2-1_9-5-5-1
 DIST_SUBDIR=	3dm2
 

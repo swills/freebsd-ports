@@ -1,5 +1,5 @@
 # Created by: Andreas Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/sysutils/webmin/Makefile 456623 2017-12-18 11:51:11Z olgeni $
+# $FreeBSD: head/sysutils/webmin/Makefile 461708 2018-02-13 14:06:36Z antoine $
 
 PORTNAME=	webmin
 PORTVERSION=	1.870
@@ -19,6 +19,7 @@ RUN_DEPENDS=	p5-Net-SSLeay>=0:security/p5-Net-SSLeay \
 		p5-Authen-PAM>=0:security/p5-Authen-PAM
 
 USES=		cpe perl5 python shebangfix
+USE_PYTHON=	py3kplist
 USE_RC_SUBR=	webmin
 SUB_LIST=	PERL=${PERL}
 SUB_FILES=	pkg-message

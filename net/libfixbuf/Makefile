@@ -1,11 +1,10 @@
 # Created by: David Thiel <lx@redundancy.redundancy.org>
-# $FreeBSD: head/net/libfixbuf/Makefile 440022 2017-05-03 16:08:37Z ler $
+# $FreeBSD: head/net/libfixbuf/Makefile 461805 2018-02-14 14:08:25Z antoine $
 
 PORTNAME=	libfixbuf
-PORTVERSION=	1.7.1
+PORTVERSION=	1.8.0
 CATEGORIES=	net
-MASTER_SITES=	http://tools.netsa.cert.org/releases/ \
-		http://redundancy.redundancy.org/mirror/
+MASTER_SITES=	http://tools.netsa.cert.org/releases/
 
 MAINTAINER=	nacho319+freebsdZilla@gmail.com
 COMMENT=	Library for using the IP Flow Information Export protocol

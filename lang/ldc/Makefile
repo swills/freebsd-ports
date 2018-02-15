@@ -1,5 +1,5 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/lang/ldc/Makefile 461373 2018-02-10 10:12:04Z antoine $
+# $FreeBSD: head/lang/ldc/Makefile 461461 2018-02-11 07:44:21Z antoine $
 
 PORTNAME=	ldc
 PORTVERSION=	1.7.0
@@ -14,8 +14,8 @@ COMMENT=	The LLVM-based D compiler
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	clang40:devel/llvm40
-RUN_DEPENDS=	clang40:devel/llvm40
+BUILD_DEPENDS=	llvm40>0:devel/llvm40
+RUN_DEPENDS=	llvm40>0:devel/llvm40
 LIB_DEPENDS=	libconfig.so:devel/libconfig
 
 BROKEN_aarch64=		fails to compile: Error: undefined identifier _jmp_buf, did you mean alias jmp_buf?

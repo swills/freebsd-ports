@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-gettext-setup/Makefile 455461 2017-12-03 20:36:47Z sunpoet $
+# $FreeBSD: head/devel/rubygem-gettext-setup/Makefile 461719 2018-02-13 17:02:31Z sunpoet $
 
 PORTNAME=	gettext-setup
-PORTVERSION=	0.29
+PORTVERSION=	0.30
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

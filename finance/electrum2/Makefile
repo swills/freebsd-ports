@@ -1,5 +1,5 @@
 # Created by: Neil Booth
-# $FreeBSD: head/finance/electrum2/Makefile 455392 2017-12-03 08:25:31Z antoine $
+# $FreeBSD: head/finance/electrum2/Makefile 461489 2018-02-11 11:14:51Z ehaupt $
 
 PORTNAME=	electrum
 PORTVERSION=	2.9.3
@@ -15,6 +15,9 @@ COMMENT=	Easy to use Bitcoin client (legacy version)
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENCE
+
+DEPRECATED=	Vulnerable legacy port, please use finance/electrum instead
+EXPIRATION_DATE=	2018-03-11
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>0:dns/py-dnspython@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ecdsa>0:security/py-ecdsa@${FLAVOR} \

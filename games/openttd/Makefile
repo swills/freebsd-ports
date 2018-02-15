@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/openttd/Makefile 461290 2018-02-09 09:12:48Z jbeich $
+# $FreeBSD: head/games/openttd/Makefile 461467 2018-02-11 08:16:22Z jbeich $
 
 PORTNAME=	openttd
 DISTVERSION=	1.7.2
@@ -21,8 +21,6 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libpng.so:graphics/png \
 		liblzo2.so:archivers/lzo2
-
-BROKEN_powerpc64=	fails to compile: libicuuc.so: undefined reference to __cxa_throw_bad_array_new_length
 
 USES=		cpe gmake pkgconfig tar:xz
 HAS_CONFIGURE=	yes

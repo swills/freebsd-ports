@@ -1,6 +1,7 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/fpc-fcl-js/Makefile 460577 2018-02-01 08:17:51Z acm $
+# $FreeBSD: head/devel/fpc-fcl-js/Makefile 461530 2018-02-11 21:29:42Z antoine $
 
+PORTREVISION=	1
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-fcl-js
 

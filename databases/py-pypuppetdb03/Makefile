@@ -1,13 +1,13 @@
-# $FreeBSD: head/databases/py-pypuppetdb03/Makefile 433271 2017-02-03 23:32:25Z romain $
+# $FreeBSD: head/databases/py-pypuppetdb03/Makefile 461742 2018-02-13 20:13:16Z romain $
 
 PORTNAME=	pypuppetdb
-PORTVERSION=	0.3.2
+PORTVERSION=	0.3.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 PKGNAMESUFFIX=	03
 
-MAINTAINER=	romain@FreeBSD.org
+MAINTAINER=	puppet@FreeBSD.org
 COMMENT=	Library to work with PuppetDB's REST API
 
 LICENSE=	APACHE20

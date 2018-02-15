@@ -1,8 +1,8 @@
 # Created by: markm
-# $FreeBSD: head/games/gnuchess/Makefile 425468 2016-11-06 08:02:36Z johans $
+# $FreeBSD: head/games/gnuchess/Makefile 461574 2018-02-12 10:07:51Z johans $
 
 PORTNAME=	gnuchess
-PORTVERSION=	6.2.4
+PORTVERSION=	6.2.5
 CATEGORIES=	games
 MASTER_SITES=	GNU/chess
 # The DISTFILES here is explicitly needed because it can be extended later.
@@ -10,6 +10,8 @@ DISTFILES=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX}
 
 MAINTAINER=	johans@FreeBSD.org
 COMMENT=	"Classic" Gnu Chess
+
+LICENSE=	GPLv3+
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	MKDIR_P="${MKDIR}"
@@ -36,7 +38,7 @@ EXTRACT_ONLY+=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX}
 post-build:
 .if ${PORT_OPTIONS:MOPENING_BOOK}
 	zcat ${DISTDIR}/book_1.02.pgn.gz > ${WRKSRC}/src/book.pgn
-	cd ${WRKSRC}/src && ${PRINTF} "book add book.pgn\nquit\n" | ./gnuchess
+	cd ${WRKSRC}/src && ( ${ECHO} book add book.pgn; sleep 1; ${ECHO} quit ) | ./gnuchess
 	@${REINPLACE_CMD} -e '/Book =/s/false/true/' ${WRKSRC}/src/gnuchess.ini
 .endif
 

@@ -1,21 +1,20 @@
 # Created by: Andrew Khlebutin <andrey@hm.perm.ru>
-# $FreeBSD: head/sysutils/pwgen/Makefile 388593 2015-06-05 16:30:05Z amdmi3 $
+# $FreeBSD: head/sysutils/pwgen/Makefile 461635 2018-02-12 19:05:06Z sunpoet $
 
 PORTNAME=	pwgen
-PORTVERSION=	2.07
+PORTVERSION=	2.08
 PORTEPOCH=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	SF
 
 MAINTAINER=	andrey@hm.perm.ru
-COMMENT=	Small, powerful, GPL'ed password generator
+COMMENT=	Small, powerful, GPL'ed password generator #'
 
 LICENSE=	GPLv2
 
 GNU_CONFIGURE=	yes
-USES=		cpe perl5
+USES=		cpe
 CPE_VENDOR=	pwgen_project
-USE_PERL5=	build
 
 PLIST_FILES=	bin/pwgen \
 		man/man1/pwgen.1.gz

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/tortoisehg/Makefile 456514 2017-12-16 20:56:59Z sunpoet $
+# $FreeBSD: head/devel/tortoisehg/Makefile 461736 2018-02-13 19:30:30Z antoine $
 
 PORTNAME=	tortoisehg
 PORTVERSION=	4.4.1
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
 RUN_DEPENDS=	hg:devel/mercurial \
 		${PYTHON_PKGNAMEPREFIX}iniparse>=0.4:devel/py-iniparse@${FLAVOR} \
-		pygmentize:textproc/py-pygments@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pygments>=0:textproc/py-pygments@${FLAVOR}
 
 OPTIONS_DEFINE=	NAUTILUS NLS
 NAUTILUS_DESC=	Install TortoiseHG Nautilus extension

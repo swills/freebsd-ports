@@ -1,5 +1,5 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/net/openvswitch/Makefile 455923 2017-12-11 05:06:47Z swills $
+# $FreeBSD: head/net/openvswitch/Makefile 461846 2018-02-14 23:17:48Z antoine $
 
 PORTNAME=	openvswitch
 PORTVERSION=	2.8.1
@@ -11,11 +11,11 @@ COMMENT=	Production quality, multilayer virtual switch
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 BROKEN_powerpc64=	fails to compile: bfd.c: internal compiler error: in extract_insn, at recog.c
 
-USES=		cpe gmake libtool perl5 pkgconfig python shebangfix ssl
+USES=		cpe gmake libtool perl5 pkgconfig python:2.7 shebangfix ssl
 SHEBANG_FILES=	utilities/ovs-docker \
 		utilities/ovs-appctl-bashcomp.bash \
 		ovn/utilities/ovndb-servers.ocf \

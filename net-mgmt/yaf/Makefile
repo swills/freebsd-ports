@@ -1,9 +1,8 @@
 # Created by: Dikshie <dikshie@sfc.wide.ad.jp>
-# $FreeBSD: head/net-mgmt/yaf/Makefile 424992 2016-10-31 09:51:13Z antoine $
+# $FreeBSD: head/net-mgmt/yaf/Makefile 461806 2018-02-14 14:09:21Z antoine $
 
 PORTNAME=	yaf
-PORTVERSION=	2.8.4
-PORTREVISION=	2
+PORTVERSION=	2.9.3
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://tools.netsa.cert.org/releases/
 

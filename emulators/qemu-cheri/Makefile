@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/qemu-cheri/Makefile 461121 2018-02-07 01:03:29Z brooks $
+# $FreeBSD: head/emulators/qemu-cheri/Makefile 461520 2018-02-11 19:40:11Z brooks $
 
 PORTNAME=	qemu
 PORTVERSION=	0.d${SNAPDATE}
@@ -24,6 +24,7 @@ USES=	gettext-runtime gmake libtool makeinfo pkgconfig python:2.7,build
 USE_XORG=	pixman
 USE_GNOME+=	glib20
 ONLY_FOR_ARCHS=	amd64 i386 powerpc powerpc64
+BROKEN_FreeBSD_10=	Default toolchain lacks support for .cfi_sections
 
 .include "Makefile.snapshot"
 

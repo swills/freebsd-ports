@@ -1,5 +1,6 @@
-# $FreeBSD: head/devel/fpc-fcl-stl/Makefile 447304 2017-08-03 23:40:28Z acm $
+# $FreeBSD: head/devel/fpc-fcl-stl/Makefile 461525 2018-02-11 20:05:37Z antoine $
 
+PORTREVISION=	1
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-fcl-stl
 

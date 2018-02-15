@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-im/py-telepot/Makefile 458818 2018-01-12 11:21:07Z rene $
+# $FreeBSD: head/net-im/py-telepot/Makefile 461555 2018-02-12 06:09:32Z yuri $
 
 PORTNAME=	telepot
-PORTVERSION=	9.1
+DISTVERSION=	12.0
 CATEGORIES=	net-im python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,8 +13,14 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}urllib3>0:net/py-urllib3@${FLAVOR}
 
-NO_ARCH=	yes
 USES=		python zip
 USE_PYTHON=	distutils autoplist
+NO_ARCH=	yes
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${PYTHON_REL} >= 3500
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}aiohttp>0:www/py-aiohttp@${FLAVOR}
+.endif
+
+.include <bsd.port.post.mk>

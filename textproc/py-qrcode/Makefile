@@ -1,9 +1,9 @@
 # Created by: Neil Booth
-# $FreeBSD: head/textproc/py-qrcode/Makefile 460054 2018-01-26 21:56:10Z leres $
+# $FreeBSD: head/textproc/py-qrcode/Makefile 461681 2018-02-13 02:43:07Z leres $
 
 PORTNAME=	qrcode
 PORTVERSION=	5.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,7 +17,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.8:devel/py-six@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pillow>=2.6:graphics/py-pillow@${FLAVOR}
 
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 
 post-patch:
 	${REINPLACE_CMD} -e 's|share/\(man/man1\)|\1|' ${WRKSRC}/setup.py

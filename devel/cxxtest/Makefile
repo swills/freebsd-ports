@@ -1,8 +1,9 @@
 # Created by: andrew morton
-# $FreeBSD: head/devel/cxxtest/Makefile 359159 2014-06-24 22:44:52Z bapt $
+# $FreeBSD: head/devel/cxxtest/Makefile 461604 2018-02-12 17:14:56Z amdmi3 $
 
 PORTNAME=	cxxtest
 PORTVERSION=	3.10.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	SF
 
@@ -13,7 +14,7 @@ OPTIONS_DEFINE=	DOCS
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 NO_BUILD=	yes
-USES=		gmake perl5 shebangfix
+USES=		gmake perl5 python:2.7,run shebangfix
 USE_PERL5=	run
 SHEBANG_FILES=	cxxtestgen.pl cxxtestgen.py
 

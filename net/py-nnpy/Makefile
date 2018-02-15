@@ -1,8 +1,7 @@
-# $FreeBSD: head/net/py-nnpy/Makefile 458818 2018-01-12 11:21:07Z rene $
+# $FreeBSD: head/net/py-nnpy/Makefile 461553 2018-02-12 05:49:05Z yuri $
 
 PORTNAME=	nnpy
-PORTVERSION=	1.3
-PORTREVISION=	1
+DISTVERSION=	1.4.2
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,6 +10,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	cffi-based Python bindings for nanomsg
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libnanomsg.so:net/nanomsg
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>0:devel/py-cffi@${FLAVOR}
@@ -20,6 +20,6 @@ USES=		python
 USE_PYTHON=	autoplist distutils
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/_nnpy*.so
+	@${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/_nnpy*.so
 
 .include <bsd.port.mk>

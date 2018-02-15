@@ -1,8 +1,8 @@
 # Created by: Mark Pulford <mark@kyne.com.au>
-# $FreeBSD: head/editors/mp/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/editors/mp/Makefile 461554 2018-02-12 05:55:07Z yuri $
 
 PORTNAME=	mp
-PORTVERSION=	5.2.10
+DISTVERSION=	5.2.11
 CATEGORIES=	editors
 MASTER_SITES=	http://triptico.com/download/mp/
 
@@ -31,8 +31,10 @@ OPTIONS_SUB=		yes
 
 NLS_USES=		gettext
 NLS_CONFIGURE_WITH=	gettext
-GTK2_USE=		gnome=gtk20
-GTK3_USE=		gnome=gtk30
+GTK2_USE=		gnome=cairo,gdkpixbuf2,gtk20
+GTK2_LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
+			libfreetype.so:print/freetype2
+GTK3_USE=		gnome=cairo,gdkpixbuf2,gtk30
 PCRE_LIB_DEPENDS=	libpcre.so:devel/pcre
 PCRE_CONFIGURE_WITH=	pcre
 QT4_USE=		qt4=corelib,gui,moc_build

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mongodb36/Makefile 461011 2018-02-05 18:43:20Z lifanov $
+# $FreeBSD: head/databases/mongodb36/Makefile 461659 2018-02-12 22:07:03Z antoine $
 
 PORTNAME=	mongodb
 DISTVERSIONPREFIX=	r
@@ -30,7 +30,7 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 CONFLICTS_BUILD=	mongo-cxx-driver
 CONFLICTS_INSTALL=	mongodb[32-4]*
 
-USES=		compiler:c++14-lang cpe python:build scons shebangfix
+USES=		compiler:c++14-lang cpe python:2.7,build scons shebangfix
 USE_RC_SUBR=	mongod
 
 SHEBANG_FILES=	src/mongo/installer/compass/install_compass.in

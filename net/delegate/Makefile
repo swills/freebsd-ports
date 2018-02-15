@@ -1,5 +1,5 @@
 # Created by: Masafumi NAKANE <max@FreeBSD.org>
-# $FreeBSD: head/net/delegate/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/net/delegate/Makefile 461537 2018-02-11 23:11:02Z danilo $
 
 PORTNAME=	delegate
 PORTVERSION=	9.9.13
@@ -14,6 +14,8 @@ USES=		gmake
 SUB_FILES=	pkg-message
 
 ADMIN?=		admin@example.com
+
+CFLAGS+=	-x c++ -std=gnu++98
 
 PLIST_FILES=	sbin/delegated etc/rc.d/delegated.sh-dist
 PORTDOCS=	CHANGES COPYRIGHT DG9note.html HowToDG.html IPv6NOTE.txt \

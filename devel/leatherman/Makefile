@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/leatherman/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/devel/leatherman/Makefile 461702 2018-02-13 12:48:06Z romain $
 
 PORTNAME=	leatherman
-PORTVERSION=	1.3.0
-PORTREVISION=	4
+PORTVERSION=	1.4.0
 CATEGORIES=	devel
 
 MAINTAINER=	puppet@FreeBSD.org

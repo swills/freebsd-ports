@@ -1,8 +1,8 @@
 # Created by: Michael Williams <ports@mgwsoftware.com>
-# $FreeBSD: head/games/linux-dwarffortress/Makefile 455323 2017-12-01 23:52:23Z pawel $
+# $FreeBSD: head/games/linux-dwarffortress/Makefile 461641 2018-02-12 19:43:37Z pawel $
 
 PORTNAME=	dwarffortress
-DISTVERSION=	0.44.02
+DISTVERSION=	0.44.05
 CATEGORIES=	games linux
 MASTER_SITES=	http://www.bay12games.com/dwarves/
 PKGNAMEPREFIX=	linux-
@@ -36,7 +36,7 @@ NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/df_linux
 STRIP=		# breaks execution, changes library ABI to FreeBSD type
 
-ONLY_FOR_ARCHS=	i386 amd64
+ONLY_FOR_ARCHS=	amd64 i386
 
 PORTDOCS=	README.linux readme.txt file\ changes.txt release\ notes.txt \
 		command\ line.txt

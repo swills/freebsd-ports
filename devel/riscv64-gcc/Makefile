@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/riscv64-gcc/Makefile 458357 2018-01-07 16:34:00Z lwhsu $
+# $FreeBSD: head/devel/riscv64-gcc/Makefile 461683 2018-02-13 03:00:23Z lwhsu $
 
 PORTNAME=	gcc
 PORTVERSION=	7.2.0
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	riscv64-
 
@@ -36,8 +37,8 @@ CONFIGURE_ARGS=	--target=${GCC_TARGET} \
 		--without-headers \
 		--with-pkgversion="FreeBSD Ports Collection for ${PKGNAMEPREFIX:C/-//g}" \
 		--with-system-zlib \
-		--with-as=${LOCALBASE}/bin/${PKGNAMEPREFIX}freebsd-as \
-		--with-ld=${LOCALBASE}/bin/${PKGNAMEPREFIX}freebsd-ld \
+		--with-as=${LOCALBASE}/bin/${PKGNAMEPREFIX}unknown-${OPSYS:tl}${OSREL}-as \
+		--with-ld=${LOCALBASE}/bin/${PKGNAMEPREFIX}unknown-${OPSYS:tl}${OSREL}-ld \
 		--disable-werror \
 		--disable-shared \
 		--enable-threads \

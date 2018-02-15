@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/ibus-el/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/textproc/ibus-el/Makefile 461739 2018-02-13 19:59:44Z antoine $
 
 PORTNAME=	ibus-el
 PORTVERSION=	0.3.2
@@ -14,7 +14,7 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/doc/COPYING
 
 RUN_DEPENDS=	ibus-daemon:textproc/ibus \
-		${PYTHON_SITELIBDIR}/Xlib/X.py:x11-toolkits/py-xlib
+		${PYTHON_SITELIBDIR}/Xlib/X.py:x11-toolkits/py-xlib@${PY_FLAVOR}
 
 USES=		emacs python:2.7,run shebangfix
 

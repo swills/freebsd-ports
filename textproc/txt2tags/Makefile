@@ -1,21 +1,20 @@
 # Created by: Alan Eldridge <alane@FreeBSD.org>
-# $FreeBSD: head/textproc/txt2tags/Makefile 425680 2016-11-08 04:11:07Z jbeich $
+# $FreeBSD: head/textproc/txt2tags/Makefile 461499 2018-02-11 13:44:38Z riggs $
 
 PORTNAME=	txt2tags
 PORTVERSION=	2.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	lbartoletti@tuxfamily.org
 COMMENT=	Convert simply formatted text into markup (e.g., HTML)
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USE_GITHUB=	yes
-
-USES=		python:2 shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	extras/html-update.sh txt2tags
+USE_GITHUB=	yes
 NO_BUILD=	yes
 NO_ARCH=	yes
 

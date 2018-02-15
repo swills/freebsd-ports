@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 461387 2018-02-10 11:39:52Z tcberner $
+# $FreeBSD: head/games/Makefile 461808 2018-02-14 14:21:48Z romain $
 #
 
     COMMENT = Games and related software
@@ -571,7 +571,6 @@
     SUBDIR += lm-solve
     SUBDIR += lmarbles
     SUBDIR += lmpc
-    SUBDIR += lolcat
     SUBDIR += lordsawar
     SUBDIR += lpairs
     SUBDIR += lskat
@@ -867,6 +866,7 @@
     SUBDIR += rtb
     SUBDIR += rubix
     SUBDIR += rubygem-fortune_gem
+    SUBDIR += rubygem-lolcat
     SUBDIR += rubygem-vimgolf
     SUBDIR += sampsvr
     SUBDIR += sarien
@@ -1161,6 +1161,7 @@
     SUBDIR += xrally
     SUBDIR += xrick
     SUBDIR += xrisk
+    SUBDIR += xroach
     SUBDIR += xrobots
     SUBDIR += xrot
     SUBDIR += xrubik

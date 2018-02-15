@@ -1,5 +1,5 @@
 # Created by: ejc@bazzle.com
-# $FreeBSD: head/devel/omniORB-4.1/Makefile 438775 2017-04-18 10:33:13Z amdmi3 $
+# $FreeBSD: head/devel/omniORB-4.1/Makefile 461695 2018-02-13 11:03:14Z antoine $
 
 PORTNAME=	omniORB
 PORTVERSION=	4.1.7
@@ -18,7 +18,7 @@ CONFLICTS=	omniORB-4.2.*
 
 PLIST_SUB+=	SONUM=${PORTVERSION:C/.*\.//}
 GNU_CONFIGURE=	yes
-USES=		gmake pkgconfig python shebangfix ssl tar:bzip2
+USES=		gmake pkgconfig python:2.7 shebangfix ssl tar:bzip2
 SHEBANG_FILES=	src/tool/omniidl/python/scripts/omniidlrun.py
 USE_LDCONFIG=	yes
 MAKEFILE=	GNUmakefile

@@ -1,5 +1,5 @@
 # Created by: Aaron Hurt <ahurt@anbcs.com>
-# $FreeBSD: head/devel/protobuf-c/Makefile 456058 2017-12-11 18:26:13Z sunpoet $
+# $FreeBSD: head/devel/protobuf-c/Makefile 461850 2018-02-15 00:33:27Z truckman $
 
 PORTNAME=		protobuf-c
 PORTVERSION=		1.3.0
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libprotobuf.so:devel/protobuf
 
-USES=		autoreconf gmake libtool pkgconfig
+USES=		autoreconf compiler:c++11-lang gmake libtool pkgconfig
 GNU_CONFIGURE=	yes
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes

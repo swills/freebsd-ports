@@ -1,8 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/misc/cloc/Makefile 457478 2017-12-28 20:42:32Z danilo $
+# $FreeBSD: head/misc/cloc/Makefile 461496 2018-02-11 12:32:02Z danilo $
 
 PORTNAME=	cloc
-PORTVERSION=	1.74
+PORTVERSION=	1.76
+DISTVERSIONPREFIX=	v
 CATEGORIES=	misc
 
 MAINTAINER=	danilo@FreeBSD.org
@@ -12,10 +13,11 @@ LICENSE=	GPLv2
 
 RUN_DEPENDS=	p5-Algorithm-Diff>=0:devel/p5-Algorithm-Diff
 
+USES=		perl5
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	AlDanial
 
-USES=		perl5
 USE_PERL5=	run
 PLIST_FILES=	bin/${PORTNAME}
 NO_BUILD=	yes

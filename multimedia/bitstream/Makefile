@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/multimedia/bitstream/Makefile 433500 2017-02-06 17:46:51Z amdmi3 $
+# $FreeBSD: head/multimedia/bitstream/Makefile 461777 2018-02-14 11:52:10Z amdmi3 $
 
 PORTNAME=	bitstream
-PORTVERSION=	1.2
+PORTVERSION=	1.3
 CATEGORIES=	multimedia
 MASTER_SITES=	https://get.videolan.org/bitstream/${PORTVERSION}/ \
 		http://get.videolan.org/bitstream/${PORTVERSION}/
@@ -16,13 +16,14 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 USES=		gmake tar:bzip2
 NO_BUILD=	yes
 NO_ARCH=	yes
+TEST_TARGET=	check
 
 PORTDOCS=	AUTHORS README NEWS TODO
 
 OPTIONS_DEFINE=	DOCS
 
 post-patch:
-	@${REINPLACE_CMD} -e 's|@||' ${WRKSRC}/Makefile
+	@${REINPLACE_CMD} -e 's|^	@|	|' ${WRKSRC}/Makefile
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

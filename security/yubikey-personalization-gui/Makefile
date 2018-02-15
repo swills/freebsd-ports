@@ -1,9 +1,8 @@
-# $FreeBSD: head/security/yubikey-personalization-gui/Makefile 452504 2017-10-20 07:08:56Z romain $
+# $FreeBSD: head/security/yubikey-personalization-gui/Makefile 461703 2018-02-13 13:00:34Z romain $
 
 PORTNAME=	yubikey-personalization-gui
-PORTVERSION=	3.1.24
+PORTVERSION=	3.1.25
 DISTVERSIONPREFIX=	${PORTNAME}-
-PORTREVISION=	1
 CATEGORIES=	security
 
 MAINTAINER=	romain@FreeBSD.org

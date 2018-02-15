@@ -1,5 +1,5 @@
 # Created by: Thomas Hurst <tom@hur.st>
-# $FreeBSD: head/archivers/py-attic/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/archivers/py-attic/Makefile 461479 2018-02-11 09:02:51Z amdmi3 $
 
 PORTNAME=	attic
 PORTVERSION=	0.16
@@ -20,14 +20,13 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack-python>=0.1.10:devel/py-msgpack-pyth
 USES=		python:3.3+ ssl
 USE_PYTHON=	autoplist distutils
 
-STRIP_FILES=	hashindex.so platform_freebsd.so chunker.so crypto.so
 PYDISTUTILS_BUILDPATH=${BUILD_WRKSRC}/build/lib.${OPSYS:tl}-${UNAMER}-${ARCH}-${PYTHON_VER}
 
-regression-test: build
-	${SETENV} PYTHONPATH="${PYDISTUTILS_BUILDPATH}:${PYTHONPATH}" \
-	  ${PYTHON_CMD} -m attic.testsuite.run
-
 post-install:
-	${STRIP_CMD} ${STRIP_FILES:S,^,${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/attic/,}
+	@${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/attic/*.so
+
+do-test:
+	cd ${WRKDIR} && ${SETENV} PYTHONPATH="${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}:${PYTHONPATH}" \
+		${PYTHON_CMD} -m attic.testsuite.run
 
 .include <bsd.port.mk>

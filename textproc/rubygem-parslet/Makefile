@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-parslet/Makefile 454545 2017-11-20 13:22:08Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-parslet/Makefile 461792 2018-02-14 13:30:23Z sunpoet $
 
 PORTNAME=	parslet
-PORTVERSION=	1.8.1
+PORTVERSION=	1.8.2
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

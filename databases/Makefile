@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 461448 2018-02-10 22:59:38Z rene $
+# $FreeBSD: head/databases/Makefile 461884 2018-02-15 12:30:56Z tz $
 #
 
     COMMENT = Databases and related software
@@ -177,6 +177,7 @@
     SUBDIR += luasql-sqlite3
     SUBDIR += mantis
     SUBDIR += mariadb-connector-c
+    SUBDIR += mariadb-connector-odbc
     SUBDIR += mariadb100-client
     SUBDIR += mariadb100-server
     SUBDIR += mariadb101-client
@@ -952,6 +953,7 @@
     SUBDIR += rubygem-familia
     SUBDIR += rubygem-flipper-active_record
     SUBDIR += rubygem-flipper-active_record010
+    SUBDIR += rubygem-flipper-active_record011
     SUBDIR += rubygem-globalid
     SUBDIR += rubygem-globalid-rails5
     SUBDIR += rubygem-globalid-rails50

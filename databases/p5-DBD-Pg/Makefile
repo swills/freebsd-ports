@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/p5-DBD-Pg/Makefile 450603 2017-09-25 15:12:06Z sunpoet $
+# $FreeBSD: head/databases/p5-DBD-Pg/Makefile 461793 2018-02-14 13:30:28Z sunpoet $
 
 PORTNAME=	DBD-Pg
-PORTVERSION=	3.7.0
+PORTVERSION=	3.7.4
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

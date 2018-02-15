@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/sysutils/Makefile 461821 2018-02-14 17:10:36Z pi $
 #
 
     COMMENT = System utilities
@@ -575,6 +575,7 @@
     SUBDIR += lmmon
     SUBDIR += lmon
     SUBDIR += lnav
+    SUBDIR += lockfile-progs
     SUBDIR += log_analysis
     SUBDIR += logrotate
     SUBDIR += logstalgia

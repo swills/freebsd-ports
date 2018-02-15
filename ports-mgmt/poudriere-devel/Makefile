@@ -1,8 +1,8 @@
-# $FreeBSD: head/ports-mgmt/poudriere-devel/Makefile 461075 2018-02-06 16:33:15Z brd $
+# $FreeBSD: head/ports-mgmt/poudriere-devel/Makefile 461685 2018-02-13 04:57:22Z bdrewery $
 
 PORTNAME=	poudriere
 DISTVERSION=	3.2.99.20180202
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	ports-mgmt
 MASTER_SITES=	LOCAL/bdrewery/${PORTNAME}/ \
 		http://mirror.shatow.net/freebsd/${PORTNAME}/ \

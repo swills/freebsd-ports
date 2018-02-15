@@ -1,5 +1,5 @@
 # Created by: Carlos J Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/security/py-josepy/Makefile 459658 2018-01-22 15:40:11Z cpm $
+# $FreeBSD: head/security/py-josepy/Makefile 461672 2018-02-12 23:11:38Z cpm $
 
 PORTNAME=	josepy
 PORTVERSION=	1.0.1
@@ -7,7 +7,7 @@ CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	cpm@FreeBSD.org
+MAINTAINER=	python@FreeBSD.org
 COMMENT=	JOSE protocol implementation in Python
 
 LICENSE=	APACHE20

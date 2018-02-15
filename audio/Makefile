@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 461283 2018-02-09 02:35:14Z jhale $
+# $FreeBSD: head/audio/Makefile 461879 2018-02-15 11:15:33Z jhale $
 #
 
     COMMENT = Audio tools
@@ -237,6 +237,7 @@
     SUBDIR += goobox
     SUBDIR += gqmpeg
     SUBDIR += gqradio
+    SUBDIR += gradio
     SUBDIR += gramofile
     SUBDIR += grip
     SUBDIR += gsm
@@ -510,6 +511,7 @@
     SUBDIR += mma
     SUBDIR += moc
     SUBDIR += modplugplay
+    SUBDIR += moodbar
     SUBDIR += moony-lv2
     SUBDIR += mous
     SUBDIR += mp-player
@@ -634,6 +636,7 @@
     SUBDIR += penguinsap
     SUBDIR += pianobar
     SUBDIR += picard
+    SUBDIR += picard-plugins
     SUBDIR += pithos
     SUBDIR += play
     SUBDIR += playgsf
@@ -650,6 +653,7 @@
     SUBDIR += puddletag
     SUBDIR += pulseaudio
     SUBDIR += pulseaudio-module-sndio
+    SUBDIR += py-SoundFile
     SUBDIR += py-al
     SUBDIR += py-ao
     SUBDIR += py-apetag

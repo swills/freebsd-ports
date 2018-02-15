@@ -1,8 +1,9 @@
 # Created by: Koop Mast <einekoai@chello.nl>
-# $FreeBSD: head/www/bluefish/Makefile 456068 2017-12-11 21:48:32Z antoine $
+# $FreeBSD: head/www/bluefish/Makefile 461781 2018-02-14 12:15:59Z amdmi3 $
 
 PORTNAME=	bluefish
 PORTVERSION=	2.2.10
+PORTREVISION=	1
 CATEGORIES=	www editors
 MASTER_SITES=	http://www.bennewitz.com/bluefish/stable/source/ \
 		http://bluefish.mrball.net/stable/source/
@@ -18,7 +19,8 @@ LIB_DEPENDS=	libpcre.so:devel/pcre \
 
 USES=		desktop-file-utils gettext gmake libtool localbase pkgconfig python:2.7 \
 		shared-mime-info shebangfix tar:bzip2
-SHEBANG_FILES=	data/css_decompressor
+SHEBANG_FILES=	data/css_decompressor data/cssmin.py data/jsbeautify \
+		data/jsmin.py data/lorem-ipsum-generator
 python_OLD_CMD=	/usr/bin/python2.7
 USE_GNOME=	cairo intltool libxml2
 GNU_CONFIGURE=	yes

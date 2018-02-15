@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/science/PETSc/Makefile 456877 2017-12-21 00:26:58Z yuri $
+# $FreeBSD: head/science/PETSc/Makefile 461773 2018-02-14 09:57:02Z antoine $
 
 PORTNAME=	PETSc
 DISTVERSION=	3.8.3
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libmpich.so:net/mpich2
 
-USES=		blaslapack fortran gmake python shebangfix
+USES=		blaslapack fortran gmake python:2.7 shebangfix
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-shared-libraries=1 \
 		--with-mpi-dir=${LOCALBASE} \

@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-qt5-xmlpatterns/Makefile 460949 2018-02-04 20:56:45Z rakuco $
+# $FreeBSD: head/textproc/py-qt5-xmlpatterns/Makefile 461841 2018-02-14 21:30:14Z rakuco $
 
 PORTNAME=	xmlpatterns
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc devel python
 
 MAINTAINER=	kde@FreeBSD.org

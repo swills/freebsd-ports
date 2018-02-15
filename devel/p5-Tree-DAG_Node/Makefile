@@ -1,8 +1,8 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/devel/p5-Tree-DAG_Node/Makefile 460028 2018-01-26 18:12:16Z sunpoet $
+# $FreeBSD: head/devel/p5-Tree-DAG_Node/Makefile 461794 2018-02-14 13:30:33Z sunpoet $
 
 PORTNAME=	Tree-DAG_Node
-PORTVERSION=	1.30
+PORTVERSION=	1.31
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

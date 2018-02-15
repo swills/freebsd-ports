@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/math/py-yt/Makefile 455337 2017-12-02 09:22:02Z antoine $
+# $FreeBSD: head/math/py-yt/Makefile 461877 2018-02-15 10:29:05Z antoine $
 
 PORTNAME=	yt
 PORTVERSION=	3.4.0
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
 BUILD_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}pyembree>0:graphics/py-pyembree@${FLAVOR}
-RUN_DEPENDS=	isympy:math/py-sympy@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sympy>0:math/py-sympy@${FLAVOR} \
 		${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}pyembree>0:graphics/py-pyembree@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}matplotlib>=1.5.3:math/py-matplotlib@${FLAVOR} \

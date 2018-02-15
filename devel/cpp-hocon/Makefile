@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/cpp-hocon/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/devel/cpp-hocon/Makefile 461788 2018-02-14 13:27:13Z romain $
 
 PORTNAME=	cpp-hocon
 PORTVERSION=	0.1.6
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 
 MAINTAINER=	puppet@FreeBSD.org
@@ -21,7 +21,7 @@ PLIST_SUB+=	PORTVERSION="${PORTVERSION}"
 
 CMAKE_ARGS+=	-DBUILD_SHARED_LIBS=SHARED
 TEST_TARGET=	test
-USES=		cmake
+USES=		cmake:noninja
 USE_LDCONFIG=	yes
 
 .include <bsd.port.mk>

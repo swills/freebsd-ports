@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/Makefile 459130 2018-01-15 22:17:34Z yuri $
+# $FreeBSD: head/archivers/Makefile 461612 2018-02-12 19:03:13Z sunpoet $
 #
 
     COMMENT = Archivers
@@ -105,6 +105,7 @@
     SUBDIR += p5-Archive-Rar
     SUBDIR += p5-Archive-SimpleExtractor
     SUBDIR += p5-Archive-Tar
+    SUBDIR += p5-Archive-Tar-Wrapper
     SUBDIR += p5-Archive-Zip
     SUBDIR += p5-Compress-Bzip2
     SUBDIR += p5-Compress-LZ4

@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/l-smash/Makefile 424064 2016-10-16 14:13:20Z jbeich $
+# $FreeBSD: head/multimedia/l-smash/Makefile 461498 2018-02-11 12:48:53Z jbeich $
 
 PORTNAME=	l-smash
-PORTVERSION=	2.9.1
+PORTVERSION=	2.14.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	multimedia
 
@@ -27,6 +27,7 @@ USE_LDCONFIG=	yes
 
 post-patch:
 	@${REINPLACE_CMD} -e 's/-Os //; /=.*-fexcess-precision/d' \
+		-e '/sed/{s/-i/& ""/; s/i \\/&\\"$$'"'\\\n'"'"/; s/%"/&$$'"'\\\012'"'/;}' \
 		${WRKSRC}/configure
 	@${REINPLACE_CMD} -e '/SHARED/,/^$$/ { /STRIP/s/-x //; }' \
 		${WRKSRC}/${MAKEFILE}

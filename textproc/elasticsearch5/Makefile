@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/elasticsearch5/Makefile 458513 2018-01-09 07:40:55Z mat $
+# $FreeBSD: head/textproc/elasticsearch5/Makefile 461559 2018-02-12 06:49:48Z pi $
 
 PORTNAME=	elasticsearch
 PORTVERSION=	5.3.0
@@ -16,7 +16,7 @@ LICENSE=	APACHE20
 
 RUN_DEPENDS=	bash>0:shells/bash
 
-CONFLICTS=	elasticsearch-[0-9]* elasticsearch2-[0-9]*
+CONFLICTS=	elasticsearch-[0-9]* elasticsearch2-[0-9]* elasticsearch6-[0-9]*
 
 USES=		cpe shebangfix
 NO_ARCH=	yes

@@ -1,8 +1,7 @@
-# $FreeBSD: head/multimedia/libva/Makefile 456673 2017-12-18 21:25:57Z madpilot $
+# $FreeBSD: head/multimedia/libva/Makefile 461668 2018-02-12 22:37:33Z madpilot $
 
 PORTNAME=	libva
-PORTVERSION=	2.0.0
-PORTREVISION=	1
+PORTVERSION=	2.1.0
 CATEGORIES=	multimedia
 
 MAINTAINER=	madpilot@FreeBSD.org

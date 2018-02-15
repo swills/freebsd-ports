@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-curtsies/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-curtsies/Makefile 461803 2018-02-14 14:04:43Z sunpoet $
 
 PORTNAME=	curtsies
-PORTVERSION=	0.2.11
+PORTVERSION=	0.3.0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,4 +21,10 @@ NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils
 USES=		python
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${PYTHON_REL} < 3500
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}typing>=0:devel/py-typing@${FLAVOR}
+.endif
+
+.include <bsd.port.post.mk>

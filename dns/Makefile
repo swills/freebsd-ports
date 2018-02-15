@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 459604 2018-01-21 13:12:27Z antoine $
+# $FreeBSD: head/dns/Makefile 461859 2018-02-15 06:56:11Z truckman $
 #
 
     COMMENT = Domain Name Service tools
@@ -39,6 +39,7 @@
     SUBDIR += dnscrypt-proxy
     SUBDIR += dnscrypt-wrapper
     SUBDIR += dnsdbck
+    SUBDIR += dnsdbq
     SUBDIR += dnsdist
     SUBDIR += dnsenum
     SUBDIR += dnsflood

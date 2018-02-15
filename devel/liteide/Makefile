@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/liteide/Makefile 456072 2017-12-12 02:00:20Z swills $
+# $FreeBSD: head/devel/liteide/Makefile 461825 2018-02-14 17:48:49Z tcberner $
 
 PORTNAME=	liteide
 DISTVERSIONPREFIX=	x
-DISTVERSION=	33.1
+DISTVERSION=	33.2
 CATEGORIES=	devel editors
 
 MAINTAINER=	dg@syrec.org
@@ -21,7 +21,6 @@ LDFLAGS+=	-Wl,--as-needed
 
 PORTDOCS=	CONTRIBUTORS README.md
 
-INSTALLS_ICONS=	yes
 ICON_SIZES=	16 24 32 48 64 128
 
 OPTIONS_DEFINE=		DEBUG DOCS

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/colmap/Makefile 460536 2018-01-31 21:36:53Z jbeich $
+# $FreeBSD: head/graphics/colmap/Makefile 461465 2018-02-11 08:15:51Z jbeich $
 
 PORTNAME=	colmap
 DISTVERSION=	3.4
@@ -35,6 +35,7 @@ CXXFLAGS+=	-D_GLIBCXX_USE_C99 -D_GLIBCXX_USE_C99_MATH_TR1 \
 		-D_DECLARE_C99_LDBL_MATH # XXX ports/193528
 LDFLAGS+=	-Wl,--as-needed # gflags, glu, xi, xmu
 TEST_TARGET=	test ARGS="-V"
+PLIST_FILES=	bin/colmap
 
 OPTIONS_DEFINE=		DOCS OPENMP SIMD TEST
 OPTIONS_DEFAULT=	OPENMP SIMD

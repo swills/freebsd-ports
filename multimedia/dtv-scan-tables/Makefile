@@ -1,8 +1,9 @@
 # Created by: Dreamcat4 <dreamcat4@gmail.com>
-# $FreeBSD: head/multimedia/dtv-scan-tables/Makefile 449616 2017-09-11 08:56:58Z decke $
+# $FreeBSD: head/multimedia/dtv-scan-tables/Makefile 461591 2018-02-12 15:08:51Z amdmi3 $
 
 PORTNAME=	dtv-scan-tables
 PORTVERSION=	20170530
+PORTREVISION=	1
 CATEGORIES=	multimedia
 
 MAINTAINER=	dreamcat4@gmail.com

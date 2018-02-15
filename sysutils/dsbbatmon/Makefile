@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/dsbbatmon/Makefile 451026 2017-10-01 07:43:22Z tcberner $
+# $FreeBSD: head/sysutils/dsbbatmon/Makefile 461540 2018-02-11 23:27:40Z joneum $
 
 PORTNAME=	dsbbatmon
-PORTVERSION=	1.0
+DISTVERSION=	1.0.1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://freeshell.de/~mk/download/
 

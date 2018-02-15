@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/py-pysndfile/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/audio/py-pysndfile/Makefile 461817 2018-02-14 16:51:05Z yuri $
 
 PORTNAME=	pysndfile
-DISTVERSION=	1.0.0
+DISTVERSION=	1.1.0
 CATEGORIES=	audio python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/poezio/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-im/poezio/Makefile 461667 2018-02-12 22:29:33Z arved $
 
 PORTNAME=	poezio
 PORTVERSION=	0.8.1
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	net-im
 MASTER_SITES=	http://dev.louiz.org/attachments/download/52/
 
-MAINTAINER=	arved@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Console XMPP client
 
 LICENSE=	ZLIB

@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/dns/pear-Net_DNS2/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/dns/pear-Net_DNS2/Makefile 461832 2018-02-14 18:41:43Z joneum $
 
 PORTNAME=	Net_DNS2
-PORTVERSION=	1.4.3
+DISTVERSION=	1.4.4
 CATEGORIES=	dns net pear
 
 MAINTAINER=	joneum@FreeBSD.org
