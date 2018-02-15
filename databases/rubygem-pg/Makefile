@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/databases/rubygem-pg/Makefile 443513 2017-06-13 16:54:24Z sunpoet $
+# $FreeBSD: head/databases/rubygem-pg/Makefile 461897 2018-02-15 12:46:24Z sunpoet $
 
 PORTNAME=	pg
 PORTVERSION=	0.21.0
@@ -11,6 +11,8 @@ COMMENT=	Ruby interface to PostgreSQL library
 
 LICENSE=	BSD2CLAUSE RUBY
 LICENSE_COMB=	dual
+LICENSE_FILE_BSD2CLAUSE	=${WRKSRC}/BSDL
+LICENSE_FILE_RUBY	=${WRKSRC}/LICENSE
 
 CONFIGURE_ARGS=	--with-pgsql-include-dir=`${PG_CONFIG} --includedir` \
 		--with-pgsql-lib-dir=`${PG_CONFIG} --libdir`

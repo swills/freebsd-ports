@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/python.mk 461103 2018-02-06 20:49:09Z bdrewery $
+# $FreeBSD: head/Mk/Uses/python.mk 461885 2018-02-15 12:34:49Z mat $
 #
 # Provide support for Python related ports. This includes detecting Python
 # interpreters, ports providing package and modules for python as well as
@@ -670,6 +670,13 @@ PY_FUTURES=	${PYTHON_PKGNAMEPREFIX}futures>0:devel/py-futures@${PY_FLAVOR}
 .else
 PY_FUTURES=
 .endif
+
+.if ${PYTHON_REL} < 3000
+PY_BOOST_LIB=	boost_python
+.else
+PY_BOOST_LIB=	boost_python3
+.endif
+PY_BOOST=	lib${PY_BOOST_LIB}.so:devel/boost-python-libs@${PY_FLAVOR}
 
 # dependencies
 .for _stage in PATCH BUILD RUN TEST

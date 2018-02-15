@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-flipper010/Makefile 455057 2017-11-28 16:13:30Z tz $
+# $FreeBSD: head/devel/rubygem-flipper010/Makefile 461921 2018-02-15 12:50:58Z tz $
 
 PORTNAME=	flipper
 PORTVERSION=	0.10.2
@@ -12,6 +12,9 @@ COMMENT=	Act of enabling/disabling features in your application
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	yes
+EXPIRATION_DATE=	2018-08-01
 
 CONFLICTS_INSTALL=	rubygem-flipper
 

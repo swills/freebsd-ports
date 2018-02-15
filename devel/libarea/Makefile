@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/devel/libarea/Makefile 461704 2018-02-13 13:01:04Z antoine $
+# $FreeBSD: head/devel/libarea/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 PORTNAME=	libarea
 PORTVERSION=	20160313
@@ -11,7 +11,7 @@ COMMENT=	CAM-related software for profile and pocketing operations
 
 LICENSE=	BSD3CLAUSE
 
-LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs
+LIB_DEPENDS=	${PY_BOOST}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Heeks

@@ -1,5 +1,5 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/ftp/lftp/Makefile 451716 2017-10-10 19:01:35Z martymac $
+# $FreeBSD: head/ftp/lftp/Makefile 461928 2018-02-15 14:41:29Z brnrd $
 
 PORTNAME=	lftp
 PORTVERSION=	4.8.3
@@ -58,10 +58,6 @@ post-install-DOCS-on:
 
 .if ${ARCH} == powerpc64
 USE_GCC=	yes
-.endif
-
-.if ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
 .endif
 
 .include <bsd.port.post.mk>

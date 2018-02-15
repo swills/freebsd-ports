@@ -1,5 +1,5 @@
 # Created by: Denis Barov <dindin@dindin.ru>
-# $FreeBSD: head/graphics/py-exiv2/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/graphics/py-exiv2/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 PORTNAME=	exiv2
 PORTVERSION=	0.3.2
@@ -13,7 +13,7 @@ MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	Python bindings for exiv2
 
 LIB_DEPENDS=	libexiv2.so:graphics/exiv2\
-		libboost_python.so:devel/boost-python-libs
+		${PY_BOOST}
 
 USES=		python:2 scons tar:bzip2
 USE_PYTHON=	flavors

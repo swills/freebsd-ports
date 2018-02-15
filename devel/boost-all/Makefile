@@ -1,5 +1,5 @@
 # Created by: Alexander Churanov <churanov.port.maintainer@gmail.com>
-# $FreeBSD: head/devel/boost-all/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/boost-all/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 PORTNAME=	boost-all
 
@@ -17,7 +17,7 @@ PYTHON_DESC=	Boost.Python - interfacing Python and C++
 
 LIBRARIES_RUN_DEPENDS=	${LOCALBASE}/lib/libboost_thread.so:devel/boost-libs
 JAM_RUN_DEPENDS=	${LOCALBASE}/bin/bjam:devel/boost-jam
-PYTHON_RUN_DEPENDS=	${LOCALBASE}/lib/libboost_python.so:devel/boost-python-libs
+PYTHON_RUN_DEPENDS=	${LOCALBASE}/lib/${PY_BOOST}
 DOCS_RUN_DEPENDS=	${LOCALBASE}/share/doc/boost/doc/html/index.html:devel/boost-docs
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/uatraits/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/devel/uatraits/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 PORTNAME=	uatraits
 PORTVERSION=	20130430
@@ -10,7 +10,7 @@ MASTER_SITES=	http://people.freebsd.org/~demon/
 MAINTAINER=	demon@FreeBSD.org
 COMMENT=	User-Agent detection library
 
-LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs \
+LIB_DEPENDS=	${PY_BOOST} \
 		libpcre.so:devel/pcre \
 		libxml2.so:textproc/libxml2
 

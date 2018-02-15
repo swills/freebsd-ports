@@ -1,5 +1,5 @@
 # Created by: ruslan@shevchenko.kiev.ua
-# $FreeBSD: head/lang/erlang-runtime20/Makefile 456714 2017-12-19 10:52:20Z olgeni $
+# $FreeBSD: head/lang/erlang-runtime20/Makefile 461928 2018-02-15 14:41:29Z brnrd $
 
 PORTNAME=	erlang
 PORTVERSION=	20.2.2
@@ -249,10 +249,4 @@ post-install:
 		| ${SORT} \
 		>> ${TMPPLIST}
 
-.include <bsd.port.pre.mk>
-
-.if ${PORT_OPTIONS:MOPENSSL} && ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

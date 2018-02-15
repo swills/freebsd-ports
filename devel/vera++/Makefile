@@ -1,5 +1,5 @@
 # Created by: Cristiano Rolim Pereira <cristianorolim@outlook.com>
-# $FreeBSD: head/devel/vera++/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/devel/vera++/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 PORTNAME=	vera++
 PORTVERSION=	1.3.0
@@ -34,7 +34,7 @@ OPTIONS_DEFAULT=	LUA PYTHON
 
 PYTHON_CMAKE_OFF=	-DVERA_PYTHON:BOOL=OFF
 PYTHON_CMAKE_ON=	-DVERA_PYTHON:BOOL=ON
-PYTHON_LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs
+PYTHON_LIB_DEPENDS=	${PY_BOOST}
 LUA_CMAKE_OFF=	-DVERA_LUA:BOOL=OFF
 LUA_CMAKE_ON=	-DVERA_LUA:BOOL=ON
 LUA_LIB_DEPENDS=	libluabind.so:devel/luabind

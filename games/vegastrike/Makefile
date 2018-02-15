@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/vegastrike/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/games/vegastrike/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 PORTNAME=	vegastrike
 PORTVERSION=	0.5.1.r1
@@ -15,7 +15,7 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${LOCALBASE}/${DATADIR_REL}/vegastrike.ico:games/vegastrike-data
-LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs \
+LIB_DEPENDS=	${PY_BOOST} \
 		libexpat.so:textproc/expat2 \
 		libvorbis.so:audio/libvorbis \
 		libogg.so:audio/libogg

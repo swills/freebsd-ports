@@ -1,5 +1,5 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/cad/linuxcnc-devel/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/cad/linuxcnc-devel/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 PORTNAME=	linuxcnc
 PORTVERSION=	20170708
@@ -15,7 +15,7 @@ LICENSE=	GPLv2
 BROKEN=		wrong DEPENDS
 
 LIB_DEPENDS=	libBLT25.so:x11-toolkits/blt \
-		libboost_python.so:devel/boost-python-libs \
+		${PY_BOOST} \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
 		libmodbus.so:comms/libmodbus \

@@ -1,0 +1,22 @@
+# $FreeBSD: head/www/rubygem-toml-rb03/Makefile 461935 2018-02-15 16:59:19Z tz $
+
+PORTNAME=	toml-rb
+PORTVERSION=	0.3.15
+CATEGORIES=	www rubygems
+MASTER_SITES=	RG
+PKGNAMESUFFIX=	03
+
+MAINTAINER=	idefix@fechner.net
+COMMENT=	TOML parser using Citrus parsing library
+
+LICENSE=	MIT
+
+RUN_DEPENDS=	rubygem-citrus>=3.0:textproc/rubygem-citrus
+
+PORTSCOUT=	limit:^0\.3\.
+
+NO_ARCH=	yes
+USES=		gem
+USE_RUBY=	yes
+
+.include <bsd.port.mk>

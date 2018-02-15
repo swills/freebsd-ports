@@ -1,5 +1,5 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/graphics/cegui/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/graphics/cegui/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 PORTNAME=	cegui
 PORTVERSION=	0.8.7
@@ -46,7 +46,7 @@ LUA_CMAKE_ON=		-DCEGUI_BUILD_LUA_MODULE=ON -DCEGUI_BUILD_LUA_GENERATOR=ON
 LUA_CMAKE_OFF=		-DCEGUI_BUILD_LUA_MODULE=OFF -DCEGUI_BUILD_LUA_GENERATOR=OFF
 # this option is not currently used as it doesn't compile (see also CMAKE_ARGS below)
 PYTHON_USES=		python:2.7
-PYTHON_LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs
+PYTHON_LIB_DEPENDS=	${PY_BOOST}
 PYTHON_CMAKE_ON=	-DCEGUI_BUILD_PYTHON_MODULES=ON
 PYTHON_CMAKE_OFF=	-DCEGUI_BUILD_PYTHON_MODULES=OFF
 FRIBIDI_LIB_DEPENDS=	libfribidi.so:converters/fribidi

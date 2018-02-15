@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/kig/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/math/kig/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 PORTNAME=	kig
 PORTVERSION=	${KDE4_VERSION}
@@ -8,7 +8,7 @@ CATEGORIES=	math kde kde-kde4
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE 4 interactive geometry application
 
-LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs
+LIB_DEPENDS=	${PY_BOOST}
 
 USES=		cmake:outsource compiler:c++11-lib kde:4 python:run \
 		shebangfix tar:xz

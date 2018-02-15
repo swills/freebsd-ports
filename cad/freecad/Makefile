@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/freecad/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/cad/freecad/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 PORTNAME=	FreeCAD
 DISTVERSION=	0.17.12018
@@ -15,7 +15,7 @@ BUILD_DEPENDS=	pyside-rcc:devel/pyside-tools \
 		swig3.0:devel/swig30
 LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libfreetype.so:print/freetype2 \
-		libboost_python.so:devel/boost-python-libs \
+		${PY_BOOST} \
 		libpyside-python2.7.so:devel/pyside@${PY_FLAVOR} \
 		libCoin.so:graphics/Coin \
 		libpng.so:graphics/png \

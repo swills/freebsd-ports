@@ -1,5 +1,5 @@
 # Created by: Alexander Leidinger <netchild@FreeBSD.org>
-# $FreeBSD: head/security/libssh2/Makefile 436250 2017-03-15 15:43:13Z mat $
+# $FreeBSD: head/security/libssh2/Makefile 461928 2018-02-15 14:41:29Z brnrd $
 
 PORTNAME=	libssh2
 PORTVERSION=	1.8.0
@@ -34,10 +34,6 @@ GCRYPT_USES_OFF=	ssl
 ZLIB_CONFIGURE_WITH=	libz
 
 .include <bsd.port.pre.mk>
-
-.if empty(PORT_OPTIONS:MGCRYPT) && ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
 
 post-patch:
 	@${REINPLACE_CMD} -e '/Libs:/s/@LIBS@//' \

@@ -1,5 +1,5 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/nginx/Makefile 461538 2018-02-11 23:16:03Z joneum $
+# $FreeBSD: head/www/nginx/Makefile 461928 2018-02-15 14:41:29Z brnrd $
 
 PORTNAME=	nginx
 PORTVERSION=	1.12.2
@@ -1172,8 +1172,6 @@ GROUPS?=${WWWGRP}
 
 .if defined(NGINX_OPENSSL)
 USES+=		ssl
-BROKEN_SSL=	openssl-devel
-BROKEN_SSL_REASON_openssl-devel=	undefined reference to SSLeay_version
 .endif
 
 pre-everything::

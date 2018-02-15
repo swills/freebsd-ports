@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/sysutils/bacula9-server/Makefile 454810 2017-11-24 00:39:15Z ler $
+# $FreeBSD: head/sysutils/bacula9-server/Makefile 461928 2018-02-15 14:41:29Z brnrd $
 
 PORTNAME=	bacula
 PORTVERSION=	9.0.6
@@ -128,10 +128,6 @@ MTX_RUN_DEPENDS=	${LOCALBASE}/sbin/mtx:misc/mtx
 .endif
 
 .include <bsd.port.pre.mk>
-
-.if ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
 
 .if ${readline_ARGS} == "port"
 readline_CONFIGURE=	${LOCALBASE}

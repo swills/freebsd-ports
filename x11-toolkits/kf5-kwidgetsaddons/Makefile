@@ -1,10 +1,7 @@
-# $FreeBSD: head/x11-toolkits/kf5-kwidgetsaddons/Makefile 459236 2018-01-17 10:48:44Z tcberner $
+# $FreeBSD: head/x11-toolkits/kf5-kwidgetsaddons/Makefile 461936 2018-02-15 17:05:45Z tcberner $
 
 PORTNAME=	kwidgetsaddons
-# Note, the so file is still 5.42.0, therefore, just 
-#       override the DISTVERSION and not the value of
-#       KDE_FRAMEWORKS_VERSION as usually.
-DISTVERSION=	5.42.1 # ${KDE_FRAMEWORKS_VERSION}
+DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
 CATEGORIES=	x11-toolkits kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Andrey Chernov <ache@FreeBSD.org>
-# $FreeBSD: head/www/lynx/Makefile 434630 2017-02-22 19:02:51Z rezny $
+# $FreeBSD: head/www/lynx/Makefile 461928 2018-02-15 14:41:29Z brnrd $
 
 PORTNAME=	lynx
 PORTVERSION=	2.8.8.2
@@ -64,10 +64,4 @@ post-install-DOCS-on:
 	(cd ${STAGEDIR}${L_HELP} && ${LN} -sf ../doc/lynx/${doc} .)
 .endfor
 
-.include <bsd.port.pre.mk>
-
-.if ${PORT_OPTIONS:MSSL} && ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

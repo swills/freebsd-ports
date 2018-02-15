@@ -1,11 +1,10 @@
 # Created by: Alex Deiter <tiamat@komi.mts.ru>
-# $FreeBSD: head/mail/imapsync/Makefile 454059 2017-11-12 18:11:54Z pi $
+# $FreeBSD: head/mail/imapsync/Makefile 461924 2018-02-15 13:51:44Z mat $
 
 PORTNAME=	imapsync
 PORTVERSION=	1.836
-DISTVERSIONPREFIX=	v
+DISTVERSIONPREFIX=	imapsync-
 CATEGORIES=	mail perl5
-MASTER_SITES=	https://codeload.github.com/imapsync/imapsync/tar.gz/imapsync-${PORTVERSION}?dummy=/
 
 MAINTAINER=	pi@FreeBSD.org
 COMMENT=	IMAP synchronization, copy or migration tool
@@ -25,10 +24,9 @@ RUN_DEPENDS=	p5-Mail-IMAPClient>0:mail/p5-Mail-IMAPClient \
 		p5-Sys-MemInfo>0:devel/p5-Sys-MemInfo \
 		p5-IO-Socket-INET6>0:net/p5-IO-Socket-INET6
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTNAME}-${PORTVERSION}
-
 USES=		cpe perl5 tar:tgz shebangfix
 SHEBANG_FILES=	${PORTNAME}
+USE_GITHUB=	yes
 
 CPE_VENDOR=	gilles_lamiral
 NO_BUILD=	yes

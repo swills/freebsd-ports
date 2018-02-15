@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/net/libvncserver/Makefile 456184 2017-12-12 21:29:57Z madpilot $
+# $FreeBSD: head/net/libvncserver/Makefile 461928 2018-02-15 14:41:29Z brnrd $
 
 PORTNAME=	libvncserver
 PORTVERSION=	0.9.11
@@ -49,10 +49,4 @@ VAAPI_CONFIGURE_WITH=	libva
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/rfb/default8x16.h ${STAGEDIR}${PREFIX}/include/rfb
 
-.include <bsd.port.pre.mk>
-
-.if ${PORT_OPTIONS:MOPENSSL} && ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Domas Mituzas <midom@dammit.lt>
-# $FreeBSD: head/databases/freetds/Makefile 458158 2018-01-05 17:44:48Z bofh $
+# $FreeBSD: head/databases/freetds/Makefile 461928 2018-02-15 14:41:29Z brnrd $
 
 PORTNAME=	freetds
 PORTVERSION=	1.00.80
@@ -71,10 +71,4 @@ post-patch:
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/interfaces ${STAGEDIR}${ETCDIR}/interfaces.sample
 
-.include <bsd.port.pre.mk>
-
-.if ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

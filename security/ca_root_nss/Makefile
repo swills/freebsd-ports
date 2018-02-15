@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/ca_root_nss/Makefile 461746 2018-02-13 20:45:38Z feld $
+# $FreeBSD: head/security/ca_root_nss/Makefile 461930 2018-02-15 15:21:25Z tijl $
 
 PORTNAME=	ca_root_nss
 PORTVERSION=	${VERSION_NSS}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	MOZILLA/security/nss/releases/${DISTNAME:tu:C/[-.]/_/g}_RTM/src
 DISTNAME=	nss-${VERSION_NSS}${NSS_SUFFIX}

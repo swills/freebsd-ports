@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/caffe/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/graphics/caffe/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 PORTNAME=	caffe
 PORTVERSION=	1.0
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libsnappy.so:archivers/snappy \
 		libleveldb.so:databases/leveldb \
 		liblmdb.so:databases/lmdb \
 		libboost_system.so:devel/boost-libs \
-		libboost_python.so:devel/boost-python-libs \
+		${PY_BOOST} \
 		libgflags.so:devel/gflags \
 		libglog.so:devel/glog \
 		libprotobuf.so:devel/protobuf \

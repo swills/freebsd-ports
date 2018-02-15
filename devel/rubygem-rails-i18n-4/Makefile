@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/rubygem-rails-i18n-4/Makefile 455591 2017-12-05 16:44:09Z tz $
+# $FreeBSD: head/devel/rubygem-rails-i18n-4/Makefile 461907 2018-02-15 12:47:16Z sunpoet $
 
 PORTNAME=	rails-i18n
 PORTVERSION=	4.0.9
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-4

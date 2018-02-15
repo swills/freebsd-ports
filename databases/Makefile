@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 461884 2018-02-15 12:30:56Z tz $
+# $FreeBSD: head/databases/Makefile 461887 2018-02-15 12:40:09Z tz $
 #
 
     COMMENT = Databases and related software
@@ -982,8 +982,10 @@
     SUBDIR += rubygem-redis-actionpack-rails5
     SUBDIR += rubygem-redis-actionpack-rails50
     SUBDIR += rubygem-redis-namespace
+    SUBDIR += rubygem-redis-namespace15
     SUBDIR += rubygem-redis3
     SUBDIR += rubygem-seed-fu
+    SUBDIR += rubygem-seed-fu236
     SUBDIR += rubygem-sqlite3
     SUBDIR += rubygem-sqlite3-ruby
     SUBDIR += rubygem-state_machines-activemodel

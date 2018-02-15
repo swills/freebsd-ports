@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/net/socat/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/net/socat/Makefile 461928 2018-02-15 14:41:29Z brnrd $
 
 PORTNAME=	socat
 PORTVERSION=	1.7.3.2
@@ -33,9 +33,6 @@ READLINE_USES=			readline
 .include <bsd.port.pre.mk>
 
 .if ${SSL_DEFAULT} != base
-.if ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 .endif

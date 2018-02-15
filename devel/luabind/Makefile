@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/devel/luabind/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/devel/luabind/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 PORTNAME=	luabind
 PORTVERSION=	0.9.1
@@ -13,9 +13,9 @@ COMMENT=	Library that helps you create bindings between C++ and Lua
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs
+LIB_DEPENDS=	${PY_BOOST}
 
-USES=		lua:51
+USES=		lua:51 python:env
 USE_LDCONFIG=	yes
 
 CPPFLAGS+=	-I.. -I${LUA_INCDIR} -I${LOCALBASE}/include

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 461284 2018-02-09 02:38:59Z swills $
+# $FreeBSD: head/net-im/Makefile 461935 2018-02-15 16:59:19Z tz $
 #
 
     COMMENT = Instant messaging
@@ -158,6 +158,7 @@
     SUBDIR += ring-libclient
     SUBDIR += rubygem-earthquake
     SUBDIR += rubygem-hipchat
+    SUBDIR += rubygem-hipchat15
     SUBDIR += rubygem-lita
     SUBDIR += rubygem-termtter
     SUBDIR += rubygem-tinder

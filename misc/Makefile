@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/misc/Makefile 461936 2018-02-15 17:05:45Z tcberner $
 #
 
     COMMENT = Miscellaneous utilities
@@ -237,6 +237,7 @@
     SUBDIR += kdeedu-kde4
     SUBDIR += kdeutils-kde4
     SUBDIR += kenny
+    SUBDIR += kf5-purpose
     SUBDIR += kgeography
     SUBDIR += klettres
     SUBDIR += krecipes-kde4
