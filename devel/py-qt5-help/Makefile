@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-qt5-help/Makefile 460949 2018-02-04 20:56:45Z rakuco $
+# $FreeBSD: head/devel/py-qt5-help/Makefile 461841 2018-02-14 21:30:14Z rakuco $
 
 PORTNAME=	help
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel python
 
 MAINTAINER=	kde@FreeBSD.org

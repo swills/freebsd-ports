@@ -1,8 +1,8 @@
 # Created by: Thomas Hurst <tom@hur.st>
-# $FreeBSD: head/graphics/optipng/Makefile 434254 2017-02-16 21:24:21Z madpilot $
+# $FreeBSD: head/graphics/optipng/Makefile 461572 2018-02-12 10:02:02Z yuri $
 
 PORTNAME=	optipng
-PORTVERSION=	0.7.6
+PORTVERSION=	0.7.7
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/OptiPNG/${PORTNAME}-${PORTVERSION}
 

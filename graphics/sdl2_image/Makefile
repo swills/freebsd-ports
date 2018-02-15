@@ -1,8 +1,7 @@
-# $FreeBSD: head/graphics/sdl2_image/Makefile 460979 2018-02-05 16:24:49Z amdmi3 $
+# $FreeBSD: head/graphics/sdl2_image/Makefile 461778 2018-02-14 11:52:27Z amdmi3 $
 
 PORTNAME=	sdl2_image
-PORTVERSION=	2.0.1
-PORTREVISION=	2
+PORTVERSION=	2.0.2
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.libsdl.org/projects/SDL_image/release/
 DISTNAME=	SDL2_image-${PORTVERSION}
@@ -30,5 +29,8 @@ TIFF_LIB_DEPENDS=	libtiff.so:graphics/tiff
 TIFF_CONFIGURE_ENABLE=	tif
 WEBP_LIB_DEPENDS=	libwebp.so:graphics/webp
 WEBP_CONFIGURE_ENABLE=	webp
+
+post-extract:
+	@${RM} -rf ${WRKSRC}/external
 
 .include <bsd.port.mk>

@@ -1,9 +1,9 @@
 # Created by: Dan Langille <dan@freebsddiary.org>
-# $FreeBSD: head/security/logcheck/Makefile 449886 2017-09-15 05:52:19Z sunpoet $
+# $FreeBSD: head/security/logcheck/Makefile 461822 2018-02-14 17:25:48Z pi $
 
 PORTNAME=	logcheck
 PORTVERSION=	1.3.18
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	DEBIAN_POOL
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	docbook-to-man>0:textproc/docbook-to-man
 RUN_DEPENDS=	mime-construct:mail/mime-construct \
-		lockfile:mail/procmail \
+		lockfile-create:sysutils/lockfile-progs \
 		bash:shells/bash
 
 LOGCHECK_USER=	logcheck

@@ -1,15 +1,20 @@
 # Created by: nbm
-# $FreeBSD: head/security/py-pycrypto/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-pycrypto/Makefile 461761 2018-02-14 06:31:38Z koobs $
 
 PORTNAME=	pycrypto
 PORTVERSION=	2.6.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	koobs@FreeBSD.org
 COMMENT=	Python Cryptography Toolkit
+
+LICENSE=	PD
+LICENSE_FILE=	${WRKSRC}/COPYRIGHT
+
+CONFLICTS_INSTALL=	${PYTHONPKGNAMEPREFIX}pycryptodome-*
 
 USES=		python
 USE_PYTHON=	distutils autoplist

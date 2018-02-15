@@ -1,8 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/gscan2pdf/Makefile 457751 2018-01-01 01:24:29Z danilo $
+# $FreeBSD: head/graphics/gscan2pdf/Makefile 461518 2018-02-11 18:30:18Z danilo $
 
 PORTNAME=	gscan2pdf
-PORTVERSION=	1.8.10
+PORTVERSION=	1.8.11
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 

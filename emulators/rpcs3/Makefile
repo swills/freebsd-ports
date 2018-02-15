@@ -1,9 +1,9 @@
-# $FreeBSD: head/emulators/rpcs3/Makefile 461351 2018-02-10 00:40:50Z jbeich $
+# $FreeBSD: head/emulators/rpcs3/Makefile 461677 2018-02-13 00:51:13Z jbeich $
 
 PORTNAME=	rpcs3
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.0.4-337
-DISTVERSIONSUFFIX=	-gcce0ad0c3
+DISTVERSION=	0.0.4-347
+DISTVERSIONSUFFIX=	-g95c6ac699
 CATEGORIES=	emulators
 
 MAINTAINER=	jbeich@FreeBSD.org

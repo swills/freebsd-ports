@@ -1,8 +1,8 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@inf.ufsc.br>)
-# $FreeBSD: head/devel/pear-Console_Getargs/Makefile 443174 2017-06-11 07:29:56Z sunpoet $
+# $FreeBSD: head/devel/pear-Console_Getargs/Makefile 461829 2018-02-14 18:31:04Z joneum $
 
 PORTNAME=	Console_Getargs
-PORTVERSION=	1.3.5
+DISTVERSION=	1.4.0
 CATEGORIES=	devel www pear
 
 MAINTAINER=	joneum@FreeBSD.org

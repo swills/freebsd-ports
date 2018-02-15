@@ -1,12 +1,12 @@
 # Created by: Peter Haight <peterh@sapros.com>
-# $FreeBSD: head/devel/scons/Makefile 456127 2017-12-12 12:47:05Z swills $
+# $FreeBSD: head/devel/scons/Makefile 461516 2018-02-11 17:08:16Z sunpoet $
 
 PORTNAME=	scons
 PORTVERSION=	3.0.1
 CATEGORIES=	devel python
 MASTER_SITES=	SF
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Build tool alternative to make
 
 LICENSE=	MIT

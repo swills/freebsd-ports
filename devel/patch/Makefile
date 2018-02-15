@@ -1,8 +1,8 @@
 # Created by: ache
-# $FreeBSD: head/devel/patch/Makefile 421635 2016-09-09 19:42:46Z amdmi3 $
+# $FreeBSD: head/devel/patch/Makefile 461876 2018-02-15 10:24:18Z johans $
 
 PORTNAME=	patch
-PORTVERSION=	2.7.5
+PORTVERSION=	2.7.6
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 

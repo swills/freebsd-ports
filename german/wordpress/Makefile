@@ -1,8 +1,8 @@
 # Created by: miwi
-# $FreeBSD: head/german/wordpress/Makefile 459400 2018-01-19 07:09:28Z joneum $
+# $FreeBSD: head/german/wordpress/Makefile 461542 2018-02-11 23:49:57Z joneum $
 
 PORTNAME=	wordpress
-DISTVERSION=	4.9.2
+DISTVERSION=	4.9.4
 DISTVERSIONSUFFIX=	-de_DE
 CATEGORIES=	german www
 MASTER_SITES=	http://de.wordpress.org/

@@ -1,18 +1,22 @@
-# $FreeBSD: head/www/novnc-websockify/Makefile 450653 2017-09-26 09:56:52Z araujo $
+# $FreeBSD: head/www/novnc-websockify/Makefile 461595 2018-02-12 15:41:23Z amdmi3 $
 
 PORTNAME=	websockify
 PORTVERSION=	0.8.0
+PORTREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	araujo@FreeBSD.org
 COMMENT=	noVNC-websockify implementation.
 
-LICENSE=	MPL20
+LICENSE=	LGPL3 MPL20 BSD2CLAUSE BSD3CLAUSE MIT
+LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+LICENSE_FILE_LGPL3=	${WRKSRC}/docs/LICENSE.LGPL-3
 
 RUN_DEPENDS=	novnc>0:www/novnc
 
 USES=		shebangfix python
+SHEBANG_FILES=	run
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	novnc
@@ -24,7 +28,7 @@ NO_ARCH=	yes
 TARGET_DIR=	${PREFIX}/libexec/novnc/utils/websockify
 
 do-install:
-	${MKDIR} ${STAGEDIR}${TARGET_DIR}
+	@${MKDIR} ${STAGEDIR}${TARGET_DIR}
 	cd ${WRKSRC} && ${RM} .gitignore .gitmodules .travis.yml
 	cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${TARGET_DIR}
 	@${CHMOD} +x ${STAGEDIR}${TARGET_DIR}/run

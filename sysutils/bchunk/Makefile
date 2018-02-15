@@ -1,18 +1,21 @@
 # Created by: bsdx
-# $FreeBSD: head/sysutils/bchunk/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/sysutils/bchunk/Makefile 461759 2018-02-13 23:49:51Z yuri $
 
 PORTNAME=	bchunk
-PORTVERSION=	1.2.0
+DISTVERSION=	1.2.2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://he.fi/bchunk/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	freebsd_ports@k-worx.org
 COMMENT=	Converts .bin/.cue files to .iso/audio
+
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 PLIST_FILES=	bin/bchunk man/man1/bchunk.1.gz
 
 do-build:
-	cd ${WRKSRC}; ${CC} ${CFLAGS} bchunk.c -o bchunk
+	@cd ${WRKSRC} && ${CC} ${CFLAGS} bchunk.c -o bchunk
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bchunk ${STAGEDIR}${PREFIX}/bin

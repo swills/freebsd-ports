@@ -1,9 +1,9 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/x11/fpc-x11/Makefile 460523 2018-01-31 19:03:22Z amdmi3 $
+# $FreeBSD: head/x11/fpc-x11/Makefile 461464 2018-02-11 08:15:27Z antoine $
 
 CATEGORIES=	x11 lang
 PKGNAMESUFFIX=	-x11
-PORTREVISION=	1
+PORTREVISION=	2
 
 COMMENT=	Free Pascal interface to X windows server
 

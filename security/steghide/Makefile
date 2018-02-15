@@ -1,5 +1,5 @@
 # Created by: RaRa Rasputin <rasputin@submonkey.net>
-# $FreeBSD: head/security/steghide/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/steghide/Makefile 461662 2018-02-12 22:11:18Z arved $
 
 PORTNAME=	steghide
 PORTVERSION=	0.5.1
@@ -7,7 +7,7 @@ PORTREVISION=	7
 CATEGORIES=	security
 MASTER_SITES=	SF
 
-MAINTAINER=	arved@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Steganography tool to hide data in binary files
 
 LICENSE=	GPLv2

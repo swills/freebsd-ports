@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/elasticsearch2/Makefile 458513 2018-01-09 07:40:55Z mat $
+# $FreeBSD: head/textproc/elasticsearch2/Makefile 461646 2018-02-12 20:02:51Z pi $
 
 PORTNAME=	elasticsearch
 PORTVERSION=	2.4.6
@@ -13,7 +13,7 @@ COMMENT=	Full-text search engine for Java
 
 LICENSE=	APACHE20
 
-CONFLICTS=	elasticsearch-[0-9]* elasticsearch5-[0-9]*
+CONFLICTS=	elasticsearch-[0-9]* elasticsearch5-[0-9]* elasticsearch6-[0-9]*
 
 USES=		cpe
 NO_ARCH=	yes

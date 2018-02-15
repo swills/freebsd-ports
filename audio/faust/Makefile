@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@FreeBSD.org>
-# $FreeBSD: head/audio/faust/Makefile 461201 2018-02-08 07:29:35Z yuri $
+# $FreeBSD: head/audio/faust/Makefile 461693 2018-02-13 10:19:33Z yuri $
 
 PORTNAME=	faust
-DISTVERSION=	2.5.17
+DISTVERSION=	2.5.21
 CATEGORIES=	audio devel
 
 MAINTAINER=	yuri@FreeBSD.org

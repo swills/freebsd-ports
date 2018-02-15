@@ -1,5 +1,5 @@
 # Created by: Yashin Dmitry <yashin.dm@gmail.com>
-# $FreeBSD: head/net-p2p/uhub/Makefile 425758 2016-11-08 19:29:56Z linimon $
+# $FreeBSD: head/net-p2p/uhub/Makefile 461870 2018-02-15 09:02:57Z amdmi3 $
 
 PORTNAME=	uhub
 PORTVERSION=	0.5.0
@@ -13,10 +13,9 @@ COMMENT=	High performance peer-to-peer hub for the ADC network
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
-
 BROKEN_aarch64=	fails to compile: CPUINFO not defined
-BROKEN_mips64=	fails to compile: strndup not found
+
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 USES=		cmake perl5 sqlite
 USE_RC_SUBR=	uhub

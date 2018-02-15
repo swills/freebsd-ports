@@ -1,11 +1,11 @@
 # Created by: Romain Tartiere <romain@blogreen.org>
-# $FreeBSD: head/x11-themes/gtk-nodoka-engine/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/x11-themes/gtk-nodoka-engine/Makefile 461744 2018-02-13 20:24:44Z romain $
 
 PORTNAME=	gtk-nodoka-engine
 PORTVERSION=	0.7.5
 PORTREVISION=	3
 CATEGORIES=	x11-themes
-MASTER_SITES=	https://fedorahosted.org/releases/n/o/nodoka/
+MASTER_SITES=	http://bsdforge.com/projects/source/x11-themes/gtk-nodoka-engine/
 
 MAINTAINER=	romain@FreeBSD.org
 COMMENT=	GTK nodoka engine and themes

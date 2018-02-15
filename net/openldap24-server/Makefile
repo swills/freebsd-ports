@@ -1,5 +1,5 @@
 # Created by: Xin LI <delphij@FreeBSD.org>
-# $FreeBSD: head/net/openldap24-server/Makefile 459003 2018-01-14 21:37:08Z tijl $
+# $FreeBSD: head/net/openldap24-server/Makefile 461873 2018-02-15 09:50:07Z brnrd $
 
 PORTNAME=		openldap
 DISTVERSION=		2.4.45
@@ -535,10 +535,6 @@ PLIST_SUB+=		SHLIB_MINOR=${OPENLDAP_SHLIB_MINOR}
 PLIST_SUB+=		OPENLDAP_MAJOR=${OPENLDAP_MAJOR}
 
 .include <bsd.port.pre.mk>
-
-.if ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
 
 .if !${PORT_OPTIONS:MFETCH}
 CONFIGURE_ARGS+=	--without-fetch

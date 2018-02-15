@@ -1,8 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer1-validate/Makefile 450470 2017-09-23 20:29:49Z kwm $
+# $FreeBSD: head/multimedia/gstreamer1-validate/Makefile 461779 2018-02-14 12:00:31Z amdmi3 $
 
 PORTNAME=	gstreamer1-validate
 PORTVERSION=	1.12.3
+PORTREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://gstreamer.freedesktop.org/src/gst-validate/
 DISTNAME=	gst-validate-${PORTVERSION}
@@ -13,7 +14,8 @@ COMMENT=	Gstreamer element validation suite
 LIB_DEPENDS=	libjson-glib-1.0.so:devel/json-glib
 
 USES=		gettext-runtime gmake gnome libtool pathfix \
-		pkgconfig python:2 tar:xz
+		pkgconfig python:2.7 shebangfix tar:xz
+SHEBANG_FILES=	tools/gst-validate-launcher.in
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 USE_GNOME=	cairo gdkpixbuf2 gtk30 introspection:build

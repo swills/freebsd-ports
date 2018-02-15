@@ -1,9 +1,8 @@
 # Created by: Fernan Aguero <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/print/flpsed/Makefile 422715 2016-09-24 13:12:30Z rm $
+# $FreeBSD: head/print/flpsed/Makefile 461698 2018-02-13 11:56:11Z yuri $
 
 PORTNAME=	flpsed
-PORTVERSION=	0.7.2
-PORTREVISION=	4
+DISTVERSION=	0.7.3
 CATEGORIES=	print
 MASTER_SITES=	http://flpsed.org/
 
@@ -11,13 +10,15 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	WYSIWYG Postscript annotator
 
 LICENSE=	GPLv3
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS+=	libfltk.so:x11-toolkits/fltk \
 		libfontconfig.so:x11-fonts/fontconfig
 
-GNU_CONFIGURE=	yes
 USES=		desktop-file-utils ghostscript:x11 gmake
-USE_XORG=	x11 xfixes xext xft
+GNU_CONFIGURE=	yes
+USE_XORG=	x11 xcursor xext xfixes xft xinerama xrender
+
 PLIST_FILES=	bin/flpsed \
 		man/man1/flpsed.1.gz \
 		share/applications/flpsed.desktop \

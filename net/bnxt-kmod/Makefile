@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/bnxt-kmod/Makefile 430166 2016-12-31 21:07:50Z sunpoet $
+# $FreeBSD: head/net/bnxt-kmod/Makefile 461813 2018-02-14 15:26:53Z amdmi3 $
 
 PORTNAME=	bnxt-kmod
 PORTVERSION=	309078
@@ -43,20 +43,8 @@ do-install:
 .include <bsd.port.pre.mk>
 
 SUPPORTED=	no
-.if ${OSVERSION} >= 1100122
-.if ${OSVERSION} < 1100500
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200002 && ${OSVERSION} <= 1200014
 SUPPORTED=	yes
-.endif
-.endif
-.if ${OSVERSION} >= 1100501
-.if ${OSVERSION} < 1101000
-SUPPORTED=	yes
-.endif
-.endif
-.if ${OSVERSION} >= 1200002
-.if ${OSVERSION} <= 1200014
-SUPPORTED=	yes
-.endif
 .endif
 .if ${SUPPORTED} == no
 IGNORE=		not supported on this version of FreeBSD

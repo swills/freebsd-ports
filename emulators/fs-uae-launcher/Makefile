@@ -1,5 +1,5 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/emulators/fs-uae-launcher/Makefile 423625 2016-10-09 22:01:34Z bsam $
+# $FreeBSD: head/emulators/fs-uae-launcher/Makefile 461774 2018-02-14 10:02:49Z antoine $
 
 PORTNAME=	fs-uae-launcher
 PORTVERSION=	2.4.1
@@ -11,7 +11,7 @@ COMMENT=	GUI launcher for the FS-UAE Amiga emulator
 
 LICENSE=	GPLv2
 
-USES=		gettext gmake pathfix python shebangfix
+USES=		gettext gmake pathfix python:2.7 shebangfix
 
 INSTALLS_ICONS=	yes
 MAKE_ARGS=	DESTDIR=${STAGEDIR} prefix=${PREFIX}

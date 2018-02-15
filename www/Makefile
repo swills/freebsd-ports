@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/www/Makefile 461845 2018-02-14 22:14:12Z rene $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -498,7 +498,7 @@
     SUBDIR += mod_rpaf2
     SUBDIR += mod_scgi
     SUBDIR += mod_security
-    SUBDIR += mod_security-devel
+    SUBDIR += mod_security3
     SUBDIR += mod_setenvifplus
     SUBDIR += mod_spdy
     SUBDIR += mod_tidy
@@ -591,6 +591,7 @@
     SUBDIR += opera-linuxplugins
     SUBDIR += orangehrm
     SUBDIR += oscommerce
+    SUBDIR += osrm-backend
     SUBDIR += otrs
     SUBDIR += otter-browser
     SUBDIR += owncloud
@@ -2171,7 +2172,6 @@
     SUBDIR += rubygem-ruby-readability
     SUBDIR += rubygem-savon
     SUBDIR += rubygem-sawyer
-    SUBDIR += rubygem-scrapi
     SUBDIR += rubygem-select2-rails
     SUBDIR += rubygem-select2-rails3
     SUBDIR += rubygem-selenium-webdriver

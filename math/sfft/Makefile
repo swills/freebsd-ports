@@ -1,5 +1,5 @@
 # Created by: bf@FreeBSD.org
-# $FreeBSD: head/math/sfft/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/sfft/Makefile 461509 2018-02-11 15:49:22Z linimon $
 
 PORTNAME=	sfft
 PORTVERSION=	0.1.0
@@ -13,6 +13,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Optimized Sparse Fast Fourier Transform
 
 LICENSE=	GPLv2
+
+ONLY_FOR_ARCHS=		amd64 i386
+ONLY_FOR_ARCHS_REASON=	requires SSE instructions, which are x86-specific
 
 LIB_DEPENDS=	libfftw3.so:math/fftw3
 
@@ -109,6 +112,6 @@ post-install:
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	@${INSTALL_DATA} ${_DISTDIR}/${PORTDOCS} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${_DISTDIR}/${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

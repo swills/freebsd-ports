@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale	<nivit@email.it>
-# $FreeBSD: head/textproc/py-enchant/Makefile 457085 2017-12-23 16:59:10Z thierry $
+# $FreeBSD: head/textproc/py-enchant/Makefile 461831 2018-02-14 18:39:24Z pi $
 
 PORTNAME=	enchant
 PORTVERSION=	2.0.0
@@ -20,10 +20,12 @@ OPTIONS_DEFINE=	WX
 OPTIONS_DEFAULT=WX
 WX_DESC=	Provide a wxSpellCheckerDialog
 OPTIONS_SUB=	yes
+.if ${FLAVOR:U:Mpy3*}
+OPTIONS_EXCLUDE=	WX
+.endif
 
-# Enable Python 3 only when Mk/bsd.wx.mk will support it
-USES=		python:2.7
-USE_PYTHON=	distutils
+USES=		python
+USE_PYTHON=	distutils py3kplist
 NO_ARCH=	yes
 
 WX_USE=		WX=3.0+

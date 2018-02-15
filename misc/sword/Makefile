@@ -1,5 +1,5 @@
 # Created by: Willem van Engen <wvengen@stack.nl>
-# $FreeBSD: head/misc/sword/Makefile 461290 2018-02-09 09:12:48Z jbeich $
+# $FreeBSD: head/misc/sword/Makefile 461468 2018-02-11 08:16:31Z jbeich $
 
 PORTNAME=	sword
 PORTVERSION=	1.7.4
@@ -19,8 +19,6 @@ BUILD_DEPENDS=	cppunit-config:devel/cppunit
 BUILD_DEPENDS+= clang38:lang/clang38
 CC=		clang38
 CXX=		clang++38
-
-BROKEN_powerpc64=	does not compile: libicui18n.so: undefined reference to __cxa_throw_bad_array_new_length
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-conf --with-zlib

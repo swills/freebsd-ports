@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/converters/py-zfec/Makefile 461457 2018-02-11 05:19:30Z yuri $
+# $FreeBSD: head/converters/py-zfec/Makefile 461460 2018-02-11 07:15:05Z antoine $
 
 PORTNAME=	zfec
 DISTVERSION=	1.5.2
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.GPL
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}argparse>=0:devel/py-argparse@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyutil>=0:devel/py-pyutil@${FLAVOR}
 
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist concurrent
 
 DOCSDIR=	${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME}

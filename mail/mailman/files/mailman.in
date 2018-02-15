@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: head/mail/mailman/files/mailman.in 461277 2018-02-08 22:32:23Z mandree $
+# $FreeBSD: head/mail/mailman/files/mailman.in 461539 2018-02-11 23:20:58Z mandree $
 #
 # PROVIDE: mailman
 # REQUIRE: LOGIN
@@ -38,7 +38,8 @@ load_rc_config $name
 : ${mailman_run_localhost:="NO"}
 
 start_precmd=${name}_prestart
-extra_commands="reload status"
+extra_commands="reload status reopen"
+reopen_cmd="${command} reopen"
 
 mailman_prestart() {
 	### check/fix permissions if desired

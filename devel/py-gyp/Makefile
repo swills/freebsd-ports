@@ -1,5 +1,5 @@
 # Created by: Daichi GOTO <daichi@FreeBSD.org>
-# $FreeBSD: head/devel/py-gyp/Makefile 415345 2016-05-16 17:43:22Z hrs $
+# $FreeBSD: head/devel/py-gyp/Makefile 461812 2018-02-14 15:24:45Z amdmi3 $
 
 PORTNAME=	gyp
 PORTVERSION=	20160504
@@ -14,7 +14,8 @@ COMMENT=	Build System That Generates Other Build Systems
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

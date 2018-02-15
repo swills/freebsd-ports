@@ -1,8 +1,8 @@
 # Created by: Torsten Zuhlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/security/rubygem-attr_encrypted/Makefile 429792 2016-12-28 16:14:26Z swills $
+# $FreeBSD: head/security/rubygem-attr_encrypted/Makefile 461628 2018-02-12 19:04:28Z sunpoet $
 
 PORTNAME=	attr_encrypted
-PORTVERSION=	3.0.3
+PORTVERSION=	3.1.0
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

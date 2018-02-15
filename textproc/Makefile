@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 460964 2018-02-05 07:46:24Z yuri $
+# $FreeBSD: head/textproc/Makefile 461845 2018-02-14 22:14:12Z rene $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -165,6 +165,7 @@
     SUBDIR += elasticsearch5
     SUBDIR += elasticsearch5-search-guard
     SUBDIR += elasticsearch5-x-pack
+    SUBDIR += elasticsearch6
     SUBDIR += elixir-earmark
     SUBDIR += elixir-ex_doc
     SUBDIR += elixir-funnel
@@ -1339,6 +1340,7 @@
     SUBDIR += py-pystache
     SUBDIR += py-pystemmer
     SUBDIR += py-python-augeas
+    SUBDIR += py-python-bidi
     SUBDIR += py-python-docx
     SUBDIR += py-python-gettext
     SUBDIR += py-python-slugify
@@ -1591,7 +1593,6 @@
     SUBDIR += rubygem-termcolor
     SUBDIR += rubygem-terminal-table
     SUBDIR += rubygem-text
-    SUBDIR += rubygem-tidy
     SUBDIR += rubygem-tidy_ffi
     SUBDIR += rubygem-toml
     SUBDIR += rubygem-tomlrb

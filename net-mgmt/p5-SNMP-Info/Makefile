@@ -1,8 +1,8 @@
 # Created by: arved
-# $FreeBSD: head/net-mgmt/p5-SNMP-Info/Makefile 451333 2017-10-05 18:54:26Z jadawin $
+# $FreeBSD: head/net-mgmt/p5-SNMP-Info/Makefile 461638 2018-02-12 19:28:33Z riggs $
 
 PORTNAME=	SNMP-Info
-PORTVERSION=	3.37
+PORTVERSION=	3.39
 CATEGORIES=	net-mgmt perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

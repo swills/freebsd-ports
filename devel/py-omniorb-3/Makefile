@@ -1,5 +1,5 @@
 # Created by: Johann Visagie <johann@egenetics.com>
-# $FreeBSD: head/devel/py-omniorb-3/Makefile 438823 2017-04-19 05:08:04Z miwi $
+# $FreeBSD: head/devel/py-omniorb-3/Makefile 461772 2018-02-14 09:13:50Z antoine $
 
 PORTNAME=	omniorb
 PORTVERSION=	3.7
@@ -33,7 +33,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_OUTSOURCE=	yes
 MAKEFILE=	GNUmakefile
 USE_LDCONFIG=	yes
-USES=		gmake python shebangfix ssl tar:bzip2
+USES=		gmake python:2.7 shebangfix ssl tar:bzip2
 SHEBANG_FILES=	examples/tests/*.py examples/poa/*.py \
 		examples/fortune/*.py examples/embed/*.py \
 		examples/valuetype/tests/*.py \

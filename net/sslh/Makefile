@@ -1,8 +1,8 @@
 # Created by: Jui-Nan Lin <jnlin@csie.nctu.edu.tw>
-# $FreeBSD: head/net/sslh/Makefile 415742 2016-05-23 20:35:01Z amdmi3 $
+# $FreeBSD: head/net/sslh/Makefile 461754 2018-02-13 22:20:49Z olivier $
 
 PORTNAME=	sslh
-PORTVERSION=	1.18
+PORTVERSION=	1.19c
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 
@@ -12,13 +12,14 @@ COMMENT=	SSL/SSH multiplexer
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libconfig.so:devel/libconfig
-
-USE_GITHUB=	yes
-GH_ACCOUNT=	yrutschle
+LIB_DEPENDS=	libconfig.so:devel/libconfig \
+		libpcre.so:devel/pcre
 
 USES=		gmake perl5
 USE_PERL5=	build
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	yrutschle
 
 OPTIONS_DEFINE=	EXAMPLES LIBWRAP
 OPTIONS_DEFAULT=	LIBWRAP

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/minio-client/Makefile 458362 2018-01-07 17:28:52Z joneum $
+# $FreeBSD: head/www/minio-client/Makefile 461510 2018-02-11 16:50:16Z riggs $
 
 PORTNAME=	minio-client
 PORTVERSION=	${GH_TAGNAME:S/RELEASE.//:S/Z//:S/T/-/:S/-/./g}
@@ -27,7 +27,7 @@ MC=	${PORTNAME}
 USE_GITHUB=	yes
 GH_ACCOUNT=	minio
 GH_PROJECT=	mc
-GH_TAGNAME=	RELEASE.2017-12-12T01-08-02Z
+GH_TAGNAME=	RELEASE.2018-01-18T21-18-56Z
 GH_SUBDIR=	src/github.com/${GH_ACCOUNT}/${GH_PROJECT}
 MAKE_ENV=	GOPATH=${WRKSRC} GOROOT=${LOCALBASE}/go
 

@@ -1,5 +1,5 @@
 # Created by: Marc Abramowitz (http://marc.abramowitz.info)
-# $FreeBSD: head/graphics/opencv/Makefile 457914 2018-01-02 16:49:24Z tcberner $
+# $FreeBSD: head/graphics/opencv/Makefile 461874 2018-02-15 10:03:41Z antoine $
 
 PORTNAME?=	opencv
 PORTVERSION=	2.4.13.1
@@ -151,7 +151,7 @@ INSTALL_WRKSRC=	${WRKSRC}/modules/python
 .elif defined(OCV_JAVA)
 BUILD_DEPENDS+=	ant:devel/apache-ant
 LIB_DEPENDS+=	libopencv_legacy.so:graphics/opencv
-USES+=		python:build
+USES+=		python:2.7,build
 USE_JAVA=	yes
 CMAKE_ARGS+=	-DBUILD_opencv_java:BOOL=On
 . for module in apps python stitching superres videostab

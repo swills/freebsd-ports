@@ -1,8 +1,8 @@
 # Created by: Greg Lewis <glewis@FreeBSD.org>
-# $FreeBSD: head/java/java-zoneinfo/Makefile 454497 2017-11-19 18:56:11Z glewis $
+# $FreeBSD: head/java/java-zoneinfo/Makefile 461857 2018-02-15 03:53:59Z glewis $
 
 PORTNAME=	zoneinfo
-DISTVERSION=	2017c
+DISTVERSION=	2018c
 CATEGORIES=	java misc
 MASTER_SITES=	LOCAL/glewis/javazi
 PKGNAMEPREFIX=	java-

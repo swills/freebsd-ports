@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-toolkits/py-qt5-gui/Makefile 460949 2018-02-04 20:56:45Z rakuco $
+# $FreeBSD: head/x11-toolkits/py-qt5-gui/Makefile 461841 2018-02-14 21:30:14Z rakuco $
 
 PORTNAME=	gui
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-toolkits devel python
 
 MAINTAINER=	kde@FreeBSD.org

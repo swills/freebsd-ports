@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/erlang-backoff/Makefile 406895 2016-01-22 09:15:33Z olgeni $
+# $FreeBSD: head/devel/erlang-backoff/Makefile 461804 2018-02-14 14:07:27Z olgeni $
 
 PORTNAME=	backoff
-PORTVERSION=	1.1.3
+PORTVERSION=	1.1.4
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

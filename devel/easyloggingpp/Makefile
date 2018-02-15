@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/easyloggingpp/Makefile 461389 2018-02-10 11:50:04Z yuri $
+# $FreeBSD: head/devel/easyloggingpp/Makefile 461820 2018-02-14 17:02:11Z yuri $
 
 PORTNAME=	easyloggingpp
 DISTVERSIONPREFIX=	v
-DISTVERSION=	9.95.4
+DISTVERSION=	9.96.0
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -19,6 +19,7 @@ CMAKE_ON=	build_shared_lib  # patched in, requested such option in https://githu
 
 PLIST_FILES=	include/easylogging++.h \
 		include/easylogging++.cc \
-		lib/libeasyloggingpp.so
+		lib/libeasyloggingpp.so \
+		libdata/pkgconfig/easyloggingpp.pc
 
 .include <bsd.port.mk>

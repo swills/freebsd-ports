@@ -1,5 +1,5 @@
 # Created by: Carlos J Puga Medina <cpm@fbsd.es>
-# $FreeBSD: head/security/py-acme/Makefile 459659 2018-01-22 15:44:05Z cpm $
+# $FreeBSD: head/security/py-acme/Makefile 461671 2018-02-12 23:11:07Z cpm $
 
 PORTNAME=	acme
 PORTVERSION=	0.21.0
@@ -8,7 +8,7 @@ CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	cpm@FreeBSD.org
+MAINTAINER=	python@FreeBSD.org
 COMMENT=	ACME protocol implementation in Python
 
 LICENSE=	APACHE20

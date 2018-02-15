@@ -1,8 +1,8 @@
 # Created by: Yi-Jheng Lin <yzlin@FreeBSD.org>
-# $FreeBSD: head/devel/bpython/Makefile 456135 2017-12-12 13:33:04Z sunpoet $
+# $FreeBSD: head/devel/bpython/Makefile 461715 2018-02-13 17:02:10Z sunpoet $
 
 PORTNAME=	bpython
-PORTVERSION=	0.17
+PORTVERSION=	0.17.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP \
 		https://bpython-interpreter.org/releases/

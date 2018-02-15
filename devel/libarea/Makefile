@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/devel/libarea/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/devel/libarea/Makefile 461704 2018-02-13 13:01:04Z antoine $
 
 PORTNAME=	libarea
 PORTVERSION=	20160313
@@ -11,7 +11,6 @@ COMMENT=	CAM-related software for profile and pocketing operations
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	python-config:lang/python
 LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs
 
 USE_GITHUB=	yes
@@ -20,5 +19,10 @@ GH_TAGNAME=	f1986ac
 
 USES=		cmake:outsource python
 USE_LDCONFIG=	yes
+
+post-patch:
+	@${REINPLACE_CMD} 's,COMMAND python ,COMMAND ${PYTHON_CMD} , ; \
+		s,COMMAND python-config ,COMMAND ${PYTHON_CMD}-config ,' \
+		${WRKSRC}/CMakeLists.txt
 
 .include <bsd.port.mk>

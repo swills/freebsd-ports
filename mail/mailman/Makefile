@@ -1,9 +1,9 @@
 # Created by: n_hibma@qubesoft.com
-# $FreeBSD: head/mail/mailman/Makefile 461277 2018-02-08 22:32:23Z mandree $
+# $FreeBSD: head/mail/mailman/Makefile 461539 2018-02-11 23:20:58Z mandree $
 
 PORTNAME=	mailman
 DISTVERSION=	2.1.26
-PORTREVISION=	0
+PORTREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	GNU \
 		SF/${PORTNAME}/Mailman%202.1%20%28stable%29/${PORTVERSION} \

@@ -1,5 +1,5 @@
 # Created by: rflynn@acsalaska.net
-# $FreeBSD: head/net-mgmt/observium/Makefile 461146 2018-02-07 14:29:46Z feld $
+# $FreeBSD: head/net-mgmt/observium/Makefile 461709 2018-02-13 15:01:42Z feld $
 # Observium version can be found by looking at ${WRKSRC}/includes/definitions/version.inc.php
 
 PORTNAME=	observium
@@ -10,7 +10,7 @@ MASTER_SITES=	http://www.observium.org/
 DISTNAME=	${PORTNAME}-community-latest
 DIST_SUBDIR=	${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	dirkx@webweaving.org
+MAINTAINER=	feld@FreeBSD.org
 COMMENT=	Autodiscovering PHP/MySQL/SNMP based network monitoring
 
 LICENSE=	EULA

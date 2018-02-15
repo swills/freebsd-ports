@@ -1,8 +1,8 @@
 # Created by: Jeremy Norris <ishmael127@home.com>
-# $FreeBSD: head/graphics/feh/Makefile 461395 2018-02-10 13:07:16Z zeising $
+# $FreeBSD: head/graphics/feh/Makefile 461747 2018-02-13 20:49:53Z zeising $
 
 PORTNAME=	feh
-PORTVERSION=	2.23.1
+PORTVERSION=	2.23.2
 CATEGORIES=	graphics
 MASTER_SITES=	http://feh.finalrewind.org/ \
 		LOCAL/uqs

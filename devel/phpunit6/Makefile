@@ -1,8 +1,8 @@
 # Created by: Jochen Neumeister (<joneum@bsdproject.de>)
-# $FreeBSD: head/devel/phpunit6/Makefile 456937 2017-12-21 18:17:53Z joneum $
+# $FreeBSD: head/devel/phpunit6/Makefile 461544 2018-02-12 00:00:24Z joneum $
 
 PORTNAME=	phpunit
-DISTVERSION=	6.5.5
+DISTVERSION=	6.5.6
 CATEGORIES=	devel www
 MASTER_SITES=	https://phar.phpunit.de/
 PKGNAMESUFFIX=	6
@@ -13,13 +13,13 @@ COMMENT=	Testing framework for unit tests
 
 LICENSE=	BSD3CLAUSE
 
+IGNORE_WITH_PHP=	56
+
 CONFLICTS_INSTALL=	phpunit
 
 USES=		cpe php
 CPE_VENDOR=	phpunit_project
 USE_PHP=	dom json spl pcre phar
-
-IGNORE_WITH_PHP=	56
 
 NO_ARCH=	yes
 NO_BUILD=	yes

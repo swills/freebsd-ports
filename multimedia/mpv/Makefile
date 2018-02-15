@@ -1,10 +1,9 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/multimedia/mpv/Makefile 457244 2017-12-25 18:00:52Z cpm $
+# $FreeBSD: head/multimedia/mpv/Makefile 461531 2018-02-11 21:52:13Z cpm $
 
 PORTNAME=	mpv
-PORTVERSION=	0.27.0
+PORTVERSION=	0.27.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	multimedia audio
 

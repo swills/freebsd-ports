@@ -1,11 +1,12 @@
 # Created by: Carsten Larsen <cs@innolan.dk>
-# $FreeBSD: head/archivers/py-python-lhafile/Makefile 421451 2016-09-06 17:53:30Z amdmi3 $
+# $FreeBSD: head/archivers/py-python-lhafile/Makefile 461548 2018-02-12 00:59:58Z yuri $
 
 PORTNAME=	python-lhafile
-PORTVERSION=	0.2.1
+DISTVERSION=	0.2.2
 CATEGORIES=	archivers python
-MASTER_SITES=	http://fengestad.no/python-lhafile/
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+DISTNAME=	lhafile-${DISTVERSION}
 
 MAINTAINER=	cs@innolan.dk
 COMMENT=	LHA(.lzh) file extract interface

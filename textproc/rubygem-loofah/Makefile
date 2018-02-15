@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/textproc/rubygem-loofah/Makefile 457743 2017-12-31 22:24:03Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-loofah/Makefile 461629 2018-02-12 19:04:33Z sunpoet $
 
 PORTNAME=	loofah
-PORTVERSION=	2.1.1
+PORTVERSION=	2.2.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
