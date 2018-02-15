@@ -25,7 +25,6 @@ CONFLICTS_INSTALL=	qtchooser rubygem-gitlab-linguist rubygem-github-linguist
 NO_ARCH=	yes
 USES=		gem
 USE_RUBY=	yes
-RUBYGEM_AUTOPLIST=	yes
 
 PLIST_FILES=	bin/git-linguist bin/linguist
 
