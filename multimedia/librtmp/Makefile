@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/librtmp/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/multimedia/librtmp/Makefile 461928 2018-02-15 14:41:29Z brnrd $
 
 PORTNAME=	librtmp
 PORTVERSION=	2.4.20151223
@@ -17,10 +17,4 @@ CFLAGS+=	-I${OPENSSLINC}
 LDFLAGS+=	-L${OPENSSLLIB}
 WRKSRC=		${WRKDIR}/${DISTNAME}/librtmp
 
-.include <bsd.port.pre.mk>
-
-.if ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

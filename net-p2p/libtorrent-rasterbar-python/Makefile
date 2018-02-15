@@ -1,5 +1,5 @@
 # Created by: Doug Barton <dougb@FreeBSD.org>
-# $FreeBSD: head/net-p2p/libtorrent-rasterbar-python/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-p2p/libtorrent-rasterbar-python/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 CATEGORIES=	net-p2p python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -7,7 +7,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 COMMENT=	Python bindings for libtorrent-rasterbar
 
 LIB_DEPENDS=	libtorrent-rasterbar.so:net-p2p/libtorrent-rasterbar \
-		libboost_python.so:devel/boost-python-libs
+		${PY_BOOST}
 
 MASTERDIR=	${.CURDIR}/../libtorrent-rasterbar
 

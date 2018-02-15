@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/devel/rubygem-health_check26/Makefile 461935 2018-02-15 16:59:19Z tz $
 
 PORTNAME=	health_check
 PORTVERSION=	2.6.0

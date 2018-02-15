@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/net/rubygem-omniauth-twitter12/Makefile 461935 2018-02-15 16:59:19Z tz $
 
 PORTNAME=	omniauth-twitter
 PORTVERSION=	1.2.1

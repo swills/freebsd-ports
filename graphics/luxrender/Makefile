@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/luxrender/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/graphics/luxrender/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 PORTNAME=	luxrender
 DISTVERSION?=	1.6
@@ -16,7 +16,7 @@ COMMENT=	Physically based and unbiased rendering system
 
 LICENSE=	GPLv3
 
-LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs \
+LIB_DEPENDS=	${PY_BOOST} \
 		libfftw3.so:math/fftw3 \
 		libOpenImageIO.so:graphics/openimageio
 .if ${DISTVERSION} != 1.4

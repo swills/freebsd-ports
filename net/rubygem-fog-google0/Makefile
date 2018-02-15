@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/net/rubygem-fog-google0/Makefile 461935 2018-02-15 16:59:19Z tz $
 
 PORTNAME=	fog-google
 PORTVERSION=	0.6.0

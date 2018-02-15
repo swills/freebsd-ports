@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/textproc/rubygem-version_sorter21/Makefile 461935 2018-02-15 16:59:19Z tz $
 
 PORTNAME=	version_sorter
 PORTVERSION=	2.1.0

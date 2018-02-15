@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/databases/rubygem-redis-namespace15/Makefile 461886 2018-02-15 12:36:27Z tz $
 
 PORTNAME=	redis-namespace
 PORTVERSION=	1.5.3

@@ -1,5 +1,5 @@
 # Created by: Richard Gallamore <ultima@freebsd.org>
-# $FreeBSD: head/devel/youcompleteme/Makefile 461643 2018-02-12 19:49:26Z ultima $
+# $FreeBSD: head/devel/youcompleteme/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 PORTNAME=	YouCompleteMe
 DISTVERSION=	g20180210
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
 RUN_DEPENDS=	vim:editors/vim \
 		${LOCALBASE}/lib/libboost_thread.so:devel/boost-libs \
-		${LOCALBASE}/lib/libboost_python.so:devel/boost-python-libs \
+		${LOCALBASE}/lib/${PY_BOOST} \
 		${PYTHON_PKGNAMEPREFIX}argparse>0:devel/py-argparse@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}bottle>0:www/py-bottle@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}frozendict>0:devel/py-frozendict@${PY_FLAVOR} \

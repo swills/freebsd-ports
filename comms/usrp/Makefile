@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/usrp/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/comms/usrp/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 PORTNAME=	usrp
 PORTVERSION=	3.4.3
@@ -12,7 +12,7 @@ COMMENT=	Ettus Research USRP driver framework
 
 BROKEN=		fails to build with boost 1.66, see bug 224088
 
-LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs
+LIB_DEPENDS=	${PY_BOOST}
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/tuple/tuple.hpp:devel/boost-libs \
 		cheetah-analyze:devel/py-cheetah \
 		rst2html:textproc/py-docutils \

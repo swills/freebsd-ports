@@ -1,24 +1,22 @@
 # Created by: Harshavardhana
-# $FreeBSD: head/sysutils/cmockery2/Makefile 369708 2014-10-01 09:35:15Z tijl $
+# $FreeBSD: head/sysutils/cmockery2/Makefile 461924 2018-02-15 13:51:44Z mat $
 #
 
 PORTNAME=	cmockery2
 PORTVERSION=	1.3.8
+DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
-MASTER_SITES=	https://codeload.github.com/lpabon/cmockery2/tar.gz/
-DISTNAME=	v1.3.8
-EXTRACT_SUFX=
 
 MAINTAINER=	harsha@harshavardhana.net
 COMMENT=	Cmockery2 revival of Cmockery unit test framework from Google
 
 LICENSE=	APACHE20
 
-WRKSRC=		${WRKDIR}/cmockery2-${PORTVERSION}
-
-GNU_CONFIGURE=	yes
 USES=		autoreconf libtool pkgconfig
 USE_LDCONFIG=	yes
+USE_GITHUB=	yes
+GH_ACCOUNT=	lpabon
+GNU_CONFIGURE=	yes
 
 INSTALL_TARGET=	install-strip
 # Disable gcov on FreeBSD

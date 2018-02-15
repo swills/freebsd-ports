@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/www/rubygem-hamlit26/Makefile 461935 2018-02-15 16:59:19Z tz $
 
 PORTNAME=	hamlit
 PORTVERSION=	2.6.2

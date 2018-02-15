@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/devel/rubygem-recursive-open-struct100/Makefile 461935 2018-02-15 16:59:19Z tz $
 
 PORTNAME=	recursive-open-struct
 PORTVERSION=	1.0.0

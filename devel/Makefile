@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 461830 2018-02-14 18:34:32Z yuri $
+# $FreeBSD: head/devel/Makefile 461935 2018-02-15 16:59:19Z tz $
 #
 
     COMMENT = Development utilities
@@ -216,7 +216,6 @@
     SUBDIR += boost-jam
     SUBDIR += boost-libs
     SUBDIR += boost-python-libs
-    SUBDIR += boost-python3-libs
     SUBDIR += boost_build
     SUBDIR += bossa
     SUBDIR += bouml-doc
@@ -5431,10 +5430,10 @@
     SUBDIR += rubygem-filesize
     SUBDIR += rubygem-flexmock
     SUBDIR += rubygem-flipper
-    SUBDIR += rubygem-flipper010
-    SUBDIR += rubygem-flipper011
     SUBDIR += rubygem-flipper-active_support_cache_store
     SUBDIR += rubygem-flipper-active_support_cache_store011
+    SUBDIR += rubygem-flipper010
+    SUBDIR += rubygem-flipper011
     SUBDIR += rubygem-fluent-logger
     SUBDIR += rubygem-fog
     SUBDIR += rubygem-fog-core

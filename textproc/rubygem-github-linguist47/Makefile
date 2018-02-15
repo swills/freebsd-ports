@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/textproc/rubygem-github-linguist47/Makefile 410404 2016-03-06 06:35:54Z sunpoet $
 
 PORTNAME=	github-linguist
 PORTVERSION=	4.7.6
@@ -22,9 +22,10 @@ PORTSCOUT=	limit:^4\.7\.
 # bin/linguist
 CONFLICTS_INSTALL=	qtchooser rubygem-gitlab-linguist rubygem-github-linguist
 
-NOARCH=		yes
+NO_ARCH=	yes
 USES=		gem
 USE_RUBY=	yes
+RUBYGEM_AUTOPLIST=	yes
 
 PLIST_FILES=	bin/git-linguist bin/linguist
 

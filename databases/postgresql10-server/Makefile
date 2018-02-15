@@ -1,5 +1,5 @@
 # Created by: Marc G. Fournier <scrappy@FreeBSD.org>
-# $FreeBSD: head/databases/postgresql10-server/Makefile 461263 2018-02-08 19:58:22Z antoine $
+# $FreeBSD: head/databases/postgresql10-server/Makefile 461928 2018-02-15 14:41:29Z brnrd $
 
 PORTNAME?=	postgresql
 DISTVERSION?=	10.2
@@ -218,10 +218,6 @@ CONFIGURE_ARGS+=--with-krb5
 
 # For testing files in FILESDIR
 .include <bsd.port.pre.mk>
-
-.if ${PORT_OPTIONS:MSSL} && ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
 
 .if defined(SERVER_ONLY)
 pre-build:

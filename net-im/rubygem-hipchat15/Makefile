@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/net-im/rubygem-hipchat15/Makefile 461935 2018-02-15 16:59:19Z tz $
 
 PORTNAME=	hipchat
 PORTVERSION=	1.5.4

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-rails-i18n/Makefile 447386 2017-08-05 03:25:17Z jrm $
+# $FreeBSD: head/devel/rubygem-rails-i18n/Makefile 461906 2018-02-15 12:47:11Z sunpoet $
 
 PORTNAME=	rails-i18n
-PORTVERSION=	5.0.4
+PORTVERSION=	5.1.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -15,7 +15,6 @@ RUN_DEPENDS=	rubygem-i18n>=0.7:devel/rubygem-i18n \
 		rubygem-railties5>=5.0:www/rubygem-railties5
 
 NO_ARCH=	yes
-
 USE_RUBY=	yes
 USES=		gem
 

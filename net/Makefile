@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/net/Makefile 461936 2018-02-15 17:05:45Z tcberner $
 #
 
     COMMENT = Networking tools
@@ -308,6 +308,7 @@
     SUBDIR += kdenetwork-filesharing-kde4
     SUBDIR += kdenetwork-strigi-analyzers-kde4
     SUBDIR += kea
+    SUBDIR += kf5-kholidays
     SUBDIR += kf5-kxmlrpcclient
     SUBDIR += kget
     SUBDIR += kio-upnp-ms
@@ -1160,6 +1161,7 @@
     SUBDIR += rubygem-amqp
     SUBDIR += rubygem-amqp-utils
     SUBDIR += rubygem-asset_sync
+    SUBDIR += rubygem-asset_sync220
     SUBDIR += rubygem-aws-s3
     SUBDIR += rubygem-aws-ses
     SUBDIR += rubygem-azure

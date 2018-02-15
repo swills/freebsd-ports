@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/devel/rubygem-flipper011/Makefile 461920 2018-02-15 12:48:44Z tz $
 
 PORTNAME=	flipper
 PORTVERSION=	0.11.0

@@ -1,5 +1,5 @@
 # Created by: Willem Jan Withagen <wjw@digiware.nl>
-# $FreeBSD: head/net/ceph/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/net/ceph/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 PORTNAME=	ceph
 DISTVERSIONPREFIX=	v
@@ -24,7 +24,7 @@ BUILD_DEPENDS=	\
 	gperf:devel/gperf \
 	${LOCALBASE}/lib/libatomic_ops.a:devel/libatomic_ops
 LIB_DEPENDS=	\
-	libboost_python.so:devel/boost-python-libs \
+	${PY_BOOST} \
 	libboost_thread.so:devel/boost-libs \
 	libleveldb.so:databases/leveldb \
 	libldap.so:net/openldap24-client \

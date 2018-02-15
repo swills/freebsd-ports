@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/devel/rubygem-ruby-prof016/Makefile 461935 2018-02-15 16:59:19Z tz $
 
 PORTNAME=	ruby-prof
 PORTVERSION=	0.16.2

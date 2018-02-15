@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/cadabra2/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/math/cadabra2/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 PORTNAME=	cadabra2
 DISTVERSION=	2.1.6
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/doc/license.txt
 PATCH_DEPENDS=	${NONEXISTENT}:devel/boost-libs:extract \
 		${NONEXISTENT}:devel/websocketpp:extract
 BUILD_DEPENDS=	${LOCALBASE}/include/websocketpp/client.hpp:devel/websocketpp
-LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs \
+LIB_DEPENDS=	${PY_BOOST} \
 		libboost_system.so:devel/boost-libs \
 		libpcrecpp.so:devel/pcre \
 		libjsoncpp.so:devel/jsoncpp \

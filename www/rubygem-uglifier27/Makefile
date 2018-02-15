@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/www/rubygem-uglifier27/Makefile 461935 2018-02-15 16:59:19Z tz $
 
 PORTNAME=	uglifier
 PORTVERSION=	2.7.2

@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/www/rubygem-addressable23/Makefile 461935 2018-02-15 16:59:19Z tz $
 
 PORTNAME=	addressable
 PORTVERSION=	2.3.8

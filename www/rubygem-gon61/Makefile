@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/www/rubygem-gon61/Makefile 461935 2018-02-15 16:59:19Z tz $
 
 PORTNAME=	gon
 PORTVERSION=	6.1.0

@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/security/rubygem-omniauth-shibboleth12/Makefile 461935 2018-02-15 16:59:19Z tz $
 
 PORTNAME=	omniauth-shibboleth
 PORTVERSION=	1.2.1

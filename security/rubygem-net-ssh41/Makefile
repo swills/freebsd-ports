@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/security/rubygem-net-ssh41/Makefile 461935 2018-02-15 16:59:19Z tz $
 
 PORTNAME=	net-ssh
 PORTVERSION=	4.1.0

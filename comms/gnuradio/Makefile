@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/gnuradio/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/comms/gnuradio/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 PORTNAME=	gnuradio
 PORTVERSION=	3.7.10.1
@@ -27,7 +27,7 @@ LIB_DEPENDS=	libcppunit.so:devel/cppunit \
 		libfftw3.so:math/fftw3 \
 		libfftw3f.so:math/fftw3-float \
 		libqwt.so:x11-toolkits/qwt5 \
-		libboost_python.so:devel/boost-python-libs \
+		${PY_BOOST} \
 		libportaudio.so:audio/portaudio \
 		libjack.so:audio/jack \
 		libasound.so:audio/alsa-lib \

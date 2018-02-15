@@ -1,5 +1,5 @@
 # Created by: Andy Pavlo
-# $FreeBSD: head/sysutils/condor/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/sysutils/condor/Makefile 461885 2018-02-15 12:34:49Z mat $
 #
 # Note: Make sure there are no older versions of HTCondor installed during
 #       build.  The build system may pick up incompatible headers and libs.
@@ -20,7 +20,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE-2.0.txt
 LIB_DEPENDS+=	libkrb5support.so:security/krb5 \
 		libpcre.so:devel/pcre \
 		libcurl.so:ftp/curl \
-		libboost_python.so:devel/boost-python-libs \
+		${PY_BOOST} \
 		libexpat.so:textproc/expat2
 
 WRKSRC=		${WRKDIR}/condor-${PORTVERSION}

@@ -1,5 +1,5 @@
 # Created by: cartola (Carlos E. G. Carvalho)
-# $FreeBSD: head/graphics/vigra/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/graphics/vigra/Makefile 461885 2018-02-15 12:34:49Z mat $
 
 PORTNAME=	vigra
 DISTVERSION=	1.11.0
@@ -49,7 +49,7 @@ NUMPY_BUILD_DEPENDS=	nosetests:devel/py-nose \
 			f2py:math/py-numpy
 NUMPY_RUN_DEPENDS=	nosetests:devel/py-nose \
 			f2py:math/py-numpy
-NUMPY_LIB_DEPENDS=	libboost_python.so:devel/boost-python-libs
+NUMPY_LIB_DEPENDS=	${PY_BOOST}
 # On FreeBSD < 11 libc++ lacks support for sized delete operators.
 # GCC dropped the builtin version of these operators in 6+ by
 # defaulting to gnu++14. Force c++11 instead.

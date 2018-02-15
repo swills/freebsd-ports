@@ -1,5 +1,5 @@
 # Created by: Mike Heffner <mikeh@FreeBSD.org>
-# $FreeBSD: head/comms/lirc/Makefile 460716 2018-02-02 16:45:55Z amdmi3 $
+# $FreeBSD: head/comms/lirc/Makefile 461927 2018-02-15 14:35:58Z amdmi3 $
 
 PORTNAME=	lirc
 PORTVERSION=	0.9.0
@@ -45,6 +45,7 @@ MINIMAL_CONFIGURE_ON=	--with-driver=dvico
 DEBUG_CONFIGURE_ENABLE=	debug
 
 SMODE2_LIB_DEPENDS=	libvga.so:graphics/svgalib
+SMODE2_PLIST_FILES=	bin/smode2
 
 UARTLIRC_RUN_DEPENDS=	uartlirc>=0.3:comms/uartlirc
 

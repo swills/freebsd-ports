@@ -1,9 +1,7 @@
-# $FreeBSD$
+# $FreeBSD: head/www/rubygem-unicorn51/Makefile 461935 2018-02-15 16:59:19Z tz $
 
 PORTNAME=	unicorn
-#PORTVERSION=	5.1.0.4
 PORTVERSION=	5.1.0
-#DISTNAME=	${PORTNAME}-${PORTVERSION}.gd5fbb
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	51

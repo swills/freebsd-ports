@@ -1,8 +1,9 @@
 # Created by: Sergei Kolobov <sergei@kolobov.com>
-# $FreeBSD: head/mail/mailfront/Makefile 436931 2017-03-26 04:49:52Z araujo $
+# $FreeBSD: head/mail/mailfront/Makefile 461926 2018-02-15 14:30:23Z amdmi3 $
 
 PORTNAME=	mailfront
 PORTVERSION=	2.12
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://untroubled.org/${PORTNAME}/ \
 		http://untroubled.org/${PORTNAME}/archive/

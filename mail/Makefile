@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 460376 2018-01-30 09:10:30Z jrm $
+# $FreeBSD: head/mail/Makefile 461935 2018-02-15 16:59:19Z tz $
 #
 
     COMMENT = Electronic mail utilities
