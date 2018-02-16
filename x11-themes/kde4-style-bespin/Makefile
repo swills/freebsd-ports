@@ -1,5 +1,5 @@
 # Created by: Steve Wills <steve@mouf.net>
-# $FreeBSD: head/x11-themes/kde4-style-bespin/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/x11-themes/kde4-style-bespin/Makefile 461947 2018-02-15 19:38:35Z tcberner $
 
 PORTNAME=	bespin
 PORTVERSION=	201303202227
@@ -17,6 +17,7 @@ LICENSE=	LGPL21
 WRKSRC=		${WRKDIR}/cloudcity
 
 USES=		cmake:noninja kde:4
+USE_CXXSTD=	gnu++98
 USE_KDE=	kdelibs automoc4 workspace
 USE_QT4=	corelib qmake_build moc_build rcc_build uic_build
 

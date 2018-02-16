@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/www/Makefile 461969 2018-02-16 03:03:45Z swills $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -211,6 +211,7 @@
     SUBDIR += gnome-web-photo
     SUBDIR += go-fasthttp
     SUBDIR += go-www
+    SUBDIR += gobuffalo
     SUBDIR += gohugo
     SUBDIR += google-appengine
     SUBDIR += google-sitemapgen

@@ -1,5 +1,5 @@
 # Created by: paulo@isr.uc.pt
-# $FreeBSD: head/graphics/povray36/Makefile 439778 2017-04-30 00:44:32Z linimon $
+# $FreeBSD: head/graphics/povray36/Makefile 461943 2018-02-15 18:37:42Z tcberner $
 
 PORTNAME=	povray
 PORTVERSION=	3.6.1
@@ -22,6 +22,7 @@ BROKEN_powerpc64=	Does not build: error: 64 bit CPU required
 USE_XORG=	x11
 USES=		gmake jpeg tar:bzip2
 GNU_CONFIGURE=	yes
+USE_CXXSTD=	gnu++98
 
 OPTIONS_DEFINE=	OPTIMIZED_CFLAGS DOCS
 

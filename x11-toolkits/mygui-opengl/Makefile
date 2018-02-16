@@ -1,7 +1,7 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/mygui-opengl/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11-toolkits/mygui-opengl/Makefile 462002 2018-02-16 11:51:37Z amdmi3 $
 
-PORTREVISION=	1
+PORTREVISION=	2
 PKGNAMESUFFIX=	-opengl
 
 COMMENT=	OpenGL renderer for MyGUI

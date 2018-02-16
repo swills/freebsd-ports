@@ -1,5 +1,5 @@
 # Created by: Joseph S. Atkinson <jsa@wickedmachine.net>
-# $FreeBSD: head/x11-fonts/ecofont/Makefile 381876 2015-03-21 23:05:19Z bapt $
+# $FreeBSD: head/x11-fonts/ecofont/Makefile 461993 2018-02-16 09:02:58Z amdmi3 $
 
 PORTNAME=	ecofont
 PORTVERSION=	2.05
@@ -11,8 +11,13 @@ DISTNAME=	ecofont_vera_sans_regular
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Environmentally friendly, ink saving typeface
 
+LICENSE=	NONE
+
+BROKEN=		unfetchable
+
 USES=		fonts zip
 NO_BUILD=	yes
+NO_ARCH=	yes
 
 PLIST_FILES=	${FONTSDIR}/${ECOFONT}
 

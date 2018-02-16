@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/qbs/Makefile 457306 2017-12-26 18:45:20Z tcberner $
+# $FreeBSD: head/devel/qbs/Makefile 461938 2018-02-15 17:42:10Z tcberner $
 
 PORTNAME=	qbs
 DISTVERSIONPREFIX=	src-
-DISTVERSION=	1.10.0
+DISTVERSION=	1.10.1
 CATEGORIES=	devel
 MASTER_SITES=	QT/official_releases/${PORTNAME}/${PORTVERSION}
 DIST_SUBDIR=	KDE/Qt/qbs

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/picard-plugins/Makefile 461879 2018-02-15 11:15:33Z jhale $
+# $FreeBSD: head/audio/picard-plugins/Makefile 462005 2018-02-16 12:14:39Z jhale $
 
 PORTNAME=	picard-plugins
 PORTVERSION=	1.0.20180211
@@ -15,6 +15,8 @@ USES=		python:2.7
 USE_GITHUB=	yes
 GH_ACCOUNT=	metabrainz
 GH_TAGNAME=	7d0cf37
+
+PORTSCOUT=	limit:^1\.
 
 NO_ARCH=	yes
 SUB_FILES=	pkg-message

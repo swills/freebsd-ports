@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-p2p/go-ethereum/Makefile 455345 2017-12-02 11:08:41Z riggs $
+# $FreeBSD: head/net-p2p/go-ethereum/Makefile 461949 2018-02-15 21:04:19Z zeising $
 
 PORTNAME=	go-ethereum
-PORTVERSION=	1.7.3
+PORTVERSION=	1.8.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-p2p
 
@@ -11,7 +11,7 @@ COMMENT=	Go implementation of the Ethereum y/w paper
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	go:lang/go
+BUILD_DEPENDS=	go>=1.9.2:lang/go
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	ethereum

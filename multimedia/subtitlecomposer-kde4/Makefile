@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/subtitlecomposer-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/multimedia/subtitlecomposer-kde4/Makefile 461944 2018-02-15 18:41:19Z tcberner $
 
 PORTNAME=	subtitlecomposer
 PORTVERSION=	0.5.7
@@ -14,6 +14,7 @@ LIB_DEPENDS=	libicui18n.so:devel/icu
 USES=		cmake:outsource gettext kde:4 shared-mime-info
 USE_KDE=	kdelibs automoc4
 USE_QT4=	qmake_build moc_build rcc_build uic_build phonon
+USE_CXXSTD=	gnu++98
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	maxrd2

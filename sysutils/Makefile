@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 461821 2018-02-14 17:10:36Z pi $
+# $FreeBSD: head/sysutils/Makefile 461989 2018-02-16 08:45:58Z dteske $
 #
 
     COMMENT = System utilities
@@ -400,6 +400,7 @@
     SUBDIR += geomWatch
     SUBDIR += getdelta
     SUBDIR += geteltorito
+    SUBDIR += getssl
     SUBDIR += gigolo
     SUBDIR += gkfreq
     SUBDIR += gkleds2

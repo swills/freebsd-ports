@@ -1,8 +1,9 @@
 # Created by: adamw
-# $FreeBSD: head/multimedia/x265/Makefile 461535 2018-02-11 22:48:33Z madpilot $
+# $FreeBSD: head/multimedia/x265/Makefile 461951 2018-02-15 22:13:52Z madpilot $
 
 PORTNAME=	x265
 PORTVERSION=	2.6
+PORTREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://ftp.videolan.org/pub/videolan/${PORTNAME}/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -34,7 +35,7 @@ HI12P_DESC=	Enable HI12P Support (64-bit only)
 OPTIMIZED_FLAGS_DESC=	Enable O3 optimization
 
 USE_LDCONFIG=	yes
-CMAKE_ARGS=	-DPLATFORM_LIBS=md -DENABLE_TESTS=on
+CMAKE_ARGS=	-DENABLE_PIC=on -DPLATFORM_LIBS=md -DENABLE_TESTS=on
 CFLAGS_mips=	-DNO_ATOMICS # cannot use lang/gcc
 CFLAGS_mips64=	-DNO_ATOMICS # cannot use lang/gcc
 EXTRACT_AFTER_ARGS+=	--exclude "md5*"

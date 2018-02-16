@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/acme.sh/Makefile 458941 2018-01-13 20:47:24Z dvl $
+# $FreeBSD: head/security/acme.sh/Makefile 461958 2018-02-15 22:55:28Z dvl $
 
 PORTNAME=	acme.sh
-PORTVERSION=	2.7.5
-PORTREVISION=	2
+PORTVERSION=	2.7.6
+PORTREVISION=	1
 CATEGORIES=	security
 
 MAINTAINER=	dvl@FreeBSD.org
@@ -22,7 +22,7 @@ OPTIONS_SINGLE_HTTP=	CURL WGET
 OPTIONS_DEFAULT=	CURL STANDALONE
 BINDTOOLS_DESC=	Depend on bind-tools for nsupdate
 BINDTOOLS_RUN_DEPENDS=	${LOCALBASE}/bin/nsupdate:dns/bind-tools
-STANDALONE_DESC=	Standalone mode requres SOCAT
+STANDALONE_DESC=	Standalone mode requires SOCAT
 STANDALONE_RUN_DEPENDS=	socat>0:net/socat
 
 CURL_DESC=	Depend on cURL for HTTP(S) queries

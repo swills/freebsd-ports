@@ -1,8 +1,8 @@
 # Created by: Lars Erik Gullerud <lerik@nolink.net>
-# $FreeBSD: head/net/py-radix/Makefile 417751 2016-06-28 23:56:49Z wen $
+# $FreeBSD: head/net/py-radix/Makefile 461962 2018-02-16 01:42:02Z swills $
 
 PORTNAME=	radix
-PORTVERSION=	0.9.6
+PORTVERSION=	0.10.0
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,5 +16,8 @@ LICENSE_COMB=	dual
 
 USES=		python
 USE_PYTHON=	distutils autoplist
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/${PORTNAME}/_${PORTNAME}.so
 
 .include <bsd.port.mk>
