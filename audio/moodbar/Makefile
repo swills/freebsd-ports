@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/moodbar/Makefile 461868 2018-02-15 08:51:05Z jhale $
+# $FreeBSD: head/audio/moodbar/Makefile 462003 2018-02-16 11:55:08Z jhale $
 
 PORTNAME=	moodbar
-PORTVERSION=	0.0.1.20171217
+PORTVERSION=	1.0
+DISTVERSIONPREFIX=	v
 CATEGORIES=	audio
 
 MAINTAINER=	jhale@FreeBSD.org
@@ -16,7 +17,6 @@ USES=		compiler:c++14-lang meson pkgconfig
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	exaile
-GH_TAGNAME=	5d31ce4
 
 USE_GNOME=	glib20
 USE_GSTREAMER1=	yes good ogg vorbis

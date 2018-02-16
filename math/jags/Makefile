@@ -1,9 +1,8 @@
 # Created by: Eric van Gyzen <vangyzen@stat.duke.edu>
-# $FreeBSD: head/math/jags/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/jags/Makefile 461995 2018-02-16 09:46:31Z yuri $
 
 PORTNAME=	mcmc-jags
-PORTVERSION=	4.2.0
-PORTREVISION=	3
+DISTVERSION=	4.3.0
 CATEGORIES=	math
 MASTER_SITES=	SF/mcmc-jags/JAGS/${S}.x/Source/:1 \
 		SF/mcmc-jags/Examples/${S}.x/:2 \
@@ -17,6 +16,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Just Another Gibbs Sampler
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+LIB_DEPENDS=	libltdl.so:devel/libltdl
 
 GNU_CONFIGURE=	yes
 USES=		bison compiler:features fortran gmake libtool localbase pathfix

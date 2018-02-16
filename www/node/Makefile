@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/node/Makefile 461241 2018-02-08 14:29:36Z bhughes $
+# $FreeBSD: head/www/node/Makefile 461971 2018-02-16 03:16:50Z jhibbits $
 
 PORTNAME=	node
 PORTVERSION=	9.5.0
@@ -12,7 +12,7 @@ COMMENT=	V8 JavaScript for client and server
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-ONLY_FOR_ARCHS=		aarch64 amd64 armv6 armv7 i386
+ONLY_FOR_ARCHS=		aarch64 amd64 armv6 armv7 i386 powerpc64
 
 OPTIONS_DEFINE=	BUNDLED_SSL DOCS NLS DTRACE
 OPTIONS_DEFAULT=DTRACE

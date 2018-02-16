@@ -1,8 +1,8 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/graphics/libraw/Makefile 450936 2017-09-29 20:12:38Z jhale $
+# $FreeBSD: head/graphics/libraw/Makefile 461940 2018-02-15 17:46:56Z jhale $
 
 PORTNAME=	libraw
-PORTVERSION=	0.18.5
+PORTVERSION=	0.18.7
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.libraw.org/data/
 DISTNAME=	LibRaw-${PORTVERSION}
@@ -56,6 +56,9 @@ OPENMP_CONFIGURE_ENABLE=		openmp
 OPENMP_USES=				compiler:openmp
 
 OPTIMIZED_CFLAGS_CFLAGS=		-O3
+
+post-patch:
+	@${REINPLACE_CMD} -e 's|-lstdc++||g' ${WRKSRC}/*.pc.in
 
 # Use "\*" instead of "." in COPYTREE_SHARE commands as "." has
 # the undesired effect of copying ".deps" directory

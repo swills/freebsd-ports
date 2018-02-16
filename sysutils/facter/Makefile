@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/facter/Makefile 461783 2018-02-14 12:17:44Z romain $
+# $FreeBSD: head/sysutils/facter/Makefile 461985 2018-02-16 08:32:23Z romain $
 
 PORTNAME=	facter
-PORTVERSION=	3.9.5
+PORTVERSION=	3.10.0
 CATEGORIES?=	sysutils
 MASTER_SITES=	http://downloads.puppetlabs.com/facter/
 
@@ -19,8 +19,9 @@ BROKEN_powerpc64=	fails to compile: collection.cc: 'stoi' was not declared in th
 CONFLICTS_INSTALL=	rubygem-facter-2*
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
-		liblibcpp-hocon.so:devel/cpp-hocon \
+		libcurl.so:ftp/curl \
 		libleatherman_locale.so:devel/leatherman \
+		liblibcpp-hocon.so:devel/cpp-hocon \
 		libyaml-cpp.so:devel/yaml-cpp
 
 PLIST_SUB=	PORTVERSION="${PORTVERSION}"

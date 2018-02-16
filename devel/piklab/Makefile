@@ -1,5 +1,5 @@
 # Created by: Michael Nottebrock <lofi@kiste>
-# $FreeBSD: head/devel/piklab/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/devel/piklab/Makefile 461942 2018-02-15 18:37:09Z tcberner $
 
 PORTNAME=	piklab
 PORTVERSION=	0.16.2
@@ -16,6 +16,7 @@ DOS2UNIX_FILES=	cmake/Piklab.cmake
 USE_QT4=	corelib gui qt3support qtestlib xml \
 		moc_build qmake_build rcc_build uic_build
 USES=		cmake gettext readline dos2unix tar:bzip2
+USE_CXXSTD=	gnu++98
 
 OPTIONS_DEFINE=	KDE4
 OPTIONS_DEFAULT=	KDE4

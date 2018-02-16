@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/relx/Makefile 460943 2018-02-04 17:25:29Z olgeni $
+# $FreeBSD: head/devel/relx/Makefile 461956 2018-02-15 22:43:42Z olgeni $
 
 PORTNAME=	relx
-PORTVERSION=	3.24.4
+PORTVERSION=	3.24.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 MASTER_SITES+=	LOCAL/olgeni:deps \

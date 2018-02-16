@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/sslsplit/Makefile 459109 2018-01-15 18:37:42Z swills $
+# $FreeBSD: head/security/sslsplit/Makefile 461976 2018-02-16 03:55:32Z swills $
 
 PORTNAME=	sslsplit
-PORTVERSION=	0.5.1
+PORTVERSION=	0.5.2
 CATEGORIES=	security
 MASTER_SITES=	http://mirror.roe.ch/rel/sslsplit/
 

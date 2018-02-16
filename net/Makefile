@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 461936 2018-02-15 17:05:45Z tcberner $
+# $FreeBSD: head/net/Makefile 461968 2018-02-16 03:01:42Z swills $
 #
 
     COMMENT = Networking tools
@@ -196,6 +196,7 @@
     SUBDIR += google-startup-scripts
     SUBDIR += googlecl
     SUBDIR += gopher
+    SUBDIR += goreplay
     SUBDIR += gotthard
     SUBDIR += gq
     SUBDIR += grdesktop
@@ -1109,7 +1110,6 @@
     SUBDIR += qt5-network
     SUBDIR += qtweetlib
     SUBDIR += quagga
-    SUBDIR += quagga-esr
     SUBDIR += queso
     SUBDIR += quiterss
     SUBDIR += quoted
