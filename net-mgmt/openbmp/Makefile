@@ -1,9 +1,10 @@
 # Created by: Luca Pizzamiglio <pizzamig@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/openbmp/Makefile 449905 2017-09-15 14:17:03Z pizzamig $
+# $FreeBSD: head/net-mgmt/openbmp/Makefile 462092 2018-02-17 10:12:29Z madpilot $
 
 PORTNAME=	openbmp
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.13.0
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	pizzamig@FreeBSD.org
@@ -12,6 +13,7 @@ COMMENT=	OpenBMP Server Collector
 LICENSE=	EPL
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BUILD_DEPENDS=	${LOCALBASE}/include/boost/exception/all.hpp:devel/boost-libs
 LIB_DEPENDS=	librdkafka.so:net/librdkafka \
 				libsasl2.so:security/cyrus-sasl2 \
 				libyaml-cpp.so:devel/yaml-cpp

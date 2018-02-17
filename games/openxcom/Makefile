@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/openxcom/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/openxcom/Makefile 462092 2018-02-17 10:12:29Z madpilot $
 
 PORTNAME=	openxcom
 PORTVERSION=	1.0
@@ -22,6 +22,7 @@ GH_ACCOUNT=	SupSuper
 GH_PROJECT=	OpenXcom
 
 USES=		compiler:c++11-lang gmake pkgconfig
+USE_CXXSTD=	c++11
 USE_SDL=	sdl mixer image gfx
 USE_GL=		gl
 
