@@ -1,5 +1,5 @@
 # Created by: Valery Komarov <komarov@valerka.net>
-# $FreeBSD: head/devel/thrift-cpp/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/devel/thrift-cpp/Makefile 462052 2018-02-16 18:35:03Z brnrd $
 
 PORTNAME=	thrift
 PORTVERSION=	${THRIFT_PORTVERSION} # to keep in sync with thrift
@@ -19,6 +19,8 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 DISTINFO_FILE=		${.CURDIR}/../thrift/distinfo
 
 BROKEN_powerpc64=	fails to compile: undefined reference to std::__throw_out_of_range_fmt
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	'configure: error: "Error: libcrypto required."'
 
 USES=			autoreconf pkgconfig gmake compiler:c++11-lang \
 			libtool pathfix ssl
@@ -54,10 +56,6 @@ CFLAGS+=	-I${OPENSSLINC}
 
 .if ${COMPILER_TYPE} == clang
 USE_CXXSTD=	c++11
-.endif
-
-.if ${SSL_DEFAULT} == openssl-devel
-BROKEN=		cannot find libcrypto
 .endif
 
 post-install:

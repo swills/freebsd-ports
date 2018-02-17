@@ -1,5 +1,5 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/devel/gnome-vfs/Makefile 457024 2017-12-23 07:03:21Z antoine $
+# $FreeBSD: head/devel/gnome-vfs/Makefile 462052 2018-02-16 18:35:03Z brnrd $
 
 PORTNAME=	gnome-vfs
 PORTVERSION=	2.24.4
@@ -15,6 +15,9 @@ LICENSE=	LGPL20 LGPL20+  # dbus-utils.c is LGPL20 only
 LICENSE_COMB=	multi
 LICENSE_FILE_LGPL20=	${WRKSRC}/COPYING.LIB
 LICENSE_FILE_LGPL20+ =	${WRKSRC}/COPYING.LIB
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	incomplete definition of type 'struct ssl_st'
 
 USES=		tar:bzip2
 

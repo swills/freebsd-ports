@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/trustedqsl/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/comms/trustedqsl/Makefile 462050 2018-02-16 17:52:50Z brnrd $
 
 PORTNAME=	trustedqsl
 PORTVERSION=	2.2.1
@@ -15,6 +15,9 @@ LICENSE=	ARRL
 LICENSE_NAME=	American Radio Relay League, Inc. All rights reserved.
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 LICENSE_PERMS=	dist-mirror pkg-mirror auto-accept
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	member access into incomplete type 'EVP_PKEY' (aka 'evp_pkey_st')
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libexpat.so:textproc/expat2

@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-sexp_processor/Makefile 446165 2017-07-18 17:56:05Z sunpoet $
+# $FreeBSD: head/devel/rubygem-sexp_processor/Makefile 462038 2018-02-16 15:43:10Z sunpoet $
 
 PORTNAME=	sexp_processor
-PORTVERSION=	4.10.0
+PORTVERSION=	4.10.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

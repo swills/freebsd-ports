@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/devel/Makefile 462080 2018-02-17 01:26:35Z jhale $
 #
 
     COMMENT = Development utilities
@@ -885,6 +885,7 @@
     SUBDIR += gwenhywfar
     SUBDIR += gwenhywfar-fox16
     SUBDIR += gwenhywfar-gtk2
+    SUBDIR += gwenhywfar-gtk3
     SUBDIR += gwenhywfar-qt4
     SUBDIR += gwenhywfar-qt5
     SUBDIR += gzstream
@@ -5209,6 +5210,7 @@
     SUBDIR += ragel
     SUBDIR += raknet
     SUBDIR += rapidjson
+    SUBDIR += raylib
     SUBDIR += rbenv
     SUBDIR += rbtools
     SUBDIR += rclint

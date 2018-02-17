@@ -1,20 +1,22 @@
-# $FreeBSD: head/sysutils/luckybackup/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/luckybackup/Makefile 462023 2018-02-16 15:27:55Z jhale $
 
 PORTNAME=	luckybackup
-PORTVERSION=	0.4.8
-PORTREVISION=	1
+PORTVERSION=	0.4.9
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}/source
 
 MAINTAINER=	jhale@FreeBSD.org
-COMMENT=	QT4 frontend to the backup utility rsync
+COMMENT=	Qt frontend to the backup utility rsync
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/license/gpl.txt
 
 RUN_DEPENDS=	rsync:net/rsync
 
 USES=		qmake
-USE_QT4=	gui network moc_build rcc_build uic_build
+
+USE_GL=		gl
+USE_QT5=	core gui network widgets buildtools_build
 
 post-patch:
 	${REINPLACE_CMD} -e 's|/usr|$$$${PREFIX}|g' -e '/INSTALLS/s|debianmenu ||' \
@@ -25,7 +27,7 @@ post-patch:
 	${REINPLACE_CMD} -e 's|/usr|${LOCALBASE}|g' \
 		${WRKSRC}/src/executenow.cpp
 	${REINPLACE_CMD} -e 's|/usr|${PREFIX}|g' \
-		${WRKSRC}/src/global.h \
+		${WRKSRC}/src/global.cpp \
 		${WRKSRC}/src/scheduleDialog.cpp
 
 .include <bsd.port.mk>

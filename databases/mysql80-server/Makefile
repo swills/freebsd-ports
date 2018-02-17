@@ -1,5 +1,5 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/databases/mysql80-server/Makefile 461219 2018-02-08 12:45:56Z mmokhi $
+# $FreeBSD: head/databases/mysql80-server/Makefile 462050 2018-02-16 17:52:50Z brnrd $
 
 PORTNAME?=		mysql
 PORTVERSION=		8.0.2
@@ -14,6 +14,9 @@ MAINTAINER=		mmokhi@FreeBSD.org
 COMMENT?=		Multithreaded SQL database (server)
 
 LICENSE=		GPLv2
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	member access into incomplete type 'DH' (aka 'dh_st')
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}${DISTVERSIONSUFFIX}
 

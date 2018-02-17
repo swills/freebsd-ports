@@ -1,8 +1,8 @@
 # Created by: Michael Johnson <ahze@ahze.net>
-# $FreeBSD: head/math/convertall/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/math/convertall/Makefile 462078 2018-02-17 01:08:32Z jhale $
 
 PORTNAME=	convertall
-PORTVERSION=	0.6.1
+PORTVERSION=	0.7.3
 CATEGORIES=	math
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 
@@ -12,8 +12,10 @@ COMMENT=	Another unit converter
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/doc/LICENSE
 
-USES=		pyqt:4 python:3.3+
-USE_PYQT=	core gui
+USES=		pyqt:5 python:3.4+ shebangfix
+USE_PYQT=	core gui widgets sip
+
+SHEBANG_FILES=	source/convertall.py
 
 CONFIGURE_ARGS=	-p ${PREFIX} -d ${DOCSDIR} -i ${DATADIR}/icons -b ${STAGEDIR}
 NO_ARCH=	yes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mongodb34-tools/Makefile 451834 2017-10-12 09:06:17Z mat $
+# $FreeBSD: head/databases/mongodb34-tools/Makefile 462050 2018-02-16 17:52:50Z brnrd $
 
 PORTNAME=	mongodb34-tools
 PORTVERSION=	3.4.9
@@ -9,6 +9,11 @@ MAINTAINER=	numisemis@yahoo.com
 COMMENT=	Tools for MongoDB
 
 LICENSE=	APACHE20
+
+BROKEN_SSL=	openssl-devel libressl libressl-devel
+BROKEN_SSL_REASON_openssl-devel=	variable has incomplete type 'BIO_METHOD' (aka 'struct bio_method_st')
+BROKEN_SSL_REASON_libressl=		could not determine kind of name for C.EVP_sha
+BROKEN_SSL_REASON_libressl-devel=	${BROKEN_SSL_REASON_libressl}
 
 BUILD_DEPENDS=	go>0:lang/go
 

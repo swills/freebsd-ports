@@ -1,5 +1,5 @@
 # Created by: Mikhail Teterin <mi@aldan.algebra.com>
-# $FreeBSD: head/devel/tcl-trf/Makefile 421879 2016-09-11 21:55:29Z marino $
+# $FreeBSD: head/devel/tcl-trf/Makefile 462052 2018-02-16 18:35:03Z brnrd $
 
 PORTNAME=	Trf
 PORTVERSION=	2.1.4
@@ -11,6 +11,9 @@ DISTNAME=	trf${PORTVERSION}
 
 MAINTAINER=	mi@aldan.algebra.com
 COMMENT=	Data conversion, digests, compression, error-correction for Tcl
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	use of undeclared identifier 'SHA_Init'
 
 ALL_TARGET=	all
 

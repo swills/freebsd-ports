@@ -1,8 +1,8 @@
 # Created by: rpsfa@rit.edu
-# $FreeBSD: head/devel/rubygem-simple_form/Makefile 441146 2017-05-18 11:44:01Z jrm $
+# $FreeBSD: head/devel/rubygem-simple_form/Makefile 462039 2018-02-16 15:43:16Z sunpoet $
 
 PORTNAME=	simple_form
-PORTVERSION=	3.5.0
+PORTVERSION=	3.5.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,8 +1,8 @@
 # Created by: René Ladan <rene@freebsd.org>
-# $FreeBSD: head/sysutils/py-scandir/Makefile 450995 2017-09-30 14:45:58Z rene $
+# $FreeBSD: head/sysutils/py-scandir/Makefile 462056 2018-02-16 19:31:07Z rene $
 
 PORTNAME=	scandir
-PORTVERSION=	1.6
+PORTVERSION=	1.7
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

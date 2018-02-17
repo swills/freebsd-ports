@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/hadoop2/Makefile 444916 2017-07-03 07:40:16Z demon $
+# $FreeBSD: head/devel/hadoop2/Makefile 462052 2018-02-16 18:35:03Z brnrd $
 
 # Please do not submit untested updates.  Be sure to start hadoop in
 # distributed mode and to run few map/reduce.  Be sure there are no exception
@@ -23,6 +23,9 @@ MAINTAINER=	demon@FreeBSD.org
 COMMENT=	Apache Map/Reduce framework
 
 LICENSE=	APACHE20
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	incomplete definition of type 'struct evp_cipher_ctx_st'
 
 BUILD_DEPENDS=	${LOCALBASE}/share/java/maven3/bin/mvn:devel/maven3 \
 		cmake:devel/cmake \

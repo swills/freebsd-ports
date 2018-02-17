@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 461989 2018-02-16 08:45:58Z dteske $
+# $FreeBSD: head/sysutils/Makefile 462057 2018-02-16 19:36:57Z rakuco $
 #
 
     COMMENT = System utilities
@@ -536,7 +536,7 @@
     SUBDIR += kldfind
     SUBDIR += kldpatch
     SUBDIR += knutclient-kde4
-    SUBDIR += krename-kde4
+    SUBDIR += krename
     SUBDIR += kshutdown-kde4
     SUBDIR += ksysguardd
     SUBDIR += ksystemlog

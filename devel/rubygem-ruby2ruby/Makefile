@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@rtfm.jp>
-# $FreeBSD: head/devel/rubygem-ruby2ruby/Makefile 446166 2017-07-18 17:56:11Z sunpoet $
+# $FreeBSD: head/devel/rubygem-ruby2ruby/Makefile 462037 2018-02-16 15:43:05Z sunpoet $
 
 PORTNAME=	ruby2ruby
-PORTVERSION=	2.4.0
+PORTVERSION=	2.4.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

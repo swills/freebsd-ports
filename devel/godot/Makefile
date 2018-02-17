@@ -1,5 +1,5 @@
 # Created by: Shane Ambler <FreeBSD@Shaneware.biz>
-# $FreeBSD: head/devel/godot/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/godot/Makefile 462052 2018-02-16 18:35:03Z brnrd $
 
 PORTNAME=	godot
 PORTVERSION=	2.1.2
@@ -14,6 +14,9 @@ LICENSE=		MIT CC-BY-3.0
 LICENSE_COMB=		multi
 LICENSE_FILE_CC-BY-3.0=	${WRKSRC}/LOGO_LICENSE.md
 LICENSE_FILE_MIT=	${WRKSRC}/LICENSE.md
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	member access into incomplete type 'BIO' (aka 'bio_st')
 
 LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 		libpng.so:graphics/png \

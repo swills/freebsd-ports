@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-ipdb/Makefile 461312 2018-02-09 14:08:52Z sunpoet $
+# $FreeBSD: head/devel/py-ipdb/Makefile 462025 2018-02-16 15:42:02Z sunpoet $
 
 PORTNAME=	ipdb
-PORTVERSION=	0.10.3
+PORTVERSION=	0.11
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,5 +17,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipython>=0.10.2:devel/ipython@${FLAVOR}
 NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
+
+post-patch:
+	@${REINPLACE_CMD} -e '/zip_safe=/ s|True|False|' ${WRKSRC}/setup.py
 
 .include <bsd.port.mk>

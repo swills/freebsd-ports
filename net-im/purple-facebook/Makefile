@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/purple-facebook/Makefile 461967 2018-02-16 02:58:36Z swills $
+# $FreeBSD: head/net-im/purple-facebook/Makefile 462014 2018-02-16 13:46:32Z swills $
 
 PORTNAME=	purple-facebook
 PORTVERSION=	0.9.5
@@ -10,7 +10,7 @@ MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Facebook plugin for libpurple
 
 LICENSE=	GPLv2
-LICENSE_FILE=	${WRKWRC}/COPYING
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpurple.so:net-im/libpurple \
 		libjson-glib-1.0.so:devel/json-glib
