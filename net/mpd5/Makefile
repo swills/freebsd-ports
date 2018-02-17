@@ -1,5 +1,5 @@
 # Created by: Archie Cobbs
-# $FreeBSD: head/net/mpd5/Makefile 450652 2017-09-26 09:43:40Z eugen $
+# $FreeBSD: head/net/mpd5/Makefile 462137 2018-02-17 12:00:33Z sunpoet $
 
 PORTNAME=	mpd
 DISTVERSION=	5.8
@@ -13,6 +13,8 @@ MAINTAINER=	eugen@FreeBSD.org
 COMMENT=	Multi-link PPP daemon based on netgraph(4)
 
 LICENSE=	BSD3CLAUSE
+
+BROKEN_SSL=	openssl-devel
 
 OPTIONS_DEFINE=	NG_IPACCT
 NG_IPACCT_DESC=	Use ng_ipacct kernel module from port
@@ -45,10 +47,4 @@ PLIST_FILES=	${CONFSUF:S/^/etc\/mpd5\/mpd./:S/$/.sample/} sbin/mpd5
 PLIST_FILES+=	man/man8/mpd5.8.gz
 .endif
 
-.include <bsd.port.pre.mk>
-
-.if ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

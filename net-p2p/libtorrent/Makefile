@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/libtorrent/Makefile 461437 2018-02-10 21:52:45Z dbaio $
+# $FreeBSD: head/net-p2p/libtorrent/Makefile 462140 2018-02-17 12:00:47Z sunpoet $
 
 PORTNAME=	libtorrent
 PORTVERSION=	0.13.6
@@ -11,6 +11,8 @@ COMMENT=	BitTorrent Library written in C++
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_SSL=	openssl-devel
 
 CONFLICTS_INSTALL=	rblibtorrent-[0-9]* rblibtorrent-devel-[0-9]*
 
@@ -34,10 +36,6 @@ IPV6_CONFIGURE_ENABLE=	ipv6
 KQUEUE_CONFIGURE_WITH=	kqueue
 
 .include <bsd.port.pre.mk>
-
-.if ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
 
 # Disable instrumentation, which requires 64-bit atomic ops, on i386 (when
 # using gcc) and powerpc to avoid linking errors:

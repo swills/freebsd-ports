@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/security/pkcs11-helper/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/security/pkcs11-helper/Makefile 462143 2018-02-17 12:01:02Z sunpoet $
 
 PORTNAME=	pkcs11-helper
 PORTVERSION=	1.11
@@ -15,6 +15,8 @@ LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/COPYING
 LICENSE_FILE_BSD3CLAUSE=${WRKSRC}/COPYING.BSD
 LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING.GPL
+
+BROKEN_SSL=	openssl-devel
 
 GNU_CONFIGURE=	yes
 USES=		libtool:keepla pathfix pkgconfig tar:bzip2 ssl
@@ -36,10 +38,4 @@ post-patch:
 	@${REINPLACE_CMD} 's|install-data-am: install-apidocDATA|install-data-am:|' \
 		${WRKSRC}/doc/api/Makefile.in
 
-.include <bsd.port.pre.mk>
-
-.if ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Syntax-Keyword-Gather/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Syntax-Keyword-Gather/Makefile 462102 2018-02-17 11:57:33Z sunpoet $
 
 PORTNAME=	Syntax-Keyword-Gather
-PORTVERSION=	1.003001
+PORTVERSION=	1.003002
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

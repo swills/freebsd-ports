@@ -1,5 +1,5 @@
 # Created by: gpalmer
-# $FreeBSD: head/net-mgmt/net-snmp/Makefile 461161 2018-02-07 18:11:27Z zi $
+# $FreeBSD: head/net-mgmt/net-snmp/Makefile 462139 2018-02-17 12:00:42Z sunpoet $
 
 PORTNAME=	snmp
 PORTVERSION=	5.7.3
@@ -15,6 +15,8 @@ COMMENT=	Extendable SNMP implementation
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_SSL=	openssl-devel
 
 LIB_DEPENDS=	libpkg.so:ports-mgmt/pkg
 
@@ -215,10 +217,6 @@ DOC_FILES=	AGENT.txt COPYING FAQ NEWS README \
 CONFLICTS=	ucd-snmp-4.* net-snmp-5.3.*
 
 .include <bsd.port.pre.mk>
-
-.if ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
 
 .if ${SSL_DEFAULT} != base
 LCRYPTO=	-lcrypto

@@ -1,5 +1,5 @@
 # Created by: Chess Griffin <chess@chessgriffin.com>
-# $FreeBSD: head/irc/bip/Makefile 458755 2018-01-11 16:53:44Z danfe $
+# $FreeBSD: head/irc/bip/Makefile 462131 2018-02-17 12:00:03Z sunpoet $
 
 PORTNAME=	bip
 PORTVERSION=	0.8.9
@@ -11,6 +11,8 @@ COMMENT=	Simple IRC proxy with SSL support
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_SSL=	openssl-devel
 
 GNU_CONFIGURE=	yes
 LDFLAGS+=	-L${LOCALBASE}/lib -L${OPENSSLLIB}
@@ -44,10 +46,4 @@ post-install-EXAMPLES-on:
 	${INSTALL_DATA} ${WRKSRC}/samples/${i} ${STAGEDIR}${EXAMPLESDIR}
 .endfor
 
-.include <bsd.port.pre.mk>
-
-.if ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

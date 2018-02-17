@@ -1,5 +1,5 @@
 # Created by: Dmitry Frolov <frol@nov.net>
-# $FreeBSD: head/sysutils/ipmitool/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/sysutils/ipmitool/Makefile 462144 2018-02-17 12:01:08Z sunpoet $
 
 PORTNAME=	ipmitool
 PORTVERSION=	1.8.18
@@ -12,6 +12,8 @@ COMMENT=	CLI to manage IPMI systems
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_SSL=	openssl-devel
 
 USES=		cpe tar:bzip2 gmake readline ssl
 CPE_VENDOR=	sun
@@ -51,10 +53,4 @@ post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/${PERIODIC_DIR}
 	${INSTALL_SCRIPT} ${WRKDIR}/status-ipmi.sh ${STAGEDIR}${PREFIX}/${PERIODIC_DIR}/400.status-ipmi
 
-.include <bsd.port.pre.mk>
-
-.if ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

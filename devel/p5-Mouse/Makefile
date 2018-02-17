@@ -1,8 +1,8 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Mouse/Makefile 458444 2018-01-08 16:52:04Z sunpoet $
+# $FreeBSD: head/devel/p5-Mouse/Makefile 462118 2018-02-17 11:58:57Z sunpoet $
 
 PORTNAME=	Mouse
-PORTVERSION=	2.5.1
+PORTVERSION=	2.5.2
 DISTVERSIONPREFIX=	v
 PORTEPOCH=	1
 CATEGORIES=	devel perl5

@@ -1,5 +1,5 @@
 # Created by: ruslan@shevchenko.kiev.ua
-# $FreeBSD: head/lang/erlang/Makefile 456643 2017-12-18 16:36:35Z olgeni $
+# $FreeBSD: head/lang/erlang/Makefile 462132 2018-02-17 12:00:08Z sunpoet $
 
 PORTNAME=	erlang
 PORTVERSION=	19.3.6.5
@@ -67,6 +67,8 @@ OPTIONS_EXCLUDE_FreeBSD_10=	DTRACE
 OPTIONS_EXCLUDE_i386=		DTRACE
 # ld(1) fails to link probes: missing __dtrace_erlang___* symbols
 OPTIONS_EXCLUDE_aarch64=	DTRACE
+
+OPENSSL_VARS=	BROKEN_SSL=openssl-devel
 
 ERL_RELEASE=	19.3
 
@@ -282,10 +284,4 @@ post-install:
 		| ${SORT} \
 		>> ${TMPPLIST}
 
-.include <bsd.port.pre.mk>
-
-.if ${PORT_OPTIONS:MOPENSSL} && ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
