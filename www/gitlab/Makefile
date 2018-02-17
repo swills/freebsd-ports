@@ -62,7 +62,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-akismet>=2.0:devel/rubygem-akismet \
 	rubygem-devise-two-factor>=3.0.0:security/rubygem-devise-two-factor \
 	rubygem-rqrcode-rails3>=0.1.7:www/rubygem-rqrcode-rails3 \
-	rubygem-attr_encrypted>=3.0.0:security/rubygem-attr_encrypted \
+	rubygem-attr_encrypted30>=3.0.0:security/rubygem-attr_encrypted30 \
 	rubygem-u2f0>=0.2.1:net/rubygem-u2f0 \
 	rubygem-validates_hostname>=1.0.6:dns/rubygem-validates_hostname \
 	rubygem-browser>=2.2:www/rubygem-browser \
