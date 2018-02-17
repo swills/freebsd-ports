@@ -6158,6 +6158,7 @@
 %%WWWDIR%%/db/migrate/20171229225929_change_user_project_limit_not_null_and_remove_default.rb
 %%WWWDIR%%/db/migrate/20171230123729_add_rebase_commit_sha_to_merge_requests_ce.rb
 %%WWWDIR%%/db/migrate/20180113220114_rework_redirect_routes_indexes.rb
+%%WWWDIR%%/db/migrate/20180208183958_schedule_populate_untracked_uploads_if_needed.rb
 %%WWWDIR%%/db/migrate/limits_to_mysql.rb
 %%WWWDIR%%/db/migrate/markdown_cache_limits_to_mysql.rb
 %%WWWDIR%%/db/migrate/merge_request_diff_file_limits_to_mysql.rb
@@ -6264,6 +6265,7 @@
 %%WWWDIR%%/db/post_migrate/20171124150326_reschedule_fork_network_creation.rb
 %%WWWDIR%%/db/post_migrate/20171128214150_schedule_populate_merge_request_metrics_with_events_data.rb
 %%WWWDIR%%/db/post_migrate/20171205190711_reschedule_fork_network_creation_caller.rb
+%%WWWDIR%%/db/post_migrate/20171207150300_remove_project_labels_group_id_copy.rb
 %%WWWDIR%%/db/post_migrate/20171207150343_remove_soft_removed_objects.rb
 %%WWWDIR%%/db/post_migrate/20171207150344_remove_deleted_at_columns.rb
 %%WWWDIR%%/db/post_migrate/20171213160445_migrate_github_importer_advance_stage_sidekiq_queue.rb
@@ -6271,6 +6273,7 @@
 %%WWWDIR%%/db/post_migrate/20171215121259_remove_can_push_from_keys.rb
 %%WWWDIR%%/db/post_migrate/20171219121201_normalize_extern_uid_from_identities.rb
 %%WWWDIR%%/db/post_migrate/20171221140220_schedule_issues_closed_at_type_change.rb
+%%WWWDIR%%/db/post_migrate/20180202111106_remove_project_labels_group_id.rb
 @(git,,) %%WWWDIR%%/db/schema.rb
 %%WWWDIR%%/db/seeds.rb
 %%WWWDIR%%/doc/README.md
@@ -11044,6 +11047,7 @@
 %%WWWDIR%%/spec/migrations/remove_dot_git_from_usernames_spec.rb
 %%WWWDIR%%/spec/migrations/remove_duplicate_mr_events_spec.rb
 %%WWWDIR%%/spec/migrations/remove_empty_fork_networks_spec.rb
+%%WWWDIR%%/spec/migrations/remove_project_labels_group_id_spec.rb
 %%WWWDIR%%/spec/migrations/remove_soft_removed_objects_spec.rb
 %%WWWDIR%%/spec/migrations/rename_duplicated_variable_key_spec.rb
 %%WWWDIR%%/spec/migrations/rename_more_reserved_project_names_spec.rb
