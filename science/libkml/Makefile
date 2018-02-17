@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/science/libkml/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/science/libkml/Makefile 462168 2018-02-17 16:40:20Z sunpoet $
 
 PORTNAME=	libkml
 PORTVERSION=	1.3.0
@@ -25,7 +25,8 @@ LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 
 OPTIONS_DEFINE=	EXAMPLES
 
-CMAKE_ARGS=	-DWITH_JAVA=OFF -DWITH_PYTHON=OFF -DWITH_SWIG=OFF
+CMAKE_OFF=	WITH_JAVA WITH_PYTHON WITH_SWIG
+USE_CXXSTD=	gnu++98
 USE_LDCONFIG=	yes
 USES=		cmake pathfix
 

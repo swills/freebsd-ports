@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/qtchooser/Makefile 458755 2018-01-11 16:53:44Z danfe $
+# $FreeBSD: head/misc/qtchooser/Makefile 462177 2018-02-17 17:51:11Z sunpoet $
 
 PORTNAME=	qtchooser
 PORTVERSION=	39
@@ -16,6 +16,9 @@ LICENSE_COMB=	dual
 USES=		gmake
 DESTDIRNAME=	INSTALL_ROOT
 MAKE_ARGS=	prefix=${PREFIX}
+
+# bin/linguist
+CONFLICTS_INSTALL=	rubygem-github-linguist rubygem-github-linguist47 rubygem-gitlab-linguist
 
 QT_QTCHOOSERDIR=${PREFIX}/etc/xdg/qtchooser
 

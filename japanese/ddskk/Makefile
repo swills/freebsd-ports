@@ -1,16 +1,15 @@
 # Created by: Shigeyuki FUKUSHIMA <shige@kuis.kyoto-u.ac.jp>
-# $FreeBSD: head/japanese/ddskk/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/japanese/ddskk/Makefile 462165 2018-02-17 15:54:56Z yuri $
 
 PORTNAME=	ddskk
-PORTVERSION=	15.1
-PORTREVISION=	6
+DISTVERSION=	16.2
 CATEGORIES=	japanese elisp
-MASTER_SITES=	http://openlab.ring.gr.jp/skk/maintrunk/ \
-		ftp://ftp.ring.gr.jp/pub/elisp/skk/maintrunk/ \
-		http://www.ring.gr.jp/archives/elisp/skk/maintrunk/
+MASTER_SITES=	ftp://ftp.ring.gr.jp/pub/elisp/skk/maintrunk/ \
+		http://www.ring.gr.jp/archives/elisp/skk/maintrunk/ \
+		http://openlab.ring.gr.jp/skk/maintrunk/
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	kenji@k2r.org
 COMMENT=	Simple Kana to Kanji conversion program on Emacsen
 
 LICENSE=	GPLv2+
@@ -50,7 +49,7 @@ post-install:
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-.for i in AUTHORS.ja CODENAME.ja Contributors FAQ.ja NEWS.ja README
+.for i in AUTHORS.ja CODENAME.ja Contributors Development.ja.org FAQ.ja NEWS.ja
 	${INSTALL_DATA} ${WRKSRC}/READMEs/${i} ${STAGEDIR}${DOCSDIR}
 .endfor
 

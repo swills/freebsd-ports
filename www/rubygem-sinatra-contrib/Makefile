@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/rubygem-sinatra-contrib/Makefile 458437 2018-01-08 16:48:58Z feld $
+# $FreeBSD: head/www/rubygem-sinatra-contrib/Makefile 462176 2018-02-17 17:44:12Z sunpoet $
 
 PORTNAME=	sinatra-contrib
 PORTVERSION=	2.0.0
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
