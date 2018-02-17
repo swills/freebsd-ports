@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/devel/libewf/Makefile 460291 2018-01-29 12:18:02Z antoine $
+# $FreeBSD: head/devel/libewf/Makefile 462052 2018-02-16 18:35:03Z brnrd $
 
 PORTNAME=	libewf
 PORTVERSION=	20140803
@@ -12,6 +12,9 @@ COMMENT=	Library for support of the Expert Witness Compression Format (EWF)
 
 LICENSE=	LGPL3+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	field has incomplete type 'EVP_MD_CTX' (aka 'struct evp_md_ctx_st')
 
 LIB_DEPENDS=	libsmdev.so:devel/libsmdev \
 		libsmraw.so:devel/libsmraw \

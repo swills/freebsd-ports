@@ -1,9 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/kyototycoon/Makefile 441350 2017-05-20 21:51:02Z sunpoet $
+# $FreeBSD: head/databases/kyototycoon/Makefile 462066 2018-02-16 22:05:07Z dch $
 
 PORTNAME=	kyototycoon
 PORTVERSION=	0.9.56
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	databases
 MASTER_SITES=	http://fallabs.com/${PORTNAME}/pkg/ \
 		LOCAL/sunpoet

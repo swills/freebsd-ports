@@ -1,5 +1,5 @@
 # Created by: Marc G. Fournier <scrappy@FreeBSD.org>
-# $FreeBSD: head/devel/mico/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/devel/mico/Makefile 462052 2018-02-16 18:35:03Z brnrd $
 
 PORTNAME=	mico
 PORTVERSION=	2.3.13
@@ -14,6 +14,9 @@ LICENSE=	GPLv2 LGPL20
 LICENSE_COMB=	multi
 LICENSE_FILE_GPLv2=	${WRKSRC}/LICENSE-GPL
 LICENSE_FILE_LGPL20=	${WRKSRC}/LICENSE-LGPL
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	member access into incomplete type 'BIO' (aka 'bio_st')
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-optimize --with-ssl=${OPENSSLBASE}

@@ -1,8 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/audio/picard/Makefile 461880 2018-02-15 11:26:55Z jhale $
+# $FreeBSD: head/audio/picard/Makefile 462017 2018-02-16 14:50:17Z jhale $
 
 PORTNAME=	picard
 PORTVERSION=	1.4.2
+PORTREVISION=	1
 CATEGORIES=	audio python
 MASTER_SITES=	http://ftp.musicbrainz.org/pub/musicbrainz/picard/ \
 		ftp://ftp.musicbrainz.org/pub/musicbrainz/picard/ \
@@ -18,7 +19,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}discid>=0.5.2:audio/py-discid@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mutagen>=1.23:audio/py-mutagen@${FLAVOR}
 
 USES=		gettext pyqt:4 python:2.7 desktop-file-utils
-USE_PYQT=	core_run gui_run network_run xml_run sip_build
+USE_PYQT=	core_run gui_run network_run xml_run sip
 USE_PYTHON=	distutils
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-release-${PORTVERSION}

@@ -1,8 +1,8 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/math/glpk/Makefile 455530 2017-12-04 18:11:52Z pi $
+# $FreeBSD: head/math/glpk/Makefile 462047 2018-02-16 17:19:55Z zeising $
 
 PORTNAME=	glpk
-DISTVERSION=	4.64
+DISTVERSION=	4.65
 CATEGORIES=	math
 MASTER_SITES=	GNU
 

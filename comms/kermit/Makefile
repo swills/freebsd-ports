@@ -1,5 +1,5 @@
 # Created by: Paul Traina <pst@FreeBSD.org>
-# $FreeBSD: head/comms/kermit/Makefile 459648 2018-01-22 12:39:20Z danfe $
+# $FreeBSD: head/comms/kermit/Makefile 462050 2018-02-16 17:52:50Z brnrd $
 
 PORTNAME=	kermit
 PORTVERSION=	9.0.304
@@ -11,6 +11,9 @@ MAINTAINER=	danfe@FreeBSD.org
 COMMENT=	Portable scriptable network and serial communication program
 
 LICENSE=	BSD3CLAUSE
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	incomplete definition of type 'struct x509_store_ctx_st'
 
 USES=		ssl
 NO_WRKSUBDIR=	yes

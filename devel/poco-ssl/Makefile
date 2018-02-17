@@ -1,5 +1,5 @@
 # Created by: Wes Peters <wes@FreeBSD.org>
-# $FreeBSD: head/devel/poco-ssl/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/devel/poco-ssl/Makefile 462052 2018-02-16 18:35:03Z brnrd $
 
 PORTNAME=	poco
 # New version 1.4.6p4 is available; please use DISTVERSION upon updating
@@ -15,6 +15,9 @@ COMMENT=	C++ libraries with a network/internet focus (full version)
 
 LICENSE=	BSL
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	field has incomplete type 'EVP_CIPHER_CTX' (aka 'evp_cipher_ctx_st')
 
 CONFLICTS=	poco-[0-9]*
 

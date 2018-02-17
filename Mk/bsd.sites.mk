@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: head/Mk/bsd.sites.mk 461262 2018-02-08 19:38:34Z wosch $
+# $FreeBSD: head/Mk/bsd.sites.mk 462083 2018-02-17 02:08:40Z gerald $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -689,7 +689,7 @@ MASTER_SITE_MOZDEV+= \
 	http://ftp.ntua.gr/pub/www/mozdev/%SUBDIR%/ \
 	http://www.devlib.org/mozdev/%SUBDIR%/ \
 	ftp://ftp.heanet.ie/pub/mozdev/%SUBDIR%/ \
-	http://mirrors.ibiblio.org/pub/mirrors/mozdev.org/%SUBDIR%/ \
+	http://mirrors.ibiblio.org/mozdev.org/%SUBDIR%/ \
 	https://ftp.osuosl.org/pub/mozdev/%SUBDIR%/
 .endif
 

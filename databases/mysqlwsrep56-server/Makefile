@@ -1,5 +1,5 @@
 # Created by: Philip Stoev <philip.stoev@galeracluster.com>
-# $FreeBSD: head/databases/mysqlwsrep56-server/Makefile 461147 2018-02-07 14:48:16Z vd $
+# $FreeBSD: head/databases/mysqlwsrep56-server/Makefile 462050 2018-02-16 17:52:50Z brnrd $
 
 PORTNAME=	mysqlwsrep
 PORTVERSION?=	5.6.39
@@ -12,6 +12,9 @@ MAINTAINER=	devel@galeracluster.com
 COMMENT=	MySQL database enhanced with Galera replication (server package)
 
 LICENSE=	GPLv2
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	incomplete definition of type 'struct dh_st'
 
 RUN_DEPENDS=	bash:shells/bash \
 		lsof:sysutils/lsof \

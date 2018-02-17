@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/pgpool-II-36/Makefile 450112 2017-09-19 10:42:07Z tz $
+# $FreeBSD: head/databases/pgpool-II-36/Makefile 462050 2018-02-16 17:52:50Z brnrd $
 
 PORTNAME=	pgpool-II
 PORTVERSION=	3.6.6
@@ -11,6 +11,9 @@ COMMENT=	Connection pool server for PostgreSQL
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	library 'ssl' is required for OpenSSL
 
 PORTSCOUT=	limit:^3.6.[0-9]*
 

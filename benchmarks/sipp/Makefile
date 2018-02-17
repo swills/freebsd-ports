@@ -1,5 +1,5 @@
 # Created by: jesper@jdn.dk
-# $FreeBSD: head/benchmarks/sipp/Makefile 440746 2017-05-13 03:35:51Z linimon $
+# $FreeBSD: head/benchmarks/sipp/Makefile 462050 2018-02-16 17:52:50Z brnrd $
 
 PORTNAME=	sipp
 PORTVERSION=	3.5.1
@@ -15,6 +15,8 @@ LICENSE=	GPLv2
 BUILD_DEPENDS=	help2man:misc/help2man
 
 BROKEN_powerpc64=	fails to compile: stat.hpp:307: error: ISO C++ does not support long long
+BROKEN_SSL=		openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	configure: error: ssl library missing
 
 PLIST_FILES=	bin/sipp man/man1/sipp.1.gz
 

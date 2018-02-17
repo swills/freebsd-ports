@@ -1,8 +1,8 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/math/rpcalc/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/math/rpcalc/Makefile 462021 2018-02-16 15:12:39Z jhale $
 
 PORTNAME=	rpcalc
-PORTVERSION=	0.7.1
+PORTVERSION=	0.8.1
 CATEGORIES=	math
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 
@@ -12,8 +12,10 @@ COMMENT=	Simple RPN calculator
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/doc/LICENSE
 
-USES=		pyqt:4 python:3.3+
-USE_PYQT=	core gui
+USES=		pyqt:5 python:3.4+ shebangfix
+USE_PYQT=	core gui widgets sip
+
+SHEBANG_FILES=	source/rpcalc.py
 
 CONFIGURE_ARGS=	-p ${PREFIX} -d ${DOCSDIR} -i ${DATADIR}/icons -b ${STAGEDIR}
 NO_ARCH=	yes

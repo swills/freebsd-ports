@@ -1,5 +1,5 @@
 # Created by: Sergey Kozlov <kozlov.sergey.404@gmail.com>
-# $FreeBSD: head/devel/staf/Makefile 447227 2017-08-03 15:20:17Z asomers $
+# $FreeBSD: head/devel/staf/Makefile 462052 2018-02-16 18:35:03Z brnrd $
 
 PORTNAME=	staf
 PORTVERSION=	3.4.23
@@ -13,6 +13,9 @@ COMMENT=	Software Testing Automation Framework
 
 LICENSE=	EPL
 LICENSE_FILE=	${WRKSRC}/LICENSE.htm
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	variable has incomplete type 'EVP_MD_CTX' (aka 'evp_md_ctx_st')
 
 WRKSRC=		${WRKDIR}/src
 WRKSRC_SUBDIR=	${PORTNAME}

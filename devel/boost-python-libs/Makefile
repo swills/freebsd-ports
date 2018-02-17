@@ -1,8 +1,8 @@
 # Created by: Alexander Churanov <churanov.port.maintainer@gmail.com>
-# $FreeBSD: head/devel/boost-python-libs/Makefile 461885 2018-02-15 12:34:49Z mat $
+# $FreeBSD: head/devel/boost-python-libs/Makefile 462027 2018-02-16 15:42:12Z sunpoet $
 
 PORTNAME=	boost-libs
-COMMENT=	Framework for interfacing Python 2 and C++
+COMMENT=	Framework for interfacing Python and C++
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 USES=		python

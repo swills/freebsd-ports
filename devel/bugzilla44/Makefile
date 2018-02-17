@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/bugzilla44/Makefile 446705 2017-07-27 00:22:25Z dbaio $
+# $FreeBSD: head/devel/bugzilla44/Makefile 462090 2018-02-17 09:47:00Z ohauer $
 
 PORTNAME=	bugzilla
-PORTVERSION=	4.4.12
+PORTVERSION=	4.4.13
 CATEGORIES=	devel
 MASTER_SITES=	MOZILLA/webtools MOZILLA/webtools/archived
 

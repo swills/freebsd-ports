@@ -1,8 +1,8 @@
 # Created by: Craig Leres <leres@FreeBSD.org>
-# $FreeBSD: head/security/create-cert/Makefile 461960 2018-02-16 00:58:12Z leres $
+# $FreeBSD: head/security/create-cert/Makefile 462084 2018-02-17 02:28:50Z leres $
 
 PORTNAME=	create-cert
-PORTVERSION=	2.6
+PORTVERSION=	2.7
 CATEGORIES=	security
 MASTER_SITES=	https://ee.lbl.gov/downloads/create-cert/ \
 		LOCAL/leres/create-cert

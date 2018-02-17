@@ -1,5 +1,5 @@
 # Created by: ejc@bazzle.com
-# $FreeBSD: head/devel/omniORB/Makefile 461694 2018-02-13 10:56:36Z antoine $
+# $FreeBSD: head/devel/omniORB/Makefile 462052 2018-02-16 18:35:03Z brnrd $
 
 PORTNAME=	omniORB
 DISTVERSION=	4.2.2
@@ -10,6 +10,9 @@ MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Robust high performance CORBA ORB for C++ and Python
 
 LICENSE=	GPLv2
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	member access into incomplete type 'DH' (aka 'dh_st')
 
 CONFLICTS=	omniORB41-4.1.*
 PLIST_SUB+=	SONUM=2

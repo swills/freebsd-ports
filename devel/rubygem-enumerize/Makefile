@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-enumerize/Makefile 461799 2018-02-14 13:30:59Z sunpoet $
+# $FreeBSD: head/devel/rubygem-enumerize/Makefile 462034 2018-02-16 15:42:49Z sunpoet $
 
 PORTNAME=	enumerize
-PORTVERSION=	2.2.0
+PORTVERSION=	2.2.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

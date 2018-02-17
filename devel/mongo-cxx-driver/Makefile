@@ -1,5 +1,5 @@
 # Created by: Simun Mikecin <numisemis@yahoo.com>
-# $FreeBSD: head/devel/mongo-cxx-driver/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/devel/mongo-cxx-driver/Makefile 462052 2018-02-16 18:35:03Z brnrd $
 
 PORTNAME=	mongo-cxx-driver
 PORTVERSION=	1.1.2
@@ -12,6 +12,9 @@ COMMENT=	MongoDB Legacy C++ Driver
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/APACHE-2.0.txt
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	use of undeclared identifier 'BIO_s_file_internal'
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs
 
@@ -28,7 +31,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	mongodb
 GH_PROJECT=	mongo-cxx-driver
 
-USES=		scons
+USES=		scons ssl
 MAKE_ARGS=	--prefix=${STAGEDIR}${PREFIX} \
 		--cc=${CC} \
 		--cxx=${CXX}

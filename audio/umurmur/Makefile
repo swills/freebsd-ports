@@ -1,5 +1,5 @@
 # Created by: Ayumi Mitsui <ayu@commun.jp>
-# $FreeBSD: head/audio/umurmur/Makefile 439905 2017-05-01 19:24:00Z linimon $
+# $FreeBSD: head/audio/umurmur/Makefile 462050 2018-02-16 17:52:50Z brnrd $
 
 PORTNAME=	umurmur
 PORTVERSION=	0.2.16
@@ -16,6 +16,8 @@ LIB_DEPENDS=	libconfig.so:devel/libconfig \
 
 BROKEN_aarch64=		fails to compile: fatal error: byteswap.h file not found
 BROKEN_armv6=		fails to compile: fatal error: byteswap.h file not found
+BROKEN_SSL=		openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	configure: error: could not find libcrypto
 
 USE_GITHUB=	yes
 

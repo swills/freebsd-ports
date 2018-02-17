@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/databases/mysql-connector-c/Makefile 447378 2017-08-04 20:35:33Z bofh $
+# $FreeBSD: head/databases/mysql-connector-c/Makefile 462050 2018-02-16 17:52:50Z brnrd $
 
 PORTNAME=	mysql-connector-c
 PORTVERSION=	6.1.11
@@ -12,6 +12,9 @@ COMMENT=	MySQL database connector for C
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	variable has incomplete type 'EVP_CIPHER_CTX' (aka 'evp_cipher_ctx_st')
 
 USES=		cmake:outsource compiler:features mysql ssl
 CMAKE_ARGS+=	-DOPENSSL_INCLUDE_DIR="${OPENSSLINC}"

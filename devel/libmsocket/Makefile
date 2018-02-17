@@ -1,5 +1,5 @@
 # Created by: Matt Harris <mattdharris@users.sourceforge.net>
-# $FreeBSD: head/devel/libmsocket/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/devel/libmsocket/Makefile 462052 2018-02-16 18:35:03Z brnrd $
 
 PORTNAME=	libmsocket
 PORTVERSION=	0.4
@@ -10,11 +10,14 @@ MASTER_SITES=	SF/kageki/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 MAINTAINER=	rodrigo@FreeBSD.org
 COMMENT=	Socket abstraction library for C programmers
 
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	invalid application of 'sizeof' to an incomplete type 'X509' (aka 'struct x509_st')
+
 LIB_DEPENDS=	libevent.so:devel/libevent
 
 OPTIONS_DEFINE=	DEBUG
 
-USES=		tar:bzip2 desthack
+USES=		tar:bzip2 desthack ssl
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-throttling \

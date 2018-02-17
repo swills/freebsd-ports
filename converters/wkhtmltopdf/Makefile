@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/converters/wkhtmltopdf/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/converters/wkhtmltopdf/Makefile 462050 2018-02-16 17:52:50Z brnrd $
 
 PORTNAME=	wkhtmltopdf
 PORTVERSION=	0.12.4
@@ -29,6 +29,8 @@ BROKEN_armv6=		Does not build: error: Not supported ARM architecture
 BROKEN_armv7=		Does not build: error: invalid operand for instruction
 BROKEN_mips64=		Does not link: undefined reference to __sync_add_and_fetch_4
 BROKEN_powerpc64=	Does not build
+BROKEN_SSL=		openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	member access into incomplete type 'SSL_CIPHER' (aka 'ssl_cipher_st')
 
 PATCH_WRKSRC=		${WRKSRC}/qt
 CONFIGURE_WRKSRC=	${WRKSRC}/build/qt

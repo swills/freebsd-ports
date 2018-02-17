@@ -1,5 +1,5 @@
 # Created by: Roger Hardiman <roger@freebsd.org>
-# $FreeBSD: head/devel/ptlib/Makefile 453453 2017-11-04 11:43:35Z dbaio $
+# $FreeBSD: head/devel/ptlib/Makefile 462052 2018-02-16 18:35:03Z brnrd $
 
 PORTNAME=	ptlib
 PORTVERSION=	2.10.11
@@ -11,6 +11,9 @@ MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Cross platform C++ library, used by OPAL
 
 LICENSE=	MPL10
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	use of undeclared identifier 'BIO_s_file_internal'
 
 LIB_DEPENDS=	libexpat.so:textproc/expat2
 
