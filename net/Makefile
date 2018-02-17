@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 462093 2018-02-17 10:31:17Z rene $
+# $FreeBSD: head/net/Makefile 462198 2018-02-17 22:24:49Z yuri $
 #
 
     COMMENT = Networking tools
@@ -134,6 +134,7 @@
     SUBDIR += enet
     SUBDIR += erlang-ranch
     SUBDIR += erlang-xmlrpc
+    SUBDIR += eternaltcp
     SUBDIR += etrace
     SUBDIR += exabgp
     SUBDIR += exaddos

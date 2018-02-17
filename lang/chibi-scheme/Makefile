@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <tobias.kortkamp@gmail.com>
-# $FreeBSD: head/lang/chibi-scheme/Makefile 462004 2018-02-16 12:05:47Z tobik $
+# $FreeBSD: head/lang/chibi-scheme/Makefile 462158 2018-02-17 13:45:06Z tobik $
 
 PORTNAME=	chibi-scheme
 DISTVERSION=	0.8
@@ -28,6 +28,8 @@ MAKE_JOBS_UNSAFE=	yes
 
 ALL_TARGET=	all libchibi-scheme.a
 TEST_TARGET=	test
+
+PORTSCOUT=	skipv:stable
 
 post-patch:
 	@${REINPLACE_CMD} -e 's@ -g -g3 -O3 @ @' \

@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/moonlight-embedded/Makefile 453474 2017-11-04 17:49:37Z tobik $
+# $FreeBSD: head/games/moonlight-embedded/Makefile 462161 2018-02-17 14:14:12Z tobik $
 
 PORTNAME=	moonlight-embedded
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.4.4
+DISTVERSION=	2.4.6
 CATEGORIES=	games
 
 MAINTAINER=	tobik@FreeBSD.org
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 USES=		cmake localbase:ldflags perl5 pkgconfig ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	irtimmer
-GH_TUPLE=	irtimmer:moonlight-common-c:a1bdb36766f8db5dc9cc0694c9a376f0dca3ab59:common/third_party/moonlight-common-c
+GH_TUPLE=	irtimmer:moonlight-common-c:186cef0e3a4c104dc224f0ca413345571d79b48c:common/third_party/moonlight-common-c
 USE_LDCONFIG=	yes
 USE_PERL5=	build
 USE_SDL=	sdl2

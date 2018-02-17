@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/kyototycoon/Makefile 462066 2018-02-16 22:05:07Z dch $
+# $FreeBSD: head/databases/kyototycoon/Makefile 462167 2018-02-17 16:40:15Z sunpoet $
 
 PORTNAME=	kyototycoon
 PORTVERSION=	0.9.56
@@ -25,6 +25,7 @@ INSTALL_TARGET=	install-strip
 MAKE_ARGS=	PCDIR=${PREFIX}/libdata/pkgconfig
 REINPLACE_ARGS=	-i ''
 TEST_TARGET=	check
+USE_CXXSTD=	gnu++98
 USE_LDCONFIG=	yes
 USE_RC_SUBR=	${PORTNAME}
 USES=		gmake pkgconfig

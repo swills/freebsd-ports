@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/rubygem-flipper-active_record010/Makefile 461883 2018-02-15 12:22:38Z tz $
+# $FreeBSD: head/databases/rubygem-flipper-active_record010/Makefile 462169 2018-02-17 16:40:25Z sunpoet $
 
 PORTNAME=	flipper-active_record
 PORTVERSION=	0.10.2
@@ -13,8 +13,8 @@ COMMENT=	ActiveRecord adapter for Flipper
 
 LICENSE=	MIT
 
-DEPRECATED=	yes
-EXPIRATION_DATE=	2018-08-01
+DEPRECATED=	Use databases/rubygem-flipper-active_record instead
+EXPIRATION_DATE=2018-02-28
 
 RUN_DEPENDS=	rubygem-activerecord4>=3.2:databases/rubygem-activerecord4 \
 		rubygem-flipper010>=${PORTVERSION}:devel/rubygem-flipper010

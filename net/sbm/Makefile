@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/net/sbm/Makefile 434159 2017-02-15 12:28:29Z tobik $
+# $FreeBSD: head/net/sbm/Makefile 462160 2018-02-17 13:52:48Z tobik $
 
 PORTNAME=	sbm
 PORTVERSION=	0.8
@@ -18,6 +18,8 @@ PLIST_FILES=	bin/sbm \
 		bin/sbm-plot \
 		bin/sbm-rt-plot \
 		man/man1/sbm.1.gz
+
+PORTSCOUT=	skipv:0.9 # only Linux related changes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/sbm ${STAGEDIR}${PREFIX}/bin/
