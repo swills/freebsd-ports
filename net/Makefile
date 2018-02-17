@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 461968 2018-02-16 03:01:42Z swills $
+# $FreeBSD: head/net/Makefile 462093 2018-02-17 10:31:17Z rene $
 #
 
     COMMENT = Networking tools
@@ -204,7 +204,6 @@
     SUBDIR += grilo-plugins
     SUBDIR += grilo-plugins2
     SUBDIR += grilo2
-    SUBDIR += grive
     SUBDIR += grive2
     SUBDIR += grsync
     SUBDIR += gsk

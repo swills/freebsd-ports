@@ -1,8 +1,8 @@
-# $FreeBSD: head/mail/meta1/Makefile 445138 2017-07-06 12:03:37Z dinoex $
+# $FreeBSD: head/mail/meta1/Makefile 462098 2018-02-17 11:35:12Z dinoex $
 
 PORTNAME=	meta1
 PORTVERSION=	1.1.0a.8.0
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	mail ipv6
 MASTER_SITES=	http://www.MeTA1.org/download/.alpha/dlck/
 PKGNAMESUFFIX?=	${TLS_SUFFIX}${SASL_SUFFIX}${BERKELEYDB_SUFFIX}${PMILTER_SUFFIX}${PKGNAMESUFFIX2}
@@ -65,7 +65,10 @@ SASL2_CONFIGURE_ENABLE=	SASL
 SASL2_CONFIGURE_ON=	--with-sasl-incdir=${LOCALBASE}/include \
 			--with-sasl-libdir=${LOCALBASE}/lib
 SASL2AUTHD_RUN_DEPENDS=	${LOCALBASE}/sbin/saslauthd:security/cyrus-sasl2-saslauthd
+TLS_USES=		ssl
 TLS_CONFIGURE_ENABLE=	TLS
+TLS_CPPFLAGS=		-I${LOCALBASE}/include
+TLS_LDFLAGS=		-I${LOCALBASE}/lib
 
 .include <bsd.port.options.mk>
 
