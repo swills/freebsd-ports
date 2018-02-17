@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/lang/ruby25/Makefile 457387 2017-12-27 19:51:11Z sunpoet $
+# $FreeBSD: head/lang/ruby25/Makefile 462121 2018-02-17 11:59:12Z sunpoet $
 
 PORTNAME=	ruby
 PORTVERSION=	${RUBY_PORTVERSION}
@@ -141,7 +141,7 @@ post-patch:
 post-build:
 #
 # Hack to allow modules to be installed into separate PREFIX and/or under user
-# privilegies
+# privileges
 #
 	@${RB_SET_CONF_VAR} "prefix" "ENV['PREFIX'] || \3"
 	@${RB_SET_CONF_VAR} "INSTALL" "'/usr/bin/install -c'"

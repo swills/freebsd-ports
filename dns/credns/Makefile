@@ -1,5 +1,5 @@
 # Created by: Jaap Akkerhuis <jaap@NLnetLabs.nl>
-# $FreeBSD: head/dns/credns/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/dns/credns/Makefile 462129 2018-02-17 11:59:54Z sunpoet $
 
 PORTNAME=	credns
 PORTVERSION=	0.2.10
@@ -12,6 +12,8 @@ COMMENT=	Verifier performing validation in the DNS notify/transfer-chain
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_SSL=	openssl-devel
 
 USE_RC_SUBR=	credns
 
@@ -59,10 +61,4 @@ post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	cd ${WRKSRC}/doc && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR}
 
-.include <bsd.port.pre.mk>
-
-.if ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

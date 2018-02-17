@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-mustermann/Makefile 448792 2017-08-27 00:36:33Z sunpoet $
+# $FreeBSD: head/devel/rubygem-mustermann/Makefile 462105 2018-02-17 11:57:49Z sunpoet $
 
 PORTNAME=	mustermann
-PORTVERSION=	1.0.1
+PORTVERSION=	1.0.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

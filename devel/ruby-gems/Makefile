@@ -1,12 +1,12 @@
 # Created by: Alexander Novitsky <alecn2002@yandex.ru>
-# $FreeBSD: head/devel/ruby-gems/Makefile 461230 2018-02-08 13:00:56Z sunpoet $
+# $FreeBSD: head/devel/ruby-gems/Makefile 462122 2018-02-17 11:59:17Z sunpoet $
 #
 # Do not forget to update the following gemspec patches:
 # - security/rubygem-ezcrypto/files/patch-gemspec
 # - www/rubygem-gitlab-grack/files/patch-gemspec
 
 PORTNAME=	gems
-PORTVERSION=	2.7.5
+PORTVERSION=	2.7.6
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://production.cf.rubygems.org/rubygems/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

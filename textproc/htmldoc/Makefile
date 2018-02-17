@@ -1,5 +1,5 @@
 # Created by: Glenn Trewitt <glenn@trewitt.org>
-# $FreeBSD: head/textproc/htmldoc/Makefile 440866 2017-05-14 06:58:48Z antoine $
+# $FreeBSD: head/textproc/htmldoc/Makefile 462145 2018-02-17 12:01:12Z sunpoet $
 
 PORTNAME=	htmldoc
 PORTVERSION=	1.8.28
@@ -12,6 +12,8 @@ MAINTAINER=	jose@diasfernandes.pt
 COMMENT=	Converts HTML to PDF and/or PostScript
 
 LICENSE=	GPLv2
+
+BROKEN_SSL=	openssl-devel
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
@@ -57,10 +59,4 @@ post-configure:
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/htmldoc
 
-.include <bsd.port.pre.mk>
-
-.if ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

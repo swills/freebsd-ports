@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/mail/rubygem-actionmailer5/Makefile 449554 2017-09-10 13:09:50Z sunpoet $
+# $FreeBSD: head/mail/rubygem-actionmailer5/Makefile 462113 2018-02-17 11:58:30Z sunpoet $
 
 PORTNAME=	actionmailer
-PORTVERSION=	5.1.4
+PORTVERSION=	5.1.5
 CATEGORIES=	mail rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	5

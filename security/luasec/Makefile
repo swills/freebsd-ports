@@ -1,5 +1,5 @@
 # Created by: Andrew Lewis <freeghb@gmail.com>
-# $FreeBSD: head/security/luasec/Makefile 434326 2017-02-18 02:58:46Z bdrewery $
+# $FreeBSD: head/security/luasec/Makefile 462142 2018-02-17 12:00:58Z sunpoet $
 
 PORTNAME=	luasec
 PORTVERSION=	0.6
@@ -11,6 +11,8 @@ MAINTAINER=	lx@FreeBSD.org
 COMMENT=	Lua binding for the OpenSSL library to provide TLS/SSL communication
 
 LICENSE=	MIT
+
+BROKEN_SSL=	openssl-devel
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	brunoos
@@ -34,16 +36,10 @@ post-patch:	.SILENT
 	${REINPLACE_CMD} -Ee '/^(INC|LIB)DIR/s/[^?]=/?=/' \
 		${WRKSRC}/Makefile
 
-.include <bsd.port.pre.mk>
-
-.if ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
-
 do-install:
 	${MKDIR} ${STAGEDIR}${LUA_MODSHAREDIR}/ssl ${STAGEDIR}${LUA_MODLIBDIR}
 	${INSTALL_LIB} ${WRKSRC}/src/ssl.so ${STAGEDIR}${LUA_MODLIBDIR}
 	${INSTALL_DATA} ${WRKSRC}/src/ssl.lua ${STAGEDIR}${LUA_MODSHAREDIR}
 	${INSTALL_DATA} ${WRKSRC}/src/https.lua ${STAGEDIR}${LUA_MODSHAREDIR}/ssl
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/squid/Makefile 457024 2017-12-23 07:03:21Z antoine $
+# $FreeBSD: head/www/squid/Makefile 462146 2018-02-17 12:01:17Z sunpoet $
 
 PORTNAME=	squid
 PORTVERSION=	3.5.27
@@ -113,6 +113,7 @@ SSL_CONFIGURE_ON=		--with-openssl=${OPENSSLBASE} \
 				LIBOPENSSL_CFLAGS=-I${OPENSSLINC} \
 				LIBOPENSSL_LIBS="-lcrypto -lssl"
 SSL_USES=			ssl
+SSL_VARS=			BROKEN_SSL=openssl-devel
 SSL_CRTD_CONFIGURE_ENABLE=	ssl-crtd
 SSL_CRTD_IMPLIES=		SSL
 STACKTRACES_CONFIGURE_ENABLE=	stacktraces
@@ -303,10 +304,6 @@ post-install:
 	(cd ${WRKSRC} && ${INSTALL_DATA} ${MYDOCS} ${STAGEDIR}${DOCSDIR})
 
 .include <bsd.port.pre.mk>
-
-.if ${PORT_OPTIONS:MSSL} && ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
 
 .if ${CHOSEN_COMPILER_TYPE} == clang
 CXXFLAGS+=	-Wno-unknown-warning-option

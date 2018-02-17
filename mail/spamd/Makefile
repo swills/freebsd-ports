@@ -1,5 +1,5 @@
 # Created by: Max Laier <max@love2party.net>
-# $FreeBSD: head/mail/spamd/Makefile 449108 2017-09-01 22:03:04Z adamw $
+# $FreeBSD: head/mail/spamd/Makefile 462135 2018-02-17 12:00:23Z sunpoet $
 
 PORTNAME=	spamd
 PORTVERSION=	4.9.1
@@ -11,6 +11,8 @@ MAINTAINER=	ohauer@FreeBSD.org
 COMMENT=	Traps spammers with a very slow smtp-login and return 4xx error
 
 LICENSE=	BSD2CLAUSE
+
+BROKEN_SSL=	openssl-devel
 
 USE_RC_SUBR?=	obspamd obspamlogd
 USES=		ssl
@@ -51,12 +53,6 @@ SUB_FILES=	pkg-install \
 
 OPTIONS_DEFINE=	DOCS
 
-.include <bsd.port.pre.mk>
-
-.if ${SSL_DEFAULT:Mopenssl-devel}
-BROKEN=		Does not build with openssl-devel
-.endif
-
 CFLAGS+=	-I${OPENSSLINC}
 LDFLAGS+=	-L${OPENSSLLIB}
 
@@ -80,4 +76,4 @@ do-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/doc/|} ${STAGEDIR}${DOCSDIR}/
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
