@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/multimedia/qt4-mobility/Makefile 434380 2017-02-18 19:48:05Z tcberner $
+# $FreeBSD: head/multimedia/qt4-mobility/Makefile 462216 2018-02-18 10:06:56Z rakuco $
 
 PORTNAME=	mobility
 PORTVERSION=	1.2.2
@@ -28,6 +28,8 @@ OPTIONS_DEFINE=	BEARER CONNECTIVITY CONTACTS FEEDBACK GALLERY LOCATION \
 		MESSAGING MULTIMEDIA ORGANIZER PUBLISHSUBSCRIBE SENSORS \
 		SERVICEFRAMEWORK SYSTEMINFO VERSIT
 OPTIONS_SUB=	yes
+
+USE_CXXSTD=	gnu++98
 
 BEARER_DESC=		Bearer module
 CONNECTIVITY_DESC=	Connectivity module

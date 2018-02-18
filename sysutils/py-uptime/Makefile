@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/py-uptime/Makefile 419607 2016-08-04 12:04:32Z koobs $
+# $FreeBSD: head/sysutils/py-uptime/Makefile 462227 2018-02-18 13:20:29Z antoine $
 
 PORTNAME=	uptime
 PORTVERSION=	3.0.1
@@ -12,7 +12,7 @@ COMMENT=	Cross-platform uptime library
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
-USES=		python:2.5+
+USES=		python
 USE_PYTHON=	autoplist distutils
 
 post-install:

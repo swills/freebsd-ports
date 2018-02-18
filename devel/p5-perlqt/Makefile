@@ -1,15 +1,15 @@
-# $FreeBSD: head/devel/p5-perlqt/Makefile 458365 2018-01-07 18:17:30Z tcberner $
+# $FreeBSD: head/devel/p5-perlqt/Makefile 462214 2018-02-18 09:55:10Z rakuco $
 
 PORTNAME=	perlqt
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel kde kde-kde4 perl5
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Perl bindings for Qt
 
-LIB_DEPENDS=	libqscintilla2.so:devel/qscintilla2 \
+LIB_DEPENDS=	libqscintilla2_qt4.so:devel/qscintilla2 \
 		libqwt.so:x11-toolkits/qwt5
 
 USES=		cmake:outsource kde:4 perl5 tar:xz

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/pcdm/Makefile 453600 2017-11-06 07:53:40Z araujo $
+# $FreeBSD: head/x11/pcdm/Makefile 462217 2018-02-18 10:14:14Z tcberner $
 
 PORTNAME=	pcdm
 PORTVERSION=	201710031254
@@ -21,7 +21,7 @@ CONFLICTS=	pcbsd-utils-qt*
 
 USES=		qmake
 USE_QT5=	core gui network svg multimedia imageformats \
-		buildtools_build x11extras concurrent
+		buildtools_build x11extras concurrent linguisttools_build
 USE_OPENRC_SUBR=pcdm
 
 USE_GITHUB=	yes

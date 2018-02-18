@@ -1,9 +1,9 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/graphics/drm-next-kmod/Makefile 459265 2018-01-17 15:37:56Z jmd $
+# $FreeBSD: head/graphics/drm-next-kmod/Makefile 462202 2018-02-18 04:41:15Z jmd $
 
 PORTNAME=	drm-next-kmod
 PORTVERSION=	g20180117
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	jmd@FreeBSD.org
@@ -28,8 +28,11 @@ GH_TAGNAME=	622fdd1
 
 .include <bsd.port.options.mk>
 
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1200045
-IGNORE=		not supported on 11.x or older, no kernel support
+.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1101510
+IGNORE=		not supported on 10.x or older, no kernel support
+.endif
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200000 && ${OSVERSION} < 1200045
+IGNORE=		not supported on older CURRENT, no kernel support
 .endif
 .if ${OPSYS} != FreeBSD
 IGNORE=		not supported on anything but FreeBSD (missing linuxkpi functionality)

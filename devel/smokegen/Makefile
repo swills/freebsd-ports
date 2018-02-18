@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/smokegen/Makefile 424182 2016-10-18 17:22:35Z tcberner $
+# $FreeBSD: head/devel/smokegen/Makefile 462214 2018-02-18 09:55:10Z rakuco $
 
 PORTNAME=	smokegen
 PORTVERSION=	${KDE4_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel kde kde-kde4
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	SMOKE bindings for KDE

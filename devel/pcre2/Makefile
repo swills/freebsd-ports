@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/pcre2/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/devel/pcre2/Makefile 462209 2018-02-18 09:02:55Z amdmi3 $
 
 PORTNAME=	pcre2
 PORTVERSION=	10.21
@@ -89,7 +89,7 @@ CORELIMIT?=	/usr/bin/limits -Sc 0
 TESTLOGS?=	RunGrepTest RunTest pcre_jit_test pcre_scanner_unittest \
 		pcre_stringpiece_unittest pcrecpp_unittest
 
-check regression-test test: build
+do-test:
 	@cd ${WRKSRC} ; \
 	${SETENV} ${MAKE_ENV} ${CORELIMIT} ${MAKE_CMD} ${MAKE_ARGS} check ; \
 	for _l in ${TESTLOGS} ; do if ${TEST} -f $${_l}.log ; then \

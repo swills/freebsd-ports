@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/py-qt5-qscintilla2/Makefile 461841 2018-02-14 21:30:14Z rakuco $
+# $FreeBSD: head/devel/py-qt5-qscintilla2/Makefile 462214 2018-02-18 09:55:10Z rakuco $
 
 PORTNAME=	qscintilla2
 PORTVERSION=	${QSCI2_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel python
 MASTER_SITES=	${MASTER_SITES_QSCI2}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}qt5-
@@ -11,7 +11,7 @@ DISTNAME=	${QSCI2_DISTNAME}
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for QScintilla2 (PyQt5), QSci module
 
-LIB_DEPENDS=	libqscintilla2-qt5.so:devel/qscintilla2-qt5
+LIB_DEPENDS=	libqscintilla2_qt5.so:devel/qscintilla2-qt5
 
 DISTINFO_FILE=	${.CURDIR:H}/qscintilla2-qt5/distinfo
 DESTDIRNAME=	INSTALL_ROOT

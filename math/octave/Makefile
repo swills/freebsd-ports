@@ -1,9 +1,9 @@
 # Created by: chuckr@FreeBSD.org
-# $FreeBSD: head/math/octave/Makefile 455301 2017-12-01 17:43:21Z joneum $
+# $FreeBSD: head/math/octave/Makefile 462214 2018-02-18 09:55:10Z rakuco $
 
 PORTNAME=	octave
 PORTVERSION=	4.0.3
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	math
 MASTER_SITES=	GNU
 
@@ -33,7 +33,7 @@ LIB_DEPENDS=	libGraphicsMagick.so:graphics/GraphicsMagick \
 		libumfpack.so:math/suitesparse \
 		libglpk.so:math/glpk \
 		libgl2ps.so:print/gl2ps \
-		libqscintilla2.so:devel/qscintilla2 \
+		libqscintilla2_qt4.so:devel/qscintilla2 \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2
 

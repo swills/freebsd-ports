@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/security/snort3/Makefile 460648 2018-02-01 22:52:29Z feld $
+# $FreeBSD: head/security/snort3/Makefile 462211 2018-02-18 09:34:58Z antoine $
 
 PORTNAME=	snort
 DISTVERSION=	3.0.0-a4.242
@@ -12,6 +12,8 @@ COMMENT=	Lightweight network intrusion detection system
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		fails to package
 
 BUILD_DEPENDS=	daq>=2.2.2:net/daq \
 		bash>0:shells/bash

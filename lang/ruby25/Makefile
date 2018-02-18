@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/lang/ruby25/Makefile 462121 2018-02-17 11:59:12Z sunpoet $
+# $FreeBSD: head/lang/ruby25/Makefile 462220 2018-02-18 11:31:21Z sunpoet $
 
 PORTNAME=	ruby
 PORTVERSION=	${RUBY_PORTVERSION}

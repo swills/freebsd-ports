@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/mitsuba/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/graphics/mitsuba/Makefile 462210 2018-02-18 09:29:27Z antoine $
 
 PORTNAME=	mitsuba
 PORTVERSION=	0.5.0
@@ -14,6 +14,8 @@ COMMENT=	Research-oriented physically based rendering system
 LICENSE=	GPLv3
 
 BROKEN=		fails to build with boost 1.65, see bug 220719
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-03-19
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libpng.so:graphics/png \

@@ -1,5 +1,5 @@
 # Created by: Anish Mistry
-# $FreeBSD: head/sysutils/fusefs-sshfs/Makefile 458485 2018-01-08 21:58:18Z bofh $
+# $FreeBSD: head/sysutils/fusefs-sshfs/Makefile 458526 2018-01-09 12:45:04Z bofh $
 
 PORTNAME=	sshfs
 PORTVERSION=	3.3.1

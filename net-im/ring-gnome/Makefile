@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net-im/ring-gnome/Makefile 450419 2017-09-23 02:59:07Z vanilla $
+# $FreeBSD: head/net-im/ring-gnome/Makefile 462210 2018-02-18 09:29:27Z antoine $
 
 PORTNAME=	ring-gnome
 PORTVERSION=	0.160516
@@ -12,6 +12,9 @@ COMMENT=	Gnome client of the Ring VoIP SIP phone and IM
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	Depends on expiring and broken net-im/ring-daemon
+EXPIRATION_DATE=	2018-03-19
 
 LIB_DEPENDS=	libringclient.so:net-im/ring-libclient \
 		libqrencode.so:graphics/libqrencode \

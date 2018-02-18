@@ -1,5 +1,5 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/security/py-stem/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-stem/Makefile 462227 2018-02-18 13:20:29Z antoine $
 
 PORTNAME=	stem
 PORTVERSION=	1.6.0
@@ -18,7 +18,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyflakes>0:devel/py-pyflakes@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pycodestyle>0:devel/py-pycodestyle@${FLAVOR}
 
-USES=		python:2.6+
+USES=		python
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

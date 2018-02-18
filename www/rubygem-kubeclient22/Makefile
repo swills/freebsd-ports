@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/www/rubygem-kubeclient22/Makefile 461935 2018-02-15 16:59:19Z tz $
 
 PORTNAME=	kubeclient
 PORTVERSION=	2.2.0

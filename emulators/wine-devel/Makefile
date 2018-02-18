@@ -1,12 +1,12 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/emulators/wine-devel/Makefile 461272 2018-02-08 21:54:24Z gerald $
+# $FreeBSD: head/emulators/wine-devel/Makefile 462223 2018-02-18 12:54:18Z gerald $
 
 PORTNAME=	wine
-DISTVERSION=	3.1
+DISTVERSION=	3.2
 PORTEPOCH=	1
 CATEGORIES=	emulators
 MASTER_SITES=	SF/${PORTNAME}/Source \
-		http://ibiblio.org/pub/linux/system/emulators/wine/
+		http://mirrors.ibiblio.org/wine/source/3.x/
 PKGNAMESUFFIX?=	-devel
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 

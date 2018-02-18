@@ -1,6 +1,7 @@
-# $FreeBSD: head/devel/py-qt4-help/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-qt4-help/Makefile 462214 2018-02-18 09:55:10Z rakuco $
 
 PORTNAME=	help
+PORTREVISION=	1
 CATEGORIES=	devel python
 
 MAINTAINER=	kde@FreeBSD.org
@@ -21,7 +22,7 @@ OPTIONS_SUB=	yes
 API_DESC=		Install QtHelp API for QScintilla2
 API_CONFIGURE_ON=	--qsci-api --qsci-api-destdir=${QSCIDIR}
 API_CONFIGURE_OFF=	--no-qsci-api
-API_LIB_DEPENDS=	libqscintilla2.so:devel/qscintilla2
+API_LIB_DEPENDS=	libqscintilla2_qt4.so:devel/qscintilla2
 DEBUG_CONFIGURE_ON=	--debug --trace
 
 .include <bsd.port.mk>

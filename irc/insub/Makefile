@@ -1,5 +1,5 @@
 # Created by: Alfred Perlstein <alfred@FreeBSD.org>
-# $FreeBSD: head/irc/insub/Makefile 439096 2017-04-21 16:31:57Z amdmi3 $
+# $FreeBSD: head/irc/insub/Makefile 462227 2018-02-18 13:20:29Z antoine $
 
 PORTNAME=	insub
 PORTVERSION=	16.0
@@ -15,7 +15,7 @@ RUN_DEPENDS=	cowsay:games/cowsay \
 USE_GITHUB=	yes
 GH_ACCOUNT=	cjones
 
-USES=		perl5 python:2.5+ shebangfix
+USES=		perl5 python shebangfix
 SHEBANG_FILES=	insub.py
 USE_PERL5=	run
 NO_BUILD=	yes

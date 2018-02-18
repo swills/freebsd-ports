@@ -1,5 +1,5 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/devel/qscintilla2-designerplugin/Makefile 414007 2016-04-25 14:41:38Z mat $
+# $FreeBSD: head/devel/qscintilla2-designerplugin/Makefile 462214 2018-02-18 09:55:10Z rakuco $
 
 PORTNAME=	designerplugin
 PORTVERSION=	${QSCI2_VERSION}
@@ -12,7 +12,7 @@ DISTNAME=	${QSCI2_DISTNAME}
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt4 Designer plugin for QScintilla2
 
-LIB_DEPENDS=	libqscintilla2.so:devel/qscintilla2
+LIB_DEPENDS=	libqscintilla2_qt4.so:devel/qscintilla2
 
 DISTINFO_FILE=	${.CURDIR:H}/qscintilla2/distinfo
 USES=		qmake pyqt:4

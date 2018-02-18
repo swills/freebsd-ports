@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/daemonize/Makefile 405163 2016-01-03 15:17:13Z miwi $
+# $FreeBSD: head/sysutils/daemonize/Makefile 462206 2018-02-18 08:41:33Z joneum $
 
 PORTNAME=	daemonize
-PORTVERSION=	1.7.7
+DISTVERSION=	1.7.8
 DISTVERSIONPREFIX=	release-
 CATEGORIES=	sysutils
 
