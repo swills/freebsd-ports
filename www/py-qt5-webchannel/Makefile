@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-qt5-webchannel/Makefile 460949 2018-02-04 20:56:45Z rakuco $
+# $FreeBSD: head/www/py-qt5-webchannel/Makefile 462214 2018-02-18 09:55:10Z rakuco $
 
 PORTNAME=	webchannel
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www devel python
 
 MAINTAINER=	kde@FreeBSD.org
@@ -25,7 +25,7 @@ OPTIONS_SUB=		yes
 API_DESC=		Install QtWebChannel API for QScintilla2
 API_CONFIGURE_ON=	--qsci-api --qsci-api-destdir=${QSCIDIR}
 API_CONFIGURE_OFF=	--no-qsci-api
-API_LIB_DEPENDS=	libqscintilla2-qt5.so:devel/qscintilla2-qt5
+API_LIB_DEPENDS=	libqscintilla2_qt5.so:devel/qscintilla2-qt5
 DEBUG_CONFIGURE_ON=	--debug --trace
 
 post-install-DEBUG-off:

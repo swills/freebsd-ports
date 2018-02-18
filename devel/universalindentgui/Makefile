@@ -1,9 +1,9 @@
 # Created by: Andriy Gapon <avg@icyb.net.ua>
-# $FreeBSD: head/devel/universalindentgui/Makefile 461809 2018-02-14 15:02:27Z amdmi3 $
+# $FreeBSD: head/devel/universalindentgui/Makefile 462214 2018-02-18 09:55:10Z rakuco $
 
 PORTNAME=	universalindentgui
 PORTVERSION=	1.2.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel
 MASTER_SITES=	SF/universalindent/uigui/UniversalIndentGUI_${PORTVERSION}
 
@@ -13,7 +13,7 @@ COMMENT=	Graphical UI for multiple source code indent/format/beautify tools
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE.GPL
 
-LIB_DEPENDS=	libqscintilla2.so:devel/qscintilla2
+LIB_DEPENDS=	libqscintilla2_qt4.so:devel/qscintilla2
 
 USES=		dos2unix qmake python:run shebangfix
 SHEBANG_FILES=	indenters/*.py indenters/*.rb

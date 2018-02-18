@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net-im/ring-libclient/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net-im/ring-libclient/Makefile 462210 2018-02-18 09:29:27Z antoine $
 
 PORTNAME=	ring-libclient
 PORTVERSION=	0.160516
@@ -11,6 +11,9 @@ MAINTAINER=	yuri@rawbw.com
 COMMENT=	Client library for the Ring VoIP SIP phone and IM
 
 LICENSE=	GPLv3
+
+DEPRECATED=	Depends on expiring and broken net-im/ring-daemon
+EXPIRATION_DATE=	2018-03-19
 
 LIB_DEPENDS=	libring.so:net-im/ring-daemon
 

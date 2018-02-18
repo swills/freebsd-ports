@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-simple_bayes/Makefile 449093 2017-09-01 18:21:10Z antoine $
+# $FreeBSD: head/devel/elixir-simple_bayes/Makefile 462210 2018-02-18 09:29:27Z antoine $
 
 PORTNAME=	simple_bayes
 DISTVERSION=	1.0.0
@@ -12,6 +12,8 @@ COMMENT=	Naive Bayes machine learning implementation in Elixir
 LICENSE=	MIT
 
 BROKEN=		fails to build
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-03-19
 
 USES=		elixir
 USE_GITHUB=	yes

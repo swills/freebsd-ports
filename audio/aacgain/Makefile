@@ -1,9 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/audio/aacgain/Makefile 387913 2015-05-30 06:31:47Z riggs $
+# $FreeBSD: head/audio/aacgain/Makefile 462207 2018-02-18 08:49:14Z riggs $
 
 PORTNAME=	aacgain
 PORTVERSION=	1.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://aacgain.altosdesign.com/alvarez/
 
@@ -13,5 +13,7 @@ COMMENT=	Normalizes the volume of mp3 and AAC (mp4/m4a/QuickTime) media files
 GNU_CONFIGURE=	yes
 USES=		gmake libtool tar:bzip2
 PLIST_FILES=	bin/aacgain
+
+CXXFLAGS+=	--std=c++98
 
 .include <bsd.port.mk>

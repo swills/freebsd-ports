@@ -1,5 +1,5 @@
 # Created by: Andrei V. Shetuhin <reki@reki.ru>
-# $FreeBSD: head/textproc/p5-HTML-CTPP2/Makefile 442718 2017-06-05 23:26:00Z sunpoet $
+# $FreeBSD: head/textproc/p5-HTML-CTPP2/Makefile 462210 2018-02-18 09:29:27Z antoine $
 
 PORTNAME=	HTML-CTPP2
 PORTVERSION=	2.6.7
@@ -16,6 +16,8 @@ BUILD_DEPENDS=	ctpp2>=2.5.1:textproc/ctpp2
 LIB_DEPENDS=	libctpp2.so:textproc/ctpp2
 
 BROKEN=		Fails to build with Perl >= 5.22
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-03-19
 
 USES=		perl5
 USE_PERL5=	configure

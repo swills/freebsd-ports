@@ -1,5 +1,5 @@
 # Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/graphics/code-eli/Makefile 457914 2018-01-02 16:49:24Z tcberner $
+# $FreeBSD: head/graphics/code-eli/Makefile 462210 2018-02-18 09:29:27Z antoine $
 
 PORTNAME=	code-eli
 PORTVERSION=	0.3.6
@@ -13,6 +13,8 @@ LICENSE=	EPL
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 BROKEN=		Needs work to use math/eigen3 currently in ports
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-03-19
 
 USE_GITHUB=	yes
 GH_PROJECT=	Code-Eli

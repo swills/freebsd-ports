@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/benchmarks/expedite/Makefile 450248 2017-09-21 10:54:03Z gblach $
+# $FreeBSD: head/benchmarks/expedite/Makefile 462210 2018-02-18 09:29:27Z antoine $
 
 PORTNAME=	expedite
 PORTVERSION=	1.7.10
@@ -31,5 +31,7 @@ SDL_CONFIGURE_ENABLE=		software-sdl
 X11_CONFIGURE_ENABLE=		software-x11 xrender-x11
 
 BROKEN=		Do not build with devel/efl 1.19.x
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-03-19
 
 .include <bsd.port.mk>

@@ -1,7 +1,8 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/x11/py-qt4-opengl/Makefile 457921 2018-01-02 20:21:34Z rakuco $
+# $FreeBSD: head/x11/py-qt4-opengl/Makefile 462214 2018-02-18 09:55:10Z rakuco $
 
 PORTNAME=	opengl
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	x11 devel python
 
@@ -24,7 +25,7 @@ OPTIONS_SUB=	yes
 API_DESC=		Install QtOpenGL API for QScintilla2
 API_CONFIGURE_ON=	--qsci-api --qsci-api-destdir=${QSCIDIR}
 API_CONFIGURE_OFF=	--no-qsci-api
-API_LIB_DEPENDS=	libqscintilla2.so:devel/qscintilla2
+API_LIB_DEPENDS=	libqscintilla2_qt4.so:devel/qscintilla2
 DEBUG_CONFIGURE_ON=	--debug --trace
 
 .include <bsd.port.mk>

@@ -1,9 +1,9 @@
 # Created by: Michael Reifenberger <mr@FreeBSD.org>
-# $FreeBSD: head/cad/openscad/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/cad/openscad/Makefile 462214 2018-02-18 09:55:10Z rakuco $
 
 PORTNAME=	openscad
 PORTVERSION=	2015.03
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	cad
 MASTER_SITES=	http://files.openscad.org/
 DISTNAME=	openscad-${PORTVERSION}.src
@@ -19,7 +19,7 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/flex:textproc/flex \
 LIB_DEPENDS=	libgmp.so:math/gmp \
 		libmpfr.so:math/mpfr \
 		libCGAL.so:math/cgal \
-		libqscintilla2.so:devel/qscintilla2 \
+		libqscintilla2_qt4.so:devel/qscintilla2 \
 		libharfbuzz.so:print/harfbuzz \
 		libopencsg.so:graphics/opencsg
 

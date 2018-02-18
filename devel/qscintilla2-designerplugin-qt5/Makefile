@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/qscintilla2-designerplugin-qt5/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/devel/qscintilla2-designerplugin-qt5/Makefile 462214 2018-02-18 09:55:10Z rakuco $
 
 PORTNAME=	designerplugin-qt5
 PORTVERSION=	${QSCI2_VERSION}
-PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITES_QSCI2}
 PKGNAMEPREFIX=	qscintilla2-
@@ -11,7 +10,7 @@ DISTNAME=	${QSCI2_DISTNAME}
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt5 Designer plugin for QScintilla2
 
-LIB_DEPENDS=	libqscintilla2-qt5.so:devel/qscintilla2-qt5
+LIB_DEPENDS=	libqscintilla2_qt5.so:devel/qscintilla2-qt5
 
 DISTINFO_FILE=	${.CURDIR:H}/qscintilla2-qt5/distinfo
 USE_GL=		gl

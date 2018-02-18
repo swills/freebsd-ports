@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/py-qt5-multimediawidgets/Makefile 461841 2018-02-14 21:30:14Z rakuco $
+# $FreeBSD: head/multimedia/py-qt5-multimediawidgets/Makefile 462214 2018-02-18 09:55:10Z rakuco $
 
 PORTNAME=	multimediawidgets
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	multimedia devel python
 
 MAINTAINER=	kde@FreeBSD.org
@@ -23,7 +23,7 @@ OPTIONS_SUB=	yes
 API_DESC=		Install QtMultimedia API for QScintilla2
 API_CONFIGURE_ON=	--qsci-api --qsci-api-destdir=${QSCIDIR}
 API_CONFIGURE_OFF=	--no-qsci-api
-API_LIB_DEPENDS=	libqscintilla2-qt5.so:devel/qscintilla2-qt5
+API_LIB_DEPENDS=	libqscintilla2_qt5.so:devel/qscintilla2-qt5
 DEBUG_CONFIGURE_ON=	--debug --trace
 
 .include <bsd.port.mk>

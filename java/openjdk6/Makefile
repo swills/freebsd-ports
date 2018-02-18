@@ -1,8 +1,8 @@
 # Created by: Brian Gardner <brian@experts-exchange.com>
-# $FreeBSD: head/java/openjdk6/Makefile 450711 2017-09-27 05:03:03Z jkim $
+# $FreeBSD: head/java/openjdk6/Makefile 462201 2018-02-18 00:34:56Z glewis $
 
 PORTNAME=	openjdk6
-PORTVERSION=	b44
+PORTVERSION=	b45
 PORTEPOCH=	1
 CATEGORIES=	java devel
 MASTER_SITES=	APACHE/ant/binaries/:ant \
@@ -14,7 +14,8 @@ DISTFILES=	${ANTFILE}:ant \
 EXTRACT_ONLY=	${JDK_SRC_DISTFILE}${EXTRACT_SUFX} ${ANTFILE}
 PATCHFILES=	patch-6-b42.xz \
 		patch-6-b43.xz \
-		patch-6-b44.xz
+		patch-6-b44.xz \
+		patch-6-b45.xz
 
 MAINTAINER=	java@FreeBSD.org
 COMMENT?=	Oracle's Java 6 virtual machine release under the GPL v2

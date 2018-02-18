@@ -1,5 +1,5 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/devel/qscintilla2/Makefile 403297 2015-12-08 16:49:43Z rakuco $
+# $FreeBSD: head/devel/qscintilla2/Makefile 462214 2018-02-18 09:55:10Z rakuco $
 
 PORTNAME=	qscintilla2
 PORTVERSION=	${QSCI2_VERSION}
@@ -13,7 +13,7 @@ COMMENT=	Qt 4 port of the Scintilla C++ editor class
 
 USES=		qmake pyqt:4
 USE_PYQT=	#
-USE_QT4=	moc_build gui xml designer
+USE_QT4=	moc_build corelib gui xml designer
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 
 BUILD_WRKSRC=		${WRKSRC}/Qt4Qt5
