@@ -1,5 +1,5 @@
 # Created by: Jakub Kruszona-Zawadzki <acid@moosefs.com> ; Based on port created by: Chifeng Qu <chifeng@gmail.com>
-# $FreeBSD: head/sysutils/moosefs2-master/Makefile 423016 2016-09-30 19:36:31Z madpilot $
+# $FreeBSD: head/sysutils/moosefs2-master/Makefile 462227 2018-02-18 13:20:29Z antoine $
 
 PORTNAME=		moosefs2
 PORTVERSION=		2.0.91
@@ -33,7 +33,7 @@ CONFIGURE_ARGS+=	--localstatedir=${MFS_WORKDIR} \
 
 .if ${MFS_COMPONENT} == cgi
 MFS_CGIDIR=		${PREFIX}/share/mfscgi
-USES=			python:2.5+
+USES=			python
 CONFIGURE_ARGS+=	--enable-mfscgi \
 			--with-mfscgi-dir=${MFS_CGIDIR}
 .else
@@ -42,7 +42,7 @@ CONFIGURE_ARGS+=	--disable-mfscgi
 
 .if ${MFS_COMPONENT} == cgiserv
 MFS_CGISERVDIR=		${PREFIX}/sbin
-USES=			python:2.5+
+USES=			python
 USE_RC_SUBR=		mfscgiserv
 SUB_FILES+=		pkg-message-cgiserv
 PKGMESSAGE=		${WRKDIR}/pkg-message-cgiserv
@@ -65,7 +65,7 @@ CONFIGURE_ARGS+=	--disable-mfschunkserver
 .endif
 
 .if ${MFS_COMPONENT} == cli
-USES=			python:2.5+
+USES=			python
 CONFIGURE_ARGS+=	--enable-mfscli
 .else
 CONFIGURE_ARGS+=	--disable-mfscli

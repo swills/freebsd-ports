@@ -1,5 +1,5 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/databases/pg_activity/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/pg_activity/Makefile 462227 2018-02-18 13:20:29Z antoine $
 
 PORTNAME=	pg_activity
 PORTVERSION=	1.3.1
@@ -19,7 +19,7 @@ OPTIONS_DEFINE=	DOCS
 USE_GITHUB=	yes
 GH_ACCOUNT=	julmon
 
-USES=		python:2.6+
+USES=		python
 USE_PYTHON=	autoplist distutils noegginfo concurrent optsuffix
 PYDISTUTILS_INSTALLARGS=	--with-man
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/pgpin/Makefile 449022 2017-08-31 10:39:46Z dinoex $
+# $FreeBSD: head/security/pgpin/Makefile 456557 2017-12-17 16:02:57Z rene $
 
 PORTNAME=	pgpin
 PORTVERSION=	010323

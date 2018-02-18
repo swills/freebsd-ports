@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-gitpython/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-gitpython/Makefile 462226 2018-02-18 13:11:51Z wen $
 
 PORTNAME=	GitPython
-DISTVERSION=	2.1.7
+DISTVERSION=	2.1.8
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

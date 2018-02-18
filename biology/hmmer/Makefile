@@ -1,5 +1,5 @@
 # Created by: barnhart@genetics.wustl.edu
-# $FreeBSD: head/biology/hmmer/Makefile 453972 2017-11-11 12:51:52Z wen $
+# $FreeBSD: head/biology/hmmer/Makefile 456588 2017-12-18 04:28:28Z linimon $
 
 PORTNAME=	hmmer
 PORTVERSION=	3.1b2
