@@ -1,9 +1,9 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/www/trac-timingandestimation/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/www/trac-timingandestimation/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	timingandestimation
 PORTVERSION=	1.0.8b
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www devel python
 MASTER_SITES=	http://www.sourcehosting.net/freebsd/distfiles/ \
 		LOCAL/glarkin
@@ -16,7 +16,7 @@ COMMENT=	Add estimation and time tracking functionality to Trac
 RUN_DEPENDS=	tracd:www/trac
 
 WRKSRC=		${WRKDIR}/${PORTNAME}plugin/branches/trac0.12-Permissions
-USES=		python:2 zip
+USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

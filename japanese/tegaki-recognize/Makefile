@@ -1,8 +1,9 @@
 # Created by: Timothy Beyer <beyert@cs.ucr.edu>
-# $FreeBSD: head/japanese/tegaki-recognize/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/japanese/tegaki-recognize/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	tegaki
 PORTVERSION=	0.3.1.2
+PORTREVISION=	1
 CATEGORIES=	japanese python
 MASTER_SITES=	http://www.tegaki.org/releases/${PORTVERSION:.2=}/
 PKGNAMESUFFIX=	-recognize
@@ -18,7 +19,7 @@ RUN_DEPENDS=	${PYTHON_SITELIBDIR}/tegakigtk/recognizer.py:japanese/py-tegaki-gtk
 
 OPTIONS_DEFINE=	DOCS
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGNAME=	${PORTNAME}_recognize
 

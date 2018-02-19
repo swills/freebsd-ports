@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/net-im/telepathy-farstream/Makefile 433710 2017-02-09 05:25:59Z fluffy $
+# $FreeBSD: head/net-im/telepathy-farstream/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	telepathy-farstream
 PORTVERSION=	0.6.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-im
 MASTER_SITES=	http://telepathy.freedesktop.org/releases/${PORTNAME}/
 
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libdbus-glib-1.so:devel/dbus-glib \
 		libtelepathy-glib.so:net-im/telepathy-glib \
 		libfarstream-0.2.so:net-im/farstream
 
-USES=		gmake libtool pathfix pkgconfig python:2
+USES=		gmake libtool pathfix pkgconfig python:2.7
 USE_GNOME=	glib20 libxslt:build introspection:build
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes

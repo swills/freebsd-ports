@@ -1,9 +1,9 @@
 # Created by: Andrey Fesenko <andrey@bsdnir.info>
-# $FreeBSD: head/games/pyfa/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/games/pyfa/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	pyfa
 PORTVERSION=	1.19.1
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games python
 
@@ -21,7 +21,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	pyfa-org
 GH_PROJECT=	Pyfa
 
-USES=		python:2 dos2unix
+USES=		python:2.7 dos2unix
 DOS2UNIX_GLOB=	*.py
 NO_ARCH=	yes
 

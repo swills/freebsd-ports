@@ -1,9 +1,9 @@
 # Created by: Rainer Hurling <rhurlin@gwdg.de>
-# $FreeBSD: head/math/saga/Makefile 459566 2018-01-21 02:22:17Z jbeich $
+# $FreeBSD: head/math/saga/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	saga
 PORTVERSION=	6.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	SF/saga-gis/SAGA%20-%20${PORTVERSION:C/\.[[:digit:]]\.[[:digit:]]*$//}/SAGA%20-%20${PORTVERSION}
 
@@ -29,7 +29,7 @@ LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		autoreconf compiler:gcc-c++11-lib desktop-file-utils dos2unix \
-		iconv:wchar_t libtool localbase pkgconfig python:2
+		iconv:wchar_t libtool localbase pkgconfig python:2.7
 USE_LDCONFIG=	yes
 USE_CXXSTD=	c++11
 USE_WX=		3.0+

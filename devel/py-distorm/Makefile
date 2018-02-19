@@ -1,11 +1,11 @@
 # Created by: Lutz Boehne <lboehne@damogran.de>
-# $FreeBSD: head/devel/py-distorm/Makefile 344941 2014-02-18 18:55:49Z antoine $
+# $FreeBSD: head/devel/py-distorm/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	distorm
 
 COMMENT=	Python interface for fast x86 and x86-64 disassembler library
 
-PORTREVISION=		0
+PORTREVISION=		1
 PYTHON_SLAVEPORT=	yes
 MASTERDIR=		${.CURDIR}/../distorm
 

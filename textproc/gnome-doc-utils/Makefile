@@ -1,10 +1,10 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/textproc/gnome-doc-utils/Makefile 455252 2017-12-01 08:05:22Z mat $
+# $FreeBSD: head/textproc/gnome-doc-utils/Makefile 462307 2018-02-19 11:10:43Z antoine $
 #   $MCom: ports/trunk/textproc/gnome-doc-utils/Makefile 19009 2014-03-02 22:41:42Z kwm $
 
 PORTNAME=	gnome-doc-utils
 PORTVERSION=	0.20.10
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	textproc gnome
 MASTER_SITES=	GNOME
 
@@ -17,7 +17,7 @@ RUN_DEPENDS=	rarian-sk-config:textproc/rarian \
 		${PYTHON_SITELIBDIR}/libxml2mod.so:textproc/py-libxml2@${PY_FLAVOR} \
 		docbook-xml>0:textproc/docbook-xml
 
-USES=		gettext-tools:build,run gmake pathfix pkgconfig python:2 tar:xz
+USES=		gettext-tools:build,run gmake pathfix pkgconfig python:2.7 tar:xz
 USE_GNOME=	libxslt intlhack
 INSTALLS_OMF=	yes
 GNU_CONFIGURE=	yes

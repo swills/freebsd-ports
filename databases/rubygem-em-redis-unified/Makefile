@@ -1,11 +1,11 @@
-# $FreeBSD: head/databases/rubygem-em-redis-unified/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/databases/rubygem-em-redis-unified/Makefile 462232 2018-02-18 13:37:44Z sunpoet $
 
 PORTNAME=	em-redis-unified
 PORTVERSION=	1.0.1
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Eventmachine-based implementation of the Redis protocol
 
 LICENSE=	MIT

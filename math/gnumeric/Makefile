@@ -1,8 +1,9 @@
 # Created by: Yukihiro Nakai <Nakai@technologist.com>
-# $FreeBSD: head/math/gnumeric/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/gnumeric/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	gnumeric
 PORTVERSION=	1.12.28
+PORTREVISION=	1
 CATEGORIES=	math gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -19,7 +20,7 @@ LIB_DEPENDS=	libgoffice-0.10.so:devel/goffice010 \
 RUN_DEPENDS=	rarian-sk-config:textproc/rarian
 
 USES=		cpe desktop-file-utils gettext gmake libtool pathfix pkgconfig \
-		python:2 shebangfix tar:xz
+		python:2.7 shebangfix tar:xz
 USE_GNOME=	intlhack libgsf pygobject3
 INSTALLS_OMF=	yes
 USE_LDCONFIG=	yes

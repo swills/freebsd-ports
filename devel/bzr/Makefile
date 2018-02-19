@@ -1,9 +1,9 @@
 # Created by: Ulf Lilleengen
-# $FreeBSD: head/devel/bzr/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/bzr/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	bzr
 PORTVERSION=	2.7.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 
@@ -20,7 +20,7 @@ CA_BUNDLE_RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root
 
 USE_PYTHON=	distutils cython
 PYDISTUTILS_PKGNAME=	bzr
-USES=		gettext python:2
+USES=		gettext python:2.7
 MAKE_ENV=	BZR_LOG=/dev/null
 
 post-install:

@@ -1,9 +1,9 @@
 # Created by: bruno
-# $FreeBSD: head/games/childsplay/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/games/childsplay/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	childsplay
 PORTVERSION=	2.6.5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games
 MASTER_SITES=	SAVANNAH
 
@@ -19,7 +19,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlalchemy10>0:databases/py-sqlalchemy10@${P
 
 NO_BUILD=	yes
 
-USES=		gettext shebangfix tar:tgz python:2
+USES=		gettext shebangfix tar:tgz python:2.7
 USE_GNOME=	pygtk2
 
 SHEBANG_FILES=	childsplay.py

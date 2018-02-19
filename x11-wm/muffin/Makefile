@@ -1,8 +1,9 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/x11-wm/muffin/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/x11-wm/muffin/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	muffin
 PORTVERSION=	2.4.4
+PORTREVISION=	1
 CATEGORIES=	x11-wm gnome
 DIST_SUBDIR=	gnome3
 
@@ -19,7 +20,7 @@ LIB_DEPENDS=	libstartup-notification-1.so:x11/startup-notification \
 RUN_DEPENDS=	zenity>=3.0.0:x11/zenity
 
 USES=		autoreconf:build gettext libtool gmake \
-		pathfix pkgconfig python:2
+		pathfix pkgconfig python:2.7
 USE_GITHUB=	yes
 GH_ACCOUNT=	linuxmint
 USE_GNOME=	gconf2 gnomedocutils gnomeprefix gtk30 \

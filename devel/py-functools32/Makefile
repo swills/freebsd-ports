@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-functools32/Makefile 401344 2015-11-12 13:14:47Z wg $
+# $FreeBSD: head/devel/py-functools32/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	functools32
 PORTVERSION=	3.2.3
+PORTREVISION=	1
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -15,7 +16,7 @@ GH_ACCOUNT=	MiCHiLU
 GH_PROJECT=	python-functools32
 GH_TAGNAME=	ad90fa8
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

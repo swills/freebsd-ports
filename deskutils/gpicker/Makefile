@@ -1,9 +1,9 @@
-# $FreeBSD: head/deskutils/gpicker/Makefile 453325 2017-11-01 23:03:20Z yuri $
+# $FreeBSD: head/deskutils/gpicker/Makefile 462305 2018-02-19 10:31:19Z sunpoet $
 
 PORTNAME=	gpicker
 DISTVERSION=	2.3
 CATEGORIES=	deskutils
-MASTER_SITES=	SAVANNAH/${PORTNAME}
+MASTER_SITES=	SAVANNAH
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Program allowing to quickly pick a file in a large project

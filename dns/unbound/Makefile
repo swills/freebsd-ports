@@ -1,9 +1,9 @@
 # Created by: Sergey Matveychuk <sem@FreeBSD.org>
-# $FreeBSD: head/dns/unbound/Makefile 460451 2018-01-31 00:28:30Z adamw $
+# $FreeBSD: head/dns/unbound/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	unbound
 PORTVERSION=	1.6.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	dns
 MASTER_SITES=	http://unbound.net/downloads/
 
@@ -75,7 +75,7 @@ PYTHON_BUILD_DEPENDS=	swig3.0:devel/swig30
 PYTHON_CONFIGURE_ON=	--with-pyunbound=yes --with-pythonmodule=yes \
 			LDFLAGS="-L${LOCALBASE}/lib" \
 			ac_cv_path_SWIG=${LOCALBASE}/bin/swig3.0
-PYTHON_USES=		python:2
+PYTHON_USES=		python:2.7
 PYTHON_VARS=		STRIP_FILES+=.libs/_unbound.so
 THREADS_CONFIGURE_WITH=	pthreads
 

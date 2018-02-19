@@ -1,8 +1,9 @@
 # Created by: Kevin Bowling <k@kev009.com>
-# $FreeBSD: head/net/nsscache/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/nsscache/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	nsscache
 PORTVERSION=	0.32
+PORTREVISION=	1
 DISTVERSIONPREFIX=	version/
 CATEGORIES=	net python
 
@@ -15,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pycurl.so:ftp/py-pycurl@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ldap>0:net/py-ldap@${FLAVOR}
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 USE_GITHUB=	yes
 GH_ACCOUNT=	google

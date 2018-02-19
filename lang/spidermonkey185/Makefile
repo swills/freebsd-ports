@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/spidermonkey185/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/lang/spidermonkey185/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=		spidermonkey185
 PORTVERSION=		1.8.5
@@ -17,7 +17,7 @@ LIB_DEPENDS=		libnspr4.so:devel/nspr
 
 CONFLICTS=		njs-[0-9]*
 
-USES=			gmake pathfix perl5 pkgconfig python:2,build
+USES=			gmake pathfix perl5 pkgconfig python:2.7,build
 GNU_CONFIGURE=		yes
 USE_LDCONFIG=		yes
 USE_PERL5=		build

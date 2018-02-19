@@ -1,5 +1,5 @@
 # Created by: David O'Brien <obrien@FreeBSD.org>
-# $FreeBSD: head/sysutils/lsof/Makefile 462189 2018-02-17 19:39:31Z ler $
+# $FreeBSD: head/sysutils/lsof/Makefile 462258 2018-02-18 18:35:22Z ler $
 
 PORTNAME=	lsof
 DISTVERSION=	4.90
@@ -8,18 +8,7 @@ PORTEPOCH=	8
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/ \
 		ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/NEW/ \
-		LOCAL/ler/lsof \
-		ftp://ftp.ayamura.org/pub/lsof/ \
-		ftp://ftp.ayamura.org/pub/lsof/NEW/ \
-		ftp://ftp.cerias.purdue.edu/pub/tools/unix/sysutils/lsof/ \
-		ftp://ftp.cerias.purdue.edu/pub/tools/unix/sysutils/lsof/NEW/ \
-		ftp://gd.tuwien.ac.at/utils/admin-tools/lsof/ \
-		ftp://gd.tuwien.ac.at/utils/admin-tools/lsof/NEW/ \
-		ftp://ftp.sunet.se/pub/unix/admin/lsof/  \
-		ftp://ftp.sunet.se/pub/unix/admin/lsof/NEW/ \
-		ftp://ftp.cert.dfn.de/pub/tools/admin/lsof/  \
-		ftp://ftp.cert.dfn.de/pub/tools/admin/lsof/NEW/ \
-		ftp://ftp.tau.ac.il/pub/unix/admin/
+		LOCAL/ler/lsof 
 DISTNAME=	${PORTNAME}_${DISTVERSION}${DISTNAME_SUFFIX}
 
 MAINTAINER=	ler@FreeBSD.org

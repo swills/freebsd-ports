@@ -1,8 +1,9 @@
 # Created by: William Grzybowski <william88@gmail.com>
-# $FreeBSD: head/multimedia/py-enzyme/Makefile 461431 2018-02-10 21:02:54Z sunpoet $
+# $FreeBSD: head/multimedia/py-enzyme/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	enzyme
 PORTVERSION=	0.4.1
+PORTREVISION=	1
 CATEGORIES=	multimedia python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +13,7 @@ COMMENT=	Python module to parse metadata in video files
 
 LICENSE=	APACHE20
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

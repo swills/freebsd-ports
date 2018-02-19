@@ -1,10 +1,10 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/devel/py-gobject/Makefile 455252 2017-12-01 08:05:22Z mat $
+# $FreeBSD: head/devel/py-gobject/Makefile 462307 2018-02-19 11:10:43Z antoine $
 #   $MCom: ports/devel/py-gobject/Makefile,v 1.58 2012/12/30 18:15:16 mezz Exp $
 
 PORTNAME=	gobject
 PORTVERSION=	2.28.6
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	devel python
 MASTER_SITES=	GNOME/sources/pygobject/${PORTVERSION:C/^([0-9]+\.[0-9]+).*/\1/}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -22,7 +22,7 @@ RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/pycairo.pc:graphics/py-cairo@${PY_FL
 
 PORTSCOUT=	ignore:1
 
-USES=		gmake libtool pathfix pkgconfig python:2 tar:xz shebangfix
+USES=		gmake libtool pathfix pkgconfig python:2.7 tar:xz shebangfix
 USE_GNOME=	glib20 introspection:build,run
 USE_PYTHON=	flavors
 GNU_CONFIGURE=	yes

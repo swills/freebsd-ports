@@ -1,8 +1,8 @@
 # Created by: swallace
-# $FreeBSD: head/cad/irsim/Makefile 448073 2017-08-17 00:55:03Z danilo $
+# $FreeBSD: head/cad/irsim/Makefile 462268 2018-02-18 22:19:11Z danilo $
 
 PORTNAME=	irsim
-PORTVERSION=	9.7.98
+PORTVERSION=	9.7.100
 CATEGORIES=	cad
 MASTER_SITES=	http://opencircuitdesign.com/irsim/archive/
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/sonarr/Makefile 457113 2017-12-23 22:51:32Z feld $
+# $FreeBSD: head/net-p2p/sonarr/Makefile 462252 2018-02-18 17:07:36Z feld $
 
 PORTNAME=	sonarr
 PORTVERSION=	2.0.0.5085
@@ -35,5 +35,9 @@ X11_LIB_DEPENDS+=libgdiplus.so:x11-toolkits/libgdiplus
 do-install:
 	${INSTALL} -d -m 755 ${STAGEDIR}/${DATADIR}
 	cd ${WRKSRC} && ${COPYTREE_SHARE} \* ${STAGEDIR}/${DATADIR}
+
+post-install:
+	@${FIND} -s ${STAGEDIR}${DATADIR} -not -type d | ${SORT} | \
+		${SED} -e 's#^${STAGEDIR}${PREFIX}/##' >> ${TMPPLIST}
 
 .include <bsd.port.mk>

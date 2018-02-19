@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/www/jtoolkit/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/jtoolkit/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	jToolkit
 PORTVERSION=	0.7.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www python
 MASTER_SITES=	SF
 
@@ -14,7 +14,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}kid>=0.9.5:devel/py-kid@${FLAVOR}
 # Has optional dependencies on database engines
 # Can optionally use py-lucene (on i386)
 
-USES=		python:2
+USES=		python:2.7
 NO_ARCH=	yes
 USE_PYTHON=	distutils
 PYSETUP=	${PORTNAME}Setup.py

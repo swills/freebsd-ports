@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/gnuradio/Makefile 461885 2018-02-15 12:34:49Z mat $
+# $FreeBSD: head/comms/gnuradio/Makefile 462271 2018-02-19 03:51:53Z linimon $
 
 PORTNAME=	gnuradio
 PORTVERSION=	3.7.10.1
@@ -11,6 +11,10 @@ MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Amateur Radio Software defined radio
 
 LICENSE=	GPLv3
+
+BROKEN_aarch64=		fails to compile: /usr/lib/clang/5.0.0/include/mmintrin.h:47:5: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
+BROKEN_armv6=		fails to compile: /usr/lib/clang/5.0.0/include/mmintrin.h:47:5: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
+BROKEN_armv7=		fails to compile: /usr/lib/clang/5.0.0/include/mmintrin.h:47:5: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
 
 BUILD_DEPENDS=	sdl-config:devel/sdl12 \
 		swig3.0:devel/swig30 \
@@ -36,8 +40,6 @@ LIB_DEPENDS=	libcppunit.so:devel/cppunit \
 		libboost_date_time.so:devel/boost-libs \
 		liborc-0.4.so:devel/orc
 RUN_DEPENDS:=	${BUILD_DEPENDS}
-
-BROKEN_aarch64=		fails to compile: /usr/lib/clang/5.0.0/include/mmintrin.h:47:5: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
 
 # USES=compiler:c11 is necessary because base GCC fails:
 # volk/lib/volk_cpu.c: In function 'i_can_has_3dnow':

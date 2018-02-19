@@ -1,10 +1,10 @@
 # Created by: Shane Ambler <FreeBSD@Shaneware.biz>
-# $FreeBSD: head/graphics/openimageio/Makefile 461885 2018-02-15 12:34:49Z mat $
+# $FreeBSD: head/graphics/openimageio/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	openimageio
 PORTVERSION=	1.7.17
 DISTVERSIONPREFIX=	Release-
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES?=	graphics multimedia
 
 MAINTAINER?=	FreeBSD@Shaneware.biz
@@ -97,7 +97,7 @@ LIB_DEPENDS+=	libOpenImageIO.so:graphics/openimageio \
 		${PY_BOOST}
 PLIST=		${PKGDIR}/pkg-plist-pybind
 #while oiio supports py3, ports doesn't have py3 support for boost-python yet
-USES+=		python:2
+USES+=		python:2.7
 CMAKE_ARGS+=	-DUSE_PYTHON:BOOL=ON -DUSE_PYTHON3:BOOL=OFF \
 		-DOIIO_BUILD_TOOLS:BOOL=OFF -DUSE_FFMPEG:BOOL=OFF
 .endif

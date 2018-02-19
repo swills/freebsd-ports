@@ -1,8 +1,9 @@
 # Created by: Carlo Strub <c-s@c-s.li>
-# $FreeBSD: head/www/py-surl/Makefile 376109 2015-01-03 08:41:20Z mva $
+# $FreeBSD: head/www/py-surl/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	surl
 PORTVERSION=	0.7.1.1
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://launchpadlibrarian.net/96097348/ \
 		http://www.c-s.li/ports/
@@ -13,7 +14,7 @@ COMMENT=	URL shortening command line application
 
 LICENSE=	GPLv3
 
-USES=		python:2 tar:bzip2
+USES=		python:2.7 tar:bzip2
 USE_PYTHON=	distutils
 
 post-patch:

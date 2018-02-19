@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/math/biggles/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/biggles/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	biggles
 PORTVERSION=	1.6.6
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math
 MASTER_SITES=	SF
 DISTNAME=	python2-${PORTNAME}-${PORTVERSION}
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	${PYNUMPY}
 LIB_DEPENDS=	libplot.so:graphics/plotutils
 
-USES=		gmake python:2
+USES=		gmake python:2.7
 MAKE_ARGS=	CC="${CC}" \
 		CFLAGS="${CFLAGS} -fPIC" \
 		LIBPLOT_CPPFLAGS="-I${LOCALBASE}/include" \

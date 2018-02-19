@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/trac-discussion/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/www/trac-discussion/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	discussion
 PORTVERSION=	0.7
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www devel python
 MASTER_SITES=	LOCAL/brooks
 PKGNAMEPREFIX=	trac-
@@ -13,7 +13,7 @@ COMMENT=	Discussion forum plugin for Trac
 RUN_DEPENDS=	tracd:www/trac \
 		trac-TracSpamFilter>=0.2.1:www/trac-spam-filter
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

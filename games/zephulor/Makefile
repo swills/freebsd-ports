@@ -1,9 +1,9 @@
 # Created by: Alejandro Pulver <alejandro@varnet.biz>
-# $FreeBSD: head/games/zephulor/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/games/zephulor/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	zephulor
 PORTVERSION=	1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	games
 MASTER_SITES=	SF/apz/apz/stable/ \
 		SF/nemysisfreebsdp/${CATEGORIES}/:icons
@@ -22,7 +22,7 @@ RUN_DEPENDS=	${PYGAME} \
 
 WRKSRC=		${WRKDIR}/zephulor-source
 
-USES=		python:2
+USES=		python:2.7
 NO_BUILD=	yes
 
 PORTDOCS=	*

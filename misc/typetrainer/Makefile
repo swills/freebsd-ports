@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/typetrainer/Makefile 371289 2014-10-20 17:59:37Z mva $
+# $FreeBSD: head/misc/typetrainer/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	typetrainer
 PORTVERSION=	0.5.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	misc python
 MASTER_SITES=	CHEESESHOP
 
@@ -12,7 +12,7 @@ COMMENT=	Typing tutor trainer
 LICENSE=	MIT
 
 USE_GNOME=	pygtk2
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

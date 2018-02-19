@@ -1,9 +1,9 @@
 # Created by: siasia
-# $FreeBSD: head/lang/v8/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/lang/v8/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	v8
 PORTVERSION=	3.18.5
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	lang
 MASTER_SITES=	LOCAL/vanilla
 
@@ -22,7 +22,7 @@ ALL_TARGET=	native
 MAKE_ARGS=	library=shared
 MAKE_ENV=	CC.host=${CC} CXX.host=${CXX} LINK.host=${CXX} LINK.target=${CXX}
 USE_LDCONFIG=	yes
-USES=		alias compiler cpe gmake python:2 shebangfix tar:xz
+USES=		alias compiler cpe gmake python:2.7 shebangfix tar:xz
 
 CPE_VENDOR=	google
 

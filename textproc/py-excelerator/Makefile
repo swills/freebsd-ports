@@ -1,9 +1,9 @@
 # Created by: Choe, Cheng-Dae
-# $FreeBSD: head/textproc/py-excelerator/Makefile 405417 2016-01-07 11:10:48Z miwi $
+# $FreeBSD: head/textproc/py-excelerator/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	excelerator
 PORTVERSION=	0.6.4.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc python
 MASTER_SITES=	SF/py${PORTNAME}/pyExcelerator/${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +14,7 @@ COMMENT=	Python library for generating Excel 97/2000/XP/2003 files
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
-USES=		python:2 zip
+USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

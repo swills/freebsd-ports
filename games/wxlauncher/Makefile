@@ -1,5 +1,5 @@
 # Created by: lightside <lightside@gmx.com>
-# $FreeBSD: head/games/wxlauncher/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/games/wxlauncher/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	wxlauncher
 PORTVERSION=	0.10.0
@@ -20,7 +20,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	scp-fs2open
 GH_PROJECT=	wxLauncher
 
-USES=		cmake:outsource openal pkgconfig python:2,build
+USES=		cmake:outsource openal pkgconfig python:2.7,build
 USE_SDL=	sdl2
 CMAKE_ARGS+=	-DRESOURCES_PATH:STRING="${DATADIR}"
 

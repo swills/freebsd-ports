@@ -1,9 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/py-ordereddict/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/devel/py-ordereddict/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	ordereddict
 PORTVERSION=	1.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +14,7 @@ COMMENT=	Drop-in substitute for Py2.7's new collections
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		python:2		# for graphics/py-blocking
+USES=		python:2.7		# for graphics/py-blocking
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

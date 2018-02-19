@@ -1,8 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-zfs/Makefile 374786 2014-12-16 06:08:29Z delphij $
+# $FreeBSD: head/sysutils/py-zfs/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	zfs
 PORTVERSION=	1.1
+PORTREVISION=	1
 CATEGORIES=	sysutils python
 MASTER_SITES=	# none
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +15,7 @@ COMMENT=	Python ZFS library
 LICENSE=	CDDL
 LICENSE_FILE=	${WRKSRC}/OPENSOLARIS.LICENSE
 
-USES=		python:2
+USES=		python:2.7
 MAKEFILE=	${FILESDIR}/Makefile.lib
 MAKE_ARGS+=	PYTHON_INCLUDEDIR="${PYTHON_INCLUDEDIR}" \
 		PYTHON_LDFLAGS="-L${LOCALBASE}/lib -l${PYTHON_VERSION}"

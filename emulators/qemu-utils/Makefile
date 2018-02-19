@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/qemu-utils/Makefile 447503 2017-08-07 18:26:53Z asomers $
+# $FreeBSD: head/emulators/qemu-utils/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PKGNAMESUFFIX=	-utils
 
@@ -6,7 +6,7 @@ MAINTAINER=	asomers@FreeBSD.org
 COMMENT=	QEMU userland utilities
 
 HAS_CONFIGURE=	yes
-USES=		cpe gmake pkgconfig perl5 python:2,build tar:bzip2
+USES=		cpe gmake pkgconfig perl5 python:2.7,build tar:bzip2
 USES+=		gettext-runtime
 USE_GNOME+=	glib20
 MAKE_ENV+=	BSD_MAKE="${MAKE}" PREFIX=${PREFIX}

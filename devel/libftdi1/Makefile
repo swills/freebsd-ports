@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/libftdi1/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/devel/libftdi1/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	libftdi1
 PORTVERSION=	1.4
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	http://www.intra2net.com/en/developer/libftdi/download/
 
@@ -43,7 +43,7 @@ CMAKE_ARGS+=	-DEXAMPLES:BOOL=false
 .endif
 
 .if ${PORT_OPTIONS:MPYTHON}
-USES+=		python:2
+USES+=		python:2.7
 CMAKE_ARGS+=	-DPYTHON_BINDINGS:BOOL=true \
 		-DDOCUMENTATION:BOOL=false
 BUILD_DEPENDS+=	swig3.0:devel/swig30

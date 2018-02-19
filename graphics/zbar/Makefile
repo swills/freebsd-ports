@@ -1,9 +1,9 @@
 # Created by: Oliver Heesakkers <dev2@heesakkers.info>
-# $FreeBSD: head/graphics/zbar/Makefile 450852 2017-09-28 15:36:31Z kwm $
+# $FreeBSD: head/graphics/zbar/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	zbar
 PORTVERSION=	0.10
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 
@@ -37,7 +37,7 @@ V4L_CONFIGURE_ON=	--enable-video=yes
 V4L_CONFIGURE_OFF=	--enable-video=no
 
 PYTHON_USE=		GNOME=pygtk2
-PYTHON_USES=		python:2
+PYTHON_USES=		python:2.7
 PYTHON_CONFIGURE_ON=	--with-python=yes
 PYTHON_CONFIGURE_OFF=	--with-python=no
 

@@ -1,9 +1,9 @@
 # Created by: Johann Visagie <wjv@FreeBSD.org>
-# $FreeBSD: head/net/py-zsi/Makefile 439119 2017-04-21 18:26:14Z sunpoet $
+# $FreeBSD: head/net/py-zsi/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	zsi
 DISTVERSION=	2.1-a1
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	net python
 MASTER_SITES=	SF/pywebsvcs/ZSI/ZSI-${DISTVERSION:S,-,_,}
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME:tu}-${DISTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Pure Python implementation of SOAP 1.1
 
-USES=		python:2 shebangfix
+USES=		python:2.7 shebangfix
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 SHEBANG_FILES=	doc/examples/*/*/*/*/*.py \

@@ -1,8 +1,9 @@
 # Created by: Hon-Yu Lawrence Cheung (cheunghonyu@gmail.com)
-# $FreeBSD: head/deskutils/rednotebook/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/deskutils/rednotebook/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	rednotebook
 PORTVERSION=	1.9.0
+PORTREVISION=	1
 CATEGORIES=	deskutils python
 MASTER_SITES=	SF/rednotebook
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,7 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${FLAVOR} \
 		${LOCALBASE}/bin/xdg-open:devel/xdg-utils \
 		${PYTHON_PKGNAMEPREFIX}chardet>0:textproc/py-chardet@${FLAVOR}
 
-USES=		desktop-file-utils gettext python:2
+USES=		desktop-file-utils gettext python:2.7
 
 INSTALLS_ICONS=	yes
 USE_GNOME=	pygtk2

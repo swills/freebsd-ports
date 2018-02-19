@@ -1,9 +1,9 @@
 # Created by: Dryice Liu <dryice@dryice.name>
-# $FreeBSD: head/www/trac-gantt/Makefile 416078 2016-05-29 01:21:55Z amdmi3 $
+# $FreeBSD: head/www/trac-gantt/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	TracGantt
 PORTVERSION=	0.3.2a
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	www devel python
 MASTER_SITES=	http://willbarton.com/files/ \
 		http://dryice.name/computer/FreeBSD/distfiles/
@@ -16,7 +16,7 @@ LICENSE=	BSD3CLAUSE
 
 RUN_DEPENDS=	trac>=0.11:www/trac
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

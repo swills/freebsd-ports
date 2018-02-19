@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale	<nivit@email.it>
-# $FreeBSD: head/www/py-cherrypy-old/Makefile 375378 2014-12-24 00:14:11Z bofh $
+# $FreeBSD: head/www/py-cherrypy-old/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	cherrypy
 PORTVERSION=	2.3.0
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	www python
 MASTER_SITES=	http://download.cherrypy.org/${PORTNAME}/${PORTVERSION}/
@@ -16,7 +16,7 @@ COMMENT=	Pythonic, object-oriented web development framework
 
 LICENSE=	BSD3CLAUSE
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 PORTSCOUT=	ignore:1        # This the last version of 2.3.X branch

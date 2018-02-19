@@ -1,8 +1,9 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/databases/mtools-mongodb/Makefile 455392 2017-12-03 08:25:31Z antoine $
+# $FreeBSD: head/databases/mtools-mongodb/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	mtools
 PORTVERSION=	1.2.3
+PORTREVISION=	1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,6 +19,6 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psutil>=2.0:sysutils/py-psutil@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}matplotlib>0:math/py-matplotlib@${FLAVOR}
 
 USE_PYTHON=	autoplist distutils
-USES=		python:2
+USES=		python:2.7
 
 .include <bsd.port.mk>

@@ -1,8 +1,9 @@
 # Created by: Jona Joachim <jaj@hcl-club.lu>
-# $FreeBSD: head/audio/soundconverter/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/audio/soundconverter/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	soundconverter
 PORTVERSION=	2.1.6
+PORTREVISION=	1
 CATEGORIES=	audio python
 MASTER_SITES=	https://launchpad.net/soundconverter/trunk/2.1.6/+download/ \
 		http://BSDforge.com/projects/source/audio/soundconverter/
@@ -16,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gstreamer>=0.10:multimedia/py-gstreamer@${PY_FLAVOR}
 
 NO_ARCH=	yes
-USES=		desktop-file-utils gmake python:2 shebangfix tar:xz
+USES=		desktop-file-utils gmake python:2.7 shebangfix tar:xz
 
 SHEBANG_FILES=	bin/soundconverter.py
 

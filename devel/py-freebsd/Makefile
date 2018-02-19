@@ -1,9 +1,9 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/py-freebsd/Makefile 441945 2017-05-28 23:16:25Z sunpoet $
+# $FreeBSD: head/devel/py-freebsd/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	freebsd
 PORTVERSION=	0.9.3
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	devel python
 MASTER_SITES=	LOCAL/perky \
 		http://people.freebsd.org/~perky/distfiles/
@@ -16,7 +16,7 @@ COMMENT=	Python interface to FreeBSD-specific system libraries
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.pre.mk>

@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/py-krosspython/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/devel/py-krosspython/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	krosspython
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel kde kde-kde4 python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	kross-interpreters-${PORTVERSION}
@@ -10,7 +10,7 @@ DISTNAME=	kross-interpreters-${PORTVERSION}
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Kross Python scripting library
 
-USES=		cmake:outsource kde:4 python:2 tar:xz
+USES=		cmake:outsource kde:4 python:2.7 tar:xz
 USE_KDE=	kdelibs automoc4
 USE_QT4=	corelib gui qmake_build moc_build uic_build rcc_build
 CMAKE_ARGS+=	-DBUILD_falcon:BOOL=FALSE \

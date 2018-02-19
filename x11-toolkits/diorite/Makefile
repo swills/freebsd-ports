@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/diorite/Makefile 460158 2018-01-28 04:12:44Z truckman $
+# $FreeBSD: head/x11-toolkits/diorite/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	diorite
 PORTVERSION=	0.2.1
@@ -14,7 +14,7 @@ BUILD_DEPENDS=	valac:lang/vala
 
 GH_ACCOUNT=	tiliado
 
-# USES=waf implicity does USES=python:2,build but that is not sufficient
+# USES=waf implicity does USES=python:2.7,build but that is not sufficient
 # for shebangfix to know the python version
 USES=		gnome pkgconfig python:2.7,build shebangfix waf
 USE_GITHUB=	yes

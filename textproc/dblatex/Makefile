@@ -1,9 +1,9 @@
 # Created by: Peter Johnson <johnson.peter@gmail.com>
-# $FreeBSD: head/textproc/dblatex/Makefile 460117 2018-01-27 12:48:20Z amdmi3 $
+# $FreeBSD: head/textproc/dblatex/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	dblatex
 PORTVERSION=	0.3.9
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	${LOCALBASE}/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty:pri
 RUN_DEPENDS=	xsltproc:textproc/libxslt \
 		docbook-xml>0:textproc/docbook-xml
 
-USES=		tar:bzip2 python:2
+USES=		tar:bzip2 python:2.7
 USE_PYTHON=	distutils autoplist
 USE_TEX=	dvipsk:run tex
 NO_ARCH=	yes

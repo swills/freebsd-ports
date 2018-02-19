@@ -1,8 +1,9 @@
 # Created by: Alejandro Pulver <alejandro@varnet.biz>
-# $FreeBSD: head/games/pythonchess/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/games/pythonchess/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	pythonchess
 PORTVERSION=	0.7
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://sites.google.com/site/purplesaguaroinc/myfiles/ \
 		SF/nemysisfreebsdp/games/:icons
@@ -21,7 +22,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${PY_FLAVO
 
 WRKSRC=		${WRKDIR}/${PORTNAME:S/p/P/:S/c/C/}
 
-USES=		dos2unix python:2 zip
+USES=		dos2unix python:2.7 zip
 DOS2UNIX_REGEX=	.*.[^p][^n][^g]$
 
 SUB_FILES=	${PORTNAME}

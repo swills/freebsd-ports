@@ -1,9 +1,9 @@
 # Created by: David Thiel <lx@FreeBSD.org>
-# $FreeBSD: head/audio/pytone/Makefile 460796 2018-02-03 08:34:24Z sunpoet $
+# $FreeBSD: head/audio/pytone/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	pytone
 PORTVERSION=	3.0.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio python
 MASTER_SITES=	http://www.luga.de/pytone/download/ \
 		http://redundancy.redundancy.org/mirror/
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libao.so:audio/libao
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mutagen>0:audio/py-mutagen@${FLAVOR}
 
-USES=		ncurses python:2
+USES=		ncurses python:2.7
 USE_PYTHON=	autoplist distutils
 
 CFLAGS+=	-I${LOCALBASE}/include

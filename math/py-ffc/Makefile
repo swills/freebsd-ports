@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-ffc/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/math/py-ffc/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	ffc
 PORTVERSION=	${MMVERSION}.0
+PORTREVISION=	1
 CATEGORIES=	math python
 MASTER_SITES=	https://launchpad.net/${PORTNAME}/${MMVERSION}.x/${PORTVERSION}/+download/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,7 +12,7 @@ COMMENT=	C++ code generator for multilinear forms
 
 LICENSE=	LGPL3
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGNAME=	FFC
 

@@ -1,5 +1,5 @@
 # Created by: stas
-# $FreeBSD: head/graphics/podofo/Makefile 447036 2017-08-01 17:09:56Z sunpoet $
+# $FreeBSD: head/graphics/podofo/Makefile 462291 2018-02-19 10:29:34Z sunpoet $
 
 PORTNAME=	podofo
 PORTVERSION=	0.9.5
@@ -23,9 +23,8 @@ IMPOSE_DESC=	Build impose tool (Lua required)
 
 CMAKE_ARGS=	-DFONTCONFIG_LIBRARIES=${LOCALBASE}/lib/libfontconfig.so \
 		-DOPENSSL_INCLUDE_DIR=${OPENSSLINC} \
-		-DOPENSSL_LIBRARIES=${OPENSSLDIR} \
-		-DPODOFO_BUILD_SHARED=TRUE \
-		-DPODOFO_BUILD_STATIC=TRUE
+		-DOPENSSL_LIBRARIES=${OPENSSLDIR}
+CMAKE_ON=	PODOFO_BUILD_SHARED PODOFO_BUILD_STATIC
 USE_LDCONFIG=	yes
 USES=		cmake compiler dos2unix pkgconfig ssl
 

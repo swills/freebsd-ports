@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alexbl@FreeBSD.org>
-# $FreeBSD: head/devel/py-magic/Makefile 449244 2017-09-04 12:29:57Z lwhsu $
+# $FreeBSD: head/devel/py-magic/Makefile 462283 2018-02-19 07:46:26Z lwhsu $
 
 PORTNAME=	magic
 PORTVERSION=	5.32
@@ -14,6 +14,9 @@ MAINTAINER=	lwhsu@FreeBSD.org
 COMMENT=	Python module for determining file type
 
 LICENSE=	BSD2CLAUSE
+
+# both install module as magic.py
+CONFLICTS=	${PYTHON_PKGNAMEPREFIX}python-magic-*
 
 USES=		python
 USE_PYTHON=	distutils autoplist

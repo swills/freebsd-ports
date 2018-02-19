@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/security/py-twofish/Makefile 405420 2016-01-07 11:13:55Z miwi $
+# $FreeBSD: head/security/py-twofish/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	twofish
 PORTVERSION=	0.7
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security python
 MASTER_SITES=	SF/${PORTNAME}-py/${PORTNAME}-py/${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +12,7 @@ DISTNAME=	twofishmodule-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Twofish cryptographic module for Python
 
-USES=		python:2 shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	cryptfile.py decryptfile.py
 GNU_CONFIGURE=	yes
 CFLAGS+=	-fPIC

@@ -1,8 +1,9 @@
 # Created by: Jason R. Mastaler <jason@mastaler.com>
-# $FreeBSD: head/databases/py-cdb/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/databases/py-cdb/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	cdb
 PORTVERSION=	0.34
+PORTREVISION=	1
 CATEGORIES=	databases python
 MASTER_SITES=	http://pilcrow.madison.wi.us/python-${PORTNAME}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +15,7 @@ COMMENT=	Python interface to DJB's constant database library
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 DOCSDIR=	${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME}

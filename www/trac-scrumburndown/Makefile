@@ -1,9 +1,9 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/www/trac-scrumburndown/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/www/trac-scrumburndown/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	scrumburndown
 PORTVERSION=	1.9.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	www devel python
 MASTER_SITES=	http://www.sourcehosting.net/freebsd/distfiles/ \
 		LOCAL/glarkin
@@ -18,7 +18,7 @@ RUN_DEPENDS=	tracd:www/trac \
 		trac-timingandestimation>=0:www/trac-timingandestimation
 
 WRKSRC=		${WRKDIR}/${PORTNAME}plugin
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

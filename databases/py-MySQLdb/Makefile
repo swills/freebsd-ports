@@ -1,8 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/databases/py-MySQLdb/Makefile 447420 2017-08-05 23:11:08Z sunpoet $
+# $FreeBSD: head/databases/py-MySQLdb/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	MySQLdb
 PORTVERSION=	1.2.5
+PORTREVISION=	1
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	databases python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +14,7 @@ COMMENT=	Access a MySQL database through Python
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/GPL-2.0
 
-USES=		mysql python:2
+USES=		mysql python:2.7
 USE_PYTHON=	autoplist distutils
 USE_GITHUB=	yes
 GH_ACCOUNT=	farcepest

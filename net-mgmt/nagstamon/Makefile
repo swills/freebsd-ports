@@ -1,9 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/nagstamon/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-mgmt/nagstamon/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	nagstamon
 PORTVERSION=	1.0.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	https://nagstamon.ifw-dresden.de/files/very_stable/ \
 		LOCAL/ehaupt
@@ -17,7 +17,7 @@ LICENSE=	GPLv2
 RUN_DEPENDS=	sox:audio/sox \
 		${PYTHON_PKGNAMEPREFIX}keyring>=1.3:security/py-keyring@${FLAVOR}
 
-USES=		cpe python:2
+USES=		cpe python:2.7
 CPE_VENDOR=	henri_wahl
 USE_PYTHON=	distutils
 USE_GNOME=	pygtk2 librsvg2

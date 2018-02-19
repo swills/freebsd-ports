@@ -1,9 +1,9 @@
 # Created by: Andrej Zverev <az@inec.ru>
-# $FreeBSD: head/mail/svnmailer/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/mail/svnmailer/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	svnmailer
 DISTVERSION=	1.1.0-dev-r1373
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	mail python
 MASTER_SITES=	http://storage.perlig.de/${PORTNAME}/
 PKGNAMESUFFIX=	${PYTHON_PKGNAMESUFFIX}
@@ -14,7 +14,7 @@ COMMENT=	Tool to post subversion repository commit information
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}subversion>0:devel/py-subversion@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=		python:2 tar:bzip2
+USES=		python:2.7 tar:bzip2
 USE_PYTHON=	distutils
 PYDISTUTILS_PKGVERSION=	${DISTVERSION}
 

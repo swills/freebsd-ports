@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/electrix/Makefile 448669 2017-08-24 13:45:13Z swills $
+# $FreeBSD: head/graphics/electrix/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	electrix
 PORTVERSION=	0.2.0
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	graphics print
 MASTER_SITES=	SF/${PORTNAME:tl}/${PORTVERSION}
 
@@ -11,7 +11,7 @@ COMMENT=	Application to view PDF files
 
 LICENSE=	GPLv2
 
-USES=		desktop-file-utils pkgconfig python:2 tar:bzip2 waf
+USES=		desktop-file-utils pkgconfig python:2.7 tar:bzip2 waf
 USE_GNOME=	gtk20 glib20 intltool intlhack
 
 MAKE_ENV=	DESTDIR="${STAGEDIR}" \

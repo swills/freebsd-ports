@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/ufc/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/math/ufc/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	ufc
 PORTVERSION=	${MMVERSION}.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	math python
 MASTER_SITES=	http://launchpad.net/${PORTNAME}/${MMVERSION}.x/${PORTVERSION}/+download/
 
@@ -14,7 +14,7 @@ LIB_DEPENDS=	libboost_math_c99.so:devel/boost-libs
 
 # LICENSE=	public domain
 
-USES=		cmake python:2
+USES=		cmake python:2.7
 
 CMAKE_ARGS+=	-DUFC_PKGCONFIG_DIR=${PREFIX}/libdata/pkgconfig
 

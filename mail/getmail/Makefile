@@ -1,8 +1,9 @@
 # Created by: Yukihiro Nakai <nakai@FreeBSD.org>
-# $FreeBSD: head/mail/getmail/Makefile 456765 2017-12-19 20:13:16Z jrm $
+# $FreeBSD: head/mail/getmail/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	getmail
 PORTVERSION=	5.5
+PORTREVISION=	1
 CATEGORIES=	mail python
 MASTER_SITES=	http://pyropus.ca/software/getmail/old-versions/
 
@@ -12,7 +13,7 @@ COMMENT=	POP3/IMAP4 mail retriever with Maildir and command delivery
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/docs/COPYING
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils
 NO_ARCH=	yes
 

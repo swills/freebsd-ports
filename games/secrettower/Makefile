@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/secrettower/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/games/secrettower/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	secrettower
 PORTVERSION=	0.2.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games python
 DIST_SUBDIR=	python
 
@@ -20,7 +20,7 @@ GH_ACCOUNT=	dusty141
 GH_PROJECT=	TheSecretTower
 GH_TAGNAME=	ecf13e4
 
-USES=		python:2 shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	TheSecretTower.py server.py
 
 PORTDOCS=	README

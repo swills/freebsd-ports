@@ -1,8 +1,8 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/p5-Perl6-Export-Attrs/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Perl6-Export-Attrs/Makefile 462234 2018-02-18 13:37:54Z sunpoet $
 
 PORTNAME=	Perl6-Export-Attrs
-PORTVERSION=	0.000005
+PORTVERSION=	0.000006
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

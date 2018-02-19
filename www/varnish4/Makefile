@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/varnish4/Makefile 454237 2017-11-15 13:01:09Z feld $
+# $FreeBSD: head/www/varnish4/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	varnish
 PORTVERSION=	4.1.9
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libpcre.so:devel/pcre
 CONFLICTS=	varnish-2.* varnish-3.*
 
 USES=		autoreconf cpe gmake libedit libtool ncurses pathfix \
-		pkgconfig python:2,build readline shebangfix
+		pkgconfig python:2.7,build readline shebangfix
 SHEBANG_FILES=	lib/libvcc/vmodtool.py
 CPE_VENDOR=	varnish-cache
 CFLAGS+=	-I${LOCALBASE}/include

@@ -1,8 +1,9 @@
 # Created by: Mike Meyer <mwm@mired.org>
-# $FreeBSD: head/www/py-beautifulsoup32/Makefile 371112 2014-10-18 10:52:53Z rm $
+# $FreeBSD: head/www/py-beautifulsoup32/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	beautifulsoup
 PORTVERSION=	3.2.1
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	http://www.crummy.com/software/BeautifulSoup/bs3/download//3.x/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +13,7 @@ DISTNAME=	BeautifulSoup-${PORTVERSION}
 MAINTAINER=	mwm@mired.org
 COMMENT=	HTML/XML Parser for Python
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 CONFLICTS=	py[0-9]*-beautifulsoup-3.0.*

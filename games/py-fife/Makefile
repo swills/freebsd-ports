@@ -1,9 +1,9 @@
 # Created by: GreenDog <fiziologus@gmail.com>
-# $FreeBSD: head/games/py-fife/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/games/py-fife/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=		fife
 PORTVERSION=		0.4.1
-PORTREVISION=		6
+PORTREVISION=		7
 CATEGORIES=		games
 PKGNAMEPREFIX=		${PYTHON_PKGNAMEPREFIX}
 
@@ -60,7 +60,7 @@ ZIP_CMAKE_BOOL=		zip
 LOGGING_CMAKE_BOOL=	logging
 
 PYTHON_CMAKE_BOOL=	build-python
-PYTHON_USES=		python:2
+PYTHON_USES=		python:2.7
 PYTHON_USE=		python=flavors
 PYTHON_BUILD_DEPENDS=	${LOCALBASE}/bin/swig3.0:devel/swig30
 

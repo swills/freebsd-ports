@@ -1,8 +1,9 @@
 # Created by: Gregory Bond <gnb@itga.com.au>
-# $FreeBSD: head/www/py-albatross/Makefile 390440 2015-06-23 18:17:54Z rm $
+# $FreeBSD: head/www/py-albatross/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	albatross
 PORTVERSION=	1.42
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	http://object-craft.com.au/projects/albatross/download/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +16,7 @@ COMMENT=	Python toolkit for developing highly stateful web applications
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENCE
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 NO_ARCH=	yes

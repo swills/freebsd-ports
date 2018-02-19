@@ -1,9 +1,9 @@
 # Created by: Joseph Koshy <jkoshy@FreeBSD.org>
-# $FreeBSD: head/devel/pypersrc/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/pypersrc/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	pypersrc
 PORTVERSION=	20120106
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://www.jimbrooks.org/software/pypersrc/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -19,7 +19,7 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-USES=		gmake python:2 tar:bzip2
+USES=		gmake python:2.7 tar:bzip2
 HAS_CONFIGURE=	yes
 CONFIGURE_SCRIPT=	configure.sh
 MAKE_ENV=	CXX_FLAGS="${CXXFLAGS}"

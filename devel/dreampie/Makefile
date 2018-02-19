@@ -1,8 +1,9 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/devel/dreampie/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/dreampie/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	dreampie
 PORTVERSION=	1.2.1
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 
@@ -12,7 +13,7 @@ COMMENT=	Python shell which is designed to be reliable and fun
 LICENSE=	GPLv3
 
 USE_GNOME=	pygtk2 pygtksourceview
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 pre-patch:

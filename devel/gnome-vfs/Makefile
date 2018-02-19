@@ -1,9 +1,9 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/devel/gnome-vfs/Makefile 462052 2018-02-16 18:35:03Z brnrd $
+# $FreeBSD: head/devel/gnome-vfs/Makefile 462273 2018-02-19 03:59:26Z danilo $
 
 PORTNAME=	gnome-vfs
 PORTVERSION=	2.24.4
-PORTREVISION?=	7
+PORTREVISION?=	8
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2
@@ -24,6 +24,8 @@ USES=		tar:bzip2
 .if !defined(REFERENCE_PORT)
 
 RUN_DEPENDS=	update-mime-database:misc/shared-mime-info
+LIB_DEPENDS=	libdbus-glib-1.so:devel/dbus-glib \
+		libdbus-1.so:devel/dbus
 
 USES+=		gettext gmake libtool:keepla pathfix pkgconfig ssl
 USE_GNOME=	gconf2 gnomemimedata intlhack referencehack
@@ -34,7 +36,8 @@ CONFIGURE_ARGS=	--enable-openssl \
 		--disable-gnutls \
 		--disable-howl \
 		--with-hal-mount=/sbin/mount \
-		--with-hal-umount=/sbin/umount
+		--with-hal-umount=/sbin/umount \
+		ac_cv_header_sys_inotify_h=no
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 

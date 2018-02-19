@@ -1,9 +1,9 @@
 # Created by: Vsevolod Lobko <seva@sevasoft.kiev.ua>
-# $FreeBSD: head/mail/py-milter/Makefile 427533 2016-12-01 23:41:24Z junovitch $
+# $FreeBSD: head/mail/py-milter/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	milter
 PORTVERSION=	1.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	mail python
 MASTER_SITES=	SF/${PYPORTNAME}/${PYPORTNAME}/${DISTNAME}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -23,7 +23,7 @@ CFLAGS+=	-I${LOCALBASE}/include
 
 PYPORTNAME=	${PKGNAMEPREFIX:C/[0-9]+-//}${PORTNAME}
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 post-install:

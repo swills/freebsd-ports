@@ -1,5 +1,5 @@
 # Created by: Florent Thoumie <flz@FreeBSD.org>
-# $FreeBSD: head/net-im/telepathy-salut/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/net-im/telepathy-salut/Makefile 462307 2018-02-19 11:10:43Z antoine $
 #   $MCom: ports/trunk/net-im/telepathy-salut/Makefile 19802 2014-08-13 12:13:08Z gusi $
 
 PORTNAME=	telepathy-salut
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libavahi-glib.so:net/avahi-app \
 		libsoup-2.4.so:devel/libsoup
 
 GNU_CONFIGURE=	yes
-USES=		gmake libtool pathfix pkgconfig python:2,build sqlite ssl
+USES=		gmake libtool pathfix pkgconfig python:2.7,build sqlite ssl
 USE_GNOME=	glib20 libxslt:build
 CONFIGURE_ARGS=	--disable-Werror --enable-avahi-tests=no
 LDFLAGS+=	-lpthread

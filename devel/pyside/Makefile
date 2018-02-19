@@ -1,10 +1,10 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/pyside/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/pyside/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	pyside
 PORTVERSION=	1.2.2
 DISTVERSIONPREFIX=	qt4.8+
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	https://download.qt-project.org/official_releases/pyside/
 PKGNAMESUFFIX=	${PYTHON_PKGNAMESUFFIX}
@@ -29,7 +29,7 @@ USE_QT4=	declarative designer gui help qmake_build \
 PLIST_SUB=	PORTVERSION=${PORTVERSION} \
 		PYTHON_VERSION=${PYTHON_VERSION}
 
-USES=		cmake python:2 tar:bzip2
+USES=		cmake python:2.7 tar:bzip2
 USE_PYTHON=	flavors
 USE_LDCONFIG=	yes
 

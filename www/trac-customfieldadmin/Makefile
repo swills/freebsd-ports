@@ -1,9 +1,9 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/www/trac-customfieldadmin/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/www/trac-customfieldadmin/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	customfieldadmin
 PORTVERSION=	0.2.2.6485
-PORTREVISION=	3
+PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	www devel python
 MASTER_SITES=	http://www.sourcehosting.net/freebsd/distfiles/ \
@@ -21,7 +21,7 @@ RUN_DEPENDS=	tracd:www/trac
 
 PORTSCOUT=	skipv:0.2.6485
 
-USES=		python:2 zip
+USES=		python:2.7 zip
 
 WRKSRC=		${WRKDIR}/${PORTNAME}plugin/0.11
 USE_PYTHON=	distutils autoplist

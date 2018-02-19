@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/py-fiat/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/math/py-fiat/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	fiat
 PORTVERSION=	${MMVERSION}.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	math python
 MASTER_SITES=	https://launchpad.net/${PORTNAME}/${MMVERSION}.x/release-${MMVERSION}/+download/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,7 +16,7 @@ LICENSE=	LGPL3
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}scientific>=0:math/py-scientific@${FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 MMVERSION=	1.1

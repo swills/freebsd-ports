@@ -1,9 +1,9 @@
-# $FreeBSD: head/net-im/telepathy-python/Makefile 455392 2017-12-03 08:25:31Z antoine $
+# $FreeBSD: head/net-im/telepathy-python/Makefile 462307 2018-02-19 11:10:43Z antoine $
 #    $MCom: ports/net-im/telepathy-python/Makefile,v 1.5 2009/01/08 07:07:51 marcus Exp $
 
 PORTNAME=	telepathy-python
 PORTVERSION=	0.15.19
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-im
 MASTER_SITES=	http://telepathy.freedesktop.org/releases/${PORTNAME}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +14,7 @@ COMMENT=	Python bindings for the Telepathy framework
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0:devel/py-dbus@${PY_FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0:devel/py-dbus@${PY_FLAVOR}
 
-USES=		gmake python:2
+USES=		gmake python:2.7
 USE_GNOME=	libxslt:build
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include

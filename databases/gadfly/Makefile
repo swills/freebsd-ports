@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/databases/gadfly/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/gadfly/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	gadfly
 PORTVERSION=	1.0.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	databases
 MASTER_SITES=	SF
 
@@ -12,7 +12,7 @@ COMMENT=	SQL database written in Python
 
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/kjbuckets.so:devel/py-kjbuckets@${FLAVOR}
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

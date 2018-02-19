@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@jelal.kn-bremen.de>
-# $FreeBSD: head/emulators/qemu-devel/Makefile 457024 2017-12-23 07:03:21Z antoine $
+# $FreeBSD: head/emulators/qemu-devel/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	qemu
 DISTVERSION=	2.6.0
@@ -14,7 +14,7 @@ COMMENT=	QEMU CPU Emulator - development version
 LICENSE=	GPLv2
 
 HAS_CONFIGURE=	yes
-USES=		cpe gmake pkgconfig bison perl5 python:2,build ssl tar:bzip2
+USES=		cpe gmake pkgconfig bison perl5 python:2.7,build ssl tar:bzip2
 USE_PERL5=	build
 USE_XORG=	pixman
 USE_GNOME+=	cairo glib20

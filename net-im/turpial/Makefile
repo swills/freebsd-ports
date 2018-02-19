@@ -1,9 +1,9 @@
 # Created by: Olivier Duchateau <duchateau.olivier@gmail.com>
-# $FreeBSD: head/net-im/turpial/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-im/turpial/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	turpial
 PORTVERSION=	3.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net-im python
 MASTER_SITES=	http://files.turpial.org.ve/sources/stable/
 
@@ -18,7 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}notify>=0.1.1:devel/py-notify@${FLAVOR} \
 	${PYTHON_PKGNAMEPREFIX}Jinja2>=2.7.1:devel/py-Jinja2@${FLAVOR} \
 	${PYTHON_PKGNAMEPREFIX}libturpial>=1.7.0:net-im/py-libturpial@${FLAVOR}
 
-USES=		pyqt:4 python:2
+USES=		pyqt:4 python:2.7
 USE_PYQT=	core_run gui_run network_run phonon_run webkit_run
 USE_PYTHON=	distutils autoplist
 INSTALLS_ICONS=	yes

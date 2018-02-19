@@ -1,9 +1,9 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/x11/cinnamon-desktop/Makefile 460614 2018-02-01 16:04:10Z amdmi3 $
+# $FreeBSD: head/x11/cinnamon-desktop/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	cinnamon-desktop
 PORTVERSION=	2.4.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11 gnome
 DIST_SUBDIR=	gnome3
 
@@ -18,7 +18,7 @@ RUN_DEPENDS=	xkeyboard-config>=0:x11/xkeyboard-config \
 
 USE_XORG=	x11 xrandr xext
 USES=		autoreconf gettext gmake libtool localbase:ldflags pathfix \
-		pkgconfig python:2,run shebangfix tar:xz
+		pkgconfig python:2.7,run shebangfix tar:xz
 USE_GITHUB=	yes
 GH_ACCOUNT=	linuxmint
 USE_GNOME=	gnomeprefix gtk30 intlhack introspection:build

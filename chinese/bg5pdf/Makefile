@@ -1,9 +1,9 @@
 # Created by: Shen Chuan-Hsing
-# $FreeBSD: head/chinese/bg5pdf/Makefile 452004 2017-10-13 14:23:31Z bapt $
+# $FreeBSD: head/chinese/bg5pdf/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	bg5pdf
 PORTVERSION=	1.0.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	chinese print
 MASTER_SITES=	LOCAL/chinsan
 
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libpdf.so:print/pdflib
 
-USES=		python:2 shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	bg5pdf gbpdf
 python_OLD_CMD=	"/usr/bin/env /usr/bin/python"
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/cppcms/Makefile 461290 2018-02-09 09:12:48Z jbeich $
+# $FreeBSD: head/www/cppcms/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	cppcms
 PORTVERSION=	1.2.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	SF/cppcms/${PORTNAME}/${PORTVERSION}
 
@@ -15,7 +15,7 @@ LIB_DEPENDS=	libpcre.so:devel/pcre
 
 BROKEN_powerpc64=	Does not build: error: 'localeconv_l' was not declared in this scope
 
-USES=		cmake python:2 shebangfix tar:bzip2 ssl
+USES=		cmake python:2.7 shebangfix tar:bzip2 ssl
 USE_LDCONFIG=	yes
 SHEBANG_FILES=	bin/cppcms_tmpl_cc
 
@@ -41,6 +41,9 @@ CMAKE_ARGS+=	-DDISABLE_GCRYPT:BOOL=OFF
 .else
 CMAKE_ARGS+=	-DDISABLE_GCRYPT:BOOL=ON
 .endif
+
+post-patch:
+	${REINPLACE_CMD}  -e 's/python2/${PYTHON_VERSION}/' ${WRKSRC}/CMakeLists.txt
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}

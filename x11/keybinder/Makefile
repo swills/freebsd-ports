@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/keybinder/Makefile 451186 2017-10-04 08:01:09Z bapt $
+# $FreeBSD: head/x11/keybinder/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	keybinder
 PORTVERSION=	0.3.1
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	x11
 
@@ -36,7 +36,7 @@ LUA_USES=		lua:51
 LUA_CONFIGURE_ON=	--with-lua-includes=${LUA_INCDIR}
 LUA_CONFIGURE_OFF=	--disable-lua
 
-PYTHON_USES=		python:2
+PYTHON_USES=		python:2.7
 PYTHON_USE=		gnome=pygtk2
 PYTHON_CONFIGURE_OFF=	--disable-python
 

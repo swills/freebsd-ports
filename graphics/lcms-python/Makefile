@@ -1,8 +1,9 @@
 # Created by: stas
-# $FreeBSD: head/graphics/lcms-python/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/lcms-python/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	lcms
 PORTVERSION=	1.19
+PORTREVISION=	1
 CATEGORIES=	graphics devel python
 MASTER_SITES=	SF
 PKGNAMESUFFIX=	-python
@@ -17,7 +18,7 @@ LIB_DEPENDS=	liblcms.so:graphics/lcms
 BUILD_WRKSRC=	${WRKSRC}/python
 INSTALL_WRKSRC=	${WRKSRC}/python
 
-USES=		python:2
+USES=		python:2.7
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-python
 CONFIGURE_ENV=	PYTHON="${PYTHON_CMD}"

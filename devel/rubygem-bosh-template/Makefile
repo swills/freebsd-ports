@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-bosh-template/Makefile 450285 2017-09-21 17:21:18Z sunpoet $
+# $FreeBSD: head/devel/rubygem-bosh-template/Makefile 462238 2018-02-18 13:38:15Z sunpoet $
 
 PORTNAME=	bosh-template
 PORTVERSION=	2.0.0
@@ -9,6 +9,9 @@ MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Renders bosh templates
 
 LICENSE=	APACHE20
+
+DEPRECATED=	Only used by deprecated sysutils/rubygem-bosh_cli
+EXPIRATION_DATE=2018-02-28
 
 RUN_DEPENDS=	rubygem-semi_semantic>=1.1.0:devel/rubygem-semi_semantic
 

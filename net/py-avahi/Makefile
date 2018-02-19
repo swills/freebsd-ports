@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/net/py-avahi/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-avahi/Makefile 462307 2018-02-19 11:10:43Z antoine $
 #   $MCom: ports/net/py-avahi/Makefile,v 1.4 2007/07/31 18:24:13 ahze Exp $
 
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	net gnome python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 PKGNAMESUFFIX=	# empty
@@ -25,7 +25,7 @@ PLIST=		${.CURDIR}/pkg-plist
 AVAHI_SLAVE=	python
 
 USE_GNOME=	pygtk2
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	flavors
 MANPAGES=	avahi-bookmarks.1 avahi-discover.1
 

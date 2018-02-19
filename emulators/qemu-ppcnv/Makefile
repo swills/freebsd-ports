@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/qemu-ppcnv/Makefile 446697 2017-07-26 20:55:14Z linimon $
+# $FreeBSD: head/emulators/qemu-ppcnv/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	qemu
 PORTVERSION=	2.10.0
@@ -25,7 +25,7 @@ GH_PROJECT=	qemu
 GH_TAGNAME=	8d5981c
 
 HAS_CONFIGURE=	yes
-USES=		gmake libtool makeinfo pkgconfig python:2,build
+USES=		gmake libtool makeinfo pkgconfig python:2.7,build
 USE_XORG=	pixman
 USE_GNOME+=	glib20
 ONLY_FOR_ARCHS=	amd64

@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/py-rlcompleter2/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-rlcompleter2/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	rlcompleter2
 PORTVERSION=	0.98
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +13,7 @@ COMMENT=	Python module for readline interactive completion
 
 LICENSE=	MIT
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/graphics/variety/Makefile 457964 2018-01-03 13:22:31Z mat $
+# $FreeBSD: head/graphics/variety/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	variety
 PORTVERSION=	0.5.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	https://launchpad.net/variety/trunk/${PORTVERSION}/+download/ \
 		http://nivit.altervista.org/FreeBSD/ports/distfiles/
@@ -38,7 +38,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=4.3.2:www/py-beautifulsoup@${
 
 SHEBANG_FILES=	bin/variety data/scripts/*
 
-USES=	desktop-file-utils gettext python:2 shebangfix gnome
+USES=	desktop-file-utils gettext python:2.7 shebangfix gnome
 USE_GNOME=	pygobject3:run
 USE_PYTHON=	distutils
 

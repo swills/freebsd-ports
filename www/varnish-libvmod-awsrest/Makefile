@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/varnish-libvmod-awsrest/Makefile 447087 2017-08-02 05:12:07Z vanilla $
+# $FreeBSD: head/www/varnish-libvmod-awsrest/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	libvmod-awsrest
 DISTVERSIONPREFIX=	v
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 BUILD_DEPENDS=	rst2man:textproc/py-docutils
 LIB_DEPENDS=	libmhash.so:security/mhash
 
-USES=		autoreconf gmake libtool pkgconfig python:2,build varnish
+USES=		autoreconf gmake libtool pkgconfig python:2.7,build varnish
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-static
 INSTALL_TARGET=	install-strip

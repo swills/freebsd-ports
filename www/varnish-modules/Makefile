@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/varnish-modules/Makefile 442263 2017-05-31 20:26:58Z feld $
+# $FreeBSD: head/www/varnish-modules/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	varnish-modules
 DISTVERSION=	0.12.1
@@ -13,7 +13,7 @@ LICENSE=	BSD2CLAUSE
 
 BUILD_DEPENDS=	rst2man:textproc/py-docutils
 
-USES=		autoreconf:build gmake libtool pkgconfig python:2,build varnish
+USES=		autoreconf:build gmake libtool pkgconfig python:2.7,build varnish
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-static
 INSTALL_TARGET=	install-strip

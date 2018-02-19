@@ -1,9 +1,9 @@
 # Created by: Hye-Shik Chang <perky@python.or.kr>
-# $FreeBSD: head/converters/py-iconv/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/converters/py-iconv/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	iconv
 PORTVERSION=	1.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	converters python
 MASTER_SITES=	LOCAL/perky
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +12,7 @@ DIST_SUBDIR=	python
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Iconv wrapper with Unicode codec for Python
 
-USES=		iconv python:2
+USES=		iconv python:2.7
 USE_PYTHON=	autoplist distutils
 
 .if empty(ICONV_LIB)

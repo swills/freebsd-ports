@@ -1,8 +1,9 @@
 # Created by: dpejesh@yahoo.com
-# $FreeBSD: head/net-mgmt/crmsh/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-mgmt/crmsh/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	crmsh
 PORTVERSION=	3.0.0
+PORTREVISION=	1
 CATEGORIES=	net-mgmt python
 
 MAINTAINER=	dpejesh@yahoo.com
@@ -21,7 +22,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${FLAVOR} \
 USE_GITHUB=	yes
 GH_ACCOUNT=	ClusterLabs
 
-USES=		autoreconf gmake python:2 shebangfix
+USES=		autoreconf gmake python:2.7 shebangfix
 USE_PYTHON=	flavors
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-ocf-root=${PREFIX}/lib/ocf

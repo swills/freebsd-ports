@@ -1,8 +1,9 @@
 # Created by: Johann Visagie <wjv@FreeBSD.org>
-# $FreeBSD: head/textproc/py-dsv/Makefile 401381 2015-11-12 17:22:11Z amdmi3 $
+# $FreeBSD: head/textproc/py-dsv/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	dsv
 PORTVERSION=	1.4.1
+PORTREVISION=	1
 CATEGORIES=	textproc python
 MASTER_SITES=	SF/python-${PORTNAME}/python-${PORTNAME}/${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,7 +12,7 @@ DISTNAME=	${PORTNAME:tu}-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python module to parse or write delimeter-separated (e.g. CSV) files
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 DSV_BASEDIR=	${PYTHONPREFIX_SITELIBDIR}/DSV
 NO_ARCH=	yes

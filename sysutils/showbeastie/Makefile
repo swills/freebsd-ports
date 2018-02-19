@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/sysutils/showbeastie/Makefile 456571 2017-12-17 23:40:01Z tobik $
+# $FreeBSD: head/sysutils/showbeastie/Makefile 462275 2018-02-19 04:07:17Z linimon $
 
 PORTNAME=	showbeastie
 PORTVERSION=	0.3
@@ -11,6 +11,10 @@ MAINTAINER=	tobik@FreeBSD.org
 COMMENT=	Preview FreeBSD loader logos
 
 LICENSE=	BSD2CLAUSE
+
+BROKEN_armv6=		fails to link: testmain uses VFP register arguments, dict.o does not
+BROKEN_armv7=		fails to link: testmain uses VFP register arguments, dict.o does not
+BROKEN_mips64=		fails to link: relocation truncated to fit: R_MIPS_26 against `__assert@@FBSD_1.0'
 
 .if !exists(${SRC_BASE}/sys/Makefile)
 IGNORE=	requires kernel source files in ${SRC_BASE}
@@ -25,9 +29,6 @@ PLIST_FILES=	bin/${PORTNAME}
 # Make sure building succeeds on HEAD
 CFLAGS+=	-I/usr/include # uses -nostdinc
 MAKE_ARGS+=	-m ${SRC_BASE}/share/mk
-
-BROKEN_armv6=		fails to link: testmain uses VFP register arguments, dict.o does not
-BROKEN_mips64=		fails to link: relocation truncated to fit: R_MIPS_26 against `__assert@@FBSD_1.0'
 
 WRKSRC_SUBDIR=	ficl
 

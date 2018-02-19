@@ -1,9 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-rack-protection1/Makefile 441026 2017-05-16 18:19:22Z sunpoet $
+# $FreeBSD: head/www/rubygem-rack-protection1/Makefile 462297 2018-02-19 10:30:26Z sunpoet $
 
 PORTNAME=	rack-protection
-PORTVERSION=	1.5.3
-PORTREVISION=	2
+PORTVERSION=	1.5.4
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	1

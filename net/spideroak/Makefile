@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/net/spideroak/Makefile 449026 2017-08-31 11:59:08Z amdmi3 $
+# $FreeBSD: head/net/spideroak/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	spideroak
 PORTVERSION=	6.0
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://nivit.altervista.org/FreeBSD/ports/distfiles/${PORTNAME}/ \
 		https://spideroak.com/getbuild?platform=slackware&arch=i386&dummy=/
@@ -32,7 +32,7 @@ PLIST_SUB=	DESKTOPDIR=${DESKTOPDIR:S,${PREFIX}/,,} \
 SUB_LIST=	LINUXBASE=${LINUXBASE}
 SUB_FILES=	pkg-message
 
-USES=		desktop-file-utils linux python:2 tar:tgz
+USES=		desktop-file-utils linux python:2.7 tar:tgz
 USE_LINUX=	xorglibs
 
 post-patch:

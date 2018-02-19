@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/deskutils/griffith/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/deskutils/griffith/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	griffith
 PORTVERSION=	0.13
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	deskutils
 MASTER_SITES=	http://launchpadlibrarian.net/87859599/
 
@@ -18,7 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${PY_FLAVOR}
 		${PYTHON_PKGNAMEPREFIX}pillow>=0:graphics/py-pillow@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}reportlab1>=1.19:print/py-reportlab1@${PY_FLAVOR}
 
-USES=		gmake gettext python:2 shebangfix tar:xz
+USES=		gmake gettext python:2.7 shebangfix tar:xz
 SHEBANG_FILES=	griffith
 USE_GNOME=	pygtk2
 NO_BUILD=	yes

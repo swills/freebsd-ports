@@ -1,10 +1,10 @@
 # Created by: Ade Lovett <ade@lovett.com>
-# $FreeBSD: head/devel/libglade2/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/libglade2/Makefile 462307 2018-02-19 11:10:43Z antoine $
 #   $MCom: ports/devel/libglade2/Makefile,v 1.26 2007/08/01 16:13:48 mezz Exp $
 
 PORTNAME=	libglade2
 PORTVERSION=	2.6.4
-PORTREVISION?=	8
+PORTREVISION?=	9
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME/sources/${PORTNAME:S/2$//}/${PORTVERSION:C/..$//}
 DISTNAME=	${PORTNAME:S/2$//}-${PORTVERSION}
@@ -38,7 +38,7 @@ OPTIONS_DEFAULT=PYTHON
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MPYTHON}
-USES+=		python:2
+USES+=		python:2.7
 PLIST_SUB+=	PYTHON=""
 .else
 PLIST_SUB+=	PYTHON="@comment "

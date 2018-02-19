@@ -1,8 +1,9 @@
 # Created by: Jin-Sih Lin <linpct@gmail.com>
-# $FreeBSD: head/www/node4/Makefile 456343 2017-12-14 19:44:55Z bhughes $
+# $FreeBSD: head/www/node4/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	node
 PORTVERSION=	4.8.7
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 MASTER_SITES=	http://nodejs.org/dist/v${PORTVERSION}/
@@ -28,7 +29,7 @@ BUNDLED_SSL_CONFIGURE_OFF=	--shared-openssl
 NLS_CONFIGURE_ON=	--with-intl=system-icu
 NLS_LIB_DEPENDS=	libicui18n.so:devel/icu
 
-USES=		compiler:c++11-lib gmake python:2 pkgconfig localbase
+USES=		compiler:c++11-lib gmake python:2.7 pkgconfig localbase
 HAS_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 

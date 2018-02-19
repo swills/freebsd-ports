@@ -1,8 +1,9 @@
 # Created by: Evan Sarmiento <bsdports@wayfair.com>
-# $FreeBSD: head/sysutils/py-XenAPI/Makefile 371454 2014-10-24 16:56:10Z mva $
+# $FreeBSD: head/sysutils/py-XenAPI/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	XenAPI
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	sysutils python
 MASTER_SITES=	http://community.citrix.com/download/attachments/38633496/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +14,7 @@ EXTRACT_ONLY=
 MAINTAINER=	bsdports@wayfair.com
 COMMENT=	Xen API Library for Python
 
-USES=		python:2
+USES=		python:2.7
 WRKSRC=		${WRKDIR}/${PORTNAME}
 PLIST_FILES=	%%PYTHON_SITELIBDIR%%/XenAPI.py \
 		%%PYTHON_SITELIBDIR%%/XenAPI.pyc \

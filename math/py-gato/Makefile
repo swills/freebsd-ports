@@ -1,8 +1,9 @@
 # Created by: Johann Visagie <wjv@FreeBSD.org>
-# $FreeBSD: head/math/py-gato/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/math/py-gato/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	gato
 PORTVERSION=	1.2.2
+PORTREVISION=	1
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,7 +19,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${FLAVOR}
 
 NO_ARCH=	yes
 PORTEXAMPLES=	*
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 post-install:

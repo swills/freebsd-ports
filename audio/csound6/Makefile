@@ -1,9 +1,9 @@
 # Created by: trevor
-# $FreeBSD: head/audio/csound6/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/audio/csound6/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	csound
 PORTVERSION=	6.06
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	audio lang
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}6/${PORTNAME:S/c/C/}${PORTVERSION}
 PKGNAMESUFFIX=	6
@@ -22,7 +22,7 @@ BUILD_DEPENDS=	boost-libs>0:devel/boost-libs \
 LIB_DEPENDS=	libsamplerate.so:audio/libsamplerate \
 		libsndfile.so:audio/libsndfile
 
-USES=		alias bison cmake:outsource,noninja eigen:3 localbase python:2
+USES=		alias bison cmake:outsource,noninja eigen:3 localbase python:2.7
 # math/gmm++ requires c++11
 USE_CXXSTD=	c++11
 CMAKE_ARGS=	-DBUILD_CSOUNDVST:BOOL=OFF \

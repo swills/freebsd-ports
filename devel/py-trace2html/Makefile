@@ -1,9 +1,9 @@
 # Created by: Li-Wen Hsu <lwhsu@lwhsu.org>
-# $FreeBSD: head/devel/py-trace2html/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-trace2html/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	trace2html
 PORTVERSION=	0.2.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +13,7 @@ COMMENT=	HTML coverage report generator for trace.py
 
 LICENSE=	GPLv2
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

@@ -1,8 +1,9 @@
 # Created by: Attila Nagy <bra@fsn.hu>
-# $FreeBSD: head/devel/py-jsonrpclib/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-jsonrpclib/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	jsonrpclib
 PORTVERSION=	0.1.7
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +13,7 @@ COMMENT=	Implements the JSON-RPC 2.0 proposed specification in pure Python
 
 LICENSE=	APACHE20
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 OPTIONS_DEFINE=	CJSON
