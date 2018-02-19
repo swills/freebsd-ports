@@ -1,8 +1,8 @@
 # Created by: Jose Jachuf <jjachuf@gmail.com>
-# $FreeBSD: head/devel/py-rope/Makefile 439003 2017-04-21 06:19:03Z miwi $
+# $FreeBSD: head/devel/py-rope/Makefile 462228 2018-02-18 13:25:24Z wen $
 
 PORTNAME=	rope
-PORTVERSION=	0.10.5
+PORTVERSION=	0.10.7
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

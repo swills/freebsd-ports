@@ -1,9 +1,9 @@
 # Created by: ports@c0decafe.net
-# $FreeBSD: head/deskutils/tnote/Makefile 399684 2015-10-19 14:50:52Z amdmi3 $
+# $FreeBSD: head/deskutils/tnote/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	tnote
 PORTVERSION=	0.2.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${DISTNAME}
 
@@ -12,7 +12,7 @@ COMMENT=	Small note taking program for the terminal
 
 LICENSE=	GPLv3
 
-USES=		python:2 shebangfix
+USES=		python:2.7 shebangfix
 USE_PYTHON=	distutils
 
 SHEBANG_FILES=	tnote

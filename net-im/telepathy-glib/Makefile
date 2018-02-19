@@ -1,5 +1,5 @@
 # Created by: gnome@freebsd.org
-# $FreeBSD: head/net-im/telepathy-glib/Makefile 433710 2017-02-09 05:25:59Z fluffy $
+# $FreeBSD: head/net-im/telepathy-glib/Makefile 462307 2018-02-19 11:10:43Z antoine $
 #   $MCom: ports/trunk/net-im/telepathy-glib/Makefile 20031 2014-11-02 21:47:55Z kwm $
 
 PORTNAME=	telepathy-glib
@@ -17,7 +17,7 @@ RUN_DEPENDS=	vapigen:lang/vala
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gmake libtool pathfix pkgconfig python:2,build
+USES=		gmake libtool pathfix pkgconfig python:2.7,build
 USE_GNOME=	glib20 introspection:build libxslt:build
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes

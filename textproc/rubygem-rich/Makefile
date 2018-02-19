@@ -1,9 +1,9 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-rich/Makefile 437079 2017-03-27 19:16:29Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-rich/Makefile 462243 2018-02-18 13:38:41Z sunpoet $
 
 PORTNAME=	rich
 PORTVERSION=	1.4.6
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -19,7 +19,7 @@ RUN_DEPENDS=	rubygem-jquery-rails>=4.0:www/rubygem-jquery-rails \
 		rubygem-paperclip>=0:devel/rubygem-paperclip \
 		rubygem-rack-raw-upload>=0:devel/rubygem-rack-raw-upload \
 		rubygem-rails4>=4.0:www/rubygem-rails4 \
-		rubygem-sass-rails5>=0:textproc/rubygem-sass-rails5
+		rubygem-sass-rails-rails4>=0:textproc/rubygem-sass-rails-rails4
 
 NO_ARCH=	yes
 USE_RUBY=	yes

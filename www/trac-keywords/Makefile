@@ -1,9 +1,9 @@
 # Created by: Eygene Ryabinkin <rea-fbsd@codelabs.ru>
-# $FreeBSD: head/www/trac-keywords/Makefile 416081 2016-05-29 01:29:08Z amdmi3 $
+# $FreeBSD: head/www/trac-keywords/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	keywords
 PORTVERSION=	0.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	www python
 MASTER_SITES=	http://dist.codelabs.ru/fbsd/
 PKGNAMEPREFIX=	trac-
@@ -16,7 +16,7 @@ LICENSE=	BSD3CLAUSE
 
 RUN_DEPENDS=	trac>=0.11:www/trac
 
-USES=		python:2 zip
+USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist
 WRKSRC=		${WRKDIR}/trackeywordsplugin/0.11
 NO_ARCH=	yes

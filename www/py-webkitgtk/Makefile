@@ -1,9 +1,9 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/www/py-webkitgtk/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-webkitgtk/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	webkitgtk
 PORTVERSION=	1.1.8
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	www python
 MASTER_SITES=	https://pkgs.fedoraproject.org/repo/extras/pywebkitgtk/pywebkitgtk-1.1.8.tar.bz2/19f3c184eebcfde1c9d1ce56bbe75cf2/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libwebkitgtk-1.0.so:www/webkit-gtk2
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
-USES=		gmake libtool pathfix pkgconfig python:2 tar:bzip2
+USES=		gmake libtool pathfix pkgconfig python:2.7 tar:bzip2
 USE_GNOME=	glib20 libxslt pygtk2
 USE_PYTHON=	flavors
 

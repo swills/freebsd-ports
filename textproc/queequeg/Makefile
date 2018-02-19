@@ -1,9 +1,9 @@
 # Created by: Kimura Fuyuki <fuyuki@nigredo.org>
-# $FreeBSD: head/textproc/queequeg/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/queequeg/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	queequeg
 PORTVERSION=	0.91
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	wn:textproc/wordnet \
 		${PYTHON_SITELIBDIR}/cdbmodule.so:databases/py-cdb
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/cdbmodule.so:databases/py-cdb
 
-USES=		python:2 shebangfix
+USES=		python:2.7 shebangfix
 SHEBANG_FILES=	*.py misc/*.py qq
 ALL_TARGET=	dict
 MAKE_ARGS=	WORDNETDICT="${LOCALBASE}/share/WordNet" \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-github-linguist47/Makefile 462179 2018-02-17 17:51:20Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-github-linguist47/Makefile 462262 2018-02-18 19:26:45Z jrm $
 
 PORTNAME=	github-linguist
 PORTVERSION=	4.7.6
@@ -17,15 +17,14 @@ RUN_DEPENDS=	rubygem-charlock_holmes>=0.7.3:textproc/rubygem-charlock_holmes \
 		rubygem-mime-types>=1.19:misc/rubygem-mime-types \
 		rubygem-rugged>=0.23.0b:devel/rubygem-rugged
 
-PORTSCOUT=	limit:^4\.7\.
-
-# bin/linguist
-CONFLICTS_INSTALL=	qtchooser rubygem-gitlab-linguist rubygem-github-linguist
-
-NO_ARCH=	yes
 USES=		gem
 USE_RUBY=	yes
+NO_ARCH=	yes
 
+CONFLICTS_INSTALL=	qtchooser rubygem-github-linguist rubygem-gitlab-linguist
+# bin/linguist
 PLIST_FILES=	bin/git-linguist bin/linguist
+
+PORTSCOUT=	limit:^4\.7\.
 
 .include <bsd.port.mk>

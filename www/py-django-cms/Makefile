@@ -1,9 +1,9 @@
 # Created by: Matthew X. Economou <xenophon+fbsdports@irtnog.org>
-# $FreeBSD: head/www/py-django-cms/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django-cms/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	django-cms
 PORTVERSION=	2.4.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,7 +20,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}south>=0.7.3:databases/py-south@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}django-sekizai>=0.6.1:www/py-django-sekizai@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}html5lib>=0.90:www/py-html5lib@${FLAVOR}
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 OPTIONS_MULTI=	DATABASE

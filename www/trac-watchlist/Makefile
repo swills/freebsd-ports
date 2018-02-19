@@ -1,9 +1,9 @@
 # Created by: Hung-Yi Chen <gaod@hychen.org>
-# $FreeBSD: head/www/trac-watchlist/Makefile 425174 2016-11-02 22:45:14Z mat $
+# $FreeBSD: head/www/trac-watchlist/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	watchlist
 PORTVERSION=	1.0.${SVN_REV}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	www devel python
 MASTER_SITES=	http://distfiles.cse.tw/ \
 		http://trac-hacks.org/changeset/${SVN_REV}/watchlistplugin?old_path=/&format=zip&filename=/
@@ -20,7 +20,7 @@ RUN_DEPENDS=	tracd:www/trac
 SVN_REV=	11526
 
 WRKSRC=		${WRKDIR}/${PORTNAME}plugin/0.12
-USES=		python:2 zip
+USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

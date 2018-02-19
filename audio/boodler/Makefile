@@ -1,9 +1,9 @@
 # Created by: Dan Pelleg <daniel+boodler@pelleg.org>
-# $FreeBSD: head/audio/boodler/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/audio/boodler/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	boodler
 PORTVERSION=	1.5.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio
 MASTER_SITES=	http://www.eblong.com/zarf/boodler/
 DISTFILES=	boodler-153.tar.gz boodler-snd-021902.tar.gz
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LGPL
 RESTRICTED=	Not for commercial use
 RESTRICTED_FILES=	boodler-snd-021902.tar.gz
 
-USES=		python:2 shebangfix
+USES=		python:2.7 shebangfix
 
 HAS_CONFIGURE=	yes
 CONFIGURE_SCRIPT=	configure.py

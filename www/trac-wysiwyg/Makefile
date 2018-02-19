@@ -1,9 +1,9 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/www/trac-wysiwyg/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/www/trac-wysiwyg/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	wysiwyg
 DISTVERSION=	0.4.${SVN_REV}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www devel python
 MASTER_SITES=	http://www.sourcehosting.net/freebsd/distfiles/ \
 		LOCAL/brooks
@@ -15,7 +15,7 @@ COMMENT=	WYSIWYG editor for Trac wiki
 
 RUN_DEPENDS=	tracd:www/trac
 
-USES=		python:2 tar:bzip2
+USES=		python:2.7 tar:bzip2
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

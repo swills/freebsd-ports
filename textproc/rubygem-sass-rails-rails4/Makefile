@@ -1,11 +1,11 @@
 # Created by: Johannes Jost Meixner <xmj@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-sass-rails5/Makefile 454287 2017-11-15 19:57:05Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-sass-rails-rails4/Makefile 462243 2018-02-18 13:38:41Z sunpoet $
 
 PORTNAME=	sass-rails
 PORTVERSION=	5.0.7
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
-PKGNAMESUFFIX=	5
+PKGNAMESUFFIX=	-rails4
 
 MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Sass adapter for the Rails asset pipeline

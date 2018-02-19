@@ -1,9 +1,9 @@
 # Created by: Neil Blakey-Milner <nbm@FreeBSD.org>
-# $FreeBSD: head/audio/py-ao/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/py-ao/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	ao
 PORTVERSION=	0.82
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio python
 MASTER_SITES=	http://ekyo.nerim.net/software/pyogg/ \
 		http://www.sourcefiles.org/Programming/Development/Modules/Python/
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libao.so:audio/libao
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 do-configure:

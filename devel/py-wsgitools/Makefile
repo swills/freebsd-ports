@@ -1,8 +1,9 @@
 # Created by: Klaus T. Aehlig <aehlig@linta.de>
-# $FreeBSD: head/devel/py-wsgitools/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/devel/py-wsgitools/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	wsgitools
 PORTVERSION=	0.3
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://subdivi.de/~helmut/${PORTNAME}/dist/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +15,7 @@ COMMENT=	Useful middlewares and filters for wsgi as well as scgi servers
 
 LICENSE=	GPLv2+
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

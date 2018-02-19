@@ -1,9 +1,9 @@
 # Created by: Benoit Calvez <benoit@litchis.org>
-# $FreeBSD: head/devel/py-pytemplate/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-pytemplate/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	pytemplate
 PORTVERSION=	1.5.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel python
 MASTER_SITES=	http://www.bulot.org/downloads/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +13,7 @@ COMMENT=	Pytemplate gives python developers a starting framework
 
 LICENSE=	GPLv3
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils
 
 EXAMPLESDIR=	${PREFIX}/share/examples/py-pytemplate

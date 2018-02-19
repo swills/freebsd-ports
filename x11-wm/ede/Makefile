@@ -1,9 +1,9 @@
 # Created by: Sergey Matveychuk <sem@ciam.ru>
-# $FreeBSD: head/x11-wm/ede/Makefile 456295 2017-12-14 13:54:13Z amdmi3 $
+# $FreeBSD: head/x11-wm/ede/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	ede
 PORTVERSION=	2.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-wm
 MASTER_SITES=	SF \
 		SF/${PORTNAME}/${PORTNAME}lib/${PORTVERSION}:edelib
@@ -23,7 +23,7 @@ LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 		libstartup-notification-1.so:x11/startup-notification \
 		libfltk.so:x11-toolkits/fltk
 
-USES=		fam gettext iconv:translit pathfix pkgconfig python:2 \
+USES=		fam gettext iconv:translit pathfix pkgconfig python:2.7 \
 		shared-mime-info shebangfix
 SHEBANG_FILES=	doc/asciidoc/asciidoc.py
 USE_XORG=	xcomposite xft xinerama xkbfile xpm xrandr

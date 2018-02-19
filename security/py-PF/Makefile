@@ -1,8 +1,9 @@
 # Created by: Sofian Brabez <sbrabez@gmail.com>
-# $FreeBSD: head/security/py-PF/Makefile 450347 2017-09-22 10:16:15Z sbz $
+# $FreeBSD: head/security/py-PF/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	PF
 PORTVERSION=	0.1.1
+PORTREVISION=	1
 CATEGORIES=	security python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -12,7 +13,7 @@ COMMENT=	Pure-Python module for managing OpenBSD Packet Filter
 LICENSE=	BSD3CLAUSE
 
 USE_GITHUB=	yes
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 GH_ACCOUNT=	dotpy

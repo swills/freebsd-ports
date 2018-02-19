@@ -1,9 +1,9 @@
 # Created by: Sunagawa Koji <koj@ofug.net>
-# $FreeBSD: head/japanese/mailman/Makefile 457194 2017-12-24 19:53:11Z tijl $
+# $FreeBSD: head/japanese/mailman/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	mailman
 PORTVERSION=	2.1.14.j7
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	japanese mail
 MASTER_SITES=	http://www.python.jp/doc/contrib/mailman/_static/ \
@@ -21,7 +21,7 @@ CONFLICTS=	mailman-2.1.*
 
 PORTSCOUT=	limit:.*\.j\d+$$
 
-USES=		autoreconf gettext python:2 tar:tgz
+USES=		autoreconf gettext python:2.7 tar:tgz
 USE_RC_SUBR=	mailman
 
 GNU_CONFIGURE=	yes

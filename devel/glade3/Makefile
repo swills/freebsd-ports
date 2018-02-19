@@ -1,8 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/devel/glade3/Makefile 452986 2017-10-27 13:40:52Z mat $
+# $FreeBSD: head/devel/glade3/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	glade3
 PORTVERSION=	3.8.5
+PORTREVISION=	1
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2
@@ -38,7 +39,7 @@ GNOME_CONFIGURE_ENABLE=	gnome
 GNOME_USE=	GNOME=libgnomeui
 PYTHON_CONFIGURE_ENABLE=	python
 PYTHON_USE=	GNOME=pygtk2
-PYTHON_USES=	python:2
+PYTHON_USES=	python:2.7
 
 post-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/lib/glade3/bindings

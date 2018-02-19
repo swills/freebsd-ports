@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/sysutils/e2fsprogs/Makefile 457962 2018-01-03 12:35:12Z mandree $
+# $FreeBSD: head/sysutils/e2fsprogs/Makefile 462277 2018-02-19 05:18:06Z linimon $
 
 PORTNAME=	e2fsprogs
 PORTVERSION=	1.43.8
@@ -20,6 +20,8 @@ PORTSCOUT=	ignore	# cannot handle the version in the directory
 
 .if !defined(MASTERDIR)
 BROKEN_aarch64=		fails to link: missing sbrk
+BROKEN_armv6=		fails to build: Tests failed: f_pre_1970_date_encoding
+BROKEN_armv7=		fails to build: Tests failed: f_pre_1970_date_encoding
 .endif
 
 USES=		cpe gmake makeinfo pkgconfig tar:xz

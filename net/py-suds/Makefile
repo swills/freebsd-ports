@@ -1,9 +1,9 @@
 # Created by: Corey Smith
-# $FreeBSD: head/net/py-suds/Makefile 430950 2017-01-09 14:19:18Z novel $
+# $FreeBSD: head/net/py-suds/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	suds
 PORTVERSION=	0.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +15,7 @@ LICENSE=	LGPL3
 
 CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}suds-jurko-*
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

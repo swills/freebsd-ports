@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/misc/py-yolk/Makefile 461090 2018-02-06 19:18:40Z sunpoet $
+# $FreeBSD: head/misc/py-yolk/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	yolk
 PORTVERSION=	0.4.3
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	misc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +13,7 @@ COMMENT=	Command-line tool for querying PyPI and Python packages installed
 
 LICENSE=	BSD3CLAUSE
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 OPTIONS_DEFINE=	EXAMPLES

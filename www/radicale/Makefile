@@ -1,9 +1,9 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/radicale/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/radicale/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=		radicale
 PORTVERSION=		1.1.2
-PORTREVISION=		1
+PORTREVISION=		2
 CATEGORIES=		www python
 MASTER_SITES=		CHEESESHOP
 PKGNAMEPREFIX=		${PYTHON_PKGNAMEPREFIX}
@@ -29,7 +29,7 @@ HTTP_DESC=		HTTP authentication support
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MHTTP} || ${PORT_OPTIONS:MLDAP}
-USES+=		python:2
+USES+=		python:2.7
 .else
 USES+=		python
 .endif

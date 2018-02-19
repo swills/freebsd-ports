@@ -1,8 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/www/qooxdoo/Makefile 410949 2016-03-13 10:59:38Z rakuco $
+# $FreeBSD: head/www/qooxdoo/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	qooxdoo
 PORTVERSION=	5.0.1
+PORTREVISION=	1
 CATEGORIES=	www devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-current/${PORTVERSION}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-sdk
@@ -13,7 +14,7 @@ COMMENT=	Comprehensive and innovative Ajax application framework
 LICENSE=	LGPL3 EPL
 LICENSE_COMB=	dual
 
-USES=		zip python:2
+USES=		zip python:2.7
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 

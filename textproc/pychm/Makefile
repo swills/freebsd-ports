@@ -1,9 +1,9 @@
 # Created by: Radek Kozlowski <radek@raadradd.com>
-# $FreeBSD: head/textproc/pychm/Makefile 434692 2017-02-24 01:52:10Z cpm $
+# $FreeBSD: head/textproc/pychm/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	pychm
 PORTVERSION=	0.8.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc python
 MASTER_SITES=	SF/gnochm/${PORTNAME}/${PORTVERSION}
 
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libchm.so:misc/chmlib
 
 NO_BUILD=	yes
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.pre.mk>

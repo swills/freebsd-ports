@@ -1,9 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/textproc/py-tvgrab/Makefile 405427 2016-01-07 11:17:23Z miwi $
+# $FreeBSD: head/textproc/py-tvgrab/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	TVGrab
 PORTVERSION=	0.5.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	textproc python
 MASTER_SITES=	SF/py${PORTNAME:tl}/lib/${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 OPTIONS_DEFINE=	DOCS
 
-USES=		python:2 tar:bzip2
+USES=		python:2.7 tar:bzip2
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

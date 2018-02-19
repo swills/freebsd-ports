@@ -1,10 +1,10 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/deskutils/conduit/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/deskutils/conduit/Makefile 462307 2018-02-19 11:10:43Z antoine $
 #    $MCom: ports/deskutils/conduit/Makefile,v 1.7 2008/03/18 14:53:42 ahze Exp $
 
 PORTNAME=	conduit
 PORTVERSION=	0.3.17
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	deskutils
 MASTER_SITES=	GNOME
 
@@ -23,7 +23,7 @@ RUN_DEPENDS=	${PYTHON_SITELIBDIR}/goocanvasmodule.so:graphics/py-goocanvas@${PY_
 		xdg-open:devel/xdg-utils
 
 GNU_CONFIGURE=	yes
-USES=		gettext gmake pathfix pkgconfig python:2 \
+USES=		gettext gmake pathfix pkgconfig python:2.7 \
 		shebangfix
 INSTALLS_OMF=	yes
 INSTALLS_ICONS=	yes

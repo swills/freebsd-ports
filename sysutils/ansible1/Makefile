@@ -1,9 +1,9 @@
 # Created by: Nikolai Lifanov <lifanov@mail.lifanov.com>
-# $FreeBSD: head/sysutils/ansible1/Makefile 455233 2017-11-30 21:34:42Z lifanov $
+# $FreeBSD: head/sysutils/ansible1/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PKGNAMESUFFIX=	1
 PORTVERSION=	1.9.6
-PORTREVISION=	1
+PORTREVISION=	2
 
 CONFLICTS=	ansible-* ansible23-*
 
@@ -15,7 +15,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}paramiko>0:security/py-paramiko@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Jinja2>0:devel/py-Jinja2@${PY_FLAVOR}
 
-USES=	cpe python:2 shebangfix
+USES=	cpe python:2.7 shebangfix
 
 PLIST_FILES=	man/man1/ansible-doc.1.gz \
 		man/man1/ansible-galaxy.1.gz \

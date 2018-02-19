@@ -1,9 +1,9 @@
 # Created by: Li-Wen Hsu <lwhsu@lwhsu.org>
-# $FreeBSD: head/devel/py-instant/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/devel/py-instant/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	instant
 PORTVERSION=	${MMVERSION}.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel python
 MASTER_SITES=	https://launchpad.net/${PORTNAME}/${MMVERSION}.x/${PORTVERSION}/+download/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +15,7 @@ LICENSE=	LGPL3
 
 RUN_DEPENDS=	swig3.0:devel/swig30
 
-USES=			python:2
+USES=			python:2.7
 USE_PYTHON=		distutils
 PYDISTUTILS_PKGNAME=	instant
 

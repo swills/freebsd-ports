@@ -1,8 +1,9 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/devel/libvirt-glib/Makefile 425467 2016-11-06 07:56:41Z novel $
+# $FreeBSD: head/devel/libvirt-glib/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	libvirt-glib
 PORTVERSION=	1.0.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://libvirt.org/libvirt/glib/
 
@@ -21,7 +22,7 @@ VALA_BUILD_DEPENDS=	valac:lang/vala
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-introspection
-USES=		gettext gmake libtool pathfix pkgconfig python:2
+USES=		gettext gmake libtool pathfix pkgconfig python:2.7
 USE_LDCONFIG=	yes
 USE_GNOME=	intlhack introspection libxml2
 CPPFLAGS+=	-I${LOCALBASE}/include

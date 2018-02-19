@@ -1,9 +1,9 @@
 # Created by: Elias Mandouvalos <ocean@mail.gr>
-# $FreeBSD: head/audio/py-karaoke/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/audio/py-karaoke/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	karaoke
 PORTVERSION=	0.7.5
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	audio python
 MASTER_SITES=	SF/py${PORTNAME}/py${PORTNAME}/${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -21,7 +21,7 @@ RUN_DEPENDS=	dejavu>0:x11-fonts/dejavu \
 		${PYGAME} \
 		${PYNUMPY}
 
-USES=		compiler:c++11-lib desktop-file-utils iconv python:2 shebangfix zip
+USES=		compiler:c++11-lib desktop-file-utils iconv python:2.7 shebangfix zip
 SHEBANG_FILES=	install/pykaraoke_mini install/pykar install/pykaraoke \
 		install/pycdg install/pympg
 USE_SDL=	sdl

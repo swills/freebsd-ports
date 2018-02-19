@@ -1,9 +1,9 @@
 # Created by: alepulver
-# $FreeBSD: head/net-p2p/tribler/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-p2p/tribler/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	tribler
 PORTVERSION=	6.5.2
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net-p2p
 MASTER_SITES=	https://github.com/Tribler/tribler/releases/download/v${PORTVERSION}/
 DISTNAME=	Tribler-v${PORTVERSION}
@@ -34,7 +34,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}apsw>0:databases/py-apsw@${PY_FLAVOR} \
 NO_ARCH=	yes
 NO_WRKSUBDIR=	yes
 
-USES=		desktop-file-utils python:2,run ssl:run tar:xz
+USES=		desktop-file-utils python:2.7,run ssl:run tar:xz
 USE_WX=		2.8
 WX_COMPS=	python
 INSTALLS_ICONS=	yes

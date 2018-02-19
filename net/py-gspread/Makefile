@@ -1,8 +1,9 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/net/py-gspread/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-gspread/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	gspread
 PORTVERSION=	0.6.2
+PORTREVISION=	1
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +15,7 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>2.2.1:www/py-requests@${FLAVOR}
 
-USES=	python:2
+USES=	python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/mypaint/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
+# $FreeBSD: head/graphics/mypaint/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	mypaint
 PORTVERSION=	1.2.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics
 MASTER_SITES=	https://github.com/mypaint/mypaint/releases/download/${PORTVERSION:S/^/v/}/
 
@@ -32,7 +32,7 @@ MAKE_ARGS=	prefix=${PREFIX} \
 		python_config="${PYTHON_CMD}-config"
 # XXX Embed RPATH via USES=fortran for py-numpy to load libgcc_s.so from ports
 USES=		desktop-file-utils fortran gettext localbase \
-		pkgconfig python:2 scons tar:xz
+		pkgconfig python:2.7 scons tar:xz
 INSTALL_TARGET=	${STAGEDIR} --install-sandbox=${STAGEDIR}
 USE_LDCONFIG=	yes
 INSTALLS_ICONS=	yes

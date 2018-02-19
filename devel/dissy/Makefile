@@ -1,9 +1,9 @@
 # Created by: Sofian Brabez <sbrabez@gmail.com>
-# $FreeBSD: head/devel/dissy/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/dissy/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	dissy
 PORTVERSION=	10
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 
 MAINTAINER=	sbz@FreeBSD.org
@@ -16,7 +16,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gtk2>0:x11-toolkits/py-gtk2@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}webkitgtk>0:www/py-webkitgtk@${FLAVOR}
 LIB_DEPENDS=	librsvg-2.so:graphics/librsvg2
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils
 USE_GITHUB=	yes
 GH_ACCOUNT=	SimonKagstrom

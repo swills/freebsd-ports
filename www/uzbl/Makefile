@@ -1,10 +1,10 @@
 # Created by: Klaus Aehlig <aehlig@linta.de>
-# $FreeBSD: head/www/uzbl/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/uzbl/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	uzbl
 PORTVERSION=	0.9.1
 DISTVERSIONPREFIX=v
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www
 
 MAINTAINER=	aehlig@linta.de
@@ -22,7 +22,7 @@ RUN_DEPENDS=	socat:net/socat \
 		dmenu:x11/dmenu \
 		${PYTHON_PKGNAMEPREFIX}configparser>0:devel/py-configparser@${PY_FLAVOR}
 
-USES=		gmake pkgconfig python:2 desktop-file-utils gettext-runtime shebangfix
+USES=		gmake pkgconfig python:2.7 desktop-file-utils gettext-runtime shebangfix
 USE_XORG=	x11
 USE_GNOME=	gtk20 pygtk2 cairo
 USE_LDCONFIG=	yes

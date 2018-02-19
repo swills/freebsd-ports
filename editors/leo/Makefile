@@ -1,9 +1,9 @@
 # Created by: Alan Eldridge <ports@geeksrus.net>
-# $FreeBSD: head/editors/leo/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/editors/leo/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	leo
 PORTVERSION=	5.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	editors python
 MASTER_SITES=	SF/${PORTNAME}/Leo/${PORTVERSION}-final
 DISTNAME=	Leo-${PORTVERSION}-final
@@ -19,7 +19,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}docutils>0:textproc/py-docutils@${FLAVOR} \
 		silvercity>0:textproc/silvercity
 
-USES=		pyqt:4 python:2 shebangfix zip
+USES=		pyqt:4 python:2.7 shebangfix zip
 SHEBANG_FILES=	leo/doc/html/fixup.pl leo/external/saveleo \
 		leo/dist/leo-install.py leo/scripts/leo
 USE_PYQT=	gui_run svg_run

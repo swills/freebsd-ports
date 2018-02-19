@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/gtg/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/deskutils/gtg/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	gtg
 PORTVERSION=	0.3.1
+PORTREVISION=	1
 CATEGORIES=	deskutils gnome python
 MASTER_SITES=	http://launchpadlibrarian.net/157500472/
 
@@ -16,7 +17,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0.82.4:devel/py-dbus@${FLAVOR} \
 		xset:x11/xset
 
 USE_GNOME=	pygobject pygtk2
-USES=		gettext desktop-file-utils python:2 shebangfix
+USES=		gettext desktop-file-utils python:2.7 shebangfix
 INSTALLS_ICONS=	yes
 SHEBANG_FILES=	${WRKSRC}/gtcli_bash_completion
 USE_PYTHON=	distutils autoplist

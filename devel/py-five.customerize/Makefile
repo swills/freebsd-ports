@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/py-five.customerize/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-five.customerize/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	five.customerize
 PORTVERSION=	1.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel python zope
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -30,6 +30,6 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}plone.portlets>=0:www/py-plone.portlets@${FL
 		${PYTHON_PKGNAMEPREFIX}Acquisition>=0:devel/py-Acquisition@${FLAVOR}
 
 USE_PYTHON=	distutils autoplist
-USES=		python:2 zope zip
+USES=		python:2.7 zope zip
 
 .include <bsd.port.mk>

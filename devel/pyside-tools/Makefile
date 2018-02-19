@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@mnemosine.domo.sva>
-# $FreeBSD: head/devel/pyside-tools/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/devel/pyside-tools/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	pyside-tools
 PORTVERSION=	0.2.15
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 PKGNAMESUFFIX=	${PYTHON_PKGNAMESUFFIX}
 
@@ -21,7 +21,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	PySide
 GH_PROJECT=	Tools
 
-USES=		cmake python:2 shebangfix
+USES=		cmake python:2.7 shebangfix
 SHEBANG_FILES=	pyside-uic pysideuic/icon_cache.py
 USE_QT4=	moc_build qmake_build rcc_build uic_build
 

@@ -1,8 +1,9 @@
 # Created by: Marco Broeder <marco.broeder@posteo.eu>
-# $FreeBSD: head/devel/diffuse/Makefile 413347 2016-04-15 14:24:29Z danfe $
+# $FreeBSD: head/devel/diffuse/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	diffuse
 PORTVERSION=	0.4.8
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	SF
 
@@ -14,7 +15,7 @@ LICENSE_COMB=	dual
 
 CONFLICTS_INSTALL=	tinker-[0-9]*
 
-USES=		desktop-file-utils python:2 tar:bzip2
+USES=		desktop-file-utils python:2.7 tar:bzip2
 USE_GNOME=	pygtk2
 
 NO_BUILD=	yes

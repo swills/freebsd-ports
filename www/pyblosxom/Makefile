@@ -1,9 +1,9 @@
 # Created by: Dryice Liu <dryice@liu.com.cn>
-# $FreeBSD: head/www/pyblosxom/Makefile 439091 2017-04-21 16:23:17Z miwi $
+# $FreeBSD: head/www/pyblosxom/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	pyblosxom
 DISTVERSION=	1.5.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www python
 MASTER_SITES=	http://pyblosxom.github.io/download/
 
@@ -12,7 +12,7 @@ COMMENT=	Lightweight weblog system
 
 LICENSE=	MIT
 
-USES=		python:2 shebangfix
+USES=		python:2.7 shebangfix
 USE_PYTHON=	distutils
 SHEBANG_FILES=	Pyblosxom/data/pyblosxom.cgi
 

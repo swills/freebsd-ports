@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-kayako/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-kayako/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	kayako
 PORTVERSION=	1.1.5
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +13,7 @@ COMMENT=	Python API Wrapper for Kayako
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${FLAVOR}
 
 NO_ARCH=	yes
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

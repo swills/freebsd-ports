@@ -1,5 +1,5 @@
 # Created by: kamikaze@bsdforen.de
-# $FreeBSD: head/multimedia/libbluray/Makefile 462195 2018-02-17 21:45:29Z yuri $
+# $FreeBSD: head/multimedia/libbluray/Makefile 462254 2018-02-18 17:30:11Z yuri $
 
 PORTNAME=	libbluray
 DISTVERSION=	1.0.2
@@ -39,7 +39,7 @@ JAVA_VARS=			JAVA_VERSION=1.6+ JAVA_BUILD=yes JAVA_RUN=yes
 JAVA_CONFIGURE_ENABLE=		bdjava-jar
 JAVA_CONFIGURE_ENV=		JDK_HOME="${JAVA_HOME}"
 
-post-extract:
+post-patch:
 	@${RLN} ${WRKSRC}/jni/linux ${WRKSRC}/jni/freebsd
 
 .include <bsd.port.mk>

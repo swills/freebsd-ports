@@ -1,8 +1,8 @@
-# $FreeBSD: head/mail/py-zope.sendmail/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/mail/py-zope.sendmail/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	zope.sendmail
 PORTVERSION=	3.7.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail python zope
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -21,7 +21,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}transaction>=0:devel/py-transaction@${FLAVOR
 		${PYTHON_PKGNAMEPREFIX}zope.configuration>=0:devel/py-zope.configuration@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}zope.security>=0:security/py-zope.security@${FLAVOR}
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

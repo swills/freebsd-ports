@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/zeal/Makefile 457924 2018-01-02 20:43:39Z rakuco $
+# $FreeBSD: head/devel/zeal/Makefile 462253 2018-02-18 17:10:54Z rakuco $
 
 PORTNAME=	zeal
-PORTVERSION=	0.5.0
+PORTVERSION=	0.6.0
 DISTVERSIONPREFIX=v
 CATEGORIES=	devel
 

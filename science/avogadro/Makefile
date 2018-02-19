@@ -1,9 +1,9 @@
 # Created by: Troels Kofoed Jacobsen <tkjacobsen@gmail.com>
-# $FreeBSD: head/science/avogadro/Makefile 461885 2018-02-15 12:34:49Z mat $
+# $FreeBSD: head/science/avogadro/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	avogadro
 PORTVERSION=	1.1.1
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	science
 MASTER_SITES=	SF
 
@@ -34,7 +34,7 @@ OPTIONS_DEFINE=	PYTHON
 OPTIONS_DEFAULT=PYTHON
 OPTIONS_SUB=	yes
 
-PYTHON_USES=		python:2
+PYTHON_USES=		python:2.7
 PYTHON_BUILD_DEPENDS=	${PYNUMPY} \
 			${PYTHON_PKGNAMEPREFIX}sip>0:devel/py-sip@${PY_FLAVOR}
 PYTHON_LIB_DEPENDS=	${PY_BOOST}

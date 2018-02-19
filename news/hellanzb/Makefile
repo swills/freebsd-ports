@@ -1,9 +1,9 @@
 # Created by: Philip Jenvey <pjenvey@groovie.org>
-# $FreeBSD: head/news/hellanzb/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/news/hellanzb/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	hellanzb
 PORTVERSION=	0.13
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	news
 MASTER_SITES=	http://www.hellanzb.com/distfiles/
 
@@ -20,7 +20,7 @@ RUN_DEPENDS=	par2:archivers/par2cmdline \
 		mac:audio/mac
 
 USE_PYTHON=	distutils
-USES=		python:2
+USES=		python:2.7
 PORTDOCS=	CHANGELOG CREDITS README
 NO_ARCH=	yes
 

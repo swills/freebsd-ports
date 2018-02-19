@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/plasma-scriptengine-python/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/x11/plasma-scriptengine-python/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	plasma-scriptengine-python
 PORTVERSION=	${KDE4_WORKSPACE_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11 kde kde-applications
 DISTNAME=	kde-workspace-${PORTVERSION}
 
@@ -10,7 +10,7 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Plasma scriptengine for Python
 
 NO_ARCH=	yes
-USES=		cmake:outsource kde:4 python:2 tar:xz
+USES=		cmake:outsource kde:4 python:2.7 tar:xz
 USE_KDE=	kdelibs pykde4 automoc4
 USE_QT4=	qmake_build moc_build uic_build rcc_build
 DISTINFO_FILE=	${.CURDIR:H:H}/x11/kde4-workspace/distinfo

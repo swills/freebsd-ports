@@ -1,9 +1,9 @@
 # Created by: "Choe, Cheng-Dae" <whitekid@netian.com>
-# $FreeBSD: head/www/py-clientform/Makefile 371116 2014-10-18 11:47:24Z rm $
+# $FreeBSD: head/www/py-clientform/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	clientform
 PORTVERSION=	0.2.10
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www python
 MASTER_SITES=	http://wwwsearch.sourceforge.net/ClientForm/src/ \
 		CHEESESHOP
@@ -13,7 +13,7 @@ DISTNAME=	ClientForm-${PORTVERSION}
 MAINTAINER=	lwhsu@FreeBSD.org
 COMMENT=	Client-side HTTP Form for Python
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

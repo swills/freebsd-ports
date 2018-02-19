@@ -1,5 +1,5 @@
 # Created by: Andreas Sommer <andreas.sommer87@googlemail.com>
-# $FreeBSD: head/textproc/kiss-templates/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/textproc/kiss-templates/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=		kiss-templates
 PORTVERSION=		0.19
@@ -31,7 +31,7 @@ USES=			cmake
 OPTIONS_DEFINE=		TEST
 TEST_DESC=		Build with unit tests
 TEST_BUILD_DEPENDS=	boost-libs>=1.55:devel/boost-libs
-TEST_USES=		python:2,build,test shebangfix
+TEST_USES=		python:2.7,build,test shebangfix
 TEST_TEST_TARGET=	test
 SHEBANG_FILES=		tests/comparison-based/generate.py tests/differ.py
 

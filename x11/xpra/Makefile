@@ -1,9 +1,9 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/x11/xpra/Makefile 461527 2018-02-11 20:19:11Z madpilot $
+# $FreeBSD: head/x11/xpra/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	xpra
 PORTVERSION=	2.0.3
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	x11
 MASTER_SITES=	http://xpra.org/src/
 
@@ -37,7 +37,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lz4>=0.7.0_1:archivers/py-lz4@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}gtkglext>1:x11-toolkits/py-gtkglext@${FLAVOR} \
 		${PYNUMPY}
 
-USES=		desktop-file-utils fortran gettext-runtime pkgconfig python:2 shared-mime-info shebangfix tar:xz
+USES=		desktop-file-utils fortran gettext-runtime pkgconfig python:2.7 shared-mime-info shebangfix tar:xz
 USE_GNOME=	atk cairo gdkpixbuf2 glib20 gtk20 pango
 USE_PYTHON=	distutils cython
 USE_XORG=	x11 xcomposite xdamage xext xfixes xkbfile xrandr xtst

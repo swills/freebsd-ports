@@ -1,10 +1,10 @@
 # Created by: Koop Mast <kwm@rainbow-runner.nl>
-# $FreeBSD: head/multimedia/py-gstreamer/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/multimedia/py-gstreamer/Makefile 462307 2018-02-19 11:10:43Z antoine $
 #    $MCom: ports/multimedia/py-gstreamer/Makefile,v 1.20 2008/07/26 17:21:38 marcus Exp $
 
 PORTNAME=	gstreamer
 PORTVERSION=	0.10.22
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	multimedia python gnome
 MASTER_SITES=	http://gstreamer.freedesktop.org/src/gst-python/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -21,7 +21,7 @@ RUN_DEPENDS=	${PYTHON_SITELIBDIR}/libxml2mod.so:textproc/py-libxml2@${FLAVOR}
 
 PORTSCOUT=	limit:0\.10\..*
 
-USES=		gmake libtool pathfix pkgconfig python:2 tar:bzip2
+USES=		gmake libtool pathfix pkgconfig python:2.7 tar:bzip2
 USE_GNOME=	pygobject
 USE_GSTREAMER=	yes
 USE_PYTHON=	flavors

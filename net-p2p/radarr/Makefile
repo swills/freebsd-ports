@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-p2p/radarr/Makefile 457110 2017-12-23 22:38:35Z feld $
+# $FreeBSD: head/net-p2p/radarr/Makefile 462251 2018-02-18 17:02:56Z feld $
 
 PORTNAME=	radarr
-PORTVERSION=	0.2.0.910
+PORTVERSION=	0.2.0.935
 PORTREVISION=	0
 CATEGORIES=	net-p2p
 MASTER_SITES=	https://github.com/Radarr/Radarr/releases/download/v${PORTVERSION}/
@@ -35,5 +35,9 @@ X11_LIB_DEPENDS+=libgdiplus.so:x11-toolkits/libgdiplus
 do-install:
 	${INSTALL} -d -m 755 ${STAGEDIR}/${DATADIR}
 	cd ${WRKSRC} && ${COPYTREE_SHARE} \* ${STAGEDIR}/${DATADIR}
+
+post-install:
+	@${FIND} -s ${STAGEDIR}${DATADIR} -not -type d | ${SORT} | \
+		${SED} -e 's#^${STAGEDIR}${PREFIX}/##' >> ${TMPPLIST}
 
 .include <bsd.port.mk>

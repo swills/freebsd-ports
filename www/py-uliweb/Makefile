@@ -1,8 +1,9 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/www/py-uliweb/Makefile 415768 2016-05-24 07:43:35Z wen $
+# $FreeBSD: head/www/py-uliweb/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	uliweb
 PORTVERSION=	0.5
+PORTREVISION=	1
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -14,7 +15,7 @@ LICENSE=	BSD2CLAUSE
 USE_GITHUB=	yes
 GH_ACCOUNT=	limodou
 
-USES=		dos2unix python:2
+USES=		dos2unix python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

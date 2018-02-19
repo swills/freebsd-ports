@@ -1,9 +1,9 @@
 # Created by: Henri Michelon
-# $FreeBSD: head/databases/pgworksheet/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/pgworksheet/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	pgworksheet
 PORTVERSION=	1.9
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	databases
 MASTER_SITES=	http://pgfoundry.org/frs/download.php/1695/
 
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pyPgSQL/libpq/__init__.py:databases/py-pyPgSQL@${FLAVOR}
 
-USES=		pgsql python:2 tar:bzip2
+USES=		pgsql python:2.7 tar:bzip2
 USE_GNOME=	pygtk2
 USE_PYTHON=	distutils autoplist
 

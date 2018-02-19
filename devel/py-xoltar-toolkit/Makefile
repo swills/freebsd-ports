@@ -1,8 +1,9 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/devel/py-xoltar-toolkit/Makefile 417145 2016-06-20 09:05:07Z amdmi3 $
+# $FreeBSD: head/devel/py-xoltar-toolkit/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	xoltar-toolkit
 PORTVERSION=	2001.06.01
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	SF/${PORTNAME}/xoltar%20toolkit/June%202001
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +14,7 @@ COMMENT=	Functional programming, lazy expressions, and thread pools for Python
 
 LICENSE=	LGPL21+
 
-USES=		python:2
+USES=		python:2.7
 NO_WRKSUBDIR=	yes
 NO_ARCH=	yes
 

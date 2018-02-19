@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/rubber/Makefile 365751 2014-08-23 16:21:59Z adamw $
+# $FreeBSD: head/textproc/rubber/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	rubber
 PORTVERSION=	1.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	textproc
 MASTER_SITES=	http://launchpadlibrarian.net/53558954/
 
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 
 NO_ARCH=	yes
 
-USES=		gmake makeinfo python:2
+USES=		gmake makeinfo python:2.7
 USE_TEX=	latex
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX} --infodir=${PREFIX}/${INFO_PATH} \

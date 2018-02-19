@@ -1,8 +1,9 @@
 # Created by: Hye-Shik Chang <perky@python.or.kr>
-# $FreeBSD: head/textproc/py2html/Makefile 399684 2015-10-19 14:50:52Z amdmi3 $
+# $FreeBSD: head/textproc/py2html/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	py2html
 PORTVERSION=	0.7
+PORTREVISION=	1
 CATEGORIES=	textproc www python
 MASTER_SITES=	LOCAL/perky
 PKGNAMESUFFIX=	-${PYTHON_PKGNAMEPREFIX:S/-//}
@@ -10,7 +11,7 @@ PKGNAMESUFFIX=	-${PYTHON_PKGNAMEPREFIX:S/-//}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python Highlighter for HTML
 
-USES=		python:2 shebangfix
+USES=		python:2.7 shebangfix
 USE_PYTHON=	distutils autoplist
 
 SHEBANG_FILES=	py2html

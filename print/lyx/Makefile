@@ -1,9 +1,9 @@
 # Created by: Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/print/lyx/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/print/lyx/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	lyx
 PORTVERSION=	${MAJOR_VERSION}.${MINOR_VERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	print editors
 MASTER_SITES=	ftp://ftp.lyx.org/pub/lyx/stable/${MAJOR_VERSION}.x/ \
 		http://www-ftp.lip6.fr/ftp/pub/lyx/stable/${MAJOR_VERSION}.x/ \
@@ -22,7 +22,7 @@ MAJOR_VERSION=	2.2
 MINOR_VERSION=	3
 
 USES=		desktop-file-utils gmake iconv pkgconfig perl5 \
-		python:2 shebangfix tar:xz
+		python:2.7 shebangfix tar:xz
 USE_QT5=	core concurrent gui svg widgets buildtools_build qmake_build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-included-boost \

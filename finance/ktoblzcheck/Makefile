@@ -1,8 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/finance/ktoblzcheck/Makefile 435572 2017-03-06 23:34:52Z jhale $
+# $FreeBSD: head/finance/ktoblzcheck/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	ktoblzcheck
 PORTVERSION=	1.49
+PORTREVISION=	1
 CATEGORIES=	finance german
 MASTER_SITES=	SF/${PORTNAME}
 
@@ -24,7 +25,7 @@ PORTDOCS=	README
 OPTIONS_DEFINE=	DOCS PYTHON
 OPTIONS_SUB=	yes
 
-PYTHON_USES=			python:2
+PYTHON_USES=			python:2.7
 PYTHON_CONFIGURE_ENABLE=	python
 
 TEST_TARGET=			check

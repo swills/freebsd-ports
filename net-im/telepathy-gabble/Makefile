@@ -1,5 +1,5 @@
 # Created by:  Florent Thoumie <flz@FreeBSD.org>
-# $FreeBSD: head/net-im/telepathy-gabble/Makefile 458855 2018-01-12 15:48:12Z pi $
+# $FreeBSD: head/net-im/telepathy-gabble/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	telepathy-gabble
 PORTVERSION=	0.18.3
@@ -25,7 +25,7 @@ RUN_DEPENDS=	ca_root_nss>=0:security/ca_root_nss \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		alias gmake libtool pathfix pkgconfig python:2,build \
+USES=		alias gmake libtool pathfix pkgconfig python:2.7,build \
 		shebangfix sqlite ssl
 USE_GNOME=	glib20 gtksourceview3 libxslt:build
 GNU_CONFIGURE=	yes

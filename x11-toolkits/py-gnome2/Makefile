@@ -1,10 +1,10 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/py-gnome2/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/x11-toolkits/py-gnome2/Makefile 462307 2018-02-19 11:10:43Z antoine $
 #   $MCom: ports/x11-toolkits/py-gnome2/Makefile,v 1.60 2010/04/02 20:22:15 kwm Exp $
 
 PORTNAME=	gnome
 PORTVERSION=	2.28.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	x11-toolkits python gnome
 MASTER_SITES=	GNOME/sources/gnome-python/${PORTVERSION:C/^([0-9]+\.[0-9]+).*/\1/}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -21,7 +21,7 @@ OPTIONS_SUB=	yes
 BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/ORBit.so:devel/py-orbit@${FLAVOR}
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/ORBit.so:devel/py-orbit@${FLAVOR}
 
-USES=		gettext gmake libtool:keepla pathfix pkgconfig python:2 tar:bzip2
+USES=		gettext gmake libtool:keepla pathfix pkgconfig python:2.7 tar:bzip2
 USE_LDCONFIG=	yes
 USE_GNOME=	libgnomeui pygtk2
 USE_PYTHON=	flavors

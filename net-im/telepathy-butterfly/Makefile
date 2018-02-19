@@ -1,9 +1,9 @@
-# $FreeBSD: head/net-im/telepathy-butterfly/Makefile 439091 2017-04-21 16:23:17Z miwi $
+# $FreeBSD: head/net-im/telepathy-butterfly/Makefile 462307 2018-02-19 11:10:43Z antoine $
 #   $MCom: ports/net-im/telepathy-butterfly/Makefile,v 1.3 2009/01/08 06:51:59 marcus Exp $
 
 PORTNAME=	telepathy-butterfly
 PORTVERSION=	0.5.15
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net-im
 MASTER_SITES=	http://telepathy.freedesktop.org/releases/${PORTNAME}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,7 +18,7 @@ RUN_DEPENDS+=	${PYTHON_SITELIBDIR}/papyon/__init__.py:net-im/papyon \
 
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS+=--prefix=${PREFIX}
-USES=		gmake python:2 shebangfix
+USES=		gmake python:2.7 shebangfix
 SHEBANG_FILES=	telepathy-butterfly
 NO_ARCH=	yes
 

@@ -1,10 +1,10 @@
 # Created by: marc@informatik.uni-bremen.de
-# $FreeBSD: head/x11-toolkits/py-gtk2/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/x11-toolkits/py-gtk2/Makefile 462307 2018-02-19 11:10:43Z antoine $
 #   $MCom: ports/x11-toolkits/py-gtk2/Makefile,v 1.78 2011/04/01 12:35:27 kwm Exp $
 
 PORTNAME=	gtk
 PORTVERSION=	2.24.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-toolkits python
 MASTER_SITES=	GNOME/sources/pygtk/${PORTVERSION:C/^([0-9]+\.[0-9]+).*/\1/}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,7 +18,7 @@ COMMENT=	Set of Python bindings for GTK+
 BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/cairo/__init__.py:graphics/py-cairo@${FLAVOR}
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/cairo/__init__.py:graphics/py-cairo@${FLAVOR}
 
-USES=		gettext gmake libtool pathfix pkgconfig python:2 tar:bzip2
+USES=		gettext gmake libtool pathfix pkgconfig python:2.7 tar:bzip2
 USE_GNOME=	libglade2 pygobject
 USE_PYTHON=	flavors
 GNU_CONFIGURE=	yes

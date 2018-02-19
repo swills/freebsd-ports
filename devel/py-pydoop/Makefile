@@ -1,8 +1,9 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/py-pydoop/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-pydoop/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	pydoop
 PORTVERSION=	1.1.0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +14,7 @@ COMMENT=	Python interface to Hadoop
 BUILD_DEPENDS=	${LOCALBASE}/bin/yarn:devel/hadoop2
 RUN_DEPENDS=	${LOCALBASE}/bin/yarn:devel/hadoop2
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 USE_JAVA=	1.7
 MAKE_ENV+=	HADOOP_HOME=${LOCALBASE} \

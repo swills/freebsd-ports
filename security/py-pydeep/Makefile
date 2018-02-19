@@ -1,8 +1,9 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-pydeep/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/py-pydeep/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	pydeep
 PORTVERSION=	0.2
+PORTREVISION=	1
 CATEGORIES=	security devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +15,7 @@ LICENSE=	BSD3CLAUSE
 
 LIB_DEPENDS=	libfuzzy.so:security/ssdeep
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 post-patch:

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-blobstore_client/Makefile 428629 2016-12-15 19:07:29Z dumbbell $
+# $FreeBSD: head/devel/rubygem-blobstore_client/Makefile 462236 2018-02-18 13:38:04Z sunpoet $
 
 PORTNAME=	blobstore_client
 PORTVERSION=	1.3262.24.0
@@ -9,6 +9,9 @@ MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	BOSH blobstore client
 
 LICENSE=	APACHE20
+
+DEPRECATED=	Only used by deprecated sysutils/rubygem-bosh_cli
+EXPIRATION_DATE=2018-02-28
 
 RUN_DEPENDS=	rubygem-aws-sdk-resources>=2.2.0:devel/rubygem-aws-sdk-resources \
 		rubygem-bosh_common>=${PORTVERSION}:devel/rubygem-bosh_common \

@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/trac-fullblognotification/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/www/trac-fullblognotification/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	fullblognotification
 PORTVERSION=	0.2.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www devel python
 MASTER_SITES=	LOCAL/brooks
 PKGNAMEPREFIX=	trac-
@@ -14,7 +14,7 @@ COMMENT=	Plugin that provides a project Blog
 
 RUN_DEPENDS=	trac-fullblog>=0.1.1:www/trac-fullblog
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

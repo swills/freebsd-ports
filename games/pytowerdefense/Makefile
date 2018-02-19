@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/pytowerdefense/Makefile 388980 2015-06-09 18:58:48Z amdmi3 $
+# $FreeBSD: head/games/pytowerdefense/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	pytowerdefense
 PORTVERSION=	0.5
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games python
 MASTER_SITES=	SF/${PORTNAME}/PyTowerDefense0.5/Source%20%28Python%202.5%20or%202.6%20and%20Pygame%29/
 DISTNAME=	${PORTNAME}${DISTVERSION}
@@ -16,7 +16,7 @@ LICENSE=	GPLv3
 
 RUN_DEPENDS=	${PYGAME}
 
-USES=		python:2 shebangfix zip
+USES=		python:2.7 shebangfix zip
 SHEBANG_FILES=	pyconsole.py
 INSTALLS_ICONS=	yes
 NO_ARCH=	yes

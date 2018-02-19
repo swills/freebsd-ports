@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/py-blockdiagcontrib-cisco/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/py-blockdiagcontrib-cisco/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	blockdiagcontrib-cisco
 PORTVERSION=	0.1.8
+PORTREVISION=	1
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,7 +12,7 @@ COMMENT=	Networking shapes for blockdiag designed by Cisco
 
 RUN_DEPENDS=	${PKGNAMEPREFIX}blockdiag>=0.8.0:graphics/py-blockdiag@${FLAVOR}
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

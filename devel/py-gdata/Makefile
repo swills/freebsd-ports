@@ -1,8 +1,9 @@
 # Created by: Li-Wen Hsu <lwhsu@lwhsu.org>
-# $FreeBSD: head/devel/py-gdata/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-gdata/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	gdata
 PORTVERSION=	2.0.18
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +13,7 @@ COMMENT=	GData Python Client Library
 
 LICENSE=	APACHE20
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 OPTIONS_DEFINE=	GMPY M2CRYPTO PYCRYPTO EXAMPLES

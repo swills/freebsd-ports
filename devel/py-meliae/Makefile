@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/py-meliae/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-meliae/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	meliae
 PORTVERSION=	0.4.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel python
 MASTER_SITES=	http://launchpadlibrarian.net/74803944/ \
 		LOCAL/sbz
@@ -13,7 +13,7 @@ COMMENT=	Python Memory Usage Analyzer
 
 LICENSE=	GPLv3
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist cython
 
 regression-test: extract

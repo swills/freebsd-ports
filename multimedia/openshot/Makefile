@@ -1,9 +1,9 @@
 # Created by: Charlie Kester <corky1951@comcast.net>
-# $FreeBSD: head/multimedia/openshot/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/multimedia/openshot/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	openshot
 PORTVERSION=	1.4.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	multimedia
 MASTER_SITES=	http://launchpad.net/openshot/${PORTVERSION:C/\.[0-9]+$//}/${PORTVERSION}/+download/
 
@@ -24,7 +24,7 @@ RUN_DEPENDS=	ffmpeg:multimedia/ffmpeg \
 
 USE_GNOME=	pygtk2
 USE_PYTHON=	distutils
-USES=		desktop-file-utils gettext python:2 shared-mime-info
+USES=		desktop-file-utils gettext python:2.7 shared-mime-info
 INSTALLS_OMF=	yes
 
 post-patch:

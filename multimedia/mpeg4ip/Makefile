@@ -1,9 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/mpeg4ip/Makefile 457488 2017-12-29 02:55:42Z jbeich $
+# $FreeBSD: head/multimedia/mpeg4ip/Makefile 462282 2018-02-19 07:42:08Z riggs $
 
 PORTNAME=	mpeg4ip
 PORTVERSION=	1.6.1
-PORTREVISION=	39
+PORTREVISION=	40
 CATEGORIES=	multimedia audio ipv6 net
 MASTER_SITES=	LOCAL/ahze
 # http://sourceforge.net/forum/forum.php?thread_id=1839453&forum_id=59136
@@ -31,6 +31,7 @@ GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 CFLAGS+=	-Wno-return-type
 CPPFLAGS+=	-I${LOCALBASE}/include/SDL -I${LOCALBASE}/include/ffmpeg0 -I${LOCALBASE}/include
+CXXFLAGS+=	-std=gnu++98
 LIBS+=		-L${LOCALBASE}/lib/ffmpeg0 -L${LOCALBASE}/lib
 CONFIGURE_ARGS=	--enable-ffmpeg=${LOCALBASE} \
 		--enable-mp4live \

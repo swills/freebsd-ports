@@ -1,9 +1,9 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/games/mudmagic/Makefile 421178 2016-08-31 18:15:51Z marino $
+# $FreeBSD: head/games/mudmagic/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	mudmagic
 PORTVERSION=	1.9
-PORTREVISION=	17
+PORTREVISION=	18
 CATEGORIES=	games
 MASTER_SITES=	http://www.mudmagic.com/mud-client/downloads/
 
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libfontconfig.so:x11-fonts/fontconfig
 
 USES=		gettext-runtime gmake libtool localbase pathfix \
-		pkgconfig python sqlite
+		pkgconfig python:2.7 sqlite
 USE_GNOME=	cairo gdkpixbuf2 gtk20 libglade2 libxml2
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

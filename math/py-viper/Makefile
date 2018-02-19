@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-viper/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/math/py-viper/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	viper
 PORTVERSION=	1.0.1
+PORTREVISION=	1
 CATEGORIES=	math python
 MASTER_SITES=	https://launchpad.net/fenics-${PORTNAME}/${MMVERSION}.x/${PORTVERSION}/+download/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,7 +12,7 @@ COMMENT=	Minimalistic scientific plotter and visualization module
 
 LICENSE=	LGPL3
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 post-patch:

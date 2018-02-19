@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/py-python-ntlm/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/net/py-python-ntlm/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	python-ntlm
 PORTVERSION=	1.1.0
+PORTREVISION=	1
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -10,7 +11,7 @@ MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	Python library that provides NTLM support
 
 NO_ARCH=	yes
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

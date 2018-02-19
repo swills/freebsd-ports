@@ -1,8 +1,9 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/net/py-gspreadsheet/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-gspreadsheet/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	gspreadsheet
 PORTVERSION=	0.4.0
+PORTREVISION=	1
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +16,7 @@ LICENSE=	APACHE20
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdata>0:devel/py-gdata@${FLAVOR}
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nose>0:devel/py-nose@${FLAVOR}
 
-USES=	python:2
+USES=	python:2.7
 USE_PYTHON=	distutils autoplist
 
 PORTDOCS=	README.rst

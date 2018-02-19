@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/bouncy/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/games/bouncy/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	bouncy
 PORTVERSION=	r6
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	games python
 MASTER_SITES=	http://media.pyweek.org/dl/3/bouncy/ \
 		SF/nemysisfreebsdp/games/${PORTNAME}/:icons
@@ -23,7 +23,7 @@ RUN_DEPENDS=	${PYGAME} \
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-post-${DISTVERSION}
 
-USES=		python:2
+USES=		python:2.7
 
 PORTDOCS=	README.txt
 

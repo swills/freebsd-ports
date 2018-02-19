@@ -1,5 +1,5 @@
 # Created by: kirk@strauser.com
-# $FreeBSD: head/shells/bash-completion/Makefile 444870 2017-07-02 06:47:55Z sunpoet $
+# $FreeBSD: head/shells/bash-completion/Makefile 462294 2018-02-19 10:29:58Z sunpoet $
 
 PORTNAME=	bash-completion
 PORTVERSION=	2.7
@@ -11,6 +11,9 @@ COMMENT=	Programmable completion library for Bash
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_armv6=	fails to build: gmake: install-recursive: Error 1
+BROKEN_armv7=	fails to build: gmake: install-recursive: Error 1
 
 RUN_DEPENDS=	bash:shells/bash
 

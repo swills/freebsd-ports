@@ -1,9 +1,9 @@
 # Created by: Hung-Yi Chen <gaod@hychen.org>
-# $FreeBSD: head/www/trac-attachmentpolicy/Makefile 416081 2016-05-29 01:29:08Z amdmi3 $
+# $FreeBSD: head/www/trac-attachmentpolicy/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	attachmentpolicy
 PORTVERSION=	0.1.0.${SVN_REV}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www devel python
 MASTER_SITES=	http://distfiles.cse.tw/ \
 		http://trac-hacks.org/changeset/${SVN_REV}/attachmentpolicyplugin?old_path=/&format=zip&filename=/
@@ -20,7 +20,7 @@ SVN_REV=	12775
 RUN_DEPENDS+=	tracd:www/trac
 
 WRKSRC=		${WRKDIR}/${PORTNAME}plugin/0.12
-USES=		python:2 zip
+USES=		python:2.7 zip
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/games/py-poker-eval/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/games/py-poker-eval/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	poker-eval
 PORTVERSION=	0.138
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games python
 MASTER_SITES=	http://download.gna.org/pokersource/sources/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpoker-eval.so:games/poker-eval
 
-USES=		autoreconf libtool pathfix pkgconfig python:2
+USES=		autoreconf libtool pathfix pkgconfig python:2.7
 USE_PYTHON=	flavors
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	PYTHON=""

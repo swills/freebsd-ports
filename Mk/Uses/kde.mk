@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/kde.mk 461936 2018-02-15 17:05:45Z tcberner $
+# $FreeBSD: head/Mk/Uses/kde.mk 462255 2018-02-18 17:40:47Z rakuco $
 #
 # Provides support for KDE and KF5-based ports.
 #
@@ -55,7 +55,7 @@ _KDE_RELNAME=		KDE${_KDE_VERSION}
 # === VERSIONS OF THE DIFFERENT COMPONENTS =====================================
 # Old KDE desktop.
 KDE4_VERSION?=			4.14.3
-KDE4_KDELIBS_VERSION=		4.14.30
+KDE4_KDELIBS_VERSION=		4.14.38
 KDE4_ACTIVITIES_VERSION=	4.13.3
 KDE4_WORKSPACE_VERSION=		4.11.22
 KDE4_KDEPIM_VERSION?=		4.14.10

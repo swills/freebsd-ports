@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/trac-downloads/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/www/trac-downloads/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	downloads
 PORTVERSION=	${TRAC_VERSION}.${PLUGIN_VERSION}.${SVN_REV}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www devel python
 MASTER_SITES=	LOCAL/brooks
 PKGNAMEPREFIX=	trac-
@@ -18,7 +18,7 @@ TRAC_VERSION=	0.12
 PLUGIN_VERSION=	0.3
 SVN_REV=	10047
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

@@ -1,9 +1,9 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/audio/py-cddb/Makefile 381000 2015-03-11 14:51:16Z amdmi3 $
+# $FreeBSD: head/audio/py-cddb/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	cddb
 PORTVERSION=	1.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio python
 MASTER_SITES=	SF/${PORTNAME}-py/${PORTNAME}-py/${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +15,7 @@ COMMENT=	Python module to fetch information on audio CDs from CDDB
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist pythonprefix
 
 post-install:

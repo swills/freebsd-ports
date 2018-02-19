@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-cmdtest/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-cmdtest/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	cmdtest
 PORTVERSION=	0.29
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://git.liw.fi/cgi-bin/cgit/cgit.cgi/cmdtest/snapshot/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -19,7 +20,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}markdown>0:textproc/py-markdown@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}cliapp>0:devel/py-cliapp@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ttystatus>0:devel/py-ttystatus@${FLAVOR}
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 

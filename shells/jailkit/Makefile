@@ -1,8 +1,9 @@
 # Created by: Sylvio Cesar <sylvio@FreeBSD.org>
-# $FreeBSD: head/shells/jailkit/Makefile 414892 2016-05-09 20:46:48Z woodsb02 $
+# $FreeBSD: head/shells/jailkit/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	jailkit
 PORTVERSION=	2.19
+PORTREVISION=	1
 CATEGORIES=	shells
 MASTER_SITES=	http://olivier.sessink.nl/jailkit/ \
 		http://www.sfr-fresh.com/unix/privat/
@@ -12,7 +13,7 @@ COMMENT=	Utilities to limit user accounts to specific files and/or commands
 
 LICENSE=	BSD3CLAUSE
 
-USES=		python:2
+USES=		python:2.7
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	PYTHONINTERPRETER=${PYTHON_CMD}
 

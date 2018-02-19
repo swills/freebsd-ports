@@ -1,5 +1,5 @@
 # Created by: FreeBSD GNOME Team <gnome@freebsd.org>
-# $FreeBSD: head/net-im/libtelepathy/Makefile 433710 2017-02-09 05:25:59Z fluffy $
+# $FreeBSD: head/net-im/libtelepathy/Makefile 462307 2018-02-19 11:10:43Z antoine $
 #    $MCom: ports/trunk/net-im/libtelepathy/Makefile 19913 2014-09-25 22:29:26Z kwm $
 
 PORTNAME=	libtelepathy
@@ -14,7 +14,7 @@ COMMENT=	Flexible Communications Framework
 LIB_DEPENDS=	libtelepathy-glib.so:net-im/telepathy-glib \
 		libdbus-glib-1.so:devel/dbus-glib
 
-USES=		gmake libtool pathfix pkgconfig python:2,build
+USES=		gmake libtool pathfix pkgconfig python:2.7,build
 USE_LDCONFIG=	yes
 USE_GNOME=	glib20 libxslt:build
 GNU_CONFIGURE=	yes

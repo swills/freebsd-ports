@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/devel/zziplib/Makefile 453453 2017-11-04 11:43:35Z dbaio $
+# $FreeBSD: head/devel/zziplib/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	zziplib
 PORTVERSION=	0.13.62
@@ -15,7 +15,7 @@ LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	zip:archivers/zip
 
-USES=		libtool pathfix pkgconfig python:2,build tar:bzip2
+USES=		libtool pathfix pkgconfig python:2.7,build tar:bzip2
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	ac_cv_path_XMLTO=":"
 USE_LDCONFIG=	yes

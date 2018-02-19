@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@jelal.kn-bremen.de>
-# $FreeBSD: head/emulators/qemu/Makefile 457024 2017-12-23 07:03:21Z antoine $
+# $FreeBSD: head/emulators/qemu/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	qemu
 PORTVERSION=	2.9.0
@@ -18,7 +18,7 @@ LIB_DEPENDS?=	libnettle.so:security/nettle \
 		libfreetype.so:print/freetype2
 
 HAS_CONFIGURE=	yes
-USES?=		cpe gmake pkgconfig bison perl5 python:2,build tar:bzip2
+USES?=		cpe gmake pkgconfig bison perl5 python:2.7,build tar:bzip2
 USE_PERL5=	build
 MAKE_ENV+=	BSD_MAKE="${MAKE}" V=1
 .if !defined(PKGNAMESUFFIX) || ${PKGNAMESUFFIX} != "-utils"

@@ -1,8 +1,8 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/graphics/py-gimp/Makefile 378424 2015-02-04 22:11:19Z kwm $
+# $FreeBSD: head/graphics/py-gimp/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	gimp
-PORTREVISION=	0
+PORTREVISION=	1
 PORTEPOCH=	0
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 PKGNAMESUFFIX=
@@ -12,7 +12,7 @@ COMMENT=	GIMP python plugin
 
 GIMP_SLAVE=	pygimp
 
-USES=		python:2
+USES=		python:2.7
 USE_GNOME=	pygtk2
 
 CONFIGURE_ARGS=	--enable-python

@@ -1,9 +1,9 @@
 # Created by: Vsevolod Stakhov <vsevolod@highsecure.ru>
-# $FreeBSD: head/textproc/archmage/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/archmage/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	archmage
 PORTVERSION=	0.2.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc python
 MASTER_SITES=	SF
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,7 +18,7 @@ RUN_DEPENDS=	${PYTHON_SITELIBDIR}/chm/chm.py:textproc/pychm \
 		${PYTHON_SITELIBDIR}/BeautifulSoup.py:www/py-beautifulsoup32@${FLAVOR}
 
 NO_BUILD=	yes
-USES=		cpe python:2 tar:bzip2
+USES=		cpe python:2.7 tar:bzip2
 USE_PYTHON=	distutils autoplist
 
 CPE_VENDOR=	archmage_project

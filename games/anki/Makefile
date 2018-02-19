@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/games/anki/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/games/anki/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	anki
 PORTVERSION=	2.0.36
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games python
 MASTER_SITES=	http://ankisrs.net/download/mirror/
 DIST_SUBDIR=	python
@@ -23,7 +23,7 @@ RUN_DEPENDS=	lame:audio/lame \
 		${PYTHON_PKGNAMEPREFIX}httplib2>0:www/py-httplib2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}send2trash>0:deskutils/py-send2trash@${PY_FLAVOR}
 
-USES=		desktop-file-utils pyqt:4 python:2 shared-mime-info shebangfix tar:tgz
+USES=		desktop-file-utils pyqt:4 python:2.7 shared-mime-info shebangfix tar:tgz
 SHEBANG_FILES=	tools/build_ui.sh tools/tests.sh
 USE_PYQT=	network_run webkit_run
 USE_QT4=	network_run webkit_run

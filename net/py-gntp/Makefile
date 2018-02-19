@@ -1,9 +1,9 @@
-# $FreeBSD: head/net/py-gntp/Makefile 460241 2018-01-29 06:45:16Z araujo $
+# $FreeBSD: head/net/py-gntp/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	gntp
 PORTVERSION=	0.8
 DISTVERSIONPREFIX=	v
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -17,7 +17,7 @@ GH_ACCOUNT=	kfdm
 OPTIONS_DEFINE=	DOCS
 
 USE_GITHUB=	yes
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.pre.mk>

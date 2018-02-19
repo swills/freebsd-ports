@@ -1,8 +1,9 @@
 # Created by: Junji NAKANISHI <jun-g@daemonfreaks.com>
-# $FreeBSD: head/www/py-amf/Makefile 405182 2016-01-03 20:26:19Z feld $
+# $FreeBSD: head/www/py-amf/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	amf
 PORTVERSION=	0.8.0
+PORTREVISION=	1
 CATEGORIES=	www devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +15,7 @@ COMMENT=	AMF support for Python
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 post-install:

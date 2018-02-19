@@ -1,8 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/audio/exaile/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/audio/exaile/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	exaile
 PORTVERSION=	3.4.5
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	https://github.com/exaile/exaile/releases/download/${PORTVERSION}/
 
@@ -15,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mutagen>=1.11:audio/py-mutagen@${PY_FLAVOR}
 
 MAKE_ENV+=	PYTHON2_CMD=${PYTHON_CMD} XDGCONFDIR=${PREFIX}/etc/xdg
-USES=		desktop-file-utils gmake python:2
+USES=		desktop-file-utils gmake python:2.7
 USE_GNOME=	pygtk2 librsvg2
 USE_GSTREAMER=	good faad python
 

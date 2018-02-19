@@ -1,9 +1,9 @@
 # Created by: Pedro Garcia Freitas <sawp@sawp.com.br>
-# $FreeBSD: head/graphics/pymorph/Makefile 374159 2014-12-06 22:13:42Z feld $
+# $FreeBSD: head/graphics/pymorph/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	pymorph
 PORTVERSION=	0.96
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 
@@ -14,7 +14,7 @@ LICENSE=	BSD3CLAUSE
 
 RUN_DEPENDS+=	${PYNUMPY}
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

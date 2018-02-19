@@ -1,8 +1,9 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/www/py-meld/Makefile 376109 2015-01-03 08:41:20Z mva $
+# $FreeBSD: head/www/py-meld/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	meld
 PORTVERSION=	2.1.4
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	http://entrian.com/PyMeld/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +16,7 @@ COMMENT=	System for manipulating HTML using a Pythonic object model
 
 LICENSE=	MIT
 
-USES=		python:2
+USES=		python:2.7
 
 PLIST_FILES=	%%PYTHON_SITELIBDIR%%/PyMeld.py \
 		%%PYTHON_SITELIBDIR%%/PyMeld.pyc \

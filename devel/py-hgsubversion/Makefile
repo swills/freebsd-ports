@@ -1,8 +1,9 @@
 # Created by: William Grzybowski <william88@gmail.com>
-# $FreeBSD: head/devel/py-hgsubversion/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-hgsubversion/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	hgsubversion
 PORTVERSION=	1.8.6
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,7 +17,7 @@ OPTIONS_DEFINE=	SUBVERTPY
 OPTIONS_DEFAULT=SUBVERTPY
 SUBVERTPY_DESC=	Use subvertpy python bindings
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.options.mk>

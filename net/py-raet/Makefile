@@ -1,8 +1,9 @@
 # Created by: Christer Edwards <christer.edwards@gmail.com>
-# $FreeBSD: head/net/py-raet/Makefile 403456 2015-12-10 14:14:44Z miwi $
+# $FreeBSD: head/net/py-raet/Makefile 462307 2018-02-19 11:10:43Z antoine $
 
 PORTNAME=	raet
 PORTVERSION=	0.6.5
+PORTREVISION=	1
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +13,7 @@ COMMENT=	Reliable Asynchronous Event Transport protocol library
 
 LICENSE=	APACHE20
 
-USES=		python:2
+USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

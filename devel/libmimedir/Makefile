@@ -1,5 +1,5 @@
 # Created by: Sam Lawrance <boris@brooknet.com.au>
-# $FreeBSD: head/devel/libmimedir/Makefile 412144 2016-03-30 00:08:38Z bapt $
+# $FreeBSD: head/devel/libmimedir/Makefile 462286 2018-02-19 09:02:56Z amdmi3 $
 
 PORTNAME=	libmimedir
 PORTVERSION=	0.5.1
@@ -10,6 +10,9 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Library for parsing RFC2425 MIME Directory Profile information
 
+LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 USES=		desthack libtool
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	YACC=byacc
@@ -18,12 +21,12 @@ USE_LDCONFIG=	yes
 MAKE_JOBS_UNSAFE=yes
 
 post-patch:
-	${REINPLACE_CMD} -e 's/444/644/g' ${WRKSRC}/Makefile.in
+	@${REINPLACE_CMD} -e 's/444/644/g' ${WRKSRC}/Makefile.in
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libmimedir.so
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libmimedir.so
 
-regression-test:
+do-test:
 	cd ${WRKSRC} && ./test
 
 .include <bsd.port.mk>
