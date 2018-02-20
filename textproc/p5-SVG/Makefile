@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-SVG/Makefile 461795 2018-02-14 13:30:38Z sunpoet $
+# $FreeBSD: head/textproc/p5-SVG/Makefile 462436 2018-02-20 20:26:46Z sunpoet $
 
 PORTNAME=	SVG
-PORTVERSION=	2.83
+PORTVERSION=	2.84
 CATEGORIES=	textproc graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,9 +1,8 @@
 # Created by: Stephen J. Roznowski <sjr@home.net>
-# $FreeBSD: head/devel/p5-Time-HiRes/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Time-HiRes/Makefile 462397 2018-02-20 13:31:54Z tobez $
 
 PORTNAME=	Time-HiRes
-PORTVERSION=	1.9726
-PORTREVISION=	1
+PORTVERSION=	1.9754
 PORTEPOCH=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN

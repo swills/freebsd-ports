@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 462347 2018-02-19 20:33:08Z yuri $
+# $FreeBSD: head/misc/Makefile 462431 2018-02-20 20:26:19Z sunpoet $
 #
 
     COMMENT = Miscellaneous utilities
@@ -429,7 +429,7 @@
     SUBDIR += rpl
     SUBDIR += rtfm
     SUBDIR += rubygem-dotenv
-    SUBDIR += rubygem-dotenv-rails
+    SUBDIR += rubygem-dotenv-rails-rails4
     SUBDIR += rubygem-dotenv-rails-rails5
     SUBDIR += rubygem-dotenv-rails-rails50
     SUBDIR += rubygem-iesd

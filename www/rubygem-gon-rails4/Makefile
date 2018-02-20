@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-gon-rails4/Makefile 451299 2017-10-05 09:50:18Z sunpoet $
+# $FreeBSD: head/www/rubygem-gon-rails4/Makefile 462444 2018-02-20 20:27:27Z sunpoet $
 
 PORTNAME=	gon
 PORTVERSION=	6.2.0
@@ -11,6 +11,9 @@ COMMENT=	Framework to pass data to JS easily
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	It is actually www/rubygem-gon with PKGNAMESUFFIX
+EXPIRATION_DATE=2018-02-28
 
 RUN_DEPENDS=	rubygem-actionpack4>=3.0:www/rubygem-actionpack4 \
 		rubygem-multi_json>=0:devel/rubygem-multi_json \

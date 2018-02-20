@@ -1,8 +1,9 @@
-# $FreeBSD: head/sysutils/ipfs-go/Makefile 460724 2018-02-02 18:36:34Z pi $
+# $FreeBSD: head/sysutils/ipfs-go/Makefile 462454 2018-02-20 21:32:18Z yuri $
 
 PORTNAME=	ipfs
 PORTVERSION=	0.4.13
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://dist.ipfs.io/go-ipfs/${DISTVERSIONPREFIX}${DISTVERSION}/
 PKGNAMESUFFIX=	-go
@@ -15,7 +16,7 @@ LICENSE=	MIT
 
 ONLY_FOR_ARCHS=	amd64
 
-PLIST_FILES=	bin/${PORTNAME}
+PLIST_FILES=	bin/${PORTNAME}${PKGNAMESUFFIX}
 
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/go-ipfs
@@ -23,6 +24,6 @@ WRKSRC=		${WRKDIR}/go-ipfs
 USE_RC_SUBR=	${PORTNAME}${PKGNAMESUFFIX}
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/ipfs ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
+	${INSTALL_PROGRAM} ${WRKSRC}/ipfs ${STAGEDIR}${PREFIX}/bin/${PORTNAME}${PKGNAMESUFFIX}
 
 .include <bsd.port.mk>

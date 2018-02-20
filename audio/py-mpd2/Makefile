@@ -1,10 +1,9 @@
 # Created by: rene@FreeBSD.org (repocopied from audio/py-mpd)
-# $FreeBSD: head/audio/py-mpd2/Makefile 438759 2017-04-18 03:25:11Z miwi $
+# $FreeBSD: head/audio/py-mpd2/Makefile 462419 2018-02-20 19:31:52Z yuri $
 
 PORTNAME=	mpd2
-PORTVERSION=	0.5.5
-PORTREVISION=	1
 DISTVERSIONPREFIX=	v
+DISTVERSION=	1.0.0
 CATEGORIES=	audio python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -21,7 +20,6 @@ GH_PROJECT=	python-${PORTNAME}
 USES=		shebangfix python
 SHEBANG_FILES=	examples/*.py doc/*.py
 USE_PYTHON=	autoplist concurrent distutils
-
 NO_ARCH=	yes
 
 DOCSDIR=	${PREFIX}/share/doc/py-${PORTNAME}

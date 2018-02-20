@@ -1,8 +1,8 @@
 # Created by: Joseph Benden <joe@thrallingpenguin.com>
-# $FreeBSD: head/www/rubygem-hashicorp-checkpoint/Makefile 450530 2017-09-24 18:51:03Z sunpoet $
+# $FreeBSD: head/www/rubygem-hashicorp-checkpoint/Makefile 462452 2018-02-20 21:15:15Z cmt $
 
 PORTNAME=	hashicorp-checkpoint
-PORTVERSION=	0.1.4
+PORTVERSION=	0.1.5
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/net/py-python-twitter/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-python-twitter/Makefile 462440 2018-02-20 20:27:07Z sunpoet $
 
 PORTNAME=	python-twitter
-PORTVERSION=	3.3
+PORTVERSION=	3.4
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,6 +18,6 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${FLAVOR} \
 
 NO_ARCH=	yes
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

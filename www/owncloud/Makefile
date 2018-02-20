@@ -1,10 +1,10 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/www/owncloud/Makefile 460394 2018-01-30 15:38:30Z sunpoet $
+# $FreeBSD: head/www/owncloud/Makefile 462423 2018-02-20 20:24:08Z sunpoet $
 
 PORTNAME=	owncloud
-PORTVERSION=	10.0.6
+PORTVERSION=	10.0.7
 CATEGORIES=	www
-MASTER_SITES=	http://download.owncloud.org/community/
+MASTER_SITES=	https://download.owncloud.org/community/
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Personal cloud which runs on your own server

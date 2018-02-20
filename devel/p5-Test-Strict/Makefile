@@ -1,8 +1,8 @@
 # Created by: Zach Thompson <hideo@lastamericanempire.com>
-# $FreeBSD: head/devel/p5-Test-Strict/Makefile 461317 2018-02-09 14:11:07Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Strict/Makefile 462435 2018-02-20 20:26:41Z sunpoet $
 
 PORTNAME=	Test-Strict
-PORTVERSION=	0.41
+PORTVERSION=	0.42
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,8 +14,6 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Devel-Cover>=0.43:devel/p5-Devel-Cover
-RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-IO-stringy>=0:devel/p5-IO-stringy
 
 NO_ARCH=	yes

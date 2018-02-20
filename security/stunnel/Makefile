@@ -1,8 +1,9 @@
 # Created by: Martti Kuparinen <martti.kuparinen@ericsson.com>
-# $FreeBSD: head/security/stunnel/Makefile 454924 2017-11-26 22:35:17Z zi $
+# $FreeBSD: head/security/stunnel/Makefile 462395 2018-02-20 13:11:22Z zi $
 
 PORTNAME=	stunnel
 PORTVERSION=	5.44
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	security
 MASTER_SITES=	https://www.stunnel.org/downloads/%SUBDIR%/ \
@@ -110,7 +111,7 @@ post-build:
 
 post-install:
 	${MKDIR} ${STAGEDIR}${ETCDIR}/conf.d/
-	${INSTALL_DATA} ${FILESDIR}/pid.conf ${STAGEDIR}${ETCDIR}/conf.d/
+	${INSTALL_DATA} ${FILESDIR}/pid.conf ${STAGEDIR}${ETCDIR}/conf.d/00-pid.conf
 
 cert:
 	@${ECHO} ""

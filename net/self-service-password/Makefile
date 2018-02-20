@@ -1,8 +1,8 @@
 # Created by: Krzysztof Stryjek <ports@bsdserwis.com>
-# $FreeBSD: head/net/self-service-password/Makefile 454704 2017-11-22 21:01:49Z bhughes $
+# $FreeBSD: head/net/self-service-password/Makefile 462448 2018-02-20 20:28:59Z yuri $
 
 PORTNAME=	self-service-password
-PORTVERSION=	1.1
+DISTVERSION=	1.2
 CATEGORIES=	net www
 MASTER_SITES=	http://ltb-project.org/archives/
 DISTNAME=	ltb-project-${PORTNAME}-${PORTVERSION}

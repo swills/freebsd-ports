@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 461986 2018-02-16 08:35:07Z tz $
+# $FreeBSD: head/security/Makefile 462398 2018-02-20 15:19:25Z tz $
 #
 
     COMMENT = Security tools
@@ -1049,6 +1049,7 @@
     SUBDIR += ruby-camellia
     SUBDIR += rubygem-airbrussh
     SUBDIR += rubygem-attr_encrypted
+    SUBDIR += rubygem-attr_encrypted30
     SUBDIR += rubygem-bcrypt
     SUBDIR += rubygem-bcrypt-ruby
     SUBDIR += rubygem-bcrypt_pbkdf

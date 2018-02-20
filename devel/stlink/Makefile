@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/stlink/Makefile 462314 2018-02-19 13:02:25Z lev $
+# $FreeBSD: head/devel/stlink/Makefile 462391 2018-02-20 12:24:57Z lev $
 
 PORTNAME=	stlink
 PORTVERSION=	1.5.0
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	lev@FreeBSD.org
