@@ -1,8 +1,8 @@
 # Created by: Joseph Benden <joe@thrallingpenguin.com>
-# $FreeBSD: head/sysutils/vagrant/Makefile 456347 2017-12-14 20:05:31Z tobik $
+# $FreeBSD: head/sysutils/vagrant/Makefile 462453 2018-02-20 21:24:00Z cmt $
 
 PORTNAME=	vagrant
-PORTVERSION=	2.0.1
+PORTVERSION=	2.0.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils rubygems devel
 
@@ -18,13 +18,13 @@ BUILD_DEPENDS=	rubygem-builder>=2.1.2:devel/rubygem-builder \
 RUN_DEPENDS=	rubygem-bundler>=1.12.5:sysutils/rubygem-bundler \
 		rubygem-childprocess>=0.6.0:devel/rubygem-childprocess \
 		rubygem-erubis>=2.7.0:www/rubygem-erubis \
-		rubygem-hashicorp-checkpoint>=0.1.1:www/rubygem-hashicorp-checkpoint \
+		rubygem-hashicorp-checkpoint>=0.1.5:www/rubygem-hashicorp-checkpoint \
 		rubygem-i18n>=0.6.0:devel/rubygem-i18n \
 		rubygem-listen>=3.1.5:devel/rubygem-listen \
 		rubygem-log4r>=1.1.9:sysutils/rubygem-log4r \
 		rubygem-net-scp>=1.2.0:security/rubygem-net-scp \
 		rubygem-net-sftp>=2.1:security/rubygem-net-sftp \
-		rubygem-net-ssh>=4.1.0:security/rubygem-net-ssh \
+		rubygem-net-ssh>=4.2.0:security/rubygem-net-ssh \
 		rubygem-rb-kqueue>=0.2.0:devel/rubygem-rb-kqueue \
 		rubygem-rest-client>=1.6.0:www/rubygem-rest-client \
 		rubygem-wdm>=0.1.0:devel/rubygem-wdm \

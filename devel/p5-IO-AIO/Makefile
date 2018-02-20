@@ -1,11 +1,12 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-IO-AIO/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-IO-AIO/Makefile 462432 2018-02-20 20:26:25Z sunpoet $
 
 PORTNAME=	IO-AIO
-PORTVERSION=	4.34
+PORTVERSION=	4.40
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
+DISTNAME=	${PORTNAME}-${PORTVERSION:S|0$||}
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Asynchronous Input/Output

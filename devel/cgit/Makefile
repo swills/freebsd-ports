@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/cgit/Makefile 459720 2018-01-23 01:11:49Z adamw $
+# $FreeBSD: head/devel/cgit/Makefile 462393 2018-02-20 12:54:59Z adamw $
 
 PORTNAME=	cgit
 PORTVERSION=	1.1
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	devel www
 MASTER_SITES=	http://git.zx2c4.com/cgit/snapshot/:cgit \
 		https://www.kernel.org/pub/software/scm/git/:git
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 TEST_DEPENDS=	msgfmt:devel/gettext-tools
 
-GIT_VERSION=	2.16.1
+GIT_VERSION=	2.16.2
 USES=		cpe gmake iconv perl5 python:env shebangfix ssl tar:xz
 CPE_VENDOR=	lars_hjemli
 USE_PERL5=	test

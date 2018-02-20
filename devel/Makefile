@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 462354 2018-02-19 22:31:09Z rene $
+# $FreeBSD: head/devel/Makefile 462429 2018-02-20 20:26:09Z sunpoet $
 #
 
     COMMENT = Development utilities
@@ -2496,6 +2496,8 @@
     SUBDIR += p5-ExtUtils-PkgConfig
     SUBDIR += p5-ExtUtils-XSBuilder
     SUBDIR += p5-ExtUtils-XSpp
+    SUBDIR += p5-FFI-CheckLib
+    SUBDIR += p5-FFI-Platypus
     SUBDIR += p5-FSA-Rules
     SUBDIR += p5-Fennec-Lite
     SUBDIR += p5-File-Append-TempFile
@@ -3677,6 +3679,7 @@
     SUBDIR += p5-UUID-Tiny
     SUBDIR += p5-Uniq
     SUBDIR += p5-Unix-Groups
+    SUBDIR += p5-Unix-Groups-FFI
     SUBDIR += p5-Unix-Statgrab
     SUBDIR += p5-Unix-Uptime
     SUBDIR += p5-User-Identity
@@ -5335,6 +5338,7 @@
     SUBDIR += rubygem-chronic
     SUBDIR += rubygem-chronic_duration
     SUBDIR += rubygem-clamp
+    SUBDIR += rubygem-clamp11
     SUBDIR += rubygem-classifier
     SUBDIR += rubygem-classifier-reborn
     SUBDIR += rubygem-climate_control

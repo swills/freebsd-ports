@@ -1,10 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/sysutils/fusefs-ext2/Makefile 453223 2017-10-31 10:28:14Z ehaupt $
+# $FreeBSD: head/sysutils/fusefs-ext2/Makefile 462394 2018-02-20 12:58:43Z ehaupt $
 
 PORTNAME=	fusefs-ext2
-PORTVERSION=	0.0.9
+PORTVERSION=	0.0.10
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
 CATEGORIES=	sysutils
 
 MAINTAINER=	ehaupt@FreeBSD.org

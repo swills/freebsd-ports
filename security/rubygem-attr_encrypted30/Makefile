@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/security/rubygem-attr_encrypted30/Makefile 462398 2018-02-20 15:19:25Z tz $
 
 PORTNAME=	attr_encrypted
 PORTVERSION=	3.0.3

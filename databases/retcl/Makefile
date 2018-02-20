@@ -1,8 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/databases/retcl/Makefile 462336 2018-02-19 16:56:49Z gahr $
+# $FreeBSD: head/databases/retcl/Makefile 462392 2018-02-20 12:43:38Z gahr $
 
 PORTNAME=	retcl
-PORTVERSION=	0.3.0
+PORTVERSION=	0.3.1
 CATEGORIES=	databases
 
 MAINTAINER=	gahr@FreeBSD.org

@@ -1,11 +1,11 @@
 # Created by: Donald Burr <dburr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-PathTools/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-PathTools/Makefile 462433 2018-02-20 20:26:31Z sunpoet $
 
 PORTNAME=	PathTools
-PORTVERSION=	3.6200
+PORTVERSION=	3.7400
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
-MASTER_SITE_SUBDIR=	CPAN:RJBS
+MASTER_SITE_SUBDIR=	CPAN:XSAWYERX
 PKGNAMEPREFIX=	p5-
 DISTNAME=	${PORTNAME}-${PORTVERSION:C|00$||}
 

@@ -1,11 +1,11 @@
-# $FreeBSD: head/net-im/prosody-modules/Makefile 441211 2017-05-19 07:26:23Z tcberner $
+# $FreeBSD: head/net-im/prosody-modules/Makefile 462461 2018-02-20 22:43:53Z rodrigo $
 
 PORTNAME=	prosody-modules
-PORTVERSION=	20170512
+PORTVERSION=	20180216
 CATEGORIES=	net-im
 MASTER_SITES=	https://hg.prosody.im/${PORTNAME}/archive/  \
 		LOCAL/tcberner/${PORTNAME}-${PORTVERSION}
-DISTNAME=	9b43b7fc3558
+DISTNAME=	6f289283feb1
 DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	tcberner@FreeBSD.org

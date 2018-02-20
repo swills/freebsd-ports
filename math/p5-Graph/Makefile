@@ -1,9 +1,8 @@
 # Created by: tobez
-# $FreeBSD: head/math/p5-Graph/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/p5-Graph/Makefile 462415 2018-02-20 18:42:43Z tobez $
 
 PORTNAME=	Graph
-PORTVERSION=	0.96
-PORTREVISION=	2
+PORTVERSION=	0.9704
 PORTEPOCH=	1
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN

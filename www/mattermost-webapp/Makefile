@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/mattermost-webapp/Makefile 460677 2018-02-02 08:39:46Z olivier $
+# $FreeBSD: head/www/mattermost-webapp/Makefile 462456 2018-02-20 22:11:38Z olivier $
 
 PORTNAME=	mattermost-webapp
-PORTVERSION=	4.6.0
+PORTVERSION=	4.7.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 MASTER_SITES=	https://releases.mattermost.com/${PORTVERSION}/

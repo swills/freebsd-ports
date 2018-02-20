@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Time-Piece/Makefile 453415 2017-11-03 17:09:03Z tobez $
+# $FreeBSD: head/devel/p5-Time-Piece/Makefile 462396 2018-02-20 13:29:26Z tobez $
 
 PORTNAME=	Time-Piece
-PORTVERSION=	1.3202
+PORTVERSION=	1.3204
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

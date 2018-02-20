@@ -1,7 +1,7 @@
 # Created by: Matthias Andree <matthias.andree@gmx.de>
-# $FreeBSD: head/misc/e2fsprogs-libuuid/Makefile 461282 2018-02-08 22:55:12Z mandree $
+# $FreeBSD: head/misc/e2fsprogs-libuuid/Makefile 462457 2018-02-20 22:14:17Z mandree $
 
-PORTREVISION=	1
+PORTREVISION=	0
 CATEGORIES=	misc devel
 PKGNAMESUFFIX=	-libuuid
 
