@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/cloud-init-azure/Makefile 461601 2018-02-12 16:01:07Z amdmi3 $
+# $FreeBSD: head/net/cloud-init-azure/Makefile 462324 2018-02-19 14:17:49Z antoine $
 
 PORTNAME=	cloud-init
 PORTVERSION=	0.7.9
+PORTREVISION=	1
 CATEGORIES=	net python
 MASTER_SITES=	http://launchpad.net/${PORTNAME}/trunk/${PORTVERSION}/+download/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +16,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	dmidecode>0:sysutils/dmidecode \
 		e2fsprogs>0:sysutils/e2fsprogs \
-		python>0:lang/python \
 		${PYTHON_PKGNAMEPREFIX}boto>0:devel/py-boto@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Jinja2>0:devel/py-Jinja2@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}cheetah>0:devel/py-cheetah@${FLAVOR} \

@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/py-oletools/Makefile 444754 2017-06-30 14:03:36Z antoine $
+# $FreeBSD: head/devel/py-oletools/Makefile 462345 2018-02-19 20:12:45Z antoine $
 
 PORTNAME=	oletools
-PORTVERSION=	0.51
+PORTVERSION=	0.52
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,11 +12,12 @@ COMMENT=	Tools to analyze security characteristics of MS OLE2 files
 
 LICENSE=	BSD2CLAUSE MIT
 LICENSE_COMB=	multi
-LICENSE_FILE_BSD2CLAUSE=	${WRKSRC}/oletools/LICENSE.txt
-LICENSE_FILE_MIT=	${WRKSRC}/oletools/LICENSE.txt
+LICENSE_FILE=	${WRKSRC}/oletools/LICENSE.txt
 
 NO_ARCH=	yes
-USES=		python
-USE_PYTHON=	distutils autoplist
+USES=		dos2unix python zip
+USE_LOCALE=	en_US.UTF-8
+USE_PYTHON=	distutils concurrent autoplist
+DOS2UNIX_FILES=	oletools/oleform.py
 
 .include <bsd.port.mk>

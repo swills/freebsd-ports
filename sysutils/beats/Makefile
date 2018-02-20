@@ -1,5 +1,5 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/sysutils/beats/Makefile 461294 2018-02-09 13:06:13Z girgen $
+# $FreeBSD: head/sysutils/beats/Makefile 462321 2018-02-19 14:09:35Z girgen $
 
 PORTNAME=	beats
 PORTVERSION=	6.2.1
@@ -10,6 +10,8 @@ MAINTAINER=	girgen@FreeBSD.org
 COMMENT=	Collect logs locally and send to remote logstash
 
 LICENSE=	APACHE20
+
+BROKEN=		overwrites go-1.10 files, see PR-226039
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	elastic

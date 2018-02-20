@@ -1,8 +1,9 @@
 # Created by: Dereckson <dereckson@gmail.com>
-# $FreeBSD: head/www/woof/Makefile 386097 2015-05-11 18:34:57Z mat $
+# $FreeBSD: head/www/woof/Makefile 462326 2018-02-19 14:42:33Z amdmi3 $
 
 PORTNAME=	woof
 DISTVERSION=	2012-05-31
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://www.home.unix-ag.org/simon/
 EXTRACT_SUFX=	.py
@@ -11,10 +12,12 @@ EXTRACT_ONLY=	# empty
 MAINTAINER=	dereckson@gmail.com
 COMMENT=	Web Offer One File, an ad-hoc single file webserver
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 
-USES=		python
+USES=		python:2.7,run shebangfix
+SHEBANG_FILES=	${DISTFILES}
 NO_BUILD=	yes
+NO_ARCH=	yes
 PLIST_FILES=	bin/woof
 
 do-extract:

@@ -1,7 +1,7 @@
-# $FreeBSD: head/irc/irssi/Makefile 460549 2018-01-31 23:53:53Z brd $
+# $FreeBSD: head/irc/irssi/Makefile 462311 2018-02-19 12:28:55Z dbaio $
 
 PORTNAME=	irssi
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 PORTEPOCH=	1
 CATEGORIES?=	irc
 MASTER_SITES=	https://github.com/irssi/irssi/releases/download/${PORTVERSION}/

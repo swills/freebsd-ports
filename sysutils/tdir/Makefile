@@ -1,26 +1,28 @@
 # Created by: tundra
-# $FreeBSD: head/sysutils/tdir/Makefile 399684 2015-10-19 14:50:52Z amdmi3 $
+# $FreeBSD: head/sysutils/tdir/Makefile 462320 2018-02-19 14:01:41Z amdmi3 $
 
 PORTNAME=	tdir
 PORTVERSION=	1.71
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.tundraware.com/Software/tdir/
 
 MAINTAINER=	tdir@tundraware.com
 COMMENT=	Advanced file directory display utility
 
-USES=		python shebangfix
+BROKEN=		license forbids modification, but the port cannot be used without it
+
+LICENSE=	TundraWare
+LICENSE_NAME=	TundraWare license
+LICENSE_FILE=	${WRKSRC}/tdir-license.txt
+LICENSE_PERMS=	dist-mirror no-dist-sell no-pkg-mirror no-pkg-sell no-auto-accept
+
+USES=		python:2.7,run shebangfix
 SHEBANG_FILES=	tdir
 python_OLD_CMD=	"/usr//bin/env python"
-
-MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/tdir \
 		man/man1/tdir.1.gz
-PORTDOCS=	tdir-license.txt
-
-post-patch:
-	@${REINPLACE_CMD} 's,-o root -g wheel,,' ${WRKSRC}/Makefile
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/www/rubygem-unicorn-worker-killer044/Makefile 462339 2018-02-19 17:43:08Z tz $
 
 PORTNAME=	unicorn-worker-killer
 PORTVERSION=	0.4.4

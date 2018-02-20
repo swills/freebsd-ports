@@ -1,17 +1,22 @@
 # Created by: tundra
-# $FreeBSD: head/sysutils/abck/Makefile 393196 2015-07-29 22:09:53Z antoine $
+# $FreeBSD: head/sysutils/abck/Makefile 462320 2018-02-19 14:01:41Z amdmi3 $
 
 PORTNAME=	abck
 PORTVERSION=	2.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.tundraware.com/Software/abck/
 
 MAINTAINER=	tundra@tundraware.com
 COMMENT=	Manage intrusion attempts recorded in the system log
 
-USES=		python shebangfix
+LICENSE=	TundraWare
+LICENSE_NAME=	TundraWare license
+LICENSE_FILE=	${WRKSRC}/abck-License.txt
+LICENSE_PERMS=	dist-mirror no-dist-sell pkg-mirror no-pkg-sell no-auto-accept
+
+USES=		python:2.7,run shebangfix
 SHEBANG_FILES=	abck
-python_OLD_CMD=	/usr/local/bin/python
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Alejandro Pulver <alejandro@varnet.biz>
-# $FreeBSD: head/games/tuxpaint/Makefile 425174 2016-11-02 22:45:14Z mat $
+# $FreeBSD: head/games/tuxpaint/Makefile 462364 2018-02-20 00:15:56Z truckman $
 
 PORTNAME=	tuxpaint
 PORTVERSION=	0.9.22
@@ -33,6 +33,8 @@ MAKE_ARGS=	CPPFLAGS="-I${LOCALBASE}/include" \
 		OPTFLAGS="${CFLAGS} -DHAVE_STRCASESTR" \
 		SHARED_FLAGS="-shared -fPIC" \
 		GPERF="${GPERF}"
+
+MAKE_JOBS_UNSAFE=	yes
 
 INSTALL_TARGET=	install-gettext install-im install-magic-plugins \
 		install-magic-plugin-dev install-default-config \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 461936 2018-02-15 17:05:45Z tcberner $
+# $FreeBSD: head/misc/Makefile 462347 2018-02-19 20:33:08Z yuri $
 #
 
     COMMENT = Miscellaneous utilities
@@ -57,6 +57,7 @@
     SUBDIR += cpuid
     SUBDIR += crosspad
     SUBDIR += crosti
+    SUBDIR += cryptoballot
     SUBDIR += cs
     SUBDIR += cstream
     SUBDIR += dahdi

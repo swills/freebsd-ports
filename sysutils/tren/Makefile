@@ -1,17 +1,17 @@
 # Created by: Tim Daneliuk <tren@tundraware.com>
-# $FreeBSD: head/sysutils/tren/Makefile 461599 2018-02-12 15:52:35Z antoine $
+# $FreeBSD: head/sysutils/tren/Makefile 462320 2018-02-19 14:01:41Z amdmi3 $
 
 PORTNAME=	tren
 PORTVERSION=	1.242
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils python
 MASTER_SITES=	http://www.tundraware.com/Software/tren/
 
 MAINTAINER=	tren@tundraware.com
 COMMENT=	Powerful File And Directory Batch Renaming Tool
 
-LICENSE=	TREN
-LICENSE_NAME=	Tren license
+LICENSE=	TundraWare
+LICENSE_NAME=	TundraWare license
 LICENSE_FILE=	${WRKSRC}/tren-license.txt
 LICENSE_PERMS=	dist-mirror no-dist-sell pkg-mirror no-pkg-sell no-auto-accept
 
@@ -19,7 +19,6 @@ USES=		python:2.7,run shebangfix
 SHEBANG_FILES=	tren.py
 PLIST_FILES=	bin/tren.py man/man1/tren.1.gz
 PORTDOCS=	WHATSNEW.txt tren-license.txt tren.html tren.pdf tren.ps tren.rst
-NO_BUILD=	yes
 NO_ARCH=	yes
 
 OPTIONS_DEFINE=	DOCS
