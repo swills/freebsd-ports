@@ -1,5 +1,5 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/graphics/opendx/Makefile 452602 2017-10-21 20:18:16Z sunpoet $
+# $FreeBSD: head/graphics/opendx/Makefile 462369 2018-02-20 03:36:01Z stephen $
 
 PORTNAME=	opendx
 PORTVERSION=	4.4.4
@@ -21,8 +21,9 @@ LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick	\
 		libcdf.so:science/cdf			\
 		libXp.so:x11/libXp
 
-USE_XORG=	x11 xt xinerama xext xpm xmu sm ice
+MAKE_JOBS_UNSAFE=	yes
 USES=		bison motif gmake libtool
+USE_XORG=	x11 xt xinerama xext xpm xmu sm ice
 USE_GL=		gl glu
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared

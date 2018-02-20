@@ -1,13 +1,19 @@
 # Created by: tundra
-# $FreeBSD: head/sysutils/tbku/Makefile 428161 2016-12-08 23:40:05Z jhale $
+# $FreeBSD: head/sysutils/tbku/Makefile 462320 2018-02-19 14:01:41Z amdmi3 $
 
 PORTNAME=	tbku
 PORTVERSION=	1.120
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.tundraware.com/Software/tbku/
 
 MAINTAINER=	tbku@tundraware.com
 COMMENT=	Tool For Incremental And Imaging Backups
+
+LICENSE=	TundraWare
+LICENSE_NAME=	TundraWare license
+LICENSE_FILE=	${WRKSRC}/tbku-license.txt
+LICENSE_PERMS=	dist-mirror no-dist-sell pkg-mirror no-pkg-sell no-auto-accept
 
 NO_ARCH=	yes
 

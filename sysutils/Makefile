@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 462269 2018-02-19 01:27:32Z linimon $
+# $FreeBSD: head/sysutils/Makefile 462327 2018-02-19 14:43:15Z lwhsu $
 #
 
     COMMENT = System utilities
@@ -371,6 +371,7 @@
     SUBDIR += fusefs-mhddfs
     SUBDIR += fusefs-mp3fs
     SUBDIR += fusefs-ntfs
+    SUBDIR += fusefs-ntfs-compression
     SUBDIR += fusefs-pod
     SUBDIR += fusefs-rar2fs
     SUBDIR += fusefs-s3fs

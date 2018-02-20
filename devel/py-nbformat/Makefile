@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-nbformat/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-nbformat/Makefile 462382 2018-02-20 09:23:50Z koobs $
 
 PORTNAME=	nbformat
 PORTVERSION=	4.4.0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -22,7 +23,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${FLAVOR} \
 
 NO_ARCH=	yes
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 
 do-test:
 	@(cd ${TEST_WRKSRC} && ${SETENV} ${TEST_ENV} pytest-${PYTHON_VER})

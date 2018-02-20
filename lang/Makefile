@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 461055 2018-02-06 14:18:29Z bapt $
+# $FreeBSD: head/lang/Makefile 462317 2018-02-19 13:23:46Z lwhsu $
 #
 
     COMMENT = Programming languages
@@ -46,6 +46,7 @@
     SUBDIR += cmucl-extra
     SUBDIR += cocor
     SUBDIR += cparser
+    SUBDIR += crystal
     SUBDIR += csharp-mode.el
     SUBDIR += cython
     SUBDIR += diveintopython

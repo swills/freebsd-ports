@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-nbconvert/Makefile 458906 2018-01-13 08:13:35Z sunpoet $
+# $FreeBSD: head/devel/py-nbconvert/Makefile 462383 2018-02-20 09:24:47Z koobs $
 
 PORTNAME=	nbconvert
 PORTVERSION=	5.3.1
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -25,7 +26,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Jinja2>=0:devel/py-Jinja2@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}traitlets>=4.2:devel/py-traitlets@${FLAVOR}
 
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,8 +1,9 @@
 # Created by: Dryice Liu
-# $FreeBSD: head/devel/ipython/Makefile 460899 2018-02-04 10:13:41Z sunpoet $
+# $FreeBSD: head/devel/ipython/Makefile 462384 2018-02-20 09:26:02Z koobs $
 
 PORTNAME=	ipython
 PORTVERSION=	5.5.0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -23,7 +24,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pexpect>=0:misc/py-pexpect@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}traitlets>=4.2:devel/py-traitlets@${FLAVOR}
 
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 USE_GCC=	yes # To be removed - Needed as a work-around for numpy, see PR ports/188114
 NO_ARCH=	yes
 

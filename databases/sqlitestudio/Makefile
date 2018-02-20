@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/databases/sqlitestudio/Makefile 454970 2017-11-27 17:14:43Z yuri $
+# $FreeBSD: head/databases/sqlitestudio/Makefile 462333 2018-02-19 16:20:42Z mat $
 
 PORTNAME=	sqlitestudio
 PORTVERSION=	3.1.1
@@ -59,7 +59,8 @@ post-patch:
 PLUGIN_DIRS=
 PLUGIN_CSV_IMPORT_VARS=			PLUGIN_DIRS+=CsvImport
 PLUGIN_CSV_EXPORT_VARS=			PLUGIN_DIRS+=CsvExport
-PLUGIN_DB_SQLITE_CIPHER_VARS=		PLUGIN_DIRS+=DbSqliteCipher USES+=ssl
+PLUGIN_DB_SQLITE_CIPHER_USES=		ssl
+PLUGIN_DB_SQLITE_CIPHER_VARS=		PLUGIN_DIRS+=DbSqliteCipher
 PLUGIN_HTML_EXPORT_VARS=		PLUGIN_DIRS+=HtmlExport
 PLUGIN_JSON_EXPORT_VARS=		PLUGIN_DIRS+=JsonExport
 PLUGIN_PDF_EXPORT_VARS=			PLUGIN_DIRS+=PdfExport

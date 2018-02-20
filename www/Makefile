@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 462196 2018-02-17 22:08:08Z yuri $
+# $FreeBSD: head/www/Makefile 462339 2018-02-19 17:43:08Z tz $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -2206,6 +2206,7 @@
     SUBDIR += rubygem-unicorn
     SUBDIR += rubygem-unicorn51
     SUBDIR += rubygem-unicorn-worker-killer
+    SUBDIR += rubygem-unicorn-worker-killer044
     SUBDIR += rubygem-url_escape
     SUBDIR += rubygem-url_mount
     SUBDIR += rubygem-vegas

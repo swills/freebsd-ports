@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/net-im/toxic/Makefile 459963 2018-01-25 21:20:12Z jbeich $
+# $FreeBSD: head/net-im/toxic/Makefile 462333 2018-02-19 16:20:42Z mat $
 
 PORTNAME=	toxic
 PORTVERSION=	0.8.1
@@ -35,7 +35,7 @@ X11_USE=	GNOME=gdkpixbuf2,glib20 XORG=x11
 X11_MAKE_ARGS_OFF=	DISABLE_X11=1 DISABLE_DESKTOP_NOTIFY=1
 X11_LIB_DEPENDS=libnotify.so:devel/libnotify
 
-PYTHON_VARS=	USES+=python:3.3+
+PYTHON_USES=	python:3.3+
 PYTHON_MAKE_ARGS=	ENABLE_PYTHON=1
 
 MAKE_ENV=	USER_CFLAGS="${CFLAGS}" USER_LDFLAGS="${LDFLAGS}"

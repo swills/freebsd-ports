@@ -1,8 +1,9 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/security/py-stem/Makefile 462227 2018-02-18 13:20:29Z antoine $
+# $FreeBSD: head/security/py-stem/Makefile 462373 2018-02-20 06:48:59Z yuri $
 
 PORTNAME=	stem
 PORTVERSION=	1.6.0
+PORTREVISION=	1
 CATEGORIES=	security net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -19,7 +20,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pycodestyle>0:devel/py-pycodestyle@${FLAVOR}
 
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist concurrent
 NO_ARCH=	yes
 
 do-test:

@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/security/pam-modules/Makefile 457909 2018-01-02 16:13:26Z feld $
+# $FreeBSD: head/security/pam-modules/Makefile 462333 2018-02-19 16:20:42Z mat $
 
 PORTNAME=	pam-modules
 PORTVERSION=	2.2
@@ -31,7 +31,8 @@ MYSQL_USE=	MYSQL
 
 PGSQL_CONFIGURE_ENABLE=	pgsql
 PGSQL_DESC=	Build pam_pgsql
-PGSQL_VARS=	USES+=pgsql  WANT_PGSQL=client
+PGSQL_USES=	pgsql
+PGSQL_VARS=	WANT_PGSQL=client
 
 SYSLOG_CONFIGURE_ENABLE=	log
 SYSLOG_DESC=	Build pam_log

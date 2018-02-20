@@ -1,9 +1,9 @@
 # Created by: jkh
-# $FreeBSD: head/devel/gmake/Makefile 418216 2016-07-08 11:24:18Z tijl $
+# $FreeBSD: head/devel/gmake/Makefile 462385 2018-02-20 09:39:14Z tijl $
 
 PORTNAME=	gmake
 PORTVERSION=	4.2.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	GNU/make
 DISTNAME=	make-${PORTVERSION}
@@ -20,8 +20,6 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--program-prefix=g \
 		--without-guile
-# fmake does not like PO_DEPENDS_ON_POT being undefined
-MAKE_ARGS=	PO_DEPENDS_ON_POT=
 
 USES=		cpe tar:bzip2
 CPE_VENDOR=	gnu
@@ -29,9 +27,7 @@ CPE_VENDOR=	gnu
 OPTIONS_DEFINE=	NLS
 OPTIONS_SUB=	yes
 
-NLS_USES=	gettext iconv
-NLS_CONFIGURE_ON=	${ICONV_CONFIGURE_ARG} \
-			--with-libintl-prefix=${LOCALBASE}
+NLS_USES=	gettext-runtime
 NLS_CONFIGURE_ENABLE=	nls
 
 INFO=		make

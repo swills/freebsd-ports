@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-jupyter_core/Makefile 455337 2017-12-02 09:22:02Z antoine $
+# $FreeBSD: head/devel/py-jupyter_core/Makefile 462381 2018-02-20 09:22:27Z koobs $
 
 PORTNAME=	jupyter_core
 PORTVERSION=	4.4.0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -21,7 +22,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ipython>=0:devel/ipython@${FLAVOR} \
 NO_ARCH=	yes
 USES=		python
 USE_LOCALE=	en_US.UTF-8
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 
 do-test:
 	@(cd ${TEST_WRKSRC} && ${SETENV} ${TEST_ENV} pytest-${PYTHON_VER})

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/slurm-wlm/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/sysutils/slurm-wlm/Makefile 462368 2018-02-20 03:29:51Z jrm $
 
 PORTNAME=	slurm
 DISTVERSION=	17.02.9
@@ -30,6 +30,7 @@ USE_PERL5=	configure
 USE_RC_SUBR=	slurmctld slurmd
 
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--bindir=${PREFIX}/bin
 INSTALL_TARGET=	install-strip
 PLIST_SUB=	PORTVERSION="${PORTVERSION}"
 SHEBANG_FILES=	doc/html/shtml2html.py doc/man/man2html.py

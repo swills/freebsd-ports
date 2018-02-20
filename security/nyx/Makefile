@@ -1,8 +1,9 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/security/nyx/Makefile 462227 2018-02-18 13:20:29Z antoine $
+# $FreeBSD: head/security/nyx/Makefile 462389 2018-02-20 12:02:37Z pi $
 
 PORTNAME=	nyx
 PORTVERSION=	2.0.4
+PORTREVISION=	1
 CATEGORIES=	security net
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,5 +19,10 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}stem>=1.6.0:security/py-stem@${FLAVOR} \
 USES=		python
 USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
+
+PLIST_FILES=	man/man1/nyx.1.gz
+
+post-install:
+		${INSTALL_MAN} ${WRKSRC}/nyx.1 ${STAGEDIR}${MANPREFIX}/man/man1
 
 .include <bsd.port.mk>
