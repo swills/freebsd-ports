@@ -142,6 +142,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-mousetrap-rails>=1.4.6:www/rubygem-mousetrap-rails \
 	rubygem-charlock_holmes>=0.7.5:textproc/rubygem-charlock_holmes \
 	rubygem-oj2>=2.17.4:devel/rubygem-oj2 \
+	rubygem-fast_blank>=0:devel/rubygem-fast_blank \
 	rubygem-chronic>=0.10.2:devel/rubygem-chronic \
 	rubygem-chronic_duration>=0.10.6:devel/rubygem-chronic_duration \
 	rubygem-webpack-rails>=0.9.10:www/rubygem-webpack-rails \
