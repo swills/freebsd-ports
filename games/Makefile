@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 461808 2018-02-14 14:21:48Z romain $
+# $FreeBSD: head/games/Makefile 462477 2018-02-21 08:03:18Z yuri $
 #
 
     COMMENT = Games and related software
@@ -125,6 +125,7 @@
     SUBDIR += bsdrain
     SUBDIR += bsdtris
     SUBDIR += bsp
+    SUBDIR += bstone
     SUBDIR += bubble-chains
     SUBDIR += bubbros
     SUBDIR += bugsquish

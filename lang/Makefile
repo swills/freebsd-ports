@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 462317 2018-02-19 13:23:46Z lwhsu $
+# $FreeBSD: head/lang/Makefile 462537 2018-02-21 17:58:56Z lwhsu $
 #
 
     COMMENT = Programming languages
@@ -264,6 +264,7 @@
     SUBDIR += picoc
     SUBDIR += pocl
     SUBDIR += polyml
+    SUBDIR += ponyc
     SUBDIR += ptoc
     SUBDIR += pure
     SUBDIR += py-clojure_py

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 462243 2018-02-18 13:38:41Z sunpoet $
+# $FreeBSD: head/textproc/Makefile 462581 2018-02-22 10:36:41Z romain $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -416,6 +416,7 @@
     SUBDIR += libcue
     SUBDIR += libe-book
     SUBDIR += libebml
+    SUBDIR += libepubgen
     SUBDIR += libextractor
     SUBDIR += libexttextcat
     SUBDIR += libflate
@@ -433,6 +434,7 @@
     SUBDIR += libnxml
     SUBDIR += libodfgen01
     SUBDIR += libparsifal
+    SUBDIR += libqxp
     SUBDIR += librevenge
     SUBDIR += libsass
     SUBDIR += libsoldout
@@ -1262,6 +1264,7 @@
     SUBDIR += pure-csv
     SUBDIR += pure-xml
     SUBDIR += py-Chameleon
+    SUBDIR += py-CommonMark
     SUBDIR += py-MarkupSafe
     SUBDIR += py-Tempita
     SUBDIR += py-acora

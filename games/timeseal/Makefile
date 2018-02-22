@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@FreeBSD.org>
-# $FreeBSD: head/games/timeseal/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/games/timeseal/Makefile 462538 2018-02-21 18:08:37Z ak $
 
 PORTNAME=	timeseal
 PORTVERSION=	1.0
@@ -10,6 +10,9 @@ EXTRACT_ONLY=
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Account for network lag in FICS chess games
+
+DEPRECATED=	Abandoned, outdated, requires COMPAT_43 kernel option which was removed from GENERIC in FreeBSD 7.0 
+EXPIRATION_DATE=	2018-03-21
 
 ONLY_FOR_ARCHS=	i386 amd64
 NO_BUILD=	yes

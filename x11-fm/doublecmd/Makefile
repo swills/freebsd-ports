@@ -1,5 +1,5 @@
 # Created by: Beñat Gonzalez Etxepare <bbtruk@users.sourceforge.net>
-# $FreeBSD: head/x11-fm/doublecmd/Makefile 460566 2018-02-01 07:23:24Z acm $
+# $FreeBSD: head/x11-fm/doublecmd/Makefile 462578 2018-02-22 09:52:47Z antoine $
 
 PORTNAME=	doublecmd
 PORTVERSION=	0.8.1
@@ -22,7 +22,7 @@ BUILD_DEPENDS=	lazbuild:editors/lazarus \
 PORTDOCS=	*
 
 USES=		dos2unix desktop-file-utils
-USE_FPC=	cairo fcl-base fcl-db fcl-image fcl-json fcl-registry \
+USE_FPC=	cairo chm fcl-base fcl-db fcl-image fcl-json fcl-registry \
 		fcl-xml iconvenc pasjpeg rtl-extra x11 regexpr
 USE_XORG=	x11
 DOS2UNIX_FILES=	src/dmhelpmanager.pas

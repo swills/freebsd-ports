@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 462327 2018-02-19 14:43:15Z lwhsu $
+# $FreeBSD: head/sysutils/Makefile 462476 2018-02-21 07:49:21Z lwhsu $
 #
 
     COMMENT = System utilities
@@ -851,6 +851,7 @@
     SUBDIR += php71-posix
     SUBDIR += php72-fileinfo
     SUBDIR += php72-posix
+    SUBDIR += phpfpm_exporter
     SUBDIR += phybs
     SUBDIR += pick
     SUBDIR += pidof

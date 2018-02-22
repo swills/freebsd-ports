@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/databases/adminer/Makefile 461580 2018-02-12 12:00:17Z dbaio $
+# $FreeBSD: head/databases/adminer/Makefile 462468 2018-02-21 00:23:35Z yuri $
 
 PORTNAME=	adminer
-PORTVERSION=	4.6.1
+PORTVERSION=	4.6.2
 CATEGORIES=	databases www
 MASTER_SITES=	https://github.com/vrana/adminer/releases/download/v${PORTVERSION}/
 EXTRACT_SUFX=	.php
@@ -13,11 +13,10 @@ COMMENT=	Full-featured database management tool written in PHP
 
 LICENSE=	APACHE20
 
-USES=	php
+USES=		php
 USE_PHP=	session
-
-NO_ARCH=	yes
 NO_BUILD=	yes
+NO_ARCH=	yes
 
 PLIST_SUB=	WWWOWN="${WWWOWN}" WWWGRP="${WWWGRP}"
 SUB_FILES=	pkg-message

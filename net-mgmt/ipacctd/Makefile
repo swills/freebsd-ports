@@ -1,11 +1,10 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/net-mgmt/ipacctd/Makefile 404799 2015-12-30 01:42:37Z amdmi3 $
+# $FreeBSD: head/net-mgmt/ipacctd/Makefile 462487 2018-02-21 10:29:41Z ak $
 
 PORTNAME=	ipacctd
 PORTVERSION=	1.47
 CATEGORIES=	net-mgmt
-MASTER_SITES=	ftp://ftp.wuppy.net.ru/pub/FreeBSD/local/ipacctd/ \
-		LOCAL/skv
+MASTER_SITES=	LOCAL/skv
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	IP accounting using divert socket

@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/textproc/libtextcat/Makefile 427491 2016-12-01 11:18:03Z mat $
+# $FreeBSD: head/textproc/libtextcat/Makefile 462573 2018-02-22 09:02:58Z amdmi3 $
 
 PORTNAME=	libtextcat
 PORTVERSION=	2.2
@@ -28,10 +28,12 @@ post-install:
 	(cd ${WRKSRC}/langclass/LM &&		\
 	${FIND} . -name "*.lm" -exec ${INSTALL_DATA} {} "${STAGEDIR}${DATADIR}/LM/{}" \;)
 	${INSTALL_DATA} ${WRKSRC}/langclass/conf.txt "${STAGEDIR}${DATADIR}"
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
+
+post-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 
-regression-test:
+do-test:
 	(cd ${WRKSRC}/langclass/ &&		\
 	for t in `${LS} ShortTexts/*.txt` ; do	\
 	${ECHO_MSG} "Analyzing $$t..." ;	\

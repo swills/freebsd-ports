@@ -1,5 +1,5 @@
 # Created by: Marius Nuennerich <mn@bsdgroup.de>
-# $FreeBSD: head/devel/uboot-mkimage/Makefile 363399 2014-07-29 21:43:17Z adamw $
+# $FreeBSD: head/devel/uboot-mkimage/Makefile 462570 2018-02-22 08:15:26Z lwhsu $
 
 PORTNAME=	uboot
 DISTVERSION=	2010.12
@@ -11,6 +11,9 @@ DISTNAME=	u-boot-${PORTVERSION}
 
 MAINTAINER=	ray@FreeBSD.org
 COMMENT=	The mkimage utility of the u-boot bootloader
+
+DEPRECATED=	Use sysutils/u-boot-tools
+EXPIRATION_DATE=2019-02-28
 
 USES=	tar:bzip2
 BUILD_WRKSRC=	${WRKSRC}/tools

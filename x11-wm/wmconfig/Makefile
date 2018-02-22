@@ -1,12 +1,12 @@
 # Created by: Tommy Scheunemann <net@arrishq.org>
-# $FreeBSD: head/x11-wm/wmconfig/Makefile 406196 2016-01-16 03:30:01Z vanilla $
+# $FreeBSD: head/x11-wm/wmconfig/Makefile 462542 2018-02-21 20:48:59Z tobik $
 
 PORTNAME=	wmconfig
 PORTVERSION=	1.5.0
 CATEGORIES=	x11-wm
 MASTER_SITES=	https://www.arrishq.net/files/
 
-MAINTAINER=	net@arrishq.net
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Menu generation tool for X window managers
 
 LICENSE=	GPLv2

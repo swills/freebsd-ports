@@ -1,8 +1,8 @@
 # Created by: Robert Gogolok <gogo@cs.uni-sb.de>
-# $FreeBSD: head/devel/py-lxml/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/devel/py-lxml/Makefile 462529 2018-02-21 15:44:01Z wg $
 
 PORTNAME=	lxml
-PORTVERSION=	3.8.0
+PORTVERSION=	4.1.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -30,5 +30,9 @@ post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${DOCS_FILES:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
 	@cd ${WRKSRC} && ${COPYTREE_SHARE} doc ${STAGEDIR}${DOCSDIR}
+
+post-install:
+	${FIND} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR} \
+	-name '*.so' -exec ${STRIP_CMD} {} +
 
 .include <bsd.port.mk>

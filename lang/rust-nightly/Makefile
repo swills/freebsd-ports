@@ -1,5 +1,5 @@
 # Created by: Jean-Sébastien Pédron <dumbbell@FreeBSD.org>
-# $FreeBSD: head/lang/rust-nightly/Makefile 462210 2018-02-18 09:29:27Z antoine $
+# $FreeBSD: head/lang/rust-nightly/Makefile 462546 2018-02-21 21:58:02Z bdrewery $
 
 PORTVERSION=	1.17.0.20170212
 PKGNAMESUFFIX=	-nightly
@@ -32,13 +32,5 @@ RUST_BOOTSTRAP_VERSION=		beta
 
 CARGO_BOOTSTRAP_DIR=		bfee18f73287687c543bda8c35e4e33808792715
 CARGO_BOOTSTRAP_VERSION=	nightly
-
-PORT_LLVM_EXTRACT_ONLY_OFF=	${DISTFILE_llvm}
-PORT_LLVM_GH_TUPLE_OFF=		rust-lang:llvm:ceb177e:llvm
-PORT_LLVM_VARS_OFF=		NOPRECIOUSMAKEVARS=1 # ARCH
-
-post-extract-PORT_LLVM-off:
-	@(${RMDIR} ${WRKSRC}/src/llvm && \
-	  ${MV} ${WRKSRC_llvm} ${WRKSRC}/src/llvm)
 
 .include "${MASTERDIR}/Makefile"

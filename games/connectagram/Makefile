@@ -1,10 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/connectagram/Makefile 458019 2018-01-04 09:00:45Z amdmi3 $
+# $FreeBSD: head/games/connectagram/Makefile 462528 2018-02-21 15:16:30Z jhale $
 
 PORTNAME=	connectagram
-PORTVERSION=	1.2.5
+PORTVERSION=	1.2.6
 DISTVERSIONSUFFIX=	-src
-PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://gottcode.org/connectagram/
 
@@ -14,19 +13,24 @@ COMMENT=	Word unscrambling game
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+USES=		compiler:c++11-lib qmake tar:bzip2
+USE_GL=		gl
+USE_QT5=	buildtools_build core gui linguisttools_build network widgets
+
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
-USES=		compiler:c++11-lib qmake tar:bzip2
-USE_QT5=	buildtools_build core gui linguisttools_build network widgets
-INSTALLS_ICONS=	yes
-
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS NLS
+OPTIONS_SUB=	yes
 
 post-patch:
 	@${REINPLACE_CMD} -e \
-		's|share/man|man|;s|metainfo|appdata|' ${WRKSRC}/connectagram.pro
+		's|share/man|man|' ${WRKSRC}/connectagram.pro
 	@${REINPLACE_CMD} -e \
 		's|std::lround|lround|' ${WRKSRC}/src/*.cpp
+
+post-patch-NLS-off:
+	@${REINPLACE_CMD} -e \
+		'/INSTALLS/s|qm||' ${WRKSRC}/connectagram.pro
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

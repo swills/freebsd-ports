@@ -1,13 +1,13 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/devel/p5-Module-CoreList/Makefile 459577 2018-01-21 09:00:30Z sunpoet $
+# $FreeBSD: head/devel/p5-Module-CoreList/Makefile 462505 2018-02-21 13:39:09Z sunpoet $
 
 PORTNAME=	Module-CoreList
-PORTVERSION=	5.20180120
+PORTVERSION=	5.20180220
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	perl@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	See what modules shipped with versions of Perl
 
 LICENSE=	ART10 GPLv1+

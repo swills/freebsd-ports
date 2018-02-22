@@ -1,5 +1,5 @@
 # Created by: Andrey Fesenko <andrey@bsdnir.info>
-# $FreeBSD: head/russian/emkatic/Makefile 460567 2018-02-01 07:24:07Z acm $
+# $FreeBSD: head/russian/emkatic/Makefile 462578 2018-02-22 09:52:47Z antoine $
 
 PORTNAME=	emkatic
 PORTVERSION=	0.28
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING.txt
 BUILD_DEPENDS=	lazbuild:editors/lazarus \
 		fpcres:lang/fpc-utils
 
-USE_FPC=	cairo fcl-base fcl-image fcl-json fcl-xml pasjpeg rtl-extra x11
+USE_FPC=	cairo chm fcl-base fcl-image fcl-json fcl-xml pasjpeg rtl-extra x11
 
 PROJECT_FILE=	emkatic.lpi
 LAZARUS_VER=	1.8.0

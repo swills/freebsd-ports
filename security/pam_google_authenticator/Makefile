@@ -1,9 +1,8 @@
 # Created by: Jui-Nan Lin <jnlin@freebsd.cs.nctu.edu.tw>
-# $FreeBSD: head/security/pam_google_authenticator/Makefile 410661 2016-03-08 20:45:15Z pi $
+# $FreeBSD: head/security/pam_google_authenticator/Makefile 462540 2018-02-21 20:11:01Z brnrd $
 
 PORTNAME=	pam_google_authenticator
-PORTVERSION=	1.01.20160208
-PORTREVISION=	1
+PORTVERSION=	1.05
 PORTEPOCH=	1
 CATEGORIES=	security
 
@@ -15,12 +14,15 @@ LICENSE=	APACHE20
 USES=		autoreconf gmake libtool
 GNU_CONFIGURE=	YES
 
-WRKSRC_SUBDIR=	libpam
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	google
-GH_PROJECT=	google-authenticator
-GH_TAGNAME=	195ddc1
+GH_PROJECT=	google-authenticator-libpam
+
+OPTIONS_DEFINE=	QRENCODE
+OPTIONS_DEFAULT=	QRENCODE
+QRENCODE_DESC=	Allow creation of QR-codes
+
+QRENCODE_LIB_DEPENDS=	libqrencode.so:graphics/libqrencode
 
 post-patch:
 	@${REINPLACE_CMD} -e 's;/security;;'	\
