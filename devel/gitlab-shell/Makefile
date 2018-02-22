@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	gitlab-shell
-PORTVERSION=	5.11.0
+PORTVERSION=	6.0.3
 CATEGORIES=	devel
 MASTER_SITES=	https://gitlab.com/gitlab-org/${PORTNAME}/repository/archive.tar.gz?ref=v${PORTVERSION}&dummy=/
 DISTNAME=	${PORTNAME}-v${PORTVERSION}
@@ -15,6 +15,7 @@ COMMENT=	GitLab Shell handles git commands for GitLab
 BUILD_DEPENDS=	gem:devel/ruby-gems \
 		go>=1.5.3:lang/go
 
+NO_BUILD=	yes
 USERS=		git
 GROUPS=		git
 
@@ -28,6 +29,7 @@ pre-install:
 	${WRKSRC}/bin/compile
 	${RM} -rf ${WRKSRC}/go
 	${RM} -rf ${WRKSRC}/go_build
+	${RM} -rf /root/.cache
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}
