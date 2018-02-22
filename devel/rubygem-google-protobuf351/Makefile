@@ -1,17 +1,19 @@
-# Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-google-protobuf351/Makefile 460476 2018-01-31 15:51:34Z sunpoet $
+# $FreeBSD$
 
 PORTNAME=	google-protobuf
-PORTVERSION=	3.5.1.2
+PORTVERSION=	3.5.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
+PKGNAMESUFFIX=	351
 
-MAINTAINER=	sunpoet@FreeBSD.org
+MAINTAINER=	idefix@fechner.net
 COMMENT=	Ruby extension to Google Protocol Buffers
 
 LICENSE=	BSD3CLAUSE
 
-USE_RUBY=	yes
+PORTSCOUT=	limit:^3\.5\.1
+
 USES=		gem
+USE_RUBY=	yes
 
 .include <bsd.port.mk>
