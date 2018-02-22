@@ -4,7 +4,6 @@
 PORTNAME=	gitlab
 PORTVERSION=	10.5.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	www devel
 
 MAINTAINER=	idefix@fechner.net
@@ -191,7 +190,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-bcrypt_pbkdf>=1.0:security/rubygem-bcrypt_pbkdf \
 	rubygem-gitaly-proto>=0.84.0:net/rubygem-gitaly-proto \
 	rubygem-gitaly>=0.8.0:net/rubygem-gitaly \
-	rubygem-google-protobuf>=3.5.1:devel/rubygem-google-protobuf351 \
+	rubygem-google-protobuf351>=3.5.1:devel/rubygem-google-protobuf351 \
 	rubygem-toml-rb03>=0.3.15:www/rubygem-toml-rb03 \
 	rubygem-flipper011>=0.11.0:devel/rubygem-flipper011 \
 	rubygem-flipper-active_record011>=0.11.0:databases/rubygem-flipper-active_record011 \
