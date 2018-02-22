@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/audio/creox/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/audio/creox/Makefile 462574 2018-02-22 09:02:58Z amdmi3 $
 
 PORTNAME=	creox
 PORTVERSION=	0.3
@@ -10,6 +10,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Realtime sound processor
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libjack.so:audio/jack
 

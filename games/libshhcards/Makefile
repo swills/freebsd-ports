@@ -1,15 +1,16 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/games/libshhcards/Makefile 385787 2015-05-08 14:04:50Z amdmi3 $
+# $FreeBSD: head/games/libshhcards/Makefile 462536 2018-02-21 17:37:21Z jhale $
 
 PORTNAME=	libshhcards
-PORTVERSION=	1.0.5
-PORTREVISION=	3
+PORTVERSION=	1.0.6
 CATEGORIES=	games
 MASTER_SITES=	http://shh.thathost.com/pub-unix/files/
 DISTNAME=	shhcards-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Library for displaying game cards on X Window System
+
+LICENSE=	ART10
 
 USE_XORG=	xpm
 MAKEFILE=	${FILESDIR}/Makefile.lib

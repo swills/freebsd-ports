@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/pydio/Makefile 461130 2018-02-07 10:06:07Z bapt $
+# $FreeBSD: head/www/pydio/Makefile 462542 2018-02-21 20:48:59Z tobik $
 
 PORTNAME=	pydio
 PORTVERSION=	8.0.2
@@ -6,7 +6,7 @@ CATEGORIES=	www
 MASTER_SITES=	https://download.pydio.com/pub/core/archives/
 DISTNAME=	${PORTNAME}-core-${PORTVERSION}
 
-MAINTAINER=	net@arrishq.net
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Ajax web file management system
 
 LICENSE=	AGPLv3

@@ -1,9 +1,9 @@
 # Created by: nbm
-# $FreeBSD: head/mail/offlineimap/Makefile 455349 2017-12-02 11:57:58Z misha $
+# $FreeBSD: head/mail/offlineimap/Makefile 462562 2018-02-22 06:28:34Z misha $
 
 PORTNAME=	offlineimap
 DISTVERSIONPREFIX=	v
-DISTVERSION=	7.1.4
+DISTVERSION=	7.1.5
 CATEGORIES=	mail python
 
 MAINTAINER=	mp39590@gmail.com
@@ -22,14 +22,16 @@ OIMAP_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR} \
 BUILD_DEPENDS=	${OIMAP_DEPENDS}
 RUN_DEPENDS=	${OIMAP_DEPENDS}
 
+USES=		python:2.7
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	OfflineIMAP
 
-USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
+NO_ARCH=	yes
 PORTDOCS=	*
 PORTEXAMPLES=	offlineimap.conf offlineimap.conf.minimal
 

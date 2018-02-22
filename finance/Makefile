@@ -1,4 +1,4 @@
-# $FreeBSD: head/finance/Makefile 453767 2017-11-08 21:43:21Z ehaupt $
+# $FreeBSD: head/finance/Makefile 462565 2018-02-22 07:17:40Z yuri $
 #
 
     COMMENT = Monetary, financial, and related applications
@@ -96,6 +96,7 @@
     SUBDIR += py-bitcoin
     SUBDIR += py-python-obelisk
     SUBDIR += py-stripe
+    SUBDIR += py-ta-lib
     SUBDIR += py-vatnumber
     SUBDIR += py-ystockquote
     SUBDIR += qhacc

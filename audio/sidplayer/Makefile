@@ -1,9 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/sidplayer/Makefile 419887 2016-08-08 19:04:59Z ehaupt $
+# $FreeBSD: head/audio/sidplayer/Makefile 462523 2018-02-21 13:44:19Z ehaupt $
 
 PORTNAME=	sidplayer
 PORTVERSION=	4.4
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	audio
 MASTER_SITES=	http://sidplayer.cebix.net/downloads/ \
 		LOCAL/ehaupt

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 462339 2018-02-19 17:43:08Z tz $
+# $FreeBSD: head/www/Makefile 462580 2018-02-22 10:30:57Z romain $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1814,6 +1814,7 @@
     SUBDIR += py-prewikka
     SUBDIR += py-puppetboard
     SUBDIR += py-puppetboard02
+    SUBDIR += py-puppetboard03
     SUBDIR += py-py-restclient
     SUBDIR += py-pySmartDL
     SUBDIR += py-pyjwt

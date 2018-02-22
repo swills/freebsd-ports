@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/chocolate-doom/Makefile 430577 2017-01-04 16:52:10Z tz $
+# $FreeBSD: head/games/chocolate-doom/Makefile 462532 2018-02-21 16:24:53Z antoine $
 
 PORTNAME=	chocolate-doom
 PORTVERSION=	2.3.0
@@ -10,12 +10,12 @@ COMMENT=	Doom/Heretic/Hexen/Strife engine port compatible with the originals
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	python:lang/python
 LIB_DEPENDS=	libpng.so:graphics/png
 
-USES=		gmake
+USES=		gmake python:build
 USE_SDL=	mixer net sdl
 GNU_CONFIGURE=	yes
+BINARY_ALIAS=	python=${PYTHON_CMD}
 
 PORTDOCS=	CMDLINE.doom ChangeLog INSTALL.doom NEWS.md NOT-BUGS.md PHILOSOPHY.md \
 		README.md README.Music.md

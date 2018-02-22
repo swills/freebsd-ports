@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/Makefile 462413 2018-02-20 16:54:30Z antoine $
+# $FreeBSD: head/emulators/Makefile 462530 2018-02-21 16:07:25Z antoine $
 #
 
     COMMENT = Emulators for other operating systems
@@ -108,7 +108,7 @@
     SUBDIR += pcemu
     SUBDIR += pcsxr
     SUBDIR += pearpc
-#    SUBDIR += pipelight
+    SUBDIR += pipelight
     SUBDIR += playonbsd
     SUBDIR += ppsspp
     SUBDIR += ppsspp-qt5

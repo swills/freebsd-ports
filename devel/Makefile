@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 462429 2018-02-20 20:26:09Z sunpoet $
+# $FreeBSD: head/devel/Makefile 462534 2018-02-21 16:54:18Z dvl $
 #
 
     COMMENT = Development utilities
@@ -4503,6 +4503,7 @@
     SUBDIR += py-hypothesis
     SUBDIR += py-icalendar
     SUBDIR += py-ice
+    SUBDIR += py-imgkit
     SUBDIR += py-incremental
     SUBDIR += py-inflect
     SUBDIR += py-iniparse

@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/phantomjs/Makefile 462279 2018-02-19 06:09:45Z linimon $
+# $FreeBSD: head/lang/phantomjs/Makefile 462532 2018-02-21 16:24:53Z antoine $
 
 PORTNAME=	phantomjs
 PORTVERSION=	2.1.1
@@ -15,8 +15,7 @@ BROKEN_sparc64=		does not link on sparc64
 NOT_FOR_ARCHS=		armv6 armv7
 NOT_FOR_ARCHS_REASON=	Platform.h: Not supported ARM architecture
 
-BUILD_DEPENDS=	bash:shells/bash \
-		python:lang/python
+BUILD_DEPENDS=	bash:shells/bash
 LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libicui18n.so:devel/icu \
@@ -34,6 +33,7 @@ GH_TUPLE=	Vitallium:phantomjs-3rdparty-win:19051aa:msvc2013/src/qt/3rdparty \
 RUBY_NO_RUN_DEPENDS=	yes
 PLIST_FILES=	bin/phantomjs
 NO_CCACHE=	yes
+BINARY_ALIAS=	python=${PYTHON_CMD}
 
 OPTIONS_DEFINE=	X11
 X11_USE=	XORG=x11

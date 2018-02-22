@@ -1,8 +1,8 @@
 # Created by: Romain Tartiere <romain@FreeBSD.org>
-# $FreeBSD: head/devel/cutter/Makefile 450373 2017-09-22 13:49:03Z romain $
+# $FreeBSD: head/devel/cutter/Makefile 462478 2018-02-21 08:15:36Z romain $
 
 PORTNAME=	cutter
-PORTVERSION=	1.2.5
+PORTVERSION=	1.2.6
 CATEGORIES=	devel
 MASTER_SITES=	SF
 

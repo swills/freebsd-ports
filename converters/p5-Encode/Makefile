@@ -1,8 +1,8 @@
 # Created by: Rong-En Fan <rafan@infor.org>
-# $FreeBSD: head/converters/p5-Encode/Makefile 461502 2018-02-11 14:37:57Z sunpoet $
+# $FreeBSD: head/converters/p5-Encode/Makefile 462502 2018-02-21 13:38:53Z sunpoet $
 
 PORTNAME=	Encode
-PORTVERSION=	2.96
+PORTVERSION=	2.97
 CATEGORIES=	converters perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DANKOGAI

@@ -1,5 +1,5 @@
 # Created by: Anton Shterenlikht
-# $FreeBSD: head/lang/opencoarrays/Makefile 462341 2018-02-19 18:04:10Z tijl $
+# $FreeBSD: head/lang/opencoarrays/Makefile 462483 2018-02-21 09:49:05Z tijl $
 
 PORTNAME=	opencoarrays
 PORTVERSION=	1.9.3
@@ -42,8 +42,14 @@ OPENMPI2_CONFIGURE_ENV=	MPI_HOME=${LOCALBASE}/mpi/openmpi2
 
 .include <bsd.port.options.mk>
 
-.if ${GCC_DEFAULT:R} < 5
-IGNORE=		requires GCC 5 or higher.  Add DEFAULT_VERSIONS+=gcc=5 to /etc/make.conf
+.if ${GCC_DEFAULT} >= 7
+PLIST_SUB+=	SOVERSION=2
+.elif ${GCC_DEFAULT} == 6
+PLIST_SUB+=	SOVERSION=1
+.elif ${GCC_DEFAULT} == 5
+PLIST_SUB+=	SOVERSION=0
+.else
+IGNORE=		requires GCC 5 or higher
 .endif
 
 post-patch:

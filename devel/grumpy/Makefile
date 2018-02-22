@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/grumpy/Makefile 452086 2017-10-14 19:53:45Z antoine $
+# $FreeBSD: head/devel/grumpy/Makefile 462532 2018-02-21 16:24:53Z antoine $
 
 PORTNAME=	grumpy
 PORTVERSION=	0.0.0.2017020301
@@ -7,14 +7,16 @@ CATEGORIES=	devel
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Python to Go source code transcompiler and runtime
 
-BUILD_DEPENDS=	go:lang/go python:lang/python
+BUILD_DEPENDS=	go:lang/go
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	google
 GH_TAGNAME=	348f038
 
-USES=		gmake python
+USES=		gmake python:2.7 shebangfix
+SHEBANG_FILES=	tools/benchcmp tools/coverparse tools/diffrange tools/grumpc
+BINARY_ALIAS=	python=${PYTHON_CMD}
 
 .include <bsd.port.options.mk>
 

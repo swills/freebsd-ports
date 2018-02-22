@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-Pod-ProjectDocs/Makefile 458770 2018-01-11 18:35:40Z sunpoet $
+# $FreeBSD: head/textproc/p5-Pod-ProjectDocs/Makefile 462514 2018-02-21 13:39:55Z sunpoet $
 
 PORTNAME=	Pod-ProjectDocs
-PORTVERSION=	0.50
+PORTVERSION=	0.51
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

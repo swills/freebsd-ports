@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: head/Mk/Scripts/do-fetch.sh 456460 2017-12-16 08:53:07Z mat $
+# $FreeBSD: head/Mk/Scripts/do-fetch.sh 462544 2018-02-21 21:26:46Z bdrewery $
 #
 # MAINTAINER: portmgr@FreeBSD.org
 
@@ -112,7 +112,11 @@ for _file in "${@}"; do
 			;;
 	esac
 	sites_remaining=0
-	sites="$(${SORTED_MASTER_SITES_CMD_TMP} ${dp_RANDOMIZE_SITES})"
+	if [ -n "${dp_RANDOMIZE_SITES}" ]; then
+		sites="$(${SORTED_MASTER_SITES_CMD_TMP} | ${dp_RANDOMIZE_SITES})"
+	else
+		sites="$(${SORTED_MASTER_SITES_CMD_TMP})"
+	fi
 	for site in ${sites}; do
 		sites_remaining=$((sites_remaining + 1))
 	done

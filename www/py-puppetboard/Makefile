@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-puppetboard/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-puppetboard/Makefile 462580 2018-02-22 10:30:57Z romain $
 
 PORTNAME=	puppetboard
 PORTVERSION=	0.0.4
@@ -18,7 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.10.1:www/py-flask@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pypuppetdb>=0.1.1:databases/py-pypuppetdb@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests>=2.2.1:www/py-requests@${FLAVOR}
 
-CONFLICTS_INSTALL=puppetboard02-*
+CONFLICTS_INSTALL=puppetboard02-* puppetboard03-*
 USE_GITHUB=	yes
 GH_ACCOUNT=	voxpupuli
 

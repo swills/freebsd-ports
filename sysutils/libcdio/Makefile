@@ -1,12 +1,12 @@
 # Created by: arved
-# $FreeBSD: head/sysutils/libcdio/Makefile 431853 2017-01-19 07:13:10Z jhale $
+# $FreeBSD: head/sysutils/libcdio/Makefile 462576 2018-02-22 09:47:20Z jhale $
 
 PORTNAME=	libcdio
 PORTVERSION=	0.94
 CATEGORIES=	sysutils
 MASTER_SITES=	GNU
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	jhale@FreeBSD.org
 COMMENT=	Compact Disc Input and Control Library
 
 LICENSE=	GPLv3+

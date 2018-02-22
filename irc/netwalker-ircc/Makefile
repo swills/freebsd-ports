@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/irc/netwalker-ircc/Makefile 408142 2016-02-05 09:30:08Z marino $
+# $FreeBSD: head/irc/netwalker-ircc/Makefile 462484 2018-02-21 10:05:11Z ehaupt $
 
 PORTNAME=	netwalker-ircc
 PORTVERSION=	0.5.0
@@ -14,6 +14,13 @@ LICENSE=	GPLv2
 USES=		ncurses tar:tgz
 
 LDFLAGS+=	-lncurses -lpthread
+
+.include <bsd.port.pre.mk>
+
+# does not compile with clang 6.0.0
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200056
+USE_GCC=	yes
+.endif
 
 post-patch:
 	@${SED} -e "s|%%PREFIX%%|${PREFIX}|g" \
@@ -32,4 +39,4 @@ do-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}
 	${INSTALL_DATA} ${WRKSRC}/help/* ${STAGEDIR}${PREFIX}/share/netwalker-ircc
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

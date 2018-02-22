@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/crystal/Makefile 462317 2018-02-19 13:23:46Z lwhsu $
+# $FreeBSD: head/lang/crystal/Makefile 462473 2018-02-21 03:41:33Z lwhsu $
 
 PORTNAME=		crystal
 DISTVERSIONPREFIX=	v
@@ -45,7 +45,7 @@ OPTIONS_SUB=		yes
 .include <bsd.port.options.mk>
 
 .if ${OSVERSION} >= 1200000
-BOOTSTRAP_PATH=	crystal-0.24.1-freebsd12.0
+BOOTSTRAP_PATH=	crystal-0.24.1-freebsd12.0-1
 .else
 BOOTSTRAP_PATH=	crystal-0.24.1-freebsd11.1
 .endif

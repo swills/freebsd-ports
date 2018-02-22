@@ -1,8 +1,8 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Getopt-Long-Descriptive/Makefile 459664 2018-01-22 15:46:52Z sunpoet $
+# $FreeBSD: head/devel/p5-Getopt-Long-Descriptive/Makefile 462493 2018-02-21 11:34:18Z wen $
 
 PORTNAME=	Getopt-Long-Descriptive
-PORTVERSION=	0.101
+PORTVERSION=	0.102
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:RJBS
