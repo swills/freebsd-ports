@@ -15,7 +15,6 @@ COMMENT=	GitLab Shell handles git commands for GitLab
 BUILD_DEPENDS=	gem:devel/ruby-gems \
 		go>=1.5.3:lang/go
 
-NO_BUILD=	yes
 USERS=		git
 GROUPS=		git
 
@@ -25,11 +24,12 @@ post-extract:
 post-patch:
 	${MV} ${WRKSRC}/config.yml.example ${WRKSRC}/config.yml.sample
 
+do-build:
+	export GOCACHE=${WRKSRC}/go && ${WRKSRC}/bin/compile
+
 pre-install:
-	${WRKSRC}/bin/compile
 	${RM} -rf ${WRKSRC}/go
 	${RM} -rf ${WRKSRC}/go_build
-	${RM} -rf /root/.cache
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}
