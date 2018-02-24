@@ -1,16 +1,14 @@
---- Gemfile.orig	2018-02-22 10:46:29 UTC
+--- Gemfile.orig	2018-02-22 19:51:20 UTC
 +++ Gemfile
-@@ -12,8 +12,8 @@ gem 'sprockets', '~> 3.7.0'
+@@ -12,7 +12,7 @@ gem 'sprockets', '~> 3.7.0'
  gem 'default_value_for', '~> 3.0.0'
  
  # Supported DBs
 -gem 'mysql2', '~> 0.4.10', group: :mysql
--gem 'pg', '~> 0.18.2', group: :postgres
 +gem 'mysql2', '>= 0.4.10', group: :mysql
-+gem 'pg', '>= 0.18.2', group: :postgres
+ gem 'pg', '~> 0.18.2', group: :postgres
  
  gem 'rugged', '~> 0.26.0'
- gem 'grape-route-helpers', '~> 2.1.0'
 @@ -113,7 +113,7 @@ gem 'fog-rackspace', '~> 0.1.1'
  gem 'fog-aliyun', '~> 0.2.0'
  
