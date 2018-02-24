@@ -26,7 +26,7 @@ BUILD_DEPENDS=	gem:devel/ruby-gems
 # for the options
 RUN_DEPENDS=	git>=2.14.3:devel/git \
 	gitlab-shell>=6.0.3:devel/gitlab-shell\
-	gitlab-workhorse>=3.3.1:www/gitlab-workhorse \
+	gitlab-workhorse>=3.6.0:www/gitlab-workhorse \
 	redis>=2.8.23:databases/redis \
 	npm>=4.3.0:www/npm \
 	yarn>=0.17.0:www/yarn \
