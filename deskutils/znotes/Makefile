@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/deskutils/znotes/Makefile 395442 2015-08-27 19:21:36Z vg $
+# $FreeBSD: head/deskutils/znotes/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	znotes
 PORTVERSION=	0.4.5
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	deskutils
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}/
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple notes managment application based on Qt 4
 
 LICENSE=	GPLv3

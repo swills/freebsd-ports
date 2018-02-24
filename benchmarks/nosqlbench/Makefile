@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/benchmarks/nosqlbench/Makefile 456060 2017-12-11 18:32:51Z amdmi3 $
+# $FreeBSD: head/benchmarks/nosqlbench/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	nosqlbench
 PORTVERSION=	0.0.${DATE}
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	benchmarks databases
 MASTER_SITES=	LOCAL/vg
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Micro-benchmarking NoSQL storage
 
 LICENSE=	BSD2CLAUSE

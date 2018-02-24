@@ -1,11 +1,11 @@
 # Created by: olevole@olevole.ru
-# $FreeBSD: head/databases/tile38/Makefile 459672 2018-01-22 16:17:23Z rm $
+# $FreeBSD: head/databases/tile38/Makefile 462614 2018-02-22 16:44:08Z pi $
 
 PORTNAME=	tile38
 PORTVERSION=	1.10.1
 CATEGORIES=	databases
 
-MAINTAINER=	olevole@olevole.ru
+MAINTAINER=	a.andersson.thn@gmail.com
 COMMENT=	In-memory geolocation data store, spatial index, and realtime geofence
 
 LICENSE=	MIT

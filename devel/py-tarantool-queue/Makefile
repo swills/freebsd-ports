@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/py-tarantool-queue/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-tarantool-queue/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	tarantool-queue
 PORTVERSION=	0.1.0
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	python@FreeBSD.org
 COMMENT=	Python bindings for Tarantool queue
 
 LICENSE=	MIT

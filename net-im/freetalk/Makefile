@@ -1,5 +1,5 @@
 # Created by: Oleg Ginzburg  (olevole@olevole.ru)
-# $FreeBSD: head/net-im/freetalk/Makefile 458427 2018-01-08 15:20:57Z cpm $
+# $FreeBSD: head/net-im/freetalk/Makefile 462587 2018-02-22 12:53:13Z tobik $
 
 PORTNAME=	freetalk
 PORTVERSION=	4.1
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=	v
 PORTREVISION=	2
 CATEGORIES=	net-im
 
-MAINTAINER=	olevole@olevole.ru
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GNU console based Jabber client
 
 LICENSE=	GPLv3+

@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/py-palm/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/devel/py-palm/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	palm
 PORTVERSION=	0.1.7
@@ -8,7 +8,7 @@ CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	python@FreeBSD.org
 COMMENT=	Fast Protocol Buffer library for Python
 
 LICENSE=	BSD2CLAUSE

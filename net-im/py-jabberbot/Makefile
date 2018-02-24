@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/net-im/py-jabberbot/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/net-im/py-jabberbot/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	jabberbot
 PORTVERSION=	0.16
@@ -8,7 +8,7 @@ CATEGORIES=	net-im python
 MASTER_SITES=	SF/pythonjabberbot/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple Jabber Bot for Python
 
 LICENSE=	GPLv3

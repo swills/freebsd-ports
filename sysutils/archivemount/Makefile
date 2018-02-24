@@ -1,17 +1,19 @@
 # Created by: Evgeny Zhirnov <jirnov@gmail.com>
-# $FreeBSD: head/sysutils/archivemount/Makefile 392537 2015-07-19 22:04:44Z bapt $
+# $FreeBSD: head/sysutils/archivemount/Makefile 462659 2018-02-23 02:25:01Z yuri $
 
 PORTNAME=	archivemount
-PORTVERSION=	0.6.1
-PORTREVISION=	1
+DISTVERSION=	0.8.1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.cybernoia.de/software/archivemount/
 
 MAINTAINER=	jirnov@gmail.com
 COMMENT=	Mount archives with FUSE
 
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+USES=		fuse gmake iconv libarchive pkgconfig
 GNU_CONFIGURE=	yes
-USES=		fuse pkgconfig iconv gmake libarchive
 
 PLIST_FILES=	bin/archivemount \
 		man/man1/archivemount.1.gz

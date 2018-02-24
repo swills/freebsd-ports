@@ -1,12 +1,12 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/sysutils/hfsexplorer/Makefile 434884 2017-02-26 14:27:21Z gerald $
+# $FreeBSD: head/sysutils/hfsexplorer/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	hfsexplorer
 PORTVERSION=	0.23
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	sysutils java
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	HFSExplorer read Mac-formatted harddisks and disk images
 
 LICENSE=	GPLv3

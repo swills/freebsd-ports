@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/glpi-plugins-fusioninventory-server/Makefile 430518 2017-01-03 20:06:40Z rene $
+# $FreeBSD: head/net-mgmt/glpi-plugins-fusioninventory-server/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	server
 PORTVERSION=	${GLPI_VER}.${FUNV_VER}
@@ -7,7 +7,7 @@ PORTEPOCH=	1
 CATEGORIES=	net-mgmt
 PKGNAMEPREFIX=	glpi-plugins-fusioninventory-
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Plugin of glpi to get information of networking devices
 
 LICENSE=	AGPLv3

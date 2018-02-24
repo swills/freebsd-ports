@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/www/mongrel2/Makefile 456089 2017-12-12 03:02:52Z linimon $
+# $FreeBSD: head/www/mongrel2/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	mongrel2
 PORTVERSION=	1.7.5
@@ -7,7 +7,7 @@ PORTREVISION=	3
 CATEGORIES=	www
 MASTER_SITES=	http://mongrel2.org/static/downloads/
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Is an application, language, and network arch
 
 LICENSE=	BSD3CLAUSE

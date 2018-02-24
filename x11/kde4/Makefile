@@ -1,9 +1,9 @@
 # Created by: Will Andrews <will@FreeBSD.org>
-# $FreeBSD: head/x11/kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/x11/kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
 
 PORTNAME=	kde
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11 kde
 
 MAINTAINER=	kde@FreeBSD.org
@@ -48,7 +48,7 @@ KDEPIM_DESC=		Personal information management
 KDEPIM_RUN_DEPENDS=	${KDE_PREFIX}/bin/kmail:deskutils/kdepim-kde4
 
 KDEPLASMA_DESC=		Extra plasmoids and plugins for Plasma
-KDEPLASMA_RUN_DEPENDS=	${KDE_PREFIX}/bin/lancelot:deskutils/kdeplasma-addons
+KDEPLASMA_RUN_DEPENDS=	${KDE_PREFIX}/bin/lancelot:deskutils/kdeplasma-addons-kde4
 
 KDESDK_DESC=		Software development kit
 KDESDK_RUN_DEPENDS=	kdesdk-kde4>=${KDE4_VERSION}:devel/kdesdk-kde4

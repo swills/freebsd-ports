@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/databases/tarantool/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/databases/tarantool/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	tarantool
 PORTVERSION=	1.7.4.260
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	databases
 MASTER_SITES=	http://download.tarantool.org/tarantool/1.7/src/
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	NoSQL database running in a Lua application server
 
 LICENSE=	BSD2CLAUSE

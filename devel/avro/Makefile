@@ -1,11 +1,11 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/avro/Makefile 417487 2016-06-25 20:29:04Z gnn $
+# $FreeBSD: head/devel/avro/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	avro
 PORTVERSION=	1.8.1
 CATEGORIES=	devel
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Data serialization system
 
 LICENSE=	APACHE20

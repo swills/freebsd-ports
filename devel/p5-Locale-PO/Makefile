@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Locale-PO/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Locale-PO/Makefile 462658 2018-02-23 01:33:00Z tabthorpe $
 
 PORTNAME=	Locale-PO
 PORTVERSION=	0.27
@@ -7,7 +7,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tabthorpe@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for manipulating .po entries from GNU gettext
 
 LICENSE=	ART10 GPLv1+

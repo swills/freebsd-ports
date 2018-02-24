@@ -1,12 +1,12 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/net-im/vacuum-im/Makefile 437988 2017-04-08 09:02:11Z amdmi3 $
+# $FreeBSD: head/net-im/vacuum-im/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	vacuum
 PORTVERSION=	1.2.5
 CATEGORIES=	net-im
 PKGNAMESUFFIX=	-im
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Crossplatform Jabber client
 
 LICENSE=	GPLv3

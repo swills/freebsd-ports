@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/percona-toolkit/Makefile 456483 2017-12-16 19:47:56Z flo $
+# $FreeBSD: head/databases/percona-toolkit/Makefile 462589 2018-02-22 14:06:51Z amdmi3 $
 
 PORTNAME=	percona-toolkit
 PORTVERSION=	3.0.5
@@ -18,5 +18,6 @@ RUN_DEPENDS=	bash:shells/bash \
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

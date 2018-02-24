@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-clocks/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/x11-clocks/Makefile 462619 2018-02-22 19:03:17Z tcberner $
 #
 
     COMMENT = X11 clocks
@@ -6,7 +6,7 @@
     SUBDIR += abclock
     SUBDIR += aclock
     SUBDIR += alltraxclock
-    SUBDIR += amor
+    SUBDIR += amor-kde4
     SUBDIR += asclock
     SUBDIR += asclock-gtk
     SUBDIR += asclock-xlib
@@ -23,9 +23,9 @@
     SUBDIR += gtubeclock
     SUBDIR += intclock
     SUBDIR += kdetoys-kde4
-    SUBDIR += kteatime
-    SUBDIR += ktimer
-    SUBDIR += ktux
+    SUBDIR += kteatime-kde4
+    SUBDIR += ktimer-kde4
+    SUBDIR += ktux-kde4
     SUBDIR += lmclock
     SUBDIR += mlclock
     SUBDIR += mouseclock

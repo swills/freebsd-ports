@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/libxs/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/devel/libxs/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	libxs
 PORTVERSION=	1.2.0
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=	v
 PORTREVISION=	6
 CATEGORIES=	devel
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Open source lightweight messaging layer
 
 LICENSE=	GPLv3

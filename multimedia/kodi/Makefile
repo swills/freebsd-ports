@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/kodi/Makefile 462195 2018-02-17 21:45:29Z yuri $
+# $FreeBSD: head/multimedia/kodi/Makefile 462678 2018-02-23 08:31:34Z yuri $
 
 PORTNAME=	kodi
 DISTVERSION=	17.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia java
 
 MAINTAINER=	mickael.maillot@gmail.com
@@ -111,7 +111,7 @@ SFTP_DESC=	SSH SFTP support via libssh
 RPI1_DESC=	build for RPI1-B (cpu=arm1176jzf-s)
 RPI2_DESC=	build for RPI2 (cpu=cortex-a7, neon enabled)
 
-OPTIONS_DEFAULT=	AIRPLAY AIRTUNES AVAHI CEC LIBBLURAY LIRC \
+OPTIONS_DEFAULT=	AIRPLAY AIRTUNES AVAHI CEC LIRC \
 		MYSQL NFS RTMP SFTP SMB VAAPI VDPAU WEBSERVER
 OPTIONS_DEFAULT_armv6=	RPI1
 OPTIONS_DEFAULT_armv7=	RPI1

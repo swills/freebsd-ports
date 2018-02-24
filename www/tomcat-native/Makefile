@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/www/tomcat-native/Makefile 450237 2017-09-21 07:29:53Z ale $
+# $FreeBSD: head/www/tomcat-native/Makefile 462695 2018-02-23 13:11:27Z ale $
 
 PORTNAME=	tomcat-native
-PORTVERSION=	1.2.14
+PORTVERSION=	1.2.16
 CATEGORIES=	www java
 MASTER_SITES=	APACHE/tomcat/tomcat-connectors/native/${PORTVERSION}/source
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
@@ -28,10 +28,10 @@ CONFIGURE_ARGS=	--with-apr=${LOCALBASE} \
 PLIST_FILES=	lib/libtcnative-1.a \
 		lib/libtcnative-1.so \
 		lib/libtcnative-1.so.0 \
-		lib/libtcnative-1.so.0.2.14
+		lib/libtcnative-1.so.0.2.16
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libtcnative-1.so.0.2.14
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libtcnative-1.so.0.2.16
 
 .include <bsd.port.pre.mk>
 

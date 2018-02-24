@@ -1,9 +1,9 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/postgresql-plproxy/Makefile 440009 2017-05-03 12:16:49Z mat $
+# $FreeBSD: head/databases/postgresql-plproxy/Makefile 462585 2018-02-22 12:19:27Z tz $
 
 PORTNAME=	plproxy
 DISTVERSIONPREFIX=	${PORTNAME}_
-DISTVERSION=	2_7
+DISTVERSION=	2_8
 CATEGORIES=	databases
 PKGNAMEPREFIX=	postgresql-
 

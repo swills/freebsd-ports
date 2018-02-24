@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 461879 2018-02-15 11:15:33Z jhale $
+# $FreeBSD: head/audio/Makefile 462619 2018-02-22 19:03:17Z tcberner $
 #
 
     COMMENT = Audio tools
@@ -354,7 +354,7 @@
     SUBDIR += jid3lib
     SUBDIR += jmusic
     SUBDIR += jokosher
-    SUBDIR += juk
+    SUBDIR += juk-kde4
     SUBDIR += juke
     SUBDIR += julius
     SUBDIR += jxm
@@ -363,9 +363,9 @@
     SUBDIR += kid3-kde4
     SUBDIR += kid3-qt4
     SUBDIR += kid3-qt5
-    SUBDIR += kio-audiocd
-    SUBDIR += kmix
-    SUBDIR += kscd
+    SUBDIR += kio-audiocd-kde4
+    SUBDIR += kmix-kde4
+    SUBDIR += kscd-kde4
     SUBDIR += ksmp3play
     SUBDIR += kstreamripper
     SUBDIR += ladspa
@@ -402,8 +402,8 @@
     SUBDIR += libgpod-sharp
     SUBDIR += libgroove
     SUBDIR += libid3tag
-    SUBDIR += libkcddb
-    SUBDIR += libkcompactdisc
+    SUBDIR += libkcddb-kde4
+    SUBDIR += libkcompactdisc-kde4
     SUBDIR += liblastfm
     SUBDIR += liblo
     SUBDIR += liblscp

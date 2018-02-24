@@ -1,8 +1,8 @@
 # Created by: Thierry Thomas (<thierry@pompo.net>)
-# $FreeBSD: head/net/pear-Net_Sieve/Makefile 442214 2017-05-31 15:08:02Z joneum $
+# $FreeBSD: head/net/pear-Net_Sieve/Makefile 462742 2018-02-23 20:12:51Z joneum $
 
 PORTNAME=	Net_Sieve
-PORTVERSION=	1.4.1
+DISTVERSION=	1.4.2
 CATEGORIES=	net www pear
 
 MAINTAINER=	joneum@FreeBSD.org

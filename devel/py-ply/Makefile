@@ -1,9 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/py-ply/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-ply/Makefile 462701 2018-02-23 14:50:20Z dbaio $
 
 PORTNAME=	ply
-PORTVERSION=	3.10
-PORTREVISION=	1
+PORTVERSION=	3.11
 CATEGORIES=	devel python
 MASTER_SITES=	http://www.dabeaz.com/ply/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -36,6 +35,9 @@ post-install-DOCS-on:
 
 post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
-	${CP} -R ${WRKSRC}/example/ ${STAGEDIR}${EXAMPLESDIR}
+	cd ${WRKSRC}/example && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR}
+
+do-test:
+	@cd ${WRKSRC}/test && ${PYTHON_CMD} testlex.py && ${PYTHON_CMD} testyacc.py
 
 .include <bsd.port.mk>

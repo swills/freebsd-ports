@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/x11/leechcraft/Makefile 462214 2018-02-18 09:55:10Z rakuco $
+# $FreeBSD: head/x11/leechcraft/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	leechcraft
 PORTVERSION=	0.6.70
@@ -7,7 +7,7 @@ PORTREVISION=	27
 CATEGORIES=	x11
 MASTER_SITES=	http://dist.leechcraft.org/LeechCraft/0.6.70/
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Cross-platform modular live environment
 
 LICENSE=	BSL

@@ -1,12 +1,12 @@
 # Created by: Michael Kohn <mike@mikekohn.net>
-# $FreeBSD: head/net/nakenchat/Makefile 424875 2016-10-28 17:55:30Z danfe $
+# $FreeBSD: head/net/nakenchat/Makefile 462665 2018-02-23 03:05:56Z yuri $
 
 PORTNAME=	nakenchat
 PORTVERSION=	2.22
 CATEGORIES=	net
 MASTER_SITES=	http://downloads.mikekohn.net/nakenchat/
 
-MAINTAINER=	olevole@olevole.ru
+MAINTAINER=	neel@neelc.org
 COMMENT=	Small (under 50k) chat server with many features
 
 LICENSE=	GPLv2

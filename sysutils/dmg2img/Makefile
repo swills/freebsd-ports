@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/sysutils/dmg2img/Makefile 433632 2017-02-08 06:36:26Z vg $
+# $FreeBSD: head/sysutils/dmg2img/Makefile 462732 2018-02-23 19:25:19Z sunpoet $
 
 PORTNAME=	dmg2img
 PORTVERSION=	1.6.6
@@ -8,7 +8,7 @@ MASTER_SITES=	http://vu1tur.eu.org/tools/
 
 LICENSE=	GPLv2
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	DMG2IMG convert tool
 
 USES=		ssl

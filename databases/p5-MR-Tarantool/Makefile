@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/databases/p5-MR-Tarantool/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-MR-Tarantool/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	MR-Tarantool
 PORTVERSION=	0.0.24
@@ -8,7 +8,7 @@ CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Driver for an efficient Tarantool/Box NoSQL in-memory storage
 
 BUILD_DEPENDS=	p5-AnyEvent>=7.04:devel/p5-AnyEvent \

@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/net/toonel/Makefile 359043 2014-06-24 06:45:22Z vanilla $
+# $FreeBSD: head/net/toonel/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	toonel
 PORTVERSION=	0.0.50.50
@@ -9,7 +9,7 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.jar
 EXTRACT_ONLY=	# empty
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tunneling with data compression
 
 NO_BUILD=	yes

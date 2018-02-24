@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-p2p/go-ethereum/Makefile 461949 2018-02-15 21:04:19Z zeising $
+# $FreeBSD: head/net-p2p/go-ethereum/Makefile 462707 2018-02-23 17:04:05Z jrm $
 
 PORTNAME=	go-ethereum
-PORTVERSION=	1.8.0
+PORTVERSION=	1.8.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-p2p
 
@@ -16,7 +16,7 @@ BUILD_DEPENDS=	go>=1.9.2:lang/go
 USE_GITHUB=	yes
 GH_ACCOUNT=	ethereum
 
-OPTIONS_DEFINE= DEVTOOLS
+OPTIONS_DEFINE=	DEVTOOLS
 OPTIONS_SUB=	yes
 
 DEVTOOLS_DESC=	Developer tools

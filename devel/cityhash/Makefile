@@ -1,12 +1,12 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/cityhash/Makefile 435456 2017-03-05 08:13:28Z mat $
+# $FreeBSD: head/devel/cityhash/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	cityhash
 PORTVERSION=	1.1.1
 PORTREVISION=	1
 CATEGORIES=	devel
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Family of hash functions
 
 LICENSE=	MIT

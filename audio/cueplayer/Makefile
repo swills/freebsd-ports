@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/audio/cueplayer/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/audio/cueplayer/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	cueplayer
 PORTVERSION=	0.28
@@ -7,7 +7,7 @@ PORTREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-src
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	CUE player
 
 LICENSE=	GPLv3

@@ -1,12 +1,12 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/security/ckpass/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/ckpass/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	ckpass
 PORTVERSION=	0.2
 CATEGORIES=	security
 MASTER_SITES=	SF/${PORTNAME}
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Ncurses based password database client
 
 LICENSE=	GPLv3

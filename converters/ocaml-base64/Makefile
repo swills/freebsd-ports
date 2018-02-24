@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/converters/ocaml-base64/Makefile 403255 2015-12-08 09:05:15Z mat $
+# $FreeBSD: head/converters/ocaml-base64/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	base64
 PORTVERSION=	2.0.0
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	converters
 PKGNAMEPREFIX=	ocaml-
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Base64 encoding and decoding in OCaml
 
 USE_GITHUB=	yes

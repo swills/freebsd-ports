@@ -1,11 +1,11 @@
-# $FreeBSD: head/sysutils/fusefs-zip/Makefile 458542 2018-01-09 15:59:35Z novel $
+# $FreeBSD: head/sysutils/fusefs-zip/Makefile 462587 2018-02-22 12:53:13Z tobik $
 
 PORTNAME=	fuse-zip
 PORTVERSION=	0.4.4
 CATEGORIES=	sysutils
 MASTER_SITES=	https://bitbucket.org/agalanin/fuse-zip/downloads/
 
-MAINTAINER=	olevole@olevole.ru
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	FUSE filesystem to mount ZIP archives with write support
 
 LICENSE=	LGPL3

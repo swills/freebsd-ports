@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/converters/ocaml-jsonm/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/converters/ocaml-jsonm/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	jsonm
 PORTVERSION=	0.9.1
@@ -7,7 +7,7 @@ CATEGORIES=	converters
 MASTER_SITES=	http://erratique.ch/software/jsonm/releases/
 PKGNAMEPREFIX=	ocaml-
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Non-blocking streaming JSON codec for OCaml
 
 LICENSE=	BSD3CLAUSE

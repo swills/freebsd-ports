@@ -1,12 +1,12 @@
 # Created by: Oleg Ginzburg <olevole@olevole.ru>
-# $FreeBSD: head/sysutils/ioping/Makefile 430235 2017-01-01 03:45:12Z sunpoet $
+# $FreeBSD: head/sysutils/ioping/Makefile 462666 2018-02-23 03:09:50Z yuri $
 
 PORTNAME=	ioping
 PORTVERSION=	1.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
-MAINTAINER=	olevole@olevole.ru
+MAINTAINER=	neel@neelc.org
 COMMENT=	Simple disk I/0 latency measuring tool
 
 LICENSE=	GPLv3+

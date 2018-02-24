@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 461859 2018-02-15 06:56:11Z truckman $
+# $FreeBSD: head/dns/Makefile 462598 2018-02-22 14:29:57Z mat $
 #
 
     COMMENT = Domain Name Service tools
@@ -174,6 +174,7 @@
     SUBDIR += powerdns-recursor
     SUBDIR += powerdns-recursor40
     SUBDIR += public_suffix_list
+    SUBDIR += py-cloudflare
     SUBDIR += py-dns
     SUBDIR += py-dns-lexicon
     SUBDIR += py-dnschain

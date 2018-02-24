@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/x11/xwinwrap/Makefile 363399 2014-07-29 21:43:17Z adamw $
+# $FreeBSD: head/x11/xwinwrap/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	xwinwrap
 PORTVERSION=	0.3
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	LOCAL/vg
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	XWinWrap replace a desktop background with a movie or screensaver
 
 WRKSRC=		${WRKDIR}/${PORTNAME}

@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/graphics/zint/Makefile 415450 2016-05-18 14:00:04Z amdmi3 $
+# $FreeBSD: head/graphics/zint/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	zint
 PORTVERSION=	2.4.3
@@ -7,7 +7,7 @@ PORTREVISION=	4
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Zint Barcode Generator
 
 LICENSE=	GPLv3+

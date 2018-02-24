@@ -1,9 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/fossology-nomos-standalone/Makefile 446313 2017-07-21 13:13:34Z amdmi3 $
+# $FreeBSD: head/devel/fossology-nomos-standalone/Makefile 462588 2018-02-22 13:42:20Z amdmi3 $
 
 PORTNAME=	fossology
-PORTVERSION=	3.1.0
-PORTREVISION=	1
+PORTVERSION=	3.2.0
 CATEGORIES=	devel
 PKGNAMESUFFIX=	-nomos-standalone
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/py-openlp/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/multimedia/py-openlp/Makefile 462658 2018-02-23 01:33:00Z tabthorpe $
 
 PORTNAME=	OpenLP
 PORTVERSION=	2.1.6
@@ -7,7 +7,7 @@ CATEGORIES=	multimedia python
 MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME:tl}/${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	tabthorpe@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Open Source Lyrics Projection
 
 LICENSE=	GPLv2

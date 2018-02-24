@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/skanlite/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/graphics/skanlite/Makefile 462619 2018-02-22 19:03:17Z tcberner $
 
 PORTNAME=	skanlite
 PORTVERSION=	1.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src
 DIST_SUBDIR=	KDE/extragear
@@ -10,7 +10,7 @@ DIST_SUBDIR=	KDE/extragear
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Simple image scanning application for KDE
 
-LIB_DEPENDS=	libksane.so:graphics/libksane
+LIB_DEPENDS=	libksane.so:graphics/libksane-kde4
 
 USES=		cmake:outsource gettext kde:4 tar:xz
 USE_KDE=	kdelibs automoc4

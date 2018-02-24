@@ -1,9 +1,9 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/elasticsearch5/Makefile 461559 2018-02-12 06:49:48Z pi $
+# $FreeBSD: head/textproc/elasticsearch5/Makefile 462650 2018-02-22 23:03:41Z feld $
 
 PORTNAME=	elasticsearch
 PORTVERSION=	5.3.0
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	textproc java devel
 MASTER_SITES=	https://artifacts.elastic.co/downloads/${PORTNAME}/ \
 		http://mirrors.rit.edu/zi/
@@ -51,7 +51,8 @@ ELASTIC_LOGDIR=	/var/log/elasticsearch
 
 SUB_LIST=	SEARCHUSER=${SEARCHUSER} \
 		SEARCHGROUP=${SEARCHGROUP} \
-		PORTVERSION=${PORTVERSION}
+		PORTVERSION=${PORTVERSION} \
+		JAVA=${JAVA}
 SUB_FILES=	pkg-message
 PLIST_SUB+=	SEARCHUSER=${SEARCHUSER} \
 		SEARCHGROUP=${SEARCHGROUP} \

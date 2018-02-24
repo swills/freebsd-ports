@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/multimedia/qt4-mobility/Makefile 462216 2018-02-18 10:06:56Z rakuco $
+# $FreeBSD: head/multimedia/qt4-mobility/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	mobility
 PORTVERSION=	1.2.2
@@ -10,7 +10,7 @@ MASTER_SITES=	http://dev.gentoo.org/~pesa/distfiles/ \
 PKGNAMEPREFIX=	qt4-
 DISTNAME=	qt-${PORTNAME}-${PORTVERSION}_p${DATE}
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt APIs for mobile devices and desktop platforms
 
 LICENSE=	LGPL21

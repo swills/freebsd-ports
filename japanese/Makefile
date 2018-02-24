@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/japanese/Makefile 462619 2018-02-22 19:03:17Z tcberner $
 #
 
     COMMENT = Japanese support
@@ -141,7 +141,7 @@
     SUBDIR += kde4-l10n
     SUBDIR += kdrill
     SUBDIR += kinput2
-    SUBDIR += kiten
+    SUBDIR += kiten-kde4
     SUBDIR += kon2-14dot
     SUBDIR += kon2-16dot
     SUBDIR += kpcal

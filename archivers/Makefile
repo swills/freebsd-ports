@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/Makefile 461612 2018-02-12 19:03:13Z sunpoet $
+# $FreeBSD: head/archivers/Makefile 462619 2018-02-22 19:03:17Z tcberner $
 #
 
     COMMENT = Archivers
@@ -8,7 +8,7 @@
     SUBDIR += amigadepacker
     SUBDIR += arc
     SUBDIR += arj
-    SUBDIR += ark
+    SUBDIR += ark-kde4
     SUBDIR += atool
     SUBDIR += bicom
     SUBDIR += brotli

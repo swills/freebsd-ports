@@ -1,12 +1,12 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/audio/lastfm-desktop/Makefile 460712 2018-02-02 16:15:58Z amdmi3 $
+# $FreeBSD: head/audio/lastfm-desktop/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	lastfm-desktop
 PORTVERSION=	2.1.36
 PORTREVISION=	5
 CATEGORIES=	audio
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Official Last.fm desktop application suite
 
 LICENSE=	GPLv3+

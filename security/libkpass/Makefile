@@ -1,11 +1,11 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/security/libkpass/Makefile 423995 2016-10-15 00:36:39Z woodsb02 $
+# $FreeBSD: head/security/libkpass/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	libkpass
 PORTVERSION=	6
 CATEGORIES=	security
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Library for a reading/writing KeePass 1.x DB
 
 LICENSE=	GPLv3

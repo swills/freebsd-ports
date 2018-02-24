@@ -1,8 +1,8 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/devel/p5-DateTime-Format-Flexible/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-DateTime-Format-Flexible/Makefile 462623 2018-02-22 19:50:17Z sunpoet $
 
 PORTNAME=	DateTime-Format-Flexible
-PORTVERSION=	0.28
+PORTVERSION=	0.29
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

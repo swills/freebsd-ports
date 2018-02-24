@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/multimedia/mediadownloader/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/multimedia/mediadownloader/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	mediadownloader
 PORTVERSION=	1.5.2
@@ -8,7 +8,7 @@ CATEGORIES=	multimedia www
 MASTER_SITES=	SF/googleimagedown/project/${PORTVERSION}/
 DISTNAME=	${PORTNAME}_${PORTVERSION}-src
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Search, watch, and download from Google Image and YouTube
 
 LICENSE=	GPLv3

@@ -1,12 +1,12 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/qross/Makefile 461081 2018-02-06 18:07:33Z amdmi3 $
+# $FreeBSD: head/devel/qross/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	qross
 PORTVERSION=	0.3.1
 PORTREVISION=	3
 CATEGORIES=	devel
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Qt-only fork of Kross, the KDE scripting framework
 
 LICENSE=	LGPL20+

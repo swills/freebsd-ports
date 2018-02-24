@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/avro-c/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/devel/avro-c/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	avro
 PORTVERSION=	1.8.1
@@ -9,7 +9,7 @@ MASTER_SITES=	APACHE/${PORTNAME}/stable
 PKGNAMESUFFIX=	-c
 DISTNAME=	${PORTNAME}-src-${PORTVERSION}
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Data serialization system for ANSI C
 
 LIB_DEPENDS=	libjansson.so:devel/jansson \

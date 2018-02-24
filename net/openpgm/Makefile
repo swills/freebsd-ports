@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/net/openpgm/Makefile 445637 2017-07-13 08:20:35Z eugen $
+# $FreeBSD: head/net/openpgm/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	openpgm
 DISTVERSIONPREFIX=	release-
@@ -7,7 +7,7 @@ DISTVERSION=	5-2-122
 PORTREVISION=	3
 CATEGORIES=	net devel
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Implementation of the PGM reliable multicast protocol
 
 LICENSE=	LGPL21+

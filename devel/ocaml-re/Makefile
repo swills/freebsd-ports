@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/ocaml-re/Makefile 403255 2015-12-08 09:05:15Z mat $
+# $FreeBSD: head/devel/ocaml-re/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	re
 PORTVERSION=	1.4.1
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=	${PKGNAMEPREFIX}${PORTNAME}-
 CATEGORIES=	devel
 PKGNAMEPREFIX=	ocaml-
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Pure OCaml regular expressions
 
 LICENSE=	LGPL21

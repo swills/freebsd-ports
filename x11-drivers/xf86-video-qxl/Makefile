@@ -1,10 +1,10 @@
-# $FreeBSD: head/x11-drivers/xf86-video-qxl/Makefile 459199 2018-01-16 17:47:09Z novel $
+# $FreeBSD: head/x11-drivers/xf86-video-qxl/Makefile 462587 2018-02-22 12:53:13Z tobik $
 
 PORTNAME=	xf86-video-qxl
 DISTVERSION=	0.1.5
 CATEGORIES=	x11-drivers
 
-MAINTAINER=	olevole@olevole.ru
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	X.Org X server -- QXL display driver
 
 LICENSE=	MIT

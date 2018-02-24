@@ -1,11 +1,11 @@
-# $FreeBSD: head/databases/tarantool-c/Makefile 455889 2017-12-10 11:25:40Z amdmi3 $
+# $FreeBSD: head/databases/tarantool-c/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	tarantool-c
 PORTVERSION=	1.0.0
 PORTREVISION=	1
 CATEGORIES=	databases
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	C client for Tarantool 1.6+
 
 LIB_DEPENDS=	libmsgpuck.so:devel/msgpuck

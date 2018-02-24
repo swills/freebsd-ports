@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/textproc/py-pyctpp2/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/py-pyctpp2/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	pyctpp2
 PORTVERSION=	0.12.2
@@ -8,7 +8,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	python@FreeBSD.org
 COMMENT=	Python interface to CTPP2 library
 
 LICENSE=	MIT

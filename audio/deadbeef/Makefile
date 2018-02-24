@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/audio/deadbeef/Makefile 458101 2018-01-05 02:57:35Z jbeich $
+# $FreeBSD: head/audio/deadbeef/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	deadbeef
 PORTVERSION=	0.7.2
@@ -7,7 +7,7 @@ PORTREVISION=	8
 CATEGORIES=	audio
 MASTER_SITES=	SF/${PORTNAME}/
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Ultimate music player for Unix-like systems
 
 LICENSE=	GPLv2 LGPL21

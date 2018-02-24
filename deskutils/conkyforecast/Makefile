@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/deskutils/conkyforecast/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/deskutils/conkyforecast/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	conkyforecast
 PORTVERSION=	2.20
@@ -9,7 +9,7 @@ MASTER_SITES=	https://launchpadlibrarian.net/70673352/ \
 		LOCAL/vg
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Weather forecast script for conky
 
 LICENSE=	GPLv3

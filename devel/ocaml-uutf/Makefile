@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/ocaml-uutf/Makefile 393601 2015-08-05 18:31:18Z vg $
+# $FreeBSD: head/devel/ocaml-uutf/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	uutf
 PORTVERSION=	0.9.4
@@ -7,7 +7,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://erratique.ch/software/uutf/releases/
 PKGNAMEPREFIX=	ocaml-
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Non-blocking streaming Unicode codec for OCaml
 
 LICENSE=	BSD3CLAUSE
