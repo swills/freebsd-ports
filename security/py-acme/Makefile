@@ -1,8 +1,8 @@
 # Created by: Carlos J Puga Medina <cpm@fbsd.es>
-# $FreeBSD: head/security/py-acme/Makefile 461671 2018-02-12 23:11:07Z cpm $
+# $FreeBSD: head/security/py-acme/Makefile 462595 2018-02-22 14:29:19Z mat $
 
 PORTNAME=	acme
-PORTVERSION=	0.21.0
+PORTVERSION=	${ACME_VERSION}
 PORTEPOCH=	1
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
@@ -33,4 +33,5 @@ NO_ARCH=	yes
 do-test:
 	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYDISTUTILS_SETUP} test
 
+.include "version.mk"
 .include <bsd.port.mk>

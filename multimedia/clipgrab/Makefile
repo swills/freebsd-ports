@@ -1,12 +1,12 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/multimedia/clipgrab/Makefile 392667 2015-07-22 07:39:52Z vg $
+# $FreeBSD: head/multimedia/clipgrab/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	clipgrab
 PORTVERSION=	3.4.11
 CATEGORIES=	multimedia
 MASTER_SITES=	http://download.clipgrab.de/
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Program to download videos from YouTube and etc
 
 LICENSE=	GPLv3

@@ -1,5 +1,5 @@
 # Created by: olevole@olevole.ru
-# $FreeBSD: head/devel/libspice-server/Makefile 461051 2018-02-06 14:07:49Z amdmi3 $
+# $FreeBSD: head/devel/libspice-server/Makefile 462734 2018-02-23 19:40:31Z yuri $
 
 PORTNAME=	libspice-server
 DISTVERSION=	0.14.0
@@ -8,7 +8,7 @@ CATEGORIES=	devel
 MASTER_SITES=	https://www.spice-space.org/download/releases/
 DISTNAME=	spice-${PORTVERSION}
 
-MAINTAINER=	olevole@olevole.ru
+MAINTAINER=	portmaster@BSDforge.com
 COMMENT=	Implements the server side of the SPICE protocol
 
 LICENSE=	GPLv2

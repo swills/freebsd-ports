@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/converters/fondu/Makefile 357139 2014-06-09 11:21:52Z olgeni $
+# $FreeBSD: head/converters/fondu/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	fondu
 PORTVERSION=	051010
@@ -8,7 +8,7 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-src/${PORTVERSION}
 DISTNAME=	${PORTNAME}_src-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Series of programs to interconvert between mac fonts
 
 LICENSE=	BSD3CLAUSE

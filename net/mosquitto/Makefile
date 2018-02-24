@@ -1,9 +1,9 @@
 # Created by: Joseph Benden <joe@thrallingpenguin.com>
-# $FreeBSD: head/net/mosquitto/Makefile 455922 2017-12-11 04:01:46Z swills $
+# $FreeBSD: head/net/mosquitto/Makefile 462668 2018-02-23 04:04:33Z yuri $
 
 PORTNAME=	mosquitto
 PORTVERSION=	1.4.14
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://mosquitto.org/files/source/
 
@@ -12,7 +12,8 @@ COMMENT=	Open-Source MQTT Broker
 
 LICENSE=	BSD3CLAUSE
 
-LIB_DEPENDS=	libcares.so:dns/c-ares
+LIB_DEPENDS=	libcares.so:dns/c-ares \
+		libuuid.so:misc/e2fsprogs-libuuid
 BUILD_DEPENDS=	xsltproc:textproc/libxslt
 
 USES=		cmake ssl

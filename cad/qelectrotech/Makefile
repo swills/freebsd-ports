@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/cad/qelectrotech/Makefile 458293 2018-01-06 21:30:31Z rakuco $
+# $FreeBSD: head/cad/qelectrotech/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	qelectrotech
 PORTVERSION=	0.5
@@ -9,7 +9,7 @@ CATEGORIES=	cad
 MASTER_SITES=	http://download.tuxfamily.org/qet/tags/20151127/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	QElectroTech is application to design electric diagrams
 
 LICENSE=	GPLv2

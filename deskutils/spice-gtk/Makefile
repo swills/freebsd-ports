@@ -1,12 +1,12 @@
 # Created by: olevole@olevole.ru
-# $FreeBSD: head/deskutils/spice-gtk/Makefile 459536 2018-01-20 17:46:37Z novel $
+# $FreeBSD: head/deskutils/spice-gtk/Makefile 462644 2018-02-22 21:52:59Z pi $
 
 PORTNAME=	spice-gtk
 PORTVERSION=	0.34
 CATEGORIES?=	deskutils gnome
 MASTER_SITES=	http://www.spice-space.org/download/gtk/
 
-MAINTAINER=	olevole@olevole.ru
+MAINTAINER=	xxjack12xx@gmail.com
 COMMENT=	Gtk client and libraries for SPICE remote desktop servers
 
 LICENSE=	GPLv2

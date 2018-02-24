@@ -1,16 +1,15 @@
-# $FreeBSD: head/misc/bibletime/Makefile 438948 2017-04-20 13:33:10Z tabthorpe $
+# $FreeBSD: head/misc/bibletime/Makefile 462658 2018-02-23 01:33:00Z tabthorpe $
 
 PORTNAME=	bibletime
 PORTVERSION=	2.10.1
+PORTREVISION=	1
 CATEGORIES=	misc kde
 MASTER_SITES=	SF/${PORTNAME}/BibleTime%202/BibleTime%202%20source%20code
 
-MAINTAINER=	tabthorpe@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Open source Bible study tool
 
 LICENSE=	GPLv2
-
-BROKEN_FreeBSD_12= does not build on 12.X
 
 LIB_DEPENDS=	libclucene-core.so:textproc/clucene \
 		libsword.so:misc/sword

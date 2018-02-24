@@ -1,12 +1,12 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/net-im/qxmpp/Makefile 427921 2016-12-05 20:26:36Z pawel $
+# $FreeBSD: head/net-im/qxmpp/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	qxmpp
 PORTVERSION=	0.9.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-im
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	QXmpp is an xmpp client library based on Qt & C++
 
 LICENSE=	LGPL21

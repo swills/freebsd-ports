@@ -1,12 +1,12 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/www/sxweb/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/sxweb/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	sxweb
 PORTVERSION=	0.9.0
 CATEGORIES=	www
 MASTER_SITES=	http://cdn.skylable.com/source/
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SXDrive Web app
 
 IGNORE_WITH_PHP=	70 71 72

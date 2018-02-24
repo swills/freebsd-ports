@@ -1,5 +1,5 @@
 # Created by: Ginzburg Oleg
-# $FreeBSD: head/games/netherearth/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/netherearth/Makefile 462587 2018-02-22 12:53:13Z tobik $
 
 PORTNAME=	netherearth
 PORTVERSION=	0.51
@@ -7,7 +7,7 @@ PORTREVISION=	9
 CATEGORIES=	games
 MASTER_SITES=	http://move.kirishi.ru/soft/netherearth/
 
-MAINTAINER=	olevole@olevole.ru
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Remake of the first real time strategy game on the SPECTRUM
 
 GNU_CONFIGURE=	yes

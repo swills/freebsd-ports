@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/databases/php5-tarantool/Makefile 461158 2018-02-07 17:46:10Z mat $
+# $FreeBSD: head/databases/php5-tarantool/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	tarantool
 PORTVERSION=	${TR_VER}
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	databases
 PKGNAMEPREFIX=	php5-
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PECL PHP driver for Tarantool/Box
 
 USES=		php:ext

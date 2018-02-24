@@ -1,12 +1,12 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/www/blastbeat/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/www/blastbeat/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	blastbeat
 PORTVERSION=	20121205
 PORTREVISION=	3
 CATEGORIES=	www
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	High-performance HTTP/HTTPS/SPDY proxy
 
 LICENSE=	UNBIT

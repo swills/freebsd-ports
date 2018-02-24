@@ -1,12 +1,12 @@
 # Created by: mwest@uct.ac.za
-# $FreeBSD: head/net/rdesktop/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/net/rdesktop/Makefile 462612 2018-02-22 15:38:37Z pizzamig $
 
 PORTNAME=	rdesktop
 PORTVERSION=	1.8.3
 CATEGORIES=	net comms ipv6
 MASTER_SITES=	SF
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	gregf@hugops.pw
 COMMENT=	RDP client for Windows NT/2000/2003 Terminal Server
 
 LICENSE=	GPLv3

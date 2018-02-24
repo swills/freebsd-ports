@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/deskutils/conkyemail/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/deskutils/conkyemail/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	conkyemail
 PORTVERSION=	2.07
@@ -8,7 +8,7 @@ MASTER_SITES=	http://launchpadlibrarian.net/28462213/ \
 		LOCAL/vg
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Email script for conky
 
 RUN_DEPENDS=	conky:sysutils/conky

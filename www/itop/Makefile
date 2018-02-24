@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/itop/Makefile 421685 2016-09-10 11:41:43Z amdmi3 $
+# $FreeBSD: head/www/itop/Makefile 462662 2018-02-23 02:48:44Z yuri $
 
 PORTNAME=	itop
 PORTVERSION=	2.3.1
@@ -6,7 +6,7 @@ CATEGORIES=	www
 MASTER_SITES=	SF
 DISTNAME=	iTop-${PORTVERSION}-2832
 
-MAINTAINER=	olevole@olevole.ru
+MAINTAINER=	neel@neelc.org
 COMMENT=	Simple, web based IT Service Management tool
 
 LICENSE=	AGPLv3

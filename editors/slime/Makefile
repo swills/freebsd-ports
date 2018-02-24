@@ -1,25 +1,22 @@
 # Created by: Dominic Mitchell
-# $FreeBSD: head/editors/slime/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/editors/slime/Makefile 462673 2018-02-23 06:22:56Z yuri $
 
 PORTNAME=	slime
-PORTVERSION=	2.15
-DISTVERSIONPREFIX=v
-PORTREVISION=	3
+DISTVERSIONPREFIX=	v
+DISTVERSION=	2.20
 CATEGORIES=	editors elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
 MAINTAINER=	joe@thrallingpenguin.com
 COMMENT=	Superior Lisp Interaction Mode for Emacs
 
-LICENSE=	PUBLIC_DOMAIN
-LICENSE_NAME=	${LICENSE:S/_/ /}
-LICENSE_TEXT=	The license: ${_LICENSE} (${_LICENSE_NAME}) is standard, please read from the web.
-LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+LICENSE=	PD
 
 BUILD_DEPENDS=	texinfo>=5.2:print/texinfo
 
 USES=		emacs gmake
 USE_GITHUB=	yes
+NO_ARCH=	yes
 
 SLIME_LISPDIR=	${PREFIX}/${EMACS_VERSION_SITE_LISPDIR}/slime
 
@@ -27,7 +24,7 @@ SUB_FILES=	pkg-message
 SUB_LIST=	SLIME_LISPDIR="${SLIME_LISPDIR}"
 
 INFO=		slime
-PORTDOCS=	CONTRIBUTING.md ChangeLog NEWS PROBLEMS README.md
+PORTDOCS=	CONTRIBUTING.md NEWS PROBLEMS README.md
 
 OPTIONS_DEFINE=	DOCS
 
@@ -51,7 +48,6 @@ do-install:
 		${STAGEDIR}${SLIME_LISPDIR}/contrib/test
 	cd ${WRKSRC}/swank && ${INSTALL_DATA} *.lisp \
 		${STAGEDIR}${SLIME_LISPDIR}/swank
-	${INSTALL_DATA} ${WRKSRC}/ChangeLog ${STAGEDIR}${SLIME_LISPDIR}
 	${INSTALL_DATA} ${INSTALL_WRKSRC}/doc/slime.info \
 		${STAGEDIR}${PREFIX}/${INFO_PATH}
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/kdegames-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/games/kdegames-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
 
 PORTNAME=	kdegames
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games kde
 PKGNAMESUFFIX=	-kde4
 
@@ -18,7 +18,7 @@ OPTIONS_DEFAULT=	ALL
 
 .for game in ${KDE4_GAMES_ALL}
 # _PORT, _DETECT, and _DESC are defined in Makefile.common
-${game}_PORT?=		games/${game}
+${game}_PORT?=		games/${game}-kde4
 ${game}_DETECT?=	${KDE_PREFIX}/bin/${game}
 ${game}_DESC?=		Please fix a typo in option name/desc!
 ${game}_RUN_DEPENDS=	${${game}_DETECT}:${${game}_PORT}

@@ -1,9 +1,9 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/multimedia/kdemultimedia-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/multimedia/kdemultimedia-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
 
 PORTNAME=	kdemultimedia
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	multimedia kde
 PKGNAMESUFFIX=	-kde4
 
@@ -16,22 +16,22 @@ OPTIONS_DEFINE=		DRAGON FFMPEG JUK KIO_AUDIOCD KMIX KSCD MPLAYER
 OPTIONS_DEFAULT=	DRAGON FFMPEG JUK KIO_AUDIOCD KMIX KSCD
 
 DRAGON_DESC=		Simple video player
-DRAGON_RUN_DEPENDS=	${KDE_PREFIX}/bin/dragon:multimedia/dragon
+DRAGON_RUN_DEPENDS=	${KDE_PREFIX}/bin/dragon:multimedia/dragon-kde4
 
 FFMPEG_DESC=		FFMPEG-based video thumbnailer
 FFMPEG_RUN_DEPENDS=	${KDE_PREFIX}/lib/kde4/ffmpegthumbs.so:multimedia/kdemultimedia-ffmpegthumbs-kde4
 
 JUK_DESC=		Audio player
-JUK_RUN_DEPENDS=	${KDE_PREFIX}/bin/juk:audio/juk
+JUK_RUN_DEPENDS=	${KDE_PREFIX}/bin/juk:audio/juk-kde4
 
 KIO_AUDIOCD_DESC=	Audio CD IOSlave
-KIO_AUDIOCD_RUN_DEPENDS=	${KDE_PREFIX}/lib/libaudiocdplugins.so:audio/kio-audiocd
+KIO_AUDIOCD_RUN_DEPENDS=	${KDE_PREFIX}/lib/libaudiocdplugins.so:audio/kio-audiocd-kde4
 
 KMIX_DESC=		Audio mixer
-KMIX_RUN_DEPENDS=	${KDE_PREFIX}/bin/kmix:audio/kmix
+KMIX_RUN_DEPENDS=	${KDE_PREFIX}/bin/kmix:audio/kmix-kde4
 
 KSCD_DESC=		CD Player
-KSCD_RUN_DEPENDS=	${KDE_PREFIX}/bin/kscd:audio/kscd
+KSCD_RUN_DEPENDS=	${KDE_PREFIX}/bin/kscd:audio/kscd-kde4
 
 MPLAYER_DESC=		MPlayer-based video thumbnailer
 MPLAYER_RUN_DEPENDS=	${KDE_PREFIX}/bin/mplayerthumbsconfig:multimedia/kdemultimedia-mplayerthumbs-kde4

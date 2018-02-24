@@ -1,12 +1,12 @@
 # Created by: Johann Visagie <wjv@FreeBSD.org>
-# $FreeBSD: head/misc/since/Makefile 331602 2013-10-25 15:52:40Z tabthorpe $
+# $FreeBSD: head/misc/since/Makefile 462658 2018-02-23 01:33:00Z tabthorpe $
 
 PORTNAME=	since
 PORTVERSION=	1.1
 CATEGORIES=	misc
 MASTER_SITES=	http://welz.org.za/projects/since/
 
-MAINTAINER=	tabthorpe@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	View the end of a file like tail(1), but save state between sessions
 
 LICENSE=	GPLv3

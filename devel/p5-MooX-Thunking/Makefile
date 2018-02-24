@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-MooX-Thunking/Makefile 459603 2018-01-21 12:49:52Z wen $
+# $FreeBSD: head/devel/p5-MooX-Thunking/Makefile 462688 2018-02-23 12:42:25Z wen $
 
 PORTNAME=	MooX-Thunking
-PORTVERSION=	0.07
+PORTVERSION=	0.08
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

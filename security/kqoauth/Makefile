@@ -1,11 +1,11 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/security/kqoauth/Makefile 394332 2015-08-15 16:43:35Z vg $
+# $FreeBSD: head/security/kqoauth/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	kqoauth
 PORTVERSION=	0.98
 CATEGORIES=	security
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Implementation of OAuth 1.0 in C++ for Qt
 
 LICENSE=	LGPL21

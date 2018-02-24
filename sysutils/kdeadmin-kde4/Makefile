@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/kdeadmin-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/sysutils/kdeadmin-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
 
 PORTNAME=	kdeadmin
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils kde
 PKGNAMESUFFIX=	-kde4
 
@@ -15,12 +15,12 @@ OPTIONS_DEFINE=	KCRON KSYSTEMLOG KUSER
 OPTIONS_DEFAULT=	${OPTIONS_DEFINE}
 
 KCRON_DESC=		Task scheduler
-KCRON_RUN_DEPENDS=	${KDE_PREFIX}/lib/kde4/kcm_cron.so:sysutils/kcron
+KCRON_RUN_DEPENDS=	${KDE_PREFIX}/lib/kde4/kcm_cron.so:sysutils/kcron-kde4
 
 KSYSTEMLOG_DESC=	System log viewer
-KSYSTEMLOG_RUN_DEPENDS=	${KDE_PREFIX}/bin/ksystemlog:sysutils/ksystemlog
+KSYSTEMLOG_RUN_DEPENDS=	${KDE_PREFIX}/bin/ksystemlog:sysutils/ksystemlog-kde4
 
 KUSER_DESC=		User management application
-KUSER_RUN_DEPENDS=	${KDE_PREFIX}/bin/kuser:sysutils/kuser
+KUSER_RUN_DEPENDS=	${KDE_PREFIX}/bin/kuser:sysutils/kuser-kde4
 
 .include <bsd.port.mk>

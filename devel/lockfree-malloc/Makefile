@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/lockfree-malloc/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/lockfree-malloc/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	lockfree-malloc
 PORTVERSION=	0.0.${DATE}
@@ -7,7 +7,7 @@ PORTREVISION=	6
 CATEGORIES=	devel
 MASTER_SITES=	LOCAL/vg
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Scalable drop-in replacement for malloc/free
 
 LICENSE=	LGPL3

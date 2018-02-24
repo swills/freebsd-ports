@@ -1,9 +1,9 @@
 # Created by: Jim Riggs <ports@christianserving.org>
-# $FreeBSD: head/net-mgmt/zabbix2-server/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/net-mgmt/zabbix2-server/Makefile 462615 2018-02-22 17:08:46Z dbaio $
 
 PORTNAME=	zabbix2
 PORTVERSION=	2.0.20
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	net-mgmt
 MASTER_SITES=	SF/zabbix/ZABBIX%20Latest%20Stable/${PORTVERSION}
 PKGNAMESUFFIX?=	-server
@@ -125,7 +125,11 @@ JAVAGW_USE=	JAVA=yes
 post-patch:
 	@${GREP} -rl "/etc/zabbix" ${WRKSRC} \
 	  | ${XARGS} ${REINPLACE_CMD} -e 's#/etc/zabbix#${ETCDIR}#g'
-	@${REINPLACE_CMD} -e 's#/usr/sbin/fping#${LOCALBASE}/sbin/fping#g' ${WRKSRC}/conf/zabbix_*.conf
+	@${REINPLACE_CMD} -e 's#/usr/sbin/fping#${LOCALBASE}/sbin/fping#g' \
+		${WRKSRC}/conf/zabbix_*.conf \
+		${WRKSRC}/src/zabbix_proxy/proxy.c \
+		${WRKSRC}/src/zabbix_server/server.c
+
 
 .if ${ZABBIX_BUILD} != "agent"
 .for d in mysql oracle postgresql sqlite3

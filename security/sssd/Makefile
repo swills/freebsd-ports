@@ -1,9 +1,9 @@
 # Created by: Lukas Slebodnik <lukas.slebodnik@intrak.sk>
-# $FreeBSD: head/security/sssd/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/security/sssd/Makefile 462684 2018-02-23 10:04:17Z yuri $
 
 PORTNAME=	sssd
 PORTVERSION=	1.11.7
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	security
 MASTER_SITES=	https://releases.pagure.org/SSSD/${PORTNAME}/
 
@@ -25,7 +25,8 @@ LIB_DEPENDS=	libpopt.so:devel/popt \
 		libunistring.so:devel/libunistring \
 		libnss3.so:security/nss \
 		libsasl2.so:security/cyrus-sasl2 \
-		libinotify.so:devel/libinotify
+		libinotify.so:devel/libinotify \
+		libplds4.so:devel/nspr
 BUILD_DEPENDS=	xmlcatalog:textproc/libxml2 \
 		docbook-xsl>=1:textproc/docbook-xsl \
 		xsltproc:textproc/libxslt \
@@ -43,7 +44,8 @@ CONFIGURE_ARGS=	--with-selinux=no --with-semanage=no \
 		--with-db-path=/var/db/sss --with-pipe-path=/var/run/sss \
 		--with-pubconf-path=/var/run/sss --with-mcache-path=/var/db/sss_mc \
 		--with-unicode-lib=libunistring --with-autofs=no \
-		--disable-cifs-idmap-plugin --disable-config-lib
+		--disable-cifs-idmap-plugin --disable-config-lib \
+		--with-krb5-conf=/etc/krb5.conf
 CFLAGS+=	-fstack-protector-all
 PLIST_SUB=	PYTHON_VER=${PYTHON_VER}
 #DEBUG_FLAGS=	-g
@@ -57,7 +59,6 @@ USES=		autoreconf cpe gettext gmake iconv libtool pathfix pkgconfig \
 INSTALL_TARGET=	install-strip
 CPE_VENDOR=	fedoraproject
 
-python_CMD=	${SETENV} ${PYTHON_VERSION}
 SHEBANG_FILES=	src/tools/sss_obfuscate \
 		src/sbus/sbus_codegen
 

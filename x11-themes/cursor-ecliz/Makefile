@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/x11-themes/cursor-ecliz/Makefile 448082 2017-08-17 08:26:25Z bapt $
+# $FreeBSD: head/x11-themes/cursor-ecliz/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	ecliz
 PORTVERSION=	0.1
@@ -9,7 +9,7 @@ MASTER_SITES=	http://kde-look.org/CONTENT/content-files/
 PKGNAMEPREFIX=	cursor-
 DISTNAME=	76605-Ecliz_Port
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Ecliz X cursor theme
 
 NO_BUILD=	yes

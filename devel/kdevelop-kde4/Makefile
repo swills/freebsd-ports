@@ -1,9 +1,9 @@
 # Created by: Golyashov Sergei <svvord@mail.ru>
-# $FreeBSD: head/devel/kdevelop-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/devel/kdevelop-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
 
 PORTNAME=	kdevelop
 DISTVERSION=	${KDEVELOP_VERSION}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel kde
 MASTER_SITES=	KDE/${KDEVELOP_BRANCH}/kdevelop/${DISTVERSION}
 DIST_SUBDIR=	KDE/kdevelop/${KDEVELOP_VERSION}
@@ -25,7 +25,7 @@ OPTIONS_DEFAULT=	OKTETA PHP
 OPTIONS_SUB=	yes
 
 OKTETA_DESC=	Hex editing support via Okteta
-OKTETA_LIB_DEPENDS=	libokteta1core.so:devel/okteta
+OKTETA_LIB_DEPENDS=	libokteta1core.so:devel/okteta-kde4
 OKTETA_CMAKE_OFF=	-DWITH_LibOktetaKasten:BOOL=OFF
 OKTETA_CMAKE_ON=	-DWITH_LibOktetaKasten:BOOL=ON
 

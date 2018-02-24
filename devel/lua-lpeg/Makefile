@@ -1,13 +1,14 @@
-# $FreeBSD: head/devel/lua-lpeg/Makefile 431860 2017-01-19 12:19:36Z amdmi3 $
+# $FreeBSD: head/devel/lua-lpeg/Makefile 462728 2018-02-23 19:24:58Z sunpoet $
 
 PORTNAME=	lpeg
 PORTVERSION=	1.0.1
 CATEGORIES=	devel
-MASTER_SITES=	http://www.inf.puc-rio.br/~roberto/lpeg/
+MASTER_SITES=	http://www.inf.puc-rio.br/~roberto/lpeg/ \
+		LOCAL/sunpoet
 PKGNAMEPREFIX=	${LUA_PKGNAMEPREFIX}
 
-MAINTAINER=	olevole@olevole.ru
-COMMENT=	Parsing Expression Grammars For Lua
+MAINTAINER=	sunpoet@FreeBSD.org
+COMMENT=	PEG-based pattern-matching library for Lua
 
 LICENSE=	MIT
 
@@ -17,7 +18,7 @@ MAKE_ARGS=	CC=${CC} LUADIR=${LUA_INCDIR}
 MAKEFILE=	${WRKSRC}/makefile
 USES?=		lua
 
-PLIST_FILES=	%%LUA_MODLIBDIR%%/lpeg.so
+PLIST_FILES=	${LUA_MODLIBDIR}/lpeg.so
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${LUA_MODLIBDIR}

@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/py-avro/Makefile 417487 2016-06-25 20:29:04Z gnn $
+# $FreeBSD: head/devel/py-avro/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	avro
 PORTVERSION=	1.8.1
@@ -9,7 +9,7 @@ MASTER_SITES=	http://www.sai.msu.su/apache/${PORTNAME}/${PORTNAME}-${PORTVERSION
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	${PORTNAME}-src-${PORTVERSION}
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	python@FreeBSD.org
 COMMENT=	Data serialization system for python
 
 USES=		python

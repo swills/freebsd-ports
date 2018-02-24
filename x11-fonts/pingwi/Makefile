@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/x11-fonts/pingwi/Makefile 381876 2015-03-21 23:05:19Z bapt $
+# $FreeBSD: head/x11-fonts/pingwi/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	pingwi
 PORTVERSION=	0.1
@@ -10,7 +10,7 @@ MASTER_SITES=	http://www.pingwinsoft.ru/system/uploads/16/original/ \
 PKGNAMEPREFIX=	font-
 DISTNAME=	fonts_test
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PingWi Typography fonts
 
 USES=		fonts zip

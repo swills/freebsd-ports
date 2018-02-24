@@ -1,9 +1,9 @@
 # Created by: fabian.freyer@physik.tu-berlin.de
-# $FreeBSD: head/www/caddy/Makefile 451831 2017-10-12 08:12:13Z ehaupt $
+# $FreeBSD: head/www/caddy/Makefile 462653 2018-02-22 23:50:49Z yuri $
 
 PORTNAME=	caddy
-PORTVERSION=	0.10.10
 DISTVERSIONPREFIX=	v
+DISTVERSION=	0.10.11
 CATEGORIES=	www
 
 MAINTAINER=	fabian.freyer@physik.tu-berlin.de
@@ -18,12 +18,11 @@ GH_ACCOUNT=	mholt
 
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${PORTNAME}
 
+SUB_FILES=	pkg-message
 PLIST_FILES=	bin/caddy etc/rc.d/caddy
 
-STRIP=		# stripping can break go binaries
-
 do-build:
-	@(cd ${GO_WRKSRC}/${PORTNAME}; ${SETENV} ${MAKE_ENV} ${GO_ENV} ${GO_CMD} build)
+	@cd ${GO_WRKSRC}/${PORTNAME} && ${SETENV} ${MAKE_ENV} ${GO_ENV} ${GO_CMD} build
 
 do-install:
 	${INSTALL_PROGRAM} ${GO_WRKSRC}/${PORTNAME}/${PORTNAME} \

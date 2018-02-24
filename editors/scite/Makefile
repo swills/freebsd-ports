@@ -1,9 +1,8 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/editors/scite/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/editors/scite/Makefile 462677 2018-02-23 07:46:00Z yuri $
 
 PORTNAME=	scite
-PORTVERSION=	3.7.5
-PORTREVISION=	1
+DISTVERSION=	4.0.2
 CATEGORIES=	editors gnome
 MASTER_SITES=	SF/scintilla/SciTE/${PORTVERSION}
 DISTNAME=	${PORTNAME}${PORTVERSION:S/.//g}
@@ -23,7 +22,7 @@ OPTIONS_DEFINE=	DOCS
 
 WRKSRC=		${WRKDIR}/${PORTNAME}/gtk
 
-USES=		compiler:c++11-lib desktop-file-utils gmake pkgconfig tar:tgz
+USES=		compiler:c++14-lang desktop-file-utils gmake pkgconfig tar:tgz
 USE_GNOME=	cairo gdkpixbuf2 gtk20
 MAKEFILE=	makefile
 

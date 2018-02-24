@@ -1,9 +1,9 @@
 # Created by: Mina R Waheeb <syncer@gmail.com>
-# $FreeBSD: head/deskutils/silence/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/deskutils/silence/Makefile 462619 2018-02-22 19:03:17Z tcberner $
 
 PORTNAME=	silence
 PORTVERSION=	0.2
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	deskutils kde
 MASTER_SITES=	http://kde-apps.org/CONTENT/content-files/
 DISTNAME=	124776-${PORTNAME}-${PORTVERSION}
@@ -14,7 +14,7 @@ COMMENT=	Information management tool
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${KDE_PREFIX}/lib/kde4/katepart.so:editors/kate
+RUN_DEPENDS=	${KDE_PREFIX}/lib/kde4/katepart.so:editors/kate-kde4
 
 USES=		cmake kde:4
 USE_KDE=	kdelibs automoc4

@@ -1,12 +1,12 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/databases/rubygem-tarantool/Makefile 459051 2018-01-15 14:38:59Z swills $
+# $FreeBSD: head/databases/rubygem-tarantool/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	tarantool
 PORTVERSION=	0.5.8
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Tarantool KV-storage client
 
 RUN_DEPENDS=	rubygem-bin_utils>=0.0.3:devel/rubygem-bin_utils \

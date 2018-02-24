@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/security/retranslator/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/security/retranslator/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	retranslator
 PORTVERSION=	5.0.0
@@ -8,7 +8,7 @@ CATEGORIES=	security
 MASTER_SITES=	http://utils.kaspersky.com/updater/retranslator_5.0.0.7/FreeBSD_6.3/ \
 		LOCAL/vg
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	The update utility for Kaspersky applications
 
 NO_BUILD=	yes

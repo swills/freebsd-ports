@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/yajl/Makefile 424156 2016-10-18 11:20:01Z jbeich $
+# $FreeBSD: head/devel/yajl/Makefile 462613 2018-02-22 15:39:25Z pizzamig $
 
 PORTNAME=	yajl
 PORTVERSION=	2.1.0
 CATEGORIES=	devel
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	gregf@hugops.pw
 COMMENT=	Portable JSON parsing and serialization library in ANSI C
 
 LICENSE=	ISCL

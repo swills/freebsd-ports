@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/x11-themes/kde4-windeco-dekorator/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/x11-themes/kde4-windeco-dekorator/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	dekorator
 PORTVERSION=	0.5.1
@@ -9,7 +9,7 @@ MASTER_SITES=	http://www.kde-look.org/CONTENT/content-files/
 PKGNAMEPREFIX=	kde4-windeco-
 DISTNAME=	87921-${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Transparent KDE4 window decoration
 
 LICENSE=	GPLv2

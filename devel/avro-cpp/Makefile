@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/avro-cpp/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/devel/avro-cpp/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	avro
 PORTVERSION=	1.8.1
@@ -10,7 +10,7 @@ MASTER_SITES=	http://www.sai.msu.su/apache/${PORTNAME}/${PORTNAME}-${PORTVERSION
 PKGNAMESUFFIX=	-cpp
 DISTNAME=	${PORTNAME}-src-${PORTVERSION}
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Data serialization system for C++
 
 LIB_DEPENDS=	libboost_regex.so:devel/boost-libs

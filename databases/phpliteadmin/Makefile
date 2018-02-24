@@ -1,5 +1,5 @@
 # Created by: olevole@olevole.ru
-# $FreeBSD: head/databases/phpliteadmin/Makefile 436340 2017-03-17 14:06:34Z lifanov $
+# $FreeBSD: head/databases/phpliteadmin/Makefile 462735 2018-02-23 19:48:04Z yuri $
 
 PORTNAME=	phpLiteAdmin
 DISTVERSION=	1-9-7-1
@@ -7,7 +7,7 @@ CATEGORIES=	databases www
 MASTER_SITES=	https://bitbucket.org/phpliteadmin/public/downloads/
 DISTNAME=	${PORTNAME}_v${DISTVERSION}
 
-MAINTAINER=	olevole@olevole.ru
+MAINTAINER=	portmaster@BSDforge.com
 COMMENT=	Web-based database management tool for Sqlite
 
 LICENSE=	GPLv3

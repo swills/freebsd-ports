@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 462534 2018-02-21 16:54:18Z dvl $
+# $FreeBSD: head/devel/Makefile 462655 2018-02-23 00:37:55Z rene $
 #
 
     COMMENT = Development utilities
@@ -270,7 +270,7 @@
     SUBDIR += cdecl
     SUBDIR += cdialog
     SUBDIR += cdk
-    SUBDIR += cervisia
+    SUBDIR += cervisia-kde4
     SUBDIR += cflow
     SUBDIR += cflow2vcg
     SUBDIR += cgdb
@@ -456,7 +456,7 @@
     SUBDIR += dmalloc
     SUBDIR += dmucs
     SUBDIR += doctorj
-    SUBDIR += dolphin-plugins
+    SUBDIR += dolphin-plugins-kde4
     SUBDIR += dotconf
     SUBDIR += dotconf++
     SUBDIR += doxygen
@@ -1243,12 +1243,12 @@
     SUBDIR += jwasm
     SUBDIR += k8048
     SUBDIR += kBuild
-    SUBDIR += kapptemplate
+    SUBDIR += kapptemplate-kde4
     SUBDIR += kaptain
-    SUBDIR += kcachegrind
+    SUBDIR += kcachegrind-kde4
     SUBDIR += kdbg
-    SUBDIR += kde-dev-scripts
-    SUBDIR += kde-dev-utils
+    SUBDIR += kde-dev-scripts-kde4
+    SUBDIR += kde-dev-utils-kde4
     SUBDIR += kdebindings-kde4
     SUBDIR += kdesdk-kde4
     SUBDIR += kdesdk-kioslaves-kde4
@@ -1652,7 +1652,7 @@
     SUBDIR += log4net
     SUBDIR += log4sh
     SUBDIR += log4shib
-    SUBDIR += lokalize
+    SUBDIR += lokalize-kde4
     SUBDIR += loki
     SUBDIR += looks
     SUBDIR += love
@@ -1670,6 +1670,7 @@
     SUBDIR += lua-lgi
     SUBDIR += lua-lpeg
     SUBDIR += lua-lpeg51
+    SUBDIR += lua-luacheck
     SUBDIR += lua-luarocks
     SUBDIR += lua-lunit
     SUBDIR += lua-posix
@@ -1819,7 +1820,7 @@
     SUBDIR += oclgrind
     SUBDIR += ode
     SUBDIR += ois
-    SUBDIR += okteta
+    SUBDIR += okteta-kde4
     SUBDIR += omake
     SUBDIR += omniNotify
     SUBDIR += omniORB
@@ -3751,8 +3752,8 @@
     SUBDIR += p5-namespace-sweep
     SUBDIR += p5-orz
     SUBDIR += p5-parent
-    SUBDIR += p5-perlkde
-    SUBDIR += p5-perlqt
+    SUBDIR += p5-perlkde-kde4
+    SUBDIR += p5-perlqt-kde4
     SUBDIR += p5-pip
     SUBDIR += p5-prefork
     SUBDIR += p5-reaper
@@ -4107,7 +4108,7 @@
     SUBDIR += powerpc64-binutils
     SUBDIR += powerpc64-gcc
     SUBDIR += powerpc64-xtoolchain-gcc
-    SUBDIR += poxml
+    SUBDIR += poxml-kde4
     SUBDIR += ppl
     SUBDIR += pragmarcs
     SUBDIR += premake
@@ -4563,7 +4564,7 @@
     SUBDIR += py-kitchen
     SUBDIR += py-kjbuckets
     SUBDIR += py-kqueue
-    SUBDIR += py-krosspython
+    SUBDIR += py-krosspython-kde4
     SUBDIR += py-lazr.config
     SUBDIR += py-lazr.delegates
     SUBDIR += py-lazy
@@ -4752,8 +4753,8 @@
     SUBDIR += py-pyicu
     SUBDIR += py-pyinotify
     SUBDIR += py-pyinstaller
-    SUBDIR += py-pykde4
-    SUBDIR += py-pykdeuic4
+    SUBDIR += py-pykde4-kde4
+    SUBDIR += py-pykdeuic4-kde4
     SUBDIR += py-pyke
     SUBDIR += py-pylru
     SUBDIR += py-pylru-cache
@@ -5246,10 +5247,9 @@
     SUBDIR += ruby-bsearch
     SUBDIR += ruby-build
     SUBDIR += ruby-gems
-    SUBDIR += ruby-korundum
-    SUBDIR += ruby-krossruby
-    SUBDIR += ruby-ncurses
-    SUBDIR += ruby-qtruby
+    SUBDIR += ruby-korundum-kde4
+    SUBDIR += ruby-krossruby-kde4
+    SUBDIR += ruby-qtruby-kde4
     SUBDIR += ruby-rbprof
     SUBDIR += ruby-sdl
     SUBDIR += ruby-setup.rb
@@ -5922,9 +5922,9 @@
     SUBDIR += smack
     SUBDIR += smake
     SUBDIR += smc
-    SUBDIR += smokegen
-    SUBDIR += smokekde
-    SUBDIR += smokeqt
+    SUBDIR += smokegen-kde4
+    SUBDIR += smokekde-kde4
+    SUBDIR += smokeqt-kde4
     SUBDIR += smv
     SUBDIR += soapui
     SUBDIR += sonar-ant-task
@@ -6042,7 +6042,7 @@
     SUBDIR += ucpp
     SUBDIR += udis86
     SUBDIR += ultragetopt
-    SUBDIR += umbrello
+    SUBDIR += umbrello-kde4
     SUBDIR += umem
     SUBDIR += umlgraph
     SUBDIR += unibilium

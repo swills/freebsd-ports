@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/busybee/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/devel/busybee/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	busybee
 PORTVERSION=	0.5.0
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://hyperdex.org/src/
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	High-performance messaging layer
 
 LICENSE=	BSD3CLAUSE

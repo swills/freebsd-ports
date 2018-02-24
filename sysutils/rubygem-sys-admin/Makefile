@@ -1,15 +1,15 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/sysutils/rubygem-sys-admin/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/sysutils/rubygem-sys-admin/Makefile 462636 2018-02-22 19:51:20Z sunpoet $
 
 PORTNAME=	sys-admin
-PORTVERSION=	1.6.4
+PORTVERSION=	1.7.0
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
 MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Unified, cross platform replacement for the Etc module
 
-LICENSE=	ART20
+LICENSE=	APACHE20
 
 RUN_DEPENDS=	rubygem-ffi>=1.1.0:devel/rubygem-ffi
 

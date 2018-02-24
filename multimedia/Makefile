@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/multimedia/Makefile 462619 2018-02-22 19:03:17Z tcberner $
 #
 
     COMMENT = Multimedia software
@@ -41,7 +41,7 @@
     SUBDIR += deforaos-player
     SUBDIR += devede
     SUBDIR += dirac
-    SUBDIR += dragon
+    SUBDIR += dragon-kde4
     SUBDIR += dtv-scan-tables
     SUBDIR += dumpmpeg
     SUBDIR += dv2jpg

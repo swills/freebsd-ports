@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/www/py-http-parser/Makefile 370518 2014-10-09 12:35:26Z vg $
+# $FreeBSD: head/www/py-http-parser/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	http-parser
 PORTVERSION=	0.8.3
@@ -7,7 +7,7 @@ CATEGORIES=	www
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	python@FreeBSD.org
 COMMENT=	HTTP request/response parser for python in C
 
 LICENSE=	MIT

@@ -1,5 +1,5 @@
 # Created by: Oleg Ginzburg
-# $FreeBSD: head/sysutils/retail/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/sysutils/retail/Makefile 462733 2018-02-23 19:33:50Z yuri $
 
 PORTNAME=	retail
 PORTVERSION=	1.0.1
@@ -7,7 +7,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	http://xjack.org/retail/download/ \
 		http://www.bsdstore.ru/downloads/
 
-MAINTAINER=	olevole@olevole.ru
+MAINTAINER=	portmaster@BSDforge.com
 COMMENT=	Program for incremental logfile reader
 
 LICENSE=	GPLv2

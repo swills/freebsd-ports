@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/python34/Makefile 461621 2018-02-12 19:03:53Z sunpoet $
+# $FreeBSD: head/lang/python34/Makefile 462631 2018-02-22 19:50:59Z sunpoet $
 
 PORTNAME=	python
 PORTVERSION=	${PYTHON_PORTVERSION}
@@ -13,6 +13,8 @@ MAINTAINER=	python@FreeBSD.org
 COMMENT=	Interpreted object-oriented programming language
 
 LICENSE=	PSFL
+
+BROKEN_SSL=	openssl-devel
 
 USES=		cpe ncurses pathfix pkgconfig readline:port shebangfix ssl tar:xz
 PATHFIX_MAKEFILEIN=	Makefile.pre.in

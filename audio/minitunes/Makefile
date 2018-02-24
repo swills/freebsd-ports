@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/audio/minitunes/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/minitunes/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	minitunes
 PORTVERSION=	0.1.1
@@ -7,7 +7,7 @@ PORTREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	http://flavio.tordini.org/files/${PORTNAME}/
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Just another music player
 
 LIB_DEPENDS=	libtag.so:audio/taglib

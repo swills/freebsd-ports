@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 462398 2018-02-20 15:19:25Z tz $
+# $FreeBSD: head/security/Makefile 462692 2018-02-23 13:01:43Z wg $
 #
 
     COMMENT = Security tools
@@ -318,7 +318,7 @@
     SUBDIR += krb5-devel
     SUBDIR += kripp
     SUBDIR += kstart
-    SUBDIR += kwalletmanager
+    SUBDIR += kwalletmanager-kde4
     SUBDIR += l0pht-watch
     SUBDIR += l0phtcrack
     SUBDIR += l5
@@ -884,12 +884,25 @@
     SUBDIR += py-acme
     SUBDIR += py-acme-tiny
     SUBDIR += py-artifacts
+    SUBDIR += py-asyncssh
     SUBDIR += py-backports.ssl_match_hostname
     SUBDIR += py-bcrypt
     SUBDIR += py-borg.localrole
     SUBDIR += py-btchip-python
     SUBDIR += py-cerealizer
     SUBDIR += py-certbot
+    SUBDIR += py-certbot-apache
+    SUBDIR += py-certbot-dns-cloudflare
+    SUBDIR += py-certbot-dns-cloudxns
+    SUBDIR += py-certbot-dns-digitalocean
+    SUBDIR += py-certbot-dns-dnsimple
+    SUBDIR += py-certbot-dns-dnsmadeeasy
+    SUBDIR += py-certbot-dns-google
+    SUBDIR += py-certbot-dns-luadns
+    SUBDIR += py-certbot-dns-nsone
+    SUBDIR += py-certbot-dns-rfc2136
+    SUBDIR += py-certbot-dns-route53
+    SUBDIR += py-certbot-nginx
     SUBDIR += py-certifi
     SUBDIR += py-cpe
     SUBDIR += py-cracklib

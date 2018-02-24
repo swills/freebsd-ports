@@ -1,5 +1,5 @@
 # Created by: Andrei V. Shetuhin <reki@reki.ru>
-# $FreeBSD: head/textproc/ctpp2/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/textproc/ctpp2/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	ctpp2
 PORTVERSION=	2.8.3
@@ -7,7 +7,7 @@ PORTREVISION=	5
 CATEGORIES=	textproc devel
 MASTER_SITES=	http://ctpp.havoc.ru/download/
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	C++ library to use templates in C/C++ projects, version 2
 
 USES=		cmake gettext compiler:c++11-lang

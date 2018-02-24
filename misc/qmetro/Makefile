@@ -1,12 +1,12 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/misc/qmetro/Makefile 347776 2014-03-10 16:25:33Z bapt $
+# $FreeBSD: head/misc/qmetro/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	qmetro
 PORTVERSION=	0.6.5
 CATEGORIES=	misc graphics
 MASTER_SITES=	SF/${PORTNAME}/source/
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Map of the transport system for many city subways
 
 LICENSE=	GPLv2

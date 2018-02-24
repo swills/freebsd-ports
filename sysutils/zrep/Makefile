@@ -1,11 +1,11 @@
-# $FreeBSD: head/sysutils/zrep/Makefile 444359 2017-06-26 09:34:54Z olgeni $
+# $FreeBSD: head/sysutils/zrep/Makefile 462664 2018-02-23 03:02:36Z yuri $
 
 PORTNAME=	zrep
 PORTVERSION=	1.7.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
-MAINTAINER=	olevole@olevole.ru
+MAINTAINER=	neel@neelc.org
 COMMENT=	ZFS based replication and failover solution
 
 LICENSE=	bolthole

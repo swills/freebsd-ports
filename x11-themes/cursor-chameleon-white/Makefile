@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/x11-themes/cursor-chameleon-white/Makefile 448082 2017-08-17 08:26:25Z bapt $
+# $FreeBSD: head/x11-themes/cursor-chameleon-white/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	chameleon
 PORTVERSION=	0.5
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	cursor-
 PKGNAMESUFFIX=	-white
 DISTNAME=	Chameleon-White-${PORTVERSION}
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Chameleon Xcursors theme
 
 LICENSE=	GPLv2

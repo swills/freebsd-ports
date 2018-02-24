@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/lang/angelscript/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/lang/angelscript/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	angelscript
 PORTVERSION=	2.29.0
@@ -8,7 +8,7 @@ CATEGORIES=	lang
 MASTER_SITES=	http://www.angelcode.com/angelscript/sdk/files/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	AngelCode Scripting Library
 
 LICENSE=	ZLIB

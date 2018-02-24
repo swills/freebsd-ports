@@ -1,12 +1,12 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/smack/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/devel/smack/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	smack
 PORTVERSION=	0.5.0
 PORTREVISION=	10
 CATEGORIES=	devel
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Low-level I/O storage library which packs data
 
 LICENSE=	GPLv2

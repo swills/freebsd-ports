@@ -1,5 +1,5 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/deskutils/plasma-applet-fancytasks/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/deskutils/plasma-applet-fancytasks/Makefile 462745 2018-02-23 21:09:47Z rene $
 
 PORTNAME=	fancytasks
 PORTVERSION=	1.1.0
@@ -9,7 +9,7 @@ MASTER_SITES=	http://kde-look.org/CONTENT/content-files/
 PKGNAMEPREFIX=	plasma-applet-
 DISTNAME=	99737-${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	vg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Plasmoid fancy representation of your tasks and launchers
 
 LICENSE=	GPLv2

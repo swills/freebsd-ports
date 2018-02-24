@@ -1,10 +1,9 @@
 # Created by: Kevin Zheng <kevinz5000@gmail.com>
-# $FreeBSD: head/games/openclonk/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/games/openclonk/Makefile 462656 2018-02-23 00:54:45Z yuri $
 
 PORTNAME=	openclonk
-PORTVERSION=	7.0
+DISTVERSION=	8.0
 DISTVERSIONSUFFIX=	-src
-PORTREVISION=	10
 CATEGORIES=	games
 MASTER_SITES=	http://www.openclonk.org/builds/release/${DISTVERSION}/
 
@@ -15,20 +14,25 @@ LICENSE=	ISCL CC0-1.0
 LICENSE_COMB=	multi
 LICENSE_FILE_ISCL=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
-		libfreetype.so:print/freetype2 \
-		libogg.so:audio/libogg \
-		libpng.so:graphics/png \
-		libvorbis.so:audio/libvorbis
-
 BROKEN_powerpc64=	fails to compile: C4Texture.cpp:260:13: error: 'stoul' is not a member of 'std'
 
-USES=		compiler:c++14-lang cmake:noninja desktop-file-utils jpeg pkgconfig tar:bzip2
-USE_GL=		glew
-USE_GNOME=	gtk30
-USE_SDL=	sdl mixer
+LIB_DEPENDS=	libalut.so:audio/freealut \
+		libfreetype.so:print/freetype2 \
+		libminiupnpc.so:net/miniupnpc \
+		libogg.so:audio/libogg \
+		libpng.so:graphics/png \
+		libtinyxml.so:textproc/tinyxml \
+		libvorbis.so:audio/libvorbis
+
+WRKSRC=		${WRKDIR}/openclonk-release-${PORTVERSION}-src
+
+# make install has parallel issues with ninja
+USES=		compiler:c++14-lang cmake:noninja desktop-file-utils jpeg openal pkgconfig tar:bzip2
+USE_GL=		gl glew glu
+USE_SDL=	sdl2
 USE_XORG=	x11 xpm
 INSTALLS_ICONS=	yes
+CMAKE_ARGS=	-DAudio_TK:STRING="OpenAL"
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|DESTINATION games|DESTINATION bin|' \

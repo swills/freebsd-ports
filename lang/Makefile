@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 462537 2018-02-21 17:58:56Z lwhsu $
+# $FreeBSD: head/lang/Makefile 462619 2018-02-22 19:03:17Z tcberner $
 #
 
     COMMENT = Programming languages
@@ -150,7 +150,7 @@
     SUBDIR += jython
     SUBDIR += kawa
     SUBDIR += kf5-kross
-    SUBDIR += kturtle
+    SUBDIR += kturtle-kde4
     SUBDIR += lafontaine
     SUBDIR += lci
     SUBDIR += ldc

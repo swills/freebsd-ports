@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/games/torcs/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/torcs/Makefile 462754 2018-02-24 00:28:10Z madpilot $
 
 PORTNAME=	torcs
 DISTVERSION=	1.3.7
@@ -19,12 +19,13 @@ RUN_DEPENDS=	bash:shells/bash
 
 MAKE_JOBS_UNSAFE=	yes
 
-USES=		cpe gmake openal:al,alut shebangfix tar:bzip2
+USES=		compiler:c++11-lang cpe gmake openal:al,alut shebangfix tar:bzip2
 CPE_VENDOR=	bernhard_wymann
 SHEBANG_FILES=	src/tools/accc/accc.in src/tools/nfsperf/nfsperf.in \
 		src/tools/texmapper/texmapper.in src/tools/nfs2ac/nfs2ac.in \
 		src/tools/trackgen/trackgen.in \
 		src/modules/telemetry/telemetry.sh robotgen
+USE_CXXSTD=	c++11
 USE_XORG=	xrender xmu ice xext x11 xxf86vm xrandr xi xt sm
 USE_GL=		glut glu gl
 GNU_CONFIGURE=	yes
