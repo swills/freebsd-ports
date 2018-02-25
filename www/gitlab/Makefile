@@ -188,7 +188,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-rbnacl4<=4.0.2:security/rubygem-rbnacl4 \
 	rubygem-rbnacl-libsodium>=0:security/rubygem-rbnacl-libsodium \
 	rubygem-bcrypt_pbkdf>=1.0:security/rubygem-bcrypt_pbkdf \
-	rubygem-gitaly-proto>=0.84.0:net/rubygem-gitaly-proto \
+	rubygem-gitaly-proto084>=0.84.0:net/rubygem-gitaly-proto084 \
 	rubygem-gitaly>=0.8.0:net/rubygem-gitaly \
 	rubygem-google-protobuf351>=3.5.1:devel/rubygem-google-protobuf351 \
 	rubygem-toml-rb03>=0.3.15:www/rubygem-toml-rb03 \
