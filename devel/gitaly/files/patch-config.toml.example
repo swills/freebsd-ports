@@ -1,14 +1,14 @@
---- config.toml.example.orig	2017-10-28 10:50:48.245547000 +0200
-+++ config.toml.example	2017-10-28 10:56:00.467310000 +0200
+--- config.toml.example.orig	2018-02-08 14:44:53 UTC
++++ config.toml.example
 @@ -1,6 +1,6 @@
  # Example Gitaly configuration file
  
 -socket_path = "/home/git/gitlab/tmp/sockets/private/gitaly.socket"
 +socket_path = "/usr/local/www/gitlab/tmp/sockets/private/gitaly.socket"
  
- # # Optional: listen on a TCP socket. This is insecure (no authentication)
- # listen_addr = "localhost:9999"
-@@ -10,14 +10,20 @@
+ # The directory where Gitaly's executables are stored
+ bin_dir = "/home/git/gitaly"
+@@ -13,13 +13,19 @@ bin_dir = "/home/git/gitaly"
  # prometheus_listen_addr = "localhost:9236"
  #
  
@@ -23,13 +23,12 @@
  name = "default"
 -path = "/home/git/repositories"
 +path = "/usr/home/git/repositories"
- 
++
 +[gitaly-ruby]
 +dir = "/usr/local/bin/ruby"
 +
 +[gitlab-shell]
 +dir = "/usr/local/share/gitlab-shell/bin/gitlab-shell"
-+
+ 
  # # You can optionally configure more storages for this Gitaly instance to serve up
  #
- # [[storage]]

@@ -1,2 +1,3 @@
 @(,,555) %%DATADIR%%/bin/gitaly
+@(,,555) %%DATADIR%%/bin/gitaly-ssh
 @sample %%DATADIR%%/config.toml.sample

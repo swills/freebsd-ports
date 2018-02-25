@@ -2,7 +2,7 @@
 
 PORTNAME=	gitaly
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.21.2
+DISTVERSION=	0.82.0
 PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://gitlab.com/gitlab-org/${PORTNAME}/repository/archive.tar.gz?ref=${DISTVERSIONPREFIX}${PORTVERSION}&dummy=/
@@ -13,7 +13,20 @@ COMMENT=	Smart reverse proxy for GitLab
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	go>=1.8:lang/go
+BUILD_DEPENDS=	go>=1.8:lang/go \
+		git>=2.14.3:devel/git \
+		rubygem-github-linguist47>=4.7.0:textproc/rubygem-github-linguist47 \
+		rubygem-bundler>0:sysutils/rubygem-bundler \
+		rubygem-gitlab-markup>=1.6.2:textproc/rubygem-gitlab-markup \
+		rubygem-gitaly-proto083>=0.83.0:net/rubygem-gitaly-proto083 \
+		rubygem-activesupport50>=5.0.2:devel/rubygem-activesupport50 \
+		rubygem-rdoc>=4.2:devel/rubygem-rdoc \
+		rubygem-gollum-lib-gitlab>=4.2.0:www/rubygem-gollum-lib-gitlab \
+		rubygem-gollum-rugged_adapter>=0.4.4:www/rubygem-gollum-rugged_adapter \
+		rubygem-grpc>=1.8.0:net/rubygem-grpc \
+		rubygem-google-protobuf351>=3.5.1:devel/rubygem-google-protobuf351
+
+RUN_DEPENDS=	git>=2.14.3:devel/git
 
 USES=	gmake
 USE_RUBY=	yes
@@ -32,5 +45,6 @@ do-install:
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${DATADIR}/bin/gitaly
+	${STRIP_CMD} ${STAGEDIR}${DATADIR}/bin/gitaly-ssh
 
 .include <bsd.port.mk>
