@@ -1,12 +1,12 @@
 # Created by: Pawel Pekala <c0rn@o2.pl>
-# $FreeBSD: head/polish/qnapi/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/polish/qnapi/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	qnapi
 PORTVERSION=	0.2.3
 PORTREVISION=	1
 CATEGORIES=	polish multimedia
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Qt5 based subtitle downloader
 
 LICENSE=	GPLv2

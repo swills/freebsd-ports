@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb100-server/Makefile 462050 2018-02-16 17:52:50Z brnrd $
+# $FreeBSD: head/databases/mariadb100-server/Makefile 462802 2018-02-24 13:12:17Z brnrd $
 
 PORTNAME?=	mariadb
 PORTVERSION=	10.0.34
@@ -160,9 +160,6 @@ NOT_FOR_ARCHS_REASON=	TokuDB not supported on 32-bit platforms, see \
 # Server segfaults on i386 when built with clang >= 3.4
 USE_GCC=	yes
 .endif
-
-post-extract-OQGRAPH-off:
-	@${RM} -r ${WRKSRC}/storage/oqgraph
 
 post-patch:
 	@${REINPLACE_CMD} 's/*.1/${MAN1}/' ${WRKSRC}/man/CMakeLists.txt

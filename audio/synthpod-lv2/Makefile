@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/synthpod-lv2/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/audio/synthpod-lv2/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	synthpod
 PORTVERSION=	g20170810
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Lightweight Nonlinear LV2 Plugin Container
 
 LICENSE=	ART20

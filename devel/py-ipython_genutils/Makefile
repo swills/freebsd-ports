@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/py-ipython_genutils/Makefile 439012 2017-04-21 07:25:33Z miwi $
+# $FreeBSD: head/devel/py-ipython_genutils/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	ipython_genutils
 PORTVERSION=	0.2.0
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Vestigial utilities from IPython
 
 LICENSE=	BSD3CLAUSE

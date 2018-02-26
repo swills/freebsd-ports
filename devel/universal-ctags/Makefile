@@ -1,8 +1,8 @@
 # Created by: Derek Schrock <dereks@lifeofadishwasher.com>
-# $FreeBSD: head/devel/universal-ctags/Makefile 452957 2017-10-26 22:14:34Z rodrigo $
+# $FreeBSD: head/devel/universal-ctags/Makefile 462980 2018-02-25 22:22:47Z tobik $
 
 PORTNAME=	universal-ctags
-PORTVERSION=	g20171017
+PORTVERSION=	g20180225
 CATEGORIES=	devel
 
 MAINTAINER=	dereks@lifeofadishwasher.com
@@ -14,9 +14,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 USES=		autoreconf pkgconfig
 GNU_CONFIGURE=	yes
 
-USE_GITHUB=	YES
+USE_GITHUB=	yes
 GH_PROJECT=	ctags
-GH_TAGNAME=	ccac4dff
+GH_TAGNAME=	059ed2c508c
 
 OPTIONS_DEFINE=			ASPELL DEBUG ICONV JSON LIBXML2 MANPAGES YAML
 OPTIONS_DEFAULT=		ICONV JSON LIBXML2 MANPAGES YAML

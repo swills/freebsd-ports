@@ -1,12 +1,12 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/www/py-rfc3986/Makefile 452407 2017-10-19 09:18:38Z wen $
+# $FreeBSD: head/www/py-rfc3986/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	rfc3986
 PORTVERSION=	1.1.0
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Python implementation of RFC 3986
 
 LICENSE=	APACHE20

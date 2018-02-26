@@ -1,8 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-io/Makefile 452825 2017-10-25 01:06:56Z stephen $
+# $FreeBSD: head/math/octave-forge-io/Makefile 462867 2018-02-24 22:03:00Z stephen $
 
 PORTNAME=	octave-forge-io
 PORTVERSION=	2.4.8
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	math
 

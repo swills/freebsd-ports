@@ -1,12 +1,12 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/x11-themes/claws-mail-themes/Makefile 394914 2015-08-20 20:44:55Z pawel $
+# $FreeBSD: head/x11-themes/claws-mail-themes/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	claws-mail-themes
 PORTVERSION=	20140629
 CATEGORIES=	x11-themes mail
 MASTER_SITES=	http://www.claws-mail.org/themes/
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Claws Mail icon themes
 
 NO_ARCH=	yes

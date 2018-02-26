@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@FreeBSD.org>
-# $FreeBSD: head/math/octave-forge-cgi/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/octave-forge-cgi/Makefile 462979 2018-02-25 22:15:18Z stephen $
 
 PORTNAME=	octave-forge-cgi
 PORTVERSION=	0.1.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org
@@ -22,6 +22,8 @@ WRKSRC=		${WRKDIR}/${OCTSRC}/src
 
 do-build:
 	@${DO_NADA}
+
+NO_ARCH=	yes
 
 post-build:
 	${RM} ${WRKSRC}/Makefile ${WRKSRC}/configure

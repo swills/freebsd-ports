@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/slibtool/Makefile 447747 2017-08-11 08:44:00Z bapt $
+# $FreeBSD: head/devel/slibtool/Makefile 462793 2018-02-24 11:29:44Z bapt $
 
 PORTNAME=	slibtool
-PORTVERSION=	0.5.17
+PORTVERSION=	0.5.18
 CATEGORIES=	devel
 MASTER_SITES=	http://dl.midipix.org/${PORTNAME}/
 

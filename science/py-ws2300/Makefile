@@ -1,9 +1,9 @@
 # Created by: Stefan Bethke <stb@lassitu.de>
-# $FreeBSD: head/science/py-ws2300/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/science/py-ws2300/Makefile 462989 2018-02-26 04:16:14Z yuri $
 
 PORTNAME=	ws2300
 PORTVERSION=	1.10
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science python
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION}-1
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +15,7 @@ LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/agpl-3.0.txt
 
 USES=		python:2.7
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils concurrent autoplist
 NO_ARCH=	yes
 
 PLIST_FILES=	bin/ws2300 man/man1/ws2300.1.gz
@@ -23,5 +23,6 @@ PLIST_FILES=	bin/ws2300 man/man1/ws2300.1.gz
 post-install:
 	${INSTALL_SCRIPT} ${FILESDIR}/ws2300 ${STAGEDIR}${PREFIX}/bin/ws2300
 	${INSTALL_MAN} ${WRKSRC}/ws2300.1 ${STAGEDIR}${PREFIX}/man/man1/
+	@${REINPLACE_CMD} -i '' -e 's|/usr/bin/env python|${PYTHON_CMD}|' ${STAGEDIR}${PREFIX}/bin/ws2300
 
 .include <bsd.port.mk>

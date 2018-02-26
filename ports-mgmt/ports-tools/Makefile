@@ -1,11 +1,11 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/ports-mgmt/ports-tools/Makefile 460843 2018-02-03 20:03:08Z pawel $
+# $FreeBSD: head/ports-mgmt/ports-tools/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	ports-tools
 PORTVERSION=	1.7
 CATEGORIES=	ports-mgmt
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Collection of ports tree related scripts
 
 LICENSE=	BSD2CLAUSE

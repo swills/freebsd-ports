@@ -1,11 +1,11 @@
-# $FreeBSD: head/finance/homebank/Makefile 458694 2018-01-10 20:21:53Z pawel $
+# $FreeBSD: head/finance/homebank/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	homebank
 PORTVERSION=	5.1.7
 CATEGORIES=	finance
 MASTER_SITES=	http://homebank.free.fr/public/
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Free, easy, personal accounting for everyone
 
 LICENSE=	GPLv2

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/databases/sqlite-ext-regexp/Makefile 414709 2016-05-06 15:02:46Z pi $
+# $FreeBSD: head/databases/sqlite-ext-regexp/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	sqlite-ext-regexp
 PORTVERSION=	3.8.11.1
@@ -8,7 +8,7 @@ MASTER_SITES=	https://www.sqlite.org/2015/ http://www2.sqlite.org/2015/ http://w
 DISTNAME=	sqlite-src-${PORTVERSION:S|8.|8|:S|.|0|g}
 DIST_SUBDIR=	sqlite-ext
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Regular-expression matcher using NFA engine for SQLite
 
 LICENSE=	public

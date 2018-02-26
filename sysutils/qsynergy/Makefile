@@ -1,5 +1,5 @@
 # Created by: Kevin Zheng <kevinz5000@gmail.com>
-# $FreeBSD: head/sysutils/qsynergy/Makefile 335666 2013-12-05 12:36:21Z makc $
+# $FreeBSD: head/sysutils/qsynergy/Makefile 463002 2018-02-26 09:02:41Z yuri $
 
 PORTNAME=	qsynergy
 PORTVERSION=	0.9.1
@@ -13,7 +13,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		qmake
-USE_QT4=	moc_build rcc_build uic_build gui network
+USE_QT4=	moc_build rcc_build uic_build corelib gui network
 
 PLIST_FILES=	bin/qsynergy \
 		share/pixmaps/qsynergy.xpm

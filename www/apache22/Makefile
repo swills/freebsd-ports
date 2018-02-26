@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/apache22/Makefile 450118 2017-09-19 12:29:33Z zi $
+# $FreeBSD: head/www/apache22/Makefile 462786 2018-02-24 10:33:54Z brnrd $
 
 PORTNAME=	apache22
 PORTVERSION=	2.2.34
-PORTREVISION?=	1
+PORTREVISION?=	2
 CATEGORIES=	www ipv6
 MASTER_SITES=	APACHE_HTTPD
 DISTNAME=	httpd-${PORTVERSION}
@@ -13,6 +13,11 @@ COMMENT?=	Version 2.2.x of Apache web server with ${WITH_MPM} MPM
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_SSL=	openssl-devel libressl libressl-devel
+BROKEN_SSL_REASON_openssl-devel=	configure: Error... SSL/TLS libraries were missing or unusable
+BROKEN_SSL_REASON_libressl=		error: no member named 'state' in 'struct ssl_st'
+BROKEN_SSL_REASON_libressl-devel=	${BROKEN_SSL_REASON_libressl}
 
 LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libapr-1.so:devel/apr1 \

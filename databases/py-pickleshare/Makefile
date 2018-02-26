@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/databases/py-pickleshare/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/py-pickleshare/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	pickleshare
 PORTVERSION=	0.7.4
@@ -7,7 +7,7 @@ CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Tiny shelve-like database with concurrency support
 
 LICENSE=	MIT

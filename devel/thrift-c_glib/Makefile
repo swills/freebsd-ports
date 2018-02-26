@@ -1,9 +1,8 @@
 # Created by: Valery Komarov <komarov@valerka.net>
-# $FreeBSD: head/devel/thrift-c_glib/Makefile 441455 2017-05-22 13:17:38Z linimon $
+# $FreeBSD: head/devel/thrift-c_glib/Makefile 462862 2018-02-24 20:40:27Z lx $
 
 PORTNAME=	thrift
 PORTVERSION=	${THRIFT_PORTVERSION} # to keep in sync with thrift
-PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	APACHE/thrift/${PORTVERSION}

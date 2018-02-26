@@ -1,5 +1,5 @@
 # Created by: Doug Barton <dougb@FreeBSD.org>
-# $FreeBSD: head/net-p2p/qbittorrent/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/net-p2p/qbittorrent/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	qbittorrent
 DISTVERSION=	3.3.16
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	net-p2p ipv6
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT?=	Bittorrent client using Qt4/5 and libtorrent-rasterbar
 
 LICENSE=	GPLv2+

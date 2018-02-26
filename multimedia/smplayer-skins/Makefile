@@ -1,5 +1,5 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/multimedia/smplayer-skins/Makefile 381287 2015-03-14 17:12:56Z pawel $
+# $FreeBSD: head/multimedia/smplayer-skins/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	smplayer-skins
 PORTVERSION=	15.2.0
@@ -7,7 +7,7 @@ PORTEPOCH=	1
 CATEGORIES=	multimedia audio kde
 MASTER_SITES=	SF/smplayer/SMPlayer-skins/${PORTVERSION}
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	Skins for SMPlayer (Skinnable GUI)
 
 USES=		tar:bzip2

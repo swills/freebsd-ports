@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/qmidiarp/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/audio/qmidiarp/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	qmidiarp
 DISTVERSIONPREFIX=	qmidiarp-
@@ -8,7 +8,7 @@ PORTREVISION=	1
 DISTVERSIONSUFFIX=	-g1a15c13
 CATEGORIES=	audio
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	MIDI arpeggiator, sequencer and LFO for JACK
 
 LICENSE=	GPLv2

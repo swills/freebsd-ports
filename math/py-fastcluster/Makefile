@@ -1,31 +1,34 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/math/py-fastcluster/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/math/py-fastcluster/Makefile 462923 2018-02-25 05:33:33Z sunpoet $
 
 PORTNAME=	fastcluster
-PORTVERSION=	1.1.23
+PORTVERSION=	1.1.24
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	johannes@perceivon.net
-COMMENT=	Python functions for hierarchical clustering
+MAINTAINER=	sunpoet@FreeBSD.org
+COMMENT=	Fast hierarchical clustering routines for R and Python
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
 BUILD_DEPENDS=	${PYNUMPY}
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${FLAVOR}
-
-PORTDOCS=	CITATION.txt \
-		INSTALL.txt \
-		NEWS.txt \
-		README.txt
+		${PYTHON_PKGNAMEPREFIX}scipy>=0:science/py-scipy@${FLAVOR}
 
 USES=		python
-USE_PYTHON=	distutils autoplist concurrent
+USE_PYTHON=	autoplist concurrent distutils
+
+PORTDOCS=	CITATION.txt INSTALL.txt NEWS.txt README.txt
+
+OPTIONS_DEFINE=	DOCS
 
 post-install:
+	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/_fastcluster.so
+
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
+	cd ${WRKSRC}/ && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

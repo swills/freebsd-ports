@@ -1,5 +1,5 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/games/gigalomania/Makefile 405367 2016-01-06 16:46:28Z pawel $
+# $FreeBSD: head/games/gigalomania/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	gigalomania
 PORTVERSION=	0.28
@@ -7,7 +7,7 @@ CATEGORIES=	games
 MASTER_SITES=	https://launchpad.net/gigalomania/trunk/${PORTVERSION}/+download/
 DISTNAME=	${PORTNAME}src
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	games@FreeBSD.org
 COMMENT=	Open source 2D real time strategy god game
 
 USES=		zip

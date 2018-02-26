@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/textproc/py-pyphen/Makefile 450924 2017-09-29 17:00:12Z sunpoet $
+# $FreeBSD: head/textproc/py-pyphen/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	pyphen
 PORTVERSION=	0.9.4
@@ -8,7 +8,7 @@ MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	Pyphen-${PORTVERSION}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Module to hyphenate text based on Hunspell dictionaries
 
 LICENSE=	GPLv2 LGPL21 MPL11

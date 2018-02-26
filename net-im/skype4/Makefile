@@ -1,5 +1,5 @@
 # Created by: netchild@FreeBSD.org
-# $FreeBSD: head/net-im/skype4/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/net-im/skype4/Makefile 462775 2018-02-24 08:52:27Z tcberner $
 
 PORTNAME=	skype
 PORTVERSION=	4.3.0.37
@@ -9,7 +9,7 @@ CATEGORIES=	net-im
 MASTER_SITES=	http://download.skype.com/linux/
 PKGNAMESUFFIX=	4
 
-MAINTAINER=	johannes@perceivon.net
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	P2P VoIP software
 
 RUN_DEPENDS=	${LINUXBASE}/lib/skype_oss_wrapper/libpulse.so.0:audio/linux-skype_oss_wrapper

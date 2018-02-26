@@ -1,11 +1,12 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/multimedia/libquvi-scripts09/Makefile 434364 2017-02-18 16:09:23Z sunpoet $
+# $FreeBSD: head/multimedia/libquvi-scripts09/Makefile 462907 2018-02-25 05:32:09Z sunpoet $
 
 PORTNAME=	libquvi-scripts
 PORTVERSION=	0.9.20131130
 PORTREVISION=	1
 CATEGORIES=	multimedia devel
-MASTER_SITES=	SF/quvi/${PORTVERSION}/${PORTNAME}/
+MASTER_SITES=	SF/quvi/${PORTVERSION}/${PORTNAME}/ \
+		LOCAL/sunpoet
 PKGNAMESUFFIX=	09
 
 MAINTAINER=	sunpoet@FreeBSD.org

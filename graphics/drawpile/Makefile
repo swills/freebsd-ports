@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/drawpile/Makefile 461605 2018-02-12 17:18:48Z yuri $
+# $FreeBSD: head/graphics/drawpile/Makefile 463008 2018-02-26 09:30:01Z yuri $
 
 PORTNAME=	Drawpile
-DISTVERSION=	2.0.8
+DISTVERSION=	2.0.9
 CATEGORIES=	graphics python
 
 MAINTAINER=	yuri@FreeBSD.org

@@ -1,12 +1,12 @@
 # Created by: Pawel Pekala <c0rn@o2.pl>
-# $FreeBSD: head/mail/clawsker/Makefile 457429 2017-12-27 22:45:54Z pawel $
+# $FreeBSD: head/mail/clawsker/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	clawsker
 PORTVERSION=	1.1.1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.claws-mail.org/tools/
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Applet to edit Claws Mail's hidden preferences
 
 LICENSE=	GPLv3

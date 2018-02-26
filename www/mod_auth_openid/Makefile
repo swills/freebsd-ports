@@ -1,5 +1,5 @@
 # Created by: Sutra Zhou <zhoushuqun@gmail.com>
-# $FreeBSD: head/www/mod_auth_openid/Makefile 449779 2017-09-13 12:39:10Z zi $
+# $FreeBSD: head/www/mod_auth_openid/Makefile 462849 2018-02-24 16:26:50Z joneum $
 
 PORTNAME=	mod_auth_openid
 PORTVERSION=	0.8
@@ -8,7 +8,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Authentication module for the Apache 2 webserver with OpenID
 
 LICENSE=	MIT

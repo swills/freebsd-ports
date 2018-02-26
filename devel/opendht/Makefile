@@ -1,12 +1,12 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/opendht/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/opendht/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	opendht
 PORTVERSION=	0.5.2
 PORTREVISION=	3
 CATEGORIES=	devel net
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Lightweight Distributed Hash Table implementation
 
 LICENSE=	GPLv3

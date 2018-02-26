@@ -1,4 +1,4 @@
-# $FreeBSD: head/finance/Makefile 462565 2018-02-22 07:17:40Z yuri $
+# $FreeBSD: head/finance/Makefile 462973 2018-02-25 19:33:57Z pi $
 #
 
     COMMENT = Monetary, financial, and related applications
@@ -100,6 +100,7 @@
     SUBDIR += py-vatnumber
     SUBDIR += py-ystockquote
     SUBDIR += qhacc
+    SUBDIR += quickfix
     SUBDIR += rubygem-money
     SUBDIR += sabernetdcs-client
     SUBDIR += skrooge

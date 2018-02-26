@@ -1,12 +1,12 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/shells/wcd/Makefile 453353 2017-11-02 17:26:23Z pawel $
+# $FreeBSD: head/shells/wcd/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	wcd
 PORTVERSION=	6.0.1
 CATEGORIES=	shells
 MASTER_SITES=	SF
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Command-line program to change directory fast
 
 LICENSE=	GPLv2

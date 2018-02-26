@@ -1,11 +1,11 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/caps-lv2/Makefile 448455 2017-08-21 07:05:51Z ultima $
+# $FreeBSD: head/audio/caps-lv2/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	caps-lv2
 PORTVERSION=	g20170626
 CATEGORIES=	audio
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	LV2 version of the C* Audio Plugin Suite
 
 LICENSE=	GPLv3

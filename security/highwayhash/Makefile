@@ -1,11 +1,11 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/highwayhash/Makefile 456719 2017-12-19 14:41:29Z linimon $
+# $FreeBSD: head/security/highwayhash/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	highwayhash
 PORTVERSION=	g20170512
 CATEGORIES=	security
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Fast strong hash functions: SipHash/HighwayHash
 
 LICENSE=	APACHE20

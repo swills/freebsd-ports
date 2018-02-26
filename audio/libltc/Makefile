@@ -1,12 +1,12 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/libltc/Makefile 447744 2017-08-11 08:28:11Z ultima $
+# $FreeBSD: head/audio/libltc/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	libltc
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.3.0
 CATEGORIES=	audio
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Linear/Logitudinal Time Code (LTC) Library
 
 LICENSE=	LGPL3

@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/security/p5-Crypt-Cracklib/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-Crypt-Cracklib/Makefile 462863 2018-02-24 21:01:47Z adamw $
 
 PORTNAME=	Crypt-Cracklib
 PORTVERSION=	1.7
@@ -15,8 +15,6 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libcrack.so:security/cracklib
-TEST_DEPENDS=	p5-Pod-Coverage>=0.19:devel/p5-Pod-Coverage \
-		p5-Test-Pod-Coverage>=1.08:devel/p5-Test-Pod-Coverage
 
 USES=		perl5
 USE_PERL5=	configure

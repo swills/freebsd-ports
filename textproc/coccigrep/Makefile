@@ -1,12 +1,12 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/textproc/coccigrep/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/coccigrep/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	coccigrep
 PORTVERSION=	1.16
 DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Semantic grep for the C language
 
 LICENSE=	GPLv3

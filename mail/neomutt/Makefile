@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/neomutt/Makefile 458294 2018-01-06 21:31:21Z bapt $
+# $FreeBSD: head/mail/neomutt/Makefile 462833 2018-02-24 14:51:11Z adamw $
 
 PORTNAME=	neomutt
-PORTVERSION=	20171215
+PORTVERSION=	20180223
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	mail
 
@@ -91,13 +91,9 @@ NCURSES_USES=	ncurses
 DOCS_BUILD_DEPENDS=	xsltproc:textproc/libxslt \
 			${LOCALBASE}/share/xsl/docbook/html/docbook.xsl:textproc/docbook-xsl \
 			lynx:www/lynx
-
-.include <bsd.port.options.mk>
-
 # Trick neomutt into building manpages and neomuttrc
-.if empty(PORT_OPTIONS:MDOCS)
-BINARY_ALIAS=	xsltproc=true
-.endif
+DOCS_VARS_OFF=		BINARY_ALIAS=xsltproc=true \
+			BINARY_ALIAS+=xmlcatalog=true
 
 post-install:
 	${RM} ${STAGEDIR}${PREFIX}/etc/mime*

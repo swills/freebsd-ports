@@ -1,5 +1,7 @@
 # Created by: David Thiel <lx@FreeBSD.org>
-# $FreeBSD: head/databases/rocksdb-lite/Makefile 457353 2017-12-27 08:02:58Z linimon $
+# $FreeBSD: head/databases/rocksdb-lite/Makefile 462901 2018-02-25 05:31:39Z sunpoet $
+
+PORTREVISION=	1
 
 MAINTAINER=	lx@FreeBSD.org
 COMMENT=	Persistent key-value store for fast storage environments (lite version)

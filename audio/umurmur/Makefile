@@ -1,8 +1,8 @@
 # Created by: Ayumi Mitsui <ayu@commun.jp>
-# $FreeBSD: head/audio/umurmur/Makefile 462050 2018-02-16 17:52:50Z brnrd $
+# $FreeBSD: head/audio/umurmur/Makefile 462888 2018-02-25 00:53:01Z yuri $
 
 PORTNAME=	umurmur
-PORTVERSION=	0.2.16
+DISTVERSION=	0.2.17
 CATEGORIES=	audio net
 
 MAINTAINER=	ayu@commun.jp
@@ -11,24 +11,20 @@ COMMENT=	Minimalistic Murmur (Mumble server)
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	libconfig.so:devel/libconfig \
-		libprotobuf-c.so:devel/protobuf-c
-
 BROKEN_aarch64=		fails to compile: fatal error: byteswap.h file not found
 BROKEN_armv6=		fails to compile: fatal error: byteswap.h file not found
 BROKEN_SSL=		openssl-devel
 BROKEN_SSL_REASON_openssl-devel=	configure: error: could not find libcrypto
 
-USE_GITHUB=	yes
+LIB_DEPENDS=	libconfig.so:devel/libconfig \
+		libprotobuf-c.so:devel/protobuf-c
 
-USES=		autoreconf gmake libtool ssl
+USES=		autoreconf gmake libtool localbase ssl
 GNU_CONFIGURE=	yes
+USE_GITHUB=	yes
 CONFIGURE_ARGS=	--with-ssl=openssl
 
 USE_RC_SUBR=	umurmur
-
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/configure.ac

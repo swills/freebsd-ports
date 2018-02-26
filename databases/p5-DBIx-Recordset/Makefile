@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/p5-DBIx-Recordset/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Recordset/Makefile 462820 2018-02-24 14:02:05Z sunpoet $
 
 PORTNAME=	DBIx-Recordset
 PORTVERSION=	0.26
@@ -16,10 +16,5 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure
-
-post-configure:
-# bad DBIx::Intrors.3
-		@${PERL} -pi -e 's/^(POD2MAN_EXE.*)$$/\1 -lax/;' \
-			${WRKSRC}/Makefile
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net/zmap/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
+# $FreeBSD: head/net/zmap/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	zmap
 PORTVERSION=	2.1.1
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=	v
 PORTREVISION=	1
 CATEGORIES=	net
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Internet scanner
 
 LICENSE=	APACHE20

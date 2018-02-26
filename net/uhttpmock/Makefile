@@ -1,8 +1,9 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/net/uhttpmock/Makefile 437757 2017-04-04 20:55:05Z bapt $
+# $FreeBSD: head/net/uhttpmock/Makefile 462968 2018-02-25 17:33:04Z pi $
 
 PORTNAME=	uhttpmock
 PORTVERSION=	0.5.1
+PORTREVISION=	1
 CATEGORIES=	net gnome
 MASTER_SITES=	http://tecnocode.co.uk/downloads/uhttpmock/
 DIST_SUBDIR=	gnome3
@@ -19,6 +20,8 @@ USES=		gettext gmake libtool pathfix pkgconfig tar:xz
 USE_GNOME=	gnomeprefix gtk20 introspection:build
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS+=	--disable-Werror
+
 INSTALL_TARGET=	install-strip
 
 .include <bsd.port.mk>

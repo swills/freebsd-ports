@@ -1,12 +1,12 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/sherlock-lv2/Makefile 448346 2017-08-19 17:49:43Z ultima $
+# $FreeBSD: head/audio/sherlock-lv2/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	sherlock
 PORTVERSION=	0.14.0
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Investigative LV2 plugin bundle
 
 LICENSE=	ART20

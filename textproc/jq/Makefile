@@ -1,5 +1,5 @@
 # Created by: Jui-Nan Lin <jnlin@csie.nctu.edu.tw>
-# $FreeBSD: head/textproc/jq/Makefile 454042 2017-11-12 14:00:48Z riggs $
+# $FreeBSD: head/textproc/jq/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	jq
 PORTVERSION=	1.5
@@ -7,7 +7,7 @@ PORTREVISION=	1
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	textproc
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Lightweight and flexible command-line JSON processor
 
 LICENSE=	MIT

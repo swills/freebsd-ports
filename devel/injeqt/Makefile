@@ -1,12 +1,12 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/devel/injeqt/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/injeqt/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	injeqt
 PORTVERSION=	1.2.0
 PORTREVISION=	1
 CATEGORIES=	devel
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Dependency injection framework for Qt
 
 LICENSE=	LGPL21

@@ -1,9 +1,8 @@
 # Created by: Stephen Montgomery-Smith <stephen@FreeBSD.org>
-# $FreeBSD: head/math/octave-forge-doctest/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/octave-forge-doctest/Makefile 462979 2018-02-25 22:15:18Z stephen $
 
 PORTNAME=	octave-forge-doctest
-PORTVERSION=	0.5.0
-PORTREVISION=	3
+PORTVERSION=	0.6.1
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org
@@ -19,6 +18,11 @@ OCTSRC=		${DISTNAME}
 WRKSRC=		${WRKDIR}/${OCTSRC}/src
 
 .include "${.CURDIR}/../../Mk/bsd.octave.mk"
+
+do-build:
+	@${DO_NADA}
+
+NO_ARCH=	yes
 
 post-build:
 	${RM} ${WRKSRC}/Makefile ${WRKSRC}/configure

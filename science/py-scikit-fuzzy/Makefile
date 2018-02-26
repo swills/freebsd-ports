@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/science/py-scikit-fuzzy/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/science/py-scikit-fuzzy/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	scikit-fuzzy
 PORTVERSION=	0.3.1
@@ -7,7 +7,7 @@ CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Fuzzy logic toolkit for SciPy
 
 LICENSE=	BSD3CLAUSE

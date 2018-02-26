@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/mirage/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/mirage/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	mirage
 PORTVERSION=	0.9.5.2
@@ -7,7 +7,7 @@ PORTREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}iv
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fast and simple image viewer
 
 LICENSE=	GPLv3

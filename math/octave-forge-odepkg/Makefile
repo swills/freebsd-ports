@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-odepkg/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/octave-forge-odepkg/Makefile 462872 2018-02-24 22:36:54Z stephen $
 
 PORTNAME=	octave-forge-odepkg
 PORTVERSION=	0.8.5
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org
@@ -11,6 +11,10 @@ COMMENT=	Octave-forge package ${OCTAVE_PKGNAME}
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKDIR}/${OCTSRC}/COPYING
+
+BROKEN=		not a valid package for Octave version >= 4.2.1
+DEPRECIATED=	not a valid package for Octave version >= 4.2.1
+EXPIRATION_DATE=	2018-04-24
 
 USES+=		dos2unix
 DOS2UNIX_GLOB=	*.diff

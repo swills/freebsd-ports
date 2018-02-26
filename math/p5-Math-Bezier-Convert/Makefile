@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/math/p5-Math-Bezier-Convert/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/math/p5-Math-Bezier-Convert/Makefile 462823 2018-02-24 14:02:20Z sunpoet $
 
 PORTNAME=	Math-Bezier-Convert
 PORTVERSION=	0.02
@@ -13,8 +13,5 @@ COMMENT=	Convert cubic and quadratic Bezier each other
 
 USES=		perl5 dos2unix
 USE_PERL5=	configure
-
-post-configure:
-	@${PERL} -pi -e 's/^(POD2MAN_EXE.*)$$/\1 --lax/;' ${WRKSRC}/Makefile
 
 .include <bsd.port.mk>

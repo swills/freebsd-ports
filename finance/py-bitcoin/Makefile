@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/finance/py-bitcoin/Makefile 405769 2016-01-11 07:48:53Z miwi $
+# $FreeBSD: head/finance/py-bitcoin/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	bitcoin
 PORTVERSION=	1.1.42
@@ -7,7 +7,7 @@ CATEGORIES=	finance python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Python Bitcoin Tools
 
 LICENSE=	MIT

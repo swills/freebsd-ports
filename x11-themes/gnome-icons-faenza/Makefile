@@ -1,5 +1,5 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/x11-themes/gnome-icons-faenza/Makefile 422636 2016-09-22 17:17:44Z pawel $
+# $FreeBSD: head/x11-themes/gnome-icons-faenza/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	faenza
 PORTVERSION=	1.3.1
@@ -8,7 +8,7 @@ MASTER_SITES=	https://launchpad.net/~tiheum/+archive/ubuntu/equinox/+files/
 PKGNAMEPREFIX=	gnome-icons-
 DISTNAME=	${PORTNAME}-icon-theme_${PORTVERSION}
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Faenza GNOME 2 icon themes
 
 LICENSE=	GPLv3

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/deskutils/anamnesis/Makefile 455392 2017-12-03 08:25:31Z antoine $
+# $FreeBSD: head/deskutils/anamnesis/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	anamnesis
 PORTVERSION=	1.0.4
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	deskutils
 MASTER_SITES=	SF
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Clipboard manager that stores all clipboard history
 
 LICENSE=	GPLv3

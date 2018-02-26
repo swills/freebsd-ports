@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@leeym.com>
-# $FreeBSD: head/devel/upnp/Makefile 453433 2017-11-03 21:11:12Z pawel $
+# $FreeBSD: head/devel/upnp/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	upnp
 PORTVERSION=	1.6.22
@@ -8,7 +8,7 @@ CATEGORIES=	devel
 MASTER_SITES=	SF/p${PORTNAME}/p${PORTNAME}/libUPnP%20${PORTVERSION}
 DISTNAME=	lib${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Universal Plug and Play Software Development Kit
 
 LICENSE=	BSD3CLAUSE

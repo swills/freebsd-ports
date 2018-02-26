@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/www/py-http-parser/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/www/py-http-parser/Makefile 462811 2018-02-24 13:37:51Z sunpoet $
 
 PORTNAME=	http-parser
 PORTVERSION=	0.8.3
@@ -11,11 +11,12 @@ MAINTAINER=	python@FreeBSD.org
 COMMENT=	HTTP request/response parser for python in C
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python
 USE_PYTHON=	autoplist distutils
 
-post-build:
-	@${STRIP_CMD} ${WRKDIR}/${PORTNAME}-${PORTVERSION}/http_parser/parser.so
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/http_parser/parser.so
 
 .include <bsd.port.mk>

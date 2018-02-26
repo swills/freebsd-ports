@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/kodi-devel/Makefile 462195 2018-02-17 21:45:29Z yuri $
+# $FreeBSD: head/multimedia/kodi-devel/Makefile 462964 2018-02-25 16:46:51Z antoine $
 
 PORTNAME=	kodi
 DISTVERSION=	18.0.g201801112007
@@ -36,7 +36,7 @@ LIB_DEPENDS=	libass.so:multimedia/libass \
 		liblzo2.so:archivers/lzo2 \
 		libpcre.so:devel/pcre \
 		libpcrecpp.so:devel/pcre \
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libpostproc.so:multimedia/ffmpeg \
 		libswresample.so:multimedia/ffmpeg \
 		libswscale.so:multimedia/ffmpeg \

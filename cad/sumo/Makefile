@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/sumo/Makefile 455420 2017-12-03 19:20:35Z yuri $
+# $FreeBSD: head/cad/sumo/Makefile 462964 2018-02-25 16:46:51Z antoine $
 
 PORTNAME=	sumo
 DISTVERSION=	0.31.0
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libFOX-1.6.so:x11-toolkits/fox16 \
 		libfreetype.so:print/freetype2 \
 		libgdal.so:graphics/gdal \
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libproj.so:graphics/proj \
 		libtiff.so:graphics/tiff \
 		libxerces-c.so:textproc/xerces-c3

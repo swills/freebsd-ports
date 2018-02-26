@@ -1,10 +1,11 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/multimedia/libquvi-scripts/Makefile 434361 2017-02-18 16:09:10Z sunpoet $
+# $FreeBSD: head/multimedia/libquvi-scripts/Makefile 462904 2018-02-25 05:31:54Z sunpoet $
 
 PORTNAME=	libquvi-scripts
 PORTVERSION=	0.4.21
 CATEGORIES=	multimedia devel
-MASTER_SITES=	SF/quvi/${PORTVERSION:R}/${PORTNAME}/
+MASTER_SITES=	SF/quvi/${PORTVERSION:R}/${PORTNAME}/ \
+		LOCAL/sunpoet
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Embedded lua scripts for libquvi and utility scripts

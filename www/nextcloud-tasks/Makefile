@@ -1,8 +1,8 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/www/nextcloud-tasks/Makefile 461134 2018-02-07 10:15:27Z brnrd $
+# $FreeBSD: head/www/nextcloud-tasks/Makefile 463000 2018-02-26 08:48:49Z brnrd $
 
 PORTNAME=	tasks
-PORTVERSION=	0.9.5
+PORTVERSION=	0.9.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 MASTER_SITES=	https://github.com/${PKGNAMEPREFIX:S/-//}/${PORTNAME}/releases/download/${DISTVERSIONPREFIX}${PORTVERSION}/

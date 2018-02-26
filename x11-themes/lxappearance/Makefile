@@ -1,12 +1,12 @@
 # Created by: chinsan
-# $FreeBSD: head/x11-themes/lxappearance/Makefile 432556 2017-01-27 16:57:00Z pawel $
+# $FreeBSD: head/x11-themes/lxappearance/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	lxappearance
 PORTVERSION=	0.6.3
 CATEGORIES=	x11-themes gnome
 MASTER_SITES=	SF/lxde/LXAppearance
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Desktop-independent theme switcher for GTK+
 
 LICENSE=	GPLv2

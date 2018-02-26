@@ -1,12 +1,11 @@
 #
-# $FreeBSD: head/devel/thrift/bsd.thrift.mk 399916 2015-10-21 14:17:01Z mat $
+# $FreeBSD: head/devel/thrift/bsd.thrift.mk 462862 2018-02-24 20:40:27Z lx $
 #
 # to use:
 # in your makefile, set:
 # PORTVERSION=	${THRIFT_PORTVERSION}
 # see $PORTSDIR/devel/thrift for examples 
-THRIFT_PORTVERSION=	0.9.3
-THRIFT_PORTREVISION=	1
+THRIFT_PORTVERSION=	0.11.0
 
 CONFIGURE_ARGS+=	\
 		--without-tests

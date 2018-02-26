@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 462655 2018-02-23 00:37:55Z rene $
+# $FreeBSD: head/devel/Makefile 462900 2018-02-25 05:31:34Z sunpoet $
 #
 
     COMMENT = Development utilities
@@ -4437,6 +4437,7 @@
     SUBDIR += py-five.formlib
     SUBDIR += py-five.globalrequest
     SUBDIR += py-five.localsitemanager
+    SUBDIR += py-fixtures
     SUBDIR += py-flake8
     SUBDIR += py-flake8-builtins
     SUBDIR += py-flake8-docstrings

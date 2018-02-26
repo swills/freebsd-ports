@@ -1,8 +1,8 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/mail/nextcloud-mail/Makefile 459749 2018-01-23 13:35:37Z brnrd $
+# $FreeBSD: head/mail/nextcloud-mail/Makefile 462999 2018-02-26 08:37:26Z brnrd $
 
 PORTNAME=	mail
-PORTVERSION=	0.7.9
+PORTVERSION=	0.7.10
 DISTVERSIONPREFIX=	v
 CATEGORIES=	mail
 MASTER_SITES=	https://github.com/${PKGNAMEPREFIX:S/-//}/${PORTNAME}/releases/download/${DISTVERSIONPREFIX}${PORTVERSION}/
@@ -17,7 +17,7 @@ LICENSE=	AGPLv3
 
 RUN_DEPENDS=	nextcloud>=12:www/nextcloud
 
-USES=		gettext
+USES=		gettext php
 USE_PHP=	imap
 
 NO_BUILD=	yes

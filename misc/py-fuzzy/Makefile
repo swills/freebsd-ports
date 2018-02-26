@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/misc/py-fuzzy/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/misc/py-fuzzy/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	Fuzzy
 DISTVERSION=	1.2.2
@@ -7,7 +7,7 @@ CATEGORIES=	misc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Fast Python phonetic algorithms
 
 LICENSE=	MIT ART20

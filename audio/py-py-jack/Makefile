@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/py-py-jack/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/audio/py-py-jack/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	py-jack
 PORTVERSION=	0.5.2
@@ -7,7 +7,7 @@ CATEGORIES=	audio python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Python bindings for the Jack Audio Server
 
 LICENSE=	GPLv2

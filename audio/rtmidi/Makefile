@@ -1,12 +1,12 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/rtmidi/Makefile 458713 2018-01-11 07:16:42Z yuri $
+# $FreeBSD: head/audio/rtmidi/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	rtmidi
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.0.0
 CATEGORIES=	audio
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Set of C++ classes that provide a common API for realtime MIDI I/O
 
 LICENSE=	MIT

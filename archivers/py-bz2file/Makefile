@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/archivers/py-bz2file/Makefile 404905 2015-12-31 03:28:02Z miwi $
+# $FreeBSD: head/archivers/py-bz2file/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	bz2file
 PORTVERSION=	0.98
@@ -7,7 +7,7 @@ CATEGORIES=	archivers python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Read and write bzip2-compressed files
 
 LICENSE=	APACHE20

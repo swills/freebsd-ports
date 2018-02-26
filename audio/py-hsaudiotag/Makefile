@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/py-hsaudiotag/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/audio/py-hsaudiotag/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	hsaudiotag
 PORTVERSION=	1.1.1
@@ -8,7 +8,7 @@ CATEGORIES=	audio python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Read metdata (tags) of mp3, mp4, wma, ogg, flac and aiff files
 
 LICENSE=	BSD3CLAUSE

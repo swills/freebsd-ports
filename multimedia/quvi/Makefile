@@ -1,11 +1,12 @@
 # Created by: Toni Gundogdu <legatvs@gmail.com>
-# $FreeBSD: head/multimedia/quvi/Makefile 434363 2017-02-18 16:09:19Z sunpoet $
+# $FreeBSD: head/multimedia/quvi/Makefile 462902 2018-02-25 05:31:44Z sunpoet $
 
 PORTNAME=	quvi
 PORTVERSION=	0.4.2
 PORTREVISION=	3
 CATEGORIES=	multimedia devel
-MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION:R}/${PORTNAME}/
+MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION:R}/${PORTNAME}/ \
+		LOCAL/sunpoet
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Command line tool for parsing flash media stream URLs

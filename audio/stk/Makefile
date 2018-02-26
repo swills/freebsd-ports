@@ -1,12 +1,12 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/stk/Makefile 449530 2017-09-10 10:24:50Z tobik $
+# $FreeBSD: head/audio/stk/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	stk
 PORTVERSION=	4.6.0
 CATEGORIES=	audio
 MASTER_SITES=	http://ccrma.stanford.edu/software/stk/release/
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Synthesis ToolKit in C++
 
 LICENSE=	MIT

@@ -1,11 +1,11 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/lvtk/Makefile 447921 2017-08-13 22:34:00Z ultima $
+# $FreeBSD: head/audio/lvtk/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	lvtk
 PORTVERSION=	1.2.0
 CATEGORIES=	audio
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Wraps the LV2 C API and extensions into easy to use C++ classes
 
 LICENSE=	GPLv3

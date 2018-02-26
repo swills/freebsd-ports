@@ -1,12 +1,12 @@
 # Created by: Aleksander Fafula <alex@BSDGuru.org>
-# $FreeBSD: head/polish/libgadu/Makefile 432554 2017-01-27 16:03:38Z pawel $
+# $FreeBSD: head/polish/libgadu/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	libgadu
 PORTVERSION=	1.12.2
 PORTEPOCH=	1
 CATEGORIES=	polish net-im
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Instant messaging library for Gadu-Gadu protocol
 
 LICENSE=	LGPL21

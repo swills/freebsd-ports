@@ -1,12 +1,12 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/hiptext/Makefile 456171 2017-12-12 15:53:13Z amdmi3 $
+# $FreeBSD: head/graphics/hiptext/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	hiptext
 PORTVERSION=	0.0.s20160621
 PORTREVISION=	6
 CATEGORIES=	graphics
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Tool for rendering images and videos inside terminals
 
 LICENSE=	NONE

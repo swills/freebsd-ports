@@ -1,5 +1,5 @@
 # Created by: Andreas Kohn <andreas@syndrom23.de>
-# $FreeBSD: head/x11-fonts/freefont-ttf/Makefile 403573 2015-12-11 23:08:23Z pawel $
+# $FreeBSD: head/x11-fonts/freefont-ttf/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	freefont-ttf
 PORTVERSION=	20120503
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	GNU/freefont
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Free UCS Outline Fonts
 
 LICENSE=	GPLv3

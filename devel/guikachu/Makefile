@@ -1,5 +1,5 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/devel/guikachu/Makefile 460055 2018-01-26 22:16:11Z danfe $
+# $FreeBSD: head/devel/guikachu/Makefile 462949 2018-02-25 11:56:40Z antoine $
 
 PORTNAME=	guikachu
 PORTVERSION=	1.5.10
@@ -10,6 +10,10 @@ MASTER_SITES=	http://cactus.rulez.org/projects/guikachu/download/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Resource editor for PalmOS systems
+
+BROKEN=		fails to build
+DEPRECATED=	Broken for more than 9 months
+EXPIRATION_DATE=	2018-03-25
 
 LIB_DEPENDS=	libgnomeuimm-2.6.so:x11-toolkits/libgnomeuimm26 \
 		libgnomevfsmm-2.6.so:devel/gnome-vfsmm

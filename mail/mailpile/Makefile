@@ -1,12 +1,12 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/mail/mailpile/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/mail/mailpile/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	mailpile
 PORTVERSION=	0.5.2
 PORTREVISION=	1
 CATEGORIES=	mail security
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Locally hosted web-browser based mail client
 
 LICENSE=	AGPLv3+

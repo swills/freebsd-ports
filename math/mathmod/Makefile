@@ -1,11 +1,11 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/math/mathmod/Makefile 453312 2017-11-01 18:44:20Z thierry $
+# $FreeBSD: head/math/mathmod/Makefile 462963 2018-02-25 16:37:42Z thierry $
 
 PORTNAME=	MathMod
-PORTVERSION=	6.1
+PORTVERSION=	7.0
 CATEGORIES=	math graphics
 MASTER_SITES=	SF/${PORTNAME:tl}/${PKGNAME}/
-DISTNAME=	${PORTNAME:tl}-${PORTVERSION}-source
+DISTNAME=	${PORTNAME:tl}-branches-${BR_NUM}-trunk
 
 MAINTAINER=	thierry@FreeBSD.org
 COMMENT=	Mathematical modeling software
@@ -15,6 +15,8 @@ LICENSE=	GPLv2
 USES=		dos2unix qmake zip
 USE_GL=		gl
 USE_QT5=	buildtools_build core gui opengl qmake_build widgets
+
+BR_NUM=		482
 
 PLIST_FILES=	bin/MathMod
 

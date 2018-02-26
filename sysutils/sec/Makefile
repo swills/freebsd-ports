@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/sec/Makefile 447905 2017-08-13 16:50:11Z tobik $
+# $FreeBSD: head/sysutils/sec/Makefile 462977 2018-02-25 20:33:04Z yuri $
 
 PORTNAME=	sec
-PORTVERSION=	2.7.11
+DISTVERSION=	2.7.12
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/simple-evcorr/${PORTNAME}/${PORTVERSION}
 
@@ -21,7 +21,7 @@ PORTDOCS=	ChangeLog README
 
 PLIST_FILES=	bin/sec man/man8/sec.8.gz
 PORTCONTRIB=	convert.pl itostream.c swatch2sec.pl
-PLIST_FILES+=	${PORTCONTRIB:S|^|%%DATADIR%%/|}
+PLIST_FILES+=	${PORTCONTRIB:S|^|share/sec/|}
 
 OPTIONS_DEFINE=	DOCS
 
@@ -30,6 +30,8 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/sec.man ${STAGEDIR}${MANPREFIX}/man/man8/sec.8
 	@${MKDIR} ${STAGEDIR}${DATADIR}
 	cd ${WRKSRC}/contrib && ${INSTALL_DATA} ${PORTCONTRIB} ${STAGEDIR}${DATADIR}
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 

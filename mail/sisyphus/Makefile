@@ -1,5 +1,5 @@
 # Created by: Carlo Strub <cs@FreeBSD.org>
-# $FreeBSD: head/mail/sisyphus/Makefile 460228 2018-01-28 19:29:26Z cs $
+# $FreeBSD: head/mail/sisyphus/Makefile 462951 2018-02-25 12:14:34Z antoine $
 
 PORTNAME=	sisyphus
 PORTVERSION=	1.1.1
@@ -10,6 +10,10 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	Intelligent Junk Mail Handler
 
 LICENSE=	BSD3CLAUSE
+
+BROKEN=		fails to configure
+DEPRECATED=	Never built
+EXPIRATION_DATE=	2018-03-25
 
 BUILD_DEPENDS=	glide:devel/go-glide
 

@@ -1,11 +1,12 @@
 # Created by: Toni Gundogdu <legatvs@gmail.com>
-# $FreeBSD: head/multimedia/quvi09/Makefile 439878 2017-05-01 12:46:25Z sunpoet $
+# $FreeBSD: head/multimedia/quvi09/Makefile 462905 2018-02-25 05:31:59Z sunpoet $
 
 PORTNAME=	quvi
 PORTVERSION=	0.9.5
 PORTREVISION=	2
 CATEGORIES=	multimedia devel
-MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION:R}/${PORTNAME}/
+MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION:R}/${PORTNAME}/ \
+		LOCAL/sunpoet
 PKGNAMESUFFIX=	09
 
 MAINTAINER=	sunpoet@FreeBSD.org

@@ -1,11 +1,11 @@
 # Created by: ijliao
-# $FreeBSD: head/mail/libetpan/Makefile 440519 2017-05-09 21:48:26Z pawel $
+# $FreeBSD: head/mail/libetpan/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	libetpan
 PORTVERSION=	1.8
 CATEGORIES=	mail ipv6
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Mail framework for C language
 
 LICENSE=	BSD3CLAUSE

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich
-# $FreeBSD: head/audio/py-opuslib/Makefile 452381 2017-10-18 19:53:29Z tcberner $
+# $FreeBSD: head/audio/py-opuslib/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	opuslib
 PORTVERSION=	2.0.0
@@ -7,7 +7,7 @@ CATEGORIES=	audio python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Python bindings to the libopus, IETF low-delay audio codec
 
 LICENSE=	BSD3CLAUSE

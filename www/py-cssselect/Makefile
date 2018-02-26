@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/www/py-cssselect/Makefile 460241 2018-01-29 06:45:16Z araujo $
+# $FreeBSD: head/www/py-cssselect/Makefile 463019 2018-02-26 13:35:00Z jhale $
 
 PORTNAME=	cssselect
 PORTVERSION=	0.9.1
@@ -12,18 +12,21 @@ MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Cssselect parses CSS3 Selectors and translates them to XPath 1.0
 
 LICENSE=	BSD3CLAUSE
-
-OPTIONS_DEFINE=	DOCS
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python
 USE_PYTHON=	distutils autoplist
 
+NO_ARCH=	yes
+
+OPTIONS_DEFINE=	DOCS
+
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MDOCS}
-BUILD_DEPENDS=	sphinx-build:textproc/py-sphinx
+BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${PY_FLAVOR}
 DOCSDIR=	${PREFIX}/share/doc/${PKGNAMEPREFIX}${PORTNAME}
-SPHINX_BUILD=	sphinx-build
+SPHINX_BUILD=	sphinx-build-${PYTHON_VER}
 
 post-install::
 	${SETENV} PYTHONPATH="${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}" \

@@ -1,5 +1,5 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/sysutils/lookat/Makefile 408044 2016-02-04 15:48:12Z marino $
+# $FreeBSD: head/sysutils/lookat/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	lookat
 PORTVERSION=	1.4.4
@@ -7,7 +7,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	http://www.wagemakers.be/downloads/lookat/
 DISTNAME=	${PORTNAME}_bekijk-${PORTVERSION}
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Program to view Un*x text files and manual pages
 
 GNU_CONFIGURE=	yes

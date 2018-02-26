@@ -1,11 +1,11 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/libfilteraudio/Makefile 390058 2015-06-18 19:50:53Z thierry $
+# $FreeBSD: head/audio/libfilteraudio/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	libfilteraudio
 PORTVERSION=	0.150524
 CATEGORIES=	audio
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Lightweight audio filtering library made from webrtc code
 
 LICENSE=	BSD3CLAUSE

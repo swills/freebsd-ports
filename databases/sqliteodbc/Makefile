@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/sqliteodbc/Makefile 427582 2016-12-02 17:27:00Z madpilot $
+# $FreeBSD: head/databases/sqliteodbc/Makefile 463012 2018-02-26 10:11:01Z madpilot $
 
 PORTNAME=	sqliteodbc
-PORTVERSION=	0.9995
+PORTVERSION=	0.9996
 PORTREVISION?=	0
 CATEGORIES=	databases
 MASTER_SITES=	http://www.ch-werner.de/sqliteodbc/

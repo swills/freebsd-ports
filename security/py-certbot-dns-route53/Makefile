@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-certbot-dns-route53/Makefile 462697 2018-02-23 13:33:29Z mat $
+# $FreeBSD: head/security/py-certbot-dns-route53/Makefile 462785 2018-02-24 09:54:58Z mat $
 
 PORTNAME=	certbot-dns-route53
 PORTVERSION=	${ACME_VERSION}
@@ -11,7 +11,7 @@ MAINTAINER=	python@FreeBSD.org
 COMMENT=	Route53 DNS Authenticator plugin for Certbot
 
 LICENSE=	APACHE20
-LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}acme>=${ACME_VERSION}:security/py-acme@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}certbot>=${ACME_VERSION}:security/py-certbot@${FLAVOR} \

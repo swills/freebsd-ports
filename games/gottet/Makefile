@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/gottet/Makefile 462526 2018-02-21 14:38:40Z jhale $
+# $FreeBSD: head/games/gottet/Makefile 462885 2018-02-25 00:10:49Z jhale $
 
 PORTNAME=	gottet
 PORTVERSION=	1.1.5
@@ -7,7 +7,7 @@ DISTVERSIONSUFFIX=	-src
 CATEGORIES=	games
 MASTER_SITES=	https://gottcode.org/gottet/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	jhale@FreeBSD.org
 COMMENT=	Tetris clone
 
 LICENSE=	GPLv3+

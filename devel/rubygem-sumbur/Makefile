@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-sumbur/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/devel/rubygem-sumbur/Makefile 462814 2018-02-24 13:38:07Z sunpoet $
 
 PORTNAME=	sumbur
 PORTVERSION=	0.1.2.2
@@ -8,6 +8,8 @@ MASTER_SITES=	RG
 
 MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Consistent spreading for server balancing
+
+LICENSE=	MIT
 
 USE_RUBY=	yes
 USES=		gem

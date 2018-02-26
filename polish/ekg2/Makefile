@@ -1,5 +1,5 @@
 # Created by: Aleksander Fafula <alex@bsdguru.org>
-# $FreeBSD: head/polish/ekg2/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/polish/ekg2/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	ekg2
 PORTVERSION=	0.3.1
@@ -8,7 +8,7 @@ PORTEPOCH=	1
 CATEGORIES=	polish net-im
 MASTER_SITES=	http://pl.ekg2.org/
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Text-mode Gadu-Gadu, Jabber, and IRC client
 
 LIB_DEPENDS=	libgadu.so:polish/libgadu \

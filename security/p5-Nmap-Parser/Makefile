@@ -1,5 +1,5 @@
 # Created by: Joshua D. Abraham <jabra@ccs.neu.edu>
-# $FreeBSD: head/security/p5-Nmap-Parser/Makefile 451005 2017-09-30 19:21:37Z jadawin $
+# $FreeBSD: head/security/p5-Nmap-Parser/Makefile 462824 2018-02-24 14:02:25Z sunpoet $
 
 PORTNAME=	Nmap-Parser
 PORTVERSION=	1.36
@@ -20,8 +20,5 @@ RUN_DEPENDS:=	${BUILD_DEPENDS} \
 NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
-
-post-configure:
-	@${PERL} -pi -e 's/^(POD2MAN_EXE.*)$$/\1 --lax/;' ${WRKSRC}/Makefile
 
 .include <bsd.port.mk>

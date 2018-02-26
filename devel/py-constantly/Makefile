@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/py-constantly/Makefile 425992 2016-11-12 20:35:55Z pi $
+# $FreeBSD: head/devel/py-constantly/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	constantly
 PORTVERSION=	15.1.0
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Provides symbolic constant support to Python projects
 
 LICENSE=	MIT

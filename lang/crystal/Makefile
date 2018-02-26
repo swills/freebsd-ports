@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/crystal/Makefile 462473 2018-02-21 03:41:33Z lwhsu $
+# $FreeBSD: head/lang/crystal/Makefile 462832 2018-02-24 14:40:12Z adamw $
 
 PORTNAME=		crystal
 DISTVERSIONPREFIX=	v
@@ -31,7 +31,7 @@ GH_ACCOUNT=	crystal-lang
 
 MAKE_ARGS=	SHELL=sh \
 		LLVM_CONFIG="${LOCALBASE}/bin/llvm-config${LLVM_VERSION}" \
-		FLAGS="--release --no-debug" \
+		FLAGS="--release --no-debug --progress" \
 		EXPORTS='CRYSTAL_CONFIG_PATH="lib:${PREFIX}/lib/${PORTNAME}"' \
 		CRYSTAL_CACHE_DIR="${WRKDIR}/cache"
 

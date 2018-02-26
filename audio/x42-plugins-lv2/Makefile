@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/x42-plugins-lv2/Makefile 447778 2017-08-11 17:07:11Z ultima $
+# $FreeBSD: head/audio/x42-plugins-lv2/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	x42-plugins
 PORTVERSION=	20170428
@@ -7,7 +7,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://gareus.org/misc/x42-plugins/
 PKGNAMESUFFIX=	-lv2
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Collection of LV2 plugins (submodules)
 
 BUILD_DEPENDS=	lv2>0:audio/lv2 \

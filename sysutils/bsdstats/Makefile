@@ -1,5 +1,5 @@
 # Created by: Marc G. Fournier <scrappy@FreeBSD.org>
-# $FreeBSD: head/sysutils/bsdstats/Makefile 438194 2017-04-10 17:57:30Z cpm $
+# $FreeBSD: head/sysutils/bsdstats/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	bsdstats
 PORTVERSION=	6.0
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	sysutils
 DISTFILES=
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Monthly script for reporting anonymous statistics about your machine
 
 LICENSE=	BSD4CLAUSE

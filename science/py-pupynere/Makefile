@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/science/py-pupynere/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/science/py-pupynere/Makefile 462930 2018-02-25 05:34:13Z sunpoet $
 
 PORTNAME=	pupynere
 PORTVERSION=	1.0.15
@@ -8,15 +8,15 @@ CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	johannes@perceivon.net
-COMMENT=	Python module for reading and writing NetCDF files
+MAINTAINER=	sunpoet@FreeBSD.org
+COMMENT=	NetCDF file reader and writer
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PYNUMPY}
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+RUN_DEPENDS=	${PYNUMPY}
 
-USES=		python:2.7
-USE_PYTHON=	distutils autoplist
+NO_ARCH=	yes
+USES=		python
+USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>
