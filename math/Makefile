@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 462886 2018-02-25 00:12:32Z stephen $
+# $FreeBSD: head/math/Makefile 463027 2018-02-26 15:48:42Z jwb $
 #
 
     COMMENT = Mathematics
@@ -748,7 +748,6 @@
     SUBDIR += trlan
     SUBDIR += truthtable
     SUBDIR += tvmet
-    SUBDIR += ufc
     SUBDIR += ump
     SUBDIR += units
     SUBDIR += unuran

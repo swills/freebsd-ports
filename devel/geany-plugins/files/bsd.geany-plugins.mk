@@ -1,6 +1,6 @@
-# $FreeBSD: head/devel/geany-plugins/files/bsd.geany-plugins.mk 454622 2017-11-21 18:09:34Z madpilot $
+# $FreeBSD: head/devel/geany-plugins/files/bsd.geany-plugins.mk 463036 2018-02-26 18:50:27Z madpilot $
 
-GEANY_VER=		1.32
+GEANY_VER=		1.33
 GEANY_PLUGINS_ALL=	addons \
 			autoclose \
 			automark \
@@ -95,7 +95,7 @@ ctags_DIR=		geanyctags
 extrasel_DIR=		geanyextrasel
 gendoc_DIR=		geanygendoc
 insertnum_DIR=		geanyinsertnum
-latex_DIR=		geanylatex
+latex_DIR=		latex
 lipsum_DIR=		lipsum
 lua_DIR=		geanylua
 macro_DIR=		geanymacro

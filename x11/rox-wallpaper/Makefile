@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/rox-wallpaper/Makefile 455913 2017-12-10 20:48:45Z antoine $
+# $FreeBSD: head/x11/rox-wallpaper/Makefile 463035 2018-02-26 18:48:15Z amdmi3 $
 
 PORTNAME=	rox-wallpaper
 PORTVERSION=	2.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	SF/rox/Wallpaper/${PORTVERSION}
 DISTNAME=	Wallpaper-${PORTVERSION}
@@ -13,7 +13,9 @@ COMMENT=	Wallpaper management tool for the ROX desktop
 RUN_DEPENDS=	${LOCALBASE}/bin/rox:x11-fm/rox-filer \
 		${PYTHON_PKGNAMEPREFIX}roxlib>=0:devel/py-roxlib
 
-USES=		python:2.7
+USES=		python:2.7 shebangfix
+SHEBANG_FILES=	AppRun
+NO_ARCH=	yes
 
 WRKSRC=		${WRKDIR}/Wallpaper
 

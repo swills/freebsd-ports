@@ -1,5 +1,5 @@
 # Created by: Tony Narlock <tony@git-pull.com>
-# $FreeBSD: head/sysutils/py-tmuxp/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/sysutils/py-tmuxp/Makefile 463030 2018-02-26 17:00:21Z yuri $
 
 PORTNAME=	tmuxp
 PORTVERSION=	0.9.3
@@ -7,7 +7,7 @@ CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	tony@git-pull.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Session manager for tmux
 
 LICENSE=	BSD3CLAUSE

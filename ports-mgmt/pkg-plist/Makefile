@@ -1,9 +1,9 @@
 # Created by: Martin Tournoij <martin@arp242.net>
-# $FreeBSD: head/ports-mgmt/pkg-plist/Makefile 416662 2016-06-10 09:08:02Z tz $
+# $FreeBSD: head/ports-mgmt/pkg-plist/Makefile 463042 2018-02-26 19:24:14Z amdmi3 $
 
 PORTNAME=	pkg-plist
 PORTVERSION=	1.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	ports-mgmt python
 MASTER_SITES=	http://code.arp242.net/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 
@@ -12,7 +12,8 @@ COMMENT=	Generate a pkg-plist for a port
 
 LICENSE=	MIT
 
-USES=		python
+USES=		python:run shebangfix
+SHEBANG_FILES=	pkg-plist
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/${BB_ACCOUNT}-${BB_PROJECT}-${BB_COMMIT}
 
