@@ -23,8 +23,7 @@ MY_DEPENDS=	git>=2.14.3:devel/git \
 		rubygem-gollum-lib-gitlab>=4.2.0:www/rubygem-gollum-lib-gitlab \
 		rubygem-gollum-rugged_adapter>=0.4.4:www/rubygem-gollum-rugged_adapter \
 		rubygem-grpc>=1.8.0:net/rubygem-grpc \
-		rubygem-google-protobuf351>=3.5.1:devel/rubygem-google-protobuf351 \
-		rubygem-toml-rb03>=0.3.15:www/rubygem-toml-rb03
+		rubygem-google-protobuf351>=3.5.1:devel/rubygem-google-protobuf351
 
 BUILD_DEPENDS=	go>=1.8:lang/go \
 		gem:devel/ruby-gems \
