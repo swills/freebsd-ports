@@ -28,11 +28,10 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	gitlab-shell>=6.0.3:devel/gitlab-shell \
 	gitlab-workhorse>=3.6.0:www/gitlab-workhorse \
 	gitaly>=0.82.0:devel/gitaly \
-	# @TODO add dep for gitlab-pages \
 	redis>=2.8.23:databases/redis \
 	npm>=4.3.0:www/npm \
 	yarn>=0.17.0:www/yarn \
-	rubygem-rails4>=4.2.8:www/rubygem-rails4 \
+	rubygem-rails4>=4.2.10:www/rubygem-rails4 \
 	rubygem-rails-deprecated_sanitizer>=1.0.3:devel/rubygem-rails-deprecated_sanitizer \
 	rubygem-responders>=2.0:www/rubygem-responders \
 	rubygem-sprockets3>=3.7:devel/rubygem-sprockets3 \
