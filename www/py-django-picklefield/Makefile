@@ -1,8 +1,9 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/py-django-picklefield/Makefile 462935 2018-02-25 05:34:39Z sunpoet $
+# $FreeBSD: head/www/py-django-picklefield/Makefile 463044 2018-02-26 19:39:24Z antoine $
 
 PORTNAME=	django-picklefield
 PORTVERSION=	1.0.0
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +13,7 @@ COMMENT=	Pickled object field for Django
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=0:www/py-django111@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

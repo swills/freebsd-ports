@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/pc-networkmanager/Makefile 453597 2017-11-06 07:48:22Z araujo $
+# $FreeBSD: head/sysutils/pc-networkmanager/Makefile 463040 2018-02-26 19:23:22Z amdmi3 $
 
 PORTNAME=	pc-networkmanager
 PORTVERSION=	201710031301
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	jt@ixsystems.com
@@ -19,6 +20,7 @@ CONFLICTS=	pcbsd-utils*
 MAKE_JOBS_UNSAFE=	yes
 
 USES=		qmake shebangfix tar:xz
+SHEBANG_FILES=	src/NetworkManager/resources/umts_stick
 USE_LDCONFIG=	yes
 USE_QT5=	core gui network svg linguist \
 		buildtools x11extras widgets

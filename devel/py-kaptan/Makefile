@@ -1,5 +1,5 @@
 # Created by: Tony Narlock <tony@git-pull.com>
-# $FreeBSD: head/devel/py-kaptan/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-kaptan/Makefile 463030 2018-02-26 17:00:21Z yuri $
 
 PORTNAME=	kaptan
 PORTVERSION=	0.5.8
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	tony@git-pull.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python config parser for json, yaml
 
 LICENSE=	BSD3CLAUSE

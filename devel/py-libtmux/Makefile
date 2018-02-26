@@ -1,5 +1,5 @@
 # Created by: Tony Narlock <tony@git-pull.com>
-# $FreeBSD: head/devel/py-libtmux/Makefile 437279 2017-03-30 10:22:36Z miwi $
+# $FreeBSD: head/devel/py-libtmux/Makefile 463030 2018-02-26 17:00:21Z yuri $
 
 PORTNAME=	libtmux
 PORTVERSION=	0.6.3
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	tony@git-pull.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Library for interfacing with tmux
 
 LICENSE=	BSD3CLAUSE

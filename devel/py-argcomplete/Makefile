@@ -1,5 +1,5 @@
 # Created by: Tony Narlock <tony@git-pull.com>
-# $FreeBSD: head/devel/py-argcomplete/Makefile 379032 2015-02-15 11:18:23Z pi $
+# $FreeBSD: head/devel/py-argcomplete/Makefile 463030 2018-02-26 17:00:21Z yuri $
 
 PORTNAME=	argcomplete
 PORTVERSION=	0.8.4
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	tony@git-pull.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Bash tab completion for argparse
 
 LICENSE=	APACHE20

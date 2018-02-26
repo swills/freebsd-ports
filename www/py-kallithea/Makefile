@@ -1,9 +1,9 @@
 # Created by: Ilia Skalozubov <freebsd@skinc.ru>
-# $FreeBSD: head/www/py-kallithea/Makefile 455392 2017-12-03 08:25:31Z antoine $
+# $FreeBSD: head/www/py-kallithea/Makefile 463039 2018-02-26 19:18:46Z amdmi3 $
 
 PORTNAME=	kallithea
 PORTVERSION=	0.3.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -39,7 +39,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}waitress>=0.8.8:www/py-waitress@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}bcrypt>=0.3.0:security/py-bcrypt@${FLAVOR} \
 		mercurial>=2.9:devel/mercurial
 
-USES=		python:2.7
+USES=		python:2.7 shebangfix
+SHEBANG_FILES=	kallithea/tests/scripts/manual_test_crawler.py
 USE_PYTHON=	distutils autoplist
 
 NO_ARCH=	yes
