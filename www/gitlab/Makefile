@@ -25,8 +25,10 @@ BUILD_DEPENDS=	gem:devel/ruby-gems
 # only rubygem-pg and rubygem-mysql are defined later as RUN_DEPENDS
 # for the options
 RUN_DEPENDS=	git>=2.14.3:devel/git \
-	gitlab-shell>=6.0.3:devel/gitlab-shell\
+	gitlab-shell>=6.0.3:devel/gitlab-shell \
 	gitlab-workhorse>=3.6.0:www/gitlab-workhorse \
+	gitaly>=0.82.0:devel/gitaly \
+	# @TODO add dep for gitlab-pages \
 	redis>=2.8.23:databases/redis \
 	npm>=4.3.0:www/npm \
 	yarn>=0.17.0:www/yarn \
