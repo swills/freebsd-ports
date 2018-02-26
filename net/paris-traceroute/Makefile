@@ -1,5 +1,5 @@
 # Created by: dikshie@sfc.wide.ad.jp
-# $FreeBSD: head/net/paris-traceroute/Makefile 341941 2014-01-31 08:44:50Z miwi $
+# $FreeBSD: head/net/paris-traceroute/Makefile 462838 2018-02-24 14:54:47Z sunpoet $
 
 PORTNAME=	paris-traceroute
 PORTVERSION=	0.92
@@ -10,6 +10,9 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}-dev
 
 MAINTAINER=	dikshie@sfc.wide.ad.jp
 COMMENT=	Paris traceroute is network diagnosis and measurement tools
+
+DEPRECATED=	Legacy paris-traceroute is not supported anymore. Use net/scamper instead
+EXPIRATION_DATE=2018-03-31
 
 GNU_CONFIGURE=	yes
 USES=		gmake

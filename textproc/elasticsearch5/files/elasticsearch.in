@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: head/textproc/elasticsearch5/files/elasticsearch.in 462650 2018-02-22 23:03:41Z feld $
+# $FreeBSD: head/textproc/elasticsearch5/files/elasticsearch.in 462830 2018-02-24 14:17:41Z feld $
 #
 # PROVIDE: elasticsearch
 # REQUIRE: NETWORKING SERVERS
@@ -75,6 +75,7 @@ if [ -n "$2" ]; then
 		export ES_JVM_OPTIONS=${elasticsearch_config}/jvm.options
 	fi
 	command_args="-d --pidfile=${pidfile} -Epath.conf=${elasticsearch_config}"
+	echo "===> elasticsearch profile: ${profile}"
     else
         echo "$0: extra argument ignored"
     fi
@@ -101,7 +102,6 @@ else
                 continue
                 ;;
             esac
-            echo "===> elasticsearch profile: ${profile}"
             %%PREFIX%%/etc/rc.d/elasticsearch $1 ${profile}
             retcode="$?"
             if [ "0${retcode}" -ne 0 ]; then

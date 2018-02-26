@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/py-contextlib2/Makefile 440383 2017-05-07 21:27:28Z sunpoet $
+# $FreeBSD: head/devel/py-contextlib2/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	contextlib2
 PORTVERSION=	0.5.5
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Backports and enhancements for the contextlib module
 
 LICENSE=	BSD2CLAUSE

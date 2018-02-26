@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/py-incremental/Makefile 441616 2017-05-24 20:52:17Z sunpoet $
+# $FreeBSD: head/devel/py-incremental/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	incremental
 PORTVERSION=	17.5.0
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Library that versions your Python projects
 
 LICENSE=	MIT

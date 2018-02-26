@@ -1,9 +1,9 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/nginx/Makefile 461928 2018-02-15 14:41:29Z brnrd $
+# $FreeBSD: head/www/nginx/Makefile 462976 2018-02-25 20:09:49Z joneum $
 
 PORTNAME=	nginx
 PORTVERSION=	1.12.2
-PORTREVISION?=	8
+PORTREVISION?=	9
 PORTEPOCH=	2
 CATEGORIES=	www
 MASTER_SITES=	http://nginx.org/download/
@@ -1135,7 +1135,7 @@ CONFIGURE_ARGS+=--add-module=${WRKSRC_arrayvar}
 .endif
 
 .if ${PORT_OPTIONS:MBROTLI}
-NGINX_BROTLI_VERSION=	 47550a2
+NGINX_BROTLI_VERSION=	 8cd9dd5
 LIB_DEPENDS+=	libbrotlicommon.so:archivers/brotli
 GH_ACCOUNT+=	eustas:brotli
 GH_PROJECT+=	ngx_brotli:brotli

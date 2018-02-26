@@ -1,9 +1,8 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/print/p5-Net-CUPS/Makefile 462731 2018-02-23 19:25:14Z sunpoet $
+# $FreeBSD: head/print/p5-Net-CUPS/Makefile 462805 2018-02-24 13:37:22Z sunpoet $
 
 PORTNAME=	Net-CUPS
-PORTVERSION=	0.61
-PORTREVISION=	5
+PORTVERSION=	0.64
 CATEGORIES=	print perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -19,5 +18,8 @@ LIB_DEPENDS=	libcupsimage.so:print/cups \
 
 USES=		perl5
 USE_PERL5=	configure
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Net/CUPS/CUPS.so
 
 .include <bsd.port.mk>

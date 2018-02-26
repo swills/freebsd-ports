@@ -1,12 +1,12 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/mda-lv2/Makefile 448435 2017-08-20 17:27:18Z ultima $
+# $FreeBSD: head/audio/mda-lv2/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	mda-lv2
 PORTVERSION=	1.2.2
 CATEGORIES=	audio
 MASTER_SITES=	http://download.drobilla.net/
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	LV2 port of the MDA plugins by Paul Kellett
 
 LICENSE=	GPLv3

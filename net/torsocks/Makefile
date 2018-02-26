@@ -1,12 +1,12 @@
 # Created by: Andrei Lavreniyuk <andy.lavr@gmail.com>
-# $FreeBSD: head/net/torsocks/Makefile 443560 2017-06-14 09:48:00Z ehaupt $
+# $FreeBSD: head/net/torsocks/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	torsocks
 PORTVERSION=	2.2.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net security
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Easy way to make any app work through Tor
 
 LICENSE=	GPLv2

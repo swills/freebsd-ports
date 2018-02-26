@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich
-# $FreeBSD: head/net-im/py-toxcore-c/Makefile 459963 2018-01-25 21:20:12Z jbeich $
+# $FreeBSD: head/net-im/py-toxcore-c/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	toxcore-c
 PORTVERSION=	0.170206
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	net-im net-p2p python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Python binding for Project-Tox
 
 LICENSE=	LGPL3

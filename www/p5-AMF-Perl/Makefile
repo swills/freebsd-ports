@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/www/p5-AMF-Perl/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-AMF-Perl/Makefile 462828 2018-02-24 14:02:45Z sunpoet $
 
 PORTNAME=	AMF-Perl
 PORTVERSION=	0.15
@@ -20,9 +20,5 @@ USE_PERL5=	configure patch
 
 post-patch:
 	@${PERL} -pi -e 's/=(?==head)//g' ${WRKSRC}/lib/AMF/Perl.pm
-
-post-configure:
-# dirty hack to deceive irritable pod2man
-	@${PERL} -pi -e 's/^(POD2MAN_EXE.*)$$/\1 --lax/;' ${WRKSRC}/Makefile
 
 .include <bsd.port.mk>

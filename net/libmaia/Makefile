@@ -1,11 +1,11 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/net/libmaia/Makefile 394427 2015-08-16 21:57:14Z pawel $
+# $FreeBSD: head/net/libmaia/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	libmaia
 PORTVERSION=	0.0.20150218
 CATEGORIES=	net
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	kde@FreeBSD.org
 COMMENT=	XML-RPC lib for Qt
 
 USE_GITHUB=	yes

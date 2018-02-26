@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-XML-STX/Makefile 430157 2016-12-31 20:00:37Z adamw $
+# $FreeBSD: head/textproc/p5-XML-STX/Makefile 462827 2018-02-24 14:02:39Z sunpoet $
 
 PORTNAME=	XML-STX
 PORTVERSION=	0.43
@@ -29,9 +29,6 @@ post-extract:
 
 post-patch:
 	@${PERL} -pi -e 's!(?=stx\w+\.pl)!scripts/!g' ${WRKSRC}/Makefile.PL
-
-post-configure:
-	@${PERL} -pi -e 's/^(POD2MAN_EXE.*)$$/\1 --lax/;' ${WRKSRC}/Makefile
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

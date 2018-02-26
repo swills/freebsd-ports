@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <clement@FreeBSD.org>
-# $FreeBSD: head/www/mod_auth_mysql2/Makefile 436248 2017-03-15 14:45:54Z mat $
+# $FreeBSD: head/www/mod_auth_mysql2/Makefile 462849 2018-02-24 16:26:50Z joneum $
 
 PORTNAME=	mod_auth_mysql
 PORTVERSION=	1.11
@@ -9,7 +9,7 @@ PKGNAMESUFFIX=	2
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 DIST_SUBDIR=	apache2
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	MySQL-based authentication module with VirtualHost support
 
 LICENSE=	APACHE20

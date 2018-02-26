@@ -1,12 +1,12 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/blop-lv2/Makefile 448186 2017-08-17 19:59:06Z ultima $
+# $FreeBSD: head/audio/blop-lv2/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	blop-lv2
 PORTVERSION=	1.0.0
 CATEGORIES=	audio
 MASTER_SITES=	http://download.drobilla.net/
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Bandlimited oscillator plugins for LV2-aware audio applications
 
 LICENSE=	GPLv3

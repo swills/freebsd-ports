@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/mod_pagespeed/Makefile 461878 2018-02-15 10:43:27Z antoine $
+# $FreeBSD: head/www/mod_pagespeed/Makefile 462801 2018-02-24 12:16:23Z brnrd $
 
 PORTNAME=	mod_pagespeed
 PORTVERSION=	1.12.34.2
@@ -7,6 +7,7 @@ PORTEPOCH=	1
 CATEGORIES=	www devel
 MASTER_SITES=	LOCAL/mmokhi:boringssl,chromium_base,chromium_build,googleurl,gflags_arch,gflags_src,libjpeg_turbo_src,yasm_patched,libwebp,modpb64 \
 		https://dl.google.com/closure-compiler/:closurezip
+PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}
 DISTFILES=	${NON_GH_DISTS}
 
 MAINTAINER=	mmokhi@FreeBSD.org

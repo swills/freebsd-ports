@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-murmurhash3/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/devel/rubygem-murmurhash3/Makefile 462813 2018-02-24 13:38:02Z sunpoet $
 
 PORTNAME=	murmurhash3
 PORTVERSION=	0.1.6
@@ -8,6 +8,8 @@ MASTER_SITES=	RG
 
 MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Implementation of murmur3 hashing function
+
+LICENSE=	MIT
 
 USE_RUBY=	yes
 USES=		gem

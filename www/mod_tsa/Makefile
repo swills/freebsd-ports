@@ -1,5 +1,5 @@
 # Created by: ubique
-# $FreeBSD: head/www/mod_tsa/Makefile 458755 2018-01-11 16:53:44Z danfe $
+# $FreeBSD: head/www/mod_tsa/Makefile 462849 2018-02-24 16:26:50Z joneum $
 
 PORTNAME=	mod_tsa
 PORTVERSION=	1.0
@@ -8,7 +8,7 @@ CATEGORIES=	www
 MASTER_SITES=	http://am.nesiac.org/static/ \
 		http://ubique.spb.ru/src/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Time stamping authority (RFC 3161) module for apache
 
 OPTIONS_DEFINE=	MYSQL PGSQL FIREBIRD DEBUG DEBUG_MEMORY

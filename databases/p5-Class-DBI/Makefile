@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Class-DBI/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/p5-Class-DBI/Makefile 462819 2018-02-24 14:02:00Z sunpoet $
 
 PORTNAME=	Class-DBI
 PORTVERSION=	3.0.17
@@ -23,9 +23,5 @@ TEST_DEPENDS=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite
 
 USES=		perl5
 USE_PERL5=	configure
-
-post-configure:
-# dirty hack to deceive irritable pod2man
-	@${PERL} -pi -e 's/^(POD2MAN_EXE.*)$$/\1 --lax/;' ${WRKSRC}/Makefile
 
 .include <bsd.port.mk>

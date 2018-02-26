@@ -1,26 +1,27 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/sysutils/dmg2img/Makefile 462732 2018-02-23 19:25:19Z sunpoet $
+# $FreeBSD: head/sysutils/dmg2img/Makefile 462804 2018-02-24 13:37:16Z sunpoet $
 
 PORTNAME=	dmg2img
-PORTVERSION=	1.6.6
+PORTVERSION=	1.6.7
 CATEGORIES=	sysutils
-MASTER_SITES=	http://vu1tur.eu.org/tools/
-
-LICENSE=	GPLv2
+MASTER_SITES=	http://vu1tur.eu.org/tools/ \
+		LOCAL/sunpoet
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	DMG2IMG convert tool
 
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 USES=		ssl
-PLIST_FILES=	bin/${PORTNAME} \
+
+PLIST_FILES=	bin/dmg2img \
 		bin/vfdecrypt
 
-pre-configure:
-	${REINPLACE_CMD} -e 's|%%PREFIX%%|${STAGEDIR}${PREFIX}/bin|g' \
-		-e "s|\(CFLAGS =\)|\1 -I${OPENSSLINC} |g" \
-		-e "s|\(-lcrypto\)|-L${OPENSSLLIB} \1|g" ${WRKSRC}/Makefile
+post-patch:
+	@${REINPLACE_CMD} -e '/^CFLAGS = / s|$$| -I${OPENSSLINC}|; s| -lcrypto| -L${OPENSSLLIB}&|' ${WRKSRC}/Makefile
 
-post-build:
-	${MAKE} -C ${WRKSRC} install
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/dmg2img ${WRKSRC}/vfdecrypt ${STAGEDIR}${PREFIX}/bin/
 
 .include <bsd.port.mk>

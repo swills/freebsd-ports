@@ -1,5 +1,5 @@
 # Created by: jamrich.majo@gmail.com
-# $FreeBSD: head/deskutils/phpcollab/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/deskutils/phpcollab/Makefile 462792 2018-02-24 11:28:32Z brnrd $
 
 PORTNAME=	phpcollab
 PORTVERSION=	2.5
@@ -26,7 +26,7 @@ OPTIONS_RADIO_DB=	PGSQL MYSQL
 MYSQL_USE=	PHP=mysql MYSQL=yes
 PGSQL_USE=	PHP=pgsql,pdo_pgsql
 PGSQL_USES=	pgsql
-APACHE_USE=	APACHE_RUN=22
+APACHE_USE=	APACHE_RUN=22+
 LIGHTTPD_RUN_DEPENDS=	lighttpd:ww/lighttpd
 
 do-install:

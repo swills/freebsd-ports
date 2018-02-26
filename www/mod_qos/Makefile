@@ -1,8 +1,8 @@
 # Created by: Andrea Cervesato <andrea@cervesato.it>
-# $FreeBSD: head/www/mod_qos/Makefile 454127 2017-11-13 17:40:06Z robak $
+# $FreeBSD: head/www/mod_qos/Makefile 462850 2018-02-24 16:31:36Z joneum $
 
 PORTNAME=	mod_qos
-PORTVERSION=	11.43
+DISTVERSION=	11.51
 CATEGORIES=	www
 MASTER_SITES=	SF/mod-qos
 DIST_SUBDIR=	apache2

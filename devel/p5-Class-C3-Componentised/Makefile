@@ -1,8 +1,8 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Class-C3-Componentised/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Class-C3-Componentised/Makefile 462809 2018-02-24 13:37:42Z sunpoet $
 
 PORTNAME=	Class-C3-Componentised
-PORTVERSION=	1.001000
+PORTVERSION=	1.001002
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,12 +14,10 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-C3>=0.20:devel/p5-Class-C3 \
-		p5-Class-Inspector>=0:devel/p5-Class-Inspector \
-		p5-MRO-Compat>0:devel/p5-MRO-Compat
+		p5-Class-Inspector>=1.32:devel/p5-Class-Inspector \
+		p5-MRO-Compat>=0.09:devel/p5-MRO-Compat
 RUN_DEPENDS:=	${BUILD_DEPENDS}
-TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception \
-		p5-Test-Pod>=1.14:devel/p5-Test-Pod \
-		p5-Test-Pod-Coverage>=1.04:devel/p5-Test-Pod-Coverage
+TEST_DEPENDS=	p5-Test-Exception>=0.31:devel/p5-Test-Exception
 
 NO_ARCH=	yes
 USES=		perl5

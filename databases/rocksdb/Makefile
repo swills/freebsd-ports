@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/rocksdb/Makefile 462622 2018-02-22 19:50:12Z sunpoet $
+# $FreeBSD: head/databases/rocksdb/Makefile 462901 2018-02-25 05:31:39Z sunpoet $
 
 PORTNAME=	rocksdb
 PORTVERSION=	5.10.3
@@ -61,7 +61,7 @@ PLIST_SUB+=	LITE=""
 PKGNAMESUFFIX=	-lite
 CONFLICTS_INSTALL=	rocksdb
 CFLAGS+=	-DROCKSDB_LITE=1
-MAKE_ENV+=	LIBNAME=librocksdb${PKGNAMESUFFIX}
+MAKE_ENV+=	LIBNAME=librocksdb${PKGNAMESUFFIX} USE_RTTI=1 DISABLE_JEMALLOC=1
 PLIST_SUB+=	LITE=${PKGNAMESUFFIX}
 .endif
 

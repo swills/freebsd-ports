@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/multimedia/py-flvlib/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/multimedia/py-flvlib/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	flvlib
 PORTVERSION=	0.1.13
@@ -8,7 +8,7 @@ CATEGORIES=	multimedia python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Parsing, manipulating and indexing FLV files
 
 LICENSE=	BSD3CLAUSE

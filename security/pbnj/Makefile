@@ -1,5 +1,5 @@
 # Created by: Joshua D. Abraham <jabra@ccs.neu.edu>
-# $FreeBSD: head/security/pbnj/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/pbnj/Makefile 462826 2018-02-24 14:02:35Z sunpoet $
 
 PORTNAME=	pbnj
 PORTVERSION=	2.04
@@ -22,8 +22,5 @@ RUN_DEPENDS:=	${BUILD_DEPENDS} \
 
 USES=		perl5
 USE_PERL5=	configure
-
-post-configure:
-	@${PERL} -pi -e 's/^(POD2MAN_EXE.*)$$/\1 --lax/;' ${WRKSRC}/Makefile
 
 .include <bsd.port.mk>

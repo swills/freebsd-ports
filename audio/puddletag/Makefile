@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/puddletag/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/audio/puddletag/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	puddletag
 PORTVERSION=	1.2.0
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=v
 PORTREVISION=	2
 CATEGORIES=	audio python
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	Audio tag editor
 
 LICENSE=	GPLv3

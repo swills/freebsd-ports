@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-iproto/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/net/rubygem-iproto/Makefile 462815 2018-02-24 13:38:12Z sunpoet $
 
 PORTNAME=	iproto
 PORTVERSION=	0.3.17
@@ -11,8 +11,10 @@ COMMENT=	Ruby implementation of Mail.Ru iproto protocol
 
 RUN_DEPENDS=	rubygem-bin_utils>=0.0.3:devel/rubygem-bin_utils
 
-NO_ARCH=	yes
+LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
+NO_ARCH=	yes
 USE_RUBY=	yes
 USES=		gem
 

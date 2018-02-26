@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/graphics/p5-SWF-Builder/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/p5-SWF-Builder/Makefile 462821 2018-02-24 14:02:10Z sunpoet $
 
 PORTNAME=	SWF-Builder
 PORTVERSION=	0.16
@@ -20,8 +20,5 @@ USES=		dos2unix perl5 shebangfix
 SHEBANG_FILES=	lib/SWF/Builder/ActionScript/Compiler.pm
 USE_PERL5=	configure
 NO_ARCH=	yes
-
-post-configure:
-	@${PERL} -pi -e 's/^(POD2MAN_EXE.*)$$/\1 --lax/;' ${WRKSRC}/Makefile
 
 .include <bsd.port.mk>

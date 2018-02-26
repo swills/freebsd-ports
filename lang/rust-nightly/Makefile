@@ -1,5 +1,5 @@
 # Created by: Jean-Sébastien Pédron <dumbbell@FreeBSD.org>
-# $FreeBSD: head/lang/rust-nightly/Makefile 462772 2018-02-24 07:41:03Z bdrewery $
+# $FreeBSD: head/lang/rust-nightly/Makefile 462891 2018-02-25 03:09:49Z bdrewery $
 
 PORTVERSION=	1.25.0.${NIGHTLY_DATE:C,-,,g}
 PKGNAMESUFFIX=	-nightly
@@ -22,6 +22,6 @@ BOOTSTRAPS_DATE=		2018-01-02
 RUST_BOOTSTRAP_VERSION=		beta
 CARGO_BOOTSTRAP_VERSION=	beta
 
-ONLY_FOR_ARCHS=			amd64
+ONLY_FOR_ARCHS=			amd64 i386
 
 .include "${MASTERDIR}/Makefile"

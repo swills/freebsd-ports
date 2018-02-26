@@ -1,12 +1,12 @@
 # Created by: Pawel Pekala <c0rn@o2.pl>
-# $FreeBSD: head/sysutils/gsmartcontrol/Makefile 454252 2017-11-15 17:05:46Z pawel $
+# $FreeBSD: head/sysutils/gsmartcontrol/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	gsmartcontrol
 PORTVERSION=	1.1.3
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Graphical user interface for smartmontools
 
 LICENSE=	BSD3CLAUSE BSL GPLv2 GPLv3 PD ZLIB

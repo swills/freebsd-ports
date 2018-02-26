@@ -1,5 +1,5 @@
 # Created by: Jacek Pelka <jacek@combit.com.pl>
-# $FreeBSD: head/polish/ekg/Makefile 450459 2017-09-23 16:43:17Z pawel $
+# $FreeBSD: head/polish/ekg/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	ekg
 DISTVERSION=	1.8rc2
@@ -8,7 +8,7 @@ PORTEPOCH=	3
 CATEGORIES=	polish net-im
 MASTER_SITES=	http://ekg.chmurka.net/
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Text-mode Gadu-Gadu client
 
 LICENSE=	GPLv2

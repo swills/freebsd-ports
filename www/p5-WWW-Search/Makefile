@@ -1,5 +1,5 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/www/p5-WWW-Search/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-WWW-Search/Makefile 462863 2018-02-24 21:01:47Z adamw $
 
 PORTNAME=	WWW-Search
 PORTVERSION=	2.517
@@ -24,10 +24,7 @@ BUILD_DEPENDS=	p5-Bit-Vector>=0:math/p5-Bit-Vector \
 		p5-libwww>=2:www/p5-libwww
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-IO-Capture>=0:devel/p5-IO-Capture \
-		p5-Pod-Coverage>=0:devel/p5-Pod-Coverage \
-		p5-Test-File>=0:devel/p5-Test-File \
-		p5-Test-Pod>=0:devel/p5-Test-Pod \
-		p5-Test-Pod-Coverage>=0:devel/p5-Test-Pod-Coverage
+		p5-Test-File>=0:devel/p5-Test-File
 
 NO_ARCH=	yes
 USES=		perl5

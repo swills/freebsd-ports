@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/editors/linux-sublime/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/editors/linux-sublime/Makefile 462775 2018-02-24 08:52:27Z tcberner $
 
 PORTNAME=	sublime
 PORTVERSION=	2.0.2
@@ -9,7 +9,7 @@ MASTER_SITES=	http://c758482.r82.cf2.rackcdn.com/
 DISTNAME=	Sublime%20Text%202.0.2
 PKGNAMEPREFIX=	linux-
 
-MAINTAINER=	johannes@perceivon.net
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Sublime Text is a sophisticated text editor for code, markup and prose
 
 INSTALLS_ICONS=	yes

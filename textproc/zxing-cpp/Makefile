@@ -1,12 +1,12 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/textproc/zxing-cpp/Makefile 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/textproc/zxing-cpp/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	zxing-cpp
 PORTVERSION=	0.20161114
 DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	ZXing C++ Library for QR code recognition
 
 LICENSE=	APACHE20

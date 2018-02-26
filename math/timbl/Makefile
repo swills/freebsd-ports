@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@tsoft.com>
-# $FreeBSD: head/math/timbl/Makefile 416865 2016-06-13 19:57:12Z pi $
+# $FreeBSD: head/math/timbl/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	timbl
 PORTVERSION=	6.4.2
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	http://ilk.uvt.nl/downloads/pub/software/
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Tilburg Memory Based Learner
 
 LIB_DEPENDS=	libxml2.so:textproc/libxml2

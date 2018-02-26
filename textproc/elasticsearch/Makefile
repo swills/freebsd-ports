@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/elasticsearch/Makefile 458513 2018-01-09 07:40:55Z mat $
+# $FreeBSD: head/textproc/elasticsearch/Makefile 462834 2018-02-24 14:53:10Z feld $
 
 PORTNAME=	elasticsearch
 PORTVERSION=	1.7.6
@@ -11,6 +11,9 @@ MAINTAINER=	tj@FreeBSD.org
 COMMENT=	Full-text search engine for Java
 
 LICENSE=	APACHE20
+
+DEPRECATED=	Elastic 1.7 EoL was 2017-01-16
+EXPIRATION_DATE=2018-04-01
 
 RUN_DEPENDS=	java-sigar>=0:java/sigar
 

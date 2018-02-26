@@ -1,5 +1,5 @@
 # Created by: Michael Williams <ports@mgwsoftware.com>
-# $FreeBSD: head/games/linux-dwarffortress/Makefile 461641 2018-02-12 19:43:37Z pawel $
+# $FreeBSD: head/games/linux-dwarffortress/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	dwarffortress
 DISTVERSION=	0.44.05
@@ -8,7 +8,7 @@ MASTER_SITES=	http://www.bay12games.com/dwarves/
 PKGNAMEPREFIX=	linux-
 DISTNAME=	df_${DISTVERSION:S|0.||:S|.|_|}_linux32
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	games@FreeBSD.org
 COMMENT=	Dwarven fortress building game with ASCII graphics (Linux version)
 
 LICENSE=	BAY12

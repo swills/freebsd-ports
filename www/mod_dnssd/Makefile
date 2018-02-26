@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/www/mod_dnssd/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/mod_dnssd/Makefile 462849 2018-02-24 16:26:50Z joneum $
 
 PORTNAME=	mod_dnssd
 PORTVERSION=	0.6
@@ -8,7 +8,7 @@ CATEGORIES=	www
 MASTER_SITES=	http://0pointer.de/lennart/projects/mod_dnssd/
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Apache module that provides DNS-SD capabilities
 
 LICENSE=	APACHE20

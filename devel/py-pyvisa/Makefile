@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-pyvisa/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pyvisa/Makefile 463020 2018-02-26 13:56:37Z vanilla $
 
 PORTNAME=	pyvisa
-PORTVERSION=	1.8
+PORTVERSION=	1.9.0
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

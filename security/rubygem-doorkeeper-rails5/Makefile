@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-doorkeeper-rails5/Makefile 447386 2017-08-05 03:25:17Z jrm $
+# $FreeBSD: head/security/rubygem-doorkeeper-rails5/Makefile 462816 2018-02-24 13:38:17Z sunpoet $
 
 PORTNAME=	doorkeeper
-PORTVERSION=	4.2.6
+PORTVERSION=	4.3.0
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5

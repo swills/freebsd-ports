@@ -1,5 +1,5 @@
 # Created by: Jacek Pelka <jacek@combit.com.pl>
-# $FreeBSD: head/polish/kadu/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/polish/kadu/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	kadu
 PORTVERSION=	4.3
@@ -13,7 +13,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX}:kadu
 DIST_SUBDIR=	kadu
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Internet communicator supporting Gadu-Gadu and Jabber/XMPP
 
 LICENSE=	GPLv2

@@ -1,12 +1,12 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/lv2file/Makefile 448198 2017-08-17 21:53:30Z ultima $
+# $FreeBSD: head/audio/lv2file/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	lv2file
 DISTVERSION=	0.82-1-19
 DISTVERSIONSUFFIX=	-gaed7c77
 CATEGORIES=	audio
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Simple program that apples LV2 effects to audio files
 
 LICENSE=	GPLv3

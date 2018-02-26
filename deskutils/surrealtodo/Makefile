@@ -1,5 +1,5 @@
 # Created by: jamrich.majo@gmail.com
-# $FreeBSD: head/deskutils/surrealtodo/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/deskutils/surrealtodo/Makefile 462798 2018-02-24 11:42:16Z brnrd $
 
 PORTNAME=	surrealtodo
 PORTVERSION=	0.6.1.2
@@ -29,7 +29,7 @@ OPTIONS_DEFAULT=	APACHE
 LIGHTTPD_DESC=	Use Lighttpd webserver
 
 PGSQL_USE=	PHP=pgsql
-APACHE_USE=	APACHE_RUN=22
+APACHE_USE=	APACHE_RUN=22+
 LIGHTTPD_RUN_DEPENDS=	lighttpd:www/lighttpd
 
 do-install:

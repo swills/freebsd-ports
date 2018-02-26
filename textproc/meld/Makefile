@@ -1,12 +1,12 @@
 # Created by: Pav Lucistnik <pav@oook.cz>
-# $FreeBSD: head/textproc/meld/Makefile 458161 2018-01-05 18:17:40Z pawel $
+# $FreeBSD: head/textproc/meld/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	meld
 PORTVERSION=	3.18.0
 CATEGORIES=	textproc devel python
 MASTER_SITES=	GNOME
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	GNOME visual diff and merge tool
 
 LICENSE=	GPLv2

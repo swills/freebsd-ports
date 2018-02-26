@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/py-alot/Makefile 457423 2017-12-27 20:54:20Z dbaio $
+# $FreeBSD: head/mail/py-alot/Makefile 462847 2018-02-24 16:12:35Z joneum $
 
 PORTNAME=	alot
-PORTVERSION=	0.6
+DISTVERSION=	0.7
 CATEGORIES=	mail python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

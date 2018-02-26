@@ -1,11 +1,12 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/multimedia/libquvi/Makefile 434362 2017-02-18 16:09:14Z sunpoet $
+# $FreeBSD: head/multimedia/libquvi/Makefile 462903 2018-02-25 05:31:49Z sunpoet $
 
 PORTNAME=	libquvi
 PORTVERSION=	0.4.1
 PORTREVISION=	5
 CATEGORIES=	multimedia devel
-MASTER_SITES=	SF/quvi/${PORTVERSION:R}/${PORTNAME}/
+MASTER_SITES=	SF/quvi/${PORTVERSION:R}/${PORTNAME}/ \
+		LOCAL/sunpoet
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Cross-platform library for parsing flash media stream URLs

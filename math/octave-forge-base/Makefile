@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-base/Makefile 444743 2017-06-30 13:44:28Z sunpoet $
+# $FreeBSD: head/math/octave-forge-base/Makefile 462979 2018-02-25 22:15:18Z stephen $
 
 PORTNAME=	octave-forge-base
 PORTVERSION=	1.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	#none
 DISTFILES=	#none
@@ -22,6 +22,7 @@ USES=		perl5
 SUB_FILES=	load-octave-pkg
 SUB_LIST=	PERL=${PERL}
 NO_BUILD=	yes
+NO_ARCH=	yes
 
 do-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/octave/tarballs

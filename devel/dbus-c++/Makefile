@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/dbus-c++/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/dbus-c++/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	dbus-c++
 PORTVERSION=	0.9.1
@@ -8,7 +8,7 @@ DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	pw
 CATEGORIES=	devel gnome
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	C++ API for D-BUS
 
 LICENSE=	LGPL21+

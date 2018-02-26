@@ -1,9 +1,8 @@
 # Created by: Valery Komarov <komarov@valerka.net>
-# $FreeBSD: head/devel/node-thrift/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/node-thrift/Makefile 462862 2018-02-24 20:40:27Z lx $
 
 PORTNAME=	thrift
 PORTVERSION=	${THRIFT_PORTVERSION}
-PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	APACHE/thrift/${PORTVERSION}
 PKGNAMEPREFIX=	node-

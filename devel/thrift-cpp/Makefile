@@ -1,9 +1,8 @@
 # Created by: Valery Komarov <komarov@valerka.net>
-# $FreeBSD: head/devel/thrift-cpp/Makefile 462052 2018-02-16 18:35:03Z brnrd $
+# $FreeBSD: head/devel/thrift-cpp/Makefile 462862 2018-02-24 20:40:27Z lx $
 
 PORTNAME=	thrift
 PORTVERSION=	${THRIFT_PORTVERSION} # to keep in sync with thrift
-PORTREVISION=	12
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	APACHE/thrift/${PORTVERSION}
@@ -38,6 +37,7 @@ OPTIONS_SUB=		yes
 CONFIGURE_ARGS+=	\
 		--without-c_glib \
 		--with-cpp \
+		--with-boost-libdir="${LOCALBASE}/lib" \
 		--without-csharp \
 		--without-erlang \
 		--without-haskell \

@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/connectagram/Makefile 462528 2018-02-21 15:16:30Z jhale $
+# $FreeBSD: head/games/connectagram/Makefile 462885 2018-02-25 00:10:49Z jhale $
 
 PORTNAME=	connectagram
 PORTVERSION=	1.2.6
@@ -7,7 +7,7 @@ DISTVERSIONSUFFIX=	-src
 CATEGORIES=	games
 MASTER_SITES=	http://gottcode.org/connectagram/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	jhale@FreeBSD.org
 COMMENT=	Word unscrambling game
 
 LICENSE=	GPLv3+

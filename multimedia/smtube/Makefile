@@ -1,12 +1,12 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/multimedia/smtube/Makefile 460834 2018-02-03 18:25:50Z pawel $
+# $FreeBSD: head/multimedia/smtube/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	smtube
 PORTVERSION=	18.1.0
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/smtube/SMTube/${PORTVERSION}/
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	SMPlayer YouTube browser
 
 LICENSE=	GPLv2

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich
-# $FreeBSD: head/security/py-pyaxo/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-pyaxo/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	pyaxo
 PORTVERSION=	0.8.2
@@ -7,7 +7,7 @@ CATEGORIES=	security net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Python implementation of the Axolotl ratchet protocol
 
 LICENSE=	BSD3CLAUSE

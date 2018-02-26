@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/ruby-build/Makefile 457404 2017-12-27 19:52:46Z sunpoet $
+# $FreeBSD: head/devel/ruby-build/Makefile 462967 2018-02-25 17:11:01Z sunpoet $
 
 PORTNAME=	ruby-build
-PORTVERSION=	20171226
+PORTVERSION=	20180224
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel ruby
 
@@ -38,6 +38,6 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/bin/rbenv-install ${STAGEDIR}${PREFIX}/libexec
 	${INSTALL_SCRIPT} ${WRKSRC}/bin/rbenv-uninstall ${STAGEDIR}${PREFIX}/libexec
 	@${MKDIR} ${STAGEDIR}${DATADIR}
-	( cd ${WRKSRC}/share/ruby-build && ${COPYTREE_BIN} . ${STAGEDIR}${DATADIR} )
+	(cd ${WRKSRC}/share/ruby-build && ${COPYTREE_BIN} . ${STAGEDIR}${DATADIR})
 
 .include <bsd.port.mk>

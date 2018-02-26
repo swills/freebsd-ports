@@ -1,5 +1,5 @@
 # Created by: sumikawa@kame.net
-# $FreeBSD: head/textproc/wv/Makefile 462751 2018-02-23 22:41:10Z yuri $
+# $FreeBSD: head/textproc/wv/Makefile 462964 2018-02-25 16:46:51Z antoine $
 
 PORTNAME=	wv
 PORTVERSION=	1.2.9
@@ -14,7 +14,7 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libfreetype.so:print/freetype2 \
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libwmf.so:graphics/libwmf
 
 USES=		gmake jpeg pkgconfig libtool

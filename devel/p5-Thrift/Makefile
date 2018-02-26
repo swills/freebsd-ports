@@ -1,9 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-Thrift/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Thrift/Makefile 462862 2018-02-24 20:40:27Z lx $
 
 PORTNAME=	Thrift
 PORTVERSION=	${THRIFT_PORTVERSION}	# need to keep this in sync with ../thrift see ../thrift/bsd.thrift.mk
-PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	devel perl5
 PKGNAMEPREFIX=	p5-

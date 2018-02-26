@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/vm-lv2/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/audio/vm-lv2/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	vm
 PORTVERSION=	0.4.0
@@ -8,7 +8,7 @@ CATEGORIES=	audio
 MASTER_SITES=	https://gitlab.com/OpenMusicKontrollers/vm.lv2/repository/archive.tar.gz?ref=${PORTVERSION}&dummy=/
 PKGNAMESUFFIX=	-lv2
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Virtual machine LV2 plugin bundle
 
 LICENSE=	ART20

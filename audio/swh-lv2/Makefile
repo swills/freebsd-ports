@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/swh-lv2/Makefile 448703 2017-08-24 19:08:20Z ultima $
+# $FreeBSD: head/audio/swh-lv2/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	swh
 DISTVERSION=	1.0.16-4
@@ -7,7 +7,7 @@ DISTVERSIONSUFFIX=	-g1aa77e5
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	SWH Plugins in LV2 format
 
 LICENSE=	GPLv2

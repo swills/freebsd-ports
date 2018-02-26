@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/dns/py-dnschain/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/dns/py-dnschain/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	dnschain
 PORTVERSION=	0.1.0
@@ -7,7 +7,7 @@ CATEGORIES=	dns python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Library for looking up blockchain data via DNSChain
 
 LICENSE=	MPL20

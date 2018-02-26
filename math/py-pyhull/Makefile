@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/math/py-pyhull/Makefile 443766 2017-06-17 10:42:44Z joneum $
+# $FreeBSD: head/math/py-pyhull/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	pyhull
 PORTVERSION=	2015.2.0
@@ -7,7 +7,7 @@ CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Computation of convex hull, Delaunay triangulation and Voronoi diagram
 
 LICENSE=	MIT

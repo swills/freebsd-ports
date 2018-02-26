@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich
-# $FreeBSD: head/net-im/py-unmessage/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-im/py-unmessage/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	unmessage
 PORTVERSION=	0.2.0
@@ -7,7 +7,7 @@ CATEGORIES=	net-im net-p2p python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Privacy enhanced instant messenger
 
 LICENSE=	GPLv3

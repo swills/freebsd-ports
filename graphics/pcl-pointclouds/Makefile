@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/pcl-pointclouds/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/graphics/pcl-pointclouds/Makefile 462964 2018-02-25 16:46:51Z antoine $
 
 PORTNAME=	pcl
 DISTVERSIONPREFIX=	${PORTNAME}-
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libexpat.so:textproc/expat2 \
 		libflann_cpp.so:math/flann \
 		libfreetype.so:print/freetype2 \
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libtiff.so:graphics/tiff \
 		libvtkCommonCore-6.2.so:math/vtk6
 

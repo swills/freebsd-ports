@@ -1,5 +1,5 @@
 # Created by: shoemaker@bluebottle.com (Jonathan Shoemaker)
-# $FreeBSD: head/games/quackle/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/quackle/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	quackle
 PORTVERSION=	1.0.3
@@ -7,7 +7,7 @@ PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	games@FreeBSD.org
 COMMENT=	Scrabble-like word game utilizing Qt4
 
 LICENSE=	GPLv3

@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/siril/Makefile 460947 2018-02-04 19:00:27Z yuri $
+# $FreeBSD: head/science/siril/Makefile 462964 2018-02-25 16:46:51Z antoine $
 
 PORTNAME=	siril
 DISTVERSION=	0.9.8
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libavformat.so:multimedia/ffmpeg \
 		liblcms2.so:graphics/lcms2 \
 		libopencv_core.so:graphics/opencv-core \
 		libomp.so:devel/openmp \
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libraw.so:graphics/libraw \
 		libtiff.so:graphics/tiff
 LIB_DEPENDS+=	libopencv_photo.so:graphics/opencv # for some reason, configure fails without opencv, but executable only links to opencv-core

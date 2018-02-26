@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/easyloggingpp/Makefile 461820 2018-02-14 17:02:11Z yuri $
+# $FreeBSD: head/devel/easyloggingpp/Makefile 462856 2018-02-24 17:49:38Z yuri $
 
 PORTNAME=	easyloggingpp
 DISTVERSIONPREFIX=	v
-DISTVERSION=	9.96.0
+DISTVERSION=	9.96.1
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org

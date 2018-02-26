@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net/py-pystun/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/net/py-pystun/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	pystun
 PORTVERSION=	0.1.0
@@ -8,7 +8,7 @@ CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Python STUN client for getting NAT type and external IP
 
 LICENSE=	MIT

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/math/py-pyvtk/Makefile 415525 2016-05-19 18:58:51Z pi $
+# $FreeBSD: head/math/py-pyvtk/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	pyVTK
 PORTVERSION=	0.5.18
@@ -8,7 +8,7 @@ MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	PyVTK-${PORTVERSION}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Tools for manipulating VTK files in Python
 
 LICENSE=	GPLv2

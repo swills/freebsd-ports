@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net-im/ring-libclient/Makefile 462210 2018-02-18 09:29:27Z antoine $
+# $FreeBSD: head/net-im/ring-libclient/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	ring-libclient
 PORTVERSION=	0.160516
@@ -7,7 +7,7 @@ PORTREVISION=	4
 #DISTVERSIONPREFIX=	v
 CATEGORIES=	net-im net-p2p
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Client library for the Ring VoIP SIP phone and IM
 
 LICENSE=	GPLv3

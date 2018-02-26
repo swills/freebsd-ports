@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/moony-lv2/Makefile 448182 2017-08-17 19:47:34Z ultima $
+# $FreeBSD: head/audio/moony-lv2/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	moony
 PORTVERSION=	0.22.0
@@ -7,7 +7,7 @@ CATEGORIES=	audio
 MASTER_SITES=	https://gitlab.com/OpenMusicKontrollers/moony.lv2/repository/archive.tar.gz?ref=${PORTVERSION}&dummy=/
 PKGNAMESUFFIX=	-lv2
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Realtime Lua as programmable glue in LV2
 
 LICENSE=	ART20

@@ -1,9 +1,8 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/lang/sagittarius-scheme/Makefile 458427 2018-01-08 15:20:57Z cpm $
+# $FreeBSD: head/lang/sagittarius-scheme/Makefile 462878 2018-02-24 23:29:53Z ashish $
 
 PORTNAME=	sagittarius
-PORTVERSION=	0.8.8
-PORTREVISION=	1
+PORTVERSION=	0.9.0.1
 CATEGORIES=	lang
 MASTER_SITES=	https://bitbucket.org/ktakashi/sagittarius-scheme/downloads/ \
 		LOCAL/ashish

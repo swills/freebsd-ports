@@ -1,12 +1,12 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/devel/codequery/Makefile 447128 2017-08-02 17:53:05Z pawel $
+# $FreeBSD: head/devel/codequery/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	codequery
 PORTVERSION=	0.21.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Code understanding, browsing and search tool
 
 LICENSE=	MPL20 MIT

@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/py-dill/Makefile 429482 2016-12-26 07:22:13Z pi $
+# $FreeBSD: head/devel/py-dill/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	dill
 PORTVERSION=	0.2.5
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Serialize all of python
 
 LICENSE=	BSD3CLAUSE

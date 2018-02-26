@@ -1,11 +1,11 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net/tiny-network-utilities/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/tiny-network-utilities/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	tiny-network-utilities
 PORTVERSION=	0.150519
 CATEGORIES=	net
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Minimalistic DHCP, UDP proxy, etc server implementations
 
 LICENSE=	BSD4CLAUSE

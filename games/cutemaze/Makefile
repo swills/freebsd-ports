@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/cutemaze/Makefile 462533 2018-02-21 16:36:45Z jhale $
+# $FreeBSD: head/games/cutemaze/Makefile 462885 2018-02-25 00:10:49Z jhale $
 
 PORTNAME=	cutemaze
 PORTVERSION=	1.2.2
@@ -7,7 +7,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://gottcode.org/${PORTNAME}/
 DISTNAME=	${PORTNAME}-${DISTVERSION}-src
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	jhale@FreeBSD.org
 COMMENT=	Simple, top-down game in which mazes are randomly generated
 
 LICENSE=	GPLv3+

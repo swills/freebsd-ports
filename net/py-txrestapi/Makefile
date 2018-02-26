@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net/py-txrestapi/Makefile 404387 2015-12-24 19:32:06Z miwi $
+# $FreeBSD: head/net/py-txrestapi/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	txrestapi
 PORTVERSION=	0.2
@@ -7,7 +7,7 @@ CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Easing the creation of REST API services in Python
 
 LICENSE=	MIT

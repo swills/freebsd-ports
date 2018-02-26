@@ -1,12 +1,12 @@
 # Created by: Alexey Dokuchaev <danfe@regency.nsu.ru>
-# $FreeBSD: head/x11/xnee/Makefile 398058 2015-09-27 21:39:00Z amdmi3 $
+# $FreeBSD: head/x11/xnee/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	xnee
 PORTVERSION=	3.19
 CATEGORIES=	x11
 MASTER_SITES=	GNU
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	X11 events recorder and player
 
 LICENSE=	GPLv3

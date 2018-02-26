@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/py-djvulibre/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/graphics/py-djvulibre/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	python-djvulibre
 PORTVERSION=	0.8
@@ -8,7 +8,7 @@ CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Python support for the DjVu image format
 
 LICENSE=	GPLv2

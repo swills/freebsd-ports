@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/cvs/Makefile 451754 2017-10-11 14:35:42Z swills $
+# $FreeBSD: head/devel/cvs/Makefile 462776 2018-02-24 08:54:57Z riggs $
 
 PORTNAME=	cvs
 PORTVERSION=	1.20120905
-PORTREVISION?=	4
+PORTREVISION?=	5
 CATEGORIES=	devel
 MASTER_SITES=	LOCAL/eadler
 

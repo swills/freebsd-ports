@@ -1,5 +1,5 @@
 # Created by: Tobias Roth <ports@fsck.ch>
-# $FreeBSD: head/deskutils/treeline/Makefile 455785 2017-12-08 17:05:59Z pawel $
+# $FreeBSD: head/deskutils/treeline/Makefile 462885 2018-02-25 00:10:49Z jhale $
 
 PORTNAME=	treeline
 PORTVERSION=	2.0.2
@@ -9,7 +9,7 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}/:treeline \
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}:treeline
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	jhale@FreeBSD.org
 COMMENT=	Structured information storage program
 
 LICENSE=	GPLv2

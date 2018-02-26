@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/osrm-backend/Makefile 461741 2018-02-13 20:09:04Z antoine $
+# $FreeBSD: head/www/osrm-backend/Makefile 462853 2018-02-24 17:33:07Z yuri $
 
 PORTNAME=		osrm-backend
 DISTVERSIONPREFIX=	v
-DISTVERSION=		5.15.2
+DISTVERSION=		5.15.3
 CATEGORIES=		www
 
 MAINTAINER=		a.andersson.thn@gmail.com
@@ -26,17 +26,16 @@ LIB_DEPENDS=		libtbb.so:devel/tbb \
 			libexpat.so:textproc/expat2
 
 USES=			cmake:outsource lua:52 compiler:c++14-lang
+USE_GITHUB=		yes
+GH_ACCOUNT=		Project-OSRM
 
-USE_LDCONFIG=		yes
 OPTIONS_DEFINE=		DEBUG
 
 USE_RC_SUBR=		osrm
 USERS=			osrm
 GROUPS=			osrm
 
-USE_GITHUB=		yes
-GH_ACCOUNT=		Project-OSRM
-
 pre-install:
-	${MKDIR}	${STAGEDIR}/var/db/osrm-backend
+	@${MKDIR} ${STAGEDIR}/var/db/osrm-backend
+
 .include <bsd.port.mk>

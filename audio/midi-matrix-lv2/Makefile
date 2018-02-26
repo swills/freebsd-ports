@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/midi-matrix-lv2/Makefile 448183 2017-08-17 19:50:26Z ultima $
+# $FreeBSD: head/audio/midi-matrix-lv2/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	midi-matrix
 PORTVERSION=	0.20.0
@@ -7,7 +7,7 @@ CATEGORIES=	audio
 MASTER_SITES=	https://gitlab.com/OpenMusicKontrollers/midi_matrix.lv2/repository/archive.tar.gz?ref=${PORTVERSION}&dummy=/
 PKGNAMESUFFIX=	-lv2
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	LV2 'Midi Matrix' plugin bundle: 'Channel Filter'
 
 LICENSE=	ART20

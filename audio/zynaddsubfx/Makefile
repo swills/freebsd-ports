@@ -1,5 +1,5 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/zynaddsubfx/Makefile 455665 2017-12-06 17:30:06Z pi $
+# $FreeBSD: head/audio/zynaddsubfx/Makefile 462964 2018-02-25 16:46:51Z antoine $
 
 PORTNAME=	zynaddsubfx
 PORTVERSION=	3.0.3
@@ -37,7 +37,7 @@ DSSI_CFLAGS=			-I${LOCALBASE}/include/dssi
 DSSI_CMAKE_OFF=			-DDssiEnable:BOOL=OFF
 
 GUI_LIB_DEPENDS=		libfltk.so:x11-toolkits/fltk \
-				libpng16.so:graphics/png \
+				libpng.so:graphics/png \
 				libfontconfig.so:x11-fonts/fontconfig
 GUI_ON=				-DGuiModule:STRING=fltk
 GUI_CMAKE_OFF=			-DGuiModule:STRING=OFF

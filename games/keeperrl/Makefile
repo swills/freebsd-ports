@@ -1,11 +1,11 @@
-# $FreeBSD: head/games/keeperrl/Makefile 460620 2018-02-01 17:31:35Z pawel $
+# $FreeBSD: head/games/keeperrl/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	keeperrl
 PORTVERSION=	0.0.${ALPHA_VERSION}
 PORTREVISION=	1
 CATEGORIES=	games
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	games@FreeBSD.org
 COMMENT=	Ambitious dungeon builder with roguelike elements
 
 LICENSE=	GPLv2 OFL11

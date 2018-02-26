@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/mod_gnutls/Makefile 452589 2017-10-21 12:43:23Z pi $
+# $FreeBSD: head/www/mod_gnutls/Makefile 462849 2018-02-24 16:26:50Z joneum $
 
 PORTNAME=	mod_gnutls
 PORTVERSION=	0.8.3
@@ -6,7 +6,7 @@ CATEGORIES=	www security
 MASTER_SITES=	https://mod.gnutls.org/downloads/
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Extension for Apache httpd using GnuTLS library to provide HTTPS
 
 LICENSE=	APACHE20

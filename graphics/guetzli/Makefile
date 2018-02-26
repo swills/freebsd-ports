@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/guetzli/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/guetzli/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	guetzli
 PORTVERSION=	1.0.1
@@ -7,7 +7,7 @@ PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Perceptual JPEG encoder
 
 LICENSE=	APACHE20

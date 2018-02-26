@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/lightzone/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/graphics/lightzone/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	lightzone
 PORTVERSION=	4.1.7
@@ -7,7 +7,7 @@ PORTREVISION=	3
 CATEGORIES=	graphics java
 DIST_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Professional-level digital darkroom and photo editor
 
 LICENSE=	BSD3CLAUSE

@@ -1,5 +1,5 @@
 # Created by: Alban MAIRE <a.maire@s2mi.fr>
-# $FreeBSD: head/net-mgmt/unifi5/Makefile 460661 2018-02-02 01:44:50Z feld $
+# $FreeBSD: head/net-mgmt/unifi5/Makefile 462956 2018-02-25 14:56:23Z feld $
 
 PORTNAME=	unifi5
 PORTVERSION=	5.6.30
@@ -42,7 +42,7 @@ GROUPS=		unifi
 
 NO_WRKSUBDIR=	yes
 
-CONFLICTS=	unifi2-* unifi3-* unifi4-*
+CONFLICTS=	unifi2-* unifi3-* unifi4-* unifi-devel-*
 
 DIR_LIST=	conf data logs run work
 

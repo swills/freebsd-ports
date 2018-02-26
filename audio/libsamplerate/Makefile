@@ -1,5 +1,5 @@
 # Created by: <dmagda+libsamplerate@ee.ryerson.ca>
-# $FreeBSD: head/audio/libsamplerate/Makefile 438969 2017-04-20 15:29:31Z jbeich $
+# $FreeBSD: head/audio/libsamplerate/Makefile 462779 2018-02-24 09:02:59Z amdmi3 $
 
 PORTNAME=	libsamplerate
 PORTVERSION=	0.1.9
@@ -17,6 +17,7 @@ USE_LDCONFIG=	yes
 CPE_VENDOR=	${CPE_PRODUCT}_project
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
+TEST_TARGET=	check
 
 OPTIONS_DEFINE=	CPU_CLIP DOCS EXAMPLES
 CPU_CLIP_DESC=	Allow machine-dependent clipping
@@ -43,12 +44,6 @@ LIB_DEPENDS+=	libsndfile.so:audio/libsndfile
 BUILD_DEPENDS +=	libsndfile>=0:audio/libsndfile
 .else
 CONFIGURE_ARGS+=	--disable-sndfile
-.endif
-
-.if defined(MAINTAINER_MODE)
-check regression-test test: build
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${MAKE} ${_MAKE_JOBS} ${MAKE_ARGS} \
-	check
 .endif
 
 .include <bsd.port.mk>

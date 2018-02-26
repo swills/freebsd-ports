@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/misc/py-python-geohash/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/misc/py-python-geohash/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	python-geohash
 PORTVERSION=	0.8.5
@@ -8,7 +8,7 @@ CATEGORIES=	misc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Fast, accurate python geohashing library
 
 LICENSE=	APACHE20 MIT BSD3CLAUSE

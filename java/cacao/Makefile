@@ -1,5 +1,5 @@
 # Created by: Tilman Keskinoz <arved@FreeBSD.org>
-# $FreeBSD: head/java/cacao/Makefile 455374 2017-12-02 13:48:41Z rene $
+# $FreeBSD: head/java/cacao/Makefile 462864 2018-02-24 21:24:15Z gerald $
 
 PORTNAME=	cacao
 PORTVERSION=	1.6.1
@@ -11,6 +11,8 @@ MAINTAINER=	java@FreeBSD.org
 COMMENT=	JIT compiler for JAVA
 
 LICENSE=	GPLv2
+
+ONLY_FOR_ARCHS=	amd64 i386
 
 BUILD_DEPENDS=	${LOCALBASE}/share/classpath/glibj.zip:java/classpath
 RUN_DEPENDS=	${LOCALBASE}/share/classpath/glibj.zip:java/classpath
@@ -24,8 +26,6 @@ CONFIGURE_ARGS=	--disable-test-dependency-checks \
 		--with-build-java-runtime-library-classes=${LOCALBASE}/share/classpath/glibj.zip
 CONFIGURE_ENV=	JAVAC="${JAVAC}" JAR="${JAR}"
 
-ONLY_FOR_ARCHS=	amd64 i386
-
 OPTIONS_DEFINE=	JDK
 OPTIONS_DEFAULT=JDK
 JDK_DESC=	Build with native JDK
@@ -37,9 +37,6 @@ BUILD_DEPENDS+=	${LOCALBASE}/bootstrap-openjdk6/bin/javac:java/bootstrap-openjdk
 JAR=		${LOCALBASE}/bootstrap-openjdk6/bin/jar
 JAVAC=		${LOCALBASE}/bootstrap-openjdk6/bin/javac
 .else
-.if defined(WITH_GCC)
-GCC_SUFX=	${WITH_GCC:S/.//}
-.endif
 GCC_SUFX?=	46
 BUILD_DEPENDS+=	gcj${GCC_SUFX}:lang/gcc${GCC_SUFX}
 EXTRA_PATCHES=	${FILESDIR}/gcj.patch

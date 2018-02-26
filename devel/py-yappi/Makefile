@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/devel/py-yappi/Makefile 432757 2017-01-29 15:30:46Z amdmi3 $
+# $FreeBSD: head/devel/py-yappi/Makefile 462919 2018-02-25 05:33:13Z sunpoet $
 
 PORTNAME=	yappi
 PORTVERSION=	0.98
@@ -7,24 +7,24 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	johannes@perceivon.net
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Yet Another Python Profiler
 
 LICENSE=	MIT
+
+USES=		python
+USE_PYTHON=	autoplist concurrent distutils
 
 OPTIONS_DEFINE=	DOCS
 
 PORTDOCS=	*
 
-USES=		python
-USE_PYTHON=	distutils concurrent autoplist
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/_yappi.so
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
-
-post-install:
-	@${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/_yappi.so
 
 do-test:
 	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYDISTUTILS_SETUP} test

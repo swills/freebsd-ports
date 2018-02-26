@@ -1,11 +1,11 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/eschalot/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/security/eschalot/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	eschalot
 PORTVERSION=	1.2.0
 CATEGORIES=	security
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Vanity onion address generator for Tor
 
 LICENSE=	PD

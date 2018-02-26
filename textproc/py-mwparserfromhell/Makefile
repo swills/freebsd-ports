@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/textproc/py-mwparserfromhell/Makefile 444660 2017-06-29 18:23:00Z ultima $
+# $FreeBSD: head/textproc/py-mwparserfromhell/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	mwparserfromhell
 PORTVERSION=	0.5
@@ -7,7 +7,7 @@ CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Parser for MediaWiki wikicode
 
 LICENSE=	MIT

@@ -1,11 +1,11 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/devel/qt-maybe/Makefile 409625 2016-02-26 17:17:44Z pawel $
+# $FreeBSD: head/devel/qt-maybe/Makefile 462871 2018-02-24 22:35:18Z rene $
 
 PORTNAME=	qt-maybe
 PORTVERSION=	0.0.20151227
 CATEGORIES=	devel
 
-MAINTAINER=	pawel@FreeBSD.org
+MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Implementation of sum/option types using QVariant
 
 LICENSE=	BSD3CLAUSE

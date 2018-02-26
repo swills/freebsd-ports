@@ -1,11 +1,11 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/vm-to-tor/Makefile 430454 2017-01-03 11:01:05Z mat $
+# $FreeBSD: head/security/vm-to-tor/Makefile 462887 2018-02-25 00:40:37Z yuri $
 
 PORTNAME=	vm-to-tor
 PORTVERSION=	0.150519
 CATEGORIES=	security net
 
-MAINTAINER=	yuri@rawbw.com
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Connect virtual machines to the tor network
 
 LICENSE=	BSD4CLAUSE
