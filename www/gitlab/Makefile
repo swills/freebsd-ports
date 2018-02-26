@@ -2,7 +2,7 @@
 # $FreeBSD: head/www/gitlab/Makefile 462522 2018-02-21 13:40:36Z sunpoet $
 
 PORTNAME=	gitlab
-PORTVERSION=	10.5.1
+PORTVERSION=	10.5.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www devel
 

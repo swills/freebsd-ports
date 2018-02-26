@@ -6344,6 +6344,8 @@
 %%WWWDIR%%/db/migrate/20180201145907_migrate_remaining_issues_closed_at.rb
 %%WWWDIR%%/db/migrate/20180206200543_reset_events_primary_key_sequence.rb
 %%WWWDIR%%/db/migrate/20180208183958_schedule_populate_untracked_uploads_if_needed.rb
+%%WWWDIR%%/db/migrate/20180213131630_add_partial_index_to_projects_for_index_only_scans.rb
+%%WWWDIR%%/db/migrate/20180215181245_users_name_lower_index.rb
 %%WWWDIR%%/db/migrate/20180216120000_add_pages_domain_verification.rb
 %%WWWDIR%%/db/migrate/20180216120010_add_pages_domain_verified_at_index.rb
 %%WWWDIR%%/db/migrate/20180216120020_allow_domain_verification_to_be_disabled.rb
@@ -7572,8 +7574,8 @@
 %%WWWDIR%%/doc/user/project/integrations/img/merge_request_performance.png
 %%WWWDIR%%/doc/user/project/integrations/img/microsoft_teams_configuration.png
 %%WWWDIR%%/doc/user/project/integrations/img/project_services.png
-%%WWWDIR%%/doc/user/project/integrations/img/prometheus_gcp_firewall_rule.png
-%%WWWDIR%%/doc/user/project/integrations/img/prometheus_gcp_node_name.png
+%%WWWDIR%%/doc/user/project/integrations/img/prometheus_dashboard.png
+%%WWWDIR%%/doc/user/project/integrations/img/prometheus_deploy.png
 %%WWWDIR%%/doc/user/project/integrations/img/prometheus_service_configuration.png
 %%WWWDIR%%/doc/user/project/integrations/img/prometheus_yaml_deploy.png
 %%WWWDIR%%/doc/user/project/integrations/img/redmine_configuration.png
@@ -7601,7 +7603,6 @@
 %%WWWDIR%%/doc/user/project/integrations/prometheus_library/nginx_ingress.md
 %%WWWDIR%%/doc/user/project/integrations/redmine.md
 %%WWWDIR%%/doc/user/project/integrations/samples/cloudwatch.yml
-%%WWWDIR%%/doc/user/project/integrations/samples/prometheus.yml
 %%WWWDIR%%/doc/user/project/integrations/services_templates.md
 %%WWWDIR%%/doc/user/project/integrations/slack.md
 %%WWWDIR%%/doc/user/project/integrations/slack_slash_commands.md
@@ -7709,9 +7710,10 @@
 %%WWWDIR%%/doc/user/project/merge_requests/revert_changes.md
 %%WWWDIR%%/doc/user/project/merge_requests/versions.md
 %%WWWDIR%%/doc/user/project/merge_requests/work_in_progress_merge_requests.md
-%%WWWDIR%%/doc/user/project/milestones/img/milestone_create.png
-%%WWWDIR%%/doc/user/project/milestones/img/milestone_group_create.png
-%%WWWDIR%%/doc/user/project/milestones/img/sidebar.png
+%%WWWDIR%%/doc/user/project/milestones/img/milestones_new_group_milestone.png
+%%WWWDIR%%/doc/user/project/milestones/img/milestones_new_project_milestone.png
+%%WWWDIR%%/doc/user/project/milestones/img/milestones_project_milestone_page.png
+%%WWWDIR%%/doc/user/project/milestones/img/milestones_promote_milestone.png
 %%WWWDIR%%/doc/user/project/milestones/index.md
 %%WWWDIR%%/doc/user/project/new_ci_build_permissions_model.md
 %%WWWDIR%%/doc/user/project/pages/getting_started_part_four.md
