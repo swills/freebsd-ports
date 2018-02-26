@@ -33,7 +33,7 @@
  [gitaly-ruby]
  # The directory where gitaly-ruby is installed
 -dir = "/home/git/gitaly/ruby"
-+dir = "/usr/local/bin/ruby"
++dir = "/usr/local/share/gitaly/ruby"
  
  # # Gitaly-ruby resident set size (RSS) that triggers a memory restart (bytes)
  # max_rss = 300000000
@@ -42,7 +42,7 @@
  [gitlab-shell]
  # The directory where gitlab-shell is installed
 -dir = "/home/git/gitlab-shell"
-+dir = "/usr/local/share/gitlab-shell/bin/gitlab-shell"
++dir = "/usr/local/share/gitlab-shell/bin"
  
  # # You can adjust the concurrency of each RPC endpoint
  # [[concurrency]]
