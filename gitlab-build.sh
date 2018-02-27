@@ -1,51 +1,34 @@
 #!/bin/sh
 
 PORT_LIST=$(mktemp)
-JAILS="head-amd64 head-i386 111-amd64 111-i386 103-amd64 103-i386"
 
-git diff --no-prefix --name-only origin/trunk ${GIT_BRANCH} | grep Makefile | cut -d/ -f 1,2 | sort -u | sed -e 's/$/@all/' > ${PORT_LIST}
+git diff --no-prefix --name-only origin/trunk ${CI_COMMIT_SHA} | grep Makefile | cut -d/ -f 1,2 | sort -u | sed -e 's/$/@all/' > ${PORT_LIST}
 
-cat <<EOF >> ${PORT_LIST}.full
-databases/postgresql95-client
-databases/postgresql95-contrib
-databases/postgresql95-server
-devel/git
-devel/gitlab-shell
-devel/rubygem-capybara
-devel/rubygem-capybara-screenshot
-devel/rubygem-pry-byebug
-devel/rubygem-rspec
-editors/vim-console
-emulators/virtualbox-ose-additions-nox11
-lang/python
-mail/dma
-net/rsync
-ports-mgmt/pkg
-ports-mgmt/pkg-devel
-security/ca_root_nss
-security/sudo
-sysutils/firstboot-freebsd-update
-sysutils/firstboot-pkgs
-www/chromium
-www/gitlab
-www/nginx
-www/rubygem-selenium-webdriver
+cat <<EOF >> ${PORT_LIST}
+databases/postgresql95-client@all
+databases/postgresql95-contrib@all
+databases/postgresql95-server@all
+devel/git@all
+devel/gitlab-shell@all
+devel/rubygem-capybara@all
+devel/rubygem-capybara-screenshot@all
+devel/rubygem-pry-byebug@all
+devel/rubygem-rspec@all
+editors/vim-console@all
+emulators/virtualbox-ose-additions-nox11@all
+lang/python@all
+mail/dma@all
+net/rsync@all
+ports-mgmt/pkg@all
+ports-mgmt/pkg-devel@all
+security/ca_root_nss@all
+security/sudo@all
+sysutils/firstboot-freebsd-update@all
+sysutils/firstboot-pkgs@all
+www/chromium@all
+www/gitlab@all
+www/nginx@all
+www/rubygem-selenium-webdriver@all
 EOF
 
-y=1
-z=$(echo ${JAILS} | wc -w | xargs)
-
-for x in ${JAILS} ; do
-  echo "==========================================================================="
-  printf "= Building ${PORTDIR} for ${x} ${y}/${z}\n"
-  echo "==========================================================================="
-  if [ ${x} = "111-amd64" ]; then
-    sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${BUILD_NUMBER} -j ${x} -p swills-git-jenkins -f ${PORT_LIST}.full
-  else
-    sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${BUILD_NUMBER} -j ${x} -p swills-git-jenkins -f ${PORT_LIST}
-  fi
-  if [ $? -ne 0 ]; then
-    exit 1
-  fi
-  y=$((${y}+1))
-done
+sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_JOB_ID} -j 111-amd64 -p swills-git-jenkins -f ${PORT_LIST}
