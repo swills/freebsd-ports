@@ -29,4 +29,4 @@ www/nginx@all
 www/rubygem-selenium-webdriver@all
 EOF
 
-sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -t -B ${CI_JOB_ID} -j 111-amd64 -p swills-git-jenkins -f ${PORT_LIST}
+sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -t -B ${CI_JOB_ID} -j 111-amd64 -p ${CI_PROJECT_NAMESPACE}-${CI_PROJECT_NAME} -f ${PORT_LIST}
