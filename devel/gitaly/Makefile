@@ -12,7 +12,7 @@ COMMENT=	Smart reverse proxy for GitLab
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-# definedependencies that are required for build and run under MY_DEPENDS
+# define dependencies that are required for build and run under MY_DEPENDS
 MY_DEPENDS=	git>=2.14.3:devel/git \
 		rubygem-github-linguist47>=4.7.0:textproc/rubygem-github-linguist47 \
 		rubygem-bundler>0:sysutils/rubygem-bundler \
