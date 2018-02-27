@@ -1,0 +1,49 @@
+build:
+  stage: build
+  script:
+    - >
+PORT_LIST=$(mktemp)
+JAILS="head-amd64 head-i386 111-amd64 111-i386 103-amd64 103-i386"
+
+git diff --no-prefix --name-only origin/trunk ${GIT_BRANCH} | grep Makefile | cut -d/ -f 1,2 | sort -u | sed -e 's/$/@all/' > ${PORT_LIST}
+
+cat <<EOF >> ${PORT_LIST}
+databases/postgresql95-client
+databases/postgresql95-contrib
+databases/postgresql95-server
+devel/git
+devel/gitlab-shell
+devel/rubygem-capybara
+devel/rubygem-capybara-screenshot
+devel/rubygem-pry-byebug
+devel/rubygem-rspec
+editors/vim-console
+emulators/virtualbox-ose-additions-nox11
+lang/python
+mail/dma
+net/rsync
+ports-mgmt/pkg
+ports-mgmt/pkg-devel
+security/ca_root_nss
+security/sudo
+sysutils/firstboot-freebsd-update
+sysutils/firstboot-pkgs
+www/chromium
+www/gitlab
+www/nginx
+www/rubygem-selenium-webdriver
+EOF
+
+y=1
+z=$(echo ${JAILS} | wc -w | xargs)
+
+for x in ${JAILS} ; do
+  echo "==========================================================================="
+  printf "= Building ${PORTDIR} for ${x} ${y}/${z}\n"
+  echo "==========================================================================="
+  sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${BUILD_NUMBER} -j ${x} -p swills-git-jenkins -f ${PORT_LIST}
+  if [ $? -ne 0 ]; then
+    exit 1
+  fi
+  y=$((${y}+1))
+done
