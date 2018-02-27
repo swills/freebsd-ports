@@ -2,7 +2,7 @@ variables:
   GIT_STRATEGY: fetch
 
 before_script:
-  - sudo poudriere ports -d $CI_PROJECT_NAMESPACE-$CI_PROJECT_NAME
+  - sudo poudriere ports -d -p $CI_PROJECT_NAMESPACE-$CI_PROJECT_NAME
   - sudo poudriere ports -c -m null -p $CI_PROJECT_NAMESPACE-$CI_PROJECT_NAME -M $CI_PROJECT_DIR
 
 build:
