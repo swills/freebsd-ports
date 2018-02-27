@@ -5,7 +5,7 @@ JAILS="head-amd64 head-i386 111-amd64 111-i386 103-amd64 103-i386"
 
 git diff --no-prefix --name-only origin/trunk ${GIT_BRANCH} | grep Makefile | cut -d/ -f 1,2 | sort -u | sed -e 's/$/@all/' > ${PORT_LIST}
 
-cat <<EOF >> ${PORT_LIST}
+cat <<EOF >> ${PORT_LIST}.full
 databases/postgresql95-client
 databases/postgresql95-contrib
 databases/postgresql95-server
@@ -39,7 +39,11 @@ for x in ${JAILS} ; do
   echo "==========================================================================="
   printf "= Building ${PORTDIR} for ${x} ${y}/${z}\n"
   echo "==========================================================================="
-  sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${BUILD_NUMBER} -j ${x} -p swills-git-jenkins -f ${PORT_LIST}
+  if [ ${x} = "111-amd64" ]; then
+    sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${BUILD_NUMBER} -j ${x} -p swills-git-jenkins -f ${PORT_LIST}.full
+  else
+    sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${BUILD_NUMBER} -j ${x} -p swills-git-jenkins -f ${PORT_LIST}
+  fi
   if [ $? -ne 0 ]; then
     exit 1
   fi
