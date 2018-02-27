@@ -19,8 +19,6 @@ emulators/virtualbox-ose-additions-nox11@all
 lang/python@all
 mail/dma@all
 net/rsync@all
-ports-mgmt/pkg@all
-ports-mgmt/pkg-devel@all
 security/ca_root_nss@all
 security/sudo@all
 sysutils/firstboot-freebsd-update@all
