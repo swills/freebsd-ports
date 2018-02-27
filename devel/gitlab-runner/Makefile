@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	gitlab-runner
-PORTVERSION=	10.4.0
+PORTVERSION=	10.5.0
 CATEGORIES=	devel
 MASTER_SITES=	\
 		https://gitlab.com/gitlab-org/gitlab-runner/repository/archive.tar.bz2?ref=v${PORTVERSION}&dummy=/ \
@@ -27,10 +27,10 @@ RUN_DEPENDS=	ca_root_nss>=0:security/ca_root_nss \
 		git:devel/git
 
 USES=		tar:bz2
-GITHASH=	857480b64b013d8edffaf70e4b7ea43ee1c66a9e
-GITREV=		857480b6
-GITBRANCH=	10-4-stable
-BUILT=		2018-01-22T09:48:29-00:00
+GITHASH=	80b03db9893ab1668ac601909c1a1bf29d476035
+GITREV=		80b03db9
+GITBRANCH=	10-5-stable
+BUILT=		2018-02-22T09:18:47+00:00
 
 WRKSRC=		${WRKDIR}/gitlab-runner-v${PORTVERSION}-${GITHASH}
 GO_LDFLAGS=	-X gitlab.com/gitlab-org/gitlab-runner/common.VERSION=${PORTVERSION} \
@@ -66,7 +66,7 @@ do-build:
 	@${MKDIR} ${WRKSRC}/src/gitlab.com/gitlab-org
 	@${LN} -s ${WRKSRC} ${WRKSRC}/src/gitlab.com/gitlab-org/gitlab-runner
 	@cd ${WRKSRC} && \
-		${SETENV} CGO_ENABLED=0 GOPATH=${WRKSRC} go build \
+		${SETENV} CGO_ENABLED=0 GOPATH=${WRKSRC} GOCACHE=${WRKSRC} go build \
 			-ldflags="${GO_LDFLAGS}" \
 			-o gitlab-runner
 
