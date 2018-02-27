@@ -4,4 +4,4 @@ variables:
 build:
   stage: build
   script:
-    - ./build-gitlab.sh 
+    - ./gitlab-build.sh
