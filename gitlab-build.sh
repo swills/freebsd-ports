@@ -5,9 +5,9 @@ PORT_LIST=$(mktemp)
 git diff --no-prefix --name-only origin/trunk ${CI_COMMIT_SHA} | grep Makefile | cut -d/ -f 1,2 | sort -u | sed -e 's/$/@all/' > ${PORT_LIST}
 
 cat <<EOF >> ${PORT_LIST}
-databases/postgresql95-client@all
-databases/postgresql95-contrib@all
-databases/postgresql95-server@all
+databases/postgresql96-client@all
+databases/postgresql96-contrib@all
+databases/postgresql96-server@all
 devel/git@all
 devel/gitlab-shell@all
 devel/rubygem-capybara@all
