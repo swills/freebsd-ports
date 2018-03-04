@@ -106,7 +106,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-rouge2>=2.0:textproc/rubygem-rouge2 \
 	rubygem-truncato>=0.7.9:textproc/rubygem-truncato \
 	rubygem-bootstrap_form>=2.7.0:devel/rubygem-bootstrap_form \
-	rubygem-nokogiri>=1.8.1:textproc/rubygem-nokogiri  \
+	rubygem-nokogiri>=1.8.2:textproc/rubygem-nokogiri  \
 	rubygem-diffy31>=3.1.0:textproc/rubygem-diffy31 \
 	rubygem-unicorn51>=5.1.0:www/rubygem-unicorn51 \
 	rubygem-unicorn-worker-killer044>=0.4.4:www/rubygem-unicorn-worker-killer044 \
