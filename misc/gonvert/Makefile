@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/misc/gonvert/Makefile 455913 2017-12-10 20:48:45Z antoine $
+# $FreeBSD: head/misc/gonvert/Makefile 463285 2018-03-01 07:11:11Z yuri $
 
 PORTNAME=	gonvert
 PORTVERSION=	0.2.38
@@ -24,7 +24,7 @@ NLS_CONFIGURE_ENABLE=	nls
 NLS_USES=	gettext
 
 post-patch:
-	@${REINPLACE_CMD} -e 's|#!/usr/bin/python|#!/usr/bin/env python|g ; \
+	@${REINPLACE_CMD} -e 's|#!/usr/bin/python|#!${PYTHON_CMD}| ; \
 		 s|/usr/share|${PREFIX}/share|g ; \
 		 s|/\.\./pixmaps/|/pixmaps/|g' ${WRKSRC}/gonvert
 

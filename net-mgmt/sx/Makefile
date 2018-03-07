@@ -1,12 +1,12 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/sx/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/net-mgmt/sx/Makefile 463361 2018-03-02 00:01:09Z yuri $
 
 PORTNAME=	sx
 PORTVERSION=	2.3
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://cdn.skylable.com/source/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	neel@neelc.org
 COMMENT=	Skylable Sx is a reliable, fully distributed cluster solution
 
 LICENSE=	GPLv2

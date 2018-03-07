@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-wm/selectwm/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/x11-wm/selectwm/Makefile 463107 2018-02-27 04:55:52Z yuri $
 
 PORTNAME=	selectwm
 PORTVERSION=	0.4.1
@@ -6,7 +6,7 @@ PORTREVISION=	10
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://ordiluc.net/selectwm/
 
-MAINTAINER=	bhaga@absoludicrous.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GTK application to let you select a window manager when starting X
 
 USES=		pkgconfig tar:bzip2

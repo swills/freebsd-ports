@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-gh/Makefile 445520 2017-07-11 17:00:32Z sunpoet $
+# $FreeBSD: head/devel/rubygem-gh/Makefile 463224 2018-02-28 15:13:07Z sunpoet $
 
 PORTNAME=	gh
 PORTVERSION=	0.15.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -14,14 +14,19 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-addressable>=2.4.0:www/rubygem-addressable \
-		rubygem-backports>=0:devel/rubygem-backports \
 		rubygem-faraday>=0.8:www/rubygem-faraday \
 		rubygem-multi_json>=1.0:devel/rubygem-multi_json \
 		rubygem-net-http-persistent2>=2.9:www/rubygem-net-http-persistent2 \
 		rubygem-net-http-pipeline>=0:www/rubygem-net-http-pipeline
 
 NO_ARCH=	yes
+REINPLACE_ARGS=	-i ''
 USE_RUBY=	yes
 USES=		gem
+
+post-patch:
+# Remove backports
+	@${REINPLACE_CMD} -e '/backports/d' ${WRKSRC}/${GEMSPEC}
+	@${REINPLACE_CMD} -e "/require 'backports'/d" ${WRKSRC}/lib/gh.rb ${WRKSRC}/lib/gh/parallel.rb
 
 .include <bsd.port.mk>

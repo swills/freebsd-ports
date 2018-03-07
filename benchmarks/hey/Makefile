@@ -1,5 +1,5 @@
 # Created by: Brad Davis <brd@FreeBSD.org>
-# $FreeBSD: head/benchmarks/hey/Makefile 443638 2017-06-15 20:52:52Z brd $
+# $FreeBSD: head/benchmarks/hey/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	hey
 PORTVERSION=	0.1.0
@@ -24,7 +24,7 @@ do-build:
 		cd src/github.com/rakyll/hey; \
 		${LN} -s ../../../../requester . )
 	( cd ${WRKSRC}; \
-		${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} CC=clang \
+		${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} CC=clang \
 		go build ${BUILD_FLAGS} )
 
 do-install:

@@ -1,8 +1,8 @@
 # Created by: Goran Mekić <meka@tilda.center>
-# $FreeBSD: head/dns/py-dns-lexicon/Makefile 462861 2018-02-24 20:12:54Z yuri $
+# $FreeBSD: head/dns/py-dns-lexicon/Makefile 463366 2018-03-02 04:33:29Z yuri $
 
 PORTNAME=	dns-lexicon
-DISTVERSION=	2.1.19
+DISTVERSION=	2.1.20
 CATEGORIES=	dns python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,9 +13,9 @@ COMMENT=	Manipulate DNS records on various DNS providers in a standardized way
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}future>=0.16:devel/py-future@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}tldextract>=1.7.5:dns/py-tldextract@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}requests>=2.11:www/py-requests@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}future>0:devel/py-future@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tldextract>0:dns/py-tldextract@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist concurrent

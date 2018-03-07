@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/zoneminder-h264/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/multimedia/zoneminder-h264/Makefile 463142 2018-02-27 13:25:43Z sunpoet $
 
 PORTNAME=	zoneminder-h264
 PORTVERSION=	1.30.20170222
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	multimedia
 
 MAINTAINER=	bsd@abinet.ru
@@ -18,7 +18,7 @@ ZM_DEPENDS=	p5-DBI>=0:databases/p5-DBI \
 		p5-Test-LWP-UserAgent>=0:www/p5-Test-LWP-UserAgent \
 		p5-Sys-Mmap>=0:devel/p5-Sys-Mmap \
 		p5-LWP-Protocol-https>=0:www/p5-LWP-Protocol-https \
-		p5-Sys-CPU>=0:devel/p5-Sys-Cpu \
+		p5-Sys-CPU>=0:devel/p5-Sys-CPU \
 		p5-Sys-MemInfo>=0:devel/p5-Sys-MemInfo \
 		p5-Data-Dump>=0:devel/p5-Data-Dump \
 		p5-SOAP-WSDL>=0:devel/p5-SOAP-WSDL \

@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/textproc/consul-template/Makefile 456563 2017-12-17 21:04:49Z swills $
+# $FreeBSD: head/textproc/consul-template/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	consul-template
 PORTVERSION=	0.19.4
@@ -24,7 +24,7 @@ USE_RC_SUBR=	consul-template
 
 do-build:
 	@cd ${WRKSRC}/src/github.com/hashicorp/consul-template ; \
-		${SETENV} GOPATH=${WRKSRC} go build
+		${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go build
 
 do-install:
 	${INSTALL_PROGRAM} \

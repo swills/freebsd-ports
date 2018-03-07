@@ -1,9 +1,9 @@
 # Created by: Maurice Castro <maurice@serc.rmit.edu.au>
-# $FreeBSD: head/math/R/Makefile 455297 2017-12-01 15:28:01Z jrm $
+# $FreeBSD: head/math/R/Makefile 463169 2018-02-28 00:24:47Z jrm $
 
 PORTNAME=		R
 DISTVERSION=		3.4.3
-PORTREVISION=		1
+PORTREVISION=		2
 CATEGORIES=		math lang
 MASTER_SITES=		CRAN/src/base/R-${PORTVERSION:C|\..*||}
 
@@ -69,7 +69,7 @@ TEXDOCS_DESC=		Build/Install TeX-dependent documentation files
 X11_DESC=		X11 graphics device
 
 OPTIONS_DEFAULT=	CAIROPANGO GHOSTSCRIPT ICU INFO JPEG LDOUBLE OPENMP \
-			PNG RBLAS RPROF TIFF X11
+			PNG RBLAS RPROF TCLTK TIFF X11
 
 ATLAS_USES=		blaslapack:atlas
 ATLAS_CONFIGURE_ON=	--disable-BLAS-shlib

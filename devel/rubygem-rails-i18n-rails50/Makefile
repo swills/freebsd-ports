@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-rails-i18n-rails50/Makefile 461908 2018-02-15 12:47:22Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rails-i18n-rails50/Makefile 463070 2018-02-26 22:31:11Z sunpoet $
 
 PORTNAME=	rails-i18n
-PORTVERSION=	5.1.0
+PORTVERSION=	5.1.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50

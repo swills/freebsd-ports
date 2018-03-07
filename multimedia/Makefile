@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/multimedia/Makefile 463596 2018-03-04 19:11:34Z yuri $
 #
 
     COMMENT = Multimedia software
@@ -157,6 +157,7 @@
     SUBDIR += gtk-youtube-viewer
     SUBDIR += gxine
     SUBDIR += handbrake
+    SUBDIR += harvid
     SUBDIR += imagination
     SUBDIR += iriverter
     SUBDIR += iso2mkv
@@ -277,6 +278,7 @@
     SUBDIR += mythtv-frontend
     SUBDIR += naludump
     SUBDIR += nordlicht
+    SUBDIR += nostt
     SUBDIR += obs-studio
     SUBDIR += oggvideotools
     SUBDIR += ogmrip

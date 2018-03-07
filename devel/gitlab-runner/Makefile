@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/gitlab-runner/Makefile 459905 2018-01-25 03:06:14Z swills $
+# $FreeBSD: head/devel/gitlab-runner/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	gitlab-runner
 PORTVERSION=	10.4.0
@@ -66,7 +66,7 @@ do-build:
 	@${MKDIR} ${WRKSRC}/src/gitlab.com/gitlab-org
 	@${LN} -s ${WRKSRC} ${WRKSRC}/src/gitlab.com/gitlab-org/gitlab-runner
 	@cd ${WRKSRC} && \
-		${SETENV} CGO_ENABLED=0 GOPATH=${WRKSRC} go build \
+		${SETENV} ${MAKE_ENV} CGO_ENABLED=0 GOPATH=${WRKSRC} go build \
 			-ldflags="${GO_LDFLAGS}" \
 			-o gitlab-runner
 

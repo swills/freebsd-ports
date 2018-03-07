@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/databases/fastdb/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/databases/fastdb/Makefile 463452 2018-03-02 22:34:53Z brooks $
 
 PORTNAME=	fastdb
 PORTVERSION=	3.75
@@ -22,6 +22,7 @@ MAKE_ENV=	OSTYPE="${OPSYS}"
 MAKEFILE=	makefile
 USE_LDCONFIG=	yes
 DOS2UNIX_FILES=	${MAKEFILE}
+CXXFLAGS+=	-D_WANT_SEMUN
 
 PORTDOCS=	FastDB.htm
 

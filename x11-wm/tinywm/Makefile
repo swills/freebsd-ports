@@ -1,5 +1,5 @@
 # Created by: Florent Thoumie <flz@xbsd.org>
-# $FreeBSD: head/x11-wm/tinywm/Makefile 346451 2014-02-28 07:59:41Z bapt $
+# $FreeBSD: head/x11-wm/tinywm/Makefile 463723 2018-03-06 12:32:00Z tobik $
 
 PORTNAME=	tinywm
 PORTVERSION=	1.3
@@ -8,7 +8,7 @@ CATEGORIES=	x11-wm
 MASTER_SITES=	http://incise.org/files/dev/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	flz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Ridiculously tiny window manager
 
 OPTIONS_DEFINE=	DOCS

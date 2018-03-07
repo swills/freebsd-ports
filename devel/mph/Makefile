@@ -1,12 +1,12 @@
 # Created by: Chuck Swiger <chuck@pkix.net>
-# $FreeBSD: head/devel/mph/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/devel/mph/Makefile 463107 2018-02-27 04:55:52Z yuri $
 
 PORTNAME=	mph
 PORTVERSION=	1.2
 CATEGORIES=	devel
 MASTER_SITES=	SUNSITE/devel/lang/c
 
-MAINTAINER=	chuck@pkix.net
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Minimal perfect hashing code generator
 
 BIN_FILES=	emitc mph mphm

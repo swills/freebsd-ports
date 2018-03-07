@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/syncplay/Makefile 457469 2017-12-28 19:21:21Z tcberner $
+# $FreeBSD: head/multimedia/syncplay/Makefile 463519 2018-03-03 18:01:10Z yuri $
 
 PORTNAME=	syncplay
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.5.1
+DISTVERSION=	1.5.2
 CATEGORIES=	multimedia
 
 MAINTAINER=	heckendorfc@gmail.com
@@ -17,7 +17,6 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	Syncplay
 SHEBANG_FILES=	syncplayClient.py \
 		syncplayServer.py
-
 NO_ARCH=	yes
 
 OPTIONS_DEFINE=	GUI VLC
@@ -26,6 +25,8 @@ OPTIONS_SUB=	yes
 OPTIONS_MULTI=	MODES
 OPTIONS_MULTI_MODES=	CLIENT SERVER
 
+CLIENT_DESC=	Client mode
+SERVER_DESC=	Server mode
 VLC_DESC=	Support for VLC media player
 
 MAKEFILE=	GNUmakefile

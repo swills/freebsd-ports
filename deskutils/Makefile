@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/deskutils/Makefile 463444 2018-03-02 19:10:48Z rene $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -22,7 +22,6 @@
     SUBDIR += calibre
     SUBDIR += cartotheque
     SUBDIR += cdcat
-    SUBDIR += charmap
     SUBDIR += charmtimetracker
     SUBDIR += clipit
     SUBDIR += conduit

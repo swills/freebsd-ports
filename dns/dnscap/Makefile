@@ -1,8 +1,8 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/dns/dnscap/Makefile 461714 2018-02-13 17:02:05Z sunpoet $
+# $FreeBSD: head/dns/dnscap/Makefile 463328 2018-03-01 15:19:13Z sunpoet $
 
 PORTNAME=	dnscap
-PORTVERSION=	1.8.0
+PORTVERSION=	1.9.0
 DISTVERSIONPREFIX=	v
 PORTEPOCH=	1
 CATEGORIES=	dns

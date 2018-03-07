@@ -1,5 +1,5 @@
 # Created by: J.R. Oldroyd <fbsd@opal.com>
-# $FreeBSD: head/multimedia/py-kaa-base/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/multimedia/py-kaa-base/Makefile 463452 2018-03-02 22:34:53Z brooks $
 
 PORTNAME=	kaa-base
 PORTVERSION=	0.6.0
@@ -18,5 +18,6 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 USES=		python:2.7
 USE_GNOME=	glib20
 USE_PYTHON=	distutils autoplist
+CFLAGS+=	-D_WANT_SEMUN
 
 .include <bsd.port.mk>

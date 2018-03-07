@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/syncthing/Makefile 461975 2018-02-16 03:51:13Z swills $
+# $FreeBSD: head/net/syncthing/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	syncthing
 PORTVERSION=	0.14.44
@@ -22,7 +22,7 @@ GROUPS=		syncthing
 
 do-build:
 	@cd ${WRKSRC}/src/github.com/${PORTNAME}/${PORTNAME} ; \
-		${SETENV} go run build.go -no-upgrade=true -version v${PORTVERSION}
+		${SETENV} ${MAKE_ENV} go run build.go -no-upgrade=true -version v${PORTVERSION}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/github.com/${PORTNAME}/${PORTNAME}/bin/syncthing \

@@ -1,5 +1,5 @@
 # Created by: Andrew Turner <andrew+ports@fubar.geek.nz>
-# $FreeBSD: head/devel/dfuife-curses/Makefile 420714 2016-08-23 16:56:41Z marino $
+# $FreeBSD: head/devel/dfuife-curses/Makefile 463702 2018-03-06 09:03:07Z amdmi3 $
 
 PORTNAME=	dfuife-curses
 PORTVERSION=	1.5.1.20050829
@@ -9,6 +9,8 @@ MASTER_SITES=	http://people.xmms2.org/~alex/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	DFUI curses frontend
+
+LICENSE=	BSD3CLAUSE
 
 LIB_DEPENDS=	libaura3.so:devel/libaura \
 		libdfui4.so:devel/libdfui

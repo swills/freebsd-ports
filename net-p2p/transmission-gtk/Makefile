@@ -1,6 +1,5 @@
-# $FreeBSD: head/net-p2p/transmission-gtk/Makefile 447965 2017-08-14 19:21:04Z crees $
+# $FreeBSD: head/net-p2p/transmission-gtk/Makefile 463262 2018-02-28 21:09:36Z crees $
 
-PORTREVISION=	4
 PKGNAMESUFFIX=	-gtk
 
 MAINTAINER=	crees@FreeBSD.org

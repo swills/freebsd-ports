@@ -1,15 +1,17 @@
 # Created by: ijliao
-# $FreeBSD: head/audio/libsndfile/Makefile 440208 2017-05-05 23:35:00Z jkim $
+# $FreeBSD: head/audio/libsndfile/Makefile 463363 2018-03-02 00:42:07Z jhale $
 
 PORTNAME=	libsndfile
 PORTVERSION=	1.0.28
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.mega-nerd.com/libsndfile/files/
 
 MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	Reading and writing files containing sampled sound (like WAV or AIFF)
 
-LICENSE=	LGPL21
+LICENSE=	LGPL21+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		cpe gmake libtool localbase pkgconfig
 CPE_VENDOR=	${CPE_PRODUCT}_project

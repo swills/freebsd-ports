@@ -1,8 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/www/py-flexget/Makefile 462759 2018-02-24 00:50:20Z jbeich $
+# $FreeBSD: head/www/py-flexget/Makefile 463457 2018-03-03 00:53:46Z jbeich $
 
 PORTNAME=	flexget
-PORTVERSION=	2.12.10
+PORTVERSION=	2.13.0
 PORTEPOCH=	1
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -25,7 +25,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlalchemy10>=1.0.13:databases/py-sqlalchemy
 		${PYTHON_PKGNAMEPREFIX}pyparsing>=2.0.3:devel/py-pyparsing@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}progressbar>0:misc/py-progressbar@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}guessit>=2.1.0:multimedia/py-guessit@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}guessit>=2.1.4:multimedia/py-guessit@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pynzb>0:news/py-pynzb@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}zxcvbn-python>0:security/py-zxcvbn-python@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}plumbum>=1.2:sysutils/py-plumbum@${FLAVOR} \

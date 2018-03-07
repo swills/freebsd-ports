@@ -1,8 +1,8 @@
 # Created by: olevole@olevole.ru
-# $FreeBSD: head/databases/tile38/Makefile 462614 2018-02-22 16:44:08Z pi $
+# $FreeBSD: head/databases/tile38/Makefile 463691 2018-03-06 05:57:47Z yuri $
 
 PORTNAME=	tile38
-PORTVERSION=	1.10.1
+DISTVERSION=	1.11.0
 CATEGORIES=	databases
 
 MAINTAINER=	a.andersson.thn@gmail.com
@@ -16,11 +16,10 @@ BUILD_DEPENDS=	go>=1.7:lang/go \
 
 USES=		shebangfix
 SHEBANG_FILES=	build.sh
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	tidwall
-
 USE_RC_SUBR=	tile38
+SSP_UNSAFE=	yes
 
 USERS=		${PORTNAME}
 GROUPS=		${PORTNAME}
@@ -39,7 +38,7 @@ PLIST_SUB=	TILE38_USER=${USERS} \
 		TILE38_RUNDIR=${TILE38_RUNDIR}
 
 do-build:
-	@cd ${WRKSRC} && ./build.sh
+	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./build.sh
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${TILE38_DBDIR} ${STAGEDIR}${TILE38_RUNDIR}

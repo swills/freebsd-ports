@@ -1,8 +1,9 @@
 # Created by: Kimura Fuyuki <fuyuki@hadaly.org>
-# $FreeBSD: head/textproc/dictfmt/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/dictfmt/Makefile 463493 2018-03-03 16:29:52Z sunpoet $
 
 PORTNAME=	dictfmt
 PORTVERSION=	1.12.1
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	SF/dict/dictd/dictd-${PORTVERSION}
 DISTNAME=	dictd-${PORTVERSION}

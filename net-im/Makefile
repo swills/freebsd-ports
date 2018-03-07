@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 461967 2018-02-16 02:58:36Z swills $
+# $FreeBSD: head/net-im/Makefile 463556 2018-03-04 08:10:30Z yuri $
 #
 
     COMMENT = Instant messaging
@@ -169,6 +169,7 @@
     SUBDIR += skype
     SUBDIR += skype-devel
     SUBDIR += skype4
+    SUBDIR += slack-term
     SUBDIR += teamwords
     SUBDIR += telegram
     SUBDIR += telegram-desktop

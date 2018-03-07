@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm38/Makefile 459485 2018-01-19 23:38:18Z brooks $
+# $FreeBSD: head/devel/llvm38/Makefile 463072 2018-02-26 22:31:21Z sunpoet $
 
 PORTNAME=	llvm
 DISTVERSION=	3.8.1
@@ -272,10 +272,7 @@ COMMANDS+=	lld
 PORTDOCS+=	lld
 .endif
 
-.if ${PYTHON_REL} < 3400
-LLDB_BUILD_DEPENDS+= \
-	${PYTHON_PKGNAMEPREFIX}enum34>0:devel/py-enum34
-.endif
+LLDB_BUILD_DEPENDS+= ${PY_ENUM34}
 
 .if ${PORT_OPTIONS:MLLDB} && ${PYTHON_REL} >= 3000
 BROKEN=	LLDB does not build with Python 3

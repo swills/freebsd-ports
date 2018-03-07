@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/sops/Makefile 460456 2018-01-31 04:19:02Z yuri $
+# $FreeBSD: head/security/sops/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	sops
 DISTVERSION=	3.0.2
@@ -23,7 +23,7 @@ PORTDOCS=	README.rst CHANGELOG.rst
 
 do-build:
 	@cd ${WRKSRC}/${GH_SUBDIR} && \
-		${SETENV} GOPATH=${WRKSRC} go build -o ${PORTNAME} ./cmd/sops
+		${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go build -o ${PORTNAME} ./cmd/sops
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin

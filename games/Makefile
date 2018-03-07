@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/games/Makefile 463444 2018-03-02 19:10:48Z rene $
 #
 
     COMMENT = Games and related software
@@ -23,7 +23,6 @@
     SUBDIR += abuse_sdl
     SUBDIR += ace-of-penguins
     SUBDIR += acm
-    SUBDIR += adgali
     SUBDIR += adom
     SUBDIR += adonthell
     SUBDIR += aestats
@@ -1012,7 +1011,6 @@
     SUBDIR += tuxpaint-config
     SUBDIR += tuxpaint-fonts
     SUBDIR += tuxpaint-stamps
-    SUBDIR += tuxpuck
     SUBDIR += tuxracer
     SUBDIR += tuxtype
     SUBDIR += twind

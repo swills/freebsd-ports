@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/libmba/Makefile 379212 2015-02-18 15:16:56Z amdmi3 $
+# $FreeBSD: head/devel/libmba/Makefile 463452 2018-03-02 22:34:53Z brooks $
 
 PORTNAME=	libmba
 PORTVERSION=	0.9.1
@@ -14,6 +14,7 @@ COMMENT=	Collection of C modules potentially useful to any project
 MAKE_JOBS_UNSAFE=	yes
 USE_LDCONFIG=	yes
 MAKE_ARGS=	prefix="${STAGEDIR}${PREFIX}"
+CFLAGS+=	-D_WANT_SEMUN
 
 post-patch:
 	@${REINPLACE_CMD} -e 's,-g,$$(CFLAGS),' \

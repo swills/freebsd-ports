@@ -1,5 +1,5 @@
 # Created by: Jev Björsell <ports@ecadlabs.com>
-# $FreeBSD: head/net-mgmt/prometheus1/Makefile 461844 2018-02-14 21:58:37Z brd $
+# $FreeBSD: head/net-mgmt/prometheus1/Makefile 463611 2018-03-04 23:14:00Z yuri $
 
 PORTNAME=	prometheus
 PORTVERSION=	1.8.2
@@ -34,10 +34,10 @@ LD_FLAG_STRING=	-s \
 
 do-build:
 	( cd ${GO_WRKSRC}/cmd/prometheus ; \
-		${SETENV} ${GO_ENV} go install -ldflags "${LD_FLAG_STRING}" )
+		${SETENV} ${MAKE_ENV} ${GO_ENV} go install -ldflags "${LD_FLAG_STRING}" )
 
 	( cd ${GO_WRKSRC}/cmd/promtool ; \
-		${SETENV} ${GO_ENV} go install -ldflags "${LD_FLAG_STRING}" )
+		${SETENV} ${MAKE_ENV} ${GO_ENV} go install -ldflags "${LD_FLAG_STRING}" )
 
 do-install:
 	${INSTALL_PROGRAM} ${GO_WRKDIR_BIN}/prometheus ${STAGEDIR}${PREFIX}/bin

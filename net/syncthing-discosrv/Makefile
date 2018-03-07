@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/syncthing-discosrv/Makefile 451834 2017-10-12 09:06:17Z mat $
+# $FreeBSD: head/net/syncthing-discosrv/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	syncthing-discosrv
 PORTVERSION=	0.13.0
@@ -30,7 +30,7 @@ post-patch:
 
 do-build:
 	@cd ${WRKSRC}/src/github.com/${GH_ACCOUNT}/${GH_PROJECT} ; \
-		${SETENV} GOPATH=${WRKSRC} go build
+		${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go build
 	@${MV} ${WRKSRC}/src/github.com/${GH_ACCOUNT}/${GH_PROJECT}/discosrv ${WRKSRC}/syncthing-discosrv
 
 do-install:

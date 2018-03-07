@@ -1,5 +1,5 @@
 # Created by: Andy Pavlo
-# $FreeBSD: head/sysutils/condor/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/sysutils/condor/Makefile 463608 2018-03-04 22:34:22Z antoine $
 #
 # Note: Make sure there are no older versions of HTCondor installed during
 #       build.  The build system may pick up incompatible headers and libs.
@@ -16,6 +16,8 @@ COMMENT=	High-throughput computing on distributively owned resources
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE-2.0.txt
+
+BROKEN=		fails to build
 
 LIB_DEPENDS+=	libkrb5support.so:security/krb5 \
 		libpcre.so:devel/pcre \

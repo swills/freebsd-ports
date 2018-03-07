@@ -1,5 +1,5 @@
 # Created by: Stefan Esser <se@FreeBSD.org>
-# $FreeBSD: head/security/w3af/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/security/w3af/Makefile 463085 2018-02-26 22:32:27Z sunpoet $
 
 PORTNAME=	w3af
 PORTVERSION=	1.6.49
@@ -34,7 +34,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=2.1:devel/py-lxml@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}chardet>=2.1.1:textproc/py-chardet@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}tblib>=0.2.0:devel/py-tblib@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pdfminer>=20140328:textproc/py-pdfminer@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}futures>=2.1.5:devel/py-futures@${FLAVOR} \
+		${PY_FUTURES} \
 		${PYTHON_PKGNAMEPREFIX}ndg_httpsclient>=0.3.3:net/py-ndg_httpsclient@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyasn1>=0.1.3:devel/py-pyasn1@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}lxml>=0.3.2:devel/py-lxml@${FLAVOR} \

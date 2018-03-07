@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/icons-tango-extras/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-themes/icons-tango-extras/Makefile 463723 2018-03-06 12:32:00Z tobik $
 
 PORTNAME=	icons-tango-extras
 PORTVERSION=	0.1.0
@@ -8,7 +8,7 @@ MASTER_SITES=	http://tango.freedesktop.org/releases/ \
 		GENTOO
 DISTNAME=	tango-icon-theme-extras-${PORTVERSION}
 
-MAINTAINER=	flz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Extra set of icons from the Tango project
 
 BUILD_DEPENDS=	${LOCALBASE}/libexec/icon-name-mapping:x11-themes/icon-naming-utils \

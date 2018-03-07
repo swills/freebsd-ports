@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/rubygem-fluentd010/Makefile 446928 2017-07-30 13:13:25Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-fluentd010/Makefile 463307 2018-03-01 13:26:25Z amdmi3 $
 
 PORTNAME=	fluentd
 PORTVERSION=	0.10.61
@@ -21,6 +21,8 @@ RUN_DEPENDS=	\
 	rubygem-yajl-ruby>=1.0:devel/rubygem-yajl-ruby \
 	rubygem-tzinfo>=1.0.0:devel/rubygem-tzinfo \
 	rubygem-tzinfo-data>=1.0.0:devel/rubygem-tzinfo-data
+
+BROKEN=		Error: RubyGem dependency msgpack < 0.6.0 is not satisfied
 
 USE_RUBY=	yes
 PLIST_FILES=	bin/fluent-cat bin/fluent-debug bin/fluent-gem bin/fluentd \

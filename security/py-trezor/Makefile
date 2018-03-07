@@ -1,9 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/security/py-trezor/Makefile 461647 2018-02-12 20:03:05Z ehaupt $
+# $FreeBSD: head/security/py-trezor/Makefile 463700 2018-03-06 08:40:20Z ehaupt $
 
 PORTNAME=	trezor
-PORTVERSION=	0.9.0
-PORTREVISION=	1
+PORTVERSION=	0.9.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

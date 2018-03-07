@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/obfs4proxy-tor/Makefile 459296 2018-01-17 23:29:54Z dbaio $
+# $FreeBSD: head/security/obfs4proxy-tor/Makefile 463611 2018-03-04 23:14:00Z yuri $
 
 PORTNAME=	obfs4proxy
 DISTVERSION=	0.0.7
@@ -34,7 +34,7 @@ PLIST_FILES=	bin/obfs4proxy \
 do-build:
 	@${RLN} ${WRKSRC} ${WRKSRC}/obfs4proxy/src/git.torproject.org/pluggable-transports/obfs4.git
 	@cd ${WRKSRC}/obfs4proxy && \
-		${SETENV} GOPATH=${WRKSRC}/obfs4proxy go build
+		${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC}/obfs4proxy go build
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/obfs4proxy/obfs4proxy ${STAGEDIR}${PREFIX}/bin

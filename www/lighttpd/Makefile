@@ -1,5 +1,5 @@
 # Created by: k@123.org
-# $FreeBSD: head/www/lighttpd/Makefile 454615 2017-11-21 15:33:35Z arved $
+# $FreeBSD: head/www/lighttpd/Makefile 463629 2018-03-05 08:33:07Z amdmi3 $
 
 PORTNAME?=	lighttpd
 PORTVERSION=	1.4.48
@@ -29,6 +29,8 @@ CONFIGURE_ARGS+=	--libdir=${PREFIX}/lib/lighttpd
 INSTALL_TARGET=	install-strip
 
 .if !defined(_BUILDING_LIGHTTPD_MODULE)
+TEST_TARGET=	check
+
 PORTDOCS=	AUTHORS COPYING INSTALL NEWS README
 
 USE_RC_SUBR=	lighttpd
@@ -166,13 +168,6 @@ post-install:
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	(cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR})
-
-test: build
-	@cd ${WRKSRC}/tests && ${SETENV} ${MAKE_ENV} ${MAKE} \
-		${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} \
-		check-TESTS
-
-regression-test: test
 
 .endif # !defined(_BUILDING_LIGHTTPD_MODULE)
 

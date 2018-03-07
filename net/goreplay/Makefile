@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/goreplay/Makefile 461968 2018-02-16 03:01:42Z swills $
+# $FreeBSD: head/net/goreplay/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	goreplay
 PORTVERSION=	0.16.1
@@ -25,7 +25,7 @@ GH_SUBDIR=	src/github.com/buger/goreplay
 PLIST_FILES=	bin/${PORTNAME}
 
 do-build:
-	@cd ${WRKSRC}/${GH_SUBDIR} ; ${SETENV} GOPATH=${WRKSRC} go build
+	@cd ${WRKSRC}/${GH_SUBDIR} ; ${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go build
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/goreplay \

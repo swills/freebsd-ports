@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/cryptoballot/Makefile 462347 2018-02-19 20:33:08Z yuri $
+# $FreeBSD: head/misc/cryptoballot/Makefile 463611 2018-03-04 23:14:00Z yuri $
 
 PORTNAME=	cryptoballot
 DISTVERSION=	g20170928
@@ -36,7 +36,7 @@ PLIST_FILES=	${PROGS:C/.*\//bin\//}
 do-build:
 .for p in ${PROGS}
 	@cd ${WRKSRC}/${GH_SUBDIR}/${p}/ && \
-		${SETENV} GOPATH=${WRKSRC} go build -o ${p:C/.*\///}
+		${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go build -o ${p:C/.*\///}
 .endfor
 
 do-install:

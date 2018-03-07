@@ -1,8 +1,8 @@
 # Created by: Torsten Zuhlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/devel/rubygem-rotp/Makefile 430190 2017-01-01 01:09:21Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rotp/Makefile 463509 2018-03-03 16:31:15Z sunpoet $
 
 PORTNAME=	rotp
-PORTVERSION=	3.3.0
+PORTVERSION=	3.3.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

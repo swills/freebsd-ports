@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-pytest-mock/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pytest-mock/Makefile 463714 2018-03-06 11:56:44Z olgeni $
 
 PORTNAME=	pytest-mock
-PORTVERSION=	1.6.3
+PORTVERSION=	1.7.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

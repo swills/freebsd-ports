@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-Search-Elasticsearch/Makefile 437845 2017-04-06 01:48:07Z tj $
+# $FreeBSD: head/textproc/p5-Search-Elasticsearch/Makefile 463486 2018-03-03 15:29:51Z feld $
 
 PORTNAME=	Search-Elasticsearch
 PORTVERSION=	5.02
@@ -8,7 +8,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DRTECH
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	elastic@FreeBSD.org
 COMMENT=	ElasticSearch API
 
 LICENSE=	APACHE20

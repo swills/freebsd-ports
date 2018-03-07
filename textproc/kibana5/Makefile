@@ -1,21 +1,21 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/kibana5/Makefile 462848 2018-02-24 16:14:36Z feld $
+# $FreeBSD: head/textproc/kibana5/Makefile 463652 2018-03-05 16:51:02Z feld $
 
 PORTNAME=	kibana
 PORTVERSION=	5.6.8
 DISTVERSIONSUFFIX=	-linux-x86
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	textproc www
 MASTER_SITES=	https://artifacts.elastic.co/downloads/kibana/ \
 		http://artifacts.elastic.co/downloads/kibana/
 PKGNAMESUFFIX?=	5
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	elastic@FreeBSD.org
 COMMENT=	Browser based analytics and search interface to ElasticSearch
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	node>=0.8.0:www/node
+RUN_DEPENDS=	node6>=6.12.2:www/node6
 
 CONFLICTS=	kibana[3-4]*
 

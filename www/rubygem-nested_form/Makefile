@@ -1,11 +1,11 @@
-# $FreeBSD: head/www/rubygem-nested_form/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/www/rubygem-nested_form/Makefile 463107 2018-02-27 04:55:52Z yuri $
 
 PORTNAME=	nested_form
 PORTVERSION=	0.3.2
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	ports@michael-fauste.de
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Handle multiple models in one form through jQuery or Prototype
 
 LICENSE=	MIT

@@ -1,5 +1,5 @@
 # Created by: Torsten Teg Grust (Torsten.Grust@uni-konstanz.de)
-# $FreeBSD: head/lang/hugs/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/lang/hugs/Makefile 463193 2018-02-28 10:53:52Z tcberner $
 
 PORTNAME=	hugs98
 PORTVERSION=	200609
@@ -30,6 +30,12 @@ CONFIGURE_ARGS+=	--with-pthreads
 USE_GL=		glut
 USE_XORG=	sm ice xmu xi x11
 
+.include <bsd.port.pre.mk>
+
+.if ${ARCH} == i386 && ${OSVERSION} > 1200000
+CFLAGS+=         -O0
+.endif
+
 post-patch:
 	@${REINPLACE_CMD} 's/LIBS/LIBRARIES/' ${WRKSRC}/libraries/Makefile.in
 	@${REINPLACE_CMD} -e '/^install		:: install_notes/d ; \
@@ -53,4 +59,4 @@ do-install:
 	cd ${WRKSRC}/${dir} && ${SETENV} ${MAKE_ENV} ${MAKE_CMD} ${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} ${INSTALL_TARGET}
 .	endfor
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

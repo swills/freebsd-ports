@@ -1,5 +1,5 @@
 # Created by: Brad Davis <brd@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/intel-snap/Makefile 433737 2017-02-09 15:00:42Z brd $
+# $FreeBSD: head/net-mgmt/intel-snap/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	intel-snap
 PORTVERSION=	0.0.1
@@ -50,13 +50,13 @@ PLIST_FILES=	bin/snapctl bin/snapd
 do-build:
 	( cd ${WRKSRC}; ${LN} -s ${WRKSRC} ${WRKSRC}/src/github.com/intelsdi-x/snap )
 	( cd ${WRKSRC}/src/github.com/appc/spec; \
-		${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} CC=clang \
+		${SETENV} ${BUILD_ENV} ${MAKE_ENV} GOPATH=${WRKSRC} CC=clang \
 		go build -o bin/actool github.com/appc/spec/actool )
 	( cd ${WRKSRC}; \
-		${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} CC=clang \
+		${SETENV} ${BUILD_ENV} ${MAKE_ENV} GOPATH=${WRKSRC} CC=clang \
 		go build ${BUILD_FLAGS} -o bin/snapd )
 	( cd ${WRKSRC}/cmd/snapctl; \
-		${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} CC=clang \
+		${SETENV} ${BUILD_ENV} ${MAKE_ENV} GOPATH=${WRKSRC} CC=clang \
 		go build ${BUILD_FLAGS} -o bin/snapctl )
 
 do-install:

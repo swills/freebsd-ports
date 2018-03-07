@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/serf/Makefile 453453 2017-11-04 11:43:35Z dbaio $
+# $FreeBSD: head/sysutils/serf/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	serf
 PORTVERSION=	0.8.1
@@ -27,7 +27,7 @@ PLIST_FILES=	bin/serf
 
 do-build:
 	@cd ${WRKSRC}/src/github.com/${GH_ACCOUNT}/${PORTNAME}; \
-		${SETENV} GOPATH=${WRKSRC}:${WRKSRC}/vendor/ \
+		${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC}:${WRKSRC}/vendor/ \
 		go build -o bin/${PORTNAME} ./cmd/serf/
 
 do-install:

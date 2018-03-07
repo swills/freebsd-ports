@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 462580 2018-02-22 10:30:57Z romain $
+# $FreeBSD: head/www/Makefile 463775 2018-03-07 04:35:32Z yuri $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -156,6 +156,7 @@
     SUBDIR += eventum
     SUBDIR += extjs
     SUBDIR += fabio
+    SUBDIR += falkon
     SUBDIR += fancybox
     SUBDIR += faup
     SUBDIR += fcgi
@@ -225,6 +226,7 @@
     SUBDIR += grafana2
     SUBDIR += grafana3
     SUBDIR += grafana4
+    SUBDIR += grafana5
     SUBDIR += grails
     SUBDIR += gregarius
     SUBDIR += groupoffice
@@ -1725,6 +1727,7 @@
     SUBDIR += py-meld3
     SUBDIR += py-mt
     SUBDIR += py-multidict
+    SUBDIR += py-mwoauth
     SUBDIR += py-nevow
     SUBDIR += py-notebook
     SUBDIR += py-pafy
@@ -1866,6 +1869,7 @@
     SUBDIR += py-sockjs-tornado
     SUBDIR += py-splinter
     SUBDIR += py-spyne
+    SUBDIR += py-sseclient
     SUBDIR += py-surl
     SUBDIR += py-textile
     SUBDIR += py-tmdb3
@@ -1937,6 +1941,7 @@
     SUBDIR += reportmagic
     SUBDIR += repos-style
     SUBDIR += resin3
+    SUBDIR += restbed
     SUBDIR += retawq
     SUBDIR += revive-adserver
     SUBDIR += rnews
@@ -2021,7 +2026,6 @@
     SUBDIR += rubygem-gollum-rugged_adapter
     SUBDIR += rubygem-gon
     SUBDIR += rubygem-gon61
-    SUBDIR += rubygem-gon-rails4
     SUBDIR += rubygem-hackpad-cli
     SUBDIR += rubygem-haml
     SUBDIR += rubygem-haml-coderay

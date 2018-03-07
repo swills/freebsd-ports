@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-atomic/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-atomic/Makefile 463067 2018-02-26 22:30:55Z sunpoet $
 
 PORTNAME=	atomic
-PORTVERSION=	1.1.99
+PORTVERSION=	1.1.100
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

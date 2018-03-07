@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-gettext/Makefile 455930 2017-12-11 08:45:02Z olgeni $
+# $FreeBSD: head/devel/elixir-gettext/Makefile 463718 2018-03-06 12:04:02Z olgeni $
 
 PORTNAME=	gettext
-PORTVERSION=	0.14.0
+PORTVERSION=	0.15.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

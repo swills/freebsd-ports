@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/tanglet/Makefile 462535 2018-02-21 17:11:02Z jhale $
+# $FreeBSD: head/games/tanglet/Makefile 463678 2018-03-06 00:58:23Z jhale $
 
 PORTNAME=	tanglet
 PORTVERSION=	1.5.1
@@ -7,7 +7,7 @@ DISTVERSIONSUFFIX=	-src
 CATEGORIES=	games
 MASTER_SITES=	http://gottcode.org/tanglet/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	jhale@FreeBSD.org
 COMMENT=	Single player word finding game based on Boggle
 
 LICENSE=	GPLv3+

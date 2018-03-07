@@ -1,8 +1,9 @@
-# $FreeBSD: head/benchmarks/Makefile 460126 2018-01-27 14:30:59Z dbaio $
+# $FreeBSD: head/benchmarks/Makefile 463346 2018-03-01 17:37:51Z danfe $
 #
 
     COMMENT = Benchmarking tools
 
+    SUBDIR += apib
     SUBDIR += autobench
     SUBDIR += blogbench
     SUBDIR += bombardier

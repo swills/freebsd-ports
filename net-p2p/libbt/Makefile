@@ -1,5 +1,5 @@
 # Created by: Florent Thoumie <flz@xbsd.org>
-# $FreeBSD: head/net-p2p/libbt/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/net-p2p/libbt/Makefile 463723 2018-03-06 12:32:00Z tobik $
 
 PORTNAME=	libbt
 PORTVERSION=	1.05
@@ -7,7 +7,7 @@ PORTREVISION=	5
 CATEGORIES=	net-p2p devel
 MASTER_SITES=	SF
 
-MAINTAINER=	flz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	C library implementing the core BitTorrent protocol
 
 LIB_DEPENDS=	libcurl.so:ftp/curl

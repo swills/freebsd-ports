@@ -1,8 +1,9 @@
 # Created by: Josh Gilliam <josh@quick.net>
-# $FreeBSD: head/textproc/dict/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/dict/Makefile 463493 2018-03-03 16:29:52Z sunpoet $
 
 PORTNAME=	dict
 PORTVERSION=	1.12.1
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}d/${PORTNAME}d-${PORTVERSION}
 DISTNAME=	${PORTNAME}d-${PORTVERSION}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/arduinoOTA/Makefile 451834 2017-10-12 09:06:17Z mat $
+# $FreeBSD: head/devel/arduinoOTA/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	arduinoOTA
 PORTVERSION=	1.2.0
@@ -19,7 +19,7 @@ PLIST_FILES=	bin/${PORTNAME}
 COMPILEINFO=	${OPSYS}${OSREL}-${ARCH}-${GH_TAGNAME}
 
 do-build:
-	(cd ${WRKSRC} && ${SETENV} ${GO_ENV} go build -o ${PORTNAME} -ldflags "-X main.compileInfo=${COMPILEINFO}" main.go)
+	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${GO_ENV} go build -o ${PORTNAME} -ldflags "-X main.compileInfo=${COMPILEINFO}" main.go
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/syncthing-inotify/Makefile 450029 2017-09-17 21:40:48Z swills $
+# $FreeBSD: head/net/syncthing-inotify/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	syncthing-inotify
 PORTVERSION=	0.8.7
@@ -16,7 +16,7 @@ GH_SUBDIR=	src/github.com/syncthing/syncthing-inotify
 PLIST_FILES=	bin/syncthing-inotify
 
 do-build:
-	@cd ${WRKSRC}/${GH_SUBDIR} ; ${SETENV} CGO_ENABLED=0 GOPATH=${WRKSRC} go build
+	@cd ${WRKSRC}/${GH_SUBDIR} ; ${SETENV} ${MAKE_ENV} CGO_ENABLED=0 GOPATH=${WRKSRC} go build
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/syncthing-inotify ${STAGEDIR}${PREFIX}/bin/

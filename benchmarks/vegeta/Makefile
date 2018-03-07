@@ -1,4 +1,4 @@
-# $FreeBSD: head/benchmarks/vegeta/Makefile 460123 2018-01-27 13:26:57Z dbaio $
+# $FreeBSD: head/benchmarks/vegeta/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	vegeta
 DISTVERSIONPREFIX=	v
@@ -27,7 +27,7 @@ do-build:
 	@${RLN} ${WRKSRC} ${WRKSRC}/github.com/${GH_ACCOUNT}/${PORTNAME}
 	@${RLN} ${WRKSRC} ${WRKSRC}/src
 	@cd ${WRKSRC} && \
-		${SETENV} CGO_ENABLED=0 GOPATH=${WRKSRC} \
+		${SETENV} ${MAKE_ENV} CGO_ENABLED=0 GOPATH=${WRKSRC} \
 		go build -ldflags "-X main.Version=${DISTVERSION}" -o bin/${PORTNAME}
 
 do-install:

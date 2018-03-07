@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/editors/rubygem-neovim/Makefile 458790 2018-01-11 20:38:57Z adamw $
+# $FreeBSD: head/editors/rubygem-neovim/Makefile 463665 2018-03-05 17:15:26Z sunpoet $
 
 PORTNAME=	neovim
-PORTVERSION=	0.7.0
+PORTVERSION=	0.7.1
 CATEGORIES=	editors rubygems
 MASTER_SITES=	RG
 

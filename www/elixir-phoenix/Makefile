@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/elixir-phoenix/Makefile 452410 2017-10-19 10:15:15Z olgeni $
+# $FreeBSD: head/www/elixir-phoenix/Makefile 463716 2018-03-06 12:01:06Z olgeni $
 
 PORTNAME=	phoenix
-PORTVERSION=	1.3.0
+PORTVERSION=	1.3.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	elixir-

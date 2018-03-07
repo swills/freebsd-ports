@@ -1,14 +1,15 @@
-# $FreeBSD: head/sysutils/restic/Makefile 462572 2018-02-22 08:48:32Z wen $
+# $FreeBSD: head/sysutils/restic/Makefile 463105 2018-02-27 01:51:23Z dbaio $
 
 PORTNAME=	restic
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.8.2
+DISTVERSION=	0.8.3
 CATEGORIES=	sysutils
 
 MAINTAINER=	gregf@hugops.pw
 COMMENT=	Fast, secure, efficient backup program
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		go
 USE_GITHUB=	yes

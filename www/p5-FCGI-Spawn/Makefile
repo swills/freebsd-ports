@@ -1,5 +1,5 @@
 # Created by: Peter <peter@vereshagin.org>
-# $FreeBSD: head/www/p5-FCGI-Spawn/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-FCGI-Spawn/Makefile 463107 2018-02-27 04:55:52Z yuri $
 
 PORTNAME=	FCGI-Spawn
 PORTVERSION=	0.16.7
@@ -8,7 +8,7 @@ CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	peter@vereshagin.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	FastCGI server for CGI-like applications multiprocessing
 
 BUILD_DEPENDS=	p5-Const-Fast>0:devel/p5-Const-Fast \

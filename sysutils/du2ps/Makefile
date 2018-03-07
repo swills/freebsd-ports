@@ -1,5 +1,5 @@
 # Created by: Yoshihiko Sarumaru <mistral@imasy.or.jp>
-# $FreeBSD: head/sysutils/du2ps/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/du2ps/Makefile 463560 2018-03-04 09:33:08Z amdmi3 $
 
 PORTNAME=	du2ps
 PORTVERSION=	3.1
@@ -8,6 +8,8 @@ MASTER_SITES=	http://line.to/mac/soft/du2ps/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Filter for converting output of du to PostScript file
+
+LICENSE=	MIT
 
 # Nkf is required for just converting character code of japanese manual
 BUILD_DEPENDS=	nkf:japanese/nkf

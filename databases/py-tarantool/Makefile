@@ -1,18 +1,21 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/databases/py-tarantool/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/databases/py-tarantool/Makefile 463567 2018-03-04 16:10:42Z sunpoet $
 
 PORTNAME=	tarantool
-PORTVERSION=	0.5.2
+PORTVERSION=	0.6.1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	python@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Client library for Tarantool Database
 
 LICENSE=	BSD3CLAUSE
 
-USES=		python
-USE_PYTHON=	distutils autoplist
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack-python>=0.4:devel/py-msgpack-python@${FLAVOR}
+
+NO_ARCH=	yes
+USES=		python tar:bz2
+USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

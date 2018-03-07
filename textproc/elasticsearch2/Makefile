@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/elasticsearch2/Makefile 462834 2018-02-24 14:53:10Z feld $
+# $FreeBSD: head/textproc/elasticsearch2/Makefile 463486 2018-03-03 15:29:51Z feld $
 
 PORTNAME=	elasticsearch
 PORTVERSION=	2.4.6
@@ -8,7 +8,7 @@ MASTER_SITES=	http://download.elasticsearch.org/${PORTNAME}/${PORTNAME}/ \
 		http://mirrors.rit.edu/zi/
 PKGNAMESUFFIX=	2
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	elastic@FreeBSD.org
 COMMENT=	Full-text search engine for Java
 
 LICENSE=	APACHE20

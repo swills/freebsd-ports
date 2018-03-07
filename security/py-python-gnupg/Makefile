@@ -1,8 +1,8 @@
 # Created by: Christer Edwards <christer.edwards@gmail.com>
-# $FreeBSD: head/security/py-python-gnupg/Makefile 433576 2017-02-07 18:21:33Z rm $
+# $FreeBSD: head/security/py-python-gnupg/Makefile 463733 2018-03-06 16:23:37Z swills $
 
 PORTNAME=	python-gnupg
-PORTVERSION=	0.4.0
+PORTVERSION=	0.4.1
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

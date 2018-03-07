@@ -1,11 +1,11 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/emulators/gem5/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/emulators/gem5/Makefile 463372 2018-03-02 06:20:55Z yuri $
 
 PORTNAME=	gem5
 PORTVERSION=	0.0.${DATE}
 CATEGORIES=	emulators
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	neel@neelc.org
 COMMENT=	gem5 Simulator System
 
 BUILD_DEPENDS=	swig3.0:devel/swig30 \

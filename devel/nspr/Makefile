@@ -1,8 +1,8 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/nspr/Makefile 459460 2018-01-19 18:57:32Z jbeich $
+# $FreeBSD: head/devel/nspr/Makefile 463695 2018-03-06 07:48:27Z jbeich $
 
 PORTNAME=	nspr
-DISTVERSION=	4.18
+DISTVERSION=	4.19
 CATEGORIES=	devel
 MASTER_SITES=	MOZILLA/${PORTNAME}/releases/v${PORTVERSION}/src
 
@@ -18,6 +18,7 @@ CPE_PRODUCT=	netscape_portable_runtime
 WRKSRC_SUBDIR=	nspr
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
+CFLAGS+=	-D_WANT_SEMUN
 
 OPTIONS_DEFINE=	DEBUG TEST
 

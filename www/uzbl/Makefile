@@ -1,10 +1,10 @@
 # Created by: Klaus Aehlig <aehlig@linta.de>
-# $FreeBSD: head/www/uzbl/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/www/uzbl/Makefile 463122 2018-02-27 12:34:15Z amdmi3 $
 
 PORTNAME=	uzbl
 PORTVERSION=	0.9.1
 DISTVERSIONPREFIX=v
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	www
 
 MAINTAINER=	aehlig@linta.de
@@ -31,8 +31,8 @@ INSTALLS_ICONS=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	uzbl
 
-SHEBANG_FILES=	examples/data/scripts/auth.py \
-		examples/data/scripts/scheme.py \
+SHEBANG_FILES=	bin/uzbl-tabbed \
+		examples/data/scripts/*.py \
 		examples/data/scripts/uzblcat
 
 MAKE_ENV=	PYTHON=${PYTHON_VERSION} \

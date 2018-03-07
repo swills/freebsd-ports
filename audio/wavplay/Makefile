@@ -1,5 +1,5 @@
 # Created by: greg
-# $FreeBSD: head/audio/wavplay/Makefile 451721 2017-10-10 21:31:30Z linimon $
+# $FreeBSD: head/audio/wavplay/Makefile 463452 2018-03-02 22:34:53Z brooks $
 
 PORTNAME=	wavplay
 PORTVERSION=	1.4
@@ -12,6 +12,8 @@ COMMENT=	Wav player and recorder
 
 LICENSE=	GPLv2 # only
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+CFLAGS+=	-D_WANT_SEMUN
 
 ONLY_FOR_ARCHS=	amd64 armv6 armv7 i386
 

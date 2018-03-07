@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/liborcus/Makefile 461957 2018-02-15 22:54:01Z jkim $
+# $FreeBSD: head/devel/liborcus/Makefile 463154 2018-02-27 19:33:35Z jkim $
 
 PORTNAME=	liborcus
-PORTVERSION=	0.13.3
+PORTVERSION=	0.13.4
 CATEGORIES=	devel misc
 MASTER_SITES=	http://kohei.us/files/orcus/src/
 

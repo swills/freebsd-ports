@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/openbsm/Makefile 393134 2015-07-28 23:27:56Z amdmi3 $
+# $FreeBSD: head/security/openbsm/Makefile 463723 2018-03-06 12:32:00Z tobik $
 
 PORTNAME=	openbsm
 DISTVERSION=	1.1-p2
@@ -7,7 +7,7 @@ CATEGORIES=	security
 MASTER_SITES=	http://www.trustedbsd.org/downloads/
 DISTNAME=	openbsm-${DISTVERSION}
 
-MAINTAINER=	flz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Open Source Basic Security Module (BSM) Audit Implementation
 
 LICENSE=	BSD2CLAUSE BSD3CLAUSE

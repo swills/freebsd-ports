@@ -1,8 +1,8 @@
 # Created by: Alex Semenyaka <alex@rinet.ru>
-# $FreeBSD: head/java/proguard/Makefile 438385 2017-04-12 16:40:07Z ale $
+# $FreeBSD: head/java/proguard/Makefile 463632 2018-03-05 09:08:18Z ale $
 
 PORTNAME=	proguard
-PORTVERSION=	5.3.3
+PORTVERSION=	6.0.1
 CATEGORIES=	java devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION:C/.[0-9]$//}
 DISTNAME=	${PORTNAME}${PORTVERSION}

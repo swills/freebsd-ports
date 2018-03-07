@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/Makefile 462530 2018-02-21 16:07:25Z antoine $
+# $FreeBSD: head/emulators/Makefile 463444 2018-03-02 19:10:48Z rene $
 #
 
     COMMENT = Emulators for other operating systems
@@ -49,7 +49,6 @@
     SUBDIR += gngb
     SUBDIR += gngeo
     SUBDIR += gns3
-    SUBDIR += gnuboy
     SUBDIR += gxemul
     SUBDIR += hatari
     SUBDIR += hercules

@@ -1,5 +1,5 @@
 # Created by: Florent Thoumie <flz@xbsd.org>
-# $FreeBSD: head/net-p2p/bnbt/Makefile 433100 2017-02-01 20:22:34Z jbeich $
+# $FreeBSD: head/net-p2p/bnbt/Makefile 463723 2018-03-06 12:32:00Z tobik $
 
 PORTNAME=	bnbt
 PORTVERSION=	8.5
@@ -9,7 +9,7 @@ MASTER_SITES=	http://opensource.depthstrike.com/${PORTNAME}/
 DISTNAME=	${SNAPSHOT}-${PORTNAME}${PORTVERSION:C/\.//}-src
 SNAPSHOT=	20060727
 
-MAINTAINER=	flz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	C++ BitTorrent Tracker
 
 OPTIONS_DEFINE=	MYSQL DOCS

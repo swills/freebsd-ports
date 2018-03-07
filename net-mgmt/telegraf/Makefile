@@ -1,5 +1,5 @@
 # Created by: Stefan Lambrev <cheffo@freebsd-bg.org>
-# $FreeBSD: head/net-mgmt/telegraf/Makefile 460977 2018-02-05 15:21:41Z girgen $
+# $FreeBSD: head/net-mgmt/telegraf/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	telegraf
 DISTVERSION=	1.5.2
@@ -126,7 +126,7 @@ post-patch:
 
 do-build:
 	@cd ${WRKSRC}/src/github.com/influxdata/${PORTNAME} && \
-		${SETENV} GOPATH=${WRKSRC} go install -ldflags "-X main.version=${DISTVERSION}" ./...
+		${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go install -ldflags "-X main.version=${DISTVERSION}" ./...
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/${PORTNAME} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}

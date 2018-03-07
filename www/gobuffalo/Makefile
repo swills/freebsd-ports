@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/gobuffalo/Makefile 461969 2018-02-16 03:03:45Z swills $
+# $FreeBSD: head/www/gobuffalo/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	gobuffalo
 PORTVERSION=	0.10.3
@@ -82,7 +82,7 @@ GH_SUBDIR=	src/github.com/gobuffalo/buffalo
 PLIST_FILES=	bin/buffalo
 
 do-build:
-	@cd ${WRKSRC}/${GH_SUBDIR}/buffalo ; ${SETENV} GOPATH=${WRKSRC} go build
+	@cd ${WRKSRC}/${GH_SUBDIR}/buffalo ; ${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go build
 
 post-build:
 	@${STRIP_CMD} ${WRKSRC}/${GH_SUBDIR}/buffalo/buffalo

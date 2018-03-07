@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/grafana3/Makefile 451834 2017-10-12 09:06:17Z mat $
+# $FreeBSD: head/www/grafana3/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	grafana
 PORTVERSION=	3.1.1
@@ -116,7 +116,7 @@ post-extract:
 
 do-build:
 	cd ${WRKSRC}/src/github.com/${GH_ACCOUNT}/grafana; \
-		${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} go run build.go build
+		${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} go run build.go build
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/github.com/grafana/grafana/bin/grafana-server \

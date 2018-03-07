@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/elixir-make/Makefile 435141 2017-03-01 11:26:54Z olgeni $
+# $FreeBSD: head/devel/elixir-make/Makefile 463719 2018-03-06 12:05:10Z olgeni $
 
 PORTNAME=	make
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.4.0
+DISTVERSION=	0.4.1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 

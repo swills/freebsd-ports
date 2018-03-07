@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/net-im/py-jabber/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-im/py-jabber/Makefile 463723 2018-03-06 12:32:00Z tobik $
 
 PORTNAME=	jabber
 PORTVERSION=	0.5
@@ -8,7 +8,7 @@ MASTER_SITES=	SF/${PORTNAME}py/${PORTNAME}py%20libs/${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	jabberpy-${PORTVERSION}-0
 
-MAINTAINER=	flz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python Jabber library
 
 USES=		python:2.7

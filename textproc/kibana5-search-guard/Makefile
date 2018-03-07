@@ -1,5 +1,5 @@
 # Created by: Miroslav Lachman <000.fbsd@quip.cz>
-# $FreeBSD: head/textproc/kibana5-search-guard/Makefile 446771 2017-07-27 18:21:15Z pi $
+# $FreeBSD: head/textproc/kibana5-search-guard/Makefile 463486 2018-03-03 15:29:51Z feld $
 
 PORTNAME=	search-guard
 PORTVERSION=	5.3.0
@@ -8,7 +8,7 @@ MASTER_SITES=	https://github.com/floragunncom/search-guard-kibana-plugin/release
 PKGNAMEPREFIX=	kibana5-
 DISTNAME=	searchguard-kibana-5.3.0-2
 
-MAINTAINER=	000.fbsd@quip.cz
+MAINTAINER=	elastic@FreeBSD.org
 COMMENT=	Kibana 5.3 Search Guard plugin
 
 LICENSE=	APACHE20

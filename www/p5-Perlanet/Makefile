@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-Perlanet/Makefile 462030 2018-02-16 15:42:28Z sunpoet $
+# $FreeBSD: head/www/p5-Perlanet/Makefile 463661 2018-03-05 17:15:05Z sunpoet $
 
 PORTNAME=	Perlanet
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN

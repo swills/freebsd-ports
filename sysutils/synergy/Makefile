@@ -1,9 +1,10 @@
-# $FreeBSD: head/sysutils/synergy/Makefile 463005 2018-02-26 09:04:07Z yuri $
+# $FreeBSD: head/sysutils/synergy/Makefile 463668 2018-03-05 20:54:53Z yuri $
 
 PORTNAME=	synergy
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.0.0
 DISTVERSIONSUFFIX=	-stable
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -14,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
-USES=		cmake:outsource cpe ssl
+USES=		cmake:outsource compiler:c++14-lang cpe ssl
 CPE_VENDOR=	synergy-foss
 USE_GITHUB=	yes
 GH_ACCOUNT=	symless

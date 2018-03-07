@@ -1,4 +1,4 @@
-# $FreeBSD: head/shells/Makefile 460155 2018-01-28 01:39:12Z rene $
+# $FreeBSD: head/shells/Makefile 463740 2018-03-06 19:10:08Z krion $
 #
 
     COMMENT = Shells
@@ -10,6 +10,7 @@
     SUBDIR += bashc
     SUBDIR += ch
     SUBDIR += dash
+    SUBDIR += envy
     SUBDIR += es
     SUBDIR += esh
     SUBDIR += fd

@@ -1,5 +1,5 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/net/remmina-plugin-telepathy/Makefile 425739 2016-11-08 13:35:36Z woodsb02 $
+# $FreeBSD: head/net/remmina-plugin-telepathy/Makefile 463551 2018-03-04 05:21:09Z woodsb02 $
 
 PKGNAMESUFFIX=	-telepathy
 
@@ -9,7 +9,5 @@ USE_GNOME+=	cairo gtk30
 LIB_DEPENDS=	libtelepathy-glib.so:net-im/telepathy-glib
 
 MASTERDIR=	${.CURDIR}/../remmina-plugins
-
-PLIST_SUB+=	ICONS="@comment "
 
 .include "${MASTERDIR}/Makefile"

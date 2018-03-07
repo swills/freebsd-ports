@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/go-bindata/Makefile 437216 2017-03-29 17:10:52Z swills $
+# $FreeBSD: head/devel/go-bindata/Makefile 463611 2018-03-04 23:14:00Z yuri $
 
 PORTNAME=	go-bindata
 PORTVERSION=	3.1.0
@@ -23,7 +23,7 @@ OPTIONS_DEFINE=	DOCS
 
 do-build:
 	cd ${WRKSRC} ; \
-		${SETENV} GOPATH=${WRKSRC} go build -o bin/go-bindata ./go-bindata/
+		${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go build -o bin/go-bindata ./go-bindata/
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/${PORTNAME} \

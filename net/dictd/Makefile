@@ -1,8 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/net/dictd/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/dictd/Makefile 463493 2018-03-03 16:29:52Z sunpoet $
 
 PORTNAME=	dictd
 PORTVERSION=	1.12.1
+PORTREVISION=	1
 CATEGORIES+=	net textproc
 MASTER_SITES=	SF/dict/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/jfrog-cli/Makefile 459678 2018-01-22 17:33:01Z swills $
+# $FreeBSD: head/devel/jfrog-cli/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	jfrog-cli
 PORTVERSION=	1.13.1
@@ -21,8 +21,8 @@ post-extract:
 	@${MV} ${WRKSRC}/jfrog-cli ${WRKSRC}/jfrog-client ${WRKSRC}/src/github.com/jfrogdev/jfrog-cli-go
 
 do-build:
-	cd ${WRKSRC}/src/github.com/jfrogdev/jfrog-cli-go ; \
-		${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} go install ./...
+	@cd ${WRKSRC}/src/github.com/jfrogdev/jfrog-cli-go ; \
+		${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} go install ./...
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/jfrog ${STAGEDIR}${PREFIX}/bin/jfrog

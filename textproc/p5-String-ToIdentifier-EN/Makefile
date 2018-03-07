@@ -1,9 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-String-ToIdentifier-EN/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-String-ToIdentifier-EN/Makefile 463244 2018-02-28 15:53:02Z sunpoet $
 
 PORTNAME=	String-ToIdentifier-EN
-PORTVERSION=	0.11
-PORTREVISION=	1
+PORTVERSION=	0.12
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -18,9 +17,8 @@ BUILD_DEPENDS=	p5-Lingua-EN-Inflect-Phrase>=0:textproc/p5-Lingua-EN-Inflect-Phra
 		p5-Text-Unidecode>=0:converters/p5-Text-Unidecode \
 		p5-namespace-clean>=0:devel/p5-namespace-clean
 RUN_DEPENDS:=	${BUILD_DEPENDS}
-TEST_DEPENDS=	p5-Test-Pod>=1.14:devel/p5-Test-Pod \
-		p5-Test-Pod-Coverage>=1.04:devel/p5-Test-Pod-Coverage
 
+NO_ARCH=	yes
 USE_PERL5=	configure
 USES=		perl5
 

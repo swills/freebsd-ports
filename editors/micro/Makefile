@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/micro/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/editors/micro/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	micro
 PORTVERSION=	1.1.4
@@ -42,7 +42,7 @@ PORTDOCS=	README.md
 
 do-build:
 	@(cd ${WRKSRC} ; \
-		${SETENV} GOPATH=${WRKSRC} go build -ldflags \
+		${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go build -ldflags \
 		"-s -w -X main.Version=${PORTVERSION} -X main.CommitHash=${BUILD_HASH} -X 'main.CompileDate=${BUILD_DATE}' " ./cmd/micro )
 
 do-install:

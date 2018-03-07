@@ -1,18 +1,19 @@
-# $FreeBSD: head/devel/msgpuck/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/devel/msgpuck/Makefile 463308 2018-03-01 13:34:49Z sunpoet $
 
 PORTNAME=	msgpuck
-PORTVERSION=	1.0.0
-PORTREVISION=	1
+PORTVERSION=	2.0
 CATEGORIES=	devel
 
-MAINTAINER=	ports@FreeBSD.org
-COMMENT=	MsgPack binary serialization library in a self-contained header
+MAINTAINER=	sunpoet@FreeBSD.org
+COMMENT=	Lightweight MessagePack library
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+USES=		cmake
+USE_LDCONFIG=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	tarantool
-
-USES=		cmake
 
 .include <bsd.port.mk>

@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-json-jwt/Makefile 462808 2018-02-24 13:37:37Z sunpoet $
+# $FreeBSD: head/www/rubygem-json-jwt/Makefile 463132 2018-02-27 13:24:50Z sunpoet $
 
 PORTNAME=	json-jwt
-PORTVERSION=	1.9.1
+PORTVERSION=	1.9.2
 CATEGORIES=	www devel rubygems
 MASTER_SITES=	RG
 
@@ -12,6 +12,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-activesupport4>=0:devel/rubygem-activesupport4 \
+		rubygem-aes_key_wrap>=0:security/rubygem-aes_key_wrap \
 		rubygem-bindata>=0:devel/rubygem-bindata \
 		rubygem-securecompare>=0:security/rubygem-securecompare \
 		rubygem-url_safe_base64>=0:converters/rubygem-url_safe_base64

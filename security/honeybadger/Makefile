@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/honeybadger/Makefile 428569 2016-12-14 16:06:19Z mat $
+# $FreeBSD: head/security/honeybadger/Makefile 463611 2018-03-04 23:14:00Z yuri $
 
 PORTNAME=	honeybadger
 PORTVERSION=	0.0.0.2016022301
@@ -31,7 +31,7 @@ LICENSE=	GPLv3
 
 do-build:
 .for bin in ${BIN_FILES}
-	cd ${WRKSRC}/src/github.com/david415/HoneyBadger/cmd/${bin}; ${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build
+	cd ${WRKSRC}/src/github.com/david415/HoneyBadger/cmd/${bin}; ${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build
 .endfor
 
 do-install:

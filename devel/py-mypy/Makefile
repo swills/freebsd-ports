@@ -1,8 +1,9 @@
 # Created by: Florian Limberger <flo@snakeoilproductions.net>
-# $FreeBSD: head/devel/py-mypy/Makefile 456762 2017-12-19 19:02:51Z dbn $
+# $FreeBSD: head/devel/py-mypy/Makefile 463306 2018-03-01 13:21:13Z amdmi3 $
 
 PORTNAME=	mypy
 PORTVERSION=	0.560
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,7 +21,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}typed-ast>=1.1.0:devel/py-typed-ast@${FLAVOR
 NO_ARCH=	yes
 USES=		python:3.4+ shebangfix
 USE_PYTHON=	autoplist concurrent distutils
-SHEBANG_FILES=	typeshed/tests/pytype_test.py
+SHEBANG_FILES=	typeshed/tests/*.py
 
 .include <bsd.port.pre.mk>
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/archivers/rubygem-fpm/Makefile 449726 2017-09-12 20:56:47Z sunpoet $
+# $FreeBSD: head/archivers/rubygem-fpm/Makefile 463223 2018-02-28 15:13:02Z sunpoet $
 
 PORTNAME=	fpm
 PORTVERSION=	1.9.3
+PORTREVISION=	1
 CATEGORIES=	archivers rubygems
 MASTER_SITES=	RG
 
@@ -12,7 +13,6 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-arr-pm>=0.0.10:devel/rubygem-arr-pm \
-		rubygem-backports>=2.6.2:devel/rubygem-backports \
 		rubygem-cabin>=0.6.0:devel/rubygem-cabin \
 		rubygem-childprocess>=0:devel/rubygem-childprocess \
 		rubygem-clamp>=1.0.0:devel/rubygem-clamp \
@@ -23,6 +23,7 @@ RUN_DEPENDS=	rubygem-arr-pm>=0.0.10:devel/rubygem-arr-pm \
 		rubygem-stud>=0:devel/rubygem-stud
 
 NO_ARCH=	yes
+REINPLACE_ARGS=	-i ''
 USE_RUBY=	yes
 USES=		gem
 
@@ -30,5 +31,8 @@ PLIST_FILES=	bin/fpm
 
 post-patch:
 	@${REINPLACE_CMD} -e '/clamp/ s|1\.0\.0|1.0|' ${WRKSRC}/${GEMSPEC}
+# Remove backports
+	@${REINPLACE_CMD} -e '/backports/d' ${WRKSRC}/${GEMSPEC}
+	@${REINPLACE_CMD} -e '/require "backports"/d' ${WRKSRC}/lib/fpm/package.rb ${WRKSRC}/lib/fpm/package/*.rb
 
 .include <bsd.port.mk>

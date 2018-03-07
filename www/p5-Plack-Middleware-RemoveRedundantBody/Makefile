@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-Plack-Middleware-RemoveRedundantBody/Makefile 450675 2017-09-26 15:55:51Z sunpoet $
+# $FreeBSD: head/www/p5-Plack-Middleware-RemoveRedundantBody/Makefile 463127 2018-02-27 13:24:25Z sunpoet $
 
 PORTNAME=	Plack-Middleware-RemoveRedundantBody
-PORTVERSION=	0.06
+PORTVERSION=	0.07
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

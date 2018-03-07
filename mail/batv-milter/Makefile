@@ -1,5 +1,5 @@
 # Created by: Hirohisa Yamaguchi <umq@ueo.co.jp>
-# $FreeBSD: head/mail/batv-milter/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/mail/batv-milter/Makefile 463452 2018-03-02 22:34:53Z brooks $
 
 PORTNAME=	batv-milter
 PORTVERSION=	0.5.0
@@ -18,6 +18,7 @@ USES=		uidfix ssl
 USE_RC_SUBR=	milter-batv
 
 MAKE_ARGS=	UBINOWN=${UID} UBINGRP=${GID}
+CFLAGS+=	-D_WANT_SEMUN
 
 WCONF=		${WRKSRC}/devtools/Site
 PLIST_FILES=	bin/batv-filter man/man8/batv-filter.8.gz

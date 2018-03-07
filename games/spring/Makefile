@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/spring/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/games/spring/Makefile 463538 2018-03-03 22:40:56Z jbeich $
 
 PORTNAME=	spring
 PORTVERSION=	98.0
@@ -13,9 +13,6 @@ MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Project aiming to create a new and versatile RTS Engine
 
 LICENSE=	GPLv2
-
-BROKEN=		fails to build with boost 1.66, see bug 224124
-BROKEN_FreeBSD_10=	fails to build with boost 1.65, see bug 220762
 
 LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 		libboost_thread.so:devel/boost-libs \

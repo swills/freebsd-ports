@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-mixbox/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-mixbox/Makefile 463592 2018-03-04 17:51:03Z antoine $
 
 PORTNAME=	mixbox
-PORTVERSION=	1.0.2
+PORTVERSION=	1.0.3
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

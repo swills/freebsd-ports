@@ -1,5 +1,5 @@
 # Created by: Matthias Sund <m.sund@arcor.de>
-# $FreeBSD: head/devel/upp/Makefile 462278 2018-02-19 06:08:06Z yuri $
+# $FreeBSD: head/devel/upp/Makefile 463365 2018-03-02 03:00:22Z linimon $
 
 PORTNAME=	upp
 DISTVERSION=	11540
@@ -13,9 +13,10 @@ COMMENT=	Ultimate++, a BSD-licensed, cross-platform, C/C++ RAD suite
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${BUILD_WRKSRC}/Core/Copying
 
-BROKEN_aarch64=	Does not compile on ${ARCH}: error Unknown CPU architecture
-BROKEN_powerpc=	Does not compile on ${ARCH}
-BROKEN_sparc64=	Does not compile on ${ARCH}
+BROKEN_aarch64=		Does not compile on ${ARCH}: error Unknown CPU architecture
+BROKEN_powerpc=		Does not compile on ${ARCH}: error Unknown CPU architecture
+BROKEN_powerpc64=	Does not compile on ${ARCH}: error Unknown CPU architecture
+BROKEN_sparc64=		Does not compile on ${ARCH}
 
 USES=		compiler:c++11-lib
 

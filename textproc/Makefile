@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 462994 2018-02-26 07:23:53Z yuri $
+# $FreeBSD: head/textproc/Makefile 463464 2018-03-03 07:16:13Z ultima $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -387,6 +387,7 @@
     SUBDIR += kibana5
     SUBDIR += kibana5-search-guard
     SUBDIR += kibana5-x-pack
+    SUBDIR += kibana6
     SUBDIR += kiss-templates
     SUBDIR += kmfl-european-latin
     SUBDIR += kmfl-khmer
@@ -1337,6 +1338,7 @@
     SUBDIR += py-pyes
     SUBDIR += py-pygments
     SUBDIR += py-pygtail
+    SUBDIR += py-pyhamcrest
     SUBDIR += py-pyhwp
     SUBDIR += py-pyphen
     SUBDIR += py-pyscss

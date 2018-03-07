@@ -1,5 +1,5 @@
 # Created by: Stefan Lambrev <cheffo@freebsd-bg.org>
-# $FreeBSD: head/net-mgmt/kapacitor/Makefile 455077 2017-11-28 21:21:04Z ultima $
+# $FreeBSD: head/net-mgmt/kapacitor/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	kapacitor
 PORTVERSION=	1.3.2
@@ -51,8 +51,8 @@ post-patch:
 
 do-build:
 	@cd ${WRKSRC}/src/github.com/influxdata/${PORTNAME} \
-		&& ${SETENV} GOPATH=${WRKSRC} go install -ldflags "-X main.version=${DISTVERSION}" ./cmd/${PORTNAME} \
-		&& ${SETENV} GOPATH=${WRKSRC} go install -ldflags "-X main.version=${DISTVERSION}" ./cmd/${PORTNAME}d
+		&& ${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go install -ldflags "-X main.version=${DISTVERSION}" ./cmd/${PORTNAME} \
+		&& ${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go install -ldflags "-X main.version=${DISTVERSION}" ./cmd/${PORTNAME}d
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/${PORTNAME} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 462508 2018-02-21 13:39:24Z sunpoet $
+# $FreeBSD: head/databases/Makefile 463711 2018-03-06 11:50:12Z girgen $
 #
 
     COMMENT = Databases and related software
@@ -592,6 +592,7 @@
     SUBDIR += pgloader
     SUBDIR += pgloader3
     SUBDIR += pglogical
+    SUBDIR += pgmetrics
     SUBDIR += pgmodeler
     SUBDIR += pgpool
     SUBDIR += pgpool-II-33
@@ -626,6 +627,7 @@
     SUBDIR += php56-pgsql
     SUBDIR += php56-sqlite3
     SUBDIR += php56-sybase_ct
+    SUBDIR += php7-tarantool
     SUBDIR += php70-dba
     SUBDIR += php70-interbase
     SUBDIR += php70-memcache
@@ -952,7 +954,6 @@
     SUBDIR += rubygem-em-redis-unified
     SUBDIR += rubygem-familia
     SUBDIR += rubygem-flipper-active_record
-    SUBDIR += rubygem-flipper-active_record010
     SUBDIR += rubygem-flipper-active_record011
     SUBDIR += rubygem-globalid
     SUBDIR += rubygem-globalid-rails5
@@ -1042,6 +1043,7 @@
     SUBDIR += twemproxy
     SUBDIR += unixODBC
     SUBDIR += useracc
+    SUBDIR += usql
     SUBDIR += vfront
     SUBDIR += virtualpg
     SUBDIR += virtuoso

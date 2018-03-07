@@ -1,5 +1,5 @@
 # Created by: Mikhail Teterin <mi@aldan.algebra.com>
-# $FreeBSD: head/net/minidlna/Makefile 456285 2017-12-14 09:31:09Z bapt $
+# $FreeBSD: head/net/minidlna/Makefile 463255 2018-02-28 17:45:24Z sunpoet $
 
 PORTNAME=	minidlna
 PORTVERSION=	1.2.1
@@ -7,7 +7,7 @@ PORTEPOCH=	1
 CATEGORIES=	net multimedia www
 MASTER_SITES=	SF
 
-MAINTAINER=	wg@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Media-server compatible with "Digital Life Network Alliance"
 
 LICENSE=	GPLv2

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/circonus-agent/Makefile 459193 2018-01-16 16:20:37Z jmd $
+# $FreeBSD: head/sysutils/circonus-agent/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	circonus-agent
 DISTVERSIONPREFIX=	v
@@ -51,7 +51,7 @@ PLIST_FILES=	bin/circonus-agentd "@dir ${ETCDIR}"
 
 do-build:
 	( cd ${WRKSRC}; \
-		${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} \
+		${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} \
 		go build ${BUILD_FLAGS} -o bin/circonus-agentd )
 
 do-install:

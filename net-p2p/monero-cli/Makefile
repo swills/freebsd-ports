@@ -1,5 +1,5 @@
 # Created by: Vasil Dimov <vd@FreeBSD.org>
-# $FreeBSD: head/net-p2p/monero-cli/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/net-p2p/monero-cli/Makefile 463452 2018-03-02 22:34:53Z brooks $
 
 PORTNAME=	monero-cli
 PORTVERSION=	0.11.1.0
@@ -30,6 +30,7 @@ USES=		cmake compiler:c++11-lib pkgconfig readline ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	monero-project
 GH_PROJECT=	monero
+CFLAGS+=	-D_WANT_SEMUN
 
 OPTIONS_DEFINE=		DOXYGEN
 DOXYGEN_BUILD_DEPENDS=	dot:graphics/graphviz \

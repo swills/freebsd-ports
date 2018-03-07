@@ -1,12 +1,12 @@
 # Created by: Koop Mast <kwm@rainbow-runner.nl>
-# $FreeBSD: head/multimedia/libtheora/Makefile 428198 2016-12-09 12:57:31Z sunpoet $
+# $FreeBSD: head/multimedia/libtheora/Makefile 463123 2018-02-27 13:03:48Z mat $
 
 PORTNAME=	libtheora
 PORTVERSION=	1.1.1
 PORTREVISION=	7
 CATEGORIES=	multimedia
-MASTER_SITES=	http://downloads.xiph.org/releases/theora/ \
-		http://distfiles.master.finkmirrors.net/
+MASTER_SITES=	https://downloads.xiph.org/releases/theora/ \
+		https://repo.turris.cz/downloads/
 
 MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	Theora video codec for the Ogg multimedia streaming system

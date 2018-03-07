@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/edbrowse/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/www/edbrowse/Makefile 463107 2018-02-27 04:55:52Z yuri $
 
 PORTNAME=	edbrowse
 PORTVERSION=	3.5.1
@@ -7,7 +7,7 @@ CATEGORIES=	www editors
 MASTER_SITES=	http://the-brannons.com/edbrowse/ \
 		http://rithmomachia.org/edbrowse/
 
-MAINTAINER=	david.vionnet@vmailbox.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Line-oriented Web browser and text editor
 
 LICENSE=	GPLv2

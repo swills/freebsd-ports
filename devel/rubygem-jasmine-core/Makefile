@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-jasmine-core/Makefile 461183 2018-02-07 20:10:37Z sunpoet $
+# $FreeBSD: head/devel/rubygem-jasmine-core/Makefile 463248 2018-02-28 15:53:24Z sunpoet $
 
 PORTNAME=	jasmine-core
-PORTVERSION=	3.0.0
+PORTVERSION=	3.1.0
 CATEGORIES=	devel ruby
 MASTER_SITES=	RG
 

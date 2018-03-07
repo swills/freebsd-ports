@@ -1,8 +1,8 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/net/py-libcloud/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-libcloud/Makefile 463726 2018-03-06 13:39:53Z novel $
 
 PORTNAME=	libcloud
-PORTVERSION=	2.2.1
+PORTVERSION=	2.3.0
 CATEGORIES=	net python
 MASTER_SITES=	APACHE/${PORTNAME}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

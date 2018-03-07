@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/misc/help2man/Makefile 460183 2018-01-28 14:07:21Z sunpoet $
+# $FreeBSD: head/misc/help2man/Makefile 463329 2018-03-01 15:19:18Z sunpoet $
 
 PORTNAME=	help2man
-PORTVERSION=	1.47.5
+PORTVERSION=	1.47.6
 CATEGORIES=	misc
 MASTER_SITES=	GNU
 
@@ -28,7 +28,7 @@ NLS_RUN_DEPENDS=	p5-Locale-gettext>=0:devel/p5-Locale-gettext
 NLS_USES=		gettext
 NLS_VARS=		CONFIGURE_FAIL_MESSAGE="Rebuild lang/${PERL_PORT} and devel/p5-Locale-gettext manually before contacting maintainer."
 
-.for lang in de es fr pl uk zh_CN
+.for lang in de es fr pl pt_BR uk zh_CN
 NLS_INFO+=		${PORTNAME}-${lang}
 .endfor
 

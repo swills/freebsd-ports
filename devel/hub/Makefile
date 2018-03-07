@@ -1,5 +1,5 @@
 # Created by: Simon Olofsson <simon@olofsson.de>
-# $FreeBSD: head/devel/hub/Makefile 445299 2017-07-08 03:37:16Z swills $
+# $FreeBSD: head/devel/hub/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	hub
 PORTVERSION=	2.2.9
@@ -22,7 +22,7 @@ PLIST_FILES=	bin/hub \
 		share/zsh/site-functions/_hub \
 		man/man1/hub.1.gz
 do-build:
-	@cd ${WRKSRC} ; ${SETENV} ${LOCALBASE}/bin/bash script/build
+	@cd ${WRKSRC} ; ${SETENV} ${MAKE_ENV} ${LOCALBASE}/bin/bash script/build
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/hub ${STAGEDIR}${PREFIX}/bin

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/graphics/Makefile 463149 2018-02-27 18:15:46Z yuri $
 #
 
     COMMENT = Graphics tools and libraries
@@ -165,6 +165,7 @@
     SUBDIR += eom
     SUBDIR += eos-movrec
     SUBDIR += epdfview
+    SUBDIR += ephoto
     SUBDIR += epix
     SUBDIR += eps2png
     SUBDIR += epstool

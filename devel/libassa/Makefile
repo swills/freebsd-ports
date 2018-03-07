@@ -1,13 +1,17 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/libassa/Makefile 458747 2018-01-11 14:58:49Z tijl $
+# $FreeBSD: head/devel/libassa/Makefile 463121 2018-02-27 12:33:43Z amdmi3 $
 
 PORTNAME=	libassa
 DISTVERSION=	3.5.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${DISTVERSION:C/\.[0-9]*$//}
 
 MAINTAINER=	rodrigo@FreeBSD.org
 COMMENT=	C++ networking library and application framework
+
+LICENSE=	LGPL20+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	TIRPC_CFLAGS=" " TIRPC_LIBS=" "

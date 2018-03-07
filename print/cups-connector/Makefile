@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/cups-connector/Makefile 428569 2016-12-14 16:06:19Z mat $
+# $FreeBSD: head/print/cups-connector/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	cups-connector
 PORTVERSION=	0.0.0.2016.03.09
@@ -37,7 +37,7 @@ post-patch:
 do-build:
 .for bin in ${BIN_FILES}
 	@cd ${WRKSRC}/src/github.com/google/cups-connector; ${SETENV} \
-		${BUILD_ENV} GOPATH=${WRKSRC} go build -o \
+		${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -o \
 		${WRKSRC}/bin/${bin} ./${bin}
 .endfor
 

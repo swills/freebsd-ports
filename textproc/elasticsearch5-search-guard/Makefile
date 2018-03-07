@@ -1,5 +1,5 @@
 # Created by: Miroslav Lachman <000.fbsd@quip.cz>
-# $FreeBSD: head/textproc/elasticsearch5-search-guard/Makefile 454614 2017-11-21 15:13:31Z tz $
+# $FreeBSD: head/textproc/elasticsearch5-search-guard/Makefile 463486 2018-03-03 15:29:51Z feld $
 
 PORTNAME=	search-guard
 DISTVERSION=	5.3.0-12
@@ -8,7 +8,7 @@ MASTER_SITES=	https://oss.sonatype.org/content/repositories/releases/com/floragu
 PKGNAMEPREFIX=	elasticsearch5-
 DISTNAME=	search-guard-5-${DISTVERSION}
 
-MAINTAINER=	000.fbsd@quip.cz
+MAINTAINER=	elastic@FreeBSD.org
 COMMENT=	Elasticsearch Search Guard plugin
 
 LICENSE=	APACHE20

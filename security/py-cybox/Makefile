@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-cybox/Makefile 457042 2017-12-23 11:52:57Z antoine $
+# $FreeBSD: head/security/py-cybox/Makefile 463593 2018-03-04 17:51:39Z antoine $
 
 PORTNAME=	cybox
-PORTVERSION=	2.1.0.16
+PORTVERSION=	2.1.0.17
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -24,7 +24,7 @@ GH_PROJECT=	python-${PORTNAME}
 
 NO_ARCH=	yes
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	concurrent distutils autoplist
 
 PORTDOCS=	README.rst
 PORTEXAMPLES=	*

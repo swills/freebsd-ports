@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv@kvedulv.de>
-# $FreeBSD: head/sysutils/rubygem-chef-api/Makefile 447511 2017-08-07 18:51:59Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-chef-api/Makefile 463511 2018-03-03 16:31:26Z sunpoet $
 
 PORTNAME=	chef-api
-PORTVERSION=	0.7.1
+PORTVERSION=	0.8.0
 CATEGORIES=	sysutils ruby
 MASTER_SITES=	RG
 

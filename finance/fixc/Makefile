@@ -1,4 +1,4 @@
-# $FreeBSD: head/finance/fixc/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/fixc/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	fixc
 PORTVERSION=	1.0
@@ -15,8 +15,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	blttll
 
 do-build:
-	cd ${WRKSRC} && \
-		go build -o fixc main.go
+	@cd ${WRKSRC} && \
+		${SETENV} ${MAKE_ENV} go build -o fixc main.go
 
 do-install:
 	 ${INSTALL_PROGRAM} ${WRKSRC}/fixc ${STAGEDIR}${PREFIX}/bin

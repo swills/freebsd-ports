@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/science/Makefile 463296 2018-03-01 11:29:58Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -182,6 +182,7 @@
     SUBDIR += py-scipy
     SUBDIR += py-scoria
     SUBDIR += py-tensorflow
+    SUBDIR += py-veusz
     SUBDIR += py-ws2300
     SUBDIR += pybrain
     SUBDIR += pycdf
@@ -206,7 +207,6 @@
     SUBDIR += tfel
     SUBDIR += udunits
     SUBDIR += v_sim
-    SUBDIR += veusz
     SUBDIR += vmd
     SUBDIR += voro++
     SUBDIR += xfce4-equake-plugin

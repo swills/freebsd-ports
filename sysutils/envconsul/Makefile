@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/envconsul/Makefile 459904 2018-01-25 02:34:12Z swills $
+# $FreeBSD: head/sysutils/envconsul/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	envconsul
 PORTVERSION=	0.7.3
@@ -30,7 +30,7 @@ GO_LDFLAGS=	-ldflags="-s -w \
 
 do-build:
 	@cd ${WRKSRC}/src/github.com/hashicorp/envconsul; \
-		${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} \
+		${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} \
 		go build ${GO_LDFLAGS}\
 		-o bin/envconsul
 

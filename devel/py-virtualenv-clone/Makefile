@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/py-virtualenv-clone/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-virtualenv-clone/Makefile 463527 2018-03-03 19:16:16Z sunpoet $
 
 PORTNAME=	virtualenv-clone
 PORTVERSION=	0.2.5
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Python virtualenv cloning script
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 # Python3 ready
 USES=		python

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rclone/Makefile 451834 2017-10-12 09:06:17Z mat $
+# $FreeBSD: head/net/rclone/Makefile 463611 2018-03-04 23:14:00Z yuri $
 
 PORTNAME=	rclone
 PORTVERSION=	1.38
@@ -42,7 +42,7 @@ GH_TUPLE+=	\
 PLIST_FILES=	bin/rclone
 
 do-build:
-	@cd ${WRKSRC}/src/github.com/${GH_ACCOUNT_DEFAULT}/${PORTNAME}; ${SETENV} GOPATH=${WRKSRC} go build .
+	@cd ${WRKSRC}/src/github.com/${GH_ACCOUNT_DEFAULT}/${PORTNAME} && ${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go build .
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/github.com/${GH_ACCOUNT_DEFAULT}/${PORTNAME}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}

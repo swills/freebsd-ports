@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/pine-pgp-filters/Makefile 412566 2016-04-05 15:56:52Z amdmi3 $
+# $FreeBSD: head/mail/pine-pgp-filters/Makefile 463442 2018-03-02 18:52:45Z sunpoet $
 
 PORTNAME=	pine-pgp-filters
 PORTVERSION=	1.8
@@ -8,7 +8,7 @@ MASTER_SITES=	LOCAL/marino
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DISTNAME}${EXTRACT_SUFX}.asc
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	mbeis@xs4all.nl
 COMMENT=	Simple sh-based filters to use GnuPG with Alpine
 
 LICENSE=	BSD2CLAUSE

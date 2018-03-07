@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/www/p5-Plack-Middleware-Rewrite/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Plack-Middleware-Rewrite/Makefile 463134 2018-02-27 13:25:00Z sunpoet $
 
 PORTNAME=	Plack-Middleware-Rewrite
-PORTVERSION=	2.000
+PORTVERSION=	2.101
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:ARISTOTLE
@@ -17,6 +17,7 @@ LICENSE_COMB=	dual
 BUILD_DEPENDS=	p5-Plack>=0.9942:www/p5-Plack
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

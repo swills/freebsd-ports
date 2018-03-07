@@ -1,9 +1,9 @@
 # Created by: Marco Steinbach <coco@executive-computing.de>
-# $FreeBSD: head/sysutils/froxlor/Makefile 447519 2017-08-07 21:44:00Z adamw $
+# $FreeBSD: head/sysutils/froxlor/Makefile 463710 2018-03-06 11:47:37Z koobs $
 
 PORTNAME=	froxlor
 PORTVERSION=	0.9.38.7
-PORTREVIION=	2
+PORTREVISION=	2
 CATEGORIES=	sysutils www
 MASTER_SITES=	http://files.froxlor.org/releases/
 
@@ -15,7 +15,7 @@ LICENSE=	GPLv2
 WRKSRC=		${WRKDIR}
 
 SUB_FILES+=	pkg-message pkg-deinstall
-SUB_LIST+=	WWWOWN=${WWWOWN} WWWGRP=${WWWGRP}
+SUB_LIST+=	WWWOWN=${WWWOWN} WWWGRP=${WWWGRP} PORTNAME=${PORTNAME}
 PLIST_SUB+=	${SUB_LIST}
 
 USE_PHP=	bcmath curl filter ftp json pdo_mysql posix session xml zip

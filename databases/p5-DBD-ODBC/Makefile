@@ -1,8 +1,8 @@
 # Created by: clive@FreeBSD.org
-# $FreeBSD: head/databases/p5-DBD-ODBC/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-DBD-ODBC/Makefile 463431 2018-03-02 18:51:48Z sunpoet $
 
 PORTNAME=	DBD-ODBC
-PORTVERSION=	1.56
+PORTVERSION=	1.57
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -34,8 +34,10 @@ post-configure:
 	@${REINPLACE_CMD} -e 's|-lodbc|& -pthread|g' ${WRKSRC}/Makefile
 
 post-install:
-	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/DBD/ODBC/ODBC.so
+
+post-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	(cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR})
 
 .include <bsd.port.mk>

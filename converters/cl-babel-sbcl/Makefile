@@ -1,8 +1,8 @@
-# $FreeBSD: head/converters/cl-babel-sbcl/Makefile 460521 2018-01-31 17:58:27Z krion $
+# $FreeBSD: head/converters/cl-babel-sbcl/Makefile 463591 2018-03-04 17:48:28Z krion $
 
 PORTNAME=	babel
 PORTVERSION=	2010.01.16
-PORTREVISION=	17
+PORTREVISION=	18
 CATEGORIES=	converters lisp
 PKGNAMEPREFIX=	cl-
 DISTFILES=	# none

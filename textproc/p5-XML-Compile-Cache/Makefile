@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/textproc/p5-XML-Compile-Cache/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-Compile-Cache/Makefile 463757 2018-03-06 20:32:17Z sunpoet $
 
 PORTNAME=	XML-Compile-Cache
-PORTVERSION=	1.05
+PORTVERSION=	1.06
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,8 +13,8 @@ COMMENT=	Cache Compiled XML Translators
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-Log-Report>=0.19:devel/p5-Log-Report \
-		p5-XML-Compile>=1.48:textproc/p5-XML-Compile \
+BUILD_DEPENDS=	p5-Log-Report>=1.26:devel/p5-Log-Report \
+		p5-XML-Compile>=1.60:textproc/p5-XML-Compile \
 		p5-XML-LibXML-Simple>=0.95:textproc/p5-XML-LibXML-Simple
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-XML-Compile-Tester>=0.02:devel/p5-XML-Compile-Tester

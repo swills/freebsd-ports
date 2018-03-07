@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/misc/exercism/Makefile 458696 2018-01-10 21:45:11Z swills $
+# $FreeBSD: head/misc/exercism/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	exercism
 PORTVERSION=	2.4.1
@@ -25,7 +25,7 @@ post-patch:
 
 do-build:
 	@(cd ${WRKSRC}/src/github.com/${GH_ACCOUNT}/${GH_PROJECT} ; \
-		${SETENV} GO15VENDOREXPERIMENT=1 GOPATH=${WRKSRC} go build -o bin/exercism exercism/main.go)
+		${SETENV} ${MAKE_ENV} GO15VENDOREXPERIMENT=1 GOPATH=${WRKSRC} go build -o bin/exercism exercism/main.go)
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/github.com/${GH_ACCOUNT}/${GH_PROJECT}/bin/exercism ${STAGEDIR}${PREFIX}/bin

@@ -1,12 +1,12 @@
 # Created by: michael johnson <ahze@ahze.net>
-# $FreeBSD: head/devel/py-xdg/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-xdg/Makefile 463123 2018-02-27 13:03:48Z mat $
 #   $MCom: ports/devel/py-xdg/Makefile,v 1.4 2007/09/10 05:35:05 mezz Exp $
 
 PORTNAME=	xdg
 PORTVERSION=	0.25
 PORTREVISION=	1
 CATEGORIES=	devel python
-MASTER_SITES=	http://people.freedesktop.org/~takluyver/
+MASTER_SITES=	https://people.freedesktop.org/~takluyver/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	py${PORTNAME}-${PORTVERSION}
 

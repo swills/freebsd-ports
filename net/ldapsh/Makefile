@@ -1,5 +1,5 @@
 # Created by: Florent Thoumie <flz@xbsd.org>
-# $FreeBSD: head/net/ldapsh/Makefile 417207 2016-06-21 13:24:53Z mat $
+# $FreeBSD: head/net/ldapsh/Makefile 463723 2018-03-06 12:32:00Z tobik $
 
 PORTNAME=	ldapsh
 PORTVERSION=	2.00
@@ -9,7 +9,7 @@ CATEGORIES=	net
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:LOOSIFER
 
-MAINTAINER=	flz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Interactive shell used to administer ldap directories
 
 BUILD_DEPENDS=	p5-Term-ReadKey>=0:devel/p5-Term-ReadKey \
