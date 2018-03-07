@@ -1,12 +1,12 @@
 # Created by: Dennis Herrmann <adox@mcx2.org>
-# $FreeBSD: head/net/vnstat/Makefile 425020 2016-10-31 18:17:08Z feld $
+# $FreeBSD: head/net/vnstat/Makefile 463123 2018-02-27 13:03:48Z mat $
 
 PORTNAME=	vnstat
 PORTVERSION=	1.15
 PORTREVISION=	0
 CATEGORIES=	net
-MASTER_SITES=	http://humdi.net/vnstat/ \
-		http://mirror.mcx2.org/
+MASTER_SITES=	https://humdi.net/vnstat/ \
+		https://source.ipfire.org/source-2.x/
 
 MAINTAINER=	feld@FreeBSD.org
 COMMENT=	Console-based network traffic monitor

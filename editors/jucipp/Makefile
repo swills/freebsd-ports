@@ -1,10 +1,9 @@
 # Created by: Mohammad S. Babaei <info@babaei.net>
-# $FreeBSD: head/editors/jucipp/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/editors/jucipp/Makefile 463552 2018-03-04 05:26:58Z yuri $
 
 PORTNAME=	jucipp
-PORTVERSION=	1.3.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+DISTVERSION=	1.4.0
 CATEGORIES=	editors
 
 MAINTAINER=	info@babaei.net
@@ -19,13 +18,12 @@ LIB_DEPENDS=	libaspell.so:textproc/aspell \
 		libclang.so:devel/llvm50
 
 USES=		cmake:outsource desktop-file-utils pkgconfig
-USE_GNOME=	gdkpixbuf2 gtkmm30 gtksourceviewmm3
-INSTALLS_ICONS=	yes
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	cppit
-GH_TUPLE=	cppit:libclangmm:d978517:libclangmm/libclangmm \
-		eidheim:tiny-process-library:cf212df:tiny_process_library/tiny-process-library
+GH_TUPLE=	cppit:libclangmm:997d02a:libclangmm/libclangmm \
+		eidheim:tiny-process-library:a034812:tiny_process_library/tiny-process-library
+USE_GNOME=	gdkpixbuf2 gtkmm30 gtksourceviewmm3
+INSTALLS_ICONS=	yes
 
 PLIST_FILES=	bin/juci \
 		share/applications/juci.desktop \

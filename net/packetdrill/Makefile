@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/packetdrill/Makefile 430235 2017-01-01 03:45:12Z sunpoet $
+# $FreeBSD: head/net/packetdrill/Makefile 463164 2018-02-27 22:03:03Z swills $
 
 PORTNAME=	packetdrill
-PORTVERSION=	0.0.20161117
+PORTVERSION=	0.0.2018012501
 CATEGORIES=	net ipv6
 
 MAINTAINER=	gnn@FreeBSD.org
@@ -12,7 +12,7 @@ LICENSE=	GPLv2
 USES=		bison uidfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	freebsd-net
-GH_TAGNAME=	570c391
+GH_TAGNAME=	c046f1a
 WRKSRC_SUBDIR=	gtests/net/packetdrill
 PLIST_FILES=	bin/${PORTNAME}
 PORTDATA=	packetdrill.el packetdrill.vim

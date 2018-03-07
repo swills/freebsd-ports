@@ -1,5 +1,5 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/security/nyx/Makefile 462389 2018-02-20 12:02:37Z pi $
+# $FreeBSD: head/security/nyx/Makefile 463379 2018-03-02 08:16:21Z yuri $
 
 PORTNAME=	nyx
 PORTVERSION=	2.0.4
@@ -12,6 +12,7 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	Command-line monitor for Tor
 
 LICENSE=	GPLv3
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}stem>=1.6.0:security/py-stem@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR}

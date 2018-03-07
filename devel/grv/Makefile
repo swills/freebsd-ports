@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/grv/Makefile 461316 2018-02-09 14:09:12Z sunpoet $
+# $FreeBSD: head/devel/grv/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	grv
 DISTVERSIONPREFIX=	v
@@ -37,7 +37,7 @@ OPTIONS_DEFINE=	DOCS
 PORTDOCS=	*
 
 do-build:
-	@cd ${WRKSRC} && ${SETENV} GOPATH=${WRKSRC} go build ./cmd/${PORTNAME}
+	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go build ./cmd/${PORTNAME}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin

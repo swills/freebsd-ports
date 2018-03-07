@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-packaging/Makefile 460733 2018-02-02 19:54:12Z sunpoet $
+# $FreeBSD: head/devel/py-packaging/Makefile 463430 2018-03-02 18:51:43Z sunpoet $
 
 PORTNAME=	packaging
-PORTVERSION=	16.8
+PORTVERSION=	17.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

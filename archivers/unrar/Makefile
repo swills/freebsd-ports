@@ -1,11 +1,11 @@
 # Created by: ache
-# $FreeBSD: head/archivers/unrar/Makefile 454867 2017-11-25 03:01:38Z sunpoet $
+# $FreeBSD: head/archivers/unrar/Makefile 463214 2018-02-28 15:12:18Z sunpoet $
 
 PORTNAME=	unrar
 DISTVERSION=	5.50
 PORTEPOCH=	6
 CATEGORIES+=	archivers
-MASTER_SITES=	http://www.rarlab.com/rar/ \
+MASTER_SITES=	https://www.rarlab.com/rar/ \
 		LOCAL/sunpoet
 DISTNAME=	unrarsrc-5.5.8
 

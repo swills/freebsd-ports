@@ -1,9 +1,9 @@
 # Created by: Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
-# $FreeBSD: head/x11-wm/icewm/Makefile 436702 2017-03-22 14:41:58Z tobik $
+# $FreeBSD: head/x11-wm/icewm/Makefile 463487 2018-03-03 15:37:03Z riggs $
 
 PORTNAME=	icewm
 PORTVERSION=	1.3.8
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-wm
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION:R}/${PORTVERSION}
 

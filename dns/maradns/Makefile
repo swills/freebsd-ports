@@ -1,8 +1,9 @@
 # Created by: Anders Nordby <anders@fix.no>
-# $FreeBSD: head/dns/maradns/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/dns/maradns/Makefile 463305 2018-03-01 13:20:41Z amdmi3 $
 
 PORTNAME=	maradns
 PORTVERSION=	2.0.14
+PORTREVISION=	1
 CATEGORIES=	dns
 MASTER_SITES=	http://maradns.samiam.org/download/2.0/${PORTVERSION}/\
 		SF/${PORTNAME}/MaraDNS/${PORTVERSION}/
@@ -20,11 +21,11 @@ MAKE_ENV=	FLAGS="${CFLAGS}"
 
 HAS_CONFIGURE=	yes
 USE_RC_SUBR=	${PORTNAME} zoneserver Deadwood
-USES=		tar:bz2 shebangfix
+USES=		tar:bz2 python:2.7,run shebangfix
 USERS=		bind
 GROUPS=		bind
 INSTALL_TARGET=	install PREFIX=${STAGEDIR}${PREFIX}
-SHEBANG_FILES=	${WRKSRC}/tools/bind2csv2.py
+SHEBANG_FILES=	tools/bind2csv2.py
 
 OPTIONS_DEFINE=	IPV6 DOCS EXAMPLES CONV
 OPTIONS_SUB=	yes

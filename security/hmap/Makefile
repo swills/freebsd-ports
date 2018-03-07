@@ -1,5 +1,5 @@
 # Created by: Yonatan <onatan@gmail.com>
-# $FreeBSD: head/security/hmap/Makefile 371453 2014-10-24 16:50:42Z mva $
+# $FreeBSD: head/security/hmap/Makefile 463284 2018-03-01 06:59:42Z yuri $
 
 PORTNAME=	hmap
 PORTVERSION=	0.1
@@ -15,14 +15,14 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/GPL
 
 USES=		dos2unix python
-
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
+NO_ARCH=	yes
 
 OPTIONS_DEFINE=	DOCS
 
 post-patch:
-	${REINPLACE_CMD} -e 's|DATADIR|${DATADIR}|' ${WRKSRC}/hmap.py
+	${REINPLACE_CMD} -e 's|DATADIR|${DATADIR}|; s|#! /usr/bin/env python|#!${PYTHON_CMD}|' ${WRKSRC}/hmap.py
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/hmap.py ${STAGEDIR}${PREFIX}/bin

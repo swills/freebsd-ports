@@ -1,12 +1,10 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/textproc/tidyp/Makefile 402572 2015-11-29 07:00:07Z sunpoet $
+# $FreeBSD: head/textproc/tidyp/Makefile 463654 2018-03-05 17:14:30Z sunpoet $
 
 PORTNAME=	tidyp
 PORTVERSION=	1.04
 PORTREVISION=	2
 CATEGORIES=	textproc www
-MASTER_SITES=	GHC \
-		LOCAL/sunpoet
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Library and program to validate and fix HTML
@@ -15,7 +13,7 @@ CONFIGURE_ARGS=	--enable-asian --enable-utf16
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
-USES=		libtool
+USES=		autoreconf libtool
 
 GH_ACCOUNT=	petdance
 USE_GITHUB=	yes

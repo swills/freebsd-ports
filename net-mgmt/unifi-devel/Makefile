@@ -1,8 +1,9 @@
 # Created by: Alban MAIRE <a.maire@s2mi.fr>
-# $FreeBSD: head/net-mgmt/unifi-devel/Makefile 462955 2018-02-25 14:55:39Z feld $
+# $FreeBSD: head/net-mgmt/unifi-devel/Makefile 463398 2018-03-02 13:36:29Z feld $
 
 PORTNAME=	unifi
 PORTVERSION=	5.7.15
+PORTREVISION=	1
 CATEGORIES=	net-mgmt java
 MASTER_SITES=	http://dl.ubnt.com/unifi/${PORTVERSION}-${UNIFI_BUILD}/
 PKGNAMESUFFIX=	-devel
@@ -49,8 +50,7 @@ CONFLICTS=	unifi2-* unifi3-* unifi4-* unifi5-*
 DIR_LIST=	conf data logs run work
 
 post-patch:
-	${RM} ${WRKSRC}/usr/lib/unifi/lib/snappy-java-1.1.2.6.jar ${WRKSRC}/usr/lib/unifi/bin/*
-	(cd ${WRKSRC}/usr/lib/unifi/lib && ${LN} -s ${JAVAJARDIR}/snappy-java.jar snappy-java-1.1.2.6.jar)
+	(cd ${WRKSRC}/usr/lib/unifi/lib && ${LN} -f -s ${JAVAJARDIR}/snappy-java.jar snappy-java-*.jar)
 	${RM} -r ${WRKSRC}/usr/lib/unifi/lib/native
 
 do-install:

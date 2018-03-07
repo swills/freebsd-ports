@@ -1,5 +1,5 @@
 # Created by: Daniel Solsona <daniel@ish.com.au>, Guido Falsi <madpilot@FreeBSD.org>
-# $FreeBSD: head/sysutils/logstash5/Makefile 462830 2018-02-24 14:17:41Z feld $
+# $FreeBSD: head/sysutils/logstash5/Makefile 463486 2018-03-03 15:29:51Z feld $
 
 PORTNAME=	logstash
 PORTVERSION=	5.6.8
@@ -7,7 +7,7 @@ CATEGORIES=	sysutils java
 MASTER_SITES=	http://artifacts.elastic.co/downloads/logstash/
 PKGNAMESUFFIX=	5
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	elastic@FreeBSD.org
 COMMENT=	Server-side data ingest and transfomation tool
 
 LICENSE=	APACHE20

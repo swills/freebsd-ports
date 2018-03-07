@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/minio/Makefile 461324 2018-02-09 18:55:48Z swills $
+# $FreeBSD: head/www/minio/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	minio
 PORTVERSION=	${GH_TAGNAME:S/RELEASE.//:S/Z//:S/T/-/:S/-/./g}
@@ -30,7 +30,7 @@ SUB_LIST=	USER="${USERS}" \
 
 do-build:
 	@cd ${WRKSRC}/${GH_SUBDIR} ; \
-	${SETENV} GOPATH=${WRKSRC} CGO_ENABLED=0 go build \
+	${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} CGO_ENABLED=0 go build \
 		--ldflags '-X github.com/minio/minio/cmd.Version=${GH_TAGNAME:C/RELEASE\.//:C|(..)-(..)-(..)Z|\1:\2:\3Z|} -X github.com/minio/minio/cmd.ReleaseTag=${GH_TAGNAME} -X github.com/minio/minio/cmd.CommitID=${COMMIT_ID} -X github.com/minio/minio/cmd.GOPATH=${WRKSRC} -s -w' -o ${WRKSRC}/bin/minio
 
 do-install:

@@ -1,6 +1,6 @@
 #!/bin/sh
 # MAINTAINER: portmgr@FreeBSD.org
-# $FreeBSD: head/Mk/Scripts/qa.sh 459673 2018-01-22 16:35:23Z tz $
+# $FreeBSD: head/Mk/Scripts/qa.sh 463734 2018-03-06 16:25:16Z mat $
 
 if [ -z "${STAGEDIR}" -o -z "${PREFIX}" -o -z "${LOCALBASE}" ]; then
 	echo "STAGEDIR, PREFIX, LOCALBASE required in environment." >&2
@@ -515,6 +515,8 @@ proxydeps_suggest_uses() {
 	elif [ ${pkg} = "multimedia/gstreamer1" ]; then warn "you need to use USE_GSTREAMER1+=yes"
 	elif [ ${pkg} = "multimedia/gstreamer1-plugins" ]; then warn "you need to use USE_GSTREAMER1+=yes"
 	elif [ ${pkg} = "multimedia/gstreamer1-plugins-bad" ]; then warn "you need to use USE_GSTREAMER1+=bad"
+	# boost related
+	elif [ ${pkg} = "devel/boost-python-libs" ]; then warn "you need to add LIB_DEPENDS+=\${PY_BOOST} and maybe USES+=python"
 	# sdl-related
 	elif [ ${pkg} = 'devel/sdl12' ]; then
 		warn "you need USE_SDL+=sdl"

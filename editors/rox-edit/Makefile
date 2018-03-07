@@ -1,8 +1,8 @@
-# $FreeBSD: head/editors/rox-edit/Makefile 455913 2017-12-10 20:48:45Z antoine $
+# $FreeBSD: head/editors/rox-edit/Makefile 463304 2018-03-01 13:19:19Z amdmi3 $
 
 PORTNAME=	rox-edit
 PORTVERSION=	2.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	editors
 MASTER_SITES=	SF/rox/Edit/${PORTVERSION}
 DISTNAME=	edit-${PORTVERSION}
@@ -10,10 +10,15 @@ DISTNAME=	edit-${PORTVERSION}
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Text editor for the ROX desktop
 
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/Edit/Help/COPYING
+
 RUN_DEPENDS=	${LOCALBASE}/bin/rox:x11-fm/rox-filer \
 		${PYTHON_PKGNAMEPREFIX}roxlib>=0:devel/py-roxlib
 
-USES=		python:2.7 tar:bzip2
+USES=		python:2.7 shebangfix tar:bzip2
+SHEBANG_FILES=	Edit/tests/testreplace.py Edit/AppRun
+NO_ARCH=	yes
 
 post-extract:
 	@${FIND} ${WRKSRC} -name .cvsignore | ${XARGS} ${RM}

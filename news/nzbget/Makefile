@@ -1,9 +1,9 @@
 # Created by: Lewis Thompson <purple@lewiz.net>
-# $FreeBSD: head/news/nzbget/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/news/nzbget/Makefile 463542 2018-03-03 23:33:33Z bdrewery $
 
 PORTNAME=	nzbget
 PORTVERSION=	19.1
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	news
 

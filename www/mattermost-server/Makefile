@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/mattermost-server/Makefile 462456 2018-02-20 22:11:38Z olivier $
+# $FreeBSD: head/www/mattermost-server/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	mattermost-server
 PORTVERSION=	4.7.1
@@ -43,7 +43,7 @@ pre-build:
 
 do-build:
 	@cd ${WRKSRC}/src/github.com/${GH_ACCOUNT_DEFAULT}/${GH_PROJECT} && \
-		${SETENV} GOPATH=${WRKSRC} go install -ldflags="${GO_LDFLAGS}" ./...
+		${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go install -ldflags="${GO_LDFLAGS}" ./...
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/platform ${STAGEDIR}${PREFIX}/bin/mattermostd

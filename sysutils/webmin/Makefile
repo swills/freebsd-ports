@@ -1,8 +1,8 @@
 # Created by: Andreas Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/sysutils/webmin/Makefile 461708 2018-02-13 14:06:36Z antoine $
+# $FreeBSD: head/sysutils/webmin/Makefile 463707 2018-03-06 11:38:47Z olgeni $
 
 PORTNAME=	webmin
-PORTVERSION=	1.870
+PORTVERSION=	1.880
 CATEGORIES=	sysutils
 MASTER_SITES=	http://download.webmin.com/updates/:up \
 		SF/webadmin/${PORTNAME}/${PORTVERSION}:sf

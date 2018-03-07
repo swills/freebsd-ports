@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/libshbuf/Makefile 355892 2014-05-30 18:40:25Z amdmi3 $
+# $FreeBSD: head/devel/libshbuf/Makefile 463452 2018-03-02 22:34:53Z brooks $
 
 PORTNAME=	libshbuf
 PORTVERSION=	0.0.3
@@ -16,5 +16,6 @@ USES=		pathfix libtool
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--disable-lynx --disable-doxygen
 INSTALL_TARGET=	install-strip
+CFLAGS+=	-D_WANT_SEMUN
 
 .include <bsd.port.mk>

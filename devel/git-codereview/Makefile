@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/git-codereview/Makefile 451834 2017-10-12 09:06:17Z mat $
+# $FreeBSD: head/devel/git-codereview/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	git-codereview
 PORTVERSION=	0.0.0.2016030201
@@ -24,7 +24,7 @@ post-patch:
 .endfor
 
 do-build:
-	cd ${WRKSRC}/src/golang.org/x/review ; ${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} go install ./...
+	@cd ${WRKSRC}/src/golang.org/x/review ; ${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} go install ./...
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/${PORTNAME} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}

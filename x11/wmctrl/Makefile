@@ -1,5 +1,5 @@
 # Created by: Florent Thoumie <flz@xbsd.org>
-# $FreeBSD: head/x11/wmctrl/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/x11/wmctrl/Makefile 463723 2018-03-06 12:32:00Z tobik $
 
 PORTNAME=	wmctrl
 PORTVERSION=	1.07
@@ -7,7 +7,7 @@ PORTREVISION=	7
 CATEGORIES=	x11
 MASTER_SITES=	http://sweb.cz/tripie/utils/wmctrl/dist/
 
-MAINTAINER=	flz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Command line tool to interact with an EWMH/NetWM compatible X managers
 
 LICENSE=	GPLv2

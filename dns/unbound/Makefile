@@ -1,11 +1,12 @@
 # Created by: Sergey Matveychuk <sem@FreeBSD.org>
-# $FreeBSD: head/dns/unbound/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/dns/unbound/Makefile 463123 2018-02-27 13:03:48Z mat $
 
 PORTNAME=	unbound
 PORTVERSION=	1.6.8
 PORTREVISION=	2
 CATEGORIES=	dns
-MASTER_SITES=	http://unbound.net/downloads/
+MASTER_SITES=	https://unbound.net/downloads/ \
+		https://distfiles.crux.guru/
 
 MAINTAINER=	jaap@NLnetLabs.nl
 COMMENT=	Validating, recursive, and caching DNS resolver

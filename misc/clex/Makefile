@@ -1,11 +1,11 @@
 # Created by: Michael L. Hostbaek <mich@freebsdcluster.org>
-# $FreeBSD: head/misc/clex/Makefile 395483 2015-08-28 13:39:56Z amdmi3 $
+# $FreeBSD: head/misc/clex/Makefile 463631 2018-03-05 09:05:08Z mich $
 
 PORTNAME=	clex
-PORTVERSION=	4.6.6
+PORTVERSION=	4.6.7
 CATEGORIES=	misc
 MASTER_SITES=	http://www.clex.sk/download/
-DISTNAME=	clex-4.6.patch6
+DISTNAME=	clex-4.6.patch7
 
 MAINTAINER=	mich@FreeBSD.org
 COMMENT=	Command line file manager

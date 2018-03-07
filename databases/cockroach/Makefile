@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/cockroach/Makefile 460498 2018-01-31 16:33:41Z lifanov $
+# $FreeBSD: head/databases/cockroach/Makefile 463352 2018-03-01 20:38:58Z yuri $
 
 PORTNAME=	cockroach
-PORTVERSION=	1.1.4
 DISTVERSIONPREFIX=	v
+DISTVERSION=	1.1.5
 CATEGORIES=	databases
 MASTER_SITES=	https://binaries.cockroachdb.com/
 EXTRACT_SUFX=	.src.tgz
@@ -38,7 +38,7 @@ post-patch:
 
 do-build:
 	@${SETENV} -i PATH="${PATH}" \
-		${MAKE_CMD} -C ${WRKSRC} buildoss
+		${MAKE_CMD} -C ${WRKSRC} buildoss GOVERS=.*
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/github.com/cockroachdb/cockroach/cockroach ${STAGEDIR}${PREFIX}/bin/

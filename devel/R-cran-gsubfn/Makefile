@@ -1,5 +1,5 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-gsubfn/Makefile 456684 2017-12-18 21:59:53Z antoine $
+# $FreeBSD: head/devel/R-cran-gsubfn/Makefile 463170 2018-02-28 00:24:52Z jrm $
 
 PORTNAME=	gsubfn
 DISTVERSION=	0.6-5
@@ -11,8 +11,6 @@ MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	R package used for string matching, substitution and parsing
 
 LICENSE=	GPLv2
-
-BROKEN=		fails to stage
 
 RUN_DEPENDS=	R-cran-proto>=0.3.9.2_6:devel/R-cran-proto
 

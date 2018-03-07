@@ -1,6 +1,5 @@
-# $FreeBSD: head/net-p2p/transmission-qt5/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net-p2p/transmission-qt5/Makefile 463262 2018-02-28 21:09:36Z crees $
 
-PORTREVISION=	1
 PKGNAMESUFFIX=	-qt5
 
 MAINTAINER=	crees@FreeBSD.org

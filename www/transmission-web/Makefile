@@ -1,6 +1,5 @@
-# $FreeBSD: head/www/transmission-web/Makefile 409981 2016-03-02 22:50:29Z jbeich $
+# $FreeBSD: head/www/transmission-web/Makefile 463262 2018-02-28 21:09:36Z crees $
 
-PORTREVISION=	0
 CATEGORIES=	www net-p2p
 PKGNAMESUFFIX=	-web
 

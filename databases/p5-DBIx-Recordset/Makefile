@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/p5-DBIx-Recordset/Makefile 462820 2018-02-24 14:02:05Z sunpoet $
+# $FreeBSD: head/databases/p5-DBIx-Recordset/Makefile 463217 2018-02-28 15:12:33Z sunpoet $
 
 PORTNAME=	DBIx-Recordset
 PORTVERSION=	0.26
@@ -11,9 +11,13 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module for abstraction and simplification of database access
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 BUILD_DEPENDS=	p5-DBI>=0:databases/p5-DBI
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

@@ -1,9 +1,9 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/net-mgmt/percona-monitoring-plugins/Makefile 444069 2017-06-21 18:53:40Z sunpoet $
+# $FreeBSD: head/net-mgmt/percona-monitoring-plugins/Makefile 463116 2018-02-27 12:24:27Z amdmi3 $
 
 PORTNAME=	percona-monitoring-plugins
 PORTVERSION=	1.1.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://www.percona.com/downloads/percona-monitoring-plugins/${PORTVERSION}/ \
 		ftp://ftp.renatasystems.org/pub/FreeBSD/ports/distfiles/
@@ -19,9 +19,10 @@ RUN_DEPENDS=	cacti>=0:net-mgmt/cacti \
 		bash:shells/bash \
 		wget:ftp/wget
 
-USES=		mysql perl5 php:cli shebangfix
+USES=		mysql perl5 php:cli python:run shebangfix
 USE_PERL5=	run
 SHEBANG_FILES=	nagios/bin/pmp-check-pt-table-checksum \
+		nagios/bin/pmp-check-aws-rds.py \
 		cacti/bin/pmp-cacti-*
 
 NO_BUILD=	yes

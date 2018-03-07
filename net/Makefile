@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 462674 2018-02-23 06:31:21Z yuri $
+# $FreeBSD: head/net/Makefile 463551 2018-03-04 05:21:09Z woodsb02 $
 #
 
     COMMENT = Networking tools
@@ -134,7 +134,7 @@
     SUBDIR += enet
     SUBDIR += erlang-ranch
     SUBDIR += erlang-xmlrpc
-    SUBDIR += eternaltcp
+    SUBDIR += eternalterminal
     SUBDIR += etrace
     SUBDIR += exabgp
     SUBDIR += exaddos
@@ -182,6 +182,7 @@
     SUBDIR += gnome-online-miners
     SUBDIR += gnu-dico
     SUBDIR += gnu-radius
+    SUBDIR += gobgp
     SUBDIR += go-amqp
     SUBDIR += go-bapu
     SUBDIR += go-cs
@@ -998,6 +999,7 @@
     SUBDIR += py-dugong
     SUBDIR += py-ec2-cli-tools
     SUBDIR += py-eventlet
+    SUBDIR += py-flask-xml-rpc
     SUBDIR += py-gntp
     SUBDIR += py-gspread
     SUBDIR += py-gspreadsheet
@@ -1134,9 +1136,10 @@
     SUBDIR += redir
     SUBDIR += relayd
     SUBDIR += remmina
-    SUBDIR += remmina-plugin-gnome
+    SUBDIR += remmina-plugin-exec
     SUBDIR += remmina-plugin-nx
     SUBDIR += remmina-plugin-rdp
+    SUBDIR += remmina-plugin-secret
     SUBDIR += remmina-plugin-telepathy
     SUBDIR += remmina-plugin-vnc
     SUBDIR += remmina-plugin-xdmcp

@@ -1,20 +1,21 @@
-# $FreeBSD: head/x11-themes/cursor-dmz-theme/Makefile 448082 2017-08-17 08:26:25Z bapt $
+# $FreeBSD: head/x11-themes/cursor-dmz-theme/Makefile 463535 2018-03-03 21:16:03Z yuri $
 
 PORTNAME=	cursor-dmz-theme
-PORTVERSION=	0.4.4
-PORTREVISION=	1
+DISTVERSION=	0.4.5
 CATEGORIES=	x11-themes
 MASTER_SITES=	DEBIAN/pool/main/d/dmz-cursor-theme
 DISTNAME=	dmz-cursor-theme_${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	mbeis@xs4all.nl
 COMMENT=	DMZ style neutral scalable cursor theme
 
 LICENSE=	CC-BY-SA-3.0
 
 BUILD_DEPENDS=	xcursorgen:x11/xcursorgen
 
+USES=		tar:xz
 NO_ARCH=	yes
+
 WRKSRC=		${WRKDIR}/${DISTNAME:S/_/-/}/DMZ-White
 DATADIR=	${PREFIX}/share/icons/Vanilla-DMZ
 

@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/science/p5-Geo-WebService-Elevation-USGS/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/science/p5-Geo-WebService-Elevation-USGS/Makefile 463574 2018-03-04 16:11:18Z sunpoet $
 
 PORTNAME=	Geo-WebService-Elevation-USGS
-PORTVERSION=	0.106
+PORTVERSION=	0.107
 CATEGORIES=	science perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:WYANT

@@ -1,11 +1,12 @@
 # Created by: Kimura Fuyuki <fuyuki@mj.0038.net>
-# $FreeBSD: head/textproc/xmlcharent/Makefile 415814 2016-05-24 22:32:49Z bapt $
+# $FreeBSD: head/textproc/xmlcharent/Makefile 463123 2018-02-27 13:03:48Z mat $
 
 PORTNAME=	xmlcharent
 PORTVERSION=	0.3
 PORTREVISION=	2
 CATEGORIES=	textproc
-MASTER_SITES=	http://www.oasis-open.org/docbook/${PORTNAME}/${PORTVERSION}/
+MASTER_SITES=	https://www.oasis-open.org/docbook/${PORTNAME}/${PORTVERSION}/ \
+		https://library.syr.edu/digital/guides/lavender/
 
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	XML character entities

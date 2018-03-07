@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/games/gti/Makefile 413255 2016-04-14 11:05:52Z tota $
+# $FreeBSD: head/games/gti/Makefile 463174 2018-02-28 03:01:31Z tota $
 
 PORTNAME=	gti
-PORTVERSION=	1.3.0
+PORTVERSION=	1.6.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 

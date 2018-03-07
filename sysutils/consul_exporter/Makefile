@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/consul_exporter/Makefile 449650 2017-09-11 14:40:12Z swills $
+# $FreeBSD: head/sysutils/consul_exporter/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	consul_exporter
 PORTVERSION=	0.3.0
@@ -26,7 +26,7 @@ post-extract:
 	@${MV} ${WRKSRC}/vendor/ ${WRKSRC}/src/
 
 do-build:
-	@cd ${WRKSRC}/src/github.com/prometheus/consul_exporter; ${SETENV} CGO_ENABLED=0 ${BUILD_ENV} GOPATH=${WRKSRC} go build \
+	@cd ${WRKSRC}/src/github.com/prometheus/consul_exporter; ${SETENV} ${MAKE_ENV} CGO_ENABLED=0 ${BUILD_ENV} GOPATH=${WRKSRC} go build \
 		-ldflags "\
 		-X github.com/prometheus/consul_exporter/version.Version=${PORTVERSION}  \
 		-X github.com/prometheus/consul_exporter/version.VersionPrerelease=  \

@@ -1,12 +1,12 @@
 # Created by: chuck@pkix.net
-# $FreeBSD: head/sysutils/clean/Makefile 363399 2014-07-29 21:43:17Z adamw $
+# $FreeBSD: head/sysutils/clean/Makefile 463107 2018-02-27 04:55:52Z yuri $
 
 PORTNAME=	clean
 PORTVERSION=	3.4
 CATEGORIES=	sysutils
 MASTER_SITES=	SF
 
-MAINTAINER=	chuck@pkix.net
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Automatically remove unwanted files
 
 USES=	tar:bzip2

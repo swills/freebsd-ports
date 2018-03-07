@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/textproc/rubygem-rubypants/Makefile 430330 2017-01-02 10:01:44Z swills $
+# $FreeBSD: head/textproc/rubygem-rubypants/Makefile 463137 2018-02-27 13:25:15Z sunpoet $
 
 PORTNAME=	rubypants
-PORTVERSION=	0.6.0
+PORTVERSION=	0.7.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

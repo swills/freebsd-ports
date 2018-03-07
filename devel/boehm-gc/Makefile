@@ -1,10 +1,11 @@
 # Created by: Mike McGaughey <mmcg@cs.monash.edu.au>
-# $FreeBSD: head/devel/boehm-gc/Makefile 458406 2018-01-08 12:52:49Z cpm $
+# $FreeBSD: head/devel/boehm-gc/Makefile 463123 2018-02-27 13:03:48Z mat $
 
 PORTNAME=	gc
 PORTVERSION=	7.6.2
 CATEGORIES=	devel
-MASTER_SITES=	http://www.hboehm.info/gc/gc_source/
+MASTER_SITES=	http://www.hboehm.info/gc/gc_source/ \
+		https://github.com/ivmai/bdwgc/releases/download/v${PORTVERSION}/
 PKGNAMEPREFIX=	boehm-
 .ifdef GC_VARIANT
 PKGNAMESUFFIX=	-${GC_VARIANT}

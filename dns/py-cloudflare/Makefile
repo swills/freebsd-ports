@@ -1,7 +1,7 @@
-# $FreeBSD: head/dns/py-cloudflare/Makefile 462724 2018-02-23 19:24:38Z sunpoet $
+# $FreeBSD: head/dns/py-cloudflare/Makefile 463065 2018-02-26 22:30:44Z sunpoet $
 
 PORTNAME=	cloudflare
-PORTVERSION=	2.0.4
+PORTVERSION=	2.1.0
 CATEGORIES=	dns python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,6 +13,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}future>=0:devel/py-future@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}jsonlines>=0:devel/py-jsonlines@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}yaml>=0:devel/py-yaml@${FLAVOR}
 

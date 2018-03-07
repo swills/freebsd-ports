@@ -1,5 +1,5 @@
 # Created by: Wes Peters <wes@FreeBSD.org>
-# $FreeBSD: head/devel/poco-ssl/Makefile 462052 2018-02-16 18:35:03Z brnrd $
+# $FreeBSD: head/devel/poco-ssl/Makefile 463452 2018-03-02 22:34:53Z brooks $
 
 PORTNAME=	poco
 # New version 1.4.6p4 is available; please use DISTVERSION upon updating
@@ -25,6 +25,7 @@ USES=		gmake tar:bzip2 ssl
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX} --config=FreeBSD
 USE_LDCONFIG=	yes
+CXXFLAGS+=	-D_WANT_SEMUN
 
 OPTIONS_DEFINE=	TEST SAMPLES MYSQL SQLITE ODBC
 OPTIONS_DEFAULT=MYSQL SQLITE

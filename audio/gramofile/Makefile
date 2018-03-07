@@ -1,5 +1,5 @@
 # Created by: nox@jelal.kn-bremen.de
-# $FreeBSD: head/audio/gramofile/Makefile 426382 2016-11-19 15:56:53Z marino $
+# $FreeBSD: head/audio/gramofile/Makefile 463452 2018-03-02 22:34:53Z brooks $
 
 PORTNAME=	gramofile
 PORTVERSION=	1.6P
@@ -22,6 +22,7 @@ USE_CSTD=	gnu89
 MAKE_ARGS=	CC="${CC}" \
 		CXX="${CXX}" \
 		PERLCOREDIR=${PERLCOREDIR}
+CFLAGS+=	-D_WANT_SEMUN
 
 PERLCOREDIR=	${LOCALBASE}/lib/perl5/${PERL_VER}/${PERL_ARCH}/CORE
 

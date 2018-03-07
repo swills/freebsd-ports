@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/net-im/cjc/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/net-im/cjc/Makefile 463349 2018-03-01 19:25:14Z rene $
 
 PORTNAME=	cjc
 PORTVERSION=	1.2.1
@@ -13,14 +13,17 @@ COMMENT=	Console Jabber Client
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyxmpp>=0:net-im/py-pyxmpp@${PY_FLAVOR}
+DEPRECATED=	Depends on expired net-im/py-xmpp
+EXPIRATION_DATE=2018-04-01
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	Jajcus
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyxmpp>=0:net-im/py-pyxmpp@${PY_FLAVOR}
 
 USES=		python:2.7 shebangfix
 SHEBANG_FILES=	cjc.in cjc.py cjc/main.py
 NO_ARCH=	yes
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	Jajcus
 
 PORTDOCS=	*
 

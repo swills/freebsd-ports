@@ -1,5 +1,5 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/devel/libvirt/Makefile 460179 2018-01-28 13:34:23Z novel $
+# $FreeBSD: head/devel/libvirt/Makefile 463187 2018-02-28 08:33:04Z amdmi3 $
 
 PORTNAME=	libvirt
 PORTVERSION=	4.0.0
@@ -104,6 +104,7 @@ CPE_VENDOR=	redhat
 USE_PERL5=	build
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
+TEST_TARGET=	check
 SHLIB_VER=	0.4000.0
 PLIST_SUB+=	PORTVERSION="-${PORTVERSION}" \
 		SHLIB_VER=${SHLIB_VER}
@@ -174,9 +175,6 @@ post-install:
 		${MV} ${STAGEDIR}${ETCDIR}/${file} \
 		${STAGEDIR}${ETCDIR}/${file}.sample; fi
 .endfor
-
-regression-test: build
-	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_CMD} check
 
 .include <bsd.port.pre.mk>
 

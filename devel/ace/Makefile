@@ -1,5 +1,5 @@
 # Created by: Sergey Matveychuk <sem@ciam.ru>
-# $FreeBSD: head/devel/ace/Makefile 444599 2017-06-28 15:47:19Z tcberner $
+# $FreeBSD: head/devel/ace/Makefile 463452 2018-03-02 22:34:53Z brooks $
 
 PORTNAME=	ace
 PORTVERSION=	6.4.3
@@ -27,6 +27,7 @@ MAKEFILE=	GNUmakefile
 USE_LDCONFIG=	yes
 
 CPPFLAGS+=	-I${LOCALBASE}/include
+CPPFLAGS+=	-D_WANT_SEMUN
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 PLIST_SUB=	VERSION="${PORTVERSION}"

@@ -1,5 +1,5 @@
 # Created by: Russell A. Jackson <rjackson@cserv62.csub.edu>
-# $FreeBSD: head/net-mgmt/sdig/Makefile 447034 2017-08-01 17:07:58Z zi $
+# $FreeBSD: head/net-mgmt/sdig/Makefile 463452 2018-03-02 22:34:53Z brooks $
 
 PORTNAME=	sdig
 PORTVERSION=	0.45
@@ -15,6 +15,7 @@ LIB_DEPENDS=	libnetsnmp.so:net-mgmt/net-snmp
 
 USES=		gmake
 GNU_CONFIGURE=	yes
+CFLAGS+=	-D_WANT_SEMUN
 
 PLIST_FILES=	bin/sdig etc/sdig.conf etc/mactable man/man5/sdig.conf.5.gz \
 		man/man8/sdig.8.gz

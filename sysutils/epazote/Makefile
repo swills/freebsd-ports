@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/epazote/Makefile 451834 2017-10-12 09:06:17Z mat $
+# $FreeBSD: head/sysutils/epazote/Makefile 463611 2018-03-04 23:14:00Z yuri $
 
 PORTNAME=	epazote
 PORTVERSION=	2.1.2
@@ -23,7 +23,7 @@ PLIST_FILES=	bin/epazote
 
 do-build:
 	@cd ${WRKSRC}/src/github.com/${GH_ACCOUNT}/${GH_PROJECT}; \
-	${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -ldflags \
+	${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -ldflags \
 	"-X main.version=${PORTVERSION}" -o epazote cmd/epazote/main.go;
 
 do-install:

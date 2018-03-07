@@ -1,5 +1,5 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/net/remmina-plugin-xdmcp/Makefile 425739 2016-11-08 13:35:36Z woodsb02 $
+# $FreeBSD: head/net/remmina-plugin-xdmcp/Makefile 463551 2018-03-04 05:21:09Z woodsb02 $
 
 PKGNAMESUFFIX=	-xdmcp
 
@@ -10,7 +10,5 @@ RUN_DEPENDS=	Xephyr:x11-servers/xephyr
 USE_GNOME+=	cairo
 
 MASTERDIR=	${.CURDIR}/../remmina-plugins
-
-PLIST_SUB+=	ICONS="" SSH=""
 
 .include "${MASTERDIR}/Makefile"

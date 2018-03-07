@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/py-tqdm/Makefile 459680 2018-01-22 18:10:06Z rm $
+# $FreeBSD: head/misc/py-tqdm/Makefile 463152 2018-02-27 19:24:06Z yuri $
 
 PORTNAME=	tqdm
-PORTVERSION=	4.19.5
 DISTVERSIONPREFIX=	v
+DISTVERSION=	4.19.6
 CATEGORIES=	misc
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -13,9 +13,8 @@ LICENSE=	MIT MPL20
 LICENSE_COMB=	multi
 
 USES=		python
-USE_PYTHON=	autoplist distutils
-NO_ARCH=	yes
-
 USE_GITHUB=	yes
+USE_PYTHON=	distutils autoplist concurrent
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

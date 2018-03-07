@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/gogs/Makefile 458562 2018-01-09 19:41:37Z pi $
+# $FreeBSD: head/devel/gogs/Makefile 463611 2018-03-04 23:14:00Z yuri $
 
 PORTNAME=	gogs
 DISTVERSIONPREFIX=	v
@@ -56,7 +56,7 @@ post-patch:
 
 do-build:
 	@(cd ${WRKSRC}/${GH_SUBDIR} && \
-		${SETENV} GOPATH=${WRKSRC} go build -tags "sqlite pam cert" -p ${MAKE_JOBS_NUMBER} -o ${PORTNAME})
+		${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go build -tags "sqlite pam cert" -p ${MAKE_JOBS_NUMBER} -o ${PORTNAME})
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/libexec/${PORTNAME}

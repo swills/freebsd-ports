@@ -1,8 +1,8 @@
 # Created by: Yasuhiro KIMURA <yasu@utahime.org>
-# $FreeBSD: head/mail/py-authres/Makefile 462022 2018-02-16 15:22:44Z swills $
+# $FreeBSD: head/mail/py-authres/Makefile 463564 2018-03-04 12:47:18Z koobs $
 
 PORTNAME=	authres
-PORTVERSION=	1.0.2
+PORTVERSION=	1.1.0
 CATEGORIES=	mail python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

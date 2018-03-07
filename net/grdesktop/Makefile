@@ -1,5 +1,5 @@
 # Created by: Florent Thoumie <flz@xbsd.org>
-# $FreeBSD: head/net/grdesktop/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/net/grdesktop/Makefile 463723 2018-03-06 12:32:00Z tobik $
 
 PORTNAME=	grdesktop
 PORTVERSION=	0.23
@@ -7,7 +7,7 @@ PORTREVISION=	13
 CATEGORIES=	net
 MASTER_SITES=	SAVANNAH
 
-MAINTAINER=	flz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GNOME frontend for the remote desktop client (rdesktop)
 
 RUN_DEPENDS=	rdesktop:net/rdesktop

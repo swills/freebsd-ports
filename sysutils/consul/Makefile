@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/consul/Makefile 461973 2018-02-16 03:39:41Z swills $
+# $FreeBSD: head/sysutils/consul/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	consul
 PORTVERSION=	1.0.6
@@ -29,7 +29,7 @@ post-extract:
 	@${MV} ${WRKSRC}/vendor/ ${WRKSRC}/src/
 
 do-build:
-	@cd ${WRKSRC}/src/github.com/hashicorp/consul; ${SETENV} CGO_ENABLED=0 ${BUILD_ENV} GOPATH=${WRKSRC} go build \
+	@cd ${WRKSRC}/src/github.com/hashicorp/consul; ${SETENV} ${MAKE_ENV} CGO_ENABLED=0 ${BUILD_ENV} GOPATH=${WRKSRC} go build \
 		-ldflags "\
 		-X github.com/hashicorp/consul/version.Version=${PORTVERSION}  \
 		-X github.com/hashicorp/consul/version.VersionPrerelease=  \

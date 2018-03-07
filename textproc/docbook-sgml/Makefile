@@ -1,10 +1,10 @@
-# $FreeBSD: head/textproc/docbook-sgml/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/textproc/docbook-sgml/Makefile 463123 2018-02-27 13:03:48Z mat $
 
 PORTNAME=	docbook
 PORTVERSION=	4.5
 PORTREVISION=	1
 CATEGORIES=	textproc
-MASTER_SITES=	${DBFILES:C,(.*):(.*),http://www.oasis-open.org/docbook/sgml/\1/:\2,:C,:docbook-([0-9]+).([0-9]+),:db\1\2,}
+MASTER_SITES=	${DBFILES:C,(.*):(.*),https://www.oasis-open.org/docbook/sgml/\1/:\2,:C,:docbook-([0-9]+).([0-9]+),:db\1\2,}
 PKGNAMESUFFIX=	-sgml
 DISTFILES=	${DBFILES:C,.*:(.*),\1.zip:\1,:C,:docbook-([0-9]+).([0-9]+),:db\1\2,}
 

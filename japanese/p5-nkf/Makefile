@@ -1,12 +1,11 @@
 # Created by: max
-# $FreeBSD: head/japanese/p5-nkf/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/japanese/p5-nkf/Makefile 463345 2018-03-01 17:19:10Z hrs $
 
 PORTNAME=	nkf
-PORTVERSION=	2.1.2
-PORTREVISION=	1
+PORTVERSION=	2.1.4
 PORTEPOCH=	1
 CATEGORIES=	japanese perl5
-MASTER_SITES=	SFJP/${PORTNAME}/53171
+MASTER_SITES=	SFJP/${PORTNAME}/64158
 PKGNAMEPREFIX=	ja-p5-
 
 MAINTAINER=	hrs@FreeBSD.org
@@ -22,5 +21,8 @@ LICENSE_PERMS_NKF=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 USES=		perl5
 USE_PERL5=	configure
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/NKF.mod
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/NKF/NKF.so
 
 .include <bsd.port.mk>

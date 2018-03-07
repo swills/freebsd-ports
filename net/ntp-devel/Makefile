@@ -1,5 +1,5 @@
 # Created by: andreas
-# $FreeBSD: head/net/ntp-devel/Makefile 460673 2018-02-02 07:00:18Z cy $
+# $FreeBSD: head/net/ntp-devel/Makefile 463211 2018-02-28 14:14:53Z cy $
 
 PORTNAME=	ntp
 PORTVERSION=	4.3.93
@@ -12,6 +12,8 @@ DISTNAME=	${PORTNAME}-dev-${PORTVERSION:S/P/p/:S/r/-RC/:S/b/-beta/}
 
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	The Network Time Protocol Distribution
+
+FORBIDDEN=	It appears the development branch of NTP is dead.
 
 LIB_DEPENDS=	libevent.so:devel/libevent \
 		libmd5.so:www/libwww

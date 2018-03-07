@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/py-django-crispy-forms/Makefile 462933 2018-02-25 05:34:28Z sunpoet $
+# $FreeBSD: head/www/py-django-crispy-forms/Makefile 463746 2018-03-06 20:31:19Z sunpoet $
 
 PORTNAME=	django-crispy-forms
-PORTVERSION=	1.7.0
+PORTVERSION=	1.7.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

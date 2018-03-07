@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/influxdb/Makefile 455081 2017-11-28 21:55:06Z ultima $
+# $FreeBSD: head/databases/influxdb/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	influxdb
 PORTVERSION=	1.4.2
@@ -107,7 +107,7 @@ post-patch:
 
 do-build:
 		@cd ${WRKSRC}/src/github.com/${GH_ACCOUNT_DEFAULT}/${GH_PROJECT} && \
-			${SETENV} GOPATH=${WRKSRC} go install -ldflags "-X main.version=${DISTVERSION}" ./...
+			${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go install -ldflags "-X main.version=${DISTVERSION}" ./...
 
 do-build-MANPAGES-on:
 		@cd ${WRKSRC}/src/github.com/influxdata/influxdb/man && ${SETENV} ${MAKE_ENV} ${MAKE_CMD}

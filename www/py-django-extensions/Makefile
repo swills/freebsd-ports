@@ -1,9 +1,8 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-extensions/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/www/py-django-extensions/Makefile 463736 2018-03-06 17:27:45Z swills $
 
 PORTNAME=	django-extensions
-PORTVERSION=	1.6.7
-PORTREVISION=	1
+PORTVERSION=	2.0.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,11 +13,17 @@ COMMENT=	Global custom management extensions for the Django Framework
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django>=1.8:www/py-django@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.2:devel/py-six@${FLAVOR}
 
 NO_ARCH=	yes
-USES=		python:2.7
+USES=		python
 USE_PYTHON=	autoplist distutils
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${PYTHON_REL} < 3500
+RUN_DEPENDS+=   ${PYTHON_PKGNAMEPREFIX}typing>=0:devel/py-typing@${FLAVOR}
+.endif
+
+.include <bsd.port.post.mk>

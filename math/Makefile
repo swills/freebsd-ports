@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 463027 2018-02-26 15:48:42Z jwb $
+# $FreeBSD: head/math/Makefile 463444 2018-03-02 19:10:48Z rene $
 #
 
     COMMENT = Mathematics
@@ -36,6 +36,7 @@
     SUBDIR += R-cran-car
     SUBDIR += R-cran-coda
     SUBDIR += R-cran-combinat
+    SUBDIR += R-cran-conf.design
     SUBDIR += R-cran-ddalpha
     SUBDIR += R-cran-deldir
     SUBDIR += R-cran-dimRed
@@ -136,7 +137,6 @@
     SUBDIR += cgal
     SUBDIR += chaco
     SUBDIR += chryzodus
-    SUBDIR += clarence
     SUBDIR += clasp
     SUBDIR += clblas
     SUBDIR += clblast

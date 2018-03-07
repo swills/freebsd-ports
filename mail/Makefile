@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/mail/Makefile 463108 2018-02-27 05:01:28Z fluffy $
 #
 
     COMMENT = Electronic mail utilities
@@ -274,6 +274,8 @@
     SUBDIR += nohtml
     SUBDIR += normalizemime
     SUBDIR += notmuch
+    SUBDIR += notmuch-emacs
+    SUBDIR += notmuch-mutt
     SUBDIR += nullmailer
     SUBDIR += nullpop
     SUBDIR += offlineimap

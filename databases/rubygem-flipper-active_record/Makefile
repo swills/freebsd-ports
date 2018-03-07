@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/rubygem-flipper-active_record/Makefile 459765 2018-01-23 15:16:46Z sunpoet $
+# $FreeBSD: head/databases/rubygem-flipper-active_record/Makefile 463569 2018-03-04 16:10:52Z sunpoet $
 
 PORTNAME=	flipper-active_record
-PORTVERSION=	0.12.2
+PORTVERSION=	0.13.0
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

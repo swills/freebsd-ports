@@ -1,12 +1,12 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11-fm/pcmanfm-qt/Makefile 453230 2017-10-31 11:42:47Z olgeni $
+# $FreeBSD: head/x11-fm/pcmanfm-qt/Makefile 463477 2018-03-03 09:53:42Z yuri $
 
 PORTNAME=	pcmanfm-qt
 PORTVERSION=	0.12.0
 CATEGORIES=	x11-fm
 MASTER_SITES=	LXQT
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	mbeis@xs4all.nl
 COMMENT=	LXQt file manager
 
 LICENSE=	GPLv2

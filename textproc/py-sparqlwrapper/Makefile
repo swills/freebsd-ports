@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/textproc/py-sparqlwrapper/Makefile 429044 2016-12-21 06:30:18Z wen $
+# $FreeBSD: head/textproc/py-sparqlwrapper/Makefile 463066 2018-02-26 22:30:49Z sunpoet $
 
 PORTNAME=	sparqlwrapper
-PORTVERSION=	1.8.0
+PORTVERSION=	1.8.1
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

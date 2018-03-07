@@ -1,11 +1,11 @@
 # Created by: Konstantin Saurbier <saurbier@math.uni-bielefeld.de>
-# $FreeBSD: head/dns/ldns/Makefile 456845 2017-12-20 19:34:11Z bapt $
+# $FreeBSD: head/dns/ldns/Makefile 463123 2018-02-27 13:03:48Z mat $
 
 PORTNAME=	ldns
 PORTVERSION=	1.7.0
 PORTREVISION=	1
 CATEGORIES=	dns
-MASTER_SITES=	http://www.nlnetlabs.nl/downloads/ldns/ \
+MASTER_SITES=	https://www.nlnetlabs.nl/downloads/ldns/ \
 		LOCAL/ehaupt
 
 MAINTAINER=	jaap@NLnetLabs.nl

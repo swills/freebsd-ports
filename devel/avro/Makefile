@@ -1,11 +1,11 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/avro/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/devel/avro/Makefile 463090 2018-02-26 22:32:53Z sunpoet $
 
 PORTNAME=	avro
-PORTVERSION=	1.8.1
+PORTVERSION=	1.8.2
 CATEGORIES=	devel
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Data serialization system
 
 LICENSE=	APACHE20
@@ -13,14 +13,14 @@ LICENSE=	APACHE20
 USES=		metaport
 
 OPTIONS_DEFINE=	C CPP PYTHON
-C_DESC=		Install ANSI C library
+OPTIONS_DEFAULT=C CPP PYTHON
+C_DESC=		Install C library
 CPP_DESC=	Install C++ library
 PYTHON_DESC=	Install Python library
 
-OPTIONS_DEFAULT=C CPP PYTHON
-
 C_LIB_DEPENDS=		libavro.so:devel/avro-c
 CPP_LIB_DEPENDS=	libavrocpp.so:devel/avro-cpp
-PYTHON_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}avro:devel/py-avro
+PYTHON_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}avro>=0:devel/py-avro@${PY_FLAVOR}
+PYTHON_USES=		python:env
 
 .include <bsd.port.mk>

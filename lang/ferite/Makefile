@@ -1,5 +1,5 @@
 # Created by: Jeremy Norris <ishmael27@home.com>
-# $FreeBSD: head/lang/ferite/Makefile 428143 2016-12-08 17:26:09Z tijl $
+# $FreeBSD: head/lang/ferite/Makefile 463452 2018-03-02 22:34:53Z brooks $
 
 PORTNAME=	ferite
 PORTVERSION=	1.0.2
@@ -23,6 +23,7 @@ LDFLAGS+=	-lpthread -L${LOCALBASE}/lib
 USE_LDCONFIG=	yes
 PLIST_SUB=	MACHINE_ARCH=${MACHINE_ARCH}
 INSTALL_TARGET=	install-strip
+CFLAGS+=	-D_WANT_SEMUN
 
 PORTDOCS=	*
 

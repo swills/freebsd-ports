@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/git-lfs/Makefile 452431 2017-10-19 17:20:29Z tcberner $
+# $FreeBSD: head/devel/git-lfs/Makefile 463553 2018-03-04 07:04:37Z yuri $
 
 PORTNAME=	git-lfs
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.3.4
+DISTVERSION=	2.4.0
 CATEGORIES=	devel
 
 MAINTAINER=	kenji@k2r.org
@@ -12,7 +12,6 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 BUILD_DEPENDS=	bash:shells/bash
-RUN_DEPENDS=	bash:shells/bash
 
 USES=		go
 USE_GITHUB=	yes
@@ -23,9 +22,9 @@ GO_PKGNAME=	github.com/${PORTNAME}/${PORTNAME}
 # see https://github.com/git-lfs/git-lfs/wiki/Installation
 
 do-build:
-	cd ${WRKSRC} && ${MKDIR} ${WRKSRC}/.tmp && TMPDIR=${WRKSRC}/.tmp script/bootstrap
+	@cd ${WRKSRC} && ${MKDIR} ${WRKSRC}/.tmp && ${SETENV} ${MAKE_ENV} ${GO_ENV} TMPDIR=${WRKSRC}/.tmp script/bootstrap
 
-pre-install:
+do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/git-lfs ${STAGEDIR}${PREFIX}/bin/git-lfs
 
 .include <bsd.port.mk>

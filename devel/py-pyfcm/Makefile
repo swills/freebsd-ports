@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-pyfcm/Makefile 461700 2018-02-13 12:06:27Z olgeni $
+# $FreeBSD: head/devel/py-pyfcm/Makefile 463715 2018-03-06 11:58:52Z olgeni $
 
 PORTNAME=	pyfcm
-PORTVERSION=	1.4.4
+PORTVERSION=	1.4.5
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

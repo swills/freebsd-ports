@@ -1,12 +1,12 @@
 # Created by: jasone
-# $FreeBSD: head/devel/libedit/Makefile 438272 2017-04-11 15:21:23Z mat $
+# $FreeBSD: head/devel/libedit/Makefile 463123 2018-02-27 13:03:48Z mat $
 
 PORTNAME=	libedit
 PORTVERSION=	${EDITVERSION}.${EDITDATE}
 PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	devel
-MASTER_SITES=	http://thrysoee.dk/editline/
+MASTER_SITES=	https://thrysoee.dk/editline/
 DISTNAME=	${PORTNAME}-${EDITDATE}-${EDITVERSION}
 
 MAINTAINER=	bapt@FreeBSD.org

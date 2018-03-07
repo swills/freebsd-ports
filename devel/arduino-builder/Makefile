@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/arduino-builder/Makefile 451834 2017-10-12 09:06:17Z mat $
+# $FreeBSD: head/devel/arduino-builder/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	arduino-builder
 PORTVERSION=	1.3.25
@@ -41,7 +41,7 @@ do-patch-TOOLS-on:
 			${WRKSRC}/arduino-builder.options
 
 do-build:
-	@( cd ${WRKSRC} ; ${SETENV} ${GO_ENV} go build arduino.cc/arduino-builder )
+	@( cd ${WRKSRC} ; ${SETENV} ${MAKE_ENV} ${GO_ENV} go build arduino.cc/arduino-builder )
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}

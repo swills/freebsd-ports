@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-p2p/transmission/Makefile 447965 2017-08-14 19:21:04Z crees $
+# $FreeBSD: head/net-p2p/transmission/Makefile 463262 2018-02-28 21:09:36Z crees $
 
 PORTNAME=	transmission
-PORTVERSION=	2.92
+PORTVERSION=	2.93
 CATEGORIES=	net-p2p
 
 MAINTAINER=	crees@FreeBSD.org

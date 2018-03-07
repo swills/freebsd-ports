@@ -1,12 +1,12 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11/libfm-qt/Makefile 452993 2017-10-27 15:34:46Z swills $
+# $FreeBSD: head/x11/libfm-qt/Makefile 463477 2018-03-03 09:53:42Z yuri $
 
 PORTNAME=	libfm-qt
 PORTVERSION=	0.12.0
 CATEGORIES=	x11
 MASTER_SITES=	LXQT
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	mbeis@xs4all.nl
 COMMENT=	Qt port of libfm
 
 LICENSE=	LGPL21+

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/uchiwa/Makefile 451834 2017-10-12 09:06:17Z mat $
+# $FreeBSD: head/www/uchiwa/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=		uchiwa
 PORTVERSION=	0.18.2
@@ -56,7 +56,7 @@ post-extract:
 .endfor
 
 do-build:
-	@cd ${WRKSRC}/src/github.com/sensu && ${SETENV} GOPATH=${WRKSRC} go install ./...
+	@cd ${WRKSRC}/src/github.com/sensu && ${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go install ./...
 
 do-install:
 	${MKDIR} ${STAGEDIR}${UCHIWA_LOGDIR} \

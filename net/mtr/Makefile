@@ -1,10 +1,10 @@
 # Created by: Bill Fumerola <billf@chc-chimes.com>
-# $FreeBSD: head/net/mtr/Makefile 444613 2017-06-28 23:55:41Z sunpoet $
+# $FreeBSD: head/net/mtr/Makefile 463123 2018-02-27 13:03:48Z mat $
 
 PORTNAME=	mtr
 PORTVERSION=	0.92
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.bitwizard.nl/mtr/ \
+MASTER_SITES=	https://www.bitwizard.nl/mtr/files/ \
 		LOCAL/sunpoet
 
 MAINTAINER=	sunpoet@FreeBSD.org

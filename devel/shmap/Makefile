@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/shmap/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/shmap/Makefile 463452 2018-03-02 22:34:53Z brooks $
 
 PORTNAME=	shmap
 PORTVERSION=	0.3.2
@@ -17,6 +17,7 @@ GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 USE_LDCONFIG=	yes
+CPPFLAGS+=	-D_WANT_SEMUN
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libshmap.so

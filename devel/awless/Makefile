@@ -1,5 +1,5 @@
 # Created by: Dmitri Goutnik <dg@syrec.org>
-# $FreeBSD: head/devel/awless/Makefile 459184 2018-01-16 15:38:00Z swills $
+# $FreeBSD: head/devel/awless/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	awless
 DISTVERSIONPREFIX=	v
@@ -24,7 +24,7 @@ PLIST_FILES=	bin/awless
 PORTDOCS=	README.md CHANGELOG.md
 
 do-build:
-	@(cd ${WRKSRC} && ${SETENV} GOPATH=${WRKSRC} go build -o ${PORTNAME} )
+	@(cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go build -o ${PORTNAME} )
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin

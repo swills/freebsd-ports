@@ -1,5 +1,5 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/net/remmina-plugin-rdp/Makefile 458053 2018-01-04 19:55:28Z cpm $
+# $FreeBSD: head/net/remmina-plugin-rdp/Makefile 463551 2018-03-04 05:21:09Z woodsb02 $
 
 PKGNAMESUFFIX=	-rdp
 PORTREVISION=	1
@@ -12,7 +12,5 @@ USE_GNOME+=	cairo
 USE_XORG+=	ice sm x11 xext
 
 MASTERDIR=	${.CURDIR}/../remmina-plugins
-
-PLIST_SUB+=	ICONS="" SSH=""
 
 .include "${MASTERDIR}/Makefile"

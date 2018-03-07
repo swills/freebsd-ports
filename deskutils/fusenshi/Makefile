@@ -1,5 +1,5 @@
 # Created by: Masanori OZAWA (ozawa@ongs.co.jp)
-# $FreeBSD: head/deskutils/fusenshi/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/deskutils/fusenshi/Makefile 463452 2018-03-02 22:34:53Z brooks $
 
 PORTNAME=	fusenshi
 PORTVERSION=	0.9.0
@@ -15,6 +15,7 @@ USE_CXXSTD=	c++11
 USE_GNOME=	gtkmm24 gtksourceview libxml2
 USE_XORG=	x11
 MAKE_JOBS_UNSAFE=	yes
+CXXFLAGS+=	-D_WANT_SEMUN
 
 .ifdef WITHOUT_SSL
 MAKE_ARGS+=	WITHOUT_SSL=yes

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@ccca.nctu.edu.tw>
-# $FreeBSD: head/benchmarks/super-smack/Makefile 426953 2016-11-23 18:42:58Z amdmi3 $
+# $FreeBSD: head/benchmarks/super-smack/Makefile 463452 2018-03-02 22:34:53Z brooks $
 
 PORTNAME=	super-smack
 PORTVERSION=	1.3
@@ -15,6 +15,7 @@ LICENSE=	GPLv2+
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-smacks-dir=${DATADIR}
 MAKE_JOBS_UNSAFE=	yes
+CPPFLAGS+=	-D_WANT_SEMUN
 
 PORTDOCS=	CHANGES README MANUAL TUTORIAL
 

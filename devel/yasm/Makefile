@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/yasm/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/devel/yasm/Makefile 463123 2018-02-27 13:03:48Z mat $
 
 PORTNAME=	yasm
 PORTVERSION=	1.3.0
 CATEGORIES=	devel lang
-MASTER_SITES=	http://www.tortall.net/projects/yasm/releases/
+MASTER_SITES=	https://www.tortall.net/projects/yasm/releases/
 
 MAINTAINER=	johnson.peter@gmail.com
 COMMENT=	Complete rewrite of the NASM assembler

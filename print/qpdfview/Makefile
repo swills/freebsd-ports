@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/print/qpdfview/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/print/qpdfview/Makefile 463420 2018-03-02 17:42:01Z joneum $
 
 PORTNAME=	qpdfview
 PORTVERSION=	0.4.16
@@ -8,7 +8,7 @@ CATEGORIES=	print
 MASTER_SITES=	https://launchpadlibrarian.net/226592308/ \
 		https://launchpad.net/${PORTVERSION}/trunk/${PORTVERSION}/+download/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	mbeis@xs4all.nl
 COMMENT=	Tabbed DjVu/PDF/PS document viewer
 
 LICENSE=	GPLv2+

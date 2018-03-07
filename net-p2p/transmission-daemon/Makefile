@@ -1,6 +1,5 @@
-# $FreeBSD: head/net-p2p/transmission-daemon/Makefile 459492 2018-01-20 01:20:19Z woodsb02 $
+# $FreeBSD: head/net-p2p/transmission-daemon/Makefile 463262 2018-02-28 21:09:36Z crees $
 
-PORTREVISION=	4
 PKGNAMESUFFIX=	-daemon
 
 MAINTAINER=	crees@FreeBSD.org

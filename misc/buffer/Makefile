@@ -1,5 +1,5 @@
 # Created by: Joao Carlos Mendes Luis <jonny@jonny.eng.br>
-# $FreeBSD: head/misc/buffer/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/misc/buffer/Makefile 463452 2018-03-02 22:34:53Z brooks $
 
 PORTNAME=	buffer
 PORTVERSION=	1.19
@@ -13,6 +13,7 @@ COMMENT=	Buffer sporadic I/O for faster tape and pipe throughput
 USES=		tar:tgz
 PLIST_FILES=	bin/buffer \
 		man/man1/buffer.1.gz
+CFLAGS+=	-D_WANT_SEMUN
 
 post-patch:
 	@${REINPLACE_CMD} -E \

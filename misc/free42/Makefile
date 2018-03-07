@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/free42/Makefile 462783 2018-02-24 09:28:28Z yuri $
+# $FreeBSD: head/misc/free42/Makefile 463469 2018-03-03 08:51:27Z yuri $
 
 PORTNAME=	free42
-DISTVERSION=	2.0.16
+DISTVERSION=	2.0.17
 CATEGORIES=	misc
 MASTER_SITES=	http://thomasokken.com/free42/upstream/
 DISTNAME=	${PORTNAME}-nologo-${DISTVERSION}

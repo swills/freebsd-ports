@@ -1,5 +1,5 @@
 # Created by: Jean-Sébastien Pédron <dumbbell@FreeBSD.org>
-# $FreeBSD: head/graphics/piglit/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/graphics/piglit/Makefile 463288 2018-03-01 09:21:39Z yuri $
 
 PORTNAME=	piglit
 PORTVERSION=	20170922
@@ -30,9 +30,10 @@ GH_ACCOUNT=	dumbbell
 GH_PROJECT=	piglit
 GH_TAGNAME=	60996b829c85f3df192bc6228108c0a8eaa38afd
 
-USES=		cmake:outsource compiler:c11 pkgconfig python:2.7
+USES=		cmake:outsource compiler:c11 pkgconfig python:2.7 shebangfix
 USE_GL=		egl gbm gl glu
 USE_XORG=	x11 xcb xext xrender
+SHEBANG_FILES=	piglit
 
 CMAKE_ARGS+=	-DPIGLIT_BUILD_CL_TESTS:BOOL=ON
 

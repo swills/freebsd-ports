@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/textproc/p5-XML-SAX/Makefile 461894 2018-02-15 12:46:09Z sunpoet $
+# $FreeBSD: head/textproc/p5-XML-SAX/Makefile 463111 2018-02-27 07:15:54Z pi $
 
 PORTNAME=	XML-SAX
 PORTVERSION=	1.00
@@ -20,5 +20,8 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
+SUB_FILES=	pkg-install
+SUB_LIST=	PERL=${PERL}
+PKGDEINSTALL=  ${PKGINSTALL}
 
 .include <bsd.port.mk>

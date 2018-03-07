@@ -1,9 +1,9 @@
 # Created by: Dmitri Goutnik <dg@syrec.org>
-# $FreeBSD: head/x11/alttab/Makefile 455251 2017-12-01 07:19:53Z antoine $
+# $FreeBSD: head/x11/alttab/Makefile 463466 2018-03-03 07:31:45Z yuri $
 
 PORTNAME=	alttab
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.1.0
+DISTVERSION=	1.2.0
 CATEGORIES=	x11
 
 MAINTAINER=	dg@syrec.org
@@ -25,6 +25,8 @@ GH_ACCOUNT=	sagb
 PLIST_FILES=	bin/alttab \
 		man/man1/alttab.1.gz
 
-PORTDOCS=	README xmonad.md
+PORTDOCS=	README \
+		alttab.ad \
+		wm-setup.md
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/devel/py-qt4-core/Makefile 462214 2018-02-18 09:55:10Z rakuco $
+# $FreeBSD: head/devel/py-qt4-core/Makefile 463772 2018-03-07 00:46:59Z jhale $
 
 PORTNAME=	core
-PORTREVISION=	4
+PORTREVISION=	5
 PORTEPOCH=	1
 CATEGORIES=	devel python
 
@@ -43,10 +43,10 @@ post-patch:
 post-install:
 	${INSTALL_DATA} ${FILESDIR}/Qt.py ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/PyQt4
 	${PYTHON_CMD} ${PYTHON_LIBDIR}/compileall.py \
-		-f -d ${PYTHONPREFIX_SITELIBDIR} \
+		-f -d ${PYTHONPREFIX_SITELIBDIR}/PyQt4 \
 		${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/PyQt4
 	${PYTHON_CMD} -O ${PYTHON_LIBDIR}/compileall.py \
-		-f -d ${PYTHONPREFIX_SITELIBDIR} \
+		-f -d ${PYTHONPREFIX_SITELIBDIR}/PyQt4 \
 		${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/PyQt4
 
 .include <bsd.port.post.mk>

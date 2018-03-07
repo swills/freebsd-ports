@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/git-town/Makefile 461333 2018-02-09 20:14:36Z yuri $
+# $FreeBSD: head/devel/git-town/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	git-town
 DISTVERSIONPREFIX=	v
@@ -25,7 +25,7 @@ OPTIONS_DEFINE=	DOCS
 PORTDOCS=	*
 
 do-build:
-	@cd ${WRKSRC}/${GH_SUBDIR} && ${SETENV} GOPATH=${WRKSRC} go build
+	@cd ${WRKSRC}/${GH_SUBDIR} && ${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go build
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin/

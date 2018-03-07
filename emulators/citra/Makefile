@@ -1,7 +1,7 @@
-# $FreeBSD: head/emulators/citra/Makefile 462758 2018-02-24 00:49:55Z jbeich $
+# $FreeBSD: head/emulators/citra/Makefile 463677 2018-03-06 00:58:04Z jbeich $
 
 PORTNAME=	citra
-PORTVERSION=	s20180222
+PORTVERSION=	s20180305
 PORTREVISION?=	0
 CATEGORIES=	emulators
 
@@ -26,16 +26,16 @@ ONLY_FOR_ARCHS_REASON=	https://github.com/MerryMage/dynarmic/issues/35
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	citra-emu
-GH_TAGNAME=	e51a642a
+GH_TAGNAME=	4befbddc
 GH_TUPLE=	citra-emu:ext-soundtouch:019d208:soundtouch/externals/soundtouch \
 		MerryMage:dynarmic:d1d4705:dynarmic/externals/dynarmic \
 		benhoyt:inih:r40:inih/externals/inih/inih \
 		catchorg:Catch2:v2.1.1:catch/externals/catch \
-		fmtlib:fmt:4.0.0:fmt/externals/fmt \
+		fmtlib:fmt:4.0.0-435-g4d35f94:fmt/externals/fmt \
 		herumi:xbyak:v5.53-1-gc5da377:xbyak/externals/xbyak \
 		lsalzman:enet:39a72ab:enet/externals/enet \
 		neobrain:nihstro:fd69de1:nihstro/externals/nihstro \
-		weidai11:cryptopp:CRYPTOPP_6_0_0:cryptopp/externals/cryptopp/cryptopp
+		weidai11:cryptopp:CRYPTOPP_6_1_0:cryptopp/externals/cryptopp/cryptopp
 
 USES=		cmake:outsource compiler:c++14-lang iconv localbase:ldflags
 USE_SDL=	sdl2

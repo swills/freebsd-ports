@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-browser/Makefile 452956 2017-10-26 20:05:32Z sunpoet $
+# $FreeBSD: head/www/rubygem-browser/Makefile 463251 2018-02-28 15:53:39Z sunpoet $
 
 PORTNAME=	browser
-PORTVERSION=	2.5.2
+PORTVERSION=	2.5.3
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

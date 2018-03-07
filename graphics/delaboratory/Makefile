@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/delaboratory/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/delaboratory/Makefile 463109 2018-02-27 05:35:52Z tobik $
 
 PORTNAME=	delaboratory
 PORTVERSION=	0.8
@@ -7,7 +7,7 @@ PORTREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	http://BSDforge.com/projects/source/graphics/delaboratory/
 
-MAINTAINER=	portmaster@bsdforfe.com
+MAINTAINER=	portmaster@bsdforge.com
 COMMENT=	Unique image postprocessing application
 
 LICENSE=	GPLv3+

@@ -1,11 +1,11 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/astro/cfitsio/Makefile 452871 2017-10-25 18:28:23Z sunpoet $
+# $FreeBSD: head/astro/cfitsio/Makefile 463491 2018-03-03 16:29:40Z sunpoet $
 
 PORTNAME=	cfitsio
-PORTVERSION=	3.420
+PORTVERSION=	3.430
 CATEGORIES=	astro
-MASTER_SITES=	http://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/ \
-		http://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/oldvers/ \
+MASTER_SITES=	https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/ \
+		https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/oldvers/ \
 		ftp://heasarc.gsfc.nasa.gov/software/fitsio/c/ \
 		ftp://heasarc.gsfc.nasa.gov/software/fitsio/c/oldvers/ \
 		LOCAL/sunpoet

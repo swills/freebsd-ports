@@ -1,5 +1,5 @@
 # Created by: Vladimir Timofeev <vovkasm@gmail.com>
-# $FreeBSD: head/www/p5-AnyEvent-HTTP/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-AnyEvent-HTTP/Makefile 463113 2018-02-27 09:03:01Z amdmi3 $
 
 PORTNAME=	AnyEvent-HTTP
 PORTVERSION=	2.22
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	vovkasm@gmail.com
 COMMENT=	Simple but non-blocking HTTP/HTTPS client
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-AnyEvent>=5.33:devel/p5-AnyEvent \
 		p5-common-sense>=3.3:devel/p5-common-sense

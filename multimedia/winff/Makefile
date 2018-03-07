@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/multimedia/winff/Makefile 460564 2018-02-01 07:21:46Z acm $
+# $FreeBSD: head/multimedia/winff/Makefile 463606 2018-03-04 22:31:02Z antoine $
 
 PORTNAME=	WinFF
 PORTVERSION=	1.5.5
@@ -12,6 +12,8 @@ MAINTAINER=	thierry@FreeBSD.org
 COMMENT=	Convert your videos quickly, easily, and all at once
 
 LICENSE=	GPLv3
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	lazbuild:editors/lazarus
 LIB_DEPENDS=	libavutil.so:multimedia/ffmpeg

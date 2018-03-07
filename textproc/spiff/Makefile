@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/spiff/Makefile 451834 2017-10-12 09:06:17Z mat $
+# $FreeBSD: head/textproc/spiff/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	spiff
 PORTVERSION=	1.0.8
@@ -30,7 +30,7 @@ post-patch:
 
 do-build:
 	@cd ${WRKSRC}/src/github.com/${GH_ACCOUNT}/${GH_PROJECT} ; \
-		${SETENV} GOPATH=${WRKSRC} go build spiff.go
+		${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC} go build spiff.go
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/github.com/${GH_ACCOUNT}/${GH_PROJECT}/${PORTNAME} \

@@ -1,8 +1,9 @@
 # Created by: Riaan Kruger <riaank@gmail.com>
-# $FreeBSD: head/security/strongswan/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/security/strongswan/Makefile 463768 2018-03-06 21:56:48Z yuri $
 
 PORTNAME=	strongswan
-PORTVERSION=	5.6.0
+PORTVERSION=	5.6.2
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://download.strongswan.org/ \
 		http://download2.strongswan.org/
@@ -11,6 +12,7 @@ MAINTAINER=	strongswan@nanoteq.com
 COMMENT=	Open Source IKEv2 IPsec-based VPN solution
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		cpe libtool:keepla pkgconfig tar:bzip2 ssl
 USE_RC_SUBR=	strongswan
@@ -41,7 +43,7 @@ CONFIGURE_ARGS=	--enable-kernel-pfkey \
 OPTIONS_DEFINE=	CURL EAPAKA3GPP2 EAPDYNAMIC EAPRADIUS EAPSIMFILE GCM IKEv1 \
 		IPSECKEY KERNELLIBIPSEC LOADTESTER LDAP MEDIATION MYSQL PKI SCEP SMP \
 		SQLITE SWANCTL TESTVECTOR TPM UNBOUND UNITY VICI XAUTH
-OPTIONS_DEFAULT=	IKEv1 BUILTIN PKI SWANCTL VICI
+OPTIONS_DEFAULT=	BUILTIN CURL IKEv1 PKI SWANCTL VICI
 OPTIONS_SINGLE=	PRINTF_HOOKS
 OPTIONS_SINGLE_PRINTF_HOOKS=	BUILTIN LIBC VSTR
 OPTIONS_SUB=	yes

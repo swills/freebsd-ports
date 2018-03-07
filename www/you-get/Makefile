@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/you-get/Makefile 461401 2018-02-10 16:21:10Z sunpoet $
+# $FreeBSD: head/www/you-get/Makefile 463428 2018-03-02 18:51:33Z sunpoet $
 
 PORTNAME=	you-get
-PORTVERSION=	0.4.1025
+PORTVERSION=	0.4.1040
 CATEGORIES=	www
 MASTER_SITES=	CHEESESHOP
 

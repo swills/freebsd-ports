@@ -1,7 +1,7 @@
-# $FreeBSD: head/converters/p5-Convert-Moji/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/converters/p5-Convert-Moji/Makefile 463419 2018-03-02 17:36:24Z amdmi3 $
 
 PORTNAME=	Convert-Moji
-PORTVERSION=	0.08
+PORTVERSION=	0.10
 CATEGORIES=	converters perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,6 +14,6 @@ LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	configure
-NO_ARCH=	YES
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

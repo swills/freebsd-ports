@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/elasticsearch5-x-pack/Makefile 462830 2018-02-24 14:17:41Z feld $
+# $FreeBSD: head/textproc/elasticsearch5-x-pack/Makefile 463486 2018-03-03 15:29:51Z feld $
 
 PORTNAME=	x-pack
 PORTVERSION=	5.6.8
@@ -7,7 +7,7 @@ CATEGORIES=	textproc java
 MASTER_SITES=	https://artifacts.elastic.co/downloads/packs/x-pack/
 PKGNAMEPREFIX=	elasticsearch5-
 
-MAINTAINER=	tj@FreeBSD.org
+MAINTAINER=	elastic@FreeBSD.org
 COMMENT=	Elasticsearch X-Pack plugins
 
 RUN_DEPENDS:=	elasticsearch5>=5.6.8:textproc/elasticsearch5

@@ -1,5 +1,5 @@
 # Created by: Florent Thoumie <flz@xbsd.org>
-# $FreeBSD: head/www/visitors/Makefile 348091 2014-03-13 15:48:30Z ehaupt $
+# $FreeBSD: head/www/visitors/Makefile 463723 2018-03-06 12:32:00Z tobik $
 
 PORTNAME=	visitors
 PORTVERSION=	0.7.0
@@ -8,7 +8,7 @@ CATEGORIES=	www
 MASTER_SITES=	http://www.hping.org/visitors/
 DISTNAME=	${PORTNAME}-0.7
 
-MAINTAINER=	flz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Very fast and easy to use web log analyzer
 
 WRKSRC=		${WRKDIR}/${PORTNAME}_0.7

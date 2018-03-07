@@ -1,9 +1,8 @@
 # Created by: Jaap Akkerhuis <jaap@NLnetLabs.nl>
-# $FreeBSD: head/security/softhsm2/Makefile 458409 2018-01-08 13:32:53Z pi $
+# $FreeBSD: head/security/softhsm2/Makefile 463213 2018-02-28 15:05:56Z swills $
 
 PORTNAME=	softhsm
-PORTVERSION=	2.3.0
-PORTREVISION=	2
+PORTVERSION=	2.4.0
 CATEGORIES=	security
 MASTER_SITES=	http://dist.opendnssec.org/source/ \
 		http://dist.opendnssec.org/source/testing/

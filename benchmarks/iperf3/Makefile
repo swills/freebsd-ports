@@ -1,8 +1,8 @@
 # Created by: Bruce A. Mah <bmah@FreeBSD.org>
-# $FreeBSD: head/benchmarks/iperf3/Makefile 461842 2018-02-14 21:41:46Z bmah $
+# $FreeBSD: head/benchmarks/iperf3/Makefile 463454 2018-03-03 00:16:22Z bmah $
 
 PORTNAME=	iperf
-PORTVERSION=	3.4
+PORTVERSION=	3.5
 CATEGORIES=	benchmarks ipv6
 MASTER_SITES=	http://downloads.es.net/pub/iperf/
 PKGNAMESUFFIX=	3

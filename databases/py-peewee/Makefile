@@ -1,8 +1,8 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/databases/py-peewee/Makefile 458431 2018-01-08 15:47:40Z mat $
+# $FreeBSD: head/databases/py-peewee/Makefile 463624 2018-03-05 08:06:58Z yuri $
 
 PORTNAME=	peewee
-PORTVERSION=	2.9.2
+DISTVERSION=	3.1.2
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,16 +13,19 @@ COMMENT=	Small, expressive Python ORM
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-OPTIONS_DEFINE=		DOCS SQLITE MYSQL PGSQL
+OPTIONS_DEFINE=		SQLITE MYSQL PGSQL
 OPTIONS_DEFAULT=	SQLITE
 
-NO_ARCH=	yes
-USES=		python${PY_MYSQL}
-USE_PYTHON=	autoplist distutils
+USES=			localbase python sqlite
+USE_PYTHON=		distutils cython autoplist concurrent
 
 SQLITE_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR}
 MYSQL_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=1.2.3:databases/py-MySQLdb@${FLAVOR}
-MYSQL_VARS=	PY_MYSQL=:2.7
 PGSQL_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>=2.5.1:databases/py-psycopg2@${FLAVOR}
+
+post-install:
+	@${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/playhouse/_speedups.so
+	@${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/playhouse/_sqlite_ext.so
+	@${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/playhouse/_sqlite_udf.so
 
 .include <bsd.port.mk>

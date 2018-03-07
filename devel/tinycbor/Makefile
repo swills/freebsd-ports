@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/tinycbor/Makefile 461713 2018-02-13 17:02:00Z sunpoet $
+# $FreeBSD: head/devel/tinycbor/Makefile 463055 2018-02-26 22:29:55Z sunpoet $
 
 PORTNAME=	tinycbor
 PORTVERSION=	0.5.0
@@ -22,6 +22,9 @@ USES=		gmake localbase pathfix
 GH_ACCOUNT=	intel
 GH_PROJECT=	tinycbor
 USE_GITHUB=	yes
+
+do-configure:
+	@cd ${WRKSRC}/ && ${SETENV} ${MAKE_ENV} ${MAKE_CMD} configure
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/src/tinycbor-version.h ${STAGEDIR}${PREFIX}/include/tinycbor/tinycbor-version.h

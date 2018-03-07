@@ -1,8 +1,8 @@
 # Created by: nork@cityfujisawa.ne.jp
-# $FreeBSD: head/databases/p5-DBD-SQLite/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-DBD-SQLite/Makefile 463336 2018-03-01 15:19:55Z sunpoet $
 
 PORTNAME=	DBD-SQLite
-PORTVERSION=	1.54
+PORTVERSION=	1.56
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

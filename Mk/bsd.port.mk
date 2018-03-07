@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.port.mk 462464 2018-02-20 22:58:19Z bdrewery $
+# $FreeBSD: head/Mk/bsd.port.mk 463463 2018-03-03 06:50:15Z ultima $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1679,6 +1679,11 @@ DEV_WARNING+=	"You are using USE_GITHUB and WRKSRC is set which is wrong.  Set G
 .endif
 WRKSRC?=		${WRKDIR}/${GH_PROJECT}-${GH_TAGNAME_EXTRACT}
 .endif
+
+.if !default(IGNORE_MASTER_SITE_GITLAB) && defined(USE_GITLAB) && empty(USE_GITLAB:Mnodefault)
+WRKSRC?=		${WRKDIR}/${GL_PROJECT}-${GL_COMMIT}-${GL_COMMIT}
+.endif
+
 # If the distname is not extracting into a specific subdirectory, have the
 # ports framework force extract into a subdirectory so that metadata files
 # do not get in the way of the build, and vice-versa.
@@ -2950,6 +2955,12 @@ DEPENDS_TARGET+=	install
 DEPENDS_TARGET+=	clean
 DEPENDS_ARGS+=	NOCLEANDEPENDS=yes
 .endif
+.endif
+
+.if defined(USE_GITLAB) && !${USE_GITLAB:Mnodefault} && empty(GL_COMMIT_DEFAULT)
+check-makevars::
+	@${ECHO_MSG} "GL_COMMIT is a required 40 character hash for use USE_GITLAB"
+	@${FALSE}
 .endif
 
 ################################################################
@@ -4719,6 +4730,7 @@ ${_t}:
 .endif
 .endfor
 .endif
+PORTS_ENV_VARS+=	${_EXPORTED_VARS}
 
 .if !target(pre-check-config)
 pre-check-config:

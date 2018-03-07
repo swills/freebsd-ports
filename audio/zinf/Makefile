@@ -1,5 +1,5 @@
 # Created by: Roman Shterenzon <roman@xpert.com>
-# $FreeBSD: head/audio/zinf/Makefile 433662 2017-02-08 18:08:31Z jbeich $
+# $FreeBSD: head/audio/zinf/Makefile 463452 2018-03-02 22:34:53Z brooks $
 
 PORTNAME=	zinf
 PORTVERSION=	2.2.5
@@ -20,6 +20,7 @@ CONFIGURE_ARGS=	--enable-ipv6 \
 		--disable-arts
 
 CPPFLAGS+=	-I${LOCALBASE}/include
+CPPFLAGS+=	-D_WANT_SEMUN
 LDFLAGS+=	-lpthread -L${LOCALBASE}/lib
 
 OPTIONS_DEFINE=	ESOUND VORBIS

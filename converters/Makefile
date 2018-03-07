@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/Makefile 459138 2018-01-15 23:30:33Z yuri $
+# $FreeBSD: head/converters/Makefile 463559 2018-03-04 09:10:41Z yuri $
 #
 
     COMMENT = Character code converters
@@ -159,6 +159,7 @@
     SUBDIR += py-iconv
     SUBDIR += py-rencode
     SUBDIR += py-unidecode
+    SUBDIR += py-webencodings
     SUBDIR += py-zfec
     SUBDIR += rcctools
     SUBDIR += recode

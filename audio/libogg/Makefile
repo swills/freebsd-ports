@@ -1,11 +1,12 @@
 # Created by: t.vanklaveren@student.utwente.nl
-# $FreeBSD: head/audio/libogg/Makefile 454080 2017-11-12 20:43:29Z naddy $
+# $FreeBSD: head/audio/libogg/Makefile 463123 2018-02-27 13:03:48Z mat $
 
 PORTNAME=	libogg
 PORTVERSION=	1.3.3
 PORTEPOCH=	4
 CATEGORIES=	audio
-MASTER_SITES=	http://downloads.xiph.org/releases/ogg/
+MASTER_SITES=	https://downloads.xiph.org/releases/ogg/ \
+		https://download.videolan.org/videolan/testing/contrib/ogg/
 
 MAINTAINER=	naddy@FreeBSD.org
 COMMENT=	Ogg bitstream library

@@ -1,9 +1,8 @@
 # Created by: Tim Niemueller <tim@niemueller.de>
-# $FreeBSD: head/devel/yaml-cpp/Makefile 462315 2018-02-19 13:06:40Z madpilot $
+# $FreeBSD: head/devel/yaml-cpp/Makefile 463744 2018-03-06 20:06:06Z madpilot $
 
 PORTNAME=	yaml-cpp
-PORTVERSION=	0.6.1
-PORTREVISION=	1
+PORTVERSION=	0.6.2
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	devel
 

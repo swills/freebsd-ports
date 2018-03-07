@@ -1,13 +1,11 @@
 # Created by: Yukihiro Nakai <Nakai@technologist.com>
-# $FreeBSD: head/textproc/libxml2/Makefile 456210 2017-12-13 14:46:44Z swills $
+# $FreeBSD: head/textproc/libxml2/Makefile 463123 2018-02-27 13:03:48Z mat $
 
 PORTNAME=	libxml2
 PORTVERSION=	2.9.7
 PORTREVISION?=	0
 CATEGORIES?=	textproc gnome
-MASTER_SITES=	ftp://xmlsoft.org/libxml2/ \
-		http://xmlsoft.org/sources/ \
-		ftp://gd.tuwien.ac.at/pub/libxml/
+MASTER_SITES=	http://xmlsoft.org/sources/
 DIST_SUBDIR=	gnome2
 
 MAINTAINER?=	gnome@FreeBSD.org

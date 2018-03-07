@@ -1,11 +1,12 @@
 # Created by: Michael Nottebrock <michaelnottebrock@gmx.net> et al
-# $FreeBSD: head/multimedia/xvid/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/xvid/Makefile 463123 2018-02-27 13:03:48Z mat $
 
 PORTNAME=	xvid
 PORTVERSION=	1.3.4
 PORTEPOCH=	1
 CATEGORIES=	multimedia
-MASTER_SITES=	http://downloads.xvid.org/downloads/
+MASTER_SITES=	https://downloads.xvid.com/downloads/ \
+		https://source.ipfire.org/source-2.x/
 DISTNAME=	${PORTNAME}core-${PORTVERSION}
 
 MAINTAINER=	riggs@FreeBSD.org

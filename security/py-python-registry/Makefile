@@ -1,5 +1,5 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-python-registry/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-python-registry/Makefile 463082 2018-02-26 22:32:12Z sunpoet $
 
 PORTNAME=	python-registry
 PORTVERSION=	1.2.0
@@ -12,6 +12,8 @@ COMMENT=	Read access to Windows Registry files
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
+
+RUN_DEPENDS=	${PY_ENUM34}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	williballenthin
@@ -27,12 +29,6 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 PORTDOCS=	*
 PORTEXAMPLES=	*
 
-.include <bsd.port.pre.mk>
-
-.if ${PYTHON_REL} < 3400
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}enum34>=0:devel/py-enum34@${FLAVOR}
-.endif
-
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/CHANGELOG.TXT ${WRKSRC}/CONTRIBUTORS.TXT ${WRKSRC}/README.MD \
@@ -42,4 +38,4 @@ post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_SCRIPT} ${WRKSRC}/samples/*.py ${STAGEDIR}${EXAMPLESDIR}
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/minio-client/Makefile 461510 2018-02-11 16:50:16Z riggs $
+# $FreeBSD: head/www/minio-client/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	minio-client
 PORTVERSION=	${GH_TAGNAME:S/RELEASE.//:S/Z//:S/T/-/:S/-/./g}
@@ -35,7 +35,7 @@ PLIST_FILES=	bin/${MC}
 
 do-build:
 	@cd ${WRKSRC}/src/github.com/${GH_ACCOUNT}/${GH_PROJECT}; \
-	${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -v -x \
+	${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -v -x \
 		-ldflags "-X main.GitDescribe=v${PORTVERSION}" -o bin/${MC}
 
 do-install:

@@ -1,8 +1,9 @@
 # Created by: Pietro Cerutti <gahr@FreeBSD.org>
-# $FreeBSD: head/math/ogdf/Makefile 455836 2017-12-09 10:09:04Z antoine $
+# $FreeBSD: head/math/ogdf/Makefile 463298 2018-03-01 12:09:48Z woodsb02 $
 
 PORTNAME=	ogdf
 PORTVERSION=	2015.05
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	http://www.ogdf.net/lib/exe/fetch.php/tech:
 DISTNAME=	${PORTNAME}.v${PORTVERSION}

@@ -1,9 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-aws/Makefile 460188 2018-01-28 14:07:47Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-aws/Makefile 463333 2018-03-01 15:19:39Z sunpoet $
 
 PORTNAME=	fog-aws
-PORTVERSION=	2.0.0
-PORTREVISION=	2
+PORTVERSION=	2.0.1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

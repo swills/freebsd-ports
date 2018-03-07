@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/go-appengine-sdk/Makefile 462196 2018-02-17 22:08:08Z yuri $
+# $FreeBSD: head/www/go-appengine-sdk/Makefile 463611 2018-03-04 23:14:00Z yuri $
 
 PORTNAME=	go-appengine-sdk
 DISTVERSION=	1.9.62
@@ -54,6 +54,7 @@ PORTEXAMPLES=	*
 do-build:
 	@for R in ${GAEGOROOTS}; do \
 		(cd ${WRKSRC}/$${R}/src && \
+			${SETENV} ${MAKE_ENV} \
 			GOROOT_BOOTSTRAP=${LOCALBASE}/go \
 			GOOS=${OPSYS:tl} GOARCH=${GOARCH} \
 			GO386=${GO386} \
@@ -67,7 +68,7 @@ do-build:
 	@cd ${WRKSRC} && \
 		for S in ${GAESCRIPTS} goapp; do \
 			${ECHO} "#!/bin/sh" >> $${S%.py}-go; \
-			${ECHO} "${LOCALBASE}/bin/python2.7 ${DATADIR}/$${S} \$$*" >> $${S%.py}-go; \
+			${ECHO} "${PYTHON_CMD} ${DATADIR}/$${S} \$$*" >> $${S%.py}-go; \
 		done
 
 do-install:

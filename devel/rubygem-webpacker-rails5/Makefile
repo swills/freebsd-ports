@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-webpacker-rails5/Makefile 461626 2018-02-12 19:04:18Z sunpoet $
+# $FreeBSD: head/devel/rubygem-webpacker-rails5/Makefile 463576 2018-03-04 16:11:29Z sunpoet $
 
 PORTNAME=	webpacker
-DISTVERSION=	3.2.2
+DISTVERSION=	3.3.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5
@@ -20,8 +20,5 @@ RUN_DEPENDS=	rubygem-activesupport5>=4.2:devel/rubygem-activesupport5 \
 USES=		gem
 USE_RUBY=	yes
 NO_ARCH=	yes
-
-PLIST_FILES=	bin/webpack \
-		bin/webpack-dev-server
 
 .include <bsd.port.mk>

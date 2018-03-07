@@ -1,5 +1,5 @@
 # Created by: Ulrich Spoerlein <uspoerlein@gmail.com>
-# $FreeBSD: head/sysutils/symon/Makefile 441979 2017-05-29 11:32:14Z antoine $
+# $FreeBSD: head/sysutils/symon/Makefile 463452 2018-03-02 22:34:53Z brooks $
 
 PORTNAME=	symon
 PORTVERSION=	2.87
@@ -16,6 +16,7 @@ USES=		groff perl5 shebangfix
 SHEBANG_FILES=	client/getsymonitem.pl
 USE_PERL5=	build
 MAKE_JOBS_UNSAFE=	yes
+CFLAGS+=	-D_WANT_SEMUN
 
 USERS=		_symon
 GROUPS=		_symon

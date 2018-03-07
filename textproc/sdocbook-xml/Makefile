@@ -1,12 +1,12 @@
 # Created by: KIRIYAMA Kazuhiko <kiri@FreeBSD.org>
-# $FreeBSD: head/textproc/sdocbook-xml/Makefile 415814 2016-05-24 22:32:49Z bapt $
+# $FreeBSD: head/textproc/sdocbook-xml/Makefile 463123 2018-02-27 13:03:48Z mat $
 
 PORTNAME=	sdocbook-xml
 PORTVERSION=	1.1
 PORTREVISION=	2
 PORTEPOCH=	2
 CATEGORIES=	textproc
-MASTER_SITES=	http://www.oasis-open.org/docbook/xml/simple/${PORTVERSION}/
+MASTER_SITES=	https://www.oasis-open.org/docbook/xml/simple/${PORTVERSION}/
 DISTNAME=	docbook-simple-${PORTVERSION}
 
 MAINTAINER=	gabor@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/audio/Makefile 463444 2018-03-02 19:10:48Z rene $
 #
 
     COMMENT = Audio tools
@@ -25,7 +25,6 @@
     SUBDIR += alure
     SUBDIR += amarok-kde4
     SUBDIR += amb-plugins
-    SUBDIR += amp
     SUBDIR += ample
     SUBDIR += amsynth
     SUBDIR += aqualung

@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@jelal.kn-bremen.de>
-# $FreeBSD: head/emulators/qemu-sbruno/Makefile 461603 2018-02-12 16:55:28Z brooks $
+# $FreeBSD: head/emulators/qemu-sbruno/Makefile 463452 2018-03-02 22:34:53Z brooks $
 
 PORTNAME=	qemu
 PORTVERSION=	2.11.50.g20180208
@@ -131,6 +131,7 @@ PLIST_SUB+=	STATIC=""
 WITHOUT_CPU_CFLAGS=yes	#to avoid problems with register allocation
 CFLAGS:=	${CFLAGS:C/-fno-tree-vrp//}
 CFLAGS+=	-Wno-address-of-packed-member
+CFLAGS+=	-D_WANT_SEMUN
 CONFIGURE_ARGS+=	--prefix=${PREFIX} --cc=${CC} --enable-docs \
 	--disable-linux-user --disable-linux-aio \
 	--disable-kvm --disable-xen \

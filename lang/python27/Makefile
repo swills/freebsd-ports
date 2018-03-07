@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/python27/Makefile 462630 2018-02-22 19:50:54Z sunpoet $
+# $FreeBSD: head/lang/python27/Makefile 463375 2018-03-02 06:54:14Z antoine $
 
 PORTNAME=	python
 PORTVERSION=	${PYTHON_PORTVERSION}
@@ -17,9 +17,7 @@ LICENSE=	PSFL
 USES=		cpe ncurses pathfix pkgconfig readline:port shebangfix ssl tar:xz
 PATHFIX_MAKEFILEIN=	Makefile.pre.in
 USE_LDCONFIG=	yes
-CFLAGS+=	-I${OPENSSLINC}
 GNU_CONFIGURE=	yes
-LIBS+=		-L${OPENSSLLIB}
 python_CMD=	${PREFIX}/bin/python${PYTHON_PORTVERSION:R}
 SHEBANG_FILES=	Lib/lib2to3/pgen2/*.py Lib/lib2to3/tests/*.py Lib/lib2to3/tests/data/*.py \
 		Lib/idlelib/*.py Lib/encodings/*.py Lib/test/*.py Lib/UserString.py \

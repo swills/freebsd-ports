@@ -1,5 +1,5 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/net/remmina-plugin-vnc/Makefile 442289 2017-06-01 14:21:26Z woodsb02 $
+# $FreeBSD: head/net/remmina-plugin-vnc/Makefile 463551 2018-03-04 05:21:09Z woodsb02 $
 
 PKGNAMESUFFIX=	-vnc
 
@@ -13,7 +13,5 @@ USES=		jpeg
 USE_GNOME+=	cairo
 
 MASTERDIR=	${.CURDIR}/../remmina-plugins
-
-PLIST_SUB+=	ICONS="" SSH=""
 
 .include "${MASTERDIR}/Makefile"

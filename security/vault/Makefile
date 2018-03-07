@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/vault/Makefile 461980 2018-02-16 04:24:49Z swills $
+# $FreeBSD: head/security/vault/Makefile 463776 2018-03-07 08:06:24Z yuri $
 
 PORTNAME=	vault
 PORTVERSION=	0.9.3
@@ -27,7 +27,7 @@ PLIST_FILES=	bin/${PORTNAME}
 
 do-build:
 	@cd ${WRKSRC}; \
-		${SETENV} ${BUILD_ENV} CGO_ENABLED=0 GOPATH=${WRKSRC} \
+		${SETENV} ${MAKE_ENV} ${BUILD_ENV} CGO_ENABLED=0 GOPATH=${WRKSRC} \
 		go build \
 		-ldflags "\
 		-X github.com/hashicorp/vault/version.Version=${PORTVERSION} \

@@ -1,5 +1,5 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/net-p2p/transmission-remote-gui/Makefile 460565 2018-02-01 07:22:34Z acm $
+# $FreeBSD: head/net-p2p/transmission-remote-gui/Makefile 463622 2018-03-05 06:58:05Z antoine $
 
 PORTNAME=	transmission-remote-gui
 PORTVERSION=	5.0.1
@@ -10,6 +10,8 @@ DISTNAME=	transgui-${PORTVERSION}-src
 
 MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Remote GUI for transmission daemon
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	lazbuild:editors/lazarus \
 		fpcres:lang/fpc-utils

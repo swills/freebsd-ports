@@ -1,15 +1,19 @@
-# $FreeBSD: head/print/cups-bjnp/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/cups-bjnp/Makefile 463166 2018-02-27 23:13:27Z danilo $
 
 PORTNAME=	cups-bjnp
-PORTVERSION=	2.0
-PORTREVISION=	2
+PORTVERSION=	2.0.1
 CATEGORIES=	print
 MASTER_SITES=	SF
 
 MAINTAINER=	danilo@FreeBSD.org
 COMMENT=	CUPS backend for Canon USB over IP protocol
 
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 LIB_DEPENDS=	libcups.so:print/cups
+
+PLIST_FILES=	libexec/cups/backend/bjnp
 
 GNU_CONFIGURE=	yes
 # Just to avoid a tautological pointer compare in bjnp-commands.c:187

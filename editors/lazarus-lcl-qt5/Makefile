@@ -1,5 +1,5 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/editors/lazarus-lcl-qt5/Makefile 460559 2018-02-01 07:17:13Z acm $
+# $FreeBSD: head/editors/lazarus-lcl-qt5/Makefile 463097 2018-02-26 23:10:53Z antoine $
 
 PKGNAMESUFFIX=	-lcl-qt5
 
@@ -7,8 +7,8 @@ COMMENT=	Lazarus components library - QT5 backend
 
 BUILD_DEPENDS=	${LCL_UNITS_DIR}/alllclunits.ppu:editors/lazarus-lcl-units
 
-USE_FPC=	fcl-base fcl-db fcl-image fcl-registry fcl-res \
-		fcl-xml pasjpeg x11
+USE_FPC=	chm fcl-base fcl-db fcl-image fcl-json fcl-registry fcl-res \
+		fcl-xml pasjpeg regexpr x11
 
 LCL_INTERFACE=	qt5
 
