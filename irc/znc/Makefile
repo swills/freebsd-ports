@@ -1,9 +1,8 @@
 # Created by: elvstone@gmail.com
-# $FreeBSD: head/irc/znc/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/irc/znc/Makefile 463857 2018-03-08 01:31:50Z bdrewery $
 
 PORTNAME=	znc
-PORTVERSION=	1.6.5
-PORTREVISION=	4
+PORTVERSION=	1.6.6
 CATEGORIES=	irc ipv6
 MASTER_SITES=	http://znc.in/releases/ \
 		http://znc.in/releases/archive/

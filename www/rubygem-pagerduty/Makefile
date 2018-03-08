@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-pagerduty/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/www/rubygem-pagerduty/Makefile 463807 2018-03-07 16:48:09Z sunpoet $
 
 PORTNAME=	pagerduty
-PORTVERSION=	2.1.0
+PORTVERSION=	2.1.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

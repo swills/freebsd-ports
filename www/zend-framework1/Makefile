@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/www/zend-framework1/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/zend-framework1/Makefile 463885 2018-03-08 12:12:29Z wg $
 
 PORTNAME=	ZendFramework
 PORTVERSION=	1.12.16
@@ -7,7 +7,7 @@ CATEGORIES=	www
 MASTER_SITES=	https://packages.zendframework.com/releases/${DISTNAME}/
 PKGNAMESUFFIX=	1
 
-MAINTAINER=	wg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Framework for developing PHP web applications
 
 LICENSE=	BSD3CLAUSE

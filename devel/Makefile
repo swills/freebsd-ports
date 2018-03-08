@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 463671 2018-03-05 21:43:08Z dvl $
+# $FreeBSD: head/devel/Makefile 463833 2018-03-07 21:34:03Z feld $
 #
 
     COMMENT = Development utilities
@@ -4594,6 +4594,7 @@
     SUBDIR += py-magic
     SUBDIR += py-mailcap-fix
     SUBDIR += py-manuel
+    SUBDIR += py-marshmallow
     SUBDIR += py-matrix-angular-sdk
     SUBDIR += py-mccabe
     SUBDIR += py-mdv

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 463741 2018-03-06 19:21:41Z antoine $
+# $FreeBSD: head/sysutils/Makefile 463865 2018-03-08 05:16:46Z tobik $
 #
 
     COMMENT = System utilities
@@ -1078,6 +1078,7 @@
     SUBDIR += rubygem-yell
     SUBDIR += rundeck
     SUBDIR += runit
+    SUBDIR += runit-faster
     SUBDIR += runwhen
     SUBDIR += s6
     SUBDIR += s6-rc

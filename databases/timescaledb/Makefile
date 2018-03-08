@@ -1,8 +1,8 @@
 # Created by: Kevin Bowling <kbowling@freebsd.org>
-# $FreeBSD: head/databases/timescaledb/Makefile 457049 2017-12-23 13:11:09Z swills $
+# $FreeBSD: head/databases/timescaledb/Makefile 463860 2018-03-08 03:01:58Z swills $
 
 PORTNAME=	timescaledb
-PORTVERSION=	0.8.0
+PORTVERSION=	0.9.0
 CATEGORIES=	databases
 
 MAINTAINER=	kbowling@FreeBSD.org
@@ -23,22 +23,24 @@ SUB_LIST+=	PORTVERSION=${PORTVERSION}
 SUB_FILES=	pkg-message
 
 PLIST_FILES=	lib/postgresql/timescaledb.so \
-		share/postgresql/extension/timescaledb--0.1.0--0.2.0.sql \
-		share/postgresql/extension/timescaledb--0.2.0--0.3.0.sql \
-		share/postgresql/extension/timescaledb--0.3.0--0.4.0.sql \
-		share/postgresql/extension/timescaledb--0.4.0--0.4.1.sql \
-		share/postgresql/extension/timescaledb--0.4.1--0.4.2.sql \
-		share/postgresql/extension/timescaledb--0.4.2--0.5.0.sql \
-		share/postgresql/extension/timescaledb--0.5.0--0.6.0.sql \
-		share/postgresql/extension/timescaledb--0.6.0--0.6.1.sql \
-		share/postgresql/extension/timescaledb--0.6.1--0.7.0.sql \
-		share/postgresql/extension/timescaledb--0.6.1--0.7.1.sql \
-		share/postgresql/extension/timescaledb--0.7.0--0.7.1.sql \
-		share/postgresql/extension/timescaledb--0.7.1--0.8.0.sql \
-		share/postgresql/extension/timescaledb--0.8.0.sql \
+		lib/postgresql/timescaledb-0.9.0.so \
+		share/postgresql/extension/timescaledb--0.1.0--0.9.0.sql \
+		share/postgresql/extension/timescaledb--0.2.0--0.9.0.sql \
+		share/postgresql/extension/timescaledb--0.3.0--0.9.0.sql \
+		share/postgresql/extension/timescaledb--0.4.0--0.9.0.sql \
+		share/postgresql/extension/timescaledb--0.4.1--0.9.0.sql \
+		share/postgresql/extension/timescaledb--0.4.2--0.9.0.sql \
+		share/postgresql/extension/timescaledb--0.5.0--0.9.0.sql \
+		share/postgresql/extension/timescaledb--0.6.0--0.9.0.sql \
+		share/postgresql/extension/timescaledb--0.6.1--0.9.0.sql \
+		share/postgresql/extension/timescaledb--0.7.0--0.9.0.sql \
+		share/postgresql/extension/timescaledb--0.7.1--0.9.0.sql \
+		share/postgresql/extension/timescaledb--0.8.0--0.9.0.sql \
+		share/postgresql/extension/timescaledb--0.9.0.sql \
 		share/postgresql/extension/timescaledb.control
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/postgresql/timescaledb.so
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/postgresql/timescaledb-0.9.0.so
 
 .include <bsd.port.mk>

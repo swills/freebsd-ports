@@ -1,4 +1,4 @@
-# $FreeBSD: head/ftp/Makefile 463621 2018-03-05 06:01:46Z yuri $
+# $FreeBSD: head/ftp/Makefile 463889 2018-03-08 14:01:11Z miwi $
 #
 
     COMMENT = FTP client and server utilities
@@ -86,6 +86,7 @@
     SUBDIR += py-pycurl
     SUBDIR += py-pyftpdlib
     SUBDIR += py-requests-ftp
+    SUBDIR += py-sftp
     SUBDIR += py-tftpy
     SUBDIR += quftp
     SUBDIR += rexx-curl

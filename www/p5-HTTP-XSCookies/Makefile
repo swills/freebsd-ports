@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-XSCookies/Makefile 446678 2017-07-26 18:20:25Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-XSCookies/Makefile 463897 2018-03-08 15:38:06Z sunpoet $
 
 PORTNAME=	HTTP-XSCookies
-PORTVERSION=	0.000014
+PORTVERSION=	0.000016
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

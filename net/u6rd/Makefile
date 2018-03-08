@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/u6rd/Makefile 451626 2017-10-09 17:25:02Z ume $
+# $FreeBSD: head/net/u6rd/Makefile 463858 2018-03-08 02:33:04Z ume $
 
 PORTNAME=	u6rd
 PORTVERSION=	1.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net ipv6
 MASTER_SITES=	http://ftp.scythe.jp/pub/u6rd/release/
 

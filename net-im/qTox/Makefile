@@ -1,10 +1,11 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net-im/qTox/Makefile 463597 2018-03-04 19:21:39Z yuri $
+# $FreeBSD: head/net-im/qTox/Makefile 463830 2018-03-07 20:58:18Z thierry $
 
 PORTNAME=	qTox
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.13.0-134
 DISTVERSIONSUFFIX=	-g3780acff
+PORTREVISION=	1
 CATEGORIES=	net-im net-p2p
 
 MAINTAINER=	yuri@FreeBSD.org

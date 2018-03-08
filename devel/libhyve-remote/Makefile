@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/libhyve-remote/Makefile 455701 2017-12-07 09:41:00Z araujo $
+# $FreeBSD: head/devel/libhyve-remote/Makefile 463820 2018-03-07 18:31:58Z araujo $
 
 PORTNAME=	libhyve-remote
 PORTVERSION=	0.1.4.1
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	araujo@FreeBSD.org
@@ -33,7 +34,7 @@ LIB_FILES=	lib/libhyverem.so.1	\
 PLIST_DIRS=	${LOCALBASE}/include/libhyverem
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	araujobsd
+GH_ACCOUNT=	freenas
 
 USE_LDCONFIG=	yes
 

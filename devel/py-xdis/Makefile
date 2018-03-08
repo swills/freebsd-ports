@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-xdis/Makefile 461402 2018-02-10 16:21:15Z sunpoet $
+# $FreeBSD: head/devel/py-xdis/Makefile 463899 2018-03-08 15:38:16Z sunpoet $
 
 PORTNAME=	xdis
-PORTVERSION=	3.6.11
+PORTVERSION=	3.7.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -10,10 +10,8 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Cross-Python bytecode Disassembler and Marshal routines
 
-LICENSE=	GPLv2 MIT
-LICENSE_COMB=	dual
-LICENSE_FILE_GPLv2=	${WRKSRC}/LICENSE.gpl2
-LICENSE_FILE_MIT=	${WRKSRC}/LICENSE.mit
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-runner>=0:devel/py-pytest-runner@${FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=0:devel/py-click@${FLAVOR} \
