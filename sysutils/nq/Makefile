@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/nq/Makefile 457206 2017-12-25 05:22:18Z tobik $
+# $FreeBSD: head/sysutils/nq/Makefile 463788 2018-03-07 11:33:21Z tobik $
 
 PORTNAME=	nq
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.2.2
+DISTVERSION=	0.3.1
 CATEGORIES=	sysutils
 
 MAINTAINER=	tobik@FreeBSD.org

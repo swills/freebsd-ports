@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/polybar/Makefile 458712 2018-01-11 06:23:22Z tobik $
+# $FreeBSD: head/x11/polybar/Makefile 463873 2018-03-08 08:25:26Z yuri $
 
 PORTNAME=	polybar
 DISTVERSION=	3.1.0
+PORTREVISION=	1
 CATEGORIES=	x11
 
 MAINTAINER=	capt_redbeard@protonmail.com

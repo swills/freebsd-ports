@@ -1,14 +1,17 @@
 # Created by: trevor
-# $FreeBSD: head/x11-wm/aewm/Makefile 396825 2015-09-13 14:11:08Z bapt $
+# $FreeBSD: head/x11-wm/aewm/Makefile 463883 2018-03-08 09:33:08Z amdmi3 $
 
 PORTNAME=	aewm
 PORTVERSION=	1.2.7
 PORTREVISION=	5
 CATEGORIES=	x11-wm
-MASTER_SITES=	http://www.red-bean.com/decklin/aewm/
+MASTER_SITES=	https://www.red-bean.com/decklin/aewm/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	ICCCM-compliant window manager based on 9wm
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 OPTIONS_DEFINE=	DOCS GTK2 XFT
 

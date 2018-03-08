@@ -1,10 +1,9 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/net-im/toxic/Makefile 462333 2018-02-19 16:20:42Z mat $
+# $FreeBSD: head/net-im/toxic/Makefile 463829 2018-03-07 20:57:27Z thierry $
 
 PORTNAME=	toxic
-PORTVERSION=	0.8.1
+PORTVERSION=	0.8.2
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	net-im
 
 MAINTAINER=	thierry@FreeBSD.org

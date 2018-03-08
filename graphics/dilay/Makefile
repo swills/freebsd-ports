@@ -1,9 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/dilay/Makefile 459137 2018-01-15 23:25:18Z yuri $
+# $FreeBSD: head/graphics/dilay/Makefile 463779 2018-03-07 08:54:31Z yuri $
 
 PORTNAME=	dilay
-DISTVERSION=	1.6.1-11
-DISTVERSIONSUFFIX=	-g1c129887  # master has the fix for missing #include
+DISTVERSION=	1.7.0
 CATEGORIES=	graphics
 
 MAINTAINER=	yuri@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: Shell Hung <shell@shellhung.org>
-# $FreeBSD: head/devel/p5-Test-Simple/Makefile 463751 2018-03-06 20:31:46Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-Simple/Makefile 463906 2018-03-08 15:38:52Z sunpoet $
 
 PORTNAME=	Test-Simple
-PORTVERSION=	1.302128
+PORTVERSION=	1.302130
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

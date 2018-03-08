@@ -1,7 +1,8 @@
-# $FreeBSD: head/java/openjfx8-scenebuilder/Makefile 460609 2018-02-01 15:19:45Z tobik $
+# $FreeBSD: head/java/openjfx8-scenebuilder/Makefile 463884 2018-03-08 10:34:54Z tobik $
 
 PORTNAME=	openjfx8
 DISTVERSION=	8u172-b03
+PORTREVISION=	1
 CATEGORIES=	java x11-toolkits devel
 MASTER_SITES=	https://github.com/t6/openjfx/releases/download/release/ \
 		http://hg.openjdk.java.net/openjfx/8u/rt/archive/${DISTVERSION}${EXTRACT_SUFX}?dummy=/
@@ -20,6 +21,8 @@ USE_JAVA=	yes
 JAVA_VERSION=	1.8+
 
 ALL_TARGET=	jar-sb
+DESKTOP_ENTRIES=	"JavaFX Scene Builder" "JavaFX Scene Builder" \
+			"" "scenebuilder" "Development;GUIDesigner;" false
 NO_ARCH=	yes
 PLIST_FILES=	bin/scenebuilder \
 		${JAVAJARDIR}/SceneBuilderApp.jar \

@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/py-certbot-dns-route53/Makefile 462785 2018-02-24 09:54:58Z mat $
+# $FreeBSD: head/security/py-certbot-dns-route53/Makefile 463891 2018-03-08 14:49:08Z miwi $
 
 PORTNAME=	certbot-dns-route53
 PORTVERSION=	${ACME_VERSION}
-PORTREVISION=	1
+PORTREVISION=	0
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

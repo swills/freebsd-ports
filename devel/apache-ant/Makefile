@@ -1,8 +1,8 @@
 # Created by: Ernst de Haan <znerd@FreeBSD.org>
-# $FreeBSD: head/devel/apache-ant/Makefile 420764 2016-08-24 06:04:30Z jkim $
+# $FreeBSD: head/devel/apache-ant/Makefile 463792 2018-03-07 14:00:28Z joneum $
 
 PORTNAME=	apache-ant
-PORTVERSION=	1.9.7
+DISTVERSION=	1.10.1
 CATEGORIES=	devel java
 MASTER_SITES=	APACHE/ant/binaries/:bin \
 		LOCAL/hq:man
@@ -17,7 +17,7 @@ LICENSE=	APACHE20
 
 OPTIONS_DEFINE=	DOCS
 
-ANT_DISTFILE=	${PORTNAME}-${PORTVERSION}-bin.tar.bz2
+ANT_DISTFILE=	${PORTNAME}-${DISTVERSION}-bin.tar.bz2
 MANPAGE_DISTFILE=	${PORTNAME}-manpage-${MANPAGE_VERSION}.tgz
 MANPAGE_VERSION=	20030908
 USES=		tar:bzip2
@@ -32,7 +32,7 @@ READMES=	LICENSE README WHATSNEW
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MDOCS}
-DISTFILES+=	${PORTNAME}-${PORTVERSION}-manual.tar.bz2:doc
+DISTFILES+=	${PORTNAME}-${DISTVERSION}-manual.tar.bz2:doc
 MASTER_SITES+=	APACHE/ant/manual/:doc
 PORTDOCS=	*
 .endif

@@ -1,12 +1,13 @@
 # Created by: Alan Eldridge <alane@FreeBSD.org>
-# $FreeBSD: head/www/firefox/Makefile 463675 2018-03-06 00:56:50Z jbeich $
+# $FreeBSD: head/www/firefox/Makefile 463894 2018-03-08 15:26:51Z jbeich $
 
 PORTNAME=	firefox
 DISTVERSION=	59.0
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	www ipv6
 MASTER_SITES=	https://hg.mozilla.org/releases/mozilla-release/archive/
-DISTNAME=	${MASTER_SITES:M*hg*:S,/archive/,,:T}-2f6a4d2cf42c9d59626061d45c043817cb220814
+DISTNAME=	${MASTER_SITES:M*hg*:S,/archive/,,:T}-e9128973a480c8aedf3a2e1c67d3e168613fa17c
 DISTFILES=	${DISTNAME:C/.*-//}${EXTRACT_SUFX}
 DIST_SUBDIR=	firefox
 

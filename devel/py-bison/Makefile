@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/py-bison/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-bison/Makefile 463852 2018-03-08 00:54:35Z dbaio $
 
 PORTNAME=	bison
 PORTVERSION=	0.1.8
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel python
 MASTER_SITES=	http://freenet.mcnabhosting.com/python/pybison/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -30,10 +30,10 @@ PORTEXAMPLES=	*
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/bison_.so
-ports-install-DOCS-on:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	@(cd ${WRKSRC}/doc && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR})
-ports-install-EXAMPLES-on:
+post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	@(cd ${WRKSRC}/examples && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR})
 

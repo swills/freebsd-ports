@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-mgmt/icingaweb2-module-grafana/Makefile 459411 2018-01-19 13:00:41Z lme $
+# $FreeBSD: head/net-mgmt/icingaweb2-module-grafana/Makefile 463871 2018-03-08 08:07:29Z lme $
 
 PORTNAME=	icingaweb2-module-grafana
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.1.10
+DISTVERSION=	1.2.0
 CATEGORIES=	net-mgmt www
 
 MAINTAINER=	lme@FreeBSD.org

@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/obs-studio/Makefile 461295 2018-02-09 13:07:41Z vanilla $
+# $FreeBSD: head/multimedia/obs-studio/Makefile 463886 2018-03-08 12:43:48Z vanilla $
 
 PORTNAME=	obs-studio
-PORTVERSION=	21.0.2
+PORTVERSION=	21.0.3
 CATEGORIES=	multimedia
 
 MAINTAINER=	ports@FreeBSD.org

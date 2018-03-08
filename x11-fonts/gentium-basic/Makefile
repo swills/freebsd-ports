@@ -1,5 +1,5 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/x11-fonts/gentium-basic/Makefile 420964 2016-08-27 09:24:50Z matthew $
+# $FreeBSD: head/x11-fonts/gentium-basic/Makefile 463784 2018-03-07 09:33:07Z amdmi3 $
 
 PORTNAME=	GentiumBasic
 PORTVERSION=	1102
@@ -35,6 +35,8 @@ OPTIONS_DEFINE=	DOCS
 do-install:
 	@${MKDIR} ${STAGEDIR}${FONTSDIR}
 	${INSTALL_DATA} ${WRKSRC}/*.ttf ${STAGEDIR}${FONTSDIR}
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${DOCSLIST:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
 

@@ -1,5 +1,5 @@
 # Created by: Udo Schweigert
-# $FreeBSD: head/mail/mutt/Makefile 463549 2018-03-04 03:50:50Z yuri $
+# $FreeBSD: head/mail/mutt/Makefile 463821 2018-03-07 18:52:13Z yuri $
 
 PORTNAME=	mutt
 DISTVERSION=	1.9.4
@@ -196,6 +196,7 @@ NNTP_PATCHFILES=	patch-${VVV_PATCH_VERSION}.vvv.nntp.gz:-p1:vvv
 NNTP_CONFIGURE_ON=	--enable-nntp
 NNTP_VARS=	XML_NEEDED=yes
 NNTP_CATEGORIES=	news
+NNTP_USES=	perl5
 
 DOCS_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-doc-ref
 

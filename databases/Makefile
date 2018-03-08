@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 463711 2018-03-06 11:50:12Z girgen $
+# $FreeBSD: head/databases/Makefile 463834 2018-03-07 21:36:03Z feld $
 #
 
     COMMENT = Databases and related software
@@ -791,6 +791,7 @@
     SUBDIR += py-kyotocabinet
     SUBDIR += py-leveldb
     SUBDIR += py-lmdb
+    SUBDIR += py-marshmallow-sqlalchemy
     SUBDIR += py-motor
     SUBDIR += py-mycli
     SUBDIR += py-mysql-connector-python

@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/py-certbot-dns-dnsimple/Makefile 462697 2018-02-23 13:33:29Z mat $
+# $FreeBSD: head/security/py-certbot-dns-dnsimple/Makefile 463891 2018-03-08 14:49:08Z miwi $
 
 PORTNAME=	certbot-dns-dnsimple
 PORTVERSION=	${ACME_VERSION}
-PORTREVISION=	1
+PORTREVISION=	0
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

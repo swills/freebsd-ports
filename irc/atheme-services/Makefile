@@ -1,8 +1,8 @@
 # Created by: tdb
-# $FreeBSD: head/irc/atheme-services/Makefile 428616 2016-12-15 13:38:21Z misha $
+# $FreeBSD: head/irc/atheme-services/Makefile 463801 2018-03-07 15:23:23Z tdb $
 
 PORTNAME=	atheme-services
-PORTVERSION=	7.2.7
+PORTVERSION=	7.2.9
 CATEGORIES=	irc ipv6 net
 MASTER_SITES=	https://github.com/atheme/atheme/releases/download/v${PORTVERSION}/
 DISTNAME=	atheme-${PORTVERSION}

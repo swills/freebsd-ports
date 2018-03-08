@@ -1,8 +1,8 @@
 # Created by: tdb
-# $FreeBSD: head/devel/libmowgli2/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/devel/libmowgli2/Makefile 463800 2018-03-07 15:22:03Z tdb $
 
 PORTNAME=	libmowgli2
-PORTVERSION=	2.1.0
+PORTVERSION=	2.1.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
