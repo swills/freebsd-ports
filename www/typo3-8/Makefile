@@ -1,11 +1,11 @@
 # Created by: Helmut Ritter <freebsd-ports@charlieroot.de>
-# $FreeBSD: head/www/typo3-8/Makefile 461253 2018-02-08 18:02:03Z joneum $
+# $FreeBSD: head/www/typo3-8/Makefile 463918 2018-03-08 19:54:40Z mat $
 
 PORTNAME=	typo3
 PORTVERSION=	${PORT_V_MAJOR}.${PORT_V_MINOR}.${PORT_V_PATCH}
 CATEGORIES=	www
 MASTER_SITES=	https://typo3.azureedge.net/typo3/${PORTVERSION}/
-PKGNAMESUFFIX=	-${PORT_V_MAJOR}
+PKGNAMESUFFIX=	-${PORT_V_MAJOR}${PHP_PKGNAMESUFFIX}
 
 MAINTAINER=	freebsd-ports@charlieroot.de
 COMMENT=	Typo3 content management system
@@ -17,7 +17,7 @@ IGNORE_WITH_PHP=	56
 
 PORTSCOUT=	limit:^${PORT_V_MAJOR}\.${PORT_V_MINOR}\.
 
-USES=		cpe php:web shebangfix
+USES=		cpe php:web,flavors shebangfix
 SHEBANG_GLOB=	*.sh *.php
 NO_BUILD=	yes
 NO_ARCH=	yes

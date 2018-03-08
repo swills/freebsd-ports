@@ -1,5 +1,5 @@
 # Created by: Sahil Tandon <sahil@tandon.net>
-# $FreeBSD: head/security/mailzu/Makefile 455267 2017-12-01 11:16:19Z amdmi3 $
+# $FreeBSD: head/security/mailzu/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	mailzu
 DISTVERSION=	0.8rc3
@@ -15,10 +15,10 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${LOCALBASE}/sbin/amavisd:security/amavisd-new \
-		${PEARDIR}/DB.php:databases/pear-DB \
-		${PEARDIR}/Mail/mime.php:mail/pear-Mail_Mime \
-		${PEARDIR}/Net/Socket.php:net/pear-Net_Socket \
-		${PEARDIR}/Mail/mimeDecode.php:mail/pear-Mail_mimeDecode
+		${PEARDIR}/DB.php:databases/pear-DB@${PHP_FLAVOR} \
+		${PEARDIR}/Mail/mime.php:mail/pear-Mail_Mime@${PHP_FLAVOR} \
+		${PEARDIR}/Net/Socket.php:net/pear-Net_Socket@${PHP_FLAVOR} \
+		${PEARDIR}/Mail/mimeDecode.php:mail/pear-Mail_mimeDecode@${PHP_FLAVOR}
 
 PEARDIR?=	${LOCALBASE}/share/pear
 PLIST_SUB=	WWWOWN="${WWWOWN}" WWWGRP="${WWWGRP}"

@@ -1,5 +1,5 @@
 # Created by: Johann Visagie <wjv@FreeBSD.org>
-# $FreeBSD: head/www/phpbb/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/phpbb/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	phpbb
 PORTVERSION=	2.0.23
@@ -12,11 +12,11 @@ COMMENT=	PHP-based bulletin board / discussion forum system
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${LOCALBASE}/share/pear/System.php:devel/pear
+RUN_DEPENDS=	${LOCALBASE}/share/pear/System.php:devel/pear@${PHP_FLAVOR}
 
 CONFLICTS=	phpbb-tw-[0-9]*
 
-USES=		tar:bzip2
+USES=		tar:bzip2 php
 
 # The phpBB2 port supports a number of variables that may be tweaked at build
 # time.  Perform a "make options" to see more information on these variables.

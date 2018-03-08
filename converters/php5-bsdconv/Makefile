@@ -1,11 +1,11 @@
 # Created by: buganini@gmail.com
-# $FreeBSD: head/converters/php5-bsdconv/Makefile 461158 2018-02-07 17:46:10Z mat $
+# $FreeBSD: head/converters/php5-bsdconv/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	bsdconv
 PORTVERSION=	11.3.0
 PORTREVISION=	1
 CATEGORIES=	converters
-PKGNAMEPREFIX=	php5-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	buganini@gmail.com
 COMMENT=	PHP wrapper for bsdconv

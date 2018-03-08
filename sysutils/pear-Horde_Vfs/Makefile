@@ -1,9 +1,9 @@
-# $FreeBSD: head/sysutils/pear-Horde_Vfs/Makefile 435605 2017-03-07 14:22:52Z mm $
+# $FreeBSD: head/sysutils/pear-Horde_Vfs/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Horde_Vfs
 PORTVERSION=	2.4.0
 CATEGORIES=	sysutils www pear
-PKGNAMEPREFIX=	pear-
+PKGNAMEPREFIX=	${PEAR_PKGNAMEPREFIX}
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde Virtual File System API

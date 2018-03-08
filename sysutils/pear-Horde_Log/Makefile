@@ -1,10 +1,10 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/sysutils/pear-Horde_Log/Makefile 435605 2017-03-07 14:22:52Z mm $
+# $FreeBSD: head/sysutils/pear-Horde_Log/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Horde_Log
 PORTVERSION=	2.3.0
 CATEGORIES=	sysutils www pear
-PKGNAMEPREFIX=	pear-
+PKGNAMEPREFIX=	${PEAR_PKGNAMEPREFIX}
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde Logging library

@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/textproc/pear-Structures_DataGrid_DataSource_XML/Makefile 461158 2018-02-07 17:46:10Z mat $
+# $FreeBSD: head/textproc/pear-Structures_DataGrid_DataSource_XML/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Structures_DataGrid_DataSource_XML
 PORTVERSION=	0.2.0
@@ -8,8 +8,8 @@ CATEGORIES=	textproc databases www pear
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	DataSource driver using XML files
 
-BUILD_DEPENDS=	${PEARDIR}/Structures/DataGrid/DataSource/Array.php:databases/pear-Structures_DataGrid_DataSource_Array
-RUN_DEPENDS=	${PEARDIR}/Structures/DataGrid/DataSource/Array.php:databases/pear-Structures_DataGrid_DataSource_Array
+BUILD_DEPENDS=	${PEARDIR}/Structures/DataGrid/DataSource/Array.php:databases/pear-Structures_DataGrid_DataSource_Array@${PHP_FLAVOR}
+RUN_DEPENDS=	${PEARDIR}/Structures/DataGrid/DataSource/Array.php:databases/pear-Structures_DataGrid_DataSource_Array@${PHP_FLAVOR}
 
 USES=	pear
 USE_PHP=	mysql

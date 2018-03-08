@@ -1,9 +1,8 @@
-# $FreeBSD: head/databases/pear-Horde_Db/Makefile 435605 2017-03-07 14:22:52Z mm $
+# $FreeBSD: head/databases/pear-Horde_Db/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Horde_Db
 PORTVERSION=	2.4.0
 CATEGORIES=	databases www pear
-PKGNAMEPREFIX=	pear-
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde Database Libraries

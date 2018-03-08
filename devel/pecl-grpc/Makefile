@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/pecl-grpc/Makefile 460863 2018-02-04 03:07:18Z vanilla $
+# $FreeBSD: head/devel/pecl-grpc/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	grpc
 PORTVERSION=	1.9.0
@@ -18,4 +18,10 @@ BROKEN_powerpc64=	fails to compile: cc1: error: unrecognized command line option
 
 USES=		php:pecl
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${FLAVOR} == php72 && ${ARCH} == i386
+BROKEN=		error: fastcall calling convention ignored on variadic function [-Werror,-Wignored-attributes]
+.endif
+
+.include <bsd.port.post.mk>

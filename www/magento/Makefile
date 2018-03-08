@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/www/magento/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/magento/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	magento
 PORTVERSION=	1.8.1.0
@@ -28,7 +28,7 @@ NO_BUILD=	yes
 NO_ARCH=	yes
 MAGENTODIR?=	www/magento
 
-OAUTH_RUN_DEPENDS=	pecl-oauth>=1.2.3:net/pecl-oauth
+OAUTH_RUN_DEPENDS=	pecl-oauth>=1.2.3:net/pecl-oauth@${PHP_FLAVOR}
 REDIS_USE=	php=redis
 
 # First need to submit the port

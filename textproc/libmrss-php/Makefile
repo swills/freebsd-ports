@@ -1,12 +1,12 @@
 # Created by: Rodrigo Osorio <rodrigo@FreeBSD.org>
-# $FreeBSD: head/textproc/libmrss-php/Makefile 461158 2018-02-07 17:46:10Z mat $
+# $FreeBSD: head/textproc/libmrss-php/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	libmrss
 PORTVERSION=	0.19.2
 PORTREVISION=	3
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.autistici.org/bakunin/libmrss/
-PKGNAMESUFFIX=	-php
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PHP library for parsing, writing, and creating RSS

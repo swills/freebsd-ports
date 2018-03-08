@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/net/pear-Net_GeoIP/Makefile 443283 2017-06-11 07:41:41Z sunpoet $
+# $FreeBSD: head/net/pear-Net_GeoIP/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Net_GeoIP
 PORTVERSION=	1.0.0.r1
@@ -10,10 +10,10 @@ DISTNAME=	Net_GeoIP-1.0.0RC1
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Library to perform geo-location lookups of IP addresses
 
-BUILD_DEPENDS=	${PEARDIR}/Cache.php:sysutils/pear-Cache \
-		${PEARDIR}/XML/Serializer.php:devel/pear-XML_Serializer
-RUN_DEPENDS=	${PEARDIR}/Cache.php:sysutils/pear-Cache \
-		${PEARDIR}/XML/Serializer.php:devel/pear-XML_Serializer
+BUILD_DEPENDS=	${PEARDIR}/Cache.php:sysutils/pear-Cache@${PHP_FLAVOR} \
+		${PEARDIR}/XML/Serializer.php:devel/pear-XML_Serializer@${PHP_FLAVOR}
+RUN_DEPENDS=	${PEARDIR}/Cache.php:sysutils/pear-Cache@${PHP_FLAVOR} \
+		${PEARDIR}/XML/Serializer.php:devel/pear-XML_Serializer@${PHP_FLAVOR}
 
 USES=		pear
 

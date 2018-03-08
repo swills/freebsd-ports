@@ -1,9 +1,8 @@
-# $FreeBSD: head/textproc/pecl-xdiff2/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/textproc/pecl-xdiff2/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	xdiff
 PORTVERSION=	2.0.1
 CATEGORIES=	textproc pear
-PKGNAMESUFFIX=	2
 
 MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	PECL extension to create/apply binary and text patches

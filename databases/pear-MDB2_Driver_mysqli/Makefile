@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/databases/pear-MDB2_Driver_mysqli/Makefile 443164 2017-06-11 07:29:07Z sunpoet $
+# $FreeBSD: head/databases/pear-MDB2_Driver_mysqli/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	MDB2_Driver_mysqli
 DISTVERSION=	1.5.0b4
@@ -10,7 +10,7 @@ COMMENT=	PEAR MySQL MDB2 driver
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	pear-MDB2>=0:databases/pear-MDB2
+BUILD_DEPENDS=	${PEAR_PKGNAMEPREFIX}MDB2>=0:databases/pear-MDB2@${PHP_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes

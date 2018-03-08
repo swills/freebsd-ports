@@ -1,5 +1,5 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@inf.ufsc.br>)
-# $FreeBSD: head/mail/pear-MIME_Type/Makefile 416675 2016-06-10 12:41:03Z bofh $
+# $FreeBSD: head/mail/pear-MIME_Type/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	MIME_Type
 PORTVERSION=	1.4.1
@@ -16,6 +16,6 @@ PEAR_SYSTEM_COMMAND_DESC=	PEAR::System_Command support
 USES=		pear
 NO_ARCH=	yes
 
-PEAR_SYSTEM_COMMAND_RUN_DEPENDS=	${PEARDIR}/System/Command.php:devel/pear-System_Command
+PEAR_SYSTEM_COMMAND_RUN_DEPENDS=	${PEARDIR}/System/Command.php:devel/pear-System_Command@${PHP_FLAVOR}
 
 .include <bsd.port.mk>

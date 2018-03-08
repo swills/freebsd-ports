@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/security/nextcloud-passman/Makefile 461137 2018-02-07 10:21:57Z brnrd $
+# $FreeBSD: head/security/nextcloud-passman/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	passman
 PORTVERSION=	2.1.4
@@ -18,7 +18,7 @@ RUN_DEPENDS=	nextcloud>=9:www/nextcloud
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-
+USES=		php
 NO_BUILD=	yes
 NO_ARCH=	yes
 

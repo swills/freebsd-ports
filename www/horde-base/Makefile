@@ -1,14 +1,14 @@
-# $FreeBSD: head/www/horde-base/Makefile 451729 2017-10-11 02:55:30Z bapt $
+# $FreeBSD: head/www/horde-base/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	horde
 PORTVERSION=	5.2.17
 CATEGORIES=	www pear
-PKGNAMEPREFIX=
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde Application Framework
 
-RUN_DEPENDS=	${PEARDIR}/Net/DNS2.php:dns/pear-Net_DNS2
+RUN_DEPENDS=	${PEARDIR}/Net/DNS2.php:dns/pear-Net_DNS2@${PHP_FLAVOR}
 
 OPTIONS_DEFAULT=	ICONV
 OPTIONS_DEFINE=	FACEBOOK ICONV TWITTER WEATHER

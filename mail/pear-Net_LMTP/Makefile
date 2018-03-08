@@ -1,5 +1,5 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@inf.ufsc.br>)
-# $FreeBSD: head/mail/pear-Net_LMTP/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/mail/pear-Net_LMTP/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Net_LMTP
 PORTVERSION=	1.0.2
@@ -10,7 +10,7 @@ COMMENT=	PEAR implementation of the RFC2033 LMTP protocol
 
 LICENSE=	PHP301
 
-BUILD_DEPENDS=	${PEARDIR}/Net/Socket.php:net/pear-Net_Socket
+BUILD_DEPENDS=	${PEARDIR}/Net/Socket.php:net/pear-Net_Socket@${PHP_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		pear

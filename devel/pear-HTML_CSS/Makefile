@@ -1,5 +1,5 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@inf.ufsc.br>)
-# $FreeBSD: head/devel/pear-HTML_CSS/Makefile 443198 2017-06-11 07:31:58Z sunpoet $
+# $FreeBSD: head/devel/pear-HTML_CSS/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	HTML_CSS
 PORTVERSION=	1.5.4
@@ -8,8 +8,8 @@ CATEGORIES=	devel www pear
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PEAR class for generating CSS declarations
 
-BUILD_DEPENDS=	${PEARDIR}/HTML/Common.php:devel/pear-HTML_Common
-RUN_DEPENDS=	${PEARDIR}/HTML/Common.php:devel/pear-HTML_Common
+BUILD_DEPENDS=	${PEARDIR}/HTML/Common.php:devel/pear-HTML_Common@${PHP_FLAVOR}
+RUN_DEPENDS=	${PEARDIR}/HTML/Common.php:devel/pear-HTML_Common@${PHP_FLAVOR}
 
 USES=		pear
 

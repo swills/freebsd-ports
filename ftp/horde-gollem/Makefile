@@ -1,10 +1,10 @@
 # Created by: Martin Matuska (mm@FreeBSD.org)
-# $FreeBSD: head/ftp/horde-gollem/Makefile 450305 2017-09-21 20:45:32Z mm $
+# $FreeBSD: head/ftp/horde-gollem/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	gollem
 PORTVERSION=	3.0.12
 CATEGORIES=	ftp www pear
-PKGNAMEPREFIX=	horde-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}horde-
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde Web-based File Manager

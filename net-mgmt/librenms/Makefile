@@ -1,5 +1,5 @@
 # Created by: Muhammad Moinur Rahman<bofh@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/librenms/Makefile 459377 2018-01-18 20:47:19Z feld $
+# $FreeBSD: head/net-mgmt/librenms/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	librenms
 PORTVERSION=	1.35
@@ -49,8 +49,8 @@ NO_BUILD=	yes
 
 RUN_DEPENDS+=	rrdtool:databases/rrdtool \
 		dot:graphics/graphviz \
-		${LOCALBASE}/share/pear/Net/IPv4.php:net/pear-Net_IPv4 \
-		${LOCALBASE}/share/pear/Net/IPv6.php:net/pear-Net_IPv6 \
+		${LOCALBASE}/share/pear/Net/IPv4.php:net/pear-Net_IPv4@${PHP_FLAVOR} \
+		${LOCALBASE}/share/pear/Net/IPv6.php:net/pear-Net_IPv6@${PHP_FLAVOR} \
 		snmpget:net-mgmt/net-snmp \
 		bash:shells/bash \
 		sudo:security/sudo

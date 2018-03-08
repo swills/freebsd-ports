@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/security/pear-Auth_SASL/Makefile 435702 2017-03-08 16:51:09Z sunpoet $
+# $FreeBSD: head/security/pear-Auth_SASL/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Auth_SASL
 PORTVERSION=	1.1.0
@@ -10,7 +10,7 @@ COMMENT=	PEAR abstraction of various SASL mechanism responses
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	pear-Auth>=0:security/pear-Auth
+BUILD_DEPENDS=	${PEAR_PKGNAMEPREFIX}Auth>=0:security/pear-Auth@${PHP_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes

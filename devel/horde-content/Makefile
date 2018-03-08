@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/horde-content/Makefile 450171 2017-09-19 21:48:42Z mm $
+# $FreeBSD: head/devel/horde-content/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	content
 PORTVERSION=	2.0.6
 CATEGORIES=	devel www pear
-PKGNAMEPREFIX=	horde-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}horde-
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde tagging application

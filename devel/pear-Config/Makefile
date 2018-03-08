@@ -1,5 +1,5 @@
 # Created by: Alex Miller (<asm@asm.kiev.ua>)
-# $FreeBSD: head/devel/pear-Config/Makefile 443172 2017-06-11 07:29:46Z sunpoet $
+# $FreeBSD: head/devel/pear-Config/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Config
 PORTVERSION=	1.10.12
@@ -14,7 +14,7 @@ PEAR_XML_UTIL_DESC=	PEAR::XML_Util support
 
 USES=		pear
 
-PEAR_XML_PARSER_RUN_DEPENDS=	${PEARDIR}/XML/Parser.php:devel/pear-XML_Parser
-PEAR_XML_UTIL_RUN_DEPENDS=	${PEARDIR}/XML/Util.php:devel/pear-XML_Util
+PEAR_XML_PARSER_RUN_DEPENDS=	${PEARDIR}/XML/Parser.php:devel/pear-XML_Parser@${PHP_FLAVOR}
+PEAR_XML_UTIL_RUN_DEPENDS=	${PEARDIR}/XML/Util.php:devel/pear-XML_Util@${PHP_FLAVOR}
 
 .include <bsd.port.mk>

@@ -1,10 +1,11 @@
-# $FreeBSD: head/devel/phpunit/Makefile 461248 2018-02-08 16:27:32Z tz $
+# $FreeBSD: head/devel/phpunit/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	phpunit
 DISTVERSION=	5.7.27
 CATEGORIES=	devel www
 MASTER_SITES=	https://phar.phpunit.de/
 EXTRACT_SUFX=	.phar
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	tz@FreeBSD.org
 COMMENT=	Testing framework for unit tests
@@ -18,7 +19,7 @@ CONFLICTS_INSTALL=	phpunit6
 
 PORTSCOUT=	limit:^5\.7\.[0-9]*
 
-USES=		cpe php
+USES=		cpe php:flavors
 CPE_VENDOR=	phpunit_project
 USE_PHP=	dom json spl pcre phar
 

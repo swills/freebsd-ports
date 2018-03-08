@@ -1,11 +1,11 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/databases/php7-tarantool/Makefile 463315 2018-03-01 13:35:25Z sunpoet $
+# $FreeBSD: head/databases/php7-tarantool/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	tarantool
 PORTVERSION=	0.3.0
 PORTREVISION=	1
 CATEGORIES=	databases
-PKGNAMEPREFIX=	php7-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	PECL PHP driver for Tarantool

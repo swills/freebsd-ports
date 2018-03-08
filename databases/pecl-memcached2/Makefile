@@ -1,11 +1,10 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/pecl-memcached2/Makefile 454524 2017-11-20 04:32:07Z sunpoet $
+# $FreeBSD: head/databases/pecl-memcached2/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	memcached
 PORTVERSION=	2.2.0
 PORTREVISION=	5
 CATEGORIES=	databases
-PKGNAMESUFFIX=	2
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	PHP extension for interfacing with memcached via libmemcached library

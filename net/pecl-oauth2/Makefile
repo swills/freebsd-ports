@@ -1,9 +1,8 @@
-# $FreeBSD: head/net/pecl-oauth2/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/net/pecl-oauth2/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	oauth
 PORTVERSION=	2.0.2
 CATEGORIES=	net pear
-PKGNAMESUFFIX=	2
 
 MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	Php interface to the OAuth Protocol

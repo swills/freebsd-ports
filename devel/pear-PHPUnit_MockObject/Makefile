@@ -1,10 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-PHPUnit_MockObject/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/devel/pear-PHPUnit_MockObject/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	PHPUnit_MockObject
 PORTVERSION=	4.0.1
 CATEGORIES=	devel pear
-PKGNAMEPREFIX=	pear-
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Mock Object library for PHPUnit

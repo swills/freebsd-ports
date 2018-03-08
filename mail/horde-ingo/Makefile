@@ -1,9 +1,9 @@
-# $FreeBSD: head/mail/horde-ingo/Makefile 450171 2017-09-19 21:48:42Z mm $
+# $FreeBSD: head/mail/horde-ingo/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	ingo
 PORTVERSION=	3.2.16
 CATEGORIES=	mail www pear
-PKGNAMEPREFIX=	horde-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}horde-
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde email filter rules manager
@@ -29,7 +29,7 @@ USE_HORDE_RUN=	Horde_Role \
 		Horde_Util
 
 # Optional but we want it
-RUN_DEPENDS+=	${PEARDIR}/Net/Sieve.php:net/pear-Net_Sieve \
-		${PEARDIR}/Net/Socket.php:net/pear-Net_Socket
+RUN_DEPENDS+=	${PEARDIR}/Net/Sieve.php:net/pear-Net_Sieve@${PHP_FLAVOR} \
+		${PEARDIR}/Net/Socket.php:net/pear-Net_Socket@${PHP_FLAVOR}
 
 .include <bsd.port.mk>

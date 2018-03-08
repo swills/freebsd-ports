@@ -1,5 +1,5 @@
 # Created by: Ion-Mihai "IOnut" Tetcu <itetcu@FreeBSD.org>
-# $FreeBSD: head/mail/squirrelmail-change_sqlpass-plugin/Makefile 434992 2017-02-27 21:20:41Z rene $
+# $FreeBSD: head/mail/squirrelmail-change_sqlpass-plugin/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	change-sqlpass
 PORTVERSION=	3.3
@@ -12,7 +12,7 @@ COMMENT=	Allows users to change their passwords stored in a SQL database
 
 USE_SM_COMPAT=	yes
 
-RUN_DEPENDS=	${LOCALBASE}/share/pear/DB.php:databases/pear-DB
+RUN_DEPENDS=	${LOCALBASE}/share/pear/DB.php:databases/pear-DB@${PHP_FLAVOR}
 
 SQUIRREL_PLUGIN_NAME=	${PORTNAME:S/-/_/}
 

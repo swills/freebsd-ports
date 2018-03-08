@@ -1,5 +1,5 @@
 # Created by: Linh Pham <question+fbsdports@closedsrc.org>
-# $FreeBSD: head/security/base/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/base/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	base
 PORTVERSION=	1.4.5
@@ -13,9 +13,9 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/docs/GPL
 
 RUN_DEPENDS=	${ADODB_DIR}/adodb.inc.php:databases/adodb5 \
-		${LOCALBASE}/share/pear/Image/Graph.php:graphics/pear-Image_Graph \
-		${LOCALBASE}/share/pear/Mail.php:mail/pear-Mail \
-		${LOCALBASE}/share/pear/Mail/mime.php:mail/pear-Mail_Mime
+		${LOCALBASE}/share/pear/Image/Graph.php:graphics/pear-Image_Graph@${PHP_FLAVOR} \
+		${LOCALBASE}/share/pear/Mail.php:mail/pear-Mail@${PHP_FLAVOR} \
+		${LOCALBASE}/share/pear/Mail/mime.php:mail/pear-Mail_Mime@${PHP_FLAVOR}
 
 USE_PHP=	gd gettext pcre session zlib ctype
 

@@ -1,11 +1,11 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/databases/php5-pdo_cassandra/Makefile 463623 2018-03-05 07:02:30Z antoine $
+# $FreeBSD: head/databases/php5-pdo_cassandra/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	pdo_cassandra
 PORTVERSION=	0.2.1
 PORTREVISION=	14
 CATEGORIES=	databases
-PKGNAMEPREFIX=	php5-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PDO driver for Apache Cassandra

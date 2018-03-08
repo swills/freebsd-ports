@@ -1,5 +1,5 @@
 # Created by: Hsin-Han You <hhyou@cs.nctu.edu.tw>
-# $FreeBSD: head/net-mgmt/phpweathermap/Makefile 425174 2016-11-02 22:45:14Z mat $
+# $FreeBSD: head/net-mgmt/phpweathermap/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	phpweathermap
 PORTVERSION=	0.97a
@@ -14,7 +14,7 @@ COMMENT=	Network visualisation tool with web editor
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${LOCALBASE}/share/pear/Console/Getopt.php:devel/pear \
+RUN_DEPENDS=	${LOCALBASE}/share/pear/Console/Getopt.php:devel/pear@${PHP_FLAVOR} \
 		rrdtool:databases/rrdtool
 
 NO_BUILD=	yes

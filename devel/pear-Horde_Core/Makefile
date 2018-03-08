@@ -1,10 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/pear-Horde_Core/Makefile 461815 2018-02-14 16:37:07Z joneum $
+# $FreeBSD: head/devel/pear-Horde_Core/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Horde_Core
 DISTVERSION=	2.31.2
 CATEGORIES=	devel www pear
-PKGNAMEPREFIX=	pear-
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde Core Framework libraries
@@ -68,7 +67,7 @@ USE_HORDE_RUN=	Horde_Role \
 USE_HORDE_RUN+=	Horde_Routes
 
 KOLAB_USE=	HORDE_RUN=Horde_Kolab_Server,Horde_Kolab_Session,Horde_Kolab_Storage
-LZF_RUN_DEPENDS=	${PHPBASE}/lib/php/${PHP_EXT_DIR}/lzf.so:archivers/pecl-lzf
+LZF_RUN_DEPENDS=	${PHPBASE}/lib/php/${PHP_EXT_DIR}/lzf.so:archivers/pecl-lzf@${PHP_FLAVOR}
 SOCKETS_USE=	PHP=sockets
 
 .include <bsd.port.mk>

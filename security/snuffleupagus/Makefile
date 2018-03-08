@@ -1,9 +1,10 @@
-# $FreeBSD: head/security/snuffleupagus/Makefile 461211 2018-02-08 10:42:20Z pi $
+# $FreeBSD: head/security/snuffleupagus/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	snuffleupagus
 DISTVERSIONPREFIX=v
 DISTVERSION=	0.2.1
 CATEGORIES=	security
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	franco@opnsense.org
 COMMENT=	Security module for PHP 7+

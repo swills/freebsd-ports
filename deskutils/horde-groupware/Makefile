@@ -1,9 +1,9 @@
-# $FreeBSD: head/deskutils/horde-groupware/Makefile 450305 2017-09-21 20:45:32Z mm $
+# $FreeBSD: head/deskutils/horde-groupware/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	groupware
 PORTVERSION=	5.2.22
 CATEGORIES=	deskutils www pear
-PKGNAMEPREFIX=	horde-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}horde-
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde Groupware

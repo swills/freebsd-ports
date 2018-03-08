@@ -1,9 +1,9 @@
-# $FreeBSD: head/databases/php70-memcached/Makefile 461159 2018-02-07 17:52:31Z mat $
+# $FreeBSD: head/databases/php-memcached/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	memcached
 PORTVERSION=	3.0.0b1
 CATEGORIES=	databases
-PKGNAMEPREFIX=	php70-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	townwear@gmail.com
 COMMENT=	PHP extension for interfacing with memcached via libmemcached library
@@ -18,8 +18,7 @@ OPTIONS_DEFINE=	SASL
 CONFIGURE_ARGS=	--disable-memcached-sasl --enable-memcached-json --with-libmemcached-dir=${LOCALBASE}
 USES=		pkgconfig php:ext
 USE_PHP=	session:build json:build
-PHP_VER=	70
-IGNORE_WITH_PHP=56 71 72
+IGNORE_WITH_PHP=56
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	php-memcached-dev

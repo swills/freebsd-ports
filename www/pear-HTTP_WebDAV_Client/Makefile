@@ -1,5 +1,5 @@
 # Created by: Wen Heping<wenheping@gmail.com>
-# $FreeBSD: head/www/pear-HTTP_WebDAV_Client/Makefile 443349 2017-06-11 07:47:16Z sunpoet $
+# $FreeBSD: head/www/pear-HTTP_WebDAV_Client/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	HTTP_WebDAV_Client
 PORTVERSION=	1.0.2
@@ -8,8 +8,8 @@ CATEGORIES=	www devel pear
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	WebDAV Stream Wrapper Class
 
-BUILD_DEPENDS=	${PEARDIR}/HTTP/Request.php:www/pear-HTTP_Request
-RUN_DEPENDS:=	${PEARDIR}/HTTP/Request.php:www/pear-HTTP_Request
+BUILD_DEPENDS=	${PEARDIR}/HTTP/Request.php:www/pear-HTTP_Request@${PHP_FLAVOR}
+RUN_DEPENDS:=	${PEARDIR}/HTTP/Request.php:www/pear-HTTP_Request@${PHP_FLAVOR}
 
 USES=		pear
 

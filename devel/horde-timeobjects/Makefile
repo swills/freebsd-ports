@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/horde-timeobjects/Makefile 450171 2017-09-19 21:48:42Z mm $
+# $FreeBSD: head/devel/horde-timeobjects/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	timeobjects
 PORTVERSION=	2.1.4
 CATEGORIES=	devel www pear
-PKGNAMEPREFIX=	horde-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}horde-
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde timeobjects application

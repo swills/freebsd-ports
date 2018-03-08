@@ -1,11 +1,11 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-SebastianBergmann_Git/Makefile 449806 2017-09-13 16:59:54Z joneum $
+# $FreeBSD: head/devel/pear-SebastianBergmann_Git/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Git
 PORTVERSION=	1.2.0
 PORTREVISION=	1
 CATEGORIES=	devel pear
-PKGNAMEPREFIX=	pear-SebastianBergmann_
+PKGNAMEPREFIX=	${PEAR_PKGNAMEPREFIX}SebastianBergmann_
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Simple wrapper for Git
@@ -13,9 +13,7 @@ COMMENT=	Simple wrapper for Git
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	pear>=1.9.4:devel/pear
-RUN_DEPENDS=	pear>=1.9.4:devel/pear
-
+USES=	pear:env
 USE_GITHUB=	yes
 GH_ACCOUNT=	sebastianbergmann
 GH_PROJECT=	git

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 463551 2018-03-04 05:21:09Z woodsb02 $
+# $FreeBSD: head/net/Makefile 463913 2018-03-08 19:08:01Z pi $
 #
 
     COMMENT = Networking tools
@@ -1446,6 +1446,7 @@
     SUBDIR += vblade
     SUBDIR += vde
     SUBDIR += vde2
+    SUBDIR += viamillipede
     SUBDIR += vinagre
     SUBDIR += vino
     SUBDIR += vmware-vsphere-cli

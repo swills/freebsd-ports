@@ -1,5 +1,5 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/security/pear-Crypt_GPG/Makefile 433307 2017-02-04 12:47:04Z cpm $
+# $FreeBSD: head/security/pear-Crypt_GPG/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Crypt_GPG
 PORTVERSION=	1.4.3
@@ -11,7 +11,7 @@ COMMENT=	GNU Privacy Guard (GPG)
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	pear-Console_CommandLine>=1.1.10:devel/pear-Console_CommandLine
+BUILD_DEPENDS=	${PEAR_PKGNAMEPREFIX}Console_CommandLine>=1.1.10:devel/pear-Console_CommandLine@${PHP_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes

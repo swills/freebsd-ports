@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/www/nextcloud-notes/Makefile 461133 2018-02-07 10:13:17Z brnrd $
+# $FreeBSD: head/www/nextcloud-notes/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	notes
 PORTVERSION=	2.3.2
@@ -18,6 +18,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	nextcloud>=9:www/nextcloud
 
+USES=		php
 NO_BUILD=	yes
 NO_ARCH=	yes
 

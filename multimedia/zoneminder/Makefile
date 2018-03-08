@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/zoneminder/Makefile 463142 2018-02-27 13:25:43Z sunpoet $
+# $FreeBSD: head/multimedia/zoneminder/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	zoneminder
 PORTVERSION=	1.30.4
@@ -82,9 +82,9 @@ CMAKE_ARGS+=	-DZM_PERL_MM_PARMS=INSTALLDIRS=site \
 .include <bsd.port.pre.mk>
 
 .if ${PHP_VER} >= 70
-RUN_DEPENDS+= ${PHPBASE}/lib/php/${PHP_EXT_DIR}/apcu.so:devel/pecl-APCu
+RUN_DEPENDS+= ${PHPBASE}/lib/php/${PHP_EXT_DIR}/apcu.so:devel/pecl-APCu@${PHP_FLAVOR}
 .else
-RUN_DEPENDS+= ${PHPBASE}/lib/php/${PHP_EXT_DIR}/apcu.so:devel/pecl-APCu4
+RUN_DEPENDS+= ${PHPBASE}/lib/php/${PHP_EXT_DIR}/apcu.so:devel/pecl-APCu4@${PHP_FLAVOR}
 .endif
 
 PKGMESSAGE=	${WRKDIR}/pkg-message

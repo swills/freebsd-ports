@@ -1,9 +1,9 @@
-# $FreeBSD: head/www/horde-wicked/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/horde-wicked/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	wicked
 PORTVERSION=	2.0.8
 CATEGORIES=	www pear
-PKGNAMEPREFIX=	horde-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}horde-
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde Wiki Application
@@ -11,7 +11,7 @@ COMMENT=	Horde Wiki Application
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS+=	${PEARDIR}/Text/Wiki.php:www/pear-Text_Wiki
+RUN_DEPENDS+=	${PEARDIR}/Text/Wiki.php:www/pear-Text_Wiki@${PHP_FLAVOR}
 
 USES=	horde cpe php
 USE_PHP=	gettext

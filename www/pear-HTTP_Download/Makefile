@@ -1,5 +1,5 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@inf.ufsc.br>)
-# $FreeBSD: head/www/pear-HTTP_Download/Makefile 443342 2017-06-11 07:46:40Z sunpoet $
+# $FreeBSD: head/www/pear-HTTP_Download/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	HTTP_Download
 PORTVERSION=	1.1.4
@@ -8,8 +8,8 @@ CATEGORIES=	www devel pear
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PEAR class to send HTTP downloads
 
-BUILD_DEPENDS=	${PEARDIR}/HTTP/Header.php:www/pear-HTTP_Header
-RUN_DEPENDS=	${PEARDIR}/HTTP/Header.php:www/pear-HTTP_Header
+BUILD_DEPENDS=	${PEARDIR}/HTTP/Header.php:www/pear-HTTP_Header@${PHP_FLAVOR}
+RUN_DEPENDS=	${PEARDIR}/HTTP/Header.php:www/pear-HTTP_Header@${PHP_FLAVOR}
 
 USES=		pear
 

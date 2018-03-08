@@ -1,12 +1,12 @@
 # Created by: Daniel Gerzo <danger@FreeBSD.org>
-# $FreeBSD: head/devel/php-maxminddb/Makefile 427488 2016-12-01 10:40:20Z amdmi3 $
+# $FreeBSD: head/devel/php-maxminddb/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	maxminddb
 PORTVERSION=	1.1.0
 DISTVERSIONPREFIX=	v
 PORTREVISION=	1
 CATEGORIES=	devel net
-PKGNAMEPREFIX=	php-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	danger@FreeBSD.org
 COMMENT=	MaxMind DB Reader extension for PHP

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/gitphp/Makefile 427491 2016-12-01 11:18:03Z mat $
+# $FreeBSD: head/devel/gitphp/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	gitphp
 PORTVERSION=	0.2.8
@@ -19,7 +19,7 @@ NO_BUILD=	yes
 PLIST_SUB=	WWWOWN="${WWWOWN}" WWWGRP="${WWWGRP}"
 SUB_FILES=	pkg-message
 
-RUN_DEPENDS+=	${LOCALBASE}/lib/php/${PHP_EXT_DIR}/xdiff.so:textproc/pecl-xdiff
+RUN_DEPENDS+=	${LOCALBASE}/lib/php/${PHP_EXT_DIR}/xdiff.so:textproc/pecl-xdiff@${PHP_FLAVOR}
 
 do-install:
 	${MKDIR} ${STAGEDIR}${WWWDIR}

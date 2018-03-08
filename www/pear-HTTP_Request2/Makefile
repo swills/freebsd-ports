@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/pear-HTTP_Request2/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/www/pear-HTTP_Request2/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	HTTP_Request2
 PORTVERSION=	2.3.0
@@ -9,8 +9,8 @@ CATEGORIES=	www pear
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PEAR classes providing an easy way to perform HTTP requests
 
-BUILD_DEPENDS=	${PEARDIR}/Net/URL2.php:net/pear-Net_URL2
-RUN_DEPENDS=	${PEARDIR}/Net/URL2.php:net/pear-Net_URL2
+BUILD_DEPENDS=	${PEARDIR}/Net/URL2.php:net/pear-Net_URL2@${PHP_FLAVOR}
+RUN_DEPENDS=	${PEARDIR}/Net/URL2.php:net/pear-Net_URL2@${PHP_FLAVOR}
 
 OPTIONS_DEFINE=	CURL FILEINFO ZLIB
 CURL_DESC=	PHP CURL extension support

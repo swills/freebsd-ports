@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/pear-Services_Amazon/Makefile 443351 2017-06-11 07:47:26Z sunpoet $
+# $FreeBSD: head/www/pear-Services_Amazon/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Services_Amazon
 PORTVERSION=	0.9.0
@@ -8,10 +8,10 @@ CATEGORIES=	www pear
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PHP interface to Amazon Product Advertising API
 
-BUILD_DEPENDS=	${PEARDIR}/HTTP/Request.php:www/pear-HTTP_Request \
-		${PEARDIR}/XML/Serializer.php:devel/pear-XML_Serializer
-RUN_DEPENDS=	${PEARDIR}/HTTP/Request.php:www/pear-HTTP_Request \
-		${PEARDIR}/XML/Serializer.php:devel/pear-XML_Serializer
+BUILD_DEPENDS=	${PEARDIR}/HTTP/Request.php:www/pear-HTTP_Request@${PHP_FLAVOR} \
+		${PEARDIR}/XML/Serializer.php:devel/pear-XML_Serializer@${PHP_FLAVOR}
+RUN_DEPENDS=	${PEARDIR}/HTTP/Request.php:www/pear-HTTP_Request@${PHP_FLAVOR} \
+		${PEARDIR}/XML/Serializer.php:devel/pear-XML_Serializer@${PHP_FLAVOR}
 
 USES=		pear
 

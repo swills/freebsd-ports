@@ -1,9 +1,9 @@
-# $FreeBSD: head/devel/horde-whups/Makefile 455798 2017-12-08 20:21:01Z joneum $
+# $FreeBSD: head/devel/horde-whups/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	whups
 DISTVERSION=	3.0.12
 CATEGORIES=	devel www pear
-PKGNAMEPREFIX=	horde-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}horde-
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde bug tracking/ticketing system

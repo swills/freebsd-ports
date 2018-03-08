@@ -1,8 +1,8 @@
-# $FreeBSD: head/lang/php70/Makefile.ext 454042 2017-11-12 14:00:48Z riggs $
+# $FreeBSD: head/lang/php70/Makefile.ext 463917 2018-03-08 19:48:41Z mat $
 
 COMMENT=	The ${PHP_MODNAME} shared extension for php
 
-USES+=	php:ext
+USES+=	php:ext,noflavors
 PHP_MODNAME=	${PKGNAMESUFFIX:S/-//}
 PHP_VER=	70
 IGNORE_WITH_PHP=	56

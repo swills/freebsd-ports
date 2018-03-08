@@ -1,9 +1,9 @@
-# $FreeBSD: head/www/horde-passwd/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/horde-passwd/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	passwd
 PORTVERSION=	5.0.7
 CATEGORIES=	www pear
-PKGNAMEPREFIX=	horde-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}horde-
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde password changing application

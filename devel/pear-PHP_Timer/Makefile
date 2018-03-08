@@ -1,10 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-PHP_Timer/Makefile 461618 2018-02-12 19:03:41Z joneum $
+# $FreeBSD: head/devel/pear-PHP_Timer/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	PHP_Timer
 PORTVERSION=	2.0.0
 CATEGORIES=	devel pear
-PKGNAMEPREFIX=	pear-
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Utility class for timing
@@ -12,6 +11,7 @@ COMMENT=	Utility class for timing
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+USES=	pear:env
 USE_GITHUB=	yes
 GH_ACCOUNT=	sebastianbergmann
 GH_PROJECT=	php-timer

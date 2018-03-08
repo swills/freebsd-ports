@@ -1,10 +1,10 @@
 # Created by: Melvyn Sopacua <melvyn@magemana.nl>
-# $FreeBSD: head/archivers/php-snappy/Makefile 450053 2017-09-18 16:23:17Z joneum $
+# $FreeBSD: head/archivers/php-snappy/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	snappy
 PORTVERSION=	0.1.9
 CATEGORIES=	archivers
-PKGNAMEPREFIX=	php-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PHP extension for the snappy compression algorithm

@@ -1,10 +1,9 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/pecl-weakref2/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/devel/pecl-weakref2/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	weakref
 PORTVERSION=	0.3.3
 CATEGORIES=	devel pear
-PKGNAMESUFFIX=	2
 DISTNAME=	Weakref-${PORTVERSION}
 
 MAINTAINER=	joneum@FreeBSD.org

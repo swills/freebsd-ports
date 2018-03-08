@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/security/nextcloud-twofactor_u2f/Makefile 461136 2018-02-07 10:20:21Z brnrd $
+# $FreeBSD: head/security/nextcloud-twofactor_u2f/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	twofactor_u2f
 PORTVERSION=	1.5.1
@@ -17,6 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	nextcloud>=12:www/nextcloud
 
+USES=		php
 NO_BUILD=	yes
 NO_ARCH=	yes
 

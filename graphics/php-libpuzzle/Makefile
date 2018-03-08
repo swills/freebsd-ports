@@ -1,5 +1,5 @@
 # Created by: Naram Qashat <cyberbotx@cyberbotx.com>
-# $FreeBSD: head/graphics/php-libpuzzle/Makefile 461158 2018-02-07 17:46:10Z mat $
+# $FreeBSD: head/graphics/php-libpuzzle/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	libpuzzle
 PORTVERSION=	0.11
@@ -7,7 +7,7 @@ PORTREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	http://download.pureftpd.org/pub/pure-ftpd/misc/libpuzzle/release/ \
 		ftp://ftp.pureftpd.org/pub/pure-ftpd/misc/libpuzzle/releases/
-PKGNAMEPREFIX=	php-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	cyberbotx@cyberbotx.com
 COMMENT=	PHP extension for Puzzle library to find similar pictures

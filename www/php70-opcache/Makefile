@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/www/php70-opcache/Makefile 422569 2016-09-21 15:43:47Z tz $
+# $FreeBSD: head/www/php70-opcache/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 CATEGORIES=	www
 
@@ -7,6 +7,6 @@ MASTERDIR=	${.CURDIR}/../../lang/php70
 
 PKGNAMESUFFIX=	-opcache
 
-USES=	php:zend
+USES=	php:zend,noflavors
 
 .include "${MASTERDIR}/Makefile"

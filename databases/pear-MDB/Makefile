@@ -1,5 +1,5 @@
 # Created by: Oleg Sharoiko <os@rsu.ru>
-# $FreeBSD: head/databases/pear-MDB/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/databases/pear-MDB/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	MDB
 PORTVERSION=	1.3.0
@@ -8,8 +8,8 @@ CATEGORIES=	databases www pear
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PEAR unified API for DB access, based on user meta data
 
-BUILD_DEPENDS=	${PEARDIR}/XML/Parser.php:devel/pear-XML_Parser
-RUN_DEPENDS=	${PEARDIR}/XML/Parser.php:devel/pear-XML_Parser
+BUILD_DEPENDS=	${PEARDIR}/XML/Parser.php:devel/pear-XML_Parser@${PHP_FLAVOR}
+RUN_DEPENDS=	${PEARDIR}/XML/Parser.php:devel/pear-XML_Parser@${PHP_FLAVOR}
 
 USES=		pear
 

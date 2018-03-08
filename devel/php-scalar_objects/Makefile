@@ -1,11 +1,11 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-scalar_objects/Makefile 461158 2018-02-07 17:46:10Z mat $
+# $FreeBSD: head/devel/php-scalar_objects/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	scalar_objects
 PORTVERSION=	0.0.20140124
 PORTREVISION=	2
 CATEGORIES=	devel
-PKGNAMEPREFIX=	php-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Support method calls on primitive types in PHP

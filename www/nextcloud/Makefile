@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/nextcloud/Makefile 462379 2018-02-20 09:14:21Z brnrd $
+# $FreeBSD: head/www/nextcloud/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	nextcloud
 DISTVERSION=	13.0.0
@@ -40,7 +40,7 @@ MYSQL_USE=	PHP=pdo_mysql
 PGSQL_USES=	pgsql
 PGSQL_USE=	PHP=pdo_pgsql,pgsql
 SQLITE_USE=	PHP=pdo_sqlite,sqlite3
-SMB_RUN_DEPENDS=	pecl-smbclient>=0.8.0:net/pecl-smbclient
+SMB_RUN_DEPENDS=	${PECL_PKGNAMEPREFIX}smbclient>=0.8.0:net/pecl-smbclient@${PHP_FLAVOR}
 SSL_USE=	PHP=openssl
 
 post-patch:

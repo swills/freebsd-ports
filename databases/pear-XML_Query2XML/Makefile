@@ -1,5 +1,5 @@
 # Created by: wenheping<wenheping@gmail.com>
-# $FreeBSD: head/databases/pear-XML_Query2XML/Makefile 443171 2017-06-11 07:29:41Z sunpoet $
+# $FreeBSD: head/databases/pear-XML_Query2XML/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	XML_Query2XML
 PORTVERSION=	1.7.2
@@ -8,8 +8,8 @@ CATEGORIES=	databases pear
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PEAR class transform SQL queries into XML data
 
-BUILD_DEPENDS=	${PEARDIR}/DB.php:databases/pear-DB
-RUN_DEPENDS=	${PEARDIR}/DB.php:databases/pear-DB
+BUILD_DEPENDS=	${PEARDIR}/DB.php:databases/pear-DB@${PHP_FLAVOR}
+RUN_DEPENDS=	${PEARDIR}/DB.php:databases/pear-DB@${PHP_FLAVOR}
 
 OPTIONS_DEFINE=	PEAR_MDB2 PEAR_NET_LDAP2
 PEAR_MDB2_DESC=	Add support for pear-MDB2
@@ -17,7 +17,7 @@ PEAR_NET_LDAP2_DESC=	Add support for pear-Net_LDAP2
 
 USES=		pear
 
-PEAR_MDB2_BUILD_DEPENDS=	${PEARDIR}/MDB2.php:databases/pear-MDB2
-PEAR_NET_LDAP2_BUILD_DEPENDS=	${PEARDIR}/Net/LDAP2.php:net/pear-Net_LDAP2
+PEAR_MDB2_BUILD_DEPENDS=	${PEARDIR}/MDB2.php:databases/pear-MDB2@${PHP_FLAVOR}
+PEAR_NET_LDAP2_BUILD_DEPENDS=	${PEARDIR}/Net/LDAP2.php:net/pear-Net_LDAP2@${PHP_FLAVOR}
 
 .include <bsd.port.mk>
