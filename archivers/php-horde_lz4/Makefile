@@ -1,11 +1,11 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/archivers/php-horde_lz4/Makefile 432562 2017-01-27 18:56:30Z mm $
+# $FreeBSD: head/archivers/php-horde_lz4/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	horde_lz4
 PORTVERSION=	1.0.10
 CATEGORIES=	archivers pear
 MASTER_SITES=	http://pear.horde.org/get/
-PKGNAMEPREFIX=	php-
+PKGNAMEPREFIX=	${PECL_PKGNAMEPREFIX}
 DIST_SUBDIR=	PECL
 
 MAINTAINER=	mm@FreeBSD.org

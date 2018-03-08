@@ -1,11 +1,10 @@
 # Created by: Thierry Thomas (<thierry@pompo.net>)
-# $FreeBSD: head/mail/pecl-mailparse2/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/mail/pecl-mailparse2/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	mailparse
 PORTVERSION=	2.1.6
 PORTREVISION=	1
 CATEGORIES=	mail www
-PKGNAMESUFFIX=	2
 
 MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	PECL extension to create and decode MIME messages

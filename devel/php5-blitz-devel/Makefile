@@ -1,12 +1,12 @@
 # Created by: Valery Komarov <komarov@valerka.net>
-# $FreeBSD: head/devel/php5-blitz-devel/Makefile 461158 2018-02-07 17:46:10Z mat $
+# $FreeBSD: head/devel/php5-blitz-devel/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	blitz-devel
 PORTVERSION=	0.7.2
 PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://alexeyrybak.com/blitz/
-PKGNAMEPREFIX=	php5-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 DISTNAME=	blitz-${PORTVERSION}-devel
 
 MAINTAINER=	komarov@valerka.net

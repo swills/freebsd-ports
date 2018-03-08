@@ -1,10 +1,9 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-msgpack0/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/devel/pecl-msgpack0/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	msgpack
 PORTVERSION=	0.5.7
 CATEGORIES=	devel
-PKGNAMESUFFIX=	0
 
 MAINTAINER=	johnpupu@gmail.com
 COMMENT=	Provides API for communicating with MessagePack serialization

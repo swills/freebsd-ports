@@ -1,11 +1,10 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/www/pecl-yar1/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/www/pecl-yar1/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	yar
 PORTVERSION=	1.2.5
 PORTREVISION=	1
 CATEGORIES=	www
-PKGNAMESUFFIX=	1
 
 MAINTAINER=	johnpupu@gmail.com
 COMMENT=	Yar (Yet another RPC framework) is a light, concurrent RPC framework
@@ -18,7 +17,7 @@ IGNORE_WITH_PHP=70 71 72
 
 OPTIONS_DEFINE=	MSGPACK
 MSGPACK_DESC=	Enable MSGPACK module
-MSGPACK_BUILD_DEPENDS=	${LOCALBASE}/lib/php/${PHP_EXT_DIR}/msgpack.so:devel/pecl-msgpack0
-MSGPACK_RUN_DEPENDS=	${LOCALBASE}/lib/php/${PHP_EXT_DIR}/msgpack.so:devel/pecl-msgpack0
+MSGPACK_BUILD_DEPENDS=	${LOCALBASE}/lib/php/${PHP_EXT_DIR}/msgpack.so:devel/pecl-msgpack0@${PHP_FLAVOR}
+MSGPACK_RUN_DEPENDS=	${LOCALBASE}/lib/php/${PHP_EXT_DIR}/msgpack.so:devel/pecl-msgpack0@${PHP_FLAVOR}
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine (<tux@pinguru.net>)
-# $FreeBSD: head/www/pear-HTTP_Server/Makefile 443346 2017-06-11 07:46:59Z sunpoet $
+# $FreeBSD: head/www/pear-HTTP_Server/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	HTTP_Server
 PORTVERSION=	0.4.1
@@ -8,10 +8,10 @@ CATEGORIES=	www devel pear
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	HTTP server class
 
-BUILD_DEPENDS=	${PEARDIR}/HTTP.php:www/pear-HTTP \
-		${PEARDIR}/Net/Server.php:net/pear-Net_Server
-RUN_DEPENDS=	${PEARDIR}/HTTP.php:www/pear-HTTP \
-		${PEARDIR}/Net/Server.php:net/pear-Net_Server
+BUILD_DEPENDS=	${PEARDIR}/HTTP.php:www/pear-HTTP@${PHP_FLAVOR} \
+		${PEARDIR}/Net/Server.php:net/pear-Net_Server@${PHP_FLAVOR}
+RUN_DEPENDS=	${PEARDIR}/HTTP.php:www/pear-HTTP@${PHP_FLAVOR} \
+		${PEARDIR}/Net/Server.php:net/pear-Net_Server@${PHP_FLAVOR}
 
 USES=		pear
 

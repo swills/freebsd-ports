@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/www/nextcloud-tasks/Makefile 463000 2018-02-26 08:48:49Z brnrd $
+# $FreeBSD: head/www/nextcloud-tasks/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	tasks
 PORTVERSION=	0.9.6
@@ -18,6 +18,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	nextcloud>=10:www/nextcloud
 
+USES=		php
 NO_BUILD=	yes
 NO_ARCH=	yes
 

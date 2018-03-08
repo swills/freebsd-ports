@@ -1,9 +1,8 @@
-# $FreeBSD: head/archivers/pear-Horde_Compress/Makefile 449165 2017-09-02 22:37:05Z mm $
+# $FreeBSD: head/archivers/pear-Horde_Compress/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Horde_Compress
 PORTVERSION=	2.2.1
 CATEGORIES=	archivers www pear
-PKGNAMEPREFIX=	pear-
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde Compression API

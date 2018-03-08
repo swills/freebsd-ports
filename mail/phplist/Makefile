@@ -1,5 +1,5 @@
 # Created by: Nick Hilliard <nick@foobar.org>
-# $FreeBSD: head/mail/phplist/Makefile 434521 2017-02-21 11:31:47Z wen $
+# $FreeBSD: head/mail/phplist/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	phplist
 PORTVERSION=	3.3.1
@@ -12,7 +12,7 @@ COMMENT=	Full-featured open-source newsletter manager
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PEARDIR}/HTTP/Request.php:www/pear-HTTP_Request
+RUN_DEPENDS=	${PEARDIR}/HTTP/Request.php:www/pear-HTTP_Request@${PHP_FLAVOR}
 
 USES=		cpe tar:tgz php:web
 USE_PHP=	hash iconv imap mysqli pcre session xml zlib

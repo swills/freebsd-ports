@@ -1,12 +1,12 @@
 # Created by: Ilya Bakulin <webmaster@kibab.com>
-# $FreeBSD: head/devel/php5-thrift/Makefile 461158 2018-02-07 17:46:10Z mat $
+# $FreeBSD: head/devel/php5-thrift/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	thrift
 PORTVERSION=	${THRIFT_PORTVERSION}
 PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	APACHE/thrift/${PORTVERSION}
-PKGNAMEPREFIX=	php5-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	webmaster@kibab.com
 COMMENT=	PHP interface to Thrift

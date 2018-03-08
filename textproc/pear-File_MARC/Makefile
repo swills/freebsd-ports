@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/textproc/pear-File_MARC/Makefile 456909 2017-12-21 13:41:20Z dbaio $
+# $FreeBSD: head/textproc/pear-File_MARC/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	File_MARC
 PORTVERSION=	1.2.0
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 OPTIONS_DEFINE=	ISPN
 
 ISPN_DESC=	Validation class for ISPN (International Standard Product Numbers)
-ISPN_RUN_DEPENDS=	${PEARDIR}/Validate/ISPN.php:textproc/pear-Validate_ISPN
+ISPN_RUN_DEPENDS=	${PEARDIR}/Validate/ISPN.php:textproc/pear-Validate_ISPN@${PHP_FLAVOR}
 
 USES=	pear
 NO_ARCH=	yes

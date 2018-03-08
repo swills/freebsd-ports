@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/databases/pear-DoctrineDBAL/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/pear-DoctrineDBAL/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	DoctrineDBAL
 PORTVERSION=	2.3.4
@@ -11,10 +11,8 @@ COMMENT=	Database abstraction layer used to power the ORM package
 
 LICENSE=	LGPL21
 
-BUILD_DEPENDS=	${PEARDIR}/.channels/pear.doctrine-project.org.reg:devel/pear-channel-doctrine
-RUN_DEPENDS=	${PEARDIR}/.channels/pear.doctrine-project.org.reg:devel/pear-channel-doctrine \
-	${PEARDIR}/Doctrine/Common/Version.php:databases/pear-DoctrineCommon \
-	${PEARDIR}/Symfony/Component/Console/Application.php:devel/pear-Symfony_Component_Console
+RUN_DEPENDS=	${PEARDIR}/Doctrine/Common/Version.php:databases/pear-DoctrineCommon@${PHP_FLAVOR} \
+	${PEARDIR}/Symfony/Component/Console/Application.php:devel/pear-Symfony_Component_Console@${PHP_FLAVOR}
 
 OPTIONS_DEFINE=	DBLIB MYSQL ODBC PGSQL SQLITE
 OPTIONS_DEFAULT=MYSQL

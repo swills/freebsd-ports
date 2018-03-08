@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine <gerrit.beine@gmx.de>
-# $FreeBSD: head/mail/squirrelmail-sasql-plugin/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/squirrelmail-sasql-plugin/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	sasql
 PORTVERSION=	3.2.0
@@ -9,7 +9,7 @@ CATEGORIES=	mail www
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Edit SpamAssassin settings stored in an SQL DB
 
-RUN_DEPENDS=	${LOCALBASE}/share/pear/DB.php:databases/pear-DB
+RUN_DEPENDS=	${LOCALBASE}/share/pear/DB.php:databases/pear-DB@${PHP_FLAVOR}
 
 USE_SM_COMPAT=	yes
 USE_GENERIC_PKGMESSAGE=	yes

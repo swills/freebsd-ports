@@ -1,5 +1,5 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@inf.ufsc.br>)
-# $FreeBSD: head/devel/pear-XML_Transformer/Makefile 443249 2017-06-11 07:38:57Z sunpoet $
+# $FreeBSD: head/devel/pear-XML_Transformer/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	XML_Transformer
 PORTVERSION=	1.1.2
@@ -8,8 +8,8 @@ CATEGORIES=	devel www pear
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PEAR XML Transformations in PHP
 
-BUILD_DEPENDS=	${PEARDIR}/XML/Util.php:devel/pear-XML_Util
-RUN_DEPENDS:=	${PEARDIR}/XML/Util.php:devel/pear-XML_Util
+BUILD_DEPENDS=	${PEARDIR}/XML/Util.php:devel/pear-XML_Util@${PHP_FLAVOR}
+RUN_DEPENDS:=	${PEARDIR}/XML/Util.php:devel/pear-XML_Util@${PHP_FLAVOR}
 
 USES=		pear
 

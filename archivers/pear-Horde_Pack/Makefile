@@ -1,9 +1,8 @@
-# $FreeBSD: head/archivers/pear-Horde_Pack/Makefile 428699 2016-12-17 01:23:07Z mm $
+# $FreeBSD: head/archivers/pear-Horde_Pack/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Horde_Pack
 PORTVERSION=	1.0.7
 CATEGORIES=	archivers www pear
-PKGNAMEPREFIX=	pear-
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde Pack Utility

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 463855 2018-03-08 01:00:05Z jhale $
+# $FreeBSD: head/www/Makefile 463917 2018-03-08 19:48:41Z mat $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -2418,10 +2418,7 @@
     SUBDIR += ufdbguard
     SUBDIR += unit
     SUBDIR += unit-go
-    SUBDIR += unit-php56
-    SUBDIR += unit-php70
-    SUBDIR += unit-php71
-    SUBDIR += unit-php72
+    SUBDIR += unit-php
     SUBDIR += usermanager
     SUBDIR += uwsgi
     SUBDIR += uwsgitop

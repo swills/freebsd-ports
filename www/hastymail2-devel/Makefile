@@ -1,5 +1,5 @@
 # Created by: Bartlomiej Rutkowski <r@robakdesign.com>
-# $FreeBSD: head/www/hastymail2-devel/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/hastymail2-devel/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	hastymail2
 PORTVERSION=	1.1.${HASTYMAIL_REV:S/.//g}
@@ -38,19 +38,19 @@ DB_DESC=	Use older pear DB (instead of MDB2)
 .if ${PORT_OPTIONS:MMYSQL}
 USE_MYSQL=	yes
 .if ! ${PORT_OPTIONS:MDB}
-RUN_DEPENDS+=	${LOCALBASE}/share/pear/MDB2/Driver/mysql.php:databases/pear-MDB2_Driver_mysql
+RUN_DEPENDS+=	${LOCALBASE}/share/pear/MDB2/Driver/mysql.php:databases/pear-MDB2_Driver_mysql@${PHP_FLAVOR}
 .endif
 .endif
 
 .if ${PORT_OPTIONS:MPGSQL}
 USES+=	pgsql
 .if ! ${PORT_OPTIONS:MDB}
-RUN_DEPENDS+=	${LOCALBASE}/share/pear/MDB2/Driver/pgsql.php:databases/pear-MDB2_Driver_pgsql
+RUN_DEPENDS+=	${LOCALBASE}/share/pear/MDB2/Driver/pgsql.php:databases/pear-MDB2_Driver_pgsql@${PHP_FLAVOR}
 .endif
 .endif
 
 .if ${PORT_OPTIONS:MDB} && (${PORT_OPTIONS:MMYSQL} || ${PORT_OPTIONS:MPGSQL}}
-RUN_DEPENDS+=	${LOCALBASE}/share/pear/DB.php:databases/pear-DB
+RUN_DEPENDS+=	${LOCALBASE}/share/pear/DB.php:databases/pear-DB@${PHP_FLAVOR}
 .endif
 
 post-patch:

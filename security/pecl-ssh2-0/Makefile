@@ -1,10 +1,9 @@
 # Created by: Alexander Leidinger <netchild@FreeBSD.org>
-# $FreeBSD: head/security/pecl-ssh2-0/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/security/pecl-ssh2-0/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	ssh2
 PORTVERSION=	0.13
 CATEGORIES=	security pear
-PKGNAMESUFFIX=	-0
 
 MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	PECL extension to the libssh2 library

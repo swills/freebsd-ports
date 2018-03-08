@@ -1,9 +1,8 @@
-# $FreeBSD: head/devel/pear-Horde_Cache/Makefile 435605 2017-03-07 14:22:52Z mm $
+# $FreeBSD: head/devel/pear-Horde_Cache/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Horde_Cache
 PORTVERSION=	2.5.5
 CATEGORIES=	devel www pear
-PKGNAMEPREFIX=	pear-
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde Caching API

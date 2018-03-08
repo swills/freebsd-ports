@@ -1,5 +1,5 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@inf.ufsc.br>)
-# $FreeBSD: head/devel/pear-PEAR_PackageFileManager/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/devel/pear-PEAR_PackageFileManager/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	PEAR_PackageFileManager
 PORTVERSION=	1.7.2
@@ -14,7 +14,7 @@ PEAR_XML_TREE_DESC=	PEAR::XML_Tree support
 
 USES=	pear
 
-PEAR_PHP_COMPATINFO_RUN_DEPENDS=	${PEARDIR}/PHP/CompatInfo.php:devel/pear-PHP_CompatInfo
-PEAR_XML_TREE_RUN_DEPENDS=	${PEARDIR}/XML/Tree.php:devel/pear-XML_Tree
+PEAR_PHP_COMPATINFO_RUN_DEPENDS=	${PEARDIR}/PHP/CompatInfo.php:devel/pear-PHP_CompatInfo@${PHP_FLAVOR}
+PEAR_XML_TREE_RUN_DEPENDS=	${PEARDIR}/XML/Tree.php:devel/pear-XML_Tree@${PHP_FLAVOR}
 
 .include <bsd.port.mk>

@@ -1,11 +1,11 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-uprofiler/Makefile 461158 2018-02-07 17:46:10Z mat $
+# $FreeBSD: head/devel/php-uprofiler/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	uprofiler
 PORTVERSION=	0.11.0.20150219
 PORTREVISION=	1
 CATEGORIES=	devel
-PKGNAMEPREFIX=	php-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Lightweight profiler for PHP

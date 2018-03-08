@@ -1,5 +1,5 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@inf.ufsc.br>)
-# $FreeBSD: head/databases/pear-DB_Table/Makefile 443159 2017-06-11 07:28:44Z sunpoet $
+# $FreeBSD: head/databases/pear-DB_Table/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	DB_Table
 PORTVERSION=	1.5.6
@@ -17,8 +17,8 @@ PEAR_HTML_QUICKFORM_DESC=	PEAR::HTML_QuickForm support
 PEAR_DB_DESC=	PEAR::DB support
 PEAR_MDB2_DESC=	PEAR::MDB2 support
 
-PEAR_HTML_QUICKFORM_RUN_DEPENDS=	${PEARDIR}/HTML/QuickForm.php:devel/pear-HTML_QuickForm
-PEAR_DB_RUN_DEPENDS=	${PEARDIR}/DB.php:databases/pear-DB
-PEAR_MDB2_RUN_DEPENDS=	${PEARDIR}/MDB2.php:databases/pear-MDB2
+PEAR_HTML_QUICKFORM_RUN_DEPENDS=	${PEARDIR}/HTML/QuickForm.php:devel/pear-HTML_QuickForm@${PHP_FLAVOR}
+PEAR_DB_RUN_DEPENDS=	${PEARDIR}/DB.php:databases/pear-DB@${PHP_FLAVOR}
+PEAR_MDB2_RUN_DEPENDS=	${PEARDIR}/MDB2.php:databases/pear-MDB2@${PHP_FLAVOR}
 
 .include <bsd.port.mk>

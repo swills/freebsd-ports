@@ -1,5 +1,5 @@
 # Created by: Marek Holienka	<marekholienka@gmail.com>
-# $FreeBSD: head/www/nibbleblog/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/nibbleblog/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	nibbleblog
 PORTVERSION=	3.0.2
@@ -11,7 +11,7 @@ DISTNAME=	nibbleblogv302
 MAINTAINER=	marekholienka@gmail.com
 COMMENT=	Lightweight blog system for general use
 
-RUN_DEPENDS=	pear:devel/pear
+RUN_DEPENDS=	pear:devel/pear@${PHP_FLAVOR}
 
 USES=		cpe php zip
 NO_BUILD=	yes

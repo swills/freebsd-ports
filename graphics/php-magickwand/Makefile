@@ -1,12 +1,12 @@
 # Created by: <mark@goodstorm.com>
-# $FreeBSD: head/graphics/php-magickwand/Makefile 461158 2018-02-07 17:46:10Z mat $
+# $FreeBSD: head/graphics/php-magickwand/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	magickwand
 PORTVERSION=	1.0.9
 PORTREVISION=	7
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.magickwand.org/download/php/
-PKGNAMEPREFIX=	php-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 DISTNAME=	MagickWandForPHP-${PORTVERSION}-2
 
 MAINTAINER=	ports@FreeBSD.org

@@ -1,10 +1,10 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-SebastianBergmann_PHPLOC/Makefile 457675 2017-12-31 09:22:19Z joneum $
+# $FreeBSD: head/devel/pear-SebastianBergmann_PHPLOC/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	PHPLOC
 DISTVERSION=	4.0.1
 CATEGORIES=	devel pear
-PKGNAMEPREFIX=	pear-SebastianBergmann_
+PKGNAMEPREFIX=	${PEAR_PKGNAMEPREFIX}SebastianBergmann_
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Tool for quickly measuring the size of a PHP project
@@ -12,13 +12,13 @@ COMMENT=	Tool for quickly measuring the size of a PHP project
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	pear-Symfony_Component_Console>=2.4.4:devel/pear-Symfony_Component_Console \
-		pear-SebastianBergmann_FinderFacade>=1.2.2:devel/pear-SebastianBergmann_FinderFacade \
-		pear-SebastianBergmann_Git>=1.2.0:devel/pear-SebastianBergmann_Git \
-		pear-SebastianBergmann_Version>=2.0.1:devel/pear-SebastianBergmann_Version \
-		pear-channel-phpunit>=20110327:devel/pear-channel-phpunit
+RUN_DEPENDS=	${PEAR_PKGNAMEPREFIX}Symfony_Component_Console>=2.4.4:devel/pear-Symfony_Component_Console@${PHP_FLAVOR} \
+		${PEAR_PKGNAMEPREFIX}SebastianBergmann_FinderFacade>=1.2.2:devel/pear-SebastianBergmann_FinderFacade@${PHP_FLAVOR} \
+		${PEAR_PKGNAMEPREFIX}SebastianBergmann_Git>=1.2.0:devel/pear-SebastianBergmann_Git@${PHP_FLAVOR} \
+		${PEAR_PKGNAMEPREFIX}SebastianBergmann_Version>=2.0.1:devel/pear-SebastianBergmann_Version@${PHP_FLAVOR} \
 
-USES=	php
+USES=	php pear:env
+PEAR_CHANNEL=	phpunit
 USE_GITHUB=	yes
 GH_ACCOUNT=	sebastianbergmann
 GH_PROJECT=	${PORTNAME:tl}

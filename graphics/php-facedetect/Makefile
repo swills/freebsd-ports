@@ -1,11 +1,11 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/graphics/php-facedetect/Makefile 438490 2017-04-14 05:30:25Z jbeich $
+# $FreeBSD: head/graphics/php-facedetect/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	facedetect
 PORTVERSION=	1.1
 PORTREVISION=	6
 CATEGORIES=	graphics
-PKGNAMEPREFIX=	php-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	mm@FreeBSD.org
 COMMENT=	Face detection extension for PHP using OpenCV library

@@ -1,9 +1,9 @@
-# $FreeBSD: head/deskutils/horde-nag/Makefile 450305 2017-09-21 20:45:32Z mm $
+# $FreeBSD: head/deskutils/horde-nag/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	nag
 PORTVERSION=	4.2.17
 CATEGORIES=	deskutils www pear
-PKGNAMEPREFIX=	horde-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}horde-
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde web based task list manager

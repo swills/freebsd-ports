@@ -1,11 +1,10 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-APCu4/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/devel/pecl-APCu4/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	APCu
 PORTVERSION=	4.0.11
 PORTREVISION=	1
 CATEGORIES=	devel
-PKGNAMESUFFIX=	4
 DISTNAME=	${PORTNAME:tl}-${PORTVERSION}
 
 MAINTAINER=	johnpupu@gmail.com

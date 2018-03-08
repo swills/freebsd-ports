@@ -1,5 +1,5 @@
 # Created by: Joe Horn <joehorn@gmail.com>
-# $FreeBSD: head/www/pear-twig/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/pear-twig/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	twig
 PORTVERSION=	1.28.1
@@ -12,9 +12,6 @@ COMMENT=	Flexible, fast, and secure template engine for PHP
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BUILD_DEPENDS=	${PEARDIR}/.channels/pear.twig-project.org.reg:devel/pear-channel-twig
-RUN_DEPENDS=	${PEARDIR}/.channels/pear.twig-project.org.reg:devel/pear-channel-twig
 
 USES=		pear php:cli
 PEAR_CHANNEL=	twig

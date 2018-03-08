@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/chinese/phpbb-tw/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/chinese/phpbb-tw/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	phpbb
 PORTVERSION=	2.0.23
@@ -12,10 +12,10 @@ DISTNAME=	phpBB-tw-${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	The Traditional Chinese version of phpBB
 
-RUN_DEPENDS=	${LOCALBASE}/share/pear/System.php:devel/pear
+RUN_DEPENDS=	${LOCALBASE}/share/pear/System.php:devel/pear@${PHP_FLAVOR}
 
 CONFLICTS=	phpbb-[0-9]*
-USES=		dos2unix
+USES=		dos2unix php
 
 # Get HOSTNAME
 .if exists(/sbin/sysctl)

@@ -1,9 +1,8 @@
-# $FreeBSD: head/databases/pecl-rrd1/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/databases/pecl-rrd1/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	rrd
 DISTVERSION=	1.1.3
 CATEGORIES=	databases pear
-PKGNAMESUFFIX=	1
 
 MAINTAINER=	daniel@blodan.se
 COMMENT=	PHP bindings to rrd tool system

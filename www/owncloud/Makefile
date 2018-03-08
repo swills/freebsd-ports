@@ -1,5 +1,5 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/www/owncloud/Makefile 462423 2018-02-20 20:24:08Z sunpoet $
+# $FreeBSD: head/www/owncloud/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	owncloud
 PORTVERSION=	10.0.7
@@ -41,7 +41,7 @@ MYSQL_USES=	mysql
 PGSQL_USES=	pgsql
 PGSQL_USE=	PHP=pdo_pgsql,pgsql
 SQLITE_USE=	PHP=pdo_sqlite,sqlite3
-SMB_RUN_DEPENDS=	pecl-smbclient>=0.8.0:net/pecl-smbclient
+SMB_RUN_DEPENDS=	${PECL_PKGNAMEPREFIX}smbclient>=0.8.0:net/pecl-smbclient@${PHP_FLAVOR}
 SSL_USE=	PHP=openssl
 
 do-install:

@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/phpunit7/Makefile 463254 2018-02-28 16:38:35Z joneum $
+# $FreeBSD: head/devel/phpunit7/Makefile 463918 2018-03-08 19:54:40Z mat $
 
 PORTNAME=	phpunit
 DISTVERSION=	7.0.2
 CATEGORIES=	devel www
 MASTER_SITES=	https://phar.phpunit.de/
-PKGNAMESUFFIX=	7
+PKGNAMESUFFIX=	7${PHP_PKGNAMESUFFIX}
 EXTRACT_SUFX=	.phar
 
 MAINTAINER=	joneum@FreeBSD.org
@@ -16,7 +16,7 @@ IGNORE_WITH_PHP=	56
 
 CONFLICTS_INSTALL=	phpunit
 
-USES=		cpe php
+USES=		cpe php:flavors
 CPE_VENDOR=	phpunit_project
 USE_PHP=	dom json spl pcre phar
 

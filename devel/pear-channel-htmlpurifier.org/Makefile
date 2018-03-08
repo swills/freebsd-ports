@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/pear-channel-htmlpurifier.org/Makefile 461674 2018-02-13 00:08:59Z mat $
+# $FreeBSD: head/devel/pear-channel-htmlpurifier.org/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	htmlpurifier.org
 PORTVERSION=	20140120
@@ -13,6 +13,5 @@ COMMENT=	PEAR channel ${PEAR_CHANNEL_HOST}
 PEAR_CHANNEL_HOST=	htmlpurifier.org
 PEAR_CHANNEL_ALIAS=	hp
 
-.include <bsd.port.pre.mk>
 .include "${PORTSDIR}/devel/pear/bsd.pear.channel.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

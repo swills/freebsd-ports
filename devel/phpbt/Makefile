@@ -1,5 +1,5 @@
 # Created by: Wes Peters <wes@FreeBSD.org>
-# $FreeBSD: head/devel/phpbt/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/phpbt/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	phpbt
 PORTVERSION=	1.0.1
@@ -13,7 +13,7 @@ COMMENT=	Bug-tracking system developed in PHP
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${LOCALBASE}/share/pear/DB.php:databases/pear-DB
+RUN_DEPENDS=	${LOCALBASE}/share/pear/DB.php:databases/pear-DB@${PHP_FLAVOR}
 
 .if !defined(WITHOUT_PHP_DEPENDS)
 USE_PHP=	ctype pcre posix session tokenizer xml zlib

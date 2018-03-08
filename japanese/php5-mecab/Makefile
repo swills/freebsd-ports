@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/php5-mecab/Makefile 461158 2018-02-07 17:46:10Z mat $
+# $FreeBSD: head/japanese/php5-mecab/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	mecab
 PORTVERSION=	0.5.0
@@ -19,6 +19,6 @@ CONFIGURE_ARGS=	--with-mecab=${LOCALBASE}/bin/mecab-config
 
 .include <bsd.port.pre.mk>
 
-PKGNAMEPREFIX:=	${PKGNAMEPREFIX}php5-
+PKGNAMEPREFIX:=	${PKGNAMEPREFIX}${PHP_PKGNAMEPREFIX}
 
 .include <bsd.port.post.mk>

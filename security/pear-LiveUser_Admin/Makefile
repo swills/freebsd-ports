@@ -1,5 +1,5 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@inf.ufsc.br>)
-# $FreeBSD: head/security/pear-LiveUser_Admin/Makefile 443320 2017-06-11 07:44:53Z sunpoet $
+# $FreeBSD: head/security/pear-LiveUser_Admin/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	LiveUser_Admin
 PORTVERSION=	0.4.0
@@ -9,8 +9,8 @@ CATEGORIES=	security www pear
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PEAR user authentication and permission management framework
 
-BUILD_DEPENDS=	${PEARDIR}/LiveUser.php:security/pear-LiveUser
-RUN_DEPENDS=	${PEARDIR}/LiveUser.php:security/pear-LiveUser
+BUILD_DEPENDS=	${PEARDIR}/LiveUser.php:security/pear-LiveUser@${PHP_FLAVOR}
+RUN_DEPENDS=	${PEARDIR}/LiveUser.php:security/pear-LiveUser@${PHP_FLAVOR}
 
 OPTIONS_DEFINE=	PEAR_DB PEAR_MDB PEAR_MDB2 PEAR_LOG PEAR_XML_TREE PEAR_CRYPT_RC4
 
@@ -23,11 +23,11 @@ PEAR_CRYPT_RC4_DESC=	PEAR::Crypt_RC4 support
 
 USES=		pear
 
-PEAR_DB_RUN_DEPENDS=	${PEARDIR}/DB.php:databases/pear-DB
-PEAR_MDB_RUN_DEPENDS=	${PEARDIR}/MDB.php:databases/pear-MDB
-PEAR_MDB2_RUN_DEPENDS=	${PEARDIR}/MDB2.php:databases/pear-MDB2
-PEAR_LOG_RUN_DEPENDS=	${PEARDIR}/Log.php:sysutils/pear-Log
-PEAR_XML_TREE_RUN_DEPENDS=	${PEARDIR}/XML/Tree.php:devel/pear-XML_Tree
-PEAR_CRYPT_RC4_RUN_DEPENDS=	${PEARDIR}/Crypt/Rc4.php:security/pear-Crypt_RC4
+PEAR_DB_RUN_DEPENDS=	${PEARDIR}/DB.php:databases/pear-DB@${PHP_FLAVOR}
+PEAR_MDB_RUN_DEPENDS=	${PEARDIR}/MDB.php:databases/pear-MDB@${PHP_FLAVOR}
+PEAR_MDB2_RUN_DEPENDS=	${PEARDIR}/MDB2.php:databases/pear-MDB2@${PHP_FLAVOR}
+PEAR_LOG_RUN_DEPENDS=	${PEARDIR}/Log.php:sysutils/pear-Log@${PHP_FLAVOR}
+PEAR_XML_TREE_RUN_DEPENDS=	${PEARDIR}/XML/Tree.php:devel/pear-XML_Tree@${PHP_FLAVOR}
+PEAR_CRYPT_RC4_RUN_DEPENDS=	${PEARDIR}/Crypt/Rc4.php:security/pear-Crypt_RC4@${PHP_FLAVOR}
 
 .include <bsd.port.mk>

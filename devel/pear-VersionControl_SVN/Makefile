@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/devel/pear-VersionControl_SVN/Makefile 443247 2017-06-11 07:37:47Z sunpoet $
+# $FreeBSD: head/devel/pear-VersionControl_SVN/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	VersionControl_SVN
 PORTVERSION=	0.5.2
@@ -10,8 +10,8 @@ COMMENT=	Wrapper interface for the Subversion command-line client
 
 LICENSE=	BSD2CLAUSE
 
-BUILD_DEPENDS=	pear-XML_Parser>=1.3.4:devel/pear-XML_Parser
-RUN_DEPENDS=	pear-XML_Parser>=1.3.4:devel/pear-XML_Parser
+BUILD_DEPENDS=	${PEAR_PKGNAMEPREFIX}XML_Parser>=1.3.4:devel/pear-XML_Parser@${PHP_FLAVOR}
+RUN_DEPENDS=	${PEAR_PKGNAMEPREFIX}XML_Parser>=1.3.4:devel/pear-XML_Parser@${PHP_FLAVOR}
 
 USES=		pear
 

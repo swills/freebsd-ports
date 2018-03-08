@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine (<tux@pinguru.net>)
-# $FreeBSD: head/devel/pear-HTML_Table/Makefile 419219 2016-07-28 13:03:41Z bofh $
+# $FreeBSD: head/devel/pear-HTML_Table/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	HTML_Table
 PORTVERSION=	1.8.4
@@ -10,8 +10,8 @@ COMMENT=	Makes design of HTML tables easy, flexible, reusable, and efficient
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PEARDIR}/HTML/Common.php:devel/pear-HTML_Common
-RUN_DEPENDS=	${PEARDIR}/HTML/Common.php:devel/pear-HTML_Common
+BUILD_DEPENDS=	${PEARDIR}/HTML/Common.php:devel/pear-HTML_Common@${PHP_FLAVOR}
+RUN_DEPENDS=	${PEARDIR}/HTML/Common.php:devel/pear-HTML_Common@${PHP_FLAVOR}
 
 USES=	pear
 NO_ARCH=	yes

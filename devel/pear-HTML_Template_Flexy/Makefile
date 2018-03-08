@@ -1,5 +1,5 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@inf.ufsc.br>)
-# $FreeBSD: head/devel/pear-HTML_Template_Flexy/Makefile 443212 2017-06-11 07:34:52Z sunpoet $
+# $FreeBSD: head/devel/pear-HTML_Template_Flexy/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	HTML_Template_Flexy
 PORTVERSION=	1.3.13
@@ -17,8 +17,8 @@ PEAR_TRANSLATION2_DESC=	PEAR::Translation2 support
 
 USES=		pear
 
-PEAR_HTML_JAVASCRIPT_RUN_DEPENDS=	${PEARDIR}/HTML/Javascript.php:devel/pear-HTML_Javascript
-PEAR_FILE_GETTEXT_RUN_DEPENDS=	${PEARDIR}/File/Gettext.php:sysutils/pear-File_Gettext
-PEAR_TRANSLATION2_RUN_DEPENDS=	${PEARDIR}/Translation2.php:sysutils/pear-Translation2
+PEAR_HTML_JAVASCRIPT_RUN_DEPENDS=	${PEARDIR}/HTML/Javascript.php:devel/pear-HTML_Javascript@${PHP_FLAVOR}
+PEAR_FILE_GETTEXT_RUN_DEPENDS=	${PEARDIR}/File/Gettext.php:sysutils/pear-File_Gettext@${PHP_FLAVOR}
+PEAR_TRANSLATION2_RUN_DEPENDS=	${PEARDIR}/Translation2.php:sysutils/pear-Translation2@${PHP_FLAVOR}
 
 .include <bsd.port.mk>

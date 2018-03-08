@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/icingaweb2/Makefile 459785 2018-01-23 16:04:24Z lme $
+# $FreeBSD: head/net-mgmt/icingaweb2/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	icingaweb2
 DISTVERSIONPREFIX=	v
@@ -40,7 +40,7 @@ NLS_USE=	php=intl
 PGSQL_USE=	PHP=pdo_pgsql,pgsql
 MYSQL_USE=	PHP=pdo_mysql
 LDAP_USE=	PHP=ldap
-PDF_RUN_DEPENDS=	${PHPBASE}/lib/php/${PHP_EXT_DIR}/imagick.so:graphics/pecl-imagick
+PDF_RUN_DEPENDS=	${PHPBASE}/lib/php/${PHP_EXT_DIR}/imagick.so:graphics/pecl-imagick@${PHP_FLAVOR}
 
 post-patch:
 	${REINPLACE_CMD} 's%\(/etc/icingaweb2\)%${PREFIX}\1%g' \

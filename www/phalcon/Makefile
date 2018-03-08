@@ -1,10 +1,11 @@
 # Created by: Jin-Sih Lin <linpct@gmail.com>
-# $FreeBSD: head/www/phalcon/Makefile 458828 2018-01-12 14:06:44Z vanilla $
+# $FreeBSD: head/www/phalcon/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	phalcon
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.3.1
 CATEGORIES=	www
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
 MAINTAINER=	linpct@gmail.com
 COMMENT=	Phalcon PHP Framework written in C-language

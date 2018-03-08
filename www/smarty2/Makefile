@@ -1,5 +1,5 @@
 # Created by: Simon 'corecode' Schubert <corecode@corecode.ath.cx>
-# $FreeBSD: head/www/smarty2/Makefile 457476 2017-12-28 20:09:31Z danilo $
+# $FreeBSD: head/www/smarty2/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	smarty
 PORTVERSION=	2.6.31
@@ -7,6 +7,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 MASTER_SITES=	http://www.smarty.net/files/docs/:manual
 DISTFILES=	manual-en-${PORTVERSION:R}.zip:manual
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
 MAINTAINER=	danilo@FreeBSD.org
 COMMENT=	PHP compiling template engine
@@ -17,7 +18,7 @@ OPTIONS_DEFINE=	DOCS
 
 NO_ARCH=	yes
 NO_BUILD=	yes
-USES=		php:web
+USES=		php:web,flavors
 USE_PHP=	pcre
 
 PKGMESSAGE=	${WRKDIR}/pkg-message

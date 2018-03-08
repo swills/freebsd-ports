@@ -1,10 +1,10 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/chinese/php-opencc/Makefile 428730 2016-12-17 12:53:14Z sunpoet $
+# $FreeBSD: head/chinese/php-opencc/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	opencc
 PORTVERSION=	0.0.0.20161110
 CATEGORIES=	chinese
-PKGNAMEPREFIX=	php-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	OpenCC shared extension for php

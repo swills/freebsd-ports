@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/devel/pear-htmlpurifier/Makefile 461674 2018-02-13 00:08:59Z mat $
+# $FreeBSD: head/devel/pear-htmlpurifier/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	htmlpurifier
 PORTVERSION=	4.9.2
@@ -8,15 +8,12 @@ CATEGORIES=	devel pear www
 MASTER_SITES=	http://htmlpurifier.org/get/ \
 		LOCAL
 DISTNAME=	HTMLPurifier-${PORTVERSION}
-PKGNAMEPREFIX=	pear-
+PKGNAMEPREFIX=	${PEAR_PKGNAMEPREFIX}
 
 MAINTAINER=	feld@FreeBSD.org
 COMMENT=	PHP HTML filter library
 
 LICENSE=	LGPL21
-
-BUILD_DEPENDS=	${PEARDIR}/.channels/htmlpurifier.org.reg:devel/pear-channel-htmlpurifier.org
-RUN_DEPENDS=	${PEARDIR}/.channels/htmlpurifier.org.reg:devel/pear-channel-htmlpurifier.org
 
 PEAR_CHANNEL=	htmlpurifier.org
 USES=	pear

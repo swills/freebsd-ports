@@ -1,11 +1,10 @@
 # Created by: Muhammad Moinur Rahman<bofh@FreeBSD.org>
-# $FreeBSD: head/devel/pecl-raphf2/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/devel/pecl-raphf2/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	raphf
 PORTVERSION=	2.0.0
 PORTREVISION=	1
 CATEGORIES=	devel
-PKGNAMESUFFIX=	2
 
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Resource and persistent handles factory

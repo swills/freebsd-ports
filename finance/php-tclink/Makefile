@@ -1,12 +1,12 @@
 # Created by: <mbowie@buzmo.com>
-# $FreeBSD: head/finance/php-tclink/Makefile 461158 2018-02-07 17:46:10Z mat $
+# $FreeBSD: head/finance/php-tclink/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	tclink
 PORTVERSION=	4.0.2
 PORTREVISION=	2
 CATEGORIES=	finance
 MASTER_SITES=	https://vault.trustcommerce.com/downloads/
-PKGNAMEPREFIX=	php-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 DISTNAME=	${PORTNAME}-${PORTVERSION}-php
 
 MAINTAINER=	mbowie@buzmo.com

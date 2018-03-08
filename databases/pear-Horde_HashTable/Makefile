@@ -1,9 +1,8 @@
-# $FreeBSD: head/databases/pear-Horde_HashTable/Makefile 421524 2016-09-07 22:54:27Z mm $
+# $FreeBSD: head/databases/pear-Horde_HashTable/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Horde_HashTable
 PORTVERSION=	1.2.6
 CATEGORIES=	databases www pear
-PKGNAMEPREFIX=	pear-
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde Hash Table Interface

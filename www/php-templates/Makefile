@@ -1,12 +1,13 @@
 # Created by: vanilla
-# $FreeBSD: head/www/php-templates/Makefile 461013 2018-02-05 18:55:44Z mat $
+# $FreeBSD: head/www/php-templates/Makefile 463917 2018-03-08 19:48:41Z mat $
 
-PORTNAME=	php-templates
+PORTNAME=	templates
 PORTVERSION=	1.7.2
 PORTREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/1.7:ext \
 		SF/${PORTNAME}/${PORTNAME}-doc/html:doc
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 DISTNAME=	php_templates-${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}:ext
 DISTFILES+=	php_templates-doc-eng-1.1${EXTRACT_SUFX}:doc

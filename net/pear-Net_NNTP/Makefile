@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <sheepkiller@cultdeadsheep.org>
-# $FreeBSD: head/net/pear-Net_NNTP/Makefile 450050 2017-09-18 16:18:55Z joneum $
+# $FreeBSD: head/net/pear-Net_NNTP/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Net_NNTP
 PORTVERSION=	1.5.2
@@ -14,8 +14,8 @@ LICENSE_NAME=	W3C IPR SOFTWARE NOTICE
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-BUILD_DEPENDS=	${PEARDIR}/Net/Socket.php:net/pear-Net_Socket
-RUN_DEPENDS=	${PEARDIR}/Net/Socket.php:net/pear-Net_Socket
+BUILD_DEPENDS=	${PEARDIR}/Net/Socket.php:net/pear-Net_Socket@${PHP_FLAVOR}
+RUN_DEPENDS=	${PEARDIR}/Net/Socket.php:net/pear-Net_Socket@${PHP_FLAVOR}
 
 NO_ARCH=	yes
 

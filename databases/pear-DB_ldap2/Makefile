@@ -1,5 +1,5 @@
 # Created by: Wen heping <wenheping@gmail.com>
-# $FreeBSD: head/databases/pear-DB_ldap2/Makefile 443161 2017-06-11 07:28:53Z sunpoet $
+# $FreeBSD: head/databases/pear-DB_ldap2/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	DB_ldap2
 PORTVERSION=	0.5.1
@@ -9,8 +9,8 @@ CATEGORIES=	databases net pear
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PEAR DB compliant interface to LDAP v2 and v3 database
 
-BUILD_DEPENDS=	${PEARDIR}/DB.php:databases/pear-DB
-RUN_DEPENDS=	${PEARDIR}/DB.php:databases/pear-DB
+BUILD_DEPENDS=	${PEARDIR}/DB.php:databases/pear-DB@${PHP_FLAVOR}
+RUN_DEPENDS=	${PEARDIR}/DB.php:databases/pear-DB@${PHP_FLAVOR}
 
 USE_PHP=	ldap
 USES=		pear php

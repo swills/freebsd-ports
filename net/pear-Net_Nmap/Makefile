@@ -1,5 +1,5 @@
 # Created by: Wen Heping<wenheping@gmail.com>
-# $FreeBSD: head/net/pear-Net_Nmap/Makefile 443287 2017-06-11 07:42:00Z sunpoet $
+# $FreeBSD: head/net/pear-Net_Nmap/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Net_Nmap
 PORTVERSION=	1.0.5
@@ -10,8 +10,8 @@ COMMENT=	Simple Wrapper Class for the Nmap Utility
 
 LICENSE=	LGPL3
 
-BUILD_DEPENDS=	${PEARDIR}/XML/Parser.php:devel/pear-XML_Parser
-RUN_DEPENDS:=	${PEARDIR}/XML/Parser.php:devel/pear-XML_Parser
+BUILD_DEPENDS=	${PEARDIR}/XML/Parser.php:devel/pear-XML_Parser@${PHP_FLAVOR}
+RUN_DEPENDS:=	${PEARDIR}/XML/Parser.php:devel/pear-XML_Parser@${PHP_FLAVOR}
 
 USES=		pear
 

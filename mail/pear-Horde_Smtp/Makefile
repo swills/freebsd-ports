@@ -1,9 +1,9 @@
-# $FreeBSD: head/mail/pear-Horde_Smtp/Makefile 444450 2017-06-27 10:02:04Z mm $
+# $FreeBSD: head/mail/pear-Horde_Smtp/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Horde_Smtp
 PORTVERSION=	1.9.5
 CATEGORIES=	mail www pear
-PKGNAMEPREFIX=	pear-
+PKGNAMEPREFIX=	${PEAR_PKGNAMEPREFIX}
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde SMTP Client

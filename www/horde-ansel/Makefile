@@ -1,9 +1,9 @@
-# $FreeBSD: head/www/horde-ansel/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/horde-ansel/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	ansel
 PORTVERSION=	3.0.8
 CATEGORIES=	www pear graphics
-PKGNAMEPREFIX=	horde-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}horde-
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde Photo Management and Web Gallery

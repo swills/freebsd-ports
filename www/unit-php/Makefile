@@ -1,17 +1,15 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/www/unit-php56/Makefile 459541 2018-01-20 19:23:58Z osa $
+# $FreeBSD: head/www/unit-php/Makefile 463917 2018-03-08 19:48:41Z mat $
 
-PHP_VER?=	56
-
-PKGNAMESUFFIX=	-php${PHP_VER}
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
 COMMENT=	PHP module for NGINX Unit
 
 PLIST_FILES=	libexec/unit/modules/php${PHP_VER}.unit.so
 
-USES=		php:build,embed
+USES=		php:build,embed,flavors
 
-USE_RC_SUBR?=	# reset to empty
+USE_RC_SUBR=	# reset to empty
 
 MASTERDIR=	${.CURDIR}/../unit
 

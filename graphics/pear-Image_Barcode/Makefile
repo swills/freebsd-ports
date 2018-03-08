@@ -1,5 +1,5 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@inf.ufsc.br>)
-# $FreeBSD: head/graphics/pear-Image_Barcode/Makefile 443256 2017-06-11 07:39:31Z sunpoet $
+# $FreeBSD: head/graphics/pear-Image_Barcode/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Image_Barcode
 PORTVERSION=	1.1.3
@@ -14,6 +14,6 @@ USES=		pear php
 OPTIONS_DEFINE=		PEAR_PHP_COMPAT
 PEAR_PHP_COMPAT_DESC=	PEAR::PHP_Compat support
 
-PEAR_PHP_COMPAT_RUN_DEPENDS=	${PEARDIR}/PHP/Compat.php:devel/pear-PHP_Compat
+PEAR_PHP_COMPAT_RUN_DEPENDS=	${PEARDIR}/PHP/Compat.php:devel/pear-PHP_Compat@${PHP_FLAVOR}
 
 .include <bsd.port.mk>

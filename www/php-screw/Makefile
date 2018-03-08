@@ -1,11 +1,12 @@
 # Created by: Alex Dupre <sysadmin@alexdupre.com>
-# $FreeBSD: head/www/php-screw/Makefile 442538 2017-06-04 09:01:15Z amdmi3 $
+# $FreeBSD: head/www/php-screw/Makefile 463917 2018-03-08 19:48:41Z mat $
 
-PORTNAME=	php-screw
+PORTNAME=	screw
 PORTVERSION=	1.5
 PORTREVISION=	1
 CATEGORIES=	www security
 MASTER_SITES=	SF/${PORTNAME}/OldFiles
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 DISTNAME=	php_screw-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 

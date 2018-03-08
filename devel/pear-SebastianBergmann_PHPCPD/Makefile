@@ -1,10 +1,10 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-SebastianBergmann_PHPCPD/Makefile 458558 2018-01-09 18:44:07Z danfe $
+# $FreeBSD: head/devel/pear-SebastianBergmann_PHPCPD/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	PHPCPD
 DISTVERSION=	2.0.0
 CATEGORIES=	devel pear
-PKGNAMEPREFIX=	pear-SebastianBergmann_
+PKGNAMEPREFIX=	${PEAR_PKGNAMEPREFIX}SebastianBergmann_
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Copy/Paste Detector (CPD) for PHP code
@@ -12,16 +12,15 @@ COMMENT=	Copy/Paste Detector (CPD) for PHP code
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	pear-ezc_ConsoleTools>=1.6.1:devel/pear-ezc_ConsoleTools \
-		pear-SebastianBergmann_FinderFacade>=1.2.2:devel/pear-SebastianBergmann_FinderFacade \
-		pear-PHP_Timer>=1.0.9:devel/pear-PHP_Timer \
-		pear-channel-phpunit>=20110327:devel/pear-channel-phpunit
-RUN_DEPENDS=	pear-ezc_ConsoleTools>=1.6.1:devel/pear-ezc_ConsoleTools \
-		pear-SebastianBergmann_FinderFacade>=1.2.2:devel/pear-SebastianBergmann_FinderFacade \
-		pear-PHP_Timer>=1.0.9:devel/pear-PHP_Timer \
-		pear-channel-phpunit>=20110327:devel/pear-channel-phpunit
+BUILD_DEPENDS=	${PEAR_PKGNAMEPREFIX}ezc_ConsoleTools>=1.6.1:devel/pear-ezc_ConsoleTools@${PHP_FLAVOR} \
+		${PEAR_PKGNAMEPREFIX}SebastianBergmann_FinderFacade>=1.2.2:devel/pear-SebastianBergmann_FinderFacade@${PHP_FLAVOR} \
+		${PEAR_PKGNAMEPREFIX}PHP_Timer>=1.0.9:devel/pear-PHP_Timer@${PHP_FLAVOR}
+RUN_DEPENDS=	${PEAR_PKGNAMEPREFIX}ezc_ConsoleTools>=1.6.1:devel/pear-ezc_ConsoleTools@${PHP_FLAVOR} \
+		${PEAR_PKGNAMEPREFIX}SebastianBergmann_FinderFacade>=1.2.2:devel/pear-SebastianBergmann_FinderFacade@${PHP_FLAVOR} \
+		${PEAR_PKGNAMEPREFIX}PHP_Timer>=1.0.9:devel/pear-PHP_Timer@${PHP_FLAVOR}
 
-USES=	php
+USES=	php pear:env
+PEAR_CHANNEL=	phpunit
 USE_GITHUB=	yes
 GH_ACCOUNT=	sebastianbergmann
 GH_PROJECT=	${PORTNAME:tl}

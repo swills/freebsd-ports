@@ -1,5 +1,5 @@
 # Created by: Jimmy Olgeni <olgeni@uli.it>
-# $FreeBSD: head/deskutils/egroupware/Makefile 461549 2018-02-12 01:28:14Z danilo $
+# $FreeBSD: head/deskutils/egroupware/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	eGroupware
 PORTVERSION=	17.1.20180209
@@ -13,15 +13,15 @@ COMMENT=	Web-based GroupWare system
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKDIR}/${PORTNAME:tl}/doc/LICENSE
 
-RUN_DEPENDS=	${LOCALBASE}/share/pear/Net/Sieve.php:net/pear-Net_Sieve \
-		${LOCALBASE}/share/pear/Horde/Imap/Client.php:mail/pear-Horde_Imap_Client \
-		${LOCALBASE}/share/pear/Horde/Nls.php:devel/pear-Horde_Nls \
-		${LOCALBASE}/share/pear/Horde/Mail/Transport.php:mail/pear-Horde_Mail \
-		${LOCALBASE}/share/pear/Horde/Smtp.php:mail/pear-Horde_Smtp \
-		${LOCALBASE}/share/pear/Horde/Compress.php:archivers/pear-Horde_Compress \
-		${LOCALBASE}/share/pear/Horde/Icalendar.php:devel/pear-Horde_Icalendar \
-		${LOCALBASE}/share/pear/Horde/Mapi.php:mail/pear-Horde_Mapi \
-		${LOCALBASE}/share/pear/Horde/Crypt.php:security/pear-Horde_Crypt
+RUN_DEPENDS=	${LOCALBASE}/share/pear/Net/Sieve.php:net/pear-Net_Sieve@${PHP_FLAVOR} \
+		${LOCALBASE}/share/pear/Horde/Imap/Client.php:mail/pear-Horde_Imap_Client@${PHP_FLAVOR} \
+		${LOCALBASE}/share/pear/Horde/Nls.php:devel/pear-Horde_Nls@${PHP_FLAVOR} \
+		${LOCALBASE}/share/pear/Horde/Mail/Transport.php:mail/pear-Horde_Mail@${PHP_FLAVOR} \
+		${LOCALBASE}/share/pear/Horde/Smtp.php:mail/pear-Horde_Smtp@${PHP_FLAVOR} \
+		${LOCALBASE}/share/pear/Horde/Compress.php:archivers/pear-Horde_Compress@${PHP_FLAVOR} \
+		${LOCALBASE}/share/pear/Horde/Icalendar.php:devel/pear-Horde_Icalendar@${PHP_FLAVOR} \
+		${LOCALBASE}/share/pear/Horde/Mapi.php:mail/pear-Horde_Mapi@${PHP_FLAVOR} \
+		${LOCALBASE}/share/pear/Horde/Crypt.php:security/pear-Horde_Crypt@${PHP_FLAVOR}
 
 USES=		cpe php tar:bzip2
 USE_PHP=	bcmath bz2 ctype json session simplexml tidy xmlreader zlib

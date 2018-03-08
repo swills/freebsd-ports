@@ -1,5 +1,5 @@
 # Created by: Bartlomiej Rutkowski <r@robakdesign.com>
-# $FreeBSD: head/www/hastymail2/Makefile 461130 2018-02-07 10:06:07Z bapt $
+# $FreeBSD: head/www/hastymail2/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	hastymail2
 PORTVERSION=	1.1
@@ -42,19 +42,19 @@ MBSTRING_DESC=	Support multi-byte character sets
 .if ${PORT_OPTIONS:MMYSQL}
 USE_MYSQL=	yes
 .if ! ${PORT_OPTIONS:MDB}
-RUN_DEPENDS+=	${LOCALBASE}/share/pear/MDB2/Driver/mysql.php:databases/pear-MDB2_Driver_mysql
+RUN_DEPENDS+=	${LOCALBASE}/share/pear/MDB2/Driver/mysql.php:databases/pear-MDB2_Driver_mysql@${PHP_FLAVOR}
 .endif
 .endif
 
 .if ${PORT_OPTIONS:MPGSQL}
 USES+=	pgsql
 .if ! ${PORT_OPTIONS:MDB}
-RUN_DEPENDS+=	${LOCALBASE}/share/pear/MDB2/Driver/pgsql.php:databases/pear-MDB2_Driver_pgsql
+RUN_DEPENDS+=	${LOCALBASE}/share/pear/MDB2/Driver/pgsql.php:databases/pear-MDB2_Driver_pgsql@${PHP_FLAVOR}
 .endif
 .endif
 
 .if ${PORT_OPTIONS:MDB} && (${PORT_OPTIONS:MMYSQL} || ${PORT_OPTIONS:MPGSQL})
-RUN_DEPENDS+=	${LOCALBASE}/share/pear/DB.php:databases/pear-DB
+RUN_DEPENDS+=	${LOCALBASE}/share/pear/DB.php:databases/pear-DB@${PHP_FLAVOR}
 .endif
 
 .if ${PORT_OPTIONS:MICONV}

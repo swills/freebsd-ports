@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/php71-opcache/Makefile 458658 2018-01-10 16:07:02Z tz $
+# $FreeBSD: head/www/php71-opcache/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 CATEGORIES=	www
 
@@ -6,6 +6,6 @@ MASTERDIR=	${.CURDIR}/../../lang/php71
 
 PKGNAMESUFFIX=	-opcache
 
-USES=	php:zend
+USES=	php:zend,noflavors
 
 .include "${MASTERDIR}/Makefile"

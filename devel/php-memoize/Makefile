@@ -1,20 +1,21 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-memoize/Makefile 461158 2018-02-07 17:46:10Z mat $
+# $FreeBSD: head/devel/php-memoize/Makefile 463917 2018-03-08 19:48:41Z mat $
 
-PORTNAME=	php-memoize
+PORTNAME=	memoize
 PORTVERSION=	0.2.0b1
 DISTVERSIONPREFIX=	v
 PORTREVISION=	3
 CATEGORIES=	devel
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PHP extension which transparently caches PHP functions
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	arraypad
+GH_PROJECT=	php-${PORTNAME}
 
 USES=		php:ext
-PHP_MODNAME=	memoize
 IGNORE_WITH_PHP=	70 71 72
 CONFIGURE_ARGS=	--enable-memoize
 

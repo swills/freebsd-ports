@@ -1,9 +1,9 @@
-# $FreeBSD: head/graphics/pear-Horde_Image/Makefile 450171 2017-09-19 21:48:42Z mm $
+# $FreeBSD: head/graphics/pear-Horde_Image/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Horde_Image
 PORTVERSION=	2.5.2
 CATEGORIES=	graphics www pear
-PKGNAMEPREFIX=	pear-
+PKGNAMEPREFIX=	${PEAR_PKGNAMEPREFIX}
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde Image API

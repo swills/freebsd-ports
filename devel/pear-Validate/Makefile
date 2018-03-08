@@ -1,5 +1,5 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@php.net>)
-# $FreeBSD: head/devel/pear-Validate/Makefile 443241 2017-06-11 07:37:17Z sunpoet $
+# $FreeBSD: head/devel/pear-Validate/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Validate
 PORTVERSION=	0.8.5
@@ -15,10 +15,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 OPTIONS_DEFINE=	DATE IDNA
 
 DATE_DESC=	Date and Time Zone Classes
-DATE_RUN_DEPENDS=	${PEARDIR}/Date.php:devel/pear-Date
+DATE_RUN_DEPENDS=	${PEARDIR}/Date.php:devel/pear-Date@${PHP_FLAVOR}
 
 IDNA_DESC=	Net_IDNA - Punycode encoding and decoding package
-IDNA_RUN_DEPENDS=	${PEARDIR}/Net/IDNA.php:net/pear-Net_IDNA
+IDNA_RUN_DEPENDS=	${PEARDIR}/Net/IDNA.php:net/pear-Net_IDNA@${PHP_FLAVOR}
 
 USES=		pear
 NO_ARCH=	yes

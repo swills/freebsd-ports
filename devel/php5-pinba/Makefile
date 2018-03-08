@@ -1,11 +1,11 @@
 # Created by: raven428 <raven428@gmail.com>
-# $FreeBSD: head/devel/php5-pinba/Makefile 461158 2018-02-07 17:46:10Z mat $
+# $FreeBSD: head/devel/php5-pinba/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	pinba
 PORTVERSION=	2012.03.20
 PORTREVISION=	8
 CATEGORIES=	devel
-PKGNAMEPREFIX=	php5-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	komarov@valerka.net
 COMMENT=	PHP-extension part of statistics server for PHP

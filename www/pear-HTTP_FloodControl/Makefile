@@ -1,5 +1,5 @@
 # Created by: Ditesh Shashikant Gathani <ditesh@gathani.org>
-# $FreeBSD: head/www/pear-HTTP_FloodControl/Makefile 443343 2017-06-11 07:46:44Z sunpoet $
+# $FreeBSD: head/www/pear-HTTP_FloodControl/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	HTTP_FloodControl
 PORTVERSION=	0.1.1
@@ -8,8 +8,8 @@ CATEGORIES=	www pear
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PEAR classes to detect and protect from attempts to flood a site
 
-BUILD_DEPENDS=	${PEARDIR}/HTTP.php:www/pear-HTTP
-RUN_DEPENDS=	${PEARDIR}/HTTP.php:www/pear-HTTP
+BUILD_DEPENDS=	${PEARDIR}/HTTP.php:www/pear-HTTP@${PHP_FLAVOR}
+RUN_DEPENDS=	${PEARDIR}/HTTP.php:www/pear-HTTP@${PHP_FLAVOR}
 
 DOCS=		README LICENSE
 OPTIONS_DEFINE=	PEAR_DB PEAR_MDB PEAR_MDB2
@@ -19,9 +19,9 @@ PEAR_MDB2_DESC=	PEAR::MDB2 support
 
 USES=		pear
 
-PEAR_DB_RUN_DEPENDS=	${PEARDIR}/DB.php:databases/pear-DB
-PEAR_MDB_RUN_DEPENDS=	${PEARDIR}/MDB.php:databases/pear-MDB
-PEAR_MDB2_RUN_DEPENDS=	${PEARDIR}/MDB2.php:databases/pear-MDB2
+PEAR_DB_RUN_DEPENDS=	${PEARDIR}/DB.php:databases/pear-DB@${PHP_FLAVOR}
+PEAR_MDB_RUN_DEPENDS=	${PEARDIR}/MDB.php:databases/pear-MDB@${PHP_FLAVOR}
+PEAR_MDB2_RUN_DEPENDS=	${PEARDIR}/MDB2.php:databases/pear-MDB2@${PHP_FLAVOR}
 
 post-extract:
 	${MKDIR} ${WRKSRC}/docs

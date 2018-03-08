@@ -1,14 +1,14 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/graphics/php-geos/Makefile 429542 2016-12-26 16:43:36Z sunpoet $
+# $FreeBSD: head/graphics/php-geos/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	geos
 PORTVERSION=	1.0.0
 CATEGORIES=	graphics
 MASTER_SITES=	https://git.osgeo.org/gogs/geos/php-geos/archive/ \
 		LOCAL/sunpoet/${PKGNAMEPREFIX}${PORTNAME}
-PKGNAMEPREFIX=	php-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 DISTNAME=	${DISTVERSION}
-DIST_SUBDIR=	${PKGNAMEPREFIX}${PORTNAME}
+DIST_SUBDIR=	php-${PORTNAME}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	PHP bindings for GEOS
@@ -24,6 +24,6 @@ LIB_DEPENDS=	libgeos_c.so:graphics/geos
 LDFLAGS+=	-L${PREFIX}/lib
 USES=		php:ext
 
-WRKSRC=		${WRKDIR}/${PKGNAMEPREFIX}${PORTNAME}
+WRKSRC=		${WRKDIR}/php-${PORTNAME}
 
 .include <bsd.port.mk>

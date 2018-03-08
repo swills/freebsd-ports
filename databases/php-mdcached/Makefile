@@ -1,12 +1,12 @@
 # Created by: Ivan Voras <ivoras@FreeBSD.org>
-# $FreeBSD: head/databases/php-mdcached/Makefile 461158 2018-02-07 17:46:10Z mat $
+# $FreeBSD: head/databases/php-mdcached/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	mdcached
 PORTVERSION=	1.0.9
 PORTREVISION=	1
 CATEGORIES=	databases devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
-PKGNAMEPREFIX=	php-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ivoras@FreeBSD.org

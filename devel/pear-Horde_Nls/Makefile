@@ -1,11 +1,10 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/pear-Horde_Nls/Makefile 425772 2016-11-08 23:31:05Z mm $
+# $FreeBSD: head/devel/pear-Horde_Nls/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	Horde_Nls
 PORTVERSION=	2.2.1
 CATEGORIES=	devel www pear
 MASTER_SITES=	http://pear.horde.org/get/
-PKGNAMEPREFIX=	pear-
 
 MAINTAINER=	horde@FreeBSD.org
 COMMENT=	Horde Native Language Support
@@ -18,6 +17,6 @@ OPTIONS_DEFINE=	GEOIP
 GEOIP_DESC=	Depend on geoip PHP extension
 
 GEOIP_USES=	php
-GEOIP_RUN_DEPENDS=	${PHPBASE}/lib/php/${PHP_EXT_DIR}/geoip.so:net/pecl-geoip
+GEOIP_RUN_DEPENDS=	${PHPBASE}/lib/php/${PHP_EXT_DIR}/geoip.so:net/pecl-geoip@${PHP_FLAVOR}
 
 .include <bsd.port.mk>

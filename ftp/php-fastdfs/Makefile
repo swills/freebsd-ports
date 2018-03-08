@@ -1,13 +1,12 @@
-# $FreeBSD: head/ftp/php56-fastdfs/Makefile 456222 2017-12-13 17:22:46Z joneum $
+# $FreeBSD: head/ftp/php-fastdfs/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	fastdfs
 DISTVERSION=	5.0.11
 CATEGORIES=	ftp
-PKGNAMEPREFIX?=	php56-
-IGNORE_WITH_PHP?=	70 71 72
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	daniel@blodan.se
-COMMENT?=	PHP 5.6 module for accessing a FastDFS cluster
+COMMENT?=	PHP module for accessing a FastDFS cluster
 
 LICENSE=	GPLv3+
 
@@ -20,7 +19,6 @@ GH_PROJECT=	fastdfs
 GH_TAGNAME=	1e50b4f
 
 USES=			php:ext
-PHP_VER?=		56
 
 WRKSRC_SUBDIR=	php_client
 CONFIGURE_ENV=	ROOT=${LOCALBASE}

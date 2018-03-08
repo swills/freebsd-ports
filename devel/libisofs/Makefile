@@ -1,8 +1,9 @@
 # Created by: J.R. Oldroyd <fbsd@opal.com>
-# $FreeBSD: head/devel/libisofs/Makefile 450487 2017-09-24 11:27:54Z riggs $
+# $FreeBSD: head/devel/libisofs/Makefile 463912 2018-03-08 18:55:50Z yuri $
 
 PORTNAME=	libisofs
 PORTVERSION=	1.4.8
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://files.libburnia-project.org/releases/
 
