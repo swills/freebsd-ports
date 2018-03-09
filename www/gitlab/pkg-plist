@@ -4881,6 +4881,7 @@
 %%WWWDIR%%/app/views/projects/services/mattermost_slash_commands/_detailed_help.html.haml
 %%WWWDIR%%/app/views/projects/services/mattermost_slash_commands/_help.html.haml
 %%WWWDIR%%/app/views/projects/services/mattermost_slash_commands/_installation_info.html.haml
+%%WWWDIR%%/app/views/projects/services/prometheus/_configuration_banner.html.haml
 %%WWWDIR%%/app/views/projects/services/prometheus/_help.html.haml
 %%WWWDIR%%/app/views/projects/services/prometheus/_show.html.haml
 %%WWWDIR%%/app/views/projects/services/slack_slash_commands/_help.html.haml
@@ -8859,8 +8860,8 @@
 %%WWWDIR%%/lib/gitlab/sidekiq_config.rb
 %%WWWDIR%%/lib/gitlab/sidekiq_logger.rb
 %%WWWDIR%%/lib/gitlab/sidekiq_middleware/arguments_logger.rb
-%%WWWDIR%%/lib/gitlab/sidekiq_middleware/memory_killer.rb
 %%WWWDIR%%/lib/gitlab/sidekiq_middleware/request_store_middleware.rb
+%%WWWDIR%%/lib/gitlab/sidekiq_middleware/shutdown.rb
 %%WWWDIR%%/lib/gitlab/sidekiq_status.rb
 %%WWWDIR%%/lib/gitlab/sidekiq_status/client_middleware.rb
 %%WWWDIR%%/lib/gitlab/sidekiq_status/server_middleware.rb
@@ -9529,6 +9530,7 @@
 %%WWWDIR%%/spec/features/admin/admin_users_impersonation_tokens_spec.rb
 %%WWWDIR%%/spec/features/admin/admin_users_spec.rb
 %%WWWDIR%%/spec/features/admin/admin_uses_repository_checks_spec.rb
+%%WWWDIR%%/spec/features/admin/services/admin_activates_prometheus_spec.rb
 %%WWWDIR%%/spec/features/atom/dashboard_issues_spec.rb
 %%WWWDIR%%/spec/features/atom/dashboard_spec.rb
 %%WWWDIR%%/spec/features/atom/issues_spec.rb
@@ -9845,6 +9847,7 @@
 %%WWWDIR%%/spec/features/projects/services/user_activates_mattermost_slash_command_spec.rb
 %%WWWDIR%%/spec/features/projects/services/user_activates_packagist_spec.rb
 %%WWWDIR%%/spec/features/projects/services/user_activates_pivotaltracker_spec.rb
+%%WWWDIR%%/spec/features/projects/services/user_activates_prometheus_spec.rb
 %%WWWDIR%%/spec/features/projects/services/user_activates_pushover_spec.rb
 %%WWWDIR%%/spec/features/projects/services/user_activates_slack_notifications_spec.rb
 %%WWWDIR%%/spec/features/projects/services/user_activates_slack_slash_command_spec.rb
@@ -11273,7 +11276,7 @@
 %%WWWDIR%%/spec/lib/gitlab/sherlock/query_spec.rb
 %%WWWDIR%%/spec/lib/gitlab/sherlock/transaction_spec.rb
 %%WWWDIR%%/spec/lib/gitlab/sidekiq_config_spec.rb
-%%WWWDIR%%/spec/lib/gitlab/sidekiq_middleware/memory_killer_spec.rb
+%%WWWDIR%%/spec/lib/gitlab/sidekiq_middleware/shutdown_spec.rb
 %%WWWDIR%%/spec/lib/gitlab/sidekiq_status/client_middleware_spec.rb
 %%WWWDIR%%/spec/lib/gitlab/sidekiq_status/server_middleware_spec.rb
 %%WWWDIR%%/spec/lib/gitlab/sidekiq_status_spec.rb
