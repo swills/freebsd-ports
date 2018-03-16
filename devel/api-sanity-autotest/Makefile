@@ -1,9 +1,9 @@
 # Created by: bf <bf@FreeBSD.org>
-# $FreeBSD: head/devel/api-sanity-autotest/Makefile 458761 2018-01-11 18:09:00Z danfe $
+# $FreeBSD: head/devel/api-sanity-autotest/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	api-sanity-checker
 PORTVERSION=	1.98.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel perl5
 MASTER_SITES=	LOCAL/bf/${PORTNAME}
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/archivers/Makefile 464159 2018-03-11 10:05:42Z tcberner $
 #
 
     COMMENT = Archivers
@@ -196,7 +196,6 @@
     SUBDIR += py-zstd
     SUBDIR += qpress
     SUBDIR += quazip
-    SUBDIR += quazip-qt5
     SUBDIR += rar
     SUBDIR += rox-archive
     SUBDIR += rpm2cpio

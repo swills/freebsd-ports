@@ -1,14 +1,14 @@
 # Created by: Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: head/math/suitesparse/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/suitesparse/Makefile 464164 2018-03-11 11:20:43Z rene $
 
 PORTNAME=	suitesparse
 PORTVERSION=	4.0.2
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	math
 MASTER_SITES=	http://www.cise.ufl.edu/research/sparse/SuiteSparse/
 DISTNAME=	SuiteSparse-${PORTVERSION}
 
-MAINTAINER=	maho@FreeBSD.org
+MAINTAINER=	fortran@FreeBSD.org
 COMMENT=	SuiteSparse is a set of packages for sparse matrices calculation
 
 LICENSE=	GPLv2 LGPL21

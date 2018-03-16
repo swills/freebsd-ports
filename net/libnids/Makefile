@@ -1,5 +1,5 @@
 # Created by: kris@FreeBSD.org
-# $FreeBSD: head/net/libnids/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/net/libnids/Makefile 464165 2018-03-11 11:21:23Z rene $
 
 PORTNAME=	libnids
 PORTVERSION=	1.24
@@ -7,7 +7,7 @@ PORTREVISION=	4
 CATEGORIES=	net security
 MASTER_SITES=	SF
 
-MAINTAINER=	wxs@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT?=	Network monitoring library with TCP/IP reassembly
 
 LIB_DEPENDS=	libnet.so:net/libnet

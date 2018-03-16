@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/math/opensolaris-libm/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/opensolaris-libm/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	opensolaris-libm
 PORTVERSION=	2006.01.31
-PORTREVISION=	3
+PORTREVISION=	4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	math
 

@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/textproc/xml_ez_out/Makefile 442143 2017-05-31 09:01:12Z amdmi3 $
+# $FreeBSD: head/textproc/xml_ez_out/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	xml_ez_out
 PORTVERSION=	1.06
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.mckae.com/xml_ezout/
 DISTNAME=	${PORTNAME}_${PORTVERSION}

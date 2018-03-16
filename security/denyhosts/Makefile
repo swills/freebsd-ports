@@ -1,5 +1,5 @@
 # Created by: Janos Mohacsi <janos.mohacsi@bsd.hu>
-# $FreeBSD: head/security/denyhosts/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/security/denyhosts/Makefile 464459 2018-03-14 06:11:13Z yuri $
 
 PORTNAME=	denyhosts
 PORTVERSION=	2.6
@@ -15,18 +15,20 @@ LICENSE=	GPLv2
 
 OPTIONS_DEFINE=	DOCS
 
+USES=		cpe python:2.7 shebangfix
 REINPLACE_ARGS=	-i ''
 USE_PYTHON=	autoplist distutils
 USE_RC_SUBR=	denyhosts
-USES=		cpe python:2.7 shebangfix
 CPE_VENDOR=	phil_schwartz
+NO_ARCH=	yes
 
 PORTDOCS=	CHANGELOG.txt LICENSE.txt README.txt
 SUB_FILES=	pkg-message
 SUB_LIST=	PYTHON=${PYTHON_CMD}
 
 SHEBANG_LANG=	env
-SHEBANG_FILES=	plugins/test_deny.py \
+SHEBANG_FILES=	daemon-control-dist \
+		plugins/test_deny.py \
 		scripts/restricted_from_invalid.py \
 		scripts/restricted_from_passwd.py
 env_OLD_CMD=	/bin/env

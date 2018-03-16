@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/www/R-cran-downloader/Makefile 449288 2017-09-05 14:48:17Z tota $
+# $FreeBSD: head/www/R-cran-downloader/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	downloader
 PORTVERSION=	0.4
+PORTREVISION=	1
 CATEGORIES=	www
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/www/p5-Apache-AuthTicket/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Apache-AuthTicket/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	Apache-AuthTicket
 PORTVERSION=	0.94
@@ -25,8 +25,7 @@ BUILD_DEPENDS=	${APACHE_PKGNAMEPREFIX}mod_perl2>=1.9922:www/mod_perl2 \
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes
-USE_APACHE=	22+
-USES=		perl5
+USES=		apache:2.2+ perl5
 USE_PERL5=	configure
 
 # Remove README.apache-2.4.pod to avoid conflicts with p5-Apache-AuthCookie

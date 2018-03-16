@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/mod_reproxy/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/www/mod_reproxy/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_reproxy
 PORTVERSION=	0.02.20110826
@@ -12,7 +12,7 @@ LICENSE=	APACHE20
 
 WRKSRC=		${WRKDIR}/lestrrat-mod_reproxy-0f945ff
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 

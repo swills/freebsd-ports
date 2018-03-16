@@ -1,5 +1,6 @@
-# $FreeBSD: head/devel/mips-gcc/Makefile 439595 2017-04-28 04:36:40Z linimon $
+# $FreeBSD: head/devel/mips-gcc/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
+PORTREVISION=	1
 PKGNAMEPREFIX=	mips-
 PLIST=	${.CURDIR}/pkg-plist
 

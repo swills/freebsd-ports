@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/java/jgrapht/Makefile 417166 2016-06-20 16:23:28Z mat $
+# $FreeBSD: head/java/jgrapht/Makefile 464211 2018-03-11 21:34:34Z antoine $
 
 PORTNAME=	jgrapht
 PORTVERSION=	0.7.3
@@ -9,6 +9,8 @@ MASTER_SITES=	SF/${PORTNAME}/JGraphT/Version%20${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Java package for mathematical graph-theory objects and algorithms
+
+BROKEN=		fails to build
 
 USES=		dos2unix zip
 DOS2UNIX_GLOB=	*.xml *.java

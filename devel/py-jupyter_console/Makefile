@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-jupyter_console/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-jupyter_console/Makefile 464648 2018-03-16 04:52:48Z swills $
 
 PORTNAME=	jupyter_console
-PORTVERSION=	5.1.0
+PORTVERSION=	5.2.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/py-qt5-network/Makefile 462214 2018-02-18 09:55:10Z rakuco $
+# $FreeBSD: head/net/py-qt5-network/Makefile 464266 2018-03-12 18:06:51Z tcberner $
 
 PORTNAME=	network
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net devel python
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,9 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-plyr/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/devel/R-cran-plyr/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	plyr
 PORTVERSION=	1.8.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

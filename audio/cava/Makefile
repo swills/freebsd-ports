@@ -1,10 +1,10 @@
-# $FreeBSD: head/audio/cava/Makefile 453161 2017-10-30 09:44:12Z tobik $
+# $FreeBSD: head/audio/cava/Makefile 464245 2018-03-12 10:44:21Z tobik $
 
 PORTNAME=	cava
 DISTVERSION=	0.6.0
 CATEGORIES=	audio
 
-MAINTAINER=	omar.polo@protonmail.com
+MAINTAINER=	tobik@FreeBSD.org
 COMMENT=	Console-based Audio Visualizer for ALSA, MPD, PulseAudio, and sndio
 
 LICENSE=	MIT

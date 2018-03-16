@@ -1,11 +1,11 @@
-# $FreeBSD: head/net/daemonlogger/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/daemonlogger/Makefile 464165 2018-03-11 11:21:23Z rene $
 
 PORTNAME=	daemonlogger
 PORTVERSION=	1.2.1
 CATEGORIES=	net
 MASTER_SITES=	http://www.snort.org/users/roesch/code/
 
-MAINTAINER=	wxs@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Packet sniffer capable of running as a daemon and as a software tap
 
 LIB_DEPENDS=	libdnet.so:net/libdnet

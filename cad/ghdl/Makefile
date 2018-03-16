@@ -1,10 +1,10 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/cad/ghdl/Makefile 434754 2017-02-24 21:55:52Z linimon $
+# $FreeBSD: head/cad/ghdl/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	ghdl
 PORTVERSION=	0.33
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	cad
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 

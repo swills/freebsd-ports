@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-recipes/Makefile 449574 2017-09-10 14:19:58Z tota $
+# $FreeBSD: head/math/R-cran-recipes/Makefile 464461 2018-03-14 06:43:58Z tota $
 
 PORTNAME=	recipes
-PORTVERSION=	0.1.0
+PORTVERSION=	0.1.2
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
@@ -12,6 +12,7 @@ COMMENT=	Preprocessing Tools to Create Design Matrices
 LICENSE=	GPLv2
 
 CRAN_DEPENDS=	R-cran-dplyr>0:math/R-cran-dplyr \
+		R-cran-broom>0:devel/R-cran-broom \
 		R-cran-tibble>0:devel/R-cran-tibble \
 		R-cran-ipred>0:math/R-cran-ipred \
 		R-cran-dimRed>=0.1.0:math/R-cran-dimRed \

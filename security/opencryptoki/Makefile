@@ -1,8 +1,9 @@
 # Created by: Ralf Meister
-# $FreeBSD: head/security/opencryptoki/Makefile 433456 2017-02-05 21:20:24Z tijl $
+# $FreeBSD: head/security/opencryptoki/Makefile 464467 2018-03-14 07:54:36Z tobik $
 
 PORTNAME=	opencryptoki
 PORTVERSION=	3.6
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	SF
 

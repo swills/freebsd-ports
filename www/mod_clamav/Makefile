@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <clement@FreeBSD.org>
-# $FreeBSD: head/www/mod_clamav/Makefile 418840 2016-07-20 15:33:20Z mat $
+# $FreeBSD: head/www/mod_clamav/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_clamav
 PORTVERSION=	0.23
@@ -14,8 +14,7 @@ COMMENT=	Scans content delivered by the Apache20 proxy module for viruses
 
 LICENSE=	GPLv2
 
-USE_APACHE=	22
-USES=		libtool
+USES=		apache:2.2 libtool
 GNU_CONFIGURE=	yes
 
 .include <bsd.port.options.mk>

@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-MaxMind-DB-Writer/Makefile 454011 2017-11-11 23:32:00Z sunpoet $
+# $FreeBSD: head/net/p5-MaxMind-DB-Writer/Makefile 464012 2018-03-09 21:48:36Z sunpoet $
 
 PORTNAME=	MaxMind-DB-Writer
-PORTVERSION=	0.300000
+PORTVERSION=	0.300001
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:MAXMIND

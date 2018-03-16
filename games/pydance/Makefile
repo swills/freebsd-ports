@@ -1,9 +1,9 @@
 # Created by: Rudolf Polzer <freebsd-dr@durchnull.de>
-# $FreeBSD: head/games/pydance/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/games/pydance/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	pydance
 PORTVERSION=	1.1.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	games
 MASTER_SITES=	http://people.freebsd.org/~sylvio/pydance/ \
 		http://icculus.org/pyddr/ \

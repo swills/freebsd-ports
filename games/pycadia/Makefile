@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/pycadia/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/games/pycadia/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	pycadia
 PORTVERSION=	0.5.1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	games python
 MASTER_SITES=	GENTOO \
 		SF/nemysisfreebsdp/games/

@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 463675 2018-03-06 00:56:50Z jbeich $
+# $FreeBSD: head/Mk/bsd.gecko.mk 464374 2018-03-13 13:48:06Z jbeich $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -65,8 +65,6 @@ Gecko_Pre_Include=	bsd.gecko.mk
 #
 # MOZ_TOOLKIT			A variable for the --enable-default-toolkit= in
 # 						CONFIGURE_ARGS. The default is cairo-gtk2.
-#
-# MOZ_EXTENSIONS		A list of extensions to build
 #
 # PORT_MOZCONFIG		Defaults to ${FILESDIR}/mozconfig.in, but can be
 # 						set to a generic mozconfig included with the port
@@ -266,12 +264,6 @@ MOZ_OPTIONS+=	\
 		--disable-updater \
 		--enable-pie \
 		--with-pthreads
-# Configure options for install
-.if !defined(MOZ_EXTENSIONS)
-MOZ_OPTIONS+=	--enable-extensions=default
-.else
-MOZ_OPTIONS+=	--enable-extensions=${MOZ_EXTENSIONS}
-.endif
 # others
 MOZ_OPTIONS+=	--with-system-zlib		\
 		--with-system-bz2

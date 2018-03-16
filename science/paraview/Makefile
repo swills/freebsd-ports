@@ -1,9 +1,9 @@
 # Created by: anholt@FreeBSD.org
-# $FreeBSD: head/science/paraview/Makefile 456189 2017-12-13 03:34:37Z jwb $
+# $FreeBSD: head/science/paraview/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	paraview
 DISTVERSION=	5.2.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	science graphics
 MASTER_SITES=	http://www.paraview.org/files/v${VERMAJORMINOR}/
 DISTNAME=	ParaView-v${PORTVERSION}

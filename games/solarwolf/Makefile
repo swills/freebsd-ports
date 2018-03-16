@@ -1,9 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/games/solarwolf/Makefile 455831 2017-12-09 09:36:10Z antoine $
+# $FreeBSD: head/games/solarwolf/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	solarwolf
 PORTVERSION=	1.5
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	games
 MASTER_SITES=	http://www.pygame.org/shredwheat/solarwolf/
 

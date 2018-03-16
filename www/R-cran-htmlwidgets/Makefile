@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/www/R-cran-htmlwidgets/Makefile 445582 2017-07-12 10:22:49Z tota $
+# $FreeBSD: head/www/R-cran-htmlwidgets/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	htmlwidgets
 PORTVERSION=	0.9
+PORTREVISION=	1
 CATEGORIES=	www
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

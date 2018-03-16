@@ -1,11 +1,11 @@
 # Created by: Babak Farrokhi <babak@farrokhi.net>
-# $FreeBSD: head/www/tikiwiki/Makefile 460622 2018-02-01 18:22:43Z joneum $
+# $FreeBSD: head/www/tikiwiki/Makefile 464253 2018-03-12 14:29:22Z joneum $
 
 PORTNAME=	tikiwiki
-DISTVERSION=	18.0
+DISTVERSION=	18.1
 CATEGORIES=	www
-MASTER_SITES=	SF/${PORTNAME}/Tiki_18.x_Alcyone/${PORTVERSION}/
-DISTNAME=	tiki-${PORTVERSION}
+MASTER_SITES=	SF/${PORTNAME}/Tiki_18.x_Alcyone/${DISTVERSION}/
+DISTNAME=	tiki-${DISTVERSION}
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Powerful PHP based Wiki/CMS/Groupware
@@ -20,7 +20,7 @@ USE_PHP=	calendar dom fileinfo gd gettext intl mbstring mcrypt pcre \
 NO_BUILD=	yes
 NO_MTREE=	yes
 NO_ARCH=	yes
-TIKIWIKI_DIR?=	www/${PORTNAME}-${PORTVERSION}
+TIKIWIKI_DIR?=	www/${PORTNAME}-${DISTVERSION}
 SUB_FILES=	pkg-message
 SUB_LIST+=	TIKIWIKI_DIR=${TIKIWIKI_DIR}
 

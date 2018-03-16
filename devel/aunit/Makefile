@@ -1,8 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/devel/aunit/Makefile 448301 2017-08-19 12:10:45Z vanilla $
+# $FreeBSD: head/devel/aunit/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	aunit
 PORTVERSION=	2017
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://downloads.dragonlace.net/src/
 DISTNAME=	aunit-gpl-${PORTVERSION}-src

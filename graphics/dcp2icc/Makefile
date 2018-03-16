@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/dcp2icc/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/dcp2icc/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	dcp2icc
 PORTVERSION=	0.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics converters
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/Version%20${PORTVERSION}
 

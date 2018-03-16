@@ -1,8 +1,9 @@
 # Created by: Anton Tornqvist <antont@inbox.lv>
-# $FreeBSD: head/devel/libtermkey/Makefile 437352 2017-03-31 12:52:45Z rodrigo $
+# $FreeBSD: head/devel/libtermkey/Makefile 464656 2018-03-16 07:24:11Z yuri $
 
 PORTNAME=	libtermkey
 PORTVERSION=	0.20
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.leonerd.org.uk/code/libtermkey/
 

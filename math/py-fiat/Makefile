@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/py-fiat/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/math/py-fiat/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	fiat
 PORTVERSION=	${MMVERSION}.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math python
 MASTER_SITES=	https://launchpad.net/${PORTNAME}/${MMVERSION}.x/release-${MMVERSION}/+download/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

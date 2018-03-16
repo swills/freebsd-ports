@@ -1,9 +1,9 @@
 # Created by: NAKATA Maho <chat95@mbox.kyoto-inet.or.jp>
-# $FreeBSD: head/math/lapack++/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/lapack++/Makefile 464164 2018-03-11 11:20:43Z rene $
 
 PORTNAME=	lapack++
 PORTVERSION=	2.5.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	math
 MASTER_SITES=	SF/lapackpp \
 		http://math.nist.gov/lapack++/:doc
@@ -12,7 +12,7 @@ DIST_SUBDIR=	lapackpp
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	maho@FreeBSD.org
+MAINTAINER=	fortran@FreeBSD.org
 COMMENT=	Linear Algebra PACKage in C++, a wrapper for LAPACK
 
 USES=		fortran gmake pathfix libtool

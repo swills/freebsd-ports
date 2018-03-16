@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/net/polyorb/Makefile 458559 2018-01-09 19:06:33Z danfe $
+# $FreeBSD: head/net/polyorb/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	polyorb
 PORTVERSION=	2.11.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net
 MASTER_SITES=	http://downloads.dragonlace.net/src/
 DISTNAME=	polyorb-gpl-${YEAR}-src

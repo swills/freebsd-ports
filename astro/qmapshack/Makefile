@@ -1,8 +1,9 @@
 # Created by: Muhammad Moinur Rahman <bofh@FreeBSD.org>
-# $FreeBSD: head/astro/qmapshack/Makefile 462645 2018-02-22 22:01:22Z cmt $
+# $FreeBSD: head/astro/qmapshack/Makefile 464159 2018-03-11 10:05:42Z tcberner $
 
 PORTNAME=	qmapshack
 PORTVERSION=	1.10.0
+PORTREVISION=	1
 CATEGORIES=	astro
 MASTER_SITES=	https://bitbucket.org/maproom/qmapshack/downloads/
 
@@ -14,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libgdal.so:graphics/gdal \
 		libproj.so:graphics/proj \
-		libquazip5.so:archivers/quazip-qt5 \
+		libquazip5.so:archivers/quazip@qt5 \
 		libroutino.so:astro/routino
 RUN_DEPENDS=	${LOCALBASE}/bin/bsdisks:sysutils/bsdisks
 

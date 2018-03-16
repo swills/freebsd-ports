@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-B-Hooks-OP-Check/Makefile 447038 2017-08-01 17:10:06Z sunpoet $
+# $FreeBSD: head/devel/p5-B-Hooks-OP-Check/Makefile 464354 2018-03-13 09:03:12Z amdmi3 $
 
 PORTNAME=	B-Hooks-OP-Check
 PORTVERSION=	0.22
@@ -9,6 +9,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Wrap OP check callbacks
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENCE
 
 BUILD_DEPENDS=	p5-ExtUtils-Depends>=0.302:devel/p5-ExtUtils-Depends
 

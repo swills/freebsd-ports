@@ -1,5 +1,5 @@
 # Created by: Hung-Yi Chen <gaod@hychen.org>
-# $FreeBSD: head/www/mod_memcache_block/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/mod_memcache_block/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_memcache_block
 PORTVERSION=	20120821
@@ -16,7 +16,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	netik
 GH_TAGNAME=	7b1fcec
 
-USE_APACHE=	22
+USES=		apache:2.2
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 AP_INC=		${LOCALBASE}/include/libmemcached

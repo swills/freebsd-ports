@@ -1,10 +1,10 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/games/endgame-singularity/Makefile 455852 2017-12-09 12:32:10Z antoine $
+# $FreeBSD: head/games/endgame-singularity/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	singularity
 PORTVERSION=	0.30c
 DISTVERSIONPREFIX=	v
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games
 PKGNAMEPREFIX=	endgame-
 

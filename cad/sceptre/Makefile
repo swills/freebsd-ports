@@ -1,9 +1,9 @@
 # Created by: grog
-# $FreeBSD: head/cad/sceptre/Makefile 451979 2017-10-13 11:06:09Z bapt $
+# $FreeBSD: head/cad/sceptre/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	sceptre
 PORTVERSION=	2012.061
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	cad
 MASTER_SITES=	http://alpha.fh-friedberg.de/iem/fileadmin/user_upload/novender/sceptre/
 

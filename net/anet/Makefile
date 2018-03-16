@@ -1,8 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/net/anet/Makefile 440548 2017-05-10 09:00:26Z amdmi3 $
+# $FreeBSD: head/net/anet/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	anet
 PORTVERSION=	0.3.4
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.codelabs.ch/download/
 DISTNAME=	libanet-${PORTVERSION}

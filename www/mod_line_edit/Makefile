@@ -1,5 +1,5 @@
 # Created by: Dominic Marks <dom@goodforbusiness.co.uk>
-# $FreeBSD: head/www/mod_line_edit/Makefile 362343 2014-07-20 18:36:22Z ohauer $
+# $FreeBSD: head/www/mod_line_edit/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_line_edit
 PORTVERSION=	1.0.0
@@ -15,7 +15,7 @@ COMMENT=	Apache module for simple text rewriting
 
 LICENSE=	GPLv2
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 

@@ -1,9 +1,9 @@
 # Created by: UMENO Takashi
-# $FreeBSD: head/games/pykawari/Makefile 456050 2017-12-11 16:54:20Z antoine $
+# $FreeBSD: head/games/pykawari/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	pykawari
 PORTVERSION=	8.2.8
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	games
 MASTER_SITES=	SF/kawari/kawari/${PORTVERSION}
 DISTNAME=	kawari-${PORTVERSION:S/.//g}

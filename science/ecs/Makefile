@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/science/ecs/Makefile 454339 2017-11-16 20:55:27Z thierry $
+# $FreeBSD: head/science/ecs/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	ecs
 PORTVERSION=	2.0.4
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	science
 MASTER_SITES=	http://code-saturne.org/releases/
 

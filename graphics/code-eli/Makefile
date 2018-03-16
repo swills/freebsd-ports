@@ -1,12 +1,11 @@
-# Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/graphics/code-eli/Makefile 462210 2018-02-18 09:29:27Z antoine $
+# $FreeBSD: head/graphics/code-eli/Makefile 464438 2018-03-13 22:24:58Z fernape $
 
 PORTNAME=	code-eli
 PORTVERSION=	0.3.6
 PORTREVISION=	4
 CATEGORIES=	graphics
 
-MAINTAINER=	fernando.apesteguia@gmail.com
+MAINTAINER=	fernape@FreeBSD.org
 COMMENT=	Library with functionalities for geometries
 
 LICENSE=	EPL

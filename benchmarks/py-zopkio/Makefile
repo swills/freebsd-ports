@@ -1,8 +1,8 @@
-# $FreeBSD: head/benchmarks/py-zopkio/Makefile 455344 2017-12-02 11:04:07Z antoine $
+# $FreeBSD: head/benchmarks/py-zopkio/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	Zopkio
 PORTVERSION=	0.2.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	benchmarks python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

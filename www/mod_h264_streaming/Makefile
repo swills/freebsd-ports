@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/www/mod_h264_streaming/Makefile 428143 2016-12-08 17:26:09Z tijl $
+# $FreeBSD: head/www/mod_h264_streaming/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_h264_streaming
 PORTVERSION=	2.2.7
@@ -13,7 +13,7 @@ DIST_SUBDIR=	apache2
 MAINTAINER=	lwhsu@FreeBSD.org
 COMMENT=	Apache H264 streaming module
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--with-apxs="${APXS}"

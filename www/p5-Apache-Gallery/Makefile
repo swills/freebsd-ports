@@ -1,5 +1,5 @@
 # Created by: Erwin Lansing <erwin@FreeBSD.org>
-# $FreeBSD: head/www/p5-Apache-Gallery/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Apache-Gallery/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	Apache-Gallery
 PORTVERSION=	1.0.2
@@ -24,9 +24,8 @@ BUILD_DEPENDS=	p5-URI>=0:net/p5-URI \
 		p5-CGI>=0:www/p5-CGI
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=		perl5
+USES=		apache:2.2+ perl5
 USE_PERL5=	configure
-USE_APACHE=	22+
 NO_ARCH=	yes
 
 DOC_FILES=	INSTALL LICENSE README TODO UPGRADE

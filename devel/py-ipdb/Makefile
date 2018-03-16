@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-ipdb/Makefile 462025 2018-02-16 15:42:02Z sunpoet $
+# $FreeBSD: head/devel/py-ipdb/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	ipdb
 PORTVERSION=	0.11
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

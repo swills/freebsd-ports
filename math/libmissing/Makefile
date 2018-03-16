@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/libmissing/Makefile 431277 2017-01-12 15:14:44Z amdmi3 $
+# $FreeBSD: head/math/libmissing/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	libmissing
 DISTVERSION=	20130815
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math
 MASTER_SITES=	LOCAL/bf
 

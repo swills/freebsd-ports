@@ -1,8 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/devel/alog/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/devel/alog/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	alog
 PORTVERSION=	0.5.2
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.codelabs.ch/download/
 DISTNAME=	libalog-${PORTVERSION}

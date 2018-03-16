@@ -1,8 +1,9 @@
 # Created by: Ed Schouten <ed@fxq.nl>
-# $FreeBSD: head/devel/mingw32-directx/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/mingw32-directx/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	directx
 PORTVERSION=	20020518
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.libsdl.org/extras/win32/cygwin/
 PKGNAMEPREFIX=	mingw32-

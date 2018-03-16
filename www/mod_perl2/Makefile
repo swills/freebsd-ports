@@ -1,5 +1,5 @@
 # Created by: Lars Eggert <larse@isi.edu>
-# $FreeBSD: head/www/mod_perl2/Makefile 429176 2016-12-22 18:48:34Z sunpoet $
+# $FreeBSD: head/www/mod_perl2/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_perl
 PORTVERSION=	2.0.10
@@ -22,8 +22,7 @@ TEST_DEPENDS=	p5-CGI>=4.15:www/p5-CGI \
 
 SUB_FILES=	pkg-message ${APMOD_FILE}
 SUB_LIST=	APACHEMODDIR=${APACHEMODDIR}
-USE_APACHE=	22+
-USES=		cpe gmake perl5
+USES=		apache:2.2+ cpe gmake perl5
 USE_PERL5=	configure
 USE_CSTD=	gnu89
 CPE_VENDOR=	apache
@@ -33,8 +32,8 @@ PLIST_SUB+=	APMOD_FILE=${APMOD_FILE}
 
 .include <bsd.port.pre.mk>
 
-# Provider is build iff apache24 is in use
-.if ${APACHE_VERSION:M22}
+# Provider is built if apache24 is in use
+.if ${APACHE_VERSION:M2.2}
 PLIST_SUB+=	AP22="@comment "
 .else
 PLIST_SUB+=	AP22=""

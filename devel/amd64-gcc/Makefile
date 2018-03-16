@@ -1,5 +1,6 @@
-# $FreeBSD: head/devel/amd64-gcc/Makefile 456901 2017-12-21 10:23:19Z linimon $
+# $FreeBSD: head/devel/amd64-gcc/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
+PORTREVISION=	1
 PKGNAMEPREFIX=	amd64-
 PLIST=	${.CURDIR}/pkg-plist
 

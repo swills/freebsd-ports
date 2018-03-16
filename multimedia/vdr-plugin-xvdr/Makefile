@@ -1,9 +1,9 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-xvdr/Makefile 433386 2017-02-05 09:01:31Z amdmi3 $
+# $FreeBSD: head/multimedia/vdr-plugin-xvdr/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	vdr-plugin-xvdr
 PORTVERSION=	0.9.5
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	multimedia
 MASTER_SITES=	LOCAL/nox/
 DISTNAME=	pipelka-${PORTNAME}-xvdr-${PORTVERSION}-0-g${GITHASH}

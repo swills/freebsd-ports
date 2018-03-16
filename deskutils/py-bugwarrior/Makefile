@@ -1,8 +1,9 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/deskutils/py-bugwarrior/Makefile 463770 2018-03-06 22:07:41Z swills $
+# $FreeBSD: head/deskutils/py-bugwarrior/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	bugwarrior
 PORTVERSION=	1.5.1
+PORTREVISION=	1
 CATEGORIES=	deskutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

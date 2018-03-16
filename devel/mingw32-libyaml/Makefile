@@ -1,9 +1,9 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/mingw32-libyaml/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/mingw32-libyaml/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	libyaml
 PORTVERSION=	0.1.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel textproc
 MASTER_SITES=	http://pyyaml.org/download/libyaml/
 PKGNAMEPREFIX=	mingw32-

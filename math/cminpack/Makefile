@@ -1,12 +1,11 @@
-# Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/math/cminpack/Makefile 435243 2017-03-02 15:42:39Z krion $
+# $FreeBSD: head/math/cminpack/Makefile 464438 2018-03-13 22:24:58Z fernape $
 
 PORTNAME=	cminpack
 PORTVERSION=	1.3.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	math
 
-MAINTAINER=	fernando.apesteguia@gmail.com
+MAINTAINER=	fernape@FreeBSD.org
 COMMENT=	Solving nonlinear equations and nonlinear least squares problems
 
 LICENSE_FILE=	${WRKSRC}/CopyrightMINPACK.txt

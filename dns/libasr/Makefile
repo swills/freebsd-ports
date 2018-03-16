@@ -1,9 +1,9 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/dns/libasr/Makefile 460381 2018-01-30 12:14:40Z fluffy $
+# $FreeBSD: head/dns/libasr/Makefile 464619 2018-03-15 18:13:10Z bdrewery $
 
 PORTNAME=	libasr
 PORTVERSION=	1.0.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	dns
 MASTER_SITES=	http://www.opensmtpd.org/archives/ \
 		http://distfiles.pirateparty.in/ashish/

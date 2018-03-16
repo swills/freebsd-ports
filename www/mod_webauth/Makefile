@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/www/mod_webauth/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/www/mod_webauth/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_webauth
 PORTVERSION=	4.7.0
@@ -13,8 +13,7 @@ COMMENT=	Apache module for authenticating users with Kerberos v5
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libsasl2.so:security/cyrus-sasl2
 
-USES=		libtool pathfix pkgconfig ssl
-USE_APACHE=	22+
+USES=		apache:2.2+ libtool pathfix pkgconfig ssl
 USE_OPENLDAP=	yes
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes

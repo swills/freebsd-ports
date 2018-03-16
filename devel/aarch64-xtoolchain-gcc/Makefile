@@ -1,5 +1,6 @@
-# $FreeBSD: head/devel/aarch64-xtoolchain-gcc/Makefile 437977 2017-04-08 00:29:44Z kan $
+# $FreeBSD: head/devel/aarch64-xtoolchain-gcc/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
+PORTREVISION=	1
 PKGNAMEPREFIX=	aarch64-
 
 MASTERDIR=	${.CURDIR}/../powerpc64-xtoolchain-gcc

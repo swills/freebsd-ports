@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/security/crackpkcs12/Makefile 446615 2017-07-25 17:41:46Z ehaupt $
+# $FreeBSD: head/security/crackpkcs12/Makefile 464167 2018-03-11 12:55:22Z ehaupt $
 
 PORTNAME=	crackpkcs12
-PORTVERSION=	0.2.10
+PORTVERSION=	0.2.11
 CATEGORIES=	security
 MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 

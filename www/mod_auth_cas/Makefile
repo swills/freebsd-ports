@@ -1,5 +1,5 @@
 # Created by: Kimo <kimor79@yahoo.com>
-# $FreeBSD: head/www/mod_auth_cas/Makefile 453543 2017-11-05 12:36:16Z brnrd $
+# $FreeBSD: head/www/mod_auth_cas/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_auth_cas
 PORTVERSION=	1.1
@@ -17,13 +17,12 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Jasig
-USES=		ssl
+USES=		apache:2.2+ ssl
 
 HAS_CONFIGURE=	yes
 # configure requires LDFLAGS to find libpcre
 LDFLAGS+=	-L${AP_LIB}
 
-USE_APACHE=	22+
 AP_LIB=		${LOCALBASE}/lib
 AP_EXTRAS=	-lpcre -lssl -lcrypto
 

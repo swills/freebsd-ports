@@ -1,12 +1,12 @@
-# Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/cad/openvsp/Makefile 458673 2018-01-10 18:52:31Z swills $
+# $FreeBSD: head/cad/openvsp/Makefile 464438 2018-03-13 22:24:58Z fernape $
 
 PORTNAME=	openvsp
 PORTVERSION=	3.15.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	${GH_PROJECT}_
 CATEGORIES=	cad
 
-MAINTAINER=	fernando.apesteguia@gmail.com
+MAINTAINER=	fernape@FreeBSD.org
 COMMENT=	Create a 3D model of an aircraft defined by engineering parameters
 
 LICENSE=	NOSA13

@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/parafly/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/sysutils/parafly/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	parafly
 PORTVERSION=	2013.01.21
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/${PORTNAME}/
 DISTNAME=	${PORTNAME}-r2013-01-21

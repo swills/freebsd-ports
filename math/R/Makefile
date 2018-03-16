@@ -1,9 +1,8 @@
 # Created by: Maurice Castro <maurice@serc.rmit.edu.au>
-# $FreeBSD: head/math/R/Makefile 463169 2018-02-28 00:24:47Z jrm $
+# $FreeBSD: head/math/R/Makefile 464645 2018-03-15 23:42:15Z jrm $
 
 PORTNAME=		R
-DISTVERSION=		3.4.3
-PORTREVISION=		2
+DISTVERSION=		3.4.4
 CATEGORIES=		math lang
 MASTER_SITES=		CRAN/src/base/R-${PORTVERSION:C|\..*||}
 
@@ -51,7 +50,7 @@ OPTIONS_SINGLE_BLAS=	ATLAS OPENBLAS NETLIB RBLAS
 OPTIONS_SUB=		YES
 
 ATLAS_DESC=		ATLAS BLAS implementation
-FLANG_DESC=		Use flang instead of the default Fortran compiler
+FLANG_DESC=		Use experimental flang instead of default Fortran compiler
 GHOSTSCRIPT_DESC=	Graphics device for bitmap files via Ghostscript
 CAIROPANGO_DESC=	Cairo graphics device and Pango multi-language text
 INFO_DESC=		GNU info manuals
@@ -91,7 +90,7 @@ INFO_INFO=		R-FAQ R-admin R-data R-exts R-ints R-intro R-lang
 JPEG_IMPLIES=		X11
 JPEG_CONFIGURE_WITH=	jpeglib
 JPEG_CONFIGURE_ENV=	r_cv_header_jpeglib_h=yes
-JPEG_USES=		jpeg
+JPEG_USES=		jpeg pkgconfig
 LDOUBLE_CONFIGURE_ENABLE=	long-double
 LETTER_CONFIGURE_ENV=	R_PAPERSIZE=letter
 MEMPROF_CONFIGURE_ENABLE=	memory-profiling

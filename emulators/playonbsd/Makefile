@@ -1,9 +1,9 @@
 # Created by: Stefan Esser <se@StefanEsser.FreeBSD.org>
-# $FreeBSD: head/emulators/playonbsd/Makefile 416927 2016-06-15 15:07:56Z se $
+# $FreeBSD: head/emulators/playonbsd/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	playonbsd
 PORTVERSION=	4.2.10
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	emulators games
 
 MAINTAINER=	se@FreeBSD.org

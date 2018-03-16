@@ -1,5 +1,5 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/ports-mgmt/tinderbox/Makefile 444802 2017-06-30 22:14:39Z sunpoet $
+# $FreeBSD: head/ports-mgmt/tinderbox/Makefile 464193 2018-03-11 18:36:16Z brnrd $
 
 PORTNAME=	tinderbox
 PORTVERSION=	4.2.0
@@ -80,7 +80,7 @@ RUN_DEPENDS+=	p5-DBD-SQLite>=0:databases/p5-DBD-SQLite
 .endif
 
 .if ${PORT_OPTIONS:MAPACHE}
-USE_APACHE_RUN=	22+
+USES+=		apache:run,2.2+
 .elif ${PORT_OPTIONS:MLIGHTTPD}
 RUN_DEPENDS+=	lighttpd:www/lighttpd
 .elif ${PORT_OPTIONS:MHIAWATHA}

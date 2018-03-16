@@ -1,9 +1,9 @@
 # Created by: Vitaly Magerya <vmagerya@gmail.com>
-# $FreeBSD: head/lang/ypsilon/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/lang/ypsilon/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	ypsilon
 PORTVERSION=	0.9.6.3
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	lang scheme
 
 MAINTAINER=	vmagerya@gmail.com

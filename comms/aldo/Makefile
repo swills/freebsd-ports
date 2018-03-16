@@ -1,9 +1,9 @@
 # Created by: lambert@lambertfam.org
-# $FreeBSD: head/comms/aldo/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/comms/aldo/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	aldo
 PORTVERSION=	0.7.5
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	comms hamradio
 MASTER_SITES=	SAVANNAH
 

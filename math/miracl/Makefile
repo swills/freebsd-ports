@@ -1,9 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/math/miracl/Makefile 451493 2017-10-08 06:39:40Z antoine $
+# $FreeBSD: head/math/miracl/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	miracl
 PORTVERSION=	5.6
-PORTREVISION=	3
+PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	math
 MASTER_SITES=	http://mirror.shatow.net/freebsd/${PORTNAME}/ \

@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/lxi-tools/Makefile 461315 2018-02-09 14:09:07Z sunpoet $
+# $FreeBSD: head/misc/lxi-tools/Makefile 464653 2018-03-16 06:35:59Z yuri $
 
 PORTNAME=	lxi-tools
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.18
+DISTVERSION=	1.19
 CATEGORIES=	misc
 
 MAINTAINER=	dg@syrec.org
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	liblxi.so:misc/liblxi
 
-USES=		autoreconf libtool localbase pkgconfig readline
+USES=		autoreconf libtool localbase lua:52 pkgconfig readline
 USE_GITHUB=	yes
 GH_ACCOUNT=	lxi-tools
 

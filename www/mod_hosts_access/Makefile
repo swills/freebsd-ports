@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/www/mod_hosts_access/Makefile 338168 2013-12-30 20:55:18Z ohauer $
+# $FreeBSD: head/www/mod_hosts_access/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_hosts_access
 PORTVERSION=	1.1.0
@@ -12,7 +12,7 @@ COMMENT=	Apache module that makes Apache respect hosts.allow and hosts.deny
 
 LICENSE=	APACHE20
 
-USE_APACHE=	22
+USES=		apache:2.2
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 

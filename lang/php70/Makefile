@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/php70/Makefile 458821 2018-01-12 12:57:18Z tijl $
+# $FreeBSD: head/lang/php70/Makefile 464598 2018-03-15 16:00:04Z tz $
 
 PORTNAME=	php70
-PORTVERSION=	7.0.27
+PORTVERSION=	7.0.28
 PORTREVISION?=	0
 CATEGORIES?=	lang devel www
 MASTER_SITES=	PHP/distributions
@@ -33,9 +33,14 @@ USE_GNOME=	libxml2
 
 OPTIONS_DEFINE+=CLI CGI FPM EMBED PHPDBG DEBUG DTRACE IPV6 MAILHEAD LINKTHR ZTS
 OPTIONS_DEFAULT=CLI CGI FPM EMBED LINKTHR DTRACE
+# ld(1) fails to link probes: Relocations in generic ELF (EM: 0)
+OPTIONS_EXCLUDE_aarch64=	DTRACE
+# dt_modtext:opensolaris/ib/libdtrace/common/dt_link.c: arm not impemented
+OPTIONS_EXCLUDE_armv6=		DTRACE
+OPTIONS_EXCLUDE_armv7=		DTRACE
 # Bug 197128:  No ASM code for MIPS/MIPS64, disable FPM
-OPTIONS_EXCLUDE_mips=FPM
-OPTIONS_EXCLUDE_mips64=FPM
+OPTIONS_EXCLUDE_mips=		FPM
+OPTIONS_EXCLUDE_mips64=		FPM
 OPTIONS_SUB=	yes
 
 OPTIONS_EXCLUDE_DragonFly=	DTRACE
@@ -86,8 +91,8 @@ CONFIGURE_ARGS+=--enable-fpm \
 .endif
 
 .if defined(PKGNAMEPREFIX)
-USE_APACHE=	22+
-.include "${PORTSDIR}/Mk/bsd.apache.mk"
+USES+=		apache:2.2+
+.include "${PORTSDIR}/Mk/Uses/apache.mk"
 .if ${PORT_OPTIONS:MAP2FILTER}
 CONFIGURE_ARGS+=--with-apxs2filter=${APXS}
 .else

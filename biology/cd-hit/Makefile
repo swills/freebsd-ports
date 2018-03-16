@@ -1,8 +1,8 @@
-# $FreeBSD: head/biology/cd-hit/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/biology/cd-hit/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	cd-hit
 PORTVERSION=	4.6.6
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	V
 CATEGORIES=	biology
 

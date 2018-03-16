@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/R-cran-DiagrammeR/Makefile 440525 2017-05-10 03:58:42Z tota $
+# $FreeBSD: head/graphics/R-cran-DiagrammeR/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	DiagrammeR
 PORTVERSION=	0.9.0
+PORTREVISION=	1
 CATEGORIES=	graphics
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

@@ -1,5 +1,5 @@
 # Created by: Stefan `Sec` Zehl <sec@42.org>
-# $FreeBSD: head/www/mod_gzip2/Makefile 444703 2017-06-30 09:00:14Z amdmi3 $
+# $FreeBSD: head/www/mod_gzip2/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_gzip2
 PORTVERSION=	2.1.0
@@ -13,11 +13,10 @@ COMMENT=	Apache 2.x Internet Content Acceleration module
 
 #LICENSE=	AL11
 
-USE_APACHE=	22+
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 MAKE_ENV+=	"APXS=${APXS}"
-USES=		gmake
+USES=		apache:2.2+ gmake
 
 PORTDOCS=	commands.txt samples.txt
 PORTEXAMPLES=	mod_gzip2.conf.sample

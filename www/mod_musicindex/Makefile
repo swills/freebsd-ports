@@ -1,5 +1,5 @@
 # Created by: clsung
-# $FreeBSD: head/www/mod_musicindex/Makefile 441831 2017-05-27 09:00:37Z amdmi3 $
+# $FreeBSD: head/www/mod_musicindex/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_musicindex
 PORTVERSION=	1.4.1
@@ -14,8 +14,7 @@ COMMENT=	Apache module that allows downloading and streaming of audio
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		libarchive localbase:ldflags
-USE_APACHE=	22
+USES=		apache:2.2 libarchive localbase:ldflags
 
 OPTIONS_DEFINE=	NLS FLAC MP3 MP4 VORBIS LIBARCHIVE FILECACHE MYSQLCACHE DOCS
 OPTIONS_DEFAULT=MP3 LIBARCHIVE FILECACHE

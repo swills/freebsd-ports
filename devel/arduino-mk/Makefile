@@ -1,9 +1,9 @@
 # Created by: Craig Leres <leres@FreeBSD.org>
-# $FreeBSD: head/devel/arduino-mk/Makefile 451156 2017-10-03 16:46:31Z leres $
+# $FreeBSD: head/devel/arduino-mk/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	arduino-mk
 PORTVERSION=	0.10
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	http://mjo.tc/atelier/2009/02/acli/
 DISTNAME=	${PORTNAME}_${PORTVERSION}

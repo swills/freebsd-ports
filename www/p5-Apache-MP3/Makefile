@@ -1,5 +1,5 @@
 # Created by: Dominic Mitchell <dom@happygiraffe.net>
-# $FreeBSD: head/www/p5-Apache-MP3/Makefile 456430 2017-12-15 23:52:17Z sunpoet $
+# $FreeBSD: head/www/p5-Apache-MP3/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	Apache-MP3
 PORTVERSION=	4.00
@@ -19,8 +19,7 @@ BUILD_DEPENDS=	p5-Audio-Wav>=0:audio/p5-Audio-Wav \
 		${APACHE_PKGNAMEPREFIX}mod_perl2>=0:www/mod_perl2
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=		perl5
-USE_APACHE=	22+
+USES=		apache:2.2+ perl5
 USE_PERL5=	configure
 NO_ARCH=	yes
 

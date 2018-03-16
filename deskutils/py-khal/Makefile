@@ -1,5 +1,5 @@
 # Created by: che@bein.link
-# $FreeBSD: head/deskutils/py-khal/Makefile 459002 2018-01-14 21:23:13Z adridg $
+# $FreeBSD: head/deskutils/py-khal/Makefile 464458 2018-03-14 05:13:01Z yuri $
 
 PORTNAME=	khal
 DISTVERSION=	0.9.8
@@ -7,7 +7,7 @@ CATEGORIES=	deskutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	lbdm@privacychain.ch
+MAINTAINER=	lebarondemerde@privacychain.ch
 COMMENT=	CalDAV-based calendar
 
 LICENSE=	MIT

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/2fa/Makefile 458676 2018-01-10 19:02:56Z swills $
+# $FreeBSD: head/security/2fa/Makefile 464513 2018-03-14 17:35:44Z yuri $
 
 PORTNAME=	2fa
 DISTVERSIONPREFIX=	v
@@ -23,10 +23,10 @@ PLIST_FILES=	bin/2fa
 PORTDOCS=	README.md
 
 do-build:
-	@cd ${WRKSRC}/${GH_SUBDIR} && ${SETENV} GOPATH=${WRKSRC} go build -o ${PORTNAME}
+	@cd ${WRKSRC}/${GH_SUBDIR} && ${SETENV} ${MAKE_ENV} GOCACHE=off GOPATH=${WRKSRC} go build -o ${PORTNAME}
 
 do-test:
-	@cd ${WRKSRC}/${GH_SUBDIR} && ${SETENV} GOPATH=${WRKSRC} go test
+	@cd ${WRKSRC}/${GH_SUBDIR} && ${SETENV} ${MAKE_ENV} GOCACHE=off GOPATH=${WRKSRC} go test
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin

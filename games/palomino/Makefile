@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/games/palomino/Makefile 445422 2017-07-10 09:00:22Z amdmi3 $
+# $FreeBSD: head/games/palomino/Makefile 464405 2018-03-13 20:10:33Z amdmi3 $
 
 PORTNAME=	palomino
 PORTVERSION=	20131231
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games
 MASTER_SITES=	SF/palomino-sim
 DISTFILES=	${PORTNAME}_src_${PORTVERSION}.txz \

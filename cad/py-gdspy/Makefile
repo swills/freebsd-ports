@@ -1,7 +1,8 @@
-# $FreeBSD: head/cad/py-gdspy/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/cad/py-gdspy/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	gdspy
 PORTVERSION=	1.1.2
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	cad python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

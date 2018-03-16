@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/zpu-gcc/Makefile 441320 2017-05-20 16:58:10Z linimon $
+# $FreeBSD: head/devel/zpu-gcc/Makefile 464632 2018-03-15 20:59:29Z bdrewery $
 
 PORTNAME=	zpu-gcc
 PORTVERSION=	1.0
@@ -20,7 +20,7 @@ BROKEN_powerpc64=	fails to compile: libgcc2.h: conflicting types for '__structdi
 WRKSRC=		${WRKDIR}/${DISTNAME}/toolchain
 USES=		gettext gmake makeinfo
 MANDIRS=	${PREFIX}/zpu/man
-INFO=		zpuc/cpp zpuc/cppinternals zpuc/dir zpuc/gcc zpuc/gccinstal \
+INFO=		zpuc/cpp zpuc/cppinternals zpuc/gcc zpuc/gccinstall \
 		    zpuc/gccint
 
 post-patch:
@@ -34,7 +34,11 @@ post-patch:
 do-install:
 	cd ${WRKSRC} && ${SH} install.sh
 
+post-stage:
+	@${RM} ${STAGEDIR}${PREFIX}/zpu/lib/libiberty.a
+	@${RMDIR} ${STAGEDIR}${PREFIX}/zpu/include
+
 do-build:
-	cd ${WRKSRC} && ${SH} build.sh
+	cd ${WRKSRC} && ${SETENV} CONFIG_SITE=${CONFIG_SITE} ${SH} build.sh
 
 .include <bsd.port.mk>

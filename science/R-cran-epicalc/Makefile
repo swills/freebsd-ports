@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/R-cran-epicalc/Makefile 367888 2014-09-10 20:50:31Z gerald $
+# $FreeBSD: head/science/R-cran-epicalc/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	epicalc
 PORTVERSION=	2.15.1.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	science
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

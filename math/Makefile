@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 463867 2018-03-08 05:28:19Z yuri $
+# $FreeBSD: head/math/Makefile 464428 2018-03-13 20:32:15Z sunpoet $
 #
 
     COMMENT = Mathematics
@@ -301,6 +301,7 @@
     SUBDIR += lybniz
     SUBDIR += mate-calc
     SUBDIR += math77
+    SUBDIR += mathgl
     SUBDIR += mathmod
     SUBDIR += mathomatic
     SUBDIR += matio
@@ -639,7 +640,6 @@
     SUBDIR += py-gmpy2
     SUBDIR += py-gnuplot
     SUBDIR += py-graphillion
-    SUBDIR += py-gsl
     SUBDIR += py-igraph
     SUBDIR += py-intspan
     SUBDIR += py-keras
@@ -662,12 +662,14 @@
     SUBDIR += py-pyasp
     SUBDIR += py-pybloom
     SUBDIR += py-pycosat
+    SUBDIR += py-pygsl
     SUBDIR += py-pyhull
     SUBDIR += py-pymc
     SUBDIR += py-pysparse
     SUBDIR += py-pyvtk
     SUBDIR += py-roman
     SUBDIR += py-scientific
+    SUBDIR += py-seaborn
     SUBDIR += py-statsmodels
     SUBDIR += py-svgmath
     SUBDIR += py-symeig
@@ -771,6 +773,7 @@
     SUBDIR += xplot
     SUBDIR += xppaut
     SUBDIR += xspread
+    SUBDIR += xtensor
     SUBDIR += yacas
     SUBDIR += z3
     SUBDIR += zimpl

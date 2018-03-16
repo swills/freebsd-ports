@@ -1,8 +1,9 @@
 # Created by: Rod Kay <rodakay@internode.on.net>
-# $FreeBSD: head/devel/simple_components/Makefile 433669 2017-02-08 19:25:50Z marino $
+# $FreeBSD: head/devel/simple_components/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	simple_components
 PORTVERSION=	4.18
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.dmitry-kazakov.de/ada/
 DISTNAME=	components_${PORTVERSION:S/./_/}

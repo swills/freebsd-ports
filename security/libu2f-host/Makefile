@@ -1,9 +1,8 @@
-# $FreeBSD: head/security/libu2f-host/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
+# $FreeBSD: head/security/libu2f-host/Makefile 463991 2018-03-09 18:42:30Z cpm $
 
 PORTNAME=	libu2f-host
-PORTVERSION=	1.1.4
+PORTVERSION=	1.1.5
 DISTVERSIONPREFIX=	${PORTNAME}-
-PORTREVISION=	2
 CATEGORIES=	security devel
 
 MAINTAINER=	cpm@FreeBSD.org

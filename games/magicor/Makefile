@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/magicor/Makefile 455913 2017-12-10 20:48:45Z antoine $
+# $FreeBSD: head/games/magicor/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	magicor
 PORTVERSION=	1.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	games
 MASTER_SITES=	SF
 DISTFILES=	${PORTNAME}-source-${PORTVERSION}${EXTRACT_SUFX} \

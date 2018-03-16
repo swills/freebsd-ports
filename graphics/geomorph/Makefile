@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/geomorph/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/geomorph/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	geomorph
 PORTVERSION=	0.60.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/0.60/
 

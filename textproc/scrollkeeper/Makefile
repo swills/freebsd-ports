@@ -1,10 +1,10 @@
 # Created by: Rene Hexel <rh@netbsd.org>
-# $FreeBSD: head/textproc/scrollkeeper/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/scrollkeeper/Makefile 464642 2018-03-15 21:50:20Z bdrewery $
 #    $MCom: ports/textproc/scrollkeeper/Makefile,v 1.12 2007/10/17 21:36:13 mezz Exp $
 
 PORTNAME=	scrollkeeper
 PORTVERSION=	0.3.14
-PORTREVISION=	14
+PORTREVISION=	15
 PORTEPOCH=	1
 CATEGORIES=	textproc gnome
 MASTER_SITES=	GNOME
@@ -45,7 +45,6 @@ post-patch:
 		${WRKSRC}/extract/dtds/Makefile.in
 
 post-install:
-	@${RM} ${STAGEDIR}/var/log/scrollkeeper.log
 	@${MKDIR} ${STAGEDIR}/var/db/scrollkeeper
 
 .include <bsd.port.mk>

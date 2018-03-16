@@ -1,4 +1,4 @@
-# $FreeBSD: head/GIDs 461738 2018-02-13 19:56:37Z pi $
+# $FreeBSD: head/GIDs 464063 2018-03-10 10:43:21Z brnrd $
 # Please keep this file sorted by GID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/group
@@ -543,7 +543,7 @@ avahi-autoipd:*:588:
 _xsi:*:600:
 _tss:*:601:
 _pkcs11:*:602:
-# free: 603
+_acme:*:603:
 # free: 604
 # free: 605
 # free: 606

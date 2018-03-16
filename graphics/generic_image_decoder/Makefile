@@ -1,8 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/graphics/generic_image_decoder/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/graphics/generic_image_decoder/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	generic_image_decoder
 PORTVERSION=	06
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://sourceforge.net/projects/${SFPATH}/
 DISTNAME=	gid-${PORTVERSION}

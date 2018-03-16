@@ -1,5 +1,5 @@
 # Created by: René Ladan <rene@freebsd.org>
-# $FreeBSD: head/sysutils/py-dirsync/Makefile 451624 2017-10-09 17:03:00Z rene $
+# $FreeBSD: head/sysutils/py-dirsync/Makefile 464668 2018-03-16 09:41:38Z jhale $
 
 PORTNAME=	dirsync
 PORTVERSION=	2.2.2
@@ -12,7 +12,7 @@ COMMENT=	Advanced directory tree synchronisation tool
 
 LICENSE=	MIT
 
-CONFLICT_INSTALL=p5-File-Dirsync
+CONFLICTS_INSTALL=	p5-File-Dirsync
 
 USES=		python zip
 USE_PYTHON=	autoplist distutils

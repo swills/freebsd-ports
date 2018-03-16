@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/www/webkit2-gtk3/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/www/webkit2-gtk3/Makefile 464143 2018-03-11 06:06:57Z linimon $
 
 PORTNAME=	webkit
 PORTVERSION=	2.16.6
@@ -88,7 +88,7 @@ NPAPI_USE=	GNOME=gtk20
 
 .include <bsd.port.options.mk>
 
-.if ${ARCH} == armv6
+.if ${ARCH} == armv6 || ${ARCH} == armv7
 CMAKE_ARGS+=	-DENABLE_JIT:BOOL=OFF
 .endif
 

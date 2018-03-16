@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/go.mk 413776 2016-04-22 12:40:04Z mat $
+# $FreeBSD: head/Mk/Uses/go.mk 464138 2018-03-11 02:24:26Z woodsb02 $
 #
 # This file contains logic to ease porting of Go packages or binaries using
 # the `go` command.
@@ -62,6 +62,12 @@ PLIST_SUB+=	GO_LIBDIR=${GO_LIBDIR} \
 		GO_SRCDIR=${GO_SRCDIR} \
 		GO_PKGNAME=${GO_PKGNAME}
 
+_USES_POST+=	go
+.endif # !defined(_INCLUDE_USES_GO_MK)
+
+.if defined(_POSTMKINCLUDED) && !defined(_INCLUDE_USES_GO_POST_MK)
+_INCLUDE_USES_GO_POST_MK=	yes
+
 .if !target(post-extract)
 post-extract:
 	@${MKDIR} ${GO_WRKSRC:H}
@@ -90,4 +96,4 @@ do-install:
 .endfor
 .endif
 
-.endif
+.endif # defined(_POSTMKINCLUDED) && !defined(_INCLUDE_USES_GO_POST_MK)

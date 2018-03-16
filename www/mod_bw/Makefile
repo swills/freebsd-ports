@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <clement@FreeBSD.org>
-# $FreeBSD: head/www/mod_bw/Makefile 338168 2013-12-30 20:55:18Z ohauer $
+# $FreeBSD: head/www/mod_bw/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_bw
 PORTVERSION=	0.8
@@ -15,7 +15,7 @@ COMMENT=	Bandwidth and Connection control per Virtual Host or Directory
 LICENSE=	APACHE20
 
 WRKSRC=		${WRKDIR}/mod_bw
-USE_APACHE=	22
+USES=		apache:2.2
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 

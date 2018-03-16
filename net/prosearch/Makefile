@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/prosearch/Makefile 457024 2017-12-23 07:03:21Z antoine $
+# $FreeBSD: head/net/prosearch/Makefile 464193 2018-03-11 18:36:16Z brnrd $
 
 PORTNAME=	prosearch
 PORTVERSION=	0.19.4
@@ -65,7 +65,7 @@ RUN_DEPENDS+=	rsync:net/rsync
 .endif
 
 .if ${PORT_OPTIONS:MAPACHE}
-USE_APACHE_RUN=	22+
+USES+=		apache:run,2.2+
 .endif
 
 .if ${PORT_OPTIONS:MNGINX}

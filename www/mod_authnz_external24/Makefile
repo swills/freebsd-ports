@@ -1,5 +1,5 @@
 # Created by: Jose Garcia Juanino <jjuanino@gmail.com>
-# $FreeBSD: head/www/mod_authnz_external24/Makefile 457367 2017-12-27 13:59:01Z mat $
+# $FreeBSD: head/www/mod_authnz_external24/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_authnz_external
 PORTVERSION=	3.3.2
@@ -13,7 +13,7 @@ COMMENT=	Allows users authentication based on external mechanisms on apache 2.4
 
 LICENSE=	APACHE20
 
-USE_APACHE=	24
+USES=		apache:2.4
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 SHORTMODNAME=	authnz_external

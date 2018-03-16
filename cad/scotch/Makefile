@@ -1,8 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/cad/scotch/Makefile 454187 2017-11-14 18:29:22Z thierry $
+# $FreeBSD: head/cad/scotch/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	scotch
 DISTVERSION=	6.0.4-aster5
+PORTREVISION=	1
 CATEGORIES=	cad science
 
 MAINTAINER=	thierry@FreeBSD.org

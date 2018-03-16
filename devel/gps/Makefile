@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/devel/gps/Makefile 457513 2017-12-29 16:33:11Z linimon $
+# $FreeBSD: head/devel/gps/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	gps
 PORTVERSION=	2016
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://downloads.dragonlace.net/src/
 PKGNAMESUFFIX=	-ide

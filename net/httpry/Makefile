@@ -1,11 +1,11 @@
-# $FreeBSD: head/net/httpry/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/net/httpry/Makefile 464165 2018-03-11 11:21:23Z rene $
 
 PORTNAME=	httpry
 PORTVERSION=	0.1.7
 CATEGORIES=	net
 MASTER_SITES=	http://dumpsterventures.com/jason/httpry/
 
-MAINTAINER=	wxs@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Packet sniffer designed for displaying and logging HTTP traffic
 
 USE_RC_SUBR=	httpry

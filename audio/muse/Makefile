@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/audio/muse/Makefile 435010 2017-02-28 09:01:41Z amdmi3 $
+# $FreeBSD: head/audio/muse/Makefile 464172 2018-03-11 13:55:35Z tobik $
 
 PORTNAME=	MuSE
 PORTVERSION=	0.9.2
@@ -12,6 +12,9 @@ COMMENT=	Multiple Streaming Engine
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	Unmaintained upstream, crashes at runtime
+EXPIRATION_DATE=	2018-03-31
 
 LIB_DEPENDS=	libogg.so:audio/libogg \
 		libvorbis.so:audio/libvorbis

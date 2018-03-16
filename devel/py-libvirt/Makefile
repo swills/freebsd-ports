@@ -1,8 +1,8 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/devel/py-libvirt/Makefile 460180 2018-01-28 13:34:50Z novel $
+# $FreeBSD: head/devel/py-libvirt/Makefile 464158 2018-03-11 09:52:28Z novel $
 
 PORTNAME=	libvirt
-PORTVERSION=	4.0.0
+PORTVERSION=	4.1.0
 CATEGORIES=	devel
 MASTER_SITES=	http://libvirt.org/sources/python/ \
 		ftp://libvirt.org/libvirt/python/

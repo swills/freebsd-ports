@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/py-gizeh/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/py-gizeh/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	gizeh
 DISTVERSION=	0.1.10
+PORTREVISION=	1
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

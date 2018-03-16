@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/php56/Makefile 463378 2018-03-02 08:07:31Z ale $
+# $FreeBSD: head/lang/php56/Makefile 464193 2018-03-11 18:36:16Z brnrd $
 
 PORTNAME=	php56
 PORTVERSION=	5.6.34
@@ -85,8 +85,8 @@ CONFIGURE_ARGS+=--enable-fpm \
 .endif
 
 .if defined(PKGNAMEPREFIX)
-USE_APACHE=	22+
-.include "${PORTSDIR}/Mk/bsd.apache.mk"
+USES+=		apache:2.2+
+.include "${PORTSDIR}/Mk/Uses/apache.mk"
 .if ${PORT_OPTIONS:MAP2FILTER}
 CONFIGURE_ARGS+=--with-apxs2filter=${APXS}
 .else

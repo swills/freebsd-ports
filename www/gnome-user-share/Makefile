@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/www/gnome-user-share/Makefile 447399 2017-08-05 10:58:48Z kwm $
+# $FreeBSD: head/www/gnome-user-share/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 #   $MCom: ports/trunk/www/gnome-user-share/Makefile 19970 2014-10-16 08:47:02Z gusi $
 
 PORTNAME=	gnome-user-share
@@ -20,8 +20,7 @@ LIB_DEPENDS=	libavahi-client.so:net/avahi-app \
 RUN_DEPENDS=	ap*-mod_dnssd>=0:www/mod_dnssd \
 		console-kit-daemon:sysutils/consolekit2
 
-USES=		gettext gmake libtool pkgconfig tar:xz
-USE_APACHE=	22+
+USES=		apache:2.2+ gettext gmake libtool pkgconfig tar:xz
 USE_XORG=	sm
 USE_GNOME=	gnomeprefix gtk30 intlhack nautilus3
 GNU_CONFIGURE=	yes

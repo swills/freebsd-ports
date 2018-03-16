@@ -1,8 +1,8 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-eio/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/devel/pecl-eio/Makefile 464529 2018-03-14 20:27:09Z joneum $
 
 PORTNAME=	eio
-PORTVERSION=	2.0.1
+DISTVERSION=	2.0.2
 CATEGORIES=	devel
 
 MAINTAINER=	gasol.wu@gmail.com

@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <sheepkiller@cultdeadsheep.org>
-# $FreeBSD: head/www/mod_cfg_ldap/Makefile 362835 2014-07-24 18:34:16Z tijl $
+# $FreeBSD: head/www/mod_cfg_ldap/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_cfg_ldap
 PORTVERSION=	1.2
@@ -13,7 +13,7 @@ COMMENT=	Allows you to keep your virtual host configuration in a LDAP directory
 
 LICENSE=	BSD3CLAUSE
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 USE_OPENLDAP=	yes
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes

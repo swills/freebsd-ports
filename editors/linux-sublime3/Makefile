@@ -1,15 +1,14 @@
 # Created by: Miguel Clara <miguelmclara@gmail.com>
-# $FreeBSD: head/editors/linux-sublime3/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/editors/linux-sublime3/Makefile 464170 2018-03-11 13:35:14Z tobik $
 
 PORTNAME=	sublime
-PORTVERSION=	3.1.26
-PORTREVISION=	1
+PORTVERSION=	3.1.43
 CATEGORIES=	editors linux
 MASTER_SITES=	http://download.sublimetext.com/
 PKGNAMEPREFIX=	linux-
 PKGNAMESUFFIX=	3
-DISTNAME_amd64=	sublime_text_3_build_3126_x64
-DISTNAME_i386=	sublime_text_3_build_3126_x32
+DISTNAME_amd64=	sublime_text_3_build_${PORTVERSION:S/.//g}_x64
+DISTNAME_i386=	sublime_text_3_build_${PORTVERSION:S/.//g}_x32
 
 MAINTAINER=	miguelmclara@gmail.com
 COMMENT=	Sophisticated text editor for code, markup and prose
@@ -22,7 +21,7 @@ WRKSRC=		${WRKDIR}/sublime_text_3
 
 CONFLICTS_INSTALL=	linux-sublime-[0-9]*
 
-NO_BUILD=
+NO_BUILD=	yes
 SUB_FILES=	sublime
 
 do-install:

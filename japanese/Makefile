@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/Makefile 463444 2018-03-02 19:10:48Z rene $
+# $FreeBSD: head/japanese/Makefile 464559 2018-03-15 05:39:23Z ume $
 #
 
     COMMENT = Japanese support
@@ -63,6 +63,7 @@
     SUBDIR += font-aozoramincho
     SUBDIR += font-ayu18
     SUBDIR += font-ayu20
+    SUBDIR += font-cica
     SUBDIR += font-elisa10
     SUBDIR += font-elisa8
     SUBDIR += font-genjyuugothic

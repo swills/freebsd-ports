@@ -1,9 +1,9 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-chron/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/devel/R-cran-chron/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	chron
 DISTVERSION=	2.3-43
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

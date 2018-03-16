@@ -1,5 +1,5 @@
 # Created by: vshankar
-# $FreeBSD: head/www/mod_flickr/Makefile 428136 2016-12-08 17:01:31Z tijl $
+# $FreeBSD: head/www/mod_flickr/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_flickr
 PORTVERSION=	1.0
@@ -24,7 +24,7 @@ XTRA_FLAGS+=	-DDEBUG
 AP_EXTRAS=	${XTRA_FLAGS}
 USE_LDCONFIG=	yes
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 

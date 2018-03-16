@@ -1,5 +1,5 @@
 # Created by: Jim Riggs <ports@christianserving.org>
-# $FreeBSD: head/www/mod_setenvifplus/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/www/mod_setenvifplus/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_setenvifplus
 PORTVERSION=	0.22
@@ -13,7 +13,7 @@ COMMENT=	Allows setting environment variables based on request attributes
 
 LICENSE=	APACHE20
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 SRC_FILE=	${WRKSRC}/apache2/${MODULENAME}.c

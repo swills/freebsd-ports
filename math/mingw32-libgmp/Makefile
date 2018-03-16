@@ -1,9 +1,9 @@
 # Created by: Timothy Bourke <timbob@bigpond.com>
-# $FreeBSD: head/math/mingw32-libgmp/Makefile 446854 2017-07-28 21:45:20Z jkim $
+# $FreeBSD: head/math/mingw32-libgmp/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	libgmp
 PORTVERSION=	6.0.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math devel
 MASTER_SITES=	GNU/gmp
 PKGNAMEPREFIX=	mingw32-

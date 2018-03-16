@@ -1,9 +1,9 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/ipopt/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/ipopt/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	Ipopt
 PORTVERSION=	3.12.7
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math
 MASTER_SITES=	http://www.coin-or.org/download/source/Ipopt/ \
 		http://glaros.dtc.umn.edu/gkhome/fetch/sw/metis/OLD/:metis \

@@ -1,9 +1,9 @@
 # Created by: Tassilo Philipp <tphilipp@potion-studios.com>
-# $FreeBSD: head/graphics/jogamp-jogl/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/jogamp-jogl/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	jogamp-jogl
 PORTVERSION=	2.2.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics devel java
 MASTER_SITES=	http://jogamp.org/deployment/jogamp-current/archive/Sources/ \
 		http://jogamp.org/deployment/v${PORTVERSION}/archive/Sources/

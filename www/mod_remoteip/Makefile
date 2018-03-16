@@ -1,5 +1,5 @@
 # Created by: Jim Riggs <ports@christianserving.org>
-# $FreeBSD: head/www/mod_remoteip/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/www/mod_remoteip/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_remoteip
 PORTVERSION=	2.3.5.a
@@ -11,7 +11,7 @@ DISTNAME=	httpd-2.3.5-alpha
 MAINTAINER=	ports@christianserving.org
 COMMENT=	Replaces the client IP address/hostname with that given by a proxy
 
-USE_APACHE=	22
+USES=		apache:2.2
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 

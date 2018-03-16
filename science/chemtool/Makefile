@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/science/chemtool/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/science/chemtool/Makefile 464164 2018-03-11 11:20:43Z rene $
 
 PORTNAME=	chemtool
 PORTVERSION=	1.6.11
@@ -7,7 +7,7 @@ PORTREVISION=	5
 CATEGORIES=	science
 MASTER_SITES=	http://ruby.chemie.uni-freiburg.de/~martin/chemtool/
 
-MAINTAINER=	maho@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Draw organic molecules easily and store them
 
 LIB_DEPENDS=	libEMF.so:graphics/libemf

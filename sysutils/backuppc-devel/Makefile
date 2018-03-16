@@ -1,5 +1,5 @@
 # Created by: Alexander Moisseev <moiseev@mezonplus.ru>
-# $FreeBSD: head/sysutils/backuppc-devel/Makefile 463878 2018-03-08 08:39:47Z yuri $
+# $FreeBSD: head/sysutils/backuppc-devel/Makefile 464141 2018-03-11 04:59:56Z linimon $
 
 PORTNAME=	backuppc
 DISTVERSION=	4.1.6.20180212
@@ -16,6 +16,10 @@ EXTRACT_DEPENDS=	p5-BackupPC-XS>=0.57:sysutils/p5-BackupPC-XS
 RUN_DEPENDS=	p5-CGI>0:www/p5-CGI \
 		p5-File-Listing>=0:sysutils/p5-File-Listing \
 		p5-BackupPC-XS>=0.57:sysutils/p5-BackupPC-XS
+
+.if defined(QEMU_EMULATING) && "${QEMU_EMULATING}" == "1"
+BROKEN=		fails to build under qemu: uncaught target signal 11 (Segmetation fault) - core dumped
+.endif
 
 CONFLICTS=	backuppc backuppc4
 

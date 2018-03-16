@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/thundersnarf/Makefile 451218 2017-10-04 11:29:14Z bapt $
+# $FreeBSD: head/www/thundersnarf/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	thundersnarf
 PORTVERSION=	1.3
@@ -29,7 +29,7 @@ PLIST_SUB=	OWNER=${WWWOWN} GROUP=${WWWGRP}
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MAPACHE}
-USE_APACHE_RUN=	22+
+USES+=		apache:run,2.2+
 .endif
 
 .if ${PORT_OPTIONS:MPGSQL}

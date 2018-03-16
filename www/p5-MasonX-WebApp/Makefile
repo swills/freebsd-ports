@@ -1,5 +1,5 @@
 # Created by: Travis Campbell <hcoyote@ghostar.org>
-# $FreeBSD: head/www/p5-MasonX-WebApp/Makefile 428143 2016-12-08 17:26:09Z tijl $
+# $FreeBSD: head/www/p5-MasonX-WebApp/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	MasonX-WebApp
 PORTVERSION=	0.12
@@ -22,8 +22,7 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception \
 		p5-Test-Output>=0:devel/p5-Test-Output
 
-USE_APACHE_RUN=	22+
-USES=		perl5
+USES=		apache:run,2.2+ perl5
 USE_PERL5=	modbuild
 
 .include <bsd.port.mk>

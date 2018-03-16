@@ -1,9 +1,9 @@
 # Created by: dikshie
-# $FreeBSD: head/math/py-networkx/Makefile 462747 2018-02-23 21:30:50Z yuri $
+# $FreeBSD: head/math/py-networkx/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	networkx
 PORTVERSION=	1.10
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	math python
 MASTER_SITES=	http://networkx.lanl.gov/download/networkx/ \
 		CHEESESHOP

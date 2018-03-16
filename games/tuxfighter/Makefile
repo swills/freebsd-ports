@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/tuxfighter/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/games/tuxfighter/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	tuxfighter
 PORTVERSION=	54
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	games python
 MASTER_SITES=	SF/pygamebook/TuxFighter/TuxFighter${PORTVERSION}_source/ \
 		SF/nemysisfreebsdp/games/:icons

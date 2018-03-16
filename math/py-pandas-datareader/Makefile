@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-pandas-datareader/Makefile 463867 2018-03-08 05:28:19Z yuri $
+# $FreeBSD: head/math/py-pandas-datareader/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	pandas-datareader
 DISTVERSION=	0.6.0
+PORTREVISION=	1
 CATEGORIES=	math finance python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

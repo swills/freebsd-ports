@@ -1,8 +1,8 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-registration/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django-registration/Makefile 464118 2018-03-10 23:01:53Z sunpoet $
 
 PORTNAME=	django-registration
-PORTVERSION=	2.1
+PORTVERSION=	2.4.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,12 +11,15 @@ MAINTAINER=	ports@caomhin.org
 COMMENT=	User-registration application for Django
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=1.4:www/py-django18@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}confusable_homoglyphs>=0:devel/py-confusable_homoglyphs@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}django>=1.8:www/py-django@${FLAVOR}
 
+NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	distutils autoplist
 
-CONFLICTS_INSTALL=	pootle-[0-9]* py??-django-registration-redux-[0-9]*
+CONFLICTS_INSTALL=	pootle ${PYTHON_PKGNAMEPREFIX}django-registration-redux
 
 .include <bsd.port.mk>

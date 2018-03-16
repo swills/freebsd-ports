@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/lua-luarocks/Makefile 457201 2017-12-25 00:04:46Z jbeich $
+# $FreeBSD: head/devel/lua-luarocks/Makefile 464441 2018-03-13 22:58:35Z jbeich $
 
 PORTNAME=	luarocks
-PORTVERSION=	2.4.3
+PORTVERSION=	2.4.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	${LUA_PKGNAMEPREFIX}

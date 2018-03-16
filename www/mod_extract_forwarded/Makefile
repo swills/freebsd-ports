@@ -1,5 +1,5 @@
 # Created by: Anders Nordby <anders@fix.no>
-# $FreeBSD: head/www/mod_extract_forwarded/Makefile 394508 2015-08-17 14:20:40Z mat $
+# $FreeBSD: head/www/mod_extract_forwarded/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_extract_forwarded
 PORTVERSION=	2.0.2
@@ -15,7 +15,7 @@ OPTIONS_DEFINE=	YOSHFUJI
 YOSHFUJI_DESC=	yoshfuji patch (support IPv6 addr in config, etc)
 #OPTIONS_DEFAULT=	YOSHFUJI
 
-USE_APACHE=	22
+USES=		apache:2.2
 WRKSRC=		${WRKDIR}/extract_forwarded
 PORTDOCS=	INSTALL README
 PATCH_STRIP=	-p1

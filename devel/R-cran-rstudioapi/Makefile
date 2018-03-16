@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-rstudioapi/Makefile 449593 2017-09-10 22:14:16Z tota $
+# $FreeBSD: head/devel/R-cran-rstudioapi/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	rstudioapi
 PORTVERSION=	0.7
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

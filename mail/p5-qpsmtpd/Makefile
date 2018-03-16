@@ -1,5 +1,5 @@
 # Created by: Zane C. Bowers
-# $FreeBSD: head/mail/p5-qpsmtpd/Makefile 444065 2017-06-21 18:53:21Z sunpoet $
+# $FreeBSD: head/mail/p5-qpsmtpd/Makefile 464208 2018-03-11 21:00:35Z antoine $
 
 PORTNAME=	qpsmtpd
 PORTVERSION=	0.93
@@ -27,11 +27,11 @@ GH_ACCOUNT=	smtpd
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MMODPERL}
-USE_APACHE_RUN=	22+
+USES+=		apache:run,2.2+
 RUN_DEPENDS+=	${APACHE_PKGNAMEPREFIX}mod_perl2>=0:www/mod_perl2
 .endif
 
-USES=		perl5
+USES+=		perl5
 USE_PERL5=	configure
 NO_ARCH=	yes
 

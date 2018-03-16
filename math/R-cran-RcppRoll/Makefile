@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-RcppRoll/Makefile 449541 2017-09-10 12:42:37Z tota $
+# $FreeBSD: head/math/R-cran-RcppRoll/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	RcppRoll
 DISTVERSION=	0.2.2
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

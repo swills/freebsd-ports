@@ -1,9 +1,9 @@
 # Created by: Pedro Giffuni <giffunip@asme.org>
-# $FreeBSD: head/math/spooles/Makefile 416469 2016-06-06 15:25:42Z mat $
+# $FreeBSD: head/math/spooles/Makefile 464164 2018-03-11 11:20:43Z rene $
 
 PORTNAME=	spooles
 PORTVERSION=	2.2
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	math
 MASTER_SITES=	NETLIB/linalg/spooles
 .ifdef WITH_MPI
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}.${PORTVERSION}
 DIST_SUBDIR=	spooles
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	maho@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SParse Object Oriented Linear Equations Solver
 
 LICENSE=	PD

@@ -1,9 +1,9 @@
 # Created by: Robert Jenssen
-# $FreeBSD: head/math/qrupdate/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/qrupdate/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	qrupdate
 PORTVERSION=	1.1.2
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	math
 MASTER_SITES=	SOURCEFORGE/qrupdate/qrupdate/1.2
 

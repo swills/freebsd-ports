@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/atf-allwinner/Makefile 456855 2017-12-20 20:37:01Z manu $
+# $FreeBSD: head/sysutils/atf-allwinner/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	atf-allwinner
 PORTVERSION=	1.2.20171017
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	GH
 

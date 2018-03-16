@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/R-cran-gpclib/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/math/R-cran-gpclib/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	gpclib
 DISTVERSION=	1.5-5
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/dparser/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/devel/dparser/Makefile 464068 2018-03-10 11:22:59Z cpm $
 
 PORTNAME=	dparser
 PORTVERSION=	1.30
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/
 DISTNAME=	d-${PORTVERSION}-src

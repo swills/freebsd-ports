@@ -1,5 +1,5 @@
 # Created by: Frank Wall <fw@moov.de>
-# $FreeBSD: head/www/mod_backtrace/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/www/mod_backtrace/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_backtrace
 PORTVERSION=	1.0
@@ -18,7 +18,7 @@ LICENSE=	APACHE20
 
 MANUAL_PACKAGE_BUILD=	requires apache WITH_EXCEPTION_HOOK=yes
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 AP_EXTRAS+=	-lexecinfo

@@ -1,8 +1,8 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/devel/py-jenkins-job-builder/Makefile 461762 2018-02-14 07:09:14Z lwhsu $
+# $FreeBSD: head/devel/py-jenkins-job-builder/Makefile 464142 2018-03-11 05:16:00Z lwhsu $
 
 PORTNAME=	jenkins-job-builder
-PORTVERSION=	2.0.2
+PORTVERSION=	2.0.3
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

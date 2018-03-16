@@ -1,5 +1,5 @@
 # Created by: Corey Smith <corsmith@gmail.com>
-# $FreeBSD: head/graphics/libyuv/Makefile 426197 2016-11-16 00:33:58Z linimon $
+# $FreeBSD: head/graphics/libyuv/Makefile 464594 2018-03-15 15:21:33Z linimon $
 
 PORTNAME=	libyuv
 DISTVERSION=	0.0.1280
@@ -11,10 +11,11 @@ COMMENT=	Library for freeswitch yuv graphics manipulation
 
 LICENSE=	BSD3CLAUSE
 
+BROKEN_aarch64=		Fails to compile: undefined reference to SplitUVRow_NEON
+BROKEN_armv7=		Fails to compile: undefined reference to SplitUVRow_NEON
+
 MAKE_JOBS_UNSAFE=	yes
 CXXFLAGS+=		-fPIC
 USE_LDCONFIG=		yes
-
-BROKEN_aarch64=		Fails to compile: undefined reference to SplitUVRow_NEON
 
 .include <bsd.port.mk>

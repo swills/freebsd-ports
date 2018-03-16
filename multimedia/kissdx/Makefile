@@ -1,9 +1,9 @@
 # Created by: Simon Riget <freebsd@paragi.dk>
-# $FreeBSD: head/multimedia/kissdx/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/multimedia/kissdx/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	kissdx
 PORTVERSION=	0.13.10a
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	multimedia net
 MASTER_SITES=	http://paragi.dk/kiss/
 

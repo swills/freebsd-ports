@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/science/R-cran-som/Makefile 418861 2016-07-21 03:18:24Z tota $
+# $FreeBSD: head/science/R-cran-som/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	som
 DISTVERSION=	0.3-5.1
+PORTREVISION=	1
 CATEGORIES=	science
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

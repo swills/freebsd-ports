@@ -1,5 +1,5 @@
 # Created by: Steven G. Kargl
-# $FreeBSD: head/lang/f2c/Makefile 454369 2017-11-17 09:00:13Z amdmi3 $
+# $FreeBSD: head/lang/f2c/Makefile 464164 2018-03-11 11:20:43Z rene $
 
 PORTNAME=	f2c
 PORTVERSION=	20060810
@@ -10,7 +10,7 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar
 DIST_SUBDIR=	${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	maho@FreeBSD.org
+MAINTAINER=	fortran@FreeBSD.org
 COMMENT=	Fortran-to-C converter and its run-time libraries
 
 EXTRACT_DEPENDS=	${UNZIP_CMD}:archivers/unzip

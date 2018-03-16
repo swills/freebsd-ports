@@ -1,5 +1,5 @@
 # Created by: Yanhui Shen <shen.elf@gmail.com>
-# $FreeBSD: head/audio/mous/Makefile 454488 2017-11-19 11:37:26Z riggs $
+# $FreeBSD: head/audio/mous/Makefile 464528 2018-03-14 19:41:24Z linimon $
 
 PORTNAME=	mous
 PORTVERSION=	1.1a
@@ -13,7 +13,7 @@ COMMENT=	Simple yet powerful audio player
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
-BROKEN=		fails to build
+BROKEN=		fails to build: sdk/scx/Socket.hpp:188:5: invalid operands to binary expression
 
 USES=		cmake
 USE_LDCONFIG=	yes

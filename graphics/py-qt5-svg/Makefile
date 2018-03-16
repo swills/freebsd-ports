@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/py-qt5-svg/Makefile 462214 2018-02-18 09:55:10Z rakuco $
+# $FreeBSD: head/graphics/py-qt5-svg/Makefile 464266 2018-03-12 18:06:51Z tcberner $
 
 PORTNAME=	svg
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics devel python
 
 MAINTAINER=	kde@FreeBSD.org

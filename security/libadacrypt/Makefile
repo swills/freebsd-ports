@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/security/libadacrypt/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/security/libadacrypt/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	libadacrypt
 PORTVERSION=	20151019
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 
 MAINTAINER=	ports@FreeBSD.org

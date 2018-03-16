@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/sysutils/p5-MogileFS-Utils/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/p5-MogileFS-Utils/Makefile 464229 2018-03-12 07:43:10Z trociny $
 
 PORTNAME=	MogileFS-Utils
-PORTVERSION=	2.29
+PORTVERSION=	2.30
 CATEGORIES=	sysutils net perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DORMANDO

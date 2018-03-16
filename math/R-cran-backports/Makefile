@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-backports/Makefile 450781 2017-09-27 19:28:31Z tota $
+# $FreeBSD: head/math/R-cran-backports/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	backports
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/science/ncs/Makefile 456126 2017-12-12 12:40:15Z antoine $
+# $FreeBSD: head/science/ncs/Makefile 464358 2018-03-13 09:50:42Z yuri $
 
 PORTNAME=	ncs
 PORTVERSION=	2.0.8
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	science parallel
 MASTER_SITES=	http://code-saturne.org/releases/
 
@@ -13,11 +13,15 @@ COMMENT=	Code_Saturne Kernel
 LICENSE=	GPLv2
 
 BUILD_DEPENDS=	cs_preprocess:science/ecs
-LIB_DEPENDS=	libfvm.so:science/fvm	\
+LIB_DEPENDS=	libbft.so:science/bft \
+		libcgns.so:science/cgnslib \
+		libfvm.so:science/fvm \
+		libhdf5.so:science/hdf5 \
+		libmedC.so:french/med \
 		libmei.so:science/mei
-RUN_DEPENDS=	xmgrace:math/grace	\
-		bash:shells/bash	\
-		xterm:x11/xterm	\
+RUN_DEPENDS=	xmgrace:math/grace \
+		bash:shells/bash \
+		xterm:x11/xterm \
 		cs_preprocess:science/ecs
 
 USES=		fortran gettext gmake iconv libtool pyqt:4 python:2.7 shebangfix
@@ -101,6 +105,8 @@ pre-everything::
 	@${ECHO_MSG}
 
 post-install:
+	@cd ${STAGEDIR}${PREFIX}/lib && ${STRIP_CMD} libsaturne.so* libsyrcs.so* libsyrcs.so*
+	@${REINPLACE_CMD} -i '' -e 's|^#!.*|#!${PYTHON_CMD}|' ${STAGEDIR}${PREFIX}/bin/code_saturne
 .if ${PORT_OPTIONS:MDOCS}
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${DOCS:C|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}

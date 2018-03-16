@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <clement@FreeBSD.org>
-# $FreeBSD: head/www/mod_rpaf2/Makefile 453541 2017-11-05 12:04:45Z brnrd $
+# $FreeBSD: head/www/mod_rpaf2/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_rpaf
 PORTVERSION=	0.8.4
@@ -17,7 +17,7 @@ GH_ACCOUNT=	gnif
 
 DOCS=	README.md
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 AP_FAST_BUILD=	yes
 SHORTMODNAME=	rpaf
 

@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-sinatra-r18n/Makefile 457082 2017-12-23 16:50:20Z sunpoet $
+# $FreeBSD: head/www/rubygem-sinatra-r18n/Makefile 464112 2018-03-10 23:01:18Z sunpoet $
 
 PORTNAME=	sinatra-r18n
-PORTVERSION=	2.2.0
+PORTVERSION=	3.0.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

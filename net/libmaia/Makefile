@@ -1,18 +1,18 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/net/libmaia/Makefile 462871 2018-02-24 22:35:18Z rene $
+# $FreeBSD: head/net/libmaia/Makefile 463989 2018-03-09 18:30:48Z tcberner $
 
 PORTNAME=	libmaia
-PORTVERSION=	0.0.20150218
+DISTVERSIONPREFIX=	v
+DISTVERSION=	0.9.0
+PORTREVISION=	1
 CATEGORIES=	net
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	XML-RPC lib for Qt
 
+USES=		gmake qmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	wiedi
-GH_TAGNAME=	e930451
-
-USES=		gmake qmake
 USE_QT5=	buildtools_build network xml
 
 PLIST_FILES=	include/maia/maiaObject.h \

@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/u-boot-utilite/Makefile 441494 2017-05-22 22:29:17Z linimon $
+# $FreeBSD: head/sysutils/u-boot-utilite/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	u-boot
 PORTVERSION=	2015.07
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.denx.de/pub/u-boot/:source1 \
 		http://www.compulab.co.il/wp-content/uploads/2015/10/:source2

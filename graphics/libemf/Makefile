@@ -1,5 +1,5 @@
 # Created by: NAKATA Maho <maho@FreeBSD.org>
-# $FreeBSD: head/graphics/libemf/Makefile 395939 2015-09-03 09:57:19Z amdmi3 $
+# $FreeBSD: head/graphics/libemf/Makefile 464164 2018-03-11 11:20:43Z rene $
 
 PORTNAME=	libEMF
 PORTVERSION=	1.0.7
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 
-MAINTAINER=	maho@FreeBSD.org
+MAINTAINER=	office@FreeBSD.org
 COMMENT=	Enhanced Metafile Library
 
 LICENSE=	LGPL21

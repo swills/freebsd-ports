@@ -1,8 +1,9 @@
 # Created by: Timothy Beyer <beyert@cs.ucr.edu>
-# $FreeBSD: head/lang/urweb/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/lang/urweb/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	urweb
 PORTVERSION=	20150520
+PORTREVISION=	1
 CATEGORIES=	lang www
 MASTER_SITES=	http://www.impredicative.com/ur/
 

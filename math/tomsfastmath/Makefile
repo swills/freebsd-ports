@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/tomsfastmath/Makefile 453620 2017-11-06 14:24:39Z mat $
+# $FreeBSD: head/math/tomsfastmath/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	tomsfastmath
 PORTVERSION=	0.13.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	math
 

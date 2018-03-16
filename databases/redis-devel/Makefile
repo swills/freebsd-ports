@@ -1,8 +1,9 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/redis-devel/Makefile 460939 2018-02-04 16:27:39Z osa $
+# $FreeBSD: head/databases/redis-devel/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	redis
 DISTVERSION=	4.0.8
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	http://download.redis.io/releases/
 PKGNAMESUFFIX=	-devel

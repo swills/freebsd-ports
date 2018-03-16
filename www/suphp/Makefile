@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <sheepkiller@cultdeadsheep.org>
-# $FreeBSD: head/www/suphp/Makefile 459952 2018-01-25 17:40:46Z bdrewery $
+# $FreeBSD: head/www/suphp/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	suphp
 PORTVERSION=	0.7.2
@@ -13,10 +13,9 @@ MAINTAINER=	bdrewery@FreeBSD.org
 COMMENT=	Securely execute PHP scripts under Apache
 
 GNU_CONFIGURE=	yes
-USES=		autoreconf libtool php:cgi
+USES=		apache:2.2+ autoreconf libtool php:cgi
 SUB_FILES=	pkg-message
 
-USE_APACHE=	22+
 CFLAGS+=	-I${LOCALBASE}/include
 USE_CSTD=	gnu89
 USE_CXXSTD=	gnu++98

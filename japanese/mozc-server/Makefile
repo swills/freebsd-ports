@@ -1,5 +1,5 @@
 # Created by: Daichi GOTO <daichi@FreeBSD.org>
-# $FreeBSD: head/japanese/mozc-server/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/japanese/mozc-server/Makefile 464628 2018-03-15 20:00:47Z bdrewery $
 
 PORTNAME=	mozc
 PORTVERSION=	2.20.2677.102.02
@@ -85,6 +85,7 @@ BUILD_MODE=	Release
 BUILD_CMD=	${SETENV} ${MAKE_ENV} PATH=/bin:/usr/bin:${PATH} ${MAKE_CMD}
 BUILD_MOZC_CMD=	cd ${BUILD_WRKSRC} && \
 		${SETENV} BUILD_COMMAND="${BUILD_WRKSRC}/mozcmake" \
+		    PATH="${PATH}" \
 		    GYP_DEFINES="${GYP_DEFINES}" \
 		    PYTHONPATH=${PYTHON_SITELIBDIR}/gyp \
 		    CC_host="${CC}" \

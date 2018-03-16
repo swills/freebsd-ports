@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/tulip/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/graphics/tulip/Makefile 464159 2018-03-11 10:05:42Z tcberner $
 
 PORTNAME=	tulip
 PORTVERSION=	4.10.0
-PORTREVISION=	3
+PORTREVISION=	4
 DISTVERSIONSUFFIX=	_src
 CATEGORIES=	graphics
 MASTER_SITES=	SF/auber/${PORTNAME}/${PORTNAME}-${PORTVERSION}
@@ -13,7 +13,7 @@ COMMENT=	System dedicated to the visualization of huge graphs
 
 LICENSE=	LGPL3
 
-LIB_DEPENDS=	libquazip.so:archivers/quazip \
+LIB_DEPENDS=	libquazip.so:archivers/quazip@qt4 \
 		libpng.so:graphics/png \
 		libOGDF.so:math/ogdf \
 		libfreetype.so:print/freetype2

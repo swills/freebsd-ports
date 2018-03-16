@@ -1,9 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/games/aisleriot/Makefile 458427 2018-01-08 15:20:57Z cpm $
+# $FreeBSD: head/games/aisleriot/Makefile 464068 2018-03-10 11:22:59Z cpm $
 
 PORTNAME=	aisleriot
 PORTVERSION=	3.22.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

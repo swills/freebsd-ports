@@ -1,6 +1,5 @@
-# $FreeBSD: head/multimedia/avidemux/Makefile.common 459963 2018-01-25 21:20:12Z jbeich $
+# $FreeBSD: head/multimedia/avidemux/Makefile.common 464215 2018-03-11 22:48:02Z gerald $
 
-PORTREVISION?=	5
 AVIDEMUX_VERSION=	2.6.11
 MASTER_SITES=	\
 		SF/avidemux/avidemux/${PORTVERSION}

@@ -1,5 +1,5 @@
 # Created by: Daniel Gerzo <danger@rulez.sk>
-# $FreeBSD: head/www/mod_domaintree/Makefile 336589 2013-12-15 22:11:20Z ohauer $
+# $FreeBSD: head/www/mod_domaintree/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_domaintree
 PORTVERSION=	1.6
@@ -12,7 +12,7 @@ MAINTAINER=	danger@FreeBSD.org
 COMMENT=	Hostname to filesystem mapper for Apache 2
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
-USE_APACHE=	22+
+USES=		apache:2.2+
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 

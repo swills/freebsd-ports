@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/www/mod_python35/Makefile 422338 2016-09-17 18:13:34Z ohauer $
+# $FreeBSD: head/www/mod_python35/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_python
 PORTVERSION=	3.5.0
@@ -18,8 +18,7 @@ LICENSE=	APACHE20
 
 CONFLICTS_INSTALL=	ap2[24]-mod_python3[^5]*
 
-USE_APACHE=	22+
-USES=		cpe python:2.7 tar:tgz
+USES=		apache:2.2+ cpe python:2.7 tar:tgz
 CPE_VENDOR=	apache
 SUB_FILES=	pkg-message 270_mod_python.conf.sample
 

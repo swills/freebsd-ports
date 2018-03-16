@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/mod_cloudflare/Makefile 416974 2016-06-16 15:48:45Z feld $
+# $FreeBSD: head/www/mod_cloudflare/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_cloudflare
 PORTVERSION=	0.0.2016.6.0
@@ -16,7 +16,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	cloudflare
 GH_TAGNAME=	340fa0a
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 SHORTMODNAME=	cloudflare

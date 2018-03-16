@@ -1,8 +1,9 @@
-# $FreeBSD: head/biology/iqtree/Makefile 463462 2018-03-03 03:15:24Z jrm $
+# $FreeBSD: head/biology/iqtree/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	iqtree
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.6.2
+PORTREVISION=	1
 CATEGORIES=	biology
 
 MAINTAINER=	jrm@FreeBSD.org

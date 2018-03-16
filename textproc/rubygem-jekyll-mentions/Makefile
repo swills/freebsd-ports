@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-jekyll-mentions/Makefile 427725 2016-12-03 19:35:55Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-jekyll-mentions/Makefile 464612 2018-03-15 17:46:12Z sunpoet $
 
 PORTNAME=	jekyll-mentions
-PORTVERSION=	1.2.0
+PORTVERSION=	1.3.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

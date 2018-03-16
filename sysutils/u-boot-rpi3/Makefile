@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/u-boot-rpi3/Makefile 437197 2017-03-29 13:11:26Z mat $
+# $FreeBSD: head/sysutils/u-boot-rpi3/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	u-boot
 PORTVERSION=	2017.01
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.denx.de/pub/u-boot/:uboot \
 		LOCAL/db:bootfiles

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/bittwist/Makefile 417166 2016-06-20 16:23:28Z mat $
+# $FreeBSD: head/net/bittwist/Makefile 464165 2018-03-11 11:21:23Z rene $
 
 PORTNAME=	bittwist
 PORTVERSION=	1.1
@@ -6,7 +6,7 @@ CATEGORIES=	net
 MASTER_SITES=	SF/${PORTNAME}/_BSD/Bit-Twist%20${PORTVERSION}
 DISTNAME=	${PORTNAME}-bsd-${PORTVERSION}
 
-MAINTAINER=	wxs@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Libpcap-based Ethernet packet generator, with PCAP editor
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}

@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/mopesnake/Makefile 456050 2017-12-11 16:54:20Z antoine $
+# $FreeBSD: head/games/mopesnake/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	mopesnake
 PORTVERSION=	0.5
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games python
 MASTER_SITES=	SF \
 		SF/nemysisfreebsdp/games/:icons

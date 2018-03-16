@@ -1,9 +1,9 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-vdrmanager/Makefile 434511 2017-02-21 09:01:34Z amdmi3 $
+# $FreeBSD: head/multimedia/vdr-plugin-vdrmanager/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	vdr-plugin-vdrmanager
 PORTVERSION=	0.6
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	multimedia
 MASTER_SITES=	http://projects.vdr-developer.org/attachments/download/828/
 DISTNAME=	${PORTNAME:S/-plugin//}-${PORTVERSION}

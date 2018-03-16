@@ -1,9 +1,9 @@
 # Created by: Tassilo Philipp <tphilipp@potion-studios.com>
-# $FreeBSD: head/devel/psptoolchain/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/psptoolchain/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=		psptoolchain
 PORTVERSION=		20111215
-PORTREVISION=		2
+PORTREVISION=		3
 CATEGORIES=		devel
 
 MAINTAINER=		tphilipp@potion-studios.com

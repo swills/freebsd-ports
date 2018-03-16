@@ -1,9 +1,9 @@
 # Created by: piero
-# $FreeBSD: head/multimedia/xanim/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/multimedia/xanim/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	xanim
 PORTVERSION=	2.92.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	multimedia graphics
 MASTER_SITES=	ftp://ftp.nstu.ru/pub/mirrors/xanim.va.pubnix.com/:main \
 		LOCAL/dinoex:main,DEFAULT \

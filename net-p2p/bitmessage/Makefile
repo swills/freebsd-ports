@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net-p2p/bitmessage/Makefile 461843 2018-02-14 21:43:30Z yuri $
+# $FreeBSD: head/net-p2p/bitmessage/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	bitmessage
 DISTVERSION=	0.6.3.2
+PORTREVISION=	1
 CATEGORIES=	net-p2p
 
 MAINTAINER=	yuri@FreeBSD.org

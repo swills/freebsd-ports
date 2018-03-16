@@ -1,8 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-traits/Makefile 427281 2016-11-28 03:02:05Z wen $
+# $FreeBSD: head/devel/py-traits/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	traits
 PORTVERSION=	4.6.0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

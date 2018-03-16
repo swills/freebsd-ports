@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/py-wavio/Makefile 459121 2018-01-15 21:56:45Z yuri $
+# $FreeBSD: head/audio/py-wavio/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	wavio
 DISTVERSION=	0.0.3
+PORTREVISION=	1
 CATEGORIES=	audio python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

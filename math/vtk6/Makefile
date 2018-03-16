@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/math/vtk6/Makefile 457151 2017-12-24 12:17:40Z antoine $
+# $FreeBSD: head/math/vtk6/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	vtk
 PORTVERSION=	6.2.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	math graphics
 MASTER_SITES=	http://www.vtk.org/files/release/${VTK_SHORT_VER}/
 PKGNAMESUFFIX=	6

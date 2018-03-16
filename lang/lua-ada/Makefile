@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/lang/lua-ada/Makefile 463229 2018-02-28 15:13:32Z sunpoet $
+# $FreeBSD: head/lang/lua-ada/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	ada
 PORTVERSION=	1.0			# made-up; no version info on GH
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	lang
 PKGNAMEPREFIX=	${LUA_PKGNAMEPREFIX}
 

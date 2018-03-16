@@ -1,5 +1,5 @@
 # Created by: Jui-Nan Lin <jnlin@csie.nctu.edu.tw>
-# $FreeBSD: head/net/scribe/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/net/scribe/Makefile 464379 2018-03-13 14:27:17Z amdmi3 $
 
 PORTNAME=	scribe
 DISTVERSION=	2.2.2013.04.15
@@ -27,6 +27,7 @@ GH_ACCOUNT=	facebookarchive
 GH_TAGNAME=	7359a09
 
 USES=		autoreconf compiler gmake perl5 python
+USE_PYTHON=	py3kplist
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-boost-filesystem=boost_filesystem \
 		--with-boost-system=boost_system \

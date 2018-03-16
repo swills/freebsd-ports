@@ -1,9 +1,9 @@
 # Created by: Chao Shin <quakelee@cn.FreeBSD.org>
-# $FreeBSD: head/science/pnetcdf/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/science/pnetcdf/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	pnetcdf
 PORTVERSION=	1.8.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	science parallel
 MASTER_SITES=	http://cucis.ece.northwestern.edu/projects/PnetCDF/Release/ \
 		LOCAL/sunpoet

@@ -1,12 +1,12 @@
 # Created by: gpalmer
-# $FreeBSD: head/x11-clocks/xdaliclock/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/x11-clocks/xdaliclock/Makefile 464165 2018-03-11 11:21:23Z rene $
 
 PORTNAME=	xdaliclock
 PORTVERSION=	2.43
 CATEGORIES=	x11-clocks
 MASTER_SITES=	http://www.jwz.org/xdaliclock/
 
-MAINTAINER=	wxs@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Rather neat animated clock
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/X11

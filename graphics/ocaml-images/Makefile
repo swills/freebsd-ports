@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/ocaml-images/Makefile 418967 2016-07-23 14:19:05Z rene $
+# $FreeBSD: head/graphics/ocaml-images/Makefile 464625 2018-03-15 19:31:01Z bdrewery $
 
 PORTNAME=	images
 PORTVERSION=	4.0.1
-PORTREVISION=	8
+PORTREVISION=	9
 PORTEPOCH=	2
 CATEGORIES=	graphics
 MASTER_SITES=	https://bitbucket.org/camlspotter/camlimages/get/
@@ -19,7 +19,6 @@ BUILD_DEPENDS+=	omake:devel/omake
 
 USE_OCAML=		yes
 USE_OCAML_FINDLIB=	yes
-OCAMLFIND_DESTDIR=	${STAGEDIR}${PREFIX}/${OCAML_SITELIBDIR}
 
 OCAML_PKGDIRS=	camlimages
 OCAML_LDLIBS=	${OCAML_SITELIBDIR}/camlimages
@@ -76,10 +75,6 @@ do-configure:
 
 do-build:
 	(cd ${WRKSRC} && ${OMAKE} ${OMARGS})
-
-ocaml-findlib:
-	# Overriding ocaml-findlib target which does not support stage
-	# The consequence is that pkg-plist must be manually supported
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/${OCAML_LDLIBS}

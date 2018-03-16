@@ -1,8 +1,8 @@
 # Created by: David Naylor <dbn@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-plumbum/Makefile 458278 2018-01-06 14:31:30Z dbn $
+# $FreeBSD: head/sysutils/py-plumbum/Makefile 464192 2018-03-11 18:26:53Z dbn $
 
 PORTNAME=	plumbum
-PORTVERSION=	1.6.5
+PORTVERSION=	1.6.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

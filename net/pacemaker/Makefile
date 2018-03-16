@@ -1,8 +1,9 @@
 # Created by: dpejesh@yahoo.com
-# $FreeBSD: head/net/pacemaker/Makefile 456125 2017-12-12 12:37:57Z antoine $
+# $FreeBSD: head/net/pacemaker/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	pacemaker
 PORTVERSION=	1.1.16
+PORTREVISION=	1
 DISTVERSIONPREFIX=	Pacemaker-
 CATEGORIES=	net
 
@@ -10,6 +11,8 @@ MAINTAINER=	dpejesh@yahoo.com
 COMMENT=	Scalable High-Availability cluster resource manager
 
 LICENSE=	GPLv2
+
+BROKEN_armv6=		fails to install: help2man: can't get '--help' info from pacemakerd
 
 BUILD_DEPENDS=	bash:shells/bash \
 		corosync:net/corosync \
@@ -24,9 +27,6 @@ RUN_DEPENDS=	bash:shells/bash \
 		corosync:net/corosync \
 		getopt>=0:misc/getopt \
 		ocf-tester:net-mgmt/resource-agents
-
-BROKEN_armv6=		fails to install: help2man: can't get '--help' info from pacemakerd
-BROKEN_powerpc64=	fails to build
 
 CONFLICTS=	heartbeat-[0-9]*
 

@@ -1,5 +1,5 @@
 # Created by: FreeBSD GNOME Team <gnome@freebsd.org>
-# $FreeBSD: head/devel/appstream-glib/Makefile 440288 2017-05-06 20:13:10Z kwm $
+# $FreeBSD: head/devel/appstream-glib/Makefile 464160 2018-03-11 10:12:28Z tobik $
 
 PORTNAME=	appstream-glib
 PORTVERSION=	0.5.7
@@ -40,7 +40,7 @@ OPTIONS_DEFINE=	MANPAGES
 OPTIONS_DEFAULT=MANPAGES
 OPTIONS_SUB=	yes
 MANPAGES_CONFIGURE_ENABLE=	man
-MANPAGE_BUILD_DEPENDS=	docbook-xml>=0:textproc/docbook-xml \
+MANPAGES_BUILD_DEPENDS=	docbook-xml>=0:textproc/docbook-xml \
 		docbook-xsl>=0:textproc/docbook-xsl
 MANPAGES_USE=	GNOME=libxslt:build
 

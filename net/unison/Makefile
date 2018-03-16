@@ -1,10 +1,9 @@
 # Created by: Dan Pelleg <dpelleg+unison@cs.cmu.edu>
-# $FreeBSD: head/net/unison/Makefile 461338 2018-02-09 20:33:59Z madpilot $
+# $FreeBSD: head/net/unison/Makefile 464009 2018-03-09 21:11:54Z madpilot $
 
 PORTNAME=	unison
-PORTVERSION=	2.48.15
+PORTVERSION=	2.51.2
 DISTVERSIONPREFIX=	v
-DISTVERSIONSUFFIX=	v4
 CATEGORIES=	net
 
 MAINTAINER=	madpilot@FreeBSD.org

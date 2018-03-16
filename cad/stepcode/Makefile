@@ -1,5 +1,4 @@
-# Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/cad/stepcode/Makefile 460682 2018-02-02 09:48:48Z danfe $
+# $FreeBSD: head/cad/stepcode/Makefile 464438 2018-03-13 22:24:58Z fernape $
 
 PORTNAME=	stepcode
 PORTVERSION=	0.8
@@ -7,7 +6,7 @@ DISTVERSIONPREFIX=	v
 PORTREVISION=	3
 CATEGORIES=	cad
 
-MAINTAINER=	fernando.apesteguia@gmail.com
+MAINTAINER=	fernape@FreeBSD.org
 COMMENT=	Generates C++ and Python from ISO10303 files
 
 LICENSE=	BSD3CLAUSE

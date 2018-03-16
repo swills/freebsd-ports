@@ -1,5 +1,5 @@
 # Created by: Emmanuel Vadot <manu@freebsd.org>
-# $FreeBSD: head/sysutils/u-boot-tools/Makefile 461966 2018-02-16 02:54:14Z swills $
+# $FreeBSD: head/sysutils/u-boot-tools/Makefile 464668 2018-03-16 09:41:38Z jhale $
 
 PORTNAME=	u-boot-tools
 DISTVERSION=	2017.09
@@ -15,7 +15,7 @@ LICENSE=	GPLv2
 
 USES=	tar:bzip2 gmake python:2.7,build ssl
 
-CONFLICT=	uboot-mkimage
+CONFLICTS=	uboot-mkimage
 ALL_TARGET=	tools-only
 MAKE_ARGS=	ARCH=sandbox \
 		CC="${CC}" \

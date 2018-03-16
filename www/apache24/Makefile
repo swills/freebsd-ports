@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/apache24/Makefile 452732 2017-10-23 18:49:27Z brnrd $
+# $FreeBSD: head/www/apache24/Makefile 464175 2018-03-11 14:23:28Z brnrd $
 
 PORTNAME=	apache24
 PORTVERSION=	2.4.29
@@ -20,8 +20,7 @@ LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 CONFLICTS_INSTALL=	caudium14-1.* \
 			apache-*-2.2.* apache22-*
 
-USE_APACHE=	common24
-USES=		autoreconf cpe iconv libtool perl5 tar:bzip2
+USES=		apache:server,2.4 autoreconf cpe iconv libtool perl5 tar:bzip2
 USE_PERL5=	run
 USE_RC_SUBR=	apache24 htcacheclean
 GNU_CONFIGURE=	yes

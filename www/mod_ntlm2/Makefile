@@ -1,5 +1,5 @@
 # Created by: Alex "lissyara" Keda <admin@lissyara.su>
-# $FreeBSD: head/www/mod_ntlm2/Makefile 462849 2018-02-24 16:26:50Z joneum $
+# $FreeBSD: head/www/mod_ntlm2/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_ntlm2
 PORTVERSION=	0.1
@@ -12,8 +12,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	NTLM authentication module for the Apache2 webserver
 
-USES=		samba:build
-USE_APACHE=	22
+USES=		apache:2.2 samba:build
 MAKE_ENV=	APXS=${APXS}
 
 do-install:

@@ -1,8 +1,9 @@
 # Created by: Li-Lun Wang <llwang@infor.org>
-# $FreeBSD: head/science/py-mdp/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/science/py-mdp/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	mdp
 PORTVERSION=	3.5
+PORTREVISION=	1
 CATEGORIES=	science python
 MASTER_SITES=	SF/${PORTNAME}-toolkit/${PORTNAME}-toolkit/${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

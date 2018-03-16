@@ -1,9 +1,9 @@
 # Created by: joerg
-# $FreeBSD: head/deskutils/sliderule/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/deskutils/sliderule/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	sliderule
 PORTVERSION=	1.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	deskutils
 MASTER_SITES=	LOCAL/joerg
 DISTNAME=	${PORTNAME}

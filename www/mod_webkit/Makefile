@@ -1,5 +1,5 @@
 # Created by: Choe, Cheng-Dae
-# $FreeBSD: head/www/mod_webkit/Makefile 430490 2017-01-03 18:12:13Z mat $
+# $FreeBSD: head/www/mod_webkit/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_webkit
 PORTVERSION=	1.2.1
@@ -14,7 +14,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	Cito
 GH_PROJECT=	w4py
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 AP_EXTRAS=	marshal.c

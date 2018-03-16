@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/yasm-devel/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/devel/yasm-devel/Makefile 464351 2018-03-13 08:33:13Z amdmi3 $
 
 PORTNAME=		yasm
 PORTVERSION=		1.2.0.29
@@ -19,6 +19,7 @@ OPTIONS_DEFINE=	DEBUG NLS
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-python --disable-python-bindings
+TEST_TARGET=		check
 
 NLS_USES=		gettext iconv
 NLS_CONFIGURE_ENABLE=	nls
@@ -34,8 +35,5 @@ CONFLICTS_INSTALL=	yasm-[0-9]*
 .if ${PORT_OPTIONS:MDEBUG} || defined(WITH_DEBUG)
 CONFIGURE_ARGS+=	--enable-debug
 .endif
-
-regression-test: build
-	@cd ${WRKSRC} && ${MAKE} check
 
 .include <bsd.port.mk>

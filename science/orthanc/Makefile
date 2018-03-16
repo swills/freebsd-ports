@@ -1,9 +1,9 @@
 # Created by: mp39590@gmail.com
-# $FreeBSD: head/science/orthanc/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/science/orthanc/Makefile 463956 2018-03-09 12:07:37Z jbeich $
 
 PORTNAME=	orthanc
 PORTVERSION=	1.3.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	science graphics net www
 MASTER_SITES=	http://orthanc-server.com/downloads/get.php?path=/orthanc/:main \
 		http://www.montefiore.ulg.ac.be/~jodogne/Orthanc/ThirdPartyDownloads/:mongoose

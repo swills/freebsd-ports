@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-hamlit26/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/www/rubygem-hamlit26/Makefile 464670 2018-03-16 09:56:45Z jhale $
 
 PORTNAME=	hamlit
 PORTVERSION=	2.6.2
@@ -16,7 +16,7 @@ RUN_DEPENDS=	rubygem-temple07>=0.7.6:devel/rubygem-temple07 \
 		rubygem-thor>=0:devel/rubygem-thor \
 		rubygem-tilt>=0:devel/rubygem-tilt
 
-CONFLICT_INSTALL=	rubygem-hamlit
+CONFLICTS_INSTALL=	rubygem-hamlit
 PORTSCOUT=	limit:^2\.6\.
 
 USES=		gem shebangfix

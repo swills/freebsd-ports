@@ -1,8 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/biology/pycogent/Makefile 456050 2017-12-11 16:54:20Z antoine $
+# $FreeBSD: head/biology/pycogent/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	pycogent
 PORTVERSION=	1.9
+PORTREVISION=	1
 CATEGORIES=	biology python
 
 MAINTAINER=	python@FreeBSD.org

@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/scilab-toolbox-sivp/Makefile 438490 2017-04-14 05:30:25Z jbeich $
+# $FreeBSD: head/math/scilab-toolbox-sivp/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	sivp
 DISTVERSION=	1.0.0.r286
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	math graphics multimedia
 MASTER_SITES=	LOCAL/makc
 PKGNAMEPREFIX=	scilab-toolbox-

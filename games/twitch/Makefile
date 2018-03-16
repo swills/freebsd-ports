@@ -1,9 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/games/twitch/Makefile 456126 2017-12-12 12:40:15Z antoine $
+# $FreeBSD: head/games/twitch/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	twitch
 PORTVERSION=	1.0
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/Twitch/${PORTVERSION}/ \
                 SF/nemysisfreebsdp/${CATEGORIES}/:icons

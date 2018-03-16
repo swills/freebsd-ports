@@ -1,8 +1,8 @@
 # Created by: Renaud Chaput <renchap@cocoa-x.com>
-# $FreeBSD: head/sysutils/rubygem-chef/Makefile 463510 2018-03-03 16:31:20Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-chef/Makefile 464019 2018-03-09 21:49:10Z sunpoet $
 
 PORTNAME=	chef
-PORTVERSION=	13.8.0
+PORTVERSION=	13.8.3
 CATEGORIES=	sysutils
 MASTER_SITES=	RG
 

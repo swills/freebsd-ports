@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/rubygem-activerecord-session_store/Makefile 440724 2017-05-12 21:51:13Z sunpoet $
+# $FreeBSD: head/databases/rubygem-activerecord-session_store/Makefile 464411 2018-03-13 20:30:46Z sunpoet $
 
 PORTNAME=	activerecord-session_store
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

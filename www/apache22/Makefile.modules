@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/apache22/Makefile.modules 394508 2015-08-17 14:20:40Z mat $
+# $FreeBSD: head/www/apache22/Makefile.modules 464175 2018-03-11 14:23:28Z brnrd $
 #
 # Note by Clement Laforet: (to generate PLIST_SUB entries for modules)
 #	gsed 's/^\(.*\)mod\(.*\)\.so/%%\MOD\U\2%%\L\1mod\2\.so/' pkg-plist > tmp
@@ -83,16 +83,13 @@ WITH_EXCEPTION_HOOK=	yes
 CONFIGURE_ARGS+=	--enable-exception-hook
 .endif
 
-.if ${PORT_OPTIONS:MAUTH_BASIC} || ${PORT_OPTIONS:MAUTH_DIGEST}
-.  if !${APACHE_MODULES:MAUTHN*}
+.if ( ${PORT_OPTIONS:MAUTH_BASIC} || ${PORT_OPTIONS:MAUTH_DIGEST} ) && \
+	empty(PORT_OPTIONS:MAUTHN*)
 IGNORE=	AUTH_BASIC and AUTH_DIGEST need at least one AUTHN provider
-.  endif
 .endif
 
-.if ${PORT_OPTIONS:MAUTH_BASIC}
-.  if !${APACHE_MODULES:MAUTHZ*}
+.if ${PORT_OPTIONS:MAUTH_BASIC} && empty(PORT_OPTIONS:MAUTHZ*)
 IGNORE=	AUTH_BASIC need at least one AUTHZ provider
-.  endif
 .endif
 
 CONFIGURE_ARGS+=	--with-mpm=${WITH_MPM}

@@ -1,8 +1,9 @@
 # Created by: Craig Leres <leres@FreeBSD.org>
-# $FreeBSD: head/devel/arduino-sevseg/Makefile 449916 2017-09-15 18:18:26Z leres $
+# $FreeBSD: head/devel/arduino-sevseg/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	arduino-sevseg
 PORTVERSION=	3.3.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

@@ -1,8 +1,9 @@
 # Created by: Johannes Jost Meixner <johannes@perceivon.net>
-# $FreeBSD: head/graphics/py-pyganim/Makefile 462921 2018-02-25 05:33:24Z sunpoet $
+# $FreeBSD: head/graphics/py-pyganim/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	pyganim
 PORTVERSION=	0.9.2
+PORTREVISION=	1
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

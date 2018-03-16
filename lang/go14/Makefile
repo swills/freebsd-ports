@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/go14/Makefile 455813 2017-12-09 00:42:05Z linimon $
+# $FreeBSD: head/lang/go14/Makefile 464590 2018-03-15 14:51:39Z linimon $
 
 PORTNAME=	go14
 PORTVERSION=	1.4.3
@@ -12,8 +12,6 @@ COMMENT=	Go programming language
 
 LICENSE=	BSD3CLAUSE
 
-BROKEN_armv6 =		fails to build: go build runtime: go/pkg/tool/freebsd_arm/5g: wait: interrupted system call
-BROKEN_armv7 =		fails to build: go build runtime: go/pkg/tool/freebsd_arm/5g: wait: interrupted system call
 ONLY_FOR_ARCHS=		amd64 armv6 armv7 i386
 
 USES=		compiler shebangfix

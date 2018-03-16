@@ -1,8 +1,9 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/finance/R-cran-AER/Makefile 430925 2017-01-09 09:09:10Z wen $
+# $FreeBSD: head/finance/R-cran-AER/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	AER
 DISTVERSION=	1.2-5
+PORTREVISION=	1
 CATEGORIES=	finance
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

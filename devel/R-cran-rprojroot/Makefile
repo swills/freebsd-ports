@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-rprojroot/Makefile 440031 2017-05-03 19:08:35Z tota $
+# $FreeBSD: head/devel/R-cran-rprojroot/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	rprojroot
 DISTVERSION=	1.2
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/schwarzweiss/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/games/schwarzweiss/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	schwarzweiss
 PORTVERSION=	20110806
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games python
 MASTER_SITES=	SF/nemysisfreebsdp/games/:icons
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \

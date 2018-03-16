@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/devel/ocaml-findlib/Makefile 431473 2017-01-14 15:56:29Z hrs $
+# $FreeBSD: head/devel/ocaml-findlib/Makefile 464624 2018-03-15 19:19:41Z bdrewery $
 
 PORTNAME=	findlib
 PORTVERSION=	1.7.1
@@ -37,13 +37,15 @@ TOOLBOX_RUN_DEPENDS=	labltk:x11-toolkits/ocaml-labltk
 TOOLBOX_BUILD_DEPENDS=	${TOOLBOX_RUN_DEPENDS}
 
 post-install:
-	${CHMOD} 755 ${STAGEDIR}${PREFIX}/bin/ocamlfind \
-	    ${STAGEDIR}${PREFIX}/${OCAML_SITELIBDIR}/findlib/make_wizard
 	cd ${STAGEDIR}${PREFIX} && \
 	    ${STRIP_CMD} bin/ocamlfind \
 	    ${OCAML_SITELIBDIR}/findlib/findlib.cmxs \
 	    ${OCAML_SITELIBDIR}/findlib/findlib_dynload.cmxs \
 	    ${OCAML_SITELIBDIR}/findlib/findlib_top.cmxs
+
+post-install-TOOLBOX-on:
+	${CHMOD} 755 ${STAGEDIR}${PREFIX}/bin/ocamlfind \
+	    ${STAGEDIR}${PREFIX}/${OCAML_SITELIBDIR}/findlib/make_wizard
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

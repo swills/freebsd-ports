@@ -1,9 +1,9 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-extrecmenu/Makefile 434697 2017-02-24 09:01:40Z amdmi3 $
+# $FreeBSD: head/multimedia/vdr-plugin-extrecmenu/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	vdr-plugin-extrecmenu
 PORTVERSION=	1.2.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	multimedia
 MASTER_SITES=	http://projects.vdr-developer.org/attachments/download/936/
 DISTNAME=	vdr-${PLUGIN}-${PORTVERSION}

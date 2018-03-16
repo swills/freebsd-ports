@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/py-py-jack/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/audio/py-py-jack/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	py-jack
 PORTVERSION=	0.5.2
+PORTREVISION=	1
 CATEGORIES=	audio python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/devel/sdl_gnat/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/devel/sdl_gnat/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	sdl_gnat
 PORTVERSION=	2013
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	http://downloads.dragonlace.net/src/
 

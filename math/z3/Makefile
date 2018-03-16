@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/z3/Makefile 459750 2018-01-23 13:55:27Z ale $
+# $FreeBSD: head/math/z3/Makefile 463977 2018-03-09 16:55:37Z linimon $
 
 PORTNAME=	z3
 DISTVERSIONPREFIX=	${PORTNAME}-
@@ -11,7 +11,6 @@ COMMENT=	Z3 Theorem Prover
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-BROKEN_powerpc64=	Does not build
 # compiler picks ${LOCALBASE}/include/dictionary.h from iniparser
 CONFLICTS=		iniparser-*
 

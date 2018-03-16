@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/py-qspin/Makefile 453933 2017-11-10 21:55:26Z yuri $
+# $FreeBSD: head/science/py-qspin/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	qspin
 DISTVERSION=	0.1.8
+PORTREVISION=	1
 CATEGORIES=	science
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

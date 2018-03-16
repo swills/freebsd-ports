@@ -1,5 +1,5 @@
 # Created by: mbr@FreeBSD.org
-# $FreeBSD: head/www/mod_auth_mysql_another/Makefile 453544 2017-11-05 12:55:03Z brnrd $
+# $FreeBSD: head/www/mod_auth_mysql_another/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_auth_mysql
 PORTVERSION=	3.0.0
@@ -14,7 +14,7 @@ COMMENT=	Allows users to use MySQL databases for user authentication
 LICENSE=	APACHE10
 
 USE_MYSQL=	yes
-USE_APACHE=	22+
+USES=		apache:2.2+
 
 SHORTMODNAME=	mysql_auth
 AP_FAST_BUILD=	yes

@@ -1,12 +1,12 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/graphics/icoutils/Makefile 454881 2017-11-25 13:09:21Z vanilla $
+# $FreeBSD: head/graphics/icoutils/Makefile 464033 2018-03-09 22:05:37Z sunpoet $
 
 PORTNAME=	icoutils
-PORTVERSION=	0.32.2
+PORTVERSION=	0.32.3
 CATEGORIES=	graphics
 MASTER_SITES=	SAVANNAH
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Convert/extract images in Microsoft Windows(R) icon/cursor files
 
 LICENSE=	GPLv3+
@@ -15,19 +15,20 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libpng.so:graphics/png
 
 USES=		localbase shebangfix tar:bzip2
-SHEBANG_FILES=	extresso/*.in
-GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-nls
+GNU_CONFIGURE=	yes
 
-OPTIONS_DEFINE=	RESSCRIPTS
+SHEBANG_FILES=	extresso/*.in
+
+OPTIONS_DEFINE=	EXTRESSO
 OPTIONS_SUB=	yes
+EXTRESSO_DESC=	Additional extresso and genresscript programs
 
-RESSCRIPTS_DESC=	Additional resource scripts written in Perl
-RESSCRIPTS_RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww
-RESSCRIPTS_USES=	perl5
-RESSCRIPTS_USE=		PERL5=run
+EXTRESSO_RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww
+EXTRESSO_USES=		perl5
+EXTRESSO_USE=		PERL5=run
 
 post-patch-RESSCRIPTS-off:
-	@${REINPLACE_CMD} -e '/^SUBDIRS/s|extresso||' ${WRKSRC}/Makefile.in
+	@${REINPLACE_CMD} -e '/^SUBDIRS/ s| extresso||' ${WRKSRC}/Makefile.in
 
 .include <bsd.port.mk>

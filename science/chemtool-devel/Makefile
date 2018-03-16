@@ -1,5 +1,5 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/science/chemtool-devel/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/science/chemtool-devel/Makefile 464164 2018-03-11 11:20:43Z rene $
 
 PORTNAME=	chemtool
 PORTVERSION=	1.7.20050716
@@ -9,7 +9,7 @@ MASTER_SITES=	http://ruby.chemie.uni-freiburg.de/~martin/chemtool/
 
 DISTNAME=	ct17a15
 
-MAINTAINER=	maho@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Drawing organic molecules easily and store them (developer version)
 
 LIB_DEPENDS=	libEMF.so:graphics/libemf

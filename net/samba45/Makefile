@@ -1,5 +1,5 @@
 # Created by: timur@FreeBSD.org
-# $FreeBSD: head/net/samba45/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/net/samba45/Makefile 464445 2018-03-14 02:06:29Z timur $
 
 PORTNAME?=			${SAMBA4_BASENAME}45
 PORTVERSION?=			${SAMBA4_VERSION}
@@ -13,13 +13,16 @@ COMMENT?=			Free SMB/CIFS and AD/DC server and client for Unix
 
 LICENSE=			GPLv3
 
+DEPRECATED=			yes
+EXPIRATION_DATE=		2018-06-13
+
 CONFLICTS?=			samba4-4.0.* samba4[1-46-9]-4.* p5-Parse-Pidl-4.*
 
 #EXTRA_PATCHES=		${PATCHDIR}/extra-patch-security:-p1
 
 SAMBA4_BASENAME=		samba
 SAMBA4_PORTNAME=		${SAMBA4_BASENAME}4
-SAMBA4_VERSION=			4.5.15
+SAMBA4_VERSION=			4.5.16
 SAMBA4_DISTNAME=		${SAMBA4_BASENAME}-${SAMBA4_VERSION:S|.p|pre|:S|.r|rc|:S|.t|tp|:S|.a|alpha|}
 
 WRKSRC?=			${WRKDIR}/${DISTNAME}

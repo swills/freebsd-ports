@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/sbase/Makefile 460461 2018-01-31 06:25:40Z yuri $
+# $FreeBSD: head/sysutils/sbase/Makefile 464386 2018-03-13 14:43:50Z tobik $
 
 PORTNAME=	sbase
 DISTVERSION=	g20171110
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://git.suckless.org/sbase/snapshot/
 DISTNAME=	${PORTNAME}-4b9c664
@@ -11,5 +12,8 @@ COMMENT=	Collection of UNIX tools that are portable across UNIX-like systems
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+MAKE_ARGS=	PREFIX=${PREFIX}/${PORTNAME} MANPREFIX="${PREFIX}/${PORTNAME}/man"
+MANDIRS=	${PREFIX}/${PORTNAME}/man
 
 .include <bsd.port.mk>

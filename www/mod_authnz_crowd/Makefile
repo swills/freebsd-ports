@@ -1,9 +1,9 @@
 # Created by: Vick Khera <vivek@khera.org>
-# $FreeBSD: head/www/mod_authnz_crowd/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/www/mod_authnz_crowd/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_authnz_crowd
 PORTVERSION=	2.2.2
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	www
 MASTER_SITES=	http://downloads.atlassian.com/software/crowd/downloads/cwdapache/
 DIST_SUBDIR=	apache2
@@ -21,10 +21,9 @@ BROKEN_powerpc64=	Does not build: error: curl/curl.h: No such file or directory
 
 GNU_CONFIGURE=	yes
 LIBS+=		-L${LOCALBASE}/lib
-USES=		autoreconf libtool
+USES=		apache:2.2+ autoreconf libtool
 USE_GNOME=	libxml2
 USE_GCC=	any
-USE_APACHE=	22+
 
 SUB_FILES=	pkg-message zzz_authnz_crowd.conf
 SUB_LIST+=	APACHEETCDIR=${APACHEETCDIR} \

@@ -1,5 +1,5 @@
 # Created by: Sahil Tandon <sahil@tandon.net>
-# $FreeBSD: head/net/p5-Socket-GetAddrInfo/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/net/p5-Socket-GetAddrInfo/Makefile 464053 2018-03-10 09:03:10Z amdmi3 $
 
 PORTNAME=	Socket-GetAddrInfo
 PORTVERSION=	0.22
@@ -11,10 +11,15 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	RFC 2553's getaddrinfo and getnameinfo functions
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
 BUILD_DEPENDS=	p5-ExtUtils-CChecker>=0.06:devel/p5-ExtUtils-CChecker
 
 USES=		perl5 shebangfix
 USE_PERL5=	modbuild
 SHEBANG_FILES=	bin/getaddrinfo bin/getnameinfo
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Pakhom Golynga <pg@pakhom.spb.ru>
-# $FreeBSD: head/net-mgmt/zabbix34-server/Makefile 462615 2018-02-22 17:08:46Z dbaio $
+# $FreeBSD: head/net-mgmt/zabbix34-server/Makefile 464348 2018-03-13 08:20:00Z tobik $
 
 PORTNAME=	zabbix34
 PORTVERSION=	3.4.7
@@ -27,6 +27,7 @@ ZABBIX_BUILD=	${PKGNAMESUFFIX:S/^-//}
 
 .if ${ZABBIX_BUILD} != "frontend" # frontend only needs the version/distribution settings
 .if ${ZABBIX_BUILD} != "agent"
+CONFIGURE_ARGS+=	--with-libevent=${LOCALBASE}
 LIB_DEPENDS+=	libevent.so:devel/libevent
 USE_RC_SUBR=	zabbix_${ZABBIX_BUILD}
 .else

@@ -1,14 +1,13 @@
 # Created by: stas
-# $FreeBSD: head/sysutils/devcpu-data/Makefile 459464 2018-01-19 19:28:08Z sbruno $
+# $FreeBSD: head/sysutils/devcpu-data/Makefile 464504 2018-03-14 15:33:34Z sbruno $
 
 PORTNAME=	data
-PORTVERSION=	1.15
-PORTREVISION=	1
+PORTVERSION=	1.16
 CATEGORIES=	sysutils
-MASTER_SITES=	https://downloadmirror.intel.com/27337/eng/:intel \
+MASTER_SITES=	https://downloadmirror.intel.com/27591/eng/:intel \
 		LOCAL/sbruno:amd
 PKGNAMEPREFIX=	devcpu-
-DISTFILES=	microcode-20171117.tgz:intel \
+DISTFILES=	microcode-20180312.tgz:intel \
 		amd64-microcode_3.20171205.1.tar.xz:amd
 
 MAINTAINER=	clarkjc@runbox.com

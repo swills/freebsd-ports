@@ -1,9 +1,9 @@
 # Created by: nbm
-# $FreeBSD: head/games/criticalmass/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/criticalmass/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	criticalmass
 PORTVERSION=	1.0.2
-PORTREVISION=	7
+PORTREVISION=	8
 PORTEPOCH=	1
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/Critical%20Mass/${PORTVERSION}

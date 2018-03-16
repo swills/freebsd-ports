@@ -1,5 +1,5 @@
 # Created by: Abel Chow <achow@transoft.net>
-# $FreeBSD: head/www/tidy-devel/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/www/tidy-devel/Makefile 464577 2018-03-15 08:33:14Z amdmi3 $
 
 PORTNAME?=	tidy
 DISTVERSION=	090315-cvs
@@ -88,14 +88,14 @@ post-install:
 .for pgm in ${BIN2STRIP}
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/${pgm}
 .endfor
-.if ${PORT_OPTIONS:MDOCS}
+
+post-install-DOCS-on:
 	@${ECHO_MSG} "===>   Installing documentation for ${PKGNAME}"
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${DOCFILES:S|^|${WRKSRC}/htmldoc/|} ${STAGEDIR}${DOCSDIR}
 	@${ECHO_MSG} "===>   Documentation installed in ${DOCSDIR}."
-.endif
 
-regression-test:
+do-test:
 .for t in testaccess.sh testall.sh testxml.sh
 	cd ${WRKSRC}/test && ./${t}
 .endfor

@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/science/R-cran-AMORE/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/science/R-cran-AMORE/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	AMORE
 PORTVERSION=	0.2.14
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	science
 DISTNAME=	${PORTNAME}_${PORTVERSION:C/\./-/g:C/-/./1}
 

@@ -1,9 +1,9 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/misc/py-glance/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/misc/py-glance/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	glance
 PORTVERSION=	13.0.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	misc python
 MASTER_SITES=	https://fossies.org/linux/misc/openstack/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

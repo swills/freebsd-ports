@@ -1,9 +1,9 @@
 # Created by: Domas Mituzas <midom@dammit.lt>
-# $FreeBSD: head/www/kannel/Makefile 455765 2017-12-08 01:46:00Z linimon $
+# $FreeBSD: head/www/kannel/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	kannel
 PORTVERSION=	1.4.4
-PORTREVISION=	5
+PORTREVISION=	6
 PORTEPOCH=	1
 CATEGORIES=	www
 MASTER_SITES=	http://www.kannel.org/download/${PORTVERSION}/

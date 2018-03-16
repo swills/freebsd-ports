@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-evaluate/Makefile 444560 2017-06-28 09:51:41Z tota $
+# $FreeBSD: head/devel/R-cran-evaluate/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	evaluate
 PORTVERSION=	0.10.1
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

@@ -1,9 +1,9 @@
 # Created by: Dan Rowe <bsdports@csnstores.com>
-# $FreeBSD: head/graphics/pecl-gmagick/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/graphics/pecl-gmagick/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	gmagick
 PORTVERSION=	1.1.7RC3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 
 MAINTAINER=	bsdports@wayfair.com

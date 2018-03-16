@@ -1,9 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/finance/R-cran-PerformanceAnalytics/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/finance/R-cran-PerformanceAnalytics/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	PerformanceAnalytics
 PORTVERSION=	1.4.3541
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	finance
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

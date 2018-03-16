@@ -1,5 +1,5 @@
 # Created by: Bob Bomar <bob@bomar.us>
-# $FreeBSD: head/www/photo_gallery/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/photo_gallery/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	photo_gallery
 PORTVERSION=	1.5
@@ -15,8 +15,7 @@ RUN_DEPENDS=	anytopnm:graphics/netpbm\
 		p5-Image-Info>=0:graphics/p5-Image-Info\
 		p5-URI>=0:net/p5-URI
 
-USE_APACHE_RUN=	22+
-USES=		perl5 shebangfix tar
+USES=		apache:run,2.2+ perl5 shebangfix tar
 SHEBANG_FILES=	index.cgi
 perl_OLD_CMD=	/usr/pkg/bin/perl
 NO_BUILD=	yes

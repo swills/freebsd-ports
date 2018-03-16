@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/graphics/pygts/Makefile 422694 2016-09-23 20:21:37Z rm $
+# $FreeBSD: head/graphics/pygts/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	pygts
 PORTVERSION=	0.3.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics python
 MASTER_SITES=	SF
 

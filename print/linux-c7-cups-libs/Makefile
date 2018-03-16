@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/print/linux-c7-cups-libs/Makefile 452945 2017-10-26 19:23:18Z tijl $
+# $FreeBSD: head/print/linux-c7-cups-libs/Makefile 464668 2018-03-16 09:41:38Z jhale $
 
 PORTNAME=	cups
 PORTVERSION=	1.6.3
@@ -11,7 +11,7 @@ LIB_DISTNAMES=	${LINUXNAME}-${DISTVERSIONFULL}
 MAINTAINER=	emulation@FreeBSD.org
 COMMENT=	Common UNIX Printing System libraries
 
-CONFLICT=	linux-c6-${LINUXNAME}-[0-9]*
+CONFLICTS=	linux-c6-${LINUXNAME}-[0-9]*
 
 DESCR=		${.CURDIR}/../${PORTNAME}/pkg-descr
 DOCSDIR=	${PREFIX}/usr/share/doc/${LINUXNAME}-${PORTVERSION}

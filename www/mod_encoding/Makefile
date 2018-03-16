@@ -1,5 +1,5 @@
 # Created by: edwin@mavetju.org
-# $FreeBSD: head/www/mod_encoding/Makefile 418840 2016-07-20 15:33:20Z mat $
+# $FreeBSD: head/www/mod_encoding/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_encoding
 PORTVERSION=	20021209
@@ -13,8 +13,7 @@ COMMENT=	Apache module for non-ASCII filename interoperability
 
 LICENSE=	APACHE11
 
-USE_APACHE=	22+
-USES=		iconv gmake
+USES=		apache:2.2+ iconv gmake
 HAS_CONFIGURE=	yes
 
 CONFIGURE_ARGS=	--prefix=${PREFIX} \

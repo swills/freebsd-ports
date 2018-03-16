@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/www/mod_fileiri/Makefile 336589 2013-12-15 22:11:20Z ohauer $
+# $FreeBSD: head/www/mod_fileiri/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_fileiri
 PORTVERSION=	1.15
@@ -14,7 +14,7 @@ COMMENT=	Apache 2.x http IRIs module
 
 #LICENSE=	AL11
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 

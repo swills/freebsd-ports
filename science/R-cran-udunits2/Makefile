@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/science/R-cran-udunits2/Makefile 444440 2017-06-27 03:36:03Z tota $
+# $FreeBSD: head/science/R-cran-udunits2/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	udunits2
 PORTVERSION=	0.13
+PORTREVISION=	1
 CATEGORIES=	science
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

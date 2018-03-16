@@ -1,8 +1,8 @@
-# $FreeBSD: head/japanese/font-nasu/Makefile 454828 2017-11-24 17:53:11Z mat $
+# $FreeBSD: head/japanese/font-nasu/Makefile 464600 2018-03-15 16:21:09Z ume $
 
 PORTNAME=	nasu
 PORTVERSION=	20141215
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	SOURCEFORGE_JP/users/7/7587
 PKGNAMEPREFIX=	ja-font-
@@ -41,9 +41,6 @@ do-install:
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 	cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR} \
-		"! ( -name Nasu-Bold-20141215.ttf \
-		-o -name Nasu-Regular-20141215.ttf \
-		-o -name NasuM-Bold-20141215.ttf \
-		-o -name NasuM-Regular-20141215.ttf )"
+		"! -name *\.ttf"
 
 .include <bsd.port.mk>

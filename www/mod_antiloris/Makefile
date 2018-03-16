@@ -1,5 +1,5 @@
 # Created by: Aleksandar Pejic <alex@vts.su.ac.rs>
-# $FreeBSD: head/www/mod_antiloris/Makefile 415839 2016-05-25 15:43:34Z mat $
+# $FreeBSD: head/www/mod_antiloris/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_antiloris
 PORTVERSION=	0.4
@@ -12,8 +12,7 @@ COMMENT=	Protect Apache 2.x against the Slowloris HTTP DoS attack
 
 LICENSE=	APACHE20
 
-USES=		tar:bzip2
-USE_APACHE=	22
+USES=		apache:2.2 tar:bzip2
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 AP_EXTRAS+=	-a

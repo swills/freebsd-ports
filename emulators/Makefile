@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/Makefile 463444 2018-03-02 19:10:48Z rene $
+# $FreeBSD: head/emulators/Makefile 464066 2018-03-10 11:14:01Z dbn $
 #
 
     COMMENT = Emulators for other operating systems
@@ -56,7 +56,6 @@
     SUBDIR += hugo
     SUBDIR += i386-wine
     SUBDIR += i386-wine-devel
-    SUBDIR += i386-wine-staging
     SUBDIR += ia64sim
     SUBDIR += ines
     SUBDIR += javatari

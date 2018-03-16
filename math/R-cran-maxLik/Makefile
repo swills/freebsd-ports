@@ -1,8 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/R-cran-maxLik/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/R-cran-maxLik/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	maxLik
 DISTVERSION=	1.3-4
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/cego/Makefile 463738 2018-03-06 18:26:49Z pi $
+# $FreeBSD: head/databases/cego/Makefile 464070 2018-03-10 11:45:01Z pi $
 
 PORTNAME=	cego
-PORTVERSION=	2.39.5
+PORTVERSION=	2.39.7
 CATEGORIES=	databases
 MASTER_SITES=	http://www.lemke-it.com/
 

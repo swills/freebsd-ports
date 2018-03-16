@@ -1,5 +1,5 @@
 # Created by: Alexey A.Ukhov <auk@startext.de>
-# $FreeBSD: head/www/mod_chroot/Makefile 386734 2015-05-19 02:12:57Z amdmi3 $
+# $FreeBSD: head/www/mod_chroot/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_chroot
 PORTVERSION=	0.5
@@ -10,9 +10,8 @@ MASTER_SITES=	http://core.segfault.pl/~hobbit/mod_chroot/dist/
 MAINTAINER=	apache@FreeBSD.org
 COMMENT=	The mod_chroot makes running Apache in a chroot easy
 
-USES=		cpe
+USES=		apache:2.2+ cpe
 CPE_VENDOR=	marek_gutkowski
-USE_APACHE=	22+
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 

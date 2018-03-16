@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-purrr/Makefile 449292 2017-09-05 15:36:09Z tota $
+# $FreeBSD: head/devel/R-cran-purrr/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	purrr
-PORTVERSION=	0.2.3
+PORTVERSION=	0.2.4
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

@@ -1,8 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/editors/codelite/Makefile 455803 2017-12-08 21:58:08Z mmokhi $
+# $FreeBSD: head/editors/codelite/Makefile 464088 2018-03-10 20:10:46Z mmokhi $
 
 PORTNAME=	codelite
 PORTVERSION=	11.0
+PORTREVISION=	1
 CATEGORIES=	editors devel
 
 MAINTAINER=	mmokhi@FreeBSD.org
@@ -44,10 +45,10 @@ SFTP_USES=		localbase
 
 CLANG_DESC=		Clang code-completion
 
-.for v in 34 35 36 37 38 39
+.for v in 34 35 36 37 38 39 40 50 60
 OPTIONS_RADIO_CLANG+=	CLANG$v
 CLANG$v_DESC=		Clang ${v:C/(.)(.)/\1.\2.x/}
-.if $v == 39
+.if $v >= 39
 CLANG$v_BUILD_DEPENDS=	llvm$v>0:devel/llvm$v
 CLANG$v_RUN_DEPENDS=	llvm$v>0:devel/llvm$v
 .else

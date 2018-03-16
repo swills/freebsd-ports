@@ -1,8 +1,9 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/R-cran-Rsolnp/Makefile 440271 2017-05-06 15:15:00Z miwi $
+# $FreeBSD: head/math/R-cran-Rsolnp/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	Rsolnp
 DISTVERSION=	1.16
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

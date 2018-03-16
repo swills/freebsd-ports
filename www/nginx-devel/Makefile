@@ -1,5 +1,5 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/nginx-devel/Makefile 462474 2018-02-21 03:47:53Z osa $
+# $FreeBSD: head/www/nginx-devel/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	nginx
 PORTVERSION=	1.13.9
@@ -885,9 +885,8 @@ LIB_DEPENDS+=	libapr-1.so:devel/apr1 \
 		libluajit-5.1.so:lang/luajit \
 		libpcre.so:devel/pcre \
 		libyajl.so:devel/yajl
-USE_APACHE=	22+
 USE_GNOME+=	libxml2
-USES+=		pkgconfig shebangfix
+USES+=		apache:2.2+ pkgconfig shebangfix
 MASTER_SITES+=	http://www.modsecurity.org/tarball/${NGINX_MODSECURITY_VERSION:S/RC/rc/}/:modsecurity
 DISTFILES+=	modsecurity-${NGINX_MODSECURITY_VERSION}.tar.gz:modsecurity
 CONFIGURE_ARGS+=--add-module=${WRKDIR}/modsecurity-${NGINX_MODSECURITY_VERSION}/nginx/modsecurity

@@ -1,8 +1,9 @@
 # Created by: bf <bf@FreeBSD.org>
-# $FreeBSD: head/devel/abi-compliance-checker/Makefile 437198 2017-03-29 13:11:29Z mat $
+# $FreeBSD: head/devel/abi-compliance-checker/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	abi-compliance-checker
 DISTVERSION=	2.0b1
+PORTREVISION=	1
 CATEGORIES=	devel perl5
 
 MAINTAINER=	ports@FreeBSD.org

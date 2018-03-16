@@ -1,9 +1,9 @@
 # Created by: Randall Hopper <aa8vb@ipass.net>
-# $FreeBSD: head/graphics/py-PyOpenGL/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/py-PyOpenGL/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	PyOpenGL
 PORTVERSION=	3.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

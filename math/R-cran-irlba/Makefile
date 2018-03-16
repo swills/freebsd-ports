@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-irlba/Makefile 441209 2017-05-19 05:11:36Z tota $
+# $FreeBSD: head/math/R-cran-irlba/Makefile 464217 2018-03-12 03:38:08Z tota $
 
 PORTNAME=	irlba
-PORTVERSION=	2.2.1
+PORTVERSION=	2.3.2
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

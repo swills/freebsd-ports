@@ -1,5 +1,5 @@
 # Created by: George V. Neville-Neil
-# $FreeBSD: head/net/py-pypcap/Makefile 462881 2018-02-24 23:41:25Z yuri $
+# $FreeBSD: head/net/py-pypcap/Makefile 464165 2018-03-11 11:21:23Z rene $
 
 PORTNAME=	pypcap
 DISTVERSION=	1.2.0
@@ -7,7 +7,7 @@ CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	wxs@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simplified object-oriented Python extension module for libpcap
 
 LICENSE=	BSD3CLAUSE

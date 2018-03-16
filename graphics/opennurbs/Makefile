@@ -1,5 +1,4 @@
-# Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/graphics/opennurbs/Makefile 436749 2017-03-23 01:27:34Z ler $
+# $FreeBSD: head/graphics/opennurbs/Makefile 464438 2018-03-13 22:24:58Z fernape $
 
 PORTNAME=	opennurbs
 PORTVERSION=	20130711
@@ -8,7 +7,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://files.na.mcneel.com/opennurbs/5.0/2013-07-11/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
-MAINTAINER=	fernando.apesteguia@gmail.com
+MAINTAINER=	fernape@FreeBSD.org
 COMMENT=	Tools to accurately transfer 3-D geometry between applications
 
 LICENSE_FILE=	${WRKSRC}/readme.txt

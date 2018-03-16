@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/net/py-python-twitter/Makefile 462440 2018-02-20 20:27:07Z sunpoet $
+# $FreeBSD: head/net/py-python-twitter/Makefile 464204 2018-03-11 20:31:15Z sunpoet $
 
 PORTNAME=	python-twitter
-PORTVERSION=	3.4
+PORTVERSION=	3.4.1
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

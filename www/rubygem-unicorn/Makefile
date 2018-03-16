@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-unicorn/Makefile 457239 2017-12-25 13:54:29Z sunpoet $
+# $FreeBSD: head/www/rubygem-unicorn/Makefile 464671 2018-03-16 10:06:15Z jhale $
 
 PORTNAME=	unicorn
 PORTVERSION=	5.4.0
@@ -17,8 +17,10 @@ LICENSE_FILE_RUBY=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	rubygem-kgio>=2.6:devel/rubygem-kgio \
 		rubygem-raindrops>=0.7:www/rubygem-raindrops
 
-USE_RUBY=	yes
+CONFLICTS_INSTALL=	rubygem-unicorn51
+
 USES=		gem shebangfix
+USE_RUBY=	yes
 
 PLIST_FILES=	bin/unicorn bin/unicorn_rails
 

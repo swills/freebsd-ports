@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/htmltolatex/Makefile 459396 2018-01-19 06:08:53Z pi $
+# $FreeBSD: head/textproc/htmltolatex/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	htmltolatex
 PORTVERSION=	1
-PORTREVISION=	22
+PORTREVISION=	23
 CATEGORIES=	textproc
 MASTER_SITES=	http://people.FreeBSD.org/~foxfair/distfiles/
 DISTNAME=	${PORTNAME}

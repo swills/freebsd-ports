@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/mod_asn/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/mod_asn/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_asn
 PORTVERSION=	1.7
@@ -13,7 +13,7 @@ LICENSE=	APACHE20
 
 LIB_DEPENDS=	libapr-1.so:devel/apr1
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 AP_FAST_BUILD=	yes
 MANUAL_PACKAGE_BUILD=	devel/apr1 with pgsql option required
 

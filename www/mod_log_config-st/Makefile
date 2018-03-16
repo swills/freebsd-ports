@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <clement@FreeBSD.org>
-# $FreeBSD: head/www/mod_log_config-st/Makefile 357070 2014-06-08 19:51:27Z olgeni $
+# $FreeBSD: head/www/mod_log_config-st/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_log_config-st
 PORTVERSION=	1.03
@@ -13,8 +13,7 @@ COMMENT=	Modified version of mod_log_config for Apache 2.2.x
 
 LICENSE=	APACHE11
 
-USES=		tar:xz
-USE_APACHE=	22
+USES=		apache:2.2 tar:xz
 AP_FAST_BUILD=	yes
 SRC_FILE=	mod_log_config.c
 SHORTMODNAME=	log_config

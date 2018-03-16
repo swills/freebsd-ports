@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/arm-none-eabi-newlib/Makefile 445117 2017-07-06 01:39:08Z ultima $
+# $FreeBSD: head/devel/arm-none-eabi-newlib/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	newlib
 PORTVERSION=	2.4.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://sources.redhat.com/pub/${PORTNAME}/ \
 		SOURCEWARE/${PORTNAME}

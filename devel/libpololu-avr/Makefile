@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/libpololu-avr/Makefile 440746 2017-05-13 03:35:51Z linimon $
+# $FreeBSD: head/devel/libpololu-avr/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	libpololu-avr
 PORTVERSION=	151002
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	jonathan@FreeBSD.org

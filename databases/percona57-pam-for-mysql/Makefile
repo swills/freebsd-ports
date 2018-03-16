@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/databases/percona57-pam-for-mysql/Makefile 457697 2017-12-31 15:28:55Z feld $
+# $FreeBSD: head/databases/percona57-pam-for-mysql/Makefile 464036 2018-03-09 22:46:22Z linimon $
 
 PORTNAME=	percona57
 PORTREVISION?=	0
@@ -8,6 +8,8 @@ PKGNAMESUFFIX=	-pam-for-mysql
 COMMENT=	PAM plugin for MySQL
 
 LICENSE=	GPLv2+
+
+BROKEN_powerpc64=	fails to configure: CMake Error at cmake/os/FreeBSD.cmake:34: Unsupported compiler!
 
 RUN_DEPENDS=# This plugin has no run dependencies. It should work with any desired mysql client/server.
 

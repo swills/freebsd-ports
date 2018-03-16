@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-themes/qtcurve-gtk2/Makefile 424491 2016-10-22 23:20:21Z jhale $
+# $FreeBSD: head/x11-themes/qtcurve-gtk2/Makefile 464075 2018-03-10 14:07:27Z jhale $
 
 PORTNAME=	qtcurve
-PORTREVISION=	1
+PORTREVISION=	0
 
 COMMENT=	QtCurve GTK+ 2.x engine and theme
 

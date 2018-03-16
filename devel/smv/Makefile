@@ -1,9 +1,9 @@
 # Created by: Marc E.E. van Woerkom <marc.vanwoerkom@fernuni-hagen.de>
-# $FreeBSD: head/devel/smv/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/devel/smv/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	smv
 PORTVERSION=	2.5.4.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel
 MASTER_SITES=	http://www.cs.cmu.edu/~modelcheck/smv/
 DISTNAME=	${PORTNAME}.r${PORTVERSION}

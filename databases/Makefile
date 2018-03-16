@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/databases/Makefile 464117 2018-03-10 23:01:48Z sunpoet $
 #
 
     COMMENT = Databases and related software
@@ -609,7 +609,6 @@
     SUBDIR += pgworksheet
     SUBDIR += php-mdcached
     SUBDIR += php-memcache
-    SUBDIR += php-memcached
     SUBDIR += php-xapian
     SUBDIR += php5-pdo_cassandra
     SUBDIR += php5-tarantool

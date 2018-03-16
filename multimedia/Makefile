@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 463596 2018-03-04 19:11:34Z yuri $
+# $FreeBSD: head/multimedia/Makefile 464333 2018-03-13 00:57:09Z jrm $
 #
 
     COMMENT = Multimedia software
@@ -374,6 +374,7 @@
     SUBDIR += rubygem-gstreamer
     SUBDIR += rubygem-paperclip-av-transcoder
     SUBDIR += rubygem-paperclip-av-transcoder-rails50
+    SUBDIR += rubygem-streamio-ffmpeg
     SUBDIR += sabbu
     SUBDIR += schroedinger
     SUBDIR += shotcut

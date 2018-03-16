@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 463913 2018-03-08 19:08:01Z pi $
+# $FreeBSD: head/net/Makefile 464634 2018-03-15 21:14:11Z madpilot $
 #
 
     COMMENT = Networking tools
@@ -28,6 +28,7 @@
     SUBDIR += asterisk-chan_sccp
     SUBDIR += asterisk-g72x
     SUBDIR += asterisk13
+    SUBDIR += asterisk15
     SUBDIR += avahi
     SUBDIR += avahi-app
     SUBDIR += avahi-autoipd
@@ -1253,6 +1254,7 @@
     SUBDIR += rubygem-opennebula
     SUBDIR += rubygem-packetfu
     SUBDIR += rubygem-pcaprub
+    SUBDIR += rubygem-private_address_check
     SUBDIR += rubygem-proxifier
     SUBDIR += rubygem-qiniu
     SUBDIR += rubygem-rabbiter
@@ -1435,6 +1437,7 @@
     SUBDIR += unison-devel
     SUBDIR += unison232
     SUBDIR += unison240
+    SUBDIR += unison248
     SUBDIR += unix2tcp
     SUBDIR += uplog
     SUBDIR += urelay
@@ -1446,6 +1449,7 @@
     SUBDIR += vblade
     SUBDIR += vde
     SUBDIR += vde2
+    SUBDIR += vether-kmod
     SUBDIR += viamillipede
     SUBDIR += vinagre
     SUBDIR += vino

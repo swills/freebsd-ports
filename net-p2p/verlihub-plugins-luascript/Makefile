@@ -1,9 +1,9 @@
 # Created by: Mikle Davidkin <skylord@vt.net.ru>
-# $FreeBSD: head/net-p2p/verlihub-plugins-luascript/Makefile 455765 2017-12-08 01:46:00Z linimon $
+# $FreeBSD: head/net-p2p/verlihub-plugins-luascript/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	luascript
 PORTVERSION=	1.8.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net-p2p
 PKGNAMEPREFIX=	verlihub-plugins-
 MASTER_SITES=	SF/verlihub/VH_Lua/${DISTVERSION}

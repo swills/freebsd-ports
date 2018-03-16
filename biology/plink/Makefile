@@ -1,8 +1,8 @@
-# $FreeBSD: head/biology/plink/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/biology/plink/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	plink
 PORTVERSION=	1.07
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	biology science
 MASTER_SITES=	http://pngu.mgh.harvard.edu/~purcell/plink/dist/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

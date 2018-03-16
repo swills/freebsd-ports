@@ -1,9 +1,9 @@
 # Created by: Stefan Esser <se@FreeBSD.org>
-# $FreeBSD: head/security/w3af/Makefile 463085 2018-02-26 22:32:27Z sunpoet $
+# $FreeBSD: head/security/w3af/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	w3af
 PORTVERSION=	1.6.49
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security python www
 
 MAINTAINER=	dbaio@FreeBSD.org

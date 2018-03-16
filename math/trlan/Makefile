@@ -1,9 +1,9 @@
 # Created by: b.f. <bf@FreeBSD.org>
-# $FreeBSD: head/math/trlan/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/trlan/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	trlan
 PORTVERSION=	201009
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	math
 MASTER_SITES=	https://codeforge.lbl.gov/frs/download.php/210/:1 \
 		http://crd.lbl.gov/~kewu/ps/:2 \
@@ -13,8 +13,6 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Thick-restart Lanczos method for eigenproblems
-
-BROKEN_powerpc64=	Does not build
 
 USES=		fortran
 USE_LDCONFIG=	yes
@@ -63,10 +61,10 @@ do-build:
 		${WRKSRC}/libtrlan.a -Wl,--no-whole-archive -Wl,--as-needed
 
 do-install:
-	@${INSTALL_DATA} ${WRKDIR}/libtrlan.* ${STAGEDIR}${PREFIX}/lib
+	${INSTALL_DATA} ${WRKDIR}/libtrlan.* ${STAGEDIR}${PREFIX}/lib
 	@${LN} -sf libtrlan.so.1 ${STAGEDIR}${PREFIX}/lib/libtrlan.so
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	@${INSTALL_DATA} ${DISTDIR}/${PORTDOCS} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${DISTDIR}/${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	@cd ${WRKSRC}/examples/SUN && ${INSTALL_DATA} ${PORTEXAMPLES} \
 	${STAGEDIR}${EXAMPLESDIR}

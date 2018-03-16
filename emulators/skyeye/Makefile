@@ -1,9 +1,9 @@
 # Created by: Ruan Wei (iamayan@gmail.com)
-# $FreeBSD: head/emulators/skyeye/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/emulators/skyeye/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	skyeye
 PORTVERSION=	1.2.5
-PORTREVISION=	3
+PORTREVISION=	4
 DISTVERSIONSUFFIX=	_REL
 CATEGORIES=	emulators
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}

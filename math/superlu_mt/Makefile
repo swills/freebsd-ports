@@ -1,9 +1,9 @@
 # Created by: Pedro Giffuni <giffunip@asme.org>
-# $FreeBSD: head/math/superlu_mt/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/superlu_mt/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	superlu_mt
 PORTVERSION=	3.1.20160319
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	http://crd.lbl.gov/~xiaoye/SuperLU/ \
 		http://crd.lbl.gov/~xiaoye/:doc

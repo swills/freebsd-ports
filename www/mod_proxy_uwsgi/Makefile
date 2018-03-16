@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/www/mod_proxy_uwsgi/Makefile 441741 2017-05-25 21:15:53Z joneum $
+# $FreeBSD: head/www/mod_proxy_uwsgi/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	uwsgi
 PORTVERSION=	2.0.15
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}mod_proxy_
 MAINTAINER=	schmidt@ze.tum.de
 COMMENT=	Apache proxy module to pass requests to uwsgi
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 

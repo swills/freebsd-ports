@@ -1,9 +1,9 @@
 # Created by: Mathieu Arnold
-# $FreeBSD: head/graphics/p5-Gimp/Makefile 458755 2018-01-11 16:53:44Z danfe $
+# $FreeBSD: head/graphics/p5-Gimp/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	Gimp
 PORTVERSION=	2.32
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

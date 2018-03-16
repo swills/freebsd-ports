@@ -1,8 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/sysutils/sbsigntool/Makefile 430235 2017-01-01 03:45:12Z sunpoet $
+# $FreeBSD: head/sysutils/sbsigntool/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	sbsigntool
 PORTVERSION=	0.6
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://launchpad.net/ubuntu/+archive/primary/+files/
 DISTNAME=	${PORTNAME}_${PORTVERSION}.orig

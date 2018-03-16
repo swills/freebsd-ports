@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-Amelia/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/math/R-cran-Amelia/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	Amelia
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSION=	1.7.4
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}

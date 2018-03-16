@@ -1,9 +1,10 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/cad/qcad/Makefile 453976 2017-11-11 15:35:57Z mr $
+# $FreeBSD: head/cad/qcad/Makefile 464159 2018-03-11 10:05:42Z tcberner $
 
 PORTNAME=	qcad
 PORTVERSION=	3.19.0.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 #PORTREVISION=	1
 CATEGORIES=	cad
 DIST_SUBDIR=	${PORTNAME}
@@ -15,7 +16,7 @@ LICENSE=	GPLv3
 
 BUILD_DEPENDS=	bash:shells/bash	\
 		${LOCALBASE}/lib/libopenNURBS.a:graphics/opennurbs
-LIB_DEPENDS=	libquazip.so:archivers/quazip
+LIB_DEPENDS=	libquazip.so:archivers/quazip@qt4
 
 MAKE_JOBS_UNSAFE=yes
 

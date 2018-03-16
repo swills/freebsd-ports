@@ -1,9 +1,8 @@
 # Created by: Julien Laffaye <jlaffaye@FreeBSD.org>
-# $FreeBSD: head/www/py-pelican/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-pelican/Makefile 464433 2018-03-13 21:09:28Z brnrd $
 
 PORTNAME=	pelican
-PORTVERSION=	3.6.3
-PORTREVISION=	3
+PORTVERSION=	3.7.1
 CATEGORIES=	www textproc python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

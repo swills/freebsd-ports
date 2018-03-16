@@ -1,8 +1,9 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-survey/Makefile 460449 2018-01-30 23:24:43Z wen $
+# $FreeBSD: head/math/R-cran-survey/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	survey
 DISTVERSION=	3.33
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

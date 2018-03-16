@@ -1,8 +1,9 @@
 # Created by: nwhitehorn
-# $FreeBSD: head/astro/py-astropy/Makefile 417939 2016-07-02 19:31:16Z swills $
+# $FreeBSD: head/astro/py-astropy/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	astropy
 PORTVERSION=	1.1.2
+PORTREVISION=	1
 CATEGORIES=	astro
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

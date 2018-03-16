@@ -1,9 +1,9 @@
 # Created by: David O'Brien (obrien@NUXI.com)
-# $FreeBSD: head/lang/ratfor/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/lang/ratfor/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	ratfor
 PORTVERSION=	1985.06
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	lang
 MASTER_SITES=	LOCAL/obrien \
 		http://sepwww.stanford.edu/sep/prof/

@@ -1,9 +1,9 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/databases/mysql-q4m/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/databases/mysql-q4m/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	q4m
 PORTVERSION=	0.9.14
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases
 MASTER_SITES=	http://q4m.kazuhooku.com/dist/
 PKGNAMEPREFIX=	${_MYSQL_SERVER:T:C/-server$/-/}

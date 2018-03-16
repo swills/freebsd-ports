@@ -1,5 +1,6 @@
-# $FreeBSD: head/devel/sparc64-xtoolchain-gcc/Makefile 370629 2014-10-11 09:22:51Z antoine $
+# $FreeBSD: head/devel/sparc64-xtoolchain-gcc/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
+PORTREVISION=	1
 PKGNAMEPREFIX=	sparc64-
 PLIST=	${.CURDIR}/pkg-plist
 

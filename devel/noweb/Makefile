@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/devel/noweb/Makefile 429905 2016-12-29 13:03:32Z amdmi3 $
+# $FreeBSD: head/devel/noweb/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	noweb
 PORTVERSION=	2.11b
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	ftp://www.eecs.harvard.edu/pub/nr/
 

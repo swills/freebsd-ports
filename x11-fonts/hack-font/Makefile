@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-fonts/hack-font/Makefile 460287 2018-01-29 11:47:15Z rakuco $
+# $FreeBSD: head/x11-fonts/hack-font/Makefile 464324 2018-03-12 21:53:29Z rakuco $
 
 PORTNAME=	hack-font
-PORTVERSION=	3.002
+PORTVERSION=	3.003
 DISTVERSIONPREFIX=	v
 CATEGORIES=	x11-fonts
 

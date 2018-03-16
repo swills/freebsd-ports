@@ -1,9 +1,9 @@
 # Created by: Andriy Gapon <avg@icyb.net.ua>
-# $FreeBSD: head/devel/universalindentgui/Makefile 462214 2018-02-18 09:55:10Z rakuco $
+# $FreeBSD: head/devel/universalindentgui/Makefile 464266 2018-03-12 18:06:51Z tcberner $
 
 PORTNAME=	universalindentgui
 PORTVERSION=	1.2.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel
 MASTER_SITES=	SF/universalindent/uigui/UniversalIndentGUI_${PORTVERSION}
 

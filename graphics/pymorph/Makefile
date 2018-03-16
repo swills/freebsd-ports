@@ -1,9 +1,9 @@
 # Created by: Pedro Garcia Freitas <sawp@sawp.com.br>
-# $FreeBSD: head/graphics/pymorph/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/graphics/pymorph/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	pymorph
 PORTVERSION=	0.96
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 

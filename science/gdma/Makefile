@@ -1,8 +1,9 @@
-# $FreeBSD: head/science/gdma/Makefile 454407 2017-11-18 05:12:35Z yuri $
+# $FreeBSD: head/science/gdma/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	gdma
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.2.6
+PORTREVISION=	1
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

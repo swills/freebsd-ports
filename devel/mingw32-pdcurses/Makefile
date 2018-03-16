@@ -1,9 +1,9 @@
 # Created by: Ed Schouten <ed@fxq.nl>
-# $FreeBSD: head/devel/mingw32-pdcurses/Makefile 453238 2017-10-31 14:51:53Z olgeni $
+# $FreeBSD: head/devel/mingw32-pdcurses/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	pdcurses
 PORTVERSION=	3.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	SF
 PKGNAMEPREFIX=	mingw32-

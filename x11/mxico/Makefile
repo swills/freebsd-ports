@@ -1,5 +1,5 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/x11/mxico/Makefile 446720 2017-07-27 09:01:07Z amdmi3 $
+# $FreeBSD: head/x11/mxico/Makefile 464164 2018-03-11 11:20:43Z rene $
 
 # NB: Do not delete or wrap post-install section, since we have to provide
 #     READMEj and README
@@ -10,7 +10,7 @@ PORTREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	https://people.freebsd.org/~maho/mxico/
 
-MAINTAINER=	maho@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Rotating Object on the screen (Zalgaller polyhedra)
 
 LICENSE=	MIT

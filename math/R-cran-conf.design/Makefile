@@ -1,8 +1,9 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/R-cran-conf.design/Makefile 463325 2018-03-01 14:25:36Z wen $
+# $FreeBSD: head/math/R-cran-conf.design/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	conf.design
 DISTVERSION=	2.0.0
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

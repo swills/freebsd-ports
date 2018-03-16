@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/japanese/jmode-skk/Makefile 413746 2016-04-21 16:43:14Z swills $
+# $FreeBSD: head/japanese/jmode-skk/Makefile 463974 2018-03-09 16:44:35Z linimon $
 
 PKGNAMESUFFIX=	-skk
 
@@ -8,8 +8,6 @@ COMMENT=	XIM server for SKK input method
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_powerpc64=	Does not build
 
 MASTERDIR=	${.CURDIR}/../../japanese/jmode
 DESCR=		${.CURDIR}/pkg-descr

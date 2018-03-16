@@ -1,9 +1,9 @@
 # Created by: Alejandro Pulver <alejandro@varnet.biz>
-# $FreeBSD: head/games/zephulor/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/games/zephulor/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	zephulor
 PORTVERSION=	1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	games
 MASTER_SITES=	SF/apz/apz/stable/ \
 		SF/nemysisfreebsdp/${CATEGORIES}/:icons

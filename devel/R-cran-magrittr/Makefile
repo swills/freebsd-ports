@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-magrittr/Makefile 385917 2015-05-10 03:08:17Z tota $
+# $FreeBSD: head/devel/R-cran-magrittr/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	magrittr
 PORTVERSION=	1.5
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

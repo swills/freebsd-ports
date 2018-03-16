@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/dotproject/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/dotproject/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	dotproject
 PORTVERSION=	2.1.8
@@ -13,12 +13,11 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 IGNORE_WITH_PHP=	70 71 72
 
-USES=		cpe shebangfix php:web
+USES=		apache:run,2.2+ cpe shebangfix php:web
 SHEBANG_FILES=	misc/cvs2cl/cvs2cl.pl
 WRKSRC=		${WRKDIR}/${PORTNAME}
 NO_BUILD=	yes
 USE_PHP=	gd mysql session zlib
-USE_APACHE_RUN=	22+
 
 SUB_FILES=	pkg-message
 

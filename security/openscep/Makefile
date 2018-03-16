@@ -1,5 +1,5 @@
 # Created by: Vsevolod Stakhov
-# $FreeBSD: head/security/openscep/Makefile 422255 2016-09-16 14:06:02Z marino $
+# $FreeBSD: head/security/openscep/Makefile 464193 2018-03-11 18:36:16Z brnrd $
 
 PORTNAME=	openscep
 PORTVERSION=	0.4.2
@@ -12,9 +12,8 @@ COMMENT=	Open source scep server
 
 CONFLICTS_INSTALL=	nss-3.*
 
-USES=		gmake libtool ssl
+USES=		apache:2.2+ gmake libtool ssl
 USE_OPENLDAP=	yes
-USE_APACHE=	22+
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 

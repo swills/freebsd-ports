@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/pyqt.mk 462214 2018-02-18 09:55:10Z rakuco $
+# $FreeBSD: head/Mk/Uses/pyqt.mk 464266 2018-03-12 18:06:51Z tcberner $
 #
 # Handle PyQt related ports
 #
@@ -61,8 +61,8 @@ MASTER_SITES_PYQT5=	SF/pyqt/PyQt5/PyQt-${PORTVERSION} \
 MASTER_SITES_QSCI2=	SF/pyqt/QScintilla2/QScintilla-${PORTVERSION} \
 			GENTOO
 
-SIP_VERSION=		4.19.6
-QSCI2_VERSION=		2.10.2
+SIP_VERSION=		4.19.8
+QSCI2_VERSION=		2.10.3
 PYQT4_VERSION=		4.12.1
 PYQT5_VERSION=		5.9.2
 

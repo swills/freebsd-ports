@@ -1,5 +1,5 @@
 # Created by: Ivan Lago <ivan.lago@ifom-ieo-campus.it>
-# $FreeBSD: head/sysutils/syslog-ng313/Makefile 460283 2018-01-29 11:29:09Z sunpoet $
+# $FreeBSD: head/sysutils/syslog-ng313/Makefile 464261 2018-03-12 17:01:23Z amdmi3 $
 
 PORTNAME=	syslog-ng
 DISTVERSION=	3.13.2
@@ -44,11 +44,10 @@ CURL_DESC=		Build with Curl HTTP support
 AMQP_DESC=		Build with AMQP support
 
 USES=		autoreconf:build gmake libtool pathfix pkgconfig ssl \
-		gettext-runtime python shebangfix
+		gettext-runtime python:2.7 shebangfix
 USE_LDCONFIG=	yes
 USE_RC_SUBR=	syslog-ng
 SHEBANG_FILES=	lib/merge-grammar.py
-SHEBANG_LANG=	python
 GNU_CONFIGURE=	yes
 USE_GNOME=	glib20
 SUB_FILES=	pkg-message

@@ -1,8 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/R-cran-miscTools/Makefile 427278 2016-11-28 00:46:12Z wen $
+# $FreeBSD: head/math/R-cran-miscTools/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	miscTools
 DISTVERSION=	0.6-22
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

@@ -1,14 +1,16 @@
 # Created by: rossiya
-# $FreeBSD: head/math/ltl/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/ltl/Makefile 464240 2018-03-12 09:32:46Z yuri $
 
 PORTNAME=	ltl
-PORTVERSION=	1.9.1
-PORTREVISION=	4
+DISTVERSION=	2.0.19
 CATEGORIES=	math
 MASTER_SITES=	http://www.mpe.mpg.de/~drory/ltl/
 
 MAINTAINER=	rossiya@gmail.com
 COMMENT=	C++ class SSE library for scientific computing
+
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	liblapack.so:math/lapack \
 		libblas.so:math/blas

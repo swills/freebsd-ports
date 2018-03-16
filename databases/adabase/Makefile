@@ -1,8 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/databases/adabase/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/databases/adabase/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	adabase
 PORTVERSION=	3.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 

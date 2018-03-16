@@ -1,5 +1,5 @@
 # Created by: mwlucas
-# $FreeBSD: head/www/mod_auth_xradius/Makefile 384899 2015-04-28 13:36:55Z feld $
+# $FreeBSD: head/www/mod_auth_xradius/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_auth_xradius
 PORTVERSION=	0.4.6
@@ -13,8 +13,7 @@ COMMENT=	Enables RADIUS authentication
 
 LICENSE=	APACHE20
 
-USE_APACHE=	22+
-USES=	tar:bzip2
+USES=		apache:2.2+ tar:bzip2
 GNU_CONFIGURE=	yes
 
 PLIST_FILES=	${APACHEMODDIR}/mod_auth_xradius.so

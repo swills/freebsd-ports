@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-themes/qtcurve-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/x11-themes/qtcurve-kde4/Makefile 464075 2018-03-10 14:07:27Z jhale $
 
 PORTNAME=	qtcurve
-PORTREVISION=	2
+PORTREVISION=	0
 
 COMMENT=	QtCurve KDE 4 widget style and window decoration
 

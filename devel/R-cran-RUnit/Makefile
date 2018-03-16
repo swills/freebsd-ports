@@ -1,8 +1,9 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-RUnit/Makefile 376835 2015-01-12 16:16:49Z skreuzer $
+# $FreeBSD: head/devel/R-cran-RUnit/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	RUnit
 PORTVERSION=	0.4.28
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

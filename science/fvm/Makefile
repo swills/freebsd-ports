@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/science/fvm/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/science/fvm/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	fvm
 PORTVERSION=	0.15.5
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	science parallel
 MASTER_SITES=	http://code-saturne.org/releases/
 

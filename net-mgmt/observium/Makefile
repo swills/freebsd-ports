@@ -1,5 +1,5 @@
 # Created by: rflynn@acsalaska.net
-# $FreeBSD: head/net-mgmt/observium/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/net-mgmt/observium/Makefile 464193 2018-03-11 18:36:16Z brnrd $
 # Observium version can be found by looking at ${WRKSRC}/includes/definitions/version.inc.php
 
 PORTNAME=	observium
@@ -76,7 +76,7 @@ PORTDOCS=	INSTALL README VERSION
 PORTEXAMPLES=	snmp.conf.example snmpd.conf.example
 
 .if ${PORT_OPTIONS:MAPACHEMOD}
-USE_APACHE_RUN=	22+
+USES+=	apache:run,2.2+
 .endif
 .if !defined(PACKAGE_BUILDING)
 USES+=	php:mod

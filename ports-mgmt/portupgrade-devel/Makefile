@@ -1,8 +1,8 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/ports-mgmt/portupgrade-devel/Makefile 437321 2017-03-30 17:18:10Z bdrewery $
+# $FreeBSD: head/ports-mgmt/portupgrade-devel/Makefile 463994 2018-03-09 19:32:18Z bdrewery $
 
 PORTNAME=	portupgrade
-PORTVERSION=	20170330
+PORTVERSION=	20180309
 PORTREVISION=	0
 PORTEPOCH=	3
 CATEGORIES=	ports-mgmt
@@ -22,7 +22,7 @@ USES=		uidfix
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	freebsd
-GH_TAGNAME=	2.4.15
+GH_TAGNAME=	2.4.16
 
 DIST_SUBDIR=	${PORTNAME}
 USE_RUBY=	yes

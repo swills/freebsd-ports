@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/databases/sqliteman/Makefile 462214 2018-02-18 09:55:10Z rakuco $
+# $FreeBSD: head/databases/sqliteman/Makefile 464266 2018-03-12 18:06:51Z tcberner $
 
 PORTNAME=	sqliteman
 PORTVERSION=	1.2.2
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	databases
 MASTER_SITES=	SF
 

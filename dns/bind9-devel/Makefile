@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/bind9-devel/Makefile 463641 2018-03-05 10:35:26Z mat $
+# $FreeBSD: head/dns/bind9-devel/Makefile 464252 2018-03-12 14:12:40Z mat $
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
@@ -29,12 +29,12 @@ LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
 # ISC releases things like 9.8.0-P1, which our versioning doesn't like
-ISCVERSION=	9.13.0a0.2018.03.02
+ISCVERSION=	9.13.0a0.2018.03.10
 USE_GITLAB=	yes
 GL_SITE=	https://gitlab.isc.org
 GL_ACCOUNT=	isc-projects
 GL_PROJECT=	bind9
-GL_COMMIT=	8529e124eaf13447835a1a0f6453f2812a780710
+GL_COMMIT=	129e13b92d1af4c45c93fa81dd2105348c35e23c
 
 USES=	cpe libedit tar:bz2
 

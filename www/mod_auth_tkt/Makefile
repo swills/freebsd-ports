@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/mod_auth_tkt/Makefile 398280 2015-10-01 15:05:37Z amdmi3 $
+# $FreeBSD: head/www/mod_auth_tkt/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_auth_tkt
 PORTVERSION=	2.1.0
@@ -10,10 +10,9 @@ MASTER_SITES=	LOCAL/kuriyama \
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Lightweight single-sign-on authentication module for apache
 
-USES=		shebangfix
+USES=		apache:2.2+ shebangfix
 SHEBANG_FILES=	../cgi/login.cgi \
 		../cgi/logout.cgi
-USE_APACHE=	22+
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/src
 PATCH_WRKSRC=	${WRKDIR}/${PORTNAME}-${PORTVERSION}
 PATCH_STRIP=	-p1

@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/www/mod_python33/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/www/mod_python33/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_python
 PORTVERSION=	3.3.1
@@ -17,8 +17,7 @@ LICENSE=	APACHE20
 
 CONFLICTS_INSTALL=	ap2[24]-mod_python3[^3]*
 
-USE_APACHE=	22
-USES=		cpe python:2.7 tar:tgz
+USES=		apache:2.2 cpe python:2.7 tar:tgz
 CPE_VENDOR=	apache
 
 GNU_CONFIGURE=		yes

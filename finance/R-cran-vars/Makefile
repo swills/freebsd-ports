@@ -1,9 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/finance/R-cran-vars/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/R-cran-vars/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	vars
 DISTVERSION=	1.5-2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	finance
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

@@ -1,9 +1,9 @@
 # Created by: Jin-Sih Lin <linpct@gmail.com>
-# $FreeBSD: head/www/phalcon/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/www/phalcon/Makefile 464116 2018-03-10 23:01:43Z sunpoet $
 
 PORTNAME=	phalcon
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.3.1
+DISTVERSION=	3.3.2
 CATEGORIES=	www
 PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 

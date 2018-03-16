@@ -1,5 +1,5 @@
 # Created by: Manuel Kasper <mk@neon1.net>
-# $FreeBSD: head/www/mod_auth_pubtkt/Makefile 410061 2016-03-03 17:00:55Z rakuco $
+# $FreeBSD: head/www/mod_auth_pubtkt/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_auth_pubtkt
 PORTVERSION=	0.9
@@ -11,14 +11,14 @@ DIST_SUBDIR=	apache2
 MAINTAINER=	mk@neon1.net
 COMMENT=	Apache module to provide public key ticket based authentication
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 SRC_FILE=	src/mod_auth_pubtkt.c
 
 .include <bsd.port.pre.mk>
 
-.if ${APACHE_VERSION} > 22
+.if ${APACHE_VERSION} > 2.2
 AP_EXTRAS=	-DAPACHE24
 .else
 AP_EXTRAS=	-DAPACHE22

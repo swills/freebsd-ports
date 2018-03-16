@@ -1,5 +1,5 @@
 # Created by: Lukasz Wasikowski <lukasz@wasikowski.net>
-# $FreeBSD: head/www/mod_mpm_itk/Makefile 443507 2017-06-13 15:53:01Z ultima $
+# $FreeBSD: head/www/mod_mpm_itk/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_mpm_itk
 PORTVERSION=	2.4.7
@@ -15,7 +15,7 @@ COMMENT=	This MPM allows you to run each vhost under a separate uid and gid
 
 LICENSE=	APACHE20
 
-USE_APACHE=	24
+USES=		apache:2.4
 GNU_CONFIGURE=	yes
 
 AP_FAST_BUILD=	yes

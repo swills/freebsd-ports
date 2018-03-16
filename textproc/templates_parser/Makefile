@@ -1,8 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/textproc/templates_parser/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/textproc/templates_parser/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	templates_parser
 PORTVERSION=	17.0.0
+PORTREVISION=	1
 CATEGORIES=	textproc
 
 MAINTAINER=	ports@FreeBSD.org

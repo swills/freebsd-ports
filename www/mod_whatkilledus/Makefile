@@ -1,5 +1,5 @@
 # Created by: Frank Wall <fw@moov.de>
-# $FreeBSD: head/www/mod_whatkilledus/Makefile 428143 2016-12-08 17:26:09Z tijl $
+# $FreeBSD: head/www/mod_whatkilledus/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_whatkilledus
 PORTVERSION=	2.0
@@ -17,7 +17,7 @@ LICENSE=	APACHE20
 
 MANUAL_PACKAGE_BUILD=	requires apache WITH_EXCEPTION_HOOK=yes
 
-USE_APACHE=	22
+USES=		apache:2.2
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 SHORTMODNAME=	whatkilledus

@@ -1,9 +1,9 @@
 # Created by: Matthew N. Dodd <mdodd@FreeBSD.org>
-# $FreeBSD: head/mail/spamprobe/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/mail/spamprobe/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=		spamprobe
 PORTVERSION=	1.4d
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=		mail
 MASTER_SITES=	SF
 

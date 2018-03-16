@@ -1,9 +1,9 @@
 # Created by: olgeni@FreeBSD.org
-# $FreeBSD: head/devel/adacurses/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/devel/adacurses/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	adacurses
 PORTVERSION=	20150808
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	ftp://invisible-island.net/AdaCurses/
 DISTNAME=	AdaCurses-${PORTVERSION}
