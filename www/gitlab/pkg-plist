@@ -6353,6 +6353,8 @@
 %%WWWDIR%%/db/migrate/20180216120030_add_pages_domain_enabled_until.rb
 %%WWWDIR%%/db/migrate/20180216120040_add_pages_domain_enabled_until_index.rb
 %%WWWDIR%%/db/migrate/20180216120050_pages_domains_verification_grace_period.rb
+%%WWWDIR%%/db/migrate/20180306134842_add_missing_indexes_acts_as_taggable_on_engine.rb
+%%WWWDIR%%/db/migrate/20180308052825_add_section_name_id_index_on_ci_build_trace_sections.rb
 %%WWWDIR%%/db/migrate/limits_to_mysql.rb
 %%WWWDIR%%/db/migrate/markdown_cache_limits_to_mysql.rb
 %%WWWDIR%%/db/migrate/merge_request_diff_file_limits_to_mysql.rb
