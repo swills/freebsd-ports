@@ -1,5 +1,5 @@
 # Created by: Sylvio Cesar Teixeira <sylvio@FreeBSD.org>
-# $FreeBSD: head/www/ftasv/Makefile 412356 2016-04-01 15:49:39Z amdmi3 $
+# $FreeBSD: head/www/ftasv/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	ftasv
 PORTVERSION=	0.9.2
@@ -14,7 +14,7 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
-USE_APACHE=	22+
+USES=		apache:2.2+
 
 PLIST_FILES=	sbin/ftasv
 PORTDOCS=	AUTHORS ChangeLog README

@@ -10,6 +10,11 @@ in the release notes and/or placed into UPDATING.
 
 All ports committers are allowed to commit to this file.
 
+20180311:
+AUTHOR: brnrd@FreeBSD.org
+
+  USE_APACHE has been replaced by USES=apache.
+
 20180308:
 AUTHOR: mat@FreeBSD.org
 
@@ -3568,4 +3573,4 @@ POSSIBILITY OF SUCH DAMAGE.
 Contact portmgr@FreeBSD.org if you have any questions about your use of
 this document.
 
-$FreeBSD: head/CHANGES 463917 2018-03-08 19:48:41Z mat $
+$FreeBSD: head/CHANGES 464175 2018-03-11 14:23:28Z brnrd $

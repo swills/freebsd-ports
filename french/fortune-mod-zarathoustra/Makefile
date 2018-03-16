@@ -1,5 +1,5 @@
 # Created by: Frederic Culot <frederic@culot.org>
-# $FreeBSD: head/french/fortune-mod-zarathoustra/Makefile 422160 2016-09-14 19:50:46Z antoine $
+# $FreeBSD: head/french/fortune-mod-zarathoustra/Makefile 464357 2018-03-13 09:33:12Z amdmi3 $
 
 PORTNAME=	fortune-mod-zarathoustra
 PORTVERSION=	20100905
@@ -8,6 +8,8 @@ MASTER_SITES=	LOCAL/culot
 
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Compilation of quotes from Nietzsche's Thus spoke Zarathustra
+
+LICENSE=	NONE
 
 SUB_FILES=	pkg-message
 

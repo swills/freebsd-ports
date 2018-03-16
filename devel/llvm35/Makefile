@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm35/Makefile 460241 2018-01-29 06:45:16Z araujo $
+# $FreeBSD: head/devel/llvm35/Makefile 464585 2018-03-15 12:44:12Z linimon $
 
 PORTNAME=	llvm
 DISTVERSION=	3.5.2
@@ -10,6 +10,10 @@ PKGNAMESUFFIX=	${LLVM_SUFFIX}
 
 MAINTAINER=	brooks@FreeBSD.org
 COMMENT=	Low Level Virtual Machine
+
+BROKEN_aarch64=		fails to build
+BROKEN_armv6=		fails to build: llvm-config.cpp:46:10: 'LibraryDependencies.inc' file not found
+BROKEN_armv7=		fails to build: llvm-config.cpp:46:10: 'LibraryDependencies.inc' file not found
 
 LLVM_SUFFIX=	${PORTVERSION:C/([0-9]\.[0-9]).*/\1/:S/.//g:C/r.//}
 LLVM_PREFIX=	${PREFIX}/llvm${LLVM_SUFFIX}
@@ -140,10 +144,6 @@ PLIST_FILES+=	${MAN1SRCS:S|^|man/man1/|:S|.1$|${LLVM_SUFFIX}.1.gz|}
 
 .if ${PORT_OPTIONS:MCMAKE} && ${CHOSEN_COMPILER_TYPE} != clang
 BROKEN=	CMake support only works with clang
-.endif
-
-.if ${ARCH} == "aarch64"
-BROKEN=		Does not compile on aarch64
 .endif
 
 .if ${ARCH} == "amd64"

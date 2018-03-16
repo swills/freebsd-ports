@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/pytowerdefense/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/games/pytowerdefense/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	pytowerdefense
 PORTVERSION=	0.5
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	games python
 MASTER_SITES=	SF/${PORTNAME}/PyTowerDefense0.5/Source%20%28Python%202.5%20or%202.6%20and%20Pygame%29/
 DISTNAME=	${PORTNAME}${DISTVERSION}

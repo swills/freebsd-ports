@@ -1,19 +1,19 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-sortedm2m/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django-sortedm2m/Makefile 464119 2018-03-10 23:01:59Z sunpoet $
 
 PORTNAME=	django-sortedm2m
-PORTVERSION=	1.4.0
+PORTVERSION=	1.5.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	ports@caomhin.org
-COMMENT=	Replacement for Django's many to many field
+COMMENT=	Replacement for Django's many to many field #'
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django>=1.8:www/py-django@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

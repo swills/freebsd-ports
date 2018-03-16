@@ -1,8 +1,8 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/textproc/R-cran-pystr/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/textproc/R-cran-pystr/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	pystr
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSION=	2.0.0
 CATEGORIES=	textproc
 DISTNAME=	${PORTNAME}_${DISTVERSION}

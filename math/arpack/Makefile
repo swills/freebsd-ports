@@ -1,9 +1,9 @@
 # Created by: Pedro F. Giffuni
-# $FreeBSD: head/math/arpack/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/arpack/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	arpack
 PORTVERSION=	96
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	math
 MASTER_SITES=	http://www.caam.rice.edu/software/ARPACK/SRC/
 DISTFILES=	${PORTNAME}${PORTVERSION}.tar.gz patch.tar.gz

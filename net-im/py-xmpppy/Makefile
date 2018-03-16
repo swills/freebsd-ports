@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/net-im/py-xmpppy/Makefile 462810 2018-02-24 13:37:47Z sunpoet $
+# $FreeBSD: head/net-im/py-xmpppy/Makefile 464105 2018-03-10 23:00:41Z sunpoet $
 
 PORTNAME=	xmpppy
 PORTVERSION=	0.5.0
@@ -17,6 +17,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>=1.7.1:dns/py-dnspython@${FLAVOR}
 USES=		python:2.7 shebangfix
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
+
+PORTSCOUT=	ignore:1
 
 SHEBANG_FILES=	doc/examples/*.py
 

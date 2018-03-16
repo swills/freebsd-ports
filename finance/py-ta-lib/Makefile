@@ -1,8 +1,9 @@
-# $FreeBSD: head/finance/py-ta-lib/Makefile 462565 2018-02-22 07:17:40Z yuri $
+# $FreeBSD: head/finance/py-ta-lib/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	ta-lib
 DISTVERSIONPREFIX=	TA_Lib-
 DISTVERSION=	0.4.16
+PORTREVISION=	1
 CATEGORIES=	finance python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/science/R-cran-snow/Makefile 424040 2016-10-16 04:21:12Z tota $
+# $FreeBSD: head/science/R-cran-snow/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	snow
 DISTVERSION=	0.4-2
+PORTREVISION=	1
 CATEGORIES=	science
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

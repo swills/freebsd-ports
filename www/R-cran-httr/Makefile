@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/www/R-cran-httr/Makefile 449277 2017-09-05 09:19:57Z tota $
+# $FreeBSD: head/www/R-cran-httr/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	httr
 PORTVERSION=	1.3.1
+PORTREVISION=	1
 CATEGORIES=	www
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

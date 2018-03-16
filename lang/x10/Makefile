@@ -1,8 +1,8 @@
-# $FreeBSD: head/lang/x10/Makefile 462210 2018-02-18 09:29:27Z antoine $
+# $FreeBSD: head/lang/x10/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	x10
 PORTVERSION=	2.2.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	lang devel java
 MASTER_SITES=	http://dist.codehaus.org/x10/dependencies/ \
 		SF

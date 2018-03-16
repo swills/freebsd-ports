@@ -1,5 +1,5 @@
 # Created by: Aragon Gouveia <aragon@phat.za.net>
-# $FreeBSD: head/audio/alsa-lib/Makefile 463452 2018-03-02 22:34:53Z brooks $
+# $FreeBSD: head/audio/alsa-lib/Makefile 464376 2018-03-13 14:11:42Z jbeich $
 
 PORTNAME=	alsa-lib
 PORTVERSION=	1.1.2
@@ -23,7 +23,6 @@ INSTALL_TARGET=	install-strip
 TEST_ENV=	${MAKE_ENV} ALSA_CONFIG_PATH="${FILESDIR}/asound.conf.sample"
 TEST_TARGET=	check
 CPPFLAGS+=	-I${FILESDIR}
-CPPFLAGS+=	-D_WANT_SEMUN
 
 OPTIONS_DEFINE=	PYTHON
 OPTIONS_SUB=	yes

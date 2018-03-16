@@ -1,5 +1,5 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/security/phpdeadlock/Makefile 433543 2017-02-07 12:14:34Z mat $
+# $FreeBSD: head/security/phpdeadlock/Makefile 464193 2018-03-11 18:36:16Z brnrd $
 
 PORTNAME=	phpdeadlock
 PORTVERSION=	1.01
@@ -19,8 +19,7 @@ DLURL?=		${PORTNAME}
 DLDIR=		www/${DLURL}
 PORTDOCS=	CHANGES.txt COPYING.txt UPGRADE.txt
 
-USES=		dos2unix
-USE_APACHE_RUN=	22+
+USES=		apache:run,2.2+ dos2unix
 USE_PHP=	mysql session ctype pcre
 NO_BUILD=	yes
 NO_ARCH=	yes

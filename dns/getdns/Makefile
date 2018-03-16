@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/dns/getdns/Makefile 462843 2018-02-24 15:23:09Z zi $
+# $FreeBSD: head/dns/getdns/Makefile 464254 2018-03-12 14:50:57Z zi $
 
 PORTNAME=	getdns
-PORTVERSION=	1.4.0
+PORTVERSION=	1.4.1
 CATEGORIES=	dns ipv6
 MASTER_SITES=	https://getdnsapi.net/dist/ \
 		ZI \
@@ -25,8 +25,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-libidn=${LOCALBASE} --docdir=${DOCSDIR} \
 		--with-trust-anchor=${LOCALBASE}/etc/unbound/root.key
 SOMAJVER=	10
-SOVERSION=	${SOMAJVER}.0.0
-#SOVERSION=	${SOMAJVER}.${PORTVERSION:C/[0-9].([0-9].[0-9])/\1/1}
+SOVERSION=	${SOMAJVER}.0.${PORTVERSION:C/[0-9].[0-9].([0-9])/\1/1}
 MAKE_JOBS_UNSAFE=yes
 
 PLIST_SUB+=	SOVERSION="${SOVERSION}" SOMAJVER="${SOMAJVER}"

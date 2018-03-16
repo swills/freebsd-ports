@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/bhyve-firmware/Makefile 418985 2016-07-24 03:37:00Z novel $
+# $FreeBSD: head/sysutils/bhyve-firmware/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	bhyve-firmware
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	fabian.freyer@physik.tu-berlin.de

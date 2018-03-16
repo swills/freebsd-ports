@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/mod_gnutls/Makefile 462849 2018-02-24 16:26:50Z joneum $
+# $FreeBSD: head/www/mod_gnutls/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_gnutls
 PORTVERSION=	0.8.3
@@ -15,8 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libgnutls.so:security/gnutls
 
 GNU_CONFIGURE=	yes
-USES=		libtool pkgconfig tar:bzip2
-USE_APACHE=	24
+USES=		apache:2.4 libtool pkgconfig tar:bzip2
 
 DBDIR=		${PREFIX}/var/db/${PORTNAME}
 PLIST_SUB=	SED="${SED}" WWWGRP=${WWWGRP} WWWOWN=${WWWOWN}

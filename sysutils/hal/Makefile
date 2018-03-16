@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/hal/Makefile 447399 2017-08-05 10:58:48Z kwm $
+# $FreeBSD: head/sysutils/hal/Makefile 464144 2018-03-11 06:10:21Z linimon $
 #   $MCom: ports/sysutils/hal/Makefile,v 1.81 2010/04/13 02:49:07 mezz Exp $
 
 PORTNAME=	hal
@@ -70,7 +70,7 @@ FIXED_MOUNTPOINTS_EXTRA_PATCHES=	${FILESDIR}/extra-patch-tools_hal-storage-mount
 
 .include <bsd.port.pre.mk>
 
-.if (${ARCH}=="i386" || ${ARCH}=="amd64" || ${ARCH}=="ia64")
+.if ${ARCH} == amd64 || ${ARCH} == i386
 RUN_DEPENDS+=	dmidecode:sysutils/dmidecode
 .endif
 

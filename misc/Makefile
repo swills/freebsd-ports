@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 462655 2018-02-23 00:37:55Z rene $
+# $FreeBSD: head/misc/Makefile 464580 2018-03-15 09:29:41Z yuri $
 #
 
     COMMENT = Miscellaneous utilities
@@ -257,6 +257,7 @@
     SUBDIR += libpredict
     SUBDIR += libpri
     SUBDIR += libsupertone
+    SUBDIR += libsweep-lidar
     SUBDIR += libutf
     SUBDIR += lifelines
     SUBDIR += lingoteach
@@ -384,6 +385,7 @@
     SUBDIR += proxyper
     SUBDIR += pspresent
     SUBDIR += ptsort
+    SUBDIR += pubs
     SUBDIR += py-YABT
     SUBDIR += py-cinder
     SUBDIR += py-colorbrewer
@@ -502,6 +504,7 @@
     SUBDIR += viz
     SUBDIR += whichman
     SUBDIR += window
+    SUBDIR += with
     SUBDIR += wmScoreBoard
     SUBDIR += wmcalendar
     SUBDIR += wmjulia

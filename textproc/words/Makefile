@@ -1,9 +1,9 @@
 # Created by: Leland Wang <llwang@infor.org>
-# $FreeBSD: head/textproc/words/Makefile 423690 2016-10-10 19:34:10Z amdmi3 $
+# $FreeBSD: head/textproc/words/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	words
 PORTVERSION=	1.97F
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc
 MASTER_SITES=	http://archives.nd.edu/whitaker/
 DISTNAME=	${PORTNAME}all

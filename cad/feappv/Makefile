@@ -1,9 +1,9 @@
 # Created by: Pedro F. Giffuni <giffunip@asme.org>
-# $FreeBSD: head/cad/feappv/Makefile 451979 2017-10-13 11:06:09Z bapt $
+# $FreeBSD: head/cad/feappv/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	feappv
 PORTVERSION=	3.1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	cad science
 MASTER_SITES=	http://www.ce.berkeley.edu/projects/feap/feappv/
 DISTFILES=	${PORTNAME}${PORTVERSION:S/.//}${EXTRACT_SUFX} ${PORTDOCS}

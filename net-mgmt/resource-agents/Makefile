@@ -1,9 +1,9 @@
 # Created by: dpejesh@yahoo.com
-# $FreeBSD: head/net-mgmt/resource-agents/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net-mgmt/resource-agents/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	resource-agents
 PORTVERSION=	4.0.1
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=v
 CATEGORIES=	net-mgmt
 

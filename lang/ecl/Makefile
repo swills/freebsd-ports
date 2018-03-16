@@ -1,9 +1,9 @@
 # Created by: Julian Stecklina
-# $FreeBSD: head/lang/ecl/Makefile 458427 2018-01-08 15:20:57Z cpm $
+# $FreeBSD: head/lang/ecl/Makefile 464068 2018-03-10 11:22:59Z cpm $
 
 PORTNAME=	ecl
 PORTVERSION=	15.3.7
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang lisp
 MASTER_SITES=	SF/${PORTNAME}s/${PORTNAME}s/15.3/
 

@@ -1,9 +1,9 @@
 # Created by: Mikle Davidkin <skylord@vt.net.ru>
-# $FreeBSD: head/net-p2p/verlihub-plugins-floodprotect/Makefile 455765 2017-12-08 01:46:00Z linimon $
+# $FreeBSD: head/net-p2p/verlihub-plugins-floodprotect/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	floodprotect
 PORTVERSION=	1.6
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net-p2p
 MASTER_SITES=	SF/verlihub/OldFiles
 DISTNAME=	${PLUGIN_NAME}

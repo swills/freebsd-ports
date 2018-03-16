@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/apache22/Makefile 462786 2018-02-24 10:33:54Z brnrd $
+# $FreeBSD: head/www/apache22/Makefile 464175 2018-03-11 14:23:28Z brnrd $
 
 PORTNAME=	apache22
 PORTVERSION=	2.2.34
@@ -31,8 +31,7 @@ CONFLICTS_INSTALL=	caudium14-1.* \
 DEPRECATED=		Upstream propose EoL of apache 2.2.x during the next 12 months
 EXPIRATION_DATE=	2017-07-01
 
-USE_APACHE=	common22
-USES=		autoreconf bdb cpe iconv libtool perl5 tar:bzip2
+USES=		apache:server,2.2 autoreconf bdb cpe iconv libtool perl5 tar:bzip2
 
 USE_PERL5=	run
 USE_RC_SUBR=	apache22 htcacheclean

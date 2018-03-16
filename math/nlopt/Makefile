@@ -1,9 +1,9 @@
 # Created by: Rainer Hurling <rhurlin@gwdg.de>
-# $FreeBSD: head/math/nlopt/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/math/nlopt/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	nlopt
 PORTVERSION=	2.4.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math
 MASTER_SITES=	http://ab-initio.mit.edu/nlopt/
 

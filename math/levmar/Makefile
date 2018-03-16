@@ -1,9 +1,9 @@
 # Created by: Eijiro Shibusawa <ej-sib@ice.uec.ac.jp>
-# $FreeBSD: head/math/levmar/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/levmar/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	levmar
 PORTVERSION=	2.6
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	math
 MASTER_SITES=	http://users.ics.forth.gr/~lourakis/levmar/
 

@@ -1,9 +1,9 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-infosatepg/Makefile 428472 2016-12-13 09:00:53Z amdmi3 $
+# $FreeBSD: head/multimedia/vdr-plugin-infosatepg/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	vdr-plugin-infosatepg
 PORTVERSION=	0.0.11
-PORTREVISION=	18
+PORTREVISION=	19
 CATEGORIES=	multimedia
 MASTER_SITES=	http://projects.vdr-developer.org/attachments/download/342/
 DISTNAME=	${PORTNAME:S/-plugin-/-/}-${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}

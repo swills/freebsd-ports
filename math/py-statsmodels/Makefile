@@ -1,9 +1,9 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/math/py-statsmodels/Makefile 462925 2018-02-25 05:33:44Z sunpoet $
+# $FreeBSD: head/math/py-statsmodels/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	statsmodels
 PORTVERSION=	0.8.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

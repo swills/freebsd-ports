@@ -1,5 +1,5 @@
 # Created by: Yukihiro Nakai <Nakai@technologist.com>
-# $FreeBSD: head/textproc/libxml2/Makefile 463123 2018-02-27 13:03:48Z mat $
+# $FreeBSD: head/textproc/libxml2/Makefile 464471 2018-03-14 08:33:13Z amdmi3 $
 
 PORTNAME=	libxml2
 PORTVERSION=	2.9.7
@@ -12,6 +12,9 @@ MAINTAINER?=	gnome@FreeBSD.org
 COMMENT?=	XML parser library for GNOME
 
 .if !defined(REFERENCE_PORT)
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
 USES+=		cpe gmake iconv libtool pathfix pkgconfig shebangfix

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/arduino-builder/Makefile 463776 2018-03-07 08:06:24Z yuri $
+# $FreeBSD: head/devel/arduino-builder/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	arduino-builder
 PORTVERSION=	1.3.25
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	kevans@FreeBSD.org

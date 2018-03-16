@@ -1,8 +1,9 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/R-cran-combinat/Makefile 446648 2017-07-26 08:44:49Z wen $
+# $FreeBSD: head/math/R-cran-combinat/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	combinat
 DISTVERSION=	0.0-8
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

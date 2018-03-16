@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/misc/excel-writer/Makefile 441765 2017-05-26 09:00:37Z amdmi3 $
+# $FreeBSD: head/misc/excel-writer/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	excel-writer
 PORTVERSION=	15
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	http://sourceforge.net/projects/${SFPATH}/
 DISTNAME=	excel_writer_${PORTVERSION}

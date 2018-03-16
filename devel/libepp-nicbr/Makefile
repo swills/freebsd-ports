@@ -1,5 +1,5 @@
 # Created by: Jean Milanez Melo <jmelo@FreeBSD.org>
-# $FreeBSD: head/devel/libepp-nicbr/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/devel/libepp-nicbr/Makefile 463979 2018-03-09 17:10:15Z arved $
 
 PORTNAME=	libepp-nicbr
 PORTVERSION=	1.15
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libxerces-c.so:textproc/xerces-c3
 
-USES=		ssl
+USES=		autoreconf libtool ssl
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	ac_cv_header_cppunit_TestRunner_h=no
 CONFIGURE_ARGS=	--with-xerces-c=${LOCALBASE} \

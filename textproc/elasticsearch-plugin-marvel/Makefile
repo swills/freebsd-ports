@@ -1,8 +1,9 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/elasticsearch-plugin-marvel/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/elasticsearch-plugin-marvel/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	marvel
 PORTVERSION=	1.3.1
+PORTREVISION=	1
 CATEGORIES=	textproc perl5
 MASTER_SITES=	http://download.elasticsearch.org/elasticsearch/marvel/
 PKGNAMEPREFIX=	elasticsearch-plugin-

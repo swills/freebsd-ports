@@ -1,9 +1,9 @@
 # Created by: Erik Greenwald <erik@smluc.org>
-# $FreeBSD: head/graphics/bugle/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/graphics/bugle/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	bugle
 PORTVERSION=	0.0.20100508
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 

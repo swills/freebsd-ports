@@ -1,5 +1,5 @@
 # Created by: Matthew Donovan <kitchetech@gmail.com>
-# $FreeBSD: head/x11/sterm/Makefile 421456 2016-09-06 18:17:02Z amdmi3 $
+# $FreeBSD: head/x11/sterm/Makefile 464586 2018-03-15 13:00:17Z zi $
 
 PORTNAME=	sterm
 PORTVERSION=	0.7
@@ -7,7 +7,7 @@ CATEGORIES=	x11
 MASTER_SITES=	http://dl.suckless.org/st/
 DISTNAME=	st-${PORTVERSION}
 
-MAINTAINER=	kitche@kitchetech.com
+MAINTAINER=	pkubaj@anongoth.pl
 COMMENT=	Simple X terminal
 
 LICENSE=	MITX

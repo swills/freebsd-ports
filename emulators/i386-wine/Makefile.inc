@@ -1,5 +1,5 @@
 # Created by: David Naylor <dbn@FreeBSD.org>
-# $FreeBSD: head/emulators/i386-wine/Makefile.inc 460313 2018-01-29 15:49:54Z dbn $
+# $FreeBSD: head/emulators/i386-wine/Makefile.inc 464069 2018-03-10 11:24:54Z dbn $
 
 PORTNAME=	wine
 PORTVERSION=	3.0
@@ -41,8 +41,8 @@ USE_LDCONFIG32=	${PREFIX}/lib32 ${PREFIX}/lib32/wine
 USES=		tar:xz
 BUNDLE_LIBS=	yes
 
-GECKO_RUN_DEPENDS=	${DATADIR}/gecko/wine_gecko-2.40-x86.msi:emulators/wine-gecko
-MONO_RUN_DEPENDS=	${DATADIR}/mono/wine-mono-4.5.6.msi:emulators/wine-mono
+GECKO_RUN_DEPENDS=	${DATADIR}/gecko/wine_gecko-2.47-x86.msi:emulators/wine-gecko-devel
+MONO_RUN_DEPENDS=	${DATADIR}/mono/wine-mono-4.7.1.msi:emulators/wine-mono-devel
 
 PORTSCOUT=	limitw:1,even
 

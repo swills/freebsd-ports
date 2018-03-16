@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/bouncy/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/games/bouncy/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	bouncy
 PORTVERSION=	r6
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games python
 MASTER_SITES=	http://media.pyweek.org/dl/3/bouncy/ \
 		SF/nemysisfreebsdp/games/${PORTNAME}/:icons

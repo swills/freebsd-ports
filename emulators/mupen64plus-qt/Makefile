@@ -1,7 +1,8 @@
-# $FreeBSD: head/emulators/mupen64plus-qt/Makefile 463773 2018-03-07 01:37:09Z linimon $
+# $FreeBSD: head/emulators/mupen64plus-qt/Makefile 464159 2018-03-11 10:05:42Z tcberner $
 
 PORTNAME=	mupen64plus-qt
 PORTVERSION=	1.10
+PORTREVISION=	1
 CATEGORIES=	emulators
 
 MAINTAINER=	maintainer@hasting.email
@@ -13,7 +14,7 @@ BROKEN=		wrong dependencies, mupen64plus executable is not provided by emulators
 DEPRECATED=	Broken for more than 6 months
 EXPIRATION_DATE=	2018-05-19
 
-LIB_DEPENDS=	libquazip.so:archivers/quazip
+LIB_DEPENDS=	libquazip.so:archivers/quazip@qt4
 RUN_DEPENDS=	mupen64plus:emulators/mupen64plus
 
 USES=		qmake

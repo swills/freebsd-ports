@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-qt4-scripttools/Makefile 462214 2018-02-18 09:55:10Z rakuco $
+# $FreeBSD: head/devel/py-qt4-scripttools/Makefile 464266 2018-03-12 18:06:51Z tcberner $
 
 PORTNAME=	scripttools
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	devel python
 

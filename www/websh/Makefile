@@ -1,5 +1,5 @@
 # Created by: Mikhail Teterin <mi@aldan.algebra.com>
-# $FreeBSD: head/www/websh/Makefile 431796 2017-01-18 13:20:31Z tijl $
+# $FreeBSD: head/www/websh/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	websh
 PORTVERSION=	3.6.0b5
@@ -15,7 +15,7 @@ MAKE_JOBS_UNSAFE=	yes
 
 TCL_DVER=	${TCL_VER:S/.//}
 
-USES=		autoreconf gmake tcl:tea
+USES=		apache:2.2+ autoreconf gmake tcl:tea
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/src/unix
 USE_LDCONFIG=	yes
 SUB_FILES=	httpd.conf pkgIndex.tcl pkg-message
@@ -27,7 +27,6 @@ PLIST_SUB+=	NOMINORVERSION=${TCL_VER:C/8.[345]//:C/^..*/"@comment "/}
 PORTDOCS=	*
 PORTEXAMPLES=	*
 
-USE_APACHE=	22+
 CONFIGURE_ARGS+=--with-httpdinclude=`apxs -q includedir`
 
 CPPFLAGS+=	-I ${LOCALBASE}/include/apr-1

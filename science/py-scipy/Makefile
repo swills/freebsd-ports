@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/science/py-scipy/Makefile 462910 2018-02-25 05:32:24Z sunpoet $
+# $FreeBSD: head/science/py-scipy/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	scipy
 PORTVERSION=	0.19.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	science python
 MASTER_SITES=	http://docs.scipy.org/doc/scipy/:doc \
 		CHEESESHOP:source \

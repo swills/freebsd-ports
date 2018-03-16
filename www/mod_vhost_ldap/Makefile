@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <clement@FreeBSD.org>
-# $FreeBSD: head/www/mod_vhost_ldap/Makefile 428143 2016-12-08 17:26:09Z tijl $
+# $FreeBSD: head/www/mod_vhost_ldap/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_vhost_ldap
 PORTVERSION=	2.0.8
@@ -16,7 +16,7 @@ LICENSE=	APACHE20
 
 USE_OPENLDAP=	yes
 
-USE_APACHE=	22
+USES=		apache:2.2
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 AP_LIB+=	${LOCALBASE}/lib -lldap

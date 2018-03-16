@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/webcamoid/Makefile 461275 2018-02-08 22:14:31Z gerald $
+# $FreeBSD: head/multimedia/webcamoid/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	webcamoid
 DISTVERSION=	8.1.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	multimedia
 
 MAINTAINER=	yuri@FreeBSD.org

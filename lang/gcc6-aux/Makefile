@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/lang/gcc6-aux/Makefile 452154 2017-10-15 15:42:50Z tobik $
+# $FreeBSD: head/lang/gcc6-aux/Makefile 464145 2018-03-11 06:25:28Z linimon $
 
 PORTNAME=	gcc6-aux
 PORTVERSION=	${SNAPSHOT}
@@ -14,6 +14,8 @@ COMMENT=	Version of GCC ${GCC_BRANCH} with full Ada support
 
 LICENSE=	GPLv3 GPLv3RLE
 LICENSE_COMB=	multi
+
+BROKEN_FreeBSD_12_aarch64=	fails to configure: cannot compute sizeof (long long)
 
 .include "${.CURDIR}/Makefile.common"
 

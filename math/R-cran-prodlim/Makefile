@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-prodlim/Makefile 449514 2017-09-10 02:04:26Z tota $
+# $FreeBSD: head/math/R-cran-prodlim/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	prodlim
 PORTVERSION=	1.6.1
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

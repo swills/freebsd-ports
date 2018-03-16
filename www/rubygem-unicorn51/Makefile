@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-unicorn51/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/www/rubygem-unicorn51/Makefile 464671 2018-03-16 10:06:15Z jhale $
 
 PORTNAME=	unicorn
 PORTVERSION=	5.1.0
@@ -20,7 +20,7 @@ RUN_DEPENDS=	rubygem-kgio>=2.6:devel/rubygem-kgio \
 USES=		gem shebangfix
 USE_RUBY=	yes
 
-CONFLICT_INSTALL=	rubygems-unicorn
+CONFLICTS_INSTALL=	rubygem-unicorn
 PORTSCOUT=	limit:^5\.1
 
 PLIST_FILES=	bin/unicorn bin/unicorn_rails

@@ -1,9 +1,9 @@
-# $FreeBSD: head/textproc/elasticsearch-plugin-hq/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/elasticsearch-plugin-hq/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	hq
 PORTVERSION=	1.0.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	textproc
 PKGNAMEPREFIX=	elasticsearch-plugin-

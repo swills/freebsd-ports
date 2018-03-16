@@ -1,9 +1,9 @@
 # Created by: clsung
-# $FreeBSD: head/textproc/p5-Search-VectorSpace/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Search-VectorSpace/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	Search-VectorSpace
 PORTVERSION=	0.02
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

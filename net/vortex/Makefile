@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/vortex/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/vortex/Makefile 464165 2018-03-11 11:21:23Z rene $
 
 PORTNAME=	vortex
 DISTVERSION=	2.9.0-59
@@ -7,7 +7,7 @@ CATEGORIES=	net ipv6
 MASTER_SITES=	SF/${PORTNAME}-ids/${PORTNAME}/2.9.0/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	wxs@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Network surveillance engine
 
 LICENSE=	GPLv2

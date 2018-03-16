@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/elasticsearch-river-rabbitmq/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/elasticsearch-river-rabbitmq/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	rabbitmq
 PORTVERSION=	2.6.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.elasticsearch.org/elasticsearch/elasticsearch-river-rabbitmq/
 PKGNAMEPREFIX=	elasticsearch-river-

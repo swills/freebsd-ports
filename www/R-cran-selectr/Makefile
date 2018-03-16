@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/www/R-cran-selectr/Makefile 429302 2016-12-24 01:29:39Z tota $
+# $FreeBSD: head/www/R-cran-selectr/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	selectr
 DISTVERSION=	0.3-1
+PORTREVISION=	1
 CATEGORIES=	www
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/py-flake8-import-order/Makefile 461776 2018-02-14 11:51:34Z amdmi3 $
+# $FreeBSD: head/devel/py-flake8-import-order/Makefile 464258 2018-03-12 16:52:35Z amdmi3 $
 
 PORTNAME=	flake8-import-order
-PORTVERSION=	0.17
+PORTVERSION=	0.17.1
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

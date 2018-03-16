@@ -1,8 +1,9 @@
 # Created by: David Kalliecharan <dave@dal.ca>
-# $FreeBSD: head/devel/py-llvmlite/Makefile 463474 2018-03-03 09:35:21Z yuri $
+# $FreeBSD: head/devel/py-llvmlite/Makefile 464130 2018-03-10 23:04:45Z sunpoet $
 
 PORTNAME=	llvmlite
 DISTVERSION=	0.22.0
+PORTREVISION=	2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -16,6 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 BROKEN_powerpc64=	fails to compile: clang++: not found
 
 BUILD_DEPENDS=	${PY_ENUM34}
+RUN_DEPENDS=	${PY_ENUM34}
 LIB_DEPENDS=	libLLVM-5.0.so:devel/llvm50
 
 # Python 2.7,3.4+

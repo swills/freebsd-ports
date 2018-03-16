@@ -1,15 +1,14 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/www/radicale/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/www/radicale/Makefile 464502 2018-03-14 15:01:03Z feld $
 
 PORTNAME=		radicale
-PORTVERSION=		1.1.2
-PORTREVISION=		2
+PORTVERSION=		1.1.6
 CATEGORIES=		www python
 MASTER_SITES=		CHEESESHOP
 PKGNAMEPREFIX=		${PYTHON_PKGNAMEPREFIX}
 DISTNAME=		Radicale-${PORTVERSION}
 
-MAINTAINER=		feld@FreeBSD.org
+MAINTAINER=		ports@FreeBSD.org
 COMMENT=		Python based CalDAV/CardDAV server
 
 LICENSE=		GPLv3

@@ -1,5 +1,5 @@
 # Created by: Kimura Fuyuki <fuyuki@nigredo.org>
-# $FreeBSD: head/devel/ossp-xds/Makefile 396088 2015-09-04 13:07:20Z danfe $
+# $FreeBSD: head/devel/ossp-xds/Makefile 464663 2018-03-16 08:33:15Z amdmi3 $
 
 PORTNAME=	xds
 PORTVERSION=	0.9.3
@@ -11,15 +11,15 @@ PKGNAMEPREFIX=	ossp-
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Generic and extensible framework for serialization
 
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
 USES=		libtool
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
+TEST_TARGET=	check  # XXX: 20 of 26 tests fail
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libxds.so
-
-regression-test: build
-	@${SETENV} ${MAKE_ENV} ${MAKE_CMD} ${MAKE_FLAGS} ${MAKEFILE} \
-		${MAKE_ARGS} check -C ${WRKSRC}
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libxds.so
 
 .include <bsd.port.mk>

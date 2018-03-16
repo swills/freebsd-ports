@@ -1,8 +1,9 @@
 # Created by: gary@hotlava.com
-# $FreeBSD: head/graphics/sane-backends/Makefile 444767 2017-06-30 15:25:19Z madpilot $
+# $FreeBSD: head/graphics/sane-backends/Makefile 464242 2018-03-12 09:44:33Z tobik $
 
 PORTNAME=	sane-backends
 PORTVERSION=	1.0.27
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	https://alioth.debian.org/frs/download.php/file/4146/ \
 		http://fossies.org/linux/misc/
@@ -14,7 +15,7 @@ LICENSE=	GPLv2+
 
 LIB_DEPENDS=	libtiff.so:graphics/tiff
 
-USES=		gmake libtool localbase pathfix pkgconfig
+USES=		gmake jpeg libtool localbase pathfix pkgconfig
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-docdir=${DOCSDIR} \
 		--disable-latex \

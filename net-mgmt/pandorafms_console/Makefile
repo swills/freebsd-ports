@@ -1,5 +1,5 @@
 # Created by: KIKUCHI Koichiro <koichiro@rworks.jp>
-# $FreeBSD: head/net-mgmt/pandorafms_console/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/net-mgmt/pandorafms_console/Makefile 464193 2018-03-11 18:36:16Z brnrd $
 
 PORTNAME=	pandora_console
 CATEGORIES=	net-mgmt
@@ -12,7 +12,7 @@ LICENSE_FILE=	${PANDORA_LICENSE_FILE}
 
 RUN_DEPENDS=	${LOCALBASE}/bin/twopi:graphics/graphviz
 
-USES=		shebangfix
+USES=		apache:run,2.2+ shebangfix
 SHEBANG_FILES=	include/languages/extract_newlines.sh \
 		include/languages/util-all \
 		include/languages/util-bzr-update \
@@ -30,7 +30,6 @@ PGSQL_DESC=	Use PostgreSQL backend (experimental)
 USE_PHP=	curl filter gd gettext hash json ldap mbstring mysql \
 		snmp session xml zip zlib
 WANT_PHP_WEB=	yes
-USE_APACHE_RUN=	22+
 
 SUB_FILES+=	pandora_console.conf pkg-message newsyslog.conf
 SUB_LIST+=	WWWOWN=${WWWOWN} WWWGRP=${WWWGRP}

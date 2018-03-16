@@ -1,8 +1,9 @@
 # Created by: Chris Calvey <chris@securityforensics.co.uk>
-# $FreeBSD: head/sysutils/aimage/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/sysutils/aimage/Makefile 463984 2018-03-09 17:57:27Z arved $
 
 PORTNAME=	aimage
 PORTVERSION=	3.2.5
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://digitalcorpora.org/downloads/
 
@@ -13,7 +14,7 @@ LICENSE=	BSD3CLAUSE
 
 LIB_DEPENDS=	libafflib.so:sysutils/afflib
 
-USES=		gmake ssl
+USES=		gmake readline ssl
 GNU_CONFIGURE=	yes
 
 PLIST_FILES=	bin/aimage

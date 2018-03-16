@@ -1,9 +1,9 @@
 # Created by: Ed Schouten <ed@fxq.nl>
-# $FreeBSD: head/devel/mingw32-pthreads/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/devel/mingw32-pthreads/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	pthreads
 PORTVERSION=	2.8.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	ftp://sources.redhat.com/pub/${PORTNAME}-win32/
 PKGNAMEPREFIX=	mingw32-

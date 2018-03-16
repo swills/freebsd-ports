@@ -1,8 +1,9 @@
 # Created by: Craig Leres <leres@FreeBSD.org>
-# $FreeBSD: head/devel/arduino-irremote/Makefile 449916 2017-09-15 18:18:26Z leres $
+# $FreeBSD: head/devel/arduino-irremote/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	arduino-irremote
 PORTVERSION=	2.1.0
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	leres@FreeBSD.org

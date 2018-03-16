@@ -1,5 +1,5 @@
 # Created by: Frank Laszlo <laszlof@vonostingroup.com>
-# $FreeBSD: head/devel/readline/Makefile 453182 2017-10-30 14:54:28Z sunpoet $
+# $FreeBSD: head/devel/readline/Makefile 464407 2018-03-13 20:30:25Z sunpoet $
 
 PORTNAME=	readline
 PORTVERSION=	7.0.${PATCHLEVEL}
@@ -34,7 +34,7 @@ CPE_UPDATE=	${PATCHLEVEL}
 PATCHES=	1 2 3
 PATCHLEVEL=	${PATCHES:O:[-1]}
 .for patch in ${PATCHES}
-PATCHFILES+=	${PORTNAME}${PORTVERSION:R:S|.||}-${patch:S|^|00|:S|.*(...)$|\1|}
+PATCHFILES+=	${PORTNAME}${PORTVERSION:R:S|.||}-${patch:S|^|00|:C|.*(...)$|\1|}
 .endfor
 
 post-patch-TERMCAP-on:

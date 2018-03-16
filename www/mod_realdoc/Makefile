@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/mod_realdoc/Makefile 446038 2017-07-16 17:20:26Z ultima $
+# $FreeBSD: head/www/mod_realdoc/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_realdoc
 PORTVERSION=	20170405
@@ -10,7 +10,7 @@ COMMENT=	Apache module to support atomic deploys
 
 LICENSE=	MIT
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 USE_GITHUB=	yes

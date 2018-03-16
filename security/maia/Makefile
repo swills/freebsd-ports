@@ -1,5 +1,5 @@
 # Created by: Janky Jay <ek@purplehat.org>
-# $FreeBSD: head/security/maia/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/security/maia/Makefile 464193 2018-03-11 18:36:16Z brnrd $
 
 PORTNAME=	maia
 DISTVERSION=	1.0.4
@@ -100,7 +100,7 @@ USE_RC_SUBR+=	maiad
 # setting USE_ variables. C'est la vie.
 
 .if ${PORT_OPTIONS:MAPACHE}
-USE_APACHE_RUN=	22+
+USES+=		apache:run,2.2+
 .endif
 
 .if ${PORT_OPTIONS:MWEBHOST}

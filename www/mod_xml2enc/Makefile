@@ -1,5 +1,5 @@
 # Created by: Marin Atanasov Nikolov <dnaeon@gmail.com>
-# $FreeBSD: head/www/mod_xml2enc/Makefile 363399 2014-07-29 21:43:17Z adamw $
+# $FreeBSD: head/www/mod_xml2enc/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_xml2enc
 PORTVERSION=	1.0.3
@@ -16,11 +16,10 @@ LICENSE=	GPLv2
 
 # included in apache24
 # http://httpd.apache.org/docs/2.4/mod/mod_xml2enc.html
-USE_APACHE=	22
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 SHORTMODNAME=	xml2enc
-USES=	tar:bzip2
+USES=		apache:2.2 tar:bzip2
 USE_GNOME=	libxml2
 
 AP_INC+=	${LOCALBASE}/include/libxml2 -I${WRKSRC}

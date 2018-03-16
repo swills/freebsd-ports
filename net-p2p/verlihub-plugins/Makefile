@@ -1,9 +1,9 @@
 # Created by: Mikle Davidkin <skylord@vt.net.ru>
-# $FreeBSD: head/net-p2p/verlihub-plugins/Makefile 426566 2016-11-20 09:38:08Z gerald $
+# $FreeBSD: head/net-p2p/verlihub-plugins/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	verlihub
 PORTVERSION=	1.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net-p2p
 PKGNAMESUFFIX=	-plugins
 

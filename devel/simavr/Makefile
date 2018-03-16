@@ -1,8 +1,9 @@
 # Created by: Felix Palmen <felix@palmen-it.de>
-# $FreeBSD: head/devel/simavr/Makefile 458646 2018-01-10 15:08:51Z danfe $
+# $FreeBSD: head/devel/simavr/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	simavr
 PORTVERSION=	1.3
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

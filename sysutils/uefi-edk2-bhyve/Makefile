@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/uefi-edk2-bhyve/Makefile 455392 2017-12-03 08:25:31Z antoine $
+# $FreeBSD: head/sysutils/uefi-edk2-bhyve/Makefile 464059 2018-03-10 10:07:45Z tobik $
 
 PORTNAME=	uefi-edk2-bhyve
 PORTVERSION=	20160704
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils
 
 MAINTAINER=	fabian.freyer@physik.tu-berlin.de
@@ -81,3 +81,4 @@ do-install:
 		${STAGEDIR}${PREFIX}/share/uefi-firmware/BHYVE_UEFI${PLIST_SUFFIX}.fd
 
 .include <bsd.port.mk>
+RUN_DEPENDS:=	${RUN_DEPENDS:Ngcc*}

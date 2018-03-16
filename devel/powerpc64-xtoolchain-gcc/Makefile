@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/powerpc64-xtoolchain-gcc/Makefile 461069 2018-02-06 15:27:36Z bapt $
+# $FreeBSD: head/devel/powerpc64-xtoolchain-gcc/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	xtoolchain
 PORTVERSION=	0.4
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	# none
 DISTFILES=	# none

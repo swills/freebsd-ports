@@ -1,5 +1,5 @@
 # Created by: Sutra Zhou <zhoushuqun@gmail.com>
-# $FreeBSD: head/www/mod_auth_openid/Makefile 462849 2018-02-24 16:26:50Z joneum $
+# $FreeBSD: head/www/mod_auth_openid/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_auth_openid
 PORTVERSION=	0.8
@@ -19,8 +19,7 @@ BROKEN_powerpc64=	Does not build
 LIB_DEPENDS=	libopkele.so:devel/libopkele \
 		libsqlite3.so:databases/sqlite3
 
-USES=		autoreconf cpe gmake libtool pkgconfig
-USE_APACHE=	22+
+USES=		apache:2.2+ autoreconf cpe gmake libtool pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	bmuller
 

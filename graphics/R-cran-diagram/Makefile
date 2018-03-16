@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/R-cran-diagram/Makefile 449265 2017-09-05 02:18:54Z tota $
+# $FreeBSD: head/graphics/R-cran-diagram/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	diagram
 PORTVERSION=	1.6.4
+PORTREVISION=	1
 CATEGORIES=	graphics
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

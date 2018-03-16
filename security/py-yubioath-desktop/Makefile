@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-yubioath-desktop/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-yubioath-desktop/Makefile 464370 2018-03-13 13:14:05Z bapt $
 
 PORTNAME=	yubioath-desktop
 PORTVERSION=	3.1.0
@@ -6,7 +6,7 @@ CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	bapt@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GUI for displaying OATH codes with a Yubikey
 
 LICENSE=	GPLv3

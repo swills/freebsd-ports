@@ -1,5 +1,5 @@
 # Created by: Tom McLaughlin <tmclaugh@sdf.lonestar.org>
-# $FreeBSD: head/www/mod_mono/Makefile 460430 2018-01-30 19:00:27Z dbn $
+# $FreeBSD: head/www/mod_mono/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_mono
 PORTVERSION=	3.12
@@ -21,8 +21,7 @@ RUN_DEPENDS=	mono:lang/mono \
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-static --man=${PREFIX}/man
 INSTALL_TARGET=	install
-USES=		libtool mono pkgconfig
-USE_APACHE=	22+
+USES=		apache:2.2+ libtool mono pkgconfig
 
 .include <bsd.port.pre.mk>
 

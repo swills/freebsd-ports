@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/devel/gnatcoll/Makefile 448971 2017-08-30 11:28:29Z amdmi3 $
+# $FreeBSD: head/devel/gnatcoll/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	gnatcoll
 PORTVERSION=	2016	# branch: gpl-for-gps-2016
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 
 MAINTAINER=	ports@FreeBSD.org

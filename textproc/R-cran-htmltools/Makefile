@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/textproc/R-cran-htmltools/Makefile 440297 2017-05-07 02:37:49Z tota $
+# $FreeBSD: head/textproc/R-cran-htmltools/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	htmltools
 PORTVERSION=	0.3.6
+PORTREVISION=	1
 CATEGORIES=	textproc
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

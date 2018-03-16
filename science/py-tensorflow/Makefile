@@ -1,8 +1,9 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/science/py-tensorflow/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/science/py-tensorflow/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	tensorflow
 PORTVERSION=	1.2.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	science python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

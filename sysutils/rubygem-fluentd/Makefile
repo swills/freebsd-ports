@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/rubygem-fluentd/Makefile 446927 2017-07-30 13:13:20Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-fluentd/Makefile 464496 2018-03-14 14:49:38Z swills $
 
 PORTNAME=	fluentd
-PORTVERSION=	0.12.14
-PORTREVISION=	2
+PORTVERSION=	0.12.42
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 

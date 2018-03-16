@@ -1,8 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/net/adasockets/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/net/adasockets/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	adasockets
 PORTVERSION=	1.10.1
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.rfc1149.net/download/adasockets/
 

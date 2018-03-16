@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/zita-convolver/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/audio/zita-convolver/Makefile 464132 2018-03-10 23:35:03Z linimon $
 
 PORTNAME=	zita-convolver
 PORTVERSION=	3.1.0
@@ -15,10 +15,6 @@ LICENSE_FILE=	${WRKSRC}/../COPYING
 
 BUILD_DEPENDS=	${LOCALBASE}/include/fftw3.h:math/fftw3
 LIB_DEPENDS=	libfftw3f.so:math/fftw3-float
-
-#BROKEN_aarch64=		fails to compile: c++: the clang compiler does not support '-march=native'
-#BROKEN_armv6=		fails to compile: c++: the clang compiler does not support '-march=native'
-#BROKEN_armv7=		fails to compile: c++: the clang compiler does not support '-march=native'
 
 USES=		compiler:c++11-lib gmake localbase:ldflags tar:bz2
 USE_LDCONFIG=	yes

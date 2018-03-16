@@ -1,5 +1,5 @@
 # Created by: Norikatsu Shigemura <nork@FreeBSD.org>
-# $FreeBSD: head/net/g2ipmsg/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/net/g2ipmsg/Makefile 464381 2018-03-13 14:37:48Z amdmi3 $
 
 PORTNAME=	g2ipmsg
 PORTVERSION=	0.9.6
@@ -10,9 +10,10 @@ MASTER_SITES=	http://ipmsg.org/archive/
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Popup style message communication tool for GNOME2
 
-LICENSE=	GPLv2+
+LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gettext gmake pathfix pkgconfig ssl
+USES=		gettext gmake localbase:ldflags pathfix pkgconfig ssl
 USE_GNOME=	gnomeprefix intltool libgnomeui
 USE_GSTREAMER=	vorbis
 GNU_CONFIGURE=	yes
@@ -20,9 +21,6 @@ CONFIGURE_ARGS=	--disable-doxygen-doc \
 		--enable-systray \
 		--disable-applet \
 		--with-ssl=${OPENSSLBASE}
-
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 GCONF_SCHEMAS=	g2ipmsg.schemas
 

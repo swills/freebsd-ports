@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-numDeriv/Makefile 423659 2016-10-10 12:49:50Z tota $
+# $FreeBSD: head/math/R-cran-numDeriv/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	numDeriv
 DISTVERSION=	2016.8-1
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

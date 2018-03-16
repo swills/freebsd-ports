@@ -1,8 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/gnome3/Makefile 460164 2018-01-28 11:21:34Z rene $
+# $FreeBSD: head/x11/gnome3/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	gnome3
 PORTVERSION=	3.18.0
+PORTREVISION=	1
 CATEGORIES?=	x11 gnome
 
 MAINTAINER=	gnome@FreeBSD.org

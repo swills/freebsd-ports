@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/math/gracetmpl/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/math/gracetmpl/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	gracetmpl
 PORTVERSION=	0.3.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math print
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

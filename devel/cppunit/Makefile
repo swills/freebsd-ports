@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cppunit/Makefile 463594 2018-03-04 18:40:31Z bdrewery $
+# $FreeBSD: head/devel/cppunit/Makefile 464271 2018-03-12 18:37:48Z bdrewery $
 
 PORTNAME=	cppunit
 PORTVERSION=	1.14.0
@@ -22,7 +22,7 @@ GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 OPTIONS_SUB=	yes
 USE_LDCONFIG=	yes
-USES=		libtool pathfix
+USES=		libtool pathfix compiler:c++11-lang
 
 SUB_FILES=	cppunit-config
 SUB_LIST+=	DISTVERSION=${DISTVERSION}

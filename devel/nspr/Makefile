@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/devel/nspr/Makefile 463695 2018-03-06 07:48:27Z jbeich $
+# $FreeBSD: head/devel/nspr/Makefile 464373 2018-03-13 13:47:49Z jbeich $
 
 PORTNAME=	nspr
 DISTVERSION=	4.19
@@ -18,7 +18,6 @@ CPE_PRODUCT=	netscape_portable_runtime
 WRKSRC_SUBDIR=	nspr
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
-CFLAGS+=	-D_WANT_SEMUN
 
 OPTIONS_DEFINE=	DEBUG TEST
 

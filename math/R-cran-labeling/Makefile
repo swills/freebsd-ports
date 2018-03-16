@@ -1,9 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-labeling/Makefile 367888 2014-09-10 20:50:31Z gerald $
+# $FreeBSD: head/math/R-cran-labeling/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	labeling
 PORTVERSION=	0.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

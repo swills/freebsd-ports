@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/lockfree-malloc/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/devel/lockfree-malloc/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	lockfree-malloc
 PORTVERSION=	0.0.${DATE}
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel
 MASTER_SITES=	LOCAL/vg
 

@@ -1,5 +1,5 @@
 # Created by: Jacob Atzen <jatzen@gmail.com>
-# $FreeBSD: head/www/rubygem-passenger/Makefile 459686 2018-01-22 19:21:58Z dvl $
+# $FreeBSD: head/www/rubygem-passenger/Makefile 464208 2018-03-11 21:00:35Z antoine $
 
 PORTNAME=	passenger
 PORTVERSION=	5.1.12
@@ -30,12 +30,12 @@ OPTIONS_EXCLUDE=DOCS
 SYMLINK_DESC=	Create passenger symlink
 
 .if ${FLAVOR} == apache
-USE_APACHE=	22+
+USES+=		apache:2.2+
 .endif
 
 USE_RUBY=	yes
 RAKE_BIN=	${LOCALBASE}/bin/rake
-USES=		cpe gem libtool python:env shebangfix ssl
+USES+=		cpe gem libtool python:env shebangfix ssl
 SHEBANG_FILES=	\
 	src/cxx_supportlib/vendor-copy/libuv/gyp_uv.py \
 	dev/vagrant/nginx_start \

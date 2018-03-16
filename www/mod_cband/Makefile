@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <clement@FreeBSD.org>
-# $FreeBSD: head/www/mod_cband/Makefile 442820 2017-06-07 09:01:21Z amdmi3 $
+# $FreeBSD: head/www/mod_cband/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_cband
 PORTVERSION=	0.9.7.5
@@ -18,8 +18,7 @@ LICENSE_COMB=	multi
 LICENSE_FILE_GPLv2+ =	${WRKSRC}/LICENSE
 LICENSE_FILE_BSD4CLAUSE=	${WRKSRC}/libpatricia.copyright
 
-USES=		tar:tgz
-USE_APACHE=	22
+USES=		apache:2.2 tar:tgz
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-apxs=${APXS}
 ALL_TARGET=	#

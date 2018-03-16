@@ -1,9 +1,9 @@
 # Created by: Stas Timokhin <devel@stasyan.com>
-# $FreeBSD: head/math/parmgridgen/Makefile 454300 2017-11-16 09:00:11Z amdmi3 $
+# $FreeBSD: head/math/parmgridgen/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	parmgridgen
 PORTVERSION=	1.0
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	math science
 MASTER_SITES=	http://www.mgnet.org/mgnet/Codes/parmgridgen/ \
 		http://www-users.cs.umn.edu/~moulitsa/download/ \

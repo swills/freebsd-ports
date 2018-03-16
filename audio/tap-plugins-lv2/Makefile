@@ -1,9 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/tap-plugins-lv2/Makefile 454028 2017-11-12 10:11:32Z yuri $
+# $FreeBSD: head/audio/tap-plugins-lv2/Makefile 464561 2018-03-15 05:55:41Z yuri $
 
 PORTNAME=	tap-plugins
-PORTVERSION=	g20160125
-PORTREVISION=	1
+DISTVERSION=	g20180220
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 
@@ -19,7 +18,7 @@ USES=		gmake localbase
 USE_GITHUB=	yes
 GH_ACCOUNT=	moddevices
 GH_PROJECT=	tap-lv2
-GH_TAGNAME=	de26a3c
+GH_TAGNAME=	cab6e0d
 
 MAKE_ENV+=	NOOPT=true
 

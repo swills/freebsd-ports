@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@FreeBSD.org>
-# $FreeBSD: head/math/sage/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/math/sage/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	sage
 PORTVERSION=	6.7
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math
 MASTER_SITES=	http://boxen.math.washington.edu/home/sagemath/sage-mirror/src/ \
 		http://mirrors.xmission.com/sage/src/ \

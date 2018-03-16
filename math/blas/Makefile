@@ -1,10 +1,10 @@
 # Created by: ljo
-# $FreeBSD: head/math/blas/Makefile 367888 2014-09-10 20:50:31Z gerald $
+# $FreeBSD: head/math/blas/Makefile 464164 2018-03-11 11:20:43Z rene $
 
 PORTNAME=	blas
-PORTREVISION=	3
+PORTREVISION=	4
 
-MAINTAINER=	maho@FreeBSD.org
+MAINTAINER=	fortran@FreeBSD.org
 COMMENT=	Basic Linear Algebra Subroutines
 
 DESCR=	${.CURDIR}/pkg-descr

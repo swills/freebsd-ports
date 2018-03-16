@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-dimRed/Makefile 449528 2017-09-10 09:31:11Z tota $
+# $FreeBSD: head/math/R-cran-dimRed/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	dimRed
 PORTVERSION=	0.1.0
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

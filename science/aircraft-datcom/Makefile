@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/aircraft-datcom/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/science/aircraft-datcom/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	aircraft-datcom
 DISTVERSION=	0.0.20120723
+PORTREVISION=	1
 CATEGORIES=	science
 
 MAINTAINER=	mike.d.ft402@gmail.com

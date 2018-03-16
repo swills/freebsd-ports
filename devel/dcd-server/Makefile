@@ -1,10 +1,10 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/dcd-server/Makefile 460653 2018-02-01 23:54:11Z acm $
+# $FreeBSD: head/devel/dcd-server/Makefile 464641 2018-03-15 21:35:58Z bdrewery $
 
 PORTNAME=	dcd
 PORTVERSION=	0.9.1
 DISTVERSIONPREFIX=	v
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES?=	devel
 PKGNAMESUFFIX?=	-server
 

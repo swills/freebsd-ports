@@ -1,9 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/mail/milter-callback/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/mail/milter-callback/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	milter-callback
 PORTVERSION=	1.6.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	mail
 MASTER_SITES=	LOCAL/ehaupt
 

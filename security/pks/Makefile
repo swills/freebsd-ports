@@ -1,9 +1,9 @@
 # Created by: kris@FreeBSD.org
-# $FreeBSD: head/security/pks/Makefile 457793 2018-01-01 20:01:08Z tijl $
+# $FreeBSD: head/security/pks/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	pks
 PORTVERSION=	0.9.6.20040312
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	security www
 MASTER_SITES=	http://pks.sourceforge.net/ LOCAL/mandree
 DISTFILES=	pks-current.tgz

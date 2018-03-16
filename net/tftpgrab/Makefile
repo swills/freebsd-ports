@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/tftpgrab/Makefile 328226 2013-09-25 00:54:08Z bdrewery $
+# $FreeBSD: head/net/tftpgrab/Makefile 464165 2018-03-11 11:21:23Z rene $
 
 PORTNAME=	tftpgrab
 PORTVERSION=	0.2
@@ -6,7 +6,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://pseudo-flaw.net/tftpgrab/ \
 		http://www.atarininja.org/~wxs/distfiles/
 
-MAINTAINER=	wxs@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	TFTP stream extractor
 
 GNU_CONFIGURE=	yes

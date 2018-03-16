@@ -1,9 +1,9 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/mingw32-libffi/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/mingw32-libffi/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	libffi
 PORTVERSION=	3.0.13
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	ftp://sourceware.org/pub/libffi/
 PKGNAMEPREFIX=	mingw32-

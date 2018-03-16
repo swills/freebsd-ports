@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-forecast/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/math/R-cran-forecast/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	forecast
 PORTVERSION=	8.2
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

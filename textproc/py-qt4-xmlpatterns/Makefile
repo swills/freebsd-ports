@@ -1,8 +1,8 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/textproc/py-qt4-xmlpatterns/Makefile 462214 2018-02-18 09:55:10Z rakuco $
+# $FreeBSD: head/textproc/py-qt4-xmlpatterns/Makefile 464266 2018-03-12 18:06:51Z tcberner $
 
 PORTNAME=	xmlpatterns
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc devel python
 
 MAINTAINER=	kde@FreeBSD.org

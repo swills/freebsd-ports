@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/ceres-solver/Makefile 457914 2018-01-02 16:49:24Z tcberner $
+# $FreeBSD: head/math/ceres-solver/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	ceres-solver
 DISTVERSION=	1.13.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

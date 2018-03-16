@@ -1,5 +1,5 @@
 # Created by: Mark Pulford <mark@kyne.com.au>
-# $FreeBSD: head/editors/mp/Makefile 463650 2018-03-05 16:20:31Z jhale $
+# $FreeBSD: head/editors/mp/Makefile 464480 2018-03-14 10:01:31Z gahr $
 
 PORTNAME=	mp
 DISTVERSION=	5.2.13
@@ -50,6 +50,7 @@ GTK3_CONFIGURE_ON=	--with-gtk=3
 
 NCURSES_USES=		ncurses
 NCURSES_CONFIGURE_WITH=	curses
+NCURSES_CFLAGS=		-I${NCURSESBASE}/include
 
 QT4_USE=		qt4=corelib,gui,moc_build \
 			xorg=x11

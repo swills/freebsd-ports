@@ -1,5 +1,5 @@
 # Created by: Oliver Eikemeier <eikemeier@fillmore-labs.com>
-# $FreeBSD: head/databases/gnatsweb4/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/gnatsweb4/Makefile 464193 2018-03-11 18:36:16Z brnrd $
 
 PORTNAME=	gnatsweb
 PORTVERSION=	4.00
@@ -15,9 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	p5-MIME-Base64>=0:converters/p5-MIME-Base64
 
-USE_APACHE_RUN=	22+
-
-USES=		perl5 shebangfix
+USES=		apache:run,2.2+ perl5 shebangfix
 SHEBANG_FILES=	gnatsweb.pl
 USE_PERL5=	run
 NO_BUILD=	yes

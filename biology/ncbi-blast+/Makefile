@@ -1,8 +1,8 @@
-# $FreeBSD: head/biology/ncbi-blast+/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/biology/ncbi-blast+/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	blast+
 PORTVERSION=	2.5.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	biology
 MASTER_SITES=	http://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/${PORTVERSION}/ \
 		http://acadix.biz/Ports/distfiles/

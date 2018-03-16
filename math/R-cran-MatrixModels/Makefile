@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-MatrixModels/Makefile 401711 2015-11-15 15:35:14Z tota $
+# $FreeBSD: head/math/R-cran-MatrixModels/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	MatrixModels
 DISTVERSION=	0.4-1
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

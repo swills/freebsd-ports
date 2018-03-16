@@ -1,8 +1,8 @@
 # Created by: Rusty Nejdl
-# $FreeBSD: head/databases/py-apsw/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/databases/py-apsw/Makefile 464605 2018-03-15 17:45:36Z sunpoet $
 
 PORTNAME=	apsw
-PORTVERSION=	3.21.0
+PORTVERSION=	3.22.0
 DISTVERSIONSUFFIX=	-r1
 CATEGORIES=	databases python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,6 +12,8 @@ COMMENT=	Another Python SQLite Wrapper
 
 LICENSE=	ZLIB
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BUILD_DEPENDS=	sqlite3>=${PORTVERSION:R}:databases/sqlite3
 
 USE_PYTHON=	autoplist concurrent distutils
 USES=		localbase python sqlite:3

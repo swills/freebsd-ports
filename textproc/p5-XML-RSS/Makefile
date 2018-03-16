@@ -1,8 +1,8 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-XML-RSS/Makefile 412886 2016-04-10 01:42:15Z swills $
+# $FreeBSD: head/textproc/p5-XML-RSS/Makefile 464454 2018-03-14 04:05:52Z swills $
 
 PORTNAME=	XML-RSS
-PORTVERSION=	1.59
+PORTVERSION=	1.60
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,8 +1,9 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/math/gnome-calculator/Makefile 442618 2017-06-05 13:42:12Z kwm $
+# $FreeBSD: head/math/gnome-calculator/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	gnome-calculator
 PORTVERSION=	3.24.0
+PORTREVISION=	1
 CATEGORIES=	math gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <clement@FreeBSD.org>
-# $FreeBSD: head/www/mod_log_mysql/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/mod_log_mysql/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_log_mysql
 PORTVERSION=	1.04
@@ -14,10 +14,9 @@ COMMENT=	Allows Apache 2.2.x to log to a MySQL database
 LICENSE=	PD APACHE11
 LICENSE_COMB=	multi
 
-USES=		tar:xz
+USES=		apache:2.2 tar:xz
 RUN_DEPENDS+=	${LOCALBASE}/${APACHEMODDIR}/mod_log_config-st.so:www/mod_log_config-st
 
-USE_APACHE=	22
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 USE_MYSQL=	yes

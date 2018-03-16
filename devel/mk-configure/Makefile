@@ -1,8 +1,8 @@
 # Created by: Mikolaj Golub <to.my.trociny@gmail.com>
-# $FreeBSD: head/devel/mk-configure/Makefile 454701 2017-11-22 19:30:39Z trociny $
+# $FreeBSD: head/devel/mk-configure/Makefile 464173 2018-03-11 13:57:00Z trociny $
 
 PORTNAME=	mk-configure
-PORTVERSION=	0.29.3
+PORTVERSION=	0.30.0
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

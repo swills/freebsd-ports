@@ -1,9 +1,9 @@
 # Created by: Warren Block <wblock@wonkity.com>
-# $FreeBSD: head/devel/arduino/Makefile 452566 2017-10-21 00:45:50Z leres $
+# $FreeBSD: head/devel/arduino/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	arduino
 PORTVERSION=	1.0.6
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	devel java lang
 MASTER_SITES=	https://arduino.cc/download.php?f=/

@@ -1,21 +1,25 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/archivers/quazip/Makefile 433481 2017-02-06 10:20:07Z rakuco $
+# $FreeBSD: head/archivers/quazip/Makefile 464159 2018-03-11 10:05:42Z tcberner $
 
 PORTNAME=	quazip
-PORTVERSION=	0.7.3
-PORTREVISION?=	0
+DISTVERSION=	0.7.3
+PORTREVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=	SF
+PKGNAMESUFFIX=	-${FLAVOR}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt/C++ wrapper for ZIP/UNZIP package
 
 LICENSE=	LGPL21
 
+FLAVORS=	qt4 qt5
+FLAVOR?=	${FLAVORS:[1]}
+
 USES=		cmake:outsource
 USE_LDCONFIG=	yes
 
-.  if empty(PKGNAMESUFFIX)
+.  if ${FLAVOR} == qt4
 USE_QT4=	corelib moc_build network_build qmake_build rcc_build uic_build
 CMAKE_ARGS=	-DBUILD_WITH_QT4:BOOL=TRUE
 .  else

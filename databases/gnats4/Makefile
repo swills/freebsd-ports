@@ -1,9 +1,9 @@
 # Created by: Oliver Eikemeier <eikemeier@fillmore-labs.com>
-# $FreeBSD: head/databases/gnats4/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/databases/gnats4/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	gnats
 PORTVERSION=	4.1.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	databases devel
 MASTER_SITES=	GNU
 PKGNAMESUFFIX=	4

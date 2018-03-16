@@ -1,9 +1,9 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/mingw32-openssl/Makefile 422233 2016-09-15 22:05:45Z mat $
+# $FreeBSD: head/devel/mingw32-openssl/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	openssl
 PORTVERSION=	1.0.2d
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel security
 MASTER_SITES=	http://www.openssl.org/source/ \
 		ftp://ftp.cert.dfn.de/pub/tools/net/openssl/source/

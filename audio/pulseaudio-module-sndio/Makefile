@@ -1,5 +1,5 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/audio/pulseaudio-module-sndio/Makefile 449353 2017-09-06 18:34:03Z tobik $
+# $FreeBSD: head/audio/pulseaudio-module-sndio/Makefile 464674 2018-03-16 11:16:18Z tobik $
 
 PORTNAME=	pulseaudio-module-sndio
 DISTVERSION=	10.99.1
@@ -10,7 +10,7 @@ COMMENT=	Sndio module for PulseAudio
 
 LICENSE=	ISCL
 
-LIB_DEPENDS+=	libsndio.so:audio/sndio \
+LIB_DEPENDS=	libsndio.so:audio/sndio \
 		libpulse.so:audio/pulseaudio
 
 USES=		pkgconfig

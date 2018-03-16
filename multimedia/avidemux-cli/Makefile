@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/avidemux-cli/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/multimedia/avidemux-cli/Makefile 464215 2018-03-11 22:48:02Z gerald $
 
 PORTNAME=	avidemux
 PORTVERSION=	${AVIDEMUX_VERSION}
+PORTREVISION=	6
 CATEGORIES=	multimedia
 PKGNAMESUFFIX=	-cli
 

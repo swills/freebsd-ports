@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/pktanon/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/net/pktanon/Makefile 464165 2018-03-11 11:21:23Z rene $
 
 PORTNAME=	pktanon
 PORTVERSION=	1.4.0
@@ -7,7 +7,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.tm.uka.de/software/pktanon/download/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-dev
 
-MAINTAINER=	wxs@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Network trace anonymizer
 
 LIB_DEPENDS=	libboost_regex.so:devel/boost-libs \

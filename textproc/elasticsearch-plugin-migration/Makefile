@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/elasticsearch-plugin-migration/Makefile 431674 2017-01-16 16:03:40Z olgeni $
+# $FreeBSD: head/textproc/elasticsearch-plugin-migration/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	migration
 PORTVERSION=	1.19
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
 PKGNAMEPREFIX=	elasticsearch-plugin-

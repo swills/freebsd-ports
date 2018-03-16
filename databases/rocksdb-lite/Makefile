@@ -1,5 +1,5 @@
 # Created by: David Thiel <lx@FreeBSD.org>
-# $FreeBSD: head/databases/rocksdb-lite/Makefile 462901 2018-02-25 05:31:39Z sunpoet $
+# $FreeBSD: head/databases/rocksdb-lite/Makefile 464587 2018-03-15 13:19:50Z linimon $
 
 PORTREVISION=	1
 
@@ -10,5 +10,6 @@ LITE=		yes
 MASTERDIR=	${.CURDIR}/../rocksdb
 
 BROKEN_armv6=		does not build: db/compaction_job.cc:714:52: error: implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'const size_t' (aka 'const unsigned int')
+BROKEN_armv7=		does not build: db/compaction_job.cc:714:52: error: implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'const size_t' (aka 'const unsigned int')
 
 .include "${MASTERDIR}/Makefile"

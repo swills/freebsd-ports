@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/py-oletools/Makefile 462439 2018-02-20 20:27:02Z sunpoet $
+# $FreeBSD: head/devel/py-oletools/Makefile 464320 2018-03-12 21:17:23Z sunpoet $
 
 PORTNAME=	oletools
-PORTVERSION=	0.52.1
+PORTVERSION=	0.52.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

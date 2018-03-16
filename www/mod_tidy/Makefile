@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <sheepkiller@cultdeadsheep.org>
-# $FreeBSD: head/www/mod_tidy/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/mod_tidy/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_tidy
 PORTVERSION=	0.5.5
@@ -17,7 +17,7 @@ LICENSE_COMB=	multi
 LIB_DEPENDS=	libtidy.so:www/tidy-lib
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/src
-USE_APACHE=	22+
+USES=		apache:2.2+
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 AP_INC+=	${LOCALBASE}/include/tidy

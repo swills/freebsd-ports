@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-glue/Makefile 449305 2017-09-05 17:15:34Z tota $
+# $FreeBSD: head/devel/R-cran-glue/Makefile 464216 2018-03-12 02:06:03Z tota $
 
 PORTNAME=	glue
-PORTVERSION=	1.1.1
+PORTVERSION=	1.2.0
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

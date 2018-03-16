@@ -1,5 +1,6 @@
-# $FreeBSD: head/devel/aarch64-none-elf-gcc/Makefile 439595 2017-04-28 04:36:40Z linimon $
+# $FreeBSD: head/devel/aarch64-none-elf-gcc/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
+PORTREVISION=	1
 PKGNAMEPREFIX=	aarch64-none-elf-
 COMMENT=	GNU Compiler Collection for bare metal arm cross-development
 GCC_TARGET=	aarch64-none-elf

@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/arduino-tools/Makefile 460729 2018-02-02 19:24:03Z kevans $
+# $FreeBSD: head/devel/arduino-tools/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	arduino-tools
 PORTVERSION=	1.8.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	# Mostly metaport - installs files, no build
 DISTFILES=	#

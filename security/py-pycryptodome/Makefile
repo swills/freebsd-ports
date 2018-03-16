@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/security/py-pycryptodome/Makefile 463869 2018-03-08 07:48:54Z yuri $
+# $FreeBSD: head/security/py-pycryptodome/Makefile 464092 2018-03-10 22:17:58Z yuri $
 
 PORTNAME=	pycryptodome
-DISTVERSION=	3.5.0
+DISTVERSION=	3.5.1
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

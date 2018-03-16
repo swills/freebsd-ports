@@ -1,5 +1,5 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/devel/pushmi/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/pushmi/Makefile 464193 2018-03-11 18:36:16Z brnrd $
 
 PORTNAME=	pushmi
 PORTVERSION=	1.0.0
@@ -26,8 +26,7 @@ BUILD_DEPENDS:=	${RUN_DEPENDS} \
 		p5-Test-Output>=0:devel/p5-Test-Output \
 		${APACHE_PKGNAMEPREFIX}mod_perl2>=0:www/mod_perl2
 
-USES=		perl5
+USES=		apache:2.2+ perl5
 USE_PERL5=	configure
-USE_APACHE=	22+
 
 .include <bsd.port.mk>

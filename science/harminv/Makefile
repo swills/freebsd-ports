@@ -1,9 +1,9 @@
 # Created by: Stas Timokhin <devel@stasyan.com>
-# $FreeBSD: head/science/harminv/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/science/harminv/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	harminv
 PORTVERSION=	1.3.1
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	science
 MASTER_SITES=	http://ab-initio.mit.edu/harminv/
 

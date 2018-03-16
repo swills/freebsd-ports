@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/barbie_seahorse_adventures/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/games/barbie_seahorse_adventures/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	barbie_seahorse_adventures
 PORTVERSION=	1.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games python
 MASTER_SITES=	http://www.imitationpickles.org/barbie/files/
 DISTNAME=	barbie-${DISTVERSION}

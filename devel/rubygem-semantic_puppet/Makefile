@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-semantic_puppet/Makefile 444868 2017-07-02 06:47:36Z sunpoet $
+# $FreeBSD: head/devel/rubygem-semantic_puppet/Makefile 464523 2018-03-14 18:12:10Z sunpoet $
 
 PORTNAME=	semantic_puppet
-PORTVERSION=	1.0.1
+PORTVERSION=	1.0.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -10,8 +10,6 @@ COMMENT=	Library for working with Semantic Versions and module dependencies
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-RUN_DEPENDS=	rubygem-gettext-setup>=0.3:devel/rubygem-gettext-setup
 
 NO_ARCH=	yes
 USE_RUBY=	yes

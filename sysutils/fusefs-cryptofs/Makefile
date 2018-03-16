@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/sysutils/fusefs-cryptofs/Makefile 430761 2017-01-07 01:07:55Z adamw $
+# $FreeBSD: head/sysutils/fusefs-cryptofs/Makefile 464667 2018-03-16 09:33:15Z amdmi3 $
 
 PORTNAME=	cryptofs
 PORTVERSION=	0.6.0
@@ -11,7 +11,8 @@ PKGNAMEPREFIX=	fusefs-
 MAINTAINER=	portmaster@BSDforge.com
 COMMENT=	Encrypted filesystem for FUSE
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libgcrypt.so:security/libgcrypt
 
@@ -23,7 +24,7 @@ DOCS=		README cryptofs.conf
 OPTIONS_DEFINE=	DOCS
 
 post-install-DOCS-on:
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	cd ${WRKSRC} && ${INSTALL_DATA} ${DOCS} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

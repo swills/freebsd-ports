@@ -1,5 +1,5 @@
 # Created by: Radim Kolar <hsn@sendmail.cz>
-# $FreeBSD: head/net/openmq/Makefile 446723 2017-07-27 09:09:38Z amdmi3 $
+# $FreeBSD: head/net/openmq/Makefile 464224 2018-03-12 06:50:26Z antoine $
 
 PORTNAME=	openmq
 PORTVERSION=	4.5.2.p.1
@@ -17,6 +17,8 @@ COMMENT=	Open Message Queue - Java Message Service Broker ${CLIENT_COMMENT}
 
 LICENSE=	GPLv2 CDDL
 LICENSE_COMB=	dual
+
+BROKEN=		fails to build
 
 SRCDIST=	mq4_5_2p1-source.zip
 BOOTJARS=	javaee-api-6.0.jar:2 \

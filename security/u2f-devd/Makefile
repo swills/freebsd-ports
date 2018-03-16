@@ -1,8 +1,9 @@
 # Created by: Greg V <greg@unrelenting.technology>
-# $FreeBSD: head/security/u2f-devd/Makefile 455847 2017-12-09 11:55:44Z cpm $
+# $FreeBSD: head/security/u2f-devd/Makefile 463990 2018-03-09 18:40:05Z cpm $
 
 PORTNAME=	u2f-devd
 PORTVERSION=	1.0.0
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	#
 DISTFILES=	#

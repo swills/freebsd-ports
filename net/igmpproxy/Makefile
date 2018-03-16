@@ -1,8 +1,8 @@
 # Created by: asami
-# $FreeBSD: head/net/igmpproxy/Makefile 461191 2018-02-07 22:37:31Z feld $
+# $FreeBSD: head/net/igmpproxy/Makefile 464223 2018-03-12 06:49:17Z yuri $
 
 PORTNAME=	igmpproxy
-PORTVERSION=	0.2
+DISTVERSION=	0.2.1
 PORTEPOCH=	1
 CATEGORIES=	net
 
@@ -12,15 +12,11 @@ COMMENT=	Multicast forwarding IGMP proxy
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+USES=		autoreconf
 USE_GITHUB=	yes
 GH_ACCOUNT=	pali
-
-USE_RC_SUBR=	igmpproxy
-USES=		autoreconf
 GNU_CONFIGURE=	yes
-
-EXTRA_PATCHES+=	${FILESDIR}/0001-Revert-Try-to-fix-problems-with-strict-aliasing.patch:-p1
-EXTRA_PATCHES+= ${FILESDIR}/0002-Revert-Include-config.h-before-any-other-files-to-ma.patch:-p1
+USE_RC_SUBR=	igmpproxy
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/igmpproxy.conf \

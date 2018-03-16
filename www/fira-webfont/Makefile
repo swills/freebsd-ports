@@ -1,5 +1,5 @@
 # Created by: Horia Racoviceanu <horia@racoviceanu.com>
-# $FreeBSD: head/www/fira-webfont/Makefile 431734 2017-01-17 12:42:23Z danfe $
+# $FreeBSD: head/www/fira-webfont/Makefile 464187 2018-03-11 17:35:52Z tobik $
 
 PORTNAME=	fira
 PORTVERSION=	4.203
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Sans-serif and monospaced Web Font for small screens
 
 LICENSE=	OFL11
+
+DEPRECATED=	Unused with no apparent use case
+EXPIRATION_DATE=	2018-03-25
 
 USES=		zip
 NO_ARCH=	yes

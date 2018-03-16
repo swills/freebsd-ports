@@ -1,9 +1,9 @@
 # Created by: Sato Hiroki <hrs@FreeBSD.org>
-# $FreeBSD: head/math/gotoblas/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/math/gotoblas/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	gotoblas
 PORTVERSION=	2.${GOTOBLAS2VER}.${LAPACKVER}
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	math
 MASTER_SITES=	LOCAL/maho/gotoblas \
 		NL/lapack:lapack NL/lapack/timing:lapack_tmg

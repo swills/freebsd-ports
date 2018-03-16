@@ -1,9 +1,9 @@
 # Created by: Tassilo Philipp <tphilipp@potion-studios.com>
-# $FreeBSD: head/devel/psptoolchain-newlib/Makefile 439423 2017-04-26 00:39:53Z ler $
+# $FreeBSD: head/devel/psptoolchain-newlib/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=		newlib
 PORTVERSION=		1.20.0
-PORTREVISION=		1
+PORTREVISION=		2
 CATEGORIES=		devel
 MASTER_SITES=		ftp://sources.redhat.com/pub/ \
 			SOURCEWARE/${PORTNAME}

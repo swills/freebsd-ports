@@ -1,9 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/databases/fastdb/Makefile 463452 2018-03-02 22:34:53Z brooks $
+# $FreeBSD: head/databases/fastdb/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	fastdb
 PORTVERSION=	3.75
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	databases
 MASTER_SITES=	SF
 

@@ -1,9 +1,9 @@
 # Created by: desmo@bandwidth.org
-# $FreeBSD: head/sysutils/LPRng/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/sysutils/LPRng/Makefile 464243 2018-03-12 09:50:45Z tobik $
 
 PORTNAME=	LPRng
 PORTVERSION=	3.8.C
-PORTREVISION=	3
+PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	sysutils print
 MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME:tl}

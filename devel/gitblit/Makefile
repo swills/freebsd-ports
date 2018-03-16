@@ -1,5 +1,5 @@
 # Created by: Dusan Vejnovic <freebsd@dussan.org>
-# $FreeBSD: head/devel/gitblit/Makefile 431402 2017-01-13 16:54:55Z mat $
+# $FreeBSD: head/devel/gitblit/Makefile 464193 2018-03-11 18:36:16Z brnrd $
 
 PORTNAME=	gitblit
 PORTVERSION=	1.8.0
@@ -44,7 +44,7 @@ REDIS_RUN_DEPENDS=		redis-server:databases/redis
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MAPACHE}
-USE_APACHE_RUN=	22+
+USES=		apache:run,2.2+
 .elif ${PORT_OPTIONS:MLIGHTTPD}
 RUN_DEPENDS+=	lighttpd:www/lighttpd
 .elif ${PORT_OPTIONS:MHIAWATHA}

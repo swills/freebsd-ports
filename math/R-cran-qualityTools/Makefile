@@ -1,8 +1,9 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/R-cran-qualityTools/Makefile 440270 2017-05-06 15:12:57Z miwi $
+# $FreeBSD: head/math/R-cran-qualityTools/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	qualityTools
 DISTVERSION=	1.55
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

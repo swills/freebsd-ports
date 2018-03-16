@@ -1,10 +1,10 @@
 # Created by: René Ladan <rene@freebsd.org>
-# $FreeBSD: head/devel/py-django-rq/Makefile 463771 2018-03-06 22:45:36Z rene $
+# $FreeBSD: head/devel/py-django-rq/Makefile 464046 2018-03-10 07:09:29Z antoine $
 
 PORTNAME=	django-rq
 PORTVERSION=	1.0.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -14,7 +14,7 @@ COMMENT=	Provides Django integration for RQ (Redis Queue)
 LICENSE=	MIT
 
 TEST_DEPENDS=	redis-server:databases/redis
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django>=1.8:www/py-django@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=1.8:www/py-django18@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}rq>=0.5.5:devel/py-rq@${FLAVOR}
 
 NO_ARCH=	yes

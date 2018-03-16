@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/mod_auth_gssapi/Makefile 454085 2017-11-12 21:34:26Z dbaio $
+# $FreeBSD: head/www/mod_auth_gssapi/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_auth_gssapi
 PORTVERSION=	1.6.0
@@ -12,8 +12,7 @@ COMMENT=	Apache module for authenticating users with GSSAPI
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		autoreconf bison gssapi:mit,flags libtool ssl
-USE_APACHE=	24+
+USES=		autoreconf apache:2.4+ bison gssapi:mit,flags libtool ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	modauthgssapi
 GNU_CONFIGURE=	yes

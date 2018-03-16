@@ -1,5 +1,5 @@
 # Created by: Eugene Grosbein <eugen@FreeBSD.org>
-# $FreeBSD: head/sysutils/cpupdate/Makefile 463376 2018-03-02 06:58:57Z eugen $
+# $FreeBSD: head/sysutils/cpupdate/Makefile 464511 2018-03-14 16:25:20Z eugen $
 
 PORTNAME=	cpupdate
 DISTVERSION=	g20180302
@@ -20,7 +20,7 @@ PLIST_FILES=	bin/${PORTNAME} man/man8/${PORTNAME}.8.gz
 
 CPM_ACCOUNT=	platomav
 CPM_PROJECT=	CPUMicrocodes
-CPM_TAGNAME=	18a85ff
+CPM_TAGNAME=	2ece631
 
 OPTIONS_DEFINE=	CPM
 CPM_DESC=	Download platomav/CPUMicrocodes collection

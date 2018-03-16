@@ -1,5 +1,5 @@
 # Created by: Kuei-Feng Li <thinker@branda.to>
-# $FreeBSD: head/www/trac/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/trac/Makefile 464531 2018-03-14 20:41:13Z joneum $
 
 PORTNAME=	trac
 PORTVERSION=	1.2.2
@@ -13,6 +13,10 @@ COMMENT=	Enhanced wiki and issue tracking system for software projects
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+CONFLICTS_INSTALL=	trac-devel
+
+PORTSCOUT=	limit:^1\.2\.[0-9]*
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Babel>=2.3.4:devel/py-babel@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Genshi>=0.7:textproc/py-genshi@${FLAVOR}

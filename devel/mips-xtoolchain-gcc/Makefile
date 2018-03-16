@@ -1,5 +1,6 @@
-# $FreeBSD: head/devel/mips-xtoolchain-gcc/Makefile 430548 2017-01-04 11:48:39Z lwhsu $
+# $FreeBSD: head/devel/mips-xtoolchain-gcc/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
+PORTREVISION=	1
 PKGNAMEPREFIX=	mips-
 
 MASTERDIR=	${.CURDIR}/../powerpc64-xtoolchain-gcc

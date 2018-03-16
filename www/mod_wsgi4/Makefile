@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/mod_wsgi4/Makefile 461083 2018-02-06 18:44:19Z joneum $
+# $FreeBSD: head/www/mod_wsgi4/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_wsgi
 DISTVERSION=	4.5.24
@@ -15,8 +15,7 @@ LICENSE=	APACHE20
 
 CONFLICTS_INSTALL=${PKGNAMEPREFIX}mod_wsgi3.* mod_wsgi3.*
 
-USES=		gettext python
-USE_APACHE=	22+
+USES=		apache:2.2+ gettext python
 USE_PYTHON=	flavors
 
 GNU_CONFIGURE=	yes

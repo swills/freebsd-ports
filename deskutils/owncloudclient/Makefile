@@ -1,9 +1,10 @@
 # Created by: Mathieu Arnold
-# $FreeBSD: head/deskutils/owncloudclient/Makefile 460921 2018-02-04 11:11:47Z madpilot $
+# $FreeBSD: head/deskutils/owncloudclient/Makefile 464268 2018-03-12 18:21:09Z tcberner $
 
 PORTNAME=	owncloudclient
 PORTVERSION=	2.4.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	deskutils
 
 MAINTAINER=	yonas@fizk.net
@@ -12,7 +13,7 @@ COMMENT=	OwnCloud Desktop Syncing Client
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libinotify.so:devel/libinotify \
-		libqt5keychain.so:security/qtkeychain-qt5
+		libqt5keychain.so:security/qtkeychain@qt5
 
 USES=		cmake:outsource,noninja compiler:c++11-lib gmake iconv \
 		localbase:ldflags pkgconfig sqlite ssl

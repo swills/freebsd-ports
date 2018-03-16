@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/devel/libspark2012/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/devel/libspark2012/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	libspark2012
 PORTVERSION=	2012
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://downloads.dragonlace.net/src/
 

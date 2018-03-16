@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/archivers/fastjar/Makefile 434003 2017-02-13 16:52:44Z tijl $
+# $FreeBSD: head/archivers/fastjar/Makefile 464164 2018-03-11 11:20:43Z rene $
 
 PORTNAME=	fastjar
 PORTVERSION=	0.93.20060808
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	archivers java
 MASTER_SITES=	LOCAL/maho/fastjar
 
-MAINTAINER=	maho@FreeBSD.org
+MAINTAINER=	java@FreeBSD.org
 COMMENT=	Version of JDK's `jar' command written entirely in C
 
 LICENSE=	GPLv2

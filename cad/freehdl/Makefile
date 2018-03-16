@@ -1,9 +1,9 @@
 # Created by: lon_kamikaze@gmx.de
-# $FreeBSD: head/cad/freehdl/Makefile 450473 2017-09-23 21:11:51Z adamw $
+# $FreeBSD: head/cad/freehdl/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	freehdl
 PORTVERSION=	0.0.7
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	cad
 MASTER_SITES=	http://freehdl.seul.org/~enaroska/
 

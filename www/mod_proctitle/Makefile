@@ -1,5 +1,5 @@
 # Created by: stas
-# $FreeBSD: head/www/mod_proctitle/Makefile 428144 2016-12-08 17:40:41Z tijl $
+# $FreeBSD: head/www/mod_proctitle/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_proctitle
 PORTVERSION=	0.4.1
@@ -13,9 +13,8 @@ COMMENT=	Set httpd process titles to reflect currently processed request
 
 LICENSE=	BSD2CLAUSE
 
-USE_APACHE=	22+
 GNU_CONFIGURE=	yes
-USES=		tar:bzip2
+USES=		apache:2.2+ tar:bzip2
 
 CFLAGS+=	-I${LOCALBASE}/include \
 		-I${LOCALBASE}/include/apr-1

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 463729 2018-03-06 15:56:03Z jhale $
+# $FreeBSD: head/security/Makefile 464369 2018-03-13 13:13:27Z bapt $
 #
 
     COMMENT = Security tools
@@ -942,6 +942,7 @@
     SUBDIR += py-mhash
     SUBDIR += py-mixbox
     SUBDIR += py-mnemonic
+    SUBDIR += py-ntlm-auth
     SUBDIR += py-oauth2client
     SUBDIR += py-oauthlib
     SUBDIR += py-obfsproxy-tor
@@ -1010,6 +1011,7 @@
     SUBDIR += py-vulndb
     SUBDIR += py-yara
     SUBDIR += py-yubioath-desktop
+    SUBDIR += py-yubikey-manager
     SUBDIR += py-zope.app.authentication
     SUBDIR += py-zope.app.localpermission
     SUBDIR += py-zope.app.principalannotation
@@ -1025,8 +1027,7 @@
     SUBDIR += py-zope.securitypolicy
     SUBDIR += py-zope.session
     SUBDIR += py-zxcvbn-python
-    SUBDIR += qtkeychain-qt4
-    SUBDIR += qtkeychain-qt5
+    SUBDIR += qtkeychain
     SUBDIR += quantis
     SUBDIR += quantis-kmod
     SUBDIR += racoon2
@@ -1068,6 +1069,7 @@
     SUBDIR += rubygem-bcrypt
     SUBDIR += rubygem-bcrypt-ruby
     SUBDIR += rubygem-bcrypt_pbkdf
+    SUBDIR += rubygem-devise_pam_authenticatable2
     SUBDIR += rubygem-devise-two-factor
     SUBDIR += rubygem-devise-two-factor-rails5
     SUBDIR += rubygem-devise-two-factor-rails50
@@ -1105,6 +1107,7 @@
     SUBDIR += rubygem-omniauth
     SUBDIR += rubygem-omniauth14
     SUBDIR += rubygem-omniauth-bitbucket
+    SUBDIR += rubygem-omniauth-cas
     SUBDIR += rubygem-omniauth-cas3
     SUBDIR += rubygem-omniauth-gitlab
     SUBDIR += rubygem-omniauth-multipassword
@@ -1146,6 +1149,7 @@
     SUBDIR += rubygem-rex-text
     SUBDIR += rubygem-rex-zip
     SUBDIR += rubygem-roauth
+    SUBDIR += rubygem-rpam2
     SUBDIR += rubygem-ruby-hmac
     SUBDIR += rubygem-ruby-rc4
     SUBDIR += rubygem-ruby-saml

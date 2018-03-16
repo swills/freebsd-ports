@@ -1,5 +1,5 @@
 # Created by: Peter Lai <cowbert@gmail.com>
-# $FreeBSD: head/www/mod_rivet/Makefile 448817 2017-08-27 10:44:40Z riggs $
+# $FreeBSD: head/www/mod_rivet/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_rivet
 PORTVERSION=	2.3.4
@@ -15,8 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libitcl.so:lang/itcl
 
-USES+=		gmake libtool tcl:85+,tea
-USE_APACHE=	22-24
+USES+=		apache:2.2-2.4 gmake libtool tcl:85+,tea
 USE_LDCONFIG=	${PREFIX}/lib/rivet
 
 INSTALL_TARGET=	install-strip

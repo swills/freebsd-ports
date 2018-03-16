@@ -1,9 +1,9 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-osdteletext/Makefile 431618 2017-01-16 09:01:17Z amdmi3 $
+# $FreeBSD: head/multimedia/vdr-plugin-osdteletext/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	vdr-plugin-osdteletext
 PORTVERSION=	0.9.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	multimedia
 MASTER_SITES=	http://projects.vdr-developer.org/attachments/download/899/
 DISTNAME=	${PORTNAME:S/-plugin-/-/}-${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}

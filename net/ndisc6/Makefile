@@ -1,9 +1,9 @@
 # Created by: rdenis@simphalempin.com
-# $FreeBSD: head/net/ndisc6/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/net/ndisc6/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	ndisc6
 PORTVERSION=	1.0.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net ipv6
 MASTER_SITES=	http://www.remlab.net/files/ndisc6/ \
 		http://people.via.ecp.fr/~rem/www.remlab.net/files/ndisc6/

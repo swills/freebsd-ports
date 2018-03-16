@@ -1,5 +1,5 @@
 # Created by: maho@FreeBSD.org
-# $FreeBSD: head/biology/garlic/Makefile 362131 2014-07-17 10:13:06Z marino $
+# $FreeBSD: head/biology/garlic/Makefile 464164 2018-03-11 11:20:43Z rene $
 
 PORTNAME=	garlic
 PORTVERSION=	1.6
@@ -9,7 +9,7 @@ MASTER_SITES=	http://www.zucic.org/sources/garlic-${PORTVERSION}/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	maho@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Molecular viewer, editor, and visualization program
 
 USES=		gmake

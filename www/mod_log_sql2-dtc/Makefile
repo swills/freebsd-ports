@@ -1,5 +1,5 @@
 # Created by: Marc G. Fournier <scrappy@FreeBSD.org>
-# $FreeBSD: head/www/mod_log_sql2-dtc/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/mod_log_sql2-dtc/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_log_sql
 PORTVERSION=	1.101
@@ -21,8 +21,7 @@ DBI_CONFIGURE_OFF=	--without-dbi
 DBI_LIB_DEPENDS=	libdbi.so:databases/libdbi
 
 GNU_CONFIGURE=	yes
-USES=		gmake tar:bzip2
-USE_APACHE=	22
+USES=		apache:2.2 gmake tar:bzip2
 USE_MYSQL=	yes
 
 CONFIGURE_ARGS+=	--with-apxs=${APXS}

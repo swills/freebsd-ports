@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/py-qt5-qscintilla2/Makefile 462214 2018-02-18 09:55:10Z rakuco $
+# $FreeBSD: head/devel/py-qt5-qscintilla2/Makefile 464266 2018-03-12 18:06:51Z tcberner $
 
 PORTNAME=	qscintilla2
 PORTVERSION=	${QSCI2_VERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel python
 MASTER_SITES=	${MASTER_SITES_QSCI2}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}qt5-

@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/www/netsurf/Makefile 453002 2017-10-27 15:46:21Z vanilla $
+# $FreeBSD: head/www/netsurf/Makefile 464091 2018-03-10 21:21:39Z linimon $
 
 PORTNAME=	netsurf
 PORTVERSION=	3.7
@@ -31,8 +31,6 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libnspsl.so:dns/libnspsl
 RUN_DEPENDS=	duk:lang/duktape \
 		${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
-
-BROKEN_powerpc64=	fails to compile: dukky.h:40: expected declaration specifiers or '...' before 'dom_string'
 
 USES=		bison desktop-file-utils gettext-runtime gmake iconv jpeg \
 		localbase pkgconfig shebangfix ssl

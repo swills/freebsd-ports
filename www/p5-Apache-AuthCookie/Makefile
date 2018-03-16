@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/www/p5-Apache-AuthCookie/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Apache-AuthCookie/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	Apache-AuthCookie
 PORTVERSION=	3.27
@@ -23,9 +23,8 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-URI>=1.71:net/p5-URI
 
 NO_ARCH=	yes
-USE_APACHE=	22+
 USE_PERL5=	configure
-USES=		perl5
+USES=		apache:2.2+ perl5
 
 .include <bsd.port.pre.mk>
 

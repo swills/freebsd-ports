@@ -1,9 +1,9 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-wirbelscan/Makefile 429048 2016-12-21 09:00:55Z amdmi3 $
+# $FreeBSD: head/multimedia/vdr-plugin-wirbelscan/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	vdr-plugin-wirbelscan
 PORTVERSION=	0.0.7
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	multimedia
 MASTER_SITES=	http://wirbel.htpc-forum.de/wirbelscan/
 DISTNAME=	${PORTNAME:S/-plugin-/-/}-${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}

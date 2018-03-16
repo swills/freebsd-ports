@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao
-# $FreeBSD: head/editors/hte/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/editors/hte/Makefile 464439 2018-03-13 22:42:01Z rene $
 
 PORTNAME=	hte
 PORTVERSION=	2.1.0
@@ -7,7 +7,7 @@ CATEGORIES=	editors
 MASTER_SITES=	SF/${PORTNAME}/ht-source
 DISTNAME=	ht-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	rene@FreeBSD.org
 COMMENT=	File editor/viewer/analyzer for executables
 
 LICENSE=	GPLv2

@@ -1,5 +1,5 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/audio/xmms2/Makefile 458101 2018-01-05 02:57:35Z jbeich $
+# $FreeBSD: head/audio/xmms2/Makefile 464643 2018-03-15 22:18:21Z bdrewery $
 
 PORTNAME?=	xmms2
 PORTVERSION=	0.8
@@ -158,7 +158,7 @@ XML_CONFIGURE_OFF=	--without-plugins="xml" --without-plugins="rss" \
 
 ET_CONFIGURE_OFF=	--without-optionals="et"
 
-.endif # !XMMS_SLAVE
+.endif # !XMMS2_SLAVE
 
 .include <bsd.port.options.mk>
 
@@ -217,6 +217,8 @@ post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/*
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/${PORTNAME}/*
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libxmmsclient*
+.else
+	${RM} -R ${STAGEDIR}${PREFIX}/lib/xmms2
 .endif
 
 .include <bsd.port.post.mk>

@@ -1,8 +1,8 @@
 # Created by: Yuan-Chung Hsiao <ychsiao@ychsiao.org>
-# $FreeBSD: head/textproc/p5-YAML-Tiny/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-YAML-Tiny/Makefile 464179 2018-03-11 15:21:51Z adamw $
 
 PORTNAME=	YAML-Tiny
-PORTVERSION=	1.69
+PORTVERSION=	1.73
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

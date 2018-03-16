@@ -1,9 +1,9 @@
 # Created by: lx
-# $FreeBSD: head/security/clusterssh/Makefile 463699 2018-03-06 08:35:04Z ehaupt $
+# $FreeBSD: head/security/clusterssh/Makefile 464539 2018-03-14 23:12:10Z ehaupt $
 
 PORTNAME=	clusterssh
 DISTVERSIONPREFIX=	release-
-DISTVERSION=	4.13.1
+DISTVERSION=	4.13.2
 CATEGORIES=	security net
 
 MAINTAINER=	ehaupt@FreeBSD.org

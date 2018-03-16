@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/sysutils/fusefs-chironfs/Makefile 434248 2017-02-16 19:46:23Z lifanov $
+# $FreeBSD: head/sysutils/fusefs-chironfs/Makefile 464478 2018-03-14 09:33:13Z amdmi3 $
 
 PORTNAME=	chironfs
 PORTVERSION=	1.1.1
@@ -12,11 +12,10 @@ MAINTAINER=	portmaster@BSDforge.com
 COMMENT=	FUSE based filesystem with replication at the filesystem level
 
 LICENSE=	GPLv3
+LICENSE_FILE=	${WRKSRC}/doc/copyright
 
+USES=		fuse localbase:ldflags
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
-USES=		fuse
 
 PLIST_FILES=	bin/chironfs bin/chirctl man/man8/chironfs.8.gz
 PORTDOCS=	*

@@ -1,7 +1,8 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/math/arpack-ng-mpich/Makefile 420410 2016-08-18 16:19:56Z pawel $
+# $FreeBSD: head/math/arpack-ng-mpich/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	arpack-ng
+PORTREVISION=	1
 PKGNAMESUFFIX=	-mpich
 
 COMMENT=	Revised Argand library for solving large-scale eigenvalue problems with MPI support

@@ -1,9 +1,9 @@
 # Created by: bf@FreeBSD.org
-# $FreeBSD: head/math/cblas/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/math/cblas/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	cblas
 PORTVERSION=	1.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	math
 MASTER_SITES=	NL/blas/blast-forum/ LOCAL/bf
 DISTFILES=	cblas.tgz

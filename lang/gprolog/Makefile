@@ -1,9 +1,9 @@
 # Created by: Douglas Anestad <yotta@dougdidit.com>
-# $FreeBSD: head/lang/gprolog/Makefile 457246 2017-12-25 18:39:38Z tijl $
+# $FreeBSD: head/lang/gprolog/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	gprolog
 PORTVERSION=	1.4.4
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	lang
 MASTER_SITES=	http://www.gprolog.org/
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/comms/gr-osmosdr/Makefile 459834 2018-01-24 11:12:04Z martymac $
+# $FreeBSD: head/comms/gr-osmosdr/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	gr-osmosdr
 PORTVERSION=	20170612
+PORTREVISION=	1
 CATEGORIES=	comms hamradio
 MASTER_SITES=	http://contribs.martymac.org/FreeBSD-ports/distfiles/ \
 		LOCAL/martymac

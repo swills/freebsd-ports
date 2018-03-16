@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/bombz/Makefile 456050 2017-12-11 16:54:20Z antoine $
+# $FreeBSD: head/games/bombz/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	bombz
 PORTVERSION=	0.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	games python
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${DISTVERSION}/ \
 		SF/nemysisfreebsdp/games/:icons

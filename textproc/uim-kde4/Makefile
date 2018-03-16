@@ -1,7 +1,7 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/textproc/uim-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/textproc/uim-kde4/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
-PORTREVISION=	5
+PORTREVISION=	6
 PKGNAMESUFFIX=	-kde4
 
 COMMENT=	KDE4 panel applet of uim input method

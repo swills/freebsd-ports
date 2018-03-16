@@ -1,10 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/games/trackballs/Makefile 458427 2018-01-08 15:20:57Z cpm $
+# $FreeBSD: head/games/trackballs/Makefile 464486 2018-03-14 11:09:00Z martymac $
 
 PORTNAME=	trackballs
-PORTVERSION=	1.2.4
+PORTVERSION=	1.3.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	games
 
 MAINTAINER=	martymac@FreeBSD.org
@@ -25,7 +24,10 @@ USE_SDL=	image2 mixer2 sdl2 ttf2
 
 INSTALLS_ICONS=	yes
 
-OPTIONS_DEFINE=	NLS
+CMAKE_ARGS+=	-DTRACKBALLS_DOC_DIR=${DOCSDIR} \
+		-DTRACKBALLS_MAN_DIR=${PREFIX}/man
+
+OPTIONS_DEFINE=	NLS DOCS
 OPTIONS_SUB=	yes
 NLS_USES=	gettext-tools
 NLS_CMAKE_ON=	-DDISABLE_NLS:BOOL=OFF

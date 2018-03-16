@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/libprojectm/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/graphics/libprojectm/Makefile 464152 2018-03-11 09:00:11Z yuri $
 
 PORTNAME=	libprojectM
 PORTVERSION=	2.0.1
@@ -7,7 +7,7 @@ CATEGORIES=	graphics audio
 MASTER_SITES=	SF/${PORTNAME:tl:S/lib//}/${PORTVERSION}/
 DISTNAME=	${PORTNAME:S/lib//}-${DISTVERSION}-Source
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Awesome music visualiser
 
 LICENSE=	LGPL21+

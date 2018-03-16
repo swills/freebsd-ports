@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/textproc/R-cran-readr/Makefile 449380 2017-09-06 23:42:09Z tota $
+# $FreeBSD: head/textproc/R-cran-readr/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	readr
 PORTVERSION=	1.1.1
+PORTREVISION=	1
 CATEGORIES=	textproc
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/misc/ini_file_manager/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/misc/ini_file_manager/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	ini_file_manager
 PORTVERSION=	03
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	misc
 MASTER_SITES=	http://sourceforge.net/projects/${SFPATH}/
 DISTNAME=	ini-files-${PORTVERSION}

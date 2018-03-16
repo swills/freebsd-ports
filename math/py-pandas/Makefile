@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/py-pandas/Makefile 459180 2018-01-16 15:08:08Z swills $
+# $FreeBSD: head/math/py-pandas/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	pandas
 DISTVERSION=	0.22.0
+PORTREVISION=	1
 CATEGORIES=	math devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

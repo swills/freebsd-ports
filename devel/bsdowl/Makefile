@@ -1,8 +1,9 @@
 # Created by: Michael Le Barbier GrÃ¼newald <michipili@gmail.com>
-# $FreeBSD: head/devel/bsdowl/Makefile 427548 2016-12-02 09:21:58Z mat $
+# $FreeBSD: head/devel/bsdowl/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	bsdowl
 PORTVERSION=	2.2.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/michipili/bsdowl/releases/download/v${PORTVERSION}/
 

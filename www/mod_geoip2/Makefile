@@ -1,5 +1,5 @@
 # Created by: Jukka A. Ukkonen <jau@iki.fi>
-# $FreeBSD: head/www/mod_geoip2/Makefile 415839 2016-05-25 15:43:34Z mat $
+# $FreeBSD: head/www/mod_geoip2/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_geoip2
 PORTVERSION=	1.2.10
@@ -16,7 +16,7 @@ RUN_DEPENDS=	GeoIP>=1.4.4:net/GeoIP
 USE_GITHUB=	yes
 GH_ACCOUNT=	maxmind
 GH_PROJECT=	geoip-api-mod_geoip2
-USE_APACHE=	22+
+USES=		apache:2.2+
 MODULENAME=	mod_geoip
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes

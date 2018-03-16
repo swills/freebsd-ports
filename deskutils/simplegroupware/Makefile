@@ -1,5 +1,5 @@
 # Created by: jamrich.majo@gmail.com
-# $FreeBSD: head/deskutils/simplegroupware/Makefile 462797 2018-02-24 11:36:34Z brnrd $
+# $FreeBSD: head/deskutils/simplegroupware/Makefile 464193 2018-03-11 18:36:16Z brnrd $
 
 PORTNAME=	simplegroupware
 PORTVERSION=	0.745
@@ -11,7 +11,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple Groupware is an open source enterprise application
 
 NO_BUILD=	yes
-USE_APACHE_RUN=	22+
+USES=		apache:run,2.2+
 USE_MYSQL=	yes
 USE_PHP=	mysql
 

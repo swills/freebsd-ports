@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/converters/R-cran-jsonlite/Makefile 442747 2017-06-06 08:20:26Z tota $
+# $FreeBSD: head/converters/R-cran-jsonlite/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	jsonlite
 PORTVERSION=	1.5
+PORTREVISION=	1
 CATEGORIES=	converters
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

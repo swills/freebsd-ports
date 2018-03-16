@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/x11-themes/Makefile 464075 2018-03-10 14:07:27Z jhale $
 #
 
     COMMENT = X11 themes
@@ -158,6 +158,7 @@
     SUBDIR += qtcurve
     SUBDIR += qtcurve-gtk2
     SUBDIR += qtcurve-kde4
+    SUBDIR += qtcurve-kf5
     SUBDIR += qtcurve-qt4
     SUBDIR += qtcurve-qt5
     SUBDIR += qtcurve-utils

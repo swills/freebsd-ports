@@ -1,8 +1,9 @@
 # Created by: Erik B Knudsen
-# $FreeBSD: head/science/p5-Mcstas-Tools/Makefile 428340 2016-12-11 08:25:56Z antoine $
+# $FreeBSD: head/science/p5-Mcstas-Tools/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	Mcstas-Tools
 PORTVERSION=	2.2a
+PORTREVISION=	1
 CATEGORIES=	science
 MASTER_SITES=	http://download.mcstas.org/mcstas-${PORTVERSION}/unix/McStas-${PORTVERSION}-UNIX-src/
 PKGNAMEPREFIX=	p5-

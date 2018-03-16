@@ -1,0 +1,12 @@
+# $FreeBSD: head/x11-themes/qtcurve-kf5/Makefile 464075 2018-03-10 14:07:27Z jhale $
+
+PORTNAME=	qtcurve
+PORTREVISION=	0
+
+COMMENT=	QtCurve KDE Frameworks 5 widget style and window decoration
+
+QTCURVE_SLAVE=	kf5
+
+MASTERDIR=	${.CURDIR}/../qtcurve
+
+.include "${MASTERDIR}/Makefile"

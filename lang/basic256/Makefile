@@ -1,5 +1,4 @@
-# Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/lang/basic256/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/lang/basic256/Makefile 464438 2018-03-13 22:24:58Z fernape $
 
 PORTNAME=	basic256
 PORTVERSION=	1.1.4.0
@@ -8,7 +7,7 @@ CATEGORIES=	lang
 MASTER_SITES=	SF/kidbasic/${PORTNAME}
 DISTNAME=	${PORTNAME}_${PORTVERSION}.orig
 
-MAINTAINER=	fernando.apesteguia@gmail.com
+MAINTAINER=	fernape@FreeBSD.org
 COMMENT=	Easy to use BASIC language and IDE for education
 
 LICENSE=	GPLv2

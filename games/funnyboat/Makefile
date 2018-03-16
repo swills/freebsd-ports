@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/funnyboat/Makefile 455858 2017-12-09 13:36:33Z antoine $
+# $FreeBSD: head/games/funnyboat/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	funnyboat
 PORTVERSION=	1.5
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	games
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gtkada3/Makefile 455251 2017-12-01 07:19:53Z antoine $
+# $FreeBSD: head/x11-toolkits/gtkada3/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	gtkada
 PORTVERSION=	3.14.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-toolkits
 PKGNAMESUFFIX=	3
 

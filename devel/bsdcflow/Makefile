@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/bsdcflow/Makefile 446721 2017-07-27 09:01:07Z amdmi3 $
+# $FreeBSD: head/devel/bsdcflow/Makefile 464377 2018-03-13 14:13:26Z amdmi3 $
 
 PORTNAME=	bsdcflow
 PORTVERSION=	0.0.6
@@ -17,12 +17,7 @@ CONFLICTS=	gnucflow-[0-9]* cflow-[0-9]*
 USES=		gmake
 MAKE_ENV=	MANDIR=${PREFIX}/man
 MAKE_JOBS_UNSAFE=	yes
-
-PLIST_FILES=	bin/asmgraph bin/cgraph	bin/cflow \
-		man/man1/asmgraph.1.gz man/man1/cflow.1.gz \
-		man/man1/cgraph.1.gz
-
-WRKSRC=		${WRKDIR}/${DISTNAME}/gnu
+WRKSRC_SUBDIR=	gnu
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/cgraph

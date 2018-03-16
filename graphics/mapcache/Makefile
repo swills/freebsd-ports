@@ -1,5 +1,5 @@
 # Created by: Ryan Melcer <rmelcer@iteris.com>
-# $FreeBSD: head/graphics/mapcache/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/mapcache/Makefile 464182 2018-03-11 15:40:02Z brnrd $
 
 PORTNAME=		mapcache
 DISTVERSION=		1.4.0-94
@@ -30,8 +30,10 @@ OPTIONS_DEFAULT=	APACHE FASTCGI SQLITE GEOS GDAL
 OPTIONS_SUB=		yes
 
 APACHE_DESC=		Native apache module
-APACHE_USE=		APACHE=22+
-APACHE_CMAKE_ON=	-DWITH_APACHE=1
+APACHE_USES=		apache:2.2+
+APACHE_CMAKE_ON=	-DWITH_APACHE=1 \
+			-DAPACHE_INCLUDE_DIR=${LOCALBASE}/${APACHEINCLUDEDIR} \
+			-DAPACHE_MODULE_DIR=${LOCALBASE}/${APACHEMODDIR}
 APACHE_CMAKE_OFF=	-DWITH_APACHE=0
 
 FASTCGI_LIB_DEPENDS=	libfcgi.so:www/fcgi
@@ -75,10 +77,5 @@ GDAL_CMAKE_OFF=		-DWITH_GDAL=0 -DWITH_OGR=0
 GEOS_LIB_DEPENDS=	libgeos_c.so:graphics/geos
 GEOS_CMAKE_ON=		-DWITH_GEOS=1
 GEOS_CMAKE_OFF=		-DWITH_GEOS=0
-
-post-patch:
-	@${REINPLACE_CMD} -e 's|PATH_SUFFIXES|PATH_SUFFIXES \
-			${APACHE_SUPPORTED_VERSION:S/^/apache&/}|g' \
-		${WRKSRC}/cmake/FindAPACHE.cmake
 
 .include <bsd.port.mk>

@@ -1,9 +1,9 @@
 # Created by: Patrick Dung (patrick_dkt@yahoo.com.hk)
-# $FreeBSD: head/print/pdftk/Makefile 450550 2017-09-24 20:47:48Z jbeich $
+# $FreeBSD: head/print/pdftk/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	pdftk
 PORTVERSION=	2.02
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	print
 MASTER_SITES=	http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/ LOCAL/mat/pdftk
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 463149 2018-02-27 18:15:46Z yuri $
+# $FreeBSD: head/graphics/Makefile 464646 2018-03-16 02:21:33Z jmd $
 #
 
     COMMENT = Graphics tools and libraries
@@ -151,6 +151,7 @@
     SUBDIR += drawpile
     SUBDIR += driconf
     SUBDIR += drm-next-kmod
+    SUBDIR += drm-stable-kmod
     SUBDIR += dspdfviewer
     SUBDIR += duhdraw
     SUBDIR += dynamechs

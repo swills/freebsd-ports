@@ -1,5 +1,5 @@
 # Created by: mutoh@openedu.org
-# $FreeBSD: head/lang/pharo/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/lang/pharo/Makefile 464343 2018-03-13 06:35:27Z tobik $
 
 PORTNAME=	pharo
 DISTVERSION=	1.4
@@ -9,7 +9,7 @@ MASTER_SITES=	https://gforge.inria.fr/frs/download.php/30620/
 DISTNAME=	Pharo-${DISTVERSION}-${SVNVERSION}
 EXTRACT_ONLY=	Pharo-${DISTVERSION}-${SVNVERSION}.zip
 
-MAINTAINER=	mutoh@openedu.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Pharo is Smalltalk-inspired environment
 
 LICENSE=	APACHE20 MIT

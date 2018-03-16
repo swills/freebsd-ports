@@ -1,8 +1,8 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-Message/Makefile 456928 2017-12-21 17:41:36Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-Message/Makefile 464521 2018-03-14 18:12:00Z sunpoet $
 
 PORTNAME=	HTTP-Message
-PORTVERSION=	6.14
+PORTVERSION=	6.15
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,10 +1,10 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/x11-toolkits/py-wxPython28/Makefile 458755 2018-01-11 16:53:44Z danfe $
+# $FreeBSD: head/x11-toolkits/py-wxPython28/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	wxPython
 PORTVERSION=	2.8.12.1
 DISTVERSIONPREFIX=	src-
-PORTREVISION?=	9
+PORTREVISION?=	10
 CATEGORIES=	x11-toolkits python
 MASTER_SITES=	SF/wxpython/wxPython/${PORTVERSION}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

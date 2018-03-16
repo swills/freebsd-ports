@@ -1,9 +1,8 @@
 # Created by: Boris Samorodov <bsam@FreeBSDD.org>
-# $FreeBSD: head/net-mgmt/blackbox_exporter/Makefile 461439 2018-02-10 22:13:30Z bsam $
+# $FreeBSD: head/net-mgmt/blackbox_exporter/Makefile 463983 2018-03-09 17:55:55Z bsam $
 
 PORTNAME=	blackbox_exporter
-PORTVERSION=	0.11.0
-PORTREVISION=	1
+PORTVERSION=	0.12.0
 DISTVERSIONPREFIX=v
 CATEGORIES=	net-mgmt
 
@@ -15,8 +14,13 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		go
 USE_GITHUB=	yes
-
 GH_ACCOUNT=	prometheus
+USE_RC_SUBR=    blackbox_exporter
+SUB_FILES=      pkg-message
+SUB_LIST=       GH_TAGNAME=${GH_TAGNAME}
+
+USERS=		prometheus
+GROUPS=		prometheus
 
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${PORTNAME}
 GO_TARGET=	github.com/${GH_ACCOUNT}/${PORTNAME}

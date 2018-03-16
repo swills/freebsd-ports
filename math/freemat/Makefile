@@ -1,10 +1,10 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/math/freemat/Makefile 461847 2018-02-14 23:24:13Z antoine $
+# $FreeBSD: head/math/freemat/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	FreeMat
 PORTVERSION=	4.2
 DISTVERSIONSUFFIX=	-Source
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	math science
 MASTER_SITES=	SF/freemat/FreeMat4
 

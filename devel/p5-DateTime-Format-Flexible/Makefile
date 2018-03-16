@@ -1,8 +1,8 @@
 # Created by: Cezary Morga <cm@therek.net>
-# $FreeBSD: head/devel/p5-DateTime-Format-Flexible/Makefile 462623 2018-02-22 19:50:17Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime-Format-Flexible/Makefile 464100 2018-03-10 23:00:15Z sunpoet $
 
 PORTNAME=	DateTime-Format-Flexible
-PORTVERSION=	0.29
+PORTVERSION=	0.30
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -19,7 +19,9 @@ BUILD_DEPENDS=	p5-DateTime>=0:devel/p5-DateTime \
 		p5-List-MoreUtils>=0:lang/p5-List-MoreUtils \
 		p5-Module-Pluggable>=0:devel/p5-Module-Pluggable
 RUN_DEPENDS:=	${BUILD_DEPENDS}
-TEST_DEPENDS=	p5-Test-MockTime>=0:devel/p5-Test-MockTime
+TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception \
+		p5-Test-MockTime>=0:devel/p5-Test-MockTime \
+		p5-Test-NoWarnings>=0:devel/p5-Test-NoWarnings
 
 NO_ARCH=	yes
 USE_PERL5=	configure

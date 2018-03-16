@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/multimedia/libdvbpsi/Makefile 425445 2016-11-05 20:10:46Z bapt $
+# $FreeBSD: head/multimedia/libdvbpsi/Makefile 464234 2018-03-12 08:33:11Z amdmi3 $
 
 PORTNAME=	libdvbpsi
 PORTVERSION=	1.3.0
@@ -14,7 +14,7 @@ LICENSE=	LGPL21
 OPTIONS_DEFINE=	DEBUG
 INSTALL_TARGET=	install-strip
 
-USES=	libtool pathfix tar:bzip2
+USES=		libtool pathfix tar:bzip2
 #CFLAGS=	-Wno-tautological-constant-out-of-range-compare
 
 GNU_CONFIGURE=	yes
@@ -25,7 +25,7 @@ USE_LDCONFIG=	yes
 post-patch:
 	@${REINPLACE_CMD} 's/-Werror //' ${WRKSRC}/configure
 
-regression-test:
+do-test:
 	@(cd ${WRKSRC}/misc && ./test_dr)
 
 .include <bsd.port.mk>

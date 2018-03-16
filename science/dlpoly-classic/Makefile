@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/dlpoly-classic/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/science/dlpoly-classic/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	dlpoly
 PORTVERSION=	1.8
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	science java
 MASTER_SITES=	http://ccpforge.cse.rl.ac.uk/gf/download/frsrelease/238/2028/
 PKGNAMESUFFIX=	classic

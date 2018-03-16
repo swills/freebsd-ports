@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/mod_memcache/Makefile 437091 2017-03-27 23:10:27Z rodrigo $
+# $FreeBSD: head/www/mod_memcache/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_memcache
 PORTVERSION=	0.1.0
@@ -13,7 +13,7 @@ COMMENT=	Apache 2.2.x module to manage apr_memcache connections
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 USE_GITHUB=	yes
 GH_ACCOUNT=	joshrotenberg
 GH_PROJECT=	modmemcache

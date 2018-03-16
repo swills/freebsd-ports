@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-agate/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-agate/Makefile 464564 2018-03-15 07:04:07Z matthew $
 
 PORTNAME=	agate
-PORTVERSION=	1.6.0
+PORTVERSION=	1.6.1
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

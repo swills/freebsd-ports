@@ -1,9 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/openspc/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/audio/openspc/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	openspc
 PORTVERSION=	0.3.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio
 MASTER_SITES=	http://membres.lycos.fr/pixels/ \
 		LOCAL/ehaupt

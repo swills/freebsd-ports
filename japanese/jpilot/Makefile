@@ -1,8 +1,9 @@
 # Created by: sumikawa
-# $FreeBSD: head/japanese/jpilot/Makefile 361849 2014-07-15 02:31:47Z vanilla $
+# $FreeBSD: head/japanese/jpilot/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 MASTERDIR=	${.CURDIR}/../../palm/jpilot
 
+PORTREVISION=	1
 CATEGORIES=	japanese
 
 MAINTAINER=	ports@FreeBSD.org

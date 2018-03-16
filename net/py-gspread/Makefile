@@ -1,9 +1,8 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/net/py-gspread/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/net/py-gspread/Makefile 464249 2018-03-12 13:20:56Z skreuzer $
 
 PORTNAME=	gspread
-PORTVERSION=	0.6.2
-PORTREVISION=	1
+PORTVERSION=	2.0.0
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

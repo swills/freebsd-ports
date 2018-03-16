@@ -1,10 +1,11 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-data.table/Makefile 440301 2017-05-07 05:21:28Z tota $
+# $FreeBSD: head/devel/R-cran-data.table/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	data.table
-PORTVERSION=	1.10.4
+DISTVERSION=	1.10.4-3
+PORTREVISION=	1
 CATEGORIES=	devel
-DISTNAME=	${PORTNAME}_${PORTVERSION}
+DISTNAME=	${PORTNAME}_${DISTVERSION}
 
 MAINTAINER=	tota@FreeBSD.org
 COMMENT=	Extension of Data.frame

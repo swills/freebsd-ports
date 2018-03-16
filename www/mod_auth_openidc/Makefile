@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/www/mod_auth_openidc/Makefile 459824 2018-01-24 09:41:04Z ak $
+# $FreeBSD: head/www/mod_auth_openidc/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_auth_openidc
 PORTVERSION=	2.3.3
@@ -18,8 +18,7 @@ LIB_DEPENDS=	libcjose.so:devel/cjose \
 		libjansson.so:devel/jansson \
 		libpcre.so:devel/pcre
 
-USES=		autoreconf cpe gmake libtool pkgconfig ssl
-USE_APACHE=	22+
+USES=		apache:2.2+ autoreconf cpe gmake libtool pkgconfig ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	pingidentity
 CPE_VENDOR=	${GH_ACCOUNT}

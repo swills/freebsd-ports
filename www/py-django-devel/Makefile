@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-django-devel/Makefile 458431 2018-01-08 15:47:40Z mat $
+# $FreeBSD: head/www/py-django-devel/Makefile 464416 2018-03-13 20:31:12Z sunpoet $
 
 PORTNAME=	django
 PORTVERSION=	${SNAPSHOTDATE}
@@ -13,6 +13,9 @@ MAINTAINER=	python@FreeBSD.org
 COMMENT=	High-level Python Web framework
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=	Outdated version. Use www/py-django instead
+EXPIRATION_DATE=2018-03-31
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${FLAVOR}
 

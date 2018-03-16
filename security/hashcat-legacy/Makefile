@@ -1,9 +1,9 @@
 # Created by: Nikolai Lifanov <lifanov@mail.lifanov.com>
-# $FreeBSD: head/security/hashcat-legacy/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/security/hashcat-legacy/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	hashcat-legacy
 PORTVERSION=	2.00
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	security
 
 MAINTAINER=	lifanov@FreeBSD.org

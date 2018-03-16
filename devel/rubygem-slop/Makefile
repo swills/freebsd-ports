@@ -1,8 +1,8 @@
 # Created by: Shin-ya MURAKAMI <murashin@gfd-dennou.org>
-# $FreeBSD: head/devel/rubygem-slop/Makefile 454726 2017-11-22 23:35:56Z sunpoet $
+# $FreeBSD: head/devel/rubygem-slop/Makefile 464418 2018-03-13 20:31:22Z sunpoet $
 
 PORTNAME=	slop
-PORTVERSION=	4.6.1
+PORTVERSION=	4.6.2
 CATEGORIES=	devel ruby
 MASTER_SITES=	RG
 

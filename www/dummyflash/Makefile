@@ -1,5 +1,5 @@
 # Created by: Daniel O'Connor <darius@dons.net.au>
-# $FreeBSD: head/www/dummyflash/Makefile 363374 2014-07-29 19:11:51Z adamw $
+# $FreeBSD: head/www/dummyflash/Makefile 464168 2018-03-11 13:01:48Z tobik $
 
 PORTNAME=	dummyflash
 PORTVERSION=	1.0
@@ -10,6 +10,9 @@ DISTNAME=	unix-sdk-3.0b5
 
 MAINTAINER=	darius@dons.net.au
 COMMENT=	Silently consume flash MIME types
+
+DEPRECATED=	Unused, unmaintained, and obsolete
+EXPIRATION_DATE=	2018-03-25
 
 USE_XORG=	x11
 BUILD_WRKSRC=	${WRKSRC}/PluginSDK30b5/examples/UnixTemplate/Unix

@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/devel/ahven/Makefile 461155 2018-02-07 16:33:45Z amdmi3 $
+# $FreeBSD: head/devel/ahven/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	ahven
 PORTVERSION=	2.6
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	http://www.ahven-framework.com/releases/
 

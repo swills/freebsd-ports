@@ -1,8 +1,8 @@
 # Created by: Jeremy Chadwick <freebsd@jdc.parodius.com>
-# $FreeBSD: head/sysutils/mcelog/Makefile 452039 2017-10-14 01:30:49Z ultima $
+# $FreeBSD: head/sysutils/mcelog/Makefile 464039 2018-03-10 00:48:02Z ultima $
 
 PORTNAME=	mcelog
-PORTVERSION=	154
+PORTVERSION=	156
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
@@ -11,14 +11,13 @@ COMMENT=	Collects and decodes Machine Check Exception data
 
 LICENSE=	GPLv2
 
-TEST_DEPENDS=	bash:shells/bash
-
-USE_GITHUB=	yes
-GH_ACCOUNT=	andikleen
-
 ONLY_FOR_ARCHS=		amd64 i386
 
+TEST_DEPENDS=	bash:shells/bash
+
 USES=		alias gmake shebangfix
+USE_GITHUB=	yes
+GH_ACCOUNT=	andikleen
 
 SHEBANG_FILES=	tests/cache/inject tests/memdb/inject tests/page/inject \
 		tests/pfa/inject tests/server/inject tests/socket/inject \

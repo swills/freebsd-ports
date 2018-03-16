@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/audio/linux-c7-flac/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/audio/linux-c7-flac/Makefile 464668 2018-03-16 09:41:38Z jhale $
 
 PORTNAME=	flac
 PORTVERSION=	1.3.0
@@ -11,7 +11,7 @@ LIB_DISTNAMES=	${LINUXNAME}-${DISTVERSIONFULL}
 MAINTAINER=	emulation@FreeBSD.org
 COMMENT=	Free lossless audio codec (Linux CentOS ${LINUX_DIST_VER})
 
-CONFLICT=	linux-c6-${PORTNAME}-[0-9]*
+CONFLICTS=	linux-c6-${PORTNAME}-[0-9]*
 
 DESCR=		${.CURDIR}/../${PORTNAME}/pkg-descr
 DOCSDIR=	${PREFIX}/usr/share/doc/${LINUXNAME}-${PORTVERSION}

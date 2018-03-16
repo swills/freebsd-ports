@@ -1,4 +1,4 @@
-# $FreeBSD: head/ports-mgmt/fastest_sites/Makefile 459259 2018-01-17 14:29:16Z tobik $
+# $FreeBSD: head/ports-mgmt/fastest_sites/Makefile 464165 2018-03-11 11:21:23Z rene $
 
 PORTNAME=	fastest_sites
 PORTVERSION=	20110317
@@ -7,7 +7,7 @@ CATEGORIES=	ports-mgmt
 MASTER_SITES=	http://www.semicomplete.com/files/fastest_sites/
 EXTRACT_SUFX=	.py
 
-MAINTAINER=	wxs@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Sort MASTER_SITE_* based upon TCP handshake times
 
 USES=		python shebangfix

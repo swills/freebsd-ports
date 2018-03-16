@@ -1,5 +1,5 @@
 # Created by: ubique
-# $FreeBSD: head/www/mod_tsa/Makefile 462849 2018-02-24 16:26:50Z joneum $
+# $FreeBSD: head/www/mod_tsa/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_tsa
 PORTVERSION=	1.0
@@ -20,8 +20,7 @@ CONFIGURE_ARGS=	--with-openssl-incdir=${OPENSSLINC} \
 				--with-apxs=${APXS}
 MAKE_ARGS+=	APXS=${APXS}
 
-USES=		ssl
-USE_APACHE=	22+
+USES=		apache:2.2+ ssl
 AP_EXTRAS+=	-DMOD_TSA_VERSION=\\\"mod_tsa/${PORTVERSION}\\\"
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes

@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-SparseM/Makefile 440044 2017-05-03 21:05:36Z tota $
+# $FreeBSD: head/math/R-cran-SparseM/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	SparseM
 PORTVERSION=	1.77
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

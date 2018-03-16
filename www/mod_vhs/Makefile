@@ -1,5 +1,5 @@
 # Created by: Xavier Beaudouin <kiwi@oav.net>
-# $FreeBSD: head/www/mod_vhs/Makefile 428143 2016-12-08 17:26:09Z tijl $
+# $FreeBSD: head/www/mod_vhs/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_vhs
 PORTVERSION=	1.1.0
@@ -15,9 +15,8 @@ LICENSE=	APACHE11
 
 MANUAL_PACKAGE_BUILD=	needs apr with LDAP and DBD options enabled
 
-USES=		php:mod,build cpe
+USES=		apache:2.2+ php:mod,build cpe
 CPE_VENDOR=	xavier_beaudouin
-USE_APACHE=	22+
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 SRC_FILE=	*.c

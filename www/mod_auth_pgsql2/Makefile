@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <sheepkiller@cultdeadsheep.org>
-# $FreeBSD: head/www/mod_auth_pgsql2/Makefile 366082 2014-08-25 14:58:09Z mat $
+# $FreeBSD: head/www/mod_auth_pgsql2/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_auth_pgsql
 PORTVERSION=	2.0.3
@@ -11,8 +11,7 @@ PKGNAMESUFFIX=	2
 MAINTAINER=	apache@FreeBSD.org
 COMMENT=	Allows users to use PostgreSQL databases for user authentication
 
-USES=		pgsql
-USE_APACHE=	22+
+USES=		apache:2.2+ pgsql
 
 AP_INC?=	${LOCALBASE}/include
 AP_LIB?=	${LOCALBASE}/lib -lpq

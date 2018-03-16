@@ -1,5 +1,5 @@
 # Created by: Dominic Marks <dom@wirespeed.org.uk>
-# $FreeBSD: head/mail/dspam/Makefile 447519 2017-08-07 21:44:00Z adamw $
+# $FreeBSD: head/mail/dspam/Makefile 464193 2018-03-11 18:36:16Z brnrd $
 
 # Note to committers: If don't commit a maintainer patch and as a result PKGNAME
 # or user variables (WITH*) changes please add an entry in ${FILESDIR}/UPDATING
@@ -397,7 +397,7 @@ CONFIGURE_ARGS+=	--with-dspam-mode=${DSPAM_MODE}
 .	if ${PORT_OPTIONS:MLIGHTTPD}
 RUN_DEPENDS+=	${LOCALBASE}/sbin/lighttpd:www/lighttpd
 .	else
-USE_APACHE_RUN=	22+
+USES+=		apache:2.2+
 .	endif
 LIB_DEPENDS+=	libgd.so:graphics/gd
 RUN_DEPENDS+=	p5-GD>=0:graphics/p5-GD

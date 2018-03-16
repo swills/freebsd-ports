@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/hextools/Makefile 365160 2014-08-17 08:25:51Z eadler $
+# $FreeBSD: head/sysutils/hextools/Makefile 464199 2018-03-11 19:46:36Z sunpoet $
 
 PORTNAME=	hextools
 PORTVERSION=	1.1
@@ -8,13 +8,18 @@ MASTER_SITES=	http://avl.enemy.org/utils/hextools/
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Useful tools for dealing with hex files
 
-NO_WRKSUBDIR=yes
+LICENSE=	HEXTOOLS
+LICENSE_NAME=	License of hextools
+LICENSE_FILE=	${WRKDIR}/LICENSE
+LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
+NO_WRKSUBDIR=	yes
 
 PLIST_FILES=	bin/hex2bin bin/bin2hex man/man1/bin2hex.1.gz man/man1/hex2bin.1.gz
 ALL_TARGET=	build
 
-#not strictly true - it uses a self-styled license
-#LICENSE=	BSD
+post-extract:
+	@${SED} -n '5,11p' ${WRKSRC}/hex2bin.c > ${WRKDIR}/LICENSE
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/hex2bin ${STAGEDIR}${PREFIX}/bin/hex2bin

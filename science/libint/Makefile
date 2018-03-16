@@ -1,10 +1,10 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/science/libint/Makefile 458985 2018-01-14 17:47:12Z tijl $
+# $FreeBSD: head/science/libint/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	libint
 DISTVERSIONPREFIX=	release-
 DISTVERSION=	1-1-6
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	science
 
 MAINTAINER=	ports@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Alexander Novitsky
-# $FreeBSD: head/net/py-smbpasswd/Makefile 432277 2017-01-23 18:51:38Z sunpoet $
+# $FreeBSD: head/net/py-smbpasswd/Makefile 464165 2018-03-11 11:21:23Z rene $
 
 PORTNAME=	smbpasswd
 PORTVERSION=	1.0.2
@@ -9,7 +9,7 @@ MASTER_SITES=	http://barryp.org/static/media/software/download/py-${PORTNAME}/${
 		CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	wxs@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SMB/CIFS password generation utility for Python
 
 LICENSE=	GPLv2

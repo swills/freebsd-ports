@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/R-cran-glmnet/Makefile 443845 2017-06-18 18:09:16Z dbn $
+# $FreeBSD: head/devel/R-cran-glmnet/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	glmnet
 DISTVERSION=	1.8-5
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

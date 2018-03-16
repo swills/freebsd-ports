@@ -1,8 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/devel/florist-gpl/Makefile 448302 2017-08-19 12:13:26Z vanilla $
+# $FreeBSD: head/devel/florist-gpl/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	florist-gpl
 PORTVERSION=	2017
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://downloads.dragonlace.net/src/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

@@ -1,8 +1,9 @@
 # Created by: Conrad Meyer <cem@FreeBSD.org>
-# $FreeBSD: head/devel/elfutils/Makefile 459106 2018-01-15 17:56:55Z danfe $
+# $FreeBSD: head/devel/elfutils/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	elfutils
 PORTVERSION=	0.170
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://sourceware.org/elfutils/ftp/${PORTVERSION}/
 

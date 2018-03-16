@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/security/libsparkcrypto/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/security/libsparkcrypto/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	libsparkcrypto
 PORTVERSION=	0.1.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	security
 MASTER_SITES=	http://senier.net/libsparkcrypto/
 

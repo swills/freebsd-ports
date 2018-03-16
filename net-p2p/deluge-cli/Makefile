@@ -1,9 +1,9 @@
-# $FreeBSD: head/net-p2p/deluge-cli/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-p2p/deluge-cli/Makefile 464430 2018-03-13 20:44:18Z rm $
 
 PORTNAME=	deluge
 DISTVERSIONPREFIX=	${PORTNAME}-
 DISTVERSION=	1.3.15
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net-p2p python
 PKGNAMESUFFIX=	-cli
 

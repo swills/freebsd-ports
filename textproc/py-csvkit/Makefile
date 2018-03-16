@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-csvkit/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-csvkit/Makefile 464566 2018-03-15 07:31:19Z matthew $
 
 PORTNAME=	csvkit
-PORTVERSION=	1.0.2
+PORTVERSION=	1.0.3
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/devel/adaid/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/devel/adaid/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	AdaID
 PORTVERSION=	0.0.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

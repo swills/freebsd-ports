@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@missouri.edu>
-# $FreeBSD: head/math/octave-forge-dataframe/Makefile 462979 2018-02-25 22:15:18Z stephen $
+# $FreeBSD: head/math/octave-forge-dataframe/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	octave-forge-dataframe
 PORTVERSION=	1.2.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org

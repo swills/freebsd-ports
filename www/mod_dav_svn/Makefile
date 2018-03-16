@@ -1,5 +1,5 @@
 # Created by: lev@FreeBSD.org
-# $FreeBSD: head/www/mod_dav_svn/Makefile 458088 2018-01-04 21:02:06Z lev $
+# $FreeBSD: head/www/mod_dav_svn/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_dav_svn
 DISTNAME=	subversion-${PORTVERSION}
@@ -18,7 +18,7 @@ PKGDIR=		${.CURDIR}
 
 SVN_BUILD_ADDONS=	yes
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 
 .include "${MASTERDIR}/Makefile.common"
 

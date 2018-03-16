@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/talloc/Makefile 462465 2018-02-20 23:17:49Z timur $
+# $FreeBSD: head/devel/talloc/Makefile 464139 2018-03-11 04:51:05Z linimon $
 
 PORTNAME=		talloc
 PORTVERSION=		2.1.11
@@ -77,11 +77,6 @@ PLIST_FILES+=		lib/libpytalloc-util.%%SAMBA4_PYTHON3_SO_ABI%%.so \
 			%%SAMBA4_PYTHON3_SITELIBDIR%%/talloc.%%SAMBA4_PYTHON3_SO_ABI%%.so \
 			%%PKGCONFIGDIR%%/pytalloc-util.%%SAMBA4_PYTHON3_SO_ABI%%.pc
 .endif
-.endif
-
-# https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=219455
-.if ${ARCH} == powerpc64 || ${ARCH} == powerpc
-.info EXTRA_PATCHES+=		${FILESDIR}/powerpc-patch-lib_replace_wscript
 .endif
 
 .include <bsd.port.pre.mk>

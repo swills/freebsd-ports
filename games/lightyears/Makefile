@@ -1,8 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/lightyears/Makefile 456395 2017-12-15 14:31:49Z amdmi3 $
+# $FreeBSD: head/games/lightyears/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	lightyears
 PORTVERSION=	1.4
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://www.jwhitham.org/20kly/
 

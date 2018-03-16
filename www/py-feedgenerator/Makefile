@@ -1,9 +1,8 @@
 # Created by: Julien Laffaye <jlaffaye@FreeBSD.org>
-# $FreeBSD: head/www/py-feedgenerator/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-feedgenerator/Makefile 464432 2018-03-13 21:08:16Z brnrd $
 
 PORTNAME=	feedgenerator
-PORTVERSION=	1.6
-PORTREVISION=	1
+PORTVERSION=	1.9
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

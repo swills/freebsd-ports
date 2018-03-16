@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/py-ipykernel/Makefile 462438 2018-02-20 20:26:57Z sunpoet $
+# $FreeBSD: head/devel/py-ipykernel/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	ipykernel
 PORTVERSION=	4.8.2
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/www/mod_fcgid/Makefile 404892 2015-12-31 01:18:29Z amdmi3 $
+# $FreeBSD: head/www/mod_fcgid/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_fcgid
 PORTVERSION=	2.3.9
@@ -13,8 +13,7 @@ COMMENT=	Alternative FastCGI module for Apache2
 
 LICENSE=	APACHE20
 
-USE_APACHE=	22+
-USES=		cpe
+USES=		apache:2.2+ cpe
 CPE_VENDOR=	apache
 
 HAS_CONFIGURE=		yes

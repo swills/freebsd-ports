@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/textproc/opentoken/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/textproc/opentoken/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	opentoken
 PORTVERSION=	6.0b
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	http://stephe-leake.org/ada/
 

@@ -1,9 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/lugaru/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/lugaru/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	lugaru
 PORTVERSION=	269
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	games
 MASTER_SITES=	https://bitbucket.org/oss${PORTNAME}/${PORTNAME}/downloads/
 DISTNAME=	${PORTNAME}-rev${DISTVERSION}-src

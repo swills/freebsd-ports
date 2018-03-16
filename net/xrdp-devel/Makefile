@@ -1,9 +1,10 @@
 # Created by: alepulver
-# $FreeBSD: head/net/xrdp-devel/Makefile 458649 2018-01-10 15:37:43Z pizzamig $
+# $FreeBSD: head/net/xrdp-devel/Makefile 463982 2018-03-09 17:49:19Z arved $
 
 PORTNAME=	xrdp
 PORTVERSION=	0.9.5
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	net
 PKGNAMESUFFIX=	-devel

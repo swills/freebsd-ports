@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/math/biggles/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/math/biggles/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	biggles
 PORTVERSION=	1.6.6
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	math
 MASTER_SITES=	SF
 DISTNAME=	python2-${PORTNAME}-${PORTVERSION}

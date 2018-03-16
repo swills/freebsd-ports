@@ -1,8 +1,9 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/deskutils/gxneur/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/deskutils/gxneur/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	gxneur
 PORTVERSION=	0.17.0
+PORTREVISION=	1
 DISTVERSIONSUFFIX=.orig
 CATEGORIES=	deskutils
 MASTER_SITES=	https://launchpad.net/~andrew-crew-kuznetsov/+archive/xneur-stable/+files/

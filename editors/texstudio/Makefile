@@ -1,8 +1,8 @@
-# $FreeBSD: head/editors/texstudio/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/editors/texstudio/Makefile 464159 2018-03-11 10:05:42Z tcberner $
 
 PORTNAME=	texstudio
 PORTVERSION=	2.11.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	editors
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/TeXstudio%20${PORTVERSION}
 
@@ -39,12 +39,12 @@ QMAKE_ARGS=	USE_SYSTEM_HUNSPELL=true USE_SYSTEM_QUAZIP=true
 TOOLKIT_DESC=	Qt toolkit
 QT4_USE=	${_USE_QT4:S/^/QT4=/}
 QT4_LIB_DEPENDS=libpoppler-qt4.so:graphics/poppler-qt4 \
-		libquazip.so:archivers/quazip
+		libquazip.so:archivers/quazip@qt4
 QT4_QMAKE_ON=	QUAZIP_INCLUDE="${LOCALBASE}/include/quazip" \
 		QUAZIP_LIB="-lquazip"
 QT5_USE=	${_USE_QT5:S/^/QT5=/}
 QT5_LIB_DEPENDS=libpoppler-qt5.so:graphics/poppler-qt5 \
-		libquazip5.so:archivers/quazip-qt5
+		libquazip5.so:archivers/quazip@qt5
 QT5_QMAKE_ON=	QUAZIP_INCLUDE="${LOCALBASE}/include/quazip5" \
 		QUAZIP_LIB="-lquazip5"
 

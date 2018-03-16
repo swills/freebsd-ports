@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/cx_Freeze/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/cx_Freeze/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	cx_Freeze
 PORTVERSION=	4.3.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel python
 MASTER_SITES=	SF/cx-freeze/${PORTVERSION}
 

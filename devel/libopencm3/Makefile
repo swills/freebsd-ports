@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/libopencm3/Makefile 459105 2018-01-15 17:47:48Z lev $
+# $FreeBSD: head/devel/libopencm3/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	libopencm3
 PORTVERSION=	0.0.20180108
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	lev@FreeBSD.org

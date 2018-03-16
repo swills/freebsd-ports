@@ -1,9 +1,9 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/mingw32-zlib/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/devel/mingw32-zlib/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	zlib
 PORTVERSION=	1.2.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel archivers
 MASTER_SITES=	http://zlib.net/ \
 		SF/libpng/${PORTNAME}/${PORTVERSION}

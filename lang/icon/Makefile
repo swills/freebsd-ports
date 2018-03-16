@@ -1,9 +1,9 @@
 # Created by: Thomas Gellekum <tg@FreeBSD.org>
-# $FreeBSD: head/lang/icon/Makefile 458513 2018-01-09 07:40:55Z mat $
+# $FreeBSD: head/lang/icon/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	icon
 PORTVERSION=	9.5.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	lang
 MASTER_SITES=	http://www.cs.arizona.edu/icon/ftp/packages/unix/
 DISTNAME=	${PORTNAME}-v${PORTVERSION:S/.//g}src

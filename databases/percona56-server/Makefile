@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/databases/percona56-server/Makefile 456486 2017-12-16 20:21:40Z flo $
+# $FreeBSD: head/databases/percona56-server/Makefile 464034 2018-03-09 22:15:52Z flo $
 
 PORTNAME?=	percona
-DISTVERSION=	5.6.38-83.0
+DISTVERSION=	5.6.39-83.1
 PORTREVISION?=	0
 CATEGORIES=	databases ipv6
 MASTER_SITES=	http://www.percona.com/downloads/Percona-Server-5.6/Percona-Server-${DISTVERSION}/source/tarball/

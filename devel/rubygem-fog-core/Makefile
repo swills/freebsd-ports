@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-fog-core/Makefile 458250 2018-01-06 13:50:16Z sunpoet $
+# $FreeBSD: head/devel/rubygem-fog-core/Makefile 464313 2018-03-12 21:16:48Z sunpoet $
 
 PORTNAME=	fog-core
-PORTVERSION=	2.0.0
+PORTVERSION=	2.1.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

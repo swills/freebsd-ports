@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/py-qt5-sql/Makefile 462214 2018-02-18 09:55:10Z rakuco $
+# $FreeBSD: head/databases/py-qt5-sql/Makefile 464266 2018-03-12 18:06:51Z tcberner $
 
 PORTNAME=	sql
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	databases devel python
 
 MAINTAINER=	kde@FreeBSD.org

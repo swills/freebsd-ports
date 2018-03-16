@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/devel/ada-util/Makefile 448903 2017-08-29 11:13:44Z amdmi3 $
+# $FreeBSD: head/devel/ada-util/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	ada-util
 PORTVERSION=	1.8.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 
 MAINTAINER=	ports@FreeBSD.org

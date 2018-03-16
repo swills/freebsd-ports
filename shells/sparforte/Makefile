@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/shells/sparforte/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/shells/sparforte/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	sparforte
 PORTVERSION=	2.0.2
-PORTREVISION=	2
+PORTREVISION=	3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	shells lang
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-trollius/Makefile 461421 2018-02-10 19:58:51Z sunpoet $
+# $FreeBSD: head/devel/py-trollius/Makefile 464248 2018-03-12 13:17:57Z skreuzer $
 
 PORTNAME=	trollius
-PORTVERSION=	2.0
+PORTVERSION=	2.2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

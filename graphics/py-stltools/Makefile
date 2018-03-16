@@ -1,9 +1,9 @@
 # Created by: R.F. Smith <rsmith@xs4all.nl>
-# $FreeBSD: head/graphics/py-stltools/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/py-stltools/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=		stltools
 PORTVERSION=		3.2
-PORTREVISION=		1
+PORTREVISION=		2
 CATEGORIES=		graphics python
 MASTER_SITES=		http://rsmith.home.xs4all.nl/files/
 PKGNAMEPREFIX=		${PYTHON_PKGNAMEPREFIX}

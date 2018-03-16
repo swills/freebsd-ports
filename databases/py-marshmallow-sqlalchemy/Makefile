@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/databases/py-marshmallow-sqlalchemy/Makefile 463834 2018-03-07 21:36:03Z feld $
+# $FreeBSD: head/databases/py-marshmallow-sqlalchemy/Makefile 464006 2018-03-09 20:45:11Z antoine $
 
 PORTNAME=	marshmallow-sqlalchemy
 PORTVERSION=	0.13.2
@@ -11,7 +11,7 @@ MAINTAINER=	feld@FreeBSD.org
 COMMENT=	SQLAlchemy integration with the marshmallow serialization library
 
 LICENSE=	BSD3CLAUSE
-LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}marshmallow>=2.0.0:devel/py-marshmallow@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sqlalchemy12>=1.2:databases/py-sqlalchemy12@${FLAVOR}

@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-jekyll-assets/Makefile 460408 2018-01-30 15:39:40Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-jekyll-assets/Makefile 464206 2018-03-11 20:31:26Z sunpoet $
 
 PORTNAME=	jekyll-assets
-PORTVERSION=	3.0.7
+PORTVERSION=	3.0.8
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

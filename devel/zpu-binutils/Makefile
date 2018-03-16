@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/zpu-binutils/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/devel/zpu-binutils/Makefile 464629 2018-03-15 20:25:40Z bdrewery $
 
 PORTNAME=	zpu-binutils
 PORTVERSION=	1.0
@@ -25,6 +25,6 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/build.sh
 
 do-build:
-	@cd ${WRKSRC} && ${SH} build.sh
+	@cd ${WRKSRC} && ${SETENV} CONFIG_SITE=${CONFIG_SITE} ${SH} build.sh
 
 .include <bsd.port.mk>

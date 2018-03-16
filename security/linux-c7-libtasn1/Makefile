@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/security/linux-c7-libtasn1/Makefile 452945 2017-10-26 19:23:18Z tijl $
+# $FreeBSD: head/security/linux-c7-libtasn1/Makefile 464668 2018-03-16 09:41:38Z jhale $
 
 PORTNAME=	libtasn1
 PORTVERSION=	4.10
@@ -10,7 +10,7 @@ COMMENT=	ASN.1 structure parser library (Linux CentOS ${LINUX_DIST_VER})
 
 LICENSE=	LGPL21+
 
-CONFLICT=	linux-c6-${PORTNAME}-[0-9]*
+CONFLICTS=	linux-c6-${PORTNAME}-[0-9]*
 
 DESCR=		${.CURDIR}/../${PORTNAME}/pkg-descr
 RPMVERSION=	1.el7

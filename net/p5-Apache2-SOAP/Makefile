@@ -1,5 +1,5 @@
 # Created by: Simun Mikecin <numisemis@yahoo.com>
-# $FreeBSD: head/net/p5-Apache2-SOAP/Makefile 428143 2016-12-08 17:26:09Z tijl $
+# $FreeBSD: head/net/p5-Apache2-SOAP/Makefile 464193 2018-03-11 18:36:16Z brnrd $
 
 PORTNAME=	Apache2-SOAP
 PORTVERSION=	0.73
@@ -15,8 +15,7 @@ BUILD_DEPENDS=	${APACHE_PKGNAMEPREFIX}mod_perl2>=0:www/mod_perl2 \
 		p5-SOAP-Lite>=0:net/p5-SOAP-Lite
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=		perl5
+USES=		apache:2.2+ perl5
 USE_PERL5=	configure
-USE_APACHE=	22+
 
 .include <bsd.port.mk>

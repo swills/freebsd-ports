@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-pkgconfig/Makefile 447591 2017-08-09 06:30:49Z tota $
+# $FreeBSD: head/devel/R-cran-pkgconfig/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	pkgconfig
 PORTVERSION=	2.0.1
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

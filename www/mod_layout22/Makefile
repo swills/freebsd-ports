@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <sheepkiller@cultdeadsheep.org>
-# $FreeBSD: head/www/mod_layout22/Makefile 394508 2015-08-17 14:20:40Z mat $
+# $FreeBSD: head/www/mod_layout22/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_layout
 PORTVERSION=	5.1
@@ -15,7 +15,7 @@ CONFLICTS=	mod_layout-3.* mod_layout-4.*
 
 PORTSCOUT=	limit:^5
 
-USE_APACHE=	22
+USES=		apache:2.2+
 
 MAKE_ARGS+=	builddir=${WRKSRC}
 

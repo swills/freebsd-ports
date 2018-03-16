@@ -1,8 +1,9 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/graphics/py-toyplot/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/graphics/py-toyplot/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	toyplot
 PORTVERSION=	0.15.1
+PORTREVISION=	1
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

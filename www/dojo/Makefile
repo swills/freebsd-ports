@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/dojo/Makefile 451098 2017-10-02 19:51:50Z wg $
+# $FreeBSD: head/www/dojo/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=		dojo
 PORTVERSION=		1.12.2
@@ -19,7 +19,7 @@ OPTIONS_SUB=		yes
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MAPACHE}
-USE_APACHE_RUN=		22+
+USES=			apache:run,2.2+
 CONFDIR=		${PREFIX}/${CONFDIR_REL}
 CONFDIR_REL=		${APACHEETCDIR}/Includes
 PLIST_SUB+=		CONFDIR=${CONFDIR_REL}

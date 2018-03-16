@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-ModelMetrics/Makefile 427908 2016-12-05 17:45:08Z tota $
+# $FreeBSD: head/devel/R-cran-ModelMetrics/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	ModelMetrics
 PORTVERSION=	1.1.0
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

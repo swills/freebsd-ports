@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/R-cran-gtable/Makefile 409657 2016-02-27 11:15:44Z tota $
+# $FreeBSD: head/math/R-cran-gtable/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	gtable
 PORTVERSION=	0.2.0
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

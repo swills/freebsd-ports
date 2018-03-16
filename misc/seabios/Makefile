@@ -1,8 +1,7 @@
-# $FreeBSD: head/misc/seabios/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/misc/seabios/Makefile 464155 2018-03-11 09:41:01Z tobik $
 
 PORTNAME=	seabios
-PORTVERSION=	1.10.2
-PORTREVISION=	1
+PORTVERSION=	1.11.0
 CATEGORIES=	misc
 MASTER_SITES=	http://code.coreboot.org/p/seabios/downloads/get/
 

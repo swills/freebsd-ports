@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/scamper/Makefile 448506 2017-08-22 02:11:39Z swills $
+# $FreeBSD: head/net/scamper/Makefile 463948 2018-03-09 09:23:18Z yuri $
 
 PORTNAME=	scamper
-PORTVERSION=	20170822
+DISTVERSION=	20180309
 CATEGORIES=	net ipv6
 MASTER_SITES=	http://www.caida.org/tools/measurement/scamper/code/
 DISTNAME=	${PORTNAME}-cvs-${PORTVERSION}

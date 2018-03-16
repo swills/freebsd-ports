@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/arduino18/Makefile 447518 2017-08-07 21:23:50Z bsam $
+# $FreeBSD: head/devel/arduino18/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	arduino
 PORTVERSION=	1.8.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel java
 PKGNAMESUFFIX=	18
 DIST_SUBDIR=	${PORTNAME}

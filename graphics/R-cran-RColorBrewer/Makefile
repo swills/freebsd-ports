@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/R-cran-RColorBrewer/Makefile 389330 2015-06-13 08:20:32Z tota $
+# $FreeBSD: head/graphics/R-cran-RColorBrewer/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	RColorBrewer
 DISTVERSION=	1.1-2
+PORTREVISION=	1
 CATEGORIES=	graphics
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

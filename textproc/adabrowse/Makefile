@@ -1,9 +1,9 @@
 # Created by: John Marino <draco@marino.st>
-# $FreeBSD: head/textproc/adabrowse/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/textproc/adabrowse/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	adabrowse
 PORTVERSION=	4.0.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	textproc
 MASTER_SITES=	http://home.datacomm.ch/t_wolf/tw/ada95/adabrowse/
 DISTNAME=	${PORTNAME}_${PORTVERSION}_src

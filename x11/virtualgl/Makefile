@@ -1,5 +1,5 @@
 # Created by: David Mackay <davidjx8p@gmail.com>
-# $FreeBSD: head/x11/virtualgl/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/x11/virtualgl/Makefile 464178 2018-03-11 15:17:17Z danfe $
 
 PORTNAME=	virtualgl
 PORTVERSION=	2.4.1
@@ -48,5 +48,9 @@ PLIST_SUB+=	AMD64="@comment "
 PLIST_SUB+=	I386="@comment "
 PLIST_SUB+=	AMD64=""
 .endif
+
+post-patch:
+	@${REINPLACE_CMD} -e '/^#define CHECKGL/s,m);, &,' \
+		${WRKSRC}/server/VirtualDrawable.cpp
 
 .include <bsd.port.post.mk>

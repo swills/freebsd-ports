@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/www/R-cran-Rook/Makefile 440413 2017-05-08 10:51:30Z tota $
+# $FreeBSD: head/www/R-cran-Rook/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	Rook
 DISTVERSION=	1.1-1
+PORTREVISION=	1
 CATEGORIES=	www
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

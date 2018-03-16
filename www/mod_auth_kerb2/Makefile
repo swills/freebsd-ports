@@ -1,5 +1,5 @@
 # Created by: wollman
-# $FreeBSD: head/www/mod_auth_kerb2/Makefile 438183 2017-04-10 15:49:56Z amdmi3 $
+# $FreeBSD: head/www/mod_auth_kerb2/Makefile 464194 2018-03-11 18:50:33Z brnrd $
 
 PORTNAME=	mod_auth_kerb
 PORTVERSION=	5.4
@@ -19,7 +19,7 @@ LICENSE_FILE_BSD3CLAUSE=	${WRKSRC}/LICENSE
 
 PORTSCOUT=	limit:^5.4
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	-with-krb5=${GSSAPIBASEDIR} --without-krb4
 

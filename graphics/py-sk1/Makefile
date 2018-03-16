@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/py-sk1/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/graphics/py-sk1/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	sk1
 DISTVERSION=	g20171127
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

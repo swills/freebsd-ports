@@ -1,9 +1,9 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/elasticsearch6/Makefile 463424 2018-03-02 18:13:01Z feld $
+# $FreeBSD: head/textproc/elasticsearch6/Makefile 464526 2018-03-14 19:17:59Z feld $
 
 PORTNAME=	elasticsearch
 PORTVERSION=	6.2.2
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	textproc java devel
 MASTER_SITES=	https://artifacts.elastic.co/downloads/${PORTNAME}/ \
 		http://mirrors.rit.edu/zi/
@@ -73,7 +73,7 @@ do-install:
 	(cd ${WRKSRC}/modules && ${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/lib/elasticsearch/modules/)
 	${MKDIR} ${STAGEDIR}${PREFIX}/lib/elasticsearch/plugins
 	${MKDIR} ${STAGEDIR}${PREFIX}/libexec/elasticsearch
-	${INSTALL} -lrs ${STAGEDIR}${PREFIX}/lib/elasticsearch/bin/elasticsearch-plugin ${STAGEDIR}${PREFIX}/bin/elasticsearch-plugin
+	${INSTALL} -lrs ${STAGEDIR}${ETCDIR} ${STAGEDIR}${PREFIX}/lib/elasticsearch/config
 	${LN} -s ${JAVASHAREDIR}/classes/jna.jar ${STAGEDIR}${PREFIX}/lib/elasticsearch/lib/jna.jar
 
 do-install-DOCS-on:
@@ -86,7 +86,6 @@ post-install:
 	${ECHO} "@sample ${ETCDIR}/elasticsearch.yml.sample" >> ${TMPPLIST}
 	${ECHO} "@sample ${ETCDIR}/log4j2.properties.sample" >> ${TMPPLIST}
 	${ECHO} "@sample ${ETCDIR}/jvm.options.sample" >> ${TMPPLIST}
-	${ECHO} "bin/elasticsearch-plugin" >> ${TMPPLIST}
 	${FIND} -s ${STAGEDIR}${PREFIX}/lib/elasticsearch -not -type d | ${SORT} | \
 		${SED} -e 's#^${STAGEDIR}${PREFIX}/##' >> ${TMPPLIST}
 	${ECHO} "@dir lib/elasticsearch/plugins" >> ${TMPPLIST}

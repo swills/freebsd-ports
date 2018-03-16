@@ -1,10 +1,12 @@
 # Created by: Pierre David <pdagog@gmail.com>, Jean Benoit <jean@unistra.fr>
-# $FreeBSD: head/net-mgmt/netmagis-topo/Makefile 427552 2016-12-02 11:58:21Z mat $
+# $FreeBSD: head/net-mgmt/netmagis-topo/Makefile 464190 2018-03-11 17:53:51Z riggs $
 
 PORTNAME=	netmagis
 PKGNAMESUFFIX=	-topo
 
 COMMENT=	Netmagis topology module
+
+LICENSE=	CECILL-B
 
 RUN_DEPENDS=	netmagis-config:net-mgmt/netmagis-common \
 		rancid-run:net-mgmt/rancid3 \

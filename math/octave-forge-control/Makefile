@@ -1,9 +1,8 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-control/Makefile 462867 2018-02-24 22:03:00Z stephen $
+# $FreeBSD: head/math/octave-forge-control/Makefile 464202 2018-03-11 20:05:09Z stephen $
 
 PORTNAME=	octave-forge-control
-PORTVERSION=	3.0.0
-PORTREVISION=	5
+PORTVERSION=	3.1.0
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org
@@ -14,7 +13,7 @@ LICENSE_FILE=	${WRKDIR}/${OCTSRC}/COPYING
 
 # OCTSRC is the name of the directory of the package.
 # It is usually ${OCTAVE_PKGNAME} or ${DISTNAME}.
-OCTSRC=		${OCTAVE_PKGNAME}
+OCTSRC=		${DISTNAME}
 
 WRKSRC=		${WRKDIR}/${OCTSRC}/src
 

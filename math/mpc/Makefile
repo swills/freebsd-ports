@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/mpc/Makefile 460170 2018-01-28 13:01:03Z gerald $
+# $FreeBSD: head/math/mpc/Makefile 464079 2018-03-10 17:24:34Z gerald $
 
 PORTNAME=	mpc
-PORTVERSION=	1.0.3
+PORTVERSION=	1.1.0
 CATEGORIES=	math devel
 MASTER_SITES=	GNU
 
@@ -21,7 +21,7 @@ USE_LDCONFIG=	yes
 
 INFO=		mpc
 PLIST_FILES=	include/mpc.h \
-		lib/libmpc.a lib/libmpc.so lib/libmpc.so.3 lib/libmpc.so.3.0.0
+		lib/libmpc.a lib/libmpc.so lib/libmpc.so.3 lib/libmpc.so.3.1.0
 
 regression-test: build
 	@(cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_CMD} check)

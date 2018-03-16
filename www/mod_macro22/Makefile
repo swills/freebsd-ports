@@ -1,5 +1,5 @@
 # Created by: Lukasz Wasikowski <lukasz@wasikowski.net>
-# $FreeBSD: head/www/mod_macro22/Makefile 394508 2015-08-17 14:20:40Z mat $
+# $FreeBSD: head/www/mod_macro22/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_macro
 PORTVERSION=	1.1.11
@@ -18,7 +18,7 @@ OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.options.mk>
 
-USE_APACHE=	22
+USES=		apache:2.2
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 PORTDOCS=	${PORTNAME}.html

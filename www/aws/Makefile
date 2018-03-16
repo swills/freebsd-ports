@@ -1,8 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/www/aws/Makefile 460619 2018-02-01 17:29:09Z amdmi3 $
+# $FreeBSD: head/www/aws/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	aws
 PORTVERSION=	17.1
+PORTREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	ports@FreeBSD.org

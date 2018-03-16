@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/flashplayer/Makefile 456176 2017-12-12 17:29:34Z jkim $
+# $FreeBSD: head/www/flashplayer/Makefile 464395 2018-03-13 17:24:28Z jkim $
 
 PORTNAME=	flashplayer
-PORTVERSION=	28.0
+PORTVERSION=	29.0
 CATEGORIES=	www multimedia
 DISTFILES=
 

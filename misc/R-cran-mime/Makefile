@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/misc/R-cran-mime/Makefile 418862 2016-07-21 04:14:10Z tota $
+# $FreeBSD: head/misc/R-cran-mime/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	mime
 PORTVERSION=	0.5
+PORTREVISION=	1
 CATEGORIES=	misc
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

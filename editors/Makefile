@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/editors/Makefile 464660 2018-03-16 08:06:21Z yuri $
 #
 
     COMMENT = Editors
@@ -197,6 +197,7 @@
     SUBDIR += ne
     SUBDIR += nedit
     SUBDIR += neovim
+    SUBDIR += neovim-qt
     SUBDIR += nvi-devel
     SUBDIR += nvi-m17n
     SUBDIR += omegaT

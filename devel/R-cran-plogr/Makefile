@@ -1,8 +1,9 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-plogr/Makefile 443549 2017-06-14 01:34:17Z wen $
+# $FreeBSD: head/devel/R-cran-plogr/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	plogr
 DISTVERSION=	0.1-1
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

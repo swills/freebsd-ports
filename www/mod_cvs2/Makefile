@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <clement@FreeBSD.org>
-# $FreeBSD: head/www/mod_cvs2/Makefile 449446 2017-09-08 09:01:47Z amdmi3 $
+# $FreeBSD: head/www/mod_cvs2/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_cvs
 PORTVERSION=	0.5.91
@@ -16,7 +16,7 @@ LICENSE_NAME=	Academic Free License 1.2
 LICENSE_FILE=	${WRKSRC}/LICENSE.AFL
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 

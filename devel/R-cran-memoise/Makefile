@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-memoise/Makefile 440294 2017-05-06 22:54:10Z tota $
+# $FreeBSD: head/devel/R-cran-memoise/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	memoise
 PORTVERSION=	1.1.0
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

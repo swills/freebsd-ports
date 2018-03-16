@@ -1,9 +1,9 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gtkada/Makefile 442784 2017-06-06 16:38:00Z mat $
+# $FreeBSD: head/x11-toolkits/gtkada/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	gtkada
 PORTVERSION=	2.24.4.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://downloads.dragonlace.net/src/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \

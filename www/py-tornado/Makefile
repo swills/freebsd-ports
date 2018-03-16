@@ -1,8 +1,8 @@
 # Created by: Guixing Bai <khsing.cn@gmail.com>
-# $FreeBSD: head/www/py-tornado/Makefile 460015 2018-01-26 17:47:07Z gblach $
+# $FreeBSD: head/www/py-tornado/Makefile 464389 2018-03-13 16:52:53Z gblach $
 
 PORTNAME=	tornado
-PORTVERSION=	4.5.3
+PORTVERSION=	5.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,14 +12,15 @@ COMMENT=	Python Web Server from FriendFeed
 
 LICENSE=	APACHE20
 
+CONFLICTS=	py[0-9]*-tornado4-*
+
 USES=		python
 USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3400
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}singledispatch>0:devel/py-singledispatch@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}certifi>0:security/py-certifi@${FLAVOR}
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}singledispatch>0:devel/py-singledispatch@${FLAVOR}
 .endif
 
 .if ${PYTHON_REL} < 3500

@@ -1,9 +1,9 @@
 # Created by: Pedro Giffuni <giffunip@asme.org>
-# $FreeBSD: head/cad/tochnog/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/cad/tochnog/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	tochnog
 PORTVERSION=	20140100
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	cad
 MASTER_SITES=	SF/${PORTNAME}/Tochnog%20Latest%20January%202014
 DISTFILES=	Sources${EXTRACT_SUFX} gid${EXTRACT_SUFX} \

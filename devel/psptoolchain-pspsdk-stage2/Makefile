@@ -1,7 +1,7 @@
 # Created by: Tassilo Philipp <tphilipp@potion-studios.com>
-# $FreeBSD: head/devel/psptoolchain-pspsdk-stage2/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/psptoolchain-pspsdk-stage2/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
-PORTREVISION=		1
+PORTREVISION=		2
 
 PKGNAMESUFFIX=		-stage2
 

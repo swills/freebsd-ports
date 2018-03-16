@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: head/Mk/Scripts/functions.sh 463460 2018-03-03 01:18:50Z bdrewery $
+# $FreeBSD: head/Mk/Scripts/functions.sh 464435 2018-03-13 21:43:28Z bdrewery $
 # This file for common functions used for port scripts.
 #
 # MAINTAINER: portmgr@FreeBSD.org
@@ -168,7 +168,7 @@ export_ports_env() {
 
 	validate_env MAKE PORTSDIR
 
-	uses="python compiler:features"
+	uses="python compiler:features objc"
 
 	make_env="\
 		_PORTS_ENV_CHECK=1 \

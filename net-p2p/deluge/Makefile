@@ -1,7 +1,8 @@
-# $FreeBSD: head/net-p2p/deluge/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-p2p/deluge/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	deluge
 PORTVERSION=	1.3.15
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	net-p2p python
 

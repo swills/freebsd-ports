@@ -1,5 +1,5 @@
 # Created by: David O'Brien (obrien@cs.ucdavis.edu)
-# $FreeBSD: head/misc/figlet/Makefile 389302 2015-06-12 21:17:43Z erwin $
+# $FreeBSD: head/misc/figlet/Makefile 463942 2018-03-09 08:33:09Z amdmi3 $
 
 PORTNAME=	figlet
 PORTVERSION=	2.2.5
@@ -15,25 +15,22 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 MAKE_ENV=	datadir=${DATADIR} prefix=${PREFIX}
 MAKE_ARGS=	LD=${CC}
+TEST_TARGET=	check
 
 OPTIONS_DEFINE=	DOCS
 
-regression-test:
-	@ cd ${WRKSRC} && ${MAKE} check
-
-post-build tests test: regression-test
-
 do-install:
-	@ ${MKDIR} ${STAGEDIR}${DATADIR}
-	@ ${INSTALL_PROGRAM} ${WRKSRC}/figlet ${STAGEDIR}${PREFIX}/bin
-	@ ${INSTALL_PROGRAM} ${WRKSRC}/chkfont ${STAGEDIR}${PREFIX}/bin
-	@ ${INSTALL_SCRIPT} ${WRKSRC}/figlist ${STAGEDIR}${PREFIX}/bin
-	@ ${INSTALL_SCRIPT} ${WRKSRC}/showfigfonts ${STAGEDIR}${PREFIX}/bin
-	@ ${INSTALL_DATA} ${WRKSRC}/fonts/*.flf ${STAGEDIR}${DATADIR}
-	@ ${INSTALL_DATA} ${WRKSRC}/fonts/*.flc ${STAGEDIR}${DATADIR}
-	@ cd ${WRKSRC} && ${INSTALL_MAN} *.6 ${STAGEDIR}${PREFIX}/man/man6
+	@${MKDIR} ${STAGEDIR}${DATADIR}
+	${INSTALL_PROGRAM} ${WRKSRC}/figlet ${STAGEDIR}${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/chkfont ${STAGEDIR}${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/figlist ${STAGEDIR}${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/showfigfonts ${STAGEDIR}${PREFIX}/bin
+	${INSTALL_DATA} ${WRKSRC}/fonts/*.flf ${STAGEDIR}${DATADIR}
+	${INSTALL_DATA} ${WRKSRC}/fonts/*.flc ${STAGEDIR}${DATADIR}
+	${INSTALL_MAN} ${WRKSRC}/*.6 ${STAGEDIR}${MANPREFIX}/man/man6
 
-	@ ${MKDIR} ${STAGEDIR}${DOCSDIR}
-	@ ${INSTALL_DATA} ${WRKSRC}/figfont.txt ${STAGEDIR}${DOCSDIR}
+do-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/figfont.txt ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

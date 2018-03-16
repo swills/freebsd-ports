@@ -1,8 +1,9 @@
 # Created by: Nicola Vitale <nivit@email.it>
-# $FreeBSD: head/japanese/kana-no-quiz/Makefile 458755 2018-01-11 16:53:44Z danfe $
+# $FreeBSD: head/japanese/kana-no-quiz/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	kana-no-quiz
 DISTVERSION=	1.9.5
+PORTREVISION=	1
 CATEGORIES=	japanese
 MASTER_SITES=	SF/${PORTNAME}/Program%20releases/version%20${DISTVERSION}
 DISTNAME=	Kana_no_quiz-${DISTVERSION}

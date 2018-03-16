@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-units/Makefile 449307 2017-09-05 17:22:11Z tota $
+# $FreeBSD: head/math/R-cran-units/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	units
 DISTVERSION=	0.4-6
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

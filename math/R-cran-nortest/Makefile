@@ -1,8 +1,9 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/R-cran-nortest/Makefile 422961 2016-09-30 07:08:56Z wen $
+# $FreeBSD: head/math/R-cran-nortest/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	nortest
 DISTVERSION=	1.0-4
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

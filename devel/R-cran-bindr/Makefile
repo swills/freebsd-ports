@@ -1,8 +1,9 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-bindr/Makefile 443498 2017-06-13 10:44:52Z wen $
+# $FreeBSD: head/devel/R-cran-bindr/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	bindr
 PORTVERSION=	0.1
+PORTREVISION=	1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

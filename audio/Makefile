@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 463444 2018-03-02 19:10:48Z rene $
+# $FreeBSD: head/audio/Makefile 464131 2018-03-10 23:22:45Z yuri $
 #
 
     COMMENT = Audio tools
@@ -222,6 +222,7 @@
     SUBDIR += gmpc-mserver
     SUBDIR += gmpc-shout
     SUBDIR += gmpc-wikipedia
+    SUBDIR += gmsynth-lv2
     SUBDIR += gmtp
     SUBDIR += gmusicbrowser
     SUBDIR += gnaural

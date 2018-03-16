@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/games/pyawale/Makefile 456050 2017-12-11 16:54:20Z antoine $
+# $FreeBSD: head/games/pyawale/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	pyawale
 PORTVERSION=	0.4.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	games python
 MASTER_SITES=	http://download.gna.org/pyawale/
 

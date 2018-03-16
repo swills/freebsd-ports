@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/sverchok-blender/Makefile 460225 2018-01-28 17:33:40Z yuri $
+# $FreeBSD: head/graphics/sverchok-blender/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	sverchok
 DISTVERSION=	0.5.9.6.2-452
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-g4ec06b63
 CATEGORIES=	graphics
 PKGNAMESUFFIX=	-blender

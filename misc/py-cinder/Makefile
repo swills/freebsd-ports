@@ -1,8 +1,9 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/misc/py-cinder/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/misc/py-cinder/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	cinder
 PORTVERSION=	9.1.1
+PORTREVISION=	1
 CATEGORIES=	misc python
 MASTER_SITES=	https://fossies.org/linux/misc/openstack/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,9 @@
 # Created by: Mark R V Murray <markm@FreeBSD.org>
-# $FreeBSD: head/math/jacal/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/jacal/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	jacal
 PORTVERSION=	1c4
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	http://groups.csail.mit.edu/mac/ftpdir/scm/
 

@@ -1,13 +1,10 @@
 # Created by: Randall Hopper <aa8vb@nc.rr.com>
-# $FreeBSD: head/graphics/osg/Makefile 459451 2018-01-19 17:04:52Z mat $
+# $FreeBSD: head/graphics/osg/Makefile 464404 2018-03-13 20:09:21Z amdmi3 $
 
 PORTNAME=	osg
-PORTVERSION=	3.4.0
-PORTREVISION=	4
+PORTVERSION=	3.4.1
+DISTVERSIONPREFIX=	OpenSceneGraph-
 CATEGORIES=	graphics
-MASTER_SITES=	http://trac.openscenegraph.org/downloads/developer_releases/ \
-		http://mirror.amdmi3.ru/distfiles/
-DISTNAME=	OpenSceneGraph-${PORTVERSION}
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	C++ OpenGL scene graph library for real-time rendering
@@ -20,15 +17,19 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libtiff.so:graphics/tiff
 
+USE_GITHUB=	yes
+GH_ACCOUNT=	openscenegraph
+GH_PROJECT=	OpenSceneGraph
+
 CONFLICTS=	osg-devel-[0-9]*
 
-USES=		alias cmake:outsource jpeg pkgconfig zip
+USES=		alias cmake:outsource jpeg pkgconfig
 USE_GL=		gl glu
 USE_XORG=	x11
 USE_LDCONFIG=	yes
 
 PLIST_SUB=	OSG_VERSION=${PORTVERSION} \
-		OSG_SHLIBVER=130 \
+		OSG_SHLIBVER=131 \
 		OPENTHREADS_VERSION=3.3.0 \
 		OPENTHREADS_SHLIBVER=20
 

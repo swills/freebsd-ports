@@ -1,5 +1,5 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/www/mod_amazon_proxy/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/mod_amazon_proxy/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_amazon_proxy
 PORTVERSION=	20100913
@@ -12,7 +12,7 @@ COMMENT=	Amazon Auth Proxy for Product Advertising API
 
 LIB_DEPENDS=	libapreq2.so:www/libapreq2
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 AP_FAST_BUILD=	yes
 AP_LIB=	${LOCALBASE}/lib -lcrypto
 

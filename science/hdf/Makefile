@@ -1,9 +1,9 @@
 # Created by: mi
-# $FreeBSD: head/science/hdf/Makefile 455170 2017-11-30 06:43:49Z linimon $
+# $FreeBSD: head/science/hdf/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	hdf
 PORTVERSION=	4.2.11
-PORTREVISION=	3
+PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	science archivers graphics
 MASTER_SITES=	http://www.hdfgroup.org/ftp/HDF/releases/HDF${PORTVERSION}/src/ \

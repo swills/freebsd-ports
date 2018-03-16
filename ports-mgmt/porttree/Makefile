@@ -1,9 +1,9 @@
 # Created by: Vladimir Chukharev
-# $FreeBSD: head/ports-mgmt/porttree/Makefile 455392 2017-12-03 08:25:31Z antoine $
+# $FreeBSD: head/ports-mgmt/porttree/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	porttree
 PORTVERSION=	0.3.r${SVN_REV}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	ports-mgmt python
 MASTER_SITES=	SF/${PORTNAME}
 

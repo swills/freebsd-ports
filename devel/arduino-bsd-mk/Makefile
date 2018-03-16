@@ -1,8 +1,9 @@
 # Created by: Craig Leres <leres@FreeBSD.org>
-# $FreeBSD: head/devel/arduino-bsd-mk/Makefile 463031 2018-02-26 17:19:16Z leres $
+# $FreeBSD: head/devel/arduino-bsd-mk/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	arduino-bsd-mk
 PORTVERSION=	1.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://xse.com/leres/arduino/arduino-bsd-mk/ \
 		LOCAL/leres/arduino-bsd-mk

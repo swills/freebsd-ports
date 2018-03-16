@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/www/mod_uid/Makefile 462849 2018-02-24 16:26:50Z joneum $
+# $FreeBSD: head/www/mod_uid/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_uid
 PORTVERSION=	1.1.0
@@ -11,7 +11,7 @@ COMMENT=	Apache module issuing the "correct" cookies for counting the site visit
 
 LICENSE=	APACHE20
 
-USE_APACHE=	22
+USES=		apache:2.2
 AP_FAST_BUILD=	yes
 AP_GENPLIST=	yes
 MODULENAME=	mod_uid2

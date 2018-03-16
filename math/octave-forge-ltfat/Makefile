@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@FreeBSD.org>
-# $FreeBSD: head/math/octave-forge-ltfat/Makefile 462867 2018-02-24 22:03:00Z stephen $
+# $FreeBSD: head/math/octave-forge-ltfat/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	octave-forge-ltfat
 PORTVERSION=	2.1.2
-PORTREVISION=	4
+PORTREVISION=	5
 PORTEPOCH=	1
 CATEGORIES=	math
 

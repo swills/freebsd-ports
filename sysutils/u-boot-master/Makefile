@@ -1,11 +1,11 @@
-# $FreeBSD: head/sysutils/u-boot-master/Makefile 456951 2017-12-22 02:11:44Z linimon $
+# $FreeBSD: head/sysutils/u-boot-master/Makefile 464084 2018-03-10 17:46:04Z gerald $
 #
 # Common infrastructure for u-boot ports
 #
 
 PORTNAME=	u-boot
 PORTVERSION=	${UBOOT_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	ports-v
 CATEGORIES=	sysutils
 PKGNAMESUFFIX?=	-${MODEL}

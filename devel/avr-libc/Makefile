@@ -1,9 +1,9 @@
 # Created by: Joerg Wunsch <joerg@FreeBSD.org>
-# $FreeBSD: head/devel/avr-libc/Makefile 436507 2017-03-19 17:19:55Z antoine $
+# $FreeBSD: head/devel/avr-libc/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	avr-libc
 PORTVERSION=	2.0.0
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	SAVANNAH

@@ -1,8 +1,8 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/x11-toolkits/py-qt4-gui/Makefile 462214 2018-02-18 09:55:10Z rakuco $
+# $FreeBSD: head/x11-toolkits/py-qt4-gui/Makefile 464266 2018-03-12 18:06:51Z tcberner $
 
 PORTNAME=	gui
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	x11-toolkits devel python
 

@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/teeworlds/Makefile 456767 2017-12-19 20:21:49Z amdmi3 $
+# $FreeBSD: head/games/teeworlds/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	teeworlds
 PORTVERSION=	0.6.4
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	games
 MASTER_SITES=	https://downloads.teeworlds.com/ \
 		http://mirror.amdmi3.ru/distfiles/

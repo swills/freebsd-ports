@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/acpica-tools/Makefile 461323 2018-02-09 18:11:52Z jkim $
+# $FreeBSD: head/sysutils/acpica-tools/Makefile 464464 2018-03-14 07:06:01Z jkim $
 
 PORTNAME=	acpica
-PORTVERSION=	20180209
+PORTVERSION=	20180313
 CATEGORIES=	sysutils devel
 MASTER_SITES=	https://acpica.org/sites/acpica/files/ \
 		LOCAL/jkim

@@ -1,9 +1,9 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/math/py-theano/Makefile 462993 2018-02-26 07:04:28Z yuri $
+# $FreeBSD: head/math/py-theano/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	theano
 PORTVERSION=	0.9.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP/source/T/Theano
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

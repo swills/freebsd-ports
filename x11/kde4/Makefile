@@ -1,9 +1,9 @@
 # Created by: Will Andrews <will@FreeBSD.org>
-# $FreeBSD: head/x11/kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/x11/kde4/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	kde
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11 kde
 
 MAINTAINER=	kde@FreeBSD.org

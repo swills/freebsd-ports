@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/bisoncpp/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/bisoncpp/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	bisoncpp
 PORTVERSION=	4.10.01
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}/bisonc%2B%2B/${PORTVERSION}
 DISTNAME=	bisonc++_${PORTVERSION}.orig

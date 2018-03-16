@@ -1,8 +1,9 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-assertthat/Makefile 439267 2017-04-24 08:25:06Z wen $
+# $FreeBSD: head/math/R-cran-assertthat/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	assertthat
 DISTVERSION=	0.2.0
+PORTREVISION=	1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

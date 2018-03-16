@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/games/trigger-rally/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/games/trigger-rally/Makefile 464132 2018-03-10 23:35:03Z linimon $
 
 PORTNAME=	trigger-rally
 PORTVERSION=	0.6.5
@@ -14,11 +14,6 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libphysfs.so:devel/physfs
 LIB_DEPENDS+=	libalut.so:audio/freealut
-
-#BROKEN_aarch64=		fails to compile: error: the clang compiler does not support -march=native
-#BROKEN_armv6=		fails to compile: error: the clang compiler does not support -march=native
-#BROKEN_armv7=		fails to compile: error: the clang compiler does not support -march=native
-#BROKEN_powerpc64=	fails to compile: error: the clang compiler does not support -march=native
 
 WRKSRC_SUBDIR=	src
 USES=		gmake openal:al,alut

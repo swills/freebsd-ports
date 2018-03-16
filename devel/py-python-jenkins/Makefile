@@ -1,8 +1,8 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/devel/py-python-jenkins/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-python-jenkins/Makefile 464140 2018-03-11 04:56:43Z lwhsu $
 
 PORTNAME=	python-jenkins
-PORTVERSION=	0.4.15
+PORTVERSION=	0.4.16
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Oyvind Albrigtsen
-# $FreeBSD: head/x11-themes/fvwm-themes/Makefile 413746 2016-04-21 16:43:14Z swills $
+# $FreeBSD: head/x11-themes/fvwm-themes/Makefile 463977 2018-03-09 16:55:37Z linimon $
 
 PORTNAME=	fvwm-themes
 PORTVERSION=	0.7.0
@@ -15,14 +15,12 @@ COMMENT=	Themes for the Fvwm2 window manager
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_powerpc64=	Does not build
-
 BUILD_DEPENDS=	gm4:devel/m4 \
 		fvwm2:x11-wm/fvwm2
 RUN_DEPENDS=	fvwm2:x11-wm/fvwm2
 
-USE_XORG=	xpm
 USES=		gmake perl5 shebangfix tar:bzip2
+USE_XORG=	xpm
 SHEBANG_FILES=	themes/cde/modules/create-buttonbar-config \
 		themes/redmondxp/modules/FvwmThemesPanelManager
 GNU_CONFIGURE=	yes

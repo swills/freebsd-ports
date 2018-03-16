@@ -1,5 +1,5 @@
 # Created by: Michael Ranner <mranner@inode.at>
-# $FreeBSD: head/www/formication/Makefile 375116 2014-12-20 19:54:05Z bapt $
+# $FreeBSD: head/www/formication/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	formication
 PORTVERSION=	1.0.b1
@@ -11,8 +11,7 @@ MASTER_SITES=	http://www.ranner.eu/stuff/ \
 MAINTAINER=	michael@ranner.eu
 COMMENT=	Formular processing tool written in perl
 
-USES=		perl5
-USE_APACHE_RUN=	22+
+USES=		apache:run,2.2+ perl5
 USE_PERL5=	run
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}

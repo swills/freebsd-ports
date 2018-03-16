@@ -1,9 +1,9 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/math/py-bottleneck/Makefile 462922 2018-02-25 05:33:28Z sunpoet $
+# $FreeBSD: head/math/py-bottleneck/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	bottleneck
 PORTVERSION=	1.2.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

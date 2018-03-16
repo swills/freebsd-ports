@@ -1,8 +1,8 @@
 # Created by: Edgardo Garcia Hoeffler <edybsd@yahoo.com.ar>
-# $FreeBSD: head/x11-fm/gnome-commander2/Makefile 462331 2018-02-19 16:16:51Z danilo $
+# $FreeBSD: head/x11-fm/gnome-commander2/Makefile 464214 2018-03-11 22:42:23Z danilo $
 
 PORTNAME=	gnome-commander
-PORTVERSION=	1.8.0
+PORTVERSION=	1.8.1
 PORTEPOCH=	1
 CATEGORIES=	x11-fm gnome
 MASTER_SITES=	GNOME/sources/gnome-commander/${PORTVERSION:R}
@@ -27,6 +27,8 @@ RUN_DEPENDS=	meld:textproc/meld \
 USES=		compiler:c++11-lang gettext gmake libtool localbase:ldflags pathfix \
 		pkgconfig python:2.7 tar:xz
 USE_GNOME=	cairo gdkpixbuf2 gnomedocutils gnomeprefix gnomevfs2 intltool libgnomeui
+GLIB_SCHEMAS=	org.gnome.gnome-commander.enums.xml \
+		org.gnome.gnome-commander.gschema.xml
 USE_XORG=	ice sm
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

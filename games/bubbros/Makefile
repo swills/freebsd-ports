@@ -1,9 +1,9 @@
 # Created by: Janos Mohacsi <janos.mohacsi@bsd.hu>
-# $FreeBSD: head/games/bubbros/Makefile 456050 2017-12-11 16:54:20Z antoine $
+# $FreeBSD: head/games/bubbros/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	bubbros
 PORTVERSION=	1.6.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games
 MASTER_SITES=	SF/bub-n-bros/bub-n-bros/${PORTVERSION}
 DIST_SUBDIR=	python

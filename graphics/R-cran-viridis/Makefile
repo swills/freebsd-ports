@@ -1,8 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/R-cran-viridis/Makefile 440402 2017-05-08 09:07:23Z tota $
+# $FreeBSD: head/graphics/R-cran-viridis/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	viridis
 PORTVERSION=	0.4.0
+PORTREVISION=	1
 CATEGORIES=	graphics
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

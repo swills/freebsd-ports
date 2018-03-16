@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <sheepkiller@cultdeadsheep.org>
-# $FreeBSD: head/www/mod_auth_pam2/Makefile 336534 2013-12-15 13:54:30Z ohauer $
+# $FreeBSD: head/www/mod_auth_pam2/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_auth_pam
 PORTVERSION=	1.1.1
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}-2.0-${PORTVERSION}
 MAINTAINER=	apache@FreeBSD.org
 COMMENT=	Allows users to use PAM modules for user authentication
 
-USE_APACHE=	22+
+USES=		apache:2.2+
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 PORTDOCS=	*.html

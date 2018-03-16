@@ -1,9 +1,9 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-Defaults/Makefile 367888 2014-09-10 20:50:31Z gerald $
+# $FreeBSD: head/devel/R-cran-Defaults/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	Defaults
 DISTVERSION=	1.1-1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

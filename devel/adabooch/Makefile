@@ -1,9 +1,9 @@
 # Created by: David Holm <david@realityrift.com>
-# $FreeBSD: head/devel/adabooch/Makefile 439129 2017-04-21 20:25:00Z rene $
+# $FreeBSD: head/devel/adabooch/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	adabooch
 PORTVERSION=	20160321
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	SF/booch95/booch95/${PORTVERSION}
 DISTNAME=	bc-${PORTVERSION}

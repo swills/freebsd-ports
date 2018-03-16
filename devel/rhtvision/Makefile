@@ -1,9 +1,9 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/devel/rhtvision/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/devel/rhtvision/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	rhtvision
 PORTVERSION=	2.2.1.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel
 MASTER_SITES=	SF/tvision/UNIX/${PORTVERSION:R}%20CVS20100714%20Source%20and%20Debian%205.0
 DISTNAME=	${PORTNAME}_${PORTVERSION:R}-${PORTVERSION:E}

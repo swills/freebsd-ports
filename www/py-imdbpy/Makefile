@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/www/py-imdbpy/Makefile 463247 2018-02-28 15:53:18Z sunpoet $
+# $FreeBSD: head/www/py-imdbpy/Makefile 464608 2018-03-15 17:45:52Z sunpoet $
 
 PORTNAME=	imdbpy
-PORTVERSION=	6.3
+PORTVERSION=	6.4
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP \
 		SF/${PORTNAME}/IMDbPY/${PORTVERSION}

@@ -1,5 +1,4 @@
-# Created by: Fernando Apesteguia <fernando.apesteguia@gmail.com>
-# $FreeBSD: head/graphics/converseen/Makefile 450852 2017-09-28 15:36:31Z kwm $
+# $FreeBSD: head/graphics/converseen/Makefile 464438 2018-03-13 22:24:58Z fernape $
 
 PORTNAME=	converseen
 PORTVERSION=	0.9.6.2
@@ -7,7 +6,7 @@ PORTREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/Converseen/Converseen%20${PORTVERSION:R:R}/
 
-MAINTAINER=	fernando.apesteguia@gmail.com
+MAINTAINER=	fernape@FreeBSD.org
 COMMENT=	Easy to use graphics conversion utility
 
 LICENSE=	GPLv3+

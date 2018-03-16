@@ -1,15 +1,15 @@
 # Created by: Dmitry Sivachenko <mitya@yandex-team.ru>
-# $FreeBSD: head/math/hfst/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/math/hfst/Makefile 464528 2018-03-14 19:41:24Z linimon $
 
 PORTNAME=	hfst
 PORTVERSION=	3.13.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 
 MAINTAINER=	demon@FreeBSD.org
 COMMENT=	Toolkit for for processing natural language morphologies
 
-BROKEN=		fails to build
+BROKEN=		fails to build: /usr/bin/byacc: e - line 75 of "/wrkdirs/usr/ports/math/hfst/work/hfst-c187d5a/libhfst/src/parsers/xre_parse.yy", syntax error
 
 USE_GITHUB=	yes
 GH_TAGNAME=	c187d5a

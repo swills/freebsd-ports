@@ -1,5 +1,5 @@
 # Created by: Masaki TAGAWA
-# $FreeBSD: head/www/mod_spdy/Makefile 462316 2018-02-19 13:18:57Z antoine $
+# $FreeBSD: head/www/mod_spdy/Makefile 464189 2018-03-11 17:38:45Z brnrd $
 
 PORTNAME=	mod_spdy
 PORTVERSION=	0.9.4.1
@@ -24,8 +24,7 @@ BUILD_DEPENDS=	greadlink:sysutils/coreutils \
 		bash:shells/bash
 
 ONLY_FOR_ARCHS=	amd64 i386
-USE_APACHE=	22
-USES=		compiler gmake python:2.7 ssl tar:xz
+USES=		apache:2.2 compiler gmake python:2.7 ssl tar:xz
 REINPLACE_ARGS=	-i ""
 BINARY_ALIAS=	python=${PYTHON_CMD}
 

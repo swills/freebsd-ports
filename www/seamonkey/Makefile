@@ -1,5 +1,5 @@
 # Created by: eivind/dima/jseger
-# $FreeBSD: head/www/seamonkey/Makefile 460989 2018-02-05 17:41:09Z jbeich $
+# $FreeBSD: head/www/seamonkey/Makefile 464374 2018-03-13 13:48:06Z jbeich $
 
 PORTNAME=	seamonkey
 DISTVERSION=	2.49.2
@@ -36,7 +36,6 @@ USE_GL=		gl
 USES=		tar:xz
 MOZ_PIS_SCRIPTS=	moz_pis_S50cleanhome
 
-MOZ_EXTENSIONS=	default
 MOZ_OPTIONS+=	--enable-application=suite
 
 USE_MOZILLA=	-soundtouch

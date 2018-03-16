@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/picard-plugins/Makefile 462005 2018-02-16 12:14:39Z jhale $
+# $FreeBSD: head/audio/picard-plugins/Makefile 464262 2018-03-12 17:03:03Z bdrewery $
 
 PORTNAME=	picard-plugins
 PORTVERSION=	1.0.20180211
@@ -30,7 +30,7 @@ OPTIONS_GROUP_REPLAYGAIN=	FLAC MP3 VORBIS WAVPACK
 OPTIONS_SUB=		yes
 
 BPM_DESC=		Beats per minute
-BPM_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}aubio>=0.4.5:audio/py-aubio@${FLAVOR}
+BPM_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}aubio>=0.4.5:audio/py-aubio@${PY_FLAVOR}
 
 MOODBAR_DESC=		Generate moodbar files
 MOODBAR_RUN_DEPENDS=	moodbar:audio/moodbar

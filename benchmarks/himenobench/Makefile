@@ -1,9 +1,9 @@
 # Created by: NAKATA Maho <maho@FreeBSD.org>
-# $FreeBSD: head/benchmarks/himenobench/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/benchmarks/himenobench/Makefile 464084 2018-03-10 17:46:04Z gerald $
 
 PORTNAME=	himenobench
 PORTVERSION=	2015.07.09
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://accc.riken.jp/wp-content/uploads/2015/07/
 DISTFILES=	himenobmtxp_xl.zip himenobmtxp_l.zip \

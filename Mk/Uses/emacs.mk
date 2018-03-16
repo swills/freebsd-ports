@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/emacs.mk 463743 2018-03-06 20:01:35Z jrm $
+# $FreeBSD: head/Mk/Uses/emacs.mk 464442 2018-03-13 23:46:30Z bdrewery $
 #
 # Provide support for ports requiring Emacs.  This includes flavors with proper
 # dependencies and useful variables.
@@ -73,7 +73,7 @@ FLAVORS=	full canna nox devel_full devel_nox
 .for flavor in ${EMACS_FLAVORS_EXCLUDE}
 FLAVORS:=	${FLAVORS:N${flavor}}
 .endfor
-.else
+.elif !defined(EMACS_NO_DEPENDS)
 FLAVORS=	full
 .endif
 
