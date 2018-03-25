@@ -1,5 +1,5 @@
 # Created by: UMENO Takashi <umeno@rr.iij4u.or.jp>
-# $FreeBSD: head/games/quit/Makefile 407602 2016-01-31 09:51:49Z marino $
+# $FreeBSD: head/games/quit/Makefile 465067 2018-03-20 06:16:18Z meta $
 
 PORTNAME=	quit
 PORTVERSION=	1.2a
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES?=	games
 MASTER_SITES=	http://megaui.net/fukuchi/archive/shortshort/
 
-MAINTAINER?=	meta+ports@vmeta.jp
+MAINTAINER?=	meta@FreeBSD.org
 COMMENT=	Bicycle with trailers like "sl"
 
 MANLANG=	ja

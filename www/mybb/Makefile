@@ -1,18 +1,17 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/www/mybb/Makefile 455357 2017-12-02 12:30:01Z joneum $
+# $FreeBSD: head/www/mybb/Makefile 465463 2018-03-24 18:55:56Z joneum $
 
 PORTNAME=	mybb
-DISTVERSION=	1.8.14
+DISTVERSION=	1.8.15
 CATEGORIES=	www
 
 MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PHP-based bulletin board / discussion forum system
 
 LICENSE=	GPLv3
-LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_GITHUB=	yes
-GH_TAGNAME=	${PORTNAME}_1814
+GH_TAGNAME=	${PORTNAME}_1815
 
 USES=		cpe mysql php:web
 NO_BUILD=	yes

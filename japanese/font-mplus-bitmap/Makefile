@@ -1,10 +1,10 @@
 # Created by: The 244th namelessness at 2ch.net
-# $FreeBSD: head/japanese/font-mplus-bitmap/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/font-mplus-bitmap/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	mplus
 PORTVERSION=	2.2.4
 CATEGORIES=	japanese x11-fonts
-MASTER_SITES=	SFJP/${PORTNAME}-fonts/5030/
+MASTER_SITES=	OSDN/${PORTNAME}-fonts/5030/
 PKGNAMEPREFIX=	ja-font-
 PKGNAMESUFFIX=	-bitmap
 DISTNAME=	${PORTNAME}_bitmap_fonts-2.2.4

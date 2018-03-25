@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/libstorj/Makefile 457016 2017-12-23 02:16:57Z vanilla $
+# $FreeBSD: head/net/libstorj/Makefile 464876 2018-03-18 06:01:25Z linimon $
 
 PORTNAME=	libstorj
 PORTVERSION=	1.0.2
@@ -9,6 +9,13 @@ MAINTAINER=	jhixson@gmail.com
 COMMENT=	C library and CLI for encrypted file transfer on the Storj network
 
 LICENSE=	LGPL21+
+
+BROKEN_aarch64=		fails to build: invokes x86 assembler
+BROKEN_armv6=		fails to build: invokes x86 assembler
+BROKEN_armv7=		fails to build: invokes x86 assembler
+BROKEN_mips=		fails to build: invokes x86 assembler
+BROKEN_mips64=		fails to build: invokes x86 assembler
+BROKEN_powerpc64=	fails to compile: storj.c:135: 'for' loop initial declaration used outside C99 mode
 
 LIB_DEPENDS=	libjson-c.so:devel/json-c \
 		libuv.so:devel/libuv \

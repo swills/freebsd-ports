@@ -1,5 +1,5 @@
 # Created by: Rainer Hurling <rhurlin@gwdg.de>
-# $FreeBSD: head/math/nlopt/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/nlopt/Makefile 464873 2018-03-18 05:35:18Z linimon $
 
 PORTNAME=	nlopt
 PORTVERSION=	2.4.2
@@ -13,6 +13,9 @@ COMMENT=	Nonlinear optimization library
 LICENSE=	LGPL21 MIT
 LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_armv6=		fails to package: Unable to access file site-packages/_nlopt.a:No such file or directory
+BROKEN_armv7=		fails to package: Unable to access file site-packages/_nlopt.a:No such file or directory
 
 LIB_DEPENDS=	libgmp.so:math/gmp \
 		libguile-2.0.so:lang/guile2

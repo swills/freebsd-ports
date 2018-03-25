@@ -1,8 +1,8 @@
 # Created by: Andrew <andrew@ugh.net.au>
-# $FreeBSD: head/textproc/p5-XML-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-XML-Simple/Makefile 464906 2018-03-18 13:19:31Z wen $
 
 PORTNAME=	XML-Simple
-PORTVERSION=	2.24
+PORTVERSION=	2.25
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

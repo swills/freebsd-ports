@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/mathgl/Makefile 464149 2018-03-11 08:39:12Z yuri $
+# $FreeBSD: head/math/mathgl/Makefile 465264 2018-03-22 08:15:51Z yuri $
 
 PORTNAME=	mathgl
-DISTVERSION=	2.4.1
+DISTVERSION=	2.4.2
 CATEGORIES=	math graphics
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}%20${PORTVERSION}
 

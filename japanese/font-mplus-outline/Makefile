@@ -1,10 +1,10 @@
 # Created by: The 244th namelessness at 2ch.net
-# $FreeBSD: head/japanese/font-mplus-outline/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/font-mplus-outline/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	mplus
 PORTVERSION=	0.6.0
 CATEGORIES=	japanese x11-fonts
-MASTER_SITES=	SFJP/${PORTNAME}-fonts/62344/
+MASTER_SITES=	OSDN/${PORTNAME}-fonts/62344/
 PKGNAMEPREFIX=	ja-font-
 PKGNAMESUFFIX=	-outline
 DISTNAME=	${PORTNAME}-TESTFLIGHT-060

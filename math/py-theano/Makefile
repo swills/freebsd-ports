@@ -1,11 +1,10 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/math/py-theano/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/py-theano/Makefile 465391 2018-03-23 17:35:00Z yuri $
 
 PORTNAME=	theano
-PORTVERSION=	0.9.0
-PORTREVISION=	3
+DISTVERSION=	1.0.1
 CATEGORIES=	math python
-MASTER_SITES=	CHEESESHOP/source/T/Theano
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	Theano-${DISTVERSION}
 
@@ -20,6 +19,7 @@ RUN_DEPENDS=	${PYNUMPY} \
 
 USES=		compiler:openmp python
 USE_PYTHON=	concurrent distutils autoplist
+NO_ARCH=	yes
 
 SUB_FILES=	pkg-message
 SUB_LIST=	CXX=${CXX}

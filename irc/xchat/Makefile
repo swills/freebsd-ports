@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/irc/xchat/Makefile 419050 2016-07-25 17:41:15Z brd $
+# $FreeBSD: head/irc/xchat/Makefile 464765 2018-03-17 08:38:09Z tobik $
 #   $MCom: ports/irc/xchat/Makefile,v 1.7 2008/08/06 07:59:00 kwm Exp $
 
 PORTNAME=	xchat
@@ -14,6 +14,9 @@ COMMENT=	X11 IRC client using the GTK+ 2 toolkit
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	Unmaintained upstream, use irc/hexchat instead
+EXPIRATION_DATE=	2018-04-15
 
 CONFLICTS=	xchat-1* xchat-systray-plugin-[0-9]*
 

@@ -1,10 +1,9 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/www/palemoon/Makefile 461119 2018-02-06 23:57:31Z feld $
+# $FreeBSD: head/www/palemoon/Makefile 465456 2018-03-24 15:28:59Z wen $
 
 PORTNAME=	palemoon
-DISTVERSION=	27.7.2
+DISTVERSION=	27.8.2
 DISTVERSIONSUFFIX=_Release
-PORTREVISION=	1
 CATEGORIES=	www ipv6
 
 MAINTAINER=	lichray@gmail.com
@@ -23,11 +22,6 @@ BUILD_DEPENDS=	nspr>=4.15:devel/nspr \
 		yasm:devel/yasm \
 		zip:archivers/zip
 
-# Needs branding removed for legal reasons.
-# Removing from our mirrors until this is handled.
-# See PR 225717
-LICENSE_PERMS=	no-pkg-mirror no-pkg-sell
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	MoonchildProductions
 GH_PROJECT=	Pale-Moon
@@ -42,7 +36,6 @@ PM_ICON=	${PORTNAME}.png
 PM_ICON_SRC=	${PREFIX}/lib/${PORTNAME}/browser/icons/mozicon128.png
 PM_DESKTOP=	${WRKSRC}/browser/branding/official/${PORTNAME}.desktop
 MOZ_OPTIONS=	--enable-application=browser \
-		--enable-official-branding \
 		--enable-devtools \
 		--enable-jemalloc \
 		--enable-jemalloc-lib

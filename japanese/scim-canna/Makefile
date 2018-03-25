@@ -1,11 +1,11 @@
 # Created by: Norikatsu Shigemura <nork@FreeBSD.org>
-# $FreeBSD: head/japanese/scim-canna/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/scim-canna/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	scim-canna
 PORTVERSION=	1.0.0
 PORTREVISION=	15
 CATEGORIES=	japanese
-MASTER_SITES=	SFJP/scim-imengine/18849
+MASTER_SITES=	OSDN/scim-imengine/18849
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SCIM IMEngine module using Canna

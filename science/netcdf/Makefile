@@ -1,10 +1,10 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/science/netcdf/Makefile 460017 2018-01-26 18:10:57Z sunpoet $
+# $FreeBSD: head/science/netcdf/Makefile 464690 2018-03-16 15:20:30Z sunpoet $
 
 PORTNAME=	netcdf
-PORTVERSION=	4.6.0
+PORTVERSION=	4.6.1
 CATEGORIES=	science
-MASTER_SITES=	http://www.unidata.ucar.edu/downloads/netcdf/ftp/ \
+MASTER_SITES=	https://www.unidata.ucar.edu/downloads/netcdf/ftp/ \
 		ftp://ftp.unidata.ucar.edu/pub/netcdf/ \
 		LOCAL/sunpoet
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-Search-QueryParser-SQL/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Search-QueryParser-SQL/Makefile 465366 2018-03-23 16:33:11Z swills $
 
 PORTNAME=	Search-QueryParser-SQL
 PORTVERSION=	0.010
@@ -6,7 +6,7 @@ CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jeremybbaggs@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Perl module to turn free-text queries into SQL WHERE clauses
 
 LICENSE=	GPLv2

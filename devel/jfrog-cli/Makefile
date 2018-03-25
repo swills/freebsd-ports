@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/jfrog-cli/Makefile 463776 2018-03-07 08:06:24Z yuri $
+# $FreeBSD: head/devel/jfrog-cli/Makefile 465250 2018-03-22 00:00:16Z swills $
 
 PORTNAME=	jfrog-cli
-PORTVERSION=	1.13.1
+PORTVERSION=	1.14.0
 CATEGORIES=	devel
 
 MAINTAINER=	swills@FreeBSD.org

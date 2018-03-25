@@ -1,11 +1,11 @@
 # Created by: UMENO Takashi
-# $FreeBSD: head/games/gbottler/Makefile 426873 2016-11-22 22:01:29Z antoine $
+# $FreeBSD: head/games/gbottler/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	gbottler
 PORTVERSION=	0.1.7
 PORTREVISION=	3
 CATEGORIES=	games
-MASTER_SITES=	SFJP/gbottler/45155
+MASTER_SITES=	OSDN/gbottler/45155
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SSTP Bottle client

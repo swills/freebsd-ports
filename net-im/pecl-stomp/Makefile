@@ -1,5 +1,5 @@
 # Created by: wen@FreeBSD.org
-# $FreeBSD: head/net-im/pecl-stomp/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/net-im/pecl-stomp/Makefile 465055 2018-03-20 02:20:07Z dbaio $
 
 PORTNAME=	stomp
 PORTVERSION=	1.0.9
@@ -12,9 +12,9 @@ COMMENT=	PECL extension of stomp client
 LICENSE=	PHP301
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-PORTSCOUT=	limit:^1.*
-
 USES=		php:pecl
 IGNORE_WITH_PHP=	70 71 72
+
+PORTSCOUT=	limit:^1.*
 
 .include <bsd.port.mk>

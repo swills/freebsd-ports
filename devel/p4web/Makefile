@@ -1,5 +1,5 @@
 # Created by: gordon@FreeBSD.org
-# $FreeBSD: head/devel/p4web/Makefile 430631 2017-01-05 11:00:49Z amdmi3 $
+# $FreeBSD: head/devel/p4web/Makefile 465268 2018-03-22 08:33:59Z antoine $
 
 PORTNAME=	p4web
 PORTVERSION=	2012.1.732581
@@ -12,6 +12,8 @@ EXTRACT_ONLY=	# none
 
 MAINTAINER=	gordon@FreeBSD.org
 COMMENT=	Perforce server
+
+BROKEN=		unfetchable
 
 # 10.x (and higher) needs compat libs
 LIB_DEPENDS=	libstdc++.so.6:misc/compat9x

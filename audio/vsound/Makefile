@@ -1,5 +1,5 @@
 # Created by: Rahul Siddharthan <rsidd@online.fr>
-# $FreeBSD: head/audio/vsound/Makefile 464593 2018-03-15 15:17:51Z linimon $
+# $FreeBSD: head/audio/vsound/Makefile 465258 2018-03-22 05:51:58Z danfe $
 
 PORTNAME=	vsound
 PORTVERSION=	0.6
@@ -13,9 +13,6 @@ COMMENT=	Utility for capturing audio streams from programs with OSS output
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-NOT_FOR_ARCHS=		aarch64 armv6 armv7
-NOT_FOR_ARCHS_REASON=	fails to build: error: Cannot determine endian-ness of processor
 
 BUILD_DEPENDS=	sox:audio/sox
 RUN_DEPENDS=	sox:audio/sox

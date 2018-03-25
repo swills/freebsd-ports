@@ -1,11 +1,11 @@
 # Created by: asami
-# $FreeBSD: head/japanese/nkf/Makefile 463180 2018-02-28 06:26:54Z hrs $
+# $FreeBSD: head/japanese/nkf/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	nkf
 PORTVERSION=	2.1.4
 PORTEPOCH=	1
 CATEGORIES?=	japanese
-MASTER_SITES=	SFJP/${PORTNAME}/64158
+MASTER_SITES=	OSDN/${PORTNAME}/64158
 
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Network Kanji code conversion Filter

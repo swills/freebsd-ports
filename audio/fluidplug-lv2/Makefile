@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/fluidplug-lv2/Makefile 455774 2017-12-08 07:00:12Z yuri $
+# $FreeBSD: head/audio/fluidplug-lv2/Makefile 464858 2018-03-18 03:01:49Z linimon $
 
 PORTNAME=	FluidPlug
 PORTVERSION=	g20161020
@@ -10,6 +10,11 @@ MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	SoundFonts as LV2 plugins via FluidSynth
 
 LICENSE=	LGPL20
+
+BROKEN_aarch64=		fails to compile: unknown FP unit 'sse'
+BROKEN_armv6=		fails to compile: unknown FP unit 'sse'
+BROKEN_armv7=		fails to compile: unknown FP unit 'sse'
+BROKEN_mips64=		fails to compile: unknown FP unit 'sse'
 
 BUILD_DEPENDS=	7z:archivers/p7zip \
 		lv2>0:audio/lv2

@@ -1,8 +1,8 @@
 # Created by: Fernan Aguero <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/print/jabref/Makefile 451346 2017-10-05 21:23:37Z mandree $
+# $FreeBSD: head/print/jabref/Makefile 465100 2018-03-20 17:37:47Z mandree $
 
 PORTNAME=	jabref
-PORTVERSION=	4.0
+PORTVERSION=	4.1
 PORTEPOCH=	1
 CATEGORIES=	print java editors
 MASTER_SITES=	http://builds.jabref.org/ \

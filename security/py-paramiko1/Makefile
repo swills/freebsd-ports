@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/py-paramiko1/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-paramiko1/Makefile 465163 2018-03-21 09:17:02Z lwhsu $
 
 PORTNAME=	paramiko
-PORTVERSION=	1.18.4
+PORTVERSION=	1.18.5
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

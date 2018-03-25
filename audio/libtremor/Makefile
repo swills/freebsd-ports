@@ -1,8 +1,8 @@
 # Created by: kwm@rainbow-runner.nl
-# $FreeBSD: head/audio/libtremor/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/audio/libtremor/Makefile 464735 2018-03-16 21:08:12Z jbeich $
 
 PORTNAME=	libtremor
-PORTVERSION=	1.2.1.s20150105
+PORTVERSION=	1.2.1.s20180316
 CATEGORIES=	audio
 MASTER_SITES=	http://git.xiph.org/?p=tremor.git;a=snapshot;sf=tgz;h=${GIT_COMMIT};/
 DISTNAME=	${PORTNAME:S/lib//}-${GIT_COMMIT}
@@ -14,7 +14,7 @@ LICENSE=	BSD3CLAUSE
 
 LIB_DEPENDS=	libogg.so:audio/libogg
 
-GIT_COMMIT=	b56ffc
+GIT_COMMIT=	562307a
 USES=		autoreconf libtool pathfix pkgconfig
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes

@@ -1,11 +1,11 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/dns/cli53/Makefile 454961 2017-11-27 14:55:45Z joneum $
+# $FreeBSD: head/dns/cli53/Makefile 465067 2018-03-20 06:16:18Z meta $
 
 PORTNAME=	cli53
 DISTVERSION=	0.8.12
 CATEGORIES=	dns
 
-MAINTAINER=	meta+ports@vmeta.jp
+MAINTAINER=	meta@FreeBSD.org
 COMMENT=	Command line management of Route53 domains
 
 LICENSE=	MIT

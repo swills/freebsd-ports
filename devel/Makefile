@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 464591 2018-03-15 14:55:26Z pizzamig $
+# $FreeBSD: head/devel/Makefile 465426 2018-03-24 05:57:43Z yuri $
 #
 
     COMMENT = Development utilities
@@ -528,9 +528,7 @@
     SUBDIR += elixir-plug
     SUBDIR += elixir-poison
     SUBDIR += elixir-quantum
-    SUBDIR += elixir-simple_bayes
     SUBDIR += elixir-smppex
-    SUBDIR += elixir-stemmer
     SUBDIR += elixir-swarm
     SUBDIR += elixir-timex
     SUBDIR += elixir-tirexs
@@ -833,6 +831,8 @@
     SUBDIR += godep
     SUBDIR += godot
     SUBDIR += godot-tools
+    SUBDIR += godot2
+    SUBDIR += godot2-tools
     SUBDIR += goffice
     SUBDIR += goffice010
     SUBDIR += gogland-eap
@@ -1670,6 +1670,9 @@
     SUBDIR += lua-lunit
     SUBDIR += lua-posix
     SUBDIR += lua-pty
+    SUBDIR += lua-stdlib
+    SUBDIR += lua-stdlib-debug
+    SUBDIR += lua-stdlib-normalize
     SUBDIR += lua-sysctl
     SUBDIR += lua51-bitop
     SUBDIR += lua51-cjson
@@ -3209,6 +3212,7 @@
     SUBDIR += p5-Proc-Simple
     SUBDIR += p5-Proc-Wait3
     SUBDIR += p5-Proc-WaitStat
+    SUBDIR += p5-Progress-Any
     SUBDIR += p5-Project-Gantt
     SUBDIR += p5-Project-Libs
     SUBDIR += p5-Pthread-GetThreadId
@@ -4291,6 +4295,7 @@
     SUBDIR += py-bison
     SUBDIR += py-bitarray
     SUBDIR += py-bitstring
+    SUBDIR += py-black
     SUBDIR += py-blessings
     SUBDIR += py-blinker
     SUBDIR += py-blist
@@ -4545,6 +4550,7 @@
     SUBDIR += py-jsmin
     SUBDIR += py-json-py
     SUBDIR += py-json-sempai
+    SUBDIR += py-json_tricks
     SUBDIR += py-jsonlib
     SUBDIR += py-jsonlib2
     SUBDIR += py-jsonlines
@@ -4610,6 +4616,7 @@
     SUBDIR += py-microversion-parse
     SUBDIR += py-mimeparse
     SUBDIR += py-minimongo
+    SUBDIR += py-minio
     SUBDIR += py-mock
     SUBDIR += py-mongoengine
     SUBDIR += py-mongokit
@@ -4648,6 +4655,7 @@
     SUBDIR += py-omnijson
     SUBDIR += py-omniorb
     SUBDIR += py-omniorb-3
+    SUBDIR += py-opendht
     SUBDIR += py-openstacksdk
     SUBDIR += py-opster
     SUBDIR += py-optik
@@ -5278,6 +5286,7 @@
     SUBDIR += rubygem-activesupport4
     SUBDIR += rubygem-activesupport5
     SUBDIR += rubygem-activesupport50
+    SUBDIR += rubygem-airborne
     SUBDIR += rubygem-akismet
     SUBDIR += rubygem-algebrick
     SUBDIR += rubygem-algorithms
@@ -5285,7 +5294,6 @@
     SUBDIR += rubygem-analogger
     SUBDIR += rubygem-annoy
     SUBDIR += rubygem-ansi
-    SUBDIR += rubygem-airborne
     SUBDIR += rubygem-apipie-bindings
     SUBDIR += rubygem-apipie-params
     SUBDIR += rubygem-app_config

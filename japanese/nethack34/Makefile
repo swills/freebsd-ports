@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/japanese/nethack34/Makefile 448262 2017-08-18 17:30:56Z swills $
+# $FreeBSD: head/japanese/nethack34/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	nethack
 PORTVERSION=	3.4.3
@@ -8,7 +8,7 @@ CATEGORIES=	japanese games
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.//g}-src
 
-PATCH_SITES=	SOURCEFORGE_JP/jnethack/58545
+PATCH_SITES=	OSDN/jnethack/58545
 PATCHFILES=	jnethack-${PORTVERSION}-0.11.diff.gz
 PATCH_DIST_STRIP=	-p1
 

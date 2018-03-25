@@ -1,8 +1,8 @@
 # Created by: Martin Klaffenboeck <martin.klaffenboeck@gmx.at>
-# $FreeBSD: head/x11-toolkits/gtkmm30/Makefile 439206 2017-04-23 08:35:28Z kwm $
+# $FreeBSD: head/x11-toolkits/gtkmm30/Makefile 465355 2018-03-23 13:24:04Z bapt $
 
 PORTNAME=	gtkmm
-PORTVERSION=	3.22.0
+PORTVERSION=	3.22.2
 PORTREVISION?=	0
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	GNOME

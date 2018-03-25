@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 463444 2018-03-02 19:10:48Z rene $
+# $FreeBSD: head/games/Makefile 465287 2018-03-22 14:03:06Z rene $
 #
 
     COMMENT = Games and related software
@@ -976,7 +976,6 @@
     SUBDIR += thegrind
     SUBDIR += thudboard
     SUBDIR += tileworld
-    SUBDIR += timeseal
     SUBDIR += tinymux
     SUBDIR += tkmoo
     SUBDIR += tomatoes

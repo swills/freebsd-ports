@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/databases/recutils/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/databases/recutils/Makefile 464772 2018-03-17 09:14:09Z antoine $
 
 PORTNAME=	recutils
 PORTVERSION=	1.7
@@ -14,6 +14,10 @@ LICENSE=	GPLv3
 
 USES=		charsetfix libtool makeinfo
 GNU_CONFIGURE=	yes
+.ifdef QEMU_EMULATING
+# XXX bug 224740: configure hangs
+CONFIGURE_ENV=	gl_cv_func_printf_enomem=no
+.endif
 USE_LDCONFIG=	yes
 
 INFO=		rec-mode recutils

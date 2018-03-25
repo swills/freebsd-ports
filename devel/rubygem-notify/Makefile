@@ -1,12 +1,12 @@
 # Created by: ports@c0decafe.net <ports@c0decafe.net>
-# $FreeBSD: head/devel/rubygem-notify/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-notify/Makefile 465067 2018-03-20 06:16:18Z meta $
 
 PORTNAME=	notify
 PORTVERSION=	0.5.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	meta+ports@vmeta.jp
+MAINTAINER=	meta@FreeBSD.org
 COMMENT=	Desktop notify for many platform
 
 LICENSE=	MIT

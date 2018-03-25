@@ -1,8 +1,8 @@
 # Created by: chuckr@FreeBSD.org
-# $FreeBSD: head/math/octave/Makefile 464535 2018-03-14 22:41:11Z stephen $
+# $FreeBSD: head/math/octave/Makefile 465255 2018-03-22 03:10:21Z stephen $
 
 PORTNAME=	octave
-PORTVERSION=	4.2.2
+PORTVERSION=	${OCTAVE_VERSION}
 CATEGORIES=	math java
 MASTER_SITES=	GNU
 
@@ -104,4 +104,5 @@ post-install-DOCS-on:
 check regression-test: build
 	@(cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_CMD} ${MAKE_ARGS} check)
 
+.include "Makefile.version"
 .include <bsd.port.mk>

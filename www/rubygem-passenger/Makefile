@@ -1,9 +1,8 @@
 # Created by: Jacob Atzen <jatzen@gmail.com>
-# $FreeBSD: head/www/rubygem-passenger/Makefile 464208 2018-03-11 21:00:35Z antoine $
+# $FreeBSD: head/www/rubygem-passenger/Makefile 465249 2018-03-21 23:21:43Z osa $
 
 PORTNAME=	passenger
-PORTVERSION=	5.1.12
-PORTREVISION=	2
+PORTVERSION=	5.2.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMEPREFIX=	rubygem-
@@ -88,7 +87,7 @@ pre-patch:
 		s!#{PlatformInfo.debugging_cflags}!${CFLAGS}!g; \
 		s!-O2!!g; \
 		s! -feliminate-unused-debug-symbols -feliminate-unused-debug-types!!g; \
-		155s!true!false!' \
+		170s!true!false!' \
 		${WRKSRC}/build/basics.rb
 	@${REINPLACE_CMD} '1s:python:python2:' \
 		${WRKSRC}/src/cxx_supportlib/vendor-copy/libuv/gyp_uv.py

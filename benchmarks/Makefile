@@ -1,4 +1,4 @@
-# $FreeBSD: head/benchmarks/Makefile 463346 2018-03-01 17:37:51Z danfe $
+# $FreeBSD: head/benchmarks/Makefile 465105 2018-03-20 18:39:34Z rene $
 #
 
     COMMENT = Benchmarking tools
@@ -15,7 +15,6 @@
     SUBDIR += dbs
     SUBDIR += dhrystone
     SUBDIR += dkftpbench
-    SUBDIR += expedite
     SUBDIR += fhourstones
     SUBDIR += filebench
     SUBDIR += fio

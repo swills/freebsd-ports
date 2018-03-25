@@ -1,10 +1,10 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/x11-fonts/hanazono-fonts-ttf/Makefile 459880 2018-01-24 18:47:05Z sunpoet $
+# $FreeBSD: head/x11-fonts/hanazono-fonts-ttf/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	hanazono-fonts-ttf
 PORTVERSION=	20170904
 CATEGORIES=	x11-fonts
-MASTER_SITES=	SFJP/hanazono-font/68253
+MASTER_SITES=	OSDN/hanazono-font/68253
 DISTNAME=	${PORTNAME:C/-.*//}-${PORTVERSION}
 
 MAINTAINER=	lichray@gmail.com

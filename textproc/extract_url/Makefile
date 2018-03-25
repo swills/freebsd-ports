@@ -1,5 +1,5 @@
 # Created by: Horia Racoviceanu <horia@racoviceanu.com>
-# $FreeBSD: head/textproc/extract_url/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/textproc/extract_url/Makefile 464822 2018-03-17 14:43:34Z dbaio $
 
 PORTNAME=	extract_url
 PORTVERSION=	1.6.2
@@ -17,13 +17,14 @@ BUILD_DEPENDS=	p5-MIME-Tools>=0:mail/p5-MIME-Tools \
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		gmake perl5
-MAKE_ARGS=	all prefix=${PREFIX} man_prefix=${PREFIX}
-SUB_FILES=	pkg-message
-NO_ARCH=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	m3m0ryh0l3
 GH_PROJECT=	extracturl
+
+MAKE_ARGS=	all prefix=${PREFIX} man_prefix=${PREFIX}
+SUB_FILES=	pkg-message
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/extract_url \
 		share/extract_url/extract_urlview.sample \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Plack-Middleware-CrossOrigin/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Plack-Middleware-CrossOrigin/Makefile 465366 2018-03-23 16:33:11Z swills $
 
 PORTNAME=	Plack-Middleware-CrossOrigin
 PORTVERSION=	0.012
@@ -6,7 +6,7 @@ CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jeremybbaggs@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Plack Middleware headers to allow Cross-Origin Resource Sharing
 
 LICENSE=	GPLv1

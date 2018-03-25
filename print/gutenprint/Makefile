@@ -1,10 +1,10 @@
 # Created by: dgilbert@velocet.ca
-# $FreeBSD: head/print/gutenprint/Makefile 451061 2017-10-01 20:44:29Z cmt $
+# $FreeBSD: head/print/gutenprint/Makefile 465457 2018-03-24 15:31:40Z cmt $
 #    $MCom: ports/print/gutenprint-base/Makefile,v 1.8 2007/03/30 16:45:02 ahze Exp $
 
 PORTNAME=	gutenprint
 PORTVERSION=	5.2.13
-PORTREVISION?=	1	# also print/gimp-gutenprint
+PORTREVISION?=	2	# also print/gimp-gutenprint
 CATEGORIES=	print
 MASTER_SITES=	SF/gimp-print/gutenprint-5.2/${PORTVERSION}
 
@@ -52,6 +52,9 @@ post-install:
 .if defined(GUT_SLAVE) && ${GUT_SLAVE} == "gimp"
 	@(cd ${WRKSRC}/src/gutenprintui2 && ${SETENV} ${MAKE_ENV} ${MAKE_CMD} \
 		${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} ${INSTALL_TARGET})
+.endif
+.if !defined(GUT_SLAVE)
+	@${LN} -s cups-genppd.5.2 ${STAGEDIR}${LOCALBASE}/sbin/cups-genppd
 .endif
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-halberd/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-halberd/Makefile 464822 2018-03-17 14:43:34Z dbaio $
 
 PORTNAME=	halberd
 PORTVERSION=	0.2.4
@@ -12,8 +12,8 @@ COMMENT=	HTTP load balancer detector written in Python
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

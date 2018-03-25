@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/games/scid/Makefile 449393 2017-09-07 11:01:02Z gahr $
+# $FreeBSD: head/games/scid/Makefile 464945 2018-03-18 19:45:08Z yuri $
 
 PORTNAME=	scid
 PORTVERSION=	4.6.4
@@ -10,11 +10,17 @@ MASTER_SITES=	SF/${PORTNAME}/Scid/Scid%204.6/
 MAINTAINER=	bsd@volki.at
 COMMENT=	Free chess database application
 
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 HAS_CONFIGURE=	yes
 USES=		gmake python shebangfix tk:85+ zip
 SHEBANG_FILES=	tcl/lang/checklangs.tcl \
 		tcl/lang/propagatelang.tcl \
-		tcl/lang/removetoken.tcl
+		tcl/lang/removetoken.tcl \
+		scripts/eco2pgn.py \
+		scripts/pgnfix.py \
+		scripts/twic2scid.py
 
 TCL_LIBRARY=	-L${LOCALBASE}/lib -ltcl${TCL_SHLIB_VER}
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/czmq4/Makefile 461550 2018-02-12 01:58:09Z yuri $
+# $FreeBSD: head/net/czmq4/Makefile 465443 2018-03-24 09:56:09Z tcberner $
 
 PORTNAME=	czmq
 DISTVERSIONPREFIX=	v
-DISTVERSION=	4.1.0
+DISTVERSION=	4.1.1
 CATEGORIES=	net
 PKGNAMESUFFIX=	4
 

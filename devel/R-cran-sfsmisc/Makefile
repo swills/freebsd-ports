@@ -1,9 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-sfsmisc/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/R-cran-sfsmisc/Makefile 465344 2018-03-23 10:02:44Z tota $
 
 PORTNAME=	sfsmisc
-DISTVERSION=	1.1-1
-PORTREVISION=	1
+DISTVERSION=	1.1-2
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

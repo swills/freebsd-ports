@@ -1,11 +1,11 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/japanese/kasumi/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/kasumi/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	kasumi
 PORTVERSION=	2.5
 PORTREVISION=	6
 CATEGORIES=	japanese
-MASTER_SITES=	SFJP/${PORTNAME}/41436
+MASTER_SITES=	OSDN/${PORTNAME}/41436
 
 MAINTAINER=	nobutaka@FreeBSD.org
 COMMENT=	Dictionary management tool for anthy

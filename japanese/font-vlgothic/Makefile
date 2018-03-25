@@ -1,11 +1,11 @@
 # Created by: NIIMI Satoshi <sa2c@sa2c.net>
-# $FreeBSD: head/japanese/font-vlgothic/Makefile 429976 2016-12-30 12:38:02Z hrs $
+# $FreeBSD: head/japanese/font-vlgothic/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	vlgothic
 PORTVERSION=	20141206
 PORTREVISION=	4
 CATEGORIES=	japanese x11-fonts
-MASTER_SITES=	SFJP/vlgothic/62375
+MASTER_SITES=	OSDN/vlgothic/62375
 PKGNAMEPREFIX=	ja-font-
 DISTNAME=	VLGothic-${PORTVERSION}
 

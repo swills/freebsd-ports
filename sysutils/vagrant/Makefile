@@ -1,8 +1,8 @@
 # Created by: Joseph Benden <joe@thrallingpenguin.com>
-# $FreeBSD: head/sysutils/vagrant/Makefile 462453 2018-02-20 21:24:00Z cmt $
+# $FreeBSD: head/sysutils/vagrant/Makefile 464729 2018-03-16 20:41:44Z cmt $
 
 PORTNAME=	vagrant
-PORTVERSION=	2.0.2
+PORTVERSION=	2.0.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils rubygems devel
 
@@ -34,7 +34,7 @@ RUN_DEPENDS=	rubygem-bundler>=1.12.5:sysutils/rubygem-bundler \
 		rubygem-ruby_dep>=0:devel/rubygem-ruby_dep
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	mitchellh
+GH_ACCOUNT=	hashicorp
 
 USES=		shebangfix
 SHEBANG_FILES=	plugins/hosts/darwin/scripts/install_virtualbox.sh \
@@ -73,5 +73,6 @@ do-build:
 
 post-install:
 	${RMDIR} ${STAGEDIR}${PREFIX}/lib/ruby/gems/${RUBY_VER}/doc
+	${RM} ${STAGEDIR}${PREFIX}/lib/ruby/gems/${RUBY_VER}/gems/${PORTNAME}-${PORTVERSION}/.runner.sh
 
 .include <bsd.port.mk>

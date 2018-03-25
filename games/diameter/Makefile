@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/diameter/Makefile 456050 2017-12-11 16:54:20Z antoine $
+# $FreeBSD: head/games/diameter/Makefile 464914 2018-03-18 14:20:32Z linimon $
 
 PORTNAME=	diameter
 PORTVERSION=	0.4.0.3
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/game${PORTNAME}/game${PORTNAME}/${PORTNAME}-0.4.0
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Arcade-style game with elements of economy and adventure
+
+BROKEN_armv6=		fails to compile: res/3dsloader.cpp:77:15: comparison between pointer and integer ('char *' and 'int')
+BROKEN_armv7=		fails to compile: res/3dsloader.cpp:77:15: comparison between pointer and integer ('char *' and 'int')
 
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libguichan.so:devel/guichan

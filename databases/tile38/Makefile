@@ -1,8 +1,8 @@
 # Created by: olevole@olevole.ru
-# $FreeBSD: head/databases/tile38/Makefile 463691 2018-03-06 05:57:47Z yuri $
+# $FreeBSD: head/databases/tile38/Makefile 464810 2018-03-17 12:16:29Z dbaio $
 
 PORTNAME=	tile38
-DISTVERSION=	1.11.0
+DISTVERSION=	1.11.1
 CATEGORIES=	databases
 
 MAINTAINER=	a.andersson.thn@gmail.com

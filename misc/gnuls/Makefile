@@ -1,5 +1,5 @@
 # Created by: bmc@WillsCreek.COM
-# $FreeBSD: head/misc/gnuls/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/misc/gnuls/Makefile 464772 2018-03-17 09:14:09Z antoine $
 
 PORTNAME=	gnuls
 PORTVERSION=	8.22
@@ -17,6 +17,10 @@ NLS_USES=		gettext
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	FORCE_UNSAFE_CONFIGURE=1
+.ifdef QEMU_EMULATING
+# XXX bug 224740: configure hangs
+CONFIGURE_ENV+=	gl_cv_func_printf_enomem=no
+.endif
 CPPFLAGS+=	-I${LOCALBASE}/include
 LIBS+=		-L${LOCALBASE}/lib
 

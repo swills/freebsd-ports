@@ -1,9 +1,10 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/tanks-of-freedom/Makefile 436600 2017-03-21 13:04:29Z amdmi3 $
+# $FreeBSD: head/games/tanks-of-freedom/Makefile 464714 2018-03-16 17:27:57Z amdmi3 $
 
 PORTNAME=	tanks-of-freedom
 PORTVERSION=	0.6.3
 DISTVERSIONSUFFIX=-beta
+PORTREVISION=	1
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org
@@ -12,13 +13,17 @@ COMMENT=	Indie Turn Based Strategy in Isometric Pixel Art
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-RUN_DEPENDS=	godot:devel/godot
+RUN_DEPENDS=	godot2:devel/godot2
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	w84death
 GH_PROJECT=	Tanks-of-Freedom
 
 NO_ARCH=	yes
+
+PLIST_FILES=	bin/${PORTNAME}
+PORTDOCS=	*
+PORTDATA=	*
 
 DESKTOP_ENTRIES="Tanks of Freedom" \
 		"" \
@@ -27,15 +32,11 @@ DESKTOP_ENTRIES="Tanks of Freedom" \
 		"Game;StrategyGame;" \
 		""
 
-PLIST_FILES=	bin/${PORTNAME}
-PORTDOCS=	*
-PORTDATA=	*
-
 OPTIONS_DEFINE=	DOCS
 
 do-build:
 	@${ECHO_CMD} "#!/bin/sh" > ${WRKDIR}/${PORTNAME}
-	@${ECHO_CMD} "exec \"${LOCALBASE}/bin/godot\" -path \"${DATADIR}\"" >> ${WRKDIR}/${PORTNAME}
+	@${ECHO_CMD} "exec \"${LOCALBASE}/bin/godot2\" -path \"${DATADIR}\"" >> ${WRKDIR}/${PORTNAME}
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin

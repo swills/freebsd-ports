@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/libqxp/Makefile 462472 2018-02-21 03:14:49Z lwhsu $
+# $FreeBSD: head/textproc/libqxp/Makefile 465497 2018-03-25 05:18:06Z yuri $
 
 PORTNAME=	libqxp
 PORTVERSION=	0.0.0
@@ -25,7 +25,7 @@ CONFIGURE_ARGS=	--disable-werror
 CPPFLAGS+=	-I${LOCALBASE}/include
 
 GNU_CONFIGURE=	yes
-USES=		compiler:features libtool pathfix pkgconfig tar:xz
+USES=		compiler:c++11-lang libtool pathfix pkgconfig tar:xz
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 

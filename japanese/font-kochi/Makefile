@@ -1,11 +1,11 @@
 # Created by: KANOU Hiroki <kanou@mil.allnet.ne.jp>
-# $FreeBSD: head/japanese/font-kochi/Makefile 397899 2015-09-25 22:02:16Z hrs $
+# $FreeBSD: head/japanese/font-kochi/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	kochi
 PORTVERSION=	20030809
 PORTREVISION=	5
 CATEGORIES=	japanese x11-fonts
-MASTER_SITES=	SFJP/efont/5411/
+MASTER_SITES=	OSDN/efont/5411/
 PKGNAMEPREFIX=	ja-font-
 DISTNAME=	${PORTNAME}-substitute-${PORTVERSION}
 

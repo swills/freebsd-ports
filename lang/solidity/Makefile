@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/solidity/Makefile 459751 2018-01-23 13:58:22Z ale $
+# $FreeBSD: head/lang/solidity/Makefile 465023 2018-03-19 17:02:40Z ale $
 
 PORTNAME=	solidity
-PORTVERSION=	0.4.19
+PORTVERSION=	0.4.21
 CATEGORIES=	lang
 MASTER_SITES=	https://github.com/ethereum/solidity/releases/download/v${PORTVERSION}/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -29,6 +29,7 @@ PLIST_FILES=	bin/solc
 
 pre-patch:
 		@${CP} ${FILESDIR}/jsoncpp.cmake ${WRKSRC}/cmake/
+		@${REINPLACE_CMD} '/jsoncpp/d' ${WRKSRC}/libdevcore/CMakeLists.txt
 		@${REINPLACE_CMD} '/EthCcache/d' ${WRKSRC}/CMakeLists.txt
 
 .include <bsd.port.mk>

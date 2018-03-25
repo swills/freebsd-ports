@@ -1,8 +1,9 @@
 # Created by: Will Andrews <will@FreeBSD.org>
-# $FreeBSD: head/mail/postgrey/Makefile 425485 2016-11-06 11:44:19Z madpilot $
+# $FreeBSD: head/mail/postgrey/Makefile 464903 2018-03-18 12:20:10Z dbaio $
 
 PORTNAME=	postgrey
 PORTVERSION=	1.37
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://postgrey.schweikert.ch/pub/ \
 		http://postgrey.schweikert.ch/pub/old/

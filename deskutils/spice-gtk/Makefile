@@ -1,5 +1,5 @@
 # Created by: olevole@olevole.ru
-# $FreeBSD: head/deskutils/spice-gtk/Makefile 462644 2018-02-22 21:52:59Z pi $
+# $FreeBSD: head/deskutils/spice-gtk/Makefile 464838 2018-03-17 18:09:32Z novel $
 
 PORTNAME=	spice-gtk
 PORTVERSION=	0.34
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	spice-protocol>=0.12.10:devel/spice-protocol \
 		${PYTHON_PKGNAMEPREFIX}pyparsing>=2.0.1:devel/py-pyparsing@${PY_FLAVOR}
 RUN_DEPENDS=	spice-protocol>=0.12.10:devel/spice-protocol
 
-USES=		autoreconf cpe gmake jpeg libtool pkgconfig tar:bzip2 \
+USES=		autoreconf cpe gettext-tools gmake jpeg libtool pkgconfig tar:bzip2 \
 		python ssl localbase:ldflags
 USE_XORG=	x11 pixman
 USE_GNOME=	cairo gdkpixbuf2 gnomeprefix gtk30 intltool introspection:build

@@ -1,5 +1,5 @@
 # Created by: Koichiro IWAO <meta+ports@vmeta.jp>
-# $FreeBSD: head/x11-drivers/xorgxrdp/Makefile 458036 2018-01-04 16:19:39Z swills $
+# $FreeBSD: head/x11-drivers/xorgxrdp/Makefile 465067 2018-03-20 06:16:18Z meta $
 
 PORTNAME=	xorgxrdp
 PORTVERSION=	0.2.5
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	x11-drivers
 DIST_SUBDIR=	xrdp
 
-MAINTAINER=	meta+ports@vmeta.jp
+MAINTAINER=	meta@FreeBSD.org
 COMMENT=	X.Org driver enabling use through an RDP session with xrdp
 
 LICENSE=	MIT

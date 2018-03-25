@@ -1,8 +1,8 @@
 # Created by: Securedog <securedog@users.sourceforge.jp>
-# $FreeBSD: head/ports-mgmt/pkg_replace/Makefile 441749 2017-05-26 05:48:49Z joneum $
+# $FreeBSD: head/ports-mgmt/pkg_replace/Makefile 464821 2018-03-17 14:21:00Z riggs $
 
 PORTNAME=	pkg_replace
-PORTVERSION=	20170517
+PORTVERSION=	20180314
 CATEGORIES=	ports-mgmt
 MASTER_SITES=	http://member.tokoha-u.ac.jp/~kdeguchi/download/
 

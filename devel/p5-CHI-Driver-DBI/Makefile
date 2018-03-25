@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-CHI-Driver-DBI/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-CHI-Driver-DBI/Makefile 465366 2018-03-23 16:33:11Z swills $
 
 PORTNAME=	CHI-Driver-DBI
 PORTVERSION=	1.27
@@ -7,7 +7,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:JSWARTZ
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jeremybbaggs@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Use DBI for CHI unified cache interface storage
 
 BUILD_DEPENDS=	p5-CHI>=0.241:devel/p5-CHI \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 463296 2018-03-01 11:29:58Z yuri $
+# $FreeBSD: head/science/Makefile 465427 2018-03-24 06:38:46Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -171,6 +171,7 @@
     SUBDIR += py-pyaixi
     SUBDIR += py-pydicom
     SUBDIR += py-pymol
+    SUBDIR += py-pyosf
     SUBDIR += py-pysal
     SUBDIR += py-pyteomics
     SUBDIR += py-pyteomics.biolccc
@@ -189,6 +190,7 @@
     SUBDIR += pynn
     SUBDIR += qcl
     SUBDIR += qtresistors
+    SUBDIR += rdkit
     SUBDIR += rubygem-ai4r
     SUBDIR += rubygem-cdo
     SUBDIR += rubygem-ruby-dcl

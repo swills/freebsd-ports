@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/textproc/sassc/Makefile 461398 2018-02-10 14:50:17Z nivit $
+# $FreeBSD: head/textproc/sassc/Makefile 465395 2018-03-23 18:31:54Z yuri $
 
 PORTNAME=	sassc
 PORTVERSION=	3.4.8
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	textproc
 
 MAINTAINER=	nivit@FreeBSD.org

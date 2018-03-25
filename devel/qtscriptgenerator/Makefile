@@ -1,5 +1,5 @@
 # Created by: Mina R Waheeb <syncer@gmail.com>
-# $FreeBSD: head/devel/qtscriptgenerator/Makefile 422406 2016-09-18 20:10:54Z tcberner $
+# $FreeBSD: head/devel/qtscriptgenerator/Makefile 464868 2018-03-18 05:05:37Z linimon $
 
 PORTNAME=	qtscriptgenerator
 PORTVERSION=	0.2.0
@@ -8,6 +8,9 @@ CATEGORIES=	devel
 
 MAINTAINER=	syncer@gmail.com
 COMMENT=	Tool that generates Qt bindings for Qt Script
+
+BROKEN_armv6=		fails to build: qtscript_QEasingCurve.cpp:332:32: cannot initialize a parameter of type 'QEasingCurve::EasingFunction' with an lvalue of type 'float'
+BROKEN_armv7=		fails to build: qtscript_QEasingCurve.cpp:332:32: cannot initialize a parameter of type 'QEasingCurve::EasingFunction' with an lvalue of type 'float'
 
 USE_GITHUB=	YES
 GH_ACCOUNT=	qt-labs

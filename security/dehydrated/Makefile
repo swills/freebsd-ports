@@ -1,8 +1,9 @@
-# $FreeBSD: head/security/dehydrated/Makefile 464498 2018-03-14 14:52:01Z swills $
+# $FreeBSD: head/security/dehydrated/Makefile 465467 2018-03-24 19:47:41Z jrm $
 
 PORTNAME=	dehydrated
-PORTVERSION=	0.6.1
 DISTVERSIONPREFIX=	v
+DISTVERSION=	0.6.1-7
+DISTVERSIONSUFFIX=	-g7c40c72
 CATEGORIES=	security
 
 MAINTAINER=	sascha@root-login.org

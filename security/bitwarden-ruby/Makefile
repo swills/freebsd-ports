@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/security/bitwarden-ruby/Makefile 458452 2018-01-08 17:00:31Z feld $
+# $FreeBSD: head/security/bitwarden-ruby/Makefile 465295 2018-03-22 16:05:19Z feld $
 
 PORTNAME=	bitwarden-ruby
-DISTVERSION=	0.0.0.20180103
+DISTVERSION=	0.0.0.20180321
 CATEGORIES=	security www
 
 MAINTAINER=	feld@FreeBSD.org
@@ -25,7 +25,7 @@ RUBY_NO_BUILD_DEPENDS=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	jcs
-GH_TAGNAME=	9628d8a
+GH_TAGNAME=	c3e0eb1
 
 NO_ARCH=	yes
 NO_BUILD=	yes

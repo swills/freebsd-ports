@@ -1,9 +1,9 @@
 # Created by: Jui-Nan Lin <jnlin@csie.nctu.edu.tw>
-# $FreeBSD: head/textproc/jq/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/textproc/jq/Makefile 464983 2018-03-19 06:03:16Z yuri $
 
 PORTNAME=	jq
 PORTVERSION=	1.5
-PORTREVISION=	1
+PORTREVISION=	3
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	textproc
 

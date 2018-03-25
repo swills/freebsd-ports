@@ -1,10 +1,10 @@
-# $FreeBSD: head/japanese/font-ayu18/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/font-ayu18/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	ayu18
 PORTVERSION=	1.3.1.1
 CATEGORIES=	japanese x11-fonts
-MASTER_SITES=	SFJP/x-tt/8535/:goth \
-		SFJP/x-tt/8494/:min
+MASTER_SITES=	OSDN/x-tt/8535/:goth \
+		OSDN/x-tt/8494/:min
 PKGNAMEPREFIX=	ja-font-
 DISTFILES=	ayu18gothic-1.3a${EXTRACT_SUFX}:goth \
 		ayu18mincho-1.1${EXTRACT_SUFX}:min

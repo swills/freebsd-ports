@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/nerd-fonts/Makefile 457785 2018-01-01 16:52:08Z jrm $
+# $FreeBSD: head/x11-fonts/nerd-fonts/Makefile 465025 2018-03-19 18:00:17Z arved $
 
 PORTNAME=	nerd-fonts
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.2.0
+DISTVERSION=	2.0.0
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	gregf@hugops.pw

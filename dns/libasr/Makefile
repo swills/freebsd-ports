@@ -1,5 +1,5 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/dns/libasr/Makefile 464619 2018-03-15 18:13:10Z bdrewery $
+# $FreeBSD: head/dns/libasr/Makefile 464863 2018-03-18 03:19:13Z yuri $
 
 PORTNAME=	libasr
 PORTVERSION=	1.0.2
@@ -16,19 +16,12 @@ LICENSE_COMB=	multi
 LICENSE_FILE=	${WRKSRC}/LICENCE
 
 CONFLICTS=	libasr-devel-[0-9]*
+
+USES=		groff libtool ssl:build
 GNU_CONFIGURE=	yes
-INSTALL_TARGET=	install-strip
-
-OPTIONS_DEFINE=	MAN3
-OPTIONS_SUB=	yes
-
-MAN3_DESC=	Install API manpages (section 3)
-MAN3_USES=	groff
-MAN3_CONFIGURE_OFF=	ac_cv_path_GROFF="" ac_cv_path_NROFF="" ac_cv_path_MANDOC=""
-MAN3_CONFIGURE_ON=	--with-mantype="man"
-
-USES=		libtool ssl:build
 USE_LDCONFIG=	yes
+CONFIGURE_ARGS=	--with-mantype="man"
+INSTALL_TARGET=	install-strip
 
 CFLAGS+=	-I${OPENSSLINC}
 

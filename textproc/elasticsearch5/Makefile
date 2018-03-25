@@ -1,9 +1,9 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/elasticsearch5/Makefile 463486 2018-03-03 15:29:51Z feld $
+# $FreeBSD: head/textproc/elasticsearch5/Makefile 465090 2018-03-20 16:19:08Z feld $
 
 PORTNAME=	elasticsearch
 PORTVERSION=	5.6.8
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	textproc java devel
 MASTER_SITES=	https://artifacts.elastic.co/downloads/${PORTNAME}/ \
 		http://mirrors.rit.edu/zi/

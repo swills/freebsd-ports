@@ -1,8 +1,8 @@
 :# Created by: Javier Martin Rueda <jmrueda@diatel.upm.es2
-# $FreeBSD: head/www/moodle32/Makefile 459257 2018-01-17 14:27:48Z wen $
+# $FreeBSD: head/www/moodle32/Makefile 465022 2018-03-19 15:36:43Z wen $
 
 PORTNAME=	moodle
-PORTVERSION=	3.2.7
+PORTVERSION=	3.2.8
 CATEGORIES=	www
 MASTER_SITES=	SF/moodle/Moodle/stable32/
 PKGNAMESUFFIX=	${PKGORIGIN:T:S/moodle//}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/sorcer-lv2/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/audio/sorcer-lv2/Makefile 464858 2018-03-18 03:01:49Z linimon $
 
 PORTNAME=	Sorcer
 DISTVERSIONPREFIX=	release-
@@ -12,6 +12,11 @@ COMMENT=	Wavetable LV2 plugin synth targeted at the electronic/dubstep genre
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_aarch64=		fails to compile: unknown FP unit 'sse'
+BROKEN_armv6=		fails to compile: unknown FP unit 'sse'
+BROKEN_armv7=		fails to compile: unknown FP unit 'sse'
+BROKEN_mips64=		fails to compile: unknown FP unit 'sse'
 
 BUILD_DEPENDS=	lv2>0:audio/lv2 \
 		${LOCALBASE}/include/boost/circular_buffer.hpp:devel/boost-libs

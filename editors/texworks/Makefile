@@ -1,5 +1,5 @@
 # Created by: Diego Depaoli <trebestie@gmail.com>
-# $FreeBSD: head/editors/texworks/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/editors/texworks/Makefile 464869 2018-03-18 05:09:21Z linimon $
 
 PORTNAME=	texworks
 PORTVERSION=	0.4.6
@@ -11,6 +11,9 @@ MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Simple TeX front-end program
 
 LICENSE=	GPLv2
+
+BROKEN_armv6=		fails to install: PDFDocument.cpp:1836:39: cannot initialize a parameter of type 'qreal *' with an rvalue of type 'double *'
+BROKEN_armv7=		fails to install: PDFDocument.cpp:1836:39: cannot initialize a parameter of type 'qreal *' with an rvalue of type 'double *'
 
 BUILD_DEPENDS=	hunspell:textproc/hunspell
 LIB_DEPENDS=	libpoppler-qt4.so:graphics/poppler-qt4

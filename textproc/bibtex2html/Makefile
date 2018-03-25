@@ -1,14 +1,16 @@
 # Created by: Gerald Pfeifer <gerald@pfeifer.com>
-# $FreeBSD: head/textproc/bibtex2html/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/bibtex2html/Makefile 465455 2018-03-24 15:16:58Z gerald $
 
 PORTNAME=	bibtex2html
 PORTVERSION=	1.98
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc print
 MASTER_SITES=	http://www.lri.fr/~filliatr/ftp/bibtex2html/
 
 MAINTAINER=	gerald@FreeBSD.org
 COMMENT=	Tools for searching BibTeX and translating from BibTeX to HTML
+
+LICENSE=	GPLv2
 
 BUILD_DEPENDS=	ocaml:lang/ocaml
 

@@ -1,9 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/ftp/R-cran-RCurl/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/ftp/R-cran-RCurl/Makefile 465066 2018-03-20 05:52:10Z tota $
 
 PORTNAME=	RCurl
-PORTREVISION=	2
-DISTVERSION=	1.95-4.8
+DISTVERSION=	1.95-4.10
 CATEGORIES=	ftp
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
@@ -12,8 +11,10 @@ COMMENT=	General network client interface for R
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	curl-config:ftp/curl
-RUN_DEPENDS=	R-cran-bitops>0:devel/R-cran-bitops
+CRAN_DEPENDS=	R-cran-bitops>0:devel/R-cran-bitops
+BUILD_DEPENDS=	curl-config:ftp/curl \
+		${CRAN_DEPENDS}
+RUN_DEPENDS=	${CRAN_DEPENDS}
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
 USES=		cran:auto-plist,compiles

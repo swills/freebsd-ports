@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/py-scikit-image/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/py-scikit-image/Makefile 465336 2018-03-23 08:28:24Z makc $
 
 PORTNAME=	scikit-image
 PORTVERSION=	0.13.1
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -26,9 +26,9 @@ RUN_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}matplotlib>=1.1:math/py-matplotlib@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}PyWavelets>=0.4:math/py-PyWavelets@${FLAVOR}
 
-USES=		cpe python:2.7
+USES=		cpe python
 USE_GITHUB=	yes
-USE_PYTHON=	autoplist distutils cython cython_run
+USE_PYTHON=	autoplist concurrent distutils cython cython_run
 
 PYDISTUTILS_BUILD_TARGET=	build build_ext
 PYDISTUTILS_BUILDARGS+=		saveopts

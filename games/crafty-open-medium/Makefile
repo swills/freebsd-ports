@@ -1,5 +1,5 @@
 # Created by: Stefan Eggers <seggers@semyam.dinoco.de>
-# $FreeBSD: head/games/crafty-open-medium/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/crafty-open-medium/Makefile 464927 2018-03-18 15:39:42Z antoine $
 
 PORTNAME=	crafty-open-medium
 PORTVERSION=	20070909
@@ -11,6 +11,8 @@ DIST_SUBDIR=	crafty
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Medium opening book (about 1.9 MByte) for crafty
+
+BROKEN=		conflicts with games/crafty
 
 BUILD_DEPENDS=	crafty:games/crafty
 RUN_DEPENDS=	crafty:games/crafty

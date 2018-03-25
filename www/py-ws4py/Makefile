@@ -1,5 +1,5 @@
 # Created by: rene@FreeBSD.org
-# $FreeBSD: head/www/py-ws4py/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-ws4py/Makefile 464686 2018-03-16 13:55:04Z wg $
 
 PORTNAME=	ws4py
 PORTVERSION=	0.3.4
@@ -7,7 +7,7 @@ CATEGORIES=	www python
 MASTER_SITES=	http://www.defuze.org/oss/${PORTNAME}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	wg@FreeBSD.org
 COMMENT=	WebSocket package for Python
 
 LICENSE=	BSD3CLAUSE

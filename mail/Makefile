@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 463108 2018-02-27 05:01:28Z fluffy $
+# $FreeBSD: head/mail/Makefile 465367 2018-03-23 16:38:21Z nobutaka $
 #
 
     COMMENT = Electronic mail utilities
@@ -741,7 +741,6 @@
     SUBDIR += vqadmin
     SUBDIR += vrfy
     SUBDIR += wanderlust
-    SUBDIR += wanderlust-devel
     SUBDIR += websieve
     SUBDIR += whoson
     SUBDIR += wmbiff

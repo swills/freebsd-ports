@@ -1,8 +1,9 @@
 # Created by: Autrijus Tang <autrijus@autrijus.org>
-# $FreeBSD: head/security/subversion-gnome-keyring/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/subversion-gnome-keyring/Makefile 465240 2018-03-21 21:24:43Z brnrd $
 
 PKGNAMESUFFIX=	-gnome-keyring
 CATEGORIES=	security gnome
+PORTREVISION=	2
 
 MAINTAINER=	lev@FreeBSD.org
 COMMENT=	Gnome KWyring integration for Version control system

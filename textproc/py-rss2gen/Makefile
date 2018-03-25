@@ -1,19 +1,20 @@
 # Created by: "Choe, Cheng-Dae" whitekid
-# $FreeBSD: head/textproc/py-rss2gen/Makefile 377822 2015-01-24 20:39:38Z jbeich $
+# $FreeBSD: head/textproc/py-rss2gen/Makefile 464693 2018-03-16 15:20:46Z sunpoet $
 
 PORTNAME=	rss2gen
 PORTVERSION=	1.1
 CATEGORIES=	textproc python
-MASTER_SITES=	http://www.dalkescientific.com/Python/
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	PyRSS2Gen-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Python library for generating RSS 2.0 feeds
 
 LICENSE=	BSD3CLAUSE
 
+NO_ARCH=	yes
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Richard Gallamore <ultima@FreeBSD.org>
-# $FreeBSD: head/www/py-django-constance/Makefile 461676 2018-02-13 00:46:49Z ultima $
+# $FreeBSD: head/www/py-django-constance/Makefile 465459 2018-03-24 17:14:59Z ultima $
 
 PORTNAME=	django-constance
-PORTVERSION=	2.1.0
+PORTVERSION=	2.2.0
 CATEGORIES=	www python
 MASTER_SITES=	GH
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

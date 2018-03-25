@@ -1,8 +1,8 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/net/remmina-plugin-rdp/Makefile 463551 2018-03-04 05:21:09Z woodsb02 $
+# $FreeBSD: head/net/remmina-plugin-rdp/Makefile 465177 2018-03-21 14:04:05Z kevans $
 
 PKGNAMESUFFIX=	-rdp
-PORTREVISION=	1
+PORTREVISION=	2
 
 COMMENT=	Remmina plugin for RDP protocol
 

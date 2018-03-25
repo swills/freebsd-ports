@@ -1,11 +1,11 @@
 # Created by: Murata Shuuichirou <mrt@mickey.ai.kyutech.ac.jp>
-# $FreeBSD: head/japanese/skkinput/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/skkinput/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	skkinput
 PORTVERSION=	2.06.4
 PORTREVISION=	2
 CATEGORIES=	japanese x11
-MASTER_SITES=	SFJP/skkinput2/6273
+MASTER_SITES=	OSDN/skkinput2/6273
 
 MAINTAINER=	koma2@lovepeers.org
 COMMENT=	SKK-like Japanese input method for X11

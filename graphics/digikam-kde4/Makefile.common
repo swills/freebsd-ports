@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/digikam-kde4/Makefile.common 444324 2017-06-25 21:07:58Z tcberner $
+# $FreeBSD: head/graphics/digikam-kde4/Makefile.common 465097 2018-03-20 17:19:01Z tcberner $
 #
 # Make sure when DIGIKAM_VER is updated that the following ports are updated:
 #	graphics/digikam-kde4
@@ -9,7 +9,7 @@
 #	graphics/libkface
 #	graphics/libkipiplugins
 # These ports now lead independent lives:
-#	astro/libkgeomap (part of KDE Applications)
+#	astro/libkgeomap-kde4 (part of KDE Applications)
 #	net/libkvkontakte (part of KDE Applications)
 #	net/libmediawiki (part of digiKam 4.12)
 

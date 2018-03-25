@@ -1,8 +1,7 @@
-# $FreeBSD: head/net/rubygem-geoip/Makefile 440345 2017-05-07 16:00:26Z miwi $
+# $FreeBSD: head/net/rubygem-geoip/Makefile 465222 2018-03-21 19:03:45Z sunpoet $
 
 PORTNAME=	geoip
-PORTVERSION=	1.6.3
-PORTREVISION=	1
+PORTVERSION=	1.6.4
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

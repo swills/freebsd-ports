@@ -1,9 +1,10 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/databases/py-whisper/Makefile 438354 2017-04-12 13:07:03Z skreuzer $
+# $FreeBSD: head/databases/py-whisper/Makefile 465106 2018-03-20 18:42:37Z skreuzer $
 
 PORTNAME=	whisper
-PORTVERSION=	1.0.0
+PORTVERSION=	1.1.2
 CATEGORIES=	databases python
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	skreuzer@FreeBSD.org
@@ -11,10 +12,10 @@ COMMENT=	Fixed-size database, similar in design to RRD
 
 LICENSE=	APACHE20
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	graphite-project
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${FLAVOR}
 
+NO_ARCH=	yes
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

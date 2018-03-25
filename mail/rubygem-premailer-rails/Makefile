@@ -1,8 +1,8 @@
 # Created by: Torsten Zuehlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/mail/rubygem-premailer-rails/Makefile 458096 2018-01-05 00:43:40Z swills $
+# $FreeBSD: head/mail/rubygem-premailer-rails/Makefile 464703 2018-03-16 15:21:40Z sunpoet $
 
 PORTNAME=	premailer-rails
-PORTVERSION=	1.10.1
+PORTVERSION=	1.10.2
 CATEGORIES=	mail rubygems
 MASTER_SITES=	RG
 

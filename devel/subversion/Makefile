@@ -1,7 +1,7 @@
 # Created by: rooneg@electricjellyfish.net
-# $FreeBSD: head/devel/subversion/Makefile 460383 2018-01-30 12:31:06Z lev $
+# $FreeBSD: head/devel/subversion/Makefile 465240 2018-03-21 21:24:43Z brnrd $
 
-PORTREVISION=	2
+PORTREVISION=	4
 
 MAINTAINER=	lev@FreeBSD.org
 COMMENT=	Version control system

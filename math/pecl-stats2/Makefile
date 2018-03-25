@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/pecl-stats2/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/math/pecl-stats2/Makefile 465055 2018-03-20 02:20:07Z dbaio $
 
 PORTNAME=	stats
 PORTVERSION=	2.0.3
@@ -10,10 +10,10 @@ COMMENT=	PECL extension with routines for statistical computation
 LICENSE=	PHP301
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-PORTSCOUT=	limit:^2.*
-
 USES=		php:pecl
 IGNORE_WITH_PHP=	56
 CONFLICTS=	pecl-stats-1*
+
+PORTSCOUT=	limit:^2.*
 
 .include <bsd.port.mk>

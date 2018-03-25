@@ -1,12 +1,12 @@
-# Created by: Koichiro IWAO <meta+ports@vmeta.jp>
-# $FreeBSD: head/devel/rubygem-delayer/Makefile 414136 2016-04-27 21:57:31Z swills $
+# Created by: Koichiro IWAO <meta@FreeBSD.org>
+# $FreeBSD: head/devel/rubygem-delayer/Makefile 465067 2018-03-20 06:16:18Z meta $
 
 PORTNAME=	delayer
 PORTVERSION=	0.0.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	meta+ports@vmeta.jp
+MAINTAINER=	meta@FreeBSD.org
 COMMENT=	Delay any task, similar to a priority-queue
 
 NO_ARCH=	yes

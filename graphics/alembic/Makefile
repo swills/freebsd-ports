@@ -1,8 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/alembic/Makefile 456986 2017-12-22 15:34:56Z danfe $
+# $FreeBSD: head/graphics/alembic/Makefile 465332 2018-03-23 04:53:46Z danfe $
 
 PORTNAME=	alembic
-PORTVERSION=	1.7.5
+PORTVERSION=	1.7.6
 CATEGORIES=	graphics
 
 MAINTAINER=	danfe@FreeBSD.org

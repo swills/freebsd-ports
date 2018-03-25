@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/ftwin/Makefile 420962 2016-08-27 09:01:18Z amdmi3 $
+# $FreeBSD: head/sysutils/ftwin/Makefile 465240 2018-03-21 21:24:43Z brnrd $
 
 PORTNAME=	ftwin
 PORTVERSION=	0.8.8
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	sysutils
 MASTER_SITES=	http://files.etoilebsd.net/ftwin/ \
 		http://download.meroware.org/ftwin/

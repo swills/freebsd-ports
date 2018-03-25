@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 461453 2018-02-11 00:09:42Z yuri $
+# $FreeBSD: head/x11-fonts/Makefile 464759 2018-03-17 06:40:18Z yuri $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -84,6 +84,10 @@
     SUBDIR += font-screen-cyrillic
     SUBDIR += font-sony-misc
     SUBDIR += font-sun-misc
+    SUBDIR += font-tex-gyre-bonum-math
+    SUBDIR += font-tex-gyre-pagella-math
+    SUBDIR += font-tex-gyre-schola-math
+    SUBDIR += font-tex-gyre-termes-math
     SUBDIR += font-util
     SUBDIR += font-winitzki-cyrillic
     SUBDIR += font-xfree86-type1

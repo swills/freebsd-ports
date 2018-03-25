@@ -1,11 +1,11 @@
 # Created by: KOMATSU Shinichiro <koma2@jiro.c.u-tokyo.ac.jp>
-# $FreeBSD: head/japanese/skkinput3/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/japanese/skkinput3/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	skkinput3
 PORTVERSION=	3.0.6
 PORTREVISION=	6
 CATEGORIES=	japanese x11
-MASTER_SITES=	SFJP/${PORTNAME}/2222
+MASTER_SITES=	OSDN/${PORTNAME}/2222
 DISTNAME=	skkinput-${PORTVERSION}
 
 MAINTAINER=	koma2@lovepeers.org

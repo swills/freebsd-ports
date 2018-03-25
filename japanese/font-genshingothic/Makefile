@@ -1,10 +1,10 @@
-# $FreeBSD: head/japanese/font-genshingothic/Makefile 464597 2018-03-15 15:54:14Z ume $
+# $FreeBSD: head/japanese/font-genshingothic/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	genshingothic
 PORTVERSION=	20150607
 PORTREVISION=	2
 CATEGORIES=	japanese x11-fonts
-MASTER_SITES=	SOURCEFORGE_JP/users/8/8634
+MASTER_SITES=	OSDN/users/8/8634
 PKGNAMEPREFIX=	ja-font-
 
 MAINTAINER=	ume@FreeBSD.org

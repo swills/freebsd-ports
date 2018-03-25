@@ -1,10 +1,10 @@
-# $FreeBSD: head/japanese/font-migu/Makefile 397899 2015-09-25 22:02:16Z hrs $
+# $FreeBSD: head/japanese/font-migu/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	migu
 PORTVERSION=	1.0.20130617
 PORTREVISION=	4
 CATEGORIES=	japanese x11-fonts
-MASTER_SITES=	SFJP/mix-mplus-ipa/59022
+MASTER_SITES=	OSDN/mix-mplus-ipa/59022
 PKGNAMEPREFIX=	ja-font-
 DISTFILES=	${PORTNAME}-1p-${PORTVERSION:E}${EXTRACT_SUFX} \
 		${PORTNAME}-1c-${PORTVERSION:E}${EXTRACT_SUFX} \

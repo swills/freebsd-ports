@@ -1,11 +1,11 @@
 # Created by: hrs
-# $FreeBSD: head/japanese/canna-server/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/canna-server/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	canna
 PORTVERSION=	3.7p3
 PORTREVISION=	10
 CATEGORIES=	japanese
-MASTER_SITES=	SFJP/canna/9565
+MASTER_SITES=	OSDN/canna/9565
 PKGNAMESUFFIX=	-server
 DISTNAME=	Canna${PORTVERSION:S/.//g}
 

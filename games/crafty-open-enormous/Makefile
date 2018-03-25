@@ -1,5 +1,5 @@
 # Created by: Jonathan Shoemaker <shoemaker@bluebottle.com>
-# $FreeBSD: head/games/crafty-open-enormous/Makefile 415730 2016-05-23 16:46:36Z mat $
+# $FreeBSD: head/games/crafty-open-enormous/Makefile 464927 2018-03-18 15:39:42Z antoine $
 
 PORTNAME=	crafty-open-enormous
 PORTVERSION=	20070924
@@ -11,6 +11,8 @@ DIST_SUBDIR=	crafty
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Enormous opening book (about 270 MByte) for crafty
+
+BROKEN=		conflicts with games/crafty
 
 BUILD_DEPENDS=	crafty:games/crafty
 RUN_DEPENDS=	crafty:games/crafty

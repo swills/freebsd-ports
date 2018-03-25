@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/math/vtk6/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/vtk6/Makefile 465054 2018-03-20 02:19:21Z stephen $
 
 PORTNAME=	vtk
 PORTVERSION=	6.2.0
@@ -130,6 +130,7 @@ USE_QT4=	gui_build gui_run network_build network_run sql_build sql_run \
 		moc_build uic_build qmake_build rcc_build opengl webkit_build \
 		webkit_run
 CMAKE_ARGS+=	-DVTK_QT_VERSION:STRING="4"
+PLIST_SUB+=	QTV="qt4"
 .endif
 
 .if ${PORT_OPTIONS:MQT5}
@@ -137,6 +138,7 @@ USE_QT5=	gui_build gui_run network_build network_run sql_build sql_run \
 		qmake_build opengl webkit_build buildtools webkit_run
 CMAKE_ARGS+=	-DVTK_QT_VERSION:STRING="5" \
 		-DCMAKE_PREFIX_PATH:STRING=${LOCALBASE}/lib/qt5
+PLIST_SUB+=	QTV="qt5"
 .endif
 
 .if ${PORT_OPTIONS:MQT4} || ${PORT_OPTIONS:MQT5}

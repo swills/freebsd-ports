@@ -1,11 +1,11 @@
 # Created by: numisemis at yahoo dot com
-# $FreeBSD: head/audio/julius/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/audio/julius/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	julius
 PORTVERSION=	4.1.2
 PORTREVISION=	2
 CATEGORIES=	audio
-MASTER_SITES=	SFJP/julius/37582
+MASTER_SITES=	OSDN/julius/37582
 
 MAINTAINER=	numisemis@yahoo.com
 COMMENT=	Large Vocabulary Continuous Speech Recognition Engine

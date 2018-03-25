@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/net-mgmt/ng_ipacct/Makefile 441468 2017-05-22 16:04:19Z linimon $
+# $FreeBSD: head/net-mgmt/ng_ipacct/Makefile 464877 2018-03-18 06:04:32Z linimon $
 
 PORTNAME=	ng_ipacct
 PORTVERSION=	20150304
@@ -10,6 +10,8 @@ COMMENT=	Netgraph IP accounting
 
 LICENSE=	BSD2CLAUSE
 
+BROKEN_armv6=		fails to build: ng_ipacct_hash.h:52:2: implicit declaration of function 'MALLOC' is invalid in C99
+BROKEN_armv7=		fails to build: ng_ipacct_hash.h:52:2: implicit declaration of function 'MALLOC' is invalid in C99
 BROKEN_powerpc64=	fails to build: pcpu.h: error: size of array '__assert_0' is negative
 
 USE_GITHUB=	yes

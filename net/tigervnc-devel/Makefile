@@ -1,5 +1,5 @@
 # Created by: Koichiro IWAO <meta+ports@vmeta.jp>
-# $FreeBSD: head/net/tigervnc-devel/Makefile 441818 2017-05-26 23:03:53Z cpm $
+# $FreeBSD: head/net/tigervnc-devel/Makefile 465067 2018-03-20 06:16:18Z meta $
 
 PORTNAME=	tigervnc
 PORTVERSION=	1.7.90
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	net x11-servers
 PKGNAMESUFFIX=	-devel
 
-MAINTAINER=	meta+ports@vmeta.jp
+MAINTAINER=	meta@FreeBSD.org
 COMMENT=	High-performance, platform-neutral implementation of VNC
 
 LICENSE=	GPLv2+

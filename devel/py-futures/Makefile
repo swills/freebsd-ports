@@ -1,14 +1,14 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-futures/Makefile 445496 2017-07-11 12:14:32Z koobs $
+# $FreeBSD: head/devel/py-futures/Makefile 465059 2018-03-20 02:47:17Z koobs $
 
 PORTNAME=	futures
-PORTVERSION=	3.1.1
+PORTVERSION=	3.2.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	koobs@FreeBSD.org
-COMMENT=	Backport of the concurrent.futures package from Python 3.2
+COMMENT=	Backport of the concurrent.futures package from Python 3
 
 LICENSE=	PSFL
 LICENSE_FILE=	${WRKSRC}/LICENSE

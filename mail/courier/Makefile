@@ -1,5 +1,5 @@
 # Created by: Yarema <yds@CoolRat.org>
-# $FreeBSD: head/mail/courier/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/mail/courier/Makefile 464980 2018-03-19 05:40:52Z yuri $
 
 PORTNAME=	courier
 PORTVERSION=	0.65.3
@@ -10,8 +10,12 @@ MASTER_SITES=	SF
 MAINTAINER=	bsd@dino.sk
 COMMENT=	Courier SMTP IMAP POP3 HTTP mail server suite
 
+LICENSE=	GPLv3
+LICENSE_FILE=	${WRKSRC}/COPYING.GPL
+
 BUILD_DEPENDS=	courierauthconfig:security/courier-authlib-base
-LIB_DEPENDS=	libpcre.so:devel/pcre
+LIB_DEPENDS=	libidn.so:dns/libidn \
+		libpcre.so:devel/pcre
 RUN_DEPENDS=	courierauthconfig:security/courier-authlib-base \
 		${LOCALBASE}/share/sysconftool/sysconftool:devel/sysconftool \
 		${LOCALBASE}/etc/mime.types:misc/mime-support \
@@ -264,6 +268,11 @@ pre-patch:
 	@${CP} ${TEMPLATES}/config.guess ${TEMPLATES}/config.sub ${WRKSRC}
 
 post-patch:
+	@${REINPLACE_CMD} -i '' -e 's|#! perl|#!${PERL}|g' \
+		${WRKSRC}/webadmin/*.pl \
+		${WRKSRC}/webadmin/*.pl.in \
+		${WRKSRC}/courier/webadmin/*.pl \
+		${WRKSRC}/courier/webadmin/*.pl.in
 	@${REINPLACE_CMD} -e 's|^PROG=\./|PROG=exec ./|g' \
 		${WRKSRC}/courier/module.*/courier.config
 	@${REINPLACE_CMD} -e 's|@mydatadir@|@sysconfdir@|g' \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/prometheus2/Makefile 461844 2018-02-14 21:58:37Z brd $
+# $FreeBSD: head/net-mgmt/prometheus2/Makefile 464866 2018-03-18 03:55:13Z yuri $
 
 PORTNAME=	prometheus
 PORTVERSION=	2.1.0
@@ -36,7 +36,7 @@ PROMETHEUS_BINARIES=	prometheus promtool
 do-build:
 .for bin in ${PROMETHEUS_BINARIES}
 	( cd ${GO_WRKSRC}/cmd/${bin} ; \
-		${SETENV} ${GO_ENV} go install -ldflags "${LD_FLAG_STRING}" )
+		${SETENV} ${MAKE_ENV} ${GO_ENV} go install -ldflags "${LD_FLAG_STRING}" )
 .endfor
 
 do-install:

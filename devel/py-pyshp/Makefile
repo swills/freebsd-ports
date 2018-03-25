@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-pyshp/Makefile 448944 2017-08-30 00:08:50Z dbaio $
+# $FreeBSD: head/devel/py-pyshp/Makefile 464818 2018-03-17 13:52:04Z dbaio $
 
 PORTNAME=	pyshp
 PORTVERSION=	1.2.12
@@ -12,9 +12,8 @@ COMMENT=	Pure Python read/write support for ESRI Shapefile format
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
 
-NO_ARCH=	yes
-
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

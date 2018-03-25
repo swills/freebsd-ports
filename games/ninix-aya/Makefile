@@ -1,11 +1,11 @@
 # Created by: UMENO Takashi
-# $FreeBSD: head/games/ninix-aya/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/ninix-aya/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	ninix-aya
 PORTVERSION=	4.4
 PORTREVISION=	6
 CATEGORIES=	games
-MASTER_SITES=	SFJP/${PORTNAME}/58500
+MASTER_SITES=	OSDN/${PORTNAME}/58500
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Desktop mascot program compatible with "Ukagaka"

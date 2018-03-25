@@ -1,8 +1,7 @@
-# $FreeBSD: head/graphics/py-imageio/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/py-imageio/Makefile 465159 2018-03-21 08:36:46Z yuri $
 
 PORTNAME=	imageio
-DISTVERSION=	2.2.0
-PORTREVISION=	1
+DISTVERSION=	2.3.0
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

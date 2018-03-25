@@ -1,4 +1,4 @@
-# $FreeBSD: head/GIDs 464063 2018-03-10 10:43:21Z brnrd $
+# $FreeBSD: head/GIDs 465424 2018-03-24 02:12:19Z yuri $
 # Please keep this file sorted by GID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/group
@@ -161,7 +161,7 @@ anvil:*:217:
 zap:*:218:
 sddm:*:219:
 bs:*:220:
-# free: 221
+opensips:*:221:
 rtpproxy:*:222:
 # free: 223
 # free: 224
@@ -170,7 +170,7 @@ sqlgrey:*:226:
 _hfm:*:227:
 osrm:*:228:
 kismet:*:229:
-# free: 230
+carbon:*:230:
 # free: 231
 # free: 232
 # free: 233

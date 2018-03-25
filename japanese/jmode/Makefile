@@ -1,11 +1,11 @@
 # Created by: Yukihiro Nakai <nakai@FreeBSD.org>
-# $FreeBSD: head/japanese/jmode/Makefile 425881 2016-11-11 10:18:56Z linimon $
+# $FreeBSD: head/japanese/jmode/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	jmode
 PORTVERSION=	0.6.7
 PORTREVISION=	9
 CATEGORIES=	japanese
-MASTER_SITES=	SFJP/anthy/5467
+MASTER_SITES=	OSDN/anthy/5467
 
 MAINTAINER=	nobutaka@FreeBSD.org
 COMMENT?=	XIM server for Anthy input method

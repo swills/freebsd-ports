@@ -1,10 +1,9 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/devel/eric6/Makefile.inc 458671 2018-01-10 18:39:31Z dbn $
+# $FreeBSD: head/devel/eric6/Makefile.inc 464829 2018-03-17 15:58:27Z dbn $
 #
 # This is a set of Makefile macros which allow to build the
 # localized language packages for devel/eric6:
-# chinese/eric6, french/eric6, german/eric6, portuguese/eric6, russian/eric6
-# devel/cs-eric6, devel/es-eric6, devel/it-eric6, devel/tr-eric6
+# german/eric6, russian/eric6, devel/es-eric6
 
 .include "${.CURDIR}/../../devel/eric6/bsd.eric6.mk"
 

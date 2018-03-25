@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/ipopt/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/ipopt/Makefile 464764 2018-03-17 08:33:18Z amdmi3 $
 
 PORTNAME=	Ipopt
 PORTVERSION=	3.12.7
@@ -55,10 +55,5 @@ post-install-DOCS-on:
 	   ${STAGEDIR}${DOCSDIR}
 	${MV} ${STAGEDIR}${PREFIX}/share/coin/doc ${STAGEDIR}${DOCSDIR}
 	${RM} -r ${STAGEDIR}${PREFIX}/share/coin
-
-.if defined(MAINTAINER_MODE)
-regression-test:
-	(cd ${WRKSRC}; ${MAKE_CMD} test)
-.endif
 
 .include <bsd.port.mk>

@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/yoshimi/Makefile 456577 2017-12-18 02:24:02Z linimon $
+# $FreeBSD: head/audio/yoshimi/Makefile 465460 2018-03-24 18:17:31Z tobik $
 
 PORTNAME=	yoshimi
-DISTVERSION=	1.5.6
+DISTVERSION=	1.5.7
 CATEGORIES=	audio
 
 MAINTAINER=	hello@blubee.me

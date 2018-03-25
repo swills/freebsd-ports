@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Data-Serializable/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Data-Serializable/Makefile 465366 2018-03-23 16:33:11Z swills $
 
 PORTNAME=	Data-Serializable
 PORTVERSION=	0.41.0
@@ -6,7 +6,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jeremybbaggs@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Moose role that adds serialization support to any class
 
 LICENSE=	GPLv3

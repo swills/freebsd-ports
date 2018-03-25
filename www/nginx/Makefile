@@ -1,9 +1,9 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/nginx/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/nginx/Makefile 465281 2018-03-22 09:41:10Z mat $
 
 PORTNAME=	nginx
 PORTVERSION=	1.12.2
-PORTREVISION?=	10
+PORTREVISION?=	11
 PORTEPOCH=	2
 CATEGORIES=	www
 MASTER_SITES=	http://nginx.org/download/
@@ -1330,6 +1330,8 @@ do-install:
 .endif
 
 post-install:
+	${MKDIR} ${STAGEDIR}${PREFIX}/share/vim/vimfiles
+	cd ${WRKSRC}/contrib/vim && ${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/share/vim/vimfiles
 .if ${PORT_OPTIONS:MHTTP} && ${PORT_OPTIONS:MHTTP_PERL}
 	${ECHO_CMD} ${SITE_ARCH_REL}/auto/nginx/nginx.so >> ${TMPPLIST}
 	${ECHO_CMD} ${SITE_ARCH_REL}/nginx.pm >> ${TMPPLIST}

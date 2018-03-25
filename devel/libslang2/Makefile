@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/libslang2/Makefile 454042 2017-11-12 14:00:48Z riggs $
+# $FreeBSD: head/devel/libslang2/Makefile 464983 2018-03-19 06:03:16Z yuri $
 
 PORTNAME=	libslang2
 PORTVERSION=	2.3.1
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://www.jedsoft.org/releases/slang/
 DISTNAME=	slang-${PORTVERSION}

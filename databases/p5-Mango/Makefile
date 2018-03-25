@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Mango/Makefile 417880 2016-07-01 14:26:48Z mat $
+# $FreeBSD: head/databases/p5-Mango/Makefile 464856 2018-03-18 02:34:33Z sunpoet $
 
 PORTNAME=	Mango
-PORTVERSION=	1.29
+PORTVERSION=	1.30
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:ODC

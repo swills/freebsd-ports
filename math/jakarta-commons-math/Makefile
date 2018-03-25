@@ -1,5 +1,5 @@
 # Created by: Herve Quiroz <hq@FreeBSD.org>
-# $FreeBSD: head/math/jakarta-commons-math/Makefile 431796 2017-01-18 13:20:31Z tijl $
+# $FreeBSD: head/math/jakarta-commons-math/Makefile 465271 2018-03-22 08:36:55Z antoine $
 
 PORTNAME=	commons-math
 PORTVERSION=	2.2
@@ -17,6 +17,8 @@ MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Java library of self-contained mathematics and statistics components
 
 LICENSE=	APACHE20
+
+BROKEN=		fails to build
 
 USE_ANT=	yes
 USE_JAVA=	yes

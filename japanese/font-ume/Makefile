@@ -1,9 +1,9 @@
-# $FreeBSD: head/japanese/font-ume/Makefile 429975 2016-12-30 12:33:35Z hrs $
+# $FreeBSD: head/japanese/font-ume/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	ume
 PORTVERSION=	0.0.660
 CATEGORIES=	japanese x11-fonts
-MASTER_SITES=	SOURCEFORGE_JP/${PORTNAME}-font/22212
+MASTER_SITES=	OSDN/${PORTNAME}-font/22212
 PKGNAMEPREFIX=	ja-font-
 DISTNAME=	umefont_${PORTVERSION:E}
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/fabio/Makefile 458829 2018-01-12 14:12:49Z vanilla $
+# $FreeBSD: head/www/fabio/Makefile 464866 2018-03-18 03:55:13Z yuri $
 
 PORTNAME=	fabio
 PORTVERSION=	1.5.6
@@ -21,7 +21,7 @@ USE_RC_SUBR=	fabio
 
 do-build:
 	@cd ${WRKSRC}/src/github.com/fabiolb/fabio; \
-	${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -v -x \
+	${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -v -x \
 		-ldflags "-X main.GitDescribe=v${PORTVERSION}" -o bin/fabio
 
 do-install:

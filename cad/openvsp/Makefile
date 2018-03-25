@@ -1,9 +1,9 @@
-# $FreeBSD: head/cad/openvsp/Makefile 464438 2018-03-13 22:24:58Z fernape $
+# $FreeBSD: head/cad/openvsp/Makefile 464931 2018-03-18 16:24:51Z fernape $
 
 PORTNAME=	openvsp
 PORTVERSION=	3.15.0
-PORTREVISION=	1
 DISTVERSIONPREFIX=	${GH_PROJECT}_
+PORTREVISION=	1
 CATEGORIES=	cad
 
 MAINTAINER=	fernape@FreeBSD.org
@@ -13,6 +13,10 @@ LICENSE=	NOSA13
 LICENSE_NAME=	NASA Open Source Agreement version 1.3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
+BROKEN_aarch64=		fails to compile: invokes x86 asm
+BROKEN_armv6=		fails to compile: invokes x86 asm
+BROKEN_armv7=		fails to compile: invokes x86 asm
 
 LIB_DEPENDS=	libdrm.so:graphics/libdrm \
 		libpng.so:graphics/png \
@@ -25,10 +29,6 @@ LIB_DEPENDS=	libdrm.so:graphics/libdrm \
 BUILD_DEPENDS=	${LOCALBASE}/lib/libopenNURBS.a:graphics/opennurbs \
 		${LOCALBASE}/include/glm/glm.hpp:math/glm \
 		${LOCALBASE}/libdata/pkgconfig/pthread-stubs.pc:devel/libpthread-stubs
-
-BROKEN_aarch64=		fails to compile: invokes x86 asm
-BROKEN_armv6=		fails to compile: invokes x86 asm
-BROKEN_armv7=		fails to compile: invokes x86 asm
 
 CMAKE_SOURCE_PATH=	${WRKSRC}/SuperProject
 CMAKE_INSTALL_PREFIX=	${STAGEDIR}${PREFIX}

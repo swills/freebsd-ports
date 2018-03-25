@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/ssh-vault/Makefile 451834 2017-10-12 09:06:17Z mat $
+# $FreeBSD: head/security/ssh-vault/Makefile 464866 2018-03-18 03:55:13Z yuri $
 
 PORTNAME=	ssh-vault
 PORTVERSION=	0.12.3
@@ -28,7 +28,7 @@ post-patch:
 
 do-build:
 	@cd ${WRKSRC}/src/github.com/${GH_ACCOUNT}/${GH_PROJECT}; \
-	${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -ldflags \
+	${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -ldflags \
 	"-s -w -X main.version=${PORTVERSION}" -o ssh-vault cmd/ssh-vault/main.go;
 
 do-install:

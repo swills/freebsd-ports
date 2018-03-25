@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/dynare/Makefile 464460 2018-03-14 06:39:56Z yuri $
+# $FreeBSD: head/math/dynare/Makefile 465112 2018-03-20 22:26:35Z fernape $
 
 PORTNAME=	dynare
 DISTVERSION=	4.5.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	http://www.dynare.org/release/source/
 
@@ -35,7 +35,7 @@ OPTIONS_SUB=		yes
 
 MATLAB_CONFIGURE_ENABLE=	matlab
 OCTAVE_CONFIGURE_ENABLE=	octave
-OCTAVE_BUILD_DEPENDS=		octave:math/octave
+OCTAVE_LIB_DEPENDS=		liboctave.so:math/octave
 OCTAVE_USES=			compiler:c++14-lang
 OCTAVE_VARS=			CXXFLAGS=--std=c++14 # https://github.com/DynareTeam/dynare/issues/1599
 

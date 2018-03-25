@@ -1,8 +1,9 @@
 # Created by: Sascha Holzleiter <sascha@root-login.org>
-# $FreeBSD: head/textproc/fzf/Makefile 457553 2017-12-30 00:04:40Z tcberner $
+# $FreeBSD: head/textproc/fzf/Makefile 464809 2018-03-17 12:15:31Z dbaio $
 
 PORTNAME=	fzf
 PORTVERSION=	0.17.3
+PORTREVISION=	1
 CATEGORIES=	textproc
 
 MAINTAINER=	sascha@root-login.org

@@ -1,11 +1,14 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/graphics/py-opencv/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/py-opencv/Makefile 465033 2018-03-19 20:44:15Z linimon $
 
 PORTREVISION=	3
 CATEGORIES=	graphics python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 COMMENT=	OpenCV Python library
+
+BROKEN_aarch64=		fails to build: make[1]: cannot open Makefile
+BROKEN_armv7=		fails to build: make[1]: cannot open Makefile
 
 OCV_SLAVE=	python
 OCV_PYTHON=	yes

@@ -1,8 +1,9 @@
 # Created by: Lev Serebryakov <lev@FreeBSD.org>
-# $FreeBSD: head/java/java-subversion/Makefile 404863 2015-12-30 15:22:15Z ohauer $
+# $FreeBSD: head/java/java-subversion/Makefile 465240 2018-03-21 21:24:43Z brnrd $
 
 PKGNAMEPREFIX=	java-
 CATEGORIES=	java
+PORTREVISION=	2
 
 MAINTAINER=	lev@FreeBSD.org
 COMMENT=	Java bindings for Version control system

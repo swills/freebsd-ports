@@ -1,5 +1,5 @@
 # Created by: David O'Brien <obrien@FreeBSD.org>
-# $FreeBSD: head/security/john/Makefile 462141 2018-02-17 12:00:53Z sunpoet $
+# $FreeBSD: head/security/john/Makefile 465452 2018-03-24 14:15:56Z gerald $
 
 PORTNAME=	john
 DISTVERSION=	1.8.0-jumbo-1
@@ -7,7 +7,7 @@ PORTREVISION=	3
 CATEGORIES=	security
 MASTER_SITES=	http://www.openwall.com/john/j/ \
 		http://mirrors.kernel.org/openwall/projects/john/${DISTVERSION:C/-.*//}/ \
-		http://distro.ibiblio.org/pub/linux/distributions/openwall/projects/john/${DISTVERSION:C/-.*//}/ \
+		http://distro.ibiblio.org/openwall/projects/john/${DISTVERSION:C/-.*//}/ \
 		http://gd.tuwien.ac.at/opsys/linux/openwall/projects/john/${DISTVERSION:C/-.*//}/
 
 MAINTAINER=	danfe@FreeBSD.org

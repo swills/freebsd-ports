@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/x42-plugins-lv2/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/audio/x42-plugins-lv2/Makefile 464858 2018-03-18 03:01:49Z linimon $
 
 PORTNAME=	x42-plugins
 PORTVERSION=	20170428
@@ -9,6 +9,11 @@ PKGNAMESUFFIX=	-lv2
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Collection of LV2 plugins (submodules)
+
+BROKEN_aarch64=		fails to compile: unknown FP unit 'sse'
+BROKEN_armv6=		fails to compile: unknown FP unit 'sse'
+BROKEN_armv7=		fails to compile: unknown FP unit 'sse'
+BROKEN_mips64=		fails to compile: unknown FP unit 'sse'
 
 BUILD_DEPENDS=	lv2>0:audio/lv2 \
 		${LOCALBASE}/include/fftw3.h:math/fftw3 \

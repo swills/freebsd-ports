@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/textproc/py-html2text/Makefile 458799 2018-01-11 22:17:29Z dbaio $
+# $FreeBSD: head/textproc/py-html2text/Makefile 464822 2018-03-17 14:43:34Z dbaio $
 
 PORTNAME=	html2text
 PORTVERSION=	2018.1.9
@@ -15,9 +15,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>=0:devel/py-coverage
 
-NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	distutils autoplist
+NO_ARCH=	yes
 
 CONFLICTS=	html2text
 

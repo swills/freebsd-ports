@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/py-scriptine/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/sysutils/py-scriptine/Makefile 464822 2018-03-17 14:43:34Z dbaio $
 
 PORTNAME=	scriptine
 PORTVERSION=	0.2.1
@@ -12,8 +12,8 @@ COMMENT=	Python shell scripts made easy
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
 USES=	python:-2.7
 USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

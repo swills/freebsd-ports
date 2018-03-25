@@ -1,5 +1,5 @@
 # Created by: David O'Brien <obrien@FreeBSD.org>
-# $FreeBSD: head/security/bro/Makefile 462460 2018-02-20 22:29:08Z leres $
+# $FreeBSD: head/security/bro/Makefile 465145 2018-03-21 03:45:55Z bdrewery $
 
 PORTNAME=	bro
 PORTVERSION=	2.5.3
@@ -88,7 +88,7 @@ LBL_CF_RUN_DEPENDS=	${LOCALBASE}/bin/cf:sysutils/lbl-cf
 NETMAP_GH_TUPLE=	bro:bro-netmap:cf88debf487b31ab30dc3b5bac64783b4e49997e:bro_netmap
 NETMAP_USE=		GITHUB=nodefault
 PERFTOOLS_CMAKE_BOOL=	ENABLE_PERFTOOLS
-PERFTOOLS_RUN_DEPENDS=	${LOCALBASE}/bin/pprof:devel/google-perftools
+PERFTOOLS_RUN_DEPENDS=	${LOCALBASE}/bin/perftools-pprof:devel/google-perftools
 PYTHON_BUILD_DEPENDS=	swig3.0:devel/swig30
 
 .include <bsd.port.options.mk>
@@ -113,9 +113,11 @@ INSTALL_WRKSRC2=	${CONFIGURE_WRKSRC2}
 pre-configure-BROKER-on:
 	${MKDIR} ${CONFIGURE_WRKSRC2}
 	(cd ${CONFIGURE_WRKSRC2} && \
+	    ${SETENV} ${CONFIGURE_ENV} \
 	    ${CMAKE_BIN} ${CMAKE_ARGS2} ${WRKSRC_actor_framework})
 	${MKDIR} ${STAGEDIR2}
 	(cd ${BUILD_WRKSRC2} && \
+	    ${SETENV} ${MAKE_ENV:NDESTDIR=*} \
 	    ${MAKE_CMD} ${MAKE_FLAGS} ${MAKEFILE} ${_MAKE_JOBS} install)
 	${LN} -s libcaf_core_static.a ${STAGEDIR2}${PREFIX}/lib/libcaf_core.a
 	${LN} -s libcaf_io_static.a ${STAGEDIR2}${PREFIX}/lib/libcaf_io.a

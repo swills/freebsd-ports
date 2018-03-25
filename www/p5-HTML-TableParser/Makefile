@@ -1,8 +1,8 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/www/p5-HTML-TableParser/Makefile 439112 2017-04-21 18:23:39Z sunpoet $
+# $FreeBSD: head/www/p5-HTML-TableParser/Makefile 465369 2018-03-23 16:44:47Z sunpoet $
 
 PORTNAME=	HTML-TableParser
-PORTVERSION=	0.42
+PORTVERSION=	0.43
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,7 +13,7 @@ COMMENT=	Extract data from an HTML table
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-HTML-Parser>=3.36:www/p5-HTML-Parser
+BUILD_DEPENDS=	p5-HTML-Parser>=3.26:www/p5-HTML-Parser
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes

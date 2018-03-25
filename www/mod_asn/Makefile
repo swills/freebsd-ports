@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/mod_asn/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_asn/Makefile 465240 2018-03-21 21:24:43Z brnrd $
 
 PORTNAME=	mod_asn
 PORTVERSION=	1.7
+PORTREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	LOCAL/kuriyama \
 		http://mirrorbrain.org/files/releases/

@@ -1,11 +1,11 @@
 # Created by: max
-# $FreeBSD: head/japanese/p5-nkf/Makefile 463345 2018-03-01 17:19:10Z hrs $
+# $FreeBSD: head/japanese/p5-nkf/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	nkf
 PORTVERSION=	2.1.4
 PORTEPOCH=	1
 CATEGORIES=	japanese perl5
-MASTER_SITES=	SFJP/${PORTNAME}/64158
+MASTER_SITES=	OSDN/${PORTNAME}/64158
 PKGNAMEPREFIX=	ja-p5-
 
 MAINTAINER=	hrs@FreeBSD.org

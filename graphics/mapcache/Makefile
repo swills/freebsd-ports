@@ -1,8 +1,9 @@
 # Created by: Ryan Melcer <rmelcer@iteris.com>
-# $FreeBSD: head/graphics/mapcache/Makefile 464182 2018-03-11 15:40:02Z brnrd $
+# $FreeBSD: head/graphics/mapcache/Makefile 465240 2018-03-21 21:24:43Z brnrd $
 
 PORTNAME=		mapcache
 DISTVERSION=		1.4.0-94
+PORTREVISION=		2
 DISTVERSIONSUFFIX=	-g732b3fd
 CATEGORIES=		graphics
 

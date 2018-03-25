@@ -1,5 +1,5 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/benchmarks/bombardier/Makefile 457631 2017-12-30 19:05:19Z danilo $
+# $FreeBSD: head/benchmarks/bombardier/Makefile 464866 2018-03-18 03:55:13Z yuri $
 
 PORTNAME=	bombardier
 PORTVERSION=	1.1.1
@@ -20,7 +20,7 @@ PLIST_FILES=	bin/${PORTNAME}
 do-build:
 	cd ${WRKSRC}; \
 		${LN} -s vendor src; \
-		${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -ldflags "-X main.version=${PORTVERSION}" .
+		${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -ldflags "-X main.version=${PORTVERSION}" .
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME}-${PORTVERSION} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}

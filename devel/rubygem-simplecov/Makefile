@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/rubygem-simplecov/Makefile 458837 2018-01-12 14:24:59Z sunpoet $
+# $FreeBSD: head/devel/rubygem-simplecov/Makefile 464702 2018-03-16 15:21:34Z sunpoet $
 
 PORTNAME=	simplecov
-PORTVERSION=	0.15.1
-PORTREVISION=	1
+PORTVERSION=	0.16.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -10,9 +9,9 @@ MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Powerful configuration library and automatic merging of coverage across test suites
 
 LICENSE=	MIT
-LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	rubygem-docile>=1.1.0:devel/rubygem-docile \
+RUN_DEPENDS=	rubygem-docile>=1.1:devel/rubygem-docile \
 		rubygem-json>=1.8:devel/rubygem-json \
 		rubygem-simplecov-html>=0.10.0:textproc/rubygem-simplecov-html
 

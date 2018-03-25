@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-devise_pam_authenticatable2/Makefile 464421 2018-03-13 20:31:38Z sunpoet $
+# $FreeBSD: head/security/rubygem-devise_pam_authenticatable2/Makefile 465479 2018-03-24 21:11:40Z sunpoet $
 
 PORTNAME=	devise_pam_authenticatable2
-PORTVERSION=	9.0.0
+PORTVERSION=	9.1.0
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
@@ -12,7 +12,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
 RUN_DEPENDS=	rubygem-devise-rails5>=4.0.0:devel/rubygem-devise-rails5 \
-		rubygem-rpam2>=3.0:security/rubygem-rpam2
+		rubygem-rpam2>=4.0:security/rubygem-rpam2
 
 USES=		gem
 USE_RUBY=	yes

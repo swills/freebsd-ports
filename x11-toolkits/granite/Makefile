@@ -1,12 +1,10 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11-toolkits/granite/Makefile 436494 2017-03-19 14:02:23Z rene $
+# $FreeBSD: head/x11-toolkits/granite/Makefile 465149 2018-03-21 05:52:33Z yuri $
 #
 
 PORTNAME=	granite
-PORTVERSION=	0.4.0.1
+DISTVERSION=	0.5
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	https://launchpadlibrarian.net/277504431/ \
-	https://launchpad.net/${PORTNAME}/0.4/loki-beta2/+download/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Extensions of GTK+3 toolkit
@@ -19,6 +17,8 @@ LIB_DEPENDS=	libgee-0.8.so:devel/libgee
 RUN_DEPENDS=	contractor:sysutils/contractor
 
 USES=	cmake gettext pkgconfig tar:xz
+USE_GITHUB=	yes
+GH_ACCOUNT=	elementary
 USE_GNOME=	glib20 gtk30 cairo introspection:build
 INSTALLS_ICONS=	yes
 USE_LDCONFIG=	yes

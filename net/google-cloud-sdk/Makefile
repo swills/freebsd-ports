@@ -1,9 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/google-cloud-sdk/Makefile 457661 2017-12-31 01:40:20Z swills $
+# $FreeBSD: head/net/google-cloud-sdk/Makefile 465405 2018-03-23 20:29:26Z swills $
 
 PORTNAME=	google-cloud-sdk
-PORTVERSION=	183.0.0
-PORTREVISION=	0
+PORTVERSION=	194.0.0
 CATEGORIES=	net
 MASTER_SITES=	https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/
 DISTNAME=	google-cloud-sdk-${PORTVERSION}-linux-x86_64
@@ -11,11 +10,12 @@ DISTNAME=	google-cloud-sdk-${PORTVERSION}-linux-x86_64
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Google Cloud SDK for Google Cloud Platform
 
-USES=		python
+USES=		python:2.7
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/google-cloud-sdk
 
-RUN_DEPENDS=	python:lang/python
+RUN_DEPENDS=	python:lang/python \
+		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3
 
 post-extract:
 	@${RM} -r \

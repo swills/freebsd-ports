@@ -1,5 +1,5 @@
 # Created by: Conrad Meyer <cem@FreeBSD.org>
-# $FreeBSD: head/sysutils/fusefs-lkl/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/sysutils/fusefs-lkl/Makefile 465272 2018-03-22 08:41:08Z antoine $
 
 PORTNAME=	lkl
 DISTVERSIONPREFIX=	v
@@ -13,6 +13,8 @@ MAINTAINER=	cem@FreeBSD.org
 COMMENT=	Full-featured Linux BTRFS, Ext4, XFS as a FUSE module
 
 LICENSE=	GPLv2
+
+BROKEN=		inconsistent kallsyms data
 
 BUILD_DEPENDS=	gnubc>0:math/gnubc
 

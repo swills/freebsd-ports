@@ -1,9 +1,9 @@
-# $FreeBSD: head/japanese/latex-jlisting/Makefile 375091 2014-12-20 19:05:12Z bapt $
+# $FreeBSD: head/japanese/latex-jlisting/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	jlisting
 PORTVERSION=	0.2
 CATEGORIES=	japanese print
-MASTER_SITES=	SFJP/mytexpert/26068
+MASTER_SITES=	OSDN/mytexpert/26068
 PKGNAMEPREFIX=	latex-
 DISTFILES=	jlisting.sty.bz2
 

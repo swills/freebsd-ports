@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-App-GitGot/Makefile 453685 2017-11-07 21:01:52Z sunpoet $
+# $FreeBSD: head/devel/p5-App-GitGot/Makefile 465122 2018-03-20 22:35:22Z sunpoet $
 
 PORTNAME=	App-GitGot
-PORTVERSION=	1.334
+PORTVERSION=	1.335
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

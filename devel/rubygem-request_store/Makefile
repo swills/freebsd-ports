@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-request_store/Makefile 457986 2018-01-03 16:46:29Z sunpoet $
+# $FreeBSD: head/devel/rubygem-request_store/Makefile 464789 2018-03-17 10:44:49Z sunpoet $
 
 PORTNAME=	request_store
-PORTVERSION=	1.4.0
+PORTVERSION=	1.4.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

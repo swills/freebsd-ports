@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm39/Makefile 463073 2018-02-26 22:31:26Z sunpoet $
+# $FreeBSD: head/devel/llvm39/Makefile 465145 2018-03-21 03:45:55Z bdrewery $
 
 PORTNAME=	llvm
 DISTVERSION=	3.9.1
@@ -339,7 +339,7 @@ post-patch-COMPILER_RT-on:
 post-build-COMPILER_RT-on:
 	${MKDIR} ${WRKDIR}/compiler-rt-build
 	cd ${WRKDIR}/compiler-rt-build && \
-	${CMAKE_BIN} ${CMAKE_ARGS} \
+	${SETENV} ${CONFIGURE_ENV} ${CMAKE_BIN} ${CMAKE_ARGS} \
 	    -DLLVM_CONFIG_PATH=${CONFIGURE_WRKSRC}/bin/llvm-config \
 	    ${WRKSRC_compiler_rt} && \
 	${MAKE_ENV} ${MAKE_CMD}

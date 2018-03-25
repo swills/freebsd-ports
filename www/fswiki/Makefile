@@ -1,10 +1,10 @@
-# $FreeBSD: head/www/fswiki/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/fswiki/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	fswiki
 PORTVERSION=	3.6.2
 PORTREVISION=	2
 CATEGORIES=	www
-MASTER_SITES=	SFJP/fswiki/20797
+MASTER_SITES=	OSDN/fswiki/20797
 DISTNAME=	wiki${PORTVERSION:S|.|_|g}
 
 MAINTAINER=	kuriyama@FreeBSD.org

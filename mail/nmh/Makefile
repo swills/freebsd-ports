@@ -1,8 +1,8 @@
 # Created by: Scott Blachowicz <scott+ports@sabami.seaslug.org>
-# $FreeBSD: head/mail/nmh/Makefile 454452 2017-11-18 19:24:09Z cy $
+# $FreeBSD: head/mail/nmh/Makefile 465323 2018-03-22 22:47:19Z cy $
 
 PORTNAME=	nmh
-PORTVERSION=	1.7
+PORTVERSION=	1.7.1
 CATEGORIES=	mail
 MASTER_SITES=	SAVANNAH
 

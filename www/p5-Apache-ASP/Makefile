@@ -1,9 +1,8 @@
 # Created by: Igor Vinokurov <igor@zynaps.ru>
-# $FreeBSD: head/www/p5-Apache-ASP/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Apache-ASP/Makefile 464697 2018-03-16 15:21:07Z sunpoet $
 
 PORTNAME=	Apache-ASP
-PORTVERSION=	2.62
-PORTREVISION=	1
+PORTVERSION=	2.63
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -32,6 +31,7 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 #MODPERL_SUFFIX?=+mod_perl
 #.endif
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

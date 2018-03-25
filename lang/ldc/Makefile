@@ -1,5 +1,5 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/lang/ldc/Makefile 461461 2018-02-11 07:44:21Z antoine $
+# $FreeBSD: head/lang/ldc/Makefile 465145 2018-03-21 03:45:55Z bdrewery $
 
 PORTNAME=	ldc
 PORTVERSION=	1.7.0
@@ -49,7 +49,9 @@ post-patch:
 		${WRKSRC}/cmake/Modules/FindLLVM.cmake
 
 pre-configure:
-	@cd ${WRKDIR}/${PORTNAME}-${BOOTVER:S/$/-src/} && ${CMAKE_BIN} .
-	@cd ${WRKDIR}/${PORTNAME}-${BOOTVER:S/$/-src/} && ${MAKE}
+	@cd ${WRKDIR}/${PORTNAME}-${BOOTVER:S/$/-src/} && \
+	    ${SETENV} ${CONFIGURE_ENV} ${CMAKE_BIN} .
+	@cd ${WRKDIR}/${PORTNAME}-${BOOTVER:S/$/-src/} && \
+	    ${SETENV} ${MAKE_ENV} ${MAKE}
 
 .include <bsd.port.post.mk>

@@ -1,8 +1,9 @@
 # Created by: Luca Pizzamiglio <pizzamig@FreeBSD.org>
-# $FreeBSD: head/sysutils/pot/Makefile 461757 2018-02-13 23:01:20Z pizzamig $
+# $FreeBSD: head/sysutils/pot/Makefile 465179 2018-03-21 14:11:31Z pizzamig $
 
 PORTNAME=	pot
-PORTVERSION=	0.4.0
+PORTVERSION=	0.5.0
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	pizzamig@FreeBSD.org
@@ -15,6 +16,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	pizzamig
 NO_ARCH=	yes
 NO_BUILD=	yes
+USE_RC_SUBR=	pot
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/bin/pot \

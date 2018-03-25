@@ -1,9 +1,9 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/anjuta/Makefile 460237 2018-01-29 03:10:26Z truckman $
+# $FreeBSD: head/devel/anjuta/Makefile 465240 2018-03-21 21:24:43Z brnrd $
 
 PORTNAME=	anjuta
 PORTVERSION=	3.18.2
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

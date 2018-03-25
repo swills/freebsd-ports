@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@regency.nsu.ru>
-# $FreeBSD: head/misc/wmcalendar/Makefile 440024 2017-05-03 17:09:38Z pawel $
+# $FreeBSD: head/misc/wmcalendar/Makefile 465061 2018-03-20 02:54:23Z truckman $
 
 PORTNAME=	wmcalendar
 PORTVERSION=	0.5.2
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	misc windowmaker
 MASTER_SITES=	SF
 

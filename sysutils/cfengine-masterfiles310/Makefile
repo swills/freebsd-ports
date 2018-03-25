@@ -1,9 +1,8 @@
 # Created by: cy@FreeBSD.org
-# $FreeBSD: head/sysutils/cfengine-masterfiles310/Makefile 451263 2017-10-05 01:56:32Z cy $
+# $FreeBSD: head/sysutils/cfengine-masterfiles310/Makefile 465143 2018-03-21 01:33:32Z cy $
 
 PORTNAME=	cfengine-masterfiles
-PORTVERSION=	3.10.1
-PORTREVISION=	1
+PORTVERSION=	3.10.3
 CATEGORIES=	sysutils
 MASTER_SITES=	https://cfengine-package-repos.s3.amazonaws.com/tarballs/
 

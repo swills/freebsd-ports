@@ -1,9 +1,8 @@
 # Created by: Eric van Gyzen <vangyzen@stat.duke.edu>
-# $FreeBSD: head/math/libRmath/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/libRmath/Makefile 464975 2018-03-19 01:49:03Z jrm $
 
 PORTNAME=	libRmath
-DISTVERSION=	3.4.3
-PORTREVISION=	1
+DISTVERSION=	3.4.4
 CATEGORIES=	math lang
 MASTER_SITES=	CRAN/src/base/R-${PORTVERSION:C|\..*||}
 DISTNAME=	R-${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}
@@ -38,7 +37,7 @@ OPTIONS_EXCLUDE_armv6=	FLANG
 OPTIONS_EXCLUDE_armv7=	FLANG
 OPTIONS_EXCLUDE_i386=	FLANG
 
-FLANG_DESC=		Use flang instead of the default Fortran compiler
+FLANG_DESC=		Use experimental flang instead of default Fortran compiler
 FLANG_USES=		fortran:flang
 FLANG_USES_OFF=		fortran
 

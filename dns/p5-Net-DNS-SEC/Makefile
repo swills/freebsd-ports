@@ -1,7 +1,7 @@
-# $FreeBSD: head/dns/p5-Net-DNS-SEC/Makefile 462028 2018-02-16 15:42:17Z sunpoet $
+# $FreeBSD: head/dns/p5-Net-DNS-SEC/Makefile 465473 2018-03-24 21:11:09Z sunpoet $
 
 PORTNAME=	Net-DNS-SEC
-PORTVERSION=	1.04
+PORTVERSION=	1.06
 CATEGORIES=	dns perl5
 MASTER_SITES=	CPAN \
 		http://www.ripe.net/ripencc/pub-services/np/DISI/SRC/

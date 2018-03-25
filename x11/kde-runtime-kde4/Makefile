@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kde-runtime-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/x11/kde-runtime-kde4/Makefile 465437 2018-03-24 08:55:20Z tcberner $
 
 PORTNAME=	kde-runtime
 PORTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -57,6 +57,9 @@ ZEITGEIST_RUN_DEPENDS=	zeitgeist-daemon:sysutils/zeitgeist
 # Explicitly disable ALSA, see for details:
 # http://mail.kde.org/pipermail/kde-freebsd/2010-March/008015.html
 CMAKE_ARGS+=	-DWITH_ALSA:BOOL=OFF
+
+# Override KDE_APPLICATIONS_VERSION
+KDE_APPLICATIONS_VERSION=	16.12.3
 
 post-extract:
 # Don't install share/icons/hicolor/index.theme to avoid conflcit with

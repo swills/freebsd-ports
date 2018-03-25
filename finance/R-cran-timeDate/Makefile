@@ -1,9 +1,8 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/finance/R-cran-timeDate/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/finance/R-cran-timeDate/Makefile 464827 2018-03-17 15:51:26Z dbn $
 
 PORTNAME=	timeDate
-DISTVERSION=	3042.101
-PORTREVISION=	1
+DISTVERSION=	3043.102
 CATEGORIES=	finance
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

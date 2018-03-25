@@ -1,4 +1,4 @@
-# $FreeBSD: head/finance/gnucash/Makefile 464068 2018-03-10 11:22:59Z cpm $
+# $FreeBSD: head/finance/gnucash/Makefile 464998 2018-03-19 08:46:08Z madpilot $
 #   $MCom: ports/finance/gnucash/Makefile,v 1.26 2008/12/31 03:25:18 mezz Exp $
 
 PORTNAME=	gnucash
@@ -23,6 +23,8 @@ LIB_DEPENDS=	libgnome-keyring.so:security/libgnome-keyring \
 RUN_DEPENDS=	p5-libwww>=0:www/p5-libwww \
 		p5-Date-Manip>=0:devel/p5-Date-Manip \
 		p5-Finance-Quote>=0:finance/p5-Finance-Quote
+
+PORTSCOUT=	 limitw:1,even
 
 FLAVORS=		guile2 guile1
 

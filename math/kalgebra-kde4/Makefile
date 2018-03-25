@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/kalgebra-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/math/kalgebra-kde4/Makefile 465444 2018-03-24 10:13:33Z tcberner $
 
 PORTNAME=	kalgebra
 PORTVERSION=	${KDE4_VERSION}
@@ -14,7 +14,7 @@ CMAKE_ARGS=	-DBUILD_mobile:BOOL=FALSE
 
 USES=		cmake:outsource kde:4 tar:xz
 USE_GL=		glu
-USE_KDE=	kdelibs libkdeedu automoc4
+USE_KDE=	kdelibs libkeduvocdocument automoc4
 USE_QT4=	corelib declarative gui opengl \
 		moc_build qmake_build rcc_build uic_build
 

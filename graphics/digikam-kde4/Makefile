@@ -1,9 +1,9 @@
 # Created by: Arjan van Leeuwen <avleeuwen@piwebs.com>
-# $FreeBSD: head/graphics/digikam-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/graphics/digikam-kde4/Makefile 465097 2018-03-20 17:19:01Z tcberner $
 
 PORTNAME=	digikam
 PORTVERSION=	${DIGIKAM_VER}
-PORTREVISION=	11
+PORTREVISION=	12
 PORTEPOCH=	2
 CATEGORIES=	graphics kde
 
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libtiff.so:graphics/tiff \
 		liblqr-1.so:graphics/liblqr-1 \
 		libkface.so:graphics/libkface \
 		libpgf.so:graphics/libpgf \
-		libkgeomap.so:astro/libkgeomap \
+		libkgeomap.so:astro/libkgeomap-kde4 \
 		libboost_graph.so:devel/boost-libs
 
 USES+=		eigen:3 pkgconfig shebangfix

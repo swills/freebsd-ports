@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 464131 2018-03-10 23:22:45Z yuri $
+# $FreeBSD: head/audio/Makefile 464995 2018-03-19 08:23:13Z tobik $
 #
 
     COMMENT = Audio tools
@@ -21,6 +21,7 @@
     SUBDIR += alienwah
     SUBDIR += alsa-lib
     SUBDIR += alsa-plugins
+    SUBDIR += alsa-sndio
     SUBDIR += alsa-utils
     SUBDIR += alure
     SUBDIR += amarok-kde4

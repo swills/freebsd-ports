@@ -1,11 +1,11 @@
-# $FreeBSD: head/textproc/senna/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/textproc/senna/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	senna
 PORTVERSION=	1.1.5
 PORTREVISION=	6
 PORTEPOCH=	1
 CATEGORIES=	textproc
-MASTER_SITES=	SFJP/senna/46945
+MASTER_SITES=	OSDN/senna/46945
 
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Embeddable Fulltext Search Engine

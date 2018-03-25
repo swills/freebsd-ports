@@ -1,5 +1,5 @@
 # Created by: masaki
-# $FreeBSD: head/japanese/font-ricty/Makefile 431402 2017-01-13 16:54:55Z mat $
+# $FreeBSD: head/japanese/font-ricty/Makefile 465067 2018-03-20 06:16:18Z meta $
 
 PORTNAME=	ricty
 PORTVERSION=	3.2.4
@@ -11,7 +11,7 @@ DISTFILES=	ricty_generator-${PORTVERSION}.sh ricty_discord_converter.pe
 DIST_SUBDIR=	${PORTNAME}
 EXTRACT_ONLY=	# nothing
 
-MAINTAINER?=	meta+ports@vmeta.jp
+MAINTAINER?=	meta@FreeBSD.org
 COMMENT?=	Ricty - fonts for programming
 
 LICENSE=	OFL11

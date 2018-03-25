@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/py-PyWavelets/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/py-PyWavelets/Makefile 465335 2018-03-23 08:28:05Z makc $
 
 PORTNAME=	PyWavelets
 PORTVERSION=	0.5.2
@@ -21,7 +21,7 @@ RUN_DEPENDS=	${PYNUMPY} \
 USE_GITHUB=	yes
 GH_PROJECT=	pywt
 
-USES=		cpe python:2.7
+USES=		cpe python
 USE_PYTHON=	autoplist distutils cython cython_run
 
 PYDISTUTILS_BUILD_TARGET=	build build_ext

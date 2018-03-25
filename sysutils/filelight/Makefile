@@ -1,8 +1,9 @@
 # Created by: Rusty Nejdl <rnejdl@ringofsaturn.com>
-# $FreeBSD: head/sysutils/filelight/Makefile 449946 2017-09-16 07:10:37Z tcberner $
+# $FreeBSD: head/sysutils/filelight/Makefile 465345 2018-03-23 11:00:37Z adridg $
 
 PORTNAME=	filelight
 PORTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	sysutils kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -10,6 +11,8 @@ COMMENT=	Map of concentric segmented-rings representing file system
 
 BUILD_DEPENDS=	${LOCALBASE}/share/xsl/docbook/html/docbook.xsl:textproc/docbook-xsl \
 		docbook-xml>0:textproc/docbook-xml
+
+CONFLICTS_INSTALL=      ${PORTNAME}-kde4*
 
 USES=		cmake:outsource desktop-file-utils gettext kde:5 tar:xz
 USE_KDE=	auth codecs completion config configwidgets coreaddons doctools \

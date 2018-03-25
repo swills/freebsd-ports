@@ -1,5 +1,5 @@
 # Created by: Stefan Eggers <seggers@semyam.dinoco.de>
-# $FreeBSD: head/games/crafty/Makefile 461319 2018-02-09 16:13:07Z johans $
+# $FreeBSD: head/games/crafty/Makefile 464919 2018-03-18 14:58:22Z linimon $
 
 PORTNAME=	crafty
 PORTVERSION=	25.2
@@ -15,6 +15,10 @@ EXTRACT_ONLY=	crafty-${PORTVERSION}.zip
 
 MAINTAINER=	johans@FreeBSD.org
 COMMENT=	Chess program for playing and analyzing games
+
+BROKEN_aarch64=		fails to compile: invokes x86 assembler
+BROKEN_armv6=		fails to compile: invokes x86 assembler
+BROKEN_armv7=		fails to compile: invokes x86 assembler
 
 WRKSRC=		${WRKDIR}
 
@@ -36,7 +40,7 @@ OPT=		-DHASHSTATS -DTRACE -DBOOKDIR=\\\"${WITH_BOOKDIR}\\\" \
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} == "i386" || ${ARCH} == "amd64"
+.if ${ARCH} == amd64 || ${ARCH} == i386
 OPT+=		-DCPUS=4
 .else
 OPT+=		-DCPUS=1 # disables x86 assembler

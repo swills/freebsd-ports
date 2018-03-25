@@ -1,5 +1,5 @@
 # Created by: ofsen@enderunix.org
-# $FreeBSD: head/mail/isoqlog/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/mail/isoqlog/Makefile 464820 2018-03-17 14:13:17Z dbaio $
 
 PORTNAME=	isoqlog
 PORTVERSION=	2.2.1
@@ -13,13 +13,12 @@ COMMENT=	Qmail, postfix, sendmail, exim MTA log analysis program
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-GNU_CONFIGURE=	yes
 USES=		gmake
-
-OPTIONS_DEFINE=	DOCS
+GNU_CONFIGURE=	yes
 
 SUB_FILES=	pkg-message
 
 PORTDOCS=	*
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>

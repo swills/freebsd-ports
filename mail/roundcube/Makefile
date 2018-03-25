@@ -1,7 +1,7 @@
-# $FreeBSD: head/mail/roundcube/Makefile 463009 2018-02-26 09:38:24Z ale $
+# $FreeBSD: head/mail/roundcube/Makefile 465346 2018-03-23 11:02:37Z ale $
 
 PORTNAME=	roundcube
-DISTVERSION=	1.3.4
+DISTVERSION=	1.3.5
 PORTEPOCH=	1
 CATEGORIES?=	mail www
 MASTER_SITES=	https://github.com/roundcube/roundcubemail/releases/download/${DISTVERSION}/

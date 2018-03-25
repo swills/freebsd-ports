@@ -1,9 +1,8 @@
 # Created by: jrhett@netconsonance.com
-# $FreeBSD: head/sysutils/cfengine37/Makefile 451263 2017-10-05 01:56:32Z cy $
+# $FreeBSD: head/sysutils/cfengine37/Makefile 465141 2018-03-21 01:33:22Z cy $
 
 PORTNAME=	cfengine
-PORTVERSION=	3.7.3
-PORTREVISION=	4
+PORTVERSION=	3.7.7
 CATEGORIES=	sysutils
 MASTER_SITES=	https://s3.amazonaws.com/cfengine-package-repos/tarballs/
 

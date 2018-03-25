@@ -1,8 +1,8 @@
 # Created by: clive@FreeBSD.org
-# $FreeBSD: head/databases/p5-DBD-ODBC/Makefile 463431 2018-03-02 18:51:48Z sunpoet $
+# $FreeBSD: head/databases/p5-DBD-ODBC/Makefile 465215 2018-03-21 19:03:08Z sunpoet $
 
 PORTNAME=	DBD-ODBC
-PORTVERSION=	1.57
+PORTVERSION=	1.58
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

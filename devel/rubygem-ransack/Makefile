@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-ransack/Makefile 461086 2018-02-06 19:18:20Z sunpoet $
+# $FreeBSD: head/devel/rubygem-ransack/Makefile 464894 2018-03-18 11:27:03Z sunpoet $
 
 PORTNAME=	ransack
-PORTVERSION=	1.8.7
+PORTVERSION=	1.8.8
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
