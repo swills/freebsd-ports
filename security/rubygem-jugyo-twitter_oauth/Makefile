@@ -1,12 +1,12 @@
 # Created by: Koichiro IWAO <meta+ports@vmeta.jp>
-# $FreeBSD: head/security/rubygem-jugyo-twitter_oauth/Makefile 432064 2017-01-21 17:29:23Z sunpoet $
+# $FreeBSD: head/security/rubygem-jugyo-twitter_oauth/Makefile 465067 2018-03-20 06:16:18Z meta $
 
 PORTNAME=	jugyo-twitter_oauth
 DISTVERSION=	0.5.0.pre5
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	meta+ports@vmeta.jp
+MAINTAINER=	meta@FreeBSD.org
 COMMENT=	Fork of Twitter OAuth REST API client library for Ruby
 
 LICENSE=	MIT

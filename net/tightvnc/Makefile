@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/net/tightvnc/Makefile 425758 2016-11-08 19:29:56Z linimon $
+# $FreeBSD: head/net/tightvnc/Makefile 465067 2018-03-20 06:16:18Z meta $
 
 PORTNAME=	tightvnc
 PORTVERSION=	1.3.10
@@ -8,7 +8,7 @@ CATEGORIES=	net java
 MASTER_SITES=	SF/vnc-tight/TightVNC-unix/${PORTVERSION}
 DISTNAME=	${PORTNAME}-${PORTVERSION}_unixsrc
 
-MAINTAINER=	meta+ports@vmeta.jp
+MAINTAINER=	meta@FreeBSD.org
 COMMENT=	Enhanced version of VNC
 
 LICENSE=	GPLv2

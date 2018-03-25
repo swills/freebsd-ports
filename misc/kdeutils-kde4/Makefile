@@ -1,9 +1,9 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/misc/kdeutils-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/misc/kdeutils-kde4/Makefile 465345 2018-03-23 11:00:37Z adridg $
 
 PORTNAME=	kdeutils
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	misc kde
 PKGNAMESUFFIX=	-kde4
 
@@ -21,7 +21,7 @@ ARK_DESC=		Archiving tool Ark
 ARK_RUN_DEPENDS=	${KDE_PREFIX}/bin/ark:archivers/ark-kde4
 
 FILELIGHT_DESC=		File system viewer Filelight
-FILELIGHT_RUN_DEPENDS=	${KDE_PREFIX}/bin/filelight:sysutils/filelight
+FILELIGHT_RUN_DEPENDS=	${KDE_PREFIX}/bin/filelight:sysutils/filelight-kde4
 
 KCALC_DESC=		Scientific calculator KCalc
 KCALC_RUN_DEPENDS=	${KDE_PREFIX}/bin/kcalc:math/kcalc-kde4

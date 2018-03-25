@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/eq10q-lv2/Makefile 457513 2017-12-29 16:33:11Z linimon $
+# $FreeBSD: head/audio/eq10q-lv2/Makefile 464858 2018-03-18 03:01:49Z linimon $
 
 PORTNAME=	eq10q
 DISTVERSION=	2.2
@@ -14,6 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_aarch64=		fails to compile: unknown FP unit 'sse'
 BROKEN_armv6=		fails to compile: unknown FP unit 'sse'
+BROKEN_armv7=		fails to compile: unknown FP unit 'sse'
 BROKEN_mips64=		fails to compile: unknown FP unit 'sse'
 
 BUILD_DEPENDS=	lv2>0:audio/lv2

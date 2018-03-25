@@ -1,12 +1,12 @@
 # Created by: Pietro Cerutti <gahr@gahr.ch>
-# $FreeBSD: head/graphics/separate/Makefile 428132 2016-12-08 16:07:33Z tijl $
+# $FreeBSD: head/graphics/separate/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	separate
 PORTVERSION=	0.5.8
 PORTREVISION=	5
 PORTEPOCH=	1
 CATEGORIES=	graphics
-MASTER_SITES=	SFJP/separate-plus/47873
+MASTER_SITES=	OSDN/separate-plus/47873
 DISTNAME=	${PORTNAME}+-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org

@@ -1,16 +1,18 @@
 # Created by: Dmitry Kazarov <d.y.kazarov@mail.ru>
-# $FreeBSD: head/print/qpdf/Makefile 460959 2018-02-05 03:24:42Z yuri $
+# $FreeBSD: head/print/qpdf/Makefile 465064 2018-03-20 05:13:24Z yuri $
 
 PORTNAME=	qpdf
-PORTVERSION=	7.1.1
+DISTVERSION=	8.0.1
 CATEGORIES=	print
 MASTER_SITES=	SF
 
 MAINTAINER=	d.y.kazarov@mail.ru
 COMMENT=	Command-line tools for transforming and inspecting PDF documents
 
-LICENSE=	ART20
-LICENSE_FILE=	${WRKSRC}/Artistic-2.0
+LICENSE=	ART20 APACHE20
+LICENSE_COMB=	dual
+LICENSE_FILE_ART20=	${WRKSRC}/Artistic-2.0
+LICENSE_FILE_APACHE20=	${WRKSRC}/LICENSE.txt
 
 USES=		gmake jpeg libtool localbase
 GNU_CONFIGURE=	yes

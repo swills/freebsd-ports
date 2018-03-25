@@ -1,5 +1,5 @@
 # Created by: Scott Sanders <scott@jssjr.com>
-# $FreeBSD: head/textproc/rubygem-fast_xs073/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/textproc/rubygem-fast_xs073/Makefile 464901 2018-03-18 11:46:30Z sunpoet $
 
 PORTNAME=	fast_xs
 PORTVERSION=	0.7.3
@@ -12,6 +12,9 @@ MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Systems integration framework. Expander
 
 LICENSE=	MIT
+
+DEPRECATED=	Use textproc/rubygem-fast_xs instead
+EXPIRATION_DATE=2018-03-31
 
 RUN_DEPENDS=	rubygem-hoe>=2.3.2:devel/rubygem-hoe
 

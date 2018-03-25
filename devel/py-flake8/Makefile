@@ -1,8 +1,8 @@
 # Created by: William Grzybowski <william88@gmail.com>
-# $FreeBSD: head/devel/py-flake8/Makefile 463076 2018-02-26 22:31:41Z sunpoet $
+# $FreeBSD: head/devel/py-flake8/Makefile 465133 2018-03-20 22:36:20Z sunpoet $
 
 PORTNAME=	flake8
-PORTVERSION=	3.3.0
+PORTVERSION=	3.5.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,9 +14,9 @@ LICENSE=	MIT
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-runner>=0:devel/py-pytest-runner@${FLAVOR}
 RUN_DEPENDS=	${PY_ENUM34} \
-		${PYTHON_PKGNAMEPREFIX}mccabe>=0.5.0:devel/py-mccabe@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mccabe>=0.6.0:devel/py-mccabe@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pycodestyle>=2.0.0:devel/py-pycodestyle@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyflakes>=0.8.1:devel/py-pyflakes@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pyflakes>=1.5.0:devel/py-pyflakes@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

@@ -1,5 +1,5 @@
 # Created by: Johann Visagie <wjv@FreeBSD.org>
-# $FreeBSD: head/biology/migrate/Makefile 413499 2016-04-17 10:15:59Z amdmi3 $
+# $FreeBSD: head/biology/migrate/Makefile 464909 2018-03-18 13:48:07Z linimon $
 
 PORTNAME=	migrate
 PORTVERSION=	3.6.11
@@ -9,6 +9,10 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}.src
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Program to estimate population sizes and migration rates
+
+BROKEN_armv6=		fails to build: make[2]: cannot open makefile
+BROKEN_armv7=		fails to build: make[2]: cannot open makefile
+BROKEN_mips=		fails to build: make[2]: cannot open makefile
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/src
 EXTRACT_AFTER_ARGS=--exclude zlib

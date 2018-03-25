@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 464532 2018-03-14 20:55:52Z rene $
+# $FreeBSD: head/www/Makefile 465469 2018-03-24 21:10:49Z sunpoet $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -62,6 +62,7 @@
     SUBDIR += calamaris-devel
     SUBDIR += caldavzap
     SUBDIR += calendarserver
+    SUBDIR += carbonapi
     SUBDIR += castget
     SUBDIR += cblog
     SUBDIR += cgi-lib
@@ -1039,6 +1040,7 @@
     SUBDIR += p5-HTTP-Thin
     SUBDIR += p5-HTTP-Tiny
     SUBDIR += p5-HTTP-Tiny-SPDY
+    SUBDIR += p5-HTTP-Tiny-UA
     SUBDIR += p5-HTTP-WebTest
     SUBDIR += p5-HTTP-XSCookies
     SUBDIR += p5-HTTPD-Log-Filter
@@ -1681,6 +1683,7 @@
     SUBDIR += py-gevent-websocket
     SUBDIR += py-goobook
     SUBDIR += py-google
+    SUBDIR += py-google-api-core
     SUBDIR += py-google-api-python-client
     SUBDIR += py-google-cloud-core
     SUBDIR += py-google-cloud-storage
@@ -2416,6 +2419,7 @@
     SUBDIR += varnish-nagios
     SUBDIR += varnish4
     SUBDIR += varnish5
+    SUBDIR += varnish6
     SUBDIR += vdr-plugin-live
     SUBDIR += vdradmin-am
     SUBDIR += vee
@@ -2450,6 +2454,7 @@
     SUBDIR += webreport
     SUBDIR += webresolve
     SUBDIR += websh
+    SUBDIR += websocketd
     SUBDIR += webstats
     SUBDIR += webstone
     SUBDIR += webstone-ssl

@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 462851 2018-02-24 17:10:08Z jrm $
+# $FreeBSD: head/lang/Makefile 464830 2018-03-17 16:07:29Z yuri $
 #
 
     COMMENT = Programming languages
@@ -182,6 +182,7 @@
     SUBDIR += mosh
     SUBDIR += mosml
     SUBDIR += mtasc
+    SUBDIR += mujs
     SUBDIR += munger
     SUBDIR += myrddin
     SUBDIR += nawk

@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 464374 2018-03-13 13:48:06Z jbeich $
+# $FreeBSD: head/Mk/bsd.gecko.mk 464981 2018-03-19 05:46:02Z tobik $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -365,13 +365,17 @@ post-patch-SNDIO-on:
 . for tests in tests gtest
 	@if [ -f "${MOZSRC}/media/libcubeb/${tests}/moz.build" ]; then \
 		${REINPLACE_CMD} -e 's|OpenBSD|${OPSYS}|g' \
-			 ${MOZSRC}/media/libcubeb/${tests}/moz.build \
-	; fi
+			 ${MOZSRC}/media/libcubeb/${tests}/moz.build; \
+	fi
 . endfor
-	@${REINPLACE_CMD} -e 's|OS==\"openbsd\"|OS==\"${OPSYS:tl}\"|g' \
-		${MOZSRC}/media/webrtc/trunk/webrtc/build/common.gypi
-	@${ECHO_CMD} "OS_LIBS += ['sndio']" >> \
-		${MOZSRC}/media/webrtc/signaling/test/common.build
+	@if [ -f "${MOZSRC}/media/webrtc/trunk/webrtc/build/common.gypi" ]; then \
+		${REINPLACE_CMD} -e 's|OS==\"openbsd\"|OS==\"${OPSYS:tl}\"|g' \
+			${MOZSRC}/media/webrtc/trunk/webrtc/build/common.gypi; \
+	fi
+	@if [ -f "${MOZSRC}/media/webrtc/signaling/test/common.build" ]; then \
+		${ECHO_CMD} "OS_LIBS += ['sndio']" >> \
+			${MOZSRC}/media/webrtc/signaling/test/common.build; \
+	fi
 .endif
 
 .if ${PORT_OPTIONS:MRUST} || ${MOZILLA_VER:R:R} >= 54

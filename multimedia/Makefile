@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 464333 2018-03-13 00:57:09Z jrm $
+# $FreeBSD: head/multimedia/Makefile 465360 2018-03-23 14:44:01Z bapt $
 #
 
     COMMENT = Multimedia software
@@ -74,7 +74,6 @@
     SUBDIR += gcfilms
     SUBDIR += gdialog
     SUBDIR += gdvrecv
-    SUBDIR += gmencoder
     SUBDIR += gmerlin
     SUBDIR += gmerlin-avdecoder
     SUBDIR += gmimms
@@ -312,7 +311,6 @@
     SUBDIR += playd
     SUBDIR += plexmediaserver
     SUBDIR += plexmediaserver-plexpass
-    SUBDIR += plexpy
     SUBDIR += plexwatch
     SUBDIR += podcastdl
     SUBDIR += poe
@@ -397,6 +395,7 @@
     SUBDIR += swfdec-gnome
     SUBDIR += syncplay
     SUBDIR += szap-s2
+    SUBDIR += tautulli
     SUBDIR += tcmplex-panteltje
     SUBDIR += tivodecode
     SUBDIR += totem

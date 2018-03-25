@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/ccnet-server/Makefile 449260 2017-09-04 19:49:41Z ultima $
+# $FreeBSD: head/net-mgmt/ccnet-server/Makefile 464709 2018-03-16 15:22:10Z sunpoet $
 
 PORTNAME=	ccnet-server
 DISTVERSIONPREFIX=	v
@@ -28,7 +28,7 @@ USE_GNOME=	glib20
 USE_LDCONFIG=	yes
 USE_OPENLDAP=	yes
 
-CONFLICT=	ccnet-[0-9]*
+CONFLICTS=	ccnet-[0-9]*
 
 CONFIGURE_ENV=	SSL_CFLAGS="${OPENSSLINC}" SSL_LIBS="-L${OPENSSLLIB} -lssl -lcrypto"
 GNU_CONFIGURE=	yes

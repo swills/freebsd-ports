@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-qtconsole/Makefile 464614 2018-03-15 17:49:40Z swills $
+# $FreeBSD: head/devel/py-qtconsole/Makefile 465039 2018-03-19 22:47:16Z swills $
 
 PORTNAME=	qtconsole
 PORTVERSION=	4.3.1
@@ -20,6 +20,6 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}traitlets>=0:devel/py-traitlets@${FLAVOR} \
 
 USES=		pyqt:4 python
 USE_PYQT=	core gui svg
-USE_PYTHON=	distutils flavors autoplist
+USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

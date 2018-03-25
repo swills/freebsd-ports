@@ -1,9 +1,8 @@
 # Created by: KIMURA Yasuhiro <yasu@utahime.org>
-# $FreeBSD: head/devel/git-modes/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/devel/git-modes/Makefile 465404 2018-03-23 20:27:04Z yuri $
 
 PORTNAME=	git-modes
-PORTVERSION=	1.2.6
-PORTREVISION=	2
+DISTVERSION=	1.2.7
 PORTEPOCH=	1
 CATEGORIES=	devel elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
@@ -12,16 +11,15 @@ MAINTAINER=	yasu@utahime.org
 COMMENT=	GNU Emacs modes for Git-related files
 
 LICENSE=	GPLv3
-LICENSE_FILE=	${WRKSRC}/COPYING
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		emacs gmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	magit
+NO_ARCH=	yes
+ALL_TARGET=	lisp
 
 PORTDOCS=	README.md
-NO_ARCH=	yes
-
-ALL_TARGET=	lisp
 
 OPTIONS_DEFINE=	DOCS GIT_SUBVERSION
 

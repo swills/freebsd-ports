@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/cairo-dock-plugins/Makefile 455038 2017-11-28 11:52:52Z amdmi3 $
+# $FreeBSD: head/deskutils/cairo-dock-plugins/Makefile 465061 2018-03-20 02:54:23Z truckman $
 
 PORTNAME=	cairo-dock-plugins
 PORTVERSION=	3.4.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	deskutils
 
 MAINTAINER=	ports@FreeBSD.org

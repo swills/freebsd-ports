@@ -1,12 +1,12 @@
 # Created by: Jun Mukai <mukai@jmuk.org>
-# $FreeBSD: head/japanese/scim-skk/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/scim-skk/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 #    $MCom: ports/japanese/scim-skk/Makefile,v 1.1 2006/09/30 05:17:05 ahze Exp $
 
 PORTNAME=	scim-skk
 PORTVERSION=	0.5.2
 PORTREVISION=	12
 CATEGORIES=	japanese
-MASTER_SITES=	SFJP/scim-imengine/18121
+MASTER_SITES=	OSDN/scim-imengine/18121
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SCIM IMEngine module like SKK

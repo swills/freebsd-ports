@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/google-daemon/Makefile 463115 2018-02-27 12:23:22Z amdmi3 $
+# $FreeBSD: head/net/google-daemon/Makefile 465388 2018-03-23 17:19:00Z swills $
 
 PORTNAME=	google-daemon
 PORTVERSION=	1.2.1
@@ -8,6 +8,9 @@ CATEGORIES=	net
 
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Google daemon for use with Google Cloud Compute Engine
+
+DEPRECATED=	Please use sysutils/py-google-compute-engine instead
+EXPIRATION_DATE=2018-04-24
 
 BUILD_DEPENDS=	python:lang/python
 RUN_DEPENDS=	python:lang/python \

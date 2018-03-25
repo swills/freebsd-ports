@@ -1,5 +1,5 @@
 # Created by: Thomas Zander <riggs@FreeBSD.org>
-# $FreeBSD: head/audio/pms-devel/Makefile 454446 2017-11-18 15:43:45Z riggs $
+# $FreeBSD: head/audio/pms-devel/Makefile 464866 2018-03-18 03:55:13Z yuri $
 
 PORTNAME=	pms-devel
 PORTVERSION=	0.0.20171103
@@ -45,7 +45,7 @@ post-extract:
 
 do-build:
 	@cd ${WRKSRC}; \
-	${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -ldflags "-X main.buildVersion=${DISTVERSION}"
+	${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -ldflags "-X main.buildVersion=${DISTVERSION}"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pms-${GH_TAGNAME} ${STAGEDIR}${PREFIX}/bin/${GO_PKGNAME}

@@ -1,9 +1,9 @@
 # Created by: Gavin McDonald <gavin@16degrees.com.au>
-# $FreeBSD: head/security/orthrus/Makefile 436577 2017-03-21 09:01:56Z amdmi3 $
+# $FreeBSD: head/security/orthrus/Makefile 465240 2018-03-21 21:24:43Z brnrd $
 
 PORTNAME=	orthrus
 PORTVERSION=	0.8.0
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	security
 MASTER_SITES=	https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/orthrus/  \
 		http://16degrees.com.au/${PORTNAME}/

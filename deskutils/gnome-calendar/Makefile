@@ -1,9 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/deskutils/gnome-calendar/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/deskutils/gnome-calendar/Makefile 465061 2018-03-20 02:54:23Z truckman $
 
 PORTNAME=	gnome-calendar
 PORTVERSION=	3.18.2.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

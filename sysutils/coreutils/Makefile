@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/coreutils/Makefile 454310 2017-11-16 14:01:31Z culot $
+# $FreeBSD: head/sysutils/coreutils/Makefile 464774 2018-03-17 09:25:03Z antoine $
 
 PORTNAME=	coreutils
 PORTVERSION=	8.28
@@ -21,6 +21,10 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--program-prefix=g	\
 		--program-transform-name=s/stat/nustat/
 CONFIGURE_ENV=	FORCE_UNSAFE_CONFIGURE=1
+.ifdef QEMU_EMULATING
+# XXX bug 224740: configure hangs
+CONFIGURE_ENV+=	gl_cv_func_printf_enomem=no
+.endif
 CPPFLAGS+=	-I${LOCALBASE}/include
 LIBS+=		-L${LOCALBASE}/lib
 

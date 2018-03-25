@@ -1,9 +1,9 @@
-# $FreeBSD: head/japanese/font-ayu20/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/font-ayu20/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	ayu20
 PORTVERSION=	1.7.a
 CATEGORIES=	japanese x11-fonts
-MASTER_SITES=	SFJP/x-tt/8536/
+MASTER_SITES=	OSDN/x-tt/8536/
 PKGNAMEPREFIX=	ja-font-
 DISTNAME=	ayu20gothic-1.7a
 

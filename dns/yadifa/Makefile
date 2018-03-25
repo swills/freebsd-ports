@@ -1,14 +1,12 @@
-# Created by: Mathieu Arnold <mat@FreeBSD.org>
-# $FreeBSD: head/dns/yadifa/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/dns/yadifa/Makefile 465289 2018-03-22 14:13:11Z mat $
 
 PORTNAME=	yadifa
-PORTVERSION=	2.2.3
-DISTVERSIONSUFFIX=	-6711
-PORTREVISION=	2
+DISTVERSION=	2.3.8
+DISTVERSIONSUFFIX=	-7713
 CATEGORIES=	dns ipv6
 MASTER_SITES=	http://cdn.yadifa.eu/sites/default/files/releases/
 
-MAINTAINER=	mat@FreeBSD.org
+MAINTAINER=	freebsd@dns.company
 COMMENT=	Authoritative nameserver with DNSSEC capabilities
 
 LICENSE=	BSD3CLAUSE

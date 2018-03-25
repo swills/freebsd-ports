@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/sysutils/rubygem-sys-admin/Makefile 462636 2018-02-22 19:51:20Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-sys-admin/Makefile 465127 2018-03-20 22:35:47Z sunpoet $
 
 PORTNAME=	sys-admin
-PORTVERSION=	1.7.0
+PORTVERSION=	1.7.1
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 

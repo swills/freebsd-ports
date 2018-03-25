@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/odo/Makefile 385665 2015-05-07 20:24:15Z mat $
+# $FreeBSD: head/sysutils/odo/Makefile 464996 2018-03-19 08:33:20Z amdmi3 $
 
 PORTNAME=	odo
 PORTVERSION=	0.2.2
@@ -19,7 +19,7 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/man/${PORTNAME}.1 ${STAGEDIR}${MAN1PREFIX}/man/man1
 
-regression-test: build
+do-test:
 	cd ${WRKSRC} && ${SH} ./test_odo
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-Plugin-Static-Simple/Makefile 464607 2018-03-15 17:45:47Z sunpoet $
+# $FreeBSD: head/www/p5-Catalyst-Plugin-Static-Simple/Makefile 464698 2018-03-16 15:21:13Z sunpoet $
 
 PORTNAME=	Catalyst-Plugin-Static-Simple
-PORTVERSION=	0.35
+PORTVERSION=	0.36
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

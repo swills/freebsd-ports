@@ -1,5 +1,5 @@
 # Created by: Adam David <adam@FreeBSD.org>
-# $FreeBSD: head/mail/procmail/Makefile 455800 2017-12-08 20:35:32Z sunpoet $
+# $FreeBSD: head/mail/procmail/Makefile 464971 2018-03-18 23:50:09Z linimon $
 
 PORTNAME=	procmail
 PORTVERSION=	3.22
@@ -18,6 +18,10 @@ MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Local mail delivery agent
 
 LICENSE=	GPLv2
+
+.if defined(QEMU_EMULATING) && "${QEMU_EMULATING}" == "1"
+BROKEN=		fails to build under qemu: killing runaway build after 21600 seconds with no output
+.endif
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 

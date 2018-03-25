@@ -1,7 +1,8 @@
 # Created by: Hiroyuki Iwatsuki <don@na.rim.or.jp>
-# $FreeBSD: head/devel/ruby-subversion/Makefile 441455 2017-05-22 13:17:38Z linimon $
+# $FreeBSD: head/devel/ruby-subversion/Makefile 465240 2018-03-21 21:24:43Z brnrd $
 
 PKGNAMEPREFIX=	ruby-
+PORTREVISION=	2
 
 MAINTAINER=	lev@FreeBSD.org
 COMMENT=	Ruby bindings for version control system

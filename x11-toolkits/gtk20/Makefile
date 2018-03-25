@@ -1,8 +1,8 @@
 # Created by: Vanilla I. Shu <vanilla@MinJe.com.TW>
-# $FreeBSD: head/x11-toolkits/gtk20/Makefile 455037 2017-11-28 11:47:42Z amdmi3 $
+# $FreeBSD: head/x11-toolkits/gtk20/Makefile 465364 2018-03-23 15:45:24Z bapt $
 
 PORTNAME=	gtk
-PORTVERSION=	2.24.31
+PORTVERSION=	2.24.32
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	GNOME/sources/gtk+/${PORTVERSION:C/^([0-9]+\.[0-9]+).*/\1/}
 PKGNAMESUFFIX=	2
@@ -45,7 +45,7 @@ CUPS_CONFIGURE_ON=	--enable-cups=auto
 CUPS_CONFIGURE_OFF=	--disable-cups
 DEBUG_CONFIGURE_ON=	--enable-debug=yes
 
-PLIST_SUB+=	LIBGAILVER=18.0.1 LIBGVER=0.2400.31
+PLIST_SUB+=	LIBGAILVER=18.0.1 LIBGVER=0.2400.32
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|[{]libdir[}]/locale|{datadir}/locale|g' \

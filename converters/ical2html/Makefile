@@ -1,9 +1,9 @@
 # Created by: keiichi@iijlab.net
-# $FreeBSD: head/converters/ical2html/Makefile 440024 2017-05-03 17:09:38Z pawel $
+# $FreeBSD: head/converters/ical2html/Makefile 465061 2018-03-20 02:54:23Z truckman $
 
 PORTNAME=	ical2html
 PORTVERSION=	2.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	converters
 MASTER_SITES=	http://www.w3.org/Tools/Ical2html/
 

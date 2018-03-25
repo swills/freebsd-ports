@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/net/xrdp/Makefile 426131 2016-11-14 19:06:32Z rene $
+# $FreeBSD: head/net/xrdp/Makefile 465067 2018-03-20 06:16:18Z meta $
 
 PORTNAME=	xrdp
 PORTVERSION=	0.6.2
@@ -8,7 +8,7 @@ PORTEPOCH=	1
 CATEGORIES=	net
 DIST_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	meta+ports@vmeta.jp
+MAINTAINER=	meta@FreeBSD.org
 COMMENT=	Open source Remote Desktop Protocol (RDP) server
 
 LICENSE=	GPLv2

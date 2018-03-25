@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/p5-Plack-Middleware-NoMultipleSlashes/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-Plack-Middleware-NoMultipleSlashes/Makefile 465366 2018-03-23 16:33:11Z swills $
 
 PORTNAME=	Plack-Middleware-NoMultipleSlashes
 PORTVERSION=	0.001
@@ -6,7 +6,7 @@ CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jeremybbaggs@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Automatically remove multiple slashes in your paths
 
 LICENSE=	GPLv1

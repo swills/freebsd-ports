@@ -1,10 +1,10 @@
 # Created by: Joe Kelsey
-# $FreeBSD: head/devel/libical/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/devel/libical/Makefile 465324 2018-03-22 23:32:43Z truckman $
 
 PORTNAME=	libical
 PORTVERSION=	2.0.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 
 MAINTAINER=	gnome@FreeBSD.org
@@ -15,13 +15,11 @@ LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libicuuc.so:devel/icu
 
+USES=		cmake compiler:c++11-lib pathfix perl5
 USE_GITHUB=	yes
-
-USES=		cmake pathfix perl5
+USE_GNOME=	introspection:build
 USE_PERL5=	build
 USE_LDCONFIG=	yes
-
-MAKE_JOBS_UNSAFE= yes
 
 .include <bsd.port.pre.mk>
 

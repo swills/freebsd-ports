@@ -1,11 +1,11 @@
 # Created by: Satoshi Taoka <taoka@FreeBSD.org>
-# $FreeBSD: head/japanese/FreeWnn-lib/Makefile 451987 2017-10-13 12:45:28Z bapt $
+# $FreeBSD: head/japanese/FreeWnn-lib/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	FreeWnn
 PORTVERSION=	1.1.1.a021
 PORTREVISION=	13
 CATEGORIES?=	japanese
-MASTER_SITES=	SFJP/freewnn/17724
+MASTER_SITES=	OSDN/freewnn/17724
 PKGNAMESUFFIX=	-lib
 DISTNAME=	${PORTNAME}-1.1.1-a021
 

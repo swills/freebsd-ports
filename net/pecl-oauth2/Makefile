@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/pecl-oauth2/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/net/pecl-oauth2/Makefile 465055 2018-03-20 02:20:07Z dbaio $
 
 PORTNAME=	oauth
 PORTVERSION=	2.0.2
@@ -12,14 +12,15 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
-PORTSCOUT=	limit:^2.*
+USES=		php:pecl
+IGNORE_WITH_PHP=	56
 
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 CONFIGURE_ARGS+=	CFLAGS="${CFLAGS}" LDFLAGS="${LDFLAGS}"
 
-USES=		php:pecl
-IGNORE_WITH_PHP=	56
 CONFLICTS=	pecl-oauth-1*
+
+PORTSCOUT=	limit:^2.*
 
 .include <bsd.port.mk>

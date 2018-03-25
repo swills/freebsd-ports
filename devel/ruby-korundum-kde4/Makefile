@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/ruby-korundum-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/devel/ruby-korundum-kde4/Makefile 465102 2018-03-20 18:03:48Z tcberner $
 
 PORTNAME=	korundum
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel kde kde-kde4 ruby
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 

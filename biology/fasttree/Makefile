@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/fasttree/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/biology/fasttree/Makefile 464907 2018-03-18 13:38:23Z linimon $
 
 PORTNAME=	FastTree
 DISTVERSION=	2.1.10
@@ -11,6 +11,9 @@ MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Approximately-maximum-likelihood phylogenetic trees from alignments
 
 LICENSE=	GPLv2+
+
+BROKEN_armv6=		fails to compile: FastTree-2.1.10.c:305:10: 'omp.h' file not found
+BROKEN_armv7=		fails to compile: FastTree-2.1.10.c:305:10: 'omp.h' file not found
 
 USES=		compiler:openmp
 

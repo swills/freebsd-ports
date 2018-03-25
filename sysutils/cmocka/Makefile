@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/cmocka/Makefile 453155 2017-10-30 04:04:27Z timur $
+# $FreeBSD: head/sysutils/cmocka/Makefile 465409 2018-03-23 21:20:04Z dteske $
 
 PORTNAME=	cmocka
 PORTVERSION=	1.1.1
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://cmocka.org/files/1.1/ \
 		LOCAL/dteske

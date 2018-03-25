@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-phply/Makefile 453988 2017-11-11 18:37:36Z dbaio $
+# $FreeBSD: head/devel/py-phply/Makefile 464816 2018-03-17 13:47:14Z dbaio $
 
 PORTNAME=	phply
-PORTVERSION=	1.2.1
+PORTVERSION=	1.2.4
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -10,6 +10,9 @@ MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	PHP lexer and parser in Python
 
 LICENSE=	BSD3CLAUSE
+
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=0:devel/py-ply@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=0:devel/py-ply@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

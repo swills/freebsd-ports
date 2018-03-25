@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/tortoisehg/Makefile 461736 2018-02-13 19:30:30Z antoine $
+# $FreeBSD: head/devel/tortoisehg/Makefile 465326 2018-03-22 23:46:23Z sunpoet $
 
 PORTNAME=	tortoisehg
-PORTVERSION=	4.4.1
+PORTVERSION=	4.5.2
 CATEGORIES=	devel
 MASTER_SITES=	https://bitbucket.org/tortoisehg/targz/downloads/
 

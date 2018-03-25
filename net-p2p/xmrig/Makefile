@@ -1,10 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/net-p2p/xmrig/Makefile 463382 2018-03-02 08:51:00Z ehaupt $
+# $FreeBSD: head/net-p2p/xmrig/Makefile 464918 2018-03-18 14:47:28Z ehaupt $
 
 PORTNAME=	xmrig
-PORTVERSION=	2.4.5
+PORTVERSION=	2.5.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
 CATEGORIES=	net-p2p
 
 MAINTAINER=	ehaupt@FreeBSD.org

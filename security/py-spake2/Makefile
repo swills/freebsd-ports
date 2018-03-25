@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/py-spake2/Makefile 417950 2016-07-03 01:53:35Z swills $
+# $FreeBSD: head/security/py-spake2/Makefile 464721 2018-03-16 18:36:28Z swills $
 
 PORTNAME=	spake2
-PORTVERSION=	0.7
+PORTVERSION=	0.8
 CATEGORIES=	security
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,8 @@
 # Created by: Bill "I hate Perl" Fumerola
-# $FreeBSD: head/textproc/p5-Text-Template/Makefile 463660 2018-03-05 17:15:00Z sunpoet $
+# $FreeBSD: head/textproc/p5-Text-Template/Makefile 465217 2018-03-21 19:03:18Z sunpoet $
 
 PORTNAME=	Text-Template
-PORTVERSION=	1.51
+PORTVERSION=	1.52
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

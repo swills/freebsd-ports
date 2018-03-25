@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/sysutils/tmux/Makefile 458419 2018-01-08 14:12:47Z mat $
+# $FreeBSD: head/sysutils/tmux/Makefile 465062 2018-03-20 03:39:57Z yuri $
 
 PORTNAME=	tmux
 PORTVERSION=	2.6
@@ -13,6 +13,8 @@ COMMENT=	Terminal Multiplexer
 
 LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+CONFLICTS_INSTALL=	tmux23
 
 USES=		pkgconfig ncurses
 

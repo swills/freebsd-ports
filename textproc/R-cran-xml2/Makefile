@@ -1,9 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/textproc/R-cran-xml2/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/textproc/R-cran-xml2/Makefile 465172 2018-03-21 12:42:19Z tota $
 
 PORTNAME=	xml2
-PORTVERSION=	1.1.1
-PORTREVISION=	1
+PORTVERSION=	1.2.0
 CATEGORIES=	textproc
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
@@ -12,10 +11,9 @@ COMMENT=	Parse XML
 
 LICENSE=	GPLv2+
 
-CRAN_DEPENDS=	R-cran-Rcpp>=0.11.4.6:devel/R-cran-Rcpp \
-		R-cran-BH>0:devel/R-cran-BH
-BUILD_DEPENDS:=	${CRAN_DEPENDS}
-RUN_DEPENDS:=	${CRAN_DEPENDS}
+CRAN_DEPENDS=	R-cran-Rcpp>=0.12.12:devel/R-cran-Rcpp
+BUILD_DEPENDS=	${CRAN_DEPENDS}
+RUN_DEPENDS=	${CRAN_DEPENDS}
 
 USES=	cran:auto-plist,compiles
 USE_GNOME=	libxml2

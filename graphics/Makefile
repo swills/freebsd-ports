@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 464646 2018-03-16 02:21:33Z jmd $
+# $FreeBSD: head/graphics/Makefile 465153 2018-03-21 06:56:46Z yuri $
 #
 
     COMMENT = Graphics tools and libraries
@@ -102,7 +102,6 @@
     SUBDIR += clutter-gtk
     SUBDIR += clutter-gtk3
     SUBDIR += cluttermm
-    SUBDIR += code-eli
     SUBDIR += cogl
     SUBDIR += colmap
     SUBDIR += colord
@@ -781,8 +780,6 @@
     SUBDIR += pencil
     SUBDIR += peps
     SUBDIR += perceptualdiff
-    SUBDIR += pfscalibration
-    SUBDIR += pfstmo
     SUBDIR += pfstools
     SUBDIR += pgplot
     SUBDIR += pho

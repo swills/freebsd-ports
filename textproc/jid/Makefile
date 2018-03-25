@@ -1,5 +1,5 @@
 # Created by: Sofian Brabez <sbz@FreeBSD.org>
-# $FreeBSD: head/textproc/jid/Makefile 434847 2017-02-26 08:07:15Z antoine $
+# $FreeBSD: head/textproc/jid/Makefile 464866 2018-03-18 03:55:13Z yuri $
 
 PORTNAME=	jid
 PORTVERSION=	0.7.2
@@ -27,6 +27,6 @@ PLIST_FILES=	bin/jid
 
 do-build:
 	@(cd ${WRKSRC}; \
-		${SETENV} ${GO_ENV} GOPATH=${WRKSRC} ${GO_CMD} build -v -o ${GO_WRKDIR_BIN}/jid cmd/jid/jid.go)
+		${SETENV} ${MAKE_ENV} ${GO_ENV} GOPATH=${WRKSRC} ${GO_CMD} build -v -o ${GO_WRKDIR_BIN}/jid cmd/jid/jid.go)
 
 .include <bsd.port.mk>

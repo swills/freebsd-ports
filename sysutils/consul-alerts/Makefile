@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/consul-alerts/Makefile 451834 2017-10-12 09:06:17Z mat $
+# $FreeBSD: head/sysutils/consul-alerts/Makefile 464866 2018-03-18 03:55:13Z yuri $
 
 PORTNAME=	consul-alerts
 PORTVERSION=	0.5.0
@@ -27,7 +27,7 @@ USE_RC_SUBR=	${PORTNAME}
 
 do-build:
 	cd ${GO_WRKSRC} && \
-		${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -v -x \
+		${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -v -x \
 			-ldflags "-X main.GitDescribe=${DISTVERSIONFULL}" -o bin/${PORTNAME}
 
 do-install:

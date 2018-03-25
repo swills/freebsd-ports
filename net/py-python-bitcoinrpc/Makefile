@@ -1,21 +1,20 @@
 # Created by: Fukang Chen <loader@FreeBSD.org>
-# $FreeBSD: head/net/py-python-bitcoinrpc/Makefile 396502 2015-09-09 14:14:40Z loader $
+# $FreeBSD: head/net/py-python-bitcoinrpc/Makefile 464991 2018-03-19 07:26:55Z loader $
 
 PORTNAME=	python-bitcoinrpc
-PORTVERSION=	0.3.0.20150403
+PORTVERSION=	1.0
 CATEGORIES=	net finance python
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	loader@FreeBSD.org
 COMMENT=	Enhanced version of python-jsonrpc for use with Bitcoin
 
-LICENSE=	LGPL20
+LICENSE=	LGPL21
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	jgarzik
-GH_TAGNAME=	f607fe7
-
+NO_ARCH=	yes
 USES=		python
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

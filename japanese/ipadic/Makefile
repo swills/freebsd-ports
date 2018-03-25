@@ -1,11 +1,11 @@
 # Created by: kuriyama
-# $FreeBSD: head/japanese/ipadic/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/ipadic/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	ipadic
 PORTVERSION=	2.7.0
 PORTREVISION=	2
 CATEGORIES=	japanese textproc
-MASTER_SITES=	SFJP/${PORTNAME}/24435
+MASTER_SITES=	OSDN/${PORTNAME}/24435
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Japanese Morphological Dictionary for ChaSen

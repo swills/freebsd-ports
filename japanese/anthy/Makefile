@@ -1,11 +1,11 @@
 # Created by: Yukihiro Nakai <nakai@FreeBSD.org>
-# $FreeBSD: head/japanese/anthy/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/japanese/anthy/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	anthy
 PORTVERSION=	9100h
 PORTREVISION=	4
 CATEGORIES=	japanese
-MASTER_SITES=	SFJP/${PORTNAME}/37536
+MASTER_SITES=	OSDN/${PORTNAME}/37536
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 DIST_SUBDIR=	anthy
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}

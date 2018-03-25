@@ -1,9 +1,9 @@
 # Created by: Katsuji ISHIKAWA <katsuji.ishikawa@gmail.com>
-# $FreeBSD: head/lang/mosh/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/lang/mosh/Makefile 464983 2018-03-19 06:03:16Z yuri $
 
 PORTNAME=	mosh
 PORTVERSION=	0.2.7
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	lang
 MASTER_SITES=	https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mosh-scheme/
 PKGNAMESUFFIX=	-scheme

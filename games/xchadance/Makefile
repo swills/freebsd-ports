@@ -1,5 +1,5 @@
 # Created by: issei <issei@jp.FreeBSD.org>
-# $FreeBSD: head/games/xchadance/Makefile 381054 2015-03-12 00:09:55Z amdmi3 $
+# $FreeBSD: head/games/xchadance/Makefile 464948 2018-03-18 20:10:53Z antoine $
 
 PORTNAME=	xchadance
 PORTVERSION=	1.0
@@ -12,6 +12,8 @@ DISTFILES=	xchada01.lzh
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Display a dancing girl "ChaCha."
+
+BROKEN=		unfetchable
 
 USES=		lha
 USE_XORG=	x11

@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/benchmarks/apib/Makefile 463478 2018-03-03 09:54:21Z danfe $
+# $FreeBSD: head/benchmarks/apib/Makefile 465240 2018-03-21 21:24:43Z brnrd $
 
 PORTNAME=	apib
 PORTVERSION=	1.0
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	benchmarks www
 
 MAINTAINER=	danfe@FreeBSD.org

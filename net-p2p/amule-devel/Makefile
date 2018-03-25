@@ -1,9 +1,8 @@
 # Created by: Ganael LAPLANCHE <ganael.laplanche@martymac.org>
-# $FreeBSD: head/net-p2p/amule-devel/Makefile 455251 2017-12-01 07:19:53Z antoine $
+# $FreeBSD: head/net-p2p/amule-devel/Makefile 465274 2018-03-22 08:49:22Z bar $
 
 PORTNAME=	amule
-PORTVERSION=	10990
-PORTREVISION=	3
+PORTVERSION=	10998
 CATEGORIES=	net-p2p
 MASTER_SITES=	http://amule.sourceforge.net/tarballs/
 PKGNAMESUFFIX=	-devel
@@ -44,7 +43,7 @@ AMULEDAEMON_DESC=	Compile aMule daemon version
 AMULEGUI_DESC=		Compile aMule remote GUI
 CAS_DESC=		Compile aMule Statistics for console
 ED2K_DESC=		Compile aMule ed2k links handler
-FILEVIEW_DESC=		Compile file viewer for console (EXPERIMENTAL)
+FILEVIEW_DESC=		Compile file viewer for console
 MMAP_DESC=		Use mapped memory
 MONOLITHIC_DESC=	Compile monolithic aMule
 PLASMAMULE_DESC=	Compile aMule plasma applet and engine

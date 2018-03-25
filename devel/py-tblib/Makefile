@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-tblib/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/devel/py-tblib/Makefile 464818 2018-03-17 13:52:04Z dbaio $
 
 PORTNAME=	tblib
 PORTVERSION=	1.3.2
@@ -12,8 +12,8 @@ COMMENT=	Traceback serialization library in Python
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

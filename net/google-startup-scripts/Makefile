@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/google-startup-scripts/Makefile 430490 2017-01-03 18:12:13Z mat $
+# $FreeBSD: head/net/google-startup-scripts/Makefile 465389 2018-03-23 17:19:14Z swills $
 
 PORTNAME=	google-startup-scripts
 PORTVERSION=	1.2.1
@@ -7,6 +7,9 @@ CATEGORIES=	net
 
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Startup scripts that interact with Google Compute Engine VMs
+
+DEPRECATED=	Please use sysutils/py-google-compute-engine instead
+EXPIRATION_DATE=2018-04-24
 
 BUILD_DEPENDS=	python:lang/python
 RUN_DEPENDS=	python:lang/python \

@@ -1,5 +1,5 @@
-# Created by: Koichiro IWAO <meta+ports@vmeta.jp>
-# $FreeBSD: head/japanese/font-ricty-discord/Makefile 359447 2014-06-27 03:51:05Z daichi $
+# Created by: Koichiro IWAO <meta@FreeBSD.org>
+# $FreeBSD: head/japanese/font-ricty-discord/Makefile 465067 2018-03-20 06:16:18Z meta $
 
 PKGNAMESUFFIX=	-discord
 COMMENT=	Ricty Discord - fonts for programming

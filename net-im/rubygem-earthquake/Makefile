@@ -1,12 +1,12 @@
 # Created by: Koichiro IWAO <meta+ports@vmeta.jp>
-# $FreeBSD: head/net-im/rubygem-earthquake/Makefile 459074 2018-01-15 15:54:53Z swills $
+# $FreeBSD: head/net-im/rubygem-earthquake/Makefile 465067 2018-03-20 06:16:18Z meta $
 
 PORTNAME=	earthquake
 PORTVERSION=	1.0.2
 CATEGORIES=	net-im rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	meta+ports@vmeta.jp
+MAINTAINER=	meta@FreeBSD.org
 COMMENT=	Terminal based Twitter client with Twitter streaming API
 
 LICENSE=	MIT

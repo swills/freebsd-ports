@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas (<thierry@pompo.net>)
-# $FreeBSD: head/mail/pecl-mailparse2/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/mail/pecl-mailparse2/Makefile 465055 2018-03-20 02:20:07Z dbaio $
 
 PORTNAME=	mailparse
 PORTVERSION=	2.1.6
@@ -11,10 +11,10 @@ COMMENT=	PECL extension to create and decode MIME messages
 
 LICENSE=	PHP202
 
-PORTSCOUT=	limit:^2.*
-
 USES=		php:pecl
 USE_PHP=	mbstring:build
 IGNORE_WITH_PHP=	70 71 72
+
+PORTSCOUT=	limit:^2.*
 
 .include <bsd.port.mk>

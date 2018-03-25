@@ -1,5 +1,5 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/devel/py-weakrefmethod/Makefile 424652 2016-10-25 20:33:00Z antoine $
+# $FreeBSD: head/devel/py-weakrefmethod/Makefile 465026 2018-03-19 20:03:48Z antoine $
 
 PORTNAME=	weakrefmethod
 PORTVERSION=	1.0.3
@@ -14,13 +14,7 @@ LICENSE=	PSFL
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_ARCH=	yes
-USES=		python
+USES=		python:2.7
 USE_PYTHON=	distutils autoplist
 
-.include <bsd.port.pre.mk>
-
-.if ${PYTHON_REL} >= 3400
-IGNORE=		is included in python 3.4+
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

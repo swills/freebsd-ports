@@ -1,7 +1,8 @@
 # Created by: thinker@branda.to
-# $FreeBSD: head/devel/py-subversion/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-subversion/Makefile 465240 2018-03-21 21:24:43Z brnrd $
 
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+PORTREVISION=	2
 
 MAINTAINER=	lev@FreeBSD.org
 COMMENT=	Python bindings for version control system

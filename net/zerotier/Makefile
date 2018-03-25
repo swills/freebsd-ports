@@ -1,12 +1,12 @@
 # Created by: Corey Smith <corsmith@gmail.com>
-# $FreeBSD: head/net/zerotier/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/net/zerotier/Makefile 465113 2018-03-20 22:27:21Z dch $
 
 PORTNAME=	zerotier
 PORTVERSION=	1.2.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 
-MAINTAINER=	dch@skunkwerks.at
+MAINTAINER=	dch@FreeBSD.org
 COMMENT=	Network virtualization everywhere
 
 LICENSE=	GPLv3

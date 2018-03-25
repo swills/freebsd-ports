@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/immortal/Makefile 458667 2018-01-10 17:45:34Z swills $
+# $FreeBSD: head/sysutils/immortal/Makefile 464866 2018-03-18 03:55:13Z yuri $
 
 PORTNAME=	immortal
 PORTVERSION=	0.18.0
@@ -24,13 +24,13 @@ GH_SUBDIR=	src/github.com/${PORTNAME}/${PORTNAME}
 
 do-build:
 	@cd ${WRKSRC}/src/github.com/${GH_ACCOUNT}/${GH_PROJECT}; \
-	${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -ldflags \
+	${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -ldflags \
 	"-s -w -X main.version=${PORTVERSION}" -o immortal cmd/immortal/main.go;
 	@cd ${WRKSRC}/src/github.com/${GH_ACCOUNT}/${GH_PROJECT}; \
-	${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -ldflags \
+	${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -ldflags \
 	"-s -w -X main.version=${PORTVERSION}" -o immortalctl cmd/immortalctl/main.go;
 	@cd ${WRKSRC}/src/github.com/${GH_ACCOUNT}/${GH_PROJECT}; \
-	${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -ldflags \
+	${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -ldflags \
 	"-s -w -X main.version=${PORTVERSION}" -o immortaldir cmd/immortaldir/main.go;
 
 do-install:

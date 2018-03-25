@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-asset_sync220/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/net/rubygem-asset_sync220/Makefile 464708 2018-03-16 15:22:05Z sunpoet $
 
 PORTNAME=	asset_sync
 PORTVERSION=	2.2.0
@@ -16,7 +16,7 @@ RUN_DEPENDS=	rubygem-activemodel4>=4.1.0:databases/rubygem-activemodel4 \
 		rubygem-mime-types>=2.99:misc/rubygem-mime-types \
 		rubygem-unf>=0:textproc/rubygem-unf
 
-CONFLICT_INSTALL=	asset_sync
+CONFLICTS_INSTALL=	asset_sync
 
 PORTSCOUT=	limit:^2\.2\.
 

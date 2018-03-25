@@ -1,11 +1,11 @@
 # Created by: hrs
-# $FreeBSD: head/japanese/canna-lib/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/japanese/canna-lib/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	canna
 PORTVERSION=	3.7p3
 PORTREVISION=	9
 CATEGORIES=	japanese
-MASTER_SITES=	SFJP/canna/9565
+MASTER_SITES=	OSDN/canna/9565
 PKGNAMESUFFIX=	-lib
 DISTNAME=	Canna${PORTVERSION:S/.//g}
 

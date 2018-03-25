@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-markdown/Makefile 464294 2018-03-12 20:42:25Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-markdown/Makefile 464895 2018-03-18 11:27:08Z sunpoet $
 
 PORTNAME=	tty-markdown
-PORTVERSION=	0.2.0
+PORTVERSION=	0.3.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

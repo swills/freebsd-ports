@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/parley-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/misc/parley-kde4/Makefile 465444 2018-03-24 10:13:33Z tcberner $
 
 PORTNAME=	parley
 PORTVERSION=	${KDE4_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	Vocabulary trainer for KDE 4
 
 USES=		cmake:outsource kde:4 tar:xz
 USE_GNOME=	libxml2 libxslt
-USE_KDE=	kdelibs libkdeedu attica automoc4
+USE_KDE=	kdelibs libkeduvocdocument attica automoc4
 USE_QT4=	corelib gui moc_build qmake_build rcc_build uic_build
 USE_XORG=	x11 xrender
 

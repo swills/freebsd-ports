@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/elixir-nadia/Makefile 413781 2016-04-22 13:46:21Z olgeni $
+# $FreeBSD: head/devel/elixir-nadia/Makefile 464929 2018-03-18 15:51:44Z olgeni $
 
 PORTNAME=	nadia
-PORTVERSION=	0.4.0
+DISTVERSIONPREFIX=	v
+DISTVERSION=	0.4.3
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
@@ -13,7 +14,6 @@ LICENSE=	MIT
 USES=		elixir
 USE_GITHUB=	yes
 GH_ACCOUNT=	zhyu
-GH_TAGNAME=	f91ed3f
 
 MIX_BUILD_DEPS=	devel/elixir-poison \
 		www/elixir-httpoison

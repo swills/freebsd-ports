@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/htdigest/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/htdigest/Makefile 465240 2018-03-21 21:24:43Z brnrd $
 
 PORTNAME=	htdigest
 PORTVERSION=	2.4.6
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	www ipv6
 MASTER_SITES=	APACHE_HTTPD
 DISTNAME=	httpd-${PORTVERSION}

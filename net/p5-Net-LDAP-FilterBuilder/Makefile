@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-Net-LDAP-FilterBuilder/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-LDAP-FilterBuilder/Makefile 465366 2018-03-23 16:33:11Z swills $
 
 PORTNAME=	Net-LDAP-FilterBuilder
 PORTVERSION=	1.200000
@@ -6,7 +6,7 @@ CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jeremybbaggs@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Perl module to construct LDAP filter statments
 
 LICENSE=	ART10 GPLv1+

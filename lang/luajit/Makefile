@@ -1,5 +1,5 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/lang/luajit/Makefile 458594 2018-01-10 03:51:12Z jhibbits $
+# $FreeBSD: head/lang/luajit/Makefile 464920 2018-03-18 15:08:18Z linimon $
 
 PORTNAME=	luajit
 DISTVERSION=	2.0.5
@@ -11,13 +11,15 @@ DISTNAME=	LuaJIT-${DISTVERSION}
 MAINTAINER=	osa@FreeBSD.org
 COMMENT=	Just-In-Time Compiler for Lua
 
+BROKEN_aarch64=		fails to compile: lj_arch.h:55:2: No support for this architecture (yet)
+BROKEN_powerpc64=	not ported to powerpc64 upstream
+
 WRKSRC=		${WRKDIR}/LuaJIT-${DISTVERSION}
 USES=		gmake
 USE_LDCONFIG=	yes
 MAKE_ARGS=	CC=${CC}
 
 PLIST_SUB+=	VERSION=${DISTVERSION}
-BROKEN_powerpc64=	Not ported to powerpc64 upstream
 
 .include <bsd.port.options.mk>
 
@@ -28,6 +30,6 @@ USE_GCC=yes
 post-install:
 	${LN} -sf ${PORTNAME}-${DISTVERSION} \
 		${STAGEDIR}${PREFIX}/bin/${PORTNAME}
-	@${INSTALL_MAN} ${WRKSRC}/etc/luajit.1 ${STAGEDIR}${MAN1PREFIX}/man/man1
+	${INSTALL_MAN} ${WRKSRC}/etc/luajit.1 ${STAGEDIR}${MAN1PREFIX}/man/man1
 
 .include <bsd.port.mk>

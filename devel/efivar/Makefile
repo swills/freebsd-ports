@@ -1,5 +1,5 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/devel/efivar/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/efivar/Makefile 465032 2018-03-19 20:39:29Z linimon $
 
 PORTNAME=	efivar
 PORTVERSION=	0.15
@@ -11,17 +11,17 @@ COMMENT=	Tools and library to manipulate EFI variables
 
 LICENSE=	LGPL21
 
+BROKEN_aarch64=		fails to build: gmake: no rule to make target 'efivar-guids.h', needed by 'efivar.h'
+NOT_FOR_ARCHS=		powerpc powerpc64 sparc64
+NOT_FOR_ARCHS_REASON=	specification only supports little-endian processors
+
 LIB_DEPENDS=	libpopt.so:devel/popt
 
+USES=		gmake localbase pkgconfig
 USE_GCC=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	rhinstaller
-
-USES=		gmake localbase pkgconfig
 USE_LDCONFIG=	yes
-
-NOT_FOR_ARCHS=	powerpc powerpc64 sparc64
-NOT_FOR_ARCHS_REASON=	specification only supports little-endian processors
 
 .include <bsd.port.pre.mk>
 

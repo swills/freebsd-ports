@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/grafana4/Makefile 463611 2018-03-04 23:14:00Z yuri $
+# $FreeBSD: head/www/grafana4/Makefile 465363 2018-03-23 15:32:10Z swills $
 
 PORTNAME=	grafana
-PORTVERSION=	4.6.2
+PORTVERSION=	4.6.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 MASTER_SITES+=	https://s3-us-west-2.amazonaws.com/grafana-releases/release/:public

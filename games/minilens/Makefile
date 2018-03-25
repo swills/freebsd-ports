@@ -1,9 +1,10 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/minilens/Makefile 455743 2017-12-07 17:17:44Z amdmi3 $
+# $FreeBSD: head/games/minilens/Makefile 464714 2018-03-16 17:27:57Z amdmi3 $
 
 PORTNAME=	minilens
 PORTVERSION=	1.2
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org
@@ -13,7 +14,7 @@ LICENSE=	GPLv3+ CC-BY-SA-4.0
 LICENSE_COMB=	multi
 LICENSE_FILE_GPLv3+ =	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	godot:devel/godot
+RUN_DEPENDS=	godot2:devel/godot2
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	KOBUGE-Games
@@ -35,7 +36,7 @@ OPTIONS_DEFINE=	DOCS
 
 do-build:
 	@${ECHO_CMD} "#!/bin/sh" > ${WRKDIR}/${PORTNAME}
-	@${ECHO_CMD} "exec \"${LOCALBASE}/bin/godot\" -path \"${DATADIR}\"" >> ${WRKDIR}/${PORTNAME}
+	@${ECHO_CMD} "exec \"${LOCALBASE}/bin/godot2\" -path \"${DATADIR}\"" >> ${WRKDIR}/${PORTNAME}
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin

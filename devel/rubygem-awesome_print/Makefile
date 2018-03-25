@@ -1,12 +1,12 @@
-# Created by: Koichiro IWAO <meta+ports@vmeta.jp>
-# $FreeBSD: head/devel/rubygem-awesome_print/Makefile 458037 2018-01-04 16:24:58Z swills $
+# Created by: Koichiro IWAO <meta@FreeBSD.org>
+# $FreeBSD: head/devel/rubygem-awesome_print/Makefile 465067 2018-03-20 06:16:18Z meta $
 
 PORTNAME=	awesome_print
 PORTVERSION=	1.8.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	meta+ports@vmeta.jp
+MAINTAINER=	meta@FreeBSD.org
 COMMENT=	Pretty print Ruby objects to visualize their structure
 
 LICENSE=	MIT

@@ -1,12 +1,12 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/x11/menu-cache/Makefile 453749 2017-11-08 15:12:43Z vanilla $
+# $FreeBSD: head/x11/menu-cache/Makefile 465111 2018-03-20 22:16:16Z yuri $
 
 PORTNAME=	menu-cache
 PORTVERSION=	1.1.0
 CATEGORIES=	x11
 MASTER_SITES=	SF/lxde/${PORTNAME}/${PORTVERSION:R}/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	portmaster@BSDforge.com
 COMMENT=	Library used to read freedesktop.org menus
 
 LICENSE=	LGPL21+

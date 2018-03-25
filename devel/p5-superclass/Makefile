@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-superclass/Makefile 452126 2017-10-15 02:47:49Z pi $
+# $FreeBSD: head/devel/p5-superclass/Makefile 465472 2018-03-24 21:11:04Z sunpoet $
 
 PORTNAME=	superclass
 PORTVERSION=	0.003
@@ -12,6 +12,7 @@ COMMENT=	Like parent, but with version checks
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_ARCH=	yes
 USE_PERL5=	configure

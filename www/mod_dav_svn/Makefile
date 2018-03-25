@@ -1,8 +1,9 @@
 # Created by: lev@FreeBSD.org
-# $FreeBSD: head/www/mod_dav_svn/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_dav_svn/Makefile 465240 2018-03-21 21:24:43Z brnrd $
 
 PORTNAME=	mod_dav_svn
 DISTNAME=	subversion-${PORTVERSION}
+PORTREVISION=	2
 
 CATEGORIES=	www
 

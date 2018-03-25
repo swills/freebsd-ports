@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/math/blitz++/Makefile 428132 2016-12-08 16:07:33Z tijl $
+# $FreeBSD: head/math/blitz++/Makefile 464908 2018-03-18 13:46:32Z linimon $
 
 PORTNAME=	blitz++
 PORTVERSION=	0.9
@@ -10,6 +10,9 @@ DISTNAME=	blitz-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	C++ class library for scientific computing
+
+BROKEN_armv6=		fails to compile: ../blitz/blitz.h:58:12: 'iostream.h' file not found
+BROKEN_armv7=		fails to compile: ../blitz/blitz.h:58:12: 'iostream.h' file not found
 
 OPTIONS_DEFINE=	DOCS
 

@@ -1,5 +1,5 @@
 # Created by: Nicolas de Bari Embriz Garcia Rojas <nbari@tequila.io>
-# $FreeBSD: head/www/go-www/Makefile 451834 2017-10-12 09:06:17Z mat $
+# $FreeBSD: head/www/go-www/Makefile 464866 2018-03-18 03:55:13Z yuri $
 
 PORTNAME=	www
 PORTVERSION=	1.1.1
@@ -27,7 +27,7 @@ post-patch:
 
 do-build:
 	@cd ${WRKSRC}/src/github.com/${GH_ACCOUNT}/${GH_PROJECT}; \
-	${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -ldflags \
+	${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -ldflags \
 	"-s -w" -o www;
 
 do-install:

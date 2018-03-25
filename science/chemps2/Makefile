@@ -1,9 +1,8 @@
-# $FreeBSD: head/science/chemps2/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/chemps2/Makefile 464835 2018-03-17 17:15:22Z yuri $
 
 PORTNAME=	CheMPS2
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.8.5
-PORTREVISION=	1
+DISTVERSION=	1.8.6
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -18,6 +17,7 @@ LIB_DEPENDS=	libhdf5.so:science/hdf5 \
 USES=		blaslapack:openblas cmake:outsource fortran
 USE_GITHUB=	yes
 GH_ACCOUNT=	SebWouters
+USE_LDCONFIG=	yes
 
 CMAKE_ARGS+=	-DSHARED_ONLY:BOOL=ON
 CMAKE_ARGS+=	-DENABLE_TESTS:BOOL=OFF

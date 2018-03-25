@@ -1,5 +1,5 @@
 # Created by: pauls
-# $FreeBSD: head/security/chaosreader/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/security/chaosreader/Makefile 464822 2018-03-17 14:43:34Z dbaio $
 
 PORTNAME=	chaosreader
 PORTVERSION=	0.96
@@ -12,14 +12,15 @@ LICENSE=	GPLv3+
 
 RUN_DEPENDS=	p5-Net-DNS>=0:dns/p5-Net-DNS
 
-NO_BUILD=	yes
 USES=		perl5 shebangfix
-USE_PERL5=	run
-NO_ARCH=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	brendangregg
 GH_PROJECT=	Chaosreader
+
+USE_PERL5=	run
+NO_BUILD=	yes
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/${PORTNAME}
 SHEBANG_FILES=	chaosreader

@@ -1,9 +1,8 @@
 # Created by: Muhammad Moinur Rahman <bofh@FreeBSD.org>
-# $FreeBSD: head/astro/qmapshack/Makefile 464159 2018-03-11 10:05:42Z tcberner $
+# $FreeBSD: head/astro/qmapshack/Makefile 465315 2018-03-22 21:00:52Z cmt $
 
 PORTNAME=	qmapshack
-PORTVERSION=	1.10.0
-PORTREVISION=	1
+PORTVERSION=	1.11.0
 CATEGORIES=	astro
 MASTER_SITES=	https://bitbucket.org/maproom/qmapshack/downloads/
 
@@ -19,7 +18,7 @@ LIB_DEPENDS=	libgdal.so:graphics/gdal \
 		libroutino.so:astro/routino
 RUN_DEPENDS=	${LOCALBASE}/bin/bsdisks:sysutils/bsdisks
 
-USES=		cmake compiler:c++11-lib desktop-file-utils
+USES=		cmake compiler:c++11-lib desktop-file-utils jpeg
 USE_QT5=	buildtools core dbus gui linguisttools network printsupport \
 		qmake script sql sql-sqlite3 uitools webkit widgets xml
 

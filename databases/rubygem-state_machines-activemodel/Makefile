@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/rubygem-state_machines-activemodel/Makefile 444050 2017-06-21 18:51:20Z sunpoet $
+# $FreeBSD: head/databases/rubygem-state_machines-activemodel/Makefile 465118 2018-03-20 22:34:11Z sunpoet $
 
 PORTNAME=	state_machines-activemodel
-PORTVERSION=	0.5.0
+PORTVERSION=	0.5.1
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

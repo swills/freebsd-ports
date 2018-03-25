@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/p5-feedgnuplot/Makefile 446228 2017-07-19 19:25:58Z pi $
+# $FreeBSD: head/graphics/p5-feedgnuplot/Makefile 465259 2018-03-22 06:26:58Z pi $
 
 PORTNAME=	feedgnuplot
-PORTVERSION=	1.44
+PORTVERSION=	1.49
 CATEGORIES=	graphics perl5
 MASTER_SITES=	http://search.cpan.org/CPAN/authors/id/D/DK/DKOGAN/
 PKGNAMEPREFIX=	p5-

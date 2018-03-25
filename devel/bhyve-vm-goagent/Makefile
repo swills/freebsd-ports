@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/bhyve-vm-goagent/Makefile 463820 2018-03-07 18:31:58Z araujo $
+# $FreeBSD: head/devel/bhyve-vm-goagent/Makefile 464928 2018-03-18 15:42:28Z antoine $
 
 PORTNAME=	bhyve-vm-goagent
 PORTVERSION=	1.0
@@ -11,7 +11,7 @@ COMMENT=	Agent developed in Go that runs inside guest vm
 
 LICENSE=	BSD2CLAUSE
 
-NO_PACKAGE=	should be recompiled for a particular FreeBSD arch
+BROKEN=		attempts to download dependencies during build
 
 ONLY_FOR_ARCHS=	amd64 i386
 

@@ -1,10 +1,10 @@
 # Created by: Lars Eggert <lars@eggert.org>
-# $FreeBSD: head/benchmarks/flowgrind/Makefile 444988 2017-07-03 20:38:11Z tcberner $
+# $FreeBSD: head/benchmarks/flowgrind/Makefile 464817 2018-03-17 13:48:41Z dbaio $
 
 PORTNAME=	flowgrind
 PORTVERSION=	0.8.0
-PORTREVISION=	2
 DISTVERSIONPREFIX=	${PORTNAME}-
+PORTREVISION=	2
 CATEGORIES=	benchmarks
 
 MAINTAINER=	dbaio@FreeBSD.org
@@ -19,9 +19,10 @@ LIB_DEPENDS=	libgsl.so:math/gsl \
 		libwwwxml.so:www/libwww \
 		libuuid.so:misc/e2fsprogs-libuuid
 
+USES=		autoreconf ssl
+
 USE_GITHUB=	yes
 
-USES=		autoreconf ssl
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	LIBS="${LIBS} -lpcap"
 

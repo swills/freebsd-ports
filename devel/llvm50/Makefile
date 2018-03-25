@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm50/Makefile 459485 2018-01-19 23:38:18Z brooks $
+# $FreeBSD: head/devel/llvm50/Makefile 465145 2018-03-21 03:45:55Z bdrewery $
 
 PORTNAME=	llvm
 DISTVERSION=	5.0.1
@@ -384,7 +384,7 @@ post-patch-CLANG-on:
 post-build-COMPILER_RT-on:
 	${MKDIR} ${WRKDIR}/compiler-rt-build
 	cd ${WRKDIR}/compiler-rt-build && \
-	${CMAKE_BIN} ${CMAKE_ARGS} \
+	${SETENV} ${CONFIGURE_ENV} ${CMAKE_BIN} ${CMAKE_ARGS} \
 	    -DLLVM_CONFIG_PATH=${CONFIGURE_WRKSRC}/bin/llvm-config \
 	    ${WRKSRC_compiler_rt} && \
 	${MAKE_ENV} ${MAKE_CMD}

@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/libmatheval/Makefile 446854 2017-07-28 21:45:20Z jkim $
+# $FreeBSD: head/devel/libmatheval/Makefile 465155 2018-03-21 07:26:28Z yuri $
 
 PORTNAME=	libmatheval
 PORTVERSION=	1.1.11
@@ -10,13 +10,16 @@ MASTER_SITES=	GNU
 MAINTAINER=	demon@FreeBSD.org
 COMMENT=	Library to evaluate mathematical functions
 
+LICENSE=	GPLv3
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 BUILD_DEPENDS=	flex>=2.5.39_1:textproc/flex
 LIB_DEPENDS=	libguile.so:lang/guile
 
+USES=		libtool localbase makeinfo pathfix
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	LEXLIB=-lfl_pic MAKEINFO="${MAKEINFO} --no-split"
 USE_LDCONFIG=	yes
-USES=		libtool localbase makeinfo pathfix
 INSTALL_TARGET=	install-strip
 
 INFO=		libmatheval

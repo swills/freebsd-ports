@@ -1,12 +1,11 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/print/qpdfview/Makefile 463420 2018-03-02 17:42:01Z joneum $
+# $FreeBSD: head/print/qpdfview/Makefile 465146 2018-03-21 03:51:44Z mi $
 
 PORTNAME=	qpdfview
-PORTVERSION=	0.4.16
-PORTREVISION=	8
+DISTVERSION=	0.4.17beta1
 CATEGORIES=	print
-MASTER_SITES=	https://launchpadlibrarian.net/226592308/ \
-		https://launchpad.net/${PORTVERSION}/trunk/${PORTVERSION}/+download/
+MASTER_SITES=	https://launchpadlibrarian.net/294276875/ \
+		https://launchpad.net/${PORTNAME}/trunk/${DISTVERSION}/+download/
 
 MAINTAINER=	mbeis@xs4all.nl
 COMMENT=	Tabbed DjVu/PDF/PS document viewer

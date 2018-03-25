@@ -1,11 +1,11 @@
 # Created by: Yoshihiko Sarumaru <mistral@imasy.or.jp>
-# $FreeBSD: head/devel/libpasori/Makefile 404568 2015-12-27 13:52:32Z amdmi3 $
+# $FreeBSD: head/devel/libpasori/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	libpasori
 PORTVERSION=	02
 PORTREVISION=	2
 CATEGORIES=	devel
-MASTER_SITES=	SOURCEFORGE_JP/${PORTNAME}/20457
+MASTER_SITES=	OSDN/${PORTNAME}/20457
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org

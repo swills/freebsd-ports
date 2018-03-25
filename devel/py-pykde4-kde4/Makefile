@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/py-pykde4-kde4/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/devel/py-pykde4-kde4/Makefile 465102 2018-03-20 18:03:48Z tcberner $
 
 PORTNAME=	pykde4
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	devel kde kde-kde4 python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

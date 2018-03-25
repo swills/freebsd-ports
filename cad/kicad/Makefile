@@ -1,9 +1,9 @@
 # Created by: Thierry Thomas <thierry@FreeBSD.org>
-# $FreeBSD: head/cad/kicad/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/cad/kicad/Makefile 465282 2018-03-22 09:53:05Z adridg $
 
 PORTNAME=	kicad
 PORTVERSION=	4.0.7
-PORTREVISION=	6
+PORTREVISION=	7
 PORTEPOCH=	2
 CATEGORIES=	cad
 
@@ -58,6 +58,12 @@ DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 DOXYGEN_IMPLIES=	DOCS
 DOXYGEN_ALL_TARGET=	all doxygen-docs
 DOXYGEN_PORTDOCS=	doxygen
+
+# The CheckCXXSymbolExists module has been shipped with CMake since 3.0 times.
+# The ancient implementation that this bundled module uses, no longer works
+# because it uses CMake internals that have gone away in 3.11.
+post-extract:
+	${RM} ${WRKSRC}/CMakeModules/CheckCXXSymbolExists.cmake
 
 pre-configure:
 	${REINPLACE_CMD} -e 's|/usr/share/kicad|${DATADIR}|'		\

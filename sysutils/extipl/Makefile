@@ -1,10 +1,10 @@
 # Created by: KIMURA Takamichi <takamiti@tsden.org>
-# $FreeBSD: head/sysutils/extipl/Makefile 417274 2016-06-21 15:36:50Z amdmi3 $
+# $FreeBSD: head/sysutils/extipl/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	extipl
 PORTVERSION=	5.04
 CATEGORIES=	sysutils
-MASTER_SITES=	SFJP/${PORTNAME}/2166
+MASTER_SITES=	OSDN/${PORTNAME}/2166
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Partition-selectable boot loader for IBM-PC/AT compatibles

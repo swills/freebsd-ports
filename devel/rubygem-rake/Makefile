@@ -1,8 +1,8 @@
 # Created by: Jonathan Weiss (<jw@innerewut.de>)
-# $FreeBSD: head/devel/rubygem-rake/Makefile 454356 2017-11-16 22:25:42Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rake/Makefile 465374 2018-03-23 16:45:13Z sunpoet $
 
 PORTNAME=	rake
-PORTVERSION=	12.3.0
+PORTVERSION=	12.3.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

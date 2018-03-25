@@ -1,10 +1,10 @@
 # Created by: Bert Burgemeister <trebbu@googlemail.com>
-# $FreeBSD: head/games/goldencheetah/Makefile 458646 2018-01-10 15:08:51Z danfe $
+# $FreeBSD: head/games/goldencheetah/Makefile 465061 2018-03-20 02:54:23Z truckman $
 
 PORTNAME=	GoldenCheetah
 PORTVERSION=	3.2
 DISTVERSIONPREFIX=	V
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 
 MAINTAINER=	trebbu@googlemail.com

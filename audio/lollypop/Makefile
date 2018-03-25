@@ -1,5 +1,5 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/audio/lollypop/Makefile 457964 2018-01-03 13:22:31Z mat $
+# $FreeBSD: head/audio/lollypop/Makefile 465070 2018-03-20 06:39:08Z yuri $
 
 PORTNAME=	lollypop
 PORTVERSION=	0.9.15
@@ -20,14 +20,15 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>=2.7.8:databases/py-sqlite3@${PY_F
 LIB_DEPENDS=	libnotify.so:devel/libnotify \
 	libtotem-plparser.so:multimedia/totem-pl-parser
 
-USES=	shebangfix python:3.4+ pkgconfig gettext gmake sqlite tar:xz
+USES=		python:3.4+ pkgconfig gettext gmake shebangfix sqlite tar:xz
 GNU_CONFIGURE=	yes
 USE_GNOME=	glib20 gtk30 pygobject3 introspection:build intltool intlhack
 USE_GSTREAMER1=	yes mpg123 ogg flac opus libav faad good speex
 USE_PYTHON=	py3kplist
 INSTALLS_ICONS=	yes
 
-SHEBANG_FILES=	src/*.py
+SHEBANG_FILES=	lollypop.in \
+		src/*.py
 
 GLIB_SCHEMAS=	org.gnome.Lollypop.gschema.xml
 

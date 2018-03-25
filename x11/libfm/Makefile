@@ -1,12 +1,12 @@
 # Created by: Kris Moore <kmoore@FreeBSD.org>
-# $FreeBSD: head/x11/libfm/Makefile 436494 2017-03-19 14:02:23Z rene $
+# $FreeBSD: head/x11/libfm/Makefile 465111 2018-03-20 22:16:16Z yuri $
 
 PORTNAME=	libfm
 PORTVERSION=	1.2.5
 CATEGORIES=	x11
 MASTER_SITES=	SF/pcmanfm/PCManFM%20%2B%20Libfm%20%28tarball%20release%29/LibFM/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	portmaster@BSDforge.com
 COMMENT?=	Core library of PCManFM file manager
 
 LICENSE=	LGPL21

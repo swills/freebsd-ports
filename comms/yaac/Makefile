@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/yaac/Makefile 453333 2017-11-02 03:42:00Z db $
+# $FreeBSD: head/comms/yaac/Makefile 464859 2018-03-18 03:06:14Z linimon $
 
 PORTNAME=	yaac
 PORTVERSION=	1.0b114
@@ -10,6 +10,8 @@ MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Platform-independent Java application for the APRS network
 
 LICENSE=	LGPL3
+
+BROKEN_armv7=	fails to package: yaac/build.xml:205: yaac/work/yaac/YAAC/site does not exist
 
 JAVA_VERSION=	1.6+
 USES=		zip

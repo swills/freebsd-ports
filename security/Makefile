@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 464369 2018-03-13 13:13:27Z bapt $
+# $FreeBSD: head/security/Makefile 465293 2018-03-22 15:18:36Z jrm $
 #
 
     COMMENT = Security tools
@@ -1150,6 +1150,7 @@
     SUBDIR += rubygem-rex-zip
     SUBDIR += rubygem-roauth
     SUBDIR += rubygem-rpam2
+    SUBDIR += rubygem-rpam2-3
     SUBDIR += rubygem-ruby-hmac
     SUBDIR += rubygem-ruby-rc4
     SUBDIR += rubygem-ruby-saml

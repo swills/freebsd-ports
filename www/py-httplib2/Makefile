@@ -1,8 +1,8 @@
 # Created by: Li-Wen Hsu <lwhsu@lwhsu.org>
-# $FreeBSD: head/www/py-httplib2/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-httplib2/Makefile 465286 2018-03-22 13:42:24Z lwhsu $
 
 PORTNAME=	httplib2
-PORTVERSION=	0.10.3
+PORTVERSION=	0.11.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

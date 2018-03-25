@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/supertux2/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/games/supertux2/Makefile 465107 2018-03-20 19:07:35Z adridg $
 
 PORTNAME=	supertux
 PORTVERSION=	0.4.0
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	games
 MASTER_SITES=	https://github.com/SuperTux/supertux/releases/download/v${PORTVERSION}/
 PKGNAMESUFFIX=	2
@@ -25,7 +25,8 @@ USES=		cmake:outsource compiler:c++11-lib dos2unix iconv \
 CFLAGS+=	-D_GLIBCXX_USE_C99
 CMAKE_ARGS=	-DINSTALL_SUBDIR_BIN=bin \
 		-DBUILD_SHARED_LIBS=off
-DOS2UNIX_FILES=	external/squirrel/CMakeLists.txt
+DOS2UNIX_FILES=	external/squirrel/CMakeLists.txt \
+		external/squirrel/squirrel/sqvm.cpp
 DOCSDIR=	${PREFIX}/share/doc/${PORTNAME}${PKGNAMESUFFIX}
 
 OPTIONS_DEFINE=	DOCS

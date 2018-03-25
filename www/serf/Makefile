@@ -1,9 +1,9 @@
 # Created by: Craig Rodrigues <rodrigc@FreeBSD.org>
-# $FreeBSD: head/www/serf/Makefile 421439 2016-09-06 15:48:27Z lev $
+# $FreeBSD: head/www/serf/Makefile 465240 2018-03-21 21:24:43Z brnrd $
 
 PORTNAME=	serf
 PORTVERSION=	1.3.9
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	www
 MASTER_SITES=	APACHE/serf
 

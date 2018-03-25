@@ -1,8 +1,8 @@
 # Created by: Jeremy Norris <ishmael27@home.com>
-# $FreeBSD: head/graphics/imlib2/Makefile 463047 2018-02-26 20:48:01Z zeising $
+# $FreeBSD: head/graphics/imlib2/Makefile 465191 2018-03-21 16:28:01Z zeising $
 
 PORTNAME=	imlib2
-PORTVERSION=	1.5.0
+PORTVERSION=	1.5.1
 PORTEPOCH=	2
 CATEGORIES=	graphics enlightenment
 MASTER_SITES=	SF/enlightenment/imlib2-src/${PORTVERSION}

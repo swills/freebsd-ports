@@ -1,8 +1,7 @@
-# Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/devel/py-sysv_ipc/Makefile 414695 2016-05-06 10:01:01Z lwhsu $
+# $FreeBSD: head/devel/py-sysv_ipc/Makefile 465162 2018-03-21 09:06:36Z lwhsu $
 
 PORTNAME=	sysv_ipc
-PORTVERSION=	0.7.0
+PORTVERSION=	1.0.0
 CATEGORIES=	devel python
 MASTER_SITES=	http://semanchuk.com/philip/sysv_ipc/ \
 		CHEESESHOP

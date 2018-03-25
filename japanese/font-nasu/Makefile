@@ -1,10 +1,10 @@
-# $FreeBSD: head/japanese/font-nasu/Makefile 464600 2018-03-15 16:21:09Z ume $
+# $FreeBSD: head/japanese/font-nasu/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	nasu
 PORTVERSION=	20141215
 PORTREVISION=	2
 CATEGORIES=	japanese x11-fonts
-MASTER_SITES=	SOURCEFORGE_JP/users/7/7587
+MASTER_SITES=	OSDN/users/7/7587
 PKGNAMEPREFIX=	ja-font-
 DISTNAME=	NasuFont-${PORTVERSION}
 

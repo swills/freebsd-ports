@@ -1,7 +1,7 @@
-# $FreeBSD: head/japanese/ajaxzip2-data/Makefile 458503 2018-01-09 02:23:26Z kuriyama $
+# $FreeBSD: head/japanese/ajaxzip2-data/Makefile 465038 2018-03-19 22:31:08Z kuriyama $
 
 PORTNAME=	ajaxzip2
-PORTVERSION=	20171228
+PORTVERSION=	20180228
 CATEGORIES=	japanese
 MASTER_SITES=	LOCAL/kuriyama
 PKGNAMESUFFIX=	-data

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/py-parsimonious/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-parsimonious/Makefile 464822 2018-03-17 14:43:34Z dbaio $
 
 PORTNAME=	parsimonious
 PORTVERSION=	0.8.0
@@ -14,8 +14,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six@${FLAVOR}
 
-NO_ARCH=	yes
 USES=		python
 USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

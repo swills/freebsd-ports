@@ -1,9 +1,8 @@
 # Created by: Anton Shterenlikht
-# $FreeBSD: head/lang/opencoarrays/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/lang/opencoarrays/Makefile 465154 2018-03-21 07:06:11Z yuri $
 
 PORTNAME=	opencoarrays
-PORTVERSION=	1.9.3
-PORTREVISION=	1
+DISTVERSION=	2.0.0
 CATEGORIES=	lang parallel
 
 MAINTAINER=	as@cmplx.uk
@@ -15,13 +14,13 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 BUILD_DEPENDS=	bash:shells/bash
 RUN_DEPENDS=	bash:shells/bash
 
-PLIST_SUB=	GCC_VER=${_GCC_VER}
 USES=		cmake:outsource fortran
-USE_LDCONFIG=	yes
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	sourceryinstitute
 GH_PROJECT=	OpenCoarrays
+USE_LDCONFIG=	yes
+
+PLIST_SUB=	GCC_VER=${_GCC_VER} PORTVERSION=${PORTVERSION}
 
 OPTIONS_SINGLE=		MPI
 OPTIONS_SINGLE_MPI=	MPICH OPENMPI OPENMPI2

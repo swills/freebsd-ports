@@ -1,9 +1,9 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/php56/Makefile 464193 2018-03-11 18:36:16Z brnrd $
+# $FreeBSD: head/lang/php56/Makefile 464983 2018-03-19 06:03:16Z yuri $
 
 PORTNAME=	php56
 PORTVERSION=	5.6.34
-PORTREVISION?=	0
+PORTREVISION?=	2
 CATEGORIES?=	lang devel www
 MASTER_SITES=	PHP/distributions
 DISTNAME=	php-${PORTVERSION}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/libreoffice/Makefile.i18n 412370 2016-04-01 20:15:05Z amdmi3 $
+# $FreeBSD: head/editors/libreoffice/Makefile.i18n 464758 2018-03-17 06:31:11Z lwhsu $
 
 .include "${.CURDIR}/../../editors/libreoffice/Makefile.common"
 
@@ -19,6 +19,8 @@ DISTFILES+=	${LO_I18N_FILE}_helppack_${LO_I18N:S/_/-/}${EXTRACT_SUFX}
 DIST_SUBDIR=	libreoffice/i18n
 
 COMMENT?=	${LO_I18N} language pack for ${PORTNAME}
+
+DESCR?=	${.CURDIR}/../../editors/libreoffice/pkg-descr.i18n
 
 RUN_DEPENDS?=	libreoffice:editors/libreoffice
 

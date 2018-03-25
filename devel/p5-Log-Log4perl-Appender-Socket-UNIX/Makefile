@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Log-Log4perl-Appender-Socket-UNIX/Makefile 403531 2015-12-11 13:48:31Z miwi $
+# $FreeBSD: head/devel/p5-Log-Log4perl-Appender-Socket-UNIX/Makefile 465366 2018-03-23 16:33:11Z swills $
 
 PORTNAME=	Log-Log4perl-Appender-Socket-UNIX
 PORTVERSION=	1.04
@@ -6,7 +6,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jeremybbaggs@gmail.com
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Perl module which allows logging to a unix domain socket
 
 LICENSE=	GPLv1

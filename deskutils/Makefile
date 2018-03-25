@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 463444 2018-03-02 19:10:48Z rene $
+# $FreeBSD: head/deskutils/Makefile 465465 2018-03-24 19:14:53Z mr $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -162,6 +162,7 @@
     SUBDIR += nautilus-actions
     SUBDIR += nautilus-sendto
     SUBDIR += nemo-extensions
+    SUBDIR += nextcloudclient
     SUBDIR += note
     SUBDIR += notecase
     SUBDIR += noti

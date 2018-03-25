@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/fontmatrix/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/x11-fonts/fontmatrix/Makefile 464883 2018-03-18 06:30:23Z linimon $
 
 PORTNAME=	fontmatrix
 DISTVERSIONPREFIX=	v
@@ -10,6 +10,9 @@ COMMENT=	Graphical font manager
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_armv6=		fails to compile: src/fminfodisplay.cpp:155:17: no matching function for call to 'qMax'
+BROKEN_armv7=		fails to compile: src/fminfodisplay.cpp:155:17: no matching function for call to 'qMax'
 
 RUN_DEPENDS=	${LOCALBASE}/share/icons/hicolor/index.theme:misc/hicolor-icon-theme
 LIB_DEPENDS=	libfreetype.so:print/freetype2 \

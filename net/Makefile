@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 464634 2018-03-15 21:14:11Z madpilot $
+# $FreeBSD: head/net/Makefile 465493 2018-03-25 01:02:51Z timur $
 #
 
     COMMENT = Networking tools
@@ -149,7 +149,6 @@
     SUBDIR += fpc-ldap
     SUBDIR += fpc-pcap
     SUBDIR += fping
-    SUBDIR += freebsd-tftp
     SUBDIR += freebsd-uucp
     SUBDIR += freediameter
     SUBDIR += freenet6
@@ -503,6 +502,7 @@
     SUBDIR += ntpa
     SUBDIR += ntraceroute
     SUBDIR += nusoap
+    SUBDIR += nuster
     SUBDIR += nxproxy
     SUBDIR += nyancat
     SUBDIR += nylon
@@ -1288,11 +1288,11 @@
     SUBDIR += rubygem-xmlrpc
     SUBDIR += rude
     SUBDIR += s3ql
-#    SUBDIR += samba4-devel
     SUBDIR += samba44
     SUBDIR += samba45
     SUBDIR += samba46
     SUBDIR += samba47
+    SUBDIR += samba48
     SUBDIR += samplicator
     SUBDIR += sbd
     SUBDIR += sbm

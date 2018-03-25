@@ -1,8 +1,8 @@
 # Created by: Simon Barner <barner@gmx.de>
-# $FreeBSD: head/audio/p5-Ogg-Vorbis-Header/Makefile 463750 2018-03-06 20:31:40Z sunpoet $
+# $FreeBSD: head/audio/p5-Ogg-Vorbis-Header/Makefile 465121 2018-03-20 22:35:16Z sunpoet $
 
 PORTNAME=	Ogg-Vorbis-Header
-PORTVERSION=	0.06
+PORTVERSION=	0.10
 CATEGORIES=	audio perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

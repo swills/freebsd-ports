@@ -1,8 +1,8 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/py-pip/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pip/Makefile 465370 2018-03-23 16:44:52Z sunpoet $
 
 PORTNAME=	pip
-PORTVERSION=	9.0.1
+PORTVERSION=	9.0.3
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

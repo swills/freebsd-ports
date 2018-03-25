@@ -1,5 +1,5 @@
 # Created by: Koichiro IWAO <meta+ports@vmeta.jp>
-# $FreeBSD: head/x11-servers/x11rdp/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/x11-servers/x11rdp/Makefile 465067 2018-03-20 06:16:18Z meta $
 
 # Do not confuse net/xrdp with x11-servers/x11rdp.  This port is not
 # former version or name of net/xrdp. x11rdp is fundamentally an X server.
@@ -18,7 +18,7 @@ DISTNAME=	${PORTNAME}_xorg71
 DISTFILES=	${PORTNAME}_xorg71_r${X11RDPREVISION}.tar.gz:x11rdp
 DIST_SUBDIR=	xrdp
 
-MAINTAINER=	meta+ports@vmeta.jp
+MAINTAINER=	meta@FreeBSD.org
 COMMENT=	X11 server for xrdp
 
 LICENSE=	MIT

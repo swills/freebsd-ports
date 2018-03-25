@@ -1,7 +1,7 @@
-# $FreeBSD: head/lang/c/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/lang/c/Makefile 465050 2018-03-20 00:56:23Z swills $
 
 PORTNAME=	c
-PORTVERSION=	0.10
+PORTVERSION=	0.11
 DISTVERSIONPREFIX=	v
 CATEGORIES=	lang
 

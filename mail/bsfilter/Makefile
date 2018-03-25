@@ -1,11 +1,11 @@
 # Created by: Masafumi Otsune <info@otsune.com>
-# $FreeBSD: head/mail/bsfilter/Makefile 444228 2017-06-24 16:32:00Z sunpoet $
+# $FreeBSD: head/mail/bsfilter/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	bsfilter
 PORTVERSION=	1.0.19
 PORTREVISION=	2
 CATEGORIES=	mail ruby
-MASTER_SITES=	SFJP/bsfilter/59804
+MASTER_SITES=	OSDN/bsfilter/59804
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Bayesian spam filter written in Ruby

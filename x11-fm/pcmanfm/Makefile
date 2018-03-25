@@ -1,12 +1,12 @@
 # Created by: Martin Tournoij <carpetsmoker@xs4all.nl>
-# $FreeBSD: head/x11-fm/pcmanfm/Makefile 453230 2017-10-31 11:42:47Z olgeni $
+# $FreeBSD: head/x11-fm/pcmanfm/Makefile 465111 2018-03-20 22:16:16Z yuri $
 
 PORTNAME=	pcmanfm
 PORTVERSION=	1.2.5
 CATEGORIES=	x11-fm
 MASTER_SITES=	SF/${PORTNAME}/PCManFM%20%2B%20Libfm%20%28tarball%20release%29/PCManFM/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	portmaster@BSDforge.com
 COMMENT=	PCMan File Manager
 
 LICENSE=	GPLv2

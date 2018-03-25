@@ -1,5 +1,5 @@
 # Created by: kmoore@FreeBSD.org
-# $FreeBSD: head/sysutils/docker-freebsd/Makefile 442739 2017-06-06 03:44:36Z asomers $
+# $FreeBSD: head/sysutils/docker-freebsd/Makefile 464866 2018-03-18 03:55:13Z yuri $
 
 PORTNAME=	docker-freebsd
 PORTVERSION=	20150625
@@ -28,7 +28,7 @@ PLIST_FILES=	bin/docker
 USE_RC_SUBR=	docker
 
 do-build:
-	@cd ${WRKSRC} && export AUTO_GOPATH=1 && export DOCKER_GITCOMMIT=${GH_TAGNAME} && ./hack/make.sh binary
+	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} AUTO_GOPATH=1 DOCKER_GITCOMMIT=${GH_TAGNAME} ./hack/make.sh binary
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/bin

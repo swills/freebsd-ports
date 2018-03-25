@@ -1,10 +1,10 @@
 # Created by: Makoto Matsushita <matusita@FreeBSD.org>
-# $FreeBSD: head/irc/keitairc2/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/irc/keitairc2/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=		keitairc
 PORTVERSION=		2.0
 CATEGORIES=		irc
-MASTER_SITES=		SFJP/${PORTNAME}/47485
+MASTER_SITES=		OSDN/${PORTNAME}/47485
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	IRC proxy for mobilephone that have a web interface

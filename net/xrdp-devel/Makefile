@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/net/xrdp-devel/Makefile 463982 2018-03-09 17:49:19Z arved $
+# $FreeBSD: head/net/xrdp-devel/Makefile 465067 2018-03-20 06:16:18Z meta $
 
 PORTNAME=	xrdp
 PORTVERSION=	0.9.5
@@ -10,7 +10,7 @@ CATEGORIES=	net
 PKGNAMESUFFIX=	-devel
 DIST_SUBDIR?=	${PORTNAME}
 
-MAINTAINER=	meta+ports@vmeta.jp
+MAINTAINER=	meta@FreeBSD.org
 COMMENT=	Open source Remote Desktop Protocol (RDP) server
 
 LICENSE=	APACHE20

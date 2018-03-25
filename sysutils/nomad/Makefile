@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/nomad/Makefile 461343 2018-02-09 22:32:16Z yuri $
+# $FreeBSD: head/sysutils/nomad/Makefile 464866 2018-03-18 03:55:13Z yuri $
 
 PORTNAME=	nomad
 DISTVERSIONPREFIX=	v
@@ -27,7 +27,7 @@ GROUPS=		nomad
 
 do-build:
 	@cd ${WRKSRC}/src/github.com/hashicorp/nomad && \
-		${SETENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -v -x \
+		${SETENV} ${MAKE_ENV} ${BUILD_ENV} GOPATH=${WRKSRC} go build -v -x \
 			-ldflags "-X main.GitDescribe=${DISTVERSIONFULL}" -o bin/nomad
 
 do-install:

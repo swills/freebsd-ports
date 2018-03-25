@@ -1,5 +1,5 @@
 # Created by: Michal Hanula <michal@hanu.la>
-# $FreeBSD: head/net-mgmt/alertmanager/Makefile 462467 2018-02-21 00:09:45Z yuri $
+# $FreeBSD: head/net-mgmt/alertmanager/Makefile 464866 2018-03-18 03:55:13Z yuri $
 
 PORTNAME=	alertmanager
 DISTVERSIONPREFIX=	v
@@ -23,8 +23,8 @@ USERS=		alertmanager
 GROUPS=		alertmanager
 
 do-build:
-	@cd ${GO_WRKSRC}/cmd/alertmanager && ${SETENV} ${GO_ENV} go install
-	@cd ${GO_WRKSRC}/cmd/amtool && ${SETENV} ${GO_ENV} go install
+	@cd ${GO_WRKSRC}/cmd/alertmanager && ${SETENV} ${MAKE_ENV} ${GO_ENV} go install
+	@cd ${GO_WRKSRC}/cmd/amtool && ${SETENV} ${MAKE_ENV} ${GO_ENV} go install
 
 do-install:
 	${INSTALL_PROGRAM} ${GO_WRKDIR_BIN}/alertmanager ${STAGEDIR}${PREFIX}/bin

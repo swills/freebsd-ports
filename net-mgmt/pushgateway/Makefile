@@ -1,5 +1,5 @@
 # Created by: Athanasios Douitsis <aduitsis@cpan.org>
-# $FreeBSD: head/net-mgmt/pushgateway/Makefile 446130 2017-07-18 09:14:21Z bsam $
+# $FreeBSD: head/net-mgmt/pushgateway/Makefile 464866 2018-03-18 03:55:13Z yuri $
 
 PORTNAME=	pushgateway
 PORTVERSION=	0.3.1
@@ -24,7 +24,7 @@ USERS=		prometheus
 GROUPS=		prometheus
 
 do-build:
-	(cd ${GO_WRKSRC} ; ${SETENV} ${GO_ENV} go install)
+	@(cd ${GO_WRKSRC} ; ${SETENV} ${MAKE_ENV} ${GO_ENV} go install)
 
 do-install:
 	${INSTALL_PROGRAM} ${GO_WRKDIR_BIN}/pushgateway ${STAGEDIR}${PREFIX}/bin

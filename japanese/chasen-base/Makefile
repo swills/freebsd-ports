@@ -1,11 +1,11 @@
 # Created by: kuriyama
-# $FreeBSD: head/japanese/chasen-base/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/chasen-base/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
 
 PORTNAME=	chasen
 PORTVERSION=	2.4.5
 PORTREVISION=	2
 CATEGORIES=	japanese textproc
-MASTER_SITES=	SOURCEFORGE_JP/chasen-legacy/56305
+MASTER_SITES=	OSDN/chasen-legacy/56305
 PKGNAMESUFFIX=	-base
 
 MAINTAINER=	ports@FreeBSD.org

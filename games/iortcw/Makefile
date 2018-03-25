@@ -1,9 +1,8 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/games/iortcw/Makefile 463861 2018-03-08 03:55:10Z tobik $
+# $FreeBSD: head/games/iortcw/Makefile 465296 2018-03-22 16:58:37Z tobik $
 
 PORTNAME=	iortcw
-DISTVERSION=	1.51
-PORTREVISION=	1
+PORTVERSION=	1.51b
 PORTEPOCH=	1
 CATEGORIES=	games
 
@@ -12,13 +11,13 @@ COMMENT=	Game engine for Return to Castle Wolfenstein
 
 LICENSE=	GPLv3
 
+NOT_FOR_ARCHS=		aarch64 armv6 armv7 powerpc64
+NOT_FOR_ARCHS_REASON=	fails to configure: Architecture not supported
+
 BUILD_DEPENDS=	opusfile>0:audio/opusfile
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libopus.so:audio/opus \
 		libfreetype.so:print/freetype2
-
-NOT_FOR_ARCHS=		aarch64 armv6 armv7 powerpc64
-NOT_FOR_ARCHS_REASON=	fails to configure: Architecture not supported
 
 USES=		jpeg pkgconfig gmake
 USE_GL=		gl

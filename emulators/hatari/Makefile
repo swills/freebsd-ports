@@ -1,9 +1,9 @@
 # Created by: Michael Neumann <mneumann@ntecs.de>
-# $FreeBSD: head/emulators/hatari/Makefile 462532 2018-02-21 16:24:53Z antoine $
+# $FreeBSD: head/emulators/hatari/Makefile 465137 2018-03-20 22:52:50Z adridg $
 
 PORTNAME=	hatari
 PORTVERSION=	2.0.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	emulators
 MASTER_SITES=	http://download.tuxfamily.org/hatari/${PORTVERSION}/
 

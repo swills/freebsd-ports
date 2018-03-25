@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/compiler.mk 464540 2018-03-14 23:21:12Z bdrewery $
+# $FreeBSD: head/Mk/Uses/compiler.mk 464725 2018-03-16 19:31:14Z bdrewery $
 #
 # Allows to determine the compiler being used
 #
@@ -148,7 +148,7 @@ _LANG=c++
 .if defined(CC_OUTPUT_${_CC_hash}_${std:hash})
 OUTPUT_${std}=	${CC_OUTPUT_${_CC_hash}_${std:hash}}
 .else
-OUTPUT_${std}!=	${CC} -std=${std} -c -x ${_LANG} /dev/null -o /dev/null 2>&1; echo yes
+OUTPUT_${std}!=	if ${CC} -std=${std} -c -x ${_LANG} /dev/null -o /dev/null 2>&1; then echo yes; fi; echo
 CC_OUTPUT_${_CC_hash}_${std:hash}=	${OUTPUT_${std}}
 PORTS_ENV_VARS+=			CC_OUTPUT_${_CC_hash}_${std:hash}
 .endif

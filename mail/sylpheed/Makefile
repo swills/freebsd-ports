@@ -1,8 +1,9 @@
 # Created by: shigeri <shigeri@m10.alpha-net.ne.jp>
-# $FreeBSD: head/mail/sylpheed/Makefile 461493 2018-02-11 12:22:50Z ehaupt $
+# $FreeBSD: head/mail/sylpheed/Makefile 464983 2018-03-19 06:03:16Z yuri $
 
 PORTNAME=	sylpheed
 PORTVERSION=	3.7.0
+PORTREVISION=	2
 CATEGORIES=	mail ipv6
 MASTER_SITES=	http://sylpheed.sraoss.jp/sylpheed/v${PORTVERSION:C/\.[^\.]*$//}/  \
 		LOCAL/ehaupt
