@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/font-naga10/files/Makefile.in 397892 2015-09-25 21:48:09Z hrs $
+# $FreeBSD: head/japanese/font-naga10/files/Makefile.in 465518 2018-03-25 14:18:17Z nobutaka $
 
 GZIP_CMD?=	gzip
 MKBOLD_CMD?=	mkbold
@@ -34,8 +34,8 @@ ${PCF_ALL}: ${.TARGET:S/.pcf.gz/.bdf/}
 	bdftopcf $> | ${GZIP_CMD} -c > $@
 
 install:
-	mkdir -p ${DESTDIR}%%DATADIR%%
-	${BSD_INSTALL_DATA} ${PCF_ALL} ${DESTDIR}%%DATADIR%%
+	mkdir -p ${DESTDIR}%%FONTSDIR%%
+	${BSD_INSTALL_DATA} ${PCF_ALL} ${DESTDIR}%%FONTSDIR%%
 
 clean::
 	rm ${MADE_BOLD} ${MADE_ITALIC} ${PCF_ALL}

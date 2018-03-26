@@ -1,9 +1,8 @@
-# $FreeBSD: head/security/testssl.sh/Makefile 464885 2018-03-18 09:02:41Z tobik $
+# $FreeBSD: head/security/testssl.sh/Makefile 465506 2018-03-25 08:43:20Z tobik $
 
 PORTNAME=	testssl.sh
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.9.5-2
-PORTREVISION=	1
+DISTVERSION=	2.9.5-3
 CATEGORIES=	security
 
 MAINTAINER=	tobik@FreeBSD.org

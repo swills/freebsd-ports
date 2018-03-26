@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/textproc/libcroco/Makefile 408468 2016-02-08 10:18:29Z kwm $
+# $FreeBSD: head/textproc/libcroco/Makefile 465575 2018-03-26 10:03:00Z bapt $
 
 PORTNAME=	libcroco
-PORTVERSION=	0.6.11
+PORTVERSION=	0.6.12
 CATEGORIES=	textproc gnome
 MASTER_SITES=	GNOME
 

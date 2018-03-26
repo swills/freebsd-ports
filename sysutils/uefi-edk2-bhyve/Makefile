@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/uefi-edk2-bhyve/Makefile 464059 2018-03-10 10:07:45Z tobik $
+# $FreeBSD: head/sysutils/uefi-edk2-bhyve/Makefile 465522 2018-03-25 15:28:36Z novel $
 
 PORTNAME=	uefi-edk2-bhyve
-PORTVERSION=	20160704
-PORTREVISION=	3
+PORTVERSION=	20180318
 CATEGORIES=	sysutils
 
 MAINTAINER=	fabian.freyer@physik.tu-berlin.de
@@ -20,7 +19,7 @@ USE_GCC=	4.8
 USE_GITHUB=	yes
 GH_ACCOUNT=	freebsd
 GH_PROJECT=	uefi-edk2
-GH_TAGNAME=	a36132939e259df79b16699c03c6f1d63c7454b9
+GH_TAGNAME=	636b963d68f8c7f4c90b97bd5a66e91bcb65841d
 
 PLIST_FILES=	${PREFIX}/share/uefi-firmware/BHYVE_UEFI${PLIST_SUFFIX}.fd
 

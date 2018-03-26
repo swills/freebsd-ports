@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 465427 2018-03-24 06:38:46Z yuri $
+# $FreeBSD: head/science/Makefile 465571 2018-03-26 09:39:42Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -158,6 +158,7 @@
     SUBDIR += psychopy
     SUBDIR += pulseview
     SUBDIR += py-DendroPy
+    SUBDIR += py-OpenFermion
     SUBDIR += py-cdo
     SUBDIR += py-coards
     SUBDIR += py-h5py
@@ -202,7 +203,6 @@
     SUBDIR += silo
     SUBDIR += simlib
     SUBDIR += simsmith
-    SUBDIR += siril
     SUBDIR += step-kde4
     SUBDIR += svmlight
     SUBDIR += szip

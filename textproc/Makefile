@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 465105 2018-03-20 18:39:34Z rene $
+# $FreeBSD: head/textproc/Makefile 465550 2018-03-25 23:46:05Z yuri $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1304,6 +1304,7 @@
     SUBDIR += py-feedparser
     SUBDIR += py-gambit-elasticsearch
     SUBDIR += py-genshi
+    SUBDIR += py-gfm
     SUBDIR += py-guess-language
     SUBDIR += py-hexdump
     SUBDIR += py-html2text

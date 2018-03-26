@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 465392 2018-03-23 17:58:16Z yuri $
+# $FreeBSD: head/math/Makefile 465560 2018-03-26 07:18:44Z yuri $
 #
 
     COMMENT = Mathematics
@@ -631,6 +631,7 @@
     SUBDIR += py-cdecimal
     SUBDIR += py-colormath
     SUBDIR += py-cryptominisat
+    SUBDIR += py-cvxopt
     SUBDIR += py-fastcluster
     SUBDIR += py-ffc
     SUBDIR += py-fiat

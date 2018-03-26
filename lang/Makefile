@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 464830 2018-03-17 16:07:29Z yuri $
+# $FreeBSD: head/lang/Makefile 465513 2018-03-25 11:45:10Z rene $
 #
 
     COMMENT = Programming languages
@@ -364,7 +364,6 @@
     SUBDIR += v8-devel
     SUBDIR += vala
     SUBDIR += visualworks
-    SUBDIR += x10
     SUBDIR += yabasic
     SUBDIR += yap
     SUBDIR += yap-devel

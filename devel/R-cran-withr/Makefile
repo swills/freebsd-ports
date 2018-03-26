@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-withr/Makefile 464336 2018-03-13 02:18:12Z tota $
+# $FreeBSD: head/devel/R-cran-withr/Makefile 465578 2018-03-26 10:52:20Z tota $
 
 PORTNAME=	withr
-PORTVERSION=	2.1.1
+PORTVERSION=	2.1.2
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

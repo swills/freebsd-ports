@@ -1,9 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-foreach/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/R-cran-foreach/Makefile 465563 2018-03-26 08:58:20Z tota $
 
 PORTNAME=	foreach
-PORTVERSION=	1.4.3
-PORTREVISION=	1
+PORTVERSION=	1.4.4
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
@@ -12,7 +11,9 @@ COMMENT=	Foreach looping construct for R
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	R-cran-iterators>=1.0.0:devel/R-cran-iterators
+CRAN_DEPENDS=	R-cran-iterators>=1.0.0:devel/R-cran-iterators
+BUILD_DEPENDS=	${CRAN_DEPENDS}
+RUN_DEPENDS=	${CRAN_DEPENDS}
 
 USES=	cran:auto-plist
 

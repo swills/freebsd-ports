@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/textproc/gtkspell3/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/gtkspell3/Makefile 465574 2018-03-26 10:01:16Z bapt $
 
 PORTNAME=	gtkspell3
-PORTVERSION=	3.0.7
+PORTVERSION=	3.0.8
 CATEGORIES=	textproc gnome
 MASTER_SITES=	SF/gtkspell/${PORTVERSION}
 
@@ -13,12 +13,10 @@ BUILD_DEPENDS=	vapigen:lang/vala
 LIB_DEPENDS=	libenchant.so:textproc/enchant
 
 USE_GNOME=	gtk30 intlhack introspection:build
-USES=		gettext gmake libtool pathfix pkgconfig
+USES=		gettext gmake localbase libtool pathfix pkgconfig
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
-INSTALL_TARGEt=	install-strip
+INSTALL_TARGET=	install-strip
 
 post-patch:
 	@${REINPLACE_CMD} -e '/^SUBDIRS/ s|docs||' ${WRKSRC}/Makefile.in

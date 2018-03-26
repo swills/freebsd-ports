@@ -1,10 +1,9 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/www/mythplugin-mythweb/Makefile 462986 2018-02-25 23:54:06Z jhale $
+# $FreeBSD: head/www/mythplugin-mythweb/Makefile 465529 2018-03-25 17:09:05Z jhale $
 
 PORTNAME=	mythweb
-PORTVERSION=	0.28.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+DISTVERSION=	29.1
 CATEGORIES=	www
 PKGNAMEPREFIX=	mythplugin-
 
@@ -14,14 +13,11 @@ COMMENT=	Frontend for scheduling and managing recordings on your MythTV Box
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-IGNORE_WITH_PHP=	70 71 72
-
-RUN_DEPENDS=	p5-DBD-mysql>=0:databases/p5-DBD-mysql
-
-USES=		php shebangfix
+USES=		php shebangfix perl5
+USE_PERL5=	run
+USE_PHP=	json pcre posix mysqli session spl sockets
 USE_GITHUB=	yes
 GH_ACCOUNT=	MythTV
-USE_PHP=	json mysql pcre posix session spl
 SHEBANG_FILES=	mythweb.pl modules/_shared/lang/build_translation.pl \
 		modules/coverart/handler.pl modules/stream/*.pl
 
@@ -31,11 +27,13 @@ PLIST_SUB=	WWWOWN="${WWWOWN}" WWWGRP="${WWWGRP}"
 SUB_FILES=	pkg-message
 REINPLACE_ARGS=	-i ""
 
-OPTIONS_DEFINE=		APACHE LIGHTTPD
+OPTIONS_DEFINE=	APACHE LIGHTTPD NGINX
 OPTIONS_DEFAULT=	APACHE
 
 APACHE_USE=		APACHE_RUN=22+
 LIGHTTPD_RUN_DEPENDS=	lighttpd:www/lighttpd
+NGINX_DESC=		Nginx server support
+NGINX_RUN_DEPENDS=	nginx:www/nginx
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/var/www/html|${WWWDIR}|' \
