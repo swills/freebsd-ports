@@ -1,10 +1,10 @@
 # Created by: Sergey Akifyev <asa@gascom.ru>
-# $FreeBSD: head/deskutils/gtweakui/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/deskutils/gtweakui/Makefile 465584 2018-03-26 12:38:56Z bapt $
 #    $MCom: ports/deskutils/gtweakui/Makefile,v 1.2 2007/05/19 21:36:03 marcus Exp $
 
 PORTNAME=	gTweakUI
 PORTVERSION=	0.4.0
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	SF
 DIST_SUBDIR=	gnome2

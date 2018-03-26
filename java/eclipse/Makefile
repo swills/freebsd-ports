@@ -1,9 +1,9 @@
 # Created by: Jimmy Kelley <ljboiler@gmail.com>
-# $FreeBSD: head/java/eclipse/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/java/eclipse/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	eclipse
 PORTVERSION=	4.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	java devel
 MASTER_SITES=	https://s3.amazonaws.com/freebsd-eclipse-dist/
 DISTFILES=	eclipse.platform.releng.aggregator-${PORTVERSION}.xz \

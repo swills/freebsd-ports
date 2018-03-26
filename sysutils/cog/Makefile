@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/cog/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/sysutils/cog/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	cog
 PORTVERSION=	0.8.0
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	http://www.krakoa.dk/progs/cog/
 

@@ -1,9 +1,9 @@
 # Created by: Pav Lucistnik <pav@oook.cz>
-# $FreeBSD: head/editors/conglomerate/Makefile 428130 2016-12-08 15:46:46Z tijl $
+# $FreeBSD: head/editors/conglomerate/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	conglomerate
 PORTVERSION=	0.9.1
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	editors
 MASTER_SITES=	SF/${PORTNAME}/Conglomerate%20XML%20Editor/${PORTVERSION}
 

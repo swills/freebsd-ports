@@ -1,9 +1,9 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/misc/cdcollect/Makefile 460430 2018-01-30 19:00:27Z dbn $
+# $FreeBSD: head/misc/cdcollect/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	cdcollect
 PORTVERSION=	0.6.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	misc gnome
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION}_source
 

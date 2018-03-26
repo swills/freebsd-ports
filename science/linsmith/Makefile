@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/science/linsmith/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/science/linsmith/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	linsmith
 PORTVERSION=	0.99.30
+PORTREVISION=	1
 CATEGORIES=	science hamradio
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

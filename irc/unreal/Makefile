@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine (<tux@pinguru.net>)
-# $FreeBSD: head/irc/unreal/Makefile 436248 2017-03-15 14:45:54Z mat $
+# $FreeBSD: head/irc/unreal/Makefile 465596 2018-03-26 13:49:19Z mat $
 
 PORTNAME=	Unreal
 PORTVERSION=	3.2.10.7
@@ -7,7 +7,7 @@ CATEGORIES=	irc ipv6
 MASTER_SITES=	http://www.unrealircd.com/downloads/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
-MAINTAINER=	mat@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Unreal - the next generation ircd
 
 LICENSE=	GPLv2

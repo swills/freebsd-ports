@@ -1,9 +1,9 @@
 # Created by: Koop Mast <einekoai@chello.nl>
-# $FreeBSD: head/www/gurlchecker/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/gurlchecker/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	gurlchecker
 PORTVERSION=	0.10.1
-PORTREVISION=	24
+PORTREVISION=	25
 CATEGORIES=	www gnome
 MASTER_SITES=	http://labs.libre-entreprise.org/frs/download.php/547/
 

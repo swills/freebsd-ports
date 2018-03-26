@@ -1,9 +1,9 @@
 # Created by: ports@c0decafe.net
-# $FreeBSD: head/security/revelation/Makefile 455913 2017-12-10 20:48:45Z antoine $
+# $FreeBSD: head/security/revelation/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	revelation
 PORTVERSION=	0.4.14
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	security gnome
 MASTER_SITES=	https://bitbucket.org/erikg/revelation/downloads/
 

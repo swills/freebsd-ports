@@ -1,9 +1,9 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/misc/gnome-osd/Makefile 455845 2017-12-09 11:46:20Z antoine $
+# $FreeBSD: head/misc/gnome-osd/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	gnome-osd
 PORTVERSION=	0.20.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	http://launchpadlibrarian.net/63944370/
 DISTNAME=	${PORTNAME}_${PORTVERSION}

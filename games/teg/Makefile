@@ -1,9 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/games/teg/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/games/teg/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	teg
 PORTVERSION=	0.11.2
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	games gnome
 
 MAINTAINER=	ports@FreeBSD.org

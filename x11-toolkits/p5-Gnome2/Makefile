@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/x11-toolkits/p5-Gnome2/Makefile 453778 2017-11-08 23:30:22Z sunpoet $
+# $FreeBSD: head/x11-toolkits/p5-Gnome2/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	Gnome2
 PORTVERSION=	1.047
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits gnome perl5
 MASTER_SITES=	CPAN \
 		SF/gtk2-perl/${PORTNAME}/${PORTVERSION}

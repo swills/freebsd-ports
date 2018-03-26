@@ -1,9 +1,9 @@
 # Created by: UMENO Takashi <umeno@rr.iij4u.or.jp>
-# $FreeBSD: head/games/grhino/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/games/grhino/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	grhino
 PORTVERSION=	0.16.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games gnome
 MASTER_SITES=	SF/rhino/GRhino/${PORTVERSION}
 

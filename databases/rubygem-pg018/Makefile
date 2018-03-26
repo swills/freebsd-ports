@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/databases/rubygem-pg018/Makefile 465602 2018-03-26 15:10:49Z mfechner $
 
 PORTNAME=	pg
 PORTVERSION=	0.18.4

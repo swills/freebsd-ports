@@ -1,9 +1,9 @@
 # Created by: Thomas Hurst <tom@hur.st>
-# $FreeBSD: head/x11/terminator/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/x11/terminator/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	terminator
 PORTVERSION=	0.97
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11 python
 MASTER_SITES=	http://launchpad.net/terminator/trunk/0.97/+download/
 

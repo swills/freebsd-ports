@@ -1,10 +1,9 @@
-# $FreeBSD: head/textproc/py-gfm/Makefile 465550 2018-03-25 23:46:05Z yuri $
+# $FreeBSD: head/textproc/py-gfm/Makefile 465592 2018-03-26 13:40:16Z mat $
 
 PORTNAME=	gfm
 DISTVERSION=	0.1.3
 CATEGORIES=	textproc python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	py-${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	freebsd_ports@k-worx.org
 COMMENT=	Github-flavored Markdown for the py-markdown module

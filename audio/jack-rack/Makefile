@@ -1,9 +1,9 @@
 # Created by: Jean-Yves Lefort <jylefort@FreeBSD.org>
-# $FreeBSD: head/audio/jack-rack/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/audio/jack-rack/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	jack-rack
 PORTVERSION=	1.4.7
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	audio
 MASTER_SITES=	SF
 

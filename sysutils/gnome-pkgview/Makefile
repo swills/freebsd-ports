@@ -1,10 +1,10 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/gnome-pkgview/Makefile 375292 2014-12-22 23:22:16Z bapt $
+# $FreeBSD: head/sysutils/gnome-pkgview/Makefile 465584 2018-03-26 12:38:56Z bapt $
 #   $MCom: ports/sysutils/gnome-pkgview/Makefile,v 1.6 2007/05/30 03:21:44 mezz Exp $
 
 PORTNAME=	gnome-pkgview
 PORTVERSION=	1.0.7
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	http://www.mikegtn.net/packages/gnome-pkgview/
 

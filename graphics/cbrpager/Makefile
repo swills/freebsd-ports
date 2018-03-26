@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/cbrpager/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/graphics/cbrpager/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	cbrpager
 PORTVERSION=	0.9.22
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION} \
 		SF/nemysisfreebsdp/${CATEGORIES}/:icons

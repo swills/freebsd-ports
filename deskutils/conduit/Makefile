@@ -1,10 +1,10 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/deskutils/conduit/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/deskutils/conduit/Makefile 465584 2018-03-26 12:38:56Z bapt $
 #    $MCom: ports/deskutils/conduit/Makefile,v 1.7 2008/03/18 14:53:42 ahze Exp $
 
 PORTNAME=	conduit
 PORTVERSION=	0.3.17
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	deskutils
 MASTER_SITES=	GNOME
 

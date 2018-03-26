@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 465367 2018-03-23 16:38:21Z nobutaka $
+# $FreeBSD: head/mail/Makefile 465600 2018-03-26 14:38:16Z rene $
 #
 
     COMMENT = Electronic mail utilities
@@ -647,7 +647,6 @@
     SUBDIR += sieve-connect
     SUBDIR += sigrot
     SUBDIR += simscan
-    SUBDIR += sisyphus
     SUBDIR += slapd-cyrus
     SUBDIR += sma
     SUBDIR += smfsav

@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/guake/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/x11/guake/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	guake
 PORTVERSION=	0.8.10
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 
 MAINTAINER=	nivit@FreeBSD.org

@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/kb/Makefile 452001 2017-10-13 14:19:26Z bapt $
+# $FreeBSD: head/comms/kb/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	kb
 PORTVERSION=	8.04
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	comms hamradio
 MASTER_SITES=	http://www.db.net/downloads/
 DISTFILES=	kb_src-${PORTVERSION}.tar.gz kb_inst-${PORTVERSION}.tar.gz
@@ -10,6 +10,7 @@ DISTFILES=	kb_src-${PORTVERSION}.tar.gz kb_inst-${PORTVERSION}.tar.gz
 MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Amateur Radio contest logger
 
+USES=		pkgconfig
 USE_GNOME=	libgnome gtk20 libbonobo
 NO_WRKSUBDIR=	yes
 PKGMESSAGE=	${FILESDIR}/pkg_message

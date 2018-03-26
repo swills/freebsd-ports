@@ -1,9 +1,9 @@
 # Created by: Florent Thoumie <flz@xbsd.org>
-# $FreeBSD: head/net/grdesktop/Makefile 463723 2018-03-06 12:32:00Z tobik $
+# $FreeBSD: head/net/grdesktop/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	grdesktop
 PORTVERSION=	0.23
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	net
 MASTER_SITES=	SAVANNAH
 

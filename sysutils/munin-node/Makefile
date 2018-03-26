@@ -1,9 +1,8 @@
 # Created by: Lupe Christoph <lupe@lupe-christoph.de>
-# $FreeBSD: head/sysutils/munin-node/Makefile 453622 2017-11-06 14:39:47Z mat $
+# $FreeBSD: head/sysutils/munin-node/Makefile 465591 2018-03-26 13:40:01Z mat $
 
 PORTNAME=	munin
 PORTVERSION=	${MUNIN_VERSION}
-PORTREVISION=	1
 CATEGORIES=	sysutils perl5
 MASTER_SITES=	${MUNIN_SITES}
 PKGNAMESUFFIX=	-node

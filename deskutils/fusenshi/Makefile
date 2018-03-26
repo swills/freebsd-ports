@@ -1,9 +1,9 @@
 # Created by: Masanori OZAWA (ozawa@ongs.co.jp)
-# $FreeBSD: head/deskutils/fusenshi/Makefile 463452 2018-03-02 22:34:53Z brooks $
+# $FreeBSD: head/deskutils/fusenshi/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	fusenshi
 PORTVERSION=	0.9.0
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	deskutils
 MASTER_SITES=	http://www.ongs.co.jp/projects/fusenshi/
 

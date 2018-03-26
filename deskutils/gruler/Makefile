@@ -1,9 +1,9 @@
 # Created by: Piotr Smyrak <smyru@heron.pl>
-# $FreeBSD: head/deskutils/gruler/Makefile 456061 2017-12-11 18:44:08Z amdmi3 $
+# $FreeBSD: head/deskutils/gruler/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	gruler
 PORTVERSION=	0.6
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	deskutils
 MASTER_SITES=	http://BSDforge.com/projects/source/deskutils/gruler/ \
 		#http://linuxadvocate.org/projects/gruler/downloads/

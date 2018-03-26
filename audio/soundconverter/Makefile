@@ -1,9 +1,9 @@
 # Created by: Jona Joachim <jaj@hcl-club.lu>
-# $FreeBSD: head/audio/soundconverter/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/audio/soundconverter/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	soundconverter
 PORTVERSION=	2.1.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio python
 MASTER_SITES=	https://launchpad.net/soundconverter/trunk/2.1.6/+download/ \
 		http://BSDforge.com/projects/source/audio/soundconverter/

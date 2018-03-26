@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/truevision/Makefile 456181 2017-12-12 18:35:32Z antoine $
+# $FreeBSD: head/graphics/truevision/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	truevision
 DISTVERSION=	0.5.5-2
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20sources/${PORTVERSION:R}
 

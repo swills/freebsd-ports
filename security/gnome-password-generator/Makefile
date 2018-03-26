@@ -1,9 +1,9 @@
 # Created by: Sergey Akifyev <asa@gascom.ru>
-# $FreeBSD: head/security/gnome-password-generator/Makefile 455913 2017-12-10 20:48:45Z antoine $
+# $FreeBSD: head/security/gnome-password-generator/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	gnome-password-generator
 PORTVERSION=	1.6
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	security gnome python
 MASTER_SITES=	SF/gnome-password/Gnome%20Password%20Generator/${PORTVERSION}
 

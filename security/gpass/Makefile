@@ -1,9 +1,9 @@
 # Created by: ports@c0decafe.net <ports@c0decafe.net>
-# $FreeBSD: head/security/gpass/Makefile 413136 2016-04-12 15:06:35Z mat $
+# $FreeBSD: head/security/gpass/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	gpass
 PORTVERSION=	0.5.1
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	security gnome
 MASTER_SITES=	https://github.com/raffael-sfm/gpass/releases/download/${PORTVERSION}/
 

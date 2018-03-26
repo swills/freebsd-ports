@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/games/gnono/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/games/gnono/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	gnono
 PORTVERSION=	1.9.1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	games
 MASTER_SITES=	SF
 

@@ -1,10 +1,10 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/deskutils/planner/Makefile 451901 2017-10-12 15:57:51Z mat $
+# $FreeBSD: head/deskutils/planner/Makefile 465584 2018-03-26 12:38:56Z bapt $
 #   $MCom: ports-stable/deskutils/planner/Makefile,v 1.4 2009/04/16 00:34:24 kwm Exp $
 
 PORTNAME=	planner
 PORTVERSION=	0.14.6
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

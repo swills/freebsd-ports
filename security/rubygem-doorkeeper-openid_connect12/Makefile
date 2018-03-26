@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/security/rubygem-doorkeeper-openid_connect12/Makefile 465602 2018-03-26 15:10:49Z mfechner $
 
 PORTNAME=	doorkeeper-openid_connect
 PORTVERSION=	1.2.0

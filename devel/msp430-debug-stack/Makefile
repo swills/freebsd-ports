@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/msp430-debug-stack/Makefile 465292 2018-03-22 15:13:19Z lev $
+# $FreeBSD: head/devel/msp430-debug-stack/Makefile 465598 2018-03-26 14:33:11Z lev $
 
 PORTNAME=	msp430-debug-stack
 PORTVERSION=	3.12.000.004
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://www.ti.com/lit/sw/slac460x/ \
 		http://www.ti.com/lit/ug/slau320ac/:doc1 \
@@ -11,7 +11,7 @@ DISTFILES=	slac460x.zip \
 		slau320ac.pdf:doc1 \
 		slau656b.pdf:doc2
 DIST_SUBDIR=	${PORTNAME}-${PORTVERSION}
-EXTRACT_ONLY=	slac460v.zip
+EXTRACT_ONLY=	slac460x.zip
 
 MAINTAINER=	lev@FreeBSD.org
 COMMENT=	TI MSP430 debugging interface library
@@ -25,7 +25,7 @@ USES=		compiler:c++11-lib dos2unix gmake zip:infozip
 USE_LDCONFIG=	yes
 
 WRKSRC=		${WRKDIR}
-DOS2UNIX_REGEX=	.*\.(cpp|h)
+DOS2UNIX_REGEX=	.*/Makefile|.*\.(cpp|h)
 
 MAKE_ARGS+=	BOOST_DIR=${LOCALBASE} \
 		HIDAPI_DIR=${LOCALBASE}

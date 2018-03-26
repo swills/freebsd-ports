@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/net/rubygem-gitaly-proto083/Makefile 465602 2018-03-26 15:10:49Z mfechner $
 
 PORTNAME=	gitaly-proto
 PORTVERSION=	0.83.0
@@ -13,8 +13,6 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	rubygem-google-protobuf>=3.1:devel/rubygem-google-protobuf \
 		rubygem-grpc>=1.0:net/rubygem-grpc
-
-#CONFLICTS_INSTALL=	rubygem-gitaly-proto
 
 PORTSCOUT=	limit:^0\.83\.
 

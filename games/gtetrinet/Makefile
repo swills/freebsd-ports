@@ -1,9 +1,9 @@
 # Created by: Dan Papasian <bugg@bugg.strangled.net>
-# $FreeBSD: head/games/gtetrinet/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/games/gtetrinet/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	gtetrinet
 PORTVERSION=	0.7.11
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	games gnome ipv6
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

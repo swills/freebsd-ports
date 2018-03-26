@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/security/parano/Makefile 455825 2017-12-09 09:14:13Z antoine $
+# $FreeBSD: head/security/parano/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	parano
 PORTVERSION=	0.3.5
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	security
 MASTER_SITES=	BERLIOS
 

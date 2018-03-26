@@ -1,9 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/games/gretools/Makefile 455824 2017-12-09 09:11:53Z antoine $
+# $FreeBSD: head/games/gretools/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	gretools
 PORTVERSION=	1.2.4
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	games gnome
 MASTER_SITES=	http://randomwalker.info/gretools/${PORTVERSION:R}/
 
