@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/misc/gregexp/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/misc/gregexp/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	gregexp
 PORTVERSION=	0.4
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://dentrassi.de/download/gregexp/${PORTVERSION}/
 

@@ -1,9 +1,9 @@
 # Created by: Stephane Lapie <stephane.lapie@darkbsd.org>
-# $FreeBSD: head/japanese/gjiten/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/japanese/gjiten/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	gjiten
 PORTVERSION=	2.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	japanese gnome
 MASTER_SITES=	http://gjiten.sourceforge.net/
 

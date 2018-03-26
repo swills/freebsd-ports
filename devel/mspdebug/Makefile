@@ -1,8 +1,8 @@
 # Created by: Peter Jeremy <peterjeremy@acm.org>
-# $FreeBSD: head/devel/mspdebug/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/devel/mspdebug/Makefile 465599 2018-03-26 14:33:30Z lev $
 
 PORTNAME=	mspdebug
-PORTVERSION=	0.23.20151024
+PORTVERSION=	0.25.20180301
 PORTREVISION=	1
 CATEGORIES=	devel
 
@@ -13,7 +13,7 @@ LICENSE=	GPLv2
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	dlbeer
-GH_TAGNAME=	38ea614
+GH_TAGNAME=	7c41acd
 
 OPTIONS_DEFINE=		READLINE LIBMSP430
 OPTIONS_DEFAULT=	READLINE LIBMSP430

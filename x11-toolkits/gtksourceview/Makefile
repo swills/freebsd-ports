@@ -1,10 +1,10 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gtksourceview/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/x11-toolkits/gtksourceview/Makefile 465584 2018-03-26 12:38:56Z bapt $
 #   $MCom: ports/x11-toolkits/gtksourceview/Makefile,v 1.46 2007/05/19 21:36:33 marcus Exp $
 
 PORTNAME=	gtksourceview
 PORTVERSION=	1.8.5
-PORTREVISION?=	11
+PORTREVISION?=	12
 CATEGORIES=	x11-toolkits gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

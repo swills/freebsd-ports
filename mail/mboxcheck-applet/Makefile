@@ -1,9 +1,9 @@
 # Created by: Pav Lucistnik <pav@oook.cz>
-# $FreeBSD: head/mail/mboxcheck-applet/Makefile 455839 2017-12-09 10:25:53Z antoine $
+# $FreeBSD: head/mail/mboxcheck-applet/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	mboxcheck-applet
 PORTVERSION=	0.3
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	mail
 MASTER_SITES=	http://perso.orange.fr/seb128/fichiers/
 

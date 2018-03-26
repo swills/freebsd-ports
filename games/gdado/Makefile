@@ -1,9 +1,9 @@
 # Created by: Anish Mistry <amistry@am-productions.biz>
-# $FreeBSD: head/games/gdado/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/games/gdado/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	gdado
 PORTVERSION=	2.2
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/souce%20code/${PORTNAME}-${PORTVERSION}
 

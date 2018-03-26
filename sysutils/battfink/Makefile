@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/battfink/Makefile 453963 2017-11-11 09:04:37Z amdmi3 $
+# $FreeBSD: head/sysutils/battfink/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	battfink
 PORTVERSION=	0.6.2
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

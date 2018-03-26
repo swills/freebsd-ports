@@ -1,9 +1,9 @@
 # Created by: Tom McLaughlin <tmclaugh@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gnome-sharp20/Makefile 460430 2018-01-30 19:00:27Z dbn $
+# $FreeBSD: head/x11-toolkits/gnome-sharp20/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	gnome-sharp
 PORTVERSION=	2.24.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-toolkits
 
 MAINTAINER=	mono@FreeBSD.org

@@ -1,9 +1,9 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/print/gnomephotoprinter/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/print/gnomephotoprinter/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	gnomephotoprinter
 PORTVERSION=	0.7.0
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	print gnome
 MASTER_SITES=	http://www.fogman.de/gpp/
 DISTNAME=	gpp-${PORTVERSION}

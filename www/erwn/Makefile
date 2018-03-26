@@ -1,9 +1,9 @@
 # Created by: Jim Mock <jimFreeBSD.org>
-# $FreeBSD: head/www/erwn/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/www/erwn/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	erwn
 PORTVERSION=	0.8
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	www editors
 MASTER_SITES=	https://lisas.de/erwin/
 DISTNAME=	erwin-${PORTVERSION}

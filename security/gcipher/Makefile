@@ -1,9 +1,9 @@
 # Created by: Shannon -jj Behrens <jjinux@yahoo.com>
-# $FreeBSD: head/security/gcipher/Makefile 455822 2017-12-09 09:07:05Z antoine $
+# $FreeBSD: head/security/gcipher/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	gcipher
 PORTVERSION=	1.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	security gnome
 MASTER_SITES=	SF
 

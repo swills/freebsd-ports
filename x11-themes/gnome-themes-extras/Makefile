@@ -1,10 +1,10 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/x11-themes/gnome-themes-extras/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-themes/gnome-themes-extras/Makefile 465584 2018-03-26 12:38:56Z bapt $
 #   $MCom: ports/x11-themes/gnome-themes-extras/Makefile,v 1.18 2007/10/04 02:36:16 mezz Exp $
 
 PORTNAME=	gnome-themes-extras
 PORTVERSION=	2.22.0
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	x11-themes gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

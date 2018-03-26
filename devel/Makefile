@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 465545 2018-03-25 20:48:20Z yuri $
+# $FreeBSD: head/devel/Makefile 465602 2018-03-26 15:10:49Z mfechner $
 #
 
     COMMENT = Development utilities
@@ -870,7 +870,6 @@
     SUBDIR += gtkparasite
     SUBDIR += gtranslator
     SUBDIR += guichan
-    SUBDIR += guikachu
     SUBDIR += guile-lib
     SUBDIR += gumbo
     SUBDIR += gvfs
@@ -5500,6 +5499,7 @@
     SUBDIR += rubygem-gobject-introspection
     SUBDIR += rubygem-google-api-client
     SUBDIR += rubygem-google-protobuf
+    SUBDIR += rubygem-google-protobuf351
     SUBDIR += rubygem-googleapis-common-protos-types
     SUBDIR += rubygem-graf
     SUBDIR += rubygem-grape

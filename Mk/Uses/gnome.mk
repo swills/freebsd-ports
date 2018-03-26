@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/Uses/gnome.mk 457964 2018-01-03 13:22:31Z mat $
+# $FreeBSD: head/Mk/Uses/gnome.mk 465584 2018-03-26 12:38:56Z bapt $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -265,7 +265,7 @@ libgnomeprintui_LIB_DEPENDS=	libgnomeprintui-2-2.so:x11-toolkits/libgnomeprintui
 libgnomeprintui_USE_GNOME_IMPL=	libgnomeprint libgnomecanvas
 
 libgnome_LIB_DEPENDS=	libgnome-2.so:x11/libgnome
-libgnome_USE_GNOME_IMPL=gnomevfs2 esound libbonobo
+libgnome_USE_GNOME_IMPL=gnomevfs2 libbonobo
 
 libbonoboui_LIB_DEPENDS=	libbonoboui-2.so:x11-toolkits/libbonoboui
 libbonoboui_USE_GNOME_IMPL=	libgnomecanvas libgnome

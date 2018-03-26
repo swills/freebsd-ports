@@ -1,8 +1,9 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/games/pioneers/Makefile 424786 2016-10-27 20:30:15Z lme $
+# $FreeBSD: head/games/pioneers/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	pioneers
 PORTVERSION=	15.4
+PORTREVISION=	1
 CATEGORIES=	games gnome
 MASTER_SITES=	SF/pio/Source
 

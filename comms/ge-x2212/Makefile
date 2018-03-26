@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/ge-x2212/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/comms/ge-x2212/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	ge-x2212
 PORTVERSION=	0.0.2010.09.15
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	comms hamradio
 MASTER_SITES=	http://members.shaw.ca/swstuff/ \
 		LOCAL/makc

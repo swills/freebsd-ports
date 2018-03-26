@@ -1,10 +1,10 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/textproc/gnome-spell/Makefile 454681 2017-11-22 09:00:16Z amdmi3 $
+# $FreeBSD: head/textproc/gnome-spell/Makefile 465584 2018-03-26 12:38:56Z bapt $
 #   $MCom: ports/textproc/gnome-spell/Makefile,v 1.13 2007/10/15 17:17:18 mezz Exp $
 
 PORTNAME=	gnome-spell
 PORTVERSION=	1.0.8
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	textproc gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome

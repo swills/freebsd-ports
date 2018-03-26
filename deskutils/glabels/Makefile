@@ -1,9 +1,9 @@
 # Created by: Martin Klaffenboeck <martin.klaffenboeck@gmx.at>
-# $FreeBSD: head/deskutils/glabels/Makefile 396823 2015-09-13 14:03:53Z bapt $
+# $FreeBSD: head/deskutils/glabels/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	glabels
 PORTVERSION=	2.2.8
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	deskutils
 MASTER_SITES=	GNOME
 

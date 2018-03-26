@@ -1,9 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/finance/mybudget/Makefile 455829 2017-12-09 09:31:04Z antoine $
+# $FreeBSD: head/finance/mybudget/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	myBudget
 PORTVERSION=	0.60
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	finance gnome
 MASTER_SITES=	http://www.abisource.com/~msevior/
 

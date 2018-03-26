@@ -1,9 +1,9 @@
 # Created by: Martin Klaffenboeck <martin.klaffenboeck@gmx.at>
-# $FreeBSD: head/deskutils/gnotime/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/deskutils/gnotime/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	gnotime
 PORTVERSION=	2.4.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	SF/gttr/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

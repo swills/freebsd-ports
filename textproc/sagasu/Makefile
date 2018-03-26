@@ -1,9 +1,9 @@
 # Created by: Juan Salaverria <rael@vectorstar.net>
-# $FreeBSD: head/textproc/sagasu/Makefile 460384 2018-01-30 12:35:05Z martymac $
+# $FreeBSD: head/textproc/sagasu/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	sagasu
 PORTVERSION=	2.0.12
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc gnome
 MASTER_SITES=	http://perso.b2b2c.ca/~sarrazip/dev/
 

@@ -1,9 +1,9 @@
 # Created by: Adam Weinberger
-# $FreeBSD: head/games/monkeybubble/Makefile 440499 2017-05-09 14:04:18Z tobik $
+# $FreeBSD: head/games/monkeybubble/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	monkeybubble
 PORTVERSION=	0.4.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	games gnome
 MASTER_SITES=	http://home.gna.org/monkeybubble/downloads/
 DISTNAME=	monkey-bubble-${PORTVERSION}
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		gmake libtool pathfix pkgconfig
 USE_GNOME=	gnomedocutils gnomeprefix intlhack \
-		librsvg2 libgnomeui
+		librsvg2 libgnomeui esound
 USE_GSTREAMER=	yes
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include

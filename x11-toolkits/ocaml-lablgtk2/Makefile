@@ -1,9 +1,9 @@
 # Created by: Rene Ladan <rene@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/ocaml-lablgtk2/Makefile 453238 2017-10-31 14:51:53Z olgeni $
+# $FreeBSD: head/x11-toolkits/ocaml-lablgtk2/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	lablgtk2
 PORTVERSION=	2.18.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://forge.ocamlcore.org/frs/download.php/1479/ \
 		LOCAL/bf

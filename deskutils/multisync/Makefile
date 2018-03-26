@@ -1,9 +1,9 @@
 # Created by: Pav Lucistnik <pav@FreeBSD.org>
-# $FreeBSD: head/deskutils/multisync/Makefile 389219 2015-06-11 14:24:45Z amdmi3 $
+# $FreeBSD: head/deskutils/multisync/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME?=	multisync
 PORTVERSION=	0.82
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	deskutils
 MASTER_SITES=	SF/multisync/OldFiles
 DISTNAME=	multisync-${PORTVERSION}

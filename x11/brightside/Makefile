@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/brightside/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/x11/brightside/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	brightside
 PORTVERSION=	1.4.0
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	x11
 MASTER_SITES=	LOCAL/marcus
 

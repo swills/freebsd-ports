@@ -1,10 +1,10 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/print/ggv/Makefile 411798 2016-03-24 15:47:50Z tijl $
+# $FreeBSD: head/print/ggv/Makefile 465584 2018-03-26 12:38:56Z bapt $
 #   $MCom: ports/print/ggv/Makefile,v 1.8 2007/09/24 19:40:45 mezz Exp $
 
 PORTNAME=	ggv
 PORTVERSION=	2.12.0
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	print gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome2

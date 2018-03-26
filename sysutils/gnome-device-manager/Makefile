@@ -1,10 +1,10 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/gnome-device-manager/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/sysutils/gnome-device-manager/Makefile 465584 2018-03-26 12:38:56Z bapt $
 #   $MCom: ports/sysutils/gnome-device-manager/Makefile,v 1.1 2008/01/08 06:47:29 marcus Exp $
 
 PORTNAME=	gnome-device-manager
 PORTVERSION=	0.2
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	sysutils
 MASTER_SITES=	http://hal.freedesktop.org/releases/
 

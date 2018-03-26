@@ -1,8 +1,9 @@
 # Created by: Holger Lamm <holger@eit.uni-kl.de>
-# $FreeBSD: head/net-mgmt/etherape/Makefile 463626 2018-03-05 08:19:09Z woodsb02 $
+# $FreeBSD: head/net-mgmt/etherape/Makefile 465601 2018-03-26 14:45:02Z woodsb02 $
 
 PORTNAME=	etherape
 PORTVERSION=	0.9.16
+PORTREVISION=	1
 CATEGORIES=	net-mgmt gnome
 MASTER_SITES=	SF
 
@@ -19,7 +20,7 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libpopt.so:devel/popt
 
 USES=		gettext gmake iconv localbase pathfix pkgconfig
-USE_GNOME=	cairo gdkpixbuf2 libglade2 libgnomecanvas
+USE_GNOME=	cairo gdkpixbuf2 libglade2 libgnomecanvas libgnomeui
 GNU_CONFIGURE=	yes
 
 PORTDOCS=	AUTHORS ChangeLog FAQ NEWS README README.bugs TODO

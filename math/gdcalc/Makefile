@@ -1,9 +1,9 @@
 # Created by: Jan Srocker <Jan.Stocker@t-online.de>
-# $FreeBSD: head/math/gdcalc/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/gdcalc/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	gdcalc
 PORTVERSION=	2.15
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	math
 MASTER_SITES=	http://bhepple.freeshell.org/dcalc/unix/
 

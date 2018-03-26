@@ -1,9 +1,9 @@
 # Created by: UMENO Takashi
-# $FreeBSD: head/x11-clocks/gtubeclock/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/x11-clocks/gtubeclock/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	gtubeclock
 PORTVERSION=	0.9.1
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	x11-clocks
 MASTER_SITES=	http://www.bonnyswan.com/gtubeclock/downloads/
 

@@ -1,9 +1,9 @@
 # Created by: Remington Lang <MrL0Lz@gmail.com>
-# $FreeBSD: head/deskutils/everygui/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/deskutils/everygui/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	everygui
 PORTVERSION=	0.99.b
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	SF
 

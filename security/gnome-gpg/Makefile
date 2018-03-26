@@ -1,10 +1,10 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/security/gnome-gpg/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/gnome-gpg/Makefile 465584 2018-03-26 12:38:56Z bapt $
 #    $MCom: ports/security/gnome-gpg/Makefile,v 1.1 2006/09/02 15:20:58 ahze Exp $
 
 PORTNAME=	gnome-gpg
 PORTVERSION=	0.5.0
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	security
 MASTER_SITES=	GNOME
 

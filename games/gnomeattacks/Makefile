@@ -1,9 +1,9 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/games/gnomeattacks/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/games/gnomeattacks/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	gnomeattacks
 PORTVERSION=	0.3
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	games gnome
 MASTER_SITES=	SF
 

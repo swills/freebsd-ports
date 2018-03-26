@@ -1,9 +1,9 @@
 # Created by: Robert C. Noland III <rnoland@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/swt/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11-toolkits/swt/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	swt
 DISTVERSION=	3.5.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-toolkits devel java
 #MASTER_SITES=	ECLIPSE/R-${DISTVERSION}-201002111343
 MASTER_SITES=	http://archive.eclipse.org/eclipse/downloads/drops/R-${DISTVERSION}-201002111343/

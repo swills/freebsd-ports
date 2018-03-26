@@ -1,10 +1,10 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/py-gnome2/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/x11-toolkits/py-gnome2/Makefile 465584 2018-03-26 12:38:56Z bapt $
 #   $MCom: ports/x11-toolkits/py-gnome2/Makefile,v 1.60 2010/04/02 20:22:15 kwm Exp $
 
 PORTNAME=	gnome
 PORTVERSION=	2.28.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	x11-toolkits python gnome
 MASTER_SITES=	GNOME/sources/gnome-python/${PORTVERSION:C/^([0-9]+\.[0-9]+).*/\1/}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

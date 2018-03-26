@@ -1,9 +1,9 @@
 # Created by: Juan Salaverria <rael@vectorstar.net>
-# $FreeBSD: head/games/gturing/Makefile 428142 2016-12-08 17:17:43Z tijl $
+# $FreeBSD: head/games/gturing/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	gturing
 PORTVERSION=	0.1.1
-PORTREVISION=	20
+PORTREVISION=	21
 CATEGORIES=	games gnome
 MASTER_SITES=	ftp://ftp.gnome.org/pub/gnome/sources/gturing/0.1/
 

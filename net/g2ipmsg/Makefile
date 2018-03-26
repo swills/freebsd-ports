@@ -1,9 +1,9 @@
 # Created by: Norikatsu Shigemura <nork@FreeBSD.org>
-# $FreeBSD: head/net/g2ipmsg/Makefile 464381 2018-03-13 14:37:48Z amdmi3 $
+# $FreeBSD: head/net/g2ipmsg/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	g2ipmsg
 PORTVERSION=	0.9.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net gnome
 MASTER_SITES=	http://ipmsg.org/archive/
 

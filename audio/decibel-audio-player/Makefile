@@ -1,9 +1,9 @@
 # Created by: kipz <somicide@gmail.com>
-# $FreeBSD: head/audio/decibel-audio-player/Makefile 464854 2018-03-18 02:12:55Z linimon $
+# $FreeBSD: head/audio/decibel-audio-player/Makefile 465584 2018-03-26 12:38:56Z bapt $
 
 PORTNAME=	decibel-audio-player
 PORTVERSION=	1.08
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio multimedia gnome python
 MASTER_SITES=	http://decibel.silent-blade.org/uploads/Main/
 
