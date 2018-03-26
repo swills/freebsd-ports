@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 465153 2018-03-21 06:56:46Z yuri $
+# $FreeBSD: head/graphics/Makefile 465523 2018-03-25 15:33:51Z tobik $
 #
 
     COMMENT = Graphics tools and libraries
@@ -1023,7 +1023,7 @@
     SUBDIR += simage
     SUBDIR += simpleviewer
     SUBDIR += sk1libs
-    SUBDIR += skanlite
+    SUBDIR += skanlite-kde4
     SUBDIR += smillaenlarger
     SUBDIR += springgraph
     SUBDIR += squish
@@ -1079,6 +1079,7 @@
     SUBDIR += waffle
     SUBDIR += waifu2x-converter-cpp
     SUBDIR += wayland
+    SUBDIR += waylandpp
     SUBDIR += wayland-protocols
     SUBDIR += webp
     SUBDIR += wings

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/mate-applets/Makefile 445014 2017-07-04 11:44:30Z kwm $
+# $FreeBSD: head/x11/mate-applets/Makefile 465547 2018-03-25 21:48:32Z brd $
 
 PORTNAME=	mate-applets
 PORTVERSION=	1.18.1
@@ -26,7 +26,9 @@ PORTSCOUT=	limitw:1,even
 
 #USES=		autoreconf:build gettext gmake libtool localbase pathfix \
 #		pkgconfig python shebangfix tar:xz
-USES=		gettext gmake libtool localbase pkgconfig python:2.7 shebangfix tar:xz
+USES=		compiler:c11 gettext gmake libtool localbase pkgconfig \
+		python:2.7 shebangfix tar:xz
+USE_CSTD=	c11
 #USE_MATE=	desktop icontheme libmateweather panel polkit settingsdaemon
 USE_MATE=	libmateweather panel
 USE_XORG=	ice sm x11

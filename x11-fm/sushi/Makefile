@@ -1,5 +1,5 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/x11-fm/sushi/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-fm/sushi/Makefile 465547 2018-03-25 21:48:32Z brd $
 
 PORTNAME=	sushi
 PORTVERSION=	3.18.0
@@ -21,7 +21,8 @@ RUN_DEPENDS=	nautilus:x11-fm/nautilus
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake gnome libtool pathfix pkgconfig tar:xz
+USES=		compiler:c11 gettext gmake gnome libtool pathfix pkgconfig tar:xz
+USE_CSTD=	c11
 INSTALLS_ICONS=	yes
 USE_GNOME=	gnomeprefix gtksourceview3 intlhack introspection:build
 USE_LDCONFIG=	yes

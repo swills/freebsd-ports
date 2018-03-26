@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/Makefile 465097 2018-03-20 17:19:01Z tcberner $
+# $FreeBSD: head/astro/Makefile 465565 2018-03-26 09:04:18Z yuri $
 #
 
     COMMENT = Astronomical ports
@@ -96,6 +96,7 @@
     SUBDIR += routino
     SUBDIR += saoimage
     SUBDIR += sextractor
+    SUBDIR += siril
     SUBDIR += sscalc
     SUBDIR += stardates
     SUBDIR += starplot

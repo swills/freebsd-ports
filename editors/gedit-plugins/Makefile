@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/editors/gedit-plugins/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/editors/gedit-plugins/Makefile 465547 2018-03-25 21:48:32Z brd $
 
 PORTNAME=	gedit-plugins
 PORTVERSION=	3.18.0
@@ -20,8 +20,9 @@ RUN_DEPENDS=	gedit>=0:editors/gedit
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gettext gmake gnome libtool pathfix pkgconfig \
+USES=		compiler:c11 gettext gmake gnome libtool pathfix pkgconfig \
 		python:3.4+ tar:xz
+USE_CSTD=	c11
 USE_GNOME=	gtk30 gtksourceview3 intlhack
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes

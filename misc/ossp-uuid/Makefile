@@ -1,5 +1,5 @@
 # Created by: Kimura Fuyuki <fuyuki@nigredo.org>
-# $FreeBSD: head/misc/ossp-uuid/Makefile 410454 2016-03-06 11:48:10Z pi $
+# $FreeBSD: head/misc/ossp-uuid/Makefile 465505 2018-03-25 08:33:23Z amdmi3 $
 
 PORTNAME=	uuid
 PORTVERSION=	1.6.2
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	ossp-
 MAINTAINER=	vd@FreeBSD.org
 COMMENT=	ISO-C API and CLI for generating Universally Unique Identifiers
 
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/README
+
 GNU_CONFIGURE=	yes
 USES+=		libtool pathfix
 USE_LDCONFIG=	yes
@@ -19,17 +22,13 @@ CONFIGURE_ARGS=	--with-cxx \
 
 .if defined(SLAVEPORT) && ${SLAVEPORT}=="perl"
 PKGNAMEPREFIX=	p5-OSSP-
+.else
+TEST_TARGET=	check
 .endif
-
-regression-test: test
 
 pre-patch:
 ### Fixes lib conflicts with misc/e2fsprogs-libuuid ###
-	${REINPLACE_CMD} 's/libuuid.la/libossp-uuid.la/ ; s/libuuid++.la/libossp-uuid++.la/' \
+	@${REINPLACE_CMD} 's/libuuid.la/libossp-uuid.la/ ; s/libuuid++.la/libossp-uuid++.la/' \
 		${WRKDIR}/${DISTNAME}/Makefile.in
-
-test: build
-	@(cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_CMD} ${MAKE_FLAGS} \
-		${MAKEFILE} ${MAKE_ARGS} check)
 
 .include <bsd.port.mk>

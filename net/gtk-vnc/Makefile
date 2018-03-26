@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/net/gtk-vnc/Makefile 441442 2017-05-22 09:20:31Z kwm $
+# $FreeBSD: head/net/gtk-vnc/Makefile 465577 2018-03-26 10:16:36Z bapt $
 
 PORTNAME=	gtk-vnc
-PORTVERSION=	0.7.1
+PORTVERSION=	0.7.2
 CATEGORIES=	net gnome
 MASTER_SITES=	GNOME
 

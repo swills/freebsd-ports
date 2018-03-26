@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gtksourceview3/Makefile 440702 2017-05-12 19:11:02Z kwm $
+# $FreeBSD: head/x11-toolkits/gtksourceview3/Makefile 465547 2018-03-25 21:48:32Z brd $
 
 PORTNAME=	gtksourceview
 PORTVERSION=	3.22.2
@@ -19,7 +19,8 @@ PORTSCOUT=	limitw:1,even
 
 BUILD_DEPENDS=	vala:lang/vala
 
-USES+=		gettext gmake gnome libtool pathfix pkgconfig
+USES+=		compiler:c11 gettext gmake gnome libtool pathfix pkgconfig
+USE_CSTD=	c11
 USE_GNOME=	cairo gdkpixbuf2 gnomeprefix gtk30 intlhack \
 		introspection:build libxml2 referencehack
 GNU_CONFIGURE=	yes

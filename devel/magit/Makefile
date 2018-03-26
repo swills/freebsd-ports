@@ -1,5 +1,5 @@
 # Created by: Jun Kuriyama <kuriyama@FreeBSD.org>
-# $FreeBSD: head/devel/magit/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/devel/magit/Makefile 462857 2018-02-24 18:01:40Z antoine $
 
 PORTNAME=	magit
 PORTVERSION=	2.11.0

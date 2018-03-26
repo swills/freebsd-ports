@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas (<thierry@pompo.net>)
-# $FreeBSD: head/mail/pecl-mailparse/Makefile 440442 2017-05-08 17:21:49Z dbaio $
+# $FreeBSD: head/mail/pecl-mailparse/Makefile 465055 2018-03-20 02:20:07Z dbaio $
 
 PORTNAME=	mailparse
 PORTVERSION=	3.0.2

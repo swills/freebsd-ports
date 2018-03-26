@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 465343 2018-03-23 09:50:04Z adridg $
+# $FreeBSD: head/net-im/Makefile 465556 2018-03-26 01:08:25Z yuri $
 #
 
     COMMENT = Instant messaging
@@ -193,6 +193,7 @@
     SUBDIR += tkabber-plugins
     SUBDIR += tox
     SUBDIR += tox12
+    SUBDIR += toxbot
     SUBDIR += toxic
     SUBDIR += toxins
     SUBDIR += turpial

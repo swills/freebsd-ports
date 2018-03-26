@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/spidermonkey24/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/lang/spidermonkey24/Makefile 465519 2018-03-25 14:36:28Z linimon $
 
 PORTNAME=		spidermonkey24
 PORTVERSION=		24.2.0
@@ -31,6 +31,11 @@ CONFIGURE_ARGS=		--with-pthreads \
 OPTIONS_DEFINE=		DEBUG GCZEAL JEMALLOC METHODJIT OPTIMIZE READLINE \
 			THREADSAFE TRACEJIT UTF8 DTRACE
 OPTIONS_DEFAULT=	METHODJIT OPTIMIZE READLINE THREADSAFE TRACEJIT
+# ld(1) fails to link probes: Relocations in generic ELF (EM: 0)
+OPTIONS_EXCLUDE_aarch64=	DTRACE
+# dt_modtext:opensolaris/lib/libdtrace/common/dt_link.c: arm not implemented
+OPTIONS_EXCLUDE_armv6=	DTRACE
+OPTIONS_EXCLUDE_armv7=	DTRACE
 OPTIONS_SUB=	yes
 
 DEBUG_CONFIGURE_ENABLE=	debug debug-symbols
