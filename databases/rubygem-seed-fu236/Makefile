@@ -13,7 +13,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 DEPRECATED=	yes
-EXPIRATION_DATE=	2018-03-31
+EXPIRATION_DATE=	2018-04-30
 
 RUN_DEPENDS=	rubygem-activerecord4>=3.1:databases/rubygem-activerecord4 \
 		rubygem-activesupport4>=3.1:devel/rubygem-activesupport4
