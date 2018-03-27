@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 465465 2018-03-24 19:14:53Z mr $
+# $FreeBSD: head/deskutils/Makefile 465624 2018-03-26 19:04:41Z yuri $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -6,6 +6,7 @@
     SUBDIR += affiche
     SUBDIR += alarm-clock-applet
     SUBDIR += anamnesis
+    SUBDIR += anydesk
     SUBDIR += appwrapper
     SUBDIR += aspostit
     SUBDIR += autocutsel

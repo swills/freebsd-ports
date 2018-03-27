@@ -1,10 +1,9 @@
-# Created by: Nikolai Lifanov <lifanov@FreeBSD.org>
-# $FreeBSD: head/sysutils/ansible23/Makefile 455204 2017-11-30 15:32:44Z lifanov $
+# $FreeBSD: head/sysutils/ansible23/Makefile 465603 2018-03-26 15:17:20Z lifanov $
 
 PORTVERSION=	2.3.2.0
 PKGNAMESUFFIX=	23
 
-CONFLICTS=	ansible-* ansible1-*
+CONFLICTS=	ansible-* ansible1-* ansible24-*
 
 MASTERDIR=	${.CURDIR}/../ansible
 DISTINFO_FILE=	${.CURDIR}/distinfo

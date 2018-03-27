@@ -1,10 +1,10 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab/Makefile 463765 2018-03-06 20:32:57Z sunpoet $
+# $FreeBSD: head/www/gitlab/Makefile 465682 2018-03-27 09:35:54Z tz $
 
 PORTNAME=	gitlab
 PORTVERSION=	10.4.4
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	www devel
 
 MAINTAINER=	idefix@fechner.net
@@ -40,8 +40,8 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-grape-route-helpers>=2.1.0:devel/rubygem-grape-route-helpers \
 	rubygem-faraday>=0.12.0:www/rubygem-faraday \
 	rubygem-devise>=4.2:devel/rubygem-devise \
-	rubygem-doorkeeper>=4.2:security/rubygem-doorkeeper \
-	rubygem-doorkeeper-openid_connect>=1.2.0:security/rubygem-doorkeeper-openid_connect \
+	rubygem-doorkeeper42>=4.2:security/rubygem-doorkeeper42 \
+	rubygem-doorkeeper-openid_connect12>=1.2.0:security/rubygem-doorkeeper-openid_connect12 \
 	rubygem-omniauth14>=1.4.2:security/rubygem-omniauth14 \
 	rubygem-omniauth-auth014>=1.4.1:net/rubygem-omniauth-auth014 \
 	rubygem-omniauth-azure-oauth2>=0.0.9:net/rubygem-omniauth-azure-oauth2 \

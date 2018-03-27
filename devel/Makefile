@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 465602 2018-03-26 15:10:49Z mfechner $
+# $FreeBSD: head/devel/Makefile 465633 2018-03-26 19:49:46Z yuri $
 #
 
     COMMENT = Development utilities
@@ -4362,6 +4362,8 @@
     SUBDIR += py-construct
     SUBDIR += py-construct28
     SUBDIR += py-contextlib2
+    SUBDIR += py-coreapi
+    SUBDIR += py-coreschema
     SUBDIR += py-country
     SUBDIR += py-cov-core
     SUBDIR += py-coverage
@@ -4533,6 +4535,7 @@
     SUBDIR += py-isodate
     SUBDIR += py-isort
     SUBDIR += py-iterpipes
+    SUBDIR += py-itypes
     SUBDIR += py-jaraco.classes
     SUBDIR += py-jaraco.functools
     SUBDIR += py-jaraco.itertools

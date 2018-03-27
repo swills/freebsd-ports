@@ -1,12 +1,12 @@
 # Created by: Russell Jackson <raj@csub.edu>
-# $FreeBSD: head/textproc/augeas/Makefile 451715 2017-10-10 18:48:14Z swills $
+# $FreeBSD: head/textproc/augeas/Makefile 465616 2018-03-26 17:05:00Z swills $
 
 PORTNAME=	augeas
-PORTVERSION=	1.9.0
+PORTVERSION=	1.10.1
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.augeas.net/
 
-MAINTAINER=	swills@FreeBSD.org
+MAINTAINER=	puppet@FreeBSD.org
 COMMENT=	Configuration editing tool
 
 LICENSE=	LGPL21
@@ -29,8 +29,5 @@ post-patch:
 		${WRKSRC}/lenses/puppet.aug \
 		${WRKSRC}/lenses/puppet_auth.aug \
 		${WRKSRC}/lenses/puppetfileserver.aug
-
-post-install:
-	${MV} ${STAGEDIR}${PREFIX}/bin/dump ${STAGEDIR}${PREFIX}/bin/augdump
 
 .include <bsd.port.mk>

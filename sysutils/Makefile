@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 465431 2018-03-24 07:51:20Z tcberner $
+# $FreeBSD: head/sysutils/Makefile 465638 2018-03-26 21:23:45Z dvl $
 #
 
     COMMENT = System utilities
@@ -40,6 +40,7 @@
     SUBDIR += ansible
     SUBDIR += ansible1
     SUBDIR += ansible23
+    SUBDIR += ansible24
     SUBDIR += anvil
     SUBDIR += apachetop
     SUBDIR += apcpwr
@@ -930,6 +931,7 @@
     SUBDIR += py-halite
     SUBDIR += py-honcho
     SUBDIR += py-iowait
+    SUBDIR += py-mqttwarn
     SUBDIR += py-nagiosplugin
     SUBDIR += py-nomad
     SUBDIR += py-pkginfo

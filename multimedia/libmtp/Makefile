@@ -1,8 +1,8 @@
 # Created by: Petar Zhivkov Petrov <pesho.petrov@gmail.com>
-# $FreeBSD: head/multimedia/libmtp/Makefile 451557 2017-10-08 18:56:45Z jbeich $
+# $FreeBSD: head/multimedia/libmtp/Makefile 465654 2018-03-27 00:44:56Z jbeich $
 
 PORTNAME=	libmtp
-PORTVERSION=	1.1.14
+PORTVERSION=	1.1.15
 CATEGORIES=	multimedia audio
 MASTER_SITES=	SF
 

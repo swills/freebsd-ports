@@ -1,9 +1,8 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/sysutils/brasero/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/brasero/Makefile 465685 2018-03-27 10:00:48Z bapt $
 
 PORTNAME=	brasero
-PORTVERSION=	3.12.1
-PORTREVISION=	1
+PORTVERSION=	3.12.2
 CATEGORIES=	sysutils audio multimedia gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

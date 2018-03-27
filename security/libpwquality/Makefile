@@ -1,23 +1,20 @@
-# $FreeBSD: head/security/libpwquality/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/security/libpwquality/Makefile 465679 2018-03-27 09:24:39Z bapt $
 
 PORTNAME=	libpwquality
-PORTVERSION=	1.2.4
-PORTREVISION=	2
+PORTVERSION=	1.4.0
 CATEGORIES=	security
-MASTER_SITES=	https://fedorahosted.org/releases/l/i/libpwquality/
+MASTER_SITES=	https://github.com/${PORTNAME}/${PORTNAME}/releases/download/${PORTNAME}-${PORTVERSION}/
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Library for generating random passwords and quality checking
 
 LIB_DEPENDS=	libcrack.so:security/cracklib
 
-USES=		gettext gmake libtool pathfix tar:bzip2
+USES=		gettext gmake localbase libtool pathfix tar:bz2
 USE_GNOME=	intltool
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 CONFIGURE_ARGS+=--disable-pam
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 INSTALL_TARGET=	install-strip
 
 OPTIONS_DEFINE=	PYTHON

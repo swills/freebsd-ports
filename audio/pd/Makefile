@@ -1,5 +1,5 @@
 # Created by: trevor
-# $FreeBSD: head/audio/pd/Makefile 419021 2016-07-24 20:18:43Z pawel $
+# $FreeBSD: head/audio/pd/Makefile 465606 2018-03-26 15:36:35Z mat $
 
 PORTNAME=	pd
 DISTVERSION=	0.47-1
@@ -30,7 +30,7 @@ CONFIGURE_ENV=	ac_cv_lib_pthread_pthread_create=no
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib -pthread
 
-DESKTOP_ENTRIES="Pd" "" "${PREFIX}/lib/pd/tcl/pd.ico" "pd" "" ${FALSE}
+DESKTOP_ENTRIES="Pd" "" "${PREFIX}/lib/pd/tcl/pd.ico" "pd" "" false
 
 OPTIONS_DEFINE=		ALSA DOCS JACK
 OPTIONS_DEFAULT=	JACK

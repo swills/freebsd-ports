@@ -1,9 +1,8 @@
 # Created by: David O'Brien <obrien@FreeBSD.org>
-# $FreeBSD: head/sysutils/lsof/Makefile 462258 2018-02-18 18:35:22Z ler $
+# $FreeBSD: head/sysutils/lsof/Makefile 465642 2018-03-26 22:14:29Z ler $
 
 PORTNAME=	lsof
-DISTVERSION=	4.90
-PORTREVISION=	1
+DISTVERSION=	4.91
 PORTEPOCH=	8
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/ \

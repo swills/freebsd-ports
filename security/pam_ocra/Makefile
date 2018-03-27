@@ -1,8 +1,8 @@
 # Created by: Stefan Grundmann
-# $FreeBSD: head/security/pam_ocra/Makefile 446887 2017-07-29 18:28:08Z dbaio $
+# $FreeBSD: head/security/pam_ocra/Makefile 465625 2018-03-26 19:11:51Z yuri $
 
 PORTNAME=	pam_ocra
-PORTVERSION=	1.3
+DISTVERSION=	1.4
 CATEGORIES=	security
 
 MAINTAINER=	sg2342@googlemail.com

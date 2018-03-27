@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/erlang-yamerl/Makefile 455123 2017-11-29 16:24:37Z olgeni $
+# $FreeBSD: head/textproc/erlang-yamerl/Makefile 465672 2018-03-27 08:57:31Z olgeni $
 
 PORTNAME=	yamerl
-PORTVERSION=	0.6.0
+PORTVERSION=	0.7.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
 PKGNAMEPREFIX=	erlang-
