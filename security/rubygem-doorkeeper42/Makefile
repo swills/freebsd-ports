@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: head/security/rubygem-doorkeeper42/Makefile 465682 2018-03-27 09:35:54Z tz $
 
 PORTNAME=	doorkeeper
 PORTVERSION=	4.2.6
@@ -6,11 +6,13 @@ CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	42
 
-MAINTAINER=	idefix@fechner.ent
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Doorkeeper is an OAuth 2 provider for Rails and Grape
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
+
+CONFLICTS_INSTALL=	rubygem-doorkeeper
 
 RUN_DEPENDS=	rubygem-railties4>=4.2:www/rubygem-railties4
 

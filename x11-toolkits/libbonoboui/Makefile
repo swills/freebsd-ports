@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/libbonoboui/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/x11-toolkits/libbonoboui/Makefile 465635 2018-03-26 20:53:07Z cmt $
 
 PORTNAME=	libbonoboui
 PORTVERSION=	2.24.5
-PORTEVISION=	1
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/adept/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/adept/Makefile 465647 2018-03-26 23:45:18Z yuri $
 
 PORTNAME=	adept
 DISTVERSION=	2.0.5
@@ -11,6 +11,8 @@ COMMENT=	Combined array and automatic differentiation library in C++
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_FreeBSD_10_amd64=	error: use of undeclared identifier '_mm_undefined_ps'
 
 USES=		autoreconf gmake fortran blaslapack:openblas libtool
 GNU_CONFIGURE=	yes

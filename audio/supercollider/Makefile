@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/supercollider/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/audio/supercollider/Makefile 465606 2018-03-26 15:36:35Z mat $
 
 PORTNAME=	supercollider
 PORTVERSION=	3.8.0
@@ -36,7 +36,7 @@ CMAKE_ARGS=	-DCMAKE_PREFIX_PATH=${LOCALBASE}/lib/qt5 \
 		-DLIBSCSYNTH=ON
 
 DESKTOP_ENTRIES="SuperCollider IDE" "" "${LOCALBASE}/share/pixmaps/sc_ide.svg" \
-		"scide" "" ${FALSE}
+		"scide" "" false
 
 OPTIONS_DEFINE=		HELP SUPERNOVA
 OPTIONS_DEFAULT=	HELP SUPERNOVA

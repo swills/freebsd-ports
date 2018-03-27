@@ -1,7 +1,8 @@
-# $FreeBSD: head/japanese/another-htmllint/Makefile 442709 2017-06-05 23:25:16Z sunpoet $
+# $FreeBSD: head/japanese/another-htmllint/Makefile 465662 2018-03-27 06:10:56Z meta $
 
 PORTNAME=	another-htmllint
 PORTVERSION=	20111128
+PORTREVISION=	1
 CATEGORIES=	japanese www
 MASTER_SITES=	http://openlab.ring.gr.jp/k16/htmllint/archives/
 DISTNAME=	htmllint
@@ -9,7 +10,13 @@ DISTNAME=	htmllint
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Another HTML-lint (all messages are written in Japanese)
 
+LICENSE=	AnotherHTMLlint
+LICENSE_NAME=	Another HTML-lint License
+LICENSE_TEXT=	See http://openlab.ring.gr.jp/k16/htmllint/index.html (Written in Japanese)
+LICENSE_PERMS=	no-dist-sell no-pkg-sell
+
 RUN_DEPENDS=	p5-CGI.pm>=0:www/p5-CGI.pm \
+		p5-LWP-Protocol-https>=0:www/p5-LWP-Protocol-https \
 		p5-libwww>=0:www/p5-libwww \
 		ja-p5-Jcode>=0:japanese/p5-Jcode
 

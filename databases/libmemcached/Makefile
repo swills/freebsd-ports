@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/libmemcached/Makefile 450353 2017-09-22 10:48:57Z mat $
+# $FreeBSD: head/databases/libmemcached/Makefile 465669 2018-03-27 08:33:25Z amdmi3 $
 
 PORTNAME=	libmemcached
 PORTVERSION=	1.0.18
@@ -22,6 +22,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-memcached \
 		--without-sphinx-build \
 		--enable-libmemcachedprotocol
+TEST_TARGET=	check
 
 LIBS+=		-lexecinfo
 CXXFLAGS+=	-D__STDC_CONSTANT_MACROS -pthread
@@ -56,8 +57,5 @@ post-patch:
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/*.so.*
-
-regression-test: build
-	@cd ${WRKSRC} && ${GMAKE} check
 
 .include <bsd.port.mk>

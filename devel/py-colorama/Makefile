@@ -1,13 +1,13 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/devel/py-colorama/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-colorama/Makefile 465659 2018-03-27 02:51:12Z ygy $
 
 PORTNAME=	colorama
-PORTVERSION=	0.3.7
+PORTVERSION=	0.3.9
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	alexey@renatasystems.org
+MAINTAINER=	ygy@FreeBSD.org
 COMMENT=	Cross-platform API to print colored terminal text from Python apps
 
 LICENSE=	BSD3CLAUSE

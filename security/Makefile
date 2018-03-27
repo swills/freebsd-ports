@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 465602 2018-03-26 15:10:49Z mfechner $
+# $FreeBSD: head/security/Makefile 465673 2018-03-27 08:57:47Z tz $
 #
 
     COMMENT = Security tools
@@ -1075,6 +1075,7 @@
     SUBDIR += rubygem-devise-two-factor-rails50
     SUBDIR += rubygem-digest-crc
     SUBDIR += rubygem-doorkeeper
+    SUBDIR += rubygem-doorkeeper42
     SUBDIR += rubygem-doorkeeper-openid_connect
     SUBDIR += rubygem-doorkeeper-openid_connect12
     SUBDIR += rubygem-doorkeeper-rails5

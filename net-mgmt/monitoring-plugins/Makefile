@@ -1,9 +1,9 @@
 # Created by: Blaz Zupan <blaz@si.FreeBSD.org>
-# $FreeBSD: head/net-mgmt/monitoring-plugins/Makefile 449835 2017-09-14 11:58:58Z mat $
+# $FreeBSD: head/net-mgmt/monitoring-plugins/Makefile 465678 2018-03-27 09:20:31Z mat $
 
 PORTNAME=	monitoring-plugins
 PORTVERSION=	2.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net-mgmt
 MASTER_SITES=	https://www.monitoring-plugins.org/download/ LOCAL/mat/${PORTNAME}
 
@@ -69,6 +69,7 @@ CONFIGURE_ARGS+=ac_cv_path_PATH_TO_QMAIL_QSTAT=/var/qmail/bin/qmail-qstat \
 		ac_cv_path_PATH_TO_PING6=/sbin/ping6 \
 		--with-ping-command="/sbin/ping -n -t %d -c %d %s" \
 		--with-ping6-command="/sbin/ping6 -n -X %d -c %d %s" \
+		ac_cv_path_PATH_TO_SUDO=${LOCALBASE}/bin/sudo \
 		ac_cv_path_PATH_TO_SMBCLIENT=${LOCALBASE}/bin/smbclient
 
 CPPFLAGS+=	-I${LOCALBASE}/include

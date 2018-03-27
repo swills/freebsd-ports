@@ -1,5 +1,5 @@
 # Created by: Matthias Petermann <matthias@petermann-it.de>
-# $FreeBSD: head/cad/sweethome3d/Makefile 433162 2017-02-02 14:35:38Z krion $
+# $FreeBSD: head/cad/sweethome3d/Makefile 465606 2018-03-26 15:36:35Z mat $
 
 PORTNAME=	sweethome3d
 PORTVERSION=	5.4
@@ -32,7 +32,7 @@ PLIST_FILES=	bin/sweethome3d \
 		${JAVAJARDIR}/${JARNAME} \
 		share/pixmaps/sweethome3d-icon.png
 
-DESKTOP_ENTRIES="Sweet Home 3D" "" "${PORTNAME}-icon" "${PORTNAME}" "" ${FALSE}
+DESKTOP_ENTRIES="Sweet Home 3D" "" "${PORTNAME}-icon" "${PORTNAME}" "" false
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/install/${JARNAME} ${STAGEDIR}${JAVAJARDIR}/${JARNAME}

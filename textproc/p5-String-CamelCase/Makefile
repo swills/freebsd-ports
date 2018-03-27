@@ -1,8 +1,8 @@
 # Created by: TAKAHASHI Kaoru <kaoru@kaisei.org>
-# $FreeBSD: head/textproc/p5-String-CamelCase/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/textproc/p5-String-CamelCase/Makefile 465609 2018-03-26 16:35:21Z sunpoet $
 
 PORTNAME=	String-CamelCase
-PORTVERSION=	0.03
+PORTVERSION=	0.04
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

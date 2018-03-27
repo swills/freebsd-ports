@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooX-StrictConstructor/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooX-StrictConstructor/Makefile 465608 2018-03-26 16:35:16Z sunpoet $
 
 PORTNAME=	MooX-StrictConstructor
-PORTVERSION=	0.008
+PORTVERSION=	0.009
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -17,12 +17,10 @@ BUILD_DEPENDS=	p5-Class-Method-Modifiers>=0:devel/p5-Class-Method-Modifiers \
 		p5-Moo>=1.001000:devel/p5-Moo \
 		p5-strictures>=1:devel/p5-strictures
 RUN_DEPENDS:=	${BUILD_DEPENDS}
-TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal \
-		p5-bareword-filehandles>=0:devel/p5-bareword-filehandles \
-		p5-indirect>=0:devel/p5-indirect \
-		p5-multidimensional>=0:devel/p5-multidimensional
+TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal
 
-USE_PERL5=	modbuild
+NO_ARCH=	yes
+USE_PERL5=	configure
 USES=		perl5
 
 .include <bsd.port.mk>

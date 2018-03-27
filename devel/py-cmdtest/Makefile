@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/py-cmdtest/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/devel/py-cmdtest/Makefile 465677 2018-03-27 09:09:24Z bapt $
 
 PORTNAME=	cmdtest
-PORTVERSION=	0.29
-PORTREVISION=	1
+PORTVERSION=	0.32
 CATEGORIES=	devel
 MASTER_SITES=	http://git.liw.fi/cgi-bin/cgit/cgit.cgi/cmdtest/snapshot/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
