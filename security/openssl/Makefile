@@ -1,8 +1,8 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/security/openssl/Makefile 464064 2018-03-10 10:53:36Z brnrd $
+# $FreeBSD: head/security/openssl/Makefile 465710 2018-03-27 14:53:51Z brnrd $
 
 PORTNAME=	openssl
-PORTVERSION=	1.0.2n
+PORTVERSION=	1.0.2o
 PORTEPOCH=	1
 CATEGORIES=	security devel
 MASTER_SITES=	http://www.openssl.org/source/ \

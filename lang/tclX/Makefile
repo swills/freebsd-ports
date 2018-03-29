@@ -1,5 +1,5 @@
 # Created by: jkh
-# $FreeBSD: head/lang/tclX/Makefile 413646 2016-04-19 14:20:01Z gahr $
+# $FreeBSD: head/lang/tclX/Makefile 465877 2018-03-29 10:32:21Z krion $
 
 PORTNAME=	tclX
 PORTVERSION=	8.4.1
@@ -24,6 +24,8 @@ CONFIGURE_ARGS+=--enable-shared \
 PLIST_SUB=	TCLX_VER=${PORTVERSION:R}
 ALL_TARGET=	binaries libraries
 INSTALL_TARGET=	install-binaries install-libraries
+LLD_UNSAFE=	yes
+BINARY_ALIAS=	ld=ld.bfd
 
 .include <bsd.port.pre.mk>
 

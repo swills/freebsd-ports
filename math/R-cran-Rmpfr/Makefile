@@ -1,9 +1,8 @@
 # Created by: Jukka A. Ukkonen <jau@iki.fi>
-# $FreeBSD: head/math/R-cran-Rmpfr/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/R-cran-Rmpfr/Makefile 465785 2018-03-28 09:05:35Z tota $
 
 PORTNAME=	Rmpfr
-DISTVERSION=	0.6-1
-PORTREVISION=	1
+DISTVERSION=	0.7-0
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

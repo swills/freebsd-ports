@@ -1,5 +1,5 @@
 # Created by: Denis Shaposhnikov <dsh@vlink.ru>
-# $FreeBSD: head/devel/ztcl/Makefile 453458 2017-11-04 13:07:41Z zi $
+# $FreeBSD: head/devel/ztcl/Makefile 465883 2018-03-29 10:51:39Z krion $
 
 PORTNAME=	ztcl
 DISTVERSION=	1.0b4
@@ -20,6 +20,8 @@ OPTIONS_DEFINE=	DOCS
 USES=		gmake tcl:tea
 USE_LDCONFIG=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME:S/_src$//}
+LLD_UNSAFE=	yes
+BINARY_ALIAS=	ld=ld.bfd
 
 INFO=		${PORTNAME} ${PORTNAME}-zlib
 

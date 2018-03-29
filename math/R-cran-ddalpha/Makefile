@@ -1,9 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-ddalpha/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/R-cran-ddalpha/Makefile 465861 2018-03-29 01:13:07Z tota $
 
 PORTNAME=	ddalpha
-PORTVERSION=	1.3.1
-PORTREVISION=	1
+PORTVERSION=	1.3.1.1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

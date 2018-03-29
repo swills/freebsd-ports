@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-CommonMark/Makefile 462581 2018-02-22 10:36:41Z romain $
+# $FreeBSD: head/textproc/py-CommonMark/Makefile 465794 2018-03-28 11:07:59Z romain $
 
 PORTNAME=	CommonMark
-PORTVERSION=	0.7.4
+PORTVERSION=	0.7.5
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

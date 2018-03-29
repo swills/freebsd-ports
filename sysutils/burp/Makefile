@@ -1,5 +1,5 @@
 # Created by: Loic Pefferkorn <loic-freebsd@loicp.eu>
-# $FreeBSD: head/sysutils/burp/Makefile 440110 2017-05-04 14:58:54Z mat $
+# $FreeBSD: head/sysutils/burp/Makefile 465828 2018-03-28 17:16:48Z linimon $
 
 PORTNAME=	burp
 PORTVERSION=	1.4.40
@@ -22,7 +22,7 @@ GH_ACCOUNT=	grke
 
 USE_RC_SUBR=	burp
 GNU_CONFIGURE=	yes
-USES=		gmake localbase ncurses ssl
+USES=		compiler:c++11-lib gmake localbase ncurses ssl
 
 PORTSCOUT=	limit:^1\.4\.
 
@@ -46,4 +46,10 @@ post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/sbin/vss_strip
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/sbin/burp
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 1200039 && ${CC:T} == "clang"
+BROKEN=		fails to compile due to clang 4.0 regression: util/bdthreads.cc:132:10: ordered comparison between pointer and zero
+.endif
+
+.include <bsd.port.post.mk>

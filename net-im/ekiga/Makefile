@@ -1,5 +1,5 @@
 # Created by: Charlie & <root@ws.ipfw.ru>
-# $FreeBSD: head/net-im/ekiga/Makefile 459451 2018-01-19 17:04:52Z mat $
+# $FreeBSD: head/net-im/ekiga/Makefile 465788 2018-03-28 09:33:24Z amdmi3 $
 #    $MCom: ports/trunk/net-im/ekiga/Makefile 19954 2014-10-15 10:03:57Z kwm $
 
 PORTNAME=	ekiga
@@ -12,6 +12,9 @@ DIST_SUBDIR=	gnome3
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	VoIP and video conferencing application
 
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 BUILD_DEPENDS=	v4l_compat>=0:multimedia/v4l_compat \
 		gnome-icon-theme>=3.0.0:misc/gnome-icon-theme
 LIB_DEPENDS=	libboost_signals.so:devel/boost-libs \
@@ -20,8 +23,8 @@ LIB_DEPENDS=	libboost_signals.so:devel/boost-libs \
 RUN_DEPENDS=	gnome-icon-theme>=3.0.0:misc/gnome-icon-theme
 
 GNU_CONFIGURE=	yes
-USES=		cpe gettext gmake kde:4 libtool pathfix perl5 pkgconfig \
-		tar:xz
+USES=		cpe gettext gmake kde:4 libtool localbase pathfix \
+		perl5 pkgconfig tar:xz
 USE_XORG=	xv
 USE_GNOME=	gtk20 intlhack libxml2
 INSTALLS_ICONS=	yes

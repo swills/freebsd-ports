@@ -1,5 +1,5 @@
 # Created by: Beech Rintoul <beech@FreeBSD.org>
-# $FreeBSD: head/irc/eggdrop-devel/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/irc/eggdrop-devel/Makefile 465884 2018-03-29 11:01:53Z krion $
 
 PORTNAME=	eggdrop
 PORTVERSION=	1.8.0.20141008
@@ -25,6 +25,8 @@ GH_PROJECT=	${PORTNAME}-1.8
 GH_TAGNAME=	2bf3950
 
 MAKE_JOBS_UNSAFE=	yes
+LLD_UNSAFE=	yes
+BINARY_ALIAS=	ld=ld.bfd
 
 SUB_FILES=	pkg-message
 

@@ -1,5 +1,5 @@
 # Created by: Troels Kofoed Jacobsen <tkjacobsen@gmail.com>
-# $FreeBSD: head/science/avogadro/Makefile 464880 2018-03-18 06:22:04Z linimon $
+# $FreeBSD: head/science/avogadro/Makefile 465865 2018-03-29 04:42:45Z linimon $
 
 PORTNAME=	avogadro
 PORTVERSION=	1.1.1
@@ -13,7 +13,6 @@ COMMENT=	Advanced molecular editor and viewer
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_aarch64=		fails to package: Unable to access file avogadro/pythonerror.h: No such file or directory
 BROKEN_armv6=		fails to compile: eigen2/Eigen/src/Core/Assign.h: you mixed different numeric types in 'Eigen::ei_static_assert<false>'
 BROKEN_armv7=		fails to compile: eigen2/Eigen/src/Core/Assign.h: you mixed different numeric types in 'Eigen::ei_static_assert<false>'
 

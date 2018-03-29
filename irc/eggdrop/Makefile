@@ -1,5 +1,5 @@
 # Created by: Ulrich Spoerlein <q@uni.de>
-# $FreeBSD: head/irc/eggdrop/Makefile 427491 2016-12-01 11:18:03Z mat $
+# $FreeBSD: head/irc/eggdrop/Makefile 465884 2018-03-29 11:01:53Z krion $
 
 PORTNAME=	eggdrop
 PORTVERSION=	1.6.21
@@ -21,6 +21,8 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-tcllib=${LOCALBASE}/lib/libtcl${TCL_SHLIB_VER}.so \
 		--with-tclinc=${LOCALBASE}/include/tcl${TCL_VER}/tcl.h
 MAKE_JOBS_UNSAFE=	yes
+LLD_UNSAFE=	yes
+BINARY_ALIAS=	ld=ld.bfd
 
 SUB_FILES=	pkg-message
 PORTDOCS=	*

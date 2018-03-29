@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 465560 2018-03-26 07:18:44Z yuri $
+# $FreeBSD: head/math/Makefile 465787 2018-03-28 09:18:28Z yuri $
 #
 
     COMMENT = Mathematics
@@ -189,6 +189,7 @@
     SUBDIR += fpc-numlib
     SUBDIR += freemat
     SUBDIR += fxt
+    SUBDIR += g2o
     SUBDIR += galculator
     SUBDIR += gambit
     SUBDIR += gap

@@ -1,7 +1,8 @@
-# $FreeBSD: head/lang/ccl/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/lang/ccl/Makefile 465746 2018-03-27 19:46:02Z olgeni $
 
 PORTNAME=	ccl
 PORTVERSION=	1.11
+PORTREVISION=	1
 CATEGORIES=	lang lisp
 MASTER_SITES=	ftp://ftp.clozure.com/pub/release/${PORTVERSION}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-freebsdx86

@@ -1,17 +1,15 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-LearnBayes/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/R-cran-LearnBayes/Makefile 465773 2018-03-28 02:23:13Z tota $
 
 PORTNAME=	LearnBayes
-PORTVERSION=	2.15
-PORTREVISION=	2
+PORTVERSION=	2.15.1
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	tota@FreeBSD.org
 COMMENT=	Functions for Learning Bayesian Inference
 
-LICENSE=	GPLv2 GPLv3
-LICENSE_COMB=	dual
+LICENSE=	GPLv2+
 
 USES=	cran:auto-plist
 

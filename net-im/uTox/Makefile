@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/uTox/Makefile 463828 2018-03-07 20:56:37Z thierry $
+# $FreeBSD: head/net-im/uTox/Makefile 465809 2018-03-28 13:44:32Z krion $
 
 PORTNAME=	uTox
 PORTVERSION=	0.11.1
@@ -28,6 +28,8 @@ GH_TAGNAME=	1835eae
 USES=		cmake compiler:c11 desktop-file-utils localbase:ldflags openal:al	\
 		pkgconfig
 USE_XORG=	x11 xext xrender
+LLD_UNSAFE=	yes
+BINARY_ALIAS=	ld=ld.bfd
 
 OPTIONS_DEFINE=		DBUS
 OPTIONS_DEFAULT=	DBUS

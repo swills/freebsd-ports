@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/multimedia/gmerlin/Makefile 453238 2017-10-31 14:51:53Z olgeni $
+# $FreeBSD: head/multimedia/gmerlin/Makefile 465757 2018-03-27 21:16:56Z emaste $
 
 PORTNAME=	gmerlin
 PORTVERSION=	1.2.0
@@ -26,6 +26,7 @@ CONFIGURE_ENV=	ac_cv_func_inotify_init=no
 CONFIGURE_ARGS=	--disable-v4l --disable-v4l2 --disable-v4lconvert \
 		--without-doxygen --with-cpuflags=none --disable-musicbrainz
 USE_LDCONFIG=	yes
+LLD_UNSAFE=	yes
 INSTALL_TARGET=	install-strip
 INSTALL_ICONS=	yes
 
@@ -45,9 +46,9 @@ ALSA_LIB_DEPENDS=	libasound.so:audio/alsa-lib
 ALSA_CONFIGURE_OFF=	--disable-alsa --disable-alsamixer
 CDDB_LIB_DEPENDS=	libcddb.so:audio/libcddb
 CDDB_CONFIGURE_OFF=	--disable-cddb
-CDIO_LIB_DEPENDS=	libcdio.so:sysutils/libcdio
+CDIO_LIB_DEPENDS=	libcdio.so:sysutils/libcdio \
+			libcdio_cdda.so:sysutils/libcdio-paranoia
 CDIO_CONFIGURE_OFF=	--disable-libcdio
-CDIO_BROKEN=		fails to build with new libcdio
 ESOUND_USE=		gnome=esound
 ESOUND_CONFIGURE_OFF=	--disable-esd
 JACK_LIB_DEPENDS=	libjack.so:audio/jack

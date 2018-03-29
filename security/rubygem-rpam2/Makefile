@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-rpam2/Makefile 465480 2018-03-24 21:11:45Z sunpoet $
+# $FreeBSD: head/security/rubygem-rpam2/Makefile 465847 2018-03-28 19:59:36Z sunpoet $
 
 PORTNAME=	rpam2
-PORTVERSION=	4.0.1
+PORTVERSION=	4.0.2
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

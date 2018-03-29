@@ -1,5 +1,5 @@
 # Created by: Holger Lamm <holger@e-gitt.net>
-# $FreeBSD: head/net-p2p/mldonkey/Makefile 457601 2017-12-30 15:21:01Z tijl $
+# $FreeBSD: head/net-p2p/mldonkey/Makefile 465694 2018-03-27 11:55:18Z antoine $
 
 PORTNAME=	mldonkey
 PORTVERSION=	3.1.5
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/Copying.txt
 
 CONFLICTS=	mldonkey{-{core,gui},}-devel-[0-9]*
 
-USES=		gmake iconv tar:bzip2
+USES=		gmake iconv pkgconfig tar:bzip2
 USE_OCAML=	yes
 USE_OCAML_CAMLP4=yes
 GNU_CONFIGURE=	yes

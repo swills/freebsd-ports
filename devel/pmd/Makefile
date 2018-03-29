@@ -1,8 +1,8 @@
 # Created by: Alex Varju <freebsd-ports@varju.ca>
-# $FreeBSD: head/devel/pmd/Makefile 463168 2018-02-27 23:31:34Z danilo $
+# $FreeBSD: head/devel/pmd/Makefile 465774 2018-03-28 02:36:17Z danilo $
 
 PORTNAME=	pmd
-PORTVERSION=	6.1.0
+PORTVERSION=	6.2.0
 CATEGORIES=	devel java
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}-bin-${PORTVERSION}

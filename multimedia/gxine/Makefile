@@ -1,5 +1,5 @@
 # Created by: Grigori Goronzy <greg@chown.ath.cx>
-# $FreeBSD: head/multimedia/gxine/Makefile 462568 2018-02-22 07:59:28Z wen $
+# $FreeBSD: head/multimedia/gxine/Makefile 465708 2018-03-27 14:44:07Z emaste $
 
 PORTNAME=	gxine
 PORTVERSION=	0.5.910
@@ -19,6 +19,7 @@ USES=		desktop-file-utils gettext gmake libtool pathfix pkgconfig tar:xz
 USE_GNOME=	gtk30
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-hal --with-libintl-prefix=${LOCALBASE} --with-gtk3
+LLD_UNSAFE=	yes
 INSTALLS_ICONS=	yes
 
 CPPFLAGS+=	-I${LOCALBASE}/include

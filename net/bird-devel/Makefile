@@ -1,8 +1,9 @@
 # Created by: Alexander V. Chernikov <melifaro@FreeBSD.org>
-# $FreeBSD: head/net/bird-devel/Makefile 465000 2018-03-19 09:22:08Z olivier $
+# $FreeBSD: head/net/bird-devel/Makefile 465848 2018-03-28 21:22:58Z olivier $
 
 PORTNAME=	bird
-DISTVERSION=	2.0.1
+DISTVERSION=	2.0.2
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://bird.network.cz/pub/bird/
 PKGNAMESUFFIX=	-devel
@@ -20,8 +21,8 @@ CONFLICTS+=	bird6-[0-9]*
 USES=		bison gmake ncurses readline
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir=/var
-USE_CSTD=	gnu89
 USE_RC_SUBR=	bird
+SUB_FILES=	pkg-message
 
 MAKE_JOBS_UNSAFE=	yes
 
@@ -49,5 +50,9 @@ RIP_VARS=	rt_prot+=rip
 STATIC_VARS=	rt_prot+=static
 
 CONFIGURE_ARGS+=--with-protocols="${RT_PROT}"
+
+post-patch:
+	${REINPLACE_CMD} -e 's|\.example|\.sample|g' ${WRKSRC}/Makefile.in
+	${MV} ${WRKSRC}/doc/bird.conf.example ${WRKSRC}/doc/bird.conf.sample
 
 .include <bsd.port.mk>

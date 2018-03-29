@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/hpijs/Makefile 430521 2017-01-03 21:04:28Z jbeich $
+# $FreeBSD: head/print/hpijs/Makefile 465874 2018-03-29 09:15:53Z tijl $
 
 PORTNAME=	hpijs
 PORTVERSION=	2.1.4
@@ -13,6 +13,9 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 CONFLICTS=	hplip-[0-9]*
+
+DEPRECATED=	Unsupported since 2005, please migrate to print/hplip
+EXPIRATION_DATE=2018-09-30
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-cups-install

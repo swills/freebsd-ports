@@ -1,5 +1,5 @@
 # Created by: Peter Bozarov (kingofgib@users.sourceforge.net)
-# $FreeBSD: head/devel/libds/Makefile 406958 2016-01-23 01:41:51Z amdmi3 $
+# $FreeBSD: head/devel/libds/Makefile 465804 2018-03-28 12:58:19Z emaste $
 
 PORTNAME=	libds
 PORTVERSION=	1.0
@@ -14,6 +14,9 @@ COMMENT=	ANSI Generic Data Structures Library
 LICENSE=	BSD4CLAUSE
 
 USE_LDCONFIG=	yes
+# Requires directly-invoked linker to provide library search paths.
+LLD_UNSAFE=	yes
+BINARY_ALIAS=	ld=ld.bfd
 ALL_TARGET=	gcc
 
 HTML=		avltree.html heap.html parray.html set.html \

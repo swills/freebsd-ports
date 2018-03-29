@@ -1,5 +1,5 @@
 # Created by: Tarasov Alexey <master@preved.cn>
-# $FreeBSD: head/devel/monotone-viz/Makefile 418021 2016-07-04 13:24:21Z mat $
+# $FreeBSD: head/devel/monotone-viz/Makefile 465761 2018-03-27 21:36:23Z antoine $
 
 PORTNAME=	monotone-viz
 PORTVERSION=	1.0.2
@@ -24,7 +24,7 @@ RUN_DEPENDS=	dot:graphics/graphviz \
 		bash:shells/bash \
 		lablgtk2:x11-toolkits/ocaml-lablgtk2
 
-USES=		gmake
+USES=		gmake pkgconfig
 USE_OCAML=	yes
 USE_OCAML_CAMLP4=yes
 GNU_CONFIGURE=	yes

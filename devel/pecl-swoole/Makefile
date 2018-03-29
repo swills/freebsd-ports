@@ -1,8 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/pecl-swoole/Makefile 464565 2018-03-15 07:19:40Z vanilla $
+# $FreeBSD: head/devel/pecl-swoole/Makefile 465894 2018-03-29 13:26:15Z vanilla $
 
 PORTNAME=	swoole
-PORTVERSION=	1.10.2
+PORTVERSION=	1.10.3
 CATEGORIES=	devel net
 
 MAINTAINER=	vanilla@FreeBSD.org
@@ -23,7 +23,7 @@ HTTP2_LIB_DEPENDS=	libnghttp2.so:www/libnghttp2
 HTTP2_CONFIGURE_ON=	--enable-http2 --enable-openssl
 REDIS_LIB_DEPENDS=	libhiredis.so:databases/hiredis
 REDIS_CONFIGURE_ON=	--enable-async-redis
-SOCKETS_USE=		PHP=sockets:build
+SOCKETS_USE=	PHP=sockets:build
 SOCKETS_DESC=	Use native php sockets extension
 SOCKETS_CONFIGURE_ON=	--enable-sockets
 

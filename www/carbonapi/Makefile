@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/carbonapi/Makefile 465192 2018-03-21 16:49:20Z pi $
+# $FreeBSD: head/www/carbonapi/Makefile 465864 2018-03-29 04:19:32Z meta $
 
 PORTNAME=		carbonapi
-DISTVERSION=		0.10.0.1
+DISTVERSION=		0.11.0
 CATEGORIES=		www
 
 MAINTAINER=		a.andersson.thn@gmail.com
@@ -40,6 +40,7 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/carbonapi ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_DATA} ${WRKSRC}/carbonapi.example.toml ${STAGEDIR}${PREFIX}/etc/carbonapi
 	${INSTALL_DATA} ${WRKSRC}/carbonapi.example.yaml ${STAGEDIR}${PREFIX}/etc/carbonapi
+	${INSTALL_DATA} ${WRKSRC}/graphiteWeb.example.yaml ${STAGEDIR}${PREFIX}/etc/carbonapi
 	${INSTALL_DATA} ${WRKSRC}/graphTemplates.example.toml ${STAGEDIR}${PREFIX}/etc/carbonapi
 	${INSTALL_DATA} ${WRKSRC}/graphTemplates.example.yaml ${STAGEDIR}${PREFIX}/etc/carbonapi
 

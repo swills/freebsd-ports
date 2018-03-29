@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/elixir-quantum/Makefile 463712 2018-03-06 11:50:50Z olgeni $
+# $FreeBSD: head/devel/elixir-quantum/Makefile 465715 2018-03-27 15:10:53Z olgeni $
 
 PORTNAME=	quantum
-PORTVERSION=	2.2.5
+PORTVERSION=	2.2.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-

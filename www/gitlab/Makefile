@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab/Makefile 465682 2018-03-27 09:35:54Z tz $
+# $FreeBSD: head/www/gitlab/Makefile 465880 2018-03-29 10:35:39Z tz $
 
 PORTNAME=	gitlab
 PORTVERSION=	10.5.6
@@ -45,7 +45,7 @@ RUN_DEPENDS=	git>=2.14.3:devel/git \
 	rubygem-doorkeeper42>=4.2:security/rubygem-doorkeeper42 \
 	rubygem-doorkeeper-openid_connect12>=1.2.0:security/rubygem-doorkeeper-openid_connect12 \
 	rubygem-omniauth14>=1.4.2:security/rubygem-omniauth14 \
-	rubygem-omniauth-auth0>=1.4.1:net/rubygem-omniauth-auth0 \
+	rubygem-omniauth-auth0>=2.0.0:net/rubygem-omniauth-auth0 \
 	rubygem-omniauth-azure-oauth2>=0.0.9:net/rubygem-omniauth-azure-oauth2 \
 	rubygem-omniauth-cas3>=1.1.4:security/rubygem-omniauth-cas3 \
 	rubygem-omniauth-facebook>=4.0.0:net/rubygem-omniauth-facebook \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/smlnj/Makefile 431680 2017-01-16 16:47:00Z mat $
+# $FreeBSD: head/lang/smlnj/Makefile 465878 2018-03-29 10:33:01Z krion $
 
 PORTNAME=	smlnj
 PORTVERSION=	110.77
@@ -19,6 +19,8 @@ LICENSE_TEXT=	The text of the license can be obtained from the following URL:\
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 ONLY_FOR_ARCHS=	i386 amd64
+LLD_UNSAFE=	yes
+BINARY_ALIAS=	ld=ld.bfd
 
 NO_WRKSUBDIR=	yes
 

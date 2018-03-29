@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 464580 2018-03-15 09:29:41Z yuri $
+# $FreeBSD: head/misc/Makefile 465722 2018-03-27 16:38:38Z makc $
 #
 
     COMMENT = Miscellaneous utilities
@@ -397,10 +397,12 @@
     SUBDIR += py-pexpect
     SUBDIR += py-powerline-status
     SUBDIR += py-progressbar
+    SUBDIR += py-progressbar2
     SUBDIR += py-progressbar231
     SUBDIR += py-pyfiglet
     SUBDIR += py-pyprind
     SUBDIR += py-python-geohash
+    SUBDIR += py-python-utils
     SUBDIR += py-qt4-demo
     SUBDIR += py-qt4-doc
     SUBDIR += py-qt5-demo

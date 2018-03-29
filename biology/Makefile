@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 456950 2017-12-22 01:30:26Z jwb $
+# $FreeBSD: head/biology/Makefile 465808 2018-03-28 13:26:31Z jwb $
 #
 
     COMMENT = Biology
@@ -7,6 +7,7 @@
     SUBDIR += artemis
     SUBDIR += avida
     SUBDIR += babel
+    SUBDIR += bamtools
     SUBDIR += bcftools
     SUBDIR += bedtools
     SUBDIR += biococoa

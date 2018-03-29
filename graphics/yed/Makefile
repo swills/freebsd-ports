@@ -1,11 +1,11 @@
 # Created by: Eugene Mychlo <myc@barev.net>
-# $FreeBSD: head/graphics/yed/Makefile 442666 2017-06-05 15:03:30Z amdmi3 $
+# $FreeBSD: head/graphics/yed/Makefile 465712 2018-03-27 15:03:19Z fernape $
 
 PORTNAME=	yed
-PORTVERSION=	3.17
+DISTVERSION=	3.17.2
 CATEGORIES=	graphics java
 MASTER_SITES=	#
-DISTNAME=	yEd-${PORTVERSION}
+DISTNAME=	yEd-${DISTVERSION}
 
 MAINTAINER=	myc@barev.net
 COMMENT=	Editor for graphs and diagrams
@@ -24,7 +24,7 @@ NO_ARCH=	yes
 RESTRICTED=	Downloading requires acceptance of license agreement
 DESKTOP_ENTRIES="yEd" "${COMMENT}" "" "yed" "Graphics;" false
 
-WRKSRC=	${WRKDIR}/${PORTNAME}-${PORTVERSION}
+WRKSRC=	${WRKDIR}/${PORTNAME}-${DISTVERSION}
 
 SUB_FILES=	${PORTNAME}
 

@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/lang/fasm/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/lang/fasm/Makefile 465882 2018-03-29 10:48:13Z krion $
 
 PORTNAME=	fasm
-PORTVERSION=	1.71.58
+PORTVERSION=	1.73.02
 CATEGORIES=	lang devel
 MASTER_SITES=	http://flatassembler.net/
 

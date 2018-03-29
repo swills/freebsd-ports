@@ -1,5 +1,5 @@
 # Created by: Tom McLaughlin <tmclaugh@sdf.lonestar.org>
-# $FreeBSD: head/devel/monodevelop/Makefile 460430 2018-01-30 19:00:27Z dbn $
+# $FreeBSD: head/devel/monodevelop/Makefile 465694 2018-03-27 11:55:18Z antoine $
 
 PORTNAME=	monodevelop
 PORTVERSION=	6.2.1.3
@@ -71,7 +71,7 @@ GH_TUPLE=	icsharpcode:RefactoringEssentials:70e434d:1/external/RefactoringEssent
 		mono:nuget-binary:58f8910:11/external/nuget-binary \
 		mono:xwt:f981e41:12/external/xwt
 
-USES=		autoreconf desktop-file-utils gettext gmake mono:nuget pathfix shared-mime-info ssl
+USES=		autoreconf desktop-file-utils gettext gmake mono:nuget pathfix pkgconfig shared-mime-info ssl
 USE_GNOME=	gtksharp20 gnomesharp20
 INSTALLS_ICONS=	yes
 
