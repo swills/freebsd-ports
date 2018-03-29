@@ -1,5 +1,5 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/audio/oss/Makefile 436874 2017-03-25 03:29:09Z jbeich $
+# $FreeBSD: head/audio/oss/Makefile 465763 2018-03-27 21:42:08Z emaste $
 
 PORTNAME=	oss
 DISTVERSION=	4.2-build2017
@@ -23,6 +23,7 @@ USE_GNOME=	gtk20
 USE_RC_SUBR=	oss
 SUB_FILES=	pkg-install pkg-deinstall
 ONLY_FOR_ARCHS=	amd64 i386
+LLD_UNSAFE=	yes
 
 KMODDIR=	${PREFIX}/lib/oss/modules
 

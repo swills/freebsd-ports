@@ -1,5 +1,5 @@
 # Created by: Ian Vaudrey <i.vaudrey@bigfoot.com>
-# $FreeBSD: head/www/cgihtml/Makefile 456584 2017-12-18 03:33:06Z linimon $
+# $FreeBSD: head/www/cgihtml/Makefile 465749 2018-03-27 20:46:44Z emaste $
 
 PORTNAME=	cgihtml
 PORTVERSION=	1.69
@@ -12,9 +12,8 @@ MASTER_SITES=	http://www.eekim.com/software/cgihtml/ \
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Library that simplifies the task of writing CGI programs in C
 
-BROKEN_aarch64=		fails to link: -O: number expected, but got
-
 USE_LDCONFIG=	yes
+LLD_UNSAFE=	yes
 
 OPTIONS_DEFINE=	DOCS
 

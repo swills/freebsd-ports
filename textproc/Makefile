@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 465550 2018-03-25 23:46:05Z yuri $
+# $FreeBSD: head/textproc/Makefile 465806 2018-03-28 13:09:43Z dvl $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1146,6 +1146,7 @@
     SUBDIR += p5-XML-XUpdate-LibXML
     SUBDIR += p5-YAML
     SUBDIR += p5-YAML-LibYAML
+    SUBDIR += p5-YAML-PP
     SUBDIR += p5-YAML-Shell
     SUBDIR += p5-YAML-Syck
     SUBDIR += p5-YAML-Tiny

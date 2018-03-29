@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net/cjdns/Makefile 460838 2018-02-03 19:33:24Z yuri $
+# $FreeBSD: head/net/cjdns/Makefile 465732 2018-03-27 18:40:07Z yuri $
 
 PORTNAME=	cjdns
 DISTVERSIONPREFIX=	cjdns-v
@@ -11,6 +11,8 @@ COMMENT=	Routing engine designed for security, scalability, speed
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_FreeBSD_10_i386=	fails CC_OUTPUT_921dbbb2_65ad290d=error: invalid value 'c++14' in '-std=c++14' yes
 
 BUILD_DEPENDS=	node:www/node \
 		bash:shells/bash

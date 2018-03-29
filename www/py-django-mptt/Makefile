@@ -1,8 +1,9 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/www/py-django-mptt/Makefile 457927 2018-01-02 21:06:03Z cs $
+# $FreeBSD: head/www/py-django-mptt/Makefile 465876 2018-03-29 10:19:11Z antoine $
 
 PORTNAME=	django-mptt
 PORTVERSION=	0.9.0
+PORTREVISION=	2
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

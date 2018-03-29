@@ -1,5 +1,5 @@
 # Created by: Alexander V. Ribchansky <triosoft@triosoft.com.ua>
-# $FreeBSD: head/multimedia/k9copy-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/multimedia/k9copy-kde4/Makefile 465711 2018-03-27 15:01:11Z emaste $
 
 PORTNAME=	k9copy
 PORTVERSION=	2.3.4
@@ -20,6 +20,7 @@ LIB_DEPENDS=	libxine.so:multimedia/libxine \
 USES=		cmake gettext kde:4 localbase
 USE_KDE=	kdelibs automoc4
 USE_QT4=	moc_build qmake_build rcc_build uic_build
+LLD_UNSAFE=	yes
 
 OPTIONS_DEFINE=	MENCODER MPLAYER DVDAUTHOR
 MENCODER_DESC=	MEncoder support

@@ -1,9 +1,8 @@
 # Created by: milki <milki@rescomp.berkeley.edu>
-# $FreeBSD: head/devel/p5-Pod-Coverage-TrustPod/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Pod-Coverage-TrustPod/Makefile 465800 2018-03-28 12:00:21Z culot $
 
 PORTNAME=	Pod-Coverage-TrustPod
-PORTVERSION=	0.100003
-PORTREVISION=	1
+PORTVERSION=	0.100005
 CATEGORIES=	devel textproc perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:RJBS
@@ -20,6 +19,7 @@ BUILD_DEPENDS=	p5-Pod-Coverage>=0:devel/p5-Pod-Coverage \
 TEST_DEPENDS=	p5-Test-Pod>=1.41:devel/p5-Test-Pod
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

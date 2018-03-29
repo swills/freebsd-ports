@@ -1,8 +1,8 @@
 # Created by: Vanilla I. Shu <vanilla@MinJe.com.TW>
-# $FreeBSD: head/x11-toolkits/gtk20/Makefile 465364 2018-03-23 15:45:24Z bapt $
+# $FreeBSD: head/x11-toolkits/gtk20/Makefile 465803 2018-03-28 12:42:34Z tijl $
 
 PORTNAME=	gtk
-PORTVERSION=	2.24.32
+PORTVERSION=	2.24.32		# sync with graphics/gtk-update-icon-cache
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	GNOME/sources/gtk+/${PORTVERSION:C/^([0-9]+\.[0-9]+).*/\1/}
 PKGNAMESUFFIX=	2

@@ -1,5 +1,5 @@
 # Created by: Anes Muhametov <anes@anes.su>
-# $FreeBSD: head/mail/roundcube-sieverules/Makefile 462672 2018-02-23 06:14:50Z yuri $
+# $FreeBSD: head/mail/roundcube-sieverules/Makefile 465860 2018-03-29 01:09:53Z yuri $
 
 PORTNAME=	sieverules
 DISTVERSION=	2.3
@@ -7,7 +7,7 @@ PORTEPOCH=	1
 CATEGORIES=	mail
 PKGNAMEPREFIX=	roundcube-
 
-MAINTAINER=	anes@anes.su
+MAINTAINER=	ports@bsdserwis.com
 COMMENT=	Roundcube webmail sieve plugin
 
 LICENSE=	GPLv3

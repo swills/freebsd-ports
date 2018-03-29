@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 465496 2018-03-25 04:56:13Z yuri $
+# $FreeBSD: head/net-mgmt/Makefile 465834 2018-03-28 18:35:43Z cmt $
 #
 
     COMMENT = Network management tools
@@ -43,6 +43,7 @@
     SUBDIR += check_logfiles
     SUBDIR += check_multi
     SUBDIR += check_mysql_health
+    SUBDIR += check_ssl_cert
     SUBDIR += chillispot
     SUBDIR += choparp
     SUBDIR += cidr
@@ -267,6 +268,7 @@
     SUBDIR += p5-SNMP-Simple
     SUBDIR += p5-SNMP-Trapinfo
     SUBDIR += p5-SNMP-Util
+    SUBDIR += p5-RDR-Collector
     SUBDIR += p5-SNMP_Session
     SUBDIR += p5-Telnet-Cisco
     SUBDIR += p5-Tie-NetAddr-IP

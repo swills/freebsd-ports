@@ -1,8 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/libversion/Makefile 460704 2018-02-02 15:20:10Z amdmi3 $
+# $FreeBSD: head/devel/libversion/Makefile 465807 2018-03-28 13:26:15Z amdmi3 $
 
 PORTNAME=	libversion
-PORTVERSION=	2.5.0
+PORTVERSION=	2.6.0
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	amdmi3@FreeBSD.org
@@ -15,6 +16,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	repology
 
 USES=		cmake
+USE_LDCONFIG=	yes
 TEST_TARGET=	test
 PORTDOCS=	*
 

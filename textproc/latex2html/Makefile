@@ -1,8 +1,9 @@
 # Created by: brett@peloton.physics.montana.edu
-# $FreeBSD: head/textproc/latex2html/Makefile 433287 2017-02-04 07:57:42Z danfe $
+# $FreeBSD: head/textproc/latex2html/Makefile 465819 2018-03-28 16:52:54Z mat $
 
 PORTNAME=	latex2html
 PORTVERSION=	2016
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	TEX_CTAN/support/${PORTNAME}
 

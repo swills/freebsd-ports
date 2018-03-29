@@ -1,8 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/games/anki/Makefile 464596 2018-03-15 15:51:20Z yuri $
+# $FreeBSD: head/games/anki/Makefile 465840 2018-03-28 19:12:26Z fernape $
 
 PORTNAME=	anki
-DISTVERSION=	2.0.50
+DISTVERSION=	2.0.51
 CATEGORIES=	games python
 MASTER_SITES=	https://apps.ankiweb.net/downloads/current/
 DISTNAME=	anki-${PORTVERSION}-source

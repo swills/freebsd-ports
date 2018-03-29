@@ -1,5 +1,5 @@
 # Created by: dk
-# $FreeBSD: head/emulators/fmsx/Makefile 403002 2015-12-04 16:50:29Z rakuco $
+# $FreeBSD: head/emulators/fmsx/Makefile 465896 2018-03-29 13:45:10Z antoine $
 
 PORTNAME=	fmsx
 PORTVERSION=	4.2
@@ -15,6 +15,8 @@ EXTRACT_ONLY=	fMSX${PORTVERSION:C/\.//}.zip
 
 MAINTAINER=	dk@farm.org
 COMMENT=	Portable MSX/MSX2/MSX2+ Emulator
+
+BROKEN=		unfetchable
 
 USE_XORG=	x11 xext
 USES=		dos2unix gmake zip

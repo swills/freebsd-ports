@@ -1,9 +1,9 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/games/sdlpop/Makefile 453620 2017-11-06 14:24:39Z mat $
+# $FreeBSD: head/games/sdlpop/Makefile 465771 2018-03-27 23:29:00Z dbaio $
 
 PORTNAME=	sdlpop
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.17
+DISTVERSION=	1.18.1
 CATEGORIES=	games
 
 MAINTAINER=	pkubaj@anongoth.pl

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/botan2/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/security/botan2/Makefile 465689 2018-03-27 11:15:39Z linimon $
 
 PORTNAME=	botan
 DISTVERSION=	2.4.0
@@ -13,6 +13,10 @@ COMMENT=	Portable, easy to use and efficient C++ crypto library
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/license.txt
+
+BROKEN_armv6=		include/arm_neon.h:28:2: error: "NEON support not enabled"
+BROKEN_armv7=		fails to package: pkg-static: Unable to access file stage/usr/local/include/botan-2/botan/rdrand_rng.h:No such file or directory
+BROKEN_powerpc64=	fails to configure: Unknown compiler "None"; available options: clang ekopath gcc hpcc icc msvc pgi sunstudio xlc
 
 LIB_DEPENDS=	libboost_filesystem.so:devel/boost-libs
 

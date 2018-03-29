@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/sorcer-lv2/Makefile 464858 2018-03-18 03:01:49Z linimon $
+# $FreeBSD: head/audio/sorcer-lv2/Makefile 465778 2018-03-28 03:41:40Z linimon $
 
 PORTNAME=	Sorcer
 DISTVERSIONPREFIX=	release-
@@ -17,6 +17,7 @@ BROKEN_aarch64=		fails to compile: unknown FP unit 'sse'
 BROKEN_armv6=		fails to compile: unknown FP unit 'sse'
 BROKEN_armv7=		fails to compile: unknown FP unit 'sse'
 BROKEN_mips64=		fails to compile: unknown FP unit 'sse'
+BROKEN_powerpc64=	fails to compile: unrecognized command line option "-msse2"
 
 BUILD_DEPENDS=	lv2>0:audio/lv2 \
 		${LOCALBASE}/include/boost/circular_buffer.hpp:devel/boost-libs

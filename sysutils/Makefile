@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 465638 2018-03-26 21:23:45Z dvl $
+# $FreeBSD: head/sysutils/Makefile 465743 2018-03-27 19:13:11Z dvl $
 #
 
     COMMENT = System utilities
@@ -457,6 +457,7 @@
     SUBDIR += hal
     SUBDIR += hal-info
     SUBDIR += hardlink
+    SUBDIR += hare
     SUBDIR += hatop
     SUBDIR += hdrecover
     SUBDIR += healthd
@@ -929,6 +930,7 @@
     SUBDIR += py-gmailfs-fuse
     SUBDIR += py-google-compute-engine
     SUBDIR += py-halite
+    SUBDIR += py-hared
     SUBDIR += py-honcho
     SUBDIR += py-iowait
     SUBDIR += py-mqttwarn

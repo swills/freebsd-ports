@@ -1,5 +1,5 @@
 # Created by: stas
-# $FreeBSD: head/graphics/rawtherapee/Makefile 465186 2018-03-21 16:02:56Z mandree $
+# $FreeBSD: head/graphics/rawtherapee/Makefile 465778 2018-03-28 03:41:40Z linimon $
 
 PORTNAME=	rawtherapee
 PORTVERSION=	5.4
@@ -77,6 +77,7 @@ OPTIMIZED_CFLAGS_CFLAGS=	-O3 -funroll-loops -msse2
 #
 
 BROKEN_aarch64=		fails to build: gcc5: error: unrecognized command line option -msse2
+BROKEN_powerpc64=	fails to build: gcc6: error: unrecognized command line option -msse2
 
 .if ${OPSYS} == FreeBSD
 .if ${OSVERSION} >= 1200000

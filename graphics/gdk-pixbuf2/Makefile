@@ -1,8 +1,8 @@
 # Created by: Ade Lovett <ade@lovett.com>
-# $FreeBSD: head/graphics/gdk-pixbuf2/Makefile 449164 2017-09-02 22:15:02Z kwm $
+# $FreeBSD: head/graphics/gdk-pixbuf2/Makefile 465691 2018-03-27 11:33:14Z bapt $
 
 PORTNAME=	gdk-pixbuf
-PORTVERSION=	2.36.9
+PORTVERSION=	2.36.11
 CATEGORIES=	graphics
 MASTER_SITES=	GNOME
 PKGNAMESUFFIX=	2

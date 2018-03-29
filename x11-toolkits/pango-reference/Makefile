@@ -1,7 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/pango-reference/Makefile 340722 2014-01-22 17:00:46Z mat $
-
-PORTREVISION=	1
+# $FreeBSD: head/x11-toolkits/pango-reference/Makefile 465692 2018-03-27 11:39:52Z bapt $
 
 REFERENCE_SRC=	${WRKSRC}/docs
 

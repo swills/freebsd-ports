@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-IPC-Run/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-IPC-Run/Makefile 465738 2018-03-27 18:55:45Z sunpoet $
 
 PORTNAME=	IPC-Run
-PORTVERSION=	0.96
+PORTVERSION=	0.97
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -12,6 +12,7 @@ COMMENT=	IPC::Run - Run subprocesses with piping and redirection
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE_ART10=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-IO-Tty>=1.08:devel/p5-IO-Tty
 RUN_DEPENDS:=	${BUILD_DEPENDS}

@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/sysutils/unieject/Makefile 421635 2016-09-09 19:42:46Z amdmi3 $
+# $FreeBSD: head/sysutils/unieject/Makefile 465718 2018-03-27 15:31:00Z emaste $
 
 PORTNAME=	unieject
 PORTVERSION=	6
@@ -22,6 +22,7 @@ USE_GNOME=	glib20
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-doc
 USE_LDCONFIG=	yes
+LLD_UNSAFE=	yes
 INSTALL_TARGET=	install-strip
 
 CPPFLAGS+=	-I${LOCALBASE}/include

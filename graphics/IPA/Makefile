@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/IPA/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/IPA/Makefile 465826 2018-03-28 17:14:27Z mat $
 
 PORTNAME=	IPA
 PORTVERSION=	1.08
@@ -21,4 +21,10 @@ MAKE_JOBS_UNSAFE=	yes
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/IPA/IPA.so
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${PERL_LEVEL} >= 502600
+BROKEN=		Does not build
+.endif
+
+.include <bsd.port.post.mk>

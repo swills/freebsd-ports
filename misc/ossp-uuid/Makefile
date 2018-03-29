@@ -1,5 +1,5 @@
 # Created by: Kimura Fuyuki <fuyuki@nigredo.org>
-# $FreeBSD: head/misc/ossp-uuid/Makefile 465505 2018-03-25 08:33:23Z amdmi3 $
+# $FreeBSD: head/misc/ossp-uuid/Makefile 465897 2018-03-29 14:01:06Z antoine $
 
 PORTNAME=	uuid
 PORTVERSION=	1.6.2
@@ -12,7 +12,11 @@ MAINTAINER=	vd@FreeBSD.org
 COMMENT=	ISO-C API and CLI for generating Universally Unique Identifiers
 
 LICENSE=	MIT
+.if defined(SLAVEPORT) && ${SLAVEPORT}=="perl"
+LICENSE_FILE=	${WRKSRC}/../README
+.else
 LICENSE_FILE=	${WRKSRC}/README
+.endif
 
 GNU_CONFIGURE=	yes
 USES+=		libtool pathfix

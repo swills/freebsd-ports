@@ -1,9 +1,8 @@
 # Created by: Emmanuel Vadot <manu@freebsd.org>
-# $FreeBSD: head/sysutils/u-boot-tools/Makefile 464668 2018-03-16 09:41:38Z jhale $
+# $FreeBSD: head/sysutils/u-boot-tools/Makefile 465693 2018-03-27 11:42:38Z manu $
 
 PORTNAME=	u-boot-tools
-DISTVERSION=	2017.09
-PORTREVISION=	2
+DISTVERSION=	2018.03
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.denx.de/pub/u-boot/
 DISTNAME=	u-boot-${PORTVERSION}

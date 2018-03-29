@@ -1,5 +1,5 @@
 # Created by: Juan Salaverria <rael@vectorstar.net>
-# $FreeBSD: head/multimedia/quark/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/quark/Makefile 465707 2018-03-27 14:40:47Z emaste $
 
 PORTNAME=	quark
 PORTVERSION=	3.24
@@ -17,6 +17,7 @@ LIB_DEPENDS=	libxine.so:multimedia/libxine
 USES=		pathfix gettext gmake pkgconfig
 USE_GNOME=	gnomeprefix gnomevfs2
 GNU_CONFIGURE=	yes
+LLD_UNSAFE=	yes
 
 PORTDOCS=	AUTHORS COPYING INSTALL README
 GCONF_SCHEMAS=	quark.schemas strange-quark.schemas

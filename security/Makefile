@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 465673 2018-03-27 08:57:47Z tz $
+# $FreeBSD: head/security/Makefile 465770 2018-03-27 23:20:33Z dbaio $
 #
 
     COMMENT = Security tools
@@ -1183,6 +1183,7 @@
     SUBDIR += secpanel
     SUBDIR += sectok
     SUBDIR += secure_delete
+    SUBDIR += setaudit 
     SUBDIR += sguil
     SUBDIR += sha
     SUBDIR += sha1collisiondetection

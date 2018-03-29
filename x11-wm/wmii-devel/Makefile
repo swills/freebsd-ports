@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/x11-wm/wmii-devel/Makefile 439055 2017-04-21 11:04:23Z amdmi3 $
+# $FreeBSD: head/x11-wm/wmii-devel/Makefile 465790 2018-03-28 09:42:26Z rodrigo $
 
 PORTNAME=	wmii
 PORTVERSION=	3.9.2
@@ -9,7 +9,7 @@ MASTER_SITES=	http://dl.suckless.org/wmii/
 PKGNAMESUFFIX=	-devel
 DISTNAME=	${PORTNAME}+ixp-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	rodrigo@FreeBSD.org
 COMMENT=	Dynamic, minimalist window manager for X11
 
 LICENSE=	MIT

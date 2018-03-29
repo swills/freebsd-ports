@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/bsdnt/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/bsdnt/Makefile 465816 2018-03-28 15:55:39Z swills $
 
 PORTNAME=	bsdnt
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	swills@FreeBSD.org
@@ -15,7 +16,7 @@ USES=		gmake shebangfix
 SHEBANG_FILES=	configure
 USE_GITHUB=	yes
 GH_ACCOUNT=	wbhart
-GH_TAGNAME=	72e20a7
+GH_TAGNAME=	de98bde
 
 USE_LDCONFIG=	yes
 

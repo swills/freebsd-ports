@@ -1,10 +1,9 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/net-mgmt/netdata/Makefile 459323 2018-01-18 12:25:10Z mmokhi $
+# $FreeBSD: head/net-mgmt/netdata/Makefile 465801 2018-03-28 12:00:31Z mmokhi $
 
 PORTNAME=	netdata
-PORTVERSION=	1.9.0
+PORTVERSION=	1.10.0
 DISTVERSIONPREFIX=v
-PORTREVISION=	1
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	mmokhi@FreeBSD.org

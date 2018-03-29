@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/devel/zziplib/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/devel/zziplib/Makefile 465870 2018-03-29 08:33:25Z amdmi3 $
 
 PORTNAME=	zziplib
 PORTVERSION=	0.13.62
@@ -20,6 +20,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	ac_cv_path_XMLTO=":"
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
+TEST_TARGET=	check
 
 PORTSCOUT=	limit:^0\.
 
@@ -28,9 +29,5 @@ OPTIONS_SUB=	yes
 
 SDL_USE=		SDL=sdl
 SDL_CONFIGURE_ENABLE=	sdl
-
-regression-test:
-	@(cd ${BUILD_WRKSRC}; ${SETENV} ${MAKE_ENV} ${MAKE_CMD} ${MAKE_FLAGS} \
-		${MAKEFILE} ${MAKE_ARGS} check)
 
 .include <bsd.port.mk>

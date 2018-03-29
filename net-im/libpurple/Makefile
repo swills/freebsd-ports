@@ -1,9 +1,8 @@
 # Created by: Jim Mock <jim@FreeBSD.org>
-# $FreeBSD: head/net-im/libpurple/Makefile 460831 2018-02-03 18:21:41Z amdmi3 $
+# $FreeBSD: head/net-im/libpurple/Makefile 465824 2018-03-28 17:08:10Z marcus $
 
 PORTNAME?=	libpurple
-PORTVERSION=	2.12.0
-PORTREVISION=	4
+PORTVERSION=	2.13.0
 CATEGORIES?=	net-im
 MASTER_SITES=	SF/pidgin/Pidgin/${PORTVERSION}
 DISTNAME=	pidgin-${PORTVERSION}
