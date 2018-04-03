@@ -1,10 +1,8 @@
 # $FreeBSD: head/devel/gitaly/Makefile 455591 2017-12-05 16:44:09Z tz $
 
 PORTNAME=	gitaly
-DISTVERSIONPREFIX=	v
 DISTVERSION=	0.82.0
 CATEGORIES=	devel
-MASTER_SITES=	https://gitlab.com/gitlab-org/${PORTNAME}/repository/archive.tar.gz?ref=${DISTVERSIONPREFIX}${PORTVERSION}&dummy=/
 
 MAINTAINER=	idefix@fechner.net
 COMMENT=	Smart reverse proxy for GitLab
@@ -12,7 +10,7 @@ COMMENT=	Smart reverse proxy for GitLab
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-# definedependencies that are required for build and run under MY_DEPENDS
+# define dependencies that are required for build and run under MY_DEPENDS
 MY_DEPENDS=	git>=2.14.3:devel/git \
 		rubygem-github-linguist47>=4.7.0:textproc/rubygem-github-linguist47 \
 		rubygem-bundler>0:sysutils/rubygem-bundler \
@@ -36,11 +34,13 @@ RUN_DEPENDS=	${MY_DEPENDS} \
 USES=	gmake
 USE_RUBY=	yes
 
-post-extract:
-	${MV} ${WRKDIR}/${DISTNAME}-* ${WRKDIR}/${DISTNAME}
+USE_GITLAB=	yes
+GL_ACCOUNT=	gitlab-org
+# Find this here: https://gitlab.com/gitlab-org/gitaly/tags
+GL_COMMIT=	8f7e18974599c47f542e083d56faf45af106788b
 
 post-patch:
-	${MV} ${WRKDIR}/${DISTNAME}/config.toml.example ${WRKDIR}/${DISTNAME}/config.toml.sample
+	${MV} ${WRKSRC}/config.toml.example ${WRKSRC}/config.toml.sample
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}
