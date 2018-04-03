@@ -23,7 +23,7 @@ GL_COMMIT=	51fe78e3acd65292b15402db17179e362e88a65e
 PLIST_FILES=	bin/gitlab-workhorse \
 		bin/gitlab-zip-cat \
 		bin/gitlab-zip-metadata
-PLIST_DIRS=	%%WWWDIR%%
+PLIST_DIRS=	${WWWDIR}
 
 post-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/www/${PORTNAME}
