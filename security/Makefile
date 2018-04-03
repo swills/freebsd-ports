@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 465770 2018-03-27 23:20:33Z dbaio $
+# $FreeBSD: head/security/Makefile 466267 2018-04-02 21:29:16Z mandree $
 #
 
     COMMENT = Security tools
@@ -310,6 +310,7 @@
     SUBDIR += knocker
     SUBDIR += kpcli
     SUBDIR += kqoauth
+    SUBDIR += kr
     SUBDIR += krb5
     SUBDIR += krb5-114
     SUBDIR += krb5-115
@@ -480,6 +481,7 @@
     SUBDIR += osslsigncode
     SUBDIR += otpw
     SUBDIR += outguess
+    SUBDIR += owasp-dependency-check
     SUBDIR += p11-kit
     SUBDIR += p5-Apache-Htpasswd
     SUBDIR += p5-App-Genpass
@@ -866,6 +868,7 @@
     SUBDIR += pulledpork
     SUBDIR += pure-sfv
     SUBDIR += putty
+    SUBDIR += putty-gtk2
     SUBDIR += putty-nogtk
     SUBDIR += pvk
     SUBDIR += pwauth
@@ -1152,7 +1155,6 @@
     SUBDIR += rubygem-rex-zip
     SUBDIR += rubygem-roauth
     SUBDIR += rubygem-rpam2
-    SUBDIR += rubygem-rpam2-3
     SUBDIR += rubygem-ruby-hmac
     SUBDIR += rubygem-ruby-rc4
     SUBDIR += rubygem-ruby-saml

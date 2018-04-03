@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/qt5-qtpaths/Makefile 444045 2017-06-21 18:00:42Z tcberner $
+# $FreeBSD: head/sysutils/qt5-qtpaths/Makefile 465911 2018-03-29 19:03:17Z tcberner $
 
 PORTNAME=	qtpaths
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	sysutils
 PKGNAMEPREFIX=	qt5-
 

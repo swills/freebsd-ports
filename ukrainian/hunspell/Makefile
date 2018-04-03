@@ -1,4 +1,4 @@
-# $FreeBSD: head/ukrainian/hunspell/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/ukrainian/hunspell/Makefile 465917 2018-03-29 19:59:26Z sunpoet $
 
 PORTNAME=	hunspell
 PORTVERSION=	1.8.0
@@ -13,6 +13,8 @@ COMMENT=	Ukrainian hunspell dictionaries
 
 LICENSE=	GPLv2 LGPL21
 LICENSE_COMB=	dual
+LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING.GPL
+LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LGPL
 
 ALL_TARGET=	myspell
 NO_ARCH=	yes

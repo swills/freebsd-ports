@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/cad/calculix/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/cad/calculix/Makefile 466167 2018-04-01 15:36:23Z riggs $
 
 PORTNAME=	calculix
 PORTVERSION=	2.13
@@ -15,9 +15,9 @@ COMMENT=	Three-Dimensional Structural Finite Element Program
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	ccx:cad/calculix-ccx
-
 BROKEN_FreeBSD_10=	Does not build with clang on FreeBSD 10, causes segfaults when built with gcc
+
+RUN_DEPENDS=	ccx:cad/calculix-ccx
 
 DIST_SOURCES=	cgx_${PORTVERSION}.all${EXTRACT_SUFX}
 DIST_HTM=	cgx_${PORTVERSION}.htm${EXTRACT_SUFX}

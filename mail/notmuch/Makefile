@@ -1,8 +1,8 @@
 # Created by: DarwinSurvivor <darwinsurvivor@gmail.com>
-# $FreeBSD: head/mail/notmuch/Makefile 463108 2018-02-27 05:01:28Z fluffy $
+# $FreeBSD: head/mail/notmuch/Makefile 466279 2018-04-03 01:30:53Z jrm $
 
 PORTNAME=	notmuch
-PORTVERSION=	0.26
+PORTVERSION=	0.26.1
 CATEGORIES?=	mail
 MASTER_SITES=	http://notmuchmail.org/releases/
 
@@ -66,7 +66,7 @@ post-configure:
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/notmuch
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libnotmuch.so.5.0.0
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libnotmuch.so.5.1.0
 
 # keep poudriere testport happy
 post-install-MANPAGES-on:

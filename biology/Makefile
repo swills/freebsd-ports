@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 465808 2018-03-28 13:26:31Z jwb $
+# $FreeBSD: head/biology/Makefile 466235 2018-04-02 16:50:46Z jwb $
 #
 
     COMMENT = Biology
@@ -96,6 +96,7 @@
     SUBDIR += pycogent
     SUBDIR += pyfasta
     SUBDIR += python-nexus
+    SUBDIR += rainbow
     SUBDIR += recombine
     SUBDIR += ruby-bio
     SUBDIR += rubygem-bio
@@ -109,6 +110,7 @@
     SUBDIR += sim4
     SUBDIR += slclust
     SUBDIR += ssaha
+    SUBDIR += stacks
     SUBDIR += tRNAscan-SE
     SUBDIR += t_coffee
     SUBDIR += tinker

@@ -1,8 +1,8 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/security/py-keyring/Makefile 456647 2017-12-18 16:44:33Z swills $
+# $FreeBSD: head/security/py-keyring/Makefile 466148 2018-04-01 12:52:59Z wen $
 
 PORTNAME=	keyring
-DISTVERSION=	10.5.1
+DISTVERSION=	12.0.0
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,6 +13,7 @@ COMMENT=	Store and access your passwords safely
 LICENSE=	PSFL
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.15.1:devel/py-setuptools_scm@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}entrypoints>=0.2.3:devel/py-entrypoints@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

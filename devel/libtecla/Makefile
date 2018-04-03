@@ -1,5 +1,5 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/devel/libtecla/Makefile 414702 2016-05-06 12:02:20Z pi $
+# $FreeBSD: head/devel/libtecla/Makefile 466074 2018-03-31 18:28:45Z krion $
 
 PORTNAME=	libtecla
 PORTVERSION=	1.6.3
@@ -18,6 +18,7 @@ ALL_TARGET=	default
 USE_LDCONFIG=	yes
 MAKE_JOBS_UNSAFE=	yes
 SSP_UNSAFE=	yes
+LLD_UNSAFE=	yes
 
 post-patch:
 	@${REINPLACE_CMD} -e 's,^OPT = -O,OPT =,' \

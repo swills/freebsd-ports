@@ -1,8 +1,8 @@
 # Created by: Frank Gruender <elwood@mc5sys.in-berlin.de>
-# $FreeBSD: head/lang/yabasic/Makefile 460560 2018-02-01 07:17:38Z wen $
+# $FreeBSD: head/lang/yabasic/Makefile 466150 2018-04-01 13:15:17Z wen $
 
 PORTNAME=	yabasic
-PORTVERSION=	2.78.3
+PORTVERSION=	2.78.4
 PORTEPOCH=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://www.yabasic.de/download/

@@ -1,5 +1,5 @@
 # Created by: Gavin McDonald <gavin@16degrees.com.au>
-# $FreeBSD: head/security/orthrus/Makefile 465240 2018-03-21 21:24:43Z brnrd $
+# $FreeBSD: head/security/orthrus/Makefile 466289 2018-04-03 08:56:11Z yuri $
 
 PORTNAME=	orthrus
 PORTVERSION=	0.8.0
@@ -8,7 +8,7 @@ CATEGORIES=	security
 MASTER_SITES=	https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/orthrus/  \
 		http://16degrees.com.au/${PORTNAME}/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	gavin@16degrees.com.au
 COMMENT=	One-Time Password System (OTP) alternative to OPIE or S/Key
 
 LICENSE=	APACHE20

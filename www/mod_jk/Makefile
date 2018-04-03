@@ -1,8 +1,8 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/www/mod_jk/Makefile 464193 2018-03-11 18:36:16Z brnrd $
+# $FreeBSD: head/www/mod_jk/Makefile 466287 2018-04-03 08:47:46Z girgen $
 
 PORTNAME=	mod_jk
-PORTVERSION=	1.2.41
+PORTVERSION=	1.2.43
 PORTEPOCH=	1
 CATEGORIES=	www
 MASTER_SITES=	APACHE/tomcat/tomcat-connectors/jk/

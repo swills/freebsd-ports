@@ -1,9 +1,9 @@
-# $FreeBSD: head/databases/go-carbon/Makefile 465077 2018-03-20 09:51:35Z yuri $
+# $FreeBSD: head/databases/go-carbon/Makefile 466198 2018-04-02 05:55:16Z meta $
 
 PORTNAME=		go-carbon
 DISTVERSIONPREFIX=	v
 DISTVERSION=		0.12.0
-PORTREVISION=		1
+PORTREVISION=		2
 CATEGORIES=		databases
 
 MAINTAINER=		a.andersson.thn@gmail.com

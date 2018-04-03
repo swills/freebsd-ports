@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/bitcoin-utils/Makefile 456900 2017-12-21 09:31:25Z linimon $
+# $FreeBSD: head/net-p2p/bitcoin-utils/Makefile 465909 2018-03-29 17:52:54Z vd $
 
 MASTERDIR=	${.CURDIR}/../bitcoin
 PKGNAMESUFFIX=	-utils
@@ -10,7 +10,10 @@ NOT_FOR_ARCHS=		powerpc powerpc64 sparc64
 NOT_FOR_ARCHS_REASON=	does not support big-endian architectures
 
 OPTIONS_DEFINE=		DEBUG HARDENING TESTS
+OPTIONS_RADIO=
 OPTIONS_DEFAULT=	HARDENING TESTS
+
+PKGHELP=	${NONEXISTENT}
 
 CONFIGURE_ARGS=	--without-daemon \
 		--without-gui \

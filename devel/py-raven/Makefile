@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-raven/Makefile 460859 2018-02-03 22:51:09Z pi $
+# $FreeBSD: head/devel/py-raven/Makefile 466178 2018-04-01 19:57:11Z pi $
 
 PORTNAME=	raven
-PORTVERSION=	6.5.0
+PORTVERSION=	6.6.0
 CATEGORIES=	devel python
 #MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

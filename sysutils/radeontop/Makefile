@@ -1,8 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/sysutils/radeontop/Makefile 455165 2017-11-30 05:55:17Z linimon $
+# $FreeBSD: head/sysutils/radeontop/Makefile 465946 2018-03-30 06:08:10Z danfe $
 
 PORTNAME=	radeontop
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

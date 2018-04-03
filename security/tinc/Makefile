@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/security/tinc/Makefile 458115 2018-01-05 04:48:55Z dinoex $
+# $FreeBSD: head/security/tinc/Makefile 466201 2018-04-02 06:13:31Z dinoex $
 
 PORTNAME=	tinc
 PORTVERSION=	1.0.33
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	https://www.tinc-vpn.org/packages/ \
 		http://www.tinc-vpn.org/packages/
@@ -14,7 +15,7 @@ LICENSE=	GPLv3
 
 LIB_DEPENDS=	liblzo2.so:archivers/lzo2
 
-USES=		cpe ssl makeinfo
+USES=		cpe ssl makeinfo autoreconf
 CPE_VENDOR=	tinc-vpn
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include

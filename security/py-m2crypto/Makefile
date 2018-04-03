@@ -1,5 +1,5 @@
 # Created by: Peter Haight <peterh@sapros.com>
-# $FreeBSD: head/security/py-m2crypto/Makefile 462807 2018-02-24 13:37:32Z sunpoet $
+# $FreeBSD: head/security/py-m2crypto/Makefile 465899 2018-03-29 14:53:23Z mat $
 
 PORTNAME=	m2crypto
 PORTVERSION=	0.29.0
@@ -13,6 +13,9 @@ COMMENT=	Crypto and SSL toolkit for Python
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENCE
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	Error: Syntax error in input(1).
 
 BUILD_DEPENDS=	swig3.0:devel/swig30
 

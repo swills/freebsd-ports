@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/p5-Mozilla-CA/Makefile 446795 2017-07-28 01:25:01Z dbaio $
+# $FreeBSD: head/www/p5-Mozilla-CA/Makefile 466307 2018-04-03 09:50:24Z sunpoet $
 
 PORTNAME=	Mozilla-CA
-PORTVERSION=	20160104
+PORTVERSION=	20180117
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

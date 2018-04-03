@@ -1,8 +1,9 @@
 # Created by: Marie Loise Nolden <nolden@kde.org>
-# $FreeBSD: head/misc/qt5-examples/Makefile 458293 2018-01-06 21:30:31Z rakuco $
+# $FreeBSD: head/misc/qt5-examples/Makefile 465911 2018-03-29 19:03:17Z tcberner $
 
 PORTNAME=	examples
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	QT/official_releases/qt/${QT5_VERSION:R}/${QT5_VERSION}/single
 PKGNAMEPREFIX=	qt5-

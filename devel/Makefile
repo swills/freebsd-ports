@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 465821 2018-03-28 16:59:42Z yuri $
+# $FreeBSD: head/devel/Makefile 466264 2018-04-02 21:19:45Z jrm $
 #
 
     COMMENT = Development utilities
@@ -740,6 +740,7 @@
     SUBDIR += gettext-runtime
     SUBDIR += gettext-tools
     SUBDIR += gflags
+    SUBDIR += ghub
     SUBDIR += giggle
     SUBDIR += gindent
     SUBDIR += gio-sharp
@@ -1664,7 +1665,6 @@
     SUBDIR += lua-gettext
     SUBDIR += lua-lgi
     SUBDIR += lua-lpeg
-    SUBDIR += lua-lpeg51
     SUBDIR += lua-luacheck
     SUBDIR += lua-luarocks
     SUBDIR += lua-lunit
@@ -1689,6 +1689,7 @@
     SUBDIR += m17n-lib
     SUBDIR += m4
     SUBDIR += magit
+    SUBDIR += magit-popup
     SUBDIR += make++
     SUBDIR += makedepend
     SUBDIR += marisa-trie
@@ -4208,6 +4209,7 @@
     SUBDIR += py-PyExecJS
     SUBDIR += py-PyLD
     SUBDIR += py-PyODE
+    SUBDIR += py-PyUtilib
     SUBDIR += py-QtPy
     SUBDIR += py-RPyC
     SUBDIR += py-Record
@@ -4434,6 +4436,7 @@
     SUBDIR += py-fabric
     SUBDIR += py-fabric3
     SUBDIR += py-fam
+    SUBDIR += py-fastcache
     SUBDIR += py-fasteners
     SUBDIR += py-fastentrypoints
     SUBDIR += py-fastimport
@@ -4453,6 +4456,7 @@
     SUBDIR += py-flake8-polyfill
     SUBDIR += py-flake8-quotes
     SUBDIR += py-flask-babel
+    SUBDIR += py-flex
     SUBDIR += py-flexmock
     SUBDIR += py-fluent-logger
     SUBDIR += py-flufl.i18n
@@ -4945,7 +4949,9 @@
     SUBDIR += py-stdnum
     SUBDIR += py-stevedore
     SUBDIR += py-stopit
+    SUBDIR += py-strategies
     SUBDIR += py-streamparse
+    SUBDIR += py-strict-rfc3339
     SUBDIR += py-structlog
     SUBDIR += py-stsci.distutils
     SUBDIR += py-subprocess32
@@ -4980,6 +4986,7 @@
     SUBDIR += py-tinyarray
     SUBDIR += py-tinyrpc
     SUBDIR += py-tipper
+    SUBDIR += py-toolz
     SUBDIR += py-tooz
     SUBDIR += py-toposort
     SUBDIR += py-total-ordering

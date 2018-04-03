@@ -1,8 +1,9 @@
-# $FreeBSD: head/security/kbfs/Makefile 462835 2018-02-24 14:54:31Z sunpoet $
+# $FreeBSD: head/security/kbfs/Makefile 466300 2018-04-03 09:46:43Z sunpoet $
 
 PORTNAME=	kbfs
 PORTVERSION=	1.0.44
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	security
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -12,10 +13,10 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${GH_PROJECT}
-GO_TARGET=	-tags production ${GO_PKGNAME}/kbfsfuse ${GO_PKGNAME}/kbfstool
+GO_TARGET=	-tags production ${GO_PKGNAME}/kbfsfuse ${GO_PKGNAME}/kbfsgit/git-remote-keybase ${GO_PKGNAME}/kbfstool
 USES=		go
 
-PLIST_FILES=	bin/kbfsfuse bin/kbfstool
+PLIST_FILES=	bin/git-remote-keybase bin/kbfsfuse bin/kbfstool
 
 GH_ACCOUNT=	keybase
 USE_GITHUB=	yes

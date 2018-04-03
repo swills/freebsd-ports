@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 465600 2018-03-26 14:38:16Z rene $
+# $FreeBSD: head/mail/Makefile 465936 2018-03-29 23:15:20Z cpm $
 #
 
     COMMENT = Electronic mail utilities
@@ -549,6 +549,7 @@
     SUBDIR += py-pyspf
     SUBDIR += py-pyzmail
     SUBDIR += py-spambayes
+    SUBDIR += py-validate_email
     SUBDIR += py-zope.sendmail
     SUBDIR += pymsgauth
     SUBDIR += pysieved

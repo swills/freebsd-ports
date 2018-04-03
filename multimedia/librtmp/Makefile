@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/librtmp/Makefile 461928 2018-02-15 14:41:29Z brnrd $
+# $FreeBSD: head/multimedia/librtmp/Makefile 465899 2018-03-29 14:53:23Z mat $
 
 PORTNAME=	librtmp
 PORTVERSION=	2.4.20151223
@@ -10,6 +10,9 @@ MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	RTMP stream library
 
 LICENSE=	GPLv2
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	error: incomplete definition of type 'struct dh_st'
 
 USES=		pkgconfig tar:bz2 ssl
 USE_LDCONFIG=	yes

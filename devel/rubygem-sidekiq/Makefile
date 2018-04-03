@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-sidekiq/Makefile 461311 2018-02-09 14:08:46Z sunpoet $
+# $FreeBSD: head/devel/rubygem-sidekiq/Makefile 466336 2018-04-03 09:53:00Z sunpoet $
 
 PORTNAME=	sidekiq
-PORTVERSION=	5.1.1
+PORTVERSION=	5.1.3
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

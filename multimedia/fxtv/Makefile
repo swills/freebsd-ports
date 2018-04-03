@@ -1,5 +1,5 @@
 # Created by: Randall Hopper <aa8vb@nc.rr.com>
-# $FreeBSD: head/multimedia/fxtv/Makefile 444237 2017-06-24 18:36:19Z linimon $
+# $FreeBSD: head/multimedia/fxtv/Makefile 466136 2018-04-01 09:33:27Z amdmi3 $
 
 PORTNAME=	fxtv
 PORTVERSION=	1.03
@@ -12,10 +12,10 @@ COMMENT=	X11-based TV display and capture application (for use with bt848 driver
 
 LICENSE=	BSD2CLAUSE
 
+ONLY_FOR_ARCHS=	amd64 i386
+
 LIB_DEPENDS=	libtiff.so:graphics/tiff \
 		libXaw3d.so:x11-toolkits/Xaw3d
-
-ONLY_FOR_ARCHS=	amd64 i386
 
 USES=		gmake jpeg tar:tgz
 MAKE_ENV=	X11BASE=${LOCALBASE}

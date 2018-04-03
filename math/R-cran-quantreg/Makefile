@@ -1,9 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-quantreg/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/R-cran-quantreg/Makefile 466199 2018-04-02 05:58:05Z tota $
 
 PORTNAME=	quantreg
-PORTVERSION=	5.33
-PORTREVISION=	1
+PORTVERSION=	5.35
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

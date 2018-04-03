@@ -1,5 +1,5 @@
 # Created by: Bob Eager <bob@eager.cx>
-# $FreeBSD: head/math/rexx-regmath/Makefile 451939 2017-10-13 00:37:31Z ler $
+# $FreeBSD: head/math/rexx-regmath/Makefile 466071 2018-03-31 18:10:33Z krion $
 
 PORTNAME=	regmath
 PORTVERSION=	1.00
@@ -22,6 +22,7 @@ CFLAGS+=	-Wno-incompatible-pointer-types
 
 WRKSRC=		${WRKDIR}/math
 USE_LDCONFIG=	yes
+LLD_UNSAFE=	yes
 MAKEFILE=	Makefile.bsd
 
 PLIST_FILES=	lib/librexxmath.so lib/librxmath.so man/man1/regmath.1.gz

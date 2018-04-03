@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-rack-attack/Makefile 464207 2018-03-11 20:31:31Z sunpoet $
+# $FreeBSD: head/www/rubygem-rack-attack/Makefile 466102 2018-03-31 22:48:06Z sunpoet $
 
 PORTNAME=	rack-attack
-PORTVERSION=	5.1.0
+PORTVERSION=	5.2.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

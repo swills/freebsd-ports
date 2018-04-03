@@ -1,9 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/emulators/wine-devel/Makefile 464959 2018-03-18 22:24:42Z gerald $
+# $FreeBSD: head/emulators/wine-devel/Makefile 466230 2018-04-02 14:15:25Z gerald $
 
 PORTNAME=	wine
-DISTVERSION=	3.4
-PORTREVISION=	1
+DISTVERSION=	3.5
 PORTEPOCH=	1
 CATEGORIES=	emulators
 MASTER_SITES=	http://mirrors.ibiblio.org/wine/source/3.x/ \
@@ -110,11 +109,6 @@ X11_LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 			libpng.so:graphics/png
 
 .include <bsd.port.pre.mk>
-
-# PR224863: clang 6.0.0 crashes
-.if ${OPSYS} == FreeBSD && ${OSVERSION} == 1200056 && ${ARCH} == amd64
-USE_GCC=	yes
-.endif
 
 .if ${ARCH} == amd64
 # Wine is composed of three parts:

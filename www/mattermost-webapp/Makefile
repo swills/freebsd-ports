@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/mattermost-webapp/Makefile 465004 2018-03-19 10:12:42Z olivier $
+# $FreeBSD: head/www/mattermost-webapp/Makefile 466008 2018-03-30 22:19:51Z mat $
 
 PORTNAME=	mattermost-webapp
 PORTVERSION=	4.8.0
@@ -13,6 +13,7 @@ COMMENT=	Webapp of Mattermost server
 LICENSE=	APACHE20
 
 NO_BUILD=	yes
+NO_ARCH=	yes
 
 WWWDIR=		${PREFIX}/www/mattermost
 
@@ -25,11 +26,9 @@ GROUPS=		${MATTERMOSTD_GROUP}
 PLIST_SUB=	MATTERMOSTD_USER=${MATTERMOSTD_USER} \
 			MATTERMOSTD_GROUP=${MATTERMOSTD_GROUP}
 
-.include <bsd.port.pre.mk>
-
 do-install:
 	${MKDIR} ${STAGEDIR}${WWWDIR}
-	${CP} -R ${WRKDIR}/mattermost/client ${STAGEDIR}${WWWDIR}
+	cd ${WRKDIR}/mattermost && ${COPYTREE_SHARE} client ${STAGEDIR}${WWWDIR}
 	${MKDIR} ${STAGEDIR}${WWWDIR}/client/plugins
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

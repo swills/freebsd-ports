@@ -1,9 +1,9 @@
-# $FreeBSD: head/math/mathgl/Makefile 465264 2018-03-22 08:15:51Z yuri $
+# $FreeBSD: head/math/mathgl/Makefile 466066 2018-03-31 16:42:28Z yuri $
 
 PORTNAME=	mathgl
-DISTVERSION=	2.4.2
+DISTVERSION=	2.4.2.1
 CATEGORIES=	math graphics
-MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}%20${PORTVERSION}
+MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}%20${PORTVERSION:R}
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Library for high-quality scientific data visualization

@@ -1,5 +1,5 @@
 # Created by: Brian Somers <brian@FreeBSD.org>
-# $FreeBSD: head/news/leafnode/Makefile 458513 2018-01-09 07:40:55Z mat $
+# $FreeBSD: head/news/leafnode/Makefile 466037 2018-03-31 10:08:17Z mandree $
 
 PORTNAME=	leafnode
 DISTVERSION=	1.11.11
@@ -9,6 +9,8 @@ MASTER_SITES=	SF \
 
 MAINTAINER=	mandree@FreeBSD.org
 COMMENT=	NNTP package for offline news caching and reading
+
+LICENSE=	GPLv2+
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
 

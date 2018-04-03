@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-toolkits/qt5-gamepad/Makefile 458293 2018-01-06 21:30:31Z rakuco $
+# $FreeBSD: head/x11-toolkits/qt5-gamepad/Makefile 465911 2018-03-29 19:03:17Z tcberner $
 
 PORTNAME=	gamepad
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 PKGNAMEPREFIX=	qt5-
 

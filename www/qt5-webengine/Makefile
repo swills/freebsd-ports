@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/qt5-webengine/Makefile 458293 2018-01-06 21:30:31Z rakuco $
+# $FreeBSD: head/www/qt5-webengine/Makefile 465911 2018-03-29 19:03:17Z tcberner $
 
 # QtWebEngine itself is a very thin layer of Qt code on top of a large part of
 # Chromium (everything up to the content/ layer). As such, most of the work in
@@ -16,6 +16,7 @@
 
 PORTNAME=	webengine
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	www
 PKGNAMEPREFIX=	qt5-
 

@@ -1,9 +1,8 @@
 # Created by: Marko Njezic <sf@maxempire.com>
-# $FreeBSD: head/security/clamav-unofficial-sigs/Makefile 428603 2016-12-15 06:33:34Z pi $
+# $FreeBSD: head/security/clamav-unofficial-sigs/Makefile 465959 2018-03-30 11:08:35Z pi $
 
 PORTNAME=	clamav-unofficial-sigs
-PORTVERSION=	5.3.2
-PORTREVISION=	1
+PORTVERSION=	5.6.2
 CATEGORIES=	security
 
 MAINTAINER=	sf@maxempire.com
@@ -20,10 +19,9 @@ COMMON_DEPENDS=	clamscan:security/clamav \
 BUILD_DEPENDS=	${COMMON_DEPENDS}
 RUN_DEPENDS=	${COMMON_DEPENDS}
 
+USES=		perl5 shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	extremeshok
-
-USES=		perl5 shebangfix
 SHEBANG_FILES=	clamav-unofficial-sigs.sh
 USE_PERL5=	run
 

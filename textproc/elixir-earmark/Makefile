@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/elixir-earmark/Makefile 440697 2017-05-12 18:13:15Z olgeni $
+# $FreeBSD: head/textproc/elixir-earmark/Makefile 466356 2018-04-03 14:56:49Z olgeni $
 
 PORTNAME=	earmark
-PORTVERSION=	1.2.2
+PORTVERSION=	1.2.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
 PKGNAMEPREFIX=	elixir-

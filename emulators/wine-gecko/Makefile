@@ -1,10 +1,10 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/emulators/wine-gecko/Makefile 453453 2017-11-04 11:43:35Z dbaio $
+# $FreeBSD: head/emulators/wine-gecko/Makefile 466180 2018-04-01 20:30:37Z gerald $
 
 PORTNAME=	wine-gecko
-DISTVERSION=	2.40
+DISTVERSION=	2.47
 CATEGORIES=	emulators
-MASTER_SITES=	SF/wine/Wine%20Gecko/${DISTVERSION}
+MASTER_SITES=	http://dl.winehq.org/wine/wine-gecko/${DISTVERSION}/
 DISTNAME=	wine_gecko-${DISTVERSION}-x86
 EXTRACT_SUFX=	.msi
 EXTRACT_ONLY=

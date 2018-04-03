@@ -1,8 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc6-devel/Makefile 465441 2018-03-24 09:21:13Z gerald $
+# $FreeBSD: head/lang/gcc6-devel/Makefile 466045 2018-03-31 12:11:36Z linimon $
 
 PORTNAME=	gcc
-PORTVERSION=	6.4.1.s20180321
+PORTVERSION=	6.4.1.s20180328
 CATEGORIES=	lang java
 MASTER_SITES=	GCC/snapshots/${DIST_VERSION}
 PKGNAMESUFFIX=	${SUFFIX}-devel
@@ -14,7 +14,7 @@ COMMENT=	GNU Compiler Collection 6
 LICENSE=	GPLv3 GPLv3RLE
 LICENSE_COMB=	multi
 
-ONLY_FOR_ARCHS=	aarch64 amd64 arm armv6 armv7 i386 powerpc powerpc64 sparc64
+ONLY_FOR_ARCHS=	aarch64 amd64 arm armv6 armv7 i386 powerpc powerpc64 powerpcspe sparc64
 
 LIB_DEPENDS=	libgmp.so:math/gmp \
 		libmpfr.so:math/mpfr \
@@ -81,6 +81,9 @@ MAKE_ARGS+=STAGE1_CXXFLAGS=-fbracket-depth=512
 .elif ${ARCH} == powerpc64
 CONFIGURE_ENV+=	UNAME_m="powerpc64"
 USE_GCC=	5	# Cannot require ourselves, needs to be at least 4.9.
+
+.elif ${ARCH} == powerpcspe
+CONFIGURE_ARGS+=	--with-cpu=8540 --enable-e500_double --without-fp
 .endif
 
 LANGUAGES:=	c,c++,objc,fortran

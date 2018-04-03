@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/google-cloud-sdk/Makefile 465405 2018-03-23 20:29:26Z swills $
+# $FreeBSD: head/net/google-cloud-sdk/Makefile 465908 2018-03-29 17:52:06Z swills $
 
 PORTNAME=	google-cloud-sdk
-PORTVERSION=	194.0.0
+PORTVERSION=	195.0.0
 CATEGORIES=	net
 MASTER_SITES=	https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/
 DISTNAME=	google-cloud-sdk-${PORTVERSION}-linux-x86_64

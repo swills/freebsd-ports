@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/spring/Makefile 463538 2018-03-03 22:40:56Z jbeich $
+# $FreeBSD: head/games/spring/Makefile 466135 2018-04-01 09:21:48Z krion $
 
 PORTNAME=	spring
 PORTVERSION=	98.0
@@ -30,6 +30,7 @@ USE_SDL=	sdl2
 USE_GL=		gl glu glew
 USE_XORG=	x11 xcursor
 USE_LDCONFIG=	yes
+LLD_UNSAFE=	yes
 DOS2UNIX_GLOB=	*.h *.hpp *.cpp
 
 USES=		cmake compiler:c++11-lib dos2unix openal:al tar:lzma

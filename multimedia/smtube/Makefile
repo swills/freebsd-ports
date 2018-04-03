@@ -1,8 +1,8 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/multimedia/smtube/Makefile 462871 2018-02-24 22:35:18Z rene $
+# $FreeBSD: head/multimedia/smtube/Makefile 466255 2018-04-02 19:44:22Z bapt $
 
 PORTNAME=	smtube
-PORTVERSION=	18.1.0
+PORTVERSION=	18.3.0
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/smtube/SMTube/${PORTVERSION}/
 

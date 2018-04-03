@@ -1,5 +1,5 @@
 # Created by: Thomas Hurst <tom@hur.st>
-# $FreeBSD: head/sysutils/dupd/Makefile 465810 2018-03-28 13:45:51Z krion $
+# $FreeBSD: head/sysutils/dupd/Makefile 465900 2018-03-29 15:02:05Z emaste $
 
 PORTNAME=	dupd
 PORTVERSION=	1.4
@@ -18,7 +18,6 @@ GH_TAGNAME=	v1.4:libbloom
 
 USES=	gmake ssl sqlite:3
 LLD_UNSAFE=	yes
-BINARY_ALIAS=	ld=ld.bfd
 
 PLIST_FILES=	bin/${PORTNAME} man/man1/${PORTNAME}.1.gz
 

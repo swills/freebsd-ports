@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/llvm40/Makefile 465145 2018-03-21 03:45:55Z bdrewery $
+# $FreeBSD: head/devel/llvm40/Makefile 466018 2018-03-31 03:28:42Z tobik $
 
 PORTNAME=	llvm
 DISTVERSION=	4.0.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel lang
 MASTER_SITES=	http://llvm.org/${PRE_}releases/${LLVM_RELEASE}/${RCDIR}
 PKGNAMESUFFIX=	${LLVM_SUFFIX}

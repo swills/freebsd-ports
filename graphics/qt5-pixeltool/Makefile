@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/qt5-pixeltool/Makefile 428889 2016-12-18 22:06:50Z tcberner $
+# $FreeBSD: head/graphics/qt5-pixeltool/Makefile 465911 2018-03-29 19:03:17Z tcberner $
 
 PORTNAME=	pixeltool
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	qt5-
 

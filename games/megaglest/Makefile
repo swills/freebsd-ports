@@ -1,5 +1,5 @@
 # Created by: Sven Moeller <smoeller@nichthelfer.de>
-# $FreeBSD: head/games/megaglest/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/games/megaglest/Makefile 466141 2018-04-01 11:15:44Z krion $
 
 PORTNAME=	megaglest
 PORTVERSION=	3.13.0
@@ -35,6 +35,7 @@ USE_GL=		glew gl glu
 USE_SDL=	sdl2
 USE_XORG=	sm ice x11 xext
 USE_CXXSTD=	c++11
+LLD_UNSAFE=	yes
 
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib -lssl -lcrypto

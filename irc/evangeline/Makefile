@@ -1,5 +1,5 @@
 # Created by: Edini <ports@edini.net>
-# $FreeBSD: head/irc/evangeline/Makefile 465804 2018-03-28 12:58:19Z emaste $
+# $FreeBSD: head/irc/evangeline/Makefile 465902 2018-03-29 15:33:28Z emaste $
 
 PORTNAME=	evangeline
 PORTVERSION=	1.1.4
@@ -18,9 +18,7 @@ USES=		gmake tcl
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-tcllib=${LOCALBASE}/lib/libtcl${TCL_SHLIB_VER}.so \
 		--with-tclinc=${TCL_INCLUDEDIR}/tcl.h
-# Requires directly-invoked linker to provide library search paths.
-LLD_UNSAFE=	yes
-BINARY_ALIAS=	ld=ld.bfd
+LLD_UNSAFE=	yes	# Needs linker to provide library search paths.
 
 PLIST_FILES=	bin/evangeline
 

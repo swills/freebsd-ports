@@ -1,9 +1,8 @@
 # Created by: Jin-Sih Lin <linpct@gmail.com>
-# $FreeBSD: head/www/node4/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/www/node4/Makefile 466239 2018-04-02 17:48:48Z bhughes $
 
 PORTNAME=	node
-PORTVERSION=	4.8.7
-PORTREVISION=	1
+PORTVERSION=	4.9.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 MASTER_SITES=	http://nodejs.org/dist/v${PORTVERSION}/
@@ -11,6 +10,8 @@ PKGNAMESUFFIX=	4
 
 MAINTAINER=	bhughes@FreeBSD.org
 COMMENT=	V8 JavaScript for client and server (4.x LTS)
+DEPRECATED=	Node.js v4.x reaches end-of-life on 2018-04-30, see https://github.com/nodejs/Release
+EXPIRATION_DATE=	2018-04-30
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE

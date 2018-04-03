@@ -1,13 +1,12 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/www/emacs-w3m/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/www/emacs-w3m/Makefile 466061 2018-03-31 15:51:57Z nobutaka $
 
 PORTNAME=	emacs-w3m
-PORTVERSION=	1.4.598.b.${SNAPDATE}
-PORTREVISION=	3
+PORTVERSION=	1.4.620.b.${SNAPDATE}
 CATEGORIES=	www elisp
 MASTER_SITES=	LOCAL/nobutaka
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
-DISTNAME=	${PKGNAMEPREFIX}${PORTNAME}-1.4.598-${SNAPDATE}
+DISTNAME=	${PKGNAMEPREFIX}${PORTNAME}-1.4.620-${SNAPDATE}
 
 MAINTAINER=	nobutaka@FreeBSD.org
 COMMENT=	Simple front-end to w3m for emacs
@@ -25,7 +24,7 @@ ALL_TARGET=	default
 INSTALL_TARGET=	install install-icons
 
 NO_ARCH=	yes
-SNAPDATE=	20170903
+SNAPDATE=	20180331
 MAKE_JOBS_UNSAFE=	yes
 
 GNU_CONFIGURE=	yes

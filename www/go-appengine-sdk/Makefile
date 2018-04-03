@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/go-appengine-sdk/Makefile 465136 2018-03-20 22:52:32Z yuri $
+# $FreeBSD: head/www/go-appengine-sdk/Makefile 466164 2018-04-01 15:07:30Z vanilla $
 
 PORTNAME=	go-appengine-sdk
-DISTVERSION=	1.9.63
+DISTVERSION=	1.9.64
 CATEGORIES=	www devel
 MASTER_SITES=	https://storage.googleapis.com/appengine-sdks/featured/
 DISTNAME=	${PORTNAME:S,-,_,g}_linux_amd64-${PORTVERSION}

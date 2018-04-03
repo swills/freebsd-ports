@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc5/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/lang/gcc5/Makefile 466045 2018-03-31 12:11:36Z linimon $
 
 PORTNAME=	gcc
 PORTVERSION=	5.5.0
@@ -15,7 +15,7 @@ LICENSE=	GPLv3 GPLv3RLE
 LICENSE_COMB=	multi
 
 DEPRECATED=	Unsupported by upstream. Use GCC 6 or newer instead.
-ONLY_FOR_ARCHS=	aarch64 amd64 arm armv6 i386 powerpc powerpc64 sparc64
+ONLY_FOR_ARCHS=	aarch64 amd64 arm armv6 i386 powerpc powerpc64 powerpcspe sparc64
 BROKEN_sparc64=	Does not build: bootstrap comparison failure
 
 LIB_DEPENDS=	libgmp.so:math/gmp \
@@ -66,6 +66,9 @@ MAKE_ARGS+=STAGE1_CXXFLAGS=-fbracket-depth=512
 
 .elif ${ARCH} == powerpc64
 CONFIGURE_ENV+=	UNAME_m="powerpc64"
+
+.elif ${ARCH} == powerpcspe
+CONFIGURE_ARGS+=	--with-cpu=8540 --enable-e500_double --without-fp
 .endif
 
 LANGUAGES:=	c,c++,objc,fortran

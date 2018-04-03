@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/harvid/Makefile 465791 2018-03-28 09:58:47Z krion $
+# $FreeBSD: head/multimedia/harvid/Makefile 465900 2018-03-29 15:02:05Z emaste $
 
 PORTNAME=	harvid
 DISTVERSIONPREFIX=	v
@@ -18,7 +18,6 @@ USES=		gmake jpeg localbase pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	x42
 LLD_UNSAFE=	yes
-BINARY_ALIAS=	ld=ld.bfd
 
 MAKE_JOBS_UNSAFE=	yes # https://github.com/x42/harvid/issues/5
 

@@ -1,26 +1,23 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/graphics/recoverjpeg/Makefile 426563 2016-11-20 08:43:17Z ehaupt $
+# $FreeBSD: head/graphics/recoverjpeg/Makefile 466337 2018-04-03 10:34:44Z ehaupt $
 
 PORTNAME=	recoverjpeg
-PORTVERSION=	2.6.1
-DISTVERSIONPREFIX=	v
+PORTVERSION=	2.6.2
 CATEGORIES=	graphics
+MASTER_SITES=	https://rfc1149.net/download/${PORTNAME}/ \
+		LOCAL/ehaupt
 
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Recoverjpeg tries to recover JFIF (JPEG) pictures from a peripheral
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	${LOCALBASE}/bin/pandoc:textproc/hs-pandoc
 RUN_DEPENDS=	exif:graphics/exif \
 		identify:graphics/ImageMagick
 
-USES=		autoreconf python shebangfix
+USES=		python shebangfix
 GNU_CONFIGURE=	yes
 
 SHEBANG_FILES=	scripts/remove-duplicates
-
-USE_GITHUB=	yes
-GH_ACCOUNT=	samueltardieu
 
 .include <bsd.port.mk>

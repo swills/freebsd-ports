@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-lograge-rails50/Makefile 458917 2018-01-13 08:14:33Z sunpoet $
+# $FreeBSD: head/www/rubygem-lograge-rails50/Makefile 466101 2018-03-31 22:48:01Z sunpoet $
 
 PORTNAME=	lograge
-PORTVERSION=	0.9.0
+PORTVERSION=	0.10.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50

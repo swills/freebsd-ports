@@ -1,4 +1,4 @@
-# $FreeBSD: head/GIDs 465646 2018-03-26 23:16:44Z cpm $
+# $FreeBSD: head/GIDs 466052 2018-03-31 15:35:22Z dbaio $
 # Please keep this file sorted by GID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/group
@@ -830,7 +830,7 @@ chronyd:*:849:
 # free: 887
 vuls:*:888:
 mattermost:*:889:
-# free: 890
+matterircd:*:890:
 # free: 891
 # free: 892
 # free: 893

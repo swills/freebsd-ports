@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/games/retroarch/Makefile 464933 2018-03-18 16:57:58Z yuri $
+# $FreeBSD: head/games/retroarch/Makefile 466124 2018-04-01 07:30:42Z krion $
 
 PORTNAME=	RetroArch
 PORTVERSION=	1.3.6
@@ -64,6 +64,7 @@ SUB_FILES=	pkg-message
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--global-config-dir=${LOCALBASE}/etc
 USE_XORG=	x11 xcb xext xinerama xv xxf86vm
+LLD_UNSAFE=	yes
 SHEBANG_FILES=	libretro-common/glsym/glgen.py libretro-common/glsym/rglgen.py tools/cg2glsl.py tools/vulkan_loader_generator.py
 
 post-patch:

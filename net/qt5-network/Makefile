@@ -1,13 +1,16 @@
-# $FreeBSD: head/net/qt5-network/Makefile 459510 2018-01-20 11:56:14Z woodsb02 $
+# $FreeBSD: head/net/qt5-network/Makefile 466188 2018-04-01 22:38:06Z cmt $
 
 PORTNAME=	network
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	net ipv6
 PKGNAMEPREFIX=	qt5-
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Qt network module
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	error: member access into incomplete type 'X509' (aka 'x509_st')
 
 RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 

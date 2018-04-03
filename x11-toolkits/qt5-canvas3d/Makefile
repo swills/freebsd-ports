@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-toolkits/qt5-canvas3d/Makefile 432042 2017-01-21 14:41:09Z rakuco $
+# $FreeBSD: head/x11-toolkits/qt5-canvas3d/Makefile 465911 2018-03-29 19:03:17Z tcberner $
 
 PORTNAME=	canvas3d
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 PKGNAMEPREFIX=	qt5-
 

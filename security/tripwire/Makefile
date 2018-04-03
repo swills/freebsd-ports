@@ -1,8 +1,8 @@
 # Created by: Cy Schubert <Cy.Schubert@uumail.gov.bc.ca>
-# $FreeBSD: head/security/tripwire/Makefile 454410 2017-11-18 06:58:42Z cy $
+# $FreeBSD: head/security/tripwire/Makefile 466154 2018-04-01 13:38:59Z cy $
 
 PORTNAME=	tripwire
-PORTVERSION=	2.4.3.6
+PORTVERSION=	2.4.3.7
 CATEGORIES=	security
 
 MAINTAINER=	cy@FreeBSD.org

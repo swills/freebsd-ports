@@ -1,14 +1,15 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/graphics/icat/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/icat/Makefile 466288 2018-04-03 08:54:58Z ehaupt $
 
 PORTNAME=	icat
-PORTVERSION=	0.4
+PORTVERSION=	0.5
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	Displays images in 256-color capable terminals
+
+LICENSE=	BSD2CLAUSE
 
 LIB_DEPENDS=	libImlib2.so:graphics/imlib2
 

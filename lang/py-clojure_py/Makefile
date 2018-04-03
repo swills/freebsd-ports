@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/py-clojure_py/Makefile 459989 2018-01-26 12:41:45Z sunpoet $
+# $FreeBSD: head/lang/py-clojure_py/Makefile 465924 2018-03-29 20:08:58Z sunpoet $
 
 PORTNAME=	clojure_py
 PORTVERSION=	0.2.4
@@ -11,6 +11,10 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Implementation of Clojure in Python
 
 LICENSE=	EPL
+
+BROKEN=		does not build with latest setuptools (39.0.1)
+DEPRECATED=	Upstream disappeared
+EXPIRATION_DATE=2018-04-30
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

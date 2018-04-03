@@ -1,7 +1,7 @@
-# $FreeBSD: head/biology/libgtextutils/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/biology/libgtextutils/Makefile 465904 2018-03-29 15:41:07Z jwb $
 
 PORTNAME=	libgtextutils
-PORTVERSION=	0.7
+DISTVERSION=	0.7
 CATEGORIES=	biology
 
 MAINTAINER=	jwb@FreeBSD.org

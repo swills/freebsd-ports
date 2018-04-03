@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-autopep8/Makefile 459938 2018-01-25 13:07:11Z sunpoet $
+# $FreeBSD: head/textproc/py-autopep8/Makefile 466090 2018-03-31 22:47:03Z sunpoet $
 
 PORTNAME=	autopep8
-PORTVERSION=	1.3.4
+PORTVERSION=	1.3.5
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

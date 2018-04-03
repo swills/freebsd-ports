@@ -1,8 +1,8 @@
 # Created by: Douglas Thrift <douglas@douglasthrift.net>
-# $FreeBSD: head/www/rubygem-adsf/Makefile 456648 2017-12-18 17:00:29Z swills $
+# $FreeBSD: head/www/rubygem-adsf/Makefile 466184 2018-04-01 21:45:08Z sunpoet $
 
 PORTNAME=	adsf
-PORTVERSION=	1.4.0
+PORTVERSION=	1.4.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

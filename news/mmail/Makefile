@@ -1,8 +1,8 @@
 # Created by: Frederic Cambus
-# $FreeBSD: head/news/mmail/Makefile 419565 2016-08-04 00:10:54Z marino $
+# $FreeBSD: head/news/mmail/Makefile 466187 2018-04-01 22:08:01Z yuri $
 
 PORTNAME=	mmail
-PORTVERSION=	0.49
+DISTVERSION=	0.51
 CATEGORIES=	news
 MASTER_SITES=	SF/multimail/MultiMail/${PORTVERSION}
 

@@ -1,8 +1,8 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-IPC-Run/Makefile 465738 2018-03-27 18:55:45Z sunpoet $
+# $FreeBSD: head/devel/p5-IPC-Run/Makefile 466145 2018-04-01 12:28:58Z wen $
 
 PORTNAME=	IPC-Run
-PORTVERSION=	0.97
+PORTVERSION=	0.99
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -16,6 +16,7 @@ LICENSE_FILE_ART10=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-IO-Tty>=1.08:devel/p5-IO-Tty
 RUN_DEPENDS:=	${BUILD_DEPENDS}
+TEST_DEPENDS=	p5-Readonly>=0:devel/p5-Readonly
 
 NO_ARCH=	yes
 USES=		perl5

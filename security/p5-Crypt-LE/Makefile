@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/p5-Crypt-LE/Makefile 439536 2017-04-27 09:44:02Z des $
+# $FreeBSD: head/security/p5-Crypt-LE/Makefile 466229 2018-04-02 14:11:49Z des $
 
 PORTNAME=	Crypt-LE
-PORTVERSION=	0.23
+PORTVERSION=	0.31
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

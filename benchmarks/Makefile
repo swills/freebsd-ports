@@ -1,4 +1,4 @@
-# $FreeBSD: head/benchmarks/Makefile 465105 2018-03-20 18:39:34Z rene $
+# $FreeBSD: head/benchmarks/Makefile 466231 2018-04-02 15:04:50Z krion $
 #
 
     COMMENT = Benchmarking tools
@@ -88,6 +88,7 @@
     SUBDIR += typometer
     SUBDIR += ubench
     SUBDIR += unixbench
+    SUBDIR += uperf
     SUBDIR += vegeta
     SUBDIR += webbench
     SUBDIR += wrk

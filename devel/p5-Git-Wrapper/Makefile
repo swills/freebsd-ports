@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Git-Wrapper/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Git-Wrapper/Makefile 466086 2018-03-31 22:46:42Z sunpoet $
 
 PORTNAME=	Git-Wrapper
-PORTVERSION=	0.047
+PORTVERSION=	0.048
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/x11/Makefile 466039 2018-03-31 11:24:38Z dbaio $
 #
 
     COMMENT = Ports to support the X window system
@@ -274,6 +274,7 @@
     SUBDIR += py-qt4-opengl
     SUBDIR += py-qt5-opengl
     SUBDIR += py-xdot
+    SUBDIR += py-xdot06
     SUBDIR += qimageblitz
     SUBDIR += qt4-graphicssystems-opengl
     SUBDIR += qt4-inputmethods

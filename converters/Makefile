@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/Makefile 465241 2018-03-21 21:36:14Z feld $
+# $FreeBSD: head/converters/Makefile 466305 2018-04-03 09:49:53Z sunpoet $
 #
 
     COMMENT = Character code converters
@@ -138,7 +138,7 @@
     SUBDIR += pear-Services_JSON
     SUBDIR += pecl-fribidi
     SUBDIR += pecl-igbinary
-    SUBDIR += php5-bsdconv
+    SUBDIR += php-bsdconv
     SUBDIR += php56-iconv
     SUBDIR += php56-mbstring
     SUBDIR += php56-recode
@@ -165,10 +165,10 @@
     SUBDIR += rcctools
     SUBDIR += recode
     SUBDIR += rubygem-base32
-    SUBDIR += rubygem-bsdconv
     SUBDIR += rubygem-json-ld
     SUBDIR += rubygem-json-ld-preloaded
     SUBDIR += rubygem-po_to_json
+    SUBDIR += rubygem-ruby-bsdconv
     SUBDIR += rubygem-url_safe_base64
     SUBDIR += rubygem-xdr
     SUBDIR += shftool

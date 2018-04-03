@@ -1,12 +1,12 @@
 # Created by: Eric Turgeon <ericturgeon.bsd at gmail.com>
-# $FreeBSD: head/audio/lxmusic/Makefile 415909 2016-05-26 19:32:15Z olivierd $
+# $FreeBSD: head/audio/lxmusic/Makefile 466342 2018-04-03 12:45:01Z ericbsd $
 
 PORTNAME=	lxmusic
 PORTVERSION=	0.4.7
 CATEGORIES=	audio
 MASTER_SITES=	SF/lxde/LXMusic%20%28music%20player%29/LXMusic%20${PORTVERSION:R}.x/
 
-MAINTAINER=	ericturgeon@ghostbsd.org
+MAINTAINER=	ericbsd@FreeBSD.org
 COMMENT=	LXDE music player based on xmms2
 
 LICENSE=	MIT GPLv2

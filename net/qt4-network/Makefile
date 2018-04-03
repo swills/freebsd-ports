@@ -1,5 +1,5 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/net/qt4-network/Makefile 442740 2017-06-06 05:00:56Z tcberner $
+# $FreeBSD: head/net/qt4-network/Makefile 465899 2018-03-29 14:53:23Z mat $
 
 PORTNAME=	network
 DISTVERSION=	${QT4_VERSION}
@@ -12,6 +12,9 @@ COMMENT=	Qt network module
 
 LICENSE=	GPLv3 LGPL21 LGPL3 GFDL
 LICENSE_COMB=	dual
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	error: member access into incomplete type 'RSA' (aka 'rsa_st')
 
 RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 

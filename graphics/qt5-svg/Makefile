@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/qt5-svg/Makefile 407169 2016-01-24 18:10:14Z rakuco $
+# $FreeBSD: head/graphics/qt5-svg/Makefile 465911 2018-03-29 19:03:17Z tcberner $
 
 PORTNAME=	svg
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	qt5-
 

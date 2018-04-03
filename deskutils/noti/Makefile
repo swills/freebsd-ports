@@ -1,8 +1,8 @@
 # Created by: Hiroki Tagato <tagattie@yandex.com>
-# $FreeBSD: head/deskutils/noti/Makefile 458669 2018-01-10 18:12:31Z swills $
+# $FreeBSD: head/deskutils/noti/Makefile 466122 2018-04-01 06:34:12Z yuri $
 
 PORTNAME=	noti
-DISTVERSION=	3.0.0
+DISTVERSION=	3.1.0
 CATEGORIES=	deskutils
 
 MAINTAINER=	tagattie@yandex.com

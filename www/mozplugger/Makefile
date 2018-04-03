@@ -1,5 +1,5 @@
 # Created by: Loren M. Lang <loren@north-winds.org>
-# $FreeBSD: head/www/mozplugger/Makefile 465792 2018-03-28 10:11:10Z krion $
+# $FreeBSD: head/www/mozplugger/Makefile 465900 2018-03-29 15:02:05Z emaste $
 
 PORTNAME=	mozplugger
 PORTVERSION=	2.1.6
@@ -16,7 +16,6 @@ GNU_CONFIGURE=	yes
 USES=		desthack gmake webplugin:native
 USE_XORG=	x11 xt
 LLD_UNSAFE=	yes
-BINARY_ALIAS=	ld=ld.bfd
 
 WEBPLUGIN_FILES=mozplugger.so
 MAKE_ENV=	WEBPLUGINS_DIR="${WEBPLUGIN_DIR}"

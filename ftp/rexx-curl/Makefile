@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/ftp/rexx-curl/Makefile 421173 2016-08-31 17:00:56Z amdmi3 $
+# $FreeBSD: head/ftp/rexx-curl/Makefile 465964 2018-03-30 11:52:46Z krion $
 
 PORTNAME=	curl
 PORTVERSION=	2.0.1
@@ -25,6 +25,7 @@ USES=		gmake
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-rexx=regina
 USE_LDCONFIG=	yes
+LLD_UNSAFE=	yes
 
 DOCSDIR=	${PREFIX}/share/doc/rexx${PORTNAME}
 DATADIR=	${PREFIX}/share/rexx${PORTNAME}
