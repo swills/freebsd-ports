@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/qt5-qtdiag/Makefile 444046 2017-06-21 18:07:19Z tcberner $
+# $FreeBSD: head/sysutils/qt5-qtdiag/Makefile 465911 2018-03-29 19:03:17Z tcberner $
 
 PORTNAME=	qtdiag
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	sysutils
 PKGNAMEPREFIX=	qt5-
 

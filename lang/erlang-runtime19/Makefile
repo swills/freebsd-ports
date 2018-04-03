@@ -1,5 +1,5 @@
 # Created by: ruslan@shevchenko.kiev.ua
-# $FreeBSD: head/lang/erlang-runtime19/Makefile 465319 2018-03-22 22:25:32Z olgeni $
+# $FreeBSD: head/lang/erlang-runtime19/Makefile 466038 2018-03-31 11:22:24Z linimon $
 
 PORTNAME=	erlang
 PORTVERSION=	19.3.6.7
@@ -56,16 +56,18 @@ WX_DESC=	Enable WX application
 NATIVE_IMPLIES=	HIPE
 
 OPTIONS_DEFAULT=HIPE KQUEUE OPENSSL SCTP SMP THREADS DTRACE
-OPTIONS_EXCLUDE_DragonFly=	HIPE NATIVE SCTP
 
 .if !exists(/usr/sbin/dtrace)
 OPTIONS_EXCLUDE+=	DTRACE
 .endif
 
+OPTIONS_EXCLUDE_DragonFly=	HIPE NATIVE SCTP
 OPTIONS_EXCLUDE_FreeBSD_10=	DTRACE
-OPTIONS_EXCLUDE_i386=		DTRACE
 # ld(1) fails to link probes: missing __dtrace_erlang___* symbols
 OPTIONS_EXCLUDE_aarch64=	DTRACE
+OPTIONS_EXCLUDE_armv6=		DTRACE
+OPTIONS_EXCLUDE_armv7=		DTRACE
+OPTIONS_EXCLUDE_i386=		DTRACE
 
 OPENSSL_VARS=	BROKEN_SSL=openssl-devel
 

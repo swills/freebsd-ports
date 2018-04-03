@@ -1,7 +1,8 @@
-# $FreeBSD: head/comms/qt5-sensors/Makefile 458293 2018-01-06 21:30:31Z rakuco $
+# $FreeBSD: head/comms/qt5-sensors/Makefile 465911 2018-03-29 19:03:17Z tcberner $
 
 PORTNAME=	sensors
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	comms
 PKGNAMEPREFIX=	qt5-
 

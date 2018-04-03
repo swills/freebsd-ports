@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 465602 2018-03-26 15:10:49Z mfechner $
+# $FreeBSD: head/net/Makefile 466293 2018-04-03 09:36:28Z rene $
 #
 
     COMMENT = Networking tools
@@ -671,7 +671,6 @@
     SUBDIR += p5-Net-Ident
     SUBDIR += p5-Net-Ifconfig-Wrapper
     SUBDIR += p5-Net-Interface
-    SUBDIR += p5-Net-Jaiku
     SUBDIR += p5-Net-Jifty
     SUBDIR += p5-Net-LDAP-AutoDNs
     SUBDIR += p5-Net-LDAP-AutoServer
@@ -869,7 +868,6 @@
     SUBDIR += packetdrill
     SUBDIR += packter-agent
     SUBDIR += panoptis
-    SUBDIR += paris-traceroute
     SUBDIR += passlogd
     SUBDIR += pathneck
     SUBDIR += pbnc

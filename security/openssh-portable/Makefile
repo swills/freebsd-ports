@@ -1,5 +1,5 @@
 # Created by: dwcjr@inethouston.net
-# $FreeBSD: head/security/openssh-portable/Makefile 464727 2018-03-16 20:20:09Z bdrewery $
+# $FreeBSD: head/security/openssh-portable/Makefile 465899 2018-03-29 14:53:23Z mat $
 
 PORTNAME=	openssh
 DISTVERSION=	7.6p1
@@ -26,7 +26,8 @@ CONFIGURE_ARGS=		--prefix=${PREFIX} --with-md5-passwords \
 
 ETCOLD=			${PREFIX}/etc
 
-BROKEN_SSL_REASON_openssl-devel=	incomplete definition of type struct rsa_st
+BROKEN_SSL=	openssl-devel libressl
+BROKEN_SSL_REASON_openssl-devel=	error: OpenSSL >= 1.1.0 is not yet supported
 BROKEN_SSL_REASON_libressl=		random crashes with 7.6 PR 223000
 
 OPTIONS_DEFINE=		PAM TCP_WRAPPERS LIBEDIT BSM \

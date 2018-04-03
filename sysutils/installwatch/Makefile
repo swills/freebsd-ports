@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/sysutils/installwatch/Makefile 465804 2018-03-28 12:58:19Z emaste $
+# $FreeBSD: head/sysutils/installwatch/Makefile 465900 2018-03-29 15:02:05Z emaste $
 
 PORTNAME=	installwatch
 PORTVERSION=	0.6.3
@@ -14,9 +14,7 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USE_LDCONFIG=	yes
-# Requires directly-invoked linker to provide library search paths.
-LLD_UNSAFE=	yes
-BINARY_ALIAS=	ld=ld.bfd
+LLD_UNSAFE=	yes	# Needs linker to provide library search paths.
 
 PLIST_FILES=	bin/installwatch lib/installwatch.so
 PORTDOCS=	BUGS CHANGELOG README TODO

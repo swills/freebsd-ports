@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/bitcoin-daemon/Makefile 463186 2018-02-28 08:13:20Z ale $
+# $FreeBSD: head/net-p2p/bitcoin-daemon/Makefile 465909 2018-03-29 17:52:54Z vd $
 
 MASTERDIR=	${.CURDIR}/../bitcoin
 PKGNAMESUFFIX=	-daemon
@@ -10,8 +10,10 @@ SLAVE_PORT=	yes
 NOT_FOR_ARCHS=		powerpc powerpc64 sparc64
 NOT_FOR_ARCHS_REASON=	does not support big-endian architectures
 
-OPTIONS_DEFINE=		DEBUG HARDENING TESTS UPNP WALLET ZMQ
-OPTIONS_DEFAULT=	HARDENING UPNP WALLET
+OPTIONS_DEFINE=		DEBUG HARDENING TESTS UPNP ZMQ
+# WALLET_BDBMODERN is a choice for WALLET, introduced via OPTIONS_RADIO=WALLET
+# from ${MASTERDIR}/Makefile
+OPTIONS_DEFAULT=	HARDENING UPNP WALLET_BDBMODERN
 
 USERS=		bitcoin
 GROUPS=		bitcoin

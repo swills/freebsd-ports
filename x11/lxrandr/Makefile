@@ -1,12 +1,12 @@
 # Created by: Eric Turgeon <ericturgeon.bsd@gmail.com>
-# $FreeBSD: head/x11/lxrandr/Makefile 458755 2018-01-11 16:53:44Z danfe $
+# $FreeBSD: head/x11/lxrandr/Makefile 466342 2018-04-03 12:45:01Z ericbsd $
 
 PORTNAME=	lxrandr
 PORTVERSION=	0.3.1
 CATEGORIES=	x11
 MASTER_SITES=	SF/lxde/LXRandR%20%28monitor%20config%20tool%29/LXRandR%20${PORTVERSION:R}.x/
 
-MAINTAINER=	ericturgeon@ghostbsd.org
+MAINTAINER=	ericbsd@FreeBSD.org
 COMMENT=	Monitor configuration tool
 
 LICENSE=	GPLv2

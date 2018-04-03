@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 465556 2018-03-26 01:08:25Z yuri $
+# $FreeBSD: head/net-im/Makefile 466293 2018-04-03 09:36:28Z rene $
 #
 
     COMMENT = Instant messaging
@@ -6,7 +6,6 @@
     SUBDIR += centerim
     SUBDIR += centerim-devel
     SUBDIR += chattahoochie
-    SUBDIR += cjc
     SUBDIR += climm
     SUBDIR += coccinella
     SUBDIR += convey
@@ -74,6 +73,7 @@
     SUBDIR += linux-telegram-desktop
     SUBDIR += loudmouth
     SUBDIR += mastodon
+    SUBDIR += matterircd
     SUBDIR += mbpurple
     SUBDIR += mcabber
     SUBDIR += meanwhile
@@ -137,7 +137,6 @@
     SUBDIR += py-nbxmpp
     SUBDIR += py-punjab
     SUBDIR += py-python-telegram-bot
-    SUBDIR += py-pyxmpp
     SUBDIR += py-skype4py
     SUBDIR += py-slackclient
     SUBDIR += py-sleekxmpp

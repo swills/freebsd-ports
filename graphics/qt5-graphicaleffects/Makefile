@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/qt5-graphicaleffects/Makefile 422306 2016-09-17 09:46:54Z rakuco $
+# $FreeBSD: head/graphics/qt5-graphicaleffects/Makefile 465911 2018-03-29 19:03:17Z tcberner $
 
 PORTNAME=	graphicaleffects
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	qt5-
 

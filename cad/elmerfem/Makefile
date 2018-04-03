@@ -1,9 +1,8 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/cad/elmerfem/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/cad/elmerfem/Makefile 466257 2018-04-02 20:02:19Z adridg $
 
 PORTNAME=	elmerfem
-PORTVERSION=	8.3.20170519
-PORTREVISION=	2
+PORTVERSION=	8.3.20170524
 CATEGORIES=	cad science
 
 MAINTAINER=	ports@FreeBSD.org
@@ -16,13 +15,14 @@ LIB_DEPENDS=	libparpack.so:math/arpack-ng-mpich	\
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	ElmerCSC
-GH_TAGNAME=	c30fff2
+GH_TAGNAME=	release-8.3
 
-USES=		blaslapack:netlib cmake fortran gmake tcl
+USES=		blaslapack:netlib cmake:outsource fortran gmake tcl
 
 USE_LDCONFIG=	${PREFIX}/lib/elmersolver
 ALL_TARGET=	# empty
 
+CMAKE_ARGS+=	-DHAVE_INTTYPES_H=ON
 .if !defined(MAINTAINER_MODE)
 CMAKE_ARGS+=	-Wno-dev
 .endif

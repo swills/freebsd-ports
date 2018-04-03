@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/qt5-multimedia/Makefile 459518 2018-01-20 12:45:13Z adridg $
+# $FreeBSD: head/multimedia/qt5-multimedia/Makefile 465911 2018-03-29 19:03:17Z tcberner $
 
 PORTNAME=	multimedia
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	multimedia
 PKGNAMEPREFIX=	qt5-
 

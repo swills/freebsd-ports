@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/myrddin/Makefile 465725 2018-03-27 17:45:30Z tobik $
+# $FreeBSD: head/lang/myrddin/Makefile 465900 2018-03-29 15:02:05Z emaste $
 
 PORTNAME=	myrddin
 PORTVERSION=	0.2.0
@@ -20,9 +20,8 @@ CONFIGURE_ARGS=	--prefix "${PREFIX}"
 TEST_TARGET=	check
 WRKSRC=	${WRKDIR}/mc
 
-# Myrddin is LLD_UNSAFE:
 # ld: error: <internal>: section sh_addralign is not a power of 2
-BINARY_ALIAS=	ld=ld.bfd
+LLD_UNSAFE=	yes
 
 OPTIONS_DEFINE=	DEBUG VIM
 OPTIONS_DEFAULT=	VIM

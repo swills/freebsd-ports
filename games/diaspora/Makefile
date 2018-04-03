@@ -1,5 +1,5 @@
 # Created by: lightside <lightside@gmx.com>
-# $FreeBSD: head/games/diaspora/Makefile 461433 2018-02-10 21:09:29Z yuri $
+# $FreeBSD: head/games/diaspora/Makefile 466124 2018-04-01 07:30:42Z krion $
 
 PORTNAME=	diaspora
 PORTVERSION=	1.1.1
@@ -36,6 +36,7 @@ USE_CXXSTD=	gnu++98
 USE_GL=		gl glu
 USE_SDL=	sdl
 GNU_CONFIGURE=	yes
+LLD_UNSAFE=	yes
 
 WRKDIR_DIASPORA=${WRKDIR}/Diaspora_R1_Linux/Diaspora
 WRKSRC=		${WRKDIR_DIASPORA}/fs2_open

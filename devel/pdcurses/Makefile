@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/devel/pdcurses/Makefile 465804 2018-03-28 12:58:19Z emaste $
+# $FreeBSD: head/devel/pdcurses/Makefile 465900 2018-03-29 15:02:05Z emaste $
 
 PORTNAME=	pdcurses
 DISTVERSION=	3.5
@@ -18,9 +18,7 @@ USE_LDCONFIG=	yes
 USE_XORG=	x11 xext sm ice xt xaw xmu xpm
 GNU_CONFIGURE=	yes
 MAKE_JOBS_UNSAFE=yes
-# Requires directly-invoked linker to provide library search paths.
-LLD_UNSAFE=	yes
-BINARY_ALIAS=	ld=ld.bfd
+LLD_UNSAFE=	yes	# Needs linker to provide library search paths.
 
 WRKSRC_SUBDIR=	x11
 

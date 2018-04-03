@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/liboauth/Makefile 429971 2016-12-30 12:15:18Z hrs $
+# $FreeBSD: head/net/liboauth/Makefile 465899 2018-03-29 14:53:23Z mat $
 
 PORTNAME=	liboauth
 PORTVERSION=	1.0.3
@@ -11,6 +11,9 @@ COMMENT=	C library implementing the OAuth Core standard
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING.MIT
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	error: variable has incomplete type 'EVP_MD_CTX' (aka 'struct evp_md_ctx_st')
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 

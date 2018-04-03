@@ -1,5 +1,5 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/security/krb5-116/Makefile 460669 2018-02-02 06:50:24Z cy $
+# $FreeBSD: head/security/krb5-116/Makefile 465899 2018-03-29 14:53:23Z mat $
 
 PORTNAME=		krb5
 PORTVERSION=		1.16
@@ -17,6 +17,9 @@ MAINTAINER=		cy@FreeBSD.org
 COMMENT=		MIT implementation of RFC 4120 network authentication service
 
 LICENSE=		MIT
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	error: "This file is obsolete; please update your software."
 
 CONFLICTS=		heimdal-[0-9]* srp-[0-9]* krb5-11[34]-[0-9]* \
 			krb5-1.[0-9]* krb5-devel-*

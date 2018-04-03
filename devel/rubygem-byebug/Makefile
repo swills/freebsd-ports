@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv at kvedulv.de>
-# $FreeBSD: head/devel/rubygem-byebug/Makefile 465309 2018-03-22 19:53:31Z sunpoet $
+# $FreeBSD: head/devel/rubygem-byebug/Makefile 466091 2018-03-31 22:47:09Z sunpoet $
 
 PORTNAME=	byebug
-PORTVERSION=	10.0.1
+PORTVERSION=	10.0.2
 CATEGORIES=	devel ruby
 MASTER_SITES=	RG
 

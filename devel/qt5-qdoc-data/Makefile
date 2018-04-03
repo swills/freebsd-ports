@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/qt5-qdoc-data/Makefile 422306 2016-09-17 09:46:54Z rakuco $
+# $FreeBSD: head/devel/qt5-qdoc-data/Makefile 465911 2018-03-29 19:03:17Z tcberner $
 
 # While this port is part of the Qt distribution itself, we do not set
 # QT_DIST=yes because it brings in several patches and targets that are not
@@ -6,6 +6,7 @@
 
 PORTNAME=	qdoc-data
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel textproc
 MASTER_SITES=	QT/official_releases/qt/${QT5_VERSION:R}/${QT5_VERSION}/submodules/
 PKGNAMEPREFIX=	qt5-

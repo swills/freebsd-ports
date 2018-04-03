@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/supertux2/Makefile 465107 2018-03-20 19:07:35Z adridg $
+# $FreeBSD: head/games/supertux2/Makefile 466233 2018-04-02 16:11:12Z krion $
 
 PORTNAME=	supertux
 PORTVERSION=	0.4.0
@@ -17,6 +17,7 @@ LIB_DEPENDS=	libphysfs.so:devel/physfs \
 
 BROKEN_FreeBSD_10=	does not build on 10.x
 
+LLD_UNSAFE=	yes
 USE_SDL=	sdl2 image2
 USE_GL=		glew
 USES=		cmake:outsource compiler:c++11-lib dos2unix iconv \

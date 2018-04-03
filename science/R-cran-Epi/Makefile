@@ -1,9 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/science/R-cran-Epi/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/R-cran-Epi/Makefile 466216 2018-04-02 09:54:34Z tota $
 
 PORTNAME=	Epi
-PORTVERSION=	2.19
-PORTREVISION=	1
+PORTVERSION=	2.26
 CATEGORIES=	science
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

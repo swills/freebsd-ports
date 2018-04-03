@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/qt5-linguisttools/Makefile 408682 2016-02-11 10:34:38Z rakuco $
+# $FreeBSD: head/devel/qt5-linguisttools/Makefile 465911 2018-03-29 19:03:17Z tcberner $
 
 PORTNAME=	linguisttools
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	qt5-
 

@@ -1,11 +1,11 @@
 # Created by: Herve Quiroz <hq@FreeBSD.org>
-# $FreeBSD: head/www/servlet-api/Makefile 348687 2014-03-20 15:04:11Z ehaupt $
+# $FreeBSD: head/www/servlet-api/Makefile 466247 2018-04-02 18:42:34Z gerald $
 
 PORTNAME=	servlet-api
 PORTVERSION=	2.5
 PORTREVISION=	3
 CATEGORIES=	www java
-MASTER_SITES=	http://mirrors.ibiblio.org/pub/mirrors/maven2/javax/servlet/servlet-api/2.5/ \
+MASTER_SITES=	http://maven.ibiblio.org/maven2/javax/servlet/servlet-api/2.5/ \
 		http://repo1.maven.org/maven2/javax/servlet/servlet-api/2.5/
 EXTRACT_SUFX=	.jar
 EXTRACT_ONLY=	# empty

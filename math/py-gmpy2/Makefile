@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/math/py-gmpy2/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/py-gmpy2/Makefile 465933 2018-03-29 22:02:53Z yuri $
 
 PORTNAME=	gmpy2
 PORTVERSION=	2.0.8
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libgmp.so:math/gmp \
 		libmpc.so:math/mpc \
 		libmpfr.so:math/mpfr
 
-USES=		python:2.7 zip
+USES=		python zip
 USE_PYTHON=	distutils autoplist
 
 post-install:

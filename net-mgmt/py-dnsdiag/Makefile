@@ -1,8 +1,8 @@
 # Created by: Babak Farrokhi <farrokhi@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/py-dnsdiag/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net-mgmt/py-dnsdiag/Makefile 466349 2018-04-03 13:37:41Z farrokhi $
 
 PORTNAME=	dnsdiag
-PORTVERSION=	1.6.3
+PORTVERSION=	1.6.4
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

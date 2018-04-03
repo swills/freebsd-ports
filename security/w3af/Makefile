@@ -1,9 +1,9 @@
 # Created by: Stefan Esser <se@FreeBSD.org>
-# $FreeBSD: head/security/w3af/Makefile 464822 2018-03-17 14:43:34Z dbaio $
+# $FreeBSD: head/security/w3af/Makefile 466042 2018-03-31 11:35:58Z dbaio $
 
 PORTNAME=	w3af
 PORTVERSION=	1.6.49
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security python www
 
 MAINTAINER=	dbaio@FreeBSD.org
@@ -62,7 +62,7 @@ OPTIONS_SUB=	yes
 
 GUI_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pygraphviz>0:graphics/py-pygraphviz@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}gtksourceview>=2.10.1:x11-toolkits/py-gtksourceview@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}xdot>=0.7:x11/py-xdot@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}xdot-06=0.6:x11/py-xdot06@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}webkitgtk>=1.1.8:www/py-webkitgtk@${FLAVOR}
 
 GUI_USE=	GNOME=pygtk2

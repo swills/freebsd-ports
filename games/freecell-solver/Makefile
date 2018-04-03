@@ -1,8 +1,8 @@
 # Created by: Ying-Chieh Liao <ijliao@FreeBSD.org>
-# $FreeBSD: head/games/freecell-solver/Makefile 461839 2018-02-14 21:24:30Z danilo $
+# $FreeBSD: head/games/freecell-solver/Makefile 465997 2018-03-30 19:40:27Z danilo $
 
 PORTNAME=	freecell-solver
-PORTVERSION=	4.16.0
+PORTVERSION=	4.18.0
 CATEGORIES=	games
 MASTER_SITES=	http://fc-solve.shlomifish.org/downloads/fc-solve/
 
@@ -23,7 +23,8 @@ USES=		cmake:outsource compiler:c11 perl5 python:3.4+ shebangfix tar:xz
 USE_PERL5=	build
 SHEBANG_FILES=	board_gen/make_pysol_freecell_board.py \
 		board_gen/transpose-freecell-board.py \
-		board_gen/find-freecell-deal-index.py
+		board_gen/find-freecell-deal-index.py \
+		board_gen/fc_solve_find_index_s2ints.py
 CMAKE_ARGS=	-DFCS_WITH_TEST_SUITE:BOOL=OFF
 USE_LDCONFIG=	yes
 

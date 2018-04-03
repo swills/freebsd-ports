@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/keeperrl/Makefile 462871 2018-02-24 22:35:18Z rene $
+# $FreeBSD: head/games/keeperrl/Makefile 466137 2018-04-01 09:39:52Z krion $
 
 PORTNAME=	keeperrl
 PORTVERSION=	0.0.${ALPHA_VERSION}
@@ -29,6 +29,7 @@ USE_SDL=	sdl2 image2
 ALPHA_VERSION=	23
 NO_CONFIGURE=	yes
 LIBS+=		-lexecinfo
+LLD_UNSAFE=	yes
 MAKE_ARGS=	DATA_DIR="${DATADIR}" GCC="${CXX}" \
 		LDFLAGS="${LDFLAGS}" RELEASE=true
 

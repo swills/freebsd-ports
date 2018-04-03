@@ -1,5 +1,5 @@
 # Created by: Hirohisa Yamaguchi <umq@ueo.co.jp>
-# $FreeBSD: head/mail/opendkim/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/mail/opendkim/Makefile 465899 2018-03-29 14:53:23Z mat $
 
 PORTNAME=	opendkim
 PORTVERSION=	2.10.3
@@ -19,6 +19,9 @@ LICENSE_FILE_SENDMAIL=	${WRKSRC}/LICENSE.Sendmail
 LICENSE_GROUPS_SENDMAIL=FSF OSI
 LICENSE_NAME_SENDMAIL=	Sendmail Open Source License
 LICENSE_PERMS_SENDMAIL=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	checking for library containing SSL_library_init... no
 
 GNU_CONFIGURE=	yes
 NO_OPTIONS_SORT=yes

@@ -1,10 +1,9 @@
 # Created by: KIMURA Yasuhiro <yasu@utahime.org>
-# $FreeBSD: head/editors/with-editor/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/editors/with-editor/Makefile 466265 2018-04-02 21:19:48Z jrm $
 
 PORTNAME=	with-editor
-PORTVERSION=	2.7.1
+PORTVERSION=	2.7.2
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
 CATEGORIES=	editors elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
@@ -12,7 +11,7 @@ MAINTAINER=	yasu@utahime.org
 COMMENT=	Use the Emacsclient as the $$EDITOR of child processes
 
 LICENSE=	GPLv3+
-LICENSE_FILE=	${WRKSRC}/COPYING
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		emacs gmake makeinfo
 USE_GITHUB=	yes

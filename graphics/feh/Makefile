@@ -1,5 +1,5 @@
 # Created by: Jeremy Norris <ishmael127@home.com>
-# $FreeBSD: head/graphics/feh/Makefile 465190 2018-03-21 16:22:50Z zeising $
+# $FreeBSD: head/graphics/feh/Makefile 466292 2018-04-03 09:33:29Z amdmi3 $
 
 PORTNAME=	feh
 PORTVERSION=	2.25.1
@@ -17,13 +17,13 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libImlib2.so:graphics/imlib2 \
 		libpng.so:graphics/png
 
+USES=		cpe desktop-file-utils gmake localbase:ldflags \
+		perl5 shebangfix tar:bzip2
+SHEBANG_FILES=	cam/feh-cam
 USE_XORG=	x11 xt xinerama
-USES=		cpe desktop-file-utils gmake perl5 shebangfix tar:bzip2
-CPE_VENDOR=	daniel_friesel
 USE_PERL5=	run
+CPE_VENDOR=	daniel_friesel
 
-CFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 MAKE_ENV+=	LDFLAGS="${LDFLAGS}" verscmp=0
 
 OPTIONS_DEFINE=	CAM DOCS EXAMPLES EXIF
@@ -32,18 +32,10 @@ EXIF_DESC=	Support EXIF tags
 OPTIONS_DEFAULT=CAM EXIF
 OPTIONS_SUB=	yes
 
+CAM_MAKE_ENV=	cam=1
+
 EXIF_LIB_DEPENDS=	libexif.so:graphics/libexif
-
-.include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MCAM}
-MAKE_ENV+=	cam=1
-SHEBANG_FILES=	${WRKSRC}/cam/feh-cam
-.endif
-
-.if ${PORT_OPTIONS:MEXIF}
-MAKE_ENV+=	exif=1
-.endif
+EXIF_MAKE_ENV=	exif=1
 
 post-patch-DOCS-off:
 	@${REINPLACE_CMD} -e 's|install-doc||' \

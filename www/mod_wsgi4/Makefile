@@ -1,19 +1,15 @@
-# $FreeBSD: head/www/mod_wsgi4/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_wsgi4/Makefile 466160 2018-04-01 14:24:09Z wen $
 
 PORTNAME=	mod_wsgi
-DISTVERSION=	4.5.24
-PORTREVISION=	1
+DISTVERSION=	4.6.3
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}${PYTHON_PKGNAMEPREFIX}
-PKGNAMESUFFIX=	4
 
 MAINTAINER=	douglas@douglasthrift.net
 COMMENT=	Python WSGI adapter module for Apache
 
 LICENSE=	APACHE20
-
-CONFLICTS_INSTALL=${PKGNAMEPREFIX}mod_wsgi3.* mod_wsgi3.*
 
 USES=		apache:2.2+ gettext python
 USE_PYTHON=	flavors

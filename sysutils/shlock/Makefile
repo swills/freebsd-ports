@@ -1,12 +1,12 @@
-# $FreeBSD: head/sysutils/shlock/Makefile 428654 2016-12-16 08:36:10Z jhale $
+# $FreeBSD: head/sysutils/shlock/Makefile 466085 2018-03-31 22:46:37Z sunpoet $
 
 PORTNAME=	shlock
-PORTVERSION=	2.6.1
+PORTVERSION=	2.6.2
 CATEGORIES=	sysutils
 MASTER_SITES=	ISC/inn
 DISTNAME=	inn-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Create lock files for use in shell scripts
 
 LICENSE=	ISCL

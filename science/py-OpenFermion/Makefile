@@ -1,10 +1,8 @@
-# $FreeBSD: head/science/py-OpenFermion/Makefile 465640 2018-03-26 21:48:27Z yuri $
+# $FreeBSD: head/science/py-OpenFermion/Makefile 466012 2018-03-30 23:18:19Z yuri $
 
 PORTNAME=	OpenFermion
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.4-29
-DISTVERSIONSUFFIX=	-g781d0a7
-PORTREVISION=	1
+DISTVERSION=	0.6
 CATEGORIES=	science python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -20,7 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cvxopt>0:math/py-cvxopt@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}h5py>0:science/py-h5py@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}matplotlib>0:math/py-matplotlib@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}networkx>0:math/py-networkx@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}scipy>=0.18.0:science/py-scipy@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}scipy>0.18.0:science/py-scipy@${FLAVOR} \
 		${PYNUMPY}
 
 USES=		python

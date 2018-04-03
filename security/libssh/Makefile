@@ -1,5 +1,5 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/security/libssh/Makefile 439836 2017-04-30 19:05:00Z johans $
+# $FreeBSD: head/security/libssh/Makefile 465899 2018-03-29 14:53:23Z mat $
 
 PORTNAME=	libssh
 DISTVERSION=	0.7.5
@@ -11,6 +11,9 @@ COMMENT=	Library implementing the SSH1 and SSH2 protocol
 
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	error: variable has incomplete type 'EVP_MD_CTX' (aka 'struct evp_md_ctx_st')
 
 OPTIONS_DEFINE=	SSH1 STATIC
 OPTIONS_RADIO=	CRYPTO

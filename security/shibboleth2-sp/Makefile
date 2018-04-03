@@ -1,5 +1,5 @@
 # Created by: Janos Mohacsi <janos.mohacsi@bsd.hu>
-# $FreeBSD: head/security/shibboleth2-sp/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/security/shibboleth2-sp/Makefile 465990 2018-03-30 18:21:01Z ohauer $
 
 PORTNAME=	shibboleth-sp
 PORTVERSION=	2.6.1
@@ -45,7 +45,7 @@ MEMCACHED_DESC=	Store sessions in memcached
 FASTCGI_DESC=	FastCGI protocol support, e.g. for NGINX
 APACHE_DESC=	Build Apache module
 
-APACHE_USE=	apache=22+
+APACHE_USES=	apache:2.2+
 
 ODBC_CONFIGURE_ENABLE=	odbc
 ODBC_LIB_DEPENDS=	libodbc.so:databases/unixODBC
@@ -73,7 +73,7 @@ CONFIGURE_ARGS+=	--disable-doxygen-doc
 .include <bsd.port.pre.mk>
 
 .if ${PORT_OPTIONS:MAPACHE}
-.if "${APACHE_VERSION}" == 22
+.if "${APACHE_VERSION}" == 2.2
 CONFIGURE_ARGS+=--disable-apache-24 --enable-apache-22 --with-apxs22=${APXS}
 PLIST_SUB+=	WITH_APACHE_22=""
 PLIST_SUB+=	WITH_APACHE_24="@comment "

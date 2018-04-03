@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/qt5-imageformats/Makefile 458312 2018-01-07 10:08:50Z tcberner $
+# $FreeBSD: head/graphics/qt5-imageformats/Makefile 465911 2018-03-29 19:03:17Z tcberner $
 
 PORTNAME=	imageformats
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	qt5-
 

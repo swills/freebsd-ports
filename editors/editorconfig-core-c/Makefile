@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/editors/editorconfig-core-c/Makefile 465825 2018-03-28 17:13:41Z knu $
+# $FreeBSD: head/editors/editorconfig-core-c/Makefile 466209 2018-04-02 08:35:11Z knu $
 
 PORTNAME=	editorconfig-core-c
 PORTVERSION=	0.12.2
@@ -9,6 +9,7 @@ CATEGORIES=	editors
 MAINTAINER=	knu@FreeBSD.org
 COMMENT=	EditorConfig core library and executable written in C
 
+BUILD_DEPENDS=	doxygen:devel/doxygen
 LIB_DEPENDS=	libpcre.so:devel/pcre
 
 USES=		cmake

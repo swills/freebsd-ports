@@ -1,5 +1,5 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/lang/rexx-imc/Makefile 465881 2018-03-29 10:40:29Z krion $
+# $FreeBSD: head/lang/rexx-imc/Makefile 465900 2018-03-29 15:02:05Z emaste $
 
 PORTNAME=	rexx-imc
 PORTVERSION=	1.76
@@ -25,7 +25,6 @@ CONFIGURE_ARGS=		o all
 NO_BUILD=		yes
 USE_LDCONFIG=		yes
 LLD_UNSAFE=		yes
-BINARY_ALIAS=		ld=ld.bfd
 
 DOCFILES=	rexx.info rexx.ref rexx.summary rexx.tech
 RMEFILES=	README README.Y2K README.bugreport README.docs \

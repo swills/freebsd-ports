@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/nghttp2/Makefile 463239 2018-02-28 15:52:36Z sunpoet $
+# $FreeBSD: head/www/nghttp2/Makefile 465899 2018-03-29 14:53:23Z mat $
 
 PORTNAME=	nghttp2
 PORTVERSION=	1.31.0
@@ -11,6 +11,9 @@ COMMENT=	HTTP/2.0 C Library
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	error: use of undeclared identifier 'SSL_get0_next_proto_negotiated'
 
 BUILD_DEPENDS=	libnghttp2>=${PORTVERSION}:www/libnghttp2
 LIB_DEPENDS=	libnghttp2.so:www/libnghttp2

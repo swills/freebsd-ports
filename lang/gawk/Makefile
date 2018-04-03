@@ -1,5 +1,5 @@
 # Created by: Andreas Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/lang/gawk/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/lang/gawk/Makefile 466290 2018-04-03 09:03:29Z amdmi3 $
 
 PORTNAME=	gawk
 PORTVERSION=	4.1.4
@@ -9,6 +9,9 @@ MASTER_SITES=	GNU
 
 MAINTAINER=	johans@FreeBSD.org
 COMMENT=	GNU version of Awk
+
+LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libsigsegv.so:devel/libsigsegv
 
@@ -28,6 +31,7 @@ CONFIGURE_ARGS=	${ICONV_CONFIGURE_ARG} \
 		--with-libintl-prefix=${LOCALBASE} \
 		AWK=${AWK}
 INSTALL_TARGET=	install-strip
+TEST_TARGET=	check
 
 PLIST_SUB+=	VERSION=${PORTVERSION}
 

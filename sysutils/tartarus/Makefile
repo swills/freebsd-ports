@@ -1,9 +1,9 @@
 # Created by: Juraj Lutter <otis@sk.FreeBSD.org>
-# $FreeBSD: head/sysutils/tartarus/Makefile 432428 2017-01-25 16:09:44Z fjoe $
+# $FreeBSD: head/sysutils/tartarus/Makefile 465991 2018-03-30 18:21:32Z fjoe $
 
 PORTNAME=	tartarus
 PORTVERSION=	0.9.8
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	sysutils
 MASTER_SITES=	http://wertarbyte.de/tartarus/ \
 		http://ftp.wilbury.sk/pub/FreeBSD/local/distfiles/

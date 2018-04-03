@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/ports-mgmt/synth/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/ports-mgmt/synth/Makefile 466342 2018-04-03 12:45:01Z ericbsd $
 
 PORTNAME=	synth
 DISTVERSIONPREFIX=	v
@@ -7,7 +7,7 @@ DISTVERSION=	2.02
 PORTREVISION=	1
 CATEGORIES=	ports-mgmt
 
-MAINTAINER=	ericturgeon.bsd@gmail.com
+MAINTAINER=	ericbsd@FreeBSD.org
 COMMENT=	Custom package repository builder for FreeBSD and DragonFly
 
 LICENSE=	ISCL

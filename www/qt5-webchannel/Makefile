@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/qt5-webchannel/Makefile 458293 2018-01-06 21:30:31Z rakuco $
+# $FreeBSD: head/www/qt5-webchannel/Makefile 465911 2018-03-29 19:03:17Z tcberner $
 
 PORTNAME=	webchannel
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	www
 PKGNAMEPREFIX=	qt5-
 
@@ -15,6 +16,6 @@ USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 
 # The default EXTRACT_AFTER_ARGS value excludes examples/ from the extracted
 # tarball, which we need during the build.
-EXTRACT_AFTER_ARGS=	# empty
+EXTRACT_AFTER_ARGS=	--no-same-owner --no-same-permissions
 
 .include <bsd.port.mk>

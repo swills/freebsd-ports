@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/powerpc64-gcc/Makefile 465416 2018-03-23 23:53:52Z jhb $
+# $FreeBSD: head/devel/powerpc64-gcc/Makefile 465987 2018-03-30 17:25:11Z jhb $
 
 PORTNAME=	gcc
 PORTVERSION=	6.3.0
@@ -18,8 +18,6 @@ LIB_DEPENDS=	libgmp.so:math/gmp \
 		libmpc.so:math/mpc
 BUILD_DEPENDS=	${BU_PREFIX}-as:devel/${PKGNAMEPREFIX}binutils
 RUN_DEPENDS=	${BU_PREFIX}-as:devel/${PKGNAMEPREFIX}binutils
-
-CONFIGURE_ENV=	gcc_gxx_include_dir="/usr/include/c++/v1"
 
 USES=	gmake iconv libtool tar:bzip2 makeinfo compiler
 PLIST_SUB=	TARGETARCH=${PKGNAMEPREFIX:C/-//g} \

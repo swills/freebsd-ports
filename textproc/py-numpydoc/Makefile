@@ -1,8 +1,8 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/textproc/py-numpydoc/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-numpydoc/Makefile 466146 2018-04-01 12:36:59Z cpm $
 
 PORTNAME=	numpydoc
-PORTVERSION=	0.7.0
+PORTVERSION=	0.8.0
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

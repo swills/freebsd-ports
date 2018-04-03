@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/py-flake8-builtins/Makefile 465108 2018-03-20 19:23:32Z amdmi3 $
+# $FreeBSD: head/devel/py-flake8-builtins/Makefile 466351 2018-04-03 13:45:15Z amdmi3 $
 
 PORTNAME=	flake8-builtins
-PORTVERSION=	1.1.1
+PORTVERSION=	1.2.2
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

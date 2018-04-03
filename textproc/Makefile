@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 465806 2018-03-28 13:09:43Z dvl $
+# $FreeBSD: head/textproc/Makefile 466176 2018-04-01 18:50:52Z kwm $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -176,6 +176,7 @@
     SUBDIR += en-hunspell
     SUBDIR += en-mythes
     SUBDIR += enchant
+    SUBDIR += enchant2
     SUBDIR += eo-aspell
     SUBDIR += eqe
     SUBDIR += erlang-edown
@@ -1509,7 +1510,6 @@
     SUBDIR += rubygem-escape_utils-rails4
     SUBDIR += rubygem-ezamar
     SUBDIR += rubygem-fast_xs
-    SUBDIR += rubygem-fast_xs073
     SUBDIR += rubygem-ferret
     SUBDIR += rubygem-fog-xml
     SUBDIR += rubygem-gemoji

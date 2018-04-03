@@ -1,8 +1,8 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/sysutils/debootstrap/Makefile 455784 2017-12-08 15:46:28Z lifanov $
+# $FreeBSD: head/sysutils/debootstrap/Makefile 466232 2018-04-02 15:36:31Z lifanov $
 
 PORTNAME=	debootstrap
-PORTVERSION=	1.0.93
+PORTVERSION=	1.0.95
 CATEGORIES=	sysutils
 MASTER_SITES=	DEBIAN/pool/main/d/${PORTNAME}
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/debian/copyright
 
 RUN_DEPENDS=	wget:ftp/wget
 
-WRKSRC=		${WRKDIR}/${PORTNAME}
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 NO_BUILD=	yes
 NO_ARCH=	yes
 USES=		gmake perl5

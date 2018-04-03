@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/smlnj/Makefile 465878 2018-03-29 10:33:01Z krion $
+# $FreeBSD: head/lang/smlnj/Makefile 465900 2018-03-29 15:02:05Z emaste $
 
 PORTNAME=	smlnj
 PORTVERSION=	110.77
@@ -20,7 +20,6 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 ONLY_FOR_ARCHS=	i386 amd64
 LLD_UNSAFE=	yes
-BINARY_ALIAS=	ld=ld.bfd
 
 NO_WRKSUBDIR=	yes
 

@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/qt5-scripttools/Makefile 372179 2014-11-05 09:39:21Z rakuco $
+# $FreeBSD: head/devel/qt5-scripttools/Makefile 465911 2018-03-29 19:03:17Z tcberner $
 
 PORTNAME=	scripttools
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	qt5-
 

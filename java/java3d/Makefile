@@ -1,5 +1,5 @@
 # Created by: nork@FreeBSD.org
-# $FreeBSD: head/java/java3d/Makefile 465879 2018-03-29 10:33:45Z krion $
+# $FreeBSD: head/java/java3d/Makefile 465900 2018-03-29 15:02:05Z emaste $
 
 PORTNAME=	java3d
 PORTVERSION=	1.5.2
@@ -24,7 +24,6 @@ JAVA_VERSION=	1.6+
 JAVA_VENDOR=	openjdk
 USE_ANT=	yes
 LLD_UNSAFE=	yes
-BINARY_ALIAS=	ld=ld.bfd
 
 PLIST_SUB+=	JAVA_HOME=${JAVA_HOME:S/^${PREFIX}\///} ARCH=${ARCH}
 

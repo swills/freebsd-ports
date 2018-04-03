@@ -1,9 +1,8 @@
 # Created by: Babak Farrokhi <farrokhi@FreeBSD.org>
-# $FreeBSD: head/sysutils/isomaster/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/sysutils/isomaster/Makefile 465975 2018-03-30 14:35:22Z danilo $
 
 PORTNAME=	isomaster
-PORTVERSION=	1.3.13
-PORTREVISION=	1
+PORTVERSION=	1.3.14
 CATEGORIES=	sysutils
 MASTER_SITES=	http://littlesvr.ca/isomaster/releases/
 
@@ -12,11 +11,13 @@ COMMENT=	GTK2 (bootable) CD ISO Image editor
 
 LICENSE=	GPLv2
 
-LIB_DEPENDS=	libiniparser.so:devel/iniparser
+LIB_DEPENDS=	libiniparser.so:devel/iniparser \
+		libfontconfig.so:x11-fonts/fontconfig \
+		libfreetype.so:print/freetype2
 RUN_DEPENDS=	xdg-open:devel/xdg-utils
 
 USES=		desktop-file-utils gettext gmake pkgconfig tar:bzip2
-USE_GNOME=	gtk20
+USE_GNOME=	cairo gdkpixbuf2 gtk20
 MAKE_ENV=	DEFAULT_VIEWER="xdg-open" USE_SYSTEM_INIPARSER=1
 
 CPPFLAGS+=	-I${LOCALBASE}/include -Diniparser_setstr=iniparser_set

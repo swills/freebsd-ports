@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/ga/Makefile 465545 2018-03-25 20:48:20Z yuri $
+# $FreeBSD: head/devel/ga/Makefile 466064 2018-03-31 16:38:06Z yuri $
 
 PORTNAME=	ga
 DISTVERSIONPREFIX=	v
-DISTVERSION=	5.6.4
+DISTVERSION=	5.7
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -21,7 +21,7 @@ USES=		autoreconf fortran gmake libtool localbase
 USE_GITHUB=	yes
 GH_ACCOUNT=	GlobalArrays
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--enable-peigs --enable-shared --disable-static
+CONFIGURE_ARGS=	--enable-peigs --enable-shared --disable-static --with-blas4
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
 

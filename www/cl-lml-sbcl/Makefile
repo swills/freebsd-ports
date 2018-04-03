@@ -1,9 +1,9 @@
 # Created by: Henrik Motakef <henrik.motakef@web.de>
-# $FreeBSD: head/www/cl-lml-sbcl/Makefile 463591 2018-03-04 17:48:28Z krion $
+# $FreeBSD: head/www/cl-lml-sbcl/Makefile 466070 2018-03-31 17:50:55Z krion $
 
 PORTNAME=	lml
 PORTVERSION=	2.5.7
-PORTREVISION=	20
+PORTREVISION=	21
 CATEGORIES=	www textproc
 PKGNAMEPREFIX=	cl-
 DISTFILES=	# none

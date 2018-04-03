@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 465743 2018-03-27 19:13:11Z dvl $
+# $FreeBSD: head/sysutils/Makefile 465992 2018-03-30 18:25:14Z jrm $
 #
 
     COMMENT = System utilities
@@ -588,6 +588,7 @@
     SUBDIR += lmon
     SUBDIR += lnav
     SUBDIR += lockfile-progs
+    SUBDIR += log-courier
     SUBDIR += log_analysis
     SUBDIR += logrotate
     SUBDIR += logstalgia

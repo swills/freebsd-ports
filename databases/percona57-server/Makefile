@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/databases/percona57-server/Makefile 458861 2018-01-12 17:53:30Z feld $
+# $FreeBSD: head/databases/percona57-server/Makefile 466073 2018-03-31 18:26:51Z flo $
 
 PORTNAME?=	percona
-DISTVERSION=	5.7.20-18
+DISTVERSION=	5.7.21-20
 PORTREVISION?=	0
 CATEGORIES=	databases ipv6
 MASTER_SITES=	http://www.percona.com/downloads/Percona-Server-5.7/Percona-Server-${DISTVERSION}/source/tarball/:percona \
@@ -138,7 +138,7 @@ post-patch:
 	@${REINPLACE_CMD} 's/*.1/${MANPAGES}/' ${WRKSRC}/man/CMakeLists.txt
 	# issue 220865: MySQL developers forgot that FreeBSD != Linux
 	@${REINPLACE_CMD} -e 's|%%FREEBSD_LOCAL_LIB%%|${LOCALBASE}/lib|g' \
-	${WRKSRC}/cmake/plugin.cmake
+	${WRKSRC}/configure.cmake
 
 .include <bsd.port.pre.mk>
 

@@ -1,9 +1,9 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/net/phpldapadmin/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/net/phpldapadmin/Makefile 466259 2018-04-02 20:11:58Z matthew $
 
 PORTNAME=	phpldapadmin
 PORTVERSION=	1.2.3
-PORTREVISION=	7
+PORTREVISION=	8
 PORTEPOCH=	1
 CATEGORIES=	net www
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-php5/${PORTVERSION}
@@ -14,14 +14,12 @@ COMMENT=	PHP application to administer LDAP over the web
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cpe tar:tgz
+USES=		cpe php:web tar:tgz
 CPE_VENDOR=	deon_george
 
 NO_ARCH=	yes
 NO_BUILD=	yes
 USE_PHP=	gettext ldap openssl pcre session xml iconv hash
-
-WANT_PHP_WEB=	yes
 
 GROUPS?=	${WWWGRP}
 CFGDIR=		config

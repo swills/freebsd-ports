@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/invada-studio-plugins-lv2/Makefile 453958 2017-11-11 08:11:36Z yuri $
+# $FreeBSD: head/audio/invada-studio-plugins-lv2/Makefile 466075 2018-03-31 18:34:51Z krion $
 
 PORTNAME=	invada-studio-plugins
 DISTVERSIONPREFIX=	lv2_
@@ -20,6 +20,7 @@ LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 
 USES=		gmake localbase pkgconfig tar:tgz
 USE_GNOME=	cairo gdkpixbuf2 glib20 gtk20
+LLD_UNSAFE=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}${PKGNAMESUFFIX}-${PORTVERSION}
 
 post-install:

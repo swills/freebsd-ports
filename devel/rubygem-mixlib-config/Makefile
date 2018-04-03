@@ -1,8 +1,8 @@
 # Created by: renchap@cocoa-x.com
-# $FreeBSD: head/devel/rubygem-mixlib-config/Makefile 446975 2017-07-31 15:50:13Z sunpoet $
+# $FreeBSD: head/devel/rubygem-mixlib-config/Makefile 466328 2018-04-03 09:52:17Z sunpoet $
 
 PORTNAME=	mixlib-config
-PORTVERSION=	2.2.4
+PORTVERSION=	2.2.5
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

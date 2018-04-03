@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/phantomjs/Makefile 462532 2018-02-21 16:24:53Z antoine $
+# $FreeBSD: head/lang/phantomjs/Makefile 465899 2018-03-29 14:53:23Z mat $
 
 PORTNAME=	phantomjs
 PORTVERSION=	2.1.1
@@ -14,6 +14,8 @@ BROKEN_powerpc64=	fails to build: g++48: not found
 BROKEN_sparc64=		does not link on sparc64
 NOT_FOR_ARCHS=		armv6 armv7
 NOT_FOR_ARCHS_REASON=	Platform.h: Not supported ARM architecture
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	error: member access into incomplete type 'X509' (aka 'x509_st')
 
 BUILD_DEPENDS=	bash:shells/bash
 LIB_DEPENDS=	libfreetype.so:print/freetype2 \

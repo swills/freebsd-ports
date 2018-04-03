@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/net-mgmt/ng_ipacct/Makefile 464877 2018-03-18 06:04:32Z linimon $
+# $FreeBSD: head/net-mgmt/ng_ipacct/Makefile 466151 2018-04-01 13:21:57Z vsevolod $
 
 PORTNAME=	ng_ipacct
-PORTVERSION=	20150304
+PORTVERSION=	20180401
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	vsevolod@FreeBSD.org
@@ -19,7 +19,8 @@ USES=		kmod uidfix
 
 GH_ACCOUNT=	vstakhov
 
-MAKE_ENV=	BINDIR="${PREFIX}/sbin"
+MAKE_ARGS+=	OSVERSION=${OSVERSION}
+MAKE_ENV+=	BINDIR="${PREFIX}/sbin"
 
 USE_RC_SUBR=	ng_ipacct
 SUB_FILES=	pkg-message
@@ -33,5 +34,9 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/ng_ipacct/ng_ipacct.h ${STAGEDIR}${PREFIX}/include/netgraph
 	${INSTALL_DATA} ${FILESDIR}/ng_ipacct.conf \
 		${STAGEDIR}${PREFIX}/etc/ng_ipacct.conf.sample
+
+OPTIONS_DEFINE=	VIMAGE
+VIMAGE_DESC=	VIMAGE virtual networking support
+VIMAGE_CFLAGS=	-DVIMAGE
 
 .include <bsd.port.mk>

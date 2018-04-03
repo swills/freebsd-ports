@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/emulators/dolphin-emu/Makefile 464247 2018-03-12 13:01:53Z tijl $
+# $FreeBSD: head/emulators/dolphin-emu/Makefile 466062 2018-03-31 16:23:13Z martymac $
 
 PORTNAME=	dolphin-emu
 PORTVERSION=	5.0
@@ -31,6 +31,7 @@ LIB_DEPENDS=	libpulse.so:audio/pulseaudio \
 		libcurl.so:ftp/curl \
 		libgtest.so:devel/googletest
 
+LLD_UNSAFE=	yes
 USES=		cmake compiler:c++11-lib iconv openal pkgconfig
 
 USE_GITHUB=	yes

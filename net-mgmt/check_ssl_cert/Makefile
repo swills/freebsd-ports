@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-mgmt/check_ssl_cert/Makefile 465841 2018-03-28 19:56:29Z cmt $
+# $FreeBSD: head/net-mgmt/check_ssl_cert/Makefile 465996 2018-03-30 19:27:47Z cmt $
 
 PORTNAME=	check_ssl_cert
-PORTVERSION=	1.64.0
+PORTVERSION=	1.65.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-mgmt
 
@@ -11,13 +11,15 @@ COMMENT=	Nagios/Icinga plugin for checking SSL/TLS certificates
 LICENSE=	GPLv3
 
 RUN_DEPENDS=	expect:lang/expect \
+		curl:ftp/curl \
 		p5-TimeDate>=0:devel/p5-TimeDate
 
 NO_BUILD=	yes
+NO_ARCH=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	matteocorti
-GV_PROJECT=	check_ssl_cert
+GH_PROJECT=	check_ssl_cert
 PLIST_FILES=	libexec/nagios/check_ssl_cert \
 		${MANPREFIX}/man/man1/check_ssl_cert.1.gz
 
