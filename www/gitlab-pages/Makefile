@@ -3,9 +3,6 @@
 PORTNAME=	gitlab-pages
 PORTVERSION=	0.6.0
 CATEGORIES=	www
-MASTER_SITES=	https://gitlab.com/gitlab-org/${PORTNAME}/repository/archive.tar.gz?ref=v${PORTVERSION}&dummy=/
-DISTNAME=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX}
-EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Official GitLab Pages daemon
@@ -15,9 +12,11 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	go:lang/go
 
-USES=		tar:bz2
-GITHASH=	15c938cafbd95064bbc4be34cd72091f9a61edaa
-WRKSRC=		${WRKDIR}/gitlab-pages-v${PORTVERSION}-${GITHASH}
+#USES=		tar:bz2
+USE_GITLAB=	yes
+GL_ACCOUNT=	gitlab-org
+# Find the here: https://gitlab.com/gitlab-org/gitlab-pages/tags
+GL_COMMIT=	15c938cafbd95064bbc4be34cd72091f9a61edaa
 
 PLIST_FILES=	bin/gitlab-pages
 
