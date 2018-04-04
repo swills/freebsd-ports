@@ -31,12 +31,9 @@ post-patch:
 
 do-build:
 	cd ${WRKSRC} && ${SETENV} GOCACHE=${WRKSRC}/go CGO_ENABLED=0 GO15VENDOREXPERIMENT=1 \
-		GOPATH=${WRKSRC} \
+		GOPATH=${WRKSRC} GOCACHE=off \
 		go build -o gitlab-pages \
 		--ldflags="-X main.VERSION=${PORTVERSION} -X main.REVISION=${GITHASH}"
-
-pre-install:
-	${RM} -rf ${WRKSRC}/go
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/gitlab-pages ${STAGEDIR}${PREFIX}/bin/gitlab-pages
