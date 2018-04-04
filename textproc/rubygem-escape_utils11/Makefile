@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-escape_utils11/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/textproc/rubygem-escape_utils11/Makefile 466442 2018-04-04 16:25:30Z mfechner $
 
 PORTNAME=	escape_utils
 PORTVERSION=	1.1.1
@@ -12,7 +12,8 @@ COMMENT=	Faster string escaping routines for your web apps
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-PORTSCOUNT=	limit:^1\.1\.
+PORTSCOUT=	limit:^1\.1\.
+
 USES=		gem
 USE_RUBY=	yes
 

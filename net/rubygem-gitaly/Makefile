@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-gitaly/Makefile 457869 2018-01-02 15:32:06Z swills $
+# $FreeBSD: head/net/rubygem-gitaly/Makefile 466447 2018-04-04 16:36:32Z mfechner $
 
 PORTNAME=	gitaly
 PORTVERSION=	0.30.0
@@ -15,7 +15,7 @@ BUILD_DEPENDS=	rubygem-bundler>=1.12:sysutils/rubygem-bundler \
 		rubygem-rake>=10.0:devel/rubygem-rake
 RUN_DEPENDS=	rubygem-google-protobuf>=3.4.0.2:devel/rubygem-google-protobuf \
 		rubygem-grpc>=1.0:net/rubygem-grpc \
-		gitaly>=0.11.2:devel/gitaly
+		gitaly>=0.82.0:devel/gitaly
 
 NO_ARCH=	yes
 USES=		gem

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-octokit46/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/net/rubygem-octokit46/Makefile 466446 2018-04-04 16:34:18Z mfechner $
 
 PORTNAME=	octokit
 PORTVERSION=	4.6.2
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 RUN_DEPENDS=	rubygem-sawyer>=0.8.0:www/rubygem-sawyer
 
-PORTSCOUT=	limit=^4\.6
+PORTSCOUT=	limit=^4\.6\.
 
 NO_ARCH=	yes
 USES=		gem

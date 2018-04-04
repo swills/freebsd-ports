@@ -1,10 +1,13 @@
-# $FreeBSD: head/textproc/rubygem-charlock_holmes/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/textproc/rubygem-charlock_holmes/Makefile 466399 2018-04-04 08:21:13Z jbeich $
 
 PORTNAME=	charlock_holmes
 DISTVERSION=	0.7.5
 PORTREVISION=	1
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
+
+PATCH_SITES=	https://github.com/brianmario/charlock_holmes/commit/
+PATCHFILES=	018be8532670.patch:-p1
 
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Gems for character encoding detection

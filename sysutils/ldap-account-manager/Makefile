@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/ldap-account-manager/Makefile 464061 2018-03-10 10:34:03Z yuri $
+# $FreeBSD: head/sysutils/ldap-account-manager/Makefile 466360 2018-04-03 15:53:30Z fernape $
 
 PORTNAME=	ldap-account-manager
-DISTVERSION=	6.2.1
+DISTVERSION=	6.3
 CATEGORIES=	sysutils www
 MASTER_SITES=	SF/${SHORTNAME}/LAM/${PORTVERSION}
 

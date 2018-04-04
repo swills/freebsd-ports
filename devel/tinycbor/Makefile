@@ -1,10 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/tinycbor/Makefile 463055 2018-02-26 22:29:55Z sunpoet $
+# $FreeBSD: head/devel/tinycbor/Makefile 466421 2018-04-04 10:56:48Z sunpoet $
 
 PORTNAME=	tinycbor
-PORTVERSION=	0.5.0
+PORTVERSION=	0.5.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -18,6 +17,8 @@ LIB_DEPENDS=	libcjson.so:devel/libcjson
 INSTALL_TARGET=	install-strip
 MAKE_ARGS=	SOVERSION=${PORTVERSION:R:R}
 USES=		gmake localbase pathfix
+
+PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
 GH_ACCOUNT=	intel
 GH_PROJECT=	tinycbor

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-rack-oauth212/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/security/rubygem-rack-oauth212/Makefile 466443 2018-04-04 16:27:49Z mfechner $
 
 PORTNAME=	rack-oauth2
 PORTVERSION=	1.2.3
@@ -18,7 +18,7 @@ RUN_DEPENDS=	rubygem-activesupport4>=2.3:devel/rubygem-activesupport4 \
 		rubygem-multi_json>=1.3.6:devel/rubygem-multi_json \
 		rubygem-rack16>=1.1:www/rubygem-rack16
 
-PORTSCOUNT=	limit:^1\.2
+PORTSCOUT=	limit:^1\.2\.
 
 NO_ARCH=	yes
 USES=		gem

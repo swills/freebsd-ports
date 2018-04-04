@@ -1,5 +1,5 @@
 # Created by: Randall Hopper
-# $FreeBSD: head/graphics/gdal/Makefile 465304 2018-03-22 19:52:57Z sunpoet $
+# $FreeBSD: head/graphics/gdal/Makefile 466422 2018-04-04 10:56:53Z sunpoet $
 
 PORTNAME=	gdal
 PORTVERSION=	2.2.4
@@ -53,7 +53,7 @@ MAKEFILE=	GNUmakefile
 USE_LDCONFIG=	yes
 USES=		gmake iconv jpeg localbase tar:xz
 
-PLIST_SUB=	PORTVERSION=${PORTVERSION} SHLIB_VER=${PORTVERSION:R:R}
+PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
 SLAVEDIRS=	graphics/p5-Geo-GDAL graphics/php-gdal graphics/py-gdal
 

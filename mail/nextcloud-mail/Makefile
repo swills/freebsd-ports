@@ -1,8 +1,9 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/mail/nextcloud-mail/Makefile 462999 2018-02-26 08:37:26Z brnrd $
+# $FreeBSD: head/mail/nextcloud-mail/Makefile 466394 2018-04-04 07:15:38Z brnrd $
 
 PORTNAME=	mail
 PORTVERSION=	0.7.10
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	mail
 MASTER_SITES=	https://github.com/${PKGNAMEPREFIX:S/-//}/${PORTNAME}/releases/download/${DISTVERSIONPREFIX}${PORTVERSION}/
@@ -15,7 +16,7 @@ COMMENT=	Mail app for Nextcloud
 
 LICENSE=	AGPLv3
 
-RUN_DEPENDS=	nextcloud>=12:www/nextcloud
+RUN_DEPENDS=	nextcloud>=13:www/nextcloud
 
 USES=		gettext php
 USE_PHP=	imap
@@ -29,7 +30,7 @@ NEXTCLOUD_GROUPNAME?=	${WWWGRP}
 PLIST_SUB=	NEXTCLOUD_USERNAME=${NEXTCLOUD_USERNAME} \
 		NEXTCLOUD_GROUPNAME=${NEXTCLOUD_GROUPNAME}
 
-WWWDIR=		${PREFIX}/www/nextcloud/apps/${PORTNAME}
+WWWDIR=		${PREFIX}/www/nextcloud/apps-pkg/${PORTNAME}
 
 do-install:
 	${MKDIR} ${STAGEDIR}${WWWDIR}

@@ -1,5 +1,5 @@
 # Created by: Leinier Cruz Salfran <salfrancl@yahoo.es>
-# $FreeBSD: head/multimedia/aegisub/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/multimedia/aegisub/Makefile 466411 2018-04-04 09:46:40Z jbeich $
 
 PORTNAME=	aegisub
 PORTVERSION=	3.2.2
@@ -28,6 +28,7 @@ WX_CONF_ARGS=	absolute
 USE_GL=		gl
 USE_CSTD=	c99
 USE_CXXSTD=	c++11
+CPPFLAGS+=	-DU_USING_ICU_NAMESPACE=1
 CXXFLAGS+=	-D_GLIBCXX_USE_C99 # XXX ports/193528
 LDFLAGS+=	-Wl,--as-needed # freetype
 GNU_CONFIGURE=	yes

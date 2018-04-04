@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/mariadb101-server/Makefile 466138 2018-04-01 09:46:49Z brnrd $
+# $FreeBSD: head/databases/mariadb101-server/Makefile 466370 2018-04-03 19:10:28Z brnrd $
 
 PORTNAME?=	mariadb
 PORTVERSION=	10.1.32
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	databases ipv6
 MASTER_SITES=	http://ftp.osuosl.org/pub/${SITESDIR}/ \
 		http://mirrors.supportex.net/${SITESDIR}/ \
@@ -182,6 +182,15 @@ post-install-MROONGA-on:
 		${STAGEDIR}${PREFIX}/share/groonga \
 		${STAGEDIR}${PREFIX}/share/mysql
 .endif # defined(CLIENT_ONLY)
+
+.include <bsd.port.options.mk>
+
+.if ${OPSYS} != FreeBSD || ${OSVERSION} < 1101515 || \
+	${OSVERSION} >= 1200000 && ${OSVERSION} < 1200057
+SUB_LIST+=	LEGACY_LIMITS="" MODERN_LIMITS="@comment "
+.else
+SUB_LIST+=	LEGACY_LIMITS="@comment " MODERN_LIMITS=""
+.endif
 
 .include <bsd.port.pre.mk>
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-doorkeeper-openid_connect12/Makefile 465682 2018-03-27 09:35:54Z tz $
+# $FreeBSD: head/security/rubygem-doorkeeper-openid_connect12/Makefile 466444 2018-04-04 16:29:53Z mfechner $
 
 PORTNAME=	doorkeeper-openid_connect
 PORTVERSION=	1.2.0
@@ -16,6 +16,8 @@ CONFLICTS_INSTALL=	rubygem-doorkeeper-openid_connect
 
 RUN_DEPENDS=	rubygem-doorkeeper42>=4.0:security/rubygem-doorkeeper42 \
 		rubygem-json-jwt>=1.6:www/rubygem-json-jwt
+
+PORTSCOUT=	limit:^1\.2\.
 
 NO_ARCH=	yes
 USES=		gem

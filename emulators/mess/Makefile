@@ -1,11 +1,9 @@
-# $FreeBSD: head/emulators/mess/Makefile 465869 2018-03-29 08:31:18Z antoine $
+# $FreeBSD: head/emulators/mess/Makefile 466375 2018-04-03 20:35:24Z danilo $
 
 PORTNAME=	mess
 MTARGET=	mame
 MSUBTARGET=	mess
 COMMENT=	Multiple Emulator Super System
-
-BROKEN=		fails to install
 
 MASTERDIR=	${.CURDIR}/../mame
 DESCR=		${.CURDIR}/pkg-descr

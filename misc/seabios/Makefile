@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/seabios/Makefile 464155 2018-03-11 09:41:01Z tobik $
+# $FreeBSD: head/misc/seabios/Makefile 466430 2018-04-04 11:46:19Z royger $
 
 PORTNAME=	seabios
 PORTVERSION=	1.11.0
@@ -15,9 +15,9 @@ ONLY_FOR_ARCHS_REASON=	specific to x86
 
 USES=	gmake python:build
 
-MAKE_ARGS=	HOSTCC="${CC}" LD32BIT_FLAG="-melf_i386_fbsd" \
-		PYTHON="${PYTHON_CMD}"
+MAKE_ARGS=	HOSTCC="${CC}" LD="${LD}" PYTHON="${PYTHON_CMD}"
 USE_GCC=	yes
+USE_BINUTILS=	yes
 
 PLIST_FILES=	${DATADIR}/bios.bin
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 466235 2018-04-02 16:50:46Z jwb $
+# $FreeBSD: head/biology/Makefile 466379 2018-04-03 20:57:05Z jwb $
 #
 
     COMMENT = Biology
@@ -106,6 +106,7 @@
     SUBDIR += seqan-apps
     SUBDIR += seqan1
     SUBDIR += seqio
+    SUBDIR += seqtk
     SUBDIR += seqtools
     SUBDIR += sim4
     SUBDIR += slclust
@@ -115,6 +116,7 @@
     SUBDIR += t_coffee
     SUBDIR += tinker
     SUBDIR += treepuzzle
+    SUBDIR += trimadap
     SUBDIR += trimmomatic
     SUBDIR += ugene
     SUBDIR += vcftools

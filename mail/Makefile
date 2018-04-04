@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 465936 2018-03-29 23:15:20Z cpm $
+# $FreeBSD: head/mail/Makefile 466364 2018-04-03 16:52:56Z mandree $
 #
 
     COMMENT = Electronic mail utilities
@@ -584,6 +584,7 @@
     SUBDIR += queue-repair
     SUBDIR += rainloop
     SUBDIR += rainloop-community
+    SUBDIR += ratelimit-policyd
     SUBDIR += raysfilter
     SUBDIR += razor-agents
     SUBDIR += rbl-milter
