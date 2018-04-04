@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/node8/Makefile 466133 2018-04-01 09:19:53Z bhughes $
+# $FreeBSD: head/www/node8/Makefile 466396 2018-04-04 08:03:48Z jbeich $
 
 PORTNAME=	node
 PORTVERSION=	8.11.1
@@ -6,6 +6,9 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 MASTER_SITES=	http://nodejs.org/dist/v${PORTVERSION}/
 PKGNAMESUFFIX=	8
+
+PATCH_SITES=	https://github.com/nodejs/node/commit/
+PATCHFILES=	b8f47b27571f.patch:-p1
 
 MAINTAINER=	bhughes@FreeBSD.org
 COMMENT=	V8 JavaScript for client and server (8.x LTS)

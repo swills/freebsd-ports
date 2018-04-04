@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/openttd/Makefile 466226 2018-04-02 13:05:12Z danfe $
+# $FreeBSD: head/games/openttd/Makefile 466412 2018-04-04 10:04:30Z jbeich $
 
 PORTNAME=	openttd
 DISTVERSION=	1.8.0
@@ -57,6 +57,7 @@ USE_RC_SUBR=	${PORTNAME}
 .else
 USES+=		compiler:c++11-lib
 USE_CXXSTD=	gnu++11
+CXXFLAGS+=	-DU_USING_ICU_NAMESPACE=1
 LIB_DEPENDS+=	libfreetype.so:print/freetype2 \
 		libicui18n.so:devel/icu \
 		libicu-le-hb.so:devel/icu-le-hb \

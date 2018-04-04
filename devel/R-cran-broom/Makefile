@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-broom/Makefile 464456 2018-03-14 04:58:09Z tota $
+# $FreeBSD: head/devel/R-cran-broom/Makefile 466407 2018-04-04 09:27:46Z tota $
 
 PORTNAME=	broom
-DISTVERSION=	0.4.3
+DISTVERSION=	0.4.4
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

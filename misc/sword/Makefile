@@ -1,5 +1,5 @@
 # Created by: Willem van Engen <wvengen@stack.nl>
-# $FreeBSD: head/misc/sword/Makefile 466196 2018-04-02 03:23:53Z wen $
+# $FreeBSD: head/misc/sword/Makefile 466397 2018-04-04 08:03:58Z jbeich $
 
 PORTNAME=	sword
 PORTVERSION=	1.8.1
@@ -16,6 +16,7 @@ BUILD_DEPENDS=	cppunit-config:devel/cppunit
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-conf --with-zlib
+CPPFLAGS+=	-DU_USING_ICU_NAMESPACE=1
 INSTALL_TARGET=	install-strip
 USES=		gmake libtool pathfix pkgconfig
 USE_LDCONFIG=	yes

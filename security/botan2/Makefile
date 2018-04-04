@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/botan2/Makefile 465689 2018-03-27 11:15:39Z linimon $
+# $FreeBSD: head/security/botan2/Makefile 466403 2018-04-04 08:36:44Z krion $
 
 PORTNAME=	botan
-DISTVERSION=	2.4.0
-PORTREVISION=	1
+DISTVERSION=	2.5.0
 CATEGORIES=	security
 MASTER_SITES=	http://botan.randombit.net/releases/
 PKGNAMESUFFIX=	2
@@ -62,7 +61,7 @@ post-patch:
 		${WRKSRC}/src/build-data/cc/clang.txt
 
 post-install:
-.for i in bin/botan lib/libbotan-2.so.4.4.0
+.for i in bin/botan lib/libbotan-2.so.5.5.0
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${i}
 .endfor
 

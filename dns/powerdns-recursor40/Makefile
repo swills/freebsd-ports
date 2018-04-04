@@ -1,9 +1,9 @@
 # Created by: sten@blinkenlights.nl
-# $FreeBSD: head/dns/powerdns-recursor40/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/dns/powerdns-recursor40/Makefile 466404 2018-04-04 08:37:42Z krion $
 
 PORTNAME=	recursor
 DISTVERSION=	4.0.8
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	dns ipv6
 MASTER_SITES=	http://downloads.powerdns.com/releases/
 PKGNAMEPREFIX=	powerdns-

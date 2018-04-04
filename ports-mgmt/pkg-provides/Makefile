@@ -1,9 +1,8 @@
-# $FreeBSD: head/ports-mgmt/pkg-provides/Makefile 464588 2018-03-15 13:37:05Z rodrigo $
+# $FreeBSD: head/ports-mgmt/pkg-provides/Makefile 466384 2018-04-03 23:12:13Z rodrigo $
 
 PORTNAME=	pkg-provides
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.4.0
-PORTREVISION=	1
+DISTVERSION=	0.4.1
 CATEGORIES=	ports-mgmt
 
 MAINTAINER=	rodrigo@FreeBSD.org
@@ -24,7 +23,7 @@ SUB_LIST=	LOCALBASE=${LOCALBASE}
 
 GH_ACCOUNT=	rosorio
 GH_PROJECT=	pkg-provides
-GH_TAGNAME=	3938a4f
+GH_TAGNAME=	f411691
 
 PLIST_FILES=	lib/pkg/provides.so man/man8/pkg-provides.8.gz
 

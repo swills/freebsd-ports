@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-octokit46/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/net/rubygem-octokit46/Makefile 466446 2018-04-04 16:34:18Z mfechner $
 
 PORTNAME=	octokit
 PORTVERSION=	4.6.2

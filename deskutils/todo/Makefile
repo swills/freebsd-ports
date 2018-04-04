@@ -1,10 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/deskutils/todo/Makefile 456237 2017-12-13 20:49:25Z sunpoet $
+# $FreeBSD: head/deskutils/todo/Makefile 466419 2018-04-04 10:56:37Z sunpoet $
 
 PORTNAME=	todo
-PORTVERSION=	2.10.0
+PORTVERSION=	2.11.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
 CATEGORIES=	deskutils
 
 MAINTAINER=	sunpoet@FreeBSD.org

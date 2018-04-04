@@ -1,8 +1,8 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Locale/Makefile 453686 2017-11-07 21:01:58Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime-Locale/Makefile 466387 2018-04-03 23:48:09Z wen $
 
 PORTNAME=	DateTime-Locale
-PORTVERSION=	1.17
+PORTVERSION=	1.18
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

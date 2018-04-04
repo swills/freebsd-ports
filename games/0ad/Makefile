@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/0ad/Makefile 462532 2018-02-21 16:24:53Z antoine $
+# $FreeBSD: head/games/0ad/Makefile 466415 2018-04-04 10:11:13Z jbeich $
 
 PORTNAME=	0ad
 PORTVERSION=	0.0.22
@@ -29,6 +29,7 @@ LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}-alpha
 BUILD_WRKSRC=	${WRKSRC}/build/workspaces/gcc
 MAKE_ARGS=	config=release
+CPPFLAGS+=	-DU_USING_ICU_NAMESPACE=1
 USES=		compiler:c++11-lib dos2unix gmake iconv jpeg openal:al \
 		pkgconfig python:build tar:xz
 USE_GNOME=	libxml2 gtk20

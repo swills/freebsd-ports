@@ -1,8 +1,9 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/security/nextcloud-passman/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/security/nextcloud-passman/Makefile 466394 2018-04-04 07:15:38Z brnrd $
 
 PORTNAME=	passman
 PORTVERSION=	2.1.4
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	https://releases.passman.cc/
 PKGNAMEPREFIX=	nextcloud-
@@ -22,7 +23,7 @@ USES=		php
 NO_BUILD=	yes
 NO_ARCH=	yes
 
-WWWDIR=		${PREFIX}/www/nextcloud/apps/${PORTNAME}
+WWWDIR=		${PREFIX}/www/nextcloud/apps-pkg/${PORTNAME}
 
 do-install:
 	${MKDIR} ${STAGEDIR}${WWWDIR}

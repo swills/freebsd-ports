@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/textproc/zorba/Makefile 462682 2018-02-23 09:44:27Z yuri $
+# $FreeBSD: head/textproc/zorba/Makefile 466416 2018-04-04 10:11:48Z jbeich $
 
 PORTNAME=	zorba
 PORTVERSION=	2.7.0
@@ -41,6 +41,7 @@ USES=		cmake:outsource compiler:c++11-lib libedit
 USE_GNOME=	libxml2 libxslt
 USE_LDCONFIG=	yes
 USE_CXXSTD=	c++11
+CXXFLAGS+=	-DU_USING_ICU_NAMESPACE=1
 CXXFLAGS+=	-I${LOCALBASE}/include -O1 # compiler hangs with -O2 on CURRENT
 LDFLAGS+=	-L${LOCALBASE}/lib
 CMAKE_ARGS=	-DCMAKE_REQUIRED_FLAGS:STRING="-I${LOCALBASE}/include -L${LOCALBASE}/lib" \

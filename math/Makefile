@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 466293 2018-04-03 09:36:28Z rene $
+# $FreeBSD: head/math/Makefile 466386 2018-04-03 23:14:57Z yuri $
 #
 
     COMMENT = Mathematics
@@ -109,6 +109,7 @@
     SUBDIR += ambit
     SUBDIR += analitza-kde4
     SUBDIR += ann
+    SUBDIR += antic
     SUBDIR += apc
     SUBDIR += arb
     SUBDIR += aribas
