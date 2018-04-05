@@ -6328,9 +6328,11 @@
 %%WWWDIR%%/db/migrate/20171216111734_clean_up_for_members.rb
 %%WWWDIR%%/db/migrate/20171216112339_add_foreign_key_for_members.rb
 %%WWWDIR%%/db/migrate/20171220191323_add_index_on_namespaces_lower_name.rb
+%%WWWDIR%%/db/migrate/20171222115326_add_confidential_note_events_to_web_hooks.rb
 %%WWWDIR%%/db/migrate/20171222183504_add_jobs_cache_index_to_project.rb
 %%WWWDIR%%/db/migrate/20171229225929_change_user_project_limit_not_null_and_remove_default.rb
 %%WWWDIR%%/db/migrate/20171230123729_add_rebase_commit_sha_to_merge_requests_ce.rb
+%%WWWDIR%%/db/migrate/20180103123548_add_confidential_note_events_to_services.rb
 %%WWWDIR%%/db/migrate/20180105212544_add_commits_count_to_merge_request_diff.rb
 %%WWWDIR%%/db/migrate/20180113220114_rework_redirect_routes_indexes.rb
 %%WWWDIR%%/db/migrate/20180115201419_add_index_updated_at_to_issues.rb
@@ -6470,7 +6472,9 @@
 %%WWWDIR%%/db/post_migrate/20171215121259_remove_can_push_from_keys.rb
 %%WWWDIR%%/db/post_migrate/20171219121201_normalize_extern_uid_from_identities.rb
 %%WWWDIR%%/db/post_migrate/20171221140220_schedule_issues_closed_at_type_change.rb
+%%WWWDIR%%/db/post_migrate/20180104131052_schedule_set_confidential_note_events_on_webhooks.rb
 %%WWWDIR%%/db/post_migrate/20180119121225_remove_redundant_pipeline_stages.rb
+%%WWWDIR%%/db/post_migrate/20180122154930_schedule_set_confidential_note_events_on_services.rb
 %%WWWDIR%%/db/post_migrate/20180202111106_remove_project_labels_group_id.rb
 %%WWWDIR%%/db/post_migrate/20180204200836_change_author_id_to_not_null_in_todos.rb
 %%WWWDIR%%/db/post_migrate/20180216121020_fill_pages_domain_verification_code.rb
@@ -8279,6 +8283,8 @@
 %%WWWDIR%%/lib/gitlab/background_migration/populate_merge_requests_latest_merge_request_diff_id.rb
 %%WWWDIR%%/lib/gitlab/background_migration/populate_untracked_uploads.rb
 %%WWWDIR%%/lib/gitlab/background_migration/prepare_untracked_uploads.rb
+%%WWWDIR%%/lib/gitlab/background_migration/set_confidential_note_events_on_services.rb
+%%WWWDIR%%/lib/gitlab/background_migration/set_confidential_note_events_on_webhooks.rb
 %%WWWDIR%%/lib/gitlab/badge/base.rb
 %%WWWDIR%%/lib/gitlab/badge/coverage/metadata.rb
 %%WWWDIR%%/lib/gitlab/badge/coverage/report.rb
@@ -10819,6 +10825,8 @@
 %%WWWDIR%%/spec/lib/gitlab/background_migration/populate_merge_requests_latest_merge_request_diff_id_spec.rb
 %%WWWDIR%%/spec/lib/gitlab/background_migration/populate_untracked_uploads_spec.rb
 %%WWWDIR%%/spec/lib/gitlab/background_migration/prepare_untracked_uploads_spec.rb
+%%WWWDIR%%/spec/lib/gitlab/background_migration/set_confidential_note_events_on_services_spec.rb
+%%WWWDIR%%/spec/lib/gitlab/background_migration/set_confidential_note_events_on_webhooks_spec.rb
 %%WWWDIR%%/spec/lib/gitlab/background_migration_spec.rb
 %%WWWDIR%%/spec/lib/gitlab/badge/coverage/metadata_spec.rb
 %%WWWDIR%%/spec/lib/gitlab/badge/coverage/report_spec.rb
@@ -11372,6 +11380,7 @@
 %%WWWDIR%%/spec/mailers/previews/notify_preview.rb
 %%WWWDIR%%/spec/mailers/repository_check_mailer_spec.rb
 %%WWWDIR%%/spec/migrations/README.md
+%%WWWDIR%%/spec/migrations/active_record/schedule_set_confidential_note_events_on_services_spec.rb
 %%WWWDIR%%/spec/migrations/active_record/schema_spec.rb
 %%WWWDIR%%/spec/migrations/add_foreign_key_to_merge_requests_spec.rb
 %%WWWDIR%%/spec/migrations/add_foreign_keys_to_todos_spec.rb
@@ -11425,6 +11434,7 @@
 %%WWWDIR%%/spec/migrations/schedule_merge_request_diff_migrations_take_two_spec.rb
 %%WWWDIR%%/spec/migrations/schedule_merge_request_latest_merge_request_diff_id_migrations_spec.rb
 %%WWWDIR%%/spec/migrations/schedule_populate_merge_request_metrics_with_events_data_spec.rb
+%%WWWDIR%%/spec/migrations/schedule_set_confidential_note_events_on_webhooks_spec.rb
 %%WWWDIR%%/spec/migrations/track_untracked_uploads_spec.rb
 %%WWWDIR%%/spec/migrations/turn_nested_groups_into_regular_groups_for_mysql_spec.rb
 %%WWWDIR%%/spec/migrations/update_legacy_diff_notes_type_for_import_spec.rb
