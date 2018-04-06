@@ -1,0 +1,17 @@
+# $FreeBSD: head/net/pecl-rdkafka/Makefile 466521 2018-04-05 02:37:22Z vanilla $
+
+PORTNAME=	rdkafka
+PORTVERSION=	3.0.5
+CATEGORIES=	net pear
+
+MAINTAINER=	sergey@akhmatov.ru
+COMMENT=	Kafka client for PHP
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+LIB_DEPENDS=	librdkafka.so:net/librdkafka
+
+USES=		php:pecl
+
+.include <bsd.port.mk>

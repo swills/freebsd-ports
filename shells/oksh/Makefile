@@ -1,7 +1,7 @@
-# $FreeBSD: head/shells/oksh/Makefile 458806 2018-01-12 07:47:30Z tobik $
+# $FreeBSD: head/shells/oksh/Makefile 466613 2018-04-06 03:58:41Z tobik $
 
 PORTNAME=	oksh
-DISTVERSION=	20180111
+DISTVERSION=	20180401
 CATEGORIES=	shells
 MASTER_SITES=	https://devio.us/~bcallah/oksh/
 

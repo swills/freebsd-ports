@@ -1,12 +1,12 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/graphics/fpc-libgd/Makefile 447304 2017-08-03 23:40:28Z acm $
+# $FreeBSD: head/graphics/fpc-libgd/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 CATEGORIES=	graphics lang
 PKGNAMESUFFIX=	-libgd
 
 COMMENT=	Free Pascal interface to libgd for producing graphics files
 
-USE_FPC=	yes
+USES=		fpc
 
 MASTERDIR=	${.CURDIR}/../../lang/fpc
 WRKUNITDIR=	${FPCSRCDIR}/packages/${PKGNAMESUFFIX:S/-//}

@@ -1,10 +1,11 @@
-# $FreeBSD: head/lang/fpc-rtl-console/Makefile 447304 2017-08-03 23:40:28Z acm $
+# $FreeBSD: head/lang/fpc-rtl-console/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 CATEGORIES=	lang
 PKGNAMESUFFIX=	-rtl-console
 
 COMMENT=	Free Pascal console abstraction unit (RTL)
 
+USES=		fpc
 USE_FPC=	rtl-extra
 
 MASTERDIR=	${.CURDIR}/../../lang/fpc

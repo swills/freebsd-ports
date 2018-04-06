@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/qt5-core/Makefile 465911 2018-03-29 19:03:17Z tcberner $
+# $FreeBSD: head/devel/qt5-core/Makefile 466648 2018-04-06 15:53:16Z jbeich $
 
 PORTNAME=	core
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 PKGNAMEPREFIX=	qt5-
 

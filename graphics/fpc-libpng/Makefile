@@ -1,13 +1,13 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/graphics/fpc-libpng/Makefile 447304 2017-08-03 23:40:28Z acm $
+# $FreeBSD: head/graphics/fpc-libpng/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 CATEGORIES=	graphics lang
 PKGNAMESUFFIX=	-libpng
 
 COMMENT=	Free Pascal interface to libpng, for reading PNG image files
 
+USES=		fpc:run
 USE_FPC=	zlib
-USE_FPC_RUN=	yes
 
 MASTERDIR=	${.CURDIR}/../../lang/fpc
 WRKUNITDIR=	${FPCSRCDIR}/packages/${PKGNAMESUFFIX:S/-//}

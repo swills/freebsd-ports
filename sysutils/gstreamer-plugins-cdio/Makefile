@@ -1,8 +1,8 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/sysutils/gstreamer-plugins-cdio/Makefile 414276 2016-04-29 15:20:28Z arved $
+# $FreeBSD: head/sysutils/gstreamer-plugins-cdio/Makefile 466597 2018-04-05 20:13:33Z jhale $
 
 CATEGORIES=	sysutils
-PORTREVISION=	2
+PORTREVISION=	3
 
 COMMENT=	Gstreamer compact disc input and control library
 

@@ -1,5 +1,5 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/comms/cqrlog/Makefile 462263 2018-02-18 20:33:49Z db $
+# $FreeBSD: head/comms/cqrlog/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 PORTNAME=	cqrlog
 PORTVERSION=	2.2.0
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libhamlib.so:comms/hamlib
 USE_GITHUB=	yes
 GH_ACCOUNT=	ok2cqr
 
-USES=		shebangfix
+USES=		fpc shebangfix
 SHEBANG_FILES=	tools/cqrlog-apparmor-fix \
 		voice_keyer/voice_keyer.sh
   

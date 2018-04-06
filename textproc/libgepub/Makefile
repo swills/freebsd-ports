@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/libgepub/Makefile 424731 2016-10-26 19:17:17Z rm $
+# $FreeBSD: head/textproc/libgepub/Makefile 466598 2018-04-05 20:13:48Z tobik $
 
 PORTNAME=	libgepub
 PORTVERSION=	0.4
+PORTREVISION=	1
 CATEGORIES=	textproc gnome
 MASTER_SITES=	GNOME
 

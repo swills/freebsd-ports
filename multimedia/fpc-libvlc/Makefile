@@ -1,11 +1,12 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/multimedia/fpc-libvlc/Makefile 460558 2018-02-01 07:14:41Z acm $
+# $FreeBSD: head/multimedia/fpc-libvlc/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 CATEGORIES=	multimedia lang
 PKGNAMESUFFIX=	-libvlc
 
 COMMENT=	Free Pascal interface to vlc media player library
 
+USES=		fpc
 USE_FPC=	fcl-base fcl-res rtl-objpas
 
 MASTERDIR=	${.CURDIR}/../../lang/fpc

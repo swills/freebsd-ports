@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-cucumber-expressions/Makefile 460475 2018-01-31 15:51:28Z sunpoet $
+# $FreeBSD: head/devel/rubygem-cucumber-expressions/Makefile 466664 2018-04-06 16:27:18Z sunpoet $
 
 PORTNAME=	cucumber-expressions
-PORTVERSION=	5.0.13
+PORTVERSION=	5.0.14
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

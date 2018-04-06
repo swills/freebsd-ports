@@ -1,5 +1,5 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/x11/fpc-x11/Makefile 461464 2018-02-11 08:15:27Z antoine $
+# $FreeBSD: head/x11/fpc-x11/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 CATEGORIES=	x11 lang
 PKGNAMESUFFIX=	-x11
@@ -7,7 +7,7 @@ PORTREVISION=	2
 
 COMMENT=	Free Pascal interface to X windows server
 
-USE_FPC=	yes
+USES=		fpc
 
 MASTERDIR=	${.CURDIR}/../../lang/fpc
 WRKUNITDIR=	${FPCSRCDIR}/packages/${PKGNAMESUFFIX:S/-//}

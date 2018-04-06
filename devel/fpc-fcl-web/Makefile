@@ -1,12 +1,13 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/fpc-fcl-web/Makefile 461475 2018-02-11 08:32:43Z antoine $
+# $FreeBSD: head/devel/fpc-fcl-web/Makefile 466532 2018-04-05 04:52:36Z acm $
 
-PORTREVISION=	1
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-fcl-web
+PORTREVISION=	1
 
 COMMENT=	Free Pascal web application libary (FCL)
 
+USES=		fpc
 USE_FPC=	dblib fcl-async fcl-base fcl-db fcl-xml fcl-json fcl-net \
 		fcl-fpcunit fcl-passrc fastcgi httpd22 httpd24 ibase mysql \
 		odbc openssl oracle postgres pxlib rtl-extra sqlite

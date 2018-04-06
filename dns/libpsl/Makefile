@@ -1,9 +1,10 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/dns/libpsl/Makefile 463125 2018-02-27 13:24:14Z sunpoet $
+# $FreeBSD: head/dns/libpsl/Makefile 466648 2018-04-06 15:53:16Z jbeich $
 
 PORTNAME=	libpsl
 PORTVERSION=	0.20.1
 DISTVERSIONPREFIX=	${PORTNAME}-
+PORTREVISION=	1
 CATEGORIES=	dns
 
 MAINTAINER=	sunpoet@FreeBSD.org

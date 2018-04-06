@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 466313 2018-04-03 09:50:55Z tota $
+# $FreeBSD: head/www/Makefile 466666 2018-04-06 16:27:27Z mfechner $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -198,6 +198,7 @@
     SUBDIR += gist
     SUBDIR += gitea
     SUBDIR += gitlab
+    SUBDIR += gitlab-pages
     SUBDIR += gitlab-workhorse
     SUBDIR += glassfish
     SUBDIR += glpi
@@ -385,6 +386,7 @@
     SUBDIR += man2web
     SUBDIR += mathjax
     SUBDIR += mathopd
+    SUBDIR += matomo
     SUBDIR += mattermost-server
     SUBDIR += mattermost-webapp
     SUBDIR += mediawiki127
@@ -1489,7 +1491,6 @@
     SUBDIR += phpvirtualbox
     SUBDIR += pivotx
     SUBDIR += piwigo
-    SUBDIR += piwik
     SUBDIR += planet
     SUBDIR += plexwatchweb
     SUBDIR += plone
@@ -1714,6 +1715,7 @@
     SUBDIR += py-kallithea
     SUBDIR += py-lesscpy
     SUBDIR += py-libsass
+    SUBDIR += py-livereload
     SUBDIR += py-mechanize
     SUBDIR += py-meld
     SUBDIR += py-meld3

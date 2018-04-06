@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooX-StrictConstructor/Makefile 465608 2018-03-26 16:35:16Z sunpoet $
+# $FreeBSD: head/devel/p5-MooX-StrictConstructor/Makefile 466470 2018-04-04 18:51:59Z sunpoet $
 
 PORTNAME=	MooX-StrictConstructor
-PORTVERSION=	0.009
+PORTVERSION=	0.010
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

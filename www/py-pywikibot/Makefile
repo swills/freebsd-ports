@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/www/py-pywikibot/Makefile 463627 2018-03-05 08:25:29Z yuri $
+# $FreeBSD: head/www/py-pywikibot/Makefile 466503 2018-04-04 19:52:34Z yuri $
 
 PORTNAME=	pywikibot
-DISTVERSION=	3.0.20180304
+DISTVERSION=	3.0.20180403
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

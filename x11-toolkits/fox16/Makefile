@@ -1,8 +1,8 @@
 # Created by: Alexander Novitsky <alecn2002@yandex.ru>
-# $FreeBSD: head/x11-toolkits/fox16/Makefile 461999 2018-02-16 11:01:40Z jhale $
+# $FreeBSD: head/x11-toolkits/fox16/Makefile 466606 2018-04-05 22:16:47Z jhale $
 
 PORTNAME=	fox
-PORTVERSION=	1.6.56
+PORTVERSION=	1.6.57
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.fox-toolkit.org/pub/ \
 		http://ftp.fox-toolkit.org/pub/

@@ -1,5 +1,5 @@
 # Created by: Bruce M Simpson <bms@FreeBSD.org>
-# $FreeBSD: head/print/openprinting/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/print/openprinting/Makefile 466522 2018-04-05 02:43:07Z emaste $
 
 PORTNAME=	openprinting
 PORTVERSION=	1.0
@@ -19,6 +19,7 @@ USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 MAKE_JOBS_UNSAFE=	yes
+LLD_UNSAFE=	yes
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 LIBS+=		-L${LOCALBASE}/lib -lintl

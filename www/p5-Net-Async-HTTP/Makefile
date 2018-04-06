@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-Net-Async-HTTP/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Net-Async-HTTP/Makefile 466476 2018-04-04 18:52:31Z sunpoet $
 
 PORTNAME=	Net-Async-HTTP
-PORTVERSION=	0.41
+PORTVERSION=	0.42
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -28,7 +28,7 @@ TEST_DEPENDS=	p5-IO-Async-SSL>=0.12:security/p5-IO-Async-SSL \
 OPTIONS_DEFINE=	SSL
 
 NO_ARCH=	yes
-USE_PERL5=	configure
+USE_PERL5=	modbuild
 USES=		perl5
 
 SSL_BUILD_DEPENDS=	p5-IO-Async-SSL>=0.12:security/p5-IO-Async-SSL

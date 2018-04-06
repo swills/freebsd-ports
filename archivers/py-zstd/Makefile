@@ -1,7 +1,7 @@
-# $FreeBSD: head/archivers/py-zstd/Makefile 464657 2018-03-16 07:28:28Z yuri $
+# $FreeBSD: head/archivers/py-zstd/Makefile 466502 2018-04-04 19:47:47Z yuri $
 
 PORTNAME=	zstd
-DISTVERSION=	1.3.3
+DISTVERSION=	1.3.4
 CATEGORIES=	archivers python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

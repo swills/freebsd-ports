@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/libzim/Makefile 449854 2017-09-14 21:13:19Z swills $
+# $FreeBSD: head/devel/libzim/Makefile 466648 2018-04-06 15:53:16Z jbeich $
 
 PORTNAME=	libzim
 PORTVERSION=	2.0.0
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	swills@FreeBSD.org

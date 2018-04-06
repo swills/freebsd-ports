@@ -1,8 +1,8 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/databases/py-whisper/Makefile 465106 2018-03-20 18:42:37Z skreuzer $
+# $FreeBSD: head/databases/py-whisper/Makefile 466556 2018-04-05 12:49:20Z skreuzer $
 
 PORTNAME=	whisper
-PORTVERSION=	1.1.2
+PORTVERSION=	1.1.3
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

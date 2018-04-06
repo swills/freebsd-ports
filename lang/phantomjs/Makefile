@@ -1,8 +1,8 @@
-# $FreeBSD: head/lang/phantomjs/Makefile 465899 2018-03-29 14:53:23Z mat $
+# $FreeBSD: head/lang/phantomjs/Makefile 466648 2018-04-06 15:53:16Z jbeich $
 
 PORTNAME=	phantomjs
 PORTVERSION=	2.1.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	lang
 
 MAINTAINER=	feld@FreeBSD.org

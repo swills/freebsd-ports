@@ -1,5 +1,5 @@
 # Created by: Fernan Aguero <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/science/mol2ps/Makefile 460573 2018-02-01 07:32:05Z acm $
+# $FreeBSD: head/science/mol2ps/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 PORTNAME=	mol2ps
 PORTVERSION=	0.4b
@@ -21,6 +21,7 @@ EXTRACT_CMD=	${CP}
 EXTRACT_BEFORE_ARGS=	#
 EXTRACT_AFTER_ARGS=	${WRKSRC}
 
+USES=		fpc
 USE_FPC=	rtl-objpas
 
 PLIST_FILES=	bin/mol2eps bin/mol2ps bin/mol2svg %%DATADIR%%/color.conf

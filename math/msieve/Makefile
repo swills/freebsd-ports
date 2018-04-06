@@ -1,5 +1,5 @@
 # Created by: Daniel Roethlisberger <daniel@roe.ch>
-# $FreeBSD: head/math/msieve/Makefile 452147 2017-10-15 14:05:04Z madpilot $
+# $FreeBSD: head/math/msieve/Makefile 466539 2018-04-05 07:25:14Z antoine $
 
 PORTNAME=	msieve
 PORTVERSION=	1.51
@@ -10,6 +10,8 @@ DISTNAME=	${PORTNAME}${PORTVERSION:S/.//}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fast factorization of big integers using MPQS and GNFS
+
+BROKEN=		missing build depends
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libecm.a:math/gmp-ecm
 

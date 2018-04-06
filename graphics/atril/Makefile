@@ -1,11 +1,11 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/graphics/atril/Makefile 452089 2017-10-14 20:51:48Z kwm $
+# $FreeBSD: head/graphics/atril/Makefile 466598 2018-04-05 20:13:48Z tobik $
 #
 # Please update update atril-lite also
 
 PORTNAME=	atril
 PORTVERSION=	1.18.1
-PORTREVISION?=	1
+PORTREVISION?=	2
 CATEGORIES=	graphics print mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

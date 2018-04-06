@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/showdown/Makefile 458761 2018-01-11 18:09:00Z danfe $
+# $FreeBSD: head/deskutils/showdown/Makefile 466598 2018-04-05 20:13:48Z tobik $
 
 PORTNAME=	showdown
 DISTVERSION=	0.6
+PORTREVISION=	1
 CATEGORIES=	deskutils
 
 MAINTAINER=	dg@syrec.org

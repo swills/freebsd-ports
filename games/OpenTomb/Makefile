@@ -1,9 +1,9 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/games/OpenTomb/Makefile 458385 2018-01-07 21:27:59Z krion $
+# $FreeBSD: head/games/OpenTomb/Makefile 466520 2018-04-05 01:48:38Z wen $
 
 PORTNAME=	OpenTomb
 DISTVERSIONPREFIX=	win32-
-DISTVERSION=	2017-08-05_alpha
+DISTVERSION=	2018-02-03_alpha
 CATEGORIES=	games
 
 MAINTAINER=	pkubaj@anongoth.pl
@@ -14,9 +14,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
-USE_GITHUB=	yes
-
 USES=		cmake lua openal
+USE_GITHUB=	yes
 USE_SDL=	sdl2
 LLD_UNSAFE=	yes
 SUB_FILES=	OpenTomb

@@ -1,10 +1,10 @@
-# $FreeBSD: head/lang/swift/Makefile 462532 2018-02-21 16:24:53Z antoine $
+# $FreeBSD: head/lang/swift/Makefile 466648 2018-04-06 15:53:16Z jbeich $
 
 PORTNAME=	swift
 PORTVERSION=	3.1.1
 DISTVERSIONPREFIX=	swift-
 DISTVERSIONSUFFIX=	-RELEASE
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	lang
 
 MAINTAINER=	swills@FreeBSD.org

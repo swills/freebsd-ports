@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/libcdio-paranoia/Makefile 462575 2018-02-22 09:43:06Z jhale $
+# $FreeBSD: head/sysutils/libcdio-paranoia/Makefile 466597 2018-04-05 20:13:33Z jhale $
 
 PORTNAME=	libcdio-paranoia
 PORTVERSION=	10.2+0.94+1
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	GNU/libcdio
 

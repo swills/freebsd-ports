@@ -1,12 +1,12 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/math/fpc-gmp/Makefile 447304 2017-08-03 23:40:28Z acm $
+# $FreeBSD: head/math/fpc-gmp/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 CATEGORIES=	math lang
 PKGNAMESUFFIX=	-gmp
 
 COMMENT=	Free Pascal interface to gmp library
 
-USE_FPC=	yes
+USES=		fpc
 
 MASTERDIR=	${.CURDIR}/../../lang/fpc
 WRKUNITDIR=	${FPCSRCDIR}/packages/${PKGNAMESUFFIX:S/-//}

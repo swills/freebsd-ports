@@ -1,9 +1,8 @@
-# $FreeBSD: head/security/kbfs/Makefile 466300 2018-04-03 09:46:43Z sunpoet $
+# $FreeBSD: head/security/kbfs/Makefile 466455 2018-04-04 18:50:41Z sunpoet $
 
 PORTNAME=	kbfs
-PORTVERSION=	1.0.44
+PORTVERSION=	1.0.47
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	security
 
 MAINTAINER=	sunpoet@FreeBSD.org

@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/sysutils/unieject/Makefile 465718 2018-03-27 15:31:00Z emaste $
+# $FreeBSD: head/sysutils/unieject/Makefile 466597 2018-04-05 20:13:33Z jhale $
 
 PORTNAME=	unieject
 PORTVERSION=	6
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	sysutils
 MASTER_SITES=	SF
 

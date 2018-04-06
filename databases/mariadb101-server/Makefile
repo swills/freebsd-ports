@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb101-server/Makefile 466370 2018-04-03 19:10:28Z brnrd $
+# $FreeBSD: head/databases/mariadb101-server/Makefile 466451 2018-04-04 18:29:15Z brnrd $
 
 PORTNAME?=	mariadb
 PORTVERSION=	10.1.32
@@ -185,7 +185,7 @@ post-install-MROONGA-on:
 
 .include <bsd.port.options.mk>
 
-.if ${OPSYS} != FreeBSD || ${OSVERSION} < 1101515 || \
+.if ${OPSYS} != FreeBSD || ${OSVERSION} < 1101514 || \
 	${OSVERSION} >= 1200000 && ${OSVERSION} < 1200057
 SUB_LIST+=	LEGACY_LIMITS="" MODERN_LIMITS="@comment "
 .else

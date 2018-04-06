@@ -1,5 +1,5 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/net-p2p/transmission-remote-gui/Makefile 463622 2018-03-05 06:58:05Z antoine $
+# $FreeBSD: head/net-p2p/transmission-remote-gui/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 PORTNAME=	transmission-remote-gui
 PORTVERSION=	5.0.1
@@ -17,6 +17,7 @@ BUILD_DEPENDS=	lazbuild:editors/lazarus \
 		fpcres:lang/fpc-utils
 RUN_DEPENDS=	transmission-daemon:net-p2p/transmission-daemon
 
+USES=		fpc
 USE_FPC=	cairo fcl-base fcl-image fcl-net pasjpeg rtl-objpas rtl-extra \
 		x11
 USES=		iconv zip

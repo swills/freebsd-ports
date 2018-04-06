@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-jmespath/Makefile 433605 2017-02-07 20:32:54Z sunpoet $
+# $FreeBSD: head/devel/rubygem-jmespath/Makefile 466591 2018-04-05 19:12:51Z sunpoet $
 
 PORTNAME=	jmespath
-PORTVERSION=	1.3.1
+PORTVERSION=	1.4.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

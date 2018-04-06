@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/akmos/Makefile 462643 2018-02-22 21:02:31Z pizzamig $
+# $FreeBSD: head/security/akmos/Makefile 466519 2018-04-05 00:49:37Z dbaio $
 
 PORTNAME=	akmos
-PORTVERSION=	0.7.1
+PORTVERSION=	0.7.2
 CATEGORIES=	security
 
 MAINTAINER=	melanhit@gmail.com

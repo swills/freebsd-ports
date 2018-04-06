@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 466293 2018-04-03 09:36:28Z rene $
+# $FreeBSD: head/net/Makefile 466652 2018-04-06 16:26:14Z sunpoet $
 #
 
     COMMENT = Networking tools
@@ -929,6 +929,7 @@
     SUBDIR += pecl-oauth
     SUBDIR += pecl-oauth2
     SUBDIR += pecl-radius
+    SUBDIR += pecl-rdkafka
     SUBDIR += pecl-smbclient
     SUBDIR += pecl-yaz
     SUBDIR += pecl-yp
@@ -1252,6 +1253,7 @@
     SUBDIR += rubygem-omniauth-twitter12
     SUBDIR += rubygem-open-uri-cached
     SUBDIR += rubygem-opennebula
+    SUBDIR += rubygem-ovirt-engine-sdk
     SUBDIR += rubygem-packetfu
     SUBDIR += rubygem-pcaprub
     SUBDIR += rubygem-private_address_check

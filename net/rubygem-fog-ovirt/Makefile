@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-ovirt/Makefile 465213 2018-03-21 19:02:58Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-ovirt/Makefile 466665 2018-04-06 16:27:23Z sunpoet $
 
 PORTNAME=	fog-ovirt
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.2
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 RUN_DEPENDS=	rubygem-fog-core1>=1.45:devel/rubygem-fog-core1 \
 		rubygem-fog-json>=0:devel/rubygem-fog-json \
 		rubygem-fog-xml>=0.1.1:textproc/rubygem-fog-xml \
+		rubygem-ovirt-engine-sdk>=4.1.3:net/rubygem-ovirt-engine-sdk \
 		rubygem-rbovirt>=0.1.5:www/rubygem-rbovirt
 
 NO_ARCH=	yes

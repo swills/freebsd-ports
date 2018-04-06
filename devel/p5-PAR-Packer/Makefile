@@ -1,8 +1,8 @@
 # Created by: Rong-En Fan <rafan@FreeBSD.org>
-# $FreeBSD: head/devel/p5-PAR-Packer/Makefile 453854 2017-11-09 19:44:06Z sunpoet $
+# $FreeBSD: head/devel/p5-PAR-Packer/Makefile 466659 2018-04-06 16:26:51Z sunpoet $
 
 PORTNAME=	PAR-Packer
-PORTVERSION=	1.041
+PORTVERSION=	1.043
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,11 +1,12 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/fpc-fppkg/Makefile 460577 2018-02-01 08:17:51Z acm $
+# $FreeBSD: head/devel/fpc-fppkg/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-fppkg
 
 COMMENT=	Free Pascal package manager unit
 
+USES=		fpc
 USE_FPC=	dblib fastcgi fcl-async fcl-base fcl-db fcl-fpcunit fcl-json \
 		fcl-net fcl-passrc fcl-web fcl-xml httpd22 httpd24 ibase \
 		mysql odbc openssl oracle postgres pxlib rtl-extra sqlite

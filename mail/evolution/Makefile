@@ -1,9 +1,9 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/mail/evolution/Makefile 465061 2018-03-20 02:54:23Z truckman $
+# $FreeBSD: head/mail/evolution/Makefile 466648 2018-04-06 15:53:16Z jbeich $
 
 PORTNAME=	evolution
 PORTVERSION=	3.24.2
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	mail gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

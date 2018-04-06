@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/lfcbase/Makefile 464892 2018-03-18 10:57:01Z pi $
+# $FreeBSD: head/devel/lfcbase/Makefile 466630 2018-04-06 08:43:58Z pi $
 
 PORTNAME=	lfcbase
-PORTVERSION=	1.11.7
+PORTVERSION=	1.11.8
 CATEGORIES=	devel
 MASTER_SITES=	http://www.lemke-it.com/
 

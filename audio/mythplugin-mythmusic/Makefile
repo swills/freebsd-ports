@@ -1,9 +1,10 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/audio/mythplugin-mythmusic/Makefile 465529 2018-03-25 17:09:05Z jhale $
+# $FreeBSD: head/audio/mythplugin-mythmusic/Makefile 466597 2018-04-05 20:13:33Z jhale $
 
 PORTNAME=	mythmusic
 DISTVERSIONPREFIX=	v
 DISTVERSION=	29.1
+PORTREVISION=	1
 CATEGORIES=	audio
 PKGNAMEPREFIX=	mythplugin-
 

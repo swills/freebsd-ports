@@ -1,12 +1,13 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/fpc-fcl-passrc/Makefile 461463 2018-02-11 08:11:41Z antoine $
+# $FreeBSD: head/devel/fpc-fcl-passrc/Makefile 466532 2018-04-05 04:52:36Z acm $
 
-PORTREVISION=	1
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-fcl-passrc
+PORTREVISION=	1
 
 COMMENT=	Free Pascal language parsing library (FPC)
 
+USES=		fpc
 USE_FPC=	fcl-base fcl-res rtl-objpas
 
 MASTERDIR=	${.CURDIR}/../../lang/fpc

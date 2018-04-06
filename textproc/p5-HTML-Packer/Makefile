@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-HTML-Packer/Makefile 451284 2017-10-05 09:48:56Z sunpoet $
+# $FreeBSD: head/textproc/p5-HTML-Packer/Makefile 466475 2018-04-04 18:52:26Z sunpoet $
 
 PORTNAME=	HTML-Packer
-PORTVERSION=	2.06
+PORTVERSION=	2.07
 CATEGORIES=	textproc www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,7 +1,8 @@
-# $FreeBSD: head/dns/nsnotifyd/Makefile 446662 2017-07-26 16:44:40Z dvl $
+# $FreeBSD: head/dns/nsnotifyd/Makefile 466599 2018-04-05 20:37:15Z feld $
 
 PORTNAME=	nsnotifyd
 PORTVERSION=	1.6
+PORTREVISION=	1
 CATEGORIES=	dns
 MASTER_SITES=	http://dotat.at/prog/nsnotifyd/
 
@@ -14,6 +15,8 @@ GNU_CONFIGURE=	yes
 
 USES=		shebangfix
 SHEBANG_FILES=	nsnotify-liststealth
+
+USE_RC_SUBR=	nsnotifyd
 
 EXEFILES=	nsnotify nsnotifyd
 BINFILES=	nsnotify-liststealth nsnotify2git nsnotify2stealth nsnotify2update

@@ -1,8 +1,8 @@
-# $FreeBSD: head/emulators/mednafen/Makefile 456105 2017-12-12 04:35:49Z jbeich $
+# $FreeBSD: head/emulators/mednafen/Makefile 466597 2018-04-05 20:13:33Z jhale $
 
 PORTNAME=	mednafen
 PORTVERSION=	0.9.45.1
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	emulators games
 MASTER_SITES=	https://mednafen.github.io/releases/files/

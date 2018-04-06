@@ -1,11 +1,12 @@
 # Created by: John Merryweather Cooper et al
-# $FreeBSD: head/devel/fpc-regexpr/Makefile 447304 2017-08-03 23:40:28Z acm $
+# $FreeBSD: head/devel/fpc-regexpr/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-regexpr
 
 COMMENT=	Free Pascal regular expression routines
 
+USES=		fpc
 USE_FPC=	rtl-objpas
 
 MASTERDIR=	${.CURDIR}/../../lang/fpc

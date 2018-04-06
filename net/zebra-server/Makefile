@@ -1,9 +1,9 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/net/zebra-server/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/net/zebra-server/Makefile 466648 2018-04-06 15:53:16Z jbeich $
 
 PORTNAME=	zebra-server
 PORTVERSION=	2.0.55
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	net
 MASTER_SITES=	http://ftp.indexdata.dk/pub/zebra/
 DISTNAME=	idzebra-${PORTVERSION}

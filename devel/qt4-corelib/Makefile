@@ -1,9 +1,9 @@
 # Created by: lofi@FreeBSD.org
-# $FreeBSD: head/devel/qt4-corelib/Makefile 459478 2018-01-19 22:35:14Z adridg $
+# $FreeBSD: head/devel/qt4-corelib/Makefile 466648 2018-04-06 15:53:16Z jbeich $
 
 PORTNAME=	corelib
 DISTVERSION=	${QT4_VERSION}
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	devel
 PKGNAMEPREFIX=	qt4-
 

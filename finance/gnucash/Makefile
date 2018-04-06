@@ -1,9 +1,8 @@
-# $FreeBSD: head/finance/gnucash/Makefile 464998 2018-03-19 08:46:08Z madpilot $
+# $FreeBSD: head/finance/gnucash/Makefile 466512 2018-04-05 00:00:56Z madpilot $
 #   $MCom: ports/finance/gnucash/Makefile,v 1.26 2008/12/31 03:25:18 mezz Exp $
 
 PORTNAME=	gnucash
-PORTVERSION=	2.6.19
-PORTREVISION=	2
+PORTVERSION=	2.6.20
 CATEGORIES=	finance gnome
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20%28stable%29/${PORTVERSION}
 
@@ -94,6 +93,7 @@ GLIB_SCHEMAS=	org.gnucash.dialogs.business.gschema.xml \
 		org.gnucash.dialogs.reconcile.gschema.xml \
 		org.gnucash.dialogs.sxs.gschema.xml \
 		org.gnucash.dialogs.totd.gschema.xml \
+		org.gnucash.general.finance-quote.gschema.xml \
 		org.gnucash.gschema.xml \
 		org.gnucash.history.gschema.xml \
 		org.gnucash.warnings.gschema.xml \

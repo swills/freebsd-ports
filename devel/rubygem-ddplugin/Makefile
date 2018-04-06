@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-ddplugin/Makefile 445505 2017-07-11 16:59:14Z sunpoet $
+# $FreeBSD: head/devel/rubygem-ddplugin/Makefile 466484 2018-04-04 18:53:13Z sunpoet $
 
 PORTNAME=	ddplugin
-PORTVERSION=	1.0.1
+PORTVERSION=	1.0.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

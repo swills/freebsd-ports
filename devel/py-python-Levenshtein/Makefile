@@ -1,8 +1,9 @@
 # Created by: Dan Langille <dvl@FreeBSD.org>
-# $FreeBSD: head/devel/py-python-Levenshtein/Makefile 466391 2018-04-04 04:37:27Z yuri $
+# $FreeBSD: head/devel/py-python-Levenshtein/Makefile 466493 2018-04-04 18:53:59Z sunpoet $
 
 PORTNAME=	python-Levenshtein
 PORTVERSION=	0.12.0
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,6 +18,6 @@ USES=		python
 USE_PYTHON=	distutils autoplist
 
 post-install:
-	@${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/Levenshtein/_levenshtein.so
+	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/Levenshtein/_levenshtein.so
 
 .include <bsd.port.mk>

@@ -1,7 +1,8 @@
-# $FreeBSD: head/mail/rspamd/Makefile 465454 2018-03-24 14:40:15Z vsevolod $
+# $FreeBSD: head/mail/rspamd/Makefile 466648 2018-04-06 15:53:16Z jbeich $
 
 PORTNAME=	rspamd
 PORTVERSION=	1.7.2
+PORTREVISION=	1
 CATEGORIES=	mail
 
 MAINTAINER=	vsevolod@FreeBSD.org

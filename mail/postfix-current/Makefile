@@ -1,9 +1,9 @@
 # Created by: Torsten Blum <torstenb@FreeBSD.org>
-# $FreeBSD: head/mail/postfix-current/Makefile 466205 2018-04-02 07:37:29Z ohauer $
+# $FreeBSD: head/mail/postfix-current/Makefile 466648 2018-04-06 15:53:16Z jbeich $
 
 PORTNAME=	postfix
 DISTVERSION=	3.4-20180401
-PORTREVISION?=	0
+PORTREVISION?=	1
 PORTEPOCH=	5
 CATEGORIES=	mail ipv6
 MASTER_SITES=	ftp://ftp.porcupine.org/mirrors/postfix-release/ \
