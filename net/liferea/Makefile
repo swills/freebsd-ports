@@ -1,8 +1,9 @@
 # Created by: Hye-Shik Chang <perky@FreeBSD.org>
-# $FreeBSD: head/net/liferea/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/liferea/Makefile 466598 2018-04-05 20:13:48Z tobik $
 
 PORTNAME=	liferea
 DISTVERSION=	1.12-rc3
+PORTREVISION=	1
 CATEGORIES=	net gnome
 MASTER_SITES=	https://github.com/lwindolf/liferea/releases/download/v${PORTVERSION:S/.r/-rc/}/
 

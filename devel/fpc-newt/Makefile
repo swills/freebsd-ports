@@ -1,12 +1,12 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/devel/fpc-newt/Makefile 447304 2017-08-03 23:40:28Z acm $
+# $FreeBSD: head/devel/fpc-newt/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-newt
 
 COMMENT=	Free Pascal interface to newt library
 
-USE_FPC=	yes
+USES=		fpc
 
 MASTERDIR=	${.CURDIR}/../../lang/fpc
 WRKUNITDIR=	${FPCSRCDIR}/packages/${PKGNAMESUFFIX:S/-//}

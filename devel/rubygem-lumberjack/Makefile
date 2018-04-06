@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-lumberjack/Makefile 440725 2017-05-12 21:51:18Z sunpoet $
+# $FreeBSD: head/devel/rubygem-lumberjack/Makefile 466486 2018-04-04 18:53:23Z sunpoet $
 
 PORTNAME=	lumberjack
-PORTVERSION=	1.0.12
+PORTVERSION=	1.0.13
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

@@ -1,9 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/security/certificate-transparency/Makefile 463956 2018-03-09 12:07:37Z jbeich $
+# $FreeBSD: head/security/certificate-transparency/Makefile 466648 2018-04-06 15:53:16Z jbeich $
 
 PORTNAME=	certificate-transparency
 PORTVERSION=	20161015
-PORTREVISION=	21
+PORTREVISION=	22
 CATEGORIES=	security
 
 MAINTAINER=	ports@FreeBSD.org

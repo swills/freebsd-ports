@@ -1,9 +1,10 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/py-pdagent/Makefile 450415 2017-09-22 21:22:24Z feld $
+# $FreeBSD: head/net-mgmt/py-pdagent/Makefile 466572 2018-04-05 17:11:39Z feld $
 
 PORTNAME=	pdagent
 PORTVERSION=	1.4
 DISTVERSIONPREFIX=v
+PORTREVISION=	2
 CATEGORIES=	net-mgmt python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -25,6 +26,9 @@ GH_ACCOUNT=	PagerDuty
 SUB_LIST+=	PYTHON_CMD="${PYTHON_CMD}"
 
 BINFILES=	pd-queue pd-send pdagentd.py
+
+USERS=	pdagent
+GROUPS=	pdagent
 
 do-patch:
 	${REINPLACE_CMD} -e 's|/var/lib/pdagent|/var/db/pdagent|' -e 's|/etc|${ETCDIR}|' ${WRKSRC}/pdagent/confdirs.py

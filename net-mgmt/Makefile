@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 466353 2018-04-03 14:00:03Z feld $
+# $FreeBSD: head/net-mgmt/Makefile 466536 2018-04-05 05:19:09Z yuri $
 #
 
     COMMENT = Network management tools
@@ -309,11 +309,17 @@
     SUBDIR += py-dnsdiag
     SUBDIR += py-ipcalc
     SUBDIR += py-ipy
+    SUBDIR += py-junos-eznc
     SUBDIR += py-msrest
     SUBDIR += py-msrestazure
+    SUBDIR += py-napalm
+    SUBDIR += py-ncclient
     SUBDIR += py-pdagent
+    SUBDIR += py-pyIOSXR
     SUBDIR += py-pyang
+    SUBDIR += py-pyeapi
     SUBDIR += py-pynsca
+    SUBDIR += py-pynxos
     SUBDIR += py-pysmi
     SUBDIR += py-pyzabbix
     SUBDIR += py-snmp4

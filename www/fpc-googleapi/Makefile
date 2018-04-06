@@ -1,10 +1,11 @@
-# $FreeBSD: head/www/fpc-googleapi/Makefile 460577 2018-02-01 08:17:51Z acm $
+# $FreeBSD: head/www/fpc-googleapi/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 CATEGORIES=	www lang
 PKGNAMESUFFIX=	-googleapi
 
 COMMENT=	Free Pascal googleapi unit
 
+USES=		fpc
 USE_FPC=	dblib fastcgi fcl-async fcl-base fcl-db fcl-json fcl-fpcunit \
 		fcl-net fcl-passrc fcl-res fcl-web fcl-xml httpd22 httpd24 \
 		ibase mysql postgres pxlib odbc openssl oracle rtl-extra \

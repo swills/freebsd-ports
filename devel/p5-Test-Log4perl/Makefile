@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-Log4perl/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Test-Log4perl/Makefile 466669 2018-04-06 16:27:39Z sunpoet $
 
 PORTNAME=	Test-Log4perl
 PORTVERSION=	0.1001
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Test::Log4perl - test Log::Log4perl
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception \
 		p5-Lingua-EN-Numbers-Ordinate>=0:textproc/p5-Lingua-EN-Numbers-Ordinate \

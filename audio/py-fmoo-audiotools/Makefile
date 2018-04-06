@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/py-fmoo-audiotools/Makefile 414276 2016-04-29 15:20:28Z arved $
+# $FreeBSD: head/audio/py-fmoo-audiotools/Makefile 466597 2018-04-05 20:13:33Z jhale $
 
 PORTNAME=	fmoo-audiotools
 PORTVERSION=	3.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio python
 MASTER_SITES=	SF/audiotools/audiotools
 DISTNAME=	audiotools-${PORTVERSION}

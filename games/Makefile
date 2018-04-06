@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 465287 2018-03-22 14:03:06Z rene $
+# $FreeBSD: head/games/Makefile 466542 2018-04-05 08:50:40Z tz $
 #
 
     COMMENT = Games and related software
@@ -280,6 +280,7 @@
     SUBDIR += flightgear-aircraft
     SUBDIR += flightgear-data
     SUBDIR += flightgear-mb339-pan
+    SUBDIR += flightgear-terragear
     SUBDIR += flobopuyo
     SUBDIR += flukz
     SUBDIR += flyhard

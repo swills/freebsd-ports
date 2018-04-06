@@ -1,5 +1,5 @@
 # Created by: Oleg Alexeenkov
-# $FreeBSD: head/games/openastromenace/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/openastromenace/Makefile 466610 2018-04-06 02:17:02Z emaste $
 
 PORTNAME=	openastromenace
 PORTVERSION=	1.3.2
@@ -25,6 +25,7 @@ USE_GL=		gl glu
 USE_SDL=	sdl
 WRKSRC=		${WRKDIR}/AstroMenace
 CMAKE_ARGS=	-DDATADIR="${DATADIR}"
+LLD_UNSAFE=	yes
 
 PLIST_FILES=	bin/AstroMenace \
 		share/pixmaps/${PORTNAME}.png

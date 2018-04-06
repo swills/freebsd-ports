@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/npm/Makefile 463520 2018-03-03 19:15:24Z sunpoet $
+# $FreeBSD: head/www/npm/Makefile 466653 2018-04-06 16:26:20Z sunpoet $
 
 PORTNAME=	npm
-PORTVERSION=	5.7.1
+PORTVERSION=	5.8.0
 CATEGORIES=	www
 MASTER_SITES=	LOCAL/sunpoet
 
@@ -33,7 +33,7 @@ CPE_VENDOR=	npmjs
 CPE_PRODUCT=	node_packaged_modules
 
 SHEBANG_GLOB=	*.py
-SHEBANG_FILES=	lib/node_modules/npm/node_modules/node-gyp/gyp/samples/samples
+SHEBANG_FILES=	lib/node_modules/npm/node_modules/npm-lifecycle/node_modules/node-gyp/gyp/samples/samples
 
 NODE_RUN_DEPENDS=	node>=0.8.0:www/node
 NODE4_RUN_DEPENDS=	node4>=0.8.0:www/node4
@@ -49,7 +49,7 @@ EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-bug-178881
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/local|${PREFIX}|' ${WRKSRC}/etc/man.d/npm.conf
-	@${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|' ${WRKSRC}/lib/node_modules/npm/node_modules/node-gyp/gyp/gyp
+	@${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|' ${WRKSRC}/lib/node_modules/npm/node_modules/npm-lifecycle/node_modules/node-gyp/gyp/gyp
 	@${FIND} ${WRKSRC}/ -name '*.sh' -exec ${REINPLACE_CMD} -e '1 s|/usr/local|${LOCALBASE}|' {} +
 
 do-install:

@@ -1,9 +1,9 @@
 # Created by: proff
-# $FreeBSD: head/games/an/Makefile 453790 2017-11-09 02:31:47Z jbeich $
+# $FreeBSD: head/games/an/Makefile 466648 2018-04-06 15:53:16Z jbeich $
 
 PORTNAME=	an
 PORTVERSION=	1.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 MASTER_SITES=	DEBIAN_POOL
 DISTNAME=	${PORTNAME}_${PORTVERSION}.orig

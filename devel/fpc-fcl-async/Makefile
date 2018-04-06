@@ -1,12 +1,12 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/fpc-fcl-async/Makefile 447304 2017-08-03 23:40:28Z acm $
+# $FreeBSD: head/devel/fpc-fcl-async/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-fcl-async
 
 COMMENT=	Free Pascal asynchronous event management (FCL)
 
-USE_FPC=	yes
+USES=		fpc
 
 MASTERDIR=	${.CURDIR}/../../lang/fpc
 WRKUNITDIR=	${FPCSRCDIR}/packages/${PKGNAMESUFFIX:S/-//}

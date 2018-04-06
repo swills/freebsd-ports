@@ -1,11 +1,11 @@
-# $FreeBSD: head/lang/fpc-rtl-extra/Makefile 447304 2017-08-03 23:40:28Z acm $
+# $FreeBSD: head/lang/fpc-rtl-extra/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 CATEGORIES=	lang
 PKGNAMESUFFIX=	-rtl-extra
 
 COMMENT=	Free Pascal rtl-extra unit
 
-USE_FPC=	yes
+USES=		fpc
 
 MASTERDIR=	${.CURDIR}/../../lang/fpc
 WRKUNITDIR=	${FPCSRCDIR}/packages/${PKGNAMESUFFIX:S/-//}

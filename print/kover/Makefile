@@ -1,9 +1,9 @@
 # Created by: Markus Brueffer <brueffer@phoenix-systems.de>
-# $FreeBSD: head/print/kover/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/print/kover/Makefile 466597 2018-04-05 20:13:33Z jhale $
 
 PORTNAME=	kover
 PORTVERSION=	6
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	print kde
 MASTER_SITES=	https://lisas.de/kover/
 

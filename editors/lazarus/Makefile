@@ -1,5 +1,5 @@
 # Created by: Shaun Amott <shaun@inerd.com>
-# $FreeBSD: head/editors/lazarus/Makefile 460668 2018-02-02 05:43:42Z acm $
+# $FreeBSD: head/editors/lazarus/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 PORTNAME=	lazarus
 PORTVERSION=	1.8.0
@@ -17,12 +17,13 @@ RUN_DEPENDS?=	#
 
 ONLY_FOR_ARCHS=	i386 amd64
 
-USES=		gmake
+USES=		fpc gmake
 USE_GNOME=	#
 USE_FPC?=	cairo dblib fcl-base fcl-db fcl-fpcunit fcl-image fcl-json fcl-net \
 		fcl-registry fcl-res fcl-web fcl-xml gtk2 ibase iconvenc mysql \
 		numlib odbc openssl oracle pasjpeg postgres regexpr rtl-extra \
 		sqlite x11
+USE_XORG=	x11
 OPT?=		"-Sgic "
 
 MAKE_ENV=	OPT=${OPT}
@@ -70,7 +71,7 @@ RUN_DEPENDS+=	${LOCALBASE}/bin/gdb:devel/gdb
 .endif
 
 .if ${PORT_OPTIONS:MGTK2}
-USE_GNOME=	gtk20 gdkpixbuf
+USE_GNOME=	cairo gtk20 gdkpixbuf2
 LCL_PLATFORM=	gtk2
 BUILD_DEPENDS+=	${LCL_UNITS_DIR}/${LCL_PLATFORM}/interfaces.ppu:editors/lazarus-lcl-gtk2
 RUN_DEPENDS+=	${LCL_UNITS_DIR}/${LCL_PLATFORM}/interfaces.ppu:editors/lazarus-lcl-gtk2

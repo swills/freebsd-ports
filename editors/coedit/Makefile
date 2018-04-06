@@ -1,5 +1,5 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/editors/coedit/Makefile 462578 2018-02-22 09:52:47Z antoine $
+# $FreeBSD: head/editors/coedit/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 PORTNAME=	coedit
 PORTVERSION=	3.6.1
@@ -26,6 +26,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	BBasile
 GH_PROJECT=	Coedit
 
+USES=		fpc
 USE_FPC=	cairo chm fcl-base fcl-db fcl-image fcl-json fcl-net fcl-registry \
 		fcl-stl fcl-web fcl-xml numlib openssl pasjpeg rtl-objpas \
 		regexpr rtl-extra x11

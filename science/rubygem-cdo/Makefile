@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/science/rubygem-cdo/Makefile 449464 2017-09-08 21:52:00Z sunpoet $
+# $FreeBSD: head/science/rubygem-cdo/Makefile 466492 2018-04-04 18:53:54Z sunpoet $
 
 PORTNAME=	cdo
-PORTVERSION=	1.3.4
+PORTVERSION=	1.3.6
 CATEGORIES=	science rubygems
 MASTER_SITES=	RG
 

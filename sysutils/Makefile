@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 465992 2018-03-30 18:25:14Z jrm $
+# $FreeBSD: head/sysutils/Makefile 466450 2018-04-04 18:20:29Z dvl $
 #
 
     COMMENT = System utilities
@@ -458,6 +458,7 @@
     SUBDIR += hal-info
     SUBDIR += hardlink
     SUBDIR += hare
+    SUBDIR += hared
     SUBDIR += hatop
     SUBDIR += hdrecover
     SUBDIR += healthd

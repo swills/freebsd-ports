@@ -1,8 +1,9 @@
 # Created by: Gustau Perez i Querol <gustau.perez@gmail.com>
-# $FreeBSD: head/x11-fm/sushi/Makefile 465547 2018-03-25 21:48:32Z brd $
+# $FreeBSD: head/x11-fm/sushi/Makefile 466598 2018-04-05 20:13:48Z tobik $
 
 PORTNAME=	sushi
 PORTVERSION=	3.18.0
+PORTREVISION=	1
 CATEGORIES=	x11-fm gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

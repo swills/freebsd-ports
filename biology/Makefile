@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 466379 2018-04-03 20:57:05Z jwb $
+# $FreeBSD: head/biology/Makefile 466449 2018-04-04 17:21:39Z jwb $
 #
 
     COMMENT = Biology
@@ -78,6 +78,7 @@
     SUBDIR += p5-TrimGalore
     SUBDIR += p5-transdecoder
     SUBDIR += paml
+    SUBDIR += pear-merger
     SUBDIR += phrap
     SUBDIR += phred
     SUBDIR += phylip

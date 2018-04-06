@@ -1,12 +1,12 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/graphics/fpc-imagemagick/Makefile 460558 2018-02-01 07:14:41Z acm $
+# $FreeBSD: head/graphics/fpc-imagemagick/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 CATEGORIES=	graphics lang
 PKGNAMESUFFIX=	-imagemagick
 
 COMMENT=	Free Pascal interface to ImageMagick
 
-USE_FPC=	yes
+USES=		fpc
 
 MASTERDIR=	${.CURDIR}/../../lang/fpc
 WRKUNITDIR=	${FPCSRCDIR}/packages/${PKGNAMESUFFIX:S/-//}

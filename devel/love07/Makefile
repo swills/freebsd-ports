@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/love07/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/devel/love07/Makefile 466559 2018-04-05 14:00:35Z emaste $
 
 PORTNAME=	love
 PORTVERSION=	0.7.2
@@ -32,6 +32,7 @@ GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include -I${LOCALBASE}/include/freetype2 \
 		-I${LUA_INCDIR} `${SDL_CONFIG} --cflags`
 LDFLAGS+=	-L${LOCALBASE}/lib -L${LUA_LIBDIR}
+LLD_UNSAFE=	yes
 CONFIGURE_ARGS=	--bindir=${PREFIX}/bin --libdir=${PREFIX}/lib \
 		--program-suffix=07
 WRKSRC=		${WRKDIR}/love-HEAD

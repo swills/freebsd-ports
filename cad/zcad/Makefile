@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/cad/zcad/Makefile 462578 2018-02-22 09:52:47Z antoine $
+# $FreeBSD: head/cad/zcad/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 PORTNAME=	zcad
 PORTVERSION=	0.9.8
@@ -13,7 +13,7 @@ COMMENT=	Simple CAD program
 
 BUILD_DEPENDS=	lazbuild:editors/lazarus
 
-USES=		tar:xz
+USES=		fpc tar:xz
 USE_FPC=	cairo chm fcl-base fcl-image fcl-json fcl-stl fcl-xml opengl \
 		pasjpeg rtl-extra rtl-objpas x11
 

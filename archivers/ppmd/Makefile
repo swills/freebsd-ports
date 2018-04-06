@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/archivers/ppmd/Makefile 462482 2018-02-21 09:16:46Z ehaupt $
+# $FreeBSD: head/archivers/ppmd/Makefile 466555 2018-04-05 12:39:29Z ehaupt $
 
 PORTNAME=	ppmd
 PORTVERSION=	20050811
@@ -14,17 +14,10 @@ PLIST_FILES=	bin/ppmd man/man1/ppmd.1.gz
 
 OPTIONS_DEFINE=	DOCS
 
-.include <bsd.port.pre.mk>
-
-# does not compile with clang 6.0.0
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200056
-USE_GCC=	yes
-.endif
-
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/${PORTNAME}.1 ${STAGEDIR}${MANPREFIX}/man/man1
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -1,8 +1,9 @@
 # Created by: Christopher Knaust <jigboe@gmx.de>
-# $FreeBSD: head/www/surf/Makefile 448061 2017-08-16 16:26:44Z tobik $
+# $FreeBSD: head/www/surf/Makefile 466598 2018-04-05 20:13:48Z tobik $
 
 PORTNAME=	surf
 DISTVERSION=	2.0
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://dl.suckless.org/${PORTNAME}/
 PKGNAMESUFFIX=	-browser

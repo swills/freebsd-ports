@@ -1,5 +1,5 @@
 # Created by: mdodd
-# $FreeBSD: head/games/scorched3d/Makefile 454454 2017-11-18 19:32:38Z zeising $
+# $FreeBSD: head/games/scorched3d/Makefile 466609 2018-04-06 02:01:01Z emaste $
 
 PORTNAME=	scorched3d
 PORTVERSION=	0.${SCORCH_VERSION}${SCORCH_REVISION}
@@ -30,6 +30,7 @@ WX_CONF_ARGS=	absolute
 USES=		autoreconf dos2unix gmake iconv jpeg openal:al,alut perl5 pkgconfig
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--datadir=${DATADIR}
+LLD_UNSAFE=	yes
 
 DOS2UNIX_GLOB=	*.h *.cpp
 

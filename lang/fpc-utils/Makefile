@@ -1,11 +1,12 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/lang/fpc-utils/Makefile 460662 2018-02-02 03:57:21Z acm $
+# $FreeBSD: head/lang/fpc-utils/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 CATEGORIES=	lang
 PKGNAMESUFFIX=	-utils
 
 COMMENT=	Free Pascal Compiler utilities
 
+USES=		fpc
 USE_FPC=	chm fcl-base fcl-fpcunit fcl-net fcl-passrc fcl-res fcl-xml \
 		fppkg libcurl fcl-json rtl-extra rtl-objpas openssl fcl-async \
 		fcl-web fcl-db ibase mysql odbc oracle postgres sqlite \

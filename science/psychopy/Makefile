@@ -1,8 +1,8 @@
 # Created by: wenheping@gmail.com
-# $FreeBSD: head/science/psychopy/Makefile 465430 2018-03-24 06:43:39Z yuri $
+# $FreeBSD: head/science/psychopy/Makefile 466627 2018-04-06 08:14:03Z yuri $
 
 PORTNAME=	psychopy
-DISTVERSION=	1.90.0
+DISTVERSION=	1.90.1
 CATEGORIES=	science python
 
 MAINTAINER=	ports@FreeBSD.org

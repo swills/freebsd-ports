@@ -1,13 +1,13 @@
 # Created by: Jie Gao <gaoj@cpsc.ucalgary.ca>
-# $FreeBSD: head/math/qtiplot/Makefile 455913 2017-12-10 20:48:45Z antoine $
+# $FreeBSD: head/math/qtiplot/Makefile 466565 2018-04-05 14:26:33Z makc $
 
 PORTNAME=	qtiplot
 DISTVERSION=	0.9.8.9
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	math science
 MASTER_SITES=	BERLIOS http://soft.proindependent.com/src/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	makc@FreeBSD.org
 COMMENT=	Data analysis and scientific plotting
 
 LIB_DEPENDS=	libgsl.so:math/gsl \
@@ -56,11 +56,6 @@ post-patch:
 		${WRKSRC}/fitPlugins/*/*.pro
 	${REINPLACE_CMD} -e '/^system($$$$LUPDATE/d; /^system($$$$LRELEASE/d' \
 		${WRKSRC}/${PORTNAME}/qtiplot.pro
-
-post-patch-PYTHON-on:
-	${REINPLACE_CMD} -e \
-		'/^sys.path.append/s|"\."|"${DATADIR}"|' \
-		${WRKSRC}/${PORTNAME}/qtiplotrc.py
 
 post-patch-PYTHON-off:
 	${REINPLACE_CMD} -e \

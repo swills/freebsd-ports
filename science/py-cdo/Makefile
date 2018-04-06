@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/science/py-cdo/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/science/py-cdo/Makefile 466482 2018-04-04 18:53:03Z sunpoet $
 
 PORTNAME=	cdo
-PORTVERSION=	1.3.5
+PORTVERSION=	1.3.6
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

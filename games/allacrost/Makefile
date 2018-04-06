@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/allacrost/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/games/allacrost/Makefile 466607 2018-04-06 01:36:08Z emaste $
 
 PORTNAME=	allacrost
 PORTVERSION=	1.0.2
@@ -28,6 +28,7 @@ QT_NONSTANDARD=	yes # used when EDITOR enabled
 CONFIGURE_ARGS=	--datadir=${DATADIR}
 CPPFLAGS+=	-I${LOCALBASE}/include -I${LUA_INCDIR}
 LDFLAGS+=	-L${LOCALBASE}/lib -L${LUA_LIBDIR}
+LLD_UNSAFE=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

@@ -1,5 +1,5 @@
 # Created by: Scott Sanders <scott@jssjr.com>
-# $FreeBSD: head/textproc/rubygem-escape_utils-rails4/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/textproc/rubygem-escape_utils-rails4/Makefile 466498 2018-04-04 18:54:24Z sunpoet $
 
 PORTNAME=	escape_utils
 PORTVERSION=	1.2.1
@@ -12,6 +12,9 @@ COMMENT=	Faster string escaping routines for your web apps
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	Use textproc/rubygem-escape_utils instead
+EXPIRATION_DATE=2018-04-30
 
 USE_RUBY=	yes
 USES=		gem

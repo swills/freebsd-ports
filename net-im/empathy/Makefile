@@ -1,8 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/net-im/empathy/Makefile 461077 2018-02-06 17:01:48Z amdmi3 $
+# $FreeBSD: head/net-im/empathy/Makefile 466598 2018-04-05 20:13:48Z tobik $
 
 PORTNAME=	empathy
 PORTVERSION=	3.12.14
+PORTREVISION=	1
 CATEGORIES=	net-im gnome
 MASTER_SITES=	GNOME
 

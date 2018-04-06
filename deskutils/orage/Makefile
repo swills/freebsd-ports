@@ -1,9 +1,9 @@
 # Created by: Matt Lancereau <matt@rimasec.net>
-# $FreeBSD: head/deskutils/orage/Makefile 465061 2018-03-20 02:54:23Z truckman $
+# $FreeBSD: head/deskutils/orage/Makefile 466648 2018-04-06 15:53:16Z jbeich $
 
 PORTNAME=	orage
 PORTVERSION=	4.12.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	deskutils xfce
 MASTER_SITES=	XFCE/src/apps/${PORTNAME}/${PORTVERSION:R}/
 DIST_SUBDIR=	xfce4

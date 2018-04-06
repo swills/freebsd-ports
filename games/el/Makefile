@@ -1,5 +1,5 @@
 # Created by: Janni
-# $FreeBSD: head/games/el/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/games/el/Makefile 466608 2018-04-06 01:58:48Z emaste $
 
 PORTNAME=	el
 PORTVERSION=	1.9.4.3
@@ -27,6 +27,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	raduprv
 GH_PROJECT=	Eternal-Lands
 LDFLAGS+=	-L${LOCALBASE}/lib ${ICONV_LIB} -lX11
+LLD_UNSAFE=	yes
 
 ALL_TARGET=	el.bin
 MAKEFILE=	Makefile.bsd

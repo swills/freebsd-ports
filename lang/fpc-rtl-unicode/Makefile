@@ -1,11 +1,11 @@
-# $FreeBSD: head/lang/fpc-rtl-unicode/Makefile 447304 2017-08-03 23:40:28Z acm $
+# $FreeBSD: head/lang/fpc-rtl-unicode/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 CATEGORIES=	lang
 PKGNAMESUFFIX=	-rtl-unicode
 
 COMMENT=	Free Pascal compatibility unit with Delphi
 
-USE_FPC=	yes
+USES=		fpc
 
 MASTERDIR=	${.CURDIR}/../../lang/fpc
 WRKUNITDIR=	${FPCSRCDIR}/packages/${PKGNAMESUFFIX:S/-//}

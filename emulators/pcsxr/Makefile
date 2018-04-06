@@ -1,9 +1,9 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/emulators/pcsxr/Makefile 459919 2018-01-25 11:07:50Z martymac $
+# $FreeBSD: head/emulators/pcsxr/Makefile 466597 2018-04-05 20:13:33Z jhale $
 
 PORTNAME=	pcsxr
 PORTVERSION=	1.9.94.r87113
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	emulators
 MASTER_SITES=	http://contribs.martymac.org/FreeBSD-ports/distfiles/ \
 		LOCAL/martymac

@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/databases/py-pgcli/Makefile 463500 2018-03-03 16:30:29Z sunpoet $
+# $FreeBSD: head/databases/py-pgcli/Makefile 466660 2018-04-06 16:26:56Z sunpoet $
 
 PORTNAME=	pgcli
-PORTVERSION=	1.9.0
+PORTVERSION=	1.9.1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -27,8 +27,5 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cli-helpers>=1.0.1:devel/py-cli-helpers@${FL
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils
 USES=		pgsql python
-
-post-patch:
-	@${REINPLACE_CMD} -e 's|psycopg2-binary|psycopg2|' ${WRKSRC}/setup.py ${WRKSRC}/pgcli.egg-info/requires.txt
 
 .include <bsd.port.mk>

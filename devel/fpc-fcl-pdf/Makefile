@@ -1,11 +1,12 @@
-# $FreeBSD: head/devel/fpc-fcl-pdf/Makefile 461476 2018-02-11 08:35:20Z antoine $
+# $FreeBSD: head/devel/fpc-fcl-pdf/Makefile 466532 2018-04-05 04:52:36Z acm $
 
-PORTREVISION=	1
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-fcl-pdf
+PORTREVISION=	1
 
 COMMENT=	Free Pascal pdf (FCL)
 
+USES=		fpc
 USE_FPC=	fcl-base fcl-image fcl-res fcl-xml pasjpeg rtl-objpas
 
 MASTERDIR=	${.CURDIR}/../../lang/fpc

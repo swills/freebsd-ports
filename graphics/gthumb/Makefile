@@ -1,9 +1,10 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/graphics/gthumb/Makefile 465683 2018-03-27 09:49:19Z bapt $
+# $FreeBSD: head/graphics/gthumb/Makefile 466598 2018-04-05 20:13:48Z tobik $
 #   $MCom: ports/trunk/graphics/gthumb/Makefile 19823 2014-08-20 09:28:14Z gusi $
 
 PORTNAME=	gthumb
 PORTVERSION=	3.6.1
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

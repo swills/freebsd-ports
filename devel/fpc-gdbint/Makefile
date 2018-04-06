@@ -1,12 +1,12 @@
 # Created by: John Merryweather Cooper et al
-# $FreeBSD: head/devel/fpc-gdbint/Makefile 447304 2017-08-03 23:40:28Z acm $
+# $FreeBSD: head/devel/fpc-gdbint/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 CATEGORIES=	devel
 PKGNAMESUFFIX=	-gdbint
 
 COMMENT=	Free Pascal unit providing interface to gdb
 
-USE_FPC=	yes
+USES=		fpc
 
 MASTERDIR=	${.CURDIR}/../../lang/fpc
 WRKUNITDIR=	${FPCSRCDIR}/packages/${PKGNAMESUFFIX:S/-//}

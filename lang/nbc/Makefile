@@ -1,5 +1,5 @@
 # Created by: Ivan "Rambius" Ivanov <rambiusparkisanius@gmail.com>
-# $FreeBSD: head/lang/nbc/Makefile 460572 2018-02-01 07:31:03Z acm $
+# $FreeBSD: head/lang/nbc/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 PORTNAME=		nbc
 PORTVERSION=		1.2.1.r4
@@ -20,7 +20,7 @@ ROBOCTL_DESC=		Include roboctl to communicate with the NXT
 
 ROBOCTL_RUN_DEPENDS=	legoctl:devel/roboctl
 
-USES=			dos2unix gmake tar:tgz
+USES=			dos2unix fpc gmake tar:tgz
 USE_FPC=		fcl-base fcl-image pasjpeg rtl-objpas
 
 PLIST_FILES=		bin/nbc \

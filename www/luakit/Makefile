@@ -1,8 +1,9 @@
 # Created by: Stefan Hagen <ports@textmail.me>
-# $FreeBSD: head/www/luakit/Makefile 448292 2017-08-19 09:25:30Z joneum $
+# $FreeBSD: head/www/luakit/Makefile 466598 2018-04-05 20:13:48Z tobik $
 
 PORTNAME=	luakit
 PORTVERSION=	2017.08.10
+PORTREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	ports@textmail.me

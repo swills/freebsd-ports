@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb100-server/Makefile 466371 2018-04-03 19:12:23Z brnrd $
+# $FreeBSD: head/databases/mariadb100-server/Makefile 466451 2018-04-04 18:29:15Z brnrd $
 
 PORTNAME?=	mariadb
 PORTVERSION=	10.0.34
@@ -163,7 +163,7 @@ USE_GCC=	yes
 
 .include <bsd.port.options.mk>
 
-.if ${OPSYS} != FreeBSD || ${OSVERSION} < 1101515 || \
+.if ${OPSYS} != FreeBSD || ${OSVERSION} < 1101514 || \
 	${OSVERSION} >= 1200000 && ${OSVERSION} < 1200057
 SUB_LIST+=	LEGACY_LIMITS="" MODERN_LIMITS="@comment "
 .else

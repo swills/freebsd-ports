@@ -1,5 +1,5 @@
 # Created by: Andreas Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/archivers/bzip/Makefile 357450 2014-06-11 09:49:14Z marino $
+# $FreeBSD: head/archivers/bzip/Makefile 466633 2018-04-06 09:33:34Z amdmi3 $
 
 PORTNAME=	bzip
 PORTVERSION=	0.21
@@ -11,6 +11,7 @@ MAINTAINER=	portmaster@bsdforge.com
 COMMENT=	Block-sorting file compressor
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RESTRICTED=	may be covered by patents
 USE_CSTD=	gnu89

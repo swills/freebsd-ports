@@ -1,9 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/devel/objecthash/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
+# $FreeBSD: head/devel/objecthash/Makefile 466648 2018-04-06 15:53:16Z jbeich $
 
 PORTNAME=	objecthash
 PORTVERSION=	20160802
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 
 MAINTAINER=	amutu@amutu.com

@@ -1,12 +1,12 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/audio/fpc-oggvorbis/Makefile 447304 2017-08-03 23:40:28Z acm $
+# $FreeBSD: head/audio/fpc-oggvorbis/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 CATEGORIES=	audio lang
 PKGNAMESUFFIX=	-oggvorbis
 
 COMMENT=	Free Pascal interface to ogg & vorbis libraries
 
-USE_FPC=	yes
+USES=		fpc
 
 MASTERDIR=	${.CURDIR}/../../lang/fpc
 WRKUNITDIR=	${FPCSRCDIR}/packages/${PKGNAMESUFFIX:S/-//}

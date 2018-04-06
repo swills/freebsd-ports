@@ -15,7 +15,7 @@ you update your ports collection, before attempting any port upgrades.
   a patch for the default installation can be applied with:
 
   # cd /usr/local/www/nextcloud
-  # su -m www -c "php ./occ config:import < /usr/local/share/nextcloud/fix-apps_paths.json
+  # su -m www -c "php ./occ config:import < /usr/local/share/nextcloud/fix-apps_paths.json"
 
 20180401:
   AFFECTS: users of mail/dovecot and mail/dovecot-pigeonhole
@@ -15692,4 +15692,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: head/UPDATING 466393 2018-04-04 07:11:09Z brnrd $
+$FreeBSD: head/UPDATING 466540 2018-04-05 08:21:24Z brnrd $

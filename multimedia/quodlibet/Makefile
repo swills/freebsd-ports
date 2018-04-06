@@ -1,9 +1,9 @@
 # Created by: Byung-Hee HWANG <bh@izb.knu.ac.kr>
-# $FreeBSD: head/multimedia/quodlibet/Makefile 464401 2018-03-13 20:03:09Z amdmi3 $
+# $FreeBSD: head/multimedia/quodlibet/Makefile 466598 2018-04-05 20:13:48Z tobik $
 
 PORTNAME=	quodlibet
 PORTVERSION=	3.6.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	multimedia audio python gnome
 MASTER_SITES=	http://bitbucket.org/lazka/${PORTNAME}-files/raw/default/releases/
 

@@ -1,12 +1,12 @@
-# $FreeBSD: head/devel/fpc-fcl-stl/Makefile 461525 2018-02-11 20:05:37Z antoine $
+# $FreeBSD: head/devel/fpc-fcl-stl/Makefile 466532 2018-04-05 04:52:36Z acm $
 
-PORTREVISION=	1
 CATEGORIES=	devel lang
 PKGNAMESUFFIX=	-fcl-stl
+PORTREVISION=	1
 
 COMMENT=	Free Pascal generic container library (FCL)
 
-USE_FPC=	yes
+USES=		fpc
 
 MASTERDIR=	${.CURDIR}/../../lang/fpc
 WRKUNITDIR=	${FPCSRCDIR}/packages/${PKGNAMESUFFIX:S/-//}

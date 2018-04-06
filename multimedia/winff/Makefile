@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/multimedia/winff/Makefile 463606 2018-03-04 22:31:02Z antoine $
+# $FreeBSD: head/multimedia/winff/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 PORTNAME=	WinFF
 PORTVERSION=	1.5.5
@@ -19,6 +19,7 @@ BUILD_DEPENDS=	lazbuild:editors/lazarus
 LIB_DEPENDS=	libavutil.so:multimedia/ffmpeg
 
 NO_WRKSUBDIR=	yes
+USES=		fpc
 USE_XORG=	x11
 USE_FPC=	cairo fcl-base fcl-image fcl-json fcl-xml pasjpeg regexpr x11
 USE_GNOME=	cairo

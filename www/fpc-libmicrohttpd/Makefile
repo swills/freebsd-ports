@@ -1,10 +1,11 @@
-# $FreeBSD: head/www/fpc-libmicrohttpd/Makefile 460557 2018-02-01 07:09:44Z acm $
+# $FreeBSD: head/www/fpc-libmicrohttpd/Makefile 466532 2018-04-05 04:52:36Z acm $
 
 CATEGORIES=	www lang
 PKGNAMESUFFIX=	-libmicrohttpd
 
 COMMENT=	Free Pascal libmicrohttpd unit
 
+USES=		fpc
 USE_FPC=	rtl-extra
 
 MASTERDIR=	${.CURDIR}/../../lang/fpc

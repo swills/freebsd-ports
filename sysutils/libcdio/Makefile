@@ -1,8 +1,8 @@
 # Created by: arved
-# $FreeBSD: head/sysutils/libcdio/Makefile 462576 2018-02-22 09:47:20Z jhale $
+# $FreeBSD: head/sysutils/libcdio/Makefile 466597 2018-04-05 20:13:33Z jhale $
 
 PORTNAME=	libcdio
-PORTVERSION=	0.94
+PORTVERSION=	2.0.0
 CATEGORIES=	sysutils
 MASTER_SITES=	GNU
 
@@ -13,11 +13,14 @@ LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libcddb.so:audio/libcddb
+TEST_DEPENDS=	genisoimage:sysutils/genisoimage
 
-USES=		cpe gmake iconv localbase libtool \
-		ncurses pathfix perl5 pkgconfig
+USES=		cpe gmake iconv libtool localbase \
+		ncurses pathfix perl5 pkgconfig shebangfix
 USE_PERL5=	build
 USE_LDCONFIG=	yes
+SHEBANG_FILES=	test/check_bad_iso.sh
+bash_CMD=	${SH}
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	${ICONV_CONFIGURE_ARG}
@@ -26,8 +29,6 @@ LIBS+=		${ICONV_LIB}
 INFO=		libcdio
 CPE_VENDOR=	gnu
 INSTALL_TARGET=	install-strip
-
-post-patch:
-	@${REINPLACE_CMD} -e 's|freebsd10\.\*|freebsd*|g' ${WRKSRC}/configure
+TEST_TARGET=	check
 
 .include <bsd.port.mk>

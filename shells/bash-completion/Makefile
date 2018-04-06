@@ -1,5 +1,5 @@
 # Created by: kirk@strauser.com
-# $FreeBSD: head/shells/bash-completion/Makefile 465470 2018-03-24 21:10:54Z sunpoet $
+# $FreeBSD: head/shells/bash-completion/Makefile 466583 2018-04-05 19:12:10Z sunpoet $
 
 PORTNAME=	bash-completion
 PORTVERSION=	2.8
@@ -14,6 +14,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_armv6=	fails to build: gmake: install-recursive: Error 1
 BROKEN_armv7=	fails to build: gmake: install-recursive: Error 1
+
+PORTSCOUT=	limit:^[0-9\.]*$$
 
 OPTIONS_DEFINE=	CMAKE_MODULES DOCS
 OPTIONS_SINGLE=	BASH

@@ -1,9 +1,9 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/textproc/dwdiff/Makefile 455820 2017-12-09 09:00:26Z amdmi3 $
+# $FreeBSD: head/textproc/dwdiff/Makefile 466648 2018-04-06 15:53:16Z jbeich $
 
 PORTNAME=	dwdiff
 PORTVERSION=	2.0.9
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	textproc
 MASTER_SITES=	http://os.ghalkes.nl/dist/ \
 		http://fossies.org/unix/privat/

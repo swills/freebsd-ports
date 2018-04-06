@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Config-Model-Tester/Makefile 453773 2017-11-08 23:29:56Z sunpoet $
+# $FreeBSD: head/devel/p5-Config-Model-Tester/Makefile 466658 2018-04-06 16:26:46Z sunpoet $
 
 PORTNAME=	Config-Model-Tester
-PORTVERSION=	3.003
+PORTVERSION=	3.005
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -20,6 +20,7 @@ BUILD_DEPENDS=	p5-File-Copy-Recursive>=0:devel/p5-File-Copy-Recursive \
 		p5-Test-Differences>=0:devel/p5-Test-Differences \
 		p5-Test-Exception>=0:devel/p5-Test-Exception \
 		p5-Test-File-Contents>=0:devel/p5-Test-File-Contents \
+		p5-Test-Log-Log4perl>=0:devel/p5-Test-Log-Log4perl \
 		p5-Test-Memory-Cycle>=0:devel/p5-Test-Memory-Cycle \
 		p5-Test-Warn>=0:devel/p5-Test-Warn
 RUN_DEPENDS:=	${BUILD_DEPENDS}

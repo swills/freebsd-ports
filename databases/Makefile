@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 465602 2018-03-26 15:10:49Z mfechner $
+# $FreeBSD: head/databases/Makefile 466580 2018-04-05 19:11:27Z sunpoet $
 #
 
     COMMENT = Databases and related software
@@ -955,6 +955,7 @@
     SUBDIR += rubygem-familia
     SUBDIR += rubygem-flipper-active_record
     SUBDIR += rubygem-flipper-active_record011
+    SUBDIR += rubygem-flipper-active_record013
     SUBDIR += rubygem-globalid
     SUBDIR += rubygem-globalid-rails5
     SUBDIR += rubygem-globalid-rails50

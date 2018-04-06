@@ -1,8 +1,8 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/security/git-crypt/Makefile 433472 2017-02-06 05:43:13Z ashish $
+# $FreeBSD: head/security/git-crypt/Makefile 466642 2018-04-06 13:56:40Z ashish $
 
 PORTNAME=	git-crypt
-PORTVERSION=	0.5.0
+PORTVERSION=	0.6.0
 CATEGORIES=	security
 MASTER_SITES=	https://www.agwa.name/projects/git-crypt/downloads/ \
 		LOCAL/ashish/
