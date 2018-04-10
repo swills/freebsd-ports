@@ -16,6 +16,7 @@ RUN_DEPENDS=	rubygem-charlock_holmes>=0.7.5:textproc/rubygem-charlock_holmes \
 		rubygem-escape_utils>=1.1.0:textproc/rubygem-escape_utils \
 		rubygem-mime-types>=1.19:misc/rubygem-mime-types \
 		rubygem-rugged>=0.25.1:devel/rubygem-rugged
+LIB_DEPENDS=	libunwind.so:devel/libunwind
 
 # bin/linguist
 CONFLICTS_INSTALL=	qtchooser rubygem-gitlab-linguist
