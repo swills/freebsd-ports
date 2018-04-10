@@ -1,11 +1,12 @@
-# $FreeBSD: head/textproc/rubygem-github-linguist/Makefile 460137 2018-01-27 18:42:40Z sunpoet $
+# $FreeBSD$
 
 PORTNAME=	github-linguist
 PORTVERSION=	5.3.3
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
+PKGNAMESUFFIX=	53
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	idefix@fechner.net
 COMMENT=	GitHub Language detection
 
 LICENSE=	MIT
@@ -19,9 +20,11 @@ RUN_DEPENDS=	rubygem-charlock_holmes>=0.7.5:textproc/rubygem-charlock_holmes \
 # bin/linguist
 CONFLICTS_INSTALL=	qtchooser rubygem-gitlab-linguist
 
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 PLIST_FILES=	bin/git-linguist bin/linguist
+
+PORTSCOUT=	limit:5\.3\.
 
 .include <bsd.port.mk>
