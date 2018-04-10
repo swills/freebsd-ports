@@ -45,6 +45,15 @@
  gem 'babosa', '~> 1.0.2'
  
  # Sanitizes SVG input
+@@ -264,7 +264,7 @@ gem 'virtus', '~> 1.0.1'
+ gem 'base32', '~> 0.3.0'
+ 
+ # Sentry integration
+-gem 'sentry-raven', '~> 2.5.3'
++gem 'sentry-raven', '>= 2.5.3'
+ 
+ gem 'premailer-rails', '~> 1.9.7'
+ 
 @@ -281,7 +281,7 @@ gem 'batch-loader', '~> 1.2.1'
  gem 'peek', '~> 1.0.1'
  gem 'peek-gc', '~> 0.0.2'
