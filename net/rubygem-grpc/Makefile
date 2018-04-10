@@ -24,8 +24,8 @@ BUILD_DEPENDS=	ca_root_nss>=0:security/ca_root_nss \
 
 MAKE_JOBS_UNSAFE=yes
 
-USE_RUBY=	yes
 USES=		gem gmake pkgconfig
+USE_RUBY=	yes
 
 post-extract:
 	@${RM} -r ${WRKSRC}/include ${WRKSRC}/third_party ${WRKSRC}/src/boringssl \
