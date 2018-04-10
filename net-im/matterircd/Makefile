@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-im/matterircd/Makefile 466052 2018-03-31 15:35:22Z dbaio $
+# $FreeBSD: head/net-im/matterircd/Makefile 466913 2018-04-09 23:54:29Z dbaio $
 
 PORTNAME=	matterircd
-PORTVERSION=	0.16.7
+PORTVERSION=	0.17.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-im irc
 

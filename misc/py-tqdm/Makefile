@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/py-tqdm/Makefile 463152 2018-02-27 19:24:06Z yuri $
+# $FreeBSD: head/misc/py-tqdm/Makefile 466839 2018-04-09 07:20:57Z yuri $
 
 PORTNAME=	tqdm
 DISTVERSIONPREFIX=	v
-DISTVERSION=	4.19.6
+DISTVERSION=	4.21.0
 CATEGORIES=	misc
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

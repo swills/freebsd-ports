@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/py-fail2ban/Makefile 459924 2018-01-25 12:37:06Z mat $
+# $FreeBSD: head/security/py-fail2ban/Makefile 466874 2018-04-09 18:17:32Z joneum $
 
 PORTNAME=	fail2ban
-PORTVERSION=	0.10.2
+PORTVERSION=	0.10.3
 CATEGORIES=	security python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

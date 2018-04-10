@@ -1,5 +1,5 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/security/p5-Crypt-DES/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-Crypt-DES/Makefile 466784 2018-04-08 09:03:33Z amdmi3 $
 
 PORTNAME=	Crypt-DES
 PORTVERSION=	2.07
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl5 interface to DES block cipher
+
+LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
 BUILD_DEPENDS=	p5-Crypt-CBC>=0:security/p5-Crypt-CBC
 RUN_DEPENDS:=	${BUILD_DEPENDS}

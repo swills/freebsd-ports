@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/deskutils/tine20/Makefile 440220 2017-05-06 05:50:57Z miwi $
+# $FreeBSD: head/deskutils/tine20/Makefile 466792 2018-04-08 11:28:27Z brnrd $
 
 PORTNAME=	tine20
 PORTVERSION=	0.0.2017.02.2
@@ -13,7 +13,7 @@ COMMENT=	Professional Open Source Groupware and CRM
 
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		tar:bzip2 gettext
+USES=		gettext mysql php:web tar:bzip2
 NO_BUILD=	yes
 EXTRACT_AFTER_ARGS=	--no-same-owner --no-same-permissions -C ${WRKSRC}
 
@@ -23,10 +23,8 @@ SUB_LIST=	DISTNAME=${DISTNAME}
 OPTIONS_DEFINE=	LDAP MEMCACHE
 MEMCACHE_DESC=	Enable pecl-memcache support
 
-USE_MYSQL=	yes
 USE_PHP=	ctype dom gd iconv json mcrypt pdo_mysql simplexml \
 		spl xml zip
-WANT_PHP_WEB=	yes
 
 LDAP_USE=	php=ldap
 MEMCACHE_USE=	php=memcache

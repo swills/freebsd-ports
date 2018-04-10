@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/print/Makefile 466875 2018-04-09 18:23:16Z tcberner $
 #
 
     COMMENT = Desktop publishing
@@ -97,6 +97,7 @@
     SUBDIR += hyperlatex
     SUBDIR += indexinfo
     SUBDIR += jabref
+    SUBDIR += print-manager
     SUBDIR += print-manager-kde4
     SUBDIR += kde_poster
     SUBDIR += kover

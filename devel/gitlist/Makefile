@@ -1,5 +1,5 @@
 # Created by: Andre Rikkert de Koe - ARK-ICT <andre@ark-ict.nl>
-# $FreeBSD: head/devel/gitlist/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/gitlist/Makefile 466793 2018-04-08 11:56:03Z brnrd $
 
 PORTNAME=	gitlist
 PORTVERSION=	0.5.0
@@ -19,7 +19,7 @@ PLIST=		${WRKDIR}/plist
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 NO_BUILD=	yes
-WANT_PHP_WEB=	yes
+USES=		php:web
 
 USERS?=		${WWWOWN}
 GROUPS?=	${WWWGRP}

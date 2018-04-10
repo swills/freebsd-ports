@@ -1,0 +1,18 @@
+# $FreeBSD: head/japanese/kiten/Makefile 466866 2018-04-09 16:36:33Z tcberner $
+
+PORTNAME=	kiten
+DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+CATEGORIES=	japanese kde kde-applications
+
+MAINTAINER=	kde@FreeBSD.org
+COMMENT=	Japanese reference/study tool for KDE
+
+USES=		cmake:outsource gettext kde:5 tar:xz
+USE_KDE=	auth archive codecs completion config configwidgets coreaddons \
+		crash doctools ecm i18n jobwidgets js khtml kio parts service \
+		sonnet textwidgets widgetsaddons xmlgui
+USE_QT5=	core dbus gui network widgets xml \
+		buildtools_build qmake_build
+USE_LDCONFIG=	yes
+
+.include <bsd.port.mk>

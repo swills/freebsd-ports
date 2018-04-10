@@ -1,5 +1,5 @@
 # Created by: Sahil Tandon <sahil@tandon.net>
-# $FreeBSD: head/security/mailzu/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/security/mailzu/Makefile 466797 2018-04-08 12:21:09Z brnrd $
 
 PORTNAME=	mailzu
 DISTVERSION=	0.8rc3
@@ -26,7 +26,7 @@ SUB_FILES=	pkg-message
 NO_BUILD=	yes
 NO_ARCH=	yes
 USE_PHP=	sockets
-WANT_PHP_WEB=	yes
+USES=		php:web
 
 OPTIONS_DEFINE=	IMAP LDAP DOCS
 OPTIONS_MULTI=	SQL

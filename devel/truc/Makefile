@@ -1,5 +1,5 @@
 # Created by: Jan Siml <jsi@jules.de>
-# $FreeBSD: head/devel/truc/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/devel/truc/Makefile 466793 2018-04-08 11:56:03Z brnrd $
 
 PORTNAME=	truc
 PORTVERSION=	0.12.0
@@ -14,7 +14,7 @@ COMMENT=	Web-based tool for requirement and use case tracking
 NO_BUILD=	yes
 USE_PHP=	mysqli gd
 
-USES=		cpe shebangfix
+USES=		cpe php:web shebangfix
 SHEBANG_FILES=	FCKeditor/editor/dialog/fck_spellerpages/spellerpages/server-scripts/spellchecker.pl \
 		FCKeditor/editor/filemanager/browser/mcpuk/connectors/php/commands/helpers/header.cgi \
 		FCKeditor/editor/filemanager/browser/mcpuk/connectors/php/commands/helpers/progress.cgi \
@@ -23,8 +23,6 @@ CPE_VENDOR=	jan_schutze
 PLIST_SUB=	WWWOWN="${WWWOWN}" WWWGRP="${WWWGRP}"
 SUB_LIST=	"PKGNAME=${PKGNAME}"
 SUB_FILES=	pkg-message
-
-WANT_PHP_WEB=	yes
 
 do-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/www/truc

@@ -1,16 +1,16 @@
 # Created by: Joseph Benden <joe@thrallingpenguin.com>
-# $FreeBSD: head/net/mosquitto/Makefile 462668 2018-02-23 04:04:33Z yuri $
+# $FreeBSD: head/net/mosquitto/Makefile 466690 2018-04-06 20:50:15Z yuri $
 
 PORTNAME=	mosquitto
 PORTVERSION=	1.4.14
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	http://mosquitto.org/files/source/
 
 MAINTAINER=	joe@thrallingpenguin.com
 COMMENT=	Open-Source MQTT Broker
 
-LICENSE=	BSD3CLAUSE
+LICENSE=	EPL
 
 LIB_DEPENDS=	libcares.so:dns/c-ares \
 		libuuid.so:misc/e2fsprogs-libuuid

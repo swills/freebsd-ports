@@ -1,7 +1,7 @@
-# $FreeBSD: head/dns/py-tld/Makefile 459604 2018-01-21 13:12:27Z antoine $
+# $FreeBSD: head/dns/py-tld/Makefile 466778 2018-04-08 08:43:02Z antoine $
 
 PORTNAME=	tld
-PORTVERSION=	0.7.9
+PORTVERSION=	0.7.10
 CATEGORIES=	dns python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/gcc-msp430-ti-toolchain/Makefile 465183 2018-03-21 15:27:05Z lev $
+# $FreeBSD: head/devel/gcc-msp430-ti-toolchain/Makefile 466827 2018-04-08 19:05:36Z danilo $
 
 PORTNAME=	gcc-msp430-ti-toolchain
 PORTVERSION=	${GCC_VERSION}.${TI_VERSION}.${RELEASE_DATE}
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	devel
 MASTER_SITES=	GCC/releases/gcc-${GCC_REL_VERSION}:gcc \
 		SOURCEWARE/binutils/releases:binutils \
@@ -44,7 +44,6 @@ BROKEN_powerpc64=	fails to compile: longlong.h: internal compiler error: Segment
 USES=		bison compiler cpe gmake iconv libtool makeinfo ncurses \
 		tar:bzip2
 USE_CSTD=	gnu89
-
 
 GNU_CONFIGURE=		yes
 GNU_CONFIGURE_PREFIX=	${PREFIX}/${SUBPREFIX}

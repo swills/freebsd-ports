@@ -1,8 +1,8 @@
 # Created by: Guixing Bai <khsing.cn@gmail.com>
-# $FreeBSD: head/www/py-tornado/Makefile 464389 2018-03-13 16:52:53Z gblach $
+# $FreeBSD: head/www/py-tornado/Makefile 466865 2018-04-09 16:07:50Z gblach $
 
 PORTNAME=	tornado
-PORTVERSION=	5.0
+PORTVERSION=	5.0.2
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

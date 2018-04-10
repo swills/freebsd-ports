@@ -1,16 +1,16 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-pew/Makefile 463521 2018-03-03 19:15:29Z sunpoet $
+# $FreeBSD: head/devel/py-pew/Makefile 466746 2018-04-07 16:34:14Z sunpoet $
 
 PORTNAME=	pew
-PORTVERSION=	1.1.2
+PORTVERSION=	1.1.5
 CATEGORIES=	devel python
-MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Tool to manage multiple virtualenvs
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}virtualenv>=1.11:devel/py-virtualenv@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}virtualenv-clone>=0.2.5:devel/py-virtualenv-clone@${FLAVOR}
@@ -18,6 +18,9 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}virtualenv>=1.11:devel/py-virtualenv@${FLAVO
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils
 USES=		python shebangfix
+
+GH_ACCOUNT=	berdario
+USE_GITHUB=	yes
 
 SHEBANG_FILES=	pew/shell_config/complete_deploy
 

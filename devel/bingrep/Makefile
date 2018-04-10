@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/bingrep/Makefile 454910 2017-11-26 15:13:39Z tobik $
+# $FreeBSD: head/devel/bingrep/Makefile 466771 2018-04-08 06:12:51Z tobik $
 
 PORTNAME=	bingrep
 PORTVERSION=	g20171111
 CATEGORIES=	devel
 
-MAINTAINER=	tobik@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Grep through binaries
 
 LICENSE=	MIT

@@ -1,0 +1,17 @@
+# $FreeBSD: head/x11-clocks/kteatime/Makefile 466881 2018-04-09 18:49:38Z tcberner $
+
+PORTNAME=	kteatime
+DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+CATEGORIES=	x11-clocks kde kde-applications
+
+MAINTAINER=	kde@FreeBSD.org
+COMMENT=	Handy timer for steeping tea
+
+USES=		cmake:outsource gettext kde:5 tar:xz
+USE_KDE=	auth codecs config configwidgets coreaddons crash doctools ecm \
+		i18n iconthemes notifications notifyconfig sonnet textwidgets \
+		widgetsaddons xmlgui
+USE_QT5=	core dbus gui widgets xml \
+		buildtools_build qmake_build
+
+.include <bsd.port.mk>

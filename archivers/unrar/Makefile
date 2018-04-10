@@ -1,5 +1,5 @@
 # Created by: ache
-# $FreeBSD: head/archivers/unrar/Makefile 463214 2018-02-28 15:12:18Z sunpoet $
+# $FreeBSD: head/archivers/unrar/Makefile 466824 2018-04-08 18:30:08Z sunpoet $
 
 PORTNAME=	unrar
 DISTVERSION=	5.50
@@ -26,7 +26,7 @@ OPENSSL_AES_DESC=	Use OpenSSL implementation of AES
 CONFLICTS_INSTALL?=	zh-unrar unrar-iconv
 
 LDFLAGS+=	-lpthread
-MAKE_ARGS=	CXX=${CXX} CXXFLAGS="${CXXFLAGS}" LDFLAGS="${LDFLAGS}" STRIP=${STRIP_CMD}
+MAKE_ARGS=	CXX="${CXX}" CXXFLAGS="${CXXFLAGS}" LDFLAGS="${LDFLAGS}" STRIP="${STRIP_CMD}"
 MAKEFILE=	makefile
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

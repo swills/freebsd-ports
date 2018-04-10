@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/rubygem-seed-fu236/Makefile 461887 2018-02-15 12:40:09Z tz $
+# $FreeBSD: head/databases/rubygem-seed-fu236/Makefile 466711 2018-04-07 09:11:44Z mfechner $
 
 PORTNAME=	seed-fu
 PORTVERSION=	2.3.6
@@ -11,6 +11,9 @@ COMMENT=	Library to maintain seed datas
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use databases/rubygem-seed-fu
+EXPIRATION_DATE=	2018-04-30
 
 RUN_DEPENDS=	rubygem-activerecord4>=3.1:databases/rubygem-activerecord4 \
 		rubygem-activesupport4>=3.1:devel/rubygem-activesupport4

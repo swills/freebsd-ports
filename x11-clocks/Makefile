@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-clocks/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/x11-clocks/Makefile 466881 2018-04-09 18:49:38Z tcberner $
 #
 
     COMMENT = X11 clocks
@@ -23,7 +23,9 @@
     SUBDIR += gtubeclock
     SUBDIR += intclock
     SUBDIR += kdetoys-kde4
+    SUBDIR += kteatime
     SUBDIR += kteatime-kde4
+    SUBDIR += ktimer
     SUBDIR += ktimer-kde4
     SUBDIR += ktux-kde4
     SUBDIR += lmclock

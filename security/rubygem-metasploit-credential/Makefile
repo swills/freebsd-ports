@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-metasploit-credential/Makefile 463234 2018-02-28 15:37:37Z antoine $
+# $FreeBSD: head/security/rubygem-metasploit-credential/Makefile 466781 2018-04-08 08:50:12Z antoine $
 
 PORTNAME=	metasploit-credential
-PORTVERSION=	2.0.13
+PORTVERSION=	2.0.14
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

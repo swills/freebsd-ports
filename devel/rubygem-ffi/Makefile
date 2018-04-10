@@ -1,12 +1,12 @@
 # Created by: Christoph Kick
-# $FreeBSD: head/devel/rubygem-ffi/Makefile 435405 2017-03-04 13:49:07Z sunpoet $
+# $FreeBSD: head/devel/rubygem-ffi/Makefile 466751 2018-04-07 16:34:57Z sunpoet $
 
 PORTNAME=	ffi
-PORTVERSION=	1.9.18
+PORTVERSION=	1.9.23
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Extension for dynamic libraries & binding functions
 
 LICENSE=	BSD3CLAUSE

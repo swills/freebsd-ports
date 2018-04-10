@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/security/phpsecinfo/Makefile 406234 2016-01-16 16:04:05Z pawel $
+# $FreeBSD: head/security/phpsecinfo/Makefile 466797 2018-04-08 12:21:09Z brnrd $
 
 PORTNAME=	phpsecinfo
 PORTVERSION=	0.2.1
@@ -12,9 +12,8 @@ COMMENT=	PHP environment security auditing tool
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		zip
+USES=		php:web zip
 USE_PHP=	pcre
-WANT_PHP_WEB=	yes
 NO_BUILD=	yes
 NO_ARCH=	yes
 

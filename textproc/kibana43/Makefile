@@ -1,10 +1,13 @@
 # Created by: Sergey Kozlov <kozlov.sergey.404@gmail.com>
-# $FreeBSD: head/textproc/kibana43/Makefile 412495 2016-04-04 01:39:56Z junovitch $
+# $FreeBSD: head/textproc/kibana43/Makefile 466863 2018-04-09 16:04:37Z feld $
 
 PORTVERSION=	4.3.3
 PKGNAMESUFFIX=	43
 MASTERDIR=	${.CURDIR}/../kibana45
 PKGDIR=		${.CURDIR}
 DISTINFO_FILE=	${.CURDIR}/distinfo
+
+DEPRECATED=	End of Life was 2017-05-24
+EXPIRATION_DATE=	2018-06-01
 
 .include "${MASTERDIR}/Makefile"

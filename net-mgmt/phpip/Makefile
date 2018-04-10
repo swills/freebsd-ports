@@ -1,5 +1,5 @@
 # Created by: Babak Farrokhi <babak@farrokhi.net>
-# $FreeBSD: head/net-mgmt/phpip/Makefile 433543 2017-02-07 12:14:34Z mat $
+# $FreeBSD: head/net-mgmt/phpip/Makefile 466796 2018-04-08 12:19:58Z brnrd $
 
 PORTNAME=	phpip
 PORTVERSION=	${SNAPSHOT}
@@ -17,8 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 SNAPSHOT=	200611081420
 NO_BUILD=	yes
 USE_PHP=	mysql
-USES=		dos2unix
-WANT_PHP_WEB=	yes
+USES=		dos2unix php:web
 
 IGNORE_WITH_PHP=	70 71
 

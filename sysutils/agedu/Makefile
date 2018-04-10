@@ -1,9 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/sysutils/agedu/Makefile 456235 2017-12-13 20:49:15Z sunpoet $
+# $FreeBSD: head/sysutils/agedu/Makefile 466745 2018-04-07 16:34:08Z sunpoet $
 
 PORTNAME=	agedu
-PORTVERSION=	20171202
-DISTVERSIONSUFFIX=	.8a8299e
+PORTVERSION=	20180329
+DISTVERSIONSUFFIX=	.af641e6
 CATEGORIES=	sysutils
 MASTER_SITES=	https://www.chiark.greenend.org.uk/~sgtatham/${PORTNAME}/ \
 		LOCAL/sunpoet

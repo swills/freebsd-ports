@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fm/Makefile 426381 2016-11-19 15:11:28Z olivierd $
+# $FreeBSD: head/x11-fm/Makefile 466903 2018-04-09 20:03:36Z tcberner $
 #
 
     COMMENT = X11 file managers
@@ -6,6 +6,7 @@
     SUBDIR += caja
     SUBDIR += catseye-fm
     SUBDIR += deforaos-browser
+    SUBDIR += dolphin
     SUBDIR += doublecmd
     SUBDIR += emelfm2
     SUBDIR += ezfm
@@ -13,6 +14,7 @@
     SUBDIR += gentoo
     SUBDIR += gnome-commander2
     SUBDIR += gprename
+    SUBDIR += konqueror
     SUBDIR += krusader2
     SUBDIR += librfm
     SUBDIR += libtubo

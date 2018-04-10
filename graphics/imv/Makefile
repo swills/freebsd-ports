@@ -1,12 +1,12 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/graphics/imv/Makefile 438669 2017-04-16 19:48:44Z mi $
+# $FreeBSD: head/graphics/imv/Makefile 466770 2018-04-08 06:08:43Z tobik $
 
 PORTNAME=	imv
 PORTVERSION=	2.1.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics
 
-MAINTAINER=	tobik@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple image viewer
 
 LICENSE=	GPLv2

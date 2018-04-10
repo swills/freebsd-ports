@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/py-imageio/Makefile 465159 2018-03-21 08:36:46Z yuri $
+# $FreeBSD: head/graphics/py-imageio/Makefile 466772 2018-04-08 06:48:55Z yuri $
 
 PORTNAME=	imageio
 DISTVERSION=	2.3.0
+PORTREVISION=	1
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,7 +19,7 @@ RUN_DEPENDS=	ffmpeg:multimedia/ffmpeg \
 		${PYNUMPY}
 
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils concurrent autoplist
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

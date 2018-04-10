@@ -1,11 +1,11 @@
-# $FreeBSD: head/textproc/elasticsearch-plugin-head/Makefile 405755 2016-01-10 22:34:50Z olgeni $
+# $FreeBSD: head/textproc/elasticsearch-plugin-head/Makefile 466961 2018-04-10 12:23:09Z olgeni $
 
 PORTNAME=	head
 PORTVERSION=	2015.12.16
 CATEGORIES=	textproc
 PKGNAMEPREFIX=	elasticsearch-plugin-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	elastic@FreeBSD.org
 COMMENT=	ElasticSearch Head Plugin
 
 LICENSE=	APACHE20

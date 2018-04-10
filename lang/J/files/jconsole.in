@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# $FreeBSD: head/lang/J/files/jconsole.in 466786 2018-04-08 09:41:15Z pi $
+
+exec %%LOCALBASE%%/lib/j/bin/jconsole -jprofile %%LOCALBASE%%/share/j/profile.ijs

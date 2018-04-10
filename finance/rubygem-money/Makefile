@@ -1,9 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/finance/rubygem-money/Makefile 461909 2018-02-15 12:47:27Z sunpoet $
+# $FreeBSD: head/finance/rubygem-money/Makefile 466895 2018-04-09 18:51:30Z sunpoet $
 
 PORTNAME=	money
-PORTVERSION=	6.10.1
-PORTREVISION=	1
+PORTVERSION=	6.11.0
 CATEGORIES=	finance rubygems
 MASTER_SITES=	RG
 

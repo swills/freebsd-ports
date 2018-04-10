@@ -1,5 +1,5 @@
 # Created by: Sergey Kozlov <kozlov.sergey.404@gmail.com>
-# $FreeBSD: head/textproc/kibana45/Makefile 448535 2017-08-22 14:48:14Z swills $
+# $FreeBSD: head/textproc/kibana45/Makefile 466863 2018-04-09 16:04:37Z feld $
 
 PORTNAME=	kibana
 PORTVERSION?=	4.5.4
@@ -8,6 +8,9 @@ CATEGORIES=	textproc www
 MASTER_SITES=	https://download.elastic.co/kibana/kibana/ \
 		http://download.elastic.co/kibana/kibana/
 PKGNAMESUFFIX?=	45
+
+DEPRECATED?=	End of Life was 2017-09-30
+EXPIRATION_DATE?=	2018-06-01
 
 MAINTAINER=	kozlov.sergey.404@gmail.com
 COMMENT=	Browser based analytics and search interface to ElasticSearch

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-black/Makefile 466234 2018-04-02 16:27:40Z yuri $
+# $FreeBSD: head/devel/py-black/Makefile 466723 2018-04-07 13:16:04Z dbaio $
 
 PORTNAME=	black
-DISTVERSION=	18.3a3
+DISTVERSION=	18.4a0
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

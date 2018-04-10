@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/elasticsearch2-plugin-hq/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/elasticsearch2-plugin-hq/Makefile 466961 2018-04-10 12:23:09Z olgeni $
 
 PORTNAME=	hq
 PORTVERSION=	2.0.3
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
 PKGNAMEPREFIX=	elasticsearch2-plugin-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	elastic@FreeBSD.org
 COMMENT=	ElasticSearch HQ Plugin
 
 LICENSE=	APACHE20

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 466533 2018-04-05 04:52:49Z yuri $
+# $FreeBSD: head/security/Makefile 466815 2018-04-08 18:29:21Z sunpoet $
 #
 
     COMMENT = Security tools
@@ -1117,6 +1117,7 @@
     SUBDIR += rubygem-omniauth-cas
     SUBDIR += rubygem-omniauth-cas3
     SUBDIR += rubygem-omniauth-gitlab
+    SUBDIR += rubygem-omniauth-jwt
     SUBDIR += rubygem-omniauth-multipassword
     SUBDIR += rubygem-omniauth-oauth2-generic
     SUBDIR += rubygem-omniauth-saml

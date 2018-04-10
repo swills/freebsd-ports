@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/klg/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/net-mgmt/klg/Makefile 466796 2018-04-08 12:19:58Z brnrd $
 
 PORTNAME=	klg
 PORTVERSION=	1.5
@@ -11,10 +11,8 @@ COMMENT=	PHP-based looking glass for Cisco, Juniper and Quagga/Zebra routers
 
 LICENSE=	BSD3CLAUSE
 
-USES=		tar:txz php
-USE_MYSQL=	yes
+USES=		mysql tar:txz php:web
 USE_PHP=	mysql pcre sockets xml
-WANT_PHP_WEB=	yes
 NO_ARCH=	yes
 NO_BUILD=	yes
 PKGMESSAGE=	${WRKDIR}/pkg-message

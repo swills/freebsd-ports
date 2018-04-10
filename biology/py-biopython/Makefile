@@ -1,9 +1,8 @@
 # Created by: Johann Visagie <johann@egenetics.com>
-# $FreeBSD: head/biology/py-biopython/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/biology/py-biopython/Makefile 466835 2018-04-09 06:26:18Z wen $
 
 PORTNAME=	biopython
-PORTVERSION=	1.70
-PORTREVISION=	2
+PORTVERSION=	1.71
 CATEGORIES=	biology python
 MASTER_SITES=	http://www.biopython.org/DIST/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

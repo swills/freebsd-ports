@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/isl/Makefile 432647 2017-01-28 19:48:38Z danilo $
+# $FreeBSD: head/devel/isl/Makefile 466827 2018-04-08 19:05:36Z danilo $
 
 PORTNAME=	isl
-PORTVERSION=	0.18
+PORTVERSION=	0.19
 CATEGORIES=	devel
 MASTER_SITES=	http://isl.gforge.inria.fr/
 

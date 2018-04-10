@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/font-elisa8/files/Makefile.in 399948 2015-10-22 06:15:28Z hrs $
+# $FreeBSD: head/japanese/font-elisa8/files/Makefile.in 466800 2018-04-08 13:13:27Z nobutaka $
 
 BDFTOPCF_CMD=	%%BDFTOPCF_CMD%%
 GZIP_CMD=	%%GZIP_CMD%%
@@ -13,11 +13,11 @@ all: ${F}.pcf.gz
 .endfor
 
 .for F in ${SRCS:R}
-${DESTDIR}%%DATADIR%%/${F}.pcf.gz: ${F}.pcf.gz
-	mkdir -p ${DESTDIR}%%DATADIR%%
+${DESTDIR}%%FONTSDIR%%/${F}.pcf.gz: ${F}.pcf.gz
+	mkdir -p ${DESTDIR}%%FONTSDIR%%
 	${BSD_INSTALL_DATA} ${.ALLSRC} ${.TARGET}
 
-install: ${DESTDIR}%%DATADIR%%/${F}.pcf.gz
+install: ${DESTDIR}%%FONTSDIR%%/${F}.pcf.gz
 .endfor
 
 all install:

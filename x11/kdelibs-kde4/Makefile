@@ -1,9 +1,9 @@
 # Created by: arved@FreeBSD.org
-# $FreeBSD: head/x11/kdelibs-kde4/Makefile 464272 2018-03-12 18:52:53Z tcberner $
+# $FreeBSD: head/x11/kdelibs-kde4/Makefile 466840 2018-04-09 08:57:19Z adridg $
 
 PORTNAME=	kdelibs
 PORTVERSION=	${KDE4_KDELIBS_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11 kde kde-applications
 PKGNAMESUFFIX=	-kde4
 

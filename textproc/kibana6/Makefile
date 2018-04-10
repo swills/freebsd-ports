@@ -1,8 +1,8 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/textproc/kibana6/Makefile 464527 2018-03-14 19:20:29Z feld $
+# $FreeBSD: head/textproc/kibana6/Makefile 466867 2018-04-09 16:43:29Z feld $
 
 PORTNAME=	kibana
-PORTVERSION=	6.2.2
+PORTVERSION=	6.2.3
 DISTVERSIONSUFFIX=	-linux-x86_64
 PORTREVISION=	2
 CATEGORIES=	textproc www

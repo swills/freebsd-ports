@@ -1,8 +1,8 @@
 # Created by: hrkfrd@googlemail.com
-# $FreeBSD: head/audio/mpdas/Makefile 449122 2017-09-02 11:27:21Z riggs $
+# $FreeBSD: head/audio/mpdas/Makefile 466735 2018-04-07 16:32:11Z krion $
 
 PORTNAME=	mpdas
-PORTVERSION=	0.4.4
+PORTVERSION=	0.4.5
 CATEGORIES=	audio
 MASTER_SITES=	http://50hz.ws/mpdas/
 

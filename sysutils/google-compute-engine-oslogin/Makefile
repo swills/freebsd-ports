@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/google-compute-engine-oslogin/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/sysutils/google-compute-engine-oslogin/Makefile 466686 2018-04-06 20:00:08Z swills $
 
 PORTNAME=	google-compute-engine-oslogin
-DISTVERSION=	1.1.2
-PORTREVISION=	1
+DISTVERSION=	1.1.5
 CATEGORIES=	sysutils
 
 MAINTAINER=	helen.koike@collabora.com
@@ -22,7 +21,7 @@ USE_GCC=	any
 USE_GITHUB=	yes
 GH_ACCOUNT=	GoogleCloudPlatform
 GH_PROJECT=	compute-image-packages
-GH_TAGNAME=	20171213
+GH_TAGNAME=	20180227
 MAKE_ARGS=	JSON_INCLUDE_PATH=${LOCALBASE}/include/json-c \
 		BIN_INSTALL_PATH=/bin \
 		PAM_INSTALL_PATH=/lib \

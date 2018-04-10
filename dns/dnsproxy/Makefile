@@ -1,5 +1,5 @@
 # Created by: Clement Laforet <clement@FreeBSD.org>
-# $FreeBSD: head/dns/dnsproxy/Makefile 466365 2018-04-03 17:10:01Z krion $
+# $FreeBSD: head/dns/dnsproxy/Makefile 466758 2018-04-07 17:37:24Z krion $
 
 PORTNAME=	dnsproxy
 PORTVERSION=	1.17
@@ -8,7 +8,9 @@ CATEGORIES=	dns
 MASTER_SITES=	http://www.wolfermann.org/
 
 MAINTAINER=	krion@FreeBSD.org
-COMMENT=	proxy for DNS queries
+COMMENT=	Proxy for DNS queries
+
+LICENSE=	MIT
 
 LIB_DEPENDS=	libevent.so:devel/libevent
 

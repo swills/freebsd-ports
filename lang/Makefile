@@ -1,9 +1,10 @@
-# $FreeBSD: head/lang/Makefile 465513 2018-03-25 11:45:10Z rene $
+# $FreeBSD: head/lang/Makefile 466960 2018-04-10 12:20:05Z olgeni $
 #
 
     COMMENT = Programming languages
 
     SUBDIR += Gofer
+    SUBDIR += J
     SUBDIR += abcl
     SUBDIR += adacontrol
     SUBDIR += afnix
@@ -62,6 +63,7 @@
     SUBDIR += elk
     SUBDIR += emacs-lisp-intro
     SUBDIR += erlang
+    SUBDIR += erlang-doc
     SUBDIR += erlang-java
     SUBDIR += erlang-riak
     SUBDIR += erlang-runtime15
@@ -150,6 +152,8 @@
     SUBDIR += jython
     SUBDIR += kawa
     SUBDIR += kf5-kross
+    SUBDIR += kross-interpreters
+    SUBDIR += kturtle
     SUBDIR += kturtle-kde4
     SUBDIR += lafontaine
     SUBDIR += lci

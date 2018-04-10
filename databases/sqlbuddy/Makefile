@@ -1,5 +1,5 @@
 # Created by: Chenguang LI
-# $FreeBSD: head/databases/sqlbuddy/Makefile 422175 2016-09-15 01:41:28Z swills $
+# $FreeBSD: head/databases/sqlbuddy/Makefile 466790 2018-04-08 10:50:18Z brnrd $
 
 PORTNAME=	sqlbuddy
 PORTVERSION=	1.3.3
@@ -19,7 +19,7 @@ GH_TAGNAME=	b2cdc2b
 NO_BUILD=	yes
 
 USE_PHP=	ctype pcre session mysql
-WANT_PHP_WEB=	yes
+USES=		php:web
 
 PLIST_SUB=	WWWOWN="${WWWOWN}" WWWGRP="${WWWGRP}"
 SUB_FILES=	pkg-message

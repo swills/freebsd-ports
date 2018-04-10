@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/rubygem-net-ping/Makefile 465793 2018-03-28 11:04:18Z romain $
+# $FreeBSD: head/net/rubygem-net-ping/Makefile 466939 2018-04-10 07:30:38Z romain $
 
 PORTNAME=	net-ping
-PORTVERSION=	2.0.3
+PORTVERSION=	2.0.4
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

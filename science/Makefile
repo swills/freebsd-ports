@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 466210 2018-04-02 08:43:54Z makc $
+# $FreeBSD: head/science/Makefile 466877 2018-04-09 18:32:24Z tcberner $
 #
 
     COMMENT = Scientific ports
@@ -78,6 +78,7 @@
     SUBDIR += iboview
     SUBDIR += isaac-cfd
     SUBDIR += jstrack
+    SUBDIR += kalzium
     SUBDIR += kalzium-kde4
     SUBDIR += kst2
     SUBDIR += lamprop
@@ -197,6 +198,10 @@
     SUBDIR += rdkit
     SUBDIR += rubygem-ai4r
     SUBDIR += rubygem-cdo
+    SUBDIR += rubygem-rgeo
+    SUBDIR += rubygem-rgeo-geojson
+    SUBDIR += rubygem-rgeo-proj4
+    SUBDIR += rubygem-rgeo-shapefile
     SUBDIR += rubygem-ruby-dcl
     SUBDIR += rubygem-ruby-netcdf
     SUBDIR += sigrok-cli
@@ -206,6 +211,7 @@
     SUBDIR += silo
     SUBDIR += simlib
     SUBDIR += simsmith
+    SUBDIR += step
     SUBDIR += step-kde4
     SUBDIR += svmlight
     SUBDIR += szip

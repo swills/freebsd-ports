@@ -1,9 +1,9 @@
 # Created by: nsayer@FreeBSD.org
-# $FreeBSD: head/security/mhash/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/security/mhash/Makefile 466946 2018-04-10 08:53:19Z mich $
 
 PORTNAME=	mhash
 PORTVERSION=	0.9.9.9
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	security
 MASTER_SITES=	SF
 

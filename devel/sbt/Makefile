@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/devel/sbt/Makefile 461563 2018-02-12 08:38:44Z ale $
+# $FreeBSD: head/devel/sbt/Makefile 466951 2018-04-10 09:35:13Z ale $
 
 PORTNAME=	sbt
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	devel java
 MASTER_SITES=	https://github.com/sbt/sbt/releases/download/v${PORTVERSION}/
 

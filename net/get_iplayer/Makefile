@@ -1,10 +1,9 @@
-# $FreeBSD: head/net/get_iplayer/Makefile 440319 2017-05-07 09:56:26Z crees $
+# $FreeBSD: head/net/get_iplayer/Makefile 466803 2018-04-08 15:42:29Z crees $
 
 PORTNAME=	get_iplayer
-PORTVERSION=	3.01
+PORTVERSION=	3.13
+DISTVERSIONPREFIX=v
 CATEGORIES=	net multimedia
-MASTER_SITES=	http://www.thomasguymer.co.uk/ports/${PORTNAME}/ \
-		http://www.bayofrum.net/dist/${PORTNAME}/
 
 MAINTAINER=	crees@FreeBSD.org
 COMMENT=	Search, index, or stream archive video from BBC iPlayer
@@ -18,9 +17,12 @@ RUN_DEPENDS=	p5-HTML-Parser>=0:www/p5-HTML-Parser \
 		p5-XML-Simple>=0:textproc/p5-XML-Simple \
 		p5-URI>=0:net/p5-URI \
 		p5-libwww>=0:www/p5-libwww \
+		p5-Mojolicious>=0:www/p5-Mojolicious \
 		rtmpdump:multimedia/rtmpdump
 
 USES=		perl5 shebangfix
+USE_GITHUB=	yes
+GH_ACCOUNT=	get-iplayer
 USE_PERL5=	run
 SHEBANG_FILES=	${PORTNAME} ${PORTNAME}.cgi
 NO_BUILD=	yes

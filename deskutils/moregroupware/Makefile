@@ -1,5 +1,5 @@
 # Created by: Rob Evers <rob@debank.tv>
-# $FreeBSD: head/deskutils/moregroupware/Makefile 415742 2016-05-23 20:35:01Z amdmi3 $
+# $FreeBSD: head/deskutils/moregroupware/Makefile 466792 2018-04-08 11:28:27Z brnrd $
 
 PORTNAME=	moregroupware
 PORTVERSION=	0.7.4
@@ -18,9 +18,7 @@ USE_PHP=	curl \
 		session \
 		xml
 
-USES=	gettext
-
-WANT_PHP_MOD=	yes
+USES=	gettext php:mod
 
 OPTIONS_DEFINE=	ADDONS NLS
 OPTIONS_SINGLE=	DB
@@ -32,7 +30,7 @@ OPTIONS_SUB=	yes
 NLS_USES=		gettext
 PGSQL_USES=	pgsql
 WANT_PGSQL=	server
-MYSQL_USE=	MYSQL=server
+MYSQL_USES=	mysql:server
 
 ADDONS_DISTFILES=	${PORTNAME}-addons-${PORTVERSION}${EXTRACT_SUFX}
 NO_BUILD=	yes

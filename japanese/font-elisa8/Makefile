@@ -1,9 +1,9 @@
 # Created by: Toshihiko SHIMOKAWA <toshi@tea.forus.or.jp> & ELISA Font Project
-# $FreeBSD: head/japanese/font-elisa8/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/font-elisa8/Makefile 466800 2018-04-08 13:13:27Z nobutaka $
 
 PORTNAME=	elisa8
 PORTVERSION=	1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	http://www.bsdbbq.org/~toshi/distfiles/
 PKGNAMEPREFIX=	ja-font-
@@ -15,16 +15,12 @@ COMMENT=	8-dot Kanji font 'elisa'
 BUILD_DEPENDS=	bdftopcf:x11-fonts/bdftopcf
 
 USES=		fonts
-FONTNAME=	misc
 NO_ARCH=	yes
 NO_WRKSUBDIR=	yes
-SUB_FILES=	Makefile pkg-install
+SUB_FILES=	Makefile pkg-message
 MAKEFILE=	${WRKDIR}/Makefile
 SUB_LIST=	BDFTOPCF_CMD="${LOCALBASE}/bin/bdftopcf" \
-		GZIP_CMD="${GZIP_CMD}" \
-		FONTSALIAS="${DATADIR}/fonts.alias"
-PKGINSTALL=	${WRKDIR}/pkg-install
-PKGDEINSTALL=	${WRKDIR}/pkg-install
+		GZIP_CMD="${GZIP_CMD}"
 PORTDOCS=	elisa100.doc elisat10.doc elisat10.html
 
 OPTIONS_DEFINE=	DOCS
@@ -32,10 +28,7 @@ OPTIONS_DEFINE=	DOCS
 pre-build: apply-slist
 
 post-install:
-	@${MKDIR} ${STAGEDIR}${FONTSDIR}
-	cd ${STAGEDIR}${FONTSDIR} && \
-	    ${LN} -s ../../../${DATADIR_REL}/*.pcf.gz .
-	${INSTALL_DATA} ${FILESDIR}/fonts.alias ${STAGEDIR}${DATADIR}
+	${INSTALL_DATA} ${FILESDIR}/fonts.alias ${STAGEDIR}${FONTSDIR}
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

@@ -1,5 +1,5 @@
 # Created by: Nick Hilliard <nick@foobar.org>
-# $FreeBSD: head/devel/flyspray/Makefile 427491 2016-12-01 11:18:03Z mat $
+# $FreeBSD: head/devel/flyspray/Makefile 466793 2018-04-08 11:56:03Z brnrd $
 
 PORTNAME=	flyspray
 PORTVERSION=	0.9.9.7
@@ -13,8 +13,7 @@ COMMENT=	Simple, easy-to-use web based bug tracking system
 RUN_DEPENDS=	${LOCALBASE}/share/adodb/adodb.inc.php:databases/adodb
 
 USE_PHP=	pcre session zlib xml gd
-USES=		dos2unix zip
-WANT_PHP_WEB=	yes
+USES=		dos2unix php:web zip
 
 NO_BUILD=	yes
 NO_ARCH=	yes

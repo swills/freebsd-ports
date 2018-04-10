@@ -1,5 +1,5 @@
 # Created by: Daniel Solsona <daniel@ish.com.au>, Guido Falsi <madpilot@FreeBSD.org>
-# $FreeBSD: head/sysutils/logstash/Makefile 441610 2017-05-24 17:28:21Z matthew $
+# $FreeBSD: head/sysutils/logstash/Makefile 466864 2018-04-09 16:07:06Z feld $
 
 PORTNAME=	logstash
 PORTVERSION=	2.4.1
@@ -10,6 +10,9 @@ MAINTAINER=	enrico.m.crisostomo@gmail.com
 COMMENT=	Tool for managing events and logs
 
 LICENSE=	APACHE20
+
+DEPRECATED=	End of Life was 2018-02-8
+EXPIRATION_DATE=	2018-07-09
 
 RUN_DEPENDS=	${LOCALBASE}/bin/bash:shells/bash
 

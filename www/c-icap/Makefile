@@ -1,14 +1,14 @@
 # Created by: Elisey Savateev <b3k@mail.ru>
-# $FreeBSD: head/www/c-icap/Makefile 434432 2017-02-20 04:19:02Z vanilla $
+# $FreeBSD: head/www/c-icap/Makefile 466910 2018-04-09 23:24:30Z rodrigo $
 
 PORTNAME=	c-icap
-PORTVERSION=	0.4.4
+PORTVERSION=	0.5.3
 PORTEPOCH=	2
 CATEGORIES=	www
-MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/0.4.x/
+MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/0.5.x/
 DISTNAME=	c_icap-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	rodrigo@FreeBSD.org
 COMMENT=	ICAP server implementation
 
 LICENSE=	LGPL21+

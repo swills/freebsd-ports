@@ -1,11 +1,11 @@
-# $FreeBSD: head/sysutils/flowgger/Makefile 455104 2017-11-29 12:29:25Z tobik $
+# $FreeBSD: head/sysutils/flowgger/Makefile 466771 2018-04-08 06:12:51Z tobik $
 
 PORTNAME=	flowgger
 DISTVERSION=	0.2.6-28
 DISTVERSIONSUFFIX=	-gab572a0
 CATEGORIES=	sysutils
 
-MAINTAINER=	tobik@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fast data collector
 
 LICENSE=	MPL20

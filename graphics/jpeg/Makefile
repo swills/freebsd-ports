@@ -1,5 +1,5 @@
 # Created by: smace
-# $FreeBSD: head/graphics/jpeg/Makefile 428135 2016-12-08 16:39:11Z tijl $
+# $FreeBSD: head/graphics/jpeg/Makefile 466945 2018-04-10 08:33:38Z amdmi3 $
 
 PORTNAME=	jpeg
 PORTVERSION=	8
@@ -23,6 +23,8 @@ DISTVERSION2=	8d
 USES=		libtool
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
+TEST_TARGET=	test
+TEST_ENV=	LD_LIBRARY_PATH=${WRKSRC}/.libs
 
 ADDITIONAL_HEADER=	jinclude.h jpegint.h
 
@@ -39,11 +41,6 @@ post-extract:
 
 post-build:
 	@cd ${WRKSRC} && ${CC} ${CFLAGS} -o jpegexiforient jpegexiforient.c
-
-test: build
-	${SETENV} LD_LIBRARY_PATH=${WRKSRC}/.libs ${MAKE} -C ${WRKSRC} test
-
-regression-test:	test
 
 post-install:
 .for header in ${ADDITIONAL_HEADER}

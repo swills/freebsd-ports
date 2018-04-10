@@ -1,5 +1,5 @@
 # Created by: jamrich.majo@gmail.com
-# $FreeBSD: head/deskutils/myitcrm/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/deskutils/myitcrm/Makefile 466792 2018-04-08 11:28:27Z brnrd $
 
 PORTNAME=	myitcrm
 PORTVERSION=	0.2.9.3
@@ -30,16 +30,16 @@ OPTIONS_DEFAULT=	APACHE
 PHPMOD_DESC=	Use PHP module for Apache
 NGINX_DESC=	Use Nginx
 
-APACHE_USE=	APACHE_RUN=22+
+APACHE_USES=		apache:run,2.2+
 LIGHTTPD_RUN_DEPENDS=	lighttpd:www/lighttpd
 NGINX_RUN_DEPENDS=	nginx:www/nginx
 
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MPHPMOD}
-WANT_PHP_MOD=	yes
+USES+=	php:mod
 .else
-WANT_PHP_CGI=	yes
+USES+=	php:cgi
 .endif
 
 # Set files to ignore.

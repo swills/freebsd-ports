@@ -1,5 +1,5 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/textproc/kibana3/Makefile 394771 2015-08-19 10:24:01Z olgeni $
+# $FreeBSD: head/textproc/kibana3/Makefile 466863 2018-04-09 16:04:37Z feld $
 
 PORTNAME=	kibana
 PORTVERSION=	3.1.3
@@ -11,6 +11,9 @@ MAINTAINER=	antoine@FreeBSD.org
 COMMENT=	Browser based analytics and search interface to ElasticSearch
 
 LICENSE=	APACHE20
+
+DEPRECATED=	End of Life was 2015-11-15
+EXPIRATION_DATE=	2018-06-01
 
 NO_BUILD=	yes
 SUB_FILES=	pkg-message

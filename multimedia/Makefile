@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 465360 2018-03-23 14:44:01Z bapt $
+# $FreeBSD: head/multimedia/Makefile 466900 2018-04-09 19:29:42Z tcberner $
 #
 
     COMMENT = Multimedia software
@@ -163,6 +163,7 @@
     SUBDIR += jmref
     SUBDIR += k9copy-kde4
     SUBDIR += kaffeine
+    SUBDIR += kdemultimedia-ffmpegthumbs
     SUBDIR += kdemultimedia-kde4
     SUBDIR += kdemultimedia-ffmpegthumbs-kde4
     SUBDIR += kdemultimedia-mplayerthumbs-kde4

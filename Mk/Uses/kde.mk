@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/kde.mk 465448 2018-03-24 10:57:42Z tcberner $
+# $FreeBSD: head/Mk/Uses/kde.mk 466897 2018-04-09 19:02:33Z tcberner $
 #
 # Provides support for KDE and KF5-based ports.
 #
@@ -133,6 +133,11 @@ CONFLICTS_INSTALL?=	${PORTNAME}-kde4-[0-9]*
 MASTER_SITES?=		KDE/Attic/applications/${KDE_APPLICATIONS_VERSION}/src
 .      else
 MASTER_SITES?=		KDE/${KDE_APPLICATIONS_BRANCH}/applications/${KDE_APPLICATIONS_VERSION}/src
+# Let bsd.port.mk create the plist-entries for the documentation.
+# KDE Applications ports install their documentation to
+# ${PREFIX}/share/doc.
+DOCSDIR=		${PREFIX}/share/doc
+PORTDOCS?=		HTML/*
 # Further pass along a SHLIB_VER PLIST_SUB
 PLIST_SUB+=		KDE_APPLICATIONS_SHLIB_VER=${KDE_APPLICATIONS_SHLIB_VER}
 .      endif
@@ -577,6 +582,8 @@ xmlrpcclient_LIB=	libKF5XmlRpcClient.so
 # ====================== multiversion component ================================
 akonadi4_PORT=		databases/akonadi-kde4
 akonadi4_LIB=		libakonadiprotocolinternals.so
+akonadi5_PORT=		databases/akonadi
+akonadi5_LIB=		libKF5AkonadiPrivate.so
 
 attica4_PORT=		x11-toolkits/attica
 attica4_LIB=		libattica.so
@@ -590,6 +597,8 @@ baloo-widgets4_LIB=	libbaloowidgets.so
 
 kate4_PORT=		editors/kate-kde4
 kate4_LIB=		libkateinterfaces.so
+kate5_PORT=		editors/kate
+kate5_PATH=		${QT_PLUGINDIR}/ktexteditor/katebacktracebrowserplugin.so
 
 libkcddb4_PORT=		audio/libkcddb-kde4
 libkcddb4_LIB=		libkcddb.so
@@ -599,27 +608,43 @@ libkcompactdisc4_LIB=	libkcompactdisc.so
 
 libkdcraw4_PORT=	graphics/libkdcraw-kde4
 libkdcraw4_LIB=		libkdcraw.so
+libkdcraw5_PORT=	graphics/libkdcraw
+libkdcraw5_LIB=		libKF5KDcraw.so
 
 libkdegames4_PORT=	games/libkdegames-kde4
 libkdegames4_LIB=	libkdegames.so
+libkdegames5_PORT=	games/libkdegames
+libkdegames5_LIB=	libKF5KDEGames.so
 
 libkeduvocdocument4_PORT=	misc/libkdeedu-kde4
 libkeduvocdocument4_LIB=	libkeduvocdocument.so
+libkeduvocdocument5_PORT=	misc/libkeduvocdocument
+libkeduvocdocument5_LIB=	libKEduVocDocument.so
 
 libkexiv24_PORT=	graphics/libkexiv2-kde4
 libkexiv24_LIB=		libkexiv2.so
+libkexiv25_PORT=	graphics/libkexiv2
+libkexiv25_LIB=		libKF5KExiv2.so
 
 libkipi4_PORT=		graphics/libkipi-kde4
 libkipi4_LIB=		libkipi.so
+libkipi5_PORT=		graphics/libkipi
+libkipi5_LIB=		libKF5Kipi.so
 
 libksane4_PORT=		graphics/libksane-kde4
 libksane4_LIB=		libksane.so
+libksane5_PORT=		graphics/libksane
+libksane5_LIB=		libKF5Sane.so
 
 marble4_PORT=		astro/marble-kde4
 marble4_LIB=		libmarblewidget.so
+marble5_PORT=		astro/marble
+marble5_LIB=		libmarblewidget-qt5.so
 
 okular4_PORT=		graphics/okular-kde4
 okular4_LIB=		libokularcore.so
+okular5_PORT=		graphics/okular
+okular5_LIB=		libOkular5Core.so
 # ====================== end of multiversion components ========================
 
 # ====================== select the proper multiversion component ==============

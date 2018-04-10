@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/Makefile 465565 2018-03-26 09:04:18Z yuri $
+# $FreeBSD: head/astro/Makefile 466809 2018-04-08 17:21:34Z tcberner $
 #
 
     COMMENT = Astronomical ports
@@ -31,11 +31,13 @@
     SUBDIR += josm
     SUBDIR += kstars-kde4
     SUBDIR += libgal
+    SUBDIR += libkgeomap
     SUBDIR += libkgeomap-kde4
     SUBDIR += libnova
     SUBDIR += libosmium
     SUBDIR += libosmpbf
     SUBDIR += luna
+    SUBDIR += marble
     SUBDIR += marble-kde4
     SUBDIR += match
     SUBDIR += merkaartor

@@ -1,8 +1,7 @@
-# $FreeBSD: head/net-mgmt/carbon-relay-ng/Makefile 465194 2018-03-21 16:54:24Z pi $
+# $FreeBSD: head/net-mgmt/carbon-relay-ng/Makefile 466958 2018-04-10 12:06:49Z mmokhi $
 
 PORTNAME=		carbon-relay-ng
-DISTVERSIONPREFIX=	v
-DISTVERSION=		0.9.4
+DISTVERSION=		0.10.0
 CATEGORIES=		net-mgmt
 
 MAINTAINER=		a.andersson.thn@gmail.com

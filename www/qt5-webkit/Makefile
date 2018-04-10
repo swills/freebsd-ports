@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/qt5-webkit/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/www/qt5-webkit/Makefile 466805 2018-04-08 15:53:23Z tcberner $
 
 PORTNAME=		webkit
 DISTVERSION=		5.212.0-alpha2
-PORTREVISION=		6
+PORTREVISION=		7
 CATEGORIES=		www
 MASTER_SITES=		https://github.com/annulen/${PORTNAME}/releases/download/${DISTNAME}/
 PKGNAMEPREFIX=		qt5-
@@ -36,9 +36,9 @@ RUBY_NO_RUN_DEPENDS=	yes
 
 CMAKE_ARGS=		-DPORT:STRING="Qt" \
 			-DKDE_INSTALL_INCLUDEDIR:PATH="${QT_INCDIR_REL}" \
-			-DKDE_INSTALL_LIBDIR:PATH="${QT_LIBDIR_REL}" \
-			-DENABLE_OPENGL:BOOL=TRUE \
-			-DUSE_QT_MULTIMEDIA:BOOL=FALSE
+			-DKDE_INSTALL_LIBDIR:PATH="${QT_LIBDIR_REL}"
+CMAKE_ON=		ENABLE_OPENGL
+CMAKE_OFF=		USE_QT_MULTIMEDIA USE_LD_GOLD
 
 # Add -DNDEBUG to CXXFLAGS which in turn gets sucked into
 # CMAKE_CXX_FLAGS_RELEASE where we actually want to have it.

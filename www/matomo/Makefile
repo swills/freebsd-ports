@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/matomo/Makefile 466635 2018-04-06 10:03:01Z tz $
+# $FreeBSD: head/www/matomo/Makefile 466849 2018-04-09 12:14:14Z mfechner $
 
 PORTNAME=	matomo
 DISTVERSION=	3.4.0
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://builds.matomo.org/
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
@@ -43,6 +44,7 @@ pre-install:
 	fi
 
 do-install:
+	${MKDIR} ${STAGEDIR}${WWWDIR}/tmp/cache/tracker
 	@(cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${WWWDIR})
 
 .include <bsd.port.mk>

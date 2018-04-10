@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/ocsinventory-ng/Makefile 464193 2018-03-11 18:36:16Z brnrd $
+# $FreeBSD: head/net-mgmt/ocsinventory-ng/Makefile 466796 2018-04-08 12:19:58Z brnrd $
 
 PORTNAME=	ocsinventory-ng
 PORTVERSION=	2.1.2
@@ -21,8 +21,7 @@ RUN_DEPENDS=	p5-XML-Simple>=0:textproc/p5-XML-Simple \
 		p5-SOAP-Lite>=0:net/p5-SOAP-Lite \
 		p5-XML-Entities>=0:textproc/p5-XML-Entities
 
-USES=		apache:run,2.2+ mysql perl5
-WANT_PHP_WEB=	yes
+USES=		apache:run,2.2+ mysql perl5 php:web
 USE_PHP=	mysql pcre zlib session xml gd zip openssl mbstring
 NO_ARCH=	yes
 NO_BUILD=	yes

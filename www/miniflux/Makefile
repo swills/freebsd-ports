@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/miniflux/Makefile 466171 2018-04-01 17:01:32Z krion $
+# $FreeBSD: head/www/miniflux/Makefile 466787 2018-04-08 10:01:53Z krion $
 
 PORTNAME=	miniflux
-DISTVERSION=	2.0.4
+DISTVERSION=	2.0.5
 CATEGORIES=	www
 
 MAINTAINER=	krion@FreeBSD.org

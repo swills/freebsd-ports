@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/databases/pear-DoctrineDBAL/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/databases/pear-DoctrineDBAL/Makefile 466790 2018-04-08 10:50:18Z brnrd $
 
 PORTNAME=	DoctrineDBAL
 PORTVERSION=	2.3.4
@@ -23,11 +23,10 @@ ODBC_DESC=	Install PHP DBO driver for ODBC
 PGSQL_DESC=	Install PHP DBO driver for PostgreSQL
 SQLITE_DESC=	Install PHP DBO driver for SQLite
 
-USES=		pear
+USES=		pear php:cli
 PEAR_CHANNEL=	doctrine
 
 USE_PHP=	pdo
-WANT_PHP_CLI=	yes
 
 DBLIB_RUN_DEPENDS=	${PHPBASE}/lib/php/${PHP_EXT_DIR}/pdo_dblib.so:databases/php${PHP_VER}-pdo_dblib
 MYSQL_USE=	PHP=pdo_mysql

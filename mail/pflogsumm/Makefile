@@ -1,5 +1,5 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/mail/pflogsumm/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/pflogsumm/Makefile 466906 2018-04-09 22:20:09Z dbaio $
 
 PORTNAME=	pflogsumm
 PORTVERSION=	1.1.5
@@ -11,10 +11,13 @@ MASTER_SITES=	http://jimsun.LinxNet.com/downloads/ \
 MAINTAINER=	flo@FreeBSD.org
 COMMENT=	Postfix Log Entry Summarizer
 
+LICENSE=	GPLv2+
+
 RUN_DEPENDS=	p5-Date-Calc>=0:devel/p5-Date-Calc
 
 USES=		perl5 shebangfix
 NO_BUILD=	yes
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/pflogsumm man/man1/pflogsumm.1.gz
 SHEBANG_FILES=	${PORTNAME}.pl

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 466580 2018-04-05 19:11:27Z sunpoet $
+# $FreeBSD: head/databases/Makefile 466897 2018-04-09 19:02:33Z tcberner $
 #
 
     COMMENT = Databases and related software
@@ -13,6 +13,7 @@
     SUBDIR += adminer
     SUBDIR += adodb
     SUBDIR += adodb5
+    SUBDIR += akonadi
     SUBDIR += akonadi-kde4
     SUBDIR += animenfo-client
     SUBDIR += animenfo-client-gtk
@@ -931,6 +932,7 @@
     SUBDIR += rubygem-dbd-odbc
     SUBDIR += rubygem-dbd-pg
     SUBDIR += rubygem-dbd-sqlite3
+    SUBDIR += rubygem-dbf
     SUBDIR += rubygem-dbi
     SUBDIR += rubygem-dm-aggregates
     SUBDIR += rubygem-dm-chunked_query

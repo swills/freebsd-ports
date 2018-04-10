@@ -1,5 +1,5 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/comms/atslog/Makefile 446583 2017-07-25 13:36:26Z amdmi3 $
+# $FreeBSD: head/comms/atslog/Makefile 466789 2018-04-08 10:47:04Z brnrd $
 
 PORTNAME=	atslog
 PORTVERSION=	2.1.1
@@ -50,7 +50,7 @@ LIBWRAP_CONFIGURE_OFF=	--disable-libwrap
 
 .if ${PORT_OPTIONS:MWWW}
 USE_PHP=	pcre
-WANT_PHP_WEB=	yes
+USES+=		php:web
 .if ${PORT_OPTIONS:MWWWGD}
 USE_PHP+=	gd
 .endif

@@ -1,8 +1,8 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
-# $FreeBSD: head/www/mod_http2-devel/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_http2-devel/Makefile 466856 2018-04-09 13:42:48Z brnrd $
 
 PORTNAME=	mod_http2
-PORTVERSION=	1.10.16
+PORTVERSION=	1.10.17
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}
@@ -28,6 +28,7 @@ MODULENAME=	${GH_PROJECT}
 
 CFLAGS+=	-I${LOCALBASE}/include
 
+SUB_FILES=	200_mod_http2.conf 300_mod_proxy_http2.conf
 PORTDOCS=	README README.md
 PLIST_FILES=	${APACHEMODDIR}/mod_h2.so \
 		${APACHEMODDIR}/mod_proxy_h2.so

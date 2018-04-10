@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 466652 2018-04-06 16:26:14Z sunpoet $
+# $FreeBSD: head/net/Makefile 466734 2018-04-07 16:32:07Z sunpoet $
 #
 
     COMMENT = Networking tools
@@ -1082,6 +1082,7 @@
     SUBDIR += py-soap2py
     SUBDIR += py-soappy
     SUBDIR += py-socketio-client
+    SUBDIR += py-softlayer
     SUBDIR += py-speedtest-cli
     SUBDIR += py-sshuttle
     SUBDIR += py-stomp.py

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/elasticsearch2-plugin-migration/Makefile 433794 2017-02-10 14:57:38Z olgeni $
+# $FreeBSD: head/textproc/elasticsearch2-plugin-migration/Makefile 466961 2018-04-10 12:23:09Z olgeni $
 
 PORTNAME=	migration
 PORTVERSION=	2.0.4
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
 PKGNAMEPREFIX=	elasticsearch2-plugin-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	elastic@FreeBSD.org
 COMMENT=	ElasticSearch Migration Plugin
 
 LICENSE=	APACHE20
