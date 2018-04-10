@@ -196,7 +196,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-grpc>=1.10.0:net/rubygem-grpc \
 	rubygem-gitaly>=0.8.0:net/rubygem-gitaly \
 	rubygem-google-protobuf351>=3.5.1:devel/rubygem-google-protobuf351 \
-	rubygem-toml-rb>=1.0.0:www/rubygem-toml-rb \
+	rubygem-toml-rb11>=1.0.0:www/rubygem-toml-rb11 \
 	rubygem-flipper011>=0.11.0:devel/rubygem-flipper011 \
 	rubygem-flipper-active_record011>=0.11.0:databases/rubygem-flipper-active_record011 \
 	rubygem-flipper-active_support_cache_store011>=0.11.0:devel/rubygem-flipper-active_support_cache_store011 \
