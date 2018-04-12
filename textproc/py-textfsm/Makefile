@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-textfsm/Makefile 466531 2018-04-05 04:45:13Z yuri $
+# $FreeBSD: head/textproc/py-textfsm/Makefile 466963 2018-04-10 13:59:38Z krion $
 
 PORTNAME=	textfsm
-DISTVERSION=	0.4.0
+DISTVERSION=	0.4.1
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

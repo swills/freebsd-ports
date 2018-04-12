@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-turbolinks/Makefile 458552 2018-01-09 16:41:28Z sunpoet $
+# $FreeBSD: head/www/rubygem-turbolinks/Makefile 467103 2018-04-11 19:39:54Z sunpoet $
 
 PORTNAME=	turbolinks
-PORTVERSION=	5.1.0
+PORTVERSION=	5.1.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -11,7 +11,7 @@ COMMENT=	Turbolinks makes following links in your web application faster
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS?=	rubygem-coffee-rails4>=4.0.1:devel/rubygem-coffee-rails4 \
+RUN_DEPENDS=	rubygem-coffee-rails4>=4.0.1:devel/rubygem-coffee-rails4 \
 		rubygem-turbolinks-source>=5.1:www/rubygem-turbolinks-source
 
 NO_ARCH=	yes

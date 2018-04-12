@@ -1,0 +1,33 @@
+# $FreeBSD: head/deskutils/knotes/Makefile 467009 2018-04-10 19:31:53Z tcberner $
+
+PORTNAME=	knotes
+DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+CATEGORIES=	deskutils kde kde-applications
+
+MAINTAINER=	kde@FreeBSD.org
+COMMENT=	Popup notes
+
+LICENSE=	LGPL21
+
+LIB_DEPENDS=	libical.so:devel/libical
+
+USES=		cmake:outsource compiler:c++11-lib gettext grantlee:5 kde:5 tar:xz
+USE_KDE=	attica auth bookmarks codecs completion config configwidgets \
+		coreaddons crash dbusaddons dnssd globalaccel guiaddons i18n \
+		iconthemes itemmodels itemviews jobwidgets kcmutils \
+		kdelibs4support kio newstuff notifications notifyconfig parts \
+		service solid sonnet textwidgets unitconversion widgetsaddons \
+		windowsystem xmlgui
+# pim components
+USE_KDE+=	akonadi akonadicontacts akonadinotes akonadisearch  \
+		calendarcore calendarutils contacts kontactinterface libkdepim \
+		mime pimcommon pimtextedit
+USE_QT5=	core dbus gui network printsupport widgets x11extras xml \
+		buildtools_build qmake_build
+USE_XORG=	ice sm x11 xext
+USE_LDCONFIG=	yes
+
+DESCR=		${.CURDIR:H:H}/deskutils/kdepim/pkg-descr
+
+
+.include <bsd.port.mk>

@@ -1,6 +1,6 @@
-# $FreeBSD: head/graphics/poppler-qt5/Makefile 430818 2017-01-07 18:15:08Z rakuco $
+# $FreeBSD: head/graphics/poppler-qt5/Makefile 467004 2018-04-10 18:46:47Z madpilot $
 
-PORTREVISION=	1
+PORTREVISION=	2
 PKGNAMESUFFIX=	-qt5
 
 MAINTAINER=	gnome@FreeBSD.org

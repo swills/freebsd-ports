@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-cairo-gobject/Makefile 454625 2017-11-21 18:14:19Z sunpoet $
+# $FreeBSD: head/devel/rubygem-cairo-gobject/Makefile 467055 2018-04-11 14:49:14Z sunpoet $
 
 PORTNAME=	cairo-gobject
-PORTVERSION=	3.2.1
+PORTVERSION=	3.2.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

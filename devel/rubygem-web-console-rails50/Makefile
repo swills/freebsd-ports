@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-web-console-rails50/Makefile 447386 2017-08-05 03:25:17Z jrm $
+# $FreeBSD: head/devel/rubygem-web-console-rails50/Makefile 467099 2018-04-11 19:39:34Z sunpoet $
 
 PORTNAME=	web-console
-PORTVERSION=	3.5.1
+PORTVERSION=	3.6.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50

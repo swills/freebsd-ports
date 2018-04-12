@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-omniauth-facebook/Makefile 429829 2016-12-28 22:30:59Z swills $
+# $FreeBSD: head/net/rubygem-omniauth-facebook/Makefile 467102 2018-04-11 19:39:49Z sunpoet $
 
 PORTNAME=	omniauth-facebook
-PORTVERSION=	4.0.0
+PORTVERSION=	5.0.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

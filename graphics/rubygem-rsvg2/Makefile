@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/rubygem-rsvg2/Makefile 454635 2017-11-21 18:15:08Z sunpoet $
+# $FreeBSD: head/graphics/rubygem-rsvg2/Makefile 467065 2018-04-11 14:50:06Z sunpoet $
 
 PORTNAME=	rsvg2
-PORTVERSION=	3.2.1
+PORTVERSION=	3.2.4
 CATEGORIES=	graphics rubygems
 MASTER_SITES=	RG
 

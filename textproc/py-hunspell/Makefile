@@ -1,9 +1,8 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/textproc/py-hunspell/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-hunspell/Makefile 466978 2018-04-10 17:47:31Z thierry $
 
 PORTNAME=	hunspell
-PORTVERSION=	0.4.1
-PORTREVISION=	1
+PORTVERSION=	0.5.4
 CATEGORIES=	textproc devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

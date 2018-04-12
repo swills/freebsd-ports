@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/entr/Makefile 461495 2018-02-11 12:28:52Z danilo $
+# $FreeBSD: head/sysutils/entr/Makefile 467035 2018-04-11 08:33:36Z amdmi3 $
 
 PORTNAME=	entr
 PORTVERSION=	4.0
@@ -17,9 +17,7 @@ WRKSRC=		${WRKDIR}/eradman-entr-d5110481f5b9
 
 MAKEFILE=	Makefile.bsd
 MAKE_ARGS=	MANPREFIX=${MANPREFIX}/man
+TEST_TARGET=	test
 PLIST_FILES=	bin/entr man/man1/entr.1.gz
-
-regression-test: build
-	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${MAKE} -f ${MAKEFILE} ${MAKE_ARGS} test)
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: jeff@cetlink.net
-# $FreeBSD: head/graphics/gd/Makefile 439814 2017-04-30 12:50:54Z sunpoet $
+# $FreeBSD: head/graphics/gd/Makefile 467040 2018-04-11 09:33:39Z amdmi3 $
 
 PORTNAME=	libgd
 PORTVERSION=	2.2.4
@@ -12,6 +12,7 @@ MAINTAINER?=	dinoex@FreeBSD.org
 COMMENT?=	Graphics library for fast creation of images
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libtiff.so:graphics/tiff \
 		libpng.so:graphics/png \
@@ -75,11 +76,11 @@ pre-configure:
 	${REINPLACE_CMD} \
 		-e 's|^GDLIB_LT_CURRENT=3|GDLIB_LT_CURRENT=6|' \
 		${WRKSRC}/configure
-.if ! ${PORT_OPTIONS:MICONV}
+
+pre-configure-ICONV-off:
 	${REINPLACE_CMD} \
 		-e 's|iconv|noiconv|' \
 		${WRKSRC}/configure
-.endif
 
 .if defined(GD_FONTS)
 pre-build:

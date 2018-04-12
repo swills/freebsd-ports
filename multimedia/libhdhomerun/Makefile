@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/libhdhomerun/Makefile 465772 2018-03-27 23:34:44Z dbaio $
+# $FreeBSD: head/multimedia/libhdhomerun/Makefile 467019 2018-04-11 00:30:55Z dbaio $
 
 PORTNAME=	libhdhomerun
-PORTVERSION=	20171221
+PORTVERSION=	20180327
 CATEGORIES=	multimedia
 MASTER_SITES=	http://download.silicondust.com/hdhomerun/
 DISTNAME=	${PORTNAME}_${PORTVERSION}

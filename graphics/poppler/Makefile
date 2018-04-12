@@ -1,8 +1,9 @@
 # Created by: marcus@FreeBSD.org
-# $FreeBSD: head/graphics/poppler/Makefile 449018 2017-08-31 09:14:40Z kwm $
+# $FreeBSD: head/graphics/poppler/Makefile 467004 2018-04-10 18:46:47Z madpilot $
 
 PORTNAME=	poppler
 PORTVERSION=	0.57.0
+PORTREVISION=	1
 CATEGORIES=	graphics print
 MASTER_SITES=	http://poppler.freedesktop.org/
 

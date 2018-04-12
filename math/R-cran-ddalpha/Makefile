@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-ddalpha/Makefile 465861 2018-03-29 01:13:07Z tota $
+# $FreeBSD: head/math/R-cran-ddalpha/Makefile 467031 2018-04-11 07:37:16Z tota $
 
 PORTNAME=	ddalpha
-PORTVERSION=	1.3.1.1
+PORTVERSION=	1.3.2
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
@@ -13,6 +13,7 @@ LICENSE=	GPLv2
 
 CRAN_DEPENDS=	R-cran-robustbase>0:math/R-cran-robustbase \
 		R-cran-sfsmisc>0:devel/R-cran-sfsmisc \
+		R-cran-geometry>0:math/R-cran-geometry \
 		R-cran-Rcpp>=0.11.0:devel/R-cran-Rcpp \
 		R-cran-BH>0:devel/R-cran-BH
 BUILD_DEPENDS=	${CRAN_DEPENDS}

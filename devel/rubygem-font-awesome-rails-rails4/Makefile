@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-font-awesome-rails-rails4/Makefile 458608 2018-01-10 06:40:56Z sunpoet $
+# $FreeBSD: head/devel/rubygem-font-awesome-rails-rails4/Makefile 467096 2018-04-11 19:39:18Z sunpoet $
 
 PORTNAME=	font-awesome-rails
-PORTVERSION=	4.7.0.3
+PORTVERSION=	4.7.0.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails4

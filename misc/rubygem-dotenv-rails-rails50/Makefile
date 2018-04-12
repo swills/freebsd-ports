@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/misc/rubygem-dotenv-rails-rails50/Makefile 447386 2017-08-05 03:25:17Z jrm $
+# $FreeBSD: head/misc/rubygem-dotenv-rails-rails50/Makefile 467101 2018-04-11 19:39:44Z sunpoet $
 
 PORTNAME=	dotenv-rails
-PORTVERSION=	2.2.1
+PORTVERSION=	2.2.2
 CATEGORIES=	misc rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50

@@ -1,12 +1,13 @@
 # Created by: Heiner Eichmann <h.eichmann@gmx.de>
-# $FreeBSD: head/sysutils/k3b-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/sysutils/k3b-kde4/Makefile 467005 2018-04-10 18:58:57Z tcberner $
 
 PORTNAME=	k3b
 PORTVERSION=	2.0.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	sysutils multimedia kde
 MASTER_SITES=	KDE/stable/${PORTNAME}
 DISTFILES=	${DISTNAME}a${EXTRACT_SUFX}
+PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE CD/DVD writing suite

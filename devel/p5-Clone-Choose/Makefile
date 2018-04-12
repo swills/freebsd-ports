@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Clone-Choose/Makefile 466818 2018-04-08 18:29:36Z sunpoet $
+# $FreeBSD: head/devel/p5-Clone-Choose/Makefile 466971 2018-04-10 17:38:50Z sunpoet $
 
 PORTNAME=	Clone-Choose
-PORTVERSION=	0.009
+PORTVERSION=	0.010
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
