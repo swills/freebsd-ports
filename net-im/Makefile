@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 466293 2018-04-03 09:36:28Z rene $
+# $FreeBSD: head/net-im/Makefile 466968 2018-04-10 16:18:29Z tcberner $
 #
 
     COMMENT = Instant messaging
@@ -38,18 +38,32 @@
     SUBDIR += jarl
     SUBDIR += jggtrans
     SUBDIR += jitsi
+    SUBDIR += kaccounts-integration
+    SUBDIR += kaccounts-providers
     SUBDIR += kmess-kde4
     SUBDIR += kopete-kde4
+    SUBDIR += ktp-accounts-kcm
     SUBDIR += ktp-accounts-kcm-kde4
+    SUBDIR += ktp-approver
     SUBDIR += ktp-approver-kde4
+    SUBDIR += ktp-auth-handler
     SUBDIR += ktp-auth-handler-kde4
+    SUBDIR += ktp-call-ui
+    SUBDIR += ktp-common-internals
     SUBDIR += ktp-common-internals-kde4
+    SUBDIR += ktp-contact-list
     SUBDIR += ktp-contact-list-kde4
+    SUBDIR += ktp-contact-runner
     SUBDIR += ktp-contact-runner-kde4
+    SUBDIR += ktp-desktop-applets
     SUBDIR += ktp-desktop-applets-kde4
+    SUBDIR += ktp-filetransfer-handler
     SUBDIR += ktp-filetransfer-handler-kde4
     SUBDIR += ktp-kded-integration-module-kde4
+    SUBDIR += ktp-kded-module
+    SUBDIR += ktp-send-file
     SUBDIR += ktp-send-file-kde4
+    SUBDIR += ktp-text-ui
     SUBDIR += ktp-text-ui-kde4
     SUBDIR += libaccounts-glib
     SUBDIR += libaccounts-qt5
@@ -181,6 +195,7 @@
     SUBDIR += telepathy-kde4
     SUBDIR += telepathy-logger
     SUBDIR += telepathy-logger-qt4
+    SUBDIR += telepathy-logger-qt5
     SUBDIR += telepathy-mission-control
     SUBDIR += telepathy-python
     SUBDIR += telepathy-qt4

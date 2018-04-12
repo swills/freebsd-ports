@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 466935 2018-04-10 01:57:22Z stephen $
+# $FreeBSD: head/math/Makefile 467036 2018-04-11 08:48:37Z tota $
 #
 
     COMMENT = Mathematics
@@ -17,6 +17,7 @@
     SUBDIR += R-cran-MCMCpack
     SUBDIR += R-cran-MSwM
     SUBDIR += R-cran-MatchIt
+    SUBDIR += R-cran-magic
     SUBDIR += R-cran-Matching
     SUBDIR += R-cran-MatrixModels
     SUBDIR += R-cran-NMF
@@ -46,6 +47,7 @@
     SUBDIR += R-cran-forecast
     SUBDIR += R-cran-fracdiff
     SUBDIR += R-cran-geepack
+    SUBDIR += R-cran-geometry
     SUBDIR += R-cran-gmp
     SUBDIR += R-cran-gower
     SUBDIR += R-cran-gpclib
@@ -86,6 +88,7 @@
     SUBDIR += R-cran-sp
     SUBDIR += R-cran-spData
     SUBDIR += R-cran-spdep
+    SUBDIR += R-cran-SQUAREM
     SUBDIR += R-cran-sspir
     SUBDIR += R-cran-stabledist
     SUBDIR += R-cran-survey

@@ -1,13 +1,13 @@
-# $FreeBSD: head/net-im/py-nbxmpp/Makefile 460419 2018-01-30 17:39:47Z rm $
+# $FreeBSD: head/net-im/py-nbxmpp/Makefile 467112 2018-04-11 21:05:32Z rm $
 
 PORTNAME=	nbxmpp
-PORTVERSION=	0.6.3
+PORTVERSION=	0.6.4
 CATEGORIES=	net-im devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	rm@FreeBSD.org
-COMMENT=	Non blocking Jabber/XMPP module
+COMMENT=	Non-blocking Jabber/XMPP module
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING

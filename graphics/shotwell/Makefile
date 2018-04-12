@@ -1,9 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org> et al.
-# $FreeBSD: head/graphics/shotwell/Makefile 466598 2018-04-05 20:13:48Z tobik $
+# $FreeBSD: head/graphics/shotwell/Makefile 467045 2018-04-11 12:45:34Z cmt $
 
 PORTNAME=	shotwell
-PORTVERSION=	0.28.0
-PORTREVISION=	1
+PORTVERSION=	0.28.2
 CATEGORIES=	graphics gnome
 MASTER_SITES=	GNOME/sources/shotwell/${PORTVERSION:R}
 

@@ -1,15 +1,15 @@
-# $FreeBSD: head/net/kget-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/net/kget-kde4/Makefile 466980 2018-04-10 18:17:02Z tcberner $
 
 PORTNAME=	kget
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	net kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE download manager
 
 LIB_DEPENDS=	libgpgme.so:security/gpgme \
-		libktorrent.so:net-p2p/libktorrent \
+		libktorrent.so:net-p2p/libktorrent-kde4 \
 		libmms.so:net/libmms \
 		libqca.so:devel/qca \
 		libboost_thread.so:devel/boost-libs

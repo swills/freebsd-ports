@@ -1,8 +1,8 @@
 # Created by: Mark Johnston <markj@FreeBSD.org>
-# $FreeBSD: head/ftp/netdumpd/Makefile 463670 2018-03-05 21:23:20Z markj $
+# $FreeBSD: head/ftp/netdumpd/Makefile 467109 2018-04-11 20:30:26Z markj $
 
 PORTNAME=	netdumpd
-PORTVERSION=	20180305
+PORTVERSION=	20180411
 CATEGORIES=	ftp
 MASTER_SITES=	LOCAL/markj
 

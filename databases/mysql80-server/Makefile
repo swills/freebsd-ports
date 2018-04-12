@@ -1,9 +1,9 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/databases/mysql80-server/Makefile 466508 2018-04-04 21:01:28Z mmokhi $
+# $FreeBSD: head/databases/mysql80-server/Makefile 467052 2018-04-11 14:42:06Z mmokhi $
 
 PORTNAME?=		mysql
 PORTVERSION=		8.0.2
-PORTREVISION?=		2
+PORTREVISION?=		3
 DISTVERSIONSUFFIX?=	-dmr
 CATEGORIES=		databases ipv6
 MASTER_SITES=		MYSQL/MySQL-8.0
@@ -141,11 +141,10 @@ FEDERATED_SUB_LIST_OFF+=	FEDER=""
 
 .include <bsd.port.options.mk>
 
-.if ${OPSYS} != FreeBSD || ${OSVERSION} < 1101514 || \
-	${OSVERSION} >= 1200000 && ${OSVERSION} < 1200057
-SUB_LIST+=	LEGACY_LIMITS="" MODERN_LIMITS="@comment "
-.else
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200057
 SUB_LIST+=	LEGACY_LIMITS="@comment " MODERN_LIMITS=""
+.else
+SUB_LIST+=	LEGACY_LIMITS="" MODERN_LIMITS="@comment "
 .endif
 
 .include <bsd.port.pre.mk>

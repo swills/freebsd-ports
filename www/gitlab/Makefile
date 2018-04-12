@@ -1,9 +1,10 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab/Makefile 466676 2018-04-06 16:30:17Z mfechner $
+# $FreeBSD: head/www/gitlab/Makefile 467106 2018-04-11 19:40:10Z sunpoet $
 
 PORTNAME=	gitlab
 PORTVERSION=	10.6.4
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	www devel
 
 MAINTAINER=	idefix@fechner.net
@@ -47,7 +48,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-omniauth-auth0>=2.0.0:net/rubygem-omniauth-auth0 \
 	rubygem-omniauth-azure-oauth2>=0.0.9:net/rubygem-omniauth-azure-oauth2 \
 	rubygem-omniauth-cas3>=1.1.4:security/rubygem-omniauth-cas3 \
-	rubygem-omniauth-facebook>=4.0.0:net/rubygem-omniauth-facebook \
+	rubygem-omniauth-facebook4>=4.0.0:net/rubygem-omniauth-facebook4 \
 	rubygem-omniauth-github11>=1.1.1:net/rubygem-omniauth-github11 \
 	rubygem-omniauth-gitlab>=1.0.2:security/rubygem-omniauth-gitlab \
 	rubygem-omniauth-google-oauth2>=0.5.2:net/rubygem-omniauth-google-oauth2 \

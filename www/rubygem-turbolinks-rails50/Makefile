@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-turbolinks-rails50/Makefile 458554 2018-01-09 16:42:02Z sunpoet $
+# $FreeBSD: head/www/rubygem-turbolinks-rails50/Makefile 467105 2018-04-11 19:40:04Z sunpoet $
 
 PORTNAME=	turbolinks
-PORTVERSION=	5.1.0
+PORTVERSION=	5.1.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50

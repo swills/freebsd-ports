@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-actioncable5/Makefile 462112 2018-02-17 11:58:25Z sunpoet $
+# $FreeBSD: head/www/rubygem-actioncable5/Makefile 466988 2018-04-10 18:27:42Z sunpoet $
 
 PORTNAME=	actioncable
-PORTVERSION=	5.1.5
+PORTVERSION=	5.1.6
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	5

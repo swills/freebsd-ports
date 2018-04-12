@@ -1,8 +1,8 @@
 # Created by: Dryice Liu <dryice@FreeBSD.org>
-# $FreeBSD: head/www/py-beaker/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-beaker/Makefile 466976 2018-04-10 17:39:17Z sunpoet $
 
 PORTNAME=	beaker
-PORTVERSION=	1.9.0
+PORTVERSION=	1.9.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

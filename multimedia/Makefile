@@ -1,9 +1,10 @@
-# $FreeBSD: head/multimedia/Makefile 466900 2018-04-09 19:29:42Z tcberner $
+# $FreeBSD: head/multimedia/Makefile 467008 2018-04-10 19:24:36Z mmokhi $
 #
 
     COMMENT = Multimedia software
 
     SUBDIR += 2mandvd
+    SUBDIR += Bento4
     SUBDIR += QtAV
     SUBDIR += ab25
     SUBDIR += abby

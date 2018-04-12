@@ -1,9 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-deldir/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/R-cran-deldir/Makefile 467033 2018-04-11 08:02:45Z tota $
 
 PORTNAME=	deldir
-DISTVERSION=	0.1-14
-PORTREVISION=	1
+DISTVERSION=	0.1-15
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

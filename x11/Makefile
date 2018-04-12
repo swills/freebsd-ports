@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 466039 2018-03-31 11:24:38Z dbaio $
+# $FreeBSD: head/x11/Makefile 467012 2018-04-10 19:44:33Z tcberner $
 #
 
     COMMENT = Ports to support the X window system
@@ -145,6 +145,7 @@
     SUBDIR += kf5-kwindowsystem
     SUBDIR += kf5-plasma-framework
     SUBDIR += kgamma-kde4
+    SUBDIR += konsole
     SUBDIR += konsole-kde4
     SUBDIR += leechcraft
     SUBDIR += lemonbar

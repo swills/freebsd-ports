@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/kdenetwork-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/net/kdenetwork-kde4/Makefile 467042 2018-04-11 09:57:25Z tcberner $
 
 PORTNAME=	kdenetwork
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	net kde
 PKGNAMESUFFIX=	-kde4
 
