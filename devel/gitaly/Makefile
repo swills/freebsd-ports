@@ -2,6 +2,7 @@
 
 PORTNAME=	gitaly
 DISTVERSION=	0.91.0
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	idefix@fechner.net
