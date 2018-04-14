@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/kcm-polkit-kde/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/sysutils/kcm-polkit-kde/Makefile 467318 2018-04-14 13:30:12Z tcberner $
 
 PORTNAME=	polkit-kde
 DISTVERSION=	0.0-${PORTDATE}
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	sysutils kde
 MASTER_SITES=	LOCAL/avilla
 PKGNAMEPREFIX=	kcm-
@@ -11,7 +11,7 @@ DISTNAME=	${PORTNAME}-kcmodules-1-${PORTDATE}
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Polkit-KDE configuration module
 
-LIB_DEPENDS=	libpolkit-qt-agent-1.so:sysutils/polkit-qt
+LIB_DEPENDS=	libpolkit-qt-agent-1.so:sysutils/polkit-qt@qt4
 RUN_DEPENDS=	${KDE_PREFIX}/lib/kde4/libexec/polkit-kde-authentication-agent-1:sysutils/polkit-kde
 
 USES=		cmake kde:4 pkgconfig tar:bzip2

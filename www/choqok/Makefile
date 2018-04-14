@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/www/choqok/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/www/choqok/Makefile 467317 2018-04-14 13:16:32Z tcberner $
 
 PORTNAME=	choqok
 PORTVERSION=	1.5
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	www kde
 MASTER_SITES=	SF/${PORTNAME}/Choqok/
 
@@ -13,7 +13,7 @@ COMMENT=	KDE micro-blogging client
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libqjson.so:devel/qjson \
+LIB_DEPENDS=	libqjson.so:devel/qjson@qt4 \
 		libqoauth.so:net/qoauth \
 		libtelepathy-qt4.so:net-im/telepathy-qt4
 

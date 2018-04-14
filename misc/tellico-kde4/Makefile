@@ -1,9 +1,9 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/misc/tellico-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/misc/tellico-kde4/Makefile 467317 2018-04-14 13:16:32Z tcberner $
 
 PORTNAME=	tellico
 PORTVERSION=	2.3.12
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	misc kde
 MASTER_SITES=	http://tellico-project.org/files/
 
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libexempi.so:textproc/exempi \
 		libgcrypt.so:security/libgcrypt \
 		libgpg-error.so:security/libgpg-error \
 		libpoppler-qt4.so:graphics/poppler-qt4 \
-		libqjson.so:devel/qjson \
+		libqjson.so:devel/qjson@qt4 \
 		libtag.so:audio/taglib \
 		libyaz.so:net/yaz
 

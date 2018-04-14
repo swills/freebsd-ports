@@ -1,9 +1,9 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/irc/quassel/Makefile 464272 2018-03-12 18:52:53Z tcberner $
+# $FreeBSD: head/irc/quassel/Makefile 467306 2018-04-14 11:09:16Z tcberner $
 
 PORTNAME=	quassel
 PORTVERSION=	0.12.4
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	irc
 MASTER_SITES=	http://www.quassel-irc.org/pub/
 
@@ -39,7 +39,7 @@ CLIENT_LIB_DEPENDS=	libdbusmenu-qt5.so:devel/libdbusmenu-qt@qt5
 CORE_DESC=		Quassel core server (for use with client)
 CORE_CMAKE_BOOL=	WANT_CORE
 CORE_USE=		qt5=script,sql
-CORE_LIB_DEPENDS=	libqca-qt5.so:devel/qca-qt5
+CORE_LIB_DEPENDS=	libqca-qt5.so:devel/qca@qt5
 CORE_SUB_FILES=		pkg-message
 CORE_VARS=		use_rc_subr=quasselcore \
 			users=quasselcore \
@@ -50,7 +50,7 @@ CORE_PLIST_FILES=	bin/quasselcore
 MONO_DESC=		Quassel standalone (monolithic binary: core+client combined)
 MONO_CMAKE_BOOL=	WANT_MONO
 MONO_USE=		qt5=script,sql
-MONO_LIB_DEPENDS=	libqca-qt5.so:devel/qca-qt5
+MONO_LIB_DEPENDS=	libqca-qt5.so:devel/qca@qt5
 
 NLS_USE=		QT5=linguisttools_build
 

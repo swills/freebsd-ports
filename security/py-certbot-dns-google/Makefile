@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-certbot-dns-google/Makefile 467144 2018-04-12 11:07:37Z sunpoet $
+# $FreeBSD: head/security/py-certbot-dns-google/Makefile 467310 2018-04-14 12:01:21Z mat $
 
 PORTNAME=	certbot-dns-google
 PORTVERSION=	${ACME_VERSION}
@@ -13,8 +13,8 @@ COMMENT=	Google Cloud DNS Authenticator plugin for Certbot
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}acme>=${ACME_VERSION}:security/py-acme@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}certbot>=${ACME_VERSION}:security/py-certbot@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}acme>=${ACME_VERSION},1:security/py-acme@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}certbot>=${ACME_VERSION},1:security/py-certbot@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}google-api-python-client>1.5:www/py-google-api-python-client@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}httplib2>0:www/py-httplib2@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR} \

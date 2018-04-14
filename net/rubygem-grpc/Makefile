@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/rubygem-grpc/Makefile 458653 2018-01-10 15:47:54Z swills $
+# $FreeBSD: head/net/rubygem-grpc/Makefile 467329 2018-04-14 16:28:26Z mfechner $
 
 PORTNAME=	grpc
-PORTVERSION=	1.8.3
+PORTVERSION=	1.10.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -12,7 +12,7 @@ LICENSE=	BSD3CLAUSE
 
 RUN_DEPENDS=	ca_root_nss>=0:security/ca_root_nss \
 		grpc>=0:devel/grpc \
-		rubygem-google-protobuf>=3.0:devel/rubygem-google-protobuf \
+		rubygem-google-protobuf>=3.1:devel/rubygem-google-protobuf \
 		rubygem-googleauth>=0.5.1:security/rubygem-googleauth \
 		rubygem-googleapis-common-protos-types>=1.0.0:devel/rubygem-googleapis-common-protos-types
 
@@ -24,8 +24,8 @@ BUILD_DEPENDS=	ca_root_nss>=0:security/ca_root_nss \
 
 MAKE_JOBS_UNSAFE=yes
 
-USE_RUBY=	yes
 USES=		gem gmake pkgconfig
+USE_RUBY=	yes
 
 post-extract:
 	@${RM} -r ${WRKSRC}/include ${WRKSRC}/third_party ${WRKSRC}/src/boringssl \

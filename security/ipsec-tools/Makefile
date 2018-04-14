@@ -1,5 +1,5 @@
 # Created by: vanhu
-# $FreeBSD: head/security/ipsec-tools/Makefile 438782 2017-04-18 14:36:08Z eugen $
+# $FreeBSD: head/security/ipsec-tools/Makefile 467313 2018-04-14 12:07:58Z eugen $
 
 # TODO: - libipsec issue ?
 #       - cleanup...
@@ -8,12 +8,14 @@
 
 PORTNAME=	ipsec-tools
 PORTVERSION=	0.8.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security
 MASTER_SITES=	SF
 
 MAINTAINER=	vanhu@FreeBSD.org
 COMMENT=	KAME racoon IKE daemon, ipsec-tools version
+
+LICENSE=	BSD3CLAUSE
 
 CONFLICTS=	racoon-[0-9]*
 

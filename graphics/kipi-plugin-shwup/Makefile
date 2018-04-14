@@ -1,14 +1,14 @@
-# $FreeBSD: head/graphics/kipi-plugin-shwup/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/graphics/kipi-plugin-shwup/Makefile 467306 2018-04-14 11:09:16Z tcberner $
 
 PORTNAME=	kipi-plugin-${KIPI_PLUGIN}
 PORTVERSION=	${DIGIKAM_VER}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics kde
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	${${KIPI_PLUGIN}_DESC}
 
-LIB_DEPENDS=	libqca.so:devel/qca
+LIB_DEPENDS=	libqca.so:devel/qca@qt4
 
 KIPI_PLUGIN=	shwup
 .include "${.CURDIR}/../digikam-kde4/Makefile.common"

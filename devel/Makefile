@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 467281 2018-04-14 00:57:58Z jbeich $
+# $FreeBSD: head/devel/Makefile 467317 2018-04-14 13:16:32Z tcberner $
 #
 
     COMMENT = Development utilities
@@ -5192,13 +5192,11 @@
     SUBDIR += qbs
     SUBDIR += qbzr
     SUBDIR += qca
-    SUBDIR += qca-qt5
     SUBDIR += qconf
     SUBDIR += qct
     SUBDIR += qdevelop
     SUBDIR += qgit
     SUBDIR += qjson
-    SUBDIR += qjson-qt5
     SUBDIR += qmake
     SUBDIR += qprog
     SUBDIR += qross

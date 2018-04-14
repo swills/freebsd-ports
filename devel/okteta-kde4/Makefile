@@ -1,14 +1,14 @@
-# $FreeBSD: head/devel/okteta-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/devel/okteta-kde4/Makefile 467306 2018-04-14 11:09:16Z tcberner $
 
 PORTNAME=	okteta
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE hex editor
 
-LIB_DEPENDS=	libqca.so:devel/qca
+LIB_DEPENDS=	libqca.so:devel/qca@qt4
 
 USES=		cmake:outsource kde:4 shared-mime-info tar:xz
 USE_KDE=	kdelibs automoc4

@@ -1,13 +1,14 @@
-# $FreeBSD: head/devel/kf5-kauth/Makefile 454297 2017-11-16 05:59:35Z tcberner $
+# $FreeBSD: head/devel/kf5-kauth/Makefile 467318 2018-04-14 13:30:12Z tcberner $
 
 PORTNAME=	kauth
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KF5 abstraction to system policy and authentication features
 
-LIB_DEPENDS=	libpolkit-qt5-core-1.so:sysutils/polkit-qt5
+LIB_DEPENDS=	libpolkit-qt5-core-1.so:sysutils/polkit-qt@qt5
 
 USES=		cmake:outsource compiler:c++11-lib kde:5 tar:xz
 USE_KDE=	coreaddons ecm

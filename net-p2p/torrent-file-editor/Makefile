@@ -1,8 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/net-p2p/torrent-file-editor/Makefile 459674 2018-01-22 16:40:46Z danfe $
+# $FreeBSD: head/net-p2p/torrent-file-editor/Makefile 467317 2018-04-14 13:16:32Z tcberner $
 
 PORTNAME=	torrent-file-editor
 PORTVERSION=	0.3.10
+PORTREVISION=	1
 CATEGORIES=	net-p2p
 MASTER_SITES=	SF/${PORTNAME}/v${PORTVERSION}
 
@@ -28,7 +29,7 @@ DONATION_CMAKE_OFF=	-DDISABLE_DONATION:BOOL=ON
 
 QT5_USE=	QT5=${_QT5_DEPS:ts,}
 QT5_USE_OFF=	QT4=${_QT4_DEPS:ts,}
-QT5_LIB_DEPENDS_OFF=	libqjson.so:devel/qjson
+QT5_LIB_DEPENDS_OFF=	libqjson.so:devel/qjson@qt4
 QT5_CMAKE_ON=	-DQT5_BUILD:BOOL=ON
 
 .include <bsd.port.mk>

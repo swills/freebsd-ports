@@ -1,14 +1,14 @@
-# $FreeBSD: head/misc/artikulate-kde4/Makefile 465444 2018-03-24 10:13:33Z tcberner $
+# $FreeBSD: head/misc/artikulate-kde4/Makefile 467319 2018-04-14 14:02:49Z tcberner $
 
 PORTNAME=	artikulate
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	misc kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Pronunciation trainer for KDE
 
-LIB_DEPENDS=	libQtGStreamer-1.0.so:multimedia/gstreamer1-qt4 \
+LIB_DEPENDS=	libQtGStreamer-1.0.so:multimedia/gstreamer1-qt@qt4 \
 		libboost_thread.so:devel/boost-libs
 RUN_DEPENDS=	${LOCALBASE}/lib/kde4/imports/org/kde/charts/qmldir:graphics/kqtquickcharts-kde4
 

@@ -1,9 +1,10 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/qoauth/Makefile 437118 2017-03-28 11:03:30Z rakuco $
+# $FreeBSD: head/net/qoauth/Makefile 467306 2018-04-14 11:09:16Z tcberner $
 
 PORTNAME=	qoauth
 PORTVERSION=	2.0.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	net devel security
 
 MAINTAINER=	kde@FreeBSD.org
@@ -12,7 +13,7 @@ COMMENT=	Qt 4 support for OAuth-powered network services
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	libqca.so:devel/qca
+LIB_DEPENDS=	libqca.so:devel/qca@qt4
 
 USES=		qmake:outsource
 USE_LDCONFIG=	yes

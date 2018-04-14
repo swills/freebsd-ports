@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 467161 2018-04-12 16:12:42Z wg $
+# $FreeBSD: head/databases/Makefile 467312 2018-04-14 12:06:35Z danfe $
 #
 
     COMMENT = Databases and related software
@@ -114,6 +114,7 @@
     SUBDIR += hsqldb
     SUBDIR += influxdb
     SUBDIR += innotop
+    SUBDIR += iowow
     SUBDIR += ip4r
     SUBDIR += ipa_sdb
     SUBDIR += iplike

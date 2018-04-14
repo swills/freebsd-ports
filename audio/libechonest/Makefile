@@ -1,9 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/audio/libechonest/Makefile 435573 2017-03-06 23:50:09Z jhale $
+# $FreeBSD: head/audio/libechonest/Makefile 467317 2018-04-14 13:16:32Z tcberner $
 
 PORTNAME=	libechonest
 PORTVERSION=	2.3.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 
 MAINTAINER=	nivit@FreeBSD.org
@@ -12,7 +12,7 @@ COMMENT=	Collection of C++/Qt classes designed to use the APIs of The Echo Nest
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libqjson.so:devel/qjson
+LIB_DEPENDS=	libqjson.so:devel/qjson@qt4
 
 GH_ACCOUNT=	lfranchi
 

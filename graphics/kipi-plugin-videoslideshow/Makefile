@@ -1,15 +1,15 @@
-# $FreeBSD: head/graphics/kipi-plugin-videoslideshow/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/graphics/kipi-plugin-videoslideshow/Makefile 467319 2018-04-14 14:02:49Z tcberner $
 
 PORTNAME=	kipi-plugin-${KIPI_PLUGIN}
 PORTVERSION=	${DIGIKAM_VER}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics kde
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	${${KIPI_PLUGIN}_DESC}
 
 LIB_DEPENDS=	libMagickCore-6.so:graphics/ImageMagick \
-		libQtGLib-2.0.so:multimedia/gstreamer1-qt4
+		libQtGLib-2.0.so:multimedia/gstreamer1-qt@qt4
 
 KIPI_PLUGIN=	videoslideshow
 .include "${.CURDIR}/../digikam-kde4/Makefile.common"

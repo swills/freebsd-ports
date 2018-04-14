@@ -1,13 +1,14 @@
-# $FreeBSD: head/devel/okteta/Makefile 466899 2018-04-09 19:19:41Z tcberner $
+# $FreeBSD: head/devel/okteta/Makefile 467306 2018-04-14 11:09:16Z tcberner $
 
 PORTNAME=	okteta
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE hex editor
 
-LIB_DEPENDS=	libqca-qt5.so:devel/qca-qt5
+LIB_DEPENDS=	libqca-qt5.so:devel/qca@qt5
 
 USES=		cmake:outsource gettext kde:5 shared-mime-info tar:xz
 USE_KDE=	attica auth bookmarks codecs completion crash \

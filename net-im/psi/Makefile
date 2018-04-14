@@ -1,16 +1,16 @@
 # Created by: Jonathan Chen <jonc@chen.org.nz>
-# $FreeBSD: head/net-im/psi/Makefile 424339 2016-10-20 15:58:12Z rakuco $
+# $FreeBSD: head/net-im/psi/Makefile 467306 2018-04-14 11:09:16Z tcberner $
 
 PORTNAME=	psi
 PORTVERSION=	0.15
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net-im
 MASTER_SITES=	SF/${PORTNAME}/Psi/${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Qt 4 based Jabber client
 
-LIB_DEPENDS=	libqca.so:devel/qca \
+LIB_DEPENDS=	libqca.so:devel/qca@qt4 \
 		libminizip.so:archivers/minizip
 
 HAS_CONFIGURE=	yes

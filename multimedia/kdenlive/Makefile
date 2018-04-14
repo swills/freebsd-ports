@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/kdenlive/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/multimedia/kdenlive/Makefile 467317 2018-04-14 13:16:32Z tcberner $
 
 PORTNAME=	kdenlive
 PORTVERSION=	0.9.10
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	multimedia kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src/
 
@@ -12,7 +12,7 @@ COMMENT=	KDE professional quality non-linear video editing suite
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libmlt.so:multimedia/mlt \
-		libqjson.so:devel/qjson
+		libqjson.so:devel/qjson@qt4
 RUN_DEPENDS=	ffmpeg${FFMPEG_SUFX}:multimedia/ffmpeg${FFMPEG_SUFX} \
 		${LOCALBASE}/lib/mlt/libmltqt.so:multimedia/mlt-qt4
 

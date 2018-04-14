@@ -1,8 +1,8 @@
 # Created by: Douglas K. Rand <rand@meridian-enviro.com>
-# $FreeBSD: head/net-mgmt/nagcon/Makefile 467294 2018-04-14 07:16:55Z tcberner $
+# $FreeBSD: head/net-mgmt/nagcon/Makefile 467324 2018-04-14 16:01:51Z pi $
 
 PORTNAME=	nagcon
-PORTVERSION=	0.0.31
+PORTVERSION=	0.0.32
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://www.vanheusden.com/nagcon/
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/kget-kde4/Makefile 466980 2018-04-10 18:17:02Z tcberner $
+# $FreeBSD: head/net/kget-kde4/Makefile 467306 2018-04-14 11:09:16Z tcberner $
 
 PORTNAME=	kget
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	net kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
@@ -11,7 +11,7 @@ COMMENT=	KDE download manager
 LIB_DEPENDS=	libgpgme.so:security/gpgme \
 		libktorrent.so:net-p2p/libktorrent-kde4 \
 		libmms.so:net/libmms \
-		libqca.so:devel/qca \
+		libqca.so:devel/qca@qt4 \
 		libboost_thread.so:devel/boost-libs
 
 USES=		cmake:outsource kde:4 shebangfix sqlite tar:xz
