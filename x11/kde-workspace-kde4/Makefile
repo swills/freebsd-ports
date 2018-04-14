@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/kde-workspace-kde4/Makefile 465102 2018-03-20 18:03:48Z tcberner $
+# $FreeBSD: head/x11/kde-workspace-kde4/Makefile 467317 2018-04-14 13:16:32Z tcberner $
 
 PORTNAME=	kde-workspace
 PORTVERSION=	${KDE4_WORKSPACE_VERSION}
-PORTREVISION=	18
+PORTREVISION=	19
 CATEGORIES=	x11 kde kde-applications
 PKGNAMESUFFIX=	-kde4
 
@@ -13,7 +13,7 @@ LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 		libck-connector.so:sysutils/consolekit2 \
 		libpci.so:devel/libpci \
 		libhal.so:sysutils/hal \
-		libqjson.so:devel/qjson \
+		libqjson.so:devel/qjson@qt4 \
 		libcln.so:math/cln \
 		libqalculate.so:math/libqalculate \
 		libprison.so:graphics/prison \

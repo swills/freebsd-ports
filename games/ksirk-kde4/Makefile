@@ -1,14 +1,14 @@
-# $FreeBSD: head/games/ksirk-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/games/ksirk-kde4/Makefile 467306 2018-04-14 11:09:16Z tcberner $
 
 PORTNAME=	ksirk
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	games kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	${${PORTNAME}_DESC}
 
-LIB_DEPENDS=	libqca.so:devel/qca
+LIB_DEPENDS=	libqca.so:devel/qca@qt4
 
 USES=		cmake:outsource kde:4 tar:xz
 USE_KDE=	kdelibs libkdegames automoc4

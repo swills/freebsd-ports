@@ -1,15 +1,15 @@
 # Created by: fluffy@
-# $FreeBSD: head/editors/kate-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/editors/kate-kde4/Makefile 467317 2018-04-14 13:16:32Z tcberner $
 
 PORTNAME=	kate
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	editors kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Basic editor framework for the KDE system
 
-LIB_DEPENDS=	libqjson.so:devel/qjson
+LIB_DEPENDS=	libqjson.so:devel/qjson@qt4
 
 USES=		cmake:outsource gettext kde:4 perl5 tar:xz
 USE_KDE=	kdelibs automoc4 kactivities

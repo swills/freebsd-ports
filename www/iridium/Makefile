@@ -1,5 +1,5 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/www/iridium/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/www/iridium/Makefile 467307 2018-04-14 11:47:07Z cpm $
 
 PORTNAME=	iridium
 PORTVERSION=	58.0
@@ -53,7 +53,6 @@ LIB_DEPENDS=	libspeechd.so:accessibility/speech-dispatcher \
 		libgnome-keyring.so:security/libgnome-keyring \
 		libnss3.so:security/nss \
 		libexpat.so:textproc/expat2 \
-		libxml2.so:textproc/libxml2 \
 		libfontconfig.so:x11-fonts/fontconfig
 
 RUN_DEPENDS=	xdg-open:devel/xdg-utils \
@@ -100,7 +99,7 @@ GN_ARGS+=	clang_use_chrome_plugins=false \
 		use_system_libjpeg=true \
 		use_system_sqlite=false   # chrome has additional patches
 # TODO: investigate building with these options:
-# use_system_icu use_system_harfbuzz use_system_minigbm
+# use_system_harfbuzz use_system_minigbm
 GN_BOOTSTRAP_FLAGS=	--no-clean --no-rebuild
 
 SUB_FILES=	iridium-browser.desktop iridium

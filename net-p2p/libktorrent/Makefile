@@ -1,7 +1,8 @@
-# $FreeBSD: head/net-p2p/libktorrent/Makefile 466980 2018-04-10 18:17:02Z tcberner $
+# $FreeBSD: head/net-p2p/libktorrent/Makefile 467306 2018-04-14 11:09:16Z tcberner $
 
 PORTNAME=	libktorrent
 DISTVERSION=	2.1.0
+PORTREVISION=	1
 CATEGORIES=	net-p2p kde
 DIST_SUBDIR=	KDE/${PORTNAME}
 
@@ -12,7 +13,7 @@ BUILD_DEPENDS=	${LOCALBASE}/include/boost/concept_check.hpp:devel/boost-libs
 
 LIB_DEPENDS=	libgcrypt.so:security/libgcrypt \
 		libgmp.so:math/gmp \
-		libqca-qt5.so:devel/qca-qt5
+		libqca-qt5.so:devel/qca@qt5
 
 USES=		cmake:outsource gettext kde:5
 USE_KDE=	archive completion config coreaddons crash ecm i18n \

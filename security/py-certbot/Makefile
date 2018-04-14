@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/security/py-certbot/Makefile 467144 2018-04-12 11:07:37Z sunpoet $
+# $FreeBSD: head/security/py-certbot/Makefile 467310 2018-04-14 12:01:21Z mat $
 
 PORTNAME=	certbot
 PORTVERSION=	${ACME_VERSION}
@@ -14,7 +14,7 @@ COMMENT=	Let's Encrypt client #'
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}acme>=${ACME_VERSION}:security/py-acme@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}acme>=${ACME_VERSION},1:security/py-acme@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}configargparse>=0.9.3:devel/py-configargparse@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}configobj>0:devel/py-configobj@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}cryptography>=1.2:security/py-cryptography@${FLAVOR} \

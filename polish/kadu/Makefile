@@ -1,9 +1,9 @@
 # Created by: Jacek Pelka <jacek@combit.com.pl>
-# $FreeBSD: head/polish/kadu/Makefile 462871 2018-02-24 22:35:18Z rene $
+# $FreeBSD: head/polish/kadu/Makefile 467306 2018-04-14 11:09:16Z tcberner $
 
 PORTNAME=	kadu
 PORTVERSION=	4.3
-PORTREVISION=	5
+PORTREVISION=	6
 PORTEPOCH=	1
 CATEGORIES=	polish net-im
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION}/:kadu \
@@ -23,7 +23,7 @@ BUILD_DEPENDS=	bash:shells/bash \
 LIB_DEPENDS=	libmpdclient.so:audio/libmpdclient \
 		libsndfile.so:audio/libsndfile \
 		libinjeqt.so:devel/injeqt \
-		libqca-qt5.so:devel/qca-qt5 \
+		libqca-qt5.so:devel/qca@qt5 \
 		libidn.so:dns/libidn \
 		libqxmpp.so:net-im/qxmpp-qt5 \
 		libgadu.so:polish/libgadu \

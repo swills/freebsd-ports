@@ -1,10 +1,10 @@
-# $FreeBSD: head/net/axa/Makefile 444702 2017-06-30 07:50:24Z truckman $
+# $FreeBSD: head/net/axa/Makefile 467326 2018-04-14 16:20:43Z truckman $
 
 PORTNAME=	axa
-PORTVERSION=	1.6.0
+PORTVERSION=	2.0.1
 #PORTREVISION=	1
 CATEGORIES=	net dns
-MASTER_SITES=	FARSIGHT/${PORTNAME} LOCAL/truckman/farsight
+MASTER_SITES=	FARSIGHT LOCAL/truckman/farsight
 
 MAINTAINER=	truckman@FreeBSD.org
 COMMENT=	AXA library and tools

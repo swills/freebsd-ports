@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: head/MOVED 467281 2018-04-14 00:57:58Z jbeich $
+# $FreeBSD: head/MOVED 467319 2018-04-14 14:02:49Z tcberner $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -10145,3 +10145,8 @@ devel/libkgapi|devel/libkgapi-kde4|2018-04-11|Make room for KDE updates
 finance/libalkimia|finance/alkimia-qt4|2018-04-13|Project renamed
 security/py-zxcvbn-python|security/py-zxcvbn|2018-04-13|Renamed upstream
 devel/py-libusb115|devel/py-libusb1|2018-04-14|Unused and unmaintained upstream
+devel/qca-qt5|devel/qca@qt5|2018-04-14|Moved to a flavoured version
+devel/qjson-qt5|devel/qjson@qt5|2018-04-14|Moved to a flavoured version
+sysutils/polkit-qt5|sysutils/polkit-qt@qt5|2018-04-14|Moved to flavoured version
+multimedia/gstreamer1-qt4|multiemdia/gstreamer1-qt@qt4|2018-04-14|Moved to a flavoured version
+multimedia/gstreamer1-qt5|multimedia/gstreamer1-qt@qt5|2018-04-14|Moved to a flavoured version

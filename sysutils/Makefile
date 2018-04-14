@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 467289 2018-04-14 06:53:30Z yuri $
+# $FreeBSD: head/sysutils/Makefile 467318 2018-04-14 13:30:12Z tcberner $
 #
 
     COMMENT = System utilities
@@ -891,7 +891,6 @@
     SUBDIR += polkit-gnome
     SUBDIR += polkit-kde
     SUBDIR += polkit-qt
-    SUBDIR += polkit-qt5
     SUBDIR += pot
     SUBDIR += powerdxx
     SUBDIR += powerman

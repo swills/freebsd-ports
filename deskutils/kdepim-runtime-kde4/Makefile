@@ -1,9 +1,9 @@
 # Created by: miwi
-# $FreeBSD: head/deskutils/kdepim-runtime-kde4/Makefile 467042 2018-04-11 09:57:25Z tcberner $
+# $FreeBSD: head/deskutils/kdepim-runtime-kde4/Makefile 467317 2018-04-14 13:16:32Z tcberner $
 
 PORTNAME=	kdepim-runtime
 PORTVERSION=	${KDE4_KDEPIM_VERSION}
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	deskutils kde
 MASTER_SITES=	KDE/${KDE4_APPLICATIONS_BRANCH}/applications/${KDE4_APPLICATIONS_VERSION}/src
 DIST_SUBDIR=	KDE/${PORTVERSION}
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 		libkolab.so:devel/libkolab \
 		libkolabxml.so:textproc/libkolabxml \
 		libkfbapi.so:net/libkfbapi \
-		libqjson.so:devel/qjson
+		libqjson.so:devel/qjson@qt4
 
 CONFLICTS_INSTALL=	kdepim-runtime44-4.*
 

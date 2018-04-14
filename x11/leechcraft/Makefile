@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/x11/leechcraft/Makefile 464266 2018-03-12 18:06:51Z tcberner $
+# $FreeBSD: head/x11/leechcraft/Makefile 467317 2018-04-14 13:16:32Z tcberner $
 
 PORTNAME=	leechcraft
 PORTVERSION=	0.6.70
-PORTREVISION=	28
+PORTREVISION=	29
 CATEGORIES=	x11
 MASTER_SITES=	http://dist.leechcraft.org/LeechCraft/0.6.70/
 
@@ -383,7 +383,7 @@ USE_QT4+=	xmlpatterns
     ${PORT_OPTIONS:MNETSTOREMANAGER} || ${PORT_OPTIONS:MPOSHUKU} || \
     ${PORT_OPTIONS:MQROSP} || ${PORT_OPTIONS:MSB2} || \
     ${PORT_OPTIONS:MTOUCHSTREAMS}
-LIB_DEPENDS+=	libqjson.so:devel/qjson
+LIB_DEPENDS+=	libqjson.so:devel/qjson@qt4
 .endif
 
 .if ${PORT_OPTIONS:MELEEMINATOR}

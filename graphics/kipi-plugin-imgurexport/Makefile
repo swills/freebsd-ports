@@ -1,14 +1,14 @@
-# $FreeBSD: head/graphics/kipi-plugin-imgurexport/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/graphics/kipi-plugin-imgurexport/Makefile 467317 2018-04-14 13:16:32Z tcberner $
 
 PORTNAME=	kipi-plugin-${KIPI_PLUGIN}
 PORTVERSION=	${DIGIKAM_VER}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics kde
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	${${KIPI_PLUGIN}_DESC}
 
-LIB_DEPENDS=	libqjson.so:devel/qjson
+LIB_DEPENDS=	libqjson.so:devel/qjson@qt4
 
 KIPI_PLUGIN=	imgurexport
 .include "${.CURDIR}/../digikam-kde4/Makefile.common"

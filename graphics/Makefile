@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 466806 2018-04-08 17:01:54Z tcberner $
+# $FreeBSD: head/graphics/Makefile 467320 2018-04-14 14:52:04Z yuri $
 #
 
     COMMENT = Graphics tools and libraries
@@ -98,6 +98,7 @@
     SUBDIR += chbg
     SUBDIR += cimg
     SUBDIR += cinepaint
+    SUBDIR += cloudcompare
     SUBDIR += clutter
     SUBDIR += clutter-gtk
     SUBDIR += clutter-gtk3

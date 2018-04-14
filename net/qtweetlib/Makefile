@@ -1,8 +1,9 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/net/qtweetlib/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/qtweetlib/Makefile 467317 2018-04-14 13:16:32Z tcberner $
 
 PORTNAME=	qtweetlib
 PORTVERSION=	0.5
+PORTREVISION=	1
 CATEGORIES=	net
 
 MAINTAINER=	nivit@FreeBSD.org
@@ -10,7 +11,7 @@ COMMENT=	C++ Qt based Twitter library
 
 LICENSE=	LGPL21
 
-LIB_DEPENDS=	libqjson.so:devel/qjson
+LIB_DEPENDS=	libqjson.so:devel/qjson@qt4
 
 GH_ACCOUNT=	minimoog
 GH_PROJECT=	QTweetLib

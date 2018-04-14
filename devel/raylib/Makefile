@@ -1,9 +1,8 @@
-# $FreeBSD: head/devel/raylib/Makefile 462852 2018-02-24 17:14:00Z yuri $
+# $FreeBSD: head/devel/raylib/Makefile 467325 2018-04-14 16:18:44Z yuri $
 
 PORTNAME=	raylib
-DISTVERSION=	1.9.4
+DISTVERSION=	1.9.7
 DISTVERSIONSUFFIX=	-dev
-PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	martinfilla@post.cz

@@ -1,9 +1,9 @@
 # Created by: arved@FreeBSD.org
-# $FreeBSD: head/x11/kdelibs-kde4/Makefile 466840 2018-04-09 08:57:19Z adridg $
+# $FreeBSD: head/x11/kdelibs-kde4/Makefile 467318 2018-04-14 13:30:12Z tcberner $
 
 PORTNAME=	kdelibs
 PORTVERSION=	${KDE4_KDELIBS_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11 kde kde-applications
 PKGNAMESUFFIX=	-kde4
 
@@ -18,7 +18,7 @@ LIB_DEPENDS=	libImath-2_2.so:graphics/ilmbase \
 		libpng.so:graphics/png \
 		libhal.so:sysutils/hal \
 		libqca.so:devel/qca \
-		libpolkit-qt-core-1.so:sysutils/polkit-qt \
+		libpolkit-qt-core-1.so:sysutils/polkit-qt@qt4 \
 		libdbusmenu-qt.so:devel/libdbusmenu-qt@qt4 \
 		libstreams.so:deskutils/libstreams
 

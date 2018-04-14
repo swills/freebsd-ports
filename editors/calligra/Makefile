@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/calligra/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/editors/calligra/Makefile 467306 2018-04-14 11:09:16Z tcberner $
 
 # TODO (when these parts are available in KF5):
 #  - add calendarcore to USE_KDE when KDE PIM is available
@@ -6,7 +6,7 @@
 #
 PORTNAME=	calligra
 PORTVERSION=	3.0.1
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	editors kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}
 DIST_SUBDIR=	KDE/${PORTNAME}
@@ -29,7 +29,7 @@ LIB_DEPENDS=	libImath-2_2.so:graphics/ilmbase \
 		libpng.so:graphics/png \
 		libpoppler-qt5.so:graphics/poppler-qt5 \
 		libpoppler.so:graphics/poppler \
-		libqca-qt5.so:devel/qca-qt5 \
+		libqca-qt5.so:devel/qca@qt5 \
 		librevenge-0.0.so:textproc/librevenge \
 		libtiff.so:graphics/tiff \
 		libvisio-0.1.so:textproc/libvisio01 \

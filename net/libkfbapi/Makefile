@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/libkfbapi/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/net/libkfbapi/Makefile 467317 2018-04-14 13:16:32Z tcberner $
 
 PORTNAME=	libkfbapi
 PORTVERSION=	1.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	net kde
 MASTER_SITES=	KDE/stable/libkfbapi/${PORTVERSION}/src
 DIST_SUBDIR=	KDE
@@ -12,7 +12,7 @@ COMMENT=	Library for accessing Facebook services
 
 LICENSE=	LGPL20
 
-LIB_DEPENDS=	libqjson.so:devel/qjson
+LIB_DEPENDS=	libqjson.so:devel/qjson@qt4
 
 USES=		cmake:outsource gettext kde:4 tar:bzip2
 USE_KDE=	automoc4 kdelibs pimlibs

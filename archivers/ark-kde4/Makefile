@@ -1,15 +1,15 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/archivers/ark-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/archivers/ark-kde4/Makefile 467317 2018-04-14 13:16:32Z tcberner $
 
 PORTNAME=	ark
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	archivers kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Archiving tool for KDE
 
-LIB_DEPENDS=	libqjson.so:devel/qjson
+LIB_DEPENDS=	libqjson.so:devel/qjson@qt4
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING

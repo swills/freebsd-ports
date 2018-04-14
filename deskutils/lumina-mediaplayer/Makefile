@@ -1,8 +1,9 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-mediaplayer/Makefile 456956 2017-12-22 02:27:47Z araujo $
+# $FreeBSD: head/deskutils/lumina-mediaplayer/Makefile 467319 2018-04-14 14:02:49Z tcberner $
 
 PORTNAME=	lumina-mediaplayer
 PORTVERSION=	1.4.1
+PORTREVISION=	1
 CATEGORIES=	deskutils
 
 MAINTAINER=	jt@ixsystems.com
@@ -10,7 +11,7 @@ COMMENT=	Streaming media player from the Lumina Desktop
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	gstreamer1-qt5>=0:multimedia/gstreamer1-qt5 \
+RUN_DEPENDS=	gstreamer1-qt5>=0:multimedia/gstreamer1-qt@qt5 \
 		gstreamer1-plugins-gl>=0:graphics/gstreamer1-plugins-gl
 
 OPTIONS_DEFINE=	I18N

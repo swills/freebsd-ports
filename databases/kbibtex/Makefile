@@ -1,9 +1,9 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/databases/kbibtex/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/databases/kbibtex/Makefile 467306 2018-04-14 11:09:16Z tcberner $
 
 PORTNAME=	kbibtex
 DISTVERSION=	0.6.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	databases kde
 MASTER_SITES=	http://download.gna.org/${PORTNAME}/${PORTVERSION:R}/
 
@@ -11,7 +11,7 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Bibliography editor for KDE
 
 LIB_DEPENDS=	libpoppler-qt4.so:graphics/poppler-qt4 \
-		libqca.so:devel/qca \
+		libqca.so:devel/qca@qt4 \
 		libqoauth.so:net/qoauth
 
 USES=		cmake gettext iconv kde:4 shared-mime-info tar:xz
