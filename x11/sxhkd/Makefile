@@ -1,8 +1,8 @@
 # Created by: Anton Tornqvist <antont@inbox.lv>
-# $FreeBSD: head/x11/sxhkd/Makefile 446846 2017-07-28 18:41:44Z ultima $
+# $FreeBSD: head/x11/sxhkd/Makefile 467286 2018-04-14 06:27:13Z riggs $
 
 PORTNAME=	sxhkd
-PORTVERSION=	0.5.8
+PORTVERSION=	0.5.9
 CATEGORIES=	x11
 
 MAINTAINER=	gor@clogic.com.ua
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libxcb-keysyms.so:x11/xcb-util-keysyms
 
-USES=		gmake pkgconfig
+USES=		gmake localbase:ldflags
 
 USE_XORG=	xcb
 
@@ -25,5 +25,14 @@ PLIST_FILES=	bin/sxhkd \
 		man/man1/sxhkd.1.gz
 
 OPTIONS_DEFINE=	EXAMPLES
+
+do-install:
+	${MKDIR} ${STAGEDIR}${BINDIR} ${STAGEDIR}${MANPREFIX}/man/man1
+	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/doc/${PORTNAME}.1 ${STAGEDIR}${MANPREFIX}/man/man1
+
+post-install-EXAMPLES-on:
+	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
+	cd ${WRKSRC}/examples && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR}
 
 .include <bsd.port.mk>

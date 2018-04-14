@@ -1,9 +1,9 @@
 # Created by: gpalmer
-# $FreeBSD: head/misc/amanda-server/Makefile 457024 2017-12-23 07:03:21Z antoine $
+# $FreeBSD: head/misc/amanda-server/Makefile 467194 2018-04-12 19:41:15Z riggs $
 
 PORTNAME=	amanda
 PORTVERSION=	3.3.9
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	misc
 MASTER_SITES=	SF/amanda/amanda%20-%20stable/${PORTVERSION}
@@ -32,7 +32,7 @@ CONFIGURE_ARGS=	--libexecdir=${PREFIX}/libexec/amanda \
 		--with-user=${USERS} --with-group=${AMANDA_GROUP} \
 		--with-bsdtcp-security --with-bsdudp-security \
 		--with-ssh-security \
-		--disable-installperms --with-security-file=${ETCDIR}/security.conf
+		--disable-installperms --with-security-file=${ETCDIR}/amanda-security.conf
 CONFIGURE_ENV=	PERL=${LOCALBASE}/bin/perl-amanda
 PKG_MESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-message

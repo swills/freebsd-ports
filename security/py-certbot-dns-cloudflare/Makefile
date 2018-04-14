@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-certbot-dns-cloudflare/Makefile 463891 2018-03-08 14:49:08Z miwi $
+# $FreeBSD: head/security/py-certbot-dns-cloudflare/Makefile 467144 2018-04-12 11:07:37Z sunpoet $
 
 PORTNAME=	certbot-dns-cloudflare
 PORTVERSION=	${ACME_VERSION}
@@ -15,9 +15,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}acme>=${ACME_VERSION}:security/py-acme@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}certbot>=${ACME_VERSION}:security/py-certbot@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}cloudflare>=1.5.1:dns/py-cloudflare@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}zope.interface>0:devel/py-zope.interface@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}cloudflare>=1.5.1:dns/py-cloudflare@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}zope.interface>0:devel/py-zope.interface@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils

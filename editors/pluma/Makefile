@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/editors/pluma/Makefile 465547 2018-03-25 21:48:32Z brd $
+# $FreeBSD: head/editors/pluma/Makefile 467271 2018-04-13 21:16:56Z ericbsd $
 
 PORTNAME=	pluma
-PORTVERSION=	1.18.2
+PORTVERSION=	1.20.1
 CATEGORIES=	editors mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -36,6 +36,6 @@ SHEBANG_FILES=	${WRKSRC}/plugins/externaltools/data/search-recursive.tool.in \
 GLIB_SCHEMAS=	org.mate.pluma.gschema.xml \
 		org.mate.pluma.plugins.filebrowser.gschema.xml \
 		org.mate.pluma.plugins.spell.gschema.xml \
-		org.mate.pluma.plugins.time.gschema.xml
+                org.mate.pluma.plugins.time.gschema.xml
 
 .include <bsd.port.mk>

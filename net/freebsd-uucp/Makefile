@@ -1,8 +1,8 @@
 # Created by: Kris Kennaway <kris@FreeBSD.org>
-# $FreeBSD: head/net/freebsd-uucp/Makefile 458116 2018-01-05 05:16:38Z dinoex $
+# $FreeBSD: head/net/freebsd-uucp/Makefile 467299 2018-04-14 08:47:16Z dinoex $
 
 PORTNAME=	freebsd-uucp
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	r
 DISTVERSION=	1_07_4
 CATEGORIES=	net comms ipv6

@@ -1,9 +1,8 @@
 # Created by: FreeBSD GNOME Team
-# $FreeBSD: head/deskutils/mozo/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/deskutils/mozo/Makefile 467271 2018-04-13 21:16:56Z ericbsd $
 
 PORTNAME=	mozo
-PORTVERSION=	1.18.0
-PORTREVISION=	1
+PORTVERSION=	1.20.0
 CATEGORIES=	deskutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

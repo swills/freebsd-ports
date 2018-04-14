@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: head/Mk/bsd.sites.mk 465484 2018-03-24 21:12:13Z sunpoet $
+# $FreeBSD: head/Mk/bsd.sites.mk 467145 2018-04-12 11:11:25Z mat $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -341,6 +341,11 @@ MASTER_SITE_GENTOO+= \
 	ftp://linux.rz.ruhr-uni-bochum.de/gentoo-mirror/%SUBDIR%/ \
 	ftp://ftp.uni-erlangen.de/pub/mirrors/gentoo/%SUBDIR%/ \
 	ftp://gentoo.inode.at/source/%SUBDIR%/
+.endif
+
+# Keep this before USE_GITHUB
+.if !empty(MASTER_SITES:M*/github.com/*/archive/*)
+DEV_WARNING+=	"MASTER_SITES contains ${MASTER_SITES:M*/github.com/*/archive/*}, please use USE_GITHUB instead."
 .endif
 
 .if !defined(IGNORE_MASTER_SITE_GITHUB)

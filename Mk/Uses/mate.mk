@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/Uses/mate.mk 445014 2017-07-04 11:44:30Z kwm $
+# $FreeBSD: head/Mk/Uses/mate.mk 467271 2018-04-13 21:16:56Z ericbsd $
 #
 # Please view me with 4 column tabs!
 
@@ -130,9 +130,8 @@ panel_BUILD_DEPENDS=	${panel_DETECT}:x11/mate-panel
 panel_LIB_DEPENDS=	libmate-panel-applet-4.so:x11/mate-panel
 panel_RUN_DEPENDS=	${panel_DETECT}:x11/mate-panel
 
-polkit_DETECT=		${LOCALBASE}/libdata/pkgconfig/polkit-gtk-mate-1.pc
+polkit_DETECT=		${LOCALBASE}/libexec/polkit-mate-authentication-agent-1
 polkit_BUILD_DEPENDS=	${polkit_DETECT}:sysutils/mate-polkit
-polkit_LIB_DEPENDS=	libpolkit-gtk-mate-1.so:sysutils/mate-polkit
 polkit_RUN_DEPENDS=	${polkit_DETECT}:sysutils/mate-polkit
 
 pluma_DETECT=		${LOCALBASE}/libdata/pkgconfig/pluma.pc

@@ -1,12 +1,12 @@
-# $FreeBSD: head/graphics/farbfeld/Makefile 446499 2017-07-23 17:10:39Z tobik $
+# $FreeBSD: head/graphics/farbfeld/Makefile 467138 2018-04-12 09:44:13Z yuri $
 
 PORTNAME=	farbfeld
-PORTVERSION=	3
+DISTVERSION=	4
 CATEGORIES=	graphics
-MASTER_SITES=	http://dl.suckless.org/farbfeld/
+MASTER_SITES=	https://dl.suckless.org/farbfeld/
 
 MAINTAINER=	aaron@baugher.biz
-COMMENT=	Lossless, uncompressed graphics format
+COMMENT=	Lossless image format which is easy to parse, pipe and compress
 
 LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/LICENSE

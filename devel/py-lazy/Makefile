@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-lazy/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/py-lazy/Makefile 467298 2018-04-14 08:33:39Z amdmi3 $
 
 PORTNAME=	lazy
 PORTVERSION=	1.2
@@ -10,10 +10,12 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	koobs@FreeBSD.org
 COMMENT=	Lazy attributes for Python objects
 
+LICENSE=	BSD2CLAUSE
+
 USES=		python zip
 USE_PYTHON=	distutils autoplist
 
-regression-test: build
+do-test:
 	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYSETUP} test
 
 .include <bsd.port.mk>

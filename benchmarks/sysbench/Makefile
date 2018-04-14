@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@ccca.nctu.edu.tw>
-# $FreeBSD: head/benchmarks/sysbench/Makefile 466418 2018-04-04 10:56:31Z sunpoet $
+# $FreeBSD: head/benchmarks/sysbench/Makefile 467154 2018-04-12 13:46:56Z danfe $
 
 PORTNAME=	sysbench
 PORTVERSION=	1.0.14
@@ -11,7 +11,6 @@ COMMENT=	Scriptable database and system performance benchmark
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	xxd:editors/vim-console
 LIB_DEPENDS=	libck.so:devel/concurrencykit \
 		libluajit-5.1.so:lang/luajit
 

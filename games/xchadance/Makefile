@@ -1,19 +1,16 @@
 # Created by: issei <issei@jp.FreeBSD.org>
-# $FreeBSD: head/games/xchadance/Makefile 464948 2018-03-18 20:10:53Z antoine $
+# $FreeBSD: head/games/xchadance/Makefile 467230 2018-04-13 09:51:52Z krion $
 
 PORTNAME=	xchadance
 PORTVERSION=	1.0
 PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.mk.bsdclub.org/pub/FreeBSD/distfiles/ \
-		ftp://relay1.tomsk.gov.ru/pub/FreeBSD/ports/distfiles/ \
-		ftp://ftp.rediris.es/sites/ftp.freebsd.org/pub/FreeBSD/ports/local-distfiles/motoyuki/
+		LOCAL/nyan
 DISTFILES=	xchada01.lzh
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Display a dancing girl "ChaCha."
-
-BROKEN=		unfetchable
 
 USES=		lha
 USE_XORG=	x11

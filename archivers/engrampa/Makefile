@@ -1,8 +1,8 @@
 # Created by: Anders Nordby <anders@FreeBSD.org>
-# $FreeBSD: head/archivers/engrampa/Makefile 445014 2017-07-04 11:44:30Z kwm $
+# $FreeBSD: head/archivers/engrampa/Makefile 467271 2018-04-13 21:16:56Z ericbsd $
 
 PORTNAME=	engrampa
-PORTVERSION=	1.18.2
+PORTVERSION=	1.20.0
 CATEGORIES=	archivers mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

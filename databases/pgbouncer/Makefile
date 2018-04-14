@@ -1,9 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/pgbouncer/Makefile 462050 2018-02-16 17:52:50Z brnrd $
+# $FreeBSD: head/databases/pgbouncer/Makefile 467201 2018-04-12 22:01:59Z girgen $
 
 PORTNAME=	pgbouncer
-PORTVERSION=	1.7.2
-PORTREVISION=	3
+PORTVERSION=	1.8.1
 CATEGORIES=	databases
 MASTER_SITES=	https://pgbouncer.github.io/downloads/files/${PORTVERSION}/ \
 		http://pgbouncer.github.io/downloads/files/${PORTVERSION}/

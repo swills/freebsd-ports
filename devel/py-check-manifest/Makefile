@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/devel/py-check-manifest/Makefile 462912 2018-02-25 05:32:35Z sunpoet $
+# $FreeBSD: head/devel/py-check-manifest/Makefile 467257 2018-04-13 20:48:07Z sunpoet $
 
 PORTNAME=	check-manifest
-PORTVERSION=	0.36
+PORTVERSION=	0.37
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

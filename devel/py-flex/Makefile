@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-flex/Makefile 466724 2018-04-07 14:00:08Z dbaio $
+# $FreeBSD: head/devel/py-flex/Makefile 467126 2018-04-12 06:20:51Z krion $
 
 PORTNAME=	flex
-DISTVERSION=	6.13.0
+DISTVERSION=	6.13.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

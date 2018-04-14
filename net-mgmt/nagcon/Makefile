@@ -1,12 +1,12 @@
 # Created by: Douglas K. Rand <rand@meridian-enviro.com>
-# $FreeBSD: head/net-mgmt/nagcon/Makefile 458851 2018-01-12 14:47:22Z swills $
+# $FreeBSD: head/net-mgmt/nagcon/Makefile 467294 2018-04-14 07:16:55Z tcberner $
 
 PORTNAME=	nagcon
 PORTVERSION=	0.0.31
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://www.vanheusden.com/nagcon/
 
-MAINTAINER=	rand@meridian-enviro.com
+MAINTAINER=	rand@iteris.com
 COMMENT=	Nagios console monitor
 
 LIB_DEPENDS=	libstrfunc.so:devel/libstrfunc

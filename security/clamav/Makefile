@@ -1,8 +1,9 @@
 # Created by: markun@onohara.to
-# $FreeBSD: head/security/clamav/Makefile 463407 2018-03-02 14:54:34Z ler $
+# $FreeBSD: head/security/clamav/Makefile 467160 2018-04-12 16:01:16Z ler $
 
 PORTNAME=	clamav
-PORTVERSION=	0.99.4
+PORTVERSION=	0.100.0
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://www.clamav.net/downloads/production/
 
@@ -79,8 +80,7 @@ CONFIGURE_ARGS=	--libdir=${PREFIX}/lib \
 		--enable-gethostbyname_r \
 		--disable-dependency-tracking \
 		--disable-zlib-vcheck \
-		--enable-clamdtop \
-		--disable-llvm
+		--enable-clamdtop
 CPPFLAGS+=	-I${LOCALBASE}/include
 
 # This port has a problem with -pthread,
@@ -202,7 +202,6 @@ post-install:
 		  ${STAGEDIR}${DBDIR} \
 		  ${STAGEDIR}${LOGDIR} \
 		  ${STAGEDIR}${RUNDIR}
-	${INSTALL_DATA} ${WRKSRC}/NEWS ${WRKSRC}/ChangeLog ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/docs/html/* ${STAGEDIR}${DOCSDIR}/html
 
 .include <bsd.port.post.mk>

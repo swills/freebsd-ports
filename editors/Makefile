@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 466807 2018-04-08 17:13:22Z tcberner $
+# $FreeBSD: head/editors/Makefile 467232 2018-04-13 10:55:08Z tobik $
 #
 
     COMMENT = Editors
@@ -66,6 +66,7 @@
     SUBDIR += jove
     SUBDIR += jucipp
     SUBDIR += jupp
+    SUBDIR += kakoune
     SUBDIR += kate
     SUBDIR += kate-kde4
     SUBDIR += kate-plugin-pate-kde4

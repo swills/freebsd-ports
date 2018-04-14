@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 466960 2018-04-10 12:20:05Z olgeni $
+# $FreeBSD: head/lang/Makefile 467243 2018-04-13 14:41:21Z garga $
 #
 
     COMMENT = Programming languages
@@ -46,6 +46,7 @@
     SUBDIR += cmucl
     SUBDIR += cmucl-extra
     SUBDIR += cocor
+    SUBDIR += coffeescript
     SUBDIR += cparser
     SUBDIR += crystal
     SUBDIR += csharp-mode.el

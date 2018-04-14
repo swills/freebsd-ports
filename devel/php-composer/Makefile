@@ -1,11 +1,11 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/php-composer/Makefile 459283 2018-01-17 19:18:10Z madpilot $
+# $FreeBSD: head/devel/php-composer/Makefile 467159 2018-04-12 15:39:21Z madpilot $
 
 PORTNAME=	composer
-DISTVERSION=	1.6.2
+DISTVERSION=	1.6.3
 CATEGORIES=	devel
 MASTER_SITES=	http://getcomposer.org/download/${DISTVERSION}/
-PKGNAMEPREFIX=	php-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 DISTNAME=	composer
 EXTRACT_SUFX=	.phar
 DIST_SUBDIR=	${PORTNAME}-${PORTVERSION}
@@ -20,7 +20,7 @@ RUN_DEPENDS=	ca_root_nss>0:security/ca_root_nss
 NO_ARCH=	yes
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
-USES=		php
+USES=		php:flavors
 USE_PHP=	intl openssl phar json ctype filter mbstring
 
 PLIST_FILES=	bin/composer \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 467080 2018-04-11 19:37:54Z sunpoet $
+# $FreeBSD: head/devel/Makefile 467281 2018-04-14 00:57:58Z jbeich $
 #
 
     COMMENT = Development utilities
@@ -8,7 +8,6 @@
     SUBDIR += ElectricFence
     SUBDIR += ORBit2
     SUBDIR += ORBit2-reference
-    SUBDIR += R-cran-abind
     SUBDIR += R-cran-BH
     SUBDIR += R-cran-Defaults
     SUBDIR += R-cran-Hmisc
@@ -16,6 +15,7 @@
     SUBDIR += R-cran-R6
     SUBDIR += R-cran-RUnit
     SUBDIR += R-cran-Rcpp
+    SUBDIR += R-cran-abind
     SUBDIR += R-cran-bindr
     SUBDIR += R-cran-bindrcpp
     SUBDIR += R-cran-bit
@@ -4136,6 +4136,7 @@
     SUBDIR += protobuf
     SUBDIR += protobuf-c
     SUBDIR += protobuf25
+    SUBDIR += protozero
     SUBDIR += pructl
     SUBDIR += psptoolchain
     SUBDIR += psptoolchain-binutils
@@ -4611,7 +4612,6 @@
     SUBDIR += py-libtaxii
     SUBDIR += py-libtmux
     SUBDIR += py-libusb1
-    SUBDIR += py-libusb115
     SUBDIR += py-libversion
     SUBDIR += py-libvirt
     SUBDIR += py-libzfs
@@ -4975,9 +4975,9 @@
     SUBDIR += py-subversion
     SUBDIR += py-subvertpy
     SUBDIR += py-sure
+    SUBDIR += py-swagger-spec-validator
     SUBDIR += py-sysctl
     SUBDIR += py-sysv_ipc
-    SUBDIR += py-swagger-spec-validator
     SUBDIR += py-tables
     SUBDIR += py-tabulate
     SUBDIR += py-tapi
@@ -5440,6 +5440,7 @@
     SUBDIR += rubygem-deep_test
     SUBDIR += rubygem-deface
     SUBDIR += rubygem-default_value_for
+    SUBDIR += rubygem-default_value_for30
     SUBDIR += rubygem-delayed_job
     SUBDIR += rubygem-delayer
     SUBDIR += rubygem-delayer-deferred

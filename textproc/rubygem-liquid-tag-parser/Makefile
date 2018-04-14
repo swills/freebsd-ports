@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-liquid-tag-parser/Makefile 457976 2018-01-03 16:45:39Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-liquid-tag-parser/Makefile 467260 2018-04-13 20:48:22Z sunpoet $
 
 PORTNAME=	liquid-tag-parser
-PORTVERSION=	1.8.0
+PORTVERSION=	1.9.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

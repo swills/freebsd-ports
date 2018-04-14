@@ -1,5 +1,5 @@
 # Created by: Vsevolod Stakhov <vsevolod@highsecure.ru>
-# $FreeBSD: head/net-im/gajim/Makefile 467113 2018-04-11 21:06:38Z rm $
+# $FreeBSD: head/net-im/gajim/Makefile 467157 2018-04-12 13:54:47Z rm $
 
 PORTNAME=	gajim
 DISTVERSION=	1.0.1
@@ -28,7 +28,7 @@ DOS2UNIX_FILES=	gajim/plugins/plugins_i18n.py
 INSTALLS_ICONS=	yes
 
 OPTIONS_DEFINE=	CRYPTO DBUS DOCS NLS SPELL
-OPTIONS_DEFAULT=DBUS NLS SPELL
+OPTIONS_DEFAULT=DBUS SPELL
 
 CRYPTO_DESC=	End to end encryption support
 SPELL_DESC=	Spell checking support

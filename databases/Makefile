@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 466897 2018-04-09 19:02:33Z tcberner $
+# $FreeBSD: head/databases/Makefile 467161 2018-04-12 16:12:42Z wg $
 #
 
     COMMENT = Databases and related software
@@ -787,6 +787,7 @@
     SUBDIR += py-htsql
     SUBDIR += py-htsql-mysql
     SUBDIR += py-htsql-pgsql
+    SUBDIR += py-influxdb
     SUBDIR += py-kyotocabinet
     SUBDIR += py-leveldb
     SUBDIR += py-lmdb
