@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-themes/mate-icon-theme-faenza/Makefile 445014 2017-07-04 11:44:30Z kwm $
+# $FreeBSD: head/x11-themes/mate-icon-theme-faenza/Makefile 467271 2018-04-13 21:16:56Z ericbsd $
 
 PORTNAME=	mate-icon-theme-faenza
-PORTVERSION=	1.18.1
+PORTVERSION=	1.20.0
 CATEGORIES=	x11-themes mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

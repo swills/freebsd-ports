@@ -1,8 +1,7 @@
-# Created by: Nikolai Lifanov <lifanov@FreeBSD.org>
-# $FreeBSD: head/games/nxengine/Makefile 465940 2018-03-29 23:49:12Z lifanov $
+# $FreeBSD: head/games/nxengine/Makefile 467180 2018-04-12 18:30:31Z lifanov $
 
 PORTNAME=	nxengine
-PORTVERSION=	2.6.2
+PORTVERSION=	2.6.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 MASTER_SITES+=	https://www.cavestory.org/downloads/:data \

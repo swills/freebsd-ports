@@ -1,10 +1,10 @@
 # Created by: Lars Engels <lars.engels@0x20.net>
-# $FreeBSD: head/misc/tvbrowser/Makefile 427491 2016-12-01 11:18:03Z mat $
+# $FreeBSD: head/misc/tvbrowser/Makefile 467237 2018-04-13 12:31:30Z lme $
 
 PORTNAME=	tvbrowser
-PORTVERSION=	3.4.4
+PORTVERSION=	4.0.1
 CATEGORIES=	misc java
-MASTER_SITES=	SF/${PORTNAME}/TV-Browser%20Releases%20%28Java%206%20and%20higher%29/${PORTVERSION}/
+MASTER_SITES=	SF/${PORTNAME}/TV-Browser%20Releases%20%28Java%208%20and%20higher%29/${PORTVERSION}/
 DISTNAME=	${PORTNAME}_${PORTVERSION}_bin
 
 MAINTAINER=	lme@FreeBSD.org
@@ -16,7 +16,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 USE_LDCONFIG=	yes
 NO_BUILD=	yes
 USE_JAVA=	yes
-JAVA_VERSION=	1.6+
+JAVA_VERSION=	1.8+
 SUB_FILES=	tvbrowser
 
 do-install:

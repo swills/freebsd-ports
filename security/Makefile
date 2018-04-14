@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 467011 2018-04-10 19:39:14Z tcberner $
+# $FreeBSD: head/security/Makefile 467269 2018-04-13 20:56:28Z jbeich $
 #
 
     COMMENT = Security tools
@@ -1035,7 +1035,7 @@
     SUBDIR += py-zope.security
     SUBDIR += py-zope.securitypolicy
     SUBDIR += py-zope.session
-    SUBDIR += py-zxcvbn-python
+    SUBDIR += py-zxcvbn
     SUBDIR += qtkeychain
     SUBDIR += quantis
     SUBDIR += quantis-kmod

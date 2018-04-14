@@ -1,8 +1,8 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/sysutils/mate-settings-daemon/Makefile 445014 2017-07-04 11:44:30Z kwm $
+# $FreeBSD: head/sysutils/mate-settings-daemon/Makefile 467271 2018-04-13 21:16:56Z ericbsd $
 
 PORTNAME=	mate-settings-daemon
-PORTVERSION=	1.18.0
+PORTVERSION=	1.20.1
 CATEGORIES=	sysutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

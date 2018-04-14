@@ -5,6 +5,17 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20180412:
+  AFFECTS: users of devel/php-composer
+  AUTHOT: madpilot@FreeBSD.org
+
+  Flavors have been added to the composer port with the update to
+  1.6.3. Due to the change in PKGNAME pkg(and other tols) will not
+  notice the update. It is required to tell pkg about the name
+  change, for example:
+
+  # pkg set -n php-composer:php56-composer
+
 20180410:
   AFFECTS: users of KDE SC4
   AUTHOR: kde@FreeBSD.org
@@ -15717,4 +15728,4 @@ or
   'nobody' by default.  Make sure any existing configuration files are
   readable by that user.
 
-$FreeBSD: head/UPDATING 467013 2018-04-10 19:56:43Z tcberner $
+$FreeBSD: head/UPDATING 467159 2018-04-12 15:39:21Z madpilot $

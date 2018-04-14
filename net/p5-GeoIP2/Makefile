@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-GeoIP2/Makefile 459330 2018-01-18 14:42:26Z sunpoet $
+# $FreeBSD: head/net/p5-GeoIP2/Makefile 467182 2018-04-12 18:32:55Z sunpoet $
 
 PORTNAME=	GeoIP2
-PORTVERSION=	2.005000
+PORTVERSION=	2.005001
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:MAXMIND

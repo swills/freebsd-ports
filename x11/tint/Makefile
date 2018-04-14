@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/tint/Makefile 459029 2018-01-15 10:20:22Z danfe $
+# $FreeBSD: head/x11/tint/Makefile 467229 2018-04-13 09:47:23Z krion $
 
 PORTNAME=	tint2
-PORTVERSION=	16.1
+PORTVERSION=	16.2
 CATEGORIES=	x11
 
 MAINTAINER=	yamagi@yamagi.org

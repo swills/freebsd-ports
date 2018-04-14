@@ -1,8 +1,8 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/x11/libmatekbd/Makefile 445014 2017-07-04 11:44:30Z kwm $
+# $FreeBSD: head/x11/libmatekbd/Makefile 467271 2018-04-13 21:16:56Z ericbsd $
 
 PORTNAME=	libmatekbd
-PORTVERSION=	1.18.2
+PORTVERSION=	1.20.1
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

@@ -1,8 +1,8 @@
 # Created by: Eric Turgeon <ericturgeon@ghostbsd.org>
-# $FreeBSD: head/deskutils/caja-extensions/Makefile 445014 2017-07-04 11:44:30Z kwm $
+# $FreeBSD: head/deskutils/caja-extensions/Makefile 467271 2018-04-13 21:16:56Z ericbsd $
 
 PORTNAME=	caja-extensions
-PORTVERSION=	1.18.1
+PORTVERSION=	1.20.0
 CATEGORIES=	deskutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

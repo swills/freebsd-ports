@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11/mate-session-manager/Makefile 452089 2017-10-14 20:51:48Z kwm $
+# $FreeBSD: head/x11/mate-session-manager/Makefile 467271 2018-04-13 21:16:56Z ericbsd $
 
 PORTNAME=	mate-session-manager
-PORTVERSION=	1.18.1
+PORTVERSION=	1.20.0
 CATEGORIES=	x11 mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

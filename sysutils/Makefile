@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 466902 2018-04-09 19:58:12Z tcberner $
+# $FreeBSD: head/sysutils/Makefile 467289 2018-04-14 06:53:30Z yuri $
 #
 
     COMMENT = System utilities
@@ -142,14 +142,15 @@
     SUBDIR += cdrtools
     SUBDIR += cdrtools-devel
     SUBDIR += cfengine
+    SUBDIR += cfengine-devel
     SUBDIR += cfengine-masterfiles
+    SUBDIR += cfengine-masterfiles-devel
     SUBDIR += cfengine-masterfiles310
     SUBDIR += cfengine-masterfiles311
     SUBDIR += cfengine-masterfiles36
     SUBDIR += cfengine-masterfiles37
     SUBDIR += cfengine-masterfiles38
     SUBDIR += cfengine-masterfiles39
-    SUBDIR += cfengine-masterfiles-devel
     SUBDIR += cfengine22
     SUBDIR += cfengine310
     SUBDIR += cfengine311
@@ -161,7 +162,6 @@
     SUBDIR += cfengine37
     SUBDIR += cfengine38
     SUBDIR += cfengine39
-    SUBDIR += cfengine-devel
     SUBDIR += chgrep
     SUBDIR += chyves
     SUBDIR += cinnamon-control-center
@@ -1105,6 +1105,7 @@
     SUBDIR += runit
     SUBDIR += runit-faster
     SUBDIR += runwhen
+    SUBDIR += s-tui
     SUBDIR += s6
     SUBDIR += s6-rc
     SUBDIR += safe-rm

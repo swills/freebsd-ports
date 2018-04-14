@@ -1,4 +1,4 @@
-# $FreeBSD: head/finance/Makefile 464399 2018-03-13 19:30:31Z rene $
+# $FreeBSD: head/finance/Makefile 467240 2018-04-13 13:16:46Z jhale $
 #
 
     COMMENT = Monetary, financial, and related applications
@@ -20,6 +20,8 @@
     SUBDIR += R-cran-tseries
     SUBDIR += R-cran-urca
     SUBDIR += R-cran-vars
+    SUBDIR += alkimia
+    SUBDIR += alkimia-qt4
     SUBDIR += aqbanking
     SUBDIR += aqmoney
     SUBDIR += beanie
@@ -39,7 +41,6 @@
     SUBDIR += ledger
     SUBDIR += ledgersmb
     SUBDIR += ledgersmb12
-    SUBDIR += libalkimia
     SUBDIR += libofx
     SUBDIR += libstocks
     SUBDIR += moneymanagerex

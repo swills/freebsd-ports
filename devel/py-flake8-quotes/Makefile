@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/py-flake8-quotes/Makefile 466237 2018-04-02 17:27:51Z amdmi3 $
+# $FreeBSD: head/devel/py-flake8-quotes/Makefile 467149 2018-04-12 12:33:33Z amdmi3 $
 
 PORTNAME=	flake8-quotes
-PORTVERSION=	0.14.1
+PORTVERSION=	1.0.0
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

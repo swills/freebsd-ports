@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 466666 2018-04-06 16:27:27Z mfechner $
+# $FreeBSD: head/www/Makefile 467209 2018-04-13 06:15:09Z mfechner $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -1523,6 +1523,8 @@
     SUBDIR += py-apachelog
     SUBDIR += py-autobahn
     SUBDIR += py-aws-requests-auth
+    SUBDIR += py-azure-common
+    SUBDIR += py-azure-storage
     SUBDIR += py-beaker
     SUBDIR += py-beautifulsoup
     SUBDIR += py-beautifulsoup32
@@ -2196,7 +2198,7 @@
     SUBDIR += rubygem-tinymce-rails
     SUBDIR += rubygem-toml-rb
     SUBDIR += rubygem-toml-rb03
-    SUBDIR += rubygem-toml-rb11
+    SUBDIR += rubygem-toml-rb10
     SUBDIR += rubygem-totoridipjp
     SUBDIR += rubygem-tumblr_client
     SUBDIR += rubygem-turbolinks

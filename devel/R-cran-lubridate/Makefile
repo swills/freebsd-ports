@@ -1,15 +1,15 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-lubridate/Makefile 464218 2018-03-12 06:33:30Z tota $
+# $FreeBSD: head/devel/R-cran-lubridate/Makefile 467205 2018-04-13 01:32:06Z tota $
 
 PORTNAME=	lubridate
-PORTVERSION=	1.7.3
+PORTVERSION=	1.7.4
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	tota@FreeBSD.org
 COMMENT=	Make Dealing with Dates a Little Easier
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 
 CRAN_DEPENDS=	R-cran-stringr>0:textproc/R-cran-stringr \
 		R-cran-Rcpp>=0.12.13:devel/R-cran-Rcpp

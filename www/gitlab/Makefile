@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab/Makefile 467106 2018-04-11 19:40:10Z sunpoet $
+# $FreeBSD: head/www/gitlab/Makefile 467249 2018-04-13 19:45:57Z sunpoet $
 
 PORTNAME=	gitlab
 PORTVERSION=	10.6.4
@@ -36,7 +36,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-rails-deprecated_sanitizer>=1.0.3:devel/rubygem-rails-deprecated_sanitizer \
 	rubygem-responders>=2.0:www/rubygem-responders \
 	rubygem-sprockets3>=3.7:devel/rubygem-sprockets3 \
-	rubygem-default_value_for>=3.0.1:devel/rubygem-default_value_for \
+	rubygem-default_value_for30>=3.0.1:devel/rubygem-default_value_for30 \
 	rubygem-rugged>=0.26.0:devel/rubygem-rugged \
 	rubygem-grape-route-helpers>=2.1.0:devel/rubygem-grape-route-helpers \
 	rubygem-faraday>=0.12.0:www/rubygem-faraday \

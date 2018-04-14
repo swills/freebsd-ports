@@ -1,4 +1,4 @@
-# $FreeBSD: head/GIDs 466727 2018-04-07 14:14:23Z feld $
+# $FreeBSD: head/GIDs 467218 2018-04-13 09:17:39Z netchild $
 # Please keep this file sorted by GID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/group
@@ -175,7 +175,7 @@ carbon:*:230:
 # free: 232
 # free: 233
 kafka:*:234:
-# free: 235
+openhab:*:235:
 # free: 236
 # free: 237
 # free: 238

@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/sysutils/mate-power-manager/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/sysutils/mate-power-manager/Makefile 467271 2018-04-13 21:16:56Z ericbsd $
 
 PORTNAME=	mate-power-manager
-PORTVERSION=	1.18.0
+PORTVERSION=	1.20.1
 CATEGORIES=	sysutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

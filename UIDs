@@ -1,4 +1,4 @@
-# $FreeBSD: head/UIDs 466727 2018-04-07 14:14:23Z feld $
+# $FreeBSD: head/UIDs 467218 2018-04-13 09:17:39Z netchild $
 # Please keep this file sorted by UID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/master.passwd
@@ -180,7 +180,7 @@ carbon:*:230:230::0:0:osrm:/nonexistent:/usr/sbin/nologin
 # free: 232
 # free: 233
 kafka:*:234:234::0:0:Apache Kafka user:/nonexistent:/usr/sbin/nologin
-# free: 235
+openhab:*:235:235::0:0:openHAB user:/var/db/openhab2/home:/usr/sbin/nologin
 # free: 236
 # free: 237
 # free: 238

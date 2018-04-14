@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@freebsd.org>
-# $FreeBSD: head/www/rubygem-puma/Makefile 463764 2018-03-06 20:32:52Z sunpoet $
+# $FreeBSD: head/www/rubygem-puma/Makefile 467267 2018-04-13 20:48:58Z sunpoet $
 
 PORTNAME=	puma
-PORTVERSION=	3.11.3
+PORTVERSION=	3.11.4
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

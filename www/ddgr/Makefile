@@ -1,10 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/www/ddgr/Makefile 457466 2017-12-28 16:46:27Z amdmi3 $
+# $FreeBSD: head/www/ddgr/Makefile 467153 2018-04-12 13:43:53Z amdmi3 $
 
 PORTNAME=	ddgr
-PORTVERSION=	1.2
+PORTVERSION=	1.4
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	amdmi3@FreeBSD.org
@@ -13,8 +12,7 @@ COMMENT=	DuckDuckGo from the terminal
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}urllib3>=0:net/py-urllib3@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}urllib3>=0:net/py-urllib3@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	jarun

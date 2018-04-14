@@ -1,9 +1,9 @@
 # Created by: Dmitri Goutnik <dg@syrec.org>
-# $FreeBSD: head/x11/alttab/Makefile 463466 2018-03-03 07:31:45Z yuri $
+# $FreeBSD: head/x11/alttab/Makefile 467291 2018-04-14 07:11:20Z yuri $
 
 PORTNAME=	alttab
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.2.0
+DISTVERSION=	1.3.0
 CATEGORIES=	x11
 
 MAINTAINER=	dg@syrec.org
@@ -15,12 +15,11 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	${LOCALBASE}/include/uthash.h:devel/uthash
 LIB_DEPENDS=	libpng.so:graphics/png
 
-USES=		pkgconfig
-USE_XORG=	x11 xft xrender
-GNU_CONFIGURE=	yes
-CFLAGS+=	-I${LOCALBASE}/include
+USES=		localbase pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	sagb
+GNU_CONFIGURE=	yes
+USE_XORG=	x11 xft xrandr xrender
 
 PLIST_FILES=	bin/alttab \
 		man/man1/alttab.1.gz

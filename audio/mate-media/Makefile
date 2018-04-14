@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/audio/mate-media/Makefile 452089 2017-10-14 20:51:48Z kwm $
+# $FreeBSD: head/audio/mate-media/Makefile 467271 2018-04-13 21:16:56Z ericbsd $
 
 PORTNAME=	mate-media
-PORTVERSION=	1.18.1
+PORTVERSION=	1.20.0
 CATEGORIES=	audio mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate

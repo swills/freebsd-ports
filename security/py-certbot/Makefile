@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/security/py-certbot/Makefile 462595 2018-02-22 14:29:19Z mat $
+# $FreeBSD: head/security/py-certbot/Makefile 467144 2018-04-12 11:07:37Z sunpoet $
 
 PORTNAME=	certbot
 PORTVERSION=	${ACME_VERSION}
@@ -9,7 +9,7 @@ MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	python@FreeBSD.org
-COMMENT=	Let's Encrypt client
+COMMENT=	Let's Encrypt client #'
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
