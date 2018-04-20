@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-gitaly-proto083/Makefile 465602 2018-03-26 15:10:49Z mfechner $
+# $FreeBSD: head/net/rubygem-gitaly-proto083/Makefile 467598 2018-04-17 11:24:32Z mfechner $
 
 PORTNAME=	gitaly-proto
 PORTVERSION=	0.83.0
@@ -10,6 +10,9 @@ MAINTAINER=	idefix@fechner.net
 COMMENT=	Protobuf specifications and client libraries for Gitaly
 
 LICENSE=	MIT
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use net/rubygem-gitaly-proto instead.
+EXPIRATION_DATE=	2018-05-31
 
 RUN_DEPENDS=	rubygem-google-protobuf>=3.1:devel/rubygem-google-protobuf \
 		rubygem-grpc>=1.0:net/rubygem-grpc

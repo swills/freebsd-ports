@@ -1,9 +1,9 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/mail/archiveopteryx/Makefile 464871 2018-03-18 05:27:20Z linimon $
+# $FreeBSD: head/mail/archiveopteryx/Makefile 467334 2018-04-14 17:14:12Z feld $
 
 PORTNAME=	archiveopteryx
 PORTVERSION=	3.2.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	mail
 MASTER_SITES=	http://archiveopteryx.org/download/
 
@@ -12,8 +12,6 @@ COMMENT=	Advanced PostgreSQL-based IMAP/POP server
 
 LICENSE=	MIT
 
-BROKEN_armv6=		fails to build: core/md5.cpp:55:5: 'register' storage class specifier is deprecated and incompatible with C++17
-BROKEN_armv7=		fails to build: core/md5.cpp:55:5: 'register' storage class specifier is deprecated and incompatible with C++17
 BROKEN_powerpc64=	fails to build: /bin/sh: clang: not found
 
 BUILD_DEPENDS=	jam:devel/jam

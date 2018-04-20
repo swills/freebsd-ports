@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-opendht/Makefile 464969 2018-03-18 23:25:24Z yuri $
+# $FreeBSD: head/devel/py-opendht/Makefile 467369 2018-04-15 06:54:55Z yuri $
 
 PORTNAME=	opendht
-DISTVERSION=	1.6.1
+DISTVERSION=	1.7.0
 CATEGORIES=	devel net
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

@@ -1,9 +1,9 @@
 # Created by: Andreas Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/lang/gawk/Makefile 466290 2018-04-03 09:03:29Z amdmi3 $
+# $FreeBSD: head/lang/gawk/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	gawk
 PORTVERSION=	4.1.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	GNU
 

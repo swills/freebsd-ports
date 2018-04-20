@@ -1,9 +1,9 @@
 # Created by: Denis Barov <dindin@dindin.ru>
-# $FreeBSD: head/graphics/py-exiv2/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/graphics/py-exiv2/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	exiv2
 PORTVERSION=	0.3.2
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	graphics python
 MASTER_SITES=	https://launchpadlibrarian.net/83595798/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -19,7 +19,7 @@ USES=		python:2.7 scons tar:bzip2
 USE_PYTHON=	flavors
 USE_LDCONFIG=	yes
 CXXFLAGS+=	-I${LOCALBASE}/include
-MAKE_ARGS+=	prefix=${PREFIX} use_env=1
+MAKE_ARGS+=	prefix=${PREFIX} use_env=1 BOOSTLIB="${PY_BOOST_LIB}"
 
 post-patch:
 	${REINPLACE_CMD} -e 's|python_inc_path\]|python_inc_path,\

@@ -1,9 +1,10 @@
 # Created by: Vasil Dimov <vd@FreeBSD.org>
-# $FreeBSD: head/net-p2p/monero-cli/Makefile 465900 2018-03-29 15:02:05Z emaste $
+# $FreeBSD: head/net-p2p/monero-cli/Makefile 467713 2018-04-18 14:06:09Z jbeich $
 
 PORTNAME=	monero-cli
 PORTVERSION=	0.12.0.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	net-p2p finance
 
 MAINTAINER=	vd@FreeBSD.org

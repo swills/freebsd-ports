@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/usrp/Makefile 461885 2018-02-15 12:34:49Z mat $
+# $FreeBSD: head/comms/usrp/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	usrp
 PORTVERSION=	3.4.3
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	comms hamradio
 MASTER_SITES=	LOCAL/adrian
 DISTNAME=	Ettus-USRP-3.4.3

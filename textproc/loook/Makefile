@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/textproc/loook/Makefile 466197 2018-04-02 05:46:20Z dinoex $
+# $FreeBSD: head/textproc/loook/Makefile 467726 2018-04-18 18:07:00Z dinoex $
 
 PORTNAME=	loook
 PORTVERSION=	0.8.5
@@ -7,7 +7,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	http://mechtilde.de/Loook/Downloads/
 DIST_SUBDIR=	python
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dinoex@FreeBSD.org
 COMMENT=	Simple Python tool that search in LibreOffice/OpenOffice files
 
 LICENSE=	GPLv2+

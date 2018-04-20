@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 467243 2018-04-13 14:41:21Z garga $
+# $FreeBSD: head/lang/Makefile 467333 2018-04-14 17:10:01Z yuri $
 #
 
     COMMENT = Programming languages
@@ -57,6 +57,7 @@
     SUBDIR += dmd1
     SUBDIR += dmd2
     SUBDIR += duktape
+    SUBDIR += duktape-lib
     SUBDIR += ecl
     SUBDIR += elan
     SUBDIR += elixir

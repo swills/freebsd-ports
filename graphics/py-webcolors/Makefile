@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/py-webcolors/Makefile 428663 2016-12-16 09:21:04Z tota $
+# $FreeBSD: head/graphics/py-webcolors/Makefile 467690 2018-04-18 08:30:13Z tota $
 
 PORTNAME=	webcolors
-PORTVERSION=	1.7
+PORTVERSION=	1.8.1
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,6 +11,7 @@ MAINTAINER=	tota@FreeBSD.org
 COMMENT=	Library working with the sRGB color space as used in the HTML and CSS
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python
 USE_PYTHON=	distutils autoplist

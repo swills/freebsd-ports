@@ -1,8 +1,9 @@
 # Created by: Pav Lucistnik <pav@FreeBSD.org>
-# $FreeBSD: head/graphics/libopenraw/Makefile 463859 2018-03-08 02:45:13Z jhale $
+# $FreeBSD: head/graphics/libopenraw/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	libopenraw
 PORTVERSION=	0.1.2
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://libopenraw.freedesktop.org/download/
 

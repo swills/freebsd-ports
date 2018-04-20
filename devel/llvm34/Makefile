@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm34/Makefile 466018 2018-03-31 03:28:42Z tobik $
+# $FreeBSD: head/devel/llvm34/Makefile 467374 2018-04-15 08:33:39Z amdmi3 $
 
 PORTNAME=	llvm
 PORTVERSION=	3.4.2
@@ -239,7 +239,8 @@ post-install:
 .endif
 
 TEST_CMD=	'(cd ${WRKSRC}/test; ${SETENV} ${MAKE_ENV} LD_LIBRARY_PATH=${WRKSRC}/Release/lib ${MAKE_CMD} check-local-lit)'
-regression-test: ${BUILD_COOKIE}
+do-test:
+	echo ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}
 	if [ `${ID} -u` = 0 ]; then \
 		${CHOWN} -R nobody ${WRKSRC}/test; \
 		su -m nobody -c ${TEST_CMD}; \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 466877 2018-04-09 18:32:24Z tcberner $
+# $FreeBSD: head/science/Makefile 467683 2018-04-18 06:51:47Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -24,6 +24,7 @@
     SUBDIR += R-cran-udunits2
     SUBDIR += afni
     SUBDIR += aircraft-datcom
+    SUBDIR += antioch
     SUBDIR += avogadro
     SUBDIR += bddsolve
     SUBDIR += bft
@@ -53,6 +54,7 @@
     SUBDIR += fastcap
     SUBDIR += fasthenry
     SUBDIR += fisicalab
+    SUBDIR += fsom
     SUBDIR += fvcom
     SUBDIR += fvcom-mpi
     SUBDIR += fvm
@@ -106,6 +108,7 @@
     SUBDIR += meep
     SUBDIR += mei
     SUBDIR += metaf2xml
+    SUBDIR += metaphysicl
     SUBDIR += minc2
     SUBDIR += mol2ps
     SUBDIR += mpb

@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/libetonyek01/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/graphics/libetonyek01/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	libetonyek
 PORTVERSION=	0.1.7
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	graphics
 MASTER_SITES=	LODEV/${PORTNAME}

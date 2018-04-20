@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/riscv64-binutils/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/riscv64-binutils/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	binutils
 PORTVERSION=	2.29
-PORTREVISION=	20180213
+PORTREVISION=	20180214
 PORTEPOCH=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	riscv64-

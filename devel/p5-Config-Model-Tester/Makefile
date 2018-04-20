@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Config-Model-Tester/Makefile 466658 2018-04-06 16:26:46Z sunpoet $
+# $FreeBSD: head/devel/p5-Config-Model-Tester/Makefile 467419 2018-04-15 20:02:56Z sunpoet $
 
 PORTNAME=	Config-Model-Tester
-PORTVERSION=	3.005
+PORTVERSION=	3.006
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 466536 2018-04-05 05:19:09Z yuri $
+# $FreeBSD: head/net-mgmt/Makefile 467836 2018-04-20 15:44:18Z pizzamig $
 #
 
     COMMENT = Network management tools
@@ -316,6 +316,7 @@
     SUBDIR += py-ncclient
     SUBDIR += py-pdagent
     SUBDIR += py-pyIOSXR
+    SUBDIR += py-prometheus-client
     SUBDIR += py-pyang
     SUBDIR += py-pyeapi
     SUBDIR += py-pynsca

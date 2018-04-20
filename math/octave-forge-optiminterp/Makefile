@@ -1,9 +1,8 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-optiminterp/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/octave-forge-optiminterp/Makefile 467666 2018-04-18 02:09:46Z stephen $
 
 PORTNAME=	octave-forge-optiminterp
-PORTVERSION=	0.3.4
-PORTREVISION=	10
+PORTVERSION=	0.3.5
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org
@@ -16,9 +15,10 @@ MAKE_JOBS_UNSAFE=	yes
 
 # OCTSRC is the name of the directory of the package.
 # It is usually ${OCTAVE_PKGNAME} or ${DISTNAME}.
-OCTSRC=		${OCTAVE_PKGNAME}
+OCTSRC=		${DISTNAME}
 
 WRKSRC=		${WRKDIR}/${OCTSRC}/src
+GNU_CONFIGURE=	yes
 
 .include "${.CURDIR}/../../Mk/bsd.octave.mk"
 

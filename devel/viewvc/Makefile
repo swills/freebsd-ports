@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/devel/viewvc/Makefile 466213 2018-04-02 09:08:43Z ohauer $
+# $FreeBSD: head/devel/viewvc/Makefile 467475 2018-04-16 11:03:32Z brnrd $
 
 PORTNAME=	viewvc
 DISTVERSION=	1.1.26
@@ -30,6 +30,7 @@ MYSQL_DESC=		Bonsai-like repository query facilities
 
 APACHE_USE=		APACHE_RUN=22+
 LIGHTTPD_RUN_DEPENDS=	lighttpd:www/lighttpd
+MODPYTHON33_BROKEN=	The mod_python33 port has been removed with Apache 2.2
 MODPYTHON33_RUN_DEPENDS=${APACHE_PKGNAMEPREFIX}mod_python33>=3.3:www/mod_python33
 MODPYTHON35_RUN_DEPENDS=${APACHE_PKGNAMEPREFIX}mod_python35>=3.5:www/mod_python35
 MODWSGI_RUN_DEPENDS=	${APACHE_PKGNAMEPREFIX}${PYTHON_PKGNAMEPREFIX}mod_wsgi>=4.4.13:www/mod_wsgi4@${PY_FLAVOR}

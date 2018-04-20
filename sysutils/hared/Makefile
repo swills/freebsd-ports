@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/hared/Makefile 466450 2018-04-04 18:20:29Z dvl $
+# $FreeBSD: head/sysutils/hared/Makefile 467438 2018-04-15 22:11:54Z dvl $
 
 PORTNAME=	hared
 DISTVERSION=	1.0-41
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-ge17cdc6
 CATEGORIES=	sysutils
 

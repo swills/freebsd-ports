@@ -1,19 +1,11 @@
 # Created by: Lev Serebryakov <lev@FreeBSD.org>
-# $FreeBSD: head/java/java-subversion/Makefile 465240 2018-03-21 21:24:43Z brnrd $
+# $FreeBSD: head/java/java-subversion/Makefile 467834 2018-04-20 15:38:58Z lev $
 
 PKGNAMEPREFIX=	java-
 CATEGORIES=	java
-PORTREVISION=	2
 
 MAINTAINER=	lev@FreeBSD.org
 COMMENT=	Java bindings for Version control system
-
-.if defined(WITH_SUBVERSION_VER) && ${WITH_SUBVERSION_VER} == 18
-MASTERDIR=	${.CURDIR}/../../devel/subversion18
-.else
-MASTERDIR=	${.CURDIR}/../../devel/subversion
-.endif
-PKGDIR=		${.CURDIR}
 
 USES+=		compiler
 
@@ -23,10 +15,13 @@ JAVA_OS=	native
 JAVA_BUILD=	yes
 JAVA_RUN=	yes
 
-SVN_BUILD_BINDINGS=	yes
-SVN_BUILD_ADDONS=	yes
 
-.include "${MASTERDIR}/Makefile.common"
+PORTREVISION_110=	1
+PORTREVISION_19=	0
+
+SVN_BUILD_BINDINGS=	yes
+
+.include "${.CURDIR}/../../devel/subversion/Makefile.addons"
 
 CONFIGURE_ARGS+=	--enable-javahl \
 			--with-jdk=${JAVA_HOME} \

@@ -1,9 +1,9 @@
-# $FreeBSD: head/science/rdkit/Makefile 465867 2018-03-29 06:35:58Z yuri $
+# $FreeBSD: head/science/rdkit/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	rdkit
 DISTVERSIONPREFIX=	Release_
 DISTVERSION=	2017_09_3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

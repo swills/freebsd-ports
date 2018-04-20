@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/xpdf3/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/graphics/xpdf3/Makefile 467809 2018-04-20 01:54:02Z cy $
 
 PORTNAME=	xpdf
 PORTVERSION=	3.04
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	graphics print
 MASTER_SITES=	http://mirrors.rit.edu/zi/ \
 		ftp://ftp.foolabs.com/pub/xpdf/ \
@@ -54,7 +54,8 @@ CONFIGURE_ARGS+=	--enable-a4-paper
 .endif
 
 X11_CONFIGURE_WITH=	x
-X11_USES=		motif
+X11_USES=		desktop-file-utils motif
+X11_PLIST_SUB=		DESKTOPDIR=${DESKTOPDIR}
 
 post-patch:
 	${REINPLACE_CMD} -e 's|undef USE_COMBO_BOX|define USE_COMBO_BOX 1|' \
@@ -69,5 +70,8 @@ post-install:
 	${LN} -sf ../libexec/xpdf/xpdf bin/xpdf
 	${INSTALL_DATA} ${WRKDIR}/xpdf-man.conf \
 		${STAGEDIR}${PREFIX}/etc/man.d/xpdf.conf
+
+post-install-X11-on:
+	${INSTALL_DATA} ${FILESDIR}/xpdf.desktop ${STAGEDIR}${DESKTOPDIR}
 
 .include <bsd.port.mk>

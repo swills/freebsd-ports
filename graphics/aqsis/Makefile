@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/aqsis/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/graphics/aqsis/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	aqsis
 PORTVERSION=	1.8.2
-PORTREVISION=	17
+PORTREVISION=	18
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-source/${PORTVERSION}
 
@@ -22,6 +22,7 @@ RUN_DEPENDS=	bash:shells/bash
 
 BROKEN_sparc64=	Fails to build: cannot link with boost
 
+LDFLAGS+=	-lpthread # Boost.Thread 1.67+
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 USE_LDCONFIG=	yes

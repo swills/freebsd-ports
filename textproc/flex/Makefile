@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/flex/Makefile 446854 2017-07-28 21:45:20Z jkim $
+# $FreeBSD: head/textproc/flex/Makefile 467814 2018-04-20 09:03:44Z amdmi3 $
 
 PORTNAME=	flex
 PORTVERSION=	2.6.1
@@ -7,6 +7,9 @@ MASTER_SITES=	https://github.com/westes/flex/releases/download/v${PORTVERSION}/
 
 MAINTAINER=	johans@FreeBSD.org
 COMMENT=	Fast lexical analyzer generator
+
+LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	help2man:misc/help2man \
 		gm4:devel/m4
@@ -28,19 +31,15 @@ OPTIONS_SUB=	yes
 NLS_USES=	gettext iconv
 NLS_CONFIGURE_ENABLE=	nls
 
-.include <bsd.port.options.mk>
-
 post-patch:	.SILENT
 	${REINPLACE_CMD} -Ee 's/tests//' \
 		-e '/mode=compile ..CC/s/\\$$/-fPIC -DPIC &/' \
 		${WRKSRC}/Makefile.in
 	${RM} ${WRKSRC}/doc/*.info*
 
-post-install:
-.if ${PORT_OPTIONS:MEXAMPLES}
-	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
+post-install-EXAMPLES-on:
+	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${CP} -r ${WRKSRC}/examples/* ${STAGEDIR}${EXAMPLESDIR}/
 	${RM} ${STAGEDIR}${EXAMPLESDIR}/Makefile.am
-.endif
 
 .include <bsd.port.mk>

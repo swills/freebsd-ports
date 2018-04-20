@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-im/slack-term/Makefile 463556 2018-03-04 08:10:30Z yuri $
+# $FreeBSD: head/net-im/slack-term/Makefile 467565 2018-04-17 07:09:30Z joneum $
 
 PORTNAME=	slack-term
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.3.2
+DISTVERSION=	0.4.0
 CATEGORIES=	net-im
 
 MAINTAINER=	dg@syrec.org

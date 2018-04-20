@@ -1,8 +1,8 @@
 # Created by: George V. Neville-Neil <gnn@FreeBSD.org>
-# $FreeBSD: head/ftp/uftp/Makefile 432096 2017-01-22 07:50:39Z demon $
+# $FreeBSD: head/ftp/uftp/Makefile 467695 2018-04-18 09:09:01Z demon $
 
 PORTNAME=	uftp
-PORTVERSION=	4.9.3
+PORTVERSION=	4.9.6
 PORTEPOCH=	1
 CATEGORIES=	ftp
 MASTER_SITES=	SF/uftp-multicast/source-tar

@@ -1,9 +1,8 @@
 # Created by: Martin Wilke (miwi@FreeBSD.org)
-# $FreeBSD: head/x11/xfce4-verve-plugin/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/xfce4-verve-plugin/Makefile 467447 2018-04-16 00:21:41Z madpilot $
 
 PORTNAME=	verve-plugin
-PORTVERSION=	1.1.0
-PORTREVISION=	1
+PORTVERSION=	1.1.1
 CATEGORIES=	x11 xfce
 MASTER_SITES=	XFCE/src/panel-plugins/${PKGNAMEPREFIX}${PORTNAME}/${PORTVERSION:R}
 PKGNAMEPREFIX=	xfce4-
@@ -16,7 +15,7 @@ COMMENT=	Command line plugin for the Xfce Desktop
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libpcre.so:devel/pcre \
-	libdbus-glib-1.so:devel/dbus-glib
+		libdbus-glib-1.so:devel/dbus-glib
 
 GNU_CONFIGURE=	yes
 USES=		gettext-tools gmake libtool pkgconfig tar:bzip2 xfce

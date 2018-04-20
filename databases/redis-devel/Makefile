@@ -1,9 +1,9 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/redis-devel/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/databases/redis-devel/Makefile 467661 2018-04-17 23:05:16Z osa $
 
 PORTNAME=	redis
-DISTVERSION=	4.0.8
-PORTREVISION=	1
+DISTVERSION=	4.0.9
+PORTREVISION=	2
 CATEGORIES=	databases
 MASTER_SITES=	http://download.redis.io/releases/
 PKGNAMESUFFIX=	-devel
@@ -57,7 +57,7 @@ USES+=		tcl:build
 
 LDFLAGS+=	-lpthread -lm -lexecinfo
 
-CONFLICTS?=	redis-3.*
+CONFLICTS?=	redis-4.*
 
 USES+=		gmake
 MAKE_ENV=	"V=yo"

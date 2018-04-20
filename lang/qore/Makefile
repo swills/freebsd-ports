@@ -1,7 +1,8 @@
-# $FreeBSD: head/lang/qore/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/lang/qore/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	qore
 PORTVERSION=	0.8.12
+PORTREVISION=	1
 CATEGORIES=	lang
 
 MAINTAINER=	estrabd@gmail.com

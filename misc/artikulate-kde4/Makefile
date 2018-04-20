@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/artikulate-kde4/Makefile 467319 2018-04-14 14:02:49Z tcberner $
+# $FreeBSD: head/misc/artikulate-kde4/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	artikulate
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	misc kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

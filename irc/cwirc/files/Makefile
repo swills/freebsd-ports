@@ -15,11 +15,11 @@
 #   (for example, "-lossaudio" with NetBSD 1.6.1)
 ################################################################################
 #
-# $FreeBSD: head/irc/cwirc/files/Makefile 394662 2015-08-18 23:05:43Z db $
+# $FreeBSD: head/irc/cwirc/files/Makefile 467654 2018-04-17 20:21:07Z rene $
 TARGET_OS=FREEBSD
 STAGEDIR=%%STAGEDIR%%
 PREFIX=%%PREFIX%%
-PLUGIN_INSTALL_DIRECTORY=${PREFIX}/lib/xchat/plugins
+PLUGIN_INSTALL_DIRECTORY=${PREFIX}/lib/hexchat/plugins
 FRONTEND_INSTALL_DIRECTORY=${PREFIX}/bin
 CWIRC_EXTENSIONS_DIRECTORY=${PREFIX}/share/cwirc/extensions
 #EXTRA_LDFLAGS=
@@ -60,7 +60,7 @@ PWD?=pwd
 CC?=gcc
 STRIP?=strip
 
-XCHAT_PLUGIN_INCLUDE_PATH=xchat
+XCHAT_PLUGIN_INCLUDE_PATH=${PREFIX}/include
 
 XCHAT_INC=-I$(XCHAT_PLUGIN_INCLUDE_PATH)
 #CFLAGS=-Wall -Wstrict-prototypes -O2 -D$(TARGET_OS)
@@ -114,7 +114,7 @@ $(FRONTEND):		$(FRONTEND_OBJS)
 			$(STRIP) $@
 
 plugin.shared.o:	plugin.c					\
-			$(XCHAT_PLUGIN_INCLUDE_PATH)/xchat-plugin.h	\
+			$(XCHAT_PLUGIN_INCLUDE_PATH)/hexchat-plugin.h	\
 			types.h						\
 			common.h					\
 			cwirc.h						\

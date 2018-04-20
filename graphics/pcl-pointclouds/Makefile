@@ -1,9 +1,9 @@
-# $FreeBSD: head/graphics/pcl-pointclouds/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/pcl-pointclouds/Makefile 467810 2018-04-20 02:31:21Z jbeich $
 
 PORTNAME=	pcl
 DISTVERSIONPREFIX=	${PORTNAME}-
 DISTVERSION=	1.8.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics math
 PKGNAMESUFFIX=	-pointclouds
 
@@ -27,6 +27,9 @@ GH_ACCOUNT=	PointCloudLibrary
 USE_GL=		gl glu
 USE_XORG=	x11 xext xt ice sm
 USE_LDCONFIG=	yes
+
+# https://github.com/PointCloudLibrary/pcl/issues/2284
+CXXFLAGS+=	-DBOOST_UUID_RANDOM_GENERATOR_COMPAT
 
 PLIST_SUB=	SHL3=${DISTVERSION} SHL2=${DISTVERSION:R}
 

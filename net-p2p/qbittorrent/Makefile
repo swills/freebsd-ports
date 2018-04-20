@@ -1,9 +1,9 @@
 # Created by: Doug Barton <dougb@FreeBSD.org>
-# $FreeBSD: head/net-p2p/qbittorrent/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/net-p2p/qbittorrent/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	qbittorrent
 DISTVERSION=	3.3.16
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-p2p ipv6
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

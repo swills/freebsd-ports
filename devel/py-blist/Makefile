@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/devel/py-blist/Makefile 425174 2016-11-02 22:45:14Z mat $
+# $FreeBSD: head/devel/py-blist/Makefile 467537 2018-04-16 21:33:18Z feld $
 
 PORTNAME=	blist
 PORTVERSION=	1.3.6
@@ -8,7 +8,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	brendan+freebsd@bbqsrc.net
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Drop-in list replacement with better performance for large lists
 
 LICENSE=	BSD3CLAUSE

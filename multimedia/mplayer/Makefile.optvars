@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/mplayer/Makefile.optvars 436659 2017-03-21 21:59:31Z antoine $
+# $FreeBSD: head/multimedia/mplayer/Makefile.optvars 467373 2018-04-15 08:23:54Z riggs $
 #
 # Handling of variables using helpers
 # Include before bsd.port.(pre|options).mk
@@ -102,9 +102,6 @@ RTCPU_CONFIGURE_ON=	--enable-runtime-cpudetection
 
 RTMP_LIB_DEPENDS=	librtmp.so:multimedia/librtmp
 RTMP_CONFIGURE_OFF=	--disable-librtmp
-
-SCHROEDINGER_LIB_DEPENDS=	libschroedinger-1.0.so:multimedia/schroedinger
-SCHROEDINGER_CONFIGURE_OFF=	--disable-libschroedinger-lavc
 
 SDL_USE=		SDL=sdl
 SDL_LIB_DEPENDS=	libaa.so:graphics/aalib

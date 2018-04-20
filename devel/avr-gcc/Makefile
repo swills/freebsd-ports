@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/avr-gcc/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/avr-gcc/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	gcc
 PORTVERSION=	5.4.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	GCC/releases/gcc-${DIST_VERSION}
 PKGNAMEPREFIX=	avr-

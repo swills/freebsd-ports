@@ -1,14 +1,13 @@
 # Created by: Lung-Pin Chang <changlp@cs.nctu.edu.tw>
-# $FreeBSD: head/www/py-django_compressor/Makefile 458430 2018-01-08 15:47:22Z mat $
+# $FreeBSD: head/www/py-django_compressor/Makefile 467338 2018-04-14 18:13:56Z ultima $
 
 PORTNAME=	django_compressor
-PORTVERSION=	2.0
-PORTREVISION=	1
+PORTVERSION=	2.2
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	changlp@cs.nctu.edu.tw
+MAINTAINER=	ultima@FreeBSD.org
 COMMENT=	Compresses linked and inline JavaScript/CSS into a single cached file
 
 LICENSE=	MIT

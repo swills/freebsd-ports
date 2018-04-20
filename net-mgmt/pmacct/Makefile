@@ -1,8 +1,8 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/net-mgmt/pmacct/Makefile 461328 2018-02-09 19:15:42Z pi $
+# $FreeBSD: head/net-mgmt/pmacct/Makefile 467409 2018-04-15 19:45:55Z pi $
 
 PORTNAME=	pmacct
-DISTVERSION=	1.6.2
+DISTVERSION=	1.7.0
 PORTREVISION=	0
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://www.pmacct.net/

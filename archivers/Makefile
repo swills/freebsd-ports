@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/Makefile 466687 2018-04-06 20:11:44Z tcberner $
+# $FreeBSD: head/archivers/Makefile 467400 2018-04-15 17:00:10Z pi $
 #
 
     COMMENT = Archivers
@@ -245,6 +245,8 @@
     SUBDIR += unzip
     SUBDIR += unzoo
     SUBDIR += upx
+    SUBDIR += urbackup-client
+    SUBDIR += urbackup-server
     SUBDIR += xar
     SUBDIR += xarchive
     SUBDIR += xarchiver

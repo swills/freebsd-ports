@@ -1,9 +1,9 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/sysutils/osquery/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/sysutils/osquery/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	osquery
 PORTVERSION=	2.11.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 
 MAINTAINER=	zi@FreeBSD.org

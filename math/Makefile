@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 467036 2018-04-11 08:48:37Z tota $
+# $FreeBSD: head/math/Makefile 467660 2018-04-17 22:24:52Z yuri $
 #
 
     COMMENT = Mathematics
@@ -29,6 +29,7 @@
     SUBDIR += R-cran-Rmpfr
     SUBDIR += R-cran-Rsolnp
     SUBDIR += R-cran-SparseM
+    SUBDIR += R-cran-uroot
     SUBDIR += R-cran-VGAM
     SUBDIR += R-cran-Zelig
     SUBDIR += R-cran-assertthat
@@ -138,10 +139,12 @@
     SUBDIR += calctool
     SUBDIR += cantor
     SUBDIR += cantor-kde4
+    SUBDIR += cbc
     SUBDIR += cblas
     SUBDIR += ccmath
     SUBDIR += ceres-solver
     SUBDIR += cgal
+    SUBDIR += cgl
     SUBDIR += chaco
     SUBDIR += chryzodus
     SUBDIR += clasp
@@ -260,6 +263,7 @@
     SUBDIR += hs-statistics
     SUBDIR += hs-vector-space
     SUBDIR += igraph
+    SUBDIR += intervaltree
     SUBDIR += ipopt
     SUBDIR += ised
     SUBDIR += jacal
@@ -339,6 +343,7 @@
     SUBDIR += msieve
     SUBDIR += mtl
     SUBDIR += mtrxmath
+    SUBDIR += multichoose
     SUBDIR += mumps
     SUBDIR += mumps-edf
     SUBDIR += mumps-mpich
@@ -637,8 +642,10 @@
     SUBDIR += pure-mpfr
     SUBDIR += pure-rational
     SUBDIR += py-Diofant
+    SUBDIR += py-PySCIPOpt
     SUBDIR += py-PyWavelets
     SUBDIR += py-Pyomo
+    SUBDIR += py-algopy
     SUBDIR += py-altgraph
     SUBDIR += py-apgl
     SUBDIR += py-basemap
@@ -685,6 +692,7 @@
     SUBDIR += py-pycosat
     SUBDIR += py-pygsl
     SUBDIR += py-pyhull
+    SUBDIR += py-pyipopt
     SUBDIR += py-pymc
     SUBDIR += py-pymc3
     SUBDIR += py-pyneqsys

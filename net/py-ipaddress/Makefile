@@ -1,8 +1,8 @@
 # Created by: Nikolay Dachev <freebsd@dachev.info>
-# $FreeBSD: head/net/py-ipaddress/Makefile 456550 2017-12-17 15:54:36Z sunpoet $
+# $FreeBSD: head/net/py-ipaddress/Makefile 467518 2018-04-16 18:33:56Z sunpoet $
 
 PORTNAME=	ipaddress
-PORTVERSION=	1.0.19
+PORTVERSION=	1.0.22
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

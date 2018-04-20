@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-loofah20/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/textproc/rubygem-loofah20/Makefile 467598 2018-04-17 11:24:32Z mfechner $
 
 PORTNAME=	loofah
 PORTVERSION=	2.0.3
@@ -11,6 +11,9 @@ COMMENT=	Library for manipulating HTML/XML documents and fragments
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE.txt
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use textproc/rubygem-loofah instead.
+EXPIRATION_DATE=	2018-05-31
 
 RUN_DEPENDS=	rubygem-nokogiri>=1.5.9:textproc/rubygem-nokogiri
 

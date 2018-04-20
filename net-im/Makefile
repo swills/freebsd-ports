@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 466968 2018-04-10 16:18:29Z tcberner $
+# $FreeBSD: head/net-im/Makefile 467702 2018-04-18 10:50:38Z krion $
 #
 
     COMMENT = Instant messaging
@@ -205,6 +205,7 @@
     SUBDIR += telepathy-sofiasip
     SUBDIR += tkabber
     SUBDIR += tkabber-plugins
+    SUBDIR += toot
     SUBDIR += tox
     SUBDIR += tox12
     SUBDIR += toxbot

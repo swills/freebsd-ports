@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/riscv64-gcc/Makefile 466701 2018-04-07 00:29:42Z jhb $
+# $FreeBSD: head/devel/riscv64-gcc/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	gcc
 PORTVERSION=	7.2.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 PKGNAMEPREFIX=	riscv64-
 

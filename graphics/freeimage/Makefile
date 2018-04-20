@@ -1,9 +1,9 @@
 # Created by: Choe, Cheng-Dae <whitekid@gmail.com>
-# $FreeBSD: head/graphics/freeimage/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/graphics/freeimage/Makefile 467449 2018-04-16 00:37:31Z jbeich $
 
 PORTNAME=	freeimage
 PORTVERSION=	3.16.0
-PORTREVISION=	3
+PORTREVISION=	5
 # Version 3.17.0 is available, but does not build on i386 (and probably
 # other 32-bit arches) without some not-quite-trivial patching.  If one
 # decides to update the port, please make sure 32-bit builds are tested!
@@ -22,9 +22,10 @@ USE_LDCONFIG=	yes
 WRKSRC=		${WRKDIR}/FreeImage
 MAKE_ARGS=	CC="${CC}" CPP="${CPP}" CXX="${CXX}"
 
-CFLAGS+=	-fexceptions -fvisibility=hidden
+CFLAGS+=	-DPNG_ARM_NEON_OPT=0 -fexceptions -fvisibility=hidden
 CFLAGS_aarch64=	-fPIC
 CFLAGS_amd64=	-fPIC
+CFLAGS_armv7=	-fPIC
 
 PLIST_FILES=	include/FreeImage.h \
 		include/FreeImagePlus.h \

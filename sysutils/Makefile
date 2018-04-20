@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 467318 2018-04-14 13:30:12Z tcberner $
+# $FreeBSD: head/sysutils/Makefile 467805 2018-04-19 20:52:41Z pizzamig $
 #
 
     COMMENT = System utilities
@@ -323,6 +323,7 @@
     SUBDIR += fileprune
     SUBDIR += fileschanged
     SUBDIR += filetype
+    SUBDIR += filevercmp
     SUBDIR += filewatcherd
     SUBDIR += finfo
     SUBDIR += firstboot-freebsd-update
@@ -943,6 +944,7 @@
     SUBDIR += py-halite
     SUBDIR += py-hared
     SUBDIR += py-honcho
+    SUBDIR += py-hpilo
     SUBDIR += py-iowait
     SUBDIR += py-mqttwarn
     SUBDIR += py-nagiosplugin
@@ -1104,6 +1106,7 @@
     SUBDIR += runit
     SUBDIR += runit-faster
     SUBDIR += runwhen
+    SUBDIR += rw
     SUBDIR += s-tui
     SUBDIR += s6
     SUBDIR += s6-rc

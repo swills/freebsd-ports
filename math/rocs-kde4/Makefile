@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/rocs-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/math/rocs-kde4/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	rocs
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	math kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

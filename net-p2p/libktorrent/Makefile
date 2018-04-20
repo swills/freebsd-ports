@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-p2p/libktorrent/Makefile 467306 2018-04-14 11:09:16Z tcberner $
+# $FreeBSD: head/net-p2p/libktorrent/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	libktorrent
 DISTVERSION=	2.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-p2p kde
 DIST_SUBDIR=	KDE/${PORTNAME}
 

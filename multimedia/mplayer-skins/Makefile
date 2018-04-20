@@ -1,11 +1,10 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/mplayer-skins/Makefile 425047 2016-11-01 11:50:57Z riggs $
+# $FreeBSD: head/multimedia/mplayer-skins/Makefile 467386 2018-04-15 12:51:48Z riggs $
 
 PORTNAME=	mplayer-skins
-PORTVERSION=	1.1.3
-PORTREVISION=	4
+PORTVERSION=	1.1.4
 CATEGORIES=	multimedia
-MASTER_SITES=	MPLAYERHQ/skins
+MASTER_SITES=	http://www.mplayerhq.hu/MPlayer/skins/
 DISTFILES=	# filled in later after options
 DIST_SUBDIR=	mplayer-skins
 

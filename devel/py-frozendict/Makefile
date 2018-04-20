@@ -1,13 +1,13 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/devel/py-frozendict/Makefile 405521 2016-01-08 04:48:19Z koobs $
+# $FreeBSD: head/devel/py-frozendict/Makefile 467621 2018-04-17 18:30:53Z feld $
 
 PORTNAME=	frozendict
-PORTVERSION=	0.5
+PORTVERSION=	1.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	brendan+freebsd@bbqsrc.net
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Immutable dictionary implementation for Python
 
 LICENSE=	MIT

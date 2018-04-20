@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/kimap/Makefile 467007 2018-04-10 19:09:05Z tcberner $
+# $FreeBSD: head/net/kimap/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	kimap
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	net kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

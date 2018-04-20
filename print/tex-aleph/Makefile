@@ -1,8 +1,8 @@
-# $FreeBSD: head/print/tex-aleph/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/tex-aleph/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	aleph
 PORTVERSION=	1.15.2.1.r.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	print
 MASTER_SITES=	ftp://tug.org/historic/systems/texlive/2015/
 PKGNAMEPREFIX=	tex-

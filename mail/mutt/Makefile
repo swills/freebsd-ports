@@ -1,8 +1,8 @@
 # Created by: Udo Schweigert
-# $FreeBSD: head/mail/mutt/Makefile 463821 2018-03-07 18:52:13Z yuri $
+# $FreeBSD: head/mail/mutt/Makefile 467561 2018-04-17 06:47:32Z joneum $
 
 PORTNAME=	mutt
-DISTVERSION=	1.9.4
+DISTVERSION=	1.9.5
 PORTREVISION?=	0
 CATEGORIES+=	mail ipv6
 MASTER_SITES=	ftp://ftp.mutt.org/pub/mutt/ \
@@ -204,7 +204,7 @@ DOCS_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-doc-ref
 
 # un/comment as each VERSION is created for PORTVERSION
 VVV_PATCH_VERSION=	1.9.1
-GREETING_PATCH_VERSION=	1.9.3
+GREETING_PATCH_VERSION=	1.9.4
 
 .if !defined(VVV_PATCH_VERSION)
 VVV_PATCH_VERSION=	${PORTVERSION}

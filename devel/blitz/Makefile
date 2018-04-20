@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/blitz/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/devel/blitz/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	blitz
 DISTVERSION=	1.0.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel science
 
 MAINTAINER=	yuri@FreeBSD.org

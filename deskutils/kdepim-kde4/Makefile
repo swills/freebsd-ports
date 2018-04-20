@@ -1,9 +1,9 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/deskutils/kdepim-kde4/Makefile 467042 2018-04-11 09:57:25Z tcberner $
+# $FreeBSD: head/deskutils/kdepim-kde4/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	kdepim
 PORTVERSION=	${KDE4_KDEPIM_VERSION}
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	deskutils kde
 MASTER_SITES=	KDE/${KDE4_APPLICATIONS_BRANCH}/applications/${KDE4_APPLICATIONS_VERSION}/src
 DIST_SUBDIR=	KDE/${PORTVERSION}

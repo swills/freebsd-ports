@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/sysutils/fusefs-unionfs/Makefile 423014 2016-09-30 19:24:30Z tijl $
+# $FreeBSD: head/sysutils/fusefs-unionfs/Makefile 467537 2018-04-16 21:33:18Z feld $
 
 PORTNAME=	unionfs
 PORTVERSION=	1.0
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 PKGNAMEPREFIX=	fusefs-
 
-MAINTAINER=	brendan+freebsd@bbqsrc.net
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	FUSE based implementation of the well-known unionfs
 
 LICENSE=	BSD3CLAUSE

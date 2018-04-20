@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/phabricator/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/devel/phabricator/Makefile 467831 2018-04-20 14:56:21Z mat $
 
 PORTNAME=	phabricator
 PORTVERSION=	20170630
 PORTREVISION=	1
 CATEGORIES=	devel
-PKGNAMEPREFIX=	php-
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
 MAINTAINER=	grembo@FreeBSD.org
 COMMENT=	Open source, software engineering platform
@@ -12,15 +12,15 @@ COMMENT=	Open source, software engineering platform
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	php-libphutil>0:devel/libphutil \
-		php-arcanist>0:devel/arcanist \
+RUN_DEPENDS=	${PHP_PKGNAMEPREFIX}libphutil>0:devel/libphutil@${PHP_FLAVOR} \
+		arcanist${PHP_PKGNAMESUFFIX}>0:devel/arcanist@${PHP_FLAVOR} \
 		git:devel/git
 
 OPTIONS_DEFINE=	GD OPCACHE
 OPTIONS_DEFAULT=OPCACHE
 OPCACHE_DESC?=	Use OPcache to improve performance
 
-USES=		php shebangfix
+USES=		php:flavors shebangfix
 SHEBANG_FILES=	externals/httpful/build \
 		externals/restful/build-phar \
 		scripts/almanac/*.php \

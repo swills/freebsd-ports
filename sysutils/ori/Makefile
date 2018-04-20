@@ -1,9 +1,9 @@
 # Created by: Ali Mashtizadeh <mashti@cs.stanford.edu>
-# $FreeBSD: head/sysutils/ori/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/sysutils/ori/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	ori
 PORTVERSION=	0.8.1
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	sysutils net
 MASTER_SITES=	http://cdn.bitbucket.org/orifs/ori/downloads/
 

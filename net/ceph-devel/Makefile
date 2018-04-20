@@ -1,9 +1,9 @@
 # Created by: Willem Jan Withagen <wjw@digiware.nl>
-# $FreeBSD: head/net/ceph-devel/Makefile 461885 2018-02-15 12:34:49Z mat $
+# $FreeBSD: head/net/ceph-devel/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	ceph
 DISTVERSION=	wip.v2017-08-15-1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net
 PKGNAMESUFFIX=	-devel
 

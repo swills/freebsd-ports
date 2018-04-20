@@ -1,18 +1,20 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/misc/py-spdx/Makefile 408615 2016-02-10 02:06:04Z miwi $
+# $FreeBSD: head/misc/py-spdx/Makefile 467646 2018-04-17 19:16:58Z sunpoet $
 
 PORTNAME=	spdx
-DISTVERSION=	2.3.0
+DISTVERSION=	2.5.0
 CATEGORIES=	misc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	brendan+freebsd@bbqsrc.net
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	SPDX license list database
 
 LICENSE=	CC0-1.0
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		python:3.3+
-USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
+USES=		python
+USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

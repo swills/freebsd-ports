@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/math/mpfr/Makefile 466402 2018-04-04 08:33:30Z amdmi3 $
+# $FreeBSD: head/math/mpfr/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	mpfr
-PORTVERSION=	3.1.6
+PORTVERSION=	4.0.1
 CATEGORIES=	math devel
 MASTER_SITES=	http://www.mpfr.org/mpfr-current/ \
 		GNU

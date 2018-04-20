@@ -1,9 +1,9 @@
 # Created by: Andreas Sommer <andreas.sommer87@googlemail.com>
-# $FreeBSD: head/textproc/kiss-templates/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/textproc/kiss-templates/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=		kiss-templates
 PORTVERSION=		0.19
-PORTREVISION=		4
+PORTREVISION=		5
 CATEGORIES=		textproc
 
 MAINTAINER=		andreas.sommer87@googlemail.com

@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/arm-none-eabi-gcc492/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/arm-none-eabi-gcc492/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	gcc
 PORTVERSION=	4.9.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	GCC/releases/gcc-${DISTVERSION}
 PKGNAMEPREFIX?=	arm-none-eabi-

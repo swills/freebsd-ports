@@ -1,9 +1,9 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/devel/libarea/Makefile 461885 2018-02-15 12:34:49Z mat $
+# $FreeBSD: head/devel/libarea/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	libarea
 PORTVERSION=	20160313
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	devel cad
 
 MAINTAINER=	pfg@FreeBSD.org

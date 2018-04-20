@@ -1,15 +1,18 @@
 # Created by: Gabor Kovesdan <gabor@FreeBSD.org>
-# $FreeBSD: head/textproc/bsdgrep/Makefile 397952 2015-09-26 09:26:11Z bapt $
+# $FreeBSD: head/textproc/bsdgrep/Makefile 467795 2018-04-19 18:22:47Z kevans $
 
 PORTNAME=	grep
-PORTVERSION=	20111002
-PORTREVISION=	2
+DISTVERSION=	2.6.0
+DISTVERSIONSUFFIX=	-FreeBSD
+PORTEPOCH=	1
 CATEGORIES=	textproc
-MASTER_SITES=	LOCAL/gabor
+MASTER_SITES=	LOCAL/kevans
 PKGNAMEPREFIX=	bsd-
 
 MAINTAINER=	gabor@FreeBSD.org
 COMMENT=	BSD-licensed version of grep
+
+LICENSE=	BSD2CLAUSE
 
 USES=	uidfix
 
@@ -17,6 +20,7 @@ MAKE_ENV+=	BINDIR="${PREFIX}/bin" \
 		MANDIR="${MANPREFIX}/man/man" \
 		CATDIR="${MANPREFIX}/man/man" \
 		NLSDIR="${PREFIX}/share/nls"
+CFLAGS+=	-std=gnu99
 
 OPTIONS_DEFINE=	GNU_COMPAT NLS
 OPTIONS_DEFAULT=	GNU_COMPAT
@@ -25,8 +29,10 @@ GNU_COMPAT_DESC=	Use GNU regex library (recommended)
 
 CONFLICTS=	gnugrep-*
 
-NLS_MAKE_ENV_OFF=	WITHOUT_NLS=yes
-GNU_COMPAT_MAKE_ENV_OFF=	WITHOUT_GNU_COMPAT=yes
+NLS_MAKE_ENV=	MK_NLS=yes
+NLS_MAKE_ENV_OFF=	MK_NLS=no
+GNU_COMPAT_MAKE_ENV=	MK_GNU_GREP_COMPAT=yes
+GNU_COMPAT_MAKE_ENV_OFF=MK_GNU_GREP_COMPAT=no
 
 pre-install-NLS-on:
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/nls/gl_ES.ISO8859-1

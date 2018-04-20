@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/sec/Makefile 462977 2018-02-25 20:33:04Z yuri $
+# $FreeBSD: head/sysutils/sec/Makefile 467341 2018-04-14 21:15:23Z leres $
 
 PORTNAME=	sec
 DISTVERSION=	2.7.12
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/simple-evcorr/${PORTNAME}/${PORTVERSION}
 

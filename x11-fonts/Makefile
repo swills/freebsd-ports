@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 464759 2018-03-17 06:40:18Z yuri $
+# $FreeBSD: head/x11-fonts/Makefile 467500 2018-04-16 18:14:54Z tobik $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -164,6 +164,7 @@
     SUBDIR += paratype
     SUBDIR += pcf2bdf
     SUBDIR += pingwi
+    SUBDIR += plex-ttf
     SUBDIR += powerline-fonts
     SUBDIR += profont
     SUBDIR += proggy_fonts

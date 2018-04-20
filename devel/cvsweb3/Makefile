@@ -1,5 +1,5 @@
 # Created by: SADA Kenji <sada@FreeBSD.org>
-# $FreeBSD: head/devel/cvsweb3/Makefile 458513 2018-01-09 07:40:55Z mat $
+# $FreeBSD: head/devel/cvsweb3/Makefile 467474 2018-04-16 10:48:08Z brnrd $
 
 PORTNAME=	cvsweb
 PORTVERSION=	3.0.6
@@ -51,8 +51,6 @@ TITLE?=		My CVS Repository
 DIRPREFIX=	www
 .elif exists(${PREFIX}/www/apache24/cgi-bin)
 DIRPREFIX=	www/apache24
-.elif exists(${PREFIX}/www/apache22/cgi-bin)
-DIRPREFIX=	www/apache22
 .elif exists(${PREFIX}/apache/cgi-bin)
 DIRPREFIX=	apache
 .else

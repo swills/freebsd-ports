@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-capybara-screenshot/Makefile 466749 2018-04-07 16:34:30Z sunpoet $
+# $FreeBSD: head/devel/rubygem-capybara-screenshot/Makefile 467354 2018-04-14 23:59:06Z sunpoet $
 
 PORTNAME=	capybara-screenshot
-PORTVERSION=	1.0.18
+PORTVERSION=	1.0.19
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -14,6 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	rubygem-capybara>=1.0:devel/rubygem-capybara \
 		rubygem-launchy>=0:devel/rubygem-launchy
 
+NO_ARCH=	yes
 USES=		gem
 USE_RUBY=	yes
 

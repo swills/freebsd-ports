@@ -1,4 +1,4 @@
-# $FreeBSD: head/GIDs 467218 2018-04-13 09:17:39Z netchild $
+# $FreeBSD: head/GIDs 467398 2018-04-15 16:18:53Z pi $
 # Please keep this file sorted by GID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/group
@@ -831,7 +831,7 @@ pdagent:*:887:
 vuls:*:888:
 mattermost:*:889:
 matterircd:*:890:
-# free: 891
+urbackup:*:891:
 tautulli:*:892:
 logstash:*:893:
 arangodb:*:894:

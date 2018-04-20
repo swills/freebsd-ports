@@ -1,9 +1,9 @@
 # Created by: gahr
-# $FreeBSD: head/databases/mysql-connector-c++/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/databases/mysql-connector-c++/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	mysql-connector-c++
 PORTVERSION=	1.1.9
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	databases
 MASTER_SITES=	MYSQL/Connector-C++
 

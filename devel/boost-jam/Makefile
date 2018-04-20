@@ -1,8 +1,7 @@
 # Created by: Alexander Churanov <churanov.port.maintainer@gmail.com>
-# $FreeBSD: head/devel/boost-jam/Makefile 465789 2018-03-28 09:37:38Z tijl $
+# $FreeBSD: head/devel/boost-jam/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	boost-jam
-PORTREVISION=	1
 COMMENT=	Build tool from the boost.org
 
 PLIST_FILES=	bin/bjam

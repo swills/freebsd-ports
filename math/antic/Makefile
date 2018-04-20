@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/antic/Makefile 466386 2018-04-03 23:14:57Z yuri $
+# $FreeBSD: head/math/antic/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	antic
 DISTVERSION=	g20180325
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org

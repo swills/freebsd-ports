@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/scrnsaverproto/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/x11/scrnsaverproto/Makefile 467694 2018-04-18 09:03:42Z amdmi3 $
 
 PORTNAME=	scrnsaverproto
 PORTVERSION=	1.2.2
@@ -6,6 +6,9 @@ CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	ScrnSaver extension headers
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 XORG_CAT=	proto
 

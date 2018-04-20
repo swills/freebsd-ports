@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-toml-rb03/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/www/rubygem-toml-rb03/Makefile 467598 2018-04-17 11:24:32Z mfechner $
 
 PORTNAME=	toml-rb
 PORTVERSION=	0.3.15
@@ -10,6 +10,9 @@ MAINTAINER=	idefix@fechner.net
 COMMENT=	TOML parser using Citrus parsing library
 
 LICENSE=	MIT
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use www/rubygem-tom-rb instead.
+EXPIRDATION_DATE=	2018-05-31
 
 RUN_DEPENDS=	rubygem-citrus>=3.0:textproc/rubygem-citrus
 

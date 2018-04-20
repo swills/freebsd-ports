@@ -1,5 +1,5 @@
 # Created by: gugabsd <gugabsd@mundounix.com.br>
-# $FreeBSD: head/www/py-rhodecode/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/www/py-rhodecode/Makefile 467648 2018-04-17 19:17:07Z sunpoet $
 
 PORTNAME=	rhodecode
 PORTVERSION=	1.7.2
@@ -49,14 +49,7 @@ OPTIONS_DEFAULT=	GIT
 
 GIT_DESC=	GIT support
 
-.include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MLDAP}
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}ldap>=2.4.6:net/py-ldap@${FLAVOR}
-.endif
-
-.if ${PORT_OPTIONS:MGIT}
-RUN_DEPENDS+=	${LOCALBASE}/bin/git:devel/git
-.endif
+LDAP_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ldap>=2.4.6:net/py-ldap@${FLAVOR}
+GIT_RUN_DEPENDS=	git:devel/git
 
 .include <bsd.port.mk>

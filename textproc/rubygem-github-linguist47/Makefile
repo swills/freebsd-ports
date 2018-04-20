@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-github-linguist47/Makefile 462262 2018-02-18 19:26:45Z jrm $
+# $FreeBSD: head/textproc/rubygem-github-linguist47/Makefile 467598 2018-04-17 11:24:32Z mfechner $
 
 PORTNAME=	github-linguist
 PORTVERSION=	4.7.6
@@ -11,6 +11,9 @@ COMMENT=	GitHub Language detection
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use textproc/rubygem-github-linguist instead
+EXPIRATION_DATE=	2018-05-31
 
 RUN_DEPENDS=	rubygem-charlock_holmes>=0.7.3:textproc/rubygem-charlock_holmes \
 		rubygem-escape_utils11>=1.1.0:textproc/rubygem-escape_utils11 \

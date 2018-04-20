@@ -1,5 +1,5 @@
 # Created by: Andrey Zonov <andrey@zonov.org>
-# $FreeBSD: head/devel/py-msgpack-python/Makefile 408750 2016-02-12 19:43:47Z rm $
+# $FreeBSD: head/devel/py-msgpack-python/Makefile 467641 2018-04-17 19:16:32Z sunpoet $
 
 PORTNAME=	msgpack-python
 PORTVERSION=	0.4.7
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	brendan+freebsd@bbqsrc.net
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	MessagePack (de)serializer for Python
 
 LICENSE=	APACHE20

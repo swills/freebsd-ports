@@ -1,9 +1,9 @@
 # Created by: miwi
-# $FreeBSD: head/databases/akonadi-kde4/Makefile 465102 2018-03-20 18:03:48Z tcberner $
+# $FreeBSD: head/databases/akonadi-kde4/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	akonadi
 PORTVERSION=	1.13.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	databases kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/src
 PKGNAMESUFFIX=	-kde4

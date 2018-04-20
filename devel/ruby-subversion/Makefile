@@ -1,27 +1,21 @@
 # Created by: Hiroyuki Iwatsuki <don@na.rim.or.jp>
-# $FreeBSD: head/devel/ruby-subversion/Makefile 465240 2018-03-21 21:24:43Z brnrd $
+# $FreeBSD: head/devel/ruby-subversion/Makefile 467834 2018-04-20 15:38:58Z lev $
 
 PKGNAMEPREFIX=	ruby-
-PORTREVISION=	2
 
 MAINTAINER=	lev@FreeBSD.org
 COMMENT=	Ruby bindings for version control system
-
-.if defined(WITH_SUBVERSION_VER) && ${WITH_SUBVERSION_VER} == 18
-MASTERDIR=	${.CURDIR}/../../devel/subversion18
-.else
-MASTERDIR=	${.CURDIR}/../../devel/subversion
-.endif
-PKGDIR=		${.CURDIR}
 
 BROKEN_powerpc64=	fails to compile: swigutil_rb.c: 'ruby_errinfo' undeclared
 
 USE_RUBY=	yes
 
-SVN_BUILD_BINDINGS=	yes
-SVN_BUILD_ADDONS=	yes
+PORTREVISION_110=	1
+PORTREVISION_19=	0
 
-.include "${MASTERDIR}/Makefile.common"
+SVN_BUILD_BINDINGS=	yes
+
+.include "${.CURDIR}/../../devel/subversion/Makefile.addons"
 
 CATEGORIES+=	ruby
 

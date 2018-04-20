@@ -1,9 +1,8 @@
 # Created by: Mike Krutov <neko@takino.org>
-# $FreeBSD: head/x11-toolkits/girara/Makefile 458944 2018-01-13 22:15:33Z madpilot $
+# $FreeBSD: head/x11-toolkits/girara/Makefile 467604 2018-04-17 13:46:31Z madpilot $
 
 PORTNAME=	girara
-PORTVERSION=	0.2.8
-PORTREVISION=	1
+PORTVERSION=	0.2.9
 CATEGORIES=	x11-toolkits graphics
 MASTER_SITES=	https://pwmt.org/projects/girara/download/ \
 		http://www.madpilot.net/~mad/pwmt.org/
@@ -11,14 +10,11 @@ MASTER_SITES=	https://pwmt.org/projects/girara/download/ \
 MAINTAINER=	madpilot@FreeBSD.org
 COMMENT=	GTK3 Interface Library for Zathura PDF Viewer
 
-USES=		gmake pathfix pkgconfig
+USES=		meson pathfix pkgconfig tar:xz
 PATHFIX_MAKEFILEIN=	Makefile
 USE_GNOME=	cairo gdkpixbuf2 glib20 gtk30
 USE_LDCONFIG=	yes
-USE_CSTD=	gnu99
 LIBDIR=		${PREFIX}/lib
-MAKE_ENV+=	SFLAGS=${STRIP} \
-		VERBOSE=1
 
 OPTIONS_DEFINE=		JSONC NLS NOTIFY
 OPTIONS_DEFAULT=	NOTIFY
@@ -27,19 +23,15 @@ JSONC_DESC=		Support json configuration dump
 OPTIONS_SUB=		yes
 
 JSONC_LIB_DEPENDS=	libjson-c.so:devel/json-c
-JSONC_MAKE_ENV_OFF=		WITH_JSON=0
+JSONC_MESON_TRUE=	enable-json
 
 NLS_USES=		gettext
 
 NOTIFY_LIB_DEPENDS=	libnotify.so:devel/libnotify
-NOTIFY_MAKE_ENV_OFF=	WITH_LIBNOTIFY=0
-
-post-patch:	.SILENT
-	${REINPLACE_CMD} -e 's|^\(CFLAGS +=\) -std=c11|\1|' \
-		${WRKSRC}/config.mk
+NOTIFY_MESON_TRUE=	enable-notify
 
 post-patch-NLS-off: .SILENT
-	${REINPLACE_CMD} -e '/-C po/d' \
-		${WRKSRC}/Makefile
+	${REINPLACE_CMD} -e "/subdir('po')/d" \
+		${WRKSRC}/meson.build
 
 .include <bsd.port.mk>

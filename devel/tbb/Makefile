@@ -1,5 +1,5 @@
 # Created by: Arun Sharma <arun@sharma-home.net>
-# $FreeBSD: head/devel/tbb/Makefile 459404 2018-01-19 11:10:37Z martymac $
+# $FreeBSD: head/devel/tbb/Makefile 467440 2018-04-15 23:57:12Z jbeich $
 
 PORTNAME=	tbb
 PORTVERSION=	2018.2
@@ -10,7 +10,7 @@ COMMENT=	Library that provides thread building blocks
 
 LICENSE=	APACHE20
 
-ONLY_FOR_ARCHS=		amd64 armv6 i386
+ONLY_FOR_ARCHS=		amd64 armv6 armv7 i386
 ONLY_FOR_ARCHS_REASON=	has not been ported to this platform
 
 USES=	compiler gmake tar:tgz

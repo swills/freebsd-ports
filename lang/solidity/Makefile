@@ -1,8 +1,9 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/solidity/Makefile 465023 2018-03-19 17:02:40Z ale $
+# $FreeBSD: head/lang/solidity/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	solidity
 PORTVERSION=	0.4.21
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	https://github.com/ethereum/solidity/releases/download/v${PORTVERSION}/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -19,7 +20,7 @@ OPTIONS_DEFINE=	SMT
 SMT_DESC=	SMT Checker
 SMT_LIB_DEPENDS=libz3.so:math/z3
 
-USES=		cmake
+USES=		cmake compiler:c++14-lang
 
 CMAKE_ARGS+=	-DUSE_LD_GOLD=OFF -DTESTS=OFF \
 		-DJSONCPP_INCLUDE_DIR:STRING="${LOCALBASE}/include/jsoncpp" \

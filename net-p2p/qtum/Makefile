@@ -1,9 +1,10 @@
 # Created by: Vasil Dimov <vd@FreeBSD.org>
-# $FreeBSD: head/net-p2p/qtum/Makefile 463822 2018-03-07 19:29:34Z vd $
+# $FreeBSD: head/net-p2p/qtum/Makefile 467713 2018-04-18 14:06:09Z jbeich $
 
 PORTNAME=	qtum
 PORTVERSION=	0.14.15
 DISTVERSIONPREFIX=	mainnet-ignition-v
+PORTREVISION=	1
 CATEGORIES=	net-p2p finance
 
 MAINTAINER=	vd@FreeBSD.org

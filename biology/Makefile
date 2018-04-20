@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 466449 2018-04-04 17:21:39Z jwb $
+# $FreeBSD: head/biology/Makefile 467808 2018-04-20 01:34:05Z jwb $
 #
 
     COMMENT = Biology
@@ -22,16 +22,19 @@
     SUBDIR += clustalw
     SUBDIR += consed
     SUBDIR += crux
+    SUBDIR += ddocent
     SUBDIR += diamond
     SUBDIR += emboss
     SUBDIR += fasta
     SUBDIR += fasta3
+    SUBDIR += fastahack
     SUBDIR += fastdnaml
     SUBDIR += fastool
     SUBDIR += fastqc
     SUBDIR += fasttree
     SUBDIR += fastx-toolkit
     SUBDIR += fluctuate
+    SUBDIR += freebayes
     SUBDIR += garlic
     SUBDIR += gff2ps
     SUBDIR += gmap
@@ -111,16 +114,19 @@
     SUBDIR += seqtools
     SUBDIR += sim4
     SUBDIR += slclust
+    SUBDIR += smithwaterman
     SUBDIR += ssaha
     SUBDIR += stacks
     SUBDIR += tRNAscan-SE
     SUBDIR += t_coffee
+    SUBDIR += tabixpp
     SUBDIR += tinker
     SUBDIR += treepuzzle
     SUBDIR += trimadap
     SUBDIR += trimmomatic
     SUBDIR += ugene
     SUBDIR += vcftools
+    SUBDIR += vcflib
     SUBDIR += velvet
     SUBDIR += wise
     SUBDIR += xmolwt

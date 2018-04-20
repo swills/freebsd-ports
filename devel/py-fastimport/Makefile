@@ -1,8 +1,8 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/devel/py-fastimport/Makefile 460023 2018-01-26 18:11:50Z sunpoet $
+# $FreeBSD: head/devel/py-fastimport/Makefile 467625 2018-04-17 19:15:09Z sunpoet $
 
 PORTNAME=	fastimport
-PORTVERSION=	0.9.6
+PORTVERSION=	0.9.8
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

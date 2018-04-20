@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-mgmt/py-ciscoconfparse/Makefile 466194 2018-04-02 00:03:18Z dbaio $
+# $FreeBSD: head/net-mgmt/py-ciscoconfparse/Makefile 467601 2018-04-17 13:34:49Z krion $
 
 PORTNAME=	ciscoconfparse
-DISTVERSION=	1.3.11
+DISTVERSION=	1.3.12
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

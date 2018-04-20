@@ -1,26 +1,21 @@
 # Created by: thinker@branda.to
-# $FreeBSD: head/devel/py-subversion/Makefile 465240 2018-03-21 21:24:43Z brnrd $
+# $FreeBSD: head/devel/py-subversion/Makefile 467834 2018-04-20 15:38:58Z lev $
 
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-PORTREVISION=	2
+PORTREVISION=	0
 
 MAINTAINER=	lev@FreeBSD.org
 COMMENT=	Python bindings for version control system
 
-.if defined(WITH_SUBVERSION_VER) && ${WITH_SUBVERSION_VER} == 18
-MASTERDIR=	${.CURDIR}/../../devel/subversion18
-.else
-MASTERDIR=	${.CURDIR}/../../devel/subversion
-.endif
-PKGDIR=		${.CURDIR}
-
 USES+=		python
 USE_PYTHON=	flavors py3kplist
 
-SVN_BUILD_BINDINGS=	yes
-SVN_BUILD_ADDONS=	yes
+PORTREVISION_110=	1
+PORTREVISION_19=	0
 
-.include "${MASTERDIR}/Makefile.common"
+SVN_BUILD_BINDINGS=	yes
+
+.include "${.CURDIR}/../../devel/subversion/Makefile.addons"
 
 CATEGORIES+=	python
 

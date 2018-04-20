@@ -1,8 +1,8 @@
-# $FreeBSD: head/astro/libkgeomap-kde4/Makefile 465097 2018-03-20 17:19:01Z tcberner $
+# $FreeBSD: head/astro/libkgeomap-kde4/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	libkgeomap
 PORTVERSION=	${KDE4_APPLICATIONS_VERSION}
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	astro kde
 MASTER_SITES=	KDE/${KDE4_APPLICATIONS_BRANCH}/applications/${PORTVERSION}/src
 PKGNAMESUFFIX=	-kde4
