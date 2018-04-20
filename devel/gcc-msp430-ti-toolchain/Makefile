@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/gcc-msp430-ti-toolchain/Makefile 466827 2018-04-08 19:05:36Z danilo $
+# $FreeBSD: head/devel/gcc-msp430-ti-toolchain/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	gcc-msp430-ti-toolchain
 PORTVERSION=	${GCC_VERSION}.${TI_VERSION}.${RELEASE_DATE}
-PORTREVISION?=	1
+PORTREVISION?=	2
 CATEGORIES=	devel
 MASTER_SITES=	GCC/releases/gcc-${GCC_REL_VERSION}:gcc \
 		SOURCEWARE/binutils/releases:binutils \

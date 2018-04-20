@@ -1,5 +1,5 @@
 # Created by: Jean-Baptiste Quenot <jb.quenot@caraldi.com>
-# $FreeBSD: head/www/resin3/Makefile 458635 2018-01-10 12:54:08Z bofh $
+# $FreeBSD: head/www/resin3/Makefile 467474 2018-04-16 10:48:08Z brnrd $
 
 PORTNAME=	resin
 PORTVERSION=	3.1.15
@@ -56,6 +56,7 @@ APXS?=		${LOCALBASE}/sbin/apxs
 SUB_FILES=	pkg-message resin3ctl
 USE_RC_SUBR=	resin3
 NO_ARCH=	yes
+APACHE22_BROKEN=The Apache 2.2 port has been deleted
 
 .include <bsd.port.options.mk>
 

@@ -1,9 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/binutils/Makefile 462842 2018-02-24 15:06:57Z linimon $
+# $FreeBSD: head/devel/binutils/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	binutils
 PORTVERSION=	2.30
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH?=	1
 CATEGORIES?=	devel
 MASTER_SITES=	SOURCEWARE/binutils/releases

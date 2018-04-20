@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/spidermonkey38/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/lang/spidermonkey38/Makefile 467581 2018-04-17 08:33:41Z amdmi3 $
 
 PORTNAME=	spidermonkey38
 PORTVERSION=	38.8.0
@@ -82,7 +82,7 @@ post-patch:
 		${WRKSRC}/tests/Intl/DateTimeFormat/format.js \
 		${WRKSRC}/tests/ecma_6/String/normalize-generateddata-part1-not-listed.js
 
-regression-test: build
+do-test:
 	@${ECHO_MSG} -n "===> Running jstests.py: "
 	@cd ${WRKSRC} && ${SETENV} TZ=PST8PDT ${PYTHON_CMD} tests/jstests.py \
 	-d -s --no-progress ./js/src/shell/js

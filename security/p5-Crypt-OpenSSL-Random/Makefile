@@ -1,8 +1,8 @@
 # Created by: nork@cityfujisawa.ne.jp
-# $FreeBSD: head/security/p5-Crypt-OpenSSL-Random/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-Crypt-OpenSSL-Random/Makefile 467428 2018-04-15 20:03:43Z sunpoet $
 
 PORTNAME=	Crypt-OpenSSL-Random
-PORTVERSION=	0.11
+PORTVERSION=	0.13
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:RURBAN
@@ -13,6 +13,9 @@ COMMENT=	Perl5 interface to the OpenSSL pseudo-random number generator
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE_ART10=	${WRKSRC}/LICENSE
+
+BUILD_DEPENDS=	p5-Crypt-OpenSSL-Guess>=0:security/p5-Crypt-OpenSSL-Guess
 
 MAKE_ARGS=	PASTHRU_INC=-I${OPENSSLINC}
 USES=		perl5 ssl

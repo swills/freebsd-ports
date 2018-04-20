@@ -1,7 +1,7 @@
-# $FreeBSD: head/print/fig2dev/Makefile 420721 2016-08-23 17:44:52Z pi $
+# $FreeBSD: head/print/fig2dev/Makefile 467411 2018-04-15 20:02:13Z pi $
 
 PORTNAME=	fig2dev
-PORTVERSION=	3.2.6
+PORTVERSION=	3.2.7
 CATEGORIES=	print
 MASTER_SITES=	SF/mcj/
 

@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/misc/py-spdx-lookup/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/misc/py-spdx-lookup/Makefile 467647 2018-04-17 19:17:03Z sunpoet $
 
 PORTNAME=	spdx-lookup
 PORTVERSION=	0.3.2
@@ -7,14 +7,16 @@ CATEGORIES=	misc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	brendan+freebsd@bbqsrc.net
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	SPDX license list query tool
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}spdx>0:misc/py-spdx@${FLAVOR}
 
-USES=		python:3.3+
-USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
+USES=		python
+USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

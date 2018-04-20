@@ -1,8 +1,8 @@
 # Created by: Devaux Fabien <fab@gcu.info>
-# $FreeBSD: head/graphics/jpegoptim/Makefile 466157 2018-04-01 13:52:34Z ehaupt $
+# $FreeBSD: head/graphics/jpegoptim/Makefile 467771 2018-04-19 15:09:59Z ehaupt $
 
 PORTNAME=	jpegoptim
-PORTVERSION=	1.4.5
+PORTVERSION=	1.4.6
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.kokkonen.net/tjko/src/ \
 		LOCAL/ehaupt

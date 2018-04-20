@@ -1,11 +1,11 @@
 # Created by: Holger Lamm
-# $FreeBSD: head/multimedia/win32-codecs/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/multimedia/win32-codecs/Makefile 467386 2018-04-15 12:51:48Z riggs $
 
 PORTNAME=	win32-codecs
 DISTVERSION=	20110131
 PORTEPOCH=	1
 CATEGORIES=	multimedia audio
-MASTER_SITES=	MPLAYERHQ/releases/codecs \
+MASTER_SITES=	http://www.mplayerhq.hu/MPlayer/releases/codecs/ \
 		http://ftp.lug.udel.edu/MPlayer/releases/codecs/ \
 		ftp://ftp.lug.udel.edu/MPlayer/releases/codecs/
 DISTFILES=	all-${DISTVERSION}.tar.bz2 \

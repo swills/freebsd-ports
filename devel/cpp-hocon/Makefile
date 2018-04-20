@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/cpp-hocon/Makefile 461788 2018-02-14 13:27:13Z romain $
+# $FreeBSD: head/devel/cpp-hocon/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	cpp-hocon
 PORTVERSION=	0.1.6
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 
 MAINTAINER=	puppet@FreeBSD.org

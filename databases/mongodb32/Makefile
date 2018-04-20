@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/databases/mongodb32/Makefile 462050 2018-02-16 17:52:50Z brnrd $
+# $FreeBSD: head/databases/mongodb32/Makefile 467537 2018-04-16 21:33:18Z feld $
 
 PORTNAME=	mongodb32
 PORTVERSION=	3.2.11
@@ -10,7 +10,7 @@ MASTER_SITES=	https://fastdl.mongodb.org/src/ \
 		http://download.mongodb.org/src/
 DISTNAME=	mongodb-src-${DISTVERSIONPREFIX}${PORTVERSION}
 
-MAINTAINER=	brendan+freebsd@bbqsrc.net
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Distributed document-oriented "NoSQL" database
 
 # mongodb is AGPLv3, C++ driver is APACHE20

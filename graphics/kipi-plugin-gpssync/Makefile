@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/kipi-plugin-gpssync/Makefile 465097 2018-03-20 17:19:01Z tcberner $
+# $FreeBSD: head/graphics/kipi-plugin-gpssync/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	kipi-plugin-${KIPI_PLUGIN}
 PORTVERSION=	${DIGIKAM_VER}
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	graphics kde
 
 MAINTAINER=	kde@FreeBSD.org

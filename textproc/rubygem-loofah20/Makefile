@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-loofah20/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/textproc/rubygem-loofah20/Makefile 467598 2018-04-17 11:24:32Z mfechner $
 
 PORTNAME=	loofah
 PORTVERSION=	2.0.3

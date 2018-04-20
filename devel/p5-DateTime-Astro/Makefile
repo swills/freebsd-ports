@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-DateTime-Astro/Makefile 448494 2017-08-21 20:44:12Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime-Astro/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	DateTime-Astro
 PORTVERSION=	1.03
+PORTREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DMAKI

@@ -1,9 +1,9 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/www/kdewebdev-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/www/kdewebdev-kde4/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	kdewebdev
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	www kde kde-kde4
 PKGNAMESUFFIX=	-kde4
 

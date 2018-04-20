@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-ovirt-engine-sdk/Makefile 466652 2018-04-06 16:26:14Z sunpoet $
+# $FreeBSD: head/net/rubygem-ovirt-engine-sdk/Makefile 467733 2018-04-18 20:15:21Z sunpoet $
 
 PORTNAME=	ovirt-engine-sdk
-PORTVERSION=	4.2.3
+PORTVERSION=	4.2.4
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

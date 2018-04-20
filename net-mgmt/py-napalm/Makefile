@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-mgmt/py-napalm/Makefile 466536 2018-04-05 05:19:09Z yuri $
+# $FreeBSD: head/net-mgmt/py-napalm/Makefile 467560 2018-04-17 06:37:35Z joneum $
 
 PORTNAME=	napalm
-DISTVERSION=	2.3.0
+DISTVERSION=	2.3.1
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

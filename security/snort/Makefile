@@ -1,8 +1,9 @@
 # Created by: Dirk Froemberg <dirk@FreeBSD.org>
-# $FreeBSD: head/security/snort/Makefile 459809 2018-01-24 01:12:31Z zi $
+# $FreeBSD: head/security/snort/Makefile 467825 2018-04-20 14:21:25Z dvl $
 
 PORTNAME=	snort
 PORTVERSION=	2.9.11.1
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	https://snort.org/downloads/snort/ \
 		ZI

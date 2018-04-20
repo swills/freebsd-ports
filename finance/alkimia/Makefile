@@ -1,9 +1,9 @@
-# $FreeBSD: head/finance/alkimia/Makefile 467240 2018-04-13 13:16:46Z jhale $
+# $FreeBSD: head/finance/alkimia/Makefile 467664 2018-04-18 00:01:13Z jhale $
 
 PORTNAME=	alkimia
-PORTVERSION=	7.0.1
+PORTVERSION=	7.0.2
 CATEGORIES=	finance kde
-MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src
+MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}
 PKGNAMESUFFIX=	-${SLAVE}
 
 MAINTAINER=	jhale@FreeBSD.org

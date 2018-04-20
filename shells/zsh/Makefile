@@ -1,8 +1,8 @@
 # Created by: torstenb
-# $FreeBSD: head/shells/zsh/Makefile 466957 2018-04-10 11:45:46Z bapt $
+# $FreeBSD: head/shells/zsh/Makefile 467611 2018-04-17 15:15:13Z bapt $
 
 PORTNAME=	zsh
-DISTVERSION=	5.5
+DISTVERSION=	5.5.1
 CATEGORIES=	shells
 MASTER_SITES=	http://www.zsh.org/pub/ \
 		SF \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/finance/Makefile 467240 2018-04-13 13:16:46Z jhale $
+# $FreeBSD: head/finance/Makefile 467650 2018-04-17 19:22:05Z jhale $
 #
 
     COMMENT = Monetary, financial, and related applications
@@ -36,6 +36,7 @@
     SUBDIR += grisbi
     SUBDIR += homebank
     SUBDIR += jgnash
+    SUBDIR += kmymoney
     SUBDIR += kmymoney-kde4
     SUBDIR += ktoblzcheck
     SUBDIR += ledger

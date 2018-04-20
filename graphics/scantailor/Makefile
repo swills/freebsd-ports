@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/graphics/scantailor/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/graphics/scantailor/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	scantailor
 PORTVERSION=	0.9.11.1
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 

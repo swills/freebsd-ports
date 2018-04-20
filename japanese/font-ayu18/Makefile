@@ -1,7 +1,8 @@
-# $FreeBSD: head/japanese/font-ayu18/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
+# $FreeBSD: head/japanese/font-ayu18/Makefile 467394 2018-04-15 13:52:21Z nobutaka $
 
 PORTNAME=	ayu18
 PORTVERSION=	1.3.1.1
+PORTREVISION=	1
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	OSDN/x-tt/8535/:goth \
 		OSDN/x-tt/8494/:min
@@ -16,21 +17,15 @@ BUILD_DEPENDS=	mkitalic:x11-fonts/mkbold-mkitalic \
 		bdftopcf:x11-fonts/bdftopcf
 
 USES=		fonts
-FONTNAME=	misc
 NO_ARCH=	yes
 NO_WRKSUBDIR=	yes
-SUB_FILES=	Makefile
+SUB_FILES=	Makefile pkg-message
 MAKEFILE=	${WRKDIR}/Makefile
 PORTDOCS=	README.txt
 
 OPTIONS_DEFINE=	DOCS
 
 pre-build: apply-slist
-
-post-install:
-	@${MKDIR} ${STAGEDIR}${FONTSDIR}
-	cd ${STAGEDIR}${FONTSDIR} && \
-	    ${LN} -s ../../../${DATADIR_REL}/*.pcf.gz .
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

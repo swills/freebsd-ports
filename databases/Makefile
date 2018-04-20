@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 467312 2018-04-14 12:06:35Z danfe $
+# $FreeBSD: head/databases/Makefile 467700 2018-04-18 10:32:53Z tz $
 #
 
     COMMENT = Databases and related software
@@ -600,6 +600,7 @@
     SUBDIR += pgpool-II-33
     SUBDIR += pgpool-II-35
     SUBDIR += pgpool-II-36
+    SUBDIR += pgpool-II-37
     SUBDIR += pgreplay
     SUBDIR += pgroonga
     SUBDIR += pgrouting

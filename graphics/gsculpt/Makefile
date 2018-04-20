@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/gsculpt/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/gsculpt/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	gsculpt
 PORTVERSION=	0.99.47
-PORTREVISION=	18
+PORTREVISION=	19
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${DISTNAME:S,-src,,}
 DISTNAME=	gSculpt-${PORTVERSION}-alpha-src
@@ -51,6 +51,7 @@ post-patch:
 		 s|'-g'|''| ; \
 		 s|'-DGSCULPT_FPU_X86'|''| ; \
 		 s|'[(]-O2.*-O[)]'|''| ; \
+		 s|'boost_python'|'${PY_BOOST_LIB}'|; \
 		 /^cppLibs/s|BackgroundModel|BackgroundMesh|" \
 		${WRKSRC}/SConstruct
 	@${REINPLACE_CMD} -e \

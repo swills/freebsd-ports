@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 467317 2018-04-14 13:16:32Z tcberner $
+# $FreeBSD: head/devel/Makefile 467747 2018-04-19 03:32:48Z yuri $
 #
 
     COMMENT = Development utilities
@@ -4594,6 +4594,7 @@
     SUBDIR += py-kaptan
     SUBDIR += py-kayako
     SUBDIR += py-kazoo
+    SUBDIR += py-keystone-engine
     SUBDIR += py-keystoneauth1
     SUBDIR += py-keystonemiddleware
     SUBDIR += py-kid
@@ -4843,6 +4844,7 @@
     SUBDIR += py-python-engineio
     SUBDIR += py-python-gflags
     SUBDIR += py-python-gist
+    SUBDIR += py-python-gitlab
     SUBDIR += py-python-jenkins
     SUBDIR += py-python-magic
     SUBDIR += py-python-pcre
@@ -5534,6 +5536,7 @@
     SUBDIR += rubygem-google-api-client
     SUBDIR += rubygem-google-protobuf
     SUBDIR += rubygem-google-protobuf351
+    SUBDIR += rubygem-googleapis-common-protos
     SUBDIR += rubygem-googleapis-common-protos-types
     SUBDIR += rubygem-graf
     SUBDIR += rubygem-grape
@@ -5615,6 +5618,7 @@
     SUBDIR += rubygem-lru_redux
     SUBDIR += rubygem-lumberjack
     SUBDIR += rubygem-main
+    SUBDIR += rubygem-manpages
     SUBDIR += rubygem-map
     SUBDIR += rubygem-marcel
     SUBDIR += rubygem-memoist
@@ -6139,6 +6143,7 @@
     SUBDIR += varconf
     SUBDIR += vasm
     SUBDIR += vera++
+    SUBDIR += vexcl
     SUBDIR += viewvc
     SUBDIR += violet
     SUBDIR += visualparadigm

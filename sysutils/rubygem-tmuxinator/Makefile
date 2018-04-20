@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/sysutils/rubygem-tmuxinator/Makefile 466123 2018-04-01 07:25:41Z krion $
+# $FreeBSD: head/sysutils/rubygem-tmuxinator/Makefile 467637 2018-04-17 19:16:11Z sunpoet $
 
 PORTNAME=	tmuxinator
-PORTVERSION=	0.11.0
+PORTVERSION=	0.11.1
 CATEGORIES=	sysutils ruby
 MASTER_SITES=	RG
 
@@ -23,8 +23,8 @@ OPTIONS_DEFAULT=	TMUX
 OPTIONS_SINGLE=		TMUX
 OPTIONS_SINGLE_TMUX=	TMUX TMUX23
 
-TMUX23_DESC=		Enable tmux23
 TMUX_DESC=		Enable tmux
+TMUX23_DESC=		Enable tmux23
 
 TMUX_RUN_DEPENDS=	tmux:sysutils/tmux
 TMUX23_RUN_DEPENDS=	tmux:sysutils/tmux23

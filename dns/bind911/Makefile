@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/bind911/Makefile 465288 2018-03-22 14:13:02Z mat $
+# $FreeBSD: head/dns/bind911/Makefile 467580 2018-04-17 08:26:49Z mat $
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
@@ -156,12 +156,12 @@ IDN_USES=		iconv
 
 IPV6_CONFIGURE_ENABLE=	ipv6
 
-JSON_CONFIGURE_WITH=	libjson
+JSON_CONFIGURE_WITH=	libjson=${LOCALBASE}
 JSON_LIB_DEPENDS=	libjson-c.so:devel/json-c
 
 LARGE_FILE_CONFIGURE_ENABLE=	largefile
 
-LMDB_CONFIGURE_WITH=	lmdb
+LMDB_CONFIGURE_WITH=	lmdb=${LOCALBASE}
 LMDB_LIB_DEPENDS=	liblmdb.so:databases/lmdb
 
 MINCACHE_EXTRA_PATCHES=	${FILESDIR}/extrapatch-bind-min-override-ttl

@@ -1,7 +1,7 @@
 #
 # MOVED -- A list of (recently) moved or removed ports
 #
-# $FreeBSD: head/MOVED 467319 2018-04-14 14:02:49Z tcberner $
+# $FreeBSD: head/MOVED 467834 2018-04-20 15:38:58Z lev $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -10148,5 +10148,33 @@ devel/py-libusb115|devel/py-libusb1|2018-04-14|Unused and unmaintained upstream
 devel/qca-qt5|devel/qca@qt5|2018-04-14|Moved to a flavoured version
 devel/qjson-qt5|devel/qjson@qt5|2018-04-14|Moved to a flavoured version
 sysutils/polkit-qt5|sysutils/polkit-qt@qt5|2018-04-14|Moved to flavoured version
-multimedia/gstreamer1-qt4|multiemdia/gstreamer1-qt@qt4|2018-04-14|Moved to a flavoured version
+multimedia/gstreamer1-qt4|multimedia/gstreamer1-qt@qt4|2018-04-14|Moved to a flavoured version
 multimedia/gstreamer1-qt5|multimedia/gstreamer1-qt@qt5|2018-04-14|Moved to a flavoured version
+www/mod_antiloris||2018-04-16|Apache 2.2 End of Life
+www/mod_auth_imap2||2018-04-16|Apache 2.2 End of Life
+www/mod_authn_sasl||2018-04-16|Apache 2.2 End of Life
+www/mod_bw||2018-04-16|Apache 2.2 End of Life
+www/mod_cband||2018-04-16|Apache 2.2 End of Life
+www/mod_clamav||2018-04-16|Apache 2.2 End of Life
+www/mod_extract_forwarded||2018-04-16|Apache 2.2 End of Life
+www/mod_hosts_access||2018-04-16|Apache 2.2 End of Life
+www/mod_log_config-st||2018-04-16|Apache 2.2 End of Life
+www/mod_log_mysql||2018-04-16|Apache 2.2 End of Life
+www/mod_log_sql2-dtc||2018-04-16|Apache 2.2 End of Life
+www/mod_macro22||2018-04-16|Apache 2.2 End of Life
+www/mod_musicindex||2018-04-16|Apache 2.2 End of Life
+www/mod_ntlm2||2018-04-16|Apache 2.2 End of Life
+www/mod_proxy_html||2018-04-16|Apache 2.2 End of Life
+www/mod_remoteip||2018-04-16|Apache 2.2 End of Life
+www/mod_spdy||2018-04-16|Apache 2.2 End of Life
+www/mod_uid||2018-04-16|Apache 2.2 End of Life
+www/mod_vhost_ldap||2018-04-16|Apache 2.2 End of Life
+www/mod_whatkilledus||2018-04-16|Apache 2.2 End of Life
+www/mod_xml2enc||2018-04-16|Apache 2.2 End of Life
+www/apache22||2018-04-16|Apache 2.2 End of Life
+www/mod_python33||2018-04-16|Apache 2.2 End of Life
+irc/xchat|irc/hexchat|2018-04-17|Has expired: Unmaintained upstream, use irc/hexchat instead
+irc/xchat-fish|irc/hexchat-fish|2018-04-17|Removed, master port irc/xchat expired
+irc/xchat-mircryption||2018-04-17|Removed, master port irc/xchat expired
+irc/xchat-ruby||2018-04-17|Removed, master port irc/xchat expired
+devel/subversion18|devel/subversion|2018-04-19|Has expired: EoL, use devel/subversion or devel/subversion19

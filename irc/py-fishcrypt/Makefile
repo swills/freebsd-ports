@@ -1,15 +1,15 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/irc/py-fishcrypt/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/irc/py-fishcrypt/Makefile 467655 2018-04-17 20:35:43Z rene $
 
 PORTNAME=	fishcrypt
 DISTVERSION=	5.31
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	irc security
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DIST_SUBDIR=	python
 
 MAINTAINER=	nemysis@FreeBSD.org
-COMMENT=	FiSH/Mircryption-compatible encryption for XChat/HexChat
+COMMENT=	FiSH/Mircryption-compatible encryption for HexChat
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycrypto>=0:security/py-pycrypto@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pysocks>=0:net/py-pysocks@${FLAVOR}
@@ -31,15 +31,13 @@ PORTDOCS=	README.md
 PLIST_FILES=	%%DATADIR%%/fishcrypt.py \
                 %%DATADIR%%/pyBlowfish.py
 
-OPTIONS_DEFINE=	DOCS HEXCHAT XCHAT
+OPTIONS_DEFINE=	DOCS HEXCHAT
 
 HEXCHAT_DESC=		FiSH encryption for HexChat
-XCHAT_DESC=		FiSH encryption for XChat
 
 OPTIONS_SUB=	yes
 
 HEXCHAT_RUN_DEPENDS=	hexchat:irc/hexchat
-XCHAT_RUN_DEPENDS=	xchat:irc/xchat
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}

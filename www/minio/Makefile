@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/minio/Makefile 465252 2018-03-22 00:14:04Z swills $
+# $FreeBSD: head/www/minio/Makefile 467787 2018-04-19 16:57:41Z swills $
 
 PORTNAME=	minio
 PORTVERSION=	${GH_TAGNAME:S/RELEASE.//:S/Z//:S/T/-/:S/-/./g}
@@ -9,14 +9,14 @@ COMMENT=	Amazon S3 compatible object storage server
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	go>=1.7:lang/go
+BUILD_DEPENDS=	go>=1.9.4:lang/go
 
 USES=		compiler
 
 USE_GITHUB=	yes
-GH_TAGNAME=	RELEASE.2018-03-19T19-22-06Z
+GH_TAGNAME=	RELEASE.2018-04-04T05-20-54Z
 GH_SUBDIR=	src/github.com/${PORTNAME}/${PORTNAME}
-COMMIT_ID=	a4d2e2b4283b228c34ca2fe0aa007d792a726c3a
+COMMIT_ID=	85a57d20210eb867b1c023e024cc4391d5ac5685
 
 PLIST_FILES=	bin/minio
 

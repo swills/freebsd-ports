@@ -1,9 +1,9 @@
 # Created by: Jean-Yves Lefort <jylefort@FreeBSD.org>
-# $FreeBSD: head/math/cgal/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/math/cgal/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	cgal
 PORTVERSION=	4.10.1
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	math
 MASTER_SITES=	https://github.com/${PORTNAME:tu}/${PORTNAME}/releases/download/releases/${DISTNAME}/
 DISTNAME=	${PORTNAME:tu}-${PORTVERSION}

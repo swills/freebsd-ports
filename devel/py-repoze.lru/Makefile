@@ -1,5 +1,5 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/devel/py-repoze.lru/Makefile 456935 2017-12-21 17:42:12Z sunpoet $
+# $FreeBSD: head/devel/py-repoze.lru/Makefile 467643 2018-04-17 19:16:42Z sunpoet $
 
 PORTNAME=	repoze.lru
 PORTVERSION=	0.7
@@ -7,11 +7,14 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Tiny LRU cache implementation and decorator
+
+LICENSE=	BSD4CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 NO_ARCH=	yes
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	autoplist concurrent distutils
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Graham Todd <gtodd@bellanet.org>
-# $FreeBSD: head/textproc/py-markdown/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-markdown/Makefile 467453 2018-04-16 05:23:39Z koobs $
 
 PORTNAME=	markdown
-PORTVERSION=	2.6.8
+PORTVERSION=	2.6.11
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

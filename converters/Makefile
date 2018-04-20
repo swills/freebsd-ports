@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/Makefile 466305 2018-04-03 09:49:53Z sunpoet $
+# $FreeBSD: head/converters/Makefile 467345 2018-04-14 23:58:18Z sunpoet $
 #
 
     COMMENT = Character code converters
@@ -158,6 +158,7 @@
     SUBDIR += py-better-bencode
     SUBDIR += py-bsdconv
     SUBDIR += py-iconv
+    SUBDIR += py-pint
     SUBDIR += py-rencode
     SUBDIR += py-unidecode
     SUBDIR += py-webencodings

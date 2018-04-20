@@ -1,8 +1,8 @@
 # Created by: Nicola Vitale <nivit@email.it>
-# $FreeBSD: head/graphics/mapyrus/Makefile 400848 2015-11-05 12:36:25Z mat $
+# $FreeBSD: head/graphics/mapyrus/Makefile 467613 2018-04-17 16:02:58Z nivit $
 
 PORTNAME=	mapyrus
-PORTVERSION=	1.401
+PORTVERSION=	1.801
 PORTREVISION=	0
 CATEGORIES=	graphics print java
 MASTER_SITES=	SF
@@ -11,6 +11,7 @@ MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Software for creating plots of points, lines, etc
 
 LICENSE=	LGPL21
+LICENSE_FILE=	${WRKSRC}/userdoc/COPYING
 
 DATADIR=	${JAVASHAREDIR}/${PORTNAME}
 

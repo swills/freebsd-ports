@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm40/Makefile 466018 2018-03-31 03:28:42Z tobik $
+# $FreeBSD: head/devel/llvm40/Makefile 467737 2018-04-18 21:06:33Z brooks $
 
 PORTNAME=	llvm
 DISTVERSION=	4.0.1
@@ -367,8 +367,8 @@ post-patch-CLANG-on:
 	    ${PATCH_WRKSRC}/tools/clang/tools/clang-format/git-clang-format
 
 post-patch-COMPILER_RT-on:
-	cd ${WRKSRC_compiler_rt} && patch < ${PATCHDIR}/compiler-rt-patch-canonical-syscalls
-	cd ${WRKSRC_compiler_rt} && patch < ${PATCHDIR}/compiler-rt-patch-ino64
+	cd ${WRKSRC_compiler_rt} && patch < ${PATCHDIR}/compiler-rt/patch-lib_sanitizer__common_sanitizer__linux.cc
+	cd ${WRKSRC_compiler_rt} && patch < ${PATCHDIR}/compiler-rt/patch-lib_sanitizer__common_sanitizer__platfrom__limit__posix.h
 
 post-build-COMPILER_RT-on:
 	${MKDIR} ${WRKDIR}/compiler-rt-build

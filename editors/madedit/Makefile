@@ -1,9 +1,9 @@
 # Created by: Xin LI <delphij@FreeBSD.org>
-# $FreeBSD: head/editors/madedit/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/editors/madedit/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	madedit
 PORTVERSION=	0.2.9
-PORTREVISION=	18
+PORTREVISION=	19
 CATEGORIES=	editors
 MASTER_SITES=	SF/${PORTNAME}/MadEdit/MadEdit-${PORTVERSION}
 

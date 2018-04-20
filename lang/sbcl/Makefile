@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/sbcl/Makefile 466069 2018-03-31 17:49:22Z krion $
+# $FreeBSD: head/lang/sbcl/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 # All *-sbcl ports and any other port [1] with SBCL fasl files must get a
 # PORTREVISION bump when lang/sbcl is updated.  The compiled fasl files are
@@ -8,6 +8,7 @@
 
 PORTNAME=	sbcl
 DISTVERSION=	1.4.6
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-source
 PORTEPOCH=	1
 CATEGORIES=	lang lisp
@@ -52,7 +53,7 @@ MAKE_SH_ARGS?=	--prefix="${PREFIX}" \
 MAKE_SH_ARGS+=	--dynamic-space-size=${DYNAMIC_SPACE_SIZE}
 .endif
 
-SUB_FILES=	sbclrc
+SUB_FILES=	pkg-message sbclrc
 
 # All options explained into file: ${WRKSRC}/base-target-features.lisp-expr
 OPTIONS_DEFINE=	DOCS QSHOW RENAME SAFEPOINT THREADS UNICODE XREF ZLIB

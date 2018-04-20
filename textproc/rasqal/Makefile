@@ -1,8 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/rasqal/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/textproc/rasqal/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	rasqal
 PORTVERSION=	0.9.33
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.librdf.org/source/ \
 		SF/librdf/${PORTNAME}/${PORTVERSION}

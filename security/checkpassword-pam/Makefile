@@ -1,8 +1,9 @@
 # Created by: Clement Laforet <sheepkiller@cultdeadsheep.org>
-# $FreeBSD: head/security/checkpassword-pam/Makefile 421853 2016-09-11 17:54:21Z amdmi3 $
+# $FreeBSD: head/security/checkpassword-pam/Makefile 467760 2018-04-19 10:00:56Z garga $
 
 PORTNAME=	checkpassword-pam
 PORTVERSION=	0.99
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	SF/checkpasswd-pam/checkpasswd-pam/${PORTVERSION}
 
@@ -16,5 +17,8 @@ GNU_CONFIGURE=	yes
 
 PLIST_FILES=	bin/checkpassword-pam \
 		man/man8/checkpassword-pam.8.gz
+
+post-install:
+	${CHMOD} u+s ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 
 .include <bsd.port.mk>

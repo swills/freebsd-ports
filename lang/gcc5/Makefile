@@ -1,9 +1,9 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc5/Makefile 466045 2018-03-31 12:11:36Z linimon $
+# $FreeBSD: head/lang/gcc5/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	gcc
 PORTVERSION=	5.5.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang
 MASTER_SITES=	GCC/releases/gcc-${DISTVERSION}
 PKGNAMESUFFIX=	${SUFFIX}

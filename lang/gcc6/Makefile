@@ -1,9 +1,9 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc6/Makefile 466827 2018-04-08 19:05:36Z danilo $
+# $FreeBSD: head/lang/gcc6/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	gcc
 PORTVERSION=	6.4.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	lang java
 MASTER_SITES=	GCC/releases/gcc-${DISTVERSION}
 PKGNAMESUFFIX=	${SUFFIX}

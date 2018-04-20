@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/security/py-signedjson/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-signedjson/Makefile 467537 2018-04-16 21:33:18Z feld $
 
 PORTNAME=	signedjson
 PORTVERSION=	1.0.0
@@ -8,7 +8,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	security devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	brendan+freebsd@bbqsrc.net
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Sign JSON with Ed25519 signatures
 
 LICENSE=	APACHE20

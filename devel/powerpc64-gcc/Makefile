@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/powerpc64-gcc/Makefile 466699 2018-04-07 00:26:46Z jhb $
+# $FreeBSD: head/devel/powerpc64-gcc/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	gcc
 PORTVERSION=	6.3.0
-PORTREVISION=	3
+PORTREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	GCC/releases/gcc-${DISTVERSION}
 PKGNAMEPREFIX?=	powerpc64-

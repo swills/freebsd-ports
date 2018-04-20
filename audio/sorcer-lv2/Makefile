@@ -1,9 +1,9 @@
-# $FreeBSD: head/audio/sorcer-lv2/Makefile 465778 2018-03-28 03:41:40Z linimon $
+# $FreeBSD: head/audio/sorcer-lv2/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	Sorcer
 DISTVERSIONPREFIX=	release-
 DISTVERSION=	1.1.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 

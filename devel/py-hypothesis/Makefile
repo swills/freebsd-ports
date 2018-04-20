@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/devel/py-hypothesis/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-hypothesis/Makefile 467640 2018-04-17 19:16:27Z sunpoet $
 
 PORTNAME=	hypothesis
 PORTVERSION=	1.18.1
@@ -7,7 +7,7 @@ CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	brendan+freebsd@bbqsrc.net
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Library for property based testing
 
 LICENSE=	MPL20

@@ -1,9 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/ardour/Makefile 461552 2018-02-12 05:20:29Z danfe $
+# $FreeBSD: head/audio/ardour/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	ardour
 PORTVERSION=	2.8.16
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	audio
 MASTER_SITES=	http://freebsd.nsu.ru/distfiles/
 

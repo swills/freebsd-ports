@@ -1,9 +1,9 @@
 # Created by: Tassilo Philipp <tphilipp@potion-studios.com>
-# $FreeBSD: head/devel/psptoolchain-gcc-stage1/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/psptoolchain-gcc-stage1/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=		gcc
 PORTVERSION=		4.6.2
-PORTREVISION?=		4
+PORTREVISION?=		5
 CATEGORIES=		devel
 MASTER_SITES=		GCC/releases/${DISTNAME}
 PKGNAMEPREFIX=		psptoolchain-

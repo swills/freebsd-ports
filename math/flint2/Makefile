@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/flint2/Makefile 465948 2018-03-30 06:40:34Z yuri $
+# $FreeBSD: head/math/flint2/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	flint2
 DISTVERSION=	g20180323
+PORTREVISION=	1
 CATEGORIES=	math
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

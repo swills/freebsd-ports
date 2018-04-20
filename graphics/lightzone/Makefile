@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/lightzone/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/lightzone/Makefile 467340 2018-04-14 18:45:17Z yuri $
 
 PORTNAME=	lightzone
-PORTVERSION=	4.1.7
-PORTREVISION=	4
+DISTVERSION=	4.1.8-3
+DISTVERSIONSUFFIX=	-g36e87773
 CATEGORIES=	graphics java
 DIST_SUBDIR=	${PORTNAME}
 
@@ -19,6 +19,7 @@ BUILD_DEPENDS=	jhindexer:java/javahelp \
 		tidy:www/tidy-lib \
 		autoconf:devel/autoconf
 LIB_DEPENDS=	liblcms2.so:graphics/lcms2 \
+		libomp.so:devel/openmp \
 		libtiff.so:graphics/tiff
 RUN_DEPENDS=	jhindexer:java/javahelp
 

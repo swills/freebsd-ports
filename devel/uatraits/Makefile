@@ -1,9 +1,9 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/devel/uatraits/Makefile 461885 2018-02-15 12:34:49Z mat $
+# $FreeBSD: head/devel/uatraits/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	uatraits
 PORTVERSION=	20130430
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	devel www
 MASTER_SITES=	http://people.freebsd.org/~demon/
 
@@ -25,5 +25,9 @@ CONFIGURE_ARGS=	--with-boost-prefix=${LOCALBASE} \
 CONFIGURE_ENV=	crypto_CFLAGS="-I${OPENSSLINC}" \
 		crypto_LIBS="-L${OPENSSLLIB} -lcrypto"
 CPPFLAGS+=	-I${LOCALBASE}/include
+
+post-patch:
+	@${REINPLACE_CMD} -e 's/\[boost_python]/[${PY_BOOST_LIB}]/' \
+		${WRKSRC}/config/ax_boost_python.m4
 
 .include <bsd.port.mk>

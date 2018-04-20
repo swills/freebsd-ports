@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 466811 2018-04-08 17:35:41Z tcberner $
+# $FreeBSD: head/audio/Makefile 467663 2018-04-17 23:27:21Z jhale $
 #
 
     COMMENT = Audio tools
@@ -412,6 +412,7 @@
     SUBDIR += libkcompactdisc
     SUBDIR += libkcompactdisc-kde4
     SUBDIR += liblastfm
+    SUBDIR += liblastfm-qt5
     SUBDIR += liblo
     SUBDIR += liblscp
     SUBDIR += libltc

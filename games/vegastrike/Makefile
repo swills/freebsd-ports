@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/vegastrike/Makefile 461885 2018-02-15 12:34:49Z mat $
+# $FreeBSD: head/games/vegastrike/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	vegastrike
 PORTVERSION=	0.5.1.r1
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION:R}/
 DISTNAME=	${PORTNAME}-src-${PORTVERSION}
@@ -54,6 +54,8 @@ BROKEN_aarch64=		Fails to compile: POSH cannot determine target CPU
 post-patch:
 	@${REINPLACE_CMD} -E 's,/usr/(local|X11R6),${LOCALBASE},' \
 		${WRKSRC}/configure
+	@${REINPLACE_CMD} -e 's/-lboost_python/-l${PY_BOOST_LIB}/' \
+		${WRKSRC}/Makefile.in
 
 do-install:
 	${INSTALL_PROGRAM} ${BIN_FILES:S|bin|${WRKSRC}|} \

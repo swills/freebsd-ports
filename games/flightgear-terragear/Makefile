@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/flightgear-terragear/Makefile 466542 2018-04-05 08:50:40Z tz $
+# $FreeBSD: head/games/flightgear-terragear/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	flightgear-terragear
 PORTVERSION=	20171007
+PORTREVISION=	2
 CATEGORIES=	games
 
 MAINTAINER=	mike.d.ft402@gmail.com

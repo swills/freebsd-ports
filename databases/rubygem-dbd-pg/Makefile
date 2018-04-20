@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/rubygem-dbd-pg/Makefile 464757 2018-03-17 06:09:25Z dinoex $
+# $FreeBSD: head/databases/rubygem-dbd-pg/Makefile 467367 2018-04-15 06:41:42Z dinoex $
 
 PORTNAME=	dbd-pg
 PORTVERSION=	0.3.9
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

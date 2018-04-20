@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-im/licq-jabber/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/net-im/licq-jabber/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	jabber
 PORTVERSION=	1.8.2
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	net-im
 
 MAINTAINER=	dinoex@FreeBSD.org

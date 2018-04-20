@@ -1,8 +1,8 @@
 # Created by: Uffe Jakobsen <uffe@uffe.org>
-# $FreeBSD: head/devel/libsigrokdecode/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/libsigrokdecode/Makefile 467408 2018-04-15 19:45:00Z bsam $
 
 PORTNAME=	libsigrokdecode
-PORTVERSION=	0.5.0
+PORTVERSION=	0.5.1
 CATEGORIES=	devel
 MASTER_SITES=	http://sigrok.org/download/source/libsigrokdecode/
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/py-cvxopt/Makefile 465560 2018-03-26 07:18:44Z yuri $
+# $FreeBSD: head/math/py-cvxopt/Makefile 467689 2018-04-18 08:18:17Z yuri $
 
 PORTNAME=	cvxopt
-DISTVERSION=	1.1.9
+DISTVERSION=	1.2.0
 CATEGORIES=	math python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -23,8 +23,5 @@ CFLAGS+=	-I${LOCALBASE}/include/suitesparse
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/cvxopt/*.so
-	# workaround: empty directory is installed: https://github.com/cvxopt/cvxopt/issues/111
-	@${RMDIR} ${STAGEDIR}${PREFIX}/cvxopt
-	@${REINPLACE_CMD} -e 's|${PREFIX}/cvxopt||' ${_PYTHONPKGLIST}
 
 .include <bsd.port.mk>

@@ -1,9 +1,8 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/benchmarks/wrk/Makefile 457638 2017-12-30 21:15:25Z krion $
+# $FreeBSD: head/benchmarks/wrk/Makefile 467807 2018-04-20 00:44:52Z osa $
 
 PORTNAME=	wrk
-PORTVERSION=	4.0.2
-PORTREVISION=	1
+PORTVERSION=	4.1.0
 CATEGORIES=	benchmarks www
 
 MAINTAINER=	osa@FreeBSD.org
@@ -18,7 +17,7 @@ GH_ACCOUNT=	wg
 
 USES=		gmake ssl
 LLD_UNSAFE=	yes
-CFLAGS+=	-std=c99 -D_DECLARE_C99_LDBL_MATH
+CFLAGS+=	-std=c99 -D_DECLARE_C99_LDBL_MATH -I/${LOCALBASE}/include/luajit-2.0
 MAKE_ENV+=	WITH_OPENSSL=${OPENSSLBASE} WITH_LUAJIT=${LOCALBASE} VER=${PORTVERSION}
 
 PLIST_FILES=	bin/wrk

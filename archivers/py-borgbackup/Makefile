@@ -1,8 +1,8 @@
 # Created by: José García Juanino <jjuanino@gmail.com>
-# $FreeBSD: head/archivers/py-borgbackup/Makefile 465729 2018-03-27 18:33:55Z feld $
+# $FreeBSD: head/archivers/py-borgbackup/Makefile 467564 2018-04-17 06:59:42Z joneum $
 
 PORTNAME=	borgbackup
-DISTVERSION=	1.1.4
+DISTVERSION=	1.1.5
 CATEGORIES=	archivers python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

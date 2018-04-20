@@ -1,9 +1,9 @@
 # Created by: db
-# $FreeBSD: head/irc/cwirc/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/irc/cwirc/Makefile 467654 2018-04-17 20:21:07Z rene $
 
 PORTNAME=	cwirc
 PORTVERSION=	2.0.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	irc comms hamradio
 MASTER_SITES=	http://myspace.voo.be/pcoupard/cwirc/download/ \
 		LOCAL/db
@@ -13,14 +13,20 @@ COMMENT=	X-Chat Morse plugin
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	xchat:irc/xchat
+BUILD_DEPENDS=	hexchat:irc/hexchat
+LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
+		libfreetype.so:print/freetype2
 
-USES=		pkgconfig
+USES=		gettext-runtime gnome pkgconfig
+USE_GNOME=	atk cairo gdkpixbuf2 glib20 gtk20 pango
 
 post-patch:
 	@${CP} ${FILESDIR}/Makefile ${WRKSRC}
 	@${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|' \
 		-e 's|%%STAGEDIR%%|${STAGEDIR}|' ${WRKSRC}/Makefile
+	@${REINPLACE_CMD} -e 's|xchat|hexchat|g' \
+		-e 's|XCHAT|HEXCHAT|g' ${WRKSRC}/plugin.c
+	@${RM} -r ${WRKSRC}/xchat
 
 post-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}

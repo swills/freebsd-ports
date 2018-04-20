@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@sunpoet.net>
-# $FreeBSD: head/science/netcdf/Makefile 464690 2018-03-16 15:20:30Z sunpoet $
+# $FreeBSD: head/science/netcdf/Makefile 467358 2018-04-14 23:59:26Z sunpoet $
 
 PORTNAME=	netcdf
 PORTVERSION=	4.6.1
@@ -22,6 +22,7 @@ CONFLICTS_INSTALL=	hdf-4.[0-9]* netcdf-3.[0-9]* netcdf3-3.[0-9]*
 
 OPTIONS_DEFINE=	DAP DOCS DOXYGEN SZIP
 OPTIONS_DEFAULT=DAP SZIP
+OPTIONS_SUB=	yes
 DAP_DESC=	Build DAP client and remote testing
 SZIP_DESC=	SZIP support (required if HDF5 was built with SZIP)
 

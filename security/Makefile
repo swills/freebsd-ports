@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 467269 2018-04-13 20:56:28Z jbeich $
+# $FreeBSD: head/security/Makefile 467344 2018-04-14 23:58:13Z sunpoet $
 #
 
     COMMENT = Security tools
@@ -585,6 +585,7 @@
     SUBDIR += p5-Crypt-OpenSSL-DSA
     SUBDIR += p5-Crypt-OpenSSL-EC
     SUBDIR += p5-Crypt-OpenSSL-ECDSA
+    SUBDIR += p5-Crypt-OpenSSL-Guess
     SUBDIR += p5-Crypt-OpenSSL-PKCS10
     SUBDIR += p5-Crypt-OpenSSL-RSA
     SUBDIR += p5-Crypt-OpenSSL-Random

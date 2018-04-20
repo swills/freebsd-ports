@@ -1,9 +1,8 @@
 # Created by: Luca Pizzamiglio <pizzamig@FreeBSD.org>
-# $FreeBSD: head/sysutils/pot/Makefile 465179 2018-03-21 14:11:31Z pizzamig $
+# $FreeBSD: head/sysutils/pot/Makefile 467756 2018-04-19 08:46:57Z pizzamig $
 
 PORTNAME=	pot
-PORTVERSION=	0.5.0
-PORTREVISION=	1
+PORTVERSION=	0.5.5
 CATEGORIES=	sysutils
 
 MAINTAINER=	pizzamig@FreeBSD.org
@@ -18,6 +17,13 @@ NO_ARCH=	yes
 NO_BUILD=	yes
 USE_RC_SUBR=	pot
 
+OPTIONS_DEFINE=	ZSH
+
+ZSH_DESC=	Zsh Autocompletion support
+
+OPTIONS_DEFAULT=	ZSH
+OPTIONS_SUB=	yes
+
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/bin/pot \
 	    ${STAGEDIR}${PREFIX}/bin/
@@ -31,5 +37,8 @@ do-install:
 		${STAGEDIR}${ETCDIR}
 	${INSTALL_DATA} ${WRKSRC}/etc/pot/flavours/dns.sh \
 		${STAGEDIR}${ETCDIR}/flavours
+
+do-install-ZSH-on:
+	( cd ${WRKSRC}/share/zsh && ${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/share/zsh)
 
 .include <bsd.port.mk>

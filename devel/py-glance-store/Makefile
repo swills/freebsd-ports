@@ -1,5 +1,5 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-glance-store/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-glance-store/Makefile 467388 2018-04-15 12:56:41Z dbaio $
 
 PORTNAME=	glance-store
 PORTVERSION=	0.20.0
@@ -11,6 +11,9 @@ DISTNAME=	glance_store-${PORTVERSION}
 
 MAINTAINER=	alexander.nusov@nfvexpress.com
 COMMENT=	OpenStack Image Service Store Library
+
+LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pbr>=1.6:devel/py-pbr@${FLAVOR}
 RUN_DEPENDS=	${PY_ENUM34} \
@@ -27,10 +30,9 @@ RUN_DEPENDS=	${PY_ENUM34} \
 		${PYTHON_PKGNAMEPREFIX}eventlet>=0:net/py-eventlet@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}debtcollector>=1.2.0:devel/py-debtcollector@${FLAVOR}
 
-NO_ARCH=	yes
-
 USES=		python shebangfix
 USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
 SHEBANG_FILES=	glance_store/tests/functional/hooks/post_test_hook.sh \
 		glance_store/tests/functional/hooks/gate_hook.sh
 

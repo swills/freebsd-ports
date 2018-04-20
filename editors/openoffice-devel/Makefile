@@ -1,9 +1,9 @@
 # Created by: Martin Blapp
-# $FreeBSD: head/editors/openoffice-devel/Makefile 465240 2018-03-21 21:24:43Z brnrd $
+# $FreeBSD: head/editors/openoffice-devel/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	apache-openoffice
 PORTVERSION=	${AOOVERSION1}.${AOOVERSION2}.${SVNREVISION}
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	4
 CATEGORIES=	editors java
 MASTER_SITES=	https://dist.apache.org/repos/dist/dev/openoffice/${AOOVERSION}-${AOORC}-r${SVNREVISION}/source/ \
@@ -50,6 +50,7 @@ LICENSE_PERMS_TWAIN=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 LICENSE_PERMS_W3C=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 ONLY_FOR_ARCHS=	amd64 i386 powerpc64
+BROKEN=		fails to build with boost 1.67, see bug 227553
 
 BUILD_DEPENDS=								\
 		p5-Archive-Zip>=0:archivers/p5-Archive-Zip		\

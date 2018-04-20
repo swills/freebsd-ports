@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/py-Pyomo/Makefile 466033 2018-03-31 08:23:34Z yuri $
+# $FreeBSD: head/math/py-Pyomo/Makefile 467368 2018-04-15 06:44:06Z yuri $
 
 PORTNAME=	Pyomo
-DISTVERSION=	5.4.3
+DISTVERSION=	5.5.0
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +13,7 @@ LICENSE=	BSD3CLAUSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}appdirs>0:devel/py-appdirs@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ply>0:devel/py-ply@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}PyUtilib>=5.6.2:devel/py-PyUtilib@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}PyUtilib>=5.6.3:devel/py-PyUtilib@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=1.4:devel/py-six@${FLAVOR}
 
 USES=		python

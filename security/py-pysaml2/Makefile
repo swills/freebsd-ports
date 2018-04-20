@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/security/py-pysaml2/Makefile 460770 2018-02-03 04:19:19Z swills $
+# $FreeBSD: head/security/py-pysaml2/Makefile 467537 2018-04-16 21:33:18Z feld $
 
 PORTNAME=	pysaml2
 PORTVERSION=	4.5.0
@@ -8,7 +8,7 @@ CATEGORIES=	security devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	brendan+freebsd@bbqsrc.net
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python implementation of SAML Version 2
 
 LICENSE=	APACHE20

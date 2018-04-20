@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/kf5-kwallet/Makefile 461936 2018-02-15 17:05:45Z tcberner $
+# $FreeBSD: head/sysutils/kf5-kwallet/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	kwallet
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	sysutils kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

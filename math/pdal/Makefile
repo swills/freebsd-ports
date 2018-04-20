@@ -1,9 +1,9 @@
 # Created by: bart <coder@tuxfamily.org>
-# $FreeBSD: head/math/pdal/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/pdal/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	pdal
 DISTVERSION=	1.6
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	math databases graphics
 
 MAINTAINER=	lbartoletti@tuxfamily.org

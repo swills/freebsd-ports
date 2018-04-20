@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/umbrello-kde4/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/devel/umbrello-kde4/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	umbrello
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	devel kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

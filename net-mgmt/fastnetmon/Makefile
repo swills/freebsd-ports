@@ -1,10 +1,10 @@
 # Created by: Babak Farrokhi <farrokhi@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/fastnetmon/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/net-mgmt/fastnetmon/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	fastnetmon
 PORTVERSION=	1.1.3
 DISTVERSIONPREFIX=	v
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	net-mgmt security
 
 MAINTAINER=	farrokhi@FreeBSD.org

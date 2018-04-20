@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/gcc-arm-embedded/Makefile 466827 2018-04-08 19:05:36Z danilo $
+# $FreeBSD: head/devel/gcc-arm-embedded/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	gcc-arm-embedded
 PORTVERSION=	7.2.20171218
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	https://developer.arm.com/-/media/Files/downloads/gnu-rm/7-2017q4/
 DISTNAME=	${ORIGINAL_PACKAGE_NAME}-src

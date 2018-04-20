@@ -1,26 +1,29 @@
 # Created by: Michael Schout <mschout@gkg.net>
-# $FreeBSD: head/security/pam_pwdfile/Makefile 367581 2014-09-07 17:26:08Z antoine $
+# $FreeBSD: head/security/pam_pwdfile/Makefile 467483 2018-04-16 12:52:34Z mat $
 
 PORTNAME=	pam_pwdfile
-PORTVERSION=	0.99
-PORTREVISION=	1
+PORTVERSION=	1.0
+DISTVERSIONPREFIX=	v
 CATEGORIES=	security
-MASTER_SITES=	http://cpbotha.net/files/pam_pwdfile/
 
-MAINTAINER=	mschout@gkg.net
+MAINTAINER=	lev@FreeBSD.org
 COMMENT=	Pam module for authenticating with flat passwd files
 
 USES=		uidfix
+USE_GITHUB=     yes
+GH_ACCOUNT=     tiwe-de
+GH_PROJECT=	libpam-pwdfile
+
 MAKEFILE=	${FILESDIR}/Makefile.bsd
 
 PLIST_FILES=	lib/pam_pwdfile.so
-PORTDOCS=	README INSTALL changelog
+PORTDOCS=	README INSTALL
 CFLAGS+=	-I${WRKSRC}
 
 OPTIONS_DEFINE=	DOCS
 
 post-patch:
-	${REINPLACE_CMD} -e 's|#include <features.h>||g' ${WRKSRC}/pam_pwdfile.c
+#	${REINPLACE_CMD} -e 's|#include <features.h>||g' ${WRKSRC}/pam_pwdfile.c
 	${CP} ${FILESDIR}/_pam_macros.h ${WRKSRC}
 
 post-install:

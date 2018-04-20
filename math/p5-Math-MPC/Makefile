@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/math/p5-Math-MPC/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/p5-Math-MPC/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	Math-MPC
 PORTVERSION=	1.08
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

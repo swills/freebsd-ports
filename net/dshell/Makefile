@@ -1,9 +1,8 @@
 # Created by: Nobutaka Mantani <nobutaka@FreeBSD.org>
-# $FreeBSD: head/net/dshell/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/dshell/Makefile 467391 2018-04-15 13:12:04Z nobutaka $
 
 PORTNAME=	dshell
-PORTVERSION=	3.0.20150220
-PORTREVISION=	1
+PORTVERSION=	3.0.20171116
 CATEGORIES=	net
 
 MAINTAINER=	nobutaka@FreeBSD.org
@@ -27,7 +26,7 @@ SHEBANG_FILES=	bin/*.py
 
 GH_ACCOUNT=	USArmyResearchLab
 GH_PROJECT=	Dshell
-GH_TAGNAME=	46e691c
+GH_TAGNAME=	5850adf
 
 OPTIONS_DEFINE=	DOCS
 

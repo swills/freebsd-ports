@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/phpunit/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/devel/phpunit/Makefile 467649 2018-04-17 19:21:56Z joneum $
 
 PORTNAME=	phpunit
 DISTVERSION=	5.7.27
@@ -7,7 +7,7 @@ MASTER_SITES=	https://phar.phpunit.de/
 EXTRACT_SUFX=	.phar
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Testing framework for unit tests
 
 LICENSE=	BSD3CLAUSE

@@ -1,8 +1,9 @@
 # Created by: Michael Reifenberger <mr@FreeBSD.org>
-# $FreeBSD: head/cad/kicad-devel/Makefile 465532 2018-03-25 17:45:00Z mr $
+# $FreeBSD: head/cad/kicad-devel/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	kicad
 DISTVERSION=	r${GIT_SRC_DATE}
+PORTREVISION=	1
 #PORTREVISION=	3
 CATEGORIES=	cad
 PKGNAMESUFFIX=	-devel

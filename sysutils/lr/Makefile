@@ -1,9 +1,9 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/sysutils/lr/Makefile 466855 2018-04-09 13:15:39Z tobik $
+# $FreeBSD: head/sysutils/lr/Makefile 467686 2018-04-18 07:44:00Z tobik $
 
 PORTNAME=	lr
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.3
+DISTVERSION=	1.4
 CATEGORIES=	sysutils
 
 MAINTAINER=	tobik@FreeBSD.org

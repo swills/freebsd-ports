@@ -1,9 +1,9 @@
 # Created by: Cristiano Rolim Pereira <cristianorolim@outlook.com>
-# $FreeBSD: head/devel/vera++/Makefile 462641 2018-02-22 19:53:16Z antoine $
+# $FreeBSD: head/devel/vera++/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	vera++
 PORTVERSION=	1.3.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	devel
 MASTER_SITES=	https://bitbucket.org/verateam/vera/downloads/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \

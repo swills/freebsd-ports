@@ -1,10 +1,11 @@
-# $FreeBSD: head/games/opendungeons/Makefile 462871 2018-02-24 22:35:18Z rene $
+# $FreeBSD: head/games/opendungeons/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	opendungeons
 PORTVERSION=	0.7.1
+PORTREVISION=	1
 CATEGORIES=	games
 
-MAINTAINER=	games@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Open source game inspired by Dungeon Keeper
 
 LICENSE=	CC-BY-3.0 CC-BY-SA-3.0 CC0-1.0 GPLv3 MIT OFL11

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 467320 2018-04-14 14:52:04Z yuri $
+# $FreeBSD: head/graphics/Makefile 467396 2018-04-15 15:45:12Z pi $
 #
 
     COMMENT = Graphics tools and libraries
@@ -661,6 +661,7 @@
     SUBDIR += openjpeg15
     SUBDIR += openjump
     SUBDIR += opennurbs
+    SUBDIR += openorienteering-mapper
     SUBDIR += openrm
     SUBDIR += openshadinglanguage
     SUBDIR += opensubdiv

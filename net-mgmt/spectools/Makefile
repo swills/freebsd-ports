@@ -1,5 +1,5 @@
 # Created by: Henrik Brix Andersen <henrik@brixandersen.dk>
-# $FreeBSD: head/net-mgmt/spectools/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/net-mgmt/spectools/Makefile 467469 2018-04-16 09:33:40Z amdmi3 $
 
 PORTNAME=	spectools
 PORTVERSION=	201108.r1
@@ -12,13 +12,11 @@ DISTNAME=	spectools-2011-08-R1
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tools for the Wi-Spy spectrum analyzers from MetaGeek LLC
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/GPL
 
-USES=		gmake ncurses pkgconfig
+USES=		gmake localbase:ldflags ncurses pkgconfig
 GNU_CONFIGURE=	yes
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 ALL_TARGET=	spectool_net spectool_raw
 
 PORTDOCS=	README
@@ -51,7 +49,7 @@ do-install-NCURSES-on:
 	${INSTALL_PROGRAM} ${WRKSRC}/spectool_curses ${STAGEDIR}/${PREFIX}/bin
 
 post-install-DOCS-on:
-	${MKDIR} ${STAGEDIR}/${DOCSDIR}
+	@${MKDIR} ${STAGEDIR}/${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S@^@${WRKSRC}/@} ${STAGEDIR}/${DOCSDIR}
 
 .include <bsd.port.mk>

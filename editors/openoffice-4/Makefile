@@ -1,9 +1,9 @@
 # Created by: Martin Blapp
-# $FreeBSD: head/editors/openoffice-4/Makefile 465240 2018-03-21 21:24:43Z brnrd $
+# $FreeBSD: head/editors/openoffice-4/Makefile 467736 2018-04-18 21:06:00Z truckman $
 
 PORTNAME=	apache-openoffice
 PORTVERSION=	${AOOVERSION}
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	editors java
 MASTER_SITES=	APACHE/openoffice/${PORTVERSION}/sources \
 		http://tools.openoffice.org/unowinreg_prebuild/680/:unoreg \

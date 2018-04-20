@@ -1,9 +1,9 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/lang/pure/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/lang/pure/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	pure
 PORTVERSION=	0.64
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	lang
 MASTER_SITES=	https://bitbucket.org/purelang/pure-lang/downloads/
 EXTRACT_ONLY=	${DISTNAME}.tar.gz

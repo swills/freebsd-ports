@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/ports-mgmt/py-pytoport/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/ports-mgmt/py-pytoport/Makefile 467537 2018-04-16 21:33:18Z feld $
 
 PORTNAME=	pytoport
 PORTVERSION=	0.4.1
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	ports-mgmt python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	brendan+freebsd@bbqsrc.net
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Generate FreeBSD ports from Python modules on PyPI
 
 LICENSE=	BSD2CLAUSE

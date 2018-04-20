@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 467209 2018-04-13 06:15:09Z mfechner $
+# $FreeBSD: head/textproc/Makefile 467820 2018-04-20 11:53:21Z garga $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -602,6 +602,7 @@
     SUBDIR += p5-HTML-SuperForm
     SUBDIR += p5-HTML-TagFilter
     SUBDIR += p5-HTML-Tidy
+    SUBDIR += p5-HTML-Tidy5
     SUBDIR += p5-HTML-Tiny
     SUBDIR += p5-HTML-Truncate
     SUBDIR += p5-Hailo
@@ -1445,6 +1446,7 @@
     SUBDIR += redland-bindings
     SUBDIR += refdb
     SUBDIR += reflex
+    SUBDIR += regex2dfa
     SUBDIR += replaceit
     SUBDIR += resume
     SUBDIR += resume-extensions
@@ -1579,6 +1581,7 @@
     SUBDIR += rubygem-reverse_markdown
     SUBDIR += rubygem-ri_cal
     SUBDIR += rubygem-rich
+    SUBDIR += rubygem-rly
     SUBDIR += rubygem-rmmseg-cpp
     SUBDIR += rubygem-ronn
     SUBDIR += rubygem-rouge

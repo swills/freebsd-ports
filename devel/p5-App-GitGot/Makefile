@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-App-GitGot/Makefile 465122 2018-03-20 22:35:22Z sunpoet $
+# $FreeBSD: head/devel/p5-App-GitGot/Makefile 467351 2018-04-14 23:58:51Z sunpoet $
 
 PORTNAME=	App-GitGot
-PORTVERSION=	1.335
+PORTVERSION=	1.336
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -12,6 +12,7 @@ COMMENT=	Tool to make it easier to manage multiple git repositories
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-App-Cmd>=0:devel/p5-App-Cmd \
 		p5-Capture-Tiny>=0:devel/p5-Capture-Tiny \

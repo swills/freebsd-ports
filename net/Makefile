@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 467209 2018-04-13 06:15:09Z mfechner $
+# $FreeBSD: head/net/Makefile 467826 2018-04-20 14:29:11Z garga $
 #
 
     COMMENT = Networking tools
@@ -1051,6 +1051,7 @@
     SUBDIR += py-ldaptor
     SUBDIR += py-libcloud
     SUBDIR += py-libdnet
+    SUBDIR += py-libfte
     SUBDIR += py-libnet
     SUBDIR += py-libstorj
     SUBDIR += py-magic-wormhole
@@ -1255,6 +1256,8 @@
     SUBDIR += rubygem-gitaly-proto083
     SUBDIR += rubygem-gitaly-proto084
     SUBDIR += rubygem-gitaly-proto088
+    SUBDIR += rubygem-gitaly-proto094
+    SUBDIR += rubygem-gitaly-proto095
     SUBDIR += rubygem-gitlab_omniauth-ldap
     SUBDIR += rubygem-gitlab_omniauth-ldap1
     SUBDIR += rubygem-grpc

@@ -1,11 +1,12 @@
 # Created by: Andy Pavlo
-# $FreeBSD: head/sysutils/condor/Makefile 466017 2018-03-31 00:37:44Z jwb $
+# $FreeBSD: head/sysutils/condor/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 # Note: Make sure there are no other versions of HTCondor installed during
 #       build.  The build system may pick up incompatible headers and libs.
 
 PORTNAME=	condor
 DISTVERSION=	8.4.12
+PORTREVISION=	1
 CATEGORIES=	sysutils net
 MASTER_SITES=	http://www.acadix.biz/Ports/distfiles/
 DISTNAME=	condor_src-${PORTVERSION}-all-all
@@ -41,6 +42,7 @@ CXXFLAGS+=	-I${LOCALBASE}/include -fPIC
 LDFLAGS+=	-Wl,-rpath=${_GCC_RUNTIME}:${LOCALBASE}/lib:/usr/lib:/lib -fPIC
 CMAKE_ARGS=	-DCMAKE_CXX_FLAGS:STRING=${CXXFLAGS} \
 		-DCMAKE_EXE_LINKER_FLAGS:STRING=${LDFLAGS} \
+		-DPYTHON_BOOST_LIB:STRING=${PY_BOOST_LIB} \
 		-DPYTHON_INCLUDE_DIR:PATH=${LOCALBASE}/include/${PYTHON_VERSION} \
 		-DPYTHON_LIBRARY:FILEPATH=${LOCALBASE}/lib/lib${PYTHON_VERSION}.so
 

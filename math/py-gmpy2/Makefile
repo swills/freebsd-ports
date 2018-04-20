@@ -1,9 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/math/py-gmpy2/Makefile 465933 2018-03-29 22:02:53Z yuri $
+# $FreeBSD: head/math/py-gmpy2/Makefile 467751 2018-04-19 07:08:45Z ale $
 
 PORTNAME=	gmpy2
 PORTVERSION=	2.0.8
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,9 +1,9 @@
 # Created by: demon@FreeBSD.org
-# $FreeBSD: head/graphics/gource/Makefile 459315 2018-01-18 04:11:02Z jbeich $
+# $FreeBSD: head/graphics/gource/Makefile 467711 2018-04-18 13:57:42Z jbeich $
 
 PORTNAME=	gource
 PORTVERSION=	0.47
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	https://github.com/acaudwell/Gource/releases/download/${PORTNAME}-${PORTVERSION}/
 

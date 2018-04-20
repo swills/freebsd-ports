@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@FreeBSD.org>
-# $FreeBSD: head/math/SCIP/Makefile 457249 2017-12-25 19:03:30Z yuri $
+# $FreeBSD: head/math/SCIP/Makefile 467371 2018-04-15 07:54:28Z yuri $
 
 PORTNAME=	SCIP
-DISTVERSION=	5.0.0
+DISTVERSION=	5.0.1
 CATEGORIES=	math science
 MASTER_SITES=	http://scip.zib.de/download/release/
 DISTNAME=	${PORTNAME:tl}-${DISTVERSION}
@@ -18,6 +18,8 @@ LICENSE_PERMS=	dist-mirror pkg-mirror auto-accept
 EXTRACT_DEPENDS=	gtar:archivers/gtar
 LIB_DEPENDS=	libgmp.so:math/gmp \
 		libsoplex.so:math/SoPlex
+
+CONFLICTS_BUILD=	Ipopt
 
 USES=		cmake:outsource readline tar:tgz
 EXTRACT_CMD=	gtar
