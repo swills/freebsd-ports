@@ -2,7 +2,7 @@
 # $FreeBSD: head/devel/gitlab-shell/Makefile 467328 2018-04-14 16:26:37Z mfechner $
 
 PORTNAME=	gitlab-shell
-PORTVERSION=	6.0.4
+PORTVERSION=	7.1.2
 CATEGORIES=	devel
 
 LICENSE=	MIT
@@ -16,10 +16,12 @@ BUILD_DEPENDS=	gem:devel/ruby-gems \
 USE_GITLAB=	yes
 GL_ACCOUNT=	gitlab-org
 # Find the commit hash here: https://gitlab.com/gitlab-org/gitlab-shell/tags
-GL_COMMIT=	6feee1ccc265c765181533bbc719f91c364de2b3
+GL_COMMIT=	3a83767f650f996ef37382a21d05d8ed99873aa1
 
 USERS=		git
 GROUPS=		git
+
+INSTALL_TARGET=install-strip
 
 post-patch:
 	${MV} ${WRKSRC}/config.yml.example ${WRKSRC}/config.yml.sample
