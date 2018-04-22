@@ -5,10 +5,10 @@ PORTNAME=	gitlab-shell
 PORTVERSION=	7.1.2
 CATEGORIES=	devel
 
-LICENSE=	MIT
-
 MAINTAINER=	idefix@fechner.net
 COMMENT=	GitLab Shell handles git commands for GitLab
+
+LICENSE=	MIT
 
 BUILD_DEPENDS=	gem:devel/ruby-gems \
 		go>=1.5.3:lang/go
