@@ -1,7 +1,7 @@
 # $FreeBSD: head/devel/gitaly/Makefile 467327 2018-04-14 16:24:38Z mfechner $
 
 PORTNAME=	gitaly
-DISTVERSION=	0.91.0
+DISTVERSION=	0.95.0
 PORTREVISION=	1
 CATEGORIES=	devel
 
@@ -16,7 +16,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 		rubygem-github-linguist53>=5.3.3:textproc/rubygem-github-linguist53 \
 		rubygem-bundler>0:sysutils/rubygem-bundler \
 		rubygem-gitlab-markup>=1.6.2:textproc/rubygem-gitlab-markup \
-		rubygem-gitaly-proto088>=0.88.0:net/rubygem-gitaly-proto088 \
+		rubygem-gitaly-proto095>=0.95.0:net/rubygem-gitaly-proto095 \
 		rubygem-activesupport50>=5.0.2:devel/rubygem-activesupport50 \
 		rubygem-rdoc>=4.2:devel/rubygem-rdoc \
 		rubygem-gollum-lib-gitlab>=4.2.0:www/rubygem-gollum-lib-gitlab \
@@ -40,7 +40,7 @@ USE_RUBY=	yes
 USE_GITLAB=	yes
 GL_ACCOUNT=	gitlab-org
 # Find this here: https://gitlab.com/gitlab-org/gitaly/tags
-GL_COMMIT=	89298fe8b80b73a34352023555fe061866aff3ad
+GL_COMMIT=	35e35787667c87232bb956945525932d921f978e
 
 post-patch:
 	${MV} ${WRKSRC}/config.toml.example ${WRKSRC}/config.toml.sample
