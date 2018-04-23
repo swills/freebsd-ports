@@ -1,7 +1,7 @@
 # $FreeBSD: head/www/gitlab-pages/Makefile 467330 2018-04-14 16:30:18Z mfechner $
 
 PORTNAME=	gitlab-pages
-PORTVERSION=	0.7.1
+PORTVERSION=	0.8.0
 CATEGORIES=	www
 
 MAINTAINER=	swills@FreeBSD.org
@@ -15,7 +15,7 @@ BUILD_DEPENDS=	go:lang/go
 USE_GITLAB=	yes
 GL_ACCOUNT=	gitlab-org
 # Find the here: https://gitlab.com/gitlab-org/gitlab-pages/tags
-GL_COMMIT=	4e11c8392935e1f4dbd96066f3cbb8d657afd874
+GL_COMMIT=	54058312eef037d76d9ae9217cec12cd67cf9f92
 
 PLIST_FILES=	bin/gitlab-pages
 
