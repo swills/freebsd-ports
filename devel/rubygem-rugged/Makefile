@@ -2,7 +2,7 @@
 # $FreeBSD: head/devel/rubygem-rugged/Makefile 455062 2017-11-28 16:39:23Z tz $
 
 PORTNAME=	rugged
-PORTVERSION=	0.26.0
+PORTVERSION=	0.27.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
