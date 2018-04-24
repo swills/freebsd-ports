@@ -1,8 +1,7 @@
 # $FreeBSD: head/devel/gitaly/Makefile 467327 2018-04-14 16:24:38Z mfechner $
 
 PORTNAME=	gitaly
-DISTVERSION=	0.95.0
-PORTREVISION=	1
+DISTVERSION=	0.96.1
 CATEGORIES=	devel
 
 MAINTAINER=	idefix@fechner.net
@@ -13,17 +12,18 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 # define dependencies that are required for build and run under MY_DEPENDS
 MY_DEPENDS=	git>=2.16.2:devel/git \
+		rubygem-rugged>=0.27.0:devel/rubygem-rugged \
 		rubygem-github-linguist53>=5.3.3:textproc/rubygem-github-linguist53 \
 		rubygem-bundler>0:sysutils/rubygem-bundler \
 		rubygem-gitlab-markup>=1.6.2:textproc/rubygem-gitlab-markup \
 		rubygem-gitaly-proto095>=0.95.0:net/rubygem-gitaly-proto095 \
 		rubygem-activesupport50>=5.0.2:devel/rubygem-activesupport50 \
 		rubygem-rdoc>=4.2:devel/rubygem-rdoc \
-		rubygem-gollum-lib-gitlab>=4.2.0:www/rubygem-gollum-lib-gitlab \
+		rubygem-gollum-lib-gitlab>=4.2:www/rubygem-gollum-lib-gitlab \
 		rubygem-gollum-rugged_adapter>=0.4.4:www/rubygem-gollum-rugged_adapter \
 		rubygem-grpc>=1.10.0:net/rubygem-grpc \
 		rubygem-sentry-raven>=2.7.2:devel/rubygem-sentry-raven \
-		rubygem-licensee8>=8.7:devel/rubygem-licensee8 \
+		rubygem-licensee8>=8.7.0:devel/rubygem-licensee8 \
 		rubygem-google-protobuf351>=3.5.1:devel/rubygem-google-protobuf351
 
 BUILD_DEPENDS=	go>=1.8:lang/go \
@@ -40,7 +40,7 @@ USE_RUBY=	yes
 USE_GITLAB=	yes
 GL_ACCOUNT=	gitlab-org
 # Find this here: https://gitlab.com/gitlab-org/gitaly/tags
-GL_COMMIT=	35e35787667c87232bb956945525932d921f978e
+GL_COMMIT=	d779c028099f79360209b92473c201e07721b885
 
 post-patch:
 	${MV} ${WRKSRC}/config.toml.example ${WRKSRC}/config.toml.sample
