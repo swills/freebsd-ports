@@ -2,7 +2,7 @@
 # $FreeBSD: head/devel/rubygem-licensee8/Makefile 458650 2018-01-10 15:38:07Z swills $
 
 PORTNAME=	licensee
-PORTVERSION=	8.7.0
+PORTVERSION=	8.9.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	8
