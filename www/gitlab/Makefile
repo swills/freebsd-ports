@@ -2,7 +2,7 @@
 # $FreeBSD: head/www/gitlab/Makefile 467332 2018-04-14 16:33:28Z mfechner $
 
 PORTNAME=	gitlab
-PORTVERSION=	10.7.0
+PORTVERSION=	10.7.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www devel
 
@@ -65,7 +65,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-akismet>=2.0:devel/rubygem-akismet \
 	rubygem-devise-two-factor>=3.0.0:security/rubygem-devise-two-factor \
 	rubygem-rqrcode-rails3>=0.1.7:www/rubygem-rqrcode-rails3 \
-	rubygem-attr_encrypted30>=3.0.0:security/rubygem-attr_encrypted30 \
+	rubygem-attr_encrypted>=3.1.0:security/rubygem-attr_encrypted \
 	rubygem-u2f0>=0.2.1:net/rubygem-u2f0 \
 	rubygem-validates_hostname>=1.0.6:dns/rubygem-validates_hostname \
 	rubygem-browser>=2.2:www/rubygem-browser \
@@ -191,7 +191,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-rbnacl4<=4.0.2:security/rubygem-rbnacl4 \
 	rubygem-rbnacl-libsodium>=0:security/rubygem-rbnacl-libsodium \
 	rubygem-bcrypt_pbkdf>=1.0:security/rubygem-bcrypt_pbkdf \
-	rubygem-gitaly-proto094>=0.94.0:net/rubygem-gitaly-proto094 \
+	rubygem-gitaly-proto096>=0.96.0:net/rubygem-gitaly-proto096 \
 	rubygem-grpc>=1.10.0:net/rubygem-grpc \
 	rubygem-gitaly>=0.8.0:net/rubygem-gitaly \
 	rubygem-google-protobuf351>=3.5.1:devel/rubygem-google-protobuf351 \
@@ -242,6 +242,7 @@ do-install:
 	${FIND} ${WRKSRC} -name '*.gitkeep' -delete
 	${FIND} ${WRKSRC} -name '*.gitignore' -delete
 	${FIND} ${WRKSRC} -name "Gemfile.lock" -delete
+	${FIND} ${WRKSRC} -name "Gemfile.rail5.lock" -delete
 	${MV} ${WRKSRC}/config/gitlab.yml.example ${WRKSRC}/config/gitlab.yml.sample
 	${MV} ${WRKSRC}/config/unicorn.rb.example ${WRKSRC}/config/unicorn.rb.sample
 	${MV} ${WRKSRC}/config/resque.yml.example ${WRKSRC}/config/resque.yml.sample
