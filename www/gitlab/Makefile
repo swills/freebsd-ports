@@ -27,7 +27,7 @@ BUILD_DEPENDS=	gem:devel/ruby-gems
 RUN_DEPENDS=	git>=2.16.2:devel/git \
 	gitlab-shell>=7.1.2:devel/gitlab-shell \
 	gitlab-workhorse>=4.1.0:www/gitlab-workhorse \
-	gitaly>=0.95.0:devel/gitaly \
+	gitaly>=0.96.1:devel/gitaly \
 	gitlab-pages>=0.8.0:www/gitlab-pages \
 	redis>=2.8.23:databases/redis \
 	npm>=4.3.0:www/npm \
@@ -201,8 +201,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-flipper-active_support_cache_store013>=0.13.0:devel/rubygem-flipper-active_support_cache_store013 \
 	rubygem-lograge>=0.5:www/rubygem-lograge \
 	rubygem-grape_logging>=1.7:devel/rubygem-grape_logging \
-	rubygem-asset_sync220>=2.2.0:net/rubygem-asset_sync220 \
-	rubygem-rinku>=1.7.3:www/rubygem-rinku
+	rubygem-asset_sync220>=2.2.0:net/rubygem-asset_sync220
 
 PGSQL_RUN_DEPENDS=	rubygem-pg018>=0.18.2:databases/rubygem-pg018 \
 	rubygem-peek-pg>=1.3.0:databases/rubygem-peek-pg
