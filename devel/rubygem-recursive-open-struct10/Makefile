@@ -1,10 +1,10 @@
-# $FreeBSD: head/devel/rubygem-recursive-open-struct100/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD$
 
 PORTNAME=	recursive-open-struct
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.5
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
-PKGNAMESUFFIX=	100
+PKGNAMESUFFIX=	10
 
 MAINTAINER=	idefix@fechner.net
 COMMENT=	Allows nested hashes to be treated in a recursive fashion
@@ -12,7 +12,7 @@ COMMENT=	Allows nested hashes to be treated in a recursive fashion
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-PORTSCOUT=	limit:^1\.0\.0
+PORTSCOUT=	limit:^1\.0\.
 
 NO_ARCH=	yes
 USES=		gem
