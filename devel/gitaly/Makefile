@@ -48,7 +48,8 @@ post-patch:
 do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}
 	${MKDIR} ${STAGEDIR}${DATADIR}/bin
-	$(RM) -f ${WRKSRC}/ruby/Gemfile.orig
+	${FIND} ${WRKSRC} -name '*.orig' -delete
+	${FIND} ${WRKSRC} -name "Gemfile.lock" -delete
 	(cd ${WRKSRC}/_build/bin/ && ${COPYTREE_SHARE} .  ${STAGEDIR}${DATADIR}/bin && \
 	cd ${WRKSRC} && ${COPYTREE_SHARE} config.toml.sample  ${STAGEDIR}${DATADIR}) && \
 	cd ${WRKSRC}/ruby && ${COPYTREE_SHARE} . ${STAGEDIR}${DATADIR}/ruby
