@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/etcd31/Makefile 466357 2018-04-03 15:07:33Z olgeni $
+# $FreeBSD: head/devel/etcd31/Makefile 468094 2018-04-23 14:59:53Z olgeni $
 
 PORTNAME=	etcd
 PORTVERSION=	3.1.13
@@ -13,7 +13,7 @@ COMMENT=	Highly-available key value store and service discovery
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-CONFLICTS_INSTALL=coreos-etcdctl-0.* coreos-etcd-* coreos-etcd32-*
+CONFLICTS_INSTALL=coreos-etcdctl-0.* coreos-etcd-* coreos-etcd32-* coreos-etcd33-*
 
 USES=		go
 GO_PKGNAME=	github.com/coreos/etcd

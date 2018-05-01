@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 467223 2018-04-13 09:29:09Z netchild $
+# $FreeBSD: head/misc/Makefile 468499 2018-04-27 21:47:35Z tcberner $
 #
 
     COMMENT = Miscellaneous utilities
@@ -236,8 +236,10 @@
     SUBDIR += kde4-l10n-ug
     SUBDIR += kde4-l10n-wa
     SUBDIR += kde4-xdg-env
+    SUBDIR += kdeedu
     SUBDIR += kdeedu-data
     SUBDIR += kdeedu-kde4
+    SUBDIR += kdeutils
     SUBDIR += kdeutils-kde4
     SUBDIR += kenny
     SUBDIR += kf5-purpose

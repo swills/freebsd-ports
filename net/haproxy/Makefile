@@ -1,8 +1,8 @@
 # Created by: Clement Laforet
-# $FreeBSD: head/net/haproxy/Makefile 459116 2018-01-15 21:12:58Z brnrd $
+# $FreeBSD: head/net/haproxy/Makefile 468729 2018-04-30 17:18:35Z demon $
 
 PORTNAME=	haproxy
-PORTVERSION=	1.7.10
+PORTVERSION=	1.7.11
 CATEGORIES=	net www
 MASTER_SITES=	http://www.haproxy.org/download/1.7/src/
 DISTFILES=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}

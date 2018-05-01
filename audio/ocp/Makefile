@@ -1,9 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/audio/ocp/Makefile 419919 2016-08-09 13:46:14Z ehaupt $
+# $FreeBSD: head/audio/ocp/Makefile 468096 2018-04-23 15:31:29Z ehaupt $
 
 PORTNAME=	ocp
 PORTVERSION=	0.1.21
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	audio
 MASTER_SITES=	SF/opencubicplayer/${DISTNAME} \

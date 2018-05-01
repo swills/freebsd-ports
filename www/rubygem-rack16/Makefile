@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-rack16/Makefile 463253 2018-02-28 15:53:50Z sunpoet $
+# $FreeBSD: head/www/rubygem-rack16/Makefile 468378 2018-04-26 18:52:25Z sunpoet $
 
 # XXX: If updating this port, please check compatibality with at least the following ports,
 # XXX: preferably, the full rubygem-* tree.  rack version requirements are specified with ~>
@@ -7,7 +7,7 @@
 # 	www/rubygem-actionpack4
 
 PORTNAME=	rack
-PORTVERSION=	1.6.9
+PORTVERSION=	1.6.10
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	16

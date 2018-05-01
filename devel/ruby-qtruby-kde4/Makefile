@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/ruby-qtruby-kde4/Makefile 462214 2018-02-18 09:55:10Z rakuco $
+# $FreeBSD: head/devel/ruby-qtruby-kde4/Makefile 468632 2018-04-29 16:19:44Z tcberner $
 
 PORTNAME=	qtruby
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel kde kde-kde4 ruby
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 

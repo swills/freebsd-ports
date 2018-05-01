@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 467663 2018-04-17 23:27:21Z jhale $
+# $FreeBSD: head/audio/Makefile 468495 2018-04-27 20:29:36Z tcberner $
 #
 
     COMMENT = Audio tools
@@ -515,6 +515,7 @@
     SUBDIR += minitunes
     SUBDIR += mixer.app
     SUBDIR += mixmos
+    SUBDIR += mixxx20
     SUBDIR += mixxx
     SUBDIR += mma
     SUBDIR += moc
@@ -645,6 +646,7 @@
     SUBDIR += picard
     SUBDIR += picard-plugins
     SUBDIR += pithos
+    SUBDIR += plasma5-plasma-pa
     SUBDIR += play
     SUBDIR += playgsf
     SUBDIR += playmidi

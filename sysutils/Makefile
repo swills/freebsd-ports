@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 467805 2018-04-19 20:52:41Z pizzamig $
+# $FreeBSD: head/sysutils/Makefile 468571 2018-04-28 19:42:11Z tcberner $
 #
 
     COMMENT = System utilities
@@ -538,9 +538,11 @@
     SUBDIR += k3b
     SUBDIR += k3b-kde4
     SUBDIR += k8temp
+    SUBDIR += kbackup
     SUBDIR += kcm-polkit-kde
     SUBDIR += kcron
     SUBDIR += kcron-kde4
+    SUBDIR += kdeadmin
     SUBDIR += kdeadmin-kde4
     SUBDIR += kdebugsettings
     SUBDIR += kdf
@@ -883,6 +885,17 @@
     SUBDIR += pick
     SUBDIR += pidof
     SUBDIR += pipemeter
+    SUBDIR += plasma5-discover
+    SUBDIR += plasma5-drkonqi
+    SUBDIR += plasma5-kde-cli-tools
+    SUBDIR += plasma5-kinfocenter
+    SUBDIR += plasma5-kmenuedit
+    SUBDIR += plasma5-ksysguard
+    SUBDIR += plasma5-libksysguard
+    SUBDIR += plasma5-polkit-kde-agent-1
+    SUBDIR += plasma5-powerdevil
+    SUBDIR += plasma5-systemsettings
+    SUBDIR += plasma5-user-manager
     SUBDIR += plconfig
     SUBDIR += pmt
     SUBDIR += policykit
@@ -1187,6 +1200,7 @@
     SUBDIR += swapd
     SUBDIR += swapexd
     SUBDIR += swapmon
+    SUBDIR += sweeper
     SUBDIR += sweeper-kde4
     SUBDIR += symlinks
     SUBDIR += symon
@@ -1404,6 +1418,7 @@
     SUBDIR += xstow
     SUBDIR += xsysstats
     SUBDIR += xvidcap
+    SUBDIR += yadm
     SUBDIR += yum
     SUBDIR += zap
     SUBDIR += zbackup

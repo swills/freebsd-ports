@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/x11/leechcraft/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/x11/leechcraft/Makefile 468632 2018-04-29 16:19:44Z tcberner $
 
 PORTNAME=	leechcraft
 PORTVERSION=	0.6.70
-PORTREVISION=	30
+PORTREVISION=	32
 CATEGORIES=	x11
 MASTER_SITES=	http://dist.leechcraft.org/LeechCraft/0.6.70/
 
@@ -13,7 +13,7 @@ COMMENT=	Cross-platform modular live environment
 LICENSE=	BSL
 LICENSE_FILE=	${WRKDIR}/${DISTNAME}/LICENSE
 
-LIB_DEPENDS=	libqwt6.so:x11-toolkits/qwt6 \
+LIB_DEPENDS=	libqwt6.so:x11-toolkits/qwt6@qt4 \
 		libpcre.so:devel/pcre \
 		libboost_program_options.so:devel/boost-libs
 
@@ -406,6 +406,10 @@ BROKEN=		Lemon has not supported yet because depended by libnl
 BROKEN=		Otlozhu has not supported yet (not ported liblaretz)
 .endif
 
+post-patch:
+	@${REINPLACE_CMD} -e 's|%%QT_INCDIR%%|${QT_INCDIR}|g' \
+                        -e 's|%%QT_LIBDIR%%|${QT_LIBDIR}|g' \
+                        ${WRKSRC}/cmake/FindQwt.cmake
 post-install:
 	@${FIND} -d ${STAGEDIR}${PREFIX}/include/leechcraft \
 		-type d -empty -exec ${RMDIR} {} \;

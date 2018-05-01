@@ -1,8 +1,8 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/www/py-qt4-webkit/Makefile 464266 2018-03-12 18:06:51Z tcberner $
+# $FreeBSD: head/www/py-qt4-webkit/Makefile 468632 2018-04-29 16:19:44Z tcberner $
 
 PORTNAME=	webkit
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www devel python
 
 MAINTAINER=	kde@FreeBSD.org

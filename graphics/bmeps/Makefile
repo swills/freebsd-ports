@@ -1,10 +1,10 @@
 # Created by: Hideyuki KURASHINA <rushani@FreeBSD.org>
-# $FreeBSD: head/graphics/bmeps/Makefile 467028 2018-04-11 07:01:02Z krion $
+# $FreeBSD: head/graphics/bmeps/Makefile 468127 2018-04-23 18:35:55Z krion $
 
 PORTNAME=	bmpp
-PORTVERSION=	4.12.0a
+PORTVERSION=	4.14.0
 CATEGORIES=	graphics perl5
-MASTER_SITES=	SF/dktools/dktools/dktools-${PORTVERSION:C/a//}
+MASTER_SITES=	SF/dktools/dktools/dktools-${PORTVERSION}
 DISTNAME=	dktools-${PORTVERSION}
 
 MAINTAINER=	takefu@airport.fm
@@ -29,7 +29,6 @@ CONFIGURE_ENV=	ac_cv_header_sys_termios_h=no\
 		DESTDIR=${STAGEDIR}
 
 PLIST_FILES=	bin/bmpp man/man1/bmpp.1.gz
-WRKSRC=		${WRKDIR}/${DISTNAME:C/a//}
 
 post-patch:
 	@${REINPLACE_CMD} 's@sz->lsz =@st->lsz =@' ${WRKSRC}/dk3sf.c

@@ -1,8 +1,8 @@
 # Created by: Muhammad Moinur Rahman <bofh@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-API/Makefile 438109 2017-04-09 17:40:55Z bofh $
+# $FreeBSD: head/devel/p5-Test-API/Makefile 468147 2018-04-23 23:10:22Z bofh $
 
 PORTNAME=	Test-API
-PORTVERSION=	0.008
+PORTVERSION=	0.010
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DAGOLDEN

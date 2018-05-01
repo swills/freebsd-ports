@@ -1,5 +1,5 @@
 # Created by: Jean-Yves Lefort <jylefort@brutele.be>
-# $FreeBSD: head/audio/mixxx/Makefile 456058 2017-12-11 18:26:13Z sunpoet $
+# $FreeBSD: head/audio/mixxx/Makefile 468174 2018-04-24 03:53:29Z acm $
 
 PORTNAME=	mixxx
 PORTVERSION=	2.0.0
@@ -13,6 +13,8 @@ COMMENT=	DJ mixing application
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+IGNORE=		it will be updated to mixxx 2.1.0. FLAVOR needs portmgr approval
 
 LIB_DEPENDS=	libchromaprint.so:audio/chromaprint \
 		libFLAC.so:audio/flac \

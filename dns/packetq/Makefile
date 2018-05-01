@@ -1,12 +1,12 @@
-# Created by: Leo Vandewoestijne <freebsd@dns-lab.com>
-# $FreeBSD: head/dns/packetq/Makefile 463692 2018-03-06 06:05:55Z yuri $
+# Created by: Leo Vandewoestijne <freebsd@dns.company>
+# $FreeBSD: head/dns/packetq/Makefile 468167 2018-04-24 00:49:55Z dbaio $
 
 PORTNAME=	packetq
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.4.1
 CATEGORIES=	dns
 
-MAINTAINER=	freebsd@dns-lab.com
+MAINTAINER=	freebsd@dns.company
 COMMENT=	Basic SQL-frontend to PCAP-files
 
 LICENSE=	GPLv3

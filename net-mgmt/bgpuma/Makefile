@@ -1,7 +1,8 @@
-# $FreeBSD: head/net-mgmt/bgpuma/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net-mgmt/bgpuma/Makefile 467887 2018-04-21 13:24:09Z antoine $
 
 PORTNAME=	bgpuma
 PORTVERSION=	20151209
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	pi@FreeBSD.org

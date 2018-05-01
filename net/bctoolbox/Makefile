@@ -1,9 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/net/bctoolbox/Makefile 464247 2018-03-12 13:01:53Z tijl $
+# $FreeBSD: head/net/bctoolbox/Makefile 468134 2018-04-23 19:26:32Z tijl $
 
 PORTNAME=	bctoolbox
 PORTVERSION=	0.2.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	SAVANNAH/linphone/bctoolbox
 

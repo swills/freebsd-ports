@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/py-pyblake2/Makefile 466901 2018-04-09 19:31:38Z antoine $
+# $FreeBSD: head/security/py-pyblake2/Makefile 467877 2018-04-21 11:24:53Z antoine $
 
 PORTNAME=	pyblake2
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

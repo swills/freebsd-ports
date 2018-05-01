@@ -1,8 +1,8 @@
 # Created by: James E Keenan <jkeenan@cpan.org>
-# $FreeBSD: head/devel/p5-CPAN-Testers-Common-Client/Makefile 460214 2018-01-28 14:09:59Z sunpoet $
+# $FreeBSD: head/devel/p5-CPAN-Testers-Common-Client/Makefile 468180 2018-04-24 06:18:04Z pi $
 
 PORTNAME=	CPAN-Testers-Common-Client
-PORTVERSION=	0.13
+PORTVERSION=	0.14
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/py-pum/Makefile 465853 2018-03-28 23:59:29Z yuri $
+# $FreeBSD: head/databases/py-pum/Makefile 468338 2018-04-26 09:32:55Z krion $
 
 PORTNAME=	pum
-DISTVERSION=	0.5.13
+DISTVERSION=	0.7.1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

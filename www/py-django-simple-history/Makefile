@@ -1,8 +1,8 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/www/py-django-simple-history/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django-simple-history/Makefile 468731 2018-04-30 18:23:03Z cs $
 
 PORTNAME=	django-simple-history
-PORTVERSION=	1.8.2
+PORTVERSION=	2.0
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

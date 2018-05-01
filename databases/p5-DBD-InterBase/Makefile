@@ -1,9 +1,9 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/p5-DBD-InterBase/Makefile 414015 2016-04-25 16:14:02Z mat $
+# $FreeBSD: head/databases/p5-DBD-InterBase/Makefile 468288 2018-04-25 18:40:14Z acm $
 
 PORTNAME=	DBD-InterBase
 PORTVERSION=	0.48
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

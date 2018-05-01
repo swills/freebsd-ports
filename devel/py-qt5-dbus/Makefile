@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-qt5-dbus/Makefile 464266 2018-03-12 18:06:51Z tcberner $
+# $FreeBSD: head/devel/py-qt5-dbus/Makefile 468632 2018-04-29 16:19:44Z tcberner $
 
 PORTNAME=	dbus
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel python
 
 MAINTAINER=	kde@FreeBSD.org

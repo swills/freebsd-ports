@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/umbrello/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/devel/umbrello/Makefile 468558 2018-04-28 18:11:49Z tcberner $
 
 PORTNAME=	umbrello
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	devel kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

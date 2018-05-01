@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-ExtUtils-Constant/Makefile 447417 2017-08-05 23:10:53Z sunpoet $
+# $FreeBSD: head/devel/p5-ExtUtils-Constant/Makefile 467976 2018-04-22 08:54:47Z sunpoet $
 
 PORTNAME=	ExtUtils-Constant
-PORTVERSION=	0.24
+PORTVERSION=	0.25
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

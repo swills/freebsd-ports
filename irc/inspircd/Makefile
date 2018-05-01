@@ -1,8 +1,8 @@
 # Created by: Craig Edwards <brain@mail1.chatspike.net>
-# $FreeBSD: head/irc/inspircd/Makefile 456675 2017-12-18 21:46:45Z yuri $
+# $FreeBSD: head/irc/inspircd/Makefile 468564 2018-04-28 19:04:07Z dbaio $
 
 PORTNAME=	inspircd
-PORTVERSION=	2.0.25
+PORTVERSION=	2.0.26
 DISTVERSIONPREFIX=	v
 CATEGORIES=	irc
 

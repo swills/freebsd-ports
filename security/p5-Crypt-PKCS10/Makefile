@@ -1,8 +1,9 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/security/p5-Crypt-PKCS10/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/security/p5-Crypt-PKCS10/Makefile 468012 2018-04-22 09:08:41Z wen $
 
 PORTNAME=	Crypt-PKCS10
-PORTVERSION=	1.800201
+PORTVERSION=	1.9
+PORTEPOCH=	1
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -12,6 +13,7 @@ COMMENT=	Parse PKCS #10 certificate requests
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-Convert-ASN1>=0.27:converters/p5-Convert-ASN1 \
 		p5-Crypt-OpenSSL-DSA>0:security/p5-Crypt-OpenSSL-DSA \
@@ -22,8 +24,10 @@ BUILD_DEPENDS=	p5-Convert-ASN1>=0.27:converters/p5-Convert-ASN1 \
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-Module-Signature>0:security/p5-Module-Signature
 
+PORTSCOUT=	ignore:1.800201,1.8002
+
 USES=		perl5
-USE_PERL5=	configure
+USE_PERL5=	modbuildtiny
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

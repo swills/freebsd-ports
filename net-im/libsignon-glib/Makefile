@@ -1,10 +1,9 @@
-# $FreeBSD: head/net-im/libsignon-glib/Makefile 456216 2017-12-13 16:01:51Z antoine $
+# $FreeBSD: head/net-im/libsignon-glib/Makefile 468640 2018-04-29 18:17:36Z tcberner $
 
-PORTNAME=	${GL_PROJECT}
+PORTNAME=	libsignon-glib
 PORTVERSION=	1.14
+PORTREVISION=	1
 CATEGORIES=	net-im
-MASTER_SITES=	https://gitlab.com/${GL_ACCOUNT}/${GL_PROJECT}/repository/archive${EXTRACT_SUFX}?ref=${GL_TAGNAME}&num;/ \
-		LOCAL/tcberner/${GL_ACCOUNT}/
 DIST_SUBDIR=	KDE/${GL_ACCOUNT}
 
 MAINTAINER=	kde@FreeBSD.org
@@ -27,10 +26,9 @@ USE_PYTHON=	py3kplist
 PATHFIX_MAKEFILEIN=	Makefile.am
 
 # gitlab variables
+USE_GITLAB=	yes
 GL_ACCOUNT=	accounts-sso
-GL_PROJECT=	libsignon-glib
-GL_TAGNAME=	4e85baaf483268d04bbf835bebeac4ae30c7c327
-WRKSRC=		${WRKDIR}/${GL_PROJECT}-${GL_TAGNAME}-${GL_TAGNAME}
+GL_COMMIT=	4e85baaf483268d04bbf835bebeac4ae30c7c327
 
 # Run gtdocize as done in autogen.sh
 pre-configure:

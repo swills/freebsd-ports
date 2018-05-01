@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/dupmerge/Makefile 395960 2015-09-03 14:09:17Z amdmi3 $
+# $FreeBSD: head/sysutils/dupmerge/Makefile 467911 2018-04-22 04:13:57Z cy $
 
 PORTNAME=	dupmerge
 PORTVERSION=	1.73
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -12,7 +13,6 @@ COMMENT=	Searches for files with equal content
 USES=		zip
 MAKE_FLAGS=	# empty
 MAKEFILE=	# empty
-LDFLAGS+=	-lroken -lcrypt
 ALL_TARGET=	dupmerge
 PLIST_FILES=	bin/dupmerge
 PORTDOCS=	readme.txt

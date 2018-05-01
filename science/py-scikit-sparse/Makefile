@@ -1,13 +1,12 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/science/py-scikit-sparse/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/py-scikit-sparse/Makefile 468325 2018-04-26 06:41:30Z yuri $
 
 PORTNAME=	scikit-sparse
-PORTVERSION=	0.2
-PORTREVISION=	5
+DISTVERSION=	0.4.3
+PORTREVISION=	1
 CATEGORIES=	science python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	scikits.sparse-${PORTVERSION}
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Sparse matrix package
@@ -15,14 +14,17 @@ COMMENT=	Sparse matrix package
 LICENSE=	BSD2CLAUSE
 
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_SITELIBDIR}/scipy/version.py:science/py-scipy@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${FLAVOR}
 BUILD_DEPENDS=	${RUN_DEPENDS}
 LIB_DEPENDS=	libumfpack.so:math/suitesparse
 
 USES=		fortran python
-USE_PYTHON=	autoplist distutils cython
+USE_PYTHON=	distutils cython autoplist
 
-CFLAGS+=	-I${LOCALBASE}/include
+CFLAGS+=	-I${LOCALBASE}/include/suitesparse
 LDFLAGS+=	-shared
+
+post-install:
+	@${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/sksparse/cholmod.so
 
 .include <bsd.port.mk>

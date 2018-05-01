@@ -1,12 +1,12 @@
 # Created by: Steven Kreuzer <steven@exit2shell.com>
-# $FreeBSD: head/sysutils/DTraceToolkit/Makefile 464946 2018-03-18 20:00:33Z yuri $
+# $FreeBSD: head/sysutils/DTraceToolkit/Makefile 468285 2018-04-25 17:57:30Z skreuzer $
 
 PORTNAME=	dtrace-toolkit
 PORTVERSION=	1.0
 PORTREVISION=	4
 CATEGORIES=	sysutils
 
-MAINTAINER=	skreuzer@FreeBSD.org
+MAINTAINER=	dteske@FreeBSD.org
 COMMENT=	Collection of useful scripts for DTrace
 
 LICENSE=	CDDL

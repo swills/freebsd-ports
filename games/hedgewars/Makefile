@@ -1,9 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/hedgewars/Makefile 466532 2018-04-05 04:52:36Z acm $
+# $FreeBSD: head/games/hedgewars/Makefile 468560 2018-04-28 18:28:54Z amdmi3 $
 
 PORTNAME=	hedgewars
-PORTVERSION=	0.9.23
-PORTREVISION=	1
+PORTVERSION=	0.9.24
 CATEGORIES=	games
 MASTER_SITES=	http://www.hedgewars.org/download/releases/ \
 		http://mirror.amdmi3.ru/distfiles/
@@ -18,12 +17,12 @@ LICENSE_COMB=	multi
 LIB_DEPENDS=	libphysfs.so:devel/physfs \
 		libpng.so:graphics/png
 
-USES=		cmake:noninja desktop-file-utils fpc lua:51 tar:bzip2
+USES=		cmake:noninja desktop-file-utils fpc lua:51 tar:bzip2 pkgconfig
 USE_SDL=	sdl2 mixer2 image2 ttf2 net2
 USE_FPC=	opengl libpng rtl-objpas
-USE_QT4=	corelib gui moc_build network \
-		qmake_build rcc_build svg xml \
-		uic_build linguisttools_build
+USE_QT5=	core gui widgets network \
+		qmake_build buildtools_build \
+		linguisttools_build
 USE_LDCONFIG=	yes
 
 WRKSRC=		${WRKDIR}/${DISTNAME:C/\.[0-9]$//}

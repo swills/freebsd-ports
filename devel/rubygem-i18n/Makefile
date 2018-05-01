@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-i18n/Makefile 461902 2018-02-15 12:46:50Z sunpoet $
+# $FreeBSD: head/devel/rubygem-i18n/Makefile 468000 2018-04-22 08:56:53Z sunpoet $
 
 PORTNAME=	i18n
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.1
 PORTEPOCH=	2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG

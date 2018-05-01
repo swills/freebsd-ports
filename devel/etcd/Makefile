@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/etcd/Makefile 445252 2017-07-07 13:29:39Z olgeni $
+# $FreeBSD: head/devel/etcd/Makefile 468094 2018-04-23 14:59:53Z olgeni $
 
 PORTNAME=	etcd
 PORTVERSION=	2.3.8
@@ -13,7 +13,7 @@ COMMENT=	Highly-available key value store and service discovery
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-CONFLICTS_INSTALL=coreos-etcdctl-0.* coreos-etcd31-* coreos-etcd32-*
+CONFLICTS_INSTALL=coreos-etcdctl-0.* coreos-etcd31-* coreos-etcd32-* coreos-etcd33-*
 
 PORTSCOUT=	limit:^2.*
 

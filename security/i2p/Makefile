@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/security/i2p/Makefile 461558 2018-02-12 06:39:05Z yuri $
+# $FreeBSD: head/security/i2p/Makefile 468081 2018-04-23 08:11:16Z joneum $
 
 PORTNAME=	i2p
 DISTVERSION=	0.9.33
@@ -13,7 +13,7 @@ MASTER_SITES=	SF/${PORTNAME:tl}/${PORTVERSION} \
 		https://googledrive.com/host/0B4jHEq5G7_EPWV9UeERwdGplZXc/${PORTVERSION}/
 DISTFILES=	i2psource_${PORTVERSION}${EXTRACT_SUFX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	neel@neelc.org
 COMMENT=	Anonymizing network
 
 LICENSE=	EULA

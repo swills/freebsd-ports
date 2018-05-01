@@ -1,9 +1,9 @@
 # Created by: anders
-# $FreeBSD: head/databases/tora/Makefile 464266 2018-03-12 18:06:51Z tcberner $
+# $FreeBSD: head/databases/tora/Makefile 468632 2018-04-29 16:19:44Z tcberner $
 
 PORTNAME=	tora
 PORTVERSION=	2.1.3
-PORTREVISION=	13
+PORTREVISION=	14
 PORTEPOCH=	1
 CATEGORIES=	databases
 MASTER_SITES=	SF

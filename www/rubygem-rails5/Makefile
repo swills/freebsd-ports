@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/rubygem-rails5/Makefile 466991 2018-04-10 18:27:57Z sunpoet $
+# $FreeBSD: head/www/rubygem-rails5/Makefile 467969 2018-04-22 08:50:58Z sunpoet $
 
 PORTNAME=	rails
 PORTVERSION=	5.1.6
@@ -48,6 +48,8 @@ RUN_DEPENDS=	rubygem-actioncable5>=${PORTVERSION}:www/rubygem-actioncable5 \
 		rubygem-turbolinks-rails5>=5.0.1:www/rubygem-turbolinks-rails5 \
 		rubygem-uglifier>=3.2.0:www/rubygem-uglifier \
 		rubygem-web-console>=3.5.0:devel/rubygem-web-console
+
+PORTSCOUT=	limit:^5\.1\.
 
 NO_ARCH=	yes
 

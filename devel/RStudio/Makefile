@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/RStudio/Makefile 467734 2018-04-18 20:28:04Z yuri $
+# $FreeBSD: head/devel/RStudio/Makefile 468071 2018-04-23 05:50:26Z yuri $
 
 # This port opens too many files during build, more than the default setting.
 # Its build is known to succeed with MAX_FILES_RStudio=2048 in poudriere.conf when ports-mgmt/poudriere-devel is used.
@@ -6,6 +6,7 @@
 PORTNAME=	RStudio
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.1.447
+PORTREVISION=	1
 CATEGORIES=	devel math java
 MASTER_SITES=	https://s3.amazonaws.com/rstudio-dictionaries/:dictionaries \
 		https://s3.amazonaws.com/rstudio-buildtools/:buildtools
@@ -73,8 +74,14 @@ pre-build:
 
 post-install:
 	@(echo "#!/bin/sh"; \
+	  echo ""; \
+	  echo "if ! [ -d /proc/curproc ]; then"; \
+	  echo "  echo \"${PORTNAME} needs /proc to be mounted as procfs\" >&2"; \
+	  echo "  exit 1"; \
+	  echo "fi"; \
+	  echo ""; \
 	  echo "# workaround for the problem that RStudio passes /lib with LD_LIBRARY_PATH that causes the /lib/libgcc_s.so.1 conflict with gcc"; \
-	  echo "LD_PRELOAD=${PREFIX}/lib/gcc6/libgcc_s.so ${PREFIX}/lib/rstudio/bin/rstudio \"$@\"" \
+	  echo "LD_PRELOAD=${PREFIX}/lib/gcc6/libgcc_s.so ${PREFIX}/lib/rstudio/bin/rstudio \"$$@\"" \
 	) > ${STAGEDIR}${PREFIX}/bin/rstudio
 	@${CHMOD} +x ${STAGEDIR}${PREFIX}/bin/rstudio
 	@${REINPLACE_CMD} -e 's|^Exec=.*/rstudio|Exec=${PREFIX}/bin/rstudio|' ${STAGEDIR}${PREFIX}/share/applications/rstudio.desktop

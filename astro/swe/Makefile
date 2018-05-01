@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/astro/swe/Makefile 434708 2017-02-24 12:04:42Z bofh $
+# $FreeBSD: head/astro/swe/Makefile 468135 2018-04-23 19:28:01Z bofh $
 
 PORTNAME=	swe
-PORTVERSION=	2.06
+PORTVERSION=	2.07.01
 CATEGORIES=	astro devel
 MASTER_SITES=	ftp://ftp.astro.com/pub/swisseph/
 DISTNAME=	${PORTNAME}_unix_src_${PORTVERSION}
@@ -16,7 +16,6 @@ WRKSRC=		${WRKDIR}/src
 USES=		gmake
 ALL_TARGET=	#
 MAKE_ARGS=	CFLAGS="${CFLAGS}"
-USE_LDCONFIG=	yes
 
 OPTIONS_DEFINE=	DOCS
 

@@ -1,9 +1,9 @@
 # Created by: Will Andrews <andrews@technologist.com>
-# $FreeBSD: head/finance/qhacc/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/finance/qhacc/Makefile 468283 2018-04-25 17:11:22Z tcberner $
 
 PORTNAME=	qhacc
 PORTVERSION=	4.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	finance
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
@@ -14,7 +14,7 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libgpgme.so:security/gpgme \
-		libqwt6.so:x11-toolkits/qwt6
+		libqwt6.so:x11-toolkits/qwt6@qt4
 
 USES=		compiler:c++11-lib qmake:norecursive tar:tgz
 USE_QT4=	corelib gui sql moc_build rcc_build uic_build
@@ -28,8 +28,8 @@ OPTIONS_DEFINE=	DOCS
 post-patch:
 	@${REINPLACE_CMD} -e \
 		'/^INSTALLDIR/s|=.*|=${DATADIR}| ; \
-		 /^QWTINCS/s|=.*|=${LOCALBASE}/include/qwt6| ; \
-		 /^QWTLIBS/s|=.*|=${LOCALBASE}/lib -lqwt6| ; \
+		 /^QWTINCS/s|=.*|=${QT_INCDIR}/qwt6| ; \
+		 /^QWTLIBS/s|=.*|=${QT_LIBDIR} -lqwt6| ; \
 		 /+= debug/s|^|#| ; \
 		 /^QMAKE_CFLAGS/s|=.*|= $$$${GPGMEINCS}| ; \
 		 /^QMAKE_CXXFLAGS/s|=.*|= $$$${GPGMEINCS}| ; \

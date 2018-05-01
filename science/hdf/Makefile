@@ -1,5 +1,5 @@
 # Created by: mi
-# $FreeBSD: head/science/hdf/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/hdf/Makefile 468610 2018-04-29 08:33:52Z amdmi3 $
 
 PORTNAME=	hdf
 PORTVERSION=	4.2.11
@@ -26,6 +26,7 @@ CONFIGURE_ARGS=	--enable-shared --with-jpeg=${LOCALBASE} \
 		--with-szlib=${LOCALBASE}
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
+TEST_TARGET=	check
 
 PORTDATA=	*
 PORTEXAMPLES=	*
@@ -45,9 +46,5 @@ post-install:
 		${STAGEDIR}${MAN1PREFIX}/man/man1
 	${INSTALL_MAN} ${WRKSRC}/man/gr_chunk.3 \
 		${STAGEDIR}${MAN3PREFIX}/man/man3
-
-regression-test: build
-	@${SETENV} ${MAKE_ENV} ${MAKE_CMD} ${MAKE_FLAGS} ${MAKEFILE} \
-		${MAKE_ARGS} check -C ${WRKSRC}/hdf/test
 
 .include <bsd.port.mk>

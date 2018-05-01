@@ -1,5 +1,5 @@
 # Created by: Nils Vogels <nivo+kw+ports.bfa274@is-root.com>
-# $FreeBSD: head/mail/dovecot-pigeonhole/Makefile 466172 2018-04-01 17:10:31Z adamw $
+# $FreeBSD: head/mail/dovecot-pigeonhole/Makefile 468060 2018-04-22 21:35:38Z dbaio $
 
 PORTNAME=	dovecot-pigeonhole
 PORTVERSION=	0.5.1
@@ -26,6 +26,8 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 INSTALL_TARGET=	install-strip
 USES=		compiler:c11 libtool ssl
 USE_LDCONFIG=	${PREFIX}/lib/dovecot
+
+CONFLICTS_INSTALL=	dovecot-pigeonhole04
 
 OPTIONS_DEFINE=	DOCS LDAP MANAGESIEVE
 OPTIONS_DEFAULT=MANAGESIEVE GSSAPI_NONE

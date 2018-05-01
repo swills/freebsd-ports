@@ -1,8 +1,8 @@
 # Created by: nork@cityfujisawa.ne.jp
-# $FreeBSD: head/security/p5-Crypt-OpenSSL-Random/Makefile 467428 2018-04-15 20:03:43Z sunpoet $
+# $FreeBSD: head/security/p5-Crypt-OpenSSL-Random/Makefile 468122 2018-04-23 18:17:27Z sunpoet $
 
 PORTNAME=	Crypt-OpenSSL-Random
-PORTVERSION=	0.13
+PORTVERSION=	0.15
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:RURBAN
@@ -15,7 +15,7 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE_ART10=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Crypt-OpenSSL-Guess>=0:security/p5-Crypt-OpenSSL-Guess
+BUILD_DEPENDS=	p5-Crypt-OpenSSL-Guess>=0.11:security/p5-Crypt-OpenSSL-Guess
 
 MAKE_ARGS=	PASTHRU_INC=-I${OPENSSLINC}
 USES=		perl5 ssl

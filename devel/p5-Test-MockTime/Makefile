@@ -1,9 +1,8 @@
 # Created by: Timur I. Bakeyev <bat@cpan.org>
-# $FreeBSD: head/devel/p5-Test-MockTime/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Test-MockTime/Makefile 468148 2018-04-23 23:31:26Z bofh $
 
 PORTNAME=	Test-MockTime
-PORTVERSION=	0.15
-PORTREVISION=	1
+PORTVERSION=	0.17
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

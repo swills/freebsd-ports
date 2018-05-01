@@ -1,5 +1,5 @@
 # Created by: Stephen Montgomery-Smith <stephen@FreeBSD.org>
-# $FreeBSD: head/math/sage/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/sage/Makefile 468307 2018-04-25 22:00:04Z mat $
 
 PORTNAME=	sage
 PORTVERSION=	6.7
@@ -33,7 +33,9 @@ pre-extract:
 	@${ECHO_MSG} extra time and space, you can instead type \"make build\".  Then you can move
 	@${ECHO_MSG} work/${PORTNAME}-${PORTVERSION} to wherever you like, and run sage from there.
 	@${ECHO_MSG} However, there is no guarantee that this alternative will always work.
+.  if !(defined(PACKAGE_BUILDING) || defined(BATCH))
 	@sleep 10
+.  endif
 
 PLIST_FILES=	bin/sage
 USE_TEX=	latex:build

@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/math/p5-Math-BigRat/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/math/p5-Math-BigRat/Makefile 467991 2018-04-22 08:56:05Z sunpoet $
 
 PORTNAME=	Math-BigRat
-PORTVERSION=	0.2613
+PORTVERSION=	0.2614
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

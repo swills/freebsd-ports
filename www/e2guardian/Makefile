@@ -1,5 +1,5 @@
 # Created by: Marcello Coutinho
-# $FreeBSD: head/www/e2guardian/Makefile 437392 2017-04-01 02:49:39Z wen $
+# $FreeBSD: head/www/e2guardian/Makefile 468307 2018-04-25 22:00:04Z mat $
 
 PORTNAME=	e2guardian
 PORTVERSION=	3.5.1
@@ -88,7 +88,9 @@ post-extract:
 	@${ECHO_MSG} "before preceeding with e2guardian compilation"
 	@${ECHO_MSG} "######################################################"
 	@${ECHO_MSG} ""
+.  if !(defined(PACKAGE_BUILDING) || defined(BATCH))
 	@sleep 3
+.  endif
 .endif
 
 pre-configure:

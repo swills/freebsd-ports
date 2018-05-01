@@ -1,9 +1,8 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/databases/php7-tarantool/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/databases/php7-tarantool/Makefile 467931 2018-04-22 08:47:42Z sunpoet $
 
 PORTNAME=	tarantool
-PORTVERSION=	0.3.0
-PORTREVISION=	1
+PORTVERSION=	0.3.2
 CATEGORIES=	databases
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 

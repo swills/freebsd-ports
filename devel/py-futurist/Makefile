@@ -1,8 +1,8 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-futurist/Makefile 466308 2018-04-03 09:50:30Z sunpoet $
+# $FreeBSD: head/devel/py-futurist/Makefile 468448 2018-04-27 15:55:54Z sunpoet $
 
 PORTNAME=	futurist
-PORTVERSION=	1.6.0
+PORTVERSION=	1.7.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,8 @@
 # Created by: neuroworker@gmail.com
-# $FreeBSD: head/games/instead/Makefile 461748 2018-02-13 21:04:13Z amdmi3 $
+# $FreeBSD: head/games/instead/Makefile 468243 2018-04-24 20:45:30Z amdmi3 $
 
 PORTNAME=	instead
-PORTVERSION=	3.2.0
+PORTVERSION=	3.2.1
 CATEGORIES=	games
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}_${PORTVERSION}

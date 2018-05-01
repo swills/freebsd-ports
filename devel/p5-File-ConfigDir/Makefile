@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-File-ConfigDir/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-File-ConfigDir/Makefile 468575 2018-04-28 20:09:59Z sunpoet $
 
 PORTNAME=	File-ConfigDir
-PORTVERSION=	0.018
+PORTVERSION=	0.019
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -15,7 +15,8 @@ LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-File-HomeDir>=0.50:devel/p5-File-HomeDir \
 		p5-List-MoreUtils>=0.419:lang/p5-List-MoreUtils \
-		p5-List-MoreUtils-XS>=0.418:lang/p5-List-MoreUtils-XS
+		p5-List-MoreUtils-XS>=0.418:lang/p5-List-MoreUtils-XS \
+		p5-local-lib>=1.008008:devel/p5-local-lib
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes

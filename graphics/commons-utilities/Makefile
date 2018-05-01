@@ -1,9 +1,9 @@
 # Created by: Sébastien Santoro <dereckson@gmail.com>
-# $FreeBSD: head/graphics/commons-utilities/Makefile 463302 2018-03-01 13:17:57Z amdmi3 $
+# $FreeBSD: head/graphics/commons-utilities/Makefile 468519 2018-04-28 06:14:58Z tcberner $
 
 PORTNAME=	commons-utilities
 PORTVERSION=	1.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	http://devio.us/~dereckson/software/commons-utilities/
 

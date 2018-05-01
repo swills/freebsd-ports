@@ -1,8 +1,8 @@
 # Created by: Bruce Simpson
-# $FreeBSD: head/net-mgmt/py-pyang/Makefile 445863 2017-07-15 09:46:54Z bofh $
+# $FreeBSD: head/net-mgmt/py-pyang/Makefile 468163 2018-04-24 00:26:05Z bofh $
 
 PORTNAME=	pyang
-PORTVERSION=	1.7.3
+PORTVERSION=	1.7.4
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

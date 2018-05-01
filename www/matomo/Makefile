@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/matomo/Makefile 466849 2018-04-09 12:14:14Z mfechner $
+# $FreeBSD: head/www/matomo/Makefile 468267 2018-04-25 09:34:05Z tz $
 
 PORTNAME=	matomo
 DISTVERSION=	3.4.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	http://builds.matomo.org/
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}

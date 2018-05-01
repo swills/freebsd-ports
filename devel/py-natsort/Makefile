@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-natsort/Makefile 461997 2018-02-16 10:44:04Z yuri $
+# $FreeBSD: head/devel/py-natsort/Makefile 468036 2018-04-22 16:29:59Z yuri $
 
 PORTNAME=	natsort
-DISTVERSION=	5.2.0
+DISTVERSION=	5.3.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

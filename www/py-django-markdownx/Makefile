@@ -1,8 +1,8 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/www/py-django-markdownx/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django-markdownx/Makefile 468733 2018-04-30 18:30:57Z cs $
 
 PORTNAME=	django-markdownx
-PORTVERSION=	2.0.21
+PORTVERSION=	2.0.23
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

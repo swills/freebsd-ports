@@ -1,9 +1,8 @@
 # Created by: andrey@kostenko.name
-# $FreeBSD: head/devel/p5-Config-MVP/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Config-MVP/Makefile 468020 2018-04-22 12:50:13Z sunpoet $
 
 PORTNAME=	Config-MVP
-PORTVERSION=	2.200010
-PORTREVISION=	1
+PORTVERSION=	2.200011
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,10 +1,11 @@
 # Created by: johans
-# $FreeBSD: head/graphics/webp/Makefile 455435 2017-12-03 20:34:38Z sunpoet $
+# $FreeBSD: head/graphics/webp/Makefile 468015 2018-04-22 12:49:46Z sunpoet $
 
 PORTNAME=	webp
-PORTVERSION=	0.6.1
+PORTVERSION=	1.0.0
 CATEGORIES=	graphics
-MASTER_SITES=	http://downloads.webmproject.org/releases/webp/
+MASTER_SITES=	http://downloads.webmproject.org/releases/webp/ \
+		https://storage.googleapis.com/downloads.webmproject.org/releases/webp/
 DISTNAME=	lib${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	sunpoet@FreeBSD.org

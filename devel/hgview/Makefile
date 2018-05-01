@@ -1,9 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/hgview/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/devel/hgview/Makefile 468632 2018-04-29 16:19:44Z tcberner $
 
 PORTNAME=	hgview
 PORTVERSION=	1.9.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP \
 		http://download.logilab.org/pub/${PORTNAME}/

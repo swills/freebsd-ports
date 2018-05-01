@@ -1,15 +1,14 @@
 # Created by: Ion-Mihai "IOnut" Tetcu <itetcu@people.tecnik93.com>
-# $FreeBSD: head/net/sendemail/Makefile 428606 2016-12-15 09:00:50Z amdmi3 $
+# $FreeBSD: head/net/sendemail/Makefile 468308 2018-04-26 00:23:15Z dbaio $
 
 PORTNAME=	sendEmail
 PORTVERSION=	1.56
 PORTREVISION=	2
 CATEGORIES=	net
-MASTER_SITES=	http://caspian.dotconf.net/menu/Software/SendEmail/ \
-		http://T32.TecNik93.com/FreeBSD/ports/${PORTNAME}/sources/
+MASTER_SITES=	http://caspian.dotconf.net/menu/Software/SendEmail/
 DISTNAME=	${PORTNAME}-v${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	Lightweight, completely command line based, SMTP email agent
 
 LICENSE=	GPLv2+

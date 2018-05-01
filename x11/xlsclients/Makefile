@@ -1,16 +1,17 @@
-# $FreeBSD: head/x11/xlsclients/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/x11/xlsclients/Makefile 468667 2018-04-29 22:18:15Z yuri $
 
 PORTNAME=	xlsclients
-PORTVERSION=	1.1.3
+PORTVERSION=	1.1.4
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	List client applications running on a display
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 XORG_CAT=	app
-USE_XORG=	x11 xmuu
+USE_XORG=	x11 xcb xmuu
 
 PLIST_FILES=	bin/xlsclients man/man1/xlsclients.1.gz
 

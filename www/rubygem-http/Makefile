@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-http/Makefile 456144 2017-12-12 13:33:50Z sunpoet $
+# $FreeBSD: head/www/rubygem-http/Makefile 468471 2018-04-27 15:57:52Z sunpoet $
 
 PORTNAME=	http
-PORTVERSION=	3.0.0
+PORTVERSION=	3.3.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	rubygem-addressable>=2.3:www/rubygem-addressable \
 		rubygem-http-cookie>=1.0:www/rubygem-http-cookie \
-		rubygem-http-form_data>=2.0.0:www/rubygem-http-form_data \
+		rubygem-http-form_data>=2.0:www/rubygem-http-form_data \
 		rubygem-http_parser.rb>=0.6.0:net/rubygem-http_parser.rb
 
 NO_ARCH=	yes

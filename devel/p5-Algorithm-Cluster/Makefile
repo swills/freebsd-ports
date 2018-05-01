@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/devel/p5-Algorithm-Cluster/Makefile 448552 2017-08-22 16:40:27Z sunpoet $
+# $FreeBSD: head/devel/p5-Algorithm-Cluster/Makefile 468722 2018-04-30 17:08:57Z sunpoet $
 
 PORTNAME=	Algorithm-Cluster
-PORTVERSION=	1.53
+PORTVERSION=	1.56
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:MDEHOON

@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/dilay/Makefile 463779 2018-03-07 08:54:31Z yuri $
+# $FreeBSD: head/graphics/dilay/Makefile 468082 2018-04-23 08:16:22Z yuri $
 
 PORTNAME=	dilay
-DISTVERSION=	1.7.0
+DISTVERSION=	1.7.1
 CATEGORIES=	graphics
 
 MAINTAINER=	yuri@FreeBSD.org

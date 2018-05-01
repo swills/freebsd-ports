@@ -1,10 +1,10 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/graphics/viewnior/Makefile 419170 2016-07-27 10:22:26Z tcberner $
+# $FreeBSD: head/graphics/viewnior/Makefile 468519 2018-04-28 06:14:58Z tcberner $
 
 PORTNAME=	viewnior
 PORTVERSION=	1.6
 DISTVERSIONPREFIX=	${PORTNAME}-
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 
 MAINTAINER=	nemysis@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/multimedia/py-qt4-multimedia/Makefile 464266 2018-03-12 18:06:51Z tcberner $
+# $FreeBSD: head/multimedia/py-qt4-multimedia/Makefile 468632 2018-04-29 16:19:44Z tcberner $
 
 PORTNAME=	multimedia
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	multimedia devel python
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,11 +1,12 @@
 # Created by: Arjan van Leeuwen <avleeuwen@piwebs.com>
-# $FreeBSD: head/graphics/digikam-kde4/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/graphics/digikam-kde4/Makefile 468530 2018-04-28 10:05:38Z tcberner $
 
 PORTNAME=	digikam
 PORTVERSION=	${DIGIKAM_VER}
-PORTREVISION=	13
+PORTREVISION=	14
 PORTEPOCH=	2
 CATEGORIES=	graphics kde
+PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE4 digital photo management application

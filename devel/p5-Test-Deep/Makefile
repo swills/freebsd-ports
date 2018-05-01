@@ -1,8 +1,8 @@
 # Created by: Alex Kapranoff <alex@kapranoff.ru>
-# $FreeBSD: head/devel/p5-Test-Deep/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Test-Deep/Makefile 467982 2018-04-22 08:55:19Z sunpoet $
 
 PORTNAME=	Test-Deep
-PORTVERSION=	1.127
+PORTVERSION=	1.128
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

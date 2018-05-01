@@ -1,8 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/textproc/libebml/Makefile 448298 2017-08-19 11:20:05Z riggs $
+# $FreeBSD: head/textproc/libebml/Makefile 468042 2018-04-22 18:11:18Z riggs $
 
 PORTNAME=	libebml
-PORTVERSION=	1.3.5
+PORTVERSION=	1.3.6
 DISTVERSIONPREFIX=	release-
 CATEGORIES=	textproc
 
@@ -11,13 +11,13 @@ COMMENT=	EBML (Extensible Binary Meta Language), sort of binary version of XML
 
 LICENSE=	LGPL21
 
-USES=		autoreconf gmake libtool pathfix tar:bzip2
+USES=		cmake pathfix tar:bzip2
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Matroska-Org
 
-INSTALL_TARGET=	install-strip
+CMAKE_ARGS=	-DBUILD_SHARED_LIBS=YES
 
 .include <bsd.port.mk>

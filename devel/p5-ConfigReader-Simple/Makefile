@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-ConfigReader-Simple/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-ConfigReader-Simple/Makefile 468481 2018-04-27 18:52:19Z sunpoet $
 
 PORTNAME=	ConfigReader-Simple
-PORTVERSION=	1.291
+PORTVERSION=	1.293
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -10,8 +10,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Simple configuration file parser
 
-LICENSE=	ART10 GPLv1+
-LICENSE_COMB=	dual
+LICENSE=	ART20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 TEST_DEPENDS=	p5-Test-Output>=0:devel/p5-Test-Output \
 		p5-Test-Warn>=0:devel/p5-Test-Warn

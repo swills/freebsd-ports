@@ -1,9 +1,9 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/security/py-keystone/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-keystone/Makefile 468301 2018-04-25 21:01:31Z sunpoet $
 
 PORTNAME=	keystone
 PORTVERSION=	10.0.0
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	security python
 MASTER_SITES=	https://fossies.org/linux/misc/openstack/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -45,12 +45,13 @@ RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}Babel>=2.3.4:devel/py-babel@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dogpile.cache>=0.6.2:devel/py-dogpile.cache@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}jsonschema>=0:devel/py-jsonschema@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pycadf>=0:devel/py-pycadf@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}msgpack-python>=0.4.0:devel/py-msgpack-python@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}msgpack>=0.4.0:devel/py-msgpack@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}osprofiler>=1.4.0:devel/py-osprofiler@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sqlparse>=0:databases/py-sqlparse@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}python-editor>=0:devel/py-python-editor@${FLAVOR}
 
 NO_ARCH=	yes
+REINPLACE_ARGS=	-i ''
 
 USES=		python
 USE_PYTHON=	autoplist distutils noegginfo
@@ -59,6 +60,7 @@ USERS=		keystone
 GROUPS=		keystone
 
 post-patch:
+	@${REINPLACE_CMD} -e 's|msgpack-python|msgpack|' ${WRKSRC}/requirements.txt ${WRKSRC}/keystone.egg-info/requires.txt
 	${REINPLACE_CMD} -e "s|/etc/keystone|${PREFIX}/etc/${PORTNAME}|g" \
 		${WRKSRC}/doc/source/apache-httpd.rst \
 		${WRKSRC}/doc/source/api_curl_examples.rst \

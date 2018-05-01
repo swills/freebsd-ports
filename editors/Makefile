@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 467232 2018-04-13 10:55:08Z tobik $
+# $FreeBSD: head/editors/Makefile 468624 2018-04-29 12:29:40Z tcberner $
 #
 
     COMMENT = Editors
@@ -17,6 +17,7 @@
     SUBDIR += bpatch
     SUBDIR += bvi
     SUBDIR += calligra
+    SUBDIR += calligraplan
     SUBDIR += chexedit
     SUBDIR += codelite
     SUBDIR += coedit
@@ -70,6 +71,7 @@
     SUBDIR += kate
     SUBDIR += kate-kde4
     SUBDIR += kate-plugin-pate-kde4
+    SUBDIR += kile
     SUBDIR += kile-kde4
     SUBDIR += klat4
     SUBDIR += komodo-edit

@@ -1,8 +1,8 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/devel/p5-Connector/Makefile 455920 2017-12-11 03:16:49Z swills $
+# $FreeBSD: head/devel/p5-Connector/Makefile 468427 2018-04-27 13:56:31Z riggs $
 
 PORTNAME=	Connector
-PORTVERSION=	1.25
+PORTVERSION=	1.26
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

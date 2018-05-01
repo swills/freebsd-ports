@@ -1,5 +1,5 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/mail/rubygem-actionmailer5/Makefile 466989 2018-04-10 18:27:47Z sunpoet $
+# $FreeBSD: head/mail/rubygem-actionmailer5/Makefile 467965 2018-04-22 08:50:38Z sunpoet $
 
 PORTNAME=	actionmailer
 PORTVERSION=	5.1.6
@@ -18,6 +18,8 @@ RUN_DEPENDS=	rubygem-actionpack5>=${PORTVERSION}:www/rubygem-actionpack5 \
 		rubygem-activejob5>=${PORTVERSION}:devel/rubygem-activejob5 \
 		rubygem-mail>=2.5.4:mail/rubygem-mail \
 		rubygem-rails-dom-testing-rails5>=2.0:textproc/rubygem-rails-dom-testing-rails5
+
+PORTSCOUT=	limit:^5\.1\.
 
 NO_ARCH=	yes
 USE_RUBY=	yes

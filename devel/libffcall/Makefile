@@ -1,5 +1,5 @@
 # Created by: jagapen@home.com
-# $FreeBSD: head/devel/libffcall/Makefile 460215 2018-01-28 14:10:04Z sunpoet $
+# $FreeBSD: head/devel/libffcall/Makefile 468090 2018-04-23 09:33:47Z amdmi3 $
 
 PORTNAME=	libffcall
 PORTVERSION=	1.13
@@ -10,6 +10,7 @@ MAINTAINER=	amutu@amutu.com
 COMMENT=	Foreign function call libraries
 
 LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_armv6=		fails to build: avcall-armhf.s:46:2: error: '.syntax divided' arm assembly not supported
 BROKEN_armv7=		fails to build: avcall-armhf.s:46:2: error: '.syntax divided' arm assembly not supported

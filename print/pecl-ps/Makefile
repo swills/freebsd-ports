@@ -1,5 +1,5 @@
 # Created by: Alan Garfield <alan@fromorbit.com>
-# $FreeBSD: head/print/pecl-ps/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/print/pecl-ps/Makefile 468263 2018-04-25 08:33:50Z amdmi3 $
 
 PORTNAME=	ps
 PORTVERSION=	1.3.7
@@ -20,7 +20,7 @@ USES=		php:pecl
 post-patch:
 	@${REINPLACE_CMD} -e 's|-ldl|-lintl|g' ${WRKSRC}/config.m4
 
-test check regression-test: build
+do-test:
 	${MAKE} -C ${WRKSRC} test < /dev/null
 
 .include <bsd.port.mk>

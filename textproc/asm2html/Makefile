@@ -1,5 +1,5 @@
 # Created by: Ben Haga <tuxsuximus@hotmail.com>
-# $FreeBSD: head/textproc/asm2html/Makefile 357476 2014-06-11 13:26:52Z marino $
+# $FreeBSD: head/textproc/asm2html/Makefile 468339 2018-04-26 09:33:48Z amdmi3 $
 
 PORTNAME=	asm2html
 PORTVERSION=	1.7
@@ -10,11 +10,11 @@ MAINTAINER=	portmaster@bsdforge.com
 COMMENT=	Converts NASM syntax assembly code to HTML code
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		tar:xz
-HAS_CONFIGURE=	yes
-CONFIGURE_ARGS+=--prefix=${PREFIX}
-MAKE_ARGS+=	CC=${CC}
+GNU_CONFIGURE=	yes
+MAKE_ARGS=	CC=${CC}
 
 PLIST_FILES=	bin/asm2html man/man1/asm2html.1.gz
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/spectacle/Makefile 466806 2018-04-08 17:01:54Z tcberner $
+# $FreeBSD: head/graphics/spectacle/Makefile 468558 2018-04-28 18:11:49Z tcberner $
 
 PORTNAME=	spectacle
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -12,9 +12,9 @@ LIB_DEPENDS=	libxcb-cursor.so:x11/xcb-util-cursor \
 		libxcb-util.so:x11/xcb-util
 
 USES=		cmake:outsource gettext kde:5 pkgconfig tar:xz
-USE_KDE=	auth codecs completion config configwidgets coreaddons \
+USE_KDE=	attica auth codecs completion config configwidgets coreaddons \
 		dbusaddons doctools ecm i18n jobwidgets kdeclarative kio \
-		libkipi notifications package service widgetsaddons \
+		libkipi newstuff notifications package service widgetsaddons \
 		windowsystem xmlgui
 USE_QT5=	core concurrent dbus gui network printsupport qml quick \
 		widgets x11extras xml \

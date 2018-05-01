@@ -1,8 +1,8 @@
 # Created by: lbr@FreeBSD.org
-# $FreeBSD: head/devel/p5-Task-Weaken/Makefile 456999 2017-12-22 23:04:27Z sunpoet $
+# $FreeBSD: head/devel/p5-Task-Weaken/Makefile 467981 2018-04-22 08:55:14Z sunpoet $
 
 PORTNAME=	Task-Weaken
-PORTVERSION=	1.05
+PORTVERSION=	1.06
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

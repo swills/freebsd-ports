@@ -1,9 +1,9 @@
 # Created by: Oliver Braun <obraun@informatik.unibw-muenchen.de>
-# $FreeBSD: head/print/muttprint/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/print/muttprint/Makefile 468672 2018-04-30 06:17:52Z romain $
 
 PORTNAME=	muttprint
 PORTVERSION=	0.73
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	print mail
 MASTER_SITES=	SF/muttprint/muttprint/muttprint-${PORTVERSION}
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 467702 2018-04-18 10:50:38Z krion $
+# $FreeBSD: head/net-im/Makefile 468571 2018-04-28 19:42:11Z tcberner $
 #
 
     COMMENT = Instant messaging
@@ -40,7 +40,9 @@
     SUBDIR += jitsi
     SUBDIR += kaccounts-integration
     SUBDIR += kaccounts-providers
+    SUBDIR += kde-telepathy
     SUBDIR += kmess-kde4
+    SUBDIR += kopete
     SUBDIR += kopete-kde4
     SUBDIR += ktp-accounts-kcm
     SUBDIR += ktp-accounts-kcm-kde4

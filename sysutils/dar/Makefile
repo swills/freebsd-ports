@@ -1,8 +1,9 @@
 # Created by: Edson Brandi <ebrandi@fugspbr.org>
-# $FreeBSD: head/sysutils/dar/Makefile 450089 2017-09-19 01:05:41Z bofh $
+# $FreeBSD: head/sysutils/dar/Makefile 468066 2018-04-23 00:12:34Z bofh $
 
 PORTNAME=	dar
-PORTVERSION=	2.5.12
+PORTVERSION=	2.5.14
+DISTVERSIONSUFFIX=	-bis
 CATEGORIES=	sysutils archivers
 MASTER_SITES=	SF
 

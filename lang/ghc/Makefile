@@ -1,5 +1,5 @@
 # Created by: Simon Marlow <simonmar@microsoft.com>
-# $FreeBSD: head/lang/ghc/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/lang/ghc/Makefile 468307 2018-04-25 22:00:04Z mat $
 
 PORTNAME=	ghc
 PORTVERSION=	${GHC_VERSION}
@@ -216,7 +216,9 @@ pre-configure: apply-slist
 	@${ECHO_MSG} "           registration of both takes place.                          "
 	@${ECHO_MSG} "======================================================================"
 	@${ECHO_MSG} ""
+.  if !(defined(PACKAGE_BUILDING) || defined(BATCH))
 	@sleep 3
+.  endif
 
 	@${MKDIR} ${SLAVES_PREFIX}
 	@${MKDIR} ${SLAVES_WRKDIRPREFIX}

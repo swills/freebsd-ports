@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-django-braces/Makefile 464097 2018-03-10 22:59:23Z sunpoet $
+# $FreeBSD: head/www/py-django-braces/Makefile 468458 2018-04-27 15:56:45Z sunpoet $
 
 PORTNAME=	django-braces
-PORTVERSION=	1.12.0
+PORTVERSION=	1.13.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

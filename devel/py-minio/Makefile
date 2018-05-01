@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-minio/Makefile 465401 2018-03-23 20:01:36Z yuri $
+# $FreeBSD: head/devel/py-minio/Makefile 468653 2018-04-29 19:55:01Z dbaio $
 
 PORTNAME=	minio
-DISTVERSION=	3.0.4
+DISTVERSION=	4.0.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

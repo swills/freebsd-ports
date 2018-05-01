@@ -1,10 +1,10 @@
 # Created by: Carlo Strub <cs@FreeBSD.org>
-# $FreeBSD: head/devel/go-gocode/Makefile 457928 2018-01-02 21:23:08Z cs $
+# $FreeBSD: head/devel/go-gocode/Makefile 468072 2018-04-23 05:50:35Z ultima $
 
 PORTNAME=	gocode
 DISTVERSIONPREFIX=	v.
-DISTVERSION=	20170907-3
-DISTVERSIONSUFFIX=	-ge990796
+DISTVERSION=	20170907-14
+DISTVERSIONSUFFIX=	-gd7aee89
 CATEGORIES=	devel
 PKGNAMEPREFIX=	go-
 

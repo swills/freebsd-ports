@@ -1,5 +1,5 @@
 # Created by: Martin Blapp
-# $FreeBSD: head/mail/up-imapproxy/Makefile 460171 2018-01-28 13:09:08Z dbaio $
+# $FreeBSD: head/mail/up-imapproxy/Makefile 468290 2018-04-25 19:09:16Z brnrd $
 
 PORTNAME=	imapproxy
 PORTVERSION=	1.2.7
@@ -9,7 +9,7 @@ MASTER_SITES=	SF/squirrelmail/imap_proxy/${PORTVERSION}
 PKGNAMEPREFIX=	up-
 DISTNAME=	squirrelmail-imap_proxy-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	brnrd@FreeBSD.org
 COMMENT=	Caching IMAP proxy server
 
 LICENSE=	GPLv2+

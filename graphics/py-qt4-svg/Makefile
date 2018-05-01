@@ -1,8 +1,8 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/graphics/py-qt4-svg/Makefile 464266 2018-03-12 18:06:51Z tcberner $
+# $FreeBSD: head/graphics/py-qt4-svg/Makefile 468632 2018-04-29 16:19:44Z tcberner $
 
 PORTNAME=	svg
-PORTREVISION=	2
+PORTREVISION=	3
 PORTEPOCH=	1
 CATEGORIES=	graphics devel python
 

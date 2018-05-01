@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-mgmt/ndoutils/Makefile 434793 2017-02-25 10:51:00Z bofh $
+# $FreeBSD: head/net-mgmt/ndoutils/Makefile 468239 2018-04-24 20:04:13Z bofh $
 
 PORTNAME=	ndoutils
-PORTVERSION=	2.1.2
+PORTVERSION=	2.1.3
 CATEGORIES=	net-mgmt
 MASTER_SITES=	SF/nagios/${PORTNAME}-2.x/${PORTNAME}-${PORTVERSION}
 

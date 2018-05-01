@@ -1,8 +1,8 @@
 # Created by: Sergey Matveychuk <sem@FreeBSD.org>
-# $FreeBSD: head/databases/pxlib/Makefile 420141 2016-08-12 21:19:19Z bofh $
+# $FreeBSD: head/databases/pxlib/Makefile 468251 2018-04-24 23:39:10Z bofh $
 
 PORTNAME=	pxlib
-PORTVERSION=	0.6.7
+PORTVERSION=	0.6.8
 CATEGORIES=	databases
 MASTER_SITES=	SF
 
@@ -13,7 +13,7 @@ LICENSE=	GPLv2
 
 BUILD_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser
 
-USES=		gmake iconv libtool pathfix perl5
+USES=		gmake iconv libtool pathfix perl5 pkgconfig
 USE_GNOME=	intltool
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include

@@ -1,8 +1,9 @@
 # Created by: Thomas Zander <riggs@FreeBSD.org>
-# $FreeBSD: head/audio/pms-devel/Makefile 464866 2018-03-18 03:55:13Z yuri $
+# $FreeBSD: head/audio/pms-devel/Makefile 468700 2018-04-30 13:34:37Z riggs $
 
 PORTNAME=	pms-devel
 PORTVERSION=	0.0.20171103
+PORTREVISION=	1
 CATEGORIES=	audio
 
 MAINTAINER=	riggs@FreeBSD.org
@@ -50,9 +51,9 @@ do-build:
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pms-${GH_TAGNAME} ${STAGEDIR}${PREFIX}/bin/${GO_PKGNAME}
 
-do-install-DOCS-on:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${COPYTREE_SHARE} ${WRKSRC}/doc ${STAGEDIR}${DOCSDIR}
+	${INSTALL_MAN} ${WRKSRC}/doc/* ${STAGEDIR}${DOCSDIR}
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/${GO_PKGNAME}

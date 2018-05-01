@@ -1,8 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/devel/libclc/Makefile 457263 2017-12-25 23:23:24Z rezny $
+# $FreeBSD: head/devel/libclc/Makefile 468501 2018-04-27 23:09:59Z jbeich $
 
 PORTNAME=	libclc
 DISTVERSION=	0.3.0.20171127
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	x11@FreeBSD.org
@@ -24,7 +25,7 @@ USES=		gmake python:2.7,build gmake
 USE_LDCONFIG=	yes
 MAKE_ENV=	MAKE=${GMAKE} DESTDIR=${STAGEDIR}
 
-LLVMVER=	${MESA_LLVM_VER:U50}
+LLVMVER=	${MESA_LLVM_VER:U60}
 
 ALL_TARGET=
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-asciinema/Makefile 462018 2018-02-16 15:02:42Z swills $
+# $FreeBSD: head/textproc/py-asciinema/Makefile 468110 2018-04-23 17:38:47Z swills $
 
 PORTNAME=	asciinema
-PORTVERSION=	2.0.0
+PORTVERSION=	2.0.1
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

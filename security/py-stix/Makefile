@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-stix/Makefile 464930 2018-03-18 16:12:18Z antoine $
+# $FreeBSD: head/security/py-stix/Makefile 468420 2018-04-27 11:09:35Z antoine $
 
 PORTNAME=	stix
-PORTVERSION=	1.2.0.5
+PORTVERSION=	1.2.0.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

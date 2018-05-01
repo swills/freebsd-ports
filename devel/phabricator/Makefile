@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/phabricator/Makefile 467831 2018-04-20 14:56:21Z mat $
+# $FreeBSD: head/devel/phabricator/Makefile 467838 2018-04-20 20:05:53Z grembo $
 
 PORTNAME=	phabricator
-PORTVERSION=	20170630
-PORTREVISION=	1
+PORTVERSION=	20180420
 CATEGORIES=	devel
 PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
@@ -17,7 +16,7 @@ RUN_DEPENDS=	${PHP_PKGNAMEPREFIX}libphutil>0:devel/libphutil@${PHP_FLAVOR} \
 		git:devel/git
 
 OPTIONS_DEFINE=	GD OPCACHE
-OPTIONS_DEFAULT=OPCACHE
+OPTIONS_DEFAULT=GD OPCACHE
 OPCACHE_DESC?=	Use OPcache to improve performance
 
 USES=		php:flavors shebangfix
@@ -67,7 +66,7 @@ NO_BUILD=	yes
 USE_RC_SUBR=	phd
 SUB_FILES=	pkg-message
 GH_ACCOUNT=	phacility
-GH_TAGNAME=	83266e8
+GH_TAGNAME=	9bf4df2
 
 PHP_DESTDIR=	lib/php/phabricator
 

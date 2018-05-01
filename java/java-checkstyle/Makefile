@@ -1,8 +1,8 @@
 # Created by: Dave Glowacki <dglo@ssec.wisc.edu>
-# $FreeBSD: head/java/java-checkstyle/Makefile 458926 2018-01-13 11:25:40Z bofh $
+# $FreeBSD: head/java/java-checkstyle/Makefile 468247 2018-04-24 21:51:32Z bofh $
 
 PORTNAME=	checkstyle
-PORTVERSION=	8.7
+PORTVERSION=	8.9
 CATEGORIES=	java devel
 MASTER_SITES=	SF
 PKGNAMEPREFIX=	java-

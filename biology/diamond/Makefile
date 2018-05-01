@@ -1,8 +1,8 @@
-# $FreeBSD: head/biology/diamond/Makefile 464826 2018-03-17 15:29:13Z jrm $
+# $FreeBSD: head/biology/diamond/Makefile 467847 2018-04-20 21:23:27Z jrm $
 
 PORTNAME=	diamond
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.9.19
+DISTVERSION=	0.9.21
 CATEGORIES=	biology
 
 MAINTAINER=	jrm@FreeBSD.org
@@ -19,7 +19,6 @@ GH_ACCOUNT=	bbuchfink
 
 CFLAGS+=	-DNDEBUG
 PLIST_FILES=	bin/diamond
-
 .if ! defined(PACKAGE_BUILDING)
 CXXFLAGS+=	-march=native
 .endif

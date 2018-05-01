@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/monitorix/Makefile 433179 2017-02-02 20:43:15Z crees $
+# $FreeBSD: head/sysutils/monitorix/Makefile 468542 2018-04-28 13:47:47Z crees $
 
 PORTNAME=	monitorix
-PORTVERSION=	3.9.0
+PORTVERSION=	3.10.1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.monitorix.org/ \
 		http://www.monitorix.org/old_versions/ \

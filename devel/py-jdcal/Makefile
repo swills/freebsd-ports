@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-jdcal/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-jdcal/Makefile 467870 2018-04-21 10:30:18Z antoine $
 
 PORTNAME=	jdcal
-PORTVERSION=	1.3
+PORTVERSION=	1.4
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11/xinit/Makefile 448838 2017-08-27 19:27:38Z rezny $
+# $FreeBSD: head/x11/xinit/Makefile 468661 2018-04-29 21:51:53Z yuri $
 
 PORTNAME=	xinit
-PORTVERSION=	1.3.4
-PORTREVISION=	1
+PORTVERSION=	1.4.0
 PORTEPOCH=	1
 CATEGORIES=	x11
 
@@ -10,6 +9,7 @@ MAINTAINER=	x11@FreeBSD.org
 COMMENT=	X Window System initializer
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 XORG_CAT=	app
 USE_XORG=	x11

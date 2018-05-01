@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-bareword-filehandles/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-bareword-filehandles/Makefile 468483 2018-04-27 18:52:30Z sunpoet $
 
 PORTNAME=	bareword-filehandles
-PORTVERSION=	0.005
+PORTVERSION=	0.006
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:ILMARI
@@ -15,8 +15,7 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-B-Hooks-OP-Check>=0:devel/p5-B-Hooks-OP-Check \
-		p5-Lexical-SealRequireHints>=0:devel/p5-Lexical-SealRequireHints
+BUILD_DEPENDS=	p5-B-Hooks-OP-Check>=0:devel/p5-B-Hooks-OP-Check
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 BUILD_DEPENDS+=	p5-ExtUtils-Depends>=0:devel/p5-ExtUtils-Depends
 
