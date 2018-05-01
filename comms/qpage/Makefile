@@ -1,5 +1,5 @@
 # Created by: joes@seaport.net
-# $FreeBSD: head/comms/qpage/Makefile 411079 2016-03-14 14:39:15Z feld $
+# $FreeBSD: head/comms/qpage/Makefile 468307 2018-04-25 22:00:04Z mat $
 
 PORTNAME=	qpage
 PORTVERSION=	3.3
@@ -50,7 +50,9 @@ pre-patch:
 	@${ECHO_MSG} ""
 	@${ECHO_MSG} "Press ^C now to stop the build and set make options."
 	@${ECHO_MSG} "You may find it necessary to 'make clean' before restarting the build."
+.  if !(defined(PACKAGE_BUILDING) || defined(BATCH))
 	@sleep 2
+.  endif
 .endif
 
 post-patch:

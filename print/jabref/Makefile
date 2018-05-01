@@ -1,8 +1,8 @@
 # Created by: Fernan Aguero <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/print/jabref/Makefile 465100 2018-03-20 17:37:47Z mandree $
+# $FreeBSD: head/print/jabref/Makefile 468479 2018-04-27 18:01:28Z mandree $
 
 PORTNAME=	jabref
-PORTVERSION=	4.1
+PORTVERSION=	4.2
 PORTEPOCH=	1
 CATEGORIES=	print java editors
 MASTER_SITES=	http://builds.jabref.org/ \
@@ -20,9 +20,11 @@ LICENSE_COMB=	dual
 PORTSCOUT=	limit:.*[0-9]$$
 
 USE_JAVA=	yes
-JAVA_VERSION=	1.8+
+JAVA_VERSION=	1.8
 NO_BUILD=	yes
 NO_ARCH=	yes
+
+RUN_DEPENDS=	openjfx8-devel>0:java/openjfx8-devel
 
 DATADIR=	${JAVASHAREDIR}/${PORTNAME}
 icon=		${DATADIR}/${PORTNAME}-icon48x48.png

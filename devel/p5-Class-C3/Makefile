@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-Class-C3/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Class-C3/Makefile 467971 2018-04-22 08:54:20Z sunpoet $
 
 PORTNAME=	Class-C3
-PORTVERSION=	0.33
+PORTVERSION=	0.34
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-gems/Makefile 463068 2018-02-26 22:31:00Z sunpoet $
+# $FreeBSD: head/devel/rubygem-gems/Makefile 467999 2018-04-22 08:56:48Z sunpoet $
 
 PORTNAME=	gems
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

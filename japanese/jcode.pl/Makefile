@@ -1,5 +1,5 @@
 # Created by: sada
-# $FreeBSD: head/japanese/jcode.pl/Makefile 400848 2015-11-05 12:36:25Z mat $
+# $FreeBSD: head/japanese/jcode.pl/Makefile 468697 2018-04-30 13:12:56Z nobutaka $
 
 PORTNAME=	jcode.pl
 PORTVERSION=	2.13
@@ -12,12 +12,16 @@ EXTRACT_SUFX=	# none
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Perl library for Japanese character code conversion
 
-LICENSE=	BSD
+LICENSE=	JCODE.PL
+LICENSE_NAME=	License of jcode.pl
+LICENSE_FILE=	${FILESDIR}/LICENSE
+LICENSE_PERMS=	${_LICENSE_PERMS_DEFAULT}
 
 USES=		perl5
 USE_PERL5=	run
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
+NO_ARCH=	yes
 EXTRACT_CMD=	${CP}
 EXTRACT_BEFORE_ARGS=	# none
 EXTRACT_AFTER_ARGS=	${WRKSRC}/${PORTNAME}

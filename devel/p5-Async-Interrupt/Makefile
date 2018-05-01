@@ -1,8 +1,8 @@
 # Created by: Mikhail T. <michael@fun-box.ru>
-# $FreeBSD: head/devel/p5-Async-Interrupt/Makefile 459442 2018-01-19 17:02:32Z sunpoet $
+# $FreeBSD: head/devel/p5-Async-Interrupt/Makefile 467970 2018-04-22 08:54:14Z sunpoet $
 
 PORTNAME=	Async-Interrupt
-PORTVERSION=	1.22
+PORTVERSION=	1.24
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,8 +13,9 @@ COMMENT=	Allow C/XS libraries to interrupt perl asynchronously
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-BUILD_DEPENDS=	p5-common-sense>=0:devel/p5-common-sense
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+BUILD_DEPENDS=	p5-Canary-Stability>=0:devel/p5-Canary-Stability \
+		p5-common-sense>=0:devel/p5-common-sense
+RUN_DEPENDS=	p5-common-sense>=0:devel/p5-common-sense
 
 USES=		perl5
 USE_PERL5=	configure

@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/security/nextcloud-twofactor_u2f/Makefile 466394 2018-04-04 07:15:38Z brnrd $
+# $FreeBSD: head/security/nextcloud-twofactor_u2f/Makefile 468708 2018-04-30 15:43:16Z brnrd $
 
 PORTNAME=	twofactor_u2f
 PORTVERSION=	1.5.2
@@ -7,6 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	https://github.com/${PKGNAMEPREFIX:S/-//}/${PORTNAME}/releases/download/${DISTVERSIONPREFIX}${PORTVERSION}/
 PKGNAMEPREFIX=	nextcloud-
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME}
 DIST_SUBDIR=	${PKGNAMEPREFIX:S/-//}/${DISTNAME}-${DISTVERSIONPREFIX}${PORTVERSION}
 
@@ -16,9 +17,9 @@ COMMENT=	U2F multi-factor auth app for Nextcloud
 LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	nextcloud>=13.0.1:www/nextcloud
+RUN_DEPENDS=	nextcloud${PHP_PKGNAMESUFFIX}>=13.0.1:www/nextcloud@${PHP_FLAVOR}
 
-USES=		php
+USES=		php:flavors
 NO_BUILD=	yes
 NO_ARCH=	yes
 

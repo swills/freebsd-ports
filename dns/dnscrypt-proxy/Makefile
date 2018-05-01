@@ -1,5 +1,5 @@
-# Created by: Leo Vandewoestijne <freebsd@dns-lab.com>
-# $FreeBSD: head/dns/dnscrypt-proxy/Makefile 465521 2018-03-25 14:46:17Z dbaio $
+# Created by: Leo Vandewoestijne <freebsd@dns.company>
+# $FreeBSD: head/dns/dnscrypt-proxy/Makefile 468167 2018-04-24 00:49:55Z dbaio $
 
 PORTNAME=	dnscrypt-proxy
 PORTVERSION=	1.9.5
@@ -7,7 +7,7 @@ PORTREVISION=	3
 CATEGORIES=	dns
 MASTER_SITES=	LOCAL/dbaio/${PORTNAME}/
 
-MAINTAINER=	freebsd@dns-lab.com
+MAINTAINER=	freebsd@dns.company
 COMMENT=	Boost privacy and security of DNS
 
 LICENSE=	MIT

@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/py-humanfriendly/Makefile 466222 2018-04-02 11:59:20Z sunpoet $
+# $FreeBSD: head/textproc/py-humanfriendly/Makefile 468488 2018-04-27 18:52:56Z sunpoet $
 
 PORTNAME=	humanfriendly
-PORTVERSION=	4.10
+PORTVERSION=	4.12
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

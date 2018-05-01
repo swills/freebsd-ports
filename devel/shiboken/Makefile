@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@FreeBSD.org>
-# $FreeBSD: head/devel/shiboken/Makefile 460241 2018-01-29 06:45:16Z araujo $
+# $FreeBSD: head/devel/shiboken/Makefile 468213 2018-04-24 14:06:34Z wg $
 
 PORTNAME=	shiboken
 PORTVERSION=	1.2.2
@@ -7,7 +7,7 @@ PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	https://download.qt-project.org/official_releases/pyside/
 
-MAINTAINER=	wg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	C++ code generator for CPython extensions
 
 LICENSE=	GPLv2 LGPL21

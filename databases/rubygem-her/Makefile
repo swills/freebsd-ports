@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/rubygem-her/Makefile 453570 2017-11-05 21:16:44Z sunpoet $
+# $FreeBSD: head/databases/rubygem-her/Makefile 468366 2018-04-26 18:51:22Z sunpoet $
 
 PORTNAME=	her
-PORTVERSION=	0.10.0
+PORTVERSION=	0.10.1
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

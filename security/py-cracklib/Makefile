@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-cracklib/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/py-cracklib/Makefile 467862 2018-04-21 08:33:47Z amdmi3 $
 
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -16,7 +16,7 @@ PYTHON_SLAVEPORT=	yes
 
 post-patch:
 	@${REINPLACE_CMD} -e \
-	"{s#__version__ = '[^']*'#__version__ = '${PORTVERSION}'#;}" \
-	${BUILD_WRKSRC}/*.py
+		"{s#__version__ = '[^']*'#__version__ = '${PORTVERSION}'#;}" \
+		${BUILD_WRKSRC}/*.py
 
 .include "${MASTERDIR}/Makefile"

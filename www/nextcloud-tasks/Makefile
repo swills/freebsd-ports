@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/www/nextcloud-tasks/Makefile 466394 2018-04-04 07:15:38Z brnrd $
+# $FreeBSD: head/www/nextcloud-tasks/Makefile 468708 2018-04-30 15:43:16Z brnrd $
 
 PORTNAME=	tasks
 PORTVERSION=	0.9.6
@@ -8,6 +8,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 MASTER_SITES=	https://github.com/${PKGNAMEPREFIX:S/-//}/${PORTNAME}/releases/download/${DISTVERSIONPREFIX}${PORTVERSION}/
 PKGNAMEPREFIX=	nextcloud-
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME}
 DIST_SUBDIR=	${PKGNAMEPREFIX:S/-//}/${DISTNAME}-${DISTVERSIONPREFIX}${PORTVERSION}
 
@@ -17,9 +18,9 @@ COMMENT=	Tasks app for Nextcloud
 LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	nextcloud>=12:www/nextcloud
+RUN_DEPENDS=	nextcloud${PHP_PKGNAMESUFFIX}>=12:www/nextcloud@${PHP_FLAVOR}
 
-USES=		php
+USES=		php:flavors
 NO_BUILD=	yes
 NO_ARCH=	yes
 

@@ -1,8 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/print/typetools/Makefile 419101 2016-07-26 07:50:00Z bofh $
+# $FreeBSD: head/print/typetools/Makefile 468165 2018-04-24 00:33:59Z bofh $
 
 PORTNAME=	typetools
-PORTVERSION=	2.106
+PORTVERSION=	2.107
 CATEGORIES=	print
 MASTER_SITES=	http://www.lcdf.org/type/
 DISTNAME=	lcdf-${PORTNAME}-${PORTVERSION}

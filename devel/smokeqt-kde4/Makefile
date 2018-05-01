@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/smokeqt-kde4/Makefile 462214 2018-02-18 09:55:10Z rakuco $
+# $FreeBSD: head/devel/smokeqt-kde4/Makefile 468632 2018-04-29 16:19:44Z tcberner $
 
 PORTNAME=	smokeqt
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: Gleb Smirnoff <glebius@FreeBSD.org>
-# $FreeBSD: head/astro/josm/Makefile 456028 2017-12-11 13:04:53Z amdmi3 $
+# $FreeBSD: head/astro/josm/Makefile 468139 2018-04-23 20:52:14Z amdmi3 $
 
 PORTNAME=	josm
-PORTVERSION=	13170
+PORTVERSION=	13576
 CATEGORIES=	astro java
 MASTER_SITES=	http://josm.openstreetmap.de/download/ \
 		http://mirror.amdmi3.ru/distfiles/
@@ -49,6 +49,6 @@ do-install:
 	@${MKDIR} ${STAGEDIR}${JAVAJARDIR}/
 	${INSTALL_DATA} ${DISTDIR}/${DISTNAME} ${STAGEDIR}${JAVAJARDIR}/
 	${INSTALL_SCRIPT} ${WRKDIR}/josm.sh ${STAGEDIR}${PREFIX}/bin/josm
-	${INSTALL_DATA} ${WRKSRC}/images/logo.png ${STAGEDIR}${PREFIX}/share/pixmaps/josm.png
+	${INSTALL_DATA} ${WRKSRC}/images/logo_32x32x32.png ${STAGEDIR}${PREFIX}/share/pixmaps/josm.png
 
 .include <bsd.port.mk>

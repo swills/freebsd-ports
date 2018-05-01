@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 466814 2018-04-08 18:09:23Z tcberner $
+# $FreeBSD: head/games/Makefile 468636 2018-04-29 17:42:48Z tcberner $
 #
 
     COMMENT = Games and related software
@@ -329,6 +329,7 @@
     SUBDIR += gbottler
     SUBDIR += gbrainy
     SUBDIR += gcompris
+    SUBDIR += gcompris-qt
     SUBDIR += gdado
     SUBDIR += gemdropx
     SUBDIR += gemrb

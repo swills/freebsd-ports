@@ -1,13 +1,14 @@
-# $FreeBSD: head/x11/iceauth/Makefile 384234 2015-04-18 15:34:36Z kwm $
+# $FreeBSD: head/x11/iceauth/Makefile 468658 2018-04-29 21:34:52Z yuri $
 
 PORTNAME=	iceauth
-PORTVERSION=	1.0.7
+PORTVERSION=	1.0.8
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	ICE authority file utility for X
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 XORG_CAT=	app
 USE_XORG=	xproto ice

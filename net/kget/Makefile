@@ -1,8 +1,7 @@
-# $FreeBSD: head/net/kget/Makefile 467306 2018-04-14 11:09:16Z tcberner $
+# $FreeBSD: head/net/kget/Makefile 468558 2018-04-28 18:11:49Z tcberner $
 
 PORTNAME=	kget
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	net kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

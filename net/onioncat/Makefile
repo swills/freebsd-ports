@@ -1,8 +1,8 @@
 # Created by: <ports@c0decafe.net>
-# $FreeBSD: head/net/onioncat/Makefile 413519 2016-04-17 17:51:45Z cs $
+# $FreeBSD: head/net/onioncat/Makefile 468184 2018-04-24 06:50:00Z yuri $
 
 PORTNAME=	onioncat
-PORTVERSION=	0.2.2.r569
+DISTVERSION=	0.2.2.r578
 CATEGORIES=	net security
 MASTER_SITES=	https://www.cypherpunk.at/ocat/download/Source/stable/
 

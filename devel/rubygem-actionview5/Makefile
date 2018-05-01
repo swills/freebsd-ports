@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-actionview5/Makefile 466985 2018-04-10 18:27:26Z sunpoet $
+# $FreeBSD: head/devel/rubygem-actionview5/Makefile 467962 2018-04-22 08:50:22Z sunpoet $
 
 PORTNAME=	actionview
 PORTVERSION=	5.1.6
@@ -18,6 +18,8 @@ RUN_DEPENDS=	rubygem-activesupport5>=${PORTVERSION}:devel/rubygem-activesupport5
 		rubygem-erubi>=1.4:www/rubygem-erubi \
 		rubygem-rails-dom-testing-rails5>=2.0:textproc/rubygem-rails-dom-testing-rails5 \
 		rubygem-rails-html-sanitizer>=1.0.3:textproc/rubygem-rails-html-sanitizer
+
+PORTSCOUT=	limit:^5\.1\.
 
 NO_ARCH=	yes
 USE_RUBY=	yes

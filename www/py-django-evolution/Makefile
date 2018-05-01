@@ -1,9 +1,8 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/www/py-django-evolution/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django-evolution/Makefile 468735 2018-04-30 18:37:27Z cs $
 
 PORTNAME=	django-evolution
-PORTVERSION=	0.7.6
-PORTREVISION=	1
+PORTVERSION=	0.7.7
 DISTVERSIONPREFIX=	release-
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

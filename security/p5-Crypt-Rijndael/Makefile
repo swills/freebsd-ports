@@ -1,5 +1,5 @@
 # Created by: will
-# $FreeBSD: head/security/p5-Crypt-Rijndael/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/p5-Crypt-Rijndael/Makefile 468193 2018-04-24 09:03:47Z amdmi3 $
 
 PORTNAME=	Crypt-Rijndael
 PORTVERSION=	1.11
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	Perl module that implements the Rijndael cipher
+
+LICENSE=	GPLv3
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	p5-Test-Manifest>1.14:devel/p5-Test-Manifest
 

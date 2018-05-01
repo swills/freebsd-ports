@@ -1,10 +1,11 @@
 # Created by: Nick Sayer <nsayer@FreeBSD.org>
-# $FreeBSD: head/databases/unixODBC/Makefile 461756 2018-02-13 22:43:25Z brnrd $
+# $FreeBSD: head/databases/unixODBC/Makefile 468500 2018-04-27 22:07:53Z brnrd $
 
 PORTNAME=	unixODBC
-PORTVERSION=	2.3.5
+PORTVERSION=	2.3.6
 CATEGORIES=	databases
-MASTER_SITES=	ftp://ftp.unixodbc.org/pub/unixODBC/
+MASTER_SITES=	http://www.unixodbc.org/ \
+		ftp://ftp.unixodbc.org/pub/unixODBC/
 
 MAINTAINER=	brnrd@FreeBSD.org
 COMMENT=	ODBC library suite for Unix

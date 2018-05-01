@@ -1,9 +1,8 @@
 # Created by: Sergey Kozlov <kozlov.sergey.404@gmail.com>
-# $FreeBSD: head/devel/staf/Makefile 462052 2018-02-16 18:35:03Z brnrd $
+# $FreeBSD: head/devel/staf/Makefile 468637 2018-04-29 17:50:14Z dbaio $
 
 PORTNAME=	staf
-PORTVERSION=	3.4.23
-PORTREVISION=	3
+PORTVERSION=	3.4.26
 CATEGORIES=	devel net
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/V${PORTVERSION}
 DISTNAME=	STAF${PORTVERSION:S/.//g}-src
@@ -87,6 +86,7 @@ MAKE_JOBS_UNSAFE=	yes
 USES=		gmake
 USE_LDCONFIG=	yes
 USE_RC_SUBR=	stafproc
+USE_CXXSTD=	gnu++98
 SUB_LIST+=	STAF_VAR_DIR=${STAF_VAR_DIR}
 PLIST_SUB+=	STAF_VAR_DIR=${STAF_VAR_DIR}
 

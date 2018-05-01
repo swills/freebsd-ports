@@ -1,8 +1,9 @@
 # Created by: Stefan Lambrev <cheffo@freebsd-bg.org>
-# $FreeBSD: head/net-mgmt/kapacitor/Makefile 464501 2018-03-14 14:56:42Z swills $
+# $FreeBSD: head/net-mgmt/kapacitor/Makefile 467914 2018-04-22 06:58:10Z eadler $
 
 PORTNAME=	kapacitor
 PORTVERSION=	1.4.1
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-mgmt
 

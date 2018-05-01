@@ -1,10 +1,13 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net-im/qTox/Makefile 465278 2018-03-22 09:22:41Z yuri $
+# $FreeBSD: head/net-im/qTox/Makefile 468752 2018-05-01 03:46:22Z jbeich $
 
 PORTNAME=	qTox
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.14.1
 CATEGORIES=	net-im net-p2p
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	441931765ffe.patch:-p1
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Qt 5 based Tox client

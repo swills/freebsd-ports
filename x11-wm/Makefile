@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-wm/Makefile 452056 2017-10-14 11:01:52Z rene $
+# $FreeBSD: head/x11-wm/Makefile 468495 2018-04-27 20:29:36Z tcberner $
 #
 
     COMMENT = X11 window managers
@@ -96,6 +96,8 @@
     SUBDIR += phluid
     SUBDIR += piewm
     SUBDIR += plank
+    SUBDIR += plasma5-kdecoration
+    SUBDIR += plasma5-kwin
     SUBDIR += plwm
     SUBDIR += pwm
     SUBDIR += qlwm

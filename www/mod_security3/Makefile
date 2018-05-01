@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/mod_security3/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/www/mod_security3/Makefile 468551 2018-04-28 16:03:37Z joneum $
 
 PORTNAME=	mod_security
-DISTVERSION=	3.0.0
-PORTREVISION=	1
+DISTVERSIONPREFIX=	v
+DISTVERSION=	3.0.2
 CATEGORIES=	www security
 PKGNAMESUFFIX=	3
 
@@ -26,7 +26,6 @@ GNU_CONFIGURE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	SpiderLabs
 GH_PROJECT=	ModSecurity
-GH_TAGNAME=	0508395
 
 GH_TUPLE+=	SpiderLabs:secrules-language-tests:add8f63:secrules_language_tests/test/test-cases/secrules-language-tests
 GH_TUPLE+=	client9:libinjection:da027ab:libinjection/others/libinjection

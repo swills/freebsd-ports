@@ -1,6 +1,6 @@
-# $FreeBSD: head/graphics/blender/Makefile.versions 459139 2018-01-15 23:52:50Z yuri $
+# $FreeBSD: head/graphics/blender/Makefile.versions 468539 2018-04-28 12:19:23Z riggs $
 
 # Versions of Blender and its python dependency for use by depending ports, like add-ons
 
 BLENDER_BL_VERSION=	2.79
-BLENDER_PY_VERSION=	3.6
+BLENDER_PY_VERSION=	3.5

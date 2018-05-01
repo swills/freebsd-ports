@@ -1,8 +1,8 @@
 # Created by: Mathieu Arnold <mat@FreeBSD.org>
-# $FreeBSD: head/www/p5-Mojolicious-Plugin-Authentication/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Mojolicious-Plugin-Authentication/Makefile 468024 2018-04-22 12:50:35Z sunpoet $
 
 PORTNAME=	Mojolicious-Plugin-Authentication
-PORTVERSION=	1.32
+PORTVERSION=	1.33
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

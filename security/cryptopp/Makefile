@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/security/cryptopp/Makefile 464184 2018-03-11 16:10:19Z jhale $
+# $FreeBSD: head/security/cryptopp/Makefile 468307 2018-04-25 22:00:04Z mat $
 
 # Minor version bumps may not be ABI compatible and deskutils/cdcat
 # links to the static library, so bump PORTREVISION of dependent
@@ -96,7 +96,9 @@ pre-configure-FULL_DEBUG-on:
 	@${ECHO_CMD} "now and run 'make config clean' and disable the FULL_DEBUG option."
 	@${ECHO_CMD} "---------------------------------------------------------------------"
 	@${ECHO_CMD}
+.  if !(defined(PACKAGE_BUILDING) || defined(BATCH))
 	@sleep 10
+.  endif
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/libcryptopp.a ${STAGEDIR}${PREFIX}/lib

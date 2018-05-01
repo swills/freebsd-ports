@@ -1,8 +1,8 @@
 # Created by: Pavel Timofeev <timp87@gmail.com>
-# $FreeBSD: head/www/ufdbguard/Makefile 452636 2017-10-22 11:11:37Z dbaio $
+# $FreeBSD: head/www/ufdbguard/Makefile 468265 2018-04-25 09:27:56Z joneum $
 
 PORTNAME=	ufdbGuard
-PORTVERSION=	1.33.4
+PORTVERSION=	1.33.5
 CATEGORIES=	www
 MASTER_SITES=	SF/${PORTNAME:tl}/1.33
 

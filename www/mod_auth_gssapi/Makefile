@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/mod_auth_gssapi/Makefile 464189 2018-03-11 17:38:45Z brnrd $
+# $FreeBSD: head/www/mod_auth_gssapi/Makefile 468269 2018-04-25 10:23:58Z joneum $
 
 PORTNAME=	mod_auth_gssapi
-PORTVERSION=	1.6.0
+PORTVERSION=	1.6.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	${APACHE_PKGNAMEPREFIX}

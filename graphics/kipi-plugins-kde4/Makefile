@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/kipi-plugins-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/graphics/kipi-plugins-kde4/Makefile 468520 2018-04-28 07:39:40Z tcberner $
 
 PORTNAME=	kipi-plugins
 PORTVERSION=	${DIGIKAM_VER}
-PORTREVISION=	3
+PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	graphics kde
 

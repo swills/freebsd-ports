@@ -1,5 +1,6 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/devel/eric6/Makefile 459220 2018-01-17 06:19:00Z dbn $
+PORTREVISION=	1
+# $FreeBSD: head/devel/eric6/Makefile 468632 2018-04-29 16:19:44Z tcberner $
 
 PKGNAMESUFFIX=	-${FLAVOR:U:S/_/-/}
 CATEGORIES=	devel python

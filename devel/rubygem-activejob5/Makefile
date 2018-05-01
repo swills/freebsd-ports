@@ -1,5 +1,5 @@
 # Created by: Johannes Jost Meixner <xmj@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-activejob5/Makefile 466986 2018-04-10 18:27:32Z sunpoet $
+# $FreeBSD: head/devel/rubygem-activejob5/Makefile 467963 2018-04-22 08:50:28Z sunpoet $
 
 PORTNAME=	activejob
 PORTVERSION=	5.1.6
@@ -15,6 +15,8 @@ LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
 RUN_DEPENDS=	rubygem-activesupport5>=${PORTVERSION}:devel/rubygem-activesupport5 \
 		rubygem-globalid-rails5>=0.3.6:databases/rubygem-globalid-rails5
+
+PORTSCOUT=	limit:^5\.1\.
 
 NO_ARCH=	yes
 USE_RUBY=	yes

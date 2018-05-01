@@ -1,8 +1,8 @@
 # Created by: Elvis Chiang <elvis@sslab.cs.ccu.edu.tw>
-# $FreeBSD: head/www/wordpress/Makefile 461345 2018-02-09 22:48:12Z joneum $
+# $FreeBSD: head/www/wordpress/Makefile 468307 2018-04-25 22:00:04Z mat $
 
 PORTNAME=	wordpress
-DISTVERSION=	4.9.4
+DISTVERSION=	4.9.5
 PORTEPOCH=	1
 CATEGORIES=	www
 MASTER_SITES=	http://wordpress.org/
@@ -33,7 +33,9 @@ OPTIONS_DEFINE=	DOCS
 pre-everything::
 	@${ECHO_CMD} "If you want to upgrade, you must read upgrade document."
 	@${ECHO_CMD} ""
+.  if !(defined(PACKAGE_BUILDING) || defined(BATCH))
 	@sleep 1
+.  endif
 
 pre-install:
 	${ECHO_CMD} '@owner www' > ${PLIST}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fm/dolphin/Makefile 466903 2018-04-09 20:03:36Z tcberner $
+# $FreeBSD: head/x11-fm/dolphin/Makefile 468558 2018-04-28 18:11:49Z tcberner $
 
 PORTNAME=	dolphin
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -18,7 +18,7 @@ USES=		cmake:outsource compiler:c++11-lib gettext kde:5 tar:xz
 USE_KDE=	activities attica auth baloo baloo-widgets bookmarks codecs \
 		completion config configwidgets coreaddons crash dbusaddons \
 		doctools ecm emoticons filemetadata i18n iconthemes init \
-		itemmodels itemviews jobwidgets kcmutils \
+		itemmodels itemviews jobwidgets kcmutils kde-cli-tools \
 		kdelibs4support kio newstuff notifications parts service \
 		solid sonnet texteditor textwidgets widgetsaddons \
 		windowsystem xmlgui

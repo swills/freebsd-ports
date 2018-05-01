@@ -1,9 +1,9 @@
 # Created by: dindin
-# $FreeBSD: head/databases/flamerobin/Makefile 420289 2016-08-16 16:48:29Z amdmi3 $
+# $FreeBSD: head/databases/flamerobin/Makefile 468288 2018-04-25 18:40:14Z acm $
 
 PORTNAME=	flamerobin
 PORTVERSION=	0.9.2
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	databases
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src

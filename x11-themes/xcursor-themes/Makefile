@@ -1,14 +1,14 @@
-# $FreeBSD: head/x11-themes/xcursor-themes/Makefile 448082 2017-08-17 08:26:25Z bapt $
+# $FreeBSD: head/x11-themes/xcursor-themes/Makefile 468665 2018-04-29 22:09:45Z yuri $
 
 PORTNAME=	xcursor-themes
-PORTVERSION=	1.0.4
-PORTREVISION=	2
+PORTVERSION=	1.0.5
 CATEGORIES=	x11-themes
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	X.org cursors themes
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	xcursorgen:x11/xcursorgen
 

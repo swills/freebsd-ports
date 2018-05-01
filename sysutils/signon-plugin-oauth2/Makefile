@@ -1,9 +1,10 @@
-# $FreeBSD: head/sysutils/signon-plugin-oauth2/Makefile 465431 2018-03-24 07:51:20Z tcberner $
+# $FreeBSD: head/sysutils/signon-plugin-oauth2/Makefile 468640 2018-04-29 18:17:36Z tcberner $
 
 PORTNAME=	signon-plugin-oauth2
 DISTVERSION=	0.24
 CATEGORIES=	sysutils kde
 DISTNAME=	archive
+DIST_SUBDIR=	KDE/${GL_ACCOUNT}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Signon OAuth 1.0 and 2.0 plugin for accounts-sso

@@ -1,9 +1,8 @@
 # Created by: will
-# $FreeBSD: head/science/clhep/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/clhep/Makefile 468244 2018-04-24 20:51:38Z bofh $
 
 PORTNAME=	clhep
-PORTVERSION=	2.3.1.1
-PORTREVISION=	4
+PORTVERSION=	2.4.0.4
 CATEGORIES=	science
 MASTER_SITES=	http://proj-clhep.web.cern.ch/proj-clhep/DISTRIBUTION/tarFiles/
 
@@ -14,10 +13,11 @@ LICENSE=	GPLv3 LGPL3
 LICENSE_COMB=	multi
 
 BROKEN_powerpc64=	fails to compile: c++11 extension is not available for /usr/bin/c++
+BROKEN_FreeBSD_10=	does not compile on clan3.4, requires 3.5+
 
 WRKSRC=		${WRKDIR}/${PORTVERSION}/${PORTNAME:tu}
 
-USES=		cmake:outsource compiler:openmp perl5 tar:tgz
+USES=		cmake:outsource compiler:c++11-lang perl5 tar:tgz
 USE_PERL5=	build
 USE_LDCONFIG=	yes
 

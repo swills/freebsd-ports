@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/gwenview-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/graphics/gwenview-kde4/Makefile 468519 2018-04-28 06:14:58Z tcberner $
 
 PORTNAME=	gwenview
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	graphics kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

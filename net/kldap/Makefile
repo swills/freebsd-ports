@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kldap/Makefile 467007 2018-04-10 19:09:05Z tcberner $
+# $FreeBSD: head/net/kldap/Makefile 468558 2018-04-28 18:11:49Z tcberner $
 
 PORTNAME=	kldap
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -15,7 +15,7 @@ USES=		cmake:outsource compiler:c++11-lib gettext kde:5 tar:xz
 USE_KDE=	ecm completion config coreaddons i18n kio widgetsaddons service
 # pim components
 USE_KDE+=	mbox
-USE_QT5=	core gui widgets \
+USE_QT5=	core gui network widgets \
 		buildtools_build qmake_build
 USE_OPENLDAP=	yes
 USE_LDCONFIG=	yes

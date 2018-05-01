@@ -1,8 +1,8 @@
 # Created by: frankch@waru.life.nthu.edu.tw
-# $FreeBSD: head/biology/seaview/Makefile 458157 2018-01-05 17:40:41Z bofh $
+# $FreeBSD: head/biology/seaview/Makefile 468198 2018-04-24 12:31:32Z bofh $
 
 PORTNAME=	seaview
-PORTVERSION=	4.6.3
+PORTVERSION=	4.6.5
 PORTEPOCH=	1
 CATEGORIES=	biology
 MASTER_SITES=	ftp://pbil.univ-lyon1.fr/pub/mol_phylogeny/seaview/archive/
@@ -14,13 +14,15 @@ COMMENT=	Multiple DNA/protein sequence alignment editor
 LICENSE=	GPLv3
 
 LIB_DEPENDS=	libfltk.so:x11-toolkits/fltk \
+		libfontconfig.so:x11-fonts/fontconfig \
 		libpng.so:graphics/png
 
 PORTSCOUT=	skipv:4.6.1.3
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-USES=		gmake
-USE_XORG=	xext xft xinerama
+USES=		gmake jpeg
+USE_XORG=	x11 xcursor xext xfixes xft xinerama xrender
+
 MAKE_ENV=	HELPFILE='-DDEFAULT_HELPFILE=\"${DATADIR}/seaview.html\"' \
 		PHYMLNAME='-DPHYMLNAME=\"phyml\"' \
 		IFLTK='-I${LOCALBASE}/include' \

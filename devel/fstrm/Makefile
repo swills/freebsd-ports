@@ -1,12 +1,12 @@
-# Created by: Leo Vandewoestijne <freebsd@dns-lab.com>
-# $FreeBSD: head/devel/fstrm/Makefile 439675 2017-04-28 21:01:28Z truckman $
+# Created by: Leo Vandewoestijne <freebsd@dns.company>
+# $FreeBSD: head/devel/fstrm/Makefile 468167 2018-04-24 00:49:55Z dbaio $
 
 PORTNAME=		fstrm
 PORTVERSION=		0.3.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=		devel
 
-MAINTAINER=		freebsd@dns-lab.com
+MAINTAINER=		freebsd@dns.company
 COMMENT=		Implementation of the Frame Streams data transport protocol in C
 
 LICENSE=		APACHE20

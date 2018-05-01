@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: head/net-mgmt/kapacitor/files/kapacitord.in 464062 2018-03-10 10:41:37Z rodrigo $
+# $FreeBSD: head/net-mgmt/kapacitor/files/kapacitord.in 467914 2018-04-22 06:58:10Z eadler $
 
 # PROVIDE: kapacitord
 # REQUIRE: DAEMON NETWORKING
@@ -35,7 +35,7 @@ start_precmd=kapacitord_prestart
 kapacitord_pidfile="/var/run/${name}.pid"
 procname="%%PREFIX%%/bin/${name}"
 command=/usr/sbin/daemon
-+start_cmd="kapacitord_startcmd_%%KAPACITORD_LOGCMD%%"
+start_cmd="kapacitord_startcmd_%%KAPACITORD_LOGCMD%%"
 
 kapacitord_startcmd_daemon()
 {

@@ -1,10 +1,9 @@
 # Created by: Carlos J Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/net/grive2/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/net/grive2/Makefile 468141 2018-04-23 21:32:53Z cpm $
 
 PORTNAME=	grive2
-PORTVERSION=	0.5.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	7
+DISTVERSION=	0.5.1-dev
 CATEGORIES=	net
 
 MAINTAINER=	cpm@FreeBSD.org
@@ -20,12 +19,11 @@ LIB_DEPENDS=	libboost_filesystem.so:devel/boost-libs \
 		libgpg-error.so:security/libgpg-error \
 		libyajl.so:devel/yajl
 
-CONFLICTS_INSTALL=	grive-[0-9]*
-
 USES=		cmake localbase pkgconfig
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	vitalif
+GH_TAGNAME=	11a3d78
 
 PLIST_FILES=	bin/grive \
 		man/man1/grive.1.gz

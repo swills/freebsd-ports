@@ -1,5 +1,5 @@
 # Created by: grog
-# $FreeBSD: head/x11/xtset/Makefile 413622 2016-04-19 04:09:01Z mi $
+# $FreeBSD: head/x11/xtset/Makefile 468611 2018-04-29 09:03:51Z amdmi3 $
 
 PORTNAME=	xtset
 PORTVERSION=	1.1
@@ -8,6 +8,8 @@ MASTER_SITES=	ftp://ftp.lemis.com/pub/
 
 MAINTAINER=	grog@FreeBSD.org
 COMMENT=	Utility to set title on an xterm
+
+LICENSE=	NONE
 
 NO_WRKSUBDIR=	yes
 

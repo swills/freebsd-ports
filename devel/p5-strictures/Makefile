@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-strictures/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-strictures/Makefile 467985 2018-04-22 08:55:35Z sunpoet $
 
 PORTNAME=	strictures
-PORTVERSION=	2.000003
+PORTVERSION=	2.000004
 PORTEPOCH=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN

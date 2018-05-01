@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/py-qt5-multimedia/Makefile 464266 2018-03-12 18:06:51Z tcberner $
+# $FreeBSD: head/multimedia/py-qt5-multimedia/Makefile 468632 2018-04-29 16:19:44Z tcberner $
 
 PORTNAME=	multimedia
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	multimedia devel python
 
 MAINTAINER=	kde@FreeBSD.org

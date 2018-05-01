@@ -1,12 +1,12 @@
-# $FreeBSD: head/databases/arangodb33/Makefile 461187 2018-02-07 21:01:44Z yuri $
+# $FreeBSD: head/databases/arangodb33/Makefile 468099 2018-04-23 15:49:47Z yuri $
 
 PORTNAME=	arangodb
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.3.3
+DISTVERSION=	3.3.7
 CATEGORIES=	databases net
 PKGNAMESUFFIX=	33
 
-MAINTAINER=	galu@packetdam.com
+MAINTAINER=	dev@dudu.ro	
 COMMENT=	ArangoDB is a distributed NoSQL database with multiple data models
 
 LICENSE=	APACHE20

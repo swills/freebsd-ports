@@ -1,7 +1,7 @@
 # Created by: Michael Nottebrock <lofi@FreeBSD.org>
-# $FreeBSD: head/databases/qt4-ibase-plugin/Makefile 463394 2018-03-02 13:07:57Z adridg $
+# $FreeBSD: head/databases/qt4-ibase-plugin/Makefile 468288 2018-04-25 18:40:14Z acm $
 
-PORTREVISION=	2
+PORTREVISION=	3
 
 COMMENT=	Qt InterBase/Firebird database plugin
 DB=		ibase

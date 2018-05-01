@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/py-keras/Makefile 466207 2018-04-02 08:03:29Z yuri $
+# $FreeBSD: head/math/py-keras/Makefile 468645 2018-04-29 19:36:09Z dbaio $
 
 PORTNAME=	keras
-DISTVERSION=	2.1.5
+DISTVERSION=	2.1.6
 CATEGORIES=	math
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -19,7 +19,7 @@ RUN_DEPENDS=	${PYNUMPY} \
 
 USES=		python
 USE_GITHUB=	yes
-GH_ACCOUNT=	fchollet
+GH_ACCOUNT=	keras-team
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

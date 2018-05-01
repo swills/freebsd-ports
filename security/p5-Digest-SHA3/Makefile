@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/security/p5-Digest-SHA3/Makefile 457337 2017-12-26 23:20:49Z sunpoet $
+# $FreeBSD: head/security/p5-Digest-SHA3/Makefile 467867 2018-04-21 09:44:42Z wen $
 
 PORTNAME=	Digest-SHA3
-PORTVERSION=	1.03
+PORTVERSION=	1.04
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

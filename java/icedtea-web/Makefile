@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/icedtea-web/Makefile 451901 2017-10-12 15:57:51Z mat $
+# $FreeBSD: head/java/icedtea-web/Makefile 468307 2018-04-25 22:00:04Z mat $
 
 PORTNAME=	icedtea-web
 PORTVERSION=	1.6.2
@@ -83,7 +83,9 @@ pre-extract:
 	@${ECHO_MSG} "IMPORTANT: To build IcedTea-Web ${PORTVERSION}, you have to turn on 'ICEDTEA' option"
 	@${ECHO_MSG} "for ${JAVA_PORT} (default).  Otherwise, it will neither build nor work."
 	@${ECHO_MSG}
+.  if !(defined(PACKAGE_BUILDING) || defined(BATCH))
 	@sleep 5
+.  endif
 .endif
 
 post-patch:

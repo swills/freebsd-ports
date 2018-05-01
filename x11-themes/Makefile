@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/Makefile 464075 2018-03-10 14:07:27Z jhale $
+# $FreeBSD: head/x11-themes/Makefile 468495 2018-04-27 20:29:36Z tcberner $
 #
 
     COMMENT = X11 themes
@@ -149,6 +149,12 @@
     SUBDIR += openbox-arc-theme
     SUBDIR += openbox-themes
     SUBDIR += plank-theme-moka
+    SUBDIR += plasma5-breeze
+    SUBDIR += plasma5-breeze-gtk
+    SUBDIR += plasma5-breeze-kde4
+    SUBDIR += plasma5-kde-gtk-config
+    SUBDIR += plasma5-oxygen
+    SUBDIR += plasma5-plasma-workspace-wallpapers
     SUBDIR += qt4-style-Kvantum
     SUBDIR += qt4-style-float
     SUBDIR += qt4-style-phase

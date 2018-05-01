@@ -1,5 +1,5 @@
-# Created by: Leo Vandewoestijne <freebsd@dns-lab.com>
-# $FreeBSD: head/dns/knot1/Makefile 448519 2017-08-22 12:56:03Z swills $
+# Created by: Leo Vandewoestijne <freebsd@dns.company>
+# $FreeBSD: head/dns/knot1/Makefile 468167 2018-04-24 00:49:55Z dbaio $
 
 PORTNAME=	knot
 PORTVERSION=	1.6.8
@@ -9,7 +9,7 @@ MASTER_SITES=	https://secure.nic.cz/files/knot-dns/ \
 		http://dns-lab.com/downloads/knot-dns/
 PKGNAMESUFFIX=	1
 
-MAINTAINER=	freebsd@dns-lab.com
+MAINTAINER=	freebsd@dns.company
 COMMENT=	High performance authoritative-only DNS server
 
 LICENSE=	GPLv3

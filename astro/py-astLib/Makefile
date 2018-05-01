@@ -1,9 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/astro/py-astLib/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/astro/py-astLib/Makefile 468447 2018-04-27 15:55:49Z sunpoet $
 
 PORTNAME=	astLib
-PORTVERSION=	0.10.0
-PORTREVISION=	1
+PORTVERSION=	0.10.1
 CATEGORIES=	astro python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -22,10 +21,10 @@ RUN_DEPENDS=	${PKGNAMEPREFIX}astropy>=1.1:astro/py-astropy@${FLAVOR} \
 
 PORTSCOUT=	skipv:0.15,0.17,0.17.1 # incorrect versioning upstream
 
-USES=		python:2.7
-USE_PYTHON=	autoplist distutils
+USES=		python
+USE_PYTHON=	autoplist concurrent distutils
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/PyWCSTools/*.so
+	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/PyWCSTools/*.so
 
 .include <bsd.port.mk>

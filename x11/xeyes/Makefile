@@ -1,11 +1,14 @@
-# $FreeBSD: head/x11/xeyes/Makefile 364347 2014-08-08 08:42:44Z olgeni $
+# $FreeBSD: head/x11/xeyes/Makefile 468660 2018-04-29 21:44:16Z yuri $
 
 PORTNAME=	xeyes
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	Follow the mouse X demo
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 XORG_CAT=	app
 USE_XORG=	x11 xt xext xmu xrender

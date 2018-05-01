@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/audio/p5-Audio-Scan/Makefile 455468 2017-12-03 20:37:22Z sunpoet $
+# $FreeBSD: head/audio/p5-Audio-Scan/Makefile 467913 2018-04-22 06:32:23Z wen $
 
 PORTNAME=	Audio-Scan
-PORTVERSION=	0.99
+PORTVERSION=	1.00
 CATEGORIES=	audio perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

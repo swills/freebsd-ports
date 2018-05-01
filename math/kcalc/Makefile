@@ -1,8 +1,7 @@
-# $FreeBSD: head/math/kcalc/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/math/kcalc/Makefile 468558 2018-04-28 18:11:49Z tcberner $
 
 PORTNAME=	kcalc
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	math kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

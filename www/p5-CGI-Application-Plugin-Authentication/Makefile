@@ -1,8 +1,8 @@
 # Created by: George Hartzell <hartzell@alerce.com>
-# $FreeBSD: head/www/p5-CGI-Application-Plugin-Authentication/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-CGI-Application-Plugin-Authentication/Makefile 468059 2018-04-22 20:51:44Z bofh $
 
 PORTNAME=	CGI-Application-Plugin-Authentication
-PORTVERSION=	0.21
+PORTVERSION=	0.23
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

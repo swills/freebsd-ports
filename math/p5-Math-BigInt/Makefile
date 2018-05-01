@@ -1,11 +1,10 @@
 # Created by: tobez
-# $FreeBSD: head/math/p5-Math-BigInt/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/math/p5-Math-BigInt/Makefile 467987 2018-04-22 08:55:45Z sunpoet $
 
 PORTNAME=	Math-BigInt
-PORTVERSION=	1.999808
+PORTVERSION=	1.999813
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
-MASTER_SITE_SUBDIR=	CPAN:PJACKLAM
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org

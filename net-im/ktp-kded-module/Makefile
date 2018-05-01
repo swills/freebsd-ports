@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ktp-kded-module/Makefile 466968 2018-04-10 16:18:29Z tcberner $
+# $FreeBSD: head/net-im/ktp-kded-module/Makefile 468558 2018-04-28 18:11:49Z tcberner $
 
 PORTNAME=	ktp-kded-module
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -11,7 +11,7 @@ LIB_DEPENDS=	libtelepathy-qt5.so:net-im/telepathy-qt5 \
 		libKTpCommonInternals.so:net-im/ktp-common-internals
 
 USES=		cmake:outsource gettext kde:5 tar:xz
-USE_KDE=	auth codecs completion config configwidgets coreaddons \
+USE_KDE=	activities auth codecs completion config configwidgets coreaddons \
 		dbusaddons i18n idletime jobwidgets kcmutils kio notifications \
 		service wallet widgetsaddons
 USE_QT5=	concurrent core dbus gui network sql widgets xml \

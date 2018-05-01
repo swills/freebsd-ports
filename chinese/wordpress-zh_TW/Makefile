@@ -1,5 +1,5 @@
 # Created by: Joe Horn <joehorn@gmail.com>
-# $FreeBSD: head/chinese/wordpress-zh_TW/Makefile 451327 2017-10-05 17:42:07Z joneum $
+# $FreeBSD: head/chinese/wordpress-zh_TW/Makefile 468307 2018-04-25 22:00:04Z mat $
 
 PORTNAME=	wordpress
 PORTVERSION=	4.8.2
@@ -33,7 +33,9 @@ SUB_FILES=	pkg-message
 pre-everything::
 	@${ECHO_CMD} "If you want to upgrade, you must read upgrade document."
 	@${ECHO_CMD} ""
+.  if !(defined(PACKAGE_BUILDING) || defined(BATCH))
 	@sleep 1
+.  endif
 
 pre-install:
 	${ECHO_CMD} '@owner www' > ${PLIST}

@@ -1,8 +1,8 @@
 # Created by: Eugene Grosbein <eugen@FreeBSD.org>
-# $FreeBSD: head/sysutils/cpupdate/Makefile 466680 2018-04-06 17:12:53Z eugen $
+# $FreeBSD: head/sysutils/cpupdate/Makefile 468696 2018-04-30 13:01:19Z eugen $
 
 PORTNAME=	cpupdate
-DISTVERSION=	g20180323
+DISTVERSION=	g20180324
 PORTREVISION=	1
 CATEGORIES=	sysutils
 
@@ -23,13 +23,13 @@ SUB_LIST=	CPM_DIR=${CPM_DIR} INTEL_DIR=${INTEL_DIR}
 USE_GITHUB=	yes
 GH_ACCOUNT=	kernschmelze
 GH_PROJECT=	${PORTNAME}
-GH_TAGNAME=	7633a43
+GH_TAGNAME=	82ec0b6
 
 PLIST_FILES=	sbin/${PORTNAME} man/man8/${PORTNAME}.8.gz
 
 CPM_ACCOUNT=	platomav
 CPM_PROJECT=	CPUMicrocodes
-CPM_TAGNAME=	079248c
+CPM_TAGNAME=	869ad44
 
 OPTIONS_DEFINE=		CPM INTEL
 CPM_DESC=		Download platomav/CPUMicrocodes collection

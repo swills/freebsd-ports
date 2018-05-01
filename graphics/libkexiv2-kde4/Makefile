@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/libkexiv2-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/graphics/libkexiv2-kde4/Makefile 468519 2018-04-28 06:14:58Z tcberner $
 
 PORTNAME=	libkexiv2
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics kde kde-kde4
 
 MAINTAINER=	kde@FreeBSD.org

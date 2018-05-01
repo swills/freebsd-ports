@@ -1,9 +1,9 @@
 # Created by: Lukas Maly <Iam@LukasMaly.NET>
-# $FreeBSD: head/astro/gpscorrelate/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/astro/gpscorrelate/Makefile 468519 2018-04-28 06:14:58Z tcberner $
 
 PORTNAME=	gpscorrelate
 PORTVERSION=	1.6.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	astro geography
 
 MAINTAINER=	ports@FreeBSD.org

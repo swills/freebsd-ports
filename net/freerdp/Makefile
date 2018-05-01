@@ -1,10 +1,13 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/net/freerdp/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/net/freerdp/Makefile 468743 2018-04-30 19:28:30Z jbeich $
 
 PORTNAME=	freerdp
 DISTVERSION=	2.0.0-rc1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net comms ipv6
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	78df32c77f28.patch:-p1 ed571e74a594.patch:-p1
 
 MAINTAINER=	kevans@FreeBSD.org
 COMMENT=	Free implementation of Remote Desktop Protocol

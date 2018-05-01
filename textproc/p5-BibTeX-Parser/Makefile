@@ -1,8 +1,8 @@
 # Created by: Wen Heping<wen@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-BibTeX-Parser/Makefile 455496 2017-12-04 06:28:20Z wen $
+# $FreeBSD: head/textproc/p5-BibTeX-Parser/Makefile 468649 2018-04-29 19:46:23Z sunpoet $
 
 PORTNAME=	BibTeX-Parser
-PORTVERSION=	1.01
+PORTVERSION=	1.02
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:BORISV
@@ -19,6 +19,7 @@ BUILD_DEPENDS=	p5-IO-String>=0:devel/p5-IO-String \
 		p5-LaTeX-ToUnicode>=0.02:textproc/p5-LaTeX-ToUnicode
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

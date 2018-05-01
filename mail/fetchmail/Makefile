@@ -1,9 +1,9 @@
 # Created by: Ville Eerola <ve@sci.fi>
-# $FreeBSD: head/mail/fetchmail/Makefile 462134 2018-02-17 12:00:18Z sunpoet $
+# $FreeBSD: head/mail/fetchmail/Makefile 468557 2018-04-28 17:49:37Z cy $
 
 PORTNAME=	fetchmail
 PORTVERSION=	6.3.26
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	mail ipv6
 MASTER_SITES=	SF/${PORTNAME}/branch_6.3/ \
 		http://mandree.home.pages.de/${PORTNAME}/
@@ -46,7 +46,7 @@ GSSAPI_BASE_CONFIGURE_ON=	--with-gssapi=${GSSAPIBASEDIR} ${GSSAPI_CONFIGURE_ARGS
 GSSAPI_HEIMDAL_USES=	gssapi:heimdal
 GSSAPI_HEIMDAL_CONFIGURE_ON=	--with-gssapi=${GSSAPIBASEDIR} ${GSSAPI_CONFIGURE_ARGS}
 GSSAPI_MIT_USES=	gssapi:mit
-GSSAPI_MIT_CONFIGURE_ON=	--with-gssapi=${GSSAPIBASEDIR} ${GSSAPI_CONFIGURE_ARGS}
+GSSAPI_MIT_CONFIGURE_ON=	--with-kerberos5=${GSSAPIBASEDIR} ${GSSAPI_CONFIGURE_ARGS}
 GSSAPI_NONE_CONFIGURE_ON=	--without-gssapi
 
 X11_DESC=	Python/Tkinter dependencies for ``fetchmailconf''

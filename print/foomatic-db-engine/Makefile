@@ -1,9 +1,8 @@
 # Created by: Martin Ranne <gasp@ridcully.dnsalias.org>
-# $FreeBSD: head/print/foomatic-db-engine/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/foomatic-db-engine/Makefile 468199 2018-04-24 12:40:47Z bofh $
 
 PORTNAME=	foomatic-db-engine
-PORTVERSION=	4.0.12
-PORTREVISION=	1
+PORTVERSION=	4.0.13
 PORTEPOCH=	2
 CATEGORIES=	print
 MASTER_SITES=	http://www.openprinting.org/download/foomatic/
@@ -15,8 +14,8 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
-USE_GNOME=	libxml2
 USES=		gmake perl5
+USE_GNOME=	libxml2
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	PERL=${PERL} LIBDIR=${PREFIX}/share/foomatic/ \
 		LIB_CUPS=${LOCALBASE}/libexec/cups \

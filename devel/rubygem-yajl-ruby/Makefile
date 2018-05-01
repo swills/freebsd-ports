@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-yajl-ruby/Makefile 453699 2017-11-07 21:03:05Z sunpoet $
+# $FreeBSD: head/devel/rubygem-yajl-ruby/Makefile 468585 2018-04-28 20:10:52Z sunpoet $
 
 PORTNAME=	yajl-ruby
-PORTVERSION=	1.3.1
+PORTVERSION=	1.4.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
