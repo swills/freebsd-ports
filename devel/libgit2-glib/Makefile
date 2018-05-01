@@ -2,7 +2,7 @@
 # $FreeBSD: head/devel/libgit2-glib/Makefile 455098 2017-11-29 10:10:03Z tz $
 
 PORTNAME=	libgit2-glib
-PORTVERSION=	0.26.0
+PORTVERSION=	0.27.0
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
