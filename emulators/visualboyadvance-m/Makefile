@@ -1,9 +1,9 @@
 # Created by: Nicole Reid <root@cooltrainer.org>
-# $FreeBSD: head/emulators/visualboyadvance-m/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/emulators/visualboyadvance-m/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	visualboyadvance-m
 PORTVERSION=	2.0.0b2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	emulators
 
 MAINTAINER=	root@cooltrainer.org

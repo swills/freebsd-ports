@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/roundcube/Makefile 467213 2018-04-13 07:19:32Z ale $
+# $FreeBSD: head/mail/roundcube/Makefile 468851 2018-05-02 16:15:59Z mat $
 
 PORTNAME=	roundcube
 DISTVERSION=	1.3.6
@@ -6,6 +6,7 @@ PORTEPOCH=	1
 CATEGORIES?=	mail www
 MASTER_SITES=	https://github.com/roundcube/roundcubemail/releases/download/${DISTVERSION}/
 DISTNAME=	${PORTNAME}mail-${DISTVERSION}-complete
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
 MAINTAINER?=	ale@FreeBSD.org
 COMMENT=	Fully skinnable XHTML/CSS webmail written in PHP
@@ -20,7 +21,7 @@ RCUBECOMP=	SQL config .htaccess index.php installer logs \
 		plugins program skins temp vendor
 PORTDOCS=	CHANGELOG INSTALL README.md UPGRADING
 
-USES=		cpe php:web
+USES=		cpe php:web,flavors
 CPE_PRODUCT=	webmail
 CPE_VENDOR=	roundcube
 

@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/nucleo/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/x11-toolkits/nucleo/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	nucleo
 PORTVERSION=	0.7.6
-PORTREVISION=	20
+PORTREVISION=	21
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://insitu.lri.fr/metisse/download/nucleo/
 
@@ -36,6 +36,7 @@ AVAHI_LIB_DEPENDS=	libdns_sd.so:net/avahi-libdns
 AVAHI_CPPFLAGS=		-I${LOCALBASE}/include/avahi-compat-libdns_sd
 
 FFMPEG_DESC=		Build FFmpeg plugin
+FFMPEG_BROKEN=		fails to build with ffmpeg 4.0
 FFMPEG_LIB_DEPENDS=	libavformat.so:multimedia/ffmpeg
 FFMPEG_CONFIGURE_OFF=	--without-ffmpeg
 

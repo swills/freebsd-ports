@@ -1,9 +1,9 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/multimedia/miro/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/multimedia/miro/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	miro
 PORTVERSION=	6.0
-PORTREVISION=	17
+PORTREVISION=	18
 CATEGORIES=	multimedia
 MASTER_SITES=	ftp://ftp.osuosl.org/pub/pculture.org/miro/src/ \
 		http://ftp.osuosl.org/pub/pculture.org/miro/src/
@@ -12,6 +12,8 @@ MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Video player to get internet TV broadcasts
 
 LICENSE=	GPLv2
+
+BROKEN=		fails to build with ffmpeg 4.0
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyrex>0:devel/pyrex@${FLAVOR} \
 		${PYTHON_SITELIBDIR}/webkit/__init__.py:www/py-webkitgtk@${FLAVOR} \

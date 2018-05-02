@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 468639 2018-04-29 17:56:08Z tcberner $
+# $FreeBSD: head/graphics/Makefile 468806 2018-05-02 00:07:48Z olivier $
 #
 
     COMMENT = Graphics tools and libraries
@@ -636,6 +636,7 @@
     SUBDIR += mxp
     SUBDIR += mypaint
     SUBDIR += nathive
+    SUBDIR += natron
     SUBDIR += netpbm
     SUBDIR += nip2
     SUBDIR += nomacs
@@ -658,6 +659,9 @@
     SUBDIR += opencv-core
     SUBDIR += opencv-java
     SUBDIR += opendx
+    SUBDIR += openfx-arena
+    SUBDIR += openfx-io
+    SUBDIR += openfx-misc
     SUBDIR += opengl-man
     SUBDIR += openicc-config
     SUBDIR += openimageio

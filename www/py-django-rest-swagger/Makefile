@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-django-rest-swagger/Makefile 465759 2018-03-27 21:20:29Z yuri $
+# $FreeBSD: head/www/py-django-rest-swagger/Makefile 468800 2018-05-01 19:51:16Z sunpoet $
 
 PORTNAME=	django-rest-swagger
-DISTVERSION=	2.1.2
+DISTVERSION=	2.2.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

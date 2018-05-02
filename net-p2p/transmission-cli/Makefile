@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/transmission-cli/Makefile 463262 2018-02-28 21:09:36Z crees $
+# $FreeBSD: head/net-p2p/transmission-cli/Makefile 468780 2018-05-01 19:03:18Z rene $
 
 PORTNAME=	transmission
 PORTVERSION=	2.93
@@ -62,7 +62,7 @@ EXTRA_PATCHES=	${PATCHDIR}/disable-web
 OPTIONS_DEFINE+=	DOCS LITE
 OPTIONS_DEFAULT+=	OPENSSL
 OPTIONS_SINGLE+=	SSL
-OPTIONS_SINGLE_SSL+=	OPENSSL POLARSSL WOLFSSL
+OPTIONS_SINGLE_SSL+=	OPENSSL WOLFSSL
 
 LITE_CONFIGURE_ENABLE=	lightweight
 
@@ -70,9 +70,6 @@ OPENSSL_USES=		ssl
 OPENSSL_CONFIGURE_ENV=	OPENSSL_CFLAGS="-I${OPENSSLINC}" \
 			OPENSSL_LIBS="-L${OPENSSLLIB} -lcrypto"
 OPENSSL_CONFIGURE_ON=	--with-crypto=openssl
-
-POLARSSL_LIB_DEPENDS=	libpolarssl.so:security/polarssl13
-POLARSSL_CONFIGURE_ON=	--with-crypto=polarssl
 
 WOLFSSL_LIB_DEPENDS=	libwolfssl.so:security/wolfssl
 WOLFSSL_CONFIGURE_ON=	--with-crypto=cyassl

@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/sysutils/xvidcap/Makefile 452571 2017-10-21 06:57:23Z jbeich $
+# $FreeBSD: head/sysutils/xvidcap/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=		xvidcap
 PORTVERSION=		1.1.7
-PORTREVISION=		6
+PORTREVISION=		7
 PORTEPOCH=		1
 CATEGORIES=		sysutils multimedia
 MASTER_SITES=		SF

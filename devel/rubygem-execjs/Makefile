@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-execjs/Makefile 456438 2017-12-15 23:53:00Z sunpoet $
+# $FreeBSD: head/devel/rubygem-execjs/Makefile 468796 2018-05-01 19:50:55Z sunpoet $
 
 PORTNAME=	execjs
 PORTVERSION=	2.7.0
@@ -17,15 +17,13 @@ USE_RUBY=	yes
 USES=		gem
 
 OPTIONS_SINGLE=	BACKEND
-OPTIONS_SINGLE_BACKEND=	NODE NODE4 NODE6 NODE8
+OPTIONS_SINGLE_BACKEND=	NODE NODE6 NODE8
 OPTIONS_DEFAULT=NODE
 NODE_DESC=	Use Node.js 9.x (www/node) as backend
-NODE4_DESC=	Use Node.js 4.x (www/node4) as backend
 NODE6_DESC=	Use Node.js 6.x (www/node6) as backend
 NODE8_DESC=	Use Node.js 8.x (www/node8) as backend
 
 NODE_RUN_DEPENDS=	node>=0:www/node
-NODE4_RUN_DEPENDS=	node4>=0:www/node4
 NODE6_RUN_DEPENDS=	node6>=0:www/node6
 NODE8_RUN_DEPENDS=	node8>=0:www/node8
 

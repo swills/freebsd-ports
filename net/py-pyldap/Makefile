@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/py-pyldap/Makefile 459690 2018-01-22 20:08:31Z rm $
+# $FreeBSD: head/net/py-pyldap/Makefile 468839 2018-05-02 13:42:16Z rm $
 
 PORTNAME=	pyldap
 PORTVERSION=	2.4.45
@@ -8,6 +8,9 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	rm@FreeBSD.org
 COMMENT=	Fork of python-ldap with Python 3 support
+
+DEPRECATED=	This code has merged back to python-ldap. Please use net/py-ldap instead
+EXPIRATION_DATE=	2018-06-02
 
 LICENSE=	PSFL
 

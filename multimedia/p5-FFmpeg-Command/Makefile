@@ -1,9 +1,9 @@
 # Created by: sumikawa
-# $FreeBSD: head/multimedia/p5-FFmpeg-Command/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/multimedia/p5-FFmpeg-Command/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	FFmpeg-Command
 PORTVERSION=	0.19
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	multimedia perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:MIZZY

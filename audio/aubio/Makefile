@@ -1,9 +1,9 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/audio/aubio/Makefile 468737 2018-04-30 18:48:04Z jbeich $
+# $FreeBSD: head/audio/aubio/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	aubio
 PORTVERSION=	0.4.6
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES?=	audio
 MASTER_SITES=	http://aubio.org/pub/
 

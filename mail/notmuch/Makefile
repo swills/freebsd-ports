@@ -1,10 +1,10 @@
 # Created by: DarwinSurvivor <darwinsurvivor@gmail.com>
-# $FreeBSD: head/mail/notmuch/Makefile 466279 2018-04-03 01:30:53Z jrm $
+# $FreeBSD: head/mail/notmuch/Makefile 468768 2018-05-01 16:48:37Z krion $
 
 PORTNAME=	notmuch
-PORTVERSION=	0.26.1
+PORTVERSION=	0.26.2
 CATEGORIES?=	mail
-MASTER_SITES=	http://notmuchmail.org/releases/
+MASTER_SITES=	https://notmuchmail.org/releases/
 
 MAINTAINER=	seschwar@gmail.com
 COMMENT?=	Thread-based email index, search and tagging application

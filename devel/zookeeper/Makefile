@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/zookeeper/Makefile 450372 2017-09-22 13:28:29Z skreuzer $
+# $FreeBSD: head/devel/zookeeper/Makefile 468773 2018-05-01 17:45:33Z skreuzer $
 
 PORTNAME=	zookeeper
-PORTVERSION=	3.4.10
-PORTREVISION=	2
+PORTVERSION=	3.4.12
 CATEGORIES=	devel java
 MASTER_SITES=	APACHE/${PORTNAME}/current
 

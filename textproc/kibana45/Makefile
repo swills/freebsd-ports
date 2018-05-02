@@ -1,5 +1,5 @@
 # Created by: Sergey Kozlov <kozlov.sergey.404@gmail.com>
-# $FreeBSD: head/textproc/kibana45/Makefile 466863 2018-04-09 16:04:37Z feld $
+# $FreeBSD: head/textproc/kibana45/Makefile 468779 2018-05-01 18:56:00Z rene $
 
 PORTNAME=	kibana
 PORTVERSION?=	4.5.4
@@ -9,7 +9,7 @@ MASTER_SITES=	https://download.elastic.co/kibana/kibana/ \
 		http://download.elastic.co/kibana/kibana/
 PKGNAMESUFFIX?=	45
 
-DEPRECATED?=	End of Life was 2017-09-30
+DEPRECATED?=	End of Life was 2017-09-30, depends on expired www/node4
 EXPIRATION_DATE?=	2018-06-01
 
 MAINTAINER=	kozlov.sergey.404@gmail.com

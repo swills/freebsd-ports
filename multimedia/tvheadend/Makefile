@@ -1,11 +1,14 @@
 # Created by: Bernhard Froehlich <decke@FreeBSD.org>
-# $FreeBSD: head/multimedia/tvheadend/Makefile 467705 2018-04-18 11:26:59Z decke $
+# $FreeBSD: head/multimedia/tvheadend/Makefile 468847 2018-05-02 15:47:51Z jbeich $
 
 PORTNAME=	tvheadend
 PORTVERSION=	4.2.6
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	3cb4f580565b.patch:-p1
 
 MAINTAINER=	decke@FreeBSD.org
 COMMENT=	TV streaming server supporting DVB, IPTV, SAT>IP and more

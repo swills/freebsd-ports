@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/baresip/Makefile 468543 2018-04-28 14:03:20Z crees $
+# $FreeBSD: head/audio/baresip/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	baresip
 PORTVERSION=	0.5.8
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	http://www.creytiv.com/pub/
 

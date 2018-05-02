@@ -1,9 +1,9 @@
 # Created by: Raphael Kubo da Costa <rakuco@FreeBSD.org>
-# $FreeBSD: head/multimedia/kdemultimedia-ffmpegthumbs-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/multimedia/kdemultimedia-ffmpegthumbs-kde4/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	ffmpegthumbs
 PORTVERSION=	${KDE4_VERSION}
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	multimedia kde kde-kde4
 PKGNAMEPREFIX=	kdemultimedia-
 PKGNAMESUFFIX=	-kde4

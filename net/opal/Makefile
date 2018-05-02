@@ -1,9 +1,9 @@
 # Created by: Roger Hardiman <roger@FreeBSD.org>
-# $FreeBSD: head/net/opal/Makefile 457488 2017-12-29 02:55:42Z jbeich $
+# $FreeBSD: head/net/opal/Makefile 468852 2018-05-02 16:25:19Z jbeich $
 
 PORTNAME=	opal
 PORTVERSION=	3.10.10
-PORTREVISION=	15
+PORTREVISION=	18
 CATEGORIES=	net
 MASTER_SITES=	GNOME
 

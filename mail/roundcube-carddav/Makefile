@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/mail/roundcube-carddav/Makefile 453167 2017-10-30 10:52:07Z gahr $
+# $FreeBSD: head/mail/roundcube-carddav/Makefile 468851 2018-05-02 16:15:59Z mat $
 
 PORTNAME=	carddav
 PORTVERSION=	2.0.4
@@ -7,14 +7,15 @@ PORTREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	https://github.com/blind-coder/rcmcarddav/releases/download/v${PORTVERSION}/
 PKGNAMEPREFIX=	roundcube-
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
 MAINTAINER=	gahr@FreeBSD.org
 COMMENT=	Roundcube CardDAV plugin
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	roundcube>=1.0:mail/roundcube
-RUN_DEPENDS=	roundcube>=1.0:mail/roundcube
+BUILD_DEPENDS=	roundcube${PHP_PKGNAMESUFFIX}>=1.0:mail/roundcube@${PHP_FLAVOR}
+RUN_DEPENDS=	roundcube${PHP_PKGNAMESUFFIX}>=1.0:mail/roundcube@${PHP_FLAVOR}
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
@@ -27,7 +28,7 @@ NO_ARCH=	yes
 #GH_ACCOUNT=	blind-coder
 #GH_PROJECT=	rcmcarddav
 
-USES=		php tar:bz2
+USES=		php:flavors tar:bz2
 USE_PHP=	simplexml sockets curl
 
 WWWDIR=		${PREFIX}/www/roundcube/plugins/carddav

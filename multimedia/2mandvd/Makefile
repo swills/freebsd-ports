@@ -1,9 +1,9 @@
 # Created by: Diego Depaoli <trebestie@gmail.com>
-# $FreeBSD: head/multimedia/2mandvd/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/multimedia/2mandvd/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	2ManDVD
 PORTVERSION=	1.8.5
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	multimedia
 MASTER_SITES=	http://download.tuxfamily.org/2mandvd/
 

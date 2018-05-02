@@ -1,4 +1,4 @@
-# $FreeBSD: head/GIDs 467398 2018-04-15 16:18:53Z pi $
+# $FreeBSD: head/GIDs 468808 2018-05-02 01:24:27Z vanilla $
 # Please keep this file sorted by GID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/group
@@ -171,7 +171,7 @@ _hfm:*:227:
 osrm:*:228:
 kismet:*:229:
 carbon:*:230:
-# free: 231
+foundationdb:*:231:
 # free: 232
 # free: 233
 kafka:*:234:

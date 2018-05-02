@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/qmmp/Makefile 466597 2018-04-05 20:13:33Z jhale $
+# $FreeBSD: head/multimedia/qmmp/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	qmmp
 PORTVERSION=	0.11.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	multimedia
 MASTER_SITES=	http://qmmp.ylsoftware.com/files/ \
 	SF/qmmp-dev/${PORTNAME}/

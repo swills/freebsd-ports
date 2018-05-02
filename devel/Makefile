@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 468742 2018-04-30 19:21:56Z tcberner $
+# $FreeBSD: head/devel/Makefile 468859 2018-05-02 17:44:23Z mfechner $
 #
 
     COMMENT = Development utilities
@@ -361,6 +361,7 @@
     SUBDIR += cppunit
     SUBDIR += cpputest
     SUBDIR += cproto
+    SUBDIR += cpu_features
     SUBDIR += cpuflags
     SUBDIR += cquery
     SUBDIR += cram
@@ -5499,6 +5500,7 @@
     SUBDIR += rubygem-fattr
     SUBDIR += rubygem-ffi
     SUBDIR += rubygem-ffi-compiler
+    SUBDIR += rubygem-ffi-win32-extensions
     SUBDIR += rubygem-ffi-yajl
     SUBDIR += rubygem-file-tail
     SUBDIR += rubygem-filesize
@@ -5775,6 +5777,7 @@
     SUBDIR += rubygem-recaptcha
     SUBDIR += rubygem-recaptcha3
     SUBDIR += rubygem-recursive-open-struct
+    SUBDIR += rubygem-recursive-open-struct10
     SUBDIR += rubygem-recursive-open-struct100
     SUBDIR += rubygem-redis-activesupport
     SUBDIR += rubygem-redis-activesupport-rails5

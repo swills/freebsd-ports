@@ -1,10 +1,10 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/graphics/php5-ffmpeg/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/graphics/php5-ffmpeg/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	ffmpeg
 PORTVERSION=	0.6.0.20120114
 DISTVERSIONPREFIX=	php-
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	graphics
 MASTER_SITES=	LOCAL/sunpoet
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
@@ -14,6 +14,8 @@ COMMENT=	FFmpeg shared extension for php
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		fails to build with ffmpeg 4.0
 
 LIB_DEPENDS=	libgd.so:graphics/gd \
 		libavutil.so:multimedia/ffmpeg

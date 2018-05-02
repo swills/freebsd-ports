@@ -1,9 +1,9 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/net/freerdp/Makefile 468743 2018-04-30 19:28:30Z jbeich $
+# $FreeBSD: head/net/freerdp/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	freerdp
 DISTVERSION=	2.0.0-rc1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net comms ipv6
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

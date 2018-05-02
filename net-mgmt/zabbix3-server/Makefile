@@ -1,5 +1,5 @@
 # Created by: Pakhom Golynga <pg@pakhom.spb.ru>
-# $FreeBSD: head/net-mgmt/zabbix3-server/Makefile 466965 2018-04-10 14:08:38Z dbaio $
+# $FreeBSD: head/net-mgmt/zabbix3-server/Makefile 468780 2018-05-01 19:03:18Z rene $
 
 PORTNAME=	zabbix3
 PORTVERSION=	3.0.16
@@ -84,7 +84,7 @@ LIBXML2_DESC=		Support for libxml2 (required by monitoring VMware)
 OPTIONS_SINGLE=		DB ODBC SSL
 OPTIONS_SINGLE_DB=	MYSQL PGSQL SQLITE ORACLE
 OPTIONS_SINGLE_ODBC=	IODBC UNIXODBC
-OPTIONS_SINGLE_SSL=	OPENSSL GNUTLS POLARSSL
+OPTIONS_SINGLE_SSL=	OPENSSL GNUTLS
 
 MYSQL_CONFIGURE_WITH=	mysql
 MYSQL_USES+=		mysql
@@ -121,7 +121,7 @@ UNIXODBC_CONFIGURE_WITH=unixodbc
 UNIXODBC_LIB_DEPENDS=	libodbc.so:databases/unixODBC
 .else
 OPTIONS_SINGLE=	SSL
-OPTIONS_SINGLE_SSL=	OPENSSL GNUTLS POLARSSL
+OPTIONS_SINGLE_SSL=	OPENSSL GNUTLS
 .endif # if ${ZABBIX_BUILD} != "agent"
 
 IPV6_CONFIGURE_ENABLE=	ipv6
@@ -142,9 +142,6 @@ OPENSSL_VARS=		BROKEN_SSL="libressl libressl-devel" \
 
 GNUTLS_CONFIGURE_WITH=	gnutls
 GNUTLS_LIB_DEPENDS=	libgnutls.so:security/gnutls
-
-POLARSSL_CONFIGURE_WITH=mbedtls
-POLARSSL_LIB_DEPENDS=	libmbedtls.so:security/polarssl13
 
 .include <bsd.port.pre.mk>
 

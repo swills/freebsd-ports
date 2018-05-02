@@ -1,11 +1,12 @@
 # Created by: Alexander Moisseev <moiseev@mezonplus.ru>
-# $FreeBSD: head/mail/roundcube-thunderbird_labels/Makefile 454538 2017-11-20 11:21:38Z robak $
+# $FreeBSD: head/mail/roundcube-thunderbird_labels/Makefile 468851 2018-05-02 16:15:59Z mat $
 
 PORTNAME=	thunderbird_labels
 PORTVERSION=	1.1.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	mail
 PKGNAMEPREFIX=	roundcube-
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
 MAINTAINER=	moiseev@mezonplus.ru
 COMMENT=	Thunderbird Labels plugin for RoundCube webmail
@@ -13,8 +14,9 @@ COMMENT=	Thunderbird Labels plugin for RoundCube webmail
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-RUN_DEPENDS=	roundcube>=0.5:mail/roundcube
+RUN_DEPENDS=	roundcube${PHP_PKGNAMESUFFIX}>=0.5:mail/roundcube@${PHP_FLAVOR}
 
+USES=	php:flavors
 NO_BUILD=	yes
 NO_ARCH=	yes
 

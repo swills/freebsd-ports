@@ -1,8 +1,8 @@
 # Created by: skreuzer@FreeBSD.org
-# $FreeBSD: head/devel/libzookeeper/Makefile 437364 2017-03-31 15:12:05Z skreuzer $
+# $FreeBSD: head/devel/libzookeeper/Makefile 468772 2018-05-01 17:45:10Z skreuzer $
 
 PORTNAME=	zookeeper
-PORTVERSION=	3.4.10
+PORTVERSION=	3.4.12
 CATEGORIES=	devel
 MASTER_SITES=	APACHE/${PORTNAME}/current
 PKGNAMEPREFIX=	lib
@@ -13,10 +13,10 @@ COMMENT=	C client interface to Zookeeper server
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	libcppunit.so:devel/cppunit
-
-ONLY_FOR_ARCHS=	i386 amd64
+ONLY_FOR_ARCHS=	amd64 i386
 ONLY_FOR_ARCHS_REASON=	uses x86 assembly
+
+LIB_DEPENDS=	libcppunit.so:devel/cppunit
 
 USES=		libtool
 GNU_CONFIGURE=	yes

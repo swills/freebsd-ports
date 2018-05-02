@@ -1,9 +1,9 @@
 # Created by: Alexander Kojevnikov <alexander@kojevnikov.com>
-# $FreeBSD: head/audio/spek/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/audio/spek/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	spek
 PORTVERSION=	0.8.2
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	audio
 MASTER_SITES=	https://github.com/alexkay/${PORTNAME}/releases/download/v${PORTVERSION}/
 

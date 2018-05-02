@@ -1,10 +1,10 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/tovid/Makefile 461600 2018-02-12 16:00:42Z amdmi3 $
+# $FreeBSD: head/multimedia/tovid/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	tovid
 PORTVERSION=	0.35.2
 DISTVERSIONPREFIX=	tovid-
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	multimedia python
 
 MAINTAINER=	grepper@gmail.com
