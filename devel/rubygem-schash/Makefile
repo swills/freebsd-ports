@@ -1,5 +1,5 @@
 # Created by: Yuichiro NAITO <naito.yuichiro@gmail.com>
-# $FreeBSD: head/devel/rubygem-schash/Makefile 418160 2016-07-07 05:01:33Z pi $
+# $FreeBSD: head/devel/rubygem-schash/Makefile 468107 2018-04-23 17:19:17Z fernape $
 
 PORTNAME=	schash
 PORTVERSION=	0.1.2
@@ -12,7 +12,7 @@ COMMENT=	Ruby hash validator
 LICENSE=	MIT
 
 NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 .include <bsd.port.mk>

@@ -1,8 +1,7 @@
-# $FreeBSD: head/astro/libkgeomap/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/astro/libkgeomap/Makefile 468558 2018-04-28 18:11:49Z tcberner $
 
 PORTNAME=	libkgeomap
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	astro kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

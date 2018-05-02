@@ -1,8 +1,7 @@
-# $FreeBSD: head/net-im/ktp-auth-handler/Makefile 467306 2018-04-14 11:09:16Z tcberner $
+# $FreeBSD: head/net-im/ktp-auth-handler/Makefile 468558 2018-04-28 18:11:49Z tcberner $
 
 PORTNAME=	ktp-auth-handler
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	net-im kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

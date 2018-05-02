@@ -1,10 +1,10 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/audio/soundkonverter/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/audio/soundkonverter/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	soundkonverter
 PORTVERSION=	2.2.2
 DISTVERSIONPREFIX=	v
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	audio kde
 
 MAINTAINER=	dbn@FreeBSD.org

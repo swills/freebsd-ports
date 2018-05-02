@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-reader/Makefile 464297 2018-03-12 20:43:16Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-reader/Makefile 468717 2018-04-30 17:08:31Z sunpoet $
 
 PORTNAME=	tty-reader
-PORTVERSION=	0.2.0
+PORTVERSION=	0.3.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

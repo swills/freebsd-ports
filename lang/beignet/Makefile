@@ -1,10 +1,10 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/lang/beignet/Makefile 461114 2018-02-06 22:39:12Z jbeich $
+# $FreeBSD: head/lang/beignet/Makefile 468502 2018-04-27 23:10:16Z jbeich $
 
 PORTNAME=	beignet
 DISTVERSION=	1.3.2
 DISTVERSIONSUFFIX=	-source
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang
 MASTER_SITES=	https://01.org/sites/default/files/
 
@@ -29,7 +29,7 @@ USE_GL=		gl egl
 USE_LDCONFIG=	${LOCALBASE}/lib/${PORTNAME}
 SHEBANG_FILES=	src/git_sha1.sh backend/kernels/compile.sh
 ALL_TARGET=	all
-LLVMVER=	${MESA_LLVM_VER:U50}
+LLVMVER=	${MESA_LLVM_VER:U60}
 
 CMAKE_ARGS=	-DCLANG_EXECUTABLE:FILEPATH=${LOCALBASE}/bin/clang${LLVMVER} \
 		-DLLVM_AS_EXECUTABLE:FILEPATH=${LOCALBASE}/bin/llvm-as${LLVMVER} \
@@ -64,7 +64,11 @@ do-test-TEST-on:
 
 pre-install-TEST-on: do-test-TEST-on
 
-post-install:
-	@${RM} -r ${STAGEDIR}${PREFIX}/include/CL
+.include <bsd.port.options.mk>
+
+# gbe_bin_generater crashes in libc++ when built by clang++60
+.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1003513
+LLVMVER=	50
+.endif
 
 .include <bsd.port.mk>

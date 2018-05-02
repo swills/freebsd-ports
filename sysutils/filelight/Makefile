@@ -1,8 +1,7 @@
-# Created by: Rusty Nejdl <rnejdl@ringofsaturn.com>
-# $FreeBSD: head/sysutils/filelight/Makefile 466902 2018-04-09 19:58:12Z tcberner $
+# $FreeBSD: head/sysutils/filelight/Makefile 468558 2018-04-28 18:11:49Z tcberner $
 
 PORTNAME=	filelight
-PORTVERSION=	${KDE_APPLICATIONS_VERSION}
+DISTVERSION=	${KDE_APPLICATIONS_VERSION}
 CATEGORIES=	sysutils kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

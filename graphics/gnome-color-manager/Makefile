@@ -1,9 +1,9 @@
 # Created by: FreeBSD GNOME Team <gnome@FreeBSD.org>
-# $FreeBSD: head/graphics/gnome-color-manager/Makefile 452404 2017-10-19 09:04:22Z amdmi3 $
+# $FreeBSD: head/graphics/gnome-color-manager/Makefile 468519 2018-04-28 06:14:58Z tcberner $
 
 PORTNAME=	gnome-color-manager
 PORTVERSION=	3.18.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

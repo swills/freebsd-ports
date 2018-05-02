@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/packer/Makefile 465720 2018-03-27 15:50:17Z lifanov $
+# $FreeBSD: head/sysutils/packer/Makefile 468358 2018-04-26 16:38:27Z lifanov $
 
 PORTNAME=	packer
-PORTVERSION=	1.2.2
+PORTVERSION=	1.2.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

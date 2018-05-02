@@ -1,8 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/devel/py-tarantool-queue/Makefile 463317 2018-03-01 13:35:36Z sunpoet $
+# $FreeBSD: head/devel/py-tarantool-queue/Makefile 468234 2018-04-24 19:47:21Z sunpoet $
 
 PORTNAME=	tarantool-queue
 PORTVERSION=	0.1.4
+PORTREVISION=	2
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,14 +13,15 @@ COMMENT=	Python bindings for Tarantool queue
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack-python>=0:devel/py-msgpack-python@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>=0:devel/py-msgpack@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}tarantool>=0:databases/py-tarantool@${FLAVOR}
 
 NO_ARCH=	yes
+REINPLACE_ARGS=	-i ''
 USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 post-patch:
-	@${REINPLACE_CMD} -e 's|tarantool<0.4|tarantool|' ${WRKSRC}/setup.py
+	@${REINPLACE_CMD} -e 's|msgpack-python|msgpack|; s|tarantool<0.4|tarantool|' ${WRKSRC}/setup.py ${WRKSRC}/tarantool_queue.egg-info/requires.txt
 
 .include <bsd.port.mk>

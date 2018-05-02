@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-drivers/xf86-video-amdgpu/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11-drivers/xf86-video-amdgpu/Makefile 468435 2018-04-27 15:14:53Z jbeich $
 
 # this port is for future amdgpu kernel support testing.
 
@@ -25,8 +25,8 @@ CONFIGURE_ARGS+=--disable-udev
 
 .include <bsd.port.options.mk>
 
-.if (${OSVERSION} < 1200019)
-IGNORE=		not supported on 11.x or older, no kernel support
+.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1101510
+IGNORE=		not supported on 11.1 or older, no kernel support
 .endif
 
 PLIST_FILES=	lib/xorg/modules/drivers/amdgpu_drv.so \

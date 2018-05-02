@@ -1,9 +1,9 @@
 # Created by: Florent Thoumie <flz@FreeBSD.org>
-# $FreeBSD: head/www/chromium/Makefile 467685 2018-04-18 07:21:05Z cpm $
+# $FreeBSD: head/www/chromium/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	chromium
 PORTVERSION=	65.0.3325.181
-PORTREVISION=	1
+PORTREVISION=	4
 CATEGORIES?=	www
 MASTER_SITES=	https://commondatastorage.googleapis.com/chromium-browser-official/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
@@ -20,7 +20,7 @@ BUILD_DEPENDS=	bash:shells/bash \
 
 .if !defined(GN_ONLY)
 BUILD_DEPENDS+=	gperf:devel/gperf \
-		clang50:devel/llvm50 \
+		clang60:devel/llvm60 \
 		yasm:devel/yasm \
 		ffmpeg>=3.2.2,1:multimedia/ffmpeg \
 		flock:sysutils/flock \
@@ -91,8 +91,8 @@ SHEBANG_FILES=	chrome/tools/build/linux/chrome-wrapper
 ALL_TARGET=	chrome
 INSTALLS_ICONS=	yes
 
-CC=		clang50
-CXX=		clang++50
+CC=		clang60
+CXX=		clang++60
 .endif
 
 EXTRA_PATCHES+=	${FILESDIR}/extra-patch-clang

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm35/Makefile 466018 2018-03-31 03:28:42Z tobik $
+# $FreeBSD: head/devel/llvm35/Makefile 468521 2018-04-28 08:33:52Z amdmi3 $
 
 PORTNAME=	llvm
 DISTVERSION=	3.5.2
@@ -237,7 +237,7 @@ post-install:
 .endif
 
 TEST_CMD=	'(cd ${WRKSRC}/test; ${SETENV} ${MAKE_ENV} LD_LIBRARY_PATH=${WRKSRC}/Release/lib ${MAKE_CMD} check-local-lit)'
-regression-test: ${BUILD_COOKIE}
+do-test:
 	if [ `${ID} -u` = 0 ]; then \
 		${CHOWN} -R nobody ${WRKSRC}/test; \
 		su -m nobody -c ${TEST_CMD}; \

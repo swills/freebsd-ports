@@ -1,8 +1,9 @@
 # Created by: chuckr@FreeBSD.org
-# $FreeBSD: head/math/octave/Makefile 465255 2018-03-22 03:10:21Z stephen $
+# $FreeBSD: head/math/octave/Makefile 468632 2018-04-29 16:19:44Z tcberner $
 
 PORTNAME=	octave
 PORTVERSION=	${OCTAVE_VERSION}
+PORTREVISION=	2
 CATEGORIES=	math java
 MASTER_SITES=	GNU
 

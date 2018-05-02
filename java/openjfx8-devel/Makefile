@@ -1,8 +1,8 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/java/openjfx8-devel/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/java/openjfx8-devel/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	openjfx8
-DISTVERSION=	8u172-b03
+DISTVERSION=	8u172-b11
 PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	java x11-toolkits devel
@@ -102,10 +102,9 @@ post-patch:
 # Pull Java dependencies from LOCALBASE
 	@${REINPLACE_CMD} 's@/usr/local@${LOCALBASE}@g' \
 		${WRKSRC}/build.gradle ${WRKSRC}/buildSrc/build.gradle
-# Remove the bundled libicu and libsqlite3.  We use the system's
-# versions instead.
-	@${RM} -r ${WRKSRC}/modules/web/src/main/native/Source/ThirdParty/icu \
-		${WRKSRC}/modules/web/src/main/native/Source/ThirdParty/sqlite
+# Remove bundled libraries.  We use the system's versions instead.
+	@cd ${WRKSRC}/modules/web/src/main/native/Source/ThirdParty && \
+		${RM} -r icu libxml libxslt sqlite
 
 post-patch-SWT-off:
 	@${RM} -r ${WRKSRC}/modules/graphics/src/main/java/com/sun/glass/ui/swt

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/p5-HTTP-Tiny-UA/Makefile 465469 2018-03-24 21:10:49Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-Tiny-UA/Makefile 468446 2018-04-27 15:55:44Z sunpoet $
 
 PORTNAME=	HTTP-Tiny-UA
-PORTVERSION=	0.005
+PORTVERSION=	0.006
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

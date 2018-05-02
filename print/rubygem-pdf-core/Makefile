@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv at kvedulv.de>
-# $FreeBSD: head/print/rubygem-pdf-core/Makefile 436003 2017-03-12 17:28:29Z sunpoet $
+# $FreeBSD: head/print/rubygem-pdf-core/Makefile 468651 2018-04-29 19:46:33Z sunpoet $
 
 PORTNAME=	pdf-core
-PORTVERSION=	0.7.0
+PORTVERSION=	0.8.1
 CATEGORIES=	print rubygems
 MASTER_SITES=	RG
 

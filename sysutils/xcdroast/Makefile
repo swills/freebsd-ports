@@ -1,5 +1,5 @@
 # Created by: Oliver Lehmann <Kai_Allard_Liao@gmx.de>
-# $FreeBSD: head/sysutils/xcdroast/Makefile 451901 2017-10-12 15:57:51Z mat $
+# $FreeBSD: head/sysutils/xcdroast/Makefile 468307 2018-04-25 22:00:04Z mat $
 
 PORTNAME=	xcdroast
 PORTVERSION=	0.98.a.16
@@ -67,7 +67,9 @@ pre-everything::
 	@${ECHO_MSG} "         wrapping utility which gets a SUID Bit after enabling"
 	@${ECHO_MSG} "         the non-root mode inside the application!"
 	@${ECHO_MSG}
+.  if !(defined(PACKAGE_BUILDING) || defined(BATCH))
 	sleep 5
+.  endif
 .endif
 
 .include <bsd.port.mk>

@@ -1,9 +1,8 @@
-# $FreeBSD: head/science/pcmsolver/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/pcmsolver/Makefile 468559 2018-04-28 18:18:40Z yuri $
 
 PORTNAME=	pcmsolver
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.1.11
-PORTREVISION=	1
+DISTVERSION=	1.2.0
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -12,7 +11,9 @@ COMMENT=	API for the Polarizable Continuum Model
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource fortran python
+LIB_DEPENDS=	libflang.so:devel/flang # USES=fortran:clang breaks in configure: can't find libs directory
+
+USES=		cmake:outsource,noninja python
 USE_GITHUB=	yes
 GH_ACCOUNT=	PCMSolver
 USE_LDCONFIG=	yes

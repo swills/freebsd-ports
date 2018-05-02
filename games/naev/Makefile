@@ -1,9 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/games/naev/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/games/naev/Makefile 468399 2018-04-27 05:55:25Z yuri $
 
 PORTNAME=	naev
 PORTVERSION=	0.7.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION}/
 
@@ -16,8 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libfreetype.so:print/freetype2 \
 		libvorbisfile.so:audio/libvorbis \
-		libzip.so:archivers/libzip \
-		libcsparse.so:math/suitesparse
+		libzip.so:archivers/libzip
 RUN_DEPENDS=	${LOCALBASE}/${DATADIR_REL}/${DISTNAME}-ndata.zip:games/naev-data
 
 USES=		autoreconf:build compiler:features gmake pkgconfig tar:bzip2

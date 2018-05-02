@@ -1,9 +1,9 @@
 # Created by: Heiner Eichmann <h.eichmann@gmx.de>
-# $FreeBSD: head/sysutils/k3b-kde4/Makefile 467005 2018-04-10 18:58:57Z tcberner $
+# $FreeBSD: head/sysutils/k3b-kde4/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	k3b
 PORTVERSION=	2.0.3
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	sysutils multimedia kde
 MASTER_SITES=	KDE/stable/${PORTNAME}
 DISTFILES=	${DISTNAME}a${EXTRACT_SUFX}

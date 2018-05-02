@@ -1,8 +1,9 @@
 # Created by: wenheping@gmail.com
-# $FreeBSD: head/print/rubygem-prawn/Makefile 436436 2017-03-18 17:13:44Z sunpoet $
+# $FreeBSD: head/print/rubygem-prawn/Makefile 468588 2018-04-28 20:11:07Z sunpoet $
 
 PORTNAME=	prawn
 PORTVERSION=	2.2.2
+PORTREVISION=	1
 CATEGORIES=	print rubygems
 MASTER_SITES=	RG
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 467683 2018-04-18 06:51:47Z yuri $
+# $FreeBSD: head/science/Makefile 468383 2018-04-26 20:39:16Z adridg $
 #
 
     COMMENT = Scientific ports
@@ -47,6 +47,7 @@
     SUBDIR += dcl
     SUBDIR += devisor
     SUBDIR += dkh
+    SUBDIR += dlib-cpp
     SUBDIR += dlpoly-classic
     SUBDIR += ecs
     SUBDIR += epte
@@ -166,6 +167,7 @@
     SUBDIR += py-OpenFermion
     SUBDIR += py-cdo
     SUBDIR += py-coards
+    SUBDIR += py-dlib
     SUBDIR += py-h5py
     SUBDIR += py-hcluster
     SUBDIR += py-mdp

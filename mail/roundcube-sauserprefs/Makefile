@@ -1,5 +1,5 @@
 # Created by: Stefan Bethke <stb@lassitu.de>
-# $FreeBSD: head/mail/roundcube-sauserprefs/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/roundcube-sauserprefs/Makefile 468851 2018-05-02 16:15:59Z mat $
 
 PORTNAME=	sauserprefs
 PORTVERSION=	1.10 # PLEASE MIRROR DISTFILE WITH VERSIONED DIR
@@ -8,6 +8,7 @@ CATEGORIES=	mail
 MASTER_SITES=	http://www.tehinterweb.co.uk/roundcube/plugins/ \
 		LOCAL/bdrewery/${PORTNAME}/${PORTVERSION}/
 PKGNAMEPREFIX=	roundcube-
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	stb@lassitu.de
@@ -15,8 +16,9 @@ COMMENT=	Roundcube plugin to manage SpamAssassin prefs
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	roundcube>=0.8:mail/roundcube
+RUN_DEPENDS=	roundcube${PHP_PKGNAMESUFFIX}>=0.8:mail/roundcube@${PHP_FLAVOR}
 
+USES=	php:flavors
 NO_BUILD=	yes
 NO_ARCH=	yes
 

@@ -1,8 +1,8 @@
 # Created by: Greg Larkin <glarkin@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-Amazon-EC2/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-Amazon-EC2/Makefile 468155 2018-04-24 00:14:29Z bofh $
 
 PORTNAME=	Net-Amazon-EC2
-PORTVERSION=	0.32
+PORTVERSION=	0.36
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

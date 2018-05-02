@@ -1,5 +1,5 @@
 # Created by: Nagy, Attila <bra@fsn.hu>
-# $FreeBSD: head/mail/dovecot/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/mail/dovecot/Makefile 468228 2018-04-24 18:11:23Z adamw $
 
 ######################################################################
 # Anytime PORTVERSION changes please bump PORTREVISION of            #
@@ -8,7 +8,7 @@
 
 PORTNAME=	dovecot
 PORTVERSION=	2.3.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail ipv6
 MASTER_SITES=	https://www.dovecot.org/releases/2.3/
 
@@ -35,6 +35,8 @@ INSTALL_TARGET=	install-strip
 
 USERS=		dovecot dovenull
 GROUPS=		${USERS}
+
+CONFLICTS_INSTALL=	dovecot22
 
 OPTIONS_DEFINE=	LIBWRAP LUA LZ4 VPOPMAIL DOCS EXAMPLES
 OPTIONS_DEFAULT=GSSAPI_NONE LIBWRAP

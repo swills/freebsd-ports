@@ -1,8 +1,8 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-Test-Pod/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Test-Pod/Makefile 467983 2018-04-22 08:55:25Z sunpoet $
 
 PORTNAME=	Test-Pod
-PORTVERSION=	1.51
+PORTVERSION=	1.52
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

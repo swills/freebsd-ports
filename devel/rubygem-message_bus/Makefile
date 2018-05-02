@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-message_bus/Makefile 458550 2018-01-09 16:41:18Z sunpoet $
+# $FreeBSD: head/devel/rubygem-message_bus/Makefile 468123 2018-04-23 18:17:32Z sunpoet $
 
 PORTNAME=	message_bus
-PORTVERSION=	2.1.2
+PORTVERSION=	2.1.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

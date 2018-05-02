@@ -1,8 +1,9 @@
-# $FreeBSD: head/www/edbrowse/Makefile 467337 2018-04-14 18:09:03Z yuri $
+# $FreeBSD: head/www/edbrowse/Makefile 468565 2018-04-28 19:05:19Z dbaio $
 
 PORTNAME=	edbrowse
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.7.3
+PORTREVISION=	1
 CATEGORIES=	www editors
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/

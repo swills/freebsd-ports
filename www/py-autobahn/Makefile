@@ -1,9 +1,10 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/www/py-autobahn/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-autobahn/Makefile 468048 2018-04-22 18:29:51Z sunpoet $
 
 PORTNAME=		autobahn
 PORTVERSION=		0.17.2
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=		www python
 PKGNAMEPREFIX=		${PYTHON_PKGNAMEPREFIX}
 
@@ -39,7 +40,7 @@ SERIALIZATION_DESC=	WAMPv2 Binary Serialization
 ACCELERATE_RUN_DEPENDS=		${PYTHON_PKGNAMEPREFIX}wsaccel>=0.6.2:www/py-wsaccel@${FLAVOR} \
 				${PYTHON_PKGNAMEPREFIX}ujson>=1.33:devel/py-ujson@${FLAVOR}
 
-SERIALIZATION_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack-python>=0.4.0:devel/py-msgpack-python@${FLAVOR}
+SERIALIZATION_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>=0.4.0:devel/py-msgpack@${FLAVOR}
 
 .include <bsd.port.pre.mk>
 

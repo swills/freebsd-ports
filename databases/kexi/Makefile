@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/kexi/Makefile 451010 2017-09-30 20:26:31Z tcberner $
+# $FreeBSD: head/databases/kexi/Makefile 468526 2018-04-28 09:28:46Z tcberner $
 
 PORTNAME=		kexi
-DISTVERSION=		3.0.2
+DISTVERSION=		3.1.0
 CATEGORIES=		databases kde
 MASTER_SITES=		KDE/stable/${PORTNAME}/src
 DIST_SUBDIR=		KDE/${PORTNAME}

@@ -1,8 +1,9 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/devel/py-qt4/Makefile 458563 2018-01-09 20:06:34Z jrm $
+# $FreeBSD: head/devel/py-qt4/Makefile 468632 2018-04-29 16:19:44Z tcberner $
 
 PORTNAME=	qt4
 PORTVERSION=	${PYQT4_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

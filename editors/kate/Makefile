@@ -1,8 +1,8 @@
-# $FreeBSD: head/editors/kate/Makefile 466807 2018-04-08 17:13:22Z tcberner $
+# $FreeBSD: head/editors/kate/Makefile 468558 2018-04-28 18:11:49Z tcberner $
 
 PORTNAME=	kate
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-CATEGORIES=	editors kde kde-applications 
+CATEGORIES=	editors kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Basic editor framework for the KDE system

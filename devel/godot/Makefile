@@ -1,5 +1,5 @@
 # Created by: Shane Ambler <FreeBSD@Shaneware.biz>
-# $FreeBSD: head/devel/godot/Makefile 464715 2018-03-16 17:30:04Z amdmi3 $
+# $FreeBSD: head/devel/godot/Makefile 468505 2018-04-27 23:14:32Z jbeich $
 
 PORTNAME=	godot
 PORTVERSION=	3.0.2
@@ -24,8 +24,8 @@ RUN_DEPENDS=	xdg-user-dir:devel/xdg-user-dirs \
 USE_GITHUB=	yes
 GH_ACCOUNT=	godotengine
 
-# on 10.4 using clang34 fails - so we want to use clang50
-# gl already needs clang50 so this shouldn't add any overhead
+# on 10.4 using clang34 fails - so we want to use clang60
+# gl already needs clang60 so this shouldn't add any overhead
 USES=		compiler:c++14-lang pkgconfig scons ssl
 USE_XORG=	x11 xcursor xi xinerama xrandr
 USE_GL=		gl glew glu

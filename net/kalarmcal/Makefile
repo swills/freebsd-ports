@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/kalarmcal/Makefile 467007 2018-04-10 19:09:05Z tcberner $
+# $FreeBSD: head/net/kalarmcal/Makefile 468558 2018-04-28 18:11:49Z tcberner $
 
 PORTNAME=	kalarmcal
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -16,7 +16,8 @@ USE_KDE=	auth bookmarks codecs completion config configwidgets \
 		notifications parts service solid sonnet textwidgets \
 		unitconversion widgetsaddons windowsystem xmlgui
 # pim components
-USE_KDE+=	akonadi calendarcore holidays identitymanagement pimtextedit
+USE_KDE+=	akonadi calendarcore calendarutils holidays identitymanagement \
+		pimtextedit
 USE_QT5=	core dbus gui network printsupport widgets xml \
 		buildtools_build qmake_build
 USE_LDCONFIG=	yes

@@ -1,8 +1,8 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/devel/py-qt4-core/Makefile 464266 2018-03-12 18:06:51Z tcberner $
+# $FreeBSD: head/devel/py-qt4-core/Makefile 468632 2018-04-29 16:19:44Z tcberner $
 
 PORTNAME=	core
-PORTREVISION=	6
+PORTREVISION=	7
 PORTEPOCH=	1
 CATEGORIES=	devel python
 

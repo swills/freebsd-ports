@@ -1,8 +1,8 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-jquery-rails/Makefile 437079 2017-03-27 19:16:29Z sunpoet $
+# $FreeBSD: head/www/rubygem-jquery-rails/Makefile 468007 2018-04-22 08:57:29Z sunpoet $
 
 PORTNAME=	jquery-rails
-PORTVERSION=	4.3.1
+PORTVERSION=	4.3.3
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -12,7 +12,7 @@ COMMENT=	Provides a Rails generator for jQuery
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
-RUN_DEPENDS?=	rubygem-rails-dom-testing>=1.0:textproc/rubygem-rails-dom-testing \
+RUN_DEPENDS=	rubygem-rails-dom-testing>=1.0:textproc/rubygem-rails-dom-testing \
 		rubygem-railties4>=4.2.0:www/rubygem-railties4 \
 		rubygem-thor>=0.14:devel/rubygem-thor
 

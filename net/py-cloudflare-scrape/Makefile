@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/py-cloudflare-scrape/Makefile 461084 2018-02-06 18:57:49Z tcberner $
+# $FreeBSD: head/net/py-cloudflare-scrape/Makefile 468643 2018-04-29 19:28:22Z tcberner $
 
 PORTNAME=	cloudflare-scrape
-DISTVERSION=	1.9.4
+DISTVERSION=	1.9.5
 CATEGORIES=	net python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

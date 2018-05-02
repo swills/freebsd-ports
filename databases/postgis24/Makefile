@@ -1,8 +1,8 @@
 # Created by: Loïc BARTOLETTI <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/databases/postgis24/Makefile 460169 2018-01-28 12:49:10Z pizzamig $
+# $FreeBSD: head/databases/postgis24/Makefile 467890 2018-04-21 14:03:51Z riggs $
 
 PORTNAME=	postgis
-PORTVERSION=	2.4.3
+PORTVERSION=	2.4.4
 CATEGORIES=	databases geography
 MASTER_SITES=	http://download.osgeo.org/postgis/source/
 PKGNAMESUFFIX=	24

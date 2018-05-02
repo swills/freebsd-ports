@@ -1,9 +1,9 @@
 # Created by: Bo-Yi Wu <appleboy.tw@gmail.com>
-# $FreeBSD: head/www/gallery3/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/gallery3/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	gallery3
 PORTVERSION=	3.0.9
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	www
 MASTER_SITES=	SF/gallery/${PORTNAME}/${PORTVERSION}
 DISTNAME=	gallery-${PORTVERSION}

@@ -1,5 +1,5 @@
 # Created by: Sergey Kozlov <kozlov.sergey.404@gmail.com>
-# $FreeBSD: head/textproc/kibana41/Makefile 466863 2018-04-09 16:04:37Z feld $
+# $FreeBSD: head/textproc/kibana41/Makefile 468779 2018-05-01 18:56:00Z rene $
 
 PORTNAME=	kibana
 PORTVERSION=	4.1.11
@@ -13,7 +13,7 @@ COMMENT=	Browser based analytics and search interface to ElasticSearch
 
 LICENSE=	APACHE20
 
-DEPRECATED=	End of Life was 2016-11-10
+DEPRECATED=	End of Life was 2016-11-10, depends on expired www/node4
 EXPIRATION_DATE=	2018-06-01
 
 RUN_DEPENDS=	node4>=4.3.2:www/node4

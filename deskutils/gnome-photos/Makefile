@@ -1,9 +1,9 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/deskutils/gnome-photos/Makefile 455251 2017-12-01 07:19:53Z antoine $
+# $FreeBSD: head/deskutils/gnome-photos/Makefile 468519 2018-04-28 06:14:58Z tcberner $
 
 PORTNAME=	gnome-photos
 PORTVERSION=	3.24.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3

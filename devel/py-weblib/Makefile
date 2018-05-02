@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-weblib/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-weblib/Makefile 468818 2018-05-02 10:27:09Z rm $
 
 PORTNAME=	weblib
-PORTVERSION=	0.1.25
+PORTVERSION=	0.1.29
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

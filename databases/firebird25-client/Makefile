@@ -1,8 +1,6 @@
-# Created by: Alonso Cárdenas Márquez <acm@FreeBSD.org>
-# $FreeBSD: head/databases/firebird25-client/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/databases/firebird25-client/Makefile 468287 2018-04-25 18:39:19Z acm $
 
 PORTNAME=	firebird
-PORTREVISION=	3
 PKGNAMESUFFIX=	${PORTVERSION:R:S/.//}-client
 
 COMMENT=	Firebird-2 database client

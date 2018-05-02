@@ -1,8 +1,9 @@
 # Created by: Danny Pansters <danny@ricin.com>
-# $FreeBSD: head/misc/py-qt4-demo/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/misc/py-qt4-demo/Makefile 468632 2018-04-29 16:19:44Z tcberner $
 
 PORTNAME=	demo
 PORTVERSION=	${PYQT4_VERSION}
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	misc devel python
 MASTER_SITES=	${MASTER_SITES_PYQT4}

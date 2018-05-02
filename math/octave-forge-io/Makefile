@@ -1,9 +1,8 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-io/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/octave-forge-io/Makefile 468744 2018-04-30 19:33:24Z stephen $
 
 PORTNAME=	octave-forge-io
-PORTVERSION=	2.4.8
-PORTREVISION=	2
+PORTVERSION=	2.4.11
 PORTEPOCH=	1
 CATEGORIES=	math
 
@@ -18,6 +17,7 @@ LICENSE_FILE=	${WRKDIR}/${OCTSRC}/COPYING
 OCTSRC=		${DISTNAME}
 
 WRKSRC=		${WRKDIR}/${OCTSRC}/src
+GNU_CONFIGURE=	yes
 
 .include "${.CURDIR}/../../Mk/bsd.octave.mk"
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/net-p2p/jackett/Makefile 462611 2018-02-22 14:41:49Z wen $
+# $FreeBSD: head/net-p2p/jackett/Makefile 468684 2018-04-30 09:36:31Z krion $
 
 PORTNAME=	jackett
-PORTVERSION=	0.8.701
+PORTVERSION=	0.8.898
 CATEGORIES=	net-p2p
 MASTER_SITES=	https://github.com/Jackett/Jackett/releases/download/
 DISTNAME=	v${PORTVERSION}/Jackett.Binaries.Mono

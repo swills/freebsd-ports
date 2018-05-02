@@ -1,9 +1,10 @@
 # Created by: Randall Hopper <aa8vb@nc.rr.com>
-# $FreeBSD: head/graphics/osg/Makefile 464404 2018-03-13 20:09:21Z amdmi3 $
+# $FreeBSD: head/graphics/osg/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	osg
 PORTVERSION=	3.4.1
 DISTVERSIONPREFIX=	OpenSceneGraph-
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 MAINTAINER=	amdmi3@FreeBSD.org

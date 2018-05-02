@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/www/py-django-annoying/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django-annoying/Makefile 468736 2018-04-30 18:39:42Z cs $
 
 PORTNAME=	django-annoying
-PORTVERSION=	0.10.3
+PORTVERSION=	0.10.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

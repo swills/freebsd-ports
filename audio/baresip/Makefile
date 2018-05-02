@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/baresip/Makefile 459122 2018-01-15 21:59:18Z hselasky $
+# $FreeBSD: head/audio/baresip/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	baresip
-PORTVERSION=	0.4.19
-PORTREVISION=	4
+PORTVERSION=	0.5.8
+PORTREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	http://www.creytiv.com/pub/
 
@@ -12,8 +12,8 @@ COMMENT=	Small SIP client
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/docs/COPYING
 
-BUILD_DEPENDS=	re>=0.4.14:audio/re \
-		rem>=0.4.7:audio/rem
+BUILD_DEPENDS=	re>=0.5.8:audio/re \
+		rem>=0.5.3:audio/rem
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		gmake pkgconfig ssl

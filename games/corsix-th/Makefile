@@ -1,9 +1,10 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/games/corsix-th/Makefile 456969 2017-12-22 08:13:04Z madpilot $
+# $FreeBSD: head/games/corsix-th/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	corsixth
 PORTVERSION=	0.61
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	games
 
 MAINTAINER=	madpilot@FreeBSD.org

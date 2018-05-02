@@ -1,8 +1,8 @@
 # Created by: Muhammad Moinur Rahman <bofh@FreeBSD.org>
-# $FreeBSD: head/databases/mroonga/Makefile 458387 2018-01-07 22:30:45Z bofh $
+# $FreeBSD: head/databases/mroonga/Makefile 468064 2018-04-22 23:04:45Z bofh $
 
 PORTNAME=	mroonga
-PORTVERSION=	7.10
+PORTVERSION=	8.01
 CATEGORIES=	databases textproc
 MASTER_SITES=	http://packages.groonga.org/source/mroonga/
 
@@ -21,9 +21,11 @@ CONFIGURE_ARGS=	--with-mysql-source="$$(cd ${PORTSDIR}/${_MYSQL_SERVER}; ${MAKE}
 		--with-mysql-build="$$(cd ${PORTSDIR}/${_MYSQL_SERVER}; ${MAKE} -V BUILD_WRKSRC)" \
 		--with-mysql-config=${PREFIX}/bin/mysql_config
 
-INSTALL_TARGET=	install-strip
 SUB_FILES=	pkg-message
 
 OPTIONS_DEFINE=		DOCS
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/mysql/plugin/ha_mroonga.so.0.0.0
 
 .include <bsd.port.mk>

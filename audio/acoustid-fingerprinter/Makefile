@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/acoustid-fingerprinter/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/audio/acoustid-fingerprinter/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	acoustid-fingerprinter
 PORTVERSION=	0.6
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	audio
 
 MAINTAINER=	jhale@FreeBSD.org

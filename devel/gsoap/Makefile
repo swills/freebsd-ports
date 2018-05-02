@@ -1,8 +1,8 @@
 # Created by: Sergey Matveychuk <sem@ciam.ru>
-# $FreeBSD: head/devel/gsoap/Makefile 458461 2018-01-08 17:42:56Z bofh $
+# $FreeBSD: head/devel/gsoap/Makefile 468257 2018-04-25 02:10:32Z bofh $
 
 PORTNAME=	gsoap
-PORTVERSION=	2.8.59
+PORTVERSION=	2.8.66
 CATEGORIES=	devel
 MASTER_SITES=	SF/${PORTNAME}2/gsoap-2.8
 DISTNAME=	${PORTNAME}_${PORTVERSION}

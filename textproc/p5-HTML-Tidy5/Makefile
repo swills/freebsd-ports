@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-HTML-Tidy5/Makefile 467624 2018-04-17 19:15:03Z sunpoet $
+# $FreeBSD: head/textproc/p5-HTML-Tidy5/Makefile 467930 2018-04-22 08:47:37Z sunpoet $
 
 PORTNAME=	HTML-Tidy5
-PORTVERSION=	1.02
+PORTVERSION=	1.04
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

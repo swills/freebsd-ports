@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-rex-text/Makefile 457701 2017-12-31 16:15:23Z antoine $
+# $FreeBSD: head/security/rubygem-rex-text/Makefile 467872 2018-04-21 11:17:51Z antoine $
 
 PORTNAME=	rex-text
-PORTVERSION=	0.2.16
+PORTVERSION=	0.2.20
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

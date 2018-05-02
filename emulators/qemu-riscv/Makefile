@@ -1,8 +1,8 @@
-# $FreeBSD: head/emulators/qemu-riscv/Makefile 467141 2018-04-12 10:17:03Z lwhsu $
+# $FreeBSD: head/emulators/qemu-riscv/Makefile 468400 2018-04-27 06:19:06Z lwhsu $
 
 PORTNAME=	qemu
-PORTVERSION=	2.11.92
-PORTREVISION=	20180412
+PORTVERSION=	2.12.0
+PORTREVISION=	20180427
 CATEGORIES=	emulators
 PKGNAMESUFFIX=	-riscv
 
@@ -17,7 +17,7 @@ BROKEN_powerpc64=	fails to compile: async.c: internal compiler error: Segmentati
 USES=	gmake libtool makeinfo pkgconfig python:2.7,build
 
 USE_GITHUB=	yes
-GH_TUPLE=	riscv:riscv-qemu:f733c7b \
+GH_TUPLE=	riscv:riscv-qemu:ad8989a \
 		qemu:dtc:e543880:dtc/dtc \
 		qemu:keycodemapdb:6b3d716:keycodemapdb/ui/keycodemapdb
 

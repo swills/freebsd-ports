@@ -1,8 +1,8 @@
 # Created by: ache
-# $FreeBSD: head/net/p5-URI/Makefile 458631 2018-01-10 12:43:07Z sunpoet $
+# $FreeBSD: head/net/p5-URI/Makefile 468363 2018-04-26 18:51:07Z sunpoet $
 
 PORTNAME=	URI
-PORTVERSION=	1.73
+PORTVERSION=	1.74
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

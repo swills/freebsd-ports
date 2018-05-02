@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/Makefile 467333 2018-04-14 17:10:01Z yuri $
+# $FreeBSD: head/lang/Makefile 468710 2018-04-30 16:16:22Z sunpoet $
 #
 
     COMMENT = Programming languages
@@ -274,7 +274,6 @@
     SUBDIR += ponyc
     SUBDIR += ptoc
     SUBDIR += pure
-    SUBDIR += py-clojure_py
     SUBDIR += py-hy
     SUBDIR += py-mx-base
     SUBDIR += py-prolog

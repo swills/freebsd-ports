@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/xproxymanagementprotocol/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/x11/xproxymanagementprotocol/Makefile 468410 2018-04-27 09:03:49Z amdmi3 $
 
 PORTNAME=	xproxymanagementprotocol
 PORTVERSION=	1.0.3
@@ -6,6 +6,9 @@ CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	X Proxy Management Protocol headers
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 XORG_CAT=	proto
 

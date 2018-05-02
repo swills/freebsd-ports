@@ -1,9 +1,9 @@
 # Created by: Carlos J. Puga Medina <cpm@FreeBSD.org>
-# $FreeBSD: head/www/iridium/Makefile 467307 2018-04-14 11:47:07Z cpm $
+# $FreeBSD: head/www/iridium/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	iridium
 PORTVERSION=	58.0
-PORTREVISION=	13
+PORTREVISION=	16
 CATEGORIES=	www
 MASTER_SITES=	https://downloads.iridiumbrowser.de/source/
 PKGNAMESUFFIX=	-browser
@@ -16,7 +16,7 @@ LICENSE=	BSD3CLAUSE LGPL21 MPL11
 LICENSE_COMB=	multi
 
 BUILD_DEPENDS=	gperf:devel/gperf \
-		clang50:devel/llvm50 \
+		clang60:devel/llvm60 \
 		yasm:devel/yasm \
 		ffmpeg>=3.2.2,1:multimedia/ffmpeg \
 		bash:shells/bash \
@@ -71,8 +71,8 @@ ALL_TARGET=	chrome
 INSTALLS_ICONS=	yes
 BINARY_ALIAS=	python=${PYTHON_CMD}
 
-CC=		clang50
-CXX=		clang++50
+CC=		clang60
+CXX=		clang++60
 EXTRA_PATCHES+=	${FILESDIR}/extra-patch-clang
 
 # Run "./out/${BUILDTYPE}/gn args out/${BUILDTYPE} --list" for all variables.

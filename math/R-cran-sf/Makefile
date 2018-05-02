@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-sf/Makefile 466202 2018-04-02 06:45:46Z tota $
+# $FreeBSD: head/math/R-cran-sf/Makefile 468506 2018-04-28 00:16:05Z tota $
 
 PORTNAME=	sf
-DISTVERSION=	0.6-1
+DISTVERSION=	0.6-2
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
@@ -13,8 +13,9 @@ LICENSE=	GPLv2 MIT
 LICENSE_COMB=	dual
 
 CRAN_DEPENDS=	R-cran-Rcpp>0:devel/R-cran-Rcpp \
-		R-cran-DBI>=0.5:databases/R-cran-DBI \
-		R-cran-units>=0.4.6:math/R-cran-units \
+		R-cran-RPostgreSQL>0:databases/R-cran-RPostgreSQL \
+		R-cran-DBI>=0.8:databases/R-cran-DBI \
+		R-cran-units>=0.5.1:math/R-cran-units \
 		R-cran-classInt>0:devel/R-cran-classInt \
 		R-cran-magrittr>0:devel/R-cran-magrittr
 LIB_DEPENDS=	libgdal.so:graphics/gdal \

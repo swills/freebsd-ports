@@ -1,9 +1,9 @@
 # Created by: Matthias Andree <mandree@FreeBSD.org>
-# $FreeBSD: head/security/openvpn-devel/Makefile 464495 2018-03-14 14:45:10Z swills $
+# $FreeBSD: head/security/openvpn-devel/Makefile 468134 2018-04-23 19:26:32Z tijl $
 
 PORTNAME=		openvpn
 DISTVERSION=		201811
-PORTREVISION?=		0
+PORTREVISION?=		1
 CATEGORIES=		security net
 MASTER_SITES=		https://secure-computing.net/files/openvpn/ \
 			ftp://ftp2.secure-computing.net/pub/FreeBSD/openvpn-devel/

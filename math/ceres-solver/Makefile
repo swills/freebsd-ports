@@ -1,7 +1,8 @@
-# $FreeBSD: head/math/ceres-solver/Makefile 467441 2018-04-15 23:57:29Z jbeich $
+# $FreeBSD: head/math/ceres-solver/Makefile 468325 2018-04-26 06:41:30Z yuri $
 
 PORTNAME=	ceres-solver
 DISTVERSION=	1.14.0
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	jbeich@FreeBSD.org

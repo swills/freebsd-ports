@@ -1,9 +1,8 @@
 # Created by: Evan Sarmiento <esarmiento@wayfair.com>
-# $FreeBSD: head/www/py-graphite-web/Makefile 465317 2018-03-22 22:15:08Z swills $
+# $FreeBSD: head/www/py-graphite-web/Makefile 468109 2018-04-23 17:30:01Z swills $
 
 PORTNAME=	graphite-web
-PORTVERSION=	1.1.2
-PORTREVISION=	1
+PORTVERSION=	1.1.3
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

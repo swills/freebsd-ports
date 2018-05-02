@@ -1,5 +1,5 @@
 # Created by: Carlo Strub
-# $FreeBSD: head/security/py-obfsproxy-tor/Makefile 463379 2018-03-02 08:16:21Z yuri $
+# $FreeBSD: head/security/py-obfsproxy-tor/Makefile 468181 2018-04-24 06:30:56Z loader $
 
 PORTNAME=	obfsproxy
 PORTVERSION=	0.2.13
@@ -20,6 +20,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyptlib>=0.0.5:security/py-pyptlib@${FLAVOR}
 		${PYTHON_PKGNAMEPREFIX}pycrypto>=2.1:security/py-pycrypto@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}yaml>=0:devel/py-yaml@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${FLAVOR}
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist
@@ -27,5 +28,8 @@ SUB_FILES=	pkg-message
 NO_ARCH=	yes
 
 PYDISTUTILS_PKGNAME=	obfsproxy
+
+do-test:
+	@(cd ${TEST_WRKSRC} && ${SETENV} ${TEST_ENV} ${PYTHON_CMD} -m pytest)
 
 .include <bsd.port.mk>

@@ -1,14 +1,14 @@
-# $FreeBSD: head/graphics/kipi-plugin-mediawiki/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/graphics/kipi-plugin-mediawiki/Makefile 468520 2018-04-28 07:39:40Z tcberner $
 
 PORTNAME=	kipi-plugin-${KIPI_PLUGIN}
 PORTVERSION=	${DIGIKAM_VER}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics kde
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	${${KIPI_PLUGIN}_DESC}
 
-LIB_DEPENDS=	libmediawiki.so:net/libmediawiki
+LIB_DEPENDS=	libmediawiki.so:net/libmediawiki-kde4
 
 KIPI_PLUGIN=	mediawiki
 .include "${.CURDIR}/../digikam-kde4/Makefile.common"

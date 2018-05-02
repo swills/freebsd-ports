@@ -1,8 +1,8 @@
 # Created by: Christopher Key <cjk32@cam.ac.uk>
-# $FreeBSD: head/www/p5-WebService-MusicBrainz/Makefile 458692 2018-01-10 20:12:43Z bofh $
+# $FreeBSD: head/www/p5-WebService-MusicBrainz/Makefile 468058 2018-04-22 20:44:22Z bofh $
 
 PORTNAME=	WebService-MusicBrainz
-PORTVERSION=	1.0.3
+PORTVERSION=	1.0.4
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

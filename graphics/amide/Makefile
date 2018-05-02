@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/amide/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/graphics/amide/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	amide
 PORTVERSION=	1.0.5
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 

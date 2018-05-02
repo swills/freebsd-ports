@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/syncthing/Makefile 464449 2018-03-14 03:02:03Z swills $
+# $FreeBSD: head/net/syncthing/Makefile 468115 2018-04-23 18:08:50Z swills $
 
 PORTNAME=	syncthing
-PORTVERSION=	0.14.45
+PORTVERSION=	0.14.46
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 

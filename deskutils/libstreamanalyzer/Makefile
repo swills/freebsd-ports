@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/libstreamanalyzer/Makefile 458300 2018-01-06 23:03:49Z tcberner $
+# $FreeBSD: head/deskutils/libstreamanalyzer/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	libstreamanalyzer
 PORTVERSION=	${STRIGI_VERSION}
-PORTREVISION=	10
+PORTREVISION=	12
 CATEGORIES=	deskutils
 MASTER_SITES=	${STRIGI_MASTER_SITES}
 

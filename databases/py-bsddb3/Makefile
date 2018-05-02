@@ -1,5 +1,5 @@
 # Created by: Hye-Shik Chang <perky@python.or.kr>
-# $FreeBSD: head/databases/py-bsddb3/Makefile 458473 2018-01-08 20:02:50Z bofh $
+# $FreeBSD: head/databases/py-bsddb3/Makefile 468151 2018-04-24 00:04:11Z bofh $
 
 PORTNAME=	bsddb3
 PORTVERSION=	6.2.5
@@ -9,7 +9,7 @@ MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	bofh@FreeBSD.org
-COMMENT=	Python extension module for BerkeleyDB 3 and 4
+COMMENT=	Python extension module for BerkeleyDB 4.7, 4.8, 5.1, 5.3, 6.1 and 6.2
 
 LICENSE=	BSD3CLAUSE
 

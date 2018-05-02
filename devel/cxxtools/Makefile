@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/devel/cxxtools/Makefile 455813 2017-12-09 00:42:05Z linimon $
+# $FreeBSD: head/devel/cxxtools/Makefile 468390 2018-04-26 22:22:58Z jbeich $
 
 PORTNAME=	cxxtools
 PORTVERSION=	2.2.1
@@ -14,8 +14,6 @@ LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN_aarch64=		does not configure: error: check for atomictype failed
-BROKEN_armv6=		does not compile: string_view:204:5: error: static_assert failed "Character type of basic_string_view must be a POD"
-BROKEN_armv7=		does not compile: string_view:204:5: error: static_assert failed "Character type of basic_string_view must be a POD"
 BROKEN_mips=		does not configure: in section .data.rel.ro of csvdeserializer-test.o: defined in discarded section
 BROKEN_mips64=		does not configure: in section .data.rel.ro of csvdeserializer-test.o: defined in discarded section
 BROKEN_sparc64=		does not configure

@@ -1,9 +1,9 @@
 # Created by: mikael.urankar@gmail.com
-# $FreeBSD: head/multimedia/omxplayer/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/multimedia/omxplayer/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	omxplayer
 PORTVERSION=	20161004
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	multimedia
 
 MAINTAINER=	mikael.urankar@gmail.com

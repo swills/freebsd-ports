@@ -1,5 +1,7 @@
 # Created by: Martin Matuska <martin@matuska.org>
-# $FreeBSD: head/databases/luasql-firebird/Makefile 416805 2016-06-12 15:05:44Z vanilla $
+# $FreeBSD: head/databases/luasql-firebird/Makefile 468288 2018-04-25 18:40:14Z acm $
+
+PORTREVISION=	1
 
 LUASQL_DRIVER=	firebird
 

@@ -1,5 +1,5 @@
 # Created by: Willem Jan Withagen <wjw@digiware.nl>
-# $FreeBSD: head/net/ceph/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/net/ceph/Makefile 467840 2018-04-20 20:08:29Z jbeich $
 
 PORTNAME=	ceph
 DISTVERSIONPREFIX=	v
@@ -20,7 +20,7 @@ IGNORE_FreeBSD_10=	Doesnt build for FreeBSD 10.x
 BUILD_DEPENDS=	\
 	yasm:devel/yasm \
 	pkgconf:devel/pkgconf \
-	sphinx-build:textproc/py-sphinx@${PY_FLAVOR} \
+	sphinx-build:textproc/py-sphinx \
 	gperf:devel/gperf \
 	${LOCALBASE}/lib/libatomic_ops.a:devel/libatomic_ops
 LIB_DEPENDS=	\
@@ -42,7 +42,7 @@ RUN_DEPENDS=	\
 	xml:textproc/xmlstarlet \
 	jq:textproc/jq \
 	flock:sysutils/flock \
-	virtualenv:devel/py-virtualenv@${PY_FLAVOR} \
+	virtualenv:devel/py-virtualenv \
 	${PYTHON_PKGNAMEPREFIX}prettytable>=0:devel/py-prettytable@${PY_FLAVOR}
 
 CONFLICTS_INSTALL=	ceph-devel

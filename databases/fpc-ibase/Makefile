@@ -1,6 +1,7 @@
 # Created by: John Merryweather Cooper
-# $FreeBSD: head/databases/fpc-ibase/Makefile 466532 2018-04-05 04:52:36Z acm $
+# $FreeBSD: head/databases/fpc-ibase/Makefile 468288 2018-04-25 18:40:14Z acm $
 
+PORTREVISION=	1
 CATEGORIES=	databases lang
 PKGNAMESUFFIX=	-ibase
 

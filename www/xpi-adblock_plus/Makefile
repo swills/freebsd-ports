@@ -1,13 +1,15 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/www/xpi-adblock_plus/Makefile 446557 2017-07-25 06:33:27Z bar $
+# $FreeBSD: head/www/xpi-adblock_plus/Makefile 468393 2018-04-27 00:16:47Z bar $
 
 PORTNAME=	adblock_plus
-PORTVERSION=	2.9.1
-DISTVERSIONSUFFIX=	-an+fx+sm+tb
+PORTVERSION=	3.0.4
+DISTVERSIONSUFFIX=	-an+fx
 CATEGORIES=	www
 
 MAINTAINER=	bar@FreeBSD.org
 COMMENT=	Content filtering extension
+
+USE_XPI=        *firefox*
 
 LICENSE=	GPLv3
 

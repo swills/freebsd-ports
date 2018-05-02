@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/rem/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/audio/rem/Makefile 468543 2018-04-28 14:03:20Z crees $
 
 PORTNAME=	rem
-PORTVERSION=	0.5.0
+PORTVERSION=	0.5.3
 CATEGORIES=	audio devel
 MASTER_SITES=	http://www.creytiv.com/pub/
 

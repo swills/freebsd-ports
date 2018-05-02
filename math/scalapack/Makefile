@@ -1,5 +1,5 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/math/scalapack/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/scalapack/Makefile 467919 2018-04-22 08:33:46Z amdmi3 $
 
 PORTNAME=	scalapack
 PORTVERSION=	2.0.2
@@ -149,7 +149,7 @@ post-install:
 .endif
 
 .if defined(MAINTAINER_MODE)
-regression-test:	build
+do-test:
 . if !exists(${HOME}/.mpd.conf)
 	@${ECHO_CMD} "MPD_SECRETWORD=change_on_install" > ${HOME}/.mpd.conf
 	${CHMOD} go-r ${HOME}/.mpd.conf

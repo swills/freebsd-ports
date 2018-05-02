@@ -1,9 +1,9 @@
 # Created by: Richard Gallamore <ultima@FreeBSD.org>
-# $FreeBSD: head/net/guacamole-server/Makefile 459480 2018-01-19 22:54:20Z ultima $
+# $FreeBSD: head/net/guacamole-server/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	guacamole-server
 DISTVERSION=	0.9.14
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 
 MAINTAINER=	ultima@FreeBSD.org

@@ -1,10 +1,10 @@
 # Created by: KANOU Hiroki <kanou@khdd.net>
-# $FreeBSD: head/print/ft2demos/Makefile 445744 2017-07-14 11:20:07Z bofh $
+# $FreeBSD: head/print/ft2demos/Makefile 468168 2018-04-24 00:53:11Z bofh $
 
 PORTNAME=	ft2demos
-PORTVERSION=	2.8
+PORTVERSION=	2.9
 CATEGORIES=	print
-MASTER_SITES=	http://savannah.nongnu.org/download/freetype/ \
+MASTER_SITES=	SAVANNAH/freetype/ \
 		SF/freetype/freetype-demos/${PORTVERSION}
 
 MAINTAINER=	bofh@FreeBSD.org

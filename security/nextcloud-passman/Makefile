@@ -1,5 +1,5 @@
 # Created by: Bernard Spil <brnrd@freebsd.org>
-# $FreeBSD: head/security/nextcloud-passman/Makefile 466394 2018-04-04 07:15:38Z brnrd $
+# $FreeBSD: head/security/nextcloud-passman/Makefile 468708 2018-04-30 15:43:16Z brnrd $
 
 PORTNAME=	passman
 PORTVERSION=	2.1.4
@@ -7,6 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	https://releases.passman.cc/
 PKGNAMEPREFIX=	nextcloud-
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	brnrd@freebsd.org
@@ -15,11 +16,11 @@ COMMENT=	Full featured password manager for Nextcloud
 LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	nextcloud>=9:www/nextcloud
+RUN_DEPENDS=	nextcloud${PHP_PKGNAMESUFFIX}>=9:www/nextcloud@${PHP_FLAVOR}
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-USES=		php
+USES=		php:flavors
 NO_BUILD=	yes
 NO_ARCH=	yes
 

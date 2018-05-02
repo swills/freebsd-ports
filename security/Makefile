@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 467344 2018-04-14 23:58:13Z sunpoet $
+# $FreeBSD: head/security/Makefile 468781 2018-05-01 19:06:09Z rene $
 #
 
     COMMENT = Security tools
@@ -186,6 +186,7 @@
     SUBDIR += gnutls
     SUBDIR += go-cve-dictionary
     SUBDIR += go.crypto
+    SUBDIR += gopass
     SUBDIR += goptlib
     SUBDIR += gorilla
     SUBDIR += govpn
@@ -860,8 +861,10 @@
     SUBDIR += pkesh
     SUBDIR += pks
     SUBDIR += pktsuckers
+    SUBDIR += plasma5-kscreenlocker
+    SUBDIR += plasma5-ksshaskpass
+    SUBDIR += plasma5-kwallet-pam
     SUBDIR += please
-    SUBDIR += polarssl13
     SUBDIR += poly1305aes
     SUBDIR += portsentry
     SUBDIR += ppars
@@ -1193,7 +1196,7 @@
     SUBDIR += secpanel
     SUBDIR += sectok
     SUBDIR += secure_delete
-    SUBDIR += setaudit 
+    SUBDIR += setaudit
     SUBDIR += sguil
     SUBDIR += sha
     SUBDIR += sha1collisiondetection
@@ -1269,6 +1272,7 @@
     SUBDIR += symbion-sslproxy
     SUBDIR += tclsasl
     SUBDIR += tcpcrypt
+    SUBDIR += teleport
     SUBDIR += testssl.sh
     SUBDIR += tinc
     SUBDIR += tinc-devel

@@ -1,9 +1,12 @@
-# $FreeBSD: head/emulators/mgba/Makefile 455251 2017-12-01 07:19:53Z antoine $
+# $FreeBSD: head/emulators/mgba/Makefile 468848 2018-05-02 15:57:25Z jbeich $
 
 PORTNAME=	mgba
 DISTVERSION=	0.6.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	emulators
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	a7a51a11373f.patch:-p1
 
 MAINTAINER=	greg@unrelenting.technology
 COMMENT=	Game Boy Advance (GBA) emulator/debugger

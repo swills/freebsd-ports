@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 467820 2018-04-20 11:53:21Z garga $
+# $FreeBSD: head/textproc/Makefile 468711 2018-04-30 16:16:27Z sunpoet $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1510,7 +1510,6 @@
     SUBDIR += rubygem-emot
     SUBDIR += rubygem-escape_utils
     SUBDIR += rubygem-escape_utils11
-    SUBDIR += rubygem-escape_utils-rails4
     SUBDIR += rubygem-ezamar
     SUBDIR += rubygem-fast_xs
     SUBDIR += rubygem-ferret

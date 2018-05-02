@@ -1,8 +1,7 @@
-# $FreeBSD: head/net/asterisk15/Makefile 467439 2018-04-15 22:47:01Z madpilot $
+# $FreeBSD: head/net/asterisk15/Makefile 468850 2018-05-02 16:01:11Z madpilot $
 
 PORTNAME=	asterisk
-PORTVERSION=	15.3.0
-PORTREVISION=	1
+PORTVERSION=	15.4.0
 CATEGORIES=	net
 MASTER_SITES=	https://downloads.asterisk.org/pub/telephony/%SUBDIR%/:DEFAULT,g729
 MASTER_SITE_SUBDIR=	asterisk/ \
@@ -148,7 +147,7 @@ LDAP_CONFIGURE_WITH=	ldap
 LDAP_USE=		OPENLDAP=yes
 
 LUA_CONFIGURE_WITH=	lua
-LUA_USES=		lua:51
+LUA_USES=		lua
 LUA_CFLAGS=		-I${LUA_INCDIR}
 LUA_LDFLAGS=		-L${LUA_LIBDIR}
 

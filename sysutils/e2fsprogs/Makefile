@@ -1,8 +1,8 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/sysutils/e2fsprogs/Makefile 464542 2018-03-14 23:40:02Z mandree $
+# $FreeBSD: head/sysutils/e2fsprogs/Makefile 468546 2018-04-28 14:30:24Z mandree $
 
 PORTNAME=	e2fsprogs
-PORTVERSION=	1.44.0
+PORTVERSION=	1.44.1
 PORTREVISION?=	0
 CATEGORIES?=	sysutils
 MASTER_SITES=	KERNEL_ORG/linux/kernel/people/tytso/${PORTNAME}/v${PORTVERSION}

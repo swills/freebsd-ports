@@ -1,5 +1,5 @@
 # Created by: anhot
-# $FreeBSD: head/graphics/sswf/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/sswf/Makefile 468013 2018-04-22 09:33:46Z amdmi3 $
 
 PORTNAME=	sswf
 PORTVERSION=	1.8.4
@@ -11,11 +11,14 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Library and script language tool to create Flash movies
 
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 LIB_DEPENDS=	libfreetype.so:print/freetype2
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
-USES=		bison iconv jpeg libtool pkgconfig
+USES=		bison iconv jpeg libtool localbase pkgconfig
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-pkgconfigdir=${PREFIX}/libdata/pkgconfig
 INSTALL_TARGET=	install-strip
@@ -23,16 +26,11 @@ USE_LDCONFIG=	yes
 
 PLIST_SUB=	VERSION="${PORTVERSION}"
 
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib
-
 OPTIONS_DEFINE=	DEBUG
 
-.include <bsd.port.pre.mk>
+DEBUG_CONFIGURE_OFF=	--disable-debug --disable-yydebug
 
-.if ! ${PORT_OPTIONS:MDEBUG}
-CONFIGURE_ARGS+=	--disable-debug --disable-yydebug
-.endif
+.include <bsd.port.pre.mk>
 
 .if empty(ICONV_LIB)
 CONFIGURE_ARGS+=ac_cv_lib_iconv_libiconv_open=no \

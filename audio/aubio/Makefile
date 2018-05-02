@@ -1,11 +1,14 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/audio/aubio/Makefile 461807 2018-02-14 14:17:52Z jhale $
+# $FreeBSD: head/audio/aubio/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	aubio
 PORTVERSION=	0.4.6
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES?=	audio
 MASTER_SITES=	http://aubio.org/pub/
+
+PATCH_SITES=	https://github.com/${PORTNAME}/${PORTNAME}/commit/
+PATCHFILES=	5690daf759b4.patch:-p1
 
 MAINTAINER?=	jhale@FreeBSD.org
 COMMENT?=	Library for audio labelling

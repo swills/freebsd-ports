@@ -1,9 +1,9 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/audio/lastfm-desktop/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/audio/lastfm-desktop/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	lastfm-desktop
 PORTVERSION=	2.1.36
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio
 
 MAINTAINER=	ports@FreeBSD.org

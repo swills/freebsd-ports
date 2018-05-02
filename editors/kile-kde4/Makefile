@@ -1,11 +1,12 @@
 # Created by: Stefan Jahn <stefan.jahn@nemesis-sektor.de>
-# $FreeBSD: head/editors/kile-kde4/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/editors/kile-kde4/Makefile 468624 2018-04-29 12:29:40Z tcberner $
 
 PORTNAME=	kile
 PORTVERSION=	2.1.3
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	editors kde
 MASTER_SITES=	SF/${PORTNAME}/stable/${PORTNAME}-${DISTVERSION}
+PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	LaTeX source editor for KDE
@@ -23,5 +24,8 @@ USE_TEX=	latex
 OPTIONS_DEFINE=	OKULAR
 OKULAR_DESC=	Use Okular for viewing
 OKULAR_USE=	KDE=okular_run
+
+CONFLICTS_INSTALL=	kile-3.*
+PORTSCOUT=	limit:2\.1.*
 
 .include <bsd.port.mk>

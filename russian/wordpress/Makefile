@@ -1,5 +1,5 @@
 # Created by: Mihail Timofeev <9267096@gmail.com>
-# $FreeBSD: head/russian/wordpress/Makefile 466675 2018-04-06 16:28:11Z sunpoet $
+# $FreeBSD: head/russian/wordpress/Makefile 468307 2018-04-25 22:00:04Z mat $
 
 PORTNAME=	wordpress
 DISTVERSION=	4.9.5
@@ -36,7 +36,9 @@ OPTIONS_DEFINE=	DOCS
 pre-everything::
 	@${ECHO_CMD} "If you want to upgrade, you must read upgrade document."
 	@${ECHO_CMD} ""
+.  if !(defined(PACKAGE_BUILDING) || defined(BATCH))
 	@sleep 1
+.  endif
 
 pre-install:
 	${ECHO_CMD} '@owner www' > ${PLIST}

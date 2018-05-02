@@ -1,8 +1,8 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-oslo.db/Makefile 466501 2018-04-04 18:55:04Z sunpoet $
+# $FreeBSD: head/devel/py-oslo.db/Makefile 468452 2018-04-27 15:56:15Z sunpoet $
 
 PORTNAME=	oslo.db
-PORTVERSION=	4.35.0
+PORTVERSION=	4.37.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

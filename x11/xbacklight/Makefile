@@ -1,14 +1,14 @@
-# $FreeBSD: head/x11/xbacklight/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/xbacklight/Makefile 468659 2018-04-29 21:40:10Z yuri $
 
 PORTNAME=	xbacklight
-PORTVERSION=	1.2.1
-PORTREVISION=	1
+PORTVERSION=	1.2.2
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	Program to adjust backlight brightness
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libxcb-util.so:x11/xcb-util
 

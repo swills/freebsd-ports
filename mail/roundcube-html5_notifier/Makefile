@@ -1,20 +1,22 @@
 # Created by: Koichiro IWAO <meta+ports@vmeta.jp>
-# $FreeBSD: head/mail/roundcube-html5_notifier/Makefile 465067 2018-03-20 06:16:18Z meta $
+# $FreeBSD: head/mail/roundcube-html5_notifier/Makefile 468851 2018-05-02 16:15:59Z mat $
 
 PORTNAME=	html5_notifier
 PORTVERSION=	0.6.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	mail
 PKGNAMEPREFIX=	roundcube-
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
 MAINTAINER=	meta@FreeBSD.org
 COMMENT=	HTML5 desktop notifier plugin for roundcube
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	roundcube>=1.0:mail/roundcube
-BUILD_DEPENDS=	roundcube>=1.0:mail/roundcube
+RUN_DEPENDS=	roundcube${PHP_PKGNAMESUFFIX}>=1.0:mail/roundcube@${PHP_FLAVOR}
+BUILD_DEPENDS=	roundcube${PHP_PKGNAMESUFFIX}>=1.0:mail/roundcube@${PHP_FLAVOR}
 
+USES=	php:flavors
 USE_GITHUB=	yes
 GH_ACCOUNT=	stremlau
 

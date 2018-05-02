@@ -1,10 +1,10 @@
 # Created by: Koop Mast <kwm@rainbow-runner.nl>
-# $FreeBSD: head/multimedia/gstreamer-ffmpeg/Makefile 458234 2018-01-06 09:00:48Z amdmi3 $
+# $FreeBSD: head/multimedia/gstreamer-ffmpeg/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 #    $MCom: ports/multimedia/gstreamer-ffmpeg/Makefile,v 1.14 2006/07/20 13:40:27 ahze Exp $
 
 PORTNAME=	gstreamer
 PORTVERSION=	0.10.13
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	multimedia
 MASTER_SITES=	http://gstreamer.freedesktop.org/src/gst-ffmpeg/:ffmpeg \
 		http://libav.org/releases/:libav

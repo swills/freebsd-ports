@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/cantata/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/audio/cantata/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=		cantata
-DISTVERSION=		2.2.0
+DISTVERSION=		2.3.0
 DISTVERSIONPREFIX=	v
 PORTREVISION=		1
 CATEGORIES=		audio kde
@@ -23,7 +23,8 @@ CMAKE_ARGS=		-DENABLE_QT5:BOOL=TRUE	\
 			-DCMAKE_DISABLE_FIND_PACKAGE_UDev:BOOL=TRUE
 
 USES=			cmake:outsource cpe pkgconfig shebangfix
-SHEBANG_FILES=		playlists/cantata-dynamic cantata-remote.cmake
+SHEBANG_FILES=		playlists/cantata-dynamic cantata-remote.cmake \
+			devices/mounter/mount.cifs.wrapper
 CPE_VENDOR=		craig_drummond
 USE_LDCONFIG=		yes
 

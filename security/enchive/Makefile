@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/enchive/Makefile 447300 2017-08-03 22:54:53Z acm $
+# $FreeBSD: head/security/enchive/Makefile 467853 2018-04-21 00:36:33Z acm $
 
 PORTNAME=	enchive
-PORTVERSION=	3.3
+PORTVERSION=	3.4
 CATEGORIES=	security
 
 MAINTAINER=	acm@FreeBSD.org

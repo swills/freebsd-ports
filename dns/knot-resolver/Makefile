@@ -1,5 +1,5 @@
-# Created by: Leo Vandewoestijne <freebsd@dns-lab.com>
-# $FreeBSD: head/dns/knot-resolver/Makefile 463786 2018-03-07 10:41:01Z yuri $
+# Created by: Leo Vandewoestijne <freebsd@dns.company>
+# $FreeBSD: head/dns/knot-resolver/Makefile 468167 2018-04-24 00:49:55Z dbaio $
 
 PORTNAME=	knot-resolver
 DISTVERSION=	2.1.1
@@ -7,7 +7,7 @@ CATEGORIES=	dns ipv6
 MASTER_SITES=	https://secure.nic.cz/files/knot-resolver/ \
 		https://dns.company/downloads/knot-resolver/
 
-MAINTAINER=	freebsd@dns-lab.com
+MAINTAINER=	freebsd@dns.company
 COMMENT=	Caching full resolver implementation
 
 LICENSE=	GPLv3

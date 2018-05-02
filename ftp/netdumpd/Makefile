@@ -1,8 +1,9 @@
 # Created by: Mark Johnston <markj@FreeBSD.org>
-# $FreeBSD: head/ftp/netdumpd/Makefile 467109 2018-04-11 20:30:26Z markj $
+# $FreeBSD: head/ftp/netdumpd/Makefile 468845 2018-05-02 15:13:22Z sbruno $
 
 PORTNAME=	netdumpd
-PORTVERSION=	20180411
+PORTVERSION=	20180424
+PORTREVISION=	1
 CATEGORIES=	ftp
 MASTER_SITES=	LOCAL/markj
 
@@ -18,5 +19,7 @@ MAKE_ARGS+=	MANDIR=${PREFIX}/man/man
 MAKE_ARGS+=	SCRIPTSDIR=${PREFIX}/etc/rc.d
 
 PLIST_FILES=	sbin/${PORTNAME} man/man8/${PORTNAME}.8.gz etc/rc.d/${PORTNAME}
+
+USES+=		uidfix
 
 .include <bsd.port.mk>

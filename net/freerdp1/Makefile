@@ -1,9 +1,9 @@
 # Created by: Alexander Logvinov <avl@FreeBSD.org>
-# $FreeBSD: head/net/freerdp1/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/net/freerdp1/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	freerdp
 PORTVERSION=	1.2.0
-PORTREVISION=	7
+PORTREVISION=	9
 CATEGORIES=	net comms ipv6
 PKGNAMESUFFIX=	1
 
@@ -42,6 +42,7 @@ ALSA_CMAKE_BOOL=	WITH_ALSA
 CUPS_LIB_DEPENDS=	libcups.so:print/cups
 CUPS_CMAKE_BOOL=	WITH_CUPS
 
+FFMPEG_BROKEN=		fails to build with ffmpeg 4.0
 FFMPEG_LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 			libavutil.so:multimedia/ffmpeg
 FFMPEG_CMAKE_BOOL=	WITH_FFMPEG

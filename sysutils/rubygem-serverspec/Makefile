@@ -1,5 +1,5 @@
 # Created by: Yuichiro NAITO <naito.yuichiro@gmail.com>
-# $FreeBSD: head/sysutils/rubygem-serverspec/Makefile 458531 2018-01-09 14:30:08Z swills $
+# $FreeBSD: head/sysutils/rubygem-serverspec/Makefile 468108 2018-04-23 17:20:59Z fernape $
 
 PORTNAME=	serverspec
 PORTVERSION=	2.41.3
@@ -18,8 +18,8 @@ RUN_DEPENDS=	rubygem-multi_json>=0:devel/rubygem-multi_json \
 		rubygem-specinfra>=2.72:sysutils/rubygem-specinfra
 
 NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 PLIST_FILES=	bin/serverspec-init
 

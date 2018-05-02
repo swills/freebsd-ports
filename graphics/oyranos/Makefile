@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/oyranos/Makefile 459474 2018-01-19 21:28:34Z antoine $
+# $FreeBSD: head/graphics/oyranos/Makefile 468519 2018-04-28 06:14:58Z tcberner $
 
 PORTNAME=	oyranos
 PORTVERSION=	0.9.6
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics
 
 MAINTAINER=	bsam@FreeBSD.org

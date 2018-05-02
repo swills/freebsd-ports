@@ -1,5 +1,5 @@
 # Created by: Boris Samorodov <bsam@FreeBSD.org>
-# $FreeBSD: head/devel/eric6/Makefile 459220 2018-01-17 06:19:00Z dbn $
+# $FreeBSD: head/devel/eric6/Makefile 468775 2018-05-01 17:52:53Z dbn $
 
 PKGNAMESUFFIX=	-${FLAVOR:U:S/_/-/}
 CATEGORIES=	devel python

@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/multimedia/libquicktime/Makefile 457488 2017-12-29 02:55:42Z jbeich $
+# $FreeBSD: head/multimedia/libquicktime/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	libquicktime
 PORTVERSION=	1.2.4
-PORTREVISION?=	19
+PORTREVISION?=	20
 CATEGORIES=	multimedia
 MASTER_SITES=	SF
 
@@ -92,6 +92,7 @@ CONFIGURE_ARGS+=	--without-libpng
 .endif
 
 .if ${PORT_OPTIONS:MFFMPEG}
+BROKEN=		fails to build with ffmpeg 4.0
 LIB_DEPENDS+=	libavcodec.so:multimedia/ffmpeg
 CONFIGURE_ARGS+=	--with-ffmpeg
 .else

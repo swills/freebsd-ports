@@ -1,8 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/darktable/Makefile 465812 2018-03-28 13:56:00Z dumbbell $
+# $FreeBSD: head/graphics/darktable/Makefile 468615 2018-04-29 09:24:57Z dumbbell $
 
 PORTNAME=	darktable
-PORTVERSION=	2.4.2
+PORTVERSION=	2.4.3
+PORTREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	https://github.com/darktable-org/${PORTNAME}/releases/download/release-${PORTVERSION:C/\.rc/rc/}/
 
@@ -97,20 +98,13 @@ WEBP_CMAKE_OFF=		-DUSE_WEBP:BOOL=OFF
 .include <bsd.port.pre.mk>
 
 .if ${ARCH} == amd64 && ${CHOSEN_COMPILER_TYPE} == clang
-# Enable OpenMP support with Clang 5.0.
-LLVM_VER=	50
+# Enable OpenMP support with Clang 6.0.
+LLVM_VER=	60
 BUILD_DEPENDS+=	clang${LLVM_VER}:devel/llvm${LLVM_VER}
 
 CPP=		clang-cpp${LLVM_VER}
 CC=		clang${LLVM_VER}
 CXX=		clang++${LLVM_VER}
-
-# FIXME: At least in 3.7.0 and 3.7.1, Clang doesn't find libomp.so
-# itself. Furthermore, there may be a regression in 3.7.1 because we now
-# need to explicitly link to libm.so as well. This remains true with
-# Clang 3.9.1.
-OPENMP_FLAGS=	-L${LOCALBASE}/llvm${LLVM_VER}/lib -lm -lomp
-LDFLAGS+=	${OPENMP_FLAGS}
 
 # Depend on devel/openmp instead of the full LLVM at runtime. Required
 # for a consistent libomp experience.

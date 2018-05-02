@@ -1,8 +1,8 @@
 # Created by: Babak Farrokhi <farrokhi@FreeBSD.org>
-# $FreeBSD: head/security/erlang-fast_tls/Makefile 465502 2018-03-25 08:08:22Z farrokhi $
+# $FreeBSD: head/security/erlang-fast_tls/Makefile 468331 2018-04-26 08:05:18Z farrokhi $
 
 PORTNAME=	fast_tls
-PORTVERSION=	1.0.21
+PORTVERSION=	1.0.22
 CATEGORIES=	security
 PKGNAMEPREFIX=	erlang-
 

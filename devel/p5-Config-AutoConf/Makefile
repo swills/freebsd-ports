@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Config-AutoConf/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Config-AutoConf/Makefile 467972 2018-04-22 08:54:25Z sunpoet $
 
 PORTNAME=	Config-AutoConf
-PORTVERSION=	0.315
+PORTVERSION=	0.316
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

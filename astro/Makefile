@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/Makefile 466809 2018-04-08 17:21:34Z tcberner $
+# $FreeBSD: head/astro/Makefile 468646 2018-04-29 19:46:07Z sunpoet $
 #
 
     COMMENT = Astronomical ports
@@ -29,6 +29,7 @@
     SUBDIR += gpxloggerd
     SUBDIR += jday
     SUBDIR += josm
+    SUBDIR += kstars
     SUBDIR += kstars-kde4
     SUBDIR += libgal
     SUBDIR += libkgeomap
@@ -86,6 +87,8 @@
     SUBDIR += py-astLib
     SUBDIR += py-astropy
     SUBDIR += py-horoscopegenerator
+    SUBDIR += py-metar
+    SUBDIR += py-metpy
     SUBDIR += py-pymetar
     SUBDIR += py-pywapi
     SUBDIR += pyephem

@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/science/mei/Makefile 456786 2017-12-20 12:25:18Z bapt $
+# $FreeBSD: head/science/mei/Makefile 468333 2018-04-26 08:33:48Z amdmi3 $
 
 PORTNAME=	mei
 PORTVERSION=	1.0.4
@@ -23,11 +23,9 @@ CONFIGURE_ARGS=	--with-bft=${LOCALBASE}
 INSTALL_TARGET=	install-strip
 BINARY_ALIAS=	swig=swig3.0
 
-.if defined(MAINTAINER_MODE)
-regression-test:
+do-test:
 	(cd ${WRKSRC}/tests &&	\
-	${MAKE} check &&	\
+	${MAKE_CMD} check &&	\
 	./mei_test )
-.endif
 
 .include <bsd.port.mk>

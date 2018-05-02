@@ -1,5 +1,5 @@
 # Created by: Dominik Rothert <dr@domix.de>
-# $FreeBSD: head/x11/xtermset/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/x11/xtermset/Makefile 468758 2018-05-01 09:03:56Z amdmi3 $
 
 PORTNAME=	xtermset
 PORTVERSION=	0.5.2
@@ -9,6 +9,9 @@ MASTER_SITES=	SF/clts/${PORTNAME}/${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Dynamically change some settings of an xterm
+
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
 MAKE_ARGS+=	ACLOCAL="${TRUE}" AUTOCONF="${TRUE}" AUTOMAKE="${TRUE}"
