@@ -1,10 +1,10 @@
 # Created by: Phil Oleson <oz@nixil.net>
-# $FreeBSD: head/multimedia/dvd-slideshow/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/multimedia/dvd-slideshow/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	dvd-slideshow
 PORTVERSION=	0.8.4
 DISTVERSIONSUFFIX=	-2
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION}${DISTVERSIONSUFFIX} \
 		SF/${PORTNAME}/${PORTNAME}-themes/${THEMEVERSION}-1:themes

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-meliae/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/devel/py-meliae/Makefile 468810 2018-05-02 08:33:54Z amdmi3 $
 
 PORTNAME=	meliae
 PORTVERSION=	0.4.0
@@ -15,8 +15,9 @@ LICENSE=	GPLv3
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist cython
+TEST_TARGET=	check  # test fails
 
-regression-test: extract
-	(cd ${WRKSRC}; ${MAKE} check)
+post-patch:
+	@${REINPLACE_CMD} -e 's|python|${PYTHON_CMD}|' ${WRKSRC}/Makefile
 
 .include <bsd.port.mk>

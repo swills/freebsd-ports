@@ -1,8 +1,8 @@
 # Created by: David E. Thiel <lx@FreeBSD.org>
-# $FreeBSD: head/security/ncrack/Makefile 422009 2016-09-13 14:18:54Z woodsb02 $
+# $FreeBSD: head/security/ncrack/Makefile 468860 2018-05-02 18:07:06Z lx $
 
 PORTNAME=	ncrack
-PORTVERSION=	0.5
+DISTVERSION=	0.6
 CATEGORIES=	security
 MASTER_SITES=	http://nmap.org/ncrack/dist/ \
 				http://redundancy.redundancy.org/mirror/
@@ -17,5 +17,7 @@ GNU_CONFIGURE=	yes
 USES=		gmake ssl
 CPPFLAGS+=	-I${OPENSSLINC}
 LDFLAGS+=	-L${OPENSSLLIB}
+
+WRKSRC=	${WRKDIR}/${PORTNAME}-${DISTVERSION}.0
 
 .include <bsd.port.mk>

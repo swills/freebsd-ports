@@ -1,10 +1,10 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/games/openmw/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/games/openmw/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	openmw
 DISTVERSIONPREFIX=	openmw-
 DISTVERSION=	0.43.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	games
 
 MAINTAINER=	tobik@FreeBSD.org

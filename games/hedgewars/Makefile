@@ -1,8 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/hedgewars/Makefile 468560 2018-04-28 18:28:54Z amdmi3 $
+# $FreeBSD: head/games/hedgewars/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	hedgewars
 PORTVERSION=	0.9.24
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://www.hedgewars.org/download/releases/ \
 		http://mirror.amdmi3.ru/distfiles/

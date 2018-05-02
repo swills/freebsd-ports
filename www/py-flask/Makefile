@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau <duchateau.olivier@gmail.com>
-# $FreeBSD: head/www/py-flask/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-flask/Makefile 468817 2018-05-02 10:09:23Z rm $
 
 PORTNAME=	Flask
-PORTVERSION=	0.12.2
+PORTVERSION=	0.12.4
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

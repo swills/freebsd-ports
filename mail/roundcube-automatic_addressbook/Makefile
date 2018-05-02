@@ -1,17 +1,19 @@
-# $FreeBSD: head/mail/roundcube-automatic_addressbook/Makefile 447576 2017-08-08 21:57:12Z ultima $
+# $FreeBSD: head/mail/roundcube-automatic_addressbook/Makefile 468851 2018-05-02 16:15:59Z mat $
 
 PORTNAME=	automatic_addressbook
 PORTVERSION=	0.4.3
 CATEGORIES=	mail
 PKGNAMEPREFIX=	roundcube-
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
 MAINTAINER=	andrej@ebert.su
 COMMENT=	Roundcube webmail automatic addressbook plugin
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	roundcube>=0.8:mail/roundcube
+RUN_DEPENDS=	roundcube${PHP_PKGNAMESUFFIX}>=0.8:mail/roundcube@${PHP_FLAVOR}
 
+USES=		php:flavors
 USE_GITHUB=	yes
 GH_ACCOUNT=	sblaisot
 

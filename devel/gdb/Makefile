@@ -1,9 +1,9 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/gdb/Makefile 464813 2018-03-17 12:29:44Z pizzamig $
+# $FreeBSD: head/devel/gdb/Makefile 468827 2018-05-02 13:04:52Z pizzamig $
 
 PORTNAME=	gdb
 PORTVERSION=	8.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	GNU
 
@@ -16,6 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING3
 # untested on sparc64, might work
 ONLY_FOR_ARCHS=	aarch64 amd64 armv6 armv7 i386 mips powerpc powerpc64
 
+LIB_DEPENDS=	libmpfr.so:math/mpfr
 TEST_DEPENDS=	runtest:misc/dejagnu
 
 TEST_TARGET=	check

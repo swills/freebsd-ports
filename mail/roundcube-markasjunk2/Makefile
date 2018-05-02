@@ -1,19 +1,21 @@
 # Created by: gahr
-# $FreeBSD: head/mail/roundcube-markasjunk2/Makefile 447089 2017-08-02 08:50:35Z gahr $
+# $FreeBSD: head/mail/roundcube-markasjunk2/Makefile 468851 2018-05-02 16:15:59Z mat $
 
 PORTNAME=	markasjunk2
 PORTVERSION=	1.11.1
 CATEGORIES=	mail
 PKGNAMEPREFIX=	roundcube-
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
 MAINTAINER=	gahr@FreeBSD.org
 COMMENT=	Roundcube mark-as-junk / mark-as-not-junk plugin
 
 LICENSE=	GPLv3
 
-BUILD_DEPENDS=	roundcube>=1.0:mail/roundcube
-RUN_DEPENDS=	roundcube>=1.0:mail/roundcube
+BUILD_DEPENDS=	roundcube${PHP_PKGNAMESUFFIX}>=1.0:mail/roundcube@${PHP_FLAVOR}
+RUN_DEPENDS=	roundcube${PHP_PKGNAMESUFFIX}>=1.0:mail/roundcube@${PHP_FLAVOR}
 
+USES=	php:flavors
 USE_GITHUB=	yes
 GH_ACCOUNT=	JohnDoh
 GH_PROJECT=	Roundcube-Plugin-Mark-as-Junk-2

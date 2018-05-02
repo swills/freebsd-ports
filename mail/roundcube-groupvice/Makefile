@@ -1,17 +1,19 @@
 # Created by: Alexey V. Degtyarev
-# $FreeBSD: head/mail/roundcube-groupvice/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/roundcube-groupvice/Makefile 468851 2018-05-02 16:15:59Z mat $
 
 PORTNAME=	groupvice
 PORTVERSION=	0.1.2
 CATEGORIES=	mail
 MASTER_SITES=	ftp://renatasystems.org/pub/FreeBSD/ports/distfiles/
 PKGNAMEPREFIX=	roundcube-
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Theme for RoundCube Web Mail
 
-RUN_DEPENDS=	roundcube>=0.2:mail/roundcube
+RUN_DEPENDS=	roundcube${PHP_PKGNAMESUFFIX}>=0.2:mail/roundcube@${PHP_FLAVOR}
 
+USES=	php:flavors
 NO_BUILD=	yes
 NO_ARCH=	yes
 

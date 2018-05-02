@@ -1,9 +1,9 @@
 # Created by: Anders Nordby <anders@FreeBSD.org>
-# $FreeBSD: head/multimedia/ffmpeg2theora/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/multimedia/ffmpeg2theora/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	ffmpeg2theora
 PORTVERSION=	0.30
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	multimedia
 MASTER_SITES=	http://v2v.cc/~j/ffmpeg2theora/downloads/
 

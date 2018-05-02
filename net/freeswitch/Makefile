@@ -1,9 +1,9 @@
 # Created by: Corey Smith <corsmith@gmail.com>
-# $FreeBSD: head/net/freeswitch/Makefile 455251 2017-12-01 07:19:53Z antoine $
+# $FreeBSD: head/net/freeswitch/Makefile 468853 2018-05-02 16:33:59Z jbeich $
 
 PORTNAME=	freeswitch
 PORTVERSION=	1.6.19
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	http://files.freeswitch.org/releases/freeswitch/ \
 		http://files.freeswitch.org/releases/sounds/:sounds

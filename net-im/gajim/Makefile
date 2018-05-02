@@ -1,8 +1,8 @@
 # Created by: Vsevolod Stakhov <vsevolod@highsecure.ru>
-# $FreeBSD: head/net-im/gajim/Makefile 467157 2018-04-12 13:54:47Z rm $
+# $FreeBSD: head/net-im/gajim/Makefile 468816 2018-05-02 09:42:06Z rm $
 
 PORTNAME=	gajim
-DISTVERSION=	1.0.1
+DISTVERSION=	1.0.2
 CATEGORIES=	net-im
 MASTER_SITES=	http://gajim.org/downloads/1.0/
 
@@ -12,7 +12,7 @@ COMMENT=	GTK+ Jabber client
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nbxmpp>=0.6.4:net-im/py-nbxmpp@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nbxmpp>=0.6.5:net-im/py-nbxmpp@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}openssl>=0.12:security/py-openssl@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyasn1>=0:devel/py-pyasn1@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}cairo>0:graphics/py-cairo@${PY_FLAVOR} \

@@ -1,9 +1,9 @@
-# $FreeBSD: head/multimedia/QtAV/Makefile 456184 2017-12-12 21:29:57Z madpilot $
+# $FreeBSD: head/multimedia/QtAV/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=		QtAV
 PORTVERSION=		1.12.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=		2
+PORTREVISION=		3
 CATEGORIES=		multimedia
 DIST_SUBDIR=		KDE
 

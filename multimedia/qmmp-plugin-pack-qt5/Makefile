@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/qmmp-plugin-pack-qt5/Makefile 455417 2017-12-03 17:41:24Z riggs $
+# $FreeBSD: head/multimedia/qmmp-plugin-pack-qt5/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	qmmp-plugin-pack
 PORTVERSION=	1.2.0
+PORTREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://qmmp.ylsoftware.com/files/plugins/ \
 	SF/qmmp-dev/${PORTNAME}/

@@ -1,9 +1,9 @@
 # Created by: Jesse <jessefrgsmith@yahoo.ca>
-# $FreeBSD: head/multimedia/imagination/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/multimedia/imagination/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	imagination
 PORTVERSION=	3.0
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	multimedia
 MASTER_SITES=	SF
 

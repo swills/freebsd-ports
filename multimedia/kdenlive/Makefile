@@ -1,7 +1,8 @@
-# $FreeBSD: head/multimedia/kdenlive/Makefile 468558 2018-04-28 18:11:49Z tcberner $
+# $FreeBSD: head/multimedia/kdenlive/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	kdenlive
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	multimedia kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

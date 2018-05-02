@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/zoneminder/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/multimedia/zoneminder/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	zoneminder
 PORTVERSION=	1.30.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	multimedia
 
 MAINTAINER=	bsd@abinet.ru
@@ -10,6 +10,7 @@ COMMENT=	Complete security camera solution, fully web based with image analysis
 
 LICENSE=	GPLv2
 
+BROKEN=		fails to build with ffmpeg 4.0
 CONFLICTS_INSTALL=	zoneminder-h264
 
 ZM_DEPENDS=	p5-DBI>=0:databases/p5-DBI \

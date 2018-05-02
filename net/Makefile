@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 468642 2018-04-29 19:15:01Z tcberner $
+# $FreeBSD: head/net/Makefile 468859 2018-05-02 17:44:23Z mfechner $
 #
 
     COMMENT = Networking tools
@@ -1262,6 +1262,7 @@
     SUBDIR += rubygem-gitaly-proto088
     SUBDIR += rubygem-gitaly-proto094
     SUBDIR += rubygem-gitaly-proto095
+    SUBDIR += rubygem-gitaly-proto096
     SUBDIR += rubygem-gitlab_omniauth-ldap
     SUBDIR += rubygem-gitlab_omniauth-ldap1
     SUBDIR += rubygem-grpc

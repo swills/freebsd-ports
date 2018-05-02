@@ -1,8 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/audio/pacpl/Makefile 458229 2018-01-06 07:02:58Z wen $
+# $FreeBSD: head/audio/pacpl/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	pacpl
 PORTVERSION=	5.1.0
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	SF
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/alsa-sndio/Makefile 464995 2018-03-19 08:23:13Z tobik $
+# $FreeBSD: head/audio/alsa-sndio/Makefile 468771 2018-05-01 17:43:42Z tobik $
 
 PORTNAME=	alsa-sndio
-DISTVERSION=	0.1
+DISTVERSION=	0.2
 CATEGORIES=	audio
 
 MAINTAINER=	tobik@FreeBSD.org

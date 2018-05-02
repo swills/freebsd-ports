@@ -1,9 +1,9 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-upnp/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/multimedia/vdr-plugin-upnp/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	vdr-plugin-upnp
 PORTVERSION=	0.0.2a2
-PORTREVISION=	33
+PORTREVISION=	34
 CATEGORIES=	multimedia
 MASTER_SITES=	http://projects.vdr-developer.org/attachments/download/177/
 DISTNAME=	${PORTNAME:S/-plugin-/-/}-${DISTVERSIONPREFIX}${DISTVERSION:S/a/-alpha/}${DISTVERSIONSUFFIX}

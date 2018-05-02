@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 468571 2018-04-28 19:42:11Z tcberner $
+# $FreeBSD: head/sysutils/Makefile 468764 2018-05-01 15:37:55Z cmt $
 #
 
     COMMENT = System utilities
@@ -1111,6 +1111,9 @@
     SUBDIR += rubygem-vagrant-mutate
     SUBDIR += rubygem-vagrant-vbguest
     SUBDIR += rubygem-vmstat
+    SUBDIR += rubygem-win32-file
+    SUBDIR += rubygem-win32-file-security
+    SUBDIR += rubygem-win32-file-stat
     SUBDIR += rubygem-winrm
     SUBDIR += rubygem-winrm-elevated
     SUBDIR += rubygem-winrm-fs
@@ -1159,6 +1162,7 @@
     SUBDIR += shlock
     SUBDIR += shmcat
     SUBDIR += showbeastie
+    SUBDIR += shuf
     SUBDIR += siegfried
     SUBDIR += signon-kwallet-extension
     SUBDIR += signon-plugin-oauth2

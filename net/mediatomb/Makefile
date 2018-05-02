@@ -1,9 +1,9 @@
 # Created by: Leonhard Wimmer <leo@mediatomb.cc>
-# $FreeBSD: head/net/mediatomb/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/net/mediatomb/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	mediatomb
 PORTVERSION=	0.12.1
-PORTREVISION=	20
+PORTREVISION=	21
 CATEGORIES=	net multimedia
 MASTER_SITES=	SF/${PORTNAME}/MediaTomb/${PORTVERSION}
 

@@ -1,9 +1,9 @@
 #	$FreeBSD: head/ports-mgmt/pkg_jail/files/pkg_update 411390 2016-03-19 11:00:57Z dinoex 2
-# $FreeBSD: head/multimedia/sabbu/Makefile 459319 2018-01-18 09:48:48Z dinoex $
+# $FreeBSD: head/multimedia/sabbu/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	sabbu
 PORTVERSION=	0.3.0
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/Sabbu%20${PORTVERSION}
 

@@ -1,9 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/audio/siren/Makefile 455765 2017-12-08 01:46:00Z linimon $
+# $FreeBSD: head/audio/siren/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	siren
 PORTVERSION=	0.7
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	http://www.kariliq.nl/${PORTNAME}/dist/
 

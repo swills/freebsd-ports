@@ -1,10 +1,10 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/games/retroarch/Makefile 466124 2018-04-01 07:30:42Z krion $
+# $FreeBSD: head/games/retroarch/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	RetroArch
 PORTVERSION=	1.3.6
 DISTVERSIONPREFIX=	v
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	games
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -26,6 +26,7 @@ NETPLAY_DESC=	Peer-to-peer netplay
 PYTHON_DESC=	Script support in shaders
 FBO_DESC=	OpenGL render-to-texture
 
+FFMPEG_BROKEN=		fails to build with ffmpeg 4.0
 FFMPEG_LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg
 FFMPEG_CONFIGURE_ENABLE=ffmpeg
 OSS_CONFIGURE_ENABLE=	oss

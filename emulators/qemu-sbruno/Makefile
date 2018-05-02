@@ -1,8 +1,8 @@
 # Created by: Juergen Lock <nox@jelal.kn-bremen.de>
-# $FreeBSD: head/emulators/qemu-sbruno/Makefile 463452 2018-03-02 22:34:53Z brooks $
+# $FreeBSD: head/emulators/qemu-sbruno/Makefile 468802 2018-05-01 23:35:16Z sbruno $
 
 PORTNAME=	qemu
-PORTVERSION=	2.11.50.g20180208
+PORTVERSION=	2.11.50.g20180501
 CATEGORIES=	emulators
 MASTER_SITES=	GH
 PKGNAMESUFFIX?=	-sbruno
@@ -13,7 +13,7 @@ COMMENT?=	QEMU CPU Emulator - github bsd-user branch
 
 LICENSE=	GPLv2
 USE_GITHUB=	yes
-GH_TUPLE=	seanbruno:qemu-bsd-user:2b84fbb94e9 \
+GH_TUPLE=	seanbruno:qemu-bsd-user:ea8d0ac \
 		qemu:keycodemapdb:10739aa:keycodemapdb/ui/keycodemapdb
 HAS_CONFIGURE=	yes
 USES=		gmake pkgconfig bison perl5 python:2.7,build

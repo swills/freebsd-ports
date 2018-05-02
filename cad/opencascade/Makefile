@@ -1,9 +1,9 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/cad/opencascade/Makefile 466801 2018-04-08 13:54:00Z thierry $
+# $FreeBSD: head/cad/opencascade/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	opencascade
 PORTVERSION=	7.2.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	cad science
 MASTER_SITES=	LOCAL/thierry
 

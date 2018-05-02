@@ -1,5 +1,5 @@
 # Created by: Neil Booth
-# $FreeBSD: head/security/py-ecdsa/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/security/py-ecdsa/Makefile 468757 2018-05-01 08:33:58Z amdmi3 $
 
 PORTNAME=	ecdsa
 PORTVERSION=	0.11
@@ -12,11 +12,13 @@ MAINTAINER=	kyuupichan@gmail.com
 COMMENT=	ECDSA cryptographic signature library (pure python)
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python
 USE_PYTHON=	distutils autoplist
+NO_ARCH=	yes
 
-regression-test: build
+do-test:
 	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYSETUP} test
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Alexey V. Degtyarev <alexey@renatasystems.org>
-# $FreeBSD: head/mail/roundcube-mobilecube/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/roundcube-mobilecube/Makefile 468851 2018-05-02 16:15:59Z mat $
 
 PORTNAME=	mobilecube
 PORTVERSION=	${THEME_VERSION}.${THEME_BUILD}
@@ -7,16 +7,17 @@ CATEGORIES=	mail
 MASTER_SITES=	SF/${PORTNAME}/${THEME_VERSION}%20Beta/Build%20%23${THEME_BUILD}/
 PKGNAMEPREFIX=	roundcube-
 DISTNAME=	MobileCubeBeta%23${THEME_BUILD}
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Theme for RoundCube Web Mail
 
-RUN_DEPENDS=	roundcube>=0.3:mail/roundcube
+RUN_DEPENDS=	roundcube${PHP_PKGNAMESUFFIX}>=0.3:mail/roundcube@${PHP_FLAVOR}
 
 THEME_VERSION?=	3.1.0
 THEME_BUILD?=	030110A
 
-USES=		zip
+USES=		php:flavors zip
 NO_BUILD=	yes
 NO_ARCH=	yes
 

@@ -1,9 +1,9 @@
 # Created by: Takumi Takahashi <takumiiinn@gmail.com>
-# $FreeBSD: head/audio/forked-daapd/Makefile 452570 2017-10-21 06:50:49Z jbeich $
+# $FreeBSD: head/audio/forked-daapd/Makefile 468844 2018-05-02 15:07:27Z jbeich $
 
 PORTNAME=	forked-daapd
 PORTVERSION=	24.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	audio
 
 MAINTAINER=	takumiiinn@gmail.com
@@ -11,6 +11,8 @@ COMMENT=	DAAP (iTunes), MPD (Music Player Daemon) and RSP (Roku) media server
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN=		fails to build with ffmpeg 4.0
 
 BUILD_DEPENDS=	antlr3:devel/antlr3
 LIB_DEPENDS=	libantlr3c.so:devel/libantlr3c \

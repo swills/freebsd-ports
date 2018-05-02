@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 468495 2018-04-27 20:29:36Z tcberner $
+# $FreeBSD: head/security/Makefile 468781 2018-05-01 19:06:09Z rene $
 #
 
     COMMENT = Security tools
@@ -186,6 +186,7 @@
     SUBDIR += gnutls
     SUBDIR += go-cve-dictionary
     SUBDIR += go.crypto
+    SUBDIR += gopass
     SUBDIR += goptlib
     SUBDIR += gorilla
     SUBDIR += govpn
@@ -864,7 +865,6 @@
     SUBDIR += plasma5-ksshaskpass
     SUBDIR += plasma5-kwallet-pam
     SUBDIR += please
-    SUBDIR += polarssl13
     SUBDIR += poly1305aes
     SUBDIR += portsentry
     SUBDIR += ppars
