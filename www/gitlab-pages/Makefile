@@ -24,6 +24,15 @@ USE_RC_SUBR=	gitlab_pages
 USERS=		gitlab-pages
 GROUPS=		gitlab-pages
 
+FETCH_DEPENDS=	go:lang/go \
+		git>0:devel/git
+post-fetch:
+	GOPATH=${WRKSRC} go get -v -u github.com/FiloSottile/gvt
+	cd ${WRKSRC} && GOPATH=${WRKSRC} bin/gvt fetch golang.org/x/tools/cmd/goimports
+	cd ${WRKSRC} && GOPATH=${WRKSRC} bin/gvt fetch github.com/wadey/gocovmerge
+	cd ${WRKSRC} && GOPATH=${WRKSRC} bin/gvt fetch github.com/golang/lint/golint
+	cd ${WRKSRC} && GOPATH=${WRKSRC} bin/gvt fetch github.com/fzipp/gocyclo
+
 post-patch:
 	@${MV} ${WRKSRC}/vendor ${WRKSRC}/src
 	@${MKDIR} ${WRKSRC}/src/gitlab.com/gitlab-org
