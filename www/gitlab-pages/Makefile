@@ -24,14 +24,16 @@ USE_RC_SUBR=	gitlab_pages
 USERS=		gitlab-pages
 GROUPS=		gitlab-pages
 
+GMAKE=		yes
+
 FETCH_DEPENDS=	go:lang/go \
 		git>0:devel/git
 post-fetch:
-	GOPATH=${WRKSRC} go get -v -u github.com/FiloSottile/gvt
-	cd ${WRKSRC} && GOPATH=${WRKSRC} bin/gvt fetch golang.org/x/tools/cmd/goimports
-	cd ${WRKSRC} && GOPATH=${WRKSRC} bin/gvt fetch github.com/wadey/gocovmerge
-	cd ${WRKSRC} && GOPATH=${WRKSRC} bin/gvt fetch github.com/golang/lint/golint
-	cd ${WRKSRC} && GOPATH=${WRKSRC} bin/gvt fetch github.com/fzipp/gocyclo
+	GOPATH=${WRKDIR}/.GOPATH go get -v -u github.com/FiloSottile/gvt
+	cd ${WRKDIR}/.GOPATH && GOPATH=${WRKDIR}/.GOPATH bin/gvt fetch golang.org/x/tools/cmd/goimports
+	cd ${WRKDIR}/.GOPATH && GOPATH=${WRKDIR}/.GOPATH bin/gvt fetch github.com/wadey/gocovmerge
+	cd ${WRKDIR}/.GOPATH && GOPATH=${WRKDIR}/.GOPATH bin/gvt fetch github.com/golang/lint/golint
+	cd ${WRKDIR}/.GOPATH && GOPATH=${WRKDIR}/.GOPATH bin/gvt fetch github.com/fzipp/gocyclo
 
 post-patch:
 	@${MV} ${WRKSRC}/vendor ${WRKSRC}/src
@@ -39,6 +41,7 @@ post-patch:
 	@${LN} -s ${WRKSRC} ${WRKSRC}/src/gitlab.com/gitlab-org/gitlab-pages
 
 do-build:
+	gmake
 	cd ${WRKSRC} && ${SETENV} GOCACHE=${WRKSRC}/go CGO_ENABLED=0 GO15VENDOREXPERIMENT=1 \
 		GOPATH=${WRKSRC} GOCACHE=off \
 		go build -o gitlab-pages \
