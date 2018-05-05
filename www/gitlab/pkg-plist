@@ -5570,6 +5570,7 @@
 %%WWWDIR%%/config/initializers/7_redis.rb
 %%WWWDIR%%/config/initializers/8_gitaly.rb
 %%WWWDIR%%/config/initializers/8_metrics.rb
+%%WWWDIR%%/config/initializers/9_fast_gettext.rb
 %%WWWDIR%%/config/initializers/active_record_array_type_casting.rb
 %%WWWDIR%%/config/initializers/active_record_data_types.rb
 %%WWWDIR%%/config/initializers/active_record_locking.rb
@@ -5603,7 +5604,6 @@
 %%WWWDIR%%/config/initializers/doorkeeper_openid_connect.rb
 %%WWWDIR%%/config/initializers/email_template_interceptor.rb
 %%WWWDIR%%/config/initializers/etag_caching.rb
-%%WWWDIR%%/config/initializers/fast_gettext.rb
 %%WWWDIR%%/config/initializers/fix_local_cache_middleware.rb
 %%WWWDIR%%/config/initializers/flipper.rb
 %%WWWDIR%%/config/initializers/fog_google_https_private_urls.rb
@@ -8589,6 +8589,7 @@
 %%WWWDIR%%/lib/gitlab/badge/template.rb
 %%WWWDIR%%/lib/gitlab/bare_repository_import/importer.rb
 %%WWWDIR%%/lib/gitlab/bare_repository_import/repository.rb
+%%WWWDIR%%/lib/gitlab/base_doorkeeper_controller.rb
 %%WWWDIR%%/lib/gitlab/bitbucket_import/importer.rb
 %%WWWDIR%%/lib/gitlab/bitbucket_import/project_creator.rb
 %%WWWDIR%%/lib/gitlab/blame.rb
@@ -9298,6 +9299,7 @@
 %%WWWDIR%%/lib/microsoft_teams/notifier.rb
 %%WWWDIR%%/lib/milestone_array.rb
 %%WWWDIR%%/lib/omni_auth/strategies/bitbucket.rb
+%%WWWDIR%%/lib/omni_auth/strategies/jwt.rb
 %%WWWDIR%%/lib/peek/rblineprof/custom_controller_helpers.rb
 %%WWWDIR%%/lib/peek/views/gitaly.rb
 %%WWWDIR%%/lib/peek/views/host.rb
@@ -10124,6 +10126,7 @@
 %%WWWDIR%%/spec/features/projects/blobs/blob_show_spec.rb
 %%WWWDIR%%/spec/features/projects/blobs/edit_spec.rb
 %%WWWDIR%%/spec/features/projects/blobs/shortcuts_blob_spec.rb
+%%WWWDIR%%/spec/features/projects/blobs/user_creates_new_blob_in_new_project_spec.rb
 %%WWWDIR%%/spec/features/projects/branches/download_buttons_spec.rb
 %%WWWDIR%%/spec/features/projects/branches/new_branch_ref_dropdown_spec.rb
 %%WWWDIR%%/spec/features/projects/branches_spec.rb
@@ -10300,6 +10303,7 @@
 %%WWWDIR%%/spec/features/projects/user_uploads_files_spec.rb
 %%WWWDIR%%/spec/features/projects/user_uses_shortcuts_spec.rb
 %%WWWDIR%%/spec/features/projects/user_views_details_spec.rb
+%%WWWDIR%%/spec/features/projects/user_views_empty_project_spec.rb
 %%WWWDIR%%/spec/features/projects/view_on_env_spec.rb
 %%WWWDIR%%/spec/features/projects/wiki/markdown_preview_spec.rb
 %%WWWDIR%%/spec/features/projects/wiki/shortcuts_spec.rb
@@ -11879,6 +11883,7 @@
 %%WWWDIR%%/spec/lib/microsoft_teams/activity_spec.rb
 %%WWWDIR%%/spec/lib/microsoft_teams/notifier_spec.rb
 %%WWWDIR%%/spec/lib/milestone_array_spec.rb
+%%WWWDIR%%/spec/lib/omni_auth/strategies/jwt_spec.rb
 %%WWWDIR%%/spec/lib/rspec_flaky/config_spec.rb
 %%WWWDIR%%/spec/lib/rspec_flaky/example_spec.rb
 %%WWWDIR%%/spec/lib/rspec_flaky/flaky_example_spec.rb
