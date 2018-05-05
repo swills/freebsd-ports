@@ -2,7 +2,7 @@
 # $FreeBSD: head/www/gitlab/Makefile 468821 2018-05-02 10:43:23Z mfechner $
 
 PORTNAME=	gitlab
-PORTVERSION=	10.7.1
+PORTVERSION=	10.7.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www devel
 
@@ -28,7 +28,6 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	gitlab-shell>=7.1.2:devel/gitlab-shell \
 	gitlab-workhorse>=4.1.0:www/gitlab-workhorse \
 	gitaly>=0.96.1:devel/gitaly \
-	gitlab-pages>=0.8.0:www/gitlab-pages \
 	redis>=2.8.23:databases/redis \
 	npm>=4.3.0:www/npm \
 	yarn>=0.17.0:www/yarn \
@@ -58,7 +57,6 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-omniauth-twitter>=1.4:net/rubygem-omniauth-twitter \
 	rubygem-omniauth_crowd22>=2.2.0:devel/rubygem-omniauth_crowd22 \
 	rubygem-omniauth-authentiq>=0.3.1:net/rubygem-omniauth-authentiq \
-	rubygem-omniauth-jwt>=0.0.2:security/rubygem-omniauth-jwt \
 	rubygem-rack-oauth212>=1.2.1:security/rubygem-rack-oauth212 \
 	rubygem-jwt1>=1.5.6:www/rubygem-jwt1 \
 	rubygem-recaptcha3>=3.0:devel/rubygem-recaptcha3 \
