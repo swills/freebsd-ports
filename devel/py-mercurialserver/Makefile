@@ -1,5 +1,5 @@
 # Created by: Aldis Berjoza <aldis@bsdroot.lv>
-# $FreeBSD: head/devel/py-mercurialserver/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/py-mercurialserver/Makefile 469120 2018-05-05 15:09:22Z danfe $
 
 PORTNAME=	mercurialserver
 PORTVERSION=	1.2.0
@@ -27,7 +27,6 @@ GROUPS=		${HGGROUP}
 SUB_FILES=	pkg-message
 SUB_LIST=	PORTNAME=${PORTNAME} \
 		HGUSER=${HGUSER}
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 USES=		python
 USE_PYTHON=	distutils autoplist

@@ -1,5 +1,5 @@
 # Created by: Cyril Guibourg
-# $FreeBSD: head/mail/milter-greylist/Makefile 464850 2018-03-17 21:51:38Z dbaio $
+# $FreeBSD: head/mail/milter-greylist/Makefile 469111 2018-05-05 14:11:14Z danfe $
 
 PORTNAME=	milter-greylist
 PORTVERSION=	4.6.2
@@ -12,8 +12,6 @@ MAINTAINER=	m.tsatsenko@gmail.com
 COMMENT=	Easy-to-use greylist milter for sendmail and postfix
 
 LICENSE=	BSD3CLAUSE
-
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 MAKE_JOBS_UNSAFE=	yes
 

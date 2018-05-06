@@ -1,8 +1,8 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/editors/jedit/Makefile 440432 2017-05-08 13:39:16Z danilo $
+# $FreeBSD: head/editors/jedit/Makefile 468911 2018-05-03 02:03:05Z danilo $
 
 PORTNAME=	jedit
-PORTVERSION=	5.4.0
+PORTVERSION=	5.5.0
 PORTEPOCH=	1
 CATEGORIES=	editors java
 MASTER_SITES=	SF

@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/graphics/php5-ffmpeg/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/graphics/php5-ffmpeg/Makefile 469018 2018-05-04 11:40:44Z jbeich $
 
 PORTNAME=	ffmpeg
 PORTVERSION=	0.6.0.20120114
@@ -14,8 +14,6 @@ COMMENT=	FFmpeg shared extension for php
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BROKEN=		fails to build with ffmpeg 4.0
 
 LIB_DEPENDS=	libgd.so:graphics/gd \
 		libavutil.so:multimedia/ffmpeg

@@ -1,14 +1,10 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net/cjdns/Makefile 467173 2018-04-12 17:48:24Z yuri $
+# $FreeBSD: head/net/cjdns/Makefile 468988 2018-05-03 20:57:15Z yuri $
 
 PORTNAME=	cjdns
 DISTVERSIONPREFIX=	cjdns-v
-DISTVERSION=	20.1
-PORTREVISION=	1
+DISTVERSION=	20.2
 CATEGORIES=	net security
-
-PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
-PATCHFILES=	8b643d2db8a5f64720ff303c3344de6d68cdce5d.patch:-p1 d7a87ed23bbb567bd8ea2418c54266c7f26939c4.patch:-p1
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Routing engine designed for security, scalability, speed

@@ -1,7 +1,7 @@
 # Created by: Kay Lehmann <kay_lehmann@web.de>
-# $FreeBSD: head/databases/qt4-mysql-plugin/Makefile 442740 2017-06-06 05:00:56Z tcberner $
+# $FreeBSD: head/databases/qt4-mysql-plugin/Makefile 469165 2018-05-05 20:05:08Z tcberner $
 
-PORTREVISION=	3
+PORTREVISION=	4
 
 COMMENT=	Qt MySQL database plugin
 DB=		mysql

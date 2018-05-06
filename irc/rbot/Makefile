@@ -1,5 +1,5 @@
 # Created by: David Bushong <david+ports@bushong.net>
-# $FreeBSD: head/irc/rbot/Makefile 456373 2017-12-14 20:58:10Z bdrewery $
+# $FreeBSD: head/irc/rbot/Makefile 469121 2018-05-05 15:17:46Z danfe $
 
 PORTNAME=	rbot
 PORTVERSION=	20160325
@@ -33,7 +33,6 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	ruby-${PORTNAME}
 GH_TAGNAME=	e358601cc521d8aced941eb928fae2d8c53cf0c2
 
-PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-message
 
 PORTDOCS=	REQUIREMENTS ChangeLog

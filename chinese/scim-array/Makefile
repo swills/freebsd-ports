@@ -1,5 +1,5 @@
 # Created by: Li-Lun Wang <llwang@infor.org>
-# $FreeBSD: head/chinese/scim-array/Makefile 452005 2017-10-13 14:25:31Z bapt $
+# $FreeBSD: head/chinese/scim-array/Makefile 469100 2018-05-05 10:49:36Z antoine $
 
 PORTNAME=	scim-array
 PORTVERSION=	1.0.1
@@ -11,6 +11,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Array 30 SCIM IMEngine module
 
 BROKEN=		No public distfiles
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-06-06
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING

@@ -1,5 +1,5 @@
 # Created by: Edwin Groothuis <edwin@mavetju.org>
-# $FreeBSD: head/www/mysar/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/mysar/Makefile 469119 2018-05-05 14:58:18Z danfe $
 
 PORTNAME=	mySAR
 PORTVERSION=	2.1.4
@@ -34,7 +34,6 @@ PLIST_SUB=	MYSAR=${MYSARPREFIX} WWWOWN="${WWWOWN}"
 
 SUB_FILES=	pkg-message
 SUB_LIST=	MYSARDIR=${MYSARDIR}
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 post-extract:
 	@${CHMOD} +x ${WRKSRC}/config/*

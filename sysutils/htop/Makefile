@@ -1,9 +1,8 @@
 # Created by: Tony Shadwick <tshadwick@oss-solutions.com>
-# $FreeBSD: head/sysutils/htop/Makefile 463618 2018-03-05 05:07:55Z yuri $
+# $FreeBSD: head/sysutils/htop/Makefile 469081 2018-05-05 00:29:42Z tobik $
 
 PORTNAME=	htop
-DISTVERSION=	2.1.0-26
-DISTVERSIONSUFFIX=	-g697f5bb
+DISTVERSION=	2.2.0
 CATEGORIES=	sysutils
 
 MAINTAINER=	gaod@hychen.org

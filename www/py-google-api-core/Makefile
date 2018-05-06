@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-google-api-core/Makefile 467946 2018-04-22 08:49:00Z sunpoet $
+# $FreeBSD: head/www/py-google-api-core/Makefile 468872 2018-05-02 20:32:45Z sunpoet $
 
 PORTNAME=	google-api-core
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

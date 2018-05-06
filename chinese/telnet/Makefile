@@ -1,5 +1,5 @@
 # Created by: Ching-Hong Wu <woju@freebsd.ntu.edu.tw>
-# $FreeBSD: head/chinese/telnet/Makefile 441429 2017-05-21 21:55:08Z linimon $
+# $FreeBSD: head/chinese/telnet/Makefile 469101 2018-05-05 11:11:17Z antoine $
 
 PORTNAME=	telnet
 PORTVERSION=	1.0
@@ -24,11 +24,9 @@ SRCDIR=		${SRC_BASE}/usr.bin/telnet
 IGNORE=		need to build this port with the source code of telnet
 .endif
 
-.if ${OPSYS} == FreeBSD && ${OSVERSION} > 1100000
 BROKEN=		does not build: libtelnet/Makefile: Could not find src.opts.mk
-.endif
-
-BROKEN_DragonFly=	does not build
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-06-06
 
 do-extract:
 	@${MKDIR} ${WRKDIR}

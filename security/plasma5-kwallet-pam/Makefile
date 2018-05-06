@@ -1,7 +1,8 @@
-# $FreeBSD: head/security/plasma5-kwallet-pam/Makefile 468495 2018-04-27 20:29:36Z tcberner $
+# $FreeBSD: head/security/plasma5-kwallet-pam/Makefile 469032 2018-05-04 14:34:41Z adridg $
 
 PORTNAME=	kwallet-pam
 DISTVERSION=	${KDE_PLASMA_VERSION}
+PORTREVISION=	1
 CATEGORIES=	security kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

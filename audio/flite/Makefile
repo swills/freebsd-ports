@@ -1,9 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/audio/flite/Makefile 386637 2015-05-17 17:52:23Z amdmi3 $
+# $FreeBSD: head/audio/flite/Makefile 468931 2018-05-03 14:47:57Z jbeich $
 
 PORTNAME=	flite
 PORTVERSION=	1.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.speech.cs.cmu.edu/flite/packed/${PORTNAME}-${PORTVERSION}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-release

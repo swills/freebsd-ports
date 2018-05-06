@@ -1,5 +1,5 @@
 # Created by: Janos Mohacsi <mohacsi@niif.hu>
-# $FreeBSD: head/net-mgmt/send/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/net-mgmt/send/Makefile 469116 2018-05-05 14:37:10Z danfe $
 
 PORTNAME=	send
 PORTVERSION=	0.3
@@ -19,7 +19,6 @@ LIB_DEPENDS=	libdnet.so:net/libdnet
 USES=		gmake readline ssl
 USE_RC_SUBR=	sendd
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 PORTDOCS=	README UserGuide.pdf
 MAKE_JOBS_UNSAFE=yes
 

@@ -1,5 +1,5 @@
 # Created by: Ari Suutari <ari.suutari@syncrontech.com>
-# $FreeBSD: head/comms/java-commapi-freebsd/Makefile 428144 2016-12-08 17:40:41Z tijl $
+# $FreeBSD: head/comms/java-commapi-freebsd/Makefile 469100 2018-05-05 10:49:36Z antoine $
 
 PORTNAME=	java-commapi-freebsd
 PORTVERSION=	0.9
@@ -10,6 +10,9 @@ DISTNAME=	freebsd-commapi-${PORTVERSION}
 
 MAINTAINER=	ari.suutari@syncrontech.com
 COMMENT=	Java Communication API for FreeBSD
+
+DEPRECATED=	Depends on BROKEN and expiring comms/java-commapi
+EXPIRATION_DATE=	2018-06-06
 
 BUILD_DEPENDS=	${JDKDIR}/jre/lib/ext/comm.jar:comms/java-commapi
 RUN_DEPENDS=	${JDKDIR}/jre/lib/ext/comm.jar:comms/java-commapi

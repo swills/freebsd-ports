@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/gnupg/Makefile 467022 2018-04-11 00:56:56Z adamw $
+# $FreeBSD: head/security/gnupg/Makefile 469025 2018-05-04 12:31:32Z adamw $
 
 PORTNAME=	gnupg
-PORTVERSION=	2.2.6
+PORTVERSION=	2.2.7
 CATEGORIES=	security
 MASTER_SITES=	GNUPG
 
@@ -29,7 +29,6 @@ USES=		compiler:c11 cpe gmake iconv pkgconfig readline sqlite tar:bzip2
 CONFIGURE_ARGS=	--disable-ntbtls --disable-wks-tools \
 		--enable-gpg-is-gpg2 --enable-symcryptrun
 GNU_CONFIGURE=	yes
-USE_LDCONFIG=	yes
 INFO=		gnupg
 TEST_TARGET=	check
 

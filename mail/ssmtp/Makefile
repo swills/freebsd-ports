@@ -1,5 +1,5 @@
 # Created by: Tomasz Paszkowski <ns88@k.pl>
-# $FreeBSD: head/mail/ssmtp/Makefile 454801 2017-11-23 21:32:48Z lme $
+# $FreeBSD: head/mail/ssmtp/Makefile 469111 2018-05-05 14:11:14Z danfe $
 
 PORTNAME=	ssmtp
 PORTVERSION=	2.64
@@ -19,7 +19,6 @@ USES=		gmake tar:bzip2
 GROUPS=		ssmtp
 
 SUB_FILES+=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 MAKE_ENV+=	TARGET_ARCH=
 CFLAGS+=	-I${OPENSSLINC}
 LDFLAGS+=	-L${OPENSSLLIB}

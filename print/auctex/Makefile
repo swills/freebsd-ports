@@ -1,5 +1,5 @@
 # Created by: Martin Kammerhofer
-# $FreeBSD: head/print/auctex/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/print/auctex/Makefile 469117 2018-05-05 14:47:12Z danfe $
 
 PORTNAME=	auctex
 PORTVERSION=	11.90
@@ -25,7 +25,6 @@ PORTDOCS=	tex-ref.pdf
 INFO=		auctex preview-latex
 PLIST_SUB=	TEXMFDIR=${TEXMFDIR}
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 OPTIONS_DEFINE=	DOCS
 DOCS_CONFIGURE_ON=	--docdir=${DOCSDIR}

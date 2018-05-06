@@ -1,5 +1,5 @@
 # Created by: Will Andrews <andrews@technologist.com>
-# $FreeBSD: head/x11-wm/wmanager/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11-wm/wmanager/Makefile 469123 2018-05-05 15:55:45Z danfe $
 
 PORTNAME=	wmanager
 PORTVERSION=	0.2.1
@@ -21,8 +21,6 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 USES=		gmake
 USE_XORG=	x11 xext
 USE_GL=		gl
-
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 OPTIONS_DEFINE=	ADDONS DOCS EXAMPLES
 OPTIONS_DEFAULT=ADDONS

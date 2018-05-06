@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/klg/Makefile 466796 2018-04-08 12:19:58Z brnrd $
+# $FreeBSD: head/net-mgmt/klg/Makefile 469116 2018-05-05 14:37:10Z danfe $
 
 PORTNAME=	klg
 PORTVERSION=	1.5
@@ -15,7 +15,7 @@ USES=		mysql tar:txz php:web
 USE_PHP=	mysql pcre sockets xml
 NO_ARCH=	yes
 NO_BUILD=	yes
-PKGMESSAGE=	${WRKDIR}/pkg-message
+
 PLIST_FILES=	%%DATADIR%%/CREDITS \
 		%%DATADIR%%/ChangeLog \
 		%%DATADIR%%/klg_README.txt \

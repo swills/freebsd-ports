@@ -1,5 +1,5 @@
 # Created by: Julien Laffaye <kimelto@gmail.com>
-# $FreeBSD: head/databases/soci/Makefile 468288 2018-04-25 18:40:14Z acm $
+# $FreeBSD: head/databases/soci/Makefile 469114 2018-05-05 14:29:00Z danfe $
 
 PORTNAME=	soci
 PORTVERSION=	3.2.2
@@ -18,7 +18,6 @@ CMAKE_ARGS+=	-DWITH_ORACLE:BOOL=OFF
 USE_LDCONFIG=	yes
 
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 OPTIONS_DEFINE=	MYSQL PGSQL SQLITE ODBC BOOST FIREBIRD
 BOOST_DESC=	Enable support for additional types using Boost

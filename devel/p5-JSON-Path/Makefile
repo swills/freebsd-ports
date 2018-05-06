@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/devel/p5-JSON-Path/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-JSON-Path/Makefile 469122 2018-05-05 15:39:45Z wen $
 
 PORTNAME=	JSON-Path
-PORTVERSION=	0.411
+PORTVERSION=	0.420
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

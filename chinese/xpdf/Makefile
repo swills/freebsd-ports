@@ -1,5 +1,5 @@
 # Created by: chshen <statue@freebsd.sinica.edu.tw>
-# $FreeBSD: head/chinese/xpdf/Makefile 452002 2017-10-13 14:22:27Z bapt $
+# $FreeBSD: head/chinese/xpdf/Makefile 469100 2018-05-05 10:49:36Z antoine $
 
 PORTNAME=	xpdf
 PORTVERSION=	3.03
@@ -17,6 +17,8 @@ MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Chinese font support for xpdf
 
 BROKEN=		No public distfiles
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-06-06
 
 RUN_DEPENDS=	xpdf:graphics/xpdf \
 		${ADOBECMAPDIR}/ai0/CMap/Identity-H:print/adobe-cmaps \

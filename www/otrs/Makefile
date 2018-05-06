@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/www/otrs/Makefile 468607 2018-04-29 07:23:39Z wen $
+# $FreeBSD: head/www/otrs/Makefile 469119 2018-05-05 14:58:18Z danfe $
 
 PORTNAME=	otrs
 PORTVERSION=	6.0.6
@@ -74,7 +74,6 @@ GROUPS=		${USERS} www
 
 SUB_FILES=	pkg-message
 SUB_LIST=	OTRS_USER=${USERS} OTRS_GROUP=${USERS} WWWOWN=${WWWOWN}
-PKGMESSAGE=	${WRKDIR}/pkg-message
 NO_ARCH=	YES
 
 ROOT_DIRS_LIST=	Kernel bin scripts

@@ -1,5 +1,5 @@
 # Created by: Lev Walkin <vlm@lionet.info>
-# $FreeBSD: head/net-mgmt/ipcad/Makefile 382150 2015-03-24 18:19:23Z marino $
+# $FreeBSD: head/net-mgmt/ipcad/Makefile 469116 2018-05-05 14:37:10Z danfe $
 
 PORTNAME=	ipcad
 PORTVERSION=	3.7.3
@@ -14,7 +14,6 @@ COMMENT=	IP accounting daemon with Cisco-like RSH and NetFlow export
 
 USE_RC_SUBR=	ipcad
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/local|${PREFIX}|g; \

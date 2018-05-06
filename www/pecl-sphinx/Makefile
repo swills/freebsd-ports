@@ -1,5 +1,5 @@
 # Created by: Max Baryshnikov <mephius@gmail.com>
-# $FreeBSD: head/www/pecl-sphinx/Makefile 456296 2017-12-14 13:57:28Z tz $
+# $FreeBSD: head/www/pecl-sphinx/Makefile 469119 2018-05-05 14:58:18Z danfe $
 
 PORTNAME=	sphinx
 DISTVERSION=	1.3.3
@@ -18,7 +18,6 @@ LIB_DEPENDS=	libsphinxclient.so:textproc/libsphinxclient
 USES=		php:pecl
 
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 CFLAGS+=	-I${LOCALBASE}/include
 

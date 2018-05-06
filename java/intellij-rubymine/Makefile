@@ -1,8 +1,8 @@
 # Created by: Stefan Wendler <stefan.wendler@tngtech.com>
-# $FreeBSD: head/java/intellij-rubymine/Makefile 452042 2017-10-14 05:49:23Z vanilla $
+# $FreeBSD: head/java/intellij-rubymine/Makefile 468942 2018-05-03 16:54:49Z krion $
 
 PORTNAME=	rubymine
-PORTVERSION=	2017.2.4
+PORTVERSION=	2018.1.1
 CATEGORIES=	java devel
 MASTER_SITES=	https://download.jetbrains.com/ruby/ \
 		http://download.jetbrains.com/ruby/
@@ -29,7 +29,7 @@ SHEBANG_FILES=	bin/printenv.py bin/restart.py
 NO_ARCH=	yes
 NO_BUILD=	yes
 
-WRKDIST=	${WRKDIR}/RubyMine-2017.2.4
+WRKDIST=	${WRKDIR}/RubyMine-2018.1.1
 
 .include "${.CURDIR}/../intellij/common.mk"
 

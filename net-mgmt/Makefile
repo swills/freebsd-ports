@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 467836 2018-04-20 15:44:18Z pizzamig $
+# $FreeBSD: head/net-mgmt/Makefile 468948 2018-05-03 17:34:25Z krion $
 #
 
     COMMENT = Network management tools
@@ -249,6 +249,7 @@
     SUBDIR += p5-Net-IP-Match-Regexp
     SUBDIR += p5-Net-IP-Match-XS
     SUBDIR += p5-Net-IP-Resolver
+    SUBDIR += p5-Net-IP-XS
     SUBDIR += p5-Net-IPAddress
     SUBDIR += p5-Net-IPv4Addr
     SUBDIR += p5-Net-IPv6Addr

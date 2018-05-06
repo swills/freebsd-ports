@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/relx/Makefile 461956 2018-02-15 22:43:42Z olgeni $
+# $FreeBSD: head/devel/relx/Makefile 469166 2018-05-05 20:32:14Z olgeni $
 
 PORTNAME=	relx
 PORTVERSION=	3.24.5
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 MASTER_SITES+=	LOCAL/olgeni:deps \
 		http://olgeni.olgeni.com/~olgeni/distfiles/:deps \
-		https://s3.amazonaws.com/s3.hex.pm/tarballs/:hex
+		https://repo.hex.pm/tarballs/:hex
 DISTFILES=	relx-cache-${CACHE_VERSION}${EXTRACT_SUFX}:deps
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX} \
 		relx-cache-${CACHE_VERSION}${EXTRACT_SUFX}

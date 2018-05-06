@@ -1,5 +1,5 @@
 # Created by: Alan Snelson <alan@wave2.co.uk>
-# $FreeBSD: head/www/planet/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/planet/Makefile 469119 2018-05-05 14:58:18Z danfe $
 
 PORTNAME=	planet
 PORTVERSION=	2.0
@@ -16,7 +16,6 @@ USES=		python:2.7 tar:bzip2
 NO_BUILD=	yes
 NO_ARCH=	yes
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 post-extract:
 	@${RM}	${WRKSRC}/.bzrignore

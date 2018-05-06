@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/alacritty/Makefile 468774 2018-05-01 17:45:53Z zeising $
+# $FreeBSD: head/x11/alacritty/Makefile 468993 2018-05-03 22:43:22Z jbeich $
 
 PORTNAME=	alacritty
 PORTVERSION=	g20180126
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11
 
 MAINTAINER=	zeising@FreeBSD.org
@@ -90,7 +90,7 @@ CARGO_CRATES=	aho-corasick-0.6.4 \
 		lazy_static-1.0.0 \
 		lazycell-0.4.0 \
 		lazycell-0.6.0 \
-		libc-0.2.39 \
+		libc-0.2.40 \
 		libloading-0.4.3 \
 		libz-sys-1.0.18 \
 		linked-hash-map-0.5.0 \

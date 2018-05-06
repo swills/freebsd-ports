@@ -1,5 +1,5 @@
 # Created by: melifaro@ipfw.ru
-# $FreeBSD: head/net/nss-pam-ldapd/Makefile 462844 2018-02-24 15:25:48Z zi $
+# $FreeBSD: head/net/nss-pam-ldapd/Makefile 469116 2018-05-05 14:37:10Z danfe $
 
 PORTNAME=		nss-pam-ldapd
 PORTVERSION=		0.9.9
@@ -20,7 +20,6 @@ USE_OPENLDAP=		yes
 USE_RC_SUBR=		nslcd
 PAM_LDAP_SHMAJOR=	1
 NSS_LDAP_SHMAJOR=	1
-PKGMESSAGE=		${WRKDIR}/pkg-message
 SUB_FILES+=		pkg-message
 
 NSLCD_PIDFILE?=		/var/run/nslcd.pid

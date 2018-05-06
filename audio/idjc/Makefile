@@ -1,5 +1,5 @@
 # Created by: Sean Bruno <sbruno@freebsd.org>
-# $FreeBSD: head/audio/idjc/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/audio/idjc/Makefile 468978 2018-05-03 19:20:28Z jbeich $
 
 PORTNAME=	idjc
 PORTVERSION=	0.8.16
@@ -11,8 +11,6 @@ MAINTAINER=	sbruno@FreeBSD.org
 COMMENT=	Shoutcast/Icecast DJ Console
 
 LICENSE=	LGPL20
-
-BROKEN=		fails to build with ffmpeg 4.0
 
 LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 		libavutil.so:multimedia/ffmpeg \

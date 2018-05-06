@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-dynflow/Makefile 468583 2018-04-28 20:10:41Z sunpoet $
+# $FreeBSD: head/devel/rubygem-dynflow/Makefile 469145 2018-05-05 17:22:09Z sunpoet $
 
 PORTNAME=	dynflow
-PORTVERSION=	1.0.1
+PORTVERSION=	1.0.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

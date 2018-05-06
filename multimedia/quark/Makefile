@@ -1,5 +1,5 @@
 # Created by: Juan Salaverria <rael@vectorstar.net>
-# $FreeBSD: head/multimedia/quark/Makefile 465707 2018-03-27 14:40:47Z emaste $
+# $FreeBSD: head/multimedia/quark/Makefile 468950 2018-05-03 17:42:45Z krion $
 
 PORTNAME=	quark
 PORTVERSION=	3.24
@@ -18,6 +18,8 @@ USES=		pathfix gettext gmake pkgconfig
 USE_GNOME=	gnomeprefix gnomevfs2
 GNU_CONFIGURE=	yes
 LLD_UNSAFE=	yes
+
+CONFLICTS_INSTALL=	quark-server
 
 PORTDOCS=	AUTHORS COPYING INSTALL README
 GCONF_SCHEMAS=	quark.schemas strange-quark.schemas

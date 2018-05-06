@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine <gerrit.beine@gmx.de>
-# $FreeBSD: head/mail/squirrelmail-shared_calendars-plugin/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/squirrelmail-shared_calendars-plugin/Makefile 468924 2018-05-03 12:42:57Z mat $
 
 PORTNAME=	shared_calendars
 PORTVERSION=	2.0.1
@@ -10,7 +10,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}-1.4.0
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	iCal-compliant calendaring for SquirrelMail
 
-RUN_DEPENDS=	squirrelmail-calendar_file_backend-plugin>0:mail/squirrelmail-calendar_file_backend-plugin
+RUN_DEPENDS=	squirrelmail-calendar_file_backend-plugin${PHP_PKGNAMESUFFIX}>0:mail/squirrelmail-calendar_file_backend-plugin@${PHP_FLAVOR}
 
 USE_SM_COMPAT=	yes
 USE_GENERIC_PKGMESSAGE=	yes

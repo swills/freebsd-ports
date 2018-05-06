@@ -1,5 +1,5 @@
 # Created by: Nick Sayer <nsayer@FreeBSD.org>
-# $FreeBSD: head/audio/jxm/Makefile 428144 2016-12-08 17:40:41Z tijl $
+# $FreeBSD: head/audio/jxm/Makefile 469100 2018-05-05 10:49:36Z antoine $
 
 PORTNAME=	jxm
 PORTVERSION=	1.4
@@ -11,6 +11,9 @@ EXTRACT_ONLY=
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	XMPCR (USB XM radio) control software
+
+DEPRECATED=	Depends on BROKEN and expiring comms/java-commapi
+EXPIRATION_DATE=	2018-06-06
 
 RUN_DEPENDS=	${JAVA_HOME}/jre/lib/ext/CommDriver.jar:comms/java-commapi-freebsd
 

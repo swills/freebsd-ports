@@ -1,5 +1,5 @@
 # Created by: Mantas Kaulakys <stone@tainet.lt>
-# $FreeBSD: head/security/amavis-stats/Makefile 414458 2016-05-02 16:08:56Z zeising $
+# $FreeBSD: head/security/amavis-stats/Makefile 469113 2018-05-05 14:20:33Z danfe $
 
 PORTNAME=	amavis-stats
 PORTVERSION=	0.1.12
@@ -28,8 +28,6 @@ AMAVISGROUP?=	amavis
 USERS=		${AMAVISUSER}
 GROUPS=		${AMAVISGROUP}
 PLIST_SUB+=	WWWOWN=${WWWOWN} WWWGRP=${WWWGRP} USERS=${USERS} GROUPS=${GROUPS}
-
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 SUB_FILES=	pkg-message
 

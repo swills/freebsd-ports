@@ -1,5 +1,5 @@
 # Created by: Dominic Marks <dominic.marks@btinternet.com>
-# $FreeBSD: head/x11-fonts/artwiz-fonts/Makefile 381876 2015-03-21 23:05:19Z bapt $
+# $FreeBSD: head/x11-fonts/artwiz-fonts/Makefile 469132 2018-05-05 17:13:42Z danfe $
 
 PORTNAME=	artwiz-fonts
 PORTVERSION=	1.0
@@ -14,7 +14,6 @@ COMMENT=	Set of free fonts for X11 desktops
 
 NO_BUILD=	yes
 USES=		fonts tar:bzip2
-PKGMESSAGE=	${WRKDIR}/pkg-message
 WRKSRC=		${WRKDIR}/fluxbox-${PORTNAME}
 
 FONTS=		anorexia aqui cure cursor drift edges gelly glisp-bold \

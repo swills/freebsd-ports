@@ -1,8 +1,8 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Calendar-Christian/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-DateTime-Calendar-Christian/Makefile 468874 2018-05-02 20:32:55Z sunpoet $
 
 PORTNAME=	DateTime-Calendar-Christian
-PORTVERSION=	0.06
+PORTVERSION=	0.07
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

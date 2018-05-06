@@ -1,5 +1,5 @@
 # Created by: Lupe Christoph <lupe@lupe-christoph.de>
-# $FreeBSD: head/sysutils/munin-master/Makefile 452973 2017-10-27 12:19:09Z mat $
+# $FreeBSD: head/sysutils/munin-master/Makefile 469121 2018-05-05 15:17:46Z danfe $
 
 PORTNAME=	munin
 PORTVERSION=	${MUNIN_VERSION}
@@ -37,8 +37,6 @@ RUN_DEPENDS=	munin-common>=${MUNIN_VERSION}:sysutils/munin-common \
 		p5-FCGI>=0:www/p5-FCGI
 
 USES=		gmake perl5 cpe
-
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 .include "${.CURDIR}/../munin-common/munin.mk"
 

@@ -1,5 +1,5 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/math/blacs/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/blacs/Makefile 469120 2018-05-05 15:09:22Z danfe $
 
 PORTNAME=	blacs
 PORTVERSION=	1.7
@@ -14,7 +14,6 @@ EXTRACT_ONLY=	mpiblacs.tgz blacstester.tgz mpiblacs-patch03.tgz
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	The BLACS (Basic Linear Algebra Communication Subprograms)
 
-PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-message
 USES=		fortran gmake
 USE_LDCONFIG=	yes

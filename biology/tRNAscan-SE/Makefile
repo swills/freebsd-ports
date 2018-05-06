@@ -1,5 +1,5 @@
 # Created by: chuynh@biolateral.com.au
-# $FreeBSD: head/biology/tRNAscan-SE/Makefile 451982 2017-10-13 11:14:53Z bapt $
+# $FreeBSD: head/biology/tRNAscan-SE/Makefile 469100 2018-05-05 10:49:36Z antoine $
 
 PORTNAME=	tRNAscan-SE
 PORTVERSION=	1.23
@@ -11,6 +11,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Improved tool for transfer RNA detection
 
 BROKEN=		No public distfiles
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-06-06
 
 USES=		perl5 tar:Z
 MAKE_ARGS=	BINDIR="${PREFIX}/bin" \

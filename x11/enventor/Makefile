@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/enventor/Makefile 451563 2017-10-08 18:58:23Z antoine $
+# $FreeBSD: head/x11/enventor/Makefile 469100 2018-05-05 10:49:36Z antoine $
 
 PORTNAME=	enventor
 PORTVERSION=	1.0.0
@@ -14,6 +14,8 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BROKEN=		fails to build
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-06-06
 
 LIB_DEPENDS=	libefl.so:devel/efl
 

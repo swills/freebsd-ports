@@ -1,7 +1,7 @@
-# $FreeBSD: head/accessibility/rubygem-atk/Makefile 467054 2018-04-11 14:49:09Z sunpoet $
+# $FreeBSD: head/accessibility/rubygem-atk/Makefile 469047 2018-05-04 18:07:04Z sunpoet $
 
 PORTNAME=	atk
-PORTVERSION=	3.2.4
+PORTVERSION=	3.2.5
 CATEGORIES=	accessibility rubygems
 MASTER_SITES=	RG
 

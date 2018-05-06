@@ -1,9 +1,9 @@
-# $FreeBSD: head/x11-drivers/xf86-input-wacom/Makefile 459895 2018-01-25 00:53:04Z jbeich $
+# $FreeBSD: head/x11-drivers/xf86-input-wacom/Makefile 468904 2018-05-03 01:19:34Z jbeich $
 
 PORTNAME=	xf86-input-wacom
-PORTVERSION=	0.36.0
+PORTVERSION=	0.36.1
 CATEGORIES=	x11-drivers
-MASTER_SITES=	SF/linuxwacom/${PORTNAME}
+MASTER_SITES=	https://github.com/linuxwacom/${PORTNAME}/releases/download/${DISTNAME}/
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	X.Org Wacom tablet driver

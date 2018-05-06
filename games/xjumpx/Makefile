@@ -1,5 +1,5 @@
 # Created by: Tatsuya Kuidoh <cdr@ga.xdsl.ne.jp>
-# $FreeBSD: head/games/xjumpx/Makefile 373556 2014-11-28 11:22:38Z amdmi3 $
+# $FreeBSD: head/games/xjumpx/Makefile 469121 2018-05-05 15:17:46Z danfe $
 
 PORTNAME=	xjumpx
 PORTVERSION=	1.4
@@ -16,7 +16,6 @@ MAKE_ENV=	X11BASE=${LOCALBASE}
 USE_XORG=	xpm xaw
 
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xjumpx ${STAGEDIR}${PREFIX}/bin

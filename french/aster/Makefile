@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/french/aster/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/french/aster/Makefile 469129 2018-05-05 16:51:57Z antoine $
 
 PORTNAME=	aster
 DISTVERSION=	${ASTER_DISTVERSION}
@@ -11,6 +11,8 @@ MAINTAINER=	thierry@FreeBSD.org
 COMMENT=	Code_Aster finite element method solver
 
 LICENSE=	GPLv2
+
+BROKEN=		conflicting dependencies
 
 #-----------------------------------------------------------------------
 # You may define these options:

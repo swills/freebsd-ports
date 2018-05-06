@@ -1,12 +1,14 @@
-# $FreeBSD: head/net-im/kopete/Makefile 468558 2018-04-28 18:11:49Z tcberner $
+# $FreeBSD: head/net-im/kopete/Makefile 468989 2018-05-03 21:19:07Z tcberner $
 
 PORTNAME=	kopete
 PORTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	net-im kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE multi-protocol instant messenger
 
+BUILD_DEPENDS=	v4l_compat>0:multimedia/v4l_compat
 LIB_DEPENDS=    libidn.so:dns/libidn \
 		libjasper.so:graphics/jasper \
 		libotr.so:security/libotr \

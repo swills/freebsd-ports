@@ -1,5 +1,5 @@
 # Created by: Brent J. Nordquist <bjn@visi.com>
-# $FreeBSD: head/www/cgiwrap/Makefile 415839 2016-05-25 15:43:34Z mat $
+# $FreeBSD: head/www/cgiwrap/Makefile 469119 2018-05-05 14:58:18Z danfe $
 
 PORTNAME=	cgiwrap
 PORTVERSION=	4.1
@@ -10,8 +10,6 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Securely execute Web CGI scripts
 
 LICENSE=	GPLv2
-
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 OPTIONS_DEFINE=	CGI_OWNER CGI_GROUP CGI_SETUID CGI_SETGID \
 		CGI_GROUP_WRITABLE CGI_WORLD_WRITABLE DEBUG \

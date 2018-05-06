@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/audio/libgroove/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/audio/libgroove/Makefile 469020 2018-05-04 11:41:14Z jbeich $
 
 PORTNAME=	libgroove
 PORTVERSION=	4.3.0
@@ -11,8 +11,6 @@ COMMENT=	Audio dispatching library
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BROKEN=		fails to build with ffmpeg 4.0
 
 LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 		libchromaprint.so:audio/chromaprint \

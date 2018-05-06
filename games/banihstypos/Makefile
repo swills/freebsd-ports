@@ -1,5 +1,5 @@
 # Created by: Philippe Audeoud <jadawin@tuxaco.net>
-# $FreeBSD: head/games/banihstypos/Makefile 408081 2016-02-04 19:26:39Z marino $
+# $FreeBSD: head/games/banihstypos/Makefile 469121 2018-05-05 15:17:46Z danfe $
 
 PORTNAME=	banihstypos
 PORTVERSION=	0.2
@@ -12,7 +12,6 @@ COMMENT=	Banihstypos is a simple game to teach you typing, FAST
 
 USES=		ncurses
 MAKE_ARGS=	LDFLAGS="${LDFLAGS} -lncurses"
-PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-message
 SUB_LIST=	PORTNAME=${PORTNAME}
 

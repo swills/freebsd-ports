@@ -1,11 +1,11 @@
-# $FreeBSD: head/x11/kde5/Makefile 468499 2018-04-27 21:47:35Z tcberner $
+# $FreeBSD: head/x11/kde5/Makefile 468921 2018-05-03 12:32:29Z adridg $
 
 PORTNAME=	kde5
 DISTVERSION=	${KDE_PLASMA_VERSION}.${KDE_APPLICATIONS_VERSION}
 CATEGORIES=	x11 kde # kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE5 meta port
+COMMENT=	KDE Plasma Desktop and Applications (current)
 
 LICENSE=	LGPL20
 

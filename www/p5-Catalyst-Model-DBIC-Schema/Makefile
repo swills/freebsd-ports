@@ -1,13 +1,14 @@
 # Created by: Lars Balker Rasmussen <lbr@FreeBSD.org>
-# $FreeBSD: head/www/p5-Catalyst-Model-DBIC-Schema/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Model-DBIC-Schema/Makefile 468927 2018-05-03 13:31:15Z des $
 
 PORTNAME=	Catalyst-Model-DBIC-Schema
 PORTVERSION=	0.65
+PORTREVISION=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	perl@FreeBSD.org
+MAINTAINER=	des@FreeBSD.org
 COMMENT=	DBIx::Class::Schema Model Class
 
 LICENSE=	ART10 GPLv1+
@@ -15,7 +16,6 @@ LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Carp-Clan>=0:devel/p5-Carp-Clan \
 		p5-Catalyst-Component-InstancePerContext>=0:www/p5-Catalyst-Component-InstancePerContext \
-		p5-Catalyst-Devel>=1.0:www/p5-Catalyst-Devel \
 		p5-Catalyst-Runtime>=5.80005:www/p5-Catalyst-Runtime \
 		p5-CatalystX-Component-Traits>=0.14:www/p5-CatalystX-Component-Traits \
 		p5-DBIx-Class>=0.08114:databases/p5-DBIx-Class \

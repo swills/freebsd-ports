@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/dns/getdns/Makefile 464254 2018-03-12 14:50:57Z zi $
+# $FreeBSD: head/dns/getdns/Makefile 468888 2018-05-02 22:04:17Z zi $
 
 PORTNAME=	getdns
 PORTVERSION=	1.4.1
@@ -47,6 +47,7 @@ LIBUV_LIB_DEPENDS=	libuv.so:devel/libuv
 LIBUV_CONFIGURE_WITH=	libuv
 STUBBY_LIB_DEPENDS=	libyaml.so:textproc/libyaml
 STUBBY_CONFIGURE_WITH=	stubby
+STUBBY_VARS=		USE_RC_SUBR="stubby"
 
 post-patch:
 	${REINPLACE_CMD} -Ee 's,^(sharedoc = ).*,\1${WRKDIR}/doc,' \

@@ -1,5 +1,5 @@
 # Created by: Will Andrews <andrews@technologist.com>
-# $FreeBSD: head/shells/flash/Makefile 407992 2016-02-03 21:50:29Z marino $
+# $FreeBSD: head/shells/flash/Makefile 469132 2018-05-05 17:13:42Z danfe $
 
 PORTNAME=	flash
 PORTVERSION=	0.9.5
@@ -14,7 +14,6 @@ GNU_CONFIGURE=	yes
 LDFLAGS+=	-rdynamic
 CFLAGS+=	-rdynamic
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 PROGRAM=	alarms background countdown
 SCRIPT=		mailshell system.menu system.menu.9798 system.menu.oldlast \

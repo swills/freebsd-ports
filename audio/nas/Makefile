@@ -1,5 +1,5 @@
 # Created by: jkh
-# $FreeBSD: head/audio/nas/Makefile 351411 2014-04-16 18:28:47Z zeising $
+# $FreeBSD: head/audio/nas/Makefile 469132 2018-05-05 17:13:42Z danfe $
 
 PORTNAME=	nas
 PORTVERSION=	1.9.4
@@ -20,7 +20,6 @@ USE_LDCONFIG=	yes
 MAKE_ENV+=	COMPRESS_CMD="${COMPRESS_CMD:S/c//}"
 MAKE_JOBS_UNSAFE=	yes
 
-PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-message
 
 .include <bsd.port.pre.mk>

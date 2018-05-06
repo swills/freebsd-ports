@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/cad/astk-serveur/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/cad/astk-serveur/Makefile 469120 2018-05-05 15:09:22Z danfe $
 
 PORTNAME=	astk
 DISTVERSION=	1.13.10-1
@@ -45,7 +45,6 @@ EXTRACT_WRKSRC=	${WRKDIR}/aster-${DISTVERSIONPREFIX}${ASTER_DISTVERSION:S/-/./:R
 NO_ARCH=	yes
 SUB_FILES=	pkg-message
 SUB_LIST=	inst_dir=${inst_dir} tools_dir=${tools_dir}
-PKGMESSAGE=	${WRKDIR}/pkg-message
 LINSTDIR=	aster/ASTK
 inst_dir=	${PREFIX}/${LINSTDIR}
 aster_dir=	${LOCALBASE}/aster/${vaster}

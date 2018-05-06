@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-MooX-ConfigFromFile/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooX-ConfigFromFile/Makefile 468870 2018-05-02 20:32:34Z sunpoet $
 
 PORTNAME=	MooX-ConfigFromFile
-PORTVERSION=	0.008
+PORTVERSION=	0.009
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

@@ -1,5 +1,5 @@
 # Created by: Tomokatsu SAITO <saito@a2z.co.jp>
-# $FreeBSD: head/print/ghostscript7-commfont/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/print/ghostscript7-commfont/Makefile 469117 2018-05-05 14:47:12Z danfe $
 
 PORTNAME=	ghostscript
 PORTVERSION=	7.07
@@ -20,7 +20,6 @@ SUB_FILES=	pkg-message \
 		Makefile template.cidfont template.ttcidfont template.font
 SUB_LIST=	PORTVERSION="${PORTVERSION}" GS_RESDIR="${GS_RESDIR}"
 PLIST_SUB=	GS_RESDIR="${GS_RESDIR}"
-PKGMESSAGE=	${WRKDIR}/pkg-message
 USES=		ghostscript:7,run
 NO_ARCH=	yes
 

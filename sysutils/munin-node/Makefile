@@ -1,5 +1,5 @@
 # Created by: Lupe Christoph <lupe@lupe-christoph.de>
-# $FreeBSD: head/sysutils/munin-node/Makefile 465591 2018-03-26 13:40:01Z mat $
+# $FreeBSD: head/sysutils/munin-node/Makefile 469121 2018-05-05 15:17:46Z danfe $
 
 PORTNAME=	munin
 PORTVERSION=	${MUNIN_VERSION}
@@ -24,7 +24,6 @@ RUN_DEPENDS=	p5-Cache-Cache>=0:devel/p5-Cache-Cache \
 		bash:shells/bash
 
 USES=		gmake perl5 shebangfix cpe
-PKGMESSAGE=	${WRKDIR}/pkg-message
 REINPLACE_ARGS=	-i ""
 SHEBANG_FILES=	node/bin/munindoc node/sbin/munin-node node/sbin/munin-sched \
 		node/sbin/munin-run node/sbin/munin-node-configure

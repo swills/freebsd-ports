@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/trac-math/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/www/trac-math/Makefile 469119 2018-05-05 14:58:18Z danfe $
 
 PORTNAME=	math
 PORTVERSION=	0.1
@@ -14,7 +14,6 @@ RUN_DEPENDS=	tracd:www/trac
 
 USE_TEX=	latex
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 USES=		python:2.7
 USE_PYTHON=	distutils autoplist

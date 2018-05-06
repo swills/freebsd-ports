@@ -1,8 +1,8 @@
 # Created by: Steven Kreuzer <skreuzer@FreeBSD.org>
-# $FreeBSD: head/devel/py-jedi/Makefile 464503 2018-03-14 15:05:02Z skreuzer $
+# $FreeBSD: head/devel/py-jedi/Makefile 468928 2018-05-03 13:42:33Z skreuzer $
 
 PORTNAME=	jedi
-PORTVERSION=	0.11.1
+PORTVERSION=	0.12.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,6 +12,8 @@ COMMENT=	Autocompletion tool for Python
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}parso>=0.2.0:textproc/py-parso@${FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

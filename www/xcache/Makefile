@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/www/xcache/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/www/xcache/Makefile 469119 2018-05-05 14:58:18Z danfe $
 
 PORTNAME=	xcache
 DISTVERSION=	3.2.0
@@ -23,7 +23,6 @@ CONSTANT_DESC=	Enable handling of compile time constants
 COVERAGER_DESC=	Enable code coverage dumper
 
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 PLIST_FILES=	lib/php/%%PHP_EXT_DIR%%/xcache.so
 

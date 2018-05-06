@@ -1,5 +1,5 @@
 # Created by: Daichi GOTO <daichi@FreeBSD.org>
-# $FreeBSD: head/japanese/ibus-mozc/Makefile 379025 2015-02-14 22:12:20Z hrs $
+# $FreeBSD: head/japanese/ibus-mozc/Makefile 469110 2018-05-05 13:59:47Z danfe $
 
 PKGNAMEPREFIX=	ja-ibus-
 
@@ -7,7 +7,6 @@ COMMENT=	Mozc engine for IBus
 DATADIR=	${PREFIX}/share/ibus-${PORTNAME}
 
 MASTERDIR=	${.CURDIR}/../../japanese/mozc-server
-PKGMESSAGE=	${WRKDIR}/pkg-message
 FILESDIR=	${.CURDIR}/files
 SUB_FILES=	pkg-message
 

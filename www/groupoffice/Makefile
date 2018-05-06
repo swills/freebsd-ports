@@ -1,9 +1,9 @@
 # Created by: Aron Schlesinger <as@bsdgroup.de>
-# $FreeBSD: head/www/groupoffice/Makefile 465833 2018-03-28 18:08:53Z joneum $
+# $FreeBSD: head/www/groupoffice/Makefile 468979 2018-05-03 19:27:06Z joneum $
 
 PORTNAME=	groupoffice
 DISTVERSIONPREFIX=	com-
-DISTVERSION=	6.2.89
+DISTVERSION=	6.2.91
 CATEGORIES=	www
 MASTER_SITES=	SF/group-office/${DISTVERSION:R}
 

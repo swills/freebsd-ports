@@ -1,5 +1,5 @@
 # Created by: Will Andrews <will@FreeBSD.org>
-# $FreeBSD: head/x11/kde4/Makefile 467042 2018-04-11 09:57:25Z tcberner $
+# $FreeBSD: head/x11/kde4/Makefile 468921 2018-05-03 12:32:29Z adridg $
 
 PORTNAME=	kde
 PORTVERSION=	${KDE4_VERSION}
@@ -7,7 +7,7 @@ PORTREVISION=	7
 CATEGORIES=	x11 kde
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	KDE Software Compilation 4 (meta port)
+COMMENT=	KDE Software Compilation 4 (legacy)
 
 USES=		kde:4 metaport
 USE_KDE=	baseapps_run runtime_run workspace_run

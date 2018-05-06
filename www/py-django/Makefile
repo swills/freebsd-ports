@@ -1,9 +1,9 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/www/py-django/Makefile 466333 2018-04-03 09:52:44Z sunpoet $
+# $FreeBSD: head/www/py-django/Makefile 468878 2018-05-02 20:36:48Z sunpoet $
 
 PORTNAME=	django
 CATEGORIES=	www python
-PORTVERSION=	1.11.12
+PORTVERSION=	1.11.13
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	python@FreeBSD.org

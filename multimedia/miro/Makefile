@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/multimedia/miro/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/miro/Makefile 469017 2018-05-04 11:40:30Z jbeich $
 
 PORTNAME=	miro
 PORTVERSION=	6.0
@@ -12,8 +12,6 @@ MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Video player to get internet TV broadcasts
 
 LICENSE=	GPLv2
-
-BROKEN=		fails to build with ffmpeg 4.0
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyrex>0:devel/pyrex@${FLAVOR} \
 		${PYTHON_SITELIBDIR}/webkit/__init__.py:www/py-webkitgtk@${FLAVOR} \

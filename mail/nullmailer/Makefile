@@ -1,5 +1,5 @@
 # Created by: clive
-# $FreeBSD: head/mail/nullmailer/Makefile 423625 2016-10-09 22:01:34Z bsam $
+# $FreeBSD: head/mail/nullmailer/Makefile 469111 2018-05-05 14:11:14Z danfe $
 
 PORTNAME=	nullmailer
 PORTVERSION=	1.13
@@ -33,8 +33,6 @@ USE_SUBMAKE=	yes
 USE_RC_SUBR=	${PORTNAME}
 SUB_FILES+=	pkg-install pkg-deinstall pkg-message
 
-PKGINSTALL=	${WRKDIR}/pkg-install
-PKGMESSAGE=	${WRKDIR}/pkg-message
 PLIST_SUB+=	LOCALSTATEDIR=${LOCALSTATEDIR} NULLMAIL_USER=${USERS}
 SUB_LIST+=	LOCALSTATEDIR=${LOCALSTATEDIR} NULLMAIL_USER=${USERS}
 

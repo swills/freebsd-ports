@@ -1,5 +1,5 @@
 # Created by: Andreas Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/print/ghostscript8-base/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/print/ghostscript8-base/Makefile 469117 2018-05-05 14:47:12Z danfe $
 
 PORTNAME=	ghostscript
 PORTVERSION=	8.71
@@ -69,7 +69,6 @@ INSTALL_TARGET=	soinstall
 PLIST_SUB=	SHLIB_VER="${PORTVERSION:R}" \
 		GS_VERSION="${PORTVERSION}"
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 OPTIONS_DEFINE=	DOCS CAIRO CUPS FONTCONFIG ICONV
 OPTIONS_DEFAULT=CAIRO CUPS FONTCONFIG ICONV

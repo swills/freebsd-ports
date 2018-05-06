@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/mail/spambnc/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/mail/spambnc/Makefile 469111 2018-05-05 14:11:14Z danfe $
 
 PORTNAME=	spambnc
 PORTVERSION=	20060416
@@ -22,7 +22,6 @@ EXTRACT_BEFORE_ARGS=	-C ${EXTRACT_DIR} -xf
 NO_BUILD=	yes
 NO_ARCH=	yes
 PLIST=		${WRKDIR}/.pkg-plist
-PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-message
 
 PORTDATA=	*

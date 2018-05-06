@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-Frame-Dump/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-Net-Frame-Dump/Makefile 468875 2018-05-02 20:33:01Z sunpoet $
 
 PORTNAME=	Net-Frame-Dump
-PORTVERSION=	1.14
+PORTVERSION=	1.15
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -11,12 +11,14 @@ MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Tcpdump like perl implementation
 
 LICENSE=	ART10
+LICENSE_FILE=	${WRKSRC}/LICENSE.Artistic
 
 BUILD_DEPENDS=	p5-Class-Gomor>=1.00:devel/p5-Class-Gomor \
 		p5-Net-Frame>=0:net/p5-Net-Frame \
 		p5-Net-Pcap>=0.12:net/p5-Net-Pcap
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

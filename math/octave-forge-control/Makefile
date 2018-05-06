@@ -1,8 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-control/Makefile 464202 2018-03-11 20:05:09Z stephen $
+# $FreeBSD: head/math/octave-forge-control/Makefile 468999 2018-05-03 23:42:35Z stephen $
 
 PORTNAME=	octave-forge-control
 PORTVERSION=	3.1.0
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org

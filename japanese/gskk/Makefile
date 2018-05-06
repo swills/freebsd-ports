@@ -1,5 +1,5 @@
 # Created by: Hajimu UMEMOTO <ume@FreeBSD.org>
-# $FreeBSD: head/japanese/gskk/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/gskk/Makefile 469110 2018-05-05 13:59:47Z danfe $
 
 PORTNAME=	gskk
 PORTVERSION=	20041208
@@ -26,8 +26,6 @@ PORTDOCS=	README.FreeBSD
 
 SUB_FILES=	README.FreeBSD pkg-message
 SUB_LIST+=	DICDIR=${DICDIR} PORTNAME=${PORTNAME}
-
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 DICS=		${PORTNAME}.cbd ${PORTNAME}.cld
 DICSFILE=	dics.dir.${PORTNAME}

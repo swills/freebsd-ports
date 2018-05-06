@@ -1,5 +1,5 @@
 # Created by: rfarmer@predatorlabs.net
-# $FreeBSD: head/graphics/xmlgraphics-commons/Makefile 425127 2016-11-02 09:05:57Z makc $
+# $FreeBSD: head/graphics/xmlgraphics-commons/Makefile 469013 2018-05-04 09:33:56Z amdmi3 $
 
 PORTNAME=	xmlgraphics-commons
 PORTVERSION=	1.5
@@ -11,17 +11,19 @@ MAINTAINER=	makc@FreeBSD.org
 COMMENT=	Several reusable components used by Apache Batik and FOP
 
 LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 USE_JAVA=	yes
 JAVA_VERSION=	1.6+
 USE_ANT=	yes
+NO_ARCH=	yes
 
 PLIST_FILES=	%%JAVAJARDIR%%/${PORTNAME}.jar
 
 do-install:
-	${MKDIR} ${STAGEDIR}${JAVAJARDIR}
+	@${MKDIR} ${STAGEDIR}${JAVAJARDIR}
 	${INSTALL_DATA} ${WRKSRC}/build/${PORTNAME}-${PORTVERSION}.jar \
 		${STAGEDIR}${JAVAJARDIR}/${PORTNAME}.jar
 

@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/databases/redis-devel/Makefile 467661 2018-04-17 23:05:16Z osa $
+# $FreeBSD: head/databases/redis-devel/Makefile 469114 2018-05-05 14:29:00Z danfe $
 
 PORTNAME=	redis
 DISTVERSION=	4.0.9
@@ -64,8 +64,6 @@ MAKE_ENV=	"V=yo"
 USE_RC_SUBR=	redis sentinel
 BIN_FILES=	redis-benchmark redis-check-aof redis-check-rdb \
 		redis-cli redis-sentinel redis-server
-
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 USERS=	redis
 GROUPS=	redis

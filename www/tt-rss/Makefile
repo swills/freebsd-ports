@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/www/tt-rss/Makefile 454579 2017-11-20 21:04:39Z thierry $
+# $FreeBSD: head/www/tt-rss/Makefile 469119 2018-05-05 14:58:18Z danfe $
 
 PORTNAME=	tt-rss
 PORTVERSION=	g20171120
@@ -60,7 +60,6 @@ USE_PHP+=	gd
 SUB_FILES=	httpd-tt-rss.conf pkg-message
 SUB_LIST=	DB=${DB} WWWOWN=${WWWOWN} MYSQL=${MYSQL} PGSQL=${PGSQL}
 PLIST_SUB=	WWWOWN=${WWWOWN} WWWGRP=${WWWGRP}
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 PHP2FIX=	config.php-dist update.php update_daemon2.php
 

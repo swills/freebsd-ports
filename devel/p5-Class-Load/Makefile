@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Class-Load/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Class-Load/Makefile 469126 2018-05-05 16:18:43Z az $
 
 PORTNAME=	Class-Load
 PORTVERSION=	0.24
@@ -6,7 +6,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	az@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Working (require Class::Name) and more
 
 LICENSE=	ART10 GPLv1+

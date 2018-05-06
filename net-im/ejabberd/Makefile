@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/ejabberd/Makefile 468070 2018-04-23 03:50:28Z ashish $
+# $FreeBSD: head/net-im/ejabberd/Makefile 469116 2018-05-05 14:37:10Z danfe $
 
 PORTNAME=	ejabberd
 PORTVERSION=	18.03
@@ -43,8 +43,6 @@ MAKE_ARGS=	"CPPFLAGS=${CPPFLAGS}" "CFLAGS=${CFLAGS}" "LDFLAGS=${LDFLAGS}"
 CPPFLAGS+=	-I${LOCALBASE}/include
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
-PKGMESSAGE=	${WRKDIR}/pkg-message
-PKGINSTALL=	${WRKDIR}/pkg-install
 PLIST_SUB=	PORTNAME=${PORTNAME} PORTVERSION=${PORTVERSION} \
 		EJABBERD_LIBDIR=${EJABBERD_LIBDIR}
 SUB_FILES=	pkg-message pkg-install

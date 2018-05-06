@@ -1,5 +1,5 @@
 # Created by: TOGAWA Satoshi <toga@puyo.org>
-# $FreeBSD: head/japanese/cannadic/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/cannadic/Makefile 469110 2018-05-05 13:59:47Z danfe $
 
 PORTNAME=	cannadic
 PORTVERSION=	0.95c
@@ -16,7 +16,6 @@ BUILD_DEPENDS=	crxdic:japanese/canna-server
 ALL_TARGET=	maindic
 SUB_FILES=	README.FreeBSD pkg-message
 PORTDOCS=	README.ja README.FreeBSD
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 DICS=		gcanna.cbd gcanna.cld gcannaf.ctd
 DICSFILE=	dics.dir.gpl_canna

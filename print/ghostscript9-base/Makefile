@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/ghostscript9-base/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/print/ghostscript9-base/Makefile 469117 2018-05-05 14:47:12Z danfe $
 
 PORTNAME=	ghostscript
 PORTVERSION=	9.06
@@ -70,7 +70,6 @@ PLIST_SUB=	SHLIB_VER="${PORTVERSION:R}" \
 		GS_VERSION="${PORTVERSION}"
 SUB_FILES=	pkg-message
 SUB_LIST=	DATADIR="${DATADIR}"
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 OPTIONS_DEFINE=	DOCS CUPS FONTCONFIG ICONV
 OPTIONS_DEFAULT=CUPS FONTCONFIG ICONV

@@ -1,11 +1,10 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/security/p5-Crypt-PKCS10/Makefile 468012 2018-04-22 09:08:41Z wen $
+# $FreeBSD: head/security/p5-Crypt-PKCS10/Makefile 469038 2018-05-04 17:39:49Z krion $
 
 PORTNAME=	Crypt-PKCS10
-PORTVERSION=	1.9
+PORTVERSION=	1.10
 PORTEPOCH=	1
 CATEGORIES=	security perl5
-MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	svysh.fbsd@gmail.com
@@ -28,6 +27,8 @@ PORTSCOUT=	ignore:1.800201,1.8002
 
 USES=		perl5
 USE_PERL5=	modbuildtiny
+USE_GITHUB=	yes
+GH_ACCOUNT=	openxpki
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

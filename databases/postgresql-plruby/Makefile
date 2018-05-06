@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/databases/postgresql-plruby/Makefile 443420 2017-06-12 10:06:14Z mat $
+# $FreeBSD: head/databases/postgresql-plruby/Makefile 469152 2018-05-05 17:22:47Z sunpoet $
 
 PORTNAME=	postgresql-plruby
 PORTVERSION=	0.5.7
@@ -9,6 +9,9 @@ DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 COMMENT=	PL/Ruby procedural language for the PostgreSQL database system
+
+LICENSE=	BSD2CLAUSE RUBY
+LICENSE_COMB=	dual
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	devrimgunduz

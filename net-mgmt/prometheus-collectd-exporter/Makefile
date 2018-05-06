@@ -1,9 +1,8 @@
-# $FreeBSD: head/net-mgmt/prometheus-collectd-exporter/Makefile 458824 2018-01-12 12:59:04Z mat $
+# $FreeBSD: head/net-mgmt/prometheus-collectd-exporter/Makefile 468916 2018-05-03 09:16:21Z mat $
 
 PORTNAME=	prometheus-collectd-exporter
 PORTVERSION=	0.3.1
 CATEGORIES=	net-mgmt
-DISTNAME=	0.3.1
 
 MAINTAINER=	dsp@php.net
 COMMENT=	Collectd exporter for prometheus

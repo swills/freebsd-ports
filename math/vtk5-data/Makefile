@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/math/vtk5-data/Makefile 374492 2014-12-10 22:29:14Z gahr $
+# $FreeBSD: head/math/vtk5-data/Makefile 469120 2018-05-05 15:09:22Z danfe $
 
 PORTNAME=	vtk
 PORTVERSION=	5.10.1
@@ -17,7 +17,6 @@ WRKSRC=		${WRKDIR}/VTKData${PORTVERSION}
 NO_BUILD=	yes
 
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 do-install:
 	cd ${WRKSRC} && ${COPYTREE_SHARE} \* ${STAGEDIR}${EXAMPLESDIR}/VTKData

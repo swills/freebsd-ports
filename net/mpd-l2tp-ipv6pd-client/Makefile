@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/mpd-l2tp-ipv6pd-client/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/mpd-l2tp-ipv6pd-client/Makefile 469116 2018-05-05 14:37:10Z danfe $
 
 PORTNAME=	mpd-l2tp-ipv6pd-client
 PORTVERSION=	20150430
@@ -24,8 +24,6 @@ PLIST_FILES=	sbin/${PORTNAME}-setup \
 SUB_LIST=	PORTNAME=${PORTNAME}
 SUB_FILES=	pkg-message \
 		setup
-
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 TEMPLATE_FILES=	dhcp6c.conf.in.in \
 		dhcp6c_pd.sh.in \

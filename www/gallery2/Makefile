@@ -1,5 +1,5 @@
 # Created by: Alex Varju <freebsd-ports@varju.ca>
-# $FreeBSD: head/www/gallery2/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/www/gallery2/Makefile 468957 2018-05-03 18:40:41Z sunpoet $
 
 PORTNAME=	gallery2
 PORTVERSION=	2.3.2
@@ -29,7 +29,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 SUB_FILES=	pkg-message
 
 DCRAW_RUN_DEPENDS=	dcraw:graphics/dcraw
-FFMPEG_LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg
+FFMPEG_RUN_DEPENDS=	ffmpeg:multimedia/ffmpeg
 GD_RUN_DEPENDS=		pngtogd:graphics/gd
 GD_USE=			PHP=gd
 GRAPHMAGICK_RUN_DEPENDS=gm:graphics/GraphicsMagick

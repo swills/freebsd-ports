@@ -1,8 +1,8 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/devel/rubygem-warbler/Makefile 430212 2017-01-01 01:11:07Z sunpoet $
+# $FreeBSD: head/devel/rubygem-warbler/Makefile 469147 2018-05-05 17:22:20Z sunpoet $
 
 PORTNAME=	warbler
-PORTVERSION=	2.0.4
+PORTVERSION=	2.0.5
 CATEGORIES=	devel rubygems java
 MASTER_SITES=	RG
 

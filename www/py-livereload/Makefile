@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-livereload/Makefile 466622 2018-04-06 07:20:03Z yuri $
+# $FreeBSD: head/www/py-livereload/Makefile 468939 2018-05-03 16:45:40Z krion $
 
 PORTNAME=	livereload
-DISTVERSION=	2.5.1
+DISTVERSION=	2.5.2
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

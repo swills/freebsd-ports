@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@ahze.net>
-# $FreeBSD: head/multimedia/dvdstyler/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/dvdstyler/Makefile 468955 2018-05-03 18:38:06Z jbeich $
 
 PORTNAME=	dvdstyler
 PORTVERSION=	2.9.6
@@ -14,8 +14,6 @@ COMMENT=	WxWidgets frontend to dvd recoding and authoring programs
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN=		fails to build with ffmpeg 4.0
 
 BUILD_DEPENDS=	zip:archivers/zip \
 		wxsvg>=1.2:graphics/wxsvg \

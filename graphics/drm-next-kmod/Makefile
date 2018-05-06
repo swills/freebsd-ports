@@ -1,9 +1,9 @@
 # Created by: Johannes Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/graphics/drm-next-kmod/Makefile 464646 2018-03-16 02:21:33Z jmd $
+# $FreeBSD: head/graphics/drm-next-kmod/Makefile 469162 2018-05-05 19:26:29Z zeising $
 
 PORTNAME=	drm-next-kmod
-PORTVERSION=	4.11.g20180224
-CATEGORIES=	graphics
+PORTVERSION=	4.11.g20180505
+CATEGORIES=	graphics kld
 
 MAINTAINER=	jmd@FreeBSD.org
 COMMENT=	DRM modules for the linuxkpi-based KMS components
@@ -14,7 +14,7 @@ LICENSE_COMB=	multi
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=	the new KMS components are only supported on amd64
 
-RUN_DEPENDS=	gpu-firmware-kmod>=g20170403:graphics/gpu-firmware-kmod
+RUN_DEPENDS=	gpu-firmware-kmod>=g20170319:graphics/gpu-firmware-kmod
 
 CONFLICTS_INSTALL=	drm-stable-kmod
 
@@ -25,7 +25,7 @@ USES=		kmod uidfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	FreeBSDDesktop
 GH_PROJECT=	kms-drm
-GH_TAGNAME=	79764d6
+GH_TAGNAME=	fd12167
 
 .include <bsd.port.options.mk>
 

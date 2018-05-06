@@ -1,5 +1,5 @@
 # Created by: Mykola Dzham <i@levsha.me>
-# $FreeBSD: head/multimedia/bino/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/bino/Makefile 469015 2018-05-04 11:39:58Z jbeich $
 
 PORTNAME=	bino
 PORTVERSION=	1.6.5
@@ -12,8 +12,6 @@ COMMENT=	3D video player with multi-display support
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN=		fails to build with ffmpeg 4.0
 
 LIB_DEPENDS=	libass.so:multimedia/libass \
 		libavformat.so:multimedia/ffmpeg \

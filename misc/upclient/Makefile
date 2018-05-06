@@ -1,5 +1,5 @@
 # Created by: Kelly Yancey <kbyanc@posi.net>
-# $FreeBSD: head/misc/upclient/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/misc/upclient/Makefile 469109 2018-05-05 13:54:37Z danfe $
 
 PORTNAME=	upclient
 PORTVERSION=	5.0.b8
@@ -21,7 +21,6 @@ ALL_TARGET=	bsd
 BUILD_WRKSRC=	${WRKSRC}/src
 
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 REINPLACE_SUB=	PREFIX=${PREFIX} LOCALBASE=${LOCALBASE}
 
