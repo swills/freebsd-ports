@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/openfx-io/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/graphics/openfx-io/Makefile 468933 2018-05-03 15:33:17Z jbeich $
 
 PORTNAME=	openfx-io
 PORTVERSION=	2.3.4
@@ -10,6 +10,7 @@ COMMENT=	Set of Readers/Writers plugins written using the OpenFX standard
 
 LICENSE=	GPLv2
 
+BROKEN=		fails to build with ffmpeg 4.0
 ONLY_FOR_ARCHS=	amd64
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs \

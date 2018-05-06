@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/rubygem-cairo/Makefile 464611 2018-03-15 17:46:07Z sunpoet $
+# $FreeBSD: head/graphics/rubygem-cairo/Makefile 468969 2018-05-03 18:41:46Z sunpoet $
 
 PORTNAME=	cairo
-PORTVERSION=	1.15.12
+PORTVERSION=	1.15.13
 CATEGORIES=	graphics rubygems
 MASTER_SITES=	RG
 

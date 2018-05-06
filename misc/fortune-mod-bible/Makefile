@@ -1,5 +1,5 @@
 # Created by: djp
-# $FreeBSD: head/misc/fortune-mod-bible/Makefile 458755 2018-01-11 16:53:44Z danfe $
+# $FreeBSD: head/misc/fortune-mod-bible/Makefile 469109 2018-05-05 13:54:37Z danfe $
 
 PORTNAME=	fortune-mod-bible
 PORTVERSION=	1.0
@@ -13,7 +13,7 @@ COMMENT=	King James V Bible in fortune file format
 
 DIST_SUBDIR=	${PORTNAME}
 NO_WRKSUBDIR=	yes
-PKGMESSAGE=	${WRKDIR}/pkg-message
+
 USES=		tar:bzip2
 SUB_FILES+=	pkg-message
 .if exists(/usr/games/strfile)

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 468495 2018-04-27 20:29:36Z tcberner $
+# $FreeBSD: head/audio/Makefile 468951 2018-05-03 17:49:52Z amdmi3 $
 #
 
     COMMENT = Audio tools
@@ -515,8 +515,8 @@
     SUBDIR += minitunes
     SUBDIR += mixer.app
     SUBDIR += mixmos
-    SUBDIR += mixxx20
     SUBDIR += mixxx
+    SUBDIR += mixxx20
     SUBDIR += mma
     SUBDIR += moc
     SUBDIR += modplugplay
@@ -577,6 +577,7 @@
     SUBDIR += nosefart
     SUBDIR += nspmod
     SUBDIR += nuvolaplayer
+    SUBDIR += oaml
     SUBDIR += ocp
     SUBDIR += ogg2mp3
     SUBDIR += openal

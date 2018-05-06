@@ -1,8 +1,8 @@
 # Created by: Nick Hilliard <nick@foobar.org>
-# $FreeBSD: head/www/drupal7/Makefile 467540 2018-04-16 21:54:50Z joneum $
+# $FreeBSD: head/www/drupal7/Makefile 469119 2018-05-05 14:58:18Z danfe $
 
 PORTNAME=	drupal7
-DISTVERSION=	7.58
+DISTVERSION=	7.59
 CATEGORIES=	www
 MASTER_SITES=	http://ftp.drupal.org/files/projects/
 DISTNAME=	drupal-${PORTVERSION}
@@ -28,7 +28,6 @@ OPTIONS_DEFINE=		MYSQL SQLITE3 PGSQL DOCS
 OPTIONS_DEFAULT=	MYSQL
 
 SUB_FILES+=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 PGSQL_USES=	pgsql
 PGSQL_USE=	PHP=pdo_pgsql

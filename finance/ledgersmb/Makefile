@@ -1,5 +1,5 @@
 # Created by: anarcat@anarcat.ath.cx
-# $FreeBSD: head/finance/ledgersmb/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/ledgersmb/Makefile 469132 2018-05-05 17:13:42Z danfe $
 
 PORTNAME=	ledger-smb
 PORTVERSION=	1.1.12
@@ -16,7 +16,6 @@ RUN_DEPENDS:=	${BUILD_DEPENDS}
 NO_BUILD=	yes
 NO_ARCH=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}
-PKGMESSAGE=	${WRKDIR}/pkg-message
 USES=		shebangfix perl5
 SHEBANG_FILES=	*.pl locale/*/*.pl bin/*/*.pl utils/*/*.pl
 PLIST_SUB=	WWWOWN="${WWWOWN}" WWWGRP="${WWWGRP}"

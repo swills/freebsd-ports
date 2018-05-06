@@ -1,5 +1,5 @@
 # Created by: Yonatan@Xpert.com
-# $FreeBSD: head/misc/fortune-mod-bofh/Makefile 422160 2016-09-14 19:50:46Z antoine $
+# $FreeBSD: head/misc/fortune-mod-bofh/Makefile 469109 2018-05-05 13:54:37Z danfe $
 
 PORTNAME=	fortune-mod-bofh
 PORTVERSION=	2.0
@@ -14,7 +14,6 @@ COMMENT=	Compilation of excuses from the "Bastard Operator From Hell"
 
 WRKSRC=		${WRKDIR}/bofh-fortune-mod2.0
 
-PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-message
 
 .if exists(/usr/games/strfile)

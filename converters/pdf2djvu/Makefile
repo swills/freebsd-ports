@@ -1,5 +1,5 @@
 # Created by: Denise H. G. <darcsis@gmail.com>
-# $FreeBSD: head/converters/pdf2djvu/Makefile 452013 2017-10-13 15:29:42Z bapt $
+# $FreeBSD: head/converters/pdf2djvu/Makefile 469100 2018-05-05 10:49:36Z antoine $
 
 PORTNAME=	pdf2djvu
 PORTVERSION=	0.7.21
@@ -13,6 +13,8 @@ COMMENT=	Pdf2djvu creates DjVu files from PDF files
 LICENSE=	GPLv2
 
 BROKEN=		No public distfiles
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-06-06
 
 BUILD_DEPENDS=	${LOCALBASE}/include/pstreams/pstream.h:devel/pstreams
 LIB_DEPENDS=	libpoppler.so:graphics/poppler \

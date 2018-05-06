@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Test-TempDir-Tiny/Makefile 413050 2016-04-11 17:26:29Z sunpoet $
+# $FreeBSD: head/devel/p5-Test-TempDir-Tiny/Makefile 469136 2018-05-05 17:21:23Z sunpoet $
 
 PORTNAME=	Test-TempDir-Tiny
-PORTVERSION=	0.016
+PORTVERSION=	0.017
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

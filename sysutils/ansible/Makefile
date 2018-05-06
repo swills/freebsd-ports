@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/ansible/Makefile 468705 2018-04-30 15:38:23Z lifanov $
+# $FreeBSD: head/sysutils/ansible/Makefile 468946 2018-05-03 17:02:07Z lifanov $
 
 PORTNAME=	ansible
 PORTVERSION?=	2.5.2
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES=	sysutils python
 MASTER_SITES=	http://releases.ansible.com/ansible/
 
@@ -21,7 +21,7 @@ RUN_DEPENDS?=	${PYTHON_PKGNAMEPREFIX}Jinja2>0:devel/py-Jinja2@${PY_FLAVOR} \
 
 CONFLICTS?=	ansible1-* ansible23-* ansible24-*
 
-EXTRA_PATCHES?=	#
+EXTRA_PATCHES?=	${FILESDIR}/extra-patch-sesu
 
 NO_ARCH=	yes
 USES?=		cpe python

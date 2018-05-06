@@ -1,9 +1,8 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/security/krb5-116/Makefile 465899 2018-03-29 14:53:23Z mat $
+# $FreeBSD: head/security/krb5-116/Makefile 469006 2018-05-04 06:18:43Z cy $
 
 PORTNAME=		krb5
-PORTVERSION=		1.16
-PORTREVISION=		1
+PORTVERSION=		1.16.1
 CATEGORIES=		security
 MASTER_SITES=		http://web.mit.edu/kerberos/dist/${PORTNAME}/${PORTVERSION:C/^[0-9]*\.[0-9]*/&X/:C/X\.[0-9]*$//:C/X//}/
 .if !defined(MASTERDIR)

@@ -1,5 +1,5 @@
 # Created by: hrs
-# $FreeBSD: head/cad/alliance/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/cad/alliance/Makefile 469120 2018-05-05 15:09:22Z danfe $
 
 PORTNAME=	alliance
 DISTVERSION=	5.0-20120515
@@ -23,7 +23,6 @@ CONFLICTS_INSTALL=	fspclient-*
 
 WRKSRC=		${WRKDIR}/alliance-5.0
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 USES=		bison gmake libtool motif
 

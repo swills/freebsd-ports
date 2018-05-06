@@ -1,5 +1,5 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-fuzzy-logic-toolkit/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/octave-forge-fuzzy-logic-toolkit/Makefile 468999 2018-05-03 23:42:35Z stephen $
 
 PORTNAME=	octave-forge-fuzzy-logic-toolkit
 PORTVERSION=	0.4.5
@@ -11,6 +11,8 @@ COMMENT=	Octave-forge package ${OCTAVE_PKGNAME}
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKDIR}/${OCTSRC}/COPYING
+
+BROKEN=		help text unusable with octave 4.4.0
 
 # OCTSRC is the name of the directory of the package.
 # It is usually ${OCTAVE_PKGNAME} or ${DISTNAME}.

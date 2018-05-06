@@ -1,5 +1,5 @@
 # Created by: barner
-# $FreeBSD: head/security/pam_fprint/Makefile 457093 2017-12-23 17:45:57Z tijl $
+# $FreeBSD: head/security/pam_fprint/Makefile 469113 2018-05-05 14:20:33Z danfe $
 
 PORTNAME=	pam_fprint
 PORTVERSION=	20080330
@@ -21,6 +21,5 @@ PLIST_FILES+=	bin/pam_fprint_enroll \
 		lib/pam_fprint.so
 
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 .include <bsd.port.mk>

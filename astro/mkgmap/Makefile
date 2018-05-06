@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/astro/mkgmap/Makefile 468555 2018-04-28 16:48:46Z amdmi3 $
+# $FreeBSD: head/astro/mkgmap/Makefile 469023 2018-05-04 12:26:06Z amdmi3 $
 
 PORTNAME=	mkgmap
-PORTVERSION=	r4176
+PORTVERSION=	r4183
 CATEGORIES=	astro converters java
 MASTER_SITES=	http://www.mkgmap.org.uk/download/ \
 		http://mirror.amdmi3.ru/distfiles/

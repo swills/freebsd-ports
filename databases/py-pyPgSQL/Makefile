@@ -1,5 +1,5 @@
 # Created by: Gerhard Haering <gerhard.haering@gmx.de>
-# $FreeBSD: head/databases/py-pyPgSQL/Makefile 455341 2017-12-02 10:20:17Z antoine $
+# $FreeBSD: head/databases/py-pyPgSQL/Makefile 469100 2018-05-05 10:49:36Z antoine $
 
 PORTNAME=	pyPgSQL
 PORTVERSION=	2.5.1
@@ -12,6 +12,8 @@ MAINTAINER=	python@FreeBSD.org
 COMMENT=	Python DB-API 2 compliant library for using PostgreSQL databases
 
 BROKEN=		Invalid checksum
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-06-06
 
 RUN_DEPENDS=	${DATETIME_DEP}:lang/py-mx-base
 

@@ -1,5 +1,5 @@
 # Created by: dbaker
-# $FreeBSD: head/misc/dnetc/Makefile 444230 2017-06-24 16:54:05Z linimon $
+# $FreeBSD: head/misc/dnetc/Makefile 469109 2018-05-05 13:54:37Z danfe $
 
 PORTNAME=	dnetc
 PORTVERSION=	${VERSION}
@@ -27,8 +27,6 @@ BINDIR=		${PREFIX}/distributed.net
 
 USERS=		dnetc
 GROUPS=		dnetc
-
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 SUB_FILES=	pkg-message
 SUB_LIST=	BINDIR="${BINDIR}"

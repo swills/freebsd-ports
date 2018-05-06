@@ -1,5 +1,5 @@
 # Created by: Aleksander Fafula <alex@bsdguru.org>
-# $FreeBSD: head/audio/ogg2mp3/Makefile 451964 2017-10-13 08:57:45Z bapt $
+# $FreeBSD: head/audio/ogg2mp3/Makefile 469100 2018-05-05 10:49:36Z antoine $
 
 PORTNAME=	ogg2mp3
 PORTVERSION=	0.6.1
@@ -11,6 +11,8 @@ MAINTAINER=	tobias.rehbein@web.de
 COMMENT=	Perl script that converts Ogg Vorbis files to MP3 format
 
 BROKEN=		No public distfiles
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-06-06
 
 LICENSE=	GPLv2
 

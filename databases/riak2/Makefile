@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/riak2/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/databases/riak2/Makefile 469100 2018-05-05 10:49:36Z antoine $
 
 PORTNAME=	riak2
 PORTVERSION=	2.1.1
@@ -21,6 +21,8 @@ COMMENT=	Riak is an open source, distributed, noSQL database
 LICENSE=	APACHE20
 
 BROKEN=		No public distfiles
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-06-06
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/riak-erlang/bin/erlc:lang/erlang-riak
 

@@ -1,5 +1,5 @@
 # Created by: Paul Chvostek <paul@it.ca>
-# $FreeBSD: head/dns/rbldnsd/Makefile 426053 2016-11-13 14:14:59Z pi $
+# $FreeBSD: head/dns/rbldnsd/Makefile 469120 2018-05-05 15:09:22Z danfe $
 
 PORTNAME=	rbldnsd
 PORTVERSION=	0.998
@@ -16,7 +16,6 @@ HAS_CONFIGURE=	yes
 USE_RC_SUBR=	rbldnsd
 USERS=		rbldns
 GROUPS=		${USERS}
-PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-message
 
 OPTIONS_DEFINE=	DOCS

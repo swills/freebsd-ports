@@ -1,5 +1,5 @@
 # Created by: Philip Jenvey <pjenvey@turntables.org>
-# $FreeBSD: head/databases/rdfdb/Makefile 452070 2017-10-14 16:31:34Z bapt $
+# $FreeBSD: head/databases/rdfdb/Makefile 469100 2018-05-05 10:49:36Z antoine $
 
 PORTNAME=	rdfdb
 PORTVERSION=	0.46
@@ -12,6 +12,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Lightweight RDF database
 
 BROKEN=		No public distfiles
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-06-06
 
 USERS=	rdfdb
 GROUPS=	rdfdb

@@ -1,5 +1,5 @@
 # Created by: Simon Dick <simond@irrelevant.org>
-# $FreeBSD: head/dns/mydns-ng/Makefile 436248 2017-03-15 14:45:54Z mat $
+# $FreeBSD: head/dns/mydns-ng/Makefile 469120 2018-05-05 15:09:22Z danfe $
 
 PORTNAME=	mydns-ng
 PORTVERSION=	1.2.8.31
@@ -18,7 +18,6 @@ CONFIGURE_ARGS=	--with-confdir=${PREFIX}/etc
 USES=		iconv
 USE_RC_SUBR=	mydns
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 INFO=		mydns
 DOCS=		AUTHORS COPYING ChangeLog NEWS QUICKSTART.mysql QUICKSTART.postgres README TODO
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/plink/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/biology/plink/Makefile 469100 2018-05-05 10:49:36Z antoine $
 
 PORTNAME=	plink
 PORTVERSION=	1.07
@@ -11,6 +11,8 @@ MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Whole genome association analysis toolset
 
 BROKEN=		no public distfiles
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-06-06
 
 LICENSE=	GPLv2
 

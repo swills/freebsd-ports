@@ -1,5 +1,5 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/math/scalapack/Makefile 467919 2018-04-22 08:33:46Z amdmi3 $
+# $FreeBSD: head/math/scalapack/Makefile 469120 2018-05-05 15:09:22Z danfe $
 
 PORTNAME=	scalapack
 PORTVERSION=	2.0.2
@@ -29,7 +29,6 @@ ARCH2FIX=	PBLAS/SRC PBLAS/SRC/PBBLAS PBLAS/SRC/PTOOLS PBLAS/SRC/PTZBLAS \
 
 DATADIR=	${PREFIX}/share/${PORTNAME:tu}
 EXAMPLESDIR=	${PREFIX}/share/examples/${PORTNAME:tu}
-PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-message
 PLIST_SUB=	SVERSION=${SVERSION} PORTVERSION=${PORTVERSION}
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb55-server/Makefile 468131 2018-04-23 19:12:24Z brnrd $
+# $FreeBSD: head/databases/mariadb55-server/Makefile 469114 2018-05-05 14:29:00Z danfe $
 
 PORTNAME?=	mariadb
 PORTVERSION=	5.5.60
@@ -21,7 +21,6 @@ COMMENT?=	Multithreaded SQL database (server)
 LICENSE=	GPLv2
 
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 SLAVEDIRS=	databases/mariadb55-client
 USES+=		cmake:noninja shebangfix ssl

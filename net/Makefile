@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 468859 2018-05-02 17:44:23Z mfechner $
+# $FreeBSD: head/net/Makefile 468926 2018-05-03 13:26:25Z girgen $
 #
 
     COMMENT = Networking tools
@@ -1051,6 +1051,7 @@
     SUBDIR += py-kafka-python
     SUBDIR += py-kombu
     SUBDIR += py-ldap
+    SUBDIR += py-ldap0
     SUBDIR += py-ldap3
     SUBDIR += py-ldaptor
     SUBDIR += py-libcloud

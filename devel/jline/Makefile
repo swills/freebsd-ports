@@ -1,5 +1,5 @@
 # Created by: Martin Kammerhofer <mkamm@gmx.net>
-# $FreeBSD: head/devel/jline/Makefile 378433 2015-02-04 23:44:41Z bapt $
+# $FreeBSD: head/devel/jline/Makefile 469120 2018-05-05 15:09:22Z danfe $
 
 PORTNAME=	jline
 PORTVERSION=	0.9.94
@@ -11,7 +11,6 @@ COMMENT=	Java library for handling console input
 
 LICENSE=	BSD4CLAUSE
 
-PKGMESSAGE=	${WRKDIR}/pkg-message
 USES=		zip
 USE_JAVA=	yes
 OPTIONS_DEFINE=	JLINEPATCH DOCS

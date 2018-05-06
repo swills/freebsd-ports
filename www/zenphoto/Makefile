@@ -1,5 +1,5 @@
 # Created by: Philippe Audeoud <jadawin@tuxaco.net>
-# $FreeBSD: head/www/zenphoto/Makefile 461636 2018-02-12 19:05:11Z sunpoet $
+# $FreeBSD: head/www/zenphoto/Makefile 469119 2018-05-05 14:58:18Z danfe $
 
 PORTNAME=	zenphoto
 PORTVERSION=	1.4.14
@@ -17,8 +17,6 @@ NO_BUILD=	yes
 USE_PHP=	gd gettext hash json mbstring mysqli pcre session
 USES=		cpe php:web
 
-PKGDEINSTALL=	${WRKDIR}/pkg-deinstall
-PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-deinstall pkg-message
 
 USE_GITHUB=	yes

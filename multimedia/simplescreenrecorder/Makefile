@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/simplescreenrecorder/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/simplescreenrecorder/Makefile 469021 2018-05-04 11:41:28Z jbeich $
 
 PORTNAME=	simplescreenrecorder
 DISTVERSION=	0.3.10-2
@@ -11,8 +11,6 @@ COMMENT=	Screen video recorder
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN=		fails to build with ffmpeg 4.0
 
 LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 		libavformat.so:multimedia/ffmpeg

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mongodb34-rocks/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/databases/mongodb34-rocks/Makefile 469100 2018-05-05 10:49:36Z antoine $
 
 PORTNAME=	mongodb
 PORTVERSION=	3.4.6
@@ -20,6 +20,8 @@ LICENSE=	AGPLv3 APACHE20
 LICENSE_COMB=	multi
 
 BROKEN=		fails to link
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-06-06
 BROKEN_SSL=	openssl-devel
 BROKEN_SSL_REASON_openssl-devel=	no member named 'SSLv2_method' in the global namespace
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-webpacker-rails5/Makefile 468797 2018-05-01 19:51:00Z sunpoet $
+# $FreeBSD: head/devel/rubygem-webpacker-rails5/Makefile 469133 2018-05-05 17:16:28Z sunpoet $
 
 PORTNAME=	webpacker
-DISTVERSION=	3.5.0
+DISTVERSION=	3.5.3
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails5

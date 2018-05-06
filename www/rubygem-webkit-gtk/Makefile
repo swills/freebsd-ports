@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-webkit-gtk/Makefile 467073 2018-04-11 14:50:48Z sunpoet $
+# $FreeBSD: head/www/rubygem-webkit-gtk/Makefile 469066 2018-05-04 18:08:38Z sunpoet $
 
 PORTNAME=	webkit-gtk
-PORTVERSION=	3.2.4
+PORTVERSION=	3.2.5
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

@@ -1,5 +1,5 @@
 # Created by: Richard Gallamore <ultima@FreeBSD.org>
-# $FreeBSD: head/net/guacamole-server/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/net/guacamole-server/Makefile 469172 2018-05-06 00:46:09Z ultima $
 
 PORTNAME=	guacamole-server
 DISTVERSION=	0.9.14
@@ -39,7 +39,7 @@ SUB_LIST=	GUACD_USER=${USERS} \
 		GUACD_GROUP=${GROUPS}
 
 OPTIONS_DEFINE=		GUACENC NLS SSL WEBP
-OPTIONS_DEFAULT=	RDP SSH SSL VNC VORBIS PULSEAUDIO WEBP GUACENC
+OPTIONS_DEFAULT=	RDP SSH SSL VNC VORBIS PULSEAUDIO WEBP
 OPTIONS_GROUP=		SP AUDIO
 OPTIONS_GROUP_SP=	RDP SSH VNC
 OPTIONS_GROUP_AUDIO=	VORBIS PULSEAUDIO
@@ -51,6 +51,7 @@ RDP_DESC=		RDP protocol support
 SP_DESC=		Supported Protocols
 VNC_DESC=		VNC protocol support
 
+GUACENC_BROKEN=		fails to build with ffmpeg 4.0
 GUACENC_CONFIGURE_ENABLE=	guacenc
 GUACENC_CONFIGURE_WITH=		libavcodec libavutil libswscale
 GUACENC_LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg

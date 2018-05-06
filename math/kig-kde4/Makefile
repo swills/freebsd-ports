@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/kig-kde4/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/math/kig-kde4/Makefile 468912 2018-05-03 04:46:05Z tcberner $
 
 PORTNAME=	kig
 PORTVERSION=	${KDE4_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	KDE 4 interactive geometry application
 
 LIB_DEPENDS=	${PY_BOOST}
 
-USES=		cmake:outsource compiler:c++11-lib kde:4 python:run \
+USES=		cmake:outsource compiler:c++11-lib kde:4 python:2.7,run \
 		shebangfix tar:xz
 USE_KDE=	kdelibs soprano automoc4
 USE_QT4=	corelib dbus gui network svg xml \

@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/emulators/wine-devel/Makefile 468761 2018-05-01 14:20:11Z gerald $
+# $FreeBSD: head/emulators/wine-devel/Makefile 469121 2018-05-05 15:17:46Z danfe $
 
 PORTNAME=	wine
 DISTVERSION=	3.7
@@ -53,7 +53,6 @@ SHEBANG_FILES=	tools/make_requests tools/winemaker/winemaker \
 		tools/winedump/function_grep.pl
 
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 PORTDATA=	l_intl.nls wine.inf
 

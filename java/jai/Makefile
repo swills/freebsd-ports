@@ -1,5 +1,5 @@
 # Created by: OISHI Masakuni <yamasa@bsdhouse.org>
-# $FreeBSD: head/java/jai/Makefile 428144 2016-12-08 17:40:41Z tijl $
+# $FreeBSD: head/java/jai/Makefile 469132 2018-05-05 17:13:42Z danfe $
 
 PORTNAME=	jai
 DISTVERSION=	1_1_3
@@ -20,7 +20,6 @@ NO_BUILD=	yes
 
 SUB_FILES=	pkg-message
 SUB_LIST=	TARGET_DIR=${TARGET_DIR}
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 RESTRICTED=	Redistribution is not permitted
 

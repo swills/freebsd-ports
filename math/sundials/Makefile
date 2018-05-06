@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/sundials/Makefile 465762 2018-03-27 21:38:01Z yuri $
+# $FreeBSD: head/math/sundials/Makefile 469131 2018-05-05 17:04:53Z yuri $
 
 PORTNAME=	sundials
 DISTVERSION=	3.1.0
@@ -69,7 +69,7 @@ SUPERLUMT_PREVENTS=	LAPACK  # LAPACK requires SUNDIALS_INDEX_TYPE=int32, and SUP
 PORTEXAMPLES=	*
 
 post-patch:
-	@${FIND} ${WRKSRC}/examples -name "*.c" -o -name "*.cpp" | ${XARGS} ${REINPLACE_CMD} -e 's|"ESYM"|" ESYM "|g'
+	@${FIND} ${WRKSRC}/examples -name "*.c" -o -name "*.cpp" | ${XARGS} ${REINPLACE_CMD} -E 's/"(ESYM|FSYM)"/" \1 "/g'
 
 post-install:
 	@${RM} ${STAGEDIR}${PREFIX}/LICENSE

@@ -1,5 +1,5 @@
 # Created by: Koichiro IWAO <meta+ports@vmeta.jp>
-# $FreeBSD: head/japanese/uim-mozc/Makefile 396515 2015-09-09 14:58:07Z hrs $
+# $FreeBSD: head/japanese/uim-mozc/Makefile 469110 2018-05-05 13:59:47Z danfe $
 
 PKGNAMEPREFIX=	ja-uim-
 
@@ -9,7 +9,6 @@ MASTERDIR=	${.CURDIR}/../../japanese/mozc-server
 FILESDIR=	${.CURDIR}/files
 DATADIR=	${PREFIX}/share/uim
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 BUILD_MOZC_LIST=uim_mozc
 

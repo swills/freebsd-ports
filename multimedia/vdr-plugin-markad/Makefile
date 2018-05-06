@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-markad/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/vdr-plugin-markad/Makefile 468981 2018-05-03 19:50:40Z jbeich $
 
 PORTNAME=	vdr-plugin-markad
 PORTVERSION=	0.1.4
@@ -13,8 +13,6 @@ COMMENT=	Video Disk Recorder - MarkAd plugin
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN=		fails to build with ffmpeg 4.0
 
 LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg
 

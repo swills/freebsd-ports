@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/libcint/Makefile 467467 2018-04-16 08:44:20Z yuri $
+# $FreeBSD: head/science/libcint/Makefile 469176 2018-05-06 05:55:48Z yuri $
 
 PORTNAME=	libcint
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.0.11
+DISTVERSION=	3.0.12
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -20,6 +20,6 @@ USE_LDCONFIG=	yes
 
 PLIST_FILES=	include/cint.h \
 		lib/libcint.so \
-		lib/libcint.so.3.0.11
+		lib/libcint.so.${PORTVERSION}
 
 .include <bsd.port.mk>

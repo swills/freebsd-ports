@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/rubygem-activerecord-import/Makefile 459772 2018-01-23 15:17:22Z sunpoet $
+# $FreeBSD: head/databases/rubygem-activerecord-import/Makefile 469144 2018-05-05 17:22:04Z sunpoet $
 
 PORTNAME=	activerecord-import
-PORTVERSION=	0.22.0
+PORTVERSION=	0.23.0
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 

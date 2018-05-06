@@ -1,9 +1,10 @@
 # Created by: Andrey Cherkashin <andoriyu@gmail.com>
-# $FreeBSD: head/sysutils/fd/Makefile 467290 2018-04-14 07:00:31Z krion $
+# $FreeBSD: head/sysutils/fd/Makefile 468993 2018-05-03 22:43:22Z jbeich $
 
 PORTNAME=	fd
 DISTVERSIONPREFIX=	v
 DISTVERSION=	7.0.0
+PORTREVISION=	1
 CATEGORIES=	sysutils
 PKGNAMESUFFIX=	-find
 
@@ -37,7 +38,7 @@ CARGO_CRATES=	aho-corasick-0.6.4 \
 	ignore-0.4.1 \
 	kernel32-sys-0.2.2 \
 	lazy_static-1.0.0 \
-	libc-0.2.39 \
+	libc-0.2.40 \
 	log-0.4.1 \
 	memchr-2.0.1 \
 	nix-0.9.0 \

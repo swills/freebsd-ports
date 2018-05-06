@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/puppetdb5/Makefile 467778 2018-04-19 15:34:35Z romain $
+# $FreeBSD: head/databases/puppetdb5/Makefile 469114 2018-05-05 14:29:00Z danfe $
 
 PORTNAME=	puppetdb
 PORTVERSION=	5.2.2
@@ -37,8 +37,6 @@ GROUPS=		puppetdb
 
 SUB_LIST=	JAVA_HOME=${JAVA_HOME}
 SUB_FILES=	pkg-message
-
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 post-patch:
 .for file in Makefile ext/bin/puppetdb ext/cli/ssl-setup \

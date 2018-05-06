@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rt44/Makefile 452171 2017-10-16 05:18:40Z matthew $
+# $FreeBSD: head/www/rt44/Makefile 469119 2018-05-05 14:58:18Z danfe $
 
 PORTNAME=	rt
 DISTVERSION=	4.4.2
@@ -140,7 +140,6 @@ CONFIGURE_ARGS+=	--enable-layout=${RT_LAYOUT} \
 
 CONFIGURE_ENV+=	PERL=${LOCALBASE}/bin/perl
 
-PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-message
 SUB_LIST=	RT_ETC_PATH=${RT_ETC_PATH}
 PLIST_SUB=	RT_ETC_DIR=${RT_ETC_DIR}

@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <mitya@yandex-team.ru>
-# $FreeBSD: head/textproc/opengrm-ngram/Makefile 456105 2017-12-12 04:35:49Z jbeich $
+# $FreeBSD: head/textproc/opengrm-ngram/Makefile 469100 2018-05-05 10:49:36Z antoine $
 
 PORTNAME=	opengrm-ngram
 PORTVERSION=	1.3.1
@@ -13,6 +13,8 @@ COMMENT=	Library for making n-gram language models encoded as weighted FSTs
 LICENSE=	APACHE20
 
 BROKEN=		fails to build
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-06-06
 
 LIB_DEPENDS=	libfst.so:math/openfst
 

@@ -1,5 +1,5 @@
 # Created by: Satoshi Taoka <taoka@FreeBSD.org>
-# $FreeBSD: head/print/yatex/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/print/yatex/Makefile 469117 2018-05-05 14:47:12Z danfe $
 
 PORTNAME=	yatex
 PORTVERSION=	1.77
@@ -16,7 +16,6 @@ USES=		dos2unix emacs
 EMACS_NO_DEPENDS=	yes
 
 NO_BUILD=	yes
-PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-message yatex-startup.el
 SUB_LIST=	EMACS_SITE_LISPDIR="${EMACS_SITE_LISPDIR}"
 

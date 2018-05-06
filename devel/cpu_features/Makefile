@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cpu_features/Makefile 468857 2018-05-02 17:20:56Z skreuzer $
+# $FreeBSD: head/devel/cpu_features/Makefile 469029 2018-05-04 13:34:33Z skreuzer $
 
 PORTNAME=	cpu_features
 PORTVERSION=	0.1.0
@@ -16,7 +16,7 @@ GH_ACCOUNT=	google
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/list_cpu_features ${STAGEDIR}${PREFIX}/bin
-	${INSTALL_LIB} ${WRKSRC}/libcpu_features.a ${STAGEDIR}${PREFIX}/lib
+	${INSTALL_DATA} ${WRKSRC}/libcpu_features.a ${STAGEDIR}${PREFIX}/lib
 	${MKDIR} ${STAGEDIR}${PREFIX}/include/internal
 	${INSTALL_DATA} ${WRKSRC}/include/*.h ${STAGEDIR}${PREFIX}/include
 	${INSTALL_DATA} ${WRKSRC}/include/internal/*.h ${STAGEDIR}${PREFIX}/include/internal

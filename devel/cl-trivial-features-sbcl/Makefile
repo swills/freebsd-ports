@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/cl-trivial-features-sbcl/Makefile 467790 2018-04-19 17:29:25Z jrm $
+# $FreeBSD: head/devel/cl-trivial-features-sbcl/Makefile 469005 2018-05-04 06:17:47Z krion $
 
 PORTNAME=	trivial-features
 PORTVERSION=	2010.01.16
-PORTREVISION=	21
+PORTREVISION=	22
 CATEGORIES=	devel lisp
 PKGNAMEPREFIX=	cl-
 DISTFILES=	# none

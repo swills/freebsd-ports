@@ -1,7 +1,7 @@
 #-*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: head/Mk/bsd.port.mk 468843 2018-05-02 15:00:41Z mat $
+# $FreeBSD: head/Mk/bsd.port.mk 468917 2018-05-03 09:16:30Z mat $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1338,8 +1338,12 @@ _SUF2=	,${PORTEPOCH}
 PKGVERSION=	${PORTVERSION:C/[-_,]/./g}${_SUF1}${_SUF2}
 PKGNAME=	${PKGNAMEPREFIX}${PORTNAME}${PKGNAMESUFFIX}-${PKGVERSION}
 DISTVERSIONFULL=	${DISTVERSIONPREFIX}${DISTVERSION:C/:(.)/\1/g}${DISTVERSIONSUFFIX}
-.if defined(USE_GITHUB) && empty(MASTER_SITES:MGHC) && empty(DISTNAME) && empty(USE_GITHUB:Mnodefault)
+.if defined(USE_GITHUB) && empty(MASTER_SITES:MGHC) && empty(USE_GITHUB:Mnodefault)
+.  if empty(DISTNAME)
 _GITHUB_MUST_SET_DISTNAME=		yes
+.  else
+DEV_WARNING+=	"You are using USE_GITHUB and DISTNAME is set which is wrong.  Set GH_ACCOUNT/GH_PROJECT/GH_TAGNAME correctly and remove WRKSRC entirely."
+.  endif
 .else
 DISTNAME?=	${PORTNAME}-${DISTVERSIONFULL}
 .endif

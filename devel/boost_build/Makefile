@@ -1,5 +1,5 @@
 # Created by: Bruce M. Simpson
-# $FreeBSD: head/devel/boost_build/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/devel/boost_build/Makefile 469120 2018-05-05 15:09:22Z danfe $
 
 PORTNAME=	boost_build
 PORTVERSION=	2.0.m12
@@ -20,7 +20,6 @@ WRKSRC=		${WRKDIR}/${PORTNAME:S/_/-/g}
 NO_BUILD=	defined
 
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 PLIST_FILES=	share/doc/boost.png
 PORTDATA=	*

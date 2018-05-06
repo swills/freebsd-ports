@@ -1,8 +1,8 @@
 # Created by: Bill "I hate Perl" Fumerola
-# $FreeBSD: head/textproc/p5-Text-Template/Makefile 465217 2018-03-21 19:03:18Z sunpoet $
+# $FreeBSD: head/textproc/p5-Text-Template/Makefile 468966 2018-05-03 18:41:28Z sunpoet $
 
 PORTNAME=	Text-Template
-PORTVERSION=	1.52
+PORTVERSION=	1.53
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,7 +14,8 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	p5-Test-Warnings>=0:devel/p5-Test-Warnings
+TEST_DEPENDS=	p5-Test-More-UTF8>=0:devel/p5-Test-More-UTF8 \
+		p5-Test-Warnings>=0:devel/p5-Test-Warnings
 
 NO_ARCH=	yes
 USES=		perl5

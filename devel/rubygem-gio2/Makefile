@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-gio2/Makefile 467061 2018-04-11 14:49:45Z sunpoet $
+# $FreeBSD: head/devel/rubygem-gio2/Makefile 469054 2018-05-04 18:07:38Z sunpoet $
 
 PORTNAME=	gio2
-PORTVERSION=	3.2.4
+PORTVERSION=	3.2.5
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

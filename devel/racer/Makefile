@@ -1,8 +1,9 @@
 # Created by: Timothy Beyer <beyert@cs.ucr.edu>
-# $FreeBSD: head/devel/racer/Makefile 453146 2017-10-30 00:05:46Z jbeich $
+# $FreeBSD: head/devel/racer/Makefile 468993 2018-05-03 22:43:22Z jbeich $
 
 PORTNAME=	racer
 DISTVERSION=	2.0.10
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	beyert@cs.ucr.edu
@@ -28,7 +29,7 @@ CARGO_CRATES=	aho-corasick-0.5.3 \
 		env_logger-0.3.5 \
 		kernel32-sys-0.2.2 \
 		lazy_static-0.2.8 \
-		libc-0.2.22 \
+		libc-0.2.40 \
 		log-0.3.7 \
 		matches-0.1.4 \
 		memchr-0.1.11 \

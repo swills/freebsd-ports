@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 468781 2018-05-01 19:06:09Z rene $
+# $FreeBSD: head/security/Makefile 469177 2018-05-06 06:24:17Z yuri $
 #
 
     COMMENT = Security tools
@@ -475,6 +475,7 @@
     SUBDIR += openvpn-admin
     SUBDIR += openvpn-auth-ldap
     SUBDIR += openvpn-auth-radius
+    SUBDIR += openvpn-auth-script
     SUBDIR += openvpn-devel
     SUBDIR += openvpn-mbedtls
     SUBDIR += ophcrack

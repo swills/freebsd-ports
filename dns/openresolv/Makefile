@@ -1,5 +1,5 @@
 # Created by: Roy Marples <roy@marples.name>
-# $FreeBSD: head/dns/openresolv/Makefile 396614 2015-09-10 22:46:42Z amdmi3 $
+# $FreeBSD: head/dns/openresolv/Makefile 469120 2018-05-05 15:09:22Z danfe $
 
 PORTNAME=	openresolv
 PORTVERSION=	1.1
@@ -15,7 +15,5 @@ USES=		tar:bzip2
 NO_ARCH=	yes
 
 SUB_FILES=	pkg-deinstall pkg-message
-PKGDEINSTALL=	${WRKDIR}/pkg-deinstall
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/lang/spidermonkey170/Makefile 465519 2018-03-25 14:36:28Z linimon $
+# $FreeBSD: head/lang/spidermonkey170/Makefile 469096 2018-05-05 08:33:58Z amdmi3 $
 
 PORTNAME=		spidermonkey170
 PORTVERSION=		17.0.0
@@ -67,7 +67,7 @@ CONFIGURE_TARGET=	${ARCH:S/amd64/x86_64/}-portbld-${OPSYS:tl}${OSREL}
 STRIP_CMD=	${TRUE}
 .endif
 
-regression-test: build
+do-test:
 	@${ECHO_MSG} -n "===> Running jstests.py: "
 	@cd ${WRKSRC} && ${SETENV} TZ=PST8PDT ${PYTHON_CMD} tests/jstests.py \
 	--no-progress ./js17

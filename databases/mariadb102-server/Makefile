@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb102-server/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/databases/mariadb102-server/Makefile 469114 2018-05-05 14:29:00Z danfe $
 
 PORTNAME?=	mariadb
 PORTVERSION=	10.2.14
@@ -25,7 +25,6 @@ LICENSE_PERMS_PerconaFT=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 BROKEN_aarch64=		fails to link: stacktrace.c: undefined reference to 'sbrk'
 
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 SLAVEDIRS=	databases/mariadb102-client
 USES=		bison:build cmake:noninja compiler:c++11-lib cpe iconv:translit libedit ncurses shebangfix ssl

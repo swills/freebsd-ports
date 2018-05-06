@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/www/yabb/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/www/yabb/Makefile 469119 2018-05-05 14:58:18Z danfe $
 
 PORTNAME=	yabb
 PORTVERSION=	2.6.11
@@ -33,7 +33,6 @@ WDIR=		${WRKSRC}/public_html/yabbfiles
 WCGI=		${WRKSRC}/cgi-bin/yabb2
 SUB_FILES=	pkg-message
 SUB_LIST=	DIR=${DIR}
-PKGMESSAGE=	${WRKDIR}/pkg-message
 ISOFILES=	Admin/NewSettings.pm \
 		Admin/Settings_Main.pm \
 		Convert.pl Languages/English/Admin.lng \

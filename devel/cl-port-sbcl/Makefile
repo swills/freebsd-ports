@@ -1,9 +1,9 @@
 # Created by: Henrik Motakef <henrik.motakef@web.de>
-# $FreeBSD: head/devel/cl-port-sbcl/Makefile 467790 2018-04-19 17:29:25Z jrm $
+# $FreeBSD: head/devel/cl-port-sbcl/Makefile 469005 2018-05-04 06:17:47Z krion $
 
 PORTNAME=	port
 PORTVERSION=	2002.10.02.1
-PORTREVISION=	22
+PORTREVISION=	23
 CATEGORIES=	devel lisp
 PKGNAMEPREFIX=	cl-
 DISTFILES=	# none

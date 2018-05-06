@@ -1,5 +1,5 @@
 # Created by: pfg
-# $FreeBSD: head/misc/fortune-mod-psalms/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/misc/fortune-mod-psalms/Makefile 469109 2018-05-05 13:54:37Z danfe $
 
 PORTNAME=	fortune-mod-psalms
 PORTVERSION=	1.0
@@ -15,7 +15,6 @@ LICENSE=	CC0-1.0		# AKA Public Domain
 NO_ARCH=	yes
 NO_WRKSUBDIR=	yes
 
-PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-message
 PLIST_FILES=	share/games/fortune/psalms share/games/fortune/psalms.dat
 

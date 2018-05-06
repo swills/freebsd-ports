@@ -1,5 +1,5 @@
 # Created by: Lars Thegler <lars@thegler.dk>
-# $FreeBSD: head/www/p5-Maypole/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-Maypole/Makefile 469119 2018-05-05 14:58:18Z danfe $
 
 PORTNAME=	Maypole
 PORTVERSION=	2.13
@@ -49,7 +49,6 @@ MODPERL2_DESC=	mod_perl2 support
 USES=		perl5
 USE_PERL5=	configure
 
-PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-message
 DOC_FILES=	../Manual.pod \
 		About.pod \

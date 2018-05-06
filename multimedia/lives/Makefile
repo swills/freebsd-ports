@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/multimedia/lives/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/lives/Makefile 468936 2018-05-03 16:10:21Z jbeich $
 
 PORTNAME=	lives
 PORTVERSION=	2.8.7
@@ -13,8 +13,6 @@ COMMENT=	Video editing system
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN=		fails to build with ffmpeg 4.0
 
 BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:multimedia/v4l_compat \
 		${LOCALBASE}/bin/analyseplugin:audio/ladspa

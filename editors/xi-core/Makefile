@@ -1,8 +1,9 @@
-# $FreeBSD: head/editors/xi-core/Makefile 456841 2017-12-20 16:55:24Z tobik $
+# $FreeBSD: head/editors/xi-core/Makefile 468993 2018-05-03 22:43:22Z jbeich $
 
 PORTNAME=	xi-core
 PORTVERSION=	g20170612
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	editors
 
 MAINTAINER=	ports@FreeBSD.org
@@ -26,7 +27,7 @@ CARGO_CRATES=	bytecount-0.1.6 \
 		dtoa-0.4.1 \
 		itoa-0.3.1 \
 		kernel32-sys-0.2.2 \
-		libc-0.2.23 \
+		libc-0.2.40 \
 		memchr-1.0.1 \
 		num-traits-0.1.37 \
 		quote-0.3.15 \

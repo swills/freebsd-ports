@@ -1,5 +1,5 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-audio/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/octave-forge-audio/Makefile 468999 2018-05-03 23:42:35Z stephen $
 
 PORTNAME=	octave-forge-audio
 PORTVERSION=	1.1.4
@@ -12,6 +12,7 @@ COMMENT=	Octave-forge package ${OCTAVE_PKGNAME}
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+BROKEN=		does not build with octave version >= 4.4.0
 GNU_CONFIGURE=	yes
 
 .include "${.CURDIR}/../../Mk/bsd.octave.mk"

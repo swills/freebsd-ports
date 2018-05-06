@@ -1,8 +1,8 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/benchmarks/bombardier/Makefile 464866 2018-03-18 03:55:13Z yuri $
+# $FreeBSD: head/benchmarks/bombardier/Makefile 468909 2018-05-03 01:49:57Z danilo $
 
 PORTNAME=	bombardier
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	benchmarks
 

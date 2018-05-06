@@ -1,5 +1,5 @@
 # Created by: Anders Nordby <anders@fix.no>
-# $FreeBSD: head/security/pam-mysql/Makefile 453238 2017-10-31 14:51:53Z olgeni $
+# $FreeBSD: head/security/pam-mysql/Makefile 469113 2018-05-05 14:20:33Z danfe $
 
 PORTNAME=	pam_mysql
 PORTVERSION=	0.7.r1
@@ -22,7 +22,6 @@ CONFIGURE_ARGS=	--with-mysql=${LOCALBASE} \
 		--with-pam=/usr
 
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 PORTDOCS=	*
 PLIST_FILES=	lib/pam_mysql.so lib/pam_mysql.la

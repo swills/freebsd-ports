@@ -1,11 +1,12 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/mail/squirrelmail-translations/Makefile 449492 2017-09-09 14:24:21Z riggs $
+# $FreeBSD: head/mail/squirrelmail-translations/Makefile 468924 2018-05-03 12:42:57Z mat $
 
 PORTNAME=	squirrelmail-translations
 PORTVERSION=	20170705
 CATEGORIES=	mail www
 MASTER_SITES=	http://snapshots.squirrelmail.org/ \
 	http://freebsd.uzsolt.hu/src/
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 DISTNAME=	squirrelmail-${PORTVERSION}_0200-SVN.locales
 DIST_SUBDIR=	squirrelmail
 
@@ -14,9 +15,9 @@ COMMENT=	NLS translations for Squirrelmail (mail/squirrelmail)
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	squirrelmail>=${PORTVERSION}:mail/squirrelmail
+RUN_DEPENDS=	squirrelmail${PHP_PKGNAMESUFFIX}>=${PORTVERSION}:mail/squirrelmail@${PHP_FLAVOR}
 
-USES=		tar:bzip2 gettext
+USES=		tar:bzip2 gettext php:flavors
 WRKSRC=		${WRKDIR}/squirrelmail.locales
 NO_ARCH=	yes
 PORTSCOUT=	ignore:1

@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/soundmodem/Makefile 451999 2017-10-13 14:18:50Z bapt $
+# $FreeBSD: head/comms/soundmodem/Makefile 469100 2018-05-05 10:49:36Z antoine $
 
 PORTNAME=	soundmodem
 PORTVERSION=	0.20
@@ -9,6 +9,8 @@ MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Amateur Radio sound modem
 
 BROKEN=		No public distfiles
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-06-06
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING

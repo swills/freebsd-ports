@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/databases/ruby-mysql/Makefile 460517 2018-01-31 16:51:13Z sunpoet $
+# $FreeBSD: head/databases/ruby-mysql/Makefile 469100 2018-05-05 10:49:36Z antoine $
 
 PORTNAME=	mysql
 PORTVERSION=	2.8.2
@@ -17,6 +17,8 @@ LICENSE=	BSD2CLAUSE RUBY
 LICENSE_COMB=	dual
 
 BROKEN=		Invalid checksum
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-06-06
 
 BROKEN_RUBY23=	yes
 

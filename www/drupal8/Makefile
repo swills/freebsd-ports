@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas <acmFreeBSD.org>
-# $FreeBSD: head/www/drupal8/Makefile 467794 2018-04-19 18:11:01Z acm $
+# $FreeBSD: head/www/drupal8/Makefile 469119 2018-05-05 14:58:18Z danfe $
 
 PORTNAME=	drupal8
-PORTVERSION=	8.5.2
+PORTVERSION=	8.5.3
 CATEGORIES=	www
 MASTER_SITES=	http://ftp.drupal.org/files/projects/
 DISTNAME=	drupal-${PORTVERSION}
@@ -28,7 +28,6 @@ OPTIONS_DEFINE=		MYSQL SQLITE3 PGSQL DOCS
 OPTIONS_DEFAULT=	MYSQL
 
 SUB_FILES+=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 PGSQL_USES=	pgsql
 PGSQL_USE=	PHP=pdo_pgsql

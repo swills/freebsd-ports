@@ -1,5 +1,5 @@
 # Created by: Ulrich Spoerlein <q@uni.de>
-# $FreeBSD: head/multimedia/lxdvdrip/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/lxdvdrip/Makefile 469132 2018-05-05 17:13:42Z danfe $
 
 PORTNAME=	lxdvdrip
 PORTVERSION=	1.62
@@ -9,7 +9,7 @@ MASTER_SITES=	http://download.berlios.de/lxdvdrip/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	multimedia@FreeBSD.org
-COMMENT=	Command Line Tool to make a copy from a Video DVD
+COMMENT=	Command line tool to make a copy from a Video DVD
 
 LIB_DEPENDS=	libdvdnav.so:multimedia/libdvdnav \
 		libdvdread.so:multimedia/libdvdread
@@ -21,7 +21,6 @@ RUN_DEPENDS=	buffer:misc/buffer \
 		transcode:multimedia/transcode
 
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 USES=		alias
 WRKSRC=		${WRKDIR}/${PORTNAME}

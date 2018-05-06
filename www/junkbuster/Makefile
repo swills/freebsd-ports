@@ -1,5 +1,5 @@
 # Created by: Ian Struble <ian@broken.net>
-# $FreeBSD: head/www/junkbuster/Makefile 424337 2016-10-20 15:34:16Z mat $
+# $FreeBSD: head/www/junkbuster/Makefile 469119 2018-05-05 14:58:18Z danfe $
 
 PORTNAME=	junkbuster
 PORTVERSION=	2.0.2
@@ -18,7 +18,6 @@ ALL_TARGET=	# yes, an empty target.
 JDIR=		${PREFIX}/etc/junkbuster
 SUB_FILES=	junkbuster pkg-message
 USE_RC_SUBR=	${PORTNAME}
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 GNUREGEXP=	's:gnu_regex.h:gnu/regex.h:'
 

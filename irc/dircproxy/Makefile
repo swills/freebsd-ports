@@ -1,5 +1,5 @@
 # Created by: George Reid <greid@ukug.uk.freebsd.org>
-# $FreeBSD: head/irc/dircproxy/Makefile 457057 2017-12-23 14:57:19Z tijl $
+# $FreeBSD: head/irc/dircproxy/Makefile 469121 2018-05-05 15:17:46Z danfe $
 
 PORTNAME=	dircproxy
 DISTVERSION=	1.2.0-RC1
@@ -18,7 +18,6 @@ GH_TAGNAME=	dc563b3
 
 GNU_CONFIGURE=	yes
 SUB_FILES+=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 USES=		autoreconf
 
 post-install:

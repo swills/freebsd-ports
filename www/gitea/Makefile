@@ -1,9 +1,9 @@
 # Created by: Stefan Bethke <stb@lassitu.de>
-# $FreeBSD: head/www/gitea/Makefile 465641 2018-03-26 22:01:21Z yuri $
+# $FreeBSD: head/www/gitea/Makefile 469092 2018-05-05 08:23:07Z krion $
 
 PORTNAME=	gitea
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.4.0
+DISTVERSION=	1.4.1
 CATEGORIES=	www
 
 MAINTAINER=	stb@lassitu.de
@@ -12,8 +12,7 @@ COMMENT=	Compact self-hosted Git service
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	bash:shells/bash \
-		git:devel/git
+RUN_DEPENDS=	git:devel/git
 
 USES=		go
 USE_GITHUB=	yes

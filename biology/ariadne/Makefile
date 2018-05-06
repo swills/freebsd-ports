@@ -1,5 +1,5 @@
 # Created by: Fernan Aguero <fernan@iib.unsam.edu.ar>
-# $FreeBSD: head/biology/ariadne/Makefile 451982 2017-10-13 11:14:53Z bapt $
+# $FreeBSD: head/biology/ariadne/Makefile 469100 2018-05-05 10:49:36Z antoine $
 
 PORTNAME=	ariadne
 PORTVERSION=	1.3
@@ -12,6 +12,8 @@ COMMENT=	Programs to compare protein sequences and profiles
 WRKSRC=		${WRKDIR}/SRC-${PORTVERSION}
 
 BROKEN=		No public distfiles
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-06-06
 
 PLIST_FILES+=	bin/ariadne bin/prospero
 USES=		gmake tar:Z

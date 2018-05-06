@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/security/bruteblock/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/security/bruteblock/Makefile 469113 2018-05-05 14:20:33Z danfe $
 
 PORTNAME=	bruteblock
 PORTVERSION=	0.0.5
@@ -13,7 +13,6 @@ COMMENT=	Software for blocking bruteforce attacks with ipfw
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
 
-PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-message
 
 USE_RC_SUBR=	bruteblockd

@@ -1,9 +1,10 @@
 # Created by: Richard Gallamore <ultima@FreeBSD.org>
-# $FreeBSD: head/devel/racerd/Makefile 456185 2017-12-12 21:46:39Z ultima $
+# $FreeBSD: head/devel/racerd/Makefile 468993 2018-05-03 22:43:22Z jbeich $
 
 PORTNAME=	racerd
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.1.1-56
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	-g29cd4c6
 CATEGORIES=	devel
 
@@ -47,7 +48,7 @@ CARGO_CRATES=	aho-corasick-0.5.3 \
 		language-tags-0.2.2 \
 		lazy_static-0.1.16 \
 		lazy_static-0.2.8 \
-		libc-0.2.30 \
+		libc-0.2.40 \
 		log-0.3.8 \
 		logger-0.1.0 \
 		magenta-0.1.1 \

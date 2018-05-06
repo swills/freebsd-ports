@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/rapid/Makefile 460452 2018-01-31 01:07:07Z jwb $
+# $FreeBSD: head/math/rapid/Makefile 469120 2018-05-05 15:09:22Z danfe $
 
 PORTNAME=	rapid
 PORTVERSION=	2.01
@@ -13,7 +13,6 @@ COMMENT=	Robust and Accurate Polygon Interference Detection
 RESTRICTED=	For any commercial purpose, you must request a license from http://www.cs.unc.edu/~geom/OBB/OBBT.html
 
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 ALL_TARGET=
 MAKE_JOBS_UNSAFE=	yes

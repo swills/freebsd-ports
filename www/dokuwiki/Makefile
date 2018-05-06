@@ -1,5 +1,5 @@
 # Created by: Chin-San Huang <chinsan@mail2000.com.tw>
-# $FreeBSD: head/www/dokuwiki/Makefile 468188 2018-04-24 07:54:26Z delphij $
+# $FreeBSD: head/www/dokuwiki/Makefile 469173 2018-05-06 04:27:07Z delphij $
 
 PORTNAME=	dokuwiki
 PORTVERSION=	${DIST_VER:S/${PORTNAME}//:S/-//g}
@@ -18,9 +18,9 @@ LICENSE_FILE_GPLv2+ =		${WRKSRC}/vendor/geshi/geshi/LICENSE
 LICENSE_FILE_GPLv3=		${WRKSRC}/vendor/marcusschwarz/lesserphp/LICENSE
 LICENSE_FILE_MIT=		${WRKSRC}/vendor/composer/LICENSE
 
-DIST_VER=	${PORTNAME}-2018-04-22
+DIST_VER=	${PORTNAME}-2018-04-22a
 USES=		cpe tar:tgz php:web
-USE_PHP=	gd mbstring openssl pcre session xml zlib
+USE_PHP=	gd hash json mbstring openssl pcre session xml zlib
 NO_ARCH=	YES
 NO_BUILD=	YES
 

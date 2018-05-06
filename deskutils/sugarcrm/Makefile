@@ -1,5 +1,5 @@
 # Created by: Nick Hilliard <nick@foobar.org>
-# $FreeBSD: head/deskutils/sugarcrm/Makefile 446465 2017-07-23 12:04:22Z wen $
+# $FreeBSD: head/deskutils/sugarcrm/Makefile 469132 2018-05-05 17:13:42Z danfe $
 
 PORTNAME=	sugarcrm
 PORTVERSION=	6.5.26
@@ -19,7 +19,6 @@ WRKSRC=		${WRKDIR}/SugarCE-Full-${PORTVERSION}
 PLIST=		${WRKDIR}/plist
 SUGARDIR=	www/sugarcrm
 
-PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES+=	pkg-message pkg-install
 
 pre-install:

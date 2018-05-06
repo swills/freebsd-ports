@@ -1,5 +1,5 @@
 # Created by: Michael Durian <durian@shadetreesoftware.com>
-# $FreeBSD: head/cad/linux-eagle5/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/cad/linux-eagle5/Makefile 469120 2018-05-05 15:09:22Z danfe $
 
 PORTNAME=	eagle5
 PORTVERSION=	${EAGLEVERSION}
@@ -37,7 +37,6 @@ EAGLEVERSION=	${EAGLEBASEVERSION}.${EAGLEBUGFIX}
 USES=		linux
 USE_LINUX=	xorglibs jpeg png
 NO_BUILD=	yes
-PKGMESSAGE=	${WRKDIR}/pkg-message
 SUB_FILES=	pkg-deinstall pkg-message
 
 DESKTOP_ENTRIES=	"Eagle5" "Tool for designing printed circuit boards" \

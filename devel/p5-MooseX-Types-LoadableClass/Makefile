@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-MooseX-Types-LoadableClass/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-MooseX-Types-LoadableClass/Makefile 469126 2018-05-05 16:18:43Z az $
 
 PORTNAME=	MooseX-Types-LoadableClass
 PORTVERSION=	0.015
@@ -7,7 +7,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:ETHER
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	az@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	ClassName type constraint with coercion to load the class
 
 LICENSE=	ART10 GPLv1+

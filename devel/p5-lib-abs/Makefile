@@ -1,5 +1,5 @@
 # Created by: Mons Anderson <mons@cpan.org>
-# $FreeBSD: head/devel/p5-lib-abs/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-lib-abs/Makefile 469098 2018-05-05 09:03:57Z amdmi3 $
 
 PORTNAME=	lib-abs
 PORTVERSION=	0.92
@@ -11,7 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	mons@cpan.org
 COMMENT=	Relative use lib in absolute way
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

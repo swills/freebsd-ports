@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-DBIx-Class-MooseColumns/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/databases/p5-DBIx-Class-MooseColumns/Makefile 469126 2018-05-05 16:18:43Z az $
 
 PORTNAME=	DBIx-Class-MooseColumns
 PORTVERSION=	0.22
@@ -8,7 +8,7 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:MENDEL
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	az@FreeBSD.org
+MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Allow write DBIC add_column definitions as attribute options
 
 LICENSE=	ART10 GPLv1+

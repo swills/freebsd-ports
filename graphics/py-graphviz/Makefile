@@ -1,8 +1,8 @@
 # Created by: lbartoletti <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/graphics/py-graphviz/Makefile 459095 2018-01-15 17:16:56Z sunpoet $
+# $FreeBSD: head/graphics/py-graphviz/Makefile 469087 2018-05-05 05:58:44Z riggs $
 
 PORTNAME=	graphviz
-PORTVERSION=	0.8.2
+PORTVERSION=	0.8.3
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,7 +11,7 @@ MAINTAINER=	lbartoletti@tuxfamily.org
 COMMENT=	Simple Python interface for Graphviz
 
 LICENSE=	MIT
-LICENSE_FILE=	${WRKSRC}/LICENSE
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	dot:graphics/graphviz
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-cov>=0:devel/py-pytest-cov@${FLAVOR} \

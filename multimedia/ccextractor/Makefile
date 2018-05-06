@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/ccextractor/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/ccextractor/Makefile 469016 2018-05-04 11:40:14Z jbeich $
 
 PORTNAME=	ccextractor
 DISTVERSIONPREFIX=	v
@@ -43,7 +43,6 @@ CMAKE_ARGS+=	-DWITH_SHARING:BOOL=OFF # enable when net/nanomsg is available
 OPTIONS_DEFINE=		FFMPEG
 OPTIONS_DEFAULT=	FFMPEG
 
-FFMPEG_BROKEN=		fails to build with ffmpeg 4.0
 FFMPEG_CMAKE_BOOL=	WITH_FFMPEG
 FFMPEG_LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg
 

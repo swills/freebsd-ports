@@ -1,5 +1,5 @@
 # Created by: Carlo Strub <c-s@c-s.li>
-# $FreeBSD: head/www/ach/Makefile 430490 2017-01-03 18:12:13Z mat $
+# $FreeBSD: head/www/ach/Makefile 469119 2018-05-05 14:58:18Z danfe $
 
 PORTNAME=	ACH
 PORTVERSION=	1.0.3
@@ -21,7 +21,6 @@ GH_PROJECT=	Analysis-of-Competing-Hypotheses
 WRKSRC=		${WRKDIR}/${DISTNAME}
 NO_BUILD=	yes
 SUB_FILES+=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 WWWDIR?=	${PREFIX}/www/${PORTNAME}
 
 # Get rid of temp files packaged in the upstream distfile

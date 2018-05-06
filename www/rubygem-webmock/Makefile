@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-webmock/Makefile 468728 2018-04-30 17:09:28Z sunpoet $
+# $FreeBSD: head/www/rubygem-webmock/Makefile 468886 2018-05-02 20:37:31Z sunpoet $
 
 PORTNAME=	webmock
-PORTVERSION=	3.4.0
+PORTVERSION=	3.4.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

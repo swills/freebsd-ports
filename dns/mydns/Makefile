@@ -1,5 +1,5 @@
 # Created by: Simon Dick <simond@irrelevant.org>
-# $FreeBSD: head/dns/mydns/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/dns/mydns/Makefile 469120 2018-05-05 15:09:22Z danfe $
 
 PORTNAME=	mydns
 PORTVERSION=	1.1.0
@@ -21,7 +21,6 @@ USES=		tar:bzip2 iconv
 USE_RC_SUBR=	mydns
 
 SUB_FILES=	pkg-message
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 INFO=		mydns
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 468859 2018-05-02 17:44:23Z mfechner $
+# $FreeBSD: head/devel/Makefile 469084 2018-05-05 03:47:44Z swills $
 #
 
     COMMENT = Development utilities
@@ -1327,6 +1327,7 @@
     SUBDIR += libafterbase
     SUBDIR += liballium
     SUBDIR += libantlr3c
+    SUBDIR += libappindicator
     SUBDIR += libaravis
     SUBDIR += libarea
     SUBDIR += libarena
@@ -1445,6 +1446,7 @@
     SUBDIR += libhtp
     SUBDIR += libhyve-remote
     SUBDIR += libical
+    SUBDIR += libindicator
     SUBDIR += libinotify
     SUBDIR += libiqxmlrpc
     SUBDIR += libisofs
@@ -6192,6 +6194,7 @@
     SUBDIR += xorg-macros
     SUBDIR += xparam
     SUBDIR += xsd
+    SUBDIR += xtensa-esp32-elf
     SUBDIR += xtl
     SUBDIR += xtoolchain-llvm-devel
     SUBDIR += xtoolchain-llvm40

@@ -1,5 +1,5 @@
 # Created by: jkoshy
-# $FreeBSD: head/benchmarks/netpipe/Makefile 451956 2017-10-13 08:20:19Z bapt $
+# $FreeBSD: head/benchmarks/netpipe/Makefile 469100 2018-05-05 10:49:36Z antoine $
 
 PORTNAME=	NetPIPE
 PORTVERSION=	3.7.2
@@ -10,6 +10,8 @@ MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	Self-scaling network benchmark
 
 BROKEN=		No public distfiles
+DEPRECATED=	Broken for more than 6 months
+EXPIRATION_DATE=	2018-06-06
 
 # The default port builds and installs only the TCP version of
 # netpipe(1).  The sources support many other variants.
