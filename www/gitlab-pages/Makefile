@@ -7,7 +7,7 @@ CATEGORIES=	www
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Official GitLab Pages daemon
 
-BROKEN=		does currently not compile
+#BROKEN=		does currently not compile
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
@@ -21,7 +21,6 @@ GL_COMMIT=	b77d61283dfbadf3f50933a48b214d3607cacc47
 
 FETCH_DEPENDS=	go:lang/go \
 		git>0:devel/git
-post-fetch:
 PLIST_FILES=	bin/gitlab-pages
 
 USE_RC_SUBR=	gitlab_pages
@@ -31,6 +30,7 @@ GROUPS=		gitlab-pages
 
 GMAKE=		yes
 
+post-fetch:
 	GOPATH=${WRKDIR}/.GOPATH go get -v -u github.com/FiloSottile/gvt
 	cd ${WRKDIR}/.GOPATH && GOPATH=${WRKDIR}/.GOPATH bin/gvt fetch golang.org/x/tools/cmd/goimports
 	cd ${WRKDIR}/.GOPATH && GOPATH=${WRKDIR}/.GOPATH bin/gvt fetch github.com/wadey/gocovmerge
