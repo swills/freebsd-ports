@@ -13,6 +13,8 @@ COMMENT=	Glib wrapper library around the libgit2 git access library
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+BROKEN=		upstream does not support libgit 0.27.0
+
 BUILD_DEPENDS=	vapigen:lang/vala
 LIB_DEPENDS=	libgit2.so:devel/libgit2
 
