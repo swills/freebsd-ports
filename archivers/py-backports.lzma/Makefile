@@ -1,7 +1,7 @@
-# $FreeBSD: head/archivers/py-backports.lzma/Makefile 431336 2017-01-13 02:18:47Z kmoore $
+# $FreeBSD: head/archivers/py-backports.lzma/Makefile 469304 2018-05-07 17:46:11Z kmoore $
 
 PORTNAME=	backports.lzma
-PORTVERSION=	0.0.6
+PORTVERSION=	0.0.10
 CATEGORIES=	archivers python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

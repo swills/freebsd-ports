@@ -1,8 +1,9 @@
 # Created by: Anders Nordby <anders@fix.no>
-# $FreeBSD: head/net/dante/Makefile 445720 2017-07-13 23:53:44Z cpm $
+# $FreeBSD: head/net/dante/Makefile 469430 2018-05-09 05:37:54Z dinoex $
 
 PORTNAME=	dante
 PORTVERSION=	1.4.2
+PORTREVISION=	1
 CATEGORIES=	net security ipv6
 MASTER_SITES=	http://www.inet.no/dante/files/ \
 		ftp://ftp.inet.no/pub/socks/

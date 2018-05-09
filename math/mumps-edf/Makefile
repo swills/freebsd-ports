@@ -1,9 +1,9 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/math/mumps-edf/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/mumps-edf/Makefile 469182 2018-05-06 08:16:17Z thierry $
 
 PORTNAME=	mumps
 DISTVERSION=	5.1.1-aster2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 PKGNAMESUFFIX=	-edf
 
@@ -15,10 +15,9 @@ LICENSE_NAME=	CeCILL-C
 LICENSE_FILE=	${WRKSRC}/LICENSE
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/libGKlib.a:math/metis-edf
 LIB_DEPENDS=	libblas.so:math/blas		\
 		liblapack.so:math/lapack	\
-		libmetis.so:math/metis-edf
+		libmetis.so:math/metis
 
 USES=		fortran
 

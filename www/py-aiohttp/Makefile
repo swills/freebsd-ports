@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/www/py-aiohttp/Makefile 456710 2017-12-19 06:31:53Z olivier $
+# $FreeBSD: head/www/py-aiohttp/Makefile 469264 2018-05-07 05:32:14Z antoine $
 
 PORTNAME=	aiohttp
 PORTVERSION=	2.3.6
@@ -12,6 +12,8 @@ COMMENT=	HTTP client/server for asyncio
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+BROKEN=		fails to run
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}chardet>0:textproc/py-chardet@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}multidict>0:www/py-multidict@${FLAVOR} \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-unicorn51/Makefile 464671 2018-03-16 10:06:15Z jhale $
+# $FreeBSD: head/www/rubygem-unicorn51/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	unicorn
 PORTVERSION=	5.1.0
@@ -6,7 +6,7 @@ CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	51
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Unicorn is an HTTP server for Rack applications
 
 LICENSE=	GPLv2 GPLv3 RUBY

@@ -1,9 +1,8 @@
-# $FreeBSD: head/sysutils/snooze/Makefile 457314 2017-12-26 20:52:14Z tobik $
+# $FreeBSD: head/sysutils/snooze/Makefile 469361 2018-05-08 06:00:45Z tobik $
 
 PORTNAME=	snooze
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.2-3
-DISTVERSIONSUFFIX=	-g00c19ec
+DISTVERSION=	0.3
 CATEGORIES=	sysutils
 
 MAINTAINER=	tobik@FreeBSD.org

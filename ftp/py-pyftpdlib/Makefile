@@ -1,8 +1,7 @@
-# Created by: Li-Wen Hsu <lwhsu@lwhsu.org>
-# $FreeBSD: head/ftp/py-pyftpdlib/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/ftp/py-pyftpdlib/Makefile 469215 2018-05-06 13:00:24Z lwhsu $
 
 PORTNAME=	pyftpdlib
-PORTVERSION=	1.5.3
+PORTVERSION=	1.5.4
 CATEGORIES=	ftp python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

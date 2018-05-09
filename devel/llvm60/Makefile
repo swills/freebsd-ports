@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm60/Makefile 468476 2018-04-27 17:41:18Z jbeich $
+# $FreeBSD: head/devel/llvm60/Makefile 469338 2018-05-07 22:29:46Z jbeich $
 
 PORTNAME=	llvm
 DISTVERSION=	6.0.0
@@ -272,10 +272,6 @@ MAN1SRCS+=	bugpoint.1 dsymutil.1 llc.1 lli.1 llvm-ar.1 llvm-as.1 \
 		opt.1 tblgen.1
 
 .include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSREL} == 10.3
-CFLAGS+=	-D_LIBCPP_TRIVIAL_PAIR_COPY_CTOR=1
-.endif
 
 .if ${ARCH} == "amd64"
 _COMPILER_RT_LIBS= \

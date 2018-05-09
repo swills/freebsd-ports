@@ -1,11 +1,12 @@
 # Created by: Philippe Audeoud <jadawin@tuxaco.net>
-# $FreeBSD: head/www/zenphoto/Makefile 469119 2018-05-05 14:58:18Z danfe $
+# $FreeBSD: head/www/zenphoto/Makefile 469199 2018-05-06 12:49:22Z sunpoet $
 
 PORTNAME=	zenphoto
 PORTVERSION=	1.4.14
 DISTVERSIONPREFIX=	${PORTNAME}-
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
+PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Simpler web photo gallery
@@ -15,7 +16,7 @@ LICENSE=	GPLv2+
 NO_ARCH=	yes
 NO_BUILD=	yes
 USE_PHP=	gd gettext hash json mbstring mysqli pcre session
-USES=		cpe php:web
+USES=		cpe php:flavors,web
 
 SUB_FILES=	pkg-deinstall pkg-message
 

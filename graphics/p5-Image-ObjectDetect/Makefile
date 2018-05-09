@@ -1,9 +1,9 @@
 # Created by: Anes Mukhametov <anes@anes.su>
-# $FreeBSD: head/graphics/p5-Image-ObjectDetect/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/graphics/p5-Image-ObjectDetect/Makefile 469421 2018-05-09 01:44:50Z swills $
 
 PORTNAME=	Image-ObjectDetect
 PORTVERSION=	0.12
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

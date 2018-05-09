@@ -1,7 +1,7 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/graphics/py-opencv/Makefile 465033 2018-03-19 20:44:15Z linimon $
+# $FreeBSD: head/graphics/py-opencv/Makefile 469420 2018-05-09 01:10:11Z swills $
 
-PORTREVISION=	3
+PORTREVISION=	0
 CATEGORIES=	graphics python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

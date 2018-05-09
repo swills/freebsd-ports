@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/sx/Makefile 463361 2018-03-02 00:01:09Z yuri $
+# $FreeBSD: head/net-mgmt/sx/Makefile 469305 2018-05-07 18:05:11Z amdmi3 $
 
 PORTNAME=	sx
 PORTVERSION=	2.3
@@ -11,6 +11,9 @@ COMMENT=	Skylable Sx is a reliable, fully distributed cluster solution
 
 LICENSE=	GPLv2
 
+DEPRECATED=	Upstream gone, does not fetch
+EXPIRATION_DATE=2018-07-07
+
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libfcgi.so:www/fcgi \
 		libyajl.so:devel/yajl \
@@ -21,7 +24,7 @@ USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 USES=		fuse gmake libtool pkgconfig sqlite
 CONFIGURE_ARGS=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib" --prefix="${STAGE}${PREFIX}" \
+		LDFLAGS="-L${LOCALBASE}/lib" --prefix="${PREFIX}" \
 		--sysconfdir="${ETCDIR}" --mandir="${MANPREFIX}/man" \
 		--with-system-libs
 
@@ -32,7 +35,7 @@ OPTIONS_DEFAULT=SXSERVER
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MSXSERVER}
-CONFIGURE_ARGS+=--localstatedir="${STAGE}${PREFIX}/sxserver"
+CONFIGURE_ARGS+=--localstatedir="${PREFIX}/sxserver"
 PLIST_SUB+=	SXSERVER=""
 USE_RC_SUBR=	sxserver
 SUB_FILES=	pkg-message
@@ -41,7 +44,7 @@ CONFIGURE_ARGS+=--disable-sxhttpd --disable-server
 PLIST_SUB+=	SXSERVER="@comment "
 .endif
 
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1002000
+.if ${OPSYS} == FreeBSD
 PLIST_FILES+=	lib/sxclient/libsxf_aes256-20.so \
 		lib/sxclient/libsxf_aes256.so \
 		lib/sxclient/libsxf_aes256_dummy-00.so \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-omniauth-shibboleth12/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/security/rubygem-omniauth-shibboleth12/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	omniauth-shibboleth
 PORTVERSION=	1.2.1
@@ -6,7 +6,7 @@ CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	12
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	OmniAuth Shibboleth strategies for OmniAuth 1.x
 
 LICENSE=	MIT

@@ -1,11 +1,11 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab-workhorse/Makefile 467331 2018-04-14 16:31:16Z mfechner $
+# $FreeBSD: head/www/gitlab-workhorse/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	gitlab-workhorse
 PORTVERSION=	4.1.0
 CATEGORIES=	www
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Smart reverse proxy for GitLab
 
 LICENSE=	MIT

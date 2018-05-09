@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-mmap2/Makefile 457897 2018-01-02 15:44:46Z swills $
+# $FreeBSD: head/devel/rubygem-mmap2/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	mmap2
 PORTVERSION=	2.2.9
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Implement memory-mapped file objects for Ruby 2.x
 
 LICENSE=	RUBY

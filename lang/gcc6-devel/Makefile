@@ -1,8 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc6-devel/Makefile 468473 2018-04-27 16:48:57Z gerald $
+# $FreeBSD: head/lang/gcc6-devel/Makefile 469193 2018-05-06 11:38:28Z gerald $
 
 PORTNAME=	gcc
-PORTVERSION=	6.4.1.s20180425
+PORTVERSION=	6.4.1.s20180502
 CATEGORIES=	lang java
 MASTER_SITES=	GCC/snapshots/${DIST_VERSION}
 PKGNAMESUFFIX=	${SUFFIX}-devel

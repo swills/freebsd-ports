@@ -1,5 +1,5 @@
 # Created by: Jason Harmening <jason.harmening@gmail.com>
-# $FreeBSD: head/multimedia/cx88/Makefile 459173 2018-01-16 14:21:17Z swills $
+# $FreeBSD: head/multimedia/cx88/Makefile 469338 2018-05-07 22:29:46Z jbeich $
 
 PORTNAME=	cx88
 PORTVERSION=	1.5.2
@@ -45,10 +45,7 @@ MAKE_ARGS+=	-D WITH_HAL
 .endif
 .endif
 
-.if (${OSVERSION} >= 1003500)
 MAKE_ARGS+=	-D CX88_USE_IIC
-.endif
-
 MAKE_ARGS+=	DEFAULT_XML_CONFIG="${EXAMPLESDIR}/cx88.xml.sample"
 
 .include <bsd.port.mk>

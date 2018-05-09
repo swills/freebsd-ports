@@ -1,5 +1,5 @@
 # Created by: Thomas Sandford <freebsduser@paradisegreen.co.uk>
-# $FreeBSD: head/www/drush/Makefile 461490 2018-02-11 11:15:02Z joneum $
+# $FreeBSD: head/www/drush/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	drush
 DISTVERSION=	8.1.16
@@ -8,7 +8,7 @@ MASTER_SITES=	https://github.com/drush-ops/drush/releases/download/${DISTVERSION
 DISTNAME=	drush
 EXTRACT_SUFX=	.phar
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Drupal command line and scripting interface
 
 LICENSE=	GPLv2+

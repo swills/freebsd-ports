@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-diva/Makefile 459727 2018-01-23 07:02:09Z tota $
+# $FreeBSD: head/devel/rubygem-diva/Makefile 469363 2018-05-08 07:07:15Z tota $
 
 PORTNAME=	diva
-PORTVERSION=	0.3.1
+PORTVERSION=	0.3.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

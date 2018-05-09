@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/opendht/Makefile 468493 2018-04-27 19:46:06Z jbeich $
+# $FreeBSD: head/devel/opendht/Makefile 469338 2018-05-07 22:29:46Z jbeich $
 
 PORTNAME=	opendht
 DISTVERSION=	1.7.1
@@ -39,11 +39,5 @@ PROXY_SERVER_LIB_DEPENDS=	libjsoncpp.so:devel/jsoncpp \
 				librestbed.so:www/restbed
 
 PORTDOCS=	*
-
-.include <bsd.port.options.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1003506
-BROKEN=		no __cxa_thread_atexit() support in FreeBSD libc < 10.4
-.endif
 
 .include <bsd.port.mk>

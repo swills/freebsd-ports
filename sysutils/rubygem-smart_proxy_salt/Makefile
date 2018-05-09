@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv@kvedulv.de>
-# $FreeBSD: head/sysutils/rubygem-smart_proxy_salt/Makefile 437318 2017-03-30 15:14:11Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-smart_proxy_salt/Makefile 469319 2018-05-07 19:20:50Z sunpoet $
 
 PORTNAME=	smart_proxy_salt
-PORTVERSION=	2.1.8
+PORTVERSION=	2.1.9
 CATEGORIES=	sysutils ruby
 MASTER_SITES=	RG
 

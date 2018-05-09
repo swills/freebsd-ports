@@ -1,9 +1,9 @@
 # Created by: Hung-Yi Chen <gaod@hychen.org>
-# $FreeBSD: head/www/mod_memcache_block/Makefile 467474 2018-04-16 10:48:08Z brnrd $
+# $FreeBSD: head/www/mod_memcache_block/Makefile 469412 2018-05-08 19:46:47Z brnrd $
 
 PORTNAME=	mod_memcache_block
-PORTVERSION=	20120821
-PORTREVISION=	1
+PORTVERSION=	1.0
+PORTEPOCH=	1
 CATEGORIES=	www
 DIST_SUBDIR=	apache2
 
@@ -13,10 +13,7 @@ COMMENT=	Apache 2.2 module to block IPs from lists stored in memcache
 LIB_DEPENDS+=	libmemcached.so:databases/libmemcached
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	netik
-GH_TAGNAME=	7b1fcec
-
-BROKEN=		Does not currently work with Apache 2.4+
+GH_ACCOUNT=	gaod
 
 USES=		apache:2.4+
 AP_FAST_BUILD=	yes

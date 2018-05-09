@@ -1,9 +1,9 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/graphics/facedetect/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/facedetect/Makefile 469421 2018-05-09 01:44:50Z swills $
 
 PORTNAME=	facedetect
 PORTVERSION=	0.1
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics
 
@@ -13,7 +13,7 @@ COMMENT=	Simple face detector for batch processing
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/cv.py:graphics/py-opencv
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/cv2.so:graphics/py-opencv
 
 USES=		python:2.7,run shebangfix
 USE_GITHUB=	yes

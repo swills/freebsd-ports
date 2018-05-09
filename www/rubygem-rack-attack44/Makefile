@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-rack-attack44/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/www/rubygem-rack-attack44/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	rack-attack
 PORTVERSION=	4.4.1
@@ -6,7 +6,7 @@ CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	44
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Rack middleware for throttling and blocking abusive requests
 
 LICENSE=	MIT

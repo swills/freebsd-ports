@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-gitaly-proto084/Makefile 467598 2018-04-17 11:24:32Z mfechner $
+# $FreeBSD: head/net/rubygem-gitaly-proto084/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	gitaly-proto
 PORTVERSION=	0.84.0
@@ -6,7 +6,7 @@ CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	084
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Protobuf specifications and client libraries for Gitaly
 
 LICENSE=	MIT

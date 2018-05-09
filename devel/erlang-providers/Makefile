@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/erlang-providers/Makefile 402529 2015-11-28 13:08:48Z olgeni $
+# $FreeBSD: head/devel/erlang-providers/Makefile 469226 2018-05-06 15:24:05Z olgeni $
 
 PORTNAME=	providers
-PORTVERSION=	1.6.0
+PORTVERSION=	1.7.0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

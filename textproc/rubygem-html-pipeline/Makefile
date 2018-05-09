@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/rubygem-html-pipeline/Makefile 468375 2018-04-26 18:52:09Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-html-pipeline/Makefile 469212 2018-05-06 12:50:30Z sunpoet $
 
 PORTNAME=	html-pipeline
-PORTVERSION=	2.7.2
+PORTVERSION=	2.8.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

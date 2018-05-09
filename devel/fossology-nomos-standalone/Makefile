@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/fossology-nomos-standalone/Makefile 462588 2018-02-22 13:42:20Z amdmi3 $
+# $FreeBSD: head/devel/fossology-nomos-standalone/Makefile 469383 2018-05-08 17:05:10Z amdmi3 $
 
 PORTNAME=	fossology
-PORTVERSION=	3.2.0
+PORTVERSION=	3.3.0
 CATEGORIES=	devel
 PKGNAMESUFFIX=	-nomos-standalone
 
@@ -17,6 +17,7 @@ LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LGPL
 BUILD_DEPENDS=	gawk:lang/gawk
 
 USE_GITHUB=	yes
+GH_TAGNAME=	660fc06
 
 USES=		gmake gettext pkgconfig
 USE_GNOME=	glib20

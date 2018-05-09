@@ -1,11 +1,11 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/devel/gitlab-shell/Makefile 467328 2018-04-14 16:26:37Z mfechner $
+# $FreeBSD: head/devel/gitlab-shell/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	gitlab-shell
 PORTVERSION=	7.1.2
 CATEGORIES=	devel
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	GitLab Shell handles git commands for GitLab
 
 LICENSE=	MIT

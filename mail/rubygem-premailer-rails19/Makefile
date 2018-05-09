@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/rubygem-premailer-rails19/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/mail/rubygem-premailer-rails19/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	premailer-rails
 PORTVERSION=	1.9.7
@@ -6,7 +6,7 @@ CATEGORIES=	mail rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	19
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Improve the rendering of HTML emails
 
 LICENSE=	MIT

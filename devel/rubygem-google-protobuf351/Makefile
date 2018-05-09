@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-google-protobuf351/Makefile 465602 2018-03-26 15:10:49Z mfechner $
+# $FreeBSD: head/devel/rubygem-google-protobuf351/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	google-protobuf
 PORTVERSION=	3.5.1
@@ -6,7 +6,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	351
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Ruby extension to Google Protocol Buffers
 
 LICENSE=	BSD3CLAUSE

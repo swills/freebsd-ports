@@ -1,8 +1,8 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/multimedia/gstreamer-plugins-bad/Makefile 454488 2017-11-19 11:37:26Z riggs $
+# $FreeBSD: head/multimedia/gstreamer-plugins-bad/Makefile 469421 2018-05-09 01:44:50Z swills $
 #    $MCom: ports/multimedia/gstreamer-plugins-bad/Makefile,v 1.11 2008/03/19 14:05:35 ahze Exp $
 
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	multimedia
 
 COMMENT=	Bad gstreamer-plugins

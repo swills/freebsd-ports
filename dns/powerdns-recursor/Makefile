@@ -1,5 +1,5 @@
 # Created by: sten@blinkenlights.nl
-# $FreeBSD: head/dns/powerdns-recursor/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/dns/powerdns-recursor/Makefile 469338 2018-05-07 22:29:46Z jbeich $
 
 PORTNAME=	recursor
 DISTVERSION=	4.1.2
@@ -54,10 +54,4 @@ SETUID_VARS=		USERS=pdns_recursor GROUPS=pdns
 
 SUB_FILES=	pkg-message
 
-.include <bsd.port.pre.mk>
-
-.if ${OSVERSION} < 1003506
-IGNORE=		no _cxa_thread_atexit() support in FreeBSD libc < 10.4
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

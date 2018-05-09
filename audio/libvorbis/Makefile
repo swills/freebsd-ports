@@ -1,5 +1,5 @@
 # Created by: t.vanklaveren@student.utwente.nl
-# $FreeBSD: head/audio/libvorbis/Makefile 464734 2018-03-16 21:07:55Z jbeich $
+# $FreeBSD: head/audio/libvorbis/Makefile 469367 2018-05-08 09:03:59Z amdmi3 $
 
 PORTNAME=	libvorbis
 PORTVERSION=	1.3.6
@@ -10,6 +10,9 @@ MASTER_SITES=	https://downloads.xiph.org/releases/vorbis/ \
 
 MAINTAINER=	naddy@FreeBSD.org
 COMMENT=	Audio compression codec library
+
+LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libogg.so:audio/libogg
 

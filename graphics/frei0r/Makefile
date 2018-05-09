@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/graphics/frei0r/Makefile 462008 2018-02-16 12:44:41Z jhale $
+# $FreeBSD: head/graphics/frei0r/Makefile 469421 2018-05-09 01:44:50Z swills $
 
 PORTNAME=	frei0r
 PORTVERSION=	1.6.1
@@ -29,11 +29,11 @@ USES+=	localbase
 .endif
 
 .if defined(BUILDING_FREI0R_OPENCV)
-PORTREVISION=	0
+PORTREVISION=	1
 COMMENT=	Frei0r OpenCV plugins
 PKGNAMESUFFIX=	-plugins-opencv
 LIB_DEPENDS+=	libopencv_core.so:graphics/opencv-core \
-		libopencv_legacy.so:graphics/opencv
+		libopencv_video.so:graphics/opencv
 FREI0R_PLUGINS=	facebl0r facedetect
 
 CMAKE_ARGS+=	-DWITHOUT_OPENCV:BOOL=OFF \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 468383 2018-04-26 20:39:16Z adridg $
+# $FreeBSD: head/science/Makefile 469326 2018-05-07 19:36:58Z pi $
 #
 
     COMMENT = Scientific ports
@@ -105,6 +105,7 @@
     SUBDIR += mcstas
     SUBDIR += mcstas-comps
     SUBDIR += mcxtrace
+    SUBDIR += mcxtrace-comps
     SUBDIR += medit
     SUBDIR += meep
     SUBDIR += mei

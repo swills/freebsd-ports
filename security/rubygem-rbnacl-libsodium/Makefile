@@ -1,11 +1,11 @@
-# $FreeBSD: head/security/rubygem-rbnacl-libsodium/Makefile 459593 2018-01-21 11:55:37Z sunpoet $
+# $FreeBSD: head/security/rubygem-rbnacl-libsodium/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	rbnacl-libsodium
 PORTVERSION=	1.0.16
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Port rbnacl with bundled libsodium
 
 LICENSE=	MIT

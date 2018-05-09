@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-health_check26/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/devel/rubygem-health_check26/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	health_check
 PORTVERSION=	2.6.0
@@ -6,7 +6,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	26
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Simple health check of Rails app for uptime monitoring
 
 LICENSE=	MIT

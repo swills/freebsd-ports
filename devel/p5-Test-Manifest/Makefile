@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/p5-Test-Manifest/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Test-Manifest/Makefile 469399 2018-05-08 19:36:44Z sunpoet $
 
 PORTNAME=	Test-Manifest
-PORTVERSION=	2.02
-PORTREVISION=	1
+PORTVERSION=	2.021
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -10,9 +9,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Perl module to interact with a t/test_manifest file
 
-LICENSE=	ART10 GPLv1+
-LICENSE_COMB=	dual
+LICENSE=	ART20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

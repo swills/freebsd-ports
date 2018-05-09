@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-hamlit26/Makefile 464670 2018-03-16 09:56:45Z jhale $
+# $FreeBSD: head/www/rubygem-hamlit26/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	hamlit
 PORTVERSION=	2.6.2
@@ -6,7 +6,7 @@ CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	26
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	High Performance Haml Implementation
 
 LICENSE=	MIT

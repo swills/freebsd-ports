@@ -1,9 +1,8 @@
 # Created by: Vsevolod Stakhov <vsevolod@FreeBSD.org>
-# $FreeBSD: head/security/libressl/Makefile 468674 2018-04-30 08:08:49Z brnrd $
+# $FreeBSD: head/security/libressl/Makefile 469245 2018-05-06 19:08:25Z brnrd $
 
 PORTNAME=	libressl
-PORTVERSION=	2.7.2
-PORTREVISION=	1
+PORTVERSION=	2.7.3
 CATEGORIES=	security devel
 MASTER_SITES=	OPENBSD/LibreSSL
 
@@ -27,7 +26,7 @@ CONFLICTS_INSTALL=	libressl-devel-[0-9]* \
 NC_CONFIGURE_ENABLE=	nc
 
 GNU_CONFIGURE=	yes
-USES=		autoreconf cpe libtool pathfix pkgconfig
+USES=		cpe libtool pathfix pkgconfig
 USE_LDCONFIG=	yes
 OPTIONS_SUB=	yes
 CFLAGS+=	-fpic -DPIC -Wl,-rpath,${PREFIX}/lib -Wl,--as-needed

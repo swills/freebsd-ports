@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/pdfpc/Makefile 468915 2018-05-03 09:11:23Z bapt $
+# $FreeBSD: head/graphics/pdfpc/Makefile 469365 2018-05-08 08:30:46Z bapt $
 
 PORTNAME=	pdfpc
-DISTVERSION=	4.1.1
+DISTVERSION=	4.1.2
 CATEGORIES=	graphics
 DISTVERSIONPREFIX=	v
 
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libgee-0.8.so:devel/libgee \
 
 USE_GITHUB=	yes
 
-USES=		cmake gnome pkgconfig pathfix
+USES=		cmake gnome pkgconfig
 USE_GNOME=	gtk30
 USE_GSTREAMER1=	yes
 

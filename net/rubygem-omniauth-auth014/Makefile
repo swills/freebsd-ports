@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-omniauth-auth014/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/net/rubygem-omniauth-auth014/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	omniauth-auth0
 PORTVERSION=	1.4.2
@@ -6,7 +6,7 @@ CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	14
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Authentication broker supporting different identity providers
 
 LICENSE=	MIT

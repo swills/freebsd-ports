@@ -1,8 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc8-devel/Makefile 468534 2018-04-28 10:36:38Z gerald $
+# $FreeBSD: head/lang/gcc8-devel/Makefile 469247 2018-05-06 19:35:44Z gerald $
 
 PORTNAME=	gcc
-PORTVERSION=	8.0.1.s20180422
+PORTVERSION=	8.1.1.s20180504
 CATEGORIES=	lang
 MASTER_SITES=	GCC/snapshots/${DIST_VERSION}
 PKGNAMESUFFIX=	${SUFFIX}-devel
@@ -25,6 +25,8 @@ RUN_DEPENDS+=	${LOCALBASE}/bin/as:devel/binutils
 .if defined(MAINTAINER_MODE)
 BUILD_DEPENDS+=	runtest:misc/dejagnu
 .endif
+
+CONFLICTS=	gcc8-8.*
 
 CPE_VENDOR=	gnu
 CPE_VERSION=	${GCC_VERSION}

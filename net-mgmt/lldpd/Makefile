@@ -1,8 +1,8 @@
 # Created by: Mathieu Simon <freebsd@simweb.ch>
-# $FreeBSD: head/net-mgmt/lldpd/Makefile 465349 2018-03-23 11:53:11Z linimon $
+# $FreeBSD: head/net-mgmt/lldpd/Makefile 469237 2018-05-06 16:25:15Z krion $
 
 PORTNAME=	lldpd
-PORTVERSION=	0.9.9
+PORTVERSION=	1.0.1
 CATEGORIES=	net-mgmt
 MASTER_SITES=	http://media.luffy.cx/files/${PORTNAME}/ \
 		http://mirror.1labs.ch/${PORTNAME}/

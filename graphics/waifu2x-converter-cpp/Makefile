@@ -1,9 +1,9 @@
-# $FreeBSD: head/graphics/waifu2x-converter-cpp/Makefile 457776 2018-01-01 13:42:54Z jbeich $
+# $FreeBSD: head/graphics/waifu2x-converter-cpp/Makefile 469421 2018-05-09 01:44:50Z swills $
 
 PORTNAME=	waifu2x-converter-cpp
 DISTVERSION=	1.0.0-410
 DISTVERSIONSUFFIX=	-g5e5ac35
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics
 
 MAINTAINER=	jbeich@FreeBSD.org

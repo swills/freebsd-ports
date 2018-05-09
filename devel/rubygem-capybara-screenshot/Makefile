@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-capybara-screenshot/Makefile 467354 2018-04-14 23:59:06Z sunpoet $
+# $FreeBSD: head/devel/rubygem-capybara-screenshot/Makefile 469318 2018-05-07 19:20:44Z sunpoet $
 
 PORTNAME=	capybara-screenshot
-PORTVERSION=	1.0.19
+PORTVERSION=	1.0.21
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

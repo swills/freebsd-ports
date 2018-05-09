@@ -1,8 +1,8 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/devel/libvirt/Makefile 466705 2018-04-07 03:00:49Z novel $
+# $FreeBSD: head/devel/libvirt/Makefile 469217 2018-05-06 14:14:02Z novel $
 
 PORTNAME=	libvirt
-PORTVERSION=	4.2.0
+PORTVERSION=	4.3.0
 CATEGORIES=	devel
 MASTER_SITES=	http://libvirt.org/sources/ \
 		ftp://libvirt.org/libvirt/
@@ -52,7 +52,7 @@ GNUTLS_LIB_DEPENDS=	libgnutls.so:security/gnutls
 
 NLS_USES=	gettext
 NLS_CONFIGURE_ENABLE=	nls
-NLS_CONFIGURE_ON=	--with-libintl-prefix=${LOCALBASE}
+NLS_CFLAGS=	-I${LOCALBASE}/include
 
 NSS_CONFIGURE_WITH=	nss-plugin
 
@@ -105,7 +105,7 @@ USE_PERL5=	build
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 TEST_TARGET=	check
-SHLIB_VER=	0.4002.0
+SHLIB_VER=	0.4003.0
 PLIST_SUB+=	PORTVERSION="-${PORTVERSION}" \
 		SHLIB_VER=${SHLIB_VER}
 PORTDOCS=	*

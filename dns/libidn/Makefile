@@ -1,9 +1,8 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/dns/libidn/Makefile 463287 2018-03-01 09:03:03Z amdmi3 $
+# $FreeBSD: head/dns/libidn/Makefile 469353 2018-05-08 05:04:15Z yuri $
 
 PORTNAME=	libidn
-PORTVERSION=	1.33
-PORTREVISION=	1
+DISTVERSION=	1.34
 CATEGORIES=	dns
 MASTER_SITES=	GNU
 

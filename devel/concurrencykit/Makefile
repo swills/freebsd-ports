@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/concurrencykit/Makefile 455165 2017-11-30 05:55:17Z linimon $
+# $FreeBSD: head/devel/concurrencykit/Makefile 469431 2018-05-09 05:41:29Z lwhsu $
 
 PORTNAME=	concurrencykit
-PORTVERSION=	0.5.1
+PORTVERSION=	0.6.0
 CATEGORIES=	devel
 MASTER_SITES=	http://concurrencykit.org/releases/ \
 		http://repnop.org/releases/

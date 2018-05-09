@@ -1,5 +1,5 @@
 # Created by: Craig Leres <leres@freebsd.org>
-# $FreeBSD: head/devel/xtensa-esp32-elf/Makefile 469034 2018-05-04 16:10:13Z leres $
+# $FreeBSD: head/devel/xtensa-esp32-elf/Makefile 469294 2018-05-07 15:34:42Z leres $
 
 PORTNAME=	xtensa-esp32-elf
 DISTVERSION=	1.22.0.g20171219
@@ -66,6 +66,8 @@ post-extract:
 	${LN} -s ${DISTDIR}/${F:C/:source[0-9]+$//} \
 	    ${BUILD_WRKSRC}/.build/tarballs
 .endfor
+	echo CT_LOG_PROGRESS_BAR=n >> \
+	    ${BUILD_WRKSRC}/samples/${PORTNAME}/crosstool.config
 
 do-configure:
 	cd ${BUILD_WRKSRC} && ./bootstrap
@@ -81,7 +83,9 @@ do-configure:
 do-build:
 	cd ${BUILD_WRKSRC} && ${SETENV} ${BUILD_ENV} ./ct-ng build
 	cd ${BUILD_WRKSRC}/builds/${PORTNAME} && \
-	    ${RM} build.log.bz2 lib/charset.alias
+	    ${CHMOD} +w . lib && \
+	    ${RM} build.log.bz2 lib/charset.alias && \
+	    ${CHMOD} -w . lib
 
 do-install:
 	cd ${BUILD_WRKSRC}/builds && \

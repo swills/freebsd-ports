@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/lxi-tools/Makefile 464653 2018-03-16 06:35:59Z yuri $
+# $FreeBSD: head/misc/lxi-tools/Makefile 469257 2018-05-06 23:19:52Z yuri $
 
 PORTNAME=	lxi-tools
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.19
+DISTVERSION=	1.20
 CATEGORIES=	misc
 
 MAINTAINER=	dg@syrec.org
@@ -26,6 +26,7 @@ PORTDOCS=	README
 
 PLIST_FILES=	bin/lxi \
 		etc/bash_completion.d/lxi \
+		etc/bash_completion.d/lxi.snap \
 		man/man1/lxi.1.gz
 
 OPTIONS_DEFINE=	DOCS GUI

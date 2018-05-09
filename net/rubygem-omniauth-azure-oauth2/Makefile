@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/net/rubygem-omniauth-azure-oauth2/Makefile 457888 2018-01-02 15:34:24Z sunpoet $
+# $FreeBSD: head/net/rubygem-omniauth-azure-oauth2/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	omniauth-azure-oauth2
 PORTVERSION=	0.0.9
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Azure OAuth2 Strategy for OmniAuth
 
 LICENSE=	MIT

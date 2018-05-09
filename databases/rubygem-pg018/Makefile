@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/rubygem-pg018/Makefile 465602 2018-03-26 15:10:49Z mfechner $
+# $FreeBSD: head/databases/rubygem-pg018/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	pg
 PORTVERSION=	0.18.4
@@ -6,7 +6,7 @@ CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	018
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Ruby interface to PostgreSQL library
 
 LICENSE=	BSD2CLAUSE RUBY

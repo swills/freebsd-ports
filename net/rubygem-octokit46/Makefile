@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-octokit46/Makefile 466551 2018-04-05 12:18:47Z mfechner $
+# $FreeBSD: head/net/rubygem-octokit46/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	octokit
 PORTVERSION=	4.6.2
@@ -6,7 +6,7 @@ CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	46
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Simple wrapper for the GitHub API
 
 LICENSE=	MIT

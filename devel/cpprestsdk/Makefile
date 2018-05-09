@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cpprestsdk/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/devel/cpprestsdk/Makefile 469346 2018-05-08 00:50:50Z jbeich $
 
 PORTNAME=	cpprestsdk
 PORTVERSION=	2.9.1
@@ -20,5 +20,6 @@ GH_ACCOUNT=	Microsoft
 USES=		cmake compiler:c++11-lib ssl
 USE_LDCONFIG=	yes
 WRKSRC_SUBDIR=	Release
+CMAKE_OFF=	BUILD_SAMPLES BUILD_TESTS
 
 .include <bsd.port.mk>

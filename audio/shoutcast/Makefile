@@ -1,5 +1,5 @@
 # Created by: Jarrod Sayers <jarrod@downtools.com.au>
-# $FreeBSD: head/audio/shoutcast/Makefile 430947 2017-01-09 13:16:49Z amdmi3 $
+# $FreeBSD: head/audio/shoutcast/Makefile 469328 2018-05-07 19:44:01Z sbruno $
 
 PORTNAME=	shoutcast
 PORTVERSION=	2.4.7.256
@@ -13,6 +13,8 @@ MAINTAINER=	sbruno@FreeBSD.org
 COMMENT=	SHOUTcast Distributed Network Audio Server
 
 RESTRICTED=	redistribution of software is not permitted
+DEPRECATED=	Upstream vendor no longer provides releases
+EXPIRATION_DATE=2018-12-31
 IA32_BINARY_PORT=	yes
 
 USES=		dos2unix shebangfix

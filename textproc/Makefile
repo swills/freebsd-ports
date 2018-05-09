@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 468711 2018-04-30 16:16:27Z sunpoet $
+# $FreeBSD: head/textproc/Makefile 469196 2018-05-06 12:31:02Z lwhsu $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -70,6 +70,7 @@
     SUBDIR += bsdsort
     SUBDIR += btparse
     SUBDIR += c2html
+    SUBDIR += c2man
     SUBDIR += ca-aspell
     SUBDIR += catdoc
     SUBDIR += cdif

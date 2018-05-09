@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/sekrit-twc-zimg/Makefile 461280 2018-02-08 22:40:00Z jbeich $
+# $FreeBSD: head/graphics/sekrit-twc-zimg/Makefile 469338 2018-05-07 22:29:46Z jbeich $
 
 PORTNAME=	zimg
 PORTVERSION=	2.7.4
@@ -19,8 +19,6 @@ CONFLICTS_INSTALL=	zimg-[0-9]* # include/zimg.h
 
 USES=		autoreconf compiler:c++11-lib gmake libtool pathfix
 EXTRACT_AFTER_ARGS=	--exclude test/extra
-EXTRA_PATCHES+=	${EXTRA_PATCHES_${OPSYS}_${OSREL}}
-EXTRA_PATCHES_FreeBSD_10.3=	${PATCHDIR}/extra-patch-src_zimg_api_zimg.cpp
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-D_GLIBCXX_USE_C99 -D_GLIBCXX_USE_C99_MATH_TR1 \
 		-D_DECLARE_C99_LDBL_MATH # XXX ports/193528

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/textproc/apache-solr/Makefile 452309 2017-10-17 21:44:42Z ler $
+# $FreeBSD: head/textproc/apache-solr/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	apache-solr
 PORTVERSION=	7.1.0
@@ -7,7 +7,7 @@ CATEGORIES=	textproc java
 MASTER_SITES=	APACHE/lucene/solr/${PORTVERSION}
 DISTNAME=	solr-${PORTVERSION}
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	High performance search server built using Lucene Java
 
 LICENSE=	APACHE20

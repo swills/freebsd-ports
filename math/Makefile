@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 468563 2018-04-28 19:02:57Z yuri $
+# $FreeBSD: head/math/Makefile 469220 2018-05-06 14:35:51Z pi $
 #
 
     COMMENT = Mathematics
@@ -332,6 +332,7 @@
     SUBDIR += mingw32-libgmp
     SUBDIR += minisat
     SUBDIR += miracl
+    SUBDIR += mlpack
     SUBDIR += moo
     SUBDIR += mosesdecoder
     SUBDIR += mpc

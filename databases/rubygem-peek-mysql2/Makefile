@@ -1,11 +1,11 @@
-# $FreeBSD: head/databases/rubygem-peek-mysql2/Makefile 455591 2017-12-05 16:44:09Z tz $
+# $FreeBSD: head/databases/rubygem-peek-mysql2/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	peek-mysql2
 PORTVERSION=	1.2.0
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Take a peek into the MySQL queries made
 
 LICENSE=	MIT

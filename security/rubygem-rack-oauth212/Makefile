@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-rack-oauth212/Makefile 466443 2018-04-04 16:27:49Z mfechner $
+# $FreeBSD: head/security/rubygem-rack-oauth212/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	rack-oauth2
 PORTVERSION=	1.2.3
@@ -6,7 +6,7 @@ CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	12
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	OAuth 2.0 Server & Client Library
 
 LICENSE=	MIT

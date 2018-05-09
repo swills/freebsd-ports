@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-sentry-raven25/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/devel/rubygem-sentry-raven25/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	sentry-raven
 PORTVERSION=	2.5.3
@@ -6,7 +6,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	25
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Client interface for the Sentry error logger
 
 LICENSE=	APACHE20

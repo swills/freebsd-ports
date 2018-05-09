@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-gettext_i18n_rails_js12/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/devel/rubygem-gettext_i18n_rails_js12/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	gettext_i18n_rails_js
 PORTVERSION=	1.2.0
@@ -6,7 +6,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	12
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Make gettext_i18n_rails .po files as JSON
 
 LICENSE=	MIT

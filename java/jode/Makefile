@@ -1,5 +1,5 @@
 # Created by: mi
-# $FreeBSD: head/java/jode/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/java/jode/Makefile 469183 2018-05-06 08:33:58Z amdmi3 $
 
 PORTNAME=	jode
 PORTVERSION=	1.1.1.1
@@ -19,8 +19,10 @@ USE_JAVA=	yes
 JAVA_VERSION=	1.6+
 NEED_JAVAC=	yes
 GNU_CONFIGURE=	yes
-USES=		gmake
+USES=		gmake perl5:test shebangfix
+SHEBANG_FILES=	${WRKSRC}/jcpp
 MAKE_JOBS_UNSAFE=	yes
+TEST_TARGET=	check
 
 GETOPT_JAR=	${JAVALIBDIR}/java-getopt.jar
 CLASSLIB=	${JAVA_CLASSES}:${GETOPT_JAR}
@@ -47,8 +49,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/${PORTNAME}-${VENDOR_VERSION}.jar \
 		${STAGEDIR}/${JAVAJARDIR}/
 	${INSTALL_SCRIPT} ${WRKDIR}/jode ${STAGEDIR}/${PREFIX}/bin/
-
-test check regression-test: build
-	${MAKE} -C ${WRKSRC}/test check-TESTS
 
 .include <bsd.port.mk>

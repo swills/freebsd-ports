@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-ruby-prof016/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/devel/rubygem-ruby-prof016/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	ruby-prof
 PORTVERSION=	0.16.2
@@ -6,7 +6,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	016
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Fast profiler for Ruby
 
 LICENSE=	BSD2CLAUSE

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-attr_encrypted30/Makefile 462398 2018-02-20 15:19:25Z tz $
+# $FreeBSD: head/security/rubygem-attr_encrypted30/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	attr_encrypted
 PORTVERSION=	3.0.3
@@ -6,7 +6,7 @@ CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	30
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Generates attr_accessors that encrypt and decrypt attributes
 
 LICENSE=	MIT

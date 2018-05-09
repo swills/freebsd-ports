@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/ksql/Makefile 464057 2018-03-10 09:28:53Z tobik $
+# $FreeBSD: head/devel/ksql/Makefile 469362 2018-05-08 06:06:53Z tobik $
 
 PORTNAME=	ksql
-PORTVERSION=	0.2.5
+PORTVERSION=	0.3.1
 CATEGORIES=	devel databases
 MASTER_SITES=	http://kristaps.bsd.lv/ksql/snapshots/
 

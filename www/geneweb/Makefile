@@ -1,9 +1,10 @@
 # Created by: Hubert Tournier <hubert@frbsd.org>
-# $FreeBSD: head/www/geneweb/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/geneweb/Makefile 469287 2018-05-07 13:26:23Z pi $
 
 PORTNAME=	geneweb
 DISTVERSIONPREFIX=	distrib-
 DISTVERSION=	6-08
+PORTREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	alex@stangl.us
@@ -12,10 +13,12 @@ COMMENT=	Advanced genealogy software
 LICENSE=	GPLv2
 
 BUILD_DEPENDS=	ocamlc:lang/ocaml \
-		camlp5:devel/ocaml-camlp5
+		camlp5:devel/ocaml-camlp5 \
+		ocamlfind:devel/ocaml-findlib
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	geneanet
+GH_ACCOUNT=	geneweb
+GH_TAGNAME=	13c850a0cc3973daf7ae3e0772a1621f84052041
 
 HAS_CONFIGURE=	yes
 MAKE_JOBS_UNSAFE=	yes
