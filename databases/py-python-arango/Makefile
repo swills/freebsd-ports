@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/py-python-arango/Makefile 457840 2018-01-02 10:38:21Z yuri $
+# $FreeBSD: head/databases/py-python-arango/Makefile 469379 2018-05-08 16:12:03Z yuri $
 
 PORTNAME=	python-arango
-DISTVERSION=	3.12.1
+DISTVERSION=	4.0.0
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -10,7 +10,10 @@ MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Python driver for ArangoDB
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
 

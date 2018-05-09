@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/rubygem-peek-host/Makefile 455591 2017-12-05 16:44:09Z tz $
+# $FreeBSD: head/devel/rubygem-peek-host/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	peek-host
 PORTVERSION=	1.0.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Take a peek into the host which served your Rails request
 
 LICENSE=	MIT

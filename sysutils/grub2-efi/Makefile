@@ -1,5 +1,5 @@
 # Created by: kmoore@FreeBSD.org
-# $FreeBSD: head/sysutils/grub2-efi/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/sysutils/grub2-efi/Makefile 469306 2018-05-07 18:05:48Z kmoore $
 
 PORTNAME=	grub2-efi
 PORTVERSION=	2.02
@@ -9,7 +9,7 @@ MASTER_SITES=	http://www.pcbsd.org/~kris/software/ \
 		ftp://ftp.pcbsd.org/pub/software/
 DISTNAME=	grub-${PORTVERSION}_7
 
-MAINTAINER=	kmoore@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Multiboot EFI boot loader
 
 LICENSE=	GPLv3

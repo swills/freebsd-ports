@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-version_sorter21/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/textproc/rubygem-version_sorter21/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	version_sorter
 PORTVERSION=	2.1.0
@@ -6,7 +6,7 @@ CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	21
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Fast sorting of version strings
 
 LICENSE=	MIT

@@ -1,8 +1,8 @@
 # Created by: David O'Brien <obrien@FreeBSD.org>
-# $FreeBSD: head/sysutils/lsof/Makefile 465642 2018-03-26 22:14:29Z ler $
+# $FreeBSD: head/sysutils/lsof/Makefile 469248 2018-05-06 19:40:16Z ler $
 
 PORTNAME=	lsof
-DISTVERSION=	4.91
+DISTVERSION=	4.92A
 PORTEPOCH=	8
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/ \
@@ -19,7 +19,7 @@ LICENSE_FILE=	${FILESDIR}/LICENSE
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 #Please leave the below line in for the next clean up.
-#FIXUP_RELEASE=	YES
+FIXUP_RELEASE=	YES
 .if defined(FIXUP_RELEASE)
 DISTNAME_SUFFIX=.freebsd
 .else

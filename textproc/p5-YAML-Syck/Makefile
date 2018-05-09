@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/textproc/p5-YAML-Syck/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/textproc/p5-YAML-Syck/Makefile 469185 2018-05-06 09:03:58Z amdmi3 $
 
 PORTNAME=	YAML-Syck
 PORTVERSION=	1.27
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
 COMMENT=	Fast, lightweight YAML and JSON loader and dumper
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		perl5
 USE_PERL5=	configure

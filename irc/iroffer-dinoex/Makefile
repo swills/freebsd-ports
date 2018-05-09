@@ -1,8 +1,8 @@
-# $FreeBSD: head/irc/iroffer-dinoex/Makefile 429468 2016-12-25 23:11:36Z dinoex $
+# $FreeBSD: head/irc/iroffer-dinoex/Makefile 469430 2018-05-09 05:37:54Z dinoex $
 
 PORTNAME=	iroffer
 PORTVERSION=	3.30
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	irc
 MASTER_SITES=	http://iroffer.dinoex.net/
 PKGNAMESUFFIX=	-dinoex${PKGNAMESUFFIX2}

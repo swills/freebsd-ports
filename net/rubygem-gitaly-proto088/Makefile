@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-gitaly-proto088/Makefile 467209 2018-04-13 06:15:09Z mfechner $
+# $FreeBSD: head/net/rubygem-gitaly-proto088/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	gitaly-proto
 PORTVERSION=	0.88.0
@@ -7,7 +7,7 @@ CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	088
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Protobuf specifications and client libraries for Gitaly
 
 LICENSE=	MIT

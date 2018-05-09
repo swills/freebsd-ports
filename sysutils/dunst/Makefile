@@ -1,8 +1,8 @@
 # Created by: Rod Person <rodperson@rodperson.com>
-# $FreeBSD: head/sysutils/dunst/Makefile 458679 2018-01-10 19:17:19Z swills $
+# $FreeBSD: head/sysutils/dunst/Makefile 469423 2018-05-09 02:30:49Z swills $
 
 PORTNAME=	dunst
-PORTVERSION=	1.3.0
+PORTVERSION=	1.3.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/libkface/Makefile 461375 2018-02-10 10:29:51Z tcberner $
+# $FreeBSD: head/graphics/libkface/Makefile 469420 2018-05-09 01:10:11Z swills $
 
 PORTNAME=	libkface
 PORTVERSION=	${KDE4_APPLICATIONS_VERSION}
@@ -9,6 +9,9 @@ DIST_SUBDIR=	KDE/${PORTVERSION}
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE4 library for face recognition
+
+DEPRECATED=	No longer maintained upstream
+EXPIRATION_DATE=	2018-06-07
 
 LICENSE=	GPLv2+ LGPL20+
 LICENSE_COMB=	multi

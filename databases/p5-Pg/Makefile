@@ -1,5 +1,5 @@
 # Created by: James FitzGibbon <jfitz@FreeBSD.org>
-# $FreeBSD: head/databases/p5-Pg/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/databases/p5-Pg/Makefile 469205 2018-05-06 12:49:54Z sunpoet $
 
 PORTNAME=	Pg
 PORTVERSION=	2.1.1
@@ -12,6 +12,9 @@ DIST_SUBDIR=	postgresql
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Interface for using perl5 to access PostgreSQL databases
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 USES=		perl5 pgsql
 USE_PERL5=	configure

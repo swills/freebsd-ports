@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/cad/opencascade/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/cad/opencascade/Makefile 469338 2018-05-07 22:29:46Z jbeich $
 
 PORTNAME=	opencascade
 PORTVERSION=	7.2.0
@@ -82,11 +82,6 @@ DOXYGEN_BUILD_DEPENDS=	bash:shells/bash		\
 DOXYGEN_RUN_DEPENDS=	${LOCALBASE}/www/MathJax/MathJax.js:www/mathjax
 
 .include <bsd.port.options.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1003506
-# undefined reference to `__cxa_thread_atexit' - see PR 192320
-BROKEN=	undefined reference to __cxa_thread_atexit
-.endif
 
 .if ${ARCH} == "i386"
 BITS=	32

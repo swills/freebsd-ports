@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-asciidoctor-plantuml007/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/textproc/rubygem-asciidoctor-plantuml007/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	asciidoctor-plantuml
 PORTVERSION=	0.0.7
@@ -6,7 +6,7 @@ CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	007
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Asciidoctor PlantUML extension
 
 LICENSE=	MIT

@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/fontconfig/Makefile 464048 2018-03-10 07:47:23Z ume $
+# $FreeBSD: head/x11-fonts/fontconfig/Makefile 469428 2018-05-09 03:50:45Z lwhsu $
 
 PORTNAME=	fontconfig
-PORTVERSION=	2.12.1
-PORTREVISION?=	3
+PORTVERSION=	2.12.6
+PORTREVISION?=	0
 PORTEPOCH?=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://www.freedesktop.org/software/fontconfig/release/
@@ -14,7 +14,7 @@ COMMENT=	XML-based font configuration API for X Windows
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		tar:bzip2
+USES=		gperf tar:bzip2
 
 .if !defined(REFERENCE_PORT)
 

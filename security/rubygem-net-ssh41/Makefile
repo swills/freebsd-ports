@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-net-ssh41/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/security/rubygem-net-ssh41/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	net-ssh
 PORTVERSION=	4.1.0
@@ -6,7 +6,7 @@ CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	41
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Non-interactive SSH processing
 
 LICENSE=	MIT

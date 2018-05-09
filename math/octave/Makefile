@@ -1,9 +1,9 @@
 # Created by: chuckr@FreeBSD.org
-# $FreeBSD: head/math/octave/Makefile 469170 2018-05-06 00:24:00Z stephen $
+# $FreeBSD: head/math/octave/Makefile 469260 2018-05-07 00:34:29Z stephen $
 
 PORTNAME=	octave
 PORTVERSION=	${OCTAVE_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math java
 MASTER_SITES=	GNU
 
@@ -33,7 +33,7 @@ LIB_DEPENDS=	libGraphicsMagick.so:graphics/GraphicsMagick \
 		libumfpack.so:math/suitesparse \
 		libglpk.so:math/glpk \
 		libgl2ps.so:print/gl2ps \
-		libqscintilla2_qt4.so:devel/qscintilla2 \
+		libqscintilla2_qt5.so:devel/qscintilla2-qt5 \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
 		libdrm.so:graphics/libdrm \
@@ -48,7 +48,8 @@ USE_TEX=	dvipsk:build formats:build
 GNU_CONFIGURE=	yes
 USE_JAVA=	yes
 JAVA_VERSION=	1.7+
-USE_QT4=	corelib gui network opengl moc_build qmake_build rcc_build uic_build linguist_build help help-tools
+USE_QT5=	core gui help network opengl \
+		qmake_build buildtools_build linguist_build
 USE_XORG=	x11 xext xfixes xft
 USE_GL=		gl glu
 
@@ -71,7 +72,7 @@ CONFIGURE_ARGS=	--host=${GNU_HOST} \
 		--enable-shared \
 		--disable-jit \
 		--disable-openmp \
-		--with-qt=4 \
+		--with-qt=5 \
 		--with-OSMesa-includedir=${LOCALBASE}/include/GL \
 		--with-OSMesa-libdir=${LOCALBASE}/lib
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-p2p/transmission-cli/Makefile 468780 2018-05-01 19:03:18Z rene $
+# $FreeBSD: head/net-p2p/transmission-cli/Makefile 469430 2018-05-09 05:37:54Z dinoex $
 
 PORTNAME=	transmission
 PORTVERSION=	2.93
-PORTREVISION?=	0
+PORTREVISION?=	1
 CATEGORIES?=	net-p2p
 MASTER_SITES=	https://github.com/transmission/transmission-releases/raw/master/ \
 		http://transmission.cachefly.net/

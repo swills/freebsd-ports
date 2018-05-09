@@ -1,8 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/databases/iowow/Makefile 467312 2018-04-14 12:06:35Z danfe $
+# $FreeBSD: head/databases/iowow/Makefile 469184 2018-05-06 09:02:02Z danfe $
 
 PORTNAME=	iowow
-PORTVERSION=	1.0.5
+PORTVERSION=	1.1.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 
@@ -11,17 +11,11 @@ COMMENT=	Persistent key-value database engine
 
 LICENSE=	MIT
 
-ONLY_FOR_ARCHS=	amd64 i386
-ONLY_FOR_ARCHS_REASON=	invokes x86 assembler
-
 USES=		cmake:outsource compiler:c11
 USE_GITHUB=	yes
 GH_ACCOUNT=	Softmotions
 USE_LDCONFIG=	yes
 
 PORTDOCS=	Changelog README
-
-post-patch:
-	@${REINPLACE_CMD} -e '/sizeof(size_t)/d' ${WRKSRC}/src/kv/iwkv.c
 
 .include <bsd.port.mk>

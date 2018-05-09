@@ -1,7 +1,7 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/graphics/opencv-core/Makefile 438490 2017-04-14 05:30:25Z jbeich $
+# $FreeBSD: head/graphics/opencv-core/Makefile 469420 2018-05-09 01:10:11Z swills $
 
-PORTREVISION=	1
+PORTREVISION=	0
 PKGNAMESUFFIX=	-${OCV_SLAVE}
 
 COMMENT=	OpenCV core libraries

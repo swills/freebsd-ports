@@ -1,5 +1,5 @@
 # Created by: Michael Reifenberger <mr@FreeBSD.org>
-# $FreeBSD: head/cad/openscad-devel/Makefile 468632 2018-04-29 16:19:44Z tcberner $
+# $FreeBSD: head/cad/openscad-devel/Makefile 469338 2018-05-07 22:29:46Z jbeich $
 
 PORTNAME=	openscad
 PORTVERSION=	2018.04.19
@@ -46,11 +46,5 @@ QMAKE_ARGS+=	VERSION=${PORTVERSION} \
 post-patch:
 	@${REINPLACE_CMD} -e 's,share/man,man,' \
 		${WRKSRC}/openscad.pro
-
-.include <bsd.port.options.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1003506
-BROKEN=		no __cxa_thread_atexit() support in FreeBSD libc < 10.4
-.endif
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-gon61/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/www/rubygem-gon61/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	gon
 PORTVERSION=	6.1.0
@@ -6,7 +6,7 @@ CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	61
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Framework to pass data to JS easily
 
 LICENSE=	MIT

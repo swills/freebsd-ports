@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-flipper011/Makefile 461920 2018-02-15 12:48:44Z tz $
+# $FreeBSD: head/devel/rubygem-flipper011/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	flipper
 PORTVERSION=	0.11.0
@@ -6,7 +6,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	011
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Act of enabling/disabling features in your application
 
 LICENSE=	MIT

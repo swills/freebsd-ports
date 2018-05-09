@@ -1,12 +1,12 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab/Makefile 468821 2018-05-02 10:43:23Z mfechner $
+# $FreeBSD: head/www/gitlab/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	gitlab
 PORTVERSION=	10.6.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www devel
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Web GUI for managing git repositories
 
 LICENSE=	MIT

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-rails-i18n-4/Makefile 461907 2018-02-15 12:47:16Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rails-i18n-4/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	rails-i18n
 PORTVERSION=	4.0.9
@@ -7,7 +7,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-4
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Common locale data and translations for Rails i18n
 
 LICENSE=	MIT

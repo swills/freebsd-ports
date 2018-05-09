@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-fog-google0/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/net/rubygem-fog-google0/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	fog-google
 PORTVERSION=	0.6.0
@@ -6,7 +6,7 @@ CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	0
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Module for the 'fog' gem to support Google Cloud
 
 LICENSE=	MIT

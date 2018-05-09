@@ -1,5 +1,5 @@
 # Created by: Florent Thoumie <flz@FreeBSD.org>
-# $FreeBSD: head/www/chromium/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/www/chromium/Makefile 469338 2018-05-07 22:29:46Z jbeich $
 
 PORTNAME=	chromium
 PORTVERSION=	65.0.3325.181
@@ -210,14 +210,6 @@ TEST_DISTFILES=		${PORTNAME}-${DISTVERSION}-testdata${EXTRACT_SUFX}
 # build would fail without C_INCLUDE_PATH/CPLUS_INCLUDE_PATH env var set.
 MAKE_ENV+=	C_INCLUDE_PATH=${LOCALBASE}/include \
 		CPLUS_INCLUDE_PATH=${LOCALBASE}/include
-
-# Work around base r261801
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1004000
-GN_ARGS+=	extra_cxxflags="-D_LIBCPP_TRIVIAL_PAIR_COPY_CTOR=1"
-EXTRA_PATCHES+=	${FILESDIR}/extra-patch-libc++-old
-.else
-EXTRA_PATCHES+=	${FILESDIR}/extra-patch-libc++-new
-.endif
 
 .if !defined(GN_ONLY)
 pre-everything::

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-uglifier27/Makefile 467599 2018-04-17 11:28:50Z mfechner $
+# $FreeBSD: head/www/rubygem-uglifier27/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	uglifier
 PORTVERSION=	2.7.2
@@ -6,7 +6,7 @@ CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	27
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Ruby wrapper for UglifyJS JavaScript compressor
 
 LICENSE=	MIT

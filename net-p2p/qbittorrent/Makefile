@@ -1,5 +1,5 @@
 # Created by: Doug Barton <dougb@FreeBSD.org>
-# $FreeBSD: head/net-p2p/qbittorrent/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/net-p2p/qbittorrent/Makefile 469338 2018-05-07 22:29:46Z jbeich $
 
 PORTNAME=	qbittorrent
 DISTVERSION=	3.3.16
@@ -48,11 +48,6 @@ CONFIGURE_ARGS+=	--disable-gui
 .endif
 
 CONFIGURE_ARGS+=	CFLAGS="${CFLAGS}" CXXFLAGS="${CXXFLAGS}"
-
-post-patch:
-	@${REINPLACE_CMD} \
-		-e 's/#ifdef Q_OS_MAC/#if defined(Q_OS_MAC) || (defined(__FreeBSD__) \&\& __FreeBSD_version < 1003506)/' \
-		${WRKSRC}/src/base/utils/string.cpp
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/qbittorrent${SUFFIX}

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/erlang-clique/Makefile 435410 2017-03-04 14:28:35Z olgeni $
+# $FreeBSD: head/devel/erlang-clique/Makefile 469230 2018-05-06 15:37:22Z olgeni $
 
 PORTNAME=	clique
-PORTVERSION=	0.3.9
+PORTVERSION=	0.3.10
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

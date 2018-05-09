@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-omniauth-saml17/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/security/rubygem-omniauth-saml17/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	omniauth-saml
 PORTVERSION=	1.7.0
@@ -6,7 +6,7 @@ CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	17
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	OmniAuth strategy for SAML
 
 LICENSE=	MIT

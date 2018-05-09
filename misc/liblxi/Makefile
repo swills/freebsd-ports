@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/liblxi/Makefile 464652 2018-03-16 06:33:32Z yuri $
+# $FreeBSD: head/misc/liblxi/Makefile 469256 2018-05-06 23:17:30Z yuri $
 
 PORTNAME=	liblxi
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.12
+DISTVERSION=	1.13
 CATEGORIES=	misc
 
 MAINTAINER=	dg@syrec.org

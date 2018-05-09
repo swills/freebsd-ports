@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/rubygem-redis-namespace15/Makefile 461886 2018-02-15 12:36:27Z tz $
+# $FreeBSD: head/databases/rubygem-redis-namespace15/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	redis-namespace
 PORTVERSION=	1.5.3
@@ -6,7 +6,7 @@ CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	15
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Ruby client class for Redis with namespace support
 
 LICENSE=	MIT

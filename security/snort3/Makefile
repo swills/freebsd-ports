@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/security/snort3/Makefile 465089 2018-03-20 15:33:09Z dvl $
+# $FreeBSD: head/security/snort3/Makefile 469338 2018-05-07 22:29:46Z jbeich $
 
 PORTNAME=	snort
 DISTVERSION=	3.0.0-a4.243
@@ -59,12 +59,6 @@ TSC_CMAKE_BOOL=		ENABLE_TSC_CLOCK
 # FLATBUFFERS_LIB_DEPENDS=	libflatbuffers.so:devel/flatbuffers
 HYPERSCAN_LIB_DEPENDS=	libhs.so:devel/hyperscan
 
-.include <bsd.port.pre.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1004000
-EXTRA_PATCHES=	${PATCHDIR}/freebsd103_patch-src_memory_memory__allocator.h
-.endif
-
 CONFLICTS=	snort-2*
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

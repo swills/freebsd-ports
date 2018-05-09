@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/rubygem-rake-compiler-dock/Makefile 457708 2017-12-31 17:20:30Z swills $
+# $FreeBSD: head/devel/rubygem-rake-compiler-dock/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	rake-compiler-dock
 PORTVERSION=	0.6.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Cross compiler environment for building Windows binary gems
 
 LICENSE=	MIT

@@ -1,11 +1,11 @@
-# $FreeBSD: head/www/rubygem-toml-rb/Makefile 457868 2018-01-02 15:30:24Z swills $
+# $FreeBSD: head/www/rubygem-toml-rb/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	toml-rb
 PORTVERSION=	1.1.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	TOML parser using Citrus parsing library
 
 LICENSE=	MIT

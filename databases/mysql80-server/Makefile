@@ -1,5 +1,5 @@
 # Created by: Mahdi Mokhtari <mokhi64@gmail.com>
-# $FreeBSD: head/databases/mysql80-server/Makefile 468493 2018-04-27 19:46:06Z jbeich $
+# $FreeBSD: head/databases/mysql80-server/Makefile 469293 2018-05-07 15:25:36Z amdmi3 $
 
 PORTNAME?=		mysql
 PORTVERSION=		8.0.2
@@ -139,10 +139,6 @@ FEDERATED_SUB_LIST_OFF+=	FEDER=""
 .endif
 
 .include <bsd.port.options.mk>
-
-.if !defined(CLIENT_ONLY) && ${OPSYS} == FreeBSD && ${OSVERSION} < 1003506
-BROKEN=		no __cxa_thread_atexit() support in FreeBSD libc < 10.4
-.endif
 
 .if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200057
 SUB_LIST+=	LEGACY_LIMITS="@comment " MODERN_LIMITS=""

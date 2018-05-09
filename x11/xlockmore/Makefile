@@ -1,8 +1,9 @@
 # Created by: Scott Mace <smace@FreeBSD.org>
-# $FreeBSD: head/x11/xlockmore/Makefile 446631 2017-07-25 21:44:22Z jgh $
+# $FreeBSD: head/x11/xlockmore/Makefile 469303 2018-05-07 17:38:32Z amdmi3 $
 
 PORTNAME=	xlockmore
 PORTVERSION=	5.54
+PORTREVISION=	1
 CATEGORIES?=	x11
 MASTER_SITES=	http://www.sillycycle.com/xlock/ \
 		LOCAL/jgh/x11/${PORTNAME}/
@@ -159,11 +160,11 @@ pre-extract:
 
 post-patch:
 	@${REINPLACE_CMD} -e '/xglockrc/ s|PROGRAM|DATA|' ${WRKSRC}/xglock/Makefile.in
-.if ${OPSYS} == FreeBSD && ${OSVERSION} > 1003500
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1100000
 	@${REINPLACE_CMD} -e 's|/usr/games/fortune|/usr/bin/fortune|' ${WRKSRC}/modes/Makefile.in
 .endif
 
 post-configure:
-	${REINPLACE_CMD} -e 's/-lXdpms//g' ${WRKSRC}/modes/Makefile
+	@${REINPLACE_CMD} -e 's/-lXdpms//g' ${WRKSRC}/modes/Makefile
 
 .include <bsd.port.mk>

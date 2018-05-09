@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-wikicloth081/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/textproc/rubygem-wikicloth081/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	wikicloth
 PORTVERSION=	0.8.1
@@ -6,7 +6,7 @@ CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	081
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Ruby parser for the MediaWiki markup language
 
 LICENSE=	MIT

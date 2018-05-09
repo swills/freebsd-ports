@@ -1,10 +1,11 @@
 # Created by: krion
-# $FreeBSD: head/x11/xterm/Makefile 469074 2018-05-04 21:34:00Z ehaupt $
+# $FreeBSD: head/x11/xterm/Makefile 469275 2018-05-07 08:27:14Z ehaupt $
 
 PORTNAME=	xterm
 PORTVERSION=	333
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.invisible-island.net/xterm/:src1 \
+		https://invisible-mirror.net/archives/xterm/:src1 \
 		LOCAL/ehaupt:src1 LOCAL/ehaupt:src2
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}:src1 \
 		bsd-xterm-icons-${ICONVERSION}${EXTRACT_SUFX}:src2

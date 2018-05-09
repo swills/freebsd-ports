@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/math/freemat/Makefile 468325 2018-04-26 06:41:30Z yuri $
+# $FreeBSD: head/math/freemat/Makefile 469232 2018-05-06 15:49:39Z brooks $
 
 PORTNAME=	FreeMat
 PORTVERSION=	4.2
@@ -12,6 +12,9 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Numerical computing environment
 
 LICENSE=	GPLv2
+
+DEPRECATED=	Complex, unmaintained software with obsolete dependencies
+EXPIRATION_DATE=	2018-07-01
 
 BUILD_DEPENDS=	${LOCALBASE}/share/llvm33/cmake/LLVMConfig.cmake:devel/llvm33 \
 		${LOCALBASE}/llvm33/lib/libclang.a:lang/clang33

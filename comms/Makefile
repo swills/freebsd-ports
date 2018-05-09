@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/Makefile 462619 2018-02-22 19:03:17Z tcberner $
+# $FreeBSD: head/comms/Makefile 469278 2018-05-07 08:56:24Z mr $
 #
 
     COMMENT = Communication utilities
@@ -70,6 +70,7 @@
     SUBDIR += hidapi
     SUBDIR += hylafax
     SUBDIR += ibp
+    SUBDIR += inspectrum
     SUBDIR += java-commapi
     SUBDIR += java-commapi-freebsd
     SUBDIR += java-simple-serial-connector
@@ -94,6 +95,7 @@
     SUBDIR += libusbmuxd
     SUBDIR += linpsk
     SUBDIR += linrad
+    SUBDIR += liquid-dsp
     SUBDIR += lirc
     SUBDIR += locator
     SUBDIR += lrzsz

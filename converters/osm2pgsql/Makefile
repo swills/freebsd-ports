@@ -1,9 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/converters/osm2pgsql/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/converters/osm2pgsql/Makefile 469377 2018-05-08 14:36:08Z amdmi3 $
 
 PORTNAME=	osm2pgsql
-PORTVERSION=	0.94.0
-PORTREVISION=	2
+PORTVERSION=	0.96.0
 CATEGORIES=	converters geography
 
 MAINTAINER=	amdmi3@FreeBSD.org

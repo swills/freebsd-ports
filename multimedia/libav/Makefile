@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/libav/Makefile 466597 2018-04-05 20:13:33Z jhale $
+# $FreeBSD: head/multimedia/libav/Makefile 469421 2018-05-09 01:44:50Z swills $
 
 PORTNAME=	libav
 PORTVERSION=	12.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	multimedia audio ipv6 net
 MASTER_SITES=	http://libav.org/releases/
 
@@ -104,7 +104,7 @@ JACK_CONFIGURE_OFF=		--disable-indev=jack
 LAME_LIB_DEPENDS=		libmp3lame.so:audio/lame
 LAME_CONFIGURE_ENABLE=		libmp3lame
 
-OPENCV_LIB_DEPENDS=		libopencv_gpu.so:graphics/opencv
+OPENCV_LIB_DEPENDS=		libopencv_video.so:graphics/opencv
 OPENCV_CONFIGURE_ENABLE=	libopencv
 
 OPENJPEG_LIB_DEPENDS=		libopenjpeg.so:graphics/openjpeg15

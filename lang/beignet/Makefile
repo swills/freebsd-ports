@@ -1,5 +1,5 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/lang/beignet/Makefile 468502 2018-04-27 23:10:16Z jbeich $
+# $FreeBSD: head/lang/beignet/Makefile 469291 2018-05-07 15:23:49Z amdmi3 $
 
 PORTNAME=	beignet
 DISTVERSION=	1.3.2
@@ -63,12 +63,5 @@ do-test-TEST-on:
 		./flat_address_space; ./utest_run; )
 
 pre-install-TEST-on: do-test-TEST-on
-
-.include <bsd.port.options.mk>
-
-# gbe_bin_generater crashes in libc++ when built by clang++60
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1003513
-LLVMVER=	50
-.endif
 
 .include <bsd.port.mk>

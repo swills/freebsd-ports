@@ -1,9 +1,9 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/graphics/cimg/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/graphics/cimg/Makefile 469421 2018-05-09 01:44:50Z swills $
 
 PORTNAME=	cimg
 DISTVERSION=	2.2.2
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	3
 CATEGORIES=	graphics devel
 
@@ -62,7 +62,7 @@ LIB_DEPENDS+=	libcurl.so:ftp/curl			\
 		libIlmImf.so:graphics/OpenEXR		\
 		libgimp-2.0.so:graphics/gimp-app	\
 		libfftw3.so:math/fftw3			\
-		libopencv_legacy.so:graphics/opencv	\
+		libopencv_video.so:graphics/opencv	\
 		libopencv_core.so:graphics/opencv-core	\
 		libGraphicsMagick.so:graphics/GraphicsMagick
 USES+=		jpeg

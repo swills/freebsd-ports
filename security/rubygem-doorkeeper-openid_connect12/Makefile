@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-doorkeeper-openid_connect12/Makefile 466444 2018-04-04 16:29:53Z mfechner $
+# $FreeBSD: head/security/rubygem-doorkeeper-openid_connect12/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	doorkeeper-openid_connect
 PORTVERSION=	1.2.0
@@ -6,7 +6,7 @@ CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	12
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	OpenID Connect extension for Doorkeeper
 
 LICENSE=	MIT

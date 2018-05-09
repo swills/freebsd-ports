@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-github-linguist53/Makefile 467209 2018-04-13 06:15:09Z mfechner $
+# $FreeBSD: head/textproc/rubygem-github-linguist53/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	github-linguist
 PORTVERSION=	5.3.3
@@ -6,7 +6,7 @@ CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	53
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	GitHub Language detection
 
 LICENSE=	MIT

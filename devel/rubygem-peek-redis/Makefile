@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/rubygem-peek-redis/Makefile 455591 2017-12-05 16:44:09Z tz $
+# $FreeBSD: head/devel/rubygem-peek-redis/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	peek-redis
 PORTVERSION=	1.2.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Provide a peek into the Redis calls made
 
 LICENSE=	MIT

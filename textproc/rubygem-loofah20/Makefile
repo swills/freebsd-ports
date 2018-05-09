@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-loofah20/Makefile 467598 2018-04-17 11:24:32Z mfechner $
+# $FreeBSD: head/textproc/rubygem-loofah20/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	loofah
 PORTVERSION=	2.0.3
@@ -6,7 +6,7 @@ CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	20
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Library for manipulating HTML/XML documents and fragments
 
 LICENSE=	MIT

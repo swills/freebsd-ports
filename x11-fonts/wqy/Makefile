@@ -1,9 +1,9 @@
 # Created by: Dryice Liu <dryice@liu.com.cn>
-# $FreeBSD: head/x11-fonts/wqy/Makefile 434396 2017-02-19 06:57:06Z delphij $
+# $FreeBSD: head/x11-fonts/wqy/Makefile 469349 2018-05-08 03:46:29Z delphij $
 
 PORTNAME=	wqy-fonts
 PORTVERSION=	20100803
-PORTREVISION=	8
+PORTREVISION=	9
 PORTEPOCH=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	SF/wqy/wqy-bitmapfont/1.0.0-RC1:bitmapfont \

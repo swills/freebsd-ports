@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-recaptcha3/Makefile 461935 2018-02-15 16:59:19Z tz $
+# $FreeBSD: head/devel/rubygem-recaptcha3/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	recaptcha
 PORTVERSION=	3.4.0
@@ -6,7 +6,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	3
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Helpers for the reCAPTCHA API
 
 LICENSE=	MIT

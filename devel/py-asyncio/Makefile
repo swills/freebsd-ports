@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-asyncio/Makefile 388565 2015-06-05 03:54:01Z koobs $
+# $FreeBSD: head/devel/py-asyncio/Makefile 469366 2018-05-08 08:34:03Z amdmi3 $
 
 PORTNAME=	asyncio
 PORTVERSION=	3.4.3
@@ -15,8 +15,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		python:3.3+
 USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
 
-regression-test: build
+do-test:
 	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYDISTUTILS_SETUP} test
 
 .include <bsd.port.mk>

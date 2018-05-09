@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/mydumper/Makefile 462289 2018-02-19 10:29:19Z sunpoet $
+# $FreeBSD: head/databases/mydumper/Makefile 469197 2018-05-06 12:49:12Z sunpoet $
 
 PORTNAME=	mydumper
-PORTVERSION=	0.9.3
+PORTVERSION=	0.9.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 

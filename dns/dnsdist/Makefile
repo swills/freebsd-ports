@@ -1,5 +1,5 @@
 # Created by: Carlos J Puga Medina <cpm@fbsd.es>
-# $FreeBSD: head/dns/dnsdist/Makefile 468038 2018-04-22 16:39:18Z jbeich $
+# $FreeBSD: head/dns/dnsdist/Makefile 469297 2018-05-07 17:06:00Z amdmi3 $
 
 PORTNAME=	dnsdist
 DISTVERSION=	1.3.0
@@ -13,6 +13,7 @@ COMMENT=	Highly DNS-, DoS- and abuse-aware loadbalancer
 
 LICENSE=	GPLv2 UNLICENSE
 LICENSE_COMB=	multi
+LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING
 LICENSE_FILE_UNLICENSE=	${WRKSRC}/ext/incbin/UNLICENSE
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libatomic_ops.a:devel/libatomic_ops
@@ -42,8 +43,8 @@ OPTIONS_DEFAULT=	GNUTLS OPENSSL
 OPTIONS_MULTI=		TLS
 OPTIONS_MULTI_TLS=	GNUTLS OPENSSL
 
-FSTRM_DESC=	dnstap support (see dnstap.info)
-LUAJIT_DESC=	Use LuaJIT instead of Lua
+FSTRM_DESC=		dnstap support (see dnstap.info)
+LUAJIT_DESC=		Use LuaJIT instead of Lua
 
 FSTRM_LIB_DEPENDS=	libfstrm.so:devel/fstrm
 FSTRM_CONFIGURE_ENABLE=	fstrm
@@ -61,12 +62,6 @@ OPENSSL_CONFIGURE_ON=	LIBSSL_CFLAGS=-I${OPENSSLINC} LIBSSL_LIBS="-L${OPENSSLLIB}
 
 SNMP_LIB_DEPENDS=	libnetsnmp.so:net-mgmt/net-snmp
 SNMP_CONFIGURE_WITH=	net-snmp
-
-.include <bsd.port.options.mk>
-
-.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1004000
-BROKEN=		fails to link due to lack of thread_local
-.endif
 
 post-install:
 	${INSTALL_DATA} ${FILESDIR}/dnsdist.conf.sample \

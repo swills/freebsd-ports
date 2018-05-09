@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/databases/R-cran-DBI/Makefile 465338 2018-03-23 08:50:55Z tota $
+# $FreeBSD: head/databases/R-cran-DBI/Makefile 469436 2018-05-09 07:51:30Z tota $
 
 PORTNAME=	DBI
-DISTVERSION=	0.8
+DISTVERSION=	1.0.0
 CATEGORIES=	databases
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

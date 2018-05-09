@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-asset_sync220/Makefile 464708 2018-03-16 15:22:05Z sunpoet $
+# $FreeBSD: head/net/rubygem-asset_sync220/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	asset_sync
 PORTVERSION=	2.2.0
@@ -6,7 +6,7 @@ CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	220
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Synchronizes Assets between Rails and S3
 
 LICENSE=	MIT

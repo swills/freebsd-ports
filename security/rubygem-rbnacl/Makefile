@@ -1,11 +1,11 @@
-# $FreeBSD: head/security/rubygem-rbnacl/Makefile 459592 2018-01-21 11:55:33Z sunpoet $
+# $FreeBSD: head/security/rubygem-rbnacl/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	rbnacl
 PORTVERSION=	5.0.0
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Networking and Cryptography (NaCl) library
 
 LICENSE=	MIT

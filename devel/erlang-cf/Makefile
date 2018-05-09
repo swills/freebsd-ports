@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/erlang-cf/Makefile 419476 2016-08-02 12:58:18Z olgeni $
+# $FreeBSD: head/devel/erlang-cf/Makefile 469227 2018-05-06 15:27:17Z olgeni $
 
 PORTNAME=	cf
-PORTVERSION=	0.2.2
+PORTVERSION=	0.3.1
+DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

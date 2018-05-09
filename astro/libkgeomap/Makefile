@@ -1,7 +1,8 @@
-# $FreeBSD: head/astro/libkgeomap/Makefile 468558 2018-04-28 18:11:49Z tcberner $
+# $FreeBSD: head/astro/libkgeomap/Makefile 469421 2018-05-09 01:44:50Z swills $
 
 PORTNAME=	libkgeomap
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	astro kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -11,7 +12,7 @@ LICENSE=	GPLv2+ LGPL20+
 LICENSE_COMB=	multi
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/graph/buffer_concepts.hpp:devel/boost-libs
-LIB_DEPENDS=	libopencv_legacy.so:graphics/opencv
+LIB_DEPENDS=	libopencv_video.so:graphics/opencv
 
 USES=		cmake:outsource gettext kde:5 pkgconfig tar:xz
 USE_KDE=	config coreaddons ecm i18n kio marble service textwidgets

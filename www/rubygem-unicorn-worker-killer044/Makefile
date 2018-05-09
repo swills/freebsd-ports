@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-unicorn-worker-killer044/Makefile 462339 2018-02-19 17:43:08Z tz $
+# $FreeBSD: head/www/rubygem-unicorn-worker-killer044/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	unicorn-worker-killer
 PORTVERSION=	0.4.4
@@ -6,7 +6,7 @@ CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	044
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Kill unicorn workers by memory and request counts
 
 LICENSE=	GPLv2+ RUBY

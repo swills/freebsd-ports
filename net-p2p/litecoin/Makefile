@@ -1,10 +1,10 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net-p2p/litecoin/Makefile 467713 2018-04-18 14:06:09Z jbeich $
+# $FreeBSD: head/net-p2p/litecoin/Makefile 469430 2018-05-09 05:37:54Z dinoex $
 
 PORTNAME=	litecoin
 PORTVERSION=	0.14.2
 DISTVERSIONPREFIX=	v
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net-p2p finance
 
 PATCH_SITES=	https://github.com/bitcoin/bitcoin/commit/

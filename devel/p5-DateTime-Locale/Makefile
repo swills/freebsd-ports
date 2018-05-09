@@ -1,8 +1,8 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-DateTime-Locale/Makefile 468021 2018-04-22 12:50:19Z sunpoet $
+# $FreeBSD: head/devel/p5-DateTime-Locale/Makefile 469317 2018-05-07 19:20:39Z sunpoet $
 
 PORTNAME=	DateTime-Locale
-PORTVERSION=	1.19
+PORTVERSION=	1.20
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -20,7 +20,8 @@ BUILD_DEPENDS=	p5-Dist-CheckConflicts>=0.02:devel/p5-Dist-CheckConflicts \
 		p5-Specio>=0:devel/p5-Specio \
 		p5-namespace-autoclean>=0.19:devel/p5-namespace-autoclean
 RUN_DEPENDS:=	${BUILD_DEPENDS}
-TEST_DEPENDS=	p5-IPC-System-Simple>=0:devel/p5-IPC-System-Simple \
+TEST_DEPENDS=	p5-CPAN-Meta-Check>=0.011:devel/p5-CPAN-Meta-Check \
+		p5-IPC-System-Simple>=0:devel/p5-IPC-System-Simple \
 		p5-Test-Fatal>=0:devel/p5-Test-Fatal \
 		p5-Test-File-ShareDir>=0:devel/p5-Test-File-ShareDir \
 		p5-Test-Requires>=0:devel/p5-Test-Requires \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 468806 2018-05-02 00:07:48Z olivier $
+# $FreeBSD: head/graphics/Makefile 469298 2018-05-07 17:14:43Z pi $
 #
 
     COMMENT = Graphics tools and libraries
@@ -753,6 +753,7 @@
     SUBDIR += p5-Image-MetaData-JPEG
     SUBDIR += p5-Image-ObjectDetect
     SUBDIR += p5-Image-PBMlib
+    SUBDIR += p5-Image-PNG-Libpng
     SUBDIR += p5-Image-Pngslimmer
     SUBDIR += p5-Image-Sane
     SUBDIR += p5-Image-Scale
@@ -808,6 +809,7 @@
     SUBDIR += pho
     SUBDIR += photivo
     SUBDIR += photopc
+    SUBDIR += photoqt
     SUBDIR += phototonic
     SUBDIR += php-facedetect
     SUBDIR += php-gdal

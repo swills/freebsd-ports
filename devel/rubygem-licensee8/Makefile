@@ -1,5 +1,5 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/devel/rubygem-licensee8/Makefile 458650 2018-01-10 15:38:07Z swills $
+# $FreeBSD: head/devel/rubygem-licensee8/Makefile 469442 2018-05-09 10:43:26Z mfechner $
 
 PORTNAME=	licensee
 PORTVERSION=	8.7.0
@@ -7,7 +7,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	8
 
-MAINTAINER=	idefix@fechner.net
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Detects under what license a project is distributed
 
 LICENSE=	MIT

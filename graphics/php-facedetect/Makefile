@@ -1,9 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/graphics/php-facedetect/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/graphics/php-facedetect/Makefile 469421 2018-05-09 01:44:50Z swills $
 
 PORTNAME=	facedetect
 PORTVERSION=	1.1
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 

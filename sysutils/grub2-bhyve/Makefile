@@ -1,5 +1,5 @@
 # Created by: kmoore@FreeBSD.org
-# $FreeBSD: head/sysutils/grub2-bhyve/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/sysutils/grub2-bhyve/Makefile 469306 2018-05-07 18:05:48Z kmoore $
 
 PORTNAME=	grub2-bhyve
 DISTVERSIONPREFIX=	v
@@ -7,7 +7,7 @@ DISTVERSION=	0.40
 PORTREVISION=	4
 CATEGORIES=	sysutils
 
-MAINTAINER=	kmoore@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Grub-emu loader for bhyve
 
 LICENSE=	GPLv3
