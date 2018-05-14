@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/libXScrnSaver/Makefile 384234 2015-04-18 15:34:36Z kwm $
+# $FreeBSD: head/x11/libXScrnSaver/Makefile 469783 2018-05-13 09:04:04Z amdmi3 $
 
 PORTNAME=	libXScrnSaver
 PORTVERSION=	1.2.2
@@ -7,6 +7,9 @@ CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	The XScrnSaver library
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 XORG_CAT=	lib
 USE_XORG=	x11 xext xextproto scrnsaverproto:both

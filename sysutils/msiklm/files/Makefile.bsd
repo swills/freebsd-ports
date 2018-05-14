@@ -1,11 +1,10 @@
-# $FreeBSD: head/sysutils/msiklm/files/Makefile.bsd 464508 2018-03-14 16:07:03Z jhale $
+# $FreeBSD: head/sysutils/msiklm/files/Makefile.bsd 469448 2018-05-09 14:05:22Z jhale $
 
 BINDIR=		${PREFIX}/bin
 PROG=		msiklm
 SRCS=		src/main.c src/msiklm.c 
 CFLAGS+=	-Wall -W -D_REENTRANT
 LDADD=		-lhidapi
-# Change to MK_MAN=no after 10.3 support is dropped
-NO_MAN=		yes
+MK_MAN=		no
 
 .include <bsd.prog.mk>

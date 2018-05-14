@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 468060 2018-04-22 21:35:38Z dbaio $
+# $FreeBSD: head/mail/Makefile 469899 2018-05-14 15:31:19Z miwi $
 #
 
     COMMENT = Electronic mail utilities
@@ -452,6 +452,7 @@
     SUBDIR += p5-SES
     SUBDIR += p5-Sendmail-AccessDB
     SUBDIR += p5-Sendmail-Milter
+    SUBDIR += p5-Sisimai
     SUBDIR += p5-Test-Email
     SUBDIR += p5-URI-imap
     SUBDIR += p5-URI-imaps
@@ -540,6 +541,7 @@
     SUBDIR += py-cyruslib
     SUBDIR += py-dkimpy
     SUBDIR += py-email-reply-parser
+    SUBDIR += py-flask-mail
     SUBDIR += py-flufl.bounce
     SUBDIR += py-fuglu
     SUBDIR += py-libgmail

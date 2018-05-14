@@ -1,8 +1,8 @@
 # Created by: Antonio Carlos Venancio Junior (<antonio@inf.ufsc.br>)
-# $FreeBSD: head/irc/pear-Net_SmartIRC/Makefile 445661 2017-07-13 16:14:25Z joneum $
+# $FreeBSD: head/irc/pear-Net_SmartIRC/Makefile 469726 2018-05-12 10:20:58Z joneum $
 
 PORTNAME=	Net_SmartIRC
-PORTVERSION=	1.1.11
+PORTVERSION=	1.1.13
 CATEGORIES=	irc www pear
 
 MAINTAINER=	joneum@FreeBSD.org

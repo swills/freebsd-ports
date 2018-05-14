@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/sysutils/rubygem-tmuxinator/Makefile 467637 2018-04-17 19:16:11Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-tmuxinator/Makefile 469600 2018-05-10 23:14:46Z sunpoet $
 
 PORTNAME=	tmuxinator
-PORTVERSION=	0.11.1
+PORTVERSION=	0.11.2
 CATEGORIES=	sysutils ruby
 MASTER_SITES=	RG
 

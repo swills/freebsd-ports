@@ -1,8 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/emulators/wine-devel/Makefile 469121 2018-05-05 15:17:46Z danfe $
+# $FreeBSD: head/emulators/wine-devel/Makefile 469843 2018-05-14 00:25:33Z gerald $
 
 PORTNAME=	wine
-DISTVERSION=	3.7
+DISTVERSION=	3.8
 PORTEPOCH=	1
 CATEGORIES=	emulators
 MASTER_SITES=	http://mirrors.ibiblio.org/wine/source/3.x/ \

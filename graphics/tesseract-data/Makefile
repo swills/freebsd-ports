@@ -1,5 +1,5 @@
 # Created by: bf <bf@FreeBSD.org>
-# $FreeBSD: head/graphics/tesseract-data/Makefile 426197 2016-11-16 00:33:58Z linimon $
+# $FreeBSD: head/graphics/tesseract-data/Makefile 469800 2018-05-13 15:04:49Z jbeich $
 
 PORTNAME=	tesseract-data
 PORTVERSION=	3.04.00
@@ -29,7 +29,6 @@ TESSERACT_LANGS?=afr amh ara asm aze aze_cyrl bel ben bod bos bul cat ceb ces \
 
 PORTDATA=	${TESSERACT_LANGS:O:u:S|$|.traineddata|}
 
-BROKEN_aarch64=		Fails to install: runaway process
 BROKEN_sparc64=		Fails to install: runaway process
 
 do-install:

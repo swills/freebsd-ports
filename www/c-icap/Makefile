@@ -1,5 +1,5 @@
 # Created by: Elisey Savateev <b3k@mail.ru>
-# $FreeBSD: head/www/c-icap/Makefile 466910 2018-04-09 23:24:30Z rodrigo $
+# $FreeBSD: head/www/c-icap/Makefile 469510 2018-05-10 07:00:19Z yuri $
 
 PORTNAME=	c-icap
 PORTVERSION=	0.5.3
@@ -13,6 +13,9 @@ COMMENT=	ICAP server implementation
 
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+LIB_DEPENDS=	libbrotlicommon.so:archivers/brotli \
+		libpcre.so:devel/pcre
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--sysconfdir="${PREFIX}/etc/c-icap" \

@@ -1,11 +1,11 @@
 # Created by: Naram Qashat <cyberbotx@cyberbotx.com>
-# $FreeBSD: head/www/validator/Makefile 462663 2018-02-23 02:52:51Z wen $
+# $FreeBSD: head/www/validator/Makefile 469804 2018-05-13 16:12:03Z meta $
 
 PORTNAME=	validator
 DISTVERSIONPREFIX=	${PORTNAME}-
 DISTVERSION=	1_3
 DISTVERSIONSUFFIX=	-release
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	www
 
 MAINTAINER=	cyberbotx@cyberbotx.com
@@ -17,7 +17,7 @@ LICENSE_TEXT=	See https://www.w3.org/Consortium/Legal/2002/copyright-software-20
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 RUN_DEPENDS=	onsgmls:textproc/opensp \
-		p5-CGI.pm>=0:www/p5-CGI.pm \
+		p5-CGI>=0:www/p5-CGI \
 		p5-Config-General>=0:devel/p5-Config-General \
 		p5-Encode-HanExtra>=0:chinese/p5-Encode-HanExtra \
 		p5-Encode-JIS2K>=0:converters/p5-Encode-JIS2K \
@@ -32,10 +32,10 @@ RUN_DEPENDS=	onsgmls:textproc/opensp \
 		p5-URI>=0:net/p5-URI \
 		p5-XML-LibXML>=0:textproc/p5-XML-LibXML
 
+USES=		perl5 shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	w3c
 GH_PROJECT=	markup-validator
-USES=		perl5 shebangfix
 NO_ARCH=	yes
 NO_BUILD=	yes
 USE_PERL5=	run

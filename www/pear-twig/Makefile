@@ -1,5 +1,5 @@
 # Created by: Joe Horn <joehorn@gmail.com>
-# $FreeBSD: head/www/pear-twig/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/www/pear-twig/Makefile 469898 2018-05-14 15:10:06Z joneum $
 
 PORTNAME=	twig
 PORTVERSION=	1.28.1
@@ -7,7 +7,7 @@ CATEGORIES=	www pear
 MASTER_SITES=	http://pear.twig-project.org/get/
 DISTNAME=	Twig-${PORTVERSION}
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Flexible, fast, and secure template engine for PHP
 
 LICENSE=	BSD3CLAUSE

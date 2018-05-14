@@ -1,11 +1,11 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc48/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/lang/gcc48/Makefile 469815 2018-05-13 20:05:29Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	4.8.5
 PORTREVISION=	8
 CATEGORIES=	lang
-MASTER_SITES=	GCC/releases/gcc-${PORTVERSION}
+MASTER_SITES=	GCC
 PKGNAMESUFFIX=	${SUFFIX}
 
 MAINTAINER=	gerald@FreeBSD.org

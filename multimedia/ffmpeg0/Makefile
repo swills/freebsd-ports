@@ -1,9 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/ffmpeg0/Makefile 459963 2018-01-25 21:20:12Z jbeich $
+# $FreeBSD: head/multimedia/ffmpeg0/Makefile 469466 2018-05-09 20:27:51Z swills $
 
 PORTNAME=	ffmpeg
 PORTVERSION=	0.7.17
-PORTREVISION=	13
+PORTREVISION=	14
 PORTEPOCH=	1
 CATEGORIES=	multimedia audio ipv6 net
 MASTER_SITES=	http://ffmpeg.org/releases/

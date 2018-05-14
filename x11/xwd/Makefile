@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/xwd/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/x11/xwd/Makefile 469540 2018-05-10 13:37:50Z zeising $
 
 PORTNAME=	xwd
-PORTVERSION=	1.0.6
+PORTVERSION=	1.0.7
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org

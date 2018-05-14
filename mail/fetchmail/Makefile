@@ -1,5 +1,5 @@
 # Created by: Ville Eerola <ve@sci.fi>
-# $FreeBSD: head/mail/fetchmail/Makefile 468557 2018-04-28 17:49:37Z cy $
+# $FreeBSD: head/mail/fetchmail/Makefile 469628 2018-05-11 11:23:42Z mandree $
 
 PORTNAME=	fetchmail
 PORTVERSION=	6.3.26
@@ -13,8 +13,6 @@ COMMENT=	Batch mail retrieval utility for IMAP/POP3/ETRN/ODMR
 
 LICENSE=	GPLv2 LGPL21
 LICENSE_COMB=	dual
-
-BROKEN_SSL=	openssl-devel
 
 RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 

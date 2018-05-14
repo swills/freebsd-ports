@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-pipenv/Makefile 469395 2018-05-08 19:36:22Z sunpoet $
+# $FreeBSD: head/devel/py-pipenv/Makefile 469658 2018-05-11 16:53:28Z sunpoet $
 
 PORTNAME=	pipenv
-PORTVERSION=	11.10.2
+PORTVERSION=	11.10.4
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -23,10 +23,4 @@ REINPLACE_ARGS=	-i ''
 USE_PYTHON=	autoplist concurrent distutils
 USES=		python
 
-.include <bsd.port.pre.mk>
-
-.if ${PYTHON_REL} < 3400
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}pathlib2>=0:devel/py-pathlib2@${FLAVOR}
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

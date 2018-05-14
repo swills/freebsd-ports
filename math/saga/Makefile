@@ -1,9 +1,9 @@
 # Created by: Rainer Hurling <rhurlin@gwdg.de>
-# $FreeBSD: head/math/saga/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/saga/Makefile 469466 2018-05-09 20:27:51Z swills $
 
 PORTNAME=	saga
 PORTVERSION=	6.1.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	math
 MASTER_SITES=	SF/saga-gis/SAGA%20-%20${PORTVERSION:C/\.[[:digit:]]\.[[:digit:]]*$//}/SAGA%20-%20${PORTVERSION}
 

@@ -1,9 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-rubygems-mirror/Makefile 434970 2017-02-27 17:10:16Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rubygems-mirror/Makefile 469596 2018-05-10 23:14:25Z sunpoet $
 
 PORTNAME=	rubygems-mirror
-PORTVERSION=	1.1.0
-PORTREVISION=	1
+PORTVERSION=	1.2.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

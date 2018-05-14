@@ -1,9 +1,9 @@
 # Created by: Marius Strobl <marius@FreeBSD.org>
-# $FreeBSD: head/sysutils/mmc-utils/Makefile 463595 2018-03-04 19:08:00Z marius $
+# $FreeBSD: head/sysutils/mmc-utils/Makefile 469803 2018-05-13 15:35:02Z marius $
 
 PORTNAME=	mmc-utils
-PORTVERSION=	20180122
-DISTVERSIONSUFFIX=	-7bcad171
+PORTVERSION=	20180327
+DISTVERSIONSUFFIX=	-b4fe0c8c
 CATEGORIES=	sysutils
 MASTER_SITES=	LOCAL/marius
 

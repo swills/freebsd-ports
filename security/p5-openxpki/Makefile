@@ -1,8 +1,8 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/security/p5-openxpki/Makefile 454921 2017-11-26 20:53:15Z dbaio $
+# $FreeBSD: head/security/p5-openxpki/Makefile 469532 2018-05-10 11:20:09Z wen $
 
 PORTNAME=	openxpki
-PORTVERSION=	1.19.4
+PORTVERSION=	2.0.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security perl5
 PKGNAMEPREFIX=	p5-
@@ -11,6 +11,9 @@ MAINTAINER=	svysh.fbsd@gmail.com
 COMMENT=	Perl based trustcenter for PKI: universal server building block
 
 LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_SSL=	openssl-devel
 
 BUILD_DEPENDS=	bash:shells/bash \
 		openca-tools-forked>=1.4.0:security/openca-tools-forked \
@@ -30,6 +33,7 @@ BUILD_DEPENDS=	bash:shells/bash \
 		p5-Crypt-SMIME>=0:security/p5-Crypt-SMIME \
 		p5-Crypt-SSLeay>=0:security/p5-Crypt-SSLeay \
 		p5-Crypt-X509>=0:security/p5-Crypt-X509 \
+		p5-Crypt-X509-CRL>=0.1:security/p5-Crypt-X509-CRL \
 		p5-DBD-Mock>=0:databases/p5-DBD-Mock \
 		p5-DBIx-Handler>=0:databases/p5-DBIx-Handler \
 		p5-Data-Password>=0:security/p5-Data-Password \

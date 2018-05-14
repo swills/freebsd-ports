@@ -1,8 +1,8 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-oslo.cache/Makefile 466479 2018-04-04 18:52:47Z sunpoet $
+# $FreeBSD: head/devel/py-oslo.cache/Makefile 469478 2018-05-09 21:39:07Z sunpoet $
 
 PORTNAME=	oslo.cache
-PORTVERSION=	1.30.0
+PORTVERSION=	1.30.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

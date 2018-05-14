@@ -1,10 +1,9 @@
-# $FreeBSD: head/x11-servers/Makefile 433900 2017-02-11 18:31:47Z bapt $
+# $FreeBSD: head/x11-servers/Makefile 469777 2018-05-13 07:25:24Z meta $
 #
 
     COMMENT = X11 servers
 
     SUBDIR += Xfstt
-    SUBDIR += x11rdp
     SUBDIR += x2vnc
     SUBDIR += x2x
     SUBDIR += xephyr

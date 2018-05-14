@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-cluster/Makefile 464818 2018-03-17 13:52:04Z dbaio $
+# $FreeBSD: head/devel/py-cluster/Makefile 469885 2018-05-14 13:13:49Z dbaio $
 
 PORTNAME=	cluster
-PORTVERSION=	1.4.0
+PORTVERSION=	1.4.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,7 +18,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	exhuma
 GH_PROJECT=	python-cluster
 
-USE_PYTHON=	autoplist distutils
+USE_PYTHON=	autoplist concurrent distutils
 NO_ARCH=	yes
 
 PORTSCOUT=	skipv:regression

@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 468558 2018-04-28 18:11:49Z tcberner $
+# $FreeBSD: head/multimedia/Makefile 469721 2018-05-12 10:04:38Z pi $
 #
 
     COMMENT = Multimedia software
@@ -10,6 +10,7 @@
     SUBDIR += abby
     SUBDIR += acidrip
     SUBDIR += aegisub
+    SUBDIR += aravis
     SUBDIR += asdcplib
     SUBDIR += assimp
     SUBDIR += atomicparsley

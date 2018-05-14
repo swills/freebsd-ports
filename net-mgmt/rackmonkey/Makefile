@@ -1,11 +1,11 @@
 # Created by: Eric F Crist <ecrist@secure-computing.net>
-# $FreeBSD: head/net-mgmt/rackmonkey/Makefile 446123 2017-07-18 01:10:29Z zi $
+# $FreeBSD: head/net-mgmt/rackmonkey/Makefile 469808 2018-05-13 19:02:18Z zi $
 
 PORTNAME=	rackmonkey
 PORTVERSION=	1.2.5
 PORTREVISION=	1
 DISTVERSIONSUFFIX=	-1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net-mgmt www
 MASTER_SITES=	SF \
 		ftp://ftp.secure-computing.net/pub/FreeBSD/ports/${PORTNAME}/ \

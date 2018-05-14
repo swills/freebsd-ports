@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/xwud/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/x11/xwud/Makefile 469538 2018-05-10 13:20:05Z zeising $
 
 PORTNAME=	xwud
-PORTVERSION=	1.0.4
+PORTVERSION=	1.0.5
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org

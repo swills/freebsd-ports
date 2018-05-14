@@ -1,9 +1,10 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/net-im/tox/Makefile 467725 2018-04-18 17:50:38Z thierry $
+# $FreeBSD: head/net-im/tox/Makefile 469731 2018-05-12 14:26:55Z thierry $
 
 PORTNAME=	toxcore
 PORTVERSION=	0.2.2
 DISTVERSIONPREFIX=	v
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	net-im net-p2p
 
@@ -18,9 +19,9 @@ LIB_DEPENDS=	libvpx.so:multimedia/libvpx		\
 		libsndfile.so:audio/libsndfile		\
 		libportaudio.so:audio/portaudio		\
 		libsodium.so:security/libsodium		\
-		libopencv_core.so:graphics/opencv-core	\
 		libopus.so:audio/opus			\
 		libconfig.so:devel/libconfig
+TEST_DEPENDS=	libopencv_core.so:graphics/opencv-core
 
 CONFLICTS=	toxcore-legacy-0.1.*
 

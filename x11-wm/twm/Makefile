@@ -1,13 +1,13 @@
-# $FreeBSD: head/x11-wm/twm/Makefile 399829 2015-10-20 13:37:13Z kwm $
+# $FreeBSD: head/x11-wm/twm/Makefile 469528 2018-05-10 10:34:15Z zeising $
 
 PORTNAME=	twm
-PORTVERSION=	1.0.9
+PORTVERSION=	1.0.10
 CATEGORIES=	x11-wm
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	Tab Window Manager for the X Window System
 
 XORG_CAT=	app
-USE_XORG=	x11 xext xt xmu
+USE_XORG=	ice sm x11 xext xt xmu
 
 .include <bsd.port.mk>

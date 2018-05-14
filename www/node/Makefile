@@ -1,8 +1,9 @@
-# $FreeBSD: head/www/node/Makefile 468746 2018-04-30 22:46:56Z bhughes $
+# $FreeBSD: head/www/node/Makefile 469781 2018-05-13 08:21:47Z bhughes $
 
 PORTNAME=	node
-PORTVERSION=	10.0.0
+PORTVERSION=	10.1.0
 DISTVERSIONPREFIX=	v
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://nodejs.org/dist/v${PORTVERSION}/
 
@@ -76,7 +77,7 @@ IGNORE=		cannot build node.js with LibreSSL. You must enable BUNDLED_SSL
 
 .include <bsd.port.pre.mk>
 
-.if ${ARCH} != amd64
+.if ${ARCH} != amd64 && ${ARCH} != i386
 CONFIGURE_ARGS+=--openssl-no-asm
 .endif
 

@@ -1,5 +1,5 @@
 # Created by: Matthias Andree <mandree@FreeBSD.org>
-# $FreeBSD: head/databases/db5/Makefile 449083 2017-09-01 14:49:09Z linimon $
+# $FreeBSD: head/databases/db5/Makefile 469617 2018-05-11 09:04:02Z amdmi3 $
 
 PORTNAME=	db5
 PORTVERSION=	5.3.28
@@ -15,6 +15,7 @@ DIST_SUBDIR=	bdb
 MAINTAINER=	mandree@FreeBSD.org
 COMMENT=	Oracle Berkeley DB, revision ${BDBVER}
 
+LICENSE=	SLEEPYCAT
 LICENSE_NAME=	Sleepycat
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 LICENSE_FILE=	${WRKSRC}/../LICENSE

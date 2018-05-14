@@ -1,6 +1,5 @@
-# $FreeBSD: head/devel/arm-none-eabi-gcc/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/arm-none-eabi-gcc/Makefile 469834 2018-05-13 21:46:05Z kan $
 
-PORTREVISION=	1
 PKGNAMEPREFIX=	arm-none-eabi-
 COMMENT=	GNU Compiler Collection for bare metal arm cross-development
 GCC_TARGET=	arm-none-eabi

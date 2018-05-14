@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-fonts/vollkorn-ttf/Makefile 469409 2018-05-08 19:44:07Z rakuco $
+# $FreeBSD: head/x11-fonts/vollkorn-ttf/Makefile 469541 2018-05-10 13:38:44Z rakuco $
 
 PORTNAME=	vollkorn-ttf
-PORTVERSION=	4.015
+PORTVERSION=	4.105
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://vollkorn-typeface.com/download/
 DISTNAME=	vollkorn-${PORTVERSION:S|.|-|}

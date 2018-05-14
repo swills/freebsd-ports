@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/libkface/Makefile 469420 2018-05-09 01:10:11Z swills $
+# $FreeBSD: head/graphics/libkface/Makefile 469891 2018-05-14 14:10:06Z swills $
 
 PORTNAME=	libkface
 PORTVERSION=	${KDE4_APPLICATIONS_VERSION}
@@ -10,13 +10,14 @@ DIST_SUBDIR=	KDE/${PORTVERSION}
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE4 library for face recognition
 
+BROKEN=		Does not build with newer opencv
 DEPRECATED=	No longer maintained upstream
 EXPIRATION_DATE=	2018-06-07
 
 LICENSE=	GPLv2+ LGPL20+
 LICENSE_COMB=	multi
 
-LIB_DEPENDS=	libopencv_legacy.so:graphics/opencv
+LIB_DEPENDS=	libopencv_ml.so:graphics/opencv
 
 USES=		cmake:outsource kde:4 pathfix pkgconfig tar:xz
 USE_KDE=	kdelibs automoc4 marble

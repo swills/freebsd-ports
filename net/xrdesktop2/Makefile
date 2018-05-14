@@ -1,5 +1,5 @@
 # Created by: Chris Hutchinson <portmaster@BSDforge.com>
-# $FreeBSD: head/net/xrdesktop2/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/xrdesktop2/Makefile 469619 2018-05-11 09:34:02Z amdmi3 $
 
 PORTNAME=	xrdesktop2
 PORTVERSION=	2.00
@@ -10,6 +10,7 @@ MAINTAINER=	portmaster@BSDforge.com
 COMMENT=	GTK2 frontend for Rdesktop
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rdesktop:net/rdesktop \
 		p5-Gtk2>=0:x11-toolkits/p5-Gtk2
@@ -20,15 +21,14 @@ NO_BUILD=	yes
 NO_ARCH=	yes
 USES=		perl5 shebangfix tar:xz
 SHEBANG_FILES=	xrdesktop
-DOCS=	Changelog INSTALL LICENSE README
+DOCS=		Changelog README
 PIXMAPS=	*.png
 
 PLIST_FILES=	bin/xrdesktop share/doc/xrdesktop2/Changelog \
-	share/doc/xrdesktop2/INSTALL share/doc/xrdesktop2/LICENSE \
-	share/doc/xrdesktop2/README share/pixmaps/x-remote-desktop-256.png \
-	share/pixmaps/x-remote-desktop-128.png \
-	share/pixmaps/x-remote-desktop-48.png \
-	share/applications/xrdesktop2.desktop
+		share/doc/xrdesktop2/README share/pixmaps/x-remote-desktop-256.png \
+		share/pixmaps/x-remote-desktop-128.png \
+		share/pixmaps/x-remote-desktop-48.png \
+		share/applications/xrdesktop2.desktop
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/xrdesktop ${STAGEDIR}${PREFIX}/bin

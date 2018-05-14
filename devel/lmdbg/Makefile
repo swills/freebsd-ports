@@ -1,5 +1,5 @@
 # Created by: Mikolaj Golub <to.my.trociny@gmail.com>
-# $FreeBSD: head/devel/lmdbg/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/lmdbg/Makefile 469616 2018-05-11 08:34:03Z amdmi3 $
 
 PORTNAME=	lmdbg
 PORTVERSION=	1.2.1
@@ -10,6 +10,7 @@ MAINTAINER=	trociny@FreeBSD.org
 COMMENT=	Lightweight malloc debugger
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/doc/LICENSE
 
 BUILD_DEPENDS=	mk-configure>=0.24:devel/mk-configure
 LIB_DEPENDS=	libJudy.so:devel/judy
@@ -34,7 +35,7 @@ do-install:
 	${SETENV} ${MKCMAKE_ENV} DESTDIR=${STAGEDIR} \
 		${MKCMAKE} -C ${WRKSRC} ${INSTALL_TARGET}
 
-regression-test: build
+do-test:
 	${SETENV} ${MKCMAKE_ENV} ${MKCMAKE} -C ${WRKSRC} test
 
 .include <bsd.port.mk>

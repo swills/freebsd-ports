@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/graphics/evince-lite/Makefile 462340 2018-02-19 17:49:54Z pi $
+# $FreeBSD: head/graphics/evince-lite/Makefile 469682 2018-05-11 18:10:20Z pi $
 
 PKGNAMESUFFIX=	-lite
 
@@ -11,5 +11,8 @@ MASTERDIR=	${.CURDIR}/../../graphics/evince
 SLAVEPORT=	lite
 DESCR=		${.CURDIR}/pkg-descr
 PLIST=		${.CURDIR}/pkg-plist
+
+post-install:
+	${RM} -r ${STAGEDIR}${PREFIX}/lib/systemd
 
 .include "${MASTERDIR}/Makefile"

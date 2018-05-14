@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 468926 2018-05-03 13:26:25Z girgen $
+# $FreeBSD: head/net/Makefile 469636 2018-05-11 12:54:25Z pi $
 #
 
     COMMENT = Networking tools
@@ -628,6 +628,7 @@
     SUBDIR += p5-MaxMind-DB-Reader
     SUBDIR += p5-MaxMind-DB-Writer
     SUBDIR += p5-Net
+    SUBDIR += p5-Net-ACME2
     SUBDIR += p5-Net-AMQP
     SUBDIR += p5-Net-AMQP-RabbitMQ
     SUBDIR += p5-Net-APNS

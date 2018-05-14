@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/beanstalkd/Makefile 404743 2015-12-29 14:30:46Z mat $
+# $FreeBSD: head/net/beanstalkd/Makefile 469717 2018-05-12 08:34:04Z amdmi3 $
 
 PORTNAME=	beanstalkd
 PORTVERSION=	1.10
@@ -9,10 +9,12 @@ MAINTAINER=	vsevolod@FreeBSD.org
 COMMENT=	Fast, distributed, in-memory workqueue service
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		gmake
 USE_GITHUB=	yes
 USE_RC_SUBR=	beanstalkd
+TEST_TARGET=	check
 
 GH_ACCOUNT=	kr
 
@@ -29,14 +31,11 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/beanstalkd ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/doc/${PORTNAME}.1 \
 		${STAGEDIR}${MANPREFIX}/man/man1
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 .for i in ${PORTDOCS}
 	${INSTALL_DATA} ${WRKSRC}/doc/${i} ${STAGEDIR}${DOCSDIR}
 .endfor
-
-test: configure
-	@cd ${WRKSRC} && ${MAKE_CMD} ${MAKE_ARGS} check
-
-regression-test: test
 
 .include <bsd.port.mk>

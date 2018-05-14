@@ -1,14 +1,13 @@
-# $FreeBSD: head/www/matomo/Makefile 468267 2018-04-25 09:34:05Z tz $
+# $FreeBSD: head/www/matomo/Makefile 469650 2018-05-11 16:21:59Z joneum $
 
 PORTNAME=	matomo
-DISTVERSION=	3.4.0
-PORTREVISION=	2
+DISTVERSION=	3.5.0
 CATEGORIES=	www
 MASTER_SITES=	http://builds.matomo.org/
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 DISTNAME=	piwik-${DISTVERSION}
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Open Source Web Analytics Software Program
 
 LICENSE=	GPLv3

@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/opendht/Makefile 469338 2018-05-07 22:29:46Z jbeich $
+# $FreeBSD: head/devel/opendht/Makefile 469518 2018-05-10 07:54:03Z yuri $
 
 PORTNAME=	opendht
-DISTVERSION=	1.7.1
+DISTVERSION=	1.7.2
 CATEGORIES=	devel net
 
 MAINTAINER=	yuri@FreeBSD.org

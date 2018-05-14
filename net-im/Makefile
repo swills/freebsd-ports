@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 468571 2018-04-28 19:42:11Z tcberner $
+# $FreeBSD: head/net-im/Makefile 469876 2018-05-14 11:43:51Z dinoex $
 #
 
     COMMENT = Instant messaging
@@ -83,7 +83,6 @@
     SUBDIR += licq
     SUBDIR += licq-icq
     SUBDIR += licq-jabber
-    SUBDIR += licq-msn
     SUBDIR += licq-osd
     SUBDIR += licq-qt-gui
     SUBDIR += linux-telegram-desktop

@@ -1,8 +1,9 @@
 # Created by: Yukihiro Nakai <nakai@FreeBSD.org>
-# $FreeBSD: head/lang/mono/Makefile 460430 2018-01-30 19:00:27Z dbn $
+# $FreeBSD: head/lang/mono/Makefile 469461 2018-05-09 19:02:00Z ler $
 
 PORTNAME=	mono
 PORTVERSION=	5.2.0.215
+PORTREVISION=	1
 DISTVERSIONPREFIX=	mono-
 CATEGORIES=	lang
 

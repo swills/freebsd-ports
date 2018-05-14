@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/appres/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/x11/appres/Makefile 469578 2018-05-10 20:23:11Z zeising $
 
 PORTNAME=	appres
-PORTVERSION=	1.0.4
+PORTVERSION=	1.0.5
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org

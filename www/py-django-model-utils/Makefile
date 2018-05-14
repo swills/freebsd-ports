@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-django-model-utils/Makefile 464098 2018-03-10 22:59:44Z sunpoet $
+# $FreeBSD: head/www/py-django-model-utils/Makefile 469659 2018-05-11 16:53:33Z sunpoet $
 
 PORTNAME=	django-model-utils
-PORTVERSION=	3.1.1
+PORTVERSION=	3.1.2
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

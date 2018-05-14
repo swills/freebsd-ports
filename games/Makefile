@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 468636 2018-04-29 17:42:48Z tcberner $
+# $FreeBSD: head/games/Makefile 469845 2018-05-14 02:29:04Z vanilla $
 #
 
     COMMENT = Games and related software
@@ -161,6 +161,7 @@
     SUBDIR += circuslinux
     SUBDIR += cleanq3
     SUBDIR += cockatrice
+    SUBDIR += coffeebreak
     SUBDIR += colorcode
     SUBDIR += columns
     SUBDIR += concentration
@@ -461,6 +462,7 @@
     SUBDIR += joequake
     SUBDIR += jools
     SUBDIR += jtans
+    SUBDIR += julius
     SUBDIR += jumpnbump
     SUBDIR += jutils
     SUBDIR += jvgs

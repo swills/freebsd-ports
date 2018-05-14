@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/renpy/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/devel/renpy/Makefile 469645 2018-05-11 15:26:17Z amdmi3 $
 
 PORTNAME=	renpy
 PORTVERSION?=	6.99.14.3
@@ -38,7 +38,8 @@ SHEBANG_FILES=	renpy.py launcher/game/tkaskdir.py
 TARGET_ORDER_OVERRIDE=610:fix-shebang
 BUILD_WRKSRC=	${WRKSRC}/module
 INSTALL_WRKSRC=	${BUILD_WRKSRC}
-MAKE_ENV+=	RENPY_DEPS_INSTALL="${LOCALBASE}"
+MAKE_ENV+=	RENPY_DEPS_INSTALL="${LOCALBASE}" \
+		RENPY_CYTHON=cython-${PYTHON_VER}
 PORTDATA=	launcher renpy renpy.py templates
 .ifndef PKGNAMESUFFIX
 PORTDATA+=	gui

@@ -1,9 +1,8 @@
 # Created by: Timothy Beyer <beyert@cs.ucr.edu>
-# $FreeBSD: head/devel/racer/Makefile 468993 2018-05-03 22:43:22Z jbeich $
+# $FreeBSD: head/devel/racer/Makefile 469812 2018-05-13 19:58:45Z jbeich $
 
 PORTNAME=	racer
-DISTVERSION=	2.0.10
-PORTREVISION=	1
+DISTVERSION=	2.0.12
 CATEGORIES=	devel
 
 MAINTAINER=	beyert@cs.ucr.edu
@@ -50,7 +49,6 @@ CARGO_CRATES=	aho-corasick-0.5.3 \
 		thread_local-0.2.7 \
 		toml-0.1.30 \
 		toml-0.2.1 \
-		typed-arena-1.3.0 \
 		unicode-normalization-0.1.4 \
 		unicode-segmentation-1.2.0 \
 		unicode-width-0.1.4 \

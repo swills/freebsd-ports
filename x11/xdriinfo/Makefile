@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11/xdriinfo/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11/xdriinfo/Makefile 469575 2018-05-10 20:16:48Z zeising $
 
 PORTNAME=	xdriinfo
-PORTVERSION=	1.0.5
-PORTREVISION=	1
+PORTVERSION=	1.0.6
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org

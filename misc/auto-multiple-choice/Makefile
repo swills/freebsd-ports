@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/auto-multiple-choice/Makefile 448690 2017-08-24 15:49:34Z swills $
+# $FreeBSD: head/misc/auto-multiple-choice/Makefile 469466 2018-05-09 20:27:51Z swills $
 
 PORTNAME=	auto-multiple-choice
 PORTVERSION=	1.3.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	misc
 MASTER_SITES=	http://download.gna.org/auto-qcm/
 DISTNAME=	auto-multiple-choice_${PORTVERSION}_precomp

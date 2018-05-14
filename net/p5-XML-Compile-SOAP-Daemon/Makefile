@@ -1,8 +1,8 @@
 # Created by: Lars Thegler <lth@FreeBSD.org>
-# $FreeBSD: head/net/p5-XML-Compile-SOAP-Daemon/Makefile 453362 2017-11-02 19:01:15Z sunpoet $
+# $FreeBSD: head/net/p5-XML-Compile-SOAP-Daemon/Makefile 469767 2018-05-12 23:50:57Z sunpoet $
 
 PORTNAME=	XML-Compile-SOAP-Daemon
-PORTVERSION=	3.13
+PORTVERSION=	3.14
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

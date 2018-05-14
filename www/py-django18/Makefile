@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/www/py-django18/Makefile 463731 2018-03-06 16:00:08Z miwi $
+# $FreeBSD: head/www/py-django18/Makefile 469522 2018-05-10 08:43:51Z miwi $
 
 PORTNAME=	django
 PORTVERSION=	1.8.19
@@ -14,6 +14,9 @@ DIST_SUBDIR=	python
 
 MAINTAINER=	python@FreeBSD.org
 COMMENT=	High-level Python Web Framework (1.8.x LTS)
+
+DEPRECATED=	End of Live since 01/04/2018
+EXPIRATION_DATE=	2018-06-12
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE

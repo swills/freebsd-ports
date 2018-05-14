@@ -1,8 +1,8 @@
 # Created by: Goran Tal <goran.tal@gmail.com>
-# $FreeBSD: head/textproc/dikt/Makefile 469351 2018-05-08 04:43:34Z yuri $
+# $FreeBSD: head/textproc/dikt/Makefile 469520 2018-05-10 08:03:48Z yuri $
 
 PORTNAME=	dikt
-DISTVERSION=	2s1
+PORTVERSION=	2s1
 PORTEPOCH=	1
 CATEGORIES=	textproc net kde
 MASTER_SITES=	https://bitbucket.org/dikt/code/downloads/

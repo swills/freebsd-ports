@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/rbenv/Makefile 465067 2018-03-20 06:16:18Z meta $
+# $FreeBSD: head/devel/rbenv/Makefile 469844 2018-05-14 00:40:22Z meta $
 
 PORTNAME=	rbenv
 PORTVERSION=	1.1.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel ruby
 
-MAINTAINER=	meta@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Manage multiple versions of ruby
 
 LICENSE=	MIT

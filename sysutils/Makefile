@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 468764 2018-05-01 15:37:55Z cmt $
+# $FreeBSD: head/sysutils/Makefile 469692 2018-05-11 20:34:00Z seanc $
 #
 
     COMMENT = System utilities
@@ -309,6 +309,7 @@
     SUBDIR += farbot
     SUBDIR += fastest_cvsup
     SUBDIR += fatback
+    SUBDIR += fcode-utils
     SUBDIR += fconfig
     SUBDIR += fcron
     SUBDIR += fd
@@ -433,6 +434,7 @@
     SUBDIR += gnome-system-monitor
     SUBDIR += gnome_subr
     SUBDIR += goaccess
+    SUBDIR += gomplate
     SUBDIR += google-compute-engine-oslogin
     SUBDIR += goss
     SUBDIR += gpart
@@ -710,6 +712,7 @@
     SUBDIR += msiklm
     SUBDIR += msktutil
     SUBDIR += msyslog
+    SUBDIR += mtm
     SUBDIR += mtpfs
     SUBDIR += mtxorbd
     SUBDIR += multitail
@@ -1182,6 +1185,7 @@
     SUBDIR += snmp_exporter
     SUBDIR += snooze
     SUBDIR += snowlog
+    SUBDIR += sockaddr
     SUBDIR += socket
     SUBDIR += socklog
     SUBDIR += solaar

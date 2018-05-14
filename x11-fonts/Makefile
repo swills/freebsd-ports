@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 467500 2018-04-16 18:14:54Z tobik $
+# $FreeBSD: head/x11-fonts/Makefile 469647 2018-05-11 16:03:44Z tobik $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -108,6 +108,7 @@
     SUBDIR += gfe
     SUBDIR += gnu-unifont
     SUBDIR += gnu-unifont-ttf
+    SUBDIR += gofont-ttf
     SUBDIR += gohufont
     SUBDIR += google-fonts
     SUBDIR += hack-font

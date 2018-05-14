@@ -1,8 +1,9 @@
 # Created by: dpejesh@yahoo.com
-# $FreeBSD: head/net/corosync/Makefile 443501 2017-06-13 13:39:31Z joneum $
+# $FreeBSD: head/net/corosync/Makefile 469703 2018-05-12 03:25:12Z vanilla $
 
 PORTNAME=	corosync
 PORTVERSION=	2.4.2
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://build.clusterlabs.org/corosync/releases/
 
@@ -13,13 +14,15 @@ LICENSE=	BSD3CLAUSE
 
 LIB_DEPENDS=	libnspr4.so:devel/nspr \
 		libnss3.so:security/nss \
-		libqb.so:devel/libqb
+		libqb.so.0:devel/libqb
 
 USES=		gmake groff libtool pathfix pkgconfig
+USE_BINUTILS=	yes
 USE_LDCONFIG=	yes
 USE_RC_SUBR=	${PORTNAME} ${PORTNAME}-notifyd
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-secure-build
+LDFLAGS+=	-B${LOCALBASE}/bin
 INSTALL_TARGET=	install-strip
 
 OPTIONS_DEFINE=	DBUS SNMP

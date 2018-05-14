@@ -1,9 +1,8 @@
 # Created by: Andreas Kohn <andreas@syndrom23.de>
-# $FreeBSD: head/x11-wm/transset/Makefile 336621 2013-12-16 11:11:09Z zeising $
+# $FreeBSD: head/x11-wm/transset/Makefile 469530 2018-05-10 10:42:26Z zeising $
 
 PORTNAME=	transset
-PORTVERSION=	1.0.1
-PORTREVISION=	1
+PORTVERSION=	1.0.2
 PORTEPOCH=	1
 CATEGORIES=	x11-wm
 

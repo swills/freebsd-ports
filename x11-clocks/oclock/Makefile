@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-clocks/oclock/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/x11-clocks/oclock/Makefile 469537 2018-05-10 13:14:51Z zeising $
 
 PORTNAME=	oclock
-PORTVERSION=	1.0.3
+PORTVERSION=	1.0.4
 CATEGORIES=	x11-clocks
 
 MAINTAINER=	x11@FreeBSD.org

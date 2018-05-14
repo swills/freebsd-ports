@@ -1,8 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/audio/wavpack/Makefile 469417 2018-05-08 21:29:42Z brooks $
+# $FreeBSD: head/audio/wavpack/Makefile 469778 2018-05-13 07:50:13Z riggs $
 
 PORTNAME=	wavpack
 PORTVERSION=	5.1.0
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.wavpack.com/
 

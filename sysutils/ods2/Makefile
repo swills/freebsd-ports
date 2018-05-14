@@ -1,13 +1,14 @@
 # Created by: Thierry Dussuet <dussuett@wigwam.ethz.ch>
-# $FreeBSD: head/sysutils/ods2/Makefile 410522 2016-03-07 14:59:02Z amdmi3 $
+# $FreeBSD: head/sysutils/ods2/Makefile 469549 2018-05-10 14:26:06Z tobik $
 
 PORTNAME=	ods2
 PORTVERSION=	1.3
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.lugs.ch/~dussuett/
 DISTNAME=	ods2
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	pzn.unixbsd@gmail.com
 COMMENT=	Utility for manipulating ODS-2 filesystems
 
 USES=		zip
@@ -29,6 +30,6 @@ do-install:
 
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
+	cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>

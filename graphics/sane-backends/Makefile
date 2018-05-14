@@ -1,9 +1,9 @@
 # Created by: gary@hotlava.com
-# $FreeBSD: head/graphics/sane-backends/Makefile 464242 2018-03-12 09:44:33Z tobik $
+# $FreeBSD: head/graphics/sane-backends/Makefile 469609 2018-05-11 04:01:57Z yuri $
 
 PORTNAME=	sane-backends
 PORTVERSION=	1.0.27
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	https://alioth.debian.org/frs/download.php/file/4146/ \
 		http://fossies.org/linux/misc/
@@ -12,8 +12,10 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	API for access to scanners, digitals camera, frame grabbers etc
 
 LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libtiff.so:graphics/tiff
+LIB_DEPENDS=	libpng16.so:graphics/png \
+		libtiff.so:graphics/tiff
 
 USES=		gmake jpeg libtool localbase pathfix pkgconfig
 GNU_CONFIGURE=	yes

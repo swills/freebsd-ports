@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-coloredlogs/Makefile 468723 2018-04-30 17:09:02Z sunpoet $
+# $FreeBSD: head/devel/py-coloredlogs/Makefile 469917 2018-05-14 16:31:56Z sunpoet $
 
 PORTNAME=	coloredlogs
-PORTVERSION=	9.3
+PORTVERSION=	10.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

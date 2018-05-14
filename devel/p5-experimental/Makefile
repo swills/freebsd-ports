@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-experimental/Makefile 455709 2017-12-07 16:00:08Z sunpoet $
+# $FreeBSD: head/devel/p5-experimental/Makefile 469655 2018-05-11 16:53:12Z sunpoet $
 
 PORTNAME=	experimental
-PORTVERSION=	0.019
+PORTVERSION=	0.020
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:LEONT

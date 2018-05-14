@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/xrefresh/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/x11/xrefresh/Makefile 469550 2018-05-10 14:28:26Z zeising $
 
 PORTNAME=	xrefresh
-PORTVERSION=	1.0.5
+PORTVERSION=	1.0.6
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org

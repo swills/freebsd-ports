@@ -1,8 +1,8 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-HTTP/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Net-HTTP/Makefile 469509 2018-05-10 06:55:04Z wen $
 
 PORTNAME=	Net-HTTP
-PORTVERSION=	6.17
+PORTVERSION=	6.18
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

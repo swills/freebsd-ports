@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/givaro/Makefile 429236 2016-12-23 09:55:11Z amdmi3 $
+# $FreeBSD: head/math/givaro/Makefile 469848 2018-05-14 04:14:08Z linimon $
 
 PORTNAME=	givaro
 PORTVERSION=	3.8.0
@@ -12,6 +12,9 @@ LICENSE=	CeCILL-Bv1-en.txt
 LICENSE_NAME=	Ce[a] C[nrs] I[nria] L[ogiciel] L[ibre] B license, version 1
 LICENSE_FILE=	${WRKSRC}/Licence_CeCILL-B_V1-en.txt
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
+BROKEN=			unfetchable
+EXPIRATION_DATE=	2018-08-14
 
 LIB_DEPENDS=	libgmp.so:math/gmp
 

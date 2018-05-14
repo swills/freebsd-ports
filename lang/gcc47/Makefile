@@ -1,12 +1,12 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc47/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/lang/gcc47/Makefile 469832 2018-05-13 21:00:43Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	4.7.4
 PORTREVISION=	9
 PORTEPOCH=	1
 CATEGORIES=	lang
-MASTER_SITES=	GCC/releases/gcc-${PORTVERSION}
+MASTER_SITES=	GCC
 PKGNAMESUFFIX=	${SUFFIX}
 
 MAINTAINER=	gerald@FreeBSD.org
@@ -16,6 +16,7 @@ LICENSE=	GPLv3 GPLv3RLE
 LICENSE_COMB=	multi
 
 DEPRECATED=	Unsupported by upstream. Use GCC 6 or newer instead.
+EXPIRATION_DATE=2018-07-13
 ONLY_FOR_ARCHS=	amd64 i386 powerpc sparc64
 
 LIB_DEPENDS=	libgmp.so:math/gmp \

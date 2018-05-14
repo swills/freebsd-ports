@@ -1,5 +1,5 @@
 # Created by: Cosmin Stroe <cstroe1@uic.edu>
-# $FreeBSD: head/sysutils/zidrav/Makefile 459319 2018-01-18 09:48:48Z dinoex $
+# $FreeBSD: head/sysutils/zidrav/Makefile 469875 2018-05-14 11:08:40Z dinoex $
 
 PORTNAME=	zidrav
 PORTVERSION=	1.2.0
@@ -13,8 +13,8 @@ COMMENT=	File corruption detection and repair program
 
 LICENSE=	GPLv2
 
-BROKEN_FreeBSD_12=	Regression C++
-
+USE_CXXSTD=	gnu++98
+CFLAGS=		-std=gnu++98
 ALL_TARGET=	zidrav
 PLIST_FILES=	bin/zidrav man/man1/zidrav.1.gz
 
