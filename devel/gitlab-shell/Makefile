@@ -1,14 +1,14 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/devel/gitlab-shell/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/devel/gitlab-shell/Makefile 469939 2018-05-14 18:00:12Z mfechner $
 
 PORTNAME=	gitlab-shell
-PORTVERSION=	6.0.4
+PORTVERSION=	7.1.2
 CATEGORIES=	devel
-
-LICENSE=	MIT
 
 MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	GitLab Shell handles git commands for GitLab
+
+LICENSE=	MIT
 
 BUILD_DEPENDS=	gem:devel/ruby-gems \
 		go>=1.5.3:lang/go
@@ -16,10 +16,12 @@ BUILD_DEPENDS=	gem:devel/ruby-gems \
 USE_GITLAB=	yes
 GL_ACCOUNT=	gitlab-org
 # Find the commit hash here: https://gitlab.com/gitlab-org/gitlab-shell/tags
-GL_COMMIT=	6feee1ccc265c765181533bbc719f91c364de2b3
+GL_COMMIT=	3a83767f650f996ef37382a21d05d8ed99873aa1
 
 USERS=		git
 GROUPS=		git
+
+INSTALL_TARGET=install-strip
 
 post-patch:
 	${MV} ${WRKSRC}/config.yml.example ${WRKSRC}/config.yml.sample

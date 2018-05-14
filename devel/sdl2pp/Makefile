@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/sdl2pp/Makefile 462007 2018-02-16 12:43:48Z amdmi3 $
+# $FreeBSD: head/devel/sdl2pp/Makefile 469949 2018-05-14 18:47:41Z amdmi3 $
 
 PORTNAME=	sdl2pp
 PORTVERSION=	0.16.0
@@ -16,8 +16,7 @@ GH_ACCOUNT=	libSDL2pp
 GH_PROJECT=	libSDL2pp
 
 USES=		compiler:c++11-lib cmake
-CMAKE_ARGS=	-DSDL2PP_ENABLE_LIVE_TESTS=OFF \
-		-DSDL2PP_WITH_WERROR=ON
+CMAKE_ARGS=	-DSDL2PP_ENABLE_LIVE_TESTS=OFF
 USE_SDL=	sdl2 image2 mixer2 ttf2
 TEST_TARGET=	test
 

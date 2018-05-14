@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/billardgl/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/billardgl/Makefile 469951 2018-05-14 19:00:30Z amdmi3 $
 
 PORTNAME=	billardgl
 PORTVERSION=	1.75
@@ -24,6 +24,8 @@ PORTDOCS=	README
 PORTDATA=	*
 PLIST_FILES=	bin/billardgl \
 		share/pixmaps/billardgl.bmp
+
+CXXFLAGS+=	-Wno-c++11-narrowing
 
 DESKTOP_ENTRIES="${PORTNAME}" \
 		"" \

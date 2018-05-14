@@ -1,7 +1,8 @@
-# $FreeBSD: head/textproc/rubygem-wikicloth081/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/textproc/rubygem-wikicloth081/Makefile 469933 2018-05-14 17:44:45Z mfechner $
 
 PORTNAME=	wikicloth
 PORTVERSION=	0.8.1
+PORTREVISION=	1
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	081
@@ -16,6 +17,7 @@ RUN_DEPENDS=	rubygem-builder>=0:devel/rubygem-builder \
 		rubygem-expression_parser>=0:math/rubygem-expression_parser \
 		rubygem-htmlentities>=0:textproc/rubygem-htmlentities \
 		rubygem-nokogiri>=0:textproc/rubygem-nokogiri \
+		rubygem-rinku>=0:www/rubygem-rinku \
 		rubygem-twitter-text>=0:textproc/rubygem-twitter-text
 
 PORTSCOUT=	limit:^0\.8\.1

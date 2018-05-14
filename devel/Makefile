@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 469706 2018-05-12 03:50:19Z gordon $
+# $FreeBSD: head/devel/Makefile 469947 2018-05-14 18:43:01Z swills $
 #
 
     COMMENT = Development utilities
@@ -4132,6 +4132,7 @@
     SUBDIR += pkg-info.el
     SUBDIR += pkgconf
     SUBDIR += plan9port
+    SUBDIR += plasma
     SUBDIR += plasma5-khotkeys
     SUBDIR += plasma5-kwrited
     SUBDIR += plasma5-plasma-sdk

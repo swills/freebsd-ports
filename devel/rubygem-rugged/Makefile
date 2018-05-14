@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-rugged/Makefile 455062 2017-11-28 16:39:23Z tz $
+# $FreeBSD: head/devel/rubygem-rugged/Makefile 469932 2018-05-14 17:42:14Z mfechner $
 
 PORTNAME=	rugged
-PORTVERSION=	0.26.0
+PORTVERSION=	0.27.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
