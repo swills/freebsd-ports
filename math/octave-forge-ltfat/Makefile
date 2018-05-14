@@ -1,9 +1,8 @@
 # Created by: Stephen Montgomery-Smith <stephen@FreeBSD.org>
-# $FreeBSD: head/math/octave-forge-ltfat/Makefile 468999 2018-05-03 23:42:35Z stephen $
+# $FreeBSD: head/math/octave-forge-ltfat/Makefile 469700 2018-05-12 02:16:58Z stephen $
 
 PORTNAME=	octave-forge-ltfat
-PORTVERSION=	2.1.2
-PORTREVISION=	6
+PORTVERSION=	2.3.0
 PORTEPOCH=	1
 CATEGORIES=	math
 
@@ -31,6 +30,7 @@ post-build:
 	${RM} ${WRKSRC}/Makefile ${WRKSRC}/configure
 	${RM} ${WRKSRC}/../inst/DESCRIPTION
 	${RM} ${WRKSRC}/../inst/ltfat/DESCRIPTION
+	${RM} ${WRKSRC}/../inst/ltfat/inst/DESCRIPTION
 	cd ${WRKDIR} && ${TAR} cfz ${DISTNAME}.tar.gz ${OCTSRC}
 
 .include <bsd.port.mk>

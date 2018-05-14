@@ -1,8 +1,7 @@
-# $FreeBSD: head/net-im/kopete/Makefile 468989 2018-05-03 21:19:07Z tcberner $
+# $FreeBSD: head/net-im/kopete/Makefile 469610 2018-05-11 06:09:39Z tcberner $
 
 PORTNAME=	kopete
 PORTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	net-im kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

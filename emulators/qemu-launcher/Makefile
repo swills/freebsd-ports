@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/qemu-launcher/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/emulators/qemu-launcher/Makefile 469444 2018-05-09 11:52:36Z tobik $
 
 PORTNAME=	qemu-launcher
 PORTVERSION=	1.7.4
@@ -9,6 +9,9 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GTK front-end to Qemu
+
+DEPRECATED=	Upstream is gone
+EXPIRATION_DATE=	2018-05-31
 
 RUN_DEPENDS=	p5-Gtk2>=0:x11-toolkits/p5-Gtk2 \
 		p5-Glade2>=0:x11-toolkits/p5-Glade2 \

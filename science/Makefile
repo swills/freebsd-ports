@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 469326 2018-05-07 19:36:58Z pi $
+# $FreeBSD: head/science/Makefile 469842 2018-05-14 00:16:52Z yuri $
 #
 
     COMMENT = Scientific ports
@@ -165,14 +165,18 @@
     SUBDIR += psychopy
     SUBDIR += pulseview
     SUBDIR += py-DendroPy
+    SUBDIR += py-MDAnalysis
+    SUBDIR += py-MDAnalysisTests
     SUBDIR += py-OpenFermion
     SUBDIR += py-cdo
     SUBDIR += py-coards
     SUBDIR += py-dlib
+    SUBDIR += py-gsd
     SUBDIR += py-h5py
     SUBDIR += py-hcluster
     SUBDIR += py-mdp
     SUBDIR += py-mlpy
+    SUBDIR += py-mmtf-python
     SUBDIR += py-netCDF4
     SUBDIR += py-obspy
     SUBDIR += py-openpiv

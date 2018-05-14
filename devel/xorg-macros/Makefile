@@ -1,8 +1,8 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/devel/xorg-macros/Makefile 451305 2017-10-05 12:25:10Z bapt $
+# $FreeBSD: head/devel/xorg-macros/Makefile 469527 2018-05-10 10:23:25Z zeising $
 
 PORTNAME=	xorg-macros
-PORTVERSION=	1.19.1
+PORTVERSION=	1.19.2
 CATEGORIES=	devel x11
 DISTNAME=	util-macros-${PORTVERSION}
 
@@ -12,6 +12,8 @@ COMMENT=	X.Org development aclocal macros
 LICENSE=	MIT
 
 XORG_CAT=	util
+
+NO_ARCH=	yes
 
 MAKE_ARGS=	pkgconfigdir="${PREFIX}/libdata/pkgconfig"
 

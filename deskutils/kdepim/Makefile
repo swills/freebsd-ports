@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/kdepim/Makefile 468558 2018-04-28 18:11:49Z tcberner $
+# $FreeBSD: head/deskutils/kdepim/Makefile 469851 2018-05-14 05:36:47Z tcberner $
 
 PORTNAME=	kdepim
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	deskutils kde
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,6 +1,6 @@
-# $FreeBSD: head/graphics/gstreamer1-plugins-opencv/Makefile 446388 2017-07-22 11:35:44Z kwm $
+# $FreeBSD: head/graphics/gstreamer1-plugins-opencv/Makefile 469466 2018-05-09 20:27:51Z swills $
 
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	graphics
 
 COMMENT=	GStreamer opencv real time computer vision plugin

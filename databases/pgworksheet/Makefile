@@ -1,5 +1,5 @@
 # Created by: Henri Michelon
-# $FreeBSD: head/databases/pgworksheet/Makefile 469100 2018-05-05 10:49:36Z antoine $
+# $FreeBSD: head/databases/pgworksheet/Makefile 469736 2018-05-12 16:32:42Z pi $
 
 PORTNAME=	pgworksheet
 PORTVERSION=	1.9
@@ -11,9 +11,6 @@ MAINTAINER=	portmaster@BSDforge.com
 COMMENT=	Simple PostreSQL GUI front end
 
 LICENSE=	GPLv2
-
-DEPRECATED=	Depends on BROKEN and expiring databases/py-pyPgSQL
-EXPIRATION_DATE=	2018-06-06
 
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pyPgSQL/libpq/__init__.py:databases/py-pyPgSQL@${FLAVOR}
 

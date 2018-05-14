@@ -1,8 +1,8 @@
 # Created by: Daniel Solsona <daniel@ish.com.au>, Guido Falsi <madpilot@FreeBSD.org>
-# $FreeBSD: head/sysutils/logstash6/Makefile 466867 2018-04-09 16:43:29Z feld $
+# $FreeBSD: head/sysutils/logstash6/Makefile 469572 2018-05-10 19:15:44Z feld $
 
 PORTNAME=	logstash
-PORTVERSION=	6.2.3
+PORTVERSION=	6.2.4
 PORTREVISION=	0
 CATEGORIES=	sysutils java
 MASTER_SITES=	http://artifacts.elastic.co/downloads/logstash/

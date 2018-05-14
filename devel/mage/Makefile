@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/mage/Makefile 468067 2018-04-23 00:22:17Z seanc $
+# $FreeBSD: head/devel/mage/Makefile 469455 2018-05-09 17:20:37Z seanc $
 
 PORTNAME=	mage
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.1.0
+DISTVERSION=	2.1
 CATEGORIES=	devel
 
 MAINTAINER=	seanc@FreeBSD.org
@@ -21,12 +21,9 @@ GH_TAG_COMMIT=	771ebed
 
 PLIST_FILES=	bin/mage
 
-pre-patch:
-	@${SED} -e "s|%%GH_TAGNAME%%|${GH_TAGNAME}|g; s|%%GH_TAG_COMMIT%%|${GH_TAG_COMMIT}|g" \
-		${FILESDIR}/patch-magefile.go > ${WRKSRC}/magefile.go.patch
-
-do-patch:
-	@cd ${WRKSRC} && ${PATCH} --forward --quiet -p2 < magefile.go.patch
+post-patch:
+	@${REINPLACE_CMD} -e "s|%%GH_TAGNAME%%|${GH_TAGNAME}|g; s|%%GH_TAG_COMMIT%%|${GH_TAG_COMMIT}|g" \
+		${WRKSRC}/magefile.go
 
 do-build:
 	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} CGO_ENABLED=0 GOPATH=${WRKSRC} \

@@ -1,12 +1,12 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/lang/php70-extensions/Makefile 441000 2017-05-16 13:37:51Z joneum $
+# $FreeBSD: head/lang/php70-extensions/Makefile 469857 2018-05-14 08:08:47Z tz $
 
 PORTNAME=	php70
 PORTVERSION=	1.1
 CATEGORIES=	lang
 PKGNAMESUFFIX=	-extensions
 
-MAINTAINER=	joneum@FreeBSD.org
+MAINTAINER=	tz@FreeBSD.org
 COMMENT=	"meta-port" to install PHP extensions
 
 USES=		metaport php

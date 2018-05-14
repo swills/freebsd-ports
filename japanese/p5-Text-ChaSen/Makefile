@@ -1,11 +1,11 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/japanese/p5-Text-ChaSen/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
+# $FreeBSD: head/japanese/p5-Text-ChaSen/Makefile 469913 2018-05-14 16:27:20Z sunpoet $
 
 PORTNAME=	Text-ChaSen
 PORTVERSION=	1.03
 PORTREVISION=	7
 CATEGORIES=	japanese textproc perl5
-MASTER_SITES=	OSDN/chasen-legacy/32224
+MASTER_SITES=	OSDN/chasen-legacy/56305
 DISTNAME=	chasen-${CHASEN_VERSION}
 
 MAINTAINER=	perl@FreeBSD.org

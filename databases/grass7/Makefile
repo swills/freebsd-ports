@@ -1,9 +1,9 @@
 # Created by: Mikael URANKAR and Loïc BARTOLETTI
-# $FreeBSD: head/databases/grass7/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/databases/grass7/Makefile 469923 2018-05-14 16:56:03Z krion $
 
 PORTNAME=	grass
 PORTVERSION=	7.4.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases geography
 MASTER_SITES=	http://grass.osgeo.org/%SUBDIR%/ \
 		http://grass.cict.fr/%SUBDIR%/ \
@@ -24,8 +24,6 @@ COMMENT=	Open source Geographical Information System (GIS)
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/GPL.TXT
-
-BROKEN=		fails to package
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.2:math/py-numpy@${PY_FLAVOR}
 LIB_DEPENDS=	libgdal.so:graphics/gdal \

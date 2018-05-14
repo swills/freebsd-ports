@@ -1,8 +1,8 @@
 # Created by: jjuanino@gmail.com
-# $FreeBSD: head/databases/sqldeveloper/Makefile 458148 2018-01-05 15:20:00Z pizzamig $
+# $FreeBSD: head/databases/sqldeveloper/Makefile 469743 2018-05-12 17:13:52Z pi $
 
 PORTNAME=	sqldeveloper
-PORTVERSION=	17.4.0.355.2349
+PORTVERSION=	18.1.0.095.1630
 DISTVERSIONSUFFIX=-no-jre
 CATEGORIES=	databases java
 MASTER_SITES=	#http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html

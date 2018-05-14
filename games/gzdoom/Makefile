@@ -1,7 +1,7 @@
-# $FreeBSD: head/games/gzdoom/Makefile 469338 2018-05-07 22:29:46Z jbeich $
+# $FreeBSD: head/games/gzdoom/Makefile 469450 2018-05-09 15:28:49Z kevans $
 
 PORTNAME=	gzdoom
-PORTVERSION=	3.3.0
+PORTVERSION=	3.3.2
 DISTVERSIONPREFIX=	g
 CATEGORIES=	games
 
@@ -42,10 +42,16 @@ PLIST_FILES=	bin/${PORTNAME} \
 
 .include "${.CURDIR}/../doom-data/Makefile.include"
 
+.include <bsd.port.pre.mk>
+
+.if ${OPSYS} == "FreeBSD" && ${OSVERSION} < 1100000 && ${MACHINE_ARCH} == "i386"
+STRIP=	# 10.4/i386 strip(1) is incapable of stripping the gzdoom binary
+.endif
+
 do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}
 	${INSTALL_PROGRAM} ${CONFIGURE_WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_DATA} ${CONFIGURE_WRKSRC}/${PORTNAME}.pk3 ${STAGEDIR}${DATADIR}
 	${INSTALL_DATA} ${FILESDIR}/${PORTNAME}.xpm ${STAGEDIR}${PREFIX}/share/pixmaps
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

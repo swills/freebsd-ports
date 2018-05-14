@@ -1,7 +1,7 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/graphics/gstreamer-plugins-opencv/Makefile 438490 2017-04-14 05:30:25Z jbeich $
+# $FreeBSD: head/graphics/gstreamer-plugins-opencv/Makefile 469466 2018-05-09 20:27:51Z swills $
 
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	graphics
 
 COMMENT=	Gstreamer opencv real time computer vision plugin

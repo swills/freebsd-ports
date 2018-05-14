@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/p5-Parse-Snort/Makefile 469213 2018-05-06 12:50:35Z sunpoet $
+# $FreeBSD: head/security/p5-Parse-Snort/Makefile 469476 2018-05-09 21:38:56Z sunpoet $
 
 PORTNAME=	Parse-Snort
-PORTVERSION=	0.7
+PORTVERSION=	0.8
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -14,6 +14,7 @@ LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Class-Accessor>=0:devel/p5-Class-Accessor
 RUN_DEPENDS:=	${BUILD_DEPENDS}
+TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
 
 NO_ARCH=	yes
 USES=		perl5

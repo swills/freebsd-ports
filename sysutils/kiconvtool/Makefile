@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/sysutils/kiconvtool/Makefile 458948 2018-01-14 00:25:54Z amdmi3 $
+# $FreeBSD: head/sysutils/kiconvtool/Makefile 469643 2018-05-11 15:02:30Z amdmi3 $
 
 PORTNAME=	kiconvtool
-PORTVERSION=	0.98
+PORTVERSION=	0.99
 CATEGORIES=	sysutils
 
 MAINTAINER=	amdmi3@FreeBSD.org

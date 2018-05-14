@@ -1,5 +1,5 @@
 # Created by: Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: head/math/suitesparse/Makefile 468330 2018-04-26 07:51:00Z yuri $
+# $FreeBSD: head/math/suitesparse/Makefile 469513 2018-05-10 07:20:08Z yuri $
 
 PORTNAME=	suitesparse
 DISTVERSION=	5.2.0
@@ -48,9 +48,9 @@ MAKE_ARGS+=	MY_METIS_LIB="-L${LOCALBASE}/lib -lmetis $(LDFLAGS)"
 post-patch:
 	@${RM} -r ${WRKSRC}/metis-5.1.0
 	@${FIND} -X ${WRKSRC} -type f -name 'Makefile' -or -name '*.mk' | ${XARGS} \
-	${REINPLACE_CMD} -i '' \
+		${REINPLACE_CMD} \
 			-e '\|^AR =|s|ar|${AR}|' \
-			-e '\|^BLAS =|s|=.*|= ${LDFLAGS} ${BLASLIB}|' \
+			-e '\|^ *BLAS =|s|=.*|= ${LDFLAGS} ${BLASLIB}|' \
 			-e '\|^CC =|d' \
 			-e '\|^CFLAGS =|{s|-O[1-9]\{0,1\}||g;s|=|= ${CFLAGS} $${PICFLAG} |;}' \
 			-e '\|^CHOLMOD_CONFIG =|s|=.*|= ${CHOLMOD_CONFIG}|' \
@@ -67,7 +67,7 @@ post-patch:
 			-e 's|/usr/local|${LOCALBASE}|g'
 	@${CP} -r ${WRKSRC} ${WRKSRC_SHARED}
 	@${FIND} -X ${WRKSRC_SHARED} -type f -name 'Makefile' -or -name '*.mk' | ${XARGS} \
-	${REINPLACE_CMD} -e 's|$$(CFLAGS)|$$(CFLAGS) $$(PICFLAG)|g'
+		${REINPLACE_CMD} -e 's|$$(CFLAGS)|$$(CFLAGS) $$(PICFLAG)|g'
 
 do-build:
 	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} PICFLAG= \

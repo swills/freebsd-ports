@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 469298 2018-05-07 17:14:43Z pi $
+# $FreeBSD: head/graphics/Makefile 469737 2018-05-12 16:35:27Z kwm $
 #
 
     COMMENT = Graphics tools and libraries
@@ -546,6 +546,7 @@
     SUBDIR += liblug
     SUBDIR += libmng
     SUBDIR += libmorph
+    SUBDIR += libmypaint
     SUBDIR += libnsbmp
     SUBDIR += libnsgif
     SUBDIR += libopenraw
@@ -635,6 +636,7 @@
     SUBDIR += mupdf
     SUBDIR += mxp
     SUBDIR += mypaint
+    SUBDIR += mypaint-brushes
     SUBDIR += nathive
     SUBDIR += natron
     SUBDIR += netpbm

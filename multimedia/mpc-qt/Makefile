@@ -1,9 +1,8 @@
-# $FreeBSD: head/multimedia/mpc-qt/Makefile 459995 2018-01-26 14:38:43Z jbeich $
+# $FreeBSD: head/multimedia/mpc-qt/Makefile 469606 2018-05-11 01:50:28Z jbeich $
 
 PORTNAME=	mpc-qt
 DISTVERSIONPREFIX=	v
-DISTVERSION=	17.11-10
-DISTVERSIONSUFFIX=	-g78c4816
+DISTVERSION=	18.03
 CATEGORIES=	multimedia audio
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -11,6 +10,7 @@ COMMENT=	Qt 5 clone of Media Player Classic based on libmpv
 
 LICENSE=	GPLv2
 
+BUILD_DEPENDS=	mpv>=0.28:multimedia/mpv
 LIB_DEPENDS=	libmpv.so:multimedia/mpv
 
 USE_GITHUB=	yes

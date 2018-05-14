@@ -1,8 +1,9 @@
 # Created by: David Shane Holden <dpejesh@yahoo.com>
-# $FreeBSD: head/devel/kronosnet/Makefile 469262 2018-05-07 04:26:18Z vanilla $
+# $FreeBSD: head/devel/kronosnet/Makefile 469705 2018-05-12 03:26:59Z vanilla $
 
 PORTNAME=	kronosnet
 PORTVERSION=	1.3
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	https://kronosnet.org/releases/
 
@@ -15,9 +16,9 @@ LIB_DEPENDS=	liblzo2.so:archivers/lzo2 \
 		liblz4.so:archivers/liblz4 \
 		libnspr4.so:devel/nspr \
 		libnss3.so:security/nss \
-		libqb.so:devel/libqb
+		libqb.so.0:devel/libqb
 
-USES=		autoreconf gmake libtool localbase pkgconfig ssl # tar:xz
+USES=		autoreconf gmake libtool localbase pkgconfig ssl
 USE_BINUTILS=	yes
 USE_GCC=	yes
 USE_LDCONFIG=	yes

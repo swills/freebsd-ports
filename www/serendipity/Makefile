@@ -1,12 +1,12 @@
 # Created by: babak@farrokhi.net
-# $FreeBSD: head/www/serendipity/Makefile 456517 2017-12-16 21:44:09Z tz $
+# $FreeBSD: head/www/serendipity/Makefile 469898 2018-05-14 15:10:06Z joneum $
 
 PORTNAME=	serendipity
 PORTVERSION=	2.1.1
 CATEGORIES=	www
 MASTER_SITES=	SF/php-blog/${PORTNAME}/${PORTVERSION}
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PHP based weblog software
 
 LICENSE=	BSD3CLAUSE

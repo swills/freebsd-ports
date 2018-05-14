@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/xprop/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/x11/xprop/Makefile 469552 2018-05-10 14:36:17Z zeising $
 
 PORTNAME=	xprop
-PORTVERSION=	1.2.2
+PORTVERSION=	1.2.3
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-requests-mock/Makefile 455713 2017-12-07 16:00:28Z sunpoet $
+# $FreeBSD: head/www/py-requests-mock/Makefile 469660 2018-05-11 16:53:38Z sunpoet $
 
 PORTNAME=	requests-mock
-PORTVERSION=	1.4.0
+PORTVERSION=	1.5.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: dchapes@ddm.on.ca
-# $FreeBSD: head/emulators/vice/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/emulators/vice/Makefile 469894 2018-05-14 14:19:26Z dinoex $
 
 PORTNAME=	vice
 PORTVERSION=	3.1
@@ -98,6 +98,7 @@ USE_GL+=	glu gl
 
 .if ${PORT_OPTIONS:MXAW}
 USE_XORG+=	xaw
+USES+=		readline
 .endif
 
 .if ${PORT_OPTIONS:MNLS}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/Makefile 466980 2018-04-10 18:17:02Z tcberner $
+# $FreeBSD: head/net-p2p/Makefile 469847 2018-05-14 02:55:52Z knu $
 #
 
     COMMENT = Peer-to-peer network applications
@@ -12,7 +12,6 @@
     SUBDIR += bitmessage
     SUBDIR += bnbt
     SUBDIR += btpd
-    SUBDIR += btsync
     SUBDIR += couchpotato
     SUBDIR += cpuminer
     SUBDIR += createtorrent
@@ -82,6 +81,7 @@
     SUBDIR += qtum
     SUBDIR += radarr
     SUBDIR += retroshare
+    SUBDIR += rslsync
     SUBDIR += rtorrent
     SUBDIR += shx
     SUBDIR += sonarr

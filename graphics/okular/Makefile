@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/okular/Makefile 468558 2018-04-28 18:11:49Z tcberner $
+# $FreeBSD: head/graphics/okular/Makefile 469738 2018-05-12 16:35:56Z tijl $
 
 PORTNAME=	okular
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	graphics kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-flipper-active_support_cache_store/Makefile 466586 2018-04-05 19:12:26Z sunpoet $
+# $FreeBSD: head/devel/rubygem-flipper-active_support_cache_store/Makefile 469822 2018-05-13 20:10:34Z sunpoet $
 
 PORTNAME=	flipper-active_support_cache_store
-PORTVERSION=	0.14.0
+PORTVERSION=	0.15.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

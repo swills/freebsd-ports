@@ -1,8 +1,8 @@
 # Created by: Sergei Kolobov <sergei@kolobov.com>
-# $FreeBSD: head/security/libgpg-error/Makefile 467857 2018-04-21 05:22:00Z novel $
+# $FreeBSD: head/security/libgpg-error/Makefile 469744 2018-05-12 17:46:14Z novel $
 
 PORTNAME=	libgpg-error
-PORTVERSION=	1.29
+PORTVERSION=	1.31
 CATEGORIES=	security devel
 MASTER_SITES=	GNUPG
 

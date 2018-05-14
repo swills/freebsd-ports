@@ -1,5 +1,5 @@
 # Created by: Nikolay Korotkiy <sikmir@gmail.com>
-# $FreeBSD: head/graphics/openorienteering-mapper/Makefile 467396 2018-04-15 15:45:12Z pi $
+# $FreeBSD: head/graphics/openorienteering-mapper/Makefile 469463 2018-05-09 19:37:26Z pi $
 
 PORTNAME=	openorienteering-mapper
 PORTVERSION=	0.8.1
@@ -11,8 +11,6 @@ COMMENT=	Map drawing program from OpenOrienteering
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN_FreeBSD_10=	fails to compile src/core/map.cpp:1118: no matching member function for call to 'applyOnAllObjects'
 
 LIB_DEPENDS=	libpolyclipping.so:graphics/polyclipping \
 		libproj.so:graphics/proj

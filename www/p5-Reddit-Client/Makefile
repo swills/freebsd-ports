@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/www/p5-Reddit-Client/Makefile 469095 2018-05-05 08:29:20Z ehaupt $
+# $FreeBSD: head/www/p5-Reddit-Client/Makefile 469525 2018-05-10 09:54:27Z ehaupt $
 
 PORTNAME=	Reddit-Client
-PORTVERSION=	1.242
+PORTVERSION=	1.244
 PORTEPOCH=	3
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN

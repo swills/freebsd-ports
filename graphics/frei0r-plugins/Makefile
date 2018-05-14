@@ -1,6 +1,6 @@
-# $FreeBSD: head/graphics/frei0r-plugins/Makefile 419145 2016-07-26 19:03:57Z olivierd $
+# $FreeBSD: head/graphics/frei0r-plugins/Makefile 469466 2018-05-09 20:27:51Z swills $
 
-PORTREVISION=	0
+PORTREVISION=	1
 PKGNAMESUFFIX=	-plugins
 
 COMMENT=	Frei0r meta-port

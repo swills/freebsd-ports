@@ -1,9 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/p5-XML-Compile-Tester/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-XML-Compile-Tester/Makefile 469637 2018-05-11 13:09:33Z wen $
 
 PORTNAME=	XML-Compile-Tester
-PORTVERSION=	0.90
-PORTREVISION=	1
+PORTVERSION=	0.91
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

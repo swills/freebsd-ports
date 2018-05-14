@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mariadb102-server/Makefile 469246 2018-05-06 19:23:25Z brnrd $
+# $FreeBSD: head/databases/mariadb102-server/Makefile 469621 2018-05-11 09:46:40Z brnrd $
 
 PORTNAME?=	mariadb
 PORTVERSION=	10.2.14
@@ -193,11 +193,10 @@ GSSAPI_BASE_IGNORE=	BASE_GSSAPI is not compatible with OpenSSL from ports. Use o
 
 .include <bsd.port.options.mk>
 
-.if ${OPSYS} != FreeBSD || ${OSVERSION} < 1101514 || \
-	${OSVERSION} >= 1200000 && ${OSVERSION} < 1200057
-SUB_LIST+=	LEGACY_LIMITS="" MODERN_LIMITS="@comment "
-.else
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200057
 SUB_LIST+=	LEGACY_LIMITS="@comment " MODERN_LIMITS=""
+.else
+SUB_LIST+=	LEGACY_LIMITS="" MODERN_LIMITS="@comment "
 .endif
 
 .include <bsd.port.pre.mk>

@@ -1,8 +1,9 @@
-# $FreeBSD: head/devel/gogs/Makefile 466182 2018-04-01 21:33:00Z sunpoet $
+# $FreeBSD: head/devel/gogs/Makefile 469456 2018-05-09 17:45:37Z krion $
 
 PORTNAME=	gogs
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.11.43
+PORTREVISION=	1
 CATEGORIES=	devel www
 
 MAINTAINER=	dg@syrec.org
@@ -12,7 +13,8 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	go:lang/go
-RUN_DEPENDS=	git:devel/git
+RUN_DEPENDS=	git:devel/git \
+		bash:shells/bash
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	gogits

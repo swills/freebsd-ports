@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/scilab-toolbox-sivp/Makefile 469420 2018-05-09 01:10:11Z swills $
+# $FreeBSD: head/math/scilab-toolbox-sivp/Makefile 469892 2018-05-14 14:10:39Z swills $
 
 PORTNAME=	sivp
 DISTVERSION=	1.0.0.r286
@@ -11,10 +11,11 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Scilab Image and Video Processing Toolbox
 
 BUILD_DEPENDS=	${SCILAB_CMD}:math/scilab
-LIB_DEPENDS=	libopencv_legacy.so:graphics/opencv
+LIB_DEPENDS=	libopencv_ml.so:graphics/opencv
 
 RUN_DEPENDS=	${SCILAB_CMD}:math/scilab
 
+BROKEN=		Does not build with newer opencv
 DEPRECATED=	Cannot build with newer opencv
 EXPIRATION_DATE=	2018-06-07
 

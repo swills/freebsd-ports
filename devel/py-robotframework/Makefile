@@ -1,8 +1,8 @@
 # Created by: Vladimir Chukharev
-# $FreeBSD: head/devel/py-robotframework/Makefile 439005 2017-04-21 06:21:46Z miwi $
+# $FreeBSD: head/devel/py-robotframework/Makefile 469716 2018-05-12 08:08:22Z joneum $
 
 PORTNAME=	robotframework
-PORTVERSION=	3.0.2
+PORTVERSION=	3.0.4
 CATEGORIES=	devel www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

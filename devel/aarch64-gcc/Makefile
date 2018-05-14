@@ -1,6 +1,5 @@
-# $FreeBSD: head/devel/aarch64-gcc/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/aarch64-gcc/Makefile 469834 2018-05-13 21:46:05Z kan $
 
-PORTREVISION=	1
 PKGNAMEPREFIX=	aarch64-
 PLIST=	${.CURDIR}/pkg-plist
 

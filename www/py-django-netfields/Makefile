@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/py-django-netfields/Makefile 457996 2018-01-03 18:31:38Z jrm $
+# $FreeBSD: head/www/py-django-netfields/Makefile 469560 2018-05-10 15:02:43Z miwi $
 
 PORTNAME=	django-netfields
 DISTVERSION=	0.8
+PORTREVSION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +13,7 @@ COMMENT=	Django PostgreSQL netfields implementation
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>0:www/py-django18@${FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>0:www/py-django111@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}netaddr>=0:net/py-netaddr@${FLAVOR} \
 		${PY_IPADDRESS}
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/xsetroot/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/x11/xsetroot/Makefile 469546 2018-05-10 14:18:46Z zeising $
 
 PORTNAME=	xsetroot
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org

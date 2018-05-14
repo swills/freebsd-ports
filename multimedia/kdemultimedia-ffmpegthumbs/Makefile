@@ -1,8 +1,7 @@
-# $FreeBSD: head/multimedia/kdemultimedia-ffmpegthumbs/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/kdemultimedia-ffmpegthumbs/Makefile 469610 2018-05-11 06:09:39Z tcberner $
 
 PORTNAME=	ffmpegthumbs
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	multimedia kde kde-applications
 PKGNAMEPREFIX=	kdemultimedia-
 

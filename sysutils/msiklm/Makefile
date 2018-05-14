@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/msiklm/Makefile 468599 2018-04-29 01:23:04Z jhale $
+# $FreeBSD: head/sysutils/msiklm/Makefile 469448 2018-05-09 14:05:22Z jhale $
 
 PORTNAME=	msiklm
-DISTVERSION=	g20180428
+DISTVERSION=	g20180507
 CATEGORIES=	sysutils
 
 MAINTAINER=	jhale@FreeBSD.org
@@ -20,7 +20,7 @@ DOS2UNIX_FILES=	README.md
 USE_GITHUB=	yes
 GH_ACCOUNT=	Gibtnix
 GH_PROJECT=	MSIKLM
-GH_TAGNAME=	1abdaf5
+GH_TAGNAME=	329c4b1
 
 MAKEFILE=	${FILESDIR}/Makefile.bsd
 PORTDOCS=	README.md

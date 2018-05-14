@@ -1,8 +1,8 @@
 # Created by: Sergei Vyshenski <svysh.fbsd@gmail.com>
-# $FreeBSD: head/security/p5-openxpki-i18n/Makefile 454921 2017-11-26 20:53:15Z dbaio $
+# $FreeBSD: head/security/p5-openxpki-i18n/Makefile 469532 2018-05-10 11:20:09Z wen $
 
 PORTNAME=	openxpki
-PORTVERSION=	1.19.4
+PORTVERSION=	2.0.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security perl5
 PKGNAMEPREFIX=	p5-

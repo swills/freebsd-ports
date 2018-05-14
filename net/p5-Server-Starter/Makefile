@@ -1,8 +1,7 @@
-# $FreeBSD: head/net/p5-Server-Starter/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-Server-Starter/Makefile 469807 2018-05-13 17:46:10Z joneum $
 
 PORTNAME=	Server-Starter
-PORTVERSION=	0.30
-PORTREVISION=	1
+PORTVERSION=	0.34
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:KAZUHO

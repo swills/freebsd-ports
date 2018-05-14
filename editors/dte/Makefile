@@ -1,8 +1,8 @@
-# $FreeBSD: head/editors/dte/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/editors/dte/Makefile 469724 2018-05-12 10:12:10Z krion $
 
 PORTNAME=	dte
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.6
+DISTVERSION=	1.7
 CATEGORIES=	editors
 
 MAINTAINER=	dg@syrec.org

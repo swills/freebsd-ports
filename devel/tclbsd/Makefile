@@ -1,8 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/devel/tclbsd/Makefile 414045 2016-04-26 11:57:42Z gahr $
+# $FreeBSD: head/devel/tclbsd/Makefile 469868 2018-05-14 09:15:18Z gahr $
 
 PORTNAME=	tclbsd
-PORTVERSION=	1.7
+PORTVERSION=	1.9.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

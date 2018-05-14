@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc6/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/lang/gcc6/Makefile 469788 2018-05-13 12:17:59Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	6.4.0
@@ -37,6 +37,8 @@ USES=		compiler cpe gmake iconv libtool makeinfo perl5 tar:xz
 USE_BINUTILS=	yes
 USE_PERL5=	build
 SSP_UNSAFE=	yes
+CFLAGS:=	${CFLAGS:N-mretpoline}
+CXXFLAGS:=	${CXXFLAGS:N-mretpoline}
 
 OPTIONS_DEFINE=		BOOTSTRAP GRAPHITE
 OPTIONS_DEFINE_i386=	JAVA

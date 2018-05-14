@@ -1,5 +1,5 @@
 # Created by: Denis Pokataev <catone@cpan.org>
-# $FreeBSD: head/textproc/pootle/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/pootle/Makefile 469756 2018-05-12 21:13:37Z rene $
 
 PORTNAME=	pootle
 PORTVERSION=	2.5.1.3
@@ -13,6 +13,8 @@ COMMENT=	User-friendly web portal for simple translation process
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		Conflicting Django 1.8 / 1.11 dependencies, ancient version
 
 RUN_DEPENDS=	translate-toolkit>=1.11.0:textproc/translate-toolkit \
 		${PYTHON_PKGNAMEPREFIX}south>=0.7.6:databases/py-south@${FLAVOR} \

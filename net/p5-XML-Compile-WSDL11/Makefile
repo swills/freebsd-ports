@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/p5-XML-Compile-WSDL11/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/net/p5-XML-Compile-WSDL11/Makefile 469760 2018-05-12 23:50:19Z sunpoet $
 
 PORTNAME=	XML-Compile-WSDL11
-PORTVERSION=	3.06
+PORTVERSION=	3.07
 CATEGORIES=	net www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -16,7 +16,7 @@ LICENSE_COMB=	dual
 BUILD_DEPENDS=	p5-Log-Report>=1.05:devel/p5-Log-Report \
 		p5-XML-Compile>=1.48:textproc/p5-XML-Compile \
 		p5-XML-Compile-Cache>=1.03:textproc/p5-XML-Compile-Cache \
-		p5-XML-Compile-SOAP>=3.16:net/p5-XML-Compile-SOAP
+		p5-XML-Compile-SOAP>=3.23:net/p5-XML-Compile-SOAP
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 NO_ARCH=	yes

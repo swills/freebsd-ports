@@ -1,12 +1,12 @@
 # Created by: José García Juanino <jjuanino@gmail.com>
-# $FreeBSD: head/net-im/purple-hangouts/Makefile 457718 2017-12-31 19:30:35Z pi $
+# $FreeBSD: head/net-im/purple-hangouts/Makefile 469790 2018-05-13 12:24:27Z dbaio $
 
 PORTNAME=	purple-hangouts
-PORTVERSION=	20171023
+PORTVERSION=	20180419
 CATEGORIES=	net-im
 MASTER_SITES=	https://bitbucket.org/EionRobb/${PORTNAME}/get/
 # Commit tag. Must be changed according with PORTVERSION.
-DISTNAME=	4ce9b3338381
+DISTNAME=	9d008f2ebe32
 
 MAINTAINER=	jjuanino@gmail.com
 COMMENT=	Hangouts plugin for libpurple

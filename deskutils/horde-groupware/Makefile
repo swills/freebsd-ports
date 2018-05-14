@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/horde-groupware/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/deskutils/horde-groupware/Makefile 469872 2018-05-14 09:34:05Z amdmi3 $
 
 PORTNAME=	groupware
 PORTVERSION=	5.2.22
@@ -10,7 +10,7 @@ COMMENT=	Horde Groupware
 
 CONFLICTS=	horde-webmail-[456]*
 
-USES=	horde cpe
+USES=		horde cpe
 USE_HORDE_BUILD=	Horde_Role
 USE_HORDE_RUN=	Horde_Role \
 		content \

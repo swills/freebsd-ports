@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/elixir-timex_ecto/Makefile 450687 2017-09-26 18:08:33Z olgeni $
+# $FreeBSD: head/databases/elixir-timex_ecto/Makefile 469796 2018-05-13 14:13:37Z olgeni $
 
 PORTNAME=	timex_ecto
-PORTVERSION=	3.2.1
+PORTVERSION=	3.3.0
 CATEGORIES=	databases
 PKGNAMEPREFIX=	elixir-
 

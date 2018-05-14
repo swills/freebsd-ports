@@ -1,5 +1,5 @@
 # Created by: <mr@freebsd.org>
-# $FreeBSD: head/comms/inspectrum/Makefile 469277 2018-05-07 08:53:49Z mr $
+# $FreeBSD: head/comms/inspectrum/Makefile 469547 2018-05-10 14:22:55Z mr $
 
 PORTNAME=	inspectrum
 PORTVERSION=	g20180321
@@ -16,12 +16,14 @@ LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 		libfftw3f.so:math/fftw3-float \
 		libliquid.so:comms/liquid-dsp
 
+CMAKE_INSTALL_PREFIX=   ${STAGEDIR}${PREFIX}
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	miek
 GH_TAGNAME=	11853b64062bda4f81926613f15d1d9654c227c8
 
-USE_QT5=	core buildtools_build
-USES=		cmake pkgconfig
+USE_QT5=	core buildtools_build concurrent widgets
+USES=		cmake pkgconfig qmake
 USE_LDCONFIG=	yes
 
 .include <bsd.port.mk>

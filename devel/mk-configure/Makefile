@@ -1,5 +1,5 @@
 # Created by: Mikolaj Golub <to.my.trociny@gmail.com>
-# $FreeBSD: head/devel/mk-configure/Makefile 464173 2018-03-11 13:57:00Z trociny $
+# $FreeBSD: head/devel/mk-configure/Makefile 469860 2018-05-14 08:34:05Z amdmi3 $
 
 PORTNAME=	mk-configure
 PORTVERSION=	0.30.0
@@ -34,7 +34,7 @@ do-install:
 		${MAKEFILE} ${_MAKE_JOBS} ${MAKE_ARGS} ${INSTALL_TARGET}
 	cd ${WRKSRC}/examples/ && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR}
 
-regression-test: build
+do-test:
 	${SETENV} NOSUBDIR="tests/pkg_config_2 tests/predopost_targets \
 		tests/lua_dirs examples/hello_lua examples/hello_lua2 \
 		examples/hello_lua3" CPPFLAGS='-I/usr/local/include' \

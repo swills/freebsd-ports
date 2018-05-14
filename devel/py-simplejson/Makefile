@@ -1,8 +1,8 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/devel/py-simplejson/Makefile 468025 2018-04-22 12:50:40Z sunpoet $
+# $FreeBSD: head/devel/py-simplejson/Makefile 469824 2018-05-13 20:10:45Z sunpoet $
 
 PORTNAME=	simplejson
-PORTVERSION=	3.14.0
+PORTVERSION=	3.15.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

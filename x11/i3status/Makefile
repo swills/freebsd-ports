@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11/i3status/Makefile 458739 2018-01-11 14:18:01Z danfe $
+# $FreeBSD: head/x11/i3status/Makefile 469867 2018-05-14 09:14:43Z bapt $
 
 PORTNAME=	i3status
-PORTVERSION=	2.11
-PORTREVISION=	1
+PORTVERSION=	2.12
 CATEGORIES=	x11
 MASTER_SITES=	http://i3wm.org/i3status/
 

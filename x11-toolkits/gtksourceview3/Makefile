@@ -1,8 +1,8 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/gtksourceview3/Makefile 465547 2018-03-25 21:48:32Z brd $
+# $FreeBSD: head/x11-toolkits/gtksourceview3/Makefile 469689 2018-05-11 20:11:49Z pi $
 
 PORTNAME=	gtksourceview
-PORTVERSION=	3.22.2
+PORTVERSION=	3.24.7
 CATEGORIES=	x11-toolkits gnome
 MASTER_SITES=	GNOME
 PKGNAMESUFFIX=	3
@@ -34,6 +34,8 @@ LIBS+=		-L${LOCALBASE}/lib
 INSTALL_TARGET=	install-strip
 
 post-patch:
+	@${REINPLACE_CMD} -e 's|tests testsuite||g' \
+		${WRKSRC}/Makefile.in
 	@${REINPLACE_CMD} -e 's|--warn-all||g' \
 		${WRKSRC}/gtksourceview/Makefile.in
 

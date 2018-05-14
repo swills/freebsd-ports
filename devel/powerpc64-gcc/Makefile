@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/powerpc64-gcc/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/devel/powerpc64-gcc/Makefile 469834 2018-05-13 21:46:05Z kan $
 
 PORTNAME=	gcc
-PORTVERSION=	6.3.0
-PORTREVISION=	5
+PORTVERSION=	6.4.0
 CATEGORIES=	devel
 MASTER_SITES=	GCC/releases/gcc-${DISTVERSION}
 PKGNAMEPREFIX?=	powerpc64-
@@ -19,7 +18,7 @@ LIB_DEPENDS=	libgmp.so:math/gmp \
 BUILD_DEPENDS=	${BU_PREFIX}-as:devel/${PKGNAMEPREFIX}binutils
 RUN_DEPENDS=	${BU_PREFIX}-as:devel/${PKGNAMEPREFIX}binutils
 
-USES=	gmake iconv libtool tar:bzip2 makeinfo compiler
+USES=	gmake iconv libtool tar:xz makeinfo compiler
 PLIST_SUB=	TARGETARCH=${PKGNAMEPREFIX:C/-//g} \
 		OPSYS=${OPSYS:tl} \
 		GCC_TARGET=${GCC_TARGET} \
@@ -42,6 +41,7 @@ TARGETARCH=${PKGNAMEPREFIX:C/-//g}
 GNU_CONFIGURE=	yes
 CONFIGURE_OUTSOURCE=	yes
 CONFIGURE_ARGS+=--target=${GCC_TARGET} --disable-nls --enable-languages=c,c++ \
+		--enable-gnu-indirect-function \
 		--without-headers \
 		--with-gmp=${LOCALBASE} \
 		--with-pkgversion="FreeBSD Ports Collection for ${PKGNAMEPREFIX:C/-//g}" \

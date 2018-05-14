@@ -1,8 +1,8 @@
 # Created by: Vladimir Chukharev
-# $FreeBSD: head/devel/py-robotframework-ride/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-robotframework-ride/Makefile 469715 2018-05-12 08:07:41Z joneum $
 
 PORTNAME=	robotframework-ride
-PORTVERSION=	1.5.2
+PORTVERSION=	1.5.2.1
 CATEGORIES=	devel www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

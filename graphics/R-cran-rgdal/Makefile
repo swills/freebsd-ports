@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/graphics/R-cran-rgdal/Makefile 465668 2018-03-27 08:14:19Z tota $
+# $FreeBSD: head/graphics/R-cran-rgdal/Makefile 469506 2018-05-10 06:30:39Z tota $
 
 PORTNAME=	rgdal
-DISTVERSION=	1.2-18
+DISTVERSION=	1.2-20
 CATEGORIES=	graphics
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

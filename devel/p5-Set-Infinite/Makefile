@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/devel/p5-Set-Infinite/Makefile 381151 2015-03-12 23:00:02Z adamw $
+# $FreeBSD: head/devel/p5-Set-Infinite/Makefile 469718 2018-05-12 09:04:03Z amdmi3 $
 
 PORTNAME=	Set-Infinite
 PORTVERSION=	0.65
@@ -11,14 +11,19 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Sets of intervals
 
-OPTIONS_DEFINE=	DOCS
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 PORTDOCS=	Changes README TODO
 
-post-install:
+OPTIONS_DEFINE=	DOCS
+
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	(cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR})
 

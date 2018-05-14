@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/py-aiohttp-wsgi/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-aiohttp-wsgi/Makefile 469446 2018-05-09 12:23:50Z wg $
 
 PORTNAME=	aiohttp-wsgi
-PORTVERSION=	0.7.0
+PORTVERSION=	0.8.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

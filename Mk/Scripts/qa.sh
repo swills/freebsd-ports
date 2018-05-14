@@ -1,6 +1,6 @@
 #!/bin/sh
 # MAINTAINER: portmgr@FreeBSD.org
-# $FreeBSD: head/Mk/Scripts/qa.sh 463782 2018-03-07 09:17:33Z mat $
+# $FreeBSD: head/Mk/Scripts/qa.sh 469589 2018-05-10 23:00:15Z bdrewery $
 
 if [ -z "${STAGEDIR}" -o -z "${PREFIX}" -o -z "${LOCALBASE}" ]; then
 	echo "STAGEDIR, PREFIX, LOCALBASE required in environment." >&2
@@ -210,7 +210,7 @@ stripped() {
 	find ${STAGEDIR} -type f ! -name '*.a' ! -name '*.o' \
 	    -exec readelf -S {} + 2>/dev/null | awk '\
 	    /File:/ {sub(/File: /, "", $0); file=$0} \
-	    /SYMTAB/ {print file}' |
+	    /[[:space:]]\.debug_info[[:space:]]*PROGBITS/ {print file}' |
 	    while read f; do
 		warn "'${f#${STAGEDIR}${PREFIX}/}' is not stripped consider trying INSTALL_TARGET=install-strip or using \${STRIP_CMD}"
 	done

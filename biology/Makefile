@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 468214 2018-04-24 14:16:46Z jwb $
+# $FreeBSD: head/biology/Makefile 469604 2018-05-11 00:05:16Z jrm $
 #
 
     COMMENT = Biology
@@ -42,6 +42,7 @@
     SUBDIR += grappa
     SUBDIR += hmmer
     SUBDIR += htslib
+    SUBDIR += hyphy
     SUBDIR += iolib
     SUBDIR += iqtree
     SUBDIR += jalview

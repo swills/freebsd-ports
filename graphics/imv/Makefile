@@ -1,9 +1,9 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/graphics/imv/Makefile 466770 2018-04-08 06:08:43Z tobik $
+# $FreeBSD: head/graphics/imv/Makefile 469833 2018-05-13 21:13:45Z fernape $
 
 PORTNAME=	imv
-PORTVERSION=	2.1.3
 DISTVERSIONPREFIX=	v
+DISTVERSION=	3.0.0
 CATEGORIES=	graphics
 
 MAINTAINER=	ports@FreeBSD.org
@@ -11,6 +11,7 @@ COMMENT=	Simple image viewer
 
 LICENSE=	GPLv2
 
+BUILD_DEPENDS=	asciidoc:textproc/asciidoc
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreeimage.so:graphics/freeimage
 TEST_DEPENDS=	${LOCALBASE}/lib/libcmocka.so:sysutils/cmocka
@@ -27,15 +28,9 @@ TEST_TARGET=	check
 MAKE_ARGS=	V=1
 
 PLIST_FILES=	bin/imv \
+		etc/imv_config \
 		man/man1/imv.1.gz \
+		man/man5/imv.5.gz \
 		share/applications/imv.desktop
-
-do-install:
-	@${MKDIR} ${STAGEDIR}${PREFIX}/bin
-	${INSTALL_PROGRAM} ${WRKSRC}/build/imv \
-		${STAGEDIR}${PREFIX}/bin
-	${INSTALL_DATA} ${WRKSRC}/files/imv.desktop \
-		${STAGEDIR}${PREFIX}/share/applications
-	${INSTALL_MAN} ${WRKSRC}/doc/imv.1 ${STAGEDIR}${MAN1PREFIX}/man/man1
 
 .include <bsd.port.mk>

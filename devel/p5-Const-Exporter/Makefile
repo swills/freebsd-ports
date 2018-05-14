@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Const-Exporter/Makefile 468958 2018-05-03 18:40:46Z sunpoet $
+# $FreeBSD: head/devel/p5-Const-Exporter/Makefile 469475 2018-05-09 21:38:50Z sunpoet $
 
 PORTNAME=	Const-Exporter
-PORTVERSION=	0.4.0
+PORTVERSION=	0.4.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN

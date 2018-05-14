@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/dash.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/devel/dash.el/Makefile 469787 2018-05-13 11:33:47Z pi $
 
 PORTNAME=	dash.el
-PORTVERSION=	2.13.0
-PORTREVISION=	2
+PORTVERSION=	2.14.1
 CATEGORIES=	devel elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
