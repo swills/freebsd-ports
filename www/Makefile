@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 469911 2018-05-14 15:54:31Z miwi $
+# $FreeBSD: head/www/Makefile 469948 2018-05-14 18:45:27Z seanc $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -340,6 +340,7 @@
     SUBDIR += kohana
     SUBDIR += kpartsplugin
     SUBDIR += kplaylist
+    SUBDIR += kurly
     SUBDIR += kwebkitpart
     SUBDIR += larbin
     SUBDIR += libapreq2

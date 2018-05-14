@@ -1,5 +1,5 @@
 # Created by: Max Laier <max@love2party.net>
-# $FreeBSD: head/sysutils/pftop/Makefile 441813 2017-05-26 20:01:01Z dim $
+# $FreeBSD: head/sysutils/pftop/Makefile 469946 2018-05-14 18:30:08Z amdmi3 $
 
 PORTNAME=	pftop
 PORTVERSION=	0.7
@@ -33,7 +33,7 @@ EXTRA_PATCHES+=	${FILESDIR}/extra-patch-cache.c \
 		${FILESDIR}/extra-patch-config.h \
 		${FILESDIR}/extra-patch-pftop.c \
 		${FILESDIR}/extra-patch-sf-gencode.c
-.if ${OPSYS} == FreeBSD && ${OSVERSION} > 1000017
+.if ${OPSYS} == FreeBSD
 CFLAGS+=	-DHAVE_FINE_GRAINED_LOCKING=1
 .endif
 

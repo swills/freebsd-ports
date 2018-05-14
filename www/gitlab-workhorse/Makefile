@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <tz@FreeBSD.org>
-# $FreeBSD: head/www/gitlab-workhorse/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/www/gitlab-workhorse/Makefile 469940 2018-05-14 18:02:21Z mfechner $
 
 PORTNAME=	gitlab-workhorse
 PORTVERSION=	4.1.0

@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/sdl-ball/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/sdl-ball/Makefile 469950 2018-05-14 18:54:35Z amdmi3 $
 
 PORTNAME=	sdl-ball
 PORTVERSION=	1.03
@@ -20,7 +20,7 @@ USES=		dos2unix gmake tar:xz
 USE_SDL=	sdl mixer image ttf
 USE_GL=		gl glu
 MAKE_ENV=	DATADIR=${DATADIR}/
-DOS2UNIX_FILES=	main.cpp
+DOS2UNIX_FILES=	main.cpp menu.cpp
 
 PLIST_FILES=	bin/${PORTNAME} \
 		share/applications/${PORTNAME}.desktop \
