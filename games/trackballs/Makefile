@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/games/trackballs/Makefile 464486 2018-03-14 11:09:00Z martymac $
+# $FreeBSD: head/games/trackballs/Makefile 470284 2018-05-18 10:11:44Z martymac $
 
 PORTNAME=	trackballs
-PORTVERSION=	1.3.0
+PORTVERSION=	1.3.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 

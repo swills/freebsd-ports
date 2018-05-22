@@ -1,5 +1,5 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/emulators/wine-mono-devel/Makefile 447533 2017-08-08 06:32:26Z gerald $
+# $FreeBSD: head/emulators/wine-mono-devel/Makefile 470368 2018-05-19 07:59:57Z se $
 
 PORTNAME=	wine-mono
 DISTVERSION=	4.7.1
@@ -15,10 +15,12 @@ COMMENT=	Mono .NET implementation for Wine development branch (HTML support)
 LICENSE=	MIT GPLv2 LGPL20
 LICENSE_COMB=	multi
 
+CONFLICTS_INSTALL=	wine-mono-[0-9]*
+
 NO_BUILD=	yes
 PLIST_SUB+=	MONO_VERSION="${DISTVERSION}"
 DATADIR=	${PREFIX}/share/wine
-PLIST_FILES=	%%DATADIR%%/mono/wine-mono-%%MONO_VERSION%%.msi
+PLIST_FILES=	${DATADIR}/mono/wine-mono-${DISTVERSION}.msi
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}/mono

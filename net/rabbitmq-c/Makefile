@@ -1,5 +1,5 @@
 # Created by: Geoff Garside
-# $FreeBSD: head/net/rabbitmq-c/Makefile 454903 2017-11-26 06:18:25Z antoine $
+# $FreeBSD: head/net/rabbitmq-c/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	rabbitmq-c
 PORTVERSION=	0.8.0
@@ -12,7 +12,7 @@ COMMENT=	RabbitMQ C AMQP client library
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE-MIT
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}simplejson>=2.0:devel/py-simplejson
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}simplejson>=2.0:devel/py-simplejson@${PY_FLAVOR}
 
 CONFLICTS=	rabbitmq-c-devel-[0-9]*
 

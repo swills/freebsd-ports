@@ -1,8 +1,8 @@
 # Created by: Peter Schuller <peter.schuller@infidyne.com>
-# $FreeBSD: head/devel/py-gevent/Makefile 469761 2018-05-12 23:50:24Z sunpoet $
+# $FreeBSD: head/devel/py-gevent/Makefile 470382 2018-05-19 11:06:46Z sunpoet $
 
 PORTNAME=	gevent
-PORTVERSION=	1.3.0
+PORTVERSION=	1.3.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/py-yubikey-manager/Makefile 468077 2018-04-23 07:48:34Z bapt $
+# $FreeBSD: head/security/py-yubikey-manager/Makefile 470205 2018-05-17 08:32:57Z bapt $
 
 PORTNAME=	yubikey-manager
 PORTVERSION=	0.6.1
@@ -6,7 +6,7 @@ CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	bapt@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python library and command line tool for configuring a YubiKey
 
 LICENSE=	GPLv3

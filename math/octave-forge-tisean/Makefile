@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-tisean/Makefile 468999 2018-05-03 23:42:35Z stephen $
+# $FreeBSD: head/math/octave-forge-tisean/Makefile 469973 2018-05-14 21:34:01Z stephen $
 
 PORTNAME=	octave-forge-tisean
 PORTVERSION=	0.2.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org
@@ -11,8 +11,6 @@ COMMENT=	Octave-forge package ${OCTAVE_PKGNAME}
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKDIR}/${OCTSRC}/COPYING
-
-BROKEN=		does not build with octave 4.4.0
 
 RUN_DEPENDS+=	${TARBALLS_DIR}/signal.tar.gz:math/octave-forge-signal
 

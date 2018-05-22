@@ -1,8 +1,8 @@
 # Created by: Francisco Cabrita <include@npf.pt.freebsd.org>
-# $FreeBSD: head/www/joomla3/Makefile 465813 2018-03-28 14:45:23Z ler $
+# $FreeBSD: head/www/joomla3/Makefile 470153 2018-05-16 21:39:22Z ler $
 
 PORTNAME=	joomla
-PORTVERSION=	3.8.6
+PORTVERSION=	3.8.7
 CATEGORIES=	www
 PKGNAMESUFFIX=	3
 

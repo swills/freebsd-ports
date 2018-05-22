@@ -1,5 +1,5 @@
 # Created by: Michael Moll <kvedulv@kvedulv.de>
-# $FreeBSD: head/sysutils/rubygem-smart_proxy_salt/Makefile 469319 2018-05-07 19:20:50Z sunpoet $
+# $FreeBSD: head/sysutils/rubygem-smart_proxy_salt/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	smart_proxy_salt
 PORTVERSION=	2.1.9
@@ -12,7 +12,7 @@ COMMENT=	SaltStack Plug-In for Foreman's Smart Proxy
 LICENSE=	GPLv3
 
 RUN_DEPENDS=	foreman-proxy>=1.8.0:net/foreman-proxy \
-		${PYTHON_PKGNAMEPREFIX}salt>0:sysutils/py-salt
+		${PYTHON_PKGNAMEPREFIX}salt>0:sysutils/py-salt@${PY_FLAVOR}
 
 NO_ARCH=	yes
 

@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-fonts/font-awesome/Makefile 464976 2018-03-19 03:23:08Z swills $
+# $FreeBSD: head/x11-fonts/font-awesome/Makefile 470044 2018-05-15 18:40:40Z joneum $
 
 PORTNAME=	font-awesome
-DISTVERSION=	5.0.8
+DISTVERSION=	5.0.13
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://use.fontawesome.com/releases/v${DISTVERSION}/
 DISTNAME=	fontawesome-free-${DISTVERSION}

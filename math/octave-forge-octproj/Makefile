@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-octproj/Makefile 468999 2018-05-03 23:42:35Z stephen $
+# $FreeBSD: head/math/octave-forge-octproj/Makefile 470478 2018-05-20 19:13:50Z stephen $
 
 PORTNAME=	octave-forge-octproj
 PORTVERSION=	1.1.5
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org
@@ -11,8 +11,6 @@ COMMENT=	Octave-forge package ${OCTAVE_PKGNAME}
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKDIR}/${OCTSRC}/COPYING
-
-BROKEN=		does not build with octave version >= 4.2.1
 
 # OCTSRC is the name of the directory of the package.
 # It is usually ${OCTAVE_PKGNAME} or ${DISTNAME}.

@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/graphics/impressive/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/graphics/impressive/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	impressive
 PORTVERSION=	0.11.1
@@ -14,8 +14,8 @@ COMMENT=	Stylish way of giving presentations
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/license.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PyOpenGL>=0:graphics/py-PyOpenGL \
-		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PyOpenGL>=0:graphics/py-PyOpenGL@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR} \
 		xpdf:graphics/xpdf \
 		pdftk:print/pdftk \
 		xdg-open:devel/xdg-utils \

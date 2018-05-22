@@ -1,5 +1,5 @@
 # Created by: Dryice Liu <dryice@liu.com.cn>
-# $FreeBSD: head/textproc/xml-parse.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/textproc/xml-parse.el/Makefile 470213 2018-05-17 09:56:55Z tz $
 
 PORTNAME=	xml-parse.el
 PORTVERSION=	1.5
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=
 EXTRACT_ONLY=
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Code to efficiently read/write XML data with Elisp
 
 USES=		emacs

@@ -1,9 +1,9 @@
 # Created by: Martin Wilke <miwi@FreeBSD.org>
-# $FreeBSD: head/multimedia/qt5-phonon4-gstreamer/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/multimedia/qt5-phonon4-gstreamer/Makefile 470354 2018-05-19 06:26:01Z tcberner $
 
 PORTNAME=	phonon
 PORTVERSION=	4.9.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTNAME}-backend-gstreamer/${PORTVERSION}
 PKGNAMEPREFIX=	qt5-

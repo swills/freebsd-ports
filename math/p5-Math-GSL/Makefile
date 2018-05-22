@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/math/p5-Math-GSL/Makefile 457176 2017-12-24 15:41:58Z danfe $
+# $FreeBSD: head/math/p5-Math-GSL/Makefile 470380 2018-05-19 11:06:36Z sunpoet $
 
 PORTNAME=	Math-GSL
 PORTVERSION=	0.39
@@ -25,6 +25,6 @@ USE_PERL5=	modbuild
 USES=		perl5
 
 post-install:
-	${FIND} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Math/GSL/ -name "*.so" | ${XARGS} ${STRIP_CMD}
+	${FIND} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Math/GSL/ -name "*.so" -exec ${STRIP_CMD} {} +
 
 .include <bsd.port.mk>

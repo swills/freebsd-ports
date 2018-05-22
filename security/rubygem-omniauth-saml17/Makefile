@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-omniauth-saml17/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/security/rubygem-omniauth-saml17/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	omniauth-saml
 PORTVERSION=	1.7.0

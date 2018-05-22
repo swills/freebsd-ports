@@ -1,9 +1,7 @@
-# $FreeBSD: head/multimedia/simplescreenrecorder/Makefile 469021 2018-05-04 11:41:28Z jbeich $
+# $FreeBSD: head/multimedia/simplescreenrecorder/Makefile 470623 2018-05-22 15:48:12Z yuri $
 
 PORTNAME=	simplescreenrecorder
-DISTVERSION=	0.3.10-2
-DISTVERSIONSUFFIX=	-g7439813
-PORTREVISION=	1
+DISTVERSION=	0.3.11
 CATEGORIES=	multimedia
 
 MAINTAINER=	yuri@FreeBSD.org

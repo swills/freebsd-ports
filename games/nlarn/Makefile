@@ -1,5 +1,5 @@
 # Created by: Martin Tournoij <martin@arp242.net>
-# $FreeBSD: head/games/nlarn/Makefile 426590 2016-11-20 13:45:56Z marino $
+# $FreeBSD: head/games/nlarn/Makefile 470213 2018-05-17 09:56:55Z tz $
 
 PORTNAME=	nlarn
 PORTVERSION=	0.7.2
@@ -7,7 +7,7 @@ PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	SF
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Roguelike game and as such a remake of the classic game Larn
 
 LICENSE=	GPLv3

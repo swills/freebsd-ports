@@ -1,5 +1,5 @@
 # Created by: Patrick Dung (patrick_dkt@yahoo.com.hk)
-# $FreeBSD: head/print/pdftk/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/print/pdftk/Makefile 470199 2018-05-17 06:32:17Z mat $
 
 PORTNAME=	pdftk
 PORTVERSION=	2.02
@@ -12,6 +12,8 @@ MAINTAINER=	mat@FreeBSD.org
 COMMENT=	Simple tool for doing everyday things with PDF documents
 
 LICENSE=	GPLv2
+
+BROKEN_FreeBSD_12=	gcj6: internal compiler error: Segmentation fault (program ecj1)
 
 # Get GCC version suffix without the dot in USE_GCC
 CSUFF=		${_USE_GCC:S/.//}

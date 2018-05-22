@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/git-cinnabar/Makefile 466576 2018-04-05 17:35:00Z jbeich $
+# $FreeBSD: head/devel/git-cinnabar/Makefile 470437 2018-05-20 00:18:52Z jbeich $
 
 PORTNAME=	git-cinnabar
-DISTVERSION=	0.5.0b2-16
-DISTVERSIONSUFFIX=	-g1113749 # custom release branch
+DISTVERSION=	0.5.0b3
 CATEGORIES=	devel
 
 MAINTAINER=	jbeich@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 469636 2018-05-11 12:54:25Z pi $
+# $FreeBSD: head/net/Makefile 470375 2018-05-19 11:06:09Z sunpoet $
 #
 
     COMMENT = Networking tools
@@ -1044,6 +1044,7 @@
     SUBDIR += py-gspread
     SUBDIR += py-gspreadsheet
     SUBDIR += py-haproxy-log-analysis
+    SUBDIR += py-haproxyctl
     SUBDIR += py-httpstat
     SUBDIR += py-impacket
     SUBDIR += py-ipaddress
@@ -1228,6 +1229,7 @@
     SUBDIR += rubygem-fog-atmos
     SUBDIR += rubygem-fog-aws
     SUBDIR += rubygem-fog-aws1
+    SUBDIR += rubygem-fog-aws2
     SUBDIR += rubygem-fog-azure
     SUBDIR += rubygem-fog-brightbox
     SUBDIR += rubygem-fog-cloudatcost

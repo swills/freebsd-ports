@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-fuzzy-logic-toolkit/Makefile 469701 2018-05-12 02:32:52Z stephen $
+# $FreeBSD: head/math/octave-forge-fuzzy-logic-toolkit/Makefile 469981 2018-05-14 23:28:48Z stephen $
 
 PORTNAME=	octave-forge-fuzzy-logic-toolkit
 PORTVERSION=	0.4.5
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org
@@ -12,11 +12,11 @@ COMMENT=	Octave-forge package ${OCTAVE_PKGNAME}
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKDIR}/${OCTSRC}/COPYING
 
-BROKEN=		parse error when installing with octave 4.4.0
-
 # OCTSRC is the name of the directory of the package.
 # It is usually ${OCTAVE_PKGNAME} or ${DISTNAME}.
 OCTSRC=		${OCTAVE_PKGNAME}
+
+WRKSRC=		${WRKDIR}/${OCTSRC}	# Only required so that patch will apply.
 
 .include "${.CURDIR}/../../Mk/bsd.octave.mk"
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 469805 2018-05-13 16:43:37Z yuri $
+# $FreeBSD: head/math/Makefile 470531 2018-05-21 11:10:10Z yuri $
 #
 
     COMMENT = Mathematics
@@ -620,6 +620,7 @@
     SUBDIR += pecl-stats
     SUBDIR += pecl-stats2
     SUBDIR += pecl-trader
+    SUBDIR += petiga
     SUBDIR += php56-bcmath
     SUBDIR += php56-gmp
     SUBDIR += php70-bcmath
@@ -669,6 +670,7 @@
     SUBDIR += py-gmpy2
     SUBDIR += py-gnuplot
     SUBDIR += py-graphillion
+    SUBDIR += py-igakit
     SUBDIR += py-igraph
     SUBDIR += py-intspan
     SUBDIR += py-keras
@@ -707,6 +709,7 @@
     SUBDIR += py-random2
     SUBDIR += py-roman
     SUBDIR += py-scientific
+    SUBDIR += py-scikit-umfpack
     SUBDIR += py-seaborn
     SUBDIR += py-statsmodels
     SUBDIR += py-svgmath

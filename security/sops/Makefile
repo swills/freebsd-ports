@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/sops/Makefile 467293 2018-04-14 07:16:06Z yuri $
+# $FreeBSD: head/security/sops/Makefile 470410 2018-05-19 14:50:04Z joneum $
 
 PORTNAME=	sops
-DISTVERSION=	3.0.3
+DISTVERSION=	3.0.5
 CATEGORIES=	security editors
 
 MAINTAINER=	dg@syrec.org

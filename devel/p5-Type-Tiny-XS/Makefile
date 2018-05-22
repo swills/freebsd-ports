@@ -1,9 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Type-Tiny-XS/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Type-Tiny-XS/Makefile 470546 2018-05-21 15:00:39Z sunpoet $
 
 PORTNAME=	Type-Tiny-XS
-PORTVERSION=	0.012
-PORTREVISION=	1
+PORTVERSION=	0.014
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:TOBYINK
@@ -14,6 +13,7 @@ COMMENT=	Tiny, yet Moo(se)-compatible type constraint
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_PERL5=	configure
 USES=		perl5

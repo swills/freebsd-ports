@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/py-hared/Makefile 465754 2018-03-27 21:06:15Z dvl $
+# $FreeBSD: head/sysutils/py-hared/Makefile 470219 2018-05-17 14:12:18Z dvl $
 
 PORTNAME=	hared
 PORTVERSION=	1.0
+PORTREVISION=	1
 PORTREVISION=	1
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
@@ -18,8 +19,6 @@ USE_PYTHON=	distutils autoplist
 ETCDIR=		${PREFIX}/etc
 
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}paho-mqtt>0:net/py-paho-mqtt@${PY_FLAVOR}
-
-PLIST_FILES+=	"@sample %%ETCDIR%%/hared.ini.sample"
 
 pre-install:
 	${INSTALL_DATA} ${FILESDIR}/hared.conf ${STAGEDIR}${ETCDIR}/hared.ini.sample

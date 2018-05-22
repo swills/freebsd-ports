@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 469948 2018-05-14 18:45:27Z seanc $
+# $FreeBSD: head/www/Makefile 470602 2018-05-22 09:48:46Z brnrd $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -42,6 +42,7 @@
     SUBDIR += axis2
     SUBDIR += bacula-web
     SUBDIR += baikal
+    SUBDIR += bareos16-webui
     SUBDIR += bareos-webui
     SUBDIR += bigbluebutton
     SUBDIR += bins
@@ -463,7 +464,6 @@
     SUBDIR += mod_php71
     SUBDIR += mod_php72
     SUBDIR += mod_proctitle
-    SUBDIR += mod_proxy_uwsgi
     SUBDIR += mod_proxy_xml
     SUBDIR += mod_python35
     SUBDIR += mod_qos
@@ -493,6 +493,7 @@
     SUBDIR += moodle32
     SUBDIR += moodle33
     SUBDIR += moodle34
+    SUBDIR += moodle35
     SUBDIR += mozplugger
     SUBDIR += multisort
     SUBDIR += multiwatch
@@ -662,6 +663,7 @@
     SUBDIR += p5-CGI-FormBuilder
     SUBDIR += p5-CGI-Framework
     SUBDIR += p5-CGI-Kwiki
+    SUBDIR += p5-CGI-Lite
     SUBDIR += p5-CGI-Minimal
     SUBDIR += p5-CGI-PSGI
     SUBDIR += p5-CGI-Pager
@@ -681,7 +683,6 @@
     SUBDIR += p5-CGI-Utils
     SUBDIR += p5-CGI-XMLApplication
     SUBDIR += p5-CGI.pm
-    SUBDIR += p5-CGI_Lite
     SUBDIR += p5-CIF-Client
     SUBDIR += p5-CSS-DOM
     SUBDIR += p5-CSS-Inliner
@@ -1501,6 +1502,7 @@
     SUBDIR += py-albatross
     SUBDIR += py-amf
     SUBDIR += py-apachelog
+    SUBDIR += py-arxiv
     SUBDIR += py-autobahn
     SUBDIR += py-aws-requests-auth
     SUBDIR += py-azure-common
@@ -1568,6 +1570,7 @@
     SUBDIR += py-django-js-asset
     SUBDIR += py-django-json-rpc
     SUBDIR += py-django-jsonfield
+    SUBDIR += py-django-jsonfield2
     SUBDIR += py-django-keyedcache
     SUBDIR += py-django-ldapdb
     SUBDIR += py-django-livesettings

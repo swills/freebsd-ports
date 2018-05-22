@@ -1,5 +1,5 @@
 # Created by: Dan Langille <dvl@FreeBSD.org>
-# $FreeBSD: head/textproc/py-elasticsearch2-dsl-py/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/textproc/py-elasticsearch2-dsl-py/Makefile 469980 2018-05-14 22:11:02Z dbaio $
 
 PORTNAME=	py-elasticsearch2-dsl-py
 PORTVERSION=	2.1.0
@@ -11,6 +11,9 @@ MAINTAINER=	dvl@FreeBSD.org
 COMMENT=	High level Python client for Elasticsearch
 
 LICENSE=	APACHE20
+
+DEPRECATED=	Needs Python ElasticSearch 2.x
+EXPIRATION_DATE=	2018-06-14
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}elasticsearch>=1.3.0:textproc/py-elasticsearch@${FLAVOR}
 

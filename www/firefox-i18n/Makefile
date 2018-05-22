@@ -1,9 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/www/firefox-i18n/Makefile 468985 2018-05-03 20:41:53Z jbeich $
+# $FreeBSD: head/www/firefox-i18n/Makefile 470155 2018-05-16 22:17:00Z jbeich $
 
 PORTNAME=	firefox-i18n
-PORTVERSION=	60.0
-PORTREVISION=	1
+PORTVERSION=	60.0.1
 CATEGORIES=	www
 MASTER_SITES=	MOZILLA/${PORTNAME:S|-i18n||}/releases/${DISTVERSION}/linux-i686/xpi \
 		MOZILLA/${PORTNAME:S|-i18n||}/candidates/${DISTVERSION}-candidates/build2/linux-i686/xpi

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/syncthing-inotify/Makefile 463776 2018-03-07 08:06:24Z yuri $
+# $FreeBSD: head/net/syncthing-inotify/Makefile 470135 2018-05-16 17:26:38Z swills $
 
 PORTNAME=	syncthing-inotify
 PORTVERSION=	0.8.7
@@ -14,6 +14,10 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	syncthing 
 GH_SUBDIR=	src/github.com/syncthing/syncthing-inotify
 PLIST_FILES=	bin/syncthing-inotify
+
+DEPRECATED=	Included in net/syncthing now
+EXPIRATION_DATE=	2018-06-17
+
 
 do-build:
 	@cd ${WRKSRC}/${GH_SUBDIR} ; ${SETENV} ${MAKE_ENV} CGO_ENABLED=0 GOPATH=${WRKSRC} go build

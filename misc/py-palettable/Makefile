@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/py-palettable/Makefile 455773 2017-12-08 06:37:54Z yuri $
+# $FreeBSD: head/misc/py-palettable/Makefile 469994 2018-05-15 06:58:51Z yuri $
 
 PORTNAME=	palettable
-DISTVERSION=	3.1.0
+DISTVERSION=	3.1.1
 CATEGORIES=	misc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -10,6 +10,7 @@ MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Library of color palettes for Python
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/license.txt
 
 USES=		python
 USE_PYTHON=	autoplist distutils

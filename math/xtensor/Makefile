@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/xtensor/Makefile 467134 2018-04-12 09:22:08Z yuri $
+# $FreeBSD: head/math/xtensor/Makefile 470207 2018-05-17 08:43:49Z yuri $
 
 PORTNAME=	xtensor
-DISTVERSION=	0.15.9
+DISTVERSION=	0.16.0
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -15,7 +15,7 @@ TEST_DEPENDS=	googletest>0:devel/googletest
 USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	QuantStack
-GH_TUPLE=	QuantStack:xtl:0.4.4:xtl/xtl
+GH_TUPLE=	QuantStack:xtl:0.4.9:xtl/xtl
 NO_BUILD=	yes
 NO_ARCH=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/textproc/py-html2text/Makefile 464822 2018-03-17 14:43:34Z dbaio $
+# $FreeBSD: head/textproc/py-html2text/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	html2text
 PORTVERSION=	2018.1.9
@@ -13,7 +13,7 @@ COMMENT=	Convert HTML into clean plain ASCII text
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>=0:devel/py-coverage
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>=0:devel/py-coverage@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-asciidoctor-plantuml007/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/textproc/rubygem-asciidoctor-plantuml007/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	asciidoctor-plantuml
 PORTVERSION=	0.0.7

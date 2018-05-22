@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/renpy6/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/devel/renpy6/Makefile 470157 2018-05-16 22:50:26Z jbeich $
 
 PORTVERSION=	6.18.3
-PORTREVISION=	6
+PORTREVISION=	7
 PKGNAMESUFFIX=	6
 
 CONFLICTS_INSTALL=	${PORTNAME}-[0-9]*

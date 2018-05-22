@@ -1,5 +1,5 @@
 # Created by: ajk@iu.edu
-# $FreeBSD: head/security/cracklib/Makefile 455850 2017-12-09 12:21:08Z antoine $
+# $FreeBSD: head/security/cracklib/Makefile 470609 2018-05-22 13:14:43Z mat $
 
 PORTNAME=	cracklib
 PORTVERSION=	2.9.6
@@ -29,6 +29,7 @@ USE_LDCONFIG=	yes
 
 .if defined(PYTHON_SLAVEPORT)
 USES+=		python:2.7
+USE_PYTHON=	flavors
 CONFIGURE_ARGS+=--with-python
 PLIST_FILES=	%%PYTHON_SITELIBDIR%%/_cracklib.a \
 		%%PYTHON_SITELIBDIR%%/_cracklib.so \

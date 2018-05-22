@@ -1,8 +1,9 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/lang/ptoc/Makefile 360495 2014-07-04 00:24:35Z adamw $
+# $FreeBSD: head/lang/ptoc/Makefile 469968 2018-05-14 21:03:47Z osa $
 
 PORTNAME=	ptoc
 PORTVERSION=	3.58
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://www.garret.ru/
 

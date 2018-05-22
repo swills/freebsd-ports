@@ -1,5 +1,5 @@
 # Created by: ports@c0decafe.net
-# $FreeBSD: head/security/revelation/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/security/revelation/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	revelation
 PORTVERSION=	0.4.14
@@ -16,7 +16,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>0:devel/py-dbus@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto@${PY_FLAVOR}
 LIB_DEPENDS=	libcrack.so:security/cracklib
 RUN_DEPENDS:=	${BUILD_DEPENDS} \
-		${PYTHON_PKGNAMEPREFIX}cracklib>0:security/py-cracklib
+		${PYTHON_PKGNAMEPREFIX}cracklib>0:security/py-cracklib@${PY_FLAVOR}
 
 USES=		desktop-file-utils gettext gmake pathfix pkgconfig python:2.7 \
 		shared-mime-info shebangfix tar:bzip2

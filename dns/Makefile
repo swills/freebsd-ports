@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 465521 2018-03-25 14:46:17Z dbaio $
+# $FreeBSD: head/dns/Makefile 470325 2018-05-18 20:09:20Z tobik $
 #
 
     COMMENT = Domain Name Service tools
@@ -87,6 +87,7 @@
     SUBDIR += inadyn-mt
     SUBDIR += ipcheck
     SUBDIR += ironsides
+    SUBDIR += kadnode
     SUBDIR += kf5-kdnssd
     SUBDIR += knot-resolver
     SUBDIR += knot1

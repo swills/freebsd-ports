@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-doorkeeper42/Makefile 465682 2018-03-27 09:35:54Z tz $
+# $FreeBSD: head/security/rubygem-doorkeeper42/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	doorkeeper
 PORTVERSION=	4.2.6

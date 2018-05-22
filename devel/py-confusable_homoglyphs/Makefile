@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-confusable_homoglyphs/Makefile 464096 2018-03-10 22:59:17Z sunpoet $
+# $FreeBSD: head/devel/py-confusable_homoglyphs/Makefile 470234 2018-05-17 18:30:07Z sunpoet $
 
 PORTNAME=	confusable_homoglyphs
-PORTVERSION=	3.0.0
+PORTVERSION=	3.1.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

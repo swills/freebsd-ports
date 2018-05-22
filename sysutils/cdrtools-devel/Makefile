@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/cdrtools-devel/Makefile 429656 2016-12-27 20:40:35Z marius $
+# $FreeBSD: head/sysutils/cdrtools-devel/Makefile 470438 2018-05-20 00:34:01Z marius $
 
 ###########################################################################
 # This makefile was contributed by Marius Strobl.
@@ -18,7 +18,7 @@
 ###########################################################################
 
 PORTNAME=	cdrtools
-PORTVERSION=	3.02a07
+PORTVERSION=	3.02a09
 PORTEPOCH=	1
 CATEGORIES=	sysutils audio
 MASTER_SITES=	SF/${PORTNAME}/alpha

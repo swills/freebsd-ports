@@ -1,9 +1,9 @@
 # Created by: Sergey A. Osokin <osa@FreeBSD.org>
-# $FreeBSD: head/www/nginx-devel/Makefile 469801 2018-05-13 15:04:50Z osa $
+# $FreeBSD: head/www/nginx-devel/Makefile 470011 2018-05-15 11:18:08Z osa $
 
 PORTNAME=	nginx
 PORTVERSION=	1.14.0
-PORTREVISION=	6
+PORTREVISION=	8
 CATEGORIES=	www
 MASTER_SITES=	http://nginx.org/download/ \
 		LOCAL/osa

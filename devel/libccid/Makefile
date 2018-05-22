@@ -1,8 +1,8 @@
 # Created by: arved
-# $FreeBSD: head/devel/libccid/Makefile 452765 2017-10-24 11:25:01Z mmokhi $
+# $FreeBSD: head/devel/libccid/Makefile 470570 2018-05-21 19:00:24Z mmokhi $
 
 PORTNAME=	ccid
-PORTVERSION=	1.4.28
+PORTVERSION=	1.4.29
 CATEGORIES=	devel
 MASTER_SITES=	https://alioth.debian.org/frs/download.php/latestfile/112/
 

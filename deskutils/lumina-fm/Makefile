@@ -1,5 +1,5 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-fm/Makefile 456957 2017-12-22 02:30:59Z araujo $
+# $FreeBSD: head/deskutils/lumina-fm/Makefile 470276 2018-05-18 07:42:09Z tobik $
 
 PORTNAME=	lumina-fm
 PORTVERSION=	1.4.1
@@ -14,6 +14,8 @@ CONFLICTS_INSTALL=	lumina-1.2.*
 
 OPTIONS_DEFINE=	I18N
 OPTIONS_DEFAULT=	I18N
+OPTIONS_SUB=	yes
+
 I18N_DESC=	Install localization files
 
 .include <bsd.port.options.mk>

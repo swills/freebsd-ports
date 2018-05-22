@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/horde-nag/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/deskutils/horde-nag/Makefile 470282 2018-05-18 09:34:08Z amdmi3 $
 
 PORTNAME=	nag
 PORTVERSION=	4.2.17
@@ -11,7 +11,7 @@ COMMENT=	Horde web based task list manager
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=	horde cpe
+USES=		horde cpe
 USE_PHP=	gettext
 USE_HORDE_BUILD=	Horde_Role
 USE_HORDE_RUN=	Horde_Role \

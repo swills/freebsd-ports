@@ -1,10 +1,10 @@
 # Created by: adamw
-# $FreeBSD: head/net/geoipupdate/Makefile 453214 2017-10-31 01:24:28Z adamw $
+# $FreeBSD: head/net/geoipupdate/Makefile 470316 2018-05-18 18:33:43Z adamw $
 
 PORTNAME=	geoipupdate
 PORTVERSION=	2.5.0
-DISTVERSIONPREFIX=	v
 CATEGORIES=	net geography
+MASTER_SITES=	https://github.com/maxmind/geoipupdate/releases/download/v${PORTVERSION}/
 
 MAINTAINER=	adamw@FreeBSD.org
 COMMENT=	Fetch the latest copies of the paid GeoIP database
@@ -13,10 +13,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	maxmind
-
-USES=		libtool localbase pathfix autoreconf
+USES=		libtool localbase pathfix
 GNU_CONFIGURE=	yes
 
 OPTIONS_DEFINE=	DOCS

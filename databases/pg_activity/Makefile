@@ -1,8 +1,8 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/databases/pg_activity/Makefile 462227 2018-02-18 13:20:29Z antoine $
+# $FreeBSD: head/databases/pg_activity/Makefile 470254 2018-05-18 01:23:41Z jgh $
 
 PORTNAME=	pg_activity
-PORTVERSION=	1.3.1
+PORTVERSION=	1.4.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases python
 
@@ -16,10 +16,10 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psycopg2>=0:databases/py-psycopg2@${FLAVOR} 
 
 OPTIONS_DEFINE=	DOCS
 
+USES=		python
 USE_GITHUB=	yes
 GH_ACCOUNT=	julmon
 
-USES=		python
 USE_PYTHON=	autoplist distutils noegginfo concurrent optsuffix
 PYDISTUTILS_INSTALLARGS=	--with-man
 

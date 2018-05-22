@@ -1,13 +1,12 @@
 # Created by: Marie Loise Nolden <nolden@kde.org>
-# $FreeBSD: head/misc/qt5-doc/Makefile 465911 2018-03-29 19:03:17Z tcberner $
+# $FreeBSD: head/misc/qt5-doc/Makefile 470288 2018-05-18 12:27:43Z rakuco $
 
 PORTNAME=	doc
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
 CATEGORIES=	misc
-MASTER_SITES=	QT/online/qtsdkrepository/linux_x64/desktop/qt5_${QT5_VERSION:S/.//g}_src_doc_examples/qt.${QT5_VERSION:S/.//g}.doc/
+MASTER_SITES=	QT/online/qtsdkrepository/linux_x64/desktop/qt5_${QT5_VERSION:S/.//g}_src_doc_examples/qt.qt5.${QT5_VERSION:S/.//g}.doc/
 PKGNAMEPREFIX=	qt5-
-DISTNAME=	${QT5_VERSION}-0-201801220610qt-everywhere-documentation
+DISTNAME=	${QT5_VERSION}-0-201802092256qt-everywhere-documentation
 DIST_SUBDIR=	KDE/Qt/${QT5_VERSION}
 
 MAINTAINER=	kde@FreeBSD.org

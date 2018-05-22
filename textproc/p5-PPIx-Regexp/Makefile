@@ -1,8 +1,8 @@
 # Created by: Ashish SHUKLA <wahjava@gmail.com>
-# $FreeBSD: head/textproc/p5-PPIx-Regexp/Makefile 468644 2018-04-29 19:34:39Z dbaio $
+# $FreeBSD: head/textproc/p5-PPIx-Regexp/Makefile 470043 2018-05-15 18:35:53Z joneum $
 
 PORTNAME=	PPIx-Regexp
-PORTVERSION=	0.058
+PORTVERSION=	0.059
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:WYANT
@@ -13,6 +13,8 @@ COMMENT=	PPI regular expression parser
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE_ART10=	${WRKSRC}/LICENSES/Artistic
+LICENSE_FILE_GPLv1=	${WRKSRC}/LICENSES/Copying
 
 BUILD_DEPENDS=	p5-PPI>=1.117:textproc/p5-PPI
 RUN_DEPENDS:=	${BUILD_DEPENDS}

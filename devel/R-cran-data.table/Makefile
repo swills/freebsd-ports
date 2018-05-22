@@ -1,16 +1,18 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-data.table/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/R-cran-data.table/Makefile 470189 2018-05-17 02:18:52Z tota $
 
 PORTNAME=	data.table
-DISTVERSION=	1.10.4-3
-PORTREVISION=	1
+DISTVERSION=	1.11.2
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
 MAINTAINER=	tota@FreeBSD.org
 COMMENT=	Extension of Data.frame
 
-LICENSE=	GPLv3
+LICENSE=	MPL20
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+LIB_DEPENDS=	libomp.so:devel/openmp
 
 USES=		cran:auto-plist,compiles
 

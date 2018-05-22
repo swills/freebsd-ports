@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/qt5-phonon4-vlc/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/qt5-phonon4-vlc/Makefile 470354 2018-05-19 06:26:01Z tcberner $
 
 PORTNAME=	phonon
 PORTVERSION=	0.9.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTNAME}-backend${PKGNAMESUFFIX}/${PORTVERSION}
 PKGNAMEPREFIX=	qt5-

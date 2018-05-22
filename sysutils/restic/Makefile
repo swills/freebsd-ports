@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/restic/Makefile 463105 2018-02-27 01:51:23Z dbaio $
+# $FreeBSD: head/sysutils/restic/Makefile 470614 2018-05-22 13:58:03Z swills $
 
 PORTNAME=	restic
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.8.3
+DISTVERSION=	0.9.0
 CATEGORIES=	sysutils
 
 MAINTAINER=	gregf@hugops.pw

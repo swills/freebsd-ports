@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/deluge-cli/Makefile 464430 2018-03-13 20:44:18Z rm $
+# $FreeBSD: head/net-p2p/deluge-cli/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	deluge
 DISTVERSIONPREFIX=	${PORTNAME}-
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	intltool-merge:textproc/intltool
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xdg>=0.18:devel/py-xdg@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}libtorrent-rasterbar>=0:net-p2p/libtorrent-rasterbar-python \
+		${PYTHON_PKGNAMEPREFIX}libtorrent-rasterbar>=0:net-p2p/libtorrent-rasterbar-python@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}openssl>=0.8:security/py-openssl@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}chardet>=1.0.1:textproc/py-chardet@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mako>=0.2.5:textproc/py-mako@${FLAVOR} \

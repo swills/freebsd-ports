@@ -1,7 +1,7 @@
-# $FreeBSD: head/games/tome4/Makefile 468709 2018-04-30 15:46:12Z lifanov $
+# $FreeBSD: head/games/tome4/Makefile 470188 2018-05-17 01:45:16Z lifanov $
 
 PORTNAME=	tome4
-PORTVERSION=	1.5.8
+PORTVERSION=	1.5.9
 CATEGORIES=	games
 MASTER_SITES=	https://te4.org/dl/t-engine/ \
 		SF/lifanov-ports-distfiles/${PORTNAME}/:icons

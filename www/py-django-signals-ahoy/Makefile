@@ -1,5 +1,5 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-signals-ahoy/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django-signals-ahoy/Makefile 470339 2018-05-18 23:31:55Z sunpoet $
 
 PORTNAME=	django-signals-ahoy
 PORTVERSION=	0.1.3
@@ -13,6 +13,9 @@ MAINTAINER=	ports@caomhin.org
 COMMENT=	Extended set of signals for use by Django apps
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=	Project development unmaintained
+EXPIRATION_DATE=2018-08-01
 
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18@${FLAVOR}
 

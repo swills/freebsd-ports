@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/xen-tools/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/sysutils/xen-tools/Makefile 470624 2018-05-22 15:53:27Z royger $
 
 PORTNAME=	xen
 PKGNAMESUFFIX=	-tools
@@ -49,7 +49,8 @@ EXTRA_PATCHES=	${FILESDIR}/var_paths.patch:-p1 \
 		${FILESDIR}/0001-libs-xenstore-set-correct-FreeBSD-device.patch:-p1 \
 		${FILESDIR}/kdd.patch:-p1 \
 		${FILESDIR}/0001-xenstored-apply-a-write-transaction-rate-limit.patch:-p1 \
-		${FILESDIR}/0002-xenstored-Log-when-the-write-transaction-rate-limit-.patch:-p1
+		${FILESDIR}/0002-xenstored-Log-when-the-write-transaction-rate-limit-.patch:-p1 \
+		${FILESDIR}/0001-Backport-of-commit-858dba.patch:-p1
 
 CONFIGURE_ARGS+=	--with-extra-qemuu-configure-args="${QEMU_ARGS}" \
 			--with-system-seabios=${LOCALBASE}/share/seabios/bios.bin

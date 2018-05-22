@@ -1,5 +1,5 @@
 # Created by: Fukang Chen <loader@FreeBSD.org>
-# $FreeBSD: head/sysutils/py-superlance/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/sysutils/py-superlance/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	superlance
 PORTVERSION=	1.0.0
@@ -24,7 +24,7 @@ USE_PYTHON=	autoplist distutils
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 3300
-TEST_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock
+TEST_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${PY_FLAVOR}
 .endif
 
 do-test:

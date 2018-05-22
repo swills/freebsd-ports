@@ -1,8 +1,8 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/devel/flang-clang/Makefile 469128 2018-05-05 16:47:39Z antoine $
+# $FreeBSD: head/devel/flang-clang/Makefile 470487 2018-05-20 21:34:18Z jmd $
 
 PORTNAME=	flang-clang
-DISTVERSION=	5.0-20180112
+DISTVERSION=	5.0-20180506
 PORTREVISION=	0
 CATEGORIES=	devel lang
 
@@ -13,8 +13,6 @@ LICENSE=	LLVM
 LICENSE_NAME=	LLVM Release License
 LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
-
-BROKEN=		fails to package
 
 BUILD_DEPENDS=	llvm50>=0:devel/llvm50
 RUN_DEPENDS=	llvm50>=0:devel/llvm50

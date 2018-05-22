@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 469947 2018-05-14 18:43:01Z swills $
+# $FreeBSD: head/devel/Makefile 470418 2018-05-19 16:32:15Z miwi $
 #
 
     COMMENT = Development utilities
@@ -4742,6 +4742,7 @@
     SUBDIR += py-p4python
     SUBDIR += py-packaging
     SUBDIR += py-palm
+    SUBDIR += py-parallax
     SUBDIR += py-parsedatetime
     SUBDIR += py-path.py
     SUBDIR += py-pathlib
@@ -5095,6 +5096,7 @@
     SUBDIR += py-wsgitools
     SUBDIR += py-wsgiutils
     SUBDIR += py-wsme
+    SUBDIR += py-xarray
     SUBDIR += py-xattr
     SUBDIR += py-xcaplib
     SUBDIR += py-xdg
@@ -5530,6 +5532,7 @@
     SUBDIR += rubygem-foreman
     SUBDIR += rubygem-formatador
     SUBDIR += rubygem-forwardable-extended
+    SUBDIR += rubygem-fugit
     SUBDIR += rubygem-gdata
     SUBDIR += rubygem-gem-compare
     SUBDIR += rubygem-gem_plugin

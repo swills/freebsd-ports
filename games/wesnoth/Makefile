@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/wesnoth/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/games/wesnoth/Makefile 470213 2018-05-17 09:56:55Z tz $
 
 PORTNAME=	wesnoth
 PORTVERSION=	1.12.6
@@ -9,7 +9,7 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION:R}/${PORTNAME}-${PORTVERS
 		http://files.wesnoth.org/ \
 		http://ports.toco-domains.de/
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fantasy turn-based strategy game
 
 LICENSE=	GPLv2 GPLv3

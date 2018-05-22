@@ -1,9 +1,8 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/databases/py-tarantool/Makefile 468233 2018-04-24 19:47:15Z sunpoet $
+# $FreeBSD: head/databases/py-tarantool/Makefile 470074 2018-05-15 23:59:23Z sunpoet $
 
 PORTNAME=	tarantool
-PORTVERSION=	0.6.1
-PORTREVISION=	2
+PORTVERSION=	0.6.4
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,7 +16,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>=0.4:devel/py-msgpack@${FLAVOR}
 
 NO_ARCH=	yes
 REINPLACE_ARGS=	-i ''
-USES=		python tar:bz2
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 post-patch:

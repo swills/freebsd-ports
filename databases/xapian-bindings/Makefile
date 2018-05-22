@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/databases/xapian-bindings/Makefile 452214 2017-10-16 17:45:53Z sunpoet $
+# $FreeBSD: head/databases/xapian-bindings/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	xapian-bindings
 PORTVERSION=	1.4.5
@@ -21,7 +21,7 @@ LUA_RUN_DEPENDS=	${LUA_PKGNAMEPREFIX}xapian>=${PORTVERSION}:databases/lua-xapian
 LUA_USES=		lua:run
 PERL_RUN_DEPENDS=	p5-Xapian>=${PORTVERSION}:databases/p5-Xapian
 PHP_RUN_DEPENDS=	php-xapian>=${PORTVERSION}:databases/php-xapian
-PYTHON_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xapian>=${PORTVERSION}:databases/py-xapian
+PYTHON_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xapian>=${PORTVERSION}:databases/py-xapian@${PY_FLAVOR}
 PYTHON_USES=		python:run
 RUBY_RUN_DEPENDS=	${RUBY_PKGNAMEPREFIX}xapian>=${PORTVERSION}:databases/ruby-xapian
 RUBY_USE=		RUBY=yes

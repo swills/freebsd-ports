@@ -1,5 +1,5 @@
 # Created by: timur@FreeBSD.org
-# $FreeBSD: head/net/samba46/Makefile 464431 2018-03-13 21:00:04Z timur $
+# $FreeBSD: head/net/samba46/Makefile 470194 2018-05-17 03:37:14Z timur $
 
 PORTNAME?=			${SAMBA4_BASENAME}46
 PORTVERSION?=			${SAMBA4_VERSION}
@@ -21,7 +21,7 @@ CONFLICTS_INSTALL?=		samba4-4.0.* samba4[1-57-9]-4.* p5-Parse-Pidl-4.*
 
 SAMBA4_BASENAME=		samba
 SAMBA4_PORTNAME=		${SAMBA4_BASENAME}4
-SAMBA4_VERSION=			4.6.14
+SAMBA4_VERSION=			4.6.15
 SAMBA4_DISTNAME=		${SAMBA4_BASENAME}-${SAMBA4_VERSION:S|.p|pre|:S|.r|rc|:S|.t|tp|:S|.a|alpha|}
 
 WRKSRC?=			${WRKDIR}/${DISTNAME}

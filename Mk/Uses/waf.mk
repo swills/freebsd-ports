@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/waf.mk 460221 2018-01-28 15:28:28Z jhale $
+# $FreeBSD: head/Mk/Uses/waf.mk 470184 2018-05-17 00:51:35Z timur $
 #
 # Provide support to use the waf building system
 #
@@ -36,6 +36,7 @@ WAF_CMD?=	./waf
 CONFIGURE_TARGET?=	configure
 ALL_TARGET?=		build
 INSTALL_TARGET?=	install
+TEST_TARGET?=		test
 
 CONFIGURE_CMD=	${PYTHON_CMD} ${WAF_CMD} ${CONFIGURE_TARGET}
 MAKE_CMD=	${PYTHON_CMD} ${WAF_CMD}

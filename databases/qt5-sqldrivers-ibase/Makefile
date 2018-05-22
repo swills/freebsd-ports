@@ -1,6 +1,5 @@
-# $FreeBSD: head/databases/qt5-sqldrivers-ibase/Makefile 468288 2018-04-25 18:40:14Z acm $
+# $FreeBSD: head/databases/qt5-sqldrivers-ibase/Makefile 470288 2018-05-18 12:27:43Z rakuco $
 
-PORTREVISION=	1
 
 DB=		IBase
 DB_DESC=	InterBase/Firebird

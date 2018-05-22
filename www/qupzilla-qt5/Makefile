@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/qupzilla-qt5/Makefile 450351 2017-09-22 10:48:28Z mat $
+# $FreeBSD: head/www/qupzilla-qt5/Makefile 470012 2018-05-15 11:56:39Z rakuco $
 
 PORTNAME=	qupzilla
 PORTVERSION=	1.8.9
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	www
 MASTER_SITES=	https://github.com/QupZilla/${PORTNAME}/releases/download/v${PORTVERSION}/
 PKGNAMESUFFIX=	-qt5

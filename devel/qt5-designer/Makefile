@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/qt5-designer/Makefile 467142 2018-04-12 11:04:13Z adridg $
+# $FreeBSD: head/devel/qt5-designer/Makefile 470288 2018-05-18 12:27:43Z rakuco $
 
 PORTNAME=	designer
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	4
 CATEGORIES=	devel
 PKGNAMEPREFIX=	qt5-
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/rslsync/Makefile 469847 2018-05-14 02:55:52Z knu $
+# $FreeBSD: head/net-p2p/rslsync/Makefile 470279 2018-05-18 08:35:08Z knu $
 
 PORTNAME=	rslsync
 PORTVERSION=	2.5.12
@@ -45,5 +45,8 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/rslsync ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_DATA} ${WRKSRC}/rslsync.conf.sample ${STAGEDIR}${PREFIX}/etc
 	${MKDIR} ${STAGEDIR}/var/db/rslsync
+
+maintainer-makesum:
+	for arch in ${ONLY_FOR_ARCHS}; do ${MAKE} DISTINFO_FILE=/dev/stdout ARCH=$$arch makesum; done | awk '$$1 != "TIMESTAMP" || NR == 1' > ${DISTINFO_FILE}
 
 .include <bsd.port.post.mk>

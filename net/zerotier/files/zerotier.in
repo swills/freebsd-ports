@@ -1,10 +1,10 @@
 #!/bin/sh
 
-# $FreeBSD: head/net/zerotier/files/zerotier.in 465110 2018-03-20 22:04:20Z dch $
+# $FreeBSD: head/net/zerotier/files/zerotier.in 470435 2018-05-19 22:19:54Z dch $
 #
 # PROVIDE: zerotier
 # REQUIRE: FILESYSTEMS netif
-# BEFORE:  pf ipfw
+# BEFORE:  pf ipfw ipfilter
 # KEYWORD: shutdown
 #
 # Add these lines to /etc/rc.conf.local or /etc/rc.conf

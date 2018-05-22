@@ -1,7 +1,7 @@
 # Created by: Alexander Botero-Lowry <alexbl@FreeBSD.org>
-# $FreeBSD: head/audio/p5-xmms2/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/audio/p5-xmms2/Makefile 470573 2018-05-21 20:00:48Z madpilot $
 
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	audio perl5
 PKGNAMEPREFIX=	p5-
 
@@ -12,7 +12,9 @@ LIB_DEPENDS+=	libxmmsclient.so:audio/xmms2
 
 MASTERDIR=	${.CURDIR}/../xmms2
 
-USES=		perl5
+USES=		perl5 ssl
+
+BROKEN_SSL=	openssl-devel
 
 PLIST=		${.CURDIR}/pkg-plist
 

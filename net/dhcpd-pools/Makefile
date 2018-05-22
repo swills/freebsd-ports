@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/dhcpd-pools/Makefile 447034 2017-08-01 17:07:58Z zi $
+# $FreeBSD: head/net/dhcpd-pools/Makefile 470538 2018-05-21 12:56:30Z zi $
 
 PORTNAME=	dhcpd-pools
-PORTVERSION=	2.28
+PORTVERSION=	3.0
 CATEGORIES=	net
 MASTER_SITES=	SF/${PORTNAME} \
 		ZI
@@ -23,10 +23,7 @@ CONFIGURE_ARGS=	--with-dhcpd-conf=${LOCALBASE}/etc/dhcpd.conf \
 		--with-uthash=${LOCALBASE}/include
 MAKE_JOBS_UNSAFE=	yes
 
-PLIST_FILES=	bin/dhcpd-pools \
-		man/man1/dhcpd-pools.1.gz \
-		%%DATADIR%%/nagios.conf
-PORTDATA=	dhcpd-pools.cgi snmptest.pl
+PORTDATA=	snmptest.pl
 
 post-patch:
 	@${REINPLACE_CMD} -e '/features.h/d' ${WRKSRC}/src/getdata.c

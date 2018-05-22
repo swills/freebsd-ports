@@ -1,9 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-Matching/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/R-cran-Matching/Makefile 469989 2018-05-15 02:49:50Z wen $
 
 PORTNAME=	Matching
-PORTREVISION=	2
-DISTVERSION=	4.9-2
+DISTVERSION=	4.9-3
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

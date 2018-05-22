@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/nginx/Makefile.options.desc 468031 2018-04-22 14:59:23Z joneum $
+# $FreeBSD: head/www/nginx/Makefile.options.desc 470039 2018-05-15 17:39:15Z joneum $
 
 AJP_DESC=			3rd party ajp module
 ARRAYVAR_DESC=			3rd party array_var module
@@ -104,5 +104,6 @@ STREAM_DESC=			Enable stream module
 STREAM_SSL_DESC=		Enable stream_ssl module (SSL req.)
 STREAM_SSL_PREREAD_DESC=	Enable stream_ssl_preread module (SSL req.)
 THREADS_DESC=			Enable threads support
+VTS_DESC=			3rd party vts module
 WWW_DESC=			Enable html sample files
 XSS_DESC=			3rd party xss module

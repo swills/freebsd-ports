@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/devel/gps/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/gps/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	gps
 PORTVERSION=	2016
@@ -27,8 +27,8 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 RUN_DEPENDS=	rsvg-convert:graphics/librsvg2 \
 		gdb${PORTGDB}:devel/gdb \
 		gprbuild:devel/gprbuild \
-		${PYTHON_PKGNAMEPREFIX}pep8>0:devel/pep8 \
-		${PYTHON_PKGNAMEPREFIX}jedi>0:devel/py-jedi
+		${PYTHON_PKGNAMEPREFIX}pep8>0:devel/pep8@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}jedi>0:devel/py-jedi@${PY_FLAVOR}
 
 GNU_CONFIGURE=	yes
 USES=		ada:run gettext gmake perl5 pkgconfig python

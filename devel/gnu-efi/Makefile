@@ -1,5 +1,5 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/devel/gnu-efi/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/gnu-efi/Makefile 470213 2018-05-17 09:56:55Z tz $
 
 PORTNAME=	gnu-efi
 PORTVERSION=	3.0.3
@@ -7,7 +7,7 @@ PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	SF/gnu-efi
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	SDK for EFI applications
 
 LICENSE=	GPLv2

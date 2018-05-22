@@ -1,5 +1,5 @@
 # Created by: David Naylor <dbn@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/py-kivy/Makefile 469421 2018-05-09 01:44:50Z swills $
+# $FreeBSD: head/x11-toolkits/py-kivy/Makefile 470154 2018-05-16 22:16:47Z jbeich $
 
 PORTNAME=	kivy
 PORTVERSION=	1.10.0
@@ -12,6 +12,8 @@ COMMENT=	Python NUI library for rapid application development
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		fails to build with cython 0.28
 
 BUILD_DEPENDS=	git:devel/git \
 		${PYTHON_PKGNAMEPREFIX}pygments>=0:textproc/py-pygments@${FLAVOR}

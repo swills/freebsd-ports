@@ -1,9 +1,8 @@
-# $FreeBSD: head/math/piranha/Makefile 468175 2018-04-24 05:04:55Z yuri $
+# $FreeBSD: head/math/piranha/Makefile 470101 2018-05-16 03:51:21Z yuri $
 
 PORTNAME=	piranha
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.10
-PORTREVISION=	1
+DISTVERSION=	0.11
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org

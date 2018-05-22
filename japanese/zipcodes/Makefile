@@ -1,7 +1,7 @@
-# $FreeBSD: head/japanese/zipcodes/Makefile 465038 2018-03-19 22:31:08Z kuriyama $
+# $FreeBSD: head/japanese/zipcodes/Makefile 470114 2018-05-16 11:57:42Z kuriyama $
 
 PORTNAME=	zipcodes
-PORTVERSION=	20180228
+PORTVERSION=	20180427
 CATEGORIES=	japanese
 MASTER_SITES=	LOCAL/kuriyama
 DISTFILES=	ken_all-${PORTVERSION_K}.zip jigyosyo-${PORTVERSION_J}.zip

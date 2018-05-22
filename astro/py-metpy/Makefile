@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/astro/py-metpy/Makefile 468596 2018-04-29 00:03:12Z sunpoet $
+# $FreeBSD: head/astro/py-metpy/Makefile 470381 2018-05-19 11:06:41Z sunpoet $
 
 PORTNAME=	metpy
-PORTVERSION=	0.7.0
+PORTVERSION=	0.8.0
 CATEGORIES=	astro python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -19,7 +19,8 @@ RUN_DEPENDS=	${ENUM34} \
 		${PYTHON_PKGNAMEPREFIX}numpy>=1.10.0:math/py-numpy@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pint>=0.8:converters/py-pint@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyproj>=1.9.4:graphics/py-pyproj@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}scipy>=0.14:science/py-scipy@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}scipy>=0.14:science/py-scipy@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}xarray>=0.9.6:devel/py-xarray@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist concurrent distutils

@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 468529 2018-04-28 09:46:41Z tcberner $
+# $FreeBSD: head/x11/Makefile 470463 2018-05-20 14:51:36Z pi $
 #
 
     COMMENT = Ports to support the X window system
@@ -512,6 +512,7 @@
     SUBDIR += xrsh
     SUBDIR += xrsi
     SUBDIR += xrx
+    SUBDIR += xscope
     SUBDIR += xscreensaver
     SUBDIR += xscreensaver-gnome
     SUBDIR += xscreensaver-gnome-hacks

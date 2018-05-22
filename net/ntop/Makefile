@@ -1,5 +1,5 @@
 # Created by: Bill Fumerola <billf@chc-chimes.com>
-# $FreeBSD: head/net/ntop/Makefile 441494 2017-05-22 22:29:17Z linimon $
+# $FreeBSD: head/net/ntop/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	ntop
 PORTVERSION=	5.0.1
@@ -65,7 +65,7 @@ XMLDUMP_CPPFLAGS=	-I${LOCALBASE}/include/libxml2 \
 # see http://www.cyberciti.biz/faq/freebsd-jumbo-frames-networking-configration/
 JUMBO_FRAMES_CONFIGURE_ON=	--enable-jumbo-frames
 
-MAKO_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mako>0:textproc/py-mako
+MAKO_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mako>0:textproc/py-mako@${PY_FLAVOR}
 
 pre-configure:
 	@(cd ${WRKSRC} && ./autogen.sh --noconfig)

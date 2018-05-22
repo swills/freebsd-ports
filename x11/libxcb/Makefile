@@ -1,9 +1,8 @@
 # Created by: Ashish Shukla <wahjava@gmail.com>
-# $FreeBSD: head/x11/libxcb/Makefile 457502 2017-12-29 09:25:58Z antoine $
+# $FreeBSD: head/x11/libxcb/Makefile 470141 2018-05-16 18:59:47Z zeising $
 
 PORTNAME=	libxcb
-PORTVERSION=	1.12
-PORTREVISION=	2
+PORTVERSION=	1.13
 CATEGORIES=	x11 python
 MASTER_SITES=	http://xcb.freedesktop.org/dist/
 

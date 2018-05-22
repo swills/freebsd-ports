@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/erlang-webmachine/Makefile 395320 2015-08-25 22:35:00Z olgeni $
+# $FreeBSD: head/www/erlang-webmachine/Makefile 470361 2018-05-19 07:26:17Z olgeni $
 
 PORTNAME=	webmachine
-PORTVERSION=	1.10.8
+PORTVERSION=	1.10.9
 CATEGORIES=	www devel
 PKGNAMEPREFIX=	erlang-
 
@@ -16,9 +16,5 @@ GH_ACCOUNT=     webmachine
 
 ERL_BUILD_DEPS=	www/erlang-mochiweb-basho
 ERL_RUN_DEPS:=	${ERL_BUILD_DEPS}
-
-post-install:
-	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
-	cd ${WRKSRC}/demo && ${COPYTREE_SHARE} \* ${STAGEDIR}${EXAMPLESDIR}
 
 .include <bsd.port.mk>

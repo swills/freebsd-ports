@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 469912 2018-05-14 15:59:03Z miwi $
+# $FreeBSD: head/security/Makefile 470467 2018-05-20 18:06:16Z miwi $
 #
 
     COMMENT = Security tools
@@ -935,6 +935,7 @@
     SUBDIR += py-first-server
     SUBDIR += py-flask-httpauth
     SUBDIR += py-flask-kerberos
+    SUBDIR += py-flask-saml
     SUBDIR += py-gixy
     SUBDIR += py-gnupg
     SUBDIR += py-gnutls
@@ -1107,7 +1108,6 @@
     SUBDIR += rubygem-gpgr
     SUBDIR += rubygem-gssapi
     SUBDIR += rubygem-hkdf
-    SUBDIR += rubygem-jugyo-twitter_oauth
     SUBDIR += rubygem-metasploit-aggregator
     SUBDIR += rubygem-metasploit-concern
     SUBDIR += rubygem-metasploit-credential

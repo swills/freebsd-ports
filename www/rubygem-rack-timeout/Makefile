@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-rack-timeout/Makefile 447386 2017-08-05 03:25:17Z jrm $
+# $FreeBSD: head/www/rubygem-rack-timeout/Makefile 470397 2018-05-19 11:08:06Z sunpoet $
 
 PORTNAME=	rack-timeout
-PORTVERSION=	0.4.2
+PORTVERSION=	0.5.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -12,7 +12,6 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
 
 NO_ARCH=	yes
-
 USE_RUBY=	yes
 USES=		gem
 

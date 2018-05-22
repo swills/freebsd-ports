@@ -1,12 +1,12 @@
 # Created by: Jean-Yves Lefort <jylefort@FreeBSD.org>
-# $FreeBSD: head/games/flightgear-aircraft/Makefile 451229 2017-10-04 14:27:20Z martymac $
+# $FreeBSD: head/games/flightgear-aircraft/Makefile 470369 2018-05-19 08:26:38Z martymac $
 
 PORTNAME=	flightgear-aircraft
-PORTVERSION=	20170929
+PORTVERSION=	20180516
 CATEGORIES=	games
 # See http://www.flightgear.org/templates.js
 MASTER_SITES=	http://mirrors.ibiblio.org/flightgear/ftp/Aircraft/ \
-	http://ftp.linux.kiev.ua/pub/mirrors/ftp.flightgear.org/flightgear/Aircraft/
+	http://ftp.igh.cnrs.fr/pub/flightgear/ftp/Aircraft/
 # Selection of production-ready/well-known planes
 # (planes already included in flightgear-data are excluded)
 # Please contact MAINTAINER if a plane is missing

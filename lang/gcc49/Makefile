@@ -1,9 +1,9 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc49/Makefile 469815 2018-05-13 20:05:29Z gerald $
+# $FreeBSD: head/lang/gcc49/Makefile 469956 2018-05-14 19:15:36Z tijl $
 
 PORTNAME=	gcc
 PORTVERSION=	4.9.4
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	lang
 MASTER_SITES=	GCC
 PKGNAMESUFFIX=	${SUFFIX}

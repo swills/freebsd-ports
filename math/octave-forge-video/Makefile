@@ -1,5 +1,5 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-video/Makefile 468999 2018-05-03 23:42:35Z stephen $
+# $FreeBSD: head/math/octave-forge-video/Makefile 470491 2018-05-20 23:15:22Z stephen $
 
 PORTNAME=	octave-forge-video
 PORTVERSION=	1.2.4
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKDIR}/${OCTSRC}/COPYING
 USES=		pkgconfig
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	HOME=${WRKSRC}
-CPPFLAGS+=      -I${LOCALBASE}/include
+CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
 # OCTSRC is the name of the directory of the package.

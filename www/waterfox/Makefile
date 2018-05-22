@@ -1,15 +1,15 @@
-# $FreeBSD: head/www/waterfox/Makefile 469879 2018-05-14 12:08:36Z jbeich $
+# $FreeBSD: head/www/waterfox/Makefile 470586 2018-05-22 00:23:02Z jbeich $
 
 PORTNAME=	waterfox
-DISTVERSION=	56.1.0-111178
-DISTVERSIONSUFFIX=	-gedfc016bc021c
+DISTVERSION=	56.2.0-13
+DISTVERSIONSUFFIX=	-gd2cdd42f4115b
 CATEGORIES=	www ipv6
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	Distilled fork of Firefox
 
 DEPRECATED=	Temporary experiment
-EXPIRATION_DATE=2018-05-16
+EXPIRATION_DATE=2018-07-10
 
 BUILD_DEPENDS=	nspr>=4.16:devel/nspr \
 		nss>=3.32.1:security/nss \

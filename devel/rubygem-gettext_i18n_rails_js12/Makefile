@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-gettext_i18n_rails_js12/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/devel/rubygem-gettext_i18n_rails_js12/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	gettext_i18n_rails_js
 PORTVERSION=	1.2.0

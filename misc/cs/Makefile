@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/misc/cs/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/misc/cs/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	cs
 PORTVERSION=	0.9.6
@@ -12,7 +12,7 @@ COMMENT=	Cross Stitch software
 
 LICENSE=	GPLv2+
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR}
 
 NO_BUILD=	yes
 

@@ -1,5 +1,5 @@
 # Created by: Vladimir Gorelov <virtual.lark@gmail.com>
-# $FreeBSD: head/devel/art/Makefile 460004 2018-01-26 15:02:40Z danfe $
+# $FreeBSD: head/devel/art/Makefile 470599 2018-05-22 08:34:13Z amdmi3 $
 
 PORTNAME=	art
 PORTVERSION=	0.9.01
@@ -17,6 +17,7 @@ LIB_DEPENDS=	libxml++-2.6.so:textproc/libxml++26
 
 USES=		compiler:c++11-lang gmake pkgconfig
 USE_CXXSTD=	c++11
+TEST_TARGET=	test  # XXX: 17 of 18 tests fail
 
 OPTIONS_DEFINE=	DOCS
 
@@ -36,10 +37,5 @@ do-install-DOCS-on:
 	${INSTALL_DATA} ${WRKSRC}/artlibgen/templates/${docs} \
 		${STAGEDIR}${DOCSDIR}
 .endfor
-
-.if defined(MAINTAINER_MODE)
-full-regression-test: build
-	cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${MAKE_CMD} test
-.endif
 
 .include <bsd.port.mk>

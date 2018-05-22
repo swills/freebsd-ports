@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/postgresql-odbc/Makefile 468146 2018-04-23 23:04:38Z bofh $
+# $FreeBSD: head/databases/postgresql-odbc/Makefile 470111 2018-05-16 09:34:06Z amdmi3 $
 
 PORTNAME=	postgresql
 PORTVERSION=	10.02.0000
@@ -11,7 +11,7 @@ DIST_SUBDIR=	postgresql
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	PostgreSQL ODBC driver
 
-LICENSE=	LGPL20
+LICENSE=	LGPL20+
 LICENSE_FILE=	${WRKSRC}/license.txt
 
 LIB_DEPENDS=	libodbc.so:databases/unixODBC

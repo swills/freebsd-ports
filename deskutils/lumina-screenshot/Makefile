@@ -1,5 +1,5 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-screenshot/Makefile 456954 2017-12-22 02:23:30Z araujo $
+# $FreeBSD: head/deskutils/lumina-screenshot/Makefile 470276 2018-05-18 07:42:09Z tobik $
 
 PORTNAME=	lumina-screenshot
 PORTVERSION=	1.4.1
@@ -14,6 +14,8 @@ CONFLICTS_INSTALL=	lumina-1.2.*
 
 OPTIONS_DEFINE=	I18N
 OPTIONS_DEFAULT=	I18N
+OPTIONS_SUB=	yes
+
 I18N_DESC=	Install localization files
 
 .include <bsd.port.options.mk>

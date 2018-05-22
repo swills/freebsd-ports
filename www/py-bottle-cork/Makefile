@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/py-bottle-cork/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-bottle-cork/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	bottle-cork
 PORTVERSION=	0.12.0
@@ -27,7 +27,7 @@ OPTIONS_DEFINE=		SQLITE MONGODB SQLALCHEMY EXAMPLES
 .include <bsd.port.options.mk>
 
 SQLITE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${FLAVOR}
-MONGODB_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pymongo>0:databases/pymongo
+MONGODB_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pymongo>0:databases/pymongo@${PY_FLAVOR}
 SQLALCHEMY_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlalchemy10>0:databases/py-sqlalchemy10@${FLAVOR}
 
 .if ${PORT_OPTIONS:MEXAMPLES}

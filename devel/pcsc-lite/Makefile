@@ -1,8 +1,8 @@
 # Created by: Toni Andjelkovic <toni@soth.at>
-# $FreeBSD: head/devel/pcsc-lite/Makefile 444955 2017-07-03 13:42:50Z mmokhi $
+# $FreeBSD: head/devel/pcsc-lite/Makefile 470569 2018-05-21 18:59:42Z mmokhi $
 
 PORTNAME=	pcsc-lite
-PORTVERSION=	1.8.22
+PORTVERSION=	1.8.23
 PORTEPOCH=	2
 CATEGORIES=	devel security
 MASTER_SITES=	https://alioth.debian.org/frs/download.php/latestfile/39/
@@ -21,7 +21,8 @@ USE_RC_SUBR=	pcscd
 SHEBANG_FILES=	src/spy/pcsc-spy
 
 USE_LDCONFIG=	yes
-CONFIGURE_ARGS=	--enable-usbdropdir=${PREFIX}/lib/pcsc/drivers/
+CONFIGURE_ARGS=	--disable-libsystemd \
+		--enable-usbdropdir=${PREFIX}/lib/pcsc/drivers/
 
 SUB_FILES=	pkg-message
 

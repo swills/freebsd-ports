@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/astro/gpsprune/Makefile 429082 2016-12-21 13:02:33Z amdmi3 $
+# $FreeBSD: head/astro/gpsprune/Makefile 470250 2018-05-18 00:15:10Z amdmi3 $
 
 PORTNAME=	gpsprune
-PORTVERSION=	18.6
+PORTVERSION=	19
 CATEGORIES=	astro java
 MASTER_SITES=	http://activityworkshop.net/software/${PORTNAME}/ \
 		http://mirror.amdmi3.ru/distfiles/

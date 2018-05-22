@@ -1,8 +1,8 @@
 # Created by: Joe Horn <joehorn@gmail.com>
-# $FreeBSD: head/www/ckeditor/Makefile 457330 2017-12-26 23:20:12Z sunpoet $
+# $FreeBSD: head/www/ckeditor/Makefile 470070 2018-05-15 23:59:00Z sunpoet $
 
 PORTNAME=	ckeditor
-PORTVERSION=	4.8.0
+PORTVERSION=	4.9.2
 CATEGORIES=	www
 MASTER_SITES=	https://download.cksource.com/CKEditor/CKEditor/CKEditor%20${PORTVERSION}/
 DISTNAME=	${PORTNAME}_${PORTVERSION}_full

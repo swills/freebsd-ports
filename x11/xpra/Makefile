@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/x11/xpra/Makefile 469466 2018-05-09 20:27:51Z swills $
+# $FreeBSD: head/x11/xpra/Makefile 470152 2018-05-16 20:34:46Z jbeich $
 
 PORTNAME=	xpra
 PORTVERSION=	2.0.3
@@ -11,6 +11,8 @@ MAINTAINER=	rezny@FreeBSD.org
 COMMENT=	Xpra gives you persistent remote applications for X
 
 LICENSE=	GPLv2
+
+BROKEN=		fails to build with cython 0.28
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gtk2>2:x11-toolkits/py-gtk2@${FLAVOR} \
 		${PYNUMPY}

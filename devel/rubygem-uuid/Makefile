@@ -1,8 +1,8 @@
 # Created by: Wen Heping<wenheping@gmail.com>
-# $FreeBSD: head/devel/rubygem-uuid/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/devel/rubygem-uuid/Makefile 470179 2018-05-16 23:55:59Z sunpoet $
 
 PORTNAME=	uuid
-PORTVERSION=	2.3.8
+PORTVERSION=	2.3.9
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

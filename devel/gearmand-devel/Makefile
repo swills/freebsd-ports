@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/gearmand-devel/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/devel/gearmand-devel/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	gearmand
 PORTVERSION=	1.1.8
@@ -12,7 +12,7 @@ MAINTAINER=	bdrewery@FreeBSD.org
 COMMENT=	Gearman C Server and Library
 
 BUILD_DEPENDS=	boost-libs>=0:devel/boost-libs \
-		${PYTHON_PKGNAMEPREFIX}sphinx>=0:textproc/py-sphinx
+		${PYTHON_PKGNAMEPREFIX}sphinx>=0:textproc/py-sphinx@${PY_FLAVOR}
 LIB_DEPENDS=	libevent.so:devel/libevent \
 		libuuid.so:misc/e2fsprogs-libuuid
 

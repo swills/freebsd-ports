@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 469737 2018-05-12 16:35:27Z kwm $
+# $FreeBSD: head/graphics/Makefile 470330 2018-05-18 23:23:22Z sunpoet $
 #
 
     COMMENT = Graphics tools and libraries
@@ -302,6 +302,7 @@
     SUBDIR += gpicview
     SUBDIR += gpsmanshp
     SUBDIR += gpu-firmware-kmod
+    SUBDIR += gpxsee
     SUBDIR += gracula
     SUBDIR += grads
     SUBDIR += grafx2
@@ -883,6 +884,7 @@
     SUBDIR += py-blockdiagcontrib-cisco
     SUBDIR += py-cairo
     SUBDIR += py-cairocffi
+    SUBDIR += py-cartopy
     SUBDIR += py-chart
     SUBDIR += py-django-easy-thumbnails
     SUBDIR += py-djvulibre

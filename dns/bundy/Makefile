@@ -1,5 +1,5 @@
 # Created by: Jeremy C. Reed
-# $FreeBSD: head/dns/bundy/Makefile 455813 2017-12-09 00:42:05Z linimon $
+# $FreeBSD: head/dns/bundy/Makefile 470199 2018-05-17 06:32:17Z mat $
 
 PORTNAME=	bundy
 PORTVERSION=	0.20170618
@@ -16,6 +16,8 @@ LICENSE_GROUPS=	FSF GPL OSI
 LICENSE_NAME=	ISC License
 LICENSE_FILE=	${WRKSRC}/COPYING
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
+BROKEN_FreeBSD_12=	error: called object type nullptr_t is not a function or function pointer
 
 BUILD_DEPENDS=	${LOCALBASE}/include/log4cplus/logger.h:devel/log4cplus \
 		sqlite3>=3.3.9:databases/sqlite3 \

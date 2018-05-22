@@ -1,8 +1,8 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-registration-redux/Makefile 465231 2018-03-21 19:35:58Z sunpoet $
+# $FreeBSD: head/www/py-django-registration-redux/Makefile 470414 2018-05-19 15:36:01Z joneum $
 
 PORTNAME=	django-registration-redux
-PORTVERSION=	2.2
+PORTVERSION=	2.4
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

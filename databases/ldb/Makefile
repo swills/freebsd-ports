@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/ldb/Makefile 462465 2018-02-20 23:17:49Z timur $
+# $FreeBSD: head/databases/ldb/Makefile 470190 2018-05-17 02:24:59Z timur $
 
 PORTNAME=		ldb
 PORTVERSION=		1.1.29
@@ -79,7 +79,7 @@ PLIST_FILES=		include/ldb_version.h \
 			include/ldb_module.h \
 			${LDB_BINS} \
 			${LDB_LIBS} \
-			%%PKGCONFIGDIR%%/ldb.pc
+			${PKGCONFIGDIR}/ldb.pc
 
 .if defined(NO_PYTHON)
 USES+=			python:2.7,build
@@ -90,9 +90,9 @@ USES+=			python:2.7
 PLIST_FILES+=		include/pyldb.h \
 			lib/libpyldb-util.so \
 			lib/libpyldb-util.so.1 \
-			%%PYTHON_SITELIBDIR%%/ldb.so \
-			%%PYTHON_SITELIBDIR%%/_ldb_text.py \
-			%%PKGCONFIGDIR%%/pyldb-util.pc
+			${PYTHON_SITELIBDIR}/ldb.so \
+			${PYTHON_SITELIBDIR}/_ldb_text.py \
+			${PKGCONFIGDIR}/pyldb-util.pc
 .endif
 
 .include <bsd.port.pre.mk>

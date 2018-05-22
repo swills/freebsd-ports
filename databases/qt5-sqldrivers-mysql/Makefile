@@ -1,5 +1,4 @@
-# $FreeBSD: head/databases/qt5-sqldrivers-mysql/Makefile 469165 2018-05-05 20:05:08Z tcberner $
-PORTREVISION=	1
+# $FreeBSD: head/databases/qt5-sqldrivers-mysql/Makefile 470288 2018-05-18 12:27:43Z rakuco $
 
 DB=		MYSQL
 DB_DESC=	MySQL

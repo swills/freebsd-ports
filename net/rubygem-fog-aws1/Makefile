@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-aws1/Makefile 460189 2018-01-28 14:07:52Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-aws1/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	fog-aws
 PORTVERSION=	1.4.1

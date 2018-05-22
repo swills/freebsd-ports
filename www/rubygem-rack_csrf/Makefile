@@ -1,12 +1,12 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-rack_csrf/Makefile 454657 2017-11-21 22:16:42Z adamw $
+# $FreeBSD: head/www/rubygem-rack_csrf/Makefile 470297 2018-05-18 15:23:27Z adamw $
 
 PORTNAME=	rack_csrf
 PORTVERSION=	2.6.0
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	adamw@FreeBSD.org
+MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Anti-CSRF Rack middleware
 
 LICENSE=	MIT

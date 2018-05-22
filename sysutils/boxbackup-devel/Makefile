@@ -1,8 +1,9 @@
 # Created by: James O'Gorman <james@netinertia.co.uk>
-# $FreeBSD: head/sysutils/boxbackup-devel/Makefile 457060 2017-12-23 15:28:29Z tijl $
+# $FreeBSD: head/sysutils/boxbackup-devel/Makefile 470559 2018-05-21 16:02:27Z asomers $
 
 PORTNAME=	boxbackup
 PORTVERSION=	0.11.r${SVNVERSION:C/^[0-9\.]+_[a-z]+_([0-9]+)/\1/}
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.boxbackup.org/snapshots/201108/
 PKGNAMESUFFIX=	${CLIENT_OR_SERVER}-devel

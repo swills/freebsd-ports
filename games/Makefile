@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 469845 2018-05-14 02:29:04Z vanilla $
+# $FreeBSD: head/games/Makefile 470270 2018-05-18 06:11:49Z krion $
 #
 
     COMMENT = Games and related software
@@ -334,6 +334,7 @@
     SUBDIR += gdado
     SUBDIR += gemdropx
     SUBDIR += gemrb
+    SUBDIR += genact
     SUBDIR += ggz-client-libs
     SUBDIR += ggz-gtk-client
     SUBDIR += ggz-gtk-games

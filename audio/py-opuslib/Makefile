@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich
-# $FreeBSD: head/audio/py-opuslib/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/audio/py-opuslib/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	opuslib
 PORTVERSION=	2.0.0
@@ -13,8 +13,8 @@ COMMENT=	Python bindings to the libopus, IETF low-delay audio codec
 LICENSE=	BSD3CLAUSE
 
 RUN_DEPENDS=	${LOCALBASE}/lib/libopus.so:audio/opus
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>=4.4.1:devel/py-coverage \
-		${PYTHON_PKGNAMEPREFIX}nose>=1.3.7:devel/py-nose
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>=4.4.1:devel/py-coverage@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}nose>=1.3.7:devel/py-nose@${PY_FLAVOR}
 
 USES=		python:-2.7
 USE_PYTHON=	autoplist distutils

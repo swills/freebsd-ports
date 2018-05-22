@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 469876 2018-05-14 11:43:51Z dinoex $
+# $FreeBSD: head/net-im/Makefile 470455 2018-05-20 13:23:03Z meta $
 #
 
     COMMENT = Instant messaging
@@ -144,6 +144,7 @@
     SUBDIR += purple-discord
     SUBDIR += purple-facebook
     SUBDIR += purple-hangouts
+    SUBDIR += purple-slack
     SUBDIR += py-fbmq
     SUBDIR += py-jabber
     SUBDIR += py-jabberbot
@@ -167,7 +168,6 @@
     SUBDIR += qxmpp-qt5
     SUBDIR += ramblercontacts
     SUBDIR += ricochet
-    SUBDIR += rubygem-earthquake
     SUBDIR += rubygem-hipchat
     SUBDIR += rubygem-hipchat15
     SUBDIR += rubygem-lita

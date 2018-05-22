@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-mechanics/Makefile 469906 2018-05-14 15:39:56Z stephen $
+# $FreeBSD: head/math/octave-forge-mechanics/Makefile 469971 2018-05-14 21:07:21Z stephen $
 
 PORTNAME=	octave-forge-mechanics
 PORTVERSION=	1.3.1
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org
@@ -11,8 +11,6 @@ COMMENT=	Octave-forge package ${OCTAVE_PKGNAME}
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKDIR}/${OCTSRC}/COPYING
-
-BROKEN=		depends upon octave-forge-linear-algebra, which is broken
 
 RUN_DEPENDS+=	${TARBALLS_DIR}/general.tar.gz:math/octave-forge-general
 RUN_DEPENDS+=	${TARBALLS_DIR}/geometry.tar.gz:math/octave-forge-geometry

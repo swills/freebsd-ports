@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 469840 2018-05-14 00:08:08Z yuri $
+# $FreeBSD: head/textproc/Makefile 470564 2018-05-21 17:15:30Z yuri $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -51,6 +51,7 @@
     SUBDIR += augeas
     SUBDIR += az-aspell
     SUBDIR += bar
+    SUBDIR += bat
     SUBDIR += bbe
     SUBDIR += be-aspell
     SUBDIR += bedic-data
@@ -334,6 +335,7 @@
     SUBDIR += ibus-qt
     SUBDIR += ibus-table
     SUBDIR += ibus-typing-booster
+    SUBDIR += ibus-uniemoji
     SUBDIR += icdiff
     SUBDIR += id-aspell
     SUBDIR += id-hyphen
@@ -1294,6 +1296,7 @@
     SUBDIR += py-elasticsearch-async
     SUBDIR += py-elasticsearch5
     SUBDIR += py-elasticsearch-curator
+    SUBDIR += py-elasticsearch-dsl
     SUBDIR += py-elasticsearch-dsl-py
     SUBDIR += py-elasticsearch2-dsl-py
     SUBDIR += py-elib.intl
@@ -1530,6 +1533,7 @@
     SUBDIR += rubygem-heredoc_unindent
     SUBDIR += rubygem-hikidoc
     SUBDIR += rubygem-html-pipeline
+    SUBDIR += rubygem-html-pipeline27
     SUBDIR += rubygem-html-pipeline-gitlab
     SUBDIR += rubygem-html-pipeline1
     SUBDIR += rubygem-html2text
@@ -1570,6 +1574,7 @@
     SUBDIR += rubygem-parslet
     SUBDIR += rubygem-phone
     SUBDIR += rubygem-pretty-xml
+    SUBDIR += rubygem-raabro
     SUBDIR += rubygem-rails-dom-testing
     SUBDIR += rubygem-rails-dom-testing-rails5
     SUBDIR += rubygem-rails-dom-testing-rails50

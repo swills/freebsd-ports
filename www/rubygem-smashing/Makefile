@@ -1,8 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/rubygem-smashing/Makefile 458537 2018-01-09 15:40:27Z sunpoet $
+# $FreeBSD: head/www/rubygem-smashing/Makefile 470084 2018-05-16 00:00:15Z sunpoet $
 
 PORTNAME=	smashing
 PORTVERSION=	1.1.0
+PORTREVISION=	1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

@@ -1,5 +1,5 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/sysutils/osquery/Makefile 469071 2018-05-04 18:20:48Z lx $
+# $FreeBSD: head/sysutils/osquery/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	osquery
 PORTVERSION=	3.2.4
@@ -15,7 +15,7 @@ BUILD_DEPENDS=	thrift>=0.11.0:devel/thrift \
 		bash>0:shells/bash \
 		linenoise-ng>0:devel/linenoise-ng \
 		rapidjson>0:devel/rapidjson \
-		${PYTHON_PKGNAMEPREFIX}Jinja2>0:devel/py-Jinja2
+		${PYTHON_PKGNAMEPREFIX}Jinja2>0:devel/py-Jinja2@${PY_FLAVOR}
 LIB_DEPENDS=	libaugeas.so:textproc/augeas \
 		libboost_regex.so:devel/boost-libs \
 		libgflags.so:devel/gflags \

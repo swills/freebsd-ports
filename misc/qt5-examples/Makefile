@@ -1,13 +1,12 @@
 # Created by: Marie Loise Nolden <nolden@kde.org>
-# $FreeBSD: head/misc/qt5-examples/Makefile 465911 2018-03-29 19:03:17Z tcberner $
+# $FreeBSD: head/misc/qt5-examples/Makefile 470288 2018-05-18 12:27:43Z rakuco $
 
 PORTNAME=	examples
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	QT/official_releases/qt/${QT5_VERSION:R}/${QT5_VERSION}/single
 PKGNAMEPREFIX=	qt5-
-DISTNAME=	qt-everywhere-opensource-src-${QT5_VERSION}
+DISTNAME=	qt-everywhere-src-${QT5_VERSION}
 DIST_SUBDIR=	KDE/Qt/${QT5_VERSION}
 
 MAINTAINER=	kde@FreeBSD.org

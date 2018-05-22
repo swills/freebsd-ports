@@ -1,5 +1,5 @@
 # Created by: buganini@gmail.com
-# $FreeBSD: head/converters/gbsdconv/Makefile 439170 2017-04-22 12:45:43Z miwi $
+# $FreeBSD: head/converters/gbsdconv/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	gbsdconv
 PORTVERSION=	11.3
@@ -12,7 +12,7 @@ COMMENT=	GUI for bsdconv
 LICENSE=	ISCL
 
 LIB_DEPENDS=	libtag.so:audio/taglib
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bsdconv>=8.0:converters/py-bsdconv
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bsdconv>=8.0:converters/py-bsdconv@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	buganini
