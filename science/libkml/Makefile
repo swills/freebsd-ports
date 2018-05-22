@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/science/libkml/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/science/libkml/Makefile 470377 2018-05-19 11:06:20Z sunpoet $
 
 PORTNAME=	libkml
 PORTVERSION=	1.3.0
@@ -29,8 +29,6 @@ CMAKE_OFF=	WITH_JAVA WITH_PYTHON WITH_SWIG
 USE_CXXSTD=	gnu++98
 USE_LDCONFIG=	yes
 USES=		cmake pathfix
-
-PORTEXAMPLES=	*
 
 USE_GITHUB=	yes
 

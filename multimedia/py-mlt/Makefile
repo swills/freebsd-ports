@@ -1,7 +1,6 @@
 # Created by: Charlie Kester <corky1951@comcast.net>
-# $FreeBSD: head/multimedia/py-mlt/Makefile 462316 2018-02-19 13:18:57Z antoine $
+# $FreeBSD: head/multimedia/py-mlt/Makefile 470373 2018-05-19 10:32:30Z tcberner $
 
-PORTREVISION=	2
 CATEGORIES=	multimedia python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

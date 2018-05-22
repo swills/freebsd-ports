@@ -1,9 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/mail/p5-Net-IMAP-Server/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/mail/p5-Net-IMAP-Server/Makefile 470140 2018-05-16 18:58:22Z culot $
 
 PORTNAME=	Net-IMAP-Server
-PORTVERSION=	1.38
-PORTREVISION=	1
+PORTVERSION=	1.39
 CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -31,6 +30,7 @@ BUILD_DEPENDS=	p5-AnyEvent>0:devel/p5-AnyEvent \
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 TEST_DEPENDS=	p5-IO-Socket-SSL>0:security/p5-IO-Socket-SSL
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

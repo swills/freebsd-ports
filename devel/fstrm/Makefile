@@ -1,8 +1,8 @@
 # Created by: Leo Vandewoestijne <freebsd@dns.company>
-# $FreeBSD: head/devel/fstrm/Makefile 468167 2018-04-24 00:49:55Z dbaio $
+# $FreeBSD: head/devel/fstrm/Makefile 470130 2018-05-16 17:04:09Z truckman $
 
 PORTNAME=		fstrm
-PORTVERSION=		0.3.2
+PORTVERSION=		0.4.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=		devel
 
@@ -14,12 +14,12 @@ LICENSE_FILE=		${WRKSRC}/LICENSE
 
 LIB_DEPENDS=		libevent.so:devel/libevent
 
+USES=			autoreconf gmake libtool pkgconfig
 USE_GITHUB=		yes
+USE_LDCONFIG=		yes
 GH_ACCOUNT=		farsightsec
 
 GNU_CONFIGURE=		yes
-USES=			autoreconf gmake libtool pkgconfig
-USE_LDCONFIG=		yes
 INSTALL_TARGET=		install-strip
 TEST_TARGET=		check
 

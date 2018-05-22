@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@FreeBSD.org>
-# $FreeBSD: head/net/p5-Net-Frame/Makefile 464696 2018-03-16 15:21:02Z sunpoet $
+# $FreeBSD: head/net/p5-Net-Frame/Makefile 470337 2018-05-18 23:31:44Z sunpoet $
 
 PORTNAME=	Net-Frame
-PORTVERSION=	1.18
+PORTVERSION=	1.19
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

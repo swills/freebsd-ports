@@ -1,7 +1,7 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/audio/cpp-xmms2/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/audio/cpp-xmms2/Makefile 470573 2018-05-21 20:00:48Z madpilot $
 
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	audio
 PKGNAMEPREFIX=	cpp-
 
@@ -12,8 +12,11 @@ LIB_DEPENDS+=	libboost_signals.so:devel/boost-libs \
 		libxmmsclient.so:audio/xmms2
 
 MASTERDIR=	${.CURDIR}/../xmms2
+USES=		ssl
 USE_LDCONFIG=	yes
 USE_GNOME=	glib20
+
+BROKEN_SSL=	openssl-devel
 
 PLIST=		${.CURDIR}/pkg-plist
 

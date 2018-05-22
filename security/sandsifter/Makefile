@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/sandsifter/Makefile 467111 2018-04-11 20:53:04Z rene $
+# $FreeBSD: head/security/sandsifter/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	sandsifter
 PORTVERSION=	0.20170906
@@ -14,7 +14,7 @@ ONLY_FOR_ARCHS=	amd64 i386
 ONLY_FOR_ARCHS_REASON=Designed for x86
 
 BUILD_DEPENDS=	${LOCALBASE}/include/capstone/capstone.h:devel/capstone3
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}capstone>0:devel/py-capstone
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}capstone>0:devel/py-capstone@${PY_FLAVOR}
 
 USES=		gmake python localbase shebangfix
 

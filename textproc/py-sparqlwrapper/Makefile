@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/textproc/py-sparqlwrapper/Makefile 463066 2018-02-26 22:30:49Z sunpoet $
+# $FreeBSD: head/textproc/py-sparqlwrapper/Makefile 470338 2018-05-18 23:31:49Z sunpoet $
 
 PORTNAME=	sparqlwrapper
-PORTVERSION=	1.8.1
+PORTVERSION=	1.8.2
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -10,6 +10,11 @@ DISTNAME=	SPARQLWrapper-${PORTVERSION}
 
 MAINTAINER=	python@FreeBSD.org
 COMMENT=	SPARQL endpoint interface to Python
+
+LICENSE=	W3C
+LICENSE_NAME=	W3C Software Notice and License
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 NO_ARCH=	yes
 USES=		python

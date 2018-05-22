@@ -1,16 +1,13 @@
 # Created by: dom
-# $FreeBSD: head/devel/pcre/Makefile 444463 2017-06-27 13:46:53Z sunpoet $
+# $FreeBSD: head/devel/pcre/Makefile 470355 2018-05-19 06:51:05Z krion $
 
 PORTNAME=	pcre
-PORTVERSION=	8.40
-PORTREVISION=	1
+PORTVERSION=	8.42
 CATEGORIES=	devel
-MASTER_SITES=	SF \
-		ftp://ftp.csx.cam.ac.uk/pub/software/programming/${PORTNAME}/ \
-		ftp://ftp.fu-berlin.de/unix/misc/${PORTNAME}/ \
-		ftp://ftp.tin.org/pub/libs/${PORTNAME}/
+MASTER_SITES=	https://ftp.pcre.org/pub/pcre/ \
+		SF
 
-MAINTAINER=	adamw@FreeBSD.org
+MAINTAINER=	krion@FreeBSD.org
 COMMENT=	Perl Compatible Regular Expressions library
 
 LICENSE=	BSD3CLAUSE

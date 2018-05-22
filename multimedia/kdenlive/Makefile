@@ -1,8 +1,7 @@
-# $FreeBSD: head/multimedia/kdenlive/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/kdenlive/Makefile 470405 2018-05-19 12:30:24Z tcberner $
 
 PORTNAME=	kdenlive
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	multimedia kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -53,9 +52,6 @@ V4L_CMAKE_OFF=		-DWITH_LibV4L2:BOOL=FALSE
 
 XINE_RUN_DEPENDS=	xine:multimedia/xine
  
-# Lock at 17.12.3 until multimedia/mlt is at version 6.6.0
-KDE_APPLICATIONS_VERSION=	17.12.3
-
 post-patch:
 	@${REINPLACE_CMD} -e '/^update_xdg_mimetypes/ d' \
 		-e '/SharedMimeInfo/ d' \

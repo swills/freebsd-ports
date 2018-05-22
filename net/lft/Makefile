@@ -1,10 +1,9 @@
 # Created by: Marco P. Rodrigues <drkangel@drkangel.org>
-# $FreeBSD: head/net/lft/Makefile 445013 2017-07-04 09:49:30Z farrokhi $
+# $FreeBSD: head/net/lft/Makefile 470466 2018-05-20 16:26:53Z farrokhi $
 
 PORTNAME=	lft
-PORTVERSION=	3.79
-PORTREVISION=	1
-PORTEPOCH=	1
+PORTVERSION=	3.8
+PORTEPOCH=	2
 CATEGORIES=	net
 MASTER_SITES=	http://pwhois.org/get/
 

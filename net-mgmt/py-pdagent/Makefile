@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/py-pdagent/Makefile 466572 2018-04-05 17:11:39Z feld $
+# $FreeBSD: head/net-mgmt/py-pdagent/Makefile 470609 2018-05-22 13:14:43Z mat $
 
 PORTNAME=	pdagent
 PORTVERSION=	1.4
@@ -14,6 +14,7 @@ COMMENT=	PagerDuty Agent software
 LICENSE=	BSD3CLAUSE
 
 USES=		python:2.7 shebangfix
+USE_PYTHON=	flavors
 SHEBANG_FILES=	bin/*
 NO_ARCH=	yes
 NO_BUILD=	yes

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/gearmand/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/devel/gearmand/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	gearmand
 PORTVERSION=	1.0.6
@@ -10,7 +10,7 @@ MASTER_SITES=	http://launchpad.net/gearmand/1.0/${PORTVERSION}/+download/
 MAINTAINER=	bdrewery@FreeBSD.org
 COMMENT=	Gearman C Server and Library
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=0:textproc/py-sphinx
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=0:textproc/py-sphinx@${PY_FLAVOR}
 LIB_DEPENDS=	libboost_program_options.so:devel/boost-libs \
 		libevent.so:devel/libevent \
 		libuuid.so:misc/e2fsprogs-libuuid

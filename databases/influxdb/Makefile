@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/influxdb/Makefile 464049 2018-03-10 07:54:04Z yuri $
+# $FreeBSD: head/databases/influxdb/Makefile 470432 2018-05-19 20:21:54Z joneum $
 
 PORTNAME=	influxdb
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.5.0
+DISTVERSION=	1.5.2
 CATEGORIES=	databases net-mgmt
 
 MAINTAINER=	cheffo@freebsd-bg.org

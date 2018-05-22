@@ -1,8 +1,8 @@
 # Created by: Daniel Roethlisberger <daniel@roe.ch>
-# $FreeBSD: head/devel/rubygem-git/Makefile 433602 2017-02-07 20:32:41Z sunpoet $
+# $FreeBSD: head/devel/rubygem-git/Makefile 470238 2018-05-17 18:30:29Z sunpoet $
 
 PORTNAME=	git
-PORTVERSION=	1.3.0
+PORTVERSION=	1.4.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

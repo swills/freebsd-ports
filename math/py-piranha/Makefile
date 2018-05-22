@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/py-piranha/Makefile 468178 2018-04-24 06:03:05Z yuri $
+# $FreeBSD: head/math/py-piranha/Makefile 470202 2018-05-17 08:19:54Z yuri $
 
 PORTNAME=	piranha
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.10
+DISTVERSION=	0.11
 CATEGORIES=	math
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

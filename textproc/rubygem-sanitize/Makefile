@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/textproc/rubygem-sanitize/Makefile 465310 2018-03-22 19:53:36Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-sanitize/Makefile 470241 2018-05-17 18:30:44Z sunpoet $
 
 PORTNAME=	sanitize
-PORTVERSION=	4.6.4
+PORTVERSION=	4.6.5
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

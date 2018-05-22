@@ -1,8 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/chinese/gcin-gtk3/Makefile 450446 2017-09-23 14:26:43Z vanilla $
+# $FreeBSD: head/chinese/gcin-gtk3/Makefile 470554 2018-05-21 15:36:12Z vanilla $
 
 PORTNAME=	gcin
-PORTVERSION=	2.8.5
+PORTVERSION=	2.8.6
 CATEGORIES=	chinese textproc gnome
 MASTER_SITES=	http://hyperrate.com/gcin-source/
 PKGNAMESUFFIX=	-gtk3

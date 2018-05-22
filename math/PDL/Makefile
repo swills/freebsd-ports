@@ -1,9 +1,8 @@
 # Created by: Anton Berezin <tobez@plab.ku.dk>
-# $FreeBSD: head/math/PDL/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/PDL/Makefile 470549 2018-05-21 15:00:55Z sunpoet $
 
 PORTNAME=	PDL
-PORTVERSION=	2.018
-PORTREVISION=	1
+PORTVERSION=	2.019
 CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 

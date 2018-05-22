@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/pastebinit/Makefile 440630 2017-05-11 14:54:45Z amdmi3 $
+# $FreeBSD: head/misc/pastebinit/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	pastebinit
 PORTVERSION=	1.5
@@ -12,7 +12,7 @@ COMMENT=	Command line utility for pastebing
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}configobj>=4.3.2:devel/py-configobj
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}configobj>=4.3.2:devel/py-configobj@${PY_FLAVOR}
 
 USES=		python:run shebangfix tar:bzip2
 SHEBANG_FILES=	pastebinit

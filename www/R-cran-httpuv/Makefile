@@ -1,17 +1,20 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/www/R-cran-httpuv/Makefile 465280 2018-03-22 09:35:54Z tota $
+# $FreeBSD: head/www/R-cran-httpuv/Makefile 470256 2018-05-18 01:39:41Z tota $
 
 PORTNAME=	httpuv
-PORTVERSION=	1.3.6.2
+PORTVERSION=	1.4.3
 CATEGORIES=	www
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	tota@FreeBSD.org
 COMMENT=	HTTP and WebSocket server library for R
 
-LICENSE=	GPLv3
+LICENSE=	GPLv2+
 
-CRAN_DEPENDS=	R-cran-Rcpp>=0.11.0:devel/R-cran-Rcpp
+CRAN_DEPENDS=	R-cran-Rcpp>=0.11.0:devel/R-cran-Rcpp \
+		R-cran-promises>0:devel/R-cran-promises \
+		R-cran-later>=0.7.2:devel/R-cran-later \
+		R-cran-BH>0:devel/R-cran-BH
 BUILD_DEPENDS=	${CRAN_DEPENDS}
 RUN_DEPENDS=	${CRAN_DEPENDS}
 

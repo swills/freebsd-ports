@@ -1,8 +1,8 @@
 # Created by: Cheng-Lung Sung <clsung@dragon2.net>
-# $FreeBSD: head/textproc/p5-Lingua-EN-Tagger/Makefile 429340 2016-12-24 13:03:16Z sunpoet $
+# $FreeBSD: head/textproc/p5-Lingua-EN-Tagger/Makefile 470394 2018-05-19 11:07:49Z sunpoet $
 
 PORTNAME=	Lingua-EN-Tagger
-PORTVERSION=	0.28
+PORTVERSION=	0.29
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

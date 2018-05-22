@@ -1,5 +1,5 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/deskutils/lumina-mediaplayer/Makefile 467319 2018-04-14 14:02:49Z tcberner $
+# $FreeBSD: head/deskutils/lumina-mediaplayer/Makefile 470276 2018-05-18 07:42:09Z tobik $
 
 PORTNAME=	lumina-mediaplayer
 PORTVERSION=	1.4.1
@@ -16,6 +16,8 @@ RUN_DEPENDS=	gstreamer1-qt5>=0:multimedia/gstreamer1-qt@qt5 \
 
 OPTIONS_DEFINE=	I18N
 OPTIONS_DEFAULT=	I18N
+OPTIONS_SUB=	yes
+
 I18N_DESC=	Install localization files
 
 .include <bsd.port.options.mk>

@@ -1,8 +1,8 @@
 # Created by: George V. Neville-Neil
-# $FreeBSD: head/net/py-pypcap/Makefile 468652 2018-04-29 19:46:38Z sunpoet $
+# $FreeBSD: head/net/py-pypcap/Makefile 470170 2018-05-16 23:55:11Z sunpoet $
 
 PORTNAME=	pypcap
-DISTVERSION=	1.2.1
+DISTVERSION=	1.2.2
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

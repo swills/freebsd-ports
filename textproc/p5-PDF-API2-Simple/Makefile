@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/p5-PDF-API2-Simple/Makefile 465366 2018-03-23 16:33:11Z swills $
+# $FreeBSD: head/textproc/p5-PDF-API2-Simple/Makefile 470093 2018-05-16 00:01:06Z sunpoet $
 
 PORTNAME=	PDF-API2-Simple
 PORTVERSION=	1.1.5
@@ -7,11 +7,15 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:CHROMATIC
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Wrapper for the PDF::API2 modules
 
-RUN_DEPENDS=	p5-PDF-API2>=0:textproc/p5-PDF-API2
+LICENSE=	PD
 
+BUILD_DEPENDS=	p5-PDF-API2>=0:textproc/p5-PDF-API2
+RUN_DEPENDS:=	${BUILD_DEPENDS}
+
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

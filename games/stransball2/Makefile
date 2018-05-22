@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/stransball2/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/games/stransball2/Makefile 469959 2018-05-14 19:31:51Z amdmi3 $
 
 PORTNAME=	stransball2
 PORTVERSION=	1.5
@@ -12,10 +12,13 @@ DISTNAME=	${PORTNAME}-v${PORTVERSION:C/\.//}-linux
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Sequel to Transball and Transball 2 THRUST-type games
 
+LICENSE=	GPLv2
+LICENSE_FILE=	${BUILD_WRKSRC}/LICENSE
+
 LIB_DEPENDS=	libSGE.so:devel/sdl_sge
 
 USES=		gmake dos2unix zip
-DOS2UNIX_FILES=	sources/main.cpp
+DOS2UNIX_FILES=	sources/main.cpp sources/auxiliar.cpp
 USE_SDL=	sdl image mixer sound
 
 BUILD_WRKSRC=	${WRKSRC}/sources
@@ -37,8 +40,10 @@ post-patch:
 
 do-install:
 	${INSTALL_PROGRAM} ${BUILD_WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin/
-	cd ${WRKSRC} && ${COPYTREE_SHARE} 'graphics sound maps demos' ${STAGEDIR}${DATADIR}/
-	${MKDIR} ${STAGEDIR}${DOCSDIR}
+	@cd ${WRKSRC} && ${COPYTREE_SHARE} 'graphics sound maps demos' ${STAGEDIR}${DATADIR}/
+
+do-install-DOCS-on:
+	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/readme.txt ${STAGEDIR}${DOCSDIR}/
 
 .include <bsd.port.mk>

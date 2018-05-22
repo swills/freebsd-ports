@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/bind912/Makefile 467580 2018-04-17 08:26:49Z mat $
+# $FreeBSD: head/dns/bind912/Makefile 470610 2018-05-22 13:15:13Z mat $
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
@@ -30,7 +30,7 @@ LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
 # ISC releases things like 9.8.0-P1, which our versioning doesn't like
-ISCVERSION=	9.12.1
+ISCVERSION=	9.12.1-P2
 
 USES=	cpe libedit
 
@@ -187,9 +187,9 @@ MINCACHE_EXTRA_PATCHES=	${FILESDIR}/extrapatch-bind-min-override-ttl
 NATIVE_PKCS11_CONFIGURE_ENABLE=	native-pkcs11
 NATIVE_PKCS11_IMPLIES=	THREADS
 
-PYTHON_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=0:devel/py-ply
+PYTHON_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=0:devel/py-ply@${PY_FLAVOR}
 PYTHON_CONFIGURE_WITH=	python=${PYTHON_CMD}
-PYTHON_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=0:devel/py-ply
+PYTHON_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ply>=0:devel/py-ply@${PY_FLAVOR}
 PYTHON_USES=	python
 
 QUERYTRACE_CONFIGURE_ENABLE=	querytrace

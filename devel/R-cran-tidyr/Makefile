@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-tidyr/Makefile 466634 2018-04-06 09:44:46Z tota $
+# $FreeBSD: head/devel/R-cran-tidyr/Makefile 470527 2018-05-21 09:31:34Z tota $
 
 PORTNAME=	tidyr
-PORTVERSION=	0.8.0
+PORTVERSION=	0.8.1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

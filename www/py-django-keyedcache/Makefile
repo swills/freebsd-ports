@@ -1,5 +1,5 @@
 # Created by: Kevin Golding <ports@caomhin.org>
-# $FreeBSD: head/www/py-django-keyedcache/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/py-django-keyedcache/Makefile 470341 2018-05-18 23:32:05Z sunpoet $
 
 PORTNAME=	django-keyedcache
 PORTVERSION=	1.5.1
@@ -12,6 +12,9 @@ MAINTAINER=	ports@caomhin.org
 COMMENT=	Simplified, speedy way to manage caching in Django apps
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=	Project development abandoned
+EXPIRATION_DATE=2018-08-01
 
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/django/bin/django-admin.py:www/py-django18@${FLAVOR}
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 469692 2018-05-11 20:34:00Z seanc $
+# $FreeBSD: head/sysutils/Makefile 470267 2018-05-18 05:22:13Z acm $
 #
 
     COMMENT = System utilities
@@ -86,7 +86,11 @@
     SUBDIR += baloo-widgets
     SUBDIR += baloo-widgets-kde4
     SUBDIR += bamf
-    SUBDIR += bareos-bat
+    SUBDIR += bareos16-bat
+    SUBDIR += bareos16-client
+    SUBDIR += bareos16-client-static
+    SUBDIR += bareos16-server
+    SUBDIR += bareos16-traymonitor
     SUBDIR += bareos-client
     SUBDIR += bareos-client-static
     SUBDIR += bareos-docs
@@ -285,6 +289,8 @@
     SUBDIR += dvdvideo
     SUBDIR += dvtm
     SUBDIR += dwatch
+    SUBDIR += dwatch-gource
+    SUBDIR += dwatch-pwsnoop
     SUBDIR += e2fsprogs
     SUBDIR += ec2-scripts
     SUBDIR += edid-decode

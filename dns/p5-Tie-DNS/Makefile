@@ -1,5 +1,5 @@
 # Created by: Seamus Venasse <svenasse@polaris.ca>
-# $FreeBSD: head/dns/p5-Tie-DNS/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/dns/p5-Tie-DNS/Makefile 470379 2018-05-19 11:06:31Z sunpoet $
 
 PORTNAME=	Tie-DNS
 PORTVERSION=	1.151560
@@ -26,11 +26,9 @@ NO_ARCH=	yes
 USE_PERL5=	configure
 USES=		perl5 shebangfix
 
-PORTEXAMPLES=	*
-
 SHEBANG_FILES=	eg/*.pl
 
-post-install:
+post-install-EXAMPLES-on:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/
 	${INSTALL_DATA} ${WRKSRC}/eg/*.pl ${STAGEDIR}${EXAMPLESDIR}/
 

@@ -1,5 +1,5 @@
 # Created by: Bruce Simpson
-# $FreeBSD: head/devel/kBuild/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/kBuild/Makefile 470301 2018-05-18 15:41:55Z adamw $
 
 PORTNAME=	kBuild
 DISTVERSION=	${KBUILD_VERSION}
@@ -18,7 +18,6 @@ BROKEN_powerpc64=	does not build: fatal error: xmmintrin.h: No such file or dire
 NOT_FOR_ARCHS=		aarch64 armv6 armv7 mips mips64
 NOT_FOR_ARCHS_REASON=	./kBuild/env.sh: unknown cpu/arch
 
-USE_GCC=	any
 USES=		autoreconf:build gmake makeinfo tar:xz
 
 CONFLICTS_INSTALL=	kBuild-devel-[0-9]*
@@ -43,7 +42,10 @@ PORTDOCS=	QuickReference-kmk.html \
 ENV=
 .export ENV
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS GCC
+OPTIONS_DEFAULT=GCC
+GCC_DESC=	Build with GCC (should almost always be enabled)
+GCC_USE=	GCC=any
 
 post-patch:
 	for f in ${WRKSRC}/kBuild/tools/*.kmk; do \

@@ -1,13 +1,15 @@
 # Created by: chinsan <chinsan@mail2000.com.tw>
-# $FreeBSD: head/www/phpmyfaq/Makefile 452588 2017-10-21 12:08:56Z flo $
+# $FreeBSD: head/www/phpmyfaq/Makefile 469970 2018-05-14 21:04:40Z flo $
 
 PORTNAME=	phpmyfaq
-PORTVERSION=	2.9.9
+PORTVERSION=	2.9.10
 CATEGORIES=	www
 MASTER_SITES=	http://download.phpmyfaq.de/files/
 
 MAINTAINER=	flo@FreeBSD.org
 COMMENT=	Multilingual, completely database-driven FAQ-system
+
+LICENSE=	MPL20
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

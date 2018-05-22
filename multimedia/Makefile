@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 469721 2018-05-12 10:04:38Z pi $
+# $FreeBSD: head/multimedia/Makefile 470583 2018-05-21 22:52:23Z swills $
 #
 
     COMMENT = Multimedia software
@@ -341,6 +341,7 @@
     SUBDIR += py-openlp
     SUBDIR += py-periscope
     SUBDIR += py-pretty_midi
+    SUBDIR += py-PySceneDetect
     SUBDIR += py-qt4-multimedia
     SUBDIR += py-qt4-phonon
     SUBDIR += py-qt5-multimedia

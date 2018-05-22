@@ -1,4 +1,4 @@
-# $FreeBSD: head/GIDs 469847 2018-05-14 02:55:52Z knu $
+# $FreeBSD: head/GIDs 470038 2018-05-15 17:23:53Z feld $
 # Please keep this file sorted by GID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/group
@@ -826,7 +826,7 @@ chronyd:*:849:
 # free: 883
 # free: 884
 # free: 885
-# free: 886
+miniflux:*:886:
 pdagent:*:887:
 vuls:*:888:
 mattermost:*:889:

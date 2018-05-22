@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-net-ssh41/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/security/rubygem-net-ssh41/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	net-ssh
 PORTVERSION=	4.1.0
@@ -11,6 +11,9 @@ COMMENT=	Non-interactive SSH processing
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use security/rubygem-net-ssh instead.
+EXPIRATION_DATE=	2018-06-30
 
 OPTIONS_DEFINE=	PROMPT_PASSPHRASES
 OPTIONS_DEFAULT=PROMPT_PASSPHRASES

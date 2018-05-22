@@ -1,5 +1,5 @@
 # Created by: vazquez@iqm.unicamp.br
-# $FreeBSD: head/devel/fpp/Makefile 416662 2016-06-10 09:08:02Z tz $
+# $FreeBSD: head/devel/fpp/Makefile 470213 2018-05-17 09:56:55Z tz $
 
 PORTNAME=	fpp
 PORTVERSION=	1.1
@@ -10,7 +10,7 @@ MASTER_SITES=	NL/fortran/ \
 DISTNAME=	fdfpp
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fortran preprocessor for FORTRAN 77 and Fortran 90 programs
 
 ALL_TARGET=	bsd44

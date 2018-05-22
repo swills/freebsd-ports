@@ -1,5 +1,5 @@
 # Created by: js@jeannot.org
-# $FreeBSD: head/math/scilab/Makefile 468325 2018-04-26 06:41:30Z yuri $
+# $FreeBSD: head/math/scilab/Makefile 469976 2018-05-14 21:54:21Z makc $
 
 PORTNAME=	scilab
 PORTVERSION=	5.5.2
@@ -25,6 +25,7 @@ RUN_DEPENDS=	xdg-open:devel/xdg-utils
 
 USES=		cpe desktop-file-utils fortran gettext gmake iconv \
 		libtool ncurses pathfix pkgconfig shared-mime-info
+USE_CXXSTD=	gnu++98
 USE_LOCALE=	en_US.UTF-8
 GNU_CONFIGURE=	yes
 

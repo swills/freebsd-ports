@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: head/sysutils/py-google-compute-engine/files/google_startup.in 448349 2017-08-19 18:02:55Z ultima $
+# $FreeBSD: head/sysutils/py-google-compute-engine/files/google_startup.in 470611 2018-05-22 13:27:40Z swills $
 #
 # PROVIDE: google_startup
 # BEFORE: LOGIN
@@ -12,6 +12,9 @@
 #
 
 . /etc/rc.subr
+
+# Required to execute gsutil
+export PATH=%%LOCALBASE%%/bin:$PATH
 
 name="google_startup"
 rcvar="google_startup_enable"

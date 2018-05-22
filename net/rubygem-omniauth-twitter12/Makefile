@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-omniauth-twitter12/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/net/rubygem-omniauth-twitter12/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	omniauth-twitter
 PORTVERSION=	1.2.1
@@ -10,6 +10,9 @@ MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	OmniAuth strategy for Twitter
 
 LICENSE=	MIT
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use net/rubygem-omniauth-twitter instead.
+EXPIRATION_DATE=	2018-06-30
 
 RUN_DEPENDS=	rubygem-json1>=1.3:devel/rubygem-json1 \
 		rubygem-omniauth-oauth>=1.1:net/rubygem-omniauth-oauth \

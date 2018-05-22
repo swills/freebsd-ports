@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/p5-Data-Google-Visualization-DataSource/Makefile 465366 2018-03-23 16:33:11Z swills $
+# $FreeBSD: head/graphics/p5-Data-Google-Visualization-DataSource/Makefile 470090 2018-05-16 00:00:50Z sunpoet $
 
 PORTNAME=	Data-Google-Visualization-DataSource
 PORTVERSION=	0.01
@@ -7,18 +7,20 @@ CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Perl helper class for the Google Chart Tools Datasource Protocol
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-Clone>=0:devel/p5-Clone \
 		p5-Data-Google-Visualization-DataTable>=0:graphics/p5-Data-Google-Visualization-DataTable \
-		p5-JSON-XS>=2.0:converters/p5-JSON-XS \
+		p5-JSON-XS>=0:converters/p5-JSON-XS \
 		p5-Moose>=0:devel/p5-Moose
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
+NO_ARCH=	yes
 USES=		perl5
 USE_PERL5=	configure
 

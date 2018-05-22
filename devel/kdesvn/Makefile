@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/kdesvn/Makefile 468742 2018-04-30 19:21:56Z tcberner $
+# $FreeBSD: head/devel/kdesvn/Makefile 470571 2018-05-21 19:02:23Z arrowd $
 
 PORTNAME=	kdesvn
 DISTVERSION=	2.0.0
+PORTREVISION=	1
 CATEGORIES=	devel kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${DISTVERSION}/
 

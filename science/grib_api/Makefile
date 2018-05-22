@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/science/grib_api/Makefile 464011 2018-03-09 21:48:31Z sunpoet $
+# $FreeBSD: head/science/grib_api/Makefile 470231 2018-05-17 18:29:50Z sunpoet $
 
 PORTNAME=	grib_api
-PORTVERSION=	1.26.0
+PORTVERSION=	1.26.1
 DISTVERSIONSUFFIX=	-Source
 CATEGORIES=	science
 MASTER_SITES=	https://software.ecmwf.int/wiki/download/attachments/3473437/ \

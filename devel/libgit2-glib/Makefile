@@ -1,8 +1,8 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/devel/libgit2-glib/Makefile 469930 2018-05-14 17:39:27Z mfechner $
+# $FreeBSD: head/devel/libgit2-glib/Makefile 470014 2018-05-15 12:21:41Z rakuco $
 
 PORTNAME=	libgit2-glib
-PORTVERSION=	0.27.0
+PORTVERSION=	0.26.0
 CATEGORIES=	devel gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -12,8 +12,6 @@ COMMENT=	Glib wrapper library around the libgit2 git access library
 
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
-
-BROKEN=		upstream does not support libgit 0.27.0
 
 BUILD_DEPENDS=	vapigen:lang/vala
 LIB_DEPENDS=	libgit2.so:devel/libgit2

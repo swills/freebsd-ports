@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-aliyun/Makefile 467349 2018-04-14 23:58:41Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-aliyun/Makefile 470389 2018-05-19 11:07:24Z sunpoet $
 
 PORTNAME=	fog-aliyun
-PORTVERSION=	0.2.1
+PORTVERSION=	0.2.2
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

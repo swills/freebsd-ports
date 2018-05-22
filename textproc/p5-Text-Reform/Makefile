@@ -1,5 +1,5 @@
 # Created by: Mathieu Arnold <m@absolight.net>
-# $FreeBSD: head/textproc/p5-Text-Reform/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/textproc/p5-Text-Reform/Makefile 470281 2018-05-18 09:04:08Z amdmi3 $
 
 PORTNAME=	Text-Reform
 PORTVERSION=	1.20
@@ -11,7 +11,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Manual text wrapping and reformatting
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

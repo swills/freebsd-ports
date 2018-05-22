@@ -1,5 +1,5 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/py-elasticsearch-async/Makefile 466882 2018-04-09 18:50:23Z sunpoet $
+# $FreeBSD: head/textproc/py-elasticsearch-async/Makefile 470079 2018-05-15 23:59:49Z sunpoet $
 
 PORTNAME=	elasticsearch-async
 PORTVERSION=	6.0.0
@@ -16,9 +16,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}aiohttp>=0:www/py-aiohttp@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}async_timeout>=0:devel/py-async_timeout@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}elasticsearch>=6.0.0:textproc/py-elasticsearch@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-asyncio>=0:devel/py-pytest-asyncio@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytest-cov>=0:devel/py-pytest-cov@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest-asyncio>=0:devel/py-pytest-asyncio@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest-cov>=0:devel/py-pytest-cov@${FLAVOR}
 
 NO_ARCH=	yes
 USE_PYTHON=	autoplist distutils

@@ -1,8 +1,8 @@
 # Created by: Joe Horn <joehorn@gmail.com>
-# $FreeBSD: head/www/pear-twig/Makefile 469898 2018-05-14 15:10:06Z joneum $
+# $FreeBSD: head/www/pear-twig/Makefile 470131 2018-05-16 17:09:34Z joneum $
 
 PORTNAME=	twig
-PORTVERSION=	1.28.1
+PORTVERSION=	1.29.0
 CATEGORIES=	www pear
 MASTER_SITES=	http://pear.twig-project.org/get/
 DISTNAME=	Twig-${PORTVERSION}

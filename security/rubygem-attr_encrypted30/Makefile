@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-attr_encrypted30/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/security/rubygem-attr_encrypted30/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	attr_encrypted
 PORTVERSION=	3.0.3
@@ -11,6 +11,9 @@ COMMENT=	Generates attr_accessors that encrypt and decrypt attributes
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use security/rubygem-attr_encrypted instead.
+EXPIRATION_DATE=	2018-06-30
 
 RUN_DEPENDS=	rubygem-encryptor>=3.0.0:security/rubygem-encryptor
 

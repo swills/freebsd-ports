@@ -1,9 +1,9 @@
-# $FreeBSD: head/databases/mongodb34/Makefile 468698 2018-04-30 13:17:51Z riggs $
+# $FreeBSD: head/databases/mongodb34/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	mongodb
 DISTVERSIONPREFIX=	r
 DISTVERSION=	3.4.9
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	databases net
 MASTER_SITES=	https://fastdl.mongodb.org/src/ \
 		http://fastdl.mongodb.org/src/ \
@@ -26,8 +26,8 @@ ONLY_FOR_ARCHS_REASON=	"Only supported on amd64 (i386 deprecated in v3)"
 LIB_DEPENDS=	libpcre.so:devel/pcre \
 		libsnappy.so:archivers/snappy \
 		libboost_system.so:devel/boost-libs
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=3.11:devel/py-yaml \
-		${PYTHON_PKGNAMEPREFIX}pymongo>=3.0:databases/pymongo
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=3.11:devel/py-yaml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pymongo>=3.0:databases/pymongo@${PY_FLAVOR}
 
 CONFLICTS_BUILD=	mongo-cxx-driver
 

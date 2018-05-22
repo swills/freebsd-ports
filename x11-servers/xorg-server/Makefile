@@ -1,9 +1,9 @@
 # Created by: Eric Anholt <anholt@FreeBSD.org>
-# $FreeBSD: head/x11-servers/xorg-server/Makefile 455095 2017-11-29 07:21:04Z danfe $
+# $FreeBSD: head/x11-servers/xorg-server/Makefile 470462 2018-05-20 14:51:32Z zeising $
 
 PORTNAME?=	xorg-server
 PORTVERSION?=	1.18.4
-PORTREVISION?=	6
+PORTREVISION?=	8
 PORTEPOCH?=	1
 CATEGORIES=	x11-servers
 MASTER_SITES=	XORG/individual/xserver
@@ -59,7 +59,7 @@ BUILD_DEPENDS+=	libepoxy>0:graphics/libepoxy	# only for configure
 USE_GL+=	gbm
 USE_XORG+=	pciaccess xf86dgaproto xf86vidmodeproto
 CONFIGURE_ARGS+=--disable-dmx --disable-xephyr --disable-xnest --disable-xvfb \
-		--disable-xwayland
+		--disable-xwayland --enable-xcsecurity
 SUB_FILES=	pkg-install pkg-deinstall
 .else
 CONFIGURE_ARGS+=--disable-xorg

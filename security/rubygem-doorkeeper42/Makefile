@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-doorkeeper42/Makefile 465682 2018-03-27 09:35:54Z tz $
+# $FreeBSD: head/security/rubygem-doorkeeper42/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	doorkeeper
 PORTVERSION=	4.2.6
@@ -11,6 +11,9 @@ COMMENT=	Doorkeeper is an OAuth 2 provider for Rails and Grape
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/MIT-LICENSE
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use security/rubygem-doorkeeper instead.
+EXPIRATION_DATE=	2018-06-30
 
 CONFLICTS_INSTALL=	rubygem-doorkeeper
 

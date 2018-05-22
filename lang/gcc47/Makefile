@@ -1,9 +1,9 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc47/Makefile 469832 2018-05-13 21:00:43Z gerald $
+# $FreeBSD: head/lang/gcc47/Makefile 469956 2018-05-14 19:15:36Z tijl $
 
 PORTNAME=	gcc
 PORTVERSION=	4.7.4
-PORTREVISION=	9
+PORTREVISION=	10
 PORTEPOCH=	1
 CATEGORIES=	lang
 MASTER_SITES=	GCC

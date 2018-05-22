@@ -1,5 +1,5 @@
 # Created by: Jeremy Johnston <jeremy@smart-serv.net>
-# $FreeBSD: head/sysutils/tuptime/Makefile 462661 2018-02-23 02:43:06Z yuri $
+# $FreeBSD: head/sysutils/tuptime/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	tuptime
 DISTVERSION=	3.3.3
@@ -10,7 +10,7 @@ COMMENT=	Historical and statistical system running time report tool
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>=2.7:databases/py-sqlite3
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>=2.7:databases/py-sqlite3@${PY_FLAVOR}
 
 USES=		python:run shebangfix
 USE_GITHUB=	yes

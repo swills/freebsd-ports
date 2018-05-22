@@ -1,5 +1,5 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/x11/lumina-core/Makefile 456965 2017-12-22 02:54:09Z araujo $
+# $FreeBSD: head/x11/lumina-core/Makefile 470276 2018-05-18 07:42:09Z tobik $
 
 PORTNAME=	lumina-core
 PORTVERSION=	1.4.1
@@ -25,6 +25,8 @@ CONFLICTS_INSTALL=	lumina-1.2.*
 
 OPTIONS_DEFINE=	MULTIMEDIA TRUEOS I18N
 OPTIONS_DEFAULT=	MULTIMEDIA I18N
+OPTIONS_SUB=	yes
+
 MULTIMEDIA_DESC=	Install multimedia support backend (gstreamer)
 TRUEOS_DESC=	Use the TrueOS system interface settings.
 I18N_DESC=	Install localization files

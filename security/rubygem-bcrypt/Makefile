@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/security/rubygem-bcrypt/Makefile 414136 2016-04-27 21:57:31Z swills $
+# $FreeBSD: head/security/rubygem-bcrypt/Makefile 470239 2018-05-17 18:30:34Z sunpoet $
 
 PORTNAME=	bcrypt
-PORTVERSION=	3.1.11
+PORTVERSION=	3.1.12
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

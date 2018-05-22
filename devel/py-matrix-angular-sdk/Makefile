@@ -1,13 +1,13 @@
 # Created by: Brendan Molloy <brendan+freebsd@bbqsrc.net>
-# $FreeBSD: head/devel/py-matrix-angular-sdk/Makefile 467537 2018-04-16 21:33:18Z feld $
+# $FreeBSD: head/devel/py-matrix-angular-sdk/Makefile 470304 2018-05-18 15:54:13Z miwi $
 
 PORTNAME=	matrix-angular-sdk
-PORTVERSION=	0.6.6
+PORTVERSION=	0.6.8
 CATEGORIES=	devel www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	miwi@FreeBSD.org
 COMMENT=	Matrix Angular SDK
 
 LICENSE=	APACHE20

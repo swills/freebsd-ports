@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.default-versions.mk 469097 2018-05-05 08:57:37Z antoine $
+# $FreeBSD: head/Mk/bsd.default-versions.mk 470540 2018-05-21 13:50:39Z mat $
 #
 # MAINTAINER:	ports@FreeBSD.org
 #
@@ -57,7 +57,7 @@ LINUX_DEFAULT?=		c6
 LUA_DEFAULT?=		5.2
 # Possible values: 5.5, 5.6, 5.7, 8.0, 5.5m, 10.0m, 10.1m, 10.2m, 5.5p, 5.6p, 5.7p, 5.6w
 MYSQL_DEFAULT?=		5.6
-# Possible values: 5.22, 5.24, 5.26, devel
+# Possible values: 5.22, 5.24, 5.26, 5.28, devel
 .if !exists(${LOCALBASE}/bin/perl) || (!defined(_PORTS_ENV_CHECK) && \
     defined(PACKAGE_BUILDING))
 PERL5_DEFAULT?=		5.26

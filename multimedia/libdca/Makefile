@@ -1,14 +1,16 @@
 # Created by: Pav Lucistnik <pav@FreeBSD.org>
-# $FreeBSD: head/multimedia/libdca/Makefile 362784 2014-07-24 11:10:09Z amdmi3 $
+# $FreeBSD: head/multimedia/libdca/Makefile 470419 2018-05-19 16:33:53Z riggs $
 
 PORTNAME=	libdca
-PORTVERSION=	0.0.5
-PORTREVISION=	1
+PORTVERSION=	0.0.6
 CATEGORIES=	multimedia
 MASTER_SITES=	http://download.videolan.org/pub/videolan/${PORTNAME}/${PORTVERSION}/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Free DTS Coherent Acoustics decoder
+
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		libtool pathfix pkgconfig tar:bzip2
 GNU_CONFIGURE=	yes

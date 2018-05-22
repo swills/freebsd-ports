@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-octokit46/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/net/rubygem-octokit46/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	octokit
 PORTVERSION=	4.6.2
@@ -11,6 +11,9 @@ COMMENT=	Simple wrapper for the GitHub API
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use net/rubygem-octokit instead.
+EXPIRATION_DATE=	2018-06-30
 
 RUN_DEPENDS=	rubygem-sawyer>=0.8.0:www/rubygem-sawyer
 

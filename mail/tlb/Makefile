@@ -1,5 +1,5 @@
 # Created by: Anders Nordby <anders@fix.no>
-# $FreeBSD: head/mail/tlb/Makefile 444795 2017-06-30 22:14:05Z sunpoet $
+# $FreeBSD: head/mail/tlb/Makefile 470213 2018-05-17 09:56:55Z tz $
 
 PORTNAME=	tlb
 PORTVERSION=	0.11a
@@ -10,7 +10,7 @@ MASTER_SITES=	ftp://ftp.hpc.uh.edu/pub/tlb/ \
 		ftp://totem.fix.no/pub/mirrors/misc/ \
 		http://ports.toco-domains.de/
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	The List Batcher, a general purpose mail list delivery engine
 
 RUN_DEPENDS=	p5-Mail-Tools>=0:mail/p5-Mail-Tools \

@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-oj2/Makefile 441151 2017-05-18 13:42:42Z sunpoet $
+# $FreeBSD: head/devel/rubygem-oj2/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	oj
 PORTVERSION=	2.17.5
@@ -11,6 +11,9 @@ MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Fast JSON parser and serializer
 
 LICENSE=	MIT
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use devel/rubygem-oj instead.
+EXPIRATION_DATE=	2018-06-30
 
 LIB_DEPENDS=	libgmp.so:math/gmp
 

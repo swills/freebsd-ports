@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-toolkits/qt5-datavis3d/Makefile 465911 2018-03-29 19:03:17Z tcberner $
+# $FreeBSD: head/x11-toolkits/qt5-datavis3d/Makefile 470288 2018-05-18 12:27:43Z rakuco $
 
 PORTNAME=	datavis3d
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 PKGNAMEPREFIX=	qt5-
 

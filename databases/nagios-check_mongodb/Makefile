@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/databases/nagios-check_mongodb/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/databases/nagios-check_mongodb/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	check_mongodb
 PORTVERSION=	0.1
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}nagios-
 MAINTAINER=	demon@FreeBSD.org
 COMMENT=	Nagios plugin to check mongodb server
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pymongo>=0:databases/pymongo
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pymongo>=0:databases/pymongo@${PY_FLAVOR}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	mzupan

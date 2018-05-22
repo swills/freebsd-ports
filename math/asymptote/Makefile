@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@email.it>
-# $FreeBSD: head/math/asymptote/Makefile 464068 2018-03-10 11:22:59Z cpm $
+# $FreeBSD: head/math/asymptote/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	asymptote
 PORTVERSION=	2.41
@@ -18,8 +18,8 @@ LIB_DEPENDS=	libgc-threaded.so:devel/boehm-gc-threaded \
 		libsigsegv.so:devel/libsigsegv
 RUN_DEPENDS=	animate:graphics/ImageMagick \
 		gv:print/gv \
-		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow \
-		${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter
+		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${PY_FLAVOR}
 
 ALL_TARGET=	asy asy-keywords.el
 

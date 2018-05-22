@@ -1,5 +1,5 @@
 # Created by: Ken Moore <ken@pcbsd.org>
-# $FreeBSD: head/x11/lumina-coreutils/Makefile 456963 2017-12-22 02:46:38Z araujo $
+# $FreeBSD: head/x11/lumina-coreutils/Makefile 470276 2018-05-18 07:42:09Z tobik $
 
 PORTNAME=	lumina-coreutils
 PORTVERSION=	1.4.1
@@ -16,6 +16,8 @@ CONFLICTS_INSTALL=	lumina-1.2.*
 
 OPTIONS_DEFINE=		I18N
 OPTIONS_DEFAULT=	I18N
+OPTIONS_SUB=	yes
+
 I18N_DESC=	Install localization files
 
 .include <bsd.port.options.mk>

@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-fastnumbers/Makefile 454322 2017-11-16 18:37:08Z yuri $
+# $FreeBSD: head/devel/py-fastnumbers/Makefile 470365 2018-05-19 07:45:40Z yuri $
 
 PORTNAME=	fastnumbers
-DISTVERSION=	2.0.2
+DISTVERSION=	2.0.4
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

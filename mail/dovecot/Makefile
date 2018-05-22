@@ -1,5 +1,5 @@
 # Created by: Nagy, Attila <bra@fsn.hu>
-# $FreeBSD: head/mail/dovecot/Makefile 468228 2018-04-24 18:11:23Z adamw $
+# $FreeBSD: head/mail/dovecot/Makefile 470297 2018-05-18 15:23:27Z adamw $
 
 ######################################################################
 # Anytime PORTVERSION changes please bump PORTREVISION of            #
@@ -12,7 +12,7 @@ PORTREVISION=	2
 CATEGORIES=	mail ipv6
 MASTER_SITES=	https://www.dovecot.org/releases/2.3/
 
-MAINTAINER=	adamw@FreeBSD.org
+MAINTAINER=	ler@FreeBSD.org
 COMMENT=	Secure, fast and powerful IMAP and POP3 server
 
 LICENSE=	LGPL21 MIT

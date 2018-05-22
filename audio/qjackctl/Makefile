@@ -1,12 +1,12 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/qjackctl/Makefile 458887 2018-01-13 01:01:28Z swills $
+# $FreeBSD: head/audio/qjackctl/Makefile 470036 2018-05-15 17:04:17Z yuri $
 
 PORTNAME=	qjackctl
 DISTVERSIONPREFIX=	qjackctl_
 DISTVERSION=	0_5_0
 CATEGORIES=	audio
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Qt interface for JACK Audio Connection Kit
 
 LICENSE=	GPLv2+

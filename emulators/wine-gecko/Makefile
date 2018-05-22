@@ -1,5 +1,5 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/emulators/wine-gecko/Makefile 466180 2018-04-01 20:30:37Z gerald $
+# $FreeBSD: head/emulators/wine-gecko/Makefile 470368 2018-05-19 07:59:57Z se $
 
 PORTNAME=	wine-gecko
 DISTVERSION=	2.47
@@ -17,10 +17,12 @@ LICENSE_COMB=	multi
 
 PORTSCOUT=	ignore:1	# for newer versions see emulators/wine-gecko-devel
 
+CONFLICTS_INSTALL=	wine-gecko-devel-[0-9]*
+
 NO_BUILD=	yes
 PLIST_SUB+=	GECKO_VERSION="${DISTVERSION}"
 DATADIR=	${PREFIX}/share/wine
-PLIST_FILES=	%%DATADIR%%/gecko/wine_gecko-%%GECKO_VERSION%%-x86.msi
+PLIST_FILES=	${DATADIR}/gecko/wine_gecko-${DISTVERSION}-x86.msi
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${DATADIR}/gecko

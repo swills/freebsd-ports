@@ -1,8 +1,8 @@
 # Created by: arved
-# $FreeBSD: head/security/pcsc-tools/Makefile 461669 2018-02-12 22:42:30Z arved $
+# $FreeBSD: head/security/pcsc-tools/Makefile 470046 2018-05-15 19:19:57Z arved $
 
 PORTNAME=	pcsc-tools
-PORTVERSION=	1.5.2
+PORTVERSION=	1.5.3
 CATEGORIES=	security
 MASTER_SITES=	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/
 

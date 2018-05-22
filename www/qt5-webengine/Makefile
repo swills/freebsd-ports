@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/qt5-webengine/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/www/qt5-webengine/Makefile 470288 2018-05-18 12:27:43Z rakuco $
 
 # QtWebEngine itself is a very thin layer of Qt code on top of a large part of
 # Chromium (everything up to the content/ layer). As such, most of the work in
@@ -13,10 +13,13 @@
 # - We need to see if more "use_system_<FOO>" flags can be passed.
 # - The process of porting QtWebEngine needs to be documented so we can move to
 #   newer releases more easily.
+#
+# Also note that, due to the insane amount of patches this port needs, it tends
+# to lag behind the rest of the official Qt5 ones, which is why we set
+# QT5_VERSION and DISTINFO_FILE here.
 
 PORTNAME=	webengine
 DISTVERSION=	${QT5_VERSION}
-PORTREVISION=	3
 CATEGORIES=	www
 PKGNAMEPREFIX=	qt5-
 
@@ -43,6 +46,9 @@ LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 		libsnappy.so:archivers/snappy \
 		libsrtp.so:net/libsrtp \
 		libwebp.so:graphics/webp
+
+DISTINFO_FILE=	${.CURDIR}/distinfo
+QT5_VERSION=	5.9.5
 
 OPTIONS_SINGLE=		AUDIO
 OPTIONS_SINGLE_AUDIO=	ALSA PULSEAUDIO

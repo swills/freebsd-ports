@@ -1,8 +1,7 @@
-# Created by: Alonso CArdenas <acm@FreeBSD.org>
-# $FreeBSD: head/sysutils/bareos-docs/Makefile 456228 2017-12-13 20:06:09Z acm $
+# $FreeBSD: head/sysutils/bareos-docs/Makefile 470319 2018-05-18 19:00:37Z acm $
 
 PORTNAME=	bareos
-PORTVERSION=	16.2.7
+PORTVERSION=	17.2.5
 CATEGORIES=	sysutils
 MASTER_SITES=	http://doc.bareos.org/master/
 PKGNAMESUFFIX=	-docs

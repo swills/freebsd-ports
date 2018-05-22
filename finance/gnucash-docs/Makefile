@@ -1,9 +1,9 @@
 # Created by: Glenn Johnson <glennpj@charter.net>
-# $FreeBSD: head/finance/gnucash-docs/Makefile 466512 2018-04-05 00:00:56Z madpilot $
+# $FreeBSD: head/finance/gnucash-docs/Makefile 469967 2018-05-14 21:01:51Z madpilot $
 #   $MCom: ports/finance/gnucash-docs/Makefile,v 1.7 2007/08/04 03:51:29 marcus Exp $
 
 PORTNAME=	gnucash-docs
-PORTVERSION=	2.6.20
+PORTVERSION=	3.1
 CATEGORIES=	finance gnome
 MASTER_SITES=	SF/gnucash/${PORTNAME}/${PORTVERSION} \
 		http://www.gnucash.org/pub/gnucash/sources/stable/ \

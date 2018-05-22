@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-recursive-open-struct100/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/devel/rubygem-recursive-open-struct100/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	recursive-open-struct
 PORTVERSION=	1.0.0
@@ -11,6 +11,9 @@ COMMENT=	Allows nested hashes to be treated in a recursive fashion
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use devel/rubygem-recursive-open-struct instead.
+EXPIRATION_DATE=	2018-06-30
 
 PORTSCOUT=	limit:^1\.0\.0
 

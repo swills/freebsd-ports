@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/dns/libidn2/Makefile 449040 2017-08-31 15:31:36Z sunpoet $
+# $FreeBSD: head/dns/libidn2/Makefile 470376 2018-05-19 11:06:15Z sunpoet $
 
 PORTNAME=	libidn2
-PORTVERSION=	2.0.4
+PORTVERSION=	2.0.5
 CATEGORIES=	dns
 MASTER_SITES=	GNU/libidn
 

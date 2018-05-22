@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/webvfx-qt5/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/multimedia/webvfx-qt5/Makefile 470373 2018-05-19 10:32:30Z tcberner $
 
 PORTNAME=	webvfx
 DISTVERSION=	0.4.4-20160823
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	multimedia
 PKGNAMESUFFIX=	-qt5
 

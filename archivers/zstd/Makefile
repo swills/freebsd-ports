@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/archivers/zstd/Makefile 466417 2018-04-04 10:56:26Z sunpoet $
+# $FreeBSD: head/archivers/zstd/Makefile 469954 2018-05-14 19:12:46Z bapt $
 
 PORTNAME=	zstd
 PORTVERSION=	1.3.4
@@ -18,7 +18,6 @@ OPTIONS_DEFINE=	LZ4
 OPTIONS_DEFAULT=LZ4
 
 ALL_TARGET=	default
-MAKE_ARGS=	LIBDIR="${PREFIX}/lib"
 TEST_TARGET=	test
 USE_LDCONFIG=	yes
 USES=		gmake

@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/rubygem-kubeclient22/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/www/rubygem-kubeclient22/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	kubeclient
 PORTVERSION=	2.2.0
@@ -11,6 +11,9 @@ COMMENT=	Client for Kubernetes REST API
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use www/rubygem-kubeclient instead.
+EXPIRATION_DATE=	2018-06-30
 
 RUN_DEPENDS=	rubygem-http>=0.9.8:www/rubygem-http \
 		rubygem-recursive-open-struct100=1.0.0:devel/rubygem-recursive-open-struct100 \

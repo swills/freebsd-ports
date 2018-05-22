@@ -1,5 +1,5 @@
 # Created by: Ville Eerola <ve@sci.fi>
-# $FreeBSD: head/mail/fetchmail/Makefile 469628 2018-05-11 11:23:42Z mandree $
+# $FreeBSD: head/mail/fetchmail/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	fetchmail
 PORTVERSION=	6.3.26
@@ -59,7 +59,7 @@ NTLM_PORTDOCS=		README.NTLM
 # POP2 is obsolete
 POP2_CONFIGURE_ENABLE=	POP2
 
-X11_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>=0:x11-toolkits/py-tkinter
+X11_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tkinter>=0:x11-toolkits/py-tkinter@${PY_FLAVOR}
 X11_CONFIGURE_OFF=	PYTHON=:
 X11_SUB_FILES_OFF=	fetchmailconf
 

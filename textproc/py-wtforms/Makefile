@@ -1,5 +1,5 @@
 # Created by: Moggie <moggie@elasticmind.net>
-# $FreeBSD: head/textproc/py-wtforms/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/textproc/py-wtforms/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	wtforms
 PORTVERSION=	2.1
@@ -18,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Babel>0:devel/py-babel@${FLAVOR}
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>0:devel/py-coverage@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sqlalchemy10>0:databases/py-sqlalchemy10@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pep8>0:devel/pep8 \
+		${PYTHON_PKGNAMEPREFIX}pep8>0:devel/pep8@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dateutil>0:devel/py-dateutil@${FLAVOR}
 
 OPTIONS_DEFINE=		DOCS

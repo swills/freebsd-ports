@@ -1,8 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net/freeradius3/Makefile 463404 2018-03-02 14:32:37Z zi $
+# $FreeBSD: head/net/freeradius3/Makefile 470498 2018-05-21 01:41:39Z zi $
 
 PORTNAME=	freeradius
-DISTVERSION=	3.0.16
+DISTVERSION=	3.0.17
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.freeradius.org/pub/freeradius/%SUBDIR%/ \
 		ftp://ftp.ntua.gr/pub/net/radius/freeradius/%SUBDIR%/ \
@@ -45,7 +45,8 @@ _REQUIRE=	NETWORKING SERVERS
 OPTIONS_SUB=	yes
 OPTIONS_DEFINE=	USER LDAP MYSQL PGSQL UNIXODBC FIREBIRD REDIS \
 		EXPERIMENTAL UDPFROMTO DEVELOPER EDIR PERL REST \
-		FREETDS IDN DOCS SQLITE3 PYTHON RUBY UNBOUND PCRE
+		FREETDS IDN DOCS SQLITE3 PYTHON RUBY UNBOUND PCRE \
+		WINBIND
 OPTIONS_DEFAULT=USER PERL HEIMDAL UDPFROMTO
 OPTIONS_SINGLE=	KRB
 OPTIONS_SINGLE_KRB=	NOKRB HEIMDAL HEIMDAL_PORT MITKRB_PORT
@@ -64,6 +65,7 @@ UDPFROMTO_DESC=		Compile in UDPFROMTO support
 DEVELOPER_DESC=		Enable developer options
 EDIR_DESC=		Enable eDirectory support (implies LDAP)
 REST_DESC=		Enable RESTful API support
+WINBIND_DESC=		Enable native winbind support in rlm_mschap
 
 EDIR_CONFIGURE_WITH=		edir
 EDIR_IMPLIES=			LDAP
@@ -122,6 +124,9 @@ UNBOUND_CONFIGURE_WITH=		rlm_unbound
 UNBOUND_LIB_DEPENDS=		libunbound.so:dns/unbound
 UNIXODBC_CONFIGURE_WITH=	rlm_sql_unixodbc
 UNIXODBC_LIB_DEPENDS=		libodbc.so:databases/unixODBC
+WINBIND_USES=			samba:build,lib
+WINBIND_CONFIGURE_ON=		--with-winbind-include-dir=${LOCALBASE}/include/samba4 \
+				--with-winbind-lib-dir=${LOCALBASE}/lib/samba4
 
 .include <bsd.port.options.mk>
 

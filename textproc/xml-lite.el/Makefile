@@ -1,5 +1,5 @@
 # Created by: Kimura Fuyuki <fuyuki@mj.0038.net>
-# $FreeBSD: head/textproc/xml-lite.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/textproc/xml-lite.el/Makefile 470372 2018-05-19 09:34:12Z amdmi3 $
 
 PORTNAME=	xml-lite.el
 PORTVERSION=	1.1
@@ -13,6 +13,8 @@ EXTRACT_SUFX=	# empty
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple XML-editing for GNU Emacs
+
+LICENSE=	GPLv2+
 
 USES=		emacs
 

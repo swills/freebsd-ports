@@ -1,9 +1,9 @@
 # Created by: Alexander Leidinger
-# $FreeBSD: head/misc/openhab2/Makefile 469512 2018-05-10 07:13:48Z yuri $
+# $FreeBSD: head/misc/openhab2/Makefile 470032 2018-05-15 16:07:39Z yuri $
 
 PORTNAME=	openhab2
 PORTVERSION=	2.2.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	misc java
 MASTER_SITES=	https://bintray.com/openhab/mvn/download_file?file_path=org%2Fopenhab%2Fdistro%2Fopenhab%2F${PORTVERSION}/
 DISTNAME=	openhab-${PORTVERSION}

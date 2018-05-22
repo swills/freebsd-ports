@@ -1,9 +1,9 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/math/blis/Makefile 456082 2017-12-12 02:49:56Z jmd $
+# $FreeBSD: head/math/blis/Makefile 470486 2018-05-20 21:31:33Z jmd $
 
 PORTNAME=	blis
-LIBVERSION=	0.2.2
-PORTVERSION=	${LIBVERSION}g20171127
+LIBVERSION=	0.3.2
+PORTVERSION=	${LIBVERSION}g20180501
 CATEGORIES=	math
 
 MAINTAINER=	jmd@FreeBSD.org
@@ -25,7 +25,7 @@ OPTIONS_SUB=		yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	flame
-GH_TAGNAME=	1f30b13
+GH_TAGNAME=	8adb2f9
 
 USES=		gmake
 USE_LDCONFIG=	yes

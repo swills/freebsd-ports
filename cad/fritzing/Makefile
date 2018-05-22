@@ -1,5 +1,5 @@
 # Created by: Sergio Lenzi <lenzi.sergio@gmail.com>
-# $FreeBSD: head/cad/fritzing/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/cad/fritzing/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	fritzing
 PORTVERSION=	0.9.2
@@ -26,7 +26,7 @@ MAKE_ENV=	INSTALL_ROOT="${STAGEDIR}"
 
 BUILD_DEPENDS+=	boost-libs>1.52:devel/boost-libs
 
-RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 
 post-extract:
 	cd ${WRKSRC_parts};\

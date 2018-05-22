@@ -1,9 +1,8 @@
 # Created by: Martti Kuparinen <martti.kuparinen@ericsson.com>
-# $FreeBSD: head/security/stunnel/Makefile 462395 2018-02-20 13:11:22Z zi $
+# $FreeBSD: head/security/stunnel/Makefile 470581 2018-05-21 21:45:48Z zi $
 
 PORTNAME=	stunnel
-PORTVERSION=	5.44
-PORTREVISION=	1
+PORTVERSION=	5.45
 PORTEPOCH=	1
 CATEGORIES=	security
 MASTER_SITES=	https://www.stunnel.org/downloads/%SUBDIR%/ \

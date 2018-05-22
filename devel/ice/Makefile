@@ -1,5 +1,5 @@
 # Created by: Stefan Ehmann <shoesoft@gmx.net>
-# $FreeBSD: head/devel/ice/Makefile 459707 2018-01-22 23:05:51Z grembo $
+# $FreeBSD: head/devel/ice/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=		Ice
 PORTVERSION=		3.6.4
@@ -33,7 +33,7 @@ USES+=			iconv gmake
 
 .if ${PORT_OPTIONS:MTEST} && ${SLAVE_PORT} == "no"
 USES+=			python:build
-BUILD_DEPENDS+=		${PYTHON_PKGNAMEPREFIX}passlib>0:security/py-passlib
+BUILD_DEPENDS+=		${PYTHON_PKGNAMEPREFIX}passlib>0:security/py-passlib@${PY_FLAVOR}
 .endif
 
 USES+=			bdb:5

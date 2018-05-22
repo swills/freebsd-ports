@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/violetland/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/games/violetland/Makefile 469957 2018-05-14 19:23:27Z amdmi3 $
 
 PORTNAME=	violetland
 PORTVERSION=	0.5
@@ -25,6 +25,8 @@ USE_SDL=	sdl mixer image ttf
 USE_GL=		gl glu
 CMAKE_ARGS=	-DDATA_INSTALL_DIR="${DATADIR}" \
 		-DLOCALE_INSTALL_DIR="${PREFIX}/share/locale"
+
+CXXFLAGS+=	-Wno-c++11-narrowing
 
 PORTDOCS=	*
 PORTDATA=	*

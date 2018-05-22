@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-repr/Makefile 467455 2018-04-16 05:48:53Z tota $
+# $FreeBSD: head/devel/R-cran-repr/Makefile 470526 2018-05-21 09:29:10Z tota $
 
 PORTNAME=	repr
-PORTVERSION=	0.13
+PORTVERSION=	0.15.0
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

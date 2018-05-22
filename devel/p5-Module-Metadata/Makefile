@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-Module-Metadata/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Module-Metadata/Makefile 470034 2018-05-15 16:51:34Z joneum $
 
 PORTNAME=	Module-Metadata
-PORTVERSION=	1.000027
+PORTVERSION=	1.000033
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:ETHER

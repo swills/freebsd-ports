@@ -1,5 +1,5 @@
 # Created by: Martin Tournoij <martin@arp242.net>
-# $FreeBSD: head/ports-mgmt/pkg-plist/Makefile 463042 2018-02-26 19:24:14Z amdmi3 $
+# $FreeBSD: head/ports-mgmt/pkg-plist/Makefile 470213 2018-05-17 09:56:55Z tz $
 
 PORTNAME=	pkg-plist
 PORTVERSION=	1.4
@@ -7,7 +7,7 @@ PORTREVISION=	2
 CATEGORIES=	ports-mgmt python
 MASTER_SITES=	http://code.arp242.net/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Generate a pkg-plist for a port
 
 LICENSE=	MIT

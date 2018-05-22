@@ -1,5 +1,5 @@
 # Created by: Mirko Zinn <mail@derzinn.de>
-# $FreeBSD: head/databases/mongodb/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/databases/mongodb/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	mongodb
 PORTVERSION=	2.6.12
@@ -63,7 +63,7 @@ LIB_DEPENDS+=	libsasl2.so:security/cyrus-sasl2
 
 .if ${PORT_OPTIONS:MTEST}
 USES+=		python:build
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pymongo>=2.5:databases/pymongo
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pymongo>=2.5:databases/pymongo@${PY_FLAVOR}
 TEST_TARGET=	smokeAll smokeCppUnittests
 .	if ${PORT_OPTIONS:MSSL}
 TEST_TARGET+=	smokeSsl

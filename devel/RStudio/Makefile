@@ -1,11 +1,12 @@
-# $FreeBSD: head/devel/RStudio/Makefile 469739 2018-05-12 16:39:48Z yuri $
+# $FreeBSD: head/devel/RStudio/Makefile 470261 2018-05-18 03:58:25Z yuri $
 
 # This port opens too many files during build, more than the default setting.
 # Its build is known to succeed with MAX_FILES_RStudio=2048 in poudriere.conf when ports-mgmt/poudriere-devel is used.
 
 PORTNAME=	RStudio
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.1.449
+DISTVERSION=	1.1.453
+PORTREVISION=	1
 CATEGORIES=	devel math java
 MASTER_SITES=	https://s3.amazonaws.com/rstudio-dictionaries/:dictionaries \
 		https://s3.amazonaws.com/rstudio-buildtools/:buildtools
@@ -13,6 +14,9 @@ DISTFILES=	core-dictionaries.zip:dictionaries \
 		gin-${GIN_VERSION}.zip:buildtools \
 		gwt-${GWT_VERSION}.zip:buildtools \
 		mathjax-26.zip:buildtools
+
+PATCH_SITES=	https://github.com/${PORTNAME}/${GH_PROJECT}/commit/
+PATCHFILES=	ab3d4355ab5c7f4bc7af1f7aeabe62c3d1bbccec.patch:-p1
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Integrated development environment (IDE) for R

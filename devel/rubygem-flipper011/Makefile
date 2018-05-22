@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-flipper011/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/devel/rubygem-flipper011/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	flipper
 PORTVERSION=	0.11.0
@@ -11,6 +11,9 @@ COMMENT=	Act of enabling/disabling features in your application
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use devel/rubygem-flipper instead.
+EXPIRATION_DATE=	2018-06-30
 
 CONFLICTS_INSTALL=	rubygem-flipper rubygem-flipper010
 

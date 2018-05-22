@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-ruby-prof016/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/devel/rubygem-ruby-prof016/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	ruby-prof
 PORTVERSION=	0.16.2
@@ -11,6 +11,9 @@ COMMENT=	Fast profiler for Ruby
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use devel/rubygem-ruby-prof instead.
+EXPIRATION_DATE=	2018-06-30
 
 PORTSCOUNT=	limit:^0\.16
 CONFLICTS_INSTALL=	rubygem-ruby-prof

@@ -1,5 +1,5 @@
 # Created by: Christopher Boumenot <boumenot@gmail.com>
-# $FreeBSD: head/devel/p5-Class-Gomor/Makefile 378437 2015-02-05 02:11:32Z vanilla $
+# $FreeBSD: head/devel/p5-Class-Gomor/Makefile 470600 2018-05-22 09:04:12Z amdmi3 $
 
 PORTNAME=	Class-Gomor
 PORTVERSION=	1.03
@@ -10,7 +10,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	spry@anarchy.in.the.ph
 COMMENT=	Class and object builder
 
+LICENSE=	ART10
+LICENSE_FILE=	${WRKSRC}/LICENSE.Artistic
+
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

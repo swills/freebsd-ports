@@ -1,9 +1,8 @@
 # Created by: vanilla@
-# $FreeBSD: head/textproc/xqilla/Makefile 461645 2018-02-12 20:00:26Z pi $
+# $FreeBSD: head/textproc/xqilla/Makefile 469995 2018-05-15 07:10:22Z wen $
 
 PORTNAME=	xqilla
-PORTVERSION=	2.3.3
-PORTREVISION=	1
+PORTVERSION=	2.3.4
 PORTEPOCH=	1
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}

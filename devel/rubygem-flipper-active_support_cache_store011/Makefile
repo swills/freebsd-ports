@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-flipper-active_support_cache_store011/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/devel/rubygem-flipper-active_support_cache_store011/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	flipper-active_support_cache_store
 PORTVERSION=	0.11.0
@@ -10,6 +10,9 @@ MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	ActiveSupport::Cache store adapter for Flipper
 
 LICENSE=	MIT
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use devel/rubygem-flipper-active_support_cache_store instead.
+EXPIRATION_DATE=	2018-06-30
 
 RUN_DEPENDS=	rubygem-activesupport4>=3.2:devel/rubygem-activesupport4 \
 		rubygem-flipper011>=${PORTVERSION}:devel/rubygem-flipper011

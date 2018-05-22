@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/syncthing-cli/Makefile 463776 2018-03-07 08:06:24Z yuri $
+# $FreeBSD: head/net/syncthing-cli/Makefile 470137 2018-05-16 17:27:35Z swills $
 
 PORTNAME=	syncthing-cli
 PORTVERSION=	0.1.0.2015092201
@@ -15,6 +15,9 @@ GH_ACCOUNT=	syncthing
 GH_TAGNAME=	9594d39
 
 PLIST_FILES=	bin/syncthing-cli
+
+DEPRECATED=	Included in net/syncthing now
+EXPIRATION_DATE=	2018-06-17
 
 do-build:
 	@cd ${WRKSRC} ; ${SETENV} ${MAKE_ENV} GOPATH=${WRKSRC}/Godeps/_workspace:${WRKSRC} go build

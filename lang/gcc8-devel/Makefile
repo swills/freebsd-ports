@@ -1,8 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc8-devel/Makefile 469789 2018-05-13 12:23:44Z gerald $
+# $FreeBSD: head/lang/gcc8-devel/Makefile 470468 2018-05-20 18:10:43Z gerald $
 
 PORTNAME=	gcc
-PORTVERSION=	8.1.1.s20180511
+PORTVERSION=	8.1.1.s20180518
 CATEGORIES=	lang
 MASTER_SITES=	GCC/snapshots/${DIST_VERSION}
 PKGNAMESUFFIX=	${SUFFIX}-devel

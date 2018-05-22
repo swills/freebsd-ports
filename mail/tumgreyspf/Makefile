@@ -1,5 +1,5 @@
 # Created by: Marcus Alves Grando <mnag@FreeBSD.org>
-# $FreeBSD: head/mail/tumgreyspf/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/mail/tumgreyspf/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	tumgreyspf
 PORTVERSION=	1.38
@@ -15,7 +15,7 @@ COMMENT=	External policy checker for the postfix mail server
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyspf>=0:mail/py-pyspf
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyspf>=0:mail/py-pyspf@${PY_FLAVOR}
 
 OPTIONS_DEFINE=	DOCS
 

@@ -1,17 +1,18 @@
 # Created by: dbader@eece.unm.edu
-# $FreeBSD: head/biology/clustalw/Makefile 415839 2016-05-25 15:43:34Z mat $
+# $FreeBSD: head/biology/clustalw/Makefile 470494 2018-05-21 01:13:40Z jwb $
 
 PORTNAME=	clustalw
 PORTVERSION=	2.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.ebi.ac.uk/pub/software/clustalw2/${PORTVERSION}/ \
 		http://www.clustal.org/download/${PORTVERSION}/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	jwb@FreeBSD.org
 COMMENT=	Multiple alignment program for DNA or proteins
 
-RESTRICTED=	No commercial use.
+LICENSE=	LGPL3
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 GNU_CONFIGURE=	yes
 

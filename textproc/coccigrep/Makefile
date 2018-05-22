@@ -1,8 +1,8 @@
 # Created by: Pawel Pekala <pawel@FreeBSD.org>
-# $FreeBSD: head/textproc/coccigrep/Makefile 462871 2018-02-24 22:35:18Z rene $
+# $FreeBSD: head/textproc/coccigrep/Makefile 470002 2018-05-15 08:40:25Z wen $
 
 PORTNAME=	coccigrep
-PORTVERSION=	1.16
+PORTVERSION=	1.17
 DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
 

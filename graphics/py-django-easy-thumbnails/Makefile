@@ -1,5 +1,5 @@
 # Created by: Matthew X. Economou <xenophon+fbsdports@irtnog.org>
-# $FreeBSD: head/graphics/py-django-easy-thumbnails/Makefile 469669 2018-05-11 16:54:28Z sunpoet $
+# $FreeBSD: head/graphics/py-django-easy-thumbnails/Makefile 469974 2018-05-14 21:40:26Z mat $
 
 PORTNAME=	easy-thumbnails
 PORTVERSION=	2.5
@@ -24,7 +24,8 @@ PORTDOCS=	*
 
 OPTIONS_DEFINE=	DOCS
 DOCS_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.8:www/py-django111@${PY_FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${PY_FLAVOR}
+			${PYTHON_PKGNAMEPREFIX}sphinx>0:textproc/py-sphinx@${PY_FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR}
 DOCS_VARS=		PYDISTUTILS_BUILD_TARGET+="build_sphinx -a -E"
 
 post-patch-DOCS-on:

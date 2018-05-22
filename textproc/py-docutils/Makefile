@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/textproc/py-docutils/Makefile 455393 2017-12-03 08:29:35Z antoine $
+# $FreeBSD: head/textproc/py-docutils/Makefile 470597 2018-05-22 06:24:09Z koobs $
 
 PORTNAME=	docutils
 PORTVERSION=	0.14
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	textproc python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

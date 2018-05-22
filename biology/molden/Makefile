@@ -1,9 +1,9 @@
 # Created by: Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
-# $FreeBSD: head/biology/molden/Makefile 469265 2018-05-07 05:34:10Z antoine $
+# $FreeBSD: head/biology/molden/Makefile 470488 2018-05-20 21:41:57Z jmd $
 
 PORTNAME=	molden
 PORTVERSION=	5.7
-PORTREVISION=	14
+PORTREVISION=	15
 PORTEPOCH=	1
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.cmbi.ru.nl/pub/molgraph/molden/
@@ -16,8 +16,6 @@ LICENSE=	Molden
 LICENSE_NAME=	Molden
 LICENSE_FILE=	${WRKSRC}/CopyRight
 LICENSE_PERMS=	auto-accept
-
-BROKEN=		checksum and size mismatch
 
 RESTRICTED=	free for academic, non profit usage; do not re-distribute source and executable.
 

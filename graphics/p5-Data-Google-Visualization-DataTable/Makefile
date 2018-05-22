@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/p5-Data-Google-Visualization-DataTable/Makefile 465366 2018-03-23 16:33:11Z swills $
+# $FreeBSD: head/graphics/p5-Data-Google-Visualization-DataTable/Makefile 470091 2018-05-16 00:00:55Z sunpoet $
 
 PORTNAME=	Data-Google-Visualization-DataTable
 PORTVERSION=	0.11
@@ -7,14 +7,15 @@ CATEGORIES=	graphics perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Easily create Google DataTable objects for the Google Visulization API
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-JSON-XS>=2.0:converters/p5-JSON-XS
-RUN_DEPENDS=	p5-JSON-XS>=2.0:converters/p5-JSON-XS
+RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

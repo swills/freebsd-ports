@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/nagios-check_postgres_replication/Makefile 439104 2017-04-21 18:00:46Z amdmi3 $
+# $FreeBSD: head/databases/nagios-check_postgres_replication/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	check_postgres_replication
 PORTVERSION=	2010.12.16
@@ -15,8 +15,8 @@ COMMENT=	Nagios plugin to check the lag between a postgresql replica and master
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nagiosplugin>=0:sysutils/py-nagiosplugin \
-		${PYTHON_PKGNAMEPREFIX}psycopg2>=0:databases/py-psycopg2
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}nagiosplugin>=0:sysutils/py-nagiosplugin@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}psycopg2>=0:databases/py-psycopg2@${PY_FLAVOR}
 
 USES=		python shebangfix
 SHEBANG_FILES=	check_postgres_replication.py

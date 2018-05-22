@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rubygem-gettext_i18n_rails_js12/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/devel/rubygem-gettext_i18n_rails_js12/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	gettext_i18n_rails_js
 PORTVERSION=	1.2.0
@@ -11,6 +11,9 @@ COMMENT=	Make gettext_i18n_rails .po files as JSON
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use devel/rubygem-gettext_i18n_rails_js instead.
+EXPIRATION_DATE=	2018-06-30
 
 RUN_DEPENDS=	rubygem-gettext>=3.0.2:devel/rubygem-gettext \
 		rubygem-gettext_i18n_rails>=0.7.1:devel/rubygem-gettext_i18n_rails \

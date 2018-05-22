@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/mongodb34-rocks/Makefile 469100 2018-05-05 10:49:36Z antoine $
+# $FreeBSD: head/databases/mongodb34-rocks/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	mongodb
 PORTVERSION=	3.4.6
@@ -33,8 +33,8 @@ LIB_DEPENDS=	libpcre.so:devel/pcre \
 		libboost_system.so:devel/boost-libs \
 		librocksdb.so:databases/rocksdb \
 		liblz4.so:archivers/liblz4
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=3.11:devel/py-yaml \
-		${PYTHON_PKGNAMEPREFIX}pymongo>=3.0:databases/pymongo
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=3.11:devel/py-yaml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pymongo>=3.0:databases/pymongo@${PY_FLAVOR}
 
 USES=		compiler:c++14-lang cpe python:build scons
 USE_RC_SUBR=	mongod \

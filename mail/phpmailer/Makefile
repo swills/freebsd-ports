@@ -1,12 +1,12 @@
 # Created by: Zhen REN <bg1tpt@gmail.com>
-# $FreeBSD: head/mail/phpmailer/Makefile 448607 2017-08-23 12:50:31Z tz $
+# $FreeBSD: head/mail/phpmailer/Makefile 470295 2018-05-18 14:03:30Z joneum $
 
 PORTNAME=	phpmailer
-PORTVERSION=	5.2.24
+PORTVERSION=	5.2.26
 DISTVERSIONPREFIX=	v
 CATEGORIES=	mail
 
-MAINTAINER=	tz@FreeBSD.org
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Full Featured Email Transfer Class for PHP
 
 LICENSE=	LGPL21

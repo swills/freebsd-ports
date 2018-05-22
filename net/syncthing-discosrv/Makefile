@@ -1,5 +1,5 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net/syncthing-discosrv/Makefile 463776 2018-03-07 08:06:24Z yuri $
+# $FreeBSD: head/net/syncthing-discosrv/Makefile 470136 2018-05-16 17:27:06Z swills $
 
 PORTNAME=	syncthing-discosrv
 PORTVERSION=	0.13.0
@@ -20,6 +20,10 @@ PLIST_FILES=	bin/syncthing-discosrv
 USE_RC_SUBR=	syncthing-discosrv
 USERS=		syncthing
 GROUPS=		syncthing
+
+
+DEPRECATED=	Included in net/syncthing now
+EXPIRATION_DATE=	2018-06-17
 
 post-patch:
 	@cd ${WRKSRC} ; ${MKDIR} src/github.com/${GH_ACCOUNT}/${GH_PROJECT} ; \

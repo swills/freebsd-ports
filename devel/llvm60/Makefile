@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/llvm60/Makefile 469338 2018-05-07 22:29:46Z jbeich $
+# $FreeBSD: head/devel/llvm60/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	llvm
 DISTVERSION=	6.0.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel lang
 MASTER_SITES=	http://${PRE_}releases.llvm.org/${LLVM_RELEASE}/${RCDIR}
 PKGNAMESUFFIX=	${LLVM_SUFFIX}
@@ -351,7 +351,7 @@ MAKE_ENV+=	COMPILER_PATH=${LOCALBASE}/bin
 
 .if ${PYTHON_REL} < 3400
 LLDB_BUILD_DEPENDS+= \
-	${PYTHON_PKGNAMEPREFIX}enum34>0:devel/py-enum34
+	${PYTHON_PKGNAMEPREFIX}enum34>0:devel/py-enum34@${PY_FLAVOR}
 .endif
 
 post-extract-CLANG-on:

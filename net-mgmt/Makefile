@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 468948 2018-05-03 17:34:25Z krion $
+# $FreeBSD: head/net-mgmt/Makefile 470424 2018-05-19 18:41:07Z miwi $
 #
 
     COMMENT = Network management tools
@@ -314,6 +314,7 @@
     SUBDIR += py-msrest
     SUBDIR += py-msrestazure
     SUBDIR += py-napalm
+    SUBDIR += py-napalm-logs
     SUBDIR += py-ncclient
     SUBDIR += py-pdagent
     SUBDIR += py-pyIOSXR

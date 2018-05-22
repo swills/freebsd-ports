@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/rubygem-doorkeeper-openid_connect12/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/security/rubygem-doorkeeper-openid_connect12/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	doorkeeper-openid_connect
 PORTVERSION=	1.2.0
@@ -11,6 +11,9 @@ COMMENT=	OpenID Connect extension for Doorkeeper
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use security/rubygem-doorkeeper-openid_connect instead.
+EXPIRATION_DATE=	2018-06-30
 
 CONFLICTS_INSTALL=	rubygem-doorkeeper-openid_connect
 

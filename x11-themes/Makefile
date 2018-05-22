@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/Makefile 468495 2018-04-27 20:29:36Z tcberner $
+# $FreeBSD: head/x11-themes/Makefile 470398 2018-05-19 11:08:09Z tcberner $
 #
 
     COMMENT = X11 themes
@@ -124,6 +124,7 @@
     SUBDIR += kf5-kemoticons
     SUBDIR += kf5-kiconthemes
     SUBDIR += kf5-oxygen-icons5
+    SUBDIR += kf5-qqc2-desktop-style
     SUBDIR += lumina-themes
     SUBDIR += lxappearance
     SUBDIR += lxde-icon-theme

@@ -1,8 +1,7 @@
-# Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/devel/py-jenkins-job-builder/Makefile 464142 2018-03-11 05:16:00Z lwhsu $
+# $FreeBSD: head/devel/py-jenkins-job-builder/Makefile 470113 2018-05-16 09:36:57Z lwhsu $
 
 PORTNAME=	jenkins-job-builder
-PORTVERSION=	2.0.3
+PORTVERSION=	2.0.7
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,7 +19,8 @@ RUN_DEPENDS=	${PKGNAMEPREFIX}yaml>0:devel/py-yaml@${FLAVOR} \
 		${PKGNAMEPREFIX}stevedore>0:devel/py-stevedore@${FLAVOR} \
 		${PKGNAMEPREFIX}python-jenkins>0:devel/py-python-jenkins@${FLAVOR} \
 		${PKGNAMEPREFIX}fasteners>0:devel/py-fasteners@${FLAVOR} \
-		${PKGNAMEPREFIX}Jinja2>0:devel/py-Jinja2@${FLAVOR}
+		${PKGNAMEPREFIX}Jinja2>0:devel/py-Jinja2@${FLAVOR} \
+		${PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/httpry/Makefile 464165 2018-03-11 11:21:23Z rene $
+# $FreeBSD: head/net/httpry/Makefile 470013 2018-05-15 11:58:42Z wen $
 
 PORTNAME=	httpry
-PORTVERSION=	0.1.7
+PORTVERSION=	0.1.8
 CATEGORIES=	net
 MASTER_SITES=	http://dumpsterventures.com/jason/httpry/
 

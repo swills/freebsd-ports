@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm50/Makefile 468997 2018-05-03 23:33:40Z brooks $
+# $FreeBSD: head/devel/llvm50/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	llvm
 DISTVERSION=	5.0.2
@@ -346,7 +346,7 @@ MAKE_ENV+=	COMPILER_PATH=${LOCALBASE}/bin
 
 .if ${PYTHON_REL} < 3400
 LLDB_BUILD_DEPENDS+= \
-	${PYTHON_PKGNAMEPREFIX}enum34>0:devel/py-enum34
+	${PYTHON_PKGNAMEPREFIX}enum34>0:devel/py-enum34@${PY_FLAVOR}
 .endif
 
 post-extract-CLANG-on:

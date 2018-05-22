@@ -1,9 +1,8 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-struct/Makefile 468999 2018-05-03 23:42:35Z stephen $
+# $FreeBSD: head/math/octave-forge-struct/Makefile 470305 2018-05-18 15:54:15Z stephen $
 
 PORTNAME=	octave-forge-struct
-PORTVERSION=	1.0.14
-PORTREVISION=	6
+PORTVERSION=	1.0.15
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org

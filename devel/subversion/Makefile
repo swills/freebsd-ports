@@ -1,5 +1,5 @@
 # Created by: rooneg@electricjellyfish.net
-# $FreeBSD: head/devel/subversion/Makefile 467834 2018-04-20 15:38:58Z lev $
+# $FreeBSD: head/devel/subversion/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTREVISION=	0
 
@@ -67,7 +67,7 @@ PLIST_SUB+=	NO_SVNSERVE_WRAPPER=""
 .endif
 
 .if ${PORT_OPTIONS:MTEST}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 .endif
 
 .if ${PORT_OPTIONS:MSTATIC}

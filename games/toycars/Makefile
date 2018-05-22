@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/toycars/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/toycars/Makefile 469960 2018-05-14 19:32:09Z amdmi3 $
 
 PORTNAME=	toycars
 PORTVERSION=	0.3.10
@@ -19,6 +19,8 @@ USES=		gmake localbase
 GNU_CONFIGURE=	yes
 USE_SDL=	image sdl
 USE_GL=		gl glu
+
+CXXFLAGS+=	-Wno-c++11-narrowing
 
 PLIST_FILES=	bin/toycars \
 		bin/toycars_track_editor \

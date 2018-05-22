@@ -1,8 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/databases/iowow/Makefile 469184 2018-05-06 09:02:02Z danfe $
+# $FreeBSD: head/databases/iowow/Makefile 470522 2018-05-21 08:48:48Z danfe $
 
 PORTNAME=	iowow
-PORTVERSION=	1.1.0
+PORTVERSION=	1.2.8
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 

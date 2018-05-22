@@ -1,5 +1,5 @@
 # Created by: amistry@am-productions.biz
-# $FreeBSD: head/print/hplip/Makefile 457127 2017-12-24 07:10:45Z woodsb02 $
+# $FreeBSD: head/print/hplip/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	hplip
 PORTVERSION=	3.17.11
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libcupsimage.so:print/cups \
 		libdbus-1.so:devel/dbus
 RUN_DEPENDS=	cups-filters>=0:print/cups-filters \
-		${PYTHON_PKGNAMEPREFIX}dbus>=0:devel/py-dbus
+		${PYTHON_PKGNAMEPREFIX}dbus>=0:devel/py-dbus@${PY_FLAVOR}
 
 CONFLICTS_INSTALL=	hpijs-[0-9]*
 
@@ -47,12 +47,12 @@ OPTIONS_SUB=		yes
 DOCS_CONFIGURE_ENABLE=	doc-build
 
 FAX_DESC=		PC Send Fax support
-FAX_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}reportlab>=0:print/py-reportlab
+FAX_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}reportlab>=0:print/py-reportlab@${PY_FLAVOR}
 FAX_CONFIGURE_ENABLE=	fax-build
 
 SCAN_DESC=		Scanning support
 SCAN_LIB_DEPENDS=	libsane.so:graphics/sane-backends
-SCAN_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow
+SCAN_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR}
 SCAN_CONFIGURE_ENABLE=	scan-build
 
 SNMP_DESC=		Network/JetDirect support

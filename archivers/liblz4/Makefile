@@ -1,5 +1,5 @@
 # Created by: adamw
-# $FreeBSD: head/archivers/liblz4/Makefile 469368 2018-05-08 09:10:22Z bapt $
+# $FreeBSD: head/archivers/liblz4/Makefile 469954 2018-05-14 19:12:46Z bapt $
 
 PORTNAME=	lz4
 PORTVERSION=	1.8.2
@@ -17,7 +17,7 @@ LICENSE_COMB=	multi
 USES=		gmake pkgconfig
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
-MAKE_ARGS=	PREFIX="${PREFIX}" LIBDIR="${PREFIX}/lib" \
+MAKE_ARGS=	PREFIX="${PREFIX}" \
 		INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
 		MANDIR="${MAN1PREFIX}/man"
 

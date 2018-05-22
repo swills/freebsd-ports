@@ -1,9 +1,8 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/security/hitch/Makefile 455660 2017-12-06 16:42:14Z feld $
+# $FreeBSD: head/security/hitch/Makefile 470537 2018-05-21 12:48:43Z zi $
 
 PORTNAME=		hitch
-PORTVERSION=		1.4.6
-PORTREVISION=		3
+PORTVERSION=		1.4.8
 CATEGORIES=		security
 MASTER_SITES=		http://hitch-tls.org/source/ \
 			ZI

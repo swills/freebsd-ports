@@ -1,9 +1,8 @@
 # Created by: roam@FreeBSD.org
-# $FreeBSD: head/dns/c-ares/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/dns/c-ares/Makefile 470536 2018-05-21 12:46:26Z zi $
 
 PORTNAME=	c-ares
-PORTVERSION=	1.12.0
-PORTREVISION=	2
+PORTVERSION=	1.14.0
 CATEGORIES=	dns
 MASTER_SITES=	http://c-ares.haxx.se/download/ \
 		http://obsd.isc.org/pub/OpenBSD/distfiles/ \

@@ -1,5 +1,5 @@
 # Created by: chris@vader.org
-# $FreeBSD: head/net/traceroute/Makefile 367991 2014-09-11 22:02:27Z antoine $
+# $FreeBSD: head/net/traceroute/Makefile 470123 2018-05-16 14:16:09Z amdmi3 $
 
 PORTNAME=	traceroute
 PORTVERSION=	${RELEASEDATE}
@@ -9,6 +9,10 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	demon@FreeBSD.org
 COMMENT=	Version of 'traceroute' that shows the AS network number of each hop
+
+BROKEN=		does not fetch
+DEPRECATED=	Upstream gone
+EXPIRATION_DATE=2018-08-16
 
 RELEASEDATE=	991603
 NO_WRKSUBDIR=	yes

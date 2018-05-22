@@ -1,5 +1,5 @@
 # Created by: Phillip Neumann <pneumann@gmail.com>
-# $FreeBSD: head/net/rabbitmq/Makefile 469573 2018-05-10 19:43:33Z olgeni $
+# $FreeBSD: head/net/rabbitmq/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	rabbitmq
 PORTVERSION=	3.7.5
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE-MPL-RabbitMQ
 
 BUILD_DEPENDS=	erlang-runtime19>=19.3:lang/erlang-runtime19 \
 		elixir:lang/elixir \
-		${PYTHON_PKGNAMEPREFIX}simplejson>=2.0:devel/py-simplejson \
+		${PYTHON_PKGNAMEPREFIX}simplejson>=2.0:devel/py-simplejson@${PY_FLAVOR} \
 		xmlto:textproc/xmlto \
 		zip:archivers/zip \
 		rsync:net/rsync

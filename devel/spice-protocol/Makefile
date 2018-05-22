@@ -1,5 +1,5 @@
 # Created by: Jason Helfman <jgh@FreeBSD.org>
-# $FreeBSD: head/devel/spice-protocol/Makefile 446883 2017-07-29 16:59:25Z novel $
+# $FreeBSD: head/devel/spice-protocol/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	spice-protocol
 PORTVERSION=	0.12.13
@@ -11,7 +11,7 @@ COMMENT=	Simple Protocol for Independent Computing Environments
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 
 GNU_CONFIGURE=	yes
 USES=		gmake pathfix pkgconfig python tar:bzip2

@@ -1,8 +1,8 @@
 # Created by: mat
-# $FreeBSD: head/security/py-acme-tiny/Makefile 465072 2018-03-20 07:58:02Z mat $
+# $FreeBSD: head/security/py-acme-tiny/Makefile 470604 2018-05-22 11:21:47Z mat $
 
 PORTNAME=	acme-tiny
-DISTVERSION=	4.0.3
+DISTVERSION=	4.0.4
 CATEGORIES=	security python
 
 MAINTAINER=	mat@FreeBSD.org

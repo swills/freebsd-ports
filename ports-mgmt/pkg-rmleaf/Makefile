@@ -1,8 +1,8 @@
 # Created by: Yanhui Shen <shen.elf@gmail.com>
-# $FreeBSD: head/ports-mgmt/pkg-rmleaf/Makefile 374209 2014-12-07 14:53:39Z feld $
+# $FreeBSD: head/ports-mgmt/pkg-rmleaf/Makefile 470416 2018-05-19 16:21:14Z miwi $
 
 PORTNAME=	pkg-rmleaf
-PORTVERSION=	0.3
+PORTVERSION=	0.4
 CATEGORIES=	ports-mgmt
 MASTER_SITES=	# none
 DISTFILES=	# none

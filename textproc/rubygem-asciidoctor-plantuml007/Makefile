@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-asciidoctor-plantuml007/Makefile 469442 2018-05-09 10:43:26Z mfechner $
+# $FreeBSD: head/textproc/rubygem-asciidoctor-plantuml007/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	asciidoctor-plantuml
 PORTVERSION=	0.0.7
@@ -10,6 +10,9 @@ MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Asciidoctor PlantUML extension
 
 LICENSE=	MIT
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use textproc/rubygem-asciidoctor-plantuml instead.
+EXPIRATION_DATE=	2018-06-30
 
 RUN_DEPENDS=	rubygem-asciidoctor>=1.5:textproc/rubygem-asciidoctor
 

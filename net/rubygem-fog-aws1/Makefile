@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-aws1/Makefile 460189 2018-01-28 14:07:52Z sunpoet $
+# $FreeBSD: head/net/rubygem-fog-aws1/Makefile 470035 2018-05-15 16:55:14Z mfechner $
 
 PORTNAME=	fog-aws
 PORTVERSION=	1.4.1
@@ -13,6 +13,9 @@ COMMENT=	Module for the 'fog' gem to support Amazon Web Services
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
+
+DEPRECATED=	Obsoleted by update of www/gitlab. Please use net/rubygem-fog-aws instead.
+EXPIRATION_DATE=	2018-06-30
 
 RUN_DEPENDS=	rubygem-fog-core1>=1.38:devel/rubygem-fog-core1 \
 		rubygem-fog-json>=1.0:devel/rubygem-fog-json \

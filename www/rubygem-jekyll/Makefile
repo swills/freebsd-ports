@@ -1,8 +1,8 @@
 # Created by: Peter Schuller <peter.schuller@infidyne.com>
-# $FreeBSD: head/www/rubygem-jekyll/Makefile 468885 2018-05-02 20:37:26Z sunpoet $
+# $FreeBSD: head/www/rubygem-jekyll/Makefile 470475 2018-05-20 18:56:19Z sunpoet $
 
 PORTNAME=	jekyll
-PORTVERSION=	3.8.1
+PORTVERSION=	3.8.2
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

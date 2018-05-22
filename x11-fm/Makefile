@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fm/Makefile 466903 2018-04-09 20:03:36Z tcberner $
+# $FreeBSD: head/x11-fm/Makefile 470105 2018-05-16 07:36:15Z rakuco $
 #
 
     COMMENT = X11 file managers
@@ -16,6 +16,7 @@
     SUBDIR += gprename
     SUBDIR += konqueror
     SUBDIR += krusader2
+    SUBDIR += krusader2-kde4
     SUBDIR += librfm
     SUBDIR += libtubo
     SUBDIR += mtoolsfm

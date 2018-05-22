@@ -1,5 +1,5 @@
 # Created by: Olivier Cochard-Labbe <olivier@FreeBSD.org>
-# $FreeBSD: head/sysutils/wiimms/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/sysutils/wiimms/Makefile 470446 2018-05-20 09:34:11Z amdmi3 $
 
 PORTNAME=	wiimms
 DISTVERSION=	2.23a
@@ -12,7 +12,8 @@ DISTNAME=	wit-${DISTVERSION}
 MAINTAINER=	olivier@FreeBSD.org
 COMMENT=	Wiimms ISO Tools
 
-LICENSE=	GPLv2
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/gpl-2.0.txt
 
 BUILD_DEPENDS=	bash:shells/bash
 RUN_DEPENDS=	bash:shells/bash

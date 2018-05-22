@@ -1,8 +1,8 @@
 # Created by: Alexander Nusov <alexander.nusov@nfvexpress.com>
-# $FreeBSD: head/devel/py-oslo.rootwrap/Makefile 467938 2018-04-22 08:48:18Z sunpoet $
+# $FreeBSD: head/devel/py-oslo.rootwrap/Makefile 470168 2018-05-16 23:55:01Z sunpoet $
 
 PORTNAME=	oslo.rootwrap
-PORTVERSION=	5.14.0
+PORTVERSION=	5.14.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

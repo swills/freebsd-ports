@@ -1,5 +1,5 @@
 # Created by: Alex Deiter <alex.deiter@gmail.com>
-# $FreeBSD: head/sysutils/openipmi/Makefile 456797 2017-12-20 14:16:29Z bapt $
+# $FreeBSD: head/sysutils/openipmi/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	openipmi
 PORTVERSION=	2.0.21
@@ -60,7 +60,7 @@ CONFIGURE_ARGS+=	--with-openssl=no
 .if ${PORT_OPTIONS:MTKINTER}
 USES+=			python
 WITH_PYTHON=		yes
-BUILD_DEPENDS+=		${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter \
+BUILD_DEPENDS+=		${PYTHON_PKGNAMEPREFIX}tkinter>0:x11-toolkits/py-tkinter@${PY_FLAVOR} \
 			${LOCALBASE}/lib/Tix8.4.3/Tix.tcl:x11-toolkits/tix
 CONFIGURE_ARGS+=	--with-tkinter
 PLIST_SUB+=		TKINTER=""

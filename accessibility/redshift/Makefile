@@ -1,8 +1,8 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/accessibility/redshift/Makefile 469472 2018-05-09 21:32:05Z swills $
+# $FreeBSD: head/accessibility/redshift/Makefile 470560 2018-05-21 16:04:07Z swills $
 
 PORTNAME=	redshift
-PORTVERSION=	1.11
+PORTVERSION=	1.12
 CATEGORIES=	accessibility
 DISTVERSIONPREFIX=	v
 

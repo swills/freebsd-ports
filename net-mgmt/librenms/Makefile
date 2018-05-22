@@ -1,5 +1,5 @@
 # Created by: Muhammad Moinur Rahman<bofh@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/librenms/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/net-mgmt/librenms/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	librenms
 PORTVERSION=	1.35
@@ -69,7 +69,7 @@ IPMITOOL_RUN_DEPENDS=	ipmitool:sysutils/ipmitool
 LIBVIRT_RUN_DEPENDS=	virsh:devel/libvirt
 NAGPLUGINS_RUN_DEPENDS=	${LOCALBASE}/libexec/nagios/check_nagios:net-mgmt/nagios-plugins
 NMAP_RUN_DEPENDS=	nmap:security/nmap
-PYPOLLER_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=1.2.3:databases/py-MySQLdb
+PYPOLLER_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MySQLdb>=1.2.3:databases/py-MySQLdb@${PY_FLAVOR}
 PYPOLLER_VARS=	PY_MYSQL=:2.7
 X11_RUN_DEPENDS=	Magick-config:graphics/ImageMagick \
 			mtr:net/mtr

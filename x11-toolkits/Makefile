@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/Makefile 468635 2018-04-29 17:37:48Z tcberner $
+# $FreeBSD: head/x11-toolkits/Makefile 469965 2018-05-14 20:43:50Z kwm $
 #
 
     COMMENT = X11 toolkits
@@ -63,6 +63,7 @@
     SUBDIR += gtksourceview2-reference
     SUBDIR += gtksourceview3
     SUBDIR += gtksourceview3-reference
+    SUBDIR += gtksourceview4
     SUBDIR += gtksourceviewmm3
     SUBDIR += hippo-canvas
     SUBDIR += hs-GLURaw

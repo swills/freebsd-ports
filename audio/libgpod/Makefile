@@ -1,5 +1,5 @@
 # Created by: Devon Ryan <dpryan@dpryan.com>
-# $FreeBSD: head/audio/libgpod/Makefile 456845 2017-12-20 19:34:11Z bapt $
+# $FreeBSD: head/audio/libgpod/Makefile 470610 2018-05-22 13:15:13Z mat $
 
 PORTNAME=	libgpod
 PORTVERSION=	0.8.3
@@ -39,8 +39,8 @@ MONO_USE=		GNOME=gtksharp20
 MONO_CONFIGURE_WITH=	mono
 
 PYTHON_BUILD_DEPENDS=	swig3.0:devel/swig30 \
-			${PYTHON_PKGNAMEPREFIX}mutagen>0:audio/py-mutagen
-PYTHON_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mutagen>0:audio/py-mutagen
+			${PYTHON_PKGNAMEPREFIX}mutagen>0:audio/py-mutagen@${PY_FLAVOR}
+PYTHON_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mutagen>0:audio/py-mutagen@${PY_FLAVOR}
 PYTHON_USE=		GNOME=pygobject
 PYTHON_USES=		python:2.7
 PYTHON_CONFIGURE_ENV=	SWIG="${LOCALBASE}/bin/swig3.0"

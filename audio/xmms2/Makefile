@@ -1,10 +1,10 @@
 # Created by: Alexander Botero-Lowry <alex@foxybanana.com>
-# $FreeBSD: head/audio/xmms2/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/audio/xmms2/Makefile 470573 2018-05-21 20:00:48Z madpilot $
 
 PORTNAME?=	xmms2
 PORTVERSION=	0.8
 DISTVERSIONSUFFIX=	DrO_o
-PORTREVISION?=	25
+PORTREVISION?=	26
 CATEGORIES?=	audio
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTVERSION}%20${DISTVERSIONSUFFIX}
 
@@ -20,7 +20,7 @@ INSTALL_TARGET=	install --without-ldconfig
 
 .if !defined(XMMS2_SLAVE)
 USE_GNOME=	glib20
-USES+=		sqlite
+USES+=		readline sqlite
 
 USE_LDCONFIG=	yes
 
@@ -219,6 +219,7 @@ post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libxmmsclient*
 .else
 	${RM} -R ${STAGEDIR}${PREFIX}/lib/xmms2
+	${FIND} ${STAGEDIR}${PREFIX}/lib -name '*.so*' | ${XARGS} ${STRIP_CMD} 
 .endif
 
 .include <bsd.port.post.mk>

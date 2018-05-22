@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/kdenlive-kde4/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/kdenlive-kde4/Makefile 470373 2018-05-19 10:32:30Z tcberner $
 
 PORTNAME=	kdenlive
 PORTVERSION=	0.9.10
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	multimedia kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${PORTVERSION}/src/
 PKGNAMESUFFIX=	-kde4

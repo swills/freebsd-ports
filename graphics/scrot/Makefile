@@ -1,19 +1,26 @@
 # Created by: Jeremy Norris <ishmael27@home.com>
-# $FreeBSD: head/graphics/scrot/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/graphics/scrot/Makefile 470252 2018-05-18 00:18:01Z amdmi3 $
 
 PORTNAME=	scrot
-PORTVERSION=	0.8
-PORTREVISION=	7
+DISTVERSIONPREFIX=	${PORTNAME}-
+DISTVERSION=	0.8
+PORTREVISION=	8
 CATEGORIES=	graphics
-MASTER_SITES=	http://linuxbrit.co.uk/downloads/ \
-		http://mirror.amdmi3.ru/distfiles/
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	Screen capture utility that utilizes Imlib2
 
-LIB_DEPENDS=	libgiblib.so:graphics/giblib
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+LIB_DEPENDS=	libgiblib.so:graphics/giblib \
+		libImlib2.so:graphics/imlib2
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	dreamer
 
 GNU_CONFIGURE=	yes
+USE_XORG=	x11
 
 PLIST_FILES=	bin/${PORTNAME} man/man1/${PORTNAME}.1.gz
 PORTDOCS=	*

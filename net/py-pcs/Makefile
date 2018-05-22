@@ -1,5 +1,5 @@
 # Created by: gnn
-# $FreeBSD: head/net/py-pcs/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/net/py-pcs/Makefile 470143 2018-05-16 19:36:05Z jbeich $
 
 PORTNAME=	pcs
 PORTVERSION=	0.6
@@ -13,6 +13,8 @@ COMMENT=	Protocol Construction Set
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
+
+BROKEN=		fails to build with cython 0.28
 
 PORTDOCS=	pcs.pdf
 PORTEXAMPLES=	*

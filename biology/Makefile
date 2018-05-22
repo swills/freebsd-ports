@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/Makefile 469604 2018-05-11 00:05:16Z jrm $
+# $FreeBSD: head/biology/Makefile 470582 2018-05-21 22:15:26Z jwb $
 #
 
     COMMENT = Biology
@@ -19,7 +19,9 @@
     SUBDIR += cd-hit
     SUBDIR += cdbfasta
     SUBDIR += chemeq
+    SUBDIR += clustal-omega
     SUBDIR += clustalw
+    SUBDIR += clustalx
     SUBDIR += consed
     SUBDIR += crux
     SUBDIR += ddocent

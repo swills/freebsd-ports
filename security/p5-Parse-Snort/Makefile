@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/p5-Parse-Snort/Makefile 469476 2018-05-09 21:38:56Z sunpoet $
+# $FreeBSD: head/security/p5-Parse-Snort/Makefile 470071 2018-05-15 23:59:06Z sunpoet $
 
 PORTNAME=	Parse-Snort
-PORTVERSION=	0.8
+PORTVERSION=	0.9
 CATEGORIES=	security perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
