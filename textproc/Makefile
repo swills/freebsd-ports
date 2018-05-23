@@ -1527,6 +1527,7 @@
     SUBDIR += rubygem-github-linguist47
     SUBDIR += rubygem-github-linguist53
     SUBDIR += rubygem-github-markup
+    SUBDIR += rubygem-github-markup16
     SUBDIR += rubygem-gitlab-grit
     SUBDIR += rubygem-gitlab-linguist
     SUBDIR += rubygem-gitlab-markup
