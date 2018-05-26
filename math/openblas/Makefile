@@ -66,7 +66,6 @@ BUILDFLAGS+=	BINARY64=1
 .endif
 
 .if ! ${PORT_OPTIONS:MDYNAMIC_ARCH} && ( ${ARCH} == "amd64" || ${ARCH} == "i386" )
-MANUAL_PACKAGE_BUILD=	Optimizes for the build machine.
 .endif
 
 .if ${PORT_OPTIONS:MDYNAMIC_ARCH}

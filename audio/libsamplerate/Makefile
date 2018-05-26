@@ -27,7 +27,6 @@ CPU_CLIP_DESC=	Allow machine-dependent clipping
 MAKE_ARGS+=	htmldocdir=${PREFIX}/share/doc/libsamplerate
 
 .if ${PORT_OPTIONS:MCPU_CLIP}
-MANUAL_PACKAGE_BUILD=	CPU_CLIP may customize the package for the build machine
 .else
 CONFIGURE_ARGS+=	--disable-cpu-clip
 .endif

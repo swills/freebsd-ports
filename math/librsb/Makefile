@@ -26,8 +26,6 @@ CONFIGURE_ARGS=	--enable-fortran-module-install \
 SHEBANG_FILES=	scripts/*.sh
 USE_LDCONFIG=	yes
 
-MANUAL_PACKAGE_BUILD=	Optimizes for the local machine
-
 post-patch:
 	@${REINPLACE_CMD} -E s/sed/gsed/g ${WRKSRC}/scripts/*.sh
 

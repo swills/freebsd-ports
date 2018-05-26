@@ -62,7 +62,6 @@ PLIST_SUB+=	DOXYGEN="@comment "
 .endif
 
 .if ${PORT_OPTIONS:MOPTIMIZED_CFLAGS}
-MANUAL_PACKAGE_BUILD=	: optimizes for the build machine
 .else
 CONFIGURE_ARGS+=	--disable-optimization
 .endif

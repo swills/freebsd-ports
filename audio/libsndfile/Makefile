@@ -30,7 +30,6 @@ OPTIONS_DEFAULT=	EXTERNAL
 CPU_CLIP_DESC=	Allow machine-dependent clipping
 EXTERNAL_DESC=	Enable FLAC and Ogg Vorbis support
 
-CPU_CLIP_VARS=	MANUAL_PACKAGE_BUILD="WITH_CPU_CLIP may customize the package for the build machine"
 CPU_CLIP_CONFIGURE_OFF=	--disable-cpu-clip
 
 EXTERNAL_LIB_DEPENDS=	libFLAC.so:audio/flac \

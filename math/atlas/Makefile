@@ -21,7 +21,6 @@ USES=		fortran tar:bzip2
 USE_GCC=	yes
 
 CONFLICTS=	atlas-devel-[0-9]* cblas-[0-9]*
-MANUAL_PACKAGE_BUILD=	Optimizes for the local machine.
 
 OPTIONS_DEFINE=		DOCS DATA ARCHDEF TSC WALL_TIMER
 OPTIONS_DEFAULT=	DATA
