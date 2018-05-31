@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/editors/emacs/Makefile 471190 2018-05-31 01:17:52Z jrm $
+# $FreeBSD: head/editors/emacs/Makefile 471214 2018-05-31 15:35:36Z jrm $
 
 PORTNAME=	emacs
 DISTVERSION=	${EMACS_VER}
@@ -210,6 +210,11 @@ EMACS_VER=		26.1
 # has graphics/ImageMagick been compiled with OPENMP?
 .if ${PORT_OPTIONS:MMAGICK} && ${:!${GREP} -sc " \-fopenmp " ${LOCALBASE}/libdata/pkgconfig/ImageMagick.pc || true!} == "1"
 USES+=	compiler:openmp
+.endif
+
+.if ${FLAVOR:U} != nox && !${PORT_OPTIONS:MMAGICK} && !${PORT_OPTIONS:MMAGICK} \
+	&& !${PORT_OPTIONS:MMAGICK} && !${PORT_OPTIONS:MMAGICK}
+CONFIGURE_ARGS+=	--with-x-toolkit=no
 .endif
 
 .if ${FLAVOR} == nox
