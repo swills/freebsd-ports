@@ -28,6 +28,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	gitlab-shell>=7.1.2:devel/gitlab-shell \
 	gitlab-workhorse>=4.1.0:www/gitlab-workhorse \
 	gitaly>=0.96.1:devel/gitaly \
+	gitlab-pages>=0.9.1:www/gitlab-pages \
 	redis>=2.8.23:databases/redis \
 	npm>=4.3.0:www/npm \
 	yarn>=0.17.0:www/yarn \
