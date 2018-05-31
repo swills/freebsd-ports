@@ -2,9 +2,8 @@
 # $FreeBSD: head/www/gitlab/Makefile 470399 2018-05-19 11:08:11Z sunpoet $
 
 PORTNAME=	gitlab
-PORTVERSION=	10.7.3
+PORTVERSION=	10.7.5
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
 CATEGORIES=	www devel
 
 MAINTAINER=	mfechner@FreeBSD.org
@@ -191,7 +190,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-rbnacl-libsodium>=0:security/rubygem-rbnacl-libsodium \
 	rubygem-bcrypt_pbkdf>=1.0:security/rubygem-bcrypt_pbkdf \
 	rubygem-gitaly-proto096>=0.96.0:net/rubygem-gitaly-proto096 \
-	rubygem-grpc>=1.10.0:net/rubygem-grpc \
+	rubygem-grpc>=1.11.0:net/rubygem-grpc \
 	rubygem-gitaly>=0.8.0:net/rubygem-gitaly \
 	rubygem-google-protobuf351>=3.5.1:devel/rubygem-google-protobuf351 \
 	rubygem-toml-rb10>=1.0.0:www/rubygem-toml-rb10 \
