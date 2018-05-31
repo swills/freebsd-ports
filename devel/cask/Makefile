@@ -1,8 +1,9 @@
-# $FreeBSD: head/devel/cask/Makefile 463189 2018-02-28 08:45:39Z hrs $
+# $FreeBSD: head/devel/cask/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	cask
 PORTVERSION=	0.8.3
 DISTVERSIONPREFIX=	v
+PORTREVISION=   1
 CATEGORIES=	devel elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 

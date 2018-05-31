@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/ibus-el/Makefile 461739 2018-02-13 19:59:44Z antoine $
+# $FreeBSD: head/textproc/ibus-el/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	ibus-el
 PORTVERSION=	0.3.2
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	textproc elisp
 MASTER_SITES=	http://www11.atwiki.jp/s-irie/pub/emacs/ibus/
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

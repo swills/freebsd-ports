@@ -1,8 +1,9 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/mail/wanderlust/Makefile 465367 2018-03-23 16:38:21Z nobutaka $
+# $FreeBSD: head/mail/wanderlust/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	wanderlust
 PORTVERSION=	2.15.9.b.${SNAPDATE}
+PORTREVISION=   1
 CATEGORIES=	mail elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 

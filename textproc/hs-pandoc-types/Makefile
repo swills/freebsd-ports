@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/hs-pandoc-types/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/textproc/hs-pandoc-types/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	pandoc-types
-PORTVERSION=	1.19
-PORTREVISION=	1
+PORTVERSION=	1.17.4.2
+PORTEPOCH=	1
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

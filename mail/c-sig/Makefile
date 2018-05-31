@@ -1,9 +1,9 @@
 # Created by: KIMURA Yasuhiro <yasu@utahime.org>
-# $FreeBSD: head/mail/c-sig/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/mail/c-sig/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	c-sig
 PORTVERSION=	3.8
-PORTREVISION=	19
+PORTREVISION=	20
 CATEGORIES=	mail elisp
 MASTER_SITES=	LOCAL/tota/${PORTNAME}
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

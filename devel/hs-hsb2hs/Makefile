@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-hsb2hs/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-hsb2hs/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	hsb2hs
 PORTVERSION=	0.3.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

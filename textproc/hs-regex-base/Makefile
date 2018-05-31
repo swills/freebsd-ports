@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/hs-regex-base/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/textproc/hs-regex-base/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	regex-base
 PORTVERSION=	0.93.2
-PORTREVISION=	16
+PORTREVISION=	17
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

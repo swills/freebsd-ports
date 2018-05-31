@@ -1,8 +1,7 @@
-# $FreeBSD: head/www/hs-snap-core/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/www/hs-snap-core/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	snap-core
-PORTVERSION=	1.0.2.1
-PORTREVISION=	1
+PORTVERSION=	1.0.3.2
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -12,7 +11,7 @@ LICENSE=	BSD3CLAUSE
 
 USE_CABAL=	attoparsec case-insensitive hashable HUnit io-streams \
 		lifted-base monad-control mtl network-uri old-locale \
-		random readable regex-posix text time-locale-compat \
+		random readable regex-posix time-locale-compat \
 		transformers-base unix-compat unordered-containers \
 		vector
 

@@ -1,9 +1,9 @@
 # Created by:	martin@sugioarto.com
-# $FreeBSD: head/devel/hs-BoundedChan/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-BoundedChan/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	BoundedChan
 PORTVERSION=	1.0.3.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

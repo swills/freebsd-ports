@@ -1,8 +1,8 @@
 # Created by: Sascha Holzleiter <sascha@root-login.org>
-# $FreeBSD: head/security/gopass/Makefile 468769 2018-05-01 17:15:42Z krion $
+# $FreeBSD: head/security/gopass/Makefile 471062 2018-05-28 19:06:40Z joneum $
 
 PORTNAME=	gopass
-PORTVERSION=	1.6.11
+PORTVERSION=	1.7.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 

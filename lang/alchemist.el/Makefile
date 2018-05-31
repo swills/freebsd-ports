@@ -1,9 +1,9 @@
-# $FreeBSD: head/lang/alchemist.el/Makefile 462857 2018-02-24 18:01:40Z antoine $
+# $FreeBSD: head/lang/alchemist.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	alchemist.el
 PORTVERSION=	1.8.2
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 

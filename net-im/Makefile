@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 470455 2018-05-20 13:23:03Z meta $
+# $FreeBSD: head/net-im/Makefile 470805 2018-05-24 19:45:55Z eugen $
 #
 
     COMMENT = Instant messaging
@@ -133,6 +133,7 @@
     SUBDIR += pidgin-skype
     SUBDIR += pidgin-skypeweb
     SUBDIR += pidgin-twitter
+    SUBDIR += pidgin-window_merge
     SUBDIR += plasma-applet-ktp-kde4
     SUBDIR += poezio
     SUBDIR += profanity

@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/libcjson/Makefile 467253 2018-04-13 20:47:45Z sunpoet $
+# $FreeBSD: head/devel/libcjson/Makefile 470630 2018-05-22 17:47:33Z sunpoet $
 
 PORTNAME=	libcjson
-PORTVERSION=	1.7.6
+PORTVERSION=	1.7.7
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 

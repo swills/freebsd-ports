@@ -1,9 +1,8 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/devel/hs-MemoTrie/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-MemoTrie/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	MemoTrie
-PORTVERSION=	0.6.8
-PORTREVISION=	1
+PORTVERSION=	0.6.9
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

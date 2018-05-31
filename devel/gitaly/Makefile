@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/gitaly/Makefile 470242 2018-05-17 18:30:50Z sunpoet $
+# $FreeBSD: head/devel/gitaly/Makefile 471170 2018-05-30 19:49:35Z sunpoet $
 
 PORTNAME=	gitaly
 DISTVERSION=	0.96.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 
 MAINTAINER=	mfechner@FreeBSD.org

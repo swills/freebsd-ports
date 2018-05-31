@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/archivers/unzoo/Makefile 384040 2015-04-15 09:44:04Z robak $
+# $FreeBSD: head/archivers/unzoo/Makefile 471031 2018-05-28 09:04:17Z amdmi3 $
 
 PORTNAME=	unzoo
 PORTVERSION=	4.4
@@ -14,6 +14,8 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	ehaupt@FreeBSD.org
 COMMENT=	ZOO archive extractor
+
+LICENSE=	PD
 
 USES=		cpe
 EXTRA_DEFINES=	-DSYS_IS_UNIX -DSYS_HAS_MKDIR

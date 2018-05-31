@@ -1,8 +1,9 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-artifacts/Makefile 459597 2018-01-21 12:06:10Z antoine $
+# $FreeBSD: head/security/py-artifacts/Makefile 471006 2018-05-27 21:11:37Z antoine $
 
 PORTNAME=	artifacts
-PORTVERSION=	20180115
+PORTVERSION=	20180505
+PORTREVISION=	1
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP \
 		https://github.com/ForensicArtifacts/artifacts/releases/download/${PORTVERSION}/
@@ -21,8 +22,11 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock@${FLAVOR} \
 NO_ARCH=	yes
 USES=		python
 USE_LOCALE=	en_US.UTF-8
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist concurrent
 DO_MAKE_TEST=	${SETENV} ${TEST_ENV} ${PYTHON_CMD}
 TEST_TARGET=	run_tests.py
+
+post-patch:
+	${REINPLACE_CMD} "s,share/artifacts,${DATADIR_REL}," ${WRKSRC}/setup.py
 
 .include <bsd.port.mk>

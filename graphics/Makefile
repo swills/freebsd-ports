@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 470330 2018-05-18 23:23:22Z sunpoet $
+# $FreeBSD: head/graphics/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 #
 
     COMMENT = Graphics tools and libraries
@@ -352,7 +352,6 @@
     SUBDIR += hiptext
     SUBDIR += hobbes-icons-xpm
     SUBDIR += hppsmtools
-    SUBDIR += hs-HGL
     SUBDIR += hs-JuicyPixels
     SUBDIR += hs-cairo
     SUBDIR += hs-dia-base

@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/hs-http-date/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/www/hs-http-date/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	http-date
 PORTVERSION=	0.0.6.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

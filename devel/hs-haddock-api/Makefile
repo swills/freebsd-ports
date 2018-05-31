@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-haddock-api/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-haddock-api/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	haddock-api
-PORTVERSION=	2.17.4
-PORTREVISION=	1
+PORTVERSION=	2.19.0.1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

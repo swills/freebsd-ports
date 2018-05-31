@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-resourcet/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-resourcet/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	resourcet
-PORTVERSION=	1.1.9
-PORTREVISION=	1
+PORTVERSION=	1.2.1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -11,7 +10,8 @@ COMMENT=	Deterministic allocation and freeing of scarce resources
 LICENSE=	BSD3CLAUSE
 
 USE_CABAL=	exceptions lifted-base mmorph monad-control mtl \
-		transformers-base transformers-compat
+		primitive transformers-base transformers-compat \
+		unliftio-core
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

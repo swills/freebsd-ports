@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-cprng-aes/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/security/hs-cprng-aes/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	cprng-aes
 PORTVERSION=	0.6.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

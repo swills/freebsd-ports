@@ -1,8 +1,7 @@
-# $FreeBSD: head/textproc/hs-pretty-show/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/textproc/hs-pretty-show/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	pretty-show
-PORTVERSION=	1.6.13
-PORTREVISION=	1
+PORTVERSION=	1.7
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

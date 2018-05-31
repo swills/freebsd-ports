@@ -1,5 +1,5 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-octclip/Makefile 470477 2018-05-20 19:13:07Z stephen $
+# $FreeBSD: head/math/octave-forge-octclip/Makefile 470756 2018-05-24 03:22:45Z stephen $
 
 PORTNAME=	octave-forge-octclip
 PORTVERSION=	1.0.8
@@ -18,10 +18,9 @@ OCTSRC=		${DISTNAME}
 
 WRKSRC=	${WRKDIR}/${OCTSRC}/src
 
-.include "${.CURDIR}/../../Mk/bsd.octave.mk"
+USES+=		compiler:gcc-c++11-lib
 
-post-patch:
-	${REINPLACE_CMD} -e s/CC/MKOCTFILE/ -e s/-Wall// -e s/-Wextra// ${WRKSRC}/Makefile
+.include "${.CURDIR}/../../Mk/bsd.octave.mk"
 
 post-build:
 	${RM} ${WRKSRC}/Makefile ${WRKSRC}/configure

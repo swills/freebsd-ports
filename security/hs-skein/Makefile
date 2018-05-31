@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-skein/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/security/hs-skein/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	skein
 PORTVERSION=	1.0.9.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

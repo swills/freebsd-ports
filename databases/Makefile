@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 468809 2018-05-02 01:27:12Z vanilla $
+# $FreeBSD: head/databases/Makefile 470804 2018-05-24 19:12:51Z pi $
 #
 
     COMMENT = Databases and related software
@@ -892,6 +892,7 @@
     SUBDIR += redigo
     SUBDIR += redis
     SUBDIR += redis-devel
+    SUBDIR += redis_exporter
     SUBDIR += redisdesktopmanager
     SUBDIR += retcl
     SUBDIR += riak

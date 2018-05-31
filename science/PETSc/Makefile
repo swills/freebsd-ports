@@ -1,8 +1,8 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/science/PETSc/Makefile 470530 2018-05-21 11:00:41Z yuri $
+# $FreeBSD: head/science/PETSc/Makefile 470627 2018-05-22 16:47:53Z yuri $
 
 PORTNAME=	PETSc
-DISTVERSION=	3.9.1
+DISTVERSION=	3.9.2
 CATEGORIES=	science devel
 MASTER_SITES=	http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/
 DISTNAME=	${PORTNAME:tl}-${DISTVERSION}

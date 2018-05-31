@@ -1,5 +1,5 @@
 # Created by: Mirko Zinn <mail@derzinn.de>
-# $FreeBSD: head/databases/mongodb/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/databases/mongodb/Makefile 470715 2018-05-23 18:53:24Z feld $
 
 PORTNAME=	mongodb
 PORTVERSION=	2.6.12
@@ -13,6 +13,9 @@ PATCHFILES=	0ee4735ab8fb.patch:-p1
 
 MAINTAINER=	ale@FreeBSD.org
 COMMENT=	NOSQL distributed document-oriented database
+
+EXPIRATION_DATE=	2018-07-23
+DEPRECATED=	End of Life October 2016
 
 # mongodb is AGPLv3, C++ driver is APACHE20
 LICENSE=	AGPLv3 APACHE20

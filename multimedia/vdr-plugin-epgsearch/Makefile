@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-epgsearch/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/multimedia/vdr-plugin-epgsearch/Makefile 470941 2018-05-26 18:19:35Z miwi $
 
 PORTNAME=	vdr-plugin-epgsearch
 PORTVERSION=	1.0.1s20120322
@@ -18,6 +18,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libpcre.so:devel/pcre \
 		libtre.so:textproc/libtre
 
+BROKEN_FreeBSD_12=	does not build with newer clang
 USES=		pkgconfig tar:bzip2
 PATCH_STRIP=	-p1
 WRKSRC=		${WRKDIR}/vdr-plugin-${PLUGIN}

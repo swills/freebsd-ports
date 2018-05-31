@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/rsyslog8/Makefile 467436 2018-04-15 21:26:26Z matthew $
+# $FreeBSD: head/sysutils/rsyslog8/Makefile 470968 2018-05-27 08:37:10Z matthew $
 
 PORTNAME=	rsyslog
-PORTVERSION=	8.34.0
+PORTVERSION=	8.35.0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.rsyslog.com/files/download/rsyslog/
 
@@ -17,11 +17,11 @@ LIB_DEPENDS=	libee.so:devel/libee \
 		liblogging-stdlog.so:devel/liblogging \
 		libuuid.so:misc/e2fsprogs-libuuid \
 		libcurl.so:ftp/curl
-BUILD_DEPENDS=	rst2man:textproc/py-docutils
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docutils>0:textproc/py-docutils@${PY_FLAVOR}
 
 PORTSCOUT=	limit:^8\.
 
-USES=		libtool pkgconfig autoreconf
+USES=		libtool pkgconfig autoreconf python:env
 
 USE_LDCONFIG=	yes
 

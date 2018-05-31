@@ -1,5 +1,6 @@
-# $FreeBSD: head/mail/notmuch-emacs/Makefile 463108 2018-02-27 05:01:28Z fluffy $
+# $FreeBSD: head/mail/notmuch-emacs/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
+PORTREVISION=   1
 CATEGORIES=	mail elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 

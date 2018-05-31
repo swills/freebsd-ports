@@ -1,5 +1,5 @@
 # Created by: Ashish Shukla <wahjava@gmail.com>
-# $FreeBSD: head/x11/xpyb/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/x11/xpyb/Makefile 471180 2018-05-30 21:52:33Z antoine $
 
 PORTNAME=	xpyb
 PORTVERSION=	1.3.1
@@ -10,6 +10,8 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	ashish@FreeBSD.org
 COMMENT=	Python bindings to access X Window System protocol via libxcb
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/xcb-proto.pc:x11/xcb-proto \
 		xcb-proto>=1.7.1:x11/xcb-proto

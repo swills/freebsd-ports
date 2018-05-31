@@ -1,8 +1,7 @@
-# $FreeBSD: head/www/hs-DAV/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/www/hs-DAV/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	DAV
-PORTVERSION=	1.3.1
-PORTREVISION=	1
+PORTVERSION=	1.3.2
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

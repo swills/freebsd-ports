@@ -1,5 +1,5 @@
 # Created by: asami
-# $FreeBSD: head/games/nethack34/Makefile 455775 2017-12-08 08:33:45Z mat $
+# $FreeBSD: head/games/nethack34/Makefile 470952 2018-05-26 23:00:01Z glewis $
 
 PORTNAME=	nethack34
 PORTVERSION=	3.4.3
@@ -57,7 +57,7 @@ CFLAGS+=	-DMENU_COLOR_REGEX_POSIX
 .endif
 .if defined(WITH_STATUSCOLORS)
 PATCHFILES+=	nh343-statuscolors.fixed.patch
-PATCH_SITES+=	http://jdc.koitsu.org/nethack/ \
+PATCH_SITES+=	https://jdc.koitsu.org/nethack/ \
 		LOCAL/wxs
 PATCH_DIST_STRIP=	-p1
 .endif

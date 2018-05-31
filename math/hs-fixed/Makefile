@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/hs-fixed/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/math/hs-fixed/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	fixed
 PORTVERSION=	0.2.1.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math haskell
 
 MAINTAINER=	haskell@FreeBSD.org

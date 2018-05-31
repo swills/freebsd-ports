@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-exceptions/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-exceptions/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	exceptions
-PORTVERSION=	0.8.3
+PORTVERSION=	0.10.0
 PORTREVISION=	1
 CATEGORIES=	devel haskell
 
@@ -10,7 +10,7 @@ COMMENT=	Extensible optionally-pure exceptions
 
 LICENSE=	BSD3CLAUSE
 
-USE_CABAL=	mtl stm transformers-compat
+USE_CABAL=	mtl transformers-compat
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

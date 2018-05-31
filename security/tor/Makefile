@@ -1,8 +1,8 @@
 # Created by: peter.thoenen@yahoo.com
-# $FreeBSD: head/security/tor/Makefile 463489 2018-03-03 16:00:48Z yuri $
+# $FreeBSD: head/security/tor/Makefile 470663 2018-05-22 22:41:57Z yuri $
 
 PORTNAME=	tor
-DISTVERSION=	0.3.2.10
+DISTVERSION=	0.3.3.6
 CATEGORIES=	security net ipv6
 MASTER_SITES=	TOR
 

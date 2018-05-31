@@ -1,9 +1,9 @@
 # Created by: Matthieu Guegan <matt.guegan@free.fr>
-# $FreeBSD: head/x11-wm/hs-xmonad-contrib/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/x11-wm/hs-xmonad-contrib/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	xmonad-contrib
 PORTVERSION=	0.13
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-wm haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -12,7 +12,7 @@ COMMENT=	Third-party extensions for xmonad
 LICENSE=	BSD3CLAUSE
 
 USE_CABAL=	extensible-exceptions mtl>=1 old-time random utf8-string \
-		X11>=1.6.1 X11-xft>=0.2 xmonad==0.13_2
+		X11>=1.6.1 X11-xft>=0.2 xmonad
 USE_XORG=	x11
 
 RUN_DEPENDS+=	bash:shells/bash

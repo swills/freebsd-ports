@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/distel/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/devel/distel/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	distel
 PORTVERSION=	4.1.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 

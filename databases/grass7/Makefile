@@ -1,5 +1,5 @@
 # Created by: Mikael URANKAR and Loïc BARTOLETTI
-# $FreeBSD: head/databases/grass7/Makefile 469923 2018-05-14 16:56:03Z krion $
+# $FreeBSD: head/databases/grass7/Makefile 471177 2018-05-30 21:47:20Z antoine $
 
 PORTNAME=	grass
 PORTVERSION=	7.4.0
@@ -24,6 +24,8 @@ COMMENT=	Open source Geographical Information System (GIS)
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/GPL.TXT
+
+BROKEN=		fails to package
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.2:math/py-numpy@${PY_FLAVOR}
 LIB_DEPENDS=	libgdal.so:graphics/gdal \

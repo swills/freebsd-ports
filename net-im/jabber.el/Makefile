@@ -1,5 +1,5 @@
 # Created by: Max N. Boyarov <m.boyarov@bsd.by>
-# $FreeBSD: head/net-im/jabber.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/net-im/jabber.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	jabber.el
 PORTVERSION=	0.8.92
@@ -11,6 +11,11 @@ DISTNAME=		emacs-jabber-${PORTVERSION}
 
 MAINTAINER=	max.n.boyarov@gmail.com
 COMMENT=	Minimal jabber client for [X]Emacs
+
+.if ${FLAVOR:U} != devel && ${FLAVOR:U} != devel_nox
+# http://pkg.awarnach.mathstat.dal.ca/data/11i386-default/2018-05-30_07h36m11s/logs/errors/jabber.el-emacs26-0.8.92_7.log
+BROKEN=		fails to build
+.endif
 
 RUN_DEPENDS=	${LOCALBASE}/bin/gnutls-cli:security/gnutls
 

@@ -1,9 +1,9 @@
 # Created by: stas
-# $FreeBSD: head/cad/verilog-mode.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/cad/verilog-mode.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	verilog-mode.el
 PORTVERSION=	801
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	cad elisp
 MASTER_SITES=	http://www.veripool.org/ftp/
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

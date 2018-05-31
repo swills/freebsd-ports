@@ -1,8 +1,9 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/www/palemoon/Makefile 470434 2018-05-19 21:08:22Z tobik $
+# $FreeBSD: head/www/palemoon/Makefile 470834 2018-05-25 13:09:10Z tobik $
 
 PORTNAME=	palemoon
 DISTVERSION=	27.9.2
+PORTREVISION=	1
 DISTVERSIONSUFFIX=_Release
 CATEGORIES=	www ipv6
 

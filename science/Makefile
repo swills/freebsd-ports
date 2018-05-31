@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/Makefile 469842 2018-05-14 00:16:52Z yuri $
+# $FreeBSD: head/science/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 #
 
     COMMENT = Scientific ports
@@ -76,7 +76,6 @@
     SUBDIR += hdf
     SUBDIR += hdf5
     SUBDIR += hdf5-18
-    SUBDIR += hs-bio
     SUBDIR += hypre
     SUBDIR += iboview
     SUBDIR += isaac-cfd

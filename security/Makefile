@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 470467 2018-05-20 18:06:16Z miwi $
+# $FreeBSD: head/security/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 #
 
     COMMENT = Security tools
@@ -251,6 +251,7 @@
     SUBDIR += hs-cryptohash-sha1
     SUBDIR += hs-cryptohash-sha256
     SUBDIR += hs-cryptonite
+    SUBDIR += hs-cryptonite-conduit
     SUBDIR += hs-digest
     SUBDIR += hs-ed25519
     SUBDIR += hs-entropy
@@ -1006,6 +1007,7 @@
     SUBDIR += py-pywinrm
     SUBDIR += py-rekall
     SUBDIR += py-rekall-core
+    SUBDIR += py-rekall_lib
     SUBDIR += py-requests-credssp
     SUBDIR += py-requests-kerberos
     SUBDIR += py-rsa

@@ -1,5 +1,5 @@
 #
-# $FreeBSD: head/lang/ghc/bsd.cabal.options.mk 447548 2017-08-08 17:21:45Z tcberner $
+# $FreeBSD: head/lang/ghc/bsd.cabal.options.mk 470870 2018-05-25 21:44:12Z tcberner $
 #
 # bsd.cabal.options.mk -- Support options for ports based on Haskell Cabal.
 #
@@ -18,9 +18,9 @@ GHC_CMD?=	${LOCALBASE}/bin/ghc
 HADDOCK_CMD?=	${LOCALBASE}/bin/haddock
 HSCOLOUR_CMD?=	${LOCALBASE}/bin/HsColour
 
-GHC_VERSION?=	8.0.2
+GHC_VERSION?=	8.4.2
 
-HSCOLOUR_VERSION=	1.24.1
+HSCOLOUR_VERSION=	1.24.4
 
 HSCOLOUR_DESC?=	Colorize generated documentation by HsColour
 DYNAMIC_DESC?=	Add support for dynamic linking

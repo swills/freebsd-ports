@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/p5-Net-UPnP/Makefile 446754 2017-07-27 15:48:08Z sunpoet $
+# $FreeBSD: head/multimedia/p5-Net-UPnP/Makefile 470643 2018-05-22 17:48:45Z sunpoet $
 
 PORTNAME=	Net-UPnP
-PORTVERSION=	1.4.3
+PORTVERSION=	1.4.4
 CATEGORIES=	multimedia devel
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

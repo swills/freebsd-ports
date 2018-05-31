@@ -1,9 +1,9 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/devel/hs-ghc-paths/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-ghc-paths/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	ghc-paths
 PORTVERSION=	0.1.0.9
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

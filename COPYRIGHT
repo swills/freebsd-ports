@@ -1,10 +1,10 @@
-# $FreeBSD: head/COPYRIGHT 457728 2017-12-31 22:20:04Z rene $
+# $FreeBSD: head/COPYRIGHT 470957 2018-05-27 05:10:36Z eadler $
 #	@(#)COPYRIGHT	8.2 (Berkeley) 3/21/94
 
 The compilation of software known as the FreeBSD Ports Collection is
 distributed under the following terms:
 
-Copyright (C) 1994-2018 The FreeBSD Project. All rights reserved.
+Copyright (C) 1994-2018 The FreeBSD Project.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions

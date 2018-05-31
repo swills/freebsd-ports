@@ -1,5 +1,5 @@
 # Created by: Ilja Dejs <ilja.dejs@gmail.com>
-# $FreeBSD: head/net-im/imspector/Makefile 428150 2016-12-08 19:23:24Z tijl $
+# $FreeBSD: head/net-im/imspector/Makefile 471018 2018-05-28 05:08:09Z tobik $
 
 PORTNAME=	imspector
 PORTVERSION=	20111108
@@ -11,6 +11,9 @@ MAINTAINER=	m.tsatsenko@gmail.com
 COMMENT=	IM transparent proxy with monitoring, blocking, and content-filtering
 
 LICENSE=	GPLv2
+
+DEPRECATED=	No active upstream, master site disappeared long ago
+EXPIRATION_DATE=	2018-06-15
 
 CFLAGS+=	-fPIC -I ${LOCALBASE}/include -DHAVE_SSL
 USES=		gmake iconv ssl

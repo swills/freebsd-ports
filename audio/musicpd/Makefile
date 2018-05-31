@@ -1,8 +1,7 @@
-# $FreeBSD: head/audio/musicpd/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/audio/musicpd/Makefile 470899 2018-05-26 16:10:59Z riggs $
 
 PORTNAME=	musicpd
-PORTVERSION=	0.20.18
-PORTREVISION=	4
+PORTVERSION=	0.20.20
 CATEGORIES=	audio ipv6
 MASTER_SITES=	http://www.musicpd.org/download/mpd/${PORTVERSION:R}/
 DISTNAME=	mpd-${PORTVERSION}

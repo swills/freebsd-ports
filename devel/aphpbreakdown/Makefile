@@ -1,9 +1,10 @@
-# $FreeBSD: head/devel/aphpbreakdown/Makefile 455657 2017-12-06 15:55:46Z tz $
+# $FreeBSD: head/devel/aphpbreakdown/Makefile 470830 2018-05-25 11:20:54Z tz $
 
 PORTNAME=	aphpbreakdown
-DISTVERSION=	1.0.0
+DISTVERSION=	2.1.0
 CATEGORIES=	devel www
 MASTER_SITES=	http://phar.code-mesa.com/
+PKGNAMEPREFIX=  ${PHP_PKGNAMEPREFIX}
 EXTRACT_SUFX=	.phar
 
 MAINTAINER=	freebsd@code-mesa.com
@@ -11,7 +12,7 @@ COMMENT=	Code-Analyzer for PHP for Compatibility Check-UP
 
 LICENSE=	BSD2CLAUSE
 
-USES=	php
+USES=	php:flavors
 USE_PHP=	tokenizer phar hash
 
 NO_ARCH=	yes

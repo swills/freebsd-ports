@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/starttls/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/security/starttls/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	starttls
 PORTVERSION=	0.10
-PORTREVISION=	17
+PORTREVISION=	18
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.opaopa.org/pub/elisp/
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

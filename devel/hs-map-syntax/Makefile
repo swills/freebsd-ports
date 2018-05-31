@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-map-syntax/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-map-syntax/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	map-syntax
-PORTVERSION=	0.2.0.2
-PORTREVISION=	1
+PORTVERSION=	0.3
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,8 +1,8 @@
-# $FreeBSD: head/mail/p5-Sisimai/Makefile 469869 2018-05-14 09:16:08Z pi $
+# $FreeBSD: head/mail/p5-Sisimai/Makefile 470929 2018-05-26 17:49:12Z sunpoet $
 
 PORTNAME=	Sisimai
-PORTVERSION=	4.22.5
-DISTVERSIONPREFIX=v
+PORTVERSION=	4.22.6
+DISTVERSIONPREFIX=	v
 CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:AKXLIX
@@ -12,11 +12,12 @@ MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Mail Analyzing Interface for bounce mails
 
 LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Module-Build-Tiny>0:devel/p5-Module-Build-Tiny
 TEST_DEPENDS=	p5-Class-Accessor-Lite>0:devel/p5-Class-Accessor-Lite
 
+NO_ARCH=	yes
 USES=		perl5
-USE_PERL5=	modbuild
+USE_PERL5=	modbuildtiny
 
 .include <bsd.port.mk>

@@ -1,9 +1,9 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/www/hs-http-server/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/www/hs-http-server/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	http-server
 PORTVERSION=	1.0.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -12,7 +12,7 @@ COMMENT=	Library for writing Haskell web servers
 LICENSE=	BSD3CLAUSE
 
 USE_CABAL=	HTTP>=4000.2.0 mime>=0.3 network>=2.6 network-uri>=2.6 \
-		text>=1.0 url>=2.0 utf8-string>=0.3.4
+		url>=2.0 utf8-string>=0.3.4
 
 INSTALL_PORTEXAMPLES=	cd ${WRKSRC}/example && \
 			  ${COPYTREE_SHARE} \* ${STAGEDIR}${EXAMPLESDIR}

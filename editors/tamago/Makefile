@@ -1,5 +1,5 @@
 # Created by: tetsushi NAKAI <nakai@tsl.pe.u-tokyo.ac.jp>
-# $FreeBSD: head/editors/tamago/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/editors/tamago/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	tamago
 PORTVERSION=	4.0.6.0.20041122.19.14
@@ -12,6 +12,11 @@ MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Egg V4, Multilingual Input Method for Emacsen
 
 LICENSE=	GPLv2
+
+.if ${FLAVOR:U} != devel && ${FLAVOR:U} != devel_nox
+# http://pkg.awarnach.mathstat.dal.ca/data/11i386-default/2018-05-30_07h36m11s/logs/errors/tamago-emacs26-4.0.6.0.20041122.19.14_4.log
+BROKEN=		fails to build
+.endif
 
 USES=		emacs
 EMACS_FLAVORS_EXCLUDE=	devel_full # fails to build

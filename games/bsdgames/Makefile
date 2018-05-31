@@ -1,5 +1,5 @@
 # Created by: Mark Murray <markm@FreeBSD.org>
-# $FreeBSD: head/games/bsdgames/Makefile 450937 2017-09-29 21:41:01Z adamw $
+# $FreeBSD: head/games/bsdgames/Makefile 470898 2018-05-26 15:46:14Z adamw $
 
 PORTNAME=	bsdgames
 PORTVERSION=	4.8.1
@@ -7,7 +7,7 @@ PORTEPOCH=	1
 CATEGORIES=	games
 MASTER_SITES=	LOCAL/adamw
 
-MAINTAINER=	adamw@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Traditional BSD games taken from DragonFly BSD
 
 LICENSE=	BSD3CLAUSE

@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/dwatch-gource/Makefile 469983 2018-05-15 00:21:34Z dteske $
+# $FreeBSD: head/sysutils/dwatch-gource/Makefile 471140 2018-05-30 17:49:07Z dteske $
 
 PORTNAME=	dwatch-gource
-DISTVERSION=	0.4
+DISTVERSION=	0.9
 CATEGORIES=	sysutils
 
 MAINTAINER=	dteske@FreeBSD.org

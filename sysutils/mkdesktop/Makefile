@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/mkdesktop/Makefile 452829 2017-10-25 03:01:56Z ultima $
+# $FreeBSD: head/sysutils/mkdesktop/Makefile 470653 2018-05-22 19:22:58Z krion $
 
 PORTNAME=	mkdesktop
-PORTVERSION=	1.6
+PORTVERSION=	1.8
 CATEGORIES=	sysutils
 
 MAINTAINER=	bourne.identity@hotmail.com

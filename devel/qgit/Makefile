@@ -1,9 +1,9 @@
 # Created by: Ion-Mihai "IOnut" Tetcu <itetcu@FreeBSD.org>
-# $FreeBSD: head/devel/qgit/Makefile 449786 2017-09-13 13:41:22Z adridg $
+# $FreeBSD: head/devel/qgit/Makefile 470831 2018-05-25 11:51:39Z adridg $
 
 PORTNAME=	qgit
 DISTVERSIONPREFIX=	${PORTNAME}-
-DISTVERSION=	2.7
+DISTVERSION=	2.8
 CATEGORIES=	devel
 
 MAINTAINER=	adridg@FreeBSD.org

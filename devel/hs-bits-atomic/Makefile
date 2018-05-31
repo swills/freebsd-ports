@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-bits-atomic/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-bits-atomic/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	bits-atomic
 PORTVERSION=	0.1.3
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: clsung@dragon2.net
-# $FreeBSD: head/devel/p5-Glib2/Makefile 452207 2017-10-16 16:59:33Z swills $
+# $FreeBSD: head/devel/p5-Glib2/Makefile 470711 2018-05-23 18:16:18Z swills $
 
 PORTNAME=	Glib
-PORTVERSION=	1.326
+PORTVERSION=	1.327
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN SF/gtk2-perl/${PORTNAME}/${PORTVERSION}
 MASTER_SITE_SUBDIR=	CPAN:XAOC
@@ -23,12 +23,5 @@ USE_GNOME=	glib20
 USES=		perl5
 USE_PERL5=	configure
 MAKE_JOBS_UNSAFE=	yes
-
-pre-everything::
-	@${ECHO_MSG} "--------------------------------------------------------"
-	@${ECHO_MSG} "Some functions of this module require a threaded perl."
-	@${ECHO_MSG} "If you intend to use them or experience hangs when"
-	@${ECHO_MSG} "using this module, enable the THREADS option in perl."
-	@${ECHO_MSG} "--------------------------------------------------------"
 
 .include <bsd.port.mk>

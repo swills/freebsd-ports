@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-caret/Makefile 466631 2018-04-06 08:51:57Z tota $
+# $FreeBSD: head/devel/R-cran-caret/Makefile 471036 2018-05-28 10:06:33Z tota $
 
 PORTNAME=	caret
-DISTVERSION=	6.0-79
+DISTVERSION=	6.0-80
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 

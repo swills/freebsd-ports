@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-rspec_junit_formatter/Makefile 445971 2017-07-16 00:45:21Z sunpoet $
+# $FreeBSD: head/devel/rubygem-rspec_junit_formatter/Makefile 471162 2018-05-30 19:48:18Z sunpoet $
 
 PORTNAME=	rspec_junit_formatter
-PORTVERSION=	0.3.0
+PORTVERSION=	0.4.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

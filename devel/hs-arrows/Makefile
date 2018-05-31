@@ -1,9 +1,8 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/devel/hs-arrows/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-arrows/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	arrows
-PORTVERSION=	0.4.4.1
-PORTREVISION=	11
+PORTVERSION=	0.4.4.2
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

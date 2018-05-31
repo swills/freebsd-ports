@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/bsd.sanity.mk 469413 2018-05-08 20:12:44Z rene $
+# $FreeBSD: head/Mk/bsd.sanity.mk 470963 2018-05-27 07:54:42Z mat $
 #
 # MAINTAINER: portmgr@FreeBSD.org
 #
@@ -111,7 +111,9 @@ DEV_ERROR+=	"you cannot include bsd.port[.pre].mk twice"
 DEV_WARNING+=	"LICENSE must not contain BSD, instead use BSD[234]CLAUSE"
 .endif
 .else
+.  if empty(USES:Mmetaport)
 DEV_WARNING+=	"Please set LICENSE for this port"
+.  endif
 .endif
 
 .if defined(USE_PYDISTUTILS) && ${USE_PYDISTUTILS} == "easy_install"

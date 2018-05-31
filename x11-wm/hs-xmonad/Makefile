@@ -1,9 +1,9 @@
 # Created by: Matthieu Guegan <matt.guegan@free.fr>
-# $FreeBSD: head/x11-wm/hs-xmonad/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/x11-wm/hs-xmonad/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	xmonad
 PORTVERSION=	0.13
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-wm haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -11,7 +11,7 @@ COMMENT=	Tiling window manager
 
 LICENSE=	BSD3CLAUSE
 
-USE_CABAL=	extensible-exceptions mtl setlocale utf8-string X11
+USE_CABAL=	extensible-exceptions mtl semigroups setlocale utf8-string X11
 USE_XORG=	x11
 
 MAN1PAGES=	xmonad.1
