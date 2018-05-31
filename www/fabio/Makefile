@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/fabio/Makefile 464866 2018-03-18 03:55:13Z yuri $
+# $FreeBSD: head/www/fabio/Makefile 470874 2018-05-25 23:05:22Z seanc $
 
 PORTNAME=	fabio
-PORTVERSION=	1.5.6
+PORTVERSION=	1.5.9
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 

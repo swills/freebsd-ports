@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-logict/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-logict/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	logict
 PORTVERSION=	0.6.0.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/hs-gsasl/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/net/hs-gsasl/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	gsasl
 PORTVERSION=	0.3.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Herve Quiroz <hq@FreeBSD.org>
-# $FreeBSD: head/www/servlet-api/Makefile 466247 2018-04-02 18:42:34Z gerald $
+# $FreeBSD: head/www/servlet-api/Makefile 471176 2018-05-30 21:43:48Z antoine $
 
 PORTNAME=	servlet-api
 PORTVERSION=	2.5

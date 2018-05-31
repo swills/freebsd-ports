@@ -1,9 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/math/R-cran-dplyr/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/R-cran-dplyr/Makefile 470699 2018-05-23 13:06:16Z wen $
 
 PORTNAME=	dplyr
-DISTVERSION=	0.7.4
-PORTREVISION=	1
+DISTVERSION=	0.7.5
 CATEGORIES=	math
 DISTNAME=	${PORTNAME}_${DISTVERSION}
 
@@ -23,7 +22,8 @@ BUILD_DEPENDS=	R-cran-Rcpp>=0.12.0:devel/R-cran-Rcpp \
 		R-cran-magrittr>=0:devel/R-cran-magrittr \
 		R-cran-lazyeval>=0.1.10:math/R-cran-lazyeval \
 		R-cran-tibble>=1.3.1:devel/R-cran-tibble \
-		R-cran-assertthat>=0:math/R-cran-assertthat
+		R-cran-assertthat>=0:math/R-cran-assertthat \
+		R-cran-tidyselect>=0:devel/R-cran-tidyselect
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		cran:auto-plist,compiles

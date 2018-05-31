@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-async/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-async/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	async
-PORTVERSION=	2.1.1.1
+PORTVERSION=	2.2.1
 PORTREVISION=	1
 CATEGORIES=	devel haskell
 
@@ -10,7 +10,7 @@ COMMENT=	Run IO operations asynchronously and wait for their results
 
 LICENSE=	BSD3CLAUSE
 
-USE_CABAL=	stm>=2.2
+USE_CABAL=	hashable
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

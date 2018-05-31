@@ -1,7 +1,7 @@
-# $FreeBSD: head/dns/powerdns/Makefile 469562 2018-05-10 15:21:51Z krion $
+# $FreeBSD: head/dns/powerdns/Makefile 470807 2018-05-24 20:13:31Z krion $
 
 PORTNAME=	powerdns
-DISTVERSION=	4.1.2
+DISTVERSION=	4.1.3
 CATEGORIES=	dns ipv6
 MASTER_SITES=	http://downloads.powerdns.com/releases/
 DISTNAME=	pdns-${DISTVERSION}

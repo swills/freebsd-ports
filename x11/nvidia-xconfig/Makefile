@@ -1,8 +1,8 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/x11/nvidia-xconfig/Makefile 448103 2017-08-17 14:09:14Z swills $
+# $FreeBSD: head/x11/nvidia-xconfig/Makefile 471053 2018-05-28 16:05:52Z bland $
 
 PORTNAME=	nvidia-xconfig
-PORTVERSION=	384.59
+PORTVERSION=	396.24
 CATEGORIES=	x11
 
 MAINTAINER=	bland@FreeBSD.org

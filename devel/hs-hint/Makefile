@@ -1,5 +1,5 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/devel/hs-hint/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-hint/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	hint
 PORTVERSION=	0.7.0
@@ -13,6 +13,8 @@ LICENSE=	BSD3CLAUSE
 
 USE_CABAL=	exceptions extensible-exceptions ghc-mtl>=1.2.1 ghc-paths \
 		mtl random utf8-string
+
+IGNORE=		Doesn't build with recent GHC version
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

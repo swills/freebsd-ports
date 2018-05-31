@@ -1,9 +1,9 @@
-# $FreeBSD: head/lang/elixir-mode.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/lang/elixir-mode.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	elixir-mode.el
 DISTVERSIONPREFIX=	v
 PORTVERSION=	2.3.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 

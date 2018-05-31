@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/range-v3/Makefile 463616 2018-03-05 02:23:16Z yuri $
+# $FreeBSD: head/devel/range-v3/Makefile 470687 2018-05-23 07:59:15Z yuri $
 
 PORTNAME=	range-v3
-DISTVERSION=	0.3.5
+DISTVERSION=	0.3.6
 CATEGORIES=	devel
 
 MAINTAINER=	henry.hu.sh@gmail.com

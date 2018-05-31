@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/java/visualvm/Makefile 459554 2018-01-20 21:32:07Z swills $
+# $FreeBSD: head/java/visualvm/Makefile 470798 2018-05-24 17:59:42Z swills $
 
 PORTNAME=	visualvm
-PORTVERSION=	1.4
+PORTVERSION=	1.4.1
 CATEGORIES=	java devel
 MASTER_SITES=	https://github.com/visualvm/visualvm.src/releases/download/${PORTVERSION}/
 DISTNAME=	visualvm_${PORTVERSION:S/.//g}

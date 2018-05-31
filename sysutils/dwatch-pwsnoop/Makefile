@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/dwatch-pwsnoop/Makefile 469984 2018-05-15 00:30:40Z dteske $
+# $FreeBSD: head/sysutils/dwatch-pwsnoop/Makefile 471076 2018-05-29 03:22:00Z dteske $
 
 PORTNAME=	dwatch-pwsnoop
-DISTVERSION=	0.1
+DISTVERSION=	0.1.1
 CATEGORIES=	sysutils
 
 MAINTAINER=	dteske@FreeBSD.org

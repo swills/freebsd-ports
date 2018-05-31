@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-typed-process/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-typed-process/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	typed-process
-PORTVERSION=	0.1.0.0
+PORTVERSION=	0.2.2.0
 PORTREVISION=	1
 CATEGORIES=	devel haskell
 
@@ -10,7 +10,7 @@ COMMENT=	The typed-process package
 
 LICENSE=	BSD3CLAUSE
 
-USE_CABAL=	async conduit conduit-extra exceptions stm
+USE_CABAL=	async exceptions
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/mail/p5-Mail-LMLM/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/mail/p5-Mail-LMLM/Makefile 470746 2018-05-23 23:48:19Z wen $
 
 PORTNAME=	Mail-LMLM
-PORTVERSION=	0.6804
+PORTVERSION=	0.6805
 CATEGORIES=	mail perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

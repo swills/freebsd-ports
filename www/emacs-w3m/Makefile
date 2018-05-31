@@ -1,5 +1,5 @@
 # Created by: MANTANI Nobutaka <nobutaka@nobutaka.com>
-# $FreeBSD: head/www/emacs-w3m/Makefile 466061 2018-03-31 15:51:57Z nobutaka $
+# $FreeBSD: head/www/emacs-w3m/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	emacs-w3m
 PORTVERSION=	1.4.620.b.${SNAPDATE}
@@ -13,6 +13,11 @@ COMMENT=	Simple front-end to w3m for emacs
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+.if ${FLAVOR:U} != devel && ${FLAVOR:U} != devel_nox
+# http://pkg.awarnach.mathstat.dal.ca/data/11i386-default/2018-05-30_07h36m11s/logs/errors/emacs-w3m-emacs26-1.4.620.b.20180331_1.log
+BROKEN=		fails to configure
+.endif
 
 BUILD_DEPENDS=	w3m:www/w3m
 RUN_DEPENDS=	w3m:www/w3m

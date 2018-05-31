@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/bind9-devel/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/dns/bind9-devel/Makefile 471035 2018-05-28 09:47:31Z mat $
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
@@ -34,13 +34,13 @@ LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
 # ISC releases things like 9.8.0-P1, which our versioning doesn't like
-ISCVERSION=	9.13.0a0.2018.05.18
+ISCVERSION=	9.13.0a0.2018.05.25
 # XXX: Remove gitlab
 USE_GITLAB=	yes
 GL_SITE=	https://gitlab.isc.org
 GL_ACCOUNT=	isc-projects
 GL_PROJECT=	bind9
-GL_COMMIT=	e8dd921ef96582c1dbed099015f8e45e00ede439
+GL_COMMIT=	58ad54e7a1f1725c2c6956813e23169b911a05b8
 
 # XXX: remove tar:bz2
 USES=	cpe libedit ssl tar:bz2
@@ -65,7 +65,7 @@ CONFIGURE_ARGS=	--localstatedir=/var --disable-linux-caps \
 ETCDIR=		${PREFIX}/etc/namedb
 
 # XXX: Add -devel
-CONFLICTS=	bind99 bind910 bind911 bind912
+CONFLICTS=	bind99 bind910 bind911 bind912 bind913
 
 .if defined(BIND_TOOLS_SLAVE)
 CONFIGURE_ARGS+=	--disable-shared

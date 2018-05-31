@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/Makefile 467400 2018-04-15 17:00:10Z pi $
+# $FreeBSD: head/archivers/Makefile 470813 2018-05-24 22:37:34Z rodrigo $
 #
 
     COMMENT = Archivers
@@ -178,6 +178,7 @@
     SUBDIR += py-backports.lzma
     SUBDIR += py-borgbackup
     SUBDIR += py-brotli
+    SUBDIR += py-bup
     SUBDIR += py-bz2file
     SUBDIR += py-czipfile
     SUBDIR += py-libarchive-c

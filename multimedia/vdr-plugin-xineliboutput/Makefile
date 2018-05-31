@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-xineliboutput/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/vdr-plugin-xineliboutput/Makefile 470941 2018-05-26 18:19:35Z miwi $
 
 PORTNAME=	vdr-plugin-xineliboutput
 PORTVERSION=	1.0.90s20120511
@@ -20,6 +20,7 @@ LIB_DEPENDS=	libxine.so:multimedia/libxine \
 		libdbus-glib-1.so:devel/dbus-glib \
 		libvdpau.so:multimedia/libvdpau
 
+BROKEN_FreeBSD_12=	does not build with newer clang
 PATCH_STRIP=	-p1
 USES=		pkgconfig tar:bzip2
 USE_XORG=	xrandr xrender

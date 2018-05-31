@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/cl-md5-sbcl/Makefile 469005 2018-05-04 06:17:47Z krion $
+# $FreeBSD: head/security/cl-md5-sbcl/Makefile 471057 2018-05-28 17:05:13Z krion $
 
 PORTNAME=	md5
 PORTVERSION=	1.8.5
-PORTREVISION=	22
+PORTREVISION=	23
 CATEGORIES=	security lisp
 PKGNAMEPREFIX=	cl-
 DISTFILES=	# none

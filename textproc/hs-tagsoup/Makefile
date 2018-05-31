@@ -1,17 +1,14 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/textproc/hs-tagsoup/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/textproc/hs-tagsoup/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	tagsoup
-PORTVERSION=	0.14.1
-PORTREVISION=	1
+PORTVERSION=	0.14.6
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Parsing and extracting information from HTML/XML documents
 
 LICENSE=	BSD3CLAUSE
-
-USE_CABAL=	text
 
 FLAGS_DEFINE=	DOWNLOAD
 

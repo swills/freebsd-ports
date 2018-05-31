@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-hspec-discover/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-hspec-discover/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	hspec-discover
-PORTVERSION=	2.4.4
-PORTREVISION=	1
+PORTVERSION=	2.5.0
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

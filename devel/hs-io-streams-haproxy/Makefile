@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-io-streams-haproxy/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-io-streams-haproxy/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	io-streams-haproxy
-PORTVERSION=	1.0.0.1
-PORTREVISION=	1
+PORTVERSION=	1.0.0.2
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

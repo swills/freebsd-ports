@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/py-noseofyeti/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-noseofyeti/Makefile 470904 2018-05-26 17:29:25Z antoine $
 
 PORTNAME=	noseofyeti
 PORTVERSION=	1.5.1
@@ -37,7 +37,7 @@ do-test:
 	cd ${WRKSRC} && ${PYTHON_CMD} test.sh
 
 post-build-DOCS-on:
-	(cd ${WRKSRC}/docs ; PYTHONPATH=${WRKSRC} ${MAKE_CMD} html)
+	(cd ${WRKSRC}/docs ; PYTHONPATH=${WRKSRC} ${MAKE_CMD} html SPHINXBUILD=sphinx-build-${PYTHON_VER})
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

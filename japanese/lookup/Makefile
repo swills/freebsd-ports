@@ -1,8 +1,9 @@
 # Created by: Satoshi Taoka <taoka@FreeBSD.org>
-# $FreeBSD: head/japanese/lookup/Makefile 461347 2018-02-09 23:43:58Z tcberner $
+# $FreeBSD: head/japanese/lookup/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	lookup
 PORTVERSION=	1.99.96.20180209
+PORTREVISION=   1
 CATEGORIES=	japanese elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 

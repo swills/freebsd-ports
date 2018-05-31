@@ -1,9 +1,9 @@
 # Created by: Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
-# $FreeBSD: head/editors/apel/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/editors/apel/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	apel
 PORTVERSION=	${APEL_VER}
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	editors elisp
 MASTER_SITES=	http://git.chise.org/elisp/dist/apel/
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

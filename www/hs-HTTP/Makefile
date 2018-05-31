@@ -1,9 +1,8 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/www/hs-HTTP/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/www/hs-HTTP/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	HTTP
-PORTVERSION=	4000.3.7
-PORTREVISION=	1
+PORTVERSION=	4000.3.11
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -11,8 +10,7 @@ COMMENT=	Library for client-side HTTP
 
 LICENSE=	BSD3CLAUSE
 
-USE_CABAL=	mtl>=2.0 network>=2.6 network-uri>=2.6 old-time>=1.0.0.0 \
-		parsec>=2.0
+USE_CABAL=	mtl>=2.0 network>=2.6 network-uri>=2.6 old-time>=1.0.0.0
 
 FLAGS_ENABLE=	network-uri
 FLAGS_DISABLE=	mtl1 warn-as-error network23 conduit10 warp-tests

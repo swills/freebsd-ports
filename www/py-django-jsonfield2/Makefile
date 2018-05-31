@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-django-jsonfield2/Makefile 470064 2018-05-15 23:58:26Z sunpoet $
+# $FreeBSD: head/www/py-django-jsonfield2/Makefile 470634 2018-05-22 17:47:54Z sunpoet $
 
 PORTNAME=	jsonfield2
-PORTVERSION=	3.0.0
+PORTVERSION=	3.0.1
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}django-
 

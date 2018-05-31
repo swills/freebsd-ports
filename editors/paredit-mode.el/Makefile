@@ -1,8 +1,8 @@
-# $FreeBSD: head/editors/paredit-mode.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/editors/paredit-mode.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	paredit-mode.el
 PORTVERSION=	24
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	editors elisp
 MASTER_SITES=	http://mumble.net/~campbell/emacs/
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-IO-KQueue/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/devel/p5-IO-KQueue/Makefile 470825 2018-05-25 09:04:15Z amdmi3 $
 
 PORTNAME=	IO-KQueue
 PORTVERSION=	0.34
@@ -10,13 +10,16 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl interface to the BSD kqueue system call
 
+LICENSE=	ART10 GPLv2
+LICENSE_COMB=	dual
+
 USES=		perl5
 USE_PERL5=	configure
 
 OPTIONS_DEFINE=	EXAMPLES
 
-post-install:
-	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
+post-install-EXAMPLES-on:
+	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${WRKSRC}/examples/* ${STAGEDIR}${EXAMPLESDIR}
 
 .include <bsd.port.mk>

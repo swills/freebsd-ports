@@ -1,13 +1,15 @@
-# $FreeBSD: head/sysutils/plasma5-user-manager/Makefile 468495 2018-04-27 20:29:36Z tcberner $
+# $FreeBSD: head/sysutils/plasma5-user-manager/Makefile 470720 2018-05-23 21:13:13Z jhale $
 
 PORTNAME=	user-manager
 DISTVERSION=	${KDE_PLASMA_VERSION}
+PORTREVISION=	1
 CATEGORIES=	sysutils kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Plasma5 user manager
 
 LIB_DEPENDS=	libpwquality.so:security/libpwquality
+RUN_DEPENDS=	accountsservice>=0:sysutils/accountsservice
 
 USES=		cmake:outsource compiler:c++11-lib cpe gettext \
 		kde:5 pkgconfig tar:xz

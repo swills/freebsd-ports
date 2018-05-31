@@ -1,5 +1,5 @@
 # Created by: Vitaly Magerya <vmagerya@gmail.com>
-# $FreeBSD: head/lang/ypsilon/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/lang/ypsilon/Makefile 471085 2018-05-29 08:34:21Z amdmi3 $
 
 PORTNAME=	ypsilon
 PORTVERSION=	0.9.6.3
@@ -17,6 +17,7 @@ GH_TUPLE=	fujita-y:ypsilon:0.9.6-update3
 
 USES=		gmake
 USE_GCC=	yes
+TEST_TARGET=	check  # XXX: tests fail
 
 MAKE_ARGS=	DATADIR="${DATADIR}"
 
@@ -25,17 +26,16 @@ ONLY_FOR_ARCHS=	i386 amd64
 OPTIONS_DEFINE=	EXAMPLES
 
 post-patch:
-	${REINPLACE_CMD} 's/-fno-[a-z-]*//g' ${WRKSRC}/Makefile
+	@${REINPLACE_CMD} 's/-fno-[a-z-]*//g' ${WRKSRC}/Makefile
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/${PORTNAME}.1 ${STAGEDIR}${MANPREFIX}/man/man1
 	@${MKDIR} ${STAGEDIR}${DATADIR}
 	(cd ${WRKSRC}/ && ${COPYTREE_SHARE} "sitelib stdlib" ${STAGEDIR}${DATADIR})
+
+do-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${WRKSRC}/example/*.scm ${STAGEDIR}${EXAMPLESDIR}
-
-regression-test: build
-	cd ${WRKSRC} && ${MAKE_CMD} check
 
 .include <bsd.port.mk>

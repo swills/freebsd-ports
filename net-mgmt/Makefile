@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 470424 2018-05-19 18:41:07Z miwi $
+# $FreeBSD: head/net-mgmt/Makefile 470937 2018-05-26 18:06:29Z miwi $
 #
 
     COMMENT = Network management tools
@@ -178,6 +178,7 @@
     SUBDIR += nedi
     SUBDIR += nefu
     SUBDIR += net-snmp
+    SUBDIR += netbox
     SUBDIR += netdata
     SUBDIR += netdisco
     SUBDIR += netdisco-mibs

@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/py-google-compute-engine/Makefile 470611 2018-05-22 13:27:40Z swills $
+# $FreeBSD: head/sysutils/py-google-compute-engine/Makefile 470666 2018-05-22 23:52:40Z swills $
 
 PORTNAME=	google-compute-engine
 DISTVERSION=	2.7.6
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -34,10 +34,12 @@ SUB_LIST=	PYTHON_CMD="${PYTHON_CMD}"
 REINPLACE_ARGS=	-i ''
 
 post-install:
-	@${MKDIR} ${STAGEDIR}${PREFIX}/etc/syslog.d
+	@${MKDIR} ${STAGEDIR}${PREFIX}/etc/syslog.d ${STAGEDIR}/etc
 	${INSTALL_DATA} ${FILESDIR}/instance_configs.cfg.distro.sample \
 		${STAGEDIR}${PREFIX}/etc/instance_configs.cfg.distro.sample
 	${INSTALL_DATA} ${FILESDIR}/90-google.conf.sample \
 		${STAGEDIR}${PREFIX}/etc/syslog.d/90-google.conf.sample
+	${INSTALL_DATA} ${FILESDIR}/google_set_hostname \
+		${STAGEDIR}/etc/dhclient-exit-hooks
 
 .include <bsd.port.mk>

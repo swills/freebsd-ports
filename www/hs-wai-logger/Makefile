@@ -1,8 +1,7 @@
-# $FreeBSD: head/www/hs-wai-logger/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/www/hs-wai-logger/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	wai-logger
-PORTVERSION=	2.3.0
-PORTREVISION=	1
+PORTVERSION=	2.3.2
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

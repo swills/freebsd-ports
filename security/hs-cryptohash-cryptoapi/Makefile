@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-cryptohash-cryptoapi/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/security/hs-cryptohash-cryptoapi/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	cryptohash-cryptoapi
 PORTVERSION=	0.1.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

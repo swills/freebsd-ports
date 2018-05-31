@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/hs-libxml-sax/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/textproc/hs-libxml-sax/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	libxml-sax
 PORTVERSION=	0.7.5
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -10,7 +10,7 @@ COMMENT=	Bindings for the libXML2 SAX interface
 
 LICENSE=	MIT
 
-USE_CABAL=	text>=0.7 xml-types>=0.3
+USE_CABAL=	xml-types>=0.3
 
 USES=		pkgconfig
 LIB_DEPENDS=	libxml2.so:textproc/libxml2

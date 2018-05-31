@@ -1,5 +1,5 @@
 # Created by: Willem Jan Withagen <wjw@digiware.nl>
-# $FreeBSD: head/net/ceph-devel/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/net/ceph-devel/Makefile 471033 2018-05-28 09:34:17Z amdmi3 $
 
 PORTNAME=	ceph
 DISTVERSION=	wip.v2017-08-15-1
@@ -8,7 +8,7 @@ CATEGORIES=	net
 PKGNAMESUFFIX=	-devel
 
 MAINTAINER=	wjw@digiware.nl
-COMMENT=Ceph delivers object, block, and file storage in a unified system
+COMMENT=	Ceph delivers object, block, and file storage in a unified system
 
 LICENSE=	GPLv2 LGPL3
 LICENSE_COMB=	dual

@@ -1,8 +1,9 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/sysutils/beats/Makefile 469572 2018-05-10 19:15:44Z feld $
+# $FreeBSD: head/sysutils/beats/Makefile 470949 2018-05-26 20:30:03Z girgen $
 
 PORTNAME=	beats
 PORTVERSION=	6.2.4
+PORTREVISION=	1
 DISTVERSIONPREFIX=v
 CATEGORIES=	sysutils
 

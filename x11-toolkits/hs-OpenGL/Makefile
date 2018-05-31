@@ -1,9 +1,8 @@
 # Created by: Volker Stolz <vs@FreeBSD.org>
-# $FreeBSD: head/x11-toolkits/hs-OpenGL/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/x11-toolkits/hs-OpenGL/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	OpenGL
-PORTVERSION=	3.0.2.0
-PORTREVISION=	1
+PORTVERSION=	3.0.2.1
 PORTEPOCH=	1
 CATEGORIES=	x11-toolkits haskell
 
@@ -12,8 +11,7 @@ COMMENT=	Binding for the OpenGL graphics system
 
 LICENSE=	BSD3CLAUSE
 
-USE_CABAL=	GLURaw>=1.3 ObjectName>=1.1 OpenGLRaw>=2.1 StateVar>=1.1 \
-		text>=0.1
+USE_CABAL=	GLURaw>=1.3 ObjectName>=1.1 OpenGLRaw>=2.1 StateVar>=1.1
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

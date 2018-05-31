@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libappindicator/Makefile 469084 2018-05-05 03:47:44Z swills $
+# $FreeBSD: head/devel/libappindicator/Makefile 470965 2018-05-27 08:17:58Z antoine $
 
 PORTNAME=	libappindicator
 PORTVERSION=	12.10.0
@@ -11,7 +11,7 @@ COMMENT=	KSNI App Indicator library
 LIB_DEPENDS=	libdbusmenu-gtk3.so:devel/libdbusmenu \
 		libindicator3.so:devel/libindicator
 
-USES=		gmake libtool pkgconfig python
+USES=		gmake libtool pkgconfig python:2.7
 USE_LDCONFIG=	yes
 USE_GNOME=	gtk30 pygtk2
 

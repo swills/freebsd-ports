@@ -1,8 +1,8 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/devel/lxqt-build-tools/Makefile 452989 2017-10-27 15:31:57Z swills $
+# $FreeBSD: head/devel/lxqt-build-tools/Makefile 471146 2018-05-30 18:17:12Z swills $
 
 PORTNAME=	lxqt-build-tools
-PORTVERSION=	0.4.0
+PORTVERSION=	0.5.0
 CATEGORIES=	devel
 MASTER_SITES=	LXQT/${PORTNAME}
 

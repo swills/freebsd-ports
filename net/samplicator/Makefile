@@ -1,10 +1,11 @@
-# $FreeBSD: head/net/samplicator/Makefile 428476 2016-12-13 10:44:01Z jhale $
+# $FreeBSD: head/net/samplicator/Makefile 470721 2018-05-23 21:31:42Z jkim $
 
 PORTNAME=	samplicator
 DISTVERSION=	1.3.8rc1
+PORTREVISION=	1
 CATEGORIES=	net
 
-MAINTAINER=	me@falz.net
+MAINTAINER=	ath@heybey.org
 COMMENT=	Receives UDP datagrams and redistributes them to a set of receivers
 
 LICENSE=	GPLv2

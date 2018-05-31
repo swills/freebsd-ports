@@ -1,5 +1,5 @@
 # Created by: cpm <cpm@fbsd.es>
-# $FreeBSD: head/net/malo-firmware-kmod/Makefile 416650 2016-06-10 01:49:53Z cpm $
+# $FreeBSD: head/net/malo-firmware-kmod/Makefile 470977 2018-05-27 09:53:45Z linimon $
 
 PORTNAME=	malo-firmware
 PORTVERSION=	${FWVERSION}
@@ -10,6 +10,9 @@ DISTNAME=	${FWNAME}
 
 MAINTAINER=	cpm@FreeBSD.org
 COMMENT=	Marvell Libertas 88W8335 IEEE 802.11b/g Firmware Kernel Module
+
+ONLY_FOR_ARCHS=		amd64 i386
+ONLY_FOR_ARCHS_REASON=	hardware particular to PCI
 
 FWNAME=		malo-fw-${FWVERSION}
 FWVERSION=	3.0.0.39

@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-hashtables/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-hashtables/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	hashtables
-PORTVERSION=	1.2.1.1
-PORTREVISION=	1
+PORTVERSION=	1.2.3.0
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

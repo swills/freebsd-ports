@@ -1,5 +1,5 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-octproj/Makefile 470478 2018-05-20 19:13:50Z stephen $
+# $FreeBSD: head/math/octave-forge-octproj/Makefile 470665 2018-05-22 23:22:38Z stephen $
 
 PORTNAME=	octave-forge-octproj
 PORTVERSION=	1.1.5
@@ -12,13 +12,15 @@ COMMENT=	Octave-forge package ${OCTAVE_PKGNAME}
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKDIR}/${OCTSRC}/COPYING
 
+LIB_DEPENDS+=	libproj.so:graphics/proj
+
 # OCTSRC is the name of the directory of the package.
 # It is usually ${OCTAVE_PKGNAME} or ${DISTNAME}.
 OCTSRC=		${DISTNAME}
 
 WRKSRC=		${WRKDIR}/${OCTSRC}/src
 
-LIB_DEPENDS+=	libproj.so:graphics/proj
+USES+=		compiler:gcc-c++11-lib
 
 .include "${.CURDIR}/../../Mk/bsd.octave.mk"
 

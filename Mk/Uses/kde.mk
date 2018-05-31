@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/kde.mk 470398 2018-05-19 11:08:09Z tcberner $
+# $FreeBSD: head/Mk/Uses/kde.mk 470884 2018-05-26 08:14:28Z tcberner $
 #
 # Provides support for KDE and KF5-based ports.
 #
@@ -124,14 +124,14 @@ PORTVERSION?=		${KDE4_VERSION}
 MASTER_SITES?=		KDE/${KDE4_BRANCH}/${KDE4_VERSION}/src
 DIST_SUBDIR?=		KDE/${KDE4_VERSION}
 PKGNAMESUFFIX=		-kde4
-CONFLICTS_INSTALL=	${PORTNAME:C/-kde4//}-4.*
+CONFLICTS_INSTALL=	${PORTNAME}
 .    elif  ${_KDE_CATEGORY:Mkde-applications}
 PORTVERSION?=		${KDE_APPLICATIONS_VERSION}
 .      if ${_KDE_VERSION:M4}
 CONFLICTS_INSTALL?=	${PORTNAME}-[0-9]*
 PKGNAMESUFFIX?=		-kde4
 .      else
-CONFLICTS_INSTALL?=	${PORTNAME}-kde4-[0-9]*
+CONFLICTS_INSTALL?=	${PORTNAME}-kde4
 .      endif
 # Decide where the file lies on KDE's servers: Check whether the file lies in Attic
 .      if ${KDE_APPLICATIONS_VERSION:R:R} <= ${_KDE_APPLICATIONS_ATTIC_VERSION:R:R}

@@ -1,9 +1,10 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/audio/clementine-player/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/audio/clementine-player/Makefile 470986 2018-05-27 15:05:37Z sbruno $
 
 PORTNAME=	clementine
-PORTVERSION=	1.3.1
-PORTREVISION=	21
+DISTVERSIONPREFIX=	v
+DISTVERSION=		1.3.1-441
+DISTVERSIONSUFFIX=	-gc01b7bc
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-player
 
@@ -36,7 +37,8 @@ USES=		cmake \
 		pkgconfig \
 		sqlite
 
-USE_GL=		glew
+USE_GL=		gl glew glu
+USE_XORG=	x11
 
 CONFLICTS_BUILD=	qt-3.*
 USE_QT4=	corelib \
@@ -170,7 +172,8 @@ GOOGLE_DRIVE_CMAKE_OFF=	-DENABLE_GOOGLE_DRIVE=OFF
 
 GPOD_LIB_DEPENDS=	libgpod.so:audio/libgpod \
 			libplist.so:devel/libplist \
-			libusbmuxd.so:comms/libusbmuxd
+			libusbmuxd.so:comms/libusbmuxd \
+			libimobiledevice.so:comms/libimobiledevice
 GPOD_CMAKE_ON=		-DENABLE_LIBGPOD=ON
 GPOD_CMAKE_OFF=		-DENABLE_LIBGPOD=OFF
 

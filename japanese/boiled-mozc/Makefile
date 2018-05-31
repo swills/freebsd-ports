@@ -1,9 +1,9 @@
-# $FreeBSD: head/japanese/boiled-mozc/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/japanese/boiled-mozc/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	boiled-mozc
 PORTVERSION=	0.7
 DISTVERSIONPREFIX=v
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	japanese editors elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 

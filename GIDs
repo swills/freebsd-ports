@@ -1,4 +1,4 @@
-# $FreeBSD: head/GIDs 470038 2018-05-15 17:23:53Z feld $
+# $FreeBSD: head/GIDs 470810 2018-05-24 20:49:47Z rodrigo $
 # Please keep this file sorted by GID!
 # Please pick an empty slot when available and also consider base values from
 # /usr/src/etc/group
@@ -164,7 +164,7 @@ bs:*:220:
 opensips:*:221:
 rtpproxy:*:222:
 mqttwarn:*:223:
-# free: 224
+payara:*:224:
 postgrey:*:225:
 sqlgrey:*:226:
 _hfm:*:227:

@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/hs-uri/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/textproc/hs-uri/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	uri
 PORTVERSION=	0.1.6.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -10,7 +10,7 @@ COMMENT=	Library for working with URIs
 
 LICENSE=	BSD3CLAUSE
 
-USE_CABAL=	parsec>=3.0 safe utf8-string
+USE_CABAL=	safe utf8-string
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

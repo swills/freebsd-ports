@@ -1,9 +1,9 @@
 # Created by: Samy Al Bahra <sbahra@kerneled.org>
-# $FreeBSD: head/ports-mgmt/hs-porte/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/ports-mgmt/hs-porte/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	porte
 PORTVERSION=	0.0.4
-PORTREVISION=	17
+PORTREVISION=	18
 CATEGORIES=	ports-mgmt haskell
 
 MAINTAINER=	sbahra@repnop.org

@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-toolkits/hs-GLURaw/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/x11-toolkits/hs-GLURaw/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	GLURaw
-PORTVERSION=	2.0.0.3
-PORTREVISION=	1
+PORTVERSION=	2.0.0.4
 CATEGORIES=	x11-toolkits haskell
 
 MAINTAINER=	haskell@FreeBSD.org

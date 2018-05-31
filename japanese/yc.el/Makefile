@@ -1,5 +1,5 @@
 # Created by: HONDA Yasuhiro <honda@kashio.info.mie-u.ac.jp>
-# $FreeBSD: head/japanese/yc.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/japanese/yc.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	yc.el
 PORTVERSION=	5.2.1
@@ -13,6 +13,11 @@ EXTRACT_SUFX=	.gz
 
 MAINTAINER=	t@nakao.org
 COMMENT=	Yet another Canna client for Emacs
+
+.if ${FLAVOR:U} != devel && ${FLAVOR:U} != devel_nox
+# http://pkg.awarnach.mathstat.dal.ca/data/11i386-default/2018-05-30_07h36m11s/logs/errors/ja-yc.el-emacs26-5.2.1_14,1.log
+BROKEN=		fails to build
+.endif
 
 EXTRACT_CMD=	${GZCAT}
 EXTRACT_BEFORE_ARGS=	#

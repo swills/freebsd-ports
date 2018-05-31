@@ -1,5 +1,5 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/math/hs-Agda/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/math/hs-Agda/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	Agda
 PORTVERSION=	2.5.2
@@ -11,8 +11,8 @@ COMMENT=	Dependently typed functional programming language and proof assistant
 
 USE_CABAL=	EdisonCore boxes data-hash edit-distance equivalence \
 		geniplate-mirror gitrev hashable hashtables ieee754 \
-		monadplus mtl murmur-hash parallel regex-tdfa strict \
-		text unordered-containers zlib
+		mtl murmur-hash parallel regex-tdfa strict \
+		unordered-containers zlib
 
 USE_ALEX=	yes
 USE_HAPPY=	yes
@@ -25,6 +25,8 @@ FLAGS_ENABLE=		cpphs
 
 SUB_FILES=	pkg-install pkg-deinstall
 SUB_LIST=	DATADIR=${DATADIR}
+
+IGNORE=		Doesn't build with recent GHC version
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

@@ -1,9 +1,9 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/audio/hs-ALUT/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/audio/hs-ALUT/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	ALUT
 PORTVERSION=	2.4.0.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio haskell
 
 MAINTAINER=	haskell@FreeBSD.org

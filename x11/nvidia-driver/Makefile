@@ -1,5 +1,5 @@
 # Created by: Stijn Hoop <stijn@win.tue.nl>
-# $FreeBSD: head/x11/nvidia-driver/Makefile 465942 2018-03-30 01:25:28Z danfe $
+# $FreeBSD: head/x11/nvidia-driver/Makefile 470972 2018-05-27 09:19:51Z danfe $
 #
 # For those wondering why this port is not under `x11-drivers' category,
 # have a look at https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=121930.
@@ -10,7 +10,7 @@
 # slave ports instead (`x11/nvidia-driver-340' or `x11/nvidia-driver-304').
 
 PORTNAME=	nvidia-driver
-DISTVERSION?=	390.48
+DISTVERSION?=	390.59
 # Always try to set PORTREVISION as it can be overridden by the slave ports
 PORTREVISION?=	0
 CATEGORIES=	x11

@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/hs-regex-compat-tdfa/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/textproc/hs-regex-compat-tdfa/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	regex-compat-tdfa
 PORTVERSION=	0.95.1.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,9 +1,9 @@
 # Created by: Satoshi Taoka <taoka@FreeBSD.org>
-# $FreeBSD: head/print/yatex/Makefile 469117 2018-05-05 14:47:12Z danfe $
+# $FreeBSD: head/print/yatex/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	yatex
 PORTVERSION=	1.77
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES?=	print elisp
 MASTER_SITES=	http://www.yatex.org/
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

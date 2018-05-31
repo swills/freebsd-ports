@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-clock/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-clock/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	clock
 PORTVERSION=	0.7.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

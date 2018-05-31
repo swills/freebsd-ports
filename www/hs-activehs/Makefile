@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/hs-activehs/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/www/hs-activehs/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	activehs
 PORTVERSION=	0.3.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -14,7 +14,7 @@ USE_CABAL=	activehs-base blaze-html blaze-markup cmdargs data-pprint \
 		dia-base dia-functions exceptions haskell-src-exts \
 		highlighting-kate hint hoogle mtl pandoc pureMD5 \
 		QuickCheck simple-reflect snap-core snap-server split syb \
-		text utf8-string
+		utf8-string
 
 STANDALONE=	yes
 EXECUTABLE=	activehs

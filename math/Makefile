@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 470531 2018-05-21 11:10:10Z yuri $
+# $FreeBSD: head/math/Makefile 471077 2018-05-29 03:25:25Z vanilla $
 #
 
     COMMENT = Mathematics
@@ -645,6 +645,7 @@
     SUBDIR += pure-rational
     SUBDIR += py-Diofant
     SUBDIR += py-GridDataFormats
+    SUBDIR += py-PyMetis
     SUBDIR += py-PySCIPOpt
     SUBDIR += py-PyWavelets
     SUBDIR += py-Pyomo
@@ -711,6 +712,7 @@
     SUBDIR += py-scientific
     SUBDIR += py-scikit-umfpack
     SUBDIR += py-seaborn
+    SUBDIR += py-secp256k1
     SUBDIR += py-statsmodels
     SUBDIR += py-svgmath
     SUBDIR += py-sym

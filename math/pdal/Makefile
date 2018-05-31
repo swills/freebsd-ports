@@ -1,9 +1,8 @@
 # Created by: bart <coder@tuxfamily.org>
-# $FreeBSD: head/math/pdal/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/math/pdal/Makefile 470656 2018-05-22 19:58:51Z swills $
 
 PORTNAME=	pdal
-DISTVERSION=	1.6
-PORTREVISION=	4
+DISTVERSION=	1.7.2
 CATEGORIES=	math databases graphics
 
 MAINTAINER=	lbartoletti@tuxfamily.org
@@ -30,7 +29,7 @@ GH_PROJECT=	${GH_ACCOUNT}
 # Unhide std::to_string() to fix build with GCC (see ports/193528 for details).
 CXXFLAGS+=	-D_GLIBCXX_USE_C99
 
-CMAKE_ARGS+=	-DWITH_LASZIP:BOOL=TRUE #Doesn't build without laszip. LASZIP is recommended
+CMAKE_ON=	WITH_LASZIP #LASZIP is recommended
 
 OPTIONS_DEFINE=	BASH \
 		ICEBRIDGE PGPOINTCLOUD SQLITE MBIO \

@@ -1,9 +1,9 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/devel/hs-bsd-sysctl/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-bsd-sysctl/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	bsd-sysctl
 PORTVERSION=	1.0.7
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

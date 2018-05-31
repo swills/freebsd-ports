@@ -1,9 +1,9 @@
 # Created by: Kimura Fuyuki <fuyuki@nigredo.org>
-# $FreeBSD: head/lang/quack/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/lang/quack/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	quack
 PORTVERSION=	0.47
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	lang scheme elisp
 MASTER_SITES=	http://www.neilvandyke.org/quack/
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

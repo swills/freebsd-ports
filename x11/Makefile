@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/Makefile 470463 2018-05-20 14:51:36Z pi $
+# $FreeBSD: head/x11/Makefile 471030 2018-05-28 08:57:44Z madpilot $
 #
 
     COMMENT = Ports to support the X window system
@@ -238,6 +238,7 @@
     SUBDIR += mate-session-manager
     SUBDIR += mate-terminal
     SUBDIR += menu-cache
+    SUBDIR += menulibre
     SUBDIR += metalock
     SUBDIR += metisse
     SUBDIR += mkcomposecache

@@ -1,12 +1,12 @@
-# $FreeBSD: head/comms/librs232/Makefile 458818 2018-01-12 11:21:07Z rene $
+# $FreeBSD: head/comms/librs232/Makefile 470827 2018-05-25 09:25:59Z lwhsu $
 
 PORTNAME=	librs232
-PORTVERSION=	20170805
+PORTVERSION=	20171122
 CATEGORIES=	comms
 DISTNAME=	RS-232
 MASTER_SITES=	http://www.teuniz.net/RS-232/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	kevlo@FreeBSD.org
 COMMENT=	Simple serial library
 
 LICENSE=	GPLv3

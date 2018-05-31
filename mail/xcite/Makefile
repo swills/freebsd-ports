@@ -1,9 +1,9 @@
 # Created by: Hajimu UMEMOTO <ume@FreeBSD.org>
-# $FreeBSD: head/mail/xcite/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/mail/xcite/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	xcite
 PORTVERSION=	1.60
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	mail elisp
 MASTER_SITES=	http://www.gentei.org/~yuuji/software/
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

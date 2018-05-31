@@ -1,8 +1,7 @@
-# $FreeBSD: head/www/hs-yesod-persistent/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/www/hs-yesod-persistent/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	yesod-persistent
-PORTVERSION=	1.4.2
-PORTREVISION=	1
+PORTVERSION=	1.6.0
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

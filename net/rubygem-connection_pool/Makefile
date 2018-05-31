@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/rubygem-connection_pool/Makefile 427699 2016-12-03 19:33:58Z sunpoet $
+# $FreeBSD: head/net/rubygem-connection_pool/Makefile 470934 2018-05-26 17:49:39Z sunpoet $
 
 PORTNAME=	connection_pool
-PORTVERSION=	2.2.1
+PORTVERSION=	2.2.2
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
