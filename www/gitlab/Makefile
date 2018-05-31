@@ -28,7 +28,7 @@ BUILD_DEPENDS=	gem:devel/ruby-gems
 RUN_DEPENDS=	git>=2.16.2:devel/git \
 	gitlab-shell>=7.1.2:devel/gitlab-shell \
 	gitlab-workhorse>=4.1.0:www/gitlab-workhorse \
-	gitaly>=0.96.1:devel/gitaly \
+	gitaly>=0.100.0:devel/gitaly \
 	redis>=2.8.23:databases/redis \
 	npm>=4.3.0:www/npm \
 	yarn>=0.17.0:www/yarn \
@@ -94,7 +94,7 @@ RUN_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-seed-fu>=2.3.7:databases/rubygem-seed-fu \
 	rubygem-html-pipeline27>=2.7.1:textproc/rubygem-html-pipeline27 \
 	rubygem-deckar01-task_list>=2.0.0:www/rubygem-deckar01-task_list \
-	rubygem-gitlab-markup>=1.6.2:textproc/rubygem-gitlab-markup \
+	rubygem-gitlab-markup16>=1.6.2:textproc/rubygem-gitlab-markup16 \
 	rubygem-redcarpet>=3.4:textproc/rubygem-redcarpet \
 	rubygem-commonmarker>=0.17:textproc/rubygem-commonmarker \
 	rubygem-redcloth>=4.3.2:www/rubygem-redcloth \

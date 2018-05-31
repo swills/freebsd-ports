@@ -1,8 +1,7 @@
 # $FreeBSD: head/devel/gitaly/Makefile 470242 2018-05-17 18:30:50Z sunpoet $
 
 PORTNAME=	gitaly
-DISTVERSION=	0.96.1
-PORTREVISION=	2
+DISTVERSION=	0.100.0
 CATEGORIES=	devel
 
 MAINTAINER=	mfechner@FreeBSD.org
@@ -17,10 +16,10 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 		rubygem-github-linguist53>=5.3.3:textproc/rubygem-github-linguist53 \
 		rubygem-bundler>0:sysutils/rubygem-bundler \
 		rubygem-gitlab-markup>=1.6.2:textproc/rubygem-gitlab-markup \
-		rubygem-gitaly-proto095>=0.95.0:net/rubygem-gitaly-proto095 \
+		rubygem-gitaly-proto>=0.99.0:net/rubygem-gitaly-proto \
 		rubygem-activesupport50>=5.0.2:devel/rubygem-activesupport50 \
 		rubygem-rdoc>=4.2:devel/rubygem-rdoc \
-		rubygem-gollum-lib-gitlab>=4.2:www/rubygem-gollum-lib-gitlab \
+		rubygem-gitlab-gollum-lib-gitlab>=4.2:www/rubygem-gollum-lib-gitlab \
 		rubygem-gollum-rugged_adapter>=0.4.4:www/rubygem-gollum-rugged_adapter \
 		rubygem-grpc>=1.10.0:net/rubygem-grpc \
 		rubygem-sentry-raven>=2.7.2:devel/rubygem-sentry-raven \

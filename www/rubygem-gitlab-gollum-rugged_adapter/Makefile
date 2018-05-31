@@ -1,12 +1,11 @@
-# Created by: Torsten Zuehlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/www/rubygem-gollum-rugged_adapter/Makefile 441105 2017-05-17 17:16:31Z sunpoet $
+# $FreeBSD$
 
-PORTNAME=	gollum-rugged_adapter
+PORTNAME=	gitlab-gollum-rugged_adapter
 PORTVERSION=	0.4.4
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Adapter for Gollum to use Rugged (libgit2) at the backend
 
 LICENSE=	MIT
@@ -16,7 +15,7 @@ RUN_DEPENDS=	rubygem-mime-types>=1.15:misc/rubygem-mime-types \
 		rubygem-rugged>=0.25:devel/rubygem-rugged
 
 NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
 
 .include <bsd.port.mk>
