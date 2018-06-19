@@ -1,5 +1,5 @@
 # Created by: Zane C, Bowers <vvelox@vvelox.net>
-# $FreeBSD: head/deskutils/p5-ZConf-Runner/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/deskutils/p5-ZConf-Runner/Makefile 472386 2018-06-14 17:13:01Z tobik $
 
 PORTNAME=	ZConf-Runner
 PORTVERSION=	2.1.4
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	vvelox@vvelox.net
 COMMENT=	Run a file using a chosen method, desktop entry, or mimetype
+
+DEPRECATED=	Unmaintained
+EXPIRATION_DATE=	2018-07-15
 
 BUILD_DEPENDS=	p5-ZConf>=6.1.0:net/p5-ZConf \
 		p5-File-MimeInfo>=0.16:devel/p5-File-MimeInfo \

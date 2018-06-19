@@ -1,8 +1,7 @@
-# $FreeBSD: head/audio/py-pysndfile/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/audio/py-pysndfile/Makefile 472166 2018-06-11 05:30:31Z yuri $
 
 PORTNAME=	pysndfile
-DISTVERSION=	1.1.0
-PORTREVISION=	1
+DISTVERSION=	1.1.1
 CATEGORIES=	audio python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,8 +17,5 @@ RUN_DEPENDS=	${PYNUMPY}
 
 USES=		python localbase
 USE_PYTHON=	distutils autoplist cython
-
-post-install:
-	${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/pysndfile/_pysndfile.so
 
 .include <bsd.port.mk>

@@ -1,9 +1,9 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/sysutils/puppet-mode.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/sysutils/puppet-mode.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	puppet-mode.el
 PORTVERSION=	0.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	sysutils elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 

@@ -1,8 +1,8 @@
-# $FreeBSD: head/databases/py-pglite/Makefile 465408 2018-03-23 20:48:16Z yuri $
+# $FreeBSD: head/databases/py-pglite/Makefile 471261 2018-06-01 14:22:06Z tcberner $
 
 PORTNAME=	pglite
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.0.7
+DISTVERSION=	1.0.9
 CATEGORIES=	databases python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -17,5 +17,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	Oslandia
 NO_ARCH=	yes
 WANT_PGSQL=	server
+
+post-extract:
+	@${REINPLACE_CMD} -e 's|python|${PYTHON_CMD}|g' ${WRKSRC}/script/pglite
 
 .include <bsd.port.mk>

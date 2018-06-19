@@ -1,5 +1,5 @@
 # Created by: Zane C, Bowers <vvelox@vvelox.net>
-# $FreeBSD: head/astro/p5-ZConf-Weather/Makefile 451694 2017-10-10 11:21:12Z sunpoet $
+# $FreeBSD: head/astro/p5-ZConf-Weather/Makefile 472386 2018-06-14 17:13:01Z tobik $
 
 PORTNAME=	ZConf-Weather
 PORTVERSION=	1.0.0
@@ -14,6 +14,9 @@ COMMENT=	ZConf module to assist with fetching/printing weather information
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+
+DEPRECATED=	Unmaintained
+EXPIRATION_DATE=	2018-07-15
 
 BUILD_DEPENDS=	p5-ZConf>=6.1.0:net/p5-ZConf \
 		p5-Text-NeatTemplate>=0.10.01:textproc/p5-Text-NeatTemplate \

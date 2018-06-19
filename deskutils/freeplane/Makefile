@@ -1,8 +1,8 @@
 # Created by: Loïc Bartoletti <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/deskutils/freeplane/Makefile 464649 2018-03-16 05:24:14Z yuri $
+# $FreeBSD: head/deskutils/freeplane/Makefile 471297 2018-06-01 22:02:21Z swills $
 
 PORTNAME=	freeplane
-DISTVERSION=	1.6.14
+DISTVERSION=	1.6.15
 CATEGORIES=	deskutils editors java
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20stable
 DISTNAME=	${PORTNAME}_bin-${PORTVERSION}

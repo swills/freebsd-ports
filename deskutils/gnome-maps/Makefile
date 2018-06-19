@@ -1,8 +1,9 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/deskutils/gnome-maps/Makefile 442059 2017-05-30 11:20:53Z kwm $
+# $FreeBSD: head/deskutils/gnome-maps/Makefile 470791 2018-05-24 16:55:59Z swills $
 
 PORTNAME=	gnome-maps
 PORTVERSION=	3.24.3
+PORTREVISION=	1
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome3
@@ -14,16 +15,18 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	geoclue>=0:net/geoclue
-LIB_DEPENDS=	libgeocode-glib.so:net/geocode-glib \
-		libgee-0.8.so:devel/libgee \
-		libcogl.so:graphics/cogl \
+LIB_DEPENDS=	libchamplain-0.12.so:graphics/libchamplain \
 		libclutter-1.0.so:graphics/clutter \
-		libchamplain-0.12.so:graphics/libchamplain \
-		libsoup-2.4.so:devel/libsoup \
-		librest-0.7.so:devel/librest \
-		libjson-glib-1.0.so:devel/json-glib \
+		libcogl.so:graphics/cogl \
 		libfolks.so:net-im/folks \
-		libgjs.so:lang/gjs
+		libgee-0.8.so:devel/libgee \
+		libgeocode-glib.so:net/geocode-glib \
+		libgfbgraph-0.2.so:net/gfbgraph \
+		libgjs.so:lang/gjs \
+		libgoa-1.0.so:net/gnome-online-accounts \
+		libjson-glib-1.0.so:devel/json-glib \
+		librest-0.7.so:devel/librest \
+		libsoup-2.4.so:devel/libsoup
 RUN_DEPENDS=	geoclue>=0:net/geoclue
 
 PORTSCOUT=	limitw:1,even

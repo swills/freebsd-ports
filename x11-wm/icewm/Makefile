@@ -1,21 +1,25 @@
 # Created by: Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
-# $FreeBSD: head/x11-wm/icewm/Makefile 463487 2018-03-03 15:37:03Z riggs $
+# $FreeBSD: head/x11-wm/icewm/Makefile 472514 2018-06-16 02:49:07Z tobik $
 
 PORTNAME=	icewm
 PORTVERSION=	1.3.8
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-wm
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION:R}/${PORTVERSION}
 
 MAINTAINER=	portmaster@bsdforge.com
 COMMENT=	Window Manager designed for speed, usability and consistency
 
-LICENSE=	GPLv2
+LICENSE=	LGPL20
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
+		libfreetype.so:print/freetype2
+
 USES=		gmake iconv:translit localbase pkgconfig
-USE_XORG=	ice sm x11 xext
+USE_CXXSTD=	c++98
 USE_GNOME=	gdkpixbuf2
+USE_XORG=	ice sm x11 xext xrender
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-guievents \
 		--with-cfgdir=${DATADIR} \

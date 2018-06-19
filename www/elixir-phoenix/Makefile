@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/elixir-phoenix/Makefile 463961 2018-03-09 14:16:45Z olgeni $
+# $FreeBSD: head/www/elixir-phoenix/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	phoenix
 PORTVERSION=	1.3.2
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Web framework for Elixir
 
 LICENSE=	MIT

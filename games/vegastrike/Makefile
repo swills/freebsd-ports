@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/games/vegastrike/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/games/vegastrike/Makefile 470946 2018-05-26 19:29:58Z antoine $
 
 PORTNAME=	vegastrike
 PORTVERSION=	0.5.1.r1
@@ -20,7 +20,7 @@ LIB_DEPENDS=	${PY_BOOST} \
 		libvorbis.so:audio/libvorbis \
 		libogg.so:audio/libogg
 
-USES=		dos2unix gmake localbase:ldflags openal:al pkgconfig python \
+USES=		dos2unix gmake localbase:ldflags openal:al pkgconfig python:2.7 \
 		tar:bzip2
 GNU_CONFIGURE=	yes
 USE_SDL=	sdl

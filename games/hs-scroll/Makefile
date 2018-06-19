@@ -1,9 +1,8 @@
 # Created by: Nikolai Lifanov <lifanov@mail.lifanov.com>
-# $FreeBSD: head/games/hs-scroll/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/games/hs-scroll/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	scroll
-PORTVERSION=	1.20170122
-PORTREVISION=	1
+PORTVERSION=	1.20180421
 CATEGORIES=	games haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -14,7 +13,7 @@ LICENSE=	GPLv2
 PKGNAMEPREFIX=
 
 USE_CABAL=	IfElse case-insensitive data-default monad-loops mtl \
-		optparse-applicative ncurses random text vector
+		optparse-applicative ncurses random vector
 
 STANDALONE=	yes
 EXECUTABLE=	scroll

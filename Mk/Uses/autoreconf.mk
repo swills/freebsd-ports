@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/autoreconf.mk 459824 2018-01-24 09:41:04Z ak $
+# $FreeBSD: head/Mk/Uses/autoreconf.mk 472376 2018-06-14 12:47:58Z tijl $
 #
 # Run autoreconf in AUTORECONF_WRKSRC to update configure, Makefile.in and
 # other build scripts.
@@ -54,11 +54,8 @@
 _INCLUDE_USES_AUTORECONF_MK=	yes
 _USES_POST+=	autoreconf
 
-BUILD_DEPENDS+=	autoconf-2.69:devel/autoconf \
-		autoheader-2.69:devel/autoconf \
-		autoreconf-2.69:devel/autoconf \
-		aclocal-1.15:devel/automake \
-		automake-1.15:devel/automake
+BUILD_DEPENDS+=	autoconf>=2.69:devel/autoconf \
+		automake>=1.16.1:devel/automake
 
 .if defined(libtool_ARGS) && empty(libtool_ARGS:Mbuild)
 BUILD_DEPENDS+=	libtoolize:devel/libtool

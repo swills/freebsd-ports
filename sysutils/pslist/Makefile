@@ -1,8 +1,8 @@
 # Created by: roam@orbitel.bg
-# $FreeBSD: head/sysutils/pslist/Makefile 464822 2018-03-17 14:43:34Z dbaio $
+# $FreeBSD: head/sysutils/pslist/Makefile 470942 2018-05-26 18:22:06Z dbaio $
 
 PORTNAME=	pslist
-PORTVERSION=	1.3.1
+PORTVERSION=	1.4.0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://devel.ringlet.net/files/sys/pslist/
 

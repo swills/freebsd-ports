@@ -1,5 +1,5 @@
 # Created by: ajk@iu.edu
-# $FreeBSD: head/security/cracklib/Makefile 470609 2018-05-22 13:14:43Z mat $
+# $FreeBSD: head/security/cracklib/Makefile 472377 2018-06-14 13:05:43Z amdmi3 $
 
 PORTNAME=	cracklib
 PORTVERSION=	2.9.6
@@ -28,7 +28,7 @@ USES=		gettext libtool
 USE_LDCONFIG=	yes
 
 .if defined(PYTHON_SLAVEPORT)
-USES+=		python:2.7
+USES+=		python:2.7 localbase
 USE_PYTHON=	flavors
 CONFIGURE_ARGS+=--with-python
 PLIST_FILES=	%%PYTHON_SITELIBDIR%%/_cracklib.a \
@@ -101,10 +101,10 @@ PLIST_FILES=	include/crack.h \
 pre-build:
 	cd ${WRKSRC}/lib && ${MAKE_CMD} libcrack.la
 
-regression-test: extract
-	@(cd ${BUILD_WKRSRC}; \
-	${PYTHON_CMD} -c \
-	"from test_${PORTNAME} import run; run(use_dictpath=\"${DICTFILE}\")")
+do-test:
+	@(cd ${BUILD_WKRSRC} && ${SETENV} PYTHONPATH=${STAGEDIR}${PYTHONPREFIX_SITELIBDIR} \
+		${PYTHON_CMD} -c \
+		"from test_${PORTNAME} import run; run(use_dictpath=\"${DICTFILE:S|^${PREFIX}/|${LOCALBASE}/|}\")")
 .else
 post-install:
 	${INSTALL_MAN} ${FILESDIR}/${PORTNAME}.3 ${STAGEDIR}${MAN3PREFIX}/man/man3/

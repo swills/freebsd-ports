@@ -1,0 +1,20 @@
+# $FreeBSD: head/science/py-PyQuante/Makefile 472748 2018-06-19 02:14:17Z yuri $
+
+PORTNAME=	PyQuante
+DISTVERSION=	1.6.5
+CATEGORIES=	science python
+MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME}-${DISTVERSION:R}/${PORTNAME}-${DISTVERSION}/
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+
+MAINTAINER=	yuri@FreeBSD.org
+COMMENT=	Quantum chemistry in Python
+
+LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+RUN_DEPENDS=	${PYNUMPY}
+
+USES=		python:2.7
+USE_PYTHON=	distutils autoplist
+
+.include <bsd.port.mk>

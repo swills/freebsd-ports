@@ -1,5 +1,5 @@
 # Created by: Gabor Kovesdan <gabor@FreeBSD.org>
-# $FreeBSD: head/textproc/bsddiff/Makefile 397951 2015-09-26 09:21:18Z bapt $
+# $FreeBSD: head/textproc/bsddiff/Makefile 472207 2018-06-11 20:56:24Z feld $
 
 PORTNAME=	diff
 PORTVERSION=	20120705
@@ -8,7 +8,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	LOCAL/gabor
 PKGNAMEPREFIX=	bsd-
 
-MAINTAINER=	gabor@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	BSD-licensed version of diff from OpenBSD
 
 USES=		uidfix

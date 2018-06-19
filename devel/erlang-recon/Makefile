@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/erlang-recon/Makefile 468262 2018-04-25 08:29:36Z olgeni $
+# $FreeBSD: head/devel/erlang-recon/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	recon
 PORTVERSION=	2.3.5
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Collection of functions and scripts to debug Erlang in production
 
 LICENSE=	BSD3CLAUSE

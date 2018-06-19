@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/erlang-pooler/Makefile 413868 2016-04-23 12:53:08Z olgeni $
+# $FreeBSD: head/devel/erlang-pooler/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	pooler
 PORTVERSION=	1.5.2
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	OTP process pool application
 
 LICENSE=	APACHE20

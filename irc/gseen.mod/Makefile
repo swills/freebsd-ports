@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine (<tux@pinguru.net>)
-# $FreeBSD: head/irc/gseen.mod/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/irc/gseen.mod/Makefile 471137 2018-05-30 16:58:38Z emaste $
 
 PORTNAME=	gseen.mod
 PORTVERSION=	1.1.1.p3
@@ -22,6 +22,7 @@ GNU_CONGFIGURE=	yes
 CONFIGURE_ARGS=	--with-tcllib=${LOCALBASE}/lib/libtcl${TCL_VER:S/.//}.so \
 		--with-tclinc=${TCL_INCLUDEDIR}/tcl.h
 WRKSRC=		${WRKDIR}/eggdrop
+LLD_UNSAFE=	yes
 MAKE_JOBS_UNSAFE=	yes
 
 SUB_FILES=	pkg-message

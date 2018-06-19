@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/pjsip-extsrtp/Makefile 385557 2015-05-06 20:10:09Z madpilot $
+# $FreeBSD: head/net/pjsip-extsrtp/Makefile 472194 2018-06-11 17:19:29Z madpilot $
 
 PKGNAMESUFFIX=	-extsrtp
 
-CONFLICTS=	pjsip-[0-9]*
+CONFLICTS=	pjsip
 
 OPTIONS_SLAVE=	EXTSRTP
 MASTERDIR=	${.CURDIR}/../pjsip

@@ -1,4 +1,4 @@
-# $FreeBSD: head/base/gcc/Makefile 470018 2018-05-15 14:07:26Z kan $
+# $FreeBSD: head/base/gcc/Makefile 472012 2018-06-08 16:06:49Z jhb $
 
 PORTNAME=	gcc
 PORTVERSION=	6.4.0
@@ -31,8 +31,7 @@ LICENSE_COMB=	multi
 GCC_TARGET=	${ARCH}-unknown-${OPSYS:tl}${OSREL}
 
 PREFIX=		/usr
-CONFIGURE_ENV=	gcc_gxx_include_dir="/usr/include/c++/v1" \
-		NM=/usr/bin/nm \
+CONFIGURE_ENV=	NM=/usr/bin/nm \
 		AS_FOR_TARGET=/usr/bin/as \
 		LD_FOR_TARGET=/usr/bin/ld \
 		NM_FOR_TARGET=/usr/bin/nm

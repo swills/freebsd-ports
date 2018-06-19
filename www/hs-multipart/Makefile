@@ -1,16 +1,14 @@
-# $FreeBSD: head/www/hs-multipart/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/www/hs-multipart/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	multipart
 PORTVERSION=	0.1.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	HTTP multipart split out of the cgi package
 
 LICENSE=	BSD3CLAUSE
-
-USE_CABAL=	parsec>=2.0
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

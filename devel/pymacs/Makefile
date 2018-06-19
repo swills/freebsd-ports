@@ -1,10 +1,10 @@
 # Created by: mwm@mired.org
-# $FreeBSD: head/devel/pymacs/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/devel/pymacs/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	Pymacs
 PORTVERSION=	0.25
 DISTVERSIONPREFIX=	v
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel editors python elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 

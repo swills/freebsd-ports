@@ -1,6 +1,6 @@
 # BSD Makefile for librs232
 #
-# $FreeBSD: head/comms/librs232/files/Makefile 373861 2014-12-04 06:49:58Z kevlo $
+# $FreeBSD: head/comms/librs232/files/Makefile 470827 2018-05-25 09:25:59Z lwhsu $
 #
 
 SRCS=	rs232.c
@@ -13,6 +13,5 @@ INCSDIR=${PREFIX}/include
 LIB=	rs232
 SHLIB_MAJOR=	1
 LIBDIR=	${PREFIX}/lib
-NO_PROFILE=	YES
 
 .include <bsd.lib.mk>

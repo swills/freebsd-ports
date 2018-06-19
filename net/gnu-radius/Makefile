@@ -1,9 +1,9 @@
 # Created by: lance@evitel.net
-# $FreeBSD: head/net/gnu-radius/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/net/gnu-radius/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	gnu-radius
 PORTVERSION=	1.6.1
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	net
 MASTER_SITES=	GNU/radius
 DISTNAME=	radius-${PORTVERSION}

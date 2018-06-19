@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/setxkbmap/Makefile 399844 2015-10-20 13:49:18Z kwm $
+# $FreeBSD: head/x11/setxkbmap/Makefile 471759 2018-06-05 13:38:19Z amdmi3 $
 
 PORTNAME=	setxkbmap
 PORTVERSION=	1.3.1
@@ -6,6 +6,9 @@ CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	Set the keyboard using the X Keyboard Extension
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 XORG_CAT=	app
 USE_XORG=	xkbfile x11

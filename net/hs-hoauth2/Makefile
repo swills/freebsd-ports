@@ -1,8 +1,7 @@
-# $FreeBSD: head/net/hs-hoauth2/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/net/hs-hoauth2/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	hoauth2
-PORTVERSION=	0.5.9
-PORTREVISION=	1
+PORTVERSION=	1.7.1
 CATEGORIES=	net haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -10,8 +9,8 @@ COMMENT=	Haskell OAuth2 authentication
 
 LICENSE=	BSD3CLAUSE
 
-USE_CABAL=	aeson http-conduit http-types text unordered-containers \
-		wai warp
+USE_CABAL=	aeson http-conduit http-types microlens unordered-containers \
+		uri-bytestring uri-bytestring-aeson wai warp
 
 FLAGS_DISABLE=	test
 

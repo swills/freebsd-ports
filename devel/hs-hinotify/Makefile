@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-hinotify/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-hinotify/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	hinotify
-PORTVERSION=	0.3.9
+PORTVERSION=	0.3.10
 PORTREVISION=	1
 CATEGORIES=	devel haskell
 
@@ -12,7 +12,7 @@ LICENSE=	BSD3CLAUSE
 
 LIB_DEPENDS=	libinotify.so:devel/libinotify
 
-USE_CABAL=	async
+USE_CABAL=	async hashable
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

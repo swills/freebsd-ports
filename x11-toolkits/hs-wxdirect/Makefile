@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-toolkits/hs-wxdirect/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/x11-toolkits/hs-wxdirect/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	wxdirect
 PORTVERSION=	0.92.3.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-toolkits haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -11,7 +11,7 @@ COMMENT=	Helper tool for building wxHaskell
 LICENSE=	BSD3CLAUSE
 
 USES=		dos2unix
-USE_CABAL=	parsec>=2.1.0 strict
+USE_CABAL=	strict
 
 EXECUTABLE=	wxdirect
 

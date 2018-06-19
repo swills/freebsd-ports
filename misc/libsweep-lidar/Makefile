@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/libsweep-lidar/Makefile 464468 2018-03-14 08:05:52Z yuri $
+# $FreeBSD: head/misc/libsweep-lidar/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=		libsweep-lidar
 DISTVERSIONPREFIX=	v
@@ -10,6 +10,8 @@ COMMENT=		Low-level Scanse Sweep LiDAR library
 
 LICENSE=		MIT
 LICENSE_FILE=		${WRKSRC}/LICENSE
+
+BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Weverything"
 
 USES=			cmake:outsource
 USE_GITHUB=		yes

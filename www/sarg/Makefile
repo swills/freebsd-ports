@@ -1,9 +1,8 @@
 # Created by: mt@primats.org.ua
-# $FreeBSD: head/www/sarg/Makefile 421383 2016-09-05 17:27:11Z garga $
+# $FreeBSD: head/www/sarg/Makefile 472089 2018-06-09 21:03:12Z garga $
 
 PORTNAME=	sarg
-PORTVERSION=	2.3.10
-PORTREVISION=	2
+PORTVERSION=	2.3.11
 CATEGORIES=	www
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 

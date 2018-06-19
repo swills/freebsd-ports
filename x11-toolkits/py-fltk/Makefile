@@ -1,5 +1,5 @@
 # Created by: Radim Kolar
-# $FreeBSD: head/x11-toolkits/py-fltk/Makefile 447422 2017-08-05 23:11:17Z sunpoet $
+# $FreeBSD: head/x11-toolkits/py-fltk/Makefile 472699 2018-06-18 14:40:31Z linimon $
 
 PORTNAME=	fltk
 PORTVERSION=	1.3.4.1
@@ -14,13 +14,15 @@ COMMENT=	Python interface to FLTK window toolkit
 LICENSE=	LGPL20
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+BROKEN_powerpc64=	fails to compile: fltk_wrap.cpp:5355: #pragma GCC diagnostic not allowed inside functions
+
 LIB_DEPENDS=	libfltk.so:x11-toolkits/fltk
 
 CFLAGS+=	-DFL_LIBRARY
 MAKE_ENV=	FLTK_HOME=${LOCALBASE}/bin
+USES=		python
 USE_PYTHON=	autoplist distutils
 USE_XORG=	x11
-USES=		python
 
 DOCSDIR=	${PREFIX}/share/doc/py-${PORTNAME}
 EXAMPLESDIR=	${PREFIX}/share/examples/py-${PORTNAME}

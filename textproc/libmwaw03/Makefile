@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/libmwaw03/Makefile 468246 2018-04-24 21:38:33Z jkim $
+# $FreeBSD: head/textproc/libmwaw03/Makefile 472699 2018-06-18 14:40:31Z linimon $
 
 PORTNAME=	libmwaw
 PORTVERSION=	0.3.14
@@ -11,6 +11,8 @@ COMMENT=	Import library for some old mac text documents
 
 LICENSE=	LGPL21+ MPL20
 LICENSE_COMB=	dual
+
+BROKEN_powerpc64=	fails to compile: MWAWCell.cxx:644: #pragma GCC diagnostic not allowed inside functions
 
 LIB_DEPENDS=	librevenge-0.0.so:textproc/librevenge
 

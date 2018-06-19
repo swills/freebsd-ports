@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/elixir-comeonin/Makefile 445872 2017-07-15 13:04:34Z olgeni $
+# $FreeBSD: head/security/elixir-comeonin/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	comeonin
 PORTVERSION=	3.2
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Password hashing library for Elixir
 
 LICENSE=	BSD3CLAUSE BSD4CLAUSE

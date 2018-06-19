@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/gwenview/Makefile 466806 2018-04-08 17:01:54Z tcberner $
+# $FreeBSD: head/graphics/gwenview/Makefile 471491 2018-06-03 12:44:04Z antoine $
 
 PORTNAME=	gwenview
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -11,7 +11,7 @@ BUILD_DEPENDS=	${LOCALBASE}/share/xsl/docbook/html/docbook.xsl:textproc/docbook-
 		docbook-xml>0:textproc/docbook-xml
 LIB_DEPENDS=	libexiv2.so:graphics/exiv2 \
 		liblcms2.so:graphics/lcms2 \
-		libpng16.so:graphics/png
+		libpng.so:graphics/png
 
 USES=		cmake:outsource gettext jpeg pkgconfig kde:5 tar:xz
 USE_KDE=	activities auth baloo bookmarks codecs completion config \

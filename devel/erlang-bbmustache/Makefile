@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-bbmustache/Makefile 424673 2016-10-26 05:34:42Z olgeni $
+# $FreeBSD: head/devel/erlang-bbmustache/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	bbmustache
 PORTVERSION=	1.3.1
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Mustache template engine for Erlang
 
 LICENSE=	MIT

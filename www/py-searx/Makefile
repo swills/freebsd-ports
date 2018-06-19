@@ -1,5 +1,5 @@
 # Created by: Loic Blot <loic.blot@unix-experience.fr>
-# $FreeBSD: head/www/py-searx/Makefile 463944 2018-03-09 08:34:57Z yuri $
+# $FreeBSD: head/www/py-searx/Makefile 470822 2018-05-25 07:20:04Z antoine $
 
 PORTNAME=	searx
 DISTVERSION=	0.14.0
@@ -25,8 +25,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}certifi>0:security/py-certifi@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}werkzeug>0:www/py-werkzeug@${PY_FLAVOR}
 
-USES=		python
-USE_PYTHON=	distutils autoplist noflavors
+USES=		python:2.7
+USE_PYTHON=	distutils autoplist
 NO_ARCH=	yes
 USE_RC_SUBR=	searx
 

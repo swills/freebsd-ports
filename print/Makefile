@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/Makefile 466875 2018-04-09 18:23:16Z tcberner $
+# $FreeBSD: head/print/Makefile 471383 2018-06-02 17:35:00Z miwi $
 #
 
     COMMENT = Desktop publishing
@@ -197,6 +197,7 @@
     SUBDIR += py-pdf2
     SUBDIR += py-pollyreports
     SUBDIR += py-preppy
+    SUBDIR += py-psautohint
     SUBDIR += py-pycups
     SUBDIR += py-pyscript
     SUBDIR += py-python-ly

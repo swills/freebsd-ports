@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-backports.csv/Makefile 445675 2017-07-13 18:06:28Z sunpoet $
+# $FreeBSD: head/devel/py-backports.csv/Makefile 470731 2018-05-23 23:23:59Z sunpoet $
 
 PORTNAME=	backports.csv
-PORTVERSION=	1.0.5
+PORTVERSION=	1.0.6
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

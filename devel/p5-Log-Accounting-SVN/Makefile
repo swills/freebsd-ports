@@ -1,5 +1,5 @@
 # Created by: Yuan-Chung Hsiao & <ychsiao@ychsiao.org>
-# $FreeBSD: head/devel/p5-Log-Accounting-SVN/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Log-Accounting-SVN/Makefile 471606 2018-06-04 18:04:13Z sunpoet $
 
 PORTNAME=	Log-Accounting-SVN
 PORTVERSION=	0.01
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ychsiao@ychsiao.org
 COMMENT=	Perl module for accounting SVN repository
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-subversion>=0:devel/p5-subversion \
 		p5-SVN-Log>=0:devel/p5-SVN-Log \

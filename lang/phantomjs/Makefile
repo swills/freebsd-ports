@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/phantomjs/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/lang/phantomjs/Makefile 472754 2018-06-19 03:40:38Z loader $
 
 PORTNAME=	phantomjs
 PORTVERSION=	2.1.1
@@ -12,8 +12,6 @@ LICENSE=	BSD3CLAUSE
 
 BROKEN_powerpc64=	fails to build: g++48: not found
 BROKEN_sparc64=		does not link on sparc64
-NOT_FOR_ARCHS=		armv6 armv7
-NOT_FOR_ARCHS_REASON=	Platform.h: Not supported ARM architecture
 BROKEN_SSL=	openssl-devel
 BROKEN_SSL_REASON_openssl-devel=	error: member access into incomplete type 'X509' (aka 'x509_st')
 
@@ -52,7 +50,7 @@ post-extract:
 	${MKDIR} ${WRKSRC}/src/qt/qtwebkit/.git
 	${RM} ${WRKSRC}/src/qt/qtwebkit/Source/WebCore/DerivedSources.cpp
 
-_ENV=	CC=${CC} CXX=${CXX} GMAKE=${GMAKE} OSTYPE=freebsd MAKEFLAGS=
+_ENV=	CC=${CC} CXX=${CXX} GMAKE=${GMAKE} OSTYPE=freebsd MAKEFLAGS= LOCALBASE=${LOCALBASE}
 _BLD=	${PYTHON_CMD} build.py --jobs ${MAKE_JOBS_NUMBER} --confirm
 do-build:
 .if defined(_PHANTOMJS_USE_QT_SYSTEM)

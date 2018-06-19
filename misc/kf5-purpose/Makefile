@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/kf5-purpose/Makefile 468380 2018-04-26 19:54:43Z tcberner $
+# $FreeBSD: head/misc/kf5-purpose/Makefile 472427 2018-06-15 05:14:35Z tcberner $
 
 PORTNAME=	purpose
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -6,6 +6,9 @@ CATEGORIES=	misc kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Offers available actions for a specific purpose
+
+LIB_DEPENDS=	libaccounts-qt5.so:net-im/libaccounts-qt5 \
+		libkaccounts.so:net-im/kaccounts-integration
 
 USES=		cmake:outsource compiler:c++11-lang gettext \
 		kde:5 pkgconfig tar:xz

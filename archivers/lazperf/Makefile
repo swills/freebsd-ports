@@ -1,5 +1,5 @@
 # Created by: lbartoletti <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/archivers/lazperf/Makefile 463840 2018-03-07 23:48:26Z yuri $
+# $FreeBSD: head/archivers/lazperf/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	lazperf
 DISTVERSION=	1.2.0
@@ -11,7 +11,7 @@ COMMENT=	Alternative LAZ implementation for C++ and JavaScript
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake:outsource
+USES=		cmake:outsource compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	hobu
 GH_PROJECT=	laz-perf

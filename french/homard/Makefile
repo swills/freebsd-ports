@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/french/homard/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/french/homard/Makefile 471044 2018-05-28 14:50:00Z antoine $
 
 PORTNAME=	homard
 DISTVERSION=	11.7-1
@@ -19,7 +19,7 @@ RESTRICTED=	The free downloading of HOMARD software is only allowed for coupling
 
 ONLY_FOR_ARCHS=	amd64 i386
 
-USES=		linux python shebangfix
+USES=		linux python:2.7 shebangfix
 SHEBANG_FILES=	${WRKSRC}/ASTER_HOMARD/homard	\
 		${WRKSRC}/homard_base ${WRKSRC}/setup_homard.py
 REINPLACE_ARGS=	-i ""

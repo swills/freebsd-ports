@@ -1,5 +1,5 @@
 # Created by: Frank Laszlo <laszlof@vonostingroup.com>
-# $FreeBSD: head/security/md5deep/Makefile 457058 2017-12-23 15:00:27Z tijl $
+# $FreeBSD: head/security/md5deep/Makefile 472706 2018-06-18 19:03:03Z linimon $
 
 PORTNAME=	md5deep
 PORTVERSION=	4.4
@@ -15,8 +15,8 @@ GH_ACCOUNT=	jessek
 GH_PROJECT=	hashdeep
 GH_TAGNAME=	cd2ed74
 
+USES=		autoreconf compiler:c++11-lang gmake
 USE_GITHUB=	yes
-USES=		autoreconf gmake
 GNU_CONFIGURE=	yes
 
 .include <bsd.port.mk>

@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11/xkeyboard-config/Makefile 468890 2018-05-02 22:23:21Z yuri $
+# $FreeBSD: head/x11/xkeyboard-config/Makefile 472019 2018-06-08 18:55:27Z zeising $
 
 PORTNAME=	xkeyboard-config
-PORTVERSION=	2.23.1
-PORTREVISION=	1
+PORTVERSION=	2.24
 CATEGORIES=	x11
 MASTER_SITES=	XORG/individual/${XORG_CAT}/${PORTNAME}
 

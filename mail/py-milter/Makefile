@@ -1,12 +1,11 @@
 # Created by: Vsevolod Lobko <seva@sevasoft.kiev.ua>
-# $FreeBSD: head/mail/py-milter/Makefile 470417 2018-05-19 16:25:15Z miwi $
+# $FreeBSD: head/mail/py-milter/Makefile 471550 2018-06-04 14:46:41Z mat $
 
 PORTNAME=	milter
 PORTVERSION=	1.0.2
+DISTVERSIONPREFIX=	${GH_PROJECT}-
 CATEGORIES=	mail python
-MASTER_SITES=	GH
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	${PYPORTNAME}-${PORTVERSION}
 
 MAINTAINER=	estartu@augusta.de
 COMMENT=	Python interface to Sendmail milter API
@@ -19,14 +18,11 @@ LIB_DEPENDS=	libmilter.so:mail/libmilter
 CFLAGS+=	-I${LOCALBASE}/include
 .endif
 
-PYPORTNAME=	${PKGNAMEPREFIX:C/[0-9]+-//}${PORTNAME}
-GH_ACCOUNT=	sdgathman
-GH_PROJECT=	${PYPORTNAME}
-GH_TAGNAME=	${GH_PROJECT}-${PORTVERSION}
-
 USES=	python
 
 USE_GITHUB=	yes
+GH_ACCOUNT=	sdgathman
+GH_PROJECT=	py${PORTNAME}
 USE_PYTHON=	distutils autoplist flavors
 
 post-install:

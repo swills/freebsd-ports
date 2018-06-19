@@ -1,9 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-cclib/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/devel/py-cclib/Makefile 472554 2018-06-16 15:46:37Z robak $
 
 PORTNAME=	cclib
-PORTVERSION=	1.5.1
-PORTREVISION=	1
+PORTVERSION=	1.5.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,9 +16,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 BUILD_DEPENDS=	${PYNUMPY}
 RUN_DEPENDS=	${PYNUMPY}
 
-USE_GITHUB=	yes
-
 USES=		python
 USE_PYTHON=	autoplist distutils
+
+USE_GITHUB=	yes
 
 .include <bsd.port.mk>

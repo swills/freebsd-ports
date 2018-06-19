@@ -1,5 +1,5 @@
 # Created by: Craig Rodrigues <rodrigc@FreeBSD.org>
-# $FreeBSD: head/www/serf/Makefile 465240 2018-03-21 21:24:43Z brnrd $
+# $FreeBSD: head/www/serf/Makefile 472172 2018-06-11 08:34:33Z amdmi3 $
 
 PORTNAME=	serf
 PORTVERSION=	1.3.9
@@ -35,6 +35,7 @@ SCONS_ARGS+=	PREFIX=${PREFIX}
 SCONS_ARGS+=	CC=${CC}
 SCONS_ARGS+=	CFLAGS="${CFLAGS}"
 INSTALL_TARGET=	install --install-sandbox=${STAGEDIR}
+TEST_TARGET=	check  # some tests fail
 
 .include <bsd.port.options.mk>
 
@@ -55,9 +56,6 @@ post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/design-guide.txt ${STAGEDIR}${DOCSDIR}
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libserf-1.so
-
-regression-test check: build
-	@(cd ${WRKSRC} && ${MAKE_CMD} check)
 
 .include <bsd.port.pre.mk>
 

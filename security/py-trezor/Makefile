@@ -1,10 +1,10 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/security/py-trezor/Makefile 463700 2018-03-06 08:40:20Z ehaupt $
+# $FreeBSD: head/security/py-trezor/Makefile 472257 2018-06-12 14:19:48Z ehaupt $
 
 PORTNAME=	trezor
-PORTVERSION=	0.9.1
-DISTVERSIONPREFIX=	v
+PORTVERSION=	0.10.1
 CATEGORIES=	security
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	ehaupt@FreeBSD.org
@@ -18,11 +18,10 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mnemonic>=0:security/py-mnemonic@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ecdsa>0:security/py-ecdsa@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}protobuf>=2.5.0:devel/py-protobuf@${FLAVOR}
 
-USES=		python
-USE_GITHUB=	yes
+USES=		python:3.3+ shebangfix
 USE_PYTHON=	autoplist concurrent distutils
 NO_ARCH=	yes
 
-GH_PROJECT=	python-trezor
+SHEBANG_FILES=	vendor/trezor-common/defs/coins/tools/build_coins.py
 
 .include <bsd.port.mk>

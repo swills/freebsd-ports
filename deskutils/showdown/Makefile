@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/showdown/Makefile 466598 2018-04-05 20:13:48Z tobik $
+# $FreeBSD: head/deskutils/showdown/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	showdown
 DISTVERSION=	0.6
@@ -9,6 +9,8 @@ MAINTAINER=	dg@syrec.org
 COMMENT=	Simple markdown viewer, written in Vala and GTK 3
 
 LICENSE=	GPLv3
+
+BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wno-incompatible-pointer-types"
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libmarkdown.a:textproc/discount \
 		valac:lang/vala

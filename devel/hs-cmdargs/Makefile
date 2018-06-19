@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-cmdargs/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-cmdargs/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	cmdargs
-PORTVERSION=	0.10.17
-PORTREVISION=	1
+PORTVERSION=	0.10.20
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

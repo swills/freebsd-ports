@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/metronome/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/net-mgmt/metronome/Makefile 472160 2018-06-11 01:44:15Z linimon $
 
 PORTNAME=	metronome
 DISTVERSION=	0.9.0
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 
-USES=		autoreconf:build eigen:3 libtool:build pathfix pkgconfig
+USES=		autoreconf:build compiler:c++11-lang eigen:3 libtool:build pathfix pkgconfig
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	ahupowerdns

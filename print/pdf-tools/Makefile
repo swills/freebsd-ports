@@ -1,10 +1,10 @@
-# $FreeBSD: head/print/pdf-tools/Makefile 462964 2018-02-25 16:46:51Z antoine $
+# $FreeBSD: head/print/pdf-tools/Makefile 472403 2018-06-14 22:44:59Z jrm $
 
 PORTNAME=	pdf-tools
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.80-79
-DISTVERSIONSUFFIX=	-g9241a79
-CATEGORIES=	print
+DISTVERSION=	0.80-101
+DISTVERSIONSUFFIX=	-g60d12ce
+CATEGORIES=	print elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
 MAINTAINER=	jrm@FreeBSD.org
@@ -12,6 +12,8 @@ COMMENT=	Emacs support library for PDF files
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to configure: cannot find necessary poppler-private header (see README.org)
 
 BUILD_DEPENDS=	cask${EMACS_PKGNAMESUFFIX}>0:devel/cask@${EMACS_FLAVOR} \
 		tablist${EMACS_PKGNAMESUFFIX}>=0.70.4:devel/tablist@${EMACS_FLAVOR}

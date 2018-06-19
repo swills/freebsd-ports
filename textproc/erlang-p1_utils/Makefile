@@ -1,11 +1,11 @@
-# $FreeBSD: head/textproc/erlang-p1_utils/Makefile 465888 2018-03-29 13:03:30Z olgeni $
+# $FreeBSD: head/textproc/erlang-p1_utils/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	p1_utils
 PORTVERSION=	1.0.11
 CATEGORIES=	textproc
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Erlang utility modules from ProcessOne
 
 LICENSE=	APACHE20

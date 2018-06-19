@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/hs-hS3/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/www/hs-hS3/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	hS3
 PORTVERSION=	0.5.9
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

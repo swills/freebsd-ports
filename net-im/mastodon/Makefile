@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/mastodon/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/net-im/mastodon/Makefile 470717 2018-05-23 19:57:49Z jrm $
 
 PORTNAME=	mastodon
 DISTVERSIONPREFIX=	v
@@ -11,6 +11,10 @@ COMMENT=	GNU Social-compatible microblogging server
 
 LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		Fails to build
+DEPRECATED=	Breaks too frequently
+EXPIRATION_DATE=	2018-07-01
 
 BUILD_DEPENDS=	yarn>:www/yarn\
 		${BR_DEPENDS}

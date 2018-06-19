@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/hs-webkit/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/www/hs-webkit/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	webkit
 PORTVERSION=	0.14.2.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -12,7 +12,7 @@ LICENSE=	LGPL21
 
 USES=		pkgconfig
 USE_CABAL=	cairo>=0.13.0.0 glib>=0.13.1.0 gtk>=0.13.0.0 mtl \
-		pango>=0.13.0.0 text>=1.0.0.0
+		pango>=0.13.0.0
 LIB_DEPENDS+=	libwebkitgtk-1.0.so:www/webkit-gtk2
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"

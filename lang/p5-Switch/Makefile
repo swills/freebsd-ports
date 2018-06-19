@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@tobez.org>
-# $FreeBSD: head/lang/p5-Switch/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/lang/p5-Switch/Makefile 472437 2018-06-15 09:04:34Z amdmi3 $
 
 PORTNAME=	Switch
 PORTVERSION=	2.17
@@ -12,10 +12,14 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tobez@FreeBSD.org
 COMMENT=	Switch - A switch statement for Perl
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 BUILD_DEPENDS=	p5-Filter>0:devel/p5-Filter
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

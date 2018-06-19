@@ -1,8 +1,7 @@
-# $FreeBSD: head/www/hs-wai/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/www/hs-wai/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	wai
-PORTVERSION=	3.2.1.1
-PORTREVISION=	1
+PORTVERSION=	3.2.1.2
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -11,7 +10,7 @@ COMMENT=	Web Application Interface
 LICENSE=	MIT
 
 USE_CABAL=	blaze-builder>=0.2.1.4 http-types>=0.7 network>=2.2.1.5 \
-		text>=0.7 vault>=0.3
+		vault>=0.3
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

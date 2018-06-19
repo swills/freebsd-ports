@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/py-adb/Makefile 467280 2018-04-14 00:57:36Z jbeich $
+# $FreeBSD: head/devel/py-adb/Makefile 471260 2018-06-01 14:19:29Z jbeich $
 
 PORTNAME=	adb
-DISTVERSION=	1.2.0-24
-DISTVERSIONSUFFIX=	-gff48509
+DISTVERSION=	1.3.0-1
+DISTVERSIONSUFFIX=	-g722e54e
 CATEGORIES=	devel comms python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

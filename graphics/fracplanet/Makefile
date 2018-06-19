@@ -1,5 +1,5 @@
 # Created by: Igor Pokrovsky <ip@doom.homeunix.org>
-# $FreeBSD: head/graphics/fracplanet/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/graphics/fracplanet/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	fracplanet
 PORTVERSION=	0.4.0
@@ -15,6 +15,8 @@ COMMENT=	Interactive tool for creating random fractal planets and terrain
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_powerpc64=	fails to link: obj/fracplanet.o:(.text+0x250): undefined reference to boost::program_options::options_description::options_description
 
 BUILD_DEPENDS=	xsltproc:textproc/libxslt
 LIB_DEPENDS=	libboost_program_options.so:devel/boost-libs

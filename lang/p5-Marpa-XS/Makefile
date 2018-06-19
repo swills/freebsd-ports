@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/lang/p5-Marpa-XS/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/lang/p5-Marpa-XS/Makefile 471648 2018-06-04 18:09:29Z sunpoet $
 
 PORTNAME=	Marpa-XS
 PORTVERSION=	1.008000
@@ -12,7 +12,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	XS version of Marpa
 
-LICENSE=	LGPL3
+LICENSE=	LGPL3+
+LICENSE_FILE=	${WRKSRC}/COPYING.LESSER
 
 BUILD_DEPENDS=	p5-ExtUtils-PkgConfig>=0:devel/p5-ExtUtils-PkgConfig \
 		p5-Glib2>=1.223:devel/p5-Glib2 \

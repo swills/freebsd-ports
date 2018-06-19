@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/qt5-webengine/Makefile 470288 2018-05-18 12:27:43Z rakuco $
+# $FreeBSD: head/www/qt5-webengine/Makefile 471556 2018-06-04 15:20:29Z adridg $
 
 # QtWebEngine itself is a very thin layer of Qt code on top of a large part of
 # Chromium (everything up to the content/ layer). As such, most of the work in
@@ -20,6 +20,7 @@
 
 PORTNAME=	webengine
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	www
 PKGNAMEPREFIX=	qt5-
 
@@ -86,11 +87,15 @@ ALL_TARGET=	first
 
 .if ${OPSYS} == FreeBSD && ${OSVERSION} < 1100000
 EXTRA_PATCHES+=	${FILESDIR}/extra-patch-10
-
-BUILD_DEPENDS+=	clang50:devel/llvm50
-CC=		clang50
-CXX=		clang++50
 .endif  # ${OPSYS} == FreeBSD && ${OSVERSION} < 1100000
+
+# 1101513 is 11-STABLE after merging clang, llvm, lld, lldb, compiler-rt and
+#            libc++ 6.0.0 release, and several follow-up fixes.
+.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1101513
+BUILD_DEPENDS+=	clang60:devel/llvm60
+CC=		clang60
+CXX=		clang++60
+.endif  # ${OPSYS} == FreeBSD && ${OSVERSION} < 1101513
 
 # We need ar(1) from ports because the Chromium code uses the @file syntax.
 # We then need to ensure ld(1) from ports is used because of the archives ar(1)

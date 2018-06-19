@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@rubick>
-# $FreeBSD: head/textproc/rubygem-kramdown/Makefile 456014 2017-12-11 10:44:38Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-kramdown/Makefile 471236 2018-05-31 19:49:28Z sunpoet $
 
 PORTNAME=	kramdown
-PORTVERSION=	1.16.2
+PORTVERSION=	1.17.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 

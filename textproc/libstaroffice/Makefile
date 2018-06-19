@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/libstaroffice/Makefile 468392 2018-04-26 23:08:58Z jkim $
+# $FreeBSD: head/textproc/libstaroffice/Makefile 472161 2018-06-11 02:04:00Z linimon $
 
 PORTNAME=	libstaroffice
 PORTVERSION=	0.0.6
@@ -15,12 +15,10 @@ LICENSE_COMB=	dual
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/shared_ptr.hpp:devel/boost-libs
 LIB_DEPENDS=	librevenge-0.0.so:textproc/librevenge
 
-BROKEN_powerpc64=	fails to configure: Could not find Boost implementation of shared_ptr
-
+USES=		compiler:c++11-lib libtool pathfix pkgconfig tar:xz
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
-USES=		compiler:c++11-lib libtool pathfix pkgconfig tar:xz
 
 CONFIGURE_ARGS=	--without-docs
 CPPFLAGS+=	-I${LOCALBASE}/include

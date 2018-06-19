@@ -1,8 +1,8 @@
-# $FreeBSD: head/textproc/markdown-mode.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/textproc/markdown-mode.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	markdown-mode.el
 PORTVERSION=	2.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	textproc
 MASTER_SITES=	http://jblevins.org/projects/markdown-mode/
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

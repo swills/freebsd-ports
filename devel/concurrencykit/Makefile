@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/concurrencykit/Makefile 469431 2018-05-09 05:41:29Z lwhsu $
+# $FreeBSD: head/devel/concurrencykit/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	concurrencykit
 PORTVERSION=	0.6.0
@@ -15,9 +15,10 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 ONLY_FOR_ARCHS=	aarch64 amd64 armv6 armv7 i386 powerpc powerpc64 sparc64
-BROKEN_aarch64=		Fails to configure: Detecting machine architecture...failed  [unsupported]
-BROKEN_armv6=		Fails to configure: Finding suitable compiler........failed  [not found]
-BROKEN_armv7=		Fails to configure: Finding suitable compiler........failed  [not found]
+BROKEN_aarch64=		fails to configure: Detecting machine architecture...failed  [unsupported]
+BROKEN_armv6=		fails to configure: Finding suitable compiler........failed  [not found]
+BROKEN_armv7=		fails to configure: Finding suitable compiler........failed  [not found]
+BROKEN_powerpc64=	fails to link: skipping incompatible /usr/lib/libgcc.a when searching for -lgcc
 
 OPTIONS_DEFINE=		RTM VMAPACK
 OPTIONS_DEFAULT=	VMAPACK

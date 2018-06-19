@@ -1,8 +1,8 @@
 # Created by: Samy Al Bahra <sbahra@kerneled.org>
-# $FreeBSD: head/x11/hs-xmobar/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/x11/hs-xmobar/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	xmobar
-PORTVERSION=	0.24.5
+PORTVERSION=	0.26
 PORTREVISION=	1
 CATEGORIES=	x11 haskell
 
@@ -11,8 +11,7 @@ COMMENT=	Minimalistic text-based status bar
 
 LICENSE=	BSD3CLAUSE
 
-USE_CABAL=	HTTP>=4000.2.4 mtl>=2.1 parsec>=3.1 regex-compat stm>=2.3 \
-		X11>=1.6.1
+USE_CABAL=	HTTP>=4000.2.4 mtl>=2.1 regex-compat X11>=1.6.1
 USE_XORG=	xpm
 
 EXECUTABLE=	xmobar

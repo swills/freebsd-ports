@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-uuagc-cabal/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-uuagc-cabal/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	uuagc-cabal
-PORTVERSION=	1.0.6.0
-PORTREVISION=	2
+PORTVERSION=	1.1.0.0
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,11 +1,11 @@
 # Created by: Kimura Fuyuki <fuyuki@mj.0038.net>
-# $FreeBSD: head/textproc/jing/Makefile 455167 2017-11-30 06:13:34Z linimon $
+# $FreeBSD: head/textproc/jing/Makefile 472207 2018-06-11 20:56:24Z feld $
 
 PORTNAME=	jing
 PORTVERSION=	2015.11.27
 CATEGORIES=	textproc java
 
-MAINTAINER=	gabor@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	RELAX NG validator in Java
 
 LICENSE=	BSD3CLAUSE

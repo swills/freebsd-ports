@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/elixir-calecto/Makefile 418367 2016-07-11 10:48:24Z olgeni $
+# $FreeBSD: head/databases/elixir-calecto/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	calecto
 PORTVERSION=	0.16.0
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Adapter for the Calendar library in Ecto
 
 LICENSE=	MIT

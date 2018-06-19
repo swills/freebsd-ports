@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/mu4e/Makefile 463179 2018-02-28 06:10:25Z hrs $
+# $FreeBSD: head/mail/mu4e/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	mu4e
 PORTVERSION=	1.0
@@ -10,6 +10,11 @@ MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	Emacs frontend for Mu
 
 LICENSE=	GPLv3
+
+.if ${FLAVOR:U} != devel && ${FLAVOR:U} != devel_nox
+# http://pkg.awarnach.mathstat.dal.ca/data/11i386-default/2018-05-30_07h36m11s/logs/errors/mu4e-emacs26-1.0_1.log
+BROKEN=		fails to build
+.endif
 
 RUN_DEPENDS=	mu:mail/mu
 

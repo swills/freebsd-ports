@@ -1,5 +1,5 @@
 # Created by: Don Croyle <croyle@gelemna.org>
-# $FreeBSD: head/devel/astyle/Makefile 459024 2018-01-15 09:18:52Z lme $
+# $FreeBSD: head/devel/astyle/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	astyle
 PORTVERSION=	3.1
@@ -13,7 +13,9 @@ COMMENT=	Source code indenter and formatter for C, C++, C\#, and Java
 LICENSE=	MIT
 LICENSE_FILE=	${WRKDIR}/astyle/LICENSE.md
 
-USES=		compiler dos2unix gmake
+BROKEN_powerpc64=	fails to build: unrecognized command line option "-std=c++11"
+
+USES=		compiler:c++11-lang dos2unix gmake
 
 ALL_TARGET=	astyle
 DOS2UNIX_GLOB=	*.ini

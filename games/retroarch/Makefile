@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/games/retroarch/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/games/retroarch/Makefile 472454 2018-06-15 14:18:44Z amdmi3 $
 
 PORTNAME=	RetroArch
 PORTVERSION=	1.3.6
@@ -20,7 +20,7 @@ LIB_DEPENDS=	libxkbcommon.so:x11/libxkbcommon \
 BROKEN_powerpc64=	fails to compile: features_cpu.c: undefined reference to __mftb
 
 OPTIONS_DEFINE=	FFMPEG OSS JACK PULSEAUDIO ALSA SDL OPENGL OPENAL NETPLAY PYTHON V4L FREETYPE FBO
-OPTIONS_DEFAULT=FFMPEG OSS PULSEAUDIO SDL OPENGL OPENAL NETPLAY PYTHON V4L FREETYPE FBO
+OPTIONS_DEFAULT=OSS PULSEAUDIO SDL OPENGL OPENAL NETPLAY PYTHON V4L FREETYPE FBO  # FFMPEG
 FFMPEG_DESC=	On-the-fly recording of gameplay with libavcodec
 NETPLAY_DESC=	Peer-to-peer netplay
 PYTHON_DESC=	Script support in shaders

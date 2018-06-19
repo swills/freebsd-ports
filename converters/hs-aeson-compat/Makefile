@@ -1,8 +1,7 @@
-# $FreeBSD: head/converters/hs-aeson-compat/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/converters/hs-aeson-compat/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	aeson-compat
-PORTVERSION=	0.3.7
-PORTREVISION=	1
+PORTVERSION=	0.3.7.1
 CATEGORIES=	converters haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -11,7 +10,7 @@ COMMENT=	Fast JSON parsing and encoding
 LICENSE=	BSD3CLAUSE
 
 USE_CABAL=	aeson attoparsec attoparsec-iso8601 base-compat exceptions \
-		hashable scientific semigroups tagged text time-locale-compat \
+		hashable scientific semigroups tagged time-locale-compat \
 		unordered-containers vector
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"

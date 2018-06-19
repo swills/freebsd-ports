@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/eteroj-lv2/Makefile 453708 2017-11-07 22:38:01Z yuri $
+# $FreeBSD: head/audio/eteroj-lv2/Makefile 471496 2018-06-03 14:08:05Z linimon $
 
 PORTNAME=	eteroj
 DISTVERSION=	0.2.0
@@ -10,6 +10,8 @@ COMMENT=	OSC injection/ejection from/to UDP/TCP/Serial for LV2
 
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to build: varchunk/varchunk.h:84: expected specifier-qualifier-list before _Atomic
 
 BUILD_DEPENDS=	lv2>0:audio/lv2
 LIB_DEPENDS=	libsratom-0.so:audio/sratom \

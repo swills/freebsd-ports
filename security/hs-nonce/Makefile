@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/hs-nonce/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/security/hs-nonce/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	nonce
-PORTVERSION=	1.0.4
-PORTREVISION=	1
+PORTVERSION=	1.0.7
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -10,7 +9,8 @@ COMMENT=	Generate cryptographic nonces
 
 LICENSE=	BSD3CLAUSE
 
-USE_CABAL=	base64-bytestring cprng-aes>=0.5 crypto-random entropy>=0.3.7 text>=0.9
+USE_CABAL=	base64-bytestring cprng-aes>=0.5 crypto-random entropy>=0.3.7 \
+		unliftio
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

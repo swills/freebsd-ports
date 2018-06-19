@@ -1,5 +1,5 @@
 # Created by: antoine@FreeBSD.org
-# $FreeBSD: head/devel/py-efilter/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-efilter/Makefile 470787 2018-05-24 15:22:18Z antoine $
 
 PORTNAME=	efilter
 PORTVERSION=	1.5
@@ -13,6 +13,8 @@ MAINTAINER=	antoine@FreeBSD.org
 COMMENT=	EFILTER query language
 
 LICENSE=	APACHE20
+
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}rekall-efilter-[0-9]*
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>=1.4.0:devel/py-six@${FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=2:devel/py-dateutil@${FLAVOR} \

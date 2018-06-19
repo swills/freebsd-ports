@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/elixir-paratize/Makefile 449571 2017-09-10 13:19:34Z olgeni $
+# $FreeBSD: head/devel/elixir-paratize/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	elixir-paratize
 PORTVERSION=	2.1.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Parallel processing facilities for Elixir
 
 LICENSE=	MIT

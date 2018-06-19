@@ -1,5 +1,5 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/emulators/wxmupen64plus/Makefile 449591 2017-09-10 20:55:38Z gerald $
+# $FreeBSD: head/emulators/wxmupen64plus/Makefile 470945 2018-05-26 19:04:04Z antoine $
 
 PORTNAME=	wxmupen64plus
 PORTVERSION=	0.3
@@ -22,7 +22,7 @@ RUN_DEPENDS=	${LOCALBASE}/lib/libmupen64plus.so.2:emulators/mupen64plus-core \
 
 WRKSRC=		${WRKDIR}/auria-${PORTNAME}-0564db396383
 
-USES=		compiler:c++11-lib python
+USES=		compiler:c++11-lib python:2.7
 USE_CXXSTD=	c++11
 USE_SDL=	yes
 USE_WX=		3.0

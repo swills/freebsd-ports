@@ -1,11 +1,11 @@
-# $FreeBSD: head/databases/erlang-epgsql/Makefile 451744 2017-10-11 12:38:49Z olgeni $
+# $FreeBSD: head/databases/erlang-epgsql/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	epgsql
 PORTVERSION=	3.4.0
 CATEGORIES=	databases
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Erlang PostgreSQL Database Client
 
 LICENSE=	BSD3CLAUSE

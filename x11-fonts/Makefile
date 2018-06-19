@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 469647 2018-05-11 16:03:44Z tobik $
+# $FreeBSD: head/x11-fonts/Makefile 472595 2018-06-17 08:18:50Z thierry $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -32,6 +32,7 @@
     SUBDIR += crosextrafonts-carlito-ttf
     SUBDIR += cyberbit-ttfonts
     SUBDIR += cyr-rfx
+    SUBDIR += datalegreya
     SUBDIR += dejavu
     SUBDIR += dina
     SUBDIR += doulos

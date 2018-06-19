@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/dub/Makefile 470523 2018-05-21 09:04:11Z amdmi3 $
+# $FreeBSD: head/devel/dub/Makefile 471453 2018-06-03 06:32:26Z acm $
 
 PORTNAME=	dub
-PORTVERSION=	1.7.1
+PORTVERSION=	1.9.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
@@ -9,7 +9,7 @@ MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Package and build manager for D applications and libraries
 
 LICENSE=	MIT
-LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	ldmd2:lang/ldc
 LIB_DEPENDS=	libcurl.so:ftp/curl

@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-kubeclient/Makefile 469934 2018-05-14 17:49:50Z mfechner $
+# $FreeBSD: head/www/rubygem-kubeclient/Makefile 471422 2018-06-02 22:26:48Z sunpoet $
 
 PORTNAME=	kubeclient
-PORTVERSION=	3.0.0
+PORTVERSION=	3.1.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
@@ -12,7 +12,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	rubygem-http>=2.2.2:www/rubygem-http \
-		rubygem-recursive-open-struct10>=1.0.4:devel/rubygem-recursive-open-struct10 \
+		rubygem-recursive-open-struct>=1.0.4:devel/rubygem-recursive-open-struct \
 		rubygem-rest-client>=2.0:www/rubygem-rest-client
 
 NO_ARCH=	yes

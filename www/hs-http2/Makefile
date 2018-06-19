@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/hs-http2/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/www/hs-http2/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	http2
 PORTVERSION=	1.6.3
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -11,7 +11,7 @@ COMMENT=	HTTP/2.0 library including frames and HPACK
 LICENSE=	BSD3CLAUSE
 
 USE_CABAL=	aeson aeson-pretty case-insensitive hex mwc-random psqueues \
-		stm text unordered-containers vector word8
+		unordered-containers vector word8
 
 FLAGS_DISABLE=	devel
 

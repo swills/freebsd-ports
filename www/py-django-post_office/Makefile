@@ -1,9 +1,10 @@
 # Created by: Richard Gallamore <ultima@FreeBSD.org>
-# $FreeBSD: head/www/py-django-post_office/Makefile 455689 2017-12-07 01:49:10Z ultima $
+# $FreeBSD: head/www/py-django-post_office/Makefile 472346 2018-06-13 22:05:51Z ultima $
 
 PORTNAME=	django-post_office
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.0.4
+PORTREVISION=	1
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -13,8 +14,8 @@ COMMENT=	Django app to monitor and send mail asynchronously
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django-jsonfield>=0:www/py-django-jsonfield@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}django18>=1.8:www/py-django18@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django-jsonfield>=0:www/py-django-jsonfield@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}django111>=1.8:www/py-django111@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

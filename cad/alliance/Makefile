@@ -1,5 +1,5 @@
 # Created by: hrs
-# $FreeBSD: head/cad/alliance/Makefile 469120 2018-05-05 15:09:22Z danfe $
+# $FreeBSD: head/cad/alliance/Makefile 472665 2018-06-18 01:48:46Z linimon $
 
 PORTNAME=	alliance
 DISTVERSION=	5.0-20120515
@@ -18,6 +18,7 @@ LICENSE_FILE=	${WRKSRC}/LICENCE
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 BROKEN_aarch64=		fails to link: collect2: error: ld returned 1 exit status
+BROKEN_powerpc64=	fails to build: cc1plus: error: unrecognized command line option "-std=gnu++03"
 
 CONFLICTS_INSTALL=	fspclient-*
 

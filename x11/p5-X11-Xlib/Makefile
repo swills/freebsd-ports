@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/p5-X11-Xlib/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/x11/p5-X11-Xlib/Makefile 472770 2018-06-19 08:13:10Z pi $
 
 PORTNAME=	X11-Xlib
-PORTVERSION=	0.15
+PORTVERSION=	0.18
 CATEGORIES=	x11 perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -13,7 +13,9 @@ LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Devel-CheckLib>=0:devel/p5-Devel-CheckLib \
-		p5-ExtUtils-Depends>=0:devel/p5-ExtUtils-Depends
+		p5-ExtUtils-Depends>=0:devel/p5-ExtUtils-Depends \
+		p5-Try-Tiny>=0:lang/p5-Try-Tiny
+
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5

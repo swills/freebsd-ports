@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/bibletime/Makefile 462658 2018-02-23 01:33:00Z tabthorpe $
+# $FreeBSD: head/misc/bibletime/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	bibletime
 PORTVERSION=	2.10.1
@@ -10,6 +10,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Open source Bible study tool
 
 LICENSE=	GPLv2
+
+BROKEN_powerpc64=	fails to compile: btosismorphsegmentation.cpp.o: undefined reference to sword::SWOptionFilter::SWOptionFilter
 
 LIB_DEPENDS=	libclucene-core.so:textproc/clucene \
 		libsword.so:misc/sword

@@ -1,12 +1,12 @@
-# $FreeBSD: head/devel/android-tools-fastboot/Makefile 456975 2017-12-22 10:49:09Z jbeich $
+# $FreeBSD: head/devel/android-tools-fastboot/Makefile 472201 2018-06-11 19:41:11Z jbeich $
 
 PORTNAME=	android-tools-fastboot
 DISTVERSIONPREFIX=	android-
 DISTVERSION?=	8.1.0_r2
 PORTREVISION?=	1
 CATEGORIES=	devel sysutils
-MASTER_SITES=	https://anonscm.debian.org/cgit/android-tools/android-tools.git/plain/debian/:manpage
-DISTFILES=	fastboot.1?id=706e754:manpage
+MASTER_SITES=	https://salsa.debian.org/android-tools-team/android-tools/raw/706e754/debian/:manpage
+DISTFILES=	fastboot.1:manpage
 EXTRACT_ONLY=	${DISTFILES:N*\:manpage:C/:.*//}
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -63,7 +63,7 @@ DOCS_MAKE_ARGS_OFF=	FILES="" FILESDIR=""
 
 post-extract:
 	@${CP} ${_DISTDIR}/${DISTFILES:M*\:manpage:C/:.*//} \
-		${BUILD_WRKSRC}/${DISTFILES:M*\:manpage:C/\?.*//}
+		${BUILD_WRKSRC}
 # Adjust paths relative to core
 	@(cd ${WRKSRC_extras} && ${COPYTREE_SHARE} . ${WRKSRC})
 

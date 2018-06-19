@@ -1,11 +1,11 @@
-# $FreeBSD: head/www/yaws/Makefile 467158 2018-04-12 14:45:47Z olgeni $
+# $FreeBSD: head/www/yaws/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	yaws
 PORTVERSION=	2.0.5
 CATEGORIES=	www devel
 MASTER_SITES=	http://yaws.hyber.org/download/
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Web server for dynamic content written in Erlang
 
 LICENSE=	BSD3CLAUSE

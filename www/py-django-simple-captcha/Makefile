@@ -1,8 +1,8 @@
 # Created by: John Hixson <john@ixsystems.com>
-# $FreeBSD: head/www/py-django-simple-captcha/Makefile 469905 2018-05-14 15:39:49Z sunpoet $
+# $FreeBSD: head/www/py-django-simple-captcha/Makefile 470814 2018-05-25 00:12:16Z swills $
 
 PORTNAME=	django-simple-captcha
-PORTVERSION=	0.5.6
+PORTVERSION=	0.5.7
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

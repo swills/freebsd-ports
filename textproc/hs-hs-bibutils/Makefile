@@ -1,8 +1,7 @@
-# $FreeBSD: head/textproc/hs-hs-bibutils/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/textproc/hs-hs-bibutils/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	hs-bibutils
-PORTVERSION=	5.5
-PORTREVISION=	2
+PORTVERSION=	6.2.0.1
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org

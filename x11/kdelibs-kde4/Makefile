@@ -1,5 +1,5 @@
 # Created by: arved@FreeBSD.org
-# $FreeBSD: head/x11/kdelibs-kde4/Makefile 467318 2018-04-14 13:30:12Z tcberner $
+# $FreeBSD: head/x11/kdelibs-kde4/Makefile 471064 2018-05-28 19:34:03Z adridg $
 
 PORTNAME=	kdelibs
 PORTVERSION=	${KDE4_KDELIBS_VERSION}
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libImath-2_2.so:graphics/ilmbase \
 		libgif.so:graphics/giflib \
 		libpng.so:graphics/png \
 		libhal.so:sysutils/hal \
-		libqca.so:devel/qca \
+		libqca.so:devel/qca@qt4 \
 		libpolkit-qt-core-1.so:sysutils/polkit-qt@qt4 \
 		libdbusmenu-qt.so:devel/libdbusmenu-qt@qt4 \
 		libstreams.so:deskutils/libstreams

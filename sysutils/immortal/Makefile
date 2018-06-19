@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/immortal/Makefile 464866 2018-03-18 03:55:13Z yuri $
+# $FreeBSD: head/sysutils/immortal/Makefile 471956 2018-06-07 20:24:11Z dbaio $
 
 PORTNAME=	immortal
-PORTVERSION=	0.18.0
-PORTREVISION=	0
+PORTVERSION=	0.20.0
 CATEGORIES=	sysutils
 
 MAINTAINER=	nbari@tequila.io
@@ -19,7 +18,7 @@ GH_TUPLE=	immortal:logrotate:6f52ae7:logrotate/src/github.com/immortal/logrotate
 		immortal:natcasesort:162328b:natcasesort/src/github.com/immortal/natcasesort \
 		immortal:xtime:fb1aca1:xtime/src/github.com/immortal/xtime \
 		nbari:violetear:5c7cdfe:nbari/src/github.com/nbari/violetear \
-		go-yaml:yaml:d670f94:yaml/src/github.com/go-yaml/yaml
+		go-yaml:yaml:5420a8b:yaml/src/github.com/go-yaml/yaml
 GH_SUBDIR=	src/github.com/${PORTNAME}/${PORTNAME}
 
 do-build:

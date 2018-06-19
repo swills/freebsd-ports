@@ -1,8 +1,8 @@
 # Created by: Jean-Sébastien Pédron <dumbbell@FreeBSD.org>
-# $FreeBSD: head/devel/ocaml-parmap/Makefile 390703 2015-06-27 13:47:04Z dumbbell $
+# $FreeBSD: head/devel/ocaml-parmap/Makefile 472024 2018-06-08 23:12:18Z dumbbell $
 
 PORTNAME=	parmap
-DISTVERSION=	1.0-rc6
+DISTVERSION=	1.0-rc9
 CATEGORIES=	devel
 PKGNAMEPREFIX=	ocaml-
 

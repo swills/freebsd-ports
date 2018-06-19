@@ -1,5 +1,5 @@
 # Created by: ruslan@shevchenko.kiev.ua
-# $FreeBSD: head/lang/erlang-runtime18/Makefile 468344 2018-04-26 10:17:11Z olgeni $
+# $FreeBSD: head/lang/erlang-runtime18/Makefile 471907 2018-06-07 11:15:11Z olgeni $
 
 PORTNAME=	erlang
 PORTVERSION=	18.3.4.9
@@ -24,7 +24,7 @@ PATCHFILES=	patch-otp-18.3.1 patch-otp-18.3.2 patch-otp-18.3.3 \
 		patch-otp-18.3.4.6 patch-otp-18.3.4.7 patch-otp-18.3.4.8 \
 		patch-otp-18.3.4.9
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Functional programming language from Ericsson
 
 LICENSE=	APACHE20

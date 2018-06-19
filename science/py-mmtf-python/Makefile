@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/py-mmtf-python/Makefile 469806 2018-05-13 17:14:13Z yuri $
+# $FreeBSD: head/science/py-mmtf-python/Makefile 470628 2018-05-22 16:51:49Z yuri $
 
 PORTNAME=	mmtf-python
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.1.0
+DISTVERSION=	1.1.2
 CATEGORIES=	science python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

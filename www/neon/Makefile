@@ -1,10 +1,10 @@
 # Created by: Mikhail Teterin <mi@aldan.algebra.com>
-# $FreeBSD: head/www/neon/Makefile 436248 2017-03-15 14:45:54Z mat $
+# $FreeBSD: head/www/neon/Makefile 472704 2018-06-18 15:26:33Z lev $
 
 PORTNAME=	neon
-PORTVERSION=	0.30.1
+PORTVERSION=	0.30.2
 CATEGORIES=	www
-MASTER_SITES=	http://www.webdav.org/neon/
+MASTER_SITES=	LOCAL/lev
 
 MAINTAINER=	lev@FreeBSD.org
 COMMENT=	HTTP and WebDAV client library for Unix systems

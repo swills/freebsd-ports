@@ -1,5 +1,5 @@
 # Created by: Cyrille Lefevre <clefevre@citeweb.net>
-# $FreeBSD: head/lang/gforth/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/lang/gforth/Makefile 471964 2018-06-08 01:52:22Z linimon $
 
 PORTNAME=	gforth
 PORTVERSION=	0.7.3
@@ -13,6 +13,8 @@ COMMENT=	Fast and portable Forth system
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to package: Unable to access file usr/local/share/gforth/0.7.3/kernl64l.fi:No such file or directory
 
 LIB_DEPENDS=	libavcall.so:devel/libffcall \
 		libffi.so:devel/libffi \

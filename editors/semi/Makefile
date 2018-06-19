@@ -1,9 +1,9 @@
 # Created by: Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
-# $FreeBSD: head/editors/semi/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/editors/semi/Makefile 472141 2018-06-10 14:29:44Z nobutaka $
 
 PORTNAME=	semi
 PORTVERSION=	${SEMI_VER}
-PORTREVISION=	19
+PORTREVISION=	21
 CATEGORIES=	editors elisp
 MASTER_SITES=	http://git.chise.org/elisp/dist/semi/semi-1.14-for-flim-1.14/
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
@@ -28,7 +28,7 @@ SEMI_TRUNK=	1.14
 ALL_TARGET=	elc
 
 MAKE_ARGS+=	PREFIX="${STAGEDIR}${PREFIX}" \
-		LISPDIR="${STAGEDIR}${PREFIX}/${EMACS_SITE_LISPDIR}" \
+		LISPDIR="${STAGEDIR}${PREFIX}/${EMACS_VERSION_SITE_LISPDIR}" \
 		VERSION_SPECIFIC_LISPDIR="${STAGEDIR}${EMACS_VERSION_SITE_LISPDIR}"
 
 INFO=		mime-ui-en mime-ui-ja

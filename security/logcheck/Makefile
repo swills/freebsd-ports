@@ -1,9 +1,8 @@
 # Created by: Dan Langille <dan@freebsddiary.org>
-# $FreeBSD: head/security/logcheck/Makefile 461822 2018-02-14 17:25:48Z pi $
+# $FreeBSD: head/security/logcheck/Makefile 471201 2018-05-31 12:13:59Z krion $
 
 PORTNAME=	logcheck
-PORTVERSION=	1.3.18
-PORTREVISION=	2
+PORTVERSION=	1.3.19
 CATEGORIES=	security
 MASTER_SITES=	DEBIAN_POOL
 DISTNAME=	${PORTNAME}_${PORTVERSION}

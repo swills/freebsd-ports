@@ -1,5 +1,5 @@
 # Created by: Euan Thoms <euan@potensol.com>
-# $FreeBSD: head/devel/sope2/Makefile 455401 2017-12-03 12:23:53Z theraven $
+# $FreeBSD: head/devel/sope2/Makefile 471451 2018-06-03 06:09:41Z acm $
 
 PORTNAME=		sope2
 PORTVERSION=		2.3.23
@@ -8,7 +8,7 @@ CATEGORIES=		devel gnustep
 MASTER_SITES=		http://www.sogo.nu/files/downloads/SOGo/Sources/
 DISTNAME=		SOPE-${PORTVERSION}
 
-MAINTAINER=		euan@potensol.com
+MAINTAINER=		acm@FreeBSD.org
 COMMENT=		Extensive set of GNUstep web application frameworks
 
 LICENSE=		LGPL20

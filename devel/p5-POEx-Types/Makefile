@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-POEx-Types/Makefile 458558 2018-01-09 18:44:07Z danfe $
+# $FreeBSD: head/devel/p5-POEx-Types/Makefile 471623 2018-06-04 18:05:40Z sunpoet $
 
 PORTNAME=	POEx-Types
 PORTVERSION=	1.100910
@@ -10,6 +10,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension to provide MooseX::Types types for modern POE
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	\
 	p5-MooseX-Types>0:devel/p5-MooseX-Types \

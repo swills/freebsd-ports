@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-eternal/Makefile 457043 2017-12-23 11:55:05Z olgeni $
+# $FreeBSD: head/devel/elixir-eternal/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	eternal
 PORTVERSION=	1.2.0
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Elixir supervisor for ETS tables
 
 LICENSE=	MIT

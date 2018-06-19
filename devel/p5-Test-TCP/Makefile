@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/p5-Test-TCP/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Test-TCP/Makefile 472106 2018-06-10 00:40:04Z wen $
 
 PORTNAME=	Test-TCP
-PORTVERSION=	2.13
+PORTVERSION=	2.19
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

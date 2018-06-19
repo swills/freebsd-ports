@@ -1,5 +1,5 @@
 # Created by: Joe Kelsey
-# $FreeBSD: head/devel/libical/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/devel/libical/Makefile 472164 2018-06-11 02:34:57Z linimon $
 
 PORTNAME=	libical
 PORTVERSION=	2.0.0
@@ -15,16 +15,12 @@ LICENSE_COMB=	dual
 
 LIB_DEPENDS=	libicuuc.so:devel/icu
 
+CFLAGS_amd64=	-fPIC
+
 USES=		cmake compiler:c++11-lib pathfix perl5
 USE_GITHUB=	yes
 USE_GNOME=	introspection:build
 USE_PERL5=	build
 USE_LDCONFIG=	yes
 
-.include <bsd.port.pre.mk>
-
-.if ${ARCH} == "amd64" || ${ARCH} == "ia64"
-CFLAGS+=	-fPIC
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/courier-unicode/Makefile 445136 2017-07-06 11:56:27Z madpilot $
+# $FreeBSD: head/devel/courier-unicode/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	courier-unicode
 PORTVERSION=	2.0
@@ -12,7 +12,7 @@ LICENSE=	GPLv3
 
 CONFLICTS=	libunicode-[0-9]*
 
-USES=		iconv libtool perl5 tar:bzip2
+USES=		compiler:c++11-lang iconv libtool perl5 tar:bzip2
 USE_PERL5=	build
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes

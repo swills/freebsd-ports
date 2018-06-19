@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-subatom/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-subatom/Makefile 471636 2018-06-04 18:08:12Z sunpoet $
 
 PORTNAME=	subatom
 PORTVERSION=	0.12
@@ -11,7 +11,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Produce an atom feed from subversion commits
 
-LICENSE=	BSD3CLAUSE
+LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/README
 
 BUILD_DEPENDS=	p5-XML-Atom-SimpleFeed>=0.80:textproc/p5-XML-Atom-SimpleFeed
 RUN_DEPENDS:=	${BUILD_DEPENDS}

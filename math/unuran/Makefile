@@ -1,5 +1,5 @@
 # Created by: bf <bf2006a@yahoo.com>
-# $FreeBSD: head/math/unuran/Makefile 423456 2016-10-07 09:01:51Z amdmi3 $
+# $FreeBSD: head/math/unuran/Makefile 472235 2018-06-12 08:34:34Z amdmi3 $
 
 PORTNAME=	unuran
 PORTVERSION=	1.8.1
@@ -16,12 +16,10 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	librngstreams.so:math/rngstreams
 
-USES=		gmake libtool
+USES=		gmake libtool localbase:ldflags
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --with-urng-rngstream --with-urng-default=rngstream \
 		--enable-info
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 MAKE_ENV=	MAKE="${MAKE_CMD}"
 
 USE_LDCONFIG=	yes
@@ -43,7 +41,7 @@ post-install-DOCS-on:
 .ifdef(MAINTAINER_MODE)
 CONFIGURE_ARGS+=	--enable-check-struct --enable-logging
 
-check regression-test test: build
+do-test:
 	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${MAKE_CMD} ${MAKE_ARGS} check)
 
 fullcheck: build

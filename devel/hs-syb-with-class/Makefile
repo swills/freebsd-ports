@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-syb-with-class/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-syb-with-class/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	syb-with-class
-PORTVERSION=	0.6.1.7
-PORTREVISION=	1
+PORTVERSION=	0.6.1.9
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

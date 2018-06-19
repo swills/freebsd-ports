@@ -1,5 +1,5 @@
 # Created by: Shane Ambler <FreeBSD@Shaneware.biz>
-# $FreeBSD: head/devel/godot/Makefile 468505 2018-04-27 23:14:32Z jbeich $
+# $FreeBSD: head/devel/godot/Makefile 471755 2018-06-05 12:43:38Z amdmi3 $
 
 PORTNAME=	godot
 PORTVERSION=	3.0.2
@@ -30,7 +30,7 @@ USES=		compiler:c++14-lang pkgconfig scons ssl
 USE_XORG=	x11 xcursor xi xinerama xrandr
 USE_GL=		gl glew glu
 
-MAKE_ARGS+=		platform=x11 builtin_libpng=False builtin_openssl=False
+MAKE_ARGS+=		platform=x11 builtin_libpng=False builtin_openssl=False verbose=True
 MAKE_ARGS+=		${MAKE_ARGS_${CHOSEN_COMPILER_TYPE}}
 MAKE_ARGS_clang=	use_llvm=True
 CXXFLAGS+=		-DRTAUDIO_ENABLED

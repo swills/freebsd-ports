@@ -1,5 +1,5 @@
 # Created by: Neil Blakey-Milner
-# $FreeBSD: head/mail/sqwebmail/Makefile 445136 2017-07-06 11:56:27Z madpilot $
+# $FreeBSD: head/mail/sqwebmail/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	sqwebmail
 PORTVERSION=	5.9.0
@@ -57,7 +57,7 @@ MAILGRP?=	courier
 #
 # End of user variables
 
-USES=		gettext gmake iconv perl5 tar:bzip2
+USES=		compiler:c++11-lang gettext gmake iconv perl5 tar:bzip2
 USE_RC_SUBR=	sqwebmail-sqwebmaild
 GNU_CONFIGURE=	yes
 

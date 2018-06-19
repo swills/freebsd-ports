@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 469899 2018-05-14 15:31:19Z miwi $
+# $FreeBSD: head/mail/Makefile 471210 2018-05-31 14:05:05Z joneum $
 #
 
     COMMENT = Electronic mail utilities
@@ -496,6 +496,7 @@
     SUBDIR += php72-imap
     SUBDIR += phplist
     SUBDIR += phpmailer
+    SUBDIR += phpmailer6
     SUBDIR += pine-pgp-filters
     SUBDIR += pm-lib
     SUBDIR += policyd2

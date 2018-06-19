@@ -1,5 +1,5 @@
 # Created by: Enrico M. Crisostomo <enrico.m.crisostomo@gmail.com>
-# $FreeBSD: head/sysutils/fswatch-mon/Makefile 453268 2017-11-01 08:40:17Z olivier $
+# $FreeBSD: head/sysutils/fswatch-mon/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	fswatch
 PORTVERSION=	1.11.2
@@ -12,9 +12,7 @@ COMMENT=	Cross-platform file change monitor
 
 LICENSE=	GPLv3
 
-BROKEN_powerpc64=	fails to configure: A compiler with support for C++11 language features is required
-
-USES=	libtool makeinfo
+USES=		compiler:c++11-lang libtool makeinfo
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 

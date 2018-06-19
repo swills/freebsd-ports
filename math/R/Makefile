@@ -1,5 +1,5 @@
 # Created by: Maurice Castro <maurice@serc.rmit.edu.au>
-# $FreeBSD: head/math/R/Makefile 468249 2018-04-24 22:51:43Z jrm $
+# $FreeBSD: head/math/R/Makefile 470987 2018-05-27 16:16:07Z eadler $
 
 PORTNAME=	R
 DISTVERSION=	3.5.0
@@ -70,8 +70,6 @@ X11_DESC=		X11 graphics device
 
 ATLAS_USES=		blaslapack:atlas
 ATLAS_CONFIGURE_ON=	--disable-BLAS-shlib
-ATLAS_VARS=		MANUAL_PACKAGE_BUILD=\
-"Choose a BLAS option other than ATLAS for package building."
 CAIROPANGO_IMPLIES=	X11
 CAIROPANGO_CONFIGURE_WITH=	cairo
 CAIROPANGO_USES=	gettext jpeg pkgconfig

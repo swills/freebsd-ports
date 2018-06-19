@@ -1,5 +1,5 @@
 # Created by: hrkfrd@googlemail.com
-# $FreeBSD: head/audio/mpdas/Makefile 466735 2018-04-07 16:32:11Z krion $
+# $FreeBSD: head/audio/mpdas/Makefile 472706 2018-06-18 19:03:03Z linimon $
 
 PORTNAME=	mpdas
 PORTVERSION=	0.4.5
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libmpdclient.so:audio/libmpdclient
 
-USES=		pkgconfig
+USES=		compiler:c++11-lang pkgconfig
 
 USE_RC_SUBR=	mpdas
 

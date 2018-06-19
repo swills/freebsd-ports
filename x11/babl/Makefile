@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/x11/babl/Makefile 470433 2018-05-19 20:35:45Z kwm $
+# $FreeBSD: head/x11/babl/Makefile 472160 2018-06-11 01:44:15Z linimon $
 
 PORTNAME=	babl
 PORTVERSION=	0.1.48
@@ -12,7 +12,7 @@ COMMENT=	Dynamic pixel format conversion library
 LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gmake libtool pathfix pkgconfig tar:bzip2
+USES=		compiler:c11 gmake libtool pathfix pkgconfig tar:bzip2
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

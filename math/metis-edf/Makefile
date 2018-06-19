@@ -1,5 +1,5 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/math/metis-edf/Makefile 454187 2017-11-14 18:29:22Z thierry $
+# $FreeBSD: head/math/metis-edf/Makefile 471196 2018-05-31 08:34:20Z amdmi3 $
 
 PORTNAME=	metis-edf
 DISTVERSION=	5.1.0-aster1
@@ -49,7 +49,7 @@ post-install:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${WRKSRC}/graphs/* ${STAGEDIR}${EXAMPLESDIR}
 
-regression-test:
+do-test:
 	(cd ${WRKSRC}/graphs && ../programs/gpmetis test.mgraph 2 || ${TRUE})
 
 .include <bsd.port.post.mk>

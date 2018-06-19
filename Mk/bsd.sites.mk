@@ -20,7 +20,7 @@
 #
 # Note: all entries should terminate with a slash.
 #
-# $FreeBSD: head/Mk/bsd.sites.mk 467623 2018-04-17 19:14:58Z sunpoet $
+# $FreeBSD: head/Mk/bsd.sites.mk 472274 2018-06-13 00:43:58Z knu $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1017,8 +1017,6 @@ MASTER_SITE_REDHAT_LINUX+= \
 .if !defined(IGNORE_MASTER_SITE_RUBY)
 MASTER_SITE_RUBY+= \
 	https://cache.ruby-lang.org/pub/ruby/%SUBDIR%/ \
-	https://ftp.ruby-lang.org/pub/ruby/%SUBDIR%/ \
-	ftp://ftp.ruby-lang.org/pub/ruby/%SUBDIR%/ \
 	ftp://ftp.fu-berlin.de/unix/languages/ruby/%SUBDIR%/ \
 	ftp://ftp.kr.FreeBSD.org/pub/ruby/%SUBDIR%/ \
 	ftp://ftp.iDaemons.org/pub/mirror/ftp.ruby-lang.org/ruby/%SUBDIR%/

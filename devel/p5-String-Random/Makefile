@@ -1,8 +1,8 @@
 # Created by: will
-# $FreeBSD: head/devel/p5-String-Random/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-String-Random/Makefile 470737 2018-05-23 23:24:33Z sunpoet $
 
 PORTNAME=	String-Random
-PORTVERSION=	0.29
+PORTVERSION=	0.30
 PORTEPOCH=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN

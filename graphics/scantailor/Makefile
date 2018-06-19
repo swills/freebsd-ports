@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/graphics/scantailor/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/graphics/scantailor/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	scantailor
 PORTVERSION=	0.9.11.1
@@ -12,11 +12,12 @@ COMMENT=	Interactive post-processing tool for scanned pages
 
 LICENSE=	GPLv3
 
-LIB_DEPENDS=	libtiff.so:graphics/tiff \
-		libjbig.so:graphics/jbigkit \
-		libpng.so:graphics/png \
+BROKEN_powerpc64=	fails to compile: core.hpp:69: boost::lambda::<unnamed>::_1 causes a section type conflict
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/shared_ptr.hpp:devel/boost-libs
+LIB_DEPENDS=	libtiff.so:graphics/tiff \
+		libjbig.so:graphics/jbigkit \
+		libpng.so:graphics/png
 
 #MAKE_JOBS_UNSAFE=	yes
 USES=		cmake gettext jpeg

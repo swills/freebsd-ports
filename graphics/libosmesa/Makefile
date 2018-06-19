@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/graphics/libosmesa/Makefile 443828 2017-06-18 14:02:35Z rezny $
+# $FreeBSD: head/graphics/libosmesa/Makefile 472508 2018-06-16 00:44:11Z jbeich $
 
 PORTNAME=	libosmesa
 PORTVERSION=	${MESAVERSION}
@@ -8,12 +8,6 @@ CATEGORIES=	graphics
 COMMENT=	Off-Screen Mesa implementation of the OpenGL API
 
 USE_XORG=	glproto
-
-# As of version 17.0.5 / 17.1.2, the Gallium variant fails to build due to
-# incorrectly ordered linker flags. Fortunately, autoreconf fixes the problem.
-# Unfortunately, we must reconf before we know if we're doing a Gallium build.
-USES=		autoreconf
-EXTRA_PATCHES=	${PATCHDIR}/configure.ac
 
 .include <bsd.port.options.mk>
 .include "${.CURDIR:H:H}/graphics/mesa-dri/Makefile.common"

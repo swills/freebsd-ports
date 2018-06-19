@@ -1,6 +1,5 @@
-# $FreeBSD: head/sysutils/u-boot-nanopi-neo/Makefile 447113 2017-08-02 15:36:30Z linimon $
+# $FreeBSD: head/sysutils/u-boot-nanopi-neo/Makefile 472714 2018-06-18 20:22:13Z linimon $
 
-MAINTAINER=	manu@FreeBSD.org
 MASTERDIR=	${.CURDIR}/../u-boot-master
 
 MODEL=		nanopi_neo

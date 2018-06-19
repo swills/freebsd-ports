@@ -1,9 +1,8 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/textproc/hs-feed/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/textproc/hs-feed/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	feed
-PORTVERSION=	0.3.12.0
-PORTREVISION=	1
+PORTVERSION=	1.0.0.0
 CATEGORIES=	textproc haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -11,8 +10,9 @@ COMMENT=	Interfacing with RSS (v 0.9x, 2.x, 1.0) + Atom feeds
 
 LICENSE=	BSD3CLAUSE
 
-USE_CABAL=	old-locale>=1.0 old-time>=1 time-locale-compat>=0.1 \
-		utf8-string xml>=1.2.6
+USE_CABAL=	base-compat old-locale>=1.0 old-time>=1 safe \
+		time-locale-compat>=0.1 utf8-string xml>=1.2.6 xml-conduit \
+		xml-types
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

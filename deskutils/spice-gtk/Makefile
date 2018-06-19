@@ -1,8 +1,8 @@
 # Created by: olevole@olevole.ru
-# $FreeBSD: head/deskutils/spice-gtk/Makefile 464838 2018-03-17 18:09:32Z novel $
+# $FreeBSD: head/deskutils/spice-gtk/Makefile 472422 2018-06-15 03:44:17Z swills $
 
 PORTNAME=	spice-gtk
-PORTVERSION=	0.34
+PORTVERSION=	0.35
 CATEGORIES?=	deskutils gnome
 MASTER_SITES=	http://www.spice-space.org/download/gtk/
 
@@ -13,9 +13,9 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libepoxy.so:graphics/libepoxy \
 		libopus.so:audio/opus
-BUILD_DEPENDS=	spice-protocol>=0.12.10:devel/spice-protocol \
+BUILD_DEPENDS=	spice-protocol>=0.12.14:devel/spice-protocol \
 		${PYTHON_PKGNAMEPREFIX}pyparsing>=2.0.1:devel/py-pyparsing@${PY_FLAVOR}
-RUN_DEPENDS=	spice-protocol>=0.12.10:devel/spice-protocol
+RUN_DEPENDS=	spice-protocol>=0.12.14:devel/spice-protocol
 
 USES=		autoreconf cpe gettext-tools gmake jpeg libtool pkgconfig tar:bzip2 \
 		python ssl localbase:ldflags

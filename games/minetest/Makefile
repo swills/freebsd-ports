@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/minetest/Makefile 458402 2018-01-08 10:38:20Z krion $
+# $FreeBSD: head/games/minetest/Makefile 472224 2018-06-12 00:27:11Z amdmi3 $
 
 PORTNAME=	minetest
-PORTVERSION=	0.4.16
+PORTVERSION=	0.4.17.1
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org

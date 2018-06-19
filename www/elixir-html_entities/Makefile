@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/elixir-html_entities/Makefile 451745 2017-10-11 12:40:31Z olgeni $
+# $FreeBSD: head/www/elixir-html_entities/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	html_entities
 PORTVERSION=	0.4.0
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Elixir module for decoding HTML entities
 
 LICENSE=	MIT

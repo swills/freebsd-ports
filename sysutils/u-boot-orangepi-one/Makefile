@@ -1,6 +1,5 @@
-# $FreeBSD: head/sysutils/u-boot-orangepi-one/Makefile 431327 2017-01-12 22:49:08Z imp $
+# $FreeBSD: head/sysutils/u-boot-orangepi-one/Makefile 472714 2018-06-18 20:22:13Z linimon $
 
-MAINTAINER=	imp@FreeBSD.org
 MASTERDIR=	${.CURDIR}/../u-boot-master
 
 MODEL=		orangepi-one

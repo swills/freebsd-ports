@@ -1,5 +1,5 @@
 # Created by: ruslan@shevchenko.kiev.ua
-# $FreeBSD: head/lang/erlang-runtime17/Makefile 466967 2018-04-10 15:19:56Z olgeni $
+# $FreeBSD: head/lang/erlang-runtime17/Makefile 471907 2018-06-07 11:15:11Z olgeni $
 
 PORTNAME=	erlang
 PORTVERSION=	17.5.6.9
@@ -25,7 +25,7 @@ PATCHFILES=	patch-otp-17.5.1 patch-otp-17.5.2 patch-otp-17.5.3 \
 		patch-otp-17.5.6.4 patch-otp-17.5.6.5 patch-otp-17.5.6.6 \
 		patch-otp-17.5.6.7 patch-otp-17.5.6.8 patch-otp-17.5.6.9
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Functional programming language from Ericsson
 
 WRKSRC=		${WRKDIR}/otp_src_${ERLANG_REL}

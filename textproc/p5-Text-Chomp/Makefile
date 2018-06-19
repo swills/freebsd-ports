@@ -1,5 +1,5 @@
 # Created by: Jason Burgess <dev@fenux.net>
-# $FreeBSD: head/textproc/p5-Text-Chomp/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/textproc/p5-Text-Chomp/Makefile 471699 2018-06-04 18:16:22Z sunpoet $
 
 PORTNAME=	Text-Chomp
 PORTVERSION=	0.02
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Module implementing a portable chomp
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 USES=		perl5
 USE_PERL5=	configure

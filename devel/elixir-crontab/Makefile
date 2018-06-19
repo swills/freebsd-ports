@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-crontab/Makefile 451025 2017-10-01 07:36:02Z olgeni $
+# $FreeBSD: head/devel/elixir-crontab/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	crontab
 PORTVERSION=	1.1.2
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Crontab format parser in Elixir
 
 LICENSE=	MIT

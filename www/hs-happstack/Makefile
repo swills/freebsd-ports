@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/hs-happstack/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/www/hs-happstack/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	happstack
 PORTVERSION=	7.0.2
@@ -11,6 +11,8 @@ COMMENT=	The haskell application server stack + code generation
 LICENSE=	BSD3CLAUSE
 
 USE_CABAL=	happstack-server>=7.0
+
+IGNORE=		Doesn't build with recent GHC version
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

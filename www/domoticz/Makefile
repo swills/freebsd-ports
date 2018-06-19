@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/domoticz/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/www/domoticz/Makefile 472699 2018-06-18 14:40:31Z linimon $
 
 PORTNAME=	domoticz
 PORTVERSION=	3.${DOMOTICZ_REL}
@@ -10,6 +10,8 @@ COMMENT=	Home Automation System
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/License.txt
+
+BROKEN_powerpc64=	fails to compile: libboost_thread.so: undefined reference to std::__cxx11::basic_string
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libexpat.so:textproc/expat2

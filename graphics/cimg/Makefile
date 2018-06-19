@@ -1,7 +1,8 @@
 # Created by: thierry@pompo.net
-# $FreeBSD: head/graphics/cimg/Makefile 470308 2018-05-18 16:31:47Z thierry $
+# $FreeBSD: head/graphics/cimg/Makefile 471550 2018-06-04 14:46:41Z mat $
 
 PORTNAME=	cimg
+DISTVERSIONPREFIX=	v.
 DISTVERSION=	2.2.3
 PORTEPOCH=	3
 CATEGORIES=	graphics devel
@@ -29,7 +30,6 @@ BROKEN_powerpc64=	invokes x86 assembler
 USE_GITHUB=	yes
 GH_ACCOUNT=	dtschump
 GH_PROJECT=	CImg
-GH_TAGNAME=	v.${DISTVERSION}
 
 .if !defined(WITHOUT_LAPACK)
 . if defined(WITH_ATLAS)

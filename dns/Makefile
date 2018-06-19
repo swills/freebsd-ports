@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/Makefile 470325 2018-05-18 20:09:20Z tobik $
+# $FreeBSD: head/dns/Makefile 471924 2018-06-07 14:18:54Z dbaio $
 #
 
     COMMENT = Domain Name Service tools
@@ -13,6 +13,7 @@
     SUBDIR += bind910
     SUBDIR += bind911
     SUBDIR += bind912
+    SUBDIR += bind913
     SUBDIR += bind99
     SUBDIR += bindgraph
     SUBDIR += bundy
@@ -77,6 +78,7 @@
     SUBDIR += gen6dns
     SUBDIR += getdns
     SUBDIR += ghtool
+    SUBDIR += go-geodns
     SUBDIR += hesiod
     SUBDIR += hostdb
     SUBDIR += hs-dns
@@ -180,6 +182,7 @@
     SUBDIR += powerdns-recursor
     SUBDIR += powerdns-recursor40
     SUBDIR += public_suffix_list
+    SUBDIR += py-aiodns
     SUBDIR += py-cloudflare
     SUBDIR += py-dns
     SUBDIR += py-dns-lexicon

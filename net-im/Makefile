@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 470455 2018-05-20 13:23:03Z meta $
+# $FreeBSD: head/net-im/Makefile 472547 2018-06-16 13:22:09Z rene $
 #
 
     COMMENT = Instant messaging
@@ -31,7 +31,6 @@
     SUBDIR += hs-haskell-xmpp
     SUBDIR += icmpchat
     SUBDIR += icqlib
-    SUBDIR += imspector
     SUBDIR += jabber
     SUBDIR += jabber.el
     SUBDIR += jabberd
@@ -133,6 +132,7 @@
     SUBDIR += pidgin-skype
     SUBDIR += pidgin-skypeweb
     SUBDIR += pidgin-twitter
+    SUBDIR += pidgin-window_merge
     SUBDIR += plasma-applet-ktp-kde4
     SUBDIR += poezio
     SUBDIR += profanity

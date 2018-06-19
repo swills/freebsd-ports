@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/mathgl/Makefile 466066 2018-03-31 16:42:28Z yuri $
+# $FreeBSD: head/math/mathgl/Makefile 471491 2018-06-03 12:44:04Z antoine $
 
 PORTNAME=	mathgl
 DISTVERSION=	2.4.2.1
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libgif.so:graphics/giflib \
 		libhdf5.so:science/hdf5 \
 		libhpdf.so:print/libharu \
 		libltdl.so:devel/libltdl \
-		libpng16.so:graphics/png \
+		libpng.so:graphics/png \
 		libsz.so:science/szip
 
 USES=		cmake:outsource jpeg gettext-runtime python:2.7

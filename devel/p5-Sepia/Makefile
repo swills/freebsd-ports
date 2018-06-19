@@ -1,9 +1,9 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Sepia/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/devel/p5-Sepia/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	Sepia
 PORTVERSION=	0.992
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

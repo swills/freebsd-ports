@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-generic-deriving/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-generic-deriving/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	generic-deriving
-PORTVERSION=	1.11.2
-PORTREVISION=	1
+PORTVERSION=	1.12.1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

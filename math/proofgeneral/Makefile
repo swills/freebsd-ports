@@ -1,9 +1,9 @@
 # Created by: Timothy Bourke <timbob@bigpond.com>
-# $FreeBSD: head/math/proofgeneral/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/math/proofgeneral/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	proofgeneral
 PORTVERSION=	4.1
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	math elisp
 MASTER_SITES=	http://proofgeneral.inf.ed.ac.uk/releases/
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

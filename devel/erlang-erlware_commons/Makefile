@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/erlang-erlware_commons/Makefile 469228 2018-05-06 15:31:43Z olgeni $
+# $FreeBSD: head/devel/erlang-erlware_commons/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	erlware_commons
 PORTVERSION=	1.1.0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Erlang project focused on all aspects of reusable components
 
 LICENSE=	MIT

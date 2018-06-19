@@ -1,12 +1,12 @@
 # Created by: FreeBSD GNOME Team <gnome@freebsd.org>
-# $FreeBSD: head/sysutils/consolekit2/Makefile 447399 2017-08-05 10:58:48Z kwm $
+# $FreeBSD: head/sysutils/consolekit2/Makefile 472163 2018-06-11 02:14:07Z linimon $
 
 PORTNAME=	consolekit
 PORTVERSION=	1.2.0
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	https://github.com/ConsoleKit2/ConsoleKit2/releases/download/${PORTVERSION}/
-DISTNAME=	ConsoleKit2-${PORTVERSION}
 PKGNAMESUFFIX=	2
+DISTNAME=	ConsoleKit2-${PORTVERSION}
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Framework for defining and tracking users
@@ -19,6 +19,7 @@ LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 
 WRKSRC=		${WRKDIR}/ConsoleKit2-${PORTVERSION}
 USES=		gettext gmake libtool localbase pathfix pkgconfig tar:bzip2
+USE_CSTD=	gnu99
 USE_XORG=	x11
 USE_GNOME=	glib20 libxslt introspection:build
 GNU_CONFIGURE=	yes

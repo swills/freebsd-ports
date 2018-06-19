@@ -1,8 +1,7 @@
-# $FreeBSD: head/math/hs-distributive/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/math/hs-distributive/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	distributive
-PORTVERSION=	0.5.2
-PORTREVISION=	1
+PORTVERSION=	0.5.3
 CATEGORIES=	math haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,11 +1,11 @@
-# $FreeBSD: head/databases/erlang-couchbeam/Makefile 430606 2017-01-04 22:35:26Z olgeni $
+# $FreeBSD: head/databases/erlang-couchbeam/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	couchbeam
 PORTVERSION=	1.4.2
 CATEGORIES=	databases
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Apache CouchDB client in Erlang
 
 LICENSE=	MIT

@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/multimedia/gtk-youtube-viewer/Makefile 441506 2017-05-23 05:52:26Z miwi $
+# $FreeBSD: head/multimedia/gtk-youtube-viewer/Makefile 471748 2018-06-05 08:34:29Z amdmi3 $
 
 PORTNAME=	gtk-youtube-viewer
 PORTVERSION=	3.2.7
@@ -60,7 +60,7 @@ post-install-GTK2-on:
 	(cd ${STAGEDIR}${PREFIX}/share/pixmaps && ${LN} -sf \
 	../../${SITE_PERL_REL}/auto/share/dist/WWW-YoutubeViewer/icons/gtk-youtube-viewer.png)
 
-regression-test: build
+do-test:
 	cd ${WRKSRC} && ${PERL} ./Build test
 
 .include <bsd.port.mk>

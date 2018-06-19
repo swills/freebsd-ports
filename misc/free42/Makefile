@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/free42/Makefile 464558 2018-03-15 04:54:21Z yuri $
+# $FreeBSD: head/misc/free42/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	free42
 DISTVERSION=	2.0.20
@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BROKEN_aarch64=		fails to link: c++: error: no such file or directory: 'gcc111libbid.a'
 BROKEN_armv6=		fails to link: c++: error: no such file or directory: 'gcc111libbid.a'
 BROKEN_mips64=		fails to link: c++: error: no such file or directory: 'gcc111libbid.a'
+BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wno-c++11-narrowing"
 
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2

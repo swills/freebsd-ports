@@ -1,9 +1,9 @@
 # Created by: Dryice Liu <dryice@liu.com.cn>
-# $FreeBSD: head/textproc/xml-parse.el/Makefile 470213 2018-05-17 09:56:55Z tz $
+# $FreeBSD: head/textproc/xml-parse.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	xml-parse.el
 PORTVERSION=	1.5
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	textproc elisp
 MASTER_SITES=	http://dryice.name/computer/FreeBSD/distfiles/ \
 		http://sacha.free.net.ph/notebook/emacs/ \

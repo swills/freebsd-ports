@@ -1,5 +1,5 @@
 # Created by: luigi@FreeBSD.org
-# $FreeBSD: head/benchmarks/fio/Makefile 468080 2018-04-23 07:56:30Z bapt $
+# $FreeBSD: head/benchmarks/fio/Makefile 472282 2018-06-13 04:12:58Z linimon $
 
 PORTNAME=	fio
 PORTVERSION=	3.6
@@ -17,9 +17,6 @@ OPTIONS_DEFINE=	GNUPLOT EXAMPLES
 GNUPLOT_DESC=	Support for plotting graphs
 
 GNUPLOT_BUILD_DEPENDS=	${LOCALBASE}/bin/gnuplot:math/gnuplot
-
-BROKEN_aarch64=		Fails to compile: undefined symbol: getauxval
-BROKEN_armv6=		Fails to compile: unsupported ARM architecture
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/fio ${STAGEDIR}${PREFIX}/bin

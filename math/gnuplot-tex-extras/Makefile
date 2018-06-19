@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/gnuplot-tex-extras/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/gnuplot-tex-extras/Makefile 472559 2018-06-16 17:44:32Z glewis $
 
 PORTNAME=	gnuplot
-PORTVERSION=	4.6.6
+PORTVERSION=	5.2.4
 CATEGORIES=	math graphics
 MASTER_SITES=	SF
 PKGNAMESUFFIX=	-tex-extras

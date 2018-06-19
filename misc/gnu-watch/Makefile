@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@critical.ch>
-# $FreeBSD: head/misc/gnu-watch/Makefile 432828 2017-01-30 10:49:03Z ehaupt $
+# $FreeBSD: head/misc/gnu-watch/Makefile 471372 2018-06-02 14:55:55Z ehaupt $
 
 PORTNAME=	watch
-DISTVERSION=	3.3.12
+DISTVERSION=	3.3.15
 CATEGORIES=	misc
 MASTER_SITES=	SF/procps-ng/Production \
 		LOCAL/ehaupt

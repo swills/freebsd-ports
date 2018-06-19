@@ -1,8 +1,8 @@
 # Created by: Daniel O'Connor <darius@dons.net.au>
-# $FreeBSD: head/net/miniupnpd/Makefile 426078 2016-11-14 02:45:26Z danfe $
+# $FreeBSD: head/net/miniupnpd/Makefile 471492 2018-06-03 12:56:22Z miwi $
 
 PORTNAME=	miniupnpd
-PORTVERSION=	1.9.20160113
+PORTVERSION=	2.0.20180503
 PORTEPOCH=	1
 CATEGORIES=	net
 MASTER_SITES=	http://miniupnp.tuxfamily.org/files/ \

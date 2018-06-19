@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/elixir-poison/Makefile 440545 2017-05-10 08:12:18Z olgeni $
+# $FreeBSD: head/devel/elixir-poison/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	poison
 PORTVERSION=	3.1.0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Pure Elixir JSON library
 
 LICENSE=	ISCL

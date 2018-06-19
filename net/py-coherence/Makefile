@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/net/py-coherence/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/net/py-coherence/Makefile 472744 2018-06-19 01:55:49Z yuri $
 
 PORTNAME=	Coherence
 PORTVERSION=	0.6.6.2
+PORTREVISION=	1
 CATEGORIES=	net python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -22,7 +23,7 @@ GH_ACCOUNT=	coherence-project
 GH_TAGNAME=	4d5ee5f
 
 USES=		python:2.7
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils concurrent autoplist
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

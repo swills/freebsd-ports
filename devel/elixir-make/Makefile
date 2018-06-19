@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-make/Makefile 463719 2018-03-06 12:05:10Z olgeni $
+# $FreeBSD: head/devel/elixir-make/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	make
 DISTVERSIONPREFIX=	v
@@ -6,7 +6,7 @@ DISTVERSION=	0.4.1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Make compiler for Mix
 
 LICENSE=	APACHE20

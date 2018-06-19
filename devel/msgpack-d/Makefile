@@ -1,9 +1,8 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/msgpack-d/Makefile 460632 2018-02-01 20:46:35Z acm $
+# $FreeBSD: head/devel/msgpack-d/Makefile 471461 2018-06-03 06:52:50Z acm $
 
 PORTNAME=	msgpack-d
-DISTVERSION=	1.0.0-beta6
-PORTREVISION=	1
+DISTVERSION=	1.0.0-beta7
 CATEGORIES=	devel
 
 MAINTAINER=	acm@FreeBSD.org

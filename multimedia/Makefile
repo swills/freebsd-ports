@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 470583 2018-05-21 22:52:23Z swills $
+# $FreeBSD: head/multimedia/Makefile 472008 2018-06-08 15:06:05Z philip $
 #
 
     COMMENT = Multimedia software
@@ -42,6 +42,7 @@
     SUBDIR += cx88
     SUBDIR += deforaos-player
     SUBDIR += devede
+    SUBDIR += din
     SUBDIR += dirac
     SUBDIR += dragon
     SUBDIR += dragon-kde4

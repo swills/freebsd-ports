@@ -1,10 +1,10 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/security/pam_krb5-rh/Makefile 447034 2017-08-01 17:07:58Z zi $
+# $FreeBSD: head/security/pam_krb5-rh/Makefile 471097 2018-05-29 15:26:24Z zi $
 
 PORTNAME=	pam_krb5
 DISTVERSION=	2.4.13
 CATEGORIES=	security
-MASTER_SITES=	https://fedorahosted.org/released/${PORTNAME}/ \
+MASTER_SITES=	https://releases.pagure.org/${PORTNAME}/ \
 		ZI
 PKGNAMESUFFIX=	-rh
 

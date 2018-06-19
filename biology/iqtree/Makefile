@@ -1,4 +1,4 @@
-# $FreeBSD: head/biology/iqtree/Makefile 469673 2018-05-11 16:57:09Z jrm $
+# $FreeBSD: head/biology/iqtree/Makefile 472665 2018-06-18 01:48:46Z linimon $
 
 PORTNAME=	iqtree
 DISTVERSIONPREFIX=	v
@@ -11,9 +11,10 @@ COMMENT=	Efficient phylogenomic software by maximum likelihood
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_aarch64=	fails to compile: unrecognized command line option '-msse3'
-BROKEN_armv6=	fails to compile: unrecognized command line options '-m32' and '-msse3'
-BROKEN_armv7=	fails to compile: unrecognized command line options '-m32' and '-msse3'
+BROKEN_aarch64=		fails to compile: unrecognized command line option '-msse3'
+BROKEN_armv6=		fails to compile: unrecognized command line options '-m32' and '-msse3'
+BROKEN_armv7=		fails to compile: unrecognized command line options '-m32' and '-msse3'
+BROKEN_powerpc64=	fails to build: GCC version must be at least 4.8!
 
 USES=		cmake compiler:openmp eigen:3
 USE_GITHUB=	yes

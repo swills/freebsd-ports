@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/hs-dia-functions/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/graphics/hs-dia-functions/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	dia-functions
 PORTVERSION=	0.2.1.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics haskell
 
 MAINTAINER=	haskell@FreeBSD.org

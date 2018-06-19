@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/elixir-phoenix_pubsub/Makefile 443595 2017-06-14 18:21:24Z olgeni $
+# $FreeBSD: head/www/elixir-phoenix_pubsub/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	phoenix_pubsub
 PORTVERSION=	1.0.2
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Distributed PubSub for Phoenix
 
 LICENSE=	MIT

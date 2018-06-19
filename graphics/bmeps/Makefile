@@ -1,8 +1,8 @@
 # Created by: Hideyuki KURASHINA <rushani@FreeBSD.org>
-# $FreeBSD: head/graphics/bmeps/Makefile 468127 2018-04-23 18:35:55Z krion $
+# $FreeBSD: head/graphics/bmeps/Makefile 470820 2018-05-25 03:54:44Z swills $
 
 PORTNAME=	bmpp
-PORTVERSION=	4.14.0
+DISTVERSION=	4.15.0
 CATEGORIES=	graphics perl5
 MASTER_SITES=	SF/dktools/dktools/dktools-${PORTVERSION}
 DISTNAME=	dktools-${PORTVERSION}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/glucose/Makefile 460848 2018-02-03 20:59:14Z yuri $
+# $FreeBSD: head/math/glucose/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	glucose
 DISTVERSION=	4.1
@@ -12,7 +12,7 @@ COMMENT=	Parallel SAT solver based on Minisat, with glue clauses
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENCE
 
-USES=		gmake tar:tgz
+USES=		compiler:c++11-lang gmake tar:tgz
 
 PLIST_FILES=	bin/glucose bin/glucose-syrup
 

@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/archivers/py-python-lzo/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/archivers/py-python-lzo/Makefile 471007 2018-05-27 21:36:20Z yuri $
 
 PORTNAME=	python-lzo
-PORTVERSION=	1.11
+DISTVERSION=	1.12
 CATEGORIES=	archivers python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,8 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	liblzo2.so:archivers/lzo2
 
-USES=		python
+USES=		localbase python
 USE_PYTHON=	autoplist distutils
-CFLAGS+=	-I${LOCALBASE}/include -I${LOCALBASE}/include/lzo
 
 .include <bsd.port.mk>

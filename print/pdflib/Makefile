@@ -1,11 +1,11 @@
 # Created by: Alex Dupre <sysadmin@alexdupre.com>
-# $FreeBSD: head/print/pdflib/Makefile 451181 2017-10-04 07:34:04Z ale $
+# $FreeBSD: head/print/pdflib/Makefile 472433 2018-06-15 08:35:28Z ale $
 
 PORTNAME=	pdflib
 PORTVERSION=	7.0.5
 PORTREVISION=	5
 CATEGORIES=	print perl5 java
-MASTER_SITES=	http://www.pdflib.com/binaries/PDFlib/${PORTVERSION:S/.//g}/
+MASTER_SITES=	LOCAL/ale
 DISTNAME=	PDFlib-Lite-${PORTVERSION}p3
 
 MAINTAINER=	ale@FreeBSD.org

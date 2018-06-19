@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/erlang-syslog/Makefile 441357 2017-05-21 08:39:20Z olgeni $
+# $FreeBSD: head/devel/erlang-syslog/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	syslog
 PORTVERSION=	1.0.5
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Erlang port driver for interacting with syslog
 
 USES=		erlang:rebar

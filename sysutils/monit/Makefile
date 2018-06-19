@@ -1,10 +1,10 @@
 # Created by: Martin Pala <martinp@tildeslash.com>
-# $FreeBSD: head/sysutils/monit/Makefile 453753 2017-11-08 16:30:26Z pizzamig $
+# $FreeBSD: head/sysutils/monit/Makefile 471143 2018-05-30 18:08:22Z swills $
 
 PORTNAME=	monit
-PORTVERSION=	5.25.0
+PORTVERSION=	5.25.2
 CATEGORIES=	sysutils
-MASTER_SITES=	http://www.mmonit.com/monit/dist/
+MASTER_SITES=	https://mmonit.com/monit/dist/
 
 MAINTAINER=	martinp@tildeslash.com
 COMMENT=	Unix system management and proactive monitoring

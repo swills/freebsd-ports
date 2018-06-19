@@ -1,8 +1,9 @@
 # Created by: Manuel Creach <manuel.creach@icloud.com>
-# $FreeBSD: head/net/libnfs/Makefile 460581 2018-02-01 09:09:53Z gahr $
+# $FreeBSD: head/net/libnfs/Makefile 471550 2018-06-04 14:46:41Z mat $
 
 PORTNAME=	libnfs
 PORTVERSION=	2.0.0
+DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	net
 
 MAINTAINER=	snoe925@gmail.com
@@ -17,7 +18,6 @@ USES=		autoreconf gmake libtool pkgconfig
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	sahlberg
-GH_TAGNAME=	${PORTNAME}-${PORTVERSION}
 
 CONFIGURE_ARGS=	--disable-werror
 

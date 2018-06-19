@@ -1,9 +1,9 @@
 # Created by: Dryice Liu <dryice@liu.com.cn>
-# $FreeBSD: head/textproc/emacs-wiki/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/textproc/emacs-wiki/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	emacs-wiki
 PORTVERSION=	2.72
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	textproc elisp
 MASTER_SITES=	http://www.mwolson.org/static/dist/emacs-wiki/ \
 		http://dryice.name/computer/FreeBSD/distfiles/

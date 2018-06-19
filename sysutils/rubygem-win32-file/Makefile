@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/rubygem-win32-file/Makefile 468764 2018-05-01 15:37:55Z cmt $
+# $FreeBSD: head/sysutils/rubygem-win32-file/Makefile 471169 2018-05-30 19:48:54Z sunpoet $
 
 PORTNAME=	win32-file
-PORTVERSION=	0.8.1
+PORTVERSION=	0.8.2
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 

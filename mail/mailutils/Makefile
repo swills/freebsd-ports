@@ -1,8 +1,9 @@
 # Created by: Attila Nagy <bra@fsn.hu>
-# $FreeBSD: head/mail/mailutils/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/mail/mailutils/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	mailutils
 PORTVERSION=	3.4
+PORTREVISION=   1
 CATEGORIES=	mail
 MASTER_SITES=	GNU GNU_ALPHA
 

@@ -1,9 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/math/py-fastcluster/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/math/py-fastcluster/Makefile 471306 2018-06-01 22:47:23Z sunpoet $
 
 PORTNAME=	fastcluster
-PORTVERSION=	1.1.24
-PORTREVISION=	1
+PORTVERSION=	1.1.25
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/www/geeknote/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/www/geeknote/Makefile 472772 2018-06-19 08:34:36Z amdmi3 $
 
 PORTNAME=	geeknote
 DISTVERSION=	0.2a
@@ -25,7 +25,7 @@ USE_PYTHON=     autoplist distutils
 GH_ACCOUNT=	VitaliyRodnenko
 GH_TAGNAME=	7ea2255
 
-regression-test: build
+do-test:
 	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYDISTUTILS_SETUP} test
 
 .include <bsd.port.mk>

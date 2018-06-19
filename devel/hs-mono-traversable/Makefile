@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-mono-traversable/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-mono-traversable/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	mono-traversable
-PORTVERSION=	1.0.2
-PORTREVISION=	1
+PORTVERSION=	1.0.8.1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -11,7 +10,7 @@ COMMENT=	Type classes for mapping, folding, and traversing monomorphic container
 LICENSE=	MIT
 
 USE_CABAL=	comonad>=3.0.3 dlist>=0.6 dlist-instances>=0.1 hashable \
-		semigroupoids>=3.0 semigroups>=0.10 split text>=0.11 \
+		semigroupoids>=3.0 semigroups>=0.10 split \
 		unordered-containers>=0.2 vector>=0.10 vector-algorithms>=0.6 \
 		vector-instances
 

@@ -1,9 +1,9 @@
 # Created by: Peter Schuller <peter.schuller@infidyne.com>
-# $FreeBSD: head/textproc/doc-mode.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/textproc/doc-mode.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	doc-mode.el
 PORTVERSION=	1.1
-PORTREVISION=	15
+PORTREVISION=	16
 CATEGORIES=	textproc elisp
 MASTER_SITES=	SF/xpt/doc-mode/doc-mode-${PORTVERSION}
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

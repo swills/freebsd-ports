@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/erlang-eredis/Makefile 448894 2017-08-29 08:25:50Z olgeni $
+# $FreeBSD: head/databases/erlang-eredis/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	eredis
 PORTVERSION=	1.1.0
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Non-blocking Redis client for Erlang
 
 LICENSE=	MIT

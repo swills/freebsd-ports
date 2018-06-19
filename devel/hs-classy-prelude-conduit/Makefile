@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-classy-prelude-conduit/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-classy-prelude-conduit/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	classy-prelude-conduit
-PORTVERSION=	1.2.0
-PORTREVISION=	1
+PORTVERSION=	1.4.0
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-getopt/Makefile 453342 2017-11-02 11:34:17Z olgeni $
+# $FreeBSD: head/devel/erlang-getopt/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	getopt
 PORTVERSION=	1.0.1
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Command line parsing library for Erlang
 
 LICENSE=	BSD3CLAUSE

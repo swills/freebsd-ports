@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/erlang-gpb/Makefile 469853 2018-05-14 06:04:13Z olgeni $
+# $FreeBSD: head/devel/erlang-gpb/Makefile 472391 2018-06-14 18:36:19Z olgeni $
 
 PORTNAME=	gpb
-PORTVERSION=	4.1.7
+PORTVERSION=	4.1.9
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Google Protobuf implementation for Erlang
 
 LICENSE=	LGPL21

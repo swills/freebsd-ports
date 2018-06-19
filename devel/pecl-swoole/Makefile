@@ -1,5 +1,5 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/pecl-swoole/Makefile 470022 2018-05-15 15:06:13Z vanilla $
+# $FreeBSD: head/devel/pecl-swoole/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	swoole
 PORTVERSION=	1.10.5
@@ -11,9 +11,7 @@ COMMENT=	Asynchronous & concurrent & distributed networking framework
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_powerpc64=	fails to build: swoole_config.h: error GCC 4.4 or later required
-
-USES=		localbase:ldflags php:pecl ssl
+USES=		compiler:c11 localbase:ldflags php:pecl ssl
 USE_PHP=	pcre
 
 OPTIONS_DEFINE=	HTTP2 REDIS SOCKETS

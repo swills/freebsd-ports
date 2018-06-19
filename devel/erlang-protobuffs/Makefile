@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/erlang-protobuffs/Makefile 419235 2016-07-29 10:16:17Z olgeni $
+# $FreeBSD: head/devel/erlang-protobuffs/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	protobuffs
 PORTVERSION=	0.9.0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Protocol Buffers interface for Erlang
 
 LICENSE=	APACHE20

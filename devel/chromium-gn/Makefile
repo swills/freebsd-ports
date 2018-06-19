@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/chromium-gn/Makefile 448911 2017-08-29 13:05:21Z pizzamig $
+# $FreeBSD: head/devel/chromium-gn/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 CATEGORIES=	devel www
 PKGNAMESUFFIX=	-gn
@@ -7,6 +7,8 @@ MAINTAINER=	pizzamig@FreeBSD.org
 COMMENT=	Gn meta build framework
 
 MASTERDIR=	${.CURDIR}/../../www/chromium
+
+BROKEN_powerpc64=	fails to compile: safe_math_clang_gcc_impl.h:132:45: '__builtin_subcb' was not declared in this scope
 
 BUILDTYPE=	Release
 NO_BUILD=	yes

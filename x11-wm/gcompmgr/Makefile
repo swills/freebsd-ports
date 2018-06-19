@@ -1,5 +1,5 @@
 # Created by: UMENO Takashi
-# $FreeBSD: head/x11-wm/gcompmgr/Makefile 460001 2018-01-26 14:41:43Z danfe $
+# $FreeBSD: head/x11-wm/gcompmgr/Makefile 472699 2018-06-18 14:40:31Z linimon $
 
 PORTNAME=	gcompmgr
 PORTVERSION=	0.21
@@ -9,6 +9,8 @@ MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GNOME interface to xcompmgr
+
+BROKEN_powerpc64=	fails to compile: params.cc:135:37: 'memset' was not declared in this scope
 
 RUN_DEPENDS=	xcompmgr:x11-wm/xcompmgr
 

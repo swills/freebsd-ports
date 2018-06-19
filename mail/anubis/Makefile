@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/mail/anubis/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/mail/anubis/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	anubis
 PORTVERSION=	4.2
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	mail
 MASTER_SITES=	GNU
 

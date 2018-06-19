@@ -1,8 +1,8 @@
 # Created by: Wei-chun Chao
-# $FreeBSD: head/net-mgmt/p5-Net-Netmask/Makefile 437950 2017-04-07 18:50:22Z lth $
+# $FreeBSD: head/net-mgmt/p5-Net-Netmask/Makefile 471743 2018-06-05 05:34:49Z wen $
 
 PORTNAME=	Net-Netmask
-PORTVERSION=	1.9022
+PORTVERSION=	1.9101
 CATEGORIES=	net-mgmt perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

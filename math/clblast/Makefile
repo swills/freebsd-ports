@@ -1,5 +1,5 @@
 # Created by: Johannes M Dieterich <jmd@FreeBSD.org>
-# $FreeBSD: head/math/clblast/Makefile 451106 2017-10-03 02:23:22Z jmd $
+# $FreeBSD: head/math/clblast/Makefile 472160 2018-06-11 01:44:15Z linimon $
 
 PORTNAME=	clblast
 PORTVERSION=	1.1.0
@@ -19,7 +19,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	CNugteren
 GH_PROJECT=	CLBlast
 
-USE_LDCONFIG=	yes
 USES=		cmake
+USE_GCC=	yes
+USE_LDCONFIG=	yes
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/games/freedink-data/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/games/freedink-data/Makefile 471932 2018-06-07 16:24:47Z shurd $
 
 PORTNAME=	freedink-data
 PORTVERSION=	1.08.${PORTVER}
@@ -12,7 +12,7 @@ COMMENT=	Game data for games/freedink (Dink Smallwood)
 USES=		gettext gmake
 NO_BUILD=	yes
 
-PORTVER=	20140901
+PORTVER=	20170409
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|g' \

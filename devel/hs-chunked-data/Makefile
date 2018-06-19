@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-chunked-data/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-chunked-data/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	chunked-data
-PORTVERSION=	0.3.0
-PORTREVISION=	1
+PORTVERSION=	0.3.1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -10,8 +9,7 @@ COMMENT=	Typeclasses for dealing with various chunked data representations
 
 LICENSE=	MIT
 
-USE_CABAL=	blaze-builder mono-traversable>=0.2 semigroups text>=0.11 \
-		vector
+USE_CABAL=	blaze-builder mono-traversable>=0.2 semigroups vector
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

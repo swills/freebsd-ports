@@ -1,9 +1,9 @@
 # Created by: Kyle Evans <kevans@FreeBSD.org>
-# $FreeBSD: head/games/zdoom/Makefile 445117 2017-07-06 01:39:08Z ultima $
+# $FreeBSD: head/games/zdoom/Makefile 471300 2018-06-01 22:16:11Z riggs $
 
 PORTNAME=	zdoom
 PORTVERSION=	2.8.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games
 
 MAINTAINER=	kevans@FreeBSD.org

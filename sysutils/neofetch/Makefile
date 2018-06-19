@@ -1,8 +1,8 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/sysutils/neofetch/Makefile 451523 2017-10-08 12:43:54Z madpilot $
+# $FreeBSD: head/sysutils/neofetch/Makefile 470724 2018-05-23 21:45:50Z fernape $
 
 PORTNAME=	neofetch
-PORTVERSION=	3.3.0
+DISTVERSION=	4.0.2
 CATEGORIES=	sysutils
 
 MAINTAINER=	pkubaj@anongoth.pl

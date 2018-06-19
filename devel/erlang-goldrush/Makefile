@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/erlang-goldrush/Makefile 415881 2016-05-26 08:28:17Z olgeni $
+# $FreeBSD: head/devel/erlang-goldrush/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	goldrush
 PORTVERSION=	0.1.9
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Fast event stream processing library for Erlang
 
 LICENSE=	ISCL

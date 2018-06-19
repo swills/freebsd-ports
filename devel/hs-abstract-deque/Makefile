@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-abstract-deque/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-abstract-deque/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	abstract-deque
 PORTVERSION=	0.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas (<thierry@thomas.as>)
-# $FreeBSD: head/deskutils/horde-kronolith/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/deskutils/horde-kronolith/Makefile 470691 2018-05-23 09:34:15Z amdmi3 $
 
 PORTNAME=	kronolith
 PORTVERSION=	4.2.23
@@ -18,7 +18,7 @@ DATE_HOLIDAYS_DESC=	Depend on PEAR Date_Holidays
 TIMEOBJECTS_DESC=	Depenbd on Horde timeobjects
 XMLWRITER_DESC=		Depend on PHP xmlwriter extension
 
-USES=	horde cpe
+USES=		horde cpe
 USE_PHP=	gettext json simplexml
 USE_HORDE_BUILD=	Horde_Role
 USE_HORDE_RUN=	Horde_Role \

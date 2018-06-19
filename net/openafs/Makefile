@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/openafs/Makefile 455921 2017-12-11 03:37:20Z bjk $
+# $FreeBSD: head/net/openafs/Makefile 472455 2018-06-15 14:19:25Z amdmi3 $
 
 PORTNAME=	openafs
 DISTVERSION=	${AFS_DISTVERSION}.${DBVERSION:S/-//g}
@@ -83,6 +83,9 @@ CFLAGS+=	-mstackrealign
 # Upstream does not support the client on 11 and newer
 CONFIGURE_ARGS += --disable-kernel-module
 PLIST_SUB+=	KMOD="@comment "
+
+post-install:
+	@${RMDIR} ${STAGEDIR}${PREFIX}/lib/openafs
 .else
 CONFIGURE_ARGS += --enable-kernel-module
 PLIST_SUB+=	KMOD=

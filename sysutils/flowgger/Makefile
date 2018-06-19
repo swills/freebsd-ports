@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/flowgger/Makefile 468993 2018-05-03 22:43:22Z jbeich $
+# $FreeBSD: head/sysutils/flowgger/Makefile 472373 2018-06-14 09:56:02Z tobik $
 
 PORTNAME=	flowgger
 DISTVERSION=	0.2.6-28
@@ -12,8 +12,7 @@ COMMENT=	Fast data collector
 LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-# gmake for backtrace-sys
-USES=		cargo gmake
+USES=		cargo
 USE_GITHUB=	yes
 GH_ACCOUNT=	jedisct1
 GH_TUPLE=	Manishearth:rust-clippy:387efd459c0ad3db7af15f1a573057b8587f9748:clippy \

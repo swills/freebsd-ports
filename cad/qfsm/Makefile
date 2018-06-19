@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/cad/qfsm/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/cad/qfsm/Makefile 471526 2018-06-03 23:41:53Z truckman $
 
 PORTNAME=	qfsm
 PORTVERSION=	0.54.0
@@ -14,10 +14,10 @@ LICENSE=	GPLv3+
 
 OPTIONS_DEFINE=	GRAPHVIZ DOCS EXAMPLES
 
+USES=		tar:bzip2 cmake desktop-file-utils
 USE_XORG=	xi
 USE_QT4=	corelib gui qt3support svg xml \
 		moc_build qmake_build rcc_build uic_build
-USES=		tar:bzip2 cmake desktop-file-utils
 INSTALLS_ICONS=	yes
 
 GRAPHVIZ_BUILD_DEPENDS=	graphviz>=2.22:graphics/graphviz

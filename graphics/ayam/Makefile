@@ -1,5 +1,5 @@
 # Created by: Igor Pokrovsky <tiamat@comset.net>
-# $FreeBSD: head/graphics/ayam/Makefile 454884 2017-11-25 14:29:00Z vanilla $
+# $FreeBSD: head/graphics/ayam/Makefile 472706 2018-06-18 19:03:03Z linimon $
 
 PORTNAME=	ayam
 PORTVERSION=	1.24
@@ -21,7 +21,7 @@ RUN_DEPENDS=	xdg-open:devel/xdg-utils
 
 WRKSRC=		${WRKDIR}/${PORTNAME}/src
 
-USES=		gmake tk
+USES=		compiler:c++11-lang gmake tk
 USE_XORG=	x11 xext xmu
 USE_GL=		glu
 MAKE_ENV=	TCL_INCLUDEDIR="${TCL_INCLUDEDIR}" \

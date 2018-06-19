@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/rubygem-webpush/Makefile 457893 2018-01-02 15:34:49Z sunpoet $
+# $FreeBSD: head/security/rubygem-webpush/Makefile 470936 2018-05-26 17:49:49Z sunpoet $
 
 PORTNAME=	webpush
-PORTVERSION=	0.3.3
+PORTVERSION=	0.3.4
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 

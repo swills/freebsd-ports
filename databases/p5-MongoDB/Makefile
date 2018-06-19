@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/databases/p5-MongoDB/Makefile 459334 2018-01-18 14:42:47Z sunpoet $
+# $FreeBSD: head/databases/p5-MongoDB/Makefile 470736 2018-05-23 23:24:27Z sunpoet $
 
 PORTNAME=	MongoDB
-PORTVERSION=	1.8.1
+PORTVERSION=	1.8.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN
@@ -14,7 +14,7 @@ COMMENT=	Mongo Driver for Perl
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	p5-Authen-SCRAM>=0.003:security/p5-Authen-SCRAM \
+BUILD_DEPENDS=	p5-Authen-SCRAM>=0.009:security/p5-Authen-SCRAM \
 		p5-BSON>=1:databases/p5-BSON \
 		p5-Class-XSAccessor>0:devel/p5-Class-XSAccessor \
 		p5-DateTime>=0.78:devel/p5-DateTime \

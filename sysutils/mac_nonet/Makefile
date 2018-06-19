@@ -1,5 +1,5 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/sysutils/mac_nonet/Makefile 464226 2018-03-12 07:05:24Z tobik $
+# $FreeBSD: head/sysutils/mac_nonet/Makefile 471981 2018-06-08 04:32:38Z linimon $
 
 PORTNAME=	mac_nonet
 DISTVERSION=	g20150821
@@ -11,6 +11,8 @@ COMMENT=	MAC policy to disable access to networking for certain group
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_powerpc64=	fails to build: make[1]: don't know how to make /usr/src/sys/tools/vnode_if.awk
 
 USES=		kmod uidfix
 

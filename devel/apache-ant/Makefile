@@ -1,8 +1,8 @@
 # Created by: Ernst de Haan <znerd@FreeBSD.org>
-# $FreeBSD: head/devel/apache-ant/Makefile 463792 2018-03-07 14:00:28Z joneum $
+# $FreeBSD: head/devel/apache-ant/Makefile 470948 2018-05-26 19:54:48Z girgen $
 
 PORTNAME=	apache-ant
-DISTVERSION=	1.10.1
+DISTVERSION=	1.10.3
 CATEGORIES=	devel java
 MASTER_SITES=	APACHE/ant/binaries/:bin \
 		LOCAL/hq:man

@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/vether-kmod/Makefile 470050 2018-05-15 20:24:40Z krion $
+# $FreeBSD: head/net/vether-kmod/Makefile 471202 2018-05-31 12:16:24Z krion $
 
 PORTNAME=	vether-kmod
-DISTVERSION=	g20180515
+DISTVERSION=	g20180530
 CATEGORIES=	net
 
 MAINTAINER=	henning.matyschok@outlook.com
@@ -15,7 +15,7 @@ USES=		kmod uidfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	hmatyschok
 GH_PROJECT=	if_vether
-GH_TAGNAME=	8c4a0c9c7c2793817e2ba42b0eafc3070b0c50c6
+GH_TAGNAME=	9932438def29ca03255894652301ca3a04e27072
 
 PLIST_FILES=	${KMODDIR}/if_vether.ko \
 		man/man4/if_vether.4.gz \

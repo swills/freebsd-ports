@@ -1,9 +1,9 @@
 # Created by: Martin Klaffenboeck <martin.klaffenboeck@gmx.at>
-# $FreeBSD: head/games/gcompris/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/games/gcompris/Makefile 472458 2018-06-15 14:22:25Z amdmi3 $
 
 PORTNAME=	gcompris
 PORTVERSION=	15.10
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games gnome
 MASTER_SITES=	http://gcompris.net/download/
 
@@ -23,8 +23,9 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} 
 		gnucap:cad/gnucap
 
 USES=		display:configure gettext gmake libtool localbase pathfix \
-		pkgconfig python:2.7 shebangfix sqlite tar:bzip2
-SHEBANG_FILES=	boards/voices/*.sh
+		pkgconfig python:2.7 shebangfix sqlite tar:bzip2 perl5
+USE_PERL5=	run
+SHEBANG_FILES=	boards/voices/*.sh boards/voices/*.pl
 GNU_CONFIGURE=	yes
 USE_GSTREAMER=	yes
 USE_SDL=	mixer

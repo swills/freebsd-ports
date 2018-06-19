@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-quantum/Makefile 465715 2018-03-27 15:10:53Z olgeni $
+# $FreeBSD: head/devel/elixir-quantum/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	quantum
 PORTVERSION=	2.2.6
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Cron-like job scheduler for Elixir
 
 LICENSE=	APACHE20

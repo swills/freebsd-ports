@@ -1,8 +1,7 @@
-# Created by: marius@alchemy.franken.de
-# $FreeBSD: head/sysutils/gcdmaster/Makefile 426578 2016-11-20 12:41:44Z bapt $
+# Created by: marius
+# $FreeBSD: head/sysutils/gcdmaster/Makefile 472345 2018-06-13 21:40:03Z marius $
 
 PORTNAME=	gcdmaster
-PORTREVISION=	8
 
 COMMENT=	GNOME frontend for cdrdao
 

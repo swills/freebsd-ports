@@ -1,8 +1,8 @@
 # Created by: Antoine Brodin <antoine@FreeBSD.org>
-# $FreeBSD: head/security/py-dfdatetime/Makefile 459361 2018-01-18 16:15:48Z antoine $
+# $FreeBSD: head/security/py-dfdatetime/Makefile 470781 2018-05-24 14:19:39Z antoine $
 
 PORTNAME=	dfdatetime
-PORTVERSION=	20180110
+PORTVERSION=	20180510
 CATEGORIES=	security devel python
 MASTER_SITES=	CHEESESHOP \
 		https://github.com/log2timeline/dfdatetime/releases/download/${PORTVERSION}/
@@ -14,7 +14,7 @@ COMMENT=	Digital Forensics Date and Time
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>0:devel/py-mock@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/qt5-wayland/Makefile 470288 2018-05-18 12:27:43Z rakuco $
+# $FreeBSD: head/graphics/qt5-wayland/Makefile 471539 2018-06-04 11:39:27Z tcberner $
 
 PORTNAME=	wayland
 DISTVERSION=	${QT5_VERSION}
+PORTREVISION=	1
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	qt5-
 

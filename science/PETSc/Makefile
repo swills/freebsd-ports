@@ -1,8 +1,8 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/science/PETSc/Makefile 470530 2018-05-21 11:00:41Z yuri $
+# $FreeBSD: head/science/PETSc/Makefile 471967 2018-06-08 02:29:18Z linimon $
 
 PORTNAME=	PETSc
-DISTVERSION=	3.9.1
+DISTVERSION=	3.9.2
 CATEGORIES=	science devel
 MASTER_SITES=	http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/
 DISTNAME=	${PORTNAME:tl}-${DISTVERSION}
@@ -12,6 +12,11 @@ COMMENT=	Suite of data structures and routines from Argonne National Laboratory
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_aarch64=		fails to build: MPI compiler wrappers do not work. See http://www.mcs.anl.gov/petsc/documentation/faq.html#mpi-compilers
+BROKEN_armv6=		fails to build: MPI compiler wrappers do not work. See http://www.mcs.anl.gov/petsc/documentation/faq.html#mpi-compilers
+BROKEN_armv7=		fails to build: MPI compiler wrappers do not work. See http://www.mcs.anl.gov/petsc/documentation/faq.html#mpi-compilers
+BROKEN_powerpc64=	fails to build: MPI compiler wrappers do not work. See http://www.mcs.anl.gov/petsc/documentation/faq.html#mpi-compilers
 
 LIB_DEPENDS=	libmpich.so:net/mpich2
 

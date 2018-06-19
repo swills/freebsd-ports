@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/horde-passwd/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/www/horde-passwd/Makefile 471127 2018-05-30 09:34:19Z amdmi3 $
 
 PORTNAME=	passwd
 PORTVERSION=	5.0.7
@@ -11,7 +11,7 @@ COMMENT=	Horde password changing application
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=	horde cpe php
+USES=		horde cpe php
 USE_PHP=	gettext
 USE_HORDE_BUILD=	Horde_Role
 USE_HORDE_RUN=	Horde_Role \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-gettext/Makefile 463718 2018-03-06 12:04:02Z olgeni $
+# $FreeBSD: head/devel/elixir-gettext/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	gettext
 PORTVERSION=	0.15.0
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Implementation of gettext for Elixir
 
 LICENSE=	APACHE20

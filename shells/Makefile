@@ -1,4 +1,4 @@
-# $FreeBSD: head/shells/Makefile 463740 2018-03-06 19:10:08Z krion $
+# $FreeBSD: head/shells/Makefile 472672 2018-06-18 04:59:40Z tobik $
 #
 
     COMMENT = Shells
@@ -8,6 +8,7 @@
     SUBDIR += bash-completion
     SUBDIR += bash-static
     SUBDIR += bashc
+    SUBDIR += bicon
     SUBDIR += ch
     SUBDIR += dash
     SUBDIR += envy
@@ -48,6 +49,7 @@
     SUBDIR += wcd
     SUBDIR += xonsh
     SUBDIR += zsh
+    SUBDIR += zsh-antigen
     SUBDIR += zsh-navigation-tools
 
 .include <bsd.port.subdir.mk>

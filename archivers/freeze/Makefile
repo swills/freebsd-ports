@@ -1,5 +1,5 @@
 # Created by: lukin@okbmei.msk.su
-# $FreeBSD: head/archivers/freeze/Makefile 461458 2018-02-11 05:23:00Z danfe $
+# $FreeBSD: head/archivers/freeze/Makefile 472207 2018-06-11 20:56:24Z feld $
 
 PORTNAME=	freeze
 PORTVERSION=	2.5
@@ -9,7 +9,7 @@ MASTER_SITES=	http://web.warwick.ac.uk/ftp/pub/compression/ \
 		http://www.rebootking.de/distfiles/ \
 		http://ngsoftwareltd.com/freebsd/distfiles/
 
-MAINTAINER=	gabor@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Compression program - often used in QNX
 
 LICENSE=	NONE

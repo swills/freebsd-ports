@@ -1,8 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/devel/py-pep8-naming/Makefile 469222 2018-05-06 14:42:52Z amdmi3 $
+# $FreeBSD: head/devel/py-pep8-naming/Makefile 472632 2018-06-17 20:33:04Z amdmi3 $
 
 PORTNAME=	pep8-naming
-PORTVERSION=	0.6.1
+PORTVERSION=	0.7.0
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

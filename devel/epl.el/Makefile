@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/epl.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/devel/epl.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	epl.el
 PORTVERSION=	0.8
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 

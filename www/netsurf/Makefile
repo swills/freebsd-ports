@@ -1,5 +1,5 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/www/netsurf/Makefile 464091 2018-03-10 21:21:39Z linimon $
+# $FreeBSD: head/www/netsurf/Makefile 472464 2018-06-15 17:08:57Z fernape $
 
 PORTNAME=	netsurf
 PORTVERSION=	3.7
@@ -7,7 +7,7 @@ CATEGORIES=	www
 MASTER_SITES=	http://download.netsurf-browser.org/netsurf/releases/source/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	neel@neelc.org
 COMMENT=	Lightweight web browser
 
 LICENSE=	GPLv2 MIT

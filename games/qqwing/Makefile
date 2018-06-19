@@ -1,19 +1,19 @@
-# $FreeBSD: head/games/qqwing/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/games/qqwing/Makefile 472160 2018-06-11 01:44:15Z linimon $
 
 PORTNAME=	qqwing
 PORTVERSION=	1.3.4
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games gnome
 DIST_SUBDIR=	gnome3
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Sudoku generating and solving software
 
+USES=		autoreconf compiler:c++11-lang gmake libtool pathfix pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	stephenostermiller
 
-USES=		autoreconf gmake libtool pathfix pkgconfig
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_OUTSOURCE=	yes

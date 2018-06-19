@@ -1,11 +1,11 @@
-# $FreeBSD: head/net/erlang-ranch/Makefile 435132 2017-03-01 11:15:40Z olgeni $
+# $FreeBSD: head/net/erlang-ranch/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	ranch
 PORTVERSION=	1.3.2
 CATEGORIES=	net
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Erlang socket acceptor pool for TCP protocols
 
 LICENSE=	ISCL

@@ -1,8 +1,8 @@
-# $FreeBSD: head/net/hs-network/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/net/hs-network/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	network
 PORTVERSION=	2.6.3.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net haskell
 
 MAINTAINER=	haskell@FreeBSD.org

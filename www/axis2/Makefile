@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/axis2/Makefile 457163 2017-12-24 14:02:45Z dbaio $
+# $FreeBSD: head/www/axis2/Makefile 471115 2018-05-29 23:07:47Z dbaio $
 
 PORTNAME=	axis2
-PORTVERSION=	1.7.7
+PORTVERSION=	1.7.8
 CATEGORIES=	www java
 MASTER_SITES=	APACHE/axis/${PORTNAME}/java/core/${PORTVERSION}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-bin

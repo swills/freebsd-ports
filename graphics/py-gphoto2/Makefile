@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/py-gphoto2/Makefile 458949 2018-01-14 01:23:15Z woodsb02 $
+# $FreeBSD: head/graphics/py-gphoto2/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	gphoto2
 PORTVERSION=	1.8.2
@@ -12,6 +12,8 @@ COMMENT=	Python bindings for libgphoto2
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wno-unused-but-set-variable"
 
 LIB_DEPENDS=	libgphoto2.so:graphics/libgphoto2
 

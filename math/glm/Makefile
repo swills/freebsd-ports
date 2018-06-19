@@ -1,5 +1,5 @@
 # Created by: demon@FreeBSD.org
-# $FreeBSD: head/math/glm/Makefile 456629 2017-12-18 12:34:51Z amdmi3 $
+# $FreeBSD: head/math/glm/Makefile 472160 2018-06-11 01:44:15Z linimon $
 
 PORTNAME=	glm
 PORTVERSION=	0.9.8.5
@@ -12,12 +12,11 @@ COMMENT=	C++ mathematics library for software based on the OpenGL GLSL
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/copying.txt
 
+USES=		cmake:outsource compiler:c++11-lang pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	g-truc
 
 NO_ARCH=	yes
-
-USES=		cmake:outsource pkgconfig
 
 OPTIONS_DEFINE=	TEST
 TEST_CMAKE_BOOL=	GLM_TEST_ENABLE

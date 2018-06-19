@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-drivers/xf86-input-synaptics/Makefile 433863 2017-02-11 14:17:58Z rezny $
+# $FreeBSD: head/x11-drivers/xf86-input-synaptics/Makefile 472039 2018-06-09 06:57:07Z zeising $
 
 PORTNAME=	xf86-input-synaptics
-PORTVERSION=	1.9.0
+PORTVERSION=	1.9.1
 CATEGORIES=	x11-drivers
 
 MAINTAINER=	x11@FreeBSD.org

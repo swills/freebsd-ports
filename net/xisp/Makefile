@@ -1,5 +1,5 @@
 # Created by: tm@onepost.net
-# $FreeBSD: head/net/xisp/Makefile 421976 2016-09-13 04:50:04Z marino $
+# $FreeBSD: head/net/xisp/Makefile 471830 2018-06-06 09:34:25Z amdmi3 $
 
 PORTNAME=	xisp
 PORTVERSION=	2.7p4
@@ -12,10 +12,13 @@ PATCH_SITES=	http://www.ml-search.com/xisp/distfiles/
 MAINTAINER=	tm@onepost.net
 COMMENT=	User-friendly X interface to pppd/chat
 
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 LIB_DEPENDS=	libforms.so:x11-toolkits/xforms
 
 USES=		alias ssl
-USE_XORG=	xpm
+USE_XORG=	x11 xpm
 
 CFLAGS+=	-DUSE_OPENSSL -I${OPENSSLINC}
 MAKE_ENV+=	CCFLAGS="${CFLAGS}"

@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-setlocale/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-setlocale/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	setlocale
-PORTVERSION=	1.0.0.5
-PORTREVISION=	1
+PORTVERSION=	1.0.0.6
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

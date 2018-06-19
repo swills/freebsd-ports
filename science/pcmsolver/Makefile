@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/pcmsolver/Makefile 468559 2018-04-28 18:18:40Z yuri $
+# $FreeBSD: head/science/pcmsolver/Makefile 472699 2018-06-18 14:40:31Z linimon $
 
 PORTNAME=	pcmsolver
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.2.0
+DISTVERSION=	1.2.1
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -10,6 +10,8 @@ COMMENT=	API for the Polarizable Continuum Model
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_powerpc64=	fails to compile: SphericalDiffuse.cpp:182: invalid initialization of non-const reference
 
 LIB_DEPENDS=	libflang.so:devel/flang # USES=fortran:clang breaks in configure: can't find libs directory
 

@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/sysutils/gigolo/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/gigolo/Makefile 472160 2018-06-11 01:44:15Z linimon $
 
 PORTNAME=	gigolo
 PORTVERSION=	0.4.2
@@ -11,6 +11,9 @@ MAINTAINER=	koalative@gmail.com
 COMMENT=	Frontend to easily manage filesystem connections
 
 LICENSE=	GPLv2
+
+ONLY_FOR_ARCHS=		amd64 i386 powerpc64
+ONLY_FOR_ARCHS_REASON=	Does not compile
 
 BUILD_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser
 
@@ -26,9 +29,6 @@ OPTIONS_SUB=	yes
 
 NLS_CONFIGURE_ENABLE=	nls
 NLS_USES=	gettext-runtime
-
-ONLY_FOR_ARCHS=	i386 amd64
-ONLY_FOR_ARCHS_REASON=	Does not compile
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|^DOCFILES.*|DOCFILES =|' \

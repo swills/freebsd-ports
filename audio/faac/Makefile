@@ -1,5 +1,5 @@
 # Created by: Michael Johnson <ahze@ahze.net>
-# $FreeBSD: head/audio/faac/Makefile 454488 2017-11-19 11:37:26Z riggs $
+# $FreeBSD: head/audio/faac/Makefile 472665 2018-06-18 01:48:46Z linimon $
 
 PORTNAME=	faac
 PORTVERSION=	1.29.9.2
@@ -16,6 +16,8 @@ LICENSE_NAME_ISO=	ISO/IEC14496
 LICENSE_FILE=	${WRKSRC}/COPYING
 LICENSE_FILE_ISO=	${WRKSRC}/README
 LICENSE_PERMS_ISO=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
+BROKEN_powerpc64=	fails to build: quantize.c:152: error: initializer element is not constant
 
 USES=		gmake libtool
 INSTALL_TARGET=	install-strip

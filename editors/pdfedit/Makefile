@@ -1,5 +1,5 @@
 # Created by: alepulver
-# $FreeBSD: head/editors/pdfedit/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/editors/pdfedit/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	pdfedit
 PORTVERSION=	0.4.5
@@ -11,6 +11,9 @@ MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	PDF document manipulating library
 
 LICENSE=	GPLv2
+
+BROKEN_powerpc64=	fails to configure: error: Could not link against boost_program_options
+BROKEN_sparc64=		fails to configure: error: Could not link against boost_program_options
 
 LIB_DEPENDS=	libboost_filesystem.so:devel/boost-libs \
 		libfreetype.so:print/freetype2 \
@@ -33,8 +36,6 @@ INSTALL_TARGET=	install install-tools
 PORTDOCS=	Changelog README AUTHORS
 
 OPTIONS_DEFINE=	DOCS
-
-BROKEN_sparc64=		Fails to configure: error: Could not link against boost_program_options
 
 post-extract:
 	${INSTALL_DATA} ${WRKSRC}/doc/AUTHORS ${WRKSRC}

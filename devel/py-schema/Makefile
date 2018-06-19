@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-schema/Makefile 464134 2018-03-11 00:40:24Z yuri $
+# $FreeBSD: head/devel/py-schema/Makefile 472463 2018-06-15 16:30:11Z yuri $
 
 PORTNAME=	schema
-DISTVERSION=	0.6.7
+DISTVERSION=	0.6.8
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

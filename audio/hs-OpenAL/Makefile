@@ -1,9 +1,9 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/audio/hs-OpenAL/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/audio/hs-OpenAL/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	OpenAL
 PORTVERSION=	1.7.0.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio haskell
 
 MAINTAINER=	haskell@FreeBSD.org

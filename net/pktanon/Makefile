@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/pktanon/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/net/pktanon/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	pktanon
 PORTVERSION=	1.4.0
@@ -13,7 +13,7 @@ COMMENT=	Network trace anonymizer
 LIB_DEPENDS=	libboost_regex.so:devel/boost-libs \
 		libxerces-c.so.3:textproc/xerces-c3
 
-USES=		dos2unix
+USES=		compiler:c++0x dos2unix
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib -lboost_system

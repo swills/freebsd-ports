@@ -1,5 +1,5 @@
 # Created by: Daniel Eischen <deischen@FreeBSD.org>
-# $FreeBSD: head/editors/nedit/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/editors/nedit/Makefile 471289 2018-06-01 20:23:02Z rene $
 
 PORTNAME=	nedit
 PORTVERSION=	5.6
@@ -11,7 +11,7 @@ MASTER_SITES=	http://people.freebsd.org/~deischen/distfiles/ \
 DISTFILES=	nedit-5.6a-src.tar.gz nedit.app-defaults
 EXTRACT_ONLY=	nedit-5.6a-src.tar.gz
 
-MAINTAINER=	deischen@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	X11/Motif GUI text editor for programs and plain text files
 
 LICENSE=	GPLv1

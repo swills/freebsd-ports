@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/jna/Makefile 458527 2018-01-09 13:09:47Z vanilla $
+# $FreeBSD: head/devel/jna/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	jna
 PORTVERSION=	4.5.1
@@ -15,6 +15,7 @@ LICENSE_FILE_APACHE20=	${WRKSRC}/LICENSE.AL
 
 BROKEN_armv6=		fails to compile: build.xml: compilation failed
 BROKEN_armv7=		fails to compile: build.xml: compilation failed
+BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wno-unknown-warning-option"
 
 USES=		autoreconf:build gmake libtool
 USE_ANT=	yes

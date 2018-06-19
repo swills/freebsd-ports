@@ -1,12 +1,12 @@
-# $FreeBSD: head/devel/elixir-smppex/Makefile 461578 2018-02-12 11:52:07Z olgeni $
+# $FreeBSD: head/devel/elixir-smppex/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	smppex
-PORTVERSION=	2.2.4
+PORTVERSION=	2.2.7
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	SMPP 3.4 library for Elixir
 
 LICENSE=	MIT

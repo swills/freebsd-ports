@@ -1,5 +1,5 @@
 # Created by: Henry Hu <henry.hu.sh@gmail.com>
-# $FreeBSD: head/chinese/ibus-libpinyin/Makefile 456048 2017-12-11 16:48:54Z antoine $
+# $FreeBSD: head/chinese/ibus-libpinyin/Makefile 472665 2018-06-18 01:48:46Z linimon $
 
 PORTNAME=	ibus-libpinyin
 PORTVERSION=	1.7.2
@@ -11,6 +11,8 @@ MAINTAINER=	henry.hu.sh@gmail.com
 COMMENT=	Intelligent Pinyin engine based on libpinyin for IBus
 
 LICENSE=	GPLv2
+
+BROKEN_powerpc64=	fails to compile: PYLibPinyin.cc:222:54: 'getline' was not declared in this scope
 
 LIB_DEPENDS=	libsqlite3.so:databases/sqlite3 \
 		libibus-1.0.so:textproc/ibus \

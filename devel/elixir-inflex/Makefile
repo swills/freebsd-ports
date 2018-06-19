@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-inflex/Makefile 391919 2015-07-13 17:20:01Z olgeni $
+# $FreeBSD: head/devel/elixir-inflex/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	inflex
 PORTVERSION=	1.4.1
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Inflector library for Elixir
 
 LICENSE=	APACHE20

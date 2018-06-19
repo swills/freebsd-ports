@@ -1,8 +1,8 @@
 # Created by: Miguel Clara <miguelmclara@gmail.com>
-# $FreeBSD: head/editors/linux-sublime3/Makefile 464170 2018-03-11 13:35:14Z tobik $
+# $FreeBSD: head/editors/linux-sublime3/Makefile 472098 2018-06-09 21:38:38Z swills $
 
 PORTNAME=	sublime
-PORTVERSION=	3.1.43
+PORTVERSION=	3.1.76
 CATEGORIES=	editors linux
 MASTER_SITES=	http://download.sublimetext.com/
 PKGNAMEPREFIX=	linux-

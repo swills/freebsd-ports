@@ -1,14 +1,16 @@
-# $FreeBSD: head/lang/J/Makefile 467617 2018-04-17 16:52:17Z pi $
+# $FreeBSD: head/lang/J/Makefile 471550 2018-06-04 14:46:41Z mat $
 
 PORTNAME=	J
-PORTVERSION=	${JVERSION:S/^j//:S/-release//}
+DISTVERSIONPREFIX=	j
+DISTVERSION=	808
+DISTVERSIONSUFFIX=	-release
 CATEGORIES=	lang math
 
 MAINTAINER=	sevenjp@gmail.com
 COMMENT=	J programming language
 
 LICENSE=	GPLv3
-LICENSE_FILE=	${WRKDIR}/jsource-${JVERSION}/license.txt
+LICENSE_FILE=	${WRKSRC}/license.txt
 
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON_amd64=	Not built or tested for other archs. i386 needs hostdefs and netdefs files to be generated.
@@ -25,10 +27,6 @@ SUB_FILES=	jconsole profile.ijs
 USE_GITHUB=	yes
 GH_ACCOUNT=	jsoftware
 GH_PROJECT=	jsource
-GH_TAGNAME=	${JVERSION}
-
-# J is released with ports-unfriendly versioning
-JVERSION=	j808-release
 
 BIN_FILES=	jconsole
 LIB_FILES=	libj.so libtsdll.so

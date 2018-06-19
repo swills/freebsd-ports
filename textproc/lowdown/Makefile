@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/lowdown/Makefile 468078 2018-04-23 07:50:26Z bapt $
+# $FreeBSD: head/textproc/lowdown/Makefile 472329 2018-06-13 15:44:17Z bapt $
 
 PORTNAME=	lowdown
-PORTVERSION=	0.3.2
+PORTVERSION=	0.3.3
 CATEGORIES=	textproc
 MASTER_SITES=	http://kristaps.bsd.lv/lowdown/snapshots/
 

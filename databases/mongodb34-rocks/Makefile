@@ -1,9 +1,9 @@
-# $FreeBSD: head/databases/mongodb34-rocks/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/databases/mongodb34-rocks/Makefile 472187 2018-06-11 12:00:59Z mat $
 
 PORTNAME=	mongodb
 PORTVERSION=	3.4.6
 DISTVERSIONPREFIX=	r
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	databases net
 MASTER_SITES=	https://fastdl.mongodb.org/src/ \
 		http://fastdl.mongodb.org/src/ \
@@ -51,7 +51,6 @@ CONFLICTS_INSTALL=	mongodb \
 			mongodb32 \
 			mongodb34
 
-WITH_DEBUG=yes
 MAKE_ARGS=	--prefix=${STAGEDIR}${PREFIX} \
 		--use-system-pcre --use-system-snappy \
 		--use-system-boost --use-system-zlib \

@@ -1,8 +1,9 @@
-# $FreeBSD: head/biology/bedtools/Makefile 467783 2018-04-19 16:44:59Z jwb $
+# $FreeBSD: head/biology/bedtools/Makefile 472560 2018-06-16 17:55:01Z jwb $
 
 PORTNAME=	bedtools
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.27.1
+PORTREVISION=	1
 CATEGORIES=	biology
 
 MAINTAINER=	jwb@FreeBSD.org

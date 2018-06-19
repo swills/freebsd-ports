@@ -1,10 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/tanks-of-freedom/Makefile 464714 2018-03-16 17:27:57Z amdmi3 $
+# $FreeBSD: head/games/tanks-of-freedom/Makefile 471949 2018-06-07 19:34:49Z amdmi3 $
 
 PORTNAME=	tanks-of-freedom
-PORTVERSION=	0.6.3
+PORTVERSION=	0.7.0
 DISTVERSIONSUFFIX=-beta
-PORTREVISION=	1
 CATEGORIES=	games
 
 MAINTAINER=	amdmi3@FreeBSD.org

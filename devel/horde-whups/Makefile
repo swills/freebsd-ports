@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/horde-whups/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/devel/horde-whups/Makefile 472600 2018-06-17 09:34:34Z amdmi3 $
 
 PORTNAME=	whups
 DISTVERSION=	3.0.12
@@ -11,7 +11,7 @@ COMMENT=	Horde bug tracking/ticketing system
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=	horde cpe
+USES=		horde cpe
 USE_PHP=	gettext json
 USE_HORDE_BUILD=	Horde_Role
 USE_HORDE_RUN=	Horde_Role \

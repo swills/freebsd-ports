@@ -1,8 +1,8 @@
 # Created by: Sascha Holzleiter <sascha@root-login.org>
-# $FreeBSD: head/security/gopass/Makefile 468769 2018-05-01 17:15:42Z krion $
+# $FreeBSD: head/security/gopass/Makefile 472689 2018-06-18 13:15:23Z swills $
 
 PORTNAME=	gopass
-PORTVERSION=	1.6.11
+PORTVERSION=	1.8.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 
@@ -12,12 +12,13 @@ COMMENT=	Gopass is a rewrite of the pass password manager in Go
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	gpg2:security/gnupg
+RUN_DEPENDS=	git:devel/git \
+		gpg2:security/gnupg
 
 USES=		go
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	justwatchcom
+GH_ACCOUNT=	gopasspw
 
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${PORTNAME}
 

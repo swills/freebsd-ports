@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/p5-DBD-cego/Makefile 453762 2017-11-08 19:11:26Z pi $
+# $FreeBSD: head/databases/p5-DBD-cego/Makefile 472706 2018-06-18 19:03:03Z linimon $
 
 PORTNAME=	DBD-cego
 PORTVERSION=	1.4.0
@@ -15,9 +15,10 @@ BUILD_DEPENDS=	p5-DBI>=1.631:databases/p5-DBI
 RUN_DEPENDS=	p5-DBI>=1.631:databases/p5-DBI
 LIB_DEPENDS=	libcego.so:databases/cego
 
-USES=		gmake perl5
+USES=		compiler gmake perl5
 USE_PERL5=	configure
 CC:=		${CXX}
+COMPILER_TYPE=	clang
 CONFIGURE_ARGS+=	--prefix=${PREFIX}
 
 post-install:

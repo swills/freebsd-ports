@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-cipher-blowfish/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/security/hs-cipher-blowfish/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	cipher-blowfish
 PORTVERSION=	0.0.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

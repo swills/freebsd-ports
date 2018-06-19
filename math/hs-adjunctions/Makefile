@@ -1,8 +1,7 @@
-# $FreeBSD: head/math/hs-adjunctions/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/math/hs-adjunctions/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	adjunctions
-PORTVERSION=	4.3
-PORTREVISION=	1
+PORTVERSION=	4.4
 CATEGORIES=	math haskell
 
 MAINTAINER=	haskell@FreeBSD.org

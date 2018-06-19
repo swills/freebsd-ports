@@ -1,8 +1,9 @@
 # Created by: Mij <mij@bitchx.it>
-# $FreeBSD: head/security/sshguard/Makefile 459308 2018-01-18 01:15:48Z dbaio $
+# $FreeBSD: head/security/sshguard/Makefile 471012 2018-05-28 01:30:39Z adamw $
 
 PORTNAME=	sshguard
 PORTVERSION=	2.1.0
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	SF/sshguard/sshguard/${PORTVERSION}
 

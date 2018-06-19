@@ -1,12 +1,11 @@
 # Created by: Satoshi TAOKA <taoka@FreeBSD.org>
-# $FreeBSD: head/japanese/FreeWnn-server/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
+# $FreeBSD: head/japanese/FreeWnn-server/Makefile 472628 2018-06-17 19:10:27Z pi $
 
 PORTNAME=	FreeWnn
 PORTVERSION=	1.1.1.a021
 PORTREVISION=	14
 CATEGORIES?=	japanese
-MASTER_SITES=	ftp://ftp.freewnn.org/pub/FreeWnn/alpha/ \
-		OSDN/freewnn/17724
+MASTER_SITES=	OSDN/freewnn/17724
 PKGNAMESUFFIX=	-server
 DISTNAME=	${PORTNAME}-1.1.1-a021
 

@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/databases/dbtool/Makefile 419843 2016-08-08 13:46:50Z mat $
+# $FreeBSD: head/databases/dbtool/Makefile 472627 2018-06-17 19:06:51Z tobik $
 
 PORTNAME=	dbtool
 PORTVERSION=	1.9.1
@@ -14,13 +14,10 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpcre.so:devel/pcre
 
-USES=		gmake shebangfix
+USES=		gmake localbase shebangfix
 SHEBANG_FILES=	samples/account-db/accdb
 bash_OLD_CMD=	/bin/sh
 GNU_CONFIGURE=	yes
-
-CPPFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib
 
 PORTEXAMPLES=	*
 PLIST_FILES=	bin/dbtool man/man1/dbtool.1.gz

@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/go14/Makefile 464590 2018-03-15 14:51:39Z linimon $
+# $FreeBSD: head/lang/go14/Makefile 470967 2018-05-27 08:34:17Z amdmi3 $
 
 PORTNAME=	go14
 PORTVERSION=	1.4.3
@@ -68,7 +68,7 @@ do-build:
 do-install:
 	@${CP} -a ${WRKSRC} ${STAGEDIR}${PREFIX}/go14
 
-regression-test: build
+do-test:
 	cd ${WRKSRC}/src && GOROOT=${WRKSRC} PATH=${WRKSRC}/bin:${PATH} ${SH} run.bash --no-rebuild --banner
 
 .include <bsd.port.post.mk>

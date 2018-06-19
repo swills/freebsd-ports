@@ -1,10 +1,10 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/sysutils/unetbootin/Makefile 453225 2017-10-31 10:30:04Z danfe $
+# $FreeBSD: head/sysutils/unetbootin/Makefile 471558 2018-06-04 15:31:52Z danfe $
 
 PORTNAME=	unetbootin
-PORTVERSION=	657
+PORTVERSION=	661
 CATEGORIES=	sysutils
-MASTER_SITES=	SF/${PORTNAME}/UNetbootin/${PORTVERSION}
+MASTER_SITES=	https://github.com/${PORTNAME}/${PORTNAME}/releases/download/${PORTVERSION}/
 DISTNAME=	${PORTNAME}-source-${PORTVERSION}
 
 MAINTAINER=	danfe@FreeBSD.org
@@ -23,7 +23,7 @@ QMAKE_ARGS=	DEFINES+=LOCALBASE=\\\\\\\"${LOCALBASE}\\\\\\\"
 NO_WRKSUBDIR=	yes
 
 post-patch:
-	@${REINPLACE_CMD} -e 's,/usr/share,${PREFIX}/share,g' \
+	@${REINPLACE_CMD} -e 's,/usr/,${PREFIX}/,g' \
 		${WRKSRC}/main.cpp
 
 do-configure:

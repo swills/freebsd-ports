@@ -1,10 +1,10 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/dcd-server/Makefile 464641 2018-03-15 21:35:58Z bdrewery $
+# $FreeBSD: head/devel/dcd-server/Makefile 471462 2018-06-03 06:54:59Z acm $
 
 PORTNAME=	dcd
-PORTVERSION=	0.9.1
+PORTVERSION=	0.9.6
 DISTVERSIONPREFIX=	v
-PORTREVISION?=	1
+PORTREVISION?=	0
 CATEGORIES?=	devel
 PKGNAMESUFFIX?=	-server
 
@@ -18,7 +18,8 @@ BUILD_DEPENDS=	ldmd2:lang/ldc \
 		${LOCALBASE}/lib/d/libemsi_containers.a:devel/containers \
 		${LOCALBASE}/lib/d/libdsymbol.a:devel/dsymbol \
 		${LOCALBASE}/lib/d/libmsgpack-d.a:devel/msgpack-d \
-		${LOCALBASE}/lib/d/libdparse.a:devel/libdparse
+		${LOCALBASE}/lib/d/libdparse.a:devel/libdparse \
+		${LOCALBASE}/lib/d/libstdx-allocator.a:devel/stdx-allocator
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	dlang-community
@@ -39,15 +40,15 @@ do-build:
 .endif
 
 do-install:
-	@${MKDIR} ${STAGEDIR}/${D_INCLUDE_DIR}/${PKGNAMESUFFIX:S/-//}
-	${INSTALL_PROGRAM} ${WRKSRC}/dcd${PKGNAMESUFFIX} ${STAGEDIR}${PREFIX}/bin/
+	@${MKDIR} ${STAGEDIR}/${D_INCLUDE_DIR}/dcd/${PKGNAMESUFFIX:S/-//}
+	${INSTALL_PROGRAM} ${WRKSRC}/bin/dcd${PKGNAMESUFFIX} ${STAGEDIR}${PREFIX}/bin/
 	${INSTALL_MAN} ${WRKSRC}/man1/dcd${PKGNAMESUFFIX}.1 ${STAGEDIR}${MAN1PREFIX}/man/man1
-	cd ${WRKSRC}/src/${PKGNAMESUFFIX:S/-//} && ${COPYTREE_SHARE} . ${STAGEDIR}${D_INCLUDE_DIR}/${PKGNAMESUFFIX:S/-//} "-name *\.d"
+	cd ${WRKSRC}/src/dcd/${PKGNAMESUFFIX:S/-//} && ${COPYTREE_SHARE} . ${STAGEDIR}${D_INCLUDE_DIR}/dcd/${PKGNAMESUFFIX:S/-//} "-name *\.d"
 .if ${PKGNAMESUFFIX} == "-server"
 	@${MKDIR} ${STAGEDIR}/${D_LIB_DIR}
 	@${INSTALL_DATA} ${WRKSRC}/libdcd.a ${STAGEDIR}${D_LIB_DIR}
 	@${MKDIR} ${STAGEDIR}/${D_INCLUDE_DIR}/common
-	cd ${WRKSRC}/src/common && ${COPYTREE_SHARE} . ${STAGEDIR}${D_INCLUDE_DIR}/common "-name *\.d"
+	cd ${WRKSRC}/src/dcd/common && ${COPYTREE_SHARE} . ${STAGEDIR}${D_INCLUDE_DIR}/dcd/common "-name *\.d"
 .endif
 
 .include <bsd.port.mk>

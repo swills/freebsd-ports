@@ -1,8 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/net/py-urllib3/Makefile 461424 2018-02-10 19:59:06Z sunpoet $
+# $FreeBSD: head/net/py-urllib3/Makefile 471820 2018-06-05 20:55:09Z antoine $
 
 PORTNAME=	urllib3
 PORTVERSION=	1.22
+PORTEPOCH=	1
 CATEGORIES=	net python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

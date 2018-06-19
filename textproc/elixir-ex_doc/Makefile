@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/elixir-ex_doc/Makefile 461780 2018-02-14 12:06:10Z olgeni $
+# $FreeBSD: head/textproc/elixir-ex_doc/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	ex_doc
 PORTVERSION=	0.18.3
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Tool to generate documentation for Elixir projects
 
 LICENSE=	APACHE20 MIT

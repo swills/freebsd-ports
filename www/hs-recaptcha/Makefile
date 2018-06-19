@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/hs-recaptcha/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/www/hs-recaptcha/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	recaptcha
 PORTVERSION=	0.1.0.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org

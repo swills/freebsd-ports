@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/ndproxy/Makefile 447578 2017-08-08 22:06:40Z ultima $
+# $FreeBSD: head/net/ndproxy/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	ndproxy
 PORTVERSION=	2.0
@@ -10,6 +10,8 @@ COMMENT=	Implementation of IPv6 Neighbor Discovery proxy
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_powerpc64=	fails to build: ndproxy.c:51: function declaration isn't a prototype
 
 SUB_FILES=	pkg-message
 

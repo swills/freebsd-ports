@@ -1,8 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-strings/Makefile 464283 2018-03-12 20:36:09Z sunpoet $
+# $FreeBSD: head/devel/rubygem-strings/Makefile 471784 2018-06-05 18:56:08Z sunpoet $
 
 PORTNAME=	strings
 PORTVERSION=	0.1.1
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

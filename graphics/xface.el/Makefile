@@ -1,5 +1,5 @@
 # Created by: Yoichi NAKAYAMA <yoichi@FreeBSD.org>
-# $FreeBSD: head/graphics/xface.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/graphics/xface.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	xface.el
 PORTVERSION=	1.3.6.24
@@ -14,6 +14,11 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	X-Face encoder/decoder/viewer for Emacsen
 
 LICENSE=	GPLv2+
+
+.if ${FLAVOR:U} != devel && ${FLAVOR:U} != devel_nox
+# http://pkg.awarnach.mathstat.dal.ca/data/11i386-default/2018-05-30_07h36m11s/logs/errors/xface.el-emacs26-1.3.6.24_18.log
+BROKEN=		fails to build
+.endif
 
 RUN_DEPENDS=	compface:mail/faces
 

@@ -1,17 +1,19 @@
 # Created by: Phillip Neumann <pneumann@gmail.com>
-# $FreeBSD: head/net/rabbitmq/Makefile 470610 2018-05-22 13:15:13Z mat $
+# $FreeBSD: head/net/rabbitmq/Makefile 472534 2018-06-16 10:08:20Z olgeni $
 
 PORTNAME=	rabbitmq
-PORTVERSION=	3.7.5
+PORTVERSION=	3.7.6
 CATEGORIES=	net
 MASTER_SITES=	https://github.com/rabbitmq/rabbitmq-server/releases/download/v${PORTVERSION}/
 DISTNAME=	${PORTNAME}-server-${PORTVERSION}
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	RabbitMQ is an implementation of AMQP
 
 LICENSE=	MPL11
 LICENSE_FILE=	${WRKSRC}/LICENSE-MPL-RabbitMQ
+
+BROKEN_powerpc64=	fails to build: (ArgumentError) argument error
 
 BUILD_DEPENDS=	erlang-runtime19>=19.3:lang/erlang-runtime19 \
 		elixir:lang/elixir \

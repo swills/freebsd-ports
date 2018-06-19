@@ -1,11 +1,13 @@
-# $FreeBSD: head/sysutils/plasma5-kde-cli-tools/Makefile 468495 2018-04-27 20:29:36Z tcberner $
+# $FreeBSD: head/sysutils/plasma5-kde-cli-tools/Makefile 470866 2018-05-25 21:12:10Z adridg $
 
 PORTNAME=	kde-cli-tools
 DISTVERSION=	${KDE_PLASMA_VERSION}
 CATEGORIES=	sysutils kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	Plasma5 non-interactive system tools 
+COMMENT=	Plasma5 non-interactive system tools
+
+CONFLICTS_INSTALL=	kde-runtime-kde4
 
 USES=		cmake:outsource compiler:c++11-lib cpe gettext kde:5 tar:xz
 USE_KDE=	activities auth bookmarks codecs completion config configwidgets \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/horde-imp/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/mail/horde-imp/Makefile 471995 2018-06-08 09:34:27Z amdmi3 $
 
 PORTNAME=	imp
 PORTVERSION=	6.2.21
@@ -11,7 +11,7 @@ COMMENT=	Horde web based webmail system
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=	horde cpe
+USES=		horde cpe
 USE_HORDE_BUILD=	Horde_Role
 USE_HORDE_RUN=	Horde_Role \
 		horde \

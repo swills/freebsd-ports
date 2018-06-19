@@ -1,5 +1,5 @@
 # Created by: Alexander Kriventsov <avk@vl.ru>
-# $FreeBSD: head/devel/p5-Data-Average/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Data-Average/Makefile 471594 2018-06-04 18:03:10Z sunpoet $
 
 PORTNAME=	Data-Average
 PORTVERSION=	0.03000
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	avk@vl.ru
 COMMENT=	Hold Data Set To Calculate Average
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-UNIVERSAL-isa>=0:devel/p5-UNIVERSAL-isa
 RUN_DEPENDS=	p5-UNIVERSAL-isa>=0:devel/p5-UNIVERSAL-isa

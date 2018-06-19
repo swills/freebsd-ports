@@ -1,5 +1,5 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc7/Makefile 469956 2018-05-14 19:15:36Z tijl $
+# $FreeBSD: head/lang/gcc7/Makefile 471032 2018-05-28 09:04:30Z gerald $
 
 PORTNAME=	gcc
 PORTVERSION=	7.3.0
@@ -36,6 +36,8 @@ USES=		compiler cpe gmake iconv libtool makeinfo perl5 tar:xz
 USE_BINUTILS=	yes
 USE_PERL5=	build
 SSP_UNSAFE=	yes
+CFLAGS:=	${CFLAGS:N-mretpoline}
+CXXFLAGS:=	${CXXFLAGS:N-mretpoline}
 
 OPTIONS_DEFINE=		BOOTSTRAP GRAPHITE
 OPTIONS_DEFAULT=	BOOTSTRAP

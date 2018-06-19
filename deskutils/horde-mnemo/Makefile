@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/horde-mnemo/Makefile 463917 2018-03-08 19:48:41Z mat $
+# $FreeBSD: head/deskutils/horde-mnemo/Makefile 470829 2018-05-25 09:34:14Z amdmi3 $
 
 PORTNAME=	mnemo
 PORTVERSION=	4.2.14
@@ -12,7 +12,7 @@ COMMENT=	Horde web based notes manager
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=	horde cpe
+USES=		horde cpe
 USE_PHP=	gettext
 USE_HORDE_BUILD=	Horde_Role
 USE_HORDE_RUN=	Horde_Role \

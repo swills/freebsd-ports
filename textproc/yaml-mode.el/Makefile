@@ -1,10 +1,10 @@
 # Created by: KIMURA Yasuhiro <yasu@utahime.org>
-# $FreeBSD: head/textproc/yaml-mode.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/textproc/yaml-mode.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	yaml-mode.el
 PORTVERSION=	0.0.13
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	textproc elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 

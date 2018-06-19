@@ -1,9 +1,10 @@
 # Created by: Vlad Galu <galu@packetdam.com>
-# $FreeBSD: head/databases/arangodb32/Makefile 468173 2018-04-24 03:50:08Z yuri $
+# $FreeBSD: head/databases/arangodb32/Makefile 472080 2018-06-09 18:41:46Z riggs $
 
 PORTNAME=	arangodb
 DISTVERSIONPREFIX=	v
 DISTVERSION=	3.2.13
+PORTREVISION=	1
 CATEGORIES=	databases net
 PKGNAMESUFFIX=	32
 
@@ -26,6 +27,14 @@ CMAKE_ARGS=	-DUSE_JEMALLOC:BOOL=off \
 USERS=		arangodb
 GROUPS=		arangodb
 USE_RC_SUBR=	arangod
+
+.include <bsd.port.options.mk>
+
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200057
+SUB_LIST+=	LEGACY_LIMITS="@comment " MODERN_LIMITS=""
+.else
+SUB_LIST+=	LEGACY_LIMITS="" MODERN_LIMITS="@comment "
+.endif
 
 post-install:
 .for section in 1 8

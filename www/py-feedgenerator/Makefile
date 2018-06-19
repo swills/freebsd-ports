@@ -1,5 +1,5 @@
 # Created by: Julien Laffaye <jlaffaye@FreeBSD.org>
-# $FreeBSD: head/www/py-feedgenerator/Makefile 464432 2018-03-13 21:08:16Z brnrd $
+# $FreeBSD: head/www/py-feedgenerator/Makefile 470885 2018-05-26 08:34:16Z amdmi3 $
 
 PORTNAME=	feedgenerator
 PORTVERSION=	1.9
@@ -18,7 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytz>0:devel/py-pytz@${FLAVOR} \
 USES=		python
 USE_PYTHON=	distutils autoplist
 
-regression-test: build
+do-test:
 	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYSETUP} test
 
 .include <bsd.port.mk>

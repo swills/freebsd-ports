@@ -1,9 +1,9 @@
 # Created by: Mikhail Teterin <mi@aldan.algebra.com>
-# $FreeBSD: head/net/minidlna/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/net/minidlna/Makefile 471798 2018-06-05 18:57:23Z sunpoet $
 
 PORTNAME=	minidlna
 PORTVERSION=	1.2.1
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	net multimedia www
 MASTER_SITES=	SF

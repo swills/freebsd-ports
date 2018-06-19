@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/git-town/Makefile 466941 2018-04-10 07:56:20Z yuri $
+# $FreeBSD: head/devel/git-town/Makefile 471509 2018-06-03 19:12:23Z yuri $
 
 PORTNAME=	git-town
 DISTVERSIONPREFIX=	v
-DISTVERSION=	7.1.1
+DISTVERSION=	7.2.0
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org

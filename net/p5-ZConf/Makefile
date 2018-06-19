@@ -1,5 +1,5 @@
 # Created by: Zane C, Bowers <vvelox@vvelox.net>
-# $FreeBSD: head/net/p5-ZConf/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-ZConf/Makefile 472386 2018-06-14 17:13:01Z tobik $
 
 PORTNAME=	ZConf
 PORTVERSION=	6.1.0
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	vvelox@vvelox.net
 COMMENT=	Configuration system allowing for either file or LDAP backed storage
+
+DEPRECATED=	Unmaintained
+EXPIRATION_DATE=	2018-07-15
 
 BUILD_DEPENDS=	p5-Chooser>=0:devel/p5-Chooser \
 		p5-Error-Helper>=0:devel/p5-Error-Helper \

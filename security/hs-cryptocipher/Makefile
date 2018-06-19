@@ -1,8 +1,8 @@
-# $FreeBSD: head/security/hs-cryptocipher/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/security/hs-cryptocipher/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	cryptocipher
 PORTVERSION=	0.6.2
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org

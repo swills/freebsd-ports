@@ -1,9 +1,9 @@
 # Created by: Yoichi NAKAYAMA <yoichi@FreeBSD.org>
-# $FreeBSD: head/misc/elscreen/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/misc/elscreen/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	elscreen
 PORTVERSION=	1.4.6
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	misc elisp
 MASTER_SITES=	ftp://ftp.morishima.net/pub/morishima.net/naoto/ElScreen/%SUBDIR%/
 MASTER_SITE_SUBDIR=	. old

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-math/Makefile 428611 2016-12-15 10:25:08Z olgeni $
+# $FreeBSD: head/devel/elixir-math/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	math
 DISTVERSIONPREFIX=	v
@@ -6,7 +6,7 @@ DISTVERSION=	0.3.0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Math module for Elixir
 
 LICENSE=	MIT

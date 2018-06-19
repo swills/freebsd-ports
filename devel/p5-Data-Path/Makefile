@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Data-Path/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Data-Path/Makefile 471595 2018-06-04 18:03:15Z sunpoet $
 
 PORTNAME=	Data-Path
 PORTVERSION=	1.4.1
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
 COMMENT=	XPath-like access to complex data structures
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Test-MockObject>=1.08:devel/p5-Test-MockObject \
 		p5-Test-Exception>0:devel/p5-Test-Exception

@@ -1,5 +1,5 @@
 # Created by: Ganael Laplanche <ganael.laplanche@martymac.org>
-# $FreeBSD: head/editors/yzis/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/editors/yzis/Makefile 471090 2018-05-29 09:34:18Z amdmi3 $
 
 PORTNAME=	yzis
 PORTVERSION=	1.0.a.1
@@ -14,10 +14,12 @@ COMMENT=	Vi-like editor
 
 LICENSE=	GPLv2 LGPL21
 LICENSE_COMB=	multi
+LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING
+LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.LGPL
 
 USES=		tar:bzip2 cmake gettext perl5 lua:51
 USE_XORG=	x11 xext ice
-USE_QT4=	qtestlib qmake_build rcc_build uic_build moc_build gui xml
+USE_QT4=	corelib qtestlib qmake_build rcc_build uic_build moc_build gui xml
 CMAKE_ARGS+=	-DLOCALBASE:STRING="${LOCALBASE}" \
 		-DLUA_INCDIR:STRING="${LUA_INCDIR}" \
 		-DLUA_LIBDIR:STRING="${LUA_LIBDIR}" \
@@ -41,7 +43,7 @@ NYZIS_CPPFLAGS=	-D_XOPEN_SOURCE_EXTENDED
 NYZIS_CMAKE_ON=	-DENABLE_NYZIS:BOOL=ON
 NYZIS_CMAKE_OFF=	-DENABLE_NYZIS:BOOL=OFF
 DOXYGEN_BUILD_DEPENDS=	dot:graphics/graphviz \
-		doxygen:devel/doxygen
+			doxygen:devel/doxygen
 DOXYGEN_CMAKE_ON=	-DENABLE_DOCUMENTATION:BOOL=ON
 DOXYGEN_CMAKE_OFF=	-DENABLE_DOCUMENTATION:BOOL=OFF
 

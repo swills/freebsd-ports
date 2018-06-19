@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/databases/mysql-connector-c++/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/databases/mysql-connector-c++/Makefile 471986 2018-06-08 08:34:32Z amdmi3 $
 
 PORTNAME=	mysql-connector-c++
 PORTVERSION=	1.1.9
@@ -39,7 +39,8 @@ post-install:
 .if defined(MAINTAINER_MODE)
 CMAKE_ARGS+=	-DMYSQLCPPCONN_TEST_NOT_IMPLEMENTED:BOOL=1 \
 		-DMYSQLCPPCONN_BUILD_EXAMPLES:BOOL=1
-regression-test: build
+
+do-test:
 #	These tests assume that a database is running on localhost,
 #	with user:root and pass:root
 	(cd ${WRKDIR}/.build ; \

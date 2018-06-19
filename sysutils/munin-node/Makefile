@@ -1,9 +1,9 @@
 # Created by: Lupe Christoph <lupe@lupe-christoph.de>
-# $FreeBSD: head/sysutils/munin-node/Makefile 469997 2018-05-15 07:37:48Z mat $
+# $FreeBSD: head/sysutils/munin-node/Makefile 470900 2018-05-26 16:39:57Z mat $
 
 PORTNAME=	munin
 PORTVERSION=	${MUNIN_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils perl5
 MASTER_SITES=	${MUNIN_SITES}
 PKGNAMESUFFIX=	-node
@@ -20,6 +20,7 @@ RUN_DEPENDS=	p5-Cache-Cache>=0:devel/p5-Cache-Cache \
 		p5-DateTime-HiRes>=0:devel/p5-DateTime-HiRes \
 		munin-common>=${MUNIN_VERSION}:sysutils/munin-common \
 		p5-Net-Server>=0:net/p5-Net-Server \
+		p5-List-MoreUtils>0:lang/p5-List-MoreUtils \
 		p5-Net-CIDR>=0:net-mgmt/p5-Net-CIDR \
 		p5-libwww>=0:www/p5-libwww \
 		bash:shells/bash

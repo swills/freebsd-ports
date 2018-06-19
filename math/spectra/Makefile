@@ -1,8 +1,8 @@
-# $FreeBSD: head/math/spectra/Makefile 468076 2018-04-23 07:33:53Z yuri $
+# $FreeBSD: head/math/spectra/Makefile 470677 2018-05-23 06:44:01Z yuri $
 
 PORTNAME=	spectra
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.6.1
+DISTVERSION=	0.6.2
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -16,7 +16,12 @@ GH_ACCOUNT=	yixuan
 NO_BUILD=	yes
 NO_ARCH=	yes
 
+TEST_RUN_DEPENDS=	gmake>0:devel/gmake
+
 do-install:
 	cd ${WRKSRC} && ${COPYTREE_SHARE} include ${STAGEDIR}${PREFIX}
+
+do-test: # some tests are known to fail: https://github.com/yixuan/spectra/issues/47
+	@cd ${WRKSRC}/test && ${SETENV} ${MAKE_ENV} CXXFLAGS=-I${LOCALBASE}/include/eigen3 ${GMAKE} all test
 
 .include <bsd.port.mk>

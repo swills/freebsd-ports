@@ -1,9 +1,9 @@
 # Created by: eivind/dima/jseger
-# $FreeBSD: head/www/seamonkey/Makefile 468209 2018-04-24 13:57:44Z jbeich $
+# $FreeBSD: head/www/seamonkey/Makefile 471331 2018-06-02 00:33:29Z jbeich $
 
 PORTNAME=	seamonkey
 DISTVERSION=	2.49.3
-PORTREVISION=	2
+PORTREVISION=	7
 MOZILLA_VER=	52 # above + 3
 CATEGORIES?=	www mail news editors irc ipv6
 MASTER_SITES=	MOZILLA/${PORTNAME}/releases/${DISTVERSION}/source \
@@ -50,6 +50,10 @@ OPTIONS_DEFAULT=CANBERRA GTK3 LDAP LIGHTNING
 LDAP_DESC?=	LDAP support for Mailnews
 
 .include "${.CURDIR}/../../www/firefox/Makefile.options"
+
+# Inconsistent fallback order (libcubeb vs. audio_device)
+SNDIO_PREVENTS=		${OPTIONS_MULTI_AUDIO:NSNDIO}
+
 .include <bsd.port.options.mk>
 
 MOZSRC:=	${WRKSRC}/mozilla

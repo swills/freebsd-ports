@@ -1,5 +1,5 @@
 # Created by: Dmitry Sivachenko <demon@FreeBSD.org>
-# $FreeBSD: head/textproc/randlm/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/textproc/randlm/Makefile 472376 2018-06-14 12:47:58Z tijl $
 
 PORTNAME=	randlm
 PORTVERSION=	0.2.5
@@ -31,5 +31,9 @@ INSTALL_TARGET=	install-strip
 post-patch:
 	cd ${WRKSRC}/hadoop && ${MV} strings.cpp strings.cc && ${MV} strings.h s.h
 	${REINPLACE_CMD} -e s#strings.h#s.h# ${WRKSRC}/hadoop/r_compute_ngram_counts.cpp ${WRKSRC}/hadoop/m_compute_ngram_counts_batch.cpp
+	@${REINPLACE_CMD} -e 's,-L./,,' -e 's,-lLDHT,libLDHT.la,' \
+		-e 's,-lticpp,libticpp.la,' -e 's,-lRandLM,libRandLM.la,' \
+		${WRKSRC}/src/LDHT/Makefile.am \
+		${WRKSRC}/src/RandLM/Makefile.am
 
 .include <bsd.port.mk>

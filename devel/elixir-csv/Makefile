@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-csv/Makefile 456837 2017-12-20 15:54:03Z olgeni $
+# $FreeBSD: head/devel/elixir-csv/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	csv
 PORTVERSION=	2.1.1
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	CSV decoding and encoding for Elixir
 
 LICENSE=	MIT

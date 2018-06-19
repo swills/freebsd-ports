@@ -1,5 +1,5 @@
 # Created by: Matthew Donovan <kitchetech@gmail.com>
-# $FreeBSD: head/x11/sterm/Makefile 465238 2018-03-21 20:44:34Z yuri $
+# $FreeBSD: head/x11/sterm/Makefile 472687 2018-06-18 13:08:35Z swills $
 
 PORTNAME=	sterm
 DISTVERSION=	0.8.1
@@ -28,6 +28,18 @@ PORTDATA=	config.def.h st.info
 PORTDOCS=	FAQ LEGACY README TODO
 
 OPTIONS_DEFINE=	DOCS
+OPTIONS_RADIO=	PATCHES
+OPTIONS_RADIO_PATCHES=	SCROLLBACK SOLARIZED
+SCROLLBACK_DESC=	Scroll back through terminal output
+SOLARIZED_DESC=	Use Solarized color scheme
+
+SCROLLBACK_EXTRA_PATCHES=	${PATCHDIR}/extra-scrollback-patch-config.def.h \
+		${PATCHDIR}/extra-scrollback-patch-st.c \
+		${PATCHDIR}/extra-scrollback-patch-st.h
+
+SOLARIZED_EXTRA_PATCHES=	${PATCHDIR}/extra-solarized-patch-config.def.h \
+		${PATCHDIR}/extra-solarized-patch-x.c \
+		${PATCHDIR}/extra-solarized-patch-st.h
 
 SUB_FILES=	pkg-message
 

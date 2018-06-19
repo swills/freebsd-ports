@@ -1,4 +1,4 @@
-# $FreeBSD: head/converters/Makefile 467345 2018-04-14 23:58:18Z sunpoet $
+# $FreeBSD: head/converters/Makefile 472565 2018-06-16 19:12:02Z krion $
 #
 
     COMMENT = Character code converters
@@ -85,6 +85,9 @@
     SUBDIR += p5-Cstools
     SUBDIR += p5-Data-AMF
     SUBDIR += p5-Encode
+    SUBDIR += p5-Encode-Base32-Crockford
+    SUBDIR += p5-Encode-Base32-GMP
+    SUBDIR += p5-Encode-Base58-GMP
     SUBDIR += p5-Encode-Detect
     SUBDIR += p5-Encode-Detect-CJK
     SUBDIR += p5-Encode-DoubleEncodedUTF8
@@ -134,7 +137,6 @@
     SUBDIR += p5-XML-WBXML
     SUBDIR += p5-bsdconv
     SUBDIR += p5-plutil
-    SUBDIR += pdf2djvu
     SUBDIR += pear-Services_JSON
     SUBDIR += pecl-fribidi
     SUBDIR += pecl-igbinary

@@ -1,5 +1,5 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/textproc/enchant2/Makefile 466176 2018-04-01 18:50:52Z kwm $
+# $FreeBSD: head/textproc/enchant2/Makefile 472162 2018-06-11 02:08:58Z linimon $
 
 PORTNAME=	enchant
 PORTVERSION=	2.2.3
@@ -13,10 +13,10 @@ COMMENT=	Dictionary/spellchecking framework
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING.LIB
 
+USES=		compiler:c++11-lib gmake libtool localbase pathfix pkgconfig
+USE_GNOME=	glib20
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
-USES=		gmake libtool localbase pathfix pkgconfig
-USE_GNOME=	glib20
 CONFIGURE_ARGS=	--without-applespell \
 		--without-voikko
 

@@ -1,8 +1,8 @@
 # Created by: John Hixson <jhixson@gmail.com>
-# $FreeBSD: head/net/py-zeroconf/Makefile 467167 2018-04-12 17:20:18Z wg $
+# $FreeBSD: head/net/py-zeroconf/Makefile 470815 2018-05-25 00:13:57Z swills $
 
 PORTNAME=	zeroconf
-PORTVERSION=	0.19.1
+PORTVERSION=	0.20.0
 CATEGORIES=	net python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

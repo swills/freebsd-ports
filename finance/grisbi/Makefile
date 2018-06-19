@@ -1,8 +1,8 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/finance/grisbi/Makefile 455076 2017-11-28 21:01:41Z thierry $
+# $FreeBSD: head/finance/grisbi/Makefile 472081 2018-06-09 19:14:05Z thierry $
 
 PORTNAME=	grisbi
-PORTVERSION=	1.0.2
+PORTVERSION=	1.0.4
 CATEGORIES=	finance
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}%20stable/${PORTVERSION:C|.$|x|}/
 

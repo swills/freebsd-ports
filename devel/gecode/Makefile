@@ -1,5 +1,5 @@
 # Created by: Peter Pentchev <roam@FreeBSD.org>
-# $FreeBSD: head/devel/gecode/Makefile 467751 2018-04-19 07:08:45Z ale $
+# $FreeBSD: head/devel/gecode/Makefile 472706 2018-06-18 19:03:03Z linimon $
 
 PORTNAME=	gecode
 PORTVERSION=	5.1.0
@@ -13,13 +13,13 @@ COMMENT=	Generic Constraint Development Environment
 LICENSE=	BSL MIT
 LICENSE_COMB=	multi
 
-LIB_DEPENDS=	libmpfr.so:math/mpfr \
-		libgmp.so:math/gmp
-
 NOT_FOR_ARCHS=		aarch64 armv6 armv7 mips mips64
 NOT_FOR_ARCHS_REASON=	needs code written to specify rounding control mechanism in Boost.Numeric.Interval
 
-USES=		bison gmake perl5
+LIB_DEPENDS=	libmpfr.so:math/mpfr \
+		libgmp.so:math/gmp
+
+USES=		bison compiler:c++11-lang gmake perl5
 USE_PERL5=	build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-static \

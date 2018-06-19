@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/pkg-info.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/devel/pkg-info.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	pkg-info.el
 PORTVERSION=	0.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 

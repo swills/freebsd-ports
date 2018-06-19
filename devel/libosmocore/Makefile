@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libosmocore/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/devel/libosmocore/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	libosmocore
 PORTVERSION=	0.10.2
@@ -12,6 +12,8 @@ COMMENT=	Common library for all Osmocom projects
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to compile: application.c:179: #pragma GCC diagnostic not allowed inside functions
 
 LIB_DEPENDS=	libpcsclite.so:devel/pcsc-lite \
 		libtalloc.so:devel/talloc

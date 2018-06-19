@@ -1,10 +1,10 @@
 # Created by: Dima Sivachenko <dima@chg.ru>
-# $FreeBSD: head/benchmarks/polygraph/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/benchmarks/polygraph/Makefile 472160 2018-06-11 01:44:15Z linimon $
 
 PORTNAME=	polygraph
 PORTVERSION=	4.11.0
-PORTREVISION=	1
 DISTVERSIONSUFFIX=	-src
+PORTREVISION=	1
 CATEGORIES=	benchmarks www
 MASTER_SITES=	http://www.web-polygraph.org/downloads/srcs/
 
@@ -19,7 +19,7 @@ BROKEN_SSL_REASON_openssl-devel=	configure: error: OpenSSL libraries and/or dire
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
-USES=		gmake ncurses shebangfix tar:tgz
+USES=		compiler:c++0x gmake ncurses shebangfix tar:tgz
 SHEBANG_FILES=	tools/*.pl
 USE_GCC=	any
 GNU_CONFIGURE=	yes

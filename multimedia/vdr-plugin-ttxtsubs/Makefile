@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-ttxtsubs/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/multimedia/vdr-plugin-ttxtsubs/Makefile 470941 2018-05-26 18:19:35Z miwi $
 
 PORTNAME=	vdr-plugin-ttxtsubs
 PORTVERSION=	0.2.4
@@ -14,6 +14,7 @@ COMMENT=	Video Disk Recorder - teletext subtitle plugin
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+BROKEN_FreeBSD_12= does not build with newer clang
 PATCH_STRIP=	-p1
 WRKSRC=		${WRKDIR}/${PLUGIN}-${DISTVERSION}
 

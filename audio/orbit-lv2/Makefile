@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/orbit-lv2/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/audio/orbit-lv2/Makefile 471496 2018-06-03 14:08:05Z linimon $
 
 PORTNAME=	orbit
 PORTVERSION=	0.1.431
@@ -12,6 +12,8 @@ COMMENT=	LV2 plugin bundle from Open Music Kontrollers
 
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to build: cc1: unrecognized command line option -std=gnu11
 
 BUILD_DEPENDS=	lv2>0:audio/lv2
 

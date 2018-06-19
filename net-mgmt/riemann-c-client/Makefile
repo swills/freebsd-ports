@@ -1,5 +1,5 @@
 # Created by: Dave Cottlehuber <dch@skunkwerks.at>
-# $FreeBSD: head/net-mgmt/riemann-c-client/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
+# $FreeBSD: head/net-mgmt/riemann-c-client/Makefile 472376 2018-06-14 12:47:58Z tijl $
 
 PORTNAME=	riemann-c-client
 PORTVERSION=	1.10.1
@@ -27,8 +27,6 @@ TEST_TARGET=	check
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	algernon
-
-MAKE_JOBS_UNSAFE=	yes
 
 post-patch:
 	@${REINPLACE_CMD} 's/-ldl//' ${WRKSRC}/Makefile.am

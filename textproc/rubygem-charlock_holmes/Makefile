@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/rubygem-charlock_holmes/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/textproc/rubygem-charlock_holmes/Makefile 472117 2018-06-10 08:08:26Z antoine $
 
 PORTNAME=	charlock_holmes
 DISTVERSION=	0.7.5
@@ -14,8 +14,7 @@ COMMENT=	Gems for character encoding detection
 
 LICENSE=	MIT
 
-LIB_DEPENDS=	libicui18n.so:devel/icu \
-		libunwind.so:devel/libunwind
+LIB_DEPENDS=	libicui18n.so:devel/icu
 
 USES=		gem
 USE_RUBY=	yes

@@ -1,8 +1,9 @@
 # Created by: Dmitry Kazarov <d.y.kazarov@mail.ru>
-# $FreeBSD: head/print/qpdf/Makefile 465064 2018-03-20 05:13:24Z yuri $
+# $FreeBSD: head/print/qpdf/Makefile 472160 2018-06-11 01:44:15Z linimon $
 
 PORTNAME=	qpdf
 DISTVERSION=	8.0.1
+PORTREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	SF
 
@@ -14,7 +15,7 @@ LICENSE_COMB=	dual
 LICENSE_FILE_ART20=	${WRKSRC}/Artistic-2.0
 LICENSE_FILE_APACHE20=	${WRKSRC}/LICENSE.txt
 
-USES=		gmake jpeg libtool localbase
+USES=		compiler:c++11-lang gmake jpeg libtool localbase
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-static
 USE_LDCONFIG=	yes

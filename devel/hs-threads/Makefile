@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/hs-threads/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-threads/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	threads
-PORTVERSION=	0.5.1.4
+PORTVERSION=	0.5.1.6
 PORTREVISION=	1
 CATEGORIES=	devel haskell
 
@@ -9,8 +9,6 @@ MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Fork threads and wait for their result
 
 LICENSE=	BSD3CLAUSE
-
-USE_CABAL=	stm>=2.1
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

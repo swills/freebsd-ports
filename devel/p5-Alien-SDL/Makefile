@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/p5-Alien-SDL/Makefile 432932 2017-01-31 16:21:45Z mat $
+# $FreeBSD: head/devel/p5-Alien-SDL/Makefile 472058 2018-06-09 16:07:49Z amdmi3 $
 
 PORTNAME=	Alien-SDL
 PORTVERSION=	1.440
@@ -10,7 +10,8 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Detect and get configuration setting for SDL
 
-LICENSE=	GPLv2
+LICENSE=	GPLv1 ART10
+LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS:=	${RUN_DEPENDS} \

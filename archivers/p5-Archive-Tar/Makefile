@@ -1,8 +1,8 @@
 # Created by: Roman Shterenzon <roman@xpert.com>
-# $FreeBSD: head/archivers/p5-Archive-Tar/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/archivers/p5-Archive-Tar/Makefile 471223 2018-05-31 19:19:58Z jadawin $
 
 PORTNAME=	Archive-Tar
-PORTVERSION=	2.24
+PORTVERSION=	2.26
 CATEGORIES=	archivers perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:BINGOS

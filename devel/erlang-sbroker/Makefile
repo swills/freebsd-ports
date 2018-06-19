@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-sbroker/Makefile 449182 2017-09-03 09:01:13Z olgeni $
+# $FreeBSD: head/devel/erlang-sbroker/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	sbroker
 DISTVERSIONPREFIX=	v
@@ -6,7 +6,7 @@ DISTVERSION=	1.0.0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Sojourn-time based active queue management library
 
 LICENSE=	APACHE20

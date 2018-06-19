@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/ppsspp-qt5/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/emulators/ppsspp-qt5/Makefile 472319 2018-06-13 13:21:56Z jbeich $
 
 PORTREVISION=	1
 PKGNAMESUFFIX=	-qt5

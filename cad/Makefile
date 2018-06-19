@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/Makefile 468187 2018-04-24 07:53:29Z yuri $
+# $FreeBSD: head/cad/Makefile 471892 2018-06-07 00:34:18Z rene $
 #
 
     COMMENT = CAD tools
@@ -18,7 +18,6 @@
     SUBDIR += calculix-ccx
     SUBDIR += cascade
     SUBDIR += chipvault
-    SUBDIR += cider
     SUBDIR += cura-engine
     SUBDIR += dinotrace
     SUBDIR += dxf2fig
@@ -84,7 +83,6 @@
     SUBDIR += qucs
     SUBDIR += repsnapper
     SUBDIR += rubygem-gdsii
-    SUBDIR += sceptre
     SUBDIR += scotch
     SUBDIR += solvespace
     SUBDIR += sp2sp

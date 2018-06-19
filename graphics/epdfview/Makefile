@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/graphics/epdfview/Makefile 448669 2017-08-24 13:45:13Z swills $
+# $FreeBSD: head/graphics/epdfview/Makefile 472706 2018-06-18 19:03:03Z linimon $
 
 PORTNAME=	epdfview
 PORTVERSION=	0.1.8
@@ -18,9 +18,9 @@ LICENSE=	GPLv2
 BUILD_DEPENDS=	cppunit-config:devel/cppunit
 LIB_DEPENDS=	libpoppler-glib.so:graphics/poppler-glib
 
+USES=		compiler:c++11-lang desktop-file-utils iconv gmake pkgconfig tar:bzip2
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
-USES=		desktop-file-utils iconv gmake pkgconfig tar:bzip2
 USE_GNOME=	gtk20 intlhack
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib

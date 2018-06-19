@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-rack-timeout/Makefile 470397 2018-05-19 11:08:06Z sunpoet $
+# $FreeBSD: head/www/rubygem-rack-timeout/Makefile 471424 2018-06-02 22:26:59Z sunpoet $
 
 PORTNAME=	rack-timeout
-PORTVERSION=	0.5.0
+PORTVERSION=	0.5.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

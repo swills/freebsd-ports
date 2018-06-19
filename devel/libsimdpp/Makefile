@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/libsimdpp/Makefile 456414 2017-12-15 19:26:41Z yuri $
+# $FreeBSD: head/devel/libsimdpp/Makefile 472641 2018-06-17 21:48:45Z yuri $
 
 PORTNAME=	libsimdpp
 DISTVERSIONPREFIX=	v
@@ -10,6 +10,8 @@ COMMENT=	Header-only zero-overhead C++ wrapper of SIMD instructions
 
 LICENSE=	BSL
 LICENSE_FILE=	${WRKSRC}/LICENSE_1_0.txt
+
+PORTSCOUT=	limit:^[v1-9]
 
 USES=		cmake:outsource
 USE_GITHUB=	yes

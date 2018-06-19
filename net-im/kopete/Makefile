@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/kopete/Makefile 469610 2018-05-11 06:09:39Z tcberner $
+# $FreeBSD: head/net-im/kopete/Makefile 472144 2018-06-10 15:40:24Z tcberner $
 
 PORTNAME=	kopete
 PORTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -27,6 +27,8 @@ USE_KDE+=	contacts identitymanagement libkleo pimtextedit
 USE_QT5=        core dbus gui network phonon4 printsupport sql widgets xml \
 		buildtools_build qmake_build
 
+# See #228640: temporary work around to fix the build on Current with ld being lld.
+LLD_UNSAFE=	yes
 
 SHEBANG_FILES=	protocols/winpopup/winpopup-install \
 		protocols/winpopup/winpopup-send \

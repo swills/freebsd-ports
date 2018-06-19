@@ -1,12 +1,12 @@
-# $FreeBSD: head/security/libgcrypt/Makefile 456419 2017-12-15 22:05:55Z cpm $
+# $FreeBSD: head/security/libgcrypt/Makefile 472337 2018-06-13 18:59:05Z cpm $
 
 PORTNAME=	libgcrypt
-PORTVERSION=	1.8.2
+PORTVERSION=	1.8.3
 CATEGORIES=	security
 MASTER_SITES=	GNUPG
 
 MAINTAINER=	cpm@FreeBSD.org
-COMMENT=	General purpose crypto library based on code used in GnuPG
+COMMENT=	General purpose cryptographic library based on the code from GnuPG
 
 LICENSE=	GPLv2+ LGPL21+
 LICENSE_COMB=	multi

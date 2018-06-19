@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/erlang-neotoma/Makefile 427975 2016-12-06 16:18:40Z olgeni $
+# $FreeBSD: head/devel/erlang-neotoma/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	neotoma
 PORTVERSION=	1.7.4
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Erlang library and packrat parser-generator
 
 LICENSE=	MIT

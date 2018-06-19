@@ -1,9 +1,9 @@
-# $FreeBSD: head/net-mgmt/grok_exporter/Makefile 466546 2018-04-05 10:20:41Z lwhsu $
+# $FreeBSD: head/net-mgmt/grok_exporter/Makefile 471915 2018-06-07 13:09:40Z swills $
 
 PORTNAME=	grok_exporter
 PORTVERSION=	0.2.3
 DISTVERSIONPREFIX=v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	gasol.wu@gmail.com

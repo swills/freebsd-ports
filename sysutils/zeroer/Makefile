@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/sysutils/zeroer/Makefile 428841 2016-12-18 09:58:36Z ehaupt $
+# $FreeBSD: head/sysutils/zeroer/Makefile 472681 2018-06-18 09:34:35Z amdmi3 $
 
 PORTNAME=	zeroer
 PORTVERSION=	0.1
@@ -15,11 +15,11 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libpopt.so:devel/popt
 
+USES=		localbase:ldflags
 PLIST_FILES=	bin/zeroer man/man1/zeroer.1.gz
 PORTDOCS=	README
 
-CFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib -lpopt
+LDFLAGS+=	-lpopt
 
 OPTIONS_DEFINE=	DOCS
 
@@ -30,6 +30,8 @@ do-build:
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/${PORTNAME}.1 ${STAGEDIR}${MANPREFIX}/man/man1
+
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 

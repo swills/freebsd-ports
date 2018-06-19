@@ -1,5 +1,5 @@
 # Created by: Chris Piazza <cpiazza@FreeBSD.org>
-# $FreeBSD: head/irc/ezbounce/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/irc/ezbounce/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	ezbounce
 PORTVERSION=	1.99.15
@@ -9,6 +9,8 @@ MASTER_SITES=	http://BSDforge.com/projects/source/irc/ezbounce/
 
 MAINTAINER=	portmaster@BSDforge.com
 COMMENT=	Highly configurable IRC Proxy
+
+BROKEN_powerpc64=	fails to configure: checking for boostlib >= 1.33... not found
 
 OPTIONS_DEFINE=	DOCS SSL COMPRESS
 OPTIONS_DEFAULT=SSL COMPRESS

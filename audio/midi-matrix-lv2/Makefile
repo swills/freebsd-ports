@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/midi-matrix-lv2/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/audio/midi-matrix-lv2/Makefile 471496 2018-06-03 14:08:05Z linimon $
 
 PORTNAME=	midi-matrix
 PORTVERSION=	0.20.0
@@ -12,6 +12,8 @@ COMMENT=	LV2 'Midi Matrix' plugin bundle: 'Channel Filter'
 
 LICENSE=	ART20
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to build: cc1: unrecognized command line option -std=gnu11
 
 BUILD_DEPENDS=	lv2>0:audio/lv2
 

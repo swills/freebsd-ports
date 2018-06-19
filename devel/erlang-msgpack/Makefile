@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-msgpack/Makefile 444180 2017-06-23 13:50:20Z olgeni $
+# $FreeBSD: head/devel/erlang-msgpack/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	msgpack
 PORTVERSION=	0.7.0
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	MessagePack (de)serializer for Erlang
 
 LICENSE=	APACHE20

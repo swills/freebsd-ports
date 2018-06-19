@@ -1,8 +1,8 @@
-# $FreeBSD: head/archivers/hs-zlib-bindings/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/archivers/hs-zlib-bindings/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	zlib-bindings
 PORTVERSION=	0.1.1.5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	archivers haskell
 
 MAINTAINER=	haskell@FreeBSD.org

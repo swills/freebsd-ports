@@ -1,5 +1,5 @@
 # Created by: Jov <amutu@amutu.com>
-# $FreeBSD: head/sysutils/mac_rtprio/Makefile 464220 2018-03-12 06:35:55Z tobik $
+# $FreeBSD: head/sysutils/mac_rtprio/Makefile 471981 2018-06-08 04:32:38Z linimon $
 
 PORTNAME=	mac_rtprio
 DISTVERSION=	g20170417
@@ -11,6 +11,8 @@ COMMENT=	MAC policy to manage access for setting realtime priorities by GID
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_powerpc64=	fails to build: make[1]: don't know how to make /usr/src/sys/tools/vnode_if.awk
 
 USES=		kmod uidfix
 

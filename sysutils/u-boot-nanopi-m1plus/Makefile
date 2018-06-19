@@ -1,6 +1,5 @@
-# $FreeBSD: head/sysutils/u-boot-nanopi-m1plus/Makefile 453381 2017-11-02 21:41:47Z olgeni $
+# $FreeBSD: head/sysutils/u-boot-nanopi-m1plus/Makefile 472714 2018-06-18 20:22:13Z linimon $
 
-MAINTAINER=	manu@FreeBSD.org
 MASTERDIR=	${.CURDIR}/../u-boot-master
 
 MODEL=		nanopi_m1plus

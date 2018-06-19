@@ -1,5 +1,5 @@
 # Created by: Glenn Johnson
-# $FreeBSD: head/graphics/libimg/Makefile 457712 2017-12-31 18:18:55Z mi $
+# $FreeBSD: head/graphics/libimg/Makefile 472295 2018-06-13 08:34:32Z amdmi3 $
 
 PORTNAME=	libimg
 PORTVERSION=	1.4.7
@@ -54,17 +54,13 @@ post-configure:
 		${WRKSRC}/$l/Makefile
 .endfor
 
-test check regression-test: build
+do-test:
 	cd ${WRKSRC}/tests && \
-	${SETENV} TCLLIBPATH=${WRKSRC:Q} ${WISH} ${WRKSRC}/tests/all
+		${SETENV} TCLLIBPATH=${WRKSRC:Q} ${WISH} ${WRKSRC}/tests/all
 
-.include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MEXAMPLES}
-post-install:
-	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/msgs/
+post-install-EXAMPLES-on:
+	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/msgs/
 	${INSTALL_DATA} ${WRKSRC}/msgs/*.msg ${STAGEDIR}${EXAMPLESDIR}/msgs/
 	${INSTALL_SCRIPT} ${WRKSRC}/demo.tcl ${WRKSRC}/tkv.tcl ${STAGEDIR}${EXAMPLESDIR}/
-.endif
 
 .include <bsd.port.mk>

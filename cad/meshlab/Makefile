@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/cad/meshlab/Makefile 470411 2018-05-19 15:07:10Z joneum $
+# $FreeBSD: head/cad/meshlab/Makefile 472665 2018-06-18 01:48:46Z linimon $
 
 PORTNAME=	meshlab
 PORTVERSION=	1.3.3
@@ -13,13 +13,16 @@ COMMENT=	3D triangular meshes processing and editing tool
 
 LICENSE=	GPLv2
 
+BROKEN_aarch64=		fails to compile: constant expression evaluates to -1 which cannot be narrowed to type char
+BROKEN_armv6=		fails to compile: constant expression evaluates to -1 which cannot be narrowed to type char
+BROKEN_armv7=		fails to compile: constant expression evaluates to -1 which cannot be narrowed to type char
+BROKEN_powerpc64=	fails to compile: mc_lookup_table.h:316:5: narrowing conversion of '-1' from 'int' to 'char' inside { }
+
 EXTRACT_DEPENDS=gtar:archivers/gtar
 LIB_DEPENDS=	libQtSolutions_SOAP-head.so:devel/qt4-qtsolutions-soap	\
 		libmpir.so:math/mpir
 
-BROKEN_aarch64=	Fails to compile: constant expression evaluates to -1 which cannot be narrowed to type char
-
-USES=		dos2unix qmake compiler:c++11-lib tar:tgz
+USES=		compiler:c++11-lib dos2unix qmake tar:tgz
 USE_CXXSTD=	c++11
 USE_GL=		glew glu
 USE_QT4=	moc_build rcc_build uic_build corelib gui xml \

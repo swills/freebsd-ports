@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-private_address_check/Makefile 464277 2018-03-12 20:31:51Z sunpoet $
+# $FreeBSD: head/net/rubygem-private_address_check/Makefile 471163 2018-05-30 19:48:23Z sunpoet $
 
 PORTNAME=	private_address_check
-PORTVERSION=	0.4.1
+PORTVERSION=	0.5.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/ykpers/Makefile 457965 2018-01-03 13:36:58Z sunpoet $
+# $FreeBSD: head/security/ykpers/Makefile 471028 2018-05-28 08:34:18Z amdmi3 $
 
 PORTNAME=	ykpers
 PORTVERSION=	1.18.0
@@ -20,6 +20,7 @@ GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 
 INSTALL_TARGET=	install-strip
+TEST_TARGET=	check
 
 PLIST_FILES=	bin/ykchalresp \
 		bin/ykinfo \
@@ -42,8 +43,5 @@ OPTIONS_DEFINE=	STATIC
 
 STATIC_CONFIGURE_ENABLE=	static
 STATIC_PLIST_FILES=		lib/libykpers-1.a
-
-regression-test: build
-	@(cd ${WRKSRC}; ${MAKE} check)
 
 .include <bsd.port.mk>

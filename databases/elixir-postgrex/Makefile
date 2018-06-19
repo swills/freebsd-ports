@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/elixir-postgrex/Makefile 461326 2018-02-09 19:04:28Z olgeni $
+# $FreeBSD: head/databases/elixir-postgrex/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	postgrex
 PORTVERSION=	0.13.5
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	databases
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Database driver for PostgreSQL written in Elixir
 
 LICENSE=	APACHE20

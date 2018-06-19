@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/hs-graphviz/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/graphics/hs-graphviz/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	graphviz
 PORTVERSION=	2999.19.0.0
@@ -11,7 +11,9 @@ COMMENT=	This library provides bindings for the Dot language used by the Graphvi
 LICENSE=	BSD3CLAUSE
 
 USES=		pkgconfig
-USE_CABAL=	colour dlist fgl polyparse temporary text wl-pprint-text
+USE_CABAL=	colour dlist fgl polyparse temporary wl-pprint-text
+
+IGNORE=		Doesn't build with recent GHC version
 
 BUILD_DEPENDS+=	${LOCALBASE}/libdata/pkgconfig/libxdot.pc:graphics/graphviz
 

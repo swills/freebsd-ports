@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/elixir-exjsx/Makefile 433639 2017-02-08 09:07:47Z olgeni $
+# $FreeBSD: head/devel/elixir-exjsx/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	exjsx
 PORTVERSION=	4.0.0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	JSON library for Elixir
 
 LICENSE=	MIT

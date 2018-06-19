@@ -1,5 +1,5 @@
 # Created by: Tim Niemueller <tim@niemueller.de>
-# $FreeBSD: head/devel/yaml-cpp03/Makefile 422359 2016-09-18 09:07:36Z tcberner $
+# $FreeBSD: head/devel/yaml-cpp03/Makefile 471733 2018-06-04 23:31:14Z linimon $
 
 PORTNAME=	yaml-cpp
 PORTVERSION=	0.3.0
@@ -11,6 +11,8 @@ MAINTAINER=	tim@niemueller.de
 COMMENT=	YAML parser and emitter in C++ matching the YAML 1.2 spec
 
 LICENSE=	MIT
+
+BROKEN_powerpc64=	fails to build: ninja: build.ninja:386: bad $-escape (literal $ must be written as $$)
 
 USES=		cmake
 USE_LDCONFIG=	yes

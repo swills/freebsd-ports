@@ -1,11 +1,11 @@
-# $FreeBSD: head/databases/elixir-timex_ecto/Makefile 469796 2018-05-13 14:13:37Z olgeni $
+# $FreeBSD: head/databases/elixir-timex_ecto/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	timex_ecto
 PORTVERSION=	3.3.0
 CATEGORIES=	databases
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Adapter for using Timex DateTimes with Ecto
 
 LICENSE=	MIT

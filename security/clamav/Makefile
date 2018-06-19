@@ -1,5 +1,5 @@
 # Created by: markun@onohara.to
-# $FreeBSD: head/security/clamav/Makefile 467160 2018-04-12 16:01:16Z ler $
+# $FreeBSD: head/security/clamav/Makefile 472050 2018-06-09 09:34:27Z amdmi3 $
 
 PORTNAME=	clamav
 PORTVERSION=	0.100.0
@@ -11,6 +11,7 @@ MAINTAINER=	ler@FreeBSD.org
 COMMENT=	Command line virus scanner written entirely in C
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libltdl.so:devel/libltdl \
 		libcurl.so:ftp/curl

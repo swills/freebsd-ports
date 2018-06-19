@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/nomad/Makefile 468601 2018-04-29 03:46:26Z wen $
+# $FreeBSD: head/sysutils/nomad/Makefile 472333 2018-06-13 16:27:37Z pi $
 
 PORTNAME=	nomad
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.8.3
+DISTVERSION=	0.8.4
 CATEGORIES=	sysutils
 
 MAINTAINER=	jhixson@gmail.com

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-gen_leader/Makefile 391484 2015-07-06 22:34:11Z olgeni $
+# $FreeBSD: head/devel/erlang-gen_leader/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	gen_leader
 PORTVERSION=	2014.10.20
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Leader election behavior for Erlang
 
 USES=		erlang:rebar

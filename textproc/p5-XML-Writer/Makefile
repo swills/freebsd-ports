@@ -1,5 +1,5 @@
 # Created by: Adam Herzog <adam@herzogdesigns.com>
-# $FreeBSD: head/textproc/p5-XML-Writer/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/textproc/p5-XML-Writer/Makefile 472597 2018-06-17 09:04:34Z amdmi3 $
 
 PORTNAME=	XML-Writer
 PORTVERSION=	0.625
@@ -12,7 +12,11 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple Perl module for writing XML documents
 
+LICENSE=	PD
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

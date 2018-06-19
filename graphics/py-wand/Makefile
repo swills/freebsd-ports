@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/py-wand/Makefile 450852 2017-09-28 15:36:31Z kwm $
+# $FreeBSD: head/graphics/py-wand/Makefile 472735 2018-06-19 01:30:04Z yuri $
 
 PORTNAME=	Wand
 PORTVERSION=	0.4.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

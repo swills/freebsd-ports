@@ -1,10 +1,10 @@
 # Created by: Sergey Matveychuk <sem@FreeBSD.org>
-# $FreeBSD: head/dns/unbound/Makefile 469556 2018-05-10 14:50:19Z miwi $
+# $FreeBSD: head/dns/unbound/Makefile 472412 2018-06-14 23:22:21Z swills $
 
 PORTNAME=	unbound
-PORTVERSION=	1.7.1
+PORTVERSION=	1.7.2
 CATEGORIES=	dns
-MASTER_SITES=	https://unbound.net/downloads/ \
+MASTER_SITES=	https://www.nlnetlabs.nl/downloads/unbound/ \
 		https://distfiles.crux.guru/
 
 MAINTAINER=	jaap@NLnetLabs.nl

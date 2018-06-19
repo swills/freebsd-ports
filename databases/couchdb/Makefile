@@ -1,5 +1,5 @@
 # Created by: Ditesh Shashikant Gathani <ditesh@gathani.org>
-# $FreeBSD: head/databases/couchdb/Makefile 466648 2018-04-06 15:53:16Z jbeich $
+# $FreeBSD: head/databases/couchdb/Makefile 471928 2018-06-07 14:45:24Z olgeni $
 
 PORTNAME=	couchdb
 DISTVERSION=	1.7.1
@@ -9,7 +9,7 @@ CATEGORIES=	databases
 MASTER_SITES=	APACHE/couchdb/source/${DISTVERSION}
 DISTNAME=	apache-couchdb-${DISTVERSION}
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Document database server, accessible via a RESTful JSON API
 
 LICENSE=	APACHE20 BSD3CLAUSE ISCL WTFPL OFL11

@@ -1,5 +1,5 @@
 # Created by: KIRIYAMA Kazuhiko <kiri@FreeBSD.org>
-# $FreeBSD: head/textproc/sdocbook-xml/Makefile 463123 2018-02-27 13:03:48Z mat $
+# $FreeBSD: head/textproc/sdocbook-xml/Makefile 472207 2018-06-11 20:56:24Z feld $
 
 PORTNAME=	sdocbook-xml
 PORTVERSION=	1.1
@@ -9,7 +9,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	https://www.oasis-open.org/docbook/xml/simple/${PORTVERSION}/
 DISTNAME=	docbook-simple-${PORTVERSION}
 
-MAINTAINER=	gabor@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	"Simplified" DocBook XML DTD
 
 RUN_DEPENDS+=	xmlcatmgr:textproc/xmlcatmgr

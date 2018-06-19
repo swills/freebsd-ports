@@ -1,5 +1,5 @@
 # Created by: Oliver Braun <obraun@informatik.unibw-muenchen.de>
-# $FreeBSD: head/textproc/hs-HaXml/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/textproc/hs-HaXml/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	HaXml
 PORTVERSION=	1.25.4
@@ -15,6 +15,8 @@ USE_CABAL=	polyparse>=1.10 random
 
 EXECUTABLE=	Canonicalise CanonicaliseLazy DtdToHaskell FpMLToHaskell \
 		MkOneOf Validate XsdToHaskell Xtract
+
+IGNORE=		Doesn't build with recent GHC version
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

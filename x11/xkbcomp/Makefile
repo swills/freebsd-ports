@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11/xkbcomp/Makefile 468662 2018-04-29 21:57:05Z yuri $
+# $FreeBSD: head/x11/xkbcomp/Makefile 472017 2018-06-08 18:39:39Z zeising $
 
 PORTNAME=	xkbcomp
-PORTVERSION=	1.4.1
+PORTVERSION=	1.4.2
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org

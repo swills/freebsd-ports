@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-BS-Event/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-BS-Event/Makefile 471587 2018-06-04 18:02:32Z sunpoet $
 
 PORTNAME=	BS-Event
 PORTVERSION=	0.3
@@ -20,12 +20,11 @@ OPTIONS_DEFINE=	EXAMPLES
 NO_ARCH=	yes
 USE_PERL5=	configure
 USES=		perl5 shebangfix
+
 SHEBANG_FILES=	samples/simple_example
 perl_OLD_CMD=	/opt/perl/bin/perl
 
-PORTEXAMPLES=	simple_example
-
-post-install:
+post-install-EXAMPLES-on:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/
 	${INSTALL_SCRIPT} ${WRKSRC}/samples/simple_example ${STAGEDIR}${EXAMPLESDIR}/
 

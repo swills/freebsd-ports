@@ -1,20 +1,20 @@
 # Created by: Gabor Kovesdan <gabor@FreeBSD.org>
-# $FreeBSD: head/math/gnubc/Makefile 392542 2015-07-19 22:20:31Z bapt $
+# $FreeBSD: head/math/gnubc/Makefile 472673 2018-06-18 07:29:21Z yuri $
 
 PORTNAME=	bc
-PORTVERSION=	1.06
-PORTREVISION=	3
+DISTVERSION=	1.07.1
 CATEGORIES=	math
 MASTER_SITES=	GNU
 PKGNAMEPREFIX=	gnu
 
-MAINTAINER=	gabor@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	GNU bc/dc calculator
 
-LICENSE=	GPLv2
+LICENSE=	GPLv3
+LICENSE_FILE=	${WRKSRC}/COPYING
 
+USES=		libedit makeinfo
 GNU_CONFIGURE=	yes
-USES=		libedit
 CONFIGURE_ARGS+=	--with-libedit
 INFO=		bc \
 		dc

@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/graphics/php-facedetect/Makefile 469421 2018-05-09 01:44:50Z swills $
+# $FreeBSD: head/graphics/php-facedetect/Makefile 472372 2018-06-14 09:34:31Z amdmi3 $
 
 PORTNAME=	facedetect
 PORTVERSION=	1.1
@@ -19,10 +19,9 @@ GH_ACCOUNT=	infusion
 GH_PROJECT=	PHP-Facedetect
 GH_TAGNAME=	4b1dfe1
 
-CPPFLAGS+=	-I${LOCALBASE}/include
-LIBS+=		-L${LOCALBASE}/lib -lopencv_core
+LIBS+=		-lopencv_core
 
-USES=		php:ext
+USES=		localbase php:ext
 
 CONFIGURE_ARGS+=	--with-facedetect
 

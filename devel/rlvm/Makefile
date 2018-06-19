@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/rlvm/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/devel/rlvm/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	rlvm
 DISTVERSIONPREFIX=	release-
@@ -12,6 +12,8 @@ COMMENT=	RealLive virtual machine clone
 
 LICENSE=	GPLv2 GPLv3 MIT
 LICENSE_COMB=	multi
+
+BROKEN_powerpc64=	fails to link: gcn_platform.cc: undefined reference to gcn::Exception::Exception
 
 BUILD_DEPENDS=	${LOCALBASE}/include/utf8.h:devel/utf8cpp
 LIB_DEPENDS=	libvorbisfile.so:audio/libvorbis \

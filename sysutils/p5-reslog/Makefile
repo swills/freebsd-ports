@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/sysutils/p5-reslog/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/p5-reslog/Makefile 471694 2018-06-04 18:15:50Z sunpoet $
 
 PORTNAME=	reslog
 PORTVERSION=	3.16
@@ -11,10 +11,13 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Reverse-resolve IP in Apache log files
 
-RUN_DEPENDS=	p5-Compress-Bzip2>=0:archivers/p5-Compress-Bzip2 \
+LICENSE=	GPLv3+
+LICENSE_FILE=	${WRKSRC}/COPYING
+
+BUILD_DEPENDS=	p5-Compress-Bzip2>=0:archivers/p5-Compress-Bzip2 \
 		p5-File-MMagic>=0:devel/p5-File-MMagic \
 		p5-Term-ReadKey>=0:devel/p5-Term-ReadKey
-BUILD_DEPENDS:=	${RUN_DEPENDS}
+RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		perl5
 USE_PERL5=	configure

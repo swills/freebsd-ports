@@ -1,8 +1,8 @@
 # Created by: Andrey Zakhvatov
-# $FreeBSD: head/math/add/Makefile 408373 2016-02-07 11:38:15Z marino $
+# $FreeBSD: head/math/add/Makefile 472324 2018-06-13 13:47:41Z culot $
 
 PORTNAME=	add
-PORTVERSION=	20150704
+PORTVERSION=	20180401
 CATEGORIES=	math
 MASTER_SITES=	ftp://dickey.his.com/add/
 

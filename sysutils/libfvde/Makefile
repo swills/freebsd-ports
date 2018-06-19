@@ -1,8 +1,8 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/sysutils/libfvde/Makefile 451338 2017-10-05 19:23:16Z antoine $
+# $FreeBSD: head/sysutils/libfvde/Makefile 470779 2018-05-24 14:08:54Z antoine $
 
 PORTNAME=	libfvde
-PORTVERSION=	20170930
+PORTVERSION=	20180108
 DISTVERSIONPREFIX=	experimental-
 CATEGORIES=	sysutils
 MASTER_SITES=	https://github.com/libyal/libfvde/releases/download/${PORTVERSION}/ \

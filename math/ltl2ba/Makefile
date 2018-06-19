@@ -1,10 +1,10 @@
 # Created by: b.f. <bf@FreeBSD.org>
-# $FreeBSD: head/math/ltl2ba/Makefile 417685 2016-06-27 21:30:34Z rene $
+# $FreeBSD: head/math/ltl2ba/Makefile 470767 2018-05-24 10:48:09Z wen $
 
 PORTNAME=	ltl2ba
-PORTVERSION=	1.1
+PORTVERSION=	1.2
 CATEGORIES=	math
-MASTER_SITES=	http://www.lsv.ens-cachan.fr/~gastin/ltl2ba/ LOCAL/bf
+MASTER_SITES=	http://www.lsv.ens-cachan.fr/~gastin/ltl2ba/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Fast translation from LTL formulae to Buechi automata

@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/timewarrior/Makefile 445288 2017-07-08 00:12:53Z swills $
+# $FreeBSD: head/deskutils/timewarrior/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	timewarrior
 PORTVERSION=	1.0.0
@@ -9,6 +9,6 @@ DISTNAME=	timew-${PORTVERSION}
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Track time from the command line
 
-USES=		cmake
+USES=		cmake compiler:c++11-lang
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/libwpg03/Makefile 450179 2017-09-19 23:58:48Z jkim $
+# $FreeBSD: head/graphics/libwpg03/Makefile 472160 2018-06-11 01:44:15Z linimon $
 
 PORTNAME=	libwpg
 PORTVERSION=	0.3.2
@@ -17,7 +17,7 @@ LICENSE_FILE_MPL20=	${WRKSRC}/COPYING.MPL
 LIB_DEPENDS=	librevenge-0.0.so:textproc/librevenge \
 		libwpd-0.10.so:textproc/libwpd010
 
-USES=		libtool pathfix perl5 pkgconfig shebangfix tar:bzip2
+USES=		compiler:c++11-lang libtool pathfix perl5 pkgconfig shebangfix tar:bzip2
 SHEBANG_FILES=	${WRKSRC}/src/conv/svg/wpg2svgbatch.pl
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes

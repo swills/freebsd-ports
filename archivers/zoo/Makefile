@@ -1,5 +1,5 @@
 # Created by: jmz
-# $FreeBSD: head/archivers/zoo/Makefile 376416 2015-01-06 10:01:41Z ehaupt $
+# $FreeBSD: head/archivers/zoo/Makefile 472207 2018-06-11 20:56:24Z feld $
 
 PORTNAME=	zoo
 PORTVERSION=	2.10.1
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://ftp.kiarchive.ru/pub/unix/arcers/ \
 		LOCAL/ehaupt
 DISTNAME=	zoo-2.10pl1
 
-MAINTAINER=	gabor@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Manipulate archives of files in compressed form
 
 NO_WRKSUBDIR=	yes

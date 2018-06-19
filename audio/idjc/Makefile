@@ -1,11 +1,10 @@
 # Created by: Sean Bruno <sbruno@freebsd.org>
-# $FreeBSD: head/audio/idjc/Makefile 468978 2018-05-03 19:20:28Z jbeich $
+# $FreeBSD: head/audio/idjc/Makefile 471047 2018-05-28 14:57:39Z sbruno $
 
 PORTNAME=	idjc
-PORTVERSION=	0.8.16
-PORTREVISION=	9
+PORTVERSION=	0.8.17
 CATEGORIES=	audio python
-MASTER_SITES=	SF/idjc/idjc/0.8
+MASTER_SITES=	SF/idjc
 
 MAINTAINER=	sbruno@FreeBSD.org
 COMMENT=	Shoutcast/Icecast DJ Console
@@ -23,7 +22,9 @@ LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg \
 		libmp3lame.so:audio/lame \
 		libvorbis.so:audio/libvorbis \
 		libsamplerate.so:audio/libsamplerate \
-		libshout-idjc.so:audio/shout-idjc
+		libshout-idjc.so:audio/shout-idjc \
+		libopus.so:audio/opus
+
 RUN_DEPENDS=	oggenc:audio/vorbis-tools \
 		${PYTHON_PKGNAMEPREFIX}mutagen>=0:audio/py-mutagen@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dbus>=0.8:devel/py-dbus@${PY_FLAVOR}

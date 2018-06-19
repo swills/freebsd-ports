@@ -1,5 +1,5 @@
 # Created by: Masafumi NAKANE <max@FreeBSD.org>
-# $FreeBSD: head/www/p5-WWW-Shorten-isgd/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-WWW-Shorten-isgd/Makefile 471719 2018-06-04 18:18:32Z sunpoet $
 
 PORTNAME=	WWW-Shorten-isgd
 PORTVERSION=	0.02
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	culot@FreeBSD.org
 COMMENT=	Abstract interface to is.gd, one of URL shortening sites
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-WWW-Shorten>=1.97:www/p5-WWW-Shorten
 RUN_DEPENDS:=	${BUILD_DEPENDS}

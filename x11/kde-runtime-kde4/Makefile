@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11/kde-runtime-kde4/Makefile 468519 2018-04-28 06:14:58Z tcberner $
+# $FreeBSD: head/x11/kde-runtime-kde4/Makefile 470866 2018-05-25 21:12:10Z adridg $
 
 PORTNAME=	kde-runtime
 PORTVERSION=	${KDE_APPLICATIONS_VERSION}
@@ -8,6 +8,8 @@ PKGNAMESUFFIX=	-kde4
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Runtime components for KDE Plasma Desktop
+
+CONFLICTS_INSTALL=	plasma5-kde-cli-tools
 
 LIB_DEPENDS=	libexiv2.so:graphics/exiv2 \
 		libwebp.so:graphics/webp \

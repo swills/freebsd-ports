@@ -1,8 +1,9 @@
 # Created by: Nick Hilliard <nick@foobar.org>
-# $FreeBSD: head/net-mgmt/rubygem-oxidized/Makefile 457623 2017-12-30 18:17:34Z sunpoet $
+# $FreeBSD: head/net-mgmt/rubygem-oxidized/Makefile 471426 2018-06-02 22:27:10Z sunpoet $
 
 PORTNAME=	oxidized
 PORTVERSION=	0.21.0
+PORTREVISION=	1
 CATEGORIES=	net-mgmt rubygems
 MASTER_SITES=	RG
 
@@ -12,7 +13,7 @@ COMMENT=	Network device configuration backup tool
 LICENSE=	APACHE20
 
 RUN_DEPENDS=	rubygem-asetus>=0.1:devel/rubygem-asetus \
-		rubygem-net-ssh>=4.1.0:security/rubygem-net-ssh \
+		rubygem-net-ssh4>=4.1.0:security/rubygem-net-ssh4 \
 		rubygem-rugged>=0.21.4:devel/rubygem-rugged \
 		rubygem-slop3>=3.5:devel/rubygem-slop3
 

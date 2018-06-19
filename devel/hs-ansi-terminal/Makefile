@@ -1,14 +1,15 @@
-# $FreeBSD: head/devel/hs-ansi-terminal/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-ansi-terminal/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	ansi-terminal
-PORTVERSION=	0.6.3.1
-PORTREVISION=	1
+PORTVERSION=	0.8.0.2
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Simple ANSI terminal support, with Windows compatibility
 
 LICENSE=	BSD3CLAUSE
+
+USE_CABAL=	colour
 
 FLAGS_DISABLE=	Example
 

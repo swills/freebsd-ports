@@ -1,5 +1,5 @@
 # Created by: lukin
-# $FreeBSD: head/x11-fm/filerunner/Makefile 450719 2017-09-27 06:30:24Z gahr $
+# $FreeBSD: head/x11-fm/filerunner/Makefile 471545 2018-06-04 13:34:20Z gahr $
 
 PORTNAME=	filerunner
 PORTVERSION=	17.04.01.19
@@ -7,7 +7,7 @@ CATEGORIES=	x11-fm tk
 MASTER_SITES=	SF/${PORTNAME}/release-${PORTVERSION}
 DISTNAME=	fr-${PORTVERSION}
 
-MAINTAINER=	tcltk@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tcl/Tk-based filemanager with FTP capabilities
 
 LICENSE=	GPLv2

@@ -1,21 +1,21 @@
-# $FreeBSD: head/devel/py-gitpython/Makefile 462226 2018-02-18 13:11:51Z wen $
+# $FreeBSD: head/devel/py-gitpython/Makefile 472635 2018-06-17 20:44:13Z ygy $
 
 PORTNAME=	GitPython
-DISTVERSION=	2.1.8
+DISTVERSION=	2.1.10
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	che@bein.link
+MAINTAINER=	ygy@FreeBSD.org
 COMMENT=	Python Git Library
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ddt>=1.1.1:devel/py-ddt@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}gitdb2>=2.0.0:devel/py-gitdb2@${FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ddt>=1.1.1:devel/py-ddt@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}gitdb2>=2.0.0:devel/py-gitdb2@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

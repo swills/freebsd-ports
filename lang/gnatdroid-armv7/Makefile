@@ -1,5 +1,5 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD: head/lang/gnatdroid-armv7/Makefile 453193 2017-10-30 16:04:47Z tobik $
+# $FreeBSD: head/lang/gnatdroid-armv7/Makefile 471821 2018-06-05 21:04:45Z antoine $
 
 PORTNAME?=	armv7
 PORTVERSION=	${SNAPSHOT}
@@ -14,6 +14,8 @@ COMMENT?=	C/Ada cross-compiler, target: Android ARMv7
 
 LICENSE=	GPLv3 GPLv3RLE
 LICENSE_COMB=	multi
+
+BROKEN=		fails to package
 
 BUILD_DEPENDS=	${SYSROOT}>=0:lang/${SYSROOT} \
 		${GDBINUTILS}>=2.21:lang/${GDBINUTILS}

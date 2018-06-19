@@ -1,8 +1,9 @@
 # Created by: Peter Schuller <peter.schuller@infidyne.com>
-# $FreeBSD: head/lang/clojure-mode.el/Makefile 469831 2018-05-13 20:55:08Z dbaio $
+# $FreeBSD: head/lang/clojure-mode.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	clojure-mode.el
 PORTVERSION=	5.7.0
+PORTREVISION=   1
 PORTEPOCH=	1
 CATEGORIES=	lang elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

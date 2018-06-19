@@ -1,15 +1,18 @@
 # Created by: Yuan-Chung Hsiao <ychsiao@ychsiao.org>
-# $FreeBSD: head/net-mgmt/p5-NetAddr-IP-Lite/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/net-mgmt/p5-NetAddr-IP-Lite/Makefile 471675 2018-06-04 18:11:58Z sunpoet $
 
 PORTNAME=	NetAddr-IP-Lite
 PORTVERSION=	1.01
 PORTREVISION=	1
 CATEGORIES=	net-mgmt perl5
 MASTER_SITES=	CPAN
+MASTER_SITE_SUBDIR=	CPAN:MIKER
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ychsiao@ychsiao.org
 COMMENT=	IPv4/6 and 128 bit number utilities
+
+LICENSE=	ART10
 
 USES=		perl5
 USE_PERL5=	configure

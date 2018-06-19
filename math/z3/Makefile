@@ -1,11 +1,11 @@
-# $FreeBSD: head/math/z3/Makefile 463977 2018-03-09 16:55:37Z linimon $
+# $FreeBSD: head/math/z3/Makefile 472613 2018-06-17 17:23:32Z arrowd $
 
 PORTNAME=	z3
 DISTVERSIONPREFIX=	${PORTNAME}-
-DISTVERSION=	4.6.0
+DISTVERSION=	4.7.1
 CATEGORIES=	math
 
-MAINTAINER=	6yearold@gmail.com
+MAINTAINER=	arrowd@FreeBSD.org
 COMMENT=	Z3 Theorem Prover
 
 LICENSE=	MIT

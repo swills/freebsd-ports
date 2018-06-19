@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-trailing_format_plug/Makefile 452614 2017-10-21 20:22:31Z olgeni $
+# $FreeBSD: head/devel/elixir-trailing_format_plug/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	trailing_format_plug
 PORTVERSION=	0.0.7
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Elixir plug to support rails-like trailing format in APIs
 
 LICENSE=	APACHE20

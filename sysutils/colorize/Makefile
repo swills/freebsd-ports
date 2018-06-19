@@ -1,5 +1,5 @@
 # Created by: petef@FreeBSD.org
-# $FreeBSD: head/sysutils/colorize/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/sysutils/colorize/Makefile 472671 2018-06-18 04:16:19Z linimon $
 
 PORTNAME=	colorize
 PORTVERSION=	0.3.4
@@ -7,7 +7,7 @@ DISTVERSIONPREFIX=	v
 PORTREVISION=	1
 CATEGORIES=	sysutils
 
-MAINTAINER=	admin@lissyara.su
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Robust log colorizer
 
 LICENSE=	GPLv2

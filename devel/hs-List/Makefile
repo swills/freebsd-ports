@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-List/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-List/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	List
-PORTVERSION=	0.6.0
-PORTREVISION=	1
+PORTVERSION=	0.6.2
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

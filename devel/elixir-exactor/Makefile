@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/elixir-exactor/Makefile 453768 2017-11-08 21:44:32Z olgeni $
+# $FreeBSD: head/devel/elixir-exactor/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	exactor
 PORTVERSION=	2.2.4
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	GenServer helper for Elixir
 
 LICENSE=	MIT

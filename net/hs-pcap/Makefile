@@ -1,9 +1,9 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/net/hs-pcap/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/net/hs-pcap/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	pcap
 PORTVERSION=	0.4.5.2
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	net haskell
 
 MAINTAINER=	haskell@FreeBSD.org

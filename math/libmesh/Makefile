@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@FreeBSD.org>
-# $FreeBSD: head/math/libmesh/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/math/libmesh/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	libmesh
 DISTVERSIONPREFIX=	v
@@ -12,6 +12,8 @@ COMMENT=	Numerical simulation of partial differential equations
 
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to link: libcontrib_opt.a: relocation truncated to fit: R_PPC64_GOT_TLSLD16 against .LANCHOR1
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs
 

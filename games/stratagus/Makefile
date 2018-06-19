@@ -1,9 +1,9 @@
 # Created by: Travis Poppe <tlp@liquidx.org>
-# $FreeBSD: head/games/stratagus/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/games/stratagus/Makefile 471300 2018-06-01 22:16:11Z riggs $
 
 PORTNAME=	stratagus
 PORTVERSION=	2.4.1
-PORTREVISION=	1
+PORTREVISION=	2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	games
 

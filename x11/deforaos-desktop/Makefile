@@ -1,9 +1,9 @@
 # Created by: Olivier Cochard-Labbe <olivier@FreeBSD.org>
-# $FreeBSD: head/x11/deforaos-desktop/Makefile 439367 2017-04-25 08:20:30Z riggs $
+# $FreeBSD: head/x11/deforaos-desktop/Makefile 471891 2018-06-07 00:32:27Z rene $
 
 PORTNAME=	desktop
 PORTVERSION=	0.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11
 PKGNAMEPREFIX=	deforaos-
 
@@ -19,7 +19,6 @@ RUN_DEPENDS=	${LOCALBASE}/bin/keyboard:x11/deforaos-keyboard \
 		${LOCALBASE}/bin/surfer:www/deforaos-surfer \
 		${LOCALBASE}/bin/todo:deskutils/deforaos-todo \
 		${LOCALBASE}/bin/player:multimedia/deforaos-player \
-		${LOCALBASE}/bin/mixer:audio/deforaos-mixer \
 		${LOCALBASE}/bin/editor:editors/deforaos-editor \
 		${LOCALBASE}/bin/phone:comms/deforaos-phone
 

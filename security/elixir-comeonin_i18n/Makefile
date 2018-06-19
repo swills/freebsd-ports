@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/elixir-comeonin_i18n/Makefile 401500 2015-11-13 11:47:34Z olgeni $
+# $FreeBSD: head/security/elixir-comeonin_i18n/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	comeonin_i18n
 PORTVERSION=	0.1.3
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	security
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Internationalization support for Comeonin
 
 USES=		elixir

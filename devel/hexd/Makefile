@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/hexd/Makefile 457185 2017-12-24 18:15:51Z olgeni $
+# $FreeBSD: head/devel/hexd/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	hexd
 DISTVERSIONPREFIX=v
@@ -11,7 +11,7 @@ COMMENT=	Colourful, human-friendly hexdump tool
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		gmake
+USES=		compiler:c++11-lang gmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	FireyFly
 

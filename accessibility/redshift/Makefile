@@ -1,5 +1,5 @@
 # Created by: Mark Felder <feld@FreeBSD.org>
-# $FreeBSD: head/accessibility/redshift/Makefile 470560 2018-05-21 16:04:07Z swills $
+# $FreeBSD: head/accessibility/redshift/Makefile 472376 2018-06-14 12:47:58Z tijl $
 
 PORTNAME=	redshift
 PORTVERSION=	1.12
@@ -12,19 +12,16 @@ COMMENT=	Adjusts the color temperature of your screen
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gettext gmake libtool localbase pkgconfig shebangfix tar:bzip2
+USES=		autoreconf:build gettext gmake libtool localbase pkgconfig \
+		shebangfix tar:bzip2
 USE_GITHUB=	yes
 GH_ACCOUNT=	jonls
+USE_GNOME=	intltool
 GNU_CONFIGURE=	yes
 INSTALLS_ICONS=	yes
 SHEBANG_FILES=	src/redshift-gtk/redshift-gtk.in
 
 CONFIGURE_ARGS+=	--disable-wingdi
-
-BUILD_DEPENDS=	autoconf-2.69:devel/autoconf \
-		automake-1.15:devel/automake \
-		libtoolize:devel/libtool \
-		intltool>=0:textproc/intltool
 
 LIB_DEPENDS=	libdrm.so:graphics/libdrm \
 		libgeoclue-2.so:net/geoclue

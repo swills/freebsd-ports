@@ -1,8 +1,8 @@
 # Created by: TAKATSU Tomonari <tota@FreeBSD.org>
-# $FreeBSD: head/devel/R-cran-rlang/Makefile 464241 2018-03-12 09:39:55Z tota $
+# $FreeBSD: head/devel/R-cran-rlang/Makefile 471531 2018-06-04 07:18:31Z tota $
 
 PORTNAME=	rlang
-PORTVERSION=	0.2.0
+PORTVERSION=	0.2.1
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

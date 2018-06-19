@@ -1,5 +1,5 @@
 # Created by: Charlie & <root@ws.ipfw.ru>
-# $FreeBSD: head/net-im/ekiga/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/net-im/ekiga/Makefile 472160 2018-06-11 01:44:15Z linimon $
 #    $MCom: ports/trunk/net-im/ekiga/Makefile 19954 2014-10-15 10:03:57Z kwm $
 
 PORTNAME=	ekiga
@@ -23,8 +23,8 @@ LIB_DEPENDS=	libboost_signals.so:devel/boost-libs \
 RUN_DEPENDS=	gnome-icon-theme>=3.0.0:misc/gnome-icon-theme
 
 GNU_CONFIGURE=	yes
-USES=		cpe gettext gmake kde:4 libtool localbase pathfix \
-		perl5 pkgconfig tar:xz
+USES=		compiler:c++11-lang cpe gettext gmake kde:4 libtool localbase \
+		pathfix perl5 pkgconfig tar:xz
 USE_XORG=	xv
 USE_GNOME=	gtk20 intlhack libxml2
 INSTALLS_ICONS=	yes

@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/erlang-folsom/Makefile 410925 2016-03-12 17:58:25Z olgeni $
+# $FreeBSD: head/devel/erlang-folsom/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	folsom
 PORTVERSION=	0.8.3
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Erlang based metrics system inspired by Coda Hale's metrics
 
 LICENSE=	APACHE20

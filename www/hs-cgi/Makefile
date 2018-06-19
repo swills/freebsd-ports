@@ -1,9 +1,9 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/www/hs-cgi/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/www/hs-cgi/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	cgi
 PORTVERSION=	3001.3.0.2
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	www haskell
 
@@ -13,7 +13,7 @@ COMMENT=	Library for writing CGI programs
 LICENSE=	BSD3CLAUSE
 
 USE_CABAL=	exceptions mtl>=2.2.1 multipart>=0.1.2 network>=2.6 \
-		network-uri>=2.6 old-locale old-time parsec>=2.0
+		network-uri>=2.6 old-locale old-time
 
 FLAGS_ENABLE=	network-uri
 FLAGS_DISABLE=	old-mtl

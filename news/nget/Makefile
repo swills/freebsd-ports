@@ -1,5 +1,5 @@
 # Created by: George Sorsby <george@crackpipe.net>
-# $FreeBSD: head/news/nget/Makefile 452044 2017-10-14 06:01:53Z tobik $
+# $FreeBSD: head/news/nget/Makefile 472706 2018-06-18 19:03:03Z linimon $
 
 PORTNAME=	nget
 PORTVERSION=	0.27.1
@@ -14,7 +14,7 @@ COMMENT=	Auto-resuming command line nntp file grabber
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gmake
+USES=		compiler:c++11-lang gmake
 GNU_CONFIGURE=	yes
 
 # Skip check if the C++ compiler supports exceptions.  We know both

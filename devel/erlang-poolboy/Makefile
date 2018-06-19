@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/erlang-poolboy/Makefile 391483 2015-07-06 22:27:17Z olgeni $
+# $FreeBSD: head/devel/erlang-poolboy/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	poolboy
 PORTVERSION=	1.5.1
@@ -6,7 +6,7 @@ PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Pooling library for Erlang
 
 LICENSE=	ISCL

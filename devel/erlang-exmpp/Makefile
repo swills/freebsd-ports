@@ -1,5 +1,5 @@
 # Created by: Maxim Ignatenko
-# $FreeBSD: head/devel/erlang-exmpp/Makefile 421912 2016-09-12 08:33:56Z olgeni $
+# $FreeBSD: head/devel/erlang-exmpp/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	exmpp
 PORTVERSION=	0.9.9
@@ -8,7 +8,7 @@ PORTREVISION=	1
 CATEGORIES=	devel net-im
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Fast and scalable library for XMPP written in Erlang/OTP
 
 LICENSE=	EPL

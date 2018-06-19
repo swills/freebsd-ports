@@ -1,5 +1,5 @@
 # Created by: Pedro F. Giffuni
-# $FreeBSD: head/math/tetgen/Makefile 366828 2014-08-31 20:23:50Z cs $
+# $FreeBSD: head/math/tetgen/Makefile 472369 2018-06-14 08:34:32Z amdmi3 $
 
 PORTNAME=	tetgen
 PORTVERSION=	1.5.0.20131104
@@ -14,22 +14,24 @@ COMMENT=	Quality Tetrahedral Mesh Generator and Delaunay Triangulator
 LICENSE=	AGPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-OPTIONS_DEFINE=	EXAMPLES
-
 MAKEFILE=	makefile
 ALL_TARGET=	tetgen tetlib
 
 PORTEXAMPLES=	example.poly
 PLIST_FILES=	bin/tetgen include/tetgen.h lib/libtet.a
 
+OPTIONS_DEFINE=	EXAMPLES
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/tetgen ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_DATA} ${WRKSRC}/tetgen.h ${STAGEDIR}${PREFIX}/include
 	${INSTALL_DATA} ${WRKSRC}/libtet.a ${STAGEDIR}${PREFIX}/lib
+
+do-install-EXAMPLES-on:
 	${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${WRKSRC}/example.poly ${STAGEDIR}${EXAMPLESDIR}
 
-regression-test:
+do-test:
 	(cd ${INSTALL_WRKSRC} && ./tetgen -p example.poly )
 
 .include <bsd.port.mk>

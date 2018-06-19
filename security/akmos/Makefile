@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/akmos/Makefile 466519 2018-04-05 00:49:37Z dbaio $
+# $FreeBSD: head/security/akmos/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	akmos
 PORTVERSION=	0.7.2
@@ -10,7 +10,7 @@ COMMENT=	Cryptographic library with low footprint
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		cmake:outsource
+USES=		cmake:outsource compiler:c++11-lang
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	melanhit

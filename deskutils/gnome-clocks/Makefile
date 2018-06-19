@@ -1,5 +1,5 @@
 # Created by: Gustau Perez <gustau.perez@gmail.com>
-# $FreeBSD: head/deskutils/gnome-clocks/Makefile 442623 2017-06-05 14:11:46Z kwm $
+# $FreeBSD: head/deskutils/gnome-clocks/Makefile 472670 2018-06-18 03:49:09Z linimon $
 
 PORTNAME=	gnome-clocks
 PORTVERSION=	3.24.0
@@ -12,6 +12,8 @@ COMMENT=	Clocks for GNOME 3
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wno-unused-but-set-variable"
 
 BUILD_DEPENDS=	itstool:textproc/itstool \
 		vala:lang/vala

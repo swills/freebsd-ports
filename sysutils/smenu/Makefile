@@ -1,9 +1,8 @@
-# $FreeBSD: head/sysutils/smenu/Makefile 467544 2018-04-17 00:12:24Z dbaio $
+# $FreeBSD: head/sysutils/smenu/Makefile 470940 2018-05-26 18:17:27Z dbaio $
 
 PORTNAME=	smenu
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.9.12-7
-DISTVERSIONSUFFIX=	-g0ff0326
+DISTVERSION=	0.9.13
 CATEGORIES=	sysutils
 
 MAINTAINER=	dbaio@FreeBSD.org

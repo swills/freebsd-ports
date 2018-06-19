@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Class-Trigger/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-Class-Trigger/Makefile 471829 2018-06-06 09:04:25Z amdmi3 $
 
 PORTNAME=	Class-Trigger
 PORTVERSION=	0.14
@@ -11,9 +11,13 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Mixin to add / call inheritable triggers
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 RUN_DEPENDS=	p5-IO-stringy>=0:devel/p5-IO-stringy
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

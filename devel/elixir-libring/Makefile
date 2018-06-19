@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/elixir-libring/Makefile 461579 2018-02-12 11:53:04Z olgeni $
+# $FreeBSD: head/devel/elixir-libring/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	libring
 DISTVERSION=	1.3.1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Fast consistent hash ring implementation in Elixir
 
 LICENSE=	MIT

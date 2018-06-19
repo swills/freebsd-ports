@@ -1,5 +1,5 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/audio/qmidiarp/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/audio/qmidiarp/Makefile 472622 2018-06-17 18:32:14Z yuri $
 
 PORTNAME=	qmidiarp
 DISTVERSIONPREFIX=	qmidiarp-
@@ -18,6 +18,8 @@ BUILD_DEPENDS=	lv2>0:audio/lv2
 LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 		liblo.so:audio/liblo \
 		libjack.so:audio/jack
+
+PORTSCOUT=	limit:^qmidiarp
 
 USES=		autoreconf compiler:c++11-lib desktop-file-utils \
 		gmake localbase libtool pkgconfig

@@ -1,5 +1,5 @@
 # Created by: clsung@FreeBSD.org
-# $FreeBSD: head/devel/py-jcc/Makefile 461393 2018-02-10 12:58:55Z dbaio $
+# $FreeBSD: head/devel/py-jcc/Makefile 471732 2018-06-04 23:29:05Z linimon $
 
 PORTNAME=	jcc
 PORTVERSION=	3.0
@@ -16,6 +16,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_armv6=		fails to link: /nxb-bin/usr/bin/ld: cannot find -ljava
 BROKEN_armv7=		fails to link: /nxb-bin/usr/bin/ld: cannot find -ljava
+BROKEN_powerpc64=	fails to link: /usr/bin/ld: cannot find -ljava
+NOT_FOR_ARCHS=		mips mips64
+NOT_FOR_ARCHS_REASON=	Java not available for this architecture
 
 USES=		python
 USE_PYTHON=	distutils autoplist

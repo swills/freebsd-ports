@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/supercollider/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/audio/supercollider/Makefile 471362 2018-06-02 11:15:15Z tobik $
 
 PORTNAME=	supercollider
 PORTVERSION=	3.8.0
@@ -29,7 +29,6 @@ USE_LDCONFIG=	yes
 
 WRKSRC=		${WRKDIR}/SuperCollider-Source
 
-CMAKE_ENV=	PKG_CONFIG_PATH=${LOCALBASE}/libdata/pkgconfig
 CMAKE_ARGS=	-DCMAKE_PREFIX_PATH=${LOCALBASE}/lib/qt5 \
 		-DLIBUSB_1_INCLUDE_DIR=/usr/include \
 		-DLIBUSB_1_LIBRARY=/usr/lib/libusb.so \

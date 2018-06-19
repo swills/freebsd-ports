@@ -1,5 +1,5 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/emulators/tme/Makefile 431796 2017-01-18 13:20:31Z tijl $
+# $FreeBSD: head/emulators/tme/Makefile 472376 2018-06-14 12:47:58Z tijl $
 
 PORTNAME=	tme
 PORTVERSION=	0.8
@@ -20,6 +20,7 @@ USE_GNOME=	gdkpixbuf2 gtk20
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-static --disable-warnings
+CONFIGURE_TARGET=${ARCH:S/amd64/x86_64/}-portbld-${OPSYS:tl}${OSREL}
 MAKE_JOBS_UNSAFE=yes
 INSTALL_TARGET=	install-strip
 

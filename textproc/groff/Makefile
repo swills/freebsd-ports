@@ -1,5 +1,5 @@
 # Created by: Ulrich Spoerlein <uqs@FreeBSD.org>
-# $FreeBSD: head/textproc/groff/Makefile 447170 2017-08-02 18:49:39Z jbeich $
+# $FreeBSD: head/textproc/groff/Makefile 472296 2018-06-13 08:39:05Z tijl $
 
 PORTNAME=	groff
 PORTVERSION=	1.22.3
@@ -11,7 +11,8 @@ COMMENT=	Software typesetting package
 
 LICENSE=	GPLv3
 
-BUILD_DEPENDS=	psselect:print/psutils
+BUILD_DEPENDS=	gsfonts>=0:print/gsfonts \
+		psselect:print/psutils
 RUN_DEPENDS:=	psselect:print/psutils
 
 MAKE_JOBS_UNSAFE=	yes

@@ -1,9 +1,9 @@
 # Created by: Shigeyuki Fukushima <shige@FreeBSD.org>
-# $FreeBSD: head/editors/psgml/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/editors/psgml/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	psgml
 PORTVERSION=	1.4.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	editors elisp
 MASTER_SITES=	SF/${PORTNAME}/ALPHA%20${PORTNAME}/${PORTVERSION}
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

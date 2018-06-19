@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/security/iaikpkcs11wrapper/Makefile 444251 2017-06-25 00:29:09Z linimon $
+# $FreeBSD: head/security/iaikpkcs11wrapper/Makefile 472699 2018-06-18 14:40:31Z linimon $
 
 PORTNAME=	iaikPkcs11Wrapper
 PORTVERSION=	1.2.18
@@ -9,6 +9,8 @@ DISTNAME=	${PORTNAME}_${PORTVERSION:S/./_/g}
 
 MAINTAINER=	ale@FreeBSD.org
 COMMENT=	PKCS\#11 Java wrapper
+
+BROKEN_powerpc64=	fails to link: cannot find -lgcc
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 

@@ -1,9 +1,9 @@
 # Created by: dd
-# $FreeBSD: head/lang/tuareg-mode.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/lang/tuareg-mode.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	tuareg-mode
 PORTVERSION=	2.0.8
-PORTREVISION=	4
+PORTREVISION=	5
 PORTEPOCH=	1
 CATEGORIES=	lang elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

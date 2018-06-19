@@ -1,10 +1,10 @@
 #!/bin/sh
 
-# $FreeBSD: head/sysutils/py-google-compute-engine/files/google_accounts_daemon.in 448349 2017-08-19 18:02:55Z ultima $
+# $FreeBSD: head/sysutils/py-google-compute-engine/files/google_accounts_daemon.in 472394 2018-06-14 19:07:49Z swills $
 #
 # PROVIDE: google_accounts_daemon
 # BEFORE: LOGIN
-# REQUIRE: NETWORKING syslogd google_instance_setup google_network_setup
+# REQUIRE: NETWORKING syslogd google_instance_setup google_network_daemon
 # KEYWORD: shutdown
 #
 # google_accounts_daemon_enable (bool):	Set to NO by default.
@@ -12,6 +12,9 @@
 #
 
 . /etc/rc.subr
+
+# Required to execute scripts
+export PATH=%%LOCALBASE%%/bin:$PATH
 
 name="google_accounts_daemon"
 rcvar="google_accounts_daemon_enable"

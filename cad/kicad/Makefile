@@ -1,5 +1,5 @@
 # Created by: Thierry Thomas <thierry@FreeBSD.org>
-# $FreeBSD: head/cad/kicad/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/cad/kicad/Makefile 470981 2018-05-27 11:10:24Z antoine $
 
 PORTNAME=	kicad
 PORTVERSION=	4.0.7
@@ -26,7 +26,7 @@ GH_ACCOUNT=	KiCad
 GH_PROJECT=	kicad-source-mirror
 
 USES=		cmake:noninja compiler:c++11-lib desktop-file-utils	\
-		pkgconfig python shared-mime-info shebangfix ssl tar:xz
+		pkgconfig python:2.7 shared-mime-info shebangfix ssl tar:xz
 SHEBANG_FILES=	pcbnew/scripting/plugins/touch_slider_wizard.py
 
 USE_XORG=	ice x11 xext

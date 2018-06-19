@@ -1,5 +1,5 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/devel/p5-POE-Component-DebugShell/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-POE-Component-DebugShell/Makefile 471618 2018-06-04 18:05:12Z sunpoet $
 
 PORTNAME=	POE-Component-DebugShell
 PORTVERSION=	1.412
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Interactive peeking into a running POE application
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	p5-POE>=0:devel/p5-POE \
 		p5-POE-API-Peek>=0:devel/p5-POE-API-Peek

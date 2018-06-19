@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/p5-POEx-Role-TCPServer/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-POEx-Role-TCPServer/Makefile 471668 2018-06-04 18:11:21Z sunpoet $
 
 PORTNAME=	POEx-Role-TCPServer
 PORTVERSION=	1.102740
@@ -10,6 +10,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Perl extension for TCPServer Moose role on POE
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	\
 	p5-MooseX-Declare>0:devel/p5-MooseX-Declare \

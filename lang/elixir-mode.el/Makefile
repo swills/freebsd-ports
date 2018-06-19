@@ -1,13 +1,13 @@
-# $FreeBSD: head/lang/elixir-mode.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/lang/elixir-mode.el/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	elixir-mode.el
 DISTVERSIONPREFIX=	v
 PORTVERSION=	2.3.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Emacs major mode for Elixir
 
 LICENSE=	GPLv3

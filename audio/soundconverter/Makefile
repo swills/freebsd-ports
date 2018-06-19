@@ -1,5 +1,5 @@
 # Created by: Jona Joachim <jaj@hcl-club.lu>
-# $FreeBSD: head/audio/soundconverter/Makefile 465584 2018-03-26 12:38:56Z bapt $
+# $FreeBSD: head/audio/soundconverter/Makefile 470881 2018-05-26 06:25:43Z pi $
 
 PORTNAME=	soundconverter
 PORTVERSION=	2.1.6
@@ -17,7 +17,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gstreamer>=0.10:multimedia/py-gstreamer@${PY_FLAVOR}
 
 NO_ARCH=	yes
-USES=		desktop-file-utils gmake python:2.7 shebangfix tar:xz
+USES=		desktop-file-utils gettext-tools gmake python:2.7 \
+		shebangfix tar:xz
 
 SHEBANG_FILES=	bin/soundconverter.py
 

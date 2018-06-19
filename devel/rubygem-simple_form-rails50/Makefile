@@ -1,8 +1,8 @@
 # Created by: rpsfa@rit.edu
-# $FreeBSD: head/devel/rubygem-simple_form-rails50/Makefile 462041 2018-02-16 15:43:27Z sunpoet $
+# $FreeBSD: head/devel/rubygem-simple_form-rails50/Makefile 471419 2018-06-02 22:26:33Z sunpoet $
 
 PORTNAME=	simple_form
-PORTVERSION=	3.5.1
+PORTVERSION=	4.0.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	-rails50

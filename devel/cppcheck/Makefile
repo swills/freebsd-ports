@@ -1,10 +1,9 @@
 # Created by: Gabor Pali <pgj@FreeBSD.org>
-# $FreeBSD: head/devel/cppcheck/Makefile 466504 2018-04-04 20:07:09Z amdmi3 $
+# $FreeBSD: head/devel/cppcheck/Makefile 472270 2018-06-12 19:02:41Z amdmi3 $
 
 PORTNAME=	cppcheck
-PORTVERSION=	1.83
+PORTVERSION=	1.84
 CATEGORIES=	devel
-MASTER_SITES=	SF
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT?=	Static analysis of C/C++ code
@@ -12,7 +11,9 @@ COMMENT?=	Static analysis of C/C++ code
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=			compiler:c++11-lib cmake tar:bzip2
+USES=		compiler:c++11-lib cmake tar:bzip2
+USE_GITHUB=	yes
+GH_ACCOUNT=	danmar
 
 .if defined(GUI_ONLY)
 COMMENT=		Static analysis of C/C++ code (GUI)

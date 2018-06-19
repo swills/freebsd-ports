@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-toolkits/p5-Gtk3/Makefile 438849 2017-04-19 14:38:54Z sunpoet $
+# $FreeBSD: head/x11-toolkits/p5-Gtk3/Makefile 471552 2018-06-04 14:53:18Z danilo $
 
 PORTNAME=	Gtk3
-PORTVERSION=	0.026
-PORTREVISION=	1
+PORTVERSION=	0.034
 CATEGORIES=	x11-toolkits lang perl5
 MASTER_SITES=	CPAN SF/${PORTNAME:tl}-perl/${PORTNAME}/${PORTVERSION}
 MASTER_SITE_SUBDIR=	CPAN:XAOC

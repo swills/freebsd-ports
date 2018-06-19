@@ -1,5 +1,5 @@
 # Created by: vanilla
-# $FreeBSD: head/devel/protobuf/Makefile 466741 2018-04-07 16:33:47Z sunpoet $
+# $FreeBSD: head/devel/protobuf/Makefile 472179 2018-06-11 10:07:11Z tijl $
 
 PORTNAME=	protobuf
 PORTVERSION=	3.5.2
@@ -18,7 +18,10 @@ TEST_DEPENDS=	googlemock>=0:devel/googlemock \
 		googletest>=0:devel/googletest
 
 CFLAGS+=	-DGOOGLE_PROTOBUF_NO_RTTI -I${WRKSRC}/src
-CONFIGURE_ENV=	CXX_FOR_BUILD=c++
+CONFIGURE_ENV=	CC_FOR_BUILD="${CC}" CFLAGS_FOR_BUILD="${CFLAGS}" \
+		CPPFLAGS_FOR_BUILD="${CPPFLAGS}" \
+		CXX_FOR_BUILD="${CXX}" CXXFLAGS_FOR_BUILD="${CXXFLAGS}" \
+		LDFLAGS_FOR_BUILD="${LDFLAGS}"
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 TEST_ARGS=	${MAKE_ARGS} ${_MAKE_JOBS}

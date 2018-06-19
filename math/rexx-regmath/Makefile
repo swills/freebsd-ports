@@ -1,5 +1,5 @@
 # Created by: Bob Eager <bob@eager.cx>
-# $FreeBSD: head/math/rexx-regmath/Makefile 466071 2018-03-31 18:10:33Z krion $
+# $FreeBSD: head/math/rexx-regmath/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	regmath
 PORTVERSION=	1.00
@@ -13,6 +13,8 @@ MAINTAINER=	bob@eager.cx
 COMMENT=	Two mathematics libraries for Rexx
 
 LICENSE=	MPL10
+
+BROKEN_powerpc64=	fails to compile: unrecognized command line option "-Wno-incompatible-pointer-types"
 
 BUILD_DEPENDS=	${LOCALBASE}/include/rexxsaa.h:lang/rexx-regina
 

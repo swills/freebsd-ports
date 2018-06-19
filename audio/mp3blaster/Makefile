@@ -1,5 +1,5 @@
 # Created by: Michael Vasilenko <acid@stu.cn.ua>
-# $FreeBSD: head/audio/mp3blaster/Makefile 460178 2018-01-28 13:33:10Z novel $
+# $FreeBSD: head/audio/mp3blaster/Makefile 472665 2018-06-18 01:48:46Z linimon $
 
 PORTNAME=	mp3blaster
 PORTVERSION=	3.2.6
@@ -12,6 +12,8 @@ COMMENT=	MP3 console ncurses-based player
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to configure: checking for main in -lm... no
 
 USES=		gmake localbase:ldflags ncurses
 GNU_CONFIGURE=	yes

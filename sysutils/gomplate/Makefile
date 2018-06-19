@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/gomplate/Makefile 469692 2018-05-11 20:34:00Z seanc $
+# $FreeBSD: head/sysutils/gomplate/Makefile 472271 2018-06-12 22:06:36Z seanc $
 
 PORTNAME=	gomplate
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.5.0
+DISTVERSION=	2.6.0
 CATEGORIES=	sysutils
 
 MAINTAINER=	seanc@FreeBSD.org

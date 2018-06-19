@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/kde-workspace-kde4/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/x11/kde-workspace-kde4/Makefile 472598 2018-06-17 09:12:50Z tcberner $
 
 PORTNAME=	kde-workspace
 PORTVERSION=	${KDE4_WORKSPACE_VERSION}
-PORTREVISION=	20
+PORTREVISION=	21
 CATEGORIES=	x11 kde kde-applications
 PKGNAMESUFFIX=	-kde4
 
@@ -133,7 +133,7 @@ pre-configure:
 		${PATCH_WRKSRC}/doc/CMakeLists.txt
 
 post-install:
-	${LN} -sf ${PREFIX}/bin/startkde ${STAGEDIR}${PREFIX}/bin/startkde4
+	${RLN} ${STAGEDIR}${PREFIX}/bin/startkde ${STAGEDIR}${PREFIX}/bin/startkde4
 # Install kde4.desktop to launch kde4 via sddm.
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/xsessions
 	${INSTALL_DATA} ${FILESDIR}/kde4.desktop ${STAGEDIR}${PREFIX}/share/xsessions

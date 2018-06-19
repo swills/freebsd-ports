@@ -1,8 +1,8 @@
 # Created by: Vladimir Chukharev
-# $FreeBSD: head/devel/py-pyface/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-pyface/Makefile 471493 2018-06-03 12:57:46Z miwi $
 
 PORTNAME=	pyface
-PORTVERSION=	5.1.0
+PORTVERSION=	6.0.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -19,7 +19,7 @@ LICENSE_FILE_LGPL3=	${WRKSRC}/image_LICENSE_OOo.txt
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}traits>=4.5.0:devel/py-traits@${FLAVOR}
 
-USES=		python:-2.7
+USES=		python
 USE_PYTHON=	autoplist distutils
 NO_ARCH=	yes
 

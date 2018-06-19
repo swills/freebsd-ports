@@ -1,5 +1,5 @@
 # Created by: Patrick Powell <papowell@astart.com>
-# $FreeBSD: head/net/p5-XML-Compile-SOAP-WSA/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/p5-XML-Compile-SOAP-WSA/Makefile 471671 2018-06-04 18:11:36Z sunpoet $
 
 PORTNAME=	XML-Compile-SOAP-WSA
 PORTVERSION=	0.12
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	papowell@astart.com
 COMMENT=	SOAP message messages with WSA fields
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Net-Server>=0.97:net/p5-Net-Server \
 		p5-libwww>=5.803:www/p5-libwww \

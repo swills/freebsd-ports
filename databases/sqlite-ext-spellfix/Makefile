@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/databases/sqlite-ext-spellfix/Makefile 462887 2018-02-25 00:40:37Z yuri $
+# $FreeBSD: head/databases/sqlite-ext-spellfix/Makefile 472112 2018-06-10 04:41:38Z yuri $
 
 PORTNAME=	sqlite-ext-spellfix
 PORTVERSION=	3.8.11.1
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	https://www.sqlite.org/2015/ http://www2.sqlite.org/2015/ http://www3.sqlite.org/2015/
 DISTNAME=	sqlite-src-${PORTVERSION:S|8.|8|:S|.|0|g}
@@ -22,7 +23,6 @@ NO_WRKSUBDIR=	yes
 SRCFILE=	${DISTNAME}/ext/misc/spellfix.c
 LIBFILE=	libspellfix.so
 INST_DIR=	${PREFIX}/libexec/${DIST_SUBDIR}
-USE_LDCONFIG=	${INST_DIR}
 
 EXTRACT_AFTER_ARGS=	${SRCFILE}
 

@@ -1,8 +1,8 @@
 # Created by: Eric Freeman <freebsdports@chillibear.com>
-# $FreeBSD: head/ftp/rubygem-curb/Makefile 448831 2017-08-27 17:32:15Z sunpoet $
+# $FreeBSD: head/ftp/rubygem-curb/Makefile 471168 2018-05-30 19:48:49Z sunpoet $
 
 PORTNAME=	curb
-PORTVERSION=	0.9.4
+PORTVERSION=	0.9.6
 CATEGORIES=	ftp rubygems
 MASTER_SITES=	RG
 

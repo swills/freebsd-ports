@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/hs-certificate/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/security/hs-certificate/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	certificate
 PORTVERSION=	1.3.9
@@ -19,6 +19,8 @@ EXECUTABLE_DESC=		Build the executable
 EXECUTABLE_FLAG_ENABLE=		executable
 EXECUTABLE_FLAG_CABAL=		cmdargs text>=0.11 cryptohash crypto-pubkey
 EXECUTABLE_FLAG_EXECUTABLE=	certificate
+
+IGNORE=		Doesn't build with recent GHC version
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

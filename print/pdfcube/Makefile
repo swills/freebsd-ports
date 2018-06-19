@@ -1,5 +1,5 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/print/pdfcube/Makefile 467711 2018-04-18 13:57:42Z jbeich $
+# $FreeBSD: head/print/pdfcube/Makefile 472699 2018-06-18 14:40:31Z linimon $
 
 PORTNAME=	pdfcube
 PORTVERSION=	0.0.5
@@ -9,6 +9,8 @@ MASTER_SITES=	http://code.100allora.it/releases/pdfcube/
 
 MAINTAINER=	lwhsu@FreeBSD.org
 COMMENT=	OpenGL presentation viewer on a spinning cube
+
+BROKEN_powerpc64=	fails to configure: checking for exit in -lboost_program_options... no
 
 LIB_DEPENDS=	libgtkglext-x11-1.0.so:x11-toolkits/gtkglext \
 		libpoppler-glib.so:graphics/poppler-glib \

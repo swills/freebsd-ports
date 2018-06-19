@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/kdev-php/Makefile 468591 2018-04-28 20:12:31Z tcberner $
+# $FreeBSD: head/devel/kdev-php/Makefile 471124 2018-05-30 07:46:36Z arrowd $
 
 PORTNAME=	kdev-php
-DISTVERSION=	5.2.1
+DISTVERSION=	5.2.3
 CATEGORIES=	devel kde
 MASTER_SITES=	KDE/stable/kdevelop/${DISTVERSION}/src
 DIST_SUBDIR=	KDE/kdevelop
@@ -14,9 +14,9 @@ LIB_DEPENDS=	libkdevcmakecommon.so:devel/kdevelop
 
 USES=		cmake:outsource compiler:c++11-lib kde:5 tar:xz
 USE_KDE=	auth codecs completion config configwidgets coreaddons ecm \
-		i18n jobwidgets kcmutils kio parts service sonnet \
+		i18n itemmodels jobwidgets kcmutils kio parts service sonnet \
 		texteditor textwidgets threadweaver widgetsaddons xmlgui
-USE_QT5=	core dbus gui network webkit widgets xml \
+USE_QT5=	concurrent core dbus gui network webkit widgets xml \
 		buildtools_build qmake_build
 
 # Does not build with jobs.

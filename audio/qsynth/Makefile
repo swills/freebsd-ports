@@ -1,9 +1,10 @@
 # Created by: lazyklimm <lazyklimm@gmail.com>
-# $FreeBSD: head/audio/qsynth/Makefile 458887 2018-01-13 01:01:28Z swills $
+# $FreeBSD: head/audio/qsynth/Makefile 471300 2018-06-01 22:16:11Z riggs $
 
 PORTNAME=	qsynth
 DISTVERSIONPREFIX=	qsynth_
 DISTVERSION=	0_5_0
+PORTREVISION=	1
 CATEGORIES=	audio
 
 MAINTAINER=	ports@FreeBSD.org

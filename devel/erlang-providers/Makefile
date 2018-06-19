@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/erlang-providers/Makefile 469226 2018-05-06 15:24:05Z olgeni $
+# $FreeBSD: head/devel/erlang-providers/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	providers
 PORTVERSION=	1.7.0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Erlang providers library used by relx
 
 LICENSE=	LGPL3

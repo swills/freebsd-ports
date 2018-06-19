@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/hs-wxc/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/x11-toolkits/hs-wxc/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	wxc
 PORTVERSION=	0.92.3.0
@@ -15,6 +15,8 @@ USE_WX=		3.0
 WX_COMPS=	wx
 
 IGNORE_DOCS=	yes
+
+IGNORE=		Doesn't build with recent GHC version
 
 post-patch::
 	@${REINPLACE_CMD} 's|"wx-config"|"wxgtk2u-3.0-config"| ; \

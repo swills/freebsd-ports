@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/elixir-nadia/Makefile 464929 2018-03-18 15:51:44Z olgeni $
+# $FreeBSD: head/devel/elixir-nadia/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	nadia
 DISTVERSIONPREFIX=	v
@@ -6,7 +6,7 @@ DISTVERSION=	0.4.3
 CATEGORIES=	devel
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Telegram Bot API Wrapper written in Elixir
 
 LICENSE=	MIT

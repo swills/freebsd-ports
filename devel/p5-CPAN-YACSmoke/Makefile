@@ -1,5 +1,5 @@
 # Created by: Yen-Ming Lee <leeym@FreeBSD.org>
-# $FreeBSD: head/devel/p5-CPAN-YACSmoke/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/p5-CPAN-YACSmoke/Makefile 471588 2018-06-04 18:02:38Z sunpoet $
 
 PORTNAME=	CPAN-YACSmoke
 PORTVERSION=	0.03
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Yet Another CPAN Smoke Tester
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 RUN_DEPENDS=	p5-Config-IniFiles>=0:devel/p5-Config-IniFiles \
 		p5-File-HomeDir>=0.06:devel/p5-File-HomeDir \

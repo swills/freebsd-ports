@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/pecl-mongodb/Makefile 451629 2017-10-09 18:25:24Z pi $
+# $FreeBSD: head/databases/pecl-mongodb/Makefile 472715 2018-06-18 20:52:32Z pi $
 
 PORTNAME=	mongodb
-PORTVERSION=	1.2.11
+PORTVERSION=	1.4.4
 CATEGORIES=	databases pear
 
 MAINTAINER=	pi@FreeBSD.org

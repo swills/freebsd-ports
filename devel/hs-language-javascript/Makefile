@@ -1,8 +1,7 @@
-# $FreeBSD: head/devel/hs-language-javascript/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-language-javascript/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	language-javascript
-PORTVERSION=	0.6.0.10
-PORTREVISION=	1
+PORTVERSION=	0.6.0.11
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

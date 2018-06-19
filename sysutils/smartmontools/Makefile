@@ -1,5 +1,5 @@
 # Created by: Eduard Martinescu
-# $FreeBSD: head/sysutils/smartmontools/Makefile 457814 2018-01-01 21:19:33Z dim $
+# $FreeBSD: head/sysutils/smartmontools/Makefile 472160 2018-06-11 01:44:15Z linimon $
 
 PORTNAME=	smartmontools
 PORTVERSION=	6.6
@@ -17,7 +17,7 @@ CONFLICTS=	smartmontools-devel-[0-9]*
 
 OPTIONS_DEFINE=	DOCS
 
-USES=		alias gmake shebangfix
+USES=		alias compiler:c++11-lib gmake shebangfix
 SHEBANG_FILES=	examplescripts/Example5
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-dependency-tracking \

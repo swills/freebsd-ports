@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/memleax/Makefile 435124 2017-03-01 07:15:35Z wen $
+# $FreeBSD: head/devel/memleax/Makefile 471131 2018-05-30 12:34:15Z tobik $
 
 PORTNAME=	memleax
 PORTVERSION=	1.0.3
@@ -23,6 +23,7 @@ USES=		gmake
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX}
 ALL_TARGET=	memleax
+LLD_UNSAFE=	yes # cf. devel/libunwind
 
 PLIST_FILES=	bin/memleax \
 		man/man1/memleax.1.gz

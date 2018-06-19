@@ -1,11 +1,11 @@
-# $FreeBSD: head/devel/erlang-gproc/Makefile 451408 2017-10-06 19:42:47Z olgeni $
+# $FreeBSD: head/devel/erlang-gproc/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	gproc
-PORTVERSION=	0.7.0
+PORTVERSION=	0.8.0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Process dictionary for Erlang
 
 LICENSE=	EPLICENCE

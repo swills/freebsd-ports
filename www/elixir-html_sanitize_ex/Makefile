@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/elixir-html_sanitize_ex/Makefile 452615 2017-10-21 21:12:03Z olgeni $
+# $FreeBSD: head/www/elixir-html_sanitize_ex/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	html_sanitize_ex
 PORTVERSION=	1.3.0
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	HTML sanitizer for Elixir
 
 LICENSE=	MIT

@@ -1,14 +1,10 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/net-p2p/litecoin/Makefile 469430 2018-05-09 05:37:54Z dinoex $
+# $FreeBSD: head/net-p2p/litecoin/Makefile 470710 2018-05-23 17:17:00Z swills $
 
 PORTNAME=	litecoin
-PORTVERSION=	0.14.2
+PORTVERSION=	0.15.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	6
 CATEGORIES=	net-p2p finance
-
-PATCH_SITES=	https://github.com/bitcoin/bitcoin/commit/
-PATCHFILES=	1ec0c0a01c31.patch:-p1
 
 MAINTAINER=	swills@FreeBSD.org
 COMMENT?=	Virtual Peer-to-Peer Currency Client (QT)
@@ -22,8 +18,7 @@ NOT_FOR_ARCHS_REASON=	fails to configure: "Big Endian not supported"
 LIB_DEPENDS=	libboost_date_time.so:devel/boost-libs \
 		libevent.so:devel/libevent
 
-USES+=		autoreconf compiler:c++11-lib gmake libtool pkgconfig shebangfix ssl
-SHEBANG_FILES=	src/test/*.py
+USES+=		autoreconf compiler:c++11-lib gmake libtool pkgconfig ssl
 USE_GITHUB=	yes
 GNU_CONFIGURE=	yes
 
@@ -99,6 +94,11 @@ PLIST_FILES?=	bin/litecoin-qt man/man1/litecoin-qt.1.gz \
 		share/applications/litecoin-qt.desktop share/pixmaps/litecoin128.png
 
 .include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 1100000
+EXTRA_PATCHES=	${FILESDIR}/extra-patch-src_crypto_scrypt.cpp \
+		${FILESDIR}/extra-patch-src_crypto_scrypt.h
+.endif
 
 .if defined(SLAVE_PORT) && ${SLAVE_PORT} == "no"
 

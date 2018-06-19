@@ -1,5 +1,5 @@
 # Created by: Anton Yudin <toha@FreeBSD.org>
-# $FreeBSD: head/games/warmux/Makefile 424339 2016-10-20 15:58:12Z rakuco $
+# $FreeBSD: head/games/warmux/Makefile 472061 2018-06-09 16:10:36Z amdmi3 $
 
 PORTNAME=	warmux
 DISTVERSION=	11.04.1
@@ -10,6 +10,9 @@ MASTER_SITES=	http://download.gna.org/${PORTNAME}/ \
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Turn-based artillery game with free software mascots
+
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libxml++-2.6.so:textproc/libxml++26 \
 		libcurl.so:ftp/curl
@@ -27,16 +30,14 @@ OPTIONS_SUB=	yes
 
 DEBUG_CONFIGURE_ENABLE=	debug logging
 
-FRIBIDI_DESC=	Enable bi-directional unicode support
+FRIBIDI_DESC=		Enable bi-directional unicode support
 FRIBIDI_LIB_DEPENDS=	libfribidi.so:converters/fribidi
 FRIBIDI_CONFIGURE_ENABLE=	fribidi
 
-NLS_USES=		gettext
+NLS_USES=		gettext localbase:ldflags
 NLS_CONFIGURE_ENABLE=	nls
-NLS_CPPFLAGS+=	-I${LOCALBASE}/include
-NLS_LDFLAGS+=	-L${LOCALBASE}/lib
 
-SERVER_DESC=	Enable dedicated server
+SERVER_DESC=		Enable dedicated server
 SERVER_CONFIGURE_ENABLE=	servers
 
 post-patch:

@@ -1,9 +1,8 @@
 # Created by: Pete Fritchman <petef@databits.net>
-# $FreeBSD: head/benchmarks/iperf/Makefile 448243 2017-08-18 15:57:22Z sunpoet $
+# $FreeBSD: head/benchmarks/iperf/Makefile 470910 2018-05-26 17:46:33Z sunpoet $
 
 PORTNAME=	iperf
-PORTVERSION=	2.0.10
-PORTREVISION=	1
+PORTVERSION=	2.0.11
 CATEGORIES=	benchmarks
 MASTER_SITES=	SF/${PORTNAME}2
 
@@ -26,7 +25,7 @@ IPV6_CONFIGURE_ENABLE=	ipv6
 THREADS_CONFIGURE_ENABLE=	threads
 THREADS_LDFLAGS=	-lpthread
 
-post-install:
+post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}/
 	cd ${WRKSRC}/ && ${INSTALL_DATA} README doc/*.gif doc/*.html ${STAGEDIR}${DOCSDIR}/
 

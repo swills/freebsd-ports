@@ -1,9 +1,9 @@
-# $FreeBSD: head/dns/bind910/Makefile 467580 2018-04-17 08:26:49Z mat $
+# $FreeBSD: head/dns/bind910/Makefile 472383 2018-06-14 15:42:52Z mat $
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
 PORTVERSION=	${ISCVERSION:S/-P/P/:S/b/.b/:S/a/.a/:S/rc/.rc/}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	dns net ipv6
 MASTER_SITES=	ISC/bind9/${ISCVERSION}
 PKGNAMESUFFIX=	910
@@ -41,7 +41,7 @@ CONFIGURE_ARGS=	--localstatedir=/var --disable-linux-caps \
 		--sysconfdir=${ETCDIR}
 ETCDIR=		${PREFIX}/etc/namedb
 
-CONFLICTS=	bind-tools bind99 bind911 bind912 bind9-devel
+CONFLICTS=	bind-tools bind99 bind911 bind912 bind913 bind9-devel
 
 SUB_FILES=	pkg-message named.conf
 USE_RC_SUBR=	named

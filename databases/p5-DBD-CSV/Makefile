@@ -1,7 +1,7 @@
-# $FreeBSD: head/databases/p5-DBD-CSV/Makefile 466035 2018-03-31 09:11:29Z wen $
+# $FreeBSD: head/databases/p5-DBD-CSV/Makefile 470670 2018-05-23 02:15:31Z wen $
 
 PORTNAME=	DBD-CSV
-PORTVERSION=	0.51
+PORTVERSION=	0.53
 PORTEPOCH=	1
 CATEGORIES=	databases perl5
 MASTER_SITES=	CPAN

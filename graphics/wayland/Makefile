@@ -1,5 +1,5 @@
 # Created by: kwm@FreeBSD.org
-# $FreeBSD: head/graphics/wayland/Makefile 455878 2017-12-09 22:02:30Z zeising $
+# $FreeBSD: head/graphics/wayland/Makefile 472693 2018-06-18 14:00:43Z linimon $
 
 PORTNAME=	wayland
 PORTVERSION=	1.14.0
@@ -11,6 +11,8 @@ COMMENT=	Wayland composite "server"
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_powerpc64=	fails to compile: tests/test-runner.c:349: undefined reference to prctl
 
 LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libffi.so:devel/libffi \

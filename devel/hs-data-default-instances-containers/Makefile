@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/hs-data-default-instances-containers/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-data-default-instances-containers/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	data-default-instances-containers
 PORTVERSION=	0.0.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org

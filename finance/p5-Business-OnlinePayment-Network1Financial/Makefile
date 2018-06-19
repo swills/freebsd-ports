@@ -1,5 +1,5 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/finance/p5-Business-OnlinePayment-Network1Financial/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/finance/p5-Business-OnlinePayment-Network1Financial/Makefile 471638 2018-06-04 18:08:25Z sunpoet $
 
 PORTNAME=	Business-OnlinePayment-Network1Financial
 PORTVERSION=	0.02
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Business::OnlinePayment backend module for Network1 Financial
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Business-CreditCard>=0:finance/p5-Business-CreditCard \
 		p5-Business-OnlinePayment>=0:finance/p5-Business-OnlinePayment

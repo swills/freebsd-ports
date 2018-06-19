@@ -1,5 +1,5 @@
 # Created by: Juergen Lock <nox@FreeBSD.org>
-# $FreeBSD: head/multimedia/vdr-plugin-osdpip/Makefile 468844 2018-05-02 15:07:27Z jbeich $
+# $FreeBSD: head/multimedia/vdr-plugin-osdpip/Makefile 470941 2018-05-26 18:19:35Z miwi $
 
 PORTNAME=	vdr-plugin-osdpip
 PORTVERSION=	0.1.2
@@ -17,6 +17,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS+=	libavcodec.so:multimedia/ffmpeg
 
+BROKEN_FreeBSD_12=	does not build with newer clang
 USES=		pkgconfig tar:tgz
 HAVE_CONFIGURE=	yes
 PORTDOCS=	COPYING README HISTORY

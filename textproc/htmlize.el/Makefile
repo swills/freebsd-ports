@@ -1,9 +1,9 @@
 # Created by: Marc van Woerkom <marc.vanwoerkom@fernuni-hagen.de>
-# $FreeBSD: head/textproc/htmlize.el/Makefile 460621 2018-02-01 18:03:09Z jrm $
+# $FreeBSD: head/textproc/htmlize.el/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	htmlize.el
 PORTVERSION=	1.39
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	textproc elisp
 MASTER_SITES=	http://fly.srk.fer.hr/~hniksic/emacs/
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}

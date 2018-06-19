@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/teleport/Makefile 469693 2018-05-11 20:35:39Z seanc $
+# $FreeBSD: head/security/teleport/Makefile 471550 2018-06-04 14:46:41Z mat $
 
 PORTNAME=	teleport
 DISTVERSIONPREFIX=	v
@@ -19,7 +19,6 @@ USES=		compiler gmake
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	gravitational
-GH_TAGNAME=	v${DISTVERSION}${DISTVERSIONSUFFIX}
 GH_TAG_COMMIT=	b3f4ecb
 
 USE_RC_SUBR=	teleport

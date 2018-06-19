@@ -1,9 +1,9 @@
 # Created by: Pietro Cerutti (gahr@gahr.ch)
-# $FreeBSD: head/audio/tuxguitar/Makefile 453727 2017-11-08 09:04:38Z amdmi3 $
+# $FreeBSD: head/audio/tuxguitar/Makefile 471300 2018-06-01 22:16:11Z riggs $
 
 PORTNAME=	tuxguitar
 PORTVERSION=	1.2
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	audio java
 MASTER_SITES=	SF/${PORTNAME}/TuxGuitar/TuxGuitar-${PORTVERSION}:src \
 		LOCAL/gahr/:fluid \

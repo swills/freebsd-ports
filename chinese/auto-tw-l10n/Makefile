@@ -1,9 +1,9 @@
 # Created by: Michael C . Wu <keichii@iteration.net>
-# $FreeBSD: head/chinese/auto-tw-l10n/Makefile 426882 2016-11-23 02:32:46Z kevlo $
+# $FreeBSD: head/chinese/auto-tw-l10n/Makefile 470828 2018-05-25 09:28:36Z lwhsu $
 
 PORTNAME=	auto-tw-l10n
 PORTVERSION=	1.15
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	chinese
 MASTER_SITES=	LOCAL/sunpoet
 

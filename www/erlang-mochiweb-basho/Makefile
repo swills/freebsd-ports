@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/erlang-mochiweb-basho/Makefile 410946 2016-03-13 09:43:09Z olgeni $
+# $FreeBSD: head/www/erlang-mochiweb-basho/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	mochiweb
 PORTVERSION=	2.9.0p2
@@ -6,7 +6,7 @@ CATEGORIES=	www devel
 PKGNAMEPREFIX=	erlang-
 PKGNAMESUFFIX=	-basho
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Erlang library for building lightweight HTTP servers (Basho fork)
 
 LICENSE=	MIT

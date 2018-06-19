@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/www/p5-MediaWiki/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/p5-MediaWiki/Makefile 471706 2018-06-04 18:17:06Z sunpoet $
 
 PORTNAME=	MediaWiki
 PORTVERSION=	1.13
@@ -11,6 +11,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	OOP MediaWiki engine client
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	p5-Config-IniHash>=0:devel/p5-Config-IniHash \
 		p5-libwww>=0:www/p5-libwww

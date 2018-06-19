@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/dhcpd/Makefile 433752 2017-02-09 17:44:36Z krion $
+# $FreeBSD: head/net/dhcpd/Makefile 470842 2018-05-25 14:04:06Z tz $
 
 PORTNAME=	dhcpd
 PORTVERSION=	6.0.20170207
+PORTREVISION=	1
 CATEGORIES=	net
 
 MAINTAINER=	koue@chaosophia.net
@@ -25,6 +26,10 @@ MAKE_ARGS+=	BINDIR=${PREFIX}/sbin MANDIR=${PREFIX}/man/man
 
 USERS=		dhcpd
 GROUPS=		dhcpd
+
+post-patch:
+	@${REINPLACE_CMD} -e "s|/etc/dhcpd.conf|${PREFIX}/etc/dhcpd.conf|" \
+		${WRKSRC}/dhcpd.[h8]
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/dhcpd.conf \

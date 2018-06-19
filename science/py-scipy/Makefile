@@ -1,9 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/science/py-scipy/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/py-scipy/Makefile 470774 2018-05-24 12:23:27Z wen $
 
 PORTNAME=	scipy
-PORTVERSION=	0.19.0
-PORTREVISION=	5
+PORTVERSION=	1.1.0
 CATEGORIES=	science python
 MASTER_SITES=	http://docs.scipy.org/doc/scipy/:doc \
 		CHEESESHOP:source \
@@ -22,7 +21,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 BUILD_DEPENDS=	${PYNUMPY}
 RUN_DEPENDS=	${PYNUMPY}
 
-USES=		fortran python zip
+USES=		fortran python
 USE_PYTHON=	autoplist concurrent distutils
 LDFLAGS+=	-shared
 PYDISTUTILS_BUILDARGS=	--fcompiler=gnu95

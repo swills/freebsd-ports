@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/graphics/agg/Makefile 425242 2016-11-03 16:09:44Z linimon $
+# $FreeBSD: head/graphics/agg/Makefile 472376 2018-06-14 12:47:58Z tijl $
 
 PORTNAME=	agg
 PORTVERSION=	2.5
@@ -21,11 +21,10 @@ GNU_CONFIGURE=	yes
 USES=		autoreconf gmake libtool pathfix pkgconfig
 USE_XORG=	x11
 USE_SDL=	sdl
-MAKE_ENV=	C="${CC}" AGGCXXFLAGS="${CXXFLAGS}"
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
-MAKE_JOBS_UNSAFE=	yes
 
-CXXFLAGS+=	-I${LOCALBASE}/include -L${LOCALBASE}/lib -I../include -L./
+post-patch:
+	@${REINPLACE_CMD} 's/_LDFLAGS/_LDADD/' ${WRKSRC}/examples/Makefile.am
 
 .include <bsd.port.mk>

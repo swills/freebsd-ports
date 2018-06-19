@@ -1,8 +1,9 @@
 # Created by: vanilla@
-# $FreeBSD: head/databases/foundationdb/Makefile 468846 2018-05-02 15:37:09Z vanilla $
+# $FreeBSD: head/databases/foundationdb/Makefile 471923 2018-06-07 14:16:29Z vanilla $
 
 PORTNAME=	foundationdb
-PORTVERSION=	5.1.7
+PORTVERSION=	5.2.3
+DISTVERSIONPREFIX=	release-
 CATEGORIES=	databases
 
 MAINTAINER=	vanilla@FreeBSD.org
@@ -22,8 +23,10 @@ USES=		compiler:c++14-lang gmake mono python:build shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	apple
 USE_RC_SUBR=	foundationdb
-SHEBANG_FILES=	build/link-wrapper.sh bindings/c/generate_asm.py
+SHEBANG_FILES=	build/csprojtom4.py build/link-wrapper.sh build/vcxprojtom4.py \
+		bindings/c/generate_asm.py
 MAKE_ENV+=	PYTHON=${PYTHON_CMD}
+CXXFLAGS+=	-Wno-varargs
 
 USERS=		${PORTNAME}
 GROUPS=		${PORTNAME}

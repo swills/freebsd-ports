@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/dwatch-pwsnoop/Makefile 469984 2018-05-15 00:30:40Z dteske $
+# $FreeBSD: head/sysutils/dwatch-pwsnoop/Makefile 471295 2018-06-01 21:25:06Z dteske $
 
 PORTNAME=	dwatch-pwsnoop
-DISTVERSION=	0.1
+DISTVERSION=	0.1.1
 CATEGORIES=	sysutils
 
 MAINTAINER=	dteske@FreeBSD.org
@@ -19,6 +19,12 @@ PLIST_FILES=	libexec/dwatch/pwsnoop
 PORTDOCS=	README.md
 
 OPTIONS_DEFINE=	DOCS
+
+.include <bsd.port.options.mk>
+
+.if ${OSVERSION} < 1101516 || (${OSVERSION} >= 1200000 && ${OSVERSION} < 1200065)
+IGNORE=         requires dwatch available in recent FreeBSD 11 or 12
+.endif
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/libexec/dwatch

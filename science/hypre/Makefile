@@ -1,5 +1,5 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/science/hypre/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/science/hypre/Makefile 471969 2018-06-08 02:39:46Z linimon $
 
 PORTNAME=	hypre
 DISTVERSION=	2.11.2
@@ -12,6 +12,8 @@ COMMENT=	Scalable Linear Solvers and Multigrid Methods
 
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKDIR}/${DISTNAME}/COPYING.LESSER
+
+BROKEN_powerpc64=	fails to compile: ./DistributedMatrixPilutSolver.h:97:20: expected ')' before '->' token
 
 USES=		blaslapack fortran localbase
 

@@ -1,9 +1,9 @@
-# $FreeBSD: head/editors/web-mode/Makefile 463188 2018-02-28 08:43:05Z hrs $
+# $FreeBSD: head/editors/web-mode/Makefile 471191 2018-05-31 01:18:05Z jrm $
 
 PORTNAME=	web-mode
 PORTVERSION=	15.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	editors elisp
 PKGNAMESUFFIX=	${EMACS_PKGNAMESUFFIX}
 

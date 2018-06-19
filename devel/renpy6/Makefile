@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/renpy6/Makefile 470157 2018-05-16 22:50:26Z jbeich $
+# $FreeBSD: head/devel/renpy6/Makefile 471376 2018-06-02 16:21:06Z jbeich $
 
 PORTVERSION=	6.18.3
 PORTREVISION=	7
@@ -16,9 +16,13 @@ BUILD_DEPENDS=	${PYGAME}
 RUN_DEPENDS=	${PYGAME}
 
 USE_SDL=	sdl
+PORTDATA=	templates
 
 post-patch:
 	@${REINPLACE_CMD} -e 's,/usr/bin/python,${PYTHON_CMD},' \
 		${WRKSRC}/launcher/game/project.rpy
+
+post-install:
+	${CHMOD} -R u+w ${STAGEDIR}${DATADIR}/templates
 
 .include "${MASTERDIR}/Makefile"

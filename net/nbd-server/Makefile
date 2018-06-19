@@ -1,5 +1,5 @@
 # Created by: Christian Laursen <xi@borderworlds.dk>
-# $FreeBSD: head/net/nbd-server/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/net/nbd-server/Makefile 472596 2018-06-17 08:34:39Z amdmi3 $
 
 PORTNAME=	nbd
 PORTVERSION=	3.5
@@ -18,14 +18,12 @@ USES=		pkgconfig tar:bzip2
 USE_GNOME=	glib20
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-lfs --enable-syslog
+TEST_TARGET=	check
 
 PLIST_FILES=	bin/nbd-server bin/nbd-trdump \
 		man/man1/nbd-server.1.gz \
 		man/man1/nbd-trdump.1.gz \
 		man/man5/nbd-server.5.gz \
 		man/man8/nbd-client.8.gz
-
-regression-test: build
-	cd ${WRKSRC} && ${MAKE} check
 
 .include <bsd.port.mk>

@@ -1,9 +1,8 @@
 # Created by: Oliver Lehmann <oliver@FreeBSD.org>
-# $FreeBSD: head/editors/mousepad/Makefile 459693 2018-01-22 20:15:09Z madpilot $
+# $FreeBSD: head/editors/mousepad/Makefile 471293 2018-06-01 20:57:35Z madpilot $
 
 PORTNAME=	mousepad
-PORTVERSION=	0.4.0
-PORTREVISION=	3
+PORTVERSION=	0.4.1
 CATEGORIES=	editors xfce
 MASTER_SITES=	XFCE/src/apps/${PORTNAME}/${PORTVERSION:R}
 DIST_SUBDIR=	xfce4
@@ -17,10 +16,11 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libdbus-glib-1.so:devel/dbus-glib
 
 GNU_CONFIGURE=	yes
-USES=	desktop-file-utils gettext gmake libtool perl5 pkgconfig tar:bzip2
+USES=		desktop-file-utils gettext gmake libtool perl5 pkgconfig tar:bzip2
 USE_GNOME=	glib20 intltool intlhack
 
 OPTIONS_DEFINE=	GTK3
+OPTIONS_DEFAULT=	GTK3
 GTK3_CONFIGURE_ENABLE=	gtk3
 GTK3_USE=	gnome=gtk30,gtksourceview3,dconf
 GTK3_USE_OFF=	gnome=gtk20,gtksourceview2

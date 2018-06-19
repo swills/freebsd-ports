@@ -1,13 +1,13 @@
 # Created by: Ralf van der Enden <tremere@cainites.net>
-# $FreeBSD: head/news/py-sabyenc/Makefile 459529 2018-01-20 17:35:06Z flo $
+# $FreeBSD: head/news/py-sabyenc/Makefile 471284 2018-06-01 19:11:34Z flo $
 
 PORTNAME=	sabyenc
-PORTVERSION=	3.3.2
+PORTVERSION=	3.3.5
 CATEGORIES=	news python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	tremere@cainites.net
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Python yEnc package optimized for use within SABnzbd
 
 LICENSE=	LGPL3

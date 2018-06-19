@@ -1,9 +1,9 @@
-# $FreeBSD: head/lang/crystal/Makefile 464067 2018-03-10 11:15:05Z cpm $
+# $FreeBSD: head/lang/crystal/Makefile 471254 2018-06-01 10:16:41Z cpm $
 
 PORTNAME=		crystal
 DISTVERSIONPREFIX=	v
 DISTVERSION=		0.24.1
-PORTREVISION=		1
+PORTREVISION=		2
 CATEGORIES=		lang
 MASTER_SITES=		https://unrelentingtech.s3.dualstack.eu-west-1.amazonaws.com/crystal/:bootstrap
 DISTFILES=		${BOOTSTRAP_PATH}:bootstrap

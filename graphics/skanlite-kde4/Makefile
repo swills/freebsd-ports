@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/skanlite-kde4/Makefile 465503 2018-03-25 08:09:39Z adridg $
+# $FreeBSD: head/graphics/skanlite-kde4/Makefile 471406 2018-06-02 22:03:00Z adridg $
 
 PORTNAME=	skanlite
 PORTVERSION=	1.1
@@ -9,12 +9,17 @@ PKGNAMESUFFIX=	-kde4
 DIST_SUBDIR=	KDE/extragear
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	Simple image scanning application for KDE
+COMMENT=	Simple image scanning application for KDE4
+
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/src/COPYING
 
 LIB_DEPENDS=	libksane.so:graphics/libksane-kde4
 
 USES=		cmake:outsource gettext kde:4 tar:xz
 USE_KDE=	kdelibs automoc4
 USE_QT4=	qmake_build moc_build rcc_build uic_build
+
+CONFLICTS_INSTALL=	skanlite
 
 .include <bsd.port.mk>

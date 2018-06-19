@@ -1,8 +1,8 @@
 # Created by: Roderick van Domburg <r.s.a.vandomburg@student.utwente.nl>
-# $FreeBSD: head/security/rubygem-net-ssh/Makefile 449422 2017-09-07 20:12:56Z sunpoet $
+# $FreeBSD: head/security/rubygem-net-ssh/Makefile 471570 2018-06-04 16:23:05Z sunpoet $
 
 PORTNAME=	net-ssh
-PORTVERSION=	4.2.0
+PORTVERSION=	5.0.1
 PORTEPOCH=	2
 CATEGORIES=	security rubygems
 MASTER_SITES=	RG

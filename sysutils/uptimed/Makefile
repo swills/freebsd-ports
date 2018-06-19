@@ -1,8 +1,8 @@
 # Created by: Andy Fawcett <andy@athame.co.uk>
-# $FreeBSD: head/sysutils/uptimed/Makefile 421162 2016-08-31 13:27:59Z amdmi3 $
+# $FreeBSD: head/sysutils/uptimed/Makefile 472684 2018-06-18 12:36:43Z swills $
 
 PORTNAME=	uptimed
-PORTVERSION=	0.4.0
+PORTVERSION=	0.4.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
@@ -12,10 +12,9 @@ COMMENT=	Uptime daemon
 LICENSE=	GPLv2 # only
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+USES=		autoreconf gmake libtool
 USE_GITHUB=	yes
 GH_ACCOUNT=	rpodgorny
-
-USES=		autoreconf gmake libtool
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip

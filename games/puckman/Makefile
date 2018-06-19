@@ -1,5 +1,5 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/puckman/Makefile 405891 2016-01-12 16:20:31Z amdmi3 $
+# $FreeBSD: head/games/puckman/Makefile 472062 2018-06-09 16:11:23Z amdmi3 $
 
 PORTNAME=	puckman
 PORTVERSION=	1.0
@@ -45,6 +45,7 @@ do-install:
 	${INSTALL_DATA} ${_DISTDIR}/${PORTNAME}.png \
 		${STAGEDIR}${PREFIX}/share/pixmaps/
 
+do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
 

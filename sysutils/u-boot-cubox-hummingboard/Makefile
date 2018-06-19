@@ -1,6 +1,5 @@
-# $FreeBSD: head/sysutils/u-boot-cubox-hummingboard/Makefile 435808 2017-03-09 22:44:33Z ian $
+# $FreeBSD: head/sysutils/u-boot-cubox-hummingboard/Makefile 472714 2018-06-18 20:22:13Z linimon $
 
-MAINTAINER=	imp@FreeBSD.org
 MASTERDIR=	${.CURDIR}/../u-boot-master
 
 MODEL=		cubox-hummingboard

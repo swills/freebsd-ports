@@ -1,5 +1,5 @@
 # Created by: Ade Lovett <ade@FreeBSD.org>
-# $FreeBSD: head/devel/autotools/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/autotools/Makefile 472376 2018-06-14 12:47:58Z tijl $
 
 PORTNAME=	autotools
 PORTVERSION=	20130627
@@ -15,8 +15,8 @@ COMMENT=	Autotools meta-port
 
 RUN_DEPENDS=	libtoolize:devel/libtool \
 		autoconf-2.13:devel/autoconf213 \
-		autoconf-2.69:devel/autoconf \
-		automake-1.15:devel/automake
+		autoconf>=2.69:devel/autoconf \
+		automake>=1.15:devel/automake
 
 PLIST_FILES=	share/${PORTNAME}
 NO_BUILD=	yes

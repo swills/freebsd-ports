@@ -1,8 +1,8 @@
 # Created by: Steve Wills <swills@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-xpath/Makefile 457810 2018-01-01 20:59:30Z sunpoet $
+# $FreeBSD: head/devel/rubygem-xpath/Makefile 471001 2018-05-27 20:17:44Z sunpoet $
 
 PORTNAME=	xpath
-PORTVERSION=	3.0.0
+PORTVERSION=	3.1.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

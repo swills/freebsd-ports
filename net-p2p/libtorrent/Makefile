@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-p2p/libtorrent/Makefile 462140 2018-02-17 12:00:47Z sunpoet $
+# $FreeBSD: head/net-p2p/libtorrent/Makefile 472307 2018-06-13 12:25:31Z amdmi3 $
 
 PORTNAME=	libtorrent
 PORTVERSION=	0.13.6
@@ -46,13 +46,13 @@ CONFIGURE_ARGS+=--disable-instrumentation
 .endif
 
 # Workaround to build on >= 10.x
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1000000
+.if ${OPSYS} == FreeBSD
 USE_CXXSTD=	c++11
 EXTRA_PATCHES+=	${FILESDIR}/extra-clang
 .endif
 
 post-patch:
-.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1000000
+.if ${OPSYS} == FreeBSD
 	@${FIND} ${WRKSRC} \( -name '*.h' -o -name '*.cc' \) -type f \
 		-exec ${REINPLACE_CMD} -e 's/tr1::/std::/g' {} \; \
 		-exec ${REINPLACE_CMD} -e 's/std::std::/std::/g' {} \; \

@@ -1,5 +1,5 @@
 # Created by: Zhen REN <bg1tpt@gmail.com>
-# $FreeBSD: head/mail/phpmailer/Makefile 470295 2018-05-18 14:03:30Z joneum $
+# $FreeBSD: head/mail/phpmailer/Makefile 471220 2018-05-31 17:19:13Z joneum $
 
 PORTNAME=	phpmailer
 PORTVERSION=	5.2.26
@@ -11,6 +11,10 @@ COMMENT=	Full Featured Email Transfer Class for PHP
 
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+CONFLICTS_INSTALL=	phpmailer6
+
+PORTSCOUT=	limit:^5\.
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	PHPMailer

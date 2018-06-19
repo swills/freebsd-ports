@@ -1,8 +1,9 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/www/py-django-jsonfield/Makefile 467339 2018-04-14 18:22:33Z ultima $
+# $FreeBSD: head/www/py-django-jsonfield/Makefile 472346 2018-06-13 22:05:51Z ultima $
 
 PORTNAME=	jsonfield
 PORTVERSION=	2.0.2
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	GH
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}django-
@@ -13,7 +14,7 @@ COMMENT=	Reusable JSONField model for Django to store ad-hoc data
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django18>=0:www/py-django18@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=0:www/py-django111@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

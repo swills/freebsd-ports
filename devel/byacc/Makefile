@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/byacc/Makefile 470067 2018-05-15 23:58:44Z sunpoet $
+# $FreeBSD: head/devel/byacc/Makefile 470912 2018-05-26 17:46:43Z sunpoet $
 
 PORTNAME=	byacc
-PORTVERSION=	20180510
+PORTVERSION=	20180525
 CATEGORIES=	devel
 MASTER_SITES=	https://invisible-mirror.net/archives/byacc/ \
 		LOCAL/sunpoet

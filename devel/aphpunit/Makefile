@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/aphpunit/Makefile 465873 2018-03-29 09:04:08Z tz $
+# $FreeBSD: head/devel/aphpunit/Makefile 471997 2018-06-08 11:07:12Z tz $
 
 PORTNAME=	aphpunit
-DISTVERSION=	1.4
+DISTVERSION=	1.5
 CATEGORIES=	devel www
 MASTER_SITES=	http://phar.toco-domains.de/
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
@@ -15,7 +15,7 @@ LICENSE=	BSD2CLAUSE
 IGNORE_WITH_PHP=	56
 
 USES=		php:flavors
-USE_PHP=	pcntl phar posix sysvmsg
+USE_PHP=	mbstring pcntl phar posix sysvmsg
 
 NO_ARCH=	yes
 NO_BUILD=	yes

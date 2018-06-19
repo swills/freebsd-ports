@@ -1,11 +1,11 @@
-# $FreeBSD: head/textproc/erlang-edown/Makefile 417734 2016-06-28 16:17:21Z olgeni $
+# $FreeBSD: head/textproc/erlang-edown/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	edown
 PORTVERSION=	0.8.1
 CATEGORIES=	textproc
 PKGNAMEPREFIX=	erlang-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	EDoc extension for generating Github-flavored Markdown
 
 USES=		erlang:rebar

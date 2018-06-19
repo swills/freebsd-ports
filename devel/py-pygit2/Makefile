@@ -1,13 +1,13 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/devel/py-pygit2/Makefile 469928 2018-05-14 17:36:43Z mfechner $
+# $FreeBSD: head/devel/py-pygit2/Makefile 471741 2018-06-05 05:21:48Z mfechner $
 
 PORTNAME=	pygit2
-PORTVERSION=	0.27.0
+PORTVERSION=	0.27.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	wg@FreeBSD.org
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Python bindings for libgit2
 
 LICENSE=	GPLv2

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/docbook-xsl/Makefile 466302 2018-04-03 09:46:54Z sunpoet $
+# $FreeBSD: head/textproc/docbook-xsl/Makefile 472207 2018-06-11 20:56:24Z feld $
 
 PORTNAME=	docbook-xsl
 PORTVERSION=	1.76.1
@@ -8,7 +8,7 @@ MASTER_SITES=	SF/docbook/${PORTNAME}/${PORTVERSION}:src \
 		SF/docbook/${PORTNAME}-doc/${PORTVERSION}:doc
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}:src
 
-MAINTAINER=	gabor@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	XSL DocBook stylesheets
 
 LICENSE=	MIT

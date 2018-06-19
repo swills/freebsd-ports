@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/hs-preprocessor-tools/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/devel/hs-preprocessor-tools/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	preprocessor-tools
 PORTVERSION=	1.0.1
@@ -10,7 +10,9 @@ COMMENT=	Framework for extending Haskell's syntax via quick-and-dirty preprocess
 
 LICENSE=	BSD3CLAUSE
 
-USE_CABAL=	mtl>=1 parsec>=3 syb>=0
+USE_CABAL=	mtl>=1 syb>=0
+
+IGNORE=		Doesn't build with recent GHC version
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Lars Engels <lars.engels@0x20.net>
-# $FreeBSD: head/net-mgmt/aircrack-ng/Makefile 469014 2018-05-04 10:43:21Z lme $
+# $FreeBSD: head/net-mgmt/aircrack-ng/Makefile 471344 2018-06-02 07:55:00Z gerald $
 
 PORTNAME=	aircrack-ng
 DISTVERSION=	1.2
@@ -15,7 +15,7 @@ LICENSE_COMB=	dual
 BROKEN_powerpc64=	fails to compile: sse-intrinsics.c: error: emmintrin.h: No such file or directory
 
 USES=		autoreconf cpe dos2unix gmake libtool ssl
-USE_GCC=	7.0+
+USE_GCC=	7+
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-experimental
 CPE_VERSION=	${DISTVERSION:C/-.*//}

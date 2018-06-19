@@ -1,21 +1,23 @@
 # Created by: Jim Shewmaker
-# $FreeBSD: head/sysutils/nagios-statd/Makefile 371454 2014-10-24 16:56:10Z mva $
+# $FreeBSD: head/sysutils/nagios-statd/Makefile 472457 2018-06-15 14:21:28Z amdmi3 $
 
 PORTNAME=	nagios-statd
 PORTVERSION=	3.12
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils python net-mgmt
 MASTER_SITES=	http://www.twoevils.org/files/netsaint_statd/
 
 MAINTAINER=	jims@bluenotch.com
 COMMENT=	Daemon/client to check remote host information for Nagios
 
-USES=		python
-USE_RC_SUBR=	nagiosstatd
+LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/share/doc/LICENSE
 
-do-build:
-	${REINPLACE_CMD} -e 's,/usr/bin/python,/usr/bin/env python,' \
-		${WRKSRC}/bin/* ${WRKSRC}/sbin/*
+USES=		python shebangfix
+SHEBANG_FILES=	bin/nagios-stat sbin/nagios-statd
+USE_RC_SUBR=	nagiosstatd
+NO_BUILD=	yes
+NO_ARCH=	yes
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/bin/nagios-stat ${STAGEDIR}${PREFIX}/bin

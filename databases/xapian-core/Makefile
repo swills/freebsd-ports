@@ -1,5 +1,5 @@
 # Created by: J.F. Dockes
-# $FreeBSD: head/databases/xapian-core/Makefile 452213 2017-10-16 17:45:48Z sunpoet $
+# $FreeBSD: head/databases/xapian-core/Makefile 471400 2018-06-02 19:40:59Z linimon $
 
 PORTNAME=	xapian-core
 PORTVERSION=	1.4.5
@@ -14,8 +14,6 @@ COMMENT=	Probabilistic text search database engine
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_powerpc64=	fails to configure: A compiler with support for C++11 language features is required
-
 CONFLICTS_INSTALL=	xapian-core10 xapian-core12
 
 OPTIONS_DEFINE=	DOCS SSE2
@@ -25,8 +23,8 @@ PORTSCOUT=	limitw:1,even
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
+USES=		compiler:c++11-lang libtool pathfix tar:xz
 USE_LDCONFIG=	yes
-USES=		libtool pathfix tar:xz
 
 SSE2_CONFIGURE_ENABLE=	sse
 

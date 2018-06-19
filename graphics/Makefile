@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 470330 2018-05-18 23:23:22Z sunpoet $
+# $FreeBSD: head/graphics/Makefile 472174 2018-06-11 08:49:18Z yuri $
 #
 
     COMMENT = Graphics tools and libraries
@@ -282,6 +282,7 @@
     SUBDIR += glosm
     SUBDIR += glpng
     SUBDIR += gltt
+    SUBDIR += gmic
     SUBDIR += gmic-qt
     SUBDIR += gmt
     SUBDIR += gnash
@@ -352,7 +353,6 @@
     SUBDIR += hiptext
     SUBDIR += hobbes-icons-xpm
     SUBDIR += hppsmtools
-    SUBDIR += hs-HGL
     SUBDIR += hs-JuicyPixels
     SUBDIR += hs-cairo
     SUBDIR += hs-dia-base
@@ -536,7 +536,6 @@
     SUBDIR += libkdcraw-kde4
     SUBDIR += libkexiv2
     SUBDIR += libkexiv2-kde4
-    SUBDIR += libkface
     SUBDIR += libkipi
     SUBDIR += libkipi-kde4
     SUBDIR += libkipiplugins
@@ -916,6 +915,7 @@
     SUBDIR += py-opencv
     SUBDIR += py-openexr
     SUBDIR += py-openimageio
+    SUBDIR += py-OWSLib
     SUBDIR += py-paint
     SUBDIR += py-photocollage
     SUBDIR += py-pillow
@@ -934,6 +934,7 @@
     SUBDIR += py-pygooglechart
     SUBDIR += py-pygraphviz
     SUBDIR += py-pyproj
+    SUBDIR += py-pyqtgraph
     SUBDIR += py-qt4-svg
     SUBDIR += py-qt5-svg
     SUBDIR += py-sane
@@ -1052,6 +1053,7 @@
     SUBDIR += simage
     SUBDIR += simpleviewer
     SUBDIR += sk1libs
+    SUBDIR += skanlite
     SUBDIR += skanlite-kde4
     SUBDIR += smillaenlarger
     SUBDIR += spectacle

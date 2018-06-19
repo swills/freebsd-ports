@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11-drivers/xf86-video-mach64/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/x11-drivers/xf86-video-mach64/Makefile 470708 2018-05-23 16:31:17Z zeising $
 
 PORTNAME=	xf86-video-mach64
-PORTVERSION=	6.9.5
-PORTREVISION=	2
+PORTVERSION=	6.9.6
 CATEGORIES=	x11-drivers
 
 MAINTAINER=	x11@FreeBSD.org

@@ -1,8 +1,8 @@
 # Created by: Akinori MUSHA aka knu <knu@idaemons.org>
-# $FreeBSD: head/devel/rudiments/Makefile 460937 2018-02-04 15:57:46Z pi $
+# $FreeBSD: head/devel/rudiments/Makefile 472775 2018-06-19 09:09:31Z pi $
 
 PORTNAME=	rudiments
-PORTVERSION=	1.0.6
+PORTVERSION=	1.0.7
 CATEGORIES=	devel
 MASTER_SITES=	SF
 
@@ -34,6 +34,6 @@ SSL_CONFIGURE_ON=	--with-ssl-includes=-I${OPENSSLINC} \
 			--with-ssl-libs=-L${OPENSSLLIB}
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/librudiments.so.4.0.5
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/librudiments.so.3.1.5
 
 .include <bsd.port.mk>

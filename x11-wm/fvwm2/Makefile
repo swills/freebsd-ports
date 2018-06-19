@@ -1,11 +1,10 @@
 # Created by: peter
-# $FreeBSD: head/x11-wm/fvwm2/Makefile 451272 2017-10-05 06:36:44Z cy $
+# $FreeBSD: head/x11-wm/fvwm2/Makefile 472323 2018-06-13 13:36:40Z cy $
 
 PORTNAME=	fvwm
-PORTVERSION=	2.6.7
-PORTREVISION=	3
+PORTVERSION=	2.6.8
 CATEGORIES=	x11-wm
-MASTER_SITES=	https://github.com/fvwmorg/fvwm/releases/download/2.6.7/ \
+MASTER_SITES=	https://github.com/fvwmorg/fvwm/releases/download/${PORTVERSION}/ \
 		http://www.fvwm.org/generated/icon_download/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}

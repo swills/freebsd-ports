@@ -1,8 +1,7 @@
-# $FreeBSD: head/www/hs-http-reverse-proxy/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/www/hs-http-reverse-proxy/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	http-reverse-proxy
-PORTVERSION=	0.4.4
-PORTREVISION=	1
+PORTVERSION=	0.6.0
 CATEGORIES=	www haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -13,7 +12,7 @@ LICENSE=	BSD3CLAUSE
 USE_CABAL=	async blaze-builder>=0.3 case-insensitive>=0.4 conduit>=1.1 \
 		conduit-extra data-default-class http-client>=0.3 \
 		http-types>=0.6 lifted-base>=0.1 monad-control>=0.3 \
-		network resourcet streaming-commons text>=0.11 wai>=3.0 \
+		network resourcet streaming-commons wai>=3.0 unliftio \
 		wai-logger word8>=0.0
 
 .include "${.CURDIR}/../../lang/ghc/bsd.cabal.mk"

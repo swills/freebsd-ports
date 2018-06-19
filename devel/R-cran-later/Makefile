@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/R-cran-later/Makefile 469429 2018-05-09 04:06:57Z tota $
+# $FreeBSD: head/devel/R-cran-later/Makefile 472756 2018-06-19 05:28:34Z tota $
 
 PORTNAME=	later
-PORTVERSION=	0.7.2
+PORTVERSION=	0.7.3
 CATEGORIES=	devel
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

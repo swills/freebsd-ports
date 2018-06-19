@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/elixir-phoenix_ecto/Makefile 452411 2017-10-19 10:15:30Z olgeni $
+# $FreeBSD: head/www/elixir-phoenix_ecto/Makefile 472000 2018-06-08 13:43:25Z olgeni $
 
 PORTNAME=	phoenix_ecto
 PORTVERSION=	3.3.0
@@ -6,7 +6,7 @@ DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 PKGNAMEPREFIX=	elixir-
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	erlang@FreeBSD.org
 COMMENT=	Ecto integration for the Phoenix framework
 
 LICENSE=	MIT

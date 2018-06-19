@@ -1,5 +1,5 @@
 # Created by: Tom Judge <tj@FreeBSD.org>
-# $FreeBSD: head/java/sigar/Makefile 464084 2018-03-10 17:46:04Z gerald $
+# $FreeBSD: head/java/sigar/Makefile 471737 2018-06-04 23:47:30Z linimon $
 
 PORTNAME=	sigar
 PORTVERSION=	1.7.3
@@ -13,11 +13,12 @@ COMMENT=	Java bindings for the Sigar system information API
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/NOTICE
 
-BUILD_DEPENDS=	${ANT_CMD}:devel/apache-ant
-LIB_DEPENDS=	libsigar.so:devel/sigar
-
 BROKEN_armv6=		fails to compile: jni-build.xml: gcc failed with return code 1
 BROKEN_armv7=		fails to compile: jni-build.xml: gcc failed with return code 1
+BROKEN_powerpc64=	fails to install: bindings/java/sigar-bin/lib/libsigar-powerpc64-freebsd-1.so: No such file or directory
+
+BUILD_DEPENDS=	${ANT_CMD}:devel/apache-ant
+LIB_DEPENDS=	libsigar.so:devel/sigar
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	amishHammer

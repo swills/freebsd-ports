@@ -1,8 +1,7 @@
-# $FreeBSD: head/security/hs-x509-validation/Makefile 461362 2018-02-10 08:03:22Z tcberner $
+# $FreeBSD: head/security/hs-x509-validation/Makefile 470870 2018-05-25 21:44:12Z tcberner $
 
 PORTNAME=	x509-validation
-PORTVERSION=	1.6.5
-PORTREVISION=	1
+PORTVERSION=	1.6.10
 CATEGORIES=	security haskell
 
 MAINTAINER=	haskell@FreeBSD.org
